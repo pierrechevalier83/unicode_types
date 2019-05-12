@@ -1,6 +1,6 @@
 [package]
 name = "unicode_types"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Pierre Chevalier <pierrechevalier83@gmail.com>"]
 license = "MIT"
 description = "A mapping of all the unicode characters into convenience types (one enum per block of characters with one variant per character)."
