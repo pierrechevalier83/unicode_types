@@ -6,7 +6,7 @@ license = "MIT"
 description = "A mapping of all the unicode characters into convenience types (one enum per block of characters with one variant per character)."
 documentation = "https://pierrechevalier83.github.io/unicode_types/unicode_types/index.html"
 repository = "https://github.com/pierrechevalier83/unicode_types"
-keywords = ["unicode", "types", "plain text", "convenience", "boilerplate"]
+keywords = ["unicode", "types", "plain_text", "convenience", "boilerplate"]
 edition = "2018"
 
 [dependencies]
