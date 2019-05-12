@@ -1,1850 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{12000}: '𒀀'
-    pub const SIGN_A: char = '𒀀';
-    /// \u{12001}: '𒀁'
-    pub const SIGN_A_TIMES_A: char = '𒀁';
-    /// \u{12002}: '𒀂'
-    pub const SIGN_A_TIMES_BAD: char = '𒀂';
-    /// \u{12003}: '𒀃'
-    pub const SIGN_A_TIMES_GAN2_TENU: char = '𒀃';
-    /// \u{12004}: '𒀄'
-    pub const SIGN_A_TIMES_HA: char = '𒀄';
-    /// \u{12005}: '𒀅'
-    pub const SIGN_A_TIMES_IGI: char = '𒀅';
-    /// \u{12006}: '𒀆'
-    pub const SIGN_A_TIMES_LAGAR_GUNU: char = '𒀆';
-    /// \u{12007}: '𒀇'
-    pub const SIGN_A_TIMES_MUSH: char = '𒀇';
-    /// \u{12008}: '𒀈'
-    pub const SIGN_A_TIMES_SAG: char = '𒀈';
-    /// \u{12009}: '𒀉'
-    pub const SIGN_A2: char = '𒀉';
-    /// \u{1200a}: '𒀊'
-    pub const SIGN_AB: char = '𒀊';
-    /// \u{1200b}: '𒀋'
-    pub const SIGN_AB_TIMES_ASH2: char = '𒀋';
-    /// \u{1200c}: '𒀌'
-    pub const SIGN_AB_TIMES_DUN3_GUNU: char = '𒀌';
-    /// \u{1200d}: '𒀍'
-    pub const SIGN_AB_TIMES_GAL: char = '𒀍';
-    /// \u{1200e}: '𒀎'
-    pub const SIGN_AB_TIMES_GAN2_TENU: char = '𒀎';
-    /// \u{1200f}: '𒀏'
-    pub const SIGN_AB_TIMES_HA: char = '𒀏';
-    /// \u{12010}: '𒀐'
-    pub const SIGN_AB_TIMES_IGI_GUNU: char = '𒀐';
-    /// \u{12011}: '𒀑'
-    pub const SIGN_AB_TIMES_IMIN: char = '𒀑';
-    /// \u{12012}: '𒀒'
-    pub const SIGN_AB_TIMES_LAGAB: char = '𒀒';
-    /// \u{12013}: '𒀓'
-    pub const SIGN_AB_TIMES_SHESH: char = '𒀓';
-    /// \u{12014}: '𒀔'
-    pub const SIGN_AB_TIMES_U_PLUS_U_PLUS_U: char = '𒀔';
-    /// \u{12015}: '𒀕'
-    pub const SIGN_AB_GUNU: char = '𒀕';
-    /// \u{12016}: '𒀖'
-    pub const SIGN_AB2: char = '𒀖';
-    /// \u{12017}: '𒀗'
-    pub const SIGN_AB2_TIMES_BALAG: char = '𒀗';
-    /// \u{12018}: '𒀘'
-    pub const SIGN_AB2_TIMES_GAN2_TENU: char = '𒀘';
-    /// \u{12019}: '𒀙'
-    pub const SIGN_AB2_TIMES_ME_PLUS_EN: char = '𒀙';
-    /// \u{1201a}: '𒀚'
-    pub const SIGN_AB2_TIMES_SHA3: char = '𒀚';
-    /// \u{1201b}: '𒀛'
-    pub const SIGN_AB2_TIMES_TAK4: char = '𒀛';
-    /// \u{1201c}: '𒀜'
-    pub const SIGN_AD: char = '𒀜';
-    /// \u{1201d}: '𒀝'
-    pub const SIGN_AK: char = '𒀝';
-    /// \u{1201e}: '𒀞'
-    pub const SIGN_AK_TIMES_ERIN2: char = '𒀞';
-    /// \u{1201f}: '𒀟'
-    pub const SIGN_AK_TIMES_SHITA_PLUS_GISH: char = '𒀟';
-    /// \u{12020}: '𒀠'
-    pub const SIGN_AL: char = '𒀠';
-    /// \u{12021}: '𒀡'
-    pub const SIGN_AL_TIMES_AL: char = '𒀡';
-    /// \u{12022}: '𒀢'
-    pub const SIGN_AL_TIMES_DIM2: char = '𒀢';
-    /// \u{12023}: '𒀣'
-    pub const SIGN_AL_TIMES_GISH: char = '𒀣';
-    /// \u{12024}: '𒀤'
-    pub const SIGN_AL_TIMES_HA: char = '𒀤';
-    /// \u{12025}: '𒀥'
-    pub const SIGN_AL_TIMES_KAD3: char = '𒀥';
-    /// \u{12026}: '𒀦'
-    pub const SIGN_AL_TIMES_KI: char = '𒀦';
-    /// \u{12027}: '𒀧'
-    pub const SIGN_AL_TIMES_SHE: char = '𒀧';
-    /// \u{12028}: '𒀨'
-    pub const SIGN_AL_TIMES_USH: char = '𒀨';
-    /// \u{12029}: '𒀩'
-    pub const SIGN_ALAN: char = '𒀩';
-    /// \u{1202a}: '𒀪'
-    pub const SIGN_ALEPH: char = '𒀪';
-    /// \u{1202b}: '𒀫'
-    pub const SIGN_AMAR: char = '𒀫';
-    /// \u{1202c}: '𒀬'
-    pub const SIGN_AMAR_TIMES_SHE: char = '𒀬';
-    /// \u{1202d}: '𒀭'
-    pub const SIGN_AN: char = '𒀭';
-    /// \u{1202e}: '𒀮'
-    pub const SIGN_AN_OVER_AN: char = '𒀮';
-    /// \u{1202f}: '𒀯'
-    pub const SIGN_AN_THREE_TIMES: char = '𒀯';
-    /// \u{12030}: '𒀰'
-    pub const SIGN_AN_PLUS_NAGA_OPPOSING_AN_PLUS_NAGA: char = '𒀰';
-    /// \u{12031}: '𒀱'
-    pub const SIGN_AN_PLUS_NAGA_SQUARED: char = '𒀱';
-    /// \u{12032}: '𒀲'
-    pub const SIGN_ANSHE: char = '𒀲';
-    /// \u{12033}: '𒀳'
-    pub const SIGN_APIN: char = '𒀳';
-    /// \u{12034}: '𒀴'
-    pub const SIGN_ARAD: char = '𒀴';
-    /// \u{12035}: '𒀵'
-    pub const SIGN_ARAD_TIMES_KUR: char = '𒀵';
-    /// \u{12036}: '𒀶'
-    pub const SIGN_ARKAB: char = '𒀶';
-    /// \u{12037}: '𒀷'
-    pub const SIGN_ASAL2: char = '𒀷';
-    /// \u{12038}: '𒀸'
-    pub const SIGN_ASH: char = '𒀸';
-    /// \u{12039}: '𒀹'
-    pub const SIGN_ASH_ZIDA_TENU: char = '𒀹';
-    /// \u{1203a}: '𒀺'
-    pub const SIGN_ASH_KABA_TENU: char = '𒀺';
-    /// \u{1203b}: '𒀻'
-    pub const SIGN_ASH_OVER_ASH_TUG2_OVER_TUG2_TUG2_OVER_TUG2_PAP: char = '𒀻';
-    /// \u{1203c}: '𒀼'
-    pub const SIGN_ASH_OVER_ASH_OVER_ASH: char = '𒀼';
-    /// \u{1203d}: '𒀽'
-    pub const SIGN_ASH_OVER_ASH_OVER_ASH_CROSSING_ASH_OVER_ASH_OVER_ASH: char = '𒀽';
-    /// \u{1203e}: '𒀾'
-    pub const SIGN_ASH2: char = '𒀾';
-    /// \u{1203f}: '𒀿'
-    pub const SIGN_ASHGAB: char = '𒀿';
-    /// \u{12040}: '𒁀'
-    pub const SIGN_BA: char = '𒁀';
-    /// \u{12041}: '𒁁'
-    pub const SIGN_BAD: char = '𒁁';
-    /// \u{12042}: '𒁂'
-    pub const SIGN_BAG3: char = '𒁂';
-    /// \u{12043}: '𒁃'
-    pub const SIGN_BAHAR2: char = '𒁃';
-    /// \u{12044}: '𒁄'
-    pub const SIGN_BAL: char = '𒁄';
-    /// \u{12045}: '𒁅'
-    pub const SIGN_BAL_OVER_BAL: char = '𒁅';
-    /// \u{12046}: '𒁆'
-    pub const SIGN_BALAG: char = '𒁆';
-    /// \u{12047}: '𒁇'
-    pub const SIGN_BAR: char = '𒁇';
-    /// \u{12048}: '𒁈'
-    pub const SIGN_BARA2: char = '𒁈';
-    /// \u{12049}: '𒁉'
-    pub const SIGN_BI: char = '𒁉';
-    /// \u{1204a}: '𒁊'
-    pub const SIGN_BI_TIMES_A: char = '𒁊';
-    /// \u{1204b}: '𒁋'
-    pub const SIGN_BI_TIMES_GAR: char = '𒁋';
-    /// \u{1204c}: '𒁌'
-    pub const SIGN_BI_TIMES_IGI_GUNU: char = '𒁌';
-    /// \u{1204d}: '𒁍'
-    pub const SIGN_BU: char = '𒁍';
-    /// \u{1204e}: '𒁎'
-    pub const SIGN_BU_OVER_BU_AB: char = '𒁎';
-    /// \u{1204f}: '𒁏'
-    pub const SIGN_BU_OVER_BU_UN: char = '𒁏';
-    /// \u{12050}: '𒁐'
-    pub const SIGN_BU_CROSSING_BU: char = '𒁐';
-    /// \u{12051}: '𒁑'
-    pub const SIGN_BULUG: char = '𒁑';
-    /// \u{12052}: '𒁒'
-    pub const SIGN_BULUG_OVER_BULUG: char = '𒁒';
-    /// \u{12053}: '𒁓'
-    pub const SIGN_BUR: char = '𒁓';
-    /// \u{12054}: '𒁔'
-    pub const SIGN_BUR2: char = '𒁔';
-    /// \u{12055}: '𒁕'
-    pub const SIGN_DA: char = '𒁕';
-    /// \u{12056}: '𒁖'
-    pub const SIGN_DAG: char = '𒁖';
-    /// \u{12057}: '𒁗'
-    pub const SIGN_DAG_KISIM5_TIMES_A_PLUS_MASH: char = '𒁗';
-    /// \u{12058}: '𒁘'
-    pub const SIGN_DAG_KISIM5_TIMES_AMAR: char = '𒁘';
-    /// \u{12059}: '𒁙'
-    pub const SIGN_DAG_KISIM5_TIMES_BALAG: char = '𒁙';
-    /// \u{1205a}: '𒁚'
-    pub const SIGN_DAG_KISIM5_TIMES_BI: char = '𒁚';
-    /// \u{1205b}: '𒁛'
-    pub const SIGN_DAG_KISIM5_TIMES_GA: char = '𒁛';
-    /// \u{1205c}: '𒁜'
-    pub const SIGN_DAG_KISIM5_TIMES_GA_PLUS_MASH: char = '𒁜';
-    /// \u{1205d}: '𒁝'
-    pub const SIGN_DAG_KISIM5_TIMES_GI: char = '𒁝';
-    /// \u{1205e}: '𒁞'
-    pub const SIGN_DAG_KISIM5_TIMES_GIR2: char = '𒁞';
-    /// \u{1205f}: '𒁟'
-    pub const SIGN_DAG_KISIM5_TIMES_GUD: char = '𒁟';
-    /// \u{12060}: '𒁠'
-    pub const SIGN_DAG_KISIM5_TIMES_HA: char = '𒁠';
-    /// \u{12061}: '𒁡'
-    pub const SIGN_DAG_KISIM5_TIMES_IR: char = '𒁡';
-    /// \u{12062}: '𒁢'
-    pub const SIGN_DAG_KISIM5_TIMES_IR_PLUS_LU: char = '𒁢';
-    /// \u{12063}: '𒁣'
-    pub const SIGN_DAG_KISIM5_TIMES_KAK: char = '𒁣';
-    /// \u{12064}: '𒁤'
-    pub const SIGN_DAG_KISIM5_TIMES_LA: char = '𒁤';
-    /// \u{12065}: '𒁥'
-    pub const SIGN_DAG_KISIM5_TIMES_LU: char = '𒁥';
-    /// \u{12066}: '𒁦'
-    pub const SIGN_DAG_KISIM5_TIMES_LU_PLUS_MASH2: char = '𒁦';
-    /// \u{12067}: '𒁧'
-    pub const SIGN_DAG_KISIM5_TIMES_LUM: char = '𒁧';
-    /// \u{12068}: '𒁨'
-    pub const SIGN_DAG_KISIM5_TIMES_NE: char = '𒁨';
-    /// \u{12069}: '𒁩'
-    pub const SIGN_DAG_KISIM5_TIMES_PAP_PLUS_PAP: char = '𒁩';
-    /// \u{1206a}: '𒁪'
-    pub const SIGN_DAG_KISIM5_TIMES_SI: char = '𒁪';
-    /// \u{1206b}: '𒁫'
-    pub const SIGN_DAG_KISIM5_TIMES_TAK4: char = '𒁫';
-    /// \u{1206c}: '𒁬'
-    pub const SIGN_DAG_KISIM5_TIMES_U2_PLUS_GIR2: char = '𒁬';
-    /// \u{1206d}: '𒁭'
-    pub const SIGN_DAG_KISIM5_TIMES_USH: char = '𒁭';
-    /// \u{1206e}: '𒁮'
-    pub const SIGN_DAM: char = '𒁮';
-    /// \u{1206f}: '𒁯'
-    pub const SIGN_DAR: char = '𒁯';
-    /// \u{12070}: '𒁰'
-    pub const SIGN_DARA3: char = '𒁰';
-    /// \u{12071}: '𒁱'
-    pub const SIGN_DARA4: char = '𒁱';
-    /// \u{12072}: '𒁲'
-    pub const SIGN_DI: char = '𒁲';
-    /// \u{12073}: '𒁳'
-    pub const SIGN_DIB: char = '𒁳';
-    /// \u{12074}: '𒁴'
-    pub const SIGN_DIM: char = '𒁴';
-    /// \u{12075}: '𒁵'
-    pub const SIGN_DIM_TIMES_SHE: char = '𒁵';
-    /// \u{12076}: '𒁶'
-    pub const SIGN_DIM2: char = '𒁶';
-    /// \u{12077}: '𒁷'
-    pub const SIGN_DIN: char = '𒁷';
-    /// \u{12078}: '𒁸'
-    pub const SIGN_DIN_KASKAL_U_GUNU_DISH: char = '𒁸';
-    /// \u{12079}: '𒁹'
-    pub const SIGN_DISH: char = '𒁹';
-    /// \u{1207a}: '𒁺'
-    pub const SIGN_DU: char = '𒁺';
-    /// \u{1207b}: '𒁻'
-    pub const SIGN_DU_OVER_DU: char = '𒁻';
-    /// \u{1207c}: '𒁼'
-    pub const SIGN_DU_GUNU: char = '𒁼';
-    /// \u{1207d}: '𒁽'
-    pub const SIGN_DU_SHESHIG: char = '𒁽';
-    /// \u{1207e}: '𒁾'
-    pub const SIGN_DUB: char = '𒁾';
-    /// \u{1207f}: '𒁿'
-    pub const SIGN_DUB_TIMES_ESH2: char = '𒁿';
-    /// \u{12080}: '𒂀'
-    pub const SIGN_DUB2: char = '𒂀';
-    /// \u{12081}: '𒂁'
-    pub const SIGN_DUG: char = '𒂁';
-    /// \u{12082}: '𒂂'
-    pub const SIGN_DUGUD: char = '𒂂';
-    /// \u{12083}: '𒂃'
-    pub const SIGN_DUH: char = '𒂃';
-    /// \u{12084}: '𒂄'
-    pub const SIGN_DUN: char = '𒂄';
-    /// \u{12085}: '𒂅'
-    pub const SIGN_DUN3: char = '𒂅';
-    /// \u{12086}: '𒂆'
-    pub const SIGN_DUN3_GUNU: char = '𒂆';
-    /// \u{12087}: '𒂇'
-    pub const SIGN_DUN3_GUNU_GUNU: char = '𒂇';
-    /// \u{12088}: '𒂈'
-    pub const SIGN_DUN4: char = '𒂈';
-    /// \u{12089}: '𒂉'
-    pub const SIGN_DUR2: char = '𒂉';
-    /// \u{1208a}: '𒂊'
-    pub const SIGN_E: char = '𒂊';
-    /// \u{1208b}: '𒂋'
-    pub const SIGN_E_TIMES_PAP: char = '𒂋';
-    /// \u{1208c}: '𒂌'
-    pub const SIGN_E_OVER_E_NUN_OVER_NUN: char = '𒂌';
-    /// \u{1208d}: '𒂍'
-    pub const SIGN_E2: char = '𒂍';
-    /// \u{1208e}: '𒂎'
-    pub const SIGN_E2_TIMES_A_PLUS_HA_PLUS_DA: char = '𒂎';
-    /// \u{1208f}: '𒂏'
-    pub const SIGN_E2_TIMES_GAR: char = '𒂏';
-    /// \u{12090}: '𒂐'
-    pub const SIGN_E2_TIMES_MI: char = '𒂐';
-    /// \u{12091}: '𒂑'
-    pub const SIGN_E2_TIMES_SAL: char = '𒂑';
-    /// \u{12092}: '𒂒'
-    pub const SIGN_E2_TIMES_SHE: char = '𒂒';
-    /// \u{12093}: '𒂓'
-    pub const SIGN_E2_TIMES_U: char = '𒂓';
-    /// \u{12094}: '𒂔'
-    pub const SIGN_EDIN: char = '𒂔';
-    /// \u{12095}: '𒂕'
-    pub const SIGN_EGIR: char = '𒂕';
-    /// \u{12096}: '𒂖'
-    pub const SIGN_EL: char = '𒂖';
-    /// \u{12097}: '𒂗'
-    pub const SIGN_EN: char = '𒂗';
-    /// \u{12098}: '𒂘'
-    pub const SIGN_EN_TIMES_GAN2: char = '𒂘';
-    /// \u{12099}: '𒂙'
-    pub const SIGN_EN_TIMES_GAN2_TENU: char = '𒂙';
-    /// \u{1209a}: '𒂚'
-    pub const SIGN_EN_TIMES_ME: char = '𒂚';
-    /// \u{1209b}: '𒂛'
-    pub const SIGN_EN_CROSSING_EN: char = '𒂛';
-    /// \u{1209c}: '𒂜'
-    pub const SIGN_EN_OPPOSING_EN: char = '𒂜';
-    /// \u{1209d}: '𒂝'
-    pub const SIGN_EN_SQUARED: char = '𒂝';
-    /// \u{1209e}: '𒂞'
-    pub const SIGN_EREN: char = '𒂞';
-    /// \u{1209f}: '𒂟'
-    pub const SIGN_ERIN2: char = '𒂟';
-    /// \u{120a0}: '𒂠'
-    pub const SIGN_ESH2: char = '𒂠';
-    /// \u{120a1}: '𒂡'
-    pub const SIGN_EZEN: char = '𒂡';
-    /// \u{120a2}: '𒂢'
-    pub const SIGN_EZEN_TIMES_A: char = '𒂢';
-    /// \u{120a3}: '𒂣'
-    pub const SIGN_EZEN_TIMES_A_PLUS_LAL: char = '𒂣';
-    /// \u{120a4}: '𒂤'
-    pub const SIGN_EZEN_TIMES_A_PLUS_LAL_TIMES_LAL: char = '𒂤';
-    /// \u{120a5}: '𒂥'
-    pub const SIGN_EZEN_TIMES_AN: char = '𒂥';
-    /// \u{120a6}: '𒂦'
-    pub const SIGN_EZEN_TIMES_BAD: char = '𒂦';
-    /// \u{120a7}: '𒂧'
-    pub const SIGN_EZEN_TIMES_DUN3_GUNU: char = '𒂧';
-    /// \u{120a8}: '𒂨'
-    pub const SIGN_EZEN_TIMES_DUN3_GUNU_GUNU: char = '𒂨';
-    /// \u{120a9}: '𒂩'
-    pub const SIGN_EZEN_TIMES_HA: char = '𒂩';
-    /// \u{120aa}: '𒂪'
-    pub const SIGN_EZEN_TIMES_HA_GUNU: char = '𒂪';
-    /// \u{120ab}: '𒂫'
-    pub const SIGN_EZEN_TIMES_IGI_GUNU: char = '𒂫';
-    /// \u{120ac}: '𒂬'
-    pub const SIGN_EZEN_TIMES_KASKAL: char = '𒂬';
-    /// \u{120ad}: '𒂭'
-    pub const SIGN_EZEN_TIMES_KASKAL_SQUARED: char = '𒂭';
-    /// \u{120ae}: '𒂮'
-    pub const SIGN_EZEN_TIMES_KU3: char = '𒂮';
-    /// \u{120af}: '𒂯'
-    pub const SIGN_EZEN_TIMES_LA: char = '𒂯';
-    /// \u{120b0}: '𒂰'
-    pub const SIGN_EZEN_TIMES_LAL_TIMES_LAL: char = '𒂰';
-    /// \u{120b1}: '𒂱'
-    pub const SIGN_EZEN_TIMES_LI: char = '𒂱';
-    /// \u{120b2}: '𒂲'
-    pub const SIGN_EZEN_TIMES_LU: char = '𒂲';
-    /// \u{120b3}: '𒂳'
-    pub const SIGN_EZEN_TIMES_U2: char = '𒂳';
-    /// \u{120b4}: '𒂴'
-    pub const SIGN_EZEN_TIMES_UD: char = '𒂴';
-    /// \u{120b5}: '𒂵'
-    pub const SIGN_GA: char = '𒂵';
-    /// \u{120b6}: '𒂶'
-    pub const SIGN_GA_GUNU: char = '𒂶';
-    /// \u{120b7}: '𒂷'
-    pub const SIGN_GA2: char = '𒂷';
-    /// \u{120b8}: '𒂸'
-    pub const SIGN_GA2_TIMES_A_PLUS_DA_PLUS_HA: char = '𒂸';
-    /// \u{120b9}: '𒂹'
-    pub const SIGN_GA2_TIMES_A_PLUS_HA: char = '𒂹';
-    /// \u{120ba}: '𒂺'
-    pub const SIGN_GA2_TIMES_A_PLUS_IGI: char = '𒂺';
-    /// \u{120bb}: '𒂻'
-    pub const SIGN_GA2_TIMES_AB2_TENU_PLUS_TAB: char = '𒂻';
-    /// \u{120bc}: '𒂼'
-    pub const SIGN_GA2_TIMES_AN: char = '𒂼';
-    /// \u{120bd}: '𒂽'
-    pub const SIGN_GA2_TIMES_ASH: char = '𒂽';
-    /// \u{120be}: '𒂾'
-    pub const SIGN_GA2_TIMES_ASH2_PLUS_GAL: char = '𒂾';
-    /// \u{120bf}: '𒂿'
-    pub const SIGN_GA2_TIMES_BAD: char = '𒂿';
-    /// \u{120c0}: '𒃀'
-    pub const SIGN_GA2_TIMES_BAR_PLUS_RA: char = '𒃀';
-    /// \u{120c1}: '𒃁'
-    pub const SIGN_GA2_TIMES_BUR: char = '𒃁';
-    /// \u{120c2}: '𒃂'
-    pub const SIGN_GA2_TIMES_BUR_PLUS_RA: char = '𒃂';
-    /// \u{120c3}: '𒃃'
-    pub const SIGN_GA2_TIMES_DA: char = '𒃃';
-    /// \u{120c4}: '𒃄'
-    pub const SIGN_GA2_TIMES_DI: char = '𒃄';
-    /// \u{120c5}: '𒃅'
-    pub const SIGN_GA2_TIMES_DIM_TIMES_SHE: char = '𒃅';
-    /// \u{120c6}: '𒃆'
-    pub const SIGN_GA2_TIMES_DUB: char = '𒃆';
-    /// \u{120c7}: '𒃇'
-    pub const SIGN_GA2_TIMES_EL: char = '𒃇';
-    /// \u{120c8}: '𒃈'
-    pub const SIGN_GA2_TIMES_EL_PLUS_LA: char = '𒃈';
-    /// \u{120c9}: '𒃉'
-    pub const SIGN_GA2_TIMES_EN: char = '𒃉';
-    /// \u{120ca}: '𒃊'
-    pub const SIGN_GA2_TIMES_EN_TIMES_GAN2_TENU: char = '𒃊';
-    /// \u{120cb}: '𒃋'
-    pub const SIGN_GA2_TIMES_GAN2_TENU: char = '𒃋';
-    /// \u{120cc}: '𒃌'
-    pub const SIGN_GA2_TIMES_GAR: char = '𒃌';
-    /// \u{120cd}: '𒃍'
-    pub const SIGN_GA2_TIMES_GI: char = '𒃍';
-    /// \u{120ce}: '𒃎'
-    pub const SIGN_GA2_TIMES_GI4: char = '𒃎';
-    /// \u{120cf}: '𒃏'
-    pub const SIGN_GA2_TIMES_GI4_PLUS_A: char = '𒃏';
-    /// \u{120d0}: '𒃐'
-    pub const SIGN_GA2_TIMES_GIR2_PLUS_SU: char = '𒃐';
-    /// \u{120d1}: '𒃑'
-    pub const SIGN_GA2_TIMES_HA_PLUS_LU_PLUS_ESH2: char = '𒃑';
-    /// \u{120d2}: '𒃒'
-    pub const SIGN_GA2_TIMES_HAL: char = '𒃒';
-    /// \u{120d3}: '𒃓'
-    pub const SIGN_GA2_TIMES_HAL_PLUS_LA: char = '𒃓';
-    /// \u{120d4}: '𒃔'
-    pub const SIGN_GA2_TIMES_HI_PLUS_LI: char = '𒃔';
-    /// \u{120d5}: '𒃕'
-    pub const SIGN_GA2_TIMES_HUB2: char = '𒃕';
-    /// \u{120d6}: '𒃖'
-    pub const SIGN_GA2_TIMES_IGI_GUNU: char = '𒃖';
-    /// \u{120d7}: '𒃗'
-    pub const SIGN_GA2_TIMES_ISH_PLUS_HU_PLUS_ASH: char = '𒃗';
-    /// \u{120d8}: '𒃘'
-    pub const SIGN_GA2_TIMES_KAK: char = '𒃘';
-    /// \u{120d9}: '𒃙'
-    pub const SIGN_GA2_TIMES_KASKAL: char = '𒃙';
-    /// \u{120da}: '𒃚'
-    pub const SIGN_GA2_TIMES_KID: char = '𒃚';
-    /// \u{120db}: '𒃛'
-    pub const SIGN_GA2_TIMES_KID_PLUS_LAL: char = '𒃛';
-    /// \u{120dc}: '𒃜'
-    pub const SIGN_GA2_TIMES_KU3_PLUS_AN: char = '𒃜';
-    /// \u{120dd}: '𒃝'
-    pub const SIGN_GA2_TIMES_LA: char = '𒃝';
-    /// \u{120de}: '𒃞'
-    pub const SIGN_GA2_TIMES_ME_PLUS_EN: char = '𒃞';
-    /// \u{120df}: '𒃟'
-    pub const SIGN_GA2_TIMES_MI: char = '𒃟';
-    /// \u{120e0}: '𒃠'
-    pub const SIGN_GA2_TIMES_NUN: char = '𒃠';
-    /// \u{120e1}: '𒃡'
-    pub const SIGN_GA2_TIMES_NUN_OVER_NUN: char = '𒃡';
-    /// \u{120e2}: '𒃢'
-    pub const SIGN_GA2_TIMES_PA: char = '𒃢';
-    /// \u{120e3}: '𒃣'
-    pub const SIGN_GA2_TIMES_SAL: char = '𒃣';
-    /// \u{120e4}: '𒃤'
-    pub const SIGN_GA2_TIMES_SAR: char = '𒃤';
-    /// \u{120e5}: '𒃥'
-    pub const SIGN_GA2_TIMES_SHE: char = '𒃥';
-    /// \u{120e6}: '𒃦'
-    pub const SIGN_GA2_TIMES_SHE_PLUS_TUR: char = '𒃦';
-    /// \u{120e7}: '𒃧'
-    pub const SIGN_GA2_TIMES_SHID: char = '𒃧';
-    /// \u{120e8}: '𒃨'
-    pub const SIGN_GA2_TIMES_SUM: char = '𒃨';
-    /// \u{120e9}: '𒃩'
-    pub const SIGN_GA2_TIMES_TAK4: char = '𒃩';
-    /// \u{120ea}: '𒃪'
-    pub const SIGN_GA2_TIMES_U: char = '𒃪';
-    /// \u{120eb}: '𒃫'
-    pub const SIGN_GA2_TIMES_UD: char = '𒃫';
-    /// \u{120ec}: '𒃬'
-    pub const SIGN_GA2_TIMES_UD_PLUS_DU: char = '𒃬';
-    /// \u{120ed}: '𒃭'
-    pub const SIGN_GA2_OVER_GA2: char = '𒃭';
-    /// \u{120ee}: '𒃮'
-    pub const SIGN_GABA: char = '𒃮';
-    /// \u{120ef}: '𒃯'
-    pub const SIGN_GABA_CROSSING_GABA: char = '𒃯';
-    /// \u{120f0}: '𒃰'
-    pub const SIGN_GAD: char = '𒃰';
-    /// \u{120f1}: '𒃱'
-    pub const SIGN_GAD_OVER_GAD_GAR_OVER_GAR: char = '𒃱';
-    /// \u{120f2}: '𒃲'
-    pub const SIGN_GAL: char = '𒃲';
-    /// \u{120f3}: '𒃳'
-    pub const SIGN_GAL_GAD_OVER_GAD_GAR_OVER_GAR: char = '𒃳';
-    /// \u{120f4}: '𒃴'
-    pub const SIGN_GALAM: char = '𒃴';
-    /// \u{120f5}: '𒃵'
-    pub const SIGN_GAM: char = '𒃵';
-    /// \u{120f6}: '𒃶'
-    pub const SIGN_GAN: char = '𒃶';
-    /// \u{120f7}: '𒃷'
-    pub const SIGN_GAN2: char = '𒃷';
-    /// \u{120f8}: '𒃸'
-    pub const SIGN_GAN2_TENU: char = '𒃸';
-    /// \u{120f9}: '𒃹'
-    pub const SIGN_GAN2_OVER_GAN2: char = '𒃹';
-    /// \u{120fa}: '𒃺'
-    pub const SIGN_GAN2_CROSSING_GAN2: char = '𒃺';
-    /// \u{120fb}: '𒃻'
-    pub const SIGN_GAR: char = '𒃻';
-    /// \u{120fc}: '𒃼'
-    pub const SIGN_GAR3: char = '𒃼';
-    /// \u{120fd}: '𒃽'
-    pub const SIGN_GASHAN: char = '𒃽';
-    /// \u{120fe}: '𒃾'
-    pub const SIGN_GESHTIN: char = '𒃾';
-    /// \u{120ff}: '𒃿'
-    pub const SIGN_GESHTIN_TIMES_KUR: char = '𒃿';
-    /// \u{12100}: '𒄀'
-    pub const SIGN_GI: char = '𒄀';
-    /// \u{12101}: '𒄁'
-    pub const SIGN_GI_TIMES_E: char = '𒄁';
-    /// \u{12102}: '𒄂'
-    pub const SIGN_GI_TIMES_U: char = '𒄂';
-    /// \u{12103}: '𒄃'
-    pub const SIGN_GI_CROSSING_GI: char = '𒄃';
-    /// \u{12104}: '𒄄'
-    pub const SIGN_GI4: char = '𒄄';
-    /// \u{12105}: '𒄅'
-    pub const SIGN_GI4_OVER_GI4: char = '𒄅';
-    /// \u{12106}: '𒄆'
-    pub const SIGN_GI4_CROSSING_GI4: char = '𒄆';
-    /// \u{12107}: '𒄇'
-    pub const SIGN_GIDIM: char = '𒄇';
-    /// \u{12108}: '𒄈'
-    pub const SIGN_GIR2: char = '𒄈';
-    /// \u{12109}: '𒄉'
-    pub const SIGN_GIR2_GUNU: char = '𒄉';
-    /// \u{1210a}: '𒄊'
-    pub const SIGN_GIR3: char = '𒄊';
-    /// \u{1210b}: '𒄋'
-    pub const SIGN_GIR3_TIMES_A_PLUS_IGI: char = '𒄋';
-    /// \u{1210c}: '𒄌'
-    pub const SIGN_GIR3_TIMES_GAN2_TENU: char = '𒄌';
-    /// \u{1210d}: '𒄍'
-    pub const SIGN_GIR3_TIMES_IGI: char = '𒄍';
-    /// \u{1210e}: '𒄎'
-    pub const SIGN_GIR3_TIMES_LU_PLUS_IGI: char = '𒄎';
-    /// \u{1210f}: '𒄏'
-    pub const SIGN_GIR3_TIMES_PA: char = '𒄏';
-    /// \u{12110}: '𒄐'
-    pub const SIGN_GISAL: char = '𒄐';
-    /// \u{12111}: '𒄑'
-    pub const SIGN_GISH: char = '𒄑';
-    /// \u{12112}: '𒄒'
-    pub const SIGN_GISH_CROSSING_GISH: char = '𒄒';
-    /// \u{12113}: '𒄓'
-    pub const SIGN_GISH_TIMES_BAD: char = '𒄓';
-    /// \u{12114}: '𒄔'
-    pub const SIGN_GISH_TIMES_TAK4: char = '𒄔';
-    /// \u{12115}: '𒄕'
-    pub const SIGN_GISH_TENU: char = '𒄕';
-    /// \u{12116}: '𒄖'
-    pub const SIGN_GU: char = '𒄖';
-    /// \u{12117}: '𒄗'
-    pub const SIGN_GU_CROSSING_GU: char = '𒄗';
-    /// \u{12118}: '𒄘'
-    pub const SIGN_GU2: char = '𒄘';
-    /// \u{12119}: '𒄙'
-    pub const SIGN_GU2_TIMES_KAK: char = '𒄙';
-    /// \u{1211a}: '𒄚'
-    pub const SIGN_GU2_TIMES_KAK_TIMES_IGI_GUNU: char = '𒄚';
-    /// \u{1211b}: '𒄛'
-    pub const SIGN_GU2_TIMES_NUN: char = '𒄛';
-    /// \u{1211c}: '𒄜'
-    pub const SIGN_GU2_TIMES_SAL_PLUS_TUG2: char = '𒄜';
-    /// \u{1211d}: '𒄝'
-    pub const SIGN_GU2_GUNU: char = '𒄝';
-    /// \u{1211e}: '𒄞'
-    pub const SIGN_GUD: char = '𒄞';
-    /// \u{1211f}: '𒄟'
-    pub const SIGN_GUD_TIMES_A_PLUS_KUR: char = '𒄟';
-    /// \u{12120}: '𒄠'
-    pub const SIGN_GUD_TIMES_KUR: char = '𒄠';
-    /// \u{12121}: '𒄡'
-    pub const SIGN_GUD_OVER_GUD_LUGAL: char = '𒄡';
-    /// \u{12122}: '𒄢'
-    pub const SIGN_GUL: char = '𒄢';
-    /// \u{12123}: '𒄣'
-    pub const SIGN_GUM: char = '𒄣';
-    /// \u{12124}: '𒄤'
-    pub const SIGN_GUM_TIMES_SHE: char = '𒄤';
-    /// \u{12125}: '𒄥'
-    pub const SIGN_GUR: char = '𒄥';
-    /// \u{12126}: '𒄦'
-    pub const SIGN_GUR7: char = '𒄦';
-    /// \u{12127}: '𒄧'
-    pub const SIGN_GURUN: char = '𒄧';
-    /// \u{12128}: '𒄨'
-    pub const SIGN_GURUSH: char = '𒄨';
-    /// \u{12129}: '𒄩'
-    pub const SIGN_HA: char = '𒄩';
-    /// \u{1212a}: '𒄪'
-    pub const SIGN_HA_TENU: char = '𒄪';
-    /// \u{1212b}: '𒄫'
-    pub const SIGN_HA_GUNU: char = '𒄫';
-    /// \u{1212c}: '𒄬'
-    pub const SIGN_HAL: char = '𒄬';
-    /// \u{1212d}: '𒄭'
-    pub const SIGN_HI: char = '𒄭';
-    /// \u{1212e}: '𒄮'
-    pub const SIGN_HI_TIMES_ASH: char = '𒄮';
-    /// \u{1212f}: '𒄯'
-    pub const SIGN_HI_TIMES_ASH2: char = '𒄯';
-    /// \u{12130}: '𒄰'
-    pub const SIGN_HI_TIMES_BAD: char = '𒄰';
-    /// \u{12131}: '𒄱'
-    pub const SIGN_HI_TIMES_DISH: char = '𒄱';
-    /// \u{12132}: '𒄲'
-    pub const SIGN_HI_TIMES_GAD: char = '𒄲';
-    /// \u{12133}: '𒄳'
-    pub const SIGN_HI_TIMES_KIN: char = '𒄳';
-    /// \u{12134}: '𒄴'
-    pub const SIGN_HI_TIMES_NUN: char = '𒄴';
-    /// \u{12135}: '𒄵'
-    pub const SIGN_HI_TIMES_SHE: char = '𒄵';
-    /// \u{12136}: '𒄶'
-    pub const SIGN_HI_TIMES_U: char = '𒄶';
-    /// \u{12137}: '𒄷'
-    pub const SIGN_HU: char = '𒄷';
-    /// \u{12138}: '𒄸'
-    pub const SIGN_HUB2: char = '𒄸';
-    /// \u{12139}: '𒄹'
-    pub const SIGN_HUB2_TIMES_AN: char = '𒄹';
-    /// \u{1213a}: '𒄺'
-    pub const SIGN_HUB2_TIMES_HAL: char = '𒄺';
-    /// \u{1213b}: '𒄻'
-    pub const SIGN_HUB2_TIMES_KASKAL: char = '𒄻';
-    /// \u{1213c}: '𒄼'
-    pub const SIGN_HUB2_TIMES_LISH: char = '𒄼';
-    /// \u{1213d}: '𒄽'
-    pub const SIGN_HUB2_TIMES_UD: char = '𒄽';
-    /// \u{1213e}: '𒄾'
-    pub const SIGN_HUL2: char = '𒄾';
-    /// \u{1213f}: '𒄿'
-    pub const SIGN_I: char = '𒄿';
-    /// \u{12140}: '𒅀'
-    pub const SIGN_I_A: char = '𒅀';
-    /// \u{12141}: '𒅁'
-    pub const SIGN_IB: char = '𒅁';
-    /// \u{12142}: '𒅂'
-    pub const SIGN_IDIM: char = '𒅂';
-    /// \u{12143}: '𒅃'
-    pub const SIGN_IDIM_OVER_IDIM_BUR: char = '𒅃';
-    /// \u{12144}: '𒅄'
-    pub const SIGN_IDIM_OVER_IDIM_SQUARED: char = '𒅄';
-    /// \u{12145}: '𒅅'
-    pub const SIGN_IG: char = '𒅅';
-    /// \u{12146}: '𒅆'
-    pub const SIGN_IGI: char = '𒅆';
-    /// \u{12147}: '𒅇'
-    pub const SIGN_IGI_DIB: char = '𒅇';
-    /// \u{12148}: '𒅈'
-    pub const SIGN_IGI_RI: char = '𒅈';
-    /// \u{12149}: '𒅉'
-    pub const SIGN_IGI_OVER_IGI_SHIR_OVER_SHIR_UD_OVER_UD: char = '𒅉';
-    /// \u{1214a}: '𒅊'
-    pub const SIGN_IGI_GUNU: char = '𒅊';
-    /// \u{1214b}: '𒅋'
-    pub const SIGN_IL: char = '𒅋';
-    /// \u{1214c}: '𒅌'
-    pub const SIGN_IL_TIMES_GAN2_TENU: char = '𒅌';
-    /// \u{1214d}: '𒅍'
-    pub const SIGN_IL2: char = '𒅍';
-    /// \u{1214e}: '𒅎'
-    pub const SIGN_IM: char = '𒅎';
-    /// \u{1214f}: '𒅏'
-    pub const SIGN_IM_TIMES_TAK4: char = '𒅏';
-    /// \u{12150}: '𒅐'
-    pub const SIGN_IM_CROSSING_IM: char = '𒅐';
-    /// \u{12151}: '𒅑'
-    pub const SIGN_IM_OPPOSING_IM: char = '𒅑';
-    /// \u{12152}: '𒅒'
-    pub const SIGN_IM_SQUARED: char = '𒅒';
-    /// \u{12153}: '𒅓'
-    pub const SIGN_IMIN: char = '𒅓';
-    /// \u{12154}: '𒅔'
-    pub const SIGN_IN: char = '𒅔';
-    /// \u{12155}: '𒅕'
-    pub const SIGN_IR: char = '𒅕';
-    /// \u{12156}: '𒅖'
-    pub const SIGN_ISH: char = '𒅖';
-    /// \u{12157}: '𒅗'
-    pub const SIGN_KA: char = '𒅗';
-    /// \u{12158}: '𒅘'
-    pub const SIGN_KA_TIMES_A: char = '𒅘';
-    /// \u{12159}: '𒅙'
-    pub const SIGN_KA_TIMES_AD: char = '𒅙';
-    /// \u{1215a}: '𒅚'
-    pub const SIGN_KA_TIMES_AD_PLUS_KU3: char = '𒅚';
-    /// \u{1215b}: '𒅛'
-    pub const SIGN_KA_TIMES_ASH2: char = '𒅛';
-    /// \u{1215c}: '𒅜'
-    pub const SIGN_KA_TIMES_BAD: char = '𒅜';
-    /// \u{1215d}: '𒅝'
-    pub const SIGN_KA_TIMES_BALAG: char = '𒅝';
-    /// \u{1215e}: '𒅞'
-    pub const SIGN_KA_TIMES_BAR: char = '𒅞';
-    /// \u{1215f}: '𒅟'
-    pub const SIGN_KA_TIMES_BI: char = '𒅟';
-    /// \u{12160}: '𒅠'
-    pub const SIGN_KA_TIMES_ERIN2: char = '𒅠';
-    /// \u{12161}: '𒅡'
-    pub const SIGN_KA_TIMES_ESH2: char = '𒅡';
-    /// \u{12162}: '𒅢'
-    pub const SIGN_KA_TIMES_GA: char = '𒅢';
-    /// \u{12163}: '𒅣'
-    pub const SIGN_KA_TIMES_GAL: char = '𒅣';
-    /// \u{12164}: '𒅤'
-    pub const SIGN_KA_TIMES_GAN2_TENU: char = '𒅤';
-    /// \u{12165}: '𒅥'
-    pub const SIGN_KA_TIMES_GAR: char = '𒅥';
-    /// \u{12166}: '𒅦'
-    pub const SIGN_KA_TIMES_GAR_PLUS_SHA3_PLUS_A: char = '𒅦';
-    /// \u{12167}: '𒅧'
-    pub const SIGN_KA_TIMES_GI: char = '𒅧';
-    /// \u{12168}: '𒅨'
-    pub const SIGN_KA_TIMES_GIR2: char = '𒅨';
-    /// \u{12169}: '𒅩'
-    pub const SIGN_KA_TIMES_GISH_PLUS_SAR: char = '𒅩';
-    /// \u{1216a}: '𒅪'
-    pub const SIGN_KA_TIMES_GISH_CROSSING_GISH: char = '𒅪';
-    /// \u{1216b}: '𒅫'
-    pub const SIGN_KA_TIMES_GU: char = '𒅫';
-    /// \u{1216c}: '𒅬'
-    pub const SIGN_KA_TIMES_GUR7: char = '𒅬';
-    /// \u{1216d}: '𒅭'
-    pub const SIGN_KA_TIMES_IGI: char = '𒅭';
-    /// \u{1216e}: '𒅮'
-    pub const SIGN_KA_TIMES_IM: char = '𒅮';
-    /// \u{1216f}: '𒅯'
-    pub const SIGN_KA_TIMES_KAK: char = '𒅯';
-    /// \u{12170}: '𒅰'
-    pub const SIGN_KA_TIMES_KI: char = '𒅰';
-    /// \u{12171}: '𒅱'
-    pub const SIGN_KA_TIMES_KID: char = '𒅱';
-    /// \u{12172}: '𒅲'
-    pub const SIGN_KA_TIMES_LI: char = '𒅲';
-    /// \u{12173}: '𒅳'
-    pub const SIGN_KA_TIMES_LU: char = '𒅳';
-    /// \u{12174}: '𒅴'
-    pub const SIGN_KA_TIMES_ME: char = '𒅴';
-    /// \u{12175}: '𒅵'
-    pub const SIGN_KA_TIMES_ME_PLUS_DU: char = '𒅵';
-    /// \u{12176}: '𒅶'
-    pub const SIGN_KA_TIMES_ME_PLUS_GI: char = '𒅶';
-    /// \u{12177}: '𒅷'
-    pub const SIGN_KA_TIMES_ME_PLUS_TE: char = '𒅷';
-    /// \u{12178}: '𒅸'
-    pub const SIGN_KA_TIMES_MI: char = '𒅸';
-    /// \u{12179}: '𒅹'
-    pub const SIGN_KA_TIMES_MI_PLUS_NUNUZ: char = '𒅹';
-    /// \u{1217a}: '𒅺'
-    pub const SIGN_KA_TIMES_NE: char = '𒅺';
-    /// \u{1217b}: '𒅻'
-    pub const SIGN_KA_TIMES_NUN: char = '𒅻';
-    /// \u{1217c}: '𒅼'
-    pub const SIGN_KA_TIMES_PI: char = '𒅼';
-    /// \u{1217d}: '𒅽'
-    pub const SIGN_KA_TIMES_RU: char = '𒅽';
-    /// \u{1217e}: '𒅾'
-    pub const SIGN_KA_TIMES_SA: char = '𒅾';
-    /// \u{1217f}: '𒅿'
-    pub const SIGN_KA_TIMES_SAR: char = '𒅿';
-    /// \u{12180}: '𒆀'
-    pub const SIGN_KA_TIMES_SHA: char = '𒆀';
-    /// \u{12181}: '𒆁'
-    pub const SIGN_KA_TIMES_SHE: char = '𒆁';
-    /// \u{12182}: '𒆂'
-    pub const SIGN_KA_TIMES_SHID: char = '𒆂';
-    /// \u{12183}: '𒆃'
-    pub const SIGN_KA_TIMES_SHU: char = '𒆃';
-    /// \u{12184}: '𒆄'
-    pub const SIGN_KA_TIMES_SIG: char = '𒆄';
-    /// \u{12185}: '𒆅'
-    pub const SIGN_KA_TIMES_SUHUR: char = '𒆅';
-    /// \u{12186}: '𒆆'
-    pub const SIGN_KA_TIMES_TAR: char = '𒆆';
-    /// \u{12187}: '𒆇'
-    pub const SIGN_KA_TIMES_U: char = '𒆇';
-    /// \u{12188}: '𒆈'
-    pub const SIGN_KA_TIMES_U2: char = '𒆈';
-    /// \u{12189}: '𒆉'
-    pub const SIGN_KA_TIMES_UD: char = '𒆉';
-    /// \u{1218a}: '𒆊'
-    pub const SIGN_KA_TIMES_UMUM_TIMES_PA: char = '𒆊';
-    /// \u{1218b}: '𒆋'
-    pub const SIGN_KA_TIMES_USH: char = '𒆋';
-    /// \u{1218c}: '𒆌'
-    pub const SIGN_KA_TIMES_ZI: char = '𒆌';
-    /// \u{1218d}: '𒆍'
-    pub const SIGN_KA2: char = '𒆍';
-    /// \u{1218e}: '𒆎'
-    pub const SIGN_KA2_CROSSING_KA2: char = '𒆎';
-    /// \u{1218f}: '𒆏'
-    pub const SIGN_KAB: char = '𒆏';
-    /// \u{12190}: '𒆐'
-    pub const SIGN_KAD2: char = '𒆐';
-    /// \u{12191}: '𒆑'
-    pub const SIGN_KAD3: char = '𒆑';
-    /// \u{12192}: '𒆒'
-    pub const SIGN_KAD4: char = '𒆒';
-    /// \u{12193}: '𒆓'
-    pub const SIGN_KAD5: char = '𒆓';
-    /// \u{12194}: '𒆔'
-    pub const SIGN_KAD5_OVER_KAD5: char = '𒆔';
-    /// \u{12195}: '𒆕'
-    pub const SIGN_KAK: char = '𒆕';
-    /// \u{12196}: '𒆖'
-    pub const SIGN_KAK_TIMES_IGI_GUNU: char = '𒆖';
-    /// \u{12197}: '𒆗'
-    pub const SIGN_KAL: char = '𒆗';
-    /// \u{12198}: '𒆘'
-    pub const SIGN_KAL_TIMES_BAD: char = '𒆘';
-    /// \u{12199}: '𒆙'
-    pub const SIGN_KAL_CROSSING_KAL: char = '𒆙';
-    /// \u{1219a}: '𒆚'
-    pub const SIGN_KAM2: char = '𒆚';
-    /// \u{1219b}: '𒆛'
-    pub const SIGN_KAM4: char = '𒆛';
-    /// \u{1219c}: '𒆜'
-    pub const SIGN_KASKAL: char = '𒆜';
-    /// \u{1219d}: '𒆝'
-    pub const SIGN_KASKAL_LAGAB_TIMES_U_OVER_LAGAB_TIMES_U: char = '𒆝';
-    /// \u{1219e}: '𒆞'
-    pub const SIGN_KASKAL_OVER_KASKAL_LAGAB_TIMES_U_OVER_LAGAB_TIMES_U: char = '𒆞';
-    /// \u{1219f}: '𒆟'
-    pub const SIGN_KESH2: char = '𒆟';
-    /// \u{121a0}: '𒆠'
-    pub const SIGN_KI: char = '𒆠';
-    /// \u{121a1}: '𒆡'
-    pub const SIGN_KI_TIMES_BAD: char = '𒆡';
-    /// \u{121a2}: '𒆢'
-    pub const SIGN_KI_TIMES_U: char = '𒆢';
-    /// \u{121a3}: '𒆣'
-    pub const SIGN_KI_TIMES_UD: char = '𒆣';
-    /// \u{121a4}: '𒆤'
-    pub const SIGN_KID: char = '𒆤';
-    /// \u{121a5}: '𒆥'
-    pub const SIGN_KIN: char = '𒆥';
-    /// \u{121a6}: '𒆦'
-    pub const SIGN_KISAL: char = '𒆦';
-    /// \u{121a7}: '𒆧'
-    pub const SIGN_KISH: char = '𒆧';
-    /// \u{121a8}: '𒆨'
-    pub const SIGN_KISIM5: char = '𒆨';
-    /// \u{121a9}: '𒆩'
-    pub const SIGN_KISIM5_OVER_KISIM5: char = '𒆩';
-    /// \u{121aa}: '𒆪'
-    pub const SIGN_KU: char = '𒆪';
-    /// \u{121ab}: '𒆫'
-    pub const SIGN_KU_OVER_HI_TIMES_ASH2_KU_OVER_HI_TIMES_ASH2: char = '𒆫';
-    /// \u{121ac}: '𒆬'
-    pub const SIGN_KU3: char = '𒆬';
-    /// \u{121ad}: '𒆭'
-    pub const SIGN_KU4: char = '𒆭';
-    /// \u{121ae}: '𒆮'
-    pub const SIGN_KU4_VARIANT_FORM: char = '𒆮';
-    /// \u{121af}: '𒆯'
-    pub const SIGN_KU7: char = '𒆯';
-    /// \u{121b0}: '𒆰'
-    pub const SIGN_KUL: char = '𒆰';
-    /// \u{121b1}: '𒆱'
-    pub const SIGN_KUL_GUNU: char = '𒆱';
-    /// \u{121b2}: '𒆲'
-    pub const SIGN_KUN: char = '𒆲';
-    /// \u{121b3}: '𒆳'
-    pub const SIGN_KUR: char = '𒆳';
-    /// \u{121b4}: '𒆴'
-    pub const SIGN_KUR_OPPOSING_KUR: char = '𒆴';
-    /// \u{121b5}: '𒆵'
-    pub const SIGN_KUSHU2: char = '𒆵';
-    /// \u{121b6}: '𒆶'
-    pub const SIGN_KWU318: char = '𒆶';
-    /// \u{121b7}: '𒆷'
-    pub const SIGN_LA: char = '𒆷';
-    /// \u{121b8}: '𒆸'
-    pub const SIGN_LAGAB: char = '𒆸';
-    /// \u{121b9}: '𒆹'
-    pub const SIGN_LAGAB_TIMES_A: char = '𒆹';
-    /// \u{121ba}: '𒆺'
-    pub const SIGN_LAGAB_TIMES_A_PLUS_DA_PLUS_HA: char = '𒆺';
-    /// \u{121bb}: '𒆻'
-    pub const SIGN_LAGAB_TIMES_A_PLUS_GAR: char = '𒆻';
-    /// \u{121bc}: '𒆼'
-    pub const SIGN_LAGAB_TIMES_A_PLUS_LAL: char = '𒆼';
-    /// \u{121bd}: '𒆽'
-    pub const SIGN_LAGAB_TIMES_AL: char = '𒆽';
-    /// \u{121be}: '𒆾'
-    pub const SIGN_LAGAB_TIMES_AN: char = '𒆾';
-    /// \u{121bf}: '𒆿'
-    pub const SIGN_LAGAB_TIMES_ASH_ZIDA_TENU: char = '𒆿';
-    /// \u{121c0}: '𒇀'
-    pub const SIGN_LAGAB_TIMES_BAD: char = '𒇀';
-    /// \u{121c1}: '𒇁'
-    pub const SIGN_LAGAB_TIMES_BI: char = '𒇁';
-    /// \u{121c2}: '𒇂'
-    pub const SIGN_LAGAB_TIMES_DAR: char = '𒇂';
-    /// \u{121c3}: '𒇃'
-    pub const SIGN_LAGAB_TIMES_EN: char = '𒇃';
-    /// \u{121c4}: '𒇄'
-    pub const SIGN_LAGAB_TIMES_GA: char = '𒇄';
-    /// \u{121c5}: '𒇅'
-    pub const SIGN_LAGAB_TIMES_GAR: char = '𒇅';
-    /// \u{121c6}: '𒇆'
-    pub const SIGN_LAGAB_TIMES_GUD: char = '𒇆';
-    /// \u{121c7}: '𒇇'
-    pub const SIGN_LAGAB_TIMES_GUD_PLUS_GUD: char = '𒇇';
-    /// \u{121c8}: '𒇈'
-    pub const SIGN_LAGAB_TIMES_HA: char = '𒇈';
-    /// \u{121c9}: '𒇉'
-    pub const SIGN_LAGAB_TIMES_HAL: char = '𒇉';
-    /// \u{121ca}: '𒇊'
-    pub const SIGN_LAGAB_TIMES_HI_TIMES_NUN: char = '𒇊';
-    /// \u{121cb}: '𒇋'
-    pub const SIGN_LAGAB_TIMES_IGI_GUNU: char = '𒇋';
-    /// \u{121cc}: '𒇌'
-    pub const SIGN_LAGAB_TIMES_IM: char = '𒇌';
-    /// \u{121cd}: '𒇍'
-    pub const SIGN_LAGAB_TIMES_IM_PLUS_HA: char = '𒇍';
-    /// \u{121ce}: '𒇎'
-    pub const SIGN_LAGAB_TIMES_IM_PLUS_LU: char = '𒇎';
-    /// \u{121cf}: '𒇏'
-    pub const SIGN_LAGAB_TIMES_KI: char = '𒇏';
-    /// \u{121d0}: '𒇐'
-    pub const SIGN_LAGAB_TIMES_KIN: char = '𒇐';
-    /// \u{121d1}: '𒇑'
-    pub const SIGN_LAGAB_TIMES_KU3: char = '𒇑';
-    /// \u{121d2}: '𒇒'
-    pub const SIGN_LAGAB_TIMES_KUL: char = '𒇒';
-    /// \u{121d3}: '𒇓'
-    pub const SIGN_LAGAB_TIMES_KUL_PLUS_HI_PLUS_A: char = '𒇓';
-    /// \u{121d4}: '𒇔'
-    pub const SIGN_LAGAB_TIMES_LAGAB: char = '𒇔';
-    /// \u{121d5}: '𒇕'
-    pub const SIGN_LAGAB_TIMES_LISH: char = '𒇕';
-    /// \u{121d6}: '𒇖'
-    pub const SIGN_LAGAB_TIMES_LU: char = '𒇖';
-    /// \u{121d7}: '𒇗'
-    pub const SIGN_LAGAB_TIMES_LUL: char = '𒇗';
-    /// \u{121d8}: '𒇘'
-    pub const SIGN_LAGAB_TIMES_ME: char = '𒇘';
-    /// \u{121d9}: '𒇙'
-    pub const SIGN_LAGAB_TIMES_ME_PLUS_EN: char = '𒇙';
-    /// \u{121da}: '𒇚'
-    pub const SIGN_LAGAB_TIMES_MUSH: char = '𒇚';
-    /// \u{121db}: '𒇛'
-    pub const SIGN_LAGAB_TIMES_NE: char = '𒇛';
-    /// \u{121dc}: '𒇜'
-    pub const SIGN_LAGAB_TIMES_SHE_PLUS_SUM: char = '𒇜';
-    /// \u{121dd}: '𒇝'
-    pub const SIGN_LAGAB_TIMES_SHITA_PLUS_GISH_PLUS_ERIN2: char = '𒇝';
-    /// \u{121de}: '𒇞'
-    pub const SIGN_LAGAB_TIMES_SHITA_PLUS_GISH_TENU: char = '𒇞';
-    /// \u{121df}: '𒇟'
-    pub const SIGN_LAGAB_TIMES_SHU2: char = '𒇟';
-    /// \u{121e0}: '𒇠'
-    pub const SIGN_LAGAB_TIMES_SHU2_PLUS_SHU2: char = '𒇠';
-    /// \u{121e1}: '𒇡'
-    pub const SIGN_LAGAB_TIMES_SUM: char = '𒇡';
-    /// \u{121e2}: '𒇢'
-    pub const SIGN_LAGAB_TIMES_TAG: char = '𒇢';
-    /// \u{121e3}: '𒇣'
-    pub const SIGN_LAGAB_TIMES_TAK4: char = '𒇣';
-    /// \u{121e4}: '𒇤'
-    pub const SIGN_LAGAB_TIMES_TE_PLUS_A_PLUS_SU_PLUS_NA: char = '𒇤';
-    /// \u{121e5}: '𒇥'
-    pub const SIGN_LAGAB_TIMES_U: char = '𒇥';
-    /// \u{121e6}: '𒇦'
-    pub const SIGN_LAGAB_TIMES_U_PLUS_A: char = '𒇦';
-    /// \u{121e7}: '𒇧'
-    pub const SIGN_LAGAB_TIMES_U_PLUS_U_PLUS_U: char = '𒇧';
-    /// \u{121e8}: '𒇨'
-    pub const SIGN_LAGAB_TIMES_U2_PLUS_ASH: char = '𒇨';
-    /// \u{121e9}: '𒇩'
-    pub const SIGN_LAGAB_TIMES_UD: char = '𒇩';
-    /// \u{121ea}: '𒇪'
-    pub const SIGN_LAGAB_TIMES_USH: char = '𒇪';
-    /// \u{121eb}: '𒇫'
-    pub const SIGN_LAGAB_SQUARED: char = '𒇫';
-    /// \u{121ec}: '𒇬'
-    pub const SIGN_LAGAR: char = '𒇬';
-    /// \u{121ed}: '𒇭'
-    pub const SIGN_LAGAR_TIMES_SHE: char = '𒇭';
-    /// \u{121ee}: '𒇮'
-    pub const SIGN_LAGAR_TIMES_SHE_PLUS_SUM: char = '𒇮';
-    /// \u{121ef}: '𒇯'
-    pub const SIGN_LAGAR_GUNU: char = '𒇯';
-    /// \u{121f0}: '𒇰'
-    pub const SIGN_LAGAR_GUNU_OVER_LAGAR_GUNU_SHE: char = '𒇰';
-    /// \u{121f1}: '𒇱'
-    pub const SIGN_LAHSHU: char = '𒇱';
-    /// \u{121f2}: '𒇲'
-    pub const SIGN_LAL: char = '𒇲';
-    /// \u{121f3}: '𒇳'
-    pub const SIGN_LAL_TIMES_LAL: char = '𒇳';
-    /// \u{121f4}: '𒇴'
-    pub const SIGN_LAM: char = '𒇴';
-    /// \u{121f5}: '𒇵'
-    pub const SIGN_LAM_TIMES_KUR: char = '𒇵';
-    /// \u{121f6}: '𒇶'
-    pub const SIGN_LAM_TIMES_KUR_PLUS_RU: char = '𒇶';
-    /// \u{121f7}: '𒇷'
-    pub const SIGN_LI: char = '𒇷';
-    /// \u{121f8}: '𒇸'
-    pub const SIGN_LIL: char = '𒇸';
-    /// \u{121f9}: '𒇹'
-    pub const SIGN_LIMMU2: char = '𒇹';
-    /// \u{121fa}: '𒇺'
-    pub const SIGN_LISH: char = '𒇺';
-    /// \u{121fb}: '𒇻'
-    pub const SIGN_LU: char = '𒇻';
-    /// \u{121fc}: '𒇼'
-    pub const SIGN_LU_TIMES_BAD: char = '𒇼';
-    /// \u{121fd}: '𒇽'
-    pub const SIGN_LU2: char = '𒇽';
-    /// \u{121fe}: '𒇾'
-    pub const SIGN_LU2_TIMES_AL: char = '𒇾';
-    /// \u{121ff}: '𒇿'
-    pub const SIGN_LU2_TIMES_BAD: char = '𒇿';
-    /// \u{12200}: '𒈀'
-    pub const SIGN_LU2_TIMES_ESH2: char = '𒈀';
-    /// \u{12201}: '𒈁'
-    pub const SIGN_LU2_TIMES_ESH2_TENU: char = '𒈁';
-    /// \u{12202}: '𒈂'
-    pub const SIGN_LU2_TIMES_GAN2_TENU: char = '𒈂';
-    /// \u{12203}: '𒈃'
-    pub const SIGN_LU2_TIMES_HI_TIMES_BAD: char = '𒈃';
-    /// \u{12204}: '𒈄'
-    pub const SIGN_LU2_TIMES_IM: char = '𒈄';
-    /// \u{12205}: '𒈅'
-    pub const SIGN_LU2_TIMES_KAD2: char = '𒈅';
-    /// \u{12206}: '𒈆'
-    pub const SIGN_LU2_TIMES_KAD3: char = '𒈆';
-    /// \u{12207}: '𒈇'
-    pub const SIGN_LU2_TIMES_KAD3_PLUS_ASH: char = '𒈇';
-    /// \u{12208}: '𒈈'
-    pub const SIGN_LU2_TIMES_KI: char = '𒈈';
-    /// \u{12209}: '𒈉'
-    pub const SIGN_LU2_TIMES_LA_PLUS_ASH: char = '𒈉';
-    /// \u{1220a}: '𒈊'
-    pub const SIGN_LU2_TIMES_LAGAB: char = '𒈊';
-    /// \u{1220b}: '𒈋'
-    pub const SIGN_LU2_TIMES_ME_PLUS_EN: char = '𒈋';
-    /// \u{1220c}: '𒈌'
-    pub const SIGN_LU2_TIMES_NE: char = '𒈌';
-    /// \u{1220d}: '𒈍'
-    pub const SIGN_LU2_TIMES_NU: char = '𒈍';
-    /// \u{1220e}: '𒈎'
-    pub const SIGN_LU2_TIMES_SI_PLUS_ASH: char = '𒈎';
-    /// \u{1220f}: '𒈏'
-    pub const SIGN_LU2_TIMES_SIK2_PLUS_BU: char = '𒈏';
-    /// \u{12210}: '𒈐'
-    pub const SIGN_LU2_TIMES_TUG2: char = '𒈐';
-    /// \u{12211}: '𒈑'
-    pub const SIGN_LU2_TENU: char = '𒈑';
-    /// \u{12212}: '𒈒'
-    pub const SIGN_LU2_CROSSING_LU2: char = '𒈒';
-    /// \u{12213}: '𒈓'
-    pub const SIGN_LU2_OPPOSING_LU2: char = '𒈓';
-    /// \u{12214}: '𒈔'
-    pub const SIGN_LU2_SQUARED: char = '𒈔';
-    /// \u{12215}: '𒈕'
-    pub const SIGN_LU2_SHESHIG: char = '𒈕';
-    /// \u{12216}: '𒈖'
-    pub const SIGN_LU3: char = '𒈖';
-    /// \u{12217}: '𒈗'
-    pub const SIGN_LUGAL: char = '𒈗';
-    /// \u{12218}: '𒈘'
-    pub const SIGN_LUGAL_OVER_LUGAL: char = '𒈘';
-    /// \u{12219}: '𒈙'
-    pub const SIGN_LUGAL_OPPOSING_LUGAL: char = '𒈙';
-    /// \u{1221a}: '𒈚'
-    pub const SIGN_LUGAL_SHESHIG: char = '𒈚';
-    /// \u{1221b}: '𒈛'
-    pub const SIGN_LUH: char = '𒈛';
-    /// \u{1221c}: '𒈜'
-    pub const SIGN_LUL: char = '𒈜';
-    /// \u{1221d}: '𒈝'
-    pub const SIGN_LUM: char = '𒈝';
-    /// \u{1221e}: '𒈞'
-    pub const SIGN_LUM_OVER_LUM: char = '𒈞';
-    /// \u{1221f}: '𒈟'
-    pub const SIGN_LUM_OVER_LUM_GAR_OVER_GAR: char = '𒈟';
-    /// \u{12220}: '𒈠'
-    pub const SIGN_MA: char = '𒈠';
-    /// \u{12221}: '𒈡'
-    pub const SIGN_MA_TIMES_TAK4: char = '𒈡';
-    /// \u{12222}: '𒈢'
-    pub const SIGN_MA_GUNU: char = '𒈢';
-    /// \u{12223}: '𒈣'
-    pub const SIGN_MA2: char = '𒈣';
-    /// \u{12224}: '𒈤'
-    pub const SIGN_MAH: char = '𒈤';
-    /// \u{12225}: '𒈥'
-    pub const SIGN_MAR: char = '𒈥';
-    /// \u{12226}: '𒈦'
-    pub const SIGN_MASH: char = '𒈦';
-    /// \u{12227}: '𒈧'
-    pub const SIGN_MASH2: char = '𒈧';
-    /// \u{12228}: '𒈨'
-    pub const SIGN_ME: char = '𒈨';
-    /// \u{12229}: '𒈩'
-    pub const SIGN_MES: char = '𒈩';
-    /// \u{1222a}: '𒈪'
-    pub const SIGN_MI: char = '𒈪';
-    /// \u{1222b}: '𒈫'
-    pub const SIGN_MIN: char = '𒈫';
-    /// \u{1222c}: '𒈬'
-    pub const SIGN_MU: char = '𒈬';
-    /// \u{1222d}: '𒈭'
-    pub const SIGN_MU_OVER_MU: char = '𒈭';
-    /// \u{1222e}: '𒈮'
-    pub const SIGN_MUG: char = '𒈮';
-    /// \u{1222f}: '𒈯'
-    pub const SIGN_MUG_GUNU: char = '𒈯';
-    /// \u{12230}: '𒈰'
-    pub const SIGN_MUNSUB: char = '𒈰';
-    /// \u{12231}: '𒈱'
-    pub const SIGN_MURGU2: char = '𒈱';
-    /// \u{12232}: '𒈲'
-    pub const SIGN_MUSH: char = '𒈲';
-    /// \u{12233}: '𒈳'
-    pub const SIGN_MUSH_TIMES_A: char = '𒈳';
-    /// \u{12234}: '𒈴'
-    pub const SIGN_MUSH_TIMES_KUR: char = '𒈴';
-    /// \u{12235}: '𒈵'
-    pub const SIGN_MUSH_TIMES_ZA: char = '𒈵';
-    /// \u{12236}: '𒈶'
-    pub const SIGN_MUSH_OVER_MUSH: char = '𒈶';
-    /// \u{12237}: '𒈷'
-    pub const SIGN_MUSH_OVER_MUSH_TIMES_A_PLUS_NA: char = '𒈷';
-    /// \u{12238}: '𒈸'
-    pub const SIGN_MUSH_CROSSING_MUSH: char = '𒈸';
-    /// \u{12239}: '𒈹'
-    pub const SIGN_MUSH3: char = '𒈹';
-    /// \u{1223a}: '𒈺'
-    pub const SIGN_MUSH3_TIMES_A: char = '𒈺';
-    /// \u{1223b}: '𒈻'
-    pub const SIGN_MUSH3_TIMES_A_PLUS_DI: char = '𒈻';
-    /// \u{1223c}: '𒈼'
-    pub const SIGN_MUSH3_TIMES_DI: char = '𒈼';
-    /// \u{1223d}: '𒈽'
-    pub const SIGN_MUSH3_GUNU: char = '𒈽';
-    /// \u{1223e}: '𒈾'
-    pub const SIGN_NA: char = '𒈾';
-    /// \u{1223f}: '𒈿'
-    pub const SIGN_NA2: char = '𒈿';
-    /// \u{12240}: '𒉀'
-    pub const SIGN_NAGA: char = '𒉀';
-    /// \u{12241}: '𒉁'
-    pub const SIGN_NAGA_INVERTED: char = '𒉁';
-    /// \u{12242}: '𒉂'
-    pub const SIGN_NAGA_TIMES_SHU_TENU: char = '𒉂';
-    /// \u{12243}: '𒉃'
-    pub const SIGN_NAGA_OPPOSING_NAGA: char = '𒉃';
-    /// \u{12244}: '𒉄'
-    pub const SIGN_NAGAR: char = '𒉄';
-    /// \u{12245}: '𒉅'
-    pub const SIGN_NAM_NUTILLU: char = '𒉅';
-    /// \u{12246}: '𒉆'
-    pub const SIGN_NAM: char = '𒉆';
-    /// \u{12247}: '𒉇'
-    pub const SIGN_NAM2: char = '𒉇';
-    /// \u{12248}: '𒉈'
-    pub const SIGN_NE: char = '𒉈';
-    /// \u{12249}: '𒉉'
-    pub const SIGN_NE_TIMES_A: char = '𒉉';
-    /// \u{1224a}: '𒉊'
-    pub const SIGN_NE_TIMES_UD: char = '𒉊';
-    /// \u{1224b}: '𒉋'
-    pub const SIGN_NE_SHESHIG: char = '𒉋';
-    /// \u{1224c}: '𒉌'
-    pub const SIGN_NI: char = '𒉌';
-    /// \u{1224d}: '𒉍'
-    pub const SIGN_NI_TIMES_E: char = '𒉍';
-    /// \u{1224e}: '𒉎'
-    pub const SIGN_NI2: char = '𒉎';
-    /// \u{1224f}: '𒉏'
-    pub const SIGN_NIM: char = '𒉏';
-    /// \u{12250}: '𒉐'
-    pub const SIGN_NIM_TIMES_GAN2_TENU: char = '𒉐';
-    /// \u{12251}: '𒉑'
-    pub const SIGN_NIM_TIMES_GAR_PLUS_GAN2_TENU: char = '𒉑';
-    /// \u{12252}: '𒉒'
-    pub const SIGN_NINDA2: char = '𒉒';
-    /// \u{12253}: '𒉓'
-    pub const SIGN_NINDA2_TIMES_AN: char = '𒉓';
-    /// \u{12254}: '𒉔'
-    pub const SIGN_NINDA2_TIMES_ASH: char = '𒉔';
-    /// \u{12255}: '𒉕'
-    pub const SIGN_NINDA2_TIMES_ASH_PLUS_ASH: char = '𒉕';
-    /// \u{12256}: '𒉖'
-    pub const SIGN_NINDA2_TIMES_GUD: char = '𒉖';
-    /// \u{12257}: '𒉗'
-    pub const SIGN_NINDA2_TIMES_ME_PLUS_GAN2_TENU: char = '𒉗';
-    /// \u{12258}: '𒉘'
-    pub const SIGN_NINDA2_TIMES_NE: char = '𒉘';
-    /// \u{12259}: '𒉙'
-    pub const SIGN_NINDA2_TIMES_NUN: char = '𒉙';
-    /// \u{1225a}: '𒉚'
-    pub const SIGN_NINDA2_TIMES_SHE: char = '𒉚';
-    /// \u{1225b}: '𒉛'
-    pub const SIGN_NINDA2_TIMES_SHE_PLUS_A_AN: char = '𒉛';
-    /// \u{1225c}: '𒉜'
-    pub const SIGN_NINDA2_TIMES_SHE_PLUS_ASH: char = '𒉜';
-    /// \u{1225d}: '𒉝'
-    pub const SIGN_NINDA2_TIMES_SHE_PLUS_ASH_PLUS_ASH: char = '𒉝';
-    /// \u{1225e}: '𒉞'
-    pub const SIGN_NINDA2_TIMES_U2_PLUS_ASH: char = '𒉞';
-    /// \u{1225f}: '𒉟'
-    pub const SIGN_NINDA2_TIMES_USH: char = '𒉟';
-    /// \u{12260}: '𒉠'
-    pub const SIGN_NISAG: char = '𒉠';
-    /// \u{12261}: '𒉡'
-    pub const SIGN_NU: char = '𒉡';
-    /// \u{12262}: '𒉢'
-    pub const SIGN_NU11: char = '𒉢';
-    /// \u{12263}: '𒉣'
-    pub const SIGN_NUN: char = '𒉣';
-    /// \u{12264}: '𒉤'
-    pub const SIGN_NUN_LAGAR_TIMES_GAR: char = '𒉤';
-    /// \u{12265}: '𒉥'
-    pub const SIGN_NUN_LAGAR_TIMES_MASH: char = '𒉥';
-    /// \u{12266}: '𒉦'
-    pub const SIGN_NUN_LAGAR_TIMES_SAL: char = '𒉦';
-    /// \u{12267}: '𒉧'
-    pub const SIGN_NUN_LAGAR_TIMES_SAL_OVER_NUN_LAGAR_TIMES_SAL: char = '𒉧';
-    /// \u{12268}: '𒉨'
-    pub const SIGN_NUN_LAGAR_TIMES_USH: char = '𒉨';
-    /// \u{12269}: '𒉩'
-    pub const SIGN_NUN_TENU: char = '𒉩';
-    /// \u{1226a}: '𒉪'
-    pub const SIGN_NUN_OVER_NUN: char = '𒉪';
-    /// \u{1226b}: '𒉫'
-    pub const SIGN_NUN_CROSSING_NUN: char = '𒉫';
-    /// \u{1226c}: '𒉬'
-    pub const SIGN_NUN_CROSSING_NUN_LAGAR_OVER_LAGAR: char = '𒉬';
-    /// \u{1226d}: '𒉭'
-    pub const SIGN_NUNUZ: char = '𒉭';
-    /// \u{1226e}: '𒉮'
-    pub const SIGN_NUNUZ_AB2_TIMES_ASHGAB: char = '𒉮';
-    /// \u{1226f}: '𒉯'
-    pub const SIGN_NUNUZ_AB2_TIMES_BI: char = '𒉯';
-    /// \u{12270}: '𒉰'
-    pub const SIGN_NUNUZ_AB2_TIMES_DUG: char = '𒉰';
-    /// \u{12271}: '𒉱'
-    pub const SIGN_NUNUZ_AB2_TIMES_GUD: char = '𒉱';
-    /// \u{12272}: '𒉲'
-    pub const SIGN_NUNUZ_AB2_TIMES_IGI_GUNU: char = '𒉲';
-    /// \u{12273}: '𒉳'
-    pub const SIGN_NUNUZ_AB2_TIMES_KAD3: char = '𒉳';
-    /// \u{12274}: '𒉴'
-    pub const SIGN_NUNUZ_AB2_TIMES_LA: char = '𒉴';
-    /// \u{12275}: '𒉵'
-    pub const SIGN_NUNUZ_AB2_TIMES_NE: char = '𒉵';
-    /// \u{12276}: '𒉶'
-    pub const SIGN_NUNUZ_AB2_TIMES_SILA3: char = '𒉶';
-    /// \u{12277}: '𒉷'
-    pub const SIGN_NUNUZ_AB2_TIMES_U2: char = '𒉷';
-    /// \u{12278}: '𒉸'
-    pub const SIGN_NUNUZ_KISIM5_TIMES_BI: char = '𒉸';
-    /// \u{12279}: '𒉹'
-    pub const SIGN_NUNUZ_KISIM5_TIMES_BI_U: char = '𒉹';
-    /// \u{1227a}: '𒉺'
-    pub const SIGN_PA: char = '𒉺';
-    /// \u{1227b}: '𒉻'
-    pub const SIGN_PAD: char = '𒉻';
-    /// \u{1227c}: '𒉼'
-    pub const SIGN_PAN: char = '𒉼';
-    /// \u{1227d}: '𒉽'
-    pub const SIGN_PAP: char = '𒉽';
-    /// \u{1227e}: '𒉾'
-    pub const SIGN_PESH2: char = '𒉾';
-    /// \u{1227f}: '𒉿'
-    pub const SIGN_PI: char = '𒉿';
-    /// \u{12280}: '𒊀'
-    pub const SIGN_PI_TIMES_A: char = '𒊀';
-    /// \u{12281}: '𒊁'
-    pub const SIGN_PI_TIMES_AB: char = '𒊁';
-    /// \u{12282}: '𒊂'
-    pub const SIGN_PI_TIMES_BI: char = '𒊂';
-    /// \u{12283}: '𒊃'
-    pub const SIGN_PI_TIMES_BU: char = '𒊃';
-    /// \u{12284}: '𒊄'
-    pub const SIGN_PI_TIMES_E: char = '𒊄';
-    /// \u{12285}: '𒊅'
-    pub const SIGN_PI_TIMES_I: char = '𒊅';
-    /// \u{12286}: '𒊆'
-    pub const SIGN_PI_TIMES_IB: char = '𒊆';
-    /// \u{12287}: '𒊇'
-    pub const SIGN_PI_TIMES_U: char = '𒊇';
-    /// \u{12288}: '𒊈'
-    pub const SIGN_PI_TIMES_U2: char = '𒊈';
-    /// \u{12289}: '𒊉'
-    pub const SIGN_PI_CROSSING_PI: char = '𒊉';
-    /// \u{1228a}: '𒊊'
-    pub const SIGN_PIRIG: char = '𒊊';
-    /// \u{1228b}: '𒊋'
-    pub const SIGN_PIRIG_TIMES_KAL: char = '𒊋';
-    /// \u{1228c}: '𒊌'
-    pub const SIGN_PIRIG_TIMES_UD: char = '𒊌';
-    /// \u{1228d}: '𒊍'
-    pub const SIGN_PIRIG_TIMES_ZA: char = '𒊍';
-    /// \u{1228e}: '𒊎'
-    pub const SIGN_PIRIG_OPPOSING_PIRIG: char = '𒊎';
-    /// \u{1228f}: '𒊏'
-    pub const SIGN_RA: char = '𒊏';
-    /// \u{12290}: '𒊐'
-    pub const SIGN_RAB: char = '𒊐';
-    /// \u{12291}: '𒊑'
-    pub const SIGN_RI: char = '𒊑';
-    /// \u{12292}: '𒊒'
-    pub const SIGN_RU: char = '𒊒';
-    /// \u{12293}: '𒊓'
-    pub const SIGN_SA: char = '𒊓';
-    /// \u{12294}: '𒊔'
-    pub const SIGN_SAG_NUTILLU: char = '𒊔';
-    /// \u{12295}: '𒊕'
-    pub const SIGN_SAG: char = '𒊕';
-    /// \u{12296}: '𒊖'
-    pub const SIGN_SAG_TIMES_A: char = '𒊖';
-    /// \u{12297}: '𒊗'
-    pub const SIGN_SAG_TIMES_DU: char = '𒊗';
-    /// \u{12298}: '𒊘'
-    pub const SIGN_SAG_TIMES_DUB: char = '𒊘';
-    /// \u{12299}: '𒊙'
-    pub const SIGN_SAG_TIMES_HA: char = '𒊙';
-    /// \u{1229a}: '𒊚'
-    pub const SIGN_SAG_TIMES_KAK: char = '𒊚';
-    /// \u{1229b}: '𒊛'
-    pub const SIGN_SAG_TIMES_KUR: char = '𒊛';
-    /// \u{1229c}: '𒊜'
-    pub const SIGN_SAG_TIMES_LUM: char = '𒊜';
-    /// \u{1229d}: '𒊝'
-    pub const SIGN_SAG_TIMES_MI: char = '𒊝';
-    /// \u{1229e}: '𒊞'
-    pub const SIGN_SAG_TIMES_NUN: char = '𒊞';
-    /// \u{1229f}: '𒊟'
-    pub const SIGN_SAG_TIMES_SAL: char = '𒊟';
-    /// \u{122a0}: '𒊠'
-    pub const SIGN_SAG_TIMES_SHID: char = '𒊠';
-    /// \u{122a1}: '𒊡'
-    pub const SIGN_SAG_TIMES_TAB: char = '𒊡';
-    /// \u{122a2}: '𒊢'
-    pub const SIGN_SAG_TIMES_U2: char = '𒊢';
-    /// \u{122a3}: '𒊣'
-    pub const SIGN_SAG_TIMES_UB: char = '𒊣';
-    /// \u{122a4}: '𒊤'
-    pub const SIGN_SAG_TIMES_UM: char = '𒊤';
-    /// \u{122a5}: '𒊥'
-    pub const SIGN_SAG_TIMES_UR: char = '𒊥';
-    /// \u{122a6}: '𒊦'
-    pub const SIGN_SAG_TIMES_USH: char = '𒊦';
-    /// \u{122a7}: '𒊧'
-    pub const SIGN_SAG_OVER_SAG: char = '𒊧';
-    /// \u{122a8}: '𒊨'
-    pub const SIGN_SAG_GUNU: char = '𒊨';
-    /// \u{122a9}: '𒊩'
-    pub const SIGN_SAL: char = '𒊩';
-    /// \u{122aa}: '𒊪'
-    pub const SIGN_SAL_LAGAB_TIMES_ASH2: char = '𒊪';
-    /// \u{122ab}: '𒊫'
-    pub const SIGN_SANGA2: char = '𒊫';
-    /// \u{122ac}: '𒊬'
-    pub const SIGN_SAR: char = '𒊬';
-    /// \u{122ad}: '𒊭'
-    pub const SIGN_SHA: char = '𒊭';
-    /// \u{122ae}: '𒊮'
-    pub const SIGN_SHA3: char = '𒊮';
-    /// \u{122af}: '𒊯'
-    pub const SIGN_SHA3_TIMES_A: char = '𒊯';
-    /// \u{122b0}: '𒊰'
-    pub const SIGN_SHA3_TIMES_BAD: char = '𒊰';
-    /// \u{122b1}: '𒊱'
-    pub const SIGN_SHA3_TIMES_GISH: char = '𒊱';
-    /// \u{122b2}: '𒊲'
-    pub const SIGN_SHA3_TIMES_NE: char = '𒊲';
-    /// \u{122b3}: '𒊳'
-    pub const SIGN_SHA3_TIMES_SHU2: char = '𒊳';
-    /// \u{122b4}: '𒊴'
-    pub const SIGN_SHA3_TIMES_TUR: char = '𒊴';
-    /// \u{122b5}: '𒊵'
-    pub const SIGN_SHA3_TIMES_U: char = '𒊵';
-    /// \u{122b6}: '𒊶'
-    pub const SIGN_SHA3_TIMES_U_PLUS_A: char = '𒊶';
-    /// \u{122b7}: '𒊷'
-    pub const SIGN_SHA6: char = '𒊷';
-    /// \u{122b8}: '𒊸'
-    pub const SIGN_SHAB6: char = '𒊸';
-    /// \u{122b9}: '𒊹'
-    pub const SIGN_SHAR2: char = '𒊹';
-    /// \u{122ba}: '𒊺'
-    pub const SIGN_SHE: char = '𒊺';
-    /// \u{122bb}: '𒊻'
-    pub const SIGN_SHE_HU: char = '𒊻';
-    /// \u{122bc}: '𒊼'
-    pub const SIGN_SHE_OVER_SHE_GAD_OVER_GAD_GAR_OVER_GAR: char = '𒊼';
-    /// \u{122bd}: '𒊽'
-    pub const SIGN_SHE_OVER_SHE_TAB_OVER_TAB_GAR_OVER_GAR: char = '𒊽';
-    /// \u{122be}: '𒊾'
-    pub const SIGN_SHEG9: char = '𒊾';
-    /// \u{122bf}: '𒊿'
-    pub const SIGN_SHEN: char = '𒊿';
-    /// \u{122c0}: '𒋀'
-    pub const SIGN_SHESH: char = '𒋀';
-    /// \u{122c1}: '𒋁'
-    pub const SIGN_SHESH2: char = '𒋁';
-    /// \u{122c2}: '𒋂'
-    pub const SIGN_SHESHLAM: char = '𒋂';
-    /// \u{122c3}: '𒋃'
-    pub const SIGN_SHID: char = '𒋃';
-    /// \u{122c4}: '𒋄'
-    pub const SIGN_SHID_TIMES_A: char = '𒋄';
-    /// \u{122c5}: '𒋅'
-    pub const SIGN_SHID_TIMES_IM: char = '𒋅';
-    /// \u{122c6}: '𒋆'
-    pub const SIGN_SHIM: char = '𒋆';
-    /// \u{122c7}: '𒋇'
-    pub const SIGN_SHIM_TIMES_A: char = '𒋇';
-    /// \u{122c8}: '𒋈'
-    pub const SIGN_SHIM_TIMES_BAL: char = '𒋈';
-    /// \u{122c9}: '𒋉'
-    pub const SIGN_SHIM_TIMES_BULUG: char = '𒋉';
-    /// \u{122ca}: '𒋊'
-    pub const SIGN_SHIM_TIMES_DIN: char = '𒋊';
-    /// \u{122cb}: '𒋋'
-    pub const SIGN_SHIM_TIMES_GAR: char = '𒋋';
-    /// \u{122cc}: '𒋌'
-    pub const SIGN_SHIM_TIMES_IGI: char = '𒋌';
-    /// \u{122cd}: '𒋍'
-    pub const SIGN_SHIM_TIMES_IGI_GUNU: char = '𒋍';
-    /// \u{122ce}: '𒋎'
-    pub const SIGN_SHIM_TIMES_KUSHU2: char = '𒋎';
-    /// \u{122cf}: '𒋏'
-    pub const SIGN_SHIM_TIMES_LUL: char = '𒋏';
-    /// \u{122d0}: '𒋐'
-    pub const SIGN_SHIM_TIMES_MUG: char = '𒋐';
-    /// \u{122d1}: '𒋑'
-    pub const SIGN_SHIM_TIMES_SAL: char = '𒋑';
-    /// \u{122d2}: '𒋒'
-    pub const SIGN_SHINIG: char = '𒋒';
-    /// \u{122d3}: '𒋓'
-    pub const SIGN_SHIR: char = '𒋓';
-    /// \u{122d4}: '𒋔'
-    pub const SIGN_SHIR_TENU: char = '𒋔';
-    /// \u{122d5}: '𒋕'
-    pub const SIGN_SHIR_OVER_SHIR_BUR_OVER_BUR: char = '𒋕';
-    /// \u{122d6}: '𒋖'
-    pub const SIGN_SHITA: char = '𒋖';
-    /// \u{122d7}: '𒋗'
-    pub const SIGN_SHU: char = '𒋗';
-    /// \u{122d8}: '𒋘'
-    pub const SIGN_SHU_OVER_INVERTED_SHU: char = '𒋘';
-    /// \u{122d9}: '𒋙'
-    pub const SIGN_SHU2: char = '𒋙';
-    /// \u{122da}: '𒋚'
-    pub const SIGN_SHUBUR: char = '𒋚';
-    /// \u{122db}: '𒋛'
-    pub const SIGN_SI: char = '𒋛';
-    /// \u{122dc}: '𒋜'
-    pub const SIGN_SI_GUNU: char = '𒋜';
-    /// \u{122dd}: '𒋝'
-    pub const SIGN_SIG: char = '𒋝';
-    /// \u{122de}: '𒋞'
-    pub const SIGN_SIG4: char = '𒋞';
-    /// \u{122df}: '𒋟'
-    pub const SIGN_SIG4_OVER_SIG4_SHU2: char = '𒋟';
-    /// \u{122e0}: '𒋠'
-    pub const SIGN_SIK2: char = '𒋠';
-    /// \u{122e1}: '𒋡'
-    pub const SIGN_SILA3: char = '𒋡';
-    /// \u{122e2}: '𒋢'
-    pub const SIGN_SU: char = '𒋢';
-    /// \u{122e3}: '𒋣'
-    pub const SIGN_SU_OVER_SU: char = '𒋣';
-    /// \u{122e4}: '𒋤'
-    pub const SIGN_SUD: char = '𒋤';
-    /// \u{122e5}: '𒋥'
-    pub const SIGN_SUD2: char = '𒋥';
-    /// \u{122e6}: '𒋦'
-    pub const SIGN_SUHUR: char = '𒋦';
-    /// \u{122e7}: '𒋧'
-    pub const SIGN_SUM: char = '𒋧';
-    /// \u{122e8}: '𒋨'
-    pub const SIGN_SUMASH: char = '𒋨';
-    /// \u{122e9}: '𒋩'
-    pub const SIGN_SUR: char = '𒋩';
-    /// \u{122ea}: '𒋪'
-    pub const SIGN_SUR9: char = '𒋪';
-    /// \u{122eb}: '𒋫'
-    pub const SIGN_TA: char = '𒋫';
-    /// \u{122ec}: '𒋬'
-    pub const SIGN_TA_ASTERISK: char = '𒋬';
-    /// \u{122ed}: '𒋭'
-    pub const SIGN_TA_TIMES_HI: char = '𒋭';
-    /// \u{122ee}: '𒋮'
-    pub const SIGN_TA_TIMES_MI: char = '𒋮';
-    /// \u{122ef}: '𒋯'
-    pub const SIGN_TA_GUNU: char = '𒋯';
-    /// \u{122f0}: '𒋰'
-    pub const SIGN_TAB: char = '𒋰';
-    /// \u{122f1}: '𒋱'
-    pub const SIGN_TAB_OVER_TAB_NI_OVER_NI_DISH_OVER_DISH: char = '𒋱';
-    /// \u{122f2}: '𒋲'
-    pub const SIGN_TAB_SQUARED: char = '𒋲';
-    /// \u{122f3}: '𒋳'
-    pub const SIGN_TAG: char = '𒋳';
-    /// \u{122f4}: '𒋴'
-    pub const SIGN_TAG_TIMES_BI: char = '𒋴';
-    /// \u{122f5}: '𒋵'
-    pub const SIGN_TAG_TIMES_GUD: char = '𒋵';
-    /// \u{122f6}: '𒋶'
-    pub const SIGN_TAG_TIMES_SHE: char = '𒋶';
-    /// \u{122f7}: '𒋷'
-    pub const SIGN_TAG_TIMES_SHU: char = '𒋷';
-    /// \u{122f8}: '𒋸'
-    pub const SIGN_TAG_TIMES_TUG2: char = '𒋸';
-    /// \u{122f9}: '𒋹'
-    pub const SIGN_TAG_TIMES_UD: char = '𒋹';
-    /// \u{122fa}: '𒋺'
-    pub const SIGN_TAK4: char = '𒋺';
-    /// \u{122fb}: '𒋻'
-    pub const SIGN_TAR: char = '𒋻';
-    /// \u{122fc}: '𒋼'
-    pub const SIGN_TE: char = '𒋼';
-    /// \u{122fd}: '𒋽'
-    pub const SIGN_TE_GUNU: char = '𒋽';
-    /// \u{122fe}: '𒋾'
-    pub const SIGN_TI: char = '𒋾';
-    /// \u{122ff}: '𒋿'
-    pub const SIGN_TI_TENU: char = '𒋿';
-    /// \u{12300}: '𒌀'
-    pub const SIGN_TIL: char = '𒌀';
-    /// \u{12301}: '𒌁'
-    pub const SIGN_TIR: char = '𒌁';
-    /// \u{12302}: '𒌂'
-    pub const SIGN_TIR_TIMES_TAK4: char = '𒌂';
-    /// \u{12303}: '𒌃'
-    pub const SIGN_TIR_OVER_TIR: char = '𒌃';
-    /// \u{12304}: '𒌄'
-    pub const SIGN_TIR_OVER_TIR_GAD_OVER_GAD_GAR_OVER_GAR: char = '𒌄';
-    /// \u{12305}: '𒌅'
-    pub const SIGN_TU: char = '𒌅';
-    /// \u{12306}: '𒌆'
-    pub const SIGN_TUG2: char = '𒌆';
-    /// \u{12307}: '𒌇'
-    pub const SIGN_TUK: char = '𒌇';
-    /// \u{12308}: '𒌈'
-    pub const SIGN_TUM: char = '𒌈';
-    /// \u{12309}: '𒌉'
-    pub const SIGN_TUR: char = '𒌉';
-    /// \u{1230a}: '𒌊'
-    pub const SIGN_TUR_OVER_TUR_ZA_OVER_ZA: char = '𒌊';
-    /// \u{1230b}: '𒌋'
-    pub const SIGN_U: char = '𒌋';
-    /// \u{1230c}: '𒌌'
-    pub const SIGN_U_GUD: char = '𒌌';
-    /// \u{1230d}: '𒌍'
-    pub const SIGN_U_U_U: char = '𒌍';
-    /// \u{1230e}: '𒌎'
-    pub const SIGN_U_OVER_U_PA_OVER_PA_GAR_OVER_GAR: char = '𒌎';
-    /// \u{1230f}: '𒌏'
-    pub const SIGN_U_OVER_U_SUR_OVER_SUR: char = '𒌏';
-    /// \u{12310}: '𒌐'
-    pub const SIGN_U_OVER_U_U_REVERSED_OVER_U_REVERSED: char = '𒌐';
-    /// \u{12311}: '𒌑'
-    pub const SIGN_U2: char = '𒌑';
-    /// \u{12312}: '𒌒'
-    pub const SIGN_UB: char = '𒌒';
-    /// \u{12313}: '𒌓'
-    pub const SIGN_UD: char = '𒌓';
-    /// \u{12314}: '𒌔'
-    pub const SIGN_UD_KUSHU2: char = '𒌔';
-    /// \u{12315}: '𒌕'
-    pub const SIGN_UD_TIMES_BAD: char = '𒌕';
-    /// \u{12316}: '𒌖'
-    pub const SIGN_UD_TIMES_MI: char = '𒌖';
-    /// \u{12317}: '𒌗'
-    pub const SIGN_UD_TIMES_U_PLUS_U_PLUS_U: char = '𒌗';
-    /// \u{12318}: '𒌘'
-    pub const SIGN_UD_TIMES_U_PLUS_U_PLUS_U_GUNU: char = '𒌘';
-    /// \u{12319}: '𒌙'
-    pub const SIGN_UD_GUNU: char = '𒌙';
-    /// \u{1231a}: '𒌚'
-    pub const SIGN_UD_SHESHIG: char = '𒌚';
-    /// \u{1231b}: '𒌛'
-    pub const SIGN_UD_SHESHIG_TIMES_BAD: char = '𒌛';
-    /// \u{1231c}: '𒌜'
-    pub const SIGN_UDUG: char = '𒌜';
-    /// \u{1231d}: '𒌝'
-    pub const SIGN_UM: char = '𒌝';
-    /// \u{1231e}: '𒌞'
-    pub const SIGN_UM_TIMES_LAGAB: char = '𒌞';
-    /// \u{1231f}: '𒌟'
-    pub const SIGN_UM_TIMES_ME_PLUS_DA: char = '𒌟';
-    /// \u{12320}: '𒌠'
-    pub const SIGN_UM_TIMES_SHA3: char = '𒌠';
-    /// \u{12321}: '𒌡'
-    pub const SIGN_UM_TIMES_U: char = '𒌡';
-    /// \u{12322}: '𒌢'
-    pub const SIGN_UMBIN: char = '𒌢';
-    /// \u{12323}: '𒌣'
-    pub const SIGN_UMUM: char = '𒌣';
-    /// \u{12324}: '𒌤'
-    pub const SIGN_UMUM_TIMES_KASKAL: char = '𒌤';
-    /// \u{12325}: '𒌥'
-    pub const SIGN_UMUM_TIMES_PA: char = '𒌥';
-    /// \u{12326}: '𒌦'
-    pub const SIGN_UN: char = '𒌦';
-    /// \u{12327}: '𒌧'
-    pub const SIGN_UN_GUNU: char = '𒌧';
-    /// \u{12328}: '𒌨'
-    pub const SIGN_UR: char = '𒌨';
-    /// \u{12329}: '𒌩'
-    pub const SIGN_UR_CROSSING_UR: char = '𒌩';
-    /// \u{1232a}: '𒌪'
-    pub const SIGN_UR_SHESHIG: char = '𒌪';
-    /// \u{1232b}: '𒌫'
-    pub const SIGN_UR2: char = '𒌫';
-    /// \u{1232c}: '𒌬'
-    pub const SIGN_UR2_TIMES_A_PLUS_HA: char = '𒌬';
-    /// \u{1232d}: '𒌭'
-    pub const SIGN_UR2_TIMES_A_PLUS_NA: char = '𒌭';
-    /// \u{1232e}: '𒌮'
-    pub const SIGN_UR2_TIMES_AL: char = '𒌮';
-    /// \u{1232f}: '𒌯'
-    pub const SIGN_UR2_TIMES_HA: char = '𒌯';
-    /// \u{12330}: '𒌰'
-    pub const SIGN_UR2_TIMES_NUN: char = '𒌰';
-    /// \u{12331}: '𒌱'
-    pub const SIGN_UR2_TIMES_U2: char = '𒌱';
-    /// \u{12332}: '𒌲'
-    pub const SIGN_UR2_TIMES_U2_PLUS_ASH: char = '𒌲';
-    /// \u{12333}: '𒌳'
-    pub const SIGN_UR2_TIMES_U2_PLUS_BI: char = '𒌳';
-    /// \u{12334}: '𒌴'
-    pub const SIGN_UR4: char = '𒌴';
-    /// \u{12335}: '𒌵'
-    pub const SIGN_URI: char = '𒌵';
-    /// \u{12336}: '𒌶'
-    pub const SIGN_URI3: char = '𒌶';
-    /// \u{12337}: '𒌷'
-    pub const SIGN_URU: char = '𒌷';
-    /// \u{12338}: '𒌸'
-    pub const SIGN_URU_TIMES_A: char = '𒌸';
-    /// \u{12339}: '𒌹'
-    pub const SIGN_URU_TIMES_ASHGAB: char = '𒌹';
-    /// \u{1233a}: '𒌺'
-    pub const SIGN_URU_TIMES_BAR: char = '𒌺';
-    /// \u{1233b}: '𒌻'
-    pub const SIGN_URU_TIMES_DUN: char = '𒌻';
-    /// \u{1233c}: '𒌼'
-    pub const SIGN_URU_TIMES_GA: char = '𒌼';
-    /// \u{1233d}: '𒌽'
-    pub const SIGN_URU_TIMES_GAL: char = '𒌽';
-    /// \u{1233e}: '𒌾'
-    pub const SIGN_URU_TIMES_GAN2_TENU: char = '𒌾';
-    /// \u{1233f}: '𒌿'
-    pub const SIGN_URU_TIMES_GAR: char = '𒌿';
-    /// \u{12340}: '𒍀'
-    pub const SIGN_URU_TIMES_GU: char = '𒍀';
-    /// \u{12341}: '𒍁'
-    pub const SIGN_URU_TIMES_HA: char = '𒍁';
-    /// \u{12342}: '𒍂'
-    pub const SIGN_URU_TIMES_IGI: char = '𒍂';
-    /// \u{12343}: '𒍃'
-    pub const SIGN_URU_TIMES_IM: char = '𒍃';
-    /// \u{12344}: '𒍄'
-    pub const SIGN_URU_TIMES_ISH: char = '𒍄';
-    /// \u{12345}: '𒍅'
-    pub const SIGN_URU_TIMES_KI: char = '𒍅';
-    /// \u{12346}: '𒍆'
-    pub const SIGN_URU_TIMES_LUM: char = '𒍆';
-    /// \u{12347}: '𒍇'
-    pub const SIGN_URU_TIMES_MIN: char = '𒍇';
-    /// \u{12348}: '𒍈'
-    pub const SIGN_URU_TIMES_PA: char = '𒍈';
-    /// \u{12349}: '𒍉'
-    pub const SIGN_URU_TIMES_SHE: char = '𒍉';
-    /// \u{1234a}: '𒍊'
-    pub const SIGN_URU_TIMES_SIG4: char = '𒍊';
-    /// \u{1234b}: '𒍋'
-    pub const SIGN_URU_TIMES_TU: char = '𒍋';
-    /// \u{1234c}: '𒍌'
-    pub const SIGN_URU_TIMES_U_PLUS_GUD: char = '𒍌';
-    /// \u{1234d}: '𒍍'
-    pub const SIGN_URU_TIMES_UD: char = '𒍍';
-    /// \u{1234e}: '𒍎'
-    pub const SIGN_URU_TIMES_URUDA: char = '𒍎';
-    /// \u{1234f}: '𒍏'
-    pub const SIGN_URUDA: char = '𒍏';
-    /// \u{12350}: '𒍐'
-    pub const SIGN_URUDA_TIMES_U: char = '𒍐';
-    /// \u{12351}: '𒍑'
-    pub const SIGN_USH: char = '𒍑';
-    /// \u{12352}: '𒍒'
-    pub const SIGN_USH_TIMES_A: char = '𒍒';
-    /// \u{12353}: '𒍓'
-    pub const SIGN_USH_TIMES_KU: char = '𒍓';
-    /// \u{12354}: '𒍔'
-    pub const SIGN_USH_TIMES_KUR: char = '𒍔';
-    /// \u{12355}: '𒍕'
-    pub const SIGN_USH_TIMES_TAK4: char = '𒍕';
-    /// \u{12356}: '𒍖'
-    pub const SIGN_USHX: char = '𒍖';
-    /// \u{12357}: '𒍗'
-    pub const SIGN_USH2: char = '𒍗';
-    /// \u{12358}: '𒍘'
-    pub const SIGN_USHUMX: char = '𒍘';
-    /// \u{12359}: '𒍙'
-    pub const SIGN_UTUKI: char = '𒍙';
-    /// \u{1235a}: '𒍚'
-    pub const SIGN_UZ3: char = '𒍚';
-    /// \u{1235b}: '𒍛'
-    pub const SIGN_UZ3_TIMES_KASKAL: char = '𒍛';
-    /// \u{1235c}: '𒍜'
-    pub const SIGN_UZU: char = '𒍜';
-    /// \u{1235d}: '𒍝'
-    pub const SIGN_ZA: char = '𒍝';
-    /// \u{1235e}: '𒍞'
-    pub const SIGN_ZA_TENU: char = '𒍞';
-    /// \u{1235f}: '𒍟'
-    pub const SIGN_ZA_SQUARED_TIMES_KUR: char = '𒍟';
-    /// \u{12360}: '𒍠'
-    pub const SIGN_ZAG: char = '𒍠';
-    /// \u{12361}: '𒍡'
-    pub const SIGN_ZAMX: char = '𒍡';
-    /// \u{12362}: '𒍢'
-    pub const SIGN_ZE2: char = '𒍢';
-    /// \u{12363}: '𒍣'
-    pub const SIGN_ZI: char = '𒍣';
-    /// \u{12364}: '𒍤'
-    pub const SIGN_ZI_OVER_ZI: char = '𒍤';
-    /// \u{12365}: '𒍥'
-    pub const SIGN_ZI3: char = '𒍥';
-    /// \u{12366}: '𒍦'
-    pub const SIGN_ZIB: char = '𒍦';
-    /// \u{12367}: '𒍧'
-    pub const SIGN_ZIB_KABA_TENU: char = '𒍧';
-    /// \u{12368}: '𒍨'
-    pub const SIGN_ZIG: char = '𒍨';
-    /// \u{12369}: '𒍩'
-    pub const SIGN_ZIZ2: char = '𒍩';
-    /// \u{1236a}: '𒍪'
-    pub const SIGN_ZU: char = '𒍪';
-    /// \u{1236b}: '𒍫'
-    pub const SIGN_ZU5: char = '𒍫';
-    /// \u{1236c}: '𒍬'
-    pub const SIGN_ZU5_TIMES_A: char = '𒍬';
-    /// \u{1236d}: '𒍭'
-    pub const SIGN_ZUBUR: char = '𒍭';
-    /// \u{1236e}: '𒍮'
-    pub const SIGN_ZUM: char = '𒍮';
-    /// \u{1236f}: '𒍯'
-    pub const SIGN_KAP_ELAMITE: char = '𒍯';
-    /// \u{12370}: '𒍰'
-    pub const SIGN_AB_TIMES_NUN: char = '𒍰';
-    /// \u{12371}: '𒍱'
-    pub const SIGN_AB2_TIMES_A: char = '𒍱';
-    /// \u{12372}: '𒍲'
-    pub const SIGN_AMAR_TIMES_KUG: char = '𒍲';
-    /// \u{12373}: '𒍳'
-    pub const SIGN_DAG_KISIM5_TIMES_U2_PLUS_MASH: char = '𒍳';
-    /// \u{12374}: '𒍴'
-    pub const SIGN_DAG3: char = '𒍴';
-    /// \u{12375}: '𒍵'
-    pub const SIGN_DISH_PLUS_SHU: char = '𒍵';
-    /// \u{12376}: '𒍶'
-    pub const SIGN_DUB_TIMES_SHE: char = '𒍶';
-    /// \u{12377}: '𒍷'
-    pub const SIGN_EZEN_TIMES_GUD: char = '𒍷';
-    /// \u{12378}: '𒍸'
-    pub const SIGN_EZEN_TIMES_SHE: char = '𒍸';
-    /// \u{12379}: '𒍹'
-    pub const SIGN_GA2_TIMES_AN_PLUS_KAK_PLUS_A: char = '𒍹';
-    /// \u{1237a}: '𒍺'
-    pub const SIGN_GA2_TIMES_ASH2: char = '𒍺';
-    /// \u{1237b}: '𒍻'
-    pub const SIGN_GE22: char = '𒍻';
-    /// \u{1237c}: '𒍼'
-    pub const SIGN_GIG: char = '𒍼';
-    /// \u{1237d}: '𒍽'
-    pub const SIGN_HUSH: char = '𒍽';
-    /// \u{1237e}: '𒍾'
-    pub const SIGN_KA_TIMES_ANSHE: char = '𒍾';
-    /// \u{1237f}: '𒍿'
-    pub const SIGN_KA_TIMES_ASH3: char = '𒍿';
-    /// \u{12380}: '𒎀'
-    pub const SIGN_KA_TIMES_GISH: char = '𒎀';
-    /// \u{12381}: '𒎁'
-    pub const SIGN_KA_TIMES_GUD: char = '𒎁';
-    /// \u{12382}: '𒎂'
-    pub const SIGN_KA_TIMES_HI_TIMES_ASH2: char = '𒎂';
-    /// \u{12383}: '𒎃'
-    pub const SIGN_KA_TIMES_LUM: char = '𒎃';
-    /// \u{12384}: '𒎄'
-    pub const SIGN_KA_TIMES_PA: char = '𒎄';
-    /// \u{12385}: '𒎅'
-    pub const SIGN_KA_TIMES_SHUL: char = '𒎅';
-    /// \u{12386}: '𒎆'
-    pub const SIGN_KA_TIMES_TU: char = '𒎆';
-    /// \u{12387}: '𒎇'
-    pub const SIGN_KA_TIMES_UR2: char = '𒎇';
-    /// \u{12388}: '𒎈'
-    pub const SIGN_LAGAB_TIMES_GI: char = '𒎈';
-    /// \u{12389}: '𒎉'
-    pub const SIGN_LU2_SHESHIG_TIMES_BAD: char = '𒎉';
-    /// \u{1238a}: '𒎊'
-    pub const SIGN_LU2_TIMES_ESH2_PLUS_LAL: char = '𒎊';
-    /// \u{1238b}: '𒎋'
-    pub const SIGN_LU2_TIMES_SHU: char = '𒎋';
-    /// \u{1238c}: '𒎌'
-    pub const SIGN_MESH: char = '𒎌';
-    /// \u{1238d}: '𒎍'
-    pub const SIGN_MUSH3_TIMES_ZA: char = '𒎍';
-    /// \u{1238e}: '𒎎'
-    pub const SIGN_NA4: char = '𒎎';
-    /// \u{1238f}: '𒎏'
-    pub const SIGN_NIN: char = '𒎏';
-    /// \u{12390}: '𒎐'
-    pub const SIGN_NIN9: char = '𒎐';
-    /// \u{12391}: '𒎑'
-    pub const SIGN_NINDA2_TIMES_BAL: char = '𒎑';
-    /// \u{12392}: '𒎒'
-    pub const SIGN_NINDA2_TIMES_GI: char = '𒎒';
-    /// \u{12393}: '𒎓'
-    pub const SIGN_NU11_ROTATED_NINETY_DEGREES: char = '𒎓';
-    /// \u{12394}: '𒎔'
-    pub const SIGN_PESH2_ASTERISK: char = '𒎔';
-    /// \u{12395}: '𒎕'
-    pub const SIGN_PIR2: char = '𒎕';
-    /// \u{12396}: '𒎖'
-    pub const SIGN_SAG_TIMES_IGI_GUNU: char = '𒎖';
-    /// \u{12397}: '𒎗'
-    pub const SIGN_TI2: char = '𒎗';
-    /// \u{12398}: '𒎘'
-    pub const SIGN_UM_TIMES_ME: char = '𒎘';
-    /// \u{12399}: '𒎙'
-    pub const SIGN_U_U: char = '𒎙';
-}
 
 /// An enum to represent all characters in the Cuneiform block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -3697,930 +1850,929 @@ pub enum Cuneiform {
 
 impl Into<char> for Cuneiform {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Cuneiform::SignA => SIGN_A,
-            Cuneiform::SignATimesA => SIGN_A_TIMES_A,
-            Cuneiform::SignATimesBad => SIGN_A_TIMES_BAD,
-            Cuneiform::SignATimesGan2Tenu => SIGN_A_TIMES_GAN2_TENU,
-            Cuneiform::SignATimesHa => SIGN_A_TIMES_HA,
-            Cuneiform::SignATimesIgi => SIGN_A_TIMES_IGI,
-            Cuneiform::SignATimesLagarGunu => SIGN_A_TIMES_LAGAR_GUNU,
-            Cuneiform::SignATimesMush => SIGN_A_TIMES_MUSH,
-            Cuneiform::SignATimesSag => SIGN_A_TIMES_SAG,
-            Cuneiform::SignA2 => SIGN_A2,
-            Cuneiform::SignAb => SIGN_AB,
-            Cuneiform::SignAbTimesAsh2 => SIGN_AB_TIMES_ASH2,
-            Cuneiform::SignAbTimesDun3Gunu => SIGN_AB_TIMES_DUN3_GUNU,
-            Cuneiform::SignAbTimesGal => SIGN_AB_TIMES_GAL,
-            Cuneiform::SignAbTimesGan2Tenu => SIGN_AB_TIMES_GAN2_TENU,
-            Cuneiform::SignAbTimesHa => SIGN_AB_TIMES_HA,
-            Cuneiform::SignAbTimesIgiGunu => SIGN_AB_TIMES_IGI_GUNU,
-            Cuneiform::SignAbTimesImin => SIGN_AB_TIMES_IMIN,
-            Cuneiform::SignAbTimesLagab => SIGN_AB_TIMES_LAGAB,
-            Cuneiform::SignAbTimesShesh => SIGN_AB_TIMES_SHESH,
-            Cuneiform::SignAbTimesUPlusUPlusU => SIGN_AB_TIMES_U_PLUS_U_PLUS_U,
-            Cuneiform::SignAbGunu => SIGN_AB_GUNU,
-            Cuneiform::SignAb2 => SIGN_AB2,
-            Cuneiform::SignAb2TimesBalag => SIGN_AB2_TIMES_BALAG,
-            Cuneiform::SignAb2TimesGan2Tenu => SIGN_AB2_TIMES_GAN2_TENU,
-            Cuneiform::SignAb2TimesMePlusEn => SIGN_AB2_TIMES_ME_PLUS_EN,
-            Cuneiform::SignAb2TimesSha3 => SIGN_AB2_TIMES_SHA3,
-            Cuneiform::SignAb2TimesTak4 => SIGN_AB2_TIMES_TAK4,
-            Cuneiform::SignAd => SIGN_AD,
-            Cuneiform::SignAk => SIGN_AK,
-            Cuneiform::SignAkTimesErin2 => SIGN_AK_TIMES_ERIN2,
-            Cuneiform::SignAkTimesShitaPlusGish => SIGN_AK_TIMES_SHITA_PLUS_GISH,
-            Cuneiform::SignAl => SIGN_AL,
-            Cuneiform::SignAlTimesAl => SIGN_AL_TIMES_AL,
-            Cuneiform::SignAlTimesDim2 => SIGN_AL_TIMES_DIM2,
-            Cuneiform::SignAlTimesGish => SIGN_AL_TIMES_GISH,
-            Cuneiform::SignAlTimesHa => SIGN_AL_TIMES_HA,
-            Cuneiform::SignAlTimesKad3 => SIGN_AL_TIMES_KAD3,
-            Cuneiform::SignAlTimesKi => SIGN_AL_TIMES_KI,
-            Cuneiform::SignAlTimesShe => SIGN_AL_TIMES_SHE,
-            Cuneiform::SignAlTimesUsh => SIGN_AL_TIMES_USH,
-            Cuneiform::SignAlan => SIGN_ALAN,
-            Cuneiform::SignAleph => SIGN_ALEPH,
-            Cuneiform::SignAmar => SIGN_AMAR,
-            Cuneiform::SignAmarTimesShe => SIGN_AMAR_TIMES_SHE,
-            Cuneiform::SignAn => SIGN_AN,
-            Cuneiform::SignAnOverAn => SIGN_AN_OVER_AN,
-            Cuneiform::SignAnThreeTimes => SIGN_AN_THREE_TIMES,
-            Cuneiform::SignAnPlusNagaOpposingAnPlusNaga => SIGN_AN_PLUS_NAGA_OPPOSING_AN_PLUS_NAGA,
-            Cuneiform::SignAnPlusNagaSquared => SIGN_AN_PLUS_NAGA_SQUARED,
-            Cuneiform::SignAnshe => SIGN_ANSHE,
-            Cuneiform::SignApin => SIGN_APIN,
-            Cuneiform::SignArad => SIGN_ARAD,
-            Cuneiform::SignAradTimesKur => SIGN_ARAD_TIMES_KUR,
-            Cuneiform::SignArkab => SIGN_ARKAB,
-            Cuneiform::SignAsal2 => SIGN_ASAL2,
-            Cuneiform::SignAsh => SIGN_ASH,
-            Cuneiform::SignAshZidaTenu => SIGN_ASH_ZIDA_TENU,
-            Cuneiform::SignAshKabaTenu => SIGN_ASH_KABA_TENU,
-            Cuneiform::SignAshOverAshTug2OverTug2Tug2OverTug2Pap => SIGN_ASH_OVER_ASH_TUG2_OVER_TUG2_TUG2_OVER_TUG2_PAP,
-            Cuneiform::SignAshOverAshOverAsh => SIGN_ASH_OVER_ASH_OVER_ASH,
-            Cuneiform::SignAshOverAshOverAshCrossingAshOverAshOverAsh => SIGN_ASH_OVER_ASH_OVER_ASH_CROSSING_ASH_OVER_ASH_OVER_ASH,
-            Cuneiform::SignAsh2 => SIGN_ASH2,
-            Cuneiform::SignAshgab => SIGN_ASHGAB,
-            Cuneiform::SignBa => SIGN_BA,
-            Cuneiform::SignBad => SIGN_BAD,
-            Cuneiform::SignBag3 => SIGN_BAG3,
-            Cuneiform::SignBahar2 => SIGN_BAHAR2,
-            Cuneiform::SignBal => SIGN_BAL,
-            Cuneiform::SignBalOverBal => SIGN_BAL_OVER_BAL,
-            Cuneiform::SignBalag => SIGN_BALAG,
-            Cuneiform::SignBar => SIGN_BAR,
-            Cuneiform::SignBara2 => SIGN_BARA2,
-            Cuneiform::SignBi => SIGN_BI,
-            Cuneiform::SignBiTimesA => SIGN_BI_TIMES_A,
-            Cuneiform::SignBiTimesGar => SIGN_BI_TIMES_GAR,
-            Cuneiform::SignBiTimesIgiGunu => SIGN_BI_TIMES_IGI_GUNU,
-            Cuneiform::SignBu => SIGN_BU,
-            Cuneiform::SignBuOverBuAb => SIGN_BU_OVER_BU_AB,
-            Cuneiform::SignBuOverBuUn => SIGN_BU_OVER_BU_UN,
-            Cuneiform::SignBuCrossingBu => SIGN_BU_CROSSING_BU,
-            Cuneiform::SignBulug => SIGN_BULUG,
-            Cuneiform::SignBulugOverBulug => SIGN_BULUG_OVER_BULUG,
-            Cuneiform::SignBur => SIGN_BUR,
-            Cuneiform::SignBur2 => SIGN_BUR2,
-            Cuneiform::SignDa => SIGN_DA,
-            Cuneiform::SignDag => SIGN_DAG,
-            Cuneiform::SignDagKisim5TimesAPlusMash => SIGN_DAG_KISIM5_TIMES_A_PLUS_MASH,
-            Cuneiform::SignDagKisim5TimesAmar => SIGN_DAG_KISIM5_TIMES_AMAR,
-            Cuneiform::SignDagKisim5TimesBalag => SIGN_DAG_KISIM5_TIMES_BALAG,
-            Cuneiform::SignDagKisim5TimesBi => SIGN_DAG_KISIM5_TIMES_BI,
-            Cuneiform::SignDagKisim5TimesGa => SIGN_DAG_KISIM5_TIMES_GA,
-            Cuneiform::SignDagKisim5TimesGaPlusMash => SIGN_DAG_KISIM5_TIMES_GA_PLUS_MASH,
-            Cuneiform::SignDagKisim5TimesGi => SIGN_DAG_KISIM5_TIMES_GI,
-            Cuneiform::SignDagKisim5TimesGir2 => SIGN_DAG_KISIM5_TIMES_GIR2,
-            Cuneiform::SignDagKisim5TimesGud => SIGN_DAG_KISIM5_TIMES_GUD,
-            Cuneiform::SignDagKisim5TimesHa => SIGN_DAG_KISIM5_TIMES_HA,
-            Cuneiform::SignDagKisim5TimesIr => SIGN_DAG_KISIM5_TIMES_IR,
-            Cuneiform::SignDagKisim5TimesIrPlusLu => SIGN_DAG_KISIM5_TIMES_IR_PLUS_LU,
-            Cuneiform::SignDagKisim5TimesKak => SIGN_DAG_KISIM5_TIMES_KAK,
-            Cuneiform::SignDagKisim5TimesLa => SIGN_DAG_KISIM5_TIMES_LA,
-            Cuneiform::SignDagKisim5TimesLu => SIGN_DAG_KISIM5_TIMES_LU,
-            Cuneiform::SignDagKisim5TimesLuPlusMash2 => SIGN_DAG_KISIM5_TIMES_LU_PLUS_MASH2,
-            Cuneiform::SignDagKisim5TimesLum => SIGN_DAG_KISIM5_TIMES_LUM,
-            Cuneiform::SignDagKisim5TimesNe => SIGN_DAG_KISIM5_TIMES_NE,
-            Cuneiform::SignDagKisim5TimesPapPlusPap => SIGN_DAG_KISIM5_TIMES_PAP_PLUS_PAP,
-            Cuneiform::SignDagKisim5TimesSi => SIGN_DAG_KISIM5_TIMES_SI,
-            Cuneiform::SignDagKisim5TimesTak4 => SIGN_DAG_KISIM5_TIMES_TAK4,
-            Cuneiform::SignDagKisim5TimesU2PlusGir2 => SIGN_DAG_KISIM5_TIMES_U2_PLUS_GIR2,
-            Cuneiform::SignDagKisim5TimesUsh => SIGN_DAG_KISIM5_TIMES_USH,
-            Cuneiform::SignDam => SIGN_DAM,
-            Cuneiform::SignDar => SIGN_DAR,
-            Cuneiform::SignDara3 => SIGN_DARA3,
-            Cuneiform::SignDara4 => SIGN_DARA4,
-            Cuneiform::SignDi => SIGN_DI,
-            Cuneiform::SignDib => SIGN_DIB,
-            Cuneiform::SignDim => SIGN_DIM,
-            Cuneiform::SignDimTimesShe => SIGN_DIM_TIMES_SHE,
-            Cuneiform::SignDim2 => SIGN_DIM2,
-            Cuneiform::SignDin => SIGN_DIN,
-            Cuneiform::SignDinKaskalUGunuDish => SIGN_DIN_KASKAL_U_GUNU_DISH,
-            Cuneiform::SignDish => SIGN_DISH,
-            Cuneiform::SignDu => SIGN_DU,
-            Cuneiform::SignDuOverDu => SIGN_DU_OVER_DU,
-            Cuneiform::SignDuGunu => SIGN_DU_GUNU,
-            Cuneiform::SignDuSheshig => SIGN_DU_SHESHIG,
-            Cuneiform::SignDub => SIGN_DUB,
-            Cuneiform::SignDubTimesEsh2 => SIGN_DUB_TIMES_ESH2,
-            Cuneiform::SignDub2 => SIGN_DUB2,
-            Cuneiform::SignDug => SIGN_DUG,
-            Cuneiform::SignDugud => SIGN_DUGUD,
-            Cuneiform::SignDuh => SIGN_DUH,
-            Cuneiform::SignDun => SIGN_DUN,
-            Cuneiform::SignDun3 => SIGN_DUN3,
-            Cuneiform::SignDun3Gunu => SIGN_DUN3_GUNU,
-            Cuneiform::SignDun3GunuGunu => SIGN_DUN3_GUNU_GUNU,
-            Cuneiform::SignDun4 => SIGN_DUN4,
-            Cuneiform::SignDur2 => SIGN_DUR2,
-            Cuneiform::SignE => SIGN_E,
-            Cuneiform::SignETimesPap => SIGN_E_TIMES_PAP,
-            Cuneiform::SignEOverENunOverNun => SIGN_E_OVER_E_NUN_OVER_NUN,
-            Cuneiform::SignE2 => SIGN_E2,
-            Cuneiform::SignE2TimesAPlusHaPlusDa => SIGN_E2_TIMES_A_PLUS_HA_PLUS_DA,
-            Cuneiform::SignE2TimesGar => SIGN_E2_TIMES_GAR,
-            Cuneiform::SignE2TimesMi => SIGN_E2_TIMES_MI,
-            Cuneiform::SignE2TimesSal => SIGN_E2_TIMES_SAL,
-            Cuneiform::SignE2TimesShe => SIGN_E2_TIMES_SHE,
-            Cuneiform::SignE2TimesU => SIGN_E2_TIMES_U,
-            Cuneiform::SignEdin => SIGN_EDIN,
-            Cuneiform::SignEgir => SIGN_EGIR,
-            Cuneiform::SignEl => SIGN_EL,
-            Cuneiform::SignEn => SIGN_EN,
-            Cuneiform::SignEnTimesGan2 => SIGN_EN_TIMES_GAN2,
-            Cuneiform::SignEnTimesGan2Tenu => SIGN_EN_TIMES_GAN2_TENU,
-            Cuneiform::SignEnTimesMe => SIGN_EN_TIMES_ME,
-            Cuneiform::SignEnCrossingEn => SIGN_EN_CROSSING_EN,
-            Cuneiform::SignEnOpposingEn => SIGN_EN_OPPOSING_EN,
-            Cuneiform::SignEnSquared => SIGN_EN_SQUARED,
-            Cuneiform::SignEren => SIGN_EREN,
-            Cuneiform::SignErin2 => SIGN_ERIN2,
-            Cuneiform::SignEsh2 => SIGN_ESH2,
-            Cuneiform::SignEzen => SIGN_EZEN,
-            Cuneiform::SignEzenTimesA => SIGN_EZEN_TIMES_A,
-            Cuneiform::SignEzenTimesAPlusLal => SIGN_EZEN_TIMES_A_PLUS_LAL,
-            Cuneiform::SignEzenTimesAPlusLalTimesLal => SIGN_EZEN_TIMES_A_PLUS_LAL_TIMES_LAL,
-            Cuneiform::SignEzenTimesAn => SIGN_EZEN_TIMES_AN,
-            Cuneiform::SignEzenTimesBad => SIGN_EZEN_TIMES_BAD,
-            Cuneiform::SignEzenTimesDun3Gunu => SIGN_EZEN_TIMES_DUN3_GUNU,
-            Cuneiform::SignEzenTimesDun3GunuGunu => SIGN_EZEN_TIMES_DUN3_GUNU_GUNU,
-            Cuneiform::SignEzenTimesHa => SIGN_EZEN_TIMES_HA,
-            Cuneiform::SignEzenTimesHaGunu => SIGN_EZEN_TIMES_HA_GUNU,
-            Cuneiform::SignEzenTimesIgiGunu => SIGN_EZEN_TIMES_IGI_GUNU,
-            Cuneiform::SignEzenTimesKaskal => SIGN_EZEN_TIMES_KASKAL,
-            Cuneiform::SignEzenTimesKaskalSquared => SIGN_EZEN_TIMES_KASKAL_SQUARED,
-            Cuneiform::SignEzenTimesKu3 => SIGN_EZEN_TIMES_KU3,
-            Cuneiform::SignEzenTimesLa => SIGN_EZEN_TIMES_LA,
-            Cuneiform::SignEzenTimesLalTimesLal => SIGN_EZEN_TIMES_LAL_TIMES_LAL,
-            Cuneiform::SignEzenTimesLi => SIGN_EZEN_TIMES_LI,
-            Cuneiform::SignEzenTimesLu => SIGN_EZEN_TIMES_LU,
-            Cuneiform::SignEzenTimesU2 => SIGN_EZEN_TIMES_U2,
-            Cuneiform::SignEzenTimesUd => SIGN_EZEN_TIMES_UD,
-            Cuneiform::SignGa => SIGN_GA,
-            Cuneiform::SignGaGunu => SIGN_GA_GUNU,
-            Cuneiform::SignGa2 => SIGN_GA2,
-            Cuneiform::SignGa2TimesAPlusDaPlusHa => SIGN_GA2_TIMES_A_PLUS_DA_PLUS_HA,
-            Cuneiform::SignGa2TimesAPlusHa => SIGN_GA2_TIMES_A_PLUS_HA,
-            Cuneiform::SignGa2TimesAPlusIgi => SIGN_GA2_TIMES_A_PLUS_IGI,
-            Cuneiform::SignGa2TimesAb2TenuPlusTab => SIGN_GA2_TIMES_AB2_TENU_PLUS_TAB,
-            Cuneiform::SignGa2TimesAn => SIGN_GA2_TIMES_AN,
-            Cuneiform::SignGa2TimesAsh => SIGN_GA2_TIMES_ASH,
-            Cuneiform::SignGa2TimesAsh2PlusGal => SIGN_GA2_TIMES_ASH2_PLUS_GAL,
-            Cuneiform::SignGa2TimesBad => SIGN_GA2_TIMES_BAD,
-            Cuneiform::SignGa2TimesBarPlusRa => SIGN_GA2_TIMES_BAR_PLUS_RA,
-            Cuneiform::SignGa2TimesBur => SIGN_GA2_TIMES_BUR,
-            Cuneiform::SignGa2TimesBurPlusRa => SIGN_GA2_TIMES_BUR_PLUS_RA,
-            Cuneiform::SignGa2TimesDa => SIGN_GA2_TIMES_DA,
-            Cuneiform::SignGa2TimesDi => SIGN_GA2_TIMES_DI,
-            Cuneiform::SignGa2TimesDimTimesShe => SIGN_GA2_TIMES_DIM_TIMES_SHE,
-            Cuneiform::SignGa2TimesDub => SIGN_GA2_TIMES_DUB,
-            Cuneiform::SignGa2TimesEl => SIGN_GA2_TIMES_EL,
-            Cuneiform::SignGa2TimesElPlusLa => SIGN_GA2_TIMES_EL_PLUS_LA,
-            Cuneiform::SignGa2TimesEn => SIGN_GA2_TIMES_EN,
-            Cuneiform::SignGa2TimesEnTimesGan2Tenu => SIGN_GA2_TIMES_EN_TIMES_GAN2_TENU,
-            Cuneiform::SignGa2TimesGan2Tenu => SIGN_GA2_TIMES_GAN2_TENU,
-            Cuneiform::SignGa2TimesGar => SIGN_GA2_TIMES_GAR,
-            Cuneiform::SignGa2TimesGi => SIGN_GA2_TIMES_GI,
-            Cuneiform::SignGa2TimesGi4 => SIGN_GA2_TIMES_GI4,
-            Cuneiform::SignGa2TimesGi4PlusA => SIGN_GA2_TIMES_GI4_PLUS_A,
-            Cuneiform::SignGa2TimesGir2PlusSu => SIGN_GA2_TIMES_GIR2_PLUS_SU,
-            Cuneiform::SignGa2TimesHaPlusLuPlusEsh2 => SIGN_GA2_TIMES_HA_PLUS_LU_PLUS_ESH2,
-            Cuneiform::SignGa2TimesHal => SIGN_GA2_TIMES_HAL,
-            Cuneiform::SignGa2TimesHalPlusLa => SIGN_GA2_TIMES_HAL_PLUS_LA,
-            Cuneiform::SignGa2TimesHiPlusLi => SIGN_GA2_TIMES_HI_PLUS_LI,
-            Cuneiform::SignGa2TimesHub2 => SIGN_GA2_TIMES_HUB2,
-            Cuneiform::SignGa2TimesIgiGunu => SIGN_GA2_TIMES_IGI_GUNU,
-            Cuneiform::SignGa2TimesIshPlusHuPlusAsh => SIGN_GA2_TIMES_ISH_PLUS_HU_PLUS_ASH,
-            Cuneiform::SignGa2TimesKak => SIGN_GA2_TIMES_KAK,
-            Cuneiform::SignGa2TimesKaskal => SIGN_GA2_TIMES_KASKAL,
-            Cuneiform::SignGa2TimesKid => SIGN_GA2_TIMES_KID,
-            Cuneiform::SignGa2TimesKidPlusLal => SIGN_GA2_TIMES_KID_PLUS_LAL,
-            Cuneiform::SignGa2TimesKu3PlusAn => SIGN_GA2_TIMES_KU3_PLUS_AN,
-            Cuneiform::SignGa2TimesLa => SIGN_GA2_TIMES_LA,
-            Cuneiform::SignGa2TimesMePlusEn => SIGN_GA2_TIMES_ME_PLUS_EN,
-            Cuneiform::SignGa2TimesMi => SIGN_GA2_TIMES_MI,
-            Cuneiform::SignGa2TimesNun => SIGN_GA2_TIMES_NUN,
-            Cuneiform::SignGa2TimesNunOverNun => SIGN_GA2_TIMES_NUN_OVER_NUN,
-            Cuneiform::SignGa2TimesPa => SIGN_GA2_TIMES_PA,
-            Cuneiform::SignGa2TimesSal => SIGN_GA2_TIMES_SAL,
-            Cuneiform::SignGa2TimesSar => SIGN_GA2_TIMES_SAR,
-            Cuneiform::SignGa2TimesShe => SIGN_GA2_TIMES_SHE,
-            Cuneiform::SignGa2TimesShePlusTur => SIGN_GA2_TIMES_SHE_PLUS_TUR,
-            Cuneiform::SignGa2TimesShid => SIGN_GA2_TIMES_SHID,
-            Cuneiform::SignGa2TimesSum => SIGN_GA2_TIMES_SUM,
-            Cuneiform::SignGa2TimesTak4 => SIGN_GA2_TIMES_TAK4,
-            Cuneiform::SignGa2TimesU => SIGN_GA2_TIMES_U,
-            Cuneiform::SignGa2TimesUd => SIGN_GA2_TIMES_UD,
-            Cuneiform::SignGa2TimesUdPlusDu => SIGN_GA2_TIMES_UD_PLUS_DU,
-            Cuneiform::SignGa2OverGa2 => SIGN_GA2_OVER_GA2,
-            Cuneiform::SignGaba => SIGN_GABA,
-            Cuneiform::SignGabaCrossingGaba => SIGN_GABA_CROSSING_GABA,
-            Cuneiform::SignGad => SIGN_GAD,
-            Cuneiform::SignGadOverGadGarOverGar => SIGN_GAD_OVER_GAD_GAR_OVER_GAR,
-            Cuneiform::SignGal => SIGN_GAL,
-            Cuneiform::SignGalGadOverGadGarOverGar => SIGN_GAL_GAD_OVER_GAD_GAR_OVER_GAR,
-            Cuneiform::SignGalam => SIGN_GALAM,
-            Cuneiform::SignGam => SIGN_GAM,
-            Cuneiform::SignGan => SIGN_GAN,
-            Cuneiform::SignGan2 => SIGN_GAN2,
-            Cuneiform::SignGan2Tenu => SIGN_GAN2_TENU,
-            Cuneiform::SignGan2OverGan2 => SIGN_GAN2_OVER_GAN2,
-            Cuneiform::SignGan2CrossingGan2 => SIGN_GAN2_CROSSING_GAN2,
-            Cuneiform::SignGar => SIGN_GAR,
-            Cuneiform::SignGar3 => SIGN_GAR3,
-            Cuneiform::SignGashan => SIGN_GASHAN,
-            Cuneiform::SignGeshtin => SIGN_GESHTIN,
-            Cuneiform::SignGeshtinTimesKur => SIGN_GESHTIN_TIMES_KUR,
-            Cuneiform::SignGi => SIGN_GI,
-            Cuneiform::SignGiTimesE => SIGN_GI_TIMES_E,
-            Cuneiform::SignGiTimesU => SIGN_GI_TIMES_U,
-            Cuneiform::SignGiCrossingGi => SIGN_GI_CROSSING_GI,
-            Cuneiform::SignGi4 => SIGN_GI4,
-            Cuneiform::SignGi4OverGi4 => SIGN_GI4_OVER_GI4,
-            Cuneiform::SignGi4CrossingGi4 => SIGN_GI4_CROSSING_GI4,
-            Cuneiform::SignGidim => SIGN_GIDIM,
-            Cuneiform::SignGir2 => SIGN_GIR2,
-            Cuneiform::SignGir2Gunu => SIGN_GIR2_GUNU,
-            Cuneiform::SignGir3 => SIGN_GIR3,
-            Cuneiform::SignGir3TimesAPlusIgi => SIGN_GIR3_TIMES_A_PLUS_IGI,
-            Cuneiform::SignGir3TimesGan2Tenu => SIGN_GIR3_TIMES_GAN2_TENU,
-            Cuneiform::SignGir3TimesIgi => SIGN_GIR3_TIMES_IGI,
-            Cuneiform::SignGir3TimesLuPlusIgi => SIGN_GIR3_TIMES_LU_PLUS_IGI,
-            Cuneiform::SignGir3TimesPa => SIGN_GIR3_TIMES_PA,
-            Cuneiform::SignGisal => SIGN_GISAL,
-            Cuneiform::SignGish => SIGN_GISH,
-            Cuneiform::SignGishCrossingGish => SIGN_GISH_CROSSING_GISH,
-            Cuneiform::SignGishTimesBad => SIGN_GISH_TIMES_BAD,
-            Cuneiform::SignGishTimesTak4 => SIGN_GISH_TIMES_TAK4,
-            Cuneiform::SignGishTenu => SIGN_GISH_TENU,
-            Cuneiform::SignGu => SIGN_GU,
-            Cuneiform::SignGuCrossingGu => SIGN_GU_CROSSING_GU,
-            Cuneiform::SignGu2 => SIGN_GU2,
-            Cuneiform::SignGu2TimesKak => SIGN_GU2_TIMES_KAK,
-            Cuneiform::SignGu2TimesKakTimesIgiGunu => SIGN_GU2_TIMES_KAK_TIMES_IGI_GUNU,
-            Cuneiform::SignGu2TimesNun => SIGN_GU2_TIMES_NUN,
-            Cuneiform::SignGu2TimesSalPlusTug2 => SIGN_GU2_TIMES_SAL_PLUS_TUG2,
-            Cuneiform::SignGu2Gunu => SIGN_GU2_GUNU,
-            Cuneiform::SignGud => SIGN_GUD,
-            Cuneiform::SignGudTimesAPlusKur => SIGN_GUD_TIMES_A_PLUS_KUR,
-            Cuneiform::SignGudTimesKur => SIGN_GUD_TIMES_KUR,
-            Cuneiform::SignGudOverGudLugal => SIGN_GUD_OVER_GUD_LUGAL,
-            Cuneiform::SignGul => SIGN_GUL,
-            Cuneiform::SignGum => SIGN_GUM,
-            Cuneiform::SignGumTimesShe => SIGN_GUM_TIMES_SHE,
-            Cuneiform::SignGur => SIGN_GUR,
-            Cuneiform::SignGur7 => SIGN_GUR7,
-            Cuneiform::SignGurun => SIGN_GURUN,
-            Cuneiform::SignGurush => SIGN_GURUSH,
-            Cuneiform::SignHa => SIGN_HA,
-            Cuneiform::SignHaTenu => SIGN_HA_TENU,
-            Cuneiform::SignHaGunu => SIGN_HA_GUNU,
-            Cuneiform::SignHal => SIGN_HAL,
-            Cuneiform::SignHi => SIGN_HI,
-            Cuneiform::SignHiTimesAsh => SIGN_HI_TIMES_ASH,
-            Cuneiform::SignHiTimesAsh2 => SIGN_HI_TIMES_ASH2,
-            Cuneiform::SignHiTimesBad => SIGN_HI_TIMES_BAD,
-            Cuneiform::SignHiTimesDish => SIGN_HI_TIMES_DISH,
-            Cuneiform::SignHiTimesGad => SIGN_HI_TIMES_GAD,
-            Cuneiform::SignHiTimesKin => SIGN_HI_TIMES_KIN,
-            Cuneiform::SignHiTimesNun => SIGN_HI_TIMES_NUN,
-            Cuneiform::SignHiTimesShe => SIGN_HI_TIMES_SHE,
-            Cuneiform::SignHiTimesU => SIGN_HI_TIMES_U,
-            Cuneiform::SignHu => SIGN_HU,
-            Cuneiform::SignHub2 => SIGN_HUB2,
-            Cuneiform::SignHub2TimesAn => SIGN_HUB2_TIMES_AN,
-            Cuneiform::SignHub2TimesHal => SIGN_HUB2_TIMES_HAL,
-            Cuneiform::SignHub2TimesKaskal => SIGN_HUB2_TIMES_KASKAL,
-            Cuneiform::SignHub2TimesLish => SIGN_HUB2_TIMES_LISH,
-            Cuneiform::SignHub2TimesUd => SIGN_HUB2_TIMES_UD,
-            Cuneiform::SignHul2 => SIGN_HUL2,
-            Cuneiform::SignI => SIGN_I,
-            Cuneiform::SignIA => SIGN_I_A,
-            Cuneiform::SignIb => SIGN_IB,
-            Cuneiform::SignIdim => SIGN_IDIM,
-            Cuneiform::SignIdimOverIdimBur => SIGN_IDIM_OVER_IDIM_BUR,
-            Cuneiform::SignIdimOverIdimSquared => SIGN_IDIM_OVER_IDIM_SQUARED,
-            Cuneiform::SignIg => SIGN_IG,
-            Cuneiform::SignIgi => SIGN_IGI,
-            Cuneiform::SignIgiDib => SIGN_IGI_DIB,
-            Cuneiform::SignIgiRi => SIGN_IGI_RI,
-            Cuneiform::SignIgiOverIgiShirOverShirUdOverUd => SIGN_IGI_OVER_IGI_SHIR_OVER_SHIR_UD_OVER_UD,
-            Cuneiform::SignIgiGunu => SIGN_IGI_GUNU,
-            Cuneiform::SignIl => SIGN_IL,
-            Cuneiform::SignIlTimesGan2Tenu => SIGN_IL_TIMES_GAN2_TENU,
-            Cuneiform::SignIl2 => SIGN_IL2,
-            Cuneiform::SignIm => SIGN_IM,
-            Cuneiform::SignImTimesTak4 => SIGN_IM_TIMES_TAK4,
-            Cuneiform::SignImCrossingIm => SIGN_IM_CROSSING_IM,
-            Cuneiform::SignImOpposingIm => SIGN_IM_OPPOSING_IM,
-            Cuneiform::SignImSquared => SIGN_IM_SQUARED,
-            Cuneiform::SignImin => SIGN_IMIN,
-            Cuneiform::SignIn => SIGN_IN,
-            Cuneiform::SignIr => SIGN_IR,
-            Cuneiform::SignIsh => SIGN_ISH,
-            Cuneiform::SignKa => SIGN_KA,
-            Cuneiform::SignKaTimesA => SIGN_KA_TIMES_A,
-            Cuneiform::SignKaTimesAd => SIGN_KA_TIMES_AD,
-            Cuneiform::SignKaTimesAdPlusKu3 => SIGN_KA_TIMES_AD_PLUS_KU3,
-            Cuneiform::SignKaTimesAsh2 => SIGN_KA_TIMES_ASH2,
-            Cuneiform::SignKaTimesBad => SIGN_KA_TIMES_BAD,
-            Cuneiform::SignKaTimesBalag => SIGN_KA_TIMES_BALAG,
-            Cuneiform::SignKaTimesBar => SIGN_KA_TIMES_BAR,
-            Cuneiform::SignKaTimesBi => SIGN_KA_TIMES_BI,
-            Cuneiform::SignKaTimesErin2 => SIGN_KA_TIMES_ERIN2,
-            Cuneiform::SignKaTimesEsh2 => SIGN_KA_TIMES_ESH2,
-            Cuneiform::SignKaTimesGa => SIGN_KA_TIMES_GA,
-            Cuneiform::SignKaTimesGal => SIGN_KA_TIMES_GAL,
-            Cuneiform::SignKaTimesGan2Tenu => SIGN_KA_TIMES_GAN2_TENU,
-            Cuneiform::SignKaTimesGar => SIGN_KA_TIMES_GAR,
-            Cuneiform::SignKaTimesGarPlusSha3PlusA => SIGN_KA_TIMES_GAR_PLUS_SHA3_PLUS_A,
-            Cuneiform::SignKaTimesGi => SIGN_KA_TIMES_GI,
-            Cuneiform::SignKaTimesGir2 => SIGN_KA_TIMES_GIR2,
-            Cuneiform::SignKaTimesGishPlusSar => SIGN_KA_TIMES_GISH_PLUS_SAR,
-            Cuneiform::SignKaTimesGishCrossingGish => SIGN_KA_TIMES_GISH_CROSSING_GISH,
-            Cuneiform::SignKaTimesGu => SIGN_KA_TIMES_GU,
-            Cuneiform::SignKaTimesGur7 => SIGN_KA_TIMES_GUR7,
-            Cuneiform::SignKaTimesIgi => SIGN_KA_TIMES_IGI,
-            Cuneiform::SignKaTimesIm => SIGN_KA_TIMES_IM,
-            Cuneiform::SignKaTimesKak => SIGN_KA_TIMES_KAK,
-            Cuneiform::SignKaTimesKi => SIGN_KA_TIMES_KI,
-            Cuneiform::SignKaTimesKid => SIGN_KA_TIMES_KID,
-            Cuneiform::SignKaTimesLi => SIGN_KA_TIMES_LI,
-            Cuneiform::SignKaTimesLu => SIGN_KA_TIMES_LU,
-            Cuneiform::SignKaTimesMe => SIGN_KA_TIMES_ME,
-            Cuneiform::SignKaTimesMePlusDu => SIGN_KA_TIMES_ME_PLUS_DU,
-            Cuneiform::SignKaTimesMePlusGi => SIGN_KA_TIMES_ME_PLUS_GI,
-            Cuneiform::SignKaTimesMePlusTe => SIGN_KA_TIMES_ME_PLUS_TE,
-            Cuneiform::SignKaTimesMi => SIGN_KA_TIMES_MI,
-            Cuneiform::SignKaTimesMiPlusNunuz => SIGN_KA_TIMES_MI_PLUS_NUNUZ,
-            Cuneiform::SignKaTimesNe => SIGN_KA_TIMES_NE,
-            Cuneiform::SignKaTimesNun => SIGN_KA_TIMES_NUN,
-            Cuneiform::SignKaTimesPi => SIGN_KA_TIMES_PI,
-            Cuneiform::SignKaTimesRu => SIGN_KA_TIMES_RU,
-            Cuneiform::SignKaTimesSa => SIGN_KA_TIMES_SA,
-            Cuneiform::SignKaTimesSar => SIGN_KA_TIMES_SAR,
-            Cuneiform::SignKaTimesSha => SIGN_KA_TIMES_SHA,
-            Cuneiform::SignKaTimesShe => SIGN_KA_TIMES_SHE,
-            Cuneiform::SignKaTimesShid => SIGN_KA_TIMES_SHID,
-            Cuneiform::SignKaTimesShu => SIGN_KA_TIMES_SHU,
-            Cuneiform::SignKaTimesSig => SIGN_KA_TIMES_SIG,
-            Cuneiform::SignKaTimesSuhur => SIGN_KA_TIMES_SUHUR,
-            Cuneiform::SignKaTimesTar => SIGN_KA_TIMES_TAR,
-            Cuneiform::SignKaTimesU => SIGN_KA_TIMES_U,
-            Cuneiform::SignKaTimesU2 => SIGN_KA_TIMES_U2,
-            Cuneiform::SignKaTimesUd => SIGN_KA_TIMES_UD,
-            Cuneiform::SignKaTimesUmumTimesPa => SIGN_KA_TIMES_UMUM_TIMES_PA,
-            Cuneiform::SignKaTimesUsh => SIGN_KA_TIMES_USH,
-            Cuneiform::SignKaTimesZi => SIGN_KA_TIMES_ZI,
-            Cuneiform::SignKa2 => SIGN_KA2,
-            Cuneiform::SignKa2CrossingKa2 => SIGN_KA2_CROSSING_KA2,
-            Cuneiform::SignKab => SIGN_KAB,
-            Cuneiform::SignKad2 => SIGN_KAD2,
-            Cuneiform::SignKad3 => SIGN_KAD3,
-            Cuneiform::SignKad4 => SIGN_KAD4,
-            Cuneiform::SignKad5 => SIGN_KAD5,
-            Cuneiform::SignKad5OverKad5 => SIGN_KAD5_OVER_KAD5,
-            Cuneiform::SignKak => SIGN_KAK,
-            Cuneiform::SignKakTimesIgiGunu => SIGN_KAK_TIMES_IGI_GUNU,
-            Cuneiform::SignKal => SIGN_KAL,
-            Cuneiform::SignKalTimesBad => SIGN_KAL_TIMES_BAD,
-            Cuneiform::SignKalCrossingKal => SIGN_KAL_CROSSING_KAL,
-            Cuneiform::SignKam2 => SIGN_KAM2,
-            Cuneiform::SignKam4 => SIGN_KAM4,
-            Cuneiform::SignKaskal => SIGN_KASKAL,
-            Cuneiform::SignKaskalLagabTimesUOverLagabTimesU => SIGN_KASKAL_LAGAB_TIMES_U_OVER_LAGAB_TIMES_U,
-            Cuneiform::SignKaskalOverKaskalLagabTimesUOverLagabTimesU => SIGN_KASKAL_OVER_KASKAL_LAGAB_TIMES_U_OVER_LAGAB_TIMES_U,
-            Cuneiform::SignKesh2 => SIGN_KESH2,
-            Cuneiform::SignKi => SIGN_KI,
-            Cuneiform::SignKiTimesBad => SIGN_KI_TIMES_BAD,
-            Cuneiform::SignKiTimesU => SIGN_KI_TIMES_U,
-            Cuneiform::SignKiTimesUd => SIGN_KI_TIMES_UD,
-            Cuneiform::SignKid => SIGN_KID,
-            Cuneiform::SignKin => SIGN_KIN,
-            Cuneiform::SignKisal => SIGN_KISAL,
-            Cuneiform::SignKish => SIGN_KISH,
-            Cuneiform::SignKisim5 => SIGN_KISIM5,
-            Cuneiform::SignKisim5OverKisim5 => SIGN_KISIM5_OVER_KISIM5,
-            Cuneiform::SignKu => SIGN_KU,
-            Cuneiform::SignKuOverHiTimesAsh2KuOverHiTimesAsh2 => SIGN_KU_OVER_HI_TIMES_ASH2_KU_OVER_HI_TIMES_ASH2,
-            Cuneiform::SignKu3 => SIGN_KU3,
-            Cuneiform::SignKu4 => SIGN_KU4,
-            Cuneiform::SignKu4VariantForm => SIGN_KU4_VARIANT_FORM,
-            Cuneiform::SignKu7 => SIGN_KU7,
-            Cuneiform::SignKul => SIGN_KUL,
-            Cuneiform::SignKulGunu => SIGN_KUL_GUNU,
-            Cuneiform::SignKun => SIGN_KUN,
-            Cuneiform::SignKur => SIGN_KUR,
-            Cuneiform::SignKurOpposingKur => SIGN_KUR_OPPOSING_KUR,
-            Cuneiform::SignKushu2 => SIGN_KUSHU2,
-            Cuneiform::SignKwu318 => SIGN_KWU318,
-            Cuneiform::SignLa => SIGN_LA,
-            Cuneiform::SignLagab => SIGN_LAGAB,
-            Cuneiform::SignLagabTimesA => SIGN_LAGAB_TIMES_A,
-            Cuneiform::SignLagabTimesAPlusDaPlusHa => SIGN_LAGAB_TIMES_A_PLUS_DA_PLUS_HA,
-            Cuneiform::SignLagabTimesAPlusGar => SIGN_LAGAB_TIMES_A_PLUS_GAR,
-            Cuneiform::SignLagabTimesAPlusLal => SIGN_LAGAB_TIMES_A_PLUS_LAL,
-            Cuneiform::SignLagabTimesAl => SIGN_LAGAB_TIMES_AL,
-            Cuneiform::SignLagabTimesAn => SIGN_LAGAB_TIMES_AN,
-            Cuneiform::SignLagabTimesAshZidaTenu => SIGN_LAGAB_TIMES_ASH_ZIDA_TENU,
-            Cuneiform::SignLagabTimesBad => SIGN_LAGAB_TIMES_BAD,
-            Cuneiform::SignLagabTimesBi => SIGN_LAGAB_TIMES_BI,
-            Cuneiform::SignLagabTimesDar => SIGN_LAGAB_TIMES_DAR,
-            Cuneiform::SignLagabTimesEn => SIGN_LAGAB_TIMES_EN,
-            Cuneiform::SignLagabTimesGa => SIGN_LAGAB_TIMES_GA,
-            Cuneiform::SignLagabTimesGar => SIGN_LAGAB_TIMES_GAR,
-            Cuneiform::SignLagabTimesGud => SIGN_LAGAB_TIMES_GUD,
-            Cuneiform::SignLagabTimesGudPlusGud => SIGN_LAGAB_TIMES_GUD_PLUS_GUD,
-            Cuneiform::SignLagabTimesHa => SIGN_LAGAB_TIMES_HA,
-            Cuneiform::SignLagabTimesHal => SIGN_LAGAB_TIMES_HAL,
-            Cuneiform::SignLagabTimesHiTimesNun => SIGN_LAGAB_TIMES_HI_TIMES_NUN,
-            Cuneiform::SignLagabTimesIgiGunu => SIGN_LAGAB_TIMES_IGI_GUNU,
-            Cuneiform::SignLagabTimesIm => SIGN_LAGAB_TIMES_IM,
-            Cuneiform::SignLagabTimesImPlusHa => SIGN_LAGAB_TIMES_IM_PLUS_HA,
-            Cuneiform::SignLagabTimesImPlusLu => SIGN_LAGAB_TIMES_IM_PLUS_LU,
-            Cuneiform::SignLagabTimesKi => SIGN_LAGAB_TIMES_KI,
-            Cuneiform::SignLagabTimesKin => SIGN_LAGAB_TIMES_KIN,
-            Cuneiform::SignLagabTimesKu3 => SIGN_LAGAB_TIMES_KU3,
-            Cuneiform::SignLagabTimesKul => SIGN_LAGAB_TIMES_KUL,
-            Cuneiform::SignLagabTimesKulPlusHiPlusA => SIGN_LAGAB_TIMES_KUL_PLUS_HI_PLUS_A,
-            Cuneiform::SignLagabTimesLagab => SIGN_LAGAB_TIMES_LAGAB,
-            Cuneiform::SignLagabTimesLish => SIGN_LAGAB_TIMES_LISH,
-            Cuneiform::SignLagabTimesLu => SIGN_LAGAB_TIMES_LU,
-            Cuneiform::SignLagabTimesLul => SIGN_LAGAB_TIMES_LUL,
-            Cuneiform::SignLagabTimesMe => SIGN_LAGAB_TIMES_ME,
-            Cuneiform::SignLagabTimesMePlusEn => SIGN_LAGAB_TIMES_ME_PLUS_EN,
-            Cuneiform::SignLagabTimesMush => SIGN_LAGAB_TIMES_MUSH,
-            Cuneiform::SignLagabTimesNe => SIGN_LAGAB_TIMES_NE,
-            Cuneiform::SignLagabTimesShePlusSum => SIGN_LAGAB_TIMES_SHE_PLUS_SUM,
-            Cuneiform::SignLagabTimesShitaPlusGishPlusErin2 => SIGN_LAGAB_TIMES_SHITA_PLUS_GISH_PLUS_ERIN2,
-            Cuneiform::SignLagabTimesShitaPlusGishTenu => SIGN_LAGAB_TIMES_SHITA_PLUS_GISH_TENU,
-            Cuneiform::SignLagabTimesShu2 => SIGN_LAGAB_TIMES_SHU2,
-            Cuneiform::SignLagabTimesShu2PlusShu2 => SIGN_LAGAB_TIMES_SHU2_PLUS_SHU2,
-            Cuneiform::SignLagabTimesSum => SIGN_LAGAB_TIMES_SUM,
-            Cuneiform::SignLagabTimesTag => SIGN_LAGAB_TIMES_TAG,
-            Cuneiform::SignLagabTimesTak4 => SIGN_LAGAB_TIMES_TAK4,
-            Cuneiform::SignLagabTimesTePlusAPlusSuPlusNa => SIGN_LAGAB_TIMES_TE_PLUS_A_PLUS_SU_PLUS_NA,
-            Cuneiform::SignLagabTimesU => SIGN_LAGAB_TIMES_U,
-            Cuneiform::SignLagabTimesUPlusA => SIGN_LAGAB_TIMES_U_PLUS_A,
-            Cuneiform::SignLagabTimesUPlusUPlusU => SIGN_LAGAB_TIMES_U_PLUS_U_PLUS_U,
-            Cuneiform::SignLagabTimesU2PlusAsh => SIGN_LAGAB_TIMES_U2_PLUS_ASH,
-            Cuneiform::SignLagabTimesUd => SIGN_LAGAB_TIMES_UD,
-            Cuneiform::SignLagabTimesUsh => SIGN_LAGAB_TIMES_USH,
-            Cuneiform::SignLagabSquared => SIGN_LAGAB_SQUARED,
-            Cuneiform::SignLagar => SIGN_LAGAR,
-            Cuneiform::SignLagarTimesShe => SIGN_LAGAR_TIMES_SHE,
-            Cuneiform::SignLagarTimesShePlusSum => SIGN_LAGAR_TIMES_SHE_PLUS_SUM,
-            Cuneiform::SignLagarGunu => SIGN_LAGAR_GUNU,
-            Cuneiform::SignLagarGunuOverLagarGunuShe => SIGN_LAGAR_GUNU_OVER_LAGAR_GUNU_SHE,
-            Cuneiform::SignLahshu => SIGN_LAHSHU,
-            Cuneiform::SignLal => SIGN_LAL,
-            Cuneiform::SignLalTimesLal => SIGN_LAL_TIMES_LAL,
-            Cuneiform::SignLam => SIGN_LAM,
-            Cuneiform::SignLamTimesKur => SIGN_LAM_TIMES_KUR,
-            Cuneiform::SignLamTimesKurPlusRu => SIGN_LAM_TIMES_KUR_PLUS_RU,
-            Cuneiform::SignLi => SIGN_LI,
-            Cuneiform::SignLil => SIGN_LIL,
-            Cuneiform::SignLimmu2 => SIGN_LIMMU2,
-            Cuneiform::SignLish => SIGN_LISH,
-            Cuneiform::SignLu => SIGN_LU,
-            Cuneiform::SignLuTimesBad => SIGN_LU_TIMES_BAD,
-            Cuneiform::SignLu2 => SIGN_LU2,
-            Cuneiform::SignLu2TimesAl => SIGN_LU2_TIMES_AL,
-            Cuneiform::SignLu2TimesBad => SIGN_LU2_TIMES_BAD,
-            Cuneiform::SignLu2TimesEsh2 => SIGN_LU2_TIMES_ESH2,
-            Cuneiform::SignLu2TimesEsh2Tenu => SIGN_LU2_TIMES_ESH2_TENU,
-            Cuneiform::SignLu2TimesGan2Tenu => SIGN_LU2_TIMES_GAN2_TENU,
-            Cuneiform::SignLu2TimesHiTimesBad => SIGN_LU2_TIMES_HI_TIMES_BAD,
-            Cuneiform::SignLu2TimesIm => SIGN_LU2_TIMES_IM,
-            Cuneiform::SignLu2TimesKad2 => SIGN_LU2_TIMES_KAD2,
-            Cuneiform::SignLu2TimesKad3 => SIGN_LU2_TIMES_KAD3,
-            Cuneiform::SignLu2TimesKad3PlusAsh => SIGN_LU2_TIMES_KAD3_PLUS_ASH,
-            Cuneiform::SignLu2TimesKi => SIGN_LU2_TIMES_KI,
-            Cuneiform::SignLu2TimesLaPlusAsh => SIGN_LU2_TIMES_LA_PLUS_ASH,
-            Cuneiform::SignLu2TimesLagab => SIGN_LU2_TIMES_LAGAB,
-            Cuneiform::SignLu2TimesMePlusEn => SIGN_LU2_TIMES_ME_PLUS_EN,
-            Cuneiform::SignLu2TimesNe => SIGN_LU2_TIMES_NE,
-            Cuneiform::SignLu2TimesNu => SIGN_LU2_TIMES_NU,
-            Cuneiform::SignLu2TimesSiPlusAsh => SIGN_LU2_TIMES_SI_PLUS_ASH,
-            Cuneiform::SignLu2TimesSik2PlusBu => SIGN_LU2_TIMES_SIK2_PLUS_BU,
-            Cuneiform::SignLu2TimesTug2 => SIGN_LU2_TIMES_TUG2,
-            Cuneiform::SignLu2Tenu => SIGN_LU2_TENU,
-            Cuneiform::SignLu2CrossingLu2 => SIGN_LU2_CROSSING_LU2,
-            Cuneiform::SignLu2OpposingLu2 => SIGN_LU2_OPPOSING_LU2,
-            Cuneiform::SignLu2Squared => SIGN_LU2_SQUARED,
-            Cuneiform::SignLu2Sheshig => SIGN_LU2_SHESHIG,
-            Cuneiform::SignLu3 => SIGN_LU3,
-            Cuneiform::SignLugal => SIGN_LUGAL,
-            Cuneiform::SignLugalOverLugal => SIGN_LUGAL_OVER_LUGAL,
-            Cuneiform::SignLugalOpposingLugal => SIGN_LUGAL_OPPOSING_LUGAL,
-            Cuneiform::SignLugalSheshig => SIGN_LUGAL_SHESHIG,
-            Cuneiform::SignLuh => SIGN_LUH,
-            Cuneiform::SignLul => SIGN_LUL,
-            Cuneiform::SignLum => SIGN_LUM,
-            Cuneiform::SignLumOverLum => SIGN_LUM_OVER_LUM,
-            Cuneiform::SignLumOverLumGarOverGar => SIGN_LUM_OVER_LUM_GAR_OVER_GAR,
-            Cuneiform::SignMa => SIGN_MA,
-            Cuneiform::SignMaTimesTak4 => SIGN_MA_TIMES_TAK4,
-            Cuneiform::SignMaGunu => SIGN_MA_GUNU,
-            Cuneiform::SignMa2 => SIGN_MA2,
-            Cuneiform::SignMah => SIGN_MAH,
-            Cuneiform::SignMar => SIGN_MAR,
-            Cuneiform::SignMash => SIGN_MASH,
-            Cuneiform::SignMash2 => SIGN_MASH2,
-            Cuneiform::SignMe => SIGN_ME,
-            Cuneiform::SignMes => SIGN_MES,
-            Cuneiform::SignMi => SIGN_MI,
-            Cuneiform::SignMin => SIGN_MIN,
-            Cuneiform::SignMu => SIGN_MU,
-            Cuneiform::SignMuOverMu => SIGN_MU_OVER_MU,
-            Cuneiform::SignMug => SIGN_MUG,
-            Cuneiform::SignMugGunu => SIGN_MUG_GUNU,
-            Cuneiform::SignMunsub => SIGN_MUNSUB,
-            Cuneiform::SignMurgu2 => SIGN_MURGU2,
-            Cuneiform::SignMush => SIGN_MUSH,
-            Cuneiform::SignMushTimesA => SIGN_MUSH_TIMES_A,
-            Cuneiform::SignMushTimesKur => SIGN_MUSH_TIMES_KUR,
-            Cuneiform::SignMushTimesZa => SIGN_MUSH_TIMES_ZA,
-            Cuneiform::SignMushOverMush => SIGN_MUSH_OVER_MUSH,
-            Cuneiform::SignMushOverMushTimesAPlusNa => SIGN_MUSH_OVER_MUSH_TIMES_A_PLUS_NA,
-            Cuneiform::SignMushCrossingMush => SIGN_MUSH_CROSSING_MUSH,
-            Cuneiform::SignMush3 => SIGN_MUSH3,
-            Cuneiform::SignMush3TimesA => SIGN_MUSH3_TIMES_A,
-            Cuneiform::SignMush3TimesAPlusDi => SIGN_MUSH3_TIMES_A_PLUS_DI,
-            Cuneiform::SignMush3TimesDi => SIGN_MUSH3_TIMES_DI,
-            Cuneiform::SignMush3Gunu => SIGN_MUSH3_GUNU,
-            Cuneiform::SignNa => SIGN_NA,
-            Cuneiform::SignNa2 => SIGN_NA2,
-            Cuneiform::SignNaga => SIGN_NAGA,
-            Cuneiform::SignNagaInverted => SIGN_NAGA_INVERTED,
-            Cuneiform::SignNagaTimesShuTenu => SIGN_NAGA_TIMES_SHU_TENU,
-            Cuneiform::SignNagaOpposingNaga => SIGN_NAGA_OPPOSING_NAGA,
-            Cuneiform::SignNagar => SIGN_NAGAR,
-            Cuneiform::SignNamNutillu => SIGN_NAM_NUTILLU,
-            Cuneiform::SignNam => SIGN_NAM,
-            Cuneiform::SignNam2 => SIGN_NAM2,
-            Cuneiform::SignNe => SIGN_NE,
-            Cuneiform::SignNeTimesA => SIGN_NE_TIMES_A,
-            Cuneiform::SignNeTimesUd => SIGN_NE_TIMES_UD,
-            Cuneiform::SignNeSheshig => SIGN_NE_SHESHIG,
-            Cuneiform::SignNi => SIGN_NI,
-            Cuneiform::SignNiTimesE => SIGN_NI_TIMES_E,
-            Cuneiform::SignNi2 => SIGN_NI2,
-            Cuneiform::SignNim => SIGN_NIM,
-            Cuneiform::SignNimTimesGan2Tenu => SIGN_NIM_TIMES_GAN2_TENU,
-            Cuneiform::SignNimTimesGarPlusGan2Tenu => SIGN_NIM_TIMES_GAR_PLUS_GAN2_TENU,
-            Cuneiform::SignNinda2 => SIGN_NINDA2,
-            Cuneiform::SignNinda2TimesAn => SIGN_NINDA2_TIMES_AN,
-            Cuneiform::SignNinda2TimesAsh => SIGN_NINDA2_TIMES_ASH,
-            Cuneiform::SignNinda2TimesAshPlusAsh => SIGN_NINDA2_TIMES_ASH_PLUS_ASH,
-            Cuneiform::SignNinda2TimesGud => SIGN_NINDA2_TIMES_GUD,
-            Cuneiform::SignNinda2TimesMePlusGan2Tenu => SIGN_NINDA2_TIMES_ME_PLUS_GAN2_TENU,
-            Cuneiform::SignNinda2TimesNe => SIGN_NINDA2_TIMES_NE,
-            Cuneiform::SignNinda2TimesNun => SIGN_NINDA2_TIMES_NUN,
-            Cuneiform::SignNinda2TimesShe => SIGN_NINDA2_TIMES_SHE,
-            Cuneiform::SignNinda2TimesShePlusAAn => SIGN_NINDA2_TIMES_SHE_PLUS_A_AN,
-            Cuneiform::SignNinda2TimesShePlusAsh => SIGN_NINDA2_TIMES_SHE_PLUS_ASH,
-            Cuneiform::SignNinda2TimesShePlusAshPlusAsh => SIGN_NINDA2_TIMES_SHE_PLUS_ASH_PLUS_ASH,
-            Cuneiform::SignNinda2TimesU2PlusAsh => SIGN_NINDA2_TIMES_U2_PLUS_ASH,
-            Cuneiform::SignNinda2TimesUsh => SIGN_NINDA2_TIMES_USH,
-            Cuneiform::SignNisag => SIGN_NISAG,
-            Cuneiform::SignNu => SIGN_NU,
-            Cuneiform::SignNu11 => SIGN_NU11,
-            Cuneiform::SignNun => SIGN_NUN,
-            Cuneiform::SignNunLagarTimesGar => SIGN_NUN_LAGAR_TIMES_GAR,
-            Cuneiform::SignNunLagarTimesMash => SIGN_NUN_LAGAR_TIMES_MASH,
-            Cuneiform::SignNunLagarTimesSal => SIGN_NUN_LAGAR_TIMES_SAL,
-            Cuneiform::SignNunLagarTimesSalOverNunLagarTimesSal => SIGN_NUN_LAGAR_TIMES_SAL_OVER_NUN_LAGAR_TIMES_SAL,
-            Cuneiform::SignNunLagarTimesUsh => SIGN_NUN_LAGAR_TIMES_USH,
-            Cuneiform::SignNunTenu => SIGN_NUN_TENU,
-            Cuneiform::SignNunOverNun => SIGN_NUN_OVER_NUN,
-            Cuneiform::SignNunCrossingNun => SIGN_NUN_CROSSING_NUN,
-            Cuneiform::SignNunCrossingNunLagarOverLagar => SIGN_NUN_CROSSING_NUN_LAGAR_OVER_LAGAR,
-            Cuneiform::SignNunuz => SIGN_NUNUZ,
-            Cuneiform::SignNunuzAb2TimesAshgab => SIGN_NUNUZ_AB2_TIMES_ASHGAB,
-            Cuneiform::SignNunuzAb2TimesBi => SIGN_NUNUZ_AB2_TIMES_BI,
-            Cuneiform::SignNunuzAb2TimesDug => SIGN_NUNUZ_AB2_TIMES_DUG,
-            Cuneiform::SignNunuzAb2TimesGud => SIGN_NUNUZ_AB2_TIMES_GUD,
-            Cuneiform::SignNunuzAb2TimesIgiGunu => SIGN_NUNUZ_AB2_TIMES_IGI_GUNU,
-            Cuneiform::SignNunuzAb2TimesKad3 => SIGN_NUNUZ_AB2_TIMES_KAD3,
-            Cuneiform::SignNunuzAb2TimesLa => SIGN_NUNUZ_AB2_TIMES_LA,
-            Cuneiform::SignNunuzAb2TimesNe => SIGN_NUNUZ_AB2_TIMES_NE,
-            Cuneiform::SignNunuzAb2TimesSila3 => SIGN_NUNUZ_AB2_TIMES_SILA3,
-            Cuneiform::SignNunuzAb2TimesU2 => SIGN_NUNUZ_AB2_TIMES_U2,
-            Cuneiform::SignNunuzKisim5TimesBi => SIGN_NUNUZ_KISIM5_TIMES_BI,
-            Cuneiform::SignNunuzKisim5TimesBiU => SIGN_NUNUZ_KISIM5_TIMES_BI_U,
-            Cuneiform::SignPa => SIGN_PA,
-            Cuneiform::SignPad => SIGN_PAD,
-            Cuneiform::SignPan => SIGN_PAN,
-            Cuneiform::SignPap => SIGN_PAP,
-            Cuneiform::SignPesh2 => SIGN_PESH2,
-            Cuneiform::SignPi => SIGN_PI,
-            Cuneiform::SignPiTimesA => SIGN_PI_TIMES_A,
-            Cuneiform::SignPiTimesAb => SIGN_PI_TIMES_AB,
-            Cuneiform::SignPiTimesBi => SIGN_PI_TIMES_BI,
-            Cuneiform::SignPiTimesBu => SIGN_PI_TIMES_BU,
-            Cuneiform::SignPiTimesE => SIGN_PI_TIMES_E,
-            Cuneiform::SignPiTimesI => SIGN_PI_TIMES_I,
-            Cuneiform::SignPiTimesIb => SIGN_PI_TIMES_IB,
-            Cuneiform::SignPiTimesU => SIGN_PI_TIMES_U,
-            Cuneiform::SignPiTimesU2 => SIGN_PI_TIMES_U2,
-            Cuneiform::SignPiCrossingPi => SIGN_PI_CROSSING_PI,
-            Cuneiform::SignPirig => SIGN_PIRIG,
-            Cuneiform::SignPirigTimesKal => SIGN_PIRIG_TIMES_KAL,
-            Cuneiform::SignPirigTimesUd => SIGN_PIRIG_TIMES_UD,
-            Cuneiform::SignPirigTimesZa => SIGN_PIRIG_TIMES_ZA,
-            Cuneiform::SignPirigOpposingPirig => SIGN_PIRIG_OPPOSING_PIRIG,
-            Cuneiform::SignRa => SIGN_RA,
-            Cuneiform::SignRab => SIGN_RAB,
-            Cuneiform::SignRi => SIGN_RI,
-            Cuneiform::SignRu => SIGN_RU,
-            Cuneiform::SignSa => SIGN_SA,
-            Cuneiform::SignSagNutillu => SIGN_SAG_NUTILLU,
-            Cuneiform::SignSag => SIGN_SAG,
-            Cuneiform::SignSagTimesA => SIGN_SAG_TIMES_A,
-            Cuneiform::SignSagTimesDu => SIGN_SAG_TIMES_DU,
-            Cuneiform::SignSagTimesDub => SIGN_SAG_TIMES_DUB,
-            Cuneiform::SignSagTimesHa => SIGN_SAG_TIMES_HA,
-            Cuneiform::SignSagTimesKak => SIGN_SAG_TIMES_KAK,
-            Cuneiform::SignSagTimesKur => SIGN_SAG_TIMES_KUR,
-            Cuneiform::SignSagTimesLum => SIGN_SAG_TIMES_LUM,
-            Cuneiform::SignSagTimesMi => SIGN_SAG_TIMES_MI,
-            Cuneiform::SignSagTimesNun => SIGN_SAG_TIMES_NUN,
-            Cuneiform::SignSagTimesSal => SIGN_SAG_TIMES_SAL,
-            Cuneiform::SignSagTimesShid => SIGN_SAG_TIMES_SHID,
-            Cuneiform::SignSagTimesTab => SIGN_SAG_TIMES_TAB,
-            Cuneiform::SignSagTimesU2 => SIGN_SAG_TIMES_U2,
-            Cuneiform::SignSagTimesUb => SIGN_SAG_TIMES_UB,
-            Cuneiform::SignSagTimesUm => SIGN_SAG_TIMES_UM,
-            Cuneiform::SignSagTimesUr => SIGN_SAG_TIMES_UR,
-            Cuneiform::SignSagTimesUsh => SIGN_SAG_TIMES_USH,
-            Cuneiform::SignSagOverSag => SIGN_SAG_OVER_SAG,
-            Cuneiform::SignSagGunu => SIGN_SAG_GUNU,
-            Cuneiform::SignSal => SIGN_SAL,
-            Cuneiform::SignSalLagabTimesAsh2 => SIGN_SAL_LAGAB_TIMES_ASH2,
-            Cuneiform::SignSanga2 => SIGN_SANGA2,
-            Cuneiform::SignSar => SIGN_SAR,
-            Cuneiform::SignSha => SIGN_SHA,
-            Cuneiform::SignSha3 => SIGN_SHA3,
-            Cuneiform::SignSha3TimesA => SIGN_SHA3_TIMES_A,
-            Cuneiform::SignSha3TimesBad => SIGN_SHA3_TIMES_BAD,
-            Cuneiform::SignSha3TimesGish => SIGN_SHA3_TIMES_GISH,
-            Cuneiform::SignSha3TimesNe => SIGN_SHA3_TIMES_NE,
-            Cuneiform::SignSha3TimesShu2 => SIGN_SHA3_TIMES_SHU2,
-            Cuneiform::SignSha3TimesTur => SIGN_SHA3_TIMES_TUR,
-            Cuneiform::SignSha3TimesU => SIGN_SHA3_TIMES_U,
-            Cuneiform::SignSha3TimesUPlusA => SIGN_SHA3_TIMES_U_PLUS_A,
-            Cuneiform::SignSha6 => SIGN_SHA6,
-            Cuneiform::SignShab6 => SIGN_SHAB6,
-            Cuneiform::SignShar2 => SIGN_SHAR2,
-            Cuneiform::SignShe => SIGN_SHE,
-            Cuneiform::SignSheHu => SIGN_SHE_HU,
-            Cuneiform::SignSheOverSheGadOverGadGarOverGar => SIGN_SHE_OVER_SHE_GAD_OVER_GAD_GAR_OVER_GAR,
-            Cuneiform::SignSheOverSheTabOverTabGarOverGar => SIGN_SHE_OVER_SHE_TAB_OVER_TAB_GAR_OVER_GAR,
-            Cuneiform::SignSheg9 => SIGN_SHEG9,
-            Cuneiform::SignShen => SIGN_SHEN,
-            Cuneiform::SignShesh => SIGN_SHESH,
-            Cuneiform::SignShesh2 => SIGN_SHESH2,
-            Cuneiform::SignSheshlam => SIGN_SHESHLAM,
-            Cuneiform::SignShid => SIGN_SHID,
-            Cuneiform::SignShidTimesA => SIGN_SHID_TIMES_A,
-            Cuneiform::SignShidTimesIm => SIGN_SHID_TIMES_IM,
-            Cuneiform::SignShim => SIGN_SHIM,
-            Cuneiform::SignShimTimesA => SIGN_SHIM_TIMES_A,
-            Cuneiform::SignShimTimesBal => SIGN_SHIM_TIMES_BAL,
-            Cuneiform::SignShimTimesBulug => SIGN_SHIM_TIMES_BULUG,
-            Cuneiform::SignShimTimesDin => SIGN_SHIM_TIMES_DIN,
-            Cuneiform::SignShimTimesGar => SIGN_SHIM_TIMES_GAR,
-            Cuneiform::SignShimTimesIgi => SIGN_SHIM_TIMES_IGI,
-            Cuneiform::SignShimTimesIgiGunu => SIGN_SHIM_TIMES_IGI_GUNU,
-            Cuneiform::SignShimTimesKushu2 => SIGN_SHIM_TIMES_KUSHU2,
-            Cuneiform::SignShimTimesLul => SIGN_SHIM_TIMES_LUL,
-            Cuneiform::SignShimTimesMug => SIGN_SHIM_TIMES_MUG,
-            Cuneiform::SignShimTimesSal => SIGN_SHIM_TIMES_SAL,
-            Cuneiform::SignShinig => SIGN_SHINIG,
-            Cuneiform::SignShir => SIGN_SHIR,
-            Cuneiform::SignShirTenu => SIGN_SHIR_TENU,
-            Cuneiform::SignShirOverShirBurOverBur => SIGN_SHIR_OVER_SHIR_BUR_OVER_BUR,
-            Cuneiform::SignShita => SIGN_SHITA,
-            Cuneiform::SignShu => SIGN_SHU,
-            Cuneiform::SignShuOverInvertedShu => SIGN_SHU_OVER_INVERTED_SHU,
-            Cuneiform::SignShu2 => SIGN_SHU2,
-            Cuneiform::SignShubur => SIGN_SHUBUR,
-            Cuneiform::SignSi => SIGN_SI,
-            Cuneiform::SignSiGunu => SIGN_SI_GUNU,
-            Cuneiform::SignSig => SIGN_SIG,
-            Cuneiform::SignSig4 => SIGN_SIG4,
-            Cuneiform::SignSig4OverSig4Shu2 => SIGN_SIG4_OVER_SIG4_SHU2,
-            Cuneiform::SignSik2 => SIGN_SIK2,
-            Cuneiform::SignSila3 => SIGN_SILA3,
-            Cuneiform::SignSu => SIGN_SU,
-            Cuneiform::SignSuOverSu => SIGN_SU_OVER_SU,
-            Cuneiform::SignSud => SIGN_SUD,
-            Cuneiform::SignSud2 => SIGN_SUD2,
-            Cuneiform::SignSuhur => SIGN_SUHUR,
-            Cuneiform::SignSum => SIGN_SUM,
-            Cuneiform::SignSumash => SIGN_SUMASH,
-            Cuneiform::SignSur => SIGN_SUR,
-            Cuneiform::SignSur9 => SIGN_SUR9,
-            Cuneiform::SignTa => SIGN_TA,
-            Cuneiform::SignTaAsterisk => SIGN_TA_ASTERISK,
-            Cuneiform::SignTaTimesHi => SIGN_TA_TIMES_HI,
-            Cuneiform::SignTaTimesMi => SIGN_TA_TIMES_MI,
-            Cuneiform::SignTaGunu => SIGN_TA_GUNU,
-            Cuneiform::SignTab => SIGN_TAB,
-            Cuneiform::SignTabOverTabNiOverNiDishOverDish => SIGN_TAB_OVER_TAB_NI_OVER_NI_DISH_OVER_DISH,
-            Cuneiform::SignTabSquared => SIGN_TAB_SQUARED,
-            Cuneiform::SignTag => SIGN_TAG,
-            Cuneiform::SignTagTimesBi => SIGN_TAG_TIMES_BI,
-            Cuneiform::SignTagTimesGud => SIGN_TAG_TIMES_GUD,
-            Cuneiform::SignTagTimesShe => SIGN_TAG_TIMES_SHE,
-            Cuneiform::SignTagTimesShu => SIGN_TAG_TIMES_SHU,
-            Cuneiform::SignTagTimesTug2 => SIGN_TAG_TIMES_TUG2,
-            Cuneiform::SignTagTimesUd => SIGN_TAG_TIMES_UD,
-            Cuneiform::SignTak4 => SIGN_TAK4,
-            Cuneiform::SignTar => SIGN_TAR,
-            Cuneiform::SignTe => SIGN_TE,
-            Cuneiform::SignTeGunu => SIGN_TE_GUNU,
-            Cuneiform::SignTi => SIGN_TI,
-            Cuneiform::SignTiTenu => SIGN_TI_TENU,
-            Cuneiform::SignTil => SIGN_TIL,
-            Cuneiform::SignTir => SIGN_TIR,
-            Cuneiform::SignTirTimesTak4 => SIGN_TIR_TIMES_TAK4,
-            Cuneiform::SignTirOverTir => SIGN_TIR_OVER_TIR,
-            Cuneiform::SignTirOverTirGadOverGadGarOverGar => SIGN_TIR_OVER_TIR_GAD_OVER_GAD_GAR_OVER_GAR,
-            Cuneiform::SignTu => SIGN_TU,
-            Cuneiform::SignTug2 => SIGN_TUG2,
-            Cuneiform::SignTuk => SIGN_TUK,
-            Cuneiform::SignTum => SIGN_TUM,
-            Cuneiform::SignTur => SIGN_TUR,
-            Cuneiform::SignTurOverTurZaOverZa => SIGN_TUR_OVER_TUR_ZA_OVER_ZA,
-            Cuneiform::SignU => SIGN_U,
-            Cuneiform::SignUGud => SIGN_U_GUD,
-            Cuneiform::SignUUU => SIGN_U_U_U,
-            Cuneiform::SignUOverUPaOverPaGarOverGar => SIGN_U_OVER_U_PA_OVER_PA_GAR_OVER_GAR,
-            Cuneiform::SignUOverUSurOverSur => SIGN_U_OVER_U_SUR_OVER_SUR,
-            Cuneiform::SignUOverUUReversedOverUReversed => SIGN_U_OVER_U_U_REVERSED_OVER_U_REVERSED,
-            Cuneiform::SignU2 => SIGN_U2,
-            Cuneiform::SignUb => SIGN_UB,
-            Cuneiform::SignUd => SIGN_UD,
-            Cuneiform::SignUdKushu2 => SIGN_UD_KUSHU2,
-            Cuneiform::SignUdTimesBad => SIGN_UD_TIMES_BAD,
-            Cuneiform::SignUdTimesMi => SIGN_UD_TIMES_MI,
-            Cuneiform::SignUdTimesUPlusUPlusU => SIGN_UD_TIMES_U_PLUS_U_PLUS_U,
-            Cuneiform::SignUdTimesUPlusUPlusUGunu => SIGN_UD_TIMES_U_PLUS_U_PLUS_U_GUNU,
-            Cuneiform::SignUdGunu => SIGN_UD_GUNU,
-            Cuneiform::SignUdSheshig => SIGN_UD_SHESHIG,
-            Cuneiform::SignUdSheshigTimesBad => SIGN_UD_SHESHIG_TIMES_BAD,
-            Cuneiform::SignUdug => SIGN_UDUG,
-            Cuneiform::SignUm => SIGN_UM,
-            Cuneiform::SignUmTimesLagab => SIGN_UM_TIMES_LAGAB,
-            Cuneiform::SignUmTimesMePlusDa => SIGN_UM_TIMES_ME_PLUS_DA,
-            Cuneiform::SignUmTimesSha3 => SIGN_UM_TIMES_SHA3,
-            Cuneiform::SignUmTimesU => SIGN_UM_TIMES_U,
-            Cuneiform::SignUmbin => SIGN_UMBIN,
-            Cuneiform::SignUmum => SIGN_UMUM,
-            Cuneiform::SignUmumTimesKaskal => SIGN_UMUM_TIMES_KASKAL,
-            Cuneiform::SignUmumTimesPa => SIGN_UMUM_TIMES_PA,
-            Cuneiform::SignUn => SIGN_UN,
-            Cuneiform::SignUnGunu => SIGN_UN_GUNU,
-            Cuneiform::SignUr => SIGN_UR,
-            Cuneiform::SignUrCrossingUr => SIGN_UR_CROSSING_UR,
-            Cuneiform::SignUrSheshig => SIGN_UR_SHESHIG,
-            Cuneiform::SignUr2 => SIGN_UR2,
-            Cuneiform::SignUr2TimesAPlusHa => SIGN_UR2_TIMES_A_PLUS_HA,
-            Cuneiform::SignUr2TimesAPlusNa => SIGN_UR2_TIMES_A_PLUS_NA,
-            Cuneiform::SignUr2TimesAl => SIGN_UR2_TIMES_AL,
-            Cuneiform::SignUr2TimesHa => SIGN_UR2_TIMES_HA,
-            Cuneiform::SignUr2TimesNun => SIGN_UR2_TIMES_NUN,
-            Cuneiform::SignUr2TimesU2 => SIGN_UR2_TIMES_U2,
-            Cuneiform::SignUr2TimesU2PlusAsh => SIGN_UR2_TIMES_U2_PLUS_ASH,
-            Cuneiform::SignUr2TimesU2PlusBi => SIGN_UR2_TIMES_U2_PLUS_BI,
-            Cuneiform::SignUr4 => SIGN_UR4,
-            Cuneiform::SignUri => SIGN_URI,
-            Cuneiform::SignUri3 => SIGN_URI3,
-            Cuneiform::SignUru => SIGN_URU,
-            Cuneiform::SignUruTimesA => SIGN_URU_TIMES_A,
-            Cuneiform::SignUruTimesAshgab => SIGN_URU_TIMES_ASHGAB,
-            Cuneiform::SignUruTimesBar => SIGN_URU_TIMES_BAR,
-            Cuneiform::SignUruTimesDun => SIGN_URU_TIMES_DUN,
-            Cuneiform::SignUruTimesGa => SIGN_URU_TIMES_GA,
-            Cuneiform::SignUruTimesGal => SIGN_URU_TIMES_GAL,
-            Cuneiform::SignUruTimesGan2Tenu => SIGN_URU_TIMES_GAN2_TENU,
-            Cuneiform::SignUruTimesGar => SIGN_URU_TIMES_GAR,
-            Cuneiform::SignUruTimesGu => SIGN_URU_TIMES_GU,
-            Cuneiform::SignUruTimesHa => SIGN_URU_TIMES_HA,
-            Cuneiform::SignUruTimesIgi => SIGN_URU_TIMES_IGI,
-            Cuneiform::SignUruTimesIm => SIGN_URU_TIMES_IM,
-            Cuneiform::SignUruTimesIsh => SIGN_URU_TIMES_ISH,
-            Cuneiform::SignUruTimesKi => SIGN_URU_TIMES_KI,
-            Cuneiform::SignUruTimesLum => SIGN_URU_TIMES_LUM,
-            Cuneiform::SignUruTimesMin => SIGN_URU_TIMES_MIN,
-            Cuneiform::SignUruTimesPa => SIGN_URU_TIMES_PA,
-            Cuneiform::SignUruTimesShe => SIGN_URU_TIMES_SHE,
-            Cuneiform::SignUruTimesSig4 => SIGN_URU_TIMES_SIG4,
-            Cuneiform::SignUruTimesTu => SIGN_URU_TIMES_TU,
-            Cuneiform::SignUruTimesUPlusGud => SIGN_URU_TIMES_U_PLUS_GUD,
-            Cuneiform::SignUruTimesUd => SIGN_URU_TIMES_UD,
-            Cuneiform::SignUruTimesUruda => SIGN_URU_TIMES_URUDA,
-            Cuneiform::SignUruda => SIGN_URUDA,
-            Cuneiform::SignUrudaTimesU => SIGN_URUDA_TIMES_U,
-            Cuneiform::SignUsh => SIGN_USH,
-            Cuneiform::SignUshTimesA => SIGN_USH_TIMES_A,
-            Cuneiform::SignUshTimesKu => SIGN_USH_TIMES_KU,
-            Cuneiform::SignUshTimesKur => SIGN_USH_TIMES_KUR,
-            Cuneiform::SignUshTimesTak4 => SIGN_USH_TIMES_TAK4,
-            Cuneiform::SignUshx => SIGN_USHX,
-            Cuneiform::SignUsh2 => SIGN_USH2,
-            Cuneiform::SignUshumx => SIGN_USHUMX,
-            Cuneiform::SignUtuki => SIGN_UTUKI,
-            Cuneiform::SignUz3 => SIGN_UZ3,
-            Cuneiform::SignUz3TimesKaskal => SIGN_UZ3_TIMES_KASKAL,
-            Cuneiform::SignUzu => SIGN_UZU,
-            Cuneiform::SignZa => SIGN_ZA,
-            Cuneiform::SignZaTenu => SIGN_ZA_TENU,
-            Cuneiform::SignZaSquaredTimesKur => SIGN_ZA_SQUARED_TIMES_KUR,
-            Cuneiform::SignZag => SIGN_ZAG,
-            Cuneiform::SignZamx => SIGN_ZAMX,
-            Cuneiform::SignZe2 => SIGN_ZE2,
-            Cuneiform::SignZi => SIGN_ZI,
-            Cuneiform::SignZiOverZi => SIGN_ZI_OVER_ZI,
-            Cuneiform::SignZi3 => SIGN_ZI3,
-            Cuneiform::SignZib => SIGN_ZIB,
-            Cuneiform::SignZibKabaTenu => SIGN_ZIB_KABA_TENU,
-            Cuneiform::SignZig => SIGN_ZIG,
-            Cuneiform::SignZiz2 => SIGN_ZIZ2,
-            Cuneiform::SignZu => SIGN_ZU,
-            Cuneiform::SignZu5 => SIGN_ZU5,
-            Cuneiform::SignZu5TimesA => SIGN_ZU5_TIMES_A,
-            Cuneiform::SignZubur => SIGN_ZUBUR,
-            Cuneiform::SignZum => SIGN_ZUM,
-            Cuneiform::SignKapElamite => SIGN_KAP_ELAMITE,
-            Cuneiform::SignAbTimesNun => SIGN_AB_TIMES_NUN,
-            Cuneiform::SignAb2TimesA => SIGN_AB2_TIMES_A,
-            Cuneiform::SignAmarTimesKug => SIGN_AMAR_TIMES_KUG,
-            Cuneiform::SignDagKisim5TimesU2PlusMash => SIGN_DAG_KISIM5_TIMES_U2_PLUS_MASH,
-            Cuneiform::SignDag3 => SIGN_DAG3,
-            Cuneiform::SignDishPlusShu => SIGN_DISH_PLUS_SHU,
-            Cuneiform::SignDubTimesShe => SIGN_DUB_TIMES_SHE,
-            Cuneiform::SignEzenTimesGud => SIGN_EZEN_TIMES_GUD,
-            Cuneiform::SignEzenTimesShe => SIGN_EZEN_TIMES_SHE,
-            Cuneiform::SignGa2TimesAnPlusKakPlusA => SIGN_GA2_TIMES_AN_PLUS_KAK_PLUS_A,
-            Cuneiform::SignGa2TimesAsh2 => SIGN_GA2_TIMES_ASH2,
-            Cuneiform::SignGe22 => SIGN_GE22,
-            Cuneiform::SignGig => SIGN_GIG,
-            Cuneiform::SignHush => SIGN_HUSH,
-            Cuneiform::SignKaTimesAnshe => SIGN_KA_TIMES_ANSHE,
-            Cuneiform::SignKaTimesAsh3 => SIGN_KA_TIMES_ASH3,
-            Cuneiform::SignKaTimesGish => SIGN_KA_TIMES_GISH,
-            Cuneiform::SignKaTimesGud => SIGN_KA_TIMES_GUD,
-            Cuneiform::SignKaTimesHiTimesAsh2 => SIGN_KA_TIMES_HI_TIMES_ASH2,
-            Cuneiform::SignKaTimesLum => SIGN_KA_TIMES_LUM,
-            Cuneiform::SignKaTimesPa => SIGN_KA_TIMES_PA,
-            Cuneiform::SignKaTimesShul => SIGN_KA_TIMES_SHUL,
-            Cuneiform::SignKaTimesTu => SIGN_KA_TIMES_TU,
-            Cuneiform::SignKaTimesUr2 => SIGN_KA_TIMES_UR2,
-            Cuneiform::SignLagabTimesGi => SIGN_LAGAB_TIMES_GI,
-            Cuneiform::SignLu2SheshigTimesBad => SIGN_LU2_SHESHIG_TIMES_BAD,
-            Cuneiform::SignLu2TimesEsh2PlusLal => SIGN_LU2_TIMES_ESH2_PLUS_LAL,
-            Cuneiform::SignLu2TimesShu => SIGN_LU2_TIMES_SHU,
-            Cuneiform::SignMesh => SIGN_MESH,
-            Cuneiform::SignMush3TimesZa => SIGN_MUSH3_TIMES_ZA,
-            Cuneiform::SignNa4 => SIGN_NA4,
-            Cuneiform::SignNin => SIGN_NIN,
-            Cuneiform::SignNin9 => SIGN_NIN9,
-            Cuneiform::SignNinda2TimesBal => SIGN_NINDA2_TIMES_BAL,
-            Cuneiform::SignNinda2TimesGi => SIGN_NINDA2_TIMES_GI,
-            Cuneiform::SignNu11RotatedNinetyDegrees => SIGN_NU11_ROTATED_NINETY_DEGREES,
-            Cuneiform::SignPesh2Asterisk => SIGN_PESH2_ASTERISK,
-            Cuneiform::SignPir2 => SIGN_PIR2,
-            Cuneiform::SignSagTimesIgiGunu => SIGN_SAG_TIMES_IGI_GUNU,
-            Cuneiform::SignTi2 => SIGN_TI2,
-            Cuneiform::SignUmTimesMe => SIGN_UM_TIMES_ME,
-            Cuneiform::SignUU => SIGN_U_U,
+            Cuneiform::SignA => '𒀀',
+            Cuneiform::SignATimesA => '𒀁',
+            Cuneiform::SignATimesBad => '𒀂',
+            Cuneiform::SignATimesGan2Tenu => '𒀃',
+            Cuneiform::SignATimesHa => '𒀄',
+            Cuneiform::SignATimesIgi => '𒀅',
+            Cuneiform::SignATimesLagarGunu => '𒀆',
+            Cuneiform::SignATimesMush => '𒀇',
+            Cuneiform::SignATimesSag => '𒀈',
+            Cuneiform::SignA2 => '𒀉',
+            Cuneiform::SignAb => '𒀊',
+            Cuneiform::SignAbTimesAsh2 => '𒀋',
+            Cuneiform::SignAbTimesDun3Gunu => '𒀌',
+            Cuneiform::SignAbTimesGal => '𒀍',
+            Cuneiform::SignAbTimesGan2Tenu => '𒀎',
+            Cuneiform::SignAbTimesHa => '𒀏',
+            Cuneiform::SignAbTimesIgiGunu => '𒀐',
+            Cuneiform::SignAbTimesImin => '𒀑',
+            Cuneiform::SignAbTimesLagab => '𒀒',
+            Cuneiform::SignAbTimesShesh => '𒀓',
+            Cuneiform::SignAbTimesUPlusUPlusU => '𒀔',
+            Cuneiform::SignAbGunu => '𒀕',
+            Cuneiform::SignAb2 => '𒀖',
+            Cuneiform::SignAb2TimesBalag => '𒀗',
+            Cuneiform::SignAb2TimesGan2Tenu => '𒀘',
+            Cuneiform::SignAb2TimesMePlusEn => '𒀙',
+            Cuneiform::SignAb2TimesSha3 => '𒀚',
+            Cuneiform::SignAb2TimesTak4 => '𒀛',
+            Cuneiform::SignAd => '𒀜',
+            Cuneiform::SignAk => '𒀝',
+            Cuneiform::SignAkTimesErin2 => '𒀞',
+            Cuneiform::SignAkTimesShitaPlusGish => '𒀟',
+            Cuneiform::SignAl => '𒀠',
+            Cuneiform::SignAlTimesAl => '𒀡',
+            Cuneiform::SignAlTimesDim2 => '𒀢',
+            Cuneiform::SignAlTimesGish => '𒀣',
+            Cuneiform::SignAlTimesHa => '𒀤',
+            Cuneiform::SignAlTimesKad3 => '𒀥',
+            Cuneiform::SignAlTimesKi => '𒀦',
+            Cuneiform::SignAlTimesShe => '𒀧',
+            Cuneiform::SignAlTimesUsh => '𒀨',
+            Cuneiform::SignAlan => '𒀩',
+            Cuneiform::SignAleph => '𒀪',
+            Cuneiform::SignAmar => '𒀫',
+            Cuneiform::SignAmarTimesShe => '𒀬',
+            Cuneiform::SignAn => '𒀭',
+            Cuneiform::SignAnOverAn => '𒀮',
+            Cuneiform::SignAnThreeTimes => '𒀯',
+            Cuneiform::SignAnPlusNagaOpposingAnPlusNaga => '𒀰',
+            Cuneiform::SignAnPlusNagaSquared => '𒀱',
+            Cuneiform::SignAnshe => '𒀲',
+            Cuneiform::SignApin => '𒀳',
+            Cuneiform::SignArad => '𒀴',
+            Cuneiform::SignAradTimesKur => '𒀵',
+            Cuneiform::SignArkab => '𒀶',
+            Cuneiform::SignAsal2 => '𒀷',
+            Cuneiform::SignAsh => '𒀸',
+            Cuneiform::SignAshZidaTenu => '𒀹',
+            Cuneiform::SignAshKabaTenu => '𒀺',
+            Cuneiform::SignAshOverAshTug2OverTug2Tug2OverTug2Pap => '𒀻',
+            Cuneiform::SignAshOverAshOverAsh => '𒀼',
+            Cuneiform::SignAshOverAshOverAshCrossingAshOverAshOverAsh => '𒀽',
+            Cuneiform::SignAsh2 => '𒀾',
+            Cuneiform::SignAshgab => '𒀿',
+            Cuneiform::SignBa => '𒁀',
+            Cuneiform::SignBad => '𒁁',
+            Cuneiform::SignBag3 => '𒁂',
+            Cuneiform::SignBahar2 => '𒁃',
+            Cuneiform::SignBal => '𒁄',
+            Cuneiform::SignBalOverBal => '𒁅',
+            Cuneiform::SignBalag => '𒁆',
+            Cuneiform::SignBar => '𒁇',
+            Cuneiform::SignBara2 => '𒁈',
+            Cuneiform::SignBi => '𒁉',
+            Cuneiform::SignBiTimesA => '𒁊',
+            Cuneiform::SignBiTimesGar => '𒁋',
+            Cuneiform::SignBiTimesIgiGunu => '𒁌',
+            Cuneiform::SignBu => '𒁍',
+            Cuneiform::SignBuOverBuAb => '𒁎',
+            Cuneiform::SignBuOverBuUn => '𒁏',
+            Cuneiform::SignBuCrossingBu => '𒁐',
+            Cuneiform::SignBulug => '𒁑',
+            Cuneiform::SignBulugOverBulug => '𒁒',
+            Cuneiform::SignBur => '𒁓',
+            Cuneiform::SignBur2 => '𒁔',
+            Cuneiform::SignDa => '𒁕',
+            Cuneiform::SignDag => '𒁖',
+            Cuneiform::SignDagKisim5TimesAPlusMash => '𒁗',
+            Cuneiform::SignDagKisim5TimesAmar => '𒁘',
+            Cuneiform::SignDagKisim5TimesBalag => '𒁙',
+            Cuneiform::SignDagKisim5TimesBi => '𒁚',
+            Cuneiform::SignDagKisim5TimesGa => '𒁛',
+            Cuneiform::SignDagKisim5TimesGaPlusMash => '𒁜',
+            Cuneiform::SignDagKisim5TimesGi => '𒁝',
+            Cuneiform::SignDagKisim5TimesGir2 => '𒁞',
+            Cuneiform::SignDagKisim5TimesGud => '𒁟',
+            Cuneiform::SignDagKisim5TimesHa => '𒁠',
+            Cuneiform::SignDagKisim5TimesIr => '𒁡',
+            Cuneiform::SignDagKisim5TimesIrPlusLu => '𒁢',
+            Cuneiform::SignDagKisim5TimesKak => '𒁣',
+            Cuneiform::SignDagKisim5TimesLa => '𒁤',
+            Cuneiform::SignDagKisim5TimesLu => '𒁥',
+            Cuneiform::SignDagKisim5TimesLuPlusMash2 => '𒁦',
+            Cuneiform::SignDagKisim5TimesLum => '𒁧',
+            Cuneiform::SignDagKisim5TimesNe => '𒁨',
+            Cuneiform::SignDagKisim5TimesPapPlusPap => '𒁩',
+            Cuneiform::SignDagKisim5TimesSi => '𒁪',
+            Cuneiform::SignDagKisim5TimesTak4 => '𒁫',
+            Cuneiform::SignDagKisim5TimesU2PlusGir2 => '𒁬',
+            Cuneiform::SignDagKisim5TimesUsh => '𒁭',
+            Cuneiform::SignDam => '𒁮',
+            Cuneiform::SignDar => '𒁯',
+            Cuneiform::SignDara3 => '𒁰',
+            Cuneiform::SignDara4 => '𒁱',
+            Cuneiform::SignDi => '𒁲',
+            Cuneiform::SignDib => '𒁳',
+            Cuneiform::SignDim => '𒁴',
+            Cuneiform::SignDimTimesShe => '𒁵',
+            Cuneiform::SignDim2 => '𒁶',
+            Cuneiform::SignDin => '𒁷',
+            Cuneiform::SignDinKaskalUGunuDish => '𒁸',
+            Cuneiform::SignDish => '𒁹',
+            Cuneiform::SignDu => '𒁺',
+            Cuneiform::SignDuOverDu => '𒁻',
+            Cuneiform::SignDuGunu => '𒁼',
+            Cuneiform::SignDuSheshig => '𒁽',
+            Cuneiform::SignDub => '𒁾',
+            Cuneiform::SignDubTimesEsh2 => '𒁿',
+            Cuneiform::SignDub2 => '𒂀',
+            Cuneiform::SignDug => '𒂁',
+            Cuneiform::SignDugud => '𒂂',
+            Cuneiform::SignDuh => '𒂃',
+            Cuneiform::SignDun => '𒂄',
+            Cuneiform::SignDun3 => '𒂅',
+            Cuneiform::SignDun3Gunu => '𒂆',
+            Cuneiform::SignDun3GunuGunu => '𒂇',
+            Cuneiform::SignDun4 => '𒂈',
+            Cuneiform::SignDur2 => '𒂉',
+            Cuneiform::SignE => '𒂊',
+            Cuneiform::SignETimesPap => '𒂋',
+            Cuneiform::SignEOverENunOverNun => '𒂌',
+            Cuneiform::SignE2 => '𒂍',
+            Cuneiform::SignE2TimesAPlusHaPlusDa => '𒂎',
+            Cuneiform::SignE2TimesGar => '𒂏',
+            Cuneiform::SignE2TimesMi => '𒂐',
+            Cuneiform::SignE2TimesSal => '𒂑',
+            Cuneiform::SignE2TimesShe => '𒂒',
+            Cuneiform::SignE2TimesU => '𒂓',
+            Cuneiform::SignEdin => '𒂔',
+            Cuneiform::SignEgir => '𒂕',
+            Cuneiform::SignEl => '𒂖',
+            Cuneiform::SignEn => '𒂗',
+            Cuneiform::SignEnTimesGan2 => '𒂘',
+            Cuneiform::SignEnTimesGan2Tenu => '𒂙',
+            Cuneiform::SignEnTimesMe => '𒂚',
+            Cuneiform::SignEnCrossingEn => '𒂛',
+            Cuneiform::SignEnOpposingEn => '𒂜',
+            Cuneiform::SignEnSquared => '𒂝',
+            Cuneiform::SignEren => '𒂞',
+            Cuneiform::SignErin2 => '𒂟',
+            Cuneiform::SignEsh2 => '𒂠',
+            Cuneiform::SignEzen => '𒂡',
+            Cuneiform::SignEzenTimesA => '𒂢',
+            Cuneiform::SignEzenTimesAPlusLal => '𒂣',
+            Cuneiform::SignEzenTimesAPlusLalTimesLal => '𒂤',
+            Cuneiform::SignEzenTimesAn => '𒂥',
+            Cuneiform::SignEzenTimesBad => '𒂦',
+            Cuneiform::SignEzenTimesDun3Gunu => '𒂧',
+            Cuneiform::SignEzenTimesDun3GunuGunu => '𒂨',
+            Cuneiform::SignEzenTimesHa => '𒂩',
+            Cuneiform::SignEzenTimesHaGunu => '𒂪',
+            Cuneiform::SignEzenTimesIgiGunu => '𒂫',
+            Cuneiform::SignEzenTimesKaskal => '𒂬',
+            Cuneiform::SignEzenTimesKaskalSquared => '𒂭',
+            Cuneiform::SignEzenTimesKu3 => '𒂮',
+            Cuneiform::SignEzenTimesLa => '𒂯',
+            Cuneiform::SignEzenTimesLalTimesLal => '𒂰',
+            Cuneiform::SignEzenTimesLi => '𒂱',
+            Cuneiform::SignEzenTimesLu => '𒂲',
+            Cuneiform::SignEzenTimesU2 => '𒂳',
+            Cuneiform::SignEzenTimesUd => '𒂴',
+            Cuneiform::SignGa => '𒂵',
+            Cuneiform::SignGaGunu => '𒂶',
+            Cuneiform::SignGa2 => '𒂷',
+            Cuneiform::SignGa2TimesAPlusDaPlusHa => '𒂸',
+            Cuneiform::SignGa2TimesAPlusHa => '𒂹',
+            Cuneiform::SignGa2TimesAPlusIgi => '𒂺',
+            Cuneiform::SignGa2TimesAb2TenuPlusTab => '𒂻',
+            Cuneiform::SignGa2TimesAn => '𒂼',
+            Cuneiform::SignGa2TimesAsh => '𒂽',
+            Cuneiform::SignGa2TimesAsh2PlusGal => '𒂾',
+            Cuneiform::SignGa2TimesBad => '𒂿',
+            Cuneiform::SignGa2TimesBarPlusRa => '𒃀',
+            Cuneiform::SignGa2TimesBur => '𒃁',
+            Cuneiform::SignGa2TimesBurPlusRa => '𒃂',
+            Cuneiform::SignGa2TimesDa => '𒃃',
+            Cuneiform::SignGa2TimesDi => '𒃄',
+            Cuneiform::SignGa2TimesDimTimesShe => '𒃅',
+            Cuneiform::SignGa2TimesDub => '𒃆',
+            Cuneiform::SignGa2TimesEl => '𒃇',
+            Cuneiform::SignGa2TimesElPlusLa => '𒃈',
+            Cuneiform::SignGa2TimesEn => '𒃉',
+            Cuneiform::SignGa2TimesEnTimesGan2Tenu => '𒃊',
+            Cuneiform::SignGa2TimesGan2Tenu => '𒃋',
+            Cuneiform::SignGa2TimesGar => '𒃌',
+            Cuneiform::SignGa2TimesGi => '𒃍',
+            Cuneiform::SignGa2TimesGi4 => '𒃎',
+            Cuneiform::SignGa2TimesGi4PlusA => '𒃏',
+            Cuneiform::SignGa2TimesGir2PlusSu => '𒃐',
+            Cuneiform::SignGa2TimesHaPlusLuPlusEsh2 => '𒃑',
+            Cuneiform::SignGa2TimesHal => '𒃒',
+            Cuneiform::SignGa2TimesHalPlusLa => '𒃓',
+            Cuneiform::SignGa2TimesHiPlusLi => '𒃔',
+            Cuneiform::SignGa2TimesHub2 => '𒃕',
+            Cuneiform::SignGa2TimesIgiGunu => '𒃖',
+            Cuneiform::SignGa2TimesIshPlusHuPlusAsh => '𒃗',
+            Cuneiform::SignGa2TimesKak => '𒃘',
+            Cuneiform::SignGa2TimesKaskal => '𒃙',
+            Cuneiform::SignGa2TimesKid => '𒃚',
+            Cuneiform::SignGa2TimesKidPlusLal => '𒃛',
+            Cuneiform::SignGa2TimesKu3PlusAn => '𒃜',
+            Cuneiform::SignGa2TimesLa => '𒃝',
+            Cuneiform::SignGa2TimesMePlusEn => '𒃞',
+            Cuneiform::SignGa2TimesMi => '𒃟',
+            Cuneiform::SignGa2TimesNun => '𒃠',
+            Cuneiform::SignGa2TimesNunOverNun => '𒃡',
+            Cuneiform::SignGa2TimesPa => '𒃢',
+            Cuneiform::SignGa2TimesSal => '𒃣',
+            Cuneiform::SignGa2TimesSar => '𒃤',
+            Cuneiform::SignGa2TimesShe => '𒃥',
+            Cuneiform::SignGa2TimesShePlusTur => '𒃦',
+            Cuneiform::SignGa2TimesShid => '𒃧',
+            Cuneiform::SignGa2TimesSum => '𒃨',
+            Cuneiform::SignGa2TimesTak4 => '𒃩',
+            Cuneiform::SignGa2TimesU => '𒃪',
+            Cuneiform::SignGa2TimesUd => '𒃫',
+            Cuneiform::SignGa2TimesUdPlusDu => '𒃬',
+            Cuneiform::SignGa2OverGa2 => '𒃭',
+            Cuneiform::SignGaba => '𒃮',
+            Cuneiform::SignGabaCrossingGaba => '𒃯',
+            Cuneiform::SignGad => '𒃰',
+            Cuneiform::SignGadOverGadGarOverGar => '𒃱',
+            Cuneiform::SignGal => '𒃲',
+            Cuneiform::SignGalGadOverGadGarOverGar => '𒃳',
+            Cuneiform::SignGalam => '𒃴',
+            Cuneiform::SignGam => '𒃵',
+            Cuneiform::SignGan => '𒃶',
+            Cuneiform::SignGan2 => '𒃷',
+            Cuneiform::SignGan2Tenu => '𒃸',
+            Cuneiform::SignGan2OverGan2 => '𒃹',
+            Cuneiform::SignGan2CrossingGan2 => '𒃺',
+            Cuneiform::SignGar => '𒃻',
+            Cuneiform::SignGar3 => '𒃼',
+            Cuneiform::SignGashan => '𒃽',
+            Cuneiform::SignGeshtin => '𒃾',
+            Cuneiform::SignGeshtinTimesKur => '𒃿',
+            Cuneiform::SignGi => '𒄀',
+            Cuneiform::SignGiTimesE => '𒄁',
+            Cuneiform::SignGiTimesU => '𒄂',
+            Cuneiform::SignGiCrossingGi => '𒄃',
+            Cuneiform::SignGi4 => '𒄄',
+            Cuneiform::SignGi4OverGi4 => '𒄅',
+            Cuneiform::SignGi4CrossingGi4 => '𒄆',
+            Cuneiform::SignGidim => '𒄇',
+            Cuneiform::SignGir2 => '𒄈',
+            Cuneiform::SignGir2Gunu => '𒄉',
+            Cuneiform::SignGir3 => '𒄊',
+            Cuneiform::SignGir3TimesAPlusIgi => '𒄋',
+            Cuneiform::SignGir3TimesGan2Tenu => '𒄌',
+            Cuneiform::SignGir3TimesIgi => '𒄍',
+            Cuneiform::SignGir3TimesLuPlusIgi => '𒄎',
+            Cuneiform::SignGir3TimesPa => '𒄏',
+            Cuneiform::SignGisal => '𒄐',
+            Cuneiform::SignGish => '𒄑',
+            Cuneiform::SignGishCrossingGish => '𒄒',
+            Cuneiform::SignGishTimesBad => '𒄓',
+            Cuneiform::SignGishTimesTak4 => '𒄔',
+            Cuneiform::SignGishTenu => '𒄕',
+            Cuneiform::SignGu => '𒄖',
+            Cuneiform::SignGuCrossingGu => '𒄗',
+            Cuneiform::SignGu2 => '𒄘',
+            Cuneiform::SignGu2TimesKak => '𒄙',
+            Cuneiform::SignGu2TimesKakTimesIgiGunu => '𒄚',
+            Cuneiform::SignGu2TimesNun => '𒄛',
+            Cuneiform::SignGu2TimesSalPlusTug2 => '𒄜',
+            Cuneiform::SignGu2Gunu => '𒄝',
+            Cuneiform::SignGud => '𒄞',
+            Cuneiform::SignGudTimesAPlusKur => '𒄟',
+            Cuneiform::SignGudTimesKur => '𒄠',
+            Cuneiform::SignGudOverGudLugal => '𒄡',
+            Cuneiform::SignGul => '𒄢',
+            Cuneiform::SignGum => '𒄣',
+            Cuneiform::SignGumTimesShe => '𒄤',
+            Cuneiform::SignGur => '𒄥',
+            Cuneiform::SignGur7 => '𒄦',
+            Cuneiform::SignGurun => '𒄧',
+            Cuneiform::SignGurush => '𒄨',
+            Cuneiform::SignHa => '𒄩',
+            Cuneiform::SignHaTenu => '𒄪',
+            Cuneiform::SignHaGunu => '𒄫',
+            Cuneiform::SignHal => '𒄬',
+            Cuneiform::SignHi => '𒄭',
+            Cuneiform::SignHiTimesAsh => '𒄮',
+            Cuneiform::SignHiTimesAsh2 => '𒄯',
+            Cuneiform::SignHiTimesBad => '𒄰',
+            Cuneiform::SignHiTimesDish => '𒄱',
+            Cuneiform::SignHiTimesGad => '𒄲',
+            Cuneiform::SignHiTimesKin => '𒄳',
+            Cuneiform::SignHiTimesNun => '𒄴',
+            Cuneiform::SignHiTimesShe => '𒄵',
+            Cuneiform::SignHiTimesU => '𒄶',
+            Cuneiform::SignHu => '𒄷',
+            Cuneiform::SignHub2 => '𒄸',
+            Cuneiform::SignHub2TimesAn => '𒄹',
+            Cuneiform::SignHub2TimesHal => '𒄺',
+            Cuneiform::SignHub2TimesKaskal => '𒄻',
+            Cuneiform::SignHub2TimesLish => '𒄼',
+            Cuneiform::SignHub2TimesUd => '𒄽',
+            Cuneiform::SignHul2 => '𒄾',
+            Cuneiform::SignI => '𒄿',
+            Cuneiform::SignIA => '𒅀',
+            Cuneiform::SignIb => '𒅁',
+            Cuneiform::SignIdim => '𒅂',
+            Cuneiform::SignIdimOverIdimBur => '𒅃',
+            Cuneiform::SignIdimOverIdimSquared => '𒅄',
+            Cuneiform::SignIg => '𒅅',
+            Cuneiform::SignIgi => '𒅆',
+            Cuneiform::SignIgiDib => '𒅇',
+            Cuneiform::SignIgiRi => '𒅈',
+            Cuneiform::SignIgiOverIgiShirOverShirUdOverUd => '𒅉',
+            Cuneiform::SignIgiGunu => '𒅊',
+            Cuneiform::SignIl => '𒅋',
+            Cuneiform::SignIlTimesGan2Tenu => '𒅌',
+            Cuneiform::SignIl2 => '𒅍',
+            Cuneiform::SignIm => '𒅎',
+            Cuneiform::SignImTimesTak4 => '𒅏',
+            Cuneiform::SignImCrossingIm => '𒅐',
+            Cuneiform::SignImOpposingIm => '𒅑',
+            Cuneiform::SignImSquared => '𒅒',
+            Cuneiform::SignImin => '𒅓',
+            Cuneiform::SignIn => '𒅔',
+            Cuneiform::SignIr => '𒅕',
+            Cuneiform::SignIsh => '𒅖',
+            Cuneiform::SignKa => '𒅗',
+            Cuneiform::SignKaTimesA => '𒅘',
+            Cuneiform::SignKaTimesAd => '𒅙',
+            Cuneiform::SignKaTimesAdPlusKu3 => '𒅚',
+            Cuneiform::SignKaTimesAsh2 => '𒅛',
+            Cuneiform::SignKaTimesBad => '𒅜',
+            Cuneiform::SignKaTimesBalag => '𒅝',
+            Cuneiform::SignKaTimesBar => '𒅞',
+            Cuneiform::SignKaTimesBi => '𒅟',
+            Cuneiform::SignKaTimesErin2 => '𒅠',
+            Cuneiform::SignKaTimesEsh2 => '𒅡',
+            Cuneiform::SignKaTimesGa => '𒅢',
+            Cuneiform::SignKaTimesGal => '𒅣',
+            Cuneiform::SignKaTimesGan2Tenu => '𒅤',
+            Cuneiform::SignKaTimesGar => '𒅥',
+            Cuneiform::SignKaTimesGarPlusSha3PlusA => '𒅦',
+            Cuneiform::SignKaTimesGi => '𒅧',
+            Cuneiform::SignKaTimesGir2 => '𒅨',
+            Cuneiform::SignKaTimesGishPlusSar => '𒅩',
+            Cuneiform::SignKaTimesGishCrossingGish => '𒅪',
+            Cuneiform::SignKaTimesGu => '𒅫',
+            Cuneiform::SignKaTimesGur7 => '𒅬',
+            Cuneiform::SignKaTimesIgi => '𒅭',
+            Cuneiform::SignKaTimesIm => '𒅮',
+            Cuneiform::SignKaTimesKak => '𒅯',
+            Cuneiform::SignKaTimesKi => '𒅰',
+            Cuneiform::SignKaTimesKid => '𒅱',
+            Cuneiform::SignKaTimesLi => '𒅲',
+            Cuneiform::SignKaTimesLu => '𒅳',
+            Cuneiform::SignKaTimesMe => '𒅴',
+            Cuneiform::SignKaTimesMePlusDu => '𒅵',
+            Cuneiform::SignKaTimesMePlusGi => '𒅶',
+            Cuneiform::SignKaTimesMePlusTe => '𒅷',
+            Cuneiform::SignKaTimesMi => '𒅸',
+            Cuneiform::SignKaTimesMiPlusNunuz => '𒅹',
+            Cuneiform::SignKaTimesNe => '𒅺',
+            Cuneiform::SignKaTimesNun => '𒅻',
+            Cuneiform::SignKaTimesPi => '𒅼',
+            Cuneiform::SignKaTimesRu => '𒅽',
+            Cuneiform::SignKaTimesSa => '𒅾',
+            Cuneiform::SignKaTimesSar => '𒅿',
+            Cuneiform::SignKaTimesSha => '𒆀',
+            Cuneiform::SignKaTimesShe => '𒆁',
+            Cuneiform::SignKaTimesShid => '𒆂',
+            Cuneiform::SignKaTimesShu => '𒆃',
+            Cuneiform::SignKaTimesSig => '𒆄',
+            Cuneiform::SignKaTimesSuhur => '𒆅',
+            Cuneiform::SignKaTimesTar => '𒆆',
+            Cuneiform::SignKaTimesU => '𒆇',
+            Cuneiform::SignKaTimesU2 => '𒆈',
+            Cuneiform::SignKaTimesUd => '𒆉',
+            Cuneiform::SignKaTimesUmumTimesPa => '𒆊',
+            Cuneiform::SignKaTimesUsh => '𒆋',
+            Cuneiform::SignKaTimesZi => '𒆌',
+            Cuneiform::SignKa2 => '𒆍',
+            Cuneiform::SignKa2CrossingKa2 => '𒆎',
+            Cuneiform::SignKab => '𒆏',
+            Cuneiform::SignKad2 => '𒆐',
+            Cuneiform::SignKad3 => '𒆑',
+            Cuneiform::SignKad4 => '𒆒',
+            Cuneiform::SignKad5 => '𒆓',
+            Cuneiform::SignKad5OverKad5 => '𒆔',
+            Cuneiform::SignKak => '𒆕',
+            Cuneiform::SignKakTimesIgiGunu => '𒆖',
+            Cuneiform::SignKal => '𒆗',
+            Cuneiform::SignKalTimesBad => '𒆘',
+            Cuneiform::SignKalCrossingKal => '𒆙',
+            Cuneiform::SignKam2 => '𒆚',
+            Cuneiform::SignKam4 => '𒆛',
+            Cuneiform::SignKaskal => '𒆜',
+            Cuneiform::SignKaskalLagabTimesUOverLagabTimesU => '𒆝',
+            Cuneiform::SignKaskalOverKaskalLagabTimesUOverLagabTimesU => '𒆞',
+            Cuneiform::SignKesh2 => '𒆟',
+            Cuneiform::SignKi => '𒆠',
+            Cuneiform::SignKiTimesBad => '𒆡',
+            Cuneiform::SignKiTimesU => '𒆢',
+            Cuneiform::SignKiTimesUd => '𒆣',
+            Cuneiform::SignKid => '𒆤',
+            Cuneiform::SignKin => '𒆥',
+            Cuneiform::SignKisal => '𒆦',
+            Cuneiform::SignKish => '𒆧',
+            Cuneiform::SignKisim5 => '𒆨',
+            Cuneiform::SignKisim5OverKisim5 => '𒆩',
+            Cuneiform::SignKu => '𒆪',
+            Cuneiform::SignKuOverHiTimesAsh2KuOverHiTimesAsh2 => '𒆫',
+            Cuneiform::SignKu3 => '𒆬',
+            Cuneiform::SignKu4 => '𒆭',
+            Cuneiform::SignKu4VariantForm => '𒆮',
+            Cuneiform::SignKu7 => '𒆯',
+            Cuneiform::SignKul => '𒆰',
+            Cuneiform::SignKulGunu => '𒆱',
+            Cuneiform::SignKun => '𒆲',
+            Cuneiform::SignKur => '𒆳',
+            Cuneiform::SignKurOpposingKur => '𒆴',
+            Cuneiform::SignKushu2 => '𒆵',
+            Cuneiform::SignKwu318 => '𒆶',
+            Cuneiform::SignLa => '𒆷',
+            Cuneiform::SignLagab => '𒆸',
+            Cuneiform::SignLagabTimesA => '𒆹',
+            Cuneiform::SignLagabTimesAPlusDaPlusHa => '𒆺',
+            Cuneiform::SignLagabTimesAPlusGar => '𒆻',
+            Cuneiform::SignLagabTimesAPlusLal => '𒆼',
+            Cuneiform::SignLagabTimesAl => '𒆽',
+            Cuneiform::SignLagabTimesAn => '𒆾',
+            Cuneiform::SignLagabTimesAshZidaTenu => '𒆿',
+            Cuneiform::SignLagabTimesBad => '𒇀',
+            Cuneiform::SignLagabTimesBi => '𒇁',
+            Cuneiform::SignLagabTimesDar => '𒇂',
+            Cuneiform::SignLagabTimesEn => '𒇃',
+            Cuneiform::SignLagabTimesGa => '𒇄',
+            Cuneiform::SignLagabTimesGar => '𒇅',
+            Cuneiform::SignLagabTimesGud => '𒇆',
+            Cuneiform::SignLagabTimesGudPlusGud => '𒇇',
+            Cuneiform::SignLagabTimesHa => '𒇈',
+            Cuneiform::SignLagabTimesHal => '𒇉',
+            Cuneiform::SignLagabTimesHiTimesNun => '𒇊',
+            Cuneiform::SignLagabTimesIgiGunu => '𒇋',
+            Cuneiform::SignLagabTimesIm => '𒇌',
+            Cuneiform::SignLagabTimesImPlusHa => '𒇍',
+            Cuneiform::SignLagabTimesImPlusLu => '𒇎',
+            Cuneiform::SignLagabTimesKi => '𒇏',
+            Cuneiform::SignLagabTimesKin => '𒇐',
+            Cuneiform::SignLagabTimesKu3 => '𒇑',
+            Cuneiform::SignLagabTimesKul => '𒇒',
+            Cuneiform::SignLagabTimesKulPlusHiPlusA => '𒇓',
+            Cuneiform::SignLagabTimesLagab => '𒇔',
+            Cuneiform::SignLagabTimesLish => '𒇕',
+            Cuneiform::SignLagabTimesLu => '𒇖',
+            Cuneiform::SignLagabTimesLul => '𒇗',
+            Cuneiform::SignLagabTimesMe => '𒇘',
+            Cuneiform::SignLagabTimesMePlusEn => '𒇙',
+            Cuneiform::SignLagabTimesMush => '𒇚',
+            Cuneiform::SignLagabTimesNe => '𒇛',
+            Cuneiform::SignLagabTimesShePlusSum => '𒇜',
+            Cuneiform::SignLagabTimesShitaPlusGishPlusErin2 => '𒇝',
+            Cuneiform::SignLagabTimesShitaPlusGishTenu => '𒇞',
+            Cuneiform::SignLagabTimesShu2 => '𒇟',
+            Cuneiform::SignLagabTimesShu2PlusShu2 => '𒇠',
+            Cuneiform::SignLagabTimesSum => '𒇡',
+            Cuneiform::SignLagabTimesTag => '𒇢',
+            Cuneiform::SignLagabTimesTak4 => '𒇣',
+            Cuneiform::SignLagabTimesTePlusAPlusSuPlusNa => '𒇤',
+            Cuneiform::SignLagabTimesU => '𒇥',
+            Cuneiform::SignLagabTimesUPlusA => '𒇦',
+            Cuneiform::SignLagabTimesUPlusUPlusU => '𒇧',
+            Cuneiform::SignLagabTimesU2PlusAsh => '𒇨',
+            Cuneiform::SignLagabTimesUd => '𒇩',
+            Cuneiform::SignLagabTimesUsh => '𒇪',
+            Cuneiform::SignLagabSquared => '𒇫',
+            Cuneiform::SignLagar => '𒇬',
+            Cuneiform::SignLagarTimesShe => '𒇭',
+            Cuneiform::SignLagarTimesShePlusSum => '𒇮',
+            Cuneiform::SignLagarGunu => '𒇯',
+            Cuneiform::SignLagarGunuOverLagarGunuShe => '𒇰',
+            Cuneiform::SignLahshu => '𒇱',
+            Cuneiform::SignLal => '𒇲',
+            Cuneiform::SignLalTimesLal => '𒇳',
+            Cuneiform::SignLam => '𒇴',
+            Cuneiform::SignLamTimesKur => '𒇵',
+            Cuneiform::SignLamTimesKurPlusRu => '𒇶',
+            Cuneiform::SignLi => '𒇷',
+            Cuneiform::SignLil => '𒇸',
+            Cuneiform::SignLimmu2 => '𒇹',
+            Cuneiform::SignLish => '𒇺',
+            Cuneiform::SignLu => '𒇻',
+            Cuneiform::SignLuTimesBad => '𒇼',
+            Cuneiform::SignLu2 => '𒇽',
+            Cuneiform::SignLu2TimesAl => '𒇾',
+            Cuneiform::SignLu2TimesBad => '𒇿',
+            Cuneiform::SignLu2TimesEsh2 => '𒈀',
+            Cuneiform::SignLu2TimesEsh2Tenu => '𒈁',
+            Cuneiform::SignLu2TimesGan2Tenu => '𒈂',
+            Cuneiform::SignLu2TimesHiTimesBad => '𒈃',
+            Cuneiform::SignLu2TimesIm => '𒈄',
+            Cuneiform::SignLu2TimesKad2 => '𒈅',
+            Cuneiform::SignLu2TimesKad3 => '𒈆',
+            Cuneiform::SignLu2TimesKad3PlusAsh => '𒈇',
+            Cuneiform::SignLu2TimesKi => '𒈈',
+            Cuneiform::SignLu2TimesLaPlusAsh => '𒈉',
+            Cuneiform::SignLu2TimesLagab => '𒈊',
+            Cuneiform::SignLu2TimesMePlusEn => '𒈋',
+            Cuneiform::SignLu2TimesNe => '𒈌',
+            Cuneiform::SignLu2TimesNu => '𒈍',
+            Cuneiform::SignLu2TimesSiPlusAsh => '𒈎',
+            Cuneiform::SignLu2TimesSik2PlusBu => '𒈏',
+            Cuneiform::SignLu2TimesTug2 => '𒈐',
+            Cuneiform::SignLu2Tenu => '𒈑',
+            Cuneiform::SignLu2CrossingLu2 => '𒈒',
+            Cuneiform::SignLu2OpposingLu2 => '𒈓',
+            Cuneiform::SignLu2Squared => '𒈔',
+            Cuneiform::SignLu2Sheshig => '𒈕',
+            Cuneiform::SignLu3 => '𒈖',
+            Cuneiform::SignLugal => '𒈗',
+            Cuneiform::SignLugalOverLugal => '𒈘',
+            Cuneiform::SignLugalOpposingLugal => '𒈙',
+            Cuneiform::SignLugalSheshig => '𒈚',
+            Cuneiform::SignLuh => '𒈛',
+            Cuneiform::SignLul => '𒈜',
+            Cuneiform::SignLum => '𒈝',
+            Cuneiform::SignLumOverLum => '𒈞',
+            Cuneiform::SignLumOverLumGarOverGar => '𒈟',
+            Cuneiform::SignMa => '𒈠',
+            Cuneiform::SignMaTimesTak4 => '𒈡',
+            Cuneiform::SignMaGunu => '𒈢',
+            Cuneiform::SignMa2 => '𒈣',
+            Cuneiform::SignMah => '𒈤',
+            Cuneiform::SignMar => '𒈥',
+            Cuneiform::SignMash => '𒈦',
+            Cuneiform::SignMash2 => '𒈧',
+            Cuneiform::SignMe => '𒈨',
+            Cuneiform::SignMes => '𒈩',
+            Cuneiform::SignMi => '𒈪',
+            Cuneiform::SignMin => '𒈫',
+            Cuneiform::SignMu => '𒈬',
+            Cuneiform::SignMuOverMu => '𒈭',
+            Cuneiform::SignMug => '𒈮',
+            Cuneiform::SignMugGunu => '𒈯',
+            Cuneiform::SignMunsub => '𒈰',
+            Cuneiform::SignMurgu2 => '𒈱',
+            Cuneiform::SignMush => '𒈲',
+            Cuneiform::SignMushTimesA => '𒈳',
+            Cuneiform::SignMushTimesKur => '𒈴',
+            Cuneiform::SignMushTimesZa => '𒈵',
+            Cuneiform::SignMushOverMush => '𒈶',
+            Cuneiform::SignMushOverMushTimesAPlusNa => '𒈷',
+            Cuneiform::SignMushCrossingMush => '𒈸',
+            Cuneiform::SignMush3 => '𒈹',
+            Cuneiform::SignMush3TimesA => '𒈺',
+            Cuneiform::SignMush3TimesAPlusDi => '𒈻',
+            Cuneiform::SignMush3TimesDi => '𒈼',
+            Cuneiform::SignMush3Gunu => '𒈽',
+            Cuneiform::SignNa => '𒈾',
+            Cuneiform::SignNa2 => '𒈿',
+            Cuneiform::SignNaga => '𒉀',
+            Cuneiform::SignNagaInverted => '𒉁',
+            Cuneiform::SignNagaTimesShuTenu => '𒉂',
+            Cuneiform::SignNagaOpposingNaga => '𒉃',
+            Cuneiform::SignNagar => '𒉄',
+            Cuneiform::SignNamNutillu => '𒉅',
+            Cuneiform::SignNam => '𒉆',
+            Cuneiform::SignNam2 => '𒉇',
+            Cuneiform::SignNe => '𒉈',
+            Cuneiform::SignNeTimesA => '𒉉',
+            Cuneiform::SignNeTimesUd => '𒉊',
+            Cuneiform::SignNeSheshig => '𒉋',
+            Cuneiform::SignNi => '𒉌',
+            Cuneiform::SignNiTimesE => '𒉍',
+            Cuneiform::SignNi2 => '𒉎',
+            Cuneiform::SignNim => '𒉏',
+            Cuneiform::SignNimTimesGan2Tenu => '𒉐',
+            Cuneiform::SignNimTimesGarPlusGan2Tenu => '𒉑',
+            Cuneiform::SignNinda2 => '𒉒',
+            Cuneiform::SignNinda2TimesAn => '𒉓',
+            Cuneiform::SignNinda2TimesAsh => '𒉔',
+            Cuneiform::SignNinda2TimesAshPlusAsh => '𒉕',
+            Cuneiform::SignNinda2TimesGud => '𒉖',
+            Cuneiform::SignNinda2TimesMePlusGan2Tenu => '𒉗',
+            Cuneiform::SignNinda2TimesNe => '𒉘',
+            Cuneiform::SignNinda2TimesNun => '𒉙',
+            Cuneiform::SignNinda2TimesShe => '𒉚',
+            Cuneiform::SignNinda2TimesShePlusAAn => '𒉛',
+            Cuneiform::SignNinda2TimesShePlusAsh => '𒉜',
+            Cuneiform::SignNinda2TimesShePlusAshPlusAsh => '𒉝',
+            Cuneiform::SignNinda2TimesU2PlusAsh => '𒉞',
+            Cuneiform::SignNinda2TimesUsh => '𒉟',
+            Cuneiform::SignNisag => '𒉠',
+            Cuneiform::SignNu => '𒉡',
+            Cuneiform::SignNu11 => '𒉢',
+            Cuneiform::SignNun => '𒉣',
+            Cuneiform::SignNunLagarTimesGar => '𒉤',
+            Cuneiform::SignNunLagarTimesMash => '𒉥',
+            Cuneiform::SignNunLagarTimesSal => '𒉦',
+            Cuneiform::SignNunLagarTimesSalOverNunLagarTimesSal => '𒉧',
+            Cuneiform::SignNunLagarTimesUsh => '𒉨',
+            Cuneiform::SignNunTenu => '𒉩',
+            Cuneiform::SignNunOverNun => '𒉪',
+            Cuneiform::SignNunCrossingNun => '𒉫',
+            Cuneiform::SignNunCrossingNunLagarOverLagar => '𒉬',
+            Cuneiform::SignNunuz => '𒉭',
+            Cuneiform::SignNunuzAb2TimesAshgab => '𒉮',
+            Cuneiform::SignNunuzAb2TimesBi => '𒉯',
+            Cuneiform::SignNunuzAb2TimesDug => '𒉰',
+            Cuneiform::SignNunuzAb2TimesGud => '𒉱',
+            Cuneiform::SignNunuzAb2TimesIgiGunu => '𒉲',
+            Cuneiform::SignNunuzAb2TimesKad3 => '𒉳',
+            Cuneiform::SignNunuzAb2TimesLa => '𒉴',
+            Cuneiform::SignNunuzAb2TimesNe => '𒉵',
+            Cuneiform::SignNunuzAb2TimesSila3 => '𒉶',
+            Cuneiform::SignNunuzAb2TimesU2 => '𒉷',
+            Cuneiform::SignNunuzKisim5TimesBi => '𒉸',
+            Cuneiform::SignNunuzKisim5TimesBiU => '𒉹',
+            Cuneiform::SignPa => '𒉺',
+            Cuneiform::SignPad => '𒉻',
+            Cuneiform::SignPan => '𒉼',
+            Cuneiform::SignPap => '𒉽',
+            Cuneiform::SignPesh2 => '𒉾',
+            Cuneiform::SignPi => '𒉿',
+            Cuneiform::SignPiTimesA => '𒊀',
+            Cuneiform::SignPiTimesAb => '𒊁',
+            Cuneiform::SignPiTimesBi => '𒊂',
+            Cuneiform::SignPiTimesBu => '𒊃',
+            Cuneiform::SignPiTimesE => '𒊄',
+            Cuneiform::SignPiTimesI => '𒊅',
+            Cuneiform::SignPiTimesIb => '𒊆',
+            Cuneiform::SignPiTimesU => '𒊇',
+            Cuneiform::SignPiTimesU2 => '𒊈',
+            Cuneiform::SignPiCrossingPi => '𒊉',
+            Cuneiform::SignPirig => '𒊊',
+            Cuneiform::SignPirigTimesKal => '𒊋',
+            Cuneiform::SignPirigTimesUd => '𒊌',
+            Cuneiform::SignPirigTimesZa => '𒊍',
+            Cuneiform::SignPirigOpposingPirig => '𒊎',
+            Cuneiform::SignRa => '𒊏',
+            Cuneiform::SignRab => '𒊐',
+            Cuneiform::SignRi => '𒊑',
+            Cuneiform::SignRu => '𒊒',
+            Cuneiform::SignSa => '𒊓',
+            Cuneiform::SignSagNutillu => '𒊔',
+            Cuneiform::SignSag => '𒊕',
+            Cuneiform::SignSagTimesA => '𒊖',
+            Cuneiform::SignSagTimesDu => '𒊗',
+            Cuneiform::SignSagTimesDub => '𒊘',
+            Cuneiform::SignSagTimesHa => '𒊙',
+            Cuneiform::SignSagTimesKak => '𒊚',
+            Cuneiform::SignSagTimesKur => '𒊛',
+            Cuneiform::SignSagTimesLum => '𒊜',
+            Cuneiform::SignSagTimesMi => '𒊝',
+            Cuneiform::SignSagTimesNun => '𒊞',
+            Cuneiform::SignSagTimesSal => '𒊟',
+            Cuneiform::SignSagTimesShid => '𒊠',
+            Cuneiform::SignSagTimesTab => '𒊡',
+            Cuneiform::SignSagTimesU2 => '𒊢',
+            Cuneiform::SignSagTimesUb => '𒊣',
+            Cuneiform::SignSagTimesUm => '𒊤',
+            Cuneiform::SignSagTimesUr => '𒊥',
+            Cuneiform::SignSagTimesUsh => '𒊦',
+            Cuneiform::SignSagOverSag => '𒊧',
+            Cuneiform::SignSagGunu => '𒊨',
+            Cuneiform::SignSal => '𒊩',
+            Cuneiform::SignSalLagabTimesAsh2 => '𒊪',
+            Cuneiform::SignSanga2 => '𒊫',
+            Cuneiform::SignSar => '𒊬',
+            Cuneiform::SignSha => '𒊭',
+            Cuneiform::SignSha3 => '𒊮',
+            Cuneiform::SignSha3TimesA => '𒊯',
+            Cuneiform::SignSha3TimesBad => '𒊰',
+            Cuneiform::SignSha3TimesGish => '𒊱',
+            Cuneiform::SignSha3TimesNe => '𒊲',
+            Cuneiform::SignSha3TimesShu2 => '𒊳',
+            Cuneiform::SignSha3TimesTur => '𒊴',
+            Cuneiform::SignSha3TimesU => '𒊵',
+            Cuneiform::SignSha3TimesUPlusA => '𒊶',
+            Cuneiform::SignSha6 => '𒊷',
+            Cuneiform::SignShab6 => '𒊸',
+            Cuneiform::SignShar2 => '𒊹',
+            Cuneiform::SignShe => '𒊺',
+            Cuneiform::SignSheHu => '𒊻',
+            Cuneiform::SignSheOverSheGadOverGadGarOverGar => '𒊼',
+            Cuneiform::SignSheOverSheTabOverTabGarOverGar => '𒊽',
+            Cuneiform::SignSheg9 => '𒊾',
+            Cuneiform::SignShen => '𒊿',
+            Cuneiform::SignShesh => '𒋀',
+            Cuneiform::SignShesh2 => '𒋁',
+            Cuneiform::SignSheshlam => '𒋂',
+            Cuneiform::SignShid => '𒋃',
+            Cuneiform::SignShidTimesA => '𒋄',
+            Cuneiform::SignShidTimesIm => '𒋅',
+            Cuneiform::SignShim => '𒋆',
+            Cuneiform::SignShimTimesA => '𒋇',
+            Cuneiform::SignShimTimesBal => '𒋈',
+            Cuneiform::SignShimTimesBulug => '𒋉',
+            Cuneiform::SignShimTimesDin => '𒋊',
+            Cuneiform::SignShimTimesGar => '𒋋',
+            Cuneiform::SignShimTimesIgi => '𒋌',
+            Cuneiform::SignShimTimesIgiGunu => '𒋍',
+            Cuneiform::SignShimTimesKushu2 => '𒋎',
+            Cuneiform::SignShimTimesLul => '𒋏',
+            Cuneiform::SignShimTimesMug => '𒋐',
+            Cuneiform::SignShimTimesSal => '𒋑',
+            Cuneiform::SignShinig => '𒋒',
+            Cuneiform::SignShir => '𒋓',
+            Cuneiform::SignShirTenu => '𒋔',
+            Cuneiform::SignShirOverShirBurOverBur => '𒋕',
+            Cuneiform::SignShita => '𒋖',
+            Cuneiform::SignShu => '𒋗',
+            Cuneiform::SignShuOverInvertedShu => '𒋘',
+            Cuneiform::SignShu2 => '𒋙',
+            Cuneiform::SignShubur => '𒋚',
+            Cuneiform::SignSi => '𒋛',
+            Cuneiform::SignSiGunu => '𒋜',
+            Cuneiform::SignSig => '𒋝',
+            Cuneiform::SignSig4 => '𒋞',
+            Cuneiform::SignSig4OverSig4Shu2 => '𒋟',
+            Cuneiform::SignSik2 => '𒋠',
+            Cuneiform::SignSila3 => '𒋡',
+            Cuneiform::SignSu => '𒋢',
+            Cuneiform::SignSuOverSu => '𒋣',
+            Cuneiform::SignSud => '𒋤',
+            Cuneiform::SignSud2 => '𒋥',
+            Cuneiform::SignSuhur => '𒋦',
+            Cuneiform::SignSum => '𒋧',
+            Cuneiform::SignSumash => '𒋨',
+            Cuneiform::SignSur => '𒋩',
+            Cuneiform::SignSur9 => '𒋪',
+            Cuneiform::SignTa => '𒋫',
+            Cuneiform::SignTaAsterisk => '𒋬',
+            Cuneiform::SignTaTimesHi => '𒋭',
+            Cuneiform::SignTaTimesMi => '𒋮',
+            Cuneiform::SignTaGunu => '𒋯',
+            Cuneiform::SignTab => '𒋰',
+            Cuneiform::SignTabOverTabNiOverNiDishOverDish => '𒋱',
+            Cuneiform::SignTabSquared => '𒋲',
+            Cuneiform::SignTag => '𒋳',
+            Cuneiform::SignTagTimesBi => '𒋴',
+            Cuneiform::SignTagTimesGud => '𒋵',
+            Cuneiform::SignTagTimesShe => '𒋶',
+            Cuneiform::SignTagTimesShu => '𒋷',
+            Cuneiform::SignTagTimesTug2 => '𒋸',
+            Cuneiform::SignTagTimesUd => '𒋹',
+            Cuneiform::SignTak4 => '𒋺',
+            Cuneiform::SignTar => '𒋻',
+            Cuneiform::SignTe => '𒋼',
+            Cuneiform::SignTeGunu => '𒋽',
+            Cuneiform::SignTi => '𒋾',
+            Cuneiform::SignTiTenu => '𒋿',
+            Cuneiform::SignTil => '𒌀',
+            Cuneiform::SignTir => '𒌁',
+            Cuneiform::SignTirTimesTak4 => '𒌂',
+            Cuneiform::SignTirOverTir => '𒌃',
+            Cuneiform::SignTirOverTirGadOverGadGarOverGar => '𒌄',
+            Cuneiform::SignTu => '𒌅',
+            Cuneiform::SignTug2 => '𒌆',
+            Cuneiform::SignTuk => '𒌇',
+            Cuneiform::SignTum => '𒌈',
+            Cuneiform::SignTur => '𒌉',
+            Cuneiform::SignTurOverTurZaOverZa => '𒌊',
+            Cuneiform::SignU => '𒌋',
+            Cuneiform::SignUGud => '𒌌',
+            Cuneiform::SignUUU => '𒌍',
+            Cuneiform::SignUOverUPaOverPaGarOverGar => '𒌎',
+            Cuneiform::SignUOverUSurOverSur => '𒌏',
+            Cuneiform::SignUOverUUReversedOverUReversed => '𒌐',
+            Cuneiform::SignU2 => '𒌑',
+            Cuneiform::SignUb => '𒌒',
+            Cuneiform::SignUd => '𒌓',
+            Cuneiform::SignUdKushu2 => '𒌔',
+            Cuneiform::SignUdTimesBad => '𒌕',
+            Cuneiform::SignUdTimesMi => '𒌖',
+            Cuneiform::SignUdTimesUPlusUPlusU => '𒌗',
+            Cuneiform::SignUdTimesUPlusUPlusUGunu => '𒌘',
+            Cuneiform::SignUdGunu => '𒌙',
+            Cuneiform::SignUdSheshig => '𒌚',
+            Cuneiform::SignUdSheshigTimesBad => '𒌛',
+            Cuneiform::SignUdug => '𒌜',
+            Cuneiform::SignUm => '𒌝',
+            Cuneiform::SignUmTimesLagab => '𒌞',
+            Cuneiform::SignUmTimesMePlusDa => '𒌟',
+            Cuneiform::SignUmTimesSha3 => '𒌠',
+            Cuneiform::SignUmTimesU => '𒌡',
+            Cuneiform::SignUmbin => '𒌢',
+            Cuneiform::SignUmum => '𒌣',
+            Cuneiform::SignUmumTimesKaskal => '𒌤',
+            Cuneiform::SignUmumTimesPa => '𒌥',
+            Cuneiform::SignUn => '𒌦',
+            Cuneiform::SignUnGunu => '𒌧',
+            Cuneiform::SignUr => '𒌨',
+            Cuneiform::SignUrCrossingUr => '𒌩',
+            Cuneiform::SignUrSheshig => '𒌪',
+            Cuneiform::SignUr2 => '𒌫',
+            Cuneiform::SignUr2TimesAPlusHa => '𒌬',
+            Cuneiform::SignUr2TimesAPlusNa => '𒌭',
+            Cuneiform::SignUr2TimesAl => '𒌮',
+            Cuneiform::SignUr2TimesHa => '𒌯',
+            Cuneiform::SignUr2TimesNun => '𒌰',
+            Cuneiform::SignUr2TimesU2 => '𒌱',
+            Cuneiform::SignUr2TimesU2PlusAsh => '𒌲',
+            Cuneiform::SignUr2TimesU2PlusBi => '𒌳',
+            Cuneiform::SignUr4 => '𒌴',
+            Cuneiform::SignUri => '𒌵',
+            Cuneiform::SignUri3 => '𒌶',
+            Cuneiform::SignUru => '𒌷',
+            Cuneiform::SignUruTimesA => '𒌸',
+            Cuneiform::SignUruTimesAshgab => '𒌹',
+            Cuneiform::SignUruTimesBar => '𒌺',
+            Cuneiform::SignUruTimesDun => '𒌻',
+            Cuneiform::SignUruTimesGa => '𒌼',
+            Cuneiform::SignUruTimesGal => '𒌽',
+            Cuneiform::SignUruTimesGan2Tenu => '𒌾',
+            Cuneiform::SignUruTimesGar => '𒌿',
+            Cuneiform::SignUruTimesGu => '𒍀',
+            Cuneiform::SignUruTimesHa => '𒍁',
+            Cuneiform::SignUruTimesIgi => '𒍂',
+            Cuneiform::SignUruTimesIm => '𒍃',
+            Cuneiform::SignUruTimesIsh => '𒍄',
+            Cuneiform::SignUruTimesKi => '𒍅',
+            Cuneiform::SignUruTimesLum => '𒍆',
+            Cuneiform::SignUruTimesMin => '𒍇',
+            Cuneiform::SignUruTimesPa => '𒍈',
+            Cuneiform::SignUruTimesShe => '𒍉',
+            Cuneiform::SignUruTimesSig4 => '𒍊',
+            Cuneiform::SignUruTimesTu => '𒍋',
+            Cuneiform::SignUruTimesUPlusGud => '𒍌',
+            Cuneiform::SignUruTimesUd => '𒍍',
+            Cuneiform::SignUruTimesUruda => '𒍎',
+            Cuneiform::SignUruda => '𒍏',
+            Cuneiform::SignUrudaTimesU => '𒍐',
+            Cuneiform::SignUsh => '𒍑',
+            Cuneiform::SignUshTimesA => '𒍒',
+            Cuneiform::SignUshTimesKu => '𒍓',
+            Cuneiform::SignUshTimesKur => '𒍔',
+            Cuneiform::SignUshTimesTak4 => '𒍕',
+            Cuneiform::SignUshx => '𒍖',
+            Cuneiform::SignUsh2 => '𒍗',
+            Cuneiform::SignUshumx => '𒍘',
+            Cuneiform::SignUtuki => '𒍙',
+            Cuneiform::SignUz3 => '𒍚',
+            Cuneiform::SignUz3TimesKaskal => '𒍛',
+            Cuneiform::SignUzu => '𒍜',
+            Cuneiform::SignZa => '𒍝',
+            Cuneiform::SignZaTenu => '𒍞',
+            Cuneiform::SignZaSquaredTimesKur => '𒍟',
+            Cuneiform::SignZag => '𒍠',
+            Cuneiform::SignZamx => '𒍡',
+            Cuneiform::SignZe2 => '𒍢',
+            Cuneiform::SignZi => '𒍣',
+            Cuneiform::SignZiOverZi => '𒍤',
+            Cuneiform::SignZi3 => '𒍥',
+            Cuneiform::SignZib => '𒍦',
+            Cuneiform::SignZibKabaTenu => '𒍧',
+            Cuneiform::SignZig => '𒍨',
+            Cuneiform::SignZiz2 => '𒍩',
+            Cuneiform::SignZu => '𒍪',
+            Cuneiform::SignZu5 => '𒍫',
+            Cuneiform::SignZu5TimesA => '𒍬',
+            Cuneiform::SignZubur => '𒍭',
+            Cuneiform::SignZum => '𒍮',
+            Cuneiform::SignKapElamite => '𒍯',
+            Cuneiform::SignAbTimesNun => '𒍰',
+            Cuneiform::SignAb2TimesA => '𒍱',
+            Cuneiform::SignAmarTimesKug => '𒍲',
+            Cuneiform::SignDagKisim5TimesU2PlusMash => '𒍳',
+            Cuneiform::SignDag3 => '𒍴',
+            Cuneiform::SignDishPlusShu => '𒍵',
+            Cuneiform::SignDubTimesShe => '𒍶',
+            Cuneiform::SignEzenTimesGud => '𒍷',
+            Cuneiform::SignEzenTimesShe => '𒍸',
+            Cuneiform::SignGa2TimesAnPlusKakPlusA => '𒍹',
+            Cuneiform::SignGa2TimesAsh2 => '𒍺',
+            Cuneiform::SignGe22 => '𒍻',
+            Cuneiform::SignGig => '𒍼',
+            Cuneiform::SignHush => '𒍽',
+            Cuneiform::SignKaTimesAnshe => '𒍾',
+            Cuneiform::SignKaTimesAsh3 => '𒍿',
+            Cuneiform::SignKaTimesGish => '𒎀',
+            Cuneiform::SignKaTimesGud => '𒎁',
+            Cuneiform::SignKaTimesHiTimesAsh2 => '𒎂',
+            Cuneiform::SignKaTimesLum => '𒎃',
+            Cuneiform::SignKaTimesPa => '𒎄',
+            Cuneiform::SignKaTimesShul => '𒎅',
+            Cuneiform::SignKaTimesTu => '𒎆',
+            Cuneiform::SignKaTimesUr2 => '𒎇',
+            Cuneiform::SignLagabTimesGi => '𒎈',
+            Cuneiform::SignLu2SheshigTimesBad => '𒎉',
+            Cuneiform::SignLu2TimesEsh2PlusLal => '𒎊',
+            Cuneiform::SignLu2TimesShu => '𒎋',
+            Cuneiform::SignMesh => '𒎌',
+            Cuneiform::SignMush3TimesZa => '𒎍',
+            Cuneiform::SignNa4 => '𒎎',
+            Cuneiform::SignNin => '𒎏',
+            Cuneiform::SignNin9 => '𒎐',
+            Cuneiform::SignNinda2TimesBal => '𒎑',
+            Cuneiform::SignNinda2TimesGi => '𒎒',
+            Cuneiform::SignNu11RotatedNinetyDegrees => '𒎓',
+            Cuneiform::SignPesh2Asterisk => '𒎔',
+            Cuneiform::SignPir2 => '𒎕',
+            Cuneiform::SignSagTimesIgiGunu => '𒎖',
+            Cuneiform::SignTi2 => '𒎗',
+            Cuneiform::SignUmTimesMe => '𒎘',
+            Cuneiform::SignUU => '𒎙',
         }
     }
 }
@@ -4628,930 +2780,929 @@ impl Into<char> for Cuneiform {
 impl std::convert::TryFrom<char> for Cuneiform {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_A => Ok(Cuneiform::SignA),
-            SIGN_A_TIMES_A => Ok(Cuneiform::SignATimesA),
-            SIGN_A_TIMES_BAD => Ok(Cuneiform::SignATimesBad),
-            SIGN_A_TIMES_GAN2_TENU => Ok(Cuneiform::SignATimesGan2Tenu),
-            SIGN_A_TIMES_HA => Ok(Cuneiform::SignATimesHa),
-            SIGN_A_TIMES_IGI => Ok(Cuneiform::SignATimesIgi),
-            SIGN_A_TIMES_LAGAR_GUNU => Ok(Cuneiform::SignATimesLagarGunu),
-            SIGN_A_TIMES_MUSH => Ok(Cuneiform::SignATimesMush),
-            SIGN_A_TIMES_SAG => Ok(Cuneiform::SignATimesSag),
-            SIGN_A2 => Ok(Cuneiform::SignA2),
-            SIGN_AB => Ok(Cuneiform::SignAb),
-            SIGN_AB_TIMES_ASH2 => Ok(Cuneiform::SignAbTimesAsh2),
-            SIGN_AB_TIMES_DUN3_GUNU => Ok(Cuneiform::SignAbTimesDun3Gunu),
-            SIGN_AB_TIMES_GAL => Ok(Cuneiform::SignAbTimesGal),
-            SIGN_AB_TIMES_GAN2_TENU => Ok(Cuneiform::SignAbTimesGan2Tenu),
-            SIGN_AB_TIMES_HA => Ok(Cuneiform::SignAbTimesHa),
-            SIGN_AB_TIMES_IGI_GUNU => Ok(Cuneiform::SignAbTimesIgiGunu),
-            SIGN_AB_TIMES_IMIN => Ok(Cuneiform::SignAbTimesImin),
-            SIGN_AB_TIMES_LAGAB => Ok(Cuneiform::SignAbTimesLagab),
-            SIGN_AB_TIMES_SHESH => Ok(Cuneiform::SignAbTimesShesh),
-            SIGN_AB_TIMES_U_PLUS_U_PLUS_U => Ok(Cuneiform::SignAbTimesUPlusUPlusU),
-            SIGN_AB_GUNU => Ok(Cuneiform::SignAbGunu),
-            SIGN_AB2 => Ok(Cuneiform::SignAb2),
-            SIGN_AB2_TIMES_BALAG => Ok(Cuneiform::SignAb2TimesBalag),
-            SIGN_AB2_TIMES_GAN2_TENU => Ok(Cuneiform::SignAb2TimesGan2Tenu),
-            SIGN_AB2_TIMES_ME_PLUS_EN => Ok(Cuneiform::SignAb2TimesMePlusEn),
-            SIGN_AB2_TIMES_SHA3 => Ok(Cuneiform::SignAb2TimesSha3),
-            SIGN_AB2_TIMES_TAK4 => Ok(Cuneiform::SignAb2TimesTak4),
-            SIGN_AD => Ok(Cuneiform::SignAd),
-            SIGN_AK => Ok(Cuneiform::SignAk),
-            SIGN_AK_TIMES_ERIN2 => Ok(Cuneiform::SignAkTimesErin2),
-            SIGN_AK_TIMES_SHITA_PLUS_GISH => Ok(Cuneiform::SignAkTimesShitaPlusGish),
-            SIGN_AL => Ok(Cuneiform::SignAl),
-            SIGN_AL_TIMES_AL => Ok(Cuneiform::SignAlTimesAl),
-            SIGN_AL_TIMES_DIM2 => Ok(Cuneiform::SignAlTimesDim2),
-            SIGN_AL_TIMES_GISH => Ok(Cuneiform::SignAlTimesGish),
-            SIGN_AL_TIMES_HA => Ok(Cuneiform::SignAlTimesHa),
-            SIGN_AL_TIMES_KAD3 => Ok(Cuneiform::SignAlTimesKad3),
-            SIGN_AL_TIMES_KI => Ok(Cuneiform::SignAlTimesKi),
-            SIGN_AL_TIMES_SHE => Ok(Cuneiform::SignAlTimesShe),
-            SIGN_AL_TIMES_USH => Ok(Cuneiform::SignAlTimesUsh),
-            SIGN_ALAN => Ok(Cuneiform::SignAlan),
-            SIGN_ALEPH => Ok(Cuneiform::SignAleph),
-            SIGN_AMAR => Ok(Cuneiform::SignAmar),
-            SIGN_AMAR_TIMES_SHE => Ok(Cuneiform::SignAmarTimesShe),
-            SIGN_AN => Ok(Cuneiform::SignAn),
-            SIGN_AN_OVER_AN => Ok(Cuneiform::SignAnOverAn),
-            SIGN_AN_THREE_TIMES => Ok(Cuneiform::SignAnThreeTimes),
-            SIGN_AN_PLUS_NAGA_OPPOSING_AN_PLUS_NAGA => Ok(Cuneiform::SignAnPlusNagaOpposingAnPlusNaga),
-            SIGN_AN_PLUS_NAGA_SQUARED => Ok(Cuneiform::SignAnPlusNagaSquared),
-            SIGN_ANSHE => Ok(Cuneiform::SignAnshe),
-            SIGN_APIN => Ok(Cuneiform::SignApin),
-            SIGN_ARAD => Ok(Cuneiform::SignArad),
-            SIGN_ARAD_TIMES_KUR => Ok(Cuneiform::SignAradTimesKur),
-            SIGN_ARKAB => Ok(Cuneiform::SignArkab),
-            SIGN_ASAL2 => Ok(Cuneiform::SignAsal2),
-            SIGN_ASH => Ok(Cuneiform::SignAsh),
-            SIGN_ASH_ZIDA_TENU => Ok(Cuneiform::SignAshZidaTenu),
-            SIGN_ASH_KABA_TENU => Ok(Cuneiform::SignAshKabaTenu),
-            SIGN_ASH_OVER_ASH_TUG2_OVER_TUG2_TUG2_OVER_TUG2_PAP => Ok(Cuneiform::SignAshOverAshTug2OverTug2Tug2OverTug2Pap),
-            SIGN_ASH_OVER_ASH_OVER_ASH => Ok(Cuneiform::SignAshOverAshOverAsh),
-            SIGN_ASH_OVER_ASH_OVER_ASH_CROSSING_ASH_OVER_ASH_OVER_ASH => Ok(Cuneiform::SignAshOverAshOverAshCrossingAshOverAshOverAsh),
-            SIGN_ASH2 => Ok(Cuneiform::SignAsh2),
-            SIGN_ASHGAB => Ok(Cuneiform::SignAshgab),
-            SIGN_BA => Ok(Cuneiform::SignBa),
-            SIGN_BAD => Ok(Cuneiform::SignBad),
-            SIGN_BAG3 => Ok(Cuneiform::SignBag3),
-            SIGN_BAHAR2 => Ok(Cuneiform::SignBahar2),
-            SIGN_BAL => Ok(Cuneiform::SignBal),
-            SIGN_BAL_OVER_BAL => Ok(Cuneiform::SignBalOverBal),
-            SIGN_BALAG => Ok(Cuneiform::SignBalag),
-            SIGN_BAR => Ok(Cuneiform::SignBar),
-            SIGN_BARA2 => Ok(Cuneiform::SignBara2),
-            SIGN_BI => Ok(Cuneiform::SignBi),
-            SIGN_BI_TIMES_A => Ok(Cuneiform::SignBiTimesA),
-            SIGN_BI_TIMES_GAR => Ok(Cuneiform::SignBiTimesGar),
-            SIGN_BI_TIMES_IGI_GUNU => Ok(Cuneiform::SignBiTimesIgiGunu),
-            SIGN_BU => Ok(Cuneiform::SignBu),
-            SIGN_BU_OVER_BU_AB => Ok(Cuneiform::SignBuOverBuAb),
-            SIGN_BU_OVER_BU_UN => Ok(Cuneiform::SignBuOverBuUn),
-            SIGN_BU_CROSSING_BU => Ok(Cuneiform::SignBuCrossingBu),
-            SIGN_BULUG => Ok(Cuneiform::SignBulug),
-            SIGN_BULUG_OVER_BULUG => Ok(Cuneiform::SignBulugOverBulug),
-            SIGN_BUR => Ok(Cuneiform::SignBur),
-            SIGN_BUR2 => Ok(Cuneiform::SignBur2),
-            SIGN_DA => Ok(Cuneiform::SignDa),
-            SIGN_DAG => Ok(Cuneiform::SignDag),
-            SIGN_DAG_KISIM5_TIMES_A_PLUS_MASH => Ok(Cuneiform::SignDagKisim5TimesAPlusMash),
-            SIGN_DAG_KISIM5_TIMES_AMAR => Ok(Cuneiform::SignDagKisim5TimesAmar),
-            SIGN_DAG_KISIM5_TIMES_BALAG => Ok(Cuneiform::SignDagKisim5TimesBalag),
-            SIGN_DAG_KISIM5_TIMES_BI => Ok(Cuneiform::SignDagKisim5TimesBi),
-            SIGN_DAG_KISIM5_TIMES_GA => Ok(Cuneiform::SignDagKisim5TimesGa),
-            SIGN_DAG_KISIM5_TIMES_GA_PLUS_MASH => Ok(Cuneiform::SignDagKisim5TimesGaPlusMash),
-            SIGN_DAG_KISIM5_TIMES_GI => Ok(Cuneiform::SignDagKisim5TimesGi),
-            SIGN_DAG_KISIM5_TIMES_GIR2 => Ok(Cuneiform::SignDagKisim5TimesGir2),
-            SIGN_DAG_KISIM5_TIMES_GUD => Ok(Cuneiform::SignDagKisim5TimesGud),
-            SIGN_DAG_KISIM5_TIMES_HA => Ok(Cuneiform::SignDagKisim5TimesHa),
-            SIGN_DAG_KISIM5_TIMES_IR => Ok(Cuneiform::SignDagKisim5TimesIr),
-            SIGN_DAG_KISIM5_TIMES_IR_PLUS_LU => Ok(Cuneiform::SignDagKisim5TimesIrPlusLu),
-            SIGN_DAG_KISIM5_TIMES_KAK => Ok(Cuneiform::SignDagKisim5TimesKak),
-            SIGN_DAG_KISIM5_TIMES_LA => Ok(Cuneiform::SignDagKisim5TimesLa),
-            SIGN_DAG_KISIM5_TIMES_LU => Ok(Cuneiform::SignDagKisim5TimesLu),
-            SIGN_DAG_KISIM5_TIMES_LU_PLUS_MASH2 => Ok(Cuneiform::SignDagKisim5TimesLuPlusMash2),
-            SIGN_DAG_KISIM5_TIMES_LUM => Ok(Cuneiform::SignDagKisim5TimesLum),
-            SIGN_DAG_KISIM5_TIMES_NE => Ok(Cuneiform::SignDagKisim5TimesNe),
-            SIGN_DAG_KISIM5_TIMES_PAP_PLUS_PAP => Ok(Cuneiform::SignDagKisim5TimesPapPlusPap),
-            SIGN_DAG_KISIM5_TIMES_SI => Ok(Cuneiform::SignDagKisim5TimesSi),
-            SIGN_DAG_KISIM5_TIMES_TAK4 => Ok(Cuneiform::SignDagKisim5TimesTak4),
-            SIGN_DAG_KISIM5_TIMES_U2_PLUS_GIR2 => Ok(Cuneiform::SignDagKisim5TimesU2PlusGir2),
-            SIGN_DAG_KISIM5_TIMES_USH => Ok(Cuneiform::SignDagKisim5TimesUsh),
-            SIGN_DAM => Ok(Cuneiform::SignDam),
-            SIGN_DAR => Ok(Cuneiform::SignDar),
-            SIGN_DARA3 => Ok(Cuneiform::SignDara3),
-            SIGN_DARA4 => Ok(Cuneiform::SignDara4),
-            SIGN_DI => Ok(Cuneiform::SignDi),
-            SIGN_DIB => Ok(Cuneiform::SignDib),
-            SIGN_DIM => Ok(Cuneiform::SignDim),
-            SIGN_DIM_TIMES_SHE => Ok(Cuneiform::SignDimTimesShe),
-            SIGN_DIM2 => Ok(Cuneiform::SignDim2),
-            SIGN_DIN => Ok(Cuneiform::SignDin),
-            SIGN_DIN_KASKAL_U_GUNU_DISH => Ok(Cuneiform::SignDinKaskalUGunuDish),
-            SIGN_DISH => Ok(Cuneiform::SignDish),
-            SIGN_DU => Ok(Cuneiform::SignDu),
-            SIGN_DU_OVER_DU => Ok(Cuneiform::SignDuOverDu),
-            SIGN_DU_GUNU => Ok(Cuneiform::SignDuGunu),
-            SIGN_DU_SHESHIG => Ok(Cuneiform::SignDuSheshig),
-            SIGN_DUB => Ok(Cuneiform::SignDub),
-            SIGN_DUB_TIMES_ESH2 => Ok(Cuneiform::SignDubTimesEsh2),
-            SIGN_DUB2 => Ok(Cuneiform::SignDub2),
-            SIGN_DUG => Ok(Cuneiform::SignDug),
-            SIGN_DUGUD => Ok(Cuneiform::SignDugud),
-            SIGN_DUH => Ok(Cuneiform::SignDuh),
-            SIGN_DUN => Ok(Cuneiform::SignDun),
-            SIGN_DUN3 => Ok(Cuneiform::SignDun3),
-            SIGN_DUN3_GUNU => Ok(Cuneiform::SignDun3Gunu),
-            SIGN_DUN3_GUNU_GUNU => Ok(Cuneiform::SignDun3GunuGunu),
-            SIGN_DUN4 => Ok(Cuneiform::SignDun4),
-            SIGN_DUR2 => Ok(Cuneiform::SignDur2),
-            SIGN_E => Ok(Cuneiform::SignE),
-            SIGN_E_TIMES_PAP => Ok(Cuneiform::SignETimesPap),
-            SIGN_E_OVER_E_NUN_OVER_NUN => Ok(Cuneiform::SignEOverENunOverNun),
-            SIGN_E2 => Ok(Cuneiform::SignE2),
-            SIGN_E2_TIMES_A_PLUS_HA_PLUS_DA => Ok(Cuneiform::SignE2TimesAPlusHaPlusDa),
-            SIGN_E2_TIMES_GAR => Ok(Cuneiform::SignE2TimesGar),
-            SIGN_E2_TIMES_MI => Ok(Cuneiform::SignE2TimesMi),
-            SIGN_E2_TIMES_SAL => Ok(Cuneiform::SignE2TimesSal),
-            SIGN_E2_TIMES_SHE => Ok(Cuneiform::SignE2TimesShe),
-            SIGN_E2_TIMES_U => Ok(Cuneiform::SignE2TimesU),
-            SIGN_EDIN => Ok(Cuneiform::SignEdin),
-            SIGN_EGIR => Ok(Cuneiform::SignEgir),
-            SIGN_EL => Ok(Cuneiform::SignEl),
-            SIGN_EN => Ok(Cuneiform::SignEn),
-            SIGN_EN_TIMES_GAN2 => Ok(Cuneiform::SignEnTimesGan2),
-            SIGN_EN_TIMES_GAN2_TENU => Ok(Cuneiform::SignEnTimesGan2Tenu),
-            SIGN_EN_TIMES_ME => Ok(Cuneiform::SignEnTimesMe),
-            SIGN_EN_CROSSING_EN => Ok(Cuneiform::SignEnCrossingEn),
-            SIGN_EN_OPPOSING_EN => Ok(Cuneiform::SignEnOpposingEn),
-            SIGN_EN_SQUARED => Ok(Cuneiform::SignEnSquared),
-            SIGN_EREN => Ok(Cuneiform::SignEren),
-            SIGN_ERIN2 => Ok(Cuneiform::SignErin2),
-            SIGN_ESH2 => Ok(Cuneiform::SignEsh2),
-            SIGN_EZEN => Ok(Cuneiform::SignEzen),
-            SIGN_EZEN_TIMES_A => Ok(Cuneiform::SignEzenTimesA),
-            SIGN_EZEN_TIMES_A_PLUS_LAL => Ok(Cuneiform::SignEzenTimesAPlusLal),
-            SIGN_EZEN_TIMES_A_PLUS_LAL_TIMES_LAL => Ok(Cuneiform::SignEzenTimesAPlusLalTimesLal),
-            SIGN_EZEN_TIMES_AN => Ok(Cuneiform::SignEzenTimesAn),
-            SIGN_EZEN_TIMES_BAD => Ok(Cuneiform::SignEzenTimesBad),
-            SIGN_EZEN_TIMES_DUN3_GUNU => Ok(Cuneiform::SignEzenTimesDun3Gunu),
-            SIGN_EZEN_TIMES_DUN3_GUNU_GUNU => Ok(Cuneiform::SignEzenTimesDun3GunuGunu),
-            SIGN_EZEN_TIMES_HA => Ok(Cuneiform::SignEzenTimesHa),
-            SIGN_EZEN_TIMES_HA_GUNU => Ok(Cuneiform::SignEzenTimesHaGunu),
-            SIGN_EZEN_TIMES_IGI_GUNU => Ok(Cuneiform::SignEzenTimesIgiGunu),
-            SIGN_EZEN_TIMES_KASKAL => Ok(Cuneiform::SignEzenTimesKaskal),
-            SIGN_EZEN_TIMES_KASKAL_SQUARED => Ok(Cuneiform::SignEzenTimesKaskalSquared),
-            SIGN_EZEN_TIMES_KU3 => Ok(Cuneiform::SignEzenTimesKu3),
-            SIGN_EZEN_TIMES_LA => Ok(Cuneiform::SignEzenTimesLa),
-            SIGN_EZEN_TIMES_LAL_TIMES_LAL => Ok(Cuneiform::SignEzenTimesLalTimesLal),
-            SIGN_EZEN_TIMES_LI => Ok(Cuneiform::SignEzenTimesLi),
-            SIGN_EZEN_TIMES_LU => Ok(Cuneiform::SignEzenTimesLu),
-            SIGN_EZEN_TIMES_U2 => Ok(Cuneiform::SignEzenTimesU2),
-            SIGN_EZEN_TIMES_UD => Ok(Cuneiform::SignEzenTimesUd),
-            SIGN_GA => Ok(Cuneiform::SignGa),
-            SIGN_GA_GUNU => Ok(Cuneiform::SignGaGunu),
-            SIGN_GA2 => Ok(Cuneiform::SignGa2),
-            SIGN_GA2_TIMES_A_PLUS_DA_PLUS_HA => Ok(Cuneiform::SignGa2TimesAPlusDaPlusHa),
-            SIGN_GA2_TIMES_A_PLUS_HA => Ok(Cuneiform::SignGa2TimesAPlusHa),
-            SIGN_GA2_TIMES_A_PLUS_IGI => Ok(Cuneiform::SignGa2TimesAPlusIgi),
-            SIGN_GA2_TIMES_AB2_TENU_PLUS_TAB => Ok(Cuneiform::SignGa2TimesAb2TenuPlusTab),
-            SIGN_GA2_TIMES_AN => Ok(Cuneiform::SignGa2TimesAn),
-            SIGN_GA2_TIMES_ASH => Ok(Cuneiform::SignGa2TimesAsh),
-            SIGN_GA2_TIMES_ASH2_PLUS_GAL => Ok(Cuneiform::SignGa2TimesAsh2PlusGal),
-            SIGN_GA2_TIMES_BAD => Ok(Cuneiform::SignGa2TimesBad),
-            SIGN_GA2_TIMES_BAR_PLUS_RA => Ok(Cuneiform::SignGa2TimesBarPlusRa),
-            SIGN_GA2_TIMES_BUR => Ok(Cuneiform::SignGa2TimesBur),
-            SIGN_GA2_TIMES_BUR_PLUS_RA => Ok(Cuneiform::SignGa2TimesBurPlusRa),
-            SIGN_GA2_TIMES_DA => Ok(Cuneiform::SignGa2TimesDa),
-            SIGN_GA2_TIMES_DI => Ok(Cuneiform::SignGa2TimesDi),
-            SIGN_GA2_TIMES_DIM_TIMES_SHE => Ok(Cuneiform::SignGa2TimesDimTimesShe),
-            SIGN_GA2_TIMES_DUB => Ok(Cuneiform::SignGa2TimesDub),
-            SIGN_GA2_TIMES_EL => Ok(Cuneiform::SignGa2TimesEl),
-            SIGN_GA2_TIMES_EL_PLUS_LA => Ok(Cuneiform::SignGa2TimesElPlusLa),
-            SIGN_GA2_TIMES_EN => Ok(Cuneiform::SignGa2TimesEn),
-            SIGN_GA2_TIMES_EN_TIMES_GAN2_TENU => Ok(Cuneiform::SignGa2TimesEnTimesGan2Tenu),
-            SIGN_GA2_TIMES_GAN2_TENU => Ok(Cuneiform::SignGa2TimesGan2Tenu),
-            SIGN_GA2_TIMES_GAR => Ok(Cuneiform::SignGa2TimesGar),
-            SIGN_GA2_TIMES_GI => Ok(Cuneiform::SignGa2TimesGi),
-            SIGN_GA2_TIMES_GI4 => Ok(Cuneiform::SignGa2TimesGi4),
-            SIGN_GA2_TIMES_GI4_PLUS_A => Ok(Cuneiform::SignGa2TimesGi4PlusA),
-            SIGN_GA2_TIMES_GIR2_PLUS_SU => Ok(Cuneiform::SignGa2TimesGir2PlusSu),
-            SIGN_GA2_TIMES_HA_PLUS_LU_PLUS_ESH2 => Ok(Cuneiform::SignGa2TimesHaPlusLuPlusEsh2),
-            SIGN_GA2_TIMES_HAL => Ok(Cuneiform::SignGa2TimesHal),
-            SIGN_GA2_TIMES_HAL_PLUS_LA => Ok(Cuneiform::SignGa2TimesHalPlusLa),
-            SIGN_GA2_TIMES_HI_PLUS_LI => Ok(Cuneiform::SignGa2TimesHiPlusLi),
-            SIGN_GA2_TIMES_HUB2 => Ok(Cuneiform::SignGa2TimesHub2),
-            SIGN_GA2_TIMES_IGI_GUNU => Ok(Cuneiform::SignGa2TimesIgiGunu),
-            SIGN_GA2_TIMES_ISH_PLUS_HU_PLUS_ASH => Ok(Cuneiform::SignGa2TimesIshPlusHuPlusAsh),
-            SIGN_GA2_TIMES_KAK => Ok(Cuneiform::SignGa2TimesKak),
-            SIGN_GA2_TIMES_KASKAL => Ok(Cuneiform::SignGa2TimesKaskal),
-            SIGN_GA2_TIMES_KID => Ok(Cuneiform::SignGa2TimesKid),
-            SIGN_GA2_TIMES_KID_PLUS_LAL => Ok(Cuneiform::SignGa2TimesKidPlusLal),
-            SIGN_GA2_TIMES_KU3_PLUS_AN => Ok(Cuneiform::SignGa2TimesKu3PlusAn),
-            SIGN_GA2_TIMES_LA => Ok(Cuneiform::SignGa2TimesLa),
-            SIGN_GA2_TIMES_ME_PLUS_EN => Ok(Cuneiform::SignGa2TimesMePlusEn),
-            SIGN_GA2_TIMES_MI => Ok(Cuneiform::SignGa2TimesMi),
-            SIGN_GA2_TIMES_NUN => Ok(Cuneiform::SignGa2TimesNun),
-            SIGN_GA2_TIMES_NUN_OVER_NUN => Ok(Cuneiform::SignGa2TimesNunOverNun),
-            SIGN_GA2_TIMES_PA => Ok(Cuneiform::SignGa2TimesPa),
-            SIGN_GA2_TIMES_SAL => Ok(Cuneiform::SignGa2TimesSal),
-            SIGN_GA2_TIMES_SAR => Ok(Cuneiform::SignGa2TimesSar),
-            SIGN_GA2_TIMES_SHE => Ok(Cuneiform::SignGa2TimesShe),
-            SIGN_GA2_TIMES_SHE_PLUS_TUR => Ok(Cuneiform::SignGa2TimesShePlusTur),
-            SIGN_GA2_TIMES_SHID => Ok(Cuneiform::SignGa2TimesShid),
-            SIGN_GA2_TIMES_SUM => Ok(Cuneiform::SignGa2TimesSum),
-            SIGN_GA2_TIMES_TAK4 => Ok(Cuneiform::SignGa2TimesTak4),
-            SIGN_GA2_TIMES_U => Ok(Cuneiform::SignGa2TimesU),
-            SIGN_GA2_TIMES_UD => Ok(Cuneiform::SignGa2TimesUd),
-            SIGN_GA2_TIMES_UD_PLUS_DU => Ok(Cuneiform::SignGa2TimesUdPlusDu),
-            SIGN_GA2_OVER_GA2 => Ok(Cuneiform::SignGa2OverGa2),
-            SIGN_GABA => Ok(Cuneiform::SignGaba),
-            SIGN_GABA_CROSSING_GABA => Ok(Cuneiform::SignGabaCrossingGaba),
-            SIGN_GAD => Ok(Cuneiform::SignGad),
-            SIGN_GAD_OVER_GAD_GAR_OVER_GAR => Ok(Cuneiform::SignGadOverGadGarOverGar),
-            SIGN_GAL => Ok(Cuneiform::SignGal),
-            SIGN_GAL_GAD_OVER_GAD_GAR_OVER_GAR => Ok(Cuneiform::SignGalGadOverGadGarOverGar),
-            SIGN_GALAM => Ok(Cuneiform::SignGalam),
-            SIGN_GAM => Ok(Cuneiform::SignGam),
-            SIGN_GAN => Ok(Cuneiform::SignGan),
-            SIGN_GAN2 => Ok(Cuneiform::SignGan2),
-            SIGN_GAN2_TENU => Ok(Cuneiform::SignGan2Tenu),
-            SIGN_GAN2_OVER_GAN2 => Ok(Cuneiform::SignGan2OverGan2),
-            SIGN_GAN2_CROSSING_GAN2 => Ok(Cuneiform::SignGan2CrossingGan2),
-            SIGN_GAR => Ok(Cuneiform::SignGar),
-            SIGN_GAR3 => Ok(Cuneiform::SignGar3),
-            SIGN_GASHAN => Ok(Cuneiform::SignGashan),
-            SIGN_GESHTIN => Ok(Cuneiform::SignGeshtin),
-            SIGN_GESHTIN_TIMES_KUR => Ok(Cuneiform::SignGeshtinTimesKur),
-            SIGN_GI => Ok(Cuneiform::SignGi),
-            SIGN_GI_TIMES_E => Ok(Cuneiform::SignGiTimesE),
-            SIGN_GI_TIMES_U => Ok(Cuneiform::SignGiTimesU),
-            SIGN_GI_CROSSING_GI => Ok(Cuneiform::SignGiCrossingGi),
-            SIGN_GI4 => Ok(Cuneiform::SignGi4),
-            SIGN_GI4_OVER_GI4 => Ok(Cuneiform::SignGi4OverGi4),
-            SIGN_GI4_CROSSING_GI4 => Ok(Cuneiform::SignGi4CrossingGi4),
-            SIGN_GIDIM => Ok(Cuneiform::SignGidim),
-            SIGN_GIR2 => Ok(Cuneiform::SignGir2),
-            SIGN_GIR2_GUNU => Ok(Cuneiform::SignGir2Gunu),
-            SIGN_GIR3 => Ok(Cuneiform::SignGir3),
-            SIGN_GIR3_TIMES_A_PLUS_IGI => Ok(Cuneiform::SignGir3TimesAPlusIgi),
-            SIGN_GIR3_TIMES_GAN2_TENU => Ok(Cuneiform::SignGir3TimesGan2Tenu),
-            SIGN_GIR3_TIMES_IGI => Ok(Cuneiform::SignGir3TimesIgi),
-            SIGN_GIR3_TIMES_LU_PLUS_IGI => Ok(Cuneiform::SignGir3TimesLuPlusIgi),
-            SIGN_GIR3_TIMES_PA => Ok(Cuneiform::SignGir3TimesPa),
-            SIGN_GISAL => Ok(Cuneiform::SignGisal),
-            SIGN_GISH => Ok(Cuneiform::SignGish),
-            SIGN_GISH_CROSSING_GISH => Ok(Cuneiform::SignGishCrossingGish),
-            SIGN_GISH_TIMES_BAD => Ok(Cuneiform::SignGishTimesBad),
-            SIGN_GISH_TIMES_TAK4 => Ok(Cuneiform::SignGishTimesTak4),
-            SIGN_GISH_TENU => Ok(Cuneiform::SignGishTenu),
-            SIGN_GU => Ok(Cuneiform::SignGu),
-            SIGN_GU_CROSSING_GU => Ok(Cuneiform::SignGuCrossingGu),
-            SIGN_GU2 => Ok(Cuneiform::SignGu2),
-            SIGN_GU2_TIMES_KAK => Ok(Cuneiform::SignGu2TimesKak),
-            SIGN_GU2_TIMES_KAK_TIMES_IGI_GUNU => Ok(Cuneiform::SignGu2TimesKakTimesIgiGunu),
-            SIGN_GU2_TIMES_NUN => Ok(Cuneiform::SignGu2TimesNun),
-            SIGN_GU2_TIMES_SAL_PLUS_TUG2 => Ok(Cuneiform::SignGu2TimesSalPlusTug2),
-            SIGN_GU2_GUNU => Ok(Cuneiform::SignGu2Gunu),
-            SIGN_GUD => Ok(Cuneiform::SignGud),
-            SIGN_GUD_TIMES_A_PLUS_KUR => Ok(Cuneiform::SignGudTimesAPlusKur),
-            SIGN_GUD_TIMES_KUR => Ok(Cuneiform::SignGudTimesKur),
-            SIGN_GUD_OVER_GUD_LUGAL => Ok(Cuneiform::SignGudOverGudLugal),
-            SIGN_GUL => Ok(Cuneiform::SignGul),
-            SIGN_GUM => Ok(Cuneiform::SignGum),
-            SIGN_GUM_TIMES_SHE => Ok(Cuneiform::SignGumTimesShe),
-            SIGN_GUR => Ok(Cuneiform::SignGur),
-            SIGN_GUR7 => Ok(Cuneiform::SignGur7),
-            SIGN_GURUN => Ok(Cuneiform::SignGurun),
-            SIGN_GURUSH => Ok(Cuneiform::SignGurush),
-            SIGN_HA => Ok(Cuneiform::SignHa),
-            SIGN_HA_TENU => Ok(Cuneiform::SignHaTenu),
-            SIGN_HA_GUNU => Ok(Cuneiform::SignHaGunu),
-            SIGN_HAL => Ok(Cuneiform::SignHal),
-            SIGN_HI => Ok(Cuneiform::SignHi),
-            SIGN_HI_TIMES_ASH => Ok(Cuneiform::SignHiTimesAsh),
-            SIGN_HI_TIMES_ASH2 => Ok(Cuneiform::SignHiTimesAsh2),
-            SIGN_HI_TIMES_BAD => Ok(Cuneiform::SignHiTimesBad),
-            SIGN_HI_TIMES_DISH => Ok(Cuneiform::SignHiTimesDish),
-            SIGN_HI_TIMES_GAD => Ok(Cuneiform::SignHiTimesGad),
-            SIGN_HI_TIMES_KIN => Ok(Cuneiform::SignHiTimesKin),
-            SIGN_HI_TIMES_NUN => Ok(Cuneiform::SignHiTimesNun),
-            SIGN_HI_TIMES_SHE => Ok(Cuneiform::SignHiTimesShe),
-            SIGN_HI_TIMES_U => Ok(Cuneiform::SignHiTimesU),
-            SIGN_HU => Ok(Cuneiform::SignHu),
-            SIGN_HUB2 => Ok(Cuneiform::SignHub2),
-            SIGN_HUB2_TIMES_AN => Ok(Cuneiform::SignHub2TimesAn),
-            SIGN_HUB2_TIMES_HAL => Ok(Cuneiform::SignHub2TimesHal),
-            SIGN_HUB2_TIMES_KASKAL => Ok(Cuneiform::SignHub2TimesKaskal),
-            SIGN_HUB2_TIMES_LISH => Ok(Cuneiform::SignHub2TimesLish),
-            SIGN_HUB2_TIMES_UD => Ok(Cuneiform::SignHub2TimesUd),
-            SIGN_HUL2 => Ok(Cuneiform::SignHul2),
-            SIGN_I => Ok(Cuneiform::SignI),
-            SIGN_I_A => Ok(Cuneiform::SignIA),
-            SIGN_IB => Ok(Cuneiform::SignIb),
-            SIGN_IDIM => Ok(Cuneiform::SignIdim),
-            SIGN_IDIM_OVER_IDIM_BUR => Ok(Cuneiform::SignIdimOverIdimBur),
-            SIGN_IDIM_OVER_IDIM_SQUARED => Ok(Cuneiform::SignIdimOverIdimSquared),
-            SIGN_IG => Ok(Cuneiform::SignIg),
-            SIGN_IGI => Ok(Cuneiform::SignIgi),
-            SIGN_IGI_DIB => Ok(Cuneiform::SignIgiDib),
-            SIGN_IGI_RI => Ok(Cuneiform::SignIgiRi),
-            SIGN_IGI_OVER_IGI_SHIR_OVER_SHIR_UD_OVER_UD => Ok(Cuneiform::SignIgiOverIgiShirOverShirUdOverUd),
-            SIGN_IGI_GUNU => Ok(Cuneiform::SignIgiGunu),
-            SIGN_IL => Ok(Cuneiform::SignIl),
-            SIGN_IL_TIMES_GAN2_TENU => Ok(Cuneiform::SignIlTimesGan2Tenu),
-            SIGN_IL2 => Ok(Cuneiform::SignIl2),
-            SIGN_IM => Ok(Cuneiform::SignIm),
-            SIGN_IM_TIMES_TAK4 => Ok(Cuneiform::SignImTimesTak4),
-            SIGN_IM_CROSSING_IM => Ok(Cuneiform::SignImCrossingIm),
-            SIGN_IM_OPPOSING_IM => Ok(Cuneiform::SignImOpposingIm),
-            SIGN_IM_SQUARED => Ok(Cuneiform::SignImSquared),
-            SIGN_IMIN => Ok(Cuneiform::SignImin),
-            SIGN_IN => Ok(Cuneiform::SignIn),
-            SIGN_IR => Ok(Cuneiform::SignIr),
-            SIGN_ISH => Ok(Cuneiform::SignIsh),
-            SIGN_KA => Ok(Cuneiform::SignKa),
-            SIGN_KA_TIMES_A => Ok(Cuneiform::SignKaTimesA),
-            SIGN_KA_TIMES_AD => Ok(Cuneiform::SignKaTimesAd),
-            SIGN_KA_TIMES_AD_PLUS_KU3 => Ok(Cuneiform::SignKaTimesAdPlusKu3),
-            SIGN_KA_TIMES_ASH2 => Ok(Cuneiform::SignKaTimesAsh2),
-            SIGN_KA_TIMES_BAD => Ok(Cuneiform::SignKaTimesBad),
-            SIGN_KA_TIMES_BALAG => Ok(Cuneiform::SignKaTimesBalag),
-            SIGN_KA_TIMES_BAR => Ok(Cuneiform::SignKaTimesBar),
-            SIGN_KA_TIMES_BI => Ok(Cuneiform::SignKaTimesBi),
-            SIGN_KA_TIMES_ERIN2 => Ok(Cuneiform::SignKaTimesErin2),
-            SIGN_KA_TIMES_ESH2 => Ok(Cuneiform::SignKaTimesEsh2),
-            SIGN_KA_TIMES_GA => Ok(Cuneiform::SignKaTimesGa),
-            SIGN_KA_TIMES_GAL => Ok(Cuneiform::SignKaTimesGal),
-            SIGN_KA_TIMES_GAN2_TENU => Ok(Cuneiform::SignKaTimesGan2Tenu),
-            SIGN_KA_TIMES_GAR => Ok(Cuneiform::SignKaTimesGar),
-            SIGN_KA_TIMES_GAR_PLUS_SHA3_PLUS_A => Ok(Cuneiform::SignKaTimesGarPlusSha3PlusA),
-            SIGN_KA_TIMES_GI => Ok(Cuneiform::SignKaTimesGi),
-            SIGN_KA_TIMES_GIR2 => Ok(Cuneiform::SignKaTimesGir2),
-            SIGN_KA_TIMES_GISH_PLUS_SAR => Ok(Cuneiform::SignKaTimesGishPlusSar),
-            SIGN_KA_TIMES_GISH_CROSSING_GISH => Ok(Cuneiform::SignKaTimesGishCrossingGish),
-            SIGN_KA_TIMES_GU => Ok(Cuneiform::SignKaTimesGu),
-            SIGN_KA_TIMES_GUR7 => Ok(Cuneiform::SignKaTimesGur7),
-            SIGN_KA_TIMES_IGI => Ok(Cuneiform::SignKaTimesIgi),
-            SIGN_KA_TIMES_IM => Ok(Cuneiform::SignKaTimesIm),
-            SIGN_KA_TIMES_KAK => Ok(Cuneiform::SignKaTimesKak),
-            SIGN_KA_TIMES_KI => Ok(Cuneiform::SignKaTimesKi),
-            SIGN_KA_TIMES_KID => Ok(Cuneiform::SignKaTimesKid),
-            SIGN_KA_TIMES_LI => Ok(Cuneiform::SignKaTimesLi),
-            SIGN_KA_TIMES_LU => Ok(Cuneiform::SignKaTimesLu),
-            SIGN_KA_TIMES_ME => Ok(Cuneiform::SignKaTimesMe),
-            SIGN_KA_TIMES_ME_PLUS_DU => Ok(Cuneiform::SignKaTimesMePlusDu),
-            SIGN_KA_TIMES_ME_PLUS_GI => Ok(Cuneiform::SignKaTimesMePlusGi),
-            SIGN_KA_TIMES_ME_PLUS_TE => Ok(Cuneiform::SignKaTimesMePlusTe),
-            SIGN_KA_TIMES_MI => Ok(Cuneiform::SignKaTimesMi),
-            SIGN_KA_TIMES_MI_PLUS_NUNUZ => Ok(Cuneiform::SignKaTimesMiPlusNunuz),
-            SIGN_KA_TIMES_NE => Ok(Cuneiform::SignKaTimesNe),
-            SIGN_KA_TIMES_NUN => Ok(Cuneiform::SignKaTimesNun),
-            SIGN_KA_TIMES_PI => Ok(Cuneiform::SignKaTimesPi),
-            SIGN_KA_TIMES_RU => Ok(Cuneiform::SignKaTimesRu),
-            SIGN_KA_TIMES_SA => Ok(Cuneiform::SignKaTimesSa),
-            SIGN_KA_TIMES_SAR => Ok(Cuneiform::SignKaTimesSar),
-            SIGN_KA_TIMES_SHA => Ok(Cuneiform::SignKaTimesSha),
-            SIGN_KA_TIMES_SHE => Ok(Cuneiform::SignKaTimesShe),
-            SIGN_KA_TIMES_SHID => Ok(Cuneiform::SignKaTimesShid),
-            SIGN_KA_TIMES_SHU => Ok(Cuneiform::SignKaTimesShu),
-            SIGN_KA_TIMES_SIG => Ok(Cuneiform::SignKaTimesSig),
-            SIGN_KA_TIMES_SUHUR => Ok(Cuneiform::SignKaTimesSuhur),
-            SIGN_KA_TIMES_TAR => Ok(Cuneiform::SignKaTimesTar),
-            SIGN_KA_TIMES_U => Ok(Cuneiform::SignKaTimesU),
-            SIGN_KA_TIMES_U2 => Ok(Cuneiform::SignKaTimesU2),
-            SIGN_KA_TIMES_UD => Ok(Cuneiform::SignKaTimesUd),
-            SIGN_KA_TIMES_UMUM_TIMES_PA => Ok(Cuneiform::SignKaTimesUmumTimesPa),
-            SIGN_KA_TIMES_USH => Ok(Cuneiform::SignKaTimesUsh),
-            SIGN_KA_TIMES_ZI => Ok(Cuneiform::SignKaTimesZi),
-            SIGN_KA2 => Ok(Cuneiform::SignKa2),
-            SIGN_KA2_CROSSING_KA2 => Ok(Cuneiform::SignKa2CrossingKa2),
-            SIGN_KAB => Ok(Cuneiform::SignKab),
-            SIGN_KAD2 => Ok(Cuneiform::SignKad2),
-            SIGN_KAD3 => Ok(Cuneiform::SignKad3),
-            SIGN_KAD4 => Ok(Cuneiform::SignKad4),
-            SIGN_KAD5 => Ok(Cuneiform::SignKad5),
-            SIGN_KAD5_OVER_KAD5 => Ok(Cuneiform::SignKad5OverKad5),
-            SIGN_KAK => Ok(Cuneiform::SignKak),
-            SIGN_KAK_TIMES_IGI_GUNU => Ok(Cuneiform::SignKakTimesIgiGunu),
-            SIGN_KAL => Ok(Cuneiform::SignKal),
-            SIGN_KAL_TIMES_BAD => Ok(Cuneiform::SignKalTimesBad),
-            SIGN_KAL_CROSSING_KAL => Ok(Cuneiform::SignKalCrossingKal),
-            SIGN_KAM2 => Ok(Cuneiform::SignKam2),
-            SIGN_KAM4 => Ok(Cuneiform::SignKam4),
-            SIGN_KASKAL => Ok(Cuneiform::SignKaskal),
-            SIGN_KASKAL_LAGAB_TIMES_U_OVER_LAGAB_TIMES_U => Ok(Cuneiform::SignKaskalLagabTimesUOverLagabTimesU),
-            SIGN_KASKAL_OVER_KASKAL_LAGAB_TIMES_U_OVER_LAGAB_TIMES_U => Ok(Cuneiform::SignKaskalOverKaskalLagabTimesUOverLagabTimesU),
-            SIGN_KESH2 => Ok(Cuneiform::SignKesh2),
-            SIGN_KI => Ok(Cuneiform::SignKi),
-            SIGN_KI_TIMES_BAD => Ok(Cuneiform::SignKiTimesBad),
-            SIGN_KI_TIMES_U => Ok(Cuneiform::SignKiTimesU),
-            SIGN_KI_TIMES_UD => Ok(Cuneiform::SignKiTimesUd),
-            SIGN_KID => Ok(Cuneiform::SignKid),
-            SIGN_KIN => Ok(Cuneiform::SignKin),
-            SIGN_KISAL => Ok(Cuneiform::SignKisal),
-            SIGN_KISH => Ok(Cuneiform::SignKish),
-            SIGN_KISIM5 => Ok(Cuneiform::SignKisim5),
-            SIGN_KISIM5_OVER_KISIM5 => Ok(Cuneiform::SignKisim5OverKisim5),
-            SIGN_KU => Ok(Cuneiform::SignKu),
-            SIGN_KU_OVER_HI_TIMES_ASH2_KU_OVER_HI_TIMES_ASH2 => Ok(Cuneiform::SignKuOverHiTimesAsh2KuOverHiTimesAsh2),
-            SIGN_KU3 => Ok(Cuneiform::SignKu3),
-            SIGN_KU4 => Ok(Cuneiform::SignKu4),
-            SIGN_KU4_VARIANT_FORM => Ok(Cuneiform::SignKu4VariantForm),
-            SIGN_KU7 => Ok(Cuneiform::SignKu7),
-            SIGN_KUL => Ok(Cuneiform::SignKul),
-            SIGN_KUL_GUNU => Ok(Cuneiform::SignKulGunu),
-            SIGN_KUN => Ok(Cuneiform::SignKun),
-            SIGN_KUR => Ok(Cuneiform::SignKur),
-            SIGN_KUR_OPPOSING_KUR => Ok(Cuneiform::SignKurOpposingKur),
-            SIGN_KUSHU2 => Ok(Cuneiform::SignKushu2),
-            SIGN_KWU318 => Ok(Cuneiform::SignKwu318),
-            SIGN_LA => Ok(Cuneiform::SignLa),
-            SIGN_LAGAB => Ok(Cuneiform::SignLagab),
-            SIGN_LAGAB_TIMES_A => Ok(Cuneiform::SignLagabTimesA),
-            SIGN_LAGAB_TIMES_A_PLUS_DA_PLUS_HA => Ok(Cuneiform::SignLagabTimesAPlusDaPlusHa),
-            SIGN_LAGAB_TIMES_A_PLUS_GAR => Ok(Cuneiform::SignLagabTimesAPlusGar),
-            SIGN_LAGAB_TIMES_A_PLUS_LAL => Ok(Cuneiform::SignLagabTimesAPlusLal),
-            SIGN_LAGAB_TIMES_AL => Ok(Cuneiform::SignLagabTimesAl),
-            SIGN_LAGAB_TIMES_AN => Ok(Cuneiform::SignLagabTimesAn),
-            SIGN_LAGAB_TIMES_ASH_ZIDA_TENU => Ok(Cuneiform::SignLagabTimesAshZidaTenu),
-            SIGN_LAGAB_TIMES_BAD => Ok(Cuneiform::SignLagabTimesBad),
-            SIGN_LAGAB_TIMES_BI => Ok(Cuneiform::SignLagabTimesBi),
-            SIGN_LAGAB_TIMES_DAR => Ok(Cuneiform::SignLagabTimesDar),
-            SIGN_LAGAB_TIMES_EN => Ok(Cuneiform::SignLagabTimesEn),
-            SIGN_LAGAB_TIMES_GA => Ok(Cuneiform::SignLagabTimesGa),
-            SIGN_LAGAB_TIMES_GAR => Ok(Cuneiform::SignLagabTimesGar),
-            SIGN_LAGAB_TIMES_GUD => Ok(Cuneiform::SignLagabTimesGud),
-            SIGN_LAGAB_TIMES_GUD_PLUS_GUD => Ok(Cuneiform::SignLagabTimesGudPlusGud),
-            SIGN_LAGAB_TIMES_HA => Ok(Cuneiform::SignLagabTimesHa),
-            SIGN_LAGAB_TIMES_HAL => Ok(Cuneiform::SignLagabTimesHal),
-            SIGN_LAGAB_TIMES_HI_TIMES_NUN => Ok(Cuneiform::SignLagabTimesHiTimesNun),
-            SIGN_LAGAB_TIMES_IGI_GUNU => Ok(Cuneiform::SignLagabTimesIgiGunu),
-            SIGN_LAGAB_TIMES_IM => Ok(Cuneiform::SignLagabTimesIm),
-            SIGN_LAGAB_TIMES_IM_PLUS_HA => Ok(Cuneiform::SignLagabTimesImPlusHa),
-            SIGN_LAGAB_TIMES_IM_PLUS_LU => Ok(Cuneiform::SignLagabTimesImPlusLu),
-            SIGN_LAGAB_TIMES_KI => Ok(Cuneiform::SignLagabTimesKi),
-            SIGN_LAGAB_TIMES_KIN => Ok(Cuneiform::SignLagabTimesKin),
-            SIGN_LAGAB_TIMES_KU3 => Ok(Cuneiform::SignLagabTimesKu3),
-            SIGN_LAGAB_TIMES_KUL => Ok(Cuneiform::SignLagabTimesKul),
-            SIGN_LAGAB_TIMES_KUL_PLUS_HI_PLUS_A => Ok(Cuneiform::SignLagabTimesKulPlusHiPlusA),
-            SIGN_LAGAB_TIMES_LAGAB => Ok(Cuneiform::SignLagabTimesLagab),
-            SIGN_LAGAB_TIMES_LISH => Ok(Cuneiform::SignLagabTimesLish),
-            SIGN_LAGAB_TIMES_LU => Ok(Cuneiform::SignLagabTimesLu),
-            SIGN_LAGAB_TIMES_LUL => Ok(Cuneiform::SignLagabTimesLul),
-            SIGN_LAGAB_TIMES_ME => Ok(Cuneiform::SignLagabTimesMe),
-            SIGN_LAGAB_TIMES_ME_PLUS_EN => Ok(Cuneiform::SignLagabTimesMePlusEn),
-            SIGN_LAGAB_TIMES_MUSH => Ok(Cuneiform::SignLagabTimesMush),
-            SIGN_LAGAB_TIMES_NE => Ok(Cuneiform::SignLagabTimesNe),
-            SIGN_LAGAB_TIMES_SHE_PLUS_SUM => Ok(Cuneiform::SignLagabTimesShePlusSum),
-            SIGN_LAGAB_TIMES_SHITA_PLUS_GISH_PLUS_ERIN2 => Ok(Cuneiform::SignLagabTimesShitaPlusGishPlusErin2),
-            SIGN_LAGAB_TIMES_SHITA_PLUS_GISH_TENU => Ok(Cuneiform::SignLagabTimesShitaPlusGishTenu),
-            SIGN_LAGAB_TIMES_SHU2 => Ok(Cuneiform::SignLagabTimesShu2),
-            SIGN_LAGAB_TIMES_SHU2_PLUS_SHU2 => Ok(Cuneiform::SignLagabTimesShu2PlusShu2),
-            SIGN_LAGAB_TIMES_SUM => Ok(Cuneiform::SignLagabTimesSum),
-            SIGN_LAGAB_TIMES_TAG => Ok(Cuneiform::SignLagabTimesTag),
-            SIGN_LAGAB_TIMES_TAK4 => Ok(Cuneiform::SignLagabTimesTak4),
-            SIGN_LAGAB_TIMES_TE_PLUS_A_PLUS_SU_PLUS_NA => Ok(Cuneiform::SignLagabTimesTePlusAPlusSuPlusNa),
-            SIGN_LAGAB_TIMES_U => Ok(Cuneiform::SignLagabTimesU),
-            SIGN_LAGAB_TIMES_U_PLUS_A => Ok(Cuneiform::SignLagabTimesUPlusA),
-            SIGN_LAGAB_TIMES_U_PLUS_U_PLUS_U => Ok(Cuneiform::SignLagabTimesUPlusUPlusU),
-            SIGN_LAGAB_TIMES_U2_PLUS_ASH => Ok(Cuneiform::SignLagabTimesU2PlusAsh),
-            SIGN_LAGAB_TIMES_UD => Ok(Cuneiform::SignLagabTimesUd),
-            SIGN_LAGAB_TIMES_USH => Ok(Cuneiform::SignLagabTimesUsh),
-            SIGN_LAGAB_SQUARED => Ok(Cuneiform::SignLagabSquared),
-            SIGN_LAGAR => Ok(Cuneiform::SignLagar),
-            SIGN_LAGAR_TIMES_SHE => Ok(Cuneiform::SignLagarTimesShe),
-            SIGN_LAGAR_TIMES_SHE_PLUS_SUM => Ok(Cuneiform::SignLagarTimesShePlusSum),
-            SIGN_LAGAR_GUNU => Ok(Cuneiform::SignLagarGunu),
-            SIGN_LAGAR_GUNU_OVER_LAGAR_GUNU_SHE => Ok(Cuneiform::SignLagarGunuOverLagarGunuShe),
-            SIGN_LAHSHU => Ok(Cuneiform::SignLahshu),
-            SIGN_LAL => Ok(Cuneiform::SignLal),
-            SIGN_LAL_TIMES_LAL => Ok(Cuneiform::SignLalTimesLal),
-            SIGN_LAM => Ok(Cuneiform::SignLam),
-            SIGN_LAM_TIMES_KUR => Ok(Cuneiform::SignLamTimesKur),
-            SIGN_LAM_TIMES_KUR_PLUS_RU => Ok(Cuneiform::SignLamTimesKurPlusRu),
-            SIGN_LI => Ok(Cuneiform::SignLi),
-            SIGN_LIL => Ok(Cuneiform::SignLil),
-            SIGN_LIMMU2 => Ok(Cuneiform::SignLimmu2),
-            SIGN_LISH => Ok(Cuneiform::SignLish),
-            SIGN_LU => Ok(Cuneiform::SignLu),
-            SIGN_LU_TIMES_BAD => Ok(Cuneiform::SignLuTimesBad),
-            SIGN_LU2 => Ok(Cuneiform::SignLu2),
-            SIGN_LU2_TIMES_AL => Ok(Cuneiform::SignLu2TimesAl),
-            SIGN_LU2_TIMES_BAD => Ok(Cuneiform::SignLu2TimesBad),
-            SIGN_LU2_TIMES_ESH2 => Ok(Cuneiform::SignLu2TimesEsh2),
-            SIGN_LU2_TIMES_ESH2_TENU => Ok(Cuneiform::SignLu2TimesEsh2Tenu),
-            SIGN_LU2_TIMES_GAN2_TENU => Ok(Cuneiform::SignLu2TimesGan2Tenu),
-            SIGN_LU2_TIMES_HI_TIMES_BAD => Ok(Cuneiform::SignLu2TimesHiTimesBad),
-            SIGN_LU2_TIMES_IM => Ok(Cuneiform::SignLu2TimesIm),
-            SIGN_LU2_TIMES_KAD2 => Ok(Cuneiform::SignLu2TimesKad2),
-            SIGN_LU2_TIMES_KAD3 => Ok(Cuneiform::SignLu2TimesKad3),
-            SIGN_LU2_TIMES_KAD3_PLUS_ASH => Ok(Cuneiform::SignLu2TimesKad3PlusAsh),
-            SIGN_LU2_TIMES_KI => Ok(Cuneiform::SignLu2TimesKi),
-            SIGN_LU2_TIMES_LA_PLUS_ASH => Ok(Cuneiform::SignLu2TimesLaPlusAsh),
-            SIGN_LU2_TIMES_LAGAB => Ok(Cuneiform::SignLu2TimesLagab),
-            SIGN_LU2_TIMES_ME_PLUS_EN => Ok(Cuneiform::SignLu2TimesMePlusEn),
-            SIGN_LU2_TIMES_NE => Ok(Cuneiform::SignLu2TimesNe),
-            SIGN_LU2_TIMES_NU => Ok(Cuneiform::SignLu2TimesNu),
-            SIGN_LU2_TIMES_SI_PLUS_ASH => Ok(Cuneiform::SignLu2TimesSiPlusAsh),
-            SIGN_LU2_TIMES_SIK2_PLUS_BU => Ok(Cuneiform::SignLu2TimesSik2PlusBu),
-            SIGN_LU2_TIMES_TUG2 => Ok(Cuneiform::SignLu2TimesTug2),
-            SIGN_LU2_TENU => Ok(Cuneiform::SignLu2Tenu),
-            SIGN_LU2_CROSSING_LU2 => Ok(Cuneiform::SignLu2CrossingLu2),
-            SIGN_LU2_OPPOSING_LU2 => Ok(Cuneiform::SignLu2OpposingLu2),
-            SIGN_LU2_SQUARED => Ok(Cuneiform::SignLu2Squared),
-            SIGN_LU2_SHESHIG => Ok(Cuneiform::SignLu2Sheshig),
-            SIGN_LU3 => Ok(Cuneiform::SignLu3),
-            SIGN_LUGAL => Ok(Cuneiform::SignLugal),
-            SIGN_LUGAL_OVER_LUGAL => Ok(Cuneiform::SignLugalOverLugal),
-            SIGN_LUGAL_OPPOSING_LUGAL => Ok(Cuneiform::SignLugalOpposingLugal),
-            SIGN_LUGAL_SHESHIG => Ok(Cuneiform::SignLugalSheshig),
-            SIGN_LUH => Ok(Cuneiform::SignLuh),
-            SIGN_LUL => Ok(Cuneiform::SignLul),
-            SIGN_LUM => Ok(Cuneiform::SignLum),
-            SIGN_LUM_OVER_LUM => Ok(Cuneiform::SignLumOverLum),
-            SIGN_LUM_OVER_LUM_GAR_OVER_GAR => Ok(Cuneiform::SignLumOverLumGarOverGar),
-            SIGN_MA => Ok(Cuneiform::SignMa),
-            SIGN_MA_TIMES_TAK4 => Ok(Cuneiform::SignMaTimesTak4),
-            SIGN_MA_GUNU => Ok(Cuneiform::SignMaGunu),
-            SIGN_MA2 => Ok(Cuneiform::SignMa2),
-            SIGN_MAH => Ok(Cuneiform::SignMah),
-            SIGN_MAR => Ok(Cuneiform::SignMar),
-            SIGN_MASH => Ok(Cuneiform::SignMash),
-            SIGN_MASH2 => Ok(Cuneiform::SignMash2),
-            SIGN_ME => Ok(Cuneiform::SignMe),
-            SIGN_MES => Ok(Cuneiform::SignMes),
-            SIGN_MI => Ok(Cuneiform::SignMi),
-            SIGN_MIN => Ok(Cuneiform::SignMin),
-            SIGN_MU => Ok(Cuneiform::SignMu),
-            SIGN_MU_OVER_MU => Ok(Cuneiform::SignMuOverMu),
-            SIGN_MUG => Ok(Cuneiform::SignMug),
-            SIGN_MUG_GUNU => Ok(Cuneiform::SignMugGunu),
-            SIGN_MUNSUB => Ok(Cuneiform::SignMunsub),
-            SIGN_MURGU2 => Ok(Cuneiform::SignMurgu2),
-            SIGN_MUSH => Ok(Cuneiform::SignMush),
-            SIGN_MUSH_TIMES_A => Ok(Cuneiform::SignMushTimesA),
-            SIGN_MUSH_TIMES_KUR => Ok(Cuneiform::SignMushTimesKur),
-            SIGN_MUSH_TIMES_ZA => Ok(Cuneiform::SignMushTimesZa),
-            SIGN_MUSH_OVER_MUSH => Ok(Cuneiform::SignMushOverMush),
-            SIGN_MUSH_OVER_MUSH_TIMES_A_PLUS_NA => Ok(Cuneiform::SignMushOverMushTimesAPlusNa),
-            SIGN_MUSH_CROSSING_MUSH => Ok(Cuneiform::SignMushCrossingMush),
-            SIGN_MUSH3 => Ok(Cuneiform::SignMush3),
-            SIGN_MUSH3_TIMES_A => Ok(Cuneiform::SignMush3TimesA),
-            SIGN_MUSH3_TIMES_A_PLUS_DI => Ok(Cuneiform::SignMush3TimesAPlusDi),
-            SIGN_MUSH3_TIMES_DI => Ok(Cuneiform::SignMush3TimesDi),
-            SIGN_MUSH3_GUNU => Ok(Cuneiform::SignMush3Gunu),
-            SIGN_NA => Ok(Cuneiform::SignNa),
-            SIGN_NA2 => Ok(Cuneiform::SignNa2),
-            SIGN_NAGA => Ok(Cuneiform::SignNaga),
-            SIGN_NAGA_INVERTED => Ok(Cuneiform::SignNagaInverted),
-            SIGN_NAGA_TIMES_SHU_TENU => Ok(Cuneiform::SignNagaTimesShuTenu),
-            SIGN_NAGA_OPPOSING_NAGA => Ok(Cuneiform::SignNagaOpposingNaga),
-            SIGN_NAGAR => Ok(Cuneiform::SignNagar),
-            SIGN_NAM_NUTILLU => Ok(Cuneiform::SignNamNutillu),
-            SIGN_NAM => Ok(Cuneiform::SignNam),
-            SIGN_NAM2 => Ok(Cuneiform::SignNam2),
-            SIGN_NE => Ok(Cuneiform::SignNe),
-            SIGN_NE_TIMES_A => Ok(Cuneiform::SignNeTimesA),
-            SIGN_NE_TIMES_UD => Ok(Cuneiform::SignNeTimesUd),
-            SIGN_NE_SHESHIG => Ok(Cuneiform::SignNeSheshig),
-            SIGN_NI => Ok(Cuneiform::SignNi),
-            SIGN_NI_TIMES_E => Ok(Cuneiform::SignNiTimesE),
-            SIGN_NI2 => Ok(Cuneiform::SignNi2),
-            SIGN_NIM => Ok(Cuneiform::SignNim),
-            SIGN_NIM_TIMES_GAN2_TENU => Ok(Cuneiform::SignNimTimesGan2Tenu),
-            SIGN_NIM_TIMES_GAR_PLUS_GAN2_TENU => Ok(Cuneiform::SignNimTimesGarPlusGan2Tenu),
-            SIGN_NINDA2 => Ok(Cuneiform::SignNinda2),
-            SIGN_NINDA2_TIMES_AN => Ok(Cuneiform::SignNinda2TimesAn),
-            SIGN_NINDA2_TIMES_ASH => Ok(Cuneiform::SignNinda2TimesAsh),
-            SIGN_NINDA2_TIMES_ASH_PLUS_ASH => Ok(Cuneiform::SignNinda2TimesAshPlusAsh),
-            SIGN_NINDA2_TIMES_GUD => Ok(Cuneiform::SignNinda2TimesGud),
-            SIGN_NINDA2_TIMES_ME_PLUS_GAN2_TENU => Ok(Cuneiform::SignNinda2TimesMePlusGan2Tenu),
-            SIGN_NINDA2_TIMES_NE => Ok(Cuneiform::SignNinda2TimesNe),
-            SIGN_NINDA2_TIMES_NUN => Ok(Cuneiform::SignNinda2TimesNun),
-            SIGN_NINDA2_TIMES_SHE => Ok(Cuneiform::SignNinda2TimesShe),
-            SIGN_NINDA2_TIMES_SHE_PLUS_A_AN => Ok(Cuneiform::SignNinda2TimesShePlusAAn),
-            SIGN_NINDA2_TIMES_SHE_PLUS_ASH => Ok(Cuneiform::SignNinda2TimesShePlusAsh),
-            SIGN_NINDA2_TIMES_SHE_PLUS_ASH_PLUS_ASH => Ok(Cuneiform::SignNinda2TimesShePlusAshPlusAsh),
-            SIGN_NINDA2_TIMES_U2_PLUS_ASH => Ok(Cuneiform::SignNinda2TimesU2PlusAsh),
-            SIGN_NINDA2_TIMES_USH => Ok(Cuneiform::SignNinda2TimesUsh),
-            SIGN_NISAG => Ok(Cuneiform::SignNisag),
-            SIGN_NU => Ok(Cuneiform::SignNu),
-            SIGN_NU11 => Ok(Cuneiform::SignNu11),
-            SIGN_NUN => Ok(Cuneiform::SignNun),
-            SIGN_NUN_LAGAR_TIMES_GAR => Ok(Cuneiform::SignNunLagarTimesGar),
-            SIGN_NUN_LAGAR_TIMES_MASH => Ok(Cuneiform::SignNunLagarTimesMash),
-            SIGN_NUN_LAGAR_TIMES_SAL => Ok(Cuneiform::SignNunLagarTimesSal),
-            SIGN_NUN_LAGAR_TIMES_SAL_OVER_NUN_LAGAR_TIMES_SAL => Ok(Cuneiform::SignNunLagarTimesSalOverNunLagarTimesSal),
-            SIGN_NUN_LAGAR_TIMES_USH => Ok(Cuneiform::SignNunLagarTimesUsh),
-            SIGN_NUN_TENU => Ok(Cuneiform::SignNunTenu),
-            SIGN_NUN_OVER_NUN => Ok(Cuneiform::SignNunOverNun),
-            SIGN_NUN_CROSSING_NUN => Ok(Cuneiform::SignNunCrossingNun),
-            SIGN_NUN_CROSSING_NUN_LAGAR_OVER_LAGAR => Ok(Cuneiform::SignNunCrossingNunLagarOverLagar),
-            SIGN_NUNUZ => Ok(Cuneiform::SignNunuz),
-            SIGN_NUNUZ_AB2_TIMES_ASHGAB => Ok(Cuneiform::SignNunuzAb2TimesAshgab),
-            SIGN_NUNUZ_AB2_TIMES_BI => Ok(Cuneiform::SignNunuzAb2TimesBi),
-            SIGN_NUNUZ_AB2_TIMES_DUG => Ok(Cuneiform::SignNunuzAb2TimesDug),
-            SIGN_NUNUZ_AB2_TIMES_GUD => Ok(Cuneiform::SignNunuzAb2TimesGud),
-            SIGN_NUNUZ_AB2_TIMES_IGI_GUNU => Ok(Cuneiform::SignNunuzAb2TimesIgiGunu),
-            SIGN_NUNUZ_AB2_TIMES_KAD3 => Ok(Cuneiform::SignNunuzAb2TimesKad3),
-            SIGN_NUNUZ_AB2_TIMES_LA => Ok(Cuneiform::SignNunuzAb2TimesLa),
-            SIGN_NUNUZ_AB2_TIMES_NE => Ok(Cuneiform::SignNunuzAb2TimesNe),
-            SIGN_NUNUZ_AB2_TIMES_SILA3 => Ok(Cuneiform::SignNunuzAb2TimesSila3),
-            SIGN_NUNUZ_AB2_TIMES_U2 => Ok(Cuneiform::SignNunuzAb2TimesU2),
-            SIGN_NUNUZ_KISIM5_TIMES_BI => Ok(Cuneiform::SignNunuzKisim5TimesBi),
-            SIGN_NUNUZ_KISIM5_TIMES_BI_U => Ok(Cuneiform::SignNunuzKisim5TimesBiU),
-            SIGN_PA => Ok(Cuneiform::SignPa),
-            SIGN_PAD => Ok(Cuneiform::SignPad),
-            SIGN_PAN => Ok(Cuneiform::SignPan),
-            SIGN_PAP => Ok(Cuneiform::SignPap),
-            SIGN_PESH2 => Ok(Cuneiform::SignPesh2),
-            SIGN_PI => Ok(Cuneiform::SignPi),
-            SIGN_PI_TIMES_A => Ok(Cuneiform::SignPiTimesA),
-            SIGN_PI_TIMES_AB => Ok(Cuneiform::SignPiTimesAb),
-            SIGN_PI_TIMES_BI => Ok(Cuneiform::SignPiTimesBi),
-            SIGN_PI_TIMES_BU => Ok(Cuneiform::SignPiTimesBu),
-            SIGN_PI_TIMES_E => Ok(Cuneiform::SignPiTimesE),
-            SIGN_PI_TIMES_I => Ok(Cuneiform::SignPiTimesI),
-            SIGN_PI_TIMES_IB => Ok(Cuneiform::SignPiTimesIb),
-            SIGN_PI_TIMES_U => Ok(Cuneiform::SignPiTimesU),
-            SIGN_PI_TIMES_U2 => Ok(Cuneiform::SignPiTimesU2),
-            SIGN_PI_CROSSING_PI => Ok(Cuneiform::SignPiCrossingPi),
-            SIGN_PIRIG => Ok(Cuneiform::SignPirig),
-            SIGN_PIRIG_TIMES_KAL => Ok(Cuneiform::SignPirigTimesKal),
-            SIGN_PIRIG_TIMES_UD => Ok(Cuneiform::SignPirigTimesUd),
-            SIGN_PIRIG_TIMES_ZA => Ok(Cuneiform::SignPirigTimesZa),
-            SIGN_PIRIG_OPPOSING_PIRIG => Ok(Cuneiform::SignPirigOpposingPirig),
-            SIGN_RA => Ok(Cuneiform::SignRa),
-            SIGN_RAB => Ok(Cuneiform::SignRab),
-            SIGN_RI => Ok(Cuneiform::SignRi),
-            SIGN_RU => Ok(Cuneiform::SignRu),
-            SIGN_SA => Ok(Cuneiform::SignSa),
-            SIGN_SAG_NUTILLU => Ok(Cuneiform::SignSagNutillu),
-            SIGN_SAG => Ok(Cuneiform::SignSag),
-            SIGN_SAG_TIMES_A => Ok(Cuneiform::SignSagTimesA),
-            SIGN_SAG_TIMES_DU => Ok(Cuneiform::SignSagTimesDu),
-            SIGN_SAG_TIMES_DUB => Ok(Cuneiform::SignSagTimesDub),
-            SIGN_SAG_TIMES_HA => Ok(Cuneiform::SignSagTimesHa),
-            SIGN_SAG_TIMES_KAK => Ok(Cuneiform::SignSagTimesKak),
-            SIGN_SAG_TIMES_KUR => Ok(Cuneiform::SignSagTimesKur),
-            SIGN_SAG_TIMES_LUM => Ok(Cuneiform::SignSagTimesLum),
-            SIGN_SAG_TIMES_MI => Ok(Cuneiform::SignSagTimesMi),
-            SIGN_SAG_TIMES_NUN => Ok(Cuneiform::SignSagTimesNun),
-            SIGN_SAG_TIMES_SAL => Ok(Cuneiform::SignSagTimesSal),
-            SIGN_SAG_TIMES_SHID => Ok(Cuneiform::SignSagTimesShid),
-            SIGN_SAG_TIMES_TAB => Ok(Cuneiform::SignSagTimesTab),
-            SIGN_SAG_TIMES_U2 => Ok(Cuneiform::SignSagTimesU2),
-            SIGN_SAG_TIMES_UB => Ok(Cuneiform::SignSagTimesUb),
-            SIGN_SAG_TIMES_UM => Ok(Cuneiform::SignSagTimesUm),
-            SIGN_SAG_TIMES_UR => Ok(Cuneiform::SignSagTimesUr),
-            SIGN_SAG_TIMES_USH => Ok(Cuneiform::SignSagTimesUsh),
-            SIGN_SAG_OVER_SAG => Ok(Cuneiform::SignSagOverSag),
-            SIGN_SAG_GUNU => Ok(Cuneiform::SignSagGunu),
-            SIGN_SAL => Ok(Cuneiform::SignSal),
-            SIGN_SAL_LAGAB_TIMES_ASH2 => Ok(Cuneiform::SignSalLagabTimesAsh2),
-            SIGN_SANGA2 => Ok(Cuneiform::SignSanga2),
-            SIGN_SAR => Ok(Cuneiform::SignSar),
-            SIGN_SHA => Ok(Cuneiform::SignSha),
-            SIGN_SHA3 => Ok(Cuneiform::SignSha3),
-            SIGN_SHA3_TIMES_A => Ok(Cuneiform::SignSha3TimesA),
-            SIGN_SHA3_TIMES_BAD => Ok(Cuneiform::SignSha3TimesBad),
-            SIGN_SHA3_TIMES_GISH => Ok(Cuneiform::SignSha3TimesGish),
-            SIGN_SHA3_TIMES_NE => Ok(Cuneiform::SignSha3TimesNe),
-            SIGN_SHA3_TIMES_SHU2 => Ok(Cuneiform::SignSha3TimesShu2),
-            SIGN_SHA3_TIMES_TUR => Ok(Cuneiform::SignSha3TimesTur),
-            SIGN_SHA3_TIMES_U => Ok(Cuneiform::SignSha3TimesU),
-            SIGN_SHA3_TIMES_U_PLUS_A => Ok(Cuneiform::SignSha3TimesUPlusA),
-            SIGN_SHA6 => Ok(Cuneiform::SignSha6),
-            SIGN_SHAB6 => Ok(Cuneiform::SignShab6),
-            SIGN_SHAR2 => Ok(Cuneiform::SignShar2),
-            SIGN_SHE => Ok(Cuneiform::SignShe),
-            SIGN_SHE_HU => Ok(Cuneiform::SignSheHu),
-            SIGN_SHE_OVER_SHE_GAD_OVER_GAD_GAR_OVER_GAR => Ok(Cuneiform::SignSheOverSheGadOverGadGarOverGar),
-            SIGN_SHE_OVER_SHE_TAB_OVER_TAB_GAR_OVER_GAR => Ok(Cuneiform::SignSheOverSheTabOverTabGarOverGar),
-            SIGN_SHEG9 => Ok(Cuneiform::SignSheg9),
-            SIGN_SHEN => Ok(Cuneiform::SignShen),
-            SIGN_SHESH => Ok(Cuneiform::SignShesh),
-            SIGN_SHESH2 => Ok(Cuneiform::SignShesh2),
-            SIGN_SHESHLAM => Ok(Cuneiform::SignSheshlam),
-            SIGN_SHID => Ok(Cuneiform::SignShid),
-            SIGN_SHID_TIMES_A => Ok(Cuneiform::SignShidTimesA),
-            SIGN_SHID_TIMES_IM => Ok(Cuneiform::SignShidTimesIm),
-            SIGN_SHIM => Ok(Cuneiform::SignShim),
-            SIGN_SHIM_TIMES_A => Ok(Cuneiform::SignShimTimesA),
-            SIGN_SHIM_TIMES_BAL => Ok(Cuneiform::SignShimTimesBal),
-            SIGN_SHIM_TIMES_BULUG => Ok(Cuneiform::SignShimTimesBulug),
-            SIGN_SHIM_TIMES_DIN => Ok(Cuneiform::SignShimTimesDin),
-            SIGN_SHIM_TIMES_GAR => Ok(Cuneiform::SignShimTimesGar),
-            SIGN_SHIM_TIMES_IGI => Ok(Cuneiform::SignShimTimesIgi),
-            SIGN_SHIM_TIMES_IGI_GUNU => Ok(Cuneiform::SignShimTimesIgiGunu),
-            SIGN_SHIM_TIMES_KUSHU2 => Ok(Cuneiform::SignShimTimesKushu2),
-            SIGN_SHIM_TIMES_LUL => Ok(Cuneiform::SignShimTimesLul),
-            SIGN_SHIM_TIMES_MUG => Ok(Cuneiform::SignShimTimesMug),
-            SIGN_SHIM_TIMES_SAL => Ok(Cuneiform::SignShimTimesSal),
-            SIGN_SHINIG => Ok(Cuneiform::SignShinig),
-            SIGN_SHIR => Ok(Cuneiform::SignShir),
-            SIGN_SHIR_TENU => Ok(Cuneiform::SignShirTenu),
-            SIGN_SHIR_OVER_SHIR_BUR_OVER_BUR => Ok(Cuneiform::SignShirOverShirBurOverBur),
-            SIGN_SHITA => Ok(Cuneiform::SignShita),
-            SIGN_SHU => Ok(Cuneiform::SignShu),
-            SIGN_SHU_OVER_INVERTED_SHU => Ok(Cuneiform::SignShuOverInvertedShu),
-            SIGN_SHU2 => Ok(Cuneiform::SignShu2),
-            SIGN_SHUBUR => Ok(Cuneiform::SignShubur),
-            SIGN_SI => Ok(Cuneiform::SignSi),
-            SIGN_SI_GUNU => Ok(Cuneiform::SignSiGunu),
-            SIGN_SIG => Ok(Cuneiform::SignSig),
-            SIGN_SIG4 => Ok(Cuneiform::SignSig4),
-            SIGN_SIG4_OVER_SIG4_SHU2 => Ok(Cuneiform::SignSig4OverSig4Shu2),
-            SIGN_SIK2 => Ok(Cuneiform::SignSik2),
-            SIGN_SILA3 => Ok(Cuneiform::SignSila3),
-            SIGN_SU => Ok(Cuneiform::SignSu),
-            SIGN_SU_OVER_SU => Ok(Cuneiform::SignSuOverSu),
-            SIGN_SUD => Ok(Cuneiform::SignSud),
-            SIGN_SUD2 => Ok(Cuneiform::SignSud2),
-            SIGN_SUHUR => Ok(Cuneiform::SignSuhur),
-            SIGN_SUM => Ok(Cuneiform::SignSum),
-            SIGN_SUMASH => Ok(Cuneiform::SignSumash),
-            SIGN_SUR => Ok(Cuneiform::SignSur),
-            SIGN_SUR9 => Ok(Cuneiform::SignSur9),
-            SIGN_TA => Ok(Cuneiform::SignTa),
-            SIGN_TA_ASTERISK => Ok(Cuneiform::SignTaAsterisk),
-            SIGN_TA_TIMES_HI => Ok(Cuneiform::SignTaTimesHi),
-            SIGN_TA_TIMES_MI => Ok(Cuneiform::SignTaTimesMi),
-            SIGN_TA_GUNU => Ok(Cuneiform::SignTaGunu),
-            SIGN_TAB => Ok(Cuneiform::SignTab),
-            SIGN_TAB_OVER_TAB_NI_OVER_NI_DISH_OVER_DISH => Ok(Cuneiform::SignTabOverTabNiOverNiDishOverDish),
-            SIGN_TAB_SQUARED => Ok(Cuneiform::SignTabSquared),
-            SIGN_TAG => Ok(Cuneiform::SignTag),
-            SIGN_TAG_TIMES_BI => Ok(Cuneiform::SignTagTimesBi),
-            SIGN_TAG_TIMES_GUD => Ok(Cuneiform::SignTagTimesGud),
-            SIGN_TAG_TIMES_SHE => Ok(Cuneiform::SignTagTimesShe),
-            SIGN_TAG_TIMES_SHU => Ok(Cuneiform::SignTagTimesShu),
-            SIGN_TAG_TIMES_TUG2 => Ok(Cuneiform::SignTagTimesTug2),
-            SIGN_TAG_TIMES_UD => Ok(Cuneiform::SignTagTimesUd),
-            SIGN_TAK4 => Ok(Cuneiform::SignTak4),
-            SIGN_TAR => Ok(Cuneiform::SignTar),
-            SIGN_TE => Ok(Cuneiform::SignTe),
-            SIGN_TE_GUNU => Ok(Cuneiform::SignTeGunu),
-            SIGN_TI => Ok(Cuneiform::SignTi),
-            SIGN_TI_TENU => Ok(Cuneiform::SignTiTenu),
-            SIGN_TIL => Ok(Cuneiform::SignTil),
-            SIGN_TIR => Ok(Cuneiform::SignTir),
-            SIGN_TIR_TIMES_TAK4 => Ok(Cuneiform::SignTirTimesTak4),
-            SIGN_TIR_OVER_TIR => Ok(Cuneiform::SignTirOverTir),
-            SIGN_TIR_OVER_TIR_GAD_OVER_GAD_GAR_OVER_GAR => Ok(Cuneiform::SignTirOverTirGadOverGadGarOverGar),
-            SIGN_TU => Ok(Cuneiform::SignTu),
-            SIGN_TUG2 => Ok(Cuneiform::SignTug2),
-            SIGN_TUK => Ok(Cuneiform::SignTuk),
-            SIGN_TUM => Ok(Cuneiform::SignTum),
-            SIGN_TUR => Ok(Cuneiform::SignTur),
-            SIGN_TUR_OVER_TUR_ZA_OVER_ZA => Ok(Cuneiform::SignTurOverTurZaOverZa),
-            SIGN_U => Ok(Cuneiform::SignU),
-            SIGN_U_GUD => Ok(Cuneiform::SignUGud),
-            SIGN_U_U_U => Ok(Cuneiform::SignUUU),
-            SIGN_U_OVER_U_PA_OVER_PA_GAR_OVER_GAR => Ok(Cuneiform::SignUOverUPaOverPaGarOverGar),
-            SIGN_U_OVER_U_SUR_OVER_SUR => Ok(Cuneiform::SignUOverUSurOverSur),
-            SIGN_U_OVER_U_U_REVERSED_OVER_U_REVERSED => Ok(Cuneiform::SignUOverUUReversedOverUReversed),
-            SIGN_U2 => Ok(Cuneiform::SignU2),
-            SIGN_UB => Ok(Cuneiform::SignUb),
-            SIGN_UD => Ok(Cuneiform::SignUd),
-            SIGN_UD_KUSHU2 => Ok(Cuneiform::SignUdKushu2),
-            SIGN_UD_TIMES_BAD => Ok(Cuneiform::SignUdTimesBad),
-            SIGN_UD_TIMES_MI => Ok(Cuneiform::SignUdTimesMi),
-            SIGN_UD_TIMES_U_PLUS_U_PLUS_U => Ok(Cuneiform::SignUdTimesUPlusUPlusU),
-            SIGN_UD_TIMES_U_PLUS_U_PLUS_U_GUNU => Ok(Cuneiform::SignUdTimesUPlusUPlusUGunu),
-            SIGN_UD_GUNU => Ok(Cuneiform::SignUdGunu),
-            SIGN_UD_SHESHIG => Ok(Cuneiform::SignUdSheshig),
-            SIGN_UD_SHESHIG_TIMES_BAD => Ok(Cuneiform::SignUdSheshigTimesBad),
-            SIGN_UDUG => Ok(Cuneiform::SignUdug),
-            SIGN_UM => Ok(Cuneiform::SignUm),
-            SIGN_UM_TIMES_LAGAB => Ok(Cuneiform::SignUmTimesLagab),
-            SIGN_UM_TIMES_ME_PLUS_DA => Ok(Cuneiform::SignUmTimesMePlusDa),
-            SIGN_UM_TIMES_SHA3 => Ok(Cuneiform::SignUmTimesSha3),
-            SIGN_UM_TIMES_U => Ok(Cuneiform::SignUmTimesU),
-            SIGN_UMBIN => Ok(Cuneiform::SignUmbin),
-            SIGN_UMUM => Ok(Cuneiform::SignUmum),
-            SIGN_UMUM_TIMES_KASKAL => Ok(Cuneiform::SignUmumTimesKaskal),
-            SIGN_UMUM_TIMES_PA => Ok(Cuneiform::SignUmumTimesPa),
-            SIGN_UN => Ok(Cuneiform::SignUn),
-            SIGN_UN_GUNU => Ok(Cuneiform::SignUnGunu),
-            SIGN_UR => Ok(Cuneiform::SignUr),
-            SIGN_UR_CROSSING_UR => Ok(Cuneiform::SignUrCrossingUr),
-            SIGN_UR_SHESHIG => Ok(Cuneiform::SignUrSheshig),
-            SIGN_UR2 => Ok(Cuneiform::SignUr2),
-            SIGN_UR2_TIMES_A_PLUS_HA => Ok(Cuneiform::SignUr2TimesAPlusHa),
-            SIGN_UR2_TIMES_A_PLUS_NA => Ok(Cuneiform::SignUr2TimesAPlusNa),
-            SIGN_UR2_TIMES_AL => Ok(Cuneiform::SignUr2TimesAl),
-            SIGN_UR2_TIMES_HA => Ok(Cuneiform::SignUr2TimesHa),
-            SIGN_UR2_TIMES_NUN => Ok(Cuneiform::SignUr2TimesNun),
-            SIGN_UR2_TIMES_U2 => Ok(Cuneiform::SignUr2TimesU2),
-            SIGN_UR2_TIMES_U2_PLUS_ASH => Ok(Cuneiform::SignUr2TimesU2PlusAsh),
-            SIGN_UR2_TIMES_U2_PLUS_BI => Ok(Cuneiform::SignUr2TimesU2PlusBi),
-            SIGN_UR4 => Ok(Cuneiform::SignUr4),
-            SIGN_URI => Ok(Cuneiform::SignUri),
-            SIGN_URI3 => Ok(Cuneiform::SignUri3),
-            SIGN_URU => Ok(Cuneiform::SignUru),
-            SIGN_URU_TIMES_A => Ok(Cuneiform::SignUruTimesA),
-            SIGN_URU_TIMES_ASHGAB => Ok(Cuneiform::SignUruTimesAshgab),
-            SIGN_URU_TIMES_BAR => Ok(Cuneiform::SignUruTimesBar),
-            SIGN_URU_TIMES_DUN => Ok(Cuneiform::SignUruTimesDun),
-            SIGN_URU_TIMES_GA => Ok(Cuneiform::SignUruTimesGa),
-            SIGN_URU_TIMES_GAL => Ok(Cuneiform::SignUruTimesGal),
-            SIGN_URU_TIMES_GAN2_TENU => Ok(Cuneiform::SignUruTimesGan2Tenu),
-            SIGN_URU_TIMES_GAR => Ok(Cuneiform::SignUruTimesGar),
-            SIGN_URU_TIMES_GU => Ok(Cuneiform::SignUruTimesGu),
-            SIGN_URU_TIMES_HA => Ok(Cuneiform::SignUruTimesHa),
-            SIGN_URU_TIMES_IGI => Ok(Cuneiform::SignUruTimesIgi),
-            SIGN_URU_TIMES_IM => Ok(Cuneiform::SignUruTimesIm),
-            SIGN_URU_TIMES_ISH => Ok(Cuneiform::SignUruTimesIsh),
-            SIGN_URU_TIMES_KI => Ok(Cuneiform::SignUruTimesKi),
-            SIGN_URU_TIMES_LUM => Ok(Cuneiform::SignUruTimesLum),
-            SIGN_URU_TIMES_MIN => Ok(Cuneiform::SignUruTimesMin),
-            SIGN_URU_TIMES_PA => Ok(Cuneiform::SignUruTimesPa),
-            SIGN_URU_TIMES_SHE => Ok(Cuneiform::SignUruTimesShe),
-            SIGN_URU_TIMES_SIG4 => Ok(Cuneiform::SignUruTimesSig4),
-            SIGN_URU_TIMES_TU => Ok(Cuneiform::SignUruTimesTu),
-            SIGN_URU_TIMES_U_PLUS_GUD => Ok(Cuneiform::SignUruTimesUPlusGud),
-            SIGN_URU_TIMES_UD => Ok(Cuneiform::SignUruTimesUd),
-            SIGN_URU_TIMES_URUDA => Ok(Cuneiform::SignUruTimesUruda),
-            SIGN_URUDA => Ok(Cuneiform::SignUruda),
-            SIGN_URUDA_TIMES_U => Ok(Cuneiform::SignUrudaTimesU),
-            SIGN_USH => Ok(Cuneiform::SignUsh),
-            SIGN_USH_TIMES_A => Ok(Cuneiform::SignUshTimesA),
-            SIGN_USH_TIMES_KU => Ok(Cuneiform::SignUshTimesKu),
-            SIGN_USH_TIMES_KUR => Ok(Cuneiform::SignUshTimesKur),
-            SIGN_USH_TIMES_TAK4 => Ok(Cuneiform::SignUshTimesTak4),
-            SIGN_USHX => Ok(Cuneiform::SignUshx),
-            SIGN_USH2 => Ok(Cuneiform::SignUsh2),
-            SIGN_USHUMX => Ok(Cuneiform::SignUshumx),
-            SIGN_UTUKI => Ok(Cuneiform::SignUtuki),
-            SIGN_UZ3 => Ok(Cuneiform::SignUz3),
-            SIGN_UZ3_TIMES_KASKAL => Ok(Cuneiform::SignUz3TimesKaskal),
-            SIGN_UZU => Ok(Cuneiform::SignUzu),
-            SIGN_ZA => Ok(Cuneiform::SignZa),
-            SIGN_ZA_TENU => Ok(Cuneiform::SignZaTenu),
-            SIGN_ZA_SQUARED_TIMES_KUR => Ok(Cuneiform::SignZaSquaredTimesKur),
-            SIGN_ZAG => Ok(Cuneiform::SignZag),
-            SIGN_ZAMX => Ok(Cuneiform::SignZamx),
-            SIGN_ZE2 => Ok(Cuneiform::SignZe2),
-            SIGN_ZI => Ok(Cuneiform::SignZi),
-            SIGN_ZI_OVER_ZI => Ok(Cuneiform::SignZiOverZi),
-            SIGN_ZI3 => Ok(Cuneiform::SignZi3),
-            SIGN_ZIB => Ok(Cuneiform::SignZib),
-            SIGN_ZIB_KABA_TENU => Ok(Cuneiform::SignZibKabaTenu),
-            SIGN_ZIG => Ok(Cuneiform::SignZig),
-            SIGN_ZIZ2 => Ok(Cuneiform::SignZiz2),
-            SIGN_ZU => Ok(Cuneiform::SignZu),
-            SIGN_ZU5 => Ok(Cuneiform::SignZu5),
-            SIGN_ZU5_TIMES_A => Ok(Cuneiform::SignZu5TimesA),
-            SIGN_ZUBUR => Ok(Cuneiform::SignZubur),
-            SIGN_ZUM => Ok(Cuneiform::SignZum),
-            SIGN_KAP_ELAMITE => Ok(Cuneiform::SignKapElamite),
-            SIGN_AB_TIMES_NUN => Ok(Cuneiform::SignAbTimesNun),
-            SIGN_AB2_TIMES_A => Ok(Cuneiform::SignAb2TimesA),
-            SIGN_AMAR_TIMES_KUG => Ok(Cuneiform::SignAmarTimesKug),
-            SIGN_DAG_KISIM5_TIMES_U2_PLUS_MASH => Ok(Cuneiform::SignDagKisim5TimesU2PlusMash),
-            SIGN_DAG3 => Ok(Cuneiform::SignDag3),
-            SIGN_DISH_PLUS_SHU => Ok(Cuneiform::SignDishPlusShu),
-            SIGN_DUB_TIMES_SHE => Ok(Cuneiform::SignDubTimesShe),
-            SIGN_EZEN_TIMES_GUD => Ok(Cuneiform::SignEzenTimesGud),
-            SIGN_EZEN_TIMES_SHE => Ok(Cuneiform::SignEzenTimesShe),
-            SIGN_GA2_TIMES_AN_PLUS_KAK_PLUS_A => Ok(Cuneiform::SignGa2TimesAnPlusKakPlusA),
-            SIGN_GA2_TIMES_ASH2 => Ok(Cuneiform::SignGa2TimesAsh2),
-            SIGN_GE22 => Ok(Cuneiform::SignGe22),
-            SIGN_GIG => Ok(Cuneiform::SignGig),
-            SIGN_HUSH => Ok(Cuneiform::SignHush),
-            SIGN_KA_TIMES_ANSHE => Ok(Cuneiform::SignKaTimesAnshe),
-            SIGN_KA_TIMES_ASH3 => Ok(Cuneiform::SignKaTimesAsh3),
-            SIGN_KA_TIMES_GISH => Ok(Cuneiform::SignKaTimesGish),
-            SIGN_KA_TIMES_GUD => Ok(Cuneiform::SignKaTimesGud),
-            SIGN_KA_TIMES_HI_TIMES_ASH2 => Ok(Cuneiform::SignKaTimesHiTimesAsh2),
-            SIGN_KA_TIMES_LUM => Ok(Cuneiform::SignKaTimesLum),
-            SIGN_KA_TIMES_PA => Ok(Cuneiform::SignKaTimesPa),
-            SIGN_KA_TIMES_SHUL => Ok(Cuneiform::SignKaTimesShul),
-            SIGN_KA_TIMES_TU => Ok(Cuneiform::SignKaTimesTu),
-            SIGN_KA_TIMES_UR2 => Ok(Cuneiform::SignKaTimesUr2),
-            SIGN_LAGAB_TIMES_GI => Ok(Cuneiform::SignLagabTimesGi),
-            SIGN_LU2_SHESHIG_TIMES_BAD => Ok(Cuneiform::SignLu2SheshigTimesBad),
-            SIGN_LU2_TIMES_ESH2_PLUS_LAL => Ok(Cuneiform::SignLu2TimesEsh2PlusLal),
-            SIGN_LU2_TIMES_SHU => Ok(Cuneiform::SignLu2TimesShu),
-            SIGN_MESH => Ok(Cuneiform::SignMesh),
-            SIGN_MUSH3_TIMES_ZA => Ok(Cuneiform::SignMush3TimesZa),
-            SIGN_NA4 => Ok(Cuneiform::SignNa4),
-            SIGN_NIN => Ok(Cuneiform::SignNin),
-            SIGN_NIN9 => Ok(Cuneiform::SignNin9),
-            SIGN_NINDA2_TIMES_BAL => Ok(Cuneiform::SignNinda2TimesBal),
-            SIGN_NINDA2_TIMES_GI => Ok(Cuneiform::SignNinda2TimesGi),
-            SIGN_NU11_ROTATED_NINETY_DEGREES => Ok(Cuneiform::SignNu11RotatedNinetyDegrees),
-            SIGN_PESH2_ASTERISK => Ok(Cuneiform::SignPesh2Asterisk),
-            SIGN_PIR2 => Ok(Cuneiform::SignPir2),
-            SIGN_SAG_TIMES_IGI_GUNU => Ok(Cuneiform::SignSagTimesIgiGunu),
-            SIGN_TI2 => Ok(Cuneiform::SignTi2),
-            SIGN_UM_TIMES_ME => Ok(Cuneiform::SignUmTimesMe),
-            SIGN_U_U => Ok(Cuneiform::SignUU),
+            '𒀀' => Ok(Cuneiform::SignA),
+            '𒀁' => Ok(Cuneiform::SignATimesA),
+            '𒀂' => Ok(Cuneiform::SignATimesBad),
+            '𒀃' => Ok(Cuneiform::SignATimesGan2Tenu),
+            '𒀄' => Ok(Cuneiform::SignATimesHa),
+            '𒀅' => Ok(Cuneiform::SignATimesIgi),
+            '𒀆' => Ok(Cuneiform::SignATimesLagarGunu),
+            '𒀇' => Ok(Cuneiform::SignATimesMush),
+            '𒀈' => Ok(Cuneiform::SignATimesSag),
+            '𒀉' => Ok(Cuneiform::SignA2),
+            '𒀊' => Ok(Cuneiform::SignAb),
+            '𒀋' => Ok(Cuneiform::SignAbTimesAsh2),
+            '𒀌' => Ok(Cuneiform::SignAbTimesDun3Gunu),
+            '𒀍' => Ok(Cuneiform::SignAbTimesGal),
+            '𒀎' => Ok(Cuneiform::SignAbTimesGan2Tenu),
+            '𒀏' => Ok(Cuneiform::SignAbTimesHa),
+            '𒀐' => Ok(Cuneiform::SignAbTimesIgiGunu),
+            '𒀑' => Ok(Cuneiform::SignAbTimesImin),
+            '𒀒' => Ok(Cuneiform::SignAbTimesLagab),
+            '𒀓' => Ok(Cuneiform::SignAbTimesShesh),
+            '𒀔' => Ok(Cuneiform::SignAbTimesUPlusUPlusU),
+            '𒀕' => Ok(Cuneiform::SignAbGunu),
+            '𒀖' => Ok(Cuneiform::SignAb2),
+            '𒀗' => Ok(Cuneiform::SignAb2TimesBalag),
+            '𒀘' => Ok(Cuneiform::SignAb2TimesGan2Tenu),
+            '𒀙' => Ok(Cuneiform::SignAb2TimesMePlusEn),
+            '𒀚' => Ok(Cuneiform::SignAb2TimesSha3),
+            '𒀛' => Ok(Cuneiform::SignAb2TimesTak4),
+            '𒀜' => Ok(Cuneiform::SignAd),
+            '𒀝' => Ok(Cuneiform::SignAk),
+            '𒀞' => Ok(Cuneiform::SignAkTimesErin2),
+            '𒀟' => Ok(Cuneiform::SignAkTimesShitaPlusGish),
+            '𒀠' => Ok(Cuneiform::SignAl),
+            '𒀡' => Ok(Cuneiform::SignAlTimesAl),
+            '𒀢' => Ok(Cuneiform::SignAlTimesDim2),
+            '𒀣' => Ok(Cuneiform::SignAlTimesGish),
+            '𒀤' => Ok(Cuneiform::SignAlTimesHa),
+            '𒀥' => Ok(Cuneiform::SignAlTimesKad3),
+            '𒀦' => Ok(Cuneiform::SignAlTimesKi),
+            '𒀧' => Ok(Cuneiform::SignAlTimesShe),
+            '𒀨' => Ok(Cuneiform::SignAlTimesUsh),
+            '𒀩' => Ok(Cuneiform::SignAlan),
+            '𒀪' => Ok(Cuneiform::SignAleph),
+            '𒀫' => Ok(Cuneiform::SignAmar),
+            '𒀬' => Ok(Cuneiform::SignAmarTimesShe),
+            '𒀭' => Ok(Cuneiform::SignAn),
+            '𒀮' => Ok(Cuneiform::SignAnOverAn),
+            '𒀯' => Ok(Cuneiform::SignAnThreeTimes),
+            '𒀰' => Ok(Cuneiform::SignAnPlusNagaOpposingAnPlusNaga),
+            '𒀱' => Ok(Cuneiform::SignAnPlusNagaSquared),
+            '𒀲' => Ok(Cuneiform::SignAnshe),
+            '𒀳' => Ok(Cuneiform::SignApin),
+            '𒀴' => Ok(Cuneiform::SignArad),
+            '𒀵' => Ok(Cuneiform::SignAradTimesKur),
+            '𒀶' => Ok(Cuneiform::SignArkab),
+            '𒀷' => Ok(Cuneiform::SignAsal2),
+            '𒀸' => Ok(Cuneiform::SignAsh),
+            '𒀹' => Ok(Cuneiform::SignAshZidaTenu),
+            '𒀺' => Ok(Cuneiform::SignAshKabaTenu),
+            '𒀻' => Ok(Cuneiform::SignAshOverAshTug2OverTug2Tug2OverTug2Pap),
+            '𒀼' => Ok(Cuneiform::SignAshOverAshOverAsh),
+            '𒀽' => Ok(Cuneiform::SignAshOverAshOverAshCrossingAshOverAshOverAsh),
+            '𒀾' => Ok(Cuneiform::SignAsh2),
+            '𒀿' => Ok(Cuneiform::SignAshgab),
+            '𒁀' => Ok(Cuneiform::SignBa),
+            '𒁁' => Ok(Cuneiform::SignBad),
+            '𒁂' => Ok(Cuneiform::SignBag3),
+            '𒁃' => Ok(Cuneiform::SignBahar2),
+            '𒁄' => Ok(Cuneiform::SignBal),
+            '𒁅' => Ok(Cuneiform::SignBalOverBal),
+            '𒁆' => Ok(Cuneiform::SignBalag),
+            '𒁇' => Ok(Cuneiform::SignBar),
+            '𒁈' => Ok(Cuneiform::SignBara2),
+            '𒁉' => Ok(Cuneiform::SignBi),
+            '𒁊' => Ok(Cuneiform::SignBiTimesA),
+            '𒁋' => Ok(Cuneiform::SignBiTimesGar),
+            '𒁌' => Ok(Cuneiform::SignBiTimesIgiGunu),
+            '𒁍' => Ok(Cuneiform::SignBu),
+            '𒁎' => Ok(Cuneiform::SignBuOverBuAb),
+            '𒁏' => Ok(Cuneiform::SignBuOverBuUn),
+            '𒁐' => Ok(Cuneiform::SignBuCrossingBu),
+            '𒁑' => Ok(Cuneiform::SignBulug),
+            '𒁒' => Ok(Cuneiform::SignBulugOverBulug),
+            '𒁓' => Ok(Cuneiform::SignBur),
+            '𒁔' => Ok(Cuneiform::SignBur2),
+            '𒁕' => Ok(Cuneiform::SignDa),
+            '𒁖' => Ok(Cuneiform::SignDag),
+            '𒁗' => Ok(Cuneiform::SignDagKisim5TimesAPlusMash),
+            '𒁘' => Ok(Cuneiform::SignDagKisim5TimesAmar),
+            '𒁙' => Ok(Cuneiform::SignDagKisim5TimesBalag),
+            '𒁚' => Ok(Cuneiform::SignDagKisim5TimesBi),
+            '𒁛' => Ok(Cuneiform::SignDagKisim5TimesGa),
+            '𒁜' => Ok(Cuneiform::SignDagKisim5TimesGaPlusMash),
+            '𒁝' => Ok(Cuneiform::SignDagKisim5TimesGi),
+            '𒁞' => Ok(Cuneiform::SignDagKisim5TimesGir2),
+            '𒁟' => Ok(Cuneiform::SignDagKisim5TimesGud),
+            '𒁠' => Ok(Cuneiform::SignDagKisim5TimesHa),
+            '𒁡' => Ok(Cuneiform::SignDagKisim5TimesIr),
+            '𒁢' => Ok(Cuneiform::SignDagKisim5TimesIrPlusLu),
+            '𒁣' => Ok(Cuneiform::SignDagKisim5TimesKak),
+            '𒁤' => Ok(Cuneiform::SignDagKisim5TimesLa),
+            '𒁥' => Ok(Cuneiform::SignDagKisim5TimesLu),
+            '𒁦' => Ok(Cuneiform::SignDagKisim5TimesLuPlusMash2),
+            '𒁧' => Ok(Cuneiform::SignDagKisim5TimesLum),
+            '𒁨' => Ok(Cuneiform::SignDagKisim5TimesNe),
+            '𒁩' => Ok(Cuneiform::SignDagKisim5TimesPapPlusPap),
+            '𒁪' => Ok(Cuneiform::SignDagKisim5TimesSi),
+            '𒁫' => Ok(Cuneiform::SignDagKisim5TimesTak4),
+            '𒁬' => Ok(Cuneiform::SignDagKisim5TimesU2PlusGir2),
+            '𒁭' => Ok(Cuneiform::SignDagKisim5TimesUsh),
+            '𒁮' => Ok(Cuneiform::SignDam),
+            '𒁯' => Ok(Cuneiform::SignDar),
+            '𒁰' => Ok(Cuneiform::SignDara3),
+            '𒁱' => Ok(Cuneiform::SignDara4),
+            '𒁲' => Ok(Cuneiform::SignDi),
+            '𒁳' => Ok(Cuneiform::SignDib),
+            '𒁴' => Ok(Cuneiform::SignDim),
+            '𒁵' => Ok(Cuneiform::SignDimTimesShe),
+            '𒁶' => Ok(Cuneiform::SignDim2),
+            '𒁷' => Ok(Cuneiform::SignDin),
+            '𒁸' => Ok(Cuneiform::SignDinKaskalUGunuDish),
+            '𒁹' => Ok(Cuneiform::SignDish),
+            '𒁺' => Ok(Cuneiform::SignDu),
+            '𒁻' => Ok(Cuneiform::SignDuOverDu),
+            '𒁼' => Ok(Cuneiform::SignDuGunu),
+            '𒁽' => Ok(Cuneiform::SignDuSheshig),
+            '𒁾' => Ok(Cuneiform::SignDub),
+            '𒁿' => Ok(Cuneiform::SignDubTimesEsh2),
+            '𒂀' => Ok(Cuneiform::SignDub2),
+            '𒂁' => Ok(Cuneiform::SignDug),
+            '𒂂' => Ok(Cuneiform::SignDugud),
+            '𒂃' => Ok(Cuneiform::SignDuh),
+            '𒂄' => Ok(Cuneiform::SignDun),
+            '𒂅' => Ok(Cuneiform::SignDun3),
+            '𒂆' => Ok(Cuneiform::SignDun3Gunu),
+            '𒂇' => Ok(Cuneiform::SignDun3GunuGunu),
+            '𒂈' => Ok(Cuneiform::SignDun4),
+            '𒂉' => Ok(Cuneiform::SignDur2),
+            '𒂊' => Ok(Cuneiform::SignE),
+            '𒂋' => Ok(Cuneiform::SignETimesPap),
+            '𒂌' => Ok(Cuneiform::SignEOverENunOverNun),
+            '𒂍' => Ok(Cuneiform::SignE2),
+            '𒂎' => Ok(Cuneiform::SignE2TimesAPlusHaPlusDa),
+            '𒂏' => Ok(Cuneiform::SignE2TimesGar),
+            '𒂐' => Ok(Cuneiform::SignE2TimesMi),
+            '𒂑' => Ok(Cuneiform::SignE2TimesSal),
+            '𒂒' => Ok(Cuneiform::SignE2TimesShe),
+            '𒂓' => Ok(Cuneiform::SignE2TimesU),
+            '𒂔' => Ok(Cuneiform::SignEdin),
+            '𒂕' => Ok(Cuneiform::SignEgir),
+            '𒂖' => Ok(Cuneiform::SignEl),
+            '𒂗' => Ok(Cuneiform::SignEn),
+            '𒂘' => Ok(Cuneiform::SignEnTimesGan2),
+            '𒂙' => Ok(Cuneiform::SignEnTimesGan2Tenu),
+            '𒂚' => Ok(Cuneiform::SignEnTimesMe),
+            '𒂛' => Ok(Cuneiform::SignEnCrossingEn),
+            '𒂜' => Ok(Cuneiform::SignEnOpposingEn),
+            '𒂝' => Ok(Cuneiform::SignEnSquared),
+            '𒂞' => Ok(Cuneiform::SignEren),
+            '𒂟' => Ok(Cuneiform::SignErin2),
+            '𒂠' => Ok(Cuneiform::SignEsh2),
+            '𒂡' => Ok(Cuneiform::SignEzen),
+            '𒂢' => Ok(Cuneiform::SignEzenTimesA),
+            '𒂣' => Ok(Cuneiform::SignEzenTimesAPlusLal),
+            '𒂤' => Ok(Cuneiform::SignEzenTimesAPlusLalTimesLal),
+            '𒂥' => Ok(Cuneiform::SignEzenTimesAn),
+            '𒂦' => Ok(Cuneiform::SignEzenTimesBad),
+            '𒂧' => Ok(Cuneiform::SignEzenTimesDun3Gunu),
+            '𒂨' => Ok(Cuneiform::SignEzenTimesDun3GunuGunu),
+            '𒂩' => Ok(Cuneiform::SignEzenTimesHa),
+            '𒂪' => Ok(Cuneiform::SignEzenTimesHaGunu),
+            '𒂫' => Ok(Cuneiform::SignEzenTimesIgiGunu),
+            '𒂬' => Ok(Cuneiform::SignEzenTimesKaskal),
+            '𒂭' => Ok(Cuneiform::SignEzenTimesKaskalSquared),
+            '𒂮' => Ok(Cuneiform::SignEzenTimesKu3),
+            '𒂯' => Ok(Cuneiform::SignEzenTimesLa),
+            '𒂰' => Ok(Cuneiform::SignEzenTimesLalTimesLal),
+            '𒂱' => Ok(Cuneiform::SignEzenTimesLi),
+            '𒂲' => Ok(Cuneiform::SignEzenTimesLu),
+            '𒂳' => Ok(Cuneiform::SignEzenTimesU2),
+            '𒂴' => Ok(Cuneiform::SignEzenTimesUd),
+            '𒂵' => Ok(Cuneiform::SignGa),
+            '𒂶' => Ok(Cuneiform::SignGaGunu),
+            '𒂷' => Ok(Cuneiform::SignGa2),
+            '𒂸' => Ok(Cuneiform::SignGa2TimesAPlusDaPlusHa),
+            '𒂹' => Ok(Cuneiform::SignGa2TimesAPlusHa),
+            '𒂺' => Ok(Cuneiform::SignGa2TimesAPlusIgi),
+            '𒂻' => Ok(Cuneiform::SignGa2TimesAb2TenuPlusTab),
+            '𒂼' => Ok(Cuneiform::SignGa2TimesAn),
+            '𒂽' => Ok(Cuneiform::SignGa2TimesAsh),
+            '𒂾' => Ok(Cuneiform::SignGa2TimesAsh2PlusGal),
+            '𒂿' => Ok(Cuneiform::SignGa2TimesBad),
+            '𒃀' => Ok(Cuneiform::SignGa2TimesBarPlusRa),
+            '𒃁' => Ok(Cuneiform::SignGa2TimesBur),
+            '𒃂' => Ok(Cuneiform::SignGa2TimesBurPlusRa),
+            '𒃃' => Ok(Cuneiform::SignGa2TimesDa),
+            '𒃄' => Ok(Cuneiform::SignGa2TimesDi),
+            '𒃅' => Ok(Cuneiform::SignGa2TimesDimTimesShe),
+            '𒃆' => Ok(Cuneiform::SignGa2TimesDub),
+            '𒃇' => Ok(Cuneiform::SignGa2TimesEl),
+            '𒃈' => Ok(Cuneiform::SignGa2TimesElPlusLa),
+            '𒃉' => Ok(Cuneiform::SignGa2TimesEn),
+            '𒃊' => Ok(Cuneiform::SignGa2TimesEnTimesGan2Tenu),
+            '𒃋' => Ok(Cuneiform::SignGa2TimesGan2Tenu),
+            '𒃌' => Ok(Cuneiform::SignGa2TimesGar),
+            '𒃍' => Ok(Cuneiform::SignGa2TimesGi),
+            '𒃎' => Ok(Cuneiform::SignGa2TimesGi4),
+            '𒃏' => Ok(Cuneiform::SignGa2TimesGi4PlusA),
+            '𒃐' => Ok(Cuneiform::SignGa2TimesGir2PlusSu),
+            '𒃑' => Ok(Cuneiform::SignGa2TimesHaPlusLuPlusEsh2),
+            '𒃒' => Ok(Cuneiform::SignGa2TimesHal),
+            '𒃓' => Ok(Cuneiform::SignGa2TimesHalPlusLa),
+            '𒃔' => Ok(Cuneiform::SignGa2TimesHiPlusLi),
+            '𒃕' => Ok(Cuneiform::SignGa2TimesHub2),
+            '𒃖' => Ok(Cuneiform::SignGa2TimesIgiGunu),
+            '𒃗' => Ok(Cuneiform::SignGa2TimesIshPlusHuPlusAsh),
+            '𒃘' => Ok(Cuneiform::SignGa2TimesKak),
+            '𒃙' => Ok(Cuneiform::SignGa2TimesKaskal),
+            '𒃚' => Ok(Cuneiform::SignGa2TimesKid),
+            '𒃛' => Ok(Cuneiform::SignGa2TimesKidPlusLal),
+            '𒃜' => Ok(Cuneiform::SignGa2TimesKu3PlusAn),
+            '𒃝' => Ok(Cuneiform::SignGa2TimesLa),
+            '𒃞' => Ok(Cuneiform::SignGa2TimesMePlusEn),
+            '𒃟' => Ok(Cuneiform::SignGa2TimesMi),
+            '𒃠' => Ok(Cuneiform::SignGa2TimesNun),
+            '𒃡' => Ok(Cuneiform::SignGa2TimesNunOverNun),
+            '𒃢' => Ok(Cuneiform::SignGa2TimesPa),
+            '𒃣' => Ok(Cuneiform::SignGa2TimesSal),
+            '𒃤' => Ok(Cuneiform::SignGa2TimesSar),
+            '𒃥' => Ok(Cuneiform::SignGa2TimesShe),
+            '𒃦' => Ok(Cuneiform::SignGa2TimesShePlusTur),
+            '𒃧' => Ok(Cuneiform::SignGa2TimesShid),
+            '𒃨' => Ok(Cuneiform::SignGa2TimesSum),
+            '𒃩' => Ok(Cuneiform::SignGa2TimesTak4),
+            '𒃪' => Ok(Cuneiform::SignGa2TimesU),
+            '𒃫' => Ok(Cuneiform::SignGa2TimesUd),
+            '𒃬' => Ok(Cuneiform::SignGa2TimesUdPlusDu),
+            '𒃭' => Ok(Cuneiform::SignGa2OverGa2),
+            '𒃮' => Ok(Cuneiform::SignGaba),
+            '𒃯' => Ok(Cuneiform::SignGabaCrossingGaba),
+            '𒃰' => Ok(Cuneiform::SignGad),
+            '𒃱' => Ok(Cuneiform::SignGadOverGadGarOverGar),
+            '𒃲' => Ok(Cuneiform::SignGal),
+            '𒃳' => Ok(Cuneiform::SignGalGadOverGadGarOverGar),
+            '𒃴' => Ok(Cuneiform::SignGalam),
+            '𒃵' => Ok(Cuneiform::SignGam),
+            '𒃶' => Ok(Cuneiform::SignGan),
+            '𒃷' => Ok(Cuneiform::SignGan2),
+            '𒃸' => Ok(Cuneiform::SignGan2Tenu),
+            '𒃹' => Ok(Cuneiform::SignGan2OverGan2),
+            '𒃺' => Ok(Cuneiform::SignGan2CrossingGan2),
+            '𒃻' => Ok(Cuneiform::SignGar),
+            '𒃼' => Ok(Cuneiform::SignGar3),
+            '𒃽' => Ok(Cuneiform::SignGashan),
+            '𒃾' => Ok(Cuneiform::SignGeshtin),
+            '𒃿' => Ok(Cuneiform::SignGeshtinTimesKur),
+            '𒄀' => Ok(Cuneiform::SignGi),
+            '𒄁' => Ok(Cuneiform::SignGiTimesE),
+            '𒄂' => Ok(Cuneiform::SignGiTimesU),
+            '𒄃' => Ok(Cuneiform::SignGiCrossingGi),
+            '𒄄' => Ok(Cuneiform::SignGi4),
+            '𒄅' => Ok(Cuneiform::SignGi4OverGi4),
+            '𒄆' => Ok(Cuneiform::SignGi4CrossingGi4),
+            '𒄇' => Ok(Cuneiform::SignGidim),
+            '𒄈' => Ok(Cuneiform::SignGir2),
+            '𒄉' => Ok(Cuneiform::SignGir2Gunu),
+            '𒄊' => Ok(Cuneiform::SignGir3),
+            '𒄋' => Ok(Cuneiform::SignGir3TimesAPlusIgi),
+            '𒄌' => Ok(Cuneiform::SignGir3TimesGan2Tenu),
+            '𒄍' => Ok(Cuneiform::SignGir3TimesIgi),
+            '𒄎' => Ok(Cuneiform::SignGir3TimesLuPlusIgi),
+            '𒄏' => Ok(Cuneiform::SignGir3TimesPa),
+            '𒄐' => Ok(Cuneiform::SignGisal),
+            '𒄑' => Ok(Cuneiform::SignGish),
+            '𒄒' => Ok(Cuneiform::SignGishCrossingGish),
+            '𒄓' => Ok(Cuneiform::SignGishTimesBad),
+            '𒄔' => Ok(Cuneiform::SignGishTimesTak4),
+            '𒄕' => Ok(Cuneiform::SignGishTenu),
+            '𒄖' => Ok(Cuneiform::SignGu),
+            '𒄗' => Ok(Cuneiform::SignGuCrossingGu),
+            '𒄘' => Ok(Cuneiform::SignGu2),
+            '𒄙' => Ok(Cuneiform::SignGu2TimesKak),
+            '𒄚' => Ok(Cuneiform::SignGu2TimesKakTimesIgiGunu),
+            '𒄛' => Ok(Cuneiform::SignGu2TimesNun),
+            '𒄜' => Ok(Cuneiform::SignGu2TimesSalPlusTug2),
+            '𒄝' => Ok(Cuneiform::SignGu2Gunu),
+            '𒄞' => Ok(Cuneiform::SignGud),
+            '𒄟' => Ok(Cuneiform::SignGudTimesAPlusKur),
+            '𒄠' => Ok(Cuneiform::SignGudTimesKur),
+            '𒄡' => Ok(Cuneiform::SignGudOverGudLugal),
+            '𒄢' => Ok(Cuneiform::SignGul),
+            '𒄣' => Ok(Cuneiform::SignGum),
+            '𒄤' => Ok(Cuneiform::SignGumTimesShe),
+            '𒄥' => Ok(Cuneiform::SignGur),
+            '𒄦' => Ok(Cuneiform::SignGur7),
+            '𒄧' => Ok(Cuneiform::SignGurun),
+            '𒄨' => Ok(Cuneiform::SignGurush),
+            '𒄩' => Ok(Cuneiform::SignHa),
+            '𒄪' => Ok(Cuneiform::SignHaTenu),
+            '𒄫' => Ok(Cuneiform::SignHaGunu),
+            '𒄬' => Ok(Cuneiform::SignHal),
+            '𒄭' => Ok(Cuneiform::SignHi),
+            '𒄮' => Ok(Cuneiform::SignHiTimesAsh),
+            '𒄯' => Ok(Cuneiform::SignHiTimesAsh2),
+            '𒄰' => Ok(Cuneiform::SignHiTimesBad),
+            '𒄱' => Ok(Cuneiform::SignHiTimesDish),
+            '𒄲' => Ok(Cuneiform::SignHiTimesGad),
+            '𒄳' => Ok(Cuneiform::SignHiTimesKin),
+            '𒄴' => Ok(Cuneiform::SignHiTimesNun),
+            '𒄵' => Ok(Cuneiform::SignHiTimesShe),
+            '𒄶' => Ok(Cuneiform::SignHiTimesU),
+            '𒄷' => Ok(Cuneiform::SignHu),
+            '𒄸' => Ok(Cuneiform::SignHub2),
+            '𒄹' => Ok(Cuneiform::SignHub2TimesAn),
+            '𒄺' => Ok(Cuneiform::SignHub2TimesHal),
+            '𒄻' => Ok(Cuneiform::SignHub2TimesKaskal),
+            '𒄼' => Ok(Cuneiform::SignHub2TimesLish),
+            '𒄽' => Ok(Cuneiform::SignHub2TimesUd),
+            '𒄾' => Ok(Cuneiform::SignHul2),
+            '𒄿' => Ok(Cuneiform::SignI),
+            '𒅀' => Ok(Cuneiform::SignIA),
+            '𒅁' => Ok(Cuneiform::SignIb),
+            '𒅂' => Ok(Cuneiform::SignIdim),
+            '𒅃' => Ok(Cuneiform::SignIdimOverIdimBur),
+            '𒅄' => Ok(Cuneiform::SignIdimOverIdimSquared),
+            '𒅅' => Ok(Cuneiform::SignIg),
+            '𒅆' => Ok(Cuneiform::SignIgi),
+            '𒅇' => Ok(Cuneiform::SignIgiDib),
+            '𒅈' => Ok(Cuneiform::SignIgiRi),
+            '𒅉' => Ok(Cuneiform::SignIgiOverIgiShirOverShirUdOverUd),
+            '𒅊' => Ok(Cuneiform::SignIgiGunu),
+            '𒅋' => Ok(Cuneiform::SignIl),
+            '𒅌' => Ok(Cuneiform::SignIlTimesGan2Tenu),
+            '𒅍' => Ok(Cuneiform::SignIl2),
+            '𒅎' => Ok(Cuneiform::SignIm),
+            '𒅏' => Ok(Cuneiform::SignImTimesTak4),
+            '𒅐' => Ok(Cuneiform::SignImCrossingIm),
+            '𒅑' => Ok(Cuneiform::SignImOpposingIm),
+            '𒅒' => Ok(Cuneiform::SignImSquared),
+            '𒅓' => Ok(Cuneiform::SignImin),
+            '𒅔' => Ok(Cuneiform::SignIn),
+            '𒅕' => Ok(Cuneiform::SignIr),
+            '𒅖' => Ok(Cuneiform::SignIsh),
+            '𒅗' => Ok(Cuneiform::SignKa),
+            '𒅘' => Ok(Cuneiform::SignKaTimesA),
+            '𒅙' => Ok(Cuneiform::SignKaTimesAd),
+            '𒅚' => Ok(Cuneiform::SignKaTimesAdPlusKu3),
+            '𒅛' => Ok(Cuneiform::SignKaTimesAsh2),
+            '𒅜' => Ok(Cuneiform::SignKaTimesBad),
+            '𒅝' => Ok(Cuneiform::SignKaTimesBalag),
+            '𒅞' => Ok(Cuneiform::SignKaTimesBar),
+            '𒅟' => Ok(Cuneiform::SignKaTimesBi),
+            '𒅠' => Ok(Cuneiform::SignKaTimesErin2),
+            '𒅡' => Ok(Cuneiform::SignKaTimesEsh2),
+            '𒅢' => Ok(Cuneiform::SignKaTimesGa),
+            '𒅣' => Ok(Cuneiform::SignKaTimesGal),
+            '𒅤' => Ok(Cuneiform::SignKaTimesGan2Tenu),
+            '𒅥' => Ok(Cuneiform::SignKaTimesGar),
+            '𒅦' => Ok(Cuneiform::SignKaTimesGarPlusSha3PlusA),
+            '𒅧' => Ok(Cuneiform::SignKaTimesGi),
+            '𒅨' => Ok(Cuneiform::SignKaTimesGir2),
+            '𒅩' => Ok(Cuneiform::SignKaTimesGishPlusSar),
+            '𒅪' => Ok(Cuneiform::SignKaTimesGishCrossingGish),
+            '𒅫' => Ok(Cuneiform::SignKaTimesGu),
+            '𒅬' => Ok(Cuneiform::SignKaTimesGur7),
+            '𒅭' => Ok(Cuneiform::SignKaTimesIgi),
+            '𒅮' => Ok(Cuneiform::SignKaTimesIm),
+            '𒅯' => Ok(Cuneiform::SignKaTimesKak),
+            '𒅰' => Ok(Cuneiform::SignKaTimesKi),
+            '𒅱' => Ok(Cuneiform::SignKaTimesKid),
+            '𒅲' => Ok(Cuneiform::SignKaTimesLi),
+            '𒅳' => Ok(Cuneiform::SignKaTimesLu),
+            '𒅴' => Ok(Cuneiform::SignKaTimesMe),
+            '𒅵' => Ok(Cuneiform::SignKaTimesMePlusDu),
+            '𒅶' => Ok(Cuneiform::SignKaTimesMePlusGi),
+            '𒅷' => Ok(Cuneiform::SignKaTimesMePlusTe),
+            '𒅸' => Ok(Cuneiform::SignKaTimesMi),
+            '𒅹' => Ok(Cuneiform::SignKaTimesMiPlusNunuz),
+            '𒅺' => Ok(Cuneiform::SignKaTimesNe),
+            '𒅻' => Ok(Cuneiform::SignKaTimesNun),
+            '𒅼' => Ok(Cuneiform::SignKaTimesPi),
+            '𒅽' => Ok(Cuneiform::SignKaTimesRu),
+            '𒅾' => Ok(Cuneiform::SignKaTimesSa),
+            '𒅿' => Ok(Cuneiform::SignKaTimesSar),
+            '𒆀' => Ok(Cuneiform::SignKaTimesSha),
+            '𒆁' => Ok(Cuneiform::SignKaTimesShe),
+            '𒆂' => Ok(Cuneiform::SignKaTimesShid),
+            '𒆃' => Ok(Cuneiform::SignKaTimesShu),
+            '𒆄' => Ok(Cuneiform::SignKaTimesSig),
+            '𒆅' => Ok(Cuneiform::SignKaTimesSuhur),
+            '𒆆' => Ok(Cuneiform::SignKaTimesTar),
+            '𒆇' => Ok(Cuneiform::SignKaTimesU),
+            '𒆈' => Ok(Cuneiform::SignKaTimesU2),
+            '𒆉' => Ok(Cuneiform::SignKaTimesUd),
+            '𒆊' => Ok(Cuneiform::SignKaTimesUmumTimesPa),
+            '𒆋' => Ok(Cuneiform::SignKaTimesUsh),
+            '𒆌' => Ok(Cuneiform::SignKaTimesZi),
+            '𒆍' => Ok(Cuneiform::SignKa2),
+            '𒆎' => Ok(Cuneiform::SignKa2CrossingKa2),
+            '𒆏' => Ok(Cuneiform::SignKab),
+            '𒆐' => Ok(Cuneiform::SignKad2),
+            '𒆑' => Ok(Cuneiform::SignKad3),
+            '𒆒' => Ok(Cuneiform::SignKad4),
+            '𒆓' => Ok(Cuneiform::SignKad5),
+            '𒆔' => Ok(Cuneiform::SignKad5OverKad5),
+            '𒆕' => Ok(Cuneiform::SignKak),
+            '𒆖' => Ok(Cuneiform::SignKakTimesIgiGunu),
+            '𒆗' => Ok(Cuneiform::SignKal),
+            '𒆘' => Ok(Cuneiform::SignKalTimesBad),
+            '𒆙' => Ok(Cuneiform::SignKalCrossingKal),
+            '𒆚' => Ok(Cuneiform::SignKam2),
+            '𒆛' => Ok(Cuneiform::SignKam4),
+            '𒆜' => Ok(Cuneiform::SignKaskal),
+            '𒆝' => Ok(Cuneiform::SignKaskalLagabTimesUOverLagabTimesU),
+            '𒆞' => Ok(Cuneiform::SignKaskalOverKaskalLagabTimesUOverLagabTimesU),
+            '𒆟' => Ok(Cuneiform::SignKesh2),
+            '𒆠' => Ok(Cuneiform::SignKi),
+            '𒆡' => Ok(Cuneiform::SignKiTimesBad),
+            '𒆢' => Ok(Cuneiform::SignKiTimesU),
+            '𒆣' => Ok(Cuneiform::SignKiTimesUd),
+            '𒆤' => Ok(Cuneiform::SignKid),
+            '𒆥' => Ok(Cuneiform::SignKin),
+            '𒆦' => Ok(Cuneiform::SignKisal),
+            '𒆧' => Ok(Cuneiform::SignKish),
+            '𒆨' => Ok(Cuneiform::SignKisim5),
+            '𒆩' => Ok(Cuneiform::SignKisim5OverKisim5),
+            '𒆪' => Ok(Cuneiform::SignKu),
+            '𒆫' => Ok(Cuneiform::SignKuOverHiTimesAsh2KuOverHiTimesAsh2),
+            '𒆬' => Ok(Cuneiform::SignKu3),
+            '𒆭' => Ok(Cuneiform::SignKu4),
+            '𒆮' => Ok(Cuneiform::SignKu4VariantForm),
+            '𒆯' => Ok(Cuneiform::SignKu7),
+            '𒆰' => Ok(Cuneiform::SignKul),
+            '𒆱' => Ok(Cuneiform::SignKulGunu),
+            '𒆲' => Ok(Cuneiform::SignKun),
+            '𒆳' => Ok(Cuneiform::SignKur),
+            '𒆴' => Ok(Cuneiform::SignKurOpposingKur),
+            '𒆵' => Ok(Cuneiform::SignKushu2),
+            '𒆶' => Ok(Cuneiform::SignKwu318),
+            '𒆷' => Ok(Cuneiform::SignLa),
+            '𒆸' => Ok(Cuneiform::SignLagab),
+            '𒆹' => Ok(Cuneiform::SignLagabTimesA),
+            '𒆺' => Ok(Cuneiform::SignLagabTimesAPlusDaPlusHa),
+            '𒆻' => Ok(Cuneiform::SignLagabTimesAPlusGar),
+            '𒆼' => Ok(Cuneiform::SignLagabTimesAPlusLal),
+            '𒆽' => Ok(Cuneiform::SignLagabTimesAl),
+            '𒆾' => Ok(Cuneiform::SignLagabTimesAn),
+            '𒆿' => Ok(Cuneiform::SignLagabTimesAshZidaTenu),
+            '𒇀' => Ok(Cuneiform::SignLagabTimesBad),
+            '𒇁' => Ok(Cuneiform::SignLagabTimesBi),
+            '𒇂' => Ok(Cuneiform::SignLagabTimesDar),
+            '𒇃' => Ok(Cuneiform::SignLagabTimesEn),
+            '𒇄' => Ok(Cuneiform::SignLagabTimesGa),
+            '𒇅' => Ok(Cuneiform::SignLagabTimesGar),
+            '𒇆' => Ok(Cuneiform::SignLagabTimesGud),
+            '𒇇' => Ok(Cuneiform::SignLagabTimesGudPlusGud),
+            '𒇈' => Ok(Cuneiform::SignLagabTimesHa),
+            '𒇉' => Ok(Cuneiform::SignLagabTimesHal),
+            '𒇊' => Ok(Cuneiform::SignLagabTimesHiTimesNun),
+            '𒇋' => Ok(Cuneiform::SignLagabTimesIgiGunu),
+            '𒇌' => Ok(Cuneiform::SignLagabTimesIm),
+            '𒇍' => Ok(Cuneiform::SignLagabTimesImPlusHa),
+            '𒇎' => Ok(Cuneiform::SignLagabTimesImPlusLu),
+            '𒇏' => Ok(Cuneiform::SignLagabTimesKi),
+            '𒇐' => Ok(Cuneiform::SignLagabTimesKin),
+            '𒇑' => Ok(Cuneiform::SignLagabTimesKu3),
+            '𒇒' => Ok(Cuneiform::SignLagabTimesKul),
+            '𒇓' => Ok(Cuneiform::SignLagabTimesKulPlusHiPlusA),
+            '𒇔' => Ok(Cuneiform::SignLagabTimesLagab),
+            '𒇕' => Ok(Cuneiform::SignLagabTimesLish),
+            '𒇖' => Ok(Cuneiform::SignLagabTimesLu),
+            '𒇗' => Ok(Cuneiform::SignLagabTimesLul),
+            '𒇘' => Ok(Cuneiform::SignLagabTimesMe),
+            '𒇙' => Ok(Cuneiform::SignLagabTimesMePlusEn),
+            '𒇚' => Ok(Cuneiform::SignLagabTimesMush),
+            '𒇛' => Ok(Cuneiform::SignLagabTimesNe),
+            '𒇜' => Ok(Cuneiform::SignLagabTimesShePlusSum),
+            '𒇝' => Ok(Cuneiform::SignLagabTimesShitaPlusGishPlusErin2),
+            '𒇞' => Ok(Cuneiform::SignLagabTimesShitaPlusGishTenu),
+            '𒇟' => Ok(Cuneiform::SignLagabTimesShu2),
+            '𒇠' => Ok(Cuneiform::SignLagabTimesShu2PlusShu2),
+            '𒇡' => Ok(Cuneiform::SignLagabTimesSum),
+            '𒇢' => Ok(Cuneiform::SignLagabTimesTag),
+            '𒇣' => Ok(Cuneiform::SignLagabTimesTak4),
+            '𒇤' => Ok(Cuneiform::SignLagabTimesTePlusAPlusSuPlusNa),
+            '𒇥' => Ok(Cuneiform::SignLagabTimesU),
+            '𒇦' => Ok(Cuneiform::SignLagabTimesUPlusA),
+            '𒇧' => Ok(Cuneiform::SignLagabTimesUPlusUPlusU),
+            '𒇨' => Ok(Cuneiform::SignLagabTimesU2PlusAsh),
+            '𒇩' => Ok(Cuneiform::SignLagabTimesUd),
+            '𒇪' => Ok(Cuneiform::SignLagabTimesUsh),
+            '𒇫' => Ok(Cuneiform::SignLagabSquared),
+            '𒇬' => Ok(Cuneiform::SignLagar),
+            '𒇭' => Ok(Cuneiform::SignLagarTimesShe),
+            '𒇮' => Ok(Cuneiform::SignLagarTimesShePlusSum),
+            '𒇯' => Ok(Cuneiform::SignLagarGunu),
+            '𒇰' => Ok(Cuneiform::SignLagarGunuOverLagarGunuShe),
+            '𒇱' => Ok(Cuneiform::SignLahshu),
+            '𒇲' => Ok(Cuneiform::SignLal),
+            '𒇳' => Ok(Cuneiform::SignLalTimesLal),
+            '𒇴' => Ok(Cuneiform::SignLam),
+            '𒇵' => Ok(Cuneiform::SignLamTimesKur),
+            '𒇶' => Ok(Cuneiform::SignLamTimesKurPlusRu),
+            '𒇷' => Ok(Cuneiform::SignLi),
+            '𒇸' => Ok(Cuneiform::SignLil),
+            '𒇹' => Ok(Cuneiform::SignLimmu2),
+            '𒇺' => Ok(Cuneiform::SignLish),
+            '𒇻' => Ok(Cuneiform::SignLu),
+            '𒇼' => Ok(Cuneiform::SignLuTimesBad),
+            '𒇽' => Ok(Cuneiform::SignLu2),
+            '𒇾' => Ok(Cuneiform::SignLu2TimesAl),
+            '𒇿' => Ok(Cuneiform::SignLu2TimesBad),
+            '𒈀' => Ok(Cuneiform::SignLu2TimesEsh2),
+            '𒈁' => Ok(Cuneiform::SignLu2TimesEsh2Tenu),
+            '𒈂' => Ok(Cuneiform::SignLu2TimesGan2Tenu),
+            '𒈃' => Ok(Cuneiform::SignLu2TimesHiTimesBad),
+            '𒈄' => Ok(Cuneiform::SignLu2TimesIm),
+            '𒈅' => Ok(Cuneiform::SignLu2TimesKad2),
+            '𒈆' => Ok(Cuneiform::SignLu2TimesKad3),
+            '𒈇' => Ok(Cuneiform::SignLu2TimesKad3PlusAsh),
+            '𒈈' => Ok(Cuneiform::SignLu2TimesKi),
+            '𒈉' => Ok(Cuneiform::SignLu2TimesLaPlusAsh),
+            '𒈊' => Ok(Cuneiform::SignLu2TimesLagab),
+            '𒈋' => Ok(Cuneiform::SignLu2TimesMePlusEn),
+            '𒈌' => Ok(Cuneiform::SignLu2TimesNe),
+            '𒈍' => Ok(Cuneiform::SignLu2TimesNu),
+            '𒈎' => Ok(Cuneiform::SignLu2TimesSiPlusAsh),
+            '𒈏' => Ok(Cuneiform::SignLu2TimesSik2PlusBu),
+            '𒈐' => Ok(Cuneiform::SignLu2TimesTug2),
+            '𒈑' => Ok(Cuneiform::SignLu2Tenu),
+            '𒈒' => Ok(Cuneiform::SignLu2CrossingLu2),
+            '𒈓' => Ok(Cuneiform::SignLu2OpposingLu2),
+            '𒈔' => Ok(Cuneiform::SignLu2Squared),
+            '𒈕' => Ok(Cuneiform::SignLu2Sheshig),
+            '𒈖' => Ok(Cuneiform::SignLu3),
+            '𒈗' => Ok(Cuneiform::SignLugal),
+            '𒈘' => Ok(Cuneiform::SignLugalOverLugal),
+            '𒈙' => Ok(Cuneiform::SignLugalOpposingLugal),
+            '𒈚' => Ok(Cuneiform::SignLugalSheshig),
+            '𒈛' => Ok(Cuneiform::SignLuh),
+            '𒈜' => Ok(Cuneiform::SignLul),
+            '𒈝' => Ok(Cuneiform::SignLum),
+            '𒈞' => Ok(Cuneiform::SignLumOverLum),
+            '𒈟' => Ok(Cuneiform::SignLumOverLumGarOverGar),
+            '𒈠' => Ok(Cuneiform::SignMa),
+            '𒈡' => Ok(Cuneiform::SignMaTimesTak4),
+            '𒈢' => Ok(Cuneiform::SignMaGunu),
+            '𒈣' => Ok(Cuneiform::SignMa2),
+            '𒈤' => Ok(Cuneiform::SignMah),
+            '𒈥' => Ok(Cuneiform::SignMar),
+            '𒈦' => Ok(Cuneiform::SignMash),
+            '𒈧' => Ok(Cuneiform::SignMash2),
+            '𒈨' => Ok(Cuneiform::SignMe),
+            '𒈩' => Ok(Cuneiform::SignMes),
+            '𒈪' => Ok(Cuneiform::SignMi),
+            '𒈫' => Ok(Cuneiform::SignMin),
+            '𒈬' => Ok(Cuneiform::SignMu),
+            '𒈭' => Ok(Cuneiform::SignMuOverMu),
+            '𒈮' => Ok(Cuneiform::SignMug),
+            '𒈯' => Ok(Cuneiform::SignMugGunu),
+            '𒈰' => Ok(Cuneiform::SignMunsub),
+            '𒈱' => Ok(Cuneiform::SignMurgu2),
+            '𒈲' => Ok(Cuneiform::SignMush),
+            '𒈳' => Ok(Cuneiform::SignMushTimesA),
+            '𒈴' => Ok(Cuneiform::SignMushTimesKur),
+            '𒈵' => Ok(Cuneiform::SignMushTimesZa),
+            '𒈶' => Ok(Cuneiform::SignMushOverMush),
+            '𒈷' => Ok(Cuneiform::SignMushOverMushTimesAPlusNa),
+            '𒈸' => Ok(Cuneiform::SignMushCrossingMush),
+            '𒈹' => Ok(Cuneiform::SignMush3),
+            '𒈺' => Ok(Cuneiform::SignMush3TimesA),
+            '𒈻' => Ok(Cuneiform::SignMush3TimesAPlusDi),
+            '𒈼' => Ok(Cuneiform::SignMush3TimesDi),
+            '𒈽' => Ok(Cuneiform::SignMush3Gunu),
+            '𒈾' => Ok(Cuneiform::SignNa),
+            '𒈿' => Ok(Cuneiform::SignNa2),
+            '𒉀' => Ok(Cuneiform::SignNaga),
+            '𒉁' => Ok(Cuneiform::SignNagaInverted),
+            '𒉂' => Ok(Cuneiform::SignNagaTimesShuTenu),
+            '𒉃' => Ok(Cuneiform::SignNagaOpposingNaga),
+            '𒉄' => Ok(Cuneiform::SignNagar),
+            '𒉅' => Ok(Cuneiform::SignNamNutillu),
+            '𒉆' => Ok(Cuneiform::SignNam),
+            '𒉇' => Ok(Cuneiform::SignNam2),
+            '𒉈' => Ok(Cuneiform::SignNe),
+            '𒉉' => Ok(Cuneiform::SignNeTimesA),
+            '𒉊' => Ok(Cuneiform::SignNeTimesUd),
+            '𒉋' => Ok(Cuneiform::SignNeSheshig),
+            '𒉌' => Ok(Cuneiform::SignNi),
+            '𒉍' => Ok(Cuneiform::SignNiTimesE),
+            '𒉎' => Ok(Cuneiform::SignNi2),
+            '𒉏' => Ok(Cuneiform::SignNim),
+            '𒉐' => Ok(Cuneiform::SignNimTimesGan2Tenu),
+            '𒉑' => Ok(Cuneiform::SignNimTimesGarPlusGan2Tenu),
+            '𒉒' => Ok(Cuneiform::SignNinda2),
+            '𒉓' => Ok(Cuneiform::SignNinda2TimesAn),
+            '𒉔' => Ok(Cuneiform::SignNinda2TimesAsh),
+            '𒉕' => Ok(Cuneiform::SignNinda2TimesAshPlusAsh),
+            '𒉖' => Ok(Cuneiform::SignNinda2TimesGud),
+            '𒉗' => Ok(Cuneiform::SignNinda2TimesMePlusGan2Tenu),
+            '𒉘' => Ok(Cuneiform::SignNinda2TimesNe),
+            '𒉙' => Ok(Cuneiform::SignNinda2TimesNun),
+            '𒉚' => Ok(Cuneiform::SignNinda2TimesShe),
+            '𒉛' => Ok(Cuneiform::SignNinda2TimesShePlusAAn),
+            '𒉜' => Ok(Cuneiform::SignNinda2TimesShePlusAsh),
+            '𒉝' => Ok(Cuneiform::SignNinda2TimesShePlusAshPlusAsh),
+            '𒉞' => Ok(Cuneiform::SignNinda2TimesU2PlusAsh),
+            '𒉟' => Ok(Cuneiform::SignNinda2TimesUsh),
+            '𒉠' => Ok(Cuneiform::SignNisag),
+            '𒉡' => Ok(Cuneiform::SignNu),
+            '𒉢' => Ok(Cuneiform::SignNu11),
+            '𒉣' => Ok(Cuneiform::SignNun),
+            '𒉤' => Ok(Cuneiform::SignNunLagarTimesGar),
+            '𒉥' => Ok(Cuneiform::SignNunLagarTimesMash),
+            '𒉦' => Ok(Cuneiform::SignNunLagarTimesSal),
+            '𒉧' => Ok(Cuneiform::SignNunLagarTimesSalOverNunLagarTimesSal),
+            '𒉨' => Ok(Cuneiform::SignNunLagarTimesUsh),
+            '𒉩' => Ok(Cuneiform::SignNunTenu),
+            '𒉪' => Ok(Cuneiform::SignNunOverNun),
+            '𒉫' => Ok(Cuneiform::SignNunCrossingNun),
+            '𒉬' => Ok(Cuneiform::SignNunCrossingNunLagarOverLagar),
+            '𒉭' => Ok(Cuneiform::SignNunuz),
+            '𒉮' => Ok(Cuneiform::SignNunuzAb2TimesAshgab),
+            '𒉯' => Ok(Cuneiform::SignNunuzAb2TimesBi),
+            '𒉰' => Ok(Cuneiform::SignNunuzAb2TimesDug),
+            '𒉱' => Ok(Cuneiform::SignNunuzAb2TimesGud),
+            '𒉲' => Ok(Cuneiform::SignNunuzAb2TimesIgiGunu),
+            '𒉳' => Ok(Cuneiform::SignNunuzAb2TimesKad3),
+            '𒉴' => Ok(Cuneiform::SignNunuzAb2TimesLa),
+            '𒉵' => Ok(Cuneiform::SignNunuzAb2TimesNe),
+            '𒉶' => Ok(Cuneiform::SignNunuzAb2TimesSila3),
+            '𒉷' => Ok(Cuneiform::SignNunuzAb2TimesU2),
+            '𒉸' => Ok(Cuneiform::SignNunuzKisim5TimesBi),
+            '𒉹' => Ok(Cuneiform::SignNunuzKisim5TimesBiU),
+            '𒉺' => Ok(Cuneiform::SignPa),
+            '𒉻' => Ok(Cuneiform::SignPad),
+            '𒉼' => Ok(Cuneiform::SignPan),
+            '𒉽' => Ok(Cuneiform::SignPap),
+            '𒉾' => Ok(Cuneiform::SignPesh2),
+            '𒉿' => Ok(Cuneiform::SignPi),
+            '𒊀' => Ok(Cuneiform::SignPiTimesA),
+            '𒊁' => Ok(Cuneiform::SignPiTimesAb),
+            '𒊂' => Ok(Cuneiform::SignPiTimesBi),
+            '𒊃' => Ok(Cuneiform::SignPiTimesBu),
+            '𒊄' => Ok(Cuneiform::SignPiTimesE),
+            '𒊅' => Ok(Cuneiform::SignPiTimesI),
+            '𒊆' => Ok(Cuneiform::SignPiTimesIb),
+            '𒊇' => Ok(Cuneiform::SignPiTimesU),
+            '𒊈' => Ok(Cuneiform::SignPiTimesU2),
+            '𒊉' => Ok(Cuneiform::SignPiCrossingPi),
+            '𒊊' => Ok(Cuneiform::SignPirig),
+            '𒊋' => Ok(Cuneiform::SignPirigTimesKal),
+            '𒊌' => Ok(Cuneiform::SignPirigTimesUd),
+            '𒊍' => Ok(Cuneiform::SignPirigTimesZa),
+            '𒊎' => Ok(Cuneiform::SignPirigOpposingPirig),
+            '𒊏' => Ok(Cuneiform::SignRa),
+            '𒊐' => Ok(Cuneiform::SignRab),
+            '𒊑' => Ok(Cuneiform::SignRi),
+            '𒊒' => Ok(Cuneiform::SignRu),
+            '𒊓' => Ok(Cuneiform::SignSa),
+            '𒊔' => Ok(Cuneiform::SignSagNutillu),
+            '𒊕' => Ok(Cuneiform::SignSag),
+            '𒊖' => Ok(Cuneiform::SignSagTimesA),
+            '𒊗' => Ok(Cuneiform::SignSagTimesDu),
+            '𒊘' => Ok(Cuneiform::SignSagTimesDub),
+            '𒊙' => Ok(Cuneiform::SignSagTimesHa),
+            '𒊚' => Ok(Cuneiform::SignSagTimesKak),
+            '𒊛' => Ok(Cuneiform::SignSagTimesKur),
+            '𒊜' => Ok(Cuneiform::SignSagTimesLum),
+            '𒊝' => Ok(Cuneiform::SignSagTimesMi),
+            '𒊞' => Ok(Cuneiform::SignSagTimesNun),
+            '𒊟' => Ok(Cuneiform::SignSagTimesSal),
+            '𒊠' => Ok(Cuneiform::SignSagTimesShid),
+            '𒊡' => Ok(Cuneiform::SignSagTimesTab),
+            '𒊢' => Ok(Cuneiform::SignSagTimesU2),
+            '𒊣' => Ok(Cuneiform::SignSagTimesUb),
+            '𒊤' => Ok(Cuneiform::SignSagTimesUm),
+            '𒊥' => Ok(Cuneiform::SignSagTimesUr),
+            '𒊦' => Ok(Cuneiform::SignSagTimesUsh),
+            '𒊧' => Ok(Cuneiform::SignSagOverSag),
+            '𒊨' => Ok(Cuneiform::SignSagGunu),
+            '𒊩' => Ok(Cuneiform::SignSal),
+            '𒊪' => Ok(Cuneiform::SignSalLagabTimesAsh2),
+            '𒊫' => Ok(Cuneiform::SignSanga2),
+            '𒊬' => Ok(Cuneiform::SignSar),
+            '𒊭' => Ok(Cuneiform::SignSha),
+            '𒊮' => Ok(Cuneiform::SignSha3),
+            '𒊯' => Ok(Cuneiform::SignSha3TimesA),
+            '𒊰' => Ok(Cuneiform::SignSha3TimesBad),
+            '𒊱' => Ok(Cuneiform::SignSha3TimesGish),
+            '𒊲' => Ok(Cuneiform::SignSha3TimesNe),
+            '𒊳' => Ok(Cuneiform::SignSha3TimesShu2),
+            '𒊴' => Ok(Cuneiform::SignSha3TimesTur),
+            '𒊵' => Ok(Cuneiform::SignSha3TimesU),
+            '𒊶' => Ok(Cuneiform::SignSha3TimesUPlusA),
+            '𒊷' => Ok(Cuneiform::SignSha6),
+            '𒊸' => Ok(Cuneiform::SignShab6),
+            '𒊹' => Ok(Cuneiform::SignShar2),
+            '𒊺' => Ok(Cuneiform::SignShe),
+            '𒊻' => Ok(Cuneiform::SignSheHu),
+            '𒊼' => Ok(Cuneiform::SignSheOverSheGadOverGadGarOverGar),
+            '𒊽' => Ok(Cuneiform::SignSheOverSheTabOverTabGarOverGar),
+            '𒊾' => Ok(Cuneiform::SignSheg9),
+            '𒊿' => Ok(Cuneiform::SignShen),
+            '𒋀' => Ok(Cuneiform::SignShesh),
+            '𒋁' => Ok(Cuneiform::SignShesh2),
+            '𒋂' => Ok(Cuneiform::SignSheshlam),
+            '𒋃' => Ok(Cuneiform::SignShid),
+            '𒋄' => Ok(Cuneiform::SignShidTimesA),
+            '𒋅' => Ok(Cuneiform::SignShidTimesIm),
+            '𒋆' => Ok(Cuneiform::SignShim),
+            '𒋇' => Ok(Cuneiform::SignShimTimesA),
+            '𒋈' => Ok(Cuneiform::SignShimTimesBal),
+            '𒋉' => Ok(Cuneiform::SignShimTimesBulug),
+            '𒋊' => Ok(Cuneiform::SignShimTimesDin),
+            '𒋋' => Ok(Cuneiform::SignShimTimesGar),
+            '𒋌' => Ok(Cuneiform::SignShimTimesIgi),
+            '𒋍' => Ok(Cuneiform::SignShimTimesIgiGunu),
+            '𒋎' => Ok(Cuneiform::SignShimTimesKushu2),
+            '𒋏' => Ok(Cuneiform::SignShimTimesLul),
+            '𒋐' => Ok(Cuneiform::SignShimTimesMug),
+            '𒋑' => Ok(Cuneiform::SignShimTimesSal),
+            '𒋒' => Ok(Cuneiform::SignShinig),
+            '𒋓' => Ok(Cuneiform::SignShir),
+            '𒋔' => Ok(Cuneiform::SignShirTenu),
+            '𒋕' => Ok(Cuneiform::SignShirOverShirBurOverBur),
+            '𒋖' => Ok(Cuneiform::SignShita),
+            '𒋗' => Ok(Cuneiform::SignShu),
+            '𒋘' => Ok(Cuneiform::SignShuOverInvertedShu),
+            '𒋙' => Ok(Cuneiform::SignShu2),
+            '𒋚' => Ok(Cuneiform::SignShubur),
+            '𒋛' => Ok(Cuneiform::SignSi),
+            '𒋜' => Ok(Cuneiform::SignSiGunu),
+            '𒋝' => Ok(Cuneiform::SignSig),
+            '𒋞' => Ok(Cuneiform::SignSig4),
+            '𒋟' => Ok(Cuneiform::SignSig4OverSig4Shu2),
+            '𒋠' => Ok(Cuneiform::SignSik2),
+            '𒋡' => Ok(Cuneiform::SignSila3),
+            '𒋢' => Ok(Cuneiform::SignSu),
+            '𒋣' => Ok(Cuneiform::SignSuOverSu),
+            '𒋤' => Ok(Cuneiform::SignSud),
+            '𒋥' => Ok(Cuneiform::SignSud2),
+            '𒋦' => Ok(Cuneiform::SignSuhur),
+            '𒋧' => Ok(Cuneiform::SignSum),
+            '𒋨' => Ok(Cuneiform::SignSumash),
+            '𒋩' => Ok(Cuneiform::SignSur),
+            '𒋪' => Ok(Cuneiform::SignSur9),
+            '𒋫' => Ok(Cuneiform::SignTa),
+            '𒋬' => Ok(Cuneiform::SignTaAsterisk),
+            '𒋭' => Ok(Cuneiform::SignTaTimesHi),
+            '𒋮' => Ok(Cuneiform::SignTaTimesMi),
+            '𒋯' => Ok(Cuneiform::SignTaGunu),
+            '𒋰' => Ok(Cuneiform::SignTab),
+            '𒋱' => Ok(Cuneiform::SignTabOverTabNiOverNiDishOverDish),
+            '𒋲' => Ok(Cuneiform::SignTabSquared),
+            '𒋳' => Ok(Cuneiform::SignTag),
+            '𒋴' => Ok(Cuneiform::SignTagTimesBi),
+            '𒋵' => Ok(Cuneiform::SignTagTimesGud),
+            '𒋶' => Ok(Cuneiform::SignTagTimesShe),
+            '𒋷' => Ok(Cuneiform::SignTagTimesShu),
+            '𒋸' => Ok(Cuneiform::SignTagTimesTug2),
+            '𒋹' => Ok(Cuneiform::SignTagTimesUd),
+            '𒋺' => Ok(Cuneiform::SignTak4),
+            '𒋻' => Ok(Cuneiform::SignTar),
+            '𒋼' => Ok(Cuneiform::SignTe),
+            '𒋽' => Ok(Cuneiform::SignTeGunu),
+            '𒋾' => Ok(Cuneiform::SignTi),
+            '𒋿' => Ok(Cuneiform::SignTiTenu),
+            '𒌀' => Ok(Cuneiform::SignTil),
+            '𒌁' => Ok(Cuneiform::SignTir),
+            '𒌂' => Ok(Cuneiform::SignTirTimesTak4),
+            '𒌃' => Ok(Cuneiform::SignTirOverTir),
+            '𒌄' => Ok(Cuneiform::SignTirOverTirGadOverGadGarOverGar),
+            '𒌅' => Ok(Cuneiform::SignTu),
+            '𒌆' => Ok(Cuneiform::SignTug2),
+            '𒌇' => Ok(Cuneiform::SignTuk),
+            '𒌈' => Ok(Cuneiform::SignTum),
+            '𒌉' => Ok(Cuneiform::SignTur),
+            '𒌊' => Ok(Cuneiform::SignTurOverTurZaOverZa),
+            '𒌋' => Ok(Cuneiform::SignU),
+            '𒌌' => Ok(Cuneiform::SignUGud),
+            '𒌍' => Ok(Cuneiform::SignUUU),
+            '𒌎' => Ok(Cuneiform::SignUOverUPaOverPaGarOverGar),
+            '𒌏' => Ok(Cuneiform::SignUOverUSurOverSur),
+            '𒌐' => Ok(Cuneiform::SignUOverUUReversedOverUReversed),
+            '𒌑' => Ok(Cuneiform::SignU2),
+            '𒌒' => Ok(Cuneiform::SignUb),
+            '𒌓' => Ok(Cuneiform::SignUd),
+            '𒌔' => Ok(Cuneiform::SignUdKushu2),
+            '𒌕' => Ok(Cuneiform::SignUdTimesBad),
+            '𒌖' => Ok(Cuneiform::SignUdTimesMi),
+            '𒌗' => Ok(Cuneiform::SignUdTimesUPlusUPlusU),
+            '𒌘' => Ok(Cuneiform::SignUdTimesUPlusUPlusUGunu),
+            '𒌙' => Ok(Cuneiform::SignUdGunu),
+            '𒌚' => Ok(Cuneiform::SignUdSheshig),
+            '𒌛' => Ok(Cuneiform::SignUdSheshigTimesBad),
+            '𒌜' => Ok(Cuneiform::SignUdug),
+            '𒌝' => Ok(Cuneiform::SignUm),
+            '𒌞' => Ok(Cuneiform::SignUmTimesLagab),
+            '𒌟' => Ok(Cuneiform::SignUmTimesMePlusDa),
+            '𒌠' => Ok(Cuneiform::SignUmTimesSha3),
+            '𒌡' => Ok(Cuneiform::SignUmTimesU),
+            '𒌢' => Ok(Cuneiform::SignUmbin),
+            '𒌣' => Ok(Cuneiform::SignUmum),
+            '𒌤' => Ok(Cuneiform::SignUmumTimesKaskal),
+            '𒌥' => Ok(Cuneiform::SignUmumTimesPa),
+            '𒌦' => Ok(Cuneiform::SignUn),
+            '𒌧' => Ok(Cuneiform::SignUnGunu),
+            '𒌨' => Ok(Cuneiform::SignUr),
+            '𒌩' => Ok(Cuneiform::SignUrCrossingUr),
+            '𒌪' => Ok(Cuneiform::SignUrSheshig),
+            '𒌫' => Ok(Cuneiform::SignUr2),
+            '𒌬' => Ok(Cuneiform::SignUr2TimesAPlusHa),
+            '𒌭' => Ok(Cuneiform::SignUr2TimesAPlusNa),
+            '𒌮' => Ok(Cuneiform::SignUr2TimesAl),
+            '𒌯' => Ok(Cuneiform::SignUr2TimesHa),
+            '𒌰' => Ok(Cuneiform::SignUr2TimesNun),
+            '𒌱' => Ok(Cuneiform::SignUr2TimesU2),
+            '𒌲' => Ok(Cuneiform::SignUr2TimesU2PlusAsh),
+            '𒌳' => Ok(Cuneiform::SignUr2TimesU2PlusBi),
+            '𒌴' => Ok(Cuneiform::SignUr4),
+            '𒌵' => Ok(Cuneiform::SignUri),
+            '𒌶' => Ok(Cuneiform::SignUri3),
+            '𒌷' => Ok(Cuneiform::SignUru),
+            '𒌸' => Ok(Cuneiform::SignUruTimesA),
+            '𒌹' => Ok(Cuneiform::SignUruTimesAshgab),
+            '𒌺' => Ok(Cuneiform::SignUruTimesBar),
+            '𒌻' => Ok(Cuneiform::SignUruTimesDun),
+            '𒌼' => Ok(Cuneiform::SignUruTimesGa),
+            '𒌽' => Ok(Cuneiform::SignUruTimesGal),
+            '𒌾' => Ok(Cuneiform::SignUruTimesGan2Tenu),
+            '𒌿' => Ok(Cuneiform::SignUruTimesGar),
+            '𒍀' => Ok(Cuneiform::SignUruTimesGu),
+            '𒍁' => Ok(Cuneiform::SignUruTimesHa),
+            '𒍂' => Ok(Cuneiform::SignUruTimesIgi),
+            '𒍃' => Ok(Cuneiform::SignUruTimesIm),
+            '𒍄' => Ok(Cuneiform::SignUruTimesIsh),
+            '𒍅' => Ok(Cuneiform::SignUruTimesKi),
+            '𒍆' => Ok(Cuneiform::SignUruTimesLum),
+            '𒍇' => Ok(Cuneiform::SignUruTimesMin),
+            '𒍈' => Ok(Cuneiform::SignUruTimesPa),
+            '𒍉' => Ok(Cuneiform::SignUruTimesShe),
+            '𒍊' => Ok(Cuneiform::SignUruTimesSig4),
+            '𒍋' => Ok(Cuneiform::SignUruTimesTu),
+            '𒍌' => Ok(Cuneiform::SignUruTimesUPlusGud),
+            '𒍍' => Ok(Cuneiform::SignUruTimesUd),
+            '𒍎' => Ok(Cuneiform::SignUruTimesUruda),
+            '𒍏' => Ok(Cuneiform::SignUruda),
+            '𒍐' => Ok(Cuneiform::SignUrudaTimesU),
+            '𒍑' => Ok(Cuneiform::SignUsh),
+            '𒍒' => Ok(Cuneiform::SignUshTimesA),
+            '𒍓' => Ok(Cuneiform::SignUshTimesKu),
+            '𒍔' => Ok(Cuneiform::SignUshTimesKur),
+            '𒍕' => Ok(Cuneiform::SignUshTimesTak4),
+            '𒍖' => Ok(Cuneiform::SignUshx),
+            '𒍗' => Ok(Cuneiform::SignUsh2),
+            '𒍘' => Ok(Cuneiform::SignUshumx),
+            '𒍙' => Ok(Cuneiform::SignUtuki),
+            '𒍚' => Ok(Cuneiform::SignUz3),
+            '𒍛' => Ok(Cuneiform::SignUz3TimesKaskal),
+            '𒍜' => Ok(Cuneiform::SignUzu),
+            '𒍝' => Ok(Cuneiform::SignZa),
+            '𒍞' => Ok(Cuneiform::SignZaTenu),
+            '𒍟' => Ok(Cuneiform::SignZaSquaredTimesKur),
+            '𒍠' => Ok(Cuneiform::SignZag),
+            '𒍡' => Ok(Cuneiform::SignZamx),
+            '𒍢' => Ok(Cuneiform::SignZe2),
+            '𒍣' => Ok(Cuneiform::SignZi),
+            '𒍤' => Ok(Cuneiform::SignZiOverZi),
+            '𒍥' => Ok(Cuneiform::SignZi3),
+            '𒍦' => Ok(Cuneiform::SignZib),
+            '𒍧' => Ok(Cuneiform::SignZibKabaTenu),
+            '𒍨' => Ok(Cuneiform::SignZig),
+            '𒍩' => Ok(Cuneiform::SignZiz2),
+            '𒍪' => Ok(Cuneiform::SignZu),
+            '𒍫' => Ok(Cuneiform::SignZu5),
+            '𒍬' => Ok(Cuneiform::SignZu5TimesA),
+            '𒍭' => Ok(Cuneiform::SignZubur),
+            '𒍮' => Ok(Cuneiform::SignZum),
+            '𒍯' => Ok(Cuneiform::SignKapElamite),
+            '𒍰' => Ok(Cuneiform::SignAbTimesNun),
+            '𒍱' => Ok(Cuneiform::SignAb2TimesA),
+            '𒍲' => Ok(Cuneiform::SignAmarTimesKug),
+            '𒍳' => Ok(Cuneiform::SignDagKisim5TimesU2PlusMash),
+            '𒍴' => Ok(Cuneiform::SignDag3),
+            '𒍵' => Ok(Cuneiform::SignDishPlusShu),
+            '𒍶' => Ok(Cuneiform::SignDubTimesShe),
+            '𒍷' => Ok(Cuneiform::SignEzenTimesGud),
+            '𒍸' => Ok(Cuneiform::SignEzenTimesShe),
+            '𒍹' => Ok(Cuneiform::SignGa2TimesAnPlusKakPlusA),
+            '𒍺' => Ok(Cuneiform::SignGa2TimesAsh2),
+            '𒍻' => Ok(Cuneiform::SignGe22),
+            '𒍼' => Ok(Cuneiform::SignGig),
+            '𒍽' => Ok(Cuneiform::SignHush),
+            '𒍾' => Ok(Cuneiform::SignKaTimesAnshe),
+            '𒍿' => Ok(Cuneiform::SignKaTimesAsh3),
+            '𒎀' => Ok(Cuneiform::SignKaTimesGish),
+            '𒎁' => Ok(Cuneiform::SignKaTimesGud),
+            '𒎂' => Ok(Cuneiform::SignKaTimesHiTimesAsh2),
+            '𒎃' => Ok(Cuneiform::SignKaTimesLum),
+            '𒎄' => Ok(Cuneiform::SignKaTimesPa),
+            '𒎅' => Ok(Cuneiform::SignKaTimesShul),
+            '𒎆' => Ok(Cuneiform::SignKaTimesTu),
+            '𒎇' => Ok(Cuneiform::SignKaTimesUr2),
+            '𒎈' => Ok(Cuneiform::SignLagabTimesGi),
+            '𒎉' => Ok(Cuneiform::SignLu2SheshigTimesBad),
+            '𒎊' => Ok(Cuneiform::SignLu2TimesEsh2PlusLal),
+            '𒎋' => Ok(Cuneiform::SignLu2TimesShu),
+            '𒎌' => Ok(Cuneiform::SignMesh),
+            '𒎍' => Ok(Cuneiform::SignMush3TimesZa),
+            '𒎎' => Ok(Cuneiform::SignNa4),
+            '𒎏' => Ok(Cuneiform::SignNin),
+            '𒎐' => Ok(Cuneiform::SignNin9),
+            '𒎑' => Ok(Cuneiform::SignNinda2TimesBal),
+            '𒎒' => Ok(Cuneiform::SignNinda2TimesGi),
+            '𒎓' => Ok(Cuneiform::SignNu11RotatedNinetyDegrees),
+            '𒎔' => Ok(Cuneiform::SignPesh2Asterisk),
+            '𒎕' => Ok(Cuneiform::SignPir2),
+            '𒎖' => Ok(Cuneiform::SignSagTimesIgiGunu),
+            '𒎗' => Ok(Cuneiform::SignTi2),
+            '𒎘' => Ok(Cuneiform::SignUmTimesMe),
+            '𒎙' => Ok(Cuneiform::SignUU),
             _ => Err(()),
         }
     }

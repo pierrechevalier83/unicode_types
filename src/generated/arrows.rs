@@ -1,228 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2190}: '←'
-    pub const LEFTWARDS_ARROW: char = '←';
-    /// \u{2191}: '↑'
-    pub const UPWARDS_ARROW: char = '↑';
-    /// \u{2192}: '→'
-    pub const RIGHTWARDS_ARROW: char = '→';
-    /// \u{2193}: '↓'
-    pub const DOWNWARDS_ARROW: char = '↓';
-    /// \u{2194}: '↔'
-    pub const LEFT_RIGHT_ARROW: char = '↔';
-    /// \u{2195}: '↕'
-    pub const UP_DOWN_ARROW: char = '↕';
-    /// \u{2196}: '↖'
-    pub const NORTH_WEST_ARROW: char = '↖';
-    /// \u{2197}: '↗'
-    pub const NORTH_EAST_ARROW: char = '↗';
-    /// \u{2198}: '↘'
-    pub const SOUTH_EAST_ARROW: char = '↘';
-    /// \u{2199}: '↙'
-    pub const SOUTH_WEST_ARROW: char = '↙';
-    /// \u{219a}: '↚'
-    pub const LEFTWARDS_ARROW_WITH_STROKE: char = '↚';
-    /// \u{219b}: '↛'
-    pub const RIGHTWARDS_ARROW_WITH_STROKE: char = '↛';
-    /// \u{219c}: '↜'
-    pub const LEFTWARDS_WAVE_ARROW: char = '↜';
-    /// \u{219d}: '↝'
-    pub const RIGHTWARDS_WAVE_ARROW: char = '↝';
-    /// \u{219e}: '↞'
-    pub const LEFTWARDS_TWO_HEADED_ARROW: char = '↞';
-    /// \u{219f}: '↟'
-    pub const UPWARDS_TWO_HEADED_ARROW: char = '↟';
-    /// \u{21a0}: '↠'
-    pub const RIGHTWARDS_TWO_HEADED_ARROW: char = '↠';
-    /// \u{21a1}: '↡'
-    pub const DOWNWARDS_TWO_HEADED_ARROW: char = '↡';
-    /// \u{21a2}: '↢'
-    pub const LEFTWARDS_ARROW_WITH_TAIL: char = '↢';
-    /// \u{21a3}: '↣'
-    pub const RIGHTWARDS_ARROW_WITH_TAIL: char = '↣';
-    /// \u{21a4}: '↤'
-    pub const LEFTWARDS_ARROW_FROM_BAR: char = '↤';
-    /// \u{21a5}: '↥'
-    pub const UPWARDS_ARROW_FROM_BAR: char = '↥';
-    /// \u{21a6}: '↦'
-    pub const RIGHTWARDS_ARROW_FROM_BAR: char = '↦';
-    /// \u{21a7}: '↧'
-    pub const DOWNWARDS_ARROW_FROM_BAR: char = '↧';
-    /// \u{21a8}: '↨'
-    pub const UP_DOWN_ARROW_WITH_BASE: char = '↨';
-    /// \u{21a9}: '↩'
-    pub const LEFTWARDS_ARROW_WITH_HOOK: char = '↩';
-    /// \u{21aa}: '↪'
-    pub const RIGHTWARDS_ARROW_WITH_HOOK: char = '↪';
-    /// \u{21ab}: '↫'
-    pub const LEFTWARDS_ARROW_WITH_LOOP: char = '↫';
-    /// \u{21ac}: '↬'
-    pub const RIGHTWARDS_ARROW_WITH_LOOP: char = '↬';
-    /// \u{21ad}: '↭'
-    pub const LEFT_RIGHT_WAVE_ARROW: char = '↭';
-    /// \u{21ae}: '↮'
-    pub const LEFT_RIGHT_ARROW_WITH_STROKE: char = '↮';
-    /// \u{21af}: '↯'
-    pub const DOWNWARDS_ZIGZAG_ARROW: char = '↯';
-    /// \u{21b0}: '↰'
-    pub const UPWARDS_ARROW_WITH_TIP_LEFTWARDS: char = '↰';
-    /// \u{21b1}: '↱'
-    pub const UPWARDS_ARROW_WITH_TIP_RIGHTWARDS: char = '↱';
-    /// \u{21b2}: '↲'
-    pub const DOWNWARDS_ARROW_WITH_TIP_LEFTWARDS: char = '↲';
-    /// \u{21b3}: '↳'
-    pub const DOWNWARDS_ARROW_WITH_TIP_RIGHTWARDS: char = '↳';
-    /// \u{21b4}: '↴'
-    pub const RIGHTWARDS_ARROW_WITH_CORNER_DOWNWARDS: char = '↴';
-    /// \u{21b5}: '↵'
-    pub const DOWNWARDS_ARROW_WITH_CORNER_LEFTWARDS: char = '↵';
-    /// \u{21b6}: '↶'
-    pub const ANTICLOCKWISE_TOP_SEMICIRCLE_ARROW: char = '↶';
-    /// \u{21b7}: '↷'
-    pub const CLOCKWISE_TOP_SEMICIRCLE_ARROW: char = '↷';
-    /// \u{21b8}: '↸'
-    pub const NORTH_WEST_ARROW_TO_LONG_BAR: char = '↸';
-    /// \u{21b9}: '↹'
-    pub const LEFTWARDS_ARROW_TO_BAR_OVER_RIGHTWARDS_ARROW_TO_BAR: char = '↹';
-    /// \u{21ba}: '↺'
-    pub const ANTICLOCKWISE_OPEN_CIRCLE_ARROW: char = '↺';
-    /// \u{21bb}: '↻'
-    pub const CLOCKWISE_OPEN_CIRCLE_ARROW: char = '↻';
-    /// \u{21bc}: '↼'
-    pub const LEFTWARDS_HARPOON_WITH_BARB_UPWARDS: char = '↼';
-    /// \u{21bd}: '↽'
-    pub const LEFTWARDS_HARPOON_WITH_BARB_DOWNWARDS: char = '↽';
-    /// \u{21be}: '↾'
-    pub const UPWARDS_HARPOON_WITH_BARB_RIGHTWARDS: char = '↾';
-    /// \u{21bf}: '↿'
-    pub const UPWARDS_HARPOON_WITH_BARB_LEFTWARDS: char = '↿';
-    /// \u{21c0}: '⇀'
-    pub const RIGHTWARDS_HARPOON_WITH_BARB_UPWARDS: char = '⇀';
-    /// \u{21c1}: '⇁'
-    pub const RIGHTWARDS_HARPOON_WITH_BARB_DOWNWARDS: char = '⇁';
-    /// \u{21c2}: '⇂'
-    pub const DOWNWARDS_HARPOON_WITH_BARB_RIGHTWARDS: char = '⇂';
-    /// \u{21c3}: '⇃'
-    pub const DOWNWARDS_HARPOON_WITH_BARB_LEFTWARDS: char = '⇃';
-    /// \u{21c4}: '⇄'
-    pub const RIGHTWARDS_ARROW_OVER_LEFTWARDS_ARROW: char = '⇄';
-    /// \u{21c5}: '⇅'
-    pub const UPWARDS_ARROW_LEFTWARDS_OF_DOWNWARDS_ARROW: char = '⇅';
-    /// \u{21c6}: '⇆'
-    pub const LEFTWARDS_ARROW_OVER_RIGHTWARDS_ARROW: char = '⇆';
-    /// \u{21c7}: '⇇'
-    pub const LEFTWARDS_PAIRED_ARROWS: char = '⇇';
-    /// \u{21c8}: '⇈'
-    pub const UPWARDS_PAIRED_ARROWS: char = '⇈';
-    /// \u{21c9}: '⇉'
-    pub const RIGHTWARDS_PAIRED_ARROWS: char = '⇉';
-    /// \u{21ca}: '⇊'
-    pub const DOWNWARDS_PAIRED_ARROWS: char = '⇊';
-    /// \u{21cb}: '⇋'
-    pub const LEFTWARDS_HARPOON_OVER_RIGHTWARDS_HARPOON: char = '⇋';
-    /// \u{21cc}: '⇌'
-    pub const RIGHTWARDS_HARPOON_OVER_LEFTWARDS_HARPOON: char = '⇌';
-    /// \u{21cd}: '⇍'
-    pub const LEFTWARDS_DOUBLE_ARROW_WITH_STROKE: char = '⇍';
-    /// \u{21ce}: '⇎'
-    pub const LEFT_RIGHT_DOUBLE_ARROW_WITH_STROKE: char = '⇎';
-    /// \u{21cf}: '⇏'
-    pub const RIGHTWARDS_DOUBLE_ARROW_WITH_STROKE: char = '⇏';
-    /// \u{21d0}: '⇐'
-    pub const LEFTWARDS_DOUBLE_ARROW: char = '⇐';
-    /// \u{21d1}: '⇑'
-    pub const UPWARDS_DOUBLE_ARROW: char = '⇑';
-    /// \u{21d2}: '⇒'
-    pub const RIGHTWARDS_DOUBLE_ARROW: char = '⇒';
-    /// \u{21d3}: '⇓'
-    pub const DOWNWARDS_DOUBLE_ARROW: char = '⇓';
-    /// \u{21d4}: '⇔'
-    pub const LEFT_RIGHT_DOUBLE_ARROW: char = '⇔';
-    /// \u{21d5}: '⇕'
-    pub const UP_DOWN_DOUBLE_ARROW: char = '⇕';
-    /// \u{21d6}: '⇖'
-    pub const NORTH_WEST_DOUBLE_ARROW: char = '⇖';
-    /// \u{21d7}: '⇗'
-    pub const NORTH_EAST_DOUBLE_ARROW: char = '⇗';
-    /// \u{21d8}: '⇘'
-    pub const SOUTH_EAST_DOUBLE_ARROW: char = '⇘';
-    /// \u{21d9}: '⇙'
-    pub const SOUTH_WEST_DOUBLE_ARROW: char = '⇙';
-    /// \u{21da}: '⇚'
-    pub const LEFTWARDS_TRIPLE_ARROW: char = '⇚';
-    /// \u{21db}: '⇛'
-    pub const RIGHTWARDS_TRIPLE_ARROW: char = '⇛';
-    /// \u{21dc}: '⇜'
-    pub const LEFTWARDS_SQUIGGLE_ARROW: char = '⇜';
-    /// \u{21dd}: '⇝'
-    pub const RIGHTWARDS_SQUIGGLE_ARROW: char = '⇝';
-    /// \u{21de}: '⇞'
-    pub const UPWARDS_ARROW_WITH_DOUBLE_STROKE: char = '⇞';
-    /// \u{21df}: '⇟'
-    pub const DOWNWARDS_ARROW_WITH_DOUBLE_STROKE: char = '⇟';
-    /// \u{21e0}: '⇠'
-    pub const LEFTWARDS_DASHED_ARROW: char = '⇠';
-    /// \u{21e1}: '⇡'
-    pub const UPWARDS_DASHED_ARROW: char = '⇡';
-    /// \u{21e2}: '⇢'
-    pub const RIGHTWARDS_DASHED_ARROW: char = '⇢';
-    /// \u{21e3}: '⇣'
-    pub const DOWNWARDS_DASHED_ARROW: char = '⇣';
-    /// \u{21e4}: '⇤'
-    pub const LEFTWARDS_ARROW_TO_BAR: char = '⇤';
-    /// \u{21e5}: '⇥'
-    pub const RIGHTWARDS_ARROW_TO_BAR: char = '⇥';
-    /// \u{21e6}: '⇦'
-    pub const LEFTWARDS_WHITE_ARROW: char = '⇦';
-    /// \u{21e7}: '⇧'
-    pub const UPWARDS_WHITE_ARROW: char = '⇧';
-    /// \u{21e8}: '⇨'
-    pub const RIGHTWARDS_WHITE_ARROW: char = '⇨';
-    /// \u{21e9}: '⇩'
-    pub const DOWNWARDS_WHITE_ARROW: char = '⇩';
-    /// \u{21ea}: '⇪'
-    pub const UPWARDS_WHITE_ARROW_FROM_BAR: char = '⇪';
-    /// \u{21eb}: '⇫'
-    pub const UPWARDS_WHITE_ARROW_ON_PEDESTAL: char = '⇫';
-    /// \u{21ec}: '⇬'
-    pub const UPWARDS_WHITE_ARROW_ON_PEDESTAL_WITH_HORIZONTAL_BAR: char = '⇬';
-    /// \u{21ed}: '⇭'
-    pub const UPWARDS_WHITE_ARROW_ON_PEDESTAL_WITH_VERTICAL_BAR: char = '⇭';
-    /// \u{21ee}: '⇮'
-    pub const UPWARDS_WHITE_DOUBLE_ARROW: char = '⇮';
-    /// \u{21ef}: '⇯'
-    pub const UPWARDS_WHITE_DOUBLE_ARROW_ON_PEDESTAL: char = '⇯';
-    /// \u{21f0}: '⇰'
-    pub const RIGHTWARDS_WHITE_ARROW_FROM_WALL: char = '⇰';
-    /// \u{21f1}: '⇱'
-    pub const NORTH_WEST_ARROW_TO_CORNER: char = '⇱';
-    /// \u{21f2}: '⇲'
-    pub const SOUTH_EAST_ARROW_TO_CORNER: char = '⇲';
-    /// \u{21f3}: '⇳'
-    pub const UP_DOWN_WHITE_ARROW: char = '⇳';
-    /// \u{21f4}: '⇴'
-    pub const RIGHT_ARROW_WITH_SMALL_CIRCLE: char = '⇴';
-    /// \u{21f5}: '⇵'
-    pub const DOWNWARDS_ARROW_LEFTWARDS_OF_UPWARDS_ARROW: char = '⇵';
-    /// \u{21f6}: '⇶'
-    pub const THREE_RIGHTWARDS_ARROWS: char = '⇶';
-    /// \u{21f7}: '⇷'
-    pub const LEFTWARDS_ARROW_WITH_VERTICAL_STROKE: char = '⇷';
-    /// \u{21f8}: '⇸'
-    pub const RIGHTWARDS_ARROW_WITH_VERTICAL_STROKE: char = '⇸';
-    /// \u{21f9}: '⇹'
-    pub const LEFT_RIGHT_ARROW_WITH_VERTICAL_STROKE: char = '⇹';
-    /// \u{21fa}: '⇺'
-    pub const LEFTWARDS_ARROW_WITH_DOUBLE_VERTICAL_STROKE: char = '⇺';
-    /// \u{21fb}: '⇻'
-    pub const RIGHTWARDS_ARROW_WITH_DOUBLE_VERTICAL_STROKE: char = '⇻';
-    /// \u{21fc}: '⇼'
-    pub const LEFT_RIGHT_ARROW_WITH_DOUBLE_VERTICAL_STROKE: char = '⇼';
-    /// \u{21fd}: '⇽'
-    pub const LEFTWARDS_OPEN_DASH_HEADED_ARROW: char = '⇽';
-    /// \u{21fe}: '⇾'
-    pub const RIGHTWARDS_OPEN_DASH_HEADED_ARROW: char = '⇾';
-}
 
 /// An enum to represent all characters in the Arrows block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -453,119 +228,118 @@ pub enum Arrows {
 
 impl Into<char> for Arrows {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Arrows::LeftwardsArrow => LEFTWARDS_ARROW,
-            Arrows::UpwardsArrow => UPWARDS_ARROW,
-            Arrows::RightwardsArrow => RIGHTWARDS_ARROW,
-            Arrows::DownwardsArrow => DOWNWARDS_ARROW,
-            Arrows::LeftRightArrow => LEFT_RIGHT_ARROW,
-            Arrows::UpDownArrow => UP_DOWN_ARROW,
-            Arrows::NorthWestArrow => NORTH_WEST_ARROW,
-            Arrows::NorthEastArrow => NORTH_EAST_ARROW,
-            Arrows::SouthEastArrow => SOUTH_EAST_ARROW,
-            Arrows::SouthWestArrow => SOUTH_WEST_ARROW,
-            Arrows::LeftwardsArrowWithStroke => LEFTWARDS_ARROW_WITH_STROKE,
-            Arrows::RightwardsArrowWithStroke => RIGHTWARDS_ARROW_WITH_STROKE,
-            Arrows::LeftwardsWaveArrow => LEFTWARDS_WAVE_ARROW,
-            Arrows::RightwardsWaveArrow => RIGHTWARDS_WAVE_ARROW,
-            Arrows::LeftwardsTwoHeadedArrow => LEFTWARDS_TWO_HEADED_ARROW,
-            Arrows::UpwardsTwoHeadedArrow => UPWARDS_TWO_HEADED_ARROW,
-            Arrows::RightwardsTwoHeadedArrow => RIGHTWARDS_TWO_HEADED_ARROW,
-            Arrows::DownwardsTwoHeadedArrow => DOWNWARDS_TWO_HEADED_ARROW,
-            Arrows::LeftwardsArrowWithTail => LEFTWARDS_ARROW_WITH_TAIL,
-            Arrows::RightwardsArrowWithTail => RIGHTWARDS_ARROW_WITH_TAIL,
-            Arrows::LeftwardsArrowFromBar => LEFTWARDS_ARROW_FROM_BAR,
-            Arrows::UpwardsArrowFromBar => UPWARDS_ARROW_FROM_BAR,
-            Arrows::RightwardsArrowFromBar => RIGHTWARDS_ARROW_FROM_BAR,
-            Arrows::DownwardsArrowFromBar => DOWNWARDS_ARROW_FROM_BAR,
-            Arrows::UpDownArrowWithBase => UP_DOWN_ARROW_WITH_BASE,
-            Arrows::LeftwardsArrowWithHook => LEFTWARDS_ARROW_WITH_HOOK,
-            Arrows::RightwardsArrowWithHook => RIGHTWARDS_ARROW_WITH_HOOK,
-            Arrows::LeftwardsArrowWithLoop => LEFTWARDS_ARROW_WITH_LOOP,
-            Arrows::RightwardsArrowWithLoop => RIGHTWARDS_ARROW_WITH_LOOP,
-            Arrows::LeftRightWaveArrow => LEFT_RIGHT_WAVE_ARROW,
-            Arrows::LeftRightArrowWithStroke => LEFT_RIGHT_ARROW_WITH_STROKE,
-            Arrows::DownwardsZigzagArrow => DOWNWARDS_ZIGZAG_ARROW,
-            Arrows::UpwardsArrowWithTipLeftwards => UPWARDS_ARROW_WITH_TIP_LEFTWARDS,
-            Arrows::UpwardsArrowWithTipRightwards => UPWARDS_ARROW_WITH_TIP_RIGHTWARDS,
-            Arrows::DownwardsArrowWithTipLeftwards => DOWNWARDS_ARROW_WITH_TIP_LEFTWARDS,
-            Arrows::DownwardsArrowWithTipRightwards => DOWNWARDS_ARROW_WITH_TIP_RIGHTWARDS,
-            Arrows::RightwardsArrowWithCornerDownwards => RIGHTWARDS_ARROW_WITH_CORNER_DOWNWARDS,
-            Arrows::DownwardsArrowWithCornerLeftwards => DOWNWARDS_ARROW_WITH_CORNER_LEFTWARDS,
-            Arrows::AnticlockwiseTopSemicircleArrow => ANTICLOCKWISE_TOP_SEMICIRCLE_ARROW,
-            Arrows::ClockwiseTopSemicircleArrow => CLOCKWISE_TOP_SEMICIRCLE_ARROW,
-            Arrows::NorthWestArrowToLongBar => NORTH_WEST_ARROW_TO_LONG_BAR,
-            Arrows::LeftwardsArrowToBarOverRightwardsArrowToBar => LEFTWARDS_ARROW_TO_BAR_OVER_RIGHTWARDS_ARROW_TO_BAR,
-            Arrows::AnticlockwiseOpenCircleArrow => ANTICLOCKWISE_OPEN_CIRCLE_ARROW,
-            Arrows::ClockwiseOpenCircleArrow => CLOCKWISE_OPEN_CIRCLE_ARROW,
-            Arrows::LeftwardsHarpoonWithBarbUpwards => LEFTWARDS_HARPOON_WITH_BARB_UPWARDS,
-            Arrows::LeftwardsHarpoonWithBarbDownwards => LEFTWARDS_HARPOON_WITH_BARB_DOWNWARDS,
-            Arrows::UpwardsHarpoonWithBarbRightwards => UPWARDS_HARPOON_WITH_BARB_RIGHTWARDS,
-            Arrows::UpwardsHarpoonWithBarbLeftwards => UPWARDS_HARPOON_WITH_BARB_LEFTWARDS,
-            Arrows::RightwardsHarpoonWithBarbUpwards => RIGHTWARDS_HARPOON_WITH_BARB_UPWARDS,
-            Arrows::RightwardsHarpoonWithBarbDownwards => RIGHTWARDS_HARPOON_WITH_BARB_DOWNWARDS,
-            Arrows::DownwardsHarpoonWithBarbRightwards => DOWNWARDS_HARPOON_WITH_BARB_RIGHTWARDS,
-            Arrows::DownwardsHarpoonWithBarbLeftwards => DOWNWARDS_HARPOON_WITH_BARB_LEFTWARDS,
-            Arrows::RightwardsArrowOverLeftwardsArrow => RIGHTWARDS_ARROW_OVER_LEFTWARDS_ARROW,
-            Arrows::UpwardsArrowLeftwardsOfDownwardsArrow => UPWARDS_ARROW_LEFTWARDS_OF_DOWNWARDS_ARROW,
-            Arrows::LeftwardsArrowOverRightwardsArrow => LEFTWARDS_ARROW_OVER_RIGHTWARDS_ARROW,
-            Arrows::LeftwardsPaired => LEFTWARDS_PAIRED_ARROWS,
-            Arrows::UpwardsPaired => UPWARDS_PAIRED_ARROWS,
-            Arrows::RightwardsPaired => RIGHTWARDS_PAIRED_ARROWS,
-            Arrows::DownwardsPaired => DOWNWARDS_PAIRED_ARROWS,
-            Arrows::LeftwardsHarpoonOverRightwardsHarpoon => LEFTWARDS_HARPOON_OVER_RIGHTWARDS_HARPOON,
-            Arrows::RightwardsHarpoonOverLeftwardsHarpoon => RIGHTWARDS_HARPOON_OVER_LEFTWARDS_HARPOON,
-            Arrows::LeftwardsDoubleArrowWithStroke => LEFTWARDS_DOUBLE_ARROW_WITH_STROKE,
-            Arrows::LeftRightDoubleArrowWithStroke => LEFT_RIGHT_DOUBLE_ARROW_WITH_STROKE,
-            Arrows::RightwardsDoubleArrowWithStroke => RIGHTWARDS_DOUBLE_ARROW_WITH_STROKE,
-            Arrows::LeftwardsDoubleArrow => LEFTWARDS_DOUBLE_ARROW,
-            Arrows::UpwardsDoubleArrow => UPWARDS_DOUBLE_ARROW,
-            Arrows::RightwardsDoubleArrow => RIGHTWARDS_DOUBLE_ARROW,
-            Arrows::DownwardsDoubleArrow => DOWNWARDS_DOUBLE_ARROW,
-            Arrows::LeftRightDoubleArrow => LEFT_RIGHT_DOUBLE_ARROW,
-            Arrows::UpDownDoubleArrow => UP_DOWN_DOUBLE_ARROW,
-            Arrows::NorthWestDoubleArrow => NORTH_WEST_DOUBLE_ARROW,
-            Arrows::NorthEastDoubleArrow => NORTH_EAST_DOUBLE_ARROW,
-            Arrows::SouthEastDoubleArrow => SOUTH_EAST_DOUBLE_ARROW,
-            Arrows::SouthWestDoubleArrow => SOUTH_WEST_DOUBLE_ARROW,
-            Arrows::LeftwardsTripleArrow => LEFTWARDS_TRIPLE_ARROW,
-            Arrows::RightwardsTripleArrow => RIGHTWARDS_TRIPLE_ARROW,
-            Arrows::LeftwardsSquiggleArrow => LEFTWARDS_SQUIGGLE_ARROW,
-            Arrows::RightwardsSquiggleArrow => RIGHTWARDS_SQUIGGLE_ARROW,
-            Arrows::UpwardsArrowWithDoubleStroke => UPWARDS_ARROW_WITH_DOUBLE_STROKE,
-            Arrows::DownwardsArrowWithDoubleStroke => DOWNWARDS_ARROW_WITH_DOUBLE_STROKE,
-            Arrows::LeftwardsDashedArrow => LEFTWARDS_DASHED_ARROW,
-            Arrows::UpwardsDashedArrow => UPWARDS_DASHED_ARROW,
-            Arrows::RightwardsDashedArrow => RIGHTWARDS_DASHED_ARROW,
-            Arrows::DownwardsDashedArrow => DOWNWARDS_DASHED_ARROW,
-            Arrows::LeftwardsArrowToBar => LEFTWARDS_ARROW_TO_BAR,
-            Arrows::RightwardsArrowToBar => RIGHTWARDS_ARROW_TO_BAR,
-            Arrows::LeftwardsWhiteArrow => LEFTWARDS_WHITE_ARROW,
-            Arrows::UpwardsWhiteArrow => UPWARDS_WHITE_ARROW,
-            Arrows::RightwardsWhiteArrow => RIGHTWARDS_WHITE_ARROW,
-            Arrows::DownwardsWhiteArrow => DOWNWARDS_WHITE_ARROW,
-            Arrows::UpwardsWhiteArrowFromBar => UPWARDS_WHITE_ARROW_FROM_BAR,
-            Arrows::UpwardsWhiteArrowOnPedestal => UPWARDS_WHITE_ARROW_ON_PEDESTAL,
-            Arrows::UpwardsWhiteArrowOnPedestalWithHorizontalBar => UPWARDS_WHITE_ARROW_ON_PEDESTAL_WITH_HORIZONTAL_BAR,
-            Arrows::UpwardsWhiteArrowOnPedestalWithVerticalBar => UPWARDS_WHITE_ARROW_ON_PEDESTAL_WITH_VERTICAL_BAR,
-            Arrows::UpwardsWhiteDoubleArrow => UPWARDS_WHITE_DOUBLE_ARROW,
-            Arrows::UpwardsWhiteDoubleArrowOnPedestal => UPWARDS_WHITE_DOUBLE_ARROW_ON_PEDESTAL,
-            Arrows::RightwardsWhiteArrowFromWall => RIGHTWARDS_WHITE_ARROW_FROM_WALL,
-            Arrows::NorthWestArrowToCorner => NORTH_WEST_ARROW_TO_CORNER,
-            Arrows::SouthEastArrowToCorner => SOUTH_EAST_ARROW_TO_CORNER,
-            Arrows::UpDownWhiteArrow => UP_DOWN_WHITE_ARROW,
-            Arrows::RightArrowWithSmallCircle => RIGHT_ARROW_WITH_SMALL_CIRCLE,
-            Arrows::DownwardsArrowLeftwardsOfUpwardsArrow => DOWNWARDS_ARROW_LEFTWARDS_OF_UPWARDS_ARROW,
-            Arrows::ThreeRightwards => THREE_RIGHTWARDS_ARROWS,
-            Arrows::LeftwardsArrowWithVerticalStroke => LEFTWARDS_ARROW_WITH_VERTICAL_STROKE,
-            Arrows::RightwardsArrowWithVerticalStroke => RIGHTWARDS_ARROW_WITH_VERTICAL_STROKE,
-            Arrows::LeftRightArrowWithVerticalStroke => LEFT_RIGHT_ARROW_WITH_VERTICAL_STROKE,
-            Arrows::LeftwardsArrowWithDoubleVerticalStroke => LEFTWARDS_ARROW_WITH_DOUBLE_VERTICAL_STROKE,
-            Arrows::RightwardsArrowWithDoubleVerticalStroke => RIGHTWARDS_ARROW_WITH_DOUBLE_VERTICAL_STROKE,
-            Arrows::LeftRightArrowWithDoubleVerticalStroke => LEFT_RIGHT_ARROW_WITH_DOUBLE_VERTICAL_STROKE,
-            Arrows::LeftwardsOpenDashHeadedArrow => LEFTWARDS_OPEN_DASH_HEADED_ARROW,
-            Arrows::RightwardsOpenDashHeadedArrow => RIGHTWARDS_OPEN_DASH_HEADED_ARROW,
+            Arrows::LeftwardsArrow => '←',
+            Arrows::UpwardsArrow => '↑',
+            Arrows::RightwardsArrow => '→',
+            Arrows::DownwardsArrow => '↓',
+            Arrows::LeftRightArrow => '↔',
+            Arrows::UpDownArrow => '↕',
+            Arrows::NorthWestArrow => '↖',
+            Arrows::NorthEastArrow => '↗',
+            Arrows::SouthEastArrow => '↘',
+            Arrows::SouthWestArrow => '↙',
+            Arrows::LeftwardsArrowWithStroke => '↚',
+            Arrows::RightwardsArrowWithStroke => '↛',
+            Arrows::LeftwardsWaveArrow => '↜',
+            Arrows::RightwardsWaveArrow => '↝',
+            Arrows::LeftwardsTwoHeadedArrow => '↞',
+            Arrows::UpwardsTwoHeadedArrow => '↟',
+            Arrows::RightwardsTwoHeadedArrow => '↠',
+            Arrows::DownwardsTwoHeadedArrow => '↡',
+            Arrows::LeftwardsArrowWithTail => '↢',
+            Arrows::RightwardsArrowWithTail => '↣',
+            Arrows::LeftwardsArrowFromBar => '↤',
+            Arrows::UpwardsArrowFromBar => '↥',
+            Arrows::RightwardsArrowFromBar => '↦',
+            Arrows::DownwardsArrowFromBar => '↧',
+            Arrows::UpDownArrowWithBase => '↨',
+            Arrows::LeftwardsArrowWithHook => '↩',
+            Arrows::RightwardsArrowWithHook => '↪',
+            Arrows::LeftwardsArrowWithLoop => '↫',
+            Arrows::RightwardsArrowWithLoop => '↬',
+            Arrows::LeftRightWaveArrow => '↭',
+            Arrows::LeftRightArrowWithStroke => '↮',
+            Arrows::DownwardsZigzagArrow => '↯',
+            Arrows::UpwardsArrowWithTipLeftwards => '↰',
+            Arrows::UpwardsArrowWithTipRightwards => '↱',
+            Arrows::DownwardsArrowWithTipLeftwards => '↲',
+            Arrows::DownwardsArrowWithTipRightwards => '↳',
+            Arrows::RightwardsArrowWithCornerDownwards => '↴',
+            Arrows::DownwardsArrowWithCornerLeftwards => '↵',
+            Arrows::AnticlockwiseTopSemicircleArrow => '↶',
+            Arrows::ClockwiseTopSemicircleArrow => '↷',
+            Arrows::NorthWestArrowToLongBar => '↸',
+            Arrows::LeftwardsArrowToBarOverRightwardsArrowToBar => '↹',
+            Arrows::AnticlockwiseOpenCircleArrow => '↺',
+            Arrows::ClockwiseOpenCircleArrow => '↻',
+            Arrows::LeftwardsHarpoonWithBarbUpwards => '↼',
+            Arrows::LeftwardsHarpoonWithBarbDownwards => '↽',
+            Arrows::UpwardsHarpoonWithBarbRightwards => '↾',
+            Arrows::UpwardsHarpoonWithBarbLeftwards => '↿',
+            Arrows::RightwardsHarpoonWithBarbUpwards => '⇀',
+            Arrows::RightwardsHarpoonWithBarbDownwards => '⇁',
+            Arrows::DownwardsHarpoonWithBarbRightwards => '⇂',
+            Arrows::DownwardsHarpoonWithBarbLeftwards => '⇃',
+            Arrows::RightwardsArrowOverLeftwardsArrow => '⇄',
+            Arrows::UpwardsArrowLeftwardsOfDownwardsArrow => '⇅',
+            Arrows::LeftwardsArrowOverRightwardsArrow => '⇆',
+            Arrows::LeftwardsPaired => '⇇',
+            Arrows::UpwardsPaired => '⇈',
+            Arrows::RightwardsPaired => '⇉',
+            Arrows::DownwardsPaired => '⇊',
+            Arrows::LeftwardsHarpoonOverRightwardsHarpoon => '⇋',
+            Arrows::RightwardsHarpoonOverLeftwardsHarpoon => '⇌',
+            Arrows::LeftwardsDoubleArrowWithStroke => '⇍',
+            Arrows::LeftRightDoubleArrowWithStroke => '⇎',
+            Arrows::RightwardsDoubleArrowWithStroke => '⇏',
+            Arrows::LeftwardsDoubleArrow => '⇐',
+            Arrows::UpwardsDoubleArrow => '⇑',
+            Arrows::RightwardsDoubleArrow => '⇒',
+            Arrows::DownwardsDoubleArrow => '⇓',
+            Arrows::LeftRightDoubleArrow => '⇔',
+            Arrows::UpDownDoubleArrow => '⇕',
+            Arrows::NorthWestDoubleArrow => '⇖',
+            Arrows::NorthEastDoubleArrow => '⇗',
+            Arrows::SouthEastDoubleArrow => '⇘',
+            Arrows::SouthWestDoubleArrow => '⇙',
+            Arrows::LeftwardsTripleArrow => '⇚',
+            Arrows::RightwardsTripleArrow => '⇛',
+            Arrows::LeftwardsSquiggleArrow => '⇜',
+            Arrows::RightwardsSquiggleArrow => '⇝',
+            Arrows::UpwardsArrowWithDoubleStroke => '⇞',
+            Arrows::DownwardsArrowWithDoubleStroke => '⇟',
+            Arrows::LeftwardsDashedArrow => '⇠',
+            Arrows::UpwardsDashedArrow => '⇡',
+            Arrows::RightwardsDashedArrow => '⇢',
+            Arrows::DownwardsDashedArrow => '⇣',
+            Arrows::LeftwardsArrowToBar => '⇤',
+            Arrows::RightwardsArrowToBar => '⇥',
+            Arrows::LeftwardsWhiteArrow => '⇦',
+            Arrows::UpwardsWhiteArrow => '⇧',
+            Arrows::RightwardsWhiteArrow => '⇨',
+            Arrows::DownwardsWhiteArrow => '⇩',
+            Arrows::UpwardsWhiteArrowFromBar => '⇪',
+            Arrows::UpwardsWhiteArrowOnPedestal => '⇫',
+            Arrows::UpwardsWhiteArrowOnPedestalWithHorizontalBar => '⇬',
+            Arrows::UpwardsWhiteArrowOnPedestalWithVerticalBar => '⇭',
+            Arrows::UpwardsWhiteDoubleArrow => '⇮',
+            Arrows::UpwardsWhiteDoubleArrowOnPedestal => '⇯',
+            Arrows::RightwardsWhiteArrowFromWall => '⇰',
+            Arrows::NorthWestArrowToCorner => '⇱',
+            Arrows::SouthEastArrowToCorner => '⇲',
+            Arrows::UpDownWhiteArrow => '⇳',
+            Arrows::RightArrowWithSmallCircle => '⇴',
+            Arrows::DownwardsArrowLeftwardsOfUpwardsArrow => '⇵',
+            Arrows::ThreeRightwards => '⇶',
+            Arrows::LeftwardsArrowWithVerticalStroke => '⇷',
+            Arrows::RightwardsArrowWithVerticalStroke => '⇸',
+            Arrows::LeftRightArrowWithVerticalStroke => '⇹',
+            Arrows::LeftwardsArrowWithDoubleVerticalStroke => '⇺',
+            Arrows::RightwardsArrowWithDoubleVerticalStroke => '⇻',
+            Arrows::LeftRightArrowWithDoubleVerticalStroke => '⇼',
+            Arrows::LeftwardsOpenDashHeadedArrow => '⇽',
+            Arrows::RightwardsOpenDashHeadedArrow => '⇾',
         }
     }
 }
@@ -573,119 +347,118 @@ impl Into<char> for Arrows {
 impl std::convert::TryFrom<char> for Arrows {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LEFTWARDS_ARROW => Ok(Arrows::LeftwardsArrow),
-            UPWARDS_ARROW => Ok(Arrows::UpwardsArrow),
-            RIGHTWARDS_ARROW => Ok(Arrows::RightwardsArrow),
-            DOWNWARDS_ARROW => Ok(Arrows::DownwardsArrow),
-            LEFT_RIGHT_ARROW => Ok(Arrows::LeftRightArrow),
-            UP_DOWN_ARROW => Ok(Arrows::UpDownArrow),
-            NORTH_WEST_ARROW => Ok(Arrows::NorthWestArrow),
-            NORTH_EAST_ARROW => Ok(Arrows::NorthEastArrow),
-            SOUTH_EAST_ARROW => Ok(Arrows::SouthEastArrow),
-            SOUTH_WEST_ARROW => Ok(Arrows::SouthWestArrow),
-            LEFTWARDS_ARROW_WITH_STROKE => Ok(Arrows::LeftwardsArrowWithStroke),
-            RIGHTWARDS_ARROW_WITH_STROKE => Ok(Arrows::RightwardsArrowWithStroke),
-            LEFTWARDS_WAVE_ARROW => Ok(Arrows::LeftwardsWaveArrow),
-            RIGHTWARDS_WAVE_ARROW => Ok(Arrows::RightwardsWaveArrow),
-            LEFTWARDS_TWO_HEADED_ARROW => Ok(Arrows::LeftwardsTwoHeadedArrow),
-            UPWARDS_TWO_HEADED_ARROW => Ok(Arrows::UpwardsTwoHeadedArrow),
-            RIGHTWARDS_TWO_HEADED_ARROW => Ok(Arrows::RightwardsTwoHeadedArrow),
-            DOWNWARDS_TWO_HEADED_ARROW => Ok(Arrows::DownwardsTwoHeadedArrow),
-            LEFTWARDS_ARROW_WITH_TAIL => Ok(Arrows::LeftwardsArrowWithTail),
-            RIGHTWARDS_ARROW_WITH_TAIL => Ok(Arrows::RightwardsArrowWithTail),
-            LEFTWARDS_ARROW_FROM_BAR => Ok(Arrows::LeftwardsArrowFromBar),
-            UPWARDS_ARROW_FROM_BAR => Ok(Arrows::UpwardsArrowFromBar),
-            RIGHTWARDS_ARROW_FROM_BAR => Ok(Arrows::RightwardsArrowFromBar),
-            DOWNWARDS_ARROW_FROM_BAR => Ok(Arrows::DownwardsArrowFromBar),
-            UP_DOWN_ARROW_WITH_BASE => Ok(Arrows::UpDownArrowWithBase),
-            LEFTWARDS_ARROW_WITH_HOOK => Ok(Arrows::LeftwardsArrowWithHook),
-            RIGHTWARDS_ARROW_WITH_HOOK => Ok(Arrows::RightwardsArrowWithHook),
-            LEFTWARDS_ARROW_WITH_LOOP => Ok(Arrows::LeftwardsArrowWithLoop),
-            RIGHTWARDS_ARROW_WITH_LOOP => Ok(Arrows::RightwardsArrowWithLoop),
-            LEFT_RIGHT_WAVE_ARROW => Ok(Arrows::LeftRightWaveArrow),
-            LEFT_RIGHT_ARROW_WITH_STROKE => Ok(Arrows::LeftRightArrowWithStroke),
-            DOWNWARDS_ZIGZAG_ARROW => Ok(Arrows::DownwardsZigzagArrow),
-            UPWARDS_ARROW_WITH_TIP_LEFTWARDS => Ok(Arrows::UpwardsArrowWithTipLeftwards),
-            UPWARDS_ARROW_WITH_TIP_RIGHTWARDS => Ok(Arrows::UpwardsArrowWithTipRightwards),
-            DOWNWARDS_ARROW_WITH_TIP_LEFTWARDS => Ok(Arrows::DownwardsArrowWithTipLeftwards),
-            DOWNWARDS_ARROW_WITH_TIP_RIGHTWARDS => Ok(Arrows::DownwardsArrowWithTipRightwards),
-            RIGHTWARDS_ARROW_WITH_CORNER_DOWNWARDS => Ok(Arrows::RightwardsArrowWithCornerDownwards),
-            DOWNWARDS_ARROW_WITH_CORNER_LEFTWARDS => Ok(Arrows::DownwardsArrowWithCornerLeftwards),
-            ANTICLOCKWISE_TOP_SEMICIRCLE_ARROW => Ok(Arrows::AnticlockwiseTopSemicircleArrow),
-            CLOCKWISE_TOP_SEMICIRCLE_ARROW => Ok(Arrows::ClockwiseTopSemicircleArrow),
-            NORTH_WEST_ARROW_TO_LONG_BAR => Ok(Arrows::NorthWestArrowToLongBar),
-            LEFTWARDS_ARROW_TO_BAR_OVER_RIGHTWARDS_ARROW_TO_BAR => Ok(Arrows::LeftwardsArrowToBarOverRightwardsArrowToBar),
-            ANTICLOCKWISE_OPEN_CIRCLE_ARROW => Ok(Arrows::AnticlockwiseOpenCircleArrow),
-            CLOCKWISE_OPEN_CIRCLE_ARROW => Ok(Arrows::ClockwiseOpenCircleArrow),
-            LEFTWARDS_HARPOON_WITH_BARB_UPWARDS => Ok(Arrows::LeftwardsHarpoonWithBarbUpwards),
-            LEFTWARDS_HARPOON_WITH_BARB_DOWNWARDS => Ok(Arrows::LeftwardsHarpoonWithBarbDownwards),
-            UPWARDS_HARPOON_WITH_BARB_RIGHTWARDS => Ok(Arrows::UpwardsHarpoonWithBarbRightwards),
-            UPWARDS_HARPOON_WITH_BARB_LEFTWARDS => Ok(Arrows::UpwardsHarpoonWithBarbLeftwards),
-            RIGHTWARDS_HARPOON_WITH_BARB_UPWARDS => Ok(Arrows::RightwardsHarpoonWithBarbUpwards),
-            RIGHTWARDS_HARPOON_WITH_BARB_DOWNWARDS => Ok(Arrows::RightwardsHarpoonWithBarbDownwards),
-            DOWNWARDS_HARPOON_WITH_BARB_RIGHTWARDS => Ok(Arrows::DownwardsHarpoonWithBarbRightwards),
-            DOWNWARDS_HARPOON_WITH_BARB_LEFTWARDS => Ok(Arrows::DownwardsHarpoonWithBarbLeftwards),
-            RIGHTWARDS_ARROW_OVER_LEFTWARDS_ARROW => Ok(Arrows::RightwardsArrowOverLeftwardsArrow),
-            UPWARDS_ARROW_LEFTWARDS_OF_DOWNWARDS_ARROW => Ok(Arrows::UpwardsArrowLeftwardsOfDownwardsArrow),
-            LEFTWARDS_ARROW_OVER_RIGHTWARDS_ARROW => Ok(Arrows::LeftwardsArrowOverRightwardsArrow),
-            LEFTWARDS_PAIRED_ARROWS => Ok(Arrows::LeftwardsPaired),
-            UPWARDS_PAIRED_ARROWS => Ok(Arrows::UpwardsPaired),
-            RIGHTWARDS_PAIRED_ARROWS => Ok(Arrows::RightwardsPaired),
-            DOWNWARDS_PAIRED_ARROWS => Ok(Arrows::DownwardsPaired),
-            LEFTWARDS_HARPOON_OVER_RIGHTWARDS_HARPOON => Ok(Arrows::LeftwardsHarpoonOverRightwardsHarpoon),
-            RIGHTWARDS_HARPOON_OVER_LEFTWARDS_HARPOON => Ok(Arrows::RightwardsHarpoonOverLeftwardsHarpoon),
-            LEFTWARDS_DOUBLE_ARROW_WITH_STROKE => Ok(Arrows::LeftwardsDoubleArrowWithStroke),
-            LEFT_RIGHT_DOUBLE_ARROW_WITH_STROKE => Ok(Arrows::LeftRightDoubleArrowWithStroke),
-            RIGHTWARDS_DOUBLE_ARROW_WITH_STROKE => Ok(Arrows::RightwardsDoubleArrowWithStroke),
-            LEFTWARDS_DOUBLE_ARROW => Ok(Arrows::LeftwardsDoubleArrow),
-            UPWARDS_DOUBLE_ARROW => Ok(Arrows::UpwardsDoubleArrow),
-            RIGHTWARDS_DOUBLE_ARROW => Ok(Arrows::RightwardsDoubleArrow),
-            DOWNWARDS_DOUBLE_ARROW => Ok(Arrows::DownwardsDoubleArrow),
-            LEFT_RIGHT_DOUBLE_ARROW => Ok(Arrows::LeftRightDoubleArrow),
-            UP_DOWN_DOUBLE_ARROW => Ok(Arrows::UpDownDoubleArrow),
-            NORTH_WEST_DOUBLE_ARROW => Ok(Arrows::NorthWestDoubleArrow),
-            NORTH_EAST_DOUBLE_ARROW => Ok(Arrows::NorthEastDoubleArrow),
-            SOUTH_EAST_DOUBLE_ARROW => Ok(Arrows::SouthEastDoubleArrow),
-            SOUTH_WEST_DOUBLE_ARROW => Ok(Arrows::SouthWestDoubleArrow),
-            LEFTWARDS_TRIPLE_ARROW => Ok(Arrows::LeftwardsTripleArrow),
-            RIGHTWARDS_TRIPLE_ARROW => Ok(Arrows::RightwardsTripleArrow),
-            LEFTWARDS_SQUIGGLE_ARROW => Ok(Arrows::LeftwardsSquiggleArrow),
-            RIGHTWARDS_SQUIGGLE_ARROW => Ok(Arrows::RightwardsSquiggleArrow),
-            UPWARDS_ARROW_WITH_DOUBLE_STROKE => Ok(Arrows::UpwardsArrowWithDoubleStroke),
-            DOWNWARDS_ARROW_WITH_DOUBLE_STROKE => Ok(Arrows::DownwardsArrowWithDoubleStroke),
-            LEFTWARDS_DASHED_ARROW => Ok(Arrows::LeftwardsDashedArrow),
-            UPWARDS_DASHED_ARROW => Ok(Arrows::UpwardsDashedArrow),
-            RIGHTWARDS_DASHED_ARROW => Ok(Arrows::RightwardsDashedArrow),
-            DOWNWARDS_DASHED_ARROW => Ok(Arrows::DownwardsDashedArrow),
-            LEFTWARDS_ARROW_TO_BAR => Ok(Arrows::LeftwardsArrowToBar),
-            RIGHTWARDS_ARROW_TO_BAR => Ok(Arrows::RightwardsArrowToBar),
-            LEFTWARDS_WHITE_ARROW => Ok(Arrows::LeftwardsWhiteArrow),
-            UPWARDS_WHITE_ARROW => Ok(Arrows::UpwardsWhiteArrow),
-            RIGHTWARDS_WHITE_ARROW => Ok(Arrows::RightwardsWhiteArrow),
-            DOWNWARDS_WHITE_ARROW => Ok(Arrows::DownwardsWhiteArrow),
-            UPWARDS_WHITE_ARROW_FROM_BAR => Ok(Arrows::UpwardsWhiteArrowFromBar),
-            UPWARDS_WHITE_ARROW_ON_PEDESTAL => Ok(Arrows::UpwardsWhiteArrowOnPedestal),
-            UPWARDS_WHITE_ARROW_ON_PEDESTAL_WITH_HORIZONTAL_BAR => Ok(Arrows::UpwardsWhiteArrowOnPedestalWithHorizontalBar),
-            UPWARDS_WHITE_ARROW_ON_PEDESTAL_WITH_VERTICAL_BAR => Ok(Arrows::UpwardsWhiteArrowOnPedestalWithVerticalBar),
-            UPWARDS_WHITE_DOUBLE_ARROW => Ok(Arrows::UpwardsWhiteDoubleArrow),
-            UPWARDS_WHITE_DOUBLE_ARROW_ON_PEDESTAL => Ok(Arrows::UpwardsWhiteDoubleArrowOnPedestal),
-            RIGHTWARDS_WHITE_ARROW_FROM_WALL => Ok(Arrows::RightwardsWhiteArrowFromWall),
-            NORTH_WEST_ARROW_TO_CORNER => Ok(Arrows::NorthWestArrowToCorner),
-            SOUTH_EAST_ARROW_TO_CORNER => Ok(Arrows::SouthEastArrowToCorner),
-            UP_DOWN_WHITE_ARROW => Ok(Arrows::UpDownWhiteArrow),
-            RIGHT_ARROW_WITH_SMALL_CIRCLE => Ok(Arrows::RightArrowWithSmallCircle),
-            DOWNWARDS_ARROW_LEFTWARDS_OF_UPWARDS_ARROW => Ok(Arrows::DownwardsArrowLeftwardsOfUpwardsArrow),
-            THREE_RIGHTWARDS_ARROWS => Ok(Arrows::ThreeRightwards),
-            LEFTWARDS_ARROW_WITH_VERTICAL_STROKE => Ok(Arrows::LeftwardsArrowWithVerticalStroke),
-            RIGHTWARDS_ARROW_WITH_VERTICAL_STROKE => Ok(Arrows::RightwardsArrowWithVerticalStroke),
-            LEFT_RIGHT_ARROW_WITH_VERTICAL_STROKE => Ok(Arrows::LeftRightArrowWithVerticalStroke),
-            LEFTWARDS_ARROW_WITH_DOUBLE_VERTICAL_STROKE => Ok(Arrows::LeftwardsArrowWithDoubleVerticalStroke),
-            RIGHTWARDS_ARROW_WITH_DOUBLE_VERTICAL_STROKE => Ok(Arrows::RightwardsArrowWithDoubleVerticalStroke),
-            LEFT_RIGHT_ARROW_WITH_DOUBLE_VERTICAL_STROKE => Ok(Arrows::LeftRightArrowWithDoubleVerticalStroke),
-            LEFTWARDS_OPEN_DASH_HEADED_ARROW => Ok(Arrows::LeftwardsOpenDashHeadedArrow),
-            RIGHTWARDS_OPEN_DASH_HEADED_ARROW => Ok(Arrows::RightwardsOpenDashHeadedArrow),
+            '←' => Ok(Arrows::LeftwardsArrow),
+            '↑' => Ok(Arrows::UpwardsArrow),
+            '→' => Ok(Arrows::RightwardsArrow),
+            '↓' => Ok(Arrows::DownwardsArrow),
+            '↔' => Ok(Arrows::LeftRightArrow),
+            '↕' => Ok(Arrows::UpDownArrow),
+            '↖' => Ok(Arrows::NorthWestArrow),
+            '↗' => Ok(Arrows::NorthEastArrow),
+            '↘' => Ok(Arrows::SouthEastArrow),
+            '↙' => Ok(Arrows::SouthWestArrow),
+            '↚' => Ok(Arrows::LeftwardsArrowWithStroke),
+            '↛' => Ok(Arrows::RightwardsArrowWithStroke),
+            '↜' => Ok(Arrows::LeftwardsWaveArrow),
+            '↝' => Ok(Arrows::RightwardsWaveArrow),
+            '↞' => Ok(Arrows::LeftwardsTwoHeadedArrow),
+            '↟' => Ok(Arrows::UpwardsTwoHeadedArrow),
+            '↠' => Ok(Arrows::RightwardsTwoHeadedArrow),
+            '↡' => Ok(Arrows::DownwardsTwoHeadedArrow),
+            '↢' => Ok(Arrows::LeftwardsArrowWithTail),
+            '↣' => Ok(Arrows::RightwardsArrowWithTail),
+            '↤' => Ok(Arrows::LeftwardsArrowFromBar),
+            '↥' => Ok(Arrows::UpwardsArrowFromBar),
+            '↦' => Ok(Arrows::RightwardsArrowFromBar),
+            '↧' => Ok(Arrows::DownwardsArrowFromBar),
+            '↨' => Ok(Arrows::UpDownArrowWithBase),
+            '↩' => Ok(Arrows::LeftwardsArrowWithHook),
+            '↪' => Ok(Arrows::RightwardsArrowWithHook),
+            '↫' => Ok(Arrows::LeftwardsArrowWithLoop),
+            '↬' => Ok(Arrows::RightwardsArrowWithLoop),
+            '↭' => Ok(Arrows::LeftRightWaveArrow),
+            '↮' => Ok(Arrows::LeftRightArrowWithStroke),
+            '↯' => Ok(Arrows::DownwardsZigzagArrow),
+            '↰' => Ok(Arrows::UpwardsArrowWithTipLeftwards),
+            '↱' => Ok(Arrows::UpwardsArrowWithTipRightwards),
+            '↲' => Ok(Arrows::DownwardsArrowWithTipLeftwards),
+            '↳' => Ok(Arrows::DownwardsArrowWithTipRightwards),
+            '↴' => Ok(Arrows::RightwardsArrowWithCornerDownwards),
+            '↵' => Ok(Arrows::DownwardsArrowWithCornerLeftwards),
+            '↶' => Ok(Arrows::AnticlockwiseTopSemicircleArrow),
+            '↷' => Ok(Arrows::ClockwiseTopSemicircleArrow),
+            '↸' => Ok(Arrows::NorthWestArrowToLongBar),
+            '↹' => Ok(Arrows::LeftwardsArrowToBarOverRightwardsArrowToBar),
+            '↺' => Ok(Arrows::AnticlockwiseOpenCircleArrow),
+            '↻' => Ok(Arrows::ClockwiseOpenCircleArrow),
+            '↼' => Ok(Arrows::LeftwardsHarpoonWithBarbUpwards),
+            '↽' => Ok(Arrows::LeftwardsHarpoonWithBarbDownwards),
+            '↾' => Ok(Arrows::UpwardsHarpoonWithBarbRightwards),
+            '↿' => Ok(Arrows::UpwardsHarpoonWithBarbLeftwards),
+            '⇀' => Ok(Arrows::RightwardsHarpoonWithBarbUpwards),
+            '⇁' => Ok(Arrows::RightwardsHarpoonWithBarbDownwards),
+            '⇂' => Ok(Arrows::DownwardsHarpoonWithBarbRightwards),
+            '⇃' => Ok(Arrows::DownwardsHarpoonWithBarbLeftwards),
+            '⇄' => Ok(Arrows::RightwardsArrowOverLeftwardsArrow),
+            '⇅' => Ok(Arrows::UpwardsArrowLeftwardsOfDownwardsArrow),
+            '⇆' => Ok(Arrows::LeftwardsArrowOverRightwardsArrow),
+            '⇇' => Ok(Arrows::LeftwardsPaired),
+            '⇈' => Ok(Arrows::UpwardsPaired),
+            '⇉' => Ok(Arrows::RightwardsPaired),
+            '⇊' => Ok(Arrows::DownwardsPaired),
+            '⇋' => Ok(Arrows::LeftwardsHarpoonOverRightwardsHarpoon),
+            '⇌' => Ok(Arrows::RightwardsHarpoonOverLeftwardsHarpoon),
+            '⇍' => Ok(Arrows::LeftwardsDoubleArrowWithStroke),
+            '⇎' => Ok(Arrows::LeftRightDoubleArrowWithStroke),
+            '⇏' => Ok(Arrows::RightwardsDoubleArrowWithStroke),
+            '⇐' => Ok(Arrows::LeftwardsDoubleArrow),
+            '⇑' => Ok(Arrows::UpwardsDoubleArrow),
+            '⇒' => Ok(Arrows::RightwardsDoubleArrow),
+            '⇓' => Ok(Arrows::DownwardsDoubleArrow),
+            '⇔' => Ok(Arrows::LeftRightDoubleArrow),
+            '⇕' => Ok(Arrows::UpDownDoubleArrow),
+            '⇖' => Ok(Arrows::NorthWestDoubleArrow),
+            '⇗' => Ok(Arrows::NorthEastDoubleArrow),
+            '⇘' => Ok(Arrows::SouthEastDoubleArrow),
+            '⇙' => Ok(Arrows::SouthWestDoubleArrow),
+            '⇚' => Ok(Arrows::LeftwardsTripleArrow),
+            '⇛' => Ok(Arrows::RightwardsTripleArrow),
+            '⇜' => Ok(Arrows::LeftwardsSquiggleArrow),
+            '⇝' => Ok(Arrows::RightwardsSquiggleArrow),
+            '⇞' => Ok(Arrows::UpwardsArrowWithDoubleStroke),
+            '⇟' => Ok(Arrows::DownwardsArrowWithDoubleStroke),
+            '⇠' => Ok(Arrows::LeftwardsDashedArrow),
+            '⇡' => Ok(Arrows::UpwardsDashedArrow),
+            '⇢' => Ok(Arrows::RightwardsDashedArrow),
+            '⇣' => Ok(Arrows::DownwardsDashedArrow),
+            '⇤' => Ok(Arrows::LeftwardsArrowToBar),
+            '⇥' => Ok(Arrows::RightwardsArrowToBar),
+            '⇦' => Ok(Arrows::LeftwardsWhiteArrow),
+            '⇧' => Ok(Arrows::UpwardsWhiteArrow),
+            '⇨' => Ok(Arrows::RightwardsWhiteArrow),
+            '⇩' => Ok(Arrows::DownwardsWhiteArrow),
+            '⇪' => Ok(Arrows::UpwardsWhiteArrowFromBar),
+            '⇫' => Ok(Arrows::UpwardsWhiteArrowOnPedestal),
+            '⇬' => Ok(Arrows::UpwardsWhiteArrowOnPedestalWithHorizontalBar),
+            '⇭' => Ok(Arrows::UpwardsWhiteArrowOnPedestalWithVerticalBar),
+            '⇮' => Ok(Arrows::UpwardsWhiteDoubleArrow),
+            '⇯' => Ok(Arrows::UpwardsWhiteDoubleArrowOnPedestal),
+            '⇰' => Ok(Arrows::RightwardsWhiteArrowFromWall),
+            '⇱' => Ok(Arrows::NorthWestArrowToCorner),
+            '⇲' => Ok(Arrows::SouthEastArrowToCorner),
+            '⇳' => Ok(Arrows::UpDownWhiteArrow),
+            '⇴' => Ok(Arrows::RightArrowWithSmallCircle),
+            '⇵' => Ok(Arrows::DownwardsArrowLeftwardsOfUpwardsArrow),
+            '⇶' => Ok(Arrows::ThreeRightwards),
+            '⇷' => Ok(Arrows::LeftwardsArrowWithVerticalStroke),
+            '⇸' => Ok(Arrows::RightwardsArrowWithVerticalStroke),
+            '⇹' => Ok(Arrows::LeftRightArrowWithVerticalStroke),
+            '⇺' => Ok(Arrows::LeftwardsArrowWithDoubleVerticalStroke),
+            '⇻' => Ok(Arrows::RightwardsArrowWithDoubleVerticalStroke),
+            '⇼' => Ok(Arrows::LeftRightArrowWithDoubleVerticalStroke),
+            '⇽' => Ok(Arrows::LeftwardsOpenDashHeadedArrow),
+            '⇾' => Ok(Arrows::RightwardsOpenDashHeadedArrow),
             _ => Err(()),
         }
     }

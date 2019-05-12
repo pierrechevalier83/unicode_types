@@ -1,164 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2b0}: 'ʰ'
-    pub const MODIFIER_LETTER_SMALL_H: char = 'ʰ';
-    /// \u{2b1}: 'ʱ'
-    pub const MODIFIER_LETTER_SMALL_H_WITH_HOOK: char = 'ʱ';
-    /// \u{2b2}: 'ʲ'
-    pub const MODIFIER_LETTER_SMALL_J: char = 'ʲ';
-    /// \u{2b3}: 'ʳ'
-    pub const MODIFIER_LETTER_SMALL_R: char = 'ʳ';
-    /// \u{2b4}: 'ʴ'
-    pub const MODIFIER_LETTER_SMALL_TURNED_R: char = 'ʴ';
-    /// \u{2b5}: 'ʵ'
-    pub const MODIFIER_LETTER_SMALL_TURNED_R_WITH_HOOK: char = 'ʵ';
-    /// \u{2b6}: 'ʶ'
-    pub const MODIFIER_LETTER_SMALL_CAPITAL_INVERTED_R: char = 'ʶ';
-    /// \u{2b7}: 'ʷ'
-    pub const MODIFIER_LETTER_SMALL_W: char = 'ʷ';
-    /// \u{2b8}: 'ʸ'
-    pub const MODIFIER_LETTER_SMALL_Y: char = 'ʸ';
-    /// \u{2b9}: 'ʹ'
-    pub const MODIFIER_LETTER_PRIME: char = 'ʹ';
-    /// \u{2ba}: 'ʺ'
-    pub const MODIFIER_LETTER_DOUBLE_PRIME: char = 'ʺ';
-    /// \u{2bb}: 'ʻ'
-    pub const MODIFIER_LETTER_TURNED_COMMA: char = 'ʻ';
-    /// \u{2bc}: 'ʼ'
-    pub const MODIFIER_LETTER_APOSTROPHE: char = 'ʼ';
-    /// \u{2bd}: 'ʽ'
-    pub const MODIFIER_LETTER_REVERSED_COMMA: char = 'ʽ';
-    /// \u{2be}: 'ʾ'
-    pub const MODIFIER_LETTER_RIGHT_HALF_RING: char = 'ʾ';
-    /// \u{2bf}: 'ʿ'
-    pub const MODIFIER_LETTER_LEFT_HALF_RING: char = 'ʿ';
-    /// \u{2c0}: 'ˀ'
-    pub const MODIFIER_LETTER_GLOTTAL_STOP: char = 'ˀ';
-    /// \u{2c1}: 'ˁ'
-    pub const MODIFIER_LETTER_REVERSED_GLOTTAL_STOP: char = 'ˁ';
-    /// \u{2c2}: '˂'
-    pub const MODIFIER_LETTER_LEFT_ARROWHEAD: char = '˂';
-    /// \u{2c3}: '˃'
-    pub const MODIFIER_LETTER_RIGHT_ARROWHEAD: char = '˃';
-    /// \u{2c4}: '˄'
-    pub const MODIFIER_LETTER_UP_ARROWHEAD: char = '˄';
-    /// \u{2c5}: '˅'
-    pub const MODIFIER_LETTER_DOWN_ARROWHEAD: char = '˅';
-    /// \u{2c6}: 'ˆ'
-    pub const MODIFIER_LETTER_CIRCUMFLEX_ACCENT: char = 'ˆ';
-    /// \u{2c7}: 'ˇ'
-    pub const CARON: char = 'ˇ';
-    /// \u{2c8}: 'ˈ'
-    pub const MODIFIER_LETTER_VERTICAL_LINE: char = 'ˈ';
-    /// \u{2c9}: 'ˉ'
-    pub const MODIFIER_LETTER_MACRON: char = 'ˉ';
-    /// \u{2ca}: 'ˊ'
-    pub const MODIFIER_LETTER_ACUTE_ACCENT: char = 'ˊ';
-    /// \u{2cb}: 'ˋ'
-    pub const MODIFIER_LETTER_GRAVE_ACCENT: char = 'ˋ';
-    /// \u{2cc}: 'ˌ'
-    pub const MODIFIER_LETTER_LOW_VERTICAL_LINE: char = 'ˌ';
-    /// \u{2cd}: 'ˍ'
-    pub const MODIFIER_LETTER_LOW_MACRON: char = 'ˍ';
-    /// \u{2ce}: 'ˎ'
-    pub const MODIFIER_LETTER_LOW_GRAVE_ACCENT: char = 'ˎ';
-    /// \u{2cf}: 'ˏ'
-    pub const MODIFIER_LETTER_LOW_ACUTE_ACCENT: char = 'ˏ';
-    /// \u{2d0}: 'ː'
-    pub const MODIFIER_LETTER_TRIANGULAR_COLON: char = 'ː';
-    /// \u{2d1}: 'ˑ'
-    pub const MODIFIER_LETTER_HALF_TRIANGULAR_COLON: char = 'ˑ';
-    /// \u{2d2}: '˒'
-    pub const MODIFIER_LETTER_CENTRED_RIGHT_HALF_RING: char = '˒';
-    /// \u{2d3}: '˓'
-    pub const MODIFIER_LETTER_CENTRED_LEFT_HALF_RING: char = '˓';
-    /// \u{2d4}: '˔'
-    pub const MODIFIER_LETTER_UP_TACK: char = '˔';
-    /// \u{2d5}: '˕'
-    pub const MODIFIER_LETTER_DOWN_TACK: char = '˕';
-    /// \u{2d6}: '˖'
-    pub const MODIFIER_LETTER_PLUS_SIGN: char = '˖';
-    /// \u{2d7}: '˗'
-    pub const MODIFIER_LETTER_MINUS_SIGN: char = '˗';
-    /// \u{2d8}: '˘'
-    pub const BREVE: char = '˘';
-    /// \u{2d9}: '˙'
-    pub const DOT_ABOVE: char = '˙';
-    /// \u{2da}: '˚'
-    pub const RING_ABOVE: char = '˚';
-    /// \u{2db}: '˛'
-    pub const OGONEK: char = '˛';
-    /// \u{2dc}: '˜'
-    pub const SMALL_TILDE: char = '˜';
-    /// \u{2dd}: '˝'
-    pub const DOUBLE_ACUTE_ACCENT: char = '˝';
-    /// \u{2de}: '˞'
-    pub const MODIFIER_LETTER_RHOTIC_HOOK: char = '˞';
-    /// \u{2df}: '˟'
-    pub const MODIFIER_LETTER_CROSS_ACCENT: char = '˟';
-    /// \u{2e0}: 'ˠ'
-    pub const MODIFIER_LETTER_SMALL_GAMMA: char = 'ˠ';
-    /// \u{2e1}: 'ˡ'
-    pub const MODIFIER_LETTER_SMALL_L: char = 'ˡ';
-    /// \u{2e2}: 'ˢ'
-    pub const MODIFIER_LETTER_SMALL_S: char = 'ˢ';
-    /// \u{2e3}: 'ˣ'
-    pub const MODIFIER_LETTER_SMALL_X: char = 'ˣ';
-    /// \u{2e4}: 'ˤ'
-    pub const MODIFIER_LETTER_SMALL_REVERSED_GLOTTAL_STOP: char = 'ˤ';
-    /// \u{2e5}: '˥'
-    pub const MODIFIER_LETTER_EXTRA_DASH_HIGH_TONE_BAR: char = '˥';
-    /// \u{2e6}: '˦'
-    pub const MODIFIER_LETTER_HIGH_TONE_BAR: char = '˦';
-    /// \u{2e7}: '˧'
-    pub const MODIFIER_LETTER_MID_TONE_BAR: char = '˧';
-    /// \u{2e8}: '˨'
-    pub const MODIFIER_LETTER_LOW_TONE_BAR: char = '˨';
-    /// \u{2e9}: '˩'
-    pub const MODIFIER_LETTER_EXTRA_DASH_LOW_TONE_BAR: char = '˩';
-    /// \u{2ea}: '˪'
-    pub const MODIFIER_LETTER_YIN_DEPARTING_TONE_MARK: char = '˪';
-    /// \u{2eb}: '˫'
-    pub const MODIFIER_LETTER_YANG_DEPARTING_TONE_MARK: char = '˫';
-    /// \u{2ec}: 'ˬ'
-    pub const MODIFIER_LETTER_VOICING: char = 'ˬ';
-    /// \u{2ed}: '˭'
-    pub const MODIFIER_LETTER_UNASPIRATED: char = '˭';
-    /// \u{2ee}: 'ˮ'
-    pub const MODIFIER_LETTER_DOUBLE_APOSTROPHE: char = 'ˮ';
-    /// \u{2ef}: '˯'
-    pub const MODIFIER_LETTER_LOW_DOWN_ARROWHEAD: char = '˯';
-    /// \u{2f0}: '˰'
-    pub const MODIFIER_LETTER_LOW_UP_ARROWHEAD: char = '˰';
-    /// \u{2f1}: '˱'
-    pub const MODIFIER_LETTER_LOW_LEFT_ARROWHEAD: char = '˱';
-    /// \u{2f2}: '˲'
-    pub const MODIFIER_LETTER_LOW_RIGHT_ARROWHEAD: char = '˲';
-    /// \u{2f3}: '˳'
-    pub const MODIFIER_LETTER_LOW_RING: char = '˳';
-    /// \u{2f4}: '˴'
-    pub const MODIFIER_LETTER_MIDDLE_GRAVE_ACCENT: char = '˴';
-    /// \u{2f5}: '˵'
-    pub const MODIFIER_LETTER_MIDDLE_DOUBLE_GRAVE_ACCENT: char = '˵';
-    /// \u{2f6}: '˶'
-    pub const MODIFIER_LETTER_MIDDLE_DOUBLE_ACUTE_ACCENT: char = '˶';
-    /// \u{2f7}: '˷'
-    pub const MODIFIER_LETTER_LOW_TILDE: char = '˷';
-    /// \u{2f8}: '˸'
-    pub const MODIFIER_LETTER_RAISED_COLON: char = '˸';
-    /// \u{2f9}: '˹'
-    pub const MODIFIER_LETTER_BEGIN_HIGH_TONE: char = '˹';
-    /// \u{2fa}: '˺'
-    pub const MODIFIER_LETTER_END_HIGH_TONE: char = '˺';
-    /// \u{2fb}: '˻'
-    pub const MODIFIER_LETTER_BEGIN_LOW_TONE: char = '˻';
-    /// \u{2fc}: '˼'
-    pub const MODIFIER_LETTER_END_LOW_TONE: char = '˼';
-    /// \u{2fd}: '˽'
-    pub const MODIFIER_LETTER_SHELF: char = '˽';
-    /// \u{2fe}: '˾'
-    pub const MODIFIER_LETTER_OPEN_SHELF: char = '˾';
-}
 
 /// An enum to represent all characters in the SpacingModifierLetters block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -325,87 +164,86 @@ pub enum SpacingModifierLetters {
 
 impl Into<char> for SpacingModifierLetters {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SpacingModifierLetters::ModifierLetterSmallH => MODIFIER_LETTER_SMALL_H,
-            SpacingModifierLetters::ModifierLetterSmallHWithHook => MODIFIER_LETTER_SMALL_H_WITH_HOOK,
-            SpacingModifierLetters::ModifierLetterSmallJ => MODIFIER_LETTER_SMALL_J,
-            SpacingModifierLetters::ModifierLetterSmallR => MODIFIER_LETTER_SMALL_R,
-            SpacingModifierLetters::ModifierLetterSmallTurnedR => MODIFIER_LETTER_SMALL_TURNED_R,
-            SpacingModifierLetters::ModifierLetterSmallTurnedRWithHook => MODIFIER_LETTER_SMALL_TURNED_R_WITH_HOOK,
-            SpacingModifierLetters::ModifierLetterSmallCapitalInvertedR => MODIFIER_LETTER_SMALL_CAPITAL_INVERTED_R,
-            SpacingModifierLetters::ModifierLetterSmallW => MODIFIER_LETTER_SMALL_W,
-            SpacingModifierLetters::ModifierLetterSmallY => MODIFIER_LETTER_SMALL_Y,
-            SpacingModifierLetters::ModifierLetterPrime => MODIFIER_LETTER_PRIME,
-            SpacingModifierLetters::ModifierLetterDoublePrime => MODIFIER_LETTER_DOUBLE_PRIME,
-            SpacingModifierLetters::ModifierLetterTurnedComma => MODIFIER_LETTER_TURNED_COMMA,
-            SpacingModifierLetters::ModifierLetterApostrophe => MODIFIER_LETTER_APOSTROPHE,
-            SpacingModifierLetters::ModifierLetterReversedComma => MODIFIER_LETTER_REVERSED_COMMA,
-            SpacingModifierLetters::ModifierLetterRightHalfRing => MODIFIER_LETTER_RIGHT_HALF_RING,
-            SpacingModifierLetters::ModifierLetterLeftHalfRing => MODIFIER_LETTER_LEFT_HALF_RING,
-            SpacingModifierLetters::ModifierLetterGlottalStop => MODIFIER_LETTER_GLOTTAL_STOP,
-            SpacingModifierLetters::ModifierLetterReversedGlottalStop => MODIFIER_LETTER_REVERSED_GLOTTAL_STOP,
-            SpacingModifierLetters::ModifierLetterLeftArrowhead => MODIFIER_LETTER_LEFT_ARROWHEAD,
-            SpacingModifierLetters::ModifierLetterRightArrowhead => MODIFIER_LETTER_RIGHT_ARROWHEAD,
-            SpacingModifierLetters::ModifierLetterUpArrowhead => MODIFIER_LETTER_UP_ARROWHEAD,
-            SpacingModifierLetters::ModifierLetterDownArrowhead => MODIFIER_LETTER_DOWN_ARROWHEAD,
-            SpacingModifierLetters::ModifierLetterCircumflexAccent => MODIFIER_LETTER_CIRCUMFLEX_ACCENT,
-            SpacingModifierLetters::Caron => CARON,
-            SpacingModifierLetters::ModifierLetterVerticalLine => MODIFIER_LETTER_VERTICAL_LINE,
-            SpacingModifierLetters::ModifierLetterMacron => MODIFIER_LETTER_MACRON,
-            SpacingModifierLetters::ModifierLetterAcuteAccent => MODIFIER_LETTER_ACUTE_ACCENT,
-            SpacingModifierLetters::ModifierLetterGraveAccent => MODIFIER_LETTER_GRAVE_ACCENT,
-            SpacingModifierLetters::ModifierLetterLowVerticalLine => MODIFIER_LETTER_LOW_VERTICAL_LINE,
-            SpacingModifierLetters::ModifierLetterLowMacron => MODIFIER_LETTER_LOW_MACRON,
-            SpacingModifierLetters::ModifierLetterLowGraveAccent => MODIFIER_LETTER_LOW_GRAVE_ACCENT,
-            SpacingModifierLetters::ModifierLetterLowAcuteAccent => MODIFIER_LETTER_LOW_ACUTE_ACCENT,
-            SpacingModifierLetters::ModifierLetterTriangularColon => MODIFIER_LETTER_TRIANGULAR_COLON,
-            SpacingModifierLetters::ModifierLetterHalfTriangularColon => MODIFIER_LETTER_HALF_TRIANGULAR_COLON,
-            SpacingModifierLetters::ModifierLetterCentredRightHalfRing => MODIFIER_LETTER_CENTRED_RIGHT_HALF_RING,
-            SpacingModifierLetters::ModifierLetterCentredLeftHalfRing => MODIFIER_LETTER_CENTRED_LEFT_HALF_RING,
-            SpacingModifierLetters::ModifierLetterUpTack => MODIFIER_LETTER_UP_TACK,
-            SpacingModifierLetters::ModifierLetterDownTack => MODIFIER_LETTER_DOWN_TACK,
-            SpacingModifierLetters::ModifierLetterPlusSign => MODIFIER_LETTER_PLUS_SIGN,
-            SpacingModifierLetters::ModifierLetterMinusSign => MODIFIER_LETTER_MINUS_SIGN,
-            SpacingModifierLetters::Breve => BREVE,
-            SpacingModifierLetters::DotAbove => DOT_ABOVE,
-            SpacingModifierLetters::RingAbove => RING_ABOVE,
-            SpacingModifierLetters::Ogonek => OGONEK,
-            SpacingModifierLetters::SmallTilde => SMALL_TILDE,
-            SpacingModifierLetters::DoubleAcuteAccent => DOUBLE_ACUTE_ACCENT,
-            SpacingModifierLetters::ModifierLetterRhoticHook => MODIFIER_LETTER_RHOTIC_HOOK,
-            SpacingModifierLetters::ModifierLetterCrossAccent => MODIFIER_LETTER_CROSS_ACCENT,
-            SpacingModifierLetters::ModifierLetterSmallGamma => MODIFIER_LETTER_SMALL_GAMMA,
-            SpacingModifierLetters::ModifierLetterSmallL => MODIFIER_LETTER_SMALL_L,
-            SpacingModifierLetters::ModifierLetterSmallS => MODIFIER_LETTER_SMALL_S,
-            SpacingModifierLetters::ModifierLetterSmallX => MODIFIER_LETTER_SMALL_X,
-            SpacingModifierLetters::ModifierLetterSmallReversedGlottalStop => MODIFIER_LETTER_SMALL_REVERSED_GLOTTAL_STOP,
-            SpacingModifierLetters::ModifierLetterExtraDashHighToneBar => MODIFIER_LETTER_EXTRA_DASH_HIGH_TONE_BAR,
-            SpacingModifierLetters::ModifierLetterHighToneBar => MODIFIER_LETTER_HIGH_TONE_BAR,
-            SpacingModifierLetters::ModifierLetterMidToneBar => MODIFIER_LETTER_MID_TONE_BAR,
-            SpacingModifierLetters::ModifierLetterLowToneBar => MODIFIER_LETTER_LOW_TONE_BAR,
-            SpacingModifierLetters::ModifierLetterExtraDashLowToneBar => MODIFIER_LETTER_EXTRA_DASH_LOW_TONE_BAR,
-            SpacingModifierLetters::ModifierLetterYinDepartingToneMark => MODIFIER_LETTER_YIN_DEPARTING_TONE_MARK,
-            SpacingModifierLetters::ModifierLetterYangDepartingToneMark => MODIFIER_LETTER_YANG_DEPARTING_TONE_MARK,
-            SpacingModifierLetters::ModifierLetterVoicing => MODIFIER_LETTER_VOICING,
-            SpacingModifierLetters::ModifierLetterUnaspirated => MODIFIER_LETTER_UNASPIRATED,
-            SpacingModifierLetters::ModifierLetterDoubleApostrophe => MODIFIER_LETTER_DOUBLE_APOSTROPHE,
-            SpacingModifierLetters::ModifierLetterLowDownArrowhead => MODIFIER_LETTER_LOW_DOWN_ARROWHEAD,
-            SpacingModifierLetters::ModifierLetterLowUpArrowhead => MODIFIER_LETTER_LOW_UP_ARROWHEAD,
-            SpacingModifierLetters::ModifierLetterLowLeftArrowhead => MODIFIER_LETTER_LOW_LEFT_ARROWHEAD,
-            SpacingModifierLetters::ModifierLetterLowRightArrowhead => MODIFIER_LETTER_LOW_RIGHT_ARROWHEAD,
-            SpacingModifierLetters::ModifierLetterLowRing => MODIFIER_LETTER_LOW_RING,
-            SpacingModifierLetters::ModifierLetterMiddleGraveAccent => MODIFIER_LETTER_MIDDLE_GRAVE_ACCENT,
-            SpacingModifierLetters::ModifierLetterMiddleDoubleGraveAccent => MODIFIER_LETTER_MIDDLE_DOUBLE_GRAVE_ACCENT,
-            SpacingModifierLetters::ModifierLetterMiddleDoubleAcuteAccent => MODIFIER_LETTER_MIDDLE_DOUBLE_ACUTE_ACCENT,
-            SpacingModifierLetters::ModifierLetterLowTilde => MODIFIER_LETTER_LOW_TILDE,
-            SpacingModifierLetters::ModifierLetterRaisedColon => MODIFIER_LETTER_RAISED_COLON,
-            SpacingModifierLetters::ModifierLetterBeginHighTone => MODIFIER_LETTER_BEGIN_HIGH_TONE,
-            SpacingModifierLetters::ModifierLetterEndHighTone => MODIFIER_LETTER_END_HIGH_TONE,
-            SpacingModifierLetters::ModifierLetterBeginLowTone => MODIFIER_LETTER_BEGIN_LOW_TONE,
-            SpacingModifierLetters::ModifierLetterEndLowTone => MODIFIER_LETTER_END_LOW_TONE,
-            SpacingModifierLetters::ModifierLetterShelf => MODIFIER_LETTER_SHELF,
-            SpacingModifierLetters::ModifierLetterOpenShelf => MODIFIER_LETTER_OPEN_SHELF,
+            SpacingModifierLetters::ModifierLetterSmallH => 'ʰ',
+            SpacingModifierLetters::ModifierLetterSmallHWithHook => 'ʱ',
+            SpacingModifierLetters::ModifierLetterSmallJ => 'ʲ',
+            SpacingModifierLetters::ModifierLetterSmallR => 'ʳ',
+            SpacingModifierLetters::ModifierLetterSmallTurnedR => 'ʴ',
+            SpacingModifierLetters::ModifierLetterSmallTurnedRWithHook => 'ʵ',
+            SpacingModifierLetters::ModifierLetterSmallCapitalInvertedR => 'ʶ',
+            SpacingModifierLetters::ModifierLetterSmallW => 'ʷ',
+            SpacingModifierLetters::ModifierLetterSmallY => 'ʸ',
+            SpacingModifierLetters::ModifierLetterPrime => 'ʹ',
+            SpacingModifierLetters::ModifierLetterDoublePrime => 'ʺ',
+            SpacingModifierLetters::ModifierLetterTurnedComma => 'ʻ',
+            SpacingModifierLetters::ModifierLetterApostrophe => 'ʼ',
+            SpacingModifierLetters::ModifierLetterReversedComma => 'ʽ',
+            SpacingModifierLetters::ModifierLetterRightHalfRing => 'ʾ',
+            SpacingModifierLetters::ModifierLetterLeftHalfRing => 'ʿ',
+            SpacingModifierLetters::ModifierLetterGlottalStop => 'ˀ',
+            SpacingModifierLetters::ModifierLetterReversedGlottalStop => 'ˁ',
+            SpacingModifierLetters::ModifierLetterLeftArrowhead => '˂',
+            SpacingModifierLetters::ModifierLetterRightArrowhead => '˃',
+            SpacingModifierLetters::ModifierLetterUpArrowhead => '˄',
+            SpacingModifierLetters::ModifierLetterDownArrowhead => '˅',
+            SpacingModifierLetters::ModifierLetterCircumflexAccent => 'ˆ',
+            SpacingModifierLetters::Caron => 'ˇ',
+            SpacingModifierLetters::ModifierLetterVerticalLine => 'ˈ',
+            SpacingModifierLetters::ModifierLetterMacron => 'ˉ',
+            SpacingModifierLetters::ModifierLetterAcuteAccent => 'ˊ',
+            SpacingModifierLetters::ModifierLetterGraveAccent => 'ˋ',
+            SpacingModifierLetters::ModifierLetterLowVerticalLine => 'ˌ',
+            SpacingModifierLetters::ModifierLetterLowMacron => 'ˍ',
+            SpacingModifierLetters::ModifierLetterLowGraveAccent => 'ˎ',
+            SpacingModifierLetters::ModifierLetterLowAcuteAccent => 'ˏ',
+            SpacingModifierLetters::ModifierLetterTriangularColon => 'ː',
+            SpacingModifierLetters::ModifierLetterHalfTriangularColon => 'ˑ',
+            SpacingModifierLetters::ModifierLetterCentredRightHalfRing => '˒',
+            SpacingModifierLetters::ModifierLetterCentredLeftHalfRing => '˓',
+            SpacingModifierLetters::ModifierLetterUpTack => '˔',
+            SpacingModifierLetters::ModifierLetterDownTack => '˕',
+            SpacingModifierLetters::ModifierLetterPlusSign => '˖',
+            SpacingModifierLetters::ModifierLetterMinusSign => '˗',
+            SpacingModifierLetters::Breve => '˘',
+            SpacingModifierLetters::DotAbove => '˙',
+            SpacingModifierLetters::RingAbove => '˚',
+            SpacingModifierLetters::Ogonek => '˛',
+            SpacingModifierLetters::SmallTilde => '˜',
+            SpacingModifierLetters::DoubleAcuteAccent => '˝',
+            SpacingModifierLetters::ModifierLetterRhoticHook => '˞',
+            SpacingModifierLetters::ModifierLetterCrossAccent => '˟',
+            SpacingModifierLetters::ModifierLetterSmallGamma => 'ˠ',
+            SpacingModifierLetters::ModifierLetterSmallL => 'ˡ',
+            SpacingModifierLetters::ModifierLetterSmallS => 'ˢ',
+            SpacingModifierLetters::ModifierLetterSmallX => 'ˣ',
+            SpacingModifierLetters::ModifierLetterSmallReversedGlottalStop => 'ˤ',
+            SpacingModifierLetters::ModifierLetterExtraDashHighToneBar => '˥',
+            SpacingModifierLetters::ModifierLetterHighToneBar => '˦',
+            SpacingModifierLetters::ModifierLetterMidToneBar => '˧',
+            SpacingModifierLetters::ModifierLetterLowToneBar => '˨',
+            SpacingModifierLetters::ModifierLetterExtraDashLowToneBar => '˩',
+            SpacingModifierLetters::ModifierLetterYinDepartingToneMark => '˪',
+            SpacingModifierLetters::ModifierLetterYangDepartingToneMark => '˫',
+            SpacingModifierLetters::ModifierLetterVoicing => 'ˬ',
+            SpacingModifierLetters::ModifierLetterUnaspirated => '˭',
+            SpacingModifierLetters::ModifierLetterDoubleApostrophe => 'ˮ',
+            SpacingModifierLetters::ModifierLetterLowDownArrowhead => '˯',
+            SpacingModifierLetters::ModifierLetterLowUpArrowhead => '˰',
+            SpacingModifierLetters::ModifierLetterLowLeftArrowhead => '˱',
+            SpacingModifierLetters::ModifierLetterLowRightArrowhead => '˲',
+            SpacingModifierLetters::ModifierLetterLowRing => '˳',
+            SpacingModifierLetters::ModifierLetterMiddleGraveAccent => '˴',
+            SpacingModifierLetters::ModifierLetterMiddleDoubleGraveAccent => '˵',
+            SpacingModifierLetters::ModifierLetterMiddleDoubleAcuteAccent => '˶',
+            SpacingModifierLetters::ModifierLetterLowTilde => '˷',
+            SpacingModifierLetters::ModifierLetterRaisedColon => '˸',
+            SpacingModifierLetters::ModifierLetterBeginHighTone => '˹',
+            SpacingModifierLetters::ModifierLetterEndHighTone => '˺',
+            SpacingModifierLetters::ModifierLetterBeginLowTone => '˻',
+            SpacingModifierLetters::ModifierLetterEndLowTone => '˼',
+            SpacingModifierLetters::ModifierLetterShelf => '˽',
+            SpacingModifierLetters::ModifierLetterOpenShelf => '˾',
         }
     }
 }
@@ -413,87 +251,86 @@ impl Into<char> for SpacingModifierLetters {
 impl std::convert::TryFrom<char> for SpacingModifierLetters {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            MODIFIER_LETTER_SMALL_H => Ok(SpacingModifierLetters::ModifierLetterSmallH),
-            MODIFIER_LETTER_SMALL_H_WITH_HOOK => Ok(SpacingModifierLetters::ModifierLetterSmallHWithHook),
-            MODIFIER_LETTER_SMALL_J => Ok(SpacingModifierLetters::ModifierLetterSmallJ),
-            MODIFIER_LETTER_SMALL_R => Ok(SpacingModifierLetters::ModifierLetterSmallR),
-            MODIFIER_LETTER_SMALL_TURNED_R => Ok(SpacingModifierLetters::ModifierLetterSmallTurnedR),
-            MODIFIER_LETTER_SMALL_TURNED_R_WITH_HOOK => Ok(SpacingModifierLetters::ModifierLetterSmallTurnedRWithHook),
-            MODIFIER_LETTER_SMALL_CAPITAL_INVERTED_R => Ok(SpacingModifierLetters::ModifierLetterSmallCapitalInvertedR),
-            MODIFIER_LETTER_SMALL_W => Ok(SpacingModifierLetters::ModifierLetterSmallW),
-            MODIFIER_LETTER_SMALL_Y => Ok(SpacingModifierLetters::ModifierLetterSmallY),
-            MODIFIER_LETTER_PRIME => Ok(SpacingModifierLetters::ModifierLetterPrime),
-            MODIFIER_LETTER_DOUBLE_PRIME => Ok(SpacingModifierLetters::ModifierLetterDoublePrime),
-            MODIFIER_LETTER_TURNED_COMMA => Ok(SpacingModifierLetters::ModifierLetterTurnedComma),
-            MODIFIER_LETTER_APOSTROPHE => Ok(SpacingModifierLetters::ModifierLetterApostrophe),
-            MODIFIER_LETTER_REVERSED_COMMA => Ok(SpacingModifierLetters::ModifierLetterReversedComma),
-            MODIFIER_LETTER_RIGHT_HALF_RING => Ok(SpacingModifierLetters::ModifierLetterRightHalfRing),
-            MODIFIER_LETTER_LEFT_HALF_RING => Ok(SpacingModifierLetters::ModifierLetterLeftHalfRing),
-            MODIFIER_LETTER_GLOTTAL_STOP => Ok(SpacingModifierLetters::ModifierLetterGlottalStop),
-            MODIFIER_LETTER_REVERSED_GLOTTAL_STOP => Ok(SpacingModifierLetters::ModifierLetterReversedGlottalStop),
-            MODIFIER_LETTER_LEFT_ARROWHEAD => Ok(SpacingModifierLetters::ModifierLetterLeftArrowhead),
-            MODIFIER_LETTER_RIGHT_ARROWHEAD => Ok(SpacingModifierLetters::ModifierLetterRightArrowhead),
-            MODIFIER_LETTER_UP_ARROWHEAD => Ok(SpacingModifierLetters::ModifierLetterUpArrowhead),
-            MODIFIER_LETTER_DOWN_ARROWHEAD => Ok(SpacingModifierLetters::ModifierLetterDownArrowhead),
-            MODIFIER_LETTER_CIRCUMFLEX_ACCENT => Ok(SpacingModifierLetters::ModifierLetterCircumflexAccent),
-            CARON => Ok(SpacingModifierLetters::Caron),
-            MODIFIER_LETTER_VERTICAL_LINE => Ok(SpacingModifierLetters::ModifierLetterVerticalLine),
-            MODIFIER_LETTER_MACRON => Ok(SpacingModifierLetters::ModifierLetterMacron),
-            MODIFIER_LETTER_ACUTE_ACCENT => Ok(SpacingModifierLetters::ModifierLetterAcuteAccent),
-            MODIFIER_LETTER_GRAVE_ACCENT => Ok(SpacingModifierLetters::ModifierLetterGraveAccent),
-            MODIFIER_LETTER_LOW_VERTICAL_LINE => Ok(SpacingModifierLetters::ModifierLetterLowVerticalLine),
-            MODIFIER_LETTER_LOW_MACRON => Ok(SpacingModifierLetters::ModifierLetterLowMacron),
-            MODIFIER_LETTER_LOW_GRAVE_ACCENT => Ok(SpacingModifierLetters::ModifierLetterLowGraveAccent),
-            MODIFIER_LETTER_LOW_ACUTE_ACCENT => Ok(SpacingModifierLetters::ModifierLetterLowAcuteAccent),
-            MODIFIER_LETTER_TRIANGULAR_COLON => Ok(SpacingModifierLetters::ModifierLetterTriangularColon),
-            MODIFIER_LETTER_HALF_TRIANGULAR_COLON => Ok(SpacingModifierLetters::ModifierLetterHalfTriangularColon),
-            MODIFIER_LETTER_CENTRED_RIGHT_HALF_RING => Ok(SpacingModifierLetters::ModifierLetterCentredRightHalfRing),
-            MODIFIER_LETTER_CENTRED_LEFT_HALF_RING => Ok(SpacingModifierLetters::ModifierLetterCentredLeftHalfRing),
-            MODIFIER_LETTER_UP_TACK => Ok(SpacingModifierLetters::ModifierLetterUpTack),
-            MODIFIER_LETTER_DOWN_TACK => Ok(SpacingModifierLetters::ModifierLetterDownTack),
-            MODIFIER_LETTER_PLUS_SIGN => Ok(SpacingModifierLetters::ModifierLetterPlusSign),
-            MODIFIER_LETTER_MINUS_SIGN => Ok(SpacingModifierLetters::ModifierLetterMinusSign),
-            BREVE => Ok(SpacingModifierLetters::Breve),
-            DOT_ABOVE => Ok(SpacingModifierLetters::DotAbove),
-            RING_ABOVE => Ok(SpacingModifierLetters::RingAbove),
-            OGONEK => Ok(SpacingModifierLetters::Ogonek),
-            SMALL_TILDE => Ok(SpacingModifierLetters::SmallTilde),
-            DOUBLE_ACUTE_ACCENT => Ok(SpacingModifierLetters::DoubleAcuteAccent),
-            MODIFIER_LETTER_RHOTIC_HOOK => Ok(SpacingModifierLetters::ModifierLetterRhoticHook),
-            MODIFIER_LETTER_CROSS_ACCENT => Ok(SpacingModifierLetters::ModifierLetterCrossAccent),
-            MODIFIER_LETTER_SMALL_GAMMA => Ok(SpacingModifierLetters::ModifierLetterSmallGamma),
-            MODIFIER_LETTER_SMALL_L => Ok(SpacingModifierLetters::ModifierLetterSmallL),
-            MODIFIER_LETTER_SMALL_S => Ok(SpacingModifierLetters::ModifierLetterSmallS),
-            MODIFIER_LETTER_SMALL_X => Ok(SpacingModifierLetters::ModifierLetterSmallX),
-            MODIFIER_LETTER_SMALL_REVERSED_GLOTTAL_STOP => Ok(SpacingModifierLetters::ModifierLetterSmallReversedGlottalStop),
-            MODIFIER_LETTER_EXTRA_DASH_HIGH_TONE_BAR => Ok(SpacingModifierLetters::ModifierLetterExtraDashHighToneBar),
-            MODIFIER_LETTER_HIGH_TONE_BAR => Ok(SpacingModifierLetters::ModifierLetterHighToneBar),
-            MODIFIER_LETTER_MID_TONE_BAR => Ok(SpacingModifierLetters::ModifierLetterMidToneBar),
-            MODIFIER_LETTER_LOW_TONE_BAR => Ok(SpacingModifierLetters::ModifierLetterLowToneBar),
-            MODIFIER_LETTER_EXTRA_DASH_LOW_TONE_BAR => Ok(SpacingModifierLetters::ModifierLetterExtraDashLowToneBar),
-            MODIFIER_LETTER_YIN_DEPARTING_TONE_MARK => Ok(SpacingModifierLetters::ModifierLetterYinDepartingToneMark),
-            MODIFIER_LETTER_YANG_DEPARTING_TONE_MARK => Ok(SpacingModifierLetters::ModifierLetterYangDepartingToneMark),
-            MODIFIER_LETTER_VOICING => Ok(SpacingModifierLetters::ModifierLetterVoicing),
-            MODIFIER_LETTER_UNASPIRATED => Ok(SpacingModifierLetters::ModifierLetterUnaspirated),
-            MODIFIER_LETTER_DOUBLE_APOSTROPHE => Ok(SpacingModifierLetters::ModifierLetterDoubleApostrophe),
-            MODIFIER_LETTER_LOW_DOWN_ARROWHEAD => Ok(SpacingModifierLetters::ModifierLetterLowDownArrowhead),
-            MODIFIER_LETTER_LOW_UP_ARROWHEAD => Ok(SpacingModifierLetters::ModifierLetterLowUpArrowhead),
-            MODIFIER_LETTER_LOW_LEFT_ARROWHEAD => Ok(SpacingModifierLetters::ModifierLetterLowLeftArrowhead),
-            MODIFIER_LETTER_LOW_RIGHT_ARROWHEAD => Ok(SpacingModifierLetters::ModifierLetterLowRightArrowhead),
-            MODIFIER_LETTER_LOW_RING => Ok(SpacingModifierLetters::ModifierLetterLowRing),
-            MODIFIER_LETTER_MIDDLE_GRAVE_ACCENT => Ok(SpacingModifierLetters::ModifierLetterMiddleGraveAccent),
-            MODIFIER_LETTER_MIDDLE_DOUBLE_GRAVE_ACCENT => Ok(SpacingModifierLetters::ModifierLetterMiddleDoubleGraveAccent),
-            MODIFIER_LETTER_MIDDLE_DOUBLE_ACUTE_ACCENT => Ok(SpacingModifierLetters::ModifierLetterMiddleDoubleAcuteAccent),
-            MODIFIER_LETTER_LOW_TILDE => Ok(SpacingModifierLetters::ModifierLetterLowTilde),
-            MODIFIER_LETTER_RAISED_COLON => Ok(SpacingModifierLetters::ModifierLetterRaisedColon),
-            MODIFIER_LETTER_BEGIN_HIGH_TONE => Ok(SpacingModifierLetters::ModifierLetterBeginHighTone),
-            MODIFIER_LETTER_END_HIGH_TONE => Ok(SpacingModifierLetters::ModifierLetterEndHighTone),
-            MODIFIER_LETTER_BEGIN_LOW_TONE => Ok(SpacingModifierLetters::ModifierLetterBeginLowTone),
-            MODIFIER_LETTER_END_LOW_TONE => Ok(SpacingModifierLetters::ModifierLetterEndLowTone),
-            MODIFIER_LETTER_SHELF => Ok(SpacingModifierLetters::ModifierLetterShelf),
-            MODIFIER_LETTER_OPEN_SHELF => Ok(SpacingModifierLetters::ModifierLetterOpenShelf),
+            'ʰ' => Ok(SpacingModifierLetters::ModifierLetterSmallH),
+            'ʱ' => Ok(SpacingModifierLetters::ModifierLetterSmallHWithHook),
+            'ʲ' => Ok(SpacingModifierLetters::ModifierLetterSmallJ),
+            'ʳ' => Ok(SpacingModifierLetters::ModifierLetterSmallR),
+            'ʴ' => Ok(SpacingModifierLetters::ModifierLetterSmallTurnedR),
+            'ʵ' => Ok(SpacingModifierLetters::ModifierLetterSmallTurnedRWithHook),
+            'ʶ' => Ok(SpacingModifierLetters::ModifierLetterSmallCapitalInvertedR),
+            'ʷ' => Ok(SpacingModifierLetters::ModifierLetterSmallW),
+            'ʸ' => Ok(SpacingModifierLetters::ModifierLetterSmallY),
+            'ʹ' => Ok(SpacingModifierLetters::ModifierLetterPrime),
+            'ʺ' => Ok(SpacingModifierLetters::ModifierLetterDoublePrime),
+            'ʻ' => Ok(SpacingModifierLetters::ModifierLetterTurnedComma),
+            'ʼ' => Ok(SpacingModifierLetters::ModifierLetterApostrophe),
+            'ʽ' => Ok(SpacingModifierLetters::ModifierLetterReversedComma),
+            'ʾ' => Ok(SpacingModifierLetters::ModifierLetterRightHalfRing),
+            'ʿ' => Ok(SpacingModifierLetters::ModifierLetterLeftHalfRing),
+            'ˀ' => Ok(SpacingModifierLetters::ModifierLetterGlottalStop),
+            'ˁ' => Ok(SpacingModifierLetters::ModifierLetterReversedGlottalStop),
+            '˂' => Ok(SpacingModifierLetters::ModifierLetterLeftArrowhead),
+            '˃' => Ok(SpacingModifierLetters::ModifierLetterRightArrowhead),
+            '˄' => Ok(SpacingModifierLetters::ModifierLetterUpArrowhead),
+            '˅' => Ok(SpacingModifierLetters::ModifierLetterDownArrowhead),
+            'ˆ' => Ok(SpacingModifierLetters::ModifierLetterCircumflexAccent),
+            'ˇ' => Ok(SpacingModifierLetters::Caron),
+            'ˈ' => Ok(SpacingModifierLetters::ModifierLetterVerticalLine),
+            'ˉ' => Ok(SpacingModifierLetters::ModifierLetterMacron),
+            'ˊ' => Ok(SpacingModifierLetters::ModifierLetterAcuteAccent),
+            'ˋ' => Ok(SpacingModifierLetters::ModifierLetterGraveAccent),
+            'ˌ' => Ok(SpacingModifierLetters::ModifierLetterLowVerticalLine),
+            'ˍ' => Ok(SpacingModifierLetters::ModifierLetterLowMacron),
+            'ˎ' => Ok(SpacingModifierLetters::ModifierLetterLowGraveAccent),
+            'ˏ' => Ok(SpacingModifierLetters::ModifierLetterLowAcuteAccent),
+            'ː' => Ok(SpacingModifierLetters::ModifierLetterTriangularColon),
+            'ˑ' => Ok(SpacingModifierLetters::ModifierLetterHalfTriangularColon),
+            '˒' => Ok(SpacingModifierLetters::ModifierLetterCentredRightHalfRing),
+            '˓' => Ok(SpacingModifierLetters::ModifierLetterCentredLeftHalfRing),
+            '˔' => Ok(SpacingModifierLetters::ModifierLetterUpTack),
+            '˕' => Ok(SpacingModifierLetters::ModifierLetterDownTack),
+            '˖' => Ok(SpacingModifierLetters::ModifierLetterPlusSign),
+            '˗' => Ok(SpacingModifierLetters::ModifierLetterMinusSign),
+            '˘' => Ok(SpacingModifierLetters::Breve),
+            '˙' => Ok(SpacingModifierLetters::DotAbove),
+            '˚' => Ok(SpacingModifierLetters::RingAbove),
+            '˛' => Ok(SpacingModifierLetters::Ogonek),
+            '˜' => Ok(SpacingModifierLetters::SmallTilde),
+            '˝' => Ok(SpacingModifierLetters::DoubleAcuteAccent),
+            '˞' => Ok(SpacingModifierLetters::ModifierLetterRhoticHook),
+            '˟' => Ok(SpacingModifierLetters::ModifierLetterCrossAccent),
+            'ˠ' => Ok(SpacingModifierLetters::ModifierLetterSmallGamma),
+            'ˡ' => Ok(SpacingModifierLetters::ModifierLetterSmallL),
+            'ˢ' => Ok(SpacingModifierLetters::ModifierLetterSmallS),
+            'ˣ' => Ok(SpacingModifierLetters::ModifierLetterSmallX),
+            'ˤ' => Ok(SpacingModifierLetters::ModifierLetterSmallReversedGlottalStop),
+            '˥' => Ok(SpacingModifierLetters::ModifierLetterExtraDashHighToneBar),
+            '˦' => Ok(SpacingModifierLetters::ModifierLetterHighToneBar),
+            '˧' => Ok(SpacingModifierLetters::ModifierLetterMidToneBar),
+            '˨' => Ok(SpacingModifierLetters::ModifierLetterLowToneBar),
+            '˩' => Ok(SpacingModifierLetters::ModifierLetterExtraDashLowToneBar),
+            '˪' => Ok(SpacingModifierLetters::ModifierLetterYinDepartingToneMark),
+            '˫' => Ok(SpacingModifierLetters::ModifierLetterYangDepartingToneMark),
+            'ˬ' => Ok(SpacingModifierLetters::ModifierLetterVoicing),
+            '˭' => Ok(SpacingModifierLetters::ModifierLetterUnaspirated),
+            'ˮ' => Ok(SpacingModifierLetters::ModifierLetterDoubleApostrophe),
+            '˯' => Ok(SpacingModifierLetters::ModifierLetterLowDownArrowhead),
+            '˰' => Ok(SpacingModifierLetters::ModifierLetterLowUpArrowhead),
+            '˱' => Ok(SpacingModifierLetters::ModifierLetterLowLeftArrowhead),
+            '˲' => Ok(SpacingModifierLetters::ModifierLetterLowRightArrowhead),
+            '˳' => Ok(SpacingModifierLetters::ModifierLetterLowRing),
+            '˴' => Ok(SpacingModifierLetters::ModifierLetterMiddleGraveAccent),
+            '˵' => Ok(SpacingModifierLetters::ModifierLetterMiddleDoubleGraveAccent),
+            '˶' => Ok(SpacingModifierLetters::ModifierLetterMiddleDoubleAcuteAccent),
+            '˷' => Ok(SpacingModifierLetters::ModifierLetterLowTilde),
+            '˸' => Ok(SpacingModifierLetters::ModifierLetterRaisedColon),
+            '˹' => Ok(SpacingModifierLetters::ModifierLetterBeginHighTone),
+            '˺' => Ok(SpacingModifierLetters::ModifierLetterEndHighTone),
+            '˻' => Ok(SpacingModifierLetters::ModifierLetterBeginLowTone),
+            '˼' => Ok(SpacingModifierLetters::ModifierLetterEndLowTone),
+            '˽' => Ok(SpacingModifierLetters::ModifierLetterShelf),
+            '˾' => Ok(SpacingModifierLetters::ModifierLetterOpenShelf),
             _ => Err(()),
         }
     }

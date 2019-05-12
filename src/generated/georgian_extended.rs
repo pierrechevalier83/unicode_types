@@ -1,96 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1c90}: 'Ა'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_AN: char = 'Ა';
-    /// \u{1c91}: 'Ბ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_BAN: char = 'Ბ';
-    /// \u{1c92}: 'Გ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_GAN: char = 'Გ';
-    /// \u{1c93}: 'Დ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_DON: char = 'Დ';
-    /// \u{1c94}: 'Ე'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_EN: char = 'Ე';
-    /// \u{1c95}: 'Ვ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_VIN: char = 'Ვ';
-    /// \u{1c96}: 'Ზ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_ZEN: char = 'Ზ';
-    /// \u{1c97}: 'Თ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_TAN: char = 'Თ';
-    /// \u{1c98}: 'Ი'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_IN: char = 'Ი';
-    /// \u{1c99}: 'Კ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_KAN: char = 'Კ';
-    /// \u{1c9a}: 'Ლ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_LAS: char = 'Ლ';
-    /// \u{1c9b}: 'Მ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_MAN: char = 'Მ';
-    /// \u{1c9c}: 'Ნ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_NAR: char = 'Ნ';
-    /// \u{1c9d}: 'Ო'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_ON: char = 'Ო';
-    /// \u{1c9e}: 'Პ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_PAR: char = 'Პ';
-    /// \u{1c9f}: 'Ჟ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_ZHAR: char = 'Ჟ';
-    /// \u{1ca0}: 'Რ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_RAE: char = 'Რ';
-    /// \u{1ca1}: 'Ს'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_SAN: char = 'Ს';
-    /// \u{1ca2}: 'Ტ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_TAR: char = 'Ტ';
-    /// \u{1ca3}: 'Უ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_UN: char = 'Უ';
-    /// \u{1ca4}: 'Ფ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_PHAR: char = 'Ფ';
-    /// \u{1ca5}: 'Ქ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_KHAR: char = 'Ქ';
-    /// \u{1ca6}: 'Ღ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_GHAN: char = 'Ღ';
-    /// \u{1ca7}: 'Ყ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_QAR: char = 'Ყ';
-    /// \u{1ca8}: 'Შ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_SHIN: char = 'Შ';
-    /// \u{1ca9}: 'Ჩ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_CHIN: char = 'Ჩ';
-    /// \u{1caa}: 'Ც'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_CAN: char = 'Ც';
-    /// \u{1cab}: 'Ძ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_JIL: char = 'Ძ';
-    /// \u{1cac}: 'Წ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_CIL: char = 'Წ';
-    /// \u{1cad}: 'Ჭ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_CHAR: char = 'Ჭ';
-    /// \u{1cae}: 'Ხ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_XAN: char = 'Ხ';
-    /// \u{1caf}: 'Ჯ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_JHAN: char = 'Ჯ';
-    /// \u{1cb0}: 'Ჰ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_HAE: char = 'Ჰ';
-    /// \u{1cb1}: 'Ჱ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_HE: char = 'Ჱ';
-    /// \u{1cb2}: 'Ჲ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_HIE: char = 'Ჲ';
-    /// \u{1cb3}: 'Ჳ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_WE: char = 'Ჳ';
-    /// \u{1cb4}: 'Ჴ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_HAR: char = 'Ჴ';
-    /// \u{1cb5}: 'Ჵ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_HOE: char = 'Ჵ';
-    /// \u{1cb6}: 'Ჶ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_FI: char = 'Ჶ';
-    /// \u{1cb7}: 'Ჷ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_YN: char = 'Ჷ';
-    /// \u{1cb8}: 'Ჸ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_ELIFI: char = 'Ჸ';
-    /// \u{1cb9}: 'Ჹ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_TURNED_GAN: char = 'Ჹ';
-    /// \u{1cba}: 'Ჺ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_AIN: char = 'Ჺ';
-    /// \u{1cbd}: 'Ჽ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_AEN: char = 'Ჽ';
-    /// \u{1cbe}: 'Ჾ'
-    pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_HARD_SIGN: char = 'Ჾ';
-}
 
 /// An enum to represent all characters in the GeorgianExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -189,53 +96,52 @@ pub enum GeorgianExtended {
 
 impl Into<char> for GeorgianExtended {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            GeorgianExtended::GeorgianMtavruliCapitalLetterAn => GEORGIAN_MTAVRULI_CAPITAL_LETTER_AN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterBan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_BAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterGan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_GAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterDon => GEORGIAN_MTAVRULI_CAPITAL_LETTER_DON,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterEn => GEORGIAN_MTAVRULI_CAPITAL_LETTER_EN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterVin => GEORGIAN_MTAVRULI_CAPITAL_LETTER_VIN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterZen => GEORGIAN_MTAVRULI_CAPITAL_LETTER_ZEN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterTan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_TAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterIn => GEORGIAN_MTAVRULI_CAPITAL_LETTER_IN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterKan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_KAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterLas => GEORGIAN_MTAVRULI_CAPITAL_LETTER_LAS,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterMan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_MAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterNar => GEORGIAN_MTAVRULI_CAPITAL_LETTER_NAR,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterOn => GEORGIAN_MTAVRULI_CAPITAL_LETTER_ON,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterPar => GEORGIAN_MTAVRULI_CAPITAL_LETTER_PAR,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterZhar => GEORGIAN_MTAVRULI_CAPITAL_LETTER_ZHAR,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterRae => GEORGIAN_MTAVRULI_CAPITAL_LETTER_RAE,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterSan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_SAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterTar => GEORGIAN_MTAVRULI_CAPITAL_LETTER_TAR,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterUn => GEORGIAN_MTAVRULI_CAPITAL_LETTER_UN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterPhar => GEORGIAN_MTAVRULI_CAPITAL_LETTER_PHAR,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterKhar => GEORGIAN_MTAVRULI_CAPITAL_LETTER_KHAR,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterGhan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_GHAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterQar => GEORGIAN_MTAVRULI_CAPITAL_LETTER_QAR,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterShin => GEORGIAN_MTAVRULI_CAPITAL_LETTER_SHIN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterChin => GEORGIAN_MTAVRULI_CAPITAL_LETTER_CHIN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterCan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_CAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterJil => GEORGIAN_MTAVRULI_CAPITAL_LETTER_JIL,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterCil => GEORGIAN_MTAVRULI_CAPITAL_LETTER_CIL,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterChar => GEORGIAN_MTAVRULI_CAPITAL_LETTER_CHAR,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterXan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_XAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterJhan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_JHAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHae => GEORGIAN_MTAVRULI_CAPITAL_LETTER_HAE,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHe => GEORGIAN_MTAVRULI_CAPITAL_LETTER_HE,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHie => GEORGIAN_MTAVRULI_CAPITAL_LETTER_HIE,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterWe => GEORGIAN_MTAVRULI_CAPITAL_LETTER_WE,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHar => GEORGIAN_MTAVRULI_CAPITAL_LETTER_HAR,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHoe => GEORGIAN_MTAVRULI_CAPITAL_LETTER_HOE,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterFi => GEORGIAN_MTAVRULI_CAPITAL_LETTER_FI,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterYn => GEORGIAN_MTAVRULI_CAPITAL_LETTER_YN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterElifi => GEORGIAN_MTAVRULI_CAPITAL_LETTER_ELIFI,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterTurnedGan => GEORGIAN_MTAVRULI_CAPITAL_LETTER_TURNED_GAN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterAin => GEORGIAN_MTAVRULI_CAPITAL_LETTER_AIN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterAen => GEORGIAN_MTAVRULI_CAPITAL_LETTER_AEN,
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHardSign => GEORGIAN_MTAVRULI_CAPITAL_LETTER_HARD_SIGN,
+            GeorgianExtended::GeorgianMtavruliCapitalLetterAn => 'Ა',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterBan => 'Ბ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterGan => 'Გ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterDon => 'Დ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterEn => 'Ე',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterVin => 'Ვ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterZen => 'Ზ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterTan => 'Თ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterIn => 'Ი',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterKan => 'Კ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterLas => 'Ლ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterMan => 'Მ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterNar => 'Ნ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterOn => 'Ო',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterPar => 'Პ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterZhar => 'Ჟ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterRae => 'Რ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterSan => 'Ს',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterTar => 'Ტ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterUn => 'Უ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterPhar => 'Ფ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterKhar => 'Ქ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterGhan => 'Ღ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterQar => 'Ყ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterShin => 'Შ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterChin => 'Ჩ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterCan => 'Ც',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterJil => 'Ძ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterCil => 'Წ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterChar => 'Ჭ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterXan => 'Ხ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterJhan => 'Ჯ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterHae => 'Ჰ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterHe => 'Ჱ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterHie => 'Ჲ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterWe => 'Ჳ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterHar => 'Ჴ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterHoe => 'Ჵ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterFi => 'Ჶ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterYn => 'Ჷ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterElifi => 'Ჸ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterTurnedGan => 'Ჹ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterAin => 'Ჺ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterAen => 'Ჽ',
+            GeorgianExtended::GeorgianMtavruliCapitalLetterHardSign => 'Ჾ',
         }
     }
 }
@@ -243,53 +149,52 @@ impl Into<char> for GeorgianExtended {
 impl std::convert::TryFrom<char> for GeorgianExtended {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_AN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterAn),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_BAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterBan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_GAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterGan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_DON => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterDon),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_EN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterEn),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_VIN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterVin),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_ZEN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterZen),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_TAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterTan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_IN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterIn),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_KAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterKan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_LAS => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterLas),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_MAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterMan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_NAR => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterNar),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_ON => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterOn),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_PAR => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterPar),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_ZHAR => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterZhar),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_RAE => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterRae),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_SAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterSan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_TAR => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterTar),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_UN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterUn),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_PHAR => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterPhar),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_KHAR => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterKhar),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_GHAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterGhan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_QAR => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterQar),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_SHIN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterShin),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_CHIN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterChin),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_CAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterCan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_JIL => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterJil),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_CIL => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterCil),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_CHAR => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterChar),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_XAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterXan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_JHAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterJhan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_HAE => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHae),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_HE => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHe),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_HIE => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHie),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_WE => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterWe),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_HAR => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHar),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_HOE => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHoe),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_FI => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterFi),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_YN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterYn),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_ELIFI => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterElifi),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_TURNED_GAN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterTurnedGan),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_AIN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterAin),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_AEN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterAen),
-            GEORGIAN_MTAVRULI_CAPITAL_LETTER_HARD_SIGN => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHardSign),
+            'Ა' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterAn),
+            'Ბ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterBan),
+            'Გ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterGan),
+            'Დ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterDon),
+            'Ე' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterEn),
+            'Ვ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterVin),
+            'Ზ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterZen),
+            'Თ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterTan),
+            'Ი' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterIn),
+            'Კ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterKan),
+            'Ლ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterLas),
+            'Მ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterMan),
+            'Ნ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterNar),
+            'Ო' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterOn),
+            'Პ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterPar),
+            'Ჟ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterZhar),
+            'Რ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterRae),
+            'Ს' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterSan),
+            'Ტ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterTar),
+            'Უ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterUn),
+            'Ფ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterPhar),
+            'Ქ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterKhar),
+            'Ღ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterGhan),
+            'Ყ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterQar),
+            'Შ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterShin),
+            'Ჩ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterChin),
+            'Ც' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterCan),
+            'Ძ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterJil),
+            'Წ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterCil),
+            'Ჭ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterChar),
+            'Ხ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterXan),
+            'Ჯ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterJhan),
+            'Ჰ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHae),
+            'Ჱ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHe),
+            'Ჲ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHie),
+            'Ჳ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterWe),
+            'Ჴ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHar),
+            'Ჵ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHoe),
+            'Ჶ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterFi),
+            'Ჷ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterYn),
+            'Ჸ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterElifi),
+            'Ჹ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterTurnedGan),
+            'Ჺ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterAin),
+            'Ჽ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterAen),
+            'Ჾ' => Ok(GeorgianExtended::GeorgianMtavruliCapitalLetterHardSign),
             _ => Err(()),
         }
     }

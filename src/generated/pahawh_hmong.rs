@@ -1,258 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{16b00}: '𖬀'
-    pub const VOWEL_KEEB: char = '𖬀';
-    /// \u{16b01}: '𖬁'
-    pub const VOWEL_KEEV: char = '𖬁';
-    /// \u{16b02}: '𖬂'
-    pub const VOWEL_KIB: char = '𖬂';
-    /// \u{16b03}: '𖬃'
-    pub const VOWEL_KIV: char = '𖬃';
-    /// \u{16b04}: '𖬄'
-    pub const VOWEL_KAUB: char = '𖬄';
-    /// \u{16b05}: '𖬅'
-    pub const VOWEL_KAUV: char = '𖬅';
-    /// \u{16b06}: '𖬆'
-    pub const VOWEL_KUB: char = '𖬆';
-    /// \u{16b07}: '𖬇'
-    pub const VOWEL_KUV: char = '𖬇';
-    /// \u{16b08}: '𖬈'
-    pub const VOWEL_KEB: char = '𖬈';
-    /// \u{16b09}: '𖬉'
-    pub const VOWEL_KEV: char = '𖬉';
-    /// \u{16b0a}: '𖬊'
-    pub const VOWEL_KAIB: char = '𖬊';
-    /// \u{16b0b}: '𖬋'
-    pub const VOWEL_KAIV: char = '𖬋';
-    /// \u{16b0c}: '𖬌'
-    pub const VOWEL_KOOB: char = '𖬌';
-    /// \u{16b0d}: '𖬍'
-    pub const VOWEL_KOOV: char = '𖬍';
-    /// \u{16b0e}: '𖬎'
-    pub const VOWEL_KAWB: char = '𖬎';
-    /// \u{16b0f}: '𖬏'
-    pub const VOWEL_KAWV: char = '𖬏';
-    /// \u{16b10}: '𖬐'
-    pub const VOWEL_KUAB: char = '𖬐';
-    /// \u{16b11}: '𖬑'
-    pub const VOWEL_KUAV: char = '𖬑';
-    /// \u{16b12}: '𖬒'
-    pub const VOWEL_KOB: char = '𖬒';
-    /// \u{16b13}: '𖬓'
-    pub const VOWEL_KOV: char = '𖬓';
-    /// \u{16b14}: '𖬔'
-    pub const VOWEL_KIAB: char = '𖬔';
-    /// \u{16b15}: '𖬕'
-    pub const VOWEL_KIAV: char = '𖬕';
-    /// \u{16b16}: '𖬖'
-    pub const VOWEL_KAB: char = '𖬖';
-    /// \u{16b17}: '𖬗'
-    pub const VOWEL_KAV: char = '𖬗';
-    /// \u{16b18}: '𖬘'
-    pub const VOWEL_KWB: char = '𖬘';
-    /// \u{16b19}: '𖬙'
-    pub const VOWEL_KWV: char = '𖬙';
-    /// \u{16b1a}: '𖬚'
-    pub const VOWEL_KAAB: char = '𖬚';
-    /// \u{16b1b}: '𖬛'
-    pub const VOWEL_KAAV: char = '𖬛';
-    /// \u{16b1c}: '𖬜'
-    pub const CONSONANT_VAU: char = '𖬜';
-    /// \u{16b1d}: '𖬝'
-    pub const CONSONANT_NTSAU: char = '𖬝';
-    /// \u{16b1e}: '𖬞'
-    pub const CONSONANT_LAU: char = '𖬞';
-    /// \u{16b1f}: '𖬟'
-    pub const CONSONANT_HAU: char = '𖬟';
-    /// \u{16b20}: '𖬠'
-    pub const CONSONANT_NLAU: char = '𖬠';
-    /// \u{16b21}: '𖬡'
-    pub const CONSONANT_RAU: char = '𖬡';
-    /// \u{16b22}: '𖬢'
-    pub const CONSONANT_NKAU: char = '𖬢';
-    /// \u{16b23}: '𖬣'
-    pub const CONSONANT_QHAU: char = '𖬣';
-    /// \u{16b24}: '𖬤'
-    pub const CONSONANT_YAU: char = '𖬤';
-    /// \u{16b25}: '𖬥'
-    pub const CONSONANT_HLAU: char = '𖬥';
-    /// \u{16b26}: '𖬦'
-    pub const CONSONANT_MAU: char = '𖬦';
-    /// \u{16b27}: '𖬧'
-    pub const CONSONANT_CHAU: char = '𖬧';
-    /// \u{16b28}: '𖬨'
-    pub const CONSONANT_NCHAU: char = '𖬨';
-    /// \u{16b29}: '𖬩'
-    pub const CONSONANT_HNAU: char = '𖬩';
-    /// \u{16b2a}: '𖬪'
-    pub const CONSONANT_PLHAU: char = '𖬪';
-    /// \u{16b2b}: '𖬫'
-    pub const CONSONANT_NTHAU: char = '𖬫';
-    /// \u{16b2c}: '𖬬'
-    pub const CONSONANT_NAU: char = '𖬬';
-    /// \u{16b2d}: '𖬭'
-    pub const CONSONANT_AU: char = '𖬭';
-    /// \u{16b2e}: '𖬮'
-    pub const CONSONANT_XAU: char = '𖬮';
-    /// \u{16b2f}: '𖬯'
-    pub const CONSONANT_CAU: char = '𖬯';
-    /// \u{16b30}: '𖬰'
-    pub const MARK_CIM_TUB: char = '𖬰';
-    /// \u{16b31}: '𖬱'
-    pub const MARK_CIM_SO: char = '𖬱';
-    /// \u{16b32}: '𖬲'
-    pub const MARK_CIM_KES: char = '𖬲';
-    /// \u{16b33}: '𖬳'
-    pub const MARK_CIM_KHAV: char = '𖬳';
-    /// \u{16b34}: '𖬴'
-    pub const MARK_CIM_SUAM: char = '𖬴';
-    /// \u{16b35}: '𖬵'
-    pub const MARK_CIM_HOM: char = '𖬵';
-    /// \u{16b36}: '𖬶'
-    pub const MARK_CIM_TAUM: char = '𖬶';
-    /// \u{16b37}: '𖬷'
-    pub const SIGN_VOS_THOM: char = '𖬷';
-    /// \u{16b38}: '𖬸'
-    pub const SIGN_VOS_TSHAB_CEEB: char = '𖬸';
-    /// \u{16b39}: '𖬹'
-    pub const SIGN_CIM_CHEEM: char = '𖬹';
-    /// \u{16b3a}: '𖬺'
-    pub const SIGN_VOS_THIAB: char = '𖬺';
-    /// \u{16b3b}: '𖬻'
-    pub const SIGN_VOS_FEEM: char = '𖬻';
-    /// \u{16b3c}: '𖬼'
-    pub const SIGN_XYEEM_NTXIV: char = '𖬼';
-    /// \u{16b3d}: '𖬽'
-    pub const SIGN_XYEEM_RHO: char = '𖬽';
-    /// \u{16b3e}: '𖬾'
-    pub const SIGN_XYEEM_TOV: char = '𖬾';
-    /// \u{16b3f}: '𖬿'
-    pub const SIGN_XYEEM_FAIB: char = '𖬿';
-    /// \u{16b40}: '𖭀'
-    pub const SIGN_VOS_SEEV: char = '𖭀';
-    /// \u{16b41}: '𖭁'
-    pub const SIGN_MEEJ_SUAB: char = '𖭁';
-    /// \u{16b42}: '𖭂'
-    pub const SIGN_VOS_NRUA: char = '𖭂';
-    /// \u{16b43}: '𖭃'
-    pub const SIGN_IB_YAM: char = '𖭃';
-    /// \u{16b44}: '𖭄'
-    pub const SIGN_XAUS: char = '𖭄';
-    /// \u{16b45}: '𖭅'
-    pub const SIGN_CIM_TSOV_ROG: char = '𖭅';
-    /// \u{16b50}: '𖭐'
-    pub const DIGIT_ZERO: char = '𖭐';
-    /// \u{16b51}: '𖭑'
-    pub const DIGIT_ONE: char = '𖭑';
-    /// \u{16b52}: '𖭒'
-    pub const DIGIT_TWO: char = '𖭒';
-    /// \u{16b53}: '𖭓'
-    pub const DIGIT_THREE: char = '𖭓';
-    /// \u{16b54}: '𖭔'
-    pub const DIGIT_FOUR: char = '𖭔';
-    /// \u{16b55}: '𖭕'
-    pub const DIGIT_FIVE: char = '𖭕';
-    /// \u{16b56}: '𖭖'
-    pub const DIGIT_SIX: char = '𖭖';
-    /// \u{16b57}: '𖭗'
-    pub const DIGIT_SEVEN: char = '𖭗';
-    /// \u{16b58}: '𖭘'
-    pub const DIGIT_EIGHT: char = '𖭘';
-    /// \u{16b59}: '𖭙'
-    pub const DIGIT_NINE: char = '𖭙';
-    /// \u{16b5b}: '𖭛'
-    pub const NUMBER_TENS: char = '𖭛';
-    /// \u{16b5c}: '𖭜'
-    pub const NUMBER_HUNDREDS: char = '𖭜';
-    /// \u{16b5d}: '𖭝'
-    pub const NUMBER_TEN_THOUSANDS: char = '𖭝';
-    /// \u{16b5e}: '𖭞'
-    pub const NUMBER_MILLIONS: char = '𖭞';
-    /// \u{16b5f}: '𖭟'
-    pub const NUMBER_HUNDRED_MILLIONS: char = '𖭟';
-    /// \u{16b60}: '𖭠'
-    pub const NUMBER_TEN_BILLIONS: char = '𖭠';
-    /// \u{16b61}: '𖭡'
-    pub const NUMBER_TRILLIONS: char = '𖭡';
-    /// \u{16b63}: '𖭣'
-    pub const SIGN_VOS_LUB: char = '𖭣';
-    /// \u{16b64}: '𖭤'
-    pub const SIGN_XYOO: char = '𖭤';
-    /// \u{16b65}: '𖭥'
-    pub const SIGN_HLI: char = '𖭥';
-    /// \u{16b66}: '𖭦'
-    pub const SIGN_THIRD_DASH_STAGE_HLI: char = '𖭦';
-    /// \u{16b67}: '𖭧'
-    pub const SIGN_ZWJ_THAJ: char = '𖭧';
-    /// \u{16b68}: '𖭨'
-    pub const SIGN_HNUB: char = '𖭨';
-    /// \u{16b69}: '𖭩'
-    pub const SIGN_NQIG: char = '𖭩';
-    /// \u{16b6a}: '𖭪'
-    pub const SIGN_XIAB: char = '𖭪';
-    /// \u{16b6b}: '𖭫'
-    pub const SIGN_NTUJ: char = '𖭫';
-    /// \u{16b6c}: '𖭬'
-    pub const SIGN_AV: char = '𖭬';
-    /// \u{16b6d}: '𖭭'
-    pub const SIGN_TXHEEJ_CEEV: char = '𖭭';
-    /// \u{16b6e}: '𖭮'
-    pub const SIGN_MEEJ_TSEEB: char = '𖭮';
-    /// \u{16b6f}: '𖭯'
-    pub const SIGN_TAU: char = '𖭯';
-    /// \u{16b70}: '𖭰'
-    pub const SIGN_LOS: char = '𖭰';
-    /// \u{16b71}: '𖭱'
-    pub const SIGN_MUS: char = '𖭱';
-    /// \u{16b72}: '𖭲'
-    pub const SIGN_CIM_HAIS_LUS_NTOG_NTOG: char = '𖭲';
-    /// \u{16b73}: '𖭳'
-    pub const SIGN_CIM_CUAM_TSHOOJ: char = '𖭳';
-    /// \u{16b74}: '𖭴'
-    pub const SIGN_CIM_TXWV: char = '𖭴';
-    /// \u{16b75}: '𖭵'
-    pub const SIGN_CIM_TXWV_CHWV: char = '𖭵';
-    /// \u{16b76}: '𖭶'
-    pub const SIGN_CIM_PUB_DAWB: char = '𖭶';
-    /// \u{16b77}: '𖭷'
-    pub const SIGN_CIM_NRES_TOS: char = '𖭷';
-    /// \u{16b7d}: '𖭽'
-    pub const CLAN_SIGN_TSHEEJ: char = '𖭽';
-    /// \u{16b7e}: '𖭾'
-    pub const CLAN_SIGN_YEEG: char = '𖭾';
-    /// \u{16b7f}: '𖭿'
-    pub const CLAN_SIGN_LIS: char = '𖭿';
-    /// \u{16b80}: '𖮀'
-    pub const CLAN_SIGN_LAUJ: char = '𖮀';
-    /// \u{16b81}: '𖮁'
-    pub const CLAN_SIGN_XYOOJ: char = '𖮁';
-    /// \u{16b82}: '𖮂'
-    pub const CLAN_SIGN_KOO: char = '𖮂';
-    /// \u{16b83}: '𖮃'
-    pub const CLAN_SIGN_HAWJ: char = '𖮃';
-    /// \u{16b84}: '𖮄'
-    pub const CLAN_SIGN_MUAS: char = '𖮄';
-    /// \u{16b85}: '𖮅'
-    pub const CLAN_SIGN_THOJ: char = '𖮅';
-    /// \u{16b86}: '𖮆'
-    pub const CLAN_SIGN_TSAB: char = '𖮆';
-    /// \u{16b87}: '𖮇'
-    pub const CLAN_SIGN_PHAB: char = '𖮇';
-    /// \u{16b88}: '𖮈'
-    pub const CLAN_SIGN_KHAB: char = '𖮈';
-    /// \u{16b89}: '𖮉'
-    pub const CLAN_SIGN_HAM: char = '𖮉';
-    /// \u{16b8a}: '𖮊'
-    pub const CLAN_SIGN_VAJ: char = '𖮊';
-    /// \u{16b8b}: '𖮋'
-    pub const CLAN_SIGN_FAJ: char = '𖮋';
-    /// \u{16b8c}: '𖮌'
-    pub const CLAN_SIGN_YAJ: char = '𖮌';
-    /// \u{16b8d}: '𖮍'
-    pub const CLAN_SIGN_TSWB: char = '𖮍';
-    /// \u{16b8e}: '𖮎'
-    pub const CLAN_SIGN_KWM: char = '𖮎';
-}
 
 /// An enum to represent all characters in the PahawhHmong block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -513,134 +258,133 @@ pub enum PahawhHmong {
 
 impl Into<char> for PahawhHmong {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            PahawhHmong::VowelKeeb => VOWEL_KEEB,
-            PahawhHmong::VowelKeev => VOWEL_KEEV,
-            PahawhHmong::VowelKib => VOWEL_KIB,
-            PahawhHmong::VowelKiv => VOWEL_KIV,
-            PahawhHmong::VowelKaub => VOWEL_KAUB,
-            PahawhHmong::VowelKauv => VOWEL_KAUV,
-            PahawhHmong::VowelKub => VOWEL_KUB,
-            PahawhHmong::VowelKuv => VOWEL_KUV,
-            PahawhHmong::VowelKeb => VOWEL_KEB,
-            PahawhHmong::VowelKev => VOWEL_KEV,
-            PahawhHmong::VowelKaib => VOWEL_KAIB,
-            PahawhHmong::VowelKaiv => VOWEL_KAIV,
-            PahawhHmong::VowelKoob => VOWEL_KOOB,
-            PahawhHmong::VowelKoov => VOWEL_KOOV,
-            PahawhHmong::VowelKawb => VOWEL_KAWB,
-            PahawhHmong::VowelKawv => VOWEL_KAWV,
-            PahawhHmong::VowelKuab => VOWEL_KUAB,
-            PahawhHmong::VowelKuav => VOWEL_KUAV,
-            PahawhHmong::VowelKob => VOWEL_KOB,
-            PahawhHmong::VowelKov => VOWEL_KOV,
-            PahawhHmong::VowelKiab => VOWEL_KIAB,
-            PahawhHmong::VowelKiav => VOWEL_KIAV,
-            PahawhHmong::VowelKab => VOWEL_KAB,
-            PahawhHmong::VowelKav => VOWEL_KAV,
-            PahawhHmong::VowelKwb => VOWEL_KWB,
-            PahawhHmong::VowelKwv => VOWEL_KWV,
-            PahawhHmong::VowelKaab => VOWEL_KAAB,
-            PahawhHmong::VowelKaav => VOWEL_KAAV,
-            PahawhHmong::ConsonantVau => CONSONANT_VAU,
-            PahawhHmong::ConsonantNtsau => CONSONANT_NTSAU,
-            PahawhHmong::ConsonantLau => CONSONANT_LAU,
-            PahawhHmong::ConsonantHau => CONSONANT_HAU,
-            PahawhHmong::ConsonantNlau => CONSONANT_NLAU,
-            PahawhHmong::ConsonantRau => CONSONANT_RAU,
-            PahawhHmong::ConsonantNkau => CONSONANT_NKAU,
-            PahawhHmong::ConsonantQhau => CONSONANT_QHAU,
-            PahawhHmong::ConsonantYau => CONSONANT_YAU,
-            PahawhHmong::ConsonantHlau => CONSONANT_HLAU,
-            PahawhHmong::ConsonantMau => CONSONANT_MAU,
-            PahawhHmong::ConsonantChau => CONSONANT_CHAU,
-            PahawhHmong::ConsonantNchau => CONSONANT_NCHAU,
-            PahawhHmong::ConsonantHnau => CONSONANT_HNAU,
-            PahawhHmong::ConsonantPlhau => CONSONANT_PLHAU,
-            PahawhHmong::ConsonantNthau => CONSONANT_NTHAU,
-            PahawhHmong::ConsonantNau => CONSONANT_NAU,
-            PahawhHmong::ConsonantAu => CONSONANT_AU,
-            PahawhHmong::ConsonantXau => CONSONANT_XAU,
-            PahawhHmong::ConsonantCau => CONSONANT_CAU,
-            PahawhHmong::MarkCimTub => MARK_CIM_TUB,
-            PahawhHmong::MarkCimSo => MARK_CIM_SO,
-            PahawhHmong::MarkCimKes => MARK_CIM_KES,
-            PahawhHmong::MarkCimKhav => MARK_CIM_KHAV,
-            PahawhHmong::MarkCimSuam => MARK_CIM_SUAM,
-            PahawhHmong::MarkCimHom => MARK_CIM_HOM,
-            PahawhHmong::MarkCimTaum => MARK_CIM_TAUM,
-            PahawhHmong::SignVosThom => SIGN_VOS_THOM,
-            PahawhHmong::SignVosTshabCeeb => SIGN_VOS_TSHAB_CEEB,
-            PahawhHmong::SignCimCheem => SIGN_CIM_CHEEM,
-            PahawhHmong::SignVosThiab => SIGN_VOS_THIAB,
-            PahawhHmong::SignVosFeem => SIGN_VOS_FEEM,
-            PahawhHmong::SignXyeemNtxiv => SIGN_XYEEM_NTXIV,
-            PahawhHmong::SignXyeemRho => SIGN_XYEEM_RHO,
-            PahawhHmong::SignXyeemTov => SIGN_XYEEM_TOV,
-            PahawhHmong::SignXyeemFaib => SIGN_XYEEM_FAIB,
-            PahawhHmong::SignVosSeev => SIGN_VOS_SEEV,
-            PahawhHmong::SignMeejSuab => SIGN_MEEJ_SUAB,
-            PahawhHmong::SignVosNrua => SIGN_VOS_NRUA,
-            PahawhHmong::SignIbYam => SIGN_IB_YAM,
-            PahawhHmong::SignXaus => SIGN_XAUS,
-            PahawhHmong::SignCimTsovRog => SIGN_CIM_TSOV_ROG,
-            PahawhHmong::DigitZero => DIGIT_ZERO,
-            PahawhHmong::DigitOne => DIGIT_ONE,
-            PahawhHmong::DigitTwo => DIGIT_TWO,
-            PahawhHmong::DigitThree => DIGIT_THREE,
-            PahawhHmong::DigitFour => DIGIT_FOUR,
-            PahawhHmong::DigitFive => DIGIT_FIVE,
-            PahawhHmong::DigitSix => DIGIT_SIX,
-            PahawhHmong::DigitSeven => DIGIT_SEVEN,
-            PahawhHmong::DigitEight => DIGIT_EIGHT,
-            PahawhHmong::DigitNine => DIGIT_NINE,
-            PahawhHmong::NumberTens => NUMBER_TENS,
-            PahawhHmong::NumberHundreds => NUMBER_HUNDREDS,
-            PahawhHmong::NumberTenThousands => NUMBER_TEN_THOUSANDS,
-            PahawhHmong::NumberMillions => NUMBER_MILLIONS,
-            PahawhHmong::NumberHundredMillions => NUMBER_HUNDRED_MILLIONS,
-            PahawhHmong::NumberTenBillions => NUMBER_TEN_BILLIONS,
-            PahawhHmong::NumberTrillions => NUMBER_TRILLIONS,
-            PahawhHmong::SignVosLub => SIGN_VOS_LUB,
-            PahawhHmong::SignXyoo => SIGN_XYOO,
-            PahawhHmong::SignHli => SIGN_HLI,
-            PahawhHmong::SignThirdDashStageHli => SIGN_THIRD_DASH_STAGE_HLI,
-            PahawhHmong::SignZwjThaj => SIGN_ZWJ_THAJ,
-            PahawhHmong::SignHnub => SIGN_HNUB,
-            PahawhHmong::SignNqig => SIGN_NQIG,
-            PahawhHmong::SignXiab => SIGN_XIAB,
-            PahawhHmong::SignNtuj => SIGN_NTUJ,
-            PahawhHmong::SignAv => SIGN_AV,
-            PahawhHmong::SignTxheejCeev => SIGN_TXHEEJ_CEEV,
-            PahawhHmong::SignMeejTseeb => SIGN_MEEJ_TSEEB,
-            PahawhHmong::SignTau => SIGN_TAU,
-            PahawhHmong::SignLos => SIGN_LOS,
-            PahawhHmong::SignMus => SIGN_MUS,
-            PahawhHmong::SignCimHaisLusNtogNtog => SIGN_CIM_HAIS_LUS_NTOG_NTOG,
-            PahawhHmong::SignCimCuamTshooj => SIGN_CIM_CUAM_TSHOOJ,
-            PahawhHmong::SignCimTxwv => SIGN_CIM_TXWV,
-            PahawhHmong::SignCimTxwvChwv => SIGN_CIM_TXWV_CHWV,
-            PahawhHmong::SignCimPubDawb => SIGN_CIM_PUB_DAWB,
-            PahawhHmong::SignCimNresTos => SIGN_CIM_NRES_TOS,
-            PahawhHmong::ClanSignTsheej => CLAN_SIGN_TSHEEJ,
-            PahawhHmong::ClanSignYeeg => CLAN_SIGN_YEEG,
-            PahawhHmong::ClanSignLis => CLAN_SIGN_LIS,
-            PahawhHmong::ClanSignLauj => CLAN_SIGN_LAUJ,
-            PahawhHmong::ClanSignXyooj => CLAN_SIGN_XYOOJ,
-            PahawhHmong::ClanSignKoo => CLAN_SIGN_KOO,
-            PahawhHmong::ClanSignHawj => CLAN_SIGN_HAWJ,
-            PahawhHmong::ClanSignMuas => CLAN_SIGN_MUAS,
-            PahawhHmong::ClanSignThoj => CLAN_SIGN_THOJ,
-            PahawhHmong::ClanSignTsab => CLAN_SIGN_TSAB,
-            PahawhHmong::ClanSignPhab => CLAN_SIGN_PHAB,
-            PahawhHmong::ClanSignKhab => CLAN_SIGN_KHAB,
-            PahawhHmong::ClanSignHam => CLAN_SIGN_HAM,
-            PahawhHmong::ClanSignVaj => CLAN_SIGN_VAJ,
-            PahawhHmong::ClanSignFaj => CLAN_SIGN_FAJ,
-            PahawhHmong::ClanSignYaj => CLAN_SIGN_YAJ,
-            PahawhHmong::ClanSignTswb => CLAN_SIGN_TSWB,
-            PahawhHmong::ClanSignKwm => CLAN_SIGN_KWM,
+            PahawhHmong::VowelKeeb => '𖬀',
+            PahawhHmong::VowelKeev => '𖬁',
+            PahawhHmong::VowelKib => '𖬂',
+            PahawhHmong::VowelKiv => '𖬃',
+            PahawhHmong::VowelKaub => '𖬄',
+            PahawhHmong::VowelKauv => '𖬅',
+            PahawhHmong::VowelKub => '𖬆',
+            PahawhHmong::VowelKuv => '𖬇',
+            PahawhHmong::VowelKeb => '𖬈',
+            PahawhHmong::VowelKev => '𖬉',
+            PahawhHmong::VowelKaib => '𖬊',
+            PahawhHmong::VowelKaiv => '𖬋',
+            PahawhHmong::VowelKoob => '𖬌',
+            PahawhHmong::VowelKoov => '𖬍',
+            PahawhHmong::VowelKawb => '𖬎',
+            PahawhHmong::VowelKawv => '𖬏',
+            PahawhHmong::VowelKuab => '𖬐',
+            PahawhHmong::VowelKuav => '𖬑',
+            PahawhHmong::VowelKob => '𖬒',
+            PahawhHmong::VowelKov => '𖬓',
+            PahawhHmong::VowelKiab => '𖬔',
+            PahawhHmong::VowelKiav => '𖬕',
+            PahawhHmong::VowelKab => '𖬖',
+            PahawhHmong::VowelKav => '𖬗',
+            PahawhHmong::VowelKwb => '𖬘',
+            PahawhHmong::VowelKwv => '𖬙',
+            PahawhHmong::VowelKaab => '𖬚',
+            PahawhHmong::VowelKaav => '𖬛',
+            PahawhHmong::ConsonantVau => '𖬜',
+            PahawhHmong::ConsonantNtsau => '𖬝',
+            PahawhHmong::ConsonantLau => '𖬞',
+            PahawhHmong::ConsonantHau => '𖬟',
+            PahawhHmong::ConsonantNlau => '𖬠',
+            PahawhHmong::ConsonantRau => '𖬡',
+            PahawhHmong::ConsonantNkau => '𖬢',
+            PahawhHmong::ConsonantQhau => '𖬣',
+            PahawhHmong::ConsonantYau => '𖬤',
+            PahawhHmong::ConsonantHlau => '𖬥',
+            PahawhHmong::ConsonantMau => '𖬦',
+            PahawhHmong::ConsonantChau => '𖬧',
+            PahawhHmong::ConsonantNchau => '𖬨',
+            PahawhHmong::ConsonantHnau => '𖬩',
+            PahawhHmong::ConsonantPlhau => '𖬪',
+            PahawhHmong::ConsonantNthau => '𖬫',
+            PahawhHmong::ConsonantNau => '𖬬',
+            PahawhHmong::ConsonantAu => '𖬭',
+            PahawhHmong::ConsonantXau => '𖬮',
+            PahawhHmong::ConsonantCau => '𖬯',
+            PahawhHmong::MarkCimTub => '𖬰',
+            PahawhHmong::MarkCimSo => '𖬱',
+            PahawhHmong::MarkCimKes => '𖬲',
+            PahawhHmong::MarkCimKhav => '𖬳',
+            PahawhHmong::MarkCimSuam => '𖬴',
+            PahawhHmong::MarkCimHom => '𖬵',
+            PahawhHmong::MarkCimTaum => '𖬶',
+            PahawhHmong::SignVosThom => '𖬷',
+            PahawhHmong::SignVosTshabCeeb => '𖬸',
+            PahawhHmong::SignCimCheem => '𖬹',
+            PahawhHmong::SignVosThiab => '𖬺',
+            PahawhHmong::SignVosFeem => '𖬻',
+            PahawhHmong::SignXyeemNtxiv => '𖬼',
+            PahawhHmong::SignXyeemRho => '𖬽',
+            PahawhHmong::SignXyeemTov => '𖬾',
+            PahawhHmong::SignXyeemFaib => '𖬿',
+            PahawhHmong::SignVosSeev => '𖭀',
+            PahawhHmong::SignMeejSuab => '𖭁',
+            PahawhHmong::SignVosNrua => '𖭂',
+            PahawhHmong::SignIbYam => '𖭃',
+            PahawhHmong::SignXaus => '𖭄',
+            PahawhHmong::SignCimTsovRog => '𖭅',
+            PahawhHmong::DigitZero => '𖭐',
+            PahawhHmong::DigitOne => '𖭑',
+            PahawhHmong::DigitTwo => '𖭒',
+            PahawhHmong::DigitThree => '𖭓',
+            PahawhHmong::DigitFour => '𖭔',
+            PahawhHmong::DigitFive => '𖭕',
+            PahawhHmong::DigitSix => '𖭖',
+            PahawhHmong::DigitSeven => '𖭗',
+            PahawhHmong::DigitEight => '𖭘',
+            PahawhHmong::DigitNine => '𖭙',
+            PahawhHmong::NumberTens => '𖭛',
+            PahawhHmong::NumberHundreds => '𖭜',
+            PahawhHmong::NumberTenThousands => '𖭝',
+            PahawhHmong::NumberMillions => '𖭞',
+            PahawhHmong::NumberHundredMillions => '𖭟',
+            PahawhHmong::NumberTenBillions => '𖭠',
+            PahawhHmong::NumberTrillions => '𖭡',
+            PahawhHmong::SignVosLub => '𖭣',
+            PahawhHmong::SignXyoo => '𖭤',
+            PahawhHmong::SignHli => '𖭥',
+            PahawhHmong::SignThirdDashStageHli => '𖭦',
+            PahawhHmong::SignZwjThaj => '𖭧',
+            PahawhHmong::SignHnub => '𖭨',
+            PahawhHmong::SignNqig => '𖭩',
+            PahawhHmong::SignXiab => '𖭪',
+            PahawhHmong::SignNtuj => '𖭫',
+            PahawhHmong::SignAv => '𖭬',
+            PahawhHmong::SignTxheejCeev => '𖭭',
+            PahawhHmong::SignMeejTseeb => '𖭮',
+            PahawhHmong::SignTau => '𖭯',
+            PahawhHmong::SignLos => '𖭰',
+            PahawhHmong::SignMus => '𖭱',
+            PahawhHmong::SignCimHaisLusNtogNtog => '𖭲',
+            PahawhHmong::SignCimCuamTshooj => '𖭳',
+            PahawhHmong::SignCimTxwv => '𖭴',
+            PahawhHmong::SignCimTxwvChwv => '𖭵',
+            PahawhHmong::SignCimPubDawb => '𖭶',
+            PahawhHmong::SignCimNresTos => '𖭷',
+            PahawhHmong::ClanSignTsheej => '𖭽',
+            PahawhHmong::ClanSignYeeg => '𖭾',
+            PahawhHmong::ClanSignLis => '𖭿',
+            PahawhHmong::ClanSignLauj => '𖮀',
+            PahawhHmong::ClanSignXyooj => '𖮁',
+            PahawhHmong::ClanSignKoo => '𖮂',
+            PahawhHmong::ClanSignHawj => '𖮃',
+            PahawhHmong::ClanSignMuas => '𖮄',
+            PahawhHmong::ClanSignThoj => '𖮅',
+            PahawhHmong::ClanSignTsab => '𖮆',
+            PahawhHmong::ClanSignPhab => '𖮇',
+            PahawhHmong::ClanSignKhab => '𖮈',
+            PahawhHmong::ClanSignHam => '𖮉',
+            PahawhHmong::ClanSignVaj => '𖮊',
+            PahawhHmong::ClanSignFaj => '𖮋',
+            PahawhHmong::ClanSignYaj => '𖮌',
+            PahawhHmong::ClanSignTswb => '𖮍',
+            PahawhHmong::ClanSignKwm => '𖮎',
         }
     }
 }
@@ -648,134 +392,133 @@ impl Into<char> for PahawhHmong {
 impl std::convert::TryFrom<char> for PahawhHmong {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            VOWEL_KEEB => Ok(PahawhHmong::VowelKeeb),
-            VOWEL_KEEV => Ok(PahawhHmong::VowelKeev),
-            VOWEL_KIB => Ok(PahawhHmong::VowelKib),
-            VOWEL_KIV => Ok(PahawhHmong::VowelKiv),
-            VOWEL_KAUB => Ok(PahawhHmong::VowelKaub),
-            VOWEL_KAUV => Ok(PahawhHmong::VowelKauv),
-            VOWEL_KUB => Ok(PahawhHmong::VowelKub),
-            VOWEL_KUV => Ok(PahawhHmong::VowelKuv),
-            VOWEL_KEB => Ok(PahawhHmong::VowelKeb),
-            VOWEL_KEV => Ok(PahawhHmong::VowelKev),
-            VOWEL_KAIB => Ok(PahawhHmong::VowelKaib),
-            VOWEL_KAIV => Ok(PahawhHmong::VowelKaiv),
-            VOWEL_KOOB => Ok(PahawhHmong::VowelKoob),
-            VOWEL_KOOV => Ok(PahawhHmong::VowelKoov),
-            VOWEL_KAWB => Ok(PahawhHmong::VowelKawb),
-            VOWEL_KAWV => Ok(PahawhHmong::VowelKawv),
-            VOWEL_KUAB => Ok(PahawhHmong::VowelKuab),
-            VOWEL_KUAV => Ok(PahawhHmong::VowelKuav),
-            VOWEL_KOB => Ok(PahawhHmong::VowelKob),
-            VOWEL_KOV => Ok(PahawhHmong::VowelKov),
-            VOWEL_KIAB => Ok(PahawhHmong::VowelKiab),
-            VOWEL_KIAV => Ok(PahawhHmong::VowelKiav),
-            VOWEL_KAB => Ok(PahawhHmong::VowelKab),
-            VOWEL_KAV => Ok(PahawhHmong::VowelKav),
-            VOWEL_KWB => Ok(PahawhHmong::VowelKwb),
-            VOWEL_KWV => Ok(PahawhHmong::VowelKwv),
-            VOWEL_KAAB => Ok(PahawhHmong::VowelKaab),
-            VOWEL_KAAV => Ok(PahawhHmong::VowelKaav),
-            CONSONANT_VAU => Ok(PahawhHmong::ConsonantVau),
-            CONSONANT_NTSAU => Ok(PahawhHmong::ConsonantNtsau),
-            CONSONANT_LAU => Ok(PahawhHmong::ConsonantLau),
-            CONSONANT_HAU => Ok(PahawhHmong::ConsonantHau),
-            CONSONANT_NLAU => Ok(PahawhHmong::ConsonantNlau),
-            CONSONANT_RAU => Ok(PahawhHmong::ConsonantRau),
-            CONSONANT_NKAU => Ok(PahawhHmong::ConsonantNkau),
-            CONSONANT_QHAU => Ok(PahawhHmong::ConsonantQhau),
-            CONSONANT_YAU => Ok(PahawhHmong::ConsonantYau),
-            CONSONANT_HLAU => Ok(PahawhHmong::ConsonantHlau),
-            CONSONANT_MAU => Ok(PahawhHmong::ConsonantMau),
-            CONSONANT_CHAU => Ok(PahawhHmong::ConsonantChau),
-            CONSONANT_NCHAU => Ok(PahawhHmong::ConsonantNchau),
-            CONSONANT_HNAU => Ok(PahawhHmong::ConsonantHnau),
-            CONSONANT_PLHAU => Ok(PahawhHmong::ConsonantPlhau),
-            CONSONANT_NTHAU => Ok(PahawhHmong::ConsonantNthau),
-            CONSONANT_NAU => Ok(PahawhHmong::ConsonantNau),
-            CONSONANT_AU => Ok(PahawhHmong::ConsonantAu),
-            CONSONANT_XAU => Ok(PahawhHmong::ConsonantXau),
-            CONSONANT_CAU => Ok(PahawhHmong::ConsonantCau),
-            MARK_CIM_TUB => Ok(PahawhHmong::MarkCimTub),
-            MARK_CIM_SO => Ok(PahawhHmong::MarkCimSo),
-            MARK_CIM_KES => Ok(PahawhHmong::MarkCimKes),
-            MARK_CIM_KHAV => Ok(PahawhHmong::MarkCimKhav),
-            MARK_CIM_SUAM => Ok(PahawhHmong::MarkCimSuam),
-            MARK_CIM_HOM => Ok(PahawhHmong::MarkCimHom),
-            MARK_CIM_TAUM => Ok(PahawhHmong::MarkCimTaum),
-            SIGN_VOS_THOM => Ok(PahawhHmong::SignVosThom),
-            SIGN_VOS_TSHAB_CEEB => Ok(PahawhHmong::SignVosTshabCeeb),
-            SIGN_CIM_CHEEM => Ok(PahawhHmong::SignCimCheem),
-            SIGN_VOS_THIAB => Ok(PahawhHmong::SignVosThiab),
-            SIGN_VOS_FEEM => Ok(PahawhHmong::SignVosFeem),
-            SIGN_XYEEM_NTXIV => Ok(PahawhHmong::SignXyeemNtxiv),
-            SIGN_XYEEM_RHO => Ok(PahawhHmong::SignXyeemRho),
-            SIGN_XYEEM_TOV => Ok(PahawhHmong::SignXyeemTov),
-            SIGN_XYEEM_FAIB => Ok(PahawhHmong::SignXyeemFaib),
-            SIGN_VOS_SEEV => Ok(PahawhHmong::SignVosSeev),
-            SIGN_MEEJ_SUAB => Ok(PahawhHmong::SignMeejSuab),
-            SIGN_VOS_NRUA => Ok(PahawhHmong::SignVosNrua),
-            SIGN_IB_YAM => Ok(PahawhHmong::SignIbYam),
-            SIGN_XAUS => Ok(PahawhHmong::SignXaus),
-            SIGN_CIM_TSOV_ROG => Ok(PahawhHmong::SignCimTsovRog),
-            DIGIT_ZERO => Ok(PahawhHmong::DigitZero),
-            DIGIT_ONE => Ok(PahawhHmong::DigitOne),
-            DIGIT_TWO => Ok(PahawhHmong::DigitTwo),
-            DIGIT_THREE => Ok(PahawhHmong::DigitThree),
-            DIGIT_FOUR => Ok(PahawhHmong::DigitFour),
-            DIGIT_FIVE => Ok(PahawhHmong::DigitFive),
-            DIGIT_SIX => Ok(PahawhHmong::DigitSix),
-            DIGIT_SEVEN => Ok(PahawhHmong::DigitSeven),
-            DIGIT_EIGHT => Ok(PahawhHmong::DigitEight),
-            DIGIT_NINE => Ok(PahawhHmong::DigitNine),
-            NUMBER_TENS => Ok(PahawhHmong::NumberTens),
-            NUMBER_HUNDREDS => Ok(PahawhHmong::NumberHundreds),
-            NUMBER_TEN_THOUSANDS => Ok(PahawhHmong::NumberTenThousands),
-            NUMBER_MILLIONS => Ok(PahawhHmong::NumberMillions),
-            NUMBER_HUNDRED_MILLIONS => Ok(PahawhHmong::NumberHundredMillions),
-            NUMBER_TEN_BILLIONS => Ok(PahawhHmong::NumberTenBillions),
-            NUMBER_TRILLIONS => Ok(PahawhHmong::NumberTrillions),
-            SIGN_VOS_LUB => Ok(PahawhHmong::SignVosLub),
-            SIGN_XYOO => Ok(PahawhHmong::SignXyoo),
-            SIGN_HLI => Ok(PahawhHmong::SignHli),
-            SIGN_THIRD_DASH_STAGE_HLI => Ok(PahawhHmong::SignThirdDashStageHli),
-            SIGN_ZWJ_THAJ => Ok(PahawhHmong::SignZwjThaj),
-            SIGN_HNUB => Ok(PahawhHmong::SignHnub),
-            SIGN_NQIG => Ok(PahawhHmong::SignNqig),
-            SIGN_XIAB => Ok(PahawhHmong::SignXiab),
-            SIGN_NTUJ => Ok(PahawhHmong::SignNtuj),
-            SIGN_AV => Ok(PahawhHmong::SignAv),
-            SIGN_TXHEEJ_CEEV => Ok(PahawhHmong::SignTxheejCeev),
-            SIGN_MEEJ_TSEEB => Ok(PahawhHmong::SignMeejTseeb),
-            SIGN_TAU => Ok(PahawhHmong::SignTau),
-            SIGN_LOS => Ok(PahawhHmong::SignLos),
-            SIGN_MUS => Ok(PahawhHmong::SignMus),
-            SIGN_CIM_HAIS_LUS_NTOG_NTOG => Ok(PahawhHmong::SignCimHaisLusNtogNtog),
-            SIGN_CIM_CUAM_TSHOOJ => Ok(PahawhHmong::SignCimCuamTshooj),
-            SIGN_CIM_TXWV => Ok(PahawhHmong::SignCimTxwv),
-            SIGN_CIM_TXWV_CHWV => Ok(PahawhHmong::SignCimTxwvChwv),
-            SIGN_CIM_PUB_DAWB => Ok(PahawhHmong::SignCimPubDawb),
-            SIGN_CIM_NRES_TOS => Ok(PahawhHmong::SignCimNresTos),
-            CLAN_SIGN_TSHEEJ => Ok(PahawhHmong::ClanSignTsheej),
-            CLAN_SIGN_YEEG => Ok(PahawhHmong::ClanSignYeeg),
-            CLAN_SIGN_LIS => Ok(PahawhHmong::ClanSignLis),
-            CLAN_SIGN_LAUJ => Ok(PahawhHmong::ClanSignLauj),
-            CLAN_SIGN_XYOOJ => Ok(PahawhHmong::ClanSignXyooj),
-            CLAN_SIGN_KOO => Ok(PahawhHmong::ClanSignKoo),
-            CLAN_SIGN_HAWJ => Ok(PahawhHmong::ClanSignHawj),
-            CLAN_SIGN_MUAS => Ok(PahawhHmong::ClanSignMuas),
-            CLAN_SIGN_THOJ => Ok(PahawhHmong::ClanSignThoj),
-            CLAN_SIGN_TSAB => Ok(PahawhHmong::ClanSignTsab),
-            CLAN_SIGN_PHAB => Ok(PahawhHmong::ClanSignPhab),
-            CLAN_SIGN_KHAB => Ok(PahawhHmong::ClanSignKhab),
-            CLAN_SIGN_HAM => Ok(PahawhHmong::ClanSignHam),
-            CLAN_SIGN_VAJ => Ok(PahawhHmong::ClanSignVaj),
-            CLAN_SIGN_FAJ => Ok(PahawhHmong::ClanSignFaj),
-            CLAN_SIGN_YAJ => Ok(PahawhHmong::ClanSignYaj),
-            CLAN_SIGN_TSWB => Ok(PahawhHmong::ClanSignTswb),
-            CLAN_SIGN_KWM => Ok(PahawhHmong::ClanSignKwm),
+            '𖬀' => Ok(PahawhHmong::VowelKeeb),
+            '𖬁' => Ok(PahawhHmong::VowelKeev),
+            '𖬂' => Ok(PahawhHmong::VowelKib),
+            '𖬃' => Ok(PahawhHmong::VowelKiv),
+            '𖬄' => Ok(PahawhHmong::VowelKaub),
+            '𖬅' => Ok(PahawhHmong::VowelKauv),
+            '𖬆' => Ok(PahawhHmong::VowelKub),
+            '𖬇' => Ok(PahawhHmong::VowelKuv),
+            '𖬈' => Ok(PahawhHmong::VowelKeb),
+            '𖬉' => Ok(PahawhHmong::VowelKev),
+            '𖬊' => Ok(PahawhHmong::VowelKaib),
+            '𖬋' => Ok(PahawhHmong::VowelKaiv),
+            '𖬌' => Ok(PahawhHmong::VowelKoob),
+            '𖬍' => Ok(PahawhHmong::VowelKoov),
+            '𖬎' => Ok(PahawhHmong::VowelKawb),
+            '𖬏' => Ok(PahawhHmong::VowelKawv),
+            '𖬐' => Ok(PahawhHmong::VowelKuab),
+            '𖬑' => Ok(PahawhHmong::VowelKuav),
+            '𖬒' => Ok(PahawhHmong::VowelKob),
+            '𖬓' => Ok(PahawhHmong::VowelKov),
+            '𖬔' => Ok(PahawhHmong::VowelKiab),
+            '𖬕' => Ok(PahawhHmong::VowelKiav),
+            '𖬖' => Ok(PahawhHmong::VowelKab),
+            '𖬗' => Ok(PahawhHmong::VowelKav),
+            '𖬘' => Ok(PahawhHmong::VowelKwb),
+            '𖬙' => Ok(PahawhHmong::VowelKwv),
+            '𖬚' => Ok(PahawhHmong::VowelKaab),
+            '𖬛' => Ok(PahawhHmong::VowelKaav),
+            '𖬜' => Ok(PahawhHmong::ConsonantVau),
+            '𖬝' => Ok(PahawhHmong::ConsonantNtsau),
+            '𖬞' => Ok(PahawhHmong::ConsonantLau),
+            '𖬟' => Ok(PahawhHmong::ConsonantHau),
+            '𖬠' => Ok(PahawhHmong::ConsonantNlau),
+            '𖬡' => Ok(PahawhHmong::ConsonantRau),
+            '𖬢' => Ok(PahawhHmong::ConsonantNkau),
+            '𖬣' => Ok(PahawhHmong::ConsonantQhau),
+            '𖬤' => Ok(PahawhHmong::ConsonantYau),
+            '𖬥' => Ok(PahawhHmong::ConsonantHlau),
+            '𖬦' => Ok(PahawhHmong::ConsonantMau),
+            '𖬧' => Ok(PahawhHmong::ConsonantChau),
+            '𖬨' => Ok(PahawhHmong::ConsonantNchau),
+            '𖬩' => Ok(PahawhHmong::ConsonantHnau),
+            '𖬪' => Ok(PahawhHmong::ConsonantPlhau),
+            '𖬫' => Ok(PahawhHmong::ConsonantNthau),
+            '𖬬' => Ok(PahawhHmong::ConsonantNau),
+            '𖬭' => Ok(PahawhHmong::ConsonantAu),
+            '𖬮' => Ok(PahawhHmong::ConsonantXau),
+            '𖬯' => Ok(PahawhHmong::ConsonantCau),
+            '𖬰' => Ok(PahawhHmong::MarkCimTub),
+            '𖬱' => Ok(PahawhHmong::MarkCimSo),
+            '𖬲' => Ok(PahawhHmong::MarkCimKes),
+            '𖬳' => Ok(PahawhHmong::MarkCimKhav),
+            '𖬴' => Ok(PahawhHmong::MarkCimSuam),
+            '𖬵' => Ok(PahawhHmong::MarkCimHom),
+            '𖬶' => Ok(PahawhHmong::MarkCimTaum),
+            '𖬷' => Ok(PahawhHmong::SignVosThom),
+            '𖬸' => Ok(PahawhHmong::SignVosTshabCeeb),
+            '𖬹' => Ok(PahawhHmong::SignCimCheem),
+            '𖬺' => Ok(PahawhHmong::SignVosThiab),
+            '𖬻' => Ok(PahawhHmong::SignVosFeem),
+            '𖬼' => Ok(PahawhHmong::SignXyeemNtxiv),
+            '𖬽' => Ok(PahawhHmong::SignXyeemRho),
+            '𖬾' => Ok(PahawhHmong::SignXyeemTov),
+            '𖬿' => Ok(PahawhHmong::SignXyeemFaib),
+            '𖭀' => Ok(PahawhHmong::SignVosSeev),
+            '𖭁' => Ok(PahawhHmong::SignMeejSuab),
+            '𖭂' => Ok(PahawhHmong::SignVosNrua),
+            '𖭃' => Ok(PahawhHmong::SignIbYam),
+            '𖭄' => Ok(PahawhHmong::SignXaus),
+            '𖭅' => Ok(PahawhHmong::SignCimTsovRog),
+            '𖭐' => Ok(PahawhHmong::DigitZero),
+            '𖭑' => Ok(PahawhHmong::DigitOne),
+            '𖭒' => Ok(PahawhHmong::DigitTwo),
+            '𖭓' => Ok(PahawhHmong::DigitThree),
+            '𖭔' => Ok(PahawhHmong::DigitFour),
+            '𖭕' => Ok(PahawhHmong::DigitFive),
+            '𖭖' => Ok(PahawhHmong::DigitSix),
+            '𖭗' => Ok(PahawhHmong::DigitSeven),
+            '𖭘' => Ok(PahawhHmong::DigitEight),
+            '𖭙' => Ok(PahawhHmong::DigitNine),
+            '𖭛' => Ok(PahawhHmong::NumberTens),
+            '𖭜' => Ok(PahawhHmong::NumberHundreds),
+            '𖭝' => Ok(PahawhHmong::NumberTenThousands),
+            '𖭞' => Ok(PahawhHmong::NumberMillions),
+            '𖭟' => Ok(PahawhHmong::NumberHundredMillions),
+            '𖭠' => Ok(PahawhHmong::NumberTenBillions),
+            '𖭡' => Ok(PahawhHmong::NumberTrillions),
+            '𖭣' => Ok(PahawhHmong::SignVosLub),
+            '𖭤' => Ok(PahawhHmong::SignXyoo),
+            '𖭥' => Ok(PahawhHmong::SignHli),
+            '𖭦' => Ok(PahawhHmong::SignThirdDashStageHli),
+            '𖭧' => Ok(PahawhHmong::SignZwjThaj),
+            '𖭨' => Ok(PahawhHmong::SignHnub),
+            '𖭩' => Ok(PahawhHmong::SignNqig),
+            '𖭪' => Ok(PahawhHmong::SignXiab),
+            '𖭫' => Ok(PahawhHmong::SignNtuj),
+            '𖭬' => Ok(PahawhHmong::SignAv),
+            '𖭭' => Ok(PahawhHmong::SignTxheejCeev),
+            '𖭮' => Ok(PahawhHmong::SignMeejTseeb),
+            '𖭯' => Ok(PahawhHmong::SignTau),
+            '𖭰' => Ok(PahawhHmong::SignLos),
+            '𖭱' => Ok(PahawhHmong::SignMus),
+            '𖭲' => Ok(PahawhHmong::SignCimHaisLusNtogNtog),
+            '𖭳' => Ok(PahawhHmong::SignCimCuamTshooj),
+            '𖭴' => Ok(PahawhHmong::SignCimTxwv),
+            '𖭵' => Ok(PahawhHmong::SignCimTxwvChwv),
+            '𖭶' => Ok(PahawhHmong::SignCimPubDawb),
+            '𖭷' => Ok(PahawhHmong::SignCimNresTos),
+            '𖭽' => Ok(PahawhHmong::ClanSignTsheej),
+            '𖭾' => Ok(PahawhHmong::ClanSignYeeg),
+            '𖭿' => Ok(PahawhHmong::ClanSignLis),
+            '𖮀' => Ok(PahawhHmong::ClanSignLauj),
+            '𖮁' => Ok(PahawhHmong::ClanSignXyooj),
+            '𖮂' => Ok(PahawhHmong::ClanSignKoo),
+            '𖮃' => Ok(PahawhHmong::ClanSignHawj),
+            '𖮄' => Ok(PahawhHmong::ClanSignMuas),
+            '𖮅' => Ok(PahawhHmong::ClanSignThoj),
+            '𖮆' => Ok(PahawhHmong::ClanSignTsab),
+            '𖮇' => Ok(PahawhHmong::ClanSignPhab),
+            '𖮈' => Ok(PahawhHmong::ClanSignKhab),
+            '𖮉' => Ok(PahawhHmong::ClanSignHam),
+            '𖮊' => Ok(PahawhHmong::ClanSignVaj),
+            '𖮋' => Ok(PahawhHmong::ClanSignFaj),
+            '𖮌' => Ok(PahawhHmong::ClanSignYaj),
+            '𖮍' => Ok(PahawhHmong::ClanSignTswb),
+            '𖮎' => Ok(PahawhHmong::ClanSignKwm),
             _ => Err(()),
         }
     }

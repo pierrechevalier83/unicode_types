@@ -1,68 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a9e0}: 'ꧠ'
-    pub const MYANMAR_LETTER_SHAN_GHA: char = 'ꧠ';
-    /// \u{a9e1}: 'ꧡ'
-    pub const MYANMAR_LETTER_SHAN_CHA: char = 'ꧡ';
-    /// \u{a9e2}: 'ꧢ'
-    pub const MYANMAR_LETTER_SHAN_JHA: char = 'ꧢ';
-    /// \u{a9e3}: 'ꧣ'
-    pub const MYANMAR_LETTER_SHAN_NNA: char = 'ꧣ';
-    /// \u{a9e4}: 'ꧤ'
-    pub const MYANMAR_LETTER_SHAN_BHA: char = 'ꧤ';
-    /// \u{a9e5}: 'ꧥ'
-    pub const MYANMAR_SIGN_SHAN_SAW: char = 'ꧥ';
-    /// \u{a9e6}: 'ꧦ'
-    pub const MYANMAR_MODIFIER_LETTER_SHAN_REDUPLICATION: char = 'ꧦ';
-    /// \u{a9e7}: 'ꧧ'
-    pub const MYANMAR_LETTER_TAI_LAING_NYA: char = 'ꧧ';
-    /// \u{a9e8}: 'ꧨ'
-    pub const MYANMAR_LETTER_TAI_LAING_FA: char = 'ꧨ';
-    /// \u{a9e9}: 'ꧩ'
-    pub const MYANMAR_LETTER_TAI_LAING_GA: char = 'ꧩ';
-    /// \u{a9ea}: 'ꧪ'
-    pub const MYANMAR_LETTER_TAI_LAING_GHA: char = 'ꧪ';
-    /// \u{a9eb}: 'ꧫ'
-    pub const MYANMAR_LETTER_TAI_LAING_JA: char = 'ꧫ';
-    /// \u{a9ec}: 'ꧬ'
-    pub const MYANMAR_LETTER_TAI_LAING_JHA: char = 'ꧬ';
-    /// \u{a9ed}: 'ꧭ'
-    pub const MYANMAR_LETTER_TAI_LAING_DDA: char = 'ꧭ';
-    /// \u{a9ee}: 'ꧮ'
-    pub const MYANMAR_LETTER_TAI_LAING_DDHA: char = 'ꧮ';
-    /// \u{a9ef}: 'ꧯ'
-    pub const MYANMAR_LETTER_TAI_LAING_NNA: char = 'ꧯ';
-    /// \u{a9f0}: '꧰'
-    pub const MYANMAR_TAI_LAING_DIGIT_ZERO: char = '꧰';
-    /// \u{a9f1}: '꧱'
-    pub const MYANMAR_TAI_LAING_DIGIT_ONE: char = '꧱';
-    /// \u{a9f2}: '꧲'
-    pub const MYANMAR_TAI_LAING_DIGIT_TWO: char = '꧲';
-    /// \u{a9f3}: '꧳'
-    pub const MYANMAR_TAI_LAING_DIGIT_THREE: char = '꧳';
-    /// \u{a9f4}: '꧴'
-    pub const MYANMAR_TAI_LAING_DIGIT_FOUR: char = '꧴';
-    /// \u{a9f5}: '꧵'
-    pub const MYANMAR_TAI_LAING_DIGIT_FIVE: char = '꧵';
-    /// \u{a9f6}: '꧶'
-    pub const MYANMAR_TAI_LAING_DIGIT_SIX: char = '꧶';
-    /// \u{a9f7}: '꧷'
-    pub const MYANMAR_TAI_LAING_DIGIT_SEVEN: char = '꧷';
-    /// \u{a9f8}: '꧸'
-    pub const MYANMAR_TAI_LAING_DIGIT_EIGHT: char = '꧸';
-    /// \u{a9f9}: '꧹'
-    pub const MYANMAR_TAI_LAING_DIGIT_NINE: char = '꧹';
-    /// \u{a9fa}: 'ꧺ'
-    pub const MYANMAR_LETTER_TAI_LAING_LLA: char = 'ꧺ';
-    /// \u{a9fb}: 'ꧻ'
-    pub const MYANMAR_LETTER_TAI_LAING_DA: char = 'ꧻ';
-    /// \u{a9fc}: 'ꧼ'
-    pub const MYANMAR_LETTER_TAI_LAING_DHA: char = 'ꧼ';
-    /// \u{a9fd}: 'ꧽ'
-    pub const MYANMAR_LETTER_TAI_LAING_BA: char = 'ꧽ';
-    /// \u{a9fe}: 'ꧾ'
-    pub const MYANMAR_LETTER_TAI_LAING_BHA: char = 'ꧾ';
-}
 
 /// An enum to represent all characters in the MyanmarExtendedB block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -133,39 +68,38 @@ pub enum MyanmarExtendedB {
 
 impl Into<char> for MyanmarExtendedB {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MyanmarExtendedB::MyanmarLetterShanGha => MYANMAR_LETTER_SHAN_GHA,
-            MyanmarExtendedB::MyanmarLetterShanCha => MYANMAR_LETTER_SHAN_CHA,
-            MyanmarExtendedB::MyanmarLetterShanJha => MYANMAR_LETTER_SHAN_JHA,
-            MyanmarExtendedB::MyanmarLetterShanNna => MYANMAR_LETTER_SHAN_NNA,
-            MyanmarExtendedB::MyanmarLetterShanBha => MYANMAR_LETTER_SHAN_BHA,
-            MyanmarExtendedB::MyanmarSignShanSaw => MYANMAR_SIGN_SHAN_SAW,
-            MyanmarExtendedB::MyanmarModifierLetterShanReduplication => MYANMAR_MODIFIER_LETTER_SHAN_REDUPLICATION,
-            MyanmarExtendedB::MyanmarLetterTaiLaingNya => MYANMAR_LETTER_TAI_LAING_NYA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingFa => MYANMAR_LETTER_TAI_LAING_FA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingGa => MYANMAR_LETTER_TAI_LAING_GA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingGha => MYANMAR_LETTER_TAI_LAING_GHA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingJa => MYANMAR_LETTER_TAI_LAING_JA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingJha => MYANMAR_LETTER_TAI_LAING_JHA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingDda => MYANMAR_LETTER_TAI_LAING_DDA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingDdha => MYANMAR_LETTER_TAI_LAING_DDHA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingNna => MYANMAR_LETTER_TAI_LAING_NNA,
-            MyanmarExtendedB::MyanmarTaiLaingDigitZero => MYANMAR_TAI_LAING_DIGIT_ZERO,
-            MyanmarExtendedB::MyanmarTaiLaingDigitOne => MYANMAR_TAI_LAING_DIGIT_ONE,
-            MyanmarExtendedB::MyanmarTaiLaingDigitTwo => MYANMAR_TAI_LAING_DIGIT_TWO,
-            MyanmarExtendedB::MyanmarTaiLaingDigitThree => MYANMAR_TAI_LAING_DIGIT_THREE,
-            MyanmarExtendedB::MyanmarTaiLaingDigitFour => MYANMAR_TAI_LAING_DIGIT_FOUR,
-            MyanmarExtendedB::MyanmarTaiLaingDigitFive => MYANMAR_TAI_LAING_DIGIT_FIVE,
-            MyanmarExtendedB::MyanmarTaiLaingDigitSix => MYANMAR_TAI_LAING_DIGIT_SIX,
-            MyanmarExtendedB::MyanmarTaiLaingDigitSeven => MYANMAR_TAI_LAING_DIGIT_SEVEN,
-            MyanmarExtendedB::MyanmarTaiLaingDigitEight => MYANMAR_TAI_LAING_DIGIT_EIGHT,
-            MyanmarExtendedB::MyanmarTaiLaingDigitNine => MYANMAR_TAI_LAING_DIGIT_NINE,
-            MyanmarExtendedB::MyanmarLetterTaiLaingLla => MYANMAR_LETTER_TAI_LAING_LLA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingDa => MYANMAR_LETTER_TAI_LAING_DA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingDha => MYANMAR_LETTER_TAI_LAING_DHA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingBa => MYANMAR_LETTER_TAI_LAING_BA,
-            MyanmarExtendedB::MyanmarLetterTaiLaingBha => MYANMAR_LETTER_TAI_LAING_BHA,
+            MyanmarExtendedB::MyanmarLetterShanGha => 'ꧠ',
+            MyanmarExtendedB::MyanmarLetterShanCha => 'ꧡ',
+            MyanmarExtendedB::MyanmarLetterShanJha => 'ꧢ',
+            MyanmarExtendedB::MyanmarLetterShanNna => 'ꧣ',
+            MyanmarExtendedB::MyanmarLetterShanBha => 'ꧤ',
+            MyanmarExtendedB::MyanmarSignShanSaw => 'ꧥ',
+            MyanmarExtendedB::MyanmarModifierLetterShanReduplication => 'ꧦ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingNya => 'ꧧ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingFa => 'ꧨ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingGa => 'ꧩ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingGha => 'ꧪ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingJa => 'ꧫ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingJha => 'ꧬ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingDda => 'ꧭ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingDdha => 'ꧮ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingNna => 'ꧯ',
+            MyanmarExtendedB::MyanmarTaiLaingDigitZero => '꧰',
+            MyanmarExtendedB::MyanmarTaiLaingDigitOne => '꧱',
+            MyanmarExtendedB::MyanmarTaiLaingDigitTwo => '꧲',
+            MyanmarExtendedB::MyanmarTaiLaingDigitThree => '꧳',
+            MyanmarExtendedB::MyanmarTaiLaingDigitFour => '꧴',
+            MyanmarExtendedB::MyanmarTaiLaingDigitFive => '꧵',
+            MyanmarExtendedB::MyanmarTaiLaingDigitSix => '꧶',
+            MyanmarExtendedB::MyanmarTaiLaingDigitSeven => '꧷',
+            MyanmarExtendedB::MyanmarTaiLaingDigitEight => '꧸',
+            MyanmarExtendedB::MyanmarTaiLaingDigitNine => '꧹',
+            MyanmarExtendedB::MyanmarLetterTaiLaingLla => 'ꧺ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingDa => 'ꧻ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingDha => 'ꧼ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingBa => 'ꧽ',
+            MyanmarExtendedB::MyanmarLetterTaiLaingBha => 'ꧾ',
         }
     }
 }
@@ -173,39 +107,38 @@ impl Into<char> for MyanmarExtendedB {
 impl std::convert::TryFrom<char> for MyanmarExtendedB {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            MYANMAR_LETTER_SHAN_GHA => Ok(MyanmarExtendedB::MyanmarLetterShanGha),
-            MYANMAR_LETTER_SHAN_CHA => Ok(MyanmarExtendedB::MyanmarLetterShanCha),
-            MYANMAR_LETTER_SHAN_JHA => Ok(MyanmarExtendedB::MyanmarLetterShanJha),
-            MYANMAR_LETTER_SHAN_NNA => Ok(MyanmarExtendedB::MyanmarLetterShanNna),
-            MYANMAR_LETTER_SHAN_BHA => Ok(MyanmarExtendedB::MyanmarLetterShanBha),
-            MYANMAR_SIGN_SHAN_SAW => Ok(MyanmarExtendedB::MyanmarSignShanSaw),
-            MYANMAR_MODIFIER_LETTER_SHAN_REDUPLICATION => Ok(MyanmarExtendedB::MyanmarModifierLetterShanReduplication),
-            MYANMAR_LETTER_TAI_LAING_NYA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingNya),
-            MYANMAR_LETTER_TAI_LAING_FA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingFa),
-            MYANMAR_LETTER_TAI_LAING_GA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingGa),
-            MYANMAR_LETTER_TAI_LAING_GHA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingGha),
-            MYANMAR_LETTER_TAI_LAING_JA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingJa),
-            MYANMAR_LETTER_TAI_LAING_JHA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingJha),
-            MYANMAR_LETTER_TAI_LAING_DDA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingDda),
-            MYANMAR_LETTER_TAI_LAING_DDHA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingDdha),
-            MYANMAR_LETTER_TAI_LAING_NNA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingNna),
-            MYANMAR_TAI_LAING_DIGIT_ZERO => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitZero),
-            MYANMAR_TAI_LAING_DIGIT_ONE => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitOne),
-            MYANMAR_TAI_LAING_DIGIT_TWO => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitTwo),
-            MYANMAR_TAI_LAING_DIGIT_THREE => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitThree),
-            MYANMAR_TAI_LAING_DIGIT_FOUR => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitFour),
-            MYANMAR_TAI_LAING_DIGIT_FIVE => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitFive),
-            MYANMAR_TAI_LAING_DIGIT_SIX => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitSix),
-            MYANMAR_TAI_LAING_DIGIT_SEVEN => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitSeven),
-            MYANMAR_TAI_LAING_DIGIT_EIGHT => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitEight),
-            MYANMAR_TAI_LAING_DIGIT_NINE => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitNine),
-            MYANMAR_LETTER_TAI_LAING_LLA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingLla),
-            MYANMAR_LETTER_TAI_LAING_DA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingDa),
-            MYANMAR_LETTER_TAI_LAING_DHA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingDha),
-            MYANMAR_LETTER_TAI_LAING_BA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingBa),
-            MYANMAR_LETTER_TAI_LAING_BHA => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingBha),
+            'ꧠ' => Ok(MyanmarExtendedB::MyanmarLetterShanGha),
+            'ꧡ' => Ok(MyanmarExtendedB::MyanmarLetterShanCha),
+            'ꧢ' => Ok(MyanmarExtendedB::MyanmarLetterShanJha),
+            'ꧣ' => Ok(MyanmarExtendedB::MyanmarLetterShanNna),
+            'ꧤ' => Ok(MyanmarExtendedB::MyanmarLetterShanBha),
+            'ꧥ' => Ok(MyanmarExtendedB::MyanmarSignShanSaw),
+            'ꧦ' => Ok(MyanmarExtendedB::MyanmarModifierLetterShanReduplication),
+            'ꧧ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingNya),
+            'ꧨ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingFa),
+            'ꧩ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingGa),
+            'ꧪ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingGha),
+            'ꧫ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingJa),
+            'ꧬ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingJha),
+            'ꧭ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingDda),
+            'ꧮ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingDdha),
+            'ꧯ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingNna),
+            '꧰' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitZero),
+            '꧱' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitOne),
+            '꧲' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitTwo),
+            '꧳' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitThree),
+            '꧴' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitFour),
+            '꧵' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitFive),
+            '꧶' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitSix),
+            '꧷' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitSeven),
+            '꧸' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitEight),
+            '꧹' => Ok(MyanmarExtendedB::MyanmarTaiLaingDigitNine),
+            'ꧺ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingLla),
+            'ꧻ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingDa),
+            'ꧼ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingDha),
+            'ꧽ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingBa),
+            'ꧾ' => Ok(MyanmarExtendedB::MyanmarLetterTaiLaingBha),
             _ => Err(()),
         }
     }

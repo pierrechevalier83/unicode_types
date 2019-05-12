@@ -1,52 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10fe0}: '𐿠'
-    pub const LETTER_ALEPH: char = '𐿠';
-    /// \u{10fe1}: '𐿡'
-    pub const LETTER_BETH: char = '𐿡';
-    /// \u{10fe2}: '𐿢'
-    pub const LETTER_GIMEL: char = '𐿢';
-    /// \u{10fe3}: '𐿣'
-    pub const LETTER_DALETH: char = '𐿣';
-    /// \u{10fe4}: '𐿤'
-    pub const LETTER_HE: char = '𐿤';
-    /// \u{10fe5}: '𐿥'
-    pub const LETTER_WAW: char = '𐿥';
-    /// \u{10fe6}: '𐿦'
-    pub const LETTER_ZAYIN: char = '𐿦';
-    /// \u{10fe7}: '𐿧'
-    pub const LETTER_HETH: char = '𐿧';
-    /// \u{10fe8}: '𐿨'
-    pub const LETTER_TETH: char = '𐿨';
-    /// \u{10fe9}: '𐿩'
-    pub const LETTER_YODH: char = '𐿩';
-    /// \u{10fea}: '𐿪'
-    pub const LETTER_KAPH: char = '𐿪';
-    /// \u{10feb}: '𐿫'
-    pub const LETTER_LAMEDH: char = '𐿫';
-    /// \u{10fec}: '𐿬'
-    pub const LETTER_MEM: char = '𐿬';
-    /// \u{10fed}: '𐿭'
-    pub const LETTER_NUN: char = '𐿭';
-    /// \u{10fee}: '𐿮'
-    pub const LETTER_SAMEKH: char = '𐿮';
-    /// \u{10fef}: '𐿯'
-    pub const LETTER_AYIN: char = '𐿯';
-    /// \u{10ff0}: '𐿰'
-    pub const LETTER_PE: char = '𐿰';
-    /// \u{10ff1}: '𐿱'
-    pub const LETTER_SADHE: char = '𐿱';
-    /// \u{10ff2}: '𐿲'
-    pub const LETTER_QOPH: char = '𐿲';
-    /// \u{10ff3}: '𐿳'
-    pub const LETTER_RESH: char = '𐿳';
-    /// \u{10ff4}: '𐿴'
-    pub const LETTER_SHIN: char = '𐿴';
-    /// \u{10ff5}: '𐿵'
-    pub const LETTER_TAW: char = '𐿵';
-    /// \u{10ff6}: '𐿶'
-    pub const LIGATURE_ZAYIN_DASH_YODH: char = '𐿶';
-}
 
 /// An enum to represent all characters in the Elymaic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -101,31 +52,30 @@ pub enum Elymaic {
 
 impl Into<char> for Elymaic {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Elymaic::LetterAleph => LETTER_ALEPH,
-            Elymaic::LetterBeth => LETTER_BETH,
-            Elymaic::LetterGimel => LETTER_GIMEL,
-            Elymaic::LetterDaleth => LETTER_DALETH,
-            Elymaic::LetterHe => LETTER_HE,
-            Elymaic::LetterWaw => LETTER_WAW,
-            Elymaic::LetterZayin => LETTER_ZAYIN,
-            Elymaic::LetterHeth => LETTER_HETH,
-            Elymaic::LetterTeth => LETTER_TETH,
-            Elymaic::LetterYodh => LETTER_YODH,
-            Elymaic::LetterKaph => LETTER_KAPH,
-            Elymaic::LetterLamedh => LETTER_LAMEDH,
-            Elymaic::LetterMem => LETTER_MEM,
-            Elymaic::LetterNun => LETTER_NUN,
-            Elymaic::LetterSamekh => LETTER_SAMEKH,
-            Elymaic::LetterAyin => LETTER_AYIN,
-            Elymaic::LetterPe => LETTER_PE,
-            Elymaic::LetterSadhe => LETTER_SADHE,
-            Elymaic::LetterQoph => LETTER_QOPH,
-            Elymaic::LetterResh => LETTER_RESH,
-            Elymaic::LetterShin => LETTER_SHIN,
-            Elymaic::LetterTaw => LETTER_TAW,
-            Elymaic::LigatureZayinDashYodh => LIGATURE_ZAYIN_DASH_YODH,
+            Elymaic::LetterAleph => '𐿠',
+            Elymaic::LetterBeth => '𐿡',
+            Elymaic::LetterGimel => '𐿢',
+            Elymaic::LetterDaleth => '𐿣',
+            Elymaic::LetterHe => '𐿤',
+            Elymaic::LetterWaw => '𐿥',
+            Elymaic::LetterZayin => '𐿦',
+            Elymaic::LetterHeth => '𐿧',
+            Elymaic::LetterTeth => '𐿨',
+            Elymaic::LetterYodh => '𐿩',
+            Elymaic::LetterKaph => '𐿪',
+            Elymaic::LetterLamedh => '𐿫',
+            Elymaic::LetterMem => '𐿬',
+            Elymaic::LetterNun => '𐿭',
+            Elymaic::LetterSamekh => '𐿮',
+            Elymaic::LetterAyin => '𐿯',
+            Elymaic::LetterPe => '𐿰',
+            Elymaic::LetterSadhe => '𐿱',
+            Elymaic::LetterQoph => '𐿲',
+            Elymaic::LetterResh => '𐿳',
+            Elymaic::LetterShin => '𐿴',
+            Elymaic::LetterTaw => '𐿵',
+            Elymaic::LigatureZayinDashYodh => '𐿶',
         }
     }
 }
@@ -133,31 +83,30 @@ impl Into<char> for Elymaic {
 impl std::convert::TryFrom<char> for Elymaic {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_ALEPH => Ok(Elymaic::LetterAleph),
-            LETTER_BETH => Ok(Elymaic::LetterBeth),
-            LETTER_GIMEL => Ok(Elymaic::LetterGimel),
-            LETTER_DALETH => Ok(Elymaic::LetterDaleth),
-            LETTER_HE => Ok(Elymaic::LetterHe),
-            LETTER_WAW => Ok(Elymaic::LetterWaw),
-            LETTER_ZAYIN => Ok(Elymaic::LetterZayin),
-            LETTER_HETH => Ok(Elymaic::LetterHeth),
-            LETTER_TETH => Ok(Elymaic::LetterTeth),
-            LETTER_YODH => Ok(Elymaic::LetterYodh),
-            LETTER_KAPH => Ok(Elymaic::LetterKaph),
-            LETTER_LAMEDH => Ok(Elymaic::LetterLamedh),
-            LETTER_MEM => Ok(Elymaic::LetterMem),
-            LETTER_NUN => Ok(Elymaic::LetterNun),
-            LETTER_SAMEKH => Ok(Elymaic::LetterSamekh),
-            LETTER_AYIN => Ok(Elymaic::LetterAyin),
-            LETTER_PE => Ok(Elymaic::LetterPe),
-            LETTER_SADHE => Ok(Elymaic::LetterSadhe),
-            LETTER_QOPH => Ok(Elymaic::LetterQoph),
-            LETTER_RESH => Ok(Elymaic::LetterResh),
-            LETTER_SHIN => Ok(Elymaic::LetterShin),
-            LETTER_TAW => Ok(Elymaic::LetterTaw),
-            LIGATURE_ZAYIN_DASH_YODH => Ok(Elymaic::LigatureZayinDashYodh),
+            '𐿠' => Ok(Elymaic::LetterAleph),
+            '𐿡' => Ok(Elymaic::LetterBeth),
+            '𐿢' => Ok(Elymaic::LetterGimel),
+            '𐿣' => Ok(Elymaic::LetterDaleth),
+            '𐿤' => Ok(Elymaic::LetterHe),
+            '𐿥' => Ok(Elymaic::LetterWaw),
+            '𐿦' => Ok(Elymaic::LetterZayin),
+            '𐿧' => Ok(Elymaic::LetterHeth),
+            '𐿨' => Ok(Elymaic::LetterTeth),
+            '𐿩' => Ok(Elymaic::LetterYodh),
+            '𐿪' => Ok(Elymaic::LetterKaph),
+            '𐿫' => Ok(Elymaic::LetterLamedh),
+            '𐿬' => Ok(Elymaic::LetterMem),
+            '𐿭' => Ok(Elymaic::LetterNun),
+            '𐿮' => Ok(Elymaic::LetterSamekh),
+            '𐿯' => Ok(Elymaic::LetterAyin),
+            '𐿰' => Ok(Elymaic::LetterPe),
+            '𐿱' => Ok(Elymaic::LetterSadhe),
+            '𐿲' => Ok(Elymaic::LetterQoph),
+            '𐿳' => Ok(Elymaic::LetterResh),
+            '𐿴' => Ok(Elymaic::LetterShin),
+            '𐿵' => Ok(Elymaic::LetterTaw),
+            '𐿶' => Ok(Elymaic::LigatureZayinDashYodh),
             _ => Err(()),
         }
     }

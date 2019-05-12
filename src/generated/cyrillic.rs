@@ -1,516 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{400}: 'Ѐ'
-    pub const CAPITAL_LETTER_IE_WITH_GRAVE: char = 'Ѐ';
-    /// \u{401}: 'Ё'
-    pub const CAPITAL_LETTER_IO: char = 'Ё';
-    /// \u{402}: 'Ђ'
-    pub const CAPITAL_LETTER_DJE: char = 'Ђ';
-    /// \u{403}: 'Ѓ'
-    pub const CAPITAL_LETTER_GJE: char = 'Ѓ';
-    /// \u{404}: 'Є'
-    pub const CAPITAL_LETTER_UKRAINIAN_IE: char = 'Є';
-    /// \u{405}: 'Ѕ'
-    pub const CAPITAL_LETTER_DZE: char = 'Ѕ';
-    /// \u{406}: 'І'
-    pub const CAPITAL_LETTER_BYELORUSSIAN_DASH_UKRAINIAN_I: char = 'І';
-    /// \u{407}: 'Ї'
-    pub const CAPITAL_LETTER_YI: char = 'Ї';
-    /// \u{408}: 'Ј'
-    pub const CAPITAL_LETTER_JE: char = 'Ј';
-    /// \u{409}: 'Љ'
-    pub const CAPITAL_LETTER_LJE: char = 'Љ';
-    /// \u{40a}: 'Њ'
-    pub const CAPITAL_LETTER_NJE: char = 'Њ';
-    /// \u{40b}: 'Ћ'
-    pub const CAPITAL_LETTER_TSHE: char = 'Ћ';
-    /// \u{40c}: 'Ќ'
-    pub const CAPITAL_LETTER_KJE: char = 'Ќ';
-    /// \u{40d}: 'Ѝ'
-    pub const CAPITAL_LETTER_I_WITH_GRAVE: char = 'Ѝ';
-    /// \u{40e}: 'Ў'
-    pub const CAPITAL_LETTER_SHORT_U: char = 'Ў';
-    /// \u{40f}: 'Џ'
-    pub const CAPITAL_LETTER_DZHE: char = 'Џ';
-    /// \u{410}: 'А'
-    pub const CAPITAL_LETTER_A: char = 'А';
-    /// \u{411}: 'Б'
-    pub const CAPITAL_LETTER_BE: char = 'Б';
-    /// \u{412}: 'В'
-    pub const CAPITAL_LETTER_VE: char = 'В';
-    /// \u{413}: 'Г'
-    pub const CAPITAL_LETTER_GHE: char = 'Г';
-    /// \u{414}: 'Д'
-    pub const CAPITAL_LETTER_DE: char = 'Д';
-    /// \u{415}: 'Е'
-    pub const CAPITAL_LETTER_IE: char = 'Е';
-    /// \u{416}: 'Ж'
-    pub const CAPITAL_LETTER_ZHE: char = 'Ж';
-    /// \u{417}: 'З'
-    pub const CAPITAL_LETTER_ZE: char = 'З';
-    /// \u{418}: 'И'
-    pub const CAPITAL_LETTER_I: char = 'И';
-    /// \u{419}: 'Й'
-    pub const CAPITAL_LETTER_SHORT_I: char = 'Й';
-    /// \u{41a}: 'К'
-    pub const CAPITAL_LETTER_KA: char = 'К';
-    /// \u{41b}: 'Л'
-    pub const CAPITAL_LETTER_EL: char = 'Л';
-    /// \u{41c}: 'М'
-    pub const CAPITAL_LETTER_EM: char = 'М';
-    /// \u{41d}: 'Н'
-    pub const CAPITAL_LETTER_EN: char = 'Н';
-    /// \u{41e}: 'О'
-    pub const CAPITAL_LETTER_O: char = 'О';
-    /// \u{41f}: 'П'
-    pub const CAPITAL_LETTER_PE: char = 'П';
-    /// \u{420}: 'Р'
-    pub const CAPITAL_LETTER_ER: char = 'Р';
-    /// \u{421}: 'С'
-    pub const CAPITAL_LETTER_ES: char = 'С';
-    /// \u{422}: 'Т'
-    pub const CAPITAL_LETTER_TE: char = 'Т';
-    /// \u{423}: 'У'
-    pub const CAPITAL_LETTER_U: char = 'У';
-    /// \u{424}: 'Ф'
-    pub const CAPITAL_LETTER_EF: char = 'Ф';
-    /// \u{425}: 'Х'
-    pub const CAPITAL_LETTER_HA: char = 'Х';
-    /// \u{426}: 'Ц'
-    pub const CAPITAL_LETTER_TSE: char = 'Ц';
-    /// \u{427}: 'Ч'
-    pub const CAPITAL_LETTER_CHE: char = 'Ч';
-    /// \u{428}: 'Ш'
-    pub const CAPITAL_LETTER_SHA: char = 'Ш';
-    /// \u{429}: 'Щ'
-    pub const CAPITAL_LETTER_SHCHA: char = 'Щ';
-    /// \u{42a}: 'Ъ'
-    pub const CAPITAL_LETTER_HARD_SIGN: char = 'Ъ';
-    /// \u{42b}: 'Ы'
-    pub const CAPITAL_LETTER_YERU: char = 'Ы';
-    /// \u{42c}: 'Ь'
-    pub const CAPITAL_LETTER_SOFT_SIGN: char = 'Ь';
-    /// \u{42d}: 'Э'
-    pub const CAPITAL_LETTER_E: char = 'Э';
-    /// \u{42e}: 'Ю'
-    pub const CAPITAL_LETTER_YU: char = 'Ю';
-    /// \u{42f}: 'Я'
-    pub const CAPITAL_LETTER_YA: char = 'Я';
-    /// \u{430}: 'а'
-    pub const SMALL_LETTER_A: char = 'а';
-    /// \u{431}: 'б'
-    pub const SMALL_LETTER_BE: char = 'б';
-    /// \u{432}: 'в'
-    pub const SMALL_LETTER_VE: char = 'в';
-    /// \u{433}: 'г'
-    pub const SMALL_LETTER_GHE: char = 'г';
-    /// \u{434}: 'д'
-    pub const SMALL_LETTER_DE: char = 'д';
-    /// \u{435}: 'е'
-    pub const SMALL_LETTER_IE: char = 'е';
-    /// \u{436}: 'ж'
-    pub const SMALL_LETTER_ZHE: char = 'ж';
-    /// \u{437}: 'з'
-    pub const SMALL_LETTER_ZE: char = 'з';
-    /// \u{438}: 'и'
-    pub const SMALL_LETTER_I: char = 'и';
-    /// \u{439}: 'й'
-    pub const SMALL_LETTER_SHORT_I: char = 'й';
-    /// \u{43a}: 'к'
-    pub const SMALL_LETTER_KA: char = 'к';
-    /// \u{43b}: 'л'
-    pub const SMALL_LETTER_EL: char = 'л';
-    /// \u{43c}: 'м'
-    pub const SMALL_LETTER_EM: char = 'м';
-    /// \u{43d}: 'н'
-    pub const SMALL_LETTER_EN: char = 'н';
-    /// \u{43e}: 'о'
-    pub const SMALL_LETTER_O: char = 'о';
-    /// \u{43f}: 'п'
-    pub const SMALL_LETTER_PE: char = 'п';
-    /// \u{440}: 'р'
-    pub const SMALL_LETTER_ER: char = 'р';
-    /// \u{441}: 'с'
-    pub const SMALL_LETTER_ES: char = 'с';
-    /// \u{442}: 'т'
-    pub const SMALL_LETTER_TE: char = 'т';
-    /// \u{443}: 'у'
-    pub const SMALL_LETTER_U: char = 'у';
-    /// \u{444}: 'ф'
-    pub const SMALL_LETTER_EF: char = 'ф';
-    /// \u{445}: 'х'
-    pub const SMALL_LETTER_HA: char = 'х';
-    /// \u{446}: 'ц'
-    pub const SMALL_LETTER_TSE: char = 'ц';
-    /// \u{447}: 'ч'
-    pub const SMALL_LETTER_CHE: char = 'ч';
-    /// \u{448}: 'ш'
-    pub const SMALL_LETTER_SHA: char = 'ш';
-    /// \u{449}: 'щ'
-    pub const SMALL_LETTER_SHCHA: char = 'щ';
-    /// \u{44a}: 'ъ'
-    pub const SMALL_LETTER_HARD_SIGN: char = 'ъ';
-    /// \u{44b}: 'ы'
-    pub const SMALL_LETTER_YERU: char = 'ы';
-    /// \u{44c}: 'ь'
-    pub const SMALL_LETTER_SOFT_SIGN: char = 'ь';
-    /// \u{44d}: 'э'
-    pub const SMALL_LETTER_E: char = 'э';
-    /// \u{44e}: 'ю'
-    pub const SMALL_LETTER_YU: char = 'ю';
-    /// \u{44f}: 'я'
-    pub const SMALL_LETTER_YA: char = 'я';
-    /// \u{450}: 'ѐ'
-    pub const SMALL_LETTER_IE_WITH_GRAVE: char = 'ѐ';
-    /// \u{451}: 'ё'
-    pub const SMALL_LETTER_IO: char = 'ё';
-    /// \u{452}: 'ђ'
-    pub const SMALL_LETTER_DJE: char = 'ђ';
-    /// \u{453}: 'ѓ'
-    pub const SMALL_LETTER_GJE: char = 'ѓ';
-    /// \u{454}: 'є'
-    pub const SMALL_LETTER_UKRAINIAN_IE: char = 'є';
-    /// \u{455}: 'ѕ'
-    pub const SMALL_LETTER_DZE: char = 'ѕ';
-    /// \u{456}: 'і'
-    pub const SMALL_LETTER_BYELORUSSIAN_DASH_UKRAINIAN_I: char = 'і';
-    /// \u{457}: 'ї'
-    pub const SMALL_LETTER_YI: char = 'ї';
-    /// \u{458}: 'ј'
-    pub const SMALL_LETTER_JE: char = 'ј';
-    /// \u{459}: 'љ'
-    pub const SMALL_LETTER_LJE: char = 'љ';
-    /// \u{45a}: 'њ'
-    pub const SMALL_LETTER_NJE: char = 'њ';
-    /// \u{45b}: 'ћ'
-    pub const SMALL_LETTER_TSHE: char = 'ћ';
-    /// \u{45c}: 'ќ'
-    pub const SMALL_LETTER_KJE: char = 'ќ';
-    /// \u{45d}: 'ѝ'
-    pub const SMALL_LETTER_I_WITH_GRAVE: char = 'ѝ';
-    /// \u{45e}: 'ў'
-    pub const SMALL_LETTER_SHORT_U: char = 'ў';
-    /// \u{45f}: 'џ'
-    pub const SMALL_LETTER_DZHE: char = 'џ';
-    /// \u{460}: 'Ѡ'
-    pub const CAPITAL_LETTER_OMEGA: char = 'Ѡ';
-    /// \u{461}: 'ѡ'
-    pub const SMALL_LETTER_OMEGA: char = 'ѡ';
-    /// \u{462}: 'Ѣ'
-    pub const CAPITAL_LETTER_YAT: char = 'Ѣ';
-    /// \u{463}: 'ѣ'
-    pub const SMALL_LETTER_YAT: char = 'ѣ';
-    /// \u{464}: 'Ѥ'
-    pub const CAPITAL_LETTER_IOTIFIED_E: char = 'Ѥ';
-    /// \u{465}: 'ѥ'
-    pub const SMALL_LETTER_IOTIFIED_E: char = 'ѥ';
-    /// \u{466}: 'Ѧ'
-    pub const CAPITAL_LETTER_LITTLE_YUS: char = 'Ѧ';
-    /// \u{467}: 'ѧ'
-    pub const SMALL_LETTER_LITTLE_YUS: char = 'ѧ';
-    /// \u{468}: 'Ѩ'
-    pub const CAPITAL_LETTER_IOTIFIED_LITTLE_YUS: char = 'Ѩ';
-    /// \u{469}: 'ѩ'
-    pub const SMALL_LETTER_IOTIFIED_LITTLE_YUS: char = 'ѩ';
-    /// \u{46a}: 'Ѫ'
-    pub const CAPITAL_LETTER_BIG_YUS: char = 'Ѫ';
-    /// \u{46b}: 'ѫ'
-    pub const SMALL_LETTER_BIG_YUS: char = 'ѫ';
-    /// \u{46c}: 'Ѭ'
-    pub const CAPITAL_LETTER_IOTIFIED_BIG_YUS: char = 'Ѭ';
-    /// \u{46d}: 'ѭ'
-    pub const SMALL_LETTER_IOTIFIED_BIG_YUS: char = 'ѭ';
-    /// \u{46e}: 'Ѯ'
-    pub const CAPITAL_LETTER_KSI: char = 'Ѯ';
-    /// \u{46f}: 'ѯ'
-    pub const SMALL_LETTER_KSI: char = 'ѯ';
-    /// \u{470}: 'Ѱ'
-    pub const CAPITAL_LETTER_PSI: char = 'Ѱ';
-    /// \u{471}: 'ѱ'
-    pub const SMALL_LETTER_PSI: char = 'ѱ';
-    /// \u{472}: 'Ѳ'
-    pub const CAPITAL_LETTER_FITA: char = 'Ѳ';
-    /// \u{473}: 'ѳ'
-    pub const SMALL_LETTER_FITA: char = 'ѳ';
-    /// \u{474}: 'Ѵ'
-    pub const CAPITAL_LETTER_IZHITSA: char = 'Ѵ';
-    /// \u{475}: 'ѵ'
-    pub const SMALL_LETTER_IZHITSA: char = 'ѵ';
-    /// \u{476}: 'Ѷ'
-    pub const CAPITAL_LETTER_IZHITSA_WITH_DOUBLE_GRAVE_ACCENT: char = 'Ѷ';
-    /// \u{477}: 'ѷ'
-    pub const SMALL_LETTER_IZHITSA_WITH_DOUBLE_GRAVE_ACCENT: char = 'ѷ';
-    /// \u{478}: 'Ѹ'
-    pub const CAPITAL_LETTER_UK: char = 'Ѹ';
-    /// \u{479}: 'ѹ'
-    pub const SMALL_LETTER_UK: char = 'ѹ';
-    /// \u{47a}: 'Ѻ'
-    pub const CAPITAL_LETTER_ROUND_OMEGA: char = 'Ѻ';
-    /// \u{47b}: 'ѻ'
-    pub const SMALL_LETTER_ROUND_OMEGA: char = 'ѻ';
-    /// \u{47c}: 'Ѽ'
-    pub const CAPITAL_LETTER_OMEGA_WITH_TITLO: char = 'Ѽ';
-    /// \u{47d}: 'ѽ'
-    pub const SMALL_LETTER_OMEGA_WITH_TITLO: char = 'ѽ';
-    /// \u{47e}: 'Ѿ'
-    pub const CAPITAL_LETTER_OT: char = 'Ѿ';
-    /// \u{47f}: 'ѿ'
-    pub const SMALL_LETTER_OT: char = 'ѿ';
-    /// \u{480}: 'Ҁ'
-    pub const CAPITAL_LETTER_KOPPA: char = 'Ҁ';
-    /// \u{481}: 'ҁ'
-    pub const SMALL_LETTER_KOPPA: char = 'ҁ';
-    /// \u{482}: '҂'
-    pub const THOUSANDS_SIGN: char = '҂';
-    /// \u{483}: '҃'
-    pub const COMBINING_TITLO: char = '҃';
-    /// \u{484}: '҄'
-    pub const COMBINING_PALATALIZATION: char = '҄';
-    /// \u{485}: '҅'
-    pub const COMBINING_DASIA_PNEUMATA: char = '҅';
-    /// \u{486}: '҆'
-    pub const COMBINING_PSILI_PNEUMATA: char = '҆';
-    /// \u{487}: '҇'
-    pub const COMBINING_POKRYTIE: char = '҇';
-    /// \u{488}: '҈'
-    pub const COMBINING_HUNDRED_THOUSANDS_SIGN: char = '҈';
-    /// \u{489}: '҉'
-    pub const COMBINING_MILLIONS_SIGN: char = '҉';
-    /// \u{48a}: 'Ҋ'
-    pub const CAPITAL_LETTER_SHORT_I_WITH_TAIL: char = 'Ҋ';
-    /// \u{48b}: 'ҋ'
-    pub const SMALL_LETTER_SHORT_I_WITH_TAIL: char = 'ҋ';
-    /// \u{48c}: 'Ҍ'
-    pub const CAPITAL_LETTER_SEMISOFT_SIGN: char = 'Ҍ';
-    /// \u{48d}: 'ҍ'
-    pub const SMALL_LETTER_SEMISOFT_SIGN: char = 'ҍ';
-    /// \u{48e}: 'Ҏ'
-    pub const CAPITAL_LETTER_ER_WITH_TICK: char = 'Ҏ';
-    /// \u{48f}: 'ҏ'
-    pub const SMALL_LETTER_ER_WITH_TICK: char = 'ҏ';
-    /// \u{490}: 'Ґ'
-    pub const CAPITAL_LETTER_GHE_WITH_UPTURN: char = 'Ґ';
-    /// \u{491}: 'ґ'
-    pub const SMALL_LETTER_GHE_WITH_UPTURN: char = 'ґ';
-    /// \u{492}: 'Ғ'
-    pub const CAPITAL_LETTER_GHE_WITH_STROKE: char = 'Ғ';
-    /// \u{493}: 'ғ'
-    pub const SMALL_LETTER_GHE_WITH_STROKE: char = 'ғ';
-    /// \u{494}: 'Ҕ'
-    pub const CAPITAL_LETTER_GHE_WITH_MIDDLE_HOOK: char = 'Ҕ';
-    /// \u{495}: 'ҕ'
-    pub const SMALL_LETTER_GHE_WITH_MIDDLE_HOOK: char = 'ҕ';
-    /// \u{496}: 'Җ'
-    pub const CAPITAL_LETTER_ZHE_WITH_DESCENDER: char = 'Җ';
-    /// \u{497}: 'җ'
-    pub const SMALL_LETTER_ZHE_WITH_DESCENDER: char = 'җ';
-    /// \u{498}: 'Ҙ'
-    pub const CAPITAL_LETTER_ZE_WITH_DESCENDER: char = 'Ҙ';
-    /// \u{499}: 'ҙ'
-    pub const SMALL_LETTER_ZE_WITH_DESCENDER: char = 'ҙ';
-    /// \u{49a}: 'Қ'
-    pub const CAPITAL_LETTER_KA_WITH_DESCENDER: char = 'Қ';
-    /// \u{49b}: 'қ'
-    pub const SMALL_LETTER_KA_WITH_DESCENDER: char = 'қ';
-    /// \u{49c}: 'Ҝ'
-    pub const CAPITAL_LETTER_KA_WITH_VERTICAL_STROKE: char = 'Ҝ';
-    /// \u{49d}: 'ҝ'
-    pub const SMALL_LETTER_KA_WITH_VERTICAL_STROKE: char = 'ҝ';
-    /// \u{49e}: 'Ҟ'
-    pub const CAPITAL_LETTER_KA_WITH_STROKE: char = 'Ҟ';
-    /// \u{49f}: 'ҟ'
-    pub const SMALL_LETTER_KA_WITH_STROKE: char = 'ҟ';
-    /// \u{4a0}: 'Ҡ'
-    pub const CAPITAL_LETTER_BASHKIR_KA: char = 'Ҡ';
-    /// \u{4a1}: 'ҡ'
-    pub const SMALL_LETTER_BASHKIR_KA: char = 'ҡ';
-    /// \u{4a2}: 'Ң'
-    pub const CAPITAL_LETTER_EN_WITH_DESCENDER: char = 'Ң';
-    /// \u{4a3}: 'ң'
-    pub const SMALL_LETTER_EN_WITH_DESCENDER: char = 'ң';
-    /// \u{4a4}: 'Ҥ'
-    pub const CAPITAL_LIGATURE_EN_GHE: char = 'Ҥ';
-    /// \u{4a5}: 'ҥ'
-    pub const SMALL_LIGATURE_EN_GHE: char = 'ҥ';
-    /// \u{4a6}: 'Ҧ'
-    pub const CAPITAL_LETTER_PE_WITH_MIDDLE_HOOK: char = 'Ҧ';
-    /// \u{4a7}: 'ҧ'
-    pub const SMALL_LETTER_PE_WITH_MIDDLE_HOOK: char = 'ҧ';
-    /// \u{4a8}: 'Ҩ'
-    pub const CAPITAL_LETTER_ABKHASIAN_HA: char = 'Ҩ';
-    /// \u{4a9}: 'ҩ'
-    pub const SMALL_LETTER_ABKHASIAN_HA: char = 'ҩ';
-    /// \u{4aa}: 'Ҫ'
-    pub const CAPITAL_LETTER_ES_WITH_DESCENDER: char = 'Ҫ';
-    /// \u{4ab}: 'ҫ'
-    pub const SMALL_LETTER_ES_WITH_DESCENDER: char = 'ҫ';
-    /// \u{4ac}: 'Ҭ'
-    pub const CAPITAL_LETTER_TE_WITH_DESCENDER: char = 'Ҭ';
-    /// \u{4ad}: 'ҭ'
-    pub const SMALL_LETTER_TE_WITH_DESCENDER: char = 'ҭ';
-    /// \u{4ae}: 'Ү'
-    pub const CAPITAL_LETTER_STRAIGHT_U: char = 'Ү';
-    /// \u{4af}: 'ү'
-    pub const SMALL_LETTER_STRAIGHT_U: char = 'ү';
-    /// \u{4b0}: 'Ұ'
-    pub const CAPITAL_LETTER_STRAIGHT_U_WITH_STROKE: char = 'Ұ';
-    /// \u{4b1}: 'ұ'
-    pub const SMALL_LETTER_STRAIGHT_U_WITH_STROKE: char = 'ұ';
-    /// \u{4b2}: 'Ҳ'
-    pub const CAPITAL_LETTER_HA_WITH_DESCENDER: char = 'Ҳ';
-    /// \u{4b3}: 'ҳ'
-    pub const SMALL_LETTER_HA_WITH_DESCENDER: char = 'ҳ';
-    /// \u{4b4}: 'Ҵ'
-    pub const CAPITAL_LIGATURE_TE_TSE: char = 'Ҵ';
-    /// \u{4b5}: 'ҵ'
-    pub const SMALL_LIGATURE_TE_TSE: char = 'ҵ';
-    /// \u{4b6}: 'Ҷ'
-    pub const CAPITAL_LETTER_CHE_WITH_DESCENDER: char = 'Ҷ';
-    /// \u{4b7}: 'ҷ'
-    pub const SMALL_LETTER_CHE_WITH_DESCENDER: char = 'ҷ';
-    /// \u{4b8}: 'Ҹ'
-    pub const CAPITAL_LETTER_CHE_WITH_VERTICAL_STROKE: char = 'Ҹ';
-    /// \u{4b9}: 'ҹ'
-    pub const SMALL_LETTER_CHE_WITH_VERTICAL_STROKE: char = 'ҹ';
-    /// \u{4ba}: 'Һ'
-    pub const CAPITAL_LETTER_SHHA: char = 'Һ';
-    /// \u{4bb}: 'һ'
-    pub const SMALL_LETTER_SHHA: char = 'һ';
-    /// \u{4bc}: 'Ҽ'
-    pub const CAPITAL_LETTER_ABKHASIAN_CHE: char = 'Ҽ';
-    /// \u{4bd}: 'ҽ'
-    pub const SMALL_LETTER_ABKHASIAN_CHE: char = 'ҽ';
-    /// \u{4be}: 'Ҿ'
-    pub const CAPITAL_LETTER_ABKHASIAN_CHE_WITH_DESCENDER: char = 'Ҿ';
-    /// \u{4bf}: 'ҿ'
-    pub const SMALL_LETTER_ABKHASIAN_CHE_WITH_DESCENDER: char = 'ҿ';
-    /// \u{4c0}: 'Ӏ'
-    pub const LETTER_PALOCHKA: char = 'Ӏ';
-    /// \u{4c1}: 'Ӂ'
-    pub const CAPITAL_LETTER_ZHE_WITH_BREVE: char = 'Ӂ';
-    /// \u{4c2}: 'ӂ'
-    pub const SMALL_LETTER_ZHE_WITH_BREVE: char = 'ӂ';
-    /// \u{4c3}: 'Ӄ'
-    pub const CAPITAL_LETTER_KA_WITH_HOOK: char = 'Ӄ';
-    /// \u{4c4}: 'ӄ'
-    pub const SMALL_LETTER_KA_WITH_HOOK: char = 'ӄ';
-    /// \u{4c5}: 'Ӆ'
-    pub const CAPITAL_LETTER_EL_WITH_TAIL: char = 'Ӆ';
-    /// \u{4c6}: 'ӆ'
-    pub const SMALL_LETTER_EL_WITH_TAIL: char = 'ӆ';
-    /// \u{4c7}: 'Ӈ'
-    pub const CAPITAL_LETTER_EN_WITH_HOOK: char = 'Ӈ';
-    /// \u{4c8}: 'ӈ'
-    pub const SMALL_LETTER_EN_WITH_HOOK: char = 'ӈ';
-    /// \u{4c9}: 'Ӊ'
-    pub const CAPITAL_LETTER_EN_WITH_TAIL: char = 'Ӊ';
-    /// \u{4ca}: 'ӊ'
-    pub const SMALL_LETTER_EN_WITH_TAIL: char = 'ӊ';
-    /// \u{4cb}: 'Ӌ'
-    pub const CAPITAL_LETTER_KHAKASSIAN_CHE: char = 'Ӌ';
-    /// \u{4cc}: 'ӌ'
-    pub const SMALL_LETTER_KHAKASSIAN_CHE: char = 'ӌ';
-    /// \u{4cd}: 'Ӎ'
-    pub const CAPITAL_LETTER_EM_WITH_TAIL: char = 'Ӎ';
-    /// \u{4ce}: 'ӎ'
-    pub const SMALL_LETTER_EM_WITH_TAIL: char = 'ӎ';
-    /// \u{4cf}: 'ӏ'
-    pub const SMALL_LETTER_PALOCHKA: char = 'ӏ';
-    /// \u{4d0}: 'Ӑ'
-    pub const CAPITAL_LETTER_A_WITH_BREVE: char = 'Ӑ';
-    /// \u{4d1}: 'ӑ'
-    pub const SMALL_LETTER_A_WITH_BREVE: char = 'ӑ';
-    /// \u{4d2}: 'Ӓ'
-    pub const CAPITAL_LETTER_A_WITH_DIAERESIS: char = 'Ӓ';
-    /// \u{4d3}: 'ӓ'
-    pub const SMALL_LETTER_A_WITH_DIAERESIS: char = 'ӓ';
-    /// \u{4d4}: 'Ӕ'
-    pub const CAPITAL_LIGATURE_A_IE: char = 'Ӕ';
-    /// \u{4d5}: 'ӕ'
-    pub const SMALL_LIGATURE_A_IE: char = 'ӕ';
-    /// \u{4d6}: 'Ӗ'
-    pub const CAPITAL_LETTER_IE_WITH_BREVE: char = 'Ӗ';
-    /// \u{4d7}: 'ӗ'
-    pub const SMALL_LETTER_IE_WITH_BREVE: char = 'ӗ';
-    /// \u{4d8}: 'Ә'
-    pub const CAPITAL_LETTER_SCHWA: char = 'Ә';
-    /// \u{4d9}: 'ә'
-    pub const SMALL_LETTER_SCHWA: char = 'ә';
-    /// \u{4da}: 'Ӛ'
-    pub const CAPITAL_LETTER_SCHWA_WITH_DIAERESIS: char = 'Ӛ';
-    /// \u{4db}: 'ӛ'
-    pub const SMALL_LETTER_SCHWA_WITH_DIAERESIS: char = 'ӛ';
-    /// \u{4dc}: 'Ӝ'
-    pub const CAPITAL_LETTER_ZHE_WITH_DIAERESIS: char = 'Ӝ';
-    /// \u{4dd}: 'ӝ'
-    pub const SMALL_LETTER_ZHE_WITH_DIAERESIS: char = 'ӝ';
-    /// \u{4de}: 'Ӟ'
-    pub const CAPITAL_LETTER_ZE_WITH_DIAERESIS: char = 'Ӟ';
-    /// \u{4df}: 'ӟ'
-    pub const SMALL_LETTER_ZE_WITH_DIAERESIS: char = 'ӟ';
-    /// \u{4e0}: 'Ӡ'
-    pub const CAPITAL_LETTER_ABKHASIAN_DZE: char = 'Ӡ';
-    /// \u{4e1}: 'ӡ'
-    pub const SMALL_LETTER_ABKHASIAN_DZE: char = 'ӡ';
-    /// \u{4e2}: 'Ӣ'
-    pub const CAPITAL_LETTER_I_WITH_MACRON: char = 'Ӣ';
-    /// \u{4e3}: 'ӣ'
-    pub const SMALL_LETTER_I_WITH_MACRON: char = 'ӣ';
-    /// \u{4e4}: 'Ӥ'
-    pub const CAPITAL_LETTER_I_WITH_DIAERESIS: char = 'Ӥ';
-    /// \u{4e5}: 'ӥ'
-    pub const SMALL_LETTER_I_WITH_DIAERESIS: char = 'ӥ';
-    /// \u{4e6}: 'Ӧ'
-    pub const CAPITAL_LETTER_O_WITH_DIAERESIS: char = 'Ӧ';
-    /// \u{4e7}: 'ӧ'
-    pub const SMALL_LETTER_O_WITH_DIAERESIS: char = 'ӧ';
-    /// \u{4e8}: 'Ө'
-    pub const CAPITAL_LETTER_BARRED_O: char = 'Ө';
-    /// \u{4e9}: 'ө'
-    pub const SMALL_LETTER_BARRED_O: char = 'ө';
-    /// \u{4ea}: 'Ӫ'
-    pub const CAPITAL_LETTER_BARRED_O_WITH_DIAERESIS: char = 'Ӫ';
-    /// \u{4eb}: 'ӫ'
-    pub const SMALL_LETTER_BARRED_O_WITH_DIAERESIS: char = 'ӫ';
-    /// \u{4ec}: 'Ӭ'
-    pub const CAPITAL_LETTER_E_WITH_DIAERESIS: char = 'Ӭ';
-    /// \u{4ed}: 'ӭ'
-    pub const SMALL_LETTER_E_WITH_DIAERESIS: char = 'ӭ';
-    /// \u{4ee}: 'Ӯ'
-    pub const CAPITAL_LETTER_U_WITH_MACRON: char = 'Ӯ';
-    /// \u{4ef}: 'ӯ'
-    pub const SMALL_LETTER_U_WITH_MACRON: char = 'ӯ';
-    /// \u{4f0}: 'Ӱ'
-    pub const CAPITAL_LETTER_U_WITH_DIAERESIS: char = 'Ӱ';
-    /// \u{4f1}: 'ӱ'
-    pub const SMALL_LETTER_U_WITH_DIAERESIS: char = 'ӱ';
-    /// \u{4f2}: 'Ӳ'
-    pub const CAPITAL_LETTER_U_WITH_DOUBLE_ACUTE: char = 'Ӳ';
-    /// \u{4f3}: 'ӳ'
-    pub const SMALL_LETTER_U_WITH_DOUBLE_ACUTE: char = 'ӳ';
-    /// \u{4f4}: 'Ӵ'
-    pub const CAPITAL_LETTER_CHE_WITH_DIAERESIS: char = 'Ӵ';
-    /// \u{4f5}: 'ӵ'
-    pub const SMALL_LETTER_CHE_WITH_DIAERESIS: char = 'ӵ';
-    /// \u{4f6}: 'Ӷ'
-    pub const CAPITAL_LETTER_GHE_WITH_DESCENDER: char = 'Ӷ';
-    /// \u{4f7}: 'ӷ'
-    pub const SMALL_LETTER_GHE_WITH_DESCENDER: char = 'ӷ';
-    /// \u{4f8}: 'Ӹ'
-    pub const CAPITAL_LETTER_YERU_WITH_DIAERESIS: char = 'Ӹ';
-    /// \u{4f9}: 'ӹ'
-    pub const SMALL_LETTER_YERU_WITH_DIAERESIS: char = 'ӹ';
-    /// \u{4fa}: 'Ӻ'
-    pub const CAPITAL_LETTER_GHE_WITH_STROKE_AND_HOOK: char = 'Ӻ';
-    /// \u{4fb}: 'ӻ'
-    pub const SMALL_LETTER_GHE_WITH_STROKE_AND_HOOK: char = 'ӻ';
-    /// \u{4fc}: 'Ӽ'
-    pub const CAPITAL_LETTER_HA_WITH_HOOK: char = 'Ӽ';
-    /// \u{4fd}: 'ӽ'
-    pub const SMALL_LETTER_HA_WITH_HOOK: char = 'ӽ';
-    /// \u{4fe}: 'Ӿ'
-    pub const CAPITAL_LETTER_HA_WITH_STROKE: char = 'Ӿ';
-}
 
 /// An enum to represent all characters in the Cyrillic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -1029,263 +516,262 @@ pub enum Cyrillic {
 
 impl Into<char> for Cyrillic {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Cyrillic::CapitalLetterIeWithGrave => CAPITAL_LETTER_IE_WITH_GRAVE,
-            Cyrillic::CapitalLetterIo => CAPITAL_LETTER_IO,
-            Cyrillic::CapitalLetterDje => CAPITAL_LETTER_DJE,
-            Cyrillic::CapitalLetterGje => CAPITAL_LETTER_GJE,
-            Cyrillic::CapitalLetterUkrainianIe => CAPITAL_LETTER_UKRAINIAN_IE,
-            Cyrillic::CapitalLetterDze => CAPITAL_LETTER_DZE,
-            Cyrillic::CapitalLetterByelorussianDashUkrainianI => CAPITAL_LETTER_BYELORUSSIAN_DASH_UKRAINIAN_I,
-            Cyrillic::CapitalLetterYi => CAPITAL_LETTER_YI,
-            Cyrillic::CapitalLetterJe => CAPITAL_LETTER_JE,
-            Cyrillic::CapitalLetterLje => CAPITAL_LETTER_LJE,
-            Cyrillic::CapitalLetterNje => CAPITAL_LETTER_NJE,
-            Cyrillic::CapitalLetterTshe => CAPITAL_LETTER_TSHE,
-            Cyrillic::CapitalLetterKje => CAPITAL_LETTER_KJE,
-            Cyrillic::CapitalLetterIWithGrave => CAPITAL_LETTER_I_WITH_GRAVE,
-            Cyrillic::CapitalLetterShortU => CAPITAL_LETTER_SHORT_U,
-            Cyrillic::CapitalLetterDzhe => CAPITAL_LETTER_DZHE,
-            Cyrillic::CapitalLetterA => CAPITAL_LETTER_A,
-            Cyrillic::CapitalLetterBe => CAPITAL_LETTER_BE,
-            Cyrillic::CapitalLetterVe => CAPITAL_LETTER_VE,
-            Cyrillic::CapitalLetterGhe => CAPITAL_LETTER_GHE,
-            Cyrillic::CapitalLetterDe => CAPITAL_LETTER_DE,
-            Cyrillic::CapitalLetterIe => CAPITAL_LETTER_IE,
-            Cyrillic::CapitalLetterZhe => CAPITAL_LETTER_ZHE,
-            Cyrillic::CapitalLetterZe => CAPITAL_LETTER_ZE,
-            Cyrillic::CapitalLetterI => CAPITAL_LETTER_I,
-            Cyrillic::CapitalLetterShortI => CAPITAL_LETTER_SHORT_I,
-            Cyrillic::CapitalLetterKa => CAPITAL_LETTER_KA,
-            Cyrillic::CapitalLetterEl => CAPITAL_LETTER_EL,
-            Cyrillic::CapitalLetterEm => CAPITAL_LETTER_EM,
-            Cyrillic::CapitalLetterEn => CAPITAL_LETTER_EN,
-            Cyrillic::CapitalLetterO => CAPITAL_LETTER_O,
-            Cyrillic::CapitalLetterPe => CAPITAL_LETTER_PE,
-            Cyrillic::CapitalLetterEr => CAPITAL_LETTER_ER,
-            Cyrillic::CapitalLetterEs => CAPITAL_LETTER_ES,
-            Cyrillic::CapitalLetterTe => CAPITAL_LETTER_TE,
-            Cyrillic::CapitalLetterU => CAPITAL_LETTER_U,
-            Cyrillic::CapitalLetterEf => CAPITAL_LETTER_EF,
-            Cyrillic::CapitalLetterHa => CAPITAL_LETTER_HA,
-            Cyrillic::CapitalLetterTse => CAPITAL_LETTER_TSE,
-            Cyrillic::CapitalLetterChe => CAPITAL_LETTER_CHE,
-            Cyrillic::CapitalLetterSha => CAPITAL_LETTER_SHA,
-            Cyrillic::CapitalLetterShcha => CAPITAL_LETTER_SHCHA,
-            Cyrillic::CapitalLetterHardSign => CAPITAL_LETTER_HARD_SIGN,
-            Cyrillic::CapitalLetterYeru => CAPITAL_LETTER_YERU,
-            Cyrillic::CapitalLetterSoftSign => CAPITAL_LETTER_SOFT_SIGN,
-            Cyrillic::CapitalLetterE => CAPITAL_LETTER_E,
-            Cyrillic::CapitalLetterYu => CAPITAL_LETTER_YU,
-            Cyrillic::CapitalLetterYa => CAPITAL_LETTER_YA,
-            Cyrillic::SmallLetterA => SMALL_LETTER_A,
-            Cyrillic::SmallLetterBe => SMALL_LETTER_BE,
-            Cyrillic::SmallLetterVe => SMALL_LETTER_VE,
-            Cyrillic::SmallLetterGhe => SMALL_LETTER_GHE,
-            Cyrillic::SmallLetterDe => SMALL_LETTER_DE,
-            Cyrillic::SmallLetterIe => SMALL_LETTER_IE,
-            Cyrillic::SmallLetterZhe => SMALL_LETTER_ZHE,
-            Cyrillic::SmallLetterZe => SMALL_LETTER_ZE,
-            Cyrillic::SmallLetterI => SMALL_LETTER_I,
-            Cyrillic::SmallLetterShortI => SMALL_LETTER_SHORT_I,
-            Cyrillic::SmallLetterKa => SMALL_LETTER_KA,
-            Cyrillic::SmallLetterEl => SMALL_LETTER_EL,
-            Cyrillic::SmallLetterEm => SMALL_LETTER_EM,
-            Cyrillic::SmallLetterEn => SMALL_LETTER_EN,
-            Cyrillic::SmallLetterO => SMALL_LETTER_O,
-            Cyrillic::SmallLetterPe => SMALL_LETTER_PE,
-            Cyrillic::SmallLetterEr => SMALL_LETTER_ER,
-            Cyrillic::SmallLetterEs => SMALL_LETTER_ES,
-            Cyrillic::SmallLetterTe => SMALL_LETTER_TE,
-            Cyrillic::SmallLetterU => SMALL_LETTER_U,
-            Cyrillic::SmallLetterEf => SMALL_LETTER_EF,
-            Cyrillic::SmallLetterHa => SMALL_LETTER_HA,
-            Cyrillic::SmallLetterTse => SMALL_LETTER_TSE,
-            Cyrillic::SmallLetterChe => SMALL_LETTER_CHE,
-            Cyrillic::SmallLetterSha => SMALL_LETTER_SHA,
-            Cyrillic::SmallLetterShcha => SMALL_LETTER_SHCHA,
-            Cyrillic::SmallLetterHardSign => SMALL_LETTER_HARD_SIGN,
-            Cyrillic::SmallLetterYeru => SMALL_LETTER_YERU,
-            Cyrillic::SmallLetterSoftSign => SMALL_LETTER_SOFT_SIGN,
-            Cyrillic::SmallLetterE => SMALL_LETTER_E,
-            Cyrillic::SmallLetterYu => SMALL_LETTER_YU,
-            Cyrillic::SmallLetterYa => SMALL_LETTER_YA,
-            Cyrillic::SmallLetterIeWithGrave => SMALL_LETTER_IE_WITH_GRAVE,
-            Cyrillic::SmallLetterIo => SMALL_LETTER_IO,
-            Cyrillic::SmallLetterDje => SMALL_LETTER_DJE,
-            Cyrillic::SmallLetterGje => SMALL_LETTER_GJE,
-            Cyrillic::SmallLetterUkrainianIe => SMALL_LETTER_UKRAINIAN_IE,
-            Cyrillic::SmallLetterDze => SMALL_LETTER_DZE,
-            Cyrillic::SmallLetterByelorussianDashUkrainianI => SMALL_LETTER_BYELORUSSIAN_DASH_UKRAINIAN_I,
-            Cyrillic::SmallLetterYi => SMALL_LETTER_YI,
-            Cyrillic::SmallLetterJe => SMALL_LETTER_JE,
-            Cyrillic::SmallLetterLje => SMALL_LETTER_LJE,
-            Cyrillic::SmallLetterNje => SMALL_LETTER_NJE,
-            Cyrillic::SmallLetterTshe => SMALL_LETTER_TSHE,
-            Cyrillic::SmallLetterKje => SMALL_LETTER_KJE,
-            Cyrillic::SmallLetterIWithGrave => SMALL_LETTER_I_WITH_GRAVE,
-            Cyrillic::SmallLetterShortU => SMALL_LETTER_SHORT_U,
-            Cyrillic::SmallLetterDzhe => SMALL_LETTER_DZHE,
-            Cyrillic::CapitalLetterOmega => CAPITAL_LETTER_OMEGA,
-            Cyrillic::SmallLetterOmega => SMALL_LETTER_OMEGA,
-            Cyrillic::CapitalLetterYat => CAPITAL_LETTER_YAT,
-            Cyrillic::SmallLetterYat => SMALL_LETTER_YAT,
-            Cyrillic::CapitalLetterIotifiedE => CAPITAL_LETTER_IOTIFIED_E,
-            Cyrillic::SmallLetterIotifiedE => SMALL_LETTER_IOTIFIED_E,
-            Cyrillic::CapitalLetterLittleYus => CAPITAL_LETTER_LITTLE_YUS,
-            Cyrillic::SmallLetterLittleYus => SMALL_LETTER_LITTLE_YUS,
-            Cyrillic::CapitalLetterIotifiedLittleYus => CAPITAL_LETTER_IOTIFIED_LITTLE_YUS,
-            Cyrillic::SmallLetterIotifiedLittleYus => SMALL_LETTER_IOTIFIED_LITTLE_YUS,
-            Cyrillic::CapitalLetterBigYus => CAPITAL_LETTER_BIG_YUS,
-            Cyrillic::SmallLetterBigYus => SMALL_LETTER_BIG_YUS,
-            Cyrillic::CapitalLetterIotifiedBigYus => CAPITAL_LETTER_IOTIFIED_BIG_YUS,
-            Cyrillic::SmallLetterIotifiedBigYus => SMALL_LETTER_IOTIFIED_BIG_YUS,
-            Cyrillic::CapitalLetterKsi => CAPITAL_LETTER_KSI,
-            Cyrillic::SmallLetterKsi => SMALL_LETTER_KSI,
-            Cyrillic::CapitalLetterPsi => CAPITAL_LETTER_PSI,
-            Cyrillic::SmallLetterPsi => SMALL_LETTER_PSI,
-            Cyrillic::CapitalLetterFita => CAPITAL_LETTER_FITA,
-            Cyrillic::SmallLetterFita => SMALL_LETTER_FITA,
-            Cyrillic::CapitalLetterIzhitsa => CAPITAL_LETTER_IZHITSA,
-            Cyrillic::SmallLetterIzhitsa => SMALL_LETTER_IZHITSA,
-            Cyrillic::CapitalLetterIzhitsaWithDoubleGraveAccent => CAPITAL_LETTER_IZHITSA_WITH_DOUBLE_GRAVE_ACCENT,
-            Cyrillic::SmallLetterIzhitsaWithDoubleGraveAccent => SMALL_LETTER_IZHITSA_WITH_DOUBLE_GRAVE_ACCENT,
-            Cyrillic::CapitalLetterUk => CAPITAL_LETTER_UK,
-            Cyrillic::SmallLetterUk => SMALL_LETTER_UK,
-            Cyrillic::CapitalLetterRoundOmega => CAPITAL_LETTER_ROUND_OMEGA,
-            Cyrillic::SmallLetterRoundOmega => SMALL_LETTER_ROUND_OMEGA,
-            Cyrillic::CapitalLetterOmegaWithTitlo => CAPITAL_LETTER_OMEGA_WITH_TITLO,
-            Cyrillic::SmallLetterOmegaWithTitlo => SMALL_LETTER_OMEGA_WITH_TITLO,
-            Cyrillic::CapitalLetterOt => CAPITAL_LETTER_OT,
-            Cyrillic::SmallLetterOt => SMALL_LETTER_OT,
-            Cyrillic::CapitalLetterKoppa => CAPITAL_LETTER_KOPPA,
-            Cyrillic::SmallLetterKoppa => SMALL_LETTER_KOPPA,
-            Cyrillic::ThousandsSign => THOUSANDS_SIGN,
-            Cyrillic::CombiningTitlo => COMBINING_TITLO,
-            Cyrillic::CombiningPalatalization => COMBINING_PALATALIZATION,
-            Cyrillic::CombiningDasiaPneumata => COMBINING_DASIA_PNEUMATA,
-            Cyrillic::CombiningPsiliPneumata => COMBINING_PSILI_PNEUMATA,
-            Cyrillic::CombiningPokrytie => COMBINING_POKRYTIE,
-            Cyrillic::CombiningHundredThousandsSign => COMBINING_HUNDRED_THOUSANDS_SIGN,
-            Cyrillic::CombiningMillionsSign => COMBINING_MILLIONS_SIGN,
-            Cyrillic::CapitalLetterShortIWithTail => CAPITAL_LETTER_SHORT_I_WITH_TAIL,
-            Cyrillic::SmallLetterShortIWithTail => SMALL_LETTER_SHORT_I_WITH_TAIL,
-            Cyrillic::CapitalLetterSemisoftSign => CAPITAL_LETTER_SEMISOFT_SIGN,
-            Cyrillic::SmallLetterSemisoftSign => SMALL_LETTER_SEMISOFT_SIGN,
-            Cyrillic::CapitalLetterErWithTick => CAPITAL_LETTER_ER_WITH_TICK,
-            Cyrillic::SmallLetterErWithTick => SMALL_LETTER_ER_WITH_TICK,
-            Cyrillic::CapitalLetterGheWithUpturn => CAPITAL_LETTER_GHE_WITH_UPTURN,
-            Cyrillic::SmallLetterGheWithUpturn => SMALL_LETTER_GHE_WITH_UPTURN,
-            Cyrillic::CapitalLetterGheWithStroke => CAPITAL_LETTER_GHE_WITH_STROKE,
-            Cyrillic::SmallLetterGheWithStroke => SMALL_LETTER_GHE_WITH_STROKE,
-            Cyrillic::CapitalLetterGheWithMiddleHook => CAPITAL_LETTER_GHE_WITH_MIDDLE_HOOK,
-            Cyrillic::SmallLetterGheWithMiddleHook => SMALL_LETTER_GHE_WITH_MIDDLE_HOOK,
-            Cyrillic::CapitalLetterZheWithDescender => CAPITAL_LETTER_ZHE_WITH_DESCENDER,
-            Cyrillic::SmallLetterZheWithDescender => SMALL_LETTER_ZHE_WITH_DESCENDER,
-            Cyrillic::CapitalLetterZeWithDescender => CAPITAL_LETTER_ZE_WITH_DESCENDER,
-            Cyrillic::SmallLetterZeWithDescender => SMALL_LETTER_ZE_WITH_DESCENDER,
-            Cyrillic::CapitalLetterKaWithDescender => CAPITAL_LETTER_KA_WITH_DESCENDER,
-            Cyrillic::SmallLetterKaWithDescender => SMALL_LETTER_KA_WITH_DESCENDER,
-            Cyrillic::CapitalLetterKaWithVerticalStroke => CAPITAL_LETTER_KA_WITH_VERTICAL_STROKE,
-            Cyrillic::SmallLetterKaWithVerticalStroke => SMALL_LETTER_KA_WITH_VERTICAL_STROKE,
-            Cyrillic::CapitalLetterKaWithStroke => CAPITAL_LETTER_KA_WITH_STROKE,
-            Cyrillic::SmallLetterKaWithStroke => SMALL_LETTER_KA_WITH_STROKE,
-            Cyrillic::CapitalLetterBashkirKa => CAPITAL_LETTER_BASHKIR_KA,
-            Cyrillic::SmallLetterBashkirKa => SMALL_LETTER_BASHKIR_KA,
-            Cyrillic::CapitalLetterEnWithDescender => CAPITAL_LETTER_EN_WITH_DESCENDER,
-            Cyrillic::SmallLetterEnWithDescender => SMALL_LETTER_EN_WITH_DESCENDER,
-            Cyrillic::CapitalLigatureEnGhe => CAPITAL_LIGATURE_EN_GHE,
-            Cyrillic::SmallLigatureEnGhe => SMALL_LIGATURE_EN_GHE,
-            Cyrillic::CapitalLetterPeWithMiddleHook => CAPITAL_LETTER_PE_WITH_MIDDLE_HOOK,
-            Cyrillic::SmallLetterPeWithMiddleHook => SMALL_LETTER_PE_WITH_MIDDLE_HOOK,
-            Cyrillic::CapitalLetterAbkhasianHa => CAPITAL_LETTER_ABKHASIAN_HA,
-            Cyrillic::SmallLetterAbkhasianHa => SMALL_LETTER_ABKHASIAN_HA,
-            Cyrillic::CapitalLetterEsWithDescender => CAPITAL_LETTER_ES_WITH_DESCENDER,
-            Cyrillic::SmallLetterEsWithDescender => SMALL_LETTER_ES_WITH_DESCENDER,
-            Cyrillic::CapitalLetterTeWithDescender => CAPITAL_LETTER_TE_WITH_DESCENDER,
-            Cyrillic::SmallLetterTeWithDescender => SMALL_LETTER_TE_WITH_DESCENDER,
-            Cyrillic::CapitalLetterStraightU => CAPITAL_LETTER_STRAIGHT_U,
-            Cyrillic::SmallLetterStraightU => SMALL_LETTER_STRAIGHT_U,
-            Cyrillic::CapitalLetterStraightUWithStroke => CAPITAL_LETTER_STRAIGHT_U_WITH_STROKE,
-            Cyrillic::SmallLetterStraightUWithStroke => SMALL_LETTER_STRAIGHT_U_WITH_STROKE,
-            Cyrillic::CapitalLetterHaWithDescender => CAPITAL_LETTER_HA_WITH_DESCENDER,
-            Cyrillic::SmallLetterHaWithDescender => SMALL_LETTER_HA_WITH_DESCENDER,
-            Cyrillic::CapitalLigatureTeTse => CAPITAL_LIGATURE_TE_TSE,
-            Cyrillic::SmallLigatureTeTse => SMALL_LIGATURE_TE_TSE,
-            Cyrillic::CapitalLetterCheWithDescender => CAPITAL_LETTER_CHE_WITH_DESCENDER,
-            Cyrillic::SmallLetterCheWithDescender => SMALL_LETTER_CHE_WITH_DESCENDER,
-            Cyrillic::CapitalLetterCheWithVerticalStroke => CAPITAL_LETTER_CHE_WITH_VERTICAL_STROKE,
-            Cyrillic::SmallLetterCheWithVerticalStroke => SMALL_LETTER_CHE_WITH_VERTICAL_STROKE,
-            Cyrillic::CapitalLetterShha => CAPITAL_LETTER_SHHA,
-            Cyrillic::SmallLetterShha => SMALL_LETTER_SHHA,
-            Cyrillic::CapitalLetterAbkhasianChe => CAPITAL_LETTER_ABKHASIAN_CHE,
-            Cyrillic::SmallLetterAbkhasianChe => SMALL_LETTER_ABKHASIAN_CHE,
-            Cyrillic::CapitalLetterAbkhasianCheWithDescender => CAPITAL_LETTER_ABKHASIAN_CHE_WITH_DESCENDER,
-            Cyrillic::SmallLetterAbkhasianCheWithDescender => SMALL_LETTER_ABKHASIAN_CHE_WITH_DESCENDER,
-            Cyrillic::LetterPalochka => LETTER_PALOCHKA,
-            Cyrillic::CapitalLetterZheWithBreve => CAPITAL_LETTER_ZHE_WITH_BREVE,
-            Cyrillic::SmallLetterZheWithBreve => SMALL_LETTER_ZHE_WITH_BREVE,
-            Cyrillic::CapitalLetterKaWithHook => CAPITAL_LETTER_KA_WITH_HOOK,
-            Cyrillic::SmallLetterKaWithHook => SMALL_LETTER_KA_WITH_HOOK,
-            Cyrillic::CapitalLetterElWithTail => CAPITAL_LETTER_EL_WITH_TAIL,
-            Cyrillic::SmallLetterElWithTail => SMALL_LETTER_EL_WITH_TAIL,
-            Cyrillic::CapitalLetterEnWithHook => CAPITAL_LETTER_EN_WITH_HOOK,
-            Cyrillic::SmallLetterEnWithHook => SMALL_LETTER_EN_WITH_HOOK,
-            Cyrillic::CapitalLetterEnWithTail => CAPITAL_LETTER_EN_WITH_TAIL,
-            Cyrillic::SmallLetterEnWithTail => SMALL_LETTER_EN_WITH_TAIL,
-            Cyrillic::CapitalLetterKhakassianChe => CAPITAL_LETTER_KHAKASSIAN_CHE,
-            Cyrillic::SmallLetterKhakassianChe => SMALL_LETTER_KHAKASSIAN_CHE,
-            Cyrillic::CapitalLetterEmWithTail => CAPITAL_LETTER_EM_WITH_TAIL,
-            Cyrillic::SmallLetterEmWithTail => SMALL_LETTER_EM_WITH_TAIL,
-            Cyrillic::SmallLetterPalochka => SMALL_LETTER_PALOCHKA,
-            Cyrillic::CapitalLetterAWithBreve => CAPITAL_LETTER_A_WITH_BREVE,
-            Cyrillic::SmallLetterAWithBreve => SMALL_LETTER_A_WITH_BREVE,
-            Cyrillic::CapitalLetterAWithDiaeresis => CAPITAL_LETTER_A_WITH_DIAERESIS,
-            Cyrillic::SmallLetterAWithDiaeresis => SMALL_LETTER_A_WITH_DIAERESIS,
-            Cyrillic::CapitalLigatureAIe => CAPITAL_LIGATURE_A_IE,
-            Cyrillic::SmallLigatureAIe => SMALL_LIGATURE_A_IE,
-            Cyrillic::CapitalLetterIeWithBreve => CAPITAL_LETTER_IE_WITH_BREVE,
-            Cyrillic::SmallLetterIeWithBreve => SMALL_LETTER_IE_WITH_BREVE,
-            Cyrillic::CapitalLetterSchwa => CAPITAL_LETTER_SCHWA,
-            Cyrillic::SmallLetterSchwa => SMALL_LETTER_SCHWA,
-            Cyrillic::CapitalLetterSchwaWithDiaeresis => CAPITAL_LETTER_SCHWA_WITH_DIAERESIS,
-            Cyrillic::SmallLetterSchwaWithDiaeresis => SMALL_LETTER_SCHWA_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterZheWithDiaeresis => CAPITAL_LETTER_ZHE_WITH_DIAERESIS,
-            Cyrillic::SmallLetterZheWithDiaeresis => SMALL_LETTER_ZHE_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterZeWithDiaeresis => CAPITAL_LETTER_ZE_WITH_DIAERESIS,
-            Cyrillic::SmallLetterZeWithDiaeresis => SMALL_LETTER_ZE_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterAbkhasianDze => CAPITAL_LETTER_ABKHASIAN_DZE,
-            Cyrillic::SmallLetterAbkhasianDze => SMALL_LETTER_ABKHASIAN_DZE,
-            Cyrillic::CapitalLetterIWithMacron => CAPITAL_LETTER_I_WITH_MACRON,
-            Cyrillic::SmallLetterIWithMacron => SMALL_LETTER_I_WITH_MACRON,
-            Cyrillic::CapitalLetterIWithDiaeresis => CAPITAL_LETTER_I_WITH_DIAERESIS,
-            Cyrillic::SmallLetterIWithDiaeresis => SMALL_LETTER_I_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterOWithDiaeresis => CAPITAL_LETTER_O_WITH_DIAERESIS,
-            Cyrillic::SmallLetterOWithDiaeresis => SMALL_LETTER_O_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterBarredO => CAPITAL_LETTER_BARRED_O,
-            Cyrillic::SmallLetterBarredO => SMALL_LETTER_BARRED_O,
-            Cyrillic::CapitalLetterBarredOWithDiaeresis => CAPITAL_LETTER_BARRED_O_WITH_DIAERESIS,
-            Cyrillic::SmallLetterBarredOWithDiaeresis => SMALL_LETTER_BARRED_O_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterEWithDiaeresis => CAPITAL_LETTER_E_WITH_DIAERESIS,
-            Cyrillic::SmallLetterEWithDiaeresis => SMALL_LETTER_E_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterUWithMacron => CAPITAL_LETTER_U_WITH_MACRON,
-            Cyrillic::SmallLetterUWithMacron => SMALL_LETTER_U_WITH_MACRON,
-            Cyrillic::CapitalLetterUWithDiaeresis => CAPITAL_LETTER_U_WITH_DIAERESIS,
-            Cyrillic::SmallLetterUWithDiaeresis => SMALL_LETTER_U_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterUWithDoubleAcute => CAPITAL_LETTER_U_WITH_DOUBLE_ACUTE,
-            Cyrillic::SmallLetterUWithDoubleAcute => SMALL_LETTER_U_WITH_DOUBLE_ACUTE,
-            Cyrillic::CapitalLetterCheWithDiaeresis => CAPITAL_LETTER_CHE_WITH_DIAERESIS,
-            Cyrillic::SmallLetterCheWithDiaeresis => SMALL_LETTER_CHE_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterGheWithDescender => CAPITAL_LETTER_GHE_WITH_DESCENDER,
-            Cyrillic::SmallLetterGheWithDescender => SMALL_LETTER_GHE_WITH_DESCENDER,
-            Cyrillic::CapitalLetterYeruWithDiaeresis => CAPITAL_LETTER_YERU_WITH_DIAERESIS,
-            Cyrillic::SmallLetterYeruWithDiaeresis => SMALL_LETTER_YERU_WITH_DIAERESIS,
-            Cyrillic::CapitalLetterGheWithStrokeAndHook => CAPITAL_LETTER_GHE_WITH_STROKE_AND_HOOK,
-            Cyrillic::SmallLetterGheWithStrokeAndHook => SMALL_LETTER_GHE_WITH_STROKE_AND_HOOK,
-            Cyrillic::CapitalLetterHaWithHook => CAPITAL_LETTER_HA_WITH_HOOK,
-            Cyrillic::SmallLetterHaWithHook => SMALL_LETTER_HA_WITH_HOOK,
-            Cyrillic::CapitalLetterHaWithStroke => CAPITAL_LETTER_HA_WITH_STROKE,
+            Cyrillic::CapitalLetterIeWithGrave => 'Ѐ',
+            Cyrillic::CapitalLetterIo => 'Ё',
+            Cyrillic::CapitalLetterDje => 'Ђ',
+            Cyrillic::CapitalLetterGje => 'Ѓ',
+            Cyrillic::CapitalLetterUkrainianIe => 'Є',
+            Cyrillic::CapitalLetterDze => 'Ѕ',
+            Cyrillic::CapitalLetterByelorussianDashUkrainianI => 'І',
+            Cyrillic::CapitalLetterYi => 'Ї',
+            Cyrillic::CapitalLetterJe => 'Ј',
+            Cyrillic::CapitalLetterLje => 'Љ',
+            Cyrillic::CapitalLetterNje => 'Њ',
+            Cyrillic::CapitalLetterTshe => 'Ћ',
+            Cyrillic::CapitalLetterKje => 'Ќ',
+            Cyrillic::CapitalLetterIWithGrave => 'Ѝ',
+            Cyrillic::CapitalLetterShortU => 'Ў',
+            Cyrillic::CapitalLetterDzhe => 'Џ',
+            Cyrillic::CapitalLetterA => 'А',
+            Cyrillic::CapitalLetterBe => 'Б',
+            Cyrillic::CapitalLetterVe => 'В',
+            Cyrillic::CapitalLetterGhe => 'Г',
+            Cyrillic::CapitalLetterDe => 'Д',
+            Cyrillic::CapitalLetterIe => 'Е',
+            Cyrillic::CapitalLetterZhe => 'Ж',
+            Cyrillic::CapitalLetterZe => 'З',
+            Cyrillic::CapitalLetterI => 'И',
+            Cyrillic::CapitalLetterShortI => 'Й',
+            Cyrillic::CapitalLetterKa => 'К',
+            Cyrillic::CapitalLetterEl => 'Л',
+            Cyrillic::CapitalLetterEm => 'М',
+            Cyrillic::CapitalLetterEn => 'Н',
+            Cyrillic::CapitalLetterO => 'О',
+            Cyrillic::CapitalLetterPe => 'П',
+            Cyrillic::CapitalLetterEr => 'Р',
+            Cyrillic::CapitalLetterEs => 'С',
+            Cyrillic::CapitalLetterTe => 'Т',
+            Cyrillic::CapitalLetterU => 'У',
+            Cyrillic::CapitalLetterEf => 'Ф',
+            Cyrillic::CapitalLetterHa => 'Х',
+            Cyrillic::CapitalLetterTse => 'Ц',
+            Cyrillic::CapitalLetterChe => 'Ч',
+            Cyrillic::CapitalLetterSha => 'Ш',
+            Cyrillic::CapitalLetterShcha => 'Щ',
+            Cyrillic::CapitalLetterHardSign => 'Ъ',
+            Cyrillic::CapitalLetterYeru => 'Ы',
+            Cyrillic::CapitalLetterSoftSign => 'Ь',
+            Cyrillic::CapitalLetterE => 'Э',
+            Cyrillic::CapitalLetterYu => 'Ю',
+            Cyrillic::CapitalLetterYa => 'Я',
+            Cyrillic::SmallLetterA => 'а',
+            Cyrillic::SmallLetterBe => 'б',
+            Cyrillic::SmallLetterVe => 'в',
+            Cyrillic::SmallLetterGhe => 'г',
+            Cyrillic::SmallLetterDe => 'д',
+            Cyrillic::SmallLetterIe => 'е',
+            Cyrillic::SmallLetterZhe => 'ж',
+            Cyrillic::SmallLetterZe => 'з',
+            Cyrillic::SmallLetterI => 'и',
+            Cyrillic::SmallLetterShortI => 'й',
+            Cyrillic::SmallLetterKa => 'к',
+            Cyrillic::SmallLetterEl => 'л',
+            Cyrillic::SmallLetterEm => 'м',
+            Cyrillic::SmallLetterEn => 'н',
+            Cyrillic::SmallLetterO => 'о',
+            Cyrillic::SmallLetterPe => 'п',
+            Cyrillic::SmallLetterEr => 'р',
+            Cyrillic::SmallLetterEs => 'с',
+            Cyrillic::SmallLetterTe => 'т',
+            Cyrillic::SmallLetterU => 'у',
+            Cyrillic::SmallLetterEf => 'ф',
+            Cyrillic::SmallLetterHa => 'х',
+            Cyrillic::SmallLetterTse => 'ц',
+            Cyrillic::SmallLetterChe => 'ч',
+            Cyrillic::SmallLetterSha => 'ш',
+            Cyrillic::SmallLetterShcha => 'щ',
+            Cyrillic::SmallLetterHardSign => 'ъ',
+            Cyrillic::SmallLetterYeru => 'ы',
+            Cyrillic::SmallLetterSoftSign => 'ь',
+            Cyrillic::SmallLetterE => 'э',
+            Cyrillic::SmallLetterYu => 'ю',
+            Cyrillic::SmallLetterYa => 'я',
+            Cyrillic::SmallLetterIeWithGrave => 'ѐ',
+            Cyrillic::SmallLetterIo => 'ё',
+            Cyrillic::SmallLetterDje => 'ђ',
+            Cyrillic::SmallLetterGje => 'ѓ',
+            Cyrillic::SmallLetterUkrainianIe => 'є',
+            Cyrillic::SmallLetterDze => 'ѕ',
+            Cyrillic::SmallLetterByelorussianDashUkrainianI => 'і',
+            Cyrillic::SmallLetterYi => 'ї',
+            Cyrillic::SmallLetterJe => 'ј',
+            Cyrillic::SmallLetterLje => 'љ',
+            Cyrillic::SmallLetterNje => 'њ',
+            Cyrillic::SmallLetterTshe => 'ћ',
+            Cyrillic::SmallLetterKje => 'ќ',
+            Cyrillic::SmallLetterIWithGrave => 'ѝ',
+            Cyrillic::SmallLetterShortU => 'ў',
+            Cyrillic::SmallLetterDzhe => 'џ',
+            Cyrillic::CapitalLetterOmega => 'Ѡ',
+            Cyrillic::SmallLetterOmega => 'ѡ',
+            Cyrillic::CapitalLetterYat => 'Ѣ',
+            Cyrillic::SmallLetterYat => 'ѣ',
+            Cyrillic::CapitalLetterIotifiedE => 'Ѥ',
+            Cyrillic::SmallLetterIotifiedE => 'ѥ',
+            Cyrillic::CapitalLetterLittleYus => 'Ѧ',
+            Cyrillic::SmallLetterLittleYus => 'ѧ',
+            Cyrillic::CapitalLetterIotifiedLittleYus => 'Ѩ',
+            Cyrillic::SmallLetterIotifiedLittleYus => 'ѩ',
+            Cyrillic::CapitalLetterBigYus => 'Ѫ',
+            Cyrillic::SmallLetterBigYus => 'ѫ',
+            Cyrillic::CapitalLetterIotifiedBigYus => 'Ѭ',
+            Cyrillic::SmallLetterIotifiedBigYus => 'ѭ',
+            Cyrillic::CapitalLetterKsi => 'Ѯ',
+            Cyrillic::SmallLetterKsi => 'ѯ',
+            Cyrillic::CapitalLetterPsi => 'Ѱ',
+            Cyrillic::SmallLetterPsi => 'ѱ',
+            Cyrillic::CapitalLetterFita => 'Ѳ',
+            Cyrillic::SmallLetterFita => 'ѳ',
+            Cyrillic::CapitalLetterIzhitsa => 'Ѵ',
+            Cyrillic::SmallLetterIzhitsa => 'ѵ',
+            Cyrillic::CapitalLetterIzhitsaWithDoubleGraveAccent => 'Ѷ',
+            Cyrillic::SmallLetterIzhitsaWithDoubleGraveAccent => 'ѷ',
+            Cyrillic::CapitalLetterUk => 'Ѹ',
+            Cyrillic::SmallLetterUk => 'ѹ',
+            Cyrillic::CapitalLetterRoundOmega => 'Ѻ',
+            Cyrillic::SmallLetterRoundOmega => 'ѻ',
+            Cyrillic::CapitalLetterOmegaWithTitlo => 'Ѽ',
+            Cyrillic::SmallLetterOmegaWithTitlo => 'ѽ',
+            Cyrillic::CapitalLetterOt => 'Ѿ',
+            Cyrillic::SmallLetterOt => 'ѿ',
+            Cyrillic::CapitalLetterKoppa => 'Ҁ',
+            Cyrillic::SmallLetterKoppa => 'ҁ',
+            Cyrillic::ThousandsSign => '҂',
+            Cyrillic::CombiningTitlo => '҃',
+            Cyrillic::CombiningPalatalization => '҄',
+            Cyrillic::CombiningDasiaPneumata => '҅',
+            Cyrillic::CombiningPsiliPneumata => '҆',
+            Cyrillic::CombiningPokrytie => '҇',
+            Cyrillic::CombiningHundredThousandsSign => '҈',
+            Cyrillic::CombiningMillionsSign => '҉',
+            Cyrillic::CapitalLetterShortIWithTail => 'Ҋ',
+            Cyrillic::SmallLetterShortIWithTail => 'ҋ',
+            Cyrillic::CapitalLetterSemisoftSign => 'Ҍ',
+            Cyrillic::SmallLetterSemisoftSign => 'ҍ',
+            Cyrillic::CapitalLetterErWithTick => 'Ҏ',
+            Cyrillic::SmallLetterErWithTick => 'ҏ',
+            Cyrillic::CapitalLetterGheWithUpturn => 'Ґ',
+            Cyrillic::SmallLetterGheWithUpturn => 'ґ',
+            Cyrillic::CapitalLetterGheWithStroke => 'Ғ',
+            Cyrillic::SmallLetterGheWithStroke => 'ғ',
+            Cyrillic::CapitalLetterGheWithMiddleHook => 'Ҕ',
+            Cyrillic::SmallLetterGheWithMiddleHook => 'ҕ',
+            Cyrillic::CapitalLetterZheWithDescender => 'Җ',
+            Cyrillic::SmallLetterZheWithDescender => 'җ',
+            Cyrillic::CapitalLetterZeWithDescender => 'Ҙ',
+            Cyrillic::SmallLetterZeWithDescender => 'ҙ',
+            Cyrillic::CapitalLetterKaWithDescender => 'Қ',
+            Cyrillic::SmallLetterKaWithDescender => 'қ',
+            Cyrillic::CapitalLetterKaWithVerticalStroke => 'Ҝ',
+            Cyrillic::SmallLetterKaWithVerticalStroke => 'ҝ',
+            Cyrillic::CapitalLetterKaWithStroke => 'Ҟ',
+            Cyrillic::SmallLetterKaWithStroke => 'ҟ',
+            Cyrillic::CapitalLetterBashkirKa => 'Ҡ',
+            Cyrillic::SmallLetterBashkirKa => 'ҡ',
+            Cyrillic::CapitalLetterEnWithDescender => 'Ң',
+            Cyrillic::SmallLetterEnWithDescender => 'ң',
+            Cyrillic::CapitalLigatureEnGhe => 'Ҥ',
+            Cyrillic::SmallLigatureEnGhe => 'ҥ',
+            Cyrillic::CapitalLetterPeWithMiddleHook => 'Ҧ',
+            Cyrillic::SmallLetterPeWithMiddleHook => 'ҧ',
+            Cyrillic::CapitalLetterAbkhasianHa => 'Ҩ',
+            Cyrillic::SmallLetterAbkhasianHa => 'ҩ',
+            Cyrillic::CapitalLetterEsWithDescender => 'Ҫ',
+            Cyrillic::SmallLetterEsWithDescender => 'ҫ',
+            Cyrillic::CapitalLetterTeWithDescender => 'Ҭ',
+            Cyrillic::SmallLetterTeWithDescender => 'ҭ',
+            Cyrillic::CapitalLetterStraightU => 'Ү',
+            Cyrillic::SmallLetterStraightU => 'ү',
+            Cyrillic::CapitalLetterStraightUWithStroke => 'Ұ',
+            Cyrillic::SmallLetterStraightUWithStroke => 'ұ',
+            Cyrillic::CapitalLetterHaWithDescender => 'Ҳ',
+            Cyrillic::SmallLetterHaWithDescender => 'ҳ',
+            Cyrillic::CapitalLigatureTeTse => 'Ҵ',
+            Cyrillic::SmallLigatureTeTse => 'ҵ',
+            Cyrillic::CapitalLetterCheWithDescender => 'Ҷ',
+            Cyrillic::SmallLetterCheWithDescender => 'ҷ',
+            Cyrillic::CapitalLetterCheWithVerticalStroke => 'Ҹ',
+            Cyrillic::SmallLetterCheWithVerticalStroke => 'ҹ',
+            Cyrillic::CapitalLetterShha => 'Һ',
+            Cyrillic::SmallLetterShha => 'һ',
+            Cyrillic::CapitalLetterAbkhasianChe => 'Ҽ',
+            Cyrillic::SmallLetterAbkhasianChe => 'ҽ',
+            Cyrillic::CapitalLetterAbkhasianCheWithDescender => 'Ҿ',
+            Cyrillic::SmallLetterAbkhasianCheWithDescender => 'ҿ',
+            Cyrillic::LetterPalochka => 'Ӏ',
+            Cyrillic::CapitalLetterZheWithBreve => 'Ӂ',
+            Cyrillic::SmallLetterZheWithBreve => 'ӂ',
+            Cyrillic::CapitalLetterKaWithHook => 'Ӄ',
+            Cyrillic::SmallLetterKaWithHook => 'ӄ',
+            Cyrillic::CapitalLetterElWithTail => 'Ӆ',
+            Cyrillic::SmallLetterElWithTail => 'ӆ',
+            Cyrillic::CapitalLetterEnWithHook => 'Ӈ',
+            Cyrillic::SmallLetterEnWithHook => 'ӈ',
+            Cyrillic::CapitalLetterEnWithTail => 'Ӊ',
+            Cyrillic::SmallLetterEnWithTail => 'ӊ',
+            Cyrillic::CapitalLetterKhakassianChe => 'Ӌ',
+            Cyrillic::SmallLetterKhakassianChe => 'ӌ',
+            Cyrillic::CapitalLetterEmWithTail => 'Ӎ',
+            Cyrillic::SmallLetterEmWithTail => 'ӎ',
+            Cyrillic::SmallLetterPalochka => 'ӏ',
+            Cyrillic::CapitalLetterAWithBreve => 'Ӑ',
+            Cyrillic::SmallLetterAWithBreve => 'ӑ',
+            Cyrillic::CapitalLetterAWithDiaeresis => 'Ӓ',
+            Cyrillic::SmallLetterAWithDiaeresis => 'ӓ',
+            Cyrillic::CapitalLigatureAIe => 'Ӕ',
+            Cyrillic::SmallLigatureAIe => 'ӕ',
+            Cyrillic::CapitalLetterIeWithBreve => 'Ӗ',
+            Cyrillic::SmallLetterIeWithBreve => 'ӗ',
+            Cyrillic::CapitalLetterSchwa => 'Ә',
+            Cyrillic::SmallLetterSchwa => 'ә',
+            Cyrillic::CapitalLetterSchwaWithDiaeresis => 'Ӛ',
+            Cyrillic::SmallLetterSchwaWithDiaeresis => 'ӛ',
+            Cyrillic::CapitalLetterZheWithDiaeresis => 'Ӝ',
+            Cyrillic::SmallLetterZheWithDiaeresis => 'ӝ',
+            Cyrillic::CapitalLetterZeWithDiaeresis => 'Ӟ',
+            Cyrillic::SmallLetterZeWithDiaeresis => 'ӟ',
+            Cyrillic::CapitalLetterAbkhasianDze => 'Ӡ',
+            Cyrillic::SmallLetterAbkhasianDze => 'ӡ',
+            Cyrillic::CapitalLetterIWithMacron => 'Ӣ',
+            Cyrillic::SmallLetterIWithMacron => 'ӣ',
+            Cyrillic::CapitalLetterIWithDiaeresis => 'Ӥ',
+            Cyrillic::SmallLetterIWithDiaeresis => 'ӥ',
+            Cyrillic::CapitalLetterOWithDiaeresis => 'Ӧ',
+            Cyrillic::SmallLetterOWithDiaeresis => 'ӧ',
+            Cyrillic::CapitalLetterBarredO => 'Ө',
+            Cyrillic::SmallLetterBarredO => 'ө',
+            Cyrillic::CapitalLetterBarredOWithDiaeresis => 'Ӫ',
+            Cyrillic::SmallLetterBarredOWithDiaeresis => 'ӫ',
+            Cyrillic::CapitalLetterEWithDiaeresis => 'Ӭ',
+            Cyrillic::SmallLetterEWithDiaeresis => 'ӭ',
+            Cyrillic::CapitalLetterUWithMacron => 'Ӯ',
+            Cyrillic::SmallLetterUWithMacron => 'ӯ',
+            Cyrillic::CapitalLetterUWithDiaeresis => 'Ӱ',
+            Cyrillic::SmallLetterUWithDiaeresis => 'ӱ',
+            Cyrillic::CapitalLetterUWithDoubleAcute => 'Ӳ',
+            Cyrillic::SmallLetterUWithDoubleAcute => 'ӳ',
+            Cyrillic::CapitalLetterCheWithDiaeresis => 'Ӵ',
+            Cyrillic::SmallLetterCheWithDiaeresis => 'ӵ',
+            Cyrillic::CapitalLetterGheWithDescender => 'Ӷ',
+            Cyrillic::SmallLetterGheWithDescender => 'ӷ',
+            Cyrillic::CapitalLetterYeruWithDiaeresis => 'Ӹ',
+            Cyrillic::SmallLetterYeruWithDiaeresis => 'ӹ',
+            Cyrillic::CapitalLetterGheWithStrokeAndHook => 'Ӻ',
+            Cyrillic::SmallLetterGheWithStrokeAndHook => 'ӻ',
+            Cyrillic::CapitalLetterHaWithHook => 'Ӽ',
+            Cyrillic::SmallLetterHaWithHook => 'ӽ',
+            Cyrillic::CapitalLetterHaWithStroke => 'Ӿ',
         }
     }
 }
@@ -1293,263 +779,262 @@ impl Into<char> for Cyrillic {
 impl std::convert::TryFrom<char> for Cyrillic {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CAPITAL_LETTER_IE_WITH_GRAVE => Ok(Cyrillic::CapitalLetterIeWithGrave),
-            CAPITAL_LETTER_IO => Ok(Cyrillic::CapitalLetterIo),
-            CAPITAL_LETTER_DJE => Ok(Cyrillic::CapitalLetterDje),
-            CAPITAL_LETTER_GJE => Ok(Cyrillic::CapitalLetterGje),
-            CAPITAL_LETTER_UKRAINIAN_IE => Ok(Cyrillic::CapitalLetterUkrainianIe),
-            CAPITAL_LETTER_DZE => Ok(Cyrillic::CapitalLetterDze),
-            CAPITAL_LETTER_BYELORUSSIAN_DASH_UKRAINIAN_I => Ok(Cyrillic::CapitalLetterByelorussianDashUkrainianI),
-            CAPITAL_LETTER_YI => Ok(Cyrillic::CapitalLetterYi),
-            CAPITAL_LETTER_JE => Ok(Cyrillic::CapitalLetterJe),
-            CAPITAL_LETTER_LJE => Ok(Cyrillic::CapitalLetterLje),
-            CAPITAL_LETTER_NJE => Ok(Cyrillic::CapitalLetterNje),
-            CAPITAL_LETTER_TSHE => Ok(Cyrillic::CapitalLetterTshe),
-            CAPITAL_LETTER_KJE => Ok(Cyrillic::CapitalLetterKje),
-            CAPITAL_LETTER_I_WITH_GRAVE => Ok(Cyrillic::CapitalLetterIWithGrave),
-            CAPITAL_LETTER_SHORT_U => Ok(Cyrillic::CapitalLetterShortU),
-            CAPITAL_LETTER_DZHE => Ok(Cyrillic::CapitalLetterDzhe),
-            CAPITAL_LETTER_A => Ok(Cyrillic::CapitalLetterA),
-            CAPITAL_LETTER_BE => Ok(Cyrillic::CapitalLetterBe),
-            CAPITAL_LETTER_VE => Ok(Cyrillic::CapitalLetterVe),
-            CAPITAL_LETTER_GHE => Ok(Cyrillic::CapitalLetterGhe),
-            CAPITAL_LETTER_DE => Ok(Cyrillic::CapitalLetterDe),
-            CAPITAL_LETTER_IE => Ok(Cyrillic::CapitalLetterIe),
-            CAPITAL_LETTER_ZHE => Ok(Cyrillic::CapitalLetterZhe),
-            CAPITAL_LETTER_ZE => Ok(Cyrillic::CapitalLetterZe),
-            CAPITAL_LETTER_I => Ok(Cyrillic::CapitalLetterI),
-            CAPITAL_LETTER_SHORT_I => Ok(Cyrillic::CapitalLetterShortI),
-            CAPITAL_LETTER_KA => Ok(Cyrillic::CapitalLetterKa),
-            CAPITAL_LETTER_EL => Ok(Cyrillic::CapitalLetterEl),
-            CAPITAL_LETTER_EM => Ok(Cyrillic::CapitalLetterEm),
-            CAPITAL_LETTER_EN => Ok(Cyrillic::CapitalLetterEn),
-            CAPITAL_LETTER_O => Ok(Cyrillic::CapitalLetterO),
-            CAPITAL_LETTER_PE => Ok(Cyrillic::CapitalLetterPe),
-            CAPITAL_LETTER_ER => Ok(Cyrillic::CapitalLetterEr),
-            CAPITAL_LETTER_ES => Ok(Cyrillic::CapitalLetterEs),
-            CAPITAL_LETTER_TE => Ok(Cyrillic::CapitalLetterTe),
-            CAPITAL_LETTER_U => Ok(Cyrillic::CapitalLetterU),
-            CAPITAL_LETTER_EF => Ok(Cyrillic::CapitalLetterEf),
-            CAPITAL_LETTER_HA => Ok(Cyrillic::CapitalLetterHa),
-            CAPITAL_LETTER_TSE => Ok(Cyrillic::CapitalLetterTse),
-            CAPITAL_LETTER_CHE => Ok(Cyrillic::CapitalLetterChe),
-            CAPITAL_LETTER_SHA => Ok(Cyrillic::CapitalLetterSha),
-            CAPITAL_LETTER_SHCHA => Ok(Cyrillic::CapitalLetterShcha),
-            CAPITAL_LETTER_HARD_SIGN => Ok(Cyrillic::CapitalLetterHardSign),
-            CAPITAL_LETTER_YERU => Ok(Cyrillic::CapitalLetterYeru),
-            CAPITAL_LETTER_SOFT_SIGN => Ok(Cyrillic::CapitalLetterSoftSign),
-            CAPITAL_LETTER_E => Ok(Cyrillic::CapitalLetterE),
-            CAPITAL_LETTER_YU => Ok(Cyrillic::CapitalLetterYu),
-            CAPITAL_LETTER_YA => Ok(Cyrillic::CapitalLetterYa),
-            SMALL_LETTER_A => Ok(Cyrillic::SmallLetterA),
-            SMALL_LETTER_BE => Ok(Cyrillic::SmallLetterBe),
-            SMALL_LETTER_VE => Ok(Cyrillic::SmallLetterVe),
-            SMALL_LETTER_GHE => Ok(Cyrillic::SmallLetterGhe),
-            SMALL_LETTER_DE => Ok(Cyrillic::SmallLetterDe),
-            SMALL_LETTER_IE => Ok(Cyrillic::SmallLetterIe),
-            SMALL_LETTER_ZHE => Ok(Cyrillic::SmallLetterZhe),
-            SMALL_LETTER_ZE => Ok(Cyrillic::SmallLetterZe),
-            SMALL_LETTER_I => Ok(Cyrillic::SmallLetterI),
-            SMALL_LETTER_SHORT_I => Ok(Cyrillic::SmallLetterShortI),
-            SMALL_LETTER_KA => Ok(Cyrillic::SmallLetterKa),
-            SMALL_LETTER_EL => Ok(Cyrillic::SmallLetterEl),
-            SMALL_LETTER_EM => Ok(Cyrillic::SmallLetterEm),
-            SMALL_LETTER_EN => Ok(Cyrillic::SmallLetterEn),
-            SMALL_LETTER_O => Ok(Cyrillic::SmallLetterO),
-            SMALL_LETTER_PE => Ok(Cyrillic::SmallLetterPe),
-            SMALL_LETTER_ER => Ok(Cyrillic::SmallLetterEr),
-            SMALL_LETTER_ES => Ok(Cyrillic::SmallLetterEs),
-            SMALL_LETTER_TE => Ok(Cyrillic::SmallLetterTe),
-            SMALL_LETTER_U => Ok(Cyrillic::SmallLetterU),
-            SMALL_LETTER_EF => Ok(Cyrillic::SmallLetterEf),
-            SMALL_LETTER_HA => Ok(Cyrillic::SmallLetterHa),
-            SMALL_LETTER_TSE => Ok(Cyrillic::SmallLetterTse),
-            SMALL_LETTER_CHE => Ok(Cyrillic::SmallLetterChe),
-            SMALL_LETTER_SHA => Ok(Cyrillic::SmallLetterSha),
-            SMALL_LETTER_SHCHA => Ok(Cyrillic::SmallLetterShcha),
-            SMALL_LETTER_HARD_SIGN => Ok(Cyrillic::SmallLetterHardSign),
-            SMALL_LETTER_YERU => Ok(Cyrillic::SmallLetterYeru),
-            SMALL_LETTER_SOFT_SIGN => Ok(Cyrillic::SmallLetterSoftSign),
-            SMALL_LETTER_E => Ok(Cyrillic::SmallLetterE),
-            SMALL_LETTER_YU => Ok(Cyrillic::SmallLetterYu),
-            SMALL_LETTER_YA => Ok(Cyrillic::SmallLetterYa),
-            SMALL_LETTER_IE_WITH_GRAVE => Ok(Cyrillic::SmallLetterIeWithGrave),
-            SMALL_LETTER_IO => Ok(Cyrillic::SmallLetterIo),
-            SMALL_LETTER_DJE => Ok(Cyrillic::SmallLetterDje),
-            SMALL_LETTER_GJE => Ok(Cyrillic::SmallLetterGje),
-            SMALL_LETTER_UKRAINIAN_IE => Ok(Cyrillic::SmallLetterUkrainianIe),
-            SMALL_LETTER_DZE => Ok(Cyrillic::SmallLetterDze),
-            SMALL_LETTER_BYELORUSSIAN_DASH_UKRAINIAN_I => Ok(Cyrillic::SmallLetterByelorussianDashUkrainianI),
-            SMALL_LETTER_YI => Ok(Cyrillic::SmallLetterYi),
-            SMALL_LETTER_JE => Ok(Cyrillic::SmallLetterJe),
-            SMALL_LETTER_LJE => Ok(Cyrillic::SmallLetterLje),
-            SMALL_LETTER_NJE => Ok(Cyrillic::SmallLetterNje),
-            SMALL_LETTER_TSHE => Ok(Cyrillic::SmallLetterTshe),
-            SMALL_LETTER_KJE => Ok(Cyrillic::SmallLetterKje),
-            SMALL_LETTER_I_WITH_GRAVE => Ok(Cyrillic::SmallLetterIWithGrave),
-            SMALL_LETTER_SHORT_U => Ok(Cyrillic::SmallLetterShortU),
-            SMALL_LETTER_DZHE => Ok(Cyrillic::SmallLetterDzhe),
-            CAPITAL_LETTER_OMEGA => Ok(Cyrillic::CapitalLetterOmega),
-            SMALL_LETTER_OMEGA => Ok(Cyrillic::SmallLetterOmega),
-            CAPITAL_LETTER_YAT => Ok(Cyrillic::CapitalLetterYat),
-            SMALL_LETTER_YAT => Ok(Cyrillic::SmallLetterYat),
-            CAPITAL_LETTER_IOTIFIED_E => Ok(Cyrillic::CapitalLetterIotifiedE),
-            SMALL_LETTER_IOTIFIED_E => Ok(Cyrillic::SmallLetterIotifiedE),
-            CAPITAL_LETTER_LITTLE_YUS => Ok(Cyrillic::CapitalLetterLittleYus),
-            SMALL_LETTER_LITTLE_YUS => Ok(Cyrillic::SmallLetterLittleYus),
-            CAPITAL_LETTER_IOTIFIED_LITTLE_YUS => Ok(Cyrillic::CapitalLetterIotifiedLittleYus),
-            SMALL_LETTER_IOTIFIED_LITTLE_YUS => Ok(Cyrillic::SmallLetterIotifiedLittleYus),
-            CAPITAL_LETTER_BIG_YUS => Ok(Cyrillic::CapitalLetterBigYus),
-            SMALL_LETTER_BIG_YUS => Ok(Cyrillic::SmallLetterBigYus),
-            CAPITAL_LETTER_IOTIFIED_BIG_YUS => Ok(Cyrillic::CapitalLetterIotifiedBigYus),
-            SMALL_LETTER_IOTIFIED_BIG_YUS => Ok(Cyrillic::SmallLetterIotifiedBigYus),
-            CAPITAL_LETTER_KSI => Ok(Cyrillic::CapitalLetterKsi),
-            SMALL_LETTER_KSI => Ok(Cyrillic::SmallLetterKsi),
-            CAPITAL_LETTER_PSI => Ok(Cyrillic::CapitalLetterPsi),
-            SMALL_LETTER_PSI => Ok(Cyrillic::SmallLetterPsi),
-            CAPITAL_LETTER_FITA => Ok(Cyrillic::CapitalLetterFita),
-            SMALL_LETTER_FITA => Ok(Cyrillic::SmallLetterFita),
-            CAPITAL_LETTER_IZHITSA => Ok(Cyrillic::CapitalLetterIzhitsa),
-            SMALL_LETTER_IZHITSA => Ok(Cyrillic::SmallLetterIzhitsa),
-            CAPITAL_LETTER_IZHITSA_WITH_DOUBLE_GRAVE_ACCENT => Ok(Cyrillic::CapitalLetterIzhitsaWithDoubleGraveAccent),
-            SMALL_LETTER_IZHITSA_WITH_DOUBLE_GRAVE_ACCENT => Ok(Cyrillic::SmallLetterIzhitsaWithDoubleGraveAccent),
-            CAPITAL_LETTER_UK => Ok(Cyrillic::CapitalLetterUk),
-            SMALL_LETTER_UK => Ok(Cyrillic::SmallLetterUk),
-            CAPITAL_LETTER_ROUND_OMEGA => Ok(Cyrillic::CapitalLetterRoundOmega),
-            SMALL_LETTER_ROUND_OMEGA => Ok(Cyrillic::SmallLetterRoundOmega),
-            CAPITAL_LETTER_OMEGA_WITH_TITLO => Ok(Cyrillic::CapitalLetterOmegaWithTitlo),
-            SMALL_LETTER_OMEGA_WITH_TITLO => Ok(Cyrillic::SmallLetterOmegaWithTitlo),
-            CAPITAL_LETTER_OT => Ok(Cyrillic::CapitalLetterOt),
-            SMALL_LETTER_OT => Ok(Cyrillic::SmallLetterOt),
-            CAPITAL_LETTER_KOPPA => Ok(Cyrillic::CapitalLetterKoppa),
-            SMALL_LETTER_KOPPA => Ok(Cyrillic::SmallLetterKoppa),
-            THOUSANDS_SIGN => Ok(Cyrillic::ThousandsSign),
-            COMBINING_TITLO => Ok(Cyrillic::CombiningTitlo),
-            COMBINING_PALATALIZATION => Ok(Cyrillic::CombiningPalatalization),
-            COMBINING_DASIA_PNEUMATA => Ok(Cyrillic::CombiningDasiaPneumata),
-            COMBINING_PSILI_PNEUMATA => Ok(Cyrillic::CombiningPsiliPneumata),
-            COMBINING_POKRYTIE => Ok(Cyrillic::CombiningPokrytie),
-            COMBINING_HUNDRED_THOUSANDS_SIGN => Ok(Cyrillic::CombiningHundredThousandsSign),
-            COMBINING_MILLIONS_SIGN => Ok(Cyrillic::CombiningMillionsSign),
-            CAPITAL_LETTER_SHORT_I_WITH_TAIL => Ok(Cyrillic::CapitalLetterShortIWithTail),
-            SMALL_LETTER_SHORT_I_WITH_TAIL => Ok(Cyrillic::SmallLetterShortIWithTail),
-            CAPITAL_LETTER_SEMISOFT_SIGN => Ok(Cyrillic::CapitalLetterSemisoftSign),
-            SMALL_LETTER_SEMISOFT_SIGN => Ok(Cyrillic::SmallLetterSemisoftSign),
-            CAPITAL_LETTER_ER_WITH_TICK => Ok(Cyrillic::CapitalLetterErWithTick),
-            SMALL_LETTER_ER_WITH_TICK => Ok(Cyrillic::SmallLetterErWithTick),
-            CAPITAL_LETTER_GHE_WITH_UPTURN => Ok(Cyrillic::CapitalLetterGheWithUpturn),
-            SMALL_LETTER_GHE_WITH_UPTURN => Ok(Cyrillic::SmallLetterGheWithUpturn),
-            CAPITAL_LETTER_GHE_WITH_STROKE => Ok(Cyrillic::CapitalLetterGheWithStroke),
-            SMALL_LETTER_GHE_WITH_STROKE => Ok(Cyrillic::SmallLetterGheWithStroke),
-            CAPITAL_LETTER_GHE_WITH_MIDDLE_HOOK => Ok(Cyrillic::CapitalLetterGheWithMiddleHook),
-            SMALL_LETTER_GHE_WITH_MIDDLE_HOOK => Ok(Cyrillic::SmallLetterGheWithMiddleHook),
-            CAPITAL_LETTER_ZHE_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterZheWithDescender),
-            SMALL_LETTER_ZHE_WITH_DESCENDER => Ok(Cyrillic::SmallLetterZheWithDescender),
-            CAPITAL_LETTER_ZE_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterZeWithDescender),
-            SMALL_LETTER_ZE_WITH_DESCENDER => Ok(Cyrillic::SmallLetterZeWithDescender),
-            CAPITAL_LETTER_KA_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterKaWithDescender),
-            SMALL_LETTER_KA_WITH_DESCENDER => Ok(Cyrillic::SmallLetterKaWithDescender),
-            CAPITAL_LETTER_KA_WITH_VERTICAL_STROKE => Ok(Cyrillic::CapitalLetterKaWithVerticalStroke),
-            SMALL_LETTER_KA_WITH_VERTICAL_STROKE => Ok(Cyrillic::SmallLetterKaWithVerticalStroke),
-            CAPITAL_LETTER_KA_WITH_STROKE => Ok(Cyrillic::CapitalLetterKaWithStroke),
-            SMALL_LETTER_KA_WITH_STROKE => Ok(Cyrillic::SmallLetterKaWithStroke),
-            CAPITAL_LETTER_BASHKIR_KA => Ok(Cyrillic::CapitalLetterBashkirKa),
-            SMALL_LETTER_BASHKIR_KA => Ok(Cyrillic::SmallLetterBashkirKa),
-            CAPITAL_LETTER_EN_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterEnWithDescender),
-            SMALL_LETTER_EN_WITH_DESCENDER => Ok(Cyrillic::SmallLetterEnWithDescender),
-            CAPITAL_LIGATURE_EN_GHE => Ok(Cyrillic::CapitalLigatureEnGhe),
-            SMALL_LIGATURE_EN_GHE => Ok(Cyrillic::SmallLigatureEnGhe),
-            CAPITAL_LETTER_PE_WITH_MIDDLE_HOOK => Ok(Cyrillic::CapitalLetterPeWithMiddleHook),
-            SMALL_LETTER_PE_WITH_MIDDLE_HOOK => Ok(Cyrillic::SmallLetterPeWithMiddleHook),
-            CAPITAL_LETTER_ABKHASIAN_HA => Ok(Cyrillic::CapitalLetterAbkhasianHa),
-            SMALL_LETTER_ABKHASIAN_HA => Ok(Cyrillic::SmallLetterAbkhasianHa),
-            CAPITAL_LETTER_ES_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterEsWithDescender),
-            SMALL_LETTER_ES_WITH_DESCENDER => Ok(Cyrillic::SmallLetterEsWithDescender),
-            CAPITAL_LETTER_TE_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterTeWithDescender),
-            SMALL_LETTER_TE_WITH_DESCENDER => Ok(Cyrillic::SmallLetterTeWithDescender),
-            CAPITAL_LETTER_STRAIGHT_U => Ok(Cyrillic::CapitalLetterStraightU),
-            SMALL_LETTER_STRAIGHT_U => Ok(Cyrillic::SmallLetterStraightU),
-            CAPITAL_LETTER_STRAIGHT_U_WITH_STROKE => Ok(Cyrillic::CapitalLetterStraightUWithStroke),
-            SMALL_LETTER_STRAIGHT_U_WITH_STROKE => Ok(Cyrillic::SmallLetterStraightUWithStroke),
-            CAPITAL_LETTER_HA_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterHaWithDescender),
-            SMALL_LETTER_HA_WITH_DESCENDER => Ok(Cyrillic::SmallLetterHaWithDescender),
-            CAPITAL_LIGATURE_TE_TSE => Ok(Cyrillic::CapitalLigatureTeTse),
-            SMALL_LIGATURE_TE_TSE => Ok(Cyrillic::SmallLigatureTeTse),
-            CAPITAL_LETTER_CHE_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterCheWithDescender),
-            SMALL_LETTER_CHE_WITH_DESCENDER => Ok(Cyrillic::SmallLetterCheWithDescender),
-            CAPITAL_LETTER_CHE_WITH_VERTICAL_STROKE => Ok(Cyrillic::CapitalLetterCheWithVerticalStroke),
-            SMALL_LETTER_CHE_WITH_VERTICAL_STROKE => Ok(Cyrillic::SmallLetterCheWithVerticalStroke),
-            CAPITAL_LETTER_SHHA => Ok(Cyrillic::CapitalLetterShha),
-            SMALL_LETTER_SHHA => Ok(Cyrillic::SmallLetterShha),
-            CAPITAL_LETTER_ABKHASIAN_CHE => Ok(Cyrillic::CapitalLetterAbkhasianChe),
-            SMALL_LETTER_ABKHASIAN_CHE => Ok(Cyrillic::SmallLetterAbkhasianChe),
-            CAPITAL_LETTER_ABKHASIAN_CHE_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterAbkhasianCheWithDescender),
-            SMALL_LETTER_ABKHASIAN_CHE_WITH_DESCENDER => Ok(Cyrillic::SmallLetterAbkhasianCheWithDescender),
-            LETTER_PALOCHKA => Ok(Cyrillic::LetterPalochka),
-            CAPITAL_LETTER_ZHE_WITH_BREVE => Ok(Cyrillic::CapitalLetterZheWithBreve),
-            SMALL_LETTER_ZHE_WITH_BREVE => Ok(Cyrillic::SmallLetterZheWithBreve),
-            CAPITAL_LETTER_KA_WITH_HOOK => Ok(Cyrillic::CapitalLetterKaWithHook),
-            SMALL_LETTER_KA_WITH_HOOK => Ok(Cyrillic::SmallLetterKaWithHook),
-            CAPITAL_LETTER_EL_WITH_TAIL => Ok(Cyrillic::CapitalLetterElWithTail),
-            SMALL_LETTER_EL_WITH_TAIL => Ok(Cyrillic::SmallLetterElWithTail),
-            CAPITAL_LETTER_EN_WITH_HOOK => Ok(Cyrillic::CapitalLetterEnWithHook),
-            SMALL_LETTER_EN_WITH_HOOK => Ok(Cyrillic::SmallLetterEnWithHook),
-            CAPITAL_LETTER_EN_WITH_TAIL => Ok(Cyrillic::CapitalLetterEnWithTail),
-            SMALL_LETTER_EN_WITH_TAIL => Ok(Cyrillic::SmallLetterEnWithTail),
-            CAPITAL_LETTER_KHAKASSIAN_CHE => Ok(Cyrillic::CapitalLetterKhakassianChe),
-            SMALL_LETTER_KHAKASSIAN_CHE => Ok(Cyrillic::SmallLetterKhakassianChe),
-            CAPITAL_LETTER_EM_WITH_TAIL => Ok(Cyrillic::CapitalLetterEmWithTail),
-            SMALL_LETTER_EM_WITH_TAIL => Ok(Cyrillic::SmallLetterEmWithTail),
-            SMALL_LETTER_PALOCHKA => Ok(Cyrillic::SmallLetterPalochka),
-            CAPITAL_LETTER_A_WITH_BREVE => Ok(Cyrillic::CapitalLetterAWithBreve),
-            SMALL_LETTER_A_WITH_BREVE => Ok(Cyrillic::SmallLetterAWithBreve),
-            CAPITAL_LETTER_A_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterAWithDiaeresis),
-            SMALL_LETTER_A_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterAWithDiaeresis),
-            CAPITAL_LIGATURE_A_IE => Ok(Cyrillic::CapitalLigatureAIe),
-            SMALL_LIGATURE_A_IE => Ok(Cyrillic::SmallLigatureAIe),
-            CAPITAL_LETTER_IE_WITH_BREVE => Ok(Cyrillic::CapitalLetterIeWithBreve),
-            SMALL_LETTER_IE_WITH_BREVE => Ok(Cyrillic::SmallLetterIeWithBreve),
-            CAPITAL_LETTER_SCHWA => Ok(Cyrillic::CapitalLetterSchwa),
-            SMALL_LETTER_SCHWA => Ok(Cyrillic::SmallLetterSchwa),
-            CAPITAL_LETTER_SCHWA_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterSchwaWithDiaeresis),
-            SMALL_LETTER_SCHWA_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterSchwaWithDiaeresis),
-            CAPITAL_LETTER_ZHE_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterZheWithDiaeresis),
-            SMALL_LETTER_ZHE_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterZheWithDiaeresis),
-            CAPITAL_LETTER_ZE_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterZeWithDiaeresis),
-            SMALL_LETTER_ZE_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterZeWithDiaeresis),
-            CAPITAL_LETTER_ABKHASIAN_DZE => Ok(Cyrillic::CapitalLetterAbkhasianDze),
-            SMALL_LETTER_ABKHASIAN_DZE => Ok(Cyrillic::SmallLetterAbkhasianDze),
-            CAPITAL_LETTER_I_WITH_MACRON => Ok(Cyrillic::CapitalLetterIWithMacron),
-            SMALL_LETTER_I_WITH_MACRON => Ok(Cyrillic::SmallLetterIWithMacron),
-            CAPITAL_LETTER_I_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterIWithDiaeresis),
-            SMALL_LETTER_I_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterIWithDiaeresis),
-            CAPITAL_LETTER_O_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterOWithDiaeresis),
-            SMALL_LETTER_O_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterOWithDiaeresis),
-            CAPITAL_LETTER_BARRED_O => Ok(Cyrillic::CapitalLetterBarredO),
-            SMALL_LETTER_BARRED_O => Ok(Cyrillic::SmallLetterBarredO),
-            CAPITAL_LETTER_BARRED_O_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterBarredOWithDiaeresis),
-            SMALL_LETTER_BARRED_O_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterBarredOWithDiaeresis),
-            CAPITAL_LETTER_E_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterEWithDiaeresis),
-            SMALL_LETTER_E_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterEWithDiaeresis),
-            CAPITAL_LETTER_U_WITH_MACRON => Ok(Cyrillic::CapitalLetterUWithMacron),
-            SMALL_LETTER_U_WITH_MACRON => Ok(Cyrillic::SmallLetterUWithMacron),
-            CAPITAL_LETTER_U_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterUWithDiaeresis),
-            SMALL_LETTER_U_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterUWithDiaeresis),
-            CAPITAL_LETTER_U_WITH_DOUBLE_ACUTE => Ok(Cyrillic::CapitalLetterUWithDoubleAcute),
-            SMALL_LETTER_U_WITH_DOUBLE_ACUTE => Ok(Cyrillic::SmallLetterUWithDoubleAcute),
-            CAPITAL_LETTER_CHE_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterCheWithDiaeresis),
-            SMALL_LETTER_CHE_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterCheWithDiaeresis),
-            CAPITAL_LETTER_GHE_WITH_DESCENDER => Ok(Cyrillic::CapitalLetterGheWithDescender),
-            SMALL_LETTER_GHE_WITH_DESCENDER => Ok(Cyrillic::SmallLetterGheWithDescender),
-            CAPITAL_LETTER_YERU_WITH_DIAERESIS => Ok(Cyrillic::CapitalLetterYeruWithDiaeresis),
-            SMALL_LETTER_YERU_WITH_DIAERESIS => Ok(Cyrillic::SmallLetterYeruWithDiaeresis),
-            CAPITAL_LETTER_GHE_WITH_STROKE_AND_HOOK => Ok(Cyrillic::CapitalLetterGheWithStrokeAndHook),
-            SMALL_LETTER_GHE_WITH_STROKE_AND_HOOK => Ok(Cyrillic::SmallLetterGheWithStrokeAndHook),
-            CAPITAL_LETTER_HA_WITH_HOOK => Ok(Cyrillic::CapitalLetterHaWithHook),
-            SMALL_LETTER_HA_WITH_HOOK => Ok(Cyrillic::SmallLetterHaWithHook),
-            CAPITAL_LETTER_HA_WITH_STROKE => Ok(Cyrillic::CapitalLetterHaWithStroke),
+            'Ѐ' => Ok(Cyrillic::CapitalLetterIeWithGrave),
+            'Ё' => Ok(Cyrillic::CapitalLetterIo),
+            'Ђ' => Ok(Cyrillic::CapitalLetterDje),
+            'Ѓ' => Ok(Cyrillic::CapitalLetterGje),
+            'Є' => Ok(Cyrillic::CapitalLetterUkrainianIe),
+            'Ѕ' => Ok(Cyrillic::CapitalLetterDze),
+            'І' => Ok(Cyrillic::CapitalLetterByelorussianDashUkrainianI),
+            'Ї' => Ok(Cyrillic::CapitalLetterYi),
+            'Ј' => Ok(Cyrillic::CapitalLetterJe),
+            'Љ' => Ok(Cyrillic::CapitalLetterLje),
+            'Њ' => Ok(Cyrillic::CapitalLetterNje),
+            'Ћ' => Ok(Cyrillic::CapitalLetterTshe),
+            'Ќ' => Ok(Cyrillic::CapitalLetterKje),
+            'Ѝ' => Ok(Cyrillic::CapitalLetterIWithGrave),
+            'Ў' => Ok(Cyrillic::CapitalLetterShortU),
+            'Џ' => Ok(Cyrillic::CapitalLetterDzhe),
+            'А' => Ok(Cyrillic::CapitalLetterA),
+            'Б' => Ok(Cyrillic::CapitalLetterBe),
+            'В' => Ok(Cyrillic::CapitalLetterVe),
+            'Г' => Ok(Cyrillic::CapitalLetterGhe),
+            'Д' => Ok(Cyrillic::CapitalLetterDe),
+            'Е' => Ok(Cyrillic::CapitalLetterIe),
+            'Ж' => Ok(Cyrillic::CapitalLetterZhe),
+            'З' => Ok(Cyrillic::CapitalLetterZe),
+            'И' => Ok(Cyrillic::CapitalLetterI),
+            'Й' => Ok(Cyrillic::CapitalLetterShortI),
+            'К' => Ok(Cyrillic::CapitalLetterKa),
+            'Л' => Ok(Cyrillic::CapitalLetterEl),
+            'М' => Ok(Cyrillic::CapitalLetterEm),
+            'Н' => Ok(Cyrillic::CapitalLetterEn),
+            'О' => Ok(Cyrillic::CapitalLetterO),
+            'П' => Ok(Cyrillic::CapitalLetterPe),
+            'Р' => Ok(Cyrillic::CapitalLetterEr),
+            'С' => Ok(Cyrillic::CapitalLetterEs),
+            'Т' => Ok(Cyrillic::CapitalLetterTe),
+            'У' => Ok(Cyrillic::CapitalLetterU),
+            'Ф' => Ok(Cyrillic::CapitalLetterEf),
+            'Х' => Ok(Cyrillic::CapitalLetterHa),
+            'Ц' => Ok(Cyrillic::CapitalLetterTse),
+            'Ч' => Ok(Cyrillic::CapitalLetterChe),
+            'Ш' => Ok(Cyrillic::CapitalLetterSha),
+            'Щ' => Ok(Cyrillic::CapitalLetterShcha),
+            'Ъ' => Ok(Cyrillic::CapitalLetterHardSign),
+            'Ы' => Ok(Cyrillic::CapitalLetterYeru),
+            'Ь' => Ok(Cyrillic::CapitalLetterSoftSign),
+            'Э' => Ok(Cyrillic::CapitalLetterE),
+            'Ю' => Ok(Cyrillic::CapitalLetterYu),
+            'Я' => Ok(Cyrillic::CapitalLetterYa),
+            'а' => Ok(Cyrillic::SmallLetterA),
+            'б' => Ok(Cyrillic::SmallLetterBe),
+            'в' => Ok(Cyrillic::SmallLetterVe),
+            'г' => Ok(Cyrillic::SmallLetterGhe),
+            'д' => Ok(Cyrillic::SmallLetterDe),
+            'е' => Ok(Cyrillic::SmallLetterIe),
+            'ж' => Ok(Cyrillic::SmallLetterZhe),
+            'з' => Ok(Cyrillic::SmallLetterZe),
+            'и' => Ok(Cyrillic::SmallLetterI),
+            'й' => Ok(Cyrillic::SmallLetterShortI),
+            'к' => Ok(Cyrillic::SmallLetterKa),
+            'л' => Ok(Cyrillic::SmallLetterEl),
+            'м' => Ok(Cyrillic::SmallLetterEm),
+            'н' => Ok(Cyrillic::SmallLetterEn),
+            'о' => Ok(Cyrillic::SmallLetterO),
+            'п' => Ok(Cyrillic::SmallLetterPe),
+            'р' => Ok(Cyrillic::SmallLetterEr),
+            'с' => Ok(Cyrillic::SmallLetterEs),
+            'т' => Ok(Cyrillic::SmallLetterTe),
+            'у' => Ok(Cyrillic::SmallLetterU),
+            'ф' => Ok(Cyrillic::SmallLetterEf),
+            'х' => Ok(Cyrillic::SmallLetterHa),
+            'ц' => Ok(Cyrillic::SmallLetterTse),
+            'ч' => Ok(Cyrillic::SmallLetterChe),
+            'ш' => Ok(Cyrillic::SmallLetterSha),
+            'щ' => Ok(Cyrillic::SmallLetterShcha),
+            'ъ' => Ok(Cyrillic::SmallLetterHardSign),
+            'ы' => Ok(Cyrillic::SmallLetterYeru),
+            'ь' => Ok(Cyrillic::SmallLetterSoftSign),
+            'э' => Ok(Cyrillic::SmallLetterE),
+            'ю' => Ok(Cyrillic::SmallLetterYu),
+            'я' => Ok(Cyrillic::SmallLetterYa),
+            'ѐ' => Ok(Cyrillic::SmallLetterIeWithGrave),
+            'ё' => Ok(Cyrillic::SmallLetterIo),
+            'ђ' => Ok(Cyrillic::SmallLetterDje),
+            'ѓ' => Ok(Cyrillic::SmallLetterGje),
+            'є' => Ok(Cyrillic::SmallLetterUkrainianIe),
+            'ѕ' => Ok(Cyrillic::SmallLetterDze),
+            'і' => Ok(Cyrillic::SmallLetterByelorussianDashUkrainianI),
+            'ї' => Ok(Cyrillic::SmallLetterYi),
+            'ј' => Ok(Cyrillic::SmallLetterJe),
+            'љ' => Ok(Cyrillic::SmallLetterLje),
+            'њ' => Ok(Cyrillic::SmallLetterNje),
+            'ћ' => Ok(Cyrillic::SmallLetterTshe),
+            'ќ' => Ok(Cyrillic::SmallLetterKje),
+            'ѝ' => Ok(Cyrillic::SmallLetterIWithGrave),
+            'ў' => Ok(Cyrillic::SmallLetterShortU),
+            'џ' => Ok(Cyrillic::SmallLetterDzhe),
+            'Ѡ' => Ok(Cyrillic::CapitalLetterOmega),
+            'ѡ' => Ok(Cyrillic::SmallLetterOmega),
+            'Ѣ' => Ok(Cyrillic::CapitalLetterYat),
+            'ѣ' => Ok(Cyrillic::SmallLetterYat),
+            'Ѥ' => Ok(Cyrillic::CapitalLetterIotifiedE),
+            'ѥ' => Ok(Cyrillic::SmallLetterIotifiedE),
+            'Ѧ' => Ok(Cyrillic::CapitalLetterLittleYus),
+            'ѧ' => Ok(Cyrillic::SmallLetterLittleYus),
+            'Ѩ' => Ok(Cyrillic::CapitalLetterIotifiedLittleYus),
+            'ѩ' => Ok(Cyrillic::SmallLetterIotifiedLittleYus),
+            'Ѫ' => Ok(Cyrillic::CapitalLetterBigYus),
+            'ѫ' => Ok(Cyrillic::SmallLetterBigYus),
+            'Ѭ' => Ok(Cyrillic::CapitalLetterIotifiedBigYus),
+            'ѭ' => Ok(Cyrillic::SmallLetterIotifiedBigYus),
+            'Ѯ' => Ok(Cyrillic::CapitalLetterKsi),
+            'ѯ' => Ok(Cyrillic::SmallLetterKsi),
+            'Ѱ' => Ok(Cyrillic::CapitalLetterPsi),
+            'ѱ' => Ok(Cyrillic::SmallLetterPsi),
+            'Ѳ' => Ok(Cyrillic::CapitalLetterFita),
+            'ѳ' => Ok(Cyrillic::SmallLetterFita),
+            'Ѵ' => Ok(Cyrillic::CapitalLetterIzhitsa),
+            'ѵ' => Ok(Cyrillic::SmallLetterIzhitsa),
+            'Ѷ' => Ok(Cyrillic::CapitalLetterIzhitsaWithDoubleGraveAccent),
+            'ѷ' => Ok(Cyrillic::SmallLetterIzhitsaWithDoubleGraveAccent),
+            'Ѹ' => Ok(Cyrillic::CapitalLetterUk),
+            'ѹ' => Ok(Cyrillic::SmallLetterUk),
+            'Ѻ' => Ok(Cyrillic::CapitalLetterRoundOmega),
+            'ѻ' => Ok(Cyrillic::SmallLetterRoundOmega),
+            'Ѽ' => Ok(Cyrillic::CapitalLetterOmegaWithTitlo),
+            'ѽ' => Ok(Cyrillic::SmallLetterOmegaWithTitlo),
+            'Ѿ' => Ok(Cyrillic::CapitalLetterOt),
+            'ѿ' => Ok(Cyrillic::SmallLetterOt),
+            'Ҁ' => Ok(Cyrillic::CapitalLetterKoppa),
+            'ҁ' => Ok(Cyrillic::SmallLetterKoppa),
+            '҂' => Ok(Cyrillic::ThousandsSign),
+            '҃' => Ok(Cyrillic::CombiningTitlo),
+            '҄' => Ok(Cyrillic::CombiningPalatalization),
+            '҅' => Ok(Cyrillic::CombiningDasiaPneumata),
+            '҆' => Ok(Cyrillic::CombiningPsiliPneumata),
+            '҇' => Ok(Cyrillic::CombiningPokrytie),
+            '҈' => Ok(Cyrillic::CombiningHundredThousandsSign),
+            '҉' => Ok(Cyrillic::CombiningMillionsSign),
+            'Ҋ' => Ok(Cyrillic::CapitalLetterShortIWithTail),
+            'ҋ' => Ok(Cyrillic::SmallLetterShortIWithTail),
+            'Ҍ' => Ok(Cyrillic::CapitalLetterSemisoftSign),
+            'ҍ' => Ok(Cyrillic::SmallLetterSemisoftSign),
+            'Ҏ' => Ok(Cyrillic::CapitalLetterErWithTick),
+            'ҏ' => Ok(Cyrillic::SmallLetterErWithTick),
+            'Ґ' => Ok(Cyrillic::CapitalLetterGheWithUpturn),
+            'ґ' => Ok(Cyrillic::SmallLetterGheWithUpturn),
+            'Ғ' => Ok(Cyrillic::CapitalLetterGheWithStroke),
+            'ғ' => Ok(Cyrillic::SmallLetterGheWithStroke),
+            'Ҕ' => Ok(Cyrillic::CapitalLetterGheWithMiddleHook),
+            'ҕ' => Ok(Cyrillic::SmallLetterGheWithMiddleHook),
+            'Җ' => Ok(Cyrillic::CapitalLetterZheWithDescender),
+            'җ' => Ok(Cyrillic::SmallLetterZheWithDescender),
+            'Ҙ' => Ok(Cyrillic::CapitalLetterZeWithDescender),
+            'ҙ' => Ok(Cyrillic::SmallLetterZeWithDescender),
+            'Қ' => Ok(Cyrillic::CapitalLetterKaWithDescender),
+            'қ' => Ok(Cyrillic::SmallLetterKaWithDescender),
+            'Ҝ' => Ok(Cyrillic::CapitalLetterKaWithVerticalStroke),
+            'ҝ' => Ok(Cyrillic::SmallLetterKaWithVerticalStroke),
+            'Ҟ' => Ok(Cyrillic::CapitalLetterKaWithStroke),
+            'ҟ' => Ok(Cyrillic::SmallLetterKaWithStroke),
+            'Ҡ' => Ok(Cyrillic::CapitalLetterBashkirKa),
+            'ҡ' => Ok(Cyrillic::SmallLetterBashkirKa),
+            'Ң' => Ok(Cyrillic::CapitalLetterEnWithDescender),
+            'ң' => Ok(Cyrillic::SmallLetterEnWithDescender),
+            'Ҥ' => Ok(Cyrillic::CapitalLigatureEnGhe),
+            'ҥ' => Ok(Cyrillic::SmallLigatureEnGhe),
+            'Ҧ' => Ok(Cyrillic::CapitalLetterPeWithMiddleHook),
+            'ҧ' => Ok(Cyrillic::SmallLetterPeWithMiddleHook),
+            'Ҩ' => Ok(Cyrillic::CapitalLetterAbkhasianHa),
+            'ҩ' => Ok(Cyrillic::SmallLetterAbkhasianHa),
+            'Ҫ' => Ok(Cyrillic::CapitalLetterEsWithDescender),
+            'ҫ' => Ok(Cyrillic::SmallLetterEsWithDescender),
+            'Ҭ' => Ok(Cyrillic::CapitalLetterTeWithDescender),
+            'ҭ' => Ok(Cyrillic::SmallLetterTeWithDescender),
+            'Ү' => Ok(Cyrillic::CapitalLetterStraightU),
+            'ү' => Ok(Cyrillic::SmallLetterStraightU),
+            'Ұ' => Ok(Cyrillic::CapitalLetterStraightUWithStroke),
+            'ұ' => Ok(Cyrillic::SmallLetterStraightUWithStroke),
+            'Ҳ' => Ok(Cyrillic::CapitalLetterHaWithDescender),
+            'ҳ' => Ok(Cyrillic::SmallLetterHaWithDescender),
+            'Ҵ' => Ok(Cyrillic::CapitalLigatureTeTse),
+            'ҵ' => Ok(Cyrillic::SmallLigatureTeTse),
+            'Ҷ' => Ok(Cyrillic::CapitalLetterCheWithDescender),
+            'ҷ' => Ok(Cyrillic::SmallLetterCheWithDescender),
+            'Ҹ' => Ok(Cyrillic::CapitalLetterCheWithVerticalStroke),
+            'ҹ' => Ok(Cyrillic::SmallLetterCheWithVerticalStroke),
+            'Һ' => Ok(Cyrillic::CapitalLetterShha),
+            'һ' => Ok(Cyrillic::SmallLetterShha),
+            'Ҽ' => Ok(Cyrillic::CapitalLetterAbkhasianChe),
+            'ҽ' => Ok(Cyrillic::SmallLetterAbkhasianChe),
+            'Ҿ' => Ok(Cyrillic::CapitalLetterAbkhasianCheWithDescender),
+            'ҿ' => Ok(Cyrillic::SmallLetterAbkhasianCheWithDescender),
+            'Ӏ' => Ok(Cyrillic::LetterPalochka),
+            'Ӂ' => Ok(Cyrillic::CapitalLetterZheWithBreve),
+            'ӂ' => Ok(Cyrillic::SmallLetterZheWithBreve),
+            'Ӄ' => Ok(Cyrillic::CapitalLetterKaWithHook),
+            'ӄ' => Ok(Cyrillic::SmallLetterKaWithHook),
+            'Ӆ' => Ok(Cyrillic::CapitalLetterElWithTail),
+            'ӆ' => Ok(Cyrillic::SmallLetterElWithTail),
+            'Ӈ' => Ok(Cyrillic::CapitalLetterEnWithHook),
+            'ӈ' => Ok(Cyrillic::SmallLetterEnWithHook),
+            'Ӊ' => Ok(Cyrillic::CapitalLetterEnWithTail),
+            'ӊ' => Ok(Cyrillic::SmallLetterEnWithTail),
+            'Ӌ' => Ok(Cyrillic::CapitalLetterKhakassianChe),
+            'ӌ' => Ok(Cyrillic::SmallLetterKhakassianChe),
+            'Ӎ' => Ok(Cyrillic::CapitalLetterEmWithTail),
+            'ӎ' => Ok(Cyrillic::SmallLetterEmWithTail),
+            'ӏ' => Ok(Cyrillic::SmallLetterPalochka),
+            'Ӑ' => Ok(Cyrillic::CapitalLetterAWithBreve),
+            'ӑ' => Ok(Cyrillic::SmallLetterAWithBreve),
+            'Ӓ' => Ok(Cyrillic::CapitalLetterAWithDiaeresis),
+            'ӓ' => Ok(Cyrillic::SmallLetterAWithDiaeresis),
+            'Ӕ' => Ok(Cyrillic::CapitalLigatureAIe),
+            'ӕ' => Ok(Cyrillic::SmallLigatureAIe),
+            'Ӗ' => Ok(Cyrillic::CapitalLetterIeWithBreve),
+            'ӗ' => Ok(Cyrillic::SmallLetterIeWithBreve),
+            'Ә' => Ok(Cyrillic::CapitalLetterSchwa),
+            'ә' => Ok(Cyrillic::SmallLetterSchwa),
+            'Ӛ' => Ok(Cyrillic::CapitalLetterSchwaWithDiaeresis),
+            'ӛ' => Ok(Cyrillic::SmallLetterSchwaWithDiaeresis),
+            'Ӝ' => Ok(Cyrillic::CapitalLetterZheWithDiaeresis),
+            'ӝ' => Ok(Cyrillic::SmallLetterZheWithDiaeresis),
+            'Ӟ' => Ok(Cyrillic::CapitalLetterZeWithDiaeresis),
+            'ӟ' => Ok(Cyrillic::SmallLetterZeWithDiaeresis),
+            'Ӡ' => Ok(Cyrillic::CapitalLetterAbkhasianDze),
+            'ӡ' => Ok(Cyrillic::SmallLetterAbkhasianDze),
+            'Ӣ' => Ok(Cyrillic::CapitalLetterIWithMacron),
+            'ӣ' => Ok(Cyrillic::SmallLetterIWithMacron),
+            'Ӥ' => Ok(Cyrillic::CapitalLetterIWithDiaeresis),
+            'ӥ' => Ok(Cyrillic::SmallLetterIWithDiaeresis),
+            'Ӧ' => Ok(Cyrillic::CapitalLetterOWithDiaeresis),
+            'ӧ' => Ok(Cyrillic::SmallLetterOWithDiaeresis),
+            'Ө' => Ok(Cyrillic::CapitalLetterBarredO),
+            'ө' => Ok(Cyrillic::SmallLetterBarredO),
+            'Ӫ' => Ok(Cyrillic::CapitalLetterBarredOWithDiaeresis),
+            'ӫ' => Ok(Cyrillic::SmallLetterBarredOWithDiaeresis),
+            'Ӭ' => Ok(Cyrillic::CapitalLetterEWithDiaeresis),
+            'ӭ' => Ok(Cyrillic::SmallLetterEWithDiaeresis),
+            'Ӯ' => Ok(Cyrillic::CapitalLetterUWithMacron),
+            'ӯ' => Ok(Cyrillic::SmallLetterUWithMacron),
+            'Ӱ' => Ok(Cyrillic::CapitalLetterUWithDiaeresis),
+            'ӱ' => Ok(Cyrillic::SmallLetterUWithDiaeresis),
+            'Ӳ' => Ok(Cyrillic::CapitalLetterUWithDoubleAcute),
+            'ӳ' => Ok(Cyrillic::SmallLetterUWithDoubleAcute),
+            'Ӵ' => Ok(Cyrillic::CapitalLetterCheWithDiaeresis),
+            'ӵ' => Ok(Cyrillic::SmallLetterCheWithDiaeresis),
+            'Ӷ' => Ok(Cyrillic::CapitalLetterGheWithDescender),
+            'ӷ' => Ok(Cyrillic::SmallLetterGheWithDescender),
+            'Ӹ' => Ok(Cyrillic::CapitalLetterYeruWithDiaeresis),
+            'ӹ' => Ok(Cyrillic::SmallLetterYeruWithDiaeresis),
+            'Ӻ' => Ok(Cyrillic::CapitalLetterGheWithStrokeAndHook),
+            'ӻ' => Ok(Cyrillic::SmallLetterGheWithStrokeAndHook),
+            'Ӽ' => Ok(Cyrillic::CapitalLetterHaWithHook),
+            'ӽ' => Ok(Cyrillic::SmallLetterHaWithHook),
+            'Ӿ' => Ok(Cyrillic::CapitalLetterHaWithStroke),
             _ => Err(()),
         }
     }

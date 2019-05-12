@@ -1,352 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a720}: '꜠'
-    pub const MODIFIER_LETTER_STRESS_AND_HIGH_TONE: char = '꜠';
-    /// \u{a721}: '꜡'
-    pub const MODIFIER_LETTER_STRESS_AND_LOW_TONE: char = '꜡';
-    /// \u{a722}: 'Ꜣ'
-    pub const LATIN_CAPITAL_LETTER_EGYPTOLOGICAL_ALEF: char = 'Ꜣ';
-    /// \u{a723}: 'ꜣ'
-    pub const LATIN_SMALL_LETTER_EGYPTOLOGICAL_ALEF: char = 'ꜣ';
-    /// \u{a724}: 'Ꜥ'
-    pub const LATIN_CAPITAL_LETTER_EGYPTOLOGICAL_AIN: char = 'Ꜥ';
-    /// \u{a725}: 'ꜥ'
-    pub const LATIN_SMALL_LETTER_EGYPTOLOGICAL_AIN: char = 'ꜥ';
-    /// \u{a726}: 'Ꜧ'
-    pub const LATIN_CAPITAL_LETTER_HENG: char = 'Ꜧ';
-    /// \u{a727}: 'ꜧ'
-    pub const LATIN_SMALL_LETTER_HENG: char = 'ꜧ';
-    /// \u{a728}: 'Ꜩ'
-    pub const LATIN_CAPITAL_LETTER_TZ: char = 'Ꜩ';
-    /// \u{a729}: 'ꜩ'
-    pub const LATIN_SMALL_LETTER_TZ: char = 'ꜩ';
-    /// \u{a72a}: 'Ꜫ'
-    pub const LATIN_CAPITAL_LETTER_TRESILLO: char = 'Ꜫ';
-    /// \u{a72b}: 'ꜫ'
-    pub const LATIN_SMALL_LETTER_TRESILLO: char = 'ꜫ';
-    /// \u{a72c}: 'Ꜭ'
-    pub const LATIN_CAPITAL_LETTER_CUATRILLO: char = 'Ꜭ';
-    /// \u{a72d}: 'ꜭ'
-    pub const LATIN_SMALL_LETTER_CUATRILLO: char = 'ꜭ';
-    /// \u{a72e}: 'Ꜯ'
-    pub const LATIN_CAPITAL_LETTER_CUATRILLO_WITH_COMMA: char = 'Ꜯ';
-    /// \u{a72f}: 'ꜯ'
-    pub const LATIN_SMALL_LETTER_CUATRILLO_WITH_COMMA: char = 'ꜯ';
-    /// \u{a730}: 'ꜰ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_F: char = 'ꜰ';
-    /// \u{a731}: 'ꜱ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_S: char = 'ꜱ';
-    /// \u{a732}: 'Ꜳ'
-    pub const LATIN_CAPITAL_LETTER_AA: char = 'Ꜳ';
-    /// \u{a733}: 'ꜳ'
-    pub const LATIN_SMALL_LETTER_AA: char = 'ꜳ';
-    /// \u{a734}: 'Ꜵ'
-    pub const LATIN_CAPITAL_LETTER_AO: char = 'Ꜵ';
-    /// \u{a735}: 'ꜵ'
-    pub const LATIN_SMALL_LETTER_AO: char = 'ꜵ';
-    /// \u{a736}: 'Ꜷ'
-    pub const LATIN_CAPITAL_LETTER_AU: char = 'Ꜷ';
-    /// \u{a737}: 'ꜷ'
-    pub const LATIN_SMALL_LETTER_AU: char = 'ꜷ';
-    /// \u{a738}: 'Ꜹ'
-    pub const LATIN_CAPITAL_LETTER_AV: char = 'Ꜹ';
-    /// \u{a739}: 'ꜹ'
-    pub const LATIN_SMALL_LETTER_AV: char = 'ꜹ';
-    /// \u{a73a}: 'Ꜻ'
-    pub const LATIN_CAPITAL_LETTER_AV_WITH_HORIZONTAL_BAR: char = 'Ꜻ';
-    /// \u{a73b}: 'ꜻ'
-    pub const LATIN_SMALL_LETTER_AV_WITH_HORIZONTAL_BAR: char = 'ꜻ';
-    /// \u{a73c}: 'Ꜽ'
-    pub const LATIN_CAPITAL_LETTER_AY: char = 'Ꜽ';
-    /// \u{a73d}: 'ꜽ'
-    pub const LATIN_SMALL_LETTER_AY: char = 'ꜽ';
-    /// \u{a73e}: 'Ꜿ'
-    pub const LATIN_CAPITAL_LETTER_REVERSED_C_WITH_DOT: char = 'Ꜿ';
-    /// \u{a73f}: 'ꜿ'
-    pub const LATIN_SMALL_LETTER_REVERSED_C_WITH_DOT: char = 'ꜿ';
-    /// \u{a740}: 'Ꝁ'
-    pub const LATIN_CAPITAL_LETTER_K_WITH_STROKE: char = 'Ꝁ';
-    /// \u{a741}: 'ꝁ'
-    pub const LATIN_SMALL_LETTER_K_WITH_STROKE: char = 'ꝁ';
-    /// \u{a742}: 'Ꝃ'
-    pub const LATIN_CAPITAL_LETTER_K_WITH_DIAGONAL_STROKE: char = 'Ꝃ';
-    /// \u{a743}: 'ꝃ'
-    pub const LATIN_SMALL_LETTER_K_WITH_DIAGONAL_STROKE: char = 'ꝃ';
-    /// \u{a744}: 'Ꝅ'
-    pub const LATIN_CAPITAL_LETTER_K_WITH_STROKE_AND_DIAGONAL_STROKE: char = 'Ꝅ';
-    /// \u{a745}: 'ꝅ'
-    pub const LATIN_SMALL_LETTER_K_WITH_STROKE_AND_DIAGONAL_STROKE: char = 'ꝅ';
-    /// \u{a746}: 'Ꝇ'
-    pub const LATIN_CAPITAL_LETTER_BROKEN_L: char = 'Ꝇ';
-    /// \u{a747}: 'ꝇ'
-    pub const LATIN_SMALL_LETTER_BROKEN_L: char = 'ꝇ';
-    /// \u{a748}: 'Ꝉ'
-    pub const LATIN_CAPITAL_LETTER_L_WITH_HIGH_STROKE: char = 'Ꝉ';
-    /// \u{a749}: 'ꝉ'
-    pub const LATIN_SMALL_LETTER_L_WITH_HIGH_STROKE: char = 'ꝉ';
-    /// \u{a74a}: 'Ꝋ'
-    pub const LATIN_CAPITAL_LETTER_O_WITH_LONG_STROKE_OVERLAY: char = 'Ꝋ';
-    /// \u{a74b}: 'ꝋ'
-    pub const LATIN_SMALL_LETTER_O_WITH_LONG_STROKE_OVERLAY: char = 'ꝋ';
-    /// \u{a74c}: 'Ꝍ'
-    pub const LATIN_CAPITAL_LETTER_O_WITH_LOOP: char = 'Ꝍ';
-    /// \u{a74d}: 'ꝍ'
-    pub const LATIN_SMALL_LETTER_O_WITH_LOOP: char = 'ꝍ';
-    /// \u{a74e}: 'Ꝏ'
-    pub const LATIN_CAPITAL_LETTER_OO: char = 'Ꝏ';
-    /// \u{a74f}: 'ꝏ'
-    pub const LATIN_SMALL_LETTER_OO: char = 'ꝏ';
-    /// \u{a750}: 'Ꝑ'
-    pub const LATIN_CAPITAL_LETTER_P_WITH_STROKE_THROUGH_DESCENDER: char = 'Ꝑ';
-    /// \u{a751}: 'ꝑ'
-    pub const LATIN_SMALL_LETTER_P_WITH_STROKE_THROUGH_DESCENDER: char = 'ꝑ';
-    /// \u{a752}: 'Ꝓ'
-    pub const LATIN_CAPITAL_LETTER_P_WITH_FLOURISH: char = 'Ꝓ';
-    /// \u{a753}: 'ꝓ'
-    pub const LATIN_SMALL_LETTER_P_WITH_FLOURISH: char = 'ꝓ';
-    /// \u{a754}: 'Ꝕ'
-    pub const LATIN_CAPITAL_LETTER_P_WITH_SQUIRREL_TAIL: char = 'Ꝕ';
-    /// \u{a755}: 'ꝕ'
-    pub const LATIN_SMALL_LETTER_P_WITH_SQUIRREL_TAIL: char = 'ꝕ';
-    /// \u{a756}: 'Ꝗ'
-    pub const LATIN_CAPITAL_LETTER_Q_WITH_STROKE_THROUGH_DESCENDER: char = 'Ꝗ';
-    /// \u{a757}: 'ꝗ'
-    pub const LATIN_SMALL_LETTER_Q_WITH_STROKE_THROUGH_DESCENDER: char = 'ꝗ';
-    /// \u{a758}: 'Ꝙ'
-    pub const LATIN_CAPITAL_LETTER_Q_WITH_DIAGONAL_STROKE: char = 'Ꝙ';
-    /// \u{a759}: 'ꝙ'
-    pub const LATIN_SMALL_LETTER_Q_WITH_DIAGONAL_STROKE: char = 'ꝙ';
-    /// \u{a75a}: 'Ꝛ'
-    pub const LATIN_CAPITAL_LETTER_R_ROTUNDA: char = 'Ꝛ';
-    /// \u{a75b}: 'ꝛ'
-    pub const LATIN_SMALL_LETTER_R_ROTUNDA: char = 'ꝛ';
-    /// \u{a75c}: 'Ꝝ'
-    pub const LATIN_CAPITAL_LETTER_RUM_ROTUNDA: char = 'Ꝝ';
-    /// \u{a75d}: 'ꝝ'
-    pub const LATIN_SMALL_LETTER_RUM_ROTUNDA: char = 'ꝝ';
-    /// \u{a75e}: 'Ꝟ'
-    pub const LATIN_CAPITAL_LETTER_V_WITH_DIAGONAL_STROKE: char = 'Ꝟ';
-    /// \u{a75f}: 'ꝟ'
-    pub const LATIN_SMALL_LETTER_V_WITH_DIAGONAL_STROKE: char = 'ꝟ';
-    /// \u{a760}: 'Ꝡ'
-    pub const LATIN_CAPITAL_LETTER_VY: char = 'Ꝡ';
-    /// \u{a761}: 'ꝡ'
-    pub const LATIN_SMALL_LETTER_VY: char = 'ꝡ';
-    /// \u{a762}: 'Ꝣ'
-    pub const LATIN_CAPITAL_LETTER_VISIGOTHIC_Z: char = 'Ꝣ';
-    /// \u{a763}: 'ꝣ'
-    pub const LATIN_SMALL_LETTER_VISIGOTHIC_Z: char = 'ꝣ';
-    /// \u{a764}: 'Ꝥ'
-    pub const LATIN_CAPITAL_LETTER_THORN_WITH_STROKE: char = 'Ꝥ';
-    /// \u{a765}: 'ꝥ'
-    pub const LATIN_SMALL_LETTER_THORN_WITH_STROKE: char = 'ꝥ';
-    /// \u{a766}: 'Ꝧ'
-    pub const LATIN_CAPITAL_LETTER_THORN_WITH_STROKE_THROUGH_DESCENDER: char = 'Ꝧ';
-    /// \u{a767}: 'ꝧ'
-    pub const LATIN_SMALL_LETTER_THORN_WITH_STROKE_THROUGH_DESCENDER: char = 'ꝧ';
-    /// \u{a768}: 'Ꝩ'
-    pub const LATIN_CAPITAL_LETTER_VEND: char = 'Ꝩ';
-    /// \u{a769}: 'ꝩ'
-    pub const LATIN_SMALL_LETTER_VEND: char = 'ꝩ';
-    /// \u{a76a}: 'Ꝫ'
-    pub const LATIN_CAPITAL_LETTER_ET: char = 'Ꝫ';
-    /// \u{a76b}: 'ꝫ'
-    pub const LATIN_SMALL_LETTER_ET: char = 'ꝫ';
-    /// \u{a76c}: 'Ꝭ'
-    pub const LATIN_CAPITAL_LETTER_IS: char = 'Ꝭ';
-    /// \u{a76d}: 'ꝭ'
-    pub const LATIN_SMALL_LETTER_IS: char = 'ꝭ';
-    /// \u{a76e}: 'Ꝯ'
-    pub const LATIN_CAPITAL_LETTER_CON: char = 'Ꝯ';
-    /// \u{a76f}: 'ꝯ'
-    pub const LATIN_SMALL_LETTER_CON: char = 'ꝯ';
-    /// \u{a770}: 'ꝰ'
-    pub const MODIFIER_LETTER_US: char = 'ꝰ';
-    /// \u{a771}: 'ꝱ'
-    pub const LATIN_SMALL_LETTER_DUM: char = 'ꝱ';
-    /// \u{a772}: 'ꝲ'
-    pub const LATIN_SMALL_LETTER_LUM: char = 'ꝲ';
-    /// \u{a773}: 'ꝳ'
-    pub const LATIN_SMALL_LETTER_MUM: char = 'ꝳ';
-    /// \u{a774}: 'ꝴ'
-    pub const LATIN_SMALL_LETTER_NUM: char = 'ꝴ';
-    /// \u{a775}: 'ꝵ'
-    pub const LATIN_SMALL_LETTER_RUM: char = 'ꝵ';
-    /// \u{a776}: 'ꝶ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_RUM: char = 'ꝶ';
-    /// \u{a777}: 'ꝷ'
-    pub const LATIN_SMALL_LETTER_TUM: char = 'ꝷ';
-    /// \u{a778}: 'ꝸ'
-    pub const LATIN_SMALL_LETTER_UM: char = 'ꝸ';
-    /// \u{a779}: 'Ꝺ'
-    pub const LATIN_CAPITAL_LETTER_INSULAR_D: char = 'Ꝺ';
-    /// \u{a77a}: 'ꝺ'
-    pub const LATIN_SMALL_LETTER_INSULAR_D: char = 'ꝺ';
-    /// \u{a77b}: 'Ꝼ'
-    pub const LATIN_CAPITAL_LETTER_INSULAR_F: char = 'Ꝼ';
-    /// \u{a77c}: 'ꝼ'
-    pub const LATIN_SMALL_LETTER_INSULAR_F: char = 'ꝼ';
-    /// \u{a77d}: 'Ᵹ'
-    pub const LATIN_CAPITAL_LETTER_INSULAR_G: char = 'Ᵹ';
-    /// \u{a77e}: 'Ꝿ'
-    pub const LATIN_CAPITAL_LETTER_TURNED_INSULAR_G: char = 'Ꝿ';
-    /// \u{a77f}: 'ꝿ'
-    pub const LATIN_SMALL_LETTER_TURNED_INSULAR_G: char = 'ꝿ';
-    /// \u{a780}: 'Ꞁ'
-    pub const LATIN_CAPITAL_LETTER_TURNED_L: char = 'Ꞁ';
-    /// \u{a781}: 'ꞁ'
-    pub const LATIN_SMALL_LETTER_TURNED_L: char = 'ꞁ';
-    /// \u{a782}: 'Ꞃ'
-    pub const LATIN_CAPITAL_LETTER_INSULAR_R: char = 'Ꞃ';
-    /// \u{a783}: 'ꞃ'
-    pub const LATIN_SMALL_LETTER_INSULAR_R: char = 'ꞃ';
-    /// \u{a784}: 'Ꞅ'
-    pub const LATIN_CAPITAL_LETTER_INSULAR_S: char = 'Ꞅ';
-    /// \u{a785}: 'ꞅ'
-    pub const LATIN_SMALL_LETTER_INSULAR_S: char = 'ꞅ';
-    /// \u{a786}: 'Ꞇ'
-    pub const LATIN_CAPITAL_LETTER_INSULAR_T: char = 'Ꞇ';
-    /// \u{a787}: 'ꞇ'
-    pub const LATIN_SMALL_LETTER_INSULAR_T: char = 'ꞇ';
-    /// \u{a788}: 'ꞈ'
-    pub const MODIFIER_LETTER_LOW_CIRCUMFLEX_ACCENT: char = 'ꞈ';
-    /// \u{a789}: '꞉'
-    pub const MODIFIER_LETTER_COLON: char = '꞉';
-    /// \u{a78a}: '꞊'
-    pub const MODIFIER_LETTER_SHORT_EQUALS_SIGN: char = '꞊';
-    /// \u{a78b}: 'Ꞌ'
-    pub const LATIN_CAPITAL_LETTER_SALTILLO: char = 'Ꞌ';
-    /// \u{a78c}: 'ꞌ'
-    pub const LATIN_SMALL_LETTER_SALTILLO: char = 'ꞌ';
-    /// \u{a78d}: 'Ɥ'
-    pub const LATIN_CAPITAL_LETTER_TURNED_H: char = 'Ɥ';
-    /// \u{a78e}: 'ꞎ'
-    pub const LATIN_SMALL_LETTER_L_WITH_RETROFLEX_HOOK_AND_BELT: char = 'ꞎ';
-    /// \u{a78f}: 'ꞏ'
-    pub const LATIN_LETTER_SINOLOGICAL_DOT: char = 'ꞏ';
-    /// \u{a790}: 'Ꞑ'
-    pub const LATIN_CAPITAL_LETTER_N_WITH_DESCENDER: char = 'Ꞑ';
-    /// \u{a791}: 'ꞑ'
-    pub const LATIN_SMALL_LETTER_N_WITH_DESCENDER: char = 'ꞑ';
-    /// \u{a792}: 'Ꞓ'
-    pub const LATIN_CAPITAL_LETTER_C_WITH_BAR: char = 'Ꞓ';
-    /// \u{a793}: 'ꞓ'
-    pub const LATIN_SMALL_LETTER_C_WITH_BAR: char = 'ꞓ';
-    /// \u{a794}: 'ꞔ'
-    pub const LATIN_SMALL_LETTER_C_WITH_PALATAL_HOOK: char = 'ꞔ';
-    /// \u{a795}: 'ꞕ'
-    pub const LATIN_SMALL_LETTER_H_WITH_PALATAL_HOOK: char = 'ꞕ';
-    /// \u{a796}: 'Ꞗ'
-    pub const LATIN_CAPITAL_LETTER_B_WITH_FLOURISH: char = 'Ꞗ';
-    /// \u{a797}: 'ꞗ'
-    pub const LATIN_SMALL_LETTER_B_WITH_FLOURISH: char = 'ꞗ';
-    /// \u{a798}: 'Ꞙ'
-    pub const LATIN_CAPITAL_LETTER_F_WITH_STROKE: char = 'Ꞙ';
-    /// \u{a799}: 'ꞙ'
-    pub const LATIN_SMALL_LETTER_F_WITH_STROKE: char = 'ꞙ';
-    /// \u{a79a}: 'Ꞛ'
-    pub const LATIN_CAPITAL_LETTER_VOLAPUK_AE: char = 'Ꞛ';
-    /// \u{a79b}: 'ꞛ'
-    pub const LATIN_SMALL_LETTER_VOLAPUK_AE: char = 'ꞛ';
-    /// \u{a79c}: 'Ꞝ'
-    pub const LATIN_CAPITAL_LETTER_VOLAPUK_OE: char = 'Ꞝ';
-    /// \u{a79d}: 'ꞝ'
-    pub const LATIN_SMALL_LETTER_VOLAPUK_OE: char = 'ꞝ';
-    /// \u{a79e}: 'Ꞟ'
-    pub const LATIN_CAPITAL_LETTER_VOLAPUK_UE: char = 'Ꞟ';
-    /// \u{a79f}: 'ꞟ'
-    pub const LATIN_SMALL_LETTER_VOLAPUK_UE: char = 'ꞟ';
-    /// \u{a7a0}: 'Ꞡ'
-    pub const LATIN_CAPITAL_LETTER_G_WITH_OBLIQUE_STROKE: char = 'Ꞡ';
-    /// \u{a7a1}: 'ꞡ'
-    pub const LATIN_SMALL_LETTER_G_WITH_OBLIQUE_STROKE: char = 'ꞡ';
-    /// \u{a7a2}: 'Ꞣ'
-    pub const LATIN_CAPITAL_LETTER_K_WITH_OBLIQUE_STROKE: char = 'Ꞣ';
-    /// \u{a7a3}: 'ꞣ'
-    pub const LATIN_SMALL_LETTER_K_WITH_OBLIQUE_STROKE: char = 'ꞣ';
-    /// \u{a7a4}: 'Ꞥ'
-    pub const LATIN_CAPITAL_LETTER_N_WITH_OBLIQUE_STROKE: char = 'Ꞥ';
-    /// \u{a7a5}: 'ꞥ'
-    pub const LATIN_SMALL_LETTER_N_WITH_OBLIQUE_STROKE: char = 'ꞥ';
-    /// \u{a7a6}: 'Ꞧ'
-    pub const LATIN_CAPITAL_LETTER_R_WITH_OBLIQUE_STROKE: char = 'Ꞧ';
-    /// \u{a7a7}: 'ꞧ'
-    pub const LATIN_SMALL_LETTER_R_WITH_OBLIQUE_STROKE: char = 'ꞧ';
-    /// \u{a7a8}: 'Ꞩ'
-    pub const LATIN_CAPITAL_LETTER_S_WITH_OBLIQUE_STROKE: char = 'Ꞩ';
-    /// \u{a7a9}: 'ꞩ'
-    pub const LATIN_SMALL_LETTER_S_WITH_OBLIQUE_STROKE: char = 'ꞩ';
-    /// \u{a7aa}: 'Ɦ'
-    pub const LATIN_CAPITAL_LETTER_H_WITH_HOOK: char = 'Ɦ';
-    /// \u{a7ab}: 'Ɜ'
-    pub const LATIN_CAPITAL_LETTER_REVERSED_OPEN_E: char = 'Ɜ';
-    /// \u{a7ac}: 'Ɡ'
-    pub const LATIN_CAPITAL_LETTER_SCRIPT_G: char = 'Ɡ';
-    /// \u{a7ad}: 'Ɬ'
-    pub const LATIN_CAPITAL_LETTER_L_WITH_BELT: char = 'Ɬ';
-    /// \u{a7ae}: 'Ɪ'
-    pub const LATIN_CAPITAL_LETTER_SMALL_CAPITAL_I: char = 'Ɪ';
-    /// \u{a7af}: 'ꞯ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_Q: char = 'ꞯ';
-    /// \u{a7b0}: 'Ʞ'
-    pub const LATIN_CAPITAL_LETTER_TURNED_K: char = 'Ʞ';
-    /// \u{a7b1}: 'Ʇ'
-    pub const LATIN_CAPITAL_LETTER_TURNED_T: char = 'Ʇ';
-    /// \u{a7b2}: 'Ʝ'
-    pub const LATIN_CAPITAL_LETTER_J_WITH_CROSSED_DASH_TAIL: char = 'Ʝ';
-    /// \u{a7b3}: 'Ꭓ'
-    pub const LATIN_CAPITAL_LETTER_CHI: char = 'Ꭓ';
-    /// \u{a7b4}: 'Ꞵ'
-    pub const LATIN_CAPITAL_LETTER_BETA: char = 'Ꞵ';
-    /// \u{a7b5}: 'ꞵ'
-    pub const LATIN_SMALL_LETTER_BETA: char = 'ꞵ';
-    /// \u{a7b6}: 'Ꞷ'
-    pub const LATIN_CAPITAL_LETTER_OMEGA: char = 'Ꞷ';
-    /// \u{a7b7}: 'ꞷ'
-    pub const LATIN_SMALL_LETTER_OMEGA: char = 'ꞷ';
-    /// \u{a7b8}: 'Ꞹ'
-    pub const LATIN_CAPITAL_LETTER_U_WITH_STROKE: char = 'Ꞹ';
-    /// \u{a7b9}: 'ꞹ'
-    pub const LATIN_SMALL_LETTER_U_WITH_STROKE: char = 'ꞹ';
-    /// \u{a7ba}: 'Ꞻ'
-    pub const LATIN_CAPITAL_LETTER_GLOTTAL_A: char = 'Ꞻ';
-    /// \u{a7bb}: 'ꞻ'
-    pub const LATIN_SMALL_LETTER_GLOTTAL_A: char = 'ꞻ';
-    /// \u{a7bc}: 'Ꞽ'
-    pub const LATIN_CAPITAL_LETTER_GLOTTAL_I: char = 'Ꞽ';
-    /// \u{a7bd}: 'ꞽ'
-    pub const LATIN_SMALL_LETTER_GLOTTAL_I: char = 'ꞽ';
-    /// \u{a7be}: 'Ꞿ'
-    pub const LATIN_CAPITAL_LETTER_GLOTTAL_U: char = 'Ꞿ';
-    /// \u{a7bf}: 'ꞿ'
-    pub const LATIN_SMALL_LETTER_GLOTTAL_U: char = 'ꞿ';
-    /// \u{a7c2}: 'Ꟃ'
-    pub const LATIN_CAPITAL_LETTER_ANGLICANA_W: char = 'Ꟃ';
-    /// \u{a7c3}: 'ꟃ'
-    pub const LATIN_SMALL_LETTER_ANGLICANA_W: char = 'ꟃ';
-    /// \u{a7c4}: 'Ꞔ'
-    pub const LATIN_CAPITAL_LETTER_C_WITH_PALATAL_HOOK: char = 'Ꞔ';
-    /// \u{a7c5}: 'Ʂ'
-    pub const LATIN_CAPITAL_LETTER_S_WITH_HOOK: char = 'Ʂ';
-    /// \u{a7c6}: 'Ᶎ'
-    pub const LATIN_CAPITAL_LETTER_Z_WITH_PALATAL_HOOK: char = 'Ᶎ';
-    /// \u{a7f7}: 'ꟷ'
-    pub const LATIN_EPIGRAPHIC_LETTER_SIDEWAYS_I: char = 'ꟷ';
-    /// \u{a7f8}: 'ꟸ'
-    pub const MODIFIER_LETTER_CAPITAL_H_WITH_STROKE: char = 'ꟸ';
-    /// \u{a7f9}: 'ꟹ'
-    pub const MODIFIER_LETTER_SMALL_LIGATURE_OE: char = 'ꟹ';
-    /// \u{a7fa}: 'ꟺ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_TURNED_M: char = 'ꟺ';
-    /// \u{a7fb}: 'ꟻ'
-    pub const LATIN_EPIGRAPHIC_LETTER_REVERSED_F: char = 'ꟻ';
-    /// \u{a7fc}: 'ꟼ'
-    pub const LATIN_EPIGRAPHIC_LETTER_REVERSED_P: char = 'ꟼ';
-    /// \u{a7fd}: 'ꟽ'
-    pub const LATIN_EPIGRAPHIC_LETTER_INVERTED_M: char = 'ꟽ';
-    /// \u{a7fe}: 'ꟾ'
-    pub const LATIN_EPIGRAPHIC_LETTER_I_LONGA: char = 'ꟾ';
-}
 
 /// An enum to represent all characters in the LatinExtendedD block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -701,181 +352,180 @@ pub enum LatinExtendedD {
 
 impl Into<char> for LatinExtendedD {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            LatinExtendedD::ModifierLetterStressAndHighTone => MODIFIER_LETTER_STRESS_AND_HIGH_TONE,
-            LatinExtendedD::ModifierLetterStressAndLowTone => MODIFIER_LETTER_STRESS_AND_LOW_TONE,
-            LatinExtendedD::LatinCapitalLetterEgyptologicalAlef => LATIN_CAPITAL_LETTER_EGYPTOLOGICAL_ALEF,
-            LatinExtendedD::LatinSmallLetterEgyptologicalAlef => LATIN_SMALL_LETTER_EGYPTOLOGICAL_ALEF,
-            LatinExtendedD::LatinCapitalLetterEgyptologicalAin => LATIN_CAPITAL_LETTER_EGYPTOLOGICAL_AIN,
-            LatinExtendedD::LatinSmallLetterEgyptologicalAin => LATIN_SMALL_LETTER_EGYPTOLOGICAL_AIN,
-            LatinExtendedD::LatinCapitalLetterHeng => LATIN_CAPITAL_LETTER_HENG,
-            LatinExtendedD::LatinSmallLetterHeng => LATIN_SMALL_LETTER_HENG,
-            LatinExtendedD::LatinCapitalLetterTz => LATIN_CAPITAL_LETTER_TZ,
-            LatinExtendedD::LatinSmallLetterTz => LATIN_SMALL_LETTER_TZ,
-            LatinExtendedD::LatinCapitalLetterTresillo => LATIN_CAPITAL_LETTER_TRESILLO,
-            LatinExtendedD::LatinSmallLetterTresillo => LATIN_SMALL_LETTER_TRESILLO,
-            LatinExtendedD::LatinCapitalLetterCuatrillo => LATIN_CAPITAL_LETTER_CUATRILLO,
-            LatinExtendedD::LatinSmallLetterCuatrillo => LATIN_SMALL_LETTER_CUATRILLO,
-            LatinExtendedD::LatinCapitalLetterCuatrilloWithComma => LATIN_CAPITAL_LETTER_CUATRILLO_WITH_COMMA,
-            LatinExtendedD::LatinSmallLetterCuatrilloWithComma => LATIN_SMALL_LETTER_CUATRILLO_WITH_COMMA,
-            LatinExtendedD::LatinLetterSmallCapitalF => LATIN_LETTER_SMALL_CAPITAL_F,
-            LatinExtendedD::LatinLetterSmallCapitalS => LATIN_LETTER_SMALL_CAPITAL_S,
-            LatinExtendedD::LatinCapitalLetterAa => LATIN_CAPITAL_LETTER_AA,
-            LatinExtendedD::LatinSmallLetterAa => LATIN_SMALL_LETTER_AA,
-            LatinExtendedD::LatinCapitalLetterAo => LATIN_CAPITAL_LETTER_AO,
-            LatinExtendedD::LatinSmallLetterAo => LATIN_SMALL_LETTER_AO,
-            LatinExtendedD::LatinCapitalLetterAu => LATIN_CAPITAL_LETTER_AU,
-            LatinExtendedD::LatinSmallLetterAu => LATIN_SMALL_LETTER_AU,
-            LatinExtendedD::LatinCapitalLetterAv => LATIN_CAPITAL_LETTER_AV,
-            LatinExtendedD::LatinSmallLetterAv => LATIN_SMALL_LETTER_AV,
-            LatinExtendedD::LatinCapitalLetterAvWithHorizontalBar => LATIN_CAPITAL_LETTER_AV_WITH_HORIZONTAL_BAR,
-            LatinExtendedD::LatinSmallLetterAvWithHorizontalBar => LATIN_SMALL_LETTER_AV_WITH_HORIZONTAL_BAR,
-            LatinExtendedD::LatinCapitalLetterAy => LATIN_CAPITAL_LETTER_AY,
-            LatinExtendedD::LatinSmallLetterAy => LATIN_SMALL_LETTER_AY,
-            LatinExtendedD::LatinCapitalLetterReversedCWithDot => LATIN_CAPITAL_LETTER_REVERSED_C_WITH_DOT,
-            LatinExtendedD::LatinSmallLetterReversedCWithDot => LATIN_SMALL_LETTER_REVERSED_C_WITH_DOT,
-            LatinExtendedD::LatinCapitalLetterKWithStroke => LATIN_CAPITAL_LETTER_K_WITH_STROKE,
-            LatinExtendedD::LatinSmallLetterKWithStroke => LATIN_SMALL_LETTER_K_WITH_STROKE,
-            LatinExtendedD::LatinCapitalLetterKWithDiagonalStroke => LATIN_CAPITAL_LETTER_K_WITH_DIAGONAL_STROKE,
-            LatinExtendedD::LatinSmallLetterKWithDiagonalStroke => LATIN_SMALL_LETTER_K_WITH_DIAGONAL_STROKE,
-            LatinExtendedD::LatinCapitalLetterKWithStrokeAndDiagonalStroke => LATIN_CAPITAL_LETTER_K_WITH_STROKE_AND_DIAGONAL_STROKE,
-            LatinExtendedD::LatinSmallLetterKWithStrokeAndDiagonalStroke => LATIN_SMALL_LETTER_K_WITH_STROKE_AND_DIAGONAL_STROKE,
-            LatinExtendedD::LatinCapitalLetterBrokenL => LATIN_CAPITAL_LETTER_BROKEN_L,
-            LatinExtendedD::LatinSmallLetterBrokenL => LATIN_SMALL_LETTER_BROKEN_L,
-            LatinExtendedD::LatinCapitalLetterLWithHighStroke => LATIN_CAPITAL_LETTER_L_WITH_HIGH_STROKE,
-            LatinExtendedD::LatinSmallLetterLWithHighStroke => LATIN_SMALL_LETTER_L_WITH_HIGH_STROKE,
-            LatinExtendedD::LatinCapitalLetterOWithLongStrokeOverlay => LATIN_CAPITAL_LETTER_O_WITH_LONG_STROKE_OVERLAY,
-            LatinExtendedD::LatinSmallLetterOWithLongStrokeOverlay => LATIN_SMALL_LETTER_O_WITH_LONG_STROKE_OVERLAY,
-            LatinExtendedD::LatinCapitalLetterOWithLoop => LATIN_CAPITAL_LETTER_O_WITH_LOOP,
-            LatinExtendedD::LatinSmallLetterOWithLoop => LATIN_SMALL_LETTER_O_WITH_LOOP,
-            LatinExtendedD::LatinCapitalLetterOo => LATIN_CAPITAL_LETTER_OO,
-            LatinExtendedD::LatinSmallLetterOo => LATIN_SMALL_LETTER_OO,
-            LatinExtendedD::LatinCapitalLetterPWithStrokeThroughDescender => LATIN_CAPITAL_LETTER_P_WITH_STROKE_THROUGH_DESCENDER,
-            LatinExtendedD::LatinSmallLetterPWithStrokeThroughDescender => LATIN_SMALL_LETTER_P_WITH_STROKE_THROUGH_DESCENDER,
-            LatinExtendedD::LatinCapitalLetterPWithFlourish => LATIN_CAPITAL_LETTER_P_WITH_FLOURISH,
-            LatinExtendedD::LatinSmallLetterPWithFlourish => LATIN_SMALL_LETTER_P_WITH_FLOURISH,
-            LatinExtendedD::LatinCapitalLetterPWithSquirrelTail => LATIN_CAPITAL_LETTER_P_WITH_SQUIRREL_TAIL,
-            LatinExtendedD::LatinSmallLetterPWithSquirrelTail => LATIN_SMALL_LETTER_P_WITH_SQUIRREL_TAIL,
-            LatinExtendedD::LatinCapitalLetterQWithStrokeThroughDescender => LATIN_CAPITAL_LETTER_Q_WITH_STROKE_THROUGH_DESCENDER,
-            LatinExtendedD::LatinSmallLetterQWithStrokeThroughDescender => LATIN_SMALL_LETTER_Q_WITH_STROKE_THROUGH_DESCENDER,
-            LatinExtendedD::LatinCapitalLetterQWithDiagonalStroke => LATIN_CAPITAL_LETTER_Q_WITH_DIAGONAL_STROKE,
-            LatinExtendedD::LatinSmallLetterQWithDiagonalStroke => LATIN_SMALL_LETTER_Q_WITH_DIAGONAL_STROKE,
-            LatinExtendedD::LatinCapitalLetterRRotunda => LATIN_CAPITAL_LETTER_R_ROTUNDA,
-            LatinExtendedD::LatinSmallLetterRRotunda => LATIN_SMALL_LETTER_R_ROTUNDA,
-            LatinExtendedD::LatinCapitalLetterRumRotunda => LATIN_CAPITAL_LETTER_RUM_ROTUNDA,
-            LatinExtendedD::LatinSmallLetterRumRotunda => LATIN_SMALL_LETTER_RUM_ROTUNDA,
-            LatinExtendedD::LatinCapitalLetterVWithDiagonalStroke => LATIN_CAPITAL_LETTER_V_WITH_DIAGONAL_STROKE,
-            LatinExtendedD::LatinSmallLetterVWithDiagonalStroke => LATIN_SMALL_LETTER_V_WITH_DIAGONAL_STROKE,
-            LatinExtendedD::LatinCapitalLetterVy => LATIN_CAPITAL_LETTER_VY,
-            LatinExtendedD::LatinSmallLetterVy => LATIN_SMALL_LETTER_VY,
-            LatinExtendedD::LatinCapitalLetterVisigothicZ => LATIN_CAPITAL_LETTER_VISIGOTHIC_Z,
-            LatinExtendedD::LatinSmallLetterVisigothicZ => LATIN_SMALL_LETTER_VISIGOTHIC_Z,
-            LatinExtendedD::LatinCapitalLetterThornWithStroke => LATIN_CAPITAL_LETTER_THORN_WITH_STROKE,
-            LatinExtendedD::LatinSmallLetterThornWithStroke => LATIN_SMALL_LETTER_THORN_WITH_STROKE,
-            LatinExtendedD::LatinCapitalLetterThornWithStrokeThroughDescender => LATIN_CAPITAL_LETTER_THORN_WITH_STROKE_THROUGH_DESCENDER,
-            LatinExtendedD::LatinSmallLetterThornWithStrokeThroughDescender => LATIN_SMALL_LETTER_THORN_WITH_STROKE_THROUGH_DESCENDER,
-            LatinExtendedD::LatinCapitalLetterVend => LATIN_CAPITAL_LETTER_VEND,
-            LatinExtendedD::LatinSmallLetterVend => LATIN_SMALL_LETTER_VEND,
-            LatinExtendedD::LatinCapitalLetterEt => LATIN_CAPITAL_LETTER_ET,
-            LatinExtendedD::LatinSmallLetterEt => LATIN_SMALL_LETTER_ET,
-            LatinExtendedD::LatinCapitalLetterIs => LATIN_CAPITAL_LETTER_IS,
-            LatinExtendedD::LatinSmallLetterIs => LATIN_SMALL_LETTER_IS,
-            LatinExtendedD::LatinCapitalLetterCon => LATIN_CAPITAL_LETTER_CON,
-            LatinExtendedD::LatinSmallLetterCon => LATIN_SMALL_LETTER_CON,
-            LatinExtendedD::ModifierLetterUs => MODIFIER_LETTER_US,
-            LatinExtendedD::LatinSmallLetterDum => LATIN_SMALL_LETTER_DUM,
-            LatinExtendedD::LatinSmallLetterLum => LATIN_SMALL_LETTER_LUM,
-            LatinExtendedD::LatinSmallLetterMum => LATIN_SMALL_LETTER_MUM,
-            LatinExtendedD::LatinSmallLetterNum => LATIN_SMALL_LETTER_NUM,
-            LatinExtendedD::LatinSmallLetterRum => LATIN_SMALL_LETTER_RUM,
-            LatinExtendedD::LatinLetterSmallCapitalRum => LATIN_LETTER_SMALL_CAPITAL_RUM,
-            LatinExtendedD::LatinSmallLetterTum => LATIN_SMALL_LETTER_TUM,
-            LatinExtendedD::LatinSmallLetterUm => LATIN_SMALL_LETTER_UM,
-            LatinExtendedD::LatinCapitalLetterInsularD => LATIN_CAPITAL_LETTER_INSULAR_D,
-            LatinExtendedD::LatinSmallLetterInsularD => LATIN_SMALL_LETTER_INSULAR_D,
-            LatinExtendedD::LatinCapitalLetterInsularF => LATIN_CAPITAL_LETTER_INSULAR_F,
-            LatinExtendedD::LatinSmallLetterInsularF => LATIN_SMALL_LETTER_INSULAR_F,
-            LatinExtendedD::LatinCapitalLetterInsularG => LATIN_CAPITAL_LETTER_INSULAR_G,
-            LatinExtendedD::LatinCapitalLetterTurnedInsularG => LATIN_CAPITAL_LETTER_TURNED_INSULAR_G,
-            LatinExtendedD::LatinSmallLetterTurnedInsularG => LATIN_SMALL_LETTER_TURNED_INSULAR_G,
-            LatinExtendedD::LatinCapitalLetterTurnedL => LATIN_CAPITAL_LETTER_TURNED_L,
-            LatinExtendedD::LatinSmallLetterTurnedL => LATIN_SMALL_LETTER_TURNED_L,
-            LatinExtendedD::LatinCapitalLetterInsularR => LATIN_CAPITAL_LETTER_INSULAR_R,
-            LatinExtendedD::LatinSmallLetterInsularR => LATIN_SMALL_LETTER_INSULAR_R,
-            LatinExtendedD::LatinCapitalLetterInsularS => LATIN_CAPITAL_LETTER_INSULAR_S,
-            LatinExtendedD::LatinSmallLetterInsularS => LATIN_SMALL_LETTER_INSULAR_S,
-            LatinExtendedD::LatinCapitalLetterInsularT => LATIN_CAPITAL_LETTER_INSULAR_T,
-            LatinExtendedD::LatinSmallLetterInsularT => LATIN_SMALL_LETTER_INSULAR_T,
-            LatinExtendedD::ModifierLetterLowCircumflexAccent => MODIFIER_LETTER_LOW_CIRCUMFLEX_ACCENT,
-            LatinExtendedD::ModifierLetterColon => MODIFIER_LETTER_COLON,
-            LatinExtendedD::ModifierLetterShortEqualsSign => MODIFIER_LETTER_SHORT_EQUALS_SIGN,
-            LatinExtendedD::LatinCapitalLetterSaltillo => LATIN_CAPITAL_LETTER_SALTILLO,
-            LatinExtendedD::LatinSmallLetterSaltillo => LATIN_SMALL_LETTER_SALTILLO,
-            LatinExtendedD::LatinCapitalLetterTurnedH => LATIN_CAPITAL_LETTER_TURNED_H,
-            LatinExtendedD::LatinSmallLetterLWithRetroflexHookAndBelt => LATIN_SMALL_LETTER_L_WITH_RETROFLEX_HOOK_AND_BELT,
-            LatinExtendedD::LatinLetterSinologicalDot => LATIN_LETTER_SINOLOGICAL_DOT,
-            LatinExtendedD::LatinCapitalLetterNWithDescender => LATIN_CAPITAL_LETTER_N_WITH_DESCENDER,
-            LatinExtendedD::LatinSmallLetterNWithDescender => LATIN_SMALL_LETTER_N_WITH_DESCENDER,
-            LatinExtendedD::LatinCapitalLetterCWithBar => LATIN_CAPITAL_LETTER_C_WITH_BAR,
-            LatinExtendedD::LatinSmallLetterCWithBar => LATIN_SMALL_LETTER_C_WITH_BAR,
-            LatinExtendedD::LatinSmallLetterCWithPalatalHook => LATIN_SMALL_LETTER_C_WITH_PALATAL_HOOK,
-            LatinExtendedD::LatinSmallLetterHWithPalatalHook => LATIN_SMALL_LETTER_H_WITH_PALATAL_HOOK,
-            LatinExtendedD::LatinCapitalLetterBWithFlourish => LATIN_CAPITAL_LETTER_B_WITH_FLOURISH,
-            LatinExtendedD::LatinSmallLetterBWithFlourish => LATIN_SMALL_LETTER_B_WITH_FLOURISH,
-            LatinExtendedD::LatinCapitalLetterFWithStroke => LATIN_CAPITAL_LETTER_F_WITH_STROKE,
-            LatinExtendedD::LatinSmallLetterFWithStroke => LATIN_SMALL_LETTER_F_WITH_STROKE,
-            LatinExtendedD::LatinCapitalLetterVolapukAe => LATIN_CAPITAL_LETTER_VOLAPUK_AE,
-            LatinExtendedD::LatinSmallLetterVolapukAe => LATIN_SMALL_LETTER_VOLAPUK_AE,
-            LatinExtendedD::LatinCapitalLetterVolapukOe => LATIN_CAPITAL_LETTER_VOLAPUK_OE,
-            LatinExtendedD::LatinSmallLetterVolapukOe => LATIN_SMALL_LETTER_VOLAPUK_OE,
-            LatinExtendedD::LatinCapitalLetterVolapukUe => LATIN_CAPITAL_LETTER_VOLAPUK_UE,
-            LatinExtendedD::LatinSmallLetterVolapukUe => LATIN_SMALL_LETTER_VOLAPUK_UE,
-            LatinExtendedD::LatinCapitalLetterGWithObliqueStroke => LATIN_CAPITAL_LETTER_G_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinSmallLetterGWithObliqueStroke => LATIN_SMALL_LETTER_G_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinCapitalLetterKWithObliqueStroke => LATIN_CAPITAL_LETTER_K_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinSmallLetterKWithObliqueStroke => LATIN_SMALL_LETTER_K_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinCapitalLetterNWithObliqueStroke => LATIN_CAPITAL_LETTER_N_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinSmallLetterNWithObliqueStroke => LATIN_SMALL_LETTER_N_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinCapitalLetterRWithObliqueStroke => LATIN_CAPITAL_LETTER_R_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinSmallLetterRWithObliqueStroke => LATIN_SMALL_LETTER_R_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinCapitalLetterSWithObliqueStroke => LATIN_CAPITAL_LETTER_S_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinSmallLetterSWithObliqueStroke => LATIN_SMALL_LETTER_S_WITH_OBLIQUE_STROKE,
-            LatinExtendedD::LatinCapitalLetterHWithHook => LATIN_CAPITAL_LETTER_H_WITH_HOOK,
-            LatinExtendedD::LatinCapitalLetterReversedOpenE => LATIN_CAPITAL_LETTER_REVERSED_OPEN_E,
-            LatinExtendedD::LatinCapitalLetterScriptG => LATIN_CAPITAL_LETTER_SCRIPT_G,
-            LatinExtendedD::LatinCapitalLetterLWithBelt => LATIN_CAPITAL_LETTER_L_WITH_BELT,
-            LatinExtendedD::LatinCapitalLetterSmallCapitalI => LATIN_CAPITAL_LETTER_SMALL_CAPITAL_I,
-            LatinExtendedD::LatinLetterSmallCapitalQ => LATIN_LETTER_SMALL_CAPITAL_Q,
-            LatinExtendedD::LatinCapitalLetterTurnedK => LATIN_CAPITAL_LETTER_TURNED_K,
-            LatinExtendedD::LatinCapitalLetterTurnedT => LATIN_CAPITAL_LETTER_TURNED_T,
-            LatinExtendedD::LatinCapitalLetterJWithCrossedDashTail => LATIN_CAPITAL_LETTER_J_WITH_CROSSED_DASH_TAIL,
-            LatinExtendedD::LatinCapitalLetterChi => LATIN_CAPITAL_LETTER_CHI,
-            LatinExtendedD::LatinCapitalLetterBeta => LATIN_CAPITAL_LETTER_BETA,
-            LatinExtendedD::LatinSmallLetterBeta => LATIN_SMALL_LETTER_BETA,
-            LatinExtendedD::LatinCapitalLetterOmega => LATIN_CAPITAL_LETTER_OMEGA,
-            LatinExtendedD::LatinSmallLetterOmega => LATIN_SMALL_LETTER_OMEGA,
-            LatinExtendedD::LatinCapitalLetterUWithStroke => LATIN_CAPITAL_LETTER_U_WITH_STROKE,
-            LatinExtendedD::LatinSmallLetterUWithStroke => LATIN_SMALL_LETTER_U_WITH_STROKE,
-            LatinExtendedD::LatinCapitalLetterGlottalA => LATIN_CAPITAL_LETTER_GLOTTAL_A,
-            LatinExtendedD::LatinSmallLetterGlottalA => LATIN_SMALL_LETTER_GLOTTAL_A,
-            LatinExtendedD::LatinCapitalLetterGlottalI => LATIN_CAPITAL_LETTER_GLOTTAL_I,
-            LatinExtendedD::LatinSmallLetterGlottalI => LATIN_SMALL_LETTER_GLOTTAL_I,
-            LatinExtendedD::LatinCapitalLetterGlottalU => LATIN_CAPITAL_LETTER_GLOTTAL_U,
-            LatinExtendedD::LatinSmallLetterGlottalU => LATIN_SMALL_LETTER_GLOTTAL_U,
-            LatinExtendedD::LatinCapitalLetterAnglicanaW => LATIN_CAPITAL_LETTER_ANGLICANA_W,
-            LatinExtendedD::LatinSmallLetterAnglicanaW => LATIN_SMALL_LETTER_ANGLICANA_W,
-            LatinExtendedD::LatinCapitalLetterCWithPalatalHook => LATIN_CAPITAL_LETTER_C_WITH_PALATAL_HOOK,
-            LatinExtendedD::LatinCapitalLetterSWithHook => LATIN_CAPITAL_LETTER_S_WITH_HOOK,
-            LatinExtendedD::LatinCapitalLetterZWithPalatalHook => LATIN_CAPITAL_LETTER_Z_WITH_PALATAL_HOOK,
-            LatinExtendedD::LatinEpigraphicLetterSidewaysI => LATIN_EPIGRAPHIC_LETTER_SIDEWAYS_I,
-            LatinExtendedD::ModifierLetterCapitalHWithStroke => MODIFIER_LETTER_CAPITAL_H_WITH_STROKE,
-            LatinExtendedD::ModifierLetterSmallLigatureOe => MODIFIER_LETTER_SMALL_LIGATURE_OE,
-            LatinExtendedD::LatinLetterSmallCapitalTurnedM => LATIN_LETTER_SMALL_CAPITAL_TURNED_M,
-            LatinExtendedD::LatinEpigraphicLetterReversedF => LATIN_EPIGRAPHIC_LETTER_REVERSED_F,
-            LatinExtendedD::LatinEpigraphicLetterReversedP => LATIN_EPIGRAPHIC_LETTER_REVERSED_P,
-            LatinExtendedD::LatinEpigraphicLetterInvertedM => LATIN_EPIGRAPHIC_LETTER_INVERTED_M,
-            LatinExtendedD::LatinEpigraphicLetterILonga => LATIN_EPIGRAPHIC_LETTER_I_LONGA,
+            LatinExtendedD::ModifierLetterStressAndHighTone => '꜠',
+            LatinExtendedD::ModifierLetterStressAndLowTone => '꜡',
+            LatinExtendedD::LatinCapitalLetterEgyptologicalAlef => 'Ꜣ',
+            LatinExtendedD::LatinSmallLetterEgyptologicalAlef => 'ꜣ',
+            LatinExtendedD::LatinCapitalLetterEgyptologicalAin => 'Ꜥ',
+            LatinExtendedD::LatinSmallLetterEgyptologicalAin => 'ꜥ',
+            LatinExtendedD::LatinCapitalLetterHeng => 'Ꜧ',
+            LatinExtendedD::LatinSmallLetterHeng => 'ꜧ',
+            LatinExtendedD::LatinCapitalLetterTz => 'Ꜩ',
+            LatinExtendedD::LatinSmallLetterTz => 'ꜩ',
+            LatinExtendedD::LatinCapitalLetterTresillo => 'Ꜫ',
+            LatinExtendedD::LatinSmallLetterTresillo => 'ꜫ',
+            LatinExtendedD::LatinCapitalLetterCuatrillo => 'Ꜭ',
+            LatinExtendedD::LatinSmallLetterCuatrillo => 'ꜭ',
+            LatinExtendedD::LatinCapitalLetterCuatrilloWithComma => 'Ꜯ',
+            LatinExtendedD::LatinSmallLetterCuatrilloWithComma => 'ꜯ',
+            LatinExtendedD::LatinLetterSmallCapitalF => 'ꜰ',
+            LatinExtendedD::LatinLetterSmallCapitalS => 'ꜱ',
+            LatinExtendedD::LatinCapitalLetterAa => 'Ꜳ',
+            LatinExtendedD::LatinSmallLetterAa => 'ꜳ',
+            LatinExtendedD::LatinCapitalLetterAo => 'Ꜵ',
+            LatinExtendedD::LatinSmallLetterAo => 'ꜵ',
+            LatinExtendedD::LatinCapitalLetterAu => 'Ꜷ',
+            LatinExtendedD::LatinSmallLetterAu => 'ꜷ',
+            LatinExtendedD::LatinCapitalLetterAv => 'Ꜹ',
+            LatinExtendedD::LatinSmallLetterAv => 'ꜹ',
+            LatinExtendedD::LatinCapitalLetterAvWithHorizontalBar => 'Ꜻ',
+            LatinExtendedD::LatinSmallLetterAvWithHorizontalBar => 'ꜻ',
+            LatinExtendedD::LatinCapitalLetterAy => 'Ꜽ',
+            LatinExtendedD::LatinSmallLetterAy => 'ꜽ',
+            LatinExtendedD::LatinCapitalLetterReversedCWithDot => 'Ꜿ',
+            LatinExtendedD::LatinSmallLetterReversedCWithDot => 'ꜿ',
+            LatinExtendedD::LatinCapitalLetterKWithStroke => 'Ꝁ',
+            LatinExtendedD::LatinSmallLetterKWithStroke => 'ꝁ',
+            LatinExtendedD::LatinCapitalLetterKWithDiagonalStroke => 'Ꝃ',
+            LatinExtendedD::LatinSmallLetterKWithDiagonalStroke => 'ꝃ',
+            LatinExtendedD::LatinCapitalLetterKWithStrokeAndDiagonalStroke => 'Ꝅ',
+            LatinExtendedD::LatinSmallLetterKWithStrokeAndDiagonalStroke => 'ꝅ',
+            LatinExtendedD::LatinCapitalLetterBrokenL => 'Ꝇ',
+            LatinExtendedD::LatinSmallLetterBrokenL => 'ꝇ',
+            LatinExtendedD::LatinCapitalLetterLWithHighStroke => 'Ꝉ',
+            LatinExtendedD::LatinSmallLetterLWithHighStroke => 'ꝉ',
+            LatinExtendedD::LatinCapitalLetterOWithLongStrokeOverlay => 'Ꝋ',
+            LatinExtendedD::LatinSmallLetterOWithLongStrokeOverlay => 'ꝋ',
+            LatinExtendedD::LatinCapitalLetterOWithLoop => 'Ꝍ',
+            LatinExtendedD::LatinSmallLetterOWithLoop => 'ꝍ',
+            LatinExtendedD::LatinCapitalLetterOo => 'Ꝏ',
+            LatinExtendedD::LatinSmallLetterOo => 'ꝏ',
+            LatinExtendedD::LatinCapitalLetterPWithStrokeThroughDescender => 'Ꝑ',
+            LatinExtendedD::LatinSmallLetterPWithStrokeThroughDescender => 'ꝑ',
+            LatinExtendedD::LatinCapitalLetterPWithFlourish => 'Ꝓ',
+            LatinExtendedD::LatinSmallLetterPWithFlourish => 'ꝓ',
+            LatinExtendedD::LatinCapitalLetterPWithSquirrelTail => 'Ꝕ',
+            LatinExtendedD::LatinSmallLetterPWithSquirrelTail => 'ꝕ',
+            LatinExtendedD::LatinCapitalLetterQWithStrokeThroughDescender => 'Ꝗ',
+            LatinExtendedD::LatinSmallLetterQWithStrokeThroughDescender => 'ꝗ',
+            LatinExtendedD::LatinCapitalLetterQWithDiagonalStroke => 'Ꝙ',
+            LatinExtendedD::LatinSmallLetterQWithDiagonalStroke => 'ꝙ',
+            LatinExtendedD::LatinCapitalLetterRRotunda => 'Ꝛ',
+            LatinExtendedD::LatinSmallLetterRRotunda => 'ꝛ',
+            LatinExtendedD::LatinCapitalLetterRumRotunda => 'Ꝝ',
+            LatinExtendedD::LatinSmallLetterRumRotunda => 'ꝝ',
+            LatinExtendedD::LatinCapitalLetterVWithDiagonalStroke => 'Ꝟ',
+            LatinExtendedD::LatinSmallLetterVWithDiagonalStroke => 'ꝟ',
+            LatinExtendedD::LatinCapitalLetterVy => 'Ꝡ',
+            LatinExtendedD::LatinSmallLetterVy => 'ꝡ',
+            LatinExtendedD::LatinCapitalLetterVisigothicZ => 'Ꝣ',
+            LatinExtendedD::LatinSmallLetterVisigothicZ => 'ꝣ',
+            LatinExtendedD::LatinCapitalLetterThornWithStroke => 'Ꝥ',
+            LatinExtendedD::LatinSmallLetterThornWithStroke => 'ꝥ',
+            LatinExtendedD::LatinCapitalLetterThornWithStrokeThroughDescender => 'Ꝧ',
+            LatinExtendedD::LatinSmallLetterThornWithStrokeThroughDescender => 'ꝧ',
+            LatinExtendedD::LatinCapitalLetterVend => 'Ꝩ',
+            LatinExtendedD::LatinSmallLetterVend => 'ꝩ',
+            LatinExtendedD::LatinCapitalLetterEt => 'Ꝫ',
+            LatinExtendedD::LatinSmallLetterEt => 'ꝫ',
+            LatinExtendedD::LatinCapitalLetterIs => 'Ꝭ',
+            LatinExtendedD::LatinSmallLetterIs => 'ꝭ',
+            LatinExtendedD::LatinCapitalLetterCon => 'Ꝯ',
+            LatinExtendedD::LatinSmallLetterCon => 'ꝯ',
+            LatinExtendedD::ModifierLetterUs => 'ꝰ',
+            LatinExtendedD::LatinSmallLetterDum => 'ꝱ',
+            LatinExtendedD::LatinSmallLetterLum => 'ꝲ',
+            LatinExtendedD::LatinSmallLetterMum => 'ꝳ',
+            LatinExtendedD::LatinSmallLetterNum => 'ꝴ',
+            LatinExtendedD::LatinSmallLetterRum => 'ꝵ',
+            LatinExtendedD::LatinLetterSmallCapitalRum => 'ꝶ',
+            LatinExtendedD::LatinSmallLetterTum => 'ꝷ',
+            LatinExtendedD::LatinSmallLetterUm => 'ꝸ',
+            LatinExtendedD::LatinCapitalLetterInsularD => 'Ꝺ',
+            LatinExtendedD::LatinSmallLetterInsularD => 'ꝺ',
+            LatinExtendedD::LatinCapitalLetterInsularF => 'Ꝼ',
+            LatinExtendedD::LatinSmallLetterInsularF => 'ꝼ',
+            LatinExtendedD::LatinCapitalLetterInsularG => 'Ᵹ',
+            LatinExtendedD::LatinCapitalLetterTurnedInsularG => 'Ꝿ',
+            LatinExtendedD::LatinSmallLetterTurnedInsularG => 'ꝿ',
+            LatinExtendedD::LatinCapitalLetterTurnedL => 'Ꞁ',
+            LatinExtendedD::LatinSmallLetterTurnedL => 'ꞁ',
+            LatinExtendedD::LatinCapitalLetterInsularR => 'Ꞃ',
+            LatinExtendedD::LatinSmallLetterInsularR => 'ꞃ',
+            LatinExtendedD::LatinCapitalLetterInsularS => 'Ꞅ',
+            LatinExtendedD::LatinSmallLetterInsularS => 'ꞅ',
+            LatinExtendedD::LatinCapitalLetterInsularT => 'Ꞇ',
+            LatinExtendedD::LatinSmallLetterInsularT => 'ꞇ',
+            LatinExtendedD::ModifierLetterLowCircumflexAccent => 'ꞈ',
+            LatinExtendedD::ModifierLetterColon => '꞉',
+            LatinExtendedD::ModifierLetterShortEqualsSign => '꞊',
+            LatinExtendedD::LatinCapitalLetterSaltillo => 'Ꞌ',
+            LatinExtendedD::LatinSmallLetterSaltillo => 'ꞌ',
+            LatinExtendedD::LatinCapitalLetterTurnedH => 'Ɥ',
+            LatinExtendedD::LatinSmallLetterLWithRetroflexHookAndBelt => 'ꞎ',
+            LatinExtendedD::LatinLetterSinologicalDot => 'ꞏ',
+            LatinExtendedD::LatinCapitalLetterNWithDescender => 'Ꞑ',
+            LatinExtendedD::LatinSmallLetterNWithDescender => 'ꞑ',
+            LatinExtendedD::LatinCapitalLetterCWithBar => 'Ꞓ',
+            LatinExtendedD::LatinSmallLetterCWithBar => 'ꞓ',
+            LatinExtendedD::LatinSmallLetterCWithPalatalHook => 'ꞔ',
+            LatinExtendedD::LatinSmallLetterHWithPalatalHook => 'ꞕ',
+            LatinExtendedD::LatinCapitalLetterBWithFlourish => 'Ꞗ',
+            LatinExtendedD::LatinSmallLetterBWithFlourish => 'ꞗ',
+            LatinExtendedD::LatinCapitalLetterFWithStroke => 'Ꞙ',
+            LatinExtendedD::LatinSmallLetterFWithStroke => 'ꞙ',
+            LatinExtendedD::LatinCapitalLetterVolapukAe => 'Ꞛ',
+            LatinExtendedD::LatinSmallLetterVolapukAe => 'ꞛ',
+            LatinExtendedD::LatinCapitalLetterVolapukOe => 'Ꞝ',
+            LatinExtendedD::LatinSmallLetterVolapukOe => 'ꞝ',
+            LatinExtendedD::LatinCapitalLetterVolapukUe => 'Ꞟ',
+            LatinExtendedD::LatinSmallLetterVolapukUe => 'ꞟ',
+            LatinExtendedD::LatinCapitalLetterGWithObliqueStroke => 'Ꞡ',
+            LatinExtendedD::LatinSmallLetterGWithObliqueStroke => 'ꞡ',
+            LatinExtendedD::LatinCapitalLetterKWithObliqueStroke => 'Ꞣ',
+            LatinExtendedD::LatinSmallLetterKWithObliqueStroke => 'ꞣ',
+            LatinExtendedD::LatinCapitalLetterNWithObliqueStroke => 'Ꞥ',
+            LatinExtendedD::LatinSmallLetterNWithObliqueStroke => 'ꞥ',
+            LatinExtendedD::LatinCapitalLetterRWithObliqueStroke => 'Ꞧ',
+            LatinExtendedD::LatinSmallLetterRWithObliqueStroke => 'ꞧ',
+            LatinExtendedD::LatinCapitalLetterSWithObliqueStroke => 'Ꞩ',
+            LatinExtendedD::LatinSmallLetterSWithObliqueStroke => 'ꞩ',
+            LatinExtendedD::LatinCapitalLetterHWithHook => 'Ɦ',
+            LatinExtendedD::LatinCapitalLetterReversedOpenE => 'Ɜ',
+            LatinExtendedD::LatinCapitalLetterScriptG => 'Ɡ',
+            LatinExtendedD::LatinCapitalLetterLWithBelt => 'Ɬ',
+            LatinExtendedD::LatinCapitalLetterSmallCapitalI => 'Ɪ',
+            LatinExtendedD::LatinLetterSmallCapitalQ => 'ꞯ',
+            LatinExtendedD::LatinCapitalLetterTurnedK => 'Ʞ',
+            LatinExtendedD::LatinCapitalLetterTurnedT => 'Ʇ',
+            LatinExtendedD::LatinCapitalLetterJWithCrossedDashTail => 'Ʝ',
+            LatinExtendedD::LatinCapitalLetterChi => 'Ꭓ',
+            LatinExtendedD::LatinCapitalLetterBeta => 'Ꞵ',
+            LatinExtendedD::LatinSmallLetterBeta => 'ꞵ',
+            LatinExtendedD::LatinCapitalLetterOmega => 'Ꞷ',
+            LatinExtendedD::LatinSmallLetterOmega => 'ꞷ',
+            LatinExtendedD::LatinCapitalLetterUWithStroke => 'Ꞹ',
+            LatinExtendedD::LatinSmallLetterUWithStroke => 'ꞹ',
+            LatinExtendedD::LatinCapitalLetterGlottalA => 'Ꞻ',
+            LatinExtendedD::LatinSmallLetterGlottalA => 'ꞻ',
+            LatinExtendedD::LatinCapitalLetterGlottalI => 'Ꞽ',
+            LatinExtendedD::LatinSmallLetterGlottalI => 'ꞽ',
+            LatinExtendedD::LatinCapitalLetterGlottalU => 'Ꞿ',
+            LatinExtendedD::LatinSmallLetterGlottalU => 'ꞿ',
+            LatinExtendedD::LatinCapitalLetterAnglicanaW => 'Ꟃ',
+            LatinExtendedD::LatinSmallLetterAnglicanaW => 'ꟃ',
+            LatinExtendedD::LatinCapitalLetterCWithPalatalHook => 'Ꞔ',
+            LatinExtendedD::LatinCapitalLetterSWithHook => 'Ʂ',
+            LatinExtendedD::LatinCapitalLetterZWithPalatalHook => 'Ᶎ',
+            LatinExtendedD::LatinEpigraphicLetterSidewaysI => 'ꟷ',
+            LatinExtendedD::ModifierLetterCapitalHWithStroke => 'ꟸ',
+            LatinExtendedD::ModifierLetterSmallLigatureOe => 'ꟹ',
+            LatinExtendedD::LatinLetterSmallCapitalTurnedM => 'ꟺ',
+            LatinExtendedD::LatinEpigraphicLetterReversedF => 'ꟻ',
+            LatinExtendedD::LatinEpigraphicLetterReversedP => 'ꟼ',
+            LatinExtendedD::LatinEpigraphicLetterInvertedM => 'ꟽ',
+            LatinExtendedD::LatinEpigraphicLetterILonga => 'ꟾ',
         }
     }
 }
@@ -883,181 +533,180 @@ impl Into<char> for LatinExtendedD {
 impl std::convert::TryFrom<char> for LatinExtendedD {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            MODIFIER_LETTER_STRESS_AND_HIGH_TONE => Ok(LatinExtendedD::ModifierLetterStressAndHighTone),
-            MODIFIER_LETTER_STRESS_AND_LOW_TONE => Ok(LatinExtendedD::ModifierLetterStressAndLowTone),
-            LATIN_CAPITAL_LETTER_EGYPTOLOGICAL_ALEF => Ok(LatinExtendedD::LatinCapitalLetterEgyptologicalAlef),
-            LATIN_SMALL_LETTER_EGYPTOLOGICAL_ALEF => Ok(LatinExtendedD::LatinSmallLetterEgyptologicalAlef),
-            LATIN_CAPITAL_LETTER_EGYPTOLOGICAL_AIN => Ok(LatinExtendedD::LatinCapitalLetterEgyptologicalAin),
-            LATIN_SMALL_LETTER_EGYPTOLOGICAL_AIN => Ok(LatinExtendedD::LatinSmallLetterEgyptologicalAin),
-            LATIN_CAPITAL_LETTER_HENG => Ok(LatinExtendedD::LatinCapitalLetterHeng),
-            LATIN_SMALL_LETTER_HENG => Ok(LatinExtendedD::LatinSmallLetterHeng),
-            LATIN_CAPITAL_LETTER_TZ => Ok(LatinExtendedD::LatinCapitalLetterTz),
-            LATIN_SMALL_LETTER_TZ => Ok(LatinExtendedD::LatinSmallLetterTz),
-            LATIN_CAPITAL_LETTER_TRESILLO => Ok(LatinExtendedD::LatinCapitalLetterTresillo),
-            LATIN_SMALL_LETTER_TRESILLO => Ok(LatinExtendedD::LatinSmallLetterTresillo),
-            LATIN_CAPITAL_LETTER_CUATRILLO => Ok(LatinExtendedD::LatinCapitalLetterCuatrillo),
-            LATIN_SMALL_LETTER_CUATRILLO => Ok(LatinExtendedD::LatinSmallLetterCuatrillo),
-            LATIN_CAPITAL_LETTER_CUATRILLO_WITH_COMMA => Ok(LatinExtendedD::LatinCapitalLetterCuatrilloWithComma),
-            LATIN_SMALL_LETTER_CUATRILLO_WITH_COMMA => Ok(LatinExtendedD::LatinSmallLetterCuatrilloWithComma),
-            LATIN_LETTER_SMALL_CAPITAL_F => Ok(LatinExtendedD::LatinLetterSmallCapitalF),
-            LATIN_LETTER_SMALL_CAPITAL_S => Ok(LatinExtendedD::LatinLetterSmallCapitalS),
-            LATIN_CAPITAL_LETTER_AA => Ok(LatinExtendedD::LatinCapitalLetterAa),
-            LATIN_SMALL_LETTER_AA => Ok(LatinExtendedD::LatinSmallLetterAa),
-            LATIN_CAPITAL_LETTER_AO => Ok(LatinExtendedD::LatinCapitalLetterAo),
-            LATIN_SMALL_LETTER_AO => Ok(LatinExtendedD::LatinSmallLetterAo),
-            LATIN_CAPITAL_LETTER_AU => Ok(LatinExtendedD::LatinCapitalLetterAu),
-            LATIN_SMALL_LETTER_AU => Ok(LatinExtendedD::LatinSmallLetterAu),
-            LATIN_CAPITAL_LETTER_AV => Ok(LatinExtendedD::LatinCapitalLetterAv),
-            LATIN_SMALL_LETTER_AV => Ok(LatinExtendedD::LatinSmallLetterAv),
-            LATIN_CAPITAL_LETTER_AV_WITH_HORIZONTAL_BAR => Ok(LatinExtendedD::LatinCapitalLetterAvWithHorizontalBar),
-            LATIN_SMALL_LETTER_AV_WITH_HORIZONTAL_BAR => Ok(LatinExtendedD::LatinSmallLetterAvWithHorizontalBar),
-            LATIN_CAPITAL_LETTER_AY => Ok(LatinExtendedD::LatinCapitalLetterAy),
-            LATIN_SMALL_LETTER_AY => Ok(LatinExtendedD::LatinSmallLetterAy),
-            LATIN_CAPITAL_LETTER_REVERSED_C_WITH_DOT => Ok(LatinExtendedD::LatinCapitalLetterReversedCWithDot),
-            LATIN_SMALL_LETTER_REVERSED_C_WITH_DOT => Ok(LatinExtendedD::LatinSmallLetterReversedCWithDot),
-            LATIN_CAPITAL_LETTER_K_WITH_STROKE => Ok(LatinExtendedD::LatinCapitalLetterKWithStroke),
-            LATIN_SMALL_LETTER_K_WITH_STROKE => Ok(LatinExtendedD::LatinSmallLetterKWithStroke),
-            LATIN_CAPITAL_LETTER_K_WITH_DIAGONAL_STROKE => Ok(LatinExtendedD::LatinCapitalLetterKWithDiagonalStroke),
-            LATIN_SMALL_LETTER_K_WITH_DIAGONAL_STROKE => Ok(LatinExtendedD::LatinSmallLetterKWithDiagonalStroke),
-            LATIN_CAPITAL_LETTER_K_WITH_STROKE_AND_DIAGONAL_STROKE => Ok(LatinExtendedD::LatinCapitalLetterKWithStrokeAndDiagonalStroke),
-            LATIN_SMALL_LETTER_K_WITH_STROKE_AND_DIAGONAL_STROKE => Ok(LatinExtendedD::LatinSmallLetterKWithStrokeAndDiagonalStroke),
-            LATIN_CAPITAL_LETTER_BROKEN_L => Ok(LatinExtendedD::LatinCapitalLetterBrokenL),
-            LATIN_SMALL_LETTER_BROKEN_L => Ok(LatinExtendedD::LatinSmallLetterBrokenL),
-            LATIN_CAPITAL_LETTER_L_WITH_HIGH_STROKE => Ok(LatinExtendedD::LatinCapitalLetterLWithHighStroke),
-            LATIN_SMALL_LETTER_L_WITH_HIGH_STROKE => Ok(LatinExtendedD::LatinSmallLetterLWithHighStroke),
-            LATIN_CAPITAL_LETTER_O_WITH_LONG_STROKE_OVERLAY => Ok(LatinExtendedD::LatinCapitalLetterOWithLongStrokeOverlay),
-            LATIN_SMALL_LETTER_O_WITH_LONG_STROKE_OVERLAY => Ok(LatinExtendedD::LatinSmallLetterOWithLongStrokeOverlay),
-            LATIN_CAPITAL_LETTER_O_WITH_LOOP => Ok(LatinExtendedD::LatinCapitalLetterOWithLoop),
-            LATIN_SMALL_LETTER_O_WITH_LOOP => Ok(LatinExtendedD::LatinSmallLetterOWithLoop),
-            LATIN_CAPITAL_LETTER_OO => Ok(LatinExtendedD::LatinCapitalLetterOo),
-            LATIN_SMALL_LETTER_OO => Ok(LatinExtendedD::LatinSmallLetterOo),
-            LATIN_CAPITAL_LETTER_P_WITH_STROKE_THROUGH_DESCENDER => Ok(LatinExtendedD::LatinCapitalLetterPWithStrokeThroughDescender),
-            LATIN_SMALL_LETTER_P_WITH_STROKE_THROUGH_DESCENDER => Ok(LatinExtendedD::LatinSmallLetterPWithStrokeThroughDescender),
-            LATIN_CAPITAL_LETTER_P_WITH_FLOURISH => Ok(LatinExtendedD::LatinCapitalLetterPWithFlourish),
-            LATIN_SMALL_LETTER_P_WITH_FLOURISH => Ok(LatinExtendedD::LatinSmallLetterPWithFlourish),
-            LATIN_CAPITAL_LETTER_P_WITH_SQUIRREL_TAIL => Ok(LatinExtendedD::LatinCapitalLetterPWithSquirrelTail),
-            LATIN_SMALL_LETTER_P_WITH_SQUIRREL_TAIL => Ok(LatinExtendedD::LatinSmallLetterPWithSquirrelTail),
-            LATIN_CAPITAL_LETTER_Q_WITH_STROKE_THROUGH_DESCENDER => Ok(LatinExtendedD::LatinCapitalLetterQWithStrokeThroughDescender),
-            LATIN_SMALL_LETTER_Q_WITH_STROKE_THROUGH_DESCENDER => Ok(LatinExtendedD::LatinSmallLetterQWithStrokeThroughDescender),
-            LATIN_CAPITAL_LETTER_Q_WITH_DIAGONAL_STROKE => Ok(LatinExtendedD::LatinCapitalLetterQWithDiagonalStroke),
-            LATIN_SMALL_LETTER_Q_WITH_DIAGONAL_STROKE => Ok(LatinExtendedD::LatinSmallLetterQWithDiagonalStroke),
-            LATIN_CAPITAL_LETTER_R_ROTUNDA => Ok(LatinExtendedD::LatinCapitalLetterRRotunda),
-            LATIN_SMALL_LETTER_R_ROTUNDA => Ok(LatinExtendedD::LatinSmallLetterRRotunda),
-            LATIN_CAPITAL_LETTER_RUM_ROTUNDA => Ok(LatinExtendedD::LatinCapitalLetterRumRotunda),
-            LATIN_SMALL_LETTER_RUM_ROTUNDA => Ok(LatinExtendedD::LatinSmallLetterRumRotunda),
-            LATIN_CAPITAL_LETTER_V_WITH_DIAGONAL_STROKE => Ok(LatinExtendedD::LatinCapitalLetterVWithDiagonalStroke),
-            LATIN_SMALL_LETTER_V_WITH_DIAGONAL_STROKE => Ok(LatinExtendedD::LatinSmallLetterVWithDiagonalStroke),
-            LATIN_CAPITAL_LETTER_VY => Ok(LatinExtendedD::LatinCapitalLetterVy),
-            LATIN_SMALL_LETTER_VY => Ok(LatinExtendedD::LatinSmallLetterVy),
-            LATIN_CAPITAL_LETTER_VISIGOTHIC_Z => Ok(LatinExtendedD::LatinCapitalLetterVisigothicZ),
-            LATIN_SMALL_LETTER_VISIGOTHIC_Z => Ok(LatinExtendedD::LatinSmallLetterVisigothicZ),
-            LATIN_CAPITAL_LETTER_THORN_WITH_STROKE => Ok(LatinExtendedD::LatinCapitalLetterThornWithStroke),
-            LATIN_SMALL_LETTER_THORN_WITH_STROKE => Ok(LatinExtendedD::LatinSmallLetterThornWithStroke),
-            LATIN_CAPITAL_LETTER_THORN_WITH_STROKE_THROUGH_DESCENDER => Ok(LatinExtendedD::LatinCapitalLetterThornWithStrokeThroughDescender),
-            LATIN_SMALL_LETTER_THORN_WITH_STROKE_THROUGH_DESCENDER => Ok(LatinExtendedD::LatinSmallLetterThornWithStrokeThroughDescender),
-            LATIN_CAPITAL_LETTER_VEND => Ok(LatinExtendedD::LatinCapitalLetterVend),
-            LATIN_SMALL_LETTER_VEND => Ok(LatinExtendedD::LatinSmallLetterVend),
-            LATIN_CAPITAL_LETTER_ET => Ok(LatinExtendedD::LatinCapitalLetterEt),
-            LATIN_SMALL_LETTER_ET => Ok(LatinExtendedD::LatinSmallLetterEt),
-            LATIN_CAPITAL_LETTER_IS => Ok(LatinExtendedD::LatinCapitalLetterIs),
-            LATIN_SMALL_LETTER_IS => Ok(LatinExtendedD::LatinSmallLetterIs),
-            LATIN_CAPITAL_LETTER_CON => Ok(LatinExtendedD::LatinCapitalLetterCon),
-            LATIN_SMALL_LETTER_CON => Ok(LatinExtendedD::LatinSmallLetterCon),
-            MODIFIER_LETTER_US => Ok(LatinExtendedD::ModifierLetterUs),
-            LATIN_SMALL_LETTER_DUM => Ok(LatinExtendedD::LatinSmallLetterDum),
-            LATIN_SMALL_LETTER_LUM => Ok(LatinExtendedD::LatinSmallLetterLum),
-            LATIN_SMALL_LETTER_MUM => Ok(LatinExtendedD::LatinSmallLetterMum),
-            LATIN_SMALL_LETTER_NUM => Ok(LatinExtendedD::LatinSmallLetterNum),
-            LATIN_SMALL_LETTER_RUM => Ok(LatinExtendedD::LatinSmallLetterRum),
-            LATIN_LETTER_SMALL_CAPITAL_RUM => Ok(LatinExtendedD::LatinLetterSmallCapitalRum),
-            LATIN_SMALL_LETTER_TUM => Ok(LatinExtendedD::LatinSmallLetterTum),
-            LATIN_SMALL_LETTER_UM => Ok(LatinExtendedD::LatinSmallLetterUm),
-            LATIN_CAPITAL_LETTER_INSULAR_D => Ok(LatinExtendedD::LatinCapitalLetterInsularD),
-            LATIN_SMALL_LETTER_INSULAR_D => Ok(LatinExtendedD::LatinSmallLetterInsularD),
-            LATIN_CAPITAL_LETTER_INSULAR_F => Ok(LatinExtendedD::LatinCapitalLetterInsularF),
-            LATIN_SMALL_LETTER_INSULAR_F => Ok(LatinExtendedD::LatinSmallLetterInsularF),
-            LATIN_CAPITAL_LETTER_INSULAR_G => Ok(LatinExtendedD::LatinCapitalLetterInsularG),
-            LATIN_CAPITAL_LETTER_TURNED_INSULAR_G => Ok(LatinExtendedD::LatinCapitalLetterTurnedInsularG),
-            LATIN_SMALL_LETTER_TURNED_INSULAR_G => Ok(LatinExtendedD::LatinSmallLetterTurnedInsularG),
-            LATIN_CAPITAL_LETTER_TURNED_L => Ok(LatinExtendedD::LatinCapitalLetterTurnedL),
-            LATIN_SMALL_LETTER_TURNED_L => Ok(LatinExtendedD::LatinSmallLetterTurnedL),
-            LATIN_CAPITAL_LETTER_INSULAR_R => Ok(LatinExtendedD::LatinCapitalLetterInsularR),
-            LATIN_SMALL_LETTER_INSULAR_R => Ok(LatinExtendedD::LatinSmallLetterInsularR),
-            LATIN_CAPITAL_LETTER_INSULAR_S => Ok(LatinExtendedD::LatinCapitalLetterInsularS),
-            LATIN_SMALL_LETTER_INSULAR_S => Ok(LatinExtendedD::LatinSmallLetterInsularS),
-            LATIN_CAPITAL_LETTER_INSULAR_T => Ok(LatinExtendedD::LatinCapitalLetterInsularT),
-            LATIN_SMALL_LETTER_INSULAR_T => Ok(LatinExtendedD::LatinSmallLetterInsularT),
-            MODIFIER_LETTER_LOW_CIRCUMFLEX_ACCENT => Ok(LatinExtendedD::ModifierLetterLowCircumflexAccent),
-            MODIFIER_LETTER_COLON => Ok(LatinExtendedD::ModifierLetterColon),
-            MODIFIER_LETTER_SHORT_EQUALS_SIGN => Ok(LatinExtendedD::ModifierLetterShortEqualsSign),
-            LATIN_CAPITAL_LETTER_SALTILLO => Ok(LatinExtendedD::LatinCapitalLetterSaltillo),
-            LATIN_SMALL_LETTER_SALTILLO => Ok(LatinExtendedD::LatinSmallLetterSaltillo),
-            LATIN_CAPITAL_LETTER_TURNED_H => Ok(LatinExtendedD::LatinCapitalLetterTurnedH),
-            LATIN_SMALL_LETTER_L_WITH_RETROFLEX_HOOK_AND_BELT => Ok(LatinExtendedD::LatinSmallLetterLWithRetroflexHookAndBelt),
-            LATIN_LETTER_SINOLOGICAL_DOT => Ok(LatinExtendedD::LatinLetterSinologicalDot),
-            LATIN_CAPITAL_LETTER_N_WITH_DESCENDER => Ok(LatinExtendedD::LatinCapitalLetterNWithDescender),
-            LATIN_SMALL_LETTER_N_WITH_DESCENDER => Ok(LatinExtendedD::LatinSmallLetterNWithDescender),
-            LATIN_CAPITAL_LETTER_C_WITH_BAR => Ok(LatinExtendedD::LatinCapitalLetterCWithBar),
-            LATIN_SMALL_LETTER_C_WITH_BAR => Ok(LatinExtendedD::LatinSmallLetterCWithBar),
-            LATIN_SMALL_LETTER_C_WITH_PALATAL_HOOK => Ok(LatinExtendedD::LatinSmallLetterCWithPalatalHook),
-            LATIN_SMALL_LETTER_H_WITH_PALATAL_HOOK => Ok(LatinExtendedD::LatinSmallLetterHWithPalatalHook),
-            LATIN_CAPITAL_LETTER_B_WITH_FLOURISH => Ok(LatinExtendedD::LatinCapitalLetterBWithFlourish),
-            LATIN_SMALL_LETTER_B_WITH_FLOURISH => Ok(LatinExtendedD::LatinSmallLetterBWithFlourish),
-            LATIN_CAPITAL_LETTER_F_WITH_STROKE => Ok(LatinExtendedD::LatinCapitalLetterFWithStroke),
-            LATIN_SMALL_LETTER_F_WITH_STROKE => Ok(LatinExtendedD::LatinSmallLetterFWithStroke),
-            LATIN_CAPITAL_LETTER_VOLAPUK_AE => Ok(LatinExtendedD::LatinCapitalLetterVolapukAe),
-            LATIN_SMALL_LETTER_VOLAPUK_AE => Ok(LatinExtendedD::LatinSmallLetterVolapukAe),
-            LATIN_CAPITAL_LETTER_VOLAPUK_OE => Ok(LatinExtendedD::LatinCapitalLetterVolapukOe),
-            LATIN_SMALL_LETTER_VOLAPUK_OE => Ok(LatinExtendedD::LatinSmallLetterVolapukOe),
-            LATIN_CAPITAL_LETTER_VOLAPUK_UE => Ok(LatinExtendedD::LatinCapitalLetterVolapukUe),
-            LATIN_SMALL_LETTER_VOLAPUK_UE => Ok(LatinExtendedD::LatinSmallLetterVolapukUe),
-            LATIN_CAPITAL_LETTER_G_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinCapitalLetterGWithObliqueStroke),
-            LATIN_SMALL_LETTER_G_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinSmallLetterGWithObliqueStroke),
-            LATIN_CAPITAL_LETTER_K_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinCapitalLetterKWithObliqueStroke),
-            LATIN_SMALL_LETTER_K_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinSmallLetterKWithObliqueStroke),
-            LATIN_CAPITAL_LETTER_N_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinCapitalLetterNWithObliqueStroke),
-            LATIN_SMALL_LETTER_N_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinSmallLetterNWithObliqueStroke),
-            LATIN_CAPITAL_LETTER_R_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinCapitalLetterRWithObliqueStroke),
-            LATIN_SMALL_LETTER_R_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinSmallLetterRWithObliqueStroke),
-            LATIN_CAPITAL_LETTER_S_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinCapitalLetterSWithObliqueStroke),
-            LATIN_SMALL_LETTER_S_WITH_OBLIQUE_STROKE => Ok(LatinExtendedD::LatinSmallLetterSWithObliqueStroke),
-            LATIN_CAPITAL_LETTER_H_WITH_HOOK => Ok(LatinExtendedD::LatinCapitalLetterHWithHook),
-            LATIN_CAPITAL_LETTER_REVERSED_OPEN_E => Ok(LatinExtendedD::LatinCapitalLetterReversedOpenE),
-            LATIN_CAPITAL_LETTER_SCRIPT_G => Ok(LatinExtendedD::LatinCapitalLetterScriptG),
-            LATIN_CAPITAL_LETTER_L_WITH_BELT => Ok(LatinExtendedD::LatinCapitalLetterLWithBelt),
-            LATIN_CAPITAL_LETTER_SMALL_CAPITAL_I => Ok(LatinExtendedD::LatinCapitalLetterSmallCapitalI),
-            LATIN_LETTER_SMALL_CAPITAL_Q => Ok(LatinExtendedD::LatinLetterSmallCapitalQ),
-            LATIN_CAPITAL_LETTER_TURNED_K => Ok(LatinExtendedD::LatinCapitalLetterTurnedK),
-            LATIN_CAPITAL_LETTER_TURNED_T => Ok(LatinExtendedD::LatinCapitalLetterTurnedT),
-            LATIN_CAPITAL_LETTER_J_WITH_CROSSED_DASH_TAIL => Ok(LatinExtendedD::LatinCapitalLetterJWithCrossedDashTail),
-            LATIN_CAPITAL_LETTER_CHI => Ok(LatinExtendedD::LatinCapitalLetterChi),
-            LATIN_CAPITAL_LETTER_BETA => Ok(LatinExtendedD::LatinCapitalLetterBeta),
-            LATIN_SMALL_LETTER_BETA => Ok(LatinExtendedD::LatinSmallLetterBeta),
-            LATIN_CAPITAL_LETTER_OMEGA => Ok(LatinExtendedD::LatinCapitalLetterOmega),
-            LATIN_SMALL_LETTER_OMEGA => Ok(LatinExtendedD::LatinSmallLetterOmega),
-            LATIN_CAPITAL_LETTER_U_WITH_STROKE => Ok(LatinExtendedD::LatinCapitalLetterUWithStroke),
-            LATIN_SMALL_LETTER_U_WITH_STROKE => Ok(LatinExtendedD::LatinSmallLetterUWithStroke),
-            LATIN_CAPITAL_LETTER_GLOTTAL_A => Ok(LatinExtendedD::LatinCapitalLetterGlottalA),
-            LATIN_SMALL_LETTER_GLOTTAL_A => Ok(LatinExtendedD::LatinSmallLetterGlottalA),
-            LATIN_CAPITAL_LETTER_GLOTTAL_I => Ok(LatinExtendedD::LatinCapitalLetterGlottalI),
-            LATIN_SMALL_LETTER_GLOTTAL_I => Ok(LatinExtendedD::LatinSmallLetterGlottalI),
-            LATIN_CAPITAL_LETTER_GLOTTAL_U => Ok(LatinExtendedD::LatinCapitalLetterGlottalU),
-            LATIN_SMALL_LETTER_GLOTTAL_U => Ok(LatinExtendedD::LatinSmallLetterGlottalU),
-            LATIN_CAPITAL_LETTER_ANGLICANA_W => Ok(LatinExtendedD::LatinCapitalLetterAnglicanaW),
-            LATIN_SMALL_LETTER_ANGLICANA_W => Ok(LatinExtendedD::LatinSmallLetterAnglicanaW),
-            LATIN_CAPITAL_LETTER_C_WITH_PALATAL_HOOK => Ok(LatinExtendedD::LatinCapitalLetterCWithPalatalHook),
-            LATIN_CAPITAL_LETTER_S_WITH_HOOK => Ok(LatinExtendedD::LatinCapitalLetterSWithHook),
-            LATIN_CAPITAL_LETTER_Z_WITH_PALATAL_HOOK => Ok(LatinExtendedD::LatinCapitalLetterZWithPalatalHook),
-            LATIN_EPIGRAPHIC_LETTER_SIDEWAYS_I => Ok(LatinExtendedD::LatinEpigraphicLetterSidewaysI),
-            MODIFIER_LETTER_CAPITAL_H_WITH_STROKE => Ok(LatinExtendedD::ModifierLetterCapitalHWithStroke),
-            MODIFIER_LETTER_SMALL_LIGATURE_OE => Ok(LatinExtendedD::ModifierLetterSmallLigatureOe),
-            LATIN_LETTER_SMALL_CAPITAL_TURNED_M => Ok(LatinExtendedD::LatinLetterSmallCapitalTurnedM),
-            LATIN_EPIGRAPHIC_LETTER_REVERSED_F => Ok(LatinExtendedD::LatinEpigraphicLetterReversedF),
-            LATIN_EPIGRAPHIC_LETTER_REVERSED_P => Ok(LatinExtendedD::LatinEpigraphicLetterReversedP),
-            LATIN_EPIGRAPHIC_LETTER_INVERTED_M => Ok(LatinExtendedD::LatinEpigraphicLetterInvertedM),
-            LATIN_EPIGRAPHIC_LETTER_I_LONGA => Ok(LatinExtendedD::LatinEpigraphicLetterILonga),
+            '꜠' => Ok(LatinExtendedD::ModifierLetterStressAndHighTone),
+            '꜡' => Ok(LatinExtendedD::ModifierLetterStressAndLowTone),
+            'Ꜣ' => Ok(LatinExtendedD::LatinCapitalLetterEgyptologicalAlef),
+            'ꜣ' => Ok(LatinExtendedD::LatinSmallLetterEgyptologicalAlef),
+            'Ꜥ' => Ok(LatinExtendedD::LatinCapitalLetterEgyptologicalAin),
+            'ꜥ' => Ok(LatinExtendedD::LatinSmallLetterEgyptologicalAin),
+            'Ꜧ' => Ok(LatinExtendedD::LatinCapitalLetterHeng),
+            'ꜧ' => Ok(LatinExtendedD::LatinSmallLetterHeng),
+            'Ꜩ' => Ok(LatinExtendedD::LatinCapitalLetterTz),
+            'ꜩ' => Ok(LatinExtendedD::LatinSmallLetterTz),
+            'Ꜫ' => Ok(LatinExtendedD::LatinCapitalLetterTresillo),
+            'ꜫ' => Ok(LatinExtendedD::LatinSmallLetterTresillo),
+            'Ꜭ' => Ok(LatinExtendedD::LatinCapitalLetterCuatrillo),
+            'ꜭ' => Ok(LatinExtendedD::LatinSmallLetterCuatrillo),
+            'Ꜯ' => Ok(LatinExtendedD::LatinCapitalLetterCuatrilloWithComma),
+            'ꜯ' => Ok(LatinExtendedD::LatinSmallLetterCuatrilloWithComma),
+            'ꜰ' => Ok(LatinExtendedD::LatinLetterSmallCapitalF),
+            'ꜱ' => Ok(LatinExtendedD::LatinLetterSmallCapitalS),
+            'Ꜳ' => Ok(LatinExtendedD::LatinCapitalLetterAa),
+            'ꜳ' => Ok(LatinExtendedD::LatinSmallLetterAa),
+            'Ꜵ' => Ok(LatinExtendedD::LatinCapitalLetterAo),
+            'ꜵ' => Ok(LatinExtendedD::LatinSmallLetterAo),
+            'Ꜷ' => Ok(LatinExtendedD::LatinCapitalLetterAu),
+            'ꜷ' => Ok(LatinExtendedD::LatinSmallLetterAu),
+            'Ꜹ' => Ok(LatinExtendedD::LatinCapitalLetterAv),
+            'ꜹ' => Ok(LatinExtendedD::LatinSmallLetterAv),
+            'Ꜻ' => Ok(LatinExtendedD::LatinCapitalLetterAvWithHorizontalBar),
+            'ꜻ' => Ok(LatinExtendedD::LatinSmallLetterAvWithHorizontalBar),
+            'Ꜽ' => Ok(LatinExtendedD::LatinCapitalLetterAy),
+            'ꜽ' => Ok(LatinExtendedD::LatinSmallLetterAy),
+            'Ꜿ' => Ok(LatinExtendedD::LatinCapitalLetterReversedCWithDot),
+            'ꜿ' => Ok(LatinExtendedD::LatinSmallLetterReversedCWithDot),
+            'Ꝁ' => Ok(LatinExtendedD::LatinCapitalLetterKWithStroke),
+            'ꝁ' => Ok(LatinExtendedD::LatinSmallLetterKWithStroke),
+            'Ꝃ' => Ok(LatinExtendedD::LatinCapitalLetterKWithDiagonalStroke),
+            'ꝃ' => Ok(LatinExtendedD::LatinSmallLetterKWithDiagonalStroke),
+            'Ꝅ' => Ok(LatinExtendedD::LatinCapitalLetterKWithStrokeAndDiagonalStroke),
+            'ꝅ' => Ok(LatinExtendedD::LatinSmallLetterKWithStrokeAndDiagonalStroke),
+            'Ꝇ' => Ok(LatinExtendedD::LatinCapitalLetterBrokenL),
+            'ꝇ' => Ok(LatinExtendedD::LatinSmallLetterBrokenL),
+            'Ꝉ' => Ok(LatinExtendedD::LatinCapitalLetterLWithHighStroke),
+            'ꝉ' => Ok(LatinExtendedD::LatinSmallLetterLWithHighStroke),
+            'Ꝋ' => Ok(LatinExtendedD::LatinCapitalLetterOWithLongStrokeOverlay),
+            'ꝋ' => Ok(LatinExtendedD::LatinSmallLetterOWithLongStrokeOverlay),
+            'Ꝍ' => Ok(LatinExtendedD::LatinCapitalLetterOWithLoop),
+            'ꝍ' => Ok(LatinExtendedD::LatinSmallLetterOWithLoop),
+            'Ꝏ' => Ok(LatinExtendedD::LatinCapitalLetterOo),
+            'ꝏ' => Ok(LatinExtendedD::LatinSmallLetterOo),
+            'Ꝑ' => Ok(LatinExtendedD::LatinCapitalLetterPWithStrokeThroughDescender),
+            'ꝑ' => Ok(LatinExtendedD::LatinSmallLetterPWithStrokeThroughDescender),
+            'Ꝓ' => Ok(LatinExtendedD::LatinCapitalLetterPWithFlourish),
+            'ꝓ' => Ok(LatinExtendedD::LatinSmallLetterPWithFlourish),
+            'Ꝕ' => Ok(LatinExtendedD::LatinCapitalLetterPWithSquirrelTail),
+            'ꝕ' => Ok(LatinExtendedD::LatinSmallLetterPWithSquirrelTail),
+            'Ꝗ' => Ok(LatinExtendedD::LatinCapitalLetterQWithStrokeThroughDescender),
+            'ꝗ' => Ok(LatinExtendedD::LatinSmallLetterQWithStrokeThroughDescender),
+            'Ꝙ' => Ok(LatinExtendedD::LatinCapitalLetterQWithDiagonalStroke),
+            'ꝙ' => Ok(LatinExtendedD::LatinSmallLetterQWithDiagonalStroke),
+            'Ꝛ' => Ok(LatinExtendedD::LatinCapitalLetterRRotunda),
+            'ꝛ' => Ok(LatinExtendedD::LatinSmallLetterRRotunda),
+            'Ꝝ' => Ok(LatinExtendedD::LatinCapitalLetterRumRotunda),
+            'ꝝ' => Ok(LatinExtendedD::LatinSmallLetterRumRotunda),
+            'Ꝟ' => Ok(LatinExtendedD::LatinCapitalLetterVWithDiagonalStroke),
+            'ꝟ' => Ok(LatinExtendedD::LatinSmallLetterVWithDiagonalStroke),
+            'Ꝡ' => Ok(LatinExtendedD::LatinCapitalLetterVy),
+            'ꝡ' => Ok(LatinExtendedD::LatinSmallLetterVy),
+            'Ꝣ' => Ok(LatinExtendedD::LatinCapitalLetterVisigothicZ),
+            'ꝣ' => Ok(LatinExtendedD::LatinSmallLetterVisigothicZ),
+            'Ꝥ' => Ok(LatinExtendedD::LatinCapitalLetterThornWithStroke),
+            'ꝥ' => Ok(LatinExtendedD::LatinSmallLetterThornWithStroke),
+            'Ꝧ' => Ok(LatinExtendedD::LatinCapitalLetterThornWithStrokeThroughDescender),
+            'ꝧ' => Ok(LatinExtendedD::LatinSmallLetterThornWithStrokeThroughDescender),
+            'Ꝩ' => Ok(LatinExtendedD::LatinCapitalLetterVend),
+            'ꝩ' => Ok(LatinExtendedD::LatinSmallLetterVend),
+            'Ꝫ' => Ok(LatinExtendedD::LatinCapitalLetterEt),
+            'ꝫ' => Ok(LatinExtendedD::LatinSmallLetterEt),
+            'Ꝭ' => Ok(LatinExtendedD::LatinCapitalLetterIs),
+            'ꝭ' => Ok(LatinExtendedD::LatinSmallLetterIs),
+            'Ꝯ' => Ok(LatinExtendedD::LatinCapitalLetterCon),
+            'ꝯ' => Ok(LatinExtendedD::LatinSmallLetterCon),
+            'ꝰ' => Ok(LatinExtendedD::ModifierLetterUs),
+            'ꝱ' => Ok(LatinExtendedD::LatinSmallLetterDum),
+            'ꝲ' => Ok(LatinExtendedD::LatinSmallLetterLum),
+            'ꝳ' => Ok(LatinExtendedD::LatinSmallLetterMum),
+            'ꝴ' => Ok(LatinExtendedD::LatinSmallLetterNum),
+            'ꝵ' => Ok(LatinExtendedD::LatinSmallLetterRum),
+            'ꝶ' => Ok(LatinExtendedD::LatinLetterSmallCapitalRum),
+            'ꝷ' => Ok(LatinExtendedD::LatinSmallLetterTum),
+            'ꝸ' => Ok(LatinExtendedD::LatinSmallLetterUm),
+            'Ꝺ' => Ok(LatinExtendedD::LatinCapitalLetterInsularD),
+            'ꝺ' => Ok(LatinExtendedD::LatinSmallLetterInsularD),
+            'Ꝼ' => Ok(LatinExtendedD::LatinCapitalLetterInsularF),
+            'ꝼ' => Ok(LatinExtendedD::LatinSmallLetterInsularF),
+            'Ᵹ' => Ok(LatinExtendedD::LatinCapitalLetterInsularG),
+            'Ꝿ' => Ok(LatinExtendedD::LatinCapitalLetterTurnedInsularG),
+            'ꝿ' => Ok(LatinExtendedD::LatinSmallLetterTurnedInsularG),
+            'Ꞁ' => Ok(LatinExtendedD::LatinCapitalLetterTurnedL),
+            'ꞁ' => Ok(LatinExtendedD::LatinSmallLetterTurnedL),
+            'Ꞃ' => Ok(LatinExtendedD::LatinCapitalLetterInsularR),
+            'ꞃ' => Ok(LatinExtendedD::LatinSmallLetterInsularR),
+            'Ꞅ' => Ok(LatinExtendedD::LatinCapitalLetterInsularS),
+            'ꞅ' => Ok(LatinExtendedD::LatinSmallLetterInsularS),
+            'Ꞇ' => Ok(LatinExtendedD::LatinCapitalLetterInsularT),
+            'ꞇ' => Ok(LatinExtendedD::LatinSmallLetterInsularT),
+            'ꞈ' => Ok(LatinExtendedD::ModifierLetterLowCircumflexAccent),
+            '꞉' => Ok(LatinExtendedD::ModifierLetterColon),
+            '꞊' => Ok(LatinExtendedD::ModifierLetterShortEqualsSign),
+            'Ꞌ' => Ok(LatinExtendedD::LatinCapitalLetterSaltillo),
+            'ꞌ' => Ok(LatinExtendedD::LatinSmallLetterSaltillo),
+            'Ɥ' => Ok(LatinExtendedD::LatinCapitalLetterTurnedH),
+            'ꞎ' => Ok(LatinExtendedD::LatinSmallLetterLWithRetroflexHookAndBelt),
+            'ꞏ' => Ok(LatinExtendedD::LatinLetterSinologicalDot),
+            'Ꞑ' => Ok(LatinExtendedD::LatinCapitalLetterNWithDescender),
+            'ꞑ' => Ok(LatinExtendedD::LatinSmallLetterNWithDescender),
+            'Ꞓ' => Ok(LatinExtendedD::LatinCapitalLetterCWithBar),
+            'ꞓ' => Ok(LatinExtendedD::LatinSmallLetterCWithBar),
+            'ꞔ' => Ok(LatinExtendedD::LatinSmallLetterCWithPalatalHook),
+            'ꞕ' => Ok(LatinExtendedD::LatinSmallLetterHWithPalatalHook),
+            'Ꞗ' => Ok(LatinExtendedD::LatinCapitalLetterBWithFlourish),
+            'ꞗ' => Ok(LatinExtendedD::LatinSmallLetterBWithFlourish),
+            'Ꞙ' => Ok(LatinExtendedD::LatinCapitalLetterFWithStroke),
+            'ꞙ' => Ok(LatinExtendedD::LatinSmallLetterFWithStroke),
+            'Ꞛ' => Ok(LatinExtendedD::LatinCapitalLetterVolapukAe),
+            'ꞛ' => Ok(LatinExtendedD::LatinSmallLetterVolapukAe),
+            'Ꞝ' => Ok(LatinExtendedD::LatinCapitalLetterVolapukOe),
+            'ꞝ' => Ok(LatinExtendedD::LatinSmallLetterVolapukOe),
+            'Ꞟ' => Ok(LatinExtendedD::LatinCapitalLetterVolapukUe),
+            'ꞟ' => Ok(LatinExtendedD::LatinSmallLetterVolapukUe),
+            'Ꞡ' => Ok(LatinExtendedD::LatinCapitalLetterGWithObliqueStroke),
+            'ꞡ' => Ok(LatinExtendedD::LatinSmallLetterGWithObliqueStroke),
+            'Ꞣ' => Ok(LatinExtendedD::LatinCapitalLetterKWithObliqueStroke),
+            'ꞣ' => Ok(LatinExtendedD::LatinSmallLetterKWithObliqueStroke),
+            'Ꞥ' => Ok(LatinExtendedD::LatinCapitalLetterNWithObliqueStroke),
+            'ꞥ' => Ok(LatinExtendedD::LatinSmallLetterNWithObliqueStroke),
+            'Ꞧ' => Ok(LatinExtendedD::LatinCapitalLetterRWithObliqueStroke),
+            'ꞧ' => Ok(LatinExtendedD::LatinSmallLetterRWithObliqueStroke),
+            'Ꞩ' => Ok(LatinExtendedD::LatinCapitalLetterSWithObliqueStroke),
+            'ꞩ' => Ok(LatinExtendedD::LatinSmallLetterSWithObliqueStroke),
+            'Ɦ' => Ok(LatinExtendedD::LatinCapitalLetterHWithHook),
+            'Ɜ' => Ok(LatinExtendedD::LatinCapitalLetterReversedOpenE),
+            'Ɡ' => Ok(LatinExtendedD::LatinCapitalLetterScriptG),
+            'Ɬ' => Ok(LatinExtendedD::LatinCapitalLetterLWithBelt),
+            'Ɪ' => Ok(LatinExtendedD::LatinCapitalLetterSmallCapitalI),
+            'ꞯ' => Ok(LatinExtendedD::LatinLetterSmallCapitalQ),
+            'Ʞ' => Ok(LatinExtendedD::LatinCapitalLetterTurnedK),
+            'Ʇ' => Ok(LatinExtendedD::LatinCapitalLetterTurnedT),
+            'Ʝ' => Ok(LatinExtendedD::LatinCapitalLetterJWithCrossedDashTail),
+            'Ꭓ' => Ok(LatinExtendedD::LatinCapitalLetterChi),
+            'Ꞵ' => Ok(LatinExtendedD::LatinCapitalLetterBeta),
+            'ꞵ' => Ok(LatinExtendedD::LatinSmallLetterBeta),
+            'Ꞷ' => Ok(LatinExtendedD::LatinCapitalLetterOmega),
+            'ꞷ' => Ok(LatinExtendedD::LatinSmallLetterOmega),
+            'Ꞹ' => Ok(LatinExtendedD::LatinCapitalLetterUWithStroke),
+            'ꞹ' => Ok(LatinExtendedD::LatinSmallLetterUWithStroke),
+            'Ꞻ' => Ok(LatinExtendedD::LatinCapitalLetterGlottalA),
+            'ꞻ' => Ok(LatinExtendedD::LatinSmallLetterGlottalA),
+            'Ꞽ' => Ok(LatinExtendedD::LatinCapitalLetterGlottalI),
+            'ꞽ' => Ok(LatinExtendedD::LatinSmallLetterGlottalI),
+            'Ꞿ' => Ok(LatinExtendedD::LatinCapitalLetterGlottalU),
+            'ꞿ' => Ok(LatinExtendedD::LatinSmallLetterGlottalU),
+            'Ꟃ' => Ok(LatinExtendedD::LatinCapitalLetterAnglicanaW),
+            'ꟃ' => Ok(LatinExtendedD::LatinSmallLetterAnglicanaW),
+            'Ꞔ' => Ok(LatinExtendedD::LatinCapitalLetterCWithPalatalHook),
+            'Ʂ' => Ok(LatinExtendedD::LatinCapitalLetterSWithHook),
+            'Ᶎ' => Ok(LatinExtendedD::LatinCapitalLetterZWithPalatalHook),
+            'ꟷ' => Ok(LatinExtendedD::LatinEpigraphicLetterSidewaysI),
+            'ꟸ' => Ok(LatinExtendedD::ModifierLetterCapitalHWithStroke),
+            'ꟹ' => Ok(LatinExtendedD::ModifierLetterSmallLigatureOe),
+            'ꟺ' => Ok(LatinExtendedD::LatinLetterSmallCapitalTurnedM),
+            'ꟻ' => Ok(LatinExtendedD::LatinEpigraphicLetterReversedF),
+            'ꟼ' => Ok(LatinExtendedD::LatinEpigraphicLetterReversedP),
+            'ꟽ' => Ok(LatinExtendedD::LatinEpigraphicLetterInvertedM),
+            'ꟾ' => Ok(LatinExtendedD::LatinEpigraphicLetterILonga),
             _ => Err(()),
         }
     }

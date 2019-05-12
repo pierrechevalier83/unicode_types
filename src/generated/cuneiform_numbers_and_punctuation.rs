@@ -1,238 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{12400}: '𒐀'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_ASH: char = '𒐀';
-    /// \u{12401}: '𒐁'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_ASH: char = '𒐁';
-    /// \u{12402}: '𒐂'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_ASH: char = '𒐂';
-    /// \u{12403}: '𒐃'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_ASH: char = '𒐃';
-    /// \u{12404}: '𒐄'
-    pub const CUNEIFORM_NUMERIC_SIGN_SIX_ASH: char = '𒐄';
-    /// \u{12405}: '𒐅'
-    pub const CUNEIFORM_NUMERIC_SIGN_SEVEN_ASH: char = '𒐅';
-    /// \u{12406}: '𒐆'
-    pub const CUNEIFORM_NUMERIC_SIGN_EIGHT_ASH: char = '𒐆';
-    /// \u{12407}: '𒐇'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_ASH: char = '𒐇';
-    /// \u{12408}: '𒐈'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_DISH: char = '𒐈';
-    /// \u{12409}: '𒐉'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_DISH: char = '𒐉';
-    /// \u{1240a}: '𒐊'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_DISH: char = '𒐊';
-    /// \u{1240b}: '𒐋'
-    pub const CUNEIFORM_NUMERIC_SIGN_SIX_DISH: char = '𒐋';
-    /// \u{1240c}: '𒐌'
-    pub const CUNEIFORM_NUMERIC_SIGN_SEVEN_DISH: char = '𒐌';
-    /// \u{1240d}: '𒐍'
-    pub const CUNEIFORM_NUMERIC_SIGN_EIGHT_DISH: char = '𒐍';
-    /// \u{1240e}: '𒐎'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_DISH: char = '𒐎';
-    /// \u{1240f}: '𒐏'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_U: char = '𒐏';
-    /// \u{12410}: '𒐐'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_U: char = '𒐐';
-    /// \u{12411}: '𒐑'
-    pub const CUNEIFORM_NUMERIC_SIGN_SIX_U: char = '𒐑';
-    /// \u{12412}: '𒐒'
-    pub const CUNEIFORM_NUMERIC_SIGN_SEVEN_U: char = '𒐒';
-    /// \u{12413}: '𒐓'
-    pub const CUNEIFORM_NUMERIC_SIGN_EIGHT_U: char = '𒐓';
-    /// \u{12414}: '𒐔'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_U: char = '𒐔';
-    /// \u{12415}: '𒐕'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_GESH2: char = '𒐕';
-    /// \u{12416}: '𒐖'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_GESH2: char = '𒐖';
-    /// \u{12417}: '𒐗'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_GESH2: char = '𒐗';
-    /// \u{12418}: '𒐘'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_GESH2: char = '𒐘';
-    /// \u{12419}: '𒐙'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_GESH2: char = '𒐙';
-    /// \u{1241a}: '𒐚'
-    pub const CUNEIFORM_NUMERIC_SIGN_SIX_GESH2: char = '𒐚';
-    /// \u{1241b}: '𒐛'
-    pub const CUNEIFORM_NUMERIC_SIGN_SEVEN_GESH2: char = '𒐛';
-    /// \u{1241c}: '𒐜'
-    pub const CUNEIFORM_NUMERIC_SIGN_EIGHT_GESH2: char = '𒐜';
-    /// \u{1241d}: '𒐝'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_GESH2: char = '𒐝';
-    /// \u{1241e}: '𒐞'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_GESHU: char = '𒐞';
-    /// \u{1241f}: '𒐟'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_GESHU: char = '𒐟';
-    /// \u{12420}: '𒐠'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_GESHU: char = '𒐠';
-    /// \u{12421}: '𒐡'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_GESHU: char = '𒐡';
-    /// \u{12422}: '𒐢'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_GESHU: char = '𒐢';
-    /// \u{12423}: '𒐣'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_SHAR2: char = '𒐣';
-    /// \u{12424}: '𒐤'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_SHAR2: char = '𒐤';
-    /// \u{12425}: '𒐥'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_SHAR2_VARIANT_FORM: char = '𒐥';
-    /// \u{12426}: '𒐦'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_SHAR2: char = '𒐦';
-    /// \u{12427}: '𒐧'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_SHAR2: char = '𒐧';
-    /// \u{12428}: '𒐨'
-    pub const CUNEIFORM_NUMERIC_SIGN_SIX_SHAR2: char = '𒐨';
-    /// \u{12429}: '𒐩'
-    pub const CUNEIFORM_NUMERIC_SIGN_SEVEN_SHAR2: char = '𒐩';
-    /// \u{1242a}: '𒐪'
-    pub const CUNEIFORM_NUMERIC_SIGN_EIGHT_SHAR2: char = '𒐪';
-    /// \u{1242b}: '𒐫'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_SHAR2: char = '𒐫';
-    /// \u{1242c}: '𒐬'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_SHARU: char = '𒐬';
-    /// \u{1242d}: '𒐭'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_SHARU: char = '𒐭';
-    /// \u{1242e}: '𒐮'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_SHARU: char = '𒐮';
-    /// \u{1242f}: '𒐯'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_SHARU_VARIANT_FORM: char = '𒐯';
-    /// \u{12430}: '𒐰'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_SHARU: char = '𒐰';
-    /// \u{12431}: '𒐱'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_SHARU: char = '𒐱';
-    /// \u{12432}: '𒐲'
-    pub const CUNEIFORM_NUMERIC_SIGN_SHAR2_TIMES_GAL_PLUS_DISH: char = '𒐲';
-    /// \u{12433}: '𒐳'
-    pub const CUNEIFORM_NUMERIC_SIGN_SHAR2_TIMES_GAL_PLUS_MIN: char = '𒐳';
-    /// \u{12434}: '𒐴'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_BURU: char = '𒐴';
-    /// \u{12435}: '𒐵'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_BURU: char = '𒐵';
-    /// \u{12436}: '𒐶'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_BURU: char = '𒐶';
-    /// \u{12437}: '𒐷'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_BURU_VARIANT_FORM: char = '𒐷';
-    /// \u{12438}: '𒐸'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_BURU: char = '𒐸';
-    /// \u{12439}: '𒐹'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_BURU: char = '𒐹';
-    /// \u{1243a}: '𒐺'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_VARIANT_FORM_ESH16: char = '𒐺';
-    /// \u{1243b}: '𒐻'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_VARIANT_FORM_ESH21: char = '𒐻';
-    /// \u{1243c}: '𒐼'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU: char = '𒐼';
-    /// \u{1243d}: '𒐽'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU4: char = '𒐽';
-    /// \u{1243e}: '𒐾'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU_A: char = '𒐾';
-    /// \u{1243f}: '𒐿'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU_B: char = '𒐿';
-    /// \u{12440}: '𒑀'
-    pub const CUNEIFORM_NUMERIC_SIGN_SIX_VARIANT_FORM_ASH9: char = '𒑀';
-    /// \u{12441}: '𒑁'
-    pub const CUNEIFORM_NUMERIC_SIGN_SEVEN_VARIANT_FORM_IMIN3: char = '𒑁';
-    /// \u{12442}: '𒑂'
-    pub const CUNEIFORM_NUMERIC_SIGN_SEVEN_VARIANT_FORM_IMIN_A: char = '𒑂';
-    /// \u{12443}: '𒑃'
-    pub const CUNEIFORM_NUMERIC_SIGN_SEVEN_VARIANT_FORM_IMIN_B: char = '𒑃';
-    /// \u{12444}: '𒑄'
-    pub const CUNEIFORM_NUMERIC_SIGN_EIGHT_VARIANT_FORM_USSU: char = '𒑄';
-    /// \u{12445}: '𒑅'
-    pub const CUNEIFORM_NUMERIC_SIGN_EIGHT_VARIANT_FORM_USSU3: char = '𒑅';
-    /// \u{12446}: '𒑆'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU: char = '𒑆';
-    /// \u{12447}: '𒑇'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU3: char = '𒑇';
-    /// \u{12448}: '𒑈'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU4: char = '𒑈';
-    /// \u{12449}: '𒑉'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU_A: char = '𒑉';
-    /// \u{1244a}: '𒑊'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_ASH_TENU: char = '𒑊';
-    /// \u{1244b}: '𒑋'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_ASH_TENU: char = '𒑋';
-    /// \u{1244c}: '𒑌'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_ASH_TENU: char = '𒑌';
-    /// \u{1244d}: '𒑍'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_ASH_TENU: char = '𒑍';
-    /// \u{1244e}: '𒑎'
-    pub const CUNEIFORM_NUMERIC_SIGN_SIX_ASH_TENU: char = '𒑎';
-    /// \u{1244f}: '𒑏'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_BAN2: char = '𒑏';
-    /// \u{12450}: '𒑐'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_BAN2: char = '𒑐';
-    /// \u{12451}: '𒑑'
-    pub const CUNEIFORM_NUMERIC_SIGN_THREE_BAN2: char = '𒑑';
-    /// \u{12452}: '𒑒'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_BAN2: char = '𒑒';
-    /// \u{12453}: '𒑓'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_BAN2_VARIANT_FORM: char = '𒑓';
-    /// \u{12454}: '𒑔'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_BAN2: char = '𒑔';
-    /// \u{12455}: '𒑕'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_BAN2_VARIANT_FORM: char = '𒑕';
-    /// \u{12456}: '𒑖'
-    pub const CUNEIFORM_NUMERIC_SIGN_NIGIDAMIN: char = '𒑖';
-    /// \u{12457}: '𒑗'
-    pub const CUNEIFORM_NUMERIC_SIGN_NIGIDAESH: char = '𒑗';
-    /// \u{12458}: '𒑘'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_ESHE3: char = '𒑘';
-    /// \u{12459}: '𒑙'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_ESHE3: char = '𒑙';
-    /// \u{1245a}: '𒑚'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_THIRD_DISH: char = '𒑚';
-    /// \u{1245b}: '𒑛'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_THIRDS_DISH: char = '𒑛';
-    /// \u{1245c}: '𒑜'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_SIXTHS_DISH: char = '𒑜';
-    /// \u{1245d}: '𒑝'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_THIRD_VARIANT_FORM_A: char = '𒑝';
-    /// \u{1245e}: '𒑞'
-    pub const CUNEIFORM_NUMERIC_SIGN_TWO_THIRDS_VARIANT_FORM_A: char = '𒑞';
-    /// \u{1245f}: '𒑟'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_EIGHTH_ASH: char = '𒑟';
-    /// \u{12460}: '𒑠'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_QUARTER_ASH: char = '𒑠';
-    /// \u{12461}: '𒑡'
-    pub const CUNEIFORM_NUMERIC_SIGN_OLD_ASSYRIAN_ONE_SIXTH: char = '𒑡';
-    /// \u{12462}: '𒑢'
-    pub const CUNEIFORM_NUMERIC_SIGN_OLD_ASSYRIAN_ONE_QUARTER: char = '𒑢';
-    /// \u{12463}: '𒑣'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_QUARTER_GUR: char = '𒑣';
-    /// \u{12464}: '𒑤'
-    pub const CUNEIFORM_NUMERIC_SIGN_ONE_HALF_GUR: char = '𒑤';
-    /// \u{12465}: '𒑥'
-    pub const CUNEIFORM_NUMERIC_SIGN_ELAMITE_ONE_THIRD: char = '𒑥';
-    /// \u{12466}: '𒑦'
-    pub const CUNEIFORM_NUMERIC_SIGN_ELAMITE_TWO_THIRDS: char = '𒑦';
-    /// \u{12467}: '𒑧'
-    pub const CUNEIFORM_NUMERIC_SIGN_ELAMITE_FORTY: char = '𒑧';
-    /// \u{12468}: '𒑨'
-    pub const CUNEIFORM_NUMERIC_SIGN_ELAMITE_FIFTY: char = '𒑨';
-    /// \u{12469}: '𒑩'
-    pub const CUNEIFORM_NUMERIC_SIGN_FOUR_U_VARIANT_FORM: char = '𒑩';
-    /// \u{1246a}: '𒑪'
-    pub const CUNEIFORM_NUMERIC_SIGN_FIVE_U_VARIANT_FORM: char = '𒑪';
-    /// \u{1246b}: '𒑫'
-    pub const CUNEIFORM_NUMERIC_SIGN_SIX_U_VARIANT_FORM: char = '𒑫';
-    /// \u{1246c}: '𒑬'
-    pub const CUNEIFORM_NUMERIC_SIGN_SEVEN_U_VARIANT_FORM: char = '𒑬';
-    /// \u{1246d}: '𒑭'
-    pub const CUNEIFORM_NUMERIC_SIGN_EIGHT_U_VARIANT_FORM: char = '𒑭';
-    /// \u{1246e}: '𒑮'
-    pub const CUNEIFORM_NUMERIC_SIGN_NINE_U_VARIANT_FORM: char = '𒑮';
-    /// \u{12470}: '𒑰'
-    pub const CUNEIFORM_PUNCTUATION_SIGN_OLD_ASSYRIAN_WORD_DIVIDER: char = '𒑰';
-    /// \u{12471}: '𒑱'
-    pub const CUNEIFORM_PUNCTUATION_SIGN_VERTICAL_COLON: char = '𒑱';
-    /// \u{12472}: '𒑲'
-    pub const CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_COLON: char = '𒑲';
-    /// \u{12473}: '𒑳'
-    pub const CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_TRICOLON: char = '𒑳';
-    /// \u{12474}: '𒑴'
-    pub const CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_QUADCOLON: char = '𒑴';
-}
 
 /// An enum to represent all characters in the CuneiformNumbersandPunctuation block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -473,124 +238,123 @@ pub enum CuneiformNumbersandPunctuation {
 
 impl Into<char> for CuneiformNumbersandPunctuation {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoAsh => CUNEIFORM_NUMERIC_SIGN_TWO_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeAsh => CUNEIFORM_NUMERIC_SIGN_THREE_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourAsh => CUNEIFORM_NUMERIC_SIGN_FOUR_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveAsh => CUNEIFORM_NUMERIC_SIGN_FIVE_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSixAsh => CUNEIFORM_NUMERIC_SIGN_SIX_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenAsh => CUNEIFORM_NUMERIC_SIGN_SEVEN_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignEightAsh => CUNEIFORM_NUMERIC_SIGN_EIGHT_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineAsh => CUNEIFORM_NUMERIC_SIGN_NINE_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeDish => CUNEIFORM_NUMERIC_SIGN_THREE_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourDish => CUNEIFORM_NUMERIC_SIGN_FOUR_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveDish => CUNEIFORM_NUMERIC_SIGN_FIVE_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSixDish => CUNEIFORM_NUMERIC_SIGN_SIX_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenDish => CUNEIFORM_NUMERIC_SIGN_SEVEN_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignEightDish => CUNEIFORM_NUMERIC_SIGN_EIGHT_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineDish => CUNEIFORM_NUMERIC_SIGN_NINE_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourU => CUNEIFORM_NUMERIC_SIGN_FOUR_U,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveU => CUNEIFORM_NUMERIC_SIGN_FIVE_U,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSixU => CUNEIFORM_NUMERIC_SIGN_SIX_U,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenU => CUNEIFORM_NUMERIC_SIGN_SEVEN_U,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignEightU => CUNEIFORM_NUMERIC_SIGN_EIGHT_U,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineU => CUNEIFORM_NUMERIC_SIGN_NINE_U,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneGesh2 => CUNEIFORM_NUMERIC_SIGN_ONE_GESH2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoGesh2 => CUNEIFORM_NUMERIC_SIGN_TWO_GESH2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeGesh2 => CUNEIFORM_NUMERIC_SIGN_THREE_GESH2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourGesh2 => CUNEIFORM_NUMERIC_SIGN_FOUR_GESH2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveGesh2 => CUNEIFORM_NUMERIC_SIGN_FIVE_GESH2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSixGesh2 => CUNEIFORM_NUMERIC_SIGN_SIX_GESH2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenGesh2 => CUNEIFORM_NUMERIC_SIGN_SEVEN_GESH2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignEightGesh2 => CUNEIFORM_NUMERIC_SIGN_EIGHT_GESH2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineGesh2 => CUNEIFORM_NUMERIC_SIGN_NINE_GESH2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneGeshu => CUNEIFORM_NUMERIC_SIGN_ONE_GESHU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoGeshu => CUNEIFORM_NUMERIC_SIGN_TWO_GESHU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeGeshu => CUNEIFORM_NUMERIC_SIGN_THREE_GESHU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourGeshu => CUNEIFORM_NUMERIC_SIGN_FOUR_GESHU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveGeshu => CUNEIFORM_NUMERIC_SIGN_FIVE_GESHU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoShar2 => CUNEIFORM_NUMERIC_SIGN_TWO_SHAR2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeShar2 => CUNEIFORM_NUMERIC_SIGN_THREE_SHAR2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeShar2VariantForm => CUNEIFORM_NUMERIC_SIGN_THREE_SHAR2_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourShar2 => CUNEIFORM_NUMERIC_SIGN_FOUR_SHAR2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveShar2 => CUNEIFORM_NUMERIC_SIGN_FIVE_SHAR2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSixShar2 => CUNEIFORM_NUMERIC_SIGN_SIX_SHAR2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenShar2 => CUNEIFORM_NUMERIC_SIGN_SEVEN_SHAR2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignEightShar2 => CUNEIFORM_NUMERIC_SIGN_EIGHT_SHAR2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineShar2 => CUNEIFORM_NUMERIC_SIGN_NINE_SHAR2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneSharu => CUNEIFORM_NUMERIC_SIGN_ONE_SHARU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoSharu => CUNEIFORM_NUMERIC_SIGN_TWO_SHARU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeSharu => CUNEIFORM_NUMERIC_SIGN_THREE_SHARU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeSharuVariantForm => CUNEIFORM_NUMERIC_SIGN_THREE_SHARU_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourSharu => CUNEIFORM_NUMERIC_SIGN_FOUR_SHARU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveSharu => CUNEIFORM_NUMERIC_SIGN_FIVE_SHARU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignShar2TimesGalPlusDish => CUNEIFORM_NUMERIC_SIGN_SHAR2_TIMES_GAL_PLUS_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignShar2TimesGalPlusMin => CUNEIFORM_NUMERIC_SIGN_SHAR2_TIMES_GAL_PLUS_MIN,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneBuru => CUNEIFORM_NUMERIC_SIGN_ONE_BURU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoBuru => CUNEIFORM_NUMERIC_SIGN_TWO_BURU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBuru => CUNEIFORM_NUMERIC_SIGN_THREE_BURU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBuruVariantForm => CUNEIFORM_NUMERIC_SIGN_THREE_BURU_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourBuru => CUNEIFORM_NUMERIC_SIGN_FOUR_BURU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBuru => CUNEIFORM_NUMERIC_SIGN_FIVE_BURU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeVariantFormEsh16 => CUNEIFORM_NUMERIC_SIGN_THREE_VARIANT_FORM_ESH16,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeVariantFormEsh21 => CUNEIFORM_NUMERIC_SIGN_THREE_VARIANT_FORM_ESH21,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmu => CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmu4 => CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU4,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmuA => CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU_A,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmuB => CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU_B,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSixVariantFormAsh9 => CUNEIFORM_NUMERIC_SIGN_SIX_VARIANT_FORM_ASH9,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormImin3 => CUNEIFORM_NUMERIC_SIGN_SEVEN_VARIANT_FORM_IMIN3,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormIminA => CUNEIFORM_NUMERIC_SIGN_SEVEN_VARIANT_FORM_IMIN_A,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormIminB => CUNEIFORM_NUMERIC_SIGN_SEVEN_VARIANT_FORM_IMIN_B,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignEightVariantFormUssu => CUNEIFORM_NUMERIC_SIGN_EIGHT_VARIANT_FORM_USSU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignEightVariantFormUssu3 => CUNEIFORM_NUMERIC_SIGN_EIGHT_VARIANT_FORM_USSU3,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu => CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu3 => CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU3,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu4 => CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU4,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmuA => CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU_A,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoAshTenu => CUNEIFORM_NUMERIC_SIGN_TWO_ASH_TENU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeAshTenu => CUNEIFORM_NUMERIC_SIGN_THREE_ASH_TENU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourAshTenu => CUNEIFORM_NUMERIC_SIGN_FOUR_ASH_TENU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveAshTenu => CUNEIFORM_NUMERIC_SIGN_FIVE_ASH_TENU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSixAshTenu => CUNEIFORM_NUMERIC_SIGN_SIX_ASH_TENU,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneBan2 => CUNEIFORM_NUMERIC_SIGN_ONE_BAN2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoBan2 => CUNEIFORM_NUMERIC_SIGN_TWO_BAN2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBan2 => CUNEIFORM_NUMERIC_SIGN_THREE_BAN2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourBan2 => CUNEIFORM_NUMERIC_SIGN_FOUR_BAN2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourBan2VariantForm => CUNEIFORM_NUMERIC_SIGN_FOUR_BAN2_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBan2 => CUNEIFORM_NUMERIC_SIGN_FIVE_BAN2,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBan2VariantForm => CUNEIFORM_NUMERIC_SIGN_FIVE_BAN2_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNigidamin => CUNEIFORM_NUMERIC_SIGN_NIGIDAMIN,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNigidaesh => CUNEIFORM_NUMERIC_SIGN_NIGIDAESH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneEshe3 => CUNEIFORM_NUMERIC_SIGN_ONE_ESHE3,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoEshe3 => CUNEIFORM_NUMERIC_SIGN_TWO_ESHE3,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneThirdDish => CUNEIFORM_NUMERIC_SIGN_ONE_THIRD_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoThirdsDish => CUNEIFORM_NUMERIC_SIGN_TWO_THIRDS_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveSixthsDish => CUNEIFORM_NUMERIC_SIGN_FIVE_SIXTHS_DISH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneThirdVariantFormA => CUNEIFORM_NUMERIC_SIGN_ONE_THIRD_VARIANT_FORM_A,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoThirdsVariantFormA => CUNEIFORM_NUMERIC_SIGN_TWO_THIRDS_VARIANT_FORM_A,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneEighthAsh => CUNEIFORM_NUMERIC_SIGN_ONE_EIGHTH_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneQuarterAsh => CUNEIFORM_NUMERIC_SIGN_ONE_QUARTER_ASH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOldAssyrianOneSixth => CUNEIFORM_NUMERIC_SIGN_OLD_ASSYRIAN_ONE_SIXTH,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOldAssyrianOneQuarter => CUNEIFORM_NUMERIC_SIGN_OLD_ASSYRIAN_ONE_QUARTER,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneQuarterGur => CUNEIFORM_NUMERIC_SIGN_ONE_QUARTER_GUR,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignOneHalfGur => CUNEIFORM_NUMERIC_SIGN_ONE_HALF_GUR,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteOneThird => CUNEIFORM_NUMERIC_SIGN_ELAMITE_ONE_THIRD,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteTwoThirds => CUNEIFORM_NUMERIC_SIGN_ELAMITE_TWO_THIRDS,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteForty => CUNEIFORM_NUMERIC_SIGN_ELAMITE_FORTY,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteFifty => CUNEIFORM_NUMERIC_SIGN_ELAMITE_FIFTY,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFourUVariantForm => CUNEIFORM_NUMERIC_SIGN_FOUR_U_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveUVariantForm => CUNEIFORM_NUMERIC_SIGN_FIVE_U_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSixUVariantForm => CUNEIFORM_NUMERIC_SIGN_SIX_U_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenUVariantForm => CUNEIFORM_NUMERIC_SIGN_SEVEN_U_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignEightUVariantForm => CUNEIFORM_NUMERIC_SIGN_EIGHT_U_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformNumericSignNineUVariantForm => CUNEIFORM_NUMERIC_SIGN_NINE_U_VARIANT_FORM,
-            CuneiformNumbersandPunctuation::CuneiformPunctuationSignOldAssyrianWordDivider => CUNEIFORM_PUNCTUATION_SIGN_OLD_ASSYRIAN_WORD_DIVIDER,
-            CuneiformNumbersandPunctuation::CuneiformPunctuationSignVerticalColon => CUNEIFORM_PUNCTUATION_SIGN_VERTICAL_COLON,
-            CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalColon => CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_COLON,
-            CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalTricolon => CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_TRICOLON,
-            CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalQuadcolon => CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_QUADCOLON,
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoAsh => '𒐀',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeAsh => '𒐁',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourAsh => '𒐂',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveAsh => '𒐃',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSixAsh => '𒐄',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenAsh => '𒐅',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignEightAsh => '𒐆',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineAsh => '𒐇',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeDish => '𒐈',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourDish => '𒐉',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveDish => '𒐊',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSixDish => '𒐋',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenDish => '𒐌',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignEightDish => '𒐍',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineDish => '𒐎',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourU => '𒐏',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveU => '𒐐',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSixU => '𒐑',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenU => '𒐒',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignEightU => '𒐓',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineU => '𒐔',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneGesh2 => '𒐕',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoGesh2 => '𒐖',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeGesh2 => '𒐗',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourGesh2 => '𒐘',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveGesh2 => '𒐙',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSixGesh2 => '𒐚',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenGesh2 => '𒐛',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignEightGesh2 => '𒐜',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineGesh2 => '𒐝',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneGeshu => '𒐞',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoGeshu => '𒐟',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeGeshu => '𒐠',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourGeshu => '𒐡',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveGeshu => '𒐢',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoShar2 => '𒐣',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeShar2 => '𒐤',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeShar2VariantForm => '𒐥',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourShar2 => '𒐦',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveShar2 => '𒐧',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSixShar2 => '𒐨',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenShar2 => '𒐩',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignEightShar2 => '𒐪',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineShar2 => '𒐫',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneSharu => '𒐬',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoSharu => '𒐭',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeSharu => '𒐮',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeSharuVariantForm => '𒐯',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourSharu => '𒐰',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveSharu => '𒐱',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignShar2TimesGalPlusDish => '𒐲',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignShar2TimesGalPlusMin => '𒐳',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneBuru => '𒐴',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoBuru => '𒐵',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBuru => '𒐶',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBuruVariantForm => '𒐷',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourBuru => '𒐸',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBuru => '𒐹',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeVariantFormEsh16 => '𒐺',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeVariantFormEsh21 => '𒐻',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmu => '𒐼',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmu4 => '𒐽',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmuA => '𒐾',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmuB => '𒐿',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSixVariantFormAsh9 => '𒑀',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormImin3 => '𒑁',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormIminA => '𒑂',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormIminB => '𒑃',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignEightVariantFormUssu => '𒑄',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignEightVariantFormUssu3 => '𒑅',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu => '𒑆',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu3 => '𒑇',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu4 => '𒑈',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmuA => '𒑉',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoAshTenu => '𒑊',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeAshTenu => '𒑋',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourAshTenu => '𒑌',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveAshTenu => '𒑍',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSixAshTenu => '𒑎',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneBan2 => '𒑏',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoBan2 => '𒑐',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBan2 => '𒑑',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourBan2 => '𒑒',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourBan2VariantForm => '𒑓',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBan2 => '𒑔',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBan2VariantForm => '𒑕',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNigidamin => '𒑖',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNigidaesh => '𒑗',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneEshe3 => '𒑘',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoEshe3 => '𒑙',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneThirdDish => '𒑚',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoThirdsDish => '𒑛',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveSixthsDish => '𒑜',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneThirdVariantFormA => '𒑝',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignTwoThirdsVariantFormA => '𒑞',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneEighthAsh => '𒑟',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneQuarterAsh => '𒑠',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOldAssyrianOneSixth => '𒑡',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOldAssyrianOneQuarter => '𒑢',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneQuarterGur => '𒑣',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignOneHalfGur => '𒑤',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteOneThird => '𒑥',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteTwoThirds => '𒑦',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteForty => '𒑧',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteFifty => '𒑨',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFourUVariantForm => '𒑩',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignFiveUVariantForm => '𒑪',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSixUVariantForm => '𒑫',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignSevenUVariantForm => '𒑬',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignEightUVariantForm => '𒑭',
+            CuneiformNumbersandPunctuation::CuneiformNumericSignNineUVariantForm => '𒑮',
+            CuneiformNumbersandPunctuation::CuneiformPunctuationSignOldAssyrianWordDivider => '𒑰',
+            CuneiformNumbersandPunctuation::CuneiformPunctuationSignVerticalColon => '𒑱',
+            CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalColon => '𒑲',
+            CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalTricolon => '𒑳',
+            CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalQuadcolon => '𒑴',
         }
     }
 }
@@ -598,124 +362,123 @@ impl Into<char> for CuneiformNumbersandPunctuation {
 impl std::convert::TryFrom<char> for CuneiformNumbersandPunctuation {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CUNEIFORM_NUMERIC_SIGN_TWO_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoAsh),
-            CUNEIFORM_NUMERIC_SIGN_THREE_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeAsh),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourAsh),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveAsh),
-            CUNEIFORM_NUMERIC_SIGN_SIX_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixAsh),
-            CUNEIFORM_NUMERIC_SIGN_SEVEN_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenAsh),
-            CUNEIFORM_NUMERIC_SIGN_EIGHT_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightAsh),
-            CUNEIFORM_NUMERIC_SIGN_NINE_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineAsh),
-            CUNEIFORM_NUMERIC_SIGN_THREE_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeDish),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourDish),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveDish),
-            CUNEIFORM_NUMERIC_SIGN_SIX_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixDish),
-            CUNEIFORM_NUMERIC_SIGN_SEVEN_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenDish),
-            CUNEIFORM_NUMERIC_SIGN_EIGHT_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightDish),
-            CUNEIFORM_NUMERIC_SIGN_NINE_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineDish),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_U => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourU),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_U => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveU),
-            CUNEIFORM_NUMERIC_SIGN_SIX_U => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixU),
-            CUNEIFORM_NUMERIC_SIGN_SEVEN_U => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenU),
-            CUNEIFORM_NUMERIC_SIGN_EIGHT_U => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightU),
-            CUNEIFORM_NUMERIC_SIGN_NINE_U => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineU),
-            CUNEIFORM_NUMERIC_SIGN_ONE_GESH2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneGesh2),
-            CUNEIFORM_NUMERIC_SIGN_TWO_GESH2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoGesh2),
-            CUNEIFORM_NUMERIC_SIGN_THREE_GESH2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeGesh2),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_GESH2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourGesh2),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_GESH2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveGesh2),
-            CUNEIFORM_NUMERIC_SIGN_SIX_GESH2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixGesh2),
-            CUNEIFORM_NUMERIC_SIGN_SEVEN_GESH2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenGesh2),
-            CUNEIFORM_NUMERIC_SIGN_EIGHT_GESH2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightGesh2),
-            CUNEIFORM_NUMERIC_SIGN_NINE_GESH2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineGesh2),
-            CUNEIFORM_NUMERIC_SIGN_ONE_GESHU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneGeshu),
-            CUNEIFORM_NUMERIC_SIGN_TWO_GESHU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoGeshu),
-            CUNEIFORM_NUMERIC_SIGN_THREE_GESHU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeGeshu),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_GESHU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourGeshu),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_GESHU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveGeshu),
-            CUNEIFORM_NUMERIC_SIGN_TWO_SHAR2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoShar2),
-            CUNEIFORM_NUMERIC_SIGN_THREE_SHAR2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeShar2),
-            CUNEIFORM_NUMERIC_SIGN_THREE_SHAR2_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeShar2VariantForm),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_SHAR2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourShar2),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_SHAR2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveShar2),
-            CUNEIFORM_NUMERIC_SIGN_SIX_SHAR2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixShar2),
-            CUNEIFORM_NUMERIC_SIGN_SEVEN_SHAR2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenShar2),
-            CUNEIFORM_NUMERIC_SIGN_EIGHT_SHAR2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightShar2),
-            CUNEIFORM_NUMERIC_SIGN_NINE_SHAR2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineShar2),
-            CUNEIFORM_NUMERIC_SIGN_ONE_SHARU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneSharu),
-            CUNEIFORM_NUMERIC_SIGN_TWO_SHARU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoSharu),
-            CUNEIFORM_NUMERIC_SIGN_THREE_SHARU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeSharu),
-            CUNEIFORM_NUMERIC_SIGN_THREE_SHARU_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeSharuVariantForm),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_SHARU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourSharu),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_SHARU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveSharu),
-            CUNEIFORM_NUMERIC_SIGN_SHAR2_TIMES_GAL_PLUS_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignShar2TimesGalPlusDish),
-            CUNEIFORM_NUMERIC_SIGN_SHAR2_TIMES_GAL_PLUS_MIN => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignShar2TimesGalPlusMin),
-            CUNEIFORM_NUMERIC_SIGN_ONE_BURU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneBuru),
-            CUNEIFORM_NUMERIC_SIGN_TWO_BURU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoBuru),
-            CUNEIFORM_NUMERIC_SIGN_THREE_BURU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBuru),
-            CUNEIFORM_NUMERIC_SIGN_THREE_BURU_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBuruVariantForm),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_BURU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourBuru),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_BURU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBuru),
-            CUNEIFORM_NUMERIC_SIGN_THREE_VARIANT_FORM_ESH16 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeVariantFormEsh16),
-            CUNEIFORM_NUMERIC_SIGN_THREE_VARIANT_FORM_ESH21 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeVariantFormEsh21),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmu),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU4 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmu4),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU_A => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmuA),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_VARIANT_FORM_LIMMU_B => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmuB),
-            CUNEIFORM_NUMERIC_SIGN_SIX_VARIANT_FORM_ASH9 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixVariantFormAsh9),
-            CUNEIFORM_NUMERIC_SIGN_SEVEN_VARIANT_FORM_IMIN3 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormImin3),
-            CUNEIFORM_NUMERIC_SIGN_SEVEN_VARIANT_FORM_IMIN_A => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormIminA),
-            CUNEIFORM_NUMERIC_SIGN_SEVEN_VARIANT_FORM_IMIN_B => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormIminB),
-            CUNEIFORM_NUMERIC_SIGN_EIGHT_VARIANT_FORM_USSU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightVariantFormUssu),
-            CUNEIFORM_NUMERIC_SIGN_EIGHT_VARIANT_FORM_USSU3 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightVariantFormUssu3),
-            CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu),
-            CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU3 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu3),
-            CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU4 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu4),
-            CUNEIFORM_NUMERIC_SIGN_NINE_VARIANT_FORM_ILIMMU_A => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmuA),
-            CUNEIFORM_NUMERIC_SIGN_TWO_ASH_TENU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoAshTenu),
-            CUNEIFORM_NUMERIC_SIGN_THREE_ASH_TENU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeAshTenu),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_ASH_TENU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourAshTenu),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_ASH_TENU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveAshTenu),
-            CUNEIFORM_NUMERIC_SIGN_SIX_ASH_TENU => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixAshTenu),
-            CUNEIFORM_NUMERIC_SIGN_ONE_BAN2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneBan2),
-            CUNEIFORM_NUMERIC_SIGN_TWO_BAN2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoBan2),
-            CUNEIFORM_NUMERIC_SIGN_THREE_BAN2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBan2),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_BAN2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourBan2),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_BAN2_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourBan2VariantForm),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_BAN2 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBan2),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_BAN2_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBan2VariantForm),
-            CUNEIFORM_NUMERIC_SIGN_NIGIDAMIN => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNigidamin),
-            CUNEIFORM_NUMERIC_SIGN_NIGIDAESH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNigidaesh),
-            CUNEIFORM_NUMERIC_SIGN_ONE_ESHE3 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneEshe3),
-            CUNEIFORM_NUMERIC_SIGN_TWO_ESHE3 => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoEshe3),
-            CUNEIFORM_NUMERIC_SIGN_ONE_THIRD_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneThirdDish),
-            CUNEIFORM_NUMERIC_SIGN_TWO_THIRDS_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoThirdsDish),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_SIXTHS_DISH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveSixthsDish),
-            CUNEIFORM_NUMERIC_SIGN_ONE_THIRD_VARIANT_FORM_A => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneThirdVariantFormA),
-            CUNEIFORM_NUMERIC_SIGN_TWO_THIRDS_VARIANT_FORM_A => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoThirdsVariantFormA),
-            CUNEIFORM_NUMERIC_SIGN_ONE_EIGHTH_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneEighthAsh),
-            CUNEIFORM_NUMERIC_SIGN_ONE_QUARTER_ASH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneQuarterAsh),
-            CUNEIFORM_NUMERIC_SIGN_OLD_ASSYRIAN_ONE_SIXTH => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOldAssyrianOneSixth),
-            CUNEIFORM_NUMERIC_SIGN_OLD_ASSYRIAN_ONE_QUARTER => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOldAssyrianOneQuarter),
-            CUNEIFORM_NUMERIC_SIGN_ONE_QUARTER_GUR => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneQuarterGur),
-            CUNEIFORM_NUMERIC_SIGN_ONE_HALF_GUR => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneHalfGur),
-            CUNEIFORM_NUMERIC_SIGN_ELAMITE_ONE_THIRD => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteOneThird),
-            CUNEIFORM_NUMERIC_SIGN_ELAMITE_TWO_THIRDS => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteTwoThirds),
-            CUNEIFORM_NUMERIC_SIGN_ELAMITE_FORTY => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteForty),
-            CUNEIFORM_NUMERIC_SIGN_ELAMITE_FIFTY => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteFifty),
-            CUNEIFORM_NUMERIC_SIGN_FOUR_U_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourUVariantForm),
-            CUNEIFORM_NUMERIC_SIGN_FIVE_U_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveUVariantForm),
-            CUNEIFORM_NUMERIC_SIGN_SIX_U_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixUVariantForm),
-            CUNEIFORM_NUMERIC_SIGN_SEVEN_U_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenUVariantForm),
-            CUNEIFORM_NUMERIC_SIGN_EIGHT_U_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightUVariantForm),
-            CUNEIFORM_NUMERIC_SIGN_NINE_U_VARIANT_FORM => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineUVariantForm),
-            CUNEIFORM_PUNCTUATION_SIGN_OLD_ASSYRIAN_WORD_DIVIDER => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignOldAssyrianWordDivider),
-            CUNEIFORM_PUNCTUATION_SIGN_VERTICAL_COLON => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignVerticalColon),
-            CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_COLON => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalColon),
-            CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_TRICOLON => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalTricolon),
-            CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_QUADCOLON => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalQuadcolon),
+            '𒐀' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoAsh),
+            '𒐁' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeAsh),
+            '𒐂' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourAsh),
+            '𒐃' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveAsh),
+            '𒐄' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixAsh),
+            '𒐅' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenAsh),
+            '𒐆' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightAsh),
+            '𒐇' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineAsh),
+            '𒐈' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeDish),
+            '𒐉' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourDish),
+            '𒐊' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveDish),
+            '𒐋' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixDish),
+            '𒐌' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenDish),
+            '𒐍' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightDish),
+            '𒐎' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineDish),
+            '𒐏' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourU),
+            '𒐐' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveU),
+            '𒐑' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixU),
+            '𒐒' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenU),
+            '𒐓' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightU),
+            '𒐔' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineU),
+            '𒐕' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneGesh2),
+            '𒐖' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoGesh2),
+            '𒐗' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeGesh2),
+            '𒐘' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourGesh2),
+            '𒐙' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveGesh2),
+            '𒐚' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixGesh2),
+            '𒐛' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenGesh2),
+            '𒐜' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightGesh2),
+            '𒐝' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineGesh2),
+            '𒐞' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneGeshu),
+            '𒐟' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoGeshu),
+            '𒐠' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeGeshu),
+            '𒐡' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourGeshu),
+            '𒐢' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveGeshu),
+            '𒐣' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoShar2),
+            '𒐤' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeShar2),
+            '𒐥' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeShar2VariantForm),
+            '𒐦' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourShar2),
+            '𒐧' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveShar2),
+            '𒐨' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixShar2),
+            '𒐩' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenShar2),
+            '𒐪' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightShar2),
+            '𒐫' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineShar2),
+            '𒐬' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneSharu),
+            '𒐭' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoSharu),
+            '𒐮' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeSharu),
+            '𒐯' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeSharuVariantForm),
+            '𒐰' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourSharu),
+            '𒐱' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveSharu),
+            '𒐲' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignShar2TimesGalPlusDish),
+            '𒐳' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignShar2TimesGalPlusMin),
+            '𒐴' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneBuru),
+            '𒐵' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoBuru),
+            '𒐶' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBuru),
+            '𒐷' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBuruVariantForm),
+            '𒐸' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourBuru),
+            '𒐹' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBuru),
+            '𒐺' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeVariantFormEsh16),
+            '𒐻' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeVariantFormEsh21),
+            '𒐼' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmu),
+            '𒐽' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmu4),
+            '𒐾' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmuA),
+            '𒐿' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourVariantFormLimmuB),
+            '𒑀' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixVariantFormAsh9),
+            '𒑁' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormImin3),
+            '𒑂' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormIminA),
+            '𒑃' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenVariantFormIminB),
+            '𒑄' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightVariantFormUssu),
+            '𒑅' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightVariantFormUssu3),
+            '𒑆' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu),
+            '𒑇' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu3),
+            '𒑈' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmu4),
+            '𒑉' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineVariantFormIlimmuA),
+            '𒑊' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoAshTenu),
+            '𒑋' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeAshTenu),
+            '𒑌' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourAshTenu),
+            '𒑍' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveAshTenu),
+            '𒑎' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixAshTenu),
+            '𒑏' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneBan2),
+            '𒑐' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoBan2),
+            '𒑑' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignThreeBan2),
+            '𒑒' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourBan2),
+            '𒑓' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourBan2VariantForm),
+            '𒑔' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBan2),
+            '𒑕' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveBan2VariantForm),
+            '𒑖' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNigidamin),
+            '𒑗' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNigidaesh),
+            '𒑘' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneEshe3),
+            '𒑙' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoEshe3),
+            '𒑚' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneThirdDish),
+            '𒑛' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoThirdsDish),
+            '𒑜' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveSixthsDish),
+            '𒑝' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneThirdVariantFormA),
+            '𒑞' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignTwoThirdsVariantFormA),
+            '𒑟' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneEighthAsh),
+            '𒑠' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneQuarterAsh),
+            '𒑡' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOldAssyrianOneSixth),
+            '𒑢' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOldAssyrianOneQuarter),
+            '𒑣' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneQuarterGur),
+            '𒑤' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignOneHalfGur),
+            '𒑥' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteOneThird),
+            '𒑦' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteTwoThirds),
+            '𒑧' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteForty),
+            '𒑨' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignElamiteFifty),
+            '𒑩' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFourUVariantForm),
+            '𒑪' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignFiveUVariantForm),
+            '𒑫' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSixUVariantForm),
+            '𒑬' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignSevenUVariantForm),
+            '𒑭' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignEightUVariantForm),
+            '𒑮' => Ok(CuneiformNumbersandPunctuation::CuneiformNumericSignNineUVariantForm),
+            '𒑰' => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignOldAssyrianWordDivider),
+            '𒑱' => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignVerticalColon),
+            '𒑲' => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalColon),
+            '𒑳' => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalTricolon),
+            '𒑴' => Ok(CuneiformNumbersandPunctuation::CuneiformPunctuationSignDiagonalQuadcolon),
             _ => Err(()),
         }
     }

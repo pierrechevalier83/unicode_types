@@ -1,26 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a830}: '꠰'
-    pub const NORTH_INDIC_FRACTION_ONE_QUARTER: char = '꠰';
-    /// \u{a831}: '꠱'
-    pub const NORTH_INDIC_FRACTION_ONE_HALF: char = '꠱';
-    /// \u{a832}: '꠲'
-    pub const NORTH_INDIC_FRACTION_THREE_QUARTERS: char = '꠲';
-    /// \u{a833}: '꠳'
-    pub const NORTH_INDIC_FRACTION_ONE_SIXTEENTH: char = '꠳';
-    /// \u{a834}: '꠴'
-    pub const NORTH_INDIC_FRACTION_ONE_EIGHTH: char = '꠴';
-    /// \u{a835}: '꠵'
-    pub const NORTH_INDIC_FRACTION_THREE_SIXTEENTHS: char = '꠵';
-    /// \u{a836}: '꠶'
-    pub const NORTH_INDIC_QUARTER_MARK: char = '꠶';
-    /// \u{a837}: '꠷'
-    pub const NORTH_INDIC_PLACEHOLDER_MARK: char = '꠷';
-    /// \u{a838}: '꠸'
-    pub const NORTH_INDIC_RUPEE_MARK: char = '꠸';
-    /// \u{a839}: '꠹'
-    pub const NORTH_INDIC_QUANTITY_MARK: char = '꠹';
-}
 
 /// An enum to represent all characters in the CommonIndicNumberForms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -49,18 +26,17 @@ pub enum CommonIndicNumberForms {
 
 impl Into<char> for CommonIndicNumberForms {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CommonIndicNumberForms::NorthIndicFractionOneQuarter => NORTH_INDIC_FRACTION_ONE_QUARTER,
-            CommonIndicNumberForms::NorthIndicFractionOneHalf => NORTH_INDIC_FRACTION_ONE_HALF,
-            CommonIndicNumberForms::NorthIndicFractionThreeQuarters => NORTH_INDIC_FRACTION_THREE_QUARTERS,
-            CommonIndicNumberForms::NorthIndicFractionOneSixteenth => NORTH_INDIC_FRACTION_ONE_SIXTEENTH,
-            CommonIndicNumberForms::NorthIndicFractionOneEighth => NORTH_INDIC_FRACTION_ONE_EIGHTH,
-            CommonIndicNumberForms::NorthIndicFractionThreeSixteenths => NORTH_INDIC_FRACTION_THREE_SIXTEENTHS,
-            CommonIndicNumberForms::NorthIndicQuarterMark => NORTH_INDIC_QUARTER_MARK,
-            CommonIndicNumberForms::NorthIndicPlaceholderMark => NORTH_INDIC_PLACEHOLDER_MARK,
-            CommonIndicNumberForms::NorthIndicRupeeMark => NORTH_INDIC_RUPEE_MARK,
-            CommonIndicNumberForms::NorthIndicQuantityMark => NORTH_INDIC_QUANTITY_MARK,
+            CommonIndicNumberForms::NorthIndicFractionOneQuarter => '꠰',
+            CommonIndicNumberForms::NorthIndicFractionOneHalf => '꠱',
+            CommonIndicNumberForms::NorthIndicFractionThreeQuarters => '꠲',
+            CommonIndicNumberForms::NorthIndicFractionOneSixteenth => '꠳',
+            CommonIndicNumberForms::NorthIndicFractionOneEighth => '꠴',
+            CommonIndicNumberForms::NorthIndicFractionThreeSixteenths => '꠵',
+            CommonIndicNumberForms::NorthIndicQuarterMark => '꠶',
+            CommonIndicNumberForms::NorthIndicPlaceholderMark => '꠷',
+            CommonIndicNumberForms::NorthIndicRupeeMark => '꠸',
+            CommonIndicNumberForms::NorthIndicQuantityMark => '꠹',
         }
     }
 }
@@ -68,18 +44,17 @@ impl Into<char> for CommonIndicNumberForms {
 impl std::convert::TryFrom<char> for CommonIndicNumberForms {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            NORTH_INDIC_FRACTION_ONE_QUARTER => Ok(CommonIndicNumberForms::NorthIndicFractionOneQuarter),
-            NORTH_INDIC_FRACTION_ONE_HALF => Ok(CommonIndicNumberForms::NorthIndicFractionOneHalf),
-            NORTH_INDIC_FRACTION_THREE_QUARTERS => Ok(CommonIndicNumberForms::NorthIndicFractionThreeQuarters),
-            NORTH_INDIC_FRACTION_ONE_SIXTEENTH => Ok(CommonIndicNumberForms::NorthIndicFractionOneSixteenth),
-            NORTH_INDIC_FRACTION_ONE_EIGHTH => Ok(CommonIndicNumberForms::NorthIndicFractionOneEighth),
-            NORTH_INDIC_FRACTION_THREE_SIXTEENTHS => Ok(CommonIndicNumberForms::NorthIndicFractionThreeSixteenths),
-            NORTH_INDIC_QUARTER_MARK => Ok(CommonIndicNumberForms::NorthIndicQuarterMark),
-            NORTH_INDIC_PLACEHOLDER_MARK => Ok(CommonIndicNumberForms::NorthIndicPlaceholderMark),
-            NORTH_INDIC_RUPEE_MARK => Ok(CommonIndicNumberForms::NorthIndicRupeeMark),
-            NORTH_INDIC_QUANTITY_MARK => Ok(CommonIndicNumberForms::NorthIndicQuantityMark),
+            '꠰' => Ok(CommonIndicNumberForms::NorthIndicFractionOneQuarter),
+            '꠱' => Ok(CommonIndicNumberForms::NorthIndicFractionOneHalf),
+            '꠲' => Ok(CommonIndicNumberForms::NorthIndicFractionThreeQuarters),
+            '꠳' => Ok(CommonIndicNumberForms::NorthIndicFractionOneSixteenth),
+            '꠴' => Ok(CommonIndicNumberForms::NorthIndicFractionOneEighth),
+            '꠵' => Ok(CommonIndicNumberForms::NorthIndicFractionThreeSixteenths),
+            '꠶' => Ok(CommonIndicNumberForms::NorthIndicQuarterMark),
+            '꠷' => Ok(CommonIndicNumberForms::NorthIndicPlaceholderMark),
+            '꠸' => Ok(CommonIndicNumberForms::NorthIndicRupeeMark),
+            '꠹' => Ok(CommonIndicNumberForms::NorthIndicQuantityMark),
             _ => Err(()),
         }
     }

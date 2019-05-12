@@ -1,122 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2d30}: 'ⴰ'
-    pub const LETTER_YA: char = 'ⴰ';
-    /// \u{2d31}: 'ⴱ'
-    pub const LETTER_YAB: char = 'ⴱ';
-    /// \u{2d32}: 'ⴲ'
-    pub const LETTER_YABH: char = 'ⴲ';
-    /// \u{2d33}: 'ⴳ'
-    pub const LETTER_YAG: char = 'ⴳ';
-    /// \u{2d34}: 'ⴴ'
-    pub const LETTER_YAGHH: char = 'ⴴ';
-    /// \u{2d35}: 'ⴵ'
-    pub const LETTER_BERBER_ACADEMY_YAJ: char = 'ⴵ';
-    /// \u{2d36}: 'ⴶ'
-    pub const LETTER_YAJ: char = 'ⴶ';
-    /// \u{2d37}: 'ⴷ'
-    pub const LETTER_YAD: char = 'ⴷ';
-    /// \u{2d38}: 'ⴸ'
-    pub const LETTER_YADH: char = 'ⴸ';
-    /// \u{2d39}: 'ⴹ'
-    pub const LETTER_YADD: char = 'ⴹ';
-    /// \u{2d3a}: 'ⴺ'
-    pub const LETTER_YADDH: char = 'ⴺ';
-    /// \u{2d3b}: 'ⴻ'
-    pub const LETTER_YEY: char = 'ⴻ';
-    /// \u{2d3c}: 'ⴼ'
-    pub const LETTER_YAF: char = 'ⴼ';
-    /// \u{2d3d}: 'ⴽ'
-    pub const LETTER_YAK: char = 'ⴽ';
-    /// \u{2d3e}: 'ⴾ'
-    pub const LETTER_TUAREG_YAK: char = 'ⴾ';
-    /// \u{2d3f}: 'ⴿ'
-    pub const LETTER_YAKHH: char = 'ⴿ';
-    /// \u{2d40}: 'ⵀ'
-    pub const LETTER_YAH: char = 'ⵀ';
-    /// \u{2d41}: 'ⵁ'
-    pub const LETTER_BERBER_ACADEMY_YAH: char = 'ⵁ';
-    /// \u{2d42}: 'ⵂ'
-    pub const LETTER_TUAREG_YAH: char = 'ⵂ';
-    /// \u{2d43}: 'ⵃ'
-    pub const LETTER_YAHH: char = 'ⵃ';
-    /// \u{2d44}: 'ⵄ'
-    pub const LETTER_YAA: char = 'ⵄ';
-    /// \u{2d45}: 'ⵅ'
-    pub const LETTER_YAKH: char = 'ⵅ';
-    /// \u{2d46}: 'ⵆ'
-    pub const LETTER_TUAREG_YAKH: char = 'ⵆ';
-    /// \u{2d47}: 'ⵇ'
-    pub const LETTER_YAQ: char = 'ⵇ';
-    /// \u{2d48}: 'ⵈ'
-    pub const LETTER_TUAREG_YAQ: char = 'ⵈ';
-    /// \u{2d49}: 'ⵉ'
-    pub const LETTER_YI: char = 'ⵉ';
-    /// \u{2d4a}: 'ⵊ'
-    pub const LETTER_YAZH: char = 'ⵊ';
-    /// \u{2d4b}: 'ⵋ'
-    pub const LETTER_AHAGGAR_YAZH: char = 'ⵋ';
-    /// \u{2d4c}: 'ⵌ'
-    pub const LETTER_TUAREG_YAZH: char = 'ⵌ';
-    /// \u{2d4d}: 'ⵍ'
-    pub const LETTER_YAL: char = 'ⵍ';
-    /// \u{2d4e}: 'ⵎ'
-    pub const LETTER_YAM: char = 'ⵎ';
-    /// \u{2d4f}: 'ⵏ'
-    pub const LETTER_YAN: char = 'ⵏ';
-    /// \u{2d50}: 'ⵐ'
-    pub const LETTER_TUAREG_YAGN: char = 'ⵐ';
-    /// \u{2d51}: 'ⵑ'
-    pub const LETTER_TUAREG_YANG: char = 'ⵑ';
-    /// \u{2d52}: 'ⵒ'
-    pub const LETTER_YAP: char = 'ⵒ';
-    /// \u{2d53}: 'ⵓ'
-    pub const LETTER_YU: char = 'ⵓ';
-    /// \u{2d54}: 'ⵔ'
-    pub const LETTER_YAR: char = 'ⵔ';
-    /// \u{2d55}: 'ⵕ'
-    pub const LETTER_YARR: char = 'ⵕ';
-    /// \u{2d56}: 'ⵖ'
-    pub const LETTER_YAGH: char = 'ⵖ';
-    /// \u{2d57}: 'ⵗ'
-    pub const LETTER_TUAREG_YAGH: char = 'ⵗ';
-    /// \u{2d58}: 'ⵘ'
-    pub const LETTER_AYER_YAGH: char = 'ⵘ';
-    /// \u{2d59}: 'ⵙ'
-    pub const LETTER_YAS: char = 'ⵙ';
-    /// \u{2d5a}: 'ⵚ'
-    pub const LETTER_YASS: char = 'ⵚ';
-    /// \u{2d5b}: 'ⵛ'
-    pub const LETTER_YASH: char = 'ⵛ';
-    /// \u{2d5c}: 'ⵜ'
-    pub const LETTER_YAT: char = 'ⵜ';
-    /// \u{2d5d}: 'ⵝ'
-    pub const LETTER_YATH: char = 'ⵝ';
-    /// \u{2d5e}: 'ⵞ'
-    pub const LETTER_YACH: char = 'ⵞ';
-    /// \u{2d5f}: 'ⵟ'
-    pub const LETTER_YATT: char = 'ⵟ';
-    /// \u{2d60}: 'ⵠ'
-    pub const LETTER_YAV: char = 'ⵠ';
-    /// \u{2d61}: 'ⵡ'
-    pub const LETTER_YAW: char = 'ⵡ';
-    /// \u{2d62}: 'ⵢ'
-    pub const LETTER_YAY: char = 'ⵢ';
-    /// \u{2d63}: 'ⵣ'
-    pub const LETTER_YAZ: char = 'ⵣ';
-    /// \u{2d64}: 'ⵤ'
-    pub const LETTER_TAWELLEMET_YAZ: char = 'ⵤ';
-    /// \u{2d65}: 'ⵥ'
-    pub const LETTER_YAZZ: char = 'ⵥ';
-    /// \u{2d66}: 'ⵦ'
-    pub const LETTER_YE: char = 'ⵦ';
-    /// \u{2d67}: 'ⵧ'
-    pub const LETTER_YO: char = 'ⵧ';
-    /// \u{2d6f}: 'ⵯ'
-    pub const MODIFIER_LETTER_LABIALIZATION_MARK: char = 'ⵯ';
-    /// \u{2d70}: '⵰'
-    pub const SEPARATOR_MARK: char = '⵰';
-}
 
 /// An enum to represent all characters in the Tifinagh block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -241,66 +122,65 @@ pub enum Tifinagh {
 
 impl Into<char> for Tifinagh {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Tifinagh::LetterYa => LETTER_YA,
-            Tifinagh::LetterYab => LETTER_YAB,
-            Tifinagh::LetterYabh => LETTER_YABH,
-            Tifinagh::LetterYag => LETTER_YAG,
-            Tifinagh::LetterYaghh => LETTER_YAGHH,
-            Tifinagh::LetterBerberAcademyYaj => LETTER_BERBER_ACADEMY_YAJ,
-            Tifinagh::LetterYaj => LETTER_YAJ,
-            Tifinagh::LetterYad => LETTER_YAD,
-            Tifinagh::LetterYadh => LETTER_YADH,
-            Tifinagh::LetterYadd => LETTER_YADD,
-            Tifinagh::LetterYaddh => LETTER_YADDH,
-            Tifinagh::LetterYey => LETTER_YEY,
-            Tifinagh::LetterYaf => LETTER_YAF,
-            Tifinagh::LetterYak => LETTER_YAK,
-            Tifinagh::LetterTuaregYak => LETTER_TUAREG_YAK,
-            Tifinagh::LetterYakhh => LETTER_YAKHH,
-            Tifinagh::LetterYah => LETTER_YAH,
-            Tifinagh::LetterBerberAcademyYah => LETTER_BERBER_ACADEMY_YAH,
-            Tifinagh::LetterTuaregYah => LETTER_TUAREG_YAH,
-            Tifinagh::LetterYahh => LETTER_YAHH,
-            Tifinagh::LetterYaa => LETTER_YAA,
-            Tifinagh::LetterYakh => LETTER_YAKH,
-            Tifinagh::LetterTuaregYakh => LETTER_TUAREG_YAKH,
-            Tifinagh::LetterYaq => LETTER_YAQ,
-            Tifinagh::LetterTuaregYaq => LETTER_TUAREG_YAQ,
-            Tifinagh::LetterYi => LETTER_YI,
-            Tifinagh::LetterYazh => LETTER_YAZH,
-            Tifinagh::LetterAhaggarYazh => LETTER_AHAGGAR_YAZH,
-            Tifinagh::LetterTuaregYazh => LETTER_TUAREG_YAZH,
-            Tifinagh::LetterYal => LETTER_YAL,
-            Tifinagh::LetterYam => LETTER_YAM,
-            Tifinagh::LetterYan => LETTER_YAN,
-            Tifinagh::LetterTuaregYagn => LETTER_TUAREG_YAGN,
-            Tifinagh::LetterTuaregYang => LETTER_TUAREG_YANG,
-            Tifinagh::LetterYap => LETTER_YAP,
-            Tifinagh::LetterYu => LETTER_YU,
-            Tifinagh::LetterYar => LETTER_YAR,
-            Tifinagh::LetterYarr => LETTER_YARR,
-            Tifinagh::LetterYagh => LETTER_YAGH,
-            Tifinagh::LetterTuaregYagh => LETTER_TUAREG_YAGH,
-            Tifinagh::LetterAyerYagh => LETTER_AYER_YAGH,
-            Tifinagh::LetterYas => LETTER_YAS,
-            Tifinagh::LetterYass => LETTER_YASS,
-            Tifinagh::LetterYash => LETTER_YASH,
-            Tifinagh::LetterYat => LETTER_YAT,
-            Tifinagh::LetterYath => LETTER_YATH,
-            Tifinagh::LetterYach => LETTER_YACH,
-            Tifinagh::LetterYatt => LETTER_YATT,
-            Tifinagh::LetterYav => LETTER_YAV,
-            Tifinagh::LetterYaw => LETTER_YAW,
-            Tifinagh::LetterYay => LETTER_YAY,
-            Tifinagh::LetterYaz => LETTER_YAZ,
-            Tifinagh::LetterTawellemetYaz => LETTER_TAWELLEMET_YAZ,
-            Tifinagh::LetterYazz => LETTER_YAZZ,
-            Tifinagh::LetterYe => LETTER_YE,
-            Tifinagh::LetterYo => LETTER_YO,
-            Tifinagh::ModifierLetterLabializationMark => MODIFIER_LETTER_LABIALIZATION_MARK,
-            Tifinagh::SeparatorMark => SEPARATOR_MARK,
+            Tifinagh::LetterYa => 'ⴰ',
+            Tifinagh::LetterYab => 'ⴱ',
+            Tifinagh::LetterYabh => 'ⴲ',
+            Tifinagh::LetterYag => 'ⴳ',
+            Tifinagh::LetterYaghh => 'ⴴ',
+            Tifinagh::LetterBerberAcademyYaj => 'ⴵ',
+            Tifinagh::LetterYaj => 'ⴶ',
+            Tifinagh::LetterYad => 'ⴷ',
+            Tifinagh::LetterYadh => 'ⴸ',
+            Tifinagh::LetterYadd => 'ⴹ',
+            Tifinagh::LetterYaddh => 'ⴺ',
+            Tifinagh::LetterYey => 'ⴻ',
+            Tifinagh::LetterYaf => 'ⴼ',
+            Tifinagh::LetterYak => 'ⴽ',
+            Tifinagh::LetterTuaregYak => 'ⴾ',
+            Tifinagh::LetterYakhh => 'ⴿ',
+            Tifinagh::LetterYah => 'ⵀ',
+            Tifinagh::LetterBerberAcademyYah => 'ⵁ',
+            Tifinagh::LetterTuaregYah => 'ⵂ',
+            Tifinagh::LetterYahh => 'ⵃ',
+            Tifinagh::LetterYaa => 'ⵄ',
+            Tifinagh::LetterYakh => 'ⵅ',
+            Tifinagh::LetterTuaregYakh => 'ⵆ',
+            Tifinagh::LetterYaq => 'ⵇ',
+            Tifinagh::LetterTuaregYaq => 'ⵈ',
+            Tifinagh::LetterYi => 'ⵉ',
+            Tifinagh::LetterYazh => 'ⵊ',
+            Tifinagh::LetterAhaggarYazh => 'ⵋ',
+            Tifinagh::LetterTuaregYazh => 'ⵌ',
+            Tifinagh::LetterYal => 'ⵍ',
+            Tifinagh::LetterYam => 'ⵎ',
+            Tifinagh::LetterYan => 'ⵏ',
+            Tifinagh::LetterTuaregYagn => 'ⵐ',
+            Tifinagh::LetterTuaregYang => 'ⵑ',
+            Tifinagh::LetterYap => 'ⵒ',
+            Tifinagh::LetterYu => 'ⵓ',
+            Tifinagh::LetterYar => 'ⵔ',
+            Tifinagh::LetterYarr => 'ⵕ',
+            Tifinagh::LetterYagh => 'ⵖ',
+            Tifinagh::LetterTuaregYagh => 'ⵗ',
+            Tifinagh::LetterAyerYagh => 'ⵘ',
+            Tifinagh::LetterYas => 'ⵙ',
+            Tifinagh::LetterYass => 'ⵚ',
+            Tifinagh::LetterYash => 'ⵛ',
+            Tifinagh::LetterYat => 'ⵜ',
+            Tifinagh::LetterYath => 'ⵝ',
+            Tifinagh::LetterYach => 'ⵞ',
+            Tifinagh::LetterYatt => 'ⵟ',
+            Tifinagh::LetterYav => 'ⵠ',
+            Tifinagh::LetterYaw => 'ⵡ',
+            Tifinagh::LetterYay => 'ⵢ',
+            Tifinagh::LetterYaz => 'ⵣ',
+            Tifinagh::LetterTawellemetYaz => 'ⵤ',
+            Tifinagh::LetterYazz => 'ⵥ',
+            Tifinagh::LetterYe => 'ⵦ',
+            Tifinagh::LetterYo => 'ⵧ',
+            Tifinagh::ModifierLetterLabializationMark => 'ⵯ',
+            Tifinagh::SeparatorMark => '⵰',
         }
     }
 }
@@ -308,66 +188,65 @@ impl Into<char> for Tifinagh {
 impl std::convert::TryFrom<char> for Tifinagh {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_YA => Ok(Tifinagh::LetterYa),
-            LETTER_YAB => Ok(Tifinagh::LetterYab),
-            LETTER_YABH => Ok(Tifinagh::LetterYabh),
-            LETTER_YAG => Ok(Tifinagh::LetterYag),
-            LETTER_YAGHH => Ok(Tifinagh::LetterYaghh),
-            LETTER_BERBER_ACADEMY_YAJ => Ok(Tifinagh::LetterBerberAcademyYaj),
-            LETTER_YAJ => Ok(Tifinagh::LetterYaj),
-            LETTER_YAD => Ok(Tifinagh::LetterYad),
-            LETTER_YADH => Ok(Tifinagh::LetterYadh),
-            LETTER_YADD => Ok(Tifinagh::LetterYadd),
-            LETTER_YADDH => Ok(Tifinagh::LetterYaddh),
-            LETTER_YEY => Ok(Tifinagh::LetterYey),
-            LETTER_YAF => Ok(Tifinagh::LetterYaf),
-            LETTER_YAK => Ok(Tifinagh::LetterYak),
-            LETTER_TUAREG_YAK => Ok(Tifinagh::LetterTuaregYak),
-            LETTER_YAKHH => Ok(Tifinagh::LetterYakhh),
-            LETTER_YAH => Ok(Tifinagh::LetterYah),
-            LETTER_BERBER_ACADEMY_YAH => Ok(Tifinagh::LetterBerberAcademyYah),
-            LETTER_TUAREG_YAH => Ok(Tifinagh::LetterTuaregYah),
-            LETTER_YAHH => Ok(Tifinagh::LetterYahh),
-            LETTER_YAA => Ok(Tifinagh::LetterYaa),
-            LETTER_YAKH => Ok(Tifinagh::LetterYakh),
-            LETTER_TUAREG_YAKH => Ok(Tifinagh::LetterTuaregYakh),
-            LETTER_YAQ => Ok(Tifinagh::LetterYaq),
-            LETTER_TUAREG_YAQ => Ok(Tifinagh::LetterTuaregYaq),
-            LETTER_YI => Ok(Tifinagh::LetterYi),
-            LETTER_YAZH => Ok(Tifinagh::LetterYazh),
-            LETTER_AHAGGAR_YAZH => Ok(Tifinagh::LetterAhaggarYazh),
-            LETTER_TUAREG_YAZH => Ok(Tifinagh::LetterTuaregYazh),
-            LETTER_YAL => Ok(Tifinagh::LetterYal),
-            LETTER_YAM => Ok(Tifinagh::LetterYam),
-            LETTER_YAN => Ok(Tifinagh::LetterYan),
-            LETTER_TUAREG_YAGN => Ok(Tifinagh::LetterTuaregYagn),
-            LETTER_TUAREG_YANG => Ok(Tifinagh::LetterTuaregYang),
-            LETTER_YAP => Ok(Tifinagh::LetterYap),
-            LETTER_YU => Ok(Tifinagh::LetterYu),
-            LETTER_YAR => Ok(Tifinagh::LetterYar),
-            LETTER_YARR => Ok(Tifinagh::LetterYarr),
-            LETTER_YAGH => Ok(Tifinagh::LetterYagh),
-            LETTER_TUAREG_YAGH => Ok(Tifinagh::LetterTuaregYagh),
-            LETTER_AYER_YAGH => Ok(Tifinagh::LetterAyerYagh),
-            LETTER_YAS => Ok(Tifinagh::LetterYas),
-            LETTER_YASS => Ok(Tifinagh::LetterYass),
-            LETTER_YASH => Ok(Tifinagh::LetterYash),
-            LETTER_YAT => Ok(Tifinagh::LetterYat),
-            LETTER_YATH => Ok(Tifinagh::LetterYath),
-            LETTER_YACH => Ok(Tifinagh::LetterYach),
-            LETTER_YATT => Ok(Tifinagh::LetterYatt),
-            LETTER_YAV => Ok(Tifinagh::LetterYav),
-            LETTER_YAW => Ok(Tifinagh::LetterYaw),
-            LETTER_YAY => Ok(Tifinagh::LetterYay),
-            LETTER_YAZ => Ok(Tifinagh::LetterYaz),
-            LETTER_TAWELLEMET_YAZ => Ok(Tifinagh::LetterTawellemetYaz),
-            LETTER_YAZZ => Ok(Tifinagh::LetterYazz),
-            LETTER_YE => Ok(Tifinagh::LetterYe),
-            LETTER_YO => Ok(Tifinagh::LetterYo),
-            MODIFIER_LETTER_LABIALIZATION_MARK => Ok(Tifinagh::ModifierLetterLabializationMark),
-            SEPARATOR_MARK => Ok(Tifinagh::SeparatorMark),
+            'ⴰ' => Ok(Tifinagh::LetterYa),
+            'ⴱ' => Ok(Tifinagh::LetterYab),
+            'ⴲ' => Ok(Tifinagh::LetterYabh),
+            'ⴳ' => Ok(Tifinagh::LetterYag),
+            'ⴴ' => Ok(Tifinagh::LetterYaghh),
+            'ⴵ' => Ok(Tifinagh::LetterBerberAcademyYaj),
+            'ⴶ' => Ok(Tifinagh::LetterYaj),
+            'ⴷ' => Ok(Tifinagh::LetterYad),
+            'ⴸ' => Ok(Tifinagh::LetterYadh),
+            'ⴹ' => Ok(Tifinagh::LetterYadd),
+            'ⴺ' => Ok(Tifinagh::LetterYaddh),
+            'ⴻ' => Ok(Tifinagh::LetterYey),
+            'ⴼ' => Ok(Tifinagh::LetterYaf),
+            'ⴽ' => Ok(Tifinagh::LetterYak),
+            'ⴾ' => Ok(Tifinagh::LetterTuaregYak),
+            'ⴿ' => Ok(Tifinagh::LetterYakhh),
+            'ⵀ' => Ok(Tifinagh::LetterYah),
+            'ⵁ' => Ok(Tifinagh::LetterBerberAcademyYah),
+            'ⵂ' => Ok(Tifinagh::LetterTuaregYah),
+            'ⵃ' => Ok(Tifinagh::LetterYahh),
+            'ⵄ' => Ok(Tifinagh::LetterYaa),
+            'ⵅ' => Ok(Tifinagh::LetterYakh),
+            'ⵆ' => Ok(Tifinagh::LetterTuaregYakh),
+            'ⵇ' => Ok(Tifinagh::LetterYaq),
+            'ⵈ' => Ok(Tifinagh::LetterTuaregYaq),
+            'ⵉ' => Ok(Tifinagh::LetterYi),
+            'ⵊ' => Ok(Tifinagh::LetterYazh),
+            'ⵋ' => Ok(Tifinagh::LetterAhaggarYazh),
+            'ⵌ' => Ok(Tifinagh::LetterTuaregYazh),
+            'ⵍ' => Ok(Tifinagh::LetterYal),
+            'ⵎ' => Ok(Tifinagh::LetterYam),
+            'ⵏ' => Ok(Tifinagh::LetterYan),
+            'ⵐ' => Ok(Tifinagh::LetterTuaregYagn),
+            'ⵑ' => Ok(Tifinagh::LetterTuaregYang),
+            'ⵒ' => Ok(Tifinagh::LetterYap),
+            'ⵓ' => Ok(Tifinagh::LetterYu),
+            'ⵔ' => Ok(Tifinagh::LetterYar),
+            'ⵕ' => Ok(Tifinagh::LetterYarr),
+            'ⵖ' => Ok(Tifinagh::LetterYagh),
+            'ⵗ' => Ok(Tifinagh::LetterTuaregYagh),
+            'ⵘ' => Ok(Tifinagh::LetterAyerYagh),
+            'ⵙ' => Ok(Tifinagh::LetterYas),
+            'ⵚ' => Ok(Tifinagh::LetterYass),
+            'ⵛ' => Ok(Tifinagh::LetterYash),
+            'ⵜ' => Ok(Tifinagh::LetterYat),
+            'ⵝ' => Ok(Tifinagh::LetterYath),
+            'ⵞ' => Ok(Tifinagh::LetterYach),
+            'ⵟ' => Ok(Tifinagh::LetterYatt),
+            'ⵠ' => Ok(Tifinagh::LetterYav),
+            'ⵡ' => Ok(Tifinagh::LetterYaw),
+            'ⵢ' => Ok(Tifinagh::LetterYay),
+            'ⵣ' => Ok(Tifinagh::LetterYaz),
+            'ⵤ' => Ok(Tifinagh::LetterTawellemetYaz),
+            'ⵥ' => Ok(Tifinagh::LetterYazz),
+            'ⵦ' => Ok(Tifinagh::LetterYe),
+            'ⵧ' => Ok(Tifinagh::LetterYo),
+            'ⵯ' => Ok(Tifinagh::ModifierLetterLabializationMark),
+            '⵰' => Ok(Tifinagh::SeparatorMark),
             _ => Err(()),
         }
     }

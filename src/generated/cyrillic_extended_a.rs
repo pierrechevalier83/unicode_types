@@ -1,68 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2de0}: 'ⷠ'
-    pub const COMBINING_CYRILLIC_LETTER_BE: char = 'ⷠ';
-    /// \u{2de1}: 'ⷡ'
-    pub const COMBINING_CYRILLIC_LETTER_VE: char = 'ⷡ';
-    /// \u{2de2}: 'ⷢ'
-    pub const COMBINING_CYRILLIC_LETTER_GHE: char = 'ⷢ';
-    /// \u{2de3}: 'ⷣ'
-    pub const COMBINING_CYRILLIC_LETTER_DE: char = 'ⷣ';
-    /// \u{2de4}: 'ⷤ'
-    pub const COMBINING_CYRILLIC_LETTER_ZHE: char = 'ⷤ';
-    /// \u{2de5}: 'ⷥ'
-    pub const COMBINING_CYRILLIC_LETTER_ZE: char = 'ⷥ';
-    /// \u{2de6}: 'ⷦ'
-    pub const COMBINING_CYRILLIC_LETTER_KA: char = 'ⷦ';
-    /// \u{2de7}: 'ⷧ'
-    pub const COMBINING_CYRILLIC_LETTER_EL: char = 'ⷧ';
-    /// \u{2de8}: 'ⷨ'
-    pub const COMBINING_CYRILLIC_LETTER_EM: char = 'ⷨ';
-    /// \u{2de9}: 'ⷩ'
-    pub const COMBINING_CYRILLIC_LETTER_EN: char = 'ⷩ';
-    /// \u{2dea}: 'ⷪ'
-    pub const COMBINING_CYRILLIC_LETTER_O: char = 'ⷪ';
-    /// \u{2deb}: 'ⷫ'
-    pub const COMBINING_CYRILLIC_LETTER_PE: char = 'ⷫ';
-    /// \u{2dec}: 'ⷬ'
-    pub const COMBINING_CYRILLIC_LETTER_ER: char = 'ⷬ';
-    /// \u{2ded}: 'ⷭ'
-    pub const COMBINING_CYRILLIC_LETTER_ES: char = 'ⷭ';
-    /// \u{2dee}: 'ⷮ'
-    pub const COMBINING_CYRILLIC_LETTER_TE: char = 'ⷮ';
-    /// \u{2def}: 'ⷯ'
-    pub const COMBINING_CYRILLIC_LETTER_HA: char = 'ⷯ';
-    /// \u{2df0}: 'ⷰ'
-    pub const COMBINING_CYRILLIC_LETTER_TSE: char = 'ⷰ';
-    /// \u{2df1}: 'ⷱ'
-    pub const COMBINING_CYRILLIC_LETTER_CHE: char = 'ⷱ';
-    /// \u{2df2}: 'ⷲ'
-    pub const COMBINING_CYRILLIC_LETTER_SHA: char = 'ⷲ';
-    /// \u{2df3}: 'ⷳ'
-    pub const COMBINING_CYRILLIC_LETTER_SHCHA: char = 'ⷳ';
-    /// \u{2df4}: 'ⷴ'
-    pub const COMBINING_CYRILLIC_LETTER_FITA: char = 'ⷴ';
-    /// \u{2df5}: 'ⷵ'
-    pub const COMBINING_CYRILLIC_LETTER_ES_DASH_TE: char = 'ⷵ';
-    /// \u{2df6}: 'ⷶ'
-    pub const COMBINING_CYRILLIC_LETTER_A: char = 'ⷶ';
-    /// \u{2df7}: 'ⷷ'
-    pub const COMBINING_CYRILLIC_LETTER_IE: char = 'ⷷ';
-    /// \u{2df8}: 'ⷸ'
-    pub const COMBINING_CYRILLIC_LETTER_DJERV: char = 'ⷸ';
-    /// \u{2df9}: 'ⷹ'
-    pub const COMBINING_CYRILLIC_LETTER_MONOGRAPH_UK: char = 'ⷹ';
-    /// \u{2dfa}: 'ⷺ'
-    pub const COMBINING_CYRILLIC_LETTER_YAT: char = 'ⷺ';
-    /// \u{2dfb}: 'ⷻ'
-    pub const COMBINING_CYRILLIC_LETTER_YU: char = 'ⷻ';
-    /// \u{2dfc}: 'ⷼ'
-    pub const COMBINING_CYRILLIC_LETTER_IOTIFIED_A: char = 'ⷼ';
-    /// \u{2dfd}: 'ⷽ'
-    pub const COMBINING_CYRILLIC_LETTER_LITTLE_YUS: char = 'ⷽ';
-    /// \u{2dfe}: 'ⷾ'
-    pub const COMBINING_CYRILLIC_LETTER_BIG_YUS: char = 'ⷾ';
-}
 
 /// An enum to represent all characters in the CyrillicExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -133,39 +68,38 @@ pub enum CyrillicExtendedA {
 
 impl Into<char> for CyrillicExtendedA {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CyrillicExtendedA::CombiningCyrillicLetterBe => COMBINING_CYRILLIC_LETTER_BE,
-            CyrillicExtendedA::CombiningCyrillicLetterVe => COMBINING_CYRILLIC_LETTER_VE,
-            CyrillicExtendedA::CombiningCyrillicLetterGhe => COMBINING_CYRILLIC_LETTER_GHE,
-            CyrillicExtendedA::CombiningCyrillicLetterDe => COMBINING_CYRILLIC_LETTER_DE,
-            CyrillicExtendedA::CombiningCyrillicLetterZhe => COMBINING_CYRILLIC_LETTER_ZHE,
-            CyrillicExtendedA::CombiningCyrillicLetterZe => COMBINING_CYRILLIC_LETTER_ZE,
-            CyrillicExtendedA::CombiningCyrillicLetterKa => COMBINING_CYRILLIC_LETTER_KA,
-            CyrillicExtendedA::CombiningCyrillicLetterEl => COMBINING_CYRILLIC_LETTER_EL,
-            CyrillicExtendedA::CombiningCyrillicLetterEm => COMBINING_CYRILLIC_LETTER_EM,
-            CyrillicExtendedA::CombiningCyrillicLetterEn => COMBINING_CYRILLIC_LETTER_EN,
-            CyrillicExtendedA::CombiningCyrillicLetterO => COMBINING_CYRILLIC_LETTER_O,
-            CyrillicExtendedA::CombiningCyrillicLetterPe => COMBINING_CYRILLIC_LETTER_PE,
-            CyrillicExtendedA::CombiningCyrillicLetterEr => COMBINING_CYRILLIC_LETTER_ER,
-            CyrillicExtendedA::CombiningCyrillicLetterEs => COMBINING_CYRILLIC_LETTER_ES,
-            CyrillicExtendedA::CombiningCyrillicLetterTe => COMBINING_CYRILLIC_LETTER_TE,
-            CyrillicExtendedA::CombiningCyrillicLetterHa => COMBINING_CYRILLIC_LETTER_HA,
-            CyrillicExtendedA::CombiningCyrillicLetterTse => COMBINING_CYRILLIC_LETTER_TSE,
-            CyrillicExtendedA::CombiningCyrillicLetterChe => COMBINING_CYRILLIC_LETTER_CHE,
-            CyrillicExtendedA::CombiningCyrillicLetterSha => COMBINING_CYRILLIC_LETTER_SHA,
-            CyrillicExtendedA::CombiningCyrillicLetterShcha => COMBINING_CYRILLIC_LETTER_SHCHA,
-            CyrillicExtendedA::CombiningCyrillicLetterFita => COMBINING_CYRILLIC_LETTER_FITA,
-            CyrillicExtendedA::CombiningCyrillicLetterEsDashTe => COMBINING_CYRILLIC_LETTER_ES_DASH_TE,
-            CyrillicExtendedA::CombiningCyrillicLetterA => COMBINING_CYRILLIC_LETTER_A,
-            CyrillicExtendedA::CombiningCyrillicLetterIe => COMBINING_CYRILLIC_LETTER_IE,
-            CyrillicExtendedA::CombiningCyrillicLetterDjerv => COMBINING_CYRILLIC_LETTER_DJERV,
-            CyrillicExtendedA::CombiningCyrillicLetterMonographUk => COMBINING_CYRILLIC_LETTER_MONOGRAPH_UK,
-            CyrillicExtendedA::CombiningCyrillicLetterYat => COMBINING_CYRILLIC_LETTER_YAT,
-            CyrillicExtendedA::CombiningCyrillicLetterYu => COMBINING_CYRILLIC_LETTER_YU,
-            CyrillicExtendedA::CombiningCyrillicLetterIotifiedA => COMBINING_CYRILLIC_LETTER_IOTIFIED_A,
-            CyrillicExtendedA::CombiningCyrillicLetterLittleYus => COMBINING_CYRILLIC_LETTER_LITTLE_YUS,
-            CyrillicExtendedA::CombiningCyrillicLetterBigYus => COMBINING_CYRILLIC_LETTER_BIG_YUS,
+            CyrillicExtendedA::CombiningCyrillicLetterBe => 'ⷠ',
+            CyrillicExtendedA::CombiningCyrillicLetterVe => 'ⷡ',
+            CyrillicExtendedA::CombiningCyrillicLetterGhe => 'ⷢ',
+            CyrillicExtendedA::CombiningCyrillicLetterDe => 'ⷣ',
+            CyrillicExtendedA::CombiningCyrillicLetterZhe => 'ⷤ',
+            CyrillicExtendedA::CombiningCyrillicLetterZe => 'ⷥ',
+            CyrillicExtendedA::CombiningCyrillicLetterKa => 'ⷦ',
+            CyrillicExtendedA::CombiningCyrillicLetterEl => 'ⷧ',
+            CyrillicExtendedA::CombiningCyrillicLetterEm => 'ⷨ',
+            CyrillicExtendedA::CombiningCyrillicLetterEn => 'ⷩ',
+            CyrillicExtendedA::CombiningCyrillicLetterO => 'ⷪ',
+            CyrillicExtendedA::CombiningCyrillicLetterPe => 'ⷫ',
+            CyrillicExtendedA::CombiningCyrillicLetterEr => 'ⷬ',
+            CyrillicExtendedA::CombiningCyrillicLetterEs => 'ⷭ',
+            CyrillicExtendedA::CombiningCyrillicLetterTe => 'ⷮ',
+            CyrillicExtendedA::CombiningCyrillicLetterHa => 'ⷯ',
+            CyrillicExtendedA::CombiningCyrillicLetterTse => 'ⷰ',
+            CyrillicExtendedA::CombiningCyrillicLetterChe => 'ⷱ',
+            CyrillicExtendedA::CombiningCyrillicLetterSha => 'ⷲ',
+            CyrillicExtendedA::CombiningCyrillicLetterShcha => 'ⷳ',
+            CyrillicExtendedA::CombiningCyrillicLetterFita => 'ⷴ',
+            CyrillicExtendedA::CombiningCyrillicLetterEsDashTe => 'ⷵ',
+            CyrillicExtendedA::CombiningCyrillicLetterA => 'ⷶ',
+            CyrillicExtendedA::CombiningCyrillicLetterIe => 'ⷷ',
+            CyrillicExtendedA::CombiningCyrillicLetterDjerv => 'ⷸ',
+            CyrillicExtendedA::CombiningCyrillicLetterMonographUk => 'ⷹ',
+            CyrillicExtendedA::CombiningCyrillicLetterYat => 'ⷺ',
+            CyrillicExtendedA::CombiningCyrillicLetterYu => 'ⷻ',
+            CyrillicExtendedA::CombiningCyrillicLetterIotifiedA => 'ⷼ',
+            CyrillicExtendedA::CombiningCyrillicLetterLittleYus => 'ⷽ',
+            CyrillicExtendedA::CombiningCyrillicLetterBigYus => 'ⷾ',
         }
     }
 }
@@ -173,39 +107,38 @@ impl Into<char> for CyrillicExtendedA {
 impl std::convert::TryFrom<char> for CyrillicExtendedA {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            COMBINING_CYRILLIC_LETTER_BE => Ok(CyrillicExtendedA::CombiningCyrillicLetterBe),
-            COMBINING_CYRILLIC_LETTER_VE => Ok(CyrillicExtendedA::CombiningCyrillicLetterVe),
-            COMBINING_CYRILLIC_LETTER_GHE => Ok(CyrillicExtendedA::CombiningCyrillicLetterGhe),
-            COMBINING_CYRILLIC_LETTER_DE => Ok(CyrillicExtendedA::CombiningCyrillicLetterDe),
-            COMBINING_CYRILLIC_LETTER_ZHE => Ok(CyrillicExtendedA::CombiningCyrillicLetterZhe),
-            COMBINING_CYRILLIC_LETTER_ZE => Ok(CyrillicExtendedA::CombiningCyrillicLetterZe),
-            COMBINING_CYRILLIC_LETTER_KA => Ok(CyrillicExtendedA::CombiningCyrillicLetterKa),
-            COMBINING_CYRILLIC_LETTER_EL => Ok(CyrillicExtendedA::CombiningCyrillicLetterEl),
-            COMBINING_CYRILLIC_LETTER_EM => Ok(CyrillicExtendedA::CombiningCyrillicLetterEm),
-            COMBINING_CYRILLIC_LETTER_EN => Ok(CyrillicExtendedA::CombiningCyrillicLetterEn),
-            COMBINING_CYRILLIC_LETTER_O => Ok(CyrillicExtendedA::CombiningCyrillicLetterO),
-            COMBINING_CYRILLIC_LETTER_PE => Ok(CyrillicExtendedA::CombiningCyrillicLetterPe),
-            COMBINING_CYRILLIC_LETTER_ER => Ok(CyrillicExtendedA::CombiningCyrillicLetterEr),
-            COMBINING_CYRILLIC_LETTER_ES => Ok(CyrillicExtendedA::CombiningCyrillicLetterEs),
-            COMBINING_CYRILLIC_LETTER_TE => Ok(CyrillicExtendedA::CombiningCyrillicLetterTe),
-            COMBINING_CYRILLIC_LETTER_HA => Ok(CyrillicExtendedA::CombiningCyrillicLetterHa),
-            COMBINING_CYRILLIC_LETTER_TSE => Ok(CyrillicExtendedA::CombiningCyrillicLetterTse),
-            COMBINING_CYRILLIC_LETTER_CHE => Ok(CyrillicExtendedA::CombiningCyrillicLetterChe),
-            COMBINING_CYRILLIC_LETTER_SHA => Ok(CyrillicExtendedA::CombiningCyrillicLetterSha),
-            COMBINING_CYRILLIC_LETTER_SHCHA => Ok(CyrillicExtendedA::CombiningCyrillicLetterShcha),
-            COMBINING_CYRILLIC_LETTER_FITA => Ok(CyrillicExtendedA::CombiningCyrillicLetterFita),
-            COMBINING_CYRILLIC_LETTER_ES_DASH_TE => Ok(CyrillicExtendedA::CombiningCyrillicLetterEsDashTe),
-            COMBINING_CYRILLIC_LETTER_A => Ok(CyrillicExtendedA::CombiningCyrillicLetterA),
-            COMBINING_CYRILLIC_LETTER_IE => Ok(CyrillicExtendedA::CombiningCyrillicLetterIe),
-            COMBINING_CYRILLIC_LETTER_DJERV => Ok(CyrillicExtendedA::CombiningCyrillicLetterDjerv),
-            COMBINING_CYRILLIC_LETTER_MONOGRAPH_UK => Ok(CyrillicExtendedA::CombiningCyrillicLetterMonographUk),
-            COMBINING_CYRILLIC_LETTER_YAT => Ok(CyrillicExtendedA::CombiningCyrillicLetterYat),
-            COMBINING_CYRILLIC_LETTER_YU => Ok(CyrillicExtendedA::CombiningCyrillicLetterYu),
-            COMBINING_CYRILLIC_LETTER_IOTIFIED_A => Ok(CyrillicExtendedA::CombiningCyrillicLetterIotifiedA),
-            COMBINING_CYRILLIC_LETTER_LITTLE_YUS => Ok(CyrillicExtendedA::CombiningCyrillicLetterLittleYus),
-            COMBINING_CYRILLIC_LETTER_BIG_YUS => Ok(CyrillicExtendedA::CombiningCyrillicLetterBigYus),
+            'ⷠ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterBe),
+            'ⷡ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterVe),
+            'ⷢ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterGhe),
+            'ⷣ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterDe),
+            'ⷤ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterZhe),
+            'ⷥ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterZe),
+            'ⷦ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterKa),
+            'ⷧ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterEl),
+            'ⷨ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterEm),
+            'ⷩ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterEn),
+            'ⷪ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterO),
+            'ⷫ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterPe),
+            'ⷬ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterEr),
+            'ⷭ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterEs),
+            'ⷮ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterTe),
+            'ⷯ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterHa),
+            'ⷰ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterTse),
+            'ⷱ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterChe),
+            'ⷲ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterSha),
+            'ⷳ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterShcha),
+            'ⷴ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterFita),
+            'ⷵ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterEsDashTe),
+            'ⷶ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterA),
+            'ⷷ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterIe),
+            'ⷸ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterDjerv),
+            'ⷹ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterMonographUk),
+            'ⷺ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterYat),
+            'ⷻ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterYu),
+            'ⷼ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterIotifiedA),
+            'ⷽ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterLittleYus),
+            'ⷾ' => Ok(CyrillicExtendedA::CombiningCyrillicLetterBigYus),
             _ => Err(()),
         }
     }

@@ -1,10 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{17000}: '𗀀'
-    pub const IDEOGRAPH_FIRST: char = '𗀀';
-    /// \u{187f7}: '𘟷'
-    pub const IDEOGRAPH_LAST: char = '𘟷';
-}
 
 /// An enum to represent all characters in the Tangut block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -17,10 +10,9 @@ pub enum Tangut {
 
 impl Into<char> for Tangut {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Tangut::IdeographFirst => IDEOGRAPH_FIRST,
-            Tangut::IdeographLast => IDEOGRAPH_LAST,
+            Tangut::IdeographFirst => '𗀀',
+            Tangut::IdeographLast => '𘟷',
         }
     }
 }
@@ -28,10 +20,9 @@ impl Into<char> for Tangut {
 impl std::convert::TryFrom<char> for Tangut {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            IDEOGRAPH_FIRST => Ok(Tangut::IdeographFirst),
-            IDEOGRAPH_LAST => Ok(Tangut::IdeographLast),
+            '𗀀' => Ok(Tangut::IdeographFirst),
+            '𘟷' => Ok(Tangut::IdeographLast),
             _ => Err(()),
         }
     }

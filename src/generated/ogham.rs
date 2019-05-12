@@ -1,64 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1680}: ' '
-    pub const SPACE_MARK: char = ' ';
-    /// \u{1681}: 'ᚁ'
-    pub const LETTER_BEITH: char = 'ᚁ';
-    /// \u{1682}: 'ᚂ'
-    pub const LETTER_LUIS: char = 'ᚂ';
-    /// \u{1683}: 'ᚃ'
-    pub const LETTER_FEARN: char = 'ᚃ';
-    /// \u{1684}: 'ᚄ'
-    pub const LETTER_SAIL: char = 'ᚄ';
-    /// \u{1685}: 'ᚅ'
-    pub const LETTER_NION: char = 'ᚅ';
-    /// \u{1686}: 'ᚆ'
-    pub const LETTER_UATH: char = 'ᚆ';
-    /// \u{1687}: 'ᚇ'
-    pub const LETTER_DAIR: char = 'ᚇ';
-    /// \u{1688}: 'ᚈ'
-    pub const LETTER_TINNE: char = 'ᚈ';
-    /// \u{1689}: 'ᚉ'
-    pub const LETTER_COLL: char = 'ᚉ';
-    /// \u{168a}: 'ᚊ'
-    pub const LETTER_CEIRT: char = 'ᚊ';
-    /// \u{168b}: 'ᚋ'
-    pub const LETTER_MUIN: char = 'ᚋ';
-    /// \u{168c}: 'ᚌ'
-    pub const LETTER_GORT: char = 'ᚌ';
-    /// \u{168d}: 'ᚍ'
-    pub const LETTER_NGEADAL: char = 'ᚍ';
-    /// \u{168e}: 'ᚎ'
-    pub const LETTER_STRAIF: char = 'ᚎ';
-    /// \u{168f}: 'ᚏ'
-    pub const LETTER_RUIS: char = 'ᚏ';
-    /// \u{1690}: 'ᚐ'
-    pub const LETTER_AILM: char = 'ᚐ';
-    /// \u{1691}: 'ᚑ'
-    pub const LETTER_ONN: char = 'ᚑ';
-    /// \u{1692}: 'ᚒ'
-    pub const LETTER_UR: char = 'ᚒ';
-    /// \u{1693}: 'ᚓ'
-    pub const LETTER_EADHADH: char = 'ᚓ';
-    /// \u{1694}: 'ᚔ'
-    pub const LETTER_IODHADH: char = 'ᚔ';
-    /// \u{1695}: 'ᚕ'
-    pub const LETTER_EABHADH: char = 'ᚕ';
-    /// \u{1696}: 'ᚖ'
-    pub const LETTER_OR: char = 'ᚖ';
-    /// \u{1697}: 'ᚗ'
-    pub const LETTER_UILLEANN: char = 'ᚗ';
-    /// \u{1698}: 'ᚘ'
-    pub const LETTER_IFIN: char = 'ᚘ';
-    /// \u{1699}: 'ᚙ'
-    pub const LETTER_EAMHANCHOLL: char = 'ᚙ';
-    /// \u{169a}: 'ᚚ'
-    pub const LETTER_PEITH: char = 'ᚚ';
-    /// \u{169b}: '᚛'
-    pub const FEATHER_MARK: char = '᚛';
-    /// \u{169c}: '᚜'
-    pub const REVERSED_FEATHER_MARK: char = '᚜';
-}
 
 /// An enum to represent all characters in the Ogham block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -125,37 +64,36 @@ pub enum Ogham {
 
 impl Into<char> for Ogham {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Ogham::SpaceMark => SPACE_MARK,
-            Ogham::LetterBeith => LETTER_BEITH,
-            Ogham::LetterLuis => LETTER_LUIS,
-            Ogham::LetterFearn => LETTER_FEARN,
-            Ogham::LetterSail => LETTER_SAIL,
-            Ogham::LetterNion => LETTER_NION,
-            Ogham::LetterUath => LETTER_UATH,
-            Ogham::LetterDair => LETTER_DAIR,
-            Ogham::LetterTinne => LETTER_TINNE,
-            Ogham::LetterColl => LETTER_COLL,
-            Ogham::LetterCeirt => LETTER_CEIRT,
-            Ogham::LetterMuin => LETTER_MUIN,
-            Ogham::LetterGort => LETTER_GORT,
-            Ogham::LetterNgeadal => LETTER_NGEADAL,
-            Ogham::LetterStraif => LETTER_STRAIF,
-            Ogham::LetterRuis => LETTER_RUIS,
-            Ogham::LetterAilm => LETTER_AILM,
-            Ogham::LetterOnn => LETTER_ONN,
-            Ogham::LetterUr => LETTER_UR,
-            Ogham::LetterEadhadh => LETTER_EADHADH,
-            Ogham::LetterIodhadh => LETTER_IODHADH,
-            Ogham::LetterEabhadh => LETTER_EABHADH,
-            Ogham::LetterOr => LETTER_OR,
-            Ogham::LetterUilleann => LETTER_UILLEANN,
-            Ogham::LetterIfin => LETTER_IFIN,
-            Ogham::LetterEamhancholl => LETTER_EAMHANCHOLL,
-            Ogham::LetterPeith => LETTER_PEITH,
-            Ogham::FeatherMark => FEATHER_MARK,
-            Ogham::ReversedFeatherMark => REVERSED_FEATHER_MARK,
+            Ogham::SpaceMark => ' ',
+            Ogham::LetterBeith => 'ᚁ',
+            Ogham::LetterLuis => 'ᚂ',
+            Ogham::LetterFearn => 'ᚃ',
+            Ogham::LetterSail => 'ᚄ',
+            Ogham::LetterNion => 'ᚅ',
+            Ogham::LetterUath => 'ᚆ',
+            Ogham::LetterDair => 'ᚇ',
+            Ogham::LetterTinne => 'ᚈ',
+            Ogham::LetterColl => 'ᚉ',
+            Ogham::LetterCeirt => 'ᚊ',
+            Ogham::LetterMuin => 'ᚋ',
+            Ogham::LetterGort => 'ᚌ',
+            Ogham::LetterNgeadal => 'ᚍ',
+            Ogham::LetterStraif => 'ᚎ',
+            Ogham::LetterRuis => 'ᚏ',
+            Ogham::LetterAilm => 'ᚐ',
+            Ogham::LetterOnn => 'ᚑ',
+            Ogham::LetterUr => 'ᚒ',
+            Ogham::LetterEadhadh => 'ᚓ',
+            Ogham::LetterIodhadh => 'ᚔ',
+            Ogham::LetterEabhadh => 'ᚕ',
+            Ogham::LetterOr => 'ᚖ',
+            Ogham::LetterUilleann => 'ᚗ',
+            Ogham::LetterIfin => 'ᚘ',
+            Ogham::LetterEamhancholl => 'ᚙ',
+            Ogham::LetterPeith => 'ᚚ',
+            Ogham::FeatherMark => '᚛',
+            Ogham::ReversedFeatherMark => '᚜',
         }
     }
 }
@@ -163,37 +101,36 @@ impl Into<char> for Ogham {
 impl std::convert::TryFrom<char> for Ogham {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SPACE_MARK => Ok(Ogham::SpaceMark),
-            LETTER_BEITH => Ok(Ogham::LetterBeith),
-            LETTER_LUIS => Ok(Ogham::LetterLuis),
-            LETTER_FEARN => Ok(Ogham::LetterFearn),
-            LETTER_SAIL => Ok(Ogham::LetterSail),
-            LETTER_NION => Ok(Ogham::LetterNion),
-            LETTER_UATH => Ok(Ogham::LetterUath),
-            LETTER_DAIR => Ok(Ogham::LetterDair),
-            LETTER_TINNE => Ok(Ogham::LetterTinne),
-            LETTER_COLL => Ok(Ogham::LetterColl),
-            LETTER_CEIRT => Ok(Ogham::LetterCeirt),
-            LETTER_MUIN => Ok(Ogham::LetterMuin),
-            LETTER_GORT => Ok(Ogham::LetterGort),
-            LETTER_NGEADAL => Ok(Ogham::LetterNgeadal),
-            LETTER_STRAIF => Ok(Ogham::LetterStraif),
-            LETTER_RUIS => Ok(Ogham::LetterRuis),
-            LETTER_AILM => Ok(Ogham::LetterAilm),
-            LETTER_ONN => Ok(Ogham::LetterOnn),
-            LETTER_UR => Ok(Ogham::LetterUr),
-            LETTER_EADHADH => Ok(Ogham::LetterEadhadh),
-            LETTER_IODHADH => Ok(Ogham::LetterIodhadh),
-            LETTER_EABHADH => Ok(Ogham::LetterEabhadh),
-            LETTER_OR => Ok(Ogham::LetterOr),
-            LETTER_UILLEANN => Ok(Ogham::LetterUilleann),
-            LETTER_IFIN => Ok(Ogham::LetterIfin),
-            LETTER_EAMHANCHOLL => Ok(Ogham::LetterEamhancholl),
-            LETTER_PEITH => Ok(Ogham::LetterPeith),
-            FEATHER_MARK => Ok(Ogham::FeatherMark),
-            REVERSED_FEATHER_MARK => Ok(Ogham::ReversedFeatherMark),
+            ' ' => Ok(Ogham::SpaceMark),
+            'ᚁ' => Ok(Ogham::LetterBeith),
+            'ᚂ' => Ok(Ogham::LetterLuis),
+            'ᚃ' => Ok(Ogham::LetterFearn),
+            'ᚄ' => Ok(Ogham::LetterSail),
+            'ᚅ' => Ok(Ogham::LetterNion),
+            'ᚆ' => Ok(Ogham::LetterUath),
+            'ᚇ' => Ok(Ogham::LetterDair),
+            'ᚈ' => Ok(Ogham::LetterTinne),
+            'ᚉ' => Ok(Ogham::LetterColl),
+            'ᚊ' => Ok(Ogham::LetterCeirt),
+            'ᚋ' => Ok(Ogham::LetterMuin),
+            'ᚌ' => Ok(Ogham::LetterGort),
+            'ᚍ' => Ok(Ogham::LetterNgeadal),
+            'ᚎ' => Ok(Ogham::LetterStraif),
+            'ᚏ' => Ok(Ogham::LetterRuis),
+            'ᚐ' => Ok(Ogham::LetterAilm),
+            'ᚑ' => Ok(Ogham::LetterOnn),
+            'ᚒ' => Ok(Ogham::LetterUr),
+            'ᚓ' => Ok(Ogham::LetterEadhadh),
+            'ᚔ' => Ok(Ogham::LetterIodhadh),
+            'ᚕ' => Ok(Ogham::LetterEabhadh),
+            'ᚖ' => Ok(Ogham::LetterOr),
+            'ᚗ' => Ok(Ogham::LetterUilleann),
+            'ᚘ' => Ok(Ogham::LetterIfin),
+            'ᚙ' => Ok(Ogham::LetterEamhancholl),
+            'ᚚ' => Ok(Ogham::LetterPeith),
+            '᚛' => Ok(Ogham::FeatherMark),
+            '᚜' => Ok(Ogham::ReversedFeatherMark),
             _ => Err(()),
         }
     }

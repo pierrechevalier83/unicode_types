@@ -1,36 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{fe20}: '︠'
-    pub const COMBINING_LIGATURE_LEFT_HALF: char = '︠';
-    /// \u{fe21}: '︡'
-    pub const COMBINING_LIGATURE_RIGHT_HALF: char = '︡';
-    /// \u{fe22}: '︢'
-    pub const COMBINING_DOUBLE_TILDE_LEFT_HALF: char = '︢';
-    /// \u{fe23}: '︣'
-    pub const COMBINING_DOUBLE_TILDE_RIGHT_HALF: char = '︣';
-    /// \u{fe24}: '︤'
-    pub const COMBINING_MACRON_LEFT_HALF: char = '︤';
-    /// \u{fe25}: '︥'
-    pub const COMBINING_MACRON_RIGHT_HALF: char = '︥';
-    /// \u{fe26}: '︦'
-    pub const COMBINING_CONJOINING_MACRON: char = '︦';
-    /// \u{fe27}: '︧'
-    pub const COMBINING_LIGATURE_LEFT_HALF_BELOW: char = '︧';
-    /// \u{fe28}: '︨'
-    pub const COMBINING_LIGATURE_RIGHT_HALF_BELOW: char = '︨';
-    /// \u{fe29}: '︩'
-    pub const COMBINING_TILDE_LEFT_HALF_BELOW: char = '︩';
-    /// \u{fe2a}: '︪'
-    pub const COMBINING_TILDE_RIGHT_HALF_BELOW: char = '︪';
-    /// \u{fe2b}: '︫'
-    pub const COMBINING_MACRON_LEFT_HALF_BELOW: char = '︫';
-    /// \u{fe2c}: '︬'
-    pub const COMBINING_MACRON_RIGHT_HALF_BELOW: char = '︬';
-    /// \u{fe2d}: '︭'
-    pub const COMBINING_CONJOINING_MACRON_BELOW: char = '︭';
-    /// \u{fe2e}: '︮'
-    pub const COMBINING_CYRILLIC_TITLO_LEFT_HALF: char = '︮';
-}
 
 /// An enum to represent all characters in the CombiningHalfMarks block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -69,23 +36,22 @@ pub enum CombiningHalfMarks {
 
 impl Into<char> for CombiningHalfMarks {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CombiningHalfMarks::CombiningLigatureLeftHalf => COMBINING_LIGATURE_LEFT_HALF,
-            CombiningHalfMarks::CombiningLigatureRightHalf => COMBINING_LIGATURE_RIGHT_HALF,
-            CombiningHalfMarks::CombiningDoubleTildeLeftHalf => COMBINING_DOUBLE_TILDE_LEFT_HALF,
-            CombiningHalfMarks::CombiningDoubleTildeRightHalf => COMBINING_DOUBLE_TILDE_RIGHT_HALF,
-            CombiningHalfMarks::CombiningMacronLeftHalf => COMBINING_MACRON_LEFT_HALF,
-            CombiningHalfMarks::CombiningMacronRightHalf => COMBINING_MACRON_RIGHT_HALF,
-            CombiningHalfMarks::CombiningConjoiningMacron => COMBINING_CONJOINING_MACRON,
-            CombiningHalfMarks::CombiningLigatureLeftHalfBelow => COMBINING_LIGATURE_LEFT_HALF_BELOW,
-            CombiningHalfMarks::CombiningLigatureRightHalfBelow => COMBINING_LIGATURE_RIGHT_HALF_BELOW,
-            CombiningHalfMarks::CombiningTildeLeftHalfBelow => COMBINING_TILDE_LEFT_HALF_BELOW,
-            CombiningHalfMarks::CombiningTildeRightHalfBelow => COMBINING_TILDE_RIGHT_HALF_BELOW,
-            CombiningHalfMarks::CombiningMacronLeftHalfBelow => COMBINING_MACRON_LEFT_HALF_BELOW,
-            CombiningHalfMarks::CombiningMacronRightHalfBelow => COMBINING_MACRON_RIGHT_HALF_BELOW,
-            CombiningHalfMarks::CombiningConjoiningMacronBelow => COMBINING_CONJOINING_MACRON_BELOW,
-            CombiningHalfMarks::CombiningCyrillicTitloLeftHalf => COMBINING_CYRILLIC_TITLO_LEFT_HALF,
+            CombiningHalfMarks::CombiningLigatureLeftHalf => '︠',
+            CombiningHalfMarks::CombiningLigatureRightHalf => '︡',
+            CombiningHalfMarks::CombiningDoubleTildeLeftHalf => '︢',
+            CombiningHalfMarks::CombiningDoubleTildeRightHalf => '︣',
+            CombiningHalfMarks::CombiningMacronLeftHalf => '︤',
+            CombiningHalfMarks::CombiningMacronRightHalf => '︥',
+            CombiningHalfMarks::CombiningConjoiningMacron => '︦',
+            CombiningHalfMarks::CombiningLigatureLeftHalfBelow => '︧',
+            CombiningHalfMarks::CombiningLigatureRightHalfBelow => '︨',
+            CombiningHalfMarks::CombiningTildeLeftHalfBelow => '︩',
+            CombiningHalfMarks::CombiningTildeRightHalfBelow => '︪',
+            CombiningHalfMarks::CombiningMacronLeftHalfBelow => '︫',
+            CombiningHalfMarks::CombiningMacronRightHalfBelow => '︬',
+            CombiningHalfMarks::CombiningConjoiningMacronBelow => '︭',
+            CombiningHalfMarks::CombiningCyrillicTitloLeftHalf => '︮',
         }
     }
 }
@@ -93,23 +59,22 @@ impl Into<char> for CombiningHalfMarks {
 impl std::convert::TryFrom<char> for CombiningHalfMarks {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            COMBINING_LIGATURE_LEFT_HALF => Ok(CombiningHalfMarks::CombiningLigatureLeftHalf),
-            COMBINING_LIGATURE_RIGHT_HALF => Ok(CombiningHalfMarks::CombiningLigatureRightHalf),
-            COMBINING_DOUBLE_TILDE_LEFT_HALF => Ok(CombiningHalfMarks::CombiningDoubleTildeLeftHalf),
-            COMBINING_DOUBLE_TILDE_RIGHT_HALF => Ok(CombiningHalfMarks::CombiningDoubleTildeRightHalf),
-            COMBINING_MACRON_LEFT_HALF => Ok(CombiningHalfMarks::CombiningMacronLeftHalf),
-            COMBINING_MACRON_RIGHT_HALF => Ok(CombiningHalfMarks::CombiningMacronRightHalf),
-            COMBINING_CONJOINING_MACRON => Ok(CombiningHalfMarks::CombiningConjoiningMacron),
-            COMBINING_LIGATURE_LEFT_HALF_BELOW => Ok(CombiningHalfMarks::CombiningLigatureLeftHalfBelow),
-            COMBINING_LIGATURE_RIGHT_HALF_BELOW => Ok(CombiningHalfMarks::CombiningLigatureRightHalfBelow),
-            COMBINING_TILDE_LEFT_HALF_BELOW => Ok(CombiningHalfMarks::CombiningTildeLeftHalfBelow),
-            COMBINING_TILDE_RIGHT_HALF_BELOW => Ok(CombiningHalfMarks::CombiningTildeRightHalfBelow),
-            COMBINING_MACRON_LEFT_HALF_BELOW => Ok(CombiningHalfMarks::CombiningMacronLeftHalfBelow),
-            COMBINING_MACRON_RIGHT_HALF_BELOW => Ok(CombiningHalfMarks::CombiningMacronRightHalfBelow),
-            COMBINING_CONJOINING_MACRON_BELOW => Ok(CombiningHalfMarks::CombiningConjoiningMacronBelow),
-            COMBINING_CYRILLIC_TITLO_LEFT_HALF => Ok(CombiningHalfMarks::CombiningCyrillicTitloLeftHalf),
+            '︠' => Ok(CombiningHalfMarks::CombiningLigatureLeftHalf),
+            '︡' => Ok(CombiningHalfMarks::CombiningLigatureRightHalf),
+            '︢' => Ok(CombiningHalfMarks::CombiningDoubleTildeLeftHalf),
+            '︣' => Ok(CombiningHalfMarks::CombiningDoubleTildeRightHalf),
+            '︤' => Ok(CombiningHalfMarks::CombiningMacronLeftHalf),
+            '︥' => Ok(CombiningHalfMarks::CombiningMacronRightHalf),
+            '︦' => Ok(CombiningHalfMarks::CombiningConjoiningMacron),
+            '︧' => Ok(CombiningHalfMarks::CombiningLigatureLeftHalfBelow),
+            '︨' => Ok(CombiningHalfMarks::CombiningLigatureRightHalfBelow),
+            '︩' => Ok(CombiningHalfMarks::CombiningTildeLeftHalfBelow),
+            '︪' => Ok(CombiningHalfMarks::CombiningTildeRightHalfBelow),
+            '︫' => Ok(CombiningHalfMarks::CombiningMacronLeftHalfBelow),
+            '︬' => Ok(CombiningHalfMarks::CombiningMacronRightHalfBelow),
+            '︭' => Ok(CombiningHalfMarks::CombiningConjoiningMacronBelow),
+            '︮' => Ok(CombiningHalfMarks::CombiningCyrillicTitloLeftHalf),
             _ => Err(()),
         }
     }

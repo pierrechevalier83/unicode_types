@@ -1,238 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1f700}: '🜀'
-    pub const ALCHEMICAL_SYMBOL_FOR_QUINTESSENCE: char = '🜀';
-    /// \u{1f701}: '🜁'
-    pub const ALCHEMICAL_SYMBOL_FOR_AIR: char = '🜁';
-    /// \u{1f702}: '🜂'
-    pub const ALCHEMICAL_SYMBOL_FOR_FIRE: char = '🜂';
-    /// \u{1f703}: '🜃'
-    pub const ALCHEMICAL_SYMBOL_FOR_EARTH: char = '🜃';
-    /// \u{1f704}: '🜄'
-    pub const ALCHEMICAL_SYMBOL_FOR_WATER: char = '🜄';
-    /// \u{1f705}: '🜅'
-    pub const ALCHEMICAL_SYMBOL_FOR_AQUAFORTIS: char = '🜅';
-    /// \u{1f706}: '🜆'
-    pub const ALCHEMICAL_SYMBOL_FOR_AQUA_REGIA: char = '🜆';
-    /// \u{1f707}: '🜇'
-    pub const ALCHEMICAL_SYMBOL_FOR_AQUA_REGIA_DASH_2: char = '🜇';
-    /// \u{1f708}: '🜈'
-    pub const ALCHEMICAL_SYMBOL_FOR_AQUA_VITAE: char = '🜈';
-    /// \u{1f709}: '🜉'
-    pub const ALCHEMICAL_SYMBOL_FOR_AQUA_VITAE_DASH_2: char = '🜉';
-    /// \u{1f70a}: '🜊'
-    pub const ALCHEMICAL_SYMBOL_FOR_VINEGAR: char = '🜊';
-    /// \u{1f70b}: '🜋'
-    pub const ALCHEMICAL_SYMBOL_FOR_VINEGAR_DASH_2: char = '🜋';
-    /// \u{1f70c}: '🜌'
-    pub const ALCHEMICAL_SYMBOL_FOR_VINEGAR_DASH_3: char = '🜌';
-    /// \u{1f70d}: '🜍'
-    pub const ALCHEMICAL_SYMBOL_FOR_SULFUR: char = '🜍';
-    /// \u{1f70e}: '🜎'
-    pub const ALCHEMICAL_SYMBOL_FOR_PHILOSOPHERS_SULFUR: char = '🜎';
-    /// \u{1f70f}: '🜏'
-    pub const ALCHEMICAL_SYMBOL_FOR_BLACK_SULFUR: char = '🜏';
-    /// \u{1f710}: '🜐'
-    pub const ALCHEMICAL_SYMBOL_FOR_MERCURY_SUBLIMATE: char = '🜐';
-    /// \u{1f711}: '🜑'
-    pub const ALCHEMICAL_SYMBOL_FOR_MERCURY_SUBLIMATE_DASH_2: char = '🜑';
-    /// \u{1f712}: '🜒'
-    pub const ALCHEMICAL_SYMBOL_FOR_MERCURY_SUBLIMATE_DASH_3: char = '🜒';
-    /// \u{1f713}: '🜓'
-    pub const ALCHEMICAL_SYMBOL_FOR_CINNABAR: char = '🜓';
-    /// \u{1f714}: '🜔'
-    pub const ALCHEMICAL_SYMBOL_FOR_SALT: char = '🜔';
-    /// \u{1f715}: '🜕'
-    pub const ALCHEMICAL_SYMBOL_FOR_NITRE: char = '🜕';
-    /// \u{1f716}: '🜖'
-    pub const ALCHEMICAL_SYMBOL_FOR_VITRIOL: char = '🜖';
-    /// \u{1f717}: '🜗'
-    pub const ALCHEMICAL_SYMBOL_FOR_VITRIOL_DASH_2: char = '🜗';
-    /// \u{1f718}: '🜘'
-    pub const ALCHEMICAL_SYMBOL_FOR_ROCK_SALT: char = '🜘';
-    /// \u{1f719}: '🜙'
-    pub const ALCHEMICAL_SYMBOL_FOR_ROCK_SALT_DASH_2: char = '🜙';
-    /// \u{1f71a}: '🜚'
-    pub const ALCHEMICAL_SYMBOL_FOR_GOLD: char = '🜚';
-    /// \u{1f71b}: '🜛'
-    pub const ALCHEMICAL_SYMBOL_FOR_SILVER: char = '🜛';
-    /// \u{1f71c}: '🜜'
-    pub const ALCHEMICAL_SYMBOL_FOR_IRON_ORE: char = '🜜';
-    /// \u{1f71d}: '🜝'
-    pub const ALCHEMICAL_SYMBOL_FOR_IRON_ORE_DASH_2: char = '🜝';
-    /// \u{1f71e}: '🜞'
-    pub const ALCHEMICAL_SYMBOL_FOR_CROCUS_OF_IRON: char = '🜞';
-    /// \u{1f71f}: '🜟'
-    pub const ALCHEMICAL_SYMBOL_FOR_REGULUS_OF_IRON: char = '🜟';
-    /// \u{1f720}: '🜠'
-    pub const ALCHEMICAL_SYMBOL_FOR_COPPER_ORE: char = '🜠';
-    /// \u{1f721}: '🜡'
-    pub const ALCHEMICAL_SYMBOL_FOR_IRON_DASH_COPPER_ORE: char = '🜡';
-    /// \u{1f722}: '🜢'
-    pub const ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_COPPER: char = '🜢';
-    /// \u{1f723}: '🜣'
-    pub const ALCHEMICAL_SYMBOL_FOR_CROCUS_OF_COPPER: char = '🜣';
-    /// \u{1f724}: '🜤'
-    pub const ALCHEMICAL_SYMBOL_FOR_CROCUS_OF_COPPER_DASH_2: char = '🜤';
-    /// \u{1f725}: '🜥'
-    pub const ALCHEMICAL_SYMBOL_FOR_COPPER_ANTIMONIATE: char = '🜥';
-    /// \u{1f726}: '🜦'
-    pub const ALCHEMICAL_SYMBOL_FOR_SALT_OF_COPPER_ANTIMONIATE: char = '🜦';
-    /// \u{1f727}: '🜧'
-    pub const ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_SALT_OF_COPPER: char = '🜧';
-    /// \u{1f728}: '🜨'
-    pub const ALCHEMICAL_SYMBOL_FOR_VERDIGRIS: char = '🜨';
-    /// \u{1f729}: '🜩'
-    pub const ALCHEMICAL_SYMBOL_FOR_TIN_ORE: char = '🜩';
-    /// \u{1f72a}: '🜪'
-    pub const ALCHEMICAL_SYMBOL_FOR_LEAD_ORE: char = '🜪';
-    /// \u{1f72b}: '🜫'
-    pub const ALCHEMICAL_SYMBOL_FOR_ANTIMONY_ORE: char = '🜫';
-    /// \u{1f72c}: '🜬'
-    pub const ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_ANTIMONY: char = '🜬';
-    /// \u{1f72d}: '🜭'
-    pub const ALCHEMICAL_SYMBOL_FOR_SALT_OF_ANTIMONY: char = '🜭';
-    /// \u{1f72e}: '🜮'
-    pub const ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_SALT_OF_ANTIMONY: char = '🜮';
-    /// \u{1f72f}: '🜯'
-    pub const ALCHEMICAL_SYMBOL_FOR_VINEGAR_OF_ANTIMONY: char = '🜯';
-    /// \u{1f730}: '🜰'
-    pub const ALCHEMICAL_SYMBOL_FOR_REGULUS_OF_ANTIMONY: char = '🜰';
-    /// \u{1f731}: '🜱'
-    pub const ALCHEMICAL_SYMBOL_FOR_REGULUS_OF_ANTIMONY_DASH_2: char = '🜱';
-    /// \u{1f732}: '🜲'
-    pub const ALCHEMICAL_SYMBOL_FOR_REGULUS: char = '🜲';
-    /// \u{1f733}: '🜳'
-    pub const ALCHEMICAL_SYMBOL_FOR_REGULUS_DASH_2: char = '🜳';
-    /// \u{1f734}: '🜴'
-    pub const ALCHEMICAL_SYMBOL_FOR_REGULUS_DASH_3: char = '🜴';
-    /// \u{1f735}: '🜵'
-    pub const ALCHEMICAL_SYMBOL_FOR_REGULUS_DASH_4: char = '🜵';
-    /// \u{1f736}: '🜶'
-    pub const ALCHEMICAL_SYMBOL_FOR_ALKALI: char = '🜶';
-    /// \u{1f737}: '🜷'
-    pub const ALCHEMICAL_SYMBOL_FOR_ALKALI_DASH_2: char = '🜷';
-    /// \u{1f738}: '🜸'
-    pub const ALCHEMICAL_SYMBOL_FOR_MARCASITE: char = '🜸';
-    /// \u{1f739}: '🜹'
-    pub const ALCHEMICAL_SYMBOL_FOR_SAL_DASH_AMMONIAC: char = '🜹';
-    /// \u{1f73a}: '🜺'
-    pub const ALCHEMICAL_SYMBOL_FOR_ARSENIC: char = '🜺';
-    /// \u{1f73b}: '🜻'
-    pub const ALCHEMICAL_SYMBOL_FOR_REALGAR: char = '🜻';
-    /// \u{1f73c}: '🜼'
-    pub const ALCHEMICAL_SYMBOL_FOR_REALGAR_DASH_2: char = '🜼';
-    /// \u{1f73d}: '🜽'
-    pub const ALCHEMICAL_SYMBOL_FOR_AURIPIGMENT: char = '🜽';
-    /// \u{1f73e}: '🜾'
-    pub const ALCHEMICAL_SYMBOL_FOR_BISMUTH_ORE: char = '🜾';
-    /// \u{1f73f}: '🜿'
-    pub const ALCHEMICAL_SYMBOL_FOR_TARTAR: char = '🜿';
-    /// \u{1f740}: '🝀'
-    pub const ALCHEMICAL_SYMBOL_FOR_TARTAR_DASH_2: char = '🝀';
-    /// \u{1f741}: '🝁'
-    pub const ALCHEMICAL_SYMBOL_FOR_QUICK_LIME: char = '🝁';
-    /// \u{1f742}: '🝂'
-    pub const ALCHEMICAL_SYMBOL_FOR_BORAX: char = '🝂';
-    /// \u{1f743}: '🝃'
-    pub const ALCHEMICAL_SYMBOL_FOR_BORAX_DASH_2: char = '🝃';
-    /// \u{1f744}: '🝄'
-    pub const ALCHEMICAL_SYMBOL_FOR_BORAX_DASH_3: char = '🝄';
-    /// \u{1f745}: '🝅'
-    pub const ALCHEMICAL_SYMBOL_FOR_ALUM: char = '🝅';
-    /// \u{1f746}: '🝆'
-    pub const ALCHEMICAL_SYMBOL_FOR_OIL: char = '🝆';
-    /// \u{1f747}: '🝇'
-    pub const ALCHEMICAL_SYMBOL_FOR_SPIRIT: char = '🝇';
-    /// \u{1f748}: '🝈'
-    pub const ALCHEMICAL_SYMBOL_FOR_TINCTURE: char = '🝈';
-    /// \u{1f749}: '🝉'
-    pub const ALCHEMICAL_SYMBOL_FOR_GUM: char = '🝉';
-    /// \u{1f74a}: '🝊'
-    pub const ALCHEMICAL_SYMBOL_FOR_WAX: char = '🝊';
-    /// \u{1f74b}: '🝋'
-    pub const ALCHEMICAL_SYMBOL_FOR_POWDER: char = '🝋';
-    /// \u{1f74c}: '🝌'
-    pub const ALCHEMICAL_SYMBOL_FOR_CALX: char = '🝌';
-    /// \u{1f74d}: '🝍'
-    pub const ALCHEMICAL_SYMBOL_FOR_TUTTY: char = '🝍';
-    /// \u{1f74e}: '🝎'
-    pub const ALCHEMICAL_SYMBOL_FOR_CAPUT_MORTUUM: char = '🝎';
-    /// \u{1f74f}: '🝏'
-    pub const ALCHEMICAL_SYMBOL_FOR_SCEPTER_OF_JOVE: char = '🝏';
-    /// \u{1f750}: '🝐'
-    pub const ALCHEMICAL_SYMBOL_FOR_CADUCEUS: char = '🝐';
-    /// \u{1f751}: '🝑'
-    pub const ALCHEMICAL_SYMBOL_FOR_TRIDENT: char = '🝑';
-    /// \u{1f752}: '🝒'
-    pub const ALCHEMICAL_SYMBOL_FOR_STARRED_TRIDENT: char = '🝒';
-    /// \u{1f753}: '🝓'
-    pub const ALCHEMICAL_SYMBOL_FOR_LODESTONE: char = '🝓';
-    /// \u{1f754}: '🝔'
-    pub const ALCHEMICAL_SYMBOL_FOR_SOAP: char = '🝔';
-    /// \u{1f755}: '🝕'
-    pub const ALCHEMICAL_SYMBOL_FOR_URINE: char = '🝕';
-    /// \u{1f756}: '🝖'
-    pub const ALCHEMICAL_SYMBOL_FOR_HORSE_DUNG: char = '🝖';
-    /// \u{1f757}: '🝗'
-    pub const ALCHEMICAL_SYMBOL_FOR_ASHES: char = '🝗';
-    /// \u{1f758}: '🝘'
-    pub const ALCHEMICAL_SYMBOL_FOR_POT_ASHES: char = '🝘';
-    /// \u{1f759}: '🝙'
-    pub const ALCHEMICAL_SYMBOL_FOR_BRICK: char = '🝙';
-    /// \u{1f75a}: '🝚'
-    pub const ALCHEMICAL_SYMBOL_FOR_POWDERED_BRICK: char = '🝚';
-    /// \u{1f75b}: '🝛'
-    pub const ALCHEMICAL_SYMBOL_FOR_AMALGAM: char = '🝛';
-    /// \u{1f75c}: '🝜'
-    pub const ALCHEMICAL_SYMBOL_FOR_STRATUM_SUPER_STRATUM: char = '🝜';
-    /// \u{1f75d}: '🝝'
-    pub const ALCHEMICAL_SYMBOL_FOR_STRATUM_SUPER_STRATUM_DASH_2: char = '🝝';
-    /// \u{1f75e}: '🝞'
-    pub const ALCHEMICAL_SYMBOL_FOR_SUBLIMATION: char = '🝞';
-    /// \u{1f75f}: '🝟'
-    pub const ALCHEMICAL_SYMBOL_FOR_PRECIPITATE: char = '🝟';
-    /// \u{1f760}: '🝠'
-    pub const ALCHEMICAL_SYMBOL_FOR_DISTILL: char = '🝠';
-    /// \u{1f761}: '🝡'
-    pub const ALCHEMICAL_SYMBOL_FOR_DISSOLVE: char = '🝡';
-    /// \u{1f762}: '🝢'
-    pub const ALCHEMICAL_SYMBOL_FOR_DISSOLVE_DASH_2: char = '🝢';
-    /// \u{1f763}: '🝣'
-    pub const ALCHEMICAL_SYMBOL_FOR_PURIFY: char = '🝣';
-    /// \u{1f764}: '🝤'
-    pub const ALCHEMICAL_SYMBOL_FOR_PUTREFACTION: char = '🝤';
-    /// \u{1f765}: '🝥'
-    pub const ALCHEMICAL_SYMBOL_FOR_CRUCIBLE: char = '🝥';
-    /// \u{1f766}: '🝦'
-    pub const ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_2: char = '🝦';
-    /// \u{1f767}: '🝧'
-    pub const ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_3: char = '🝧';
-    /// \u{1f768}: '🝨'
-    pub const ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_4: char = '🝨';
-    /// \u{1f769}: '🝩'
-    pub const ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_5: char = '🝩';
-    /// \u{1f76a}: '🝪'
-    pub const ALCHEMICAL_SYMBOL_FOR_ALEMBIC: char = '🝪';
-    /// \u{1f76b}: '🝫'
-    pub const ALCHEMICAL_SYMBOL_FOR_BATH_OF_MARY: char = '🝫';
-    /// \u{1f76c}: '🝬'
-    pub const ALCHEMICAL_SYMBOL_FOR_BATH_OF_VAPOURS: char = '🝬';
-    /// \u{1f76d}: '🝭'
-    pub const ALCHEMICAL_SYMBOL_FOR_RETORT: char = '🝭';
-    /// \u{1f76e}: '🝮'
-    pub const ALCHEMICAL_SYMBOL_FOR_HOUR: char = '🝮';
-    /// \u{1f76f}: '🝯'
-    pub const ALCHEMICAL_SYMBOL_FOR_NIGHT: char = '🝯';
-    /// \u{1f770}: '🝰'
-    pub const ALCHEMICAL_SYMBOL_FOR_DAY_DASH_NIGHT: char = '🝰';
-    /// \u{1f771}: '🝱'
-    pub const ALCHEMICAL_SYMBOL_FOR_MONTH: char = '🝱';
-    /// \u{1f772}: '🝲'
-    pub const ALCHEMICAL_SYMBOL_FOR_HALF_DRAM: char = '🝲';
-    /// \u{1f773}: '🝳'
-    pub const ALCHEMICAL_SYMBOL_FOR_HALF_OUNCE: char = '🝳';
-}
 
 /// An enum to represent all characters in the AlchemicalSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -473,124 +238,123 @@ pub enum AlchemicalSymbols {
 
 impl Into<char> for AlchemicalSymbols {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            AlchemicalSymbols::AlchemicalSymbolForQuintessence => ALCHEMICAL_SYMBOL_FOR_QUINTESSENCE,
-            AlchemicalSymbols::AlchemicalSymbolForAir => ALCHEMICAL_SYMBOL_FOR_AIR,
-            AlchemicalSymbols::AlchemicalSymbolForFire => ALCHEMICAL_SYMBOL_FOR_FIRE,
-            AlchemicalSymbols::AlchemicalSymbolForEarth => ALCHEMICAL_SYMBOL_FOR_EARTH,
-            AlchemicalSymbols::AlchemicalSymbolForWater => ALCHEMICAL_SYMBOL_FOR_WATER,
-            AlchemicalSymbols::AlchemicalSymbolForAquafortis => ALCHEMICAL_SYMBOL_FOR_AQUAFORTIS,
-            AlchemicalSymbols::AlchemicalSymbolForAquaRegia => ALCHEMICAL_SYMBOL_FOR_AQUA_REGIA,
-            AlchemicalSymbols::AlchemicalSymbolForAquaRegiaDash2 => ALCHEMICAL_SYMBOL_FOR_AQUA_REGIA_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForAquaVitae => ALCHEMICAL_SYMBOL_FOR_AQUA_VITAE,
-            AlchemicalSymbols::AlchemicalSymbolForAquaVitaeDash2 => ALCHEMICAL_SYMBOL_FOR_AQUA_VITAE_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForVinegar => ALCHEMICAL_SYMBOL_FOR_VINEGAR,
-            AlchemicalSymbols::AlchemicalSymbolForVinegarDash2 => ALCHEMICAL_SYMBOL_FOR_VINEGAR_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForVinegarDash3 => ALCHEMICAL_SYMBOL_FOR_VINEGAR_DASH_3,
-            AlchemicalSymbols::AlchemicalSymbolForSulfur => ALCHEMICAL_SYMBOL_FOR_SULFUR,
-            AlchemicalSymbols::AlchemicalSymbolForPhilosophersSulfur => ALCHEMICAL_SYMBOL_FOR_PHILOSOPHERS_SULFUR,
-            AlchemicalSymbols::AlchemicalSymbolForBlackSulfur => ALCHEMICAL_SYMBOL_FOR_BLACK_SULFUR,
-            AlchemicalSymbols::AlchemicalSymbolForMercurySublimate => ALCHEMICAL_SYMBOL_FOR_MERCURY_SUBLIMATE,
-            AlchemicalSymbols::AlchemicalSymbolForMercurySublimateDash2 => ALCHEMICAL_SYMBOL_FOR_MERCURY_SUBLIMATE_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForMercurySublimateDash3 => ALCHEMICAL_SYMBOL_FOR_MERCURY_SUBLIMATE_DASH_3,
-            AlchemicalSymbols::AlchemicalSymbolForCinnabar => ALCHEMICAL_SYMBOL_FOR_CINNABAR,
-            AlchemicalSymbols::AlchemicalSymbolForSalt => ALCHEMICAL_SYMBOL_FOR_SALT,
-            AlchemicalSymbols::AlchemicalSymbolForNitre => ALCHEMICAL_SYMBOL_FOR_NITRE,
-            AlchemicalSymbols::AlchemicalSymbolForVitriol => ALCHEMICAL_SYMBOL_FOR_VITRIOL,
-            AlchemicalSymbols::AlchemicalSymbolForVitriolDash2 => ALCHEMICAL_SYMBOL_FOR_VITRIOL_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForRockSalt => ALCHEMICAL_SYMBOL_FOR_ROCK_SALT,
-            AlchemicalSymbols::AlchemicalSymbolForRockSaltDash2 => ALCHEMICAL_SYMBOL_FOR_ROCK_SALT_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForGold => ALCHEMICAL_SYMBOL_FOR_GOLD,
-            AlchemicalSymbols::AlchemicalSymbolForSilver => ALCHEMICAL_SYMBOL_FOR_SILVER,
-            AlchemicalSymbols::AlchemicalSymbolForIronOre => ALCHEMICAL_SYMBOL_FOR_IRON_ORE,
-            AlchemicalSymbols::AlchemicalSymbolForIronOreDash2 => ALCHEMICAL_SYMBOL_FOR_IRON_ORE_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForCrocusOfIron => ALCHEMICAL_SYMBOL_FOR_CROCUS_OF_IRON,
-            AlchemicalSymbols::AlchemicalSymbolForRegulusOfIron => ALCHEMICAL_SYMBOL_FOR_REGULUS_OF_IRON,
-            AlchemicalSymbols::AlchemicalSymbolForCopperOre => ALCHEMICAL_SYMBOL_FOR_COPPER_ORE,
-            AlchemicalSymbols::AlchemicalSymbolForIronDashCopperOre => ALCHEMICAL_SYMBOL_FOR_IRON_DASH_COPPER_ORE,
-            AlchemicalSymbols::AlchemicalSymbolForSublimateOfCopper => ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_COPPER,
-            AlchemicalSymbols::AlchemicalSymbolForCrocusOfCopper => ALCHEMICAL_SYMBOL_FOR_CROCUS_OF_COPPER,
-            AlchemicalSymbols::AlchemicalSymbolForCrocusOfCopperDash2 => ALCHEMICAL_SYMBOL_FOR_CROCUS_OF_COPPER_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForCopperAntimoniate => ALCHEMICAL_SYMBOL_FOR_COPPER_ANTIMONIATE,
-            AlchemicalSymbols::AlchemicalSymbolForSaltOfCopperAntimoniate => ALCHEMICAL_SYMBOL_FOR_SALT_OF_COPPER_ANTIMONIATE,
-            AlchemicalSymbols::AlchemicalSymbolForSublimateOfSaltOfCopper => ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_SALT_OF_COPPER,
-            AlchemicalSymbols::AlchemicalSymbolForVerdigris => ALCHEMICAL_SYMBOL_FOR_VERDIGRIS,
-            AlchemicalSymbols::AlchemicalSymbolForTinOre => ALCHEMICAL_SYMBOL_FOR_TIN_ORE,
-            AlchemicalSymbols::AlchemicalSymbolForLeadOre => ALCHEMICAL_SYMBOL_FOR_LEAD_ORE,
-            AlchemicalSymbols::AlchemicalSymbolForAntimonyOre => ALCHEMICAL_SYMBOL_FOR_ANTIMONY_ORE,
-            AlchemicalSymbols::AlchemicalSymbolForSublimateOfAntimony => ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_ANTIMONY,
-            AlchemicalSymbols::AlchemicalSymbolForSaltOfAntimony => ALCHEMICAL_SYMBOL_FOR_SALT_OF_ANTIMONY,
-            AlchemicalSymbols::AlchemicalSymbolForSublimateOfSaltOfAntimony => ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_SALT_OF_ANTIMONY,
-            AlchemicalSymbols::AlchemicalSymbolForVinegarOfAntimony => ALCHEMICAL_SYMBOL_FOR_VINEGAR_OF_ANTIMONY,
-            AlchemicalSymbols::AlchemicalSymbolForRegulusOfAntimony => ALCHEMICAL_SYMBOL_FOR_REGULUS_OF_ANTIMONY,
-            AlchemicalSymbols::AlchemicalSymbolForRegulusOfAntimonyDash2 => ALCHEMICAL_SYMBOL_FOR_REGULUS_OF_ANTIMONY_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForRegulus => ALCHEMICAL_SYMBOL_FOR_REGULUS,
-            AlchemicalSymbols::AlchemicalSymbolForRegulusDash2 => ALCHEMICAL_SYMBOL_FOR_REGULUS_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForRegulusDash3 => ALCHEMICAL_SYMBOL_FOR_REGULUS_DASH_3,
-            AlchemicalSymbols::AlchemicalSymbolForRegulusDash4 => ALCHEMICAL_SYMBOL_FOR_REGULUS_DASH_4,
-            AlchemicalSymbols::AlchemicalSymbolForAlkali => ALCHEMICAL_SYMBOL_FOR_ALKALI,
-            AlchemicalSymbols::AlchemicalSymbolForAlkaliDash2 => ALCHEMICAL_SYMBOL_FOR_ALKALI_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForMarcasite => ALCHEMICAL_SYMBOL_FOR_MARCASITE,
-            AlchemicalSymbols::AlchemicalSymbolForSalDashAmmoniac => ALCHEMICAL_SYMBOL_FOR_SAL_DASH_AMMONIAC,
-            AlchemicalSymbols::AlchemicalSymbolForArsenic => ALCHEMICAL_SYMBOL_FOR_ARSENIC,
-            AlchemicalSymbols::AlchemicalSymbolForRealgar => ALCHEMICAL_SYMBOL_FOR_REALGAR,
-            AlchemicalSymbols::AlchemicalSymbolForRealgarDash2 => ALCHEMICAL_SYMBOL_FOR_REALGAR_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForAuripigment => ALCHEMICAL_SYMBOL_FOR_AURIPIGMENT,
-            AlchemicalSymbols::AlchemicalSymbolForBismuthOre => ALCHEMICAL_SYMBOL_FOR_BISMUTH_ORE,
-            AlchemicalSymbols::AlchemicalSymbolForTartar => ALCHEMICAL_SYMBOL_FOR_TARTAR,
-            AlchemicalSymbols::AlchemicalSymbolForTartarDash2 => ALCHEMICAL_SYMBOL_FOR_TARTAR_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForQuickLime => ALCHEMICAL_SYMBOL_FOR_QUICK_LIME,
-            AlchemicalSymbols::AlchemicalSymbolForBorax => ALCHEMICAL_SYMBOL_FOR_BORAX,
-            AlchemicalSymbols::AlchemicalSymbolForBoraxDash2 => ALCHEMICAL_SYMBOL_FOR_BORAX_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForBoraxDash3 => ALCHEMICAL_SYMBOL_FOR_BORAX_DASH_3,
-            AlchemicalSymbols::AlchemicalSymbolForAlum => ALCHEMICAL_SYMBOL_FOR_ALUM,
-            AlchemicalSymbols::AlchemicalSymbolForOil => ALCHEMICAL_SYMBOL_FOR_OIL,
-            AlchemicalSymbols::AlchemicalSymbolForSpirit => ALCHEMICAL_SYMBOL_FOR_SPIRIT,
-            AlchemicalSymbols::AlchemicalSymbolForTincture => ALCHEMICAL_SYMBOL_FOR_TINCTURE,
-            AlchemicalSymbols::AlchemicalSymbolForGum => ALCHEMICAL_SYMBOL_FOR_GUM,
-            AlchemicalSymbols::AlchemicalSymbolForWax => ALCHEMICAL_SYMBOL_FOR_WAX,
-            AlchemicalSymbols::AlchemicalSymbolForPowder => ALCHEMICAL_SYMBOL_FOR_POWDER,
-            AlchemicalSymbols::AlchemicalSymbolForCalx => ALCHEMICAL_SYMBOL_FOR_CALX,
-            AlchemicalSymbols::AlchemicalSymbolForTutty => ALCHEMICAL_SYMBOL_FOR_TUTTY,
-            AlchemicalSymbols::AlchemicalSymbolForCaputMortuum => ALCHEMICAL_SYMBOL_FOR_CAPUT_MORTUUM,
-            AlchemicalSymbols::AlchemicalSymbolForScepterOfJove => ALCHEMICAL_SYMBOL_FOR_SCEPTER_OF_JOVE,
-            AlchemicalSymbols::AlchemicalSymbolForCaduceus => ALCHEMICAL_SYMBOL_FOR_CADUCEUS,
-            AlchemicalSymbols::AlchemicalSymbolForTrident => ALCHEMICAL_SYMBOL_FOR_TRIDENT,
-            AlchemicalSymbols::AlchemicalSymbolForStarredTrident => ALCHEMICAL_SYMBOL_FOR_STARRED_TRIDENT,
-            AlchemicalSymbols::AlchemicalSymbolForLodestone => ALCHEMICAL_SYMBOL_FOR_LODESTONE,
-            AlchemicalSymbols::AlchemicalSymbolForSoap => ALCHEMICAL_SYMBOL_FOR_SOAP,
-            AlchemicalSymbols::AlchemicalSymbolForUrine => ALCHEMICAL_SYMBOL_FOR_URINE,
-            AlchemicalSymbols::AlchemicalSymbolForHorseDung => ALCHEMICAL_SYMBOL_FOR_HORSE_DUNG,
-            AlchemicalSymbols::AlchemicalSymbolForAshes => ALCHEMICAL_SYMBOL_FOR_ASHES,
-            AlchemicalSymbols::AlchemicalSymbolForPotAshes => ALCHEMICAL_SYMBOL_FOR_POT_ASHES,
-            AlchemicalSymbols::AlchemicalSymbolForBrick => ALCHEMICAL_SYMBOL_FOR_BRICK,
-            AlchemicalSymbols::AlchemicalSymbolForPowderedBrick => ALCHEMICAL_SYMBOL_FOR_POWDERED_BRICK,
-            AlchemicalSymbols::AlchemicalSymbolForAmalgam => ALCHEMICAL_SYMBOL_FOR_AMALGAM,
-            AlchemicalSymbols::AlchemicalSymbolForStratumSuperStratum => ALCHEMICAL_SYMBOL_FOR_STRATUM_SUPER_STRATUM,
-            AlchemicalSymbols::AlchemicalSymbolForStratumSuperStratumDash2 => ALCHEMICAL_SYMBOL_FOR_STRATUM_SUPER_STRATUM_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForSublimation => ALCHEMICAL_SYMBOL_FOR_SUBLIMATION,
-            AlchemicalSymbols::AlchemicalSymbolForPrecipitate => ALCHEMICAL_SYMBOL_FOR_PRECIPITATE,
-            AlchemicalSymbols::AlchemicalSymbolForDistill => ALCHEMICAL_SYMBOL_FOR_DISTILL,
-            AlchemicalSymbols::AlchemicalSymbolForDissolve => ALCHEMICAL_SYMBOL_FOR_DISSOLVE,
-            AlchemicalSymbols::AlchemicalSymbolForDissolveDash2 => ALCHEMICAL_SYMBOL_FOR_DISSOLVE_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForPurify => ALCHEMICAL_SYMBOL_FOR_PURIFY,
-            AlchemicalSymbols::AlchemicalSymbolForPutrefaction => ALCHEMICAL_SYMBOL_FOR_PUTREFACTION,
-            AlchemicalSymbols::AlchemicalSymbolForCrucible => ALCHEMICAL_SYMBOL_FOR_CRUCIBLE,
-            AlchemicalSymbols::AlchemicalSymbolForCrucibleDash2 => ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_2,
-            AlchemicalSymbols::AlchemicalSymbolForCrucibleDash3 => ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_3,
-            AlchemicalSymbols::AlchemicalSymbolForCrucibleDash4 => ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_4,
-            AlchemicalSymbols::AlchemicalSymbolForCrucibleDash5 => ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_5,
-            AlchemicalSymbols::AlchemicalSymbolForAlembic => ALCHEMICAL_SYMBOL_FOR_ALEMBIC,
-            AlchemicalSymbols::AlchemicalSymbolForBathOfMary => ALCHEMICAL_SYMBOL_FOR_BATH_OF_MARY,
-            AlchemicalSymbols::AlchemicalSymbolForBathOfVapours => ALCHEMICAL_SYMBOL_FOR_BATH_OF_VAPOURS,
-            AlchemicalSymbols::AlchemicalSymbolForRetort => ALCHEMICAL_SYMBOL_FOR_RETORT,
-            AlchemicalSymbols::AlchemicalSymbolForHour => ALCHEMICAL_SYMBOL_FOR_HOUR,
-            AlchemicalSymbols::AlchemicalSymbolForNight => ALCHEMICAL_SYMBOL_FOR_NIGHT,
-            AlchemicalSymbols::AlchemicalSymbolForDayDashNight => ALCHEMICAL_SYMBOL_FOR_DAY_DASH_NIGHT,
-            AlchemicalSymbols::AlchemicalSymbolForMonth => ALCHEMICAL_SYMBOL_FOR_MONTH,
-            AlchemicalSymbols::AlchemicalSymbolForHalfDram => ALCHEMICAL_SYMBOL_FOR_HALF_DRAM,
-            AlchemicalSymbols::AlchemicalSymbolForHalfOunce => ALCHEMICAL_SYMBOL_FOR_HALF_OUNCE,
+            AlchemicalSymbols::AlchemicalSymbolForQuintessence => '🜀',
+            AlchemicalSymbols::AlchemicalSymbolForAir => '🜁',
+            AlchemicalSymbols::AlchemicalSymbolForFire => '🜂',
+            AlchemicalSymbols::AlchemicalSymbolForEarth => '🜃',
+            AlchemicalSymbols::AlchemicalSymbolForWater => '🜄',
+            AlchemicalSymbols::AlchemicalSymbolForAquafortis => '🜅',
+            AlchemicalSymbols::AlchemicalSymbolForAquaRegia => '🜆',
+            AlchemicalSymbols::AlchemicalSymbolForAquaRegiaDash2 => '🜇',
+            AlchemicalSymbols::AlchemicalSymbolForAquaVitae => '🜈',
+            AlchemicalSymbols::AlchemicalSymbolForAquaVitaeDash2 => '🜉',
+            AlchemicalSymbols::AlchemicalSymbolForVinegar => '🜊',
+            AlchemicalSymbols::AlchemicalSymbolForVinegarDash2 => '🜋',
+            AlchemicalSymbols::AlchemicalSymbolForVinegarDash3 => '🜌',
+            AlchemicalSymbols::AlchemicalSymbolForSulfur => '🜍',
+            AlchemicalSymbols::AlchemicalSymbolForPhilosophersSulfur => '🜎',
+            AlchemicalSymbols::AlchemicalSymbolForBlackSulfur => '🜏',
+            AlchemicalSymbols::AlchemicalSymbolForMercurySublimate => '🜐',
+            AlchemicalSymbols::AlchemicalSymbolForMercurySublimateDash2 => '🜑',
+            AlchemicalSymbols::AlchemicalSymbolForMercurySublimateDash3 => '🜒',
+            AlchemicalSymbols::AlchemicalSymbolForCinnabar => '🜓',
+            AlchemicalSymbols::AlchemicalSymbolForSalt => '🜔',
+            AlchemicalSymbols::AlchemicalSymbolForNitre => '🜕',
+            AlchemicalSymbols::AlchemicalSymbolForVitriol => '🜖',
+            AlchemicalSymbols::AlchemicalSymbolForVitriolDash2 => '🜗',
+            AlchemicalSymbols::AlchemicalSymbolForRockSalt => '🜘',
+            AlchemicalSymbols::AlchemicalSymbolForRockSaltDash2 => '🜙',
+            AlchemicalSymbols::AlchemicalSymbolForGold => '🜚',
+            AlchemicalSymbols::AlchemicalSymbolForSilver => '🜛',
+            AlchemicalSymbols::AlchemicalSymbolForIronOre => '🜜',
+            AlchemicalSymbols::AlchemicalSymbolForIronOreDash2 => '🜝',
+            AlchemicalSymbols::AlchemicalSymbolForCrocusOfIron => '🜞',
+            AlchemicalSymbols::AlchemicalSymbolForRegulusOfIron => '🜟',
+            AlchemicalSymbols::AlchemicalSymbolForCopperOre => '🜠',
+            AlchemicalSymbols::AlchemicalSymbolForIronDashCopperOre => '🜡',
+            AlchemicalSymbols::AlchemicalSymbolForSublimateOfCopper => '🜢',
+            AlchemicalSymbols::AlchemicalSymbolForCrocusOfCopper => '🜣',
+            AlchemicalSymbols::AlchemicalSymbolForCrocusOfCopperDash2 => '🜤',
+            AlchemicalSymbols::AlchemicalSymbolForCopperAntimoniate => '🜥',
+            AlchemicalSymbols::AlchemicalSymbolForSaltOfCopperAntimoniate => '🜦',
+            AlchemicalSymbols::AlchemicalSymbolForSublimateOfSaltOfCopper => '🜧',
+            AlchemicalSymbols::AlchemicalSymbolForVerdigris => '🜨',
+            AlchemicalSymbols::AlchemicalSymbolForTinOre => '🜩',
+            AlchemicalSymbols::AlchemicalSymbolForLeadOre => '🜪',
+            AlchemicalSymbols::AlchemicalSymbolForAntimonyOre => '🜫',
+            AlchemicalSymbols::AlchemicalSymbolForSublimateOfAntimony => '🜬',
+            AlchemicalSymbols::AlchemicalSymbolForSaltOfAntimony => '🜭',
+            AlchemicalSymbols::AlchemicalSymbolForSublimateOfSaltOfAntimony => '🜮',
+            AlchemicalSymbols::AlchemicalSymbolForVinegarOfAntimony => '🜯',
+            AlchemicalSymbols::AlchemicalSymbolForRegulusOfAntimony => '🜰',
+            AlchemicalSymbols::AlchemicalSymbolForRegulusOfAntimonyDash2 => '🜱',
+            AlchemicalSymbols::AlchemicalSymbolForRegulus => '🜲',
+            AlchemicalSymbols::AlchemicalSymbolForRegulusDash2 => '🜳',
+            AlchemicalSymbols::AlchemicalSymbolForRegulusDash3 => '🜴',
+            AlchemicalSymbols::AlchemicalSymbolForRegulusDash4 => '🜵',
+            AlchemicalSymbols::AlchemicalSymbolForAlkali => '🜶',
+            AlchemicalSymbols::AlchemicalSymbolForAlkaliDash2 => '🜷',
+            AlchemicalSymbols::AlchemicalSymbolForMarcasite => '🜸',
+            AlchemicalSymbols::AlchemicalSymbolForSalDashAmmoniac => '🜹',
+            AlchemicalSymbols::AlchemicalSymbolForArsenic => '🜺',
+            AlchemicalSymbols::AlchemicalSymbolForRealgar => '🜻',
+            AlchemicalSymbols::AlchemicalSymbolForRealgarDash2 => '🜼',
+            AlchemicalSymbols::AlchemicalSymbolForAuripigment => '🜽',
+            AlchemicalSymbols::AlchemicalSymbolForBismuthOre => '🜾',
+            AlchemicalSymbols::AlchemicalSymbolForTartar => '🜿',
+            AlchemicalSymbols::AlchemicalSymbolForTartarDash2 => '🝀',
+            AlchemicalSymbols::AlchemicalSymbolForQuickLime => '🝁',
+            AlchemicalSymbols::AlchemicalSymbolForBorax => '🝂',
+            AlchemicalSymbols::AlchemicalSymbolForBoraxDash2 => '🝃',
+            AlchemicalSymbols::AlchemicalSymbolForBoraxDash3 => '🝄',
+            AlchemicalSymbols::AlchemicalSymbolForAlum => '🝅',
+            AlchemicalSymbols::AlchemicalSymbolForOil => '🝆',
+            AlchemicalSymbols::AlchemicalSymbolForSpirit => '🝇',
+            AlchemicalSymbols::AlchemicalSymbolForTincture => '🝈',
+            AlchemicalSymbols::AlchemicalSymbolForGum => '🝉',
+            AlchemicalSymbols::AlchemicalSymbolForWax => '🝊',
+            AlchemicalSymbols::AlchemicalSymbolForPowder => '🝋',
+            AlchemicalSymbols::AlchemicalSymbolForCalx => '🝌',
+            AlchemicalSymbols::AlchemicalSymbolForTutty => '🝍',
+            AlchemicalSymbols::AlchemicalSymbolForCaputMortuum => '🝎',
+            AlchemicalSymbols::AlchemicalSymbolForScepterOfJove => '🝏',
+            AlchemicalSymbols::AlchemicalSymbolForCaduceus => '🝐',
+            AlchemicalSymbols::AlchemicalSymbolForTrident => '🝑',
+            AlchemicalSymbols::AlchemicalSymbolForStarredTrident => '🝒',
+            AlchemicalSymbols::AlchemicalSymbolForLodestone => '🝓',
+            AlchemicalSymbols::AlchemicalSymbolForSoap => '🝔',
+            AlchemicalSymbols::AlchemicalSymbolForUrine => '🝕',
+            AlchemicalSymbols::AlchemicalSymbolForHorseDung => '🝖',
+            AlchemicalSymbols::AlchemicalSymbolForAshes => '🝗',
+            AlchemicalSymbols::AlchemicalSymbolForPotAshes => '🝘',
+            AlchemicalSymbols::AlchemicalSymbolForBrick => '🝙',
+            AlchemicalSymbols::AlchemicalSymbolForPowderedBrick => '🝚',
+            AlchemicalSymbols::AlchemicalSymbolForAmalgam => '🝛',
+            AlchemicalSymbols::AlchemicalSymbolForStratumSuperStratum => '🝜',
+            AlchemicalSymbols::AlchemicalSymbolForStratumSuperStratumDash2 => '🝝',
+            AlchemicalSymbols::AlchemicalSymbolForSublimation => '🝞',
+            AlchemicalSymbols::AlchemicalSymbolForPrecipitate => '🝟',
+            AlchemicalSymbols::AlchemicalSymbolForDistill => '🝠',
+            AlchemicalSymbols::AlchemicalSymbolForDissolve => '🝡',
+            AlchemicalSymbols::AlchemicalSymbolForDissolveDash2 => '🝢',
+            AlchemicalSymbols::AlchemicalSymbolForPurify => '🝣',
+            AlchemicalSymbols::AlchemicalSymbolForPutrefaction => '🝤',
+            AlchemicalSymbols::AlchemicalSymbolForCrucible => '🝥',
+            AlchemicalSymbols::AlchemicalSymbolForCrucibleDash2 => '🝦',
+            AlchemicalSymbols::AlchemicalSymbolForCrucibleDash3 => '🝧',
+            AlchemicalSymbols::AlchemicalSymbolForCrucibleDash4 => '🝨',
+            AlchemicalSymbols::AlchemicalSymbolForCrucibleDash5 => '🝩',
+            AlchemicalSymbols::AlchemicalSymbolForAlembic => '🝪',
+            AlchemicalSymbols::AlchemicalSymbolForBathOfMary => '🝫',
+            AlchemicalSymbols::AlchemicalSymbolForBathOfVapours => '🝬',
+            AlchemicalSymbols::AlchemicalSymbolForRetort => '🝭',
+            AlchemicalSymbols::AlchemicalSymbolForHour => '🝮',
+            AlchemicalSymbols::AlchemicalSymbolForNight => '🝯',
+            AlchemicalSymbols::AlchemicalSymbolForDayDashNight => '🝰',
+            AlchemicalSymbols::AlchemicalSymbolForMonth => '🝱',
+            AlchemicalSymbols::AlchemicalSymbolForHalfDram => '🝲',
+            AlchemicalSymbols::AlchemicalSymbolForHalfOunce => '🝳',
         }
     }
 }
@@ -598,124 +362,123 @@ impl Into<char> for AlchemicalSymbols {
 impl std::convert::TryFrom<char> for AlchemicalSymbols {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            ALCHEMICAL_SYMBOL_FOR_QUINTESSENCE => Ok(AlchemicalSymbols::AlchemicalSymbolForQuintessence),
-            ALCHEMICAL_SYMBOL_FOR_AIR => Ok(AlchemicalSymbols::AlchemicalSymbolForAir),
-            ALCHEMICAL_SYMBOL_FOR_FIRE => Ok(AlchemicalSymbols::AlchemicalSymbolForFire),
-            ALCHEMICAL_SYMBOL_FOR_EARTH => Ok(AlchemicalSymbols::AlchemicalSymbolForEarth),
-            ALCHEMICAL_SYMBOL_FOR_WATER => Ok(AlchemicalSymbols::AlchemicalSymbolForWater),
-            ALCHEMICAL_SYMBOL_FOR_AQUAFORTIS => Ok(AlchemicalSymbols::AlchemicalSymbolForAquafortis),
-            ALCHEMICAL_SYMBOL_FOR_AQUA_REGIA => Ok(AlchemicalSymbols::AlchemicalSymbolForAquaRegia),
-            ALCHEMICAL_SYMBOL_FOR_AQUA_REGIA_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForAquaRegiaDash2),
-            ALCHEMICAL_SYMBOL_FOR_AQUA_VITAE => Ok(AlchemicalSymbols::AlchemicalSymbolForAquaVitae),
-            ALCHEMICAL_SYMBOL_FOR_AQUA_VITAE_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForAquaVitaeDash2),
-            ALCHEMICAL_SYMBOL_FOR_VINEGAR => Ok(AlchemicalSymbols::AlchemicalSymbolForVinegar),
-            ALCHEMICAL_SYMBOL_FOR_VINEGAR_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForVinegarDash2),
-            ALCHEMICAL_SYMBOL_FOR_VINEGAR_DASH_3 => Ok(AlchemicalSymbols::AlchemicalSymbolForVinegarDash3),
-            ALCHEMICAL_SYMBOL_FOR_SULFUR => Ok(AlchemicalSymbols::AlchemicalSymbolForSulfur),
-            ALCHEMICAL_SYMBOL_FOR_PHILOSOPHERS_SULFUR => Ok(AlchemicalSymbols::AlchemicalSymbolForPhilosophersSulfur),
-            ALCHEMICAL_SYMBOL_FOR_BLACK_SULFUR => Ok(AlchemicalSymbols::AlchemicalSymbolForBlackSulfur),
-            ALCHEMICAL_SYMBOL_FOR_MERCURY_SUBLIMATE => Ok(AlchemicalSymbols::AlchemicalSymbolForMercurySublimate),
-            ALCHEMICAL_SYMBOL_FOR_MERCURY_SUBLIMATE_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForMercurySublimateDash2),
-            ALCHEMICAL_SYMBOL_FOR_MERCURY_SUBLIMATE_DASH_3 => Ok(AlchemicalSymbols::AlchemicalSymbolForMercurySublimateDash3),
-            ALCHEMICAL_SYMBOL_FOR_CINNABAR => Ok(AlchemicalSymbols::AlchemicalSymbolForCinnabar),
-            ALCHEMICAL_SYMBOL_FOR_SALT => Ok(AlchemicalSymbols::AlchemicalSymbolForSalt),
-            ALCHEMICAL_SYMBOL_FOR_NITRE => Ok(AlchemicalSymbols::AlchemicalSymbolForNitre),
-            ALCHEMICAL_SYMBOL_FOR_VITRIOL => Ok(AlchemicalSymbols::AlchemicalSymbolForVitriol),
-            ALCHEMICAL_SYMBOL_FOR_VITRIOL_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForVitriolDash2),
-            ALCHEMICAL_SYMBOL_FOR_ROCK_SALT => Ok(AlchemicalSymbols::AlchemicalSymbolForRockSalt),
-            ALCHEMICAL_SYMBOL_FOR_ROCK_SALT_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForRockSaltDash2),
-            ALCHEMICAL_SYMBOL_FOR_GOLD => Ok(AlchemicalSymbols::AlchemicalSymbolForGold),
-            ALCHEMICAL_SYMBOL_FOR_SILVER => Ok(AlchemicalSymbols::AlchemicalSymbolForSilver),
-            ALCHEMICAL_SYMBOL_FOR_IRON_ORE => Ok(AlchemicalSymbols::AlchemicalSymbolForIronOre),
-            ALCHEMICAL_SYMBOL_FOR_IRON_ORE_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForIronOreDash2),
-            ALCHEMICAL_SYMBOL_FOR_CROCUS_OF_IRON => Ok(AlchemicalSymbols::AlchemicalSymbolForCrocusOfIron),
-            ALCHEMICAL_SYMBOL_FOR_REGULUS_OF_IRON => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusOfIron),
-            ALCHEMICAL_SYMBOL_FOR_COPPER_ORE => Ok(AlchemicalSymbols::AlchemicalSymbolForCopperOre),
-            ALCHEMICAL_SYMBOL_FOR_IRON_DASH_COPPER_ORE => Ok(AlchemicalSymbols::AlchemicalSymbolForIronDashCopperOre),
-            ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_COPPER => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimateOfCopper),
-            ALCHEMICAL_SYMBOL_FOR_CROCUS_OF_COPPER => Ok(AlchemicalSymbols::AlchemicalSymbolForCrocusOfCopper),
-            ALCHEMICAL_SYMBOL_FOR_CROCUS_OF_COPPER_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForCrocusOfCopperDash2),
-            ALCHEMICAL_SYMBOL_FOR_COPPER_ANTIMONIATE => Ok(AlchemicalSymbols::AlchemicalSymbolForCopperAntimoniate),
-            ALCHEMICAL_SYMBOL_FOR_SALT_OF_COPPER_ANTIMONIATE => Ok(AlchemicalSymbols::AlchemicalSymbolForSaltOfCopperAntimoniate),
-            ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_SALT_OF_COPPER => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimateOfSaltOfCopper),
-            ALCHEMICAL_SYMBOL_FOR_VERDIGRIS => Ok(AlchemicalSymbols::AlchemicalSymbolForVerdigris),
-            ALCHEMICAL_SYMBOL_FOR_TIN_ORE => Ok(AlchemicalSymbols::AlchemicalSymbolForTinOre),
-            ALCHEMICAL_SYMBOL_FOR_LEAD_ORE => Ok(AlchemicalSymbols::AlchemicalSymbolForLeadOre),
-            ALCHEMICAL_SYMBOL_FOR_ANTIMONY_ORE => Ok(AlchemicalSymbols::AlchemicalSymbolForAntimonyOre),
-            ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_ANTIMONY => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimateOfAntimony),
-            ALCHEMICAL_SYMBOL_FOR_SALT_OF_ANTIMONY => Ok(AlchemicalSymbols::AlchemicalSymbolForSaltOfAntimony),
-            ALCHEMICAL_SYMBOL_FOR_SUBLIMATE_OF_SALT_OF_ANTIMONY => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimateOfSaltOfAntimony),
-            ALCHEMICAL_SYMBOL_FOR_VINEGAR_OF_ANTIMONY => Ok(AlchemicalSymbols::AlchemicalSymbolForVinegarOfAntimony),
-            ALCHEMICAL_SYMBOL_FOR_REGULUS_OF_ANTIMONY => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusOfAntimony),
-            ALCHEMICAL_SYMBOL_FOR_REGULUS_OF_ANTIMONY_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusOfAntimonyDash2),
-            ALCHEMICAL_SYMBOL_FOR_REGULUS => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulus),
-            ALCHEMICAL_SYMBOL_FOR_REGULUS_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusDash2),
-            ALCHEMICAL_SYMBOL_FOR_REGULUS_DASH_3 => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusDash3),
-            ALCHEMICAL_SYMBOL_FOR_REGULUS_DASH_4 => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusDash4),
-            ALCHEMICAL_SYMBOL_FOR_ALKALI => Ok(AlchemicalSymbols::AlchemicalSymbolForAlkali),
-            ALCHEMICAL_SYMBOL_FOR_ALKALI_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForAlkaliDash2),
-            ALCHEMICAL_SYMBOL_FOR_MARCASITE => Ok(AlchemicalSymbols::AlchemicalSymbolForMarcasite),
-            ALCHEMICAL_SYMBOL_FOR_SAL_DASH_AMMONIAC => Ok(AlchemicalSymbols::AlchemicalSymbolForSalDashAmmoniac),
-            ALCHEMICAL_SYMBOL_FOR_ARSENIC => Ok(AlchemicalSymbols::AlchemicalSymbolForArsenic),
-            ALCHEMICAL_SYMBOL_FOR_REALGAR => Ok(AlchemicalSymbols::AlchemicalSymbolForRealgar),
-            ALCHEMICAL_SYMBOL_FOR_REALGAR_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForRealgarDash2),
-            ALCHEMICAL_SYMBOL_FOR_AURIPIGMENT => Ok(AlchemicalSymbols::AlchemicalSymbolForAuripigment),
-            ALCHEMICAL_SYMBOL_FOR_BISMUTH_ORE => Ok(AlchemicalSymbols::AlchemicalSymbolForBismuthOre),
-            ALCHEMICAL_SYMBOL_FOR_TARTAR => Ok(AlchemicalSymbols::AlchemicalSymbolForTartar),
-            ALCHEMICAL_SYMBOL_FOR_TARTAR_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForTartarDash2),
-            ALCHEMICAL_SYMBOL_FOR_QUICK_LIME => Ok(AlchemicalSymbols::AlchemicalSymbolForQuickLime),
-            ALCHEMICAL_SYMBOL_FOR_BORAX => Ok(AlchemicalSymbols::AlchemicalSymbolForBorax),
-            ALCHEMICAL_SYMBOL_FOR_BORAX_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForBoraxDash2),
-            ALCHEMICAL_SYMBOL_FOR_BORAX_DASH_3 => Ok(AlchemicalSymbols::AlchemicalSymbolForBoraxDash3),
-            ALCHEMICAL_SYMBOL_FOR_ALUM => Ok(AlchemicalSymbols::AlchemicalSymbolForAlum),
-            ALCHEMICAL_SYMBOL_FOR_OIL => Ok(AlchemicalSymbols::AlchemicalSymbolForOil),
-            ALCHEMICAL_SYMBOL_FOR_SPIRIT => Ok(AlchemicalSymbols::AlchemicalSymbolForSpirit),
-            ALCHEMICAL_SYMBOL_FOR_TINCTURE => Ok(AlchemicalSymbols::AlchemicalSymbolForTincture),
-            ALCHEMICAL_SYMBOL_FOR_GUM => Ok(AlchemicalSymbols::AlchemicalSymbolForGum),
-            ALCHEMICAL_SYMBOL_FOR_WAX => Ok(AlchemicalSymbols::AlchemicalSymbolForWax),
-            ALCHEMICAL_SYMBOL_FOR_POWDER => Ok(AlchemicalSymbols::AlchemicalSymbolForPowder),
-            ALCHEMICAL_SYMBOL_FOR_CALX => Ok(AlchemicalSymbols::AlchemicalSymbolForCalx),
-            ALCHEMICAL_SYMBOL_FOR_TUTTY => Ok(AlchemicalSymbols::AlchemicalSymbolForTutty),
-            ALCHEMICAL_SYMBOL_FOR_CAPUT_MORTUUM => Ok(AlchemicalSymbols::AlchemicalSymbolForCaputMortuum),
-            ALCHEMICAL_SYMBOL_FOR_SCEPTER_OF_JOVE => Ok(AlchemicalSymbols::AlchemicalSymbolForScepterOfJove),
-            ALCHEMICAL_SYMBOL_FOR_CADUCEUS => Ok(AlchemicalSymbols::AlchemicalSymbolForCaduceus),
-            ALCHEMICAL_SYMBOL_FOR_TRIDENT => Ok(AlchemicalSymbols::AlchemicalSymbolForTrident),
-            ALCHEMICAL_SYMBOL_FOR_STARRED_TRIDENT => Ok(AlchemicalSymbols::AlchemicalSymbolForStarredTrident),
-            ALCHEMICAL_SYMBOL_FOR_LODESTONE => Ok(AlchemicalSymbols::AlchemicalSymbolForLodestone),
-            ALCHEMICAL_SYMBOL_FOR_SOAP => Ok(AlchemicalSymbols::AlchemicalSymbolForSoap),
-            ALCHEMICAL_SYMBOL_FOR_URINE => Ok(AlchemicalSymbols::AlchemicalSymbolForUrine),
-            ALCHEMICAL_SYMBOL_FOR_HORSE_DUNG => Ok(AlchemicalSymbols::AlchemicalSymbolForHorseDung),
-            ALCHEMICAL_SYMBOL_FOR_ASHES => Ok(AlchemicalSymbols::AlchemicalSymbolForAshes),
-            ALCHEMICAL_SYMBOL_FOR_POT_ASHES => Ok(AlchemicalSymbols::AlchemicalSymbolForPotAshes),
-            ALCHEMICAL_SYMBOL_FOR_BRICK => Ok(AlchemicalSymbols::AlchemicalSymbolForBrick),
-            ALCHEMICAL_SYMBOL_FOR_POWDERED_BRICK => Ok(AlchemicalSymbols::AlchemicalSymbolForPowderedBrick),
-            ALCHEMICAL_SYMBOL_FOR_AMALGAM => Ok(AlchemicalSymbols::AlchemicalSymbolForAmalgam),
-            ALCHEMICAL_SYMBOL_FOR_STRATUM_SUPER_STRATUM => Ok(AlchemicalSymbols::AlchemicalSymbolForStratumSuperStratum),
-            ALCHEMICAL_SYMBOL_FOR_STRATUM_SUPER_STRATUM_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForStratumSuperStratumDash2),
-            ALCHEMICAL_SYMBOL_FOR_SUBLIMATION => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimation),
-            ALCHEMICAL_SYMBOL_FOR_PRECIPITATE => Ok(AlchemicalSymbols::AlchemicalSymbolForPrecipitate),
-            ALCHEMICAL_SYMBOL_FOR_DISTILL => Ok(AlchemicalSymbols::AlchemicalSymbolForDistill),
-            ALCHEMICAL_SYMBOL_FOR_DISSOLVE => Ok(AlchemicalSymbols::AlchemicalSymbolForDissolve),
-            ALCHEMICAL_SYMBOL_FOR_DISSOLVE_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForDissolveDash2),
-            ALCHEMICAL_SYMBOL_FOR_PURIFY => Ok(AlchemicalSymbols::AlchemicalSymbolForPurify),
-            ALCHEMICAL_SYMBOL_FOR_PUTREFACTION => Ok(AlchemicalSymbols::AlchemicalSymbolForPutrefaction),
-            ALCHEMICAL_SYMBOL_FOR_CRUCIBLE => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucible),
-            ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_2 => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucibleDash2),
-            ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_3 => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucibleDash3),
-            ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_4 => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucibleDash4),
-            ALCHEMICAL_SYMBOL_FOR_CRUCIBLE_DASH_5 => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucibleDash5),
-            ALCHEMICAL_SYMBOL_FOR_ALEMBIC => Ok(AlchemicalSymbols::AlchemicalSymbolForAlembic),
-            ALCHEMICAL_SYMBOL_FOR_BATH_OF_MARY => Ok(AlchemicalSymbols::AlchemicalSymbolForBathOfMary),
-            ALCHEMICAL_SYMBOL_FOR_BATH_OF_VAPOURS => Ok(AlchemicalSymbols::AlchemicalSymbolForBathOfVapours),
-            ALCHEMICAL_SYMBOL_FOR_RETORT => Ok(AlchemicalSymbols::AlchemicalSymbolForRetort),
-            ALCHEMICAL_SYMBOL_FOR_HOUR => Ok(AlchemicalSymbols::AlchemicalSymbolForHour),
-            ALCHEMICAL_SYMBOL_FOR_NIGHT => Ok(AlchemicalSymbols::AlchemicalSymbolForNight),
-            ALCHEMICAL_SYMBOL_FOR_DAY_DASH_NIGHT => Ok(AlchemicalSymbols::AlchemicalSymbolForDayDashNight),
-            ALCHEMICAL_SYMBOL_FOR_MONTH => Ok(AlchemicalSymbols::AlchemicalSymbolForMonth),
-            ALCHEMICAL_SYMBOL_FOR_HALF_DRAM => Ok(AlchemicalSymbols::AlchemicalSymbolForHalfDram),
-            ALCHEMICAL_SYMBOL_FOR_HALF_OUNCE => Ok(AlchemicalSymbols::AlchemicalSymbolForHalfOunce),
+            '🜀' => Ok(AlchemicalSymbols::AlchemicalSymbolForQuintessence),
+            '🜁' => Ok(AlchemicalSymbols::AlchemicalSymbolForAir),
+            '🜂' => Ok(AlchemicalSymbols::AlchemicalSymbolForFire),
+            '🜃' => Ok(AlchemicalSymbols::AlchemicalSymbolForEarth),
+            '🜄' => Ok(AlchemicalSymbols::AlchemicalSymbolForWater),
+            '🜅' => Ok(AlchemicalSymbols::AlchemicalSymbolForAquafortis),
+            '🜆' => Ok(AlchemicalSymbols::AlchemicalSymbolForAquaRegia),
+            '🜇' => Ok(AlchemicalSymbols::AlchemicalSymbolForAquaRegiaDash2),
+            '🜈' => Ok(AlchemicalSymbols::AlchemicalSymbolForAquaVitae),
+            '🜉' => Ok(AlchemicalSymbols::AlchemicalSymbolForAquaVitaeDash2),
+            '🜊' => Ok(AlchemicalSymbols::AlchemicalSymbolForVinegar),
+            '🜋' => Ok(AlchemicalSymbols::AlchemicalSymbolForVinegarDash2),
+            '🜌' => Ok(AlchemicalSymbols::AlchemicalSymbolForVinegarDash3),
+            '🜍' => Ok(AlchemicalSymbols::AlchemicalSymbolForSulfur),
+            '🜎' => Ok(AlchemicalSymbols::AlchemicalSymbolForPhilosophersSulfur),
+            '🜏' => Ok(AlchemicalSymbols::AlchemicalSymbolForBlackSulfur),
+            '🜐' => Ok(AlchemicalSymbols::AlchemicalSymbolForMercurySublimate),
+            '🜑' => Ok(AlchemicalSymbols::AlchemicalSymbolForMercurySublimateDash2),
+            '🜒' => Ok(AlchemicalSymbols::AlchemicalSymbolForMercurySublimateDash3),
+            '🜓' => Ok(AlchemicalSymbols::AlchemicalSymbolForCinnabar),
+            '🜔' => Ok(AlchemicalSymbols::AlchemicalSymbolForSalt),
+            '🜕' => Ok(AlchemicalSymbols::AlchemicalSymbolForNitre),
+            '🜖' => Ok(AlchemicalSymbols::AlchemicalSymbolForVitriol),
+            '🜗' => Ok(AlchemicalSymbols::AlchemicalSymbolForVitriolDash2),
+            '🜘' => Ok(AlchemicalSymbols::AlchemicalSymbolForRockSalt),
+            '🜙' => Ok(AlchemicalSymbols::AlchemicalSymbolForRockSaltDash2),
+            '🜚' => Ok(AlchemicalSymbols::AlchemicalSymbolForGold),
+            '🜛' => Ok(AlchemicalSymbols::AlchemicalSymbolForSilver),
+            '🜜' => Ok(AlchemicalSymbols::AlchemicalSymbolForIronOre),
+            '🜝' => Ok(AlchemicalSymbols::AlchemicalSymbolForIronOreDash2),
+            '🜞' => Ok(AlchemicalSymbols::AlchemicalSymbolForCrocusOfIron),
+            '🜟' => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusOfIron),
+            '🜠' => Ok(AlchemicalSymbols::AlchemicalSymbolForCopperOre),
+            '🜡' => Ok(AlchemicalSymbols::AlchemicalSymbolForIronDashCopperOre),
+            '🜢' => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimateOfCopper),
+            '🜣' => Ok(AlchemicalSymbols::AlchemicalSymbolForCrocusOfCopper),
+            '🜤' => Ok(AlchemicalSymbols::AlchemicalSymbolForCrocusOfCopperDash2),
+            '🜥' => Ok(AlchemicalSymbols::AlchemicalSymbolForCopperAntimoniate),
+            '🜦' => Ok(AlchemicalSymbols::AlchemicalSymbolForSaltOfCopperAntimoniate),
+            '🜧' => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimateOfSaltOfCopper),
+            '🜨' => Ok(AlchemicalSymbols::AlchemicalSymbolForVerdigris),
+            '🜩' => Ok(AlchemicalSymbols::AlchemicalSymbolForTinOre),
+            '🜪' => Ok(AlchemicalSymbols::AlchemicalSymbolForLeadOre),
+            '🜫' => Ok(AlchemicalSymbols::AlchemicalSymbolForAntimonyOre),
+            '🜬' => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimateOfAntimony),
+            '🜭' => Ok(AlchemicalSymbols::AlchemicalSymbolForSaltOfAntimony),
+            '🜮' => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimateOfSaltOfAntimony),
+            '🜯' => Ok(AlchemicalSymbols::AlchemicalSymbolForVinegarOfAntimony),
+            '🜰' => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusOfAntimony),
+            '🜱' => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusOfAntimonyDash2),
+            '🜲' => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulus),
+            '🜳' => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusDash2),
+            '🜴' => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusDash3),
+            '🜵' => Ok(AlchemicalSymbols::AlchemicalSymbolForRegulusDash4),
+            '🜶' => Ok(AlchemicalSymbols::AlchemicalSymbolForAlkali),
+            '🜷' => Ok(AlchemicalSymbols::AlchemicalSymbolForAlkaliDash2),
+            '🜸' => Ok(AlchemicalSymbols::AlchemicalSymbolForMarcasite),
+            '🜹' => Ok(AlchemicalSymbols::AlchemicalSymbolForSalDashAmmoniac),
+            '🜺' => Ok(AlchemicalSymbols::AlchemicalSymbolForArsenic),
+            '🜻' => Ok(AlchemicalSymbols::AlchemicalSymbolForRealgar),
+            '🜼' => Ok(AlchemicalSymbols::AlchemicalSymbolForRealgarDash2),
+            '🜽' => Ok(AlchemicalSymbols::AlchemicalSymbolForAuripigment),
+            '🜾' => Ok(AlchemicalSymbols::AlchemicalSymbolForBismuthOre),
+            '🜿' => Ok(AlchemicalSymbols::AlchemicalSymbolForTartar),
+            '🝀' => Ok(AlchemicalSymbols::AlchemicalSymbolForTartarDash2),
+            '🝁' => Ok(AlchemicalSymbols::AlchemicalSymbolForQuickLime),
+            '🝂' => Ok(AlchemicalSymbols::AlchemicalSymbolForBorax),
+            '🝃' => Ok(AlchemicalSymbols::AlchemicalSymbolForBoraxDash2),
+            '🝄' => Ok(AlchemicalSymbols::AlchemicalSymbolForBoraxDash3),
+            '🝅' => Ok(AlchemicalSymbols::AlchemicalSymbolForAlum),
+            '🝆' => Ok(AlchemicalSymbols::AlchemicalSymbolForOil),
+            '🝇' => Ok(AlchemicalSymbols::AlchemicalSymbolForSpirit),
+            '🝈' => Ok(AlchemicalSymbols::AlchemicalSymbolForTincture),
+            '🝉' => Ok(AlchemicalSymbols::AlchemicalSymbolForGum),
+            '🝊' => Ok(AlchemicalSymbols::AlchemicalSymbolForWax),
+            '🝋' => Ok(AlchemicalSymbols::AlchemicalSymbolForPowder),
+            '🝌' => Ok(AlchemicalSymbols::AlchemicalSymbolForCalx),
+            '🝍' => Ok(AlchemicalSymbols::AlchemicalSymbolForTutty),
+            '🝎' => Ok(AlchemicalSymbols::AlchemicalSymbolForCaputMortuum),
+            '🝏' => Ok(AlchemicalSymbols::AlchemicalSymbolForScepterOfJove),
+            '🝐' => Ok(AlchemicalSymbols::AlchemicalSymbolForCaduceus),
+            '🝑' => Ok(AlchemicalSymbols::AlchemicalSymbolForTrident),
+            '🝒' => Ok(AlchemicalSymbols::AlchemicalSymbolForStarredTrident),
+            '🝓' => Ok(AlchemicalSymbols::AlchemicalSymbolForLodestone),
+            '🝔' => Ok(AlchemicalSymbols::AlchemicalSymbolForSoap),
+            '🝕' => Ok(AlchemicalSymbols::AlchemicalSymbolForUrine),
+            '🝖' => Ok(AlchemicalSymbols::AlchemicalSymbolForHorseDung),
+            '🝗' => Ok(AlchemicalSymbols::AlchemicalSymbolForAshes),
+            '🝘' => Ok(AlchemicalSymbols::AlchemicalSymbolForPotAshes),
+            '🝙' => Ok(AlchemicalSymbols::AlchemicalSymbolForBrick),
+            '🝚' => Ok(AlchemicalSymbols::AlchemicalSymbolForPowderedBrick),
+            '🝛' => Ok(AlchemicalSymbols::AlchemicalSymbolForAmalgam),
+            '🝜' => Ok(AlchemicalSymbols::AlchemicalSymbolForStratumSuperStratum),
+            '🝝' => Ok(AlchemicalSymbols::AlchemicalSymbolForStratumSuperStratumDash2),
+            '🝞' => Ok(AlchemicalSymbols::AlchemicalSymbolForSublimation),
+            '🝟' => Ok(AlchemicalSymbols::AlchemicalSymbolForPrecipitate),
+            '🝠' => Ok(AlchemicalSymbols::AlchemicalSymbolForDistill),
+            '🝡' => Ok(AlchemicalSymbols::AlchemicalSymbolForDissolve),
+            '🝢' => Ok(AlchemicalSymbols::AlchemicalSymbolForDissolveDash2),
+            '🝣' => Ok(AlchemicalSymbols::AlchemicalSymbolForPurify),
+            '🝤' => Ok(AlchemicalSymbols::AlchemicalSymbolForPutrefaction),
+            '🝥' => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucible),
+            '🝦' => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucibleDash2),
+            '🝧' => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucibleDash3),
+            '🝨' => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucibleDash4),
+            '🝩' => Ok(AlchemicalSymbols::AlchemicalSymbolForCrucibleDash5),
+            '🝪' => Ok(AlchemicalSymbols::AlchemicalSymbolForAlembic),
+            '🝫' => Ok(AlchemicalSymbols::AlchemicalSymbolForBathOfMary),
+            '🝬' => Ok(AlchemicalSymbols::AlchemicalSymbolForBathOfVapours),
+            '🝭' => Ok(AlchemicalSymbols::AlchemicalSymbolForRetort),
+            '🝮' => Ok(AlchemicalSymbols::AlchemicalSymbolForHour),
+            '🝯' => Ok(AlchemicalSymbols::AlchemicalSymbolForNight),
+            '🝰' => Ok(AlchemicalSymbols::AlchemicalSymbolForDayDashNight),
+            '🝱' => Ok(AlchemicalSymbols::AlchemicalSymbolForMonth),
+            '🝲' => Ok(AlchemicalSymbols::AlchemicalSymbolForHalfDram),
+            '🝳' => Ok(AlchemicalSymbols::AlchemicalSymbolForHalfOunce),
             _ => Err(()),
         }
     }

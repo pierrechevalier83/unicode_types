@@ -1,150 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{b82}: 'ஂ'
-    pub const SIGN_ANUSVARA: char = 'ஂ';
-    /// \u{b83}: 'ஃ'
-    pub const SIGN_VISARGA: char = 'ஃ';
-    /// \u{b85}: 'அ'
-    pub const LETTER_A: char = 'அ';
-    /// \u{b86}: 'ஆ'
-    pub const LETTER_AA: char = 'ஆ';
-    /// \u{b87}: 'இ'
-    pub const LETTER_I: char = 'இ';
-    /// \u{b88}: 'ஈ'
-    pub const LETTER_II: char = 'ஈ';
-    /// \u{b89}: 'உ'
-    pub const LETTER_U: char = 'உ';
-    /// \u{b8a}: 'ஊ'
-    pub const LETTER_UU: char = 'ஊ';
-    /// \u{b8e}: 'எ'
-    pub const LETTER_E: char = 'எ';
-    /// \u{b8f}: 'ஏ'
-    pub const LETTER_EE: char = 'ஏ';
-    /// \u{b90}: 'ஐ'
-    pub const LETTER_AI: char = 'ஐ';
-    /// \u{b92}: 'ஒ'
-    pub const LETTER_O: char = 'ஒ';
-    /// \u{b93}: 'ஓ'
-    pub const LETTER_OO: char = 'ஓ';
-    /// \u{b94}: 'ஔ'
-    pub const LETTER_AU: char = 'ஔ';
-    /// \u{b95}: 'க'
-    pub const LETTER_KA: char = 'க';
-    /// \u{b99}: 'ங'
-    pub const LETTER_NGA: char = 'ங';
-    /// \u{b9a}: 'ச'
-    pub const LETTER_CA: char = 'ச';
-    /// \u{b9c}: 'ஜ'
-    pub const LETTER_JA: char = 'ஜ';
-    /// \u{b9e}: 'ஞ'
-    pub const LETTER_NYA: char = 'ஞ';
-    /// \u{b9f}: 'ட'
-    pub const LETTER_TTA: char = 'ட';
-    /// \u{ba3}: 'ண'
-    pub const LETTER_NNA: char = 'ண';
-    /// \u{ba4}: 'த'
-    pub const LETTER_TA: char = 'த';
-    /// \u{ba8}: 'ந'
-    pub const LETTER_NA: char = 'ந';
-    /// \u{ba9}: 'ன'
-    pub const LETTER_NNNA: char = 'ன';
-    /// \u{baa}: 'ப'
-    pub const LETTER_PA: char = 'ப';
-    /// \u{bae}: 'ம'
-    pub const LETTER_MA: char = 'ம';
-    /// \u{baf}: 'ய'
-    pub const LETTER_YA: char = 'ய';
-    /// \u{bb0}: 'ர'
-    pub const LETTER_RA: char = 'ர';
-    /// \u{bb1}: 'ற'
-    pub const LETTER_RRA: char = 'ற';
-    /// \u{bb2}: 'ல'
-    pub const LETTER_LA: char = 'ல';
-    /// \u{bb3}: 'ள'
-    pub const LETTER_LLA: char = 'ள';
-    /// \u{bb4}: 'ழ'
-    pub const LETTER_LLLA: char = 'ழ';
-    /// \u{bb5}: 'வ'
-    pub const LETTER_VA: char = 'வ';
-    /// \u{bb6}: 'ஶ'
-    pub const LETTER_SHA: char = 'ஶ';
-    /// \u{bb7}: 'ஷ'
-    pub const LETTER_SSA: char = 'ஷ';
-    /// \u{bb8}: 'ஸ'
-    pub const LETTER_SA: char = 'ஸ';
-    /// \u{bb9}: 'ஹ'
-    pub const LETTER_HA: char = 'ஹ';
-    /// \u{bbe}: 'ா'
-    pub const VOWEL_SIGN_AA: char = 'ா';
-    /// \u{bbf}: 'ி'
-    pub const VOWEL_SIGN_I: char = 'ி';
-    /// \u{bc0}: 'ீ'
-    pub const VOWEL_SIGN_II: char = 'ீ';
-    /// \u{bc1}: 'ு'
-    pub const VOWEL_SIGN_U: char = 'ு';
-    /// \u{bc2}: 'ூ'
-    pub const VOWEL_SIGN_UU: char = 'ூ';
-    /// \u{bc6}: 'ெ'
-    pub const VOWEL_SIGN_E: char = 'ெ';
-    /// \u{bc7}: 'ே'
-    pub const VOWEL_SIGN_EE: char = 'ே';
-    /// \u{bc8}: 'ை'
-    pub const VOWEL_SIGN_AI: char = 'ை';
-    /// \u{bca}: 'ொ'
-    pub const VOWEL_SIGN_O: char = 'ொ';
-    /// \u{bcb}: 'ோ'
-    pub const VOWEL_SIGN_OO: char = 'ோ';
-    /// \u{bcc}: 'ௌ'
-    pub const VOWEL_SIGN_AU: char = 'ௌ';
-    /// \u{bcd}: '்'
-    pub const SIGN_VIRAMA: char = '்';
-    /// \u{bd0}: 'ௐ'
-    pub const OM: char = 'ௐ';
-    /// \u{bd7}: 'ௗ'
-    pub const AU_LENGTH_MARK: char = 'ௗ';
-    /// \u{be6}: '௦'
-    pub const DIGIT_ZERO: char = '௦';
-    /// \u{be7}: '௧'
-    pub const DIGIT_ONE: char = '௧';
-    /// \u{be8}: '௨'
-    pub const DIGIT_TWO: char = '௨';
-    /// \u{be9}: '௩'
-    pub const DIGIT_THREE: char = '௩';
-    /// \u{bea}: '௪'
-    pub const DIGIT_FOUR: char = '௪';
-    /// \u{beb}: '௫'
-    pub const DIGIT_FIVE: char = '௫';
-    /// \u{bec}: '௬'
-    pub const DIGIT_SIX: char = '௬';
-    /// \u{bed}: '௭'
-    pub const DIGIT_SEVEN: char = '௭';
-    /// \u{bee}: '௮'
-    pub const DIGIT_EIGHT: char = '௮';
-    /// \u{bef}: '௯'
-    pub const DIGIT_NINE: char = '௯';
-    /// \u{bf0}: '௰'
-    pub const NUMBER_TEN: char = '௰';
-    /// \u{bf1}: '௱'
-    pub const NUMBER_ONE_HUNDRED: char = '௱';
-    /// \u{bf2}: '௲'
-    pub const NUMBER_ONE_THOUSAND: char = '௲';
-    /// \u{bf3}: '௳'
-    pub const DAY_SIGN: char = '௳';
-    /// \u{bf4}: '௴'
-    pub const MONTH_SIGN: char = '௴';
-    /// \u{bf5}: '௵'
-    pub const YEAR_SIGN: char = '௵';
-    /// \u{bf6}: '௶'
-    pub const DEBIT_SIGN: char = '௶';
-    /// \u{bf7}: '௷'
-    pub const CREDIT_SIGN: char = '௷';
-    /// \u{bf8}: '௸'
-    pub const AS_ABOVE_SIGN: char = '௸';
-    /// \u{bf9}: '௹'
-    pub const RUPEE_SIGN: char = '௹';
-    /// \u{bfa}: '௺'
-    pub const NUMBER_SIGN: char = '௺';
-}
 
 /// An enum to represent all characters in the Tamil block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -297,80 +150,79 @@ pub enum Tamil {
 
 impl Into<char> for Tamil {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Tamil::SignAnusvara => SIGN_ANUSVARA,
-            Tamil::SignVisarga => SIGN_VISARGA,
-            Tamil::LetterA => LETTER_A,
-            Tamil::LetterAa => LETTER_AA,
-            Tamil::LetterI => LETTER_I,
-            Tamil::LetterIi => LETTER_II,
-            Tamil::LetterU => LETTER_U,
-            Tamil::LetterUu => LETTER_UU,
-            Tamil::LetterE => LETTER_E,
-            Tamil::LetterEe => LETTER_EE,
-            Tamil::LetterAi => LETTER_AI,
-            Tamil::LetterO => LETTER_O,
-            Tamil::LetterOo => LETTER_OO,
-            Tamil::LetterAu => LETTER_AU,
-            Tamil::LetterKa => LETTER_KA,
-            Tamil::LetterNga => LETTER_NGA,
-            Tamil::LetterCa => LETTER_CA,
-            Tamil::LetterJa => LETTER_JA,
-            Tamil::LetterNya => LETTER_NYA,
-            Tamil::LetterTta => LETTER_TTA,
-            Tamil::LetterNna => LETTER_NNA,
-            Tamil::LetterTa => LETTER_TA,
-            Tamil::LetterNa => LETTER_NA,
-            Tamil::LetterNnna => LETTER_NNNA,
-            Tamil::LetterPa => LETTER_PA,
-            Tamil::LetterMa => LETTER_MA,
-            Tamil::LetterYa => LETTER_YA,
-            Tamil::LetterRa => LETTER_RA,
-            Tamil::LetterRra => LETTER_RRA,
-            Tamil::LetterLa => LETTER_LA,
-            Tamil::LetterLla => LETTER_LLA,
-            Tamil::LetterLlla => LETTER_LLLA,
-            Tamil::LetterVa => LETTER_VA,
-            Tamil::LetterSha => LETTER_SHA,
-            Tamil::LetterSsa => LETTER_SSA,
-            Tamil::LetterSa => LETTER_SA,
-            Tamil::LetterHa => LETTER_HA,
-            Tamil::VowelSignAa => VOWEL_SIGN_AA,
-            Tamil::VowelSignI => VOWEL_SIGN_I,
-            Tamil::VowelSignIi => VOWEL_SIGN_II,
-            Tamil::VowelSignU => VOWEL_SIGN_U,
-            Tamil::VowelSignUu => VOWEL_SIGN_UU,
-            Tamil::VowelSignE => VOWEL_SIGN_E,
-            Tamil::VowelSignEe => VOWEL_SIGN_EE,
-            Tamil::VowelSignAi => VOWEL_SIGN_AI,
-            Tamil::VowelSignO => VOWEL_SIGN_O,
-            Tamil::VowelSignOo => VOWEL_SIGN_OO,
-            Tamil::VowelSignAu => VOWEL_SIGN_AU,
-            Tamil::SignVirama => SIGN_VIRAMA,
-            Tamil::Om => OM,
-            Tamil::AuLengthMark => AU_LENGTH_MARK,
-            Tamil::DigitZero => DIGIT_ZERO,
-            Tamil::DigitOne => DIGIT_ONE,
-            Tamil::DigitTwo => DIGIT_TWO,
-            Tamil::DigitThree => DIGIT_THREE,
-            Tamil::DigitFour => DIGIT_FOUR,
-            Tamil::DigitFive => DIGIT_FIVE,
-            Tamil::DigitSix => DIGIT_SIX,
-            Tamil::DigitSeven => DIGIT_SEVEN,
-            Tamil::DigitEight => DIGIT_EIGHT,
-            Tamil::DigitNine => DIGIT_NINE,
-            Tamil::NumberTen => NUMBER_TEN,
-            Tamil::NumberOneHundred => NUMBER_ONE_HUNDRED,
-            Tamil::NumberOneThousand => NUMBER_ONE_THOUSAND,
-            Tamil::DaySign => DAY_SIGN,
-            Tamil::MonthSign => MONTH_SIGN,
-            Tamil::YearSign => YEAR_SIGN,
-            Tamil::DebitSign => DEBIT_SIGN,
-            Tamil::CreditSign => CREDIT_SIGN,
-            Tamil::AsAboveSign => AS_ABOVE_SIGN,
-            Tamil::RupeeSign => RUPEE_SIGN,
-            Tamil::NumberSign => NUMBER_SIGN,
+            Tamil::SignAnusvara => 'ஂ',
+            Tamil::SignVisarga => 'ஃ',
+            Tamil::LetterA => 'அ',
+            Tamil::LetterAa => 'ஆ',
+            Tamil::LetterI => 'இ',
+            Tamil::LetterIi => 'ஈ',
+            Tamil::LetterU => 'உ',
+            Tamil::LetterUu => 'ஊ',
+            Tamil::LetterE => 'எ',
+            Tamil::LetterEe => 'ஏ',
+            Tamil::LetterAi => 'ஐ',
+            Tamil::LetterO => 'ஒ',
+            Tamil::LetterOo => 'ஓ',
+            Tamil::LetterAu => 'ஔ',
+            Tamil::LetterKa => 'க',
+            Tamil::LetterNga => 'ங',
+            Tamil::LetterCa => 'ச',
+            Tamil::LetterJa => 'ஜ',
+            Tamil::LetterNya => 'ஞ',
+            Tamil::LetterTta => 'ட',
+            Tamil::LetterNna => 'ண',
+            Tamil::LetterTa => 'த',
+            Tamil::LetterNa => 'ந',
+            Tamil::LetterNnna => 'ன',
+            Tamil::LetterPa => 'ப',
+            Tamil::LetterMa => 'ம',
+            Tamil::LetterYa => 'ய',
+            Tamil::LetterRa => 'ர',
+            Tamil::LetterRra => 'ற',
+            Tamil::LetterLa => 'ல',
+            Tamil::LetterLla => 'ள',
+            Tamil::LetterLlla => 'ழ',
+            Tamil::LetterVa => 'வ',
+            Tamil::LetterSha => 'ஶ',
+            Tamil::LetterSsa => 'ஷ',
+            Tamil::LetterSa => 'ஸ',
+            Tamil::LetterHa => 'ஹ',
+            Tamil::VowelSignAa => 'ா',
+            Tamil::VowelSignI => 'ி',
+            Tamil::VowelSignIi => 'ீ',
+            Tamil::VowelSignU => 'ு',
+            Tamil::VowelSignUu => 'ூ',
+            Tamil::VowelSignE => 'ெ',
+            Tamil::VowelSignEe => 'ே',
+            Tamil::VowelSignAi => 'ை',
+            Tamil::VowelSignO => 'ொ',
+            Tamil::VowelSignOo => 'ோ',
+            Tamil::VowelSignAu => 'ௌ',
+            Tamil::SignVirama => '்',
+            Tamil::Om => 'ௐ',
+            Tamil::AuLengthMark => 'ௗ',
+            Tamil::DigitZero => '௦',
+            Tamil::DigitOne => '௧',
+            Tamil::DigitTwo => '௨',
+            Tamil::DigitThree => '௩',
+            Tamil::DigitFour => '௪',
+            Tamil::DigitFive => '௫',
+            Tamil::DigitSix => '௬',
+            Tamil::DigitSeven => '௭',
+            Tamil::DigitEight => '௮',
+            Tamil::DigitNine => '௯',
+            Tamil::NumberTen => '௰',
+            Tamil::NumberOneHundred => '௱',
+            Tamil::NumberOneThousand => '௲',
+            Tamil::DaySign => '௳',
+            Tamil::MonthSign => '௴',
+            Tamil::YearSign => '௵',
+            Tamil::DebitSign => '௶',
+            Tamil::CreditSign => '௷',
+            Tamil::AsAboveSign => '௸',
+            Tamil::RupeeSign => '௹',
+            Tamil::NumberSign => '௺',
         }
     }
 }
@@ -378,80 +230,79 @@ impl Into<char> for Tamil {
 impl std::convert::TryFrom<char> for Tamil {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_ANUSVARA => Ok(Tamil::SignAnusvara),
-            SIGN_VISARGA => Ok(Tamil::SignVisarga),
-            LETTER_A => Ok(Tamil::LetterA),
-            LETTER_AA => Ok(Tamil::LetterAa),
-            LETTER_I => Ok(Tamil::LetterI),
-            LETTER_II => Ok(Tamil::LetterIi),
-            LETTER_U => Ok(Tamil::LetterU),
-            LETTER_UU => Ok(Tamil::LetterUu),
-            LETTER_E => Ok(Tamil::LetterE),
-            LETTER_EE => Ok(Tamil::LetterEe),
-            LETTER_AI => Ok(Tamil::LetterAi),
-            LETTER_O => Ok(Tamil::LetterO),
-            LETTER_OO => Ok(Tamil::LetterOo),
-            LETTER_AU => Ok(Tamil::LetterAu),
-            LETTER_KA => Ok(Tamil::LetterKa),
-            LETTER_NGA => Ok(Tamil::LetterNga),
-            LETTER_CA => Ok(Tamil::LetterCa),
-            LETTER_JA => Ok(Tamil::LetterJa),
-            LETTER_NYA => Ok(Tamil::LetterNya),
-            LETTER_TTA => Ok(Tamil::LetterTta),
-            LETTER_NNA => Ok(Tamil::LetterNna),
-            LETTER_TA => Ok(Tamil::LetterTa),
-            LETTER_NA => Ok(Tamil::LetterNa),
-            LETTER_NNNA => Ok(Tamil::LetterNnna),
-            LETTER_PA => Ok(Tamil::LetterPa),
-            LETTER_MA => Ok(Tamil::LetterMa),
-            LETTER_YA => Ok(Tamil::LetterYa),
-            LETTER_RA => Ok(Tamil::LetterRa),
-            LETTER_RRA => Ok(Tamil::LetterRra),
-            LETTER_LA => Ok(Tamil::LetterLa),
-            LETTER_LLA => Ok(Tamil::LetterLla),
-            LETTER_LLLA => Ok(Tamil::LetterLlla),
-            LETTER_VA => Ok(Tamil::LetterVa),
-            LETTER_SHA => Ok(Tamil::LetterSha),
-            LETTER_SSA => Ok(Tamil::LetterSsa),
-            LETTER_SA => Ok(Tamil::LetterSa),
-            LETTER_HA => Ok(Tamil::LetterHa),
-            VOWEL_SIGN_AA => Ok(Tamil::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Tamil::VowelSignI),
-            VOWEL_SIGN_II => Ok(Tamil::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Tamil::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Tamil::VowelSignUu),
-            VOWEL_SIGN_E => Ok(Tamil::VowelSignE),
-            VOWEL_SIGN_EE => Ok(Tamil::VowelSignEe),
-            VOWEL_SIGN_AI => Ok(Tamil::VowelSignAi),
-            VOWEL_SIGN_O => Ok(Tamil::VowelSignO),
-            VOWEL_SIGN_OO => Ok(Tamil::VowelSignOo),
-            VOWEL_SIGN_AU => Ok(Tamil::VowelSignAu),
-            SIGN_VIRAMA => Ok(Tamil::SignVirama),
-            OM => Ok(Tamil::Om),
-            AU_LENGTH_MARK => Ok(Tamil::AuLengthMark),
-            DIGIT_ZERO => Ok(Tamil::DigitZero),
-            DIGIT_ONE => Ok(Tamil::DigitOne),
-            DIGIT_TWO => Ok(Tamil::DigitTwo),
-            DIGIT_THREE => Ok(Tamil::DigitThree),
-            DIGIT_FOUR => Ok(Tamil::DigitFour),
-            DIGIT_FIVE => Ok(Tamil::DigitFive),
-            DIGIT_SIX => Ok(Tamil::DigitSix),
-            DIGIT_SEVEN => Ok(Tamil::DigitSeven),
-            DIGIT_EIGHT => Ok(Tamil::DigitEight),
-            DIGIT_NINE => Ok(Tamil::DigitNine),
-            NUMBER_TEN => Ok(Tamil::NumberTen),
-            NUMBER_ONE_HUNDRED => Ok(Tamil::NumberOneHundred),
-            NUMBER_ONE_THOUSAND => Ok(Tamil::NumberOneThousand),
-            DAY_SIGN => Ok(Tamil::DaySign),
-            MONTH_SIGN => Ok(Tamil::MonthSign),
-            YEAR_SIGN => Ok(Tamil::YearSign),
-            DEBIT_SIGN => Ok(Tamil::DebitSign),
-            CREDIT_SIGN => Ok(Tamil::CreditSign),
-            AS_ABOVE_SIGN => Ok(Tamil::AsAboveSign),
-            RUPEE_SIGN => Ok(Tamil::RupeeSign),
-            NUMBER_SIGN => Ok(Tamil::NumberSign),
+            'ஂ' => Ok(Tamil::SignAnusvara),
+            'ஃ' => Ok(Tamil::SignVisarga),
+            'அ' => Ok(Tamil::LetterA),
+            'ஆ' => Ok(Tamil::LetterAa),
+            'இ' => Ok(Tamil::LetterI),
+            'ஈ' => Ok(Tamil::LetterIi),
+            'உ' => Ok(Tamil::LetterU),
+            'ஊ' => Ok(Tamil::LetterUu),
+            'எ' => Ok(Tamil::LetterE),
+            'ஏ' => Ok(Tamil::LetterEe),
+            'ஐ' => Ok(Tamil::LetterAi),
+            'ஒ' => Ok(Tamil::LetterO),
+            'ஓ' => Ok(Tamil::LetterOo),
+            'ஔ' => Ok(Tamil::LetterAu),
+            'க' => Ok(Tamil::LetterKa),
+            'ங' => Ok(Tamil::LetterNga),
+            'ச' => Ok(Tamil::LetterCa),
+            'ஜ' => Ok(Tamil::LetterJa),
+            'ஞ' => Ok(Tamil::LetterNya),
+            'ட' => Ok(Tamil::LetterTta),
+            'ண' => Ok(Tamil::LetterNna),
+            'த' => Ok(Tamil::LetterTa),
+            'ந' => Ok(Tamil::LetterNa),
+            'ன' => Ok(Tamil::LetterNnna),
+            'ப' => Ok(Tamil::LetterPa),
+            'ம' => Ok(Tamil::LetterMa),
+            'ய' => Ok(Tamil::LetterYa),
+            'ர' => Ok(Tamil::LetterRa),
+            'ற' => Ok(Tamil::LetterRra),
+            'ல' => Ok(Tamil::LetterLa),
+            'ள' => Ok(Tamil::LetterLla),
+            'ழ' => Ok(Tamil::LetterLlla),
+            'வ' => Ok(Tamil::LetterVa),
+            'ஶ' => Ok(Tamil::LetterSha),
+            'ஷ' => Ok(Tamil::LetterSsa),
+            'ஸ' => Ok(Tamil::LetterSa),
+            'ஹ' => Ok(Tamil::LetterHa),
+            'ா' => Ok(Tamil::VowelSignAa),
+            'ி' => Ok(Tamil::VowelSignI),
+            'ீ' => Ok(Tamil::VowelSignIi),
+            'ு' => Ok(Tamil::VowelSignU),
+            'ூ' => Ok(Tamil::VowelSignUu),
+            'ெ' => Ok(Tamil::VowelSignE),
+            'ே' => Ok(Tamil::VowelSignEe),
+            'ை' => Ok(Tamil::VowelSignAi),
+            'ொ' => Ok(Tamil::VowelSignO),
+            'ோ' => Ok(Tamil::VowelSignOo),
+            'ௌ' => Ok(Tamil::VowelSignAu),
+            '்' => Ok(Tamil::SignVirama),
+            'ௐ' => Ok(Tamil::Om),
+            'ௗ' => Ok(Tamil::AuLengthMark),
+            '௦' => Ok(Tamil::DigitZero),
+            '௧' => Ok(Tamil::DigitOne),
+            '௨' => Ok(Tamil::DigitTwo),
+            '௩' => Ok(Tamil::DigitThree),
+            '௪' => Ok(Tamil::DigitFour),
+            '௫' => Ok(Tamil::DigitFive),
+            '௬' => Ok(Tamil::DigitSix),
+            '௭' => Ok(Tamil::DigitSeven),
+            '௮' => Ok(Tamil::DigitEight),
+            '௯' => Ok(Tamil::DigitNine),
+            '௰' => Ok(Tamil::NumberTen),
+            '௱' => Ok(Tamil::NumberOneHundred),
+            '௲' => Ok(Tamil::NumberOneThousand),
+            '௳' => Ok(Tamil::DaySign),
+            '௴' => Ok(Tamil::MonthSign),
+            '௵' => Ok(Tamil::YearSign),
+            '௶' => Ok(Tamil::DebitSign),
+            '௷' => Ok(Tamil::CreditSign),
+            '௸' => Ok(Tamil::AsAboveSign),
+            '௹' => Ok(Tamil::RupeeSign),
+            '௺' => Ok(Tamil::NumberSign),
             _ => Err(()),
         }
     }

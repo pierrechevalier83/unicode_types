@@ -1,120 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11ac0}: '𑫀'
-    pub const LETTER_PA: char = '𑫀';
-    /// \u{11ac1}: '𑫁'
-    pub const LETTER_KA: char = '𑫁';
-    /// \u{11ac2}: '𑫂'
-    pub const LETTER_LA: char = '𑫂';
-    /// \u{11ac3}: '𑫃'
-    pub const LETTER_MA: char = '𑫃';
-    /// \u{11ac4}: '𑫄'
-    pub const LETTER_DA: char = '𑫄';
-    /// \u{11ac5}: '𑫅'
-    pub const LETTER_ZA: char = '𑫅';
-    /// \u{11ac6}: '𑫆'
-    pub const LETTER_VA: char = '𑫆';
-    /// \u{11ac7}: '𑫇'
-    pub const LETTER_NGA: char = '𑫇';
-    /// \u{11ac8}: '𑫈'
-    pub const LETTER_HA: char = '𑫈';
-    /// \u{11ac9}: '𑫉'
-    pub const LETTER_GA: char = '𑫉';
-    /// \u{11aca}: '𑫊'
-    pub const LETTER_KHA: char = '𑫊';
-    /// \u{11acb}: '𑫋'
-    pub const LETTER_SA: char = '𑫋';
-    /// \u{11acc}: '𑫌'
-    pub const LETTER_BA: char = '𑫌';
-    /// \u{11acd}: '𑫍'
-    pub const LETTER_CA: char = '𑫍';
-    /// \u{11ace}: '𑫎'
-    pub const LETTER_TA: char = '𑫎';
-    /// \u{11acf}: '𑫏'
-    pub const LETTER_THA: char = '𑫏';
-    /// \u{11ad0}: '𑫐'
-    pub const LETTER_NA: char = '𑫐';
-    /// \u{11ad1}: '𑫑'
-    pub const LETTER_PHA: char = '𑫑';
-    /// \u{11ad2}: '𑫒'
-    pub const LETTER_RA: char = '𑫒';
-    /// \u{11ad3}: '𑫓'
-    pub const LETTER_FA: char = '𑫓';
-    /// \u{11ad4}: '𑫔'
-    pub const LETTER_CHA: char = '𑫔';
-    /// \u{11ad5}: '𑫕'
-    pub const LETTER_A: char = '𑫕';
-    /// \u{11ad6}: '𑫖'
-    pub const LETTER_E: char = '𑫖';
-    /// \u{11ad7}: '𑫗'
-    pub const LETTER_I: char = '𑫗';
-    /// \u{11ad8}: '𑫘'
-    pub const LETTER_O: char = '𑫘';
-    /// \u{11ad9}: '𑫙'
-    pub const LETTER_U: char = '𑫙';
-    /// \u{11ada}: '𑫚'
-    pub const LETTER_UA: char = '𑫚';
-    /// \u{11adb}: '𑫛'
-    pub const LETTER_IA: char = '𑫛';
-    /// \u{11adc}: '𑫜'
-    pub const LETTER_FINAL_P: char = '𑫜';
-    /// \u{11add}: '𑫝'
-    pub const LETTER_FINAL_K: char = '𑫝';
-    /// \u{11ade}: '𑫞'
-    pub const LETTER_FINAL_T: char = '𑫞';
-    /// \u{11adf}: '𑫟'
-    pub const LETTER_FINAL_M: char = '𑫟';
-    /// \u{11ae0}: '𑫠'
-    pub const LETTER_FINAL_N: char = '𑫠';
-    /// \u{11ae1}: '𑫡'
-    pub const LETTER_FINAL_L: char = '𑫡';
-    /// \u{11ae2}: '𑫢'
-    pub const LETTER_FINAL_W: char = '𑫢';
-    /// \u{11ae3}: '𑫣'
-    pub const LETTER_FINAL_NG: char = '𑫣';
-    /// \u{11ae4}: '𑫤'
-    pub const LETTER_FINAL_Y: char = '𑫤';
-    /// \u{11ae5}: '𑫥'
-    pub const RISING_TONE_LONG: char = '𑫥';
-    /// \u{11ae6}: '𑫦'
-    pub const RISING_TONE: char = '𑫦';
-    /// \u{11ae7}: '𑫧'
-    pub const SANDHI_GLOTTAL_STOP: char = '𑫧';
-    /// \u{11ae8}: '𑫨'
-    pub const RISING_TONE_LONG_FINAL: char = '𑫨';
-    /// \u{11ae9}: '𑫩'
-    pub const RISING_TONE_FINAL: char = '𑫩';
-    /// \u{11aea}: '𑫪'
-    pub const SANDHI_GLOTTAL_STOP_FINAL: char = '𑫪';
-    /// \u{11aeb}: '𑫫'
-    pub const SANDHI_TONE_LONG: char = '𑫫';
-    /// \u{11aec}: '𑫬'
-    pub const SANDHI_TONE: char = '𑫬';
-    /// \u{11aed}: '𑫭'
-    pub const SANDHI_TONE_LONG_FINAL: char = '𑫭';
-    /// \u{11aee}: '𑫮'
-    pub const SANDHI_TONE_FINAL: char = '𑫮';
-    /// \u{11aef}: '𑫯'
-    pub const MID_DASH_LEVEL_TONE: char = '𑫯';
-    /// \u{11af0}: '𑫰'
-    pub const GLOTTAL_STOP_VARIANT: char = '𑫰';
-    /// \u{11af1}: '𑫱'
-    pub const MID_DASH_LEVEL_TONE_LONG_FINAL: char = '𑫱';
-    /// \u{11af2}: '𑫲'
-    pub const MID_DASH_LEVEL_TONE_FINAL: char = '𑫲';
-    /// \u{11af3}: '𑫳'
-    pub const LOW_DASH_FALLING_TONE_LONG: char = '𑫳';
-    /// \u{11af4}: '𑫴'
-    pub const LOW_DASH_FALLING_TONE: char = '𑫴';
-    /// \u{11af5}: '𑫵'
-    pub const GLOTTAL_STOP: char = '𑫵';
-    /// \u{11af6}: '𑫶'
-    pub const LOW_DASH_FALLING_TONE_LONG_FINAL: char = '𑫶';
-    /// \u{11af7}: '𑫷'
-    pub const LOW_DASH_FALLING_TONE_FINAL: char = '𑫷';
-    /// \u{11af8}: '𑫸'
-    pub const GLOTTAL_STOP_FINAL: char = '𑫸';
-}
 
 /// An enum to represent all characters in the PauCinHau block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -237,65 +120,64 @@ pub enum PauCinHau {
 
 impl Into<char> for PauCinHau {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            PauCinHau::LetterPa => LETTER_PA,
-            PauCinHau::LetterKa => LETTER_KA,
-            PauCinHau::LetterLa => LETTER_LA,
-            PauCinHau::LetterMa => LETTER_MA,
-            PauCinHau::LetterDa => LETTER_DA,
-            PauCinHau::LetterZa => LETTER_ZA,
-            PauCinHau::LetterVa => LETTER_VA,
-            PauCinHau::LetterNga => LETTER_NGA,
-            PauCinHau::LetterHa => LETTER_HA,
-            PauCinHau::LetterGa => LETTER_GA,
-            PauCinHau::LetterKha => LETTER_KHA,
-            PauCinHau::LetterSa => LETTER_SA,
-            PauCinHau::LetterBa => LETTER_BA,
-            PauCinHau::LetterCa => LETTER_CA,
-            PauCinHau::LetterTa => LETTER_TA,
-            PauCinHau::LetterTha => LETTER_THA,
-            PauCinHau::LetterNa => LETTER_NA,
-            PauCinHau::LetterPha => LETTER_PHA,
-            PauCinHau::LetterRa => LETTER_RA,
-            PauCinHau::LetterFa => LETTER_FA,
-            PauCinHau::LetterCha => LETTER_CHA,
-            PauCinHau::LetterA => LETTER_A,
-            PauCinHau::LetterE => LETTER_E,
-            PauCinHau::LetterI => LETTER_I,
-            PauCinHau::LetterO => LETTER_O,
-            PauCinHau::LetterU => LETTER_U,
-            PauCinHau::LetterUa => LETTER_UA,
-            PauCinHau::LetterIa => LETTER_IA,
-            PauCinHau::LetterFinalP => LETTER_FINAL_P,
-            PauCinHau::LetterFinalK => LETTER_FINAL_K,
-            PauCinHau::LetterFinalT => LETTER_FINAL_T,
-            PauCinHau::LetterFinalM => LETTER_FINAL_M,
-            PauCinHau::LetterFinalN => LETTER_FINAL_N,
-            PauCinHau::LetterFinalL => LETTER_FINAL_L,
-            PauCinHau::LetterFinalW => LETTER_FINAL_W,
-            PauCinHau::LetterFinalNg => LETTER_FINAL_NG,
-            PauCinHau::LetterFinalY => LETTER_FINAL_Y,
-            PauCinHau::RisingToneLong => RISING_TONE_LONG,
-            PauCinHau::RisingTone => RISING_TONE,
-            PauCinHau::SandhiGlottalStop => SANDHI_GLOTTAL_STOP,
-            PauCinHau::RisingToneLongFinal => RISING_TONE_LONG_FINAL,
-            PauCinHau::RisingToneFinal => RISING_TONE_FINAL,
-            PauCinHau::SandhiGlottalStopFinal => SANDHI_GLOTTAL_STOP_FINAL,
-            PauCinHau::SandhiToneLong => SANDHI_TONE_LONG,
-            PauCinHau::SandhiTone => SANDHI_TONE,
-            PauCinHau::SandhiToneLongFinal => SANDHI_TONE_LONG_FINAL,
-            PauCinHau::SandhiToneFinal => SANDHI_TONE_FINAL,
-            PauCinHau::MidDashLevelTone => MID_DASH_LEVEL_TONE,
-            PauCinHau::GlottalStopVariant => GLOTTAL_STOP_VARIANT,
-            PauCinHau::MidDashLevelToneLongFinal => MID_DASH_LEVEL_TONE_LONG_FINAL,
-            PauCinHau::MidDashLevelToneFinal => MID_DASH_LEVEL_TONE_FINAL,
-            PauCinHau::LowDashFallingToneLong => LOW_DASH_FALLING_TONE_LONG,
-            PauCinHau::LowDashFallingTone => LOW_DASH_FALLING_TONE,
-            PauCinHau::GlottalStop => GLOTTAL_STOP,
-            PauCinHau::LowDashFallingToneLongFinal => LOW_DASH_FALLING_TONE_LONG_FINAL,
-            PauCinHau::LowDashFallingToneFinal => LOW_DASH_FALLING_TONE_FINAL,
-            PauCinHau::GlottalStopFinal => GLOTTAL_STOP_FINAL,
+            PauCinHau::LetterPa => '𑫀',
+            PauCinHau::LetterKa => '𑫁',
+            PauCinHau::LetterLa => '𑫂',
+            PauCinHau::LetterMa => '𑫃',
+            PauCinHau::LetterDa => '𑫄',
+            PauCinHau::LetterZa => '𑫅',
+            PauCinHau::LetterVa => '𑫆',
+            PauCinHau::LetterNga => '𑫇',
+            PauCinHau::LetterHa => '𑫈',
+            PauCinHau::LetterGa => '𑫉',
+            PauCinHau::LetterKha => '𑫊',
+            PauCinHau::LetterSa => '𑫋',
+            PauCinHau::LetterBa => '𑫌',
+            PauCinHau::LetterCa => '𑫍',
+            PauCinHau::LetterTa => '𑫎',
+            PauCinHau::LetterTha => '𑫏',
+            PauCinHau::LetterNa => '𑫐',
+            PauCinHau::LetterPha => '𑫑',
+            PauCinHau::LetterRa => '𑫒',
+            PauCinHau::LetterFa => '𑫓',
+            PauCinHau::LetterCha => '𑫔',
+            PauCinHau::LetterA => '𑫕',
+            PauCinHau::LetterE => '𑫖',
+            PauCinHau::LetterI => '𑫗',
+            PauCinHau::LetterO => '𑫘',
+            PauCinHau::LetterU => '𑫙',
+            PauCinHau::LetterUa => '𑫚',
+            PauCinHau::LetterIa => '𑫛',
+            PauCinHau::LetterFinalP => '𑫜',
+            PauCinHau::LetterFinalK => '𑫝',
+            PauCinHau::LetterFinalT => '𑫞',
+            PauCinHau::LetterFinalM => '𑫟',
+            PauCinHau::LetterFinalN => '𑫠',
+            PauCinHau::LetterFinalL => '𑫡',
+            PauCinHau::LetterFinalW => '𑫢',
+            PauCinHau::LetterFinalNg => '𑫣',
+            PauCinHau::LetterFinalY => '𑫤',
+            PauCinHau::RisingToneLong => '𑫥',
+            PauCinHau::RisingTone => '𑫦',
+            PauCinHau::SandhiGlottalStop => '𑫧',
+            PauCinHau::RisingToneLongFinal => '𑫨',
+            PauCinHau::RisingToneFinal => '𑫩',
+            PauCinHau::SandhiGlottalStopFinal => '𑫪',
+            PauCinHau::SandhiToneLong => '𑫫',
+            PauCinHau::SandhiTone => '𑫬',
+            PauCinHau::SandhiToneLongFinal => '𑫭',
+            PauCinHau::SandhiToneFinal => '𑫮',
+            PauCinHau::MidDashLevelTone => '𑫯',
+            PauCinHau::GlottalStopVariant => '𑫰',
+            PauCinHau::MidDashLevelToneLongFinal => '𑫱',
+            PauCinHau::MidDashLevelToneFinal => '𑫲',
+            PauCinHau::LowDashFallingToneLong => '𑫳',
+            PauCinHau::LowDashFallingTone => '𑫴',
+            PauCinHau::GlottalStop => '𑫵',
+            PauCinHau::LowDashFallingToneLongFinal => '𑫶',
+            PauCinHau::LowDashFallingToneFinal => '𑫷',
+            PauCinHau::GlottalStopFinal => '𑫸',
         }
     }
 }
@@ -303,65 +185,64 @@ impl Into<char> for PauCinHau {
 impl std::convert::TryFrom<char> for PauCinHau {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_PA => Ok(PauCinHau::LetterPa),
-            LETTER_KA => Ok(PauCinHau::LetterKa),
-            LETTER_LA => Ok(PauCinHau::LetterLa),
-            LETTER_MA => Ok(PauCinHau::LetterMa),
-            LETTER_DA => Ok(PauCinHau::LetterDa),
-            LETTER_ZA => Ok(PauCinHau::LetterZa),
-            LETTER_VA => Ok(PauCinHau::LetterVa),
-            LETTER_NGA => Ok(PauCinHau::LetterNga),
-            LETTER_HA => Ok(PauCinHau::LetterHa),
-            LETTER_GA => Ok(PauCinHau::LetterGa),
-            LETTER_KHA => Ok(PauCinHau::LetterKha),
-            LETTER_SA => Ok(PauCinHau::LetterSa),
-            LETTER_BA => Ok(PauCinHau::LetterBa),
-            LETTER_CA => Ok(PauCinHau::LetterCa),
-            LETTER_TA => Ok(PauCinHau::LetterTa),
-            LETTER_THA => Ok(PauCinHau::LetterTha),
-            LETTER_NA => Ok(PauCinHau::LetterNa),
-            LETTER_PHA => Ok(PauCinHau::LetterPha),
-            LETTER_RA => Ok(PauCinHau::LetterRa),
-            LETTER_FA => Ok(PauCinHau::LetterFa),
-            LETTER_CHA => Ok(PauCinHau::LetterCha),
-            LETTER_A => Ok(PauCinHau::LetterA),
-            LETTER_E => Ok(PauCinHau::LetterE),
-            LETTER_I => Ok(PauCinHau::LetterI),
-            LETTER_O => Ok(PauCinHau::LetterO),
-            LETTER_U => Ok(PauCinHau::LetterU),
-            LETTER_UA => Ok(PauCinHau::LetterUa),
-            LETTER_IA => Ok(PauCinHau::LetterIa),
-            LETTER_FINAL_P => Ok(PauCinHau::LetterFinalP),
-            LETTER_FINAL_K => Ok(PauCinHau::LetterFinalK),
-            LETTER_FINAL_T => Ok(PauCinHau::LetterFinalT),
-            LETTER_FINAL_M => Ok(PauCinHau::LetterFinalM),
-            LETTER_FINAL_N => Ok(PauCinHau::LetterFinalN),
-            LETTER_FINAL_L => Ok(PauCinHau::LetterFinalL),
-            LETTER_FINAL_W => Ok(PauCinHau::LetterFinalW),
-            LETTER_FINAL_NG => Ok(PauCinHau::LetterFinalNg),
-            LETTER_FINAL_Y => Ok(PauCinHau::LetterFinalY),
-            RISING_TONE_LONG => Ok(PauCinHau::RisingToneLong),
-            RISING_TONE => Ok(PauCinHau::RisingTone),
-            SANDHI_GLOTTAL_STOP => Ok(PauCinHau::SandhiGlottalStop),
-            RISING_TONE_LONG_FINAL => Ok(PauCinHau::RisingToneLongFinal),
-            RISING_TONE_FINAL => Ok(PauCinHau::RisingToneFinal),
-            SANDHI_GLOTTAL_STOP_FINAL => Ok(PauCinHau::SandhiGlottalStopFinal),
-            SANDHI_TONE_LONG => Ok(PauCinHau::SandhiToneLong),
-            SANDHI_TONE => Ok(PauCinHau::SandhiTone),
-            SANDHI_TONE_LONG_FINAL => Ok(PauCinHau::SandhiToneLongFinal),
-            SANDHI_TONE_FINAL => Ok(PauCinHau::SandhiToneFinal),
-            MID_DASH_LEVEL_TONE => Ok(PauCinHau::MidDashLevelTone),
-            GLOTTAL_STOP_VARIANT => Ok(PauCinHau::GlottalStopVariant),
-            MID_DASH_LEVEL_TONE_LONG_FINAL => Ok(PauCinHau::MidDashLevelToneLongFinal),
-            MID_DASH_LEVEL_TONE_FINAL => Ok(PauCinHau::MidDashLevelToneFinal),
-            LOW_DASH_FALLING_TONE_LONG => Ok(PauCinHau::LowDashFallingToneLong),
-            LOW_DASH_FALLING_TONE => Ok(PauCinHau::LowDashFallingTone),
-            GLOTTAL_STOP => Ok(PauCinHau::GlottalStop),
-            LOW_DASH_FALLING_TONE_LONG_FINAL => Ok(PauCinHau::LowDashFallingToneLongFinal),
-            LOW_DASH_FALLING_TONE_FINAL => Ok(PauCinHau::LowDashFallingToneFinal),
-            GLOTTAL_STOP_FINAL => Ok(PauCinHau::GlottalStopFinal),
+            '𑫀' => Ok(PauCinHau::LetterPa),
+            '𑫁' => Ok(PauCinHau::LetterKa),
+            '𑫂' => Ok(PauCinHau::LetterLa),
+            '𑫃' => Ok(PauCinHau::LetterMa),
+            '𑫄' => Ok(PauCinHau::LetterDa),
+            '𑫅' => Ok(PauCinHau::LetterZa),
+            '𑫆' => Ok(PauCinHau::LetterVa),
+            '𑫇' => Ok(PauCinHau::LetterNga),
+            '𑫈' => Ok(PauCinHau::LetterHa),
+            '𑫉' => Ok(PauCinHau::LetterGa),
+            '𑫊' => Ok(PauCinHau::LetterKha),
+            '𑫋' => Ok(PauCinHau::LetterSa),
+            '𑫌' => Ok(PauCinHau::LetterBa),
+            '𑫍' => Ok(PauCinHau::LetterCa),
+            '𑫎' => Ok(PauCinHau::LetterTa),
+            '𑫏' => Ok(PauCinHau::LetterTha),
+            '𑫐' => Ok(PauCinHau::LetterNa),
+            '𑫑' => Ok(PauCinHau::LetterPha),
+            '𑫒' => Ok(PauCinHau::LetterRa),
+            '𑫓' => Ok(PauCinHau::LetterFa),
+            '𑫔' => Ok(PauCinHau::LetterCha),
+            '𑫕' => Ok(PauCinHau::LetterA),
+            '𑫖' => Ok(PauCinHau::LetterE),
+            '𑫗' => Ok(PauCinHau::LetterI),
+            '𑫘' => Ok(PauCinHau::LetterO),
+            '𑫙' => Ok(PauCinHau::LetterU),
+            '𑫚' => Ok(PauCinHau::LetterUa),
+            '𑫛' => Ok(PauCinHau::LetterIa),
+            '𑫜' => Ok(PauCinHau::LetterFinalP),
+            '𑫝' => Ok(PauCinHau::LetterFinalK),
+            '𑫞' => Ok(PauCinHau::LetterFinalT),
+            '𑫟' => Ok(PauCinHau::LetterFinalM),
+            '𑫠' => Ok(PauCinHau::LetterFinalN),
+            '𑫡' => Ok(PauCinHau::LetterFinalL),
+            '𑫢' => Ok(PauCinHau::LetterFinalW),
+            '𑫣' => Ok(PauCinHau::LetterFinalNg),
+            '𑫤' => Ok(PauCinHau::LetterFinalY),
+            '𑫥' => Ok(PauCinHau::RisingToneLong),
+            '𑫦' => Ok(PauCinHau::RisingTone),
+            '𑫧' => Ok(PauCinHau::SandhiGlottalStop),
+            '𑫨' => Ok(PauCinHau::RisingToneLongFinal),
+            '𑫩' => Ok(PauCinHau::RisingToneFinal),
+            '𑫪' => Ok(PauCinHau::SandhiGlottalStopFinal),
+            '𑫫' => Ok(PauCinHau::SandhiToneLong),
+            '𑫬' => Ok(PauCinHau::SandhiTone),
+            '𑫭' => Ok(PauCinHau::SandhiToneLongFinal),
+            '𑫮' => Ok(PauCinHau::SandhiToneFinal),
+            '𑫯' => Ok(PauCinHau::MidDashLevelTone),
+            '𑫰' => Ok(PauCinHau::GlottalStopVariant),
+            '𑫱' => Ok(PauCinHau::MidDashLevelToneLongFinal),
+            '𑫲' => Ok(PauCinHau::MidDashLevelToneFinal),
+            '𑫳' => Ok(PauCinHau::LowDashFallingToneLong),
+            '𑫴' => Ok(PauCinHau::LowDashFallingTone),
+            '𑫵' => Ok(PauCinHau::GlottalStop),
+            '𑫶' => Ok(PauCinHau::LowDashFallingToneLongFinal),
+            '𑫷' => Ok(PauCinHau::LowDashFallingToneFinal),
+            '𑫸' => Ok(PauCinHau::GlottalStopFinal),
             _ => Err(()),
         }
     }

@@ -1,116 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a490}: '꒐'
-    pub const YI_RADICAL_QOT: char = '꒐';
-    /// \u{a491}: '꒑'
-    pub const YI_RADICAL_LI: char = '꒑';
-    /// \u{a492}: '꒒'
-    pub const YI_RADICAL_KIT: char = '꒒';
-    /// \u{a493}: '꒓'
-    pub const YI_RADICAL_NYIP: char = '꒓';
-    /// \u{a494}: '꒔'
-    pub const YI_RADICAL_CYP: char = '꒔';
-    /// \u{a495}: '꒕'
-    pub const YI_RADICAL_SSI: char = '꒕';
-    /// \u{a496}: '꒖'
-    pub const YI_RADICAL_GGOP: char = '꒖';
-    /// \u{a497}: '꒗'
-    pub const YI_RADICAL_GEP: char = '꒗';
-    /// \u{a498}: '꒘'
-    pub const YI_RADICAL_MI: char = '꒘';
-    /// \u{a499}: '꒙'
-    pub const YI_RADICAL_HXIT: char = '꒙';
-    /// \u{a49a}: '꒚'
-    pub const YI_RADICAL_LYR: char = '꒚';
-    /// \u{a49b}: '꒛'
-    pub const YI_RADICAL_BBUT: char = '꒛';
-    /// \u{a49c}: '꒜'
-    pub const YI_RADICAL_MOP: char = '꒜';
-    /// \u{a49d}: '꒝'
-    pub const YI_RADICAL_YO: char = '꒝';
-    /// \u{a49e}: '꒞'
-    pub const YI_RADICAL_PUT: char = '꒞';
-    /// \u{a49f}: '꒟'
-    pub const YI_RADICAL_HXUO: char = '꒟';
-    /// \u{a4a0}: '꒠'
-    pub const YI_RADICAL_TAT: char = '꒠';
-    /// \u{a4a1}: '꒡'
-    pub const YI_RADICAL_GA: char = '꒡';
-    /// \u{a4a2}: '꒢'
-    pub const YI_RADICAL_ZUP: char = '꒢';
-    /// \u{a4a3}: '꒣'
-    pub const YI_RADICAL_CYT: char = '꒣';
-    /// \u{a4a4}: '꒤'
-    pub const YI_RADICAL_DDUR: char = '꒤';
-    /// \u{a4a5}: '꒥'
-    pub const YI_RADICAL_BUR: char = '꒥';
-    /// \u{a4a6}: '꒦'
-    pub const YI_RADICAL_GGUO: char = '꒦';
-    /// \u{a4a7}: '꒧'
-    pub const YI_RADICAL_NYOP: char = '꒧';
-    /// \u{a4a8}: '꒨'
-    pub const YI_RADICAL_TU: char = '꒨';
-    /// \u{a4a9}: '꒩'
-    pub const YI_RADICAL_OP: char = '꒩';
-    /// \u{a4aa}: '꒪'
-    pub const YI_RADICAL_JJUT: char = '꒪';
-    /// \u{a4ab}: '꒫'
-    pub const YI_RADICAL_ZOT: char = '꒫';
-    /// \u{a4ac}: '꒬'
-    pub const YI_RADICAL_PYT: char = '꒬';
-    /// \u{a4ad}: '꒭'
-    pub const YI_RADICAL_HMO: char = '꒭';
-    /// \u{a4ae}: '꒮'
-    pub const YI_RADICAL_YIT: char = '꒮';
-    /// \u{a4af}: '꒯'
-    pub const YI_RADICAL_VUR: char = '꒯';
-    /// \u{a4b0}: '꒰'
-    pub const YI_RADICAL_SHY: char = '꒰';
-    /// \u{a4b1}: '꒱'
-    pub const YI_RADICAL_VEP: char = '꒱';
-    /// \u{a4b2}: '꒲'
-    pub const YI_RADICAL_ZA: char = '꒲';
-    /// \u{a4b3}: '꒳'
-    pub const YI_RADICAL_JO: char = '꒳';
-    /// \u{a4b4}: '꒴'
-    pub const YI_RADICAL_NZUP: char = '꒴';
-    /// \u{a4b5}: '꒵'
-    pub const YI_RADICAL_JJY: char = '꒵';
-    /// \u{a4b6}: '꒶'
-    pub const YI_RADICAL_GOT: char = '꒶';
-    /// \u{a4b7}: '꒷'
-    pub const YI_RADICAL_JJIE: char = '꒷';
-    /// \u{a4b8}: '꒸'
-    pub const YI_RADICAL_WO: char = '꒸';
-    /// \u{a4b9}: '꒹'
-    pub const YI_RADICAL_DU: char = '꒹';
-    /// \u{a4ba}: '꒺'
-    pub const YI_RADICAL_SHUR: char = '꒺';
-    /// \u{a4bb}: '꒻'
-    pub const YI_RADICAL_LIE: char = '꒻';
-    /// \u{a4bc}: '꒼'
-    pub const YI_RADICAL_CY: char = '꒼';
-    /// \u{a4bd}: '꒽'
-    pub const YI_RADICAL_CUOP: char = '꒽';
-    /// \u{a4be}: '꒾'
-    pub const YI_RADICAL_CIP: char = '꒾';
-    /// \u{a4bf}: '꒿'
-    pub const YI_RADICAL_HXOP: char = '꒿';
-    /// \u{a4c0}: '꓀'
-    pub const YI_RADICAL_SHAT: char = '꓀';
-    /// \u{a4c1}: '꓁'
-    pub const YI_RADICAL_ZUR: char = '꓁';
-    /// \u{a4c2}: '꓂'
-    pub const YI_RADICAL_SHOP: char = '꓂';
-    /// \u{a4c3}: '꓃'
-    pub const YI_RADICAL_CHE: char = '꓃';
-    /// \u{a4c4}: '꓄'
-    pub const YI_RADICAL_ZZIET: char = '꓄';
-    /// \u{a4c5}: '꓅'
-    pub const YI_RADICAL_NBIE: char = '꓅';
-    /// \u{a4c6}: '꓆'
-    pub const YI_RADICAL_KE: char = '꓆';
-}
 
 /// An enum to represent all characters in the YiRadicals block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -229,63 +116,62 @@ pub enum YiRadicals {
 
 impl Into<char> for YiRadicals {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            YiRadicals::YiRadicalQot => YI_RADICAL_QOT,
-            YiRadicals::YiRadicalLi => YI_RADICAL_LI,
-            YiRadicals::YiRadicalKit => YI_RADICAL_KIT,
-            YiRadicals::YiRadicalNyip => YI_RADICAL_NYIP,
-            YiRadicals::YiRadicalCyp => YI_RADICAL_CYP,
-            YiRadicals::YiRadicalSsi => YI_RADICAL_SSI,
-            YiRadicals::YiRadicalGgop => YI_RADICAL_GGOP,
-            YiRadicals::YiRadicalGep => YI_RADICAL_GEP,
-            YiRadicals::YiRadicalMi => YI_RADICAL_MI,
-            YiRadicals::YiRadicalHxit => YI_RADICAL_HXIT,
-            YiRadicals::YiRadicalLyr => YI_RADICAL_LYR,
-            YiRadicals::YiRadicalBbut => YI_RADICAL_BBUT,
-            YiRadicals::YiRadicalMop => YI_RADICAL_MOP,
-            YiRadicals::YiRadicalYo => YI_RADICAL_YO,
-            YiRadicals::YiRadicalPut => YI_RADICAL_PUT,
-            YiRadicals::YiRadicalHxuo => YI_RADICAL_HXUO,
-            YiRadicals::YiRadicalTat => YI_RADICAL_TAT,
-            YiRadicals::YiRadicalGa => YI_RADICAL_GA,
-            YiRadicals::YiRadicalZup => YI_RADICAL_ZUP,
-            YiRadicals::YiRadicalCyt => YI_RADICAL_CYT,
-            YiRadicals::YiRadicalDdur => YI_RADICAL_DDUR,
-            YiRadicals::YiRadicalBur => YI_RADICAL_BUR,
-            YiRadicals::YiRadicalGguo => YI_RADICAL_GGUO,
-            YiRadicals::YiRadicalNyop => YI_RADICAL_NYOP,
-            YiRadicals::YiRadicalTu => YI_RADICAL_TU,
-            YiRadicals::YiRadicalOp => YI_RADICAL_OP,
-            YiRadicals::YiRadicalJjut => YI_RADICAL_JJUT,
-            YiRadicals::YiRadicalZot => YI_RADICAL_ZOT,
-            YiRadicals::YiRadicalPyt => YI_RADICAL_PYT,
-            YiRadicals::YiRadicalHmo => YI_RADICAL_HMO,
-            YiRadicals::YiRadicalYit => YI_RADICAL_YIT,
-            YiRadicals::YiRadicalVur => YI_RADICAL_VUR,
-            YiRadicals::YiRadicalShy => YI_RADICAL_SHY,
-            YiRadicals::YiRadicalVep => YI_RADICAL_VEP,
-            YiRadicals::YiRadicalZa => YI_RADICAL_ZA,
-            YiRadicals::YiRadicalJo => YI_RADICAL_JO,
-            YiRadicals::YiRadicalNzup => YI_RADICAL_NZUP,
-            YiRadicals::YiRadicalJjy => YI_RADICAL_JJY,
-            YiRadicals::YiRadicalGot => YI_RADICAL_GOT,
-            YiRadicals::YiRadicalJjie => YI_RADICAL_JJIE,
-            YiRadicals::YiRadicalWo => YI_RADICAL_WO,
-            YiRadicals::YiRadicalDu => YI_RADICAL_DU,
-            YiRadicals::YiRadicalShur => YI_RADICAL_SHUR,
-            YiRadicals::YiRadicalLie => YI_RADICAL_LIE,
-            YiRadicals::YiRadicalCy => YI_RADICAL_CY,
-            YiRadicals::YiRadicalCuop => YI_RADICAL_CUOP,
-            YiRadicals::YiRadicalCip => YI_RADICAL_CIP,
-            YiRadicals::YiRadicalHxop => YI_RADICAL_HXOP,
-            YiRadicals::YiRadicalShat => YI_RADICAL_SHAT,
-            YiRadicals::YiRadicalZur => YI_RADICAL_ZUR,
-            YiRadicals::YiRadicalShop => YI_RADICAL_SHOP,
-            YiRadicals::YiRadicalChe => YI_RADICAL_CHE,
-            YiRadicals::YiRadicalZziet => YI_RADICAL_ZZIET,
-            YiRadicals::YiRadicalNbie => YI_RADICAL_NBIE,
-            YiRadicals::YiRadicalKe => YI_RADICAL_KE,
+            YiRadicals::YiRadicalQot => '꒐',
+            YiRadicals::YiRadicalLi => '꒑',
+            YiRadicals::YiRadicalKit => '꒒',
+            YiRadicals::YiRadicalNyip => '꒓',
+            YiRadicals::YiRadicalCyp => '꒔',
+            YiRadicals::YiRadicalSsi => '꒕',
+            YiRadicals::YiRadicalGgop => '꒖',
+            YiRadicals::YiRadicalGep => '꒗',
+            YiRadicals::YiRadicalMi => '꒘',
+            YiRadicals::YiRadicalHxit => '꒙',
+            YiRadicals::YiRadicalLyr => '꒚',
+            YiRadicals::YiRadicalBbut => '꒛',
+            YiRadicals::YiRadicalMop => '꒜',
+            YiRadicals::YiRadicalYo => '꒝',
+            YiRadicals::YiRadicalPut => '꒞',
+            YiRadicals::YiRadicalHxuo => '꒟',
+            YiRadicals::YiRadicalTat => '꒠',
+            YiRadicals::YiRadicalGa => '꒡',
+            YiRadicals::YiRadicalZup => '꒢',
+            YiRadicals::YiRadicalCyt => '꒣',
+            YiRadicals::YiRadicalDdur => '꒤',
+            YiRadicals::YiRadicalBur => '꒥',
+            YiRadicals::YiRadicalGguo => '꒦',
+            YiRadicals::YiRadicalNyop => '꒧',
+            YiRadicals::YiRadicalTu => '꒨',
+            YiRadicals::YiRadicalOp => '꒩',
+            YiRadicals::YiRadicalJjut => '꒪',
+            YiRadicals::YiRadicalZot => '꒫',
+            YiRadicals::YiRadicalPyt => '꒬',
+            YiRadicals::YiRadicalHmo => '꒭',
+            YiRadicals::YiRadicalYit => '꒮',
+            YiRadicals::YiRadicalVur => '꒯',
+            YiRadicals::YiRadicalShy => '꒰',
+            YiRadicals::YiRadicalVep => '꒱',
+            YiRadicals::YiRadicalZa => '꒲',
+            YiRadicals::YiRadicalJo => '꒳',
+            YiRadicals::YiRadicalNzup => '꒴',
+            YiRadicals::YiRadicalJjy => '꒵',
+            YiRadicals::YiRadicalGot => '꒶',
+            YiRadicals::YiRadicalJjie => '꒷',
+            YiRadicals::YiRadicalWo => '꒸',
+            YiRadicals::YiRadicalDu => '꒹',
+            YiRadicals::YiRadicalShur => '꒺',
+            YiRadicals::YiRadicalLie => '꒻',
+            YiRadicals::YiRadicalCy => '꒼',
+            YiRadicals::YiRadicalCuop => '꒽',
+            YiRadicals::YiRadicalCip => '꒾',
+            YiRadicals::YiRadicalHxop => '꒿',
+            YiRadicals::YiRadicalShat => '꓀',
+            YiRadicals::YiRadicalZur => '꓁',
+            YiRadicals::YiRadicalShop => '꓂',
+            YiRadicals::YiRadicalChe => '꓃',
+            YiRadicals::YiRadicalZziet => '꓄',
+            YiRadicals::YiRadicalNbie => '꓅',
+            YiRadicals::YiRadicalKe => '꓆',
         }
     }
 }
@@ -293,63 +179,62 @@ impl Into<char> for YiRadicals {
 impl std::convert::TryFrom<char> for YiRadicals {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            YI_RADICAL_QOT => Ok(YiRadicals::YiRadicalQot),
-            YI_RADICAL_LI => Ok(YiRadicals::YiRadicalLi),
-            YI_RADICAL_KIT => Ok(YiRadicals::YiRadicalKit),
-            YI_RADICAL_NYIP => Ok(YiRadicals::YiRadicalNyip),
-            YI_RADICAL_CYP => Ok(YiRadicals::YiRadicalCyp),
-            YI_RADICAL_SSI => Ok(YiRadicals::YiRadicalSsi),
-            YI_RADICAL_GGOP => Ok(YiRadicals::YiRadicalGgop),
-            YI_RADICAL_GEP => Ok(YiRadicals::YiRadicalGep),
-            YI_RADICAL_MI => Ok(YiRadicals::YiRadicalMi),
-            YI_RADICAL_HXIT => Ok(YiRadicals::YiRadicalHxit),
-            YI_RADICAL_LYR => Ok(YiRadicals::YiRadicalLyr),
-            YI_RADICAL_BBUT => Ok(YiRadicals::YiRadicalBbut),
-            YI_RADICAL_MOP => Ok(YiRadicals::YiRadicalMop),
-            YI_RADICAL_YO => Ok(YiRadicals::YiRadicalYo),
-            YI_RADICAL_PUT => Ok(YiRadicals::YiRadicalPut),
-            YI_RADICAL_HXUO => Ok(YiRadicals::YiRadicalHxuo),
-            YI_RADICAL_TAT => Ok(YiRadicals::YiRadicalTat),
-            YI_RADICAL_GA => Ok(YiRadicals::YiRadicalGa),
-            YI_RADICAL_ZUP => Ok(YiRadicals::YiRadicalZup),
-            YI_RADICAL_CYT => Ok(YiRadicals::YiRadicalCyt),
-            YI_RADICAL_DDUR => Ok(YiRadicals::YiRadicalDdur),
-            YI_RADICAL_BUR => Ok(YiRadicals::YiRadicalBur),
-            YI_RADICAL_GGUO => Ok(YiRadicals::YiRadicalGguo),
-            YI_RADICAL_NYOP => Ok(YiRadicals::YiRadicalNyop),
-            YI_RADICAL_TU => Ok(YiRadicals::YiRadicalTu),
-            YI_RADICAL_OP => Ok(YiRadicals::YiRadicalOp),
-            YI_RADICAL_JJUT => Ok(YiRadicals::YiRadicalJjut),
-            YI_RADICAL_ZOT => Ok(YiRadicals::YiRadicalZot),
-            YI_RADICAL_PYT => Ok(YiRadicals::YiRadicalPyt),
-            YI_RADICAL_HMO => Ok(YiRadicals::YiRadicalHmo),
-            YI_RADICAL_YIT => Ok(YiRadicals::YiRadicalYit),
-            YI_RADICAL_VUR => Ok(YiRadicals::YiRadicalVur),
-            YI_RADICAL_SHY => Ok(YiRadicals::YiRadicalShy),
-            YI_RADICAL_VEP => Ok(YiRadicals::YiRadicalVep),
-            YI_RADICAL_ZA => Ok(YiRadicals::YiRadicalZa),
-            YI_RADICAL_JO => Ok(YiRadicals::YiRadicalJo),
-            YI_RADICAL_NZUP => Ok(YiRadicals::YiRadicalNzup),
-            YI_RADICAL_JJY => Ok(YiRadicals::YiRadicalJjy),
-            YI_RADICAL_GOT => Ok(YiRadicals::YiRadicalGot),
-            YI_RADICAL_JJIE => Ok(YiRadicals::YiRadicalJjie),
-            YI_RADICAL_WO => Ok(YiRadicals::YiRadicalWo),
-            YI_RADICAL_DU => Ok(YiRadicals::YiRadicalDu),
-            YI_RADICAL_SHUR => Ok(YiRadicals::YiRadicalShur),
-            YI_RADICAL_LIE => Ok(YiRadicals::YiRadicalLie),
-            YI_RADICAL_CY => Ok(YiRadicals::YiRadicalCy),
-            YI_RADICAL_CUOP => Ok(YiRadicals::YiRadicalCuop),
-            YI_RADICAL_CIP => Ok(YiRadicals::YiRadicalCip),
-            YI_RADICAL_HXOP => Ok(YiRadicals::YiRadicalHxop),
-            YI_RADICAL_SHAT => Ok(YiRadicals::YiRadicalShat),
-            YI_RADICAL_ZUR => Ok(YiRadicals::YiRadicalZur),
-            YI_RADICAL_SHOP => Ok(YiRadicals::YiRadicalShop),
-            YI_RADICAL_CHE => Ok(YiRadicals::YiRadicalChe),
-            YI_RADICAL_ZZIET => Ok(YiRadicals::YiRadicalZziet),
-            YI_RADICAL_NBIE => Ok(YiRadicals::YiRadicalNbie),
-            YI_RADICAL_KE => Ok(YiRadicals::YiRadicalKe),
+            '꒐' => Ok(YiRadicals::YiRadicalQot),
+            '꒑' => Ok(YiRadicals::YiRadicalLi),
+            '꒒' => Ok(YiRadicals::YiRadicalKit),
+            '꒓' => Ok(YiRadicals::YiRadicalNyip),
+            '꒔' => Ok(YiRadicals::YiRadicalCyp),
+            '꒕' => Ok(YiRadicals::YiRadicalSsi),
+            '꒖' => Ok(YiRadicals::YiRadicalGgop),
+            '꒗' => Ok(YiRadicals::YiRadicalGep),
+            '꒘' => Ok(YiRadicals::YiRadicalMi),
+            '꒙' => Ok(YiRadicals::YiRadicalHxit),
+            '꒚' => Ok(YiRadicals::YiRadicalLyr),
+            '꒛' => Ok(YiRadicals::YiRadicalBbut),
+            '꒜' => Ok(YiRadicals::YiRadicalMop),
+            '꒝' => Ok(YiRadicals::YiRadicalYo),
+            '꒞' => Ok(YiRadicals::YiRadicalPut),
+            '꒟' => Ok(YiRadicals::YiRadicalHxuo),
+            '꒠' => Ok(YiRadicals::YiRadicalTat),
+            '꒡' => Ok(YiRadicals::YiRadicalGa),
+            '꒢' => Ok(YiRadicals::YiRadicalZup),
+            '꒣' => Ok(YiRadicals::YiRadicalCyt),
+            '꒤' => Ok(YiRadicals::YiRadicalDdur),
+            '꒥' => Ok(YiRadicals::YiRadicalBur),
+            '꒦' => Ok(YiRadicals::YiRadicalGguo),
+            '꒧' => Ok(YiRadicals::YiRadicalNyop),
+            '꒨' => Ok(YiRadicals::YiRadicalTu),
+            '꒩' => Ok(YiRadicals::YiRadicalOp),
+            '꒪' => Ok(YiRadicals::YiRadicalJjut),
+            '꒫' => Ok(YiRadicals::YiRadicalZot),
+            '꒬' => Ok(YiRadicals::YiRadicalPyt),
+            '꒭' => Ok(YiRadicals::YiRadicalHmo),
+            '꒮' => Ok(YiRadicals::YiRadicalYit),
+            '꒯' => Ok(YiRadicals::YiRadicalVur),
+            '꒰' => Ok(YiRadicals::YiRadicalShy),
+            '꒱' => Ok(YiRadicals::YiRadicalVep),
+            '꒲' => Ok(YiRadicals::YiRadicalZa),
+            '꒳' => Ok(YiRadicals::YiRadicalJo),
+            '꒴' => Ok(YiRadicals::YiRadicalNzup),
+            '꒵' => Ok(YiRadicals::YiRadicalJjy),
+            '꒶' => Ok(YiRadicals::YiRadicalGot),
+            '꒷' => Ok(YiRadicals::YiRadicalJjie),
+            '꒸' => Ok(YiRadicals::YiRadicalWo),
+            '꒹' => Ok(YiRadicals::YiRadicalDu),
+            '꒺' => Ok(YiRadicals::YiRadicalShur),
+            '꒻' => Ok(YiRadicals::YiRadicalLie),
+            '꒼' => Ok(YiRadicals::YiRadicalCy),
+            '꒽' => Ok(YiRadicals::YiRadicalCuop),
+            '꒾' => Ok(YiRadicals::YiRadicalCip),
+            '꒿' => Ok(YiRadicals::YiRadicalHxop),
+            '꓀' => Ok(YiRadicals::YiRadicalShat),
+            '꓁' => Ok(YiRadicals::YiRadicalZur),
+            '꓂' => Ok(YiRadicals::YiRadicalShop),
+            '꓃' => Ok(YiRadicals::YiRadicalChe),
+            '꓄' => Ok(YiRadicals::YiRadicalZziet),
+            '꓅' => Ok(YiRadicals::YiRadicalNbie),
+            '꓆' => Ok(YiRadicals::YiRadicalKe),
             _ => Err(()),
         }
     }

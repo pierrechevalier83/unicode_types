@@ -1,1172 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{14400}: '𔐀'
-    pub const ANATOLIAN_HIEROGLYPH_A001: char = '𔐀';
-    /// \u{14401}: '𔐁'
-    pub const ANATOLIAN_HIEROGLYPH_A002: char = '𔐁';
-    /// \u{14402}: '𔐂'
-    pub const ANATOLIAN_HIEROGLYPH_A003: char = '𔐂';
-    /// \u{14403}: '𔐃'
-    pub const ANATOLIAN_HIEROGLYPH_A004: char = '𔐃';
-    /// \u{14404}: '𔐄'
-    pub const ANATOLIAN_HIEROGLYPH_A005: char = '𔐄';
-    /// \u{14405}: '𔐅'
-    pub const ANATOLIAN_HIEROGLYPH_A006: char = '𔐅';
-    /// \u{14406}: '𔐆'
-    pub const ANATOLIAN_HIEROGLYPH_A007: char = '𔐆';
-    /// \u{14407}: '𔐇'
-    pub const ANATOLIAN_HIEROGLYPH_A008: char = '𔐇';
-    /// \u{14408}: '𔐈'
-    pub const ANATOLIAN_HIEROGLYPH_A009: char = '𔐈';
-    /// \u{14409}: '𔐉'
-    pub const ANATOLIAN_HIEROGLYPH_A010: char = '𔐉';
-    /// \u{1440a}: '𔐊'
-    pub const ANATOLIAN_HIEROGLYPH_A010A: char = '𔐊';
-    /// \u{1440b}: '𔐋'
-    pub const ANATOLIAN_HIEROGLYPH_A011: char = '𔐋';
-    /// \u{1440c}: '𔐌'
-    pub const ANATOLIAN_HIEROGLYPH_A012: char = '𔐌';
-    /// \u{1440d}: '𔐍'
-    pub const ANATOLIAN_HIEROGLYPH_A013: char = '𔐍';
-    /// \u{1440e}: '𔐎'
-    pub const ANATOLIAN_HIEROGLYPH_A014: char = '𔐎';
-    /// \u{1440f}: '𔐏'
-    pub const ANATOLIAN_HIEROGLYPH_A015: char = '𔐏';
-    /// \u{14410}: '𔐐'
-    pub const ANATOLIAN_HIEROGLYPH_A016: char = '𔐐';
-    /// \u{14411}: '𔐑'
-    pub const ANATOLIAN_HIEROGLYPH_A017: char = '𔐑';
-    /// \u{14412}: '𔐒'
-    pub const ANATOLIAN_HIEROGLYPH_A018: char = '𔐒';
-    /// \u{14413}: '𔐓'
-    pub const ANATOLIAN_HIEROGLYPH_A019: char = '𔐓';
-    /// \u{14414}: '𔐔'
-    pub const ANATOLIAN_HIEROGLYPH_A020: char = '𔐔';
-    /// \u{14415}: '𔐕'
-    pub const ANATOLIAN_HIEROGLYPH_A021: char = '𔐕';
-    /// \u{14416}: '𔐖'
-    pub const ANATOLIAN_HIEROGLYPH_A022: char = '𔐖';
-    /// \u{14417}: '𔐗'
-    pub const ANATOLIAN_HIEROGLYPH_A023: char = '𔐗';
-    /// \u{14418}: '𔐘'
-    pub const ANATOLIAN_HIEROGLYPH_A024: char = '𔐘';
-    /// \u{14419}: '𔐙'
-    pub const ANATOLIAN_HIEROGLYPH_A025: char = '𔐙';
-    /// \u{1441a}: '𔐚'
-    pub const ANATOLIAN_HIEROGLYPH_A026: char = '𔐚';
-    /// \u{1441b}: '𔐛'
-    pub const ANATOLIAN_HIEROGLYPH_A026A: char = '𔐛';
-    /// \u{1441c}: '𔐜'
-    pub const ANATOLIAN_HIEROGLYPH_A027: char = '𔐜';
-    /// \u{1441d}: '𔐝'
-    pub const ANATOLIAN_HIEROGLYPH_A028: char = '𔐝';
-    /// \u{1441e}: '𔐞'
-    pub const ANATOLIAN_HIEROGLYPH_A029: char = '𔐞';
-    /// \u{1441f}: '𔐟'
-    pub const ANATOLIAN_HIEROGLYPH_A030: char = '𔐟';
-    /// \u{14420}: '𔐠'
-    pub const ANATOLIAN_HIEROGLYPH_A031: char = '𔐠';
-    /// \u{14421}: '𔐡'
-    pub const ANATOLIAN_HIEROGLYPH_A032: char = '𔐡';
-    /// \u{14422}: '𔐢'
-    pub const ANATOLIAN_HIEROGLYPH_A033: char = '𔐢';
-    /// \u{14423}: '𔐣'
-    pub const ANATOLIAN_HIEROGLYPH_A034: char = '𔐣';
-    /// \u{14424}: '𔐤'
-    pub const ANATOLIAN_HIEROGLYPH_A035: char = '𔐤';
-    /// \u{14425}: '𔐥'
-    pub const ANATOLIAN_HIEROGLYPH_A036: char = '𔐥';
-    /// \u{14426}: '𔐦'
-    pub const ANATOLIAN_HIEROGLYPH_A037: char = '𔐦';
-    /// \u{14427}: '𔐧'
-    pub const ANATOLIAN_HIEROGLYPH_A038: char = '𔐧';
-    /// \u{14428}: '𔐨'
-    pub const ANATOLIAN_HIEROGLYPH_A039: char = '𔐨';
-    /// \u{14429}: '𔐩'
-    pub const ANATOLIAN_HIEROGLYPH_A039A: char = '𔐩';
-    /// \u{1442a}: '𔐪'
-    pub const ANATOLIAN_HIEROGLYPH_A040: char = '𔐪';
-    /// \u{1442b}: '𔐫'
-    pub const ANATOLIAN_HIEROGLYPH_A041: char = '𔐫';
-    /// \u{1442c}: '𔐬'
-    pub const ANATOLIAN_HIEROGLYPH_A041A: char = '𔐬';
-    /// \u{1442d}: '𔐭'
-    pub const ANATOLIAN_HIEROGLYPH_A042: char = '𔐭';
-    /// \u{1442e}: '𔐮'
-    pub const ANATOLIAN_HIEROGLYPH_A043: char = '𔐮';
-    /// \u{1442f}: '𔐯'
-    pub const ANATOLIAN_HIEROGLYPH_A044: char = '𔐯';
-    /// \u{14430}: '𔐰'
-    pub const ANATOLIAN_HIEROGLYPH_A045: char = '𔐰';
-    /// \u{14431}: '𔐱'
-    pub const ANATOLIAN_HIEROGLYPH_A045A: char = '𔐱';
-    /// \u{14432}: '𔐲'
-    pub const ANATOLIAN_HIEROGLYPH_A046: char = '𔐲';
-    /// \u{14433}: '𔐳'
-    pub const ANATOLIAN_HIEROGLYPH_A046A: char = '𔐳';
-    /// \u{14434}: '𔐴'
-    pub const ANATOLIAN_HIEROGLYPH_A046B: char = '𔐴';
-    /// \u{14435}: '𔐵'
-    pub const ANATOLIAN_HIEROGLYPH_A047: char = '𔐵';
-    /// \u{14436}: '𔐶'
-    pub const ANATOLIAN_HIEROGLYPH_A048: char = '𔐶';
-    /// \u{14437}: '𔐷'
-    pub const ANATOLIAN_HIEROGLYPH_A049: char = '𔐷';
-    /// \u{14438}: '𔐸'
-    pub const ANATOLIAN_HIEROGLYPH_A050: char = '𔐸';
-    /// \u{14439}: '𔐹'
-    pub const ANATOLIAN_HIEROGLYPH_A051: char = '𔐹';
-    /// \u{1443a}: '𔐺'
-    pub const ANATOLIAN_HIEROGLYPH_A052: char = '𔐺';
-    /// \u{1443b}: '𔐻'
-    pub const ANATOLIAN_HIEROGLYPH_A053: char = '𔐻';
-    /// \u{1443c}: '𔐼'
-    pub const ANATOLIAN_HIEROGLYPH_A054: char = '𔐼';
-    /// \u{1443d}: '𔐽'
-    pub const ANATOLIAN_HIEROGLYPH_A055: char = '𔐽';
-    /// \u{1443e}: '𔐾'
-    pub const ANATOLIAN_HIEROGLYPH_A056: char = '𔐾';
-    /// \u{1443f}: '𔐿'
-    pub const ANATOLIAN_HIEROGLYPH_A057: char = '𔐿';
-    /// \u{14440}: '𔑀'
-    pub const ANATOLIAN_HIEROGLYPH_A058: char = '𔑀';
-    /// \u{14441}: '𔑁'
-    pub const ANATOLIAN_HIEROGLYPH_A059: char = '𔑁';
-    /// \u{14442}: '𔑂'
-    pub const ANATOLIAN_HIEROGLYPH_A060: char = '𔑂';
-    /// \u{14443}: '𔑃'
-    pub const ANATOLIAN_HIEROGLYPH_A061: char = '𔑃';
-    /// \u{14444}: '𔑄'
-    pub const ANATOLIAN_HIEROGLYPH_A062: char = '𔑄';
-    /// \u{14445}: '𔑅'
-    pub const ANATOLIAN_HIEROGLYPH_A063: char = '𔑅';
-    /// \u{14446}: '𔑆'
-    pub const ANATOLIAN_HIEROGLYPH_A064: char = '𔑆';
-    /// \u{14447}: '𔑇'
-    pub const ANATOLIAN_HIEROGLYPH_A065: char = '𔑇';
-    /// \u{14448}: '𔑈'
-    pub const ANATOLIAN_HIEROGLYPH_A066: char = '𔑈';
-    /// \u{14449}: '𔑉'
-    pub const ANATOLIAN_HIEROGLYPH_A066A: char = '𔑉';
-    /// \u{1444a}: '𔑊'
-    pub const ANATOLIAN_HIEROGLYPH_A066B: char = '𔑊';
-    /// \u{1444b}: '𔑋'
-    pub const ANATOLIAN_HIEROGLYPH_A066C: char = '𔑋';
-    /// \u{1444c}: '𔑌'
-    pub const ANATOLIAN_HIEROGLYPH_A067: char = '𔑌';
-    /// \u{1444d}: '𔑍'
-    pub const ANATOLIAN_HIEROGLYPH_A068: char = '𔑍';
-    /// \u{1444e}: '𔑎'
-    pub const ANATOLIAN_HIEROGLYPH_A069: char = '𔑎';
-    /// \u{1444f}: '𔑏'
-    pub const ANATOLIAN_HIEROGLYPH_A070: char = '𔑏';
-    /// \u{14450}: '𔑐'
-    pub const ANATOLIAN_HIEROGLYPH_A071: char = '𔑐';
-    /// \u{14451}: '𔑑'
-    pub const ANATOLIAN_HIEROGLYPH_A072: char = '𔑑';
-    /// \u{14452}: '𔑒'
-    pub const ANATOLIAN_HIEROGLYPH_A073: char = '𔑒';
-    /// \u{14453}: '𔑓'
-    pub const ANATOLIAN_HIEROGLYPH_A074: char = '𔑓';
-    /// \u{14454}: '𔑔'
-    pub const ANATOLIAN_HIEROGLYPH_A075: char = '𔑔';
-    /// \u{14455}: '𔑕'
-    pub const ANATOLIAN_HIEROGLYPH_A076: char = '𔑕';
-    /// \u{14456}: '𔑖'
-    pub const ANATOLIAN_HIEROGLYPH_A077: char = '𔑖';
-    /// \u{14457}: '𔑗'
-    pub const ANATOLIAN_HIEROGLYPH_A078: char = '𔑗';
-    /// \u{14458}: '𔑘'
-    pub const ANATOLIAN_HIEROGLYPH_A079: char = '𔑘';
-    /// \u{14459}: '𔑙'
-    pub const ANATOLIAN_HIEROGLYPH_A080: char = '𔑙';
-    /// \u{1445a}: '𔑚'
-    pub const ANATOLIAN_HIEROGLYPH_A081: char = '𔑚';
-    /// \u{1445b}: '𔑛'
-    pub const ANATOLIAN_HIEROGLYPH_A082: char = '𔑛';
-    /// \u{1445c}: '𔑜'
-    pub const ANATOLIAN_HIEROGLYPH_A083: char = '𔑜';
-    /// \u{1445d}: '𔑝'
-    pub const ANATOLIAN_HIEROGLYPH_A084: char = '𔑝';
-    /// \u{1445e}: '𔑞'
-    pub const ANATOLIAN_HIEROGLYPH_A085: char = '𔑞';
-    /// \u{1445f}: '𔑟'
-    pub const ANATOLIAN_HIEROGLYPH_A086: char = '𔑟';
-    /// \u{14460}: '𔑠'
-    pub const ANATOLIAN_HIEROGLYPH_A087: char = '𔑠';
-    /// \u{14461}: '𔑡'
-    pub const ANATOLIAN_HIEROGLYPH_A088: char = '𔑡';
-    /// \u{14462}: '𔑢'
-    pub const ANATOLIAN_HIEROGLYPH_A089: char = '𔑢';
-    /// \u{14463}: '𔑣'
-    pub const ANATOLIAN_HIEROGLYPH_A090: char = '𔑣';
-    /// \u{14464}: '𔑤'
-    pub const ANATOLIAN_HIEROGLYPH_A091: char = '𔑤';
-    /// \u{14465}: '𔑥'
-    pub const ANATOLIAN_HIEROGLYPH_A092: char = '𔑥';
-    /// \u{14466}: '𔑦'
-    pub const ANATOLIAN_HIEROGLYPH_A093: char = '𔑦';
-    /// \u{14467}: '𔑧'
-    pub const ANATOLIAN_HIEROGLYPH_A094: char = '𔑧';
-    /// \u{14468}: '𔑨'
-    pub const ANATOLIAN_HIEROGLYPH_A095: char = '𔑨';
-    /// \u{14469}: '𔑩'
-    pub const ANATOLIAN_HIEROGLYPH_A096: char = '𔑩';
-    /// \u{1446a}: '𔑪'
-    pub const ANATOLIAN_HIEROGLYPH_A097: char = '𔑪';
-    /// \u{1446b}: '𔑫'
-    pub const ANATOLIAN_HIEROGLYPH_A097A: char = '𔑫';
-    /// \u{1446c}: '𔑬'
-    pub const ANATOLIAN_HIEROGLYPH_A098: char = '𔑬';
-    /// \u{1446d}: '𔑭'
-    pub const ANATOLIAN_HIEROGLYPH_A098A: char = '𔑭';
-    /// \u{1446e}: '𔑮'
-    pub const ANATOLIAN_HIEROGLYPH_A099: char = '𔑮';
-    /// \u{1446f}: '𔑯'
-    pub const ANATOLIAN_HIEROGLYPH_A100: char = '𔑯';
-    /// \u{14470}: '𔑰'
-    pub const ANATOLIAN_HIEROGLYPH_A100A: char = '𔑰';
-    /// \u{14471}: '𔑱'
-    pub const ANATOLIAN_HIEROGLYPH_A101: char = '𔑱';
-    /// \u{14472}: '𔑲'
-    pub const ANATOLIAN_HIEROGLYPH_A101A: char = '𔑲';
-    /// \u{14473}: '𔑳'
-    pub const ANATOLIAN_HIEROGLYPH_A102: char = '𔑳';
-    /// \u{14474}: '𔑴'
-    pub const ANATOLIAN_HIEROGLYPH_A102A: char = '𔑴';
-    /// \u{14475}: '𔑵'
-    pub const ANATOLIAN_HIEROGLYPH_A103: char = '𔑵';
-    /// \u{14476}: '𔑶'
-    pub const ANATOLIAN_HIEROGLYPH_A104: char = '𔑶';
-    /// \u{14477}: '𔑷'
-    pub const ANATOLIAN_HIEROGLYPH_A104A: char = '𔑷';
-    /// \u{14478}: '𔑸'
-    pub const ANATOLIAN_HIEROGLYPH_A104B: char = '𔑸';
-    /// \u{14479}: '𔑹'
-    pub const ANATOLIAN_HIEROGLYPH_A104C: char = '𔑹';
-    /// \u{1447a}: '𔑺'
-    pub const ANATOLIAN_HIEROGLYPH_A105: char = '𔑺';
-    /// \u{1447b}: '𔑻'
-    pub const ANATOLIAN_HIEROGLYPH_A105A: char = '𔑻';
-    /// \u{1447c}: '𔑼'
-    pub const ANATOLIAN_HIEROGLYPH_A105B: char = '𔑼';
-    /// \u{1447d}: '𔑽'
-    pub const ANATOLIAN_HIEROGLYPH_A106: char = '𔑽';
-    /// \u{1447e}: '𔑾'
-    pub const ANATOLIAN_HIEROGLYPH_A107: char = '𔑾';
-    /// \u{1447f}: '𔑿'
-    pub const ANATOLIAN_HIEROGLYPH_A107A: char = '𔑿';
-    /// \u{14480}: '𔒀'
-    pub const ANATOLIAN_HIEROGLYPH_A107B: char = '𔒀';
-    /// \u{14481}: '𔒁'
-    pub const ANATOLIAN_HIEROGLYPH_A107C: char = '𔒁';
-    /// \u{14482}: '𔒂'
-    pub const ANATOLIAN_HIEROGLYPH_A108: char = '𔒂';
-    /// \u{14483}: '𔒃'
-    pub const ANATOLIAN_HIEROGLYPH_A109: char = '𔒃';
-    /// \u{14484}: '𔒄'
-    pub const ANATOLIAN_HIEROGLYPH_A110: char = '𔒄';
-    /// \u{14485}: '𔒅'
-    pub const ANATOLIAN_HIEROGLYPH_A110A: char = '𔒅';
-    /// \u{14486}: '𔒆'
-    pub const ANATOLIAN_HIEROGLYPH_A110B: char = '𔒆';
-    /// \u{14487}: '𔒇'
-    pub const ANATOLIAN_HIEROGLYPH_A111: char = '𔒇';
-    /// \u{14488}: '𔒈'
-    pub const ANATOLIAN_HIEROGLYPH_A112: char = '𔒈';
-    /// \u{14489}: '𔒉'
-    pub const ANATOLIAN_HIEROGLYPH_A113: char = '𔒉';
-    /// \u{1448a}: '𔒊'
-    pub const ANATOLIAN_HIEROGLYPH_A114: char = '𔒊';
-    /// \u{1448b}: '𔒋'
-    pub const ANATOLIAN_HIEROGLYPH_A115: char = '𔒋';
-    /// \u{1448c}: '𔒌'
-    pub const ANATOLIAN_HIEROGLYPH_A115A: char = '𔒌';
-    /// \u{1448d}: '𔒍'
-    pub const ANATOLIAN_HIEROGLYPH_A116: char = '𔒍';
-    /// \u{1448e}: '𔒎'
-    pub const ANATOLIAN_HIEROGLYPH_A117: char = '𔒎';
-    /// \u{1448f}: '𔒏'
-    pub const ANATOLIAN_HIEROGLYPH_A118: char = '𔒏';
-    /// \u{14490}: '𔒐'
-    pub const ANATOLIAN_HIEROGLYPH_A119: char = '𔒐';
-    /// \u{14491}: '𔒑'
-    pub const ANATOLIAN_HIEROGLYPH_A120: char = '𔒑';
-    /// \u{14492}: '𔒒'
-    pub const ANATOLIAN_HIEROGLYPH_A121: char = '𔒒';
-    /// \u{14493}: '𔒓'
-    pub const ANATOLIAN_HIEROGLYPH_A122: char = '𔒓';
-    /// \u{14494}: '𔒔'
-    pub const ANATOLIAN_HIEROGLYPH_A123: char = '𔒔';
-    /// \u{14495}: '𔒕'
-    pub const ANATOLIAN_HIEROGLYPH_A124: char = '𔒕';
-    /// \u{14496}: '𔒖'
-    pub const ANATOLIAN_HIEROGLYPH_A125: char = '𔒖';
-    /// \u{14497}: '𔒗'
-    pub const ANATOLIAN_HIEROGLYPH_A125A: char = '𔒗';
-    /// \u{14498}: '𔒘'
-    pub const ANATOLIAN_HIEROGLYPH_A126: char = '𔒘';
-    /// \u{14499}: '𔒙'
-    pub const ANATOLIAN_HIEROGLYPH_A127: char = '𔒙';
-    /// \u{1449a}: '𔒚'
-    pub const ANATOLIAN_HIEROGLYPH_A128: char = '𔒚';
-    /// \u{1449b}: '𔒛'
-    pub const ANATOLIAN_HIEROGLYPH_A129: char = '𔒛';
-    /// \u{1449c}: '𔒜'
-    pub const ANATOLIAN_HIEROGLYPH_A130: char = '𔒜';
-    /// \u{1449d}: '𔒝'
-    pub const ANATOLIAN_HIEROGLYPH_A131: char = '𔒝';
-    /// \u{1449e}: '𔒞'
-    pub const ANATOLIAN_HIEROGLYPH_A132: char = '𔒞';
-    /// \u{1449f}: '𔒟'
-    pub const ANATOLIAN_HIEROGLYPH_A133: char = '𔒟';
-    /// \u{144a0}: '𔒠'
-    pub const ANATOLIAN_HIEROGLYPH_A134: char = '𔒠';
-    /// \u{144a1}: '𔒡'
-    pub const ANATOLIAN_HIEROGLYPH_A135: char = '𔒡';
-    /// \u{144a2}: '𔒢'
-    pub const ANATOLIAN_HIEROGLYPH_A135A: char = '𔒢';
-    /// \u{144a3}: '𔒣'
-    pub const ANATOLIAN_HIEROGLYPH_A136: char = '𔒣';
-    /// \u{144a4}: '𔒤'
-    pub const ANATOLIAN_HIEROGLYPH_A137: char = '𔒤';
-    /// \u{144a5}: '𔒥'
-    pub const ANATOLIAN_HIEROGLYPH_A138: char = '𔒥';
-    /// \u{144a6}: '𔒦'
-    pub const ANATOLIAN_HIEROGLYPH_A139: char = '𔒦';
-    /// \u{144a7}: '𔒧'
-    pub const ANATOLIAN_HIEROGLYPH_A140: char = '𔒧';
-    /// \u{144a8}: '𔒨'
-    pub const ANATOLIAN_HIEROGLYPH_A141: char = '𔒨';
-    /// \u{144a9}: '𔒩'
-    pub const ANATOLIAN_HIEROGLYPH_A142: char = '𔒩';
-    /// \u{144aa}: '𔒪'
-    pub const ANATOLIAN_HIEROGLYPH_A143: char = '𔒪';
-    /// \u{144ab}: '𔒫'
-    pub const ANATOLIAN_HIEROGLYPH_A144: char = '𔒫';
-    /// \u{144ac}: '𔒬'
-    pub const ANATOLIAN_HIEROGLYPH_A145: char = '𔒬';
-    /// \u{144ad}: '𔒭'
-    pub const ANATOLIAN_HIEROGLYPH_A146: char = '𔒭';
-    /// \u{144ae}: '𔒮'
-    pub const ANATOLIAN_HIEROGLYPH_A147: char = '𔒮';
-    /// \u{144af}: '𔒯'
-    pub const ANATOLIAN_HIEROGLYPH_A148: char = '𔒯';
-    /// \u{144b0}: '𔒰'
-    pub const ANATOLIAN_HIEROGLYPH_A149: char = '𔒰';
-    /// \u{144b1}: '𔒱'
-    pub const ANATOLIAN_HIEROGLYPH_A150: char = '𔒱';
-    /// \u{144b2}: '𔒲'
-    pub const ANATOLIAN_HIEROGLYPH_A151: char = '𔒲';
-    /// \u{144b3}: '𔒳'
-    pub const ANATOLIAN_HIEROGLYPH_A152: char = '𔒳';
-    /// \u{144b4}: '𔒴'
-    pub const ANATOLIAN_HIEROGLYPH_A153: char = '𔒴';
-    /// \u{144b5}: '𔒵'
-    pub const ANATOLIAN_HIEROGLYPH_A154: char = '𔒵';
-    /// \u{144b6}: '𔒶'
-    pub const ANATOLIAN_HIEROGLYPH_A155: char = '𔒶';
-    /// \u{144b7}: '𔒷'
-    pub const ANATOLIAN_HIEROGLYPH_A156: char = '𔒷';
-    /// \u{144b8}: '𔒸'
-    pub const ANATOLIAN_HIEROGLYPH_A157: char = '𔒸';
-    /// \u{144b9}: '𔒹'
-    pub const ANATOLIAN_HIEROGLYPH_A158: char = '𔒹';
-    /// \u{144ba}: '𔒺'
-    pub const ANATOLIAN_HIEROGLYPH_A159: char = '𔒺';
-    /// \u{144bb}: '𔒻'
-    pub const ANATOLIAN_HIEROGLYPH_A160: char = '𔒻';
-    /// \u{144bc}: '𔒼'
-    pub const ANATOLIAN_HIEROGLYPH_A161: char = '𔒼';
-    /// \u{144bd}: '𔒽'
-    pub const ANATOLIAN_HIEROGLYPH_A162: char = '𔒽';
-    /// \u{144be}: '𔒾'
-    pub const ANATOLIAN_HIEROGLYPH_A163: char = '𔒾';
-    /// \u{144bf}: '𔒿'
-    pub const ANATOLIAN_HIEROGLYPH_A164: char = '𔒿';
-    /// \u{144c0}: '𔓀'
-    pub const ANATOLIAN_HIEROGLYPH_A165: char = '𔓀';
-    /// \u{144c1}: '𔓁'
-    pub const ANATOLIAN_HIEROGLYPH_A166: char = '𔓁';
-    /// \u{144c2}: '𔓂'
-    pub const ANATOLIAN_HIEROGLYPH_A167: char = '𔓂';
-    /// \u{144c3}: '𔓃'
-    pub const ANATOLIAN_HIEROGLYPH_A168: char = '𔓃';
-    /// \u{144c4}: '𔓄'
-    pub const ANATOLIAN_HIEROGLYPH_A169: char = '𔓄';
-    /// \u{144c5}: '𔓅'
-    pub const ANATOLIAN_HIEROGLYPH_A170: char = '𔓅';
-    /// \u{144c6}: '𔓆'
-    pub const ANATOLIAN_HIEROGLYPH_A171: char = '𔓆';
-    /// \u{144c7}: '𔓇'
-    pub const ANATOLIAN_HIEROGLYPH_A172: char = '𔓇';
-    /// \u{144c8}: '𔓈'
-    pub const ANATOLIAN_HIEROGLYPH_A173: char = '𔓈';
-    /// \u{144c9}: '𔓉'
-    pub const ANATOLIAN_HIEROGLYPH_A174: char = '𔓉';
-    /// \u{144ca}: '𔓊'
-    pub const ANATOLIAN_HIEROGLYPH_A175: char = '𔓊';
-    /// \u{144cb}: '𔓋'
-    pub const ANATOLIAN_HIEROGLYPH_A176: char = '𔓋';
-    /// \u{144cc}: '𔓌'
-    pub const ANATOLIAN_HIEROGLYPH_A177: char = '𔓌';
-    /// \u{144cd}: '𔓍'
-    pub const ANATOLIAN_HIEROGLYPH_A178: char = '𔓍';
-    /// \u{144ce}: '𔓎'
-    pub const ANATOLIAN_HIEROGLYPH_A179: char = '𔓎';
-    /// \u{144cf}: '𔓏'
-    pub const ANATOLIAN_HIEROGLYPH_A180: char = '𔓏';
-    /// \u{144d0}: '𔓐'
-    pub const ANATOLIAN_HIEROGLYPH_A181: char = '𔓐';
-    /// \u{144d1}: '𔓑'
-    pub const ANATOLIAN_HIEROGLYPH_A182: char = '𔓑';
-    /// \u{144d2}: '𔓒'
-    pub const ANATOLIAN_HIEROGLYPH_A183: char = '𔓒';
-    /// \u{144d3}: '𔓓'
-    pub const ANATOLIAN_HIEROGLYPH_A184: char = '𔓓';
-    /// \u{144d4}: '𔓔'
-    pub const ANATOLIAN_HIEROGLYPH_A185: char = '𔓔';
-    /// \u{144d5}: '𔓕'
-    pub const ANATOLIAN_HIEROGLYPH_A186: char = '𔓕';
-    /// \u{144d6}: '𔓖'
-    pub const ANATOLIAN_HIEROGLYPH_A187: char = '𔓖';
-    /// \u{144d7}: '𔓗'
-    pub const ANATOLIAN_HIEROGLYPH_A188: char = '𔓗';
-    /// \u{144d8}: '𔓘'
-    pub const ANATOLIAN_HIEROGLYPH_A189: char = '𔓘';
-    /// \u{144d9}: '𔓙'
-    pub const ANATOLIAN_HIEROGLYPH_A190: char = '𔓙';
-    /// \u{144da}: '𔓚'
-    pub const ANATOLIAN_HIEROGLYPH_A191: char = '𔓚';
-    /// \u{144db}: '𔓛'
-    pub const ANATOLIAN_HIEROGLYPH_A192: char = '𔓛';
-    /// \u{144dc}: '𔓜'
-    pub const ANATOLIAN_HIEROGLYPH_A193: char = '𔓜';
-    /// \u{144dd}: '𔓝'
-    pub const ANATOLIAN_HIEROGLYPH_A194: char = '𔓝';
-    /// \u{144de}: '𔓞'
-    pub const ANATOLIAN_HIEROGLYPH_A195: char = '𔓞';
-    /// \u{144df}: '𔓟'
-    pub const ANATOLIAN_HIEROGLYPH_A196: char = '𔓟';
-    /// \u{144e0}: '𔓠'
-    pub const ANATOLIAN_HIEROGLYPH_A197: char = '𔓠';
-    /// \u{144e1}: '𔓡'
-    pub const ANATOLIAN_HIEROGLYPH_A198: char = '𔓡';
-    /// \u{144e2}: '𔓢'
-    pub const ANATOLIAN_HIEROGLYPH_A199: char = '𔓢';
-    /// \u{144e3}: '𔓣'
-    pub const ANATOLIAN_HIEROGLYPH_A200: char = '𔓣';
-    /// \u{144e4}: '𔓤'
-    pub const ANATOLIAN_HIEROGLYPH_A201: char = '𔓤';
-    /// \u{144e5}: '𔓥'
-    pub const ANATOLIAN_HIEROGLYPH_A202: char = '𔓥';
-    /// \u{144e6}: '𔓦'
-    pub const ANATOLIAN_HIEROGLYPH_A202A: char = '𔓦';
-    /// \u{144e7}: '𔓧'
-    pub const ANATOLIAN_HIEROGLYPH_A202B: char = '𔓧';
-    /// \u{144e8}: '𔓨'
-    pub const ANATOLIAN_HIEROGLYPH_A203: char = '𔓨';
-    /// \u{144e9}: '𔓩'
-    pub const ANATOLIAN_HIEROGLYPH_A204: char = '𔓩';
-    /// \u{144ea}: '𔓪'
-    pub const ANATOLIAN_HIEROGLYPH_A205: char = '𔓪';
-    /// \u{144eb}: '𔓫'
-    pub const ANATOLIAN_HIEROGLYPH_A206: char = '𔓫';
-    /// \u{144ec}: '𔓬'
-    pub const ANATOLIAN_HIEROGLYPH_A207: char = '𔓬';
-    /// \u{144ed}: '𔓭'
-    pub const ANATOLIAN_HIEROGLYPH_A207A: char = '𔓭';
-    /// \u{144ee}: '𔓮'
-    pub const ANATOLIAN_HIEROGLYPH_A208: char = '𔓮';
-    /// \u{144ef}: '𔓯'
-    pub const ANATOLIAN_HIEROGLYPH_A209: char = '𔓯';
-    /// \u{144f0}: '𔓰'
-    pub const ANATOLIAN_HIEROGLYPH_A209A: char = '𔓰';
-    /// \u{144f1}: '𔓱'
-    pub const ANATOLIAN_HIEROGLYPH_A210: char = '𔓱';
-    /// \u{144f2}: '𔓲'
-    pub const ANATOLIAN_HIEROGLYPH_A211: char = '𔓲';
-    /// \u{144f3}: '𔓳'
-    pub const ANATOLIAN_HIEROGLYPH_A212: char = '𔓳';
-    /// \u{144f4}: '𔓴'
-    pub const ANATOLIAN_HIEROGLYPH_A213: char = '𔓴';
-    /// \u{144f5}: '𔓵'
-    pub const ANATOLIAN_HIEROGLYPH_A214: char = '𔓵';
-    /// \u{144f6}: '𔓶'
-    pub const ANATOLIAN_HIEROGLYPH_A215: char = '𔓶';
-    /// \u{144f7}: '𔓷'
-    pub const ANATOLIAN_HIEROGLYPH_A215A: char = '𔓷';
-    /// \u{144f8}: '𔓸'
-    pub const ANATOLIAN_HIEROGLYPH_A216: char = '𔓸';
-    /// \u{144f9}: '𔓹'
-    pub const ANATOLIAN_HIEROGLYPH_A216A: char = '𔓹';
-    /// \u{144fa}: '𔓺'
-    pub const ANATOLIAN_HIEROGLYPH_A217: char = '𔓺';
-    /// \u{144fb}: '𔓻'
-    pub const ANATOLIAN_HIEROGLYPH_A218: char = '𔓻';
-    /// \u{144fc}: '𔓼'
-    pub const ANATOLIAN_HIEROGLYPH_A219: char = '𔓼';
-    /// \u{144fd}: '𔓽'
-    pub const ANATOLIAN_HIEROGLYPH_A220: char = '𔓽';
-    /// \u{144fe}: '𔓾'
-    pub const ANATOLIAN_HIEROGLYPH_A221: char = '𔓾';
-    /// \u{144ff}: '𔓿'
-    pub const ANATOLIAN_HIEROGLYPH_A222: char = '𔓿';
-    /// \u{14500}: '𔔀'
-    pub const ANATOLIAN_HIEROGLYPH_A223: char = '𔔀';
-    /// \u{14501}: '𔔁'
-    pub const ANATOLIAN_HIEROGLYPH_A224: char = '𔔁';
-    /// \u{14502}: '𔔂'
-    pub const ANATOLIAN_HIEROGLYPH_A225: char = '𔔂';
-    /// \u{14503}: '𔔃'
-    pub const ANATOLIAN_HIEROGLYPH_A226: char = '𔔃';
-    /// \u{14504}: '𔔄'
-    pub const ANATOLIAN_HIEROGLYPH_A227: char = '𔔄';
-    /// \u{14505}: '𔔅'
-    pub const ANATOLIAN_HIEROGLYPH_A227A: char = '𔔅';
-    /// \u{14506}: '𔔆'
-    pub const ANATOLIAN_HIEROGLYPH_A228: char = '𔔆';
-    /// \u{14507}: '𔔇'
-    pub const ANATOLIAN_HIEROGLYPH_A229: char = '𔔇';
-    /// \u{14508}: '𔔈'
-    pub const ANATOLIAN_HIEROGLYPH_A230: char = '𔔈';
-    /// \u{14509}: '𔔉'
-    pub const ANATOLIAN_HIEROGLYPH_A231: char = '𔔉';
-    /// \u{1450a}: '𔔊'
-    pub const ANATOLIAN_HIEROGLYPH_A232: char = '𔔊';
-    /// \u{1450b}: '𔔋'
-    pub const ANATOLIAN_HIEROGLYPH_A233: char = '𔔋';
-    /// \u{1450c}: '𔔌'
-    pub const ANATOLIAN_HIEROGLYPH_A234: char = '𔔌';
-    /// \u{1450d}: '𔔍'
-    pub const ANATOLIAN_HIEROGLYPH_A235: char = '𔔍';
-    /// \u{1450e}: '𔔎'
-    pub const ANATOLIAN_HIEROGLYPH_A236: char = '𔔎';
-    /// \u{1450f}: '𔔏'
-    pub const ANATOLIAN_HIEROGLYPH_A237: char = '𔔏';
-    /// \u{14510}: '𔔐'
-    pub const ANATOLIAN_HIEROGLYPH_A238: char = '𔔐';
-    /// \u{14511}: '𔔑'
-    pub const ANATOLIAN_HIEROGLYPH_A239: char = '𔔑';
-    /// \u{14512}: '𔔒'
-    pub const ANATOLIAN_HIEROGLYPH_A240: char = '𔔒';
-    /// \u{14513}: '𔔓'
-    pub const ANATOLIAN_HIEROGLYPH_A241: char = '𔔓';
-    /// \u{14514}: '𔔔'
-    pub const ANATOLIAN_HIEROGLYPH_A242: char = '𔔔';
-    /// \u{14515}: '𔔕'
-    pub const ANATOLIAN_HIEROGLYPH_A243: char = '𔔕';
-    /// \u{14516}: '𔔖'
-    pub const ANATOLIAN_HIEROGLYPH_A244: char = '𔔖';
-    /// \u{14517}: '𔔗'
-    pub const ANATOLIAN_HIEROGLYPH_A245: char = '𔔗';
-    /// \u{14518}: '𔔘'
-    pub const ANATOLIAN_HIEROGLYPH_A246: char = '𔔘';
-    /// \u{14519}: '𔔙'
-    pub const ANATOLIAN_HIEROGLYPH_A247: char = '𔔙';
-    /// \u{1451a}: '𔔚'
-    pub const ANATOLIAN_HIEROGLYPH_A248: char = '𔔚';
-    /// \u{1451b}: '𔔛'
-    pub const ANATOLIAN_HIEROGLYPH_A249: char = '𔔛';
-    /// \u{1451c}: '𔔜'
-    pub const ANATOLIAN_HIEROGLYPH_A250: char = '𔔜';
-    /// \u{1451d}: '𔔝'
-    pub const ANATOLIAN_HIEROGLYPH_A251: char = '𔔝';
-    /// \u{1451e}: '𔔞'
-    pub const ANATOLIAN_HIEROGLYPH_A252: char = '𔔞';
-    /// \u{1451f}: '𔔟'
-    pub const ANATOLIAN_HIEROGLYPH_A253: char = '𔔟';
-    /// \u{14520}: '𔔠'
-    pub const ANATOLIAN_HIEROGLYPH_A254: char = '𔔠';
-    /// \u{14521}: '𔔡'
-    pub const ANATOLIAN_HIEROGLYPH_A255: char = '𔔡';
-    /// \u{14522}: '𔔢'
-    pub const ANATOLIAN_HIEROGLYPH_A256: char = '𔔢';
-    /// \u{14523}: '𔔣'
-    pub const ANATOLIAN_HIEROGLYPH_A257: char = '𔔣';
-    /// \u{14524}: '𔔤'
-    pub const ANATOLIAN_HIEROGLYPH_A258: char = '𔔤';
-    /// \u{14525}: '𔔥'
-    pub const ANATOLIAN_HIEROGLYPH_A259: char = '𔔥';
-    /// \u{14526}: '𔔦'
-    pub const ANATOLIAN_HIEROGLYPH_A260: char = '𔔦';
-    /// \u{14527}: '𔔧'
-    pub const ANATOLIAN_HIEROGLYPH_A261: char = '𔔧';
-    /// \u{14528}: '𔔨'
-    pub const ANATOLIAN_HIEROGLYPH_A262: char = '𔔨';
-    /// \u{14529}: '𔔩'
-    pub const ANATOLIAN_HIEROGLYPH_A263: char = '𔔩';
-    /// \u{1452a}: '𔔪'
-    pub const ANATOLIAN_HIEROGLYPH_A264: char = '𔔪';
-    /// \u{1452b}: '𔔫'
-    pub const ANATOLIAN_HIEROGLYPH_A265: char = '𔔫';
-    /// \u{1452c}: '𔔬'
-    pub const ANATOLIAN_HIEROGLYPH_A266: char = '𔔬';
-    /// \u{1452d}: '𔔭'
-    pub const ANATOLIAN_HIEROGLYPH_A267: char = '𔔭';
-    /// \u{1452e}: '𔔮'
-    pub const ANATOLIAN_HIEROGLYPH_A267A: char = '𔔮';
-    /// \u{1452f}: '𔔯'
-    pub const ANATOLIAN_HIEROGLYPH_A268: char = '𔔯';
-    /// \u{14530}: '𔔰'
-    pub const ANATOLIAN_HIEROGLYPH_A269: char = '𔔰';
-    /// \u{14531}: '𔔱'
-    pub const ANATOLIAN_HIEROGLYPH_A270: char = '𔔱';
-    /// \u{14532}: '𔔲'
-    pub const ANATOLIAN_HIEROGLYPH_A271: char = '𔔲';
-    /// \u{14533}: '𔔳'
-    pub const ANATOLIAN_HIEROGLYPH_A272: char = '𔔳';
-    /// \u{14534}: '𔔴'
-    pub const ANATOLIAN_HIEROGLYPH_A273: char = '𔔴';
-    /// \u{14535}: '𔔵'
-    pub const ANATOLIAN_HIEROGLYPH_A274: char = '𔔵';
-    /// \u{14536}: '𔔶'
-    pub const ANATOLIAN_HIEROGLYPH_A275: char = '𔔶';
-    /// \u{14537}: '𔔷'
-    pub const ANATOLIAN_HIEROGLYPH_A276: char = '𔔷';
-    /// \u{14538}: '𔔸'
-    pub const ANATOLIAN_HIEROGLYPH_A277: char = '𔔸';
-    /// \u{14539}: '𔔹'
-    pub const ANATOLIAN_HIEROGLYPH_A278: char = '𔔹';
-    /// \u{1453a}: '𔔺'
-    pub const ANATOLIAN_HIEROGLYPH_A279: char = '𔔺';
-    /// \u{1453b}: '𔔻'
-    pub const ANATOLIAN_HIEROGLYPH_A280: char = '𔔻';
-    /// \u{1453c}: '𔔼'
-    pub const ANATOLIAN_HIEROGLYPH_A281: char = '𔔼';
-    /// \u{1453d}: '𔔽'
-    pub const ANATOLIAN_HIEROGLYPH_A282: char = '𔔽';
-    /// \u{1453e}: '𔔾'
-    pub const ANATOLIAN_HIEROGLYPH_A283: char = '𔔾';
-    /// \u{1453f}: '𔔿'
-    pub const ANATOLIAN_HIEROGLYPH_A284: char = '𔔿';
-    /// \u{14540}: '𔕀'
-    pub const ANATOLIAN_HIEROGLYPH_A285: char = '𔕀';
-    /// \u{14541}: '𔕁'
-    pub const ANATOLIAN_HIEROGLYPH_A286: char = '𔕁';
-    /// \u{14542}: '𔕂'
-    pub const ANATOLIAN_HIEROGLYPH_A287: char = '𔕂';
-    /// \u{14543}: '𔕃'
-    pub const ANATOLIAN_HIEROGLYPH_A288: char = '𔕃';
-    /// \u{14544}: '𔕄'
-    pub const ANATOLIAN_HIEROGLYPH_A289: char = '𔕄';
-    /// \u{14545}: '𔕅'
-    pub const ANATOLIAN_HIEROGLYPH_A289A: char = '𔕅';
-    /// \u{14546}: '𔕆'
-    pub const ANATOLIAN_HIEROGLYPH_A290: char = '𔕆';
-    /// \u{14547}: '𔕇'
-    pub const ANATOLIAN_HIEROGLYPH_A291: char = '𔕇';
-    /// \u{14548}: '𔕈'
-    pub const ANATOLIAN_HIEROGLYPH_A292: char = '𔕈';
-    /// \u{14549}: '𔕉'
-    pub const ANATOLIAN_HIEROGLYPH_A293: char = '𔕉';
-    /// \u{1454a}: '𔕊'
-    pub const ANATOLIAN_HIEROGLYPH_A294: char = '𔕊';
-    /// \u{1454b}: '𔕋'
-    pub const ANATOLIAN_HIEROGLYPH_A294A: char = '𔕋';
-    /// \u{1454c}: '𔕌'
-    pub const ANATOLIAN_HIEROGLYPH_A295: char = '𔕌';
-    /// \u{1454d}: '𔕍'
-    pub const ANATOLIAN_HIEROGLYPH_A296: char = '𔕍';
-    /// \u{1454e}: '𔕎'
-    pub const ANATOLIAN_HIEROGLYPH_A297: char = '𔕎';
-    /// \u{1454f}: '𔕏'
-    pub const ANATOLIAN_HIEROGLYPH_A298: char = '𔕏';
-    /// \u{14550}: '𔕐'
-    pub const ANATOLIAN_HIEROGLYPH_A299: char = '𔕐';
-    /// \u{14551}: '𔕑'
-    pub const ANATOLIAN_HIEROGLYPH_A299A: char = '𔕑';
-    /// \u{14552}: '𔕒'
-    pub const ANATOLIAN_HIEROGLYPH_A300: char = '𔕒';
-    /// \u{14553}: '𔕓'
-    pub const ANATOLIAN_HIEROGLYPH_A301: char = '𔕓';
-    /// \u{14554}: '𔕔'
-    pub const ANATOLIAN_HIEROGLYPH_A302: char = '𔕔';
-    /// \u{14555}: '𔕕'
-    pub const ANATOLIAN_HIEROGLYPH_A303: char = '𔕕';
-    /// \u{14556}: '𔕖'
-    pub const ANATOLIAN_HIEROGLYPH_A304: char = '𔕖';
-    /// \u{14557}: '𔕗'
-    pub const ANATOLIAN_HIEROGLYPH_A305: char = '𔕗';
-    /// \u{14558}: '𔕘'
-    pub const ANATOLIAN_HIEROGLYPH_A306: char = '𔕘';
-    /// \u{14559}: '𔕙'
-    pub const ANATOLIAN_HIEROGLYPH_A307: char = '𔕙';
-    /// \u{1455a}: '𔕚'
-    pub const ANATOLIAN_HIEROGLYPH_A308: char = '𔕚';
-    /// \u{1455b}: '𔕛'
-    pub const ANATOLIAN_HIEROGLYPH_A309: char = '𔕛';
-    /// \u{1455c}: '𔕜'
-    pub const ANATOLIAN_HIEROGLYPH_A309A: char = '𔕜';
-    /// \u{1455d}: '𔕝'
-    pub const ANATOLIAN_HIEROGLYPH_A310: char = '𔕝';
-    /// \u{1455e}: '𔕞'
-    pub const ANATOLIAN_HIEROGLYPH_A311: char = '𔕞';
-    /// \u{1455f}: '𔕟'
-    pub const ANATOLIAN_HIEROGLYPH_A312: char = '𔕟';
-    /// \u{14560}: '𔕠'
-    pub const ANATOLIAN_HIEROGLYPH_A313: char = '𔕠';
-    /// \u{14561}: '𔕡'
-    pub const ANATOLIAN_HIEROGLYPH_A314: char = '𔕡';
-    /// \u{14562}: '𔕢'
-    pub const ANATOLIAN_HIEROGLYPH_A315: char = '𔕢';
-    /// \u{14563}: '𔕣'
-    pub const ANATOLIAN_HIEROGLYPH_A316: char = '𔕣';
-    /// \u{14564}: '𔕤'
-    pub const ANATOLIAN_HIEROGLYPH_A317: char = '𔕤';
-    /// \u{14565}: '𔕥'
-    pub const ANATOLIAN_HIEROGLYPH_A318: char = '𔕥';
-    /// \u{14566}: '𔕦'
-    pub const ANATOLIAN_HIEROGLYPH_A319: char = '𔕦';
-    /// \u{14567}: '𔕧'
-    pub const ANATOLIAN_HIEROGLYPH_A320: char = '𔕧';
-    /// \u{14568}: '𔕨'
-    pub const ANATOLIAN_HIEROGLYPH_A321: char = '𔕨';
-    /// \u{14569}: '𔕩'
-    pub const ANATOLIAN_HIEROGLYPH_A322: char = '𔕩';
-    /// \u{1456a}: '𔕪'
-    pub const ANATOLIAN_HIEROGLYPH_A323: char = '𔕪';
-    /// \u{1456b}: '𔕫'
-    pub const ANATOLIAN_HIEROGLYPH_A324: char = '𔕫';
-    /// \u{1456c}: '𔕬'
-    pub const ANATOLIAN_HIEROGLYPH_A325: char = '𔕬';
-    /// \u{1456d}: '𔕭'
-    pub const ANATOLIAN_HIEROGLYPH_A326: char = '𔕭';
-    /// \u{1456e}: '𔕮'
-    pub const ANATOLIAN_HIEROGLYPH_A327: char = '𔕮';
-    /// \u{1456f}: '𔕯'
-    pub const ANATOLIAN_HIEROGLYPH_A328: char = '𔕯';
-    /// \u{14570}: '𔕰'
-    pub const ANATOLIAN_HIEROGLYPH_A329: char = '𔕰';
-    /// \u{14571}: '𔕱'
-    pub const ANATOLIAN_HIEROGLYPH_A329A: char = '𔕱';
-    /// \u{14572}: '𔕲'
-    pub const ANATOLIAN_HIEROGLYPH_A330: char = '𔕲';
-    /// \u{14573}: '𔕳'
-    pub const ANATOLIAN_HIEROGLYPH_A331: char = '𔕳';
-    /// \u{14574}: '𔕴'
-    pub const ANATOLIAN_HIEROGLYPH_A332A: char = '𔕴';
-    /// \u{14575}: '𔕵'
-    pub const ANATOLIAN_HIEROGLYPH_A332B: char = '𔕵';
-    /// \u{14576}: '𔕶'
-    pub const ANATOLIAN_HIEROGLYPH_A332C: char = '𔕶';
-    /// \u{14577}: '𔕷'
-    pub const ANATOLIAN_HIEROGLYPH_A333: char = '𔕷';
-    /// \u{14578}: '𔕸'
-    pub const ANATOLIAN_HIEROGLYPH_A334: char = '𔕸';
-    /// \u{14579}: '𔕹'
-    pub const ANATOLIAN_HIEROGLYPH_A335: char = '𔕹';
-    /// \u{1457a}: '𔕺'
-    pub const ANATOLIAN_HIEROGLYPH_A336: char = '𔕺';
-    /// \u{1457b}: '𔕻'
-    pub const ANATOLIAN_HIEROGLYPH_A336A: char = '𔕻';
-    /// \u{1457c}: '𔕼'
-    pub const ANATOLIAN_HIEROGLYPH_A336B: char = '𔕼';
-    /// \u{1457d}: '𔕽'
-    pub const ANATOLIAN_HIEROGLYPH_A336C: char = '𔕽';
-    /// \u{1457e}: '𔕾'
-    pub const ANATOLIAN_HIEROGLYPH_A337: char = '𔕾';
-    /// \u{1457f}: '𔕿'
-    pub const ANATOLIAN_HIEROGLYPH_A338: char = '𔕿';
-    /// \u{14580}: '𔖀'
-    pub const ANATOLIAN_HIEROGLYPH_A339: char = '𔖀';
-    /// \u{14581}: '𔖁'
-    pub const ANATOLIAN_HIEROGLYPH_A340: char = '𔖁';
-    /// \u{14582}: '𔖂'
-    pub const ANATOLIAN_HIEROGLYPH_A341: char = '𔖂';
-    /// \u{14583}: '𔖃'
-    pub const ANATOLIAN_HIEROGLYPH_A342: char = '𔖃';
-    /// \u{14584}: '𔖄'
-    pub const ANATOLIAN_HIEROGLYPH_A343: char = '𔖄';
-    /// \u{14585}: '𔖅'
-    pub const ANATOLIAN_HIEROGLYPH_A344: char = '𔖅';
-    /// \u{14586}: '𔖆'
-    pub const ANATOLIAN_HIEROGLYPH_A345: char = '𔖆';
-    /// \u{14587}: '𔖇'
-    pub const ANATOLIAN_HIEROGLYPH_A346: char = '𔖇';
-    /// \u{14588}: '𔖈'
-    pub const ANATOLIAN_HIEROGLYPH_A347: char = '𔖈';
-    /// \u{14589}: '𔖉'
-    pub const ANATOLIAN_HIEROGLYPH_A348: char = '𔖉';
-    /// \u{1458a}: '𔖊'
-    pub const ANATOLIAN_HIEROGLYPH_A349: char = '𔖊';
-    /// \u{1458b}: '𔖋'
-    pub const ANATOLIAN_HIEROGLYPH_A350: char = '𔖋';
-    /// \u{1458c}: '𔖌'
-    pub const ANATOLIAN_HIEROGLYPH_A351: char = '𔖌';
-    /// \u{1458d}: '𔖍'
-    pub const ANATOLIAN_HIEROGLYPH_A352: char = '𔖍';
-    /// \u{1458e}: '𔖎'
-    pub const ANATOLIAN_HIEROGLYPH_A353: char = '𔖎';
-    /// \u{1458f}: '𔖏'
-    pub const ANATOLIAN_HIEROGLYPH_A354: char = '𔖏';
-    /// \u{14590}: '𔖐'
-    pub const ANATOLIAN_HIEROGLYPH_A355: char = '𔖐';
-    /// \u{14591}: '𔖑'
-    pub const ANATOLIAN_HIEROGLYPH_A356: char = '𔖑';
-    /// \u{14592}: '𔖒'
-    pub const ANATOLIAN_HIEROGLYPH_A357: char = '𔖒';
-    /// \u{14593}: '𔖓'
-    pub const ANATOLIAN_HIEROGLYPH_A358: char = '𔖓';
-    /// \u{14594}: '𔖔'
-    pub const ANATOLIAN_HIEROGLYPH_A359: char = '𔖔';
-    /// \u{14595}: '𔖕'
-    pub const ANATOLIAN_HIEROGLYPH_A359A: char = '𔖕';
-    /// \u{14596}: '𔖖'
-    pub const ANATOLIAN_HIEROGLYPH_A360: char = '𔖖';
-    /// \u{14597}: '𔖗'
-    pub const ANATOLIAN_HIEROGLYPH_A361: char = '𔖗';
-    /// \u{14598}: '𔖘'
-    pub const ANATOLIAN_HIEROGLYPH_A362: char = '𔖘';
-    /// \u{14599}: '𔖙'
-    pub const ANATOLIAN_HIEROGLYPH_A363: char = '𔖙';
-    /// \u{1459a}: '𔖚'
-    pub const ANATOLIAN_HIEROGLYPH_A364: char = '𔖚';
-    /// \u{1459b}: '𔖛'
-    pub const ANATOLIAN_HIEROGLYPH_A364A: char = '𔖛';
-    /// \u{1459c}: '𔖜'
-    pub const ANATOLIAN_HIEROGLYPH_A365: char = '𔖜';
-    /// \u{1459d}: '𔖝'
-    pub const ANATOLIAN_HIEROGLYPH_A366: char = '𔖝';
-    /// \u{1459e}: '𔖞'
-    pub const ANATOLIAN_HIEROGLYPH_A367: char = '𔖞';
-    /// \u{1459f}: '𔖟'
-    pub const ANATOLIAN_HIEROGLYPH_A368: char = '𔖟';
-    /// \u{145a0}: '𔖠'
-    pub const ANATOLIAN_HIEROGLYPH_A368A: char = '𔖠';
-    /// \u{145a1}: '𔖡'
-    pub const ANATOLIAN_HIEROGLYPH_A369: char = '𔖡';
-    /// \u{145a2}: '𔖢'
-    pub const ANATOLIAN_HIEROGLYPH_A370: char = '𔖢';
-    /// \u{145a3}: '𔖣'
-    pub const ANATOLIAN_HIEROGLYPH_A371: char = '𔖣';
-    /// \u{145a4}: '𔖤'
-    pub const ANATOLIAN_HIEROGLYPH_A371A: char = '𔖤';
-    /// \u{145a5}: '𔖥'
-    pub const ANATOLIAN_HIEROGLYPH_A372: char = '𔖥';
-    /// \u{145a6}: '𔖦'
-    pub const ANATOLIAN_HIEROGLYPH_A373: char = '𔖦';
-    /// \u{145a7}: '𔖧'
-    pub const ANATOLIAN_HIEROGLYPH_A374: char = '𔖧';
-    /// \u{145a8}: '𔖨'
-    pub const ANATOLIAN_HIEROGLYPH_A375: char = '𔖨';
-    /// \u{145a9}: '𔖩'
-    pub const ANATOLIAN_HIEROGLYPH_A376: char = '𔖩';
-    /// \u{145aa}: '𔖪'
-    pub const ANATOLIAN_HIEROGLYPH_A377: char = '𔖪';
-    /// \u{145ab}: '𔖫'
-    pub const ANATOLIAN_HIEROGLYPH_A378: char = '𔖫';
-    /// \u{145ac}: '𔖬'
-    pub const ANATOLIAN_HIEROGLYPH_A379: char = '𔖬';
-    /// \u{145ad}: '𔖭'
-    pub const ANATOLIAN_HIEROGLYPH_A380: char = '𔖭';
-    /// \u{145ae}: '𔖮'
-    pub const ANATOLIAN_HIEROGLYPH_A381: char = '𔖮';
-    /// \u{145af}: '𔖯'
-    pub const ANATOLIAN_HIEROGLYPH_A381A: char = '𔖯';
-    /// \u{145b0}: '𔖰'
-    pub const ANATOLIAN_HIEROGLYPH_A382: char = '𔖰';
-    /// \u{145b1}: '𔖱'
-    pub const ANATOLIAN_HIEROGLYPH_A383_RA_OR_RI: char = '𔖱';
-    /// \u{145b2}: '𔖲'
-    pub const ANATOLIAN_HIEROGLYPH_A383A: char = '𔖲';
-    /// \u{145b3}: '𔖳'
-    pub const ANATOLIAN_HIEROGLYPH_A384: char = '𔖳';
-    /// \u{145b4}: '𔖴'
-    pub const ANATOLIAN_HIEROGLYPH_A385: char = '𔖴';
-    /// \u{145b5}: '𔖵'
-    pub const ANATOLIAN_HIEROGLYPH_A386: char = '𔖵';
-    /// \u{145b6}: '𔖶'
-    pub const ANATOLIAN_HIEROGLYPH_A386A: char = '𔖶';
-    /// \u{145b7}: '𔖷'
-    pub const ANATOLIAN_HIEROGLYPH_A387: char = '𔖷';
-    /// \u{145b8}: '𔖸'
-    pub const ANATOLIAN_HIEROGLYPH_A388: char = '𔖸';
-    /// \u{145b9}: '𔖹'
-    pub const ANATOLIAN_HIEROGLYPH_A389: char = '𔖹';
-    /// \u{145ba}: '𔖺'
-    pub const ANATOLIAN_HIEROGLYPH_A390: char = '𔖺';
-    /// \u{145bb}: '𔖻'
-    pub const ANATOLIAN_HIEROGLYPH_A391: char = '𔖻';
-    /// \u{145bc}: '𔖼'
-    pub const ANATOLIAN_HIEROGLYPH_A392: char = '𔖼';
-    /// \u{145bd}: '𔖽'
-    pub const ANATOLIAN_HIEROGLYPH_A393_EIGHT: char = '𔖽';
-    /// \u{145be}: '𔖾'
-    pub const ANATOLIAN_HIEROGLYPH_A394: char = '𔖾';
-    /// \u{145bf}: '𔖿'
-    pub const ANATOLIAN_HIEROGLYPH_A395: char = '𔖿';
-    /// \u{145c0}: '𔗀'
-    pub const ANATOLIAN_HIEROGLYPH_A396: char = '𔗀';
-    /// \u{145c1}: '𔗁'
-    pub const ANATOLIAN_HIEROGLYPH_A397: char = '𔗁';
-    /// \u{145c2}: '𔗂'
-    pub const ANATOLIAN_HIEROGLYPH_A398: char = '𔗂';
-    /// \u{145c3}: '𔗃'
-    pub const ANATOLIAN_HIEROGLYPH_A399: char = '𔗃';
-    /// \u{145c4}: '𔗄'
-    pub const ANATOLIAN_HIEROGLYPH_A400: char = '𔗄';
-    /// \u{145c5}: '𔗅'
-    pub const ANATOLIAN_HIEROGLYPH_A401: char = '𔗅';
-    /// \u{145c6}: '𔗆'
-    pub const ANATOLIAN_HIEROGLYPH_A402: char = '𔗆';
-    /// \u{145c7}: '𔗇'
-    pub const ANATOLIAN_HIEROGLYPH_A403: char = '𔗇';
-    /// \u{145c8}: '𔗈'
-    pub const ANATOLIAN_HIEROGLYPH_A404: char = '𔗈';
-    /// \u{145c9}: '𔗉'
-    pub const ANATOLIAN_HIEROGLYPH_A405: char = '𔗉';
-    /// \u{145ca}: '𔗊'
-    pub const ANATOLIAN_HIEROGLYPH_A406: char = '𔗊';
-    /// \u{145cb}: '𔗋'
-    pub const ANATOLIAN_HIEROGLYPH_A407: char = '𔗋';
-    /// \u{145cc}: '𔗌'
-    pub const ANATOLIAN_HIEROGLYPH_A408: char = '𔗌';
-    /// \u{145cd}: '𔗍'
-    pub const ANATOLIAN_HIEROGLYPH_A409: char = '𔗍';
-    /// \u{145ce}: '𔗎'
-    pub const ANATOLIAN_HIEROGLYPH_A410_BEGIN_LOGOGRAM_MARK: char = '𔗎';
-    /// \u{145cf}: '𔗏'
-    pub const ANATOLIAN_HIEROGLYPH_A410A_END_LOGOGRAM_MARK: char = '𔗏';
-    /// \u{145d0}: '𔗐'
-    pub const ANATOLIAN_HIEROGLYPH_A411: char = '𔗐';
-    /// \u{145d1}: '𔗑'
-    pub const ANATOLIAN_HIEROGLYPH_A412: char = '𔗑';
-    /// \u{145d2}: '𔗒'
-    pub const ANATOLIAN_HIEROGLYPH_A413: char = '𔗒';
-    /// \u{145d3}: '𔗓'
-    pub const ANATOLIAN_HIEROGLYPH_A414: char = '𔗓';
-    /// \u{145d4}: '𔗔'
-    pub const ANATOLIAN_HIEROGLYPH_A415: char = '𔗔';
-    /// \u{145d5}: '𔗕'
-    pub const ANATOLIAN_HIEROGLYPH_A416: char = '𔗕';
-    /// \u{145d6}: '𔗖'
-    pub const ANATOLIAN_HIEROGLYPH_A417: char = '𔗖';
-    /// \u{145d7}: '𔗗'
-    pub const ANATOLIAN_HIEROGLYPH_A418: char = '𔗗';
-    /// \u{145d8}: '𔗘'
-    pub const ANATOLIAN_HIEROGLYPH_A419: char = '𔗘';
-    /// \u{145d9}: '𔗙'
-    pub const ANATOLIAN_HIEROGLYPH_A420: char = '𔗙';
-    /// \u{145da}: '𔗚'
-    pub const ANATOLIAN_HIEROGLYPH_A421: char = '𔗚';
-    /// \u{145db}: '𔗛'
-    pub const ANATOLIAN_HIEROGLYPH_A422: char = '𔗛';
-    /// \u{145dc}: '𔗜'
-    pub const ANATOLIAN_HIEROGLYPH_A423: char = '𔗜';
-    /// \u{145dd}: '𔗝'
-    pub const ANATOLIAN_HIEROGLYPH_A424: char = '𔗝';
-    /// \u{145de}: '𔗞'
-    pub const ANATOLIAN_HIEROGLYPH_A425: char = '𔗞';
-    /// \u{145df}: '𔗟'
-    pub const ANATOLIAN_HIEROGLYPH_A426: char = '𔗟';
-    /// \u{145e0}: '𔗠'
-    pub const ANATOLIAN_HIEROGLYPH_A427: char = '𔗠';
-    /// \u{145e1}: '𔗡'
-    pub const ANATOLIAN_HIEROGLYPH_A428: char = '𔗡';
-    /// \u{145e2}: '𔗢'
-    pub const ANATOLIAN_HIEROGLYPH_A429: char = '𔗢';
-    /// \u{145e3}: '𔗣'
-    pub const ANATOLIAN_HIEROGLYPH_A430: char = '𔗣';
-    /// \u{145e4}: '𔗤'
-    pub const ANATOLIAN_HIEROGLYPH_A431: char = '𔗤';
-    /// \u{145e5}: '𔗥'
-    pub const ANATOLIAN_HIEROGLYPH_A432: char = '𔗥';
-    /// \u{145e6}: '𔗦'
-    pub const ANATOLIAN_HIEROGLYPH_A433: char = '𔗦';
-    /// \u{145e7}: '𔗧'
-    pub const ANATOLIAN_HIEROGLYPH_A434: char = '𔗧';
-    /// \u{145e8}: '𔗨'
-    pub const ANATOLIAN_HIEROGLYPH_A435: char = '𔗨';
-    /// \u{145e9}: '𔗩'
-    pub const ANATOLIAN_HIEROGLYPH_A436: char = '𔗩';
-    /// \u{145ea}: '𔗪'
-    pub const ANATOLIAN_HIEROGLYPH_A437: char = '𔗪';
-    /// \u{145eb}: '𔗫'
-    pub const ANATOLIAN_HIEROGLYPH_A438: char = '𔗫';
-    /// \u{145ec}: '𔗬'
-    pub const ANATOLIAN_HIEROGLYPH_A439: char = '𔗬';
-    /// \u{145ed}: '𔗭'
-    pub const ANATOLIAN_HIEROGLYPH_A440: char = '𔗭';
-    /// \u{145ee}: '𔗮'
-    pub const ANATOLIAN_HIEROGLYPH_A441: char = '𔗮';
-    /// \u{145ef}: '𔗯'
-    pub const ANATOLIAN_HIEROGLYPH_A442: char = '𔗯';
-    /// \u{145f0}: '𔗰'
-    pub const ANATOLIAN_HIEROGLYPH_A443: char = '𔗰';
-    /// \u{145f1}: '𔗱'
-    pub const ANATOLIAN_HIEROGLYPH_A444: char = '𔗱';
-    /// \u{145f2}: '𔗲'
-    pub const ANATOLIAN_HIEROGLYPH_A445: char = '𔗲';
-    /// \u{145f3}: '𔗳'
-    pub const ANATOLIAN_HIEROGLYPH_A446: char = '𔗳';
-    /// \u{145f4}: '𔗴'
-    pub const ANATOLIAN_HIEROGLYPH_A447: char = '𔗴';
-    /// \u{145f5}: '𔗵'
-    pub const ANATOLIAN_HIEROGLYPH_A448: char = '𔗵';
-    /// \u{145f6}: '𔗶'
-    pub const ANATOLIAN_HIEROGLYPH_A449: char = '𔗶';
-    /// \u{145f7}: '𔗷'
-    pub const ANATOLIAN_HIEROGLYPH_A450: char = '𔗷';
-    /// \u{145f8}: '𔗸'
-    pub const ANATOLIAN_HIEROGLYPH_A450A: char = '𔗸';
-    /// \u{145f9}: '𔗹'
-    pub const ANATOLIAN_HIEROGLYPH_A451: char = '𔗹';
-    /// \u{145fa}: '𔗺'
-    pub const ANATOLIAN_HIEROGLYPH_A452: char = '𔗺';
-    /// \u{145fb}: '𔗻'
-    pub const ANATOLIAN_HIEROGLYPH_A453: char = '𔗻';
-    /// \u{145fc}: '𔗼'
-    pub const ANATOLIAN_HIEROGLYPH_A454: char = '𔗼';
-    /// \u{145fd}: '𔗽'
-    pub const ANATOLIAN_HIEROGLYPH_A455: char = '𔗽';
-    /// \u{145fe}: '𔗾'
-    pub const ANATOLIAN_HIEROGLYPH_A456: char = '𔗾';
-    /// \u{145ff}: '𔗿'
-    pub const ANATOLIAN_HIEROGLYPH_A457: char = '𔗿';
-    /// \u{14600}: '𔘀'
-    pub const ANATOLIAN_HIEROGLYPH_A457A: char = '𔘀';
-    /// \u{14601}: '𔘁'
-    pub const ANATOLIAN_HIEROGLYPH_A458: char = '𔘁';
-    /// \u{14602}: '𔘂'
-    pub const ANATOLIAN_HIEROGLYPH_A459: char = '𔘂';
-    /// \u{14603}: '𔘃'
-    pub const ANATOLIAN_HIEROGLYPH_A460: char = '𔘃';
-    /// \u{14604}: '𔘄'
-    pub const ANATOLIAN_HIEROGLYPH_A461: char = '𔘄';
-    /// \u{14605}: '𔘅'
-    pub const ANATOLIAN_HIEROGLYPH_A462: char = '𔘅';
-    /// \u{14606}: '𔘆'
-    pub const ANATOLIAN_HIEROGLYPH_A463: char = '𔘆';
-    /// \u{14607}: '𔘇'
-    pub const ANATOLIAN_HIEROGLYPH_A464: char = '𔘇';
-    /// \u{14608}: '𔘈'
-    pub const ANATOLIAN_HIEROGLYPH_A465: char = '𔘈';
-    /// \u{14609}: '𔘉'
-    pub const ANATOLIAN_HIEROGLYPH_A466: char = '𔘉';
-    /// \u{1460a}: '𔘊'
-    pub const ANATOLIAN_HIEROGLYPH_A467: char = '𔘊';
-    /// \u{1460b}: '𔘋'
-    pub const ANATOLIAN_HIEROGLYPH_A468: char = '𔘋';
-    /// \u{1460c}: '𔘌'
-    pub const ANATOLIAN_HIEROGLYPH_A469: char = '𔘌';
-    /// \u{1460d}: '𔘍'
-    pub const ANATOLIAN_HIEROGLYPH_A470: char = '𔘍';
-    /// \u{1460e}: '𔘎'
-    pub const ANATOLIAN_HIEROGLYPH_A471: char = '𔘎';
-    /// \u{1460f}: '𔘏'
-    pub const ANATOLIAN_HIEROGLYPH_A472: char = '𔘏';
-    /// \u{14610}: '𔘐'
-    pub const ANATOLIAN_HIEROGLYPH_A473: char = '𔘐';
-    /// \u{14611}: '𔘑'
-    pub const ANATOLIAN_HIEROGLYPH_A474: char = '𔘑';
-    /// \u{14612}: '𔘒'
-    pub const ANATOLIAN_HIEROGLYPH_A475: char = '𔘒';
-    /// \u{14613}: '𔘓'
-    pub const ANATOLIAN_HIEROGLYPH_A476: char = '𔘓';
-    /// \u{14614}: '𔘔'
-    pub const ANATOLIAN_HIEROGLYPH_A477: char = '𔘔';
-    /// \u{14615}: '𔘕'
-    pub const ANATOLIAN_HIEROGLYPH_A478: char = '𔘕';
-    /// \u{14616}: '𔘖'
-    pub const ANATOLIAN_HIEROGLYPH_A479: char = '𔘖';
-    /// \u{14617}: '𔘗'
-    pub const ANATOLIAN_HIEROGLYPH_A480: char = '𔘗';
-    /// \u{14618}: '𔘘'
-    pub const ANATOLIAN_HIEROGLYPH_A481: char = '𔘘';
-    /// \u{14619}: '𔘙'
-    pub const ANATOLIAN_HIEROGLYPH_A482: char = '𔘙';
-    /// \u{1461a}: '𔘚'
-    pub const ANATOLIAN_HIEROGLYPH_A483: char = '𔘚';
-    /// \u{1461b}: '𔘛'
-    pub const ANATOLIAN_HIEROGLYPH_A484: char = '𔘛';
-    /// \u{1461c}: '𔘜'
-    pub const ANATOLIAN_HIEROGLYPH_A485: char = '𔘜';
-    /// \u{1461d}: '𔘝'
-    pub const ANATOLIAN_HIEROGLYPH_A486: char = '𔘝';
-    /// \u{1461e}: '𔘞'
-    pub const ANATOLIAN_HIEROGLYPH_A487: char = '𔘞';
-    /// \u{1461f}: '𔘟'
-    pub const ANATOLIAN_HIEROGLYPH_A488: char = '𔘟';
-    /// \u{14620}: '𔘠'
-    pub const ANATOLIAN_HIEROGLYPH_A489: char = '𔘠';
-    /// \u{14621}: '𔘡'
-    pub const ANATOLIAN_HIEROGLYPH_A490: char = '𔘡';
-    /// \u{14622}: '𔘢'
-    pub const ANATOLIAN_HIEROGLYPH_A491: char = '𔘢';
-    /// \u{14623}: '𔘣'
-    pub const ANATOLIAN_HIEROGLYPH_A492: char = '𔘣';
-    /// \u{14624}: '𔘤'
-    pub const ANATOLIAN_HIEROGLYPH_A493: char = '𔘤';
-    /// \u{14625}: '𔘥'
-    pub const ANATOLIAN_HIEROGLYPH_A494: char = '𔘥';
-    /// \u{14626}: '𔘦'
-    pub const ANATOLIAN_HIEROGLYPH_A495: char = '𔘦';
-    /// \u{14627}: '𔘧'
-    pub const ANATOLIAN_HIEROGLYPH_A496: char = '𔘧';
-    /// \u{14628}: '𔘨'
-    pub const ANATOLIAN_HIEROGLYPH_A497: char = '𔘨';
-    /// \u{14629}: '𔘩'
-    pub const ANATOLIAN_HIEROGLYPH_A501: char = '𔘩';
-    /// \u{1462a}: '𔘪'
-    pub const ANATOLIAN_HIEROGLYPH_A502: char = '𔘪';
-    /// \u{1462b}: '𔘫'
-    pub const ANATOLIAN_HIEROGLYPH_A503: char = '𔘫';
-    /// \u{1462c}: '𔘬'
-    pub const ANATOLIAN_HIEROGLYPH_A504: char = '𔘬';
-    /// \u{1462d}: '𔘭'
-    pub const ANATOLIAN_HIEROGLYPH_A505: char = '𔘭';
-    /// \u{1462e}: '𔘮'
-    pub const ANATOLIAN_HIEROGLYPH_A506: char = '𔘮';
-    /// \u{1462f}: '𔘯'
-    pub const ANATOLIAN_HIEROGLYPH_A507: char = '𔘯';
-    /// \u{14630}: '𔘰'
-    pub const ANATOLIAN_HIEROGLYPH_A508: char = '𔘰';
-    /// \u{14631}: '𔘱'
-    pub const ANATOLIAN_HIEROGLYPH_A509: char = '𔘱';
-    /// \u{14632}: '𔘲'
-    pub const ANATOLIAN_HIEROGLYPH_A510: char = '𔘲';
-    /// \u{14633}: '𔘳'
-    pub const ANATOLIAN_HIEROGLYPH_A511: char = '𔘳';
-    /// \u{14634}: '𔘴'
-    pub const ANATOLIAN_HIEROGLYPH_A512: char = '𔘴';
-    /// \u{14635}: '𔘵'
-    pub const ANATOLIAN_HIEROGLYPH_A513: char = '𔘵';
-    /// \u{14636}: '𔘶'
-    pub const ANATOLIAN_HIEROGLYPH_A514: char = '𔘶';
-    /// \u{14637}: '𔘷'
-    pub const ANATOLIAN_HIEROGLYPH_A515: char = '𔘷';
-    /// \u{14638}: '𔘸'
-    pub const ANATOLIAN_HIEROGLYPH_A516: char = '𔘸';
-    /// \u{14639}: '𔘹'
-    pub const ANATOLIAN_HIEROGLYPH_A517: char = '𔘹';
-    /// \u{1463a}: '𔘺'
-    pub const ANATOLIAN_HIEROGLYPH_A518: char = '𔘺';
-    /// \u{1463b}: '𔘻'
-    pub const ANATOLIAN_HIEROGLYPH_A519: char = '𔘻';
-    /// \u{1463c}: '𔘼'
-    pub const ANATOLIAN_HIEROGLYPH_A520: char = '𔘼';
-    /// \u{1463d}: '𔘽'
-    pub const ANATOLIAN_HIEROGLYPH_A521: char = '𔘽';
-    /// \u{1463e}: '𔘾'
-    pub const ANATOLIAN_HIEROGLYPH_A522: char = '𔘾';
-    /// \u{1463f}: '𔘿'
-    pub const ANATOLIAN_HIEROGLYPH_A523: char = '𔘿';
-    /// \u{14640}: '𔙀'
-    pub const ANATOLIAN_HIEROGLYPH_A524: char = '𔙀';
-    /// \u{14641}: '𔙁'
-    pub const ANATOLIAN_HIEROGLYPH_A525: char = '𔙁';
-    /// \u{14642}: '𔙂'
-    pub const ANATOLIAN_HIEROGLYPH_A526: char = '𔙂';
-    /// \u{14643}: '𔙃'
-    pub const ANATOLIAN_HIEROGLYPH_A527: char = '𔙃';
-    /// \u{14644}: '𔙄'
-    pub const ANATOLIAN_HIEROGLYPH_A528: char = '𔙄';
-    /// \u{14645}: '𔙅'
-    pub const ANATOLIAN_HIEROGLYPH_A529: char = '𔙅';
-    /// \u{14646}: '𔙆'
-    pub const ANATOLIAN_HIEROGLYPH_A530: char = '𔙆';
-}
 
 /// An enum to represent all characters in the AnatolianHieroglyphs block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -2341,591 +1172,590 @@ pub enum AnatolianHieroglyphs {
 
 impl Into<char> for AnatolianHieroglyphs {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            AnatolianHieroglyphs::AnatolianHieroglyphA001 => ANATOLIAN_HIEROGLYPH_A001,
-            AnatolianHieroglyphs::AnatolianHieroglyphA002 => ANATOLIAN_HIEROGLYPH_A002,
-            AnatolianHieroglyphs::AnatolianHieroglyphA003 => ANATOLIAN_HIEROGLYPH_A003,
-            AnatolianHieroglyphs::AnatolianHieroglyphA004 => ANATOLIAN_HIEROGLYPH_A004,
-            AnatolianHieroglyphs::AnatolianHieroglyphA005 => ANATOLIAN_HIEROGLYPH_A005,
-            AnatolianHieroglyphs::AnatolianHieroglyphA006 => ANATOLIAN_HIEROGLYPH_A006,
-            AnatolianHieroglyphs::AnatolianHieroglyphA007 => ANATOLIAN_HIEROGLYPH_A007,
-            AnatolianHieroglyphs::AnatolianHieroglyphA008 => ANATOLIAN_HIEROGLYPH_A008,
-            AnatolianHieroglyphs::AnatolianHieroglyphA009 => ANATOLIAN_HIEROGLYPH_A009,
-            AnatolianHieroglyphs::AnatolianHieroglyphA010 => ANATOLIAN_HIEROGLYPH_A010,
-            AnatolianHieroglyphs::AnatolianHieroglyphA010a => ANATOLIAN_HIEROGLYPH_A010A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA011 => ANATOLIAN_HIEROGLYPH_A011,
-            AnatolianHieroglyphs::AnatolianHieroglyphA012 => ANATOLIAN_HIEROGLYPH_A012,
-            AnatolianHieroglyphs::AnatolianHieroglyphA013 => ANATOLIAN_HIEROGLYPH_A013,
-            AnatolianHieroglyphs::AnatolianHieroglyphA014 => ANATOLIAN_HIEROGLYPH_A014,
-            AnatolianHieroglyphs::AnatolianHieroglyphA015 => ANATOLIAN_HIEROGLYPH_A015,
-            AnatolianHieroglyphs::AnatolianHieroglyphA016 => ANATOLIAN_HIEROGLYPH_A016,
-            AnatolianHieroglyphs::AnatolianHieroglyphA017 => ANATOLIAN_HIEROGLYPH_A017,
-            AnatolianHieroglyphs::AnatolianHieroglyphA018 => ANATOLIAN_HIEROGLYPH_A018,
-            AnatolianHieroglyphs::AnatolianHieroglyphA019 => ANATOLIAN_HIEROGLYPH_A019,
-            AnatolianHieroglyphs::AnatolianHieroglyphA020 => ANATOLIAN_HIEROGLYPH_A020,
-            AnatolianHieroglyphs::AnatolianHieroglyphA021 => ANATOLIAN_HIEROGLYPH_A021,
-            AnatolianHieroglyphs::AnatolianHieroglyphA022 => ANATOLIAN_HIEROGLYPH_A022,
-            AnatolianHieroglyphs::AnatolianHieroglyphA023 => ANATOLIAN_HIEROGLYPH_A023,
-            AnatolianHieroglyphs::AnatolianHieroglyphA024 => ANATOLIAN_HIEROGLYPH_A024,
-            AnatolianHieroglyphs::AnatolianHieroglyphA025 => ANATOLIAN_HIEROGLYPH_A025,
-            AnatolianHieroglyphs::AnatolianHieroglyphA026 => ANATOLIAN_HIEROGLYPH_A026,
-            AnatolianHieroglyphs::AnatolianHieroglyphA026a => ANATOLIAN_HIEROGLYPH_A026A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA027 => ANATOLIAN_HIEROGLYPH_A027,
-            AnatolianHieroglyphs::AnatolianHieroglyphA028 => ANATOLIAN_HIEROGLYPH_A028,
-            AnatolianHieroglyphs::AnatolianHieroglyphA029 => ANATOLIAN_HIEROGLYPH_A029,
-            AnatolianHieroglyphs::AnatolianHieroglyphA030 => ANATOLIAN_HIEROGLYPH_A030,
-            AnatolianHieroglyphs::AnatolianHieroglyphA031 => ANATOLIAN_HIEROGLYPH_A031,
-            AnatolianHieroglyphs::AnatolianHieroglyphA032 => ANATOLIAN_HIEROGLYPH_A032,
-            AnatolianHieroglyphs::AnatolianHieroglyphA033 => ANATOLIAN_HIEROGLYPH_A033,
-            AnatolianHieroglyphs::AnatolianHieroglyphA034 => ANATOLIAN_HIEROGLYPH_A034,
-            AnatolianHieroglyphs::AnatolianHieroglyphA035 => ANATOLIAN_HIEROGLYPH_A035,
-            AnatolianHieroglyphs::AnatolianHieroglyphA036 => ANATOLIAN_HIEROGLYPH_A036,
-            AnatolianHieroglyphs::AnatolianHieroglyphA037 => ANATOLIAN_HIEROGLYPH_A037,
-            AnatolianHieroglyphs::AnatolianHieroglyphA038 => ANATOLIAN_HIEROGLYPH_A038,
-            AnatolianHieroglyphs::AnatolianHieroglyphA039 => ANATOLIAN_HIEROGLYPH_A039,
-            AnatolianHieroglyphs::AnatolianHieroglyphA039a => ANATOLIAN_HIEROGLYPH_A039A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA040 => ANATOLIAN_HIEROGLYPH_A040,
-            AnatolianHieroglyphs::AnatolianHieroglyphA041 => ANATOLIAN_HIEROGLYPH_A041,
-            AnatolianHieroglyphs::AnatolianHieroglyphA041a => ANATOLIAN_HIEROGLYPH_A041A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA042 => ANATOLIAN_HIEROGLYPH_A042,
-            AnatolianHieroglyphs::AnatolianHieroglyphA043 => ANATOLIAN_HIEROGLYPH_A043,
-            AnatolianHieroglyphs::AnatolianHieroglyphA044 => ANATOLIAN_HIEROGLYPH_A044,
-            AnatolianHieroglyphs::AnatolianHieroglyphA045 => ANATOLIAN_HIEROGLYPH_A045,
-            AnatolianHieroglyphs::AnatolianHieroglyphA045a => ANATOLIAN_HIEROGLYPH_A045A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA046 => ANATOLIAN_HIEROGLYPH_A046,
-            AnatolianHieroglyphs::AnatolianHieroglyphA046a => ANATOLIAN_HIEROGLYPH_A046A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA046b => ANATOLIAN_HIEROGLYPH_A046B,
-            AnatolianHieroglyphs::AnatolianHieroglyphA047 => ANATOLIAN_HIEROGLYPH_A047,
-            AnatolianHieroglyphs::AnatolianHieroglyphA048 => ANATOLIAN_HIEROGLYPH_A048,
-            AnatolianHieroglyphs::AnatolianHieroglyphA049 => ANATOLIAN_HIEROGLYPH_A049,
-            AnatolianHieroglyphs::AnatolianHieroglyphA050 => ANATOLIAN_HIEROGLYPH_A050,
-            AnatolianHieroglyphs::AnatolianHieroglyphA051 => ANATOLIAN_HIEROGLYPH_A051,
-            AnatolianHieroglyphs::AnatolianHieroglyphA052 => ANATOLIAN_HIEROGLYPH_A052,
-            AnatolianHieroglyphs::AnatolianHieroglyphA053 => ANATOLIAN_HIEROGLYPH_A053,
-            AnatolianHieroglyphs::AnatolianHieroglyphA054 => ANATOLIAN_HIEROGLYPH_A054,
-            AnatolianHieroglyphs::AnatolianHieroglyphA055 => ANATOLIAN_HIEROGLYPH_A055,
-            AnatolianHieroglyphs::AnatolianHieroglyphA056 => ANATOLIAN_HIEROGLYPH_A056,
-            AnatolianHieroglyphs::AnatolianHieroglyphA057 => ANATOLIAN_HIEROGLYPH_A057,
-            AnatolianHieroglyphs::AnatolianHieroglyphA058 => ANATOLIAN_HIEROGLYPH_A058,
-            AnatolianHieroglyphs::AnatolianHieroglyphA059 => ANATOLIAN_HIEROGLYPH_A059,
-            AnatolianHieroglyphs::AnatolianHieroglyphA060 => ANATOLIAN_HIEROGLYPH_A060,
-            AnatolianHieroglyphs::AnatolianHieroglyphA061 => ANATOLIAN_HIEROGLYPH_A061,
-            AnatolianHieroglyphs::AnatolianHieroglyphA062 => ANATOLIAN_HIEROGLYPH_A062,
-            AnatolianHieroglyphs::AnatolianHieroglyphA063 => ANATOLIAN_HIEROGLYPH_A063,
-            AnatolianHieroglyphs::AnatolianHieroglyphA064 => ANATOLIAN_HIEROGLYPH_A064,
-            AnatolianHieroglyphs::AnatolianHieroglyphA065 => ANATOLIAN_HIEROGLYPH_A065,
-            AnatolianHieroglyphs::AnatolianHieroglyphA066 => ANATOLIAN_HIEROGLYPH_A066,
-            AnatolianHieroglyphs::AnatolianHieroglyphA066a => ANATOLIAN_HIEROGLYPH_A066A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA066b => ANATOLIAN_HIEROGLYPH_A066B,
-            AnatolianHieroglyphs::AnatolianHieroglyphA066c => ANATOLIAN_HIEROGLYPH_A066C,
-            AnatolianHieroglyphs::AnatolianHieroglyphA067 => ANATOLIAN_HIEROGLYPH_A067,
-            AnatolianHieroglyphs::AnatolianHieroglyphA068 => ANATOLIAN_HIEROGLYPH_A068,
-            AnatolianHieroglyphs::AnatolianHieroglyphA069 => ANATOLIAN_HIEROGLYPH_A069,
-            AnatolianHieroglyphs::AnatolianHieroglyphA070 => ANATOLIAN_HIEROGLYPH_A070,
-            AnatolianHieroglyphs::AnatolianHieroglyphA071 => ANATOLIAN_HIEROGLYPH_A071,
-            AnatolianHieroglyphs::AnatolianHieroglyphA072 => ANATOLIAN_HIEROGLYPH_A072,
-            AnatolianHieroglyphs::AnatolianHieroglyphA073 => ANATOLIAN_HIEROGLYPH_A073,
-            AnatolianHieroglyphs::AnatolianHieroglyphA074 => ANATOLIAN_HIEROGLYPH_A074,
-            AnatolianHieroglyphs::AnatolianHieroglyphA075 => ANATOLIAN_HIEROGLYPH_A075,
-            AnatolianHieroglyphs::AnatolianHieroglyphA076 => ANATOLIAN_HIEROGLYPH_A076,
-            AnatolianHieroglyphs::AnatolianHieroglyphA077 => ANATOLIAN_HIEROGLYPH_A077,
-            AnatolianHieroglyphs::AnatolianHieroglyphA078 => ANATOLIAN_HIEROGLYPH_A078,
-            AnatolianHieroglyphs::AnatolianHieroglyphA079 => ANATOLIAN_HIEROGLYPH_A079,
-            AnatolianHieroglyphs::AnatolianHieroglyphA080 => ANATOLIAN_HIEROGLYPH_A080,
-            AnatolianHieroglyphs::AnatolianHieroglyphA081 => ANATOLIAN_HIEROGLYPH_A081,
-            AnatolianHieroglyphs::AnatolianHieroglyphA082 => ANATOLIAN_HIEROGLYPH_A082,
-            AnatolianHieroglyphs::AnatolianHieroglyphA083 => ANATOLIAN_HIEROGLYPH_A083,
-            AnatolianHieroglyphs::AnatolianHieroglyphA084 => ANATOLIAN_HIEROGLYPH_A084,
-            AnatolianHieroglyphs::AnatolianHieroglyphA085 => ANATOLIAN_HIEROGLYPH_A085,
-            AnatolianHieroglyphs::AnatolianHieroglyphA086 => ANATOLIAN_HIEROGLYPH_A086,
-            AnatolianHieroglyphs::AnatolianHieroglyphA087 => ANATOLIAN_HIEROGLYPH_A087,
-            AnatolianHieroglyphs::AnatolianHieroglyphA088 => ANATOLIAN_HIEROGLYPH_A088,
-            AnatolianHieroglyphs::AnatolianHieroglyphA089 => ANATOLIAN_HIEROGLYPH_A089,
-            AnatolianHieroglyphs::AnatolianHieroglyphA090 => ANATOLIAN_HIEROGLYPH_A090,
-            AnatolianHieroglyphs::AnatolianHieroglyphA091 => ANATOLIAN_HIEROGLYPH_A091,
-            AnatolianHieroglyphs::AnatolianHieroglyphA092 => ANATOLIAN_HIEROGLYPH_A092,
-            AnatolianHieroglyphs::AnatolianHieroglyphA093 => ANATOLIAN_HIEROGLYPH_A093,
-            AnatolianHieroglyphs::AnatolianHieroglyphA094 => ANATOLIAN_HIEROGLYPH_A094,
-            AnatolianHieroglyphs::AnatolianHieroglyphA095 => ANATOLIAN_HIEROGLYPH_A095,
-            AnatolianHieroglyphs::AnatolianHieroglyphA096 => ANATOLIAN_HIEROGLYPH_A096,
-            AnatolianHieroglyphs::AnatolianHieroglyphA097 => ANATOLIAN_HIEROGLYPH_A097,
-            AnatolianHieroglyphs::AnatolianHieroglyphA097a => ANATOLIAN_HIEROGLYPH_A097A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA098 => ANATOLIAN_HIEROGLYPH_A098,
-            AnatolianHieroglyphs::AnatolianHieroglyphA098a => ANATOLIAN_HIEROGLYPH_A098A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA099 => ANATOLIAN_HIEROGLYPH_A099,
-            AnatolianHieroglyphs::AnatolianHieroglyphA100 => ANATOLIAN_HIEROGLYPH_A100,
-            AnatolianHieroglyphs::AnatolianHieroglyphA100a => ANATOLIAN_HIEROGLYPH_A100A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA101 => ANATOLIAN_HIEROGLYPH_A101,
-            AnatolianHieroglyphs::AnatolianHieroglyphA101a => ANATOLIAN_HIEROGLYPH_A101A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA102 => ANATOLIAN_HIEROGLYPH_A102,
-            AnatolianHieroglyphs::AnatolianHieroglyphA102a => ANATOLIAN_HIEROGLYPH_A102A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA103 => ANATOLIAN_HIEROGLYPH_A103,
-            AnatolianHieroglyphs::AnatolianHieroglyphA104 => ANATOLIAN_HIEROGLYPH_A104,
-            AnatolianHieroglyphs::AnatolianHieroglyphA104a => ANATOLIAN_HIEROGLYPH_A104A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA104b => ANATOLIAN_HIEROGLYPH_A104B,
-            AnatolianHieroglyphs::AnatolianHieroglyphA104c => ANATOLIAN_HIEROGLYPH_A104C,
-            AnatolianHieroglyphs::AnatolianHieroglyphA105 => ANATOLIAN_HIEROGLYPH_A105,
-            AnatolianHieroglyphs::AnatolianHieroglyphA105a => ANATOLIAN_HIEROGLYPH_A105A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA105b => ANATOLIAN_HIEROGLYPH_A105B,
-            AnatolianHieroglyphs::AnatolianHieroglyphA106 => ANATOLIAN_HIEROGLYPH_A106,
-            AnatolianHieroglyphs::AnatolianHieroglyphA107 => ANATOLIAN_HIEROGLYPH_A107,
-            AnatolianHieroglyphs::AnatolianHieroglyphA107a => ANATOLIAN_HIEROGLYPH_A107A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA107b => ANATOLIAN_HIEROGLYPH_A107B,
-            AnatolianHieroglyphs::AnatolianHieroglyphA107c => ANATOLIAN_HIEROGLYPH_A107C,
-            AnatolianHieroglyphs::AnatolianHieroglyphA108 => ANATOLIAN_HIEROGLYPH_A108,
-            AnatolianHieroglyphs::AnatolianHieroglyphA109 => ANATOLIAN_HIEROGLYPH_A109,
-            AnatolianHieroglyphs::AnatolianHieroglyphA110 => ANATOLIAN_HIEROGLYPH_A110,
-            AnatolianHieroglyphs::AnatolianHieroglyphA110a => ANATOLIAN_HIEROGLYPH_A110A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA110b => ANATOLIAN_HIEROGLYPH_A110B,
-            AnatolianHieroglyphs::AnatolianHieroglyphA111 => ANATOLIAN_HIEROGLYPH_A111,
-            AnatolianHieroglyphs::AnatolianHieroglyphA112 => ANATOLIAN_HIEROGLYPH_A112,
-            AnatolianHieroglyphs::AnatolianHieroglyphA113 => ANATOLIAN_HIEROGLYPH_A113,
-            AnatolianHieroglyphs::AnatolianHieroglyphA114 => ANATOLIAN_HIEROGLYPH_A114,
-            AnatolianHieroglyphs::AnatolianHieroglyphA115 => ANATOLIAN_HIEROGLYPH_A115,
-            AnatolianHieroglyphs::AnatolianHieroglyphA115a => ANATOLIAN_HIEROGLYPH_A115A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA116 => ANATOLIAN_HIEROGLYPH_A116,
-            AnatolianHieroglyphs::AnatolianHieroglyphA117 => ANATOLIAN_HIEROGLYPH_A117,
-            AnatolianHieroglyphs::AnatolianHieroglyphA118 => ANATOLIAN_HIEROGLYPH_A118,
-            AnatolianHieroglyphs::AnatolianHieroglyphA119 => ANATOLIAN_HIEROGLYPH_A119,
-            AnatolianHieroglyphs::AnatolianHieroglyphA120 => ANATOLIAN_HIEROGLYPH_A120,
-            AnatolianHieroglyphs::AnatolianHieroglyphA121 => ANATOLIAN_HIEROGLYPH_A121,
-            AnatolianHieroglyphs::AnatolianHieroglyphA122 => ANATOLIAN_HIEROGLYPH_A122,
-            AnatolianHieroglyphs::AnatolianHieroglyphA123 => ANATOLIAN_HIEROGLYPH_A123,
-            AnatolianHieroglyphs::AnatolianHieroglyphA124 => ANATOLIAN_HIEROGLYPH_A124,
-            AnatolianHieroglyphs::AnatolianHieroglyphA125 => ANATOLIAN_HIEROGLYPH_A125,
-            AnatolianHieroglyphs::AnatolianHieroglyphA125a => ANATOLIAN_HIEROGLYPH_A125A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA126 => ANATOLIAN_HIEROGLYPH_A126,
-            AnatolianHieroglyphs::AnatolianHieroglyphA127 => ANATOLIAN_HIEROGLYPH_A127,
-            AnatolianHieroglyphs::AnatolianHieroglyphA128 => ANATOLIAN_HIEROGLYPH_A128,
-            AnatolianHieroglyphs::AnatolianHieroglyphA129 => ANATOLIAN_HIEROGLYPH_A129,
-            AnatolianHieroglyphs::AnatolianHieroglyphA130 => ANATOLIAN_HIEROGLYPH_A130,
-            AnatolianHieroglyphs::AnatolianHieroglyphA131 => ANATOLIAN_HIEROGLYPH_A131,
-            AnatolianHieroglyphs::AnatolianHieroglyphA132 => ANATOLIAN_HIEROGLYPH_A132,
-            AnatolianHieroglyphs::AnatolianHieroglyphA133 => ANATOLIAN_HIEROGLYPH_A133,
-            AnatolianHieroglyphs::AnatolianHieroglyphA134 => ANATOLIAN_HIEROGLYPH_A134,
-            AnatolianHieroglyphs::AnatolianHieroglyphA135 => ANATOLIAN_HIEROGLYPH_A135,
-            AnatolianHieroglyphs::AnatolianHieroglyphA135a => ANATOLIAN_HIEROGLYPH_A135A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA136 => ANATOLIAN_HIEROGLYPH_A136,
-            AnatolianHieroglyphs::AnatolianHieroglyphA137 => ANATOLIAN_HIEROGLYPH_A137,
-            AnatolianHieroglyphs::AnatolianHieroglyphA138 => ANATOLIAN_HIEROGLYPH_A138,
-            AnatolianHieroglyphs::AnatolianHieroglyphA139 => ANATOLIAN_HIEROGLYPH_A139,
-            AnatolianHieroglyphs::AnatolianHieroglyphA140 => ANATOLIAN_HIEROGLYPH_A140,
-            AnatolianHieroglyphs::AnatolianHieroglyphA141 => ANATOLIAN_HIEROGLYPH_A141,
-            AnatolianHieroglyphs::AnatolianHieroglyphA142 => ANATOLIAN_HIEROGLYPH_A142,
-            AnatolianHieroglyphs::AnatolianHieroglyphA143 => ANATOLIAN_HIEROGLYPH_A143,
-            AnatolianHieroglyphs::AnatolianHieroglyphA144 => ANATOLIAN_HIEROGLYPH_A144,
-            AnatolianHieroglyphs::AnatolianHieroglyphA145 => ANATOLIAN_HIEROGLYPH_A145,
-            AnatolianHieroglyphs::AnatolianHieroglyphA146 => ANATOLIAN_HIEROGLYPH_A146,
-            AnatolianHieroglyphs::AnatolianHieroglyphA147 => ANATOLIAN_HIEROGLYPH_A147,
-            AnatolianHieroglyphs::AnatolianHieroglyphA148 => ANATOLIAN_HIEROGLYPH_A148,
-            AnatolianHieroglyphs::AnatolianHieroglyphA149 => ANATOLIAN_HIEROGLYPH_A149,
-            AnatolianHieroglyphs::AnatolianHieroglyphA150 => ANATOLIAN_HIEROGLYPH_A150,
-            AnatolianHieroglyphs::AnatolianHieroglyphA151 => ANATOLIAN_HIEROGLYPH_A151,
-            AnatolianHieroglyphs::AnatolianHieroglyphA152 => ANATOLIAN_HIEROGLYPH_A152,
-            AnatolianHieroglyphs::AnatolianHieroglyphA153 => ANATOLIAN_HIEROGLYPH_A153,
-            AnatolianHieroglyphs::AnatolianHieroglyphA154 => ANATOLIAN_HIEROGLYPH_A154,
-            AnatolianHieroglyphs::AnatolianHieroglyphA155 => ANATOLIAN_HIEROGLYPH_A155,
-            AnatolianHieroglyphs::AnatolianHieroglyphA156 => ANATOLIAN_HIEROGLYPH_A156,
-            AnatolianHieroglyphs::AnatolianHieroglyphA157 => ANATOLIAN_HIEROGLYPH_A157,
-            AnatolianHieroglyphs::AnatolianHieroglyphA158 => ANATOLIAN_HIEROGLYPH_A158,
-            AnatolianHieroglyphs::AnatolianHieroglyphA159 => ANATOLIAN_HIEROGLYPH_A159,
-            AnatolianHieroglyphs::AnatolianHieroglyphA160 => ANATOLIAN_HIEROGLYPH_A160,
-            AnatolianHieroglyphs::AnatolianHieroglyphA161 => ANATOLIAN_HIEROGLYPH_A161,
-            AnatolianHieroglyphs::AnatolianHieroglyphA162 => ANATOLIAN_HIEROGLYPH_A162,
-            AnatolianHieroglyphs::AnatolianHieroglyphA163 => ANATOLIAN_HIEROGLYPH_A163,
-            AnatolianHieroglyphs::AnatolianHieroglyphA164 => ANATOLIAN_HIEROGLYPH_A164,
-            AnatolianHieroglyphs::AnatolianHieroglyphA165 => ANATOLIAN_HIEROGLYPH_A165,
-            AnatolianHieroglyphs::AnatolianHieroglyphA166 => ANATOLIAN_HIEROGLYPH_A166,
-            AnatolianHieroglyphs::AnatolianHieroglyphA167 => ANATOLIAN_HIEROGLYPH_A167,
-            AnatolianHieroglyphs::AnatolianHieroglyphA168 => ANATOLIAN_HIEROGLYPH_A168,
-            AnatolianHieroglyphs::AnatolianHieroglyphA169 => ANATOLIAN_HIEROGLYPH_A169,
-            AnatolianHieroglyphs::AnatolianHieroglyphA170 => ANATOLIAN_HIEROGLYPH_A170,
-            AnatolianHieroglyphs::AnatolianHieroglyphA171 => ANATOLIAN_HIEROGLYPH_A171,
-            AnatolianHieroglyphs::AnatolianHieroglyphA172 => ANATOLIAN_HIEROGLYPH_A172,
-            AnatolianHieroglyphs::AnatolianHieroglyphA173 => ANATOLIAN_HIEROGLYPH_A173,
-            AnatolianHieroglyphs::AnatolianHieroglyphA174 => ANATOLIAN_HIEROGLYPH_A174,
-            AnatolianHieroglyphs::AnatolianHieroglyphA175 => ANATOLIAN_HIEROGLYPH_A175,
-            AnatolianHieroglyphs::AnatolianHieroglyphA176 => ANATOLIAN_HIEROGLYPH_A176,
-            AnatolianHieroglyphs::AnatolianHieroglyphA177 => ANATOLIAN_HIEROGLYPH_A177,
-            AnatolianHieroglyphs::AnatolianHieroglyphA178 => ANATOLIAN_HIEROGLYPH_A178,
-            AnatolianHieroglyphs::AnatolianHieroglyphA179 => ANATOLIAN_HIEROGLYPH_A179,
-            AnatolianHieroglyphs::AnatolianHieroglyphA180 => ANATOLIAN_HIEROGLYPH_A180,
-            AnatolianHieroglyphs::AnatolianHieroglyphA181 => ANATOLIAN_HIEROGLYPH_A181,
-            AnatolianHieroglyphs::AnatolianHieroglyphA182 => ANATOLIAN_HIEROGLYPH_A182,
-            AnatolianHieroglyphs::AnatolianHieroglyphA183 => ANATOLIAN_HIEROGLYPH_A183,
-            AnatolianHieroglyphs::AnatolianHieroglyphA184 => ANATOLIAN_HIEROGLYPH_A184,
-            AnatolianHieroglyphs::AnatolianHieroglyphA185 => ANATOLIAN_HIEROGLYPH_A185,
-            AnatolianHieroglyphs::AnatolianHieroglyphA186 => ANATOLIAN_HIEROGLYPH_A186,
-            AnatolianHieroglyphs::AnatolianHieroglyphA187 => ANATOLIAN_HIEROGLYPH_A187,
-            AnatolianHieroglyphs::AnatolianHieroglyphA188 => ANATOLIAN_HIEROGLYPH_A188,
-            AnatolianHieroglyphs::AnatolianHieroglyphA189 => ANATOLIAN_HIEROGLYPH_A189,
-            AnatolianHieroglyphs::AnatolianHieroglyphA190 => ANATOLIAN_HIEROGLYPH_A190,
-            AnatolianHieroglyphs::AnatolianHieroglyphA191 => ANATOLIAN_HIEROGLYPH_A191,
-            AnatolianHieroglyphs::AnatolianHieroglyphA192 => ANATOLIAN_HIEROGLYPH_A192,
-            AnatolianHieroglyphs::AnatolianHieroglyphA193 => ANATOLIAN_HIEROGLYPH_A193,
-            AnatolianHieroglyphs::AnatolianHieroglyphA194 => ANATOLIAN_HIEROGLYPH_A194,
-            AnatolianHieroglyphs::AnatolianHieroglyphA195 => ANATOLIAN_HIEROGLYPH_A195,
-            AnatolianHieroglyphs::AnatolianHieroglyphA196 => ANATOLIAN_HIEROGLYPH_A196,
-            AnatolianHieroglyphs::AnatolianHieroglyphA197 => ANATOLIAN_HIEROGLYPH_A197,
-            AnatolianHieroglyphs::AnatolianHieroglyphA198 => ANATOLIAN_HIEROGLYPH_A198,
-            AnatolianHieroglyphs::AnatolianHieroglyphA199 => ANATOLIAN_HIEROGLYPH_A199,
-            AnatolianHieroglyphs::AnatolianHieroglyphA200 => ANATOLIAN_HIEROGLYPH_A200,
-            AnatolianHieroglyphs::AnatolianHieroglyphA201 => ANATOLIAN_HIEROGLYPH_A201,
-            AnatolianHieroglyphs::AnatolianHieroglyphA202 => ANATOLIAN_HIEROGLYPH_A202,
-            AnatolianHieroglyphs::AnatolianHieroglyphA202a => ANATOLIAN_HIEROGLYPH_A202A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA202b => ANATOLIAN_HIEROGLYPH_A202B,
-            AnatolianHieroglyphs::AnatolianHieroglyphA203 => ANATOLIAN_HIEROGLYPH_A203,
-            AnatolianHieroglyphs::AnatolianHieroglyphA204 => ANATOLIAN_HIEROGLYPH_A204,
-            AnatolianHieroglyphs::AnatolianHieroglyphA205 => ANATOLIAN_HIEROGLYPH_A205,
-            AnatolianHieroglyphs::AnatolianHieroglyphA206 => ANATOLIAN_HIEROGLYPH_A206,
-            AnatolianHieroglyphs::AnatolianHieroglyphA207 => ANATOLIAN_HIEROGLYPH_A207,
-            AnatolianHieroglyphs::AnatolianHieroglyphA207a => ANATOLIAN_HIEROGLYPH_A207A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA208 => ANATOLIAN_HIEROGLYPH_A208,
-            AnatolianHieroglyphs::AnatolianHieroglyphA209 => ANATOLIAN_HIEROGLYPH_A209,
-            AnatolianHieroglyphs::AnatolianHieroglyphA209a => ANATOLIAN_HIEROGLYPH_A209A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA210 => ANATOLIAN_HIEROGLYPH_A210,
-            AnatolianHieroglyphs::AnatolianHieroglyphA211 => ANATOLIAN_HIEROGLYPH_A211,
-            AnatolianHieroglyphs::AnatolianHieroglyphA212 => ANATOLIAN_HIEROGLYPH_A212,
-            AnatolianHieroglyphs::AnatolianHieroglyphA213 => ANATOLIAN_HIEROGLYPH_A213,
-            AnatolianHieroglyphs::AnatolianHieroglyphA214 => ANATOLIAN_HIEROGLYPH_A214,
-            AnatolianHieroglyphs::AnatolianHieroglyphA215 => ANATOLIAN_HIEROGLYPH_A215,
-            AnatolianHieroglyphs::AnatolianHieroglyphA215a => ANATOLIAN_HIEROGLYPH_A215A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA216 => ANATOLIAN_HIEROGLYPH_A216,
-            AnatolianHieroglyphs::AnatolianHieroglyphA216a => ANATOLIAN_HIEROGLYPH_A216A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA217 => ANATOLIAN_HIEROGLYPH_A217,
-            AnatolianHieroglyphs::AnatolianHieroglyphA218 => ANATOLIAN_HIEROGLYPH_A218,
-            AnatolianHieroglyphs::AnatolianHieroglyphA219 => ANATOLIAN_HIEROGLYPH_A219,
-            AnatolianHieroglyphs::AnatolianHieroglyphA220 => ANATOLIAN_HIEROGLYPH_A220,
-            AnatolianHieroglyphs::AnatolianHieroglyphA221 => ANATOLIAN_HIEROGLYPH_A221,
-            AnatolianHieroglyphs::AnatolianHieroglyphA222 => ANATOLIAN_HIEROGLYPH_A222,
-            AnatolianHieroglyphs::AnatolianHieroglyphA223 => ANATOLIAN_HIEROGLYPH_A223,
-            AnatolianHieroglyphs::AnatolianHieroglyphA224 => ANATOLIAN_HIEROGLYPH_A224,
-            AnatolianHieroglyphs::AnatolianHieroglyphA225 => ANATOLIAN_HIEROGLYPH_A225,
-            AnatolianHieroglyphs::AnatolianHieroglyphA226 => ANATOLIAN_HIEROGLYPH_A226,
-            AnatolianHieroglyphs::AnatolianHieroglyphA227 => ANATOLIAN_HIEROGLYPH_A227,
-            AnatolianHieroglyphs::AnatolianHieroglyphA227a => ANATOLIAN_HIEROGLYPH_A227A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA228 => ANATOLIAN_HIEROGLYPH_A228,
-            AnatolianHieroglyphs::AnatolianHieroglyphA229 => ANATOLIAN_HIEROGLYPH_A229,
-            AnatolianHieroglyphs::AnatolianHieroglyphA230 => ANATOLIAN_HIEROGLYPH_A230,
-            AnatolianHieroglyphs::AnatolianHieroglyphA231 => ANATOLIAN_HIEROGLYPH_A231,
-            AnatolianHieroglyphs::AnatolianHieroglyphA232 => ANATOLIAN_HIEROGLYPH_A232,
-            AnatolianHieroglyphs::AnatolianHieroglyphA233 => ANATOLIAN_HIEROGLYPH_A233,
-            AnatolianHieroglyphs::AnatolianHieroglyphA234 => ANATOLIAN_HIEROGLYPH_A234,
-            AnatolianHieroglyphs::AnatolianHieroglyphA235 => ANATOLIAN_HIEROGLYPH_A235,
-            AnatolianHieroglyphs::AnatolianHieroglyphA236 => ANATOLIAN_HIEROGLYPH_A236,
-            AnatolianHieroglyphs::AnatolianHieroglyphA237 => ANATOLIAN_HIEROGLYPH_A237,
-            AnatolianHieroglyphs::AnatolianHieroglyphA238 => ANATOLIAN_HIEROGLYPH_A238,
-            AnatolianHieroglyphs::AnatolianHieroglyphA239 => ANATOLIAN_HIEROGLYPH_A239,
-            AnatolianHieroglyphs::AnatolianHieroglyphA240 => ANATOLIAN_HIEROGLYPH_A240,
-            AnatolianHieroglyphs::AnatolianHieroglyphA241 => ANATOLIAN_HIEROGLYPH_A241,
-            AnatolianHieroglyphs::AnatolianHieroglyphA242 => ANATOLIAN_HIEROGLYPH_A242,
-            AnatolianHieroglyphs::AnatolianHieroglyphA243 => ANATOLIAN_HIEROGLYPH_A243,
-            AnatolianHieroglyphs::AnatolianHieroglyphA244 => ANATOLIAN_HIEROGLYPH_A244,
-            AnatolianHieroglyphs::AnatolianHieroglyphA245 => ANATOLIAN_HIEROGLYPH_A245,
-            AnatolianHieroglyphs::AnatolianHieroglyphA246 => ANATOLIAN_HIEROGLYPH_A246,
-            AnatolianHieroglyphs::AnatolianHieroglyphA247 => ANATOLIAN_HIEROGLYPH_A247,
-            AnatolianHieroglyphs::AnatolianHieroglyphA248 => ANATOLIAN_HIEROGLYPH_A248,
-            AnatolianHieroglyphs::AnatolianHieroglyphA249 => ANATOLIAN_HIEROGLYPH_A249,
-            AnatolianHieroglyphs::AnatolianHieroglyphA250 => ANATOLIAN_HIEROGLYPH_A250,
-            AnatolianHieroglyphs::AnatolianHieroglyphA251 => ANATOLIAN_HIEROGLYPH_A251,
-            AnatolianHieroglyphs::AnatolianHieroglyphA252 => ANATOLIAN_HIEROGLYPH_A252,
-            AnatolianHieroglyphs::AnatolianHieroglyphA253 => ANATOLIAN_HIEROGLYPH_A253,
-            AnatolianHieroglyphs::AnatolianHieroglyphA254 => ANATOLIAN_HIEROGLYPH_A254,
-            AnatolianHieroglyphs::AnatolianHieroglyphA255 => ANATOLIAN_HIEROGLYPH_A255,
-            AnatolianHieroglyphs::AnatolianHieroglyphA256 => ANATOLIAN_HIEROGLYPH_A256,
-            AnatolianHieroglyphs::AnatolianHieroglyphA257 => ANATOLIAN_HIEROGLYPH_A257,
-            AnatolianHieroglyphs::AnatolianHieroglyphA258 => ANATOLIAN_HIEROGLYPH_A258,
-            AnatolianHieroglyphs::AnatolianHieroglyphA259 => ANATOLIAN_HIEROGLYPH_A259,
-            AnatolianHieroglyphs::AnatolianHieroglyphA260 => ANATOLIAN_HIEROGLYPH_A260,
-            AnatolianHieroglyphs::AnatolianHieroglyphA261 => ANATOLIAN_HIEROGLYPH_A261,
-            AnatolianHieroglyphs::AnatolianHieroglyphA262 => ANATOLIAN_HIEROGLYPH_A262,
-            AnatolianHieroglyphs::AnatolianHieroglyphA263 => ANATOLIAN_HIEROGLYPH_A263,
-            AnatolianHieroglyphs::AnatolianHieroglyphA264 => ANATOLIAN_HIEROGLYPH_A264,
-            AnatolianHieroglyphs::AnatolianHieroglyphA265 => ANATOLIAN_HIEROGLYPH_A265,
-            AnatolianHieroglyphs::AnatolianHieroglyphA266 => ANATOLIAN_HIEROGLYPH_A266,
-            AnatolianHieroglyphs::AnatolianHieroglyphA267 => ANATOLIAN_HIEROGLYPH_A267,
-            AnatolianHieroglyphs::AnatolianHieroglyphA267a => ANATOLIAN_HIEROGLYPH_A267A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA268 => ANATOLIAN_HIEROGLYPH_A268,
-            AnatolianHieroglyphs::AnatolianHieroglyphA269 => ANATOLIAN_HIEROGLYPH_A269,
-            AnatolianHieroglyphs::AnatolianHieroglyphA270 => ANATOLIAN_HIEROGLYPH_A270,
-            AnatolianHieroglyphs::AnatolianHieroglyphA271 => ANATOLIAN_HIEROGLYPH_A271,
-            AnatolianHieroglyphs::AnatolianHieroglyphA272 => ANATOLIAN_HIEROGLYPH_A272,
-            AnatolianHieroglyphs::AnatolianHieroglyphA273 => ANATOLIAN_HIEROGLYPH_A273,
-            AnatolianHieroglyphs::AnatolianHieroglyphA274 => ANATOLIAN_HIEROGLYPH_A274,
-            AnatolianHieroglyphs::AnatolianHieroglyphA275 => ANATOLIAN_HIEROGLYPH_A275,
-            AnatolianHieroglyphs::AnatolianHieroglyphA276 => ANATOLIAN_HIEROGLYPH_A276,
-            AnatolianHieroglyphs::AnatolianHieroglyphA277 => ANATOLIAN_HIEROGLYPH_A277,
-            AnatolianHieroglyphs::AnatolianHieroglyphA278 => ANATOLIAN_HIEROGLYPH_A278,
-            AnatolianHieroglyphs::AnatolianHieroglyphA279 => ANATOLIAN_HIEROGLYPH_A279,
-            AnatolianHieroglyphs::AnatolianHieroglyphA280 => ANATOLIAN_HIEROGLYPH_A280,
-            AnatolianHieroglyphs::AnatolianHieroglyphA281 => ANATOLIAN_HIEROGLYPH_A281,
-            AnatolianHieroglyphs::AnatolianHieroglyphA282 => ANATOLIAN_HIEROGLYPH_A282,
-            AnatolianHieroglyphs::AnatolianHieroglyphA283 => ANATOLIAN_HIEROGLYPH_A283,
-            AnatolianHieroglyphs::AnatolianHieroglyphA284 => ANATOLIAN_HIEROGLYPH_A284,
-            AnatolianHieroglyphs::AnatolianHieroglyphA285 => ANATOLIAN_HIEROGLYPH_A285,
-            AnatolianHieroglyphs::AnatolianHieroglyphA286 => ANATOLIAN_HIEROGLYPH_A286,
-            AnatolianHieroglyphs::AnatolianHieroglyphA287 => ANATOLIAN_HIEROGLYPH_A287,
-            AnatolianHieroglyphs::AnatolianHieroglyphA288 => ANATOLIAN_HIEROGLYPH_A288,
-            AnatolianHieroglyphs::AnatolianHieroglyphA289 => ANATOLIAN_HIEROGLYPH_A289,
-            AnatolianHieroglyphs::AnatolianHieroglyphA289a => ANATOLIAN_HIEROGLYPH_A289A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA290 => ANATOLIAN_HIEROGLYPH_A290,
-            AnatolianHieroglyphs::AnatolianHieroglyphA291 => ANATOLIAN_HIEROGLYPH_A291,
-            AnatolianHieroglyphs::AnatolianHieroglyphA292 => ANATOLIAN_HIEROGLYPH_A292,
-            AnatolianHieroglyphs::AnatolianHieroglyphA293 => ANATOLIAN_HIEROGLYPH_A293,
-            AnatolianHieroglyphs::AnatolianHieroglyphA294 => ANATOLIAN_HIEROGLYPH_A294,
-            AnatolianHieroglyphs::AnatolianHieroglyphA294a => ANATOLIAN_HIEROGLYPH_A294A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA295 => ANATOLIAN_HIEROGLYPH_A295,
-            AnatolianHieroglyphs::AnatolianHieroglyphA296 => ANATOLIAN_HIEROGLYPH_A296,
-            AnatolianHieroglyphs::AnatolianHieroglyphA297 => ANATOLIAN_HIEROGLYPH_A297,
-            AnatolianHieroglyphs::AnatolianHieroglyphA298 => ANATOLIAN_HIEROGLYPH_A298,
-            AnatolianHieroglyphs::AnatolianHieroglyphA299 => ANATOLIAN_HIEROGLYPH_A299,
-            AnatolianHieroglyphs::AnatolianHieroglyphA299a => ANATOLIAN_HIEROGLYPH_A299A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA300 => ANATOLIAN_HIEROGLYPH_A300,
-            AnatolianHieroglyphs::AnatolianHieroglyphA301 => ANATOLIAN_HIEROGLYPH_A301,
-            AnatolianHieroglyphs::AnatolianHieroglyphA302 => ANATOLIAN_HIEROGLYPH_A302,
-            AnatolianHieroglyphs::AnatolianHieroglyphA303 => ANATOLIAN_HIEROGLYPH_A303,
-            AnatolianHieroglyphs::AnatolianHieroglyphA304 => ANATOLIAN_HIEROGLYPH_A304,
-            AnatolianHieroglyphs::AnatolianHieroglyphA305 => ANATOLIAN_HIEROGLYPH_A305,
-            AnatolianHieroglyphs::AnatolianHieroglyphA306 => ANATOLIAN_HIEROGLYPH_A306,
-            AnatolianHieroglyphs::AnatolianHieroglyphA307 => ANATOLIAN_HIEROGLYPH_A307,
-            AnatolianHieroglyphs::AnatolianHieroglyphA308 => ANATOLIAN_HIEROGLYPH_A308,
-            AnatolianHieroglyphs::AnatolianHieroglyphA309 => ANATOLIAN_HIEROGLYPH_A309,
-            AnatolianHieroglyphs::AnatolianHieroglyphA309a => ANATOLIAN_HIEROGLYPH_A309A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA310 => ANATOLIAN_HIEROGLYPH_A310,
-            AnatolianHieroglyphs::AnatolianHieroglyphA311 => ANATOLIAN_HIEROGLYPH_A311,
-            AnatolianHieroglyphs::AnatolianHieroglyphA312 => ANATOLIAN_HIEROGLYPH_A312,
-            AnatolianHieroglyphs::AnatolianHieroglyphA313 => ANATOLIAN_HIEROGLYPH_A313,
-            AnatolianHieroglyphs::AnatolianHieroglyphA314 => ANATOLIAN_HIEROGLYPH_A314,
-            AnatolianHieroglyphs::AnatolianHieroglyphA315 => ANATOLIAN_HIEROGLYPH_A315,
-            AnatolianHieroglyphs::AnatolianHieroglyphA316 => ANATOLIAN_HIEROGLYPH_A316,
-            AnatolianHieroglyphs::AnatolianHieroglyphA317 => ANATOLIAN_HIEROGLYPH_A317,
-            AnatolianHieroglyphs::AnatolianHieroglyphA318 => ANATOLIAN_HIEROGLYPH_A318,
-            AnatolianHieroglyphs::AnatolianHieroglyphA319 => ANATOLIAN_HIEROGLYPH_A319,
-            AnatolianHieroglyphs::AnatolianHieroglyphA320 => ANATOLIAN_HIEROGLYPH_A320,
-            AnatolianHieroglyphs::AnatolianHieroglyphA321 => ANATOLIAN_HIEROGLYPH_A321,
-            AnatolianHieroglyphs::AnatolianHieroglyphA322 => ANATOLIAN_HIEROGLYPH_A322,
-            AnatolianHieroglyphs::AnatolianHieroglyphA323 => ANATOLIAN_HIEROGLYPH_A323,
-            AnatolianHieroglyphs::AnatolianHieroglyphA324 => ANATOLIAN_HIEROGLYPH_A324,
-            AnatolianHieroglyphs::AnatolianHieroglyphA325 => ANATOLIAN_HIEROGLYPH_A325,
-            AnatolianHieroglyphs::AnatolianHieroglyphA326 => ANATOLIAN_HIEROGLYPH_A326,
-            AnatolianHieroglyphs::AnatolianHieroglyphA327 => ANATOLIAN_HIEROGLYPH_A327,
-            AnatolianHieroglyphs::AnatolianHieroglyphA328 => ANATOLIAN_HIEROGLYPH_A328,
-            AnatolianHieroglyphs::AnatolianHieroglyphA329 => ANATOLIAN_HIEROGLYPH_A329,
-            AnatolianHieroglyphs::AnatolianHieroglyphA329a => ANATOLIAN_HIEROGLYPH_A329A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA330 => ANATOLIAN_HIEROGLYPH_A330,
-            AnatolianHieroglyphs::AnatolianHieroglyphA331 => ANATOLIAN_HIEROGLYPH_A331,
-            AnatolianHieroglyphs::AnatolianHieroglyphA332a => ANATOLIAN_HIEROGLYPH_A332A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA332b => ANATOLIAN_HIEROGLYPH_A332B,
-            AnatolianHieroglyphs::AnatolianHieroglyphA332c => ANATOLIAN_HIEROGLYPH_A332C,
-            AnatolianHieroglyphs::AnatolianHieroglyphA333 => ANATOLIAN_HIEROGLYPH_A333,
-            AnatolianHieroglyphs::AnatolianHieroglyphA334 => ANATOLIAN_HIEROGLYPH_A334,
-            AnatolianHieroglyphs::AnatolianHieroglyphA335 => ANATOLIAN_HIEROGLYPH_A335,
-            AnatolianHieroglyphs::AnatolianHieroglyphA336 => ANATOLIAN_HIEROGLYPH_A336,
-            AnatolianHieroglyphs::AnatolianHieroglyphA336a => ANATOLIAN_HIEROGLYPH_A336A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA336b => ANATOLIAN_HIEROGLYPH_A336B,
-            AnatolianHieroglyphs::AnatolianHieroglyphA336c => ANATOLIAN_HIEROGLYPH_A336C,
-            AnatolianHieroglyphs::AnatolianHieroglyphA337 => ANATOLIAN_HIEROGLYPH_A337,
-            AnatolianHieroglyphs::AnatolianHieroglyphA338 => ANATOLIAN_HIEROGLYPH_A338,
-            AnatolianHieroglyphs::AnatolianHieroglyphA339 => ANATOLIAN_HIEROGLYPH_A339,
-            AnatolianHieroglyphs::AnatolianHieroglyphA340 => ANATOLIAN_HIEROGLYPH_A340,
-            AnatolianHieroglyphs::AnatolianHieroglyphA341 => ANATOLIAN_HIEROGLYPH_A341,
-            AnatolianHieroglyphs::AnatolianHieroglyphA342 => ANATOLIAN_HIEROGLYPH_A342,
-            AnatolianHieroglyphs::AnatolianHieroglyphA343 => ANATOLIAN_HIEROGLYPH_A343,
-            AnatolianHieroglyphs::AnatolianHieroglyphA344 => ANATOLIAN_HIEROGLYPH_A344,
-            AnatolianHieroglyphs::AnatolianHieroglyphA345 => ANATOLIAN_HIEROGLYPH_A345,
-            AnatolianHieroglyphs::AnatolianHieroglyphA346 => ANATOLIAN_HIEROGLYPH_A346,
-            AnatolianHieroglyphs::AnatolianHieroglyphA347 => ANATOLIAN_HIEROGLYPH_A347,
-            AnatolianHieroglyphs::AnatolianHieroglyphA348 => ANATOLIAN_HIEROGLYPH_A348,
-            AnatolianHieroglyphs::AnatolianHieroglyphA349 => ANATOLIAN_HIEROGLYPH_A349,
-            AnatolianHieroglyphs::AnatolianHieroglyphA350 => ANATOLIAN_HIEROGLYPH_A350,
-            AnatolianHieroglyphs::AnatolianHieroglyphA351 => ANATOLIAN_HIEROGLYPH_A351,
-            AnatolianHieroglyphs::AnatolianHieroglyphA352 => ANATOLIAN_HIEROGLYPH_A352,
-            AnatolianHieroglyphs::AnatolianHieroglyphA353 => ANATOLIAN_HIEROGLYPH_A353,
-            AnatolianHieroglyphs::AnatolianHieroglyphA354 => ANATOLIAN_HIEROGLYPH_A354,
-            AnatolianHieroglyphs::AnatolianHieroglyphA355 => ANATOLIAN_HIEROGLYPH_A355,
-            AnatolianHieroglyphs::AnatolianHieroglyphA356 => ANATOLIAN_HIEROGLYPH_A356,
-            AnatolianHieroglyphs::AnatolianHieroglyphA357 => ANATOLIAN_HIEROGLYPH_A357,
-            AnatolianHieroglyphs::AnatolianHieroglyphA358 => ANATOLIAN_HIEROGLYPH_A358,
-            AnatolianHieroglyphs::AnatolianHieroglyphA359 => ANATOLIAN_HIEROGLYPH_A359,
-            AnatolianHieroglyphs::AnatolianHieroglyphA359a => ANATOLIAN_HIEROGLYPH_A359A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA360 => ANATOLIAN_HIEROGLYPH_A360,
-            AnatolianHieroglyphs::AnatolianHieroglyphA361 => ANATOLIAN_HIEROGLYPH_A361,
-            AnatolianHieroglyphs::AnatolianHieroglyphA362 => ANATOLIAN_HIEROGLYPH_A362,
-            AnatolianHieroglyphs::AnatolianHieroglyphA363 => ANATOLIAN_HIEROGLYPH_A363,
-            AnatolianHieroglyphs::AnatolianHieroglyphA364 => ANATOLIAN_HIEROGLYPH_A364,
-            AnatolianHieroglyphs::AnatolianHieroglyphA364a => ANATOLIAN_HIEROGLYPH_A364A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA365 => ANATOLIAN_HIEROGLYPH_A365,
-            AnatolianHieroglyphs::AnatolianHieroglyphA366 => ANATOLIAN_HIEROGLYPH_A366,
-            AnatolianHieroglyphs::AnatolianHieroglyphA367 => ANATOLIAN_HIEROGLYPH_A367,
-            AnatolianHieroglyphs::AnatolianHieroglyphA368 => ANATOLIAN_HIEROGLYPH_A368,
-            AnatolianHieroglyphs::AnatolianHieroglyphA368a => ANATOLIAN_HIEROGLYPH_A368A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA369 => ANATOLIAN_HIEROGLYPH_A369,
-            AnatolianHieroglyphs::AnatolianHieroglyphA370 => ANATOLIAN_HIEROGLYPH_A370,
-            AnatolianHieroglyphs::AnatolianHieroglyphA371 => ANATOLIAN_HIEROGLYPH_A371,
-            AnatolianHieroglyphs::AnatolianHieroglyphA371a => ANATOLIAN_HIEROGLYPH_A371A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA372 => ANATOLIAN_HIEROGLYPH_A372,
-            AnatolianHieroglyphs::AnatolianHieroglyphA373 => ANATOLIAN_HIEROGLYPH_A373,
-            AnatolianHieroglyphs::AnatolianHieroglyphA374 => ANATOLIAN_HIEROGLYPH_A374,
-            AnatolianHieroglyphs::AnatolianHieroglyphA375 => ANATOLIAN_HIEROGLYPH_A375,
-            AnatolianHieroglyphs::AnatolianHieroglyphA376 => ANATOLIAN_HIEROGLYPH_A376,
-            AnatolianHieroglyphs::AnatolianHieroglyphA377 => ANATOLIAN_HIEROGLYPH_A377,
-            AnatolianHieroglyphs::AnatolianHieroglyphA378 => ANATOLIAN_HIEROGLYPH_A378,
-            AnatolianHieroglyphs::AnatolianHieroglyphA379 => ANATOLIAN_HIEROGLYPH_A379,
-            AnatolianHieroglyphs::AnatolianHieroglyphA380 => ANATOLIAN_HIEROGLYPH_A380,
-            AnatolianHieroglyphs::AnatolianHieroglyphA381 => ANATOLIAN_HIEROGLYPH_A381,
-            AnatolianHieroglyphs::AnatolianHieroglyphA381a => ANATOLIAN_HIEROGLYPH_A381A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA382 => ANATOLIAN_HIEROGLYPH_A382,
-            AnatolianHieroglyphs::AnatolianHieroglyphA383RaOrRi => ANATOLIAN_HIEROGLYPH_A383_RA_OR_RI,
-            AnatolianHieroglyphs::AnatolianHieroglyphA383a => ANATOLIAN_HIEROGLYPH_A383A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA384 => ANATOLIAN_HIEROGLYPH_A384,
-            AnatolianHieroglyphs::AnatolianHieroglyphA385 => ANATOLIAN_HIEROGLYPH_A385,
-            AnatolianHieroglyphs::AnatolianHieroglyphA386 => ANATOLIAN_HIEROGLYPH_A386,
-            AnatolianHieroglyphs::AnatolianHieroglyphA386a => ANATOLIAN_HIEROGLYPH_A386A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA387 => ANATOLIAN_HIEROGLYPH_A387,
-            AnatolianHieroglyphs::AnatolianHieroglyphA388 => ANATOLIAN_HIEROGLYPH_A388,
-            AnatolianHieroglyphs::AnatolianHieroglyphA389 => ANATOLIAN_HIEROGLYPH_A389,
-            AnatolianHieroglyphs::AnatolianHieroglyphA390 => ANATOLIAN_HIEROGLYPH_A390,
-            AnatolianHieroglyphs::AnatolianHieroglyphA391 => ANATOLIAN_HIEROGLYPH_A391,
-            AnatolianHieroglyphs::AnatolianHieroglyphA392 => ANATOLIAN_HIEROGLYPH_A392,
-            AnatolianHieroglyphs::AnatolianHieroglyphA393Eight => ANATOLIAN_HIEROGLYPH_A393_EIGHT,
-            AnatolianHieroglyphs::AnatolianHieroglyphA394 => ANATOLIAN_HIEROGLYPH_A394,
-            AnatolianHieroglyphs::AnatolianHieroglyphA395 => ANATOLIAN_HIEROGLYPH_A395,
-            AnatolianHieroglyphs::AnatolianHieroglyphA396 => ANATOLIAN_HIEROGLYPH_A396,
-            AnatolianHieroglyphs::AnatolianHieroglyphA397 => ANATOLIAN_HIEROGLYPH_A397,
-            AnatolianHieroglyphs::AnatolianHieroglyphA398 => ANATOLIAN_HIEROGLYPH_A398,
-            AnatolianHieroglyphs::AnatolianHieroglyphA399 => ANATOLIAN_HIEROGLYPH_A399,
-            AnatolianHieroglyphs::AnatolianHieroglyphA400 => ANATOLIAN_HIEROGLYPH_A400,
-            AnatolianHieroglyphs::AnatolianHieroglyphA401 => ANATOLIAN_HIEROGLYPH_A401,
-            AnatolianHieroglyphs::AnatolianHieroglyphA402 => ANATOLIAN_HIEROGLYPH_A402,
-            AnatolianHieroglyphs::AnatolianHieroglyphA403 => ANATOLIAN_HIEROGLYPH_A403,
-            AnatolianHieroglyphs::AnatolianHieroglyphA404 => ANATOLIAN_HIEROGLYPH_A404,
-            AnatolianHieroglyphs::AnatolianHieroglyphA405 => ANATOLIAN_HIEROGLYPH_A405,
-            AnatolianHieroglyphs::AnatolianHieroglyphA406 => ANATOLIAN_HIEROGLYPH_A406,
-            AnatolianHieroglyphs::AnatolianHieroglyphA407 => ANATOLIAN_HIEROGLYPH_A407,
-            AnatolianHieroglyphs::AnatolianHieroglyphA408 => ANATOLIAN_HIEROGLYPH_A408,
-            AnatolianHieroglyphs::AnatolianHieroglyphA409 => ANATOLIAN_HIEROGLYPH_A409,
-            AnatolianHieroglyphs::AnatolianHieroglyphA410BeginLogogramMark => ANATOLIAN_HIEROGLYPH_A410_BEGIN_LOGOGRAM_MARK,
-            AnatolianHieroglyphs::AnatolianHieroglyphA410aEndLogogramMark => ANATOLIAN_HIEROGLYPH_A410A_END_LOGOGRAM_MARK,
-            AnatolianHieroglyphs::AnatolianHieroglyphA411 => ANATOLIAN_HIEROGLYPH_A411,
-            AnatolianHieroglyphs::AnatolianHieroglyphA412 => ANATOLIAN_HIEROGLYPH_A412,
-            AnatolianHieroglyphs::AnatolianHieroglyphA413 => ANATOLIAN_HIEROGLYPH_A413,
-            AnatolianHieroglyphs::AnatolianHieroglyphA414 => ANATOLIAN_HIEROGLYPH_A414,
-            AnatolianHieroglyphs::AnatolianHieroglyphA415 => ANATOLIAN_HIEROGLYPH_A415,
-            AnatolianHieroglyphs::AnatolianHieroglyphA416 => ANATOLIAN_HIEROGLYPH_A416,
-            AnatolianHieroglyphs::AnatolianHieroglyphA417 => ANATOLIAN_HIEROGLYPH_A417,
-            AnatolianHieroglyphs::AnatolianHieroglyphA418 => ANATOLIAN_HIEROGLYPH_A418,
-            AnatolianHieroglyphs::AnatolianHieroglyphA419 => ANATOLIAN_HIEROGLYPH_A419,
-            AnatolianHieroglyphs::AnatolianHieroglyphA420 => ANATOLIAN_HIEROGLYPH_A420,
-            AnatolianHieroglyphs::AnatolianHieroglyphA421 => ANATOLIAN_HIEROGLYPH_A421,
-            AnatolianHieroglyphs::AnatolianHieroglyphA422 => ANATOLIAN_HIEROGLYPH_A422,
-            AnatolianHieroglyphs::AnatolianHieroglyphA423 => ANATOLIAN_HIEROGLYPH_A423,
-            AnatolianHieroglyphs::AnatolianHieroglyphA424 => ANATOLIAN_HIEROGLYPH_A424,
-            AnatolianHieroglyphs::AnatolianHieroglyphA425 => ANATOLIAN_HIEROGLYPH_A425,
-            AnatolianHieroglyphs::AnatolianHieroglyphA426 => ANATOLIAN_HIEROGLYPH_A426,
-            AnatolianHieroglyphs::AnatolianHieroglyphA427 => ANATOLIAN_HIEROGLYPH_A427,
-            AnatolianHieroglyphs::AnatolianHieroglyphA428 => ANATOLIAN_HIEROGLYPH_A428,
-            AnatolianHieroglyphs::AnatolianHieroglyphA429 => ANATOLIAN_HIEROGLYPH_A429,
-            AnatolianHieroglyphs::AnatolianHieroglyphA430 => ANATOLIAN_HIEROGLYPH_A430,
-            AnatolianHieroglyphs::AnatolianHieroglyphA431 => ANATOLIAN_HIEROGLYPH_A431,
-            AnatolianHieroglyphs::AnatolianHieroglyphA432 => ANATOLIAN_HIEROGLYPH_A432,
-            AnatolianHieroglyphs::AnatolianHieroglyphA433 => ANATOLIAN_HIEROGLYPH_A433,
-            AnatolianHieroglyphs::AnatolianHieroglyphA434 => ANATOLIAN_HIEROGLYPH_A434,
-            AnatolianHieroglyphs::AnatolianHieroglyphA435 => ANATOLIAN_HIEROGLYPH_A435,
-            AnatolianHieroglyphs::AnatolianHieroglyphA436 => ANATOLIAN_HIEROGLYPH_A436,
-            AnatolianHieroglyphs::AnatolianHieroglyphA437 => ANATOLIAN_HIEROGLYPH_A437,
-            AnatolianHieroglyphs::AnatolianHieroglyphA438 => ANATOLIAN_HIEROGLYPH_A438,
-            AnatolianHieroglyphs::AnatolianHieroglyphA439 => ANATOLIAN_HIEROGLYPH_A439,
-            AnatolianHieroglyphs::AnatolianHieroglyphA440 => ANATOLIAN_HIEROGLYPH_A440,
-            AnatolianHieroglyphs::AnatolianHieroglyphA441 => ANATOLIAN_HIEROGLYPH_A441,
-            AnatolianHieroglyphs::AnatolianHieroglyphA442 => ANATOLIAN_HIEROGLYPH_A442,
-            AnatolianHieroglyphs::AnatolianHieroglyphA443 => ANATOLIAN_HIEROGLYPH_A443,
-            AnatolianHieroglyphs::AnatolianHieroglyphA444 => ANATOLIAN_HIEROGLYPH_A444,
-            AnatolianHieroglyphs::AnatolianHieroglyphA445 => ANATOLIAN_HIEROGLYPH_A445,
-            AnatolianHieroglyphs::AnatolianHieroglyphA446 => ANATOLIAN_HIEROGLYPH_A446,
-            AnatolianHieroglyphs::AnatolianHieroglyphA447 => ANATOLIAN_HIEROGLYPH_A447,
-            AnatolianHieroglyphs::AnatolianHieroglyphA448 => ANATOLIAN_HIEROGLYPH_A448,
-            AnatolianHieroglyphs::AnatolianHieroglyphA449 => ANATOLIAN_HIEROGLYPH_A449,
-            AnatolianHieroglyphs::AnatolianHieroglyphA450 => ANATOLIAN_HIEROGLYPH_A450,
-            AnatolianHieroglyphs::AnatolianHieroglyphA450a => ANATOLIAN_HIEROGLYPH_A450A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA451 => ANATOLIAN_HIEROGLYPH_A451,
-            AnatolianHieroglyphs::AnatolianHieroglyphA452 => ANATOLIAN_HIEROGLYPH_A452,
-            AnatolianHieroglyphs::AnatolianHieroglyphA453 => ANATOLIAN_HIEROGLYPH_A453,
-            AnatolianHieroglyphs::AnatolianHieroglyphA454 => ANATOLIAN_HIEROGLYPH_A454,
-            AnatolianHieroglyphs::AnatolianHieroglyphA455 => ANATOLIAN_HIEROGLYPH_A455,
-            AnatolianHieroglyphs::AnatolianHieroglyphA456 => ANATOLIAN_HIEROGLYPH_A456,
-            AnatolianHieroglyphs::AnatolianHieroglyphA457 => ANATOLIAN_HIEROGLYPH_A457,
-            AnatolianHieroglyphs::AnatolianHieroglyphA457a => ANATOLIAN_HIEROGLYPH_A457A,
-            AnatolianHieroglyphs::AnatolianHieroglyphA458 => ANATOLIAN_HIEROGLYPH_A458,
-            AnatolianHieroglyphs::AnatolianHieroglyphA459 => ANATOLIAN_HIEROGLYPH_A459,
-            AnatolianHieroglyphs::AnatolianHieroglyphA460 => ANATOLIAN_HIEROGLYPH_A460,
-            AnatolianHieroglyphs::AnatolianHieroglyphA461 => ANATOLIAN_HIEROGLYPH_A461,
-            AnatolianHieroglyphs::AnatolianHieroglyphA462 => ANATOLIAN_HIEROGLYPH_A462,
-            AnatolianHieroglyphs::AnatolianHieroglyphA463 => ANATOLIAN_HIEROGLYPH_A463,
-            AnatolianHieroglyphs::AnatolianHieroglyphA464 => ANATOLIAN_HIEROGLYPH_A464,
-            AnatolianHieroglyphs::AnatolianHieroglyphA465 => ANATOLIAN_HIEROGLYPH_A465,
-            AnatolianHieroglyphs::AnatolianHieroglyphA466 => ANATOLIAN_HIEROGLYPH_A466,
-            AnatolianHieroglyphs::AnatolianHieroglyphA467 => ANATOLIAN_HIEROGLYPH_A467,
-            AnatolianHieroglyphs::AnatolianHieroglyphA468 => ANATOLIAN_HIEROGLYPH_A468,
-            AnatolianHieroglyphs::AnatolianHieroglyphA469 => ANATOLIAN_HIEROGLYPH_A469,
-            AnatolianHieroglyphs::AnatolianHieroglyphA470 => ANATOLIAN_HIEROGLYPH_A470,
-            AnatolianHieroglyphs::AnatolianHieroglyphA471 => ANATOLIAN_HIEROGLYPH_A471,
-            AnatolianHieroglyphs::AnatolianHieroglyphA472 => ANATOLIAN_HIEROGLYPH_A472,
-            AnatolianHieroglyphs::AnatolianHieroglyphA473 => ANATOLIAN_HIEROGLYPH_A473,
-            AnatolianHieroglyphs::AnatolianHieroglyphA474 => ANATOLIAN_HIEROGLYPH_A474,
-            AnatolianHieroglyphs::AnatolianHieroglyphA475 => ANATOLIAN_HIEROGLYPH_A475,
-            AnatolianHieroglyphs::AnatolianHieroglyphA476 => ANATOLIAN_HIEROGLYPH_A476,
-            AnatolianHieroglyphs::AnatolianHieroglyphA477 => ANATOLIAN_HIEROGLYPH_A477,
-            AnatolianHieroglyphs::AnatolianHieroglyphA478 => ANATOLIAN_HIEROGLYPH_A478,
-            AnatolianHieroglyphs::AnatolianHieroglyphA479 => ANATOLIAN_HIEROGLYPH_A479,
-            AnatolianHieroglyphs::AnatolianHieroglyphA480 => ANATOLIAN_HIEROGLYPH_A480,
-            AnatolianHieroglyphs::AnatolianHieroglyphA481 => ANATOLIAN_HIEROGLYPH_A481,
-            AnatolianHieroglyphs::AnatolianHieroglyphA482 => ANATOLIAN_HIEROGLYPH_A482,
-            AnatolianHieroglyphs::AnatolianHieroglyphA483 => ANATOLIAN_HIEROGLYPH_A483,
-            AnatolianHieroglyphs::AnatolianHieroglyphA484 => ANATOLIAN_HIEROGLYPH_A484,
-            AnatolianHieroglyphs::AnatolianHieroglyphA485 => ANATOLIAN_HIEROGLYPH_A485,
-            AnatolianHieroglyphs::AnatolianHieroglyphA486 => ANATOLIAN_HIEROGLYPH_A486,
-            AnatolianHieroglyphs::AnatolianHieroglyphA487 => ANATOLIAN_HIEROGLYPH_A487,
-            AnatolianHieroglyphs::AnatolianHieroglyphA488 => ANATOLIAN_HIEROGLYPH_A488,
-            AnatolianHieroglyphs::AnatolianHieroglyphA489 => ANATOLIAN_HIEROGLYPH_A489,
-            AnatolianHieroglyphs::AnatolianHieroglyphA490 => ANATOLIAN_HIEROGLYPH_A490,
-            AnatolianHieroglyphs::AnatolianHieroglyphA491 => ANATOLIAN_HIEROGLYPH_A491,
-            AnatolianHieroglyphs::AnatolianHieroglyphA492 => ANATOLIAN_HIEROGLYPH_A492,
-            AnatolianHieroglyphs::AnatolianHieroglyphA493 => ANATOLIAN_HIEROGLYPH_A493,
-            AnatolianHieroglyphs::AnatolianHieroglyphA494 => ANATOLIAN_HIEROGLYPH_A494,
-            AnatolianHieroglyphs::AnatolianHieroglyphA495 => ANATOLIAN_HIEROGLYPH_A495,
-            AnatolianHieroglyphs::AnatolianHieroglyphA496 => ANATOLIAN_HIEROGLYPH_A496,
-            AnatolianHieroglyphs::AnatolianHieroglyphA497 => ANATOLIAN_HIEROGLYPH_A497,
-            AnatolianHieroglyphs::AnatolianHieroglyphA501 => ANATOLIAN_HIEROGLYPH_A501,
-            AnatolianHieroglyphs::AnatolianHieroglyphA502 => ANATOLIAN_HIEROGLYPH_A502,
-            AnatolianHieroglyphs::AnatolianHieroglyphA503 => ANATOLIAN_HIEROGLYPH_A503,
-            AnatolianHieroglyphs::AnatolianHieroglyphA504 => ANATOLIAN_HIEROGLYPH_A504,
-            AnatolianHieroglyphs::AnatolianHieroglyphA505 => ANATOLIAN_HIEROGLYPH_A505,
-            AnatolianHieroglyphs::AnatolianHieroglyphA506 => ANATOLIAN_HIEROGLYPH_A506,
-            AnatolianHieroglyphs::AnatolianHieroglyphA507 => ANATOLIAN_HIEROGLYPH_A507,
-            AnatolianHieroglyphs::AnatolianHieroglyphA508 => ANATOLIAN_HIEROGLYPH_A508,
-            AnatolianHieroglyphs::AnatolianHieroglyphA509 => ANATOLIAN_HIEROGLYPH_A509,
-            AnatolianHieroglyphs::AnatolianHieroglyphA510 => ANATOLIAN_HIEROGLYPH_A510,
-            AnatolianHieroglyphs::AnatolianHieroglyphA511 => ANATOLIAN_HIEROGLYPH_A511,
-            AnatolianHieroglyphs::AnatolianHieroglyphA512 => ANATOLIAN_HIEROGLYPH_A512,
-            AnatolianHieroglyphs::AnatolianHieroglyphA513 => ANATOLIAN_HIEROGLYPH_A513,
-            AnatolianHieroglyphs::AnatolianHieroglyphA514 => ANATOLIAN_HIEROGLYPH_A514,
-            AnatolianHieroglyphs::AnatolianHieroglyphA515 => ANATOLIAN_HIEROGLYPH_A515,
-            AnatolianHieroglyphs::AnatolianHieroglyphA516 => ANATOLIAN_HIEROGLYPH_A516,
-            AnatolianHieroglyphs::AnatolianHieroglyphA517 => ANATOLIAN_HIEROGLYPH_A517,
-            AnatolianHieroglyphs::AnatolianHieroglyphA518 => ANATOLIAN_HIEROGLYPH_A518,
-            AnatolianHieroglyphs::AnatolianHieroglyphA519 => ANATOLIAN_HIEROGLYPH_A519,
-            AnatolianHieroglyphs::AnatolianHieroglyphA520 => ANATOLIAN_HIEROGLYPH_A520,
-            AnatolianHieroglyphs::AnatolianHieroglyphA521 => ANATOLIAN_HIEROGLYPH_A521,
-            AnatolianHieroglyphs::AnatolianHieroglyphA522 => ANATOLIAN_HIEROGLYPH_A522,
-            AnatolianHieroglyphs::AnatolianHieroglyphA523 => ANATOLIAN_HIEROGLYPH_A523,
-            AnatolianHieroglyphs::AnatolianHieroglyphA524 => ANATOLIAN_HIEROGLYPH_A524,
-            AnatolianHieroglyphs::AnatolianHieroglyphA525 => ANATOLIAN_HIEROGLYPH_A525,
-            AnatolianHieroglyphs::AnatolianHieroglyphA526 => ANATOLIAN_HIEROGLYPH_A526,
-            AnatolianHieroglyphs::AnatolianHieroglyphA527 => ANATOLIAN_HIEROGLYPH_A527,
-            AnatolianHieroglyphs::AnatolianHieroglyphA528 => ANATOLIAN_HIEROGLYPH_A528,
-            AnatolianHieroglyphs::AnatolianHieroglyphA529 => ANATOLIAN_HIEROGLYPH_A529,
-            AnatolianHieroglyphs::AnatolianHieroglyphA530 => ANATOLIAN_HIEROGLYPH_A530,
+            AnatolianHieroglyphs::AnatolianHieroglyphA001 => '𔐀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA002 => '𔐁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA003 => '𔐂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA004 => '𔐃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA005 => '𔐄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA006 => '𔐅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA007 => '𔐆',
+            AnatolianHieroglyphs::AnatolianHieroglyphA008 => '𔐇',
+            AnatolianHieroglyphs::AnatolianHieroglyphA009 => '𔐈',
+            AnatolianHieroglyphs::AnatolianHieroglyphA010 => '𔐉',
+            AnatolianHieroglyphs::AnatolianHieroglyphA010a => '𔐊',
+            AnatolianHieroglyphs::AnatolianHieroglyphA011 => '𔐋',
+            AnatolianHieroglyphs::AnatolianHieroglyphA012 => '𔐌',
+            AnatolianHieroglyphs::AnatolianHieroglyphA013 => '𔐍',
+            AnatolianHieroglyphs::AnatolianHieroglyphA014 => '𔐎',
+            AnatolianHieroglyphs::AnatolianHieroglyphA015 => '𔐏',
+            AnatolianHieroglyphs::AnatolianHieroglyphA016 => '𔐐',
+            AnatolianHieroglyphs::AnatolianHieroglyphA017 => '𔐑',
+            AnatolianHieroglyphs::AnatolianHieroglyphA018 => '𔐒',
+            AnatolianHieroglyphs::AnatolianHieroglyphA019 => '𔐓',
+            AnatolianHieroglyphs::AnatolianHieroglyphA020 => '𔐔',
+            AnatolianHieroglyphs::AnatolianHieroglyphA021 => '𔐕',
+            AnatolianHieroglyphs::AnatolianHieroglyphA022 => '𔐖',
+            AnatolianHieroglyphs::AnatolianHieroglyphA023 => '𔐗',
+            AnatolianHieroglyphs::AnatolianHieroglyphA024 => '𔐘',
+            AnatolianHieroglyphs::AnatolianHieroglyphA025 => '𔐙',
+            AnatolianHieroglyphs::AnatolianHieroglyphA026 => '𔐚',
+            AnatolianHieroglyphs::AnatolianHieroglyphA026a => '𔐛',
+            AnatolianHieroglyphs::AnatolianHieroglyphA027 => '𔐜',
+            AnatolianHieroglyphs::AnatolianHieroglyphA028 => '𔐝',
+            AnatolianHieroglyphs::AnatolianHieroglyphA029 => '𔐞',
+            AnatolianHieroglyphs::AnatolianHieroglyphA030 => '𔐟',
+            AnatolianHieroglyphs::AnatolianHieroglyphA031 => '𔐠',
+            AnatolianHieroglyphs::AnatolianHieroglyphA032 => '𔐡',
+            AnatolianHieroglyphs::AnatolianHieroglyphA033 => '𔐢',
+            AnatolianHieroglyphs::AnatolianHieroglyphA034 => '𔐣',
+            AnatolianHieroglyphs::AnatolianHieroglyphA035 => '𔐤',
+            AnatolianHieroglyphs::AnatolianHieroglyphA036 => '𔐥',
+            AnatolianHieroglyphs::AnatolianHieroglyphA037 => '𔐦',
+            AnatolianHieroglyphs::AnatolianHieroglyphA038 => '𔐧',
+            AnatolianHieroglyphs::AnatolianHieroglyphA039 => '𔐨',
+            AnatolianHieroglyphs::AnatolianHieroglyphA039a => '𔐩',
+            AnatolianHieroglyphs::AnatolianHieroglyphA040 => '𔐪',
+            AnatolianHieroglyphs::AnatolianHieroglyphA041 => '𔐫',
+            AnatolianHieroglyphs::AnatolianHieroglyphA041a => '𔐬',
+            AnatolianHieroglyphs::AnatolianHieroglyphA042 => '𔐭',
+            AnatolianHieroglyphs::AnatolianHieroglyphA043 => '𔐮',
+            AnatolianHieroglyphs::AnatolianHieroglyphA044 => '𔐯',
+            AnatolianHieroglyphs::AnatolianHieroglyphA045 => '𔐰',
+            AnatolianHieroglyphs::AnatolianHieroglyphA045a => '𔐱',
+            AnatolianHieroglyphs::AnatolianHieroglyphA046 => '𔐲',
+            AnatolianHieroglyphs::AnatolianHieroglyphA046a => '𔐳',
+            AnatolianHieroglyphs::AnatolianHieroglyphA046b => '𔐴',
+            AnatolianHieroglyphs::AnatolianHieroglyphA047 => '𔐵',
+            AnatolianHieroglyphs::AnatolianHieroglyphA048 => '𔐶',
+            AnatolianHieroglyphs::AnatolianHieroglyphA049 => '𔐷',
+            AnatolianHieroglyphs::AnatolianHieroglyphA050 => '𔐸',
+            AnatolianHieroglyphs::AnatolianHieroglyphA051 => '𔐹',
+            AnatolianHieroglyphs::AnatolianHieroglyphA052 => '𔐺',
+            AnatolianHieroglyphs::AnatolianHieroglyphA053 => '𔐻',
+            AnatolianHieroglyphs::AnatolianHieroglyphA054 => '𔐼',
+            AnatolianHieroglyphs::AnatolianHieroglyphA055 => '𔐽',
+            AnatolianHieroglyphs::AnatolianHieroglyphA056 => '𔐾',
+            AnatolianHieroglyphs::AnatolianHieroglyphA057 => '𔐿',
+            AnatolianHieroglyphs::AnatolianHieroglyphA058 => '𔑀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA059 => '𔑁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA060 => '𔑂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA061 => '𔑃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA062 => '𔑄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA063 => '𔑅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA064 => '𔑆',
+            AnatolianHieroglyphs::AnatolianHieroglyphA065 => '𔑇',
+            AnatolianHieroglyphs::AnatolianHieroglyphA066 => '𔑈',
+            AnatolianHieroglyphs::AnatolianHieroglyphA066a => '𔑉',
+            AnatolianHieroglyphs::AnatolianHieroglyphA066b => '𔑊',
+            AnatolianHieroglyphs::AnatolianHieroglyphA066c => '𔑋',
+            AnatolianHieroglyphs::AnatolianHieroglyphA067 => '𔑌',
+            AnatolianHieroglyphs::AnatolianHieroglyphA068 => '𔑍',
+            AnatolianHieroglyphs::AnatolianHieroglyphA069 => '𔑎',
+            AnatolianHieroglyphs::AnatolianHieroglyphA070 => '𔑏',
+            AnatolianHieroglyphs::AnatolianHieroglyphA071 => '𔑐',
+            AnatolianHieroglyphs::AnatolianHieroglyphA072 => '𔑑',
+            AnatolianHieroglyphs::AnatolianHieroglyphA073 => '𔑒',
+            AnatolianHieroglyphs::AnatolianHieroglyphA074 => '𔑓',
+            AnatolianHieroglyphs::AnatolianHieroglyphA075 => '𔑔',
+            AnatolianHieroglyphs::AnatolianHieroglyphA076 => '𔑕',
+            AnatolianHieroglyphs::AnatolianHieroglyphA077 => '𔑖',
+            AnatolianHieroglyphs::AnatolianHieroglyphA078 => '𔑗',
+            AnatolianHieroglyphs::AnatolianHieroglyphA079 => '𔑘',
+            AnatolianHieroglyphs::AnatolianHieroglyphA080 => '𔑙',
+            AnatolianHieroglyphs::AnatolianHieroglyphA081 => '𔑚',
+            AnatolianHieroglyphs::AnatolianHieroglyphA082 => '𔑛',
+            AnatolianHieroglyphs::AnatolianHieroglyphA083 => '𔑜',
+            AnatolianHieroglyphs::AnatolianHieroglyphA084 => '𔑝',
+            AnatolianHieroglyphs::AnatolianHieroglyphA085 => '𔑞',
+            AnatolianHieroglyphs::AnatolianHieroglyphA086 => '𔑟',
+            AnatolianHieroglyphs::AnatolianHieroglyphA087 => '𔑠',
+            AnatolianHieroglyphs::AnatolianHieroglyphA088 => '𔑡',
+            AnatolianHieroglyphs::AnatolianHieroglyphA089 => '𔑢',
+            AnatolianHieroglyphs::AnatolianHieroglyphA090 => '𔑣',
+            AnatolianHieroglyphs::AnatolianHieroglyphA091 => '𔑤',
+            AnatolianHieroglyphs::AnatolianHieroglyphA092 => '𔑥',
+            AnatolianHieroglyphs::AnatolianHieroglyphA093 => '𔑦',
+            AnatolianHieroglyphs::AnatolianHieroglyphA094 => '𔑧',
+            AnatolianHieroglyphs::AnatolianHieroglyphA095 => '𔑨',
+            AnatolianHieroglyphs::AnatolianHieroglyphA096 => '𔑩',
+            AnatolianHieroglyphs::AnatolianHieroglyphA097 => '𔑪',
+            AnatolianHieroglyphs::AnatolianHieroglyphA097a => '𔑫',
+            AnatolianHieroglyphs::AnatolianHieroglyphA098 => '𔑬',
+            AnatolianHieroglyphs::AnatolianHieroglyphA098a => '𔑭',
+            AnatolianHieroglyphs::AnatolianHieroglyphA099 => '𔑮',
+            AnatolianHieroglyphs::AnatolianHieroglyphA100 => '𔑯',
+            AnatolianHieroglyphs::AnatolianHieroglyphA100a => '𔑰',
+            AnatolianHieroglyphs::AnatolianHieroglyphA101 => '𔑱',
+            AnatolianHieroglyphs::AnatolianHieroglyphA101a => '𔑲',
+            AnatolianHieroglyphs::AnatolianHieroglyphA102 => '𔑳',
+            AnatolianHieroglyphs::AnatolianHieroglyphA102a => '𔑴',
+            AnatolianHieroglyphs::AnatolianHieroglyphA103 => '𔑵',
+            AnatolianHieroglyphs::AnatolianHieroglyphA104 => '𔑶',
+            AnatolianHieroglyphs::AnatolianHieroglyphA104a => '𔑷',
+            AnatolianHieroglyphs::AnatolianHieroglyphA104b => '𔑸',
+            AnatolianHieroglyphs::AnatolianHieroglyphA104c => '𔑹',
+            AnatolianHieroglyphs::AnatolianHieroglyphA105 => '𔑺',
+            AnatolianHieroglyphs::AnatolianHieroglyphA105a => '𔑻',
+            AnatolianHieroglyphs::AnatolianHieroglyphA105b => '𔑼',
+            AnatolianHieroglyphs::AnatolianHieroglyphA106 => '𔑽',
+            AnatolianHieroglyphs::AnatolianHieroglyphA107 => '𔑾',
+            AnatolianHieroglyphs::AnatolianHieroglyphA107a => '𔑿',
+            AnatolianHieroglyphs::AnatolianHieroglyphA107b => '𔒀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA107c => '𔒁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA108 => '𔒂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA109 => '𔒃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA110 => '𔒄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA110a => '𔒅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA110b => '𔒆',
+            AnatolianHieroglyphs::AnatolianHieroglyphA111 => '𔒇',
+            AnatolianHieroglyphs::AnatolianHieroglyphA112 => '𔒈',
+            AnatolianHieroglyphs::AnatolianHieroglyphA113 => '𔒉',
+            AnatolianHieroglyphs::AnatolianHieroglyphA114 => '𔒊',
+            AnatolianHieroglyphs::AnatolianHieroglyphA115 => '𔒋',
+            AnatolianHieroglyphs::AnatolianHieroglyphA115a => '𔒌',
+            AnatolianHieroglyphs::AnatolianHieroglyphA116 => '𔒍',
+            AnatolianHieroglyphs::AnatolianHieroglyphA117 => '𔒎',
+            AnatolianHieroglyphs::AnatolianHieroglyphA118 => '𔒏',
+            AnatolianHieroglyphs::AnatolianHieroglyphA119 => '𔒐',
+            AnatolianHieroglyphs::AnatolianHieroglyphA120 => '𔒑',
+            AnatolianHieroglyphs::AnatolianHieroglyphA121 => '𔒒',
+            AnatolianHieroglyphs::AnatolianHieroglyphA122 => '𔒓',
+            AnatolianHieroglyphs::AnatolianHieroglyphA123 => '𔒔',
+            AnatolianHieroglyphs::AnatolianHieroglyphA124 => '𔒕',
+            AnatolianHieroglyphs::AnatolianHieroglyphA125 => '𔒖',
+            AnatolianHieroglyphs::AnatolianHieroglyphA125a => '𔒗',
+            AnatolianHieroglyphs::AnatolianHieroglyphA126 => '𔒘',
+            AnatolianHieroglyphs::AnatolianHieroglyphA127 => '𔒙',
+            AnatolianHieroglyphs::AnatolianHieroglyphA128 => '𔒚',
+            AnatolianHieroglyphs::AnatolianHieroglyphA129 => '𔒛',
+            AnatolianHieroglyphs::AnatolianHieroglyphA130 => '𔒜',
+            AnatolianHieroglyphs::AnatolianHieroglyphA131 => '𔒝',
+            AnatolianHieroglyphs::AnatolianHieroglyphA132 => '𔒞',
+            AnatolianHieroglyphs::AnatolianHieroglyphA133 => '𔒟',
+            AnatolianHieroglyphs::AnatolianHieroglyphA134 => '𔒠',
+            AnatolianHieroglyphs::AnatolianHieroglyphA135 => '𔒡',
+            AnatolianHieroglyphs::AnatolianHieroglyphA135a => '𔒢',
+            AnatolianHieroglyphs::AnatolianHieroglyphA136 => '𔒣',
+            AnatolianHieroglyphs::AnatolianHieroglyphA137 => '𔒤',
+            AnatolianHieroglyphs::AnatolianHieroglyphA138 => '𔒥',
+            AnatolianHieroglyphs::AnatolianHieroglyphA139 => '𔒦',
+            AnatolianHieroglyphs::AnatolianHieroglyphA140 => '𔒧',
+            AnatolianHieroglyphs::AnatolianHieroglyphA141 => '𔒨',
+            AnatolianHieroglyphs::AnatolianHieroglyphA142 => '𔒩',
+            AnatolianHieroglyphs::AnatolianHieroglyphA143 => '𔒪',
+            AnatolianHieroglyphs::AnatolianHieroglyphA144 => '𔒫',
+            AnatolianHieroglyphs::AnatolianHieroglyphA145 => '𔒬',
+            AnatolianHieroglyphs::AnatolianHieroglyphA146 => '𔒭',
+            AnatolianHieroglyphs::AnatolianHieroglyphA147 => '𔒮',
+            AnatolianHieroglyphs::AnatolianHieroglyphA148 => '𔒯',
+            AnatolianHieroglyphs::AnatolianHieroglyphA149 => '𔒰',
+            AnatolianHieroglyphs::AnatolianHieroglyphA150 => '𔒱',
+            AnatolianHieroglyphs::AnatolianHieroglyphA151 => '𔒲',
+            AnatolianHieroglyphs::AnatolianHieroglyphA152 => '𔒳',
+            AnatolianHieroglyphs::AnatolianHieroglyphA153 => '𔒴',
+            AnatolianHieroglyphs::AnatolianHieroglyphA154 => '𔒵',
+            AnatolianHieroglyphs::AnatolianHieroglyphA155 => '𔒶',
+            AnatolianHieroglyphs::AnatolianHieroglyphA156 => '𔒷',
+            AnatolianHieroglyphs::AnatolianHieroglyphA157 => '𔒸',
+            AnatolianHieroglyphs::AnatolianHieroglyphA158 => '𔒹',
+            AnatolianHieroglyphs::AnatolianHieroglyphA159 => '𔒺',
+            AnatolianHieroglyphs::AnatolianHieroglyphA160 => '𔒻',
+            AnatolianHieroglyphs::AnatolianHieroglyphA161 => '𔒼',
+            AnatolianHieroglyphs::AnatolianHieroglyphA162 => '𔒽',
+            AnatolianHieroglyphs::AnatolianHieroglyphA163 => '𔒾',
+            AnatolianHieroglyphs::AnatolianHieroglyphA164 => '𔒿',
+            AnatolianHieroglyphs::AnatolianHieroglyphA165 => '𔓀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA166 => '𔓁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA167 => '𔓂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA168 => '𔓃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA169 => '𔓄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA170 => '𔓅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA171 => '𔓆',
+            AnatolianHieroglyphs::AnatolianHieroglyphA172 => '𔓇',
+            AnatolianHieroglyphs::AnatolianHieroglyphA173 => '𔓈',
+            AnatolianHieroglyphs::AnatolianHieroglyphA174 => '𔓉',
+            AnatolianHieroglyphs::AnatolianHieroglyphA175 => '𔓊',
+            AnatolianHieroglyphs::AnatolianHieroglyphA176 => '𔓋',
+            AnatolianHieroglyphs::AnatolianHieroglyphA177 => '𔓌',
+            AnatolianHieroglyphs::AnatolianHieroglyphA178 => '𔓍',
+            AnatolianHieroglyphs::AnatolianHieroglyphA179 => '𔓎',
+            AnatolianHieroglyphs::AnatolianHieroglyphA180 => '𔓏',
+            AnatolianHieroglyphs::AnatolianHieroglyphA181 => '𔓐',
+            AnatolianHieroglyphs::AnatolianHieroglyphA182 => '𔓑',
+            AnatolianHieroglyphs::AnatolianHieroglyphA183 => '𔓒',
+            AnatolianHieroglyphs::AnatolianHieroglyphA184 => '𔓓',
+            AnatolianHieroglyphs::AnatolianHieroglyphA185 => '𔓔',
+            AnatolianHieroglyphs::AnatolianHieroglyphA186 => '𔓕',
+            AnatolianHieroglyphs::AnatolianHieroglyphA187 => '𔓖',
+            AnatolianHieroglyphs::AnatolianHieroglyphA188 => '𔓗',
+            AnatolianHieroglyphs::AnatolianHieroglyphA189 => '𔓘',
+            AnatolianHieroglyphs::AnatolianHieroglyphA190 => '𔓙',
+            AnatolianHieroglyphs::AnatolianHieroglyphA191 => '𔓚',
+            AnatolianHieroglyphs::AnatolianHieroglyphA192 => '𔓛',
+            AnatolianHieroglyphs::AnatolianHieroglyphA193 => '𔓜',
+            AnatolianHieroglyphs::AnatolianHieroglyphA194 => '𔓝',
+            AnatolianHieroglyphs::AnatolianHieroglyphA195 => '𔓞',
+            AnatolianHieroglyphs::AnatolianHieroglyphA196 => '𔓟',
+            AnatolianHieroglyphs::AnatolianHieroglyphA197 => '𔓠',
+            AnatolianHieroglyphs::AnatolianHieroglyphA198 => '𔓡',
+            AnatolianHieroglyphs::AnatolianHieroglyphA199 => '𔓢',
+            AnatolianHieroglyphs::AnatolianHieroglyphA200 => '𔓣',
+            AnatolianHieroglyphs::AnatolianHieroglyphA201 => '𔓤',
+            AnatolianHieroglyphs::AnatolianHieroglyphA202 => '𔓥',
+            AnatolianHieroglyphs::AnatolianHieroglyphA202a => '𔓦',
+            AnatolianHieroglyphs::AnatolianHieroglyphA202b => '𔓧',
+            AnatolianHieroglyphs::AnatolianHieroglyphA203 => '𔓨',
+            AnatolianHieroglyphs::AnatolianHieroglyphA204 => '𔓩',
+            AnatolianHieroglyphs::AnatolianHieroglyphA205 => '𔓪',
+            AnatolianHieroglyphs::AnatolianHieroglyphA206 => '𔓫',
+            AnatolianHieroglyphs::AnatolianHieroglyphA207 => '𔓬',
+            AnatolianHieroglyphs::AnatolianHieroglyphA207a => '𔓭',
+            AnatolianHieroglyphs::AnatolianHieroglyphA208 => '𔓮',
+            AnatolianHieroglyphs::AnatolianHieroglyphA209 => '𔓯',
+            AnatolianHieroglyphs::AnatolianHieroglyphA209a => '𔓰',
+            AnatolianHieroglyphs::AnatolianHieroglyphA210 => '𔓱',
+            AnatolianHieroglyphs::AnatolianHieroglyphA211 => '𔓲',
+            AnatolianHieroglyphs::AnatolianHieroglyphA212 => '𔓳',
+            AnatolianHieroglyphs::AnatolianHieroglyphA213 => '𔓴',
+            AnatolianHieroglyphs::AnatolianHieroglyphA214 => '𔓵',
+            AnatolianHieroglyphs::AnatolianHieroglyphA215 => '𔓶',
+            AnatolianHieroglyphs::AnatolianHieroglyphA215a => '𔓷',
+            AnatolianHieroglyphs::AnatolianHieroglyphA216 => '𔓸',
+            AnatolianHieroglyphs::AnatolianHieroglyphA216a => '𔓹',
+            AnatolianHieroglyphs::AnatolianHieroglyphA217 => '𔓺',
+            AnatolianHieroglyphs::AnatolianHieroglyphA218 => '𔓻',
+            AnatolianHieroglyphs::AnatolianHieroglyphA219 => '𔓼',
+            AnatolianHieroglyphs::AnatolianHieroglyphA220 => '𔓽',
+            AnatolianHieroglyphs::AnatolianHieroglyphA221 => '𔓾',
+            AnatolianHieroglyphs::AnatolianHieroglyphA222 => '𔓿',
+            AnatolianHieroglyphs::AnatolianHieroglyphA223 => '𔔀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA224 => '𔔁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA225 => '𔔂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA226 => '𔔃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA227 => '𔔄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA227a => '𔔅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA228 => '𔔆',
+            AnatolianHieroglyphs::AnatolianHieroglyphA229 => '𔔇',
+            AnatolianHieroglyphs::AnatolianHieroglyphA230 => '𔔈',
+            AnatolianHieroglyphs::AnatolianHieroglyphA231 => '𔔉',
+            AnatolianHieroglyphs::AnatolianHieroglyphA232 => '𔔊',
+            AnatolianHieroglyphs::AnatolianHieroglyphA233 => '𔔋',
+            AnatolianHieroglyphs::AnatolianHieroglyphA234 => '𔔌',
+            AnatolianHieroglyphs::AnatolianHieroglyphA235 => '𔔍',
+            AnatolianHieroglyphs::AnatolianHieroglyphA236 => '𔔎',
+            AnatolianHieroglyphs::AnatolianHieroglyphA237 => '𔔏',
+            AnatolianHieroglyphs::AnatolianHieroglyphA238 => '𔔐',
+            AnatolianHieroglyphs::AnatolianHieroglyphA239 => '𔔑',
+            AnatolianHieroglyphs::AnatolianHieroglyphA240 => '𔔒',
+            AnatolianHieroglyphs::AnatolianHieroglyphA241 => '𔔓',
+            AnatolianHieroglyphs::AnatolianHieroglyphA242 => '𔔔',
+            AnatolianHieroglyphs::AnatolianHieroglyphA243 => '𔔕',
+            AnatolianHieroglyphs::AnatolianHieroglyphA244 => '𔔖',
+            AnatolianHieroglyphs::AnatolianHieroglyphA245 => '𔔗',
+            AnatolianHieroglyphs::AnatolianHieroglyphA246 => '𔔘',
+            AnatolianHieroglyphs::AnatolianHieroglyphA247 => '𔔙',
+            AnatolianHieroglyphs::AnatolianHieroglyphA248 => '𔔚',
+            AnatolianHieroglyphs::AnatolianHieroglyphA249 => '𔔛',
+            AnatolianHieroglyphs::AnatolianHieroglyphA250 => '𔔜',
+            AnatolianHieroglyphs::AnatolianHieroglyphA251 => '𔔝',
+            AnatolianHieroglyphs::AnatolianHieroglyphA252 => '𔔞',
+            AnatolianHieroglyphs::AnatolianHieroglyphA253 => '𔔟',
+            AnatolianHieroglyphs::AnatolianHieroglyphA254 => '𔔠',
+            AnatolianHieroglyphs::AnatolianHieroglyphA255 => '𔔡',
+            AnatolianHieroglyphs::AnatolianHieroglyphA256 => '𔔢',
+            AnatolianHieroglyphs::AnatolianHieroglyphA257 => '𔔣',
+            AnatolianHieroglyphs::AnatolianHieroglyphA258 => '𔔤',
+            AnatolianHieroglyphs::AnatolianHieroglyphA259 => '𔔥',
+            AnatolianHieroglyphs::AnatolianHieroglyphA260 => '𔔦',
+            AnatolianHieroglyphs::AnatolianHieroglyphA261 => '𔔧',
+            AnatolianHieroglyphs::AnatolianHieroglyphA262 => '𔔨',
+            AnatolianHieroglyphs::AnatolianHieroglyphA263 => '𔔩',
+            AnatolianHieroglyphs::AnatolianHieroglyphA264 => '𔔪',
+            AnatolianHieroglyphs::AnatolianHieroglyphA265 => '𔔫',
+            AnatolianHieroglyphs::AnatolianHieroglyphA266 => '𔔬',
+            AnatolianHieroglyphs::AnatolianHieroglyphA267 => '𔔭',
+            AnatolianHieroglyphs::AnatolianHieroglyphA267a => '𔔮',
+            AnatolianHieroglyphs::AnatolianHieroglyphA268 => '𔔯',
+            AnatolianHieroglyphs::AnatolianHieroglyphA269 => '𔔰',
+            AnatolianHieroglyphs::AnatolianHieroglyphA270 => '𔔱',
+            AnatolianHieroglyphs::AnatolianHieroglyphA271 => '𔔲',
+            AnatolianHieroglyphs::AnatolianHieroglyphA272 => '𔔳',
+            AnatolianHieroglyphs::AnatolianHieroglyphA273 => '𔔴',
+            AnatolianHieroglyphs::AnatolianHieroglyphA274 => '𔔵',
+            AnatolianHieroglyphs::AnatolianHieroglyphA275 => '𔔶',
+            AnatolianHieroglyphs::AnatolianHieroglyphA276 => '𔔷',
+            AnatolianHieroglyphs::AnatolianHieroglyphA277 => '𔔸',
+            AnatolianHieroglyphs::AnatolianHieroglyphA278 => '𔔹',
+            AnatolianHieroglyphs::AnatolianHieroglyphA279 => '𔔺',
+            AnatolianHieroglyphs::AnatolianHieroglyphA280 => '𔔻',
+            AnatolianHieroglyphs::AnatolianHieroglyphA281 => '𔔼',
+            AnatolianHieroglyphs::AnatolianHieroglyphA282 => '𔔽',
+            AnatolianHieroglyphs::AnatolianHieroglyphA283 => '𔔾',
+            AnatolianHieroglyphs::AnatolianHieroglyphA284 => '𔔿',
+            AnatolianHieroglyphs::AnatolianHieroglyphA285 => '𔕀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA286 => '𔕁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA287 => '𔕂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA288 => '𔕃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA289 => '𔕄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA289a => '𔕅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA290 => '𔕆',
+            AnatolianHieroglyphs::AnatolianHieroglyphA291 => '𔕇',
+            AnatolianHieroglyphs::AnatolianHieroglyphA292 => '𔕈',
+            AnatolianHieroglyphs::AnatolianHieroglyphA293 => '𔕉',
+            AnatolianHieroglyphs::AnatolianHieroglyphA294 => '𔕊',
+            AnatolianHieroglyphs::AnatolianHieroglyphA294a => '𔕋',
+            AnatolianHieroglyphs::AnatolianHieroglyphA295 => '𔕌',
+            AnatolianHieroglyphs::AnatolianHieroglyphA296 => '𔕍',
+            AnatolianHieroglyphs::AnatolianHieroglyphA297 => '𔕎',
+            AnatolianHieroglyphs::AnatolianHieroglyphA298 => '𔕏',
+            AnatolianHieroglyphs::AnatolianHieroglyphA299 => '𔕐',
+            AnatolianHieroglyphs::AnatolianHieroglyphA299a => '𔕑',
+            AnatolianHieroglyphs::AnatolianHieroglyphA300 => '𔕒',
+            AnatolianHieroglyphs::AnatolianHieroglyphA301 => '𔕓',
+            AnatolianHieroglyphs::AnatolianHieroglyphA302 => '𔕔',
+            AnatolianHieroglyphs::AnatolianHieroglyphA303 => '𔕕',
+            AnatolianHieroglyphs::AnatolianHieroglyphA304 => '𔕖',
+            AnatolianHieroglyphs::AnatolianHieroglyphA305 => '𔕗',
+            AnatolianHieroglyphs::AnatolianHieroglyphA306 => '𔕘',
+            AnatolianHieroglyphs::AnatolianHieroglyphA307 => '𔕙',
+            AnatolianHieroglyphs::AnatolianHieroglyphA308 => '𔕚',
+            AnatolianHieroglyphs::AnatolianHieroglyphA309 => '𔕛',
+            AnatolianHieroglyphs::AnatolianHieroglyphA309a => '𔕜',
+            AnatolianHieroglyphs::AnatolianHieroglyphA310 => '𔕝',
+            AnatolianHieroglyphs::AnatolianHieroglyphA311 => '𔕞',
+            AnatolianHieroglyphs::AnatolianHieroglyphA312 => '𔕟',
+            AnatolianHieroglyphs::AnatolianHieroglyphA313 => '𔕠',
+            AnatolianHieroglyphs::AnatolianHieroglyphA314 => '𔕡',
+            AnatolianHieroglyphs::AnatolianHieroglyphA315 => '𔕢',
+            AnatolianHieroglyphs::AnatolianHieroglyphA316 => '𔕣',
+            AnatolianHieroglyphs::AnatolianHieroglyphA317 => '𔕤',
+            AnatolianHieroglyphs::AnatolianHieroglyphA318 => '𔕥',
+            AnatolianHieroglyphs::AnatolianHieroglyphA319 => '𔕦',
+            AnatolianHieroglyphs::AnatolianHieroglyphA320 => '𔕧',
+            AnatolianHieroglyphs::AnatolianHieroglyphA321 => '𔕨',
+            AnatolianHieroglyphs::AnatolianHieroglyphA322 => '𔕩',
+            AnatolianHieroglyphs::AnatolianHieroglyphA323 => '𔕪',
+            AnatolianHieroglyphs::AnatolianHieroglyphA324 => '𔕫',
+            AnatolianHieroglyphs::AnatolianHieroglyphA325 => '𔕬',
+            AnatolianHieroglyphs::AnatolianHieroglyphA326 => '𔕭',
+            AnatolianHieroglyphs::AnatolianHieroglyphA327 => '𔕮',
+            AnatolianHieroglyphs::AnatolianHieroglyphA328 => '𔕯',
+            AnatolianHieroglyphs::AnatolianHieroglyphA329 => '𔕰',
+            AnatolianHieroglyphs::AnatolianHieroglyphA329a => '𔕱',
+            AnatolianHieroglyphs::AnatolianHieroglyphA330 => '𔕲',
+            AnatolianHieroglyphs::AnatolianHieroglyphA331 => '𔕳',
+            AnatolianHieroglyphs::AnatolianHieroglyphA332a => '𔕴',
+            AnatolianHieroglyphs::AnatolianHieroglyphA332b => '𔕵',
+            AnatolianHieroglyphs::AnatolianHieroglyphA332c => '𔕶',
+            AnatolianHieroglyphs::AnatolianHieroglyphA333 => '𔕷',
+            AnatolianHieroglyphs::AnatolianHieroglyphA334 => '𔕸',
+            AnatolianHieroglyphs::AnatolianHieroglyphA335 => '𔕹',
+            AnatolianHieroglyphs::AnatolianHieroglyphA336 => '𔕺',
+            AnatolianHieroglyphs::AnatolianHieroglyphA336a => '𔕻',
+            AnatolianHieroglyphs::AnatolianHieroglyphA336b => '𔕼',
+            AnatolianHieroglyphs::AnatolianHieroglyphA336c => '𔕽',
+            AnatolianHieroglyphs::AnatolianHieroglyphA337 => '𔕾',
+            AnatolianHieroglyphs::AnatolianHieroglyphA338 => '𔕿',
+            AnatolianHieroglyphs::AnatolianHieroglyphA339 => '𔖀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA340 => '𔖁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA341 => '𔖂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA342 => '𔖃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA343 => '𔖄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA344 => '𔖅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA345 => '𔖆',
+            AnatolianHieroglyphs::AnatolianHieroglyphA346 => '𔖇',
+            AnatolianHieroglyphs::AnatolianHieroglyphA347 => '𔖈',
+            AnatolianHieroglyphs::AnatolianHieroglyphA348 => '𔖉',
+            AnatolianHieroglyphs::AnatolianHieroglyphA349 => '𔖊',
+            AnatolianHieroglyphs::AnatolianHieroglyphA350 => '𔖋',
+            AnatolianHieroglyphs::AnatolianHieroglyphA351 => '𔖌',
+            AnatolianHieroglyphs::AnatolianHieroglyphA352 => '𔖍',
+            AnatolianHieroglyphs::AnatolianHieroglyphA353 => '𔖎',
+            AnatolianHieroglyphs::AnatolianHieroglyphA354 => '𔖏',
+            AnatolianHieroglyphs::AnatolianHieroglyphA355 => '𔖐',
+            AnatolianHieroglyphs::AnatolianHieroglyphA356 => '𔖑',
+            AnatolianHieroglyphs::AnatolianHieroglyphA357 => '𔖒',
+            AnatolianHieroglyphs::AnatolianHieroglyphA358 => '𔖓',
+            AnatolianHieroglyphs::AnatolianHieroglyphA359 => '𔖔',
+            AnatolianHieroglyphs::AnatolianHieroglyphA359a => '𔖕',
+            AnatolianHieroglyphs::AnatolianHieroglyphA360 => '𔖖',
+            AnatolianHieroglyphs::AnatolianHieroglyphA361 => '𔖗',
+            AnatolianHieroglyphs::AnatolianHieroglyphA362 => '𔖘',
+            AnatolianHieroglyphs::AnatolianHieroglyphA363 => '𔖙',
+            AnatolianHieroglyphs::AnatolianHieroglyphA364 => '𔖚',
+            AnatolianHieroglyphs::AnatolianHieroglyphA364a => '𔖛',
+            AnatolianHieroglyphs::AnatolianHieroglyphA365 => '𔖜',
+            AnatolianHieroglyphs::AnatolianHieroglyphA366 => '𔖝',
+            AnatolianHieroglyphs::AnatolianHieroglyphA367 => '𔖞',
+            AnatolianHieroglyphs::AnatolianHieroglyphA368 => '𔖟',
+            AnatolianHieroglyphs::AnatolianHieroglyphA368a => '𔖠',
+            AnatolianHieroglyphs::AnatolianHieroglyphA369 => '𔖡',
+            AnatolianHieroglyphs::AnatolianHieroglyphA370 => '𔖢',
+            AnatolianHieroglyphs::AnatolianHieroglyphA371 => '𔖣',
+            AnatolianHieroglyphs::AnatolianHieroglyphA371a => '𔖤',
+            AnatolianHieroglyphs::AnatolianHieroglyphA372 => '𔖥',
+            AnatolianHieroglyphs::AnatolianHieroglyphA373 => '𔖦',
+            AnatolianHieroglyphs::AnatolianHieroglyphA374 => '𔖧',
+            AnatolianHieroglyphs::AnatolianHieroglyphA375 => '𔖨',
+            AnatolianHieroglyphs::AnatolianHieroglyphA376 => '𔖩',
+            AnatolianHieroglyphs::AnatolianHieroglyphA377 => '𔖪',
+            AnatolianHieroglyphs::AnatolianHieroglyphA378 => '𔖫',
+            AnatolianHieroglyphs::AnatolianHieroglyphA379 => '𔖬',
+            AnatolianHieroglyphs::AnatolianHieroglyphA380 => '𔖭',
+            AnatolianHieroglyphs::AnatolianHieroglyphA381 => '𔖮',
+            AnatolianHieroglyphs::AnatolianHieroglyphA381a => '𔖯',
+            AnatolianHieroglyphs::AnatolianHieroglyphA382 => '𔖰',
+            AnatolianHieroglyphs::AnatolianHieroglyphA383RaOrRi => '𔖱',
+            AnatolianHieroglyphs::AnatolianHieroglyphA383a => '𔖲',
+            AnatolianHieroglyphs::AnatolianHieroglyphA384 => '𔖳',
+            AnatolianHieroglyphs::AnatolianHieroglyphA385 => '𔖴',
+            AnatolianHieroglyphs::AnatolianHieroglyphA386 => '𔖵',
+            AnatolianHieroglyphs::AnatolianHieroglyphA386a => '𔖶',
+            AnatolianHieroglyphs::AnatolianHieroglyphA387 => '𔖷',
+            AnatolianHieroglyphs::AnatolianHieroglyphA388 => '𔖸',
+            AnatolianHieroglyphs::AnatolianHieroglyphA389 => '𔖹',
+            AnatolianHieroglyphs::AnatolianHieroglyphA390 => '𔖺',
+            AnatolianHieroglyphs::AnatolianHieroglyphA391 => '𔖻',
+            AnatolianHieroglyphs::AnatolianHieroglyphA392 => '𔖼',
+            AnatolianHieroglyphs::AnatolianHieroglyphA393Eight => '𔖽',
+            AnatolianHieroglyphs::AnatolianHieroglyphA394 => '𔖾',
+            AnatolianHieroglyphs::AnatolianHieroglyphA395 => '𔖿',
+            AnatolianHieroglyphs::AnatolianHieroglyphA396 => '𔗀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA397 => '𔗁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA398 => '𔗂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA399 => '𔗃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA400 => '𔗄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA401 => '𔗅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA402 => '𔗆',
+            AnatolianHieroglyphs::AnatolianHieroglyphA403 => '𔗇',
+            AnatolianHieroglyphs::AnatolianHieroglyphA404 => '𔗈',
+            AnatolianHieroglyphs::AnatolianHieroglyphA405 => '𔗉',
+            AnatolianHieroglyphs::AnatolianHieroglyphA406 => '𔗊',
+            AnatolianHieroglyphs::AnatolianHieroglyphA407 => '𔗋',
+            AnatolianHieroglyphs::AnatolianHieroglyphA408 => '𔗌',
+            AnatolianHieroglyphs::AnatolianHieroglyphA409 => '𔗍',
+            AnatolianHieroglyphs::AnatolianHieroglyphA410BeginLogogramMark => '𔗎',
+            AnatolianHieroglyphs::AnatolianHieroglyphA410aEndLogogramMark => '𔗏',
+            AnatolianHieroglyphs::AnatolianHieroglyphA411 => '𔗐',
+            AnatolianHieroglyphs::AnatolianHieroglyphA412 => '𔗑',
+            AnatolianHieroglyphs::AnatolianHieroglyphA413 => '𔗒',
+            AnatolianHieroglyphs::AnatolianHieroglyphA414 => '𔗓',
+            AnatolianHieroglyphs::AnatolianHieroglyphA415 => '𔗔',
+            AnatolianHieroglyphs::AnatolianHieroglyphA416 => '𔗕',
+            AnatolianHieroglyphs::AnatolianHieroglyphA417 => '𔗖',
+            AnatolianHieroglyphs::AnatolianHieroglyphA418 => '𔗗',
+            AnatolianHieroglyphs::AnatolianHieroglyphA419 => '𔗘',
+            AnatolianHieroglyphs::AnatolianHieroglyphA420 => '𔗙',
+            AnatolianHieroglyphs::AnatolianHieroglyphA421 => '𔗚',
+            AnatolianHieroglyphs::AnatolianHieroglyphA422 => '𔗛',
+            AnatolianHieroglyphs::AnatolianHieroglyphA423 => '𔗜',
+            AnatolianHieroglyphs::AnatolianHieroglyphA424 => '𔗝',
+            AnatolianHieroglyphs::AnatolianHieroglyphA425 => '𔗞',
+            AnatolianHieroglyphs::AnatolianHieroglyphA426 => '𔗟',
+            AnatolianHieroglyphs::AnatolianHieroglyphA427 => '𔗠',
+            AnatolianHieroglyphs::AnatolianHieroglyphA428 => '𔗡',
+            AnatolianHieroglyphs::AnatolianHieroglyphA429 => '𔗢',
+            AnatolianHieroglyphs::AnatolianHieroglyphA430 => '𔗣',
+            AnatolianHieroglyphs::AnatolianHieroglyphA431 => '𔗤',
+            AnatolianHieroglyphs::AnatolianHieroglyphA432 => '𔗥',
+            AnatolianHieroglyphs::AnatolianHieroglyphA433 => '𔗦',
+            AnatolianHieroglyphs::AnatolianHieroglyphA434 => '𔗧',
+            AnatolianHieroglyphs::AnatolianHieroglyphA435 => '𔗨',
+            AnatolianHieroglyphs::AnatolianHieroglyphA436 => '𔗩',
+            AnatolianHieroglyphs::AnatolianHieroglyphA437 => '𔗪',
+            AnatolianHieroglyphs::AnatolianHieroglyphA438 => '𔗫',
+            AnatolianHieroglyphs::AnatolianHieroglyphA439 => '𔗬',
+            AnatolianHieroglyphs::AnatolianHieroglyphA440 => '𔗭',
+            AnatolianHieroglyphs::AnatolianHieroglyphA441 => '𔗮',
+            AnatolianHieroglyphs::AnatolianHieroglyphA442 => '𔗯',
+            AnatolianHieroglyphs::AnatolianHieroglyphA443 => '𔗰',
+            AnatolianHieroglyphs::AnatolianHieroglyphA444 => '𔗱',
+            AnatolianHieroglyphs::AnatolianHieroglyphA445 => '𔗲',
+            AnatolianHieroglyphs::AnatolianHieroglyphA446 => '𔗳',
+            AnatolianHieroglyphs::AnatolianHieroglyphA447 => '𔗴',
+            AnatolianHieroglyphs::AnatolianHieroglyphA448 => '𔗵',
+            AnatolianHieroglyphs::AnatolianHieroglyphA449 => '𔗶',
+            AnatolianHieroglyphs::AnatolianHieroglyphA450 => '𔗷',
+            AnatolianHieroglyphs::AnatolianHieroglyphA450a => '𔗸',
+            AnatolianHieroglyphs::AnatolianHieroglyphA451 => '𔗹',
+            AnatolianHieroglyphs::AnatolianHieroglyphA452 => '𔗺',
+            AnatolianHieroglyphs::AnatolianHieroglyphA453 => '𔗻',
+            AnatolianHieroglyphs::AnatolianHieroglyphA454 => '𔗼',
+            AnatolianHieroglyphs::AnatolianHieroglyphA455 => '𔗽',
+            AnatolianHieroglyphs::AnatolianHieroglyphA456 => '𔗾',
+            AnatolianHieroglyphs::AnatolianHieroglyphA457 => '𔗿',
+            AnatolianHieroglyphs::AnatolianHieroglyphA457a => '𔘀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA458 => '𔘁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA459 => '𔘂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA460 => '𔘃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA461 => '𔘄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA462 => '𔘅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA463 => '𔘆',
+            AnatolianHieroglyphs::AnatolianHieroglyphA464 => '𔘇',
+            AnatolianHieroglyphs::AnatolianHieroglyphA465 => '𔘈',
+            AnatolianHieroglyphs::AnatolianHieroglyphA466 => '𔘉',
+            AnatolianHieroglyphs::AnatolianHieroglyphA467 => '𔘊',
+            AnatolianHieroglyphs::AnatolianHieroglyphA468 => '𔘋',
+            AnatolianHieroglyphs::AnatolianHieroglyphA469 => '𔘌',
+            AnatolianHieroglyphs::AnatolianHieroglyphA470 => '𔘍',
+            AnatolianHieroglyphs::AnatolianHieroglyphA471 => '𔘎',
+            AnatolianHieroglyphs::AnatolianHieroglyphA472 => '𔘏',
+            AnatolianHieroglyphs::AnatolianHieroglyphA473 => '𔘐',
+            AnatolianHieroglyphs::AnatolianHieroglyphA474 => '𔘑',
+            AnatolianHieroglyphs::AnatolianHieroglyphA475 => '𔘒',
+            AnatolianHieroglyphs::AnatolianHieroglyphA476 => '𔘓',
+            AnatolianHieroglyphs::AnatolianHieroglyphA477 => '𔘔',
+            AnatolianHieroglyphs::AnatolianHieroglyphA478 => '𔘕',
+            AnatolianHieroglyphs::AnatolianHieroglyphA479 => '𔘖',
+            AnatolianHieroglyphs::AnatolianHieroglyphA480 => '𔘗',
+            AnatolianHieroglyphs::AnatolianHieroglyphA481 => '𔘘',
+            AnatolianHieroglyphs::AnatolianHieroglyphA482 => '𔘙',
+            AnatolianHieroglyphs::AnatolianHieroglyphA483 => '𔘚',
+            AnatolianHieroglyphs::AnatolianHieroglyphA484 => '𔘛',
+            AnatolianHieroglyphs::AnatolianHieroglyphA485 => '𔘜',
+            AnatolianHieroglyphs::AnatolianHieroglyphA486 => '𔘝',
+            AnatolianHieroglyphs::AnatolianHieroglyphA487 => '𔘞',
+            AnatolianHieroglyphs::AnatolianHieroglyphA488 => '𔘟',
+            AnatolianHieroglyphs::AnatolianHieroglyphA489 => '𔘠',
+            AnatolianHieroglyphs::AnatolianHieroglyphA490 => '𔘡',
+            AnatolianHieroglyphs::AnatolianHieroglyphA491 => '𔘢',
+            AnatolianHieroglyphs::AnatolianHieroglyphA492 => '𔘣',
+            AnatolianHieroglyphs::AnatolianHieroglyphA493 => '𔘤',
+            AnatolianHieroglyphs::AnatolianHieroglyphA494 => '𔘥',
+            AnatolianHieroglyphs::AnatolianHieroglyphA495 => '𔘦',
+            AnatolianHieroglyphs::AnatolianHieroglyphA496 => '𔘧',
+            AnatolianHieroglyphs::AnatolianHieroglyphA497 => '𔘨',
+            AnatolianHieroglyphs::AnatolianHieroglyphA501 => '𔘩',
+            AnatolianHieroglyphs::AnatolianHieroglyphA502 => '𔘪',
+            AnatolianHieroglyphs::AnatolianHieroglyphA503 => '𔘫',
+            AnatolianHieroglyphs::AnatolianHieroglyphA504 => '𔘬',
+            AnatolianHieroglyphs::AnatolianHieroglyphA505 => '𔘭',
+            AnatolianHieroglyphs::AnatolianHieroglyphA506 => '𔘮',
+            AnatolianHieroglyphs::AnatolianHieroglyphA507 => '𔘯',
+            AnatolianHieroglyphs::AnatolianHieroglyphA508 => '𔘰',
+            AnatolianHieroglyphs::AnatolianHieroglyphA509 => '𔘱',
+            AnatolianHieroglyphs::AnatolianHieroglyphA510 => '𔘲',
+            AnatolianHieroglyphs::AnatolianHieroglyphA511 => '𔘳',
+            AnatolianHieroglyphs::AnatolianHieroglyphA512 => '𔘴',
+            AnatolianHieroglyphs::AnatolianHieroglyphA513 => '𔘵',
+            AnatolianHieroglyphs::AnatolianHieroglyphA514 => '𔘶',
+            AnatolianHieroglyphs::AnatolianHieroglyphA515 => '𔘷',
+            AnatolianHieroglyphs::AnatolianHieroglyphA516 => '𔘸',
+            AnatolianHieroglyphs::AnatolianHieroglyphA517 => '𔘹',
+            AnatolianHieroglyphs::AnatolianHieroglyphA518 => '𔘺',
+            AnatolianHieroglyphs::AnatolianHieroglyphA519 => '𔘻',
+            AnatolianHieroglyphs::AnatolianHieroglyphA520 => '𔘼',
+            AnatolianHieroglyphs::AnatolianHieroglyphA521 => '𔘽',
+            AnatolianHieroglyphs::AnatolianHieroglyphA522 => '𔘾',
+            AnatolianHieroglyphs::AnatolianHieroglyphA523 => '𔘿',
+            AnatolianHieroglyphs::AnatolianHieroglyphA524 => '𔙀',
+            AnatolianHieroglyphs::AnatolianHieroglyphA525 => '𔙁',
+            AnatolianHieroglyphs::AnatolianHieroglyphA526 => '𔙂',
+            AnatolianHieroglyphs::AnatolianHieroglyphA527 => '𔙃',
+            AnatolianHieroglyphs::AnatolianHieroglyphA528 => '𔙄',
+            AnatolianHieroglyphs::AnatolianHieroglyphA529 => '𔙅',
+            AnatolianHieroglyphs::AnatolianHieroglyphA530 => '𔙆',
         }
     }
 }
@@ -2933,591 +1763,590 @@ impl Into<char> for AnatolianHieroglyphs {
 impl std::convert::TryFrom<char> for AnatolianHieroglyphs {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            ANATOLIAN_HIEROGLYPH_A001 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA001),
-            ANATOLIAN_HIEROGLYPH_A002 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA002),
-            ANATOLIAN_HIEROGLYPH_A003 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA003),
-            ANATOLIAN_HIEROGLYPH_A004 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA004),
-            ANATOLIAN_HIEROGLYPH_A005 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA005),
-            ANATOLIAN_HIEROGLYPH_A006 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA006),
-            ANATOLIAN_HIEROGLYPH_A007 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA007),
-            ANATOLIAN_HIEROGLYPH_A008 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA008),
-            ANATOLIAN_HIEROGLYPH_A009 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA009),
-            ANATOLIAN_HIEROGLYPH_A010 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA010),
-            ANATOLIAN_HIEROGLYPH_A010A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA010a),
-            ANATOLIAN_HIEROGLYPH_A011 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA011),
-            ANATOLIAN_HIEROGLYPH_A012 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA012),
-            ANATOLIAN_HIEROGLYPH_A013 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA013),
-            ANATOLIAN_HIEROGLYPH_A014 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA014),
-            ANATOLIAN_HIEROGLYPH_A015 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA015),
-            ANATOLIAN_HIEROGLYPH_A016 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA016),
-            ANATOLIAN_HIEROGLYPH_A017 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA017),
-            ANATOLIAN_HIEROGLYPH_A018 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA018),
-            ANATOLIAN_HIEROGLYPH_A019 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA019),
-            ANATOLIAN_HIEROGLYPH_A020 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA020),
-            ANATOLIAN_HIEROGLYPH_A021 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA021),
-            ANATOLIAN_HIEROGLYPH_A022 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA022),
-            ANATOLIAN_HIEROGLYPH_A023 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA023),
-            ANATOLIAN_HIEROGLYPH_A024 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA024),
-            ANATOLIAN_HIEROGLYPH_A025 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA025),
-            ANATOLIAN_HIEROGLYPH_A026 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA026),
-            ANATOLIAN_HIEROGLYPH_A026A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA026a),
-            ANATOLIAN_HIEROGLYPH_A027 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA027),
-            ANATOLIAN_HIEROGLYPH_A028 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA028),
-            ANATOLIAN_HIEROGLYPH_A029 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA029),
-            ANATOLIAN_HIEROGLYPH_A030 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA030),
-            ANATOLIAN_HIEROGLYPH_A031 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA031),
-            ANATOLIAN_HIEROGLYPH_A032 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA032),
-            ANATOLIAN_HIEROGLYPH_A033 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA033),
-            ANATOLIAN_HIEROGLYPH_A034 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA034),
-            ANATOLIAN_HIEROGLYPH_A035 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA035),
-            ANATOLIAN_HIEROGLYPH_A036 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA036),
-            ANATOLIAN_HIEROGLYPH_A037 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA037),
-            ANATOLIAN_HIEROGLYPH_A038 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA038),
-            ANATOLIAN_HIEROGLYPH_A039 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA039),
-            ANATOLIAN_HIEROGLYPH_A039A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA039a),
-            ANATOLIAN_HIEROGLYPH_A040 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA040),
-            ANATOLIAN_HIEROGLYPH_A041 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA041),
-            ANATOLIAN_HIEROGLYPH_A041A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA041a),
-            ANATOLIAN_HIEROGLYPH_A042 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA042),
-            ANATOLIAN_HIEROGLYPH_A043 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA043),
-            ANATOLIAN_HIEROGLYPH_A044 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA044),
-            ANATOLIAN_HIEROGLYPH_A045 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA045),
-            ANATOLIAN_HIEROGLYPH_A045A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA045a),
-            ANATOLIAN_HIEROGLYPH_A046 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA046),
-            ANATOLIAN_HIEROGLYPH_A046A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA046a),
-            ANATOLIAN_HIEROGLYPH_A046B => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA046b),
-            ANATOLIAN_HIEROGLYPH_A047 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA047),
-            ANATOLIAN_HIEROGLYPH_A048 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA048),
-            ANATOLIAN_HIEROGLYPH_A049 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA049),
-            ANATOLIAN_HIEROGLYPH_A050 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA050),
-            ANATOLIAN_HIEROGLYPH_A051 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA051),
-            ANATOLIAN_HIEROGLYPH_A052 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA052),
-            ANATOLIAN_HIEROGLYPH_A053 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA053),
-            ANATOLIAN_HIEROGLYPH_A054 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA054),
-            ANATOLIAN_HIEROGLYPH_A055 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA055),
-            ANATOLIAN_HIEROGLYPH_A056 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA056),
-            ANATOLIAN_HIEROGLYPH_A057 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA057),
-            ANATOLIAN_HIEROGLYPH_A058 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA058),
-            ANATOLIAN_HIEROGLYPH_A059 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA059),
-            ANATOLIAN_HIEROGLYPH_A060 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA060),
-            ANATOLIAN_HIEROGLYPH_A061 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA061),
-            ANATOLIAN_HIEROGLYPH_A062 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA062),
-            ANATOLIAN_HIEROGLYPH_A063 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA063),
-            ANATOLIAN_HIEROGLYPH_A064 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA064),
-            ANATOLIAN_HIEROGLYPH_A065 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA065),
-            ANATOLIAN_HIEROGLYPH_A066 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA066),
-            ANATOLIAN_HIEROGLYPH_A066A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA066a),
-            ANATOLIAN_HIEROGLYPH_A066B => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA066b),
-            ANATOLIAN_HIEROGLYPH_A066C => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA066c),
-            ANATOLIAN_HIEROGLYPH_A067 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA067),
-            ANATOLIAN_HIEROGLYPH_A068 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA068),
-            ANATOLIAN_HIEROGLYPH_A069 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA069),
-            ANATOLIAN_HIEROGLYPH_A070 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA070),
-            ANATOLIAN_HIEROGLYPH_A071 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA071),
-            ANATOLIAN_HIEROGLYPH_A072 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA072),
-            ANATOLIAN_HIEROGLYPH_A073 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA073),
-            ANATOLIAN_HIEROGLYPH_A074 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA074),
-            ANATOLIAN_HIEROGLYPH_A075 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA075),
-            ANATOLIAN_HIEROGLYPH_A076 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA076),
-            ANATOLIAN_HIEROGLYPH_A077 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA077),
-            ANATOLIAN_HIEROGLYPH_A078 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA078),
-            ANATOLIAN_HIEROGLYPH_A079 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA079),
-            ANATOLIAN_HIEROGLYPH_A080 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA080),
-            ANATOLIAN_HIEROGLYPH_A081 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA081),
-            ANATOLIAN_HIEROGLYPH_A082 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA082),
-            ANATOLIAN_HIEROGLYPH_A083 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA083),
-            ANATOLIAN_HIEROGLYPH_A084 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA084),
-            ANATOLIAN_HIEROGLYPH_A085 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA085),
-            ANATOLIAN_HIEROGLYPH_A086 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA086),
-            ANATOLIAN_HIEROGLYPH_A087 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA087),
-            ANATOLIAN_HIEROGLYPH_A088 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA088),
-            ANATOLIAN_HIEROGLYPH_A089 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA089),
-            ANATOLIAN_HIEROGLYPH_A090 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA090),
-            ANATOLIAN_HIEROGLYPH_A091 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA091),
-            ANATOLIAN_HIEROGLYPH_A092 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA092),
-            ANATOLIAN_HIEROGLYPH_A093 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA093),
-            ANATOLIAN_HIEROGLYPH_A094 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA094),
-            ANATOLIAN_HIEROGLYPH_A095 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA095),
-            ANATOLIAN_HIEROGLYPH_A096 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA096),
-            ANATOLIAN_HIEROGLYPH_A097 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA097),
-            ANATOLIAN_HIEROGLYPH_A097A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA097a),
-            ANATOLIAN_HIEROGLYPH_A098 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA098),
-            ANATOLIAN_HIEROGLYPH_A098A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA098a),
-            ANATOLIAN_HIEROGLYPH_A099 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA099),
-            ANATOLIAN_HIEROGLYPH_A100 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA100),
-            ANATOLIAN_HIEROGLYPH_A100A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA100a),
-            ANATOLIAN_HIEROGLYPH_A101 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA101),
-            ANATOLIAN_HIEROGLYPH_A101A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA101a),
-            ANATOLIAN_HIEROGLYPH_A102 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA102),
-            ANATOLIAN_HIEROGLYPH_A102A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA102a),
-            ANATOLIAN_HIEROGLYPH_A103 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA103),
-            ANATOLIAN_HIEROGLYPH_A104 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA104),
-            ANATOLIAN_HIEROGLYPH_A104A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA104a),
-            ANATOLIAN_HIEROGLYPH_A104B => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA104b),
-            ANATOLIAN_HIEROGLYPH_A104C => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA104c),
-            ANATOLIAN_HIEROGLYPH_A105 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA105),
-            ANATOLIAN_HIEROGLYPH_A105A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA105a),
-            ANATOLIAN_HIEROGLYPH_A105B => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA105b),
-            ANATOLIAN_HIEROGLYPH_A106 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA106),
-            ANATOLIAN_HIEROGLYPH_A107 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA107),
-            ANATOLIAN_HIEROGLYPH_A107A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA107a),
-            ANATOLIAN_HIEROGLYPH_A107B => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA107b),
-            ANATOLIAN_HIEROGLYPH_A107C => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA107c),
-            ANATOLIAN_HIEROGLYPH_A108 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA108),
-            ANATOLIAN_HIEROGLYPH_A109 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA109),
-            ANATOLIAN_HIEROGLYPH_A110 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA110),
-            ANATOLIAN_HIEROGLYPH_A110A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA110a),
-            ANATOLIAN_HIEROGLYPH_A110B => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA110b),
-            ANATOLIAN_HIEROGLYPH_A111 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA111),
-            ANATOLIAN_HIEROGLYPH_A112 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA112),
-            ANATOLIAN_HIEROGLYPH_A113 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA113),
-            ANATOLIAN_HIEROGLYPH_A114 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA114),
-            ANATOLIAN_HIEROGLYPH_A115 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA115),
-            ANATOLIAN_HIEROGLYPH_A115A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA115a),
-            ANATOLIAN_HIEROGLYPH_A116 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA116),
-            ANATOLIAN_HIEROGLYPH_A117 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA117),
-            ANATOLIAN_HIEROGLYPH_A118 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA118),
-            ANATOLIAN_HIEROGLYPH_A119 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA119),
-            ANATOLIAN_HIEROGLYPH_A120 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA120),
-            ANATOLIAN_HIEROGLYPH_A121 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA121),
-            ANATOLIAN_HIEROGLYPH_A122 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA122),
-            ANATOLIAN_HIEROGLYPH_A123 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA123),
-            ANATOLIAN_HIEROGLYPH_A124 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA124),
-            ANATOLIAN_HIEROGLYPH_A125 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA125),
-            ANATOLIAN_HIEROGLYPH_A125A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA125a),
-            ANATOLIAN_HIEROGLYPH_A126 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA126),
-            ANATOLIAN_HIEROGLYPH_A127 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA127),
-            ANATOLIAN_HIEROGLYPH_A128 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA128),
-            ANATOLIAN_HIEROGLYPH_A129 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA129),
-            ANATOLIAN_HIEROGLYPH_A130 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA130),
-            ANATOLIAN_HIEROGLYPH_A131 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA131),
-            ANATOLIAN_HIEROGLYPH_A132 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA132),
-            ANATOLIAN_HIEROGLYPH_A133 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA133),
-            ANATOLIAN_HIEROGLYPH_A134 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA134),
-            ANATOLIAN_HIEROGLYPH_A135 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA135),
-            ANATOLIAN_HIEROGLYPH_A135A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA135a),
-            ANATOLIAN_HIEROGLYPH_A136 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA136),
-            ANATOLIAN_HIEROGLYPH_A137 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA137),
-            ANATOLIAN_HIEROGLYPH_A138 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA138),
-            ANATOLIAN_HIEROGLYPH_A139 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA139),
-            ANATOLIAN_HIEROGLYPH_A140 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA140),
-            ANATOLIAN_HIEROGLYPH_A141 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA141),
-            ANATOLIAN_HIEROGLYPH_A142 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA142),
-            ANATOLIAN_HIEROGLYPH_A143 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA143),
-            ANATOLIAN_HIEROGLYPH_A144 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA144),
-            ANATOLIAN_HIEROGLYPH_A145 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA145),
-            ANATOLIAN_HIEROGLYPH_A146 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA146),
-            ANATOLIAN_HIEROGLYPH_A147 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA147),
-            ANATOLIAN_HIEROGLYPH_A148 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA148),
-            ANATOLIAN_HIEROGLYPH_A149 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA149),
-            ANATOLIAN_HIEROGLYPH_A150 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA150),
-            ANATOLIAN_HIEROGLYPH_A151 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA151),
-            ANATOLIAN_HIEROGLYPH_A152 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA152),
-            ANATOLIAN_HIEROGLYPH_A153 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA153),
-            ANATOLIAN_HIEROGLYPH_A154 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA154),
-            ANATOLIAN_HIEROGLYPH_A155 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA155),
-            ANATOLIAN_HIEROGLYPH_A156 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA156),
-            ANATOLIAN_HIEROGLYPH_A157 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA157),
-            ANATOLIAN_HIEROGLYPH_A158 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA158),
-            ANATOLIAN_HIEROGLYPH_A159 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA159),
-            ANATOLIAN_HIEROGLYPH_A160 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA160),
-            ANATOLIAN_HIEROGLYPH_A161 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA161),
-            ANATOLIAN_HIEROGLYPH_A162 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA162),
-            ANATOLIAN_HIEROGLYPH_A163 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA163),
-            ANATOLIAN_HIEROGLYPH_A164 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA164),
-            ANATOLIAN_HIEROGLYPH_A165 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA165),
-            ANATOLIAN_HIEROGLYPH_A166 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA166),
-            ANATOLIAN_HIEROGLYPH_A167 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA167),
-            ANATOLIAN_HIEROGLYPH_A168 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA168),
-            ANATOLIAN_HIEROGLYPH_A169 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA169),
-            ANATOLIAN_HIEROGLYPH_A170 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA170),
-            ANATOLIAN_HIEROGLYPH_A171 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA171),
-            ANATOLIAN_HIEROGLYPH_A172 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA172),
-            ANATOLIAN_HIEROGLYPH_A173 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA173),
-            ANATOLIAN_HIEROGLYPH_A174 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA174),
-            ANATOLIAN_HIEROGLYPH_A175 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA175),
-            ANATOLIAN_HIEROGLYPH_A176 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA176),
-            ANATOLIAN_HIEROGLYPH_A177 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA177),
-            ANATOLIAN_HIEROGLYPH_A178 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA178),
-            ANATOLIAN_HIEROGLYPH_A179 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA179),
-            ANATOLIAN_HIEROGLYPH_A180 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA180),
-            ANATOLIAN_HIEROGLYPH_A181 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA181),
-            ANATOLIAN_HIEROGLYPH_A182 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA182),
-            ANATOLIAN_HIEROGLYPH_A183 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA183),
-            ANATOLIAN_HIEROGLYPH_A184 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA184),
-            ANATOLIAN_HIEROGLYPH_A185 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA185),
-            ANATOLIAN_HIEROGLYPH_A186 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA186),
-            ANATOLIAN_HIEROGLYPH_A187 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA187),
-            ANATOLIAN_HIEROGLYPH_A188 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA188),
-            ANATOLIAN_HIEROGLYPH_A189 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA189),
-            ANATOLIAN_HIEROGLYPH_A190 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA190),
-            ANATOLIAN_HIEROGLYPH_A191 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA191),
-            ANATOLIAN_HIEROGLYPH_A192 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA192),
-            ANATOLIAN_HIEROGLYPH_A193 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA193),
-            ANATOLIAN_HIEROGLYPH_A194 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA194),
-            ANATOLIAN_HIEROGLYPH_A195 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA195),
-            ANATOLIAN_HIEROGLYPH_A196 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA196),
-            ANATOLIAN_HIEROGLYPH_A197 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA197),
-            ANATOLIAN_HIEROGLYPH_A198 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA198),
-            ANATOLIAN_HIEROGLYPH_A199 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA199),
-            ANATOLIAN_HIEROGLYPH_A200 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA200),
-            ANATOLIAN_HIEROGLYPH_A201 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA201),
-            ANATOLIAN_HIEROGLYPH_A202 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA202),
-            ANATOLIAN_HIEROGLYPH_A202A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA202a),
-            ANATOLIAN_HIEROGLYPH_A202B => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA202b),
-            ANATOLIAN_HIEROGLYPH_A203 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA203),
-            ANATOLIAN_HIEROGLYPH_A204 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA204),
-            ANATOLIAN_HIEROGLYPH_A205 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA205),
-            ANATOLIAN_HIEROGLYPH_A206 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA206),
-            ANATOLIAN_HIEROGLYPH_A207 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA207),
-            ANATOLIAN_HIEROGLYPH_A207A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA207a),
-            ANATOLIAN_HIEROGLYPH_A208 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA208),
-            ANATOLIAN_HIEROGLYPH_A209 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA209),
-            ANATOLIAN_HIEROGLYPH_A209A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA209a),
-            ANATOLIAN_HIEROGLYPH_A210 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA210),
-            ANATOLIAN_HIEROGLYPH_A211 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA211),
-            ANATOLIAN_HIEROGLYPH_A212 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA212),
-            ANATOLIAN_HIEROGLYPH_A213 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA213),
-            ANATOLIAN_HIEROGLYPH_A214 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA214),
-            ANATOLIAN_HIEROGLYPH_A215 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA215),
-            ANATOLIAN_HIEROGLYPH_A215A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA215a),
-            ANATOLIAN_HIEROGLYPH_A216 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA216),
-            ANATOLIAN_HIEROGLYPH_A216A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA216a),
-            ANATOLIAN_HIEROGLYPH_A217 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA217),
-            ANATOLIAN_HIEROGLYPH_A218 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA218),
-            ANATOLIAN_HIEROGLYPH_A219 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA219),
-            ANATOLIAN_HIEROGLYPH_A220 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA220),
-            ANATOLIAN_HIEROGLYPH_A221 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA221),
-            ANATOLIAN_HIEROGLYPH_A222 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA222),
-            ANATOLIAN_HIEROGLYPH_A223 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA223),
-            ANATOLIAN_HIEROGLYPH_A224 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA224),
-            ANATOLIAN_HIEROGLYPH_A225 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA225),
-            ANATOLIAN_HIEROGLYPH_A226 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA226),
-            ANATOLIAN_HIEROGLYPH_A227 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA227),
-            ANATOLIAN_HIEROGLYPH_A227A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA227a),
-            ANATOLIAN_HIEROGLYPH_A228 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA228),
-            ANATOLIAN_HIEROGLYPH_A229 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA229),
-            ANATOLIAN_HIEROGLYPH_A230 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA230),
-            ANATOLIAN_HIEROGLYPH_A231 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA231),
-            ANATOLIAN_HIEROGLYPH_A232 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA232),
-            ANATOLIAN_HIEROGLYPH_A233 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA233),
-            ANATOLIAN_HIEROGLYPH_A234 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA234),
-            ANATOLIAN_HIEROGLYPH_A235 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA235),
-            ANATOLIAN_HIEROGLYPH_A236 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA236),
-            ANATOLIAN_HIEROGLYPH_A237 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA237),
-            ANATOLIAN_HIEROGLYPH_A238 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA238),
-            ANATOLIAN_HIEROGLYPH_A239 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA239),
-            ANATOLIAN_HIEROGLYPH_A240 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA240),
-            ANATOLIAN_HIEROGLYPH_A241 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA241),
-            ANATOLIAN_HIEROGLYPH_A242 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA242),
-            ANATOLIAN_HIEROGLYPH_A243 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA243),
-            ANATOLIAN_HIEROGLYPH_A244 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA244),
-            ANATOLIAN_HIEROGLYPH_A245 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA245),
-            ANATOLIAN_HIEROGLYPH_A246 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA246),
-            ANATOLIAN_HIEROGLYPH_A247 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA247),
-            ANATOLIAN_HIEROGLYPH_A248 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA248),
-            ANATOLIAN_HIEROGLYPH_A249 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA249),
-            ANATOLIAN_HIEROGLYPH_A250 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA250),
-            ANATOLIAN_HIEROGLYPH_A251 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA251),
-            ANATOLIAN_HIEROGLYPH_A252 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA252),
-            ANATOLIAN_HIEROGLYPH_A253 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA253),
-            ANATOLIAN_HIEROGLYPH_A254 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA254),
-            ANATOLIAN_HIEROGLYPH_A255 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA255),
-            ANATOLIAN_HIEROGLYPH_A256 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA256),
-            ANATOLIAN_HIEROGLYPH_A257 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA257),
-            ANATOLIAN_HIEROGLYPH_A258 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA258),
-            ANATOLIAN_HIEROGLYPH_A259 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA259),
-            ANATOLIAN_HIEROGLYPH_A260 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA260),
-            ANATOLIAN_HIEROGLYPH_A261 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA261),
-            ANATOLIAN_HIEROGLYPH_A262 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA262),
-            ANATOLIAN_HIEROGLYPH_A263 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA263),
-            ANATOLIAN_HIEROGLYPH_A264 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA264),
-            ANATOLIAN_HIEROGLYPH_A265 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA265),
-            ANATOLIAN_HIEROGLYPH_A266 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA266),
-            ANATOLIAN_HIEROGLYPH_A267 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA267),
-            ANATOLIAN_HIEROGLYPH_A267A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA267a),
-            ANATOLIAN_HIEROGLYPH_A268 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA268),
-            ANATOLIAN_HIEROGLYPH_A269 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA269),
-            ANATOLIAN_HIEROGLYPH_A270 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA270),
-            ANATOLIAN_HIEROGLYPH_A271 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA271),
-            ANATOLIAN_HIEROGLYPH_A272 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA272),
-            ANATOLIAN_HIEROGLYPH_A273 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA273),
-            ANATOLIAN_HIEROGLYPH_A274 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA274),
-            ANATOLIAN_HIEROGLYPH_A275 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA275),
-            ANATOLIAN_HIEROGLYPH_A276 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA276),
-            ANATOLIAN_HIEROGLYPH_A277 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA277),
-            ANATOLIAN_HIEROGLYPH_A278 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA278),
-            ANATOLIAN_HIEROGLYPH_A279 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA279),
-            ANATOLIAN_HIEROGLYPH_A280 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA280),
-            ANATOLIAN_HIEROGLYPH_A281 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA281),
-            ANATOLIAN_HIEROGLYPH_A282 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA282),
-            ANATOLIAN_HIEROGLYPH_A283 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA283),
-            ANATOLIAN_HIEROGLYPH_A284 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA284),
-            ANATOLIAN_HIEROGLYPH_A285 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA285),
-            ANATOLIAN_HIEROGLYPH_A286 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA286),
-            ANATOLIAN_HIEROGLYPH_A287 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA287),
-            ANATOLIAN_HIEROGLYPH_A288 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA288),
-            ANATOLIAN_HIEROGLYPH_A289 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA289),
-            ANATOLIAN_HIEROGLYPH_A289A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA289a),
-            ANATOLIAN_HIEROGLYPH_A290 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA290),
-            ANATOLIAN_HIEROGLYPH_A291 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA291),
-            ANATOLIAN_HIEROGLYPH_A292 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA292),
-            ANATOLIAN_HIEROGLYPH_A293 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA293),
-            ANATOLIAN_HIEROGLYPH_A294 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA294),
-            ANATOLIAN_HIEROGLYPH_A294A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA294a),
-            ANATOLIAN_HIEROGLYPH_A295 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA295),
-            ANATOLIAN_HIEROGLYPH_A296 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA296),
-            ANATOLIAN_HIEROGLYPH_A297 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA297),
-            ANATOLIAN_HIEROGLYPH_A298 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA298),
-            ANATOLIAN_HIEROGLYPH_A299 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA299),
-            ANATOLIAN_HIEROGLYPH_A299A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA299a),
-            ANATOLIAN_HIEROGLYPH_A300 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA300),
-            ANATOLIAN_HIEROGLYPH_A301 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA301),
-            ANATOLIAN_HIEROGLYPH_A302 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA302),
-            ANATOLIAN_HIEROGLYPH_A303 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA303),
-            ANATOLIAN_HIEROGLYPH_A304 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA304),
-            ANATOLIAN_HIEROGLYPH_A305 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA305),
-            ANATOLIAN_HIEROGLYPH_A306 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA306),
-            ANATOLIAN_HIEROGLYPH_A307 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA307),
-            ANATOLIAN_HIEROGLYPH_A308 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA308),
-            ANATOLIAN_HIEROGLYPH_A309 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA309),
-            ANATOLIAN_HIEROGLYPH_A309A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA309a),
-            ANATOLIAN_HIEROGLYPH_A310 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA310),
-            ANATOLIAN_HIEROGLYPH_A311 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA311),
-            ANATOLIAN_HIEROGLYPH_A312 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA312),
-            ANATOLIAN_HIEROGLYPH_A313 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA313),
-            ANATOLIAN_HIEROGLYPH_A314 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA314),
-            ANATOLIAN_HIEROGLYPH_A315 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA315),
-            ANATOLIAN_HIEROGLYPH_A316 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA316),
-            ANATOLIAN_HIEROGLYPH_A317 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA317),
-            ANATOLIAN_HIEROGLYPH_A318 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA318),
-            ANATOLIAN_HIEROGLYPH_A319 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA319),
-            ANATOLIAN_HIEROGLYPH_A320 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA320),
-            ANATOLIAN_HIEROGLYPH_A321 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA321),
-            ANATOLIAN_HIEROGLYPH_A322 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA322),
-            ANATOLIAN_HIEROGLYPH_A323 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA323),
-            ANATOLIAN_HIEROGLYPH_A324 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA324),
-            ANATOLIAN_HIEROGLYPH_A325 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA325),
-            ANATOLIAN_HIEROGLYPH_A326 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA326),
-            ANATOLIAN_HIEROGLYPH_A327 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA327),
-            ANATOLIAN_HIEROGLYPH_A328 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA328),
-            ANATOLIAN_HIEROGLYPH_A329 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA329),
-            ANATOLIAN_HIEROGLYPH_A329A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA329a),
-            ANATOLIAN_HIEROGLYPH_A330 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA330),
-            ANATOLIAN_HIEROGLYPH_A331 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA331),
-            ANATOLIAN_HIEROGLYPH_A332A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA332a),
-            ANATOLIAN_HIEROGLYPH_A332B => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA332b),
-            ANATOLIAN_HIEROGLYPH_A332C => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA332c),
-            ANATOLIAN_HIEROGLYPH_A333 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA333),
-            ANATOLIAN_HIEROGLYPH_A334 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA334),
-            ANATOLIAN_HIEROGLYPH_A335 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA335),
-            ANATOLIAN_HIEROGLYPH_A336 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA336),
-            ANATOLIAN_HIEROGLYPH_A336A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA336a),
-            ANATOLIAN_HIEROGLYPH_A336B => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA336b),
-            ANATOLIAN_HIEROGLYPH_A336C => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA336c),
-            ANATOLIAN_HIEROGLYPH_A337 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA337),
-            ANATOLIAN_HIEROGLYPH_A338 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA338),
-            ANATOLIAN_HIEROGLYPH_A339 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA339),
-            ANATOLIAN_HIEROGLYPH_A340 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA340),
-            ANATOLIAN_HIEROGLYPH_A341 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA341),
-            ANATOLIAN_HIEROGLYPH_A342 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA342),
-            ANATOLIAN_HIEROGLYPH_A343 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA343),
-            ANATOLIAN_HIEROGLYPH_A344 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA344),
-            ANATOLIAN_HIEROGLYPH_A345 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA345),
-            ANATOLIAN_HIEROGLYPH_A346 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA346),
-            ANATOLIAN_HIEROGLYPH_A347 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA347),
-            ANATOLIAN_HIEROGLYPH_A348 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA348),
-            ANATOLIAN_HIEROGLYPH_A349 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA349),
-            ANATOLIAN_HIEROGLYPH_A350 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA350),
-            ANATOLIAN_HIEROGLYPH_A351 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA351),
-            ANATOLIAN_HIEROGLYPH_A352 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA352),
-            ANATOLIAN_HIEROGLYPH_A353 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA353),
-            ANATOLIAN_HIEROGLYPH_A354 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA354),
-            ANATOLIAN_HIEROGLYPH_A355 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA355),
-            ANATOLIAN_HIEROGLYPH_A356 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA356),
-            ANATOLIAN_HIEROGLYPH_A357 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA357),
-            ANATOLIAN_HIEROGLYPH_A358 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA358),
-            ANATOLIAN_HIEROGLYPH_A359 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA359),
-            ANATOLIAN_HIEROGLYPH_A359A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA359a),
-            ANATOLIAN_HIEROGLYPH_A360 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA360),
-            ANATOLIAN_HIEROGLYPH_A361 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA361),
-            ANATOLIAN_HIEROGLYPH_A362 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA362),
-            ANATOLIAN_HIEROGLYPH_A363 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA363),
-            ANATOLIAN_HIEROGLYPH_A364 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA364),
-            ANATOLIAN_HIEROGLYPH_A364A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA364a),
-            ANATOLIAN_HIEROGLYPH_A365 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA365),
-            ANATOLIAN_HIEROGLYPH_A366 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA366),
-            ANATOLIAN_HIEROGLYPH_A367 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA367),
-            ANATOLIAN_HIEROGLYPH_A368 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA368),
-            ANATOLIAN_HIEROGLYPH_A368A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA368a),
-            ANATOLIAN_HIEROGLYPH_A369 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA369),
-            ANATOLIAN_HIEROGLYPH_A370 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA370),
-            ANATOLIAN_HIEROGLYPH_A371 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA371),
-            ANATOLIAN_HIEROGLYPH_A371A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA371a),
-            ANATOLIAN_HIEROGLYPH_A372 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA372),
-            ANATOLIAN_HIEROGLYPH_A373 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA373),
-            ANATOLIAN_HIEROGLYPH_A374 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA374),
-            ANATOLIAN_HIEROGLYPH_A375 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA375),
-            ANATOLIAN_HIEROGLYPH_A376 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA376),
-            ANATOLIAN_HIEROGLYPH_A377 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA377),
-            ANATOLIAN_HIEROGLYPH_A378 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA378),
-            ANATOLIAN_HIEROGLYPH_A379 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA379),
-            ANATOLIAN_HIEROGLYPH_A380 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA380),
-            ANATOLIAN_HIEROGLYPH_A381 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA381),
-            ANATOLIAN_HIEROGLYPH_A381A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA381a),
-            ANATOLIAN_HIEROGLYPH_A382 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA382),
-            ANATOLIAN_HIEROGLYPH_A383_RA_OR_RI => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA383RaOrRi),
-            ANATOLIAN_HIEROGLYPH_A383A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA383a),
-            ANATOLIAN_HIEROGLYPH_A384 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA384),
-            ANATOLIAN_HIEROGLYPH_A385 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA385),
-            ANATOLIAN_HIEROGLYPH_A386 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA386),
-            ANATOLIAN_HIEROGLYPH_A386A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA386a),
-            ANATOLIAN_HIEROGLYPH_A387 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA387),
-            ANATOLIAN_HIEROGLYPH_A388 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA388),
-            ANATOLIAN_HIEROGLYPH_A389 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA389),
-            ANATOLIAN_HIEROGLYPH_A390 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA390),
-            ANATOLIAN_HIEROGLYPH_A391 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA391),
-            ANATOLIAN_HIEROGLYPH_A392 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA392),
-            ANATOLIAN_HIEROGLYPH_A393_EIGHT => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA393Eight),
-            ANATOLIAN_HIEROGLYPH_A394 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA394),
-            ANATOLIAN_HIEROGLYPH_A395 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA395),
-            ANATOLIAN_HIEROGLYPH_A396 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA396),
-            ANATOLIAN_HIEROGLYPH_A397 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA397),
-            ANATOLIAN_HIEROGLYPH_A398 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA398),
-            ANATOLIAN_HIEROGLYPH_A399 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA399),
-            ANATOLIAN_HIEROGLYPH_A400 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA400),
-            ANATOLIAN_HIEROGLYPH_A401 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA401),
-            ANATOLIAN_HIEROGLYPH_A402 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA402),
-            ANATOLIAN_HIEROGLYPH_A403 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA403),
-            ANATOLIAN_HIEROGLYPH_A404 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA404),
-            ANATOLIAN_HIEROGLYPH_A405 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA405),
-            ANATOLIAN_HIEROGLYPH_A406 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA406),
-            ANATOLIAN_HIEROGLYPH_A407 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA407),
-            ANATOLIAN_HIEROGLYPH_A408 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA408),
-            ANATOLIAN_HIEROGLYPH_A409 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA409),
-            ANATOLIAN_HIEROGLYPH_A410_BEGIN_LOGOGRAM_MARK => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA410BeginLogogramMark),
-            ANATOLIAN_HIEROGLYPH_A410A_END_LOGOGRAM_MARK => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA410aEndLogogramMark),
-            ANATOLIAN_HIEROGLYPH_A411 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA411),
-            ANATOLIAN_HIEROGLYPH_A412 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA412),
-            ANATOLIAN_HIEROGLYPH_A413 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA413),
-            ANATOLIAN_HIEROGLYPH_A414 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA414),
-            ANATOLIAN_HIEROGLYPH_A415 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA415),
-            ANATOLIAN_HIEROGLYPH_A416 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA416),
-            ANATOLIAN_HIEROGLYPH_A417 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA417),
-            ANATOLIAN_HIEROGLYPH_A418 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA418),
-            ANATOLIAN_HIEROGLYPH_A419 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA419),
-            ANATOLIAN_HIEROGLYPH_A420 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA420),
-            ANATOLIAN_HIEROGLYPH_A421 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA421),
-            ANATOLIAN_HIEROGLYPH_A422 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA422),
-            ANATOLIAN_HIEROGLYPH_A423 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA423),
-            ANATOLIAN_HIEROGLYPH_A424 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA424),
-            ANATOLIAN_HIEROGLYPH_A425 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA425),
-            ANATOLIAN_HIEROGLYPH_A426 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA426),
-            ANATOLIAN_HIEROGLYPH_A427 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA427),
-            ANATOLIAN_HIEROGLYPH_A428 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA428),
-            ANATOLIAN_HIEROGLYPH_A429 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA429),
-            ANATOLIAN_HIEROGLYPH_A430 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA430),
-            ANATOLIAN_HIEROGLYPH_A431 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA431),
-            ANATOLIAN_HIEROGLYPH_A432 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA432),
-            ANATOLIAN_HIEROGLYPH_A433 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA433),
-            ANATOLIAN_HIEROGLYPH_A434 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA434),
-            ANATOLIAN_HIEROGLYPH_A435 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA435),
-            ANATOLIAN_HIEROGLYPH_A436 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA436),
-            ANATOLIAN_HIEROGLYPH_A437 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA437),
-            ANATOLIAN_HIEROGLYPH_A438 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA438),
-            ANATOLIAN_HIEROGLYPH_A439 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA439),
-            ANATOLIAN_HIEROGLYPH_A440 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA440),
-            ANATOLIAN_HIEROGLYPH_A441 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA441),
-            ANATOLIAN_HIEROGLYPH_A442 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA442),
-            ANATOLIAN_HIEROGLYPH_A443 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA443),
-            ANATOLIAN_HIEROGLYPH_A444 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA444),
-            ANATOLIAN_HIEROGLYPH_A445 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA445),
-            ANATOLIAN_HIEROGLYPH_A446 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA446),
-            ANATOLIAN_HIEROGLYPH_A447 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA447),
-            ANATOLIAN_HIEROGLYPH_A448 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA448),
-            ANATOLIAN_HIEROGLYPH_A449 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA449),
-            ANATOLIAN_HIEROGLYPH_A450 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA450),
-            ANATOLIAN_HIEROGLYPH_A450A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA450a),
-            ANATOLIAN_HIEROGLYPH_A451 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA451),
-            ANATOLIAN_HIEROGLYPH_A452 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA452),
-            ANATOLIAN_HIEROGLYPH_A453 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA453),
-            ANATOLIAN_HIEROGLYPH_A454 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA454),
-            ANATOLIAN_HIEROGLYPH_A455 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA455),
-            ANATOLIAN_HIEROGLYPH_A456 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA456),
-            ANATOLIAN_HIEROGLYPH_A457 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA457),
-            ANATOLIAN_HIEROGLYPH_A457A => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA457a),
-            ANATOLIAN_HIEROGLYPH_A458 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA458),
-            ANATOLIAN_HIEROGLYPH_A459 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA459),
-            ANATOLIAN_HIEROGLYPH_A460 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA460),
-            ANATOLIAN_HIEROGLYPH_A461 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA461),
-            ANATOLIAN_HIEROGLYPH_A462 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA462),
-            ANATOLIAN_HIEROGLYPH_A463 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA463),
-            ANATOLIAN_HIEROGLYPH_A464 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA464),
-            ANATOLIAN_HIEROGLYPH_A465 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA465),
-            ANATOLIAN_HIEROGLYPH_A466 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA466),
-            ANATOLIAN_HIEROGLYPH_A467 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA467),
-            ANATOLIAN_HIEROGLYPH_A468 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA468),
-            ANATOLIAN_HIEROGLYPH_A469 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA469),
-            ANATOLIAN_HIEROGLYPH_A470 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA470),
-            ANATOLIAN_HIEROGLYPH_A471 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA471),
-            ANATOLIAN_HIEROGLYPH_A472 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA472),
-            ANATOLIAN_HIEROGLYPH_A473 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA473),
-            ANATOLIAN_HIEROGLYPH_A474 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA474),
-            ANATOLIAN_HIEROGLYPH_A475 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA475),
-            ANATOLIAN_HIEROGLYPH_A476 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA476),
-            ANATOLIAN_HIEROGLYPH_A477 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA477),
-            ANATOLIAN_HIEROGLYPH_A478 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA478),
-            ANATOLIAN_HIEROGLYPH_A479 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA479),
-            ANATOLIAN_HIEROGLYPH_A480 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA480),
-            ANATOLIAN_HIEROGLYPH_A481 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA481),
-            ANATOLIAN_HIEROGLYPH_A482 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA482),
-            ANATOLIAN_HIEROGLYPH_A483 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA483),
-            ANATOLIAN_HIEROGLYPH_A484 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA484),
-            ANATOLIAN_HIEROGLYPH_A485 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA485),
-            ANATOLIAN_HIEROGLYPH_A486 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA486),
-            ANATOLIAN_HIEROGLYPH_A487 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA487),
-            ANATOLIAN_HIEROGLYPH_A488 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA488),
-            ANATOLIAN_HIEROGLYPH_A489 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA489),
-            ANATOLIAN_HIEROGLYPH_A490 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA490),
-            ANATOLIAN_HIEROGLYPH_A491 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA491),
-            ANATOLIAN_HIEROGLYPH_A492 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA492),
-            ANATOLIAN_HIEROGLYPH_A493 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA493),
-            ANATOLIAN_HIEROGLYPH_A494 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA494),
-            ANATOLIAN_HIEROGLYPH_A495 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA495),
-            ANATOLIAN_HIEROGLYPH_A496 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA496),
-            ANATOLIAN_HIEROGLYPH_A497 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA497),
-            ANATOLIAN_HIEROGLYPH_A501 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA501),
-            ANATOLIAN_HIEROGLYPH_A502 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA502),
-            ANATOLIAN_HIEROGLYPH_A503 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA503),
-            ANATOLIAN_HIEROGLYPH_A504 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA504),
-            ANATOLIAN_HIEROGLYPH_A505 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA505),
-            ANATOLIAN_HIEROGLYPH_A506 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA506),
-            ANATOLIAN_HIEROGLYPH_A507 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA507),
-            ANATOLIAN_HIEROGLYPH_A508 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA508),
-            ANATOLIAN_HIEROGLYPH_A509 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA509),
-            ANATOLIAN_HIEROGLYPH_A510 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA510),
-            ANATOLIAN_HIEROGLYPH_A511 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA511),
-            ANATOLIAN_HIEROGLYPH_A512 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA512),
-            ANATOLIAN_HIEROGLYPH_A513 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA513),
-            ANATOLIAN_HIEROGLYPH_A514 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA514),
-            ANATOLIAN_HIEROGLYPH_A515 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA515),
-            ANATOLIAN_HIEROGLYPH_A516 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA516),
-            ANATOLIAN_HIEROGLYPH_A517 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA517),
-            ANATOLIAN_HIEROGLYPH_A518 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA518),
-            ANATOLIAN_HIEROGLYPH_A519 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA519),
-            ANATOLIAN_HIEROGLYPH_A520 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA520),
-            ANATOLIAN_HIEROGLYPH_A521 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA521),
-            ANATOLIAN_HIEROGLYPH_A522 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA522),
-            ANATOLIAN_HIEROGLYPH_A523 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA523),
-            ANATOLIAN_HIEROGLYPH_A524 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA524),
-            ANATOLIAN_HIEROGLYPH_A525 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA525),
-            ANATOLIAN_HIEROGLYPH_A526 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA526),
-            ANATOLIAN_HIEROGLYPH_A527 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA527),
-            ANATOLIAN_HIEROGLYPH_A528 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA528),
-            ANATOLIAN_HIEROGLYPH_A529 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA529),
-            ANATOLIAN_HIEROGLYPH_A530 => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA530),
+            '𔐀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA001),
+            '𔐁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA002),
+            '𔐂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA003),
+            '𔐃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA004),
+            '𔐄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA005),
+            '𔐅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA006),
+            '𔐆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA007),
+            '𔐇' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA008),
+            '𔐈' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA009),
+            '𔐉' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA010),
+            '𔐊' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA010a),
+            '𔐋' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA011),
+            '𔐌' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA012),
+            '𔐍' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA013),
+            '𔐎' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA014),
+            '𔐏' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA015),
+            '𔐐' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA016),
+            '𔐑' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA017),
+            '𔐒' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA018),
+            '𔐓' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA019),
+            '𔐔' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA020),
+            '𔐕' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA021),
+            '𔐖' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA022),
+            '𔐗' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA023),
+            '𔐘' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA024),
+            '𔐙' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA025),
+            '𔐚' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA026),
+            '𔐛' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA026a),
+            '𔐜' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA027),
+            '𔐝' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA028),
+            '𔐞' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA029),
+            '𔐟' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA030),
+            '𔐠' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA031),
+            '𔐡' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA032),
+            '𔐢' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA033),
+            '𔐣' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA034),
+            '𔐤' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA035),
+            '𔐥' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA036),
+            '𔐦' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA037),
+            '𔐧' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA038),
+            '𔐨' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA039),
+            '𔐩' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA039a),
+            '𔐪' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA040),
+            '𔐫' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA041),
+            '𔐬' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA041a),
+            '𔐭' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA042),
+            '𔐮' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA043),
+            '𔐯' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA044),
+            '𔐰' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA045),
+            '𔐱' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA045a),
+            '𔐲' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA046),
+            '𔐳' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA046a),
+            '𔐴' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA046b),
+            '𔐵' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA047),
+            '𔐶' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA048),
+            '𔐷' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA049),
+            '𔐸' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA050),
+            '𔐹' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA051),
+            '𔐺' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA052),
+            '𔐻' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA053),
+            '𔐼' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA054),
+            '𔐽' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA055),
+            '𔐾' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA056),
+            '𔐿' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA057),
+            '𔑀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA058),
+            '𔑁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA059),
+            '𔑂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA060),
+            '𔑃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA061),
+            '𔑄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA062),
+            '𔑅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA063),
+            '𔑆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA064),
+            '𔑇' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA065),
+            '𔑈' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA066),
+            '𔑉' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA066a),
+            '𔑊' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA066b),
+            '𔑋' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA066c),
+            '𔑌' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA067),
+            '𔑍' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA068),
+            '𔑎' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA069),
+            '𔑏' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA070),
+            '𔑐' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA071),
+            '𔑑' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA072),
+            '𔑒' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA073),
+            '𔑓' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA074),
+            '𔑔' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA075),
+            '𔑕' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA076),
+            '𔑖' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA077),
+            '𔑗' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA078),
+            '𔑘' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA079),
+            '𔑙' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA080),
+            '𔑚' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA081),
+            '𔑛' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA082),
+            '𔑜' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA083),
+            '𔑝' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA084),
+            '𔑞' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA085),
+            '𔑟' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA086),
+            '𔑠' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA087),
+            '𔑡' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA088),
+            '𔑢' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA089),
+            '𔑣' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA090),
+            '𔑤' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA091),
+            '𔑥' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA092),
+            '𔑦' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA093),
+            '𔑧' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA094),
+            '𔑨' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA095),
+            '𔑩' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA096),
+            '𔑪' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA097),
+            '𔑫' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA097a),
+            '𔑬' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA098),
+            '𔑭' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA098a),
+            '𔑮' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA099),
+            '𔑯' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA100),
+            '𔑰' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA100a),
+            '𔑱' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA101),
+            '𔑲' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA101a),
+            '𔑳' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA102),
+            '𔑴' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA102a),
+            '𔑵' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA103),
+            '𔑶' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA104),
+            '𔑷' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA104a),
+            '𔑸' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA104b),
+            '𔑹' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA104c),
+            '𔑺' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA105),
+            '𔑻' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA105a),
+            '𔑼' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA105b),
+            '𔑽' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA106),
+            '𔑾' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA107),
+            '𔑿' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA107a),
+            '𔒀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA107b),
+            '𔒁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA107c),
+            '𔒂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA108),
+            '𔒃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA109),
+            '𔒄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA110),
+            '𔒅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA110a),
+            '𔒆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA110b),
+            '𔒇' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA111),
+            '𔒈' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA112),
+            '𔒉' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA113),
+            '𔒊' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA114),
+            '𔒋' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA115),
+            '𔒌' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA115a),
+            '𔒍' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA116),
+            '𔒎' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA117),
+            '𔒏' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA118),
+            '𔒐' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA119),
+            '𔒑' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA120),
+            '𔒒' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA121),
+            '𔒓' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA122),
+            '𔒔' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA123),
+            '𔒕' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA124),
+            '𔒖' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA125),
+            '𔒗' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA125a),
+            '𔒘' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA126),
+            '𔒙' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA127),
+            '𔒚' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA128),
+            '𔒛' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA129),
+            '𔒜' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA130),
+            '𔒝' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA131),
+            '𔒞' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA132),
+            '𔒟' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA133),
+            '𔒠' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA134),
+            '𔒡' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA135),
+            '𔒢' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA135a),
+            '𔒣' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA136),
+            '𔒤' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA137),
+            '𔒥' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA138),
+            '𔒦' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA139),
+            '𔒧' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA140),
+            '𔒨' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA141),
+            '𔒩' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA142),
+            '𔒪' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA143),
+            '𔒫' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA144),
+            '𔒬' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA145),
+            '𔒭' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA146),
+            '𔒮' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA147),
+            '𔒯' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA148),
+            '𔒰' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA149),
+            '𔒱' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA150),
+            '𔒲' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA151),
+            '𔒳' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA152),
+            '𔒴' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA153),
+            '𔒵' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA154),
+            '𔒶' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA155),
+            '𔒷' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA156),
+            '𔒸' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA157),
+            '𔒹' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA158),
+            '𔒺' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA159),
+            '𔒻' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA160),
+            '𔒼' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA161),
+            '𔒽' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA162),
+            '𔒾' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA163),
+            '𔒿' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA164),
+            '𔓀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA165),
+            '𔓁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA166),
+            '𔓂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA167),
+            '𔓃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA168),
+            '𔓄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA169),
+            '𔓅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA170),
+            '𔓆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA171),
+            '𔓇' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA172),
+            '𔓈' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA173),
+            '𔓉' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA174),
+            '𔓊' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA175),
+            '𔓋' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA176),
+            '𔓌' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA177),
+            '𔓍' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA178),
+            '𔓎' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA179),
+            '𔓏' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA180),
+            '𔓐' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA181),
+            '𔓑' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA182),
+            '𔓒' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA183),
+            '𔓓' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA184),
+            '𔓔' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA185),
+            '𔓕' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA186),
+            '𔓖' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA187),
+            '𔓗' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA188),
+            '𔓘' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA189),
+            '𔓙' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA190),
+            '𔓚' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA191),
+            '𔓛' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA192),
+            '𔓜' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA193),
+            '𔓝' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA194),
+            '𔓞' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA195),
+            '𔓟' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA196),
+            '𔓠' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA197),
+            '𔓡' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA198),
+            '𔓢' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA199),
+            '𔓣' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA200),
+            '𔓤' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA201),
+            '𔓥' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA202),
+            '𔓦' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA202a),
+            '𔓧' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA202b),
+            '𔓨' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA203),
+            '𔓩' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA204),
+            '𔓪' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA205),
+            '𔓫' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA206),
+            '𔓬' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA207),
+            '𔓭' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA207a),
+            '𔓮' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA208),
+            '𔓯' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA209),
+            '𔓰' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA209a),
+            '𔓱' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA210),
+            '𔓲' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA211),
+            '𔓳' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA212),
+            '𔓴' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA213),
+            '𔓵' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA214),
+            '𔓶' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA215),
+            '𔓷' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA215a),
+            '𔓸' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA216),
+            '𔓹' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA216a),
+            '𔓺' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA217),
+            '𔓻' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA218),
+            '𔓼' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA219),
+            '𔓽' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA220),
+            '𔓾' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA221),
+            '𔓿' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA222),
+            '𔔀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA223),
+            '𔔁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA224),
+            '𔔂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA225),
+            '𔔃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA226),
+            '𔔄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA227),
+            '𔔅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA227a),
+            '𔔆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA228),
+            '𔔇' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA229),
+            '𔔈' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA230),
+            '𔔉' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA231),
+            '𔔊' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA232),
+            '𔔋' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA233),
+            '𔔌' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA234),
+            '𔔍' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA235),
+            '𔔎' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA236),
+            '𔔏' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA237),
+            '𔔐' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA238),
+            '𔔑' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA239),
+            '𔔒' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA240),
+            '𔔓' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA241),
+            '𔔔' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA242),
+            '𔔕' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA243),
+            '𔔖' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA244),
+            '𔔗' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA245),
+            '𔔘' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA246),
+            '𔔙' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA247),
+            '𔔚' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA248),
+            '𔔛' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA249),
+            '𔔜' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA250),
+            '𔔝' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA251),
+            '𔔞' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA252),
+            '𔔟' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA253),
+            '𔔠' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA254),
+            '𔔡' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA255),
+            '𔔢' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA256),
+            '𔔣' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA257),
+            '𔔤' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA258),
+            '𔔥' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA259),
+            '𔔦' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA260),
+            '𔔧' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA261),
+            '𔔨' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA262),
+            '𔔩' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA263),
+            '𔔪' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA264),
+            '𔔫' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA265),
+            '𔔬' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA266),
+            '𔔭' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA267),
+            '𔔮' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA267a),
+            '𔔯' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA268),
+            '𔔰' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA269),
+            '𔔱' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA270),
+            '𔔲' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA271),
+            '𔔳' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA272),
+            '𔔴' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA273),
+            '𔔵' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA274),
+            '𔔶' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA275),
+            '𔔷' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA276),
+            '𔔸' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA277),
+            '𔔹' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA278),
+            '𔔺' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA279),
+            '𔔻' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA280),
+            '𔔼' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA281),
+            '𔔽' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA282),
+            '𔔾' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA283),
+            '𔔿' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA284),
+            '𔕀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA285),
+            '𔕁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA286),
+            '𔕂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA287),
+            '𔕃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA288),
+            '𔕄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA289),
+            '𔕅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA289a),
+            '𔕆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA290),
+            '𔕇' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA291),
+            '𔕈' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA292),
+            '𔕉' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA293),
+            '𔕊' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA294),
+            '𔕋' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA294a),
+            '𔕌' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA295),
+            '𔕍' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA296),
+            '𔕎' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA297),
+            '𔕏' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA298),
+            '𔕐' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA299),
+            '𔕑' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA299a),
+            '𔕒' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA300),
+            '𔕓' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA301),
+            '𔕔' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA302),
+            '𔕕' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA303),
+            '𔕖' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA304),
+            '𔕗' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA305),
+            '𔕘' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA306),
+            '𔕙' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA307),
+            '𔕚' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA308),
+            '𔕛' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA309),
+            '𔕜' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA309a),
+            '𔕝' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA310),
+            '𔕞' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA311),
+            '𔕟' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA312),
+            '𔕠' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA313),
+            '𔕡' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA314),
+            '𔕢' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA315),
+            '𔕣' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA316),
+            '𔕤' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA317),
+            '𔕥' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA318),
+            '𔕦' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA319),
+            '𔕧' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA320),
+            '𔕨' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA321),
+            '𔕩' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA322),
+            '𔕪' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA323),
+            '𔕫' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA324),
+            '𔕬' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA325),
+            '𔕭' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA326),
+            '𔕮' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA327),
+            '𔕯' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA328),
+            '𔕰' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA329),
+            '𔕱' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA329a),
+            '𔕲' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA330),
+            '𔕳' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA331),
+            '𔕴' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA332a),
+            '𔕵' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA332b),
+            '𔕶' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA332c),
+            '𔕷' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA333),
+            '𔕸' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA334),
+            '𔕹' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA335),
+            '𔕺' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA336),
+            '𔕻' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA336a),
+            '𔕼' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA336b),
+            '𔕽' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA336c),
+            '𔕾' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA337),
+            '𔕿' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA338),
+            '𔖀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA339),
+            '𔖁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA340),
+            '𔖂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA341),
+            '𔖃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA342),
+            '𔖄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA343),
+            '𔖅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA344),
+            '𔖆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA345),
+            '𔖇' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA346),
+            '𔖈' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA347),
+            '𔖉' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA348),
+            '𔖊' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA349),
+            '𔖋' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA350),
+            '𔖌' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA351),
+            '𔖍' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA352),
+            '𔖎' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA353),
+            '𔖏' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA354),
+            '𔖐' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA355),
+            '𔖑' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA356),
+            '𔖒' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA357),
+            '𔖓' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA358),
+            '𔖔' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA359),
+            '𔖕' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA359a),
+            '𔖖' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA360),
+            '𔖗' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA361),
+            '𔖘' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA362),
+            '𔖙' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA363),
+            '𔖚' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA364),
+            '𔖛' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA364a),
+            '𔖜' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA365),
+            '𔖝' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA366),
+            '𔖞' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA367),
+            '𔖟' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA368),
+            '𔖠' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA368a),
+            '𔖡' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA369),
+            '𔖢' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA370),
+            '𔖣' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA371),
+            '𔖤' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA371a),
+            '𔖥' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA372),
+            '𔖦' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA373),
+            '𔖧' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA374),
+            '𔖨' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA375),
+            '𔖩' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA376),
+            '𔖪' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA377),
+            '𔖫' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA378),
+            '𔖬' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA379),
+            '𔖭' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA380),
+            '𔖮' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA381),
+            '𔖯' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA381a),
+            '𔖰' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA382),
+            '𔖱' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA383RaOrRi),
+            '𔖲' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA383a),
+            '𔖳' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA384),
+            '𔖴' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA385),
+            '𔖵' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA386),
+            '𔖶' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA386a),
+            '𔖷' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA387),
+            '𔖸' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA388),
+            '𔖹' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA389),
+            '𔖺' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA390),
+            '𔖻' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA391),
+            '𔖼' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA392),
+            '𔖽' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA393Eight),
+            '𔖾' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA394),
+            '𔖿' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA395),
+            '𔗀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA396),
+            '𔗁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA397),
+            '𔗂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA398),
+            '𔗃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA399),
+            '𔗄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA400),
+            '𔗅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA401),
+            '𔗆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA402),
+            '𔗇' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA403),
+            '𔗈' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA404),
+            '𔗉' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA405),
+            '𔗊' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA406),
+            '𔗋' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA407),
+            '𔗌' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA408),
+            '𔗍' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA409),
+            '𔗎' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA410BeginLogogramMark),
+            '𔗏' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA410aEndLogogramMark),
+            '𔗐' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA411),
+            '𔗑' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA412),
+            '𔗒' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA413),
+            '𔗓' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA414),
+            '𔗔' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA415),
+            '𔗕' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA416),
+            '𔗖' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA417),
+            '𔗗' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA418),
+            '𔗘' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA419),
+            '𔗙' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA420),
+            '𔗚' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA421),
+            '𔗛' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA422),
+            '𔗜' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA423),
+            '𔗝' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA424),
+            '𔗞' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA425),
+            '𔗟' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA426),
+            '𔗠' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA427),
+            '𔗡' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA428),
+            '𔗢' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA429),
+            '𔗣' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA430),
+            '𔗤' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA431),
+            '𔗥' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA432),
+            '𔗦' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA433),
+            '𔗧' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA434),
+            '𔗨' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA435),
+            '𔗩' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA436),
+            '𔗪' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA437),
+            '𔗫' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA438),
+            '𔗬' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA439),
+            '𔗭' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA440),
+            '𔗮' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA441),
+            '𔗯' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA442),
+            '𔗰' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA443),
+            '𔗱' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA444),
+            '𔗲' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA445),
+            '𔗳' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA446),
+            '𔗴' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA447),
+            '𔗵' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA448),
+            '𔗶' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA449),
+            '𔗷' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA450),
+            '𔗸' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA450a),
+            '𔗹' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA451),
+            '𔗺' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA452),
+            '𔗻' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA453),
+            '𔗼' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA454),
+            '𔗽' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA455),
+            '𔗾' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA456),
+            '𔗿' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA457),
+            '𔘀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA457a),
+            '𔘁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA458),
+            '𔘂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA459),
+            '𔘃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA460),
+            '𔘄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA461),
+            '𔘅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA462),
+            '𔘆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA463),
+            '𔘇' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA464),
+            '𔘈' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA465),
+            '𔘉' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA466),
+            '𔘊' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA467),
+            '𔘋' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA468),
+            '𔘌' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA469),
+            '𔘍' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA470),
+            '𔘎' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA471),
+            '𔘏' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA472),
+            '𔘐' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA473),
+            '𔘑' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA474),
+            '𔘒' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA475),
+            '𔘓' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA476),
+            '𔘔' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA477),
+            '𔘕' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA478),
+            '𔘖' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA479),
+            '𔘗' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA480),
+            '𔘘' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA481),
+            '𔘙' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA482),
+            '𔘚' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA483),
+            '𔘛' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA484),
+            '𔘜' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA485),
+            '𔘝' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA486),
+            '𔘞' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA487),
+            '𔘟' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA488),
+            '𔘠' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA489),
+            '𔘡' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA490),
+            '𔘢' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA491),
+            '𔘣' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA492),
+            '𔘤' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA493),
+            '𔘥' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA494),
+            '𔘦' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA495),
+            '𔘧' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA496),
+            '𔘨' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA497),
+            '𔘩' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA501),
+            '𔘪' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA502),
+            '𔘫' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA503),
+            '𔘬' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA504),
+            '𔘭' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA505),
+            '𔘮' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA506),
+            '𔘯' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA507),
+            '𔘰' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA508),
+            '𔘱' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA509),
+            '𔘲' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA510),
+            '𔘳' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA511),
+            '𔘴' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA512),
+            '𔘵' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA513),
+            '𔘶' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA514),
+            '𔘷' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA515),
+            '𔘸' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA516),
+            '𔘹' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA517),
+            '𔘺' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA518),
+            '𔘻' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA519),
+            '𔘼' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA520),
+            '𔘽' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA521),
+            '𔘾' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA522),
+            '𔘿' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA523),
+            '𔙀' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA524),
+            '𔙁' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA525),
+            '𔙂' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA526),
+            '𔙃' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA527),
+            '𔙄' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA528),
+            '𔙅' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA529),
+            '𔙆' => Ok(AnatolianHieroglyphs::AnatolianHieroglyphA530),
             _ => Err(()),
         }
     }

@@ -1,60 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10330}: '𐌰'
-    pub const LETTER_AHSA: char = '𐌰';
-    /// \u{10331}: '𐌱'
-    pub const LETTER_BAIRKAN: char = '𐌱';
-    /// \u{10332}: '𐌲'
-    pub const LETTER_GIBA: char = '𐌲';
-    /// \u{10333}: '𐌳'
-    pub const LETTER_DAGS: char = '𐌳';
-    /// \u{10334}: '𐌴'
-    pub const LETTER_AIHVUS: char = '𐌴';
-    /// \u{10335}: '𐌵'
-    pub const LETTER_QAIRTHRA: char = '𐌵';
-    /// \u{10336}: '𐌶'
-    pub const LETTER_IUJA: char = '𐌶';
-    /// \u{10337}: '𐌷'
-    pub const LETTER_HAGL: char = '𐌷';
-    /// \u{10338}: '𐌸'
-    pub const LETTER_THIUTH: char = '𐌸';
-    /// \u{10339}: '𐌹'
-    pub const LETTER_EIS: char = '𐌹';
-    /// \u{1033a}: '𐌺'
-    pub const LETTER_KUSMA: char = '𐌺';
-    /// \u{1033b}: '𐌻'
-    pub const LETTER_LAGUS: char = '𐌻';
-    /// \u{1033c}: '𐌼'
-    pub const LETTER_MANNA: char = '𐌼';
-    /// \u{1033d}: '𐌽'
-    pub const LETTER_NAUTHS: char = '𐌽';
-    /// \u{1033e}: '𐌾'
-    pub const LETTER_JER: char = '𐌾';
-    /// \u{1033f}: '𐌿'
-    pub const LETTER_URUS: char = '𐌿';
-    /// \u{10340}: '𐍀'
-    pub const LETTER_PAIRTHRA: char = '𐍀';
-    /// \u{10341}: '𐍁'
-    pub const LETTER_NINETY: char = '𐍁';
-    /// \u{10342}: '𐍂'
-    pub const LETTER_RAIDA: char = '𐍂';
-    /// \u{10343}: '𐍃'
-    pub const LETTER_SAUIL: char = '𐍃';
-    /// \u{10344}: '𐍄'
-    pub const LETTER_TEIWS: char = '𐍄';
-    /// \u{10345}: '𐍅'
-    pub const LETTER_WINJA: char = '𐍅';
-    /// \u{10346}: '𐍆'
-    pub const LETTER_FAIHU: char = '𐍆';
-    /// \u{10347}: '𐍇'
-    pub const LETTER_IGGWS: char = '𐍇';
-    /// \u{10348}: '𐍈'
-    pub const LETTER_HWAIR: char = '𐍈';
-    /// \u{10349}: '𐍉'
-    pub const LETTER_OTHAL: char = '𐍉';
-    /// \u{1034a}: '𐍊'
-    pub const LETTER_NINE_HUNDRED: char = '𐍊';
-}
 
 /// An enum to represent all characters in the Gothic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -117,35 +60,34 @@ pub enum Gothic {
 
 impl Into<char> for Gothic {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Gothic::LetterAhsa => LETTER_AHSA,
-            Gothic::LetterBairkan => LETTER_BAIRKAN,
-            Gothic::LetterGiba => LETTER_GIBA,
-            Gothic::LetterDags => LETTER_DAGS,
-            Gothic::LetterAihvus => LETTER_AIHVUS,
-            Gothic::LetterQairthra => LETTER_QAIRTHRA,
-            Gothic::LetterIuja => LETTER_IUJA,
-            Gothic::LetterHagl => LETTER_HAGL,
-            Gothic::LetterThiuth => LETTER_THIUTH,
-            Gothic::LetterEis => LETTER_EIS,
-            Gothic::LetterKusma => LETTER_KUSMA,
-            Gothic::LetterLagus => LETTER_LAGUS,
-            Gothic::LetterManna => LETTER_MANNA,
-            Gothic::LetterNauths => LETTER_NAUTHS,
-            Gothic::LetterJer => LETTER_JER,
-            Gothic::LetterUrus => LETTER_URUS,
-            Gothic::LetterPairthra => LETTER_PAIRTHRA,
-            Gothic::LetterNinety => LETTER_NINETY,
-            Gothic::LetterRaida => LETTER_RAIDA,
-            Gothic::LetterSauil => LETTER_SAUIL,
-            Gothic::LetterTeiws => LETTER_TEIWS,
-            Gothic::LetterWinja => LETTER_WINJA,
-            Gothic::LetterFaihu => LETTER_FAIHU,
-            Gothic::LetterIggws => LETTER_IGGWS,
-            Gothic::LetterHwair => LETTER_HWAIR,
-            Gothic::LetterOthal => LETTER_OTHAL,
-            Gothic::LetterNineHundred => LETTER_NINE_HUNDRED,
+            Gothic::LetterAhsa => '𐌰',
+            Gothic::LetterBairkan => '𐌱',
+            Gothic::LetterGiba => '𐌲',
+            Gothic::LetterDags => '𐌳',
+            Gothic::LetterAihvus => '𐌴',
+            Gothic::LetterQairthra => '𐌵',
+            Gothic::LetterIuja => '𐌶',
+            Gothic::LetterHagl => '𐌷',
+            Gothic::LetterThiuth => '𐌸',
+            Gothic::LetterEis => '𐌹',
+            Gothic::LetterKusma => '𐌺',
+            Gothic::LetterLagus => '𐌻',
+            Gothic::LetterManna => '𐌼',
+            Gothic::LetterNauths => '𐌽',
+            Gothic::LetterJer => '𐌾',
+            Gothic::LetterUrus => '𐌿',
+            Gothic::LetterPairthra => '𐍀',
+            Gothic::LetterNinety => '𐍁',
+            Gothic::LetterRaida => '𐍂',
+            Gothic::LetterSauil => '𐍃',
+            Gothic::LetterTeiws => '𐍄',
+            Gothic::LetterWinja => '𐍅',
+            Gothic::LetterFaihu => '𐍆',
+            Gothic::LetterIggws => '𐍇',
+            Gothic::LetterHwair => '𐍈',
+            Gothic::LetterOthal => '𐍉',
+            Gothic::LetterNineHundred => '𐍊',
         }
     }
 }
@@ -153,35 +95,34 @@ impl Into<char> for Gothic {
 impl std::convert::TryFrom<char> for Gothic {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_AHSA => Ok(Gothic::LetterAhsa),
-            LETTER_BAIRKAN => Ok(Gothic::LetterBairkan),
-            LETTER_GIBA => Ok(Gothic::LetterGiba),
-            LETTER_DAGS => Ok(Gothic::LetterDags),
-            LETTER_AIHVUS => Ok(Gothic::LetterAihvus),
-            LETTER_QAIRTHRA => Ok(Gothic::LetterQairthra),
-            LETTER_IUJA => Ok(Gothic::LetterIuja),
-            LETTER_HAGL => Ok(Gothic::LetterHagl),
-            LETTER_THIUTH => Ok(Gothic::LetterThiuth),
-            LETTER_EIS => Ok(Gothic::LetterEis),
-            LETTER_KUSMA => Ok(Gothic::LetterKusma),
-            LETTER_LAGUS => Ok(Gothic::LetterLagus),
-            LETTER_MANNA => Ok(Gothic::LetterManna),
-            LETTER_NAUTHS => Ok(Gothic::LetterNauths),
-            LETTER_JER => Ok(Gothic::LetterJer),
-            LETTER_URUS => Ok(Gothic::LetterUrus),
-            LETTER_PAIRTHRA => Ok(Gothic::LetterPairthra),
-            LETTER_NINETY => Ok(Gothic::LetterNinety),
-            LETTER_RAIDA => Ok(Gothic::LetterRaida),
-            LETTER_SAUIL => Ok(Gothic::LetterSauil),
-            LETTER_TEIWS => Ok(Gothic::LetterTeiws),
-            LETTER_WINJA => Ok(Gothic::LetterWinja),
-            LETTER_FAIHU => Ok(Gothic::LetterFaihu),
-            LETTER_IGGWS => Ok(Gothic::LetterIggws),
-            LETTER_HWAIR => Ok(Gothic::LetterHwair),
-            LETTER_OTHAL => Ok(Gothic::LetterOthal),
-            LETTER_NINE_HUNDRED => Ok(Gothic::LetterNineHundred),
+            '𐌰' => Ok(Gothic::LetterAhsa),
+            '𐌱' => Ok(Gothic::LetterBairkan),
+            '𐌲' => Ok(Gothic::LetterGiba),
+            '𐌳' => Ok(Gothic::LetterDags),
+            '𐌴' => Ok(Gothic::LetterAihvus),
+            '𐌵' => Ok(Gothic::LetterQairthra),
+            '𐌶' => Ok(Gothic::LetterIuja),
+            '𐌷' => Ok(Gothic::LetterHagl),
+            '𐌸' => Ok(Gothic::LetterThiuth),
+            '𐌹' => Ok(Gothic::LetterEis),
+            '𐌺' => Ok(Gothic::LetterKusma),
+            '𐌻' => Ok(Gothic::LetterLagus),
+            '𐌼' => Ok(Gothic::LetterManna),
+            '𐌽' => Ok(Gothic::LetterNauths),
+            '𐌾' => Ok(Gothic::LetterJer),
+            '𐌿' => Ok(Gothic::LetterUrus),
+            '𐍀' => Ok(Gothic::LetterPairthra),
+            '𐍁' => Ok(Gothic::LetterNinety),
+            '𐍂' => Ok(Gothic::LetterRaida),
+            '𐍃' => Ok(Gothic::LetterSauil),
+            '𐍄' => Ok(Gothic::LetterTeiws),
+            '𐍅' => Ok(Gothic::LetterWinja),
+            '𐍆' => Ok(Gothic::LetterFaihu),
+            '𐍇' => Ok(Gothic::LetterIggws),
+            '𐍈' => Ok(Gothic::LetterHwair),
+            '𐍉' => Ok(Gothic::LetterOthal),
+            '𐍊' => Ok(Gothic::LetterNineHundred),
             _ => Err(()),
         }
     }

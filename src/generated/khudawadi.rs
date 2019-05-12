@@ -1,144 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{112b0}: '𑊰'
-    pub const LETTER_A: char = '𑊰';
-    /// \u{112b1}: '𑊱'
-    pub const LETTER_AA: char = '𑊱';
-    /// \u{112b2}: '𑊲'
-    pub const LETTER_I: char = '𑊲';
-    /// \u{112b3}: '𑊳'
-    pub const LETTER_II: char = '𑊳';
-    /// \u{112b4}: '𑊴'
-    pub const LETTER_U: char = '𑊴';
-    /// \u{112b5}: '𑊵'
-    pub const LETTER_UU: char = '𑊵';
-    /// \u{112b6}: '𑊶'
-    pub const LETTER_E: char = '𑊶';
-    /// \u{112b7}: '𑊷'
-    pub const LETTER_AI: char = '𑊷';
-    /// \u{112b8}: '𑊸'
-    pub const LETTER_O: char = '𑊸';
-    /// \u{112b9}: '𑊹'
-    pub const LETTER_AU: char = '𑊹';
-    /// \u{112ba}: '𑊺'
-    pub const LETTER_KA: char = '𑊺';
-    /// \u{112bb}: '𑊻'
-    pub const LETTER_KHA: char = '𑊻';
-    /// \u{112bc}: '𑊼'
-    pub const LETTER_GA: char = '𑊼';
-    /// \u{112bd}: '𑊽'
-    pub const LETTER_GGA: char = '𑊽';
-    /// \u{112be}: '𑊾'
-    pub const LETTER_GHA: char = '𑊾';
-    /// \u{112bf}: '𑊿'
-    pub const LETTER_NGA: char = '𑊿';
-    /// \u{112c0}: '𑋀'
-    pub const LETTER_CA: char = '𑋀';
-    /// \u{112c1}: '𑋁'
-    pub const LETTER_CHA: char = '𑋁';
-    /// \u{112c2}: '𑋂'
-    pub const LETTER_JA: char = '𑋂';
-    /// \u{112c3}: '𑋃'
-    pub const LETTER_JJA: char = '𑋃';
-    /// \u{112c4}: '𑋄'
-    pub const LETTER_JHA: char = '𑋄';
-    /// \u{112c5}: '𑋅'
-    pub const LETTER_NYA: char = '𑋅';
-    /// \u{112c6}: '𑋆'
-    pub const LETTER_TTA: char = '𑋆';
-    /// \u{112c7}: '𑋇'
-    pub const LETTER_TTHA: char = '𑋇';
-    /// \u{112c8}: '𑋈'
-    pub const LETTER_DDA: char = '𑋈';
-    /// \u{112c9}: '𑋉'
-    pub const LETTER_DDDA: char = '𑋉';
-    /// \u{112ca}: '𑋊'
-    pub const LETTER_RRA: char = '𑋊';
-    /// \u{112cb}: '𑋋'
-    pub const LETTER_DDHA: char = '𑋋';
-    /// \u{112cc}: '𑋌'
-    pub const LETTER_NNA: char = '𑋌';
-    /// \u{112cd}: '𑋍'
-    pub const LETTER_TA: char = '𑋍';
-    /// \u{112ce}: '𑋎'
-    pub const LETTER_THA: char = '𑋎';
-    /// \u{112cf}: '𑋏'
-    pub const LETTER_DA: char = '𑋏';
-    /// \u{112d0}: '𑋐'
-    pub const LETTER_DHA: char = '𑋐';
-    /// \u{112d1}: '𑋑'
-    pub const LETTER_NA: char = '𑋑';
-    /// \u{112d2}: '𑋒'
-    pub const LETTER_PA: char = '𑋒';
-    /// \u{112d3}: '𑋓'
-    pub const LETTER_PHA: char = '𑋓';
-    /// \u{112d4}: '𑋔'
-    pub const LETTER_BA: char = '𑋔';
-    /// \u{112d5}: '𑋕'
-    pub const LETTER_BBA: char = '𑋕';
-    /// \u{112d6}: '𑋖'
-    pub const LETTER_BHA: char = '𑋖';
-    /// \u{112d7}: '𑋗'
-    pub const LETTER_MA: char = '𑋗';
-    /// \u{112d8}: '𑋘'
-    pub const LETTER_YA: char = '𑋘';
-    /// \u{112d9}: '𑋙'
-    pub const LETTER_RA: char = '𑋙';
-    /// \u{112da}: '𑋚'
-    pub const LETTER_LA: char = '𑋚';
-    /// \u{112db}: '𑋛'
-    pub const LETTER_VA: char = '𑋛';
-    /// \u{112dc}: '𑋜'
-    pub const LETTER_SHA: char = '𑋜';
-    /// \u{112dd}: '𑋝'
-    pub const LETTER_SA: char = '𑋝';
-    /// \u{112de}: '𑋞'
-    pub const LETTER_HA: char = '𑋞';
-    /// \u{112df}: '𑋟'
-    pub const SIGN_ANUSVARA: char = '𑋟';
-    /// \u{112e0}: '𑋠'
-    pub const VOWEL_SIGN_AA: char = '𑋠';
-    /// \u{112e1}: '𑋡'
-    pub const VOWEL_SIGN_I: char = '𑋡';
-    /// \u{112e2}: '𑋢'
-    pub const VOWEL_SIGN_II: char = '𑋢';
-    /// \u{112e3}: '𑋣'
-    pub const VOWEL_SIGN_U: char = '𑋣';
-    /// \u{112e4}: '𑋤'
-    pub const VOWEL_SIGN_UU: char = '𑋤';
-    /// \u{112e5}: '𑋥'
-    pub const VOWEL_SIGN_E: char = '𑋥';
-    /// \u{112e6}: '𑋦'
-    pub const VOWEL_SIGN_AI: char = '𑋦';
-    /// \u{112e7}: '𑋧'
-    pub const VOWEL_SIGN_O: char = '𑋧';
-    /// \u{112e8}: '𑋨'
-    pub const VOWEL_SIGN_AU: char = '𑋨';
-    /// \u{112e9}: '𑋩'
-    pub const SIGN_NUKTA: char = '𑋩';
-    /// \u{112ea}: '𑋪'
-    pub const SIGN_VIRAMA: char = '𑋪';
-    /// \u{112f0}: '𑋰'
-    pub const DIGIT_ZERO: char = '𑋰';
-    /// \u{112f1}: '𑋱'
-    pub const DIGIT_ONE: char = '𑋱';
-    /// \u{112f2}: '𑋲'
-    pub const DIGIT_TWO: char = '𑋲';
-    /// \u{112f3}: '𑋳'
-    pub const DIGIT_THREE: char = '𑋳';
-    /// \u{112f4}: '𑋴'
-    pub const DIGIT_FOUR: char = '𑋴';
-    /// \u{112f5}: '𑋵'
-    pub const DIGIT_FIVE: char = '𑋵';
-    /// \u{112f6}: '𑋶'
-    pub const DIGIT_SIX: char = '𑋶';
-    /// \u{112f7}: '𑋷'
-    pub const DIGIT_SEVEN: char = '𑋷';
-    /// \u{112f8}: '𑋸'
-    pub const DIGIT_EIGHT: char = '𑋸';
-    /// \u{112f9}: '𑋹'
-    pub const DIGIT_NINE: char = '𑋹';
-}
 
 /// An enum to represent all characters in the Khudawadi block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -285,77 +144,76 @@ pub enum Khudawadi {
 
 impl Into<char> for Khudawadi {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Khudawadi::LetterA => LETTER_A,
-            Khudawadi::LetterAa => LETTER_AA,
-            Khudawadi::LetterI => LETTER_I,
-            Khudawadi::LetterIi => LETTER_II,
-            Khudawadi::LetterU => LETTER_U,
-            Khudawadi::LetterUu => LETTER_UU,
-            Khudawadi::LetterE => LETTER_E,
-            Khudawadi::LetterAi => LETTER_AI,
-            Khudawadi::LetterO => LETTER_O,
-            Khudawadi::LetterAu => LETTER_AU,
-            Khudawadi::LetterKa => LETTER_KA,
-            Khudawadi::LetterKha => LETTER_KHA,
-            Khudawadi::LetterGa => LETTER_GA,
-            Khudawadi::LetterGga => LETTER_GGA,
-            Khudawadi::LetterGha => LETTER_GHA,
-            Khudawadi::LetterNga => LETTER_NGA,
-            Khudawadi::LetterCa => LETTER_CA,
-            Khudawadi::LetterCha => LETTER_CHA,
-            Khudawadi::LetterJa => LETTER_JA,
-            Khudawadi::LetterJja => LETTER_JJA,
-            Khudawadi::LetterJha => LETTER_JHA,
-            Khudawadi::LetterNya => LETTER_NYA,
-            Khudawadi::LetterTta => LETTER_TTA,
-            Khudawadi::LetterTtha => LETTER_TTHA,
-            Khudawadi::LetterDda => LETTER_DDA,
-            Khudawadi::LetterDdda => LETTER_DDDA,
-            Khudawadi::LetterRra => LETTER_RRA,
-            Khudawadi::LetterDdha => LETTER_DDHA,
-            Khudawadi::LetterNna => LETTER_NNA,
-            Khudawadi::LetterTa => LETTER_TA,
-            Khudawadi::LetterTha => LETTER_THA,
-            Khudawadi::LetterDa => LETTER_DA,
-            Khudawadi::LetterDha => LETTER_DHA,
-            Khudawadi::LetterNa => LETTER_NA,
-            Khudawadi::LetterPa => LETTER_PA,
-            Khudawadi::LetterPha => LETTER_PHA,
-            Khudawadi::LetterBa => LETTER_BA,
-            Khudawadi::LetterBba => LETTER_BBA,
-            Khudawadi::LetterBha => LETTER_BHA,
-            Khudawadi::LetterMa => LETTER_MA,
-            Khudawadi::LetterYa => LETTER_YA,
-            Khudawadi::LetterRa => LETTER_RA,
-            Khudawadi::LetterLa => LETTER_LA,
-            Khudawadi::LetterVa => LETTER_VA,
-            Khudawadi::LetterSha => LETTER_SHA,
-            Khudawadi::LetterSa => LETTER_SA,
-            Khudawadi::LetterHa => LETTER_HA,
-            Khudawadi::SignAnusvara => SIGN_ANUSVARA,
-            Khudawadi::VowelSignAa => VOWEL_SIGN_AA,
-            Khudawadi::VowelSignI => VOWEL_SIGN_I,
-            Khudawadi::VowelSignIi => VOWEL_SIGN_II,
-            Khudawadi::VowelSignU => VOWEL_SIGN_U,
-            Khudawadi::VowelSignUu => VOWEL_SIGN_UU,
-            Khudawadi::VowelSignE => VOWEL_SIGN_E,
-            Khudawadi::VowelSignAi => VOWEL_SIGN_AI,
-            Khudawadi::VowelSignO => VOWEL_SIGN_O,
-            Khudawadi::VowelSignAu => VOWEL_SIGN_AU,
-            Khudawadi::SignNukta => SIGN_NUKTA,
-            Khudawadi::SignVirama => SIGN_VIRAMA,
-            Khudawadi::DigitZero => DIGIT_ZERO,
-            Khudawadi::DigitOne => DIGIT_ONE,
-            Khudawadi::DigitTwo => DIGIT_TWO,
-            Khudawadi::DigitThree => DIGIT_THREE,
-            Khudawadi::DigitFour => DIGIT_FOUR,
-            Khudawadi::DigitFive => DIGIT_FIVE,
-            Khudawadi::DigitSix => DIGIT_SIX,
-            Khudawadi::DigitSeven => DIGIT_SEVEN,
-            Khudawadi::DigitEight => DIGIT_EIGHT,
-            Khudawadi::DigitNine => DIGIT_NINE,
+            Khudawadi::LetterA => '𑊰',
+            Khudawadi::LetterAa => '𑊱',
+            Khudawadi::LetterI => '𑊲',
+            Khudawadi::LetterIi => '𑊳',
+            Khudawadi::LetterU => '𑊴',
+            Khudawadi::LetterUu => '𑊵',
+            Khudawadi::LetterE => '𑊶',
+            Khudawadi::LetterAi => '𑊷',
+            Khudawadi::LetterO => '𑊸',
+            Khudawadi::LetterAu => '𑊹',
+            Khudawadi::LetterKa => '𑊺',
+            Khudawadi::LetterKha => '𑊻',
+            Khudawadi::LetterGa => '𑊼',
+            Khudawadi::LetterGga => '𑊽',
+            Khudawadi::LetterGha => '𑊾',
+            Khudawadi::LetterNga => '𑊿',
+            Khudawadi::LetterCa => '𑋀',
+            Khudawadi::LetterCha => '𑋁',
+            Khudawadi::LetterJa => '𑋂',
+            Khudawadi::LetterJja => '𑋃',
+            Khudawadi::LetterJha => '𑋄',
+            Khudawadi::LetterNya => '𑋅',
+            Khudawadi::LetterTta => '𑋆',
+            Khudawadi::LetterTtha => '𑋇',
+            Khudawadi::LetterDda => '𑋈',
+            Khudawadi::LetterDdda => '𑋉',
+            Khudawadi::LetterRra => '𑋊',
+            Khudawadi::LetterDdha => '𑋋',
+            Khudawadi::LetterNna => '𑋌',
+            Khudawadi::LetterTa => '𑋍',
+            Khudawadi::LetterTha => '𑋎',
+            Khudawadi::LetterDa => '𑋏',
+            Khudawadi::LetterDha => '𑋐',
+            Khudawadi::LetterNa => '𑋑',
+            Khudawadi::LetterPa => '𑋒',
+            Khudawadi::LetterPha => '𑋓',
+            Khudawadi::LetterBa => '𑋔',
+            Khudawadi::LetterBba => '𑋕',
+            Khudawadi::LetterBha => '𑋖',
+            Khudawadi::LetterMa => '𑋗',
+            Khudawadi::LetterYa => '𑋘',
+            Khudawadi::LetterRa => '𑋙',
+            Khudawadi::LetterLa => '𑋚',
+            Khudawadi::LetterVa => '𑋛',
+            Khudawadi::LetterSha => '𑋜',
+            Khudawadi::LetterSa => '𑋝',
+            Khudawadi::LetterHa => '𑋞',
+            Khudawadi::SignAnusvara => '𑋟',
+            Khudawadi::VowelSignAa => '𑋠',
+            Khudawadi::VowelSignI => '𑋡',
+            Khudawadi::VowelSignIi => '𑋢',
+            Khudawadi::VowelSignU => '𑋣',
+            Khudawadi::VowelSignUu => '𑋤',
+            Khudawadi::VowelSignE => '𑋥',
+            Khudawadi::VowelSignAi => '𑋦',
+            Khudawadi::VowelSignO => '𑋧',
+            Khudawadi::VowelSignAu => '𑋨',
+            Khudawadi::SignNukta => '𑋩',
+            Khudawadi::SignVirama => '𑋪',
+            Khudawadi::DigitZero => '𑋰',
+            Khudawadi::DigitOne => '𑋱',
+            Khudawadi::DigitTwo => '𑋲',
+            Khudawadi::DigitThree => '𑋳',
+            Khudawadi::DigitFour => '𑋴',
+            Khudawadi::DigitFive => '𑋵',
+            Khudawadi::DigitSix => '𑋶',
+            Khudawadi::DigitSeven => '𑋷',
+            Khudawadi::DigitEight => '𑋸',
+            Khudawadi::DigitNine => '𑋹',
         }
     }
 }
@@ -363,77 +221,76 @@ impl Into<char> for Khudawadi {
 impl std::convert::TryFrom<char> for Khudawadi {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Khudawadi::LetterA),
-            LETTER_AA => Ok(Khudawadi::LetterAa),
-            LETTER_I => Ok(Khudawadi::LetterI),
-            LETTER_II => Ok(Khudawadi::LetterIi),
-            LETTER_U => Ok(Khudawadi::LetterU),
-            LETTER_UU => Ok(Khudawadi::LetterUu),
-            LETTER_E => Ok(Khudawadi::LetterE),
-            LETTER_AI => Ok(Khudawadi::LetterAi),
-            LETTER_O => Ok(Khudawadi::LetterO),
-            LETTER_AU => Ok(Khudawadi::LetterAu),
-            LETTER_KA => Ok(Khudawadi::LetterKa),
-            LETTER_KHA => Ok(Khudawadi::LetterKha),
-            LETTER_GA => Ok(Khudawadi::LetterGa),
-            LETTER_GGA => Ok(Khudawadi::LetterGga),
-            LETTER_GHA => Ok(Khudawadi::LetterGha),
-            LETTER_NGA => Ok(Khudawadi::LetterNga),
-            LETTER_CA => Ok(Khudawadi::LetterCa),
-            LETTER_CHA => Ok(Khudawadi::LetterCha),
-            LETTER_JA => Ok(Khudawadi::LetterJa),
-            LETTER_JJA => Ok(Khudawadi::LetterJja),
-            LETTER_JHA => Ok(Khudawadi::LetterJha),
-            LETTER_NYA => Ok(Khudawadi::LetterNya),
-            LETTER_TTA => Ok(Khudawadi::LetterTta),
-            LETTER_TTHA => Ok(Khudawadi::LetterTtha),
-            LETTER_DDA => Ok(Khudawadi::LetterDda),
-            LETTER_DDDA => Ok(Khudawadi::LetterDdda),
-            LETTER_RRA => Ok(Khudawadi::LetterRra),
-            LETTER_DDHA => Ok(Khudawadi::LetterDdha),
-            LETTER_NNA => Ok(Khudawadi::LetterNna),
-            LETTER_TA => Ok(Khudawadi::LetterTa),
-            LETTER_THA => Ok(Khudawadi::LetterTha),
-            LETTER_DA => Ok(Khudawadi::LetterDa),
-            LETTER_DHA => Ok(Khudawadi::LetterDha),
-            LETTER_NA => Ok(Khudawadi::LetterNa),
-            LETTER_PA => Ok(Khudawadi::LetterPa),
-            LETTER_PHA => Ok(Khudawadi::LetterPha),
-            LETTER_BA => Ok(Khudawadi::LetterBa),
-            LETTER_BBA => Ok(Khudawadi::LetterBba),
-            LETTER_BHA => Ok(Khudawadi::LetterBha),
-            LETTER_MA => Ok(Khudawadi::LetterMa),
-            LETTER_YA => Ok(Khudawadi::LetterYa),
-            LETTER_RA => Ok(Khudawadi::LetterRa),
-            LETTER_LA => Ok(Khudawadi::LetterLa),
-            LETTER_VA => Ok(Khudawadi::LetterVa),
-            LETTER_SHA => Ok(Khudawadi::LetterSha),
-            LETTER_SA => Ok(Khudawadi::LetterSa),
-            LETTER_HA => Ok(Khudawadi::LetterHa),
-            SIGN_ANUSVARA => Ok(Khudawadi::SignAnusvara),
-            VOWEL_SIGN_AA => Ok(Khudawadi::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Khudawadi::VowelSignI),
-            VOWEL_SIGN_II => Ok(Khudawadi::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Khudawadi::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Khudawadi::VowelSignUu),
-            VOWEL_SIGN_E => Ok(Khudawadi::VowelSignE),
-            VOWEL_SIGN_AI => Ok(Khudawadi::VowelSignAi),
-            VOWEL_SIGN_O => Ok(Khudawadi::VowelSignO),
-            VOWEL_SIGN_AU => Ok(Khudawadi::VowelSignAu),
-            SIGN_NUKTA => Ok(Khudawadi::SignNukta),
-            SIGN_VIRAMA => Ok(Khudawadi::SignVirama),
-            DIGIT_ZERO => Ok(Khudawadi::DigitZero),
-            DIGIT_ONE => Ok(Khudawadi::DigitOne),
-            DIGIT_TWO => Ok(Khudawadi::DigitTwo),
-            DIGIT_THREE => Ok(Khudawadi::DigitThree),
-            DIGIT_FOUR => Ok(Khudawadi::DigitFour),
-            DIGIT_FIVE => Ok(Khudawadi::DigitFive),
-            DIGIT_SIX => Ok(Khudawadi::DigitSix),
-            DIGIT_SEVEN => Ok(Khudawadi::DigitSeven),
-            DIGIT_EIGHT => Ok(Khudawadi::DigitEight),
-            DIGIT_NINE => Ok(Khudawadi::DigitNine),
+            '𑊰' => Ok(Khudawadi::LetterA),
+            '𑊱' => Ok(Khudawadi::LetterAa),
+            '𑊲' => Ok(Khudawadi::LetterI),
+            '𑊳' => Ok(Khudawadi::LetterIi),
+            '𑊴' => Ok(Khudawadi::LetterU),
+            '𑊵' => Ok(Khudawadi::LetterUu),
+            '𑊶' => Ok(Khudawadi::LetterE),
+            '𑊷' => Ok(Khudawadi::LetterAi),
+            '𑊸' => Ok(Khudawadi::LetterO),
+            '𑊹' => Ok(Khudawadi::LetterAu),
+            '𑊺' => Ok(Khudawadi::LetterKa),
+            '𑊻' => Ok(Khudawadi::LetterKha),
+            '𑊼' => Ok(Khudawadi::LetterGa),
+            '𑊽' => Ok(Khudawadi::LetterGga),
+            '𑊾' => Ok(Khudawadi::LetterGha),
+            '𑊿' => Ok(Khudawadi::LetterNga),
+            '𑋀' => Ok(Khudawadi::LetterCa),
+            '𑋁' => Ok(Khudawadi::LetterCha),
+            '𑋂' => Ok(Khudawadi::LetterJa),
+            '𑋃' => Ok(Khudawadi::LetterJja),
+            '𑋄' => Ok(Khudawadi::LetterJha),
+            '𑋅' => Ok(Khudawadi::LetterNya),
+            '𑋆' => Ok(Khudawadi::LetterTta),
+            '𑋇' => Ok(Khudawadi::LetterTtha),
+            '𑋈' => Ok(Khudawadi::LetterDda),
+            '𑋉' => Ok(Khudawadi::LetterDdda),
+            '𑋊' => Ok(Khudawadi::LetterRra),
+            '𑋋' => Ok(Khudawadi::LetterDdha),
+            '𑋌' => Ok(Khudawadi::LetterNna),
+            '𑋍' => Ok(Khudawadi::LetterTa),
+            '𑋎' => Ok(Khudawadi::LetterTha),
+            '𑋏' => Ok(Khudawadi::LetterDa),
+            '𑋐' => Ok(Khudawadi::LetterDha),
+            '𑋑' => Ok(Khudawadi::LetterNa),
+            '𑋒' => Ok(Khudawadi::LetterPa),
+            '𑋓' => Ok(Khudawadi::LetterPha),
+            '𑋔' => Ok(Khudawadi::LetterBa),
+            '𑋕' => Ok(Khudawadi::LetterBba),
+            '𑋖' => Ok(Khudawadi::LetterBha),
+            '𑋗' => Ok(Khudawadi::LetterMa),
+            '𑋘' => Ok(Khudawadi::LetterYa),
+            '𑋙' => Ok(Khudawadi::LetterRa),
+            '𑋚' => Ok(Khudawadi::LetterLa),
+            '𑋛' => Ok(Khudawadi::LetterVa),
+            '𑋜' => Ok(Khudawadi::LetterSha),
+            '𑋝' => Ok(Khudawadi::LetterSa),
+            '𑋞' => Ok(Khudawadi::LetterHa),
+            '𑋟' => Ok(Khudawadi::SignAnusvara),
+            '𑋠' => Ok(Khudawadi::VowelSignAa),
+            '𑋡' => Ok(Khudawadi::VowelSignI),
+            '𑋢' => Ok(Khudawadi::VowelSignIi),
+            '𑋣' => Ok(Khudawadi::VowelSignU),
+            '𑋤' => Ok(Khudawadi::VowelSignUu),
+            '𑋥' => Ok(Khudawadi::VowelSignE),
+            '𑋦' => Ok(Khudawadi::VowelSignAi),
+            '𑋧' => Ok(Khudawadi::VowelSignO),
+            '𑋨' => Ok(Khudawadi::VowelSignAu),
+            '𑋩' => Ok(Khudawadi::SignNukta),
+            '𑋪' => Ok(Khudawadi::SignVirama),
+            '𑋰' => Ok(Khudawadi::DigitZero),
+            '𑋱' => Ok(Khudawadi::DigitOne),
+            '𑋲' => Ok(Khudawadi::DigitTwo),
+            '𑋳' => Ok(Khudawadi::DigitThree),
+            '𑋴' => Ok(Khudawadi::DigitFour),
+            '𑋵' => Ok(Khudawadi::DigitFive),
+            '𑋶' => Ok(Khudawadi::DigitSix),
+            '𑋷' => Ok(Khudawadi::DigitSeven),
+            '𑋸' => Ok(Khudawadi::DigitEight),
+            '𑋹' => Ok(Khudawadi::DigitNine),
             _ => Err(()),
         }
     }

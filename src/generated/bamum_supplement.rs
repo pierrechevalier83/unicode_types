@@ -1,1144 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{16800}: '𖠀'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NGKUE_MFON: char = '𖠀';
-    /// \u{16801}: '𖠁'
-    pub const BAMUM_LETTER_PHASE_DASH_A_GBIEE_FON: char = '𖠁';
-    /// \u{16802}: '𖠂'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PON_MFON_PIPAEMGBIEE: char = '𖠂';
-    /// \u{16803}: '𖠃'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PON_MFON_PIPAEMBA: char = '𖠃';
-    /// \u{16804}: '𖠄'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NAA_MFON: char = '𖠄';
-    /// \u{16805}: '𖠅'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SHUENSHUET: char = '𖠅';
-    /// \u{16806}: '𖠆'
-    pub const BAMUM_LETTER_PHASE_DASH_A_TITA_MFON: char = '𖠆';
-    /// \u{16807}: '𖠇'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NZA_MFON: char = '𖠇';
-    /// \u{16808}: '𖠈'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SHINDA_PA_NJI: char = '𖠈';
-    /// \u{16809}: '𖠉'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PON_PA_NJI_PIPAEMGBIEE: char = '𖠉';
-    /// \u{1680a}: '𖠊'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PON_PA_NJI_PIPAEMBA: char = '𖠊';
-    /// \u{1680b}: '𖠋'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MAEMBGBIEE: char = '𖠋';
-    /// \u{1680c}: '𖠌'
-    pub const BAMUM_LETTER_PHASE_DASH_A_TU_MAEMBA: char = '𖠌';
-    /// \u{1680d}: '𖠍'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NGANGU: char = '𖠍';
-    /// \u{1680e}: '𖠎'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MAEMVEUX: char = '𖠎';
-    /// \u{1680f}: '𖠏'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MANSUAE: char = '𖠏';
-    /// \u{16810}: '𖠐'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MVEUAENGAM: char = '𖠐';
-    /// \u{16811}: '𖠑'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SEUNYAM: char = '𖠑';
-    /// \u{16812}: '𖠒'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NTOQPEN: char = '𖠒';
-    /// \u{16813}: '𖠓'
-    pub const BAMUM_LETTER_PHASE_DASH_A_KEUKEUTNDA: char = '𖠓';
-    /// \u{16814}: '𖠔'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NKINDI: char = '𖠔';
-    /// \u{16815}: '𖠕'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SUU: char = '𖠕';
-    /// \u{16816}: '𖠖'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NGKUENZEUM: char = '𖠖';
-    /// \u{16817}: '𖠗'
-    pub const BAMUM_LETTER_PHASE_DASH_A_LAPAQ: char = '𖠗';
-    /// \u{16818}: '𖠘'
-    pub const BAMUM_LETTER_PHASE_DASH_A_LET_KUT: char = '𖠘';
-    /// \u{16819}: '𖠙'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NTAP_MFAA: char = '𖠙';
-    /// \u{1681a}: '𖠚'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MAEKEUP: char = '𖠚';
-    /// \u{1681b}: '𖠛'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PASHAE: char = '𖠛';
-    /// \u{1681c}: '𖠜'
-    pub const BAMUM_LETTER_PHASE_DASH_A_GHEUAERAE: char = '𖠜';
-    /// \u{1681d}: '𖠝'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PAMSHAE: char = '𖠝';
-    /// \u{1681e}: '𖠞'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MON_NGGEUAET: char = '𖠞';
-    /// \u{1681f}: '𖠟'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NZUN_MEUT: char = '𖠟';
-    /// \u{16820}: '𖠠'
-    pub const BAMUM_LETTER_PHASE_DASH_A_U_YUQ_NAE: char = '𖠠';
-    /// \u{16821}: '𖠡'
-    pub const BAMUM_LETTER_PHASE_DASH_A_GHEUAEGHEUAE: char = '𖠡';
-    /// \u{16822}: '𖠢'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NTAP_NTAA: char = '𖠢';
-    /// \u{16823}: '𖠣'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SISA: char = '𖠣';
-    /// \u{16824}: '𖠤'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MGBASA: char = '𖠤';
-    /// \u{16825}: '𖠥'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MEUNJOMNDEUQ: char = '𖠥';
-    /// \u{16826}: '𖠦'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MOOMPUQ: char = '𖠦';
-    /// \u{16827}: '𖠧'
-    pub const BAMUM_LETTER_PHASE_DASH_A_KAFA: char = '𖠧';
-    /// \u{16828}: '𖠨'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PA_LEERAEWA: char = '𖠨';
-    /// \u{16829}: '𖠩'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NDA_LEERAEWA: char = '𖠩';
-    /// \u{1682a}: '𖠪'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PET: char = '𖠪';
-    /// \u{1682b}: '𖠫'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MAEMKPEN: char = '𖠫';
-    /// \u{1682c}: '𖠬'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NIKA: char = '𖠬';
-    /// \u{1682d}: '𖠭'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PUP: char = '𖠭';
-    /// \u{1682e}: '𖠮'
-    pub const BAMUM_LETTER_PHASE_DASH_A_TUAEP: char = '𖠮';
-    /// \u{1682f}: '𖠯'
-    pub const BAMUM_LETTER_PHASE_DASH_A_LUAEP: char = '𖠯';
-    /// \u{16830}: '𖠰'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SONJAM: char = '𖠰';
-    /// \u{16831}: '𖠱'
-    pub const BAMUM_LETTER_PHASE_DASH_A_TEUTEUWEN: char = '𖠱';
-    /// \u{16832}: '𖠲'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MAENYI: char = '𖠲';
-    /// \u{16833}: '𖠳'
-    pub const BAMUM_LETTER_PHASE_DASH_A_KET: char = '𖠳';
-    /// \u{16834}: '𖠴'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NDAANGGEUAET: char = '𖠴';
-    /// \u{16835}: '𖠵'
-    pub const BAMUM_LETTER_PHASE_DASH_A_KUOQ: char = '𖠵';
-    /// \u{16836}: '𖠶'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MOOMEUT: char = '𖠶';
-    /// \u{16837}: '𖠷'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SHUM: char = '𖠷';
-    /// \u{16838}: '𖠸'
-    pub const BAMUM_LETTER_PHASE_DASH_A_LOMMAE: char = '𖠸';
-    /// \u{16839}: '𖠹'
-    pub const BAMUM_LETTER_PHASE_DASH_A_FIRI: char = '𖠹';
-    /// \u{1683a}: '𖠺'
-    pub const BAMUM_LETTER_PHASE_DASH_A_ROM: char = '𖠺';
-    /// \u{1683b}: '𖠻'
-    pub const BAMUM_LETTER_PHASE_DASH_A_KPOQ: char = '𖠻';
-    /// \u{1683c}: '𖠼'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SOQ: char = '𖠼';
-    /// \u{1683d}: '𖠽'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MAP_PIEET: char = '𖠽';
-    /// \u{1683e}: '𖠾'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SHIRAE: char = '𖠾';
-    /// \u{1683f}: '𖠿'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NTAP: char = '𖠿';
-    /// \u{16840}: '𖡀'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SHOQ_NSHUT_YUM: char = '𖡀';
-    /// \u{16841}: '𖡁'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NYIT_MONGKEUAEQ: char = '𖡁';
-    /// \u{16842}: '𖡂'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PAARAE: char = '𖡂';
-    /// \u{16843}: '𖡃'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NKAARAE: char = '𖡃';
-    /// \u{16844}: '𖡄'
-    pub const BAMUM_LETTER_PHASE_DASH_A_UNKNOWN: char = '𖡄';
-    /// \u{16845}: '𖡅'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NGGEN: char = '𖡅';
-    /// \u{16846}: '𖡆'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MAESI: char = '𖡆';
-    /// \u{16847}: '𖡇'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NJAM: char = '𖡇';
-    /// \u{16848}: '𖡈'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MBANYI: char = '𖡈';
-    /// \u{16849}: '𖡉'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NYET: char = '𖡉';
-    /// \u{1684a}: '𖡊'
-    pub const BAMUM_LETTER_PHASE_DASH_A_TEUAEN: char = '𖡊';
-    /// \u{1684b}: '𖡋'
-    pub const BAMUM_LETTER_PHASE_DASH_A_SOT: char = '𖡋';
-    /// \u{1684c}: '𖡌'
-    pub const BAMUM_LETTER_PHASE_DASH_A_PAAM: char = '𖡌';
-    /// \u{1684d}: '𖡍'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NSHIEE: char = '𖡍';
-    /// \u{1684e}: '𖡎'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MAEM: char = '𖡎';
-    /// \u{1684f}: '𖡏'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NYI: char = '𖡏';
-    /// \u{16850}: '𖡐'
-    pub const BAMUM_LETTER_PHASE_DASH_A_KAQ: char = '𖡐';
-    /// \u{16851}: '𖡑'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NSHA: char = '𖡑';
-    /// \u{16852}: '𖡒'
-    pub const BAMUM_LETTER_PHASE_DASH_A_VEE: char = '𖡒';
-    /// \u{16853}: '𖡓'
-    pub const BAMUM_LETTER_PHASE_DASH_A_LU: char = '𖡓';
-    /// \u{16854}: '𖡔'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NEN: char = '𖡔';
-    /// \u{16855}: '𖡕'
-    pub const BAMUM_LETTER_PHASE_DASH_A_NAQ: char = '𖡕';
-    /// \u{16856}: '𖡖'
-    pub const BAMUM_LETTER_PHASE_DASH_A_MBAQ: char = '𖡖';
-    /// \u{16857}: '𖡗'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NSHUET: char = '𖡗';
-    /// \u{16858}: '𖡘'
-    pub const BAMUM_LETTER_PHASE_DASH_B_TU_MAEMGBIEE: char = '𖡘';
-    /// \u{16859}: '𖡙'
-    pub const BAMUM_LETTER_PHASE_DASH_B_SIEE: char = '𖡙';
-    /// \u{1685a}: '𖡚'
-    pub const BAMUM_LETTER_PHASE_DASH_B_SET_TU: char = '𖡚';
-    /// \u{1685b}: '𖡛'
-    pub const BAMUM_LETTER_PHASE_DASH_B_LOM_NTEUM: char = '𖡛';
-    /// \u{1685c}: '𖡜'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MBA_MAELEE: char = '𖡜';
-    /// \u{1685d}: '𖡝'
-    pub const BAMUM_LETTER_PHASE_DASH_B_KIEEM: char = '𖡝';
-    /// \u{1685e}: '𖡞'
-    pub const BAMUM_LETTER_PHASE_DASH_B_YEURAE: char = '𖡞';
-    /// \u{1685f}: '𖡟'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MBAARAE: char = '𖡟';
-    /// \u{16860}: '𖡠'
-    pub const BAMUM_LETTER_PHASE_DASH_B_KAM: char = '𖡠';
-    /// \u{16861}: '𖡡'
-    pub const BAMUM_LETTER_PHASE_DASH_B_PEESHI: char = '𖡡';
-    /// \u{16862}: '𖡢'
-    pub const BAMUM_LETTER_PHASE_DASH_B_YAFU_LEERAEWA: char = '𖡢';
-    /// \u{16863}: '𖡣'
-    pub const BAMUM_LETTER_PHASE_DASH_B_LAM_NSHUT_NYAM: char = '𖡣';
-    /// \u{16864}: '𖡤'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NTIEE_SHEUOQ: char = '𖡤';
-    /// \u{16865}: '𖡥'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NDU_NJAA: char = '𖡥';
-    /// \u{16866}: '𖡦'
-    pub const BAMUM_LETTER_PHASE_DASH_B_GHEUGHEUAEM: char = '𖡦';
-    /// \u{16867}: '𖡧'
-    pub const BAMUM_LETTER_PHASE_DASH_B_PIT: char = '𖡧';
-    /// \u{16868}: '𖡨'
-    pub const BAMUM_LETTER_PHASE_DASH_B_TU_NSIEE: char = '𖡨';
-    /// \u{16869}: '𖡩'
-    pub const BAMUM_LETTER_PHASE_DASH_B_SHET_NJAQ: char = '𖡩';
-    /// \u{1686a}: '𖡪'
-    pub const BAMUM_LETTER_PHASE_DASH_B_SHEUAEQTU: char = '𖡪';
-    /// \u{1686b}: '𖡫'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MFON_TEUAEQ: char = '𖡫';
-    /// \u{1686c}: '𖡬'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MBIT_MBAAKET: char = '𖡬';
-    /// \u{1686d}: '𖡭'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NYI_NTEUM: char = '𖡭';
-    /// \u{1686e}: '𖡮'
-    pub const BAMUM_LETTER_PHASE_DASH_B_KEUPUQ: char = '𖡮';
-    /// \u{1686f}: '𖡯'
-    pub const BAMUM_LETTER_PHASE_DASH_B_GHEUGHEN: char = '𖡯';
-    /// \u{16870}: '𖡰'
-    pub const BAMUM_LETTER_PHASE_DASH_B_KEUYEUX: char = '𖡰';
-    /// \u{16871}: '𖡱'
-    pub const BAMUM_LETTER_PHASE_DASH_B_LAANAE: char = '𖡱';
-    /// \u{16872}: '𖡲'
-    pub const BAMUM_LETTER_PHASE_DASH_B_PARUM: char = '𖡲';
-    /// \u{16873}: '𖡳'
-    pub const BAMUM_LETTER_PHASE_DASH_B_VEUM: char = '𖡳';
-    /// \u{16874}: '𖡴'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NGKINDI_MVOP: char = '𖡴';
-    /// \u{16875}: '𖡵'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NGGEU_MBU: char = '𖡵';
-    /// \u{16876}: '𖡶'
-    pub const BAMUM_LETTER_PHASE_DASH_B_WUAET: char = '𖡶';
-    /// \u{16877}: '𖡷'
-    pub const BAMUM_LETTER_PHASE_DASH_B_SAKEUAE: char = '𖡷';
-    /// \u{16878}: '𖡸'
-    pub const BAMUM_LETTER_PHASE_DASH_B_TAAM: char = '𖡸';
-    /// \u{16879}: '𖡹'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MEUQ: char = '𖡹';
-    /// \u{1687a}: '𖡺'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NGGUOQ: char = '𖡺';
-    /// \u{1687b}: '𖡻'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NGGUOQ_LARGE: char = '𖡻';
-    /// \u{1687c}: '𖡼'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MFIYAQ: char = '𖡼';
-    /// \u{1687d}: '𖡽'
-    pub const BAMUM_LETTER_PHASE_DASH_B_SUE: char = '𖡽';
-    /// \u{1687e}: '𖡾'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MBEURI: char = '𖡾';
-    /// \u{1687f}: '𖡿'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MONTIEEN: char = '𖡿';
-    /// \u{16880}: '𖢀'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NYAEMAE: char = '𖢀';
-    /// \u{16881}: '𖢁'
-    pub const BAMUM_LETTER_PHASE_DASH_B_PUNGAAM: char = '𖢁';
-    /// \u{16882}: '𖢂'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MEUT_NGGEET: char = '𖢂';
-    /// \u{16883}: '𖢃'
-    pub const BAMUM_LETTER_PHASE_DASH_B_FEUX: char = '𖢃';
-    /// \u{16884}: '𖢄'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MBUOQ: char = '𖢄';
-    /// \u{16885}: '𖢅'
-    pub const BAMUM_LETTER_PHASE_DASH_B_FEE: char = '𖢅';
-    /// \u{16886}: '𖢆'
-    pub const BAMUM_LETTER_PHASE_DASH_B_KEUAEM: char = '𖢆';
-    /// \u{16887}: '𖢇'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MA_NJEUAENA: char = '𖢇';
-    /// \u{16888}: '𖢈'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MA_NJUQA: char = '𖢈';
-    /// \u{16889}: '𖢉'
-    pub const BAMUM_LETTER_PHASE_DASH_B_LET: char = '𖢉';
-    /// \u{1688a}: '𖢊'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NGGAAM: char = '𖢊';
-    /// \u{1688b}: '𖢋'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NSEN: char = '𖢋';
-    /// \u{1688c}: '𖢌'
-    pub const BAMUM_LETTER_PHASE_DASH_B_MA: char = '𖢌';
-    /// \u{1688d}: '𖢍'
-    pub const BAMUM_LETTER_PHASE_DASH_B_KIQ: char = '𖢍';
-    /// \u{1688e}: '𖢎'
-    pub const BAMUM_LETTER_PHASE_DASH_B_NGOM: char = '𖢎';
-    /// \u{1688f}: '𖢏'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGKUE_MAEMBA: char = '𖢏';
-    /// \u{16890}: '𖢐'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NZA: char = '𖢐';
-    /// \u{16891}: '𖢑'
-    pub const BAMUM_LETTER_PHASE_DASH_C_YUM: char = '𖢑';
-    /// \u{16892}: '𖢒'
-    pub const BAMUM_LETTER_PHASE_DASH_C_WANGKUOQ: char = '𖢒';
-    /// \u{16893}: '𖢓'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGGEN: char = '𖢓';
-    /// \u{16894}: '𖢔'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NDEUAEREE: char = '𖢔';
-    /// \u{16895}: '𖢕'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGKAQ: char = '𖢕';
-    /// \u{16896}: '𖢖'
-    pub const BAMUM_LETTER_PHASE_DASH_C_GHARAE: char = '𖢖';
-    /// \u{16897}: '𖢗'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBEEKEET: char = '𖢗';
-    /// \u{16898}: '𖢘'
-    pub const BAMUM_LETTER_PHASE_DASH_C_GBAYI: char = '𖢘';
-    /// \u{16899}: '𖢙'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NYIR_MKPARAQ_MEUN: char = '𖢙';
-    /// \u{1689a}: '𖢚'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NTU_MBIT: char = '𖢚';
-    /// \u{1689b}: '𖢛'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBEUM: char = '𖢛';
-    /// \u{1689c}: '𖢜'
-    pub const BAMUM_LETTER_PHASE_DASH_C_PIRIEEN: char = '𖢜';
-    /// \u{1689d}: '𖢝'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NDOMBU: char = '𖢝';
-    /// \u{1689e}: '𖢞'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBAA_CABBAGE_DASH_TREE: char = '𖢞';
-    /// \u{1689f}: '𖢟'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KEUSHEUAEP: char = '𖢟';
-    /// \u{168a0}: '𖢠'
-    pub const BAMUM_LETTER_PHASE_DASH_C_GHAP: char = '𖢠';
-    /// \u{168a1}: '𖢡'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KEUKAQ: char = '𖢡';
-    /// \u{168a2}: '𖢢'
-    pub const BAMUM_LETTER_PHASE_DASH_C_YU_MUOMAE: char = '𖢢';
-    /// \u{168a3}: '𖢣'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NZEUM: char = '𖢣';
-    /// \u{168a4}: '𖢤'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBUE: char = '𖢤';
-    /// \u{168a5}: '𖢥'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NSEUAEN: char = '𖢥';
-    /// \u{168a6}: '𖢦'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBIT: char = '𖢦';
-    /// \u{168a7}: '𖢧'
-    pub const BAMUM_LETTER_PHASE_DASH_C_YEUQ: char = '𖢧';
-    /// \u{168a8}: '𖢨'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KPARAQ: char = '𖢨';
-    /// \u{168a9}: '𖢩'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KAA: char = '𖢩';
-    /// \u{168aa}: '𖢪'
-    pub const BAMUM_LETTER_PHASE_DASH_C_SEUX: char = '𖢪';
-    /// \u{168ab}: '𖢫'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NDIDA: char = '𖢫';
-    /// \u{168ac}: '𖢬'
-    pub const BAMUM_LETTER_PHASE_DASH_C_TAASHAE: char = '𖢬';
-    /// \u{168ad}: '𖢭'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NJUEQ: char = '𖢭';
-    /// \u{168ae}: '𖢮'
-    pub const BAMUM_LETTER_PHASE_DASH_C_TITA_YUE: char = '𖢮';
-    /// \u{168af}: '𖢯'
-    pub const BAMUM_LETTER_PHASE_DASH_C_SUAET: char = '𖢯';
-    /// \u{168b0}: '𖢰'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGGUAEN_NYAM: char = '𖢰';
-    /// \u{168b1}: '𖢱'
-    pub const BAMUM_LETTER_PHASE_DASH_C_VEUX: char = '𖢱';
-    /// \u{168b2}: '𖢲'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NANSANAQ: char = '𖢲';
-    /// \u{168b3}: '𖢳'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MA_KEUAERI: char = '𖢳';
-    /// \u{168b4}: '𖢴'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NTAA: char = '𖢴';
-    /// \u{168b5}: '𖢵'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGGUON: char = '𖢵';
-    /// \u{168b6}: '𖢶'
-    pub const BAMUM_LETTER_PHASE_DASH_C_LAP: char = '𖢶';
-    /// \u{168b7}: '𖢷'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBIRIEEN: char = '𖢷';
-    /// \u{168b8}: '𖢸'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MGBASAQ: char = '𖢸';
-    /// \u{168b9}: '𖢹'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NTEUNGBA: char = '𖢹';
-    /// \u{168ba}: '𖢺'
-    pub const BAMUM_LETTER_PHASE_DASH_C_TEUTEUX: char = '𖢺';
-    /// \u{168bb}: '𖢻'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGGUM: char = '𖢻';
-    /// \u{168bc}: '𖢼'
-    pub const BAMUM_LETTER_PHASE_DASH_C_FUE: char = '𖢼';
-    /// \u{168bd}: '𖢽'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NDEUT: char = '𖢽';
-    /// \u{168be}: '𖢾'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NSA: char = '𖢾';
-    /// \u{168bf}: '𖢿'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NSHAQ: char = '𖢿';
-    /// \u{168c0}: '𖣀'
-    pub const BAMUM_LETTER_PHASE_DASH_C_BUNG: char = '𖣀';
-    /// \u{168c1}: '𖣁'
-    pub const BAMUM_LETTER_PHASE_DASH_C_VEUAEPEN: char = '𖣁';
-    /// \u{168c2}: '𖣂'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBERAE: char = '𖣂';
-    /// \u{168c3}: '𖣃'
-    pub const BAMUM_LETTER_PHASE_DASH_C_RU: char = '𖣃';
-    /// \u{168c4}: '𖣄'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NJAEM: char = '𖣄';
-    /// \u{168c5}: '𖣅'
-    pub const BAMUM_LETTER_PHASE_DASH_C_LAM: char = '𖣅';
-    /// \u{168c6}: '𖣆'
-    pub const BAMUM_LETTER_PHASE_DASH_C_TITUAEP: char = '𖣆';
-    /// \u{168c7}: '𖣇'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NSUOT_NGOM: char = '𖣇';
-    /// \u{168c8}: '𖣈'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NJEEEE: char = '𖣈';
-    /// \u{168c9}: '𖣉'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KET: char = '𖣉';
-    /// \u{168ca}: '𖣊'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGGU: char = '𖣊';
-    /// \u{168cb}: '𖣋'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MAESI: char = '𖣋';
-    /// \u{168cc}: '𖣌'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBUAEM: char = '𖣌';
-    /// \u{168cd}: '𖣍'
-    pub const BAMUM_LETTER_PHASE_DASH_C_LU: char = '𖣍';
-    /// \u{168ce}: '𖣎'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KUT: char = '𖣎';
-    /// \u{168cf}: '𖣏'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NJAM: char = '𖣏';
-    /// \u{168d0}: '𖣐'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGOM: char = '𖣐';
-    /// \u{168d1}: '𖣑'
-    pub const BAMUM_LETTER_PHASE_DASH_C_WUP: char = '𖣑';
-    /// \u{168d2}: '𖣒'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGGUEET: char = '𖣒';
-    /// \u{168d3}: '𖣓'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NSOM: char = '𖣓';
-    /// \u{168d4}: '𖣔'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NTEN: char = '𖣔';
-    /// \u{168d5}: '𖣕'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KUOP_NKAARAE: char = '𖣕';
-    /// \u{168d6}: '𖣖'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NSUN: char = '𖣖';
-    /// \u{168d7}: '𖣗'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NDAM: char = '𖣗';
-    /// \u{168d8}: '𖣘'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MA_NSIEE: char = '𖣘';
-    /// \u{168d9}: '𖣙'
-    pub const BAMUM_LETTER_PHASE_DASH_C_YAA: char = '𖣙';
-    /// \u{168da}: '𖣚'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NDAP: char = '𖣚';
-    /// \u{168db}: '𖣛'
-    pub const BAMUM_LETTER_PHASE_DASH_C_SHUEQ: char = '𖣛';
-    /// \u{168dc}: '𖣜'
-    pub const BAMUM_LETTER_PHASE_DASH_C_SETFON: char = '𖣜';
-    /// \u{168dd}: '𖣝'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBI: char = '𖣝';
-    /// \u{168de}: '𖣞'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MAEMBA: char = '𖣞';
-    /// \u{168df}: '𖣟'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBANYI: char = '𖣟';
-    /// \u{168e0}: '𖣠'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KEUSEUX: char = '𖣠';
-    /// \u{168e1}: '𖣡'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBEUX: char = '𖣡';
-    /// \u{168e2}: '𖣢'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KEUM: char = '𖣢';
-    /// \u{168e3}: '𖣣'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MBAA_PICKET: char = '𖣣';
-    /// \u{168e4}: '𖣤'
-    pub const BAMUM_LETTER_PHASE_DASH_C_YUWOQ: char = '𖣤';
-    /// \u{168e5}: '𖣥'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NJEUX: char = '𖣥';
-    /// \u{168e6}: '𖣦'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MIEE: char = '𖣦';
-    /// \u{168e7}: '𖣧'
-    pub const BAMUM_LETTER_PHASE_DASH_C_MUAE: char = '𖣧';
-    /// \u{168e8}: '𖣨'
-    pub const BAMUM_LETTER_PHASE_DASH_C_SHIQ: char = '𖣨';
-    /// \u{168e9}: '𖣩'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KEN_LAW: char = '𖣩';
-    /// \u{168ea}: '𖣪'
-    pub const BAMUM_LETTER_PHASE_DASH_C_KEN_FATIGUE: char = '𖣪';
-    /// \u{168eb}: '𖣫'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NGAQ: char = '𖣫';
-    /// \u{168ec}: '𖣬'
-    pub const BAMUM_LETTER_PHASE_DASH_C_NAQ: char = '𖣬';
-    /// \u{168ed}: '𖣭'
-    pub const BAMUM_LETTER_PHASE_DASH_C_LIQ: char = '𖣭';
-    /// \u{168ee}: '𖣮'
-    pub const BAMUM_LETTER_PHASE_DASH_C_PIN: char = '𖣮';
-    /// \u{168ef}: '𖣯'
-    pub const BAMUM_LETTER_PHASE_DASH_C_PEN: char = '𖣯';
-    /// \u{168f0}: '𖣰'
-    pub const BAMUM_LETTER_PHASE_DASH_C_TET: char = '𖣰';
-    /// \u{168f1}: '𖣱'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MBUO: char = '𖣱';
-    /// \u{168f2}: '𖣲'
-    pub const BAMUM_LETTER_PHASE_DASH_D_WAP: char = '𖣲';
-    /// \u{168f3}: '𖣳'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NJI: char = '𖣳';
-    /// \u{168f4}: '𖣴'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MFON: char = '𖣴';
-    /// \u{168f5}: '𖣵'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NJIEE: char = '𖣵';
-    /// \u{168f6}: '𖣶'
-    pub const BAMUM_LETTER_PHASE_DASH_D_LIEE: char = '𖣶';
-    /// \u{168f7}: '𖣷'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NJEUT: char = '𖣷';
-    /// \u{168f8}: '𖣸'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NSHEE: char = '𖣸';
-    /// \u{168f9}: '𖣹'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGGAAMAE: char = '𖣹';
-    /// \u{168fa}: '𖣺'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NYAM: char = '𖣺';
-    /// \u{168fb}: '𖣻'
-    pub const BAMUM_LETTER_PHASE_DASH_D_WUAEN: char = '𖣻';
-    /// \u{168fc}: '𖣼'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGKUN: char = '𖣼';
-    /// \u{168fd}: '𖣽'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SHEE: char = '𖣽';
-    /// \u{168fe}: '𖣾'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGKAP: char = '𖣾';
-    /// \u{168ff}: '𖣿'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KEUAETMEUN: char = '𖣿';
-    /// \u{16900}: '𖤀'
-    pub const BAMUM_LETTER_PHASE_DASH_D_TEUT: char = '𖤀';
-    /// \u{16901}: '𖤁'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SHEUAE: char = '𖤁';
-    /// \u{16902}: '𖤂'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NJAP: char = '𖤂';
-    /// \u{16903}: '𖤃'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SUE: char = '𖤃';
-    /// \u{16904}: '𖤄'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KET: char = '𖤄';
-    /// \u{16905}: '𖤅'
-    pub const BAMUM_LETTER_PHASE_DASH_D_YAEMMAE: char = '𖤅';
-    /// \u{16906}: '𖤆'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KUOM: char = '𖤆';
-    /// \u{16907}: '𖤇'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SAP: char = '𖤇';
-    /// \u{16908}: '𖤈'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MFEUT: char = '𖤈';
-    /// \u{16909}: '𖤉'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NDEUX: char = '𖤉';
-    /// \u{1690a}: '𖤊'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MALEERI: char = '𖤊';
-    /// \u{1690b}: '𖤋'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MEUT: char = '𖤋';
-    /// \u{1690c}: '𖤌'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SEUAEQ: char = '𖤌';
-    /// \u{1690d}: '𖤍'
-    pub const BAMUM_LETTER_PHASE_DASH_D_YEN: char = '𖤍';
-    /// \u{1690e}: '𖤎'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NJEUAEM: char = '𖤎';
-    /// \u{1690f}: '𖤏'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KEUOT_MBUAE: char = '𖤏';
-    /// \u{16910}: '𖤐'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGKEURI: char = '𖤐';
-    /// \u{16911}: '𖤑'
-    pub const BAMUM_LETTER_PHASE_DASH_D_TU: char = '𖤑';
-    /// \u{16912}: '𖤒'
-    pub const BAMUM_LETTER_PHASE_DASH_D_GHAA: char = '𖤒';
-    /// \u{16913}: '𖤓'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGKYEE: char = '𖤓';
-    /// \u{16914}: '𖤔'
-    pub const BAMUM_LETTER_PHASE_DASH_D_FEUFEUAET: char = '𖤔';
-    /// \u{16915}: '𖤕'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NDEE: char = '𖤕';
-    /// \u{16916}: '𖤖'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MGBOFUM: char = '𖤖';
-    /// \u{16917}: '𖤗'
-    pub const BAMUM_LETTER_PHASE_DASH_D_LEUAEP: char = '𖤗';
-    /// \u{16918}: '𖤘'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NDON: char = '𖤘';
-    /// \u{16919}: '𖤙'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MONI: char = '𖤙';
-    /// \u{1691a}: '𖤚'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MGBEUN: char = '𖤚';
-    /// \u{1691b}: '𖤛'
-    pub const BAMUM_LETTER_PHASE_DASH_D_PUUT: char = '𖤛';
-    /// \u{1691c}: '𖤜'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MGBIEE: char = '𖤜';
-    /// \u{1691d}: '𖤝'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MFO: char = '𖤝';
-    /// \u{1691e}: '𖤞'
-    pub const BAMUM_LETTER_PHASE_DASH_D_LUM: char = '𖤞';
-    /// \u{1691f}: '𖤟'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NSIEEP: char = '𖤟';
-    /// \u{16920}: '𖤠'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MBAA: char = '𖤠';
-    /// \u{16921}: '𖤡'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KWAET: char = '𖤡';
-    /// \u{16922}: '𖤢'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NYET: char = '𖤢';
-    /// \u{16923}: '𖤣'
-    pub const BAMUM_LETTER_PHASE_DASH_D_TEUAEN: char = '𖤣';
-    /// \u{16924}: '𖤤'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SOT: char = '𖤤';
-    /// \u{16925}: '𖤥'
-    pub const BAMUM_LETTER_PHASE_DASH_D_YUWOQ: char = '𖤥';
-    /// \u{16926}: '𖤦'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KEUM: char = '𖤦';
-    /// \u{16927}: '𖤧'
-    pub const BAMUM_LETTER_PHASE_DASH_D_RAEM: char = '𖤧';
-    /// \u{16928}: '𖤨'
-    pub const BAMUM_LETTER_PHASE_DASH_D_TEEEE: char = '𖤨';
-    /// \u{16929}: '𖤩'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGKEUAEQ: char = '𖤩';
-    /// \u{1692a}: '𖤪'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MFEUAE: char = '𖤪';
-    /// \u{1692b}: '𖤫'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NSIEET: char = '𖤫';
-    /// \u{1692c}: '𖤬'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KEUP: char = '𖤬';
-    /// \u{1692d}: '𖤭'
-    pub const BAMUM_LETTER_PHASE_DASH_D_PIP: char = '𖤭';
-    /// \u{1692e}: '𖤮'
-    pub const BAMUM_LETTER_PHASE_DASH_D_PEUTAE: char = '𖤮';
-    /// \u{1692f}: '𖤯'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NYUE: char = '𖤯';
-    /// \u{16930}: '𖤰'
-    pub const BAMUM_LETTER_PHASE_DASH_D_LET: char = '𖤰';
-    /// \u{16931}: '𖤱'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGGAAM: char = '𖤱';
-    /// \u{16932}: '𖤲'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MFIEE: char = '𖤲';
-    /// \u{16933}: '𖤳'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGGWAEN: char = '𖤳';
-    /// \u{16934}: '𖤴'
-    pub const BAMUM_LETTER_PHASE_DASH_D_YUOM: char = '𖤴';
-    /// \u{16935}: '𖤵'
-    pub const BAMUM_LETTER_PHASE_DASH_D_PAP: char = '𖤵';
-    /// \u{16936}: '𖤶'
-    pub const BAMUM_LETTER_PHASE_DASH_D_YUOP: char = '𖤶';
-    /// \u{16937}: '𖤷'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NDAM: char = '𖤷';
-    /// \u{16938}: '𖤸'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NTEUM: char = '𖤸';
-    /// \u{16939}: '𖤹'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SUAE: char = '𖤹';
-    /// \u{1693a}: '𖤺'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KUN: char = '𖤺';
-    /// \u{1693b}: '𖤻'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGGEUX: char = '𖤻';
-    /// \u{1693c}: '𖤼'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGKIEE: char = '𖤼';
-    /// \u{1693d}: '𖤽'
-    pub const BAMUM_LETTER_PHASE_DASH_D_TUOT: char = '𖤽';
-    /// \u{1693e}: '𖤾'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MEUN: char = '𖤾';
-    /// \u{1693f}: '𖤿'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KUQ: char = '𖤿';
-    /// \u{16940}: '𖥀'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NSUM: char = '𖥀';
-    /// \u{16941}: '𖥁'
-    pub const BAMUM_LETTER_PHASE_DASH_D_TEUN: char = '𖥁';
-    /// \u{16942}: '𖥂'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MAENJET: char = '𖥂';
-    /// \u{16943}: '𖥃'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGGAP: char = '𖥃';
-    /// \u{16944}: '𖥄'
-    pub const BAMUM_LETTER_PHASE_DASH_D_LEUM: char = '𖥄';
-    /// \u{16945}: '𖥅'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NGGUOM: char = '𖥅';
-    /// \u{16946}: '𖥆'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NSHUT: char = '𖥆';
-    /// \u{16947}: '𖥇'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NJUEQ: char = '𖥇';
-    /// \u{16948}: '𖥈'
-    pub const BAMUM_LETTER_PHASE_DASH_D_GHEUAE: char = '𖥈';
-    /// \u{16949}: '𖥉'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KU: char = '𖥉';
-    /// \u{1694a}: '𖥊'
-    pub const BAMUM_LETTER_PHASE_DASH_D_REN_OLD: char = '𖥊';
-    /// \u{1694b}: '𖥋'
-    pub const BAMUM_LETTER_PHASE_DASH_D_TAE: char = '𖥋';
-    /// \u{1694c}: '𖥌'
-    pub const BAMUM_LETTER_PHASE_DASH_D_TOQ: char = '𖥌';
-    /// \u{1694d}: '𖥍'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NYI: char = '𖥍';
-    /// \u{1694e}: '𖥎'
-    pub const BAMUM_LETTER_PHASE_DASH_D_RII: char = '𖥎';
-    /// \u{1694f}: '𖥏'
-    pub const BAMUM_LETTER_PHASE_DASH_D_LEEEE: char = '𖥏';
-    /// \u{16950}: '𖥐'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MEEEE: char = '𖥐';
-    /// \u{16951}: '𖥑'
-    pub const BAMUM_LETTER_PHASE_DASH_D_M: char = '𖥑';
-    /// \u{16952}: '𖥒'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SUU: char = '𖥒';
-    /// \u{16953}: '𖥓'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MU: char = '𖥓';
-    /// \u{16954}: '𖥔'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SHII: char = '𖥔';
-    /// \u{16955}: '𖥕'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SHEUX: char = '𖥕';
-    /// \u{16956}: '𖥖'
-    pub const BAMUM_LETTER_PHASE_DASH_D_KYEE: char = '𖥖';
-    /// \u{16957}: '𖥗'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NU: char = '𖥗';
-    /// \u{16958}: '𖥘'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SHU: char = '𖥘';
-    /// \u{16959}: '𖥙'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NTEE: char = '𖥙';
-    /// \u{1695a}: '𖥚'
-    pub const BAMUM_LETTER_PHASE_DASH_D_PEE: char = '𖥚';
-    /// \u{1695b}: '𖥛'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NI: char = '𖥛';
-    /// \u{1695c}: '𖥜'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SHOQ: char = '𖥜';
-    /// \u{1695d}: '𖥝'
-    pub const BAMUM_LETTER_PHASE_DASH_D_PUQ: char = '𖥝';
-    /// \u{1695e}: '𖥞'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MVOP: char = '𖥞';
-    /// \u{1695f}: '𖥟'
-    pub const BAMUM_LETTER_PHASE_DASH_D_LOQ: char = '𖥟';
-    /// \u{16960}: '𖥠'
-    pub const BAMUM_LETTER_PHASE_DASH_D_REN_MUCH: char = '𖥠';
-    /// \u{16961}: '𖥡'
-    pub const BAMUM_LETTER_PHASE_DASH_D_TI: char = '𖥡';
-    /// \u{16962}: '𖥢'
-    pub const BAMUM_LETTER_PHASE_DASH_D_NTUU: char = '𖥢';
-    /// \u{16963}: '𖥣'
-    pub const BAMUM_LETTER_PHASE_DASH_D_MBAA_SEVEN: char = '𖥣';
-    /// \u{16964}: '𖥤'
-    pub const BAMUM_LETTER_PHASE_DASH_D_SAQ: char = '𖥤';
-    /// \u{16965}: '𖥥'
-    pub const BAMUM_LETTER_PHASE_DASH_D_FAA: char = '𖥥';
-    /// \u{16966}: '𖥦'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NDAP: char = '𖥦';
-    /// \u{16967}: '𖥧'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TOON: char = '𖥧';
-    /// \u{16968}: '𖥨'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MBEUM: char = '𖥨';
-    /// \u{16969}: '𖥩'
-    pub const BAMUM_LETTER_PHASE_DASH_E_LAP: char = '𖥩';
-    /// \u{1696a}: '𖥪'
-    pub const BAMUM_LETTER_PHASE_DASH_E_VOM: char = '𖥪';
-    /// \u{1696b}: '𖥫'
-    pub const BAMUM_LETTER_PHASE_DASH_E_LOON: char = '𖥫';
-    /// \u{1696c}: '𖥬'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PAA: char = '𖥬';
-    /// \u{1696d}: '𖥭'
-    pub const BAMUM_LETTER_PHASE_DASH_E_SOM: char = '𖥭';
-    /// \u{1696e}: '𖥮'
-    pub const BAMUM_LETTER_PHASE_DASH_E_RAQ: char = '𖥮';
-    /// \u{1696f}: '𖥯'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NSHUOP: char = '𖥯';
-    /// \u{16970}: '𖥰'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NDUN: char = '𖥰';
-    /// \u{16971}: '𖥱'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PUAE: char = '𖥱';
-    /// \u{16972}: '𖥲'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TAM: char = '𖥲';
-    /// \u{16973}: '𖥳'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGKA: char = '𖥳';
-    /// \u{16974}: '𖥴'
-    pub const BAMUM_LETTER_PHASE_DASH_E_KPEUX: char = '𖥴';
-    /// \u{16975}: '𖥵'
-    pub const BAMUM_LETTER_PHASE_DASH_E_WUO: char = '𖥵';
-    /// \u{16976}: '𖥶'
-    pub const BAMUM_LETTER_PHASE_DASH_E_SEE: char = '𖥶';
-    /// \u{16977}: '𖥷'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGGEUAET: char = '𖥷';
-    /// \u{16978}: '𖥸'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PAAM: char = '𖥸';
-    /// \u{16979}: '𖥹'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TOO: char = '𖥹';
-    /// \u{1697a}: '𖥺'
-    pub const BAMUM_LETTER_PHASE_DASH_E_KUOP: char = '𖥺';
-    /// \u{1697b}: '𖥻'
-    pub const BAMUM_LETTER_PHASE_DASH_E_LOM: char = '𖥻';
-    /// \u{1697c}: '𖥼'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NSHIEE: char = '𖥼';
-    /// \u{1697d}: '𖥽'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGOP: char = '𖥽';
-    /// \u{1697e}: '𖥾'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MAEM: char = '𖥾';
-    /// \u{1697f}: '𖥿'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGKEUX: char = '𖥿';
-    /// \u{16980}: '𖦀'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGOQ: char = '𖦀';
-    /// \u{16981}: '𖦁'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NSHUE: char = '𖦁';
-    /// \u{16982}: '𖦂'
-    pub const BAMUM_LETTER_PHASE_DASH_E_RIMGBA: char = '𖦂';
-    /// \u{16983}: '𖦃'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NJEUX: char = '𖦃';
-    /// \u{16984}: '𖦄'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PEEM: char = '𖦄';
-    /// \u{16985}: '𖦅'
-    pub const BAMUM_LETTER_PHASE_DASH_E_SAA: char = '𖦅';
-    /// \u{16986}: '𖦆'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGGURAE: char = '𖦆';
-    /// \u{16987}: '𖦇'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MGBA: char = '𖦇';
-    /// \u{16988}: '𖦈'
-    pub const BAMUM_LETTER_PHASE_DASH_E_GHEUX: char = '𖦈';
-    /// \u{16989}: '𖦉'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGKEUAEM: char = '𖦉';
-    /// \u{1698a}: '𖦊'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NJAEMLI: char = '𖦊';
-    /// \u{1698b}: '𖦋'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MAP: char = '𖦋';
-    /// \u{1698c}: '𖦌'
-    pub const BAMUM_LETTER_PHASE_DASH_E_LOOT: char = '𖦌';
-    /// \u{1698d}: '𖦍'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGGEEEE: char = '𖦍';
-    /// \u{1698e}: '𖦎'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NDIQ: char = '𖦎';
-    /// \u{1698f}: '𖦏'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TAEN_NTEUM: char = '𖦏';
-    /// \u{16990}: '𖦐'
-    pub const BAMUM_LETTER_PHASE_DASH_E_SET: char = '𖦐';
-    /// \u{16991}: '𖦑'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PUM: char = '𖦑';
-    /// \u{16992}: '𖦒'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NDAA_SOFTNESS: char = '𖦒';
-    /// \u{16993}: '𖦓'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGGUAESHAE_NYAM: char = '𖦓';
-    /// \u{16994}: '𖦔'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YIEE: char = '𖦔';
-    /// \u{16995}: '𖦕'
-    pub const BAMUM_LETTER_PHASE_DASH_E_GHEUN: char = '𖦕';
-    /// \u{16996}: '𖦖'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TUAE: char = '𖦖';
-    /// \u{16997}: '𖦗'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YEUAE: char = '𖦗';
-    /// \u{16998}: '𖦘'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PO: char = '𖦘';
-    /// \u{16999}: '𖦙'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TUMAE: char = '𖦙';
-    /// \u{1699a}: '𖦚'
-    pub const BAMUM_LETTER_PHASE_DASH_E_KEUAE: char = '𖦚';
-    /// \u{1699b}: '𖦛'
-    pub const BAMUM_LETTER_PHASE_DASH_E_SUAEN: char = '𖦛';
-    /// \u{1699c}: '𖦜'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TEUAEQ: char = '𖦜';
-    /// \u{1699d}: '𖦝'
-    pub const BAMUM_LETTER_PHASE_DASH_E_VEUAE: char = '𖦝';
-    /// \u{1699e}: '𖦞'
-    pub const BAMUM_LETTER_PHASE_DASH_E_WEUX: char = '𖦞';
-    /// \u{1699f}: '𖦟'
-    pub const BAMUM_LETTER_PHASE_DASH_E_LAAM: char = '𖦟';
-    /// \u{169a0}: '𖦠'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PU: char = '𖦠';
-    /// \u{169a1}: '𖦡'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TAAQ: char = '𖦡';
-    /// \u{169a2}: '𖦢'
-    pub const BAMUM_LETTER_PHASE_DASH_E_GHAAMAE: char = '𖦢';
-    /// \u{169a3}: '𖦣'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGEUREUT: char = '𖦣';
-    /// \u{169a4}: '𖦤'
-    pub const BAMUM_LETTER_PHASE_DASH_E_SHEUAEQ: char = '𖦤';
-    /// \u{169a5}: '𖦥'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MGBEN: char = '𖦥';
-    /// \u{169a6}: '𖦦'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MBEE: char = '𖦦';
-    /// \u{169a7}: '𖦧'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NZAQ: char = '𖦧';
-    /// \u{169a8}: '𖦨'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NKOM: char = '𖦨';
-    /// \u{169a9}: '𖦩'
-    pub const BAMUM_LETTER_PHASE_DASH_E_GBET: char = '𖦩';
-    /// \u{169aa}: '𖦪'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TUM: char = '𖦪';
-    /// \u{169ab}: '𖦫'
-    pub const BAMUM_LETTER_PHASE_DASH_E_KUET: char = '𖦫';
-    /// \u{169ac}: '𖦬'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YAP: char = '𖦬';
-    /// \u{169ad}: '𖦭'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NYI_CLEAVER: char = '𖦭';
-    /// \u{169ae}: '𖦮'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YIT: char = '𖦮';
-    /// \u{169af}: '𖦯'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MFEUQ: char = '𖦯';
-    /// \u{169b0}: '𖦰'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NDIAQ: char = '𖦰';
-    /// \u{169b1}: '𖦱'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PIEEQ: char = '𖦱';
-    /// \u{169b2}: '𖦲'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YUEQ: char = '𖦲';
-    /// \u{169b3}: '𖦳'
-    pub const BAMUM_LETTER_PHASE_DASH_E_LEUAEM: char = '𖦳';
-    /// \u{169b4}: '𖦴'
-    pub const BAMUM_LETTER_PHASE_DASH_E_FUE: char = '𖦴';
-    /// \u{169b5}: '𖦵'
-    pub const BAMUM_LETTER_PHASE_DASH_E_GBEUX: char = '𖦵';
-    /// \u{169b6}: '𖦶'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGKUP: char = '𖦶';
-    /// \u{169b7}: '𖦷'
-    pub const BAMUM_LETTER_PHASE_DASH_E_KET: char = '𖦷';
-    /// \u{169b8}: '𖦸'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MAE: char = '𖦸';
-    /// \u{169b9}: '𖦹'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGKAAMI: char = '𖦹';
-    /// \u{169ba}: '𖦺'
-    pub const BAMUM_LETTER_PHASE_DASH_E_GHET: char = '𖦺';
-    /// \u{169bb}: '𖦻'
-    pub const BAMUM_LETTER_PHASE_DASH_E_FA: char = '𖦻';
-    /// \u{169bc}: '𖦼'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NTUM: char = '𖦼';
-    /// \u{169bd}: '𖦽'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PEUT: char = '𖦽';
-    /// \u{169be}: '𖦾'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YEUM: char = '𖦾';
-    /// \u{169bf}: '𖦿'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGGEUAE: char = '𖦿';
-    /// \u{169c0}: '𖧀'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NYI_BETWEEN: char = '𖧀';
-    /// \u{169c1}: '𖧁'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NZUQ: char = '𖧁';
-    /// \u{169c2}: '𖧂'
-    pub const BAMUM_LETTER_PHASE_DASH_E_POON: char = '𖧂';
-    /// \u{169c3}: '𖧃'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MIEE: char = '𖧃';
-    /// \u{169c4}: '𖧄'
-    pub const BAMUM_LETTER_PHASE_DASH_E_FUET: char = '𖧄';
-    /// \u{169c5}: '𖧅'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NAE: char = '𖧅';
-    /// \u{169c6}: '𖧆'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MUAE: char = '𖧆';
-    /// \u{169c7}: '𖧇'
-    pub const BAMUM_LETTER_PHASE_DASH_E_GHEUAE: char = '𖧇';
-    /// \u{169c8}: '𖧈'
-    pub const BAMUM_LETTER_PHASE_DASH_E_FU_I: char = '𖧈';
-    /// \u{169c9}: '𖧉'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MVI: char = '𖧉';
-    /// \u{169ca}: '𖧊'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PUAQ: char = '𖧊';
-    /// \u{169cb}: '𖧋'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGKUM: char = '𖧋';
-    /// \u{169cc}: '𖧌'
-    pub const BAMUM_LETTER_PHASE_DASH_E_KUT: char = '𖧌';
-    /// \u{169cd}: '𖧍'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PIET: char = '𖧍';
-    /// \u{169ce}: '𖧎'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NTAP: char = '𖧎';
-    /// \u{169cf}: '𖧏'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YEUAET: char = '𖧏';
-    /// \u{169d0}: '𖧐'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGGUP: char = '𖧐';
-    /// \u{169d1}: '𖧑'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PA_PEOPLE: char = '𖧑';
-    /// \u{169d2}: '𖧒'
-    pub const BAMUM_LETTER_PHASE_DASH_E_FU_CALL: char = '𖧒';
-    /// \u{169d3}: '𖧓'
-    pub const BAMUM_LETTER_PHASE_DASH_E_FOM: char = '𖧓';
-    /// \u{169d4}: '𖧔'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NJEE: char = '𖧔';
-    /// \u{169d5}: '𖧕'
-    pub const BAMUM_LETTER_PHASE_DASH_E_A: char = '𖧕';
-    /// \u{169d6}: '𖧖'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TOQ: char = '𖧖';
-    /// \u{169d7}: '𖧗'
-    pub const BAMUM_LETTER_PHASE_DASH_E_O: char = '𖧗';
-    /// \u{169d8}: '𖧘'
-    pub const BAMUM_LETTER_PHASE_DASH_E_I: char = '𖧘';
-    /// \u{169d9}: '𖧙'
-    pub const BAMUM_LETTER_PHASE_DASH_E_LAQ: char = '𖧙';
-    /// \u{169da}: '𖧚'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PA_PLURAL: char = '𖧚';
-    /// \u{169db}: '𖧛'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TAA: char = '𖧛';
-    /// \u{169dc}: '𖧜'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TAQ: char = '𖧜';
-    /// \u{169dd}: '𖧝'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NDAA_MY_HOUSE: char = '𖧝';
-    /// \u{169de}: '𖧞'
-    pub const BAMUM_LETTER_PHASE_DASH_E_SHIQ: char = '𖧞';
-    /// \u{169df}: '𖧟'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YEUX: char = '𖧟';
-    /// \u{169e0}: '𖧠'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGUAE: char = '𖧠';
-    /// \u{169e1}: '𖧡'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YUAEN: char = '𖧡';
-    /// \u{169e2}: '𖧢'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YOQ_SWIMMING: char = '𖧢';
-    /// \u{169e3}: '𖧣'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YOQ_COVER: char = '𖧣';
-    /// \u{169e4}: '𖧤'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YUQ: char = '𖧤';
-    /// \u{169e5}: '𖧥'
-    pub const BAMUM_LETTER_PHASE_DASH_E_YUN: char = '𖧥';
-    /// \u{169e6}: '𖧦'
-    pub const BAMUM_LETTER_PHASE_DASH_E_KEUX: char = '𖧦';
-    /// \u{169e7}: '𖧧'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PEUX: char = '𖧧';
-    /// \u{169e8}: '𖧨'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NJEE_EPOCH: char = '𖧨';
-    /// \u{169e9}: '𖧩'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PUE: char = '𖧩';
-    /// \u{169ea}: '𖧪'
-    pub const BAMUM_LETTER_PHASE_DASH_E_WUE: char = '𖧪';
-    /// \u{169eb}: '𖧫'
-    pub const BAMUM_LETTER_PHASE_DASH_E_FEE: char = '𖧫';
-    /// \u{169ec}: '𖧬'
-    pub const BAMUM_LETTER_PHASE_DASH_E_VEE: char = '𖧬';
-    /// \u{169ed}: '𖧭'
-    pub const BAMUM_LETTER_PHASE_DASH_E_LU: char = '𖧭';
-    /// \u{169ee}: '𖧮'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MI: char = '𖧮';
-    /// \u{169ef}: '𖧯'
-    pub const BAMUM_LETTER_PHASE_DASH_E_REUX: char = '𖧯';
-    /// \u{169f0}: '𖧰'
-    pub const BAMUM_LETTER_PHASE_DASH_E_RAE: char = '𖧰';
-    /// \u{169f1}: '𖧱'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGUAET: char = '𖧱';
-    /// \u{169f2}: '𖧲'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NGA: char = '𖧲';
-    /// \u{169f3}: '𖧳'
-    pub const BAMUM_LETTER_PHASE_DASH_E_SHO: char = '𖧳';
-    /// \u{169f4}: '𖧴'
-    pub const BAMUM_LETTER_PHASE_DASH_E_SHOQ: char = '𖧴';
-    /// \u{169f5}: '𖧵'
-    pub const BAMUM_LETTER_PHASE_DASH_E_FU_REMEDY: char = '𖧵';
-    /// \u{169f6}: '𖧶'
-    pub const BAMUM_LETTER_PHASE_DASH_E_NA: char = '𖧶';
-    /// \u{169f7}: '𖧷'
-    pub const BAMUM_LETTER_PHASE_DASH_E_PI: char = '𖧷';
-    /// \u{169f8}: '𖧸'
-    pub const BAMUM_LETTER_PHASE_DASH_E_LOQ: char = '𖧸';
-    /// \u{169f9}: '𖧹'
-    pub const BAMUM_LETTER_PHASE_DASH_E_KO: char = '𖧹';
-    /// \u{169fa}: '𖧺'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MEN: char = '𖧺';
-    /// \u{169fb}: '𖧻'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MA: char = '𖧻';
-    /// \u{169fc}: '𖧼'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MAQ: char = '𖧼';
-    /// \u{169fd}: '𖧽'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TEU: char = '𖧽';
-    /// \u{169fe}: '𖧾'
-    pub const BAMUM_LETTER_PHASE_DASH_E_KI: char = '𖧾';
-    /// \u{169ff}: '𖧿'
-    pub const BAMUM_LETTER_PHASE_DASH_E_MON: char = '𖧿';
-    /// \u{16a00}: '𖨀'
-    pub const BAMUM_LETTER_PHASE_DASH_E_TEN: char = '𖨀';
-    /// \u{16a01}: '𖨁'
-    pub const BAMUM_LETTER_PHASE_DASH_E_FAQ: char = '𖨁';
-    /// \u{16a02}: '𖨂'
-    pub const BAMUM_LETTER_PHASE_DASH_E_GHOM: char = '𖨂';
-    /// \u{16a03}: '𖨃'
-    pub const BAMUM_LETTER_PHASE_DASH_F_KA: char = '𖨃';
-    /// \u{16a04}: '𖨄'
-    pub const BAMUM_LETTER_PHASE_DASH_F_U: char = '𖨄';
-    /// \u{16a05}: '𖨅'
-    pub const BAMUM_LETTER_PHASE_DASH_F_KU: char = '𖨅';
-    /// \u{16a06}: '𖨆'
-    pub const BAMUM_LETTER_PHASE_DASH_F_EE: char = '𖨆';
-    /// \u{16a07}: '𖨇'
-    pub const BAMUM_LETTER_PHASE_DASH_F_REE: char = '𖨇';
-    /// \u{16a08}: '𖨈'
-    pub const BAMUM_LETTER_PHASE_DASH_F_TAE: char = '𖨈';
-    /// \u{16a09}: '𖨉'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NYI: char = '𖨉';
-    /// \u{16a0a}: '𖨊'
-    pub const BAMUM_LETTER_PHASE_DASH_F_LA: char = '𖨊';
-    /// \u{16a0b}: '𖨋'
-    pub const BAMUM_LETTER_PHASE_DASH_F_RII: char = '𖨋';
-    /// \u{16a0c}: '𖨌'
-    pub const BAMUM_LETTER_PHASE_DASH_F_RIEE: char = '𖨌';
-    /// \u{16a0d}: '𖨍'
-    pub const BAMUM_LETTER_PHASE_DASH_F_MEEEE: char = '𖨍';
-    /// \u{16a0e}: '𖨎'
-    pub const BAMUM_LETTER_PHASE_DASH_F_TAA: char = '𖨎';
-    /// \u{16a0f}: '𖨏'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NDAA: char = '𖨏';
-    /// \u{16a10}: '𖨐'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NJAEM: char = '𖨐';
-    /// \u{16a11}: '𖨑'
-    pub const BAMUM_LETTER_PHASE_DASH_F_M: char = '𖨑';
-    /// \u{16a12}: '𖨒'
-    pub const BAMUM_LETTER_PHASE_DASH_F_SUU: char = '𖨒';
-    /// \u{16a13}: '𖨓'
-    pub const BAMUM_LETTER_PHASE_DASH_F_SHII: char = '𖨓';
-    /// \u{16a14}: '𖨔'
-    pub const BAMUM_LETTER_PHASE_DASH_F_SI: char = '𖨔';
-    /// \u{16a15}: '𖨕'
-    pub const BAMUM_LETTER_PHASE_DASH_F_SEUX: char = '𖨕';
-    /// \u{16a16}: '𖨖'
-    pub const BAMUM_LETTER_PHASE_DASH_F_KYEE: char = '𖨖';
-    /// \u{16a17}: '𖨗'
-    pub const BAMUM_LETTER_PHASE_DASH_F_KET: char = '𖨗';
-    /// \u{16a18}: '𖨘'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NUAE: char = '𖨘';
-    /// \u{16a19}: '𖨙'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NU: char = '𖨙';
-    /// \u{16a1a}: '𖨚'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NJUAE: char = '𖨚';
-    /// \u{16a1b}: '𖨛'
-    pub const BAMUM_LETTER_PHASE_DASH_F_YOQ: char = '𖨛';
-    /// \u{16a1c}: '𖨜'
-    pub const BAMUM_LETTER_PHASE_DASH_F_SHU: char = '𖨜';
-    /// \u{16a1d}: '𖨝'
-    pub const BAMUM_LETTER_PHASE_DASH_F_YA: char = '𖨝';
-    /// \u{16a1e}: '𖨞'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NSHA: char = '𖨞';
-    /// \u{16a1f}: '𖨟'
-    pub const BAMUM_LETTER_PHASE_DASH_F_PEUX: char = '𖨟';
-    /// \u{16a20}: '𖨠'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NTEE: char = '𖨠';
-    /// \u{16a21}: '𖨡'
-    pub const BAMUM_LETTER_PHASE_DASH_F_WUE: char = '𖨡';
-    /// \u{16a22}: '𖨢'
-    pub const BAMUM_LETTER_PHASE_DASH_F_PEE: char = '𖨢';
-    /// \u{16a23}: '𖨣'
-    pub const BAMUM_LETTER_PHASE_DASH_F_RU: char = '𖨣';
-    /// \u{16a24}: '𖨤'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NI: char = '𖨤';
-    /// \u{16a25}: '𖨥'
-    pub const BAMUM_LETTER_PHASE_DASH_F_REUX: char = '𖨥';
-    /// \u{16a26}: '𖨦'
-    pub const BAMUM_LETTER_PHASE_DASH_F_KEN: char = '𖨦';
-    /// \u{16a27}: '𖨧'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NGKWAEN: char = '𖨧';
-    /// \u{16a28}: '𖨨'
-    pub const BAMUM_LETTER_PHASE_DASH_F_NGGA: char = '𖨨';
-    /// \u{16a29}: '𖨩'
-    pub const BAMUM_LETTER_PHASE_DASH_F_SHO: char = '𖨩';
-    /// \u{16a2a}: '𖨪'
-    pub const BAMUM_LETTER_PHASE_DASH_F_PUAE: char = '𖨪';
-    /// \u{16a2b}: '𖨫'
-    pub const BAMUM_LETTER_PHASE_DASH_F_FOM: char = '𖨫';
-    /// \u{16a2c}: '𖨬'
-    pub const BAMUM_LETTER_PHASE_DASH_F_WA: char = '𖨬';
-    /// \u{16a2d}: '𖨭'
-    pub const BAMUM_LETTER_PHASE_DASH_F_LI: char = '𖨭';
-    /// \u{16a2e}: '𖨮'
-    pub const BAMUM_LETTER_PHASE_DASH_F_LOQ: char = '𖨮';
-    /// \u{16a2f}: '𖨯'
-    pub const BAMUM_LETTER_PHASE_DASH_F_KO: char = '𖨯';
-    /// \u{16a30}: '𖨰'
-    pub const BAMUM_LETTER_PHASE_DASH_F_MBEN: char = '𖨰';
-    /// \u{16a31}: '𖨱'
-    pub const BAMUM_LETTER_PHASE_DASH_F_REN: char = '𖨱';
-    /// \u{16a32}: '𖨲'
-    pub const BAMUM_LETTER_PHASE_DASH_F_MA: char = '𖨲';
-    /// \u{16a33}: '𖨳'
-    pub const BAMUM_LETTER_PHASE_DASH_F_MO: char = '𖨳';
-    /// \u{16a34}: '𖨴'
-    pub const BAMUM_LETTER_PHASE_DASH_F_MBAA: char = '𖨴';
-    /// \u{16a35}: '𖨵'
-    pub const BAMUM_LETTER_PHASE_DASH_F_TET: char = '𖨵';
-    /// \u{16a36}: '𖨶'
-    pub const BAMUM_LETTER_PHASE_DASH_F_KPA: char = '𖨶';
-    /// \u{16a37}: '𖨷'
-    pub const BAMUM_LETTER_PHASE_DASH_F_SAMBA: char = '𖨷';
-    /// \u{16a38}: '𖨸'
-    pub const BAMUM_LETTER_PHASE_DASH_F_VUEQ: char = '𖨸';
-}
 
 /// An enum to represent all characters in the BamumSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -2285,577 +1144,576 @@ pub enum BamumSupplement {
 
 impl Into<char> for BamumSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            BamumSupplement::BamumLetterPhaseDashANgkueMfon => BAMUM_LETTER_PHASE_DASH_A_NGKUE_MFON,
-            BamumSupplement::BamumLetterPhaseDashAGbieeFon => BAMUM_LETTER_PHASE_DASH_A_GBIEE_FON,
-            BamumSupplement::BamumLetterPhaseDashAPonMfonPipaemgbiee => BAMUM_LETTER_PHASE_DASH_A_PON_MFON_PIPAEMGBIEE,
-            BamumSupplement::BamumLetterPhaseDashAPonMfonPipaemba => BAMUM_LETTER_PHASE_DASH_A_PON_MFON_PIPAEMBA,
-            BamumSupplement::BamumLetterPhaseDashANaaMfon => BAMUM_LETTER_PHASE_DASH_A_NAA_MFON,
-            BamumSupplement::BamumLetterPhaseDashAShuenshuet => BAMUM_LETTER_PHASE_DASH_A_SHUENSHUET,
-            BamumSupplement::BamumLetterPhaseDashATitaMfon => BAMUM_LETTER_PHASE_DASH_A_TITA_MFON,
-            BamumSupplement::BamumLetterPhaseDashANzaMfon => BAMUM_LETTER_PHASE_DASH_A_NZA_MFON,
-            BamumSupplement::BamumLetterPhaseDashAShindaPaNji => BAMUM_LETTER_PHASE_DASH_A_SHINDA_PA_NJI,
-            BamumSupplement::BamumLetterPhaseDashAPonPaNjiPipaemgbiee => BAMUM_LETTER_PHASE_DASH_A_PON_PA_NJI_PIPAEMGBIEE,
-            BamumSupplement::BamumLetterPhaseDashAPonPaNjiPipaemba => BAMUM_LETTER_PHASE_DASH_A_PON_PA_NJI_PIPAEMBA,
-            BamumSupplement::BamumLetterPhaseDashAMaembgbiee => BAMUM_LETTER_PHASE_DASH_A_MAEMBGBIEE,
-            BamumSupplement::BamumLetterPhaseDashATuMaemba => BAMUM_LETTER_PHASE_DASH_A_TU_MAEMBA,
-            BamumSupplement::BamumLetterPhaseDashANgangu => BAMUM_LETTER_PHASE_DASH_A_NGANGU,
-            BamumSupplement::BamumLetterPhaseDashAMaemveux => BAMUM_LETTER_PHASE_DASH_A_MAEMVEUX,
-            BamumSupplement::BamumLetterPhaseDashAMansuae => BAMUM_LETTER_PHASE_DASH_A_MANSUAE,
-            BamumSupplement::BamumLetterPhaseDashAMveuaengam => BAMUM_LETTER_PHASE_DASH_A_MVEUAENGAM,
-            BamumSupplement::BamumLetterPhaseDashASeunyam => BAMUM_LETTER_PHASE_DASH_A_SEUNYAM,
-            BamumSupplement::BamumLetterPhaseDashANtoqpen => BAMUM_LETTER_PHASE_DASH_A_NTOQPEN,
-            BamumSupplement::BamumLetterPhaseDashAKeukeutnda => BAMUM_LETTER_PHASE_DASH_A_KEUKEUTNDA,
-            BamumSupplement::BamumLetterPhaseDashANkindi => BAMUM_LETTER_PHASE_DASH_A_NKINDI,
-            BamumSupplement::BamumLetterPhaseDashASuu => BAMUM_LETTER_PHASE_DASH_A_SUU,
-            BamumSupplement::BamumLetterPhaseDashANgkuenzeum => BAMUM_LETTER_PHASE_DASH_A_NGKUENZEUM,
-            BamumSupplement::BamumLetterPhaseDashALapaq => BAMUM_LETTER_PHASE_DASH_A_LAPAQ,
-            BamumSupplement::BamumLetterPhaseDashALetKut => BAMUM_LETTER_PHASE_DASH_A_LET_KUT,
-            BamumSupplement::BamumLetterPhaseDashANtapMfaa => BAMUM_LETTER_PHASE_DASH_A_NTAP_MFAA,
-            BamumSupplement::BamumLetterPhaseDashAMaekeup => BAMUM_LETTER_PHASE_DASH_A_MAEKEUP,
-            BamumSupplement::BamumLetterPhaseDashAPashae => BAMUM_LETTER_PHASE_DASH_A_PASHAE,
-            BamumSupplement::BamumLetterPhaseDashAGheuaerae => BAMUM_LETTER_PHASE_DASH_A_GHEUAERAE,
-            BamumSupplement::BamumLetterPhaseDashAPamshae => BAMUM_LETTER_PHASE_DASH_A_PAMSHAE,
-            BamumSupplement::BamumLetterPhaseDashAMonNggeuaet => BAMUM_LETTER_PHASE_DASH_A_MON_NGGEUAET,
-            BamumSupplement::BamumLetterPhaseDashANzunMeut => BAMUM_LETTER_PHASE_DASH_A_NZUN_MEUT,
-            BamumSupplement::BamumLetterPhaseDashAUYuqNae => BAMUM_LETTER_PHASE_DASH_A_U_YUQ_NAE,
-            BamumSupplement::BamumLetterPhaseDashAGheuaegheuae => BAMUM_LETTER_PHASE_DASH_A_GHEUAEGHEUAE,
-            BamumSupplement::BamumLetterPhaseDashANtapNtaa => BAMUM_LETTER_PHASE_DASH_A_NTAP_NTAA,
-            BamumSupplement::BamumLetterPhaseDashASisa => BAMUM_LETTER_PHASE_DASH_A_SISA,
-            BamumSupplement::BamumLetterPhaseDashAMgbasa => BAMUM_LETTER_PHASE_DASH_A_MGBASA,
-            BamumSupplement::BamumLetterPhaseDashAMeunjomndeuq => BAMUM_LETTER_PHASE_DASH_A_MEUNJOMNDEUQ,
-            BamumSupplement::BamumLetterPhaseDashAMoompuq => BAMUM_LETTER_PHASE_DASH_A_MOOMPUQ,
-            BamumSupplement::BamumLetterPhaseDashAKafa => BAMUM_LETTER_PHASE_DASH_A_KAFA,
-            BamumSupplement::BamumLetterPhaseDashAPaLeeraewa => BAMUM_LETTER_PHASE_DASH_A_PA_LEERAEWA,
-            BamumSupplement::BamumLetterPhaseDashANdaLeeraewa => BAMUM_LETTER_PHASE_DASH_A_NDA_LEERAEWA,
-            BamumSupplement::BamumLetterPhaseDashAPet => BAMUM_LETTER_PHASE_DASH_A_PET,
-            BamumSupplement::BamumLetterPhaseDashAMaemkpen => BAMUM_LETTER_PHASE_DASH_A_MAEMKPEN,
-            BamumSupplement::BamumLetterPhaseDashANika => BAMUM_LETTER_PHASE_DASH_A_NIKA,
-            BamumSupplement::BamumLetterPhaseDashAPup => BAMUM_LETTER_PHASE_DASH_A_PUP,
-            BamumSupplement::BamumLetterPhaseDashATuaep => BAMUM_LETTER_PHASE_DASH_A_TUAEP,
-            BamumSupplement::BamumLetterPhaseDashALuaep => BAMUM_LETTER_PHASE_DASH_A_LUAEP,
-            BamumSupplement::BamumLetterPhaseDashASonjam => BAMUM_LETTER_PHASE_DASH_A_SONJAM,
-            BamumSupplement::BamumLetterPhaseDashATeuteuwen => BAMUM_LETTER_PHASE_DASH_A_TEUTEUWEN,
-            BamumSupplement::BamumLetterPhaseDashAMaenyi => BAMUM_LETTER_PHASE_DASH_A_MAENYI,
-            BamumSupplement::BamumLetterPhaseDashAKet => BAMUM_LETTER_PHASE_DASH_A_KET,
-            BamumSupplement::BamumLetterPhaseDashANdaanggeuaet => BAMUM_LETTER_PHASE_DASH_A_NDAANGGEUAET,
-            BamumSupplement::BamumLetterPhaseDashAKuoq => BAMUM_LETTER_PHASE_DASH_A_KUOQ,
-            BamumSupplement::BamumLetterPhaseDashAMoomeut => BAMUM_LETTER_PHASE_DASH_A_MOOMEUT,
-            BamumSupplement::BamumLetterPhaseDashAShum => BAMUM_LETTER_PHASE_DASH_A_SHUM,
-            BamumSupplement::BamumLetterPhaseDashALommae => BAMUM_LETTER_PHASE_DASH_A_LOMMAE,
-            BamumSupplement::BamumLetterPhaseDashAFiri => BAMUM_LETTER_PHASE_DASH_A_FIRI,
-            BamumSupplement::BamumLetterPhaseDashARom => BAMUM_LETTER_PHASE_DASH_A_ROM,
-            BamumSupplement::BamumLetterPhaseDashAKpoq => BAMUM_LETTER_PHASE_DASH_A_KPOQ,
-            BamumSupplement::BamumLetterPhaseDashASoq => BAMUM_LETTER_PHASE_DASH_A_SOQ,
-            BamumSupplement::BamumLetterPhaseDashAMapPieet => BAMUM_LETTER_PHASE_DASH_A_MAP_PIEET,
-            BamumSupplement::BamumLetterPhaseDashAShirae => BAMUM_LETTER_PHASE_DASH_A_SHIRAE,
-            BamumSupplement::BamumLetterPhaseDashANtap => BAMUM_LETTER_PHASE_DASH_A_NTAP,
-            BamumSupplement::BamumLetterPhaseDashAShoqNshutYum => BAMUM_LETTER_PHASE_DASH_A_SHOQ_NSHUT_YUM,
-            BamumSupplement::BamumLetterPhaseDashANyitMongkeuaeq => BAMUM_LETTER_PHASE_DASH_A_NYIT_MONGKEUAEQ,
-            BamumSupplement::BamumLetterPhaseDashAPaarae => BAMUM_LETTER_PHASE_DASH_A_PAARAE,
-            BamumSupplement::BamumLetterPhaseDashANkaarae => BAMUM_LETTER_PHASE_DASH_A_NKAARAE,
-            BamumSupplement::BamumLetterPhaseDashAUnknown => BAMUM_LETTER_PHASE_DASH_A_UNKNOWN,
-            BamumSupplement::BamumLetterPhaseDashANggen => BAMUM_LETTER_PHASE_DASH_A_NGGEN,
-            BamumSupplement::BamumLetterPhaseDashAMaesi => BAMUM_LETTER_PHASE_DASH_A_MAESI,
-            BamumSupplement::BamumLetterPhaseDashANjam => BAMUM_LETTER_PHASE_DASH_A_NJAM,
-            BamumSupplement::BamumLetterPhaseDashAMbanyi => BAMUM_LETTER_PHASE_DASH_A_MBANYI,
-            BamumSupplement::BamumLetterPhaseDashANyet => BAMUM_LETTER_PHASE_DASH_A_NYET,
-            BamumSupplement::BamumLetterPhaseDashATeuaen => BAMUM_LETTER_PHASE_DASH_A_TEUAEN,
-            BamumSupplement::BamumLetterPhaseDashASot => BAMUM_LETTER_PHASE_DASH_A_SOT,
-            BamumSupplement::BamumLetterPhaseDashAPaam => BAMUM_LETTER_PHASE_DASH_A_PAAM,
-            BamumSupplement::BamumLetterPhaseDashANshiee => BAMUM_LETTER_PHASE_DASH_A_NSHIEE,
-            BamumSupplement::BamumLetterPhaseDashAMaem => BAMUM_LETTER_PHASE_DASH_A_MAEM,
-            BamumSupplement::BamumLetterPhaseDashANyi => BAMUM_LETTER_PHASE_DASH_A_NYI,
-            BamumSupplement::BamumLetterPhaseDashAKaq => BAMUM_LETTER_PHASE_DASH_A_KAQ,
-            BamumSupplement::BamumLetterPhaseDashANsha => BAMUM_LETTER_PHASE_DASH_A_NSHA,
-            BamumSupplement::BamumLetterPhaseDashAVee => BAMUM_LETTER_PHASE_DASH_A_VEE,
-            BamumSupplement::BamumLetterPhaseDashALu => BAMUM_LETTER_PHASE_DASH_A_LU,
-            BamumSupplement::BamumLetterPhaseDashANen => BAMUM_LETTER_PHASE_DASH_A_NEN,
-            BamumSupplement::BamumLetterPhaseDashANaq => BAMUM_LETTER_PHASE_DASH_A_NAQ,
-            BamumSupplement::BamumLetterPhaseDashAMbaq => BAMUM_LETTER_PHASE_DASH_A_MBAQ,
-            BamumSupplement::BamumLetterPhaseDashBNshuet => BAMUM_LETTER_PHASE_DASH_B_NSHUET,
-            BamumSupplement::BamumLetterPhaseDashBTuMaemgbiee => BAMUM_LETTER_PHASE_DASH_B_TU_MAEMGBIEE,
-            BamumSupplement::BamumLetterPhaseDashBSiee => BAMUM_LETTER_PHASE_DASH_B_SIEE,
-            BamumSupplement::BamumLetterPhaseDashBSetTu => BAMUM_LETTER_PHASE_DASH_B_SET_TU,
-            BamumSupplement::BamumLetterPhaseDashBLomNteum => BAMUM_LETTER_PHASE_DASH_B_LOM_NTEUM,
-            BamumSupplement::BamumLetterPhaseDashBMbaMaelee => BAMUM_LETTER_PHASE_DASH_B_MBA_MAELEE,
-            BamumSupplement::BamumLetterPhaseDashBKieem => BAMUM_LETTER_PHASE_DASH_B_KIEEM,
-            BamumSupplement::BamumLetterPhaseDashBYeurae => BAMUM_LETTER_PHASE_DASH_B_YEURAE,
-            BamumSupplement::BamumLetterPhaseDashBMbaarae => BAMUM_LETTER_PHASE_DASH_B_MBAARAE,
-            BamumSupplement::BamumLetterPhaseDashBKam => BAMUM_LETTER_PHASE_DASH_B_KAM,
-            BamumSupplement::BamumLetterPhaseDashBPeeshi => BAMUM_LETTER_PHASE_DASH_B_PEESHI,
-            BamumSupplement::BamumLetterPhaseDashBYafuLeeraewa => BAMUM_LETTER_PHASE_DASH_B_YAFU_LEERAEWA,
-            BamumSupplement::BamumLetterPhaseDashBLamNshutNyam => BAMUM_LETTER_PHASE_DASH_B_LAM_NSHUT_NYAM,
-            BamumSupplement::BamumLetterPhaseDashBNtieeSheuoq => BAMUM_LETTER_PHASE_DASH_B_NTIEE_SHEUOQ,
-            BamumSupplement::BamumLetterPhaseDashBNduNjaa => BAMUM_LETTER_PHASE_DASH_B_NDU_NJAA,
-            BamumSupplement::BamumLetterPhaseDashBGheugheuaem => BAMUM_LETTER_PHASE_DASH_B_GHEUGHEUAEM,
-            BamumSupplement::BamumLetterPhaseDashBPit => BAMUM_LETTER_PHASE_DASH_B_PIT,
-            BamumSupplement::BamumLetterPhaseDashBTuNsiee => BAMUM_LETTER_PHASE_DASH_B_TU_NSIEE,
-            BamumSupplement::BamumLetterPhaseDashBShetNjaq => BAMUM_LETTER_PHASE_DASH_B_SHET_NJAQ,
-            BamumSupplement::BamumLetterPhaseDashBSheuaeqtu => BAMUM_LETTER_PHASE_DASH_B_SHEUAEQTU,
-            BamumSupplement::BamumLetterPhaseDashBMfonTeuaeq => BAMUM_LETTER_PHASE_DASH_B_MFON_TEUAEQ,
-            BamumSupplement::BamumLetterPhaseDashBMbitMbaaket => BAMUM_LETTER_PHASE_DASH_B_MBIT_MBAAKET,
-            BamumSupplement::BamumLetterPhaseDashBNyiNteum => BAMUM_LETTER_PHASE_DASH_B_NYI_NTEUM,
-            BamumSupplement::BamumLetterPhaseDashBKeupuq => BAMUM_LETTER_PHASE_DASH_B_KEUPUQ,
-            BamumSupplement::BamumLetterPhaseDashBGheughen => BAMUM_LETTER_PHASE_DASH_B_GHEUGHEN,
-            BamumSupplement::BamumLetterPhaseDashBKeuyeux => BAMUM_LETTER_PHASE_DASH_B_KEUYEUX,
-            BamumSupplement::BamumLetterPhaseDashBLaanae => BAMUM_LETTER_PHASE_DASH_B_LAANAE,
-            BamumSupplement::BamumLetterPhaseDashBParum => BAMUM_LETTER_PHASE_DASH_B_PARUM,
-            BamumSupplement::BamumLetterPhaseDashBVeum => BAMUM_LETTER_PHASE_DASH_B_VEUM,
-            BamumSupplement::BamumLetterPhaseDashBNgkindiMvop => BAMUM_LETTER_PHASE_DASH_B_NGKINDI_MVOP,
-            BamumSupplement::BamumLetterPhaseDashBNggeuMbu => BAMUM_LETTER_PHASE_DASH_B_NGGEU_MBU,
-            BamumSupplement::BamumLetterPhaseDashBWuaet => BAMUM_LETTER_PHASE_DASH_B_WUAET,
-            BamumSupplement::BamumLetterPhaseDashBSakeuae => BAMUM_LETTER_PHASE_DASH_B_SAKEUAE,
-            BamumSupplement::BamumLetterPhaseDashBTaam => BAMUM_LETTER_PHASE_DASH_B_TAAM,
-            BamumSupplement::BamumLetterPhaseDashBMeuq => BAMUM_LETTER_PHASE_DASH_B_MEUQ,
-            BamumSupplement::BamumLetterPhaseDashBNgguoq => BAMUM_LETTER_PHASE_DASH_B_NGGUOQ,
-            BamumSupplement::BamumLetterPhaseDashBNgguoqLarge => BAMUM_LETTER_PHASE_DASH_B_NGGUOQ_LARGE,
-            BamumSupplement::BamumLetterPhaseDashBMfiyaq => BAMUM_LETTER_PHASE_DASH_B_MFIYAQ,
-            BamumSupplement::BamumLetterPhaseDashBSue => BAMUM_LETTER_PHASE_DASH_B_SUE,
-            BamumSupplement::BamumLetterPhaseDashBMbeuri => BAMUM_LETTER_PHASE_DASH_B_MBEURI,
-            BamumSupplement::BamumLetterPhaseDashBMontieen => BAMUM_LETTER_PHASE_DASH_B_MONTIEEN,
-            BamumSupplement::BamumLetterPhaseDashBNyaemae => BAMUM_LETTER_PHASE_DASH_B_NYAEMAE,
-            BamumSupplement::BamumLetterPhaseDashBPungaam => BAMUM_LETTER_PHASE_DASH_B_PUNGAAM,
-            BamumSupplement::BamumLetterPhaseDashBMeutNggeet => BAMUM_LETTER_PHASE_DASH_B_MEUT_NGGEET,
-            BamumSupplement::BamumLetterPhaseDashBFeux => BAMUM_LETTER_PHASE_DASH_B_FEUX,
-            BamumSupplement::BamumLetterPhaseDashBMbuoq => BAMUM_LETTER_PHASE_DASH_B_MBUOQ,
-            BamumSupplement::BamumLetterPhaseDashBFee => BAMUM_LETTER_PHASE_DASH_B_FEE,
-            BamumSupplement::BamumLetterPhaseDashBKeuaem => BAMUM_LETTER_PHASE_DASH_B_KEUAEM,
-            BamumSupplement::BamumLetterPhaseDashBMaNjeuaena => BAMUM_LETTER_PHASE_DASH_B_MA_NJEUAENA,
-            BamumSupplement::BamumLetterPhaseDashBMaNjuqa => BAMUM_LETTER_PHASE_DASH_B_MA_NJUQA,
-            BamumSupplement::BamumLetterPhaseDashBLet => BAMUM_LETTER_PHASE_DASH_B_LET,
-            BamumSupplement::BamumLetterPhaseDashBNggaam => BAMUM_LETTER_PHASE_DASH_B_NGGAAM,
-            BamumSupplement::BamumLetterPhaseDashBNsen => BAMUM_LETTER_PHASE_DASH_B_NSEN,
-            BamumSupplement::BamumLetterPhaseDashBMa => BAMUM_LETTER_PHASE_DASH_B_MA,
-            BamumSupplement::BamumLetterPhaseDashBKiq => BAMUM_LETTER_PHASE_DASH_B_KIQ,
-            BamumSupplement::BamumLetterPhaseDashBNgom => BAMUM_LETTER_PHASE_DASH_B_NGOM,
-            BamumSupplement::BamumLetterPhaseDashCNgkueMaemba => BAMUM_LETTER_PHASE_DASH_C_NGKUE_MAEMBA,
-            BamumSupplement::BamumLetterPhaseDashCNza => BAMUM_LETTER_PHASE_DASH_C_NZA,
-            BamumSupplement::BamumLetterPhaseDashCYum => BAMUM_LETTER_PHASE_DASH_C_YUM,
-            BamumSupplement::BamumLetterPhaseDashCWangkuoq => BAMUM_LETTER_PHASE_DASH_C_WANGKUOQ,
-            BamumSupplement::BamumLetterPhaseDashCNggen => BAMUM_LETTER_PHASE_DASH_C_NGGEN,
-            BamumSupplement::BamumLetterPhaseDashCNdeuaeree => BAMUM_LETTER_PHASE_DASH_C_NDEUAEREE,
-            BamumSupplement::BamumLetterPhaseDashCNgkaq => BAMUM_LETTER_PHASE_DASH_C_NGKAQ,
-            BamumSupplement::BamumLetterPhaseDashCGharae => BAMUM_LETTER_PHASE_DASH_C_GHARAE,
-            BamumSupplement::BamumLetterPhaseDashCMbeekeet => BAMUM_LETTER_PHASE_DASH_C_MBEEKEET,
-            BamumSupplement::BamumLetterPhaseDashCGbayi => BAMUM_LETTER_PHASE_DASH_C_GBAYI,
-            BamumSupplement::BamumLetterPhaseDashCNyirMkparaqMeun => BAMUM_LETTER_PHASE_DASH_C_NYIR_MKPARAQ_MEUN,
-            BamumSupplement::BamumLetterPhaseDashCNtuMbit => BAMUM_LETTER_PHASE_DASH_C_NTU_MBIT,
-            BamumSupplement::BamumLetterPhaseDashCMbeum => BAMUM_LETTER_PHASE_DASH_C_MBEUM,
-            BamumSupplement::BamumLetterPhaseDashCPirieen => BAMUM_LETTER_PHASE_DASH_C_PIRIEEN,
-            BamumSupplement::BamumLetterPhaseDashCNdombu => BAMUM_LETTER_PHASE_DASH_C_NDOMBU,
-            BamumSupplement::BamumLetterPhaseDashCMbaaCabbageDashTree => BAMUM_LETTER_PHASE_DASH_C_MBAA_CABBAGE_DASH_TREE,
-            BamumSupplement::BamumLetterPhaseDashCKeusheuaep => BAMUM_LETTER_PHASE_DASH_C_KEUSHEUAEP,
-            BamumSupplement::BamumLetterPhaseDashCGhap => BAMUM_LETTER_PHASE_DASH_C_GHAP,
-            BamumSupplement::BamumLetterPhaseDashCKeukaq => BAMUM_LETTER_PHASE_DASH_C_KEUKAQ,
-            BamumSupplement::BamumLetterPhaseDashCYuMuomae => BAMUM_LETTER_PHASE_DASH_C_YU_MUOMAE,
-            BamumSupplement::BamumLetterPhaseDashCNzeum => BAMUM_LETTER_PHASE_DASH_C_NZEUM,
-            BamumSupplement::BamumLetterPhaseDashCMbue => BAMUM_LETTER_PHASE_DASH_C_MBUE,
-            BamumSupplement::BamumLetterPhaseDashCNseuaen => BAMUM_LETTER_PHASE_DASH_C_NSEUAEN,
-            BamumSupplement::BamumLetterPhaseDashCMbit => BAMUM_LETTER_PHASE_DASH_C_MBIT,
-            BamumSupplement::BamumLetterPhaseDashCYeuq => BAMUM_LETTER_PHASE_DASH_C_YEUQ,
-            BamumSupplement::BamumLetterPhaseDashCKparaq => BAMUM_LETTER_PHASE_DASH_C_KPARAQ,
-            BamumSupplement::BamumLetterPhaseDashCKaa => BAMUM_LETTER_PHASE_DASH_C_KAA,
-            BamumSupplement::BamumLetterPhaseDashCSeux => BAMUM_LETTER_PHASE_DASH_C_SEUX,
-            BamumSupplement::BamumLetterPhaseDashCNdida => BAMUM_LETTER_PHASE_DASH_C_NDIDA,
-            BamumSupplement::BamumLetterPhaseDashCTaashae => BAMUM_LETTER_PHASE_DASH_C_TAASHAE,
-            BamumSupplement::BamumLetterPhaseDashCNjueq => BAMUM_LETTER_PHASE_DASH_C_NJUEQ,
-            BamumSupplement::BamumLetterPhaseDashCTitaYue => BAMUM_LETTER_PHASE_DASH_C_TITA_YUE,
-            BamumSupplement::BamumLetterPhaseDashCSuaet => BAMUM_LETTER_PHASE_DASH_C_SUAET,
-            BamumSupplement::BamumLetterPhaseDashCNgguaenNyam => BAMUM_LETTER_PHASE_DASH_C_NGGUAEN_NYAM,
-            BamumSupplement::BamumLetterPhaseDashCVeux => BAMUM_LETTER_PHASE_DASH_C_VEUX,
-            BamumSupplement::BamumLetterPhaseDashCNansanaq => BAMUM_LETTER_PHASE_DASH_C_NANSANAQ,
-            BamumSupplement::BamumLetterPhaseDashCMaKeuaeri => BAMUM_LETTER_PHASE_DASH_C_MA_KEUAERI,
-            BamumSupplement::BamumLetterPhaseDashCNtaa => BAMUM_LETTER_PHASE_DASH_C_NTAA,
-            BamumSupplement::BamumLetterPhaseDashCNgguon => BAMUM_LETTER_PHASE_DASH_C_NGGUON,
-            BamumSupplement::BamumLetterPhaseDashCLap => BAMUM_LETTER_PHASE_DASH_C_LAP,
-            BamumSupplement::BamumLetterPhaseDashCMbirieen => BAMUM_LETTER_PHASE_DASH_C_MBIRIEEN,
-            BamumSupplement::BamumLetterPhaseDashCMgbasaq => BAMUM_LETTER_PHASE_DASH_C_MGBASAQ,
-            BamumSupplement::BamumLetterPhaseDashCNteungba => BAMUM_LETTER_PHASE_DASH_C_NTEUNGBA,
-            BamumSupplement::BamumLetterPhaseDashCTeuteux => BAMUM_LETTER_PHASE_DASH_C_TEUTEUX,
-            BamumSupplement::BamumLetterPhaseDashCNggum => BAMUM_LETTER_PHASE_DASH_C_NGGUM,
-            BamumSupplement::BamumLetterPhaseDashCFue => BAMUM_LETTER_PHASE_DASH_C_FUE,
-            BamumSupplement::BamumLetterPhaseDashCNdeut => BAMUM_LETTER_PHASE_DASH_C_NDEUT,
-            BamumSupplement::BamumLetterPhaseDashCNsa => BAMUM_LETTER_PHASE_DASH_C_NSA,
-            BamumSupplement::BamumLetterPhaseDashCNshaq => BAMUM_LETTER_PHASE_DASH_C_NSHAQ,
-            BamumSupplement::BamumLetterPhaseDashCBung => BAMUM_LETTER_PHASE_DASH_C_BUNG,
-            BamumSupplement::BamumLetterPhaseDashCVeuaepen => BAMUM_LETTER_PHASE_DASH_C_VEUAEPEN,
-            BamumSupplement::BamumLetterPhaseDashCMberae => BAMUM_LETTER_PHASE_DASH_C_MBERAE,
-            BamumSupplement::BamumLetterPhaseDashCRu => BAMUM_LETTER_PHASE_DASH_C_RU,
-            BamumSupplement::BamumLetterPhaseDashCNjaem => BAMUM_LETTER_PHASE_DASH_C_NJAEM,
-            BamumSupplement::BamumLetterPhaseDashCLam => BAMUM_LETTER_PHASE_DASH_C_LAM,
-            BamumSupplement::BamumLetterPhaseDashCTituaep => BAMUM_LETTER_PHASE_DASH_C_TITUAEP,
-            BamumSupplement::BamumLetterPhaseDashCNsuotNgom => BAMUM_LETTER_PHASE_DASH_C_NSUOT_NGOM,
-            BamumSupplement::BamumLetterPhaseDashCNjeeee => BAMUM_LETTER_PHASE_DASH_C_NJEEEE,
-            BamumSupplement::BamumLetterPhaseDashCKet => BAMUM_LETTER_PHASE_DASH_C_KET,
-            BamumSupplement::BamumLetterPhaseDashCNggu => BAMUM_LETTER_PHASE_DASH_C_NGGU,
-            BamumSupplement::BamumLetterPhaseDashCMaesi => BAMUM_LETTER_PHASE_DASH_C_MAESI,
-            BamumSupplement::BamumLetterPhaseDashCMbuaem => BAMUM_LETTER_PHASE_DASH_C_MBUAEM,
-            BamumSupplement::BamumLetterPhaseDashCLu => BAMUM_LETTER_PHASE_DASH_C_LU,
-            BamumSupplement::BamumLetterPhaseDashCKut => BAMUM_LETTER_PHASE_DASH_C_KUT,
-            BamumSupplement::BamumLetterPhaseDashCNjam => BAMUM_LETTER_PHASE_DASH_C_NJAM,
-            BamumSupplement::BamumLetterPhaseDashCNgom => BAMUM_LETTER_PHASE_DASH_C_NGOM,
-            BamumSupplement::BamumLetterPhaseDashCWup => BAMUM_LETTER_PHASE_DASH_C_WUP,
-            BamumSupplement::BamumLetterPhaseDashCNggueet => BAMUM_LETTER_PHASE_DASH_C_NGGUEET,
-            BamumSupplement::BamumLetterPhaseDashCNsom => BAMUM_LETTER_PHASE_DASH_C_NSOM,
-            BamumSupplement::BamumLetterPhaseDashCNten => BAMUM_LETTER_PHASE_DASH_C_NTEN,
-            BamumSupplement::BamumLetterPhaseDashCKuopNkaarae => BAMUM_LETTER_PHASE_DASH_C_KUOP_NKAARAE,
-            BamumSupplement::BamumLetterPhaseDashCNsun => BAMUM_LETTER_PHASE_DASH_C_NSUN,
-            BamumSupplement::BamumLetterPhaseDashCNdam => BAMUM_LETTER_PHASE_DASH_C_NDAM,
-            BamumSupplement::BamumLetterPhaseDashCMaNsiee => BAMUM_LETTER_PHASE_DASH_C_MA_NSIEE,
-            BamumSupplement::BamumLetterPhaseDashCYaa => BAMUM_LETTER_PHASE_DASH_C_YAA,
-            BamumSupplement::BamumLetterPhaseDashCNdap => BAMUM_LETTER_PHASE_DASH_C_NDAP,
-            BamumSupplement::BamumLetterPhaseDashCShueq => BAMUM_LETTER_PHASE_DASH_C_SHUEQ,
-            BamumSupplement::BamumLetterPhaseDashCSetfon => BAMUM_LETTER_PHASE_DASH_C_SETFON,
-            BamumSupplement::BamumLetterPhaseDashCMbi => BAMUM_LETTER_PHASE_DASH_C_MBI,
-            BamumSupplement::BamumLetterPhaseDashCMaemba => BAMUM_LETTER_PHASE_DASH_C_MAEMBA,
-            BamumSupplement::BamumLetterPhaseDashCMbanyi => BAMUM_LETTER_PHASE_DASH_C_MBANYI,
-            BamumSupplement::BamumLetterPhaseDashCKeuseux => BAMUM_LETTER_PHASE_DASH_C_KEUSEUX,
-            BamumSupplement::BamumLetterPhaseDashCMbeux => BAMUM_LETTER_PHASE_DASH_C_MBEUX,
-            BamumSupplement::BamumLetterPhaseDashCKeum => BAMUM_LETTER_PHASE_DASH_C_KEUM,
-            BamumSupplement::BamumLetterPhaseDashCMbaaPicket => BAMUM_LETTER_PHASE_DASH_C_MBAA_PICKET,
-            BamumSupplement::BamumLetterPhaseDashCYuwoq => BAMUM_LETTER_PHASE_DASH_C_YUWOQ,
-            BamumSupplement::BamumLetterPhaseDashCNjeux => BAMUM_LETTER_PHASE_DASH_C_NJEUX,
-            BamumSupplement::BamumLetterPhaseDashCMiee => BAMUM_LETTER_PHASE_DASH_C_MIEE,
-            BamumSupplement::BamumLetterPhaseDashCMuae => BAMUM_LETTER_PHASE_DASH_C_MUAE,
-            BamumSupplement::BamumLetterPhaseDashCShiq => BAMUM_LETTER_PHASE_DASH_C_SHIQ,
-            BamumSupplement::BamumLetterPhaseDashCKenLaw => BAMUM_LETTER_PHASE_DASH_C_KEN_LAW,
-            BamumSupplement::BamumLetterPhaseDashCKenFatigue => BAMUM_LETTER_PHASE_DASH_C_KEN_FATIGUE,
-            BamumSupplement::BamumLetterPhaseDashCNgaq => BAMUM_LETTER_PHASE_DASH_C_NGAQ,
-            BamumSupplement::BamumLetterPhaseDashCNaq => BAMUM_LETTER_PHASE_DASH_C_NAQ,
-            BamumSupplement::BamumLetterPhaseDashCLiq => BAMUM_LETTER_PHASE_DASH_C_LIQ,
-            BamumSupplement::BamumLetterPhaseDashCPin => BAMUM_LETTER_PHASE_DASH_C_PIN,
-            BamumSupplement::BamumLetterPhaseDashCPen => BAMUM_LETTER_PHASE_DASH_C_PEN,
-            BamumSupplement::BamumLetterPhaseDashCTet => BAMUM_LETTER_PHASE_DASH_C_TET,
-            BamumSupplement::BamumLetterPhaseDashDMbuo => BAMUM_LETTER_PHASE_DASH_D_MBUO,
-            BamumSupplement::BamumLetterPhaseDashDWap => BAMUM_LETTER_PHASE_DASH_D_WAP,
-            BamumSupplement::BamumLetterPhaseDashDNji => BAMUM_LETTER_PHASE_DASH_D_NJI,
-            BamumSupplement::BamumLetterPhaseDashDMfon => BAMUM_LETTER_PHASE_DASH_D_MFON,
-            BamumSupplement::BamumLetterPhaseDashDNjiee => BAMUM_LETTER_PHASE_DASH_D_NJIEE,
-            BamumSupplement::BamumLetterPhaseDashDLiee => BAMUM_LETTER_PHASE_DASH_D_LIEE,
-            BamumSupplement::BamumLetterPhaseDashDNjeut => BAMUM_LETTER_PHASE_DASH_D_NJEUT,
-            BamumSupplement::BamumLetterPhaseDashDNshee => BAMUM_LETTER_PHASE_DASH_D_NSHEE,
-            BamumSupplement::BamumLetterPhaseDashDNggaamae => BAMUM_LETTER_PHASE_DASH_D_NGGAAMAE,
-            BamumSupplement::BamumLetterPhaseDashDNyam => BAMUM_LETTER_PHASE_DASH_D_NYAM,
-            BamumSupplement::BamumLetterPhaseDashDWuaen => BAMUM_LETTER_PHASE_DASH_D_WUAEN,
-            BamumSupplement::BamumLetterPhaseDashDNgkun => BAMUM_LETTER_PHASE_DASH_D_NGKUN,
-            BamumSupplement::BamumLetterPhaseDashDShee => BAMUM_LETTER_PHASE_DASH_D_SHEE,
-            BamumSupplement::BamumLetterPhaseDashDNgkap => BAMUM_LETTER_PHASE_DASH_D_NGKAP,
-            BamumSupplement::BamumLetterPhaseDashDKeuaetmeun => BAMUM_LETTER_PHASE_DASH_D_KEUAETMEUN,
-            BamumSupplement::BamumLetterPhaseDashDTeut => BAMUM_LETTER_PHASE_DASH_D_TEUT,
-            BamumSupplement::BamumLetterPhaseDashDSheuae => BAMUM_LETTER_PHASE_DASH_D_SHEUAE,
-            BamumSupplement::BamumLetterPhaseDashDNjap => BAMUM_LETTER_PHASE_DASH_D_NJAP,
-            BamumSupplement::BamumLetterPhaseDashDSue => BAMUM_LETTER_PHASE_DASH_D_SUE,
-            BamumSupplement::BamumLetterPhaseDashDKet => BAMUM_LETTER_PHASE_DASH_D_KET,
-            BamumSupplement::BamumLetterPhaseDashDYaemmae => BAMUM_LETTER_PHASE_DASH_D_YAEMMAE,
-            BamumSupplement::BamumLetterPhaseDashDKuom => BAMUM_LETTER_PHASE_DASH_D_KUOM,
-            BamumSupplement::BamumLetterPhaseDashDSap => BAMUM_LETTER_PHASE_DASH_D_SAP,
-            BamumSupplement::BamumLetterPhaseDashDMfeut => BAMUM_LETTER_PHASE_DASH_D_MFEUT,
-            BamumSupplement::BamumLetterPhaseDashDNdeux => BAMUM_LETTER_PHASE_DASH_D_NDEUX,
-            BamumSupplement::BamumLetterPhaseDashDMaleeri => BAMUM_LETTER_PHASE_DASH_D_MALEERI,
-            BamumSupplement::BamumLetterPhaseDashDMeut => BAMUM_LETTER_PHASE_DASH_D_MEUT,
-            BamumSupplement::BamumLetterPhaseDashDSeuaeq => BAMUM_LETTER_PHASE_DASH_D_SEUAEQ,
-            BamumSupplement::BamumLetterPhaseDashDYen => BAMUM_LETTER_PHASE_DASH_D_YEN,
-            BamumSupplement::BamumLetterPhaseDashDNjeuaem => BAMUM_LETTER_PHASE_DASH_D_NJEUAEM,
-            BamumSupplement::BamumLetterPhaseDashDKeuotMbuae => BAMUM_LETTER_PHASE_DASH_D_KEUOT_MBUAE,
-            BamumSupplement::BamumLetterPhaseDashDNgkeuri => BAMUM_LETTER_PHASE_DASH_D_NGKEURI,
-            BamumSupplement::BamumLetterPhaseDashDTu => BAMUM_LETTER_PHASE_DASH_D_TU,
-            BamumSupplement::BamumLetterPhaseDashDGhaa => BAMUM_LETTER_PHASE_DASH_D_GHAA,
-            BamumSupplement::BamumLetterPhaseDashDNgkyee => BAMUM_LETTER_PHASE_DASH_D_NGKYEE,
-            BamumSupplement::BamumLetterPhaseDashDFeufeuaet => BAMUM_LETTER_PHASE_DASH_D_FEUFEUAET,
-            BamumSupplement::BamumLetterPhaseDashDNdee => BAMUM_LETTER_PHASE_DASH_D_NDEE,
-            BamumSupplement::BamumLetterPhaseDashDMgbofum => BAMUM_LETTER_PHASE_DASH_D_MGBOFUM,
-            BamumSupplement::BamumLetterPhaseDashDLeuaep => BAMUM_LETTER_PHASE_DASH_D_LEUAEP,
-            BamumSupplement::BamumLetterPhaseDashDNdon => BAMUM_LETTER_PHASE_DASH_D_NDON,
-            BamumSupplement::BamumLetterPhaseDashDMoni => BAMUM_LETTER_PHASE_DASH_D_MONI,
-            BamumSupplement::BamumLetterPhaseDashDMgbeun => BAMUM_LETTER_PHASE_DASH_D_MGBEUN,
-            BamumSupplement::BamumLetterPhaseDashDPuut => BAMUM_LETTER_PHASE_DASH_D_PUUT,
-            BamumSupplement::BamumLetterPhaseDashDMgbiee => BAMUM_LETTER_PHASE_DASH_D_MGBIEE,
-            BamumSupplement::BamumLetterPhaseDashDMfo => BAMUM_LETTER_PHASE_DASH_D_MFO,
-            BamumSupplement::BamumLetterPhaseDashDLum => BAMUM_LETTER_PHASE_DASH_D_LUM,
-            BamumSupplement::BamumLetterPhaseDashDNsieep => BAMUM_LETTER_PHASE_DASH_D_NSIEEP,
-            BamumSupplement::BamumLetterPhaseDashDMbaa => BAMUM_LETTER_PHASE_DASH_D_MBAA,
-            BamumSupplement::BamumLetterPhaseDashDKwaet => BAMUM_LETTER_PHASE_DASH_D_KWAET,
-            BamumSupplement::BamumLetterPhaseDashDNyet => BAMUM_LETTER_PHASE_DASH_D_NYET,
-            BamumSupplement::BamumLetterPhaseDashDTeuaen => BAMUM_LETTER_PHASE_DASH_D_TEUAEN,
-            BamumSupplement::BamumLetterPhaseDashDSot => BAMUM_LETTER_PHASE_DASH_D_SOT,
-            BamumSupplement::BamumLetterPhaseDashDYuwoq => BAMUM_LETTER_PHASE_DASH_D_YUWOQ,
-            BamumSupplement::BamumLetterPhaseDashDKeum => BAMUM_LETTER_PHASE_DASH_D_KEUM,
-            BamumSupplement::BamumLetterPhaseDashDRaem => BAMUM_LETTER_PHASE_DASH_D_RAEM,
-            BamumSupplement::BamumLetterPhaseDashDTeeee => BAMUM_LETTER_PHASE_DASH_D_TEEEE,
-            BamumSupplement::BamumLetterPhaseDashDNgkeuaeq => BAMUM_LETTER_PHASE_DASH_D_NGKEUAEQ,
-            BamumSupplement::BamumLetterPhaseDashDMfeuae => BAMUM_LETTER_PHASE_DASH_D_MFEUAE,
-            BamumSupplement::BamumLetterPhaseDashDNsieet => BAMUM_LETTER_PHASE_DASH_D_NSIEET,
-            BamumSupplement::BamumLetterPhaseDashDKeup => BAMUM_LETTER_PHASE_DASH_D_KEUP,
-            BamumSupplement::BamumLetterPhaseDashDPip => BAMUM_LETTER_PHASE_DASH_D_PIP,
-            BamumSupplement::BamumLetterPhaseDashDPeutae => BAMUM_LETTER_PHASE_DASH_D_PEUTAE,
-            BamumSupplement::BamumLetterPhaseDashDNyue => BAMUM_LETTER_PHASE_DASH_D_NYUE,
-            BamumSupplement::BamumLetterPhaseDashDLet => BAMUM_LETTER_PHASE_DASH_D_LET,
-            BamumSupplement::BamumLetterPhaseDashDNggaam => BAMUM_LETTER_PHASE_DASH_D_NGGAAM,
-            BamumSupplement::BamumLetterPhaseDashDMfiee => BAMUM_LETTER_PHASE_DASH_D_MFIEE,
-            BamumSupplement::BamumLetterPhaseDashDNggwaen => BAMUM_LETTER_PHASE_DASH_D_NGGWAEN,
-            BamumSupplement::BamumLetterPhaseDashDYuom => BAMUM_LETTER_PHASE_DASH_D_YUOM,
-            BamumSupplement::BamumLetterPhaseDashDPap => BAMUM_LETTER_PHASE_DASH_D_PAP,
-            BamumSupplement::BamumLetterPhaseDashDYuop => BAMUM_LETTER_PHASE_DASH_D_YUOP,
-            BamumSupplement::BamumLetterPhaseDashDNdam => BAMUM_LETTER_PHASE_DASH_D_NDAM,
-            BamumSupplement::BamumLetterPhaseDashDNteum => BAMUM_LETTER_PHASE_DASH_D_NTEUM,
-            BamumSupplement::BamumLetterPhaseDashDSuae => BAMUM_LETTER_PHASE_DASH_D_SUAE,
-            BamumSupplement::BamumLetterPhaseDashDKun => BAMUM_LETTER_PHASE_DASH_D_KUN,
-            BamumSupplement::BamumLetterPhaseDashDNggeux => BAMUM_LETTER_PHASE_DASH_D_NGGEUX,
-            BamumSupplement::BamumLetterPhaseDashDNgkiee => BAMUM_LETTER_PHASE_DASH_D_NGKIEE,
-            BamumSupplement::BamumLetterPhaseDashDTuot => BAMUM_LETTER_PHASE_DASH_D_TUOT,
-            BamumSupplement::BamumLetterPhaseDashDMeun => BAMUM_LETTER_PHASE_DASH_D_MEUN,
-            BamumSupplement::BamumLetterPhaseDashDKuq => BAMUM_LETTER_PHASE_DASH_D_KUQ,
-            BamumSupplement::BamumLetterPhaseDashDNsum => BAMUM_LETTER_PHASE_DASH_D_NSUM,
-            BamumSupplement::BamumLetterPhaseDashDTeun => BAMUM_LETTER_PHASE_DASH_D_TEUN,
-            BamumSupplement::BamumLetterPhaseDashDMaenjet => BAMUM_LETTER_PHASE_DASH_D_MAENJET,
-            BamumSupplement::BamumLetterPhaseDashDNggap => BAMUM_LETTER_PHASE_DASH_D_NGGAP,
-            BamumSupplement::BamumLetterPhaseDashDLeum => BAMUM_LETTER_PHASE_DASH_D_LEUM,
-            BamumSupplement::BamumLetterPhaseDashDNgguom => BAMUM_LETTER_PHASE_DASH_D_NGGUOM,
-            BamumSupplement::BamumLetterPhaseDashDNshut => BAMUM_LETTER_PHASE_DASH_D_NSHUT,
-            BamumSupplement::BamumLetterPhaseDashDNjueq => BAMUM_LETTER_PHASE_DASH_D_NJUEQ,
-            BamumSupplement::BamumLetterPhaseDashDGheuae => BAMUM_LETTER_PHASE_DASH_D_GHEUAE,
-            BamumSupplement::BamumLetterPhaseDashDKu => BAMUM_LETTER_PHASE_DASH_D_KU,
-            BamumSupplement::BamumLetterPhaseDashDRenOld => BAMUM_LETTER_PHASE_DASH_D_REN_OLD,
-            BamumSupplement::BamumLetterPhaseDashDTae => BAMUM_LETTER_PHASE_DASH_D_TAE,
-            BamumSupplement::BamumLetterPhaseDashDToq => BAMUM_LETTER_PHASE_DASH_D_TOQ,
-            BamumSupplement::BamumLetterPhaseDashDNyi => BAMUM_LETTER_PHASE_DASH_D_NYI,
-            BamumSupplement::BamumLetterPhaseDashDRii => BAMUM_LETTER_PHASE_DASH_D_RII,
-            BamumSupplement::BamumLetterPhaseDashDLeeee => BAMUM_LETTER_PHASE_DASH_D_LEEEE,
-            BamumSupplement::BamumLetterPhaseDashDMeeee => BAMUM_LETTER_PHASE_DASH_D_MEEEE,
-            BamumSupplement::BamumLetterPhaseDashDM => BAMUM_LETTER_PHASE_DASH_D_M,
-            BamumSupplement::BamumLetterPhaseDashDSuu => BAMUM_LETTER_PHASE_DASH_D_SUU,
-            BamumSupplement::BamumLetterPhaseDashDMu => BAMUM_LETTER_PHASE_DASH_D_MU,
-            BamumSupplement::BamumLetterPhaseDashDShii => BAMUM_LETTER_PHASE_DASH_D_SHII,
-            BamumSupplement::BamumLetterPhaseDashDSheux => BAMUM_LETTER_PHASE_DASH_D_SHEUX,
-            BamumSupplement::BamumLetterPhaseDashDKyee => BAMUM_LETTER_PHASE_DASH_D_KYEE,
-            BamumSupplement::BamumLetterPhaseDashDNu => BAMUM_LETTER_PHASE_DASH_D_NU,
-            BamumSupplement::BamumLetterPhaseDashDShu => BAMUM_LETTER_PHASE_DASH_D_SHU,
-            BamumSupplement::BamumLetterPhaseDashDNtee => BAMUM_LETTER_PHASE_DASH_D_NTEE,
-            BamumSupplement::BamumLetterPhaseDashDPee => BAMUM_LETTER_PHASE_DASH_D_PEE,
-            BamumSupplement::BamumLetterPhaseDashDNi => BAMUM_LETTER_PHASE_DASH_D_NI,
-            BamumSupplement::BamumLetterPhaseDashDShoq => BAMUM_LETTER_PHASE_DASH_D_SHOQ,
-            BamumSupplement::BamumLetterPhaseDashDPuq => BAMUM_LETTER_PHASE_DASH_D_PUQ,
-            BamumSupplement::BamumLetterPhaseDashDMvop => BAMUM_LETTER_PHASE_DASH_D_MVOP,
-            BamumSupplement::BamumLetterPhaseDashDLoq => BAMUM_LETTER_PHASE_DASH_D_LOQ,
-            BamumSupplement::BamumLetterPhaseDashDRenMuch => BAMUM_LETTER_PHASE_DASH_D_REN_MUCH,
-            BamumSupplement::BamumLetterPhaseDashDTi => BAMUM_LETTER_PHASE_DASH_D_TI,
-            BamumSupplement::BamumLetterPhaseDashDNtuu => BAMUM_LETTER_PHASE_DASH_D_NTUU,
-            BamumSupplement::BamumLetterPhaseDashDMbaaSeven => BAMUM_LETTER_PHASE_DASH_D_MBAA_SEVEN,
-            BamumSupplement::BamumLetterPhaseDashDSaq => BAMUM_LETTER_PHASE_DASH_D_SAQ,
-            BamumSupplement::BamumLetterPhaseDashDFaa => BAMUM_LETTER_PHASE_DASH_D_FAA,
-            BamumSupplement::BamumLetterPhaseDashENdap => BAMUM_LETTER_PHASE_DASH_E_NDAP,
-            BamumSupplement::BamumLetterPhaseDashEToon => BAMUM_LETTER_PHASE_DASH_E_TOON,
-            BamumSupplement::BamumLetterPhaseDashEMbeum => BAMUM_LETTER_PHASE_DASH_E_MBEUM,
-            BamumSupplement::BamumLetterPhaseDashELap => BAMUM_LETTER_PHASE_DASH_E_LAP,
-            BamumSupplement::BamumLetterPhaseDashEVom => BAMUM_LETTER_PHASE_DASH_E_VOM,
-            BamumSupplement::BamumLetterPhaseDashELoon => BAMUM_LETTER_PHASE_DASH_E_LOON,
-            BamumSupplement::BamumLetterPhaseDashEPaa => BAMUM_LETTER_PHASE_DASH_E_PAA,
-            BamumSupplement::BamumLetterPhaseDashESom => BAMUM_LETTER_PHASE_DASH_E_SOM,
-            BamumSupplement::BamumLetterPhaseDashERaq => BAMUM_LETTER_PHASE_DASH_E_RAQ,
-            BamumSupplement::BamumLetterPhaseDashENshuop => BAMUM_LETTER_PHASE_DASH_E_NSHUOP,
-            BamumSupplement::BamumLetterPhaseDashENdun => BAMUM_LETTER_PHASE_DASH_E_NDUN,
-            BamumSupplement::BamumLetterPhaseDashEPuae => BAMUM_LETTER_PHASE_DASH_E_PUAE,
-            BamumSupplement::BamumLetterPhaseDashETam => BAMUM_LETTER_PHASE_DASH_E_TAM,
-            BamumSupplement::BamumLetterPhaseDashENgka => BAMUM_LETTER_PHASE_DASH_E_NGKA,
-            BamumSupplement::BamumLetterPhaseDashEKpeux => BAMUM_LETTER_PHASE_DASH_E_KPEUX,
-            BamumSupplement::BamumLetterPhaseDashEWuo => BAMUM_LETTER_PHASE_DASH_E_WUO,
-            BamumSupplement::BamumLetterPhaseDashESee => BAMUM_LETTER_PHASE_DASH_E_SEE,
-            BamumSupplement::BamumLetterPhaseDashENggeuaet => BAMUM_LETTER_PHASE_DASH_E_NGGEUAET,
-            BamumSupplement::BamumLetterPhaseDashEPaam => BAMUM_LETTER_PHASE_DASH_E_PAAM,
-            BamumSupplement::BamumLetterPhaseDashEToo => BAMUM_LETTER_PHASE_DASH_E_TOO,
-            BamumSupplement::BamumLetterPhaseDashEKuop => BAMUM_LETTER_PHASE_DASH_E_KUOP,
-            BamumSupplement::BamumLetterPhaseDashELom => BAMUM_LETTER_PHASE_DASH_E_LOM,
-            BamumSupplement::BamumLetterPhaseDashENshiee => BAMUM_LETTER_PHASE_DASH_E_NSHIEE,
-            BamumSupplement::BamumLetterPhaseDashENgop => BAMUM_LETTER_PHASE_DASH_E_NGOP,
-            BamumSupplement::BamumLetterPhaseDashEMaem => BAMUM_LETTER_PHASE_DASH_E_MAEM,
-            BamumSupplement::BamumLetterPhaseDashENgkeux => BAMUM_LETTER_PHASE_DASH_E_NGKEUX,
-            BamumSupplement::BamumLetterPhaseDashENgoq => BAMUM_LETTER_PHASE_DASH_E_NGOQ,
-            BamumSupplement::BamumLetterPhaseDashENshue => BAMUM_LETTER_PHASE_DASH_E_NSHUE,
-            BamumSupplement::BamumLetterPhaseDashERimgba => BAMUM_LETTER_PHASE_DASH_E_RIMGBA,
-            BamumSupplement::BamumLetterPhaseDashENjeux => BAMUM_LETTER_PHASE_DASH_E_NJEUX,
-            BamumSupplement::BamumLetterPhaseDashEPeem => BAMUM_LETTER_PHASE_DASH_E_PEEM,
-            BamumSupplement::BamumLetterPhaseDashESaa => BAMUM_LETTER_PHASE_DASH_E_SAA,
-            BamumSupplement::BamumLetterPhaseDashENggurae => BAMUM_LETTER_PHASE_DASH_E_NGGURAE,
-            BamumSupplement::BamumLetterPhaseDashEMgba => BAMUM_LETTER_PHASE_DASH_E_MGBA,
-            BamumSupplement::BamumLetterPhaseDashEGheux => BAMUM_LETTER_PHASE_DASH_E_GHEUX,
-            BamumSupplement::BamumLetterPhaseDashENgkeuaem => BAMUM_LETTER_PHASE_DASH_E_NGKEUAEM,
-            BamumSupplement::BamumLetterPhaseDashENjaemli => BAMUM_LETTER_PHASE_DASH_E_NJAEMLI,
-            BamumSupplement::BamumLetterPhaseDashEMap => BAMUM_LETTER_PHASE_DASH_E_MAP,
-            BamumSupplement::BamumLetterPhaseDashELoot => BAMUM_LETTER_PHASE_DASH_E_LOOT,
-            BamumSupplement::BamumLetterPhaseDashENggeeee => BAMUM_LETTER_PHASE_DASH_E_NGGEEEE,
-            BamumSupplement::BamumLetterPhaseDashENdiq => BAMUM_LETTER_PHASE_DASH_E_NDIQ,
-            BamumSupplement::BamumLetterPhaseDashETaenNteum => BAMUM_LETTER_PHASE_DASH_E_TAEN_NTEUM,
-            BamumSupplement::BamumLetterPhaseDashESet => BAMUM_LETTER_PHASE_DASH_E_SET,
-            BamumSupplement::BamumLetterPhaseDashEPum => BAMUM_LETTER_PHASE_DASH_E_PUM,
-            BamumSupplement::BamumLetterPhaseDashENdaaSoftness => BAMUM_LETTER_PHASE_DASH_E_NDAA_SOFTNESS,
-            BamumSupplement::BamumLetterPhaseDashENgguaeshaeNyam => BAMUM_LETTER_PHASE_DASH_E_NGGUAESHAE_NYAM,
-            BamumSupplement::BamumLetterPhaseDashEYiee => BAMUM_LETTER_PHASE_DASH_E_YIEE,
-            BamumSupplement::BamumLetterPhaseDashEGheun => BAMUM_LETTER_PHASE_DASH_E_GHEUN,
-            BamumSupplement::BamumLetterPhaseDashETuae => BAMUM_LETTER_PHASE_DASH_E_TUAE,
-            BamumSupplement::BamumLetterPhaseDashEYeuae => BAMUM_LETTER_PHASE_DASH_E_YEUAE,
-            BamumSupplement::BamumLetterPhaseDashEPo => BAMUM_LETTER_PHASE_DASH_E_PO,
-            BamumSupplement::BamumLetterPhaseDashETumae => BAMUM_LETTER_PHASE_DASH_E_TUMAE,
-            BamumSupplement::BamumLetterPhaseDashEKeuae => BAMUM_LETTER_PHASE_DASH_E_KEUAE,
-            BamumSupplement::BamumLetterPhaseDashESuaen => BAMUM_LETTER_PHASE_DASH_E_SUAEN,
-            BamumSupplement::BamumLetterPhaseDashETeuaeq => BAMUM_LETTER_PHASE_DASH_E_TEUAEQ,
-            BamumSupplement::BamumLetterPhaseDashEVeuae => BAMUM_LETTER_PHASE_DASH_E_VEUAE,
-            BamumSupplement::BamumLetterPhaseDashEWeux => BAMUM_LETTER_PHASE_DASH_E_WEUX,
-            BamumSupplement::BamumLetterPhaseDashELaam => BAMUM_LETTER_PHASE_DASH_E_LAAM,
-            BamumSupplement::BamumLetterPhaseDashEPu => BAMUM_LETTER_PHASE_DASH_E_PU,
-            BamumSupplement::BamumLetterPhaseDashETaaq => BAMUM_LETTER_PHASE_DASH_E_TAAQ,
-            BamumSupplement::BamumLetterPhaseDashEGhaamae => BAMUM_LETTER_PHASE_DASH_E_GHAAMAE,
-            BamumSupplement::BamumLetterPhaseDashENgeureut => BAMUM_LETTER_PHASE_DASH_E_NGEUREUT,
-            BamumSupplement::BamumLetterPhaseDashESheuaeq => BAMUM_LETTER_PHASE_DASH_E_SHEUAEQ,
-            BamumSupplement::BamumLetterPhaseDashEMgben => BAMUM_LETTER_PHASE_DASH_E_MGBEN,
-            BamumSupplement::BamumLetterPhaseDashEMbee => BAMUM_LETTER_PHASE_DASH_E_MBEE,
-            BamumSupplement::BamumLetterPhaseDashENzaq => BAMUM_LETTER_PHASE_DASH_E_NZAQ,
-            BamumSupplement::BamumLetterPhaseDashENkom => BAMUM_LETTER_PHASE_DASH_E_NKOM,
-            BamumSupplement::BamumLetterPhaseDashEGbet => BAMUM_LETTER_PHASE_DASH_E_GBET,
-            BamumSupplement::BamumLetterPhaseDashETum => BAMUM_LETTER_PHASE_DASH_E_TUM,
-            BamumSupplement::BamumLetterPhaseDashEKuet => BAMUM_LETTER_PHASE_DASH_E_KUET,
-            BamumSupplement::BamumLetterPhaseDashEYap => BAMUM_LETTER_PHASE_DASH_E_YAP,
-            BamumSupplement::BamumLetterPhaseDashENyiCleaver => BAMUM_LETTER_PHASE_DASH_E_NYI_CLEAVER,
-            BamumSupplement::BamumLetterPhaseDashEYit => BAMUM_LETTER_PHASE_DASH_E_YIT,
-            BamumSupplement::BamumLetterPhaseDashEMfeuq => BAMUM_LETTER_PHASE_DASH_E_MFEUQ,
-            BamumSupplement::BamumLetterPhaseDashENdiaq => BAMUM_LETTER_PHASE_DASH_E_NDIAQ,
-            BamumSupplement::BamumLetterPhaseDashEPieeq => BAMUM_LETTER_PHASE_DASH_E_PIEEQ,
-            BamumSupplement::BamumLetterPhaseDashEYueq => BAMUM_LETTER_PHASE_DASH_E_YUEQ,
-            BamumSupplement::BamumLetterPhaseDashELeuaem => BAMUM_LETTER_PHASE_DASH_E_LEUAEM,
-            BamumSupplement::BamumLetterPhaseDashEFue => BAMUM_LETTER_PHASE_DASH_E_FUE,
-            BamumSupplement::BamumLetterPhaseDashEGbeux => BAMUM_LETTER_PHASE_DASH_E_GBEUX,
-            BamumSupplement::BamumLetterPhaseDashENgkup => BAMUM_LETTER_PHASE_DASH_E_NGKUP,
-            BamumSupplement::BamumLetterPhaseDashEKet => BAMUM_LETTER_PHASE_DASH_E_KET,
-            BamumSupplement::BamumLetterPhaseDashEMae => BAMUM_LETTER_PHASE_DASH_E_MAE,
-            BamumSupplement::BamumLetterPhaseDashENgkaami => BAMUM_LETTER_PHASE_DASH_E_NGKAAMI,
-            BamumSupplement::BamumLetterPhaseDashEGhet => BAMUM_LETTER_PHASE_DASH_E_GHET,
-            BamumSupplement::BamumLetterPhaseDashEFa => BAMUM_LETTER_PHASE_DASH_E_FA,
-            BamumSupplement::BamumLetterPhaseDashENtum => BAMUM_LETTER_PHASE_DASH_E_NTUM,
-            BamumSupplement::BamumLetterPhaseDashEPeut => BAMUM_LETTER_PHASE_DASH_E_PEUT,
-            BamumSupplement::BamumLetterPhaseDashEYeum => BAMUM_LETTER_PHASE_DASH_E_YEUM,
-            BamumSupplement::BamumLetterPhaseDashENggeuae => BAMUM_LETTER_PHASE_DASH_E_NGGEUAE,
-            BamumSupplement::BamumLetterPhaseDashENyiBetween => BAMUM_LETTER_PHASE_DASH_E_NYI_BETWEEN,
-            BamumSupplement::BamumLetterPhaseDashENzuq => BAMUM_LETTER_PHASE_DASH_E_NZUQ,
-            BamumSupplement::BamumLetterPhaseDashEPoon => BAMUM_LETTER_PHASE_DASH_E_POON,
-            BamumSupplement::BamumLetterPhaseDashEMiee => BAMUM_LETTER_PHASE_DASH_E_MIEE,
-            BamumSupplement::BamumLetterPhaseDashEFuet => BAMUM_LETTER_PHASE_DASH_E_FUET,
-            BamumSupplement::BamumLetterPhaseDashENae => BAMUM_LETTER_PHASE_DASH_E_NAE,
-            BamumSupplement::BamumLetterPhaseDashEMuae => BAMUM_LETTER_PHASE_DASH_E_MUAE,
-            BamumSupplement::BamumLetterPhaseDashEGheuae => BAMUM_LETTER_PHASE_DASH_E_GHEUAE,
-            BamumSupplement::BamumLetterPhaseDashEFuI => BAMUM_LETTER_PHASE_DASH_E_FU_I,
-            BamumSupplement::BamumLetterPhaseDashEMvi => BAMUM_LETTER_PHASE_DASH_E_MVI,
-            BamumSupplement::BamumLetterPhaseDashEPuaq => BAMUM_LETTER_PHASE_DASH_E_PUAQ,
-            BamumSupplement::BamumLetterPhaseDashENgkum => BAMUM_LETTER_PHASE_DASH_E_NGKUM,
-            BamumSupplement::BamumLetterPhaseDashEKut => BAMUM_LETTER_PHASE_DASH_E_KUT,
-            BamumSupplement::BamumLetterPhaseDashEPiet => BAMUM_LETTER_PHASE_DASH_E_PIET,
-            BamumSupplement::BamumLetterPhaseDashENtap => BAMUM_LETTER_PHASE_DASH_E_NTAP,
-            BamumSupplement::BamumLetterPhaseDashEYeuaet => BAMUM_LETTER_PHASE_DASH_E_YEUAET,
-            BamumSupplement::BamumLetterPhaseDashENggup => BAMUM_LETTER_PHASE_DASH_E_NGGUP,
-            BamumSupplement::BamumLetterPhaseDashEPaPeople => BAMUM_LETTER_PHASE_DASH_E_PA_PEOPLE,
-            BamumSupplement::BamumLetterPhaseDashEFuCall => BAMUM_LETTER_PHASE_DASH_E_FU_CALL,
-            BamumSupplement::BamumLetterPhaseDashEFom => BAMUM_LETTER_PHASE_DASH_E_FOM,
-            BamumSupplement::BamumLetterPhaseDashENjee => BAMUM_LETTER_PHASE_DASH_E_NJEE,
-            BamumSupplement::BamumLetterPhaseDashEA => BAMUM_LETTER_PHASE_DASH_E_A,
-            BamumSupplement::BamumLetterPhaseDashEToq => BAMUM_LETTER_PHASE_DASH_E_TOQ,
-            BamumSupplement::BamumLetterPhaseDashEO => BAMUM_LETTER_PHASE_DASH_E_O,
-            BamumSupplement::BamumLetterPhaseDashEI => BAMUM_LETTER_PHASE_DASH_E_I,
-            BamumSupplement::BamumLetterPhaseDashELaq => BAMUM_LETTER_PHASE_DASH_E_LAQ,
-            BamumSupplement::BamumLetterPhaseDashEPaPlural => BAMUM_LETTER_PHASE_DASH_E_PA_PLURAL,
-            BamumSupplement::BamumLetterPhaseDashETaa => BAMUM_LETTER_PHASE_DASH_E_TAA,
-            BamumSupplement::BamumLetterPhaseDashETaq => BAMUM_LETTER_PHASE_DASH_E_TAQ,
-            BamumSupplement::BamumLetterPhaseDashENdaaMyHouse => BAMUM_LETTER_PHASE_DASH_E_NDAA_MY_HOUSE,
-            BamumSupplement::BamumLetterPhaseDashEShiq => BAMUM_LETTER_PHASE_DASH_E_SHIQ,
-            BamumSupplement::BamumLetterPhaseDashEYeux => BAMUM_LETTER_PHASE_DASH_E_YEUX,
-            BamumSupplement::BamumLetterPhaseDashENguae => BAMUM_LETTER_PHASE_DASH_E_NGUAE,
-            BamumSupplement::BamumLetterPhaseDashEYuaen => BAMUM_LETTER_PHASE_DASH_E_YUAEN,
-            BamumSupplement::BamumLetterPhaseDashEYoqSwimming => BAMUM_LETTER_PHASE_DASH_E_YOQ_SWIMMING,
-            BamumSupplement::BamumLetterPhaseDashEYoqCover => BAMUM_LETTER_PHASE_DASH_E_YOQ_COVER,
-            BamumSupplement::BamumLetterPhaseDashEYuq => BAMUM_LETTER_PHASE_DASH_E_YUQ,
-            BamumSupplement::BamumLetterPhaseDashEYun => BAMUM_LETTER_PHASE_DASH_E_YUN,
-            BamumSupplement::BamumLetterPhaseDashEKeux => BAMUM_LETTER_PHASE_DASH_E_KEUX,
-            BamumSupplement::BamumLetterPhaseDashEPeux => BAMUM_LETTER_PHASE_DASH_E_PEUX,
-            BamumSupplement::BamumLetterPhaseDashENjeeEpoch => BAMUM_LETTER_PHASE_DASH_E_NJEE_EPOCH,
-            BamumSupplement::BamumLetterPhaseDashEPue => BAMUM_LETTER_PHASE_DASH_E_PUE,
-            BamumSupplement::BamumLetterPhaseDashEWue => BAMUM_LETTER_PHASE_DASH_E_WUE,
-            BamumSupplement::BamumLetterPhaseDashEFee => BAMUM_LETTER_PHASE_DASH_E_FEE,
-            BamumSupplement::BamumLetterPhaseDashEVee => BAMUM_LETTER_PHASE_DASH_E_VEE,
-            BamumSupplement::BamumLetterPhaseDashELu => BAMUM_LETTER_PHASE_DASH_E_LU,
-            BamumSupplement::BamumLetterPhaseDashEMi => BAMUM_LETTER_PHASE_DASH_E_MI,
-            BamumSupplement::BamumLetterPhaseDashEReux => BAMUM_LETTER_PHASE_DASH_E_REUX,
-            BamumSupplement::BamumLetterPhaseDashERae => BAMUM_LETTER_PHASE_DASH_E_RAE,
-            BamumSupplement::BamumLetterPhaseDashENguaet => BAMUM_LETTER_PHASE_DASH_E_NGUAET,
-            BamumSupplement::BamumLetterPhaseDashENga => BAMUM_LETTER_PHASE_DASH_E_NGA,
-            BamumSupplement::BamumLetterPhaseDashESho => BAMUM_LETTER_PHASE_DASH_E_SHO,
-            BamumSupplement::BamumLetterPhaseDashEShoq => BAMUM_LETTER_PHASE_DASH_E_SHOQ,
-            BamumSupplement::BamumLetterPhaseDashEFuRemedy => BAMUM_LETTER_PHASE_DASH_E_FU_REMEDY,
-            BamumSupplement::BamumLetterPhaseDashENa => BAMUM_LETTER_PHASE_DASH_E_NA,
-            BamumSupplement::BamumLetterPhaseDashEPi => BAMUM_LETTER_PHASE_DASH_E_PI,
-            BamumSupplement::BamumLetterPhaseDashELoq => BAMUM_LETTER_PHASE_DASH_E_LOQ,
-            BamumSupplement::BamumLetterPhaseDashEKo => BAMUM_LETTER_PHASE_DASH_E_KO,
-            BamumSupplement::BamumLetterPhaseDashEMen => BAMUM_LETTER_PHASE_DASH_E_MEN,
-            BamumSupplement::BamumLetterPhaseDashEMa => BAMUM_LETTER_PHASE_DASH_E_MA,
-            BamumSupplement::BamumLetterPhaseDashEMaq => BAMUM_LETTER_PHASE_DASH_E_MAQ,
-            BamumSupplement::BamumLetterPhaseDashETeu => BAMUM_LETTER_PHASE_DASH_E_TEU,
-            BamumSupplement::BamumLetterPhaseDashEKi => BAMUM_LETTER_PHASE_DASH_E_KI,
-            BamumSupplement::BamumLetterPhaseDashEMon => BAMUM_LETTER_PHASE_DASH_E_MON,
-            BamumSupplement::BamumLetterPhaseDashETen => BAMUM_LETTER_PHASE_DASH_E_TEN,
-            BamumSupplement::BamumLetterPhaseDashEFaq => BAMUM_LETTER_PHASE_DASH_E_FAQ,
-            BamumSupplement::BamumLetterPhaseDashEGhom => BAMUM_LETTER_PHASE_DASH_E_GHOM,
-            BamumSupplement::BamumLetterPhaseDashFKa => BAMUM_LETTER_PHASE_DASH_F_KA,
-            BamumSupplement::BamumLetterPhaseDashFU => BAMUM_LETTER_PHASE_DASH_F_U,
-            BamumSupplement::BamumLetterPhaseDashFKu => BAMUM_LETTER_PHASE_DASH_F_KU,
-            BamumSupplement::BamumLetterPhaseDashFEe => BAMUM_LETTER_PHASE_DASH_F_EE,
-            BamumSupplement::BamumLetterPhaseDashFRee => BAMUM_LETTER_PHASE_DASH_F_REE,
-            BamumSupplement::BamumLetterPhaseDashFTae => BAMUM_LETTER_PHASE_DASH_F_TAE,
-            BamumSupplement::BamumLetterPhaseDashFNyi => BAMUM_LETTER_PHASE_DASH_F_NYI,
-            BamumSupplement::BamumLetterPhaseDashFLa => BAMUM_LETTER_PHASE_DASH_F_LA,
-            BamumSupplement::BamumLetterPhaseDashFRii => BAMUM_LETTER_PHASE_DASH_F_RII,
-            BamumSupplement::BamumLetterPhaseDashFRiee => BAMUM_LETTER_PHASE_DASH_F_RIEE,
-            BamumSupplement::BamumLetterPhaseDashFMeeee => BAMUM_LETTER_PHASE_DASH_F_MEEEE,
-            BamumSupplement::BamumLetterPhaseDashFTaa => BAMUM_LETTER_PHASE_DASH_F_TAA,
-            BamumSupplement::BamumLetterPhaseDashFNdaa => BAMUM_LETTER_PHASE_DASH_F_NDAA,
-            BamumSupplement::BamumLetterPhaseDashFNjaem => BAMUM_LETTER_PHASE_DASH_F_NJAEM,
-            BamumSupplement::BamumLetterPhaseDashFM => BAMUM_LETTER_PHASE_DASH_F_M,
-            BamumSupplement::BamumLetterPhaseDashFSuu => BAMUM_LETTER_PHASE_DASH_F_SUU,
-            BamumSupplement::BamumLetterPhaseDashFShii => BAMUM_LETTER_PHASE_DASH_F_SHII,
-            BamumSupplement::BamumLetterPhaseDashFSi => BAMUM_LETTER_PHASE_DASH_F_SI,
-            BamumSupplement::BamumLetterPhaseDashFSeux => BAMUM_LETTER_PHASE_DASH_F_SEUX,
-            BamumSupplement::BamumLetterPhaseDashFKyee => BAMUM_LETTER_PHASE_DASH_F_KYEE,
-            BamumSupplement::BamumLetterPhaseDashFKet => BAMUM_LETTER_PHASE_DASH_F_KET,
-            BamumSupplement::BamumLetterPhaseDashFNuae => BAMUM_LETTER_PHASE_DASH_F_NUAE,
-            BamumSupplement::BamumLetterPhaseDashFNu => BAMUM_LETTER_PHASE_DASH_F_NU,
-            BamumSupplement::BamumLetterPhaseDashFNjuae => BAMUM_LETTER_PHASE_DASH_F_NJUAE,
-            BamumSupplement::BamumLetterPhaseDashFYoq => BAMUM_LETTER_PHASE_DASH_F_YOQ,
-            BamumSupplement::BamumLetterPhaseDashFShu => BAMUM_LETTER_PHASE_DASH_F_SHU,
-            BamumSupplement::BamumLetterPhaseDashFYa => BAMUM_LETTER_PHASE_DASH_F_YA,
-            BamumSupplement::BamumLetterPhaseDashFNsha => BAMUM_LETTER_PHASE_DASH_F_NSHA,
-            BamumSupplement::BamumLetterPhaseDashFPeux => BAMUM_LETTER_PHASE_DASH_F_PEUX,
-            BamumSupplement::BamumLetterPhaseDashFNtee => BAMUM_LETTER_PHASE_DASH_F_NTEE,
-            BamumSupplement::BamumLetterPhaseDashFWue => BAMUM_LETTER_PHASE_DASH_F_WUE,
-            BamumSupplement::BamumLetterPhaseDashFPee => BAMUM_LETTER_PHASE_DASH_F_PEE,
-            BamumSupplement::BamumLetterPhaseDashFRu => BAMUM_LETTER_PHASE_DASH_F_RU,
-            BamumSupplement::BamumLetterPhaseDashFNi => BAMUM_LETTER_PHASE_DASH_F_NI,
-            BamumSupplement::BamumLetterPhaseDashFReux => BAMUM_LETTER_PHASE_DASH_F_REUX,
-            BamumSupplement::BamumLetterPhaseDashFKen => BAMUM_LETTER_PHASE_DASH_F_KEN,
-            BamumSupplement::BamumLetterPhaseDashFNgkwaen => BAMUM_LETTER_PHASE_DASH_F_NGKWAEN,
-            BamumSupplement::BamumLetterPhaseDashFNgga => BAMUM_LETTER_PHASE_DASH_F_NGGA,
-            BamumSupplement::BamumLetterPhaseDashFSho => BAMUM_LETTER_PHASE_DASH_F_SHO,
-            BamumSupplement::BamumLetterPhaseDashFPuae => BAMUM_LETTER_PHASE_DASH_F_PUAE,
-            BamumSupplement::BamumLetterPhaseDashFFom => BAMUM_LETTER_PHASE_DASH_F_FOM,
-            BamumSupplement::BamumLetterPhaseDashFWa => BAMUM_LETTER_PHASE_DASH_F_WA,
-            BamumSupplement::BamumLetterPhaseDashFLi => BAMUM_LETTER_PHASE_DASH_F_LI,
-            BamumSupplement::BamumLetterPhaseDashFLoq => BAMUM_LETTER_PHASE_DASH_F_LOQ,
-            BamumSupplement::BamumLetterPhaseDashFKo => BAMUM_LETTER_PHASE_DASH_F_KO,
-            BamumSupplement::BamumLetterPhaseDashFMben => BAMUM_LETTER_PHASE_DASH_F_MBEN,
-            BamumSupplement::BamumLetterPhaseDashFRen => BAMUM_LETTER_PHASE_DASH_F_REN,
-            BamumSupplement::BamumLetterPhaseDashFMa => BAMUM_LETTER_PHASE_DASH_F_MA,
-            BamumSupplement::BamumLetterPhaseDashFMo => BAMUM_LETTER_PHASE_DASH_F_MO,
-            BamumSupplement::BamumLetterPhaseDashFMbaa => BAMUM_LETTER_PHASE_DASH_F_MBAA,
-            BamumSupplement::BamumLetterPhaseDashFTet => BAMUM_LETTER_PHASE_DASH_F_TET,
-            BamumSupplement::BamumLetterPhaseDashFKpa => BAMUM_LETTER_PHASE_DASH_F_KPA,
-            BamumSupplement::BamumLetterPhaseDashFSamba => BAMUM_LETTER_PHASE_DASH_F_SAMBA,
-            BamumSupplement::BamumLetterPhaseDashFVueq => BAMUM_LETTER_PHASE_DASH_F_VUEQ,
+            BamumSupplement::BamumLetterPhaseDashANgkueMfon => '𖠀',
+            BamumSupplement::BamumLetterPhaseDashAGbieeFon => '𖠁',
+            BamumSupplement::BamumLetterPhaseDashAPonMfonPipaemgbiee => '𖠂',
+            BamumSupplement::BamumLetterPhaseDashAPonMfonPipaemba => '𖠃',
+            BamumSupplement::BamumLetterPhaseDashANaaMfon => '𖠄',
+            BamumSupplement::BamumLetterPhaseDashAShuenshuet => '𖠅',
+            BamumSupplement::BamumLetterPhaseDashATitaMfon => '𖠆',
+            BamumSupplement::BamumLetterPhaseDashANzaMfon => '𖠇',
+            BamumSupplement::BamumLetterPhaseDashAShindaPaNji => '𖠈',
+            BamumSupplement::BamumLetterPhaseDashAPonPaNjiPipaemgbiee => '𖠉',
+            BamumSupplement::BamumLetterPhaseDashAPonPaNjiPipaemba => '𖠊',
+            BamumSupplement::BamumLetterPhaseDashAMaembgbiee => '𖠋',
+            BamumSupplement::BamumLetterPhaseDashATuMaemba => '𖠌',
+            BamumSupplement::BamumLetterPhaseDashANgangu => '𖠍',
+            BamumSupplement::BamumLetterPhaseDashAMaemveux => '𖠎',
+            BamumSupplement::BamumLetterPhaseDashAMansuae => '𖠏',
+            BamumSupplement::BamumLetterPhaseDashAMveuaengam => '𖠐',
+            BamumSupplement::BamumLetterPhaseDashASeunyam => '𖠑',
+            BamumSupplement::BamumLetterPhaseDashANtoqpen => '𖠒',
+            BamumSupplement::BamumLetterPhaseDashAKeukeutnda => '𖠓',
+            BamumSupplement::BamumLetterPhaseDashANkindi => '𖠔',
+            BamumSupplement::BamumLetterPhaseDashASuu => '𖠕',
+            BamumSupplement::BamumLetterPhaseDashANgkuenzeum => '𖠖',
+            BamumSupplement::BamumLetterPhaseDashALapaq => '𖠗',
+            BamumSupplement::BamumLetterPhaseDashALetKut => '𖠘',
+            BamumSupplement::BamumLetterPhaseDashANtapMfaa => '𖠙',
+            BamumSupplement::BamumLetterPhaseDashAMaekeup => '𖠚',
+            BamumSupplement::BamumLetterPhaseDashAPashae => '𖠛',
+            BamumSupplement::BamumLetterPhaseDashAGheuaerae => '𖠜',
+            BamumSupplement::BamumLetterPhaseDashAPamshae => '𖠝',
+            BamumSupplement::BamumLetterPhaseDashAMonNggeuaet => '𖠞',
+            BamumSupplement::BamumLetterPhaseDashANzunMeut => '𖠟',
+            BamumSupplement::BamumLetterPhaseDashAUYuqNae => '𖠠',
+            BamumSupplement::BamumLetterPhaseDashAGheuaegheuae => '𖠡',
+            BamumSupplement::BamumLetterPhaseDashANtapNtaa => '𖠢',
+            BamumSupplement::BamumLetterPhaseDashASisa => '𖠣',
+            BamumSupplement::BamumLetterPhaseDashAMgbasa => '𖠤',
+            BamumSupplement::BamumLetterPhaseDashAMeunjomndeuq => '𖠥',
+            BamumSupplement::BamumLetterPhaseDashAMoompuq => '𖠦',
+            BamumSupplement::BamumLetterPhaseDashAKafa => '𖠧',
+            BamumSupplement::BamumLetterPhaseDashAPaLeeraewa => '𖠨',
+            BamumSupplement::BamumLetterPhaseDashANdaLeeraewa => '𖠩',
+            BamumSupplement::BamumLetterPhaseDashAPet => '𖠪',
+            BamumSupplement::BamumLetterPhaseDashAMaemkpen => '𖠫',
+            BamumSupplement::BamumLetterPhaseDashANika => '𖠬',
+            BamumSupplement::BamumLetterPhaseDashAPup => '𖠭',
+            BamumSupplement::BamumLetterPhaseDashATuaep => '𖠮',
+            BamumSupplement::BamumLetterPhaseDashALuaep => '𖠯',
+            BamumSupplement::BamumLetterPhaseDashASonjam => '𖠰',
+            BamumSupplement::BamumLetterPhaseDashATeuteuwen => '𖠱',
+            BamumSupplement::BamumLetterPhaseDashAMaenyi => '𖠲',
+            BamumSupplement::BamumLetterPhaseDashAKet => '𖠳',
+            BamumSupplement::BamumLetterPhaseDashANdaanggeuaet => '𖠴',
+            BamumSupplement::BamumLetterPhaseDashAKuoq => '𖠵',
+            BamumSupplement::BamumLetterPhaseDashAMoomeut => '𖠶',
+            BamumSupplement::BamumLetterPhaseDashAShum => '𖠷',
+            BamumSupplement::BamumLetterPhaseDashALommae => '𖠸',
+            BamumSupplement::BamumLetterPhaseDashAFiri => '𖠹',
+            BamumSupplement::BamumLetterPhaseDashARom => '𖠺',
+            BamumSupplement::BamumLetterPhaseDashAKpoq => '𖠻',
+            BamumSupplement::BamumLetterPhaseDashASoq => '𖠼',
+            BamumSupplement::BamumLetterPhaseDashAMapPieet => '𖠽',
+            BamumSupplement::BamumLetterPhaseDashAShirae => '𖠾',
+            BamumSupplement::BamumLetterPhaseDashANtap => '𖠿',
+            BamumSupplement::BamumLetterPhaseDashAShoqNshutYum => '𖡀',
+            BamumSupplement::BamumLetterPhaseDashANyitMongkeuaeq => '𖡁',
+            BamumSupplement::BamumLetterPhaseDashAPaarae => '𖡂',
+            BamumSupplement::BamumLetterPhaseDashANkaarae => '𖡃',
+            BamumSupplement::BamumLetterPhaseDashAUnknown => '𖡄',
+            BamumSupplement::BamumLetterPhaseDashANggen => '𖡅',
+            BamumSupplement::BamumLetterPhaseDashAMaesi => '𖡆',
+            BamumSupplement::BamumLetterPhaseDashANjam => '𖡇',
+            BamumSupplement::BamumLetterPhaseDashAMbanyi => '𖡈',
+            BamumSupplement::BamumLetterPhaseDashANyet => '𖡉',
+            BamumSupplement::BamumLetterPhaseDashATeuaen => '𖡊',
+            BamumSupplement::BamumLetterPhaseDashASot => '𖡋',
+            BamumSupplement::BamumLetterPhaseDashAPaam => '𖡌',
+            BamumSupplement::BamumLetterPhaseDashANshiee => '𖡍',
+            BamumSupplement::BamumLetterPhaseDashAMaem => '𖡎',
+            BamumSupplement::BamumLetterPhaseDashANyi => '𖡏',
+            BamumSupplement::BamumLetterPhaseDashAKaq => '𖡐',
+            BamumSupplement::BamumLetterPhaseDashANsha => '𖡑',
+            BamumSupplement::BamumLetterPhaseDashAVee => '𖡒',
+            BamumSupplement::BamumLetterPhaseDashALu => '𖡓',
+            BamumSupplement::BamumLetterPhaseDashANen => '𖡔',
+            BamumSupplement::BamumLetterPhaseDashANaq => '𖡕',
+            BamumSupplement::BamumLetterPhaseDashAMbaq => '𖡖',
+            BamumSupplement::BamumLetterPhaseDashBNshuet => '𖡗',
+            BamumSupplement::BamumLetterPhaseDashBTuMaemgbiee => '𖡘',
+            BamumSupplement::BamumLetterPhaseDashBSiee => '𖡙',
+            BamumSupplement::BamumLetterPhaseDashBSetTu => '𖡚',
+            BamumSupplement::BamumLetterPhaseDashBLomNteum => '𖡛',
+            BamumSupplement::BamumLetterPhaseDashBMbaMaelee => '𖡜',
+            BamumSupplement::BamumLetterPhaseDashBKieem => '𖡝',
+            BamumSupplement::BamumLetterPhaseDashBYeurae => '𖡞',
+            BamumSupplement::BamumLetterPhaseDashBMbaarae => '𖡟',
+            BamumSupplement::BamumLetterPhaseDashBKam => '𖡠',
+            BamumSupplement::BamumLetterPhaseDashBPeeshi => '𖡡',
+            BamumSupplement::BamumLetterPhaseDashBYafuLeeraewa => '𖡢',
+            BamumSupplement::BamumLetterPhaseDashBLamNshutNyam => '𖡣',
+            BamumSupplement::BamumLetterPhaseDashBNtieeSheuoq => '𖡤',
+            BamumSupplement::BamumLetterPhaseDashBNduNjaa => '𖡥',
+            BamumSupplement::BamumLetterPhaseDashBGheugheuaem => '𖡦',
+            BamumSupplement::BamumLetterPhaseDashBPit => '𖡧',
+            BamumSupplement::BamumLetterPhaseDashBTuNsiee => '𖡨',
+            BamumSupplement::BamumLetterPhaseDashBShetNjaq => '𖡩',
+            BamumSupplement::BamumLetterPhaseDashBSheuaeqtu => '𖡪',
+            BamumSupplement::BamumLetterPhaseDashBMfonTeuaeq => '𖡫',
+            BamumSupplement::BamumLetterPhaseDashBMbitMbaaket => '𖡬',
+            BamumSupplement::BamumLetterPhaseDashBNyiNteum => '𖡭',
+            BamumSupplement::BamumLetterPhaseDashBKeupuq => '𖡮',
+            BamumSupplement::BamumLetterPhaseDashBGheughen => '𖡯',
+            BamumSupplement::BamumLetterPhaseDashBKeuyeux => '𖡰',
+            BamumSupplement::BamumLetterPhaseDashBLaanae => '𖡱',
+            BamumSupplement::BamumLetterPhaseDashBParum => '𖡲',
+            BamumSupplement::BamumLetterPhaseDashBVeum => '𖡳',
+            BamumSupplement::BamumLetterPhaseDashBNgkindiMvop => '𖡴',
+            BamumSupplement::BamumLetterPhaseDashBNggeuMbu => '𖡵',
+            BamumSupplement::BamumLetterPhaseDashBWuaet => '𖡶',
+            BamumSupplement::BamumLetterPhaseDashBSakeuae => '𖡷',
+            BamumSupplement::BamumLetterPhaseDashBTaam => '𖡸',
+            BamumSupplement::BamumLetterPhaseDashBMeuq => '𖡹',
+            BamumSupplement::BamumLetterPhaseDashBNgguoq => '𖡺',
+            BamumSupplement::BamumLetterPhaseDashBNgguoqLarge => '𖡻',
+            BamumSupplement::BamumLetterPhaseDashBMfiyaq => '𖡼',
+            BamumSupplement::BamumLetterPhaseDashBSue => '𖡽',
+            BamumSupplement::BamumLetterPhaseDashBMbeuri => '𖡾',
+            BamumSupplement::BamumLetterPhaseDashBMontieen => '𖡿',
+            BamumSupplement::BamumLetterPhaseDashBNyaemae => '𖢀',
+            BamumSupplement::BamumLetterPhaseDashBPungaam => '𖢁',
+            BamumSupplement::BamumLetterPhaseDashBMeutNggeet => '𖢂',
+            BamumSupplement::BamumLetterPhaseDashBFeux => '𖢃',
+            BamumSupplement::BamumLetterPhaseDashBMbuoq => '𖢄',
+            BamumSupplement::BamumLetterPhaseDashBFee => '𖢅',
+            BamumSupplement::BamumLetterPhaseDashBKeuaem => '𖢆',
+            BamumSupplement::BamumLetterPhaseDashBMaNjeuaena => '𖢇',
+            BamumSupplement::BamumLetterPhaseDashBMaNjuqa => '𖢈',
+            BamumSupplement::BamumLetterPhaseDashBLet => '𖢉',
+            BamumSupplement::BamumLetterPhaseDashBNggaam => '𖢊',
+            BamumSupplement::BamumLetterPhaseDashBNsen => '𖢋',
+            BamumSupplement::BamumLetterPhaseDashBMa => '𖢌',
+            BamumSupplement::BamumLetterPhaseDashBKiq => '𖢍',
+            BamumSupplement::BamumLetterPhaseDashBNgom => '𖢎',
+            BamumSupplement::BamumLetterPhaseDashCNgkueMaemba => '𖢏',
+            BamumSupplement::BamumLetterPhaseDashCNza => '𖢐',
+            BamumSupplement::BamumLetterPhaseDashCYum => '𖢑',
+            BamumSupplement::BamumLetterPhaseDashCWangkuoq => '𖢒',
+            BamumSupplement::BamumLetterPhaseDashCNggen => '𖢓',
+            BamumSupplement::BamumLetterPhaseDashCNdeuaeree => '𖢔',
+            BamumSupplement::BamumLetterPhaseDashCNgkaq => '𖢕',
+            BamumSupplement::BamumLetterPhaseDashCGharae => '𖢖',
+            BamumSupplement::BamumLetterPhaseDashCMbeekeet => '𖢗',
+            BamumSupplement::BamumLetterPhaseDashCGbayi => '𖢘',
+            BamumSupplement::BamumLetterPhaseDashCNyirMkparaqMeun => '𖢙',
+            BamumSupplement::BamumLetterPhaseDashCNtuMbit => '𖢚',
+            BamumSupplement::BamumLetterPhaseDashCMbeum => '𖢛',
+            BamumSupplement::BamumLetterPhaseDashCPirieen => '𖢜',
+            BamumSupplement::BamumLetterPhaseDashCNdombu => '𖢝',
+            BamumSupplement::BamumLetterPhaseDashCMbaaCabbageDashTree => '𖢞',
+            BamumSupplement::BamumLetterPhaseDashCKeusheuaep => '𖢟',
+            BamumSupplement::BamumLetterPhaseDashCGhap => '𖢠',
+            BamumSupplement::BamumLetterPhaseDashCKeukaq => '𖢡',
+            BamumSupplement::BamumLetterPhaseDashCYuMuomae => '𖢢',
+            BamumSupplement::BamumLetterPhaseDashCNzeum => '𖢣',
+            BamumSupplement::BamumLetterPhaseDashCMbue => '𖢤',
+            BamumSupplement::BamumLetterPhaseDashCNseuaen => '𖢥',
+            BamumSupplement::BamumLetterPhaseDashCMbit => '𖢦',
+            BamumSupplement::BamumLetterPhaseDashCYeuq => '𖢧',
+            BamumSupplement::BamumLetterPhaseDashCKparaq => '𖢨',
+            BamumSupplement::BamumLetterPhaseDashCKaa => '𖢩',
+            BamumSupplement::BamumLetterPhaseDashCSeux => '𖢪',
+            BamumSupplement::BamumLetterPhaseDashCNdida => '𖢫',
+            BamumSupplement::BamumLetterPhaseDashCTaashae => '𖢬',
+            BamumSupplement::BamumLetterPhaseDashCNjueq => '𖢭',
+            BamumSupplement::BamumLetterPhaseDashCTitaYue => '𖢮',
+            BamumSupplement::BamumLetterPhaseDashCSuaet => '𖢯',
+            BamumSupplement::BamumLetterPhaseDashCNgguaenNyam => '𖢰',
+            BamumSupplement::BamumLetterPhaseDashCVeux => '𖢱',
+            BamumSupplement::BamumLetterPhaseDashCNansanaq => '𖢲',
+            BamumSupplement::BamumLetterPhaseDashCMaKeuaeri => '𖢳',
+            BamumSupplement::BamumLetterPhaseDashCNtaa => '𖢴',
+            BamumSupplement::BamumLetterPhaseDashCNgguon => '𖢵',
+            BamumSupplement::BamumLetterPhaseDashCLap => '𖢶',
+            BamumSupplement::BamumLetterPhaseDashCMbirieen => '𖢷',
+            BamumSupplement::BamumLetterPhaseDashCMgbasaq => '𖢸',
+            BamumSupplement::BamumLetterPhaseDashCNteungba => '𖢹',
+            BamumSupplement::BamumLetterPhaseDashCTeuteux => '𖢺',
+            BamumSupplement::BamumLetterPhaseDashCNggum => '𖢻',
+            BamumSupplement::BamumLetterPhaseDashCFue => '𖢼',
+            BamumSupplement::BamumLetterPhaseDashCNdeut => '𖢽',
+            BamumSupplement::BamumLetterPhaseDashCNsa => '𖢾',
+            BamumSupplement::BamumLetterPhaseDashCNshaq => '𖢿',
+            BamumSupplement::BamumLetterPhaseDashCBung => '𖣀',
+            BamumSupplement::BamumLetterPhaseDashCVeuaepen => '𖣁',
+            BamumSupplement::BamumLetterPhaseDashCMberae => '𖣂',
+            BamumSupplement::BamumLetterPhaseDashCRu => '𖣃',
+            BamumSupplement::BamumLetterPhaseDashCNjaem => '𖣄',
+            BamumSupplement::BamumLetterPhaseDashCLam => '𖣅',
+            BamumSupplement::BamumLetterPhaseDashCTituaep => '𖣆',
+            BamumSupplement::BamumLetterPhaseDashCNsuotNgom => '𖣇',
+            BamumSupplement::BamumLetterPhaseDashCNjeeee => '𖣈',
+            BamumSupplement::BamumLetterPhaseDashCKet => '𖣉',
+            BamumSupplement::BamumLetterPhaseDashCNggu => '𖣊',
+            BamumSupplement::BamumLetterPhaseDashCMaesi => '𖣋',
+            BamumSupplement::BamumLetterPhaseDashCMbuaem => '𖣌',
+            BamumSupplement::BamumLetterPhaseDashCLu => '𖣍',
+            BamumSupplement::BamumLetterPhaseDashCKut => '𖣎',
+            BamumSupplement::BamumLetterPhaseDashCNjam => '𖣏',
+            BamumSupplement::BamumLetterPhaseDashCNgom => '𖣐',
+            BamumSupplement::BamumLetterPhaseDashCWup => '𖣑',
+            BamumSupplement::BamumLetterPhaseDashCNggueet => '𖣒',
+            BamumSupplement::BamumLetterPhaseDashCNsom => '𖣓',
+            BamumSupplement::BamumLetterPhaseDashCNten => '𖣔',
+            BamumSupplement::BamumLetterPhaseDashCKuopNkaarae => '𖣕',
+            BamumSupplement::BamumLetterPhaseDashCNsun => '𖣖',
+            BamumSupplement::BamumLetterPhaseDashCNdam => '𖣗',
+            BamumSupplement::BamumLetterPhaseDashCMaNsiee => '𖣘',
+            BamumSupplement::BamumLetterPhaseDashCYaa => '𖣙',
+            BamumSupplement::BamumLetterPhaseDashCNdap => '𖣚',
+            BamumSupplement::BamumLetterPhaseDashCShueq => '𖣛',
+            BamumSupplement::BamumLetterPhaseDashCSetfon => '𖣜',
+            BamumSupplement::BamumLetterPhaseDashCMbi => '𖣝',
+            BamumSupplement::BamumLetterPhaseDashCMaemba => '𖣞',
+            BamumSupplement::BamumLetterPhaseDashCMbanyi => '𖣟',
+            BamumSupplement::BamumLetterPhaseDashCKeuseux => '𖣠',
+            BamumSupplement::BamumLetterPhaseDashCMbeux => '𖣡',
+            BamumSupplement::BamumLetterPhaseDashCKeum => '𖣢',
+            BamumSupplement::BamumLetterPhaseDashCMbaaPicket => '𖣣',
+            BamumSupplement::BamumLetterPhaseDashCYuwoq => '𖣤',
+            BamumSupplement::BamumLetterPhaseDashCNjeux => '𖣥',
+            BamumSupplement::BamumLetterPhaseDashCMiee => '𖣦',
+            BamumSupplement::BamumLetterPhaseDashCMuae => '𖣧',
+            BamumSupplement::BamumLetterPhaseDashCShiq => '𖣨',
+            BamumSupplement::BamumLetterPhaseDashCKenLaw => '𖣩',
+            BamumSupplement::BamumLetterPhaseDashCKenFatigue => '𖣪',
+            BamumSupplement::BamumLetterPhaseDashCNgaq => '𖣫',
+            BamumSupplement::BamumLetterPhaseDashCNaq => '𖣬',
+            BamumSupplement::BamumLetterPhaseDashCLiq => '𖣭',
+            BamumSupplement::BamumLetterPhaseDashCPin => '𖣮',
+            BamumSupplement::BamumLetterPhaseDashCPen => '𖣯',
+            BamumSupplement::BamumLetterPhaseDashCTet => '𖣰',
+            BamumSupplement::BamumLetterPhaseDashDMbuo => '𖣱',
+            BamumSupplement::BamumLetterPhaseDashDWap => '𖣲',
+            BamumSupplement::BamumLetterPhaseDashDNji => '𖣳',
+            BamumSupplement::BamumLetterPhaseDashDMfon => '𖣴',
+            BamumSupplement::BamumLetterPhaseDashDNjiee => '𖣵',
+            BamumSupplement::BamumLetterPhaseDashDLiee => '𖣶',
+            BamumSupplement::BamumLetterPhaseDashDNjeut => '𖣷',
+            BamumSupplement::BamumLetterPhaseDashDNshee => '𖣸',
+            BamumSupplement::BamumLetterPhaseDashDNggaamae => '𖣹',
+            BamumSupplement::BamumLetterPhaseDashDNyam => '𖣺',
+            BamumSupplement::BamumLetterPhaseDashDWuaen => '𖣻',
+            BamumSupplement::BamumLetterPhaseDashDNgkun => '𖣼',
+            BamumSupplement::BamumLetterPhaseDashDShee => '𖣽',
+            BamumSupplement::BamumLetterPhaseDashDNgkap => '𖣾',
+            BamumSupplement::BamumLetterPhaseDashDKeuaetmeun => '𖣿',
+            BamumSupplement::BamumLetterPhaseDashDTeut => '𖤀',
+            BamumSupplement::BamumLetterPhaseDashDSheuae => '𖤁',
+            BamumSupplement::BamumLetterPhaseDashDNjap => '𖤂',
+            BamumSupplement::BamumLetterPhaseDashDSue => '𖤃',
+            BamumSupplement::BamumLetterPhaseDashDKet => '𖤄',
+            BamumSupplement::BamumLetterPhaseDashDYaemmae => '𖤅',
+            BamumSupplement::BamumLetterPhaseDashDKuom => '𖤆',
+            BamumSupplement::BamumLetterPhaseDashDSap => '𖤇',
+            BamumSupplement::BamumLetterPhaseDashDMfeut => '𖤈',
+            BamumSupplement::BamumLetterPhaseDashDNdeux => '𖤉',
+            BamumSupplement::BamumLetterPhaseDashDMaleeri => '𖤊',
+            BamumSupplement::BamumLetterPhaseDashDMeut => '𖤋',
+            BamumSupplement::BamumLetterPhaseDashDSeuaeq => '𖤌',
+            BamumSupplement::BamumLetterPhaseDashDYen => '𖤍',
+            BamumSupplement::BamumLetterPhaseDashDNjeuaem => '𖤎',
+            BamumSupplement::BamumLetterPhaseDashDKeuotMbuae => '𖤏',
+            BamumSupplement::BamumLetterPhaseDashDNgkeuri => '𖤐',
+            BamumSupplement::BamumLetterPhaseDashDTu => '𖤑',
+            BamumSupplement::BamumLetterPhaseDashDGhaa => '𖤒',
+            BamumSupplement::BamumLetterPhaseDashDNgkyee => '𖤓',
+            BamumSupplement::BamumLetterPhaseDashDFeufeuaet => '𖤔',
+            BamumSupplement::BamumLetterPhaseDashDNdee => '𖤕',
+            BamumSupplement::BamumLetterPhaseDashDMgbofum => '𖤖',
+            BamumSupplement::BamumLetterPhaseDashDLeuaep => '𖤗',
+            BamumSupplement::BamumLetterPhaseDashDNdon => '𖤘',
+            BamumSupplement::BamumLetterPhaseDashDMoni => '𖤙',
+            BamumSupplement::BamumLetterPhaseDashDMgbeun => '𖤚',
+            BamumSupplement::BamumLetterPhaseDashDPuut => '𖤛',
+            BamumSupplement::BamumLetterPhaseDashDMgbiee => '𖤜',
+            BamumSupplement::BamumLetterPhaseDashDMfo => '𖤝',
+            BamumSupplement::BamumLetterPhaseDashDLum => '𖤞',
+            BamumSupplement::BamumLetterPhaseDashDNsieep => '𖤟',
+            BamumSupplement::BamumLetterPhaseDashDMbaa => '𖤠',
+            BamumSupplement::BamumLetterPhaseDashDKwaet => '𖤡',
+            BamumSupplement::BamumLetterPhaseDashDNyet => '𖤢',
+            BamumSupplement::BamumLetterPhaseDashDTeuaen => '𖤣',
+            BamumSupplement::BamumLetterPhaseDashDSot => '𖤤',
+            BamumSupplement::BamumLetterPhaseDashDYuwoq => '𖤥',
+            BamumSupplement::BamumLetterPhaseDashDKeum => '𖤦',
+            BamumSupplement::BamumLetterPhaseDashDRaem => '𖤧',
+            BamumSupplement::BamumLetterPhaseDashDTeeee => '𖤨',
+            BamumSupplement::BamumLetterPhaseDashDNgkeuaeq => '𖤩',
+            BamumSupplement::BamumLetterPhaseDashDMfeuae => '𖤪',
+            BamumSupplement::BamumLetterPhaseDashDNsieet => '𖤫',
+            BamumSupplement::BamumLetterPhaseDashDKeup => '𖤬',
+            BamumSupplement::BamumLetterPhaseDashDPip => '𖤭',
+            BamumSupplement::BamumLetterPhaseDashDPeutae => '𖤮',
+            BamumSupplement::BamumLetterPhaseDashDNyue => '𖤯',
+            BamumSupplement::BamumLetterPhaseDashDLet => '𖤰',
+            BamumSupplement::BamumLetterPhaseDashDNggaam => '𖤱',
+            BamumSupplement::BamumLetterPhaseDashDMfiee => '𖤲',
+            BamumSupplement::BamumLetterPhaseDashDNggwaen => '𖤳',
+            BamumSupplement::BamumLetterPhaseDashDYuom => '𖤴',
+            BamumSupplement::BamumLetterPhaseDashDPap => '𖤵',
+            BamumSupplement::BamumLetterPhaseDashDYuop => '𖤶',
+            BamumSupplement::BamumLetterPhaseDashDNdam => '𖤷',
+            BamumSupplement::BamumLetterPhaseDashDNteum => '𖤸',
+            BamumSupplement::BamumLetterPhaseDashDSuae => '𖤹',
+            BamumSupplement::BamumLetterPhaseDashDKun => '𖤺',
+            BamumSupplement::BamumLetterPhaseDashDNggeux => '𖤻',
+            BamumSupplement::BamumLetterPhaseDashDNgkiee => '𖤼',
+            BamumSupplement::BamumLetterPhaseDashDTuot => '𖤽',
+            BamumSupplement::BamumLetterPhaseDashDMeun => '𖤾',
+            BamumSupplement::BamumLetterPhaseDashDKuq => '𖤿',
+            BamumSupplement::BamumLetterPhaseDashDNsum => '𖥀',
+            BamumSupplement::BamumLetterPhaseDashDTeun => '𖥁',
+            BamumSupplement::BamumLetterPhaseDashDMaenjet => '𖥂',
+            BamumSupplement::BamumLetterPhaseDashDNggap => '𖥃',
+            BamumSupplement::BamumLetterPhaseDashDLeum => '𖥄',
+            BamumSupplement::BamumLetterPhaseDashDNgguom => '𖥅',
+            BamumSupplement::BamumLetterPhaseDashDNshut => '𖥆',
+            BamumSupplement::BamumLetterPhaseDashDNjueq => '𖥇',
+            BamumSupplement::BamumLetterPhaseDashDGheuae => '𖥈',
+            BamumSupplement::BamumLetterPhaseDashDKu => '𖥉',
+            BamumSupplement::BamumLetterPhaseDashDRenOld => '𖥊',
+            BamumSupplement::BamumLetterPhaseDashDTae => '𖥋',
+            BamumSupplement::BamumLetterPhaseDashDToq => '𖥌',
+            BamumSupplement::BamumLetterPhaseDashDNyi => '𖥍',
+            BamumSupplement::BamumLetterPhaseDashDRii => '𖥎',
+            BamumSupplement::BamumLetterPhaseDashDLeeee => '𖥏',
+            BamumSupplement::BamumLetterPhaseDashDMeeee => '𖥐',
+            BamumSupplement::BamumLetterPhaseDashDM => '𖥑',
+            BamumSupplement::BamumLetterPhaseDashDSuu => '𖥒',
+            BamumSupplement::BamumLetterPhaseDashDMu => '𖥓',
+            BamumSupplement::BamumLetterPhaseDashDShii => '𖥔',
+            BamumSupplement::BamumLetterPhaseDashDSheux => '𖥕',
+            BamumSupplement::BamumLetterPhaseDashDKyee => '𖥖',
+            BamumSupplement::BamumLetterPhaseDashDNu => '𖥗',
+            BamumSupplement::BamumLetterPhaseDashDShu => '𖥘',
+            BamumSupplement::BamumLetterPhaseDashDNtee => '𖥙',
+            BamumSupplement::BamumLetterPhaseDashDPee => '𖥚',
+            BamumSupplement::BamumLetterPhaseDashDNi => '𖥛',
+            BamumSupplement::BamumLetterPhaseDashDShoq => '𖥜',
+            BamumSupplement::BamumLetterPhaseDashDPuq => '𖥝',
+            BamumSupplement::BamumLetterPhaseDashDMvop => '𖥞',
+            BamumSupplement::BamumLetterPhaseDashDLoq => '𖥟',
+            BamumSupplement::BamumLetterPhaseDashDRenMuch => '𖥠',
+            BamumSupplement::BamumLetterPhaseDashDTi => '𖥡',
+            BamumSupplement::BamumLetterPhaseDashDNtuu => '𖥢',
+            BamumSupplement::BamumLetterPhaseDashDMbaaSeven => '𖥣',
+            BamumSupplement::BamumLetterPhaseDashDSaq => '𖥤',
+            BamumSupplement::BamumLetterPhaseDashDFaa => '𖥥',
+            BamumSupplement::BamumLetterPhaseDashENdap => '𖥦',
+            BamumSupplement::BamumLetterPhaseDashEToon => '𖥧',
+            BamumSupplement::BamumLetterPhaseDashEMbeum => '𖥨',
+            BamumSupplement::BamumLetterPhaseDashELap => '𖥩',
+            BamumSupplement::BamumLetterPhaseDashEVom => '𖥪',
+            BamumSupplement::BamumLetterPhaseDashELoon => '𖥫',
+            BamumSupplement::BamumLetterPhaseDashEPaa => '𖥬',
+            BamumSupplement::BamumLetterPhaseDashESom => '𖥭',
+            BamumSupplement::BamumLetterPhaseDashERaq => '𖥮',
+            BamumSupplement::BamumLetterPhaseDashENshuop => '𖥯',
+            BamumSupplement::BamumLetterPhaseDashENdun => '𖥰',
+            BamumSupplement::BamumLetterPhaseDashEPuae => '𖥱',
+            BamumSupplement::BamumLetterPhaseDashETam => '𖥲',
+            BamumSupplement::BamumLetterPhaseDashENgka => '𖥳',
+            BamumSupplement::BamumLetterPhaseDashEKpeux => '𖥴',
+            BamumSupplement::BamumLetterPhaseDashEWuo => '𖥵',
+            BamumSupplement::BamumLetterPhaseDashESee => '𖥶',
+            BamumSupplement::BamumLetterPhaseDashENggeuaet => '𖥷',
+            BamumSupplement::BamumLetterPhaseDashEPaam => '𖥸',
+            BamumSupplement::BamumLetterPhaseDashEToo => '𖥹',
+            BamumSupplement::BamumLetterPhaseDashEKuop => '𖥺',
+            BamumSupplement::BamumLetterPhaseDashELom => '𖥻',
+            BamumSupplement::BamumLetterPhaseDashENshiee => '𖥼',
+            BamumSupplement::BamumLetterPhaseDashENgop => '𖥽',
+            BamumSupplement::BamumLetterPhaseDashEMaem => '𖥾',
+            BamumSupplement::BamumLetterPhaseDashENgkeux => '𖥿',
+            BamumSupplement::BamumLetterPhaseDashENgoq => '𖦀',
+            BamumSupplement::BamumLetterPhaseDashENshue => '𖦁',
+            BamumSupplement::BamumLetterPhaseDashERimgba => '𖦂',
+            BamumSupplement::BamumLetterPhaseDashENjeux => '𖦃',
+            BamumSupplement::BamumLetterPhaseDashEPeem => '𖦄',
+            BamumSupplement::BamumLetterPhaseDashESaa => '𖦅',
+            BamumSupplement::BamumLetterPhaseDashENggurae => '𖦆',
+            BamumSupplement::BamumLetterPhaseDashEMgba => '𖦇',
+            BamumSupplement::BamumLetterPhaseDashEGheux => '𖦈',
+            BamumSupplement::BamumLetterPhaseDashENgkeuaem => '𖦉',
+            BamumSupplement::BamumLetterPhaseDashENjaemli => '𖦊',
+            BamumSupplement::BamumLetterPhaseDashEMap => '𖦋',
+            BamumSupplement::BamumLetterPhaseDashELoot => '𖦌',
+            BamumSupplement::BamumLetterPhaseDashENggeeee => '𖦍',
+            BamumSupplement::BamumLetterPhaseDashENdiq => '𖦎',
+            BamumSupplement::BamumLetterPhaseDashETaenNteum => '𖦏',
+            BamumSupplement::BamumLetterPhaseDashESet => '𖦐',
+            BamumSupplement::BamumLetterPhaseDashEPum => '𖦑',
+            BamumSupplement::BamumLetterPhaseDashENdaaSoftness => '𖦒',
+            BamumSupplement::BamumLetterPhaseDashENgguaeshaeNyam => '𖦓',
+            BamumSupplement::BamumLetterPhaseDashEYiee => '𖦔',
+            BamumSupplement::BamumLetterPhaseDashEGheun => '𖦕',
+            BamumSupplement::BamumLetterPhaseDashETuae => '𖦖',
+            BamumSupplement::BamumLetterPhaseDashEYeuae => '𖦗',
+            BamumSupplement::BamumLetterPhaseDashEPo => '𖦘',
+            BamumSupplement::BamumLetterPhaseDashETumae => '𖦙',
+            BamumSupplement::BamumLetterPhaseDashEKeuae => '𖦚',
+            BamumSupplement::BamumLetterPhaseDashESuaen => '𖦛',
+            BamumSupplement::BamumLetterPhaseDashETeuaeq => '𖦜',
+            BamumSupplement::BamumLetterPhaseDashEVeuae => '𖦝',
+            BamumSupplement::BamumLetterPhaseDashEWeux => '𖦞',
+            BamumSupplement::BamumLetterPhaseDashELaam => '𖦟',
+            BamumSupplement::BamumLetterPhaseDashEPu => '𖦠',
+            BamumSupplement::BamumLetterPhaseDashETaaq => '𖦡',
+            BamumSupplement::BamumLetterPhaseDashEGhaamae => '𖦢',
+            BamumSupplement::BamumLetterPhaseDashENgeureut => '𖦣',
+            BamumSupplement::BamumLetterPhaseDashESheuaeq => '𖦤',
+            BamumSupplement::BamumLetterPhaseDashEMgben => '𖦥',
+            BamumSupplement::BamumLetterPhaseDashEMbee => '𖦦',
+            BamumSupplement::BamumLetterPhaseDashENzaq => '𖦧',
+            BamumSupplement::BamumLetterPhaseDashENkom => '𖦨',
+            BamumSupplement::BamumLetterPhaseDashEGbet => '𖦩',
+            BamumSupplement::BamumLetterPhaseDashETum => '𖦪',
+            BamumSupplement::BamumLetterPhaseDashEKuet => '𖦫',
+            BamumSupplement::BamumLetterPhaseDashEYap => '𖦬',
+            BamumSupplement::BamumLetterPhaseDashENyiCleaver => '𖦭',
+            BamumSupplement::BamumLetterPhaseDashEYit => '𖦮',
+            BamumSupplement::BamumLetterPhaseDashEMfeuq => '𖦯',
+            BamumSupplement::BamumLetterPhaseDashENdiaq => '𖦰',
+            BamumSupplement::BamumLetterPhaseDashEPieeq => '𖦱',
+            BamumSupplement::BamumLetterPhaseDashEYueq => '𖦲',
+            BamumSupplement::BamumLetterPhaseDashELeuaem => '𖦳',
+            BamumSupplement::BamumLetterPhaseDashEFue => '𖦴',
+            BamumSupplement::BamumLetterPhaseDashEGbeux => '𖦵',
+            BamumSupplement::BamumLetterPhaseDashENgkup => '𖦶',
+            BamumSupplement::BamumLetterPhaseDashEKet => '𖦷',
+            BamumSupplement::BamumLetterPhaseDashEMae => '𖦸',
+            BamumSupplement::BamumLetterPhaseDashENgkaami => '𖦹',
+            BamumSupplement::BamumLetterPhaseDashEGhet => '𖦺',
+            BamumSupplement::BamumLetterPhaseDashEFa => '𖦻',
+            BamumSupplement::BamumLetterPhaseDashENtum => '𖦼',
+            BamumSupplement::BamumLetterPhaseDashEPeut => '𖦽',
+            BamumSupplement::BamumLetterPhaseDashEYeum => '𖦾',
+            BamumSupplement::BamumLetterPhaseDashENggeuae => '𖦿',
+            BamumSupplement::BamumLetterPhaseDashENyiBetween => '𖧀',
+            BamumSupplement::BamumLetterPhaseDashENzuq => '𖧁',
+            BamumSupplement::BamumLetterPhaseDashEPoon => '𖧂',
+            BamumSupplement::BamumLetterPhaseDashEMiee => '𖧃',
+            BamumSupplement::BamumLetterPhaseDashEFuet => '𖧄',
+            BamumSupplement::BamumLetterPhaseDashENae => '𖧅',
+            BamumSupplement::BamumLetterPhaseDashEMuae => '𖧆',
+            BamumSupplement::BamumLetterPhaseDashEGheuae => '𖧇',
+            BamumSupplement::BamumLetterPhaseDashEFuI => '𖧈',
+            BamumSupplement::BamumLetterPhaseDashEMvi => '𖧉',
+            BamumSupplement::BamumLetterPhaseDashEPuaq => '𖧊',
+            BamumSupplement::BamumLetterPhaseDashENgkum => '𖧋',
+            BamumSupplement::BamumLetterPhaseDashEKut => '𖧌',
+            BamumSupplement::BamumLetterPhaseDashEPiet => '𖧍',
+            BamumSupplement::BamumLetterPhaseDashENtap => '𖧎',
+            BamumSupplement::BamumLetterPhaseDashEYeuaet => '𖧏',
+            BamumSupplement::BamumLetterPhaseDashENggup => '𖧐',
+            BamumSupplement::BamumLetterPhaseDashEPaPeople => '𖧑',
+            BamumSupplement::BamumLetterPhaseDashEFuCall => '𖧒',
+            BamumSupplement::BamumLetterPhaseDashEFom => '𖧓',
+            BamumSupplement::BamumLetterPhaseDashENjee => '𖧔',
+            BamumSupplement::BamumLetterPhaseDashEA => '𖧕',
+            BamumSupplement::BamumLetterPhaseDashEToq => '𖧖',
+            BamumSupplement::BamumLetterPhaseDashEO => '𖧗',
+            BamumSupplement::BamumLetterPhaseDashEI => '𖧘',
+            BamumSupplement::BamumLetterPhaseDashELaq => '𖧙',
+            BamumSupplement::BamumLetterPhaseDashEPaPlural => '𖧚',
+            BamumSupplement::BamumLetterPhaseDashETaa => '𖧛',
+            BamumSupplement::BamumLetterPhaseDashETaq => '𖧜',
+            BamumSupplement::BamumLetterPhaseDashENdaaMyHouse => '𖧝',
+            BamumSupplement::BamumLetterPhaseDashEShiq => '𖧞',
+            BamumSupplement::BamumLetterPhaseDashEYeux => '𖧟',
+            BamumSupplement::BamumLetterPhaseDashENguae => '𖧠',
+            BamumSupplement::BamumLetterPhaseDashEYuaen => '𖧡',
+            BamumSupplement::BamumLetterPhaseDashEYoqSwimming => '𖧢',
+            BamumSupplement::BamumLetterPhaseDashEYoqCover => '𖧣',
+            BamumSupplement::BamumLetterPhaseDashEYuq => '𖧤',
+            BamumSupplement::BamumLetterPhaseDashEYun => '𖧥',
+            BamumSupplement::BamumLetterPhaseDashEKeux => '𖧦',
+            BamumSupplement::BamumLetterPhaseDashEPeux => '𖧧',
+            BamumSupplement::BamumLetterPhaseDashENjeeEpoch => '𖧨',
+            BamumSupplement::BamumLetterPhaseDashEPue => '𖧩',
+            BamumSupplement::BamumLetterPhaseDashEWue => '𖧪',
+            BamumSupplement::BamumLetterPhaseDashEFee => '𖧫',
+            BamumSupplement::BamumLetterPhaseDashEVee => '𖧬',
+            BamumSupplement::BamumLetterPhaseDashELu => '𖧭',
+            BamumSupplement::BamumLetterPhaseDashEMi => '𖧮',
+            BamumSupplement::BamumLetterPhaseDashEReux => '𖧯',
+            BamumSupplement::BamumLetterPhaseDashERae => '𖧰',
+            BamumSupplement::BamumLetterPhaseDashENguaet => '𖧱',
+            BamumSupplement::BamumLetterPhaseDashENga => '𖧲',
+            BamumSupplement::BamumLetterPhaseDashESho => '𖧳',
+            BamumSupplement::BamumLetterPhaseDashEShoq => '𖧴',
+            BamumSupplement::BamumLetterPhaseDashEFuRemedy => '𖧵',
+            BamumSupplement::BamumLetterPhaseDashENa => '𖧶',
+            BamumSupplement::BamumLetterPhaseDashEPi => '𖧷',
+            BamumSupplement::BamumLetterPhaseDashELoq => '𖧸',
+            BamumSupplement::BamumLetterPhaseDashEKo => '𖧹',
+            BamumSupplement::BamumLetterPhaseDashEMen => '𖧺',
+            BamumSupplement::BamumLetterPhaseDashEMa => '𖧻',
+            BamumSupplement::BamumLetterPhaseDashEMaq => '𖧼',
+            BamumSupplement::BamumLetterPhaseDashETeu => '𖧽',
+            BamumSupplement::BamumLetterPhaseDashEKi => '𖧾',
+            BamumSupplement::BamumLetterPhaseDashEMon => '𖧿',
+            BamumSupplement::BamumLetterPhaseDashETen => '𖨀',
+            BamumSupplement::BamumLetterPhaseDashEFaq => '𖨁',
+            BamumSupplement::BamumLetterPhaseDashEGhom => '𖨂',
+            BamumSupplement::BamumLetterPhaseDashFKa => '𖨃',
+            BamumSupplement::BamumLetterPhaseDashFU => '𖨄',
+            BamumSupplement::BamumLetterPhaseDashFKu => '𖨅',
+            BamumSupplement::BamumLetterPhaseDashFEe => '𖨆',
+            BamumSupplement::BamumLetterPhaseDashFRee => '𖨇',
+            BamumSupplement::BamumLetterPhaseDashFTae => '𖨈',
+            BamumSupplement::BamumLetterPhaseDashFNyi => '𖨉',
+            BamumSupplement::BamumLetterPhaseDashFLa => '𖨊',
+            BamumSupplement::BamumLetterPhaseDashFRii => '𖨋',
+            BamumSupplement::BamumLetterPhaseDashFRiee => '𖨌',
+            BamumSupplement::BamumLetterPhaseDashFMeeee => '𖨍',
+            BamumSupplement::BamumLetterPhaseDashFTaa => '𖨎',
+            BamumSupplement::BamumLetterPhaseDashFNdaa => '𖨏',
+            BamumSupplement::BamumLetterPhaseDashFNjaem => '𖨐',
+            BamumSupplement::BamumLetterPhaseDashFM => '𖨑',
+            BamumSupplement::BamumLetterPhaseDashFSuu => '𖨒',
+            BamumSupplement::BamumLetterPhaseDashFShii => '𖨓',
+            BamumSupplement::BamumLetterPhaseDashFSi => '𖨔',
+            BamumSupplement::BamumLetterPhaseDashFSeux => '𖨕',
+            BamumSupplement::BamumLetterPhaseDashFKyee => '𖨖',
+            BamumSupplement::BamumLetterPhaseDashFKet => '𖨗',
+            BamumSupplement::BamumLetterPhaseDashFNuae => '𖨘',
+            BamumSupplement::BamumLetterPhaseDashFNu => '𖨙',
+            BamumSupplement::BamumLetterPhaseDashFNjuae => '𖨚',
+            BamumSupplement::BamumLetterPhaseDashFYoq => '𖨛',
+            BamumSupplement::BamumLetterPhaseDashFShu => '𖨜',
+            BamumSupplement::BamumLetterPhaseDashFYa => '𖨝',
+            BamumSupplement::BamumLetterPhaseDashFNsha => '𖨞',
+            BamumSupplement::BamumLetterPhaseDashFPeux => '𖨟',
+            BamumSupplement::BamumLetterPhaseDashFNtee => '𖨠',
+            BamumSupplement::BamumLetterPhaseDashFWue => '𖨡',
+            BamumSupplement::BamumLetterPhaseDashFPee => '𖨢',
+            BamumSupplement::BamumLetterPhaseDashFRu => '𖨣',
+            BamumSupplement::BamumLetterPhaseDashFNi => '𖨤',
+            BamumSupplement::BamumLetterPhaseDashFReux => '𖨥',
+            BamumSupplement::BamumLetterPhaseDashFKen => '𖨦',
+            BamumSupplement::BamumLetterPhaseDashFNgkwaen => '𖨧',
+            BamumSupplement::BamumLetterPhaseDashFNgga => '𖨨',
+            BamumSupplement::BamumLetterPhaseDashFSho => '𖨩',
+            BamumSupplement::BamumLetterPhaseDashFPuae => '𖨪',
+            BamumSupplement::BamumLetterPhaseDashFFom => '𖨫',
+            BamumSupplement::BamumLetterPhaseDashFWa => '𖨬',
+            BamumSupplement::BamumLetterPhaseDashFLi => '𖨭',
+            BamumSupplement::BamumLetterPhaseDashFLoq => '𖨮',
+            BamumSupplement::BamumLetterPhaseDashFKo => '𖨯',
+            BamumSupplement::BamumLetterPhaseDashFMben => '𖨰',
+            BamumSupplement::BamumLetterPhaseDashFRen => '𖨱',
+            BamumSupplement::BamumLetterPhaseDashFMa => '𖨲',
+            BamumSupplement::BamumLetterPhaseDashFMo => '𖨳',
+            BamumSupplement::BamumLetterPhaseDashFMbaa => '𖨴',
+            BamumSupplement::BamumLetterPhaseDashFTet => '𖨵',
+            BamumSupplement::BamumLetterPhaseDashFKpa => '𖨶',
+            BamumSupplement::BamumLetterPhaseDashFSamba => '𖨷',
+            BamumSupplement::BamumLetterPhaseDashFVueq => '𖨸',
         }
     }
 }
@@ -2863,577 +1721,576 @@ impl Into<char> for BamumSupplement {
 impl std::convert::TryFrom<char> for BamumSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            BAMUM_LETTER_PHASE_DASH_A_NGKUE_MFON => Ok(BamumSupplement::BamumLetterPhaseDashANgkueMfon),
-            BAMUM_LETTER_PHASE_DASH_A_GBIEE_FON => Ok(BamumSupplement::BamumLetterPhaseDashAGbieeFon),
-            BAMUM_LETTER_PHASE_DASH_A_PON_MFON_PIPAEMGBIEE => Ok(BamumSupplement::BamumLetterPhaseDashAPonMfonPipaemgbiee),
-            BAMUM_LETTER_PHASE_DASH_A_PON_MFON_PIPAEMBA => Ok(BamumSupplement::BamumLetterPhaseDashAPonMfonPipaemba),
-            BAMUM_LETTER_PHASE_DASH_A_NAA_MFON => Ok(BamumSupplement::BamumLetterPhaseDashANaaMfon),
-            BAMUM_LETTER_PHASE_DASH_A_SHUENSHUET => Ok(BamumSupplement::BamumLetterPhaseDashAShuenshuet),
-            BAMUM_LETTER_PHASE_DASH_A_TITA_MFON => Ok(BamumSupplement::BamumLetterPhaseDashATitaMfon),
-            BAMUM_LETTER_PHASE_DASH_A_NZA_MFON => Ok(BamumSupplement::BamumLetterPhaseDashANzaMfon),
-            BAMUM_LETTER_PHASE_DASH_A_SHINDA_PA_NJI => Ok(BamumSupplement::BamumLetterPhaseDashAShindaPaNji),
-            BAMUM_LETTER_PHASE_DASH_A_PON_PA_NJI_PIPAEMGBIEE => Ok(BamumSupplement::BamumLetterPhaseDashAPonPaNjiPipaemgbiee),
-            BAMUM_LETTER_PHASE_DASH_A_PON_PA_NJI_PIPAEMBA => Ok(BamumSupplement::BamumLetterPhaseDashAPonPaNjiPipaemba),
-            BAMUM_LETTER_PHASE_DASH_A_MAEMBGBIEE => Ok(BamumSupplement::BamumLetterPhaseDashAMaembgbiee),
-            BAMUM_LETTER_PHASE_DASH_A_TU_MAEMBA => Ok(BamumSupplement::BamumLetterPhaseDashATuMaemba),
-            BAMUM_LETTER_PHASE_DASH_A_NGANGU => Ok(BamumSupplement::BamumLetterPhaseDashANgangu),
-            BAMUM_LETTER_PHASE_DASH_A_MAEMVEUX => Ok(BamumSupplement::BamumLetterPhaseDashAMaemveux),
-            BAMUM_LETTER_PHASE_DASH_A_MANSUAE => Ok(BamumSupplement::BamumLetterPhaseDashAMansuae),
-            BAMUM_LETTER_PHASE_DASH_A_MVEUAENGAM => Ok(BamumSupplement::BamumLetterPhaseDashAMveuaengam),
-            BAMUM_LETTER_PHASE_DASH_A_SEUNYAM => Ok(BamumSupplement::BamumLetterPhaseDashASeunyam),
-            BAMUM_LETTER_PHASE_DASH_A_NTOQPEN => Ok(BamumSupplement::BamumLetterPhaseDashANtoqpen),
-            BAMUM_LETTER_PHASE_DASH_A_KEUKEUTNDA => Ok(BamumSupplement::BamumLetterPhaseDashAKeukeutnda),
-            BAMUM_LETTER_PHASE_DASH_A_NKINDI => Ok(BamumSupplement::BamumLetterPhaseDashANkindi),
-            BAMUM_LETTER_PHASE_DASH_A_SUU => Ok(BamumSupplement::BamumLetterPhaseDashASuu),
-            BAMUM_LETTER_PHASE_DASH_A_NGKUENZEUM => Ok(BamumSupplement::BamumLetterPhaseDashANgkuenzeum),
-            BAMUM_LETTER_PHASE_DASH_A_LAPAQ => Ok(BamumSupplement::BamumLetterPhaseDashALapaq),
-            BAMUM_LETTER_PHASE_DASH_A_LET_KUT => Ok(BamumSupplement::BamumLetterPhaseDashALetKut),
-            BAMUM_LETTER_PHASE_DASH_A_NTAP_MFAA => Ok(BamumSupplement::BamumLetterPhaseDashANtapMfaa),
-            BAMUM_LETTER_PHASE_DASH_A_MAEKEUP => Ok(BamumSupplement::BamumLetterPhaseDashAMaekeup),
-            BAMUM_LETTER_PHASE_DASH_A_PASHAE => Ok(BamumSupplement::BamumLetterPhaseDashAPashae),
-            BAMUM_LETTER_PHASE_DASH_A_GHEUAERAE => Ok(BamumSupplement::BamumLetterPhaseDashAGheuaerae),
-            BAMUM_LETTER_PHASE_DASH_A_PAMSHAE => Ok(BamumSupplement::BamumLetterPhaseDashAPamshae),
-            BAMUM_LETTER_PHASE_DASH_A_MON_NGGEUAET => Ok(BamumSupplement::BamumLetterPhaseDashAMonNggeuaet),
-            BAMUM_LETTER_PHASE_DASH_A_NZUN_MEUT => Ok(BamumSupplement::BamumLetterPhaseDashANzunMeut),
-            BAMUM_LETTER_PHASE_DASH_A_U_YUQ_NAE => Ok(BamumSupplement::BamumLetterPhaseDashAUYuqNae),
-            BAMUM_LETTER_PHASE_DASH_A_GHEUAEGHEUAE => Ok(BamumSupplement::BamumLetterPhaseDashAGheuaegheuae),
-            BAMUM_LETTER_PHASE_DASH_A_NTAP_NTAA => Ok(BamumSupplement::BamumLetterPhaseDashANtapNtaa),
-            BAMUM_LETTER_PHASE_DASH_A_SISA => Ok(BamumSupplement::BamumLetterPhaseDashASisa),
-            BAMUM_LETTER_PHASE_DASH_A_MGBASA => Ok(BamumSupplement::BamumLetterPhaseDashAMgbasa),
-            BAMUM_LETTER_PHASE_DASH_A_MEUNJOMNDEUQ => Ok(BamumSupplement::BamumLetterPhaseDashAMeunjomndeuq),
-            BAMUM_LETTER_PHASE_DASH_A_MOOMPUQ => Ok(BamumSupplement::BamumLetterPhaseDashAMoompuq),
-            BAMUM_LETTER_PHASE_DASH_A_KAFA => Ok(BamumSupplement::BamumLetterPhaseDashAKafa),
-            BAMUM_LETTER_PHASE_DASH_A_PA_LEERAEWA => Ok(BamumSupplement::BamumLetterPhaseDashAPaLeeraewa),
-            BAMUM_LETTER_PHASE_DASH_A_NDA_LEERAEWA => Ok(BamumSupplement::BamumLetterPhaseDashANdaLeeraewa),
-            BAMUM_LETTER_PHASE_DASH_A_PET => Ok(BamumSupplement::BamumLetterPhaseDashAPet),
-            BAMUM_LETTER_PHASE_DASH_A_MAEMKPEN => Ok(BamumSupplement::BamumLetterPhaseDashAMaemkpen),
-            BAMUM_LETTER_PHASE_DASH_A_NIKA => Ok(BamumSupplement::BamumLetterPhaseDashANika),
-            BAMUM_LETTER_PHASE_DASH_A_PUP => Ok(BamumSupplement::BamumLetterPhaseDashAPup),
-            BAMUM_LETTER_PHASE_DASH_A_TUAEP => Ok(BamumSupplement::BamumLetterPhaseDashATuaep),
-            BAMUM_LETTER_PHASE_DASH_A_LUAEP => Ok(BamumSupplement::BamumLetterPhaseDashALuaep),
-            BAMUM_LETTER_PHASE_DASH_A_SONJAM => Ok(BamumSupplement::BamumLetterPhaseDashASonjam),
-            BAMUM_LETTER_PHASE_DASH_A_TEUTEUWEN => Ok(BamumSupplement::BamumLetterPhaseDashATeuteuwen),
-            BAMUM_LETTER_PHASE_DASH_A_MAENYI => Ok(BamumSupplement::BamumLetterPhaseDashAMaenyi),
-            BAMUM_LETTER_PHASE_DASH_A_KET => Ok(BamumSupplement::BamumLetterPhaseDashAKet),
-            BAMUM_LETTER_PHASE_DASH_A_NDAANGGEUAET => Ok(BamumSupplement::BamumLetterPhaseDashANdaanggeuaet),
-            BAMUM_LETTER_PHASE_DASH_A_KUOQ => Ok(BamumSupplement::BamumLetterPhaseDashAKuoq),
-            BAMUM_LETTER_PHASE_DASH_A_MOOMEUT => Ok(BamumSupplement::BamumLetterPhaseDashAMoomeut),
-            BAMUM_LETTER_PHASE_DASH_A_SHUM => Ok(BamumSupplement::BamumLetterPhaseDashAShum),
-            BAMUM_LETTER_PHASE_DASH_A_LOMMAE => Ok(BamumSupplement::BamumLetterPhaseDashALommae),
-            BAMUM_LETTER_PHASE_DASH_A_FIRI => Ok(BamumSupplement::BamumLetterPhaseDashAFiri),
-            BAMUM_LETTER_PHASE_DASH_A_ROM => Ok(BamumSupplement::BamumLetterPhaseDashARom),
-            BAMUM_LETTER_PHASE_DASH_A_KPOQ => Ok(BamumSupplement::BamumLetterPhaseDashAKpoq),
-            BAMUM_LETTER_PHASE_DASH_A_SOQ => Ok(BamumSupplement::BamumLetterPhaseDashASoq),
-            BAMUM_LETTER_PHASE_DASH_A_MAP_PIEET => Ok(BamumSupplement::BamumLetterPhaseDashAMapPieet),
-            BAMUM_LETTER_PHASE_DASH_A_SHIRAE => Ok(BamumSupplement::BamumLetterPhaseDashAShirae),
-            BAMUM_LETTER_PHASE_DASH_A_NTAP => Ok(BamumSupplement::BamumLetterPhaseDashANtap),
-            BAMUM_LETTER_PHASE_DASH_A_SHOQ_NSHUT_YUM => Ok(BamumSupplement::BamumLetterPhaseDashAShoqNshutYum),
-            BAMUM_LETTER_PHASE_DASH_A_NYIT_MONGKEUAEQ => Ok(BamumSupplement::BamumLetterPhaseDashANyitMongkeuaeq),
-            BAMUM_LETTER_PHASE_DASH_A_PAARAE => Ok(BamumSupplement::BamumLetterPhaseDashAPaarae),
-            BAMUM_LETTER_PHASE_DASH_A_NKAARAE => Ok(BamumSupplement::BamumLetterPhaseDashANkaarae),
-            BAMUM_LETTER_PHASE_DASH_A_UNKNOWN => Ok(BamumSupplement::BamumLetterPhaseDashAUnknown),
-            BAMUM_LETTER_PHASE_DASH_A_NGGEN => Ok(BamumSupplement::BamumLetterPhaseDashANggen),
-            BAMUM_LETTER_PHASE_DASH_A_MAESI => Ok(BamumSupplement::BamumLetterPhaseDashAMaesi),
-            BAMUM_LETTER_PHASE_DASH_A_NJAM => Ok(BamumSupplement::BamumLetterPhaseDashANjam),
-            BAMUM_LETTER_PHASE_DASH_A_MBANYI => Ok(BamumSupplement::BamumLetterPhaseDashAMbanyi),
-            BAMUM_LETTER_PHASE_DASH_A_NYET => Ok(BamumSupplement::BamumLetterPhaseDashANyet),
-            BAMUM_LETTER_PHASE_DASH_A_TEUAEN => Ok(BamumSupplement::BamumLetterPhaseDashATeuaen),
-            BAMUM_LETTER_PHASE_DASH_A_SOT => Ok(BamumSupplement::BamumLetterPhaseDashASot),
-            BAMUM_LETTER_PHASE_DASH_A_PAAM => Ok(BamumSupplement::BamumLetterPhaseDashAPaam),
-            BAMUM_LETTER_PHASE_DASH_A_NSHIEE => Ok(BamumSupplement::BamumLetterPhaseDashANshiee),
-            BAMUM_LETTER_PHASE_DASH_A_MAEM => Ok(BamumSupplement::BamumLetterPhaseDashAMaem),
-            BAMUM_LETTER_PHASE_DASH_A_NYI => Ok(BamumSupplement::BamumLetterPhaseDashANyi),
-            BAMUM_LETTER_PHASE_DASH_A_KAQ => Ok(BamumSupplement::BamumLetterPhaseDashAKaq),
-            BAMUM_LETTER_PHASE_DASH_A_NSHA => Ok(BamumSupplement::BamumLetterPhaseDashANsha),
-            BAMUM_LETTER_PHASE_DASH_A_VEE => Ok(BamumSupplement::BamumLetterPhaseDashAVee),
-            BAMUM_LETTER_PHASE_DASH_A_LU => Ok(BamumSupplement::BamumLetterPhaseDashALu),
-            BAMUM_LETTER_PHASE_DASH_A_NEN => Ok(BamumSupplement::BamumLetterPhaseDashANen),
-            BAMUM_LETTER_PHASE_DASH_A_NAQ => Ok(BamumSupplement::BamumLetterPhaseDashANaq),
-            BAMUM_LETTER_PHASE_DASH_A_MBAQ => Ok(BamumSupplement::BamumLetterPhaseDashAMbaq),
-            BAMUM_LETTER_PHASE_DASH_B_NSHUET => Ok(BamumSupplement::BamumLetterPhaseDashBNshuet),
-            BAMUM_LETTER_PHASE_DASH_B_TU_MAEMGBIEE => Ok(BamumSupplement::BamumLetterPhaseDashBTuMaemgbiee),
-            BAMUM_LETTER_PHASE_DASH_B_SIEE => Ok(BamumSupplement::BamumLetterPhaseDashBSiee),
-            BAMUM_LETTER_PHASE_DASH_B_SET_TU => Ok(BamumSupplement::BamumLetterPhaseDashBSetTu),
-            BAMUM_LETTER_PHASE_DASH_B_LOM_NTEUM => Ok(BamumSupplement::BamumLetterPhaseDashBLomNteum),
-            BAMUM_LETTER_PHASE_DASH_B_MBA_MAELEE => Ok(BamumSupplement::BamumLetterPhaseDashBMbaMaelee),
-            BAMUM_LETTER_PHASE_DASH_B_KIEEM => Ok(BamumSupplement::BamumLetterPhaseDashBKieem),
-            BAMUM_LETTER_PHASE_DASH_B_YEURAE => Ok(BamumSupplement::BamumLetterPhaseDashBYeurae),
-            BAMUM_LETTER_PHASE_DASH_B_MBAARAE => Ok(BamumSupplement::BamumLetterPhaseDashBMbaarae),
-            BAMUM_LETTER_PHASE_DASH_B_KAM => Ok(BamumSupplement::BamumLetterPhaseDashBKam),
-            BAMUM_LETTER_PHASE_DASH_B_PEESHI => Ok(BamumSupplement::BamumLetterPhaseDashBPeeshi),
-            BAMUM_LETTER_PHASE_DASH_B_YAFU_LEERAEWA => Ok(BamumSupplement::BamumLetterPhaseDashBYafuLeeraewa),
-            BAMUM_LETTER_PHASE_DASH_B_LAM_NSHUT_NYAM => Ok(BamumSupplement::BamumLetterPhaseDashBLamNshutNyam),
-            BAMUM_LETTER_PHASE_DASH_B_NTIEE_SHEUOQ => Ok(BamumSupplement::BamumLetterPhaseDashBNtieeSheuoq),
-            BAMUM_LETTER_PHASE_DASH_B_NDU_NJAA => Ok(BamumSupplement::BamumLetterPhaseDashBNduNjaa),
-            BAMUM_LETTER_PHASE_DASH_B_GHEUGHEUAEM => Ok(BamumSupplement::BamumLetterPhaseDashBGheugheuaem),
-            BAMUM_LETTER_PHASE_DASH_B_PIT => Ok(BamumSupplement::BamumLetterPhaseDashBPit),
-            BAMUM_LETTER_PHASE_DASH_B_TU_NSIEE => Ok(BamumSupplement::BamumLetterPhaseDashBTuNsiee),
-            BAMUM_LETTER_PHASE_DASH_B_SHET_NJAQ => Ok(BamumSupplement::BamumLetterPhaseDashBShetNjaq),
-            BAMUM_LETTER_PHASE_DASH_B_SHEUAEQTU => Ok(BamumSupplement::BamumLetterPhaseDashBSheuaeqtu),
-            BAMUM_LETTER_PHASE_DASH_B_MFON_TEUAEQ => Ok(BamumSupplement::BamumLetterPhaseDashBMfonTeuaeq),
-            BAMUM_LETTER_PHASE_DASH_B_MBIT_MBAAKET => Ok(BamumSupplement::BamumLetterPhaseDashBMbitMbaaket),
-            BAMUM_LETTER_PHASE_DASH_B_NYI_NTEUM => Ok(BamumSupplement::BamumLetterPhaseDashBNyiNteum),
-            BAMUM_LETTER_PHASE_DASH_B_KEUPUQ => Ok(BamumSupplement::BamumLetterPhaseDashBKeupuq),
-            BAMUM_LETTER_PHASE_DASH_B_GHEUGHEN => Ok(BamumSupplement::BamumLetterPhaseDashBGheughen),
-            BAMUM_LETTER_PHASE_DASH_B_KEUYEUX => Ok(BamumSupplement::BamumLetterPhaseDashBKeuyeux),
-            BAMUM_LETTER_PHASE_DASH_B_LAANAE => Ok(BamumSupplement::BamumLetterPhaseDashBLaanae),
-            BAMUM_LETTER_PHASE_DASH_B_PARUM => Ok(BamumSupplement::BamumLetterPhaseDashBParum),
-            BAMUM_LETTER_PHASE_DASH_B_VEUM => Ok(BamumSupplement::BamumLetterPhaseDashBVeum),
-            BAMUM_LETTER_PHASE_DASH_B_NGKINDI_MVOP => Ok(BamumSupplement::BamumLetterPhaseDashBNgkindiMvop),
-            BAMUM_LETTER_PHASE_DASH_B_NGGEU_MBU => Ok(BamumSupplement::BamumLetterPhaseDashBNggeuMbu),
-            BAMUM_LETTER_PHASE_DASH_B_WUAET => Ok(BamumSupplement::BamumLetterPhaseDashBWuaet),
-            BAMUM_LETTER_PHASE_DASH_B_SAKEUAE => Ok(BamumSupplement::BamumLetterPhaseDashBSakeuae),
-            BAMUM_LETTER_PHASE_DASH_B_TAAM => Ok(BamumSupplement::BamumLetterPhaseDashBTaam),
-            BAMUM_LETTER_PHASE_DASH_B_MEUQ => Ok(BamumSupplement::BamumLetterPhaseDashBMeuq),
-            BAMUM_LETTER_PHASE_DASH_B_NGGUOQ => Ok(BamumSupplement::BamumLetterPhaseDashBNgguoq),
-            BAMUM_LETTER_PHASE_DASH_B_NGGUOQ_LARGE => Ok(BamumSupplement::BamumLetterPhaseDashBNgguoqLarge),
-            BAMUM_LETTER_PHASE_DASH_B_MFIYAQ => Ok(BamumSupplement::BamumLetterPhaseDashBMfiyaq),
-            BAMUM_LETTER_PHASE_DASH_B_SUE => Ok(BamumSupplement::BamumLetterPhaseDashBSue),
-            BAMUM_LETTER_PHASE_DASH_B_MBEURI => Ok(BamumSupplement::BamumLetterPhaseDashBMbeuri),
-            BAMUM_LETTER_PHASE_DASH_B_MONTIEEN => Ok(BamumSupplement::BamumLetterPhaseDashBMontieen),
-            BAMUM_LETTER_PHASE_DASH_B_NYAEMAE => Ok(BamumSupplement::BamumLetterPhaseDashBNyaemae),
-            BAMUM_LETTER_PHASE_DASH_B_PUNGAAM => Ok(BamumSupplement::BamumLetterPhaseDashBPungaam),
-            BAMUM_LETTER_PHASE_DASH_B_MEUT_NGGEET => Ok(BamumSupplement::BamumLetterPhaseDashBMeutNggeet),
-            BAMUM_LETTER_PHASE_DASH_B_FEUX => Ok(BamumSupplement::BamumLetterPhaseDashBFeux),
-            BAMUM_LETTER_PHASE_DASH_B_MBUOQ => Ok(BamumSupplement::BamumLetterPhaseDashBMbuoq),
-            BAMUM_LETTER_PHASE_DASH_B_FEE => Ok(BamumSupplement::BamumLetterPhaseDashBFee),
-            BAMUM_LETTER_PHASE_DASH_B_KEUAEM => Ok(BamumSupplement::BamumLetterPhaseDashBKeuaem),
-            BAMUM_LETTER_PHASE_DASH_B_MA_NJEUAENA => Ok(BamumSupplement::BamumLetterPhaseDashBMaNjeuaena),
-            BAMUM_LETTER_PHASE_DASH_B_MA_NJUQA => Ok(BamumSupplement::BamumLetterPhaseDashBMaNjuqa),
-            BAMUM_LETTER_PHASE_DASH_B_LET => Ok(BamumSupplement::BamumLetterPhaseDashBLet),
-            BAMUM_LETTER_PHASE_DASH_B_NGGAAM => Ok(BamumSupplement::BamumLetterPhaseDashBNggaam),
-            BAMUM_LETTER_PHASE_DASH_B_NSEN => Ok(BamumSupplement::BamumLetterPhaseDashBNsen),
-            BAMUM_LETTER_PHASE_DASH_B_MA => Ok(BamumSupplement::BamumLetterPhaseDashBMa),
-            BAMUM_LETTER_PHASE_DASH_B_KIQ => Ok(BamumSupplement::BamumLetterPhaseDashBKiq),
-            BAMUM_LETTER_PHASE_DASH_B_NGOM => Ok(BamumSupplement::BamumLetterPhaseDashBNgom),
-            BAMUM_LETTER_PHASE_DASH_C_NGKUE_MAEMBA => Ok(BamumSupplement::BamumLetterPhaseDashCNgkueMaemba),
-            BAMUM_LETTER_PHASE_DASH_C_NZA => Ok(BamumSupplement::BamumLetterPhaseDashCNza),
-            BAMUM_LETTER_PHASE_DASH_C_YUM => Ok(BamumSupplement::BamumLetterPhaseDashCYum),
-            BAMUM_LETTER_PHASE_DASH_C_WANGKUOQ => Ok(BamumSupplement::BamumLetterPhaseDashCWangkuoq),
-            BAMUM_LETTER_PHASE_DASH_C_NGGEN => Ok(BamumSupplement::BamumLetterPhaseDashCNggen),
-            BAMUM_LETTER_PHASE_DASH_C_NDEUAEREE => Ok(BamumSupplement::BamumLetterPhaseDashCNdeuaeree),
-            BAMUM_LETTER_PHASE_DASH_C_NGKAQ => Ok(BamumSupplement::BamumLetterPhaseDashCNgkaq),
-            BAMUM_LETTER_PHASE_DASH_C_GHARAE => Ok(BamumSupplement::BamumLetterPhaseDashCGharae),
-            BAMUM_LETTER_PHASE_DASH_C_MBEEKEET => Ok(BamumSupplement::BamumLetterPhaseDashCMbeekeet),
-            BAMUM_LETTER_PHASE_DASH_C_GBAYI => Ok(BamumSupplement::BamumLetterPhaseDashCGbayi),
-            BAMUM_LETTER_PHASE_DASH_C_NYIR_MKPARAQ_MEUN => Ok(BamumSupplement::BamumLetterPhaseDashCNyirMkparaqMeun),
-            BAMUM_LETTER_PHASE_DASH_C_NTU_MBIT => Ok(BamumSupplement::BamumLetterPhaseDashCNtuMbit),
-            BAMUM_LETTER_PHASE_DASH_C_MBEUM => Ok(BamumSupplement::BamumLetterPhaseDashCMbeum),
-            BAMUM_LETTER_PHASE_DASH_C_PIRIEEN => Ok(BamumSupplement::BamumLetterPhaseDashCPirieen),
-            BAMUM_LETTER_PHASE_DASH_C_NDOMBU => Ok(BamumSupplement::BamumLetterPhaseDashCNdombu),
-            BAMUM_LETTER_PHASE_DASH_C_MBAA_CABBAGE_DASH_TREE => Ok(BamumSupplement::BamumLetterPhaseDashCMbaaCabbageDashTree),
-            BAMUM_LETTER_PHASE_DASH_C_KEUSHEUAEP => Ok(BamumSupplement::BamumLetterPhaseDashCKeusheuaep),
-            BAMUM_LETTER_PHASE_DASH_C_GHAP => Ok(BamumSupplement::BamumLetterPhaseDashCGhap),
-            BAMUM_LETTER_PHASE_DASH_C_KEUKAQ => Ok(BamumSupplement::BamumLetterPhaseDashCKeukaq),
-            BAMUM_LETTER_PHASE_DASH_C_YU_MUOMAE => Ok(BamumSupplement::BamumLetterPhaseDashCYuMuomae),
-            BAMUM_LETTER_PHASE_DASH_C_NZEUM => Ok(BamumSupplement::BamumLetterPhaseDashCNzeum),
-            BAMUM_LETTER_PHASE_DASH_C_MBUE => Ok(BamumSupplement::BamumLetterPhaseDashCMbue),
-            BAMUM_LETTER_PHASE_DASH_C_NSEUAEN => Ok(BamumSupplement::BamumLetterPhaseDashCNseuaen),
-            BAMUM_LETTER_PHASE_DASH_C_MBIT => Ok(BamumSupplement::BamumLetterPhaseDashCMbit),
-            BAMUM_LETTER_PHASE_DASH_C_YEUQ => Ok(BamumSupplement::BamumLetterPhaseDashCYeuq),
-            BAMUM_LETTER_PHASE_DASH_C_KPARAQ => Ok(BamumSupplement::BamumLetterPhaseDashCKparaq),
-            BAMUM_LETTER_PHASE_DASH_C_KAA => Ok(BamumSupplement::BamumLetterPhaseDashCKaa),
-            BAMUM_LETTER_PHASE_DASH_C_SEUX => Ok(BamumSupplement::BamumLetterPhaseDashCSeux),
-            BAMUM_LETTER_PHASE_DASH_C_NDIDA => Ok(BamumSupplement::BamumLetterPhaseDashCNdida),
-            BAMUM_LETTER_PHASE_DASH_C_TAASHAE => Ok(BamumSupplement::BamumLetterPhaseDashCTaashae),
-            BAMUM_LETTER_PHASE_DASH_C_NJUEQ => Ok(BamumSupplement::BamumLetterPhaseDashCNjueq),
-            BAMUM_LETTER_PHASE_DASH_C_TITA_YUE => Ok(BamumSupplement::BamumLetterPhaseDashCTitaYue),
-            BAMUM_LETTER_PHASE_DASH_C_SUAET => Ok(BamumSupplement::BamumLetterPhaseDashCSuaet),
-            BAMUM_LETTER_PHASE_DASH_C_NGGUAEN_NYAM => Ok(BamumSupplement::BamumLetterPhaseDashCNgguaenNyam),
-            BAMUM_LETTER_PHASE_DASH_C_VEUX => Ok(BamumSupplement::BamumLetterPhaseDashCVeux),
-            BAMUM_LETTER_PHASE_DASH_C_NANSANAQ => Ok(BamumSupplement::BamumLetterPhaseDashCNansanaq),
-            BAMUM_LETTER_PHASE_DASH_C_MA_KEUAERI => Ok(BamumSupplement::BamumLetterPhaseDashCMaKeuaeri),
-            BAMUM_LETTER_PHASE_DASH_C_NTAA => Ok(BamumSupplement::BamumLetterPhaseDashCNtaa),
-            BAMUM_LETTER_PHASE_DASH_C_NGGUON => Ok(BamumSupplement::BamumLetterPhaseDashCNgguon),
-            BAMUM_LETTER_PHASE_DASH_C_LAP => Ok(BamumSupplement::BamumLetterPhaseDashCLap),
-            BAMUM_LETTER_PHASE_DASH_C_MBIRIEEN => Ok(BamumSupplement::BamumLetterPhaseDashCMbirieen),
-            BAMUM_LETTER_PHASE_DASH_C_MGBASAQ => Ok(BamumSupplement::BamumLetterPhaseDashCMgbasaq),
-            BAMUM_LETTER_PHASE_DASH_C_NTEUNGBA => Ok(BamumSupplement::BamumLetterPhaseDashCNteungba),
-            BAMUM_LETTER_PHASE_DASH_C_TEUTEUX => Ok(BamumSupplement::BamumLetterPhaseDashCTeuteux),
-            BAMUM_LETTER_PHASE_DASH_C_NGGUM => Ok(BamumSupplement::BamumLetterPhaseDashCNggum),
-            BAMUM_LETTER_PHASE_DASH_C_FUE => Ok(BamumSupplement::BamumLetterPhaseDashCFue),
-            BAMUM_LETTER_PHASE_DASH_C_NDEUT => Ok(BamumSupplement::BamumLetterPhaseDashCNdeut),
-            BAMUM_LETTER_PHASE_DASH_C_NSA => Ok(BamumSupplement::BamumLetterPhaseDashCNsa),
-            BAMUM_LETTER_PHASE_DASH_C_NSHAQ => Ok(BamumSupplement::BamumLetterPhaseDashCNshaq),
-            BAMUM_LETTER_PHASE_DASH_C_BUNG => Ok(BamumSupplement::BamumLetterPhaseDashCBung),
-            BAMUM_LETTER_PHASE_DASH_C_VEUAEPEN => Ok(BamumSupplement::BamumLetterPhaseDashCVeuaepen),
-            BAMUM_LETTER_PHASE_DASH_C_MBERAE => Ok(BamumSupplement::BamumLetterPhaseDashCMberae),
-            BAMUM_LETTER_PHASE_DASH_C_RU => Ok(BamumSupplement::BamumLetterPhaseDashCRu),
-            BAMUM_LETTER_PHASE_DASH_C_NJAEM => Ok(BamumSupplement::BamumLetterPhaseDashCNjaem),
-            BAMUM_LETTER_PHASE_DASH_C_LAM => Ok(BamumSupplement::BamumLetterPhaseDashCLam),
-            BAMUM_LETTER_PHASE_DASH_C_TITUAEP => Ok(BamumSupplement::BamumLetterPhaseDashCTituaep),
-            BAMUM_LETTER_PHASE_DASH_C_NSUOT_NGOM => Ok(BamumSupplement::BamumLetterPhaseDashCNsuotNgom),
-            BAMUM_LETTER_PHASE_DASH_C_NJEEEE => Ok(BamumSupplement::BamumLetterPhaseDashCNjeeee),
-            BAMUM_LETTER_PHASE_DASH_C_KET => Ok(BamumSupplement::BamumLetterPhaseDashCKet),
-            BAMUM_LETTER_PHASE_DASH_C_NGGU => Ok(BamumSupplement::BamumLetterPhaseDashCNggu),
-            BAMUM_LETTER_PHASE_DASH_C_MAESI => Ok(BamumSupplement::BamumLetterPhaseDashCMaesi),
-            BAMUM_LETTER_PHASE_DASH_C_MBUAEM => Ok(BamumSupplement::BamumLetterPhaseDashCMbuaem),
-            BAMUM_LETTER_PHASE_DASH_C_LU => Ok(BamumSupplement::BamumLetterPhaseDashCLu),
-            BAMUM_LETTER_PHASE_DASH_C_KUT => Ok(BamumSupplement::BamumLetterPhaseDashCKut),
-            BAMUM_LETTER_PHASE_DASH_C_NJAM => Ok(BamumSupplement::BamumLetterPhaseDashCNjam),
-            BAMUM_LETTER_PHASE_DASH_C_NGOM => Ok(BamumSupplement::BamumLetterPhaseDashCNgom),
-            BAMUM_LETTER_PHASE_DASH_C_WUP => Ok(BamumSupplement::BamumLetterPhaseDashCWup),
-            BAMUM_LETTER_PHASE_DASH_C_NGGUEET => Ok(BamumSupplement::BamumLetterPhaseDashCNggueet),
-            BAMUM_LETTER_PHASE_DASH_C_NSOM => Ok(BamumSupplement::BamumLetterPhaseDashCNsom),
-            BAMUM_LETTER_PHASE_DASH_C_NTEN => Ok(BamumSupplement::BamumLetterPhaseDashCNten),
-            BAMUM_LETTER_PHASE_DASH_C_KUOP_NKAARAE => Ok(BamumSupplement::BamumLetterPhaseDashCKuopNkaarae),
-            BAMUM_LETTER_PHASE_DASH_C_NSUN => Ok(BamumSupplement::BamumLetterPhaseDashCNsun),
-            BAMUM_LETTER_PHASE_DASH_C_NDAM => Ok(BamumSupplement::BamumLetterPhaseDashCNdam),
-            BAMUM_LETTER_PHASE_DASH_C_MA_NSIEE => Ok(BamumSupplement::BamumLetterPhaseDashCMaNsiee),
-            BAMUM_LETTER_PHASE_DASH_C_YAA => Ok(BamumSupplement::BamumLetterPhaseDashCYaa),
-            BAMUM_LETTER_PHASE_DASH_C_NDAP => Ok(BamumSupplement::BamumLetterPhaseDashCNdap),
-            BAMUM_LETTER_PHASE_DASH_C_SHUEQ => Ok(BamumSupplement::BamumLetterPhaseDashCShueq),
-            BAMUM_LETTER_PHASE_DASH_C_SETFON => Ok(BamumSupplement::BamumLetterPhaseDashCSetfon),
-            BAMUM_LETTER_PHASE_DASH_C_MBI => Ok(BamumSupplement::BamumLetterPhaseDashCMbi),
-            BAMUM_LETTER_PHASE_DASH_C_MAEMBA => Ok(BamumSupplement::BamumLetterPhaseDashCMaemba),
-            BAMUM_LETTER_PHASE_DASH_C_MBANYI => Ok(BamumSupplement::BamumLetterPhaseDashCMbanyi),
-            BAMUM_LETTER_PHASE_DASH_C_KEUSEUX => Ok(BamumSupplement::BamumLetterPhaseDashCKeuseux),
-            BAMUM_LETTER_PHASE_DASH_C_MBEUX => Ok(BamumSupplement::BamumLetterPhaseDashCMbeux),
-            BAMUM_LETTER_PHASE_DASH_C_KEUM => Ok(BamumSupplement::BamumLetterPhaseDashCKeum),
-            BAMUM_LETTER_PHASE_DASH_C_MBAA_PICKET => Ok(BamumSupplement::BamumLetterPhaseDashCMbaaPicket),
-            BAMUM_LETTER_PHASE_DASH_C_YUWOQ => Ok(BamumSupplement::BamumLetterPhaseDashCYuwoq),
-            BAMUM_LETTER_PHASE_DASH_C_NJEUX => Ok(BamumSupplement::BamumLetterPhaseDashCNjeux),
-            BAMUM_LETTER_PHASE_DASH_C_MIEE => Ok(BamumSupplement::BamumLetterPhaseDashCMiee),
-            BAMUM_LETTER_PHASE_DASH_C_MUAE => Ok(BamumSupplement::BamumLetterPhaseDashCMuae),
-            BAMUM_LETTER_PHASE_DASH_C_SHIQ => Ok(BamumSupplement::BamumLetterPhaseDashCShiq),
-            BAMUM_LETTER_PHASE_DASH_C_KEN_LAW => Ok(BamumSupplement::BamumLetterPhaseDashCKenLaw),
-            BAMUM_LETTER_PHASE_DASH_C_KEN_FATIGUE => Ok(BamumSupplement::BamumLetterPhaseDashCKenFatigue),
-            BAMUM_LETTER_PHASE_DASH_C_NGAQ => Ok(BamumSupplement::BamumLetterPhaseDashCNgaq),
-            BAMUM_LETTER_PHASE_DASH_C_NAQ => Ok(BamumSupplement::BamumLetterPhaseDashCNaq),
-            BAMUM_LETTER_PHASE_DASH_C_LIQ => Ok(BamumSupplement::BamumLetterPhaseDashCLiq),
-            BAMUM_LETTER_PHASE_DASH_C_PIN => Ok(BamumSupplement::BamumLetterPhaseDashCPin),
-            BAMUM_LETTER_PHASE_DASH_C_PEN => Ok(BamumSupplement::BamumLetterPhaseDashCPen),
-            BAMUM_LETTER_PHASE_DASH_C_TET => Ok(BamumSupplement::BamumLetterPhaseDashCTet),
-            BAMUM_LETTER_PHASE_DASH_D_MBUO => Ok(BamumSupplement::BamumLetterPhaseDashDMbuo),
-            BAMUM_LETTER_PHASE_DASH_D_WAP => Ok(BamumSupplement::BamumLetterPhaseDashDWap),
-            BAMUM_LETTER_PHASE_DASH_D_NJI => Ok(BamumSupplement::BamumLetterPhaseDashDNji),
-            BAMUM_LETTER_PHASE_DASH_D_MFON => Ok(BamumSupplement::BamumLetterPhaseDashDMfon),
-            BAMUM_LETTER_PHASE_DASH_D_NJIEE => Ok(BamumSupplement::BamumLetterPhaseDashDNjiee),
-            BAMUM_LETTER_PHASE_DASH_D_LIEE => Ok(BamumSupplement::BamumLetterPhaseDashDLiee),
-            BAMUM_LETTER_PHASE_DASH_D_NJEUT => Ok(BamumSupplement::BamumLetterPhaseDashDNjeut),
-            BAMUM_LETTER_PHASE_DASH_D_NSHEE => Ok(BamumSupplement::BamumLetterPhaseDashDNshee),
-            BAMUM_LETTER_PHASE_DASH_D_NGGAAMAE => Ok(BamumSupplement::BamumLetterPhaseDashDNggaamae),
-            BAMUM_LETTER_PHASE_DASH_D_NYAM => Ok(BamumSupplement::BamumLetterPhaseDashDNyam),
-            BAMUM_LETTER_PHASE_DASH_D_WUAEN => Ok(BamumSupplement::BamumLetterPhaseDashDWuaen),
-            BAMUM_LETTER_PHASE_DASH_D_NGKUN => Ok(BamumSupplement::BamumLetterPhaseDashDNgkun),
-            BAMUM_LETTER_PHASE_DASH_D_SHEE => Ok(BamumSupplement::BamumLetterPhaseDashDShee),
-            BAMUM_LETTER_PHASE_DASH_D_NGKAP => Ok(BamumSupplement::BamumLetterPhaseDashDNgkap),
-            BAMUM_LETTER_PHASE_DASH_D_KEUAETMEUN => Ok(BamumSupplement::BamumLetterPhaseDashDKeuaetmeun),
-            BAMUM_LETTER_PHASE_DASH_D_TEUT => Ok(BamumSupplement::BamumLetterPhaseDashDTeut),
-            BAMUM_LETTER_PHASE_DASH_D_SHEUAE => Ok(BamumSupplement::BamumLetterPhaseDashDSheuae),
-            BAMUM_LETTER_PHASE_DASH_D_NJAP => Ok(BamumSupplement::BamumLetterPhaseDashDNjap),
-            BAMUM_LETTER_PHASE_DASH_D_SUE => Ok(BamumSupplement::BamumLetterPhaseDashDSue),
-            BAMUM_LETTER_PHASE_DASH_D_KET => Ok(BamumSupplement::BamumLetterPhaseDashDKet),
-            BAMUM_LETTER_PHASE_DASH_D_YAEMMAE => Ok(BamumSupplement::BamumLetterPhaseDashDYaemmae),
-            BAMUM_LETTER_PHASE_DASH_D_KUOM => Ok(BamumSupplement::BamumLetterPhaseDashDKuom),
-            BAMUM_LETTER_PHASE_DASH_D_SAP => Ok(BamumSupplement::BamumLetterPhaseDashDSap),
-            BAMUM_LETTER_PHASE_DASH_D_MFEUT => Ok(BamumSupplement::BamumLetterPhaseDashDMfeut),
-            BAMUM_LETTER_PHASE_DASH_D_NDEUX => Ok(BamumSupplement::BamumLetterPhaseDashDNdeux),
-            BAMUM_LETTER_PHASE_DASH_D_MALEERI => Ok(BamumSupplement::BamumLetterPhaseDashDMaleeri),
-            BAMUM_LETTER_PHASE_DASH_D_MEUT => Ok(BamumSupplement::BamumLetterPhaseDashDMeut),
-            BAMUM_LETTER_PHASE_DASH_D_SEUAEQ => Ok(BamumSupplement::BamumLetterPhaseDashDSeuaeq),
-            BAMUM_LETTER_PHASE_DASH_D_YEN => Ok(BamumSupplement::BamumLetterPhaseDashDYen),
-            BAMUM_LETTER_PHASE_DASH_D_NJEUAEM => Ok(BamumSupplement::BamumLetterPhaseDashDNjeuaem),
-            BAMUM_LETTER_PHASE_DASH_D_KEUOT_MBUAE => Ok(BamumSupplement::BamumLetterPhaseDashDKeuotMbuae),
-            BAMUM_LETTER_PHASE_DASH_D_NGKEURI => Ok(BamumSupplement::BamumLetterPhaseDashDNgkeuri),
-            BAMUM_LETTER_PHASE_DASH_D_TU => Ok(BamumSupplement::BamumLetterPhaseDashDTu),
-            BAMUM_LETTER_PHASE_DASH_D_GHAA => Ok(BamumSupplement::BamumLetterPhaseDashDGhaa),
-            BAMUM_LETTER_PHASE_DASH_D_NGKYEE => Ok(BamumSupplement::BamumLetterPhaseDashDNgkyee),
-            BAMUM_LETTER_PHASE_DASH_D_FEUFEUAET => Ok(BamumSupplement::BamumLetterPhaseDashDFeufeuaet),
-            BAMUM_LETTER_PHASE_DASH_D_NDEE => Ok(BamumSupplement::BamumLetterPhaseDashDNdee),
-            BAMUM_LETTER_PHASE_DASH_D_MGBOFUM => Ok(BamumSupplement::BamumLetterPhaseDashDMgbofum),
-            BAMUM_LETTER_PHASE_DASH_D_LEUAEP => Ok(BamumSupplement::BamumLetterPhaseDashDLeuaep),
-            BAMUM_LETTER_PHASE_DASH_D_NDON => Ok(BamumSupplement::BamumLetterPhaseDashDNdon),
-            BAMUM_LETTER_PHASE_DASH_D_MONI => Ok(BamumSupplement::BamumLetterPhaseDashDMoni),
-            BAMUM_LETTER_PHASE_DASH_D_MGBEUN => Ok(BamumSupplement::BamumLetterPhaseDashDMgbeun),
-            BAMUM_LETTER_PHASE_DASH_D_PUUT => Ok(BamumSupplement::BamumLetterPhaseDashDPuut),
-            BAMUM_LETTER_PHASE_DASH_D_MGBIEE => Ok(BamumSupplement::BamumLetterPhaseDashDMgbiee),
-            BAMUM_LETTER_PHASE_DASH_D_MFO => Ok(BamumSupplement::BamumLetterPhaseDashDMfo),
-            BAMUM_LETTER_PHASE_DASH_D_LUM => Ok(BamumSupplement::BamumLetterPhaseDashDLum),
-            BAMUM_LETTER_PHASE_DASH_D_NSIEEP => Ok(BamumSupplement::BamumLetterPhaseDashDNsieep),
-            BAMUM_LETTER_PHASE_DASH_D_MBAA => Ok(BamumSupplement::BamumLetterPhaseDashDMbaa),
-            BAMUM_LETTER_PHASE_DASH_D_KWAET => Ok(BamumSupplement::BamumLetterPhaseDashDKwaet),
-            BAMUM_LETTER_PHASE_DASH_D_NYET => Ok(BamumSupplement::BamumLetterPhaseDashDNyet),
-            BAMUM_LETTER_PHASE_DASH_D_TEUAEN => Ok(BamumSupplement::BamumLetterPhaseDashDTeuaen),
-            BAMUM_LETTER_PHASE_DASH_D_SOT => Ok(BamumSupplement::BamumLetterPhaseDashDSot),
-            BAMUM_LETTER_PHASE_DASH_D_YUWOQ => Ok(BamumSupplement::BamumLetterPhaseDashDYuwoq),
-            BAMUM_LETTER_PHASE_DASH_D_KEUM => Ok(BamumSupplement::BamumLetterPhaseDashDKeum),
-            BAMUM_LETTER_PHASE_DASH_D_RAEM => Ok(BamumSupplement::BamumLetterPhaseDashDRaem),
-            BAMUM_LETTER_PHASE_DASH_D_TEEEE => Ok(BamumSupplement::BamumLetterPhaseDashDTeeee),
-            BAMUM_LETTER_PHASE_DASH_D_NGKEUAEQ => Ok(BamumSupplement::BamumLetterPhaseDashDNgkeuaeq),
-            BAMUM_LETTER_PHASE_DASH_D_MFEUAE => Ok(BamumSupplement::BamumLetterPhaseDashDMfeuae),
-            BAMUM_LETTER_PHASE_DASH_D_NSIEET => Ok(BamumSupplement::BamumLetterPhaseDashDNsieet),
-            BAMUM_LETTER_PHASE_DASH_D_KEUP => Ok(BamumSupplement::BamumLetterPhaseDashDKeup),
-            BAMUM_LETTER_PHASE_DASH_D_PIP => Ok(BamumSupplement::BamumLetterPhaseDashDPip),
-            BAMUM_LETTER_PHASE_DASH_D_PEUTAE => Ok(BamumSupplement::BamumLetterPhaseDashDPeutae),
-            BAMUM_LETTER_PHASE_DASH_D_NYUE => Ok(BamumSupplement::BamumLetterPhaseDashDNyue),
-            BAMUM_LETTER_PHASE_DASH_D_LET => Ok(BamumSupplement::BamumLetterPhaseDashDLet),
-            BAMUM_LETTER_PHASE_DASH_D_NGGAAM => Ok(BamumSupplement::BamumLetterPhaseDashDNggaam),
-            BAMUM_LETTER_PHASE_DASH_D_MFIEE => Ok(BamumSupplement::BamumLetterPhaseDashDMfiee),
-            BAMUM_LETTER_PHASE_DASH_D_NGGWAEN => Ok(BamumSupplement::BamumLetterPhaseDashDNggwaen),
-            BAMUM_LETTER_PHASE_DASH_D_YUOM => Ok(BamumSupplement::BamumLetterPhaseDashDYuom),
-            BAMUM_LETTER_PHASE_DASH_D_PAP => Ok(BamumSupplement::BamumLetterPhaseDashDPap),
-            BAMUM_LETTER_PHASE_DASH_D_YUOP => Ok(BamumSupplement::BamumLetterPhaseDashDYuop),
-            BAMUM_LETTER_PHASE_DASH_D_NDAM => Ok(BamumSupplement::BamumLetterPhaseDashDNdam),
-            BAMUM_LETTER_PHASE_DASH_D_NTEUM => Ok(BamumSupplement::BamumLetterPhaseDashDNteum),
-            BAMUM_LETTER_PHASE_DASH_D_SUAE => Ok(BamumSupplement::BamumLetterPhaseDashDSuae),
-            BAMUM_LETTER_PHASE_DASH_D_KUN => Ok(BamumSupplement::BamumLetterPhaseDashDKun),
-            BAMUM_LETTER_PHASE_DASH_D_NGGEUX => Ok(BamumSupplement::BamumLetterPhaseDashDNggeux),
-            BAMUM_LETTER_PHASE_DASH_D_NGKIEE => Ok(BamumSupplement::BamumLetterPhaseDashDNgkiee),
-            BAMUM_LETTER_PHASE_DASH_D_TUOT => Ok(BamumSupplement::BamumLetterPhaseDashDTuot),
-            BAMUM_LETTER_PHASE_DASH_D_MEUN => Ok(BamumSupplement::BamumLetterPhaseDashDMeun),
-            BAMUM_LETTER_PHASE_DASH_D_KUQ => Ok(BamumSupplement::BamumLetterPhaseDashDKuq),
-            BAMUM_LETTER_PHASE_DASH_D_NSUM => Ok(BamumSupplement::BamumLetterPhaseDashDNsum),
-            BAMUM_LETTER_PHASE_DASH_D_TEUN => Ok(BamumSupplement::BamumLetterPhaseDashDTeun),
-            BAMUM_LETTER_PHASE_DASH_D_MAENJET => Ok(BamumSupplement::BamumLetterPhaseDashDMaenjet),
-            BAMUM_LETTER_PHASE_DASH_D_NGGAP => Ok(BamumSupplement::BamumLetterPhaseDashDNggap),
-            BAMUM_LETTER_PHASE_DASH_D_LEUM => Ok(BamumSupplement::BamumLetterPhaseDashDLeum),
-            BAMUM_LETTER_PHASE_DASH_D_NGGUOM => Ok(BamumSupplement::BamumLetterPhaseDashDNgguom),
-            BAMUM_LETTER_PHASE_DASH_D_NSHUT => Ok(BamumSupplement::BamumLetterPhaseDashDNshut),
-            BAMUM_LETTER_PHASE_DASH_D_NJUEQ => Ok(BamumSupplement::BamumLetterPhaseDashDNjueq),
-            BAMUM_LETTER_PHASE_DASH_D_GHEUAE => Ok(BamumSupplement::BamumLetterPhaseDashDGheuae),
-            BAMUM_LETTER_PHASE_DASH_D_KU => Ok(BamumSupplement::BamumLetterPhaseDashDKu),
-            BAMUM_LETTER_PHASE_DASH_D_REN_OLD => Ok(BamumSupplement::BamumLetterPhaseDashDRenOld),
-            BAMUM_LETTER_PHASE_DASH_D_TAE => Ok(BamumSupplement::BamumLetterPhaseDashDTae),
-            BAMUM_LETTER_PHASE_DASH_D_TOQ => Ok(BamumSupplement::BamumLetterPhaseDashDToq),
-            BAMUM_LETTER_PHASE_DASH_D_NYI => Ok(BamumSupplement::BamumLetterPhaseDashDNyi),
-            BAMUM_LETTER_PHASE_DASH_D_RII => Ok(BamumSupplement::BamumLetterPhaseDashDRii),
-            BAMUM_LETTER_PHASE_DASH_D_LEEEE => Ok(BamumSupplement::BamumLetterPhaseDashDLeeee),
-            BAMUM_LETTER_PHASE_DASH_D_MEEEE => Ok(BamumSupplement::BamumLetterPhaseDashDMeeee),
-            BAMUM_LETTER_PHASE_DASH_D_M => Ok(BamumSupplement::BamumLetterPhaseDashDM),
-            BAMUM_LETTER_PHASE_DASH_D_SUU => Ok(BamumSupplement::BamumLetterPhaseDashDSuu),
-            BAMUM_LETTER_PHASE_DASH_D_MU => Ok(BamumSupplement::BamumLetterPhaseDashDMu),
-            BAMUM_LETTER_PHASE_DASH_D_SHII => Ok(BamumSupplement::BamumLetterPhaseDashDShii),
-            BAMUM_LETTER_PHASE_DASH_D_SHEUX => Ok(BamumSupplement::BamumLetterPhaseDashDSheux),
-            BAMUM_LETTER_PHASE_DASH_D_KYEE => Ok(BamumSupplement::BamumLetterPhaseDashDKyee),
-            BAMUM_LETTER_PHASE_DASH_D_NU => Ok(BamumSupplement::BamumLetterPhaseDashDNu),
-            BAMUM_LETTER_PHASE_DASH_D_SHU => Ok(BamumSupplement::BamumLetterPhaseDashDShu),
-            BAMUM_LETTER_PHASE_DASH_D_NTEE => Ok(BamumSupplement::BamumLetterPhaseDashDNtee),
-            BAMUM_LETTER_PHASE_DASH_D_PEE => Ok(BamumSupplement::BamumLetterPhaseDashDPee),
-            BAMUM_LETTER_PHASE_DASH_D_NI => Ok(BamumSupplement::BamumLetterPhaseDashDNi),
-            BAMUM_LETTER_PHASE_DASH_D_SHOQ => Ok(BamumSupplement::BamumLetterPhaseDashDShoq),
-            BAMUM_LETTER_PHASE_DASH_D_PUQ => Ok(BamumSupplement::BamumLetterPhaseDashDPuq),
-            BAMUM_LETTER_PHASE_DASH_D_MVOP => Ok(BamumSupplement::BamumLetterPhaseDashDMvop),
-            BAMUM_LETTER_PHASE_DASH_D_LOQ => Ok(BamumSupplement::BamumLetterPhaseDashDLoq),
-            BAMUM_LETTER_PHASE_DASH_D_REN_MUCH => Ok(BamumSupplement::BamumLetterPhaseDashDRenMuch),
-            BAMUM_LETTER_PHASE_DASH_D_TI => Ok(BamumSupplement::BamumLetterPhaseDashDTi),
-            BAMUM_LETTER_PHASE_DASH_D_NTUU => Ok(BamumSupplement::BamumLetterPhaseDashDNtuu),
-            BAMUM_LETTER_PHASE_DASH_D_MBAA_SEVEN => Ok(BamumSupplement::BamumLetterPhaseDashDMbaaSeven),
-            BAMUM_LETTER_PHASE_DASH_D_SAQ => Ok(BamumSupplement::BamumLetterPhaseDashDSaq),
-            BAMUM_LETTER_PHASE_DASH_D_FAA => Ok(BamumSupplement::BamumLetterPhaseDashDFaa),
-            BAMUM_LETTER_PHASE_DASH_E_NDAP => Ok(BamumSupplement::BamumLetterPhaseDashENdap),
-            BAMUM_LETTER_PHASE_DASH_E_TOON => Ok(BamumSupplement::BamumLetterPhaseDashEToon),
-            BAMUM_LETTER_PHASE_DASH_E_MBEUM => Ok(BamumSupplement::BamumLetterPhaseDashEMbeum),
-            BAMUM_LETTER_PHASE_DASH_E_LAP => Ok(BamumSupplement::BamumLetterPhaseDashELap),
-            BAMUM_LETTER_PHASE_DASH_E_VOM => Ok(BamumSupplement::BamumLetterPhaseDashEVom),
-            BAMUM_LETTER_PHASE_DASH_E_LOON => Ok(BamumSupplement::BamumLetterPhaseDashELoon),
-            BAMUM_LETTER_PHASE_DASH_E_PAA => Ok(BamumSupplement::BamumLetterPhaseDashEPaa),
-            BAMUM_LETTER_PHASE_DASH_E_SOM => Ok(BamumSupplement::BamumLetterPhaseDashESom),
-            BAMUM_LETTER_PHASE_DASH_E_RAQ => Ok(BamumSupplement::BamumLetterPhaseDashERaq),
-            BAMUM_LETTER_PHASE_DASH_E_NSHUOP => Ok(BamumSupplement::BamumLetterPhaseDashENshuop),
-            BAMUM_LETTER_PHASE_DASH_E_NDUN => Ok(BamumSupplement::BamumLetterPhaseDashENdun),
-            BAMUM_LETTER_PHASE_DASH_E_PUAE => Ok(BamumSupplement::BamumLetterPhaseDashEPuae),
-            BAMUM_LETTER_PHASE_DASH_E_TAM => Ok(BamumSupplement::BamumLetterPhaseDashETam),
-            BAMUM_LETTER_PHASE_DASH_E_NGKA => Ok(BamumSupplement::BamumLetterPhaseDashENgka),
-            BAMUM_LETTER_PHASE_DASH_E_KPEUX => Ok(BamumSupplement::BamumLetterPhaseDashEKpeux),
-            BAMUM_LETTER_PHASE_DASH_E_WUO => Ok(BamumSupplement::BamumLetterPhaseDashEWuo),
-            BAMUM_LETTER_PHASE_DASH_E_SEE => Ok(BamumSupplement::BamumLetterPhaseDashESee),
-            BAMUM_LETTER_PHASE_DASH_E_NGGEUAET => Ok(BamumSupplement::BamumLetterPhaseDashENggeuaet),
-            BAMUM_LETTER_PHASE_DASH_E_PAAM => Ok(BamumSupplement::BamumLetterPhaseDashEPaam),
-            BAMUM_LETTER_PHASE_DASH_E_TOO => Ok(BamumSupplement::BamumLetterPhaseDashEToo),
-            BAMUM_LETTER_PHASE_DASH_E_KUOP => Ok(BamumSupplement::BamumLetterPhaseDashEKuop),
-            BAMUM_LETTER_PHASE_DASH_E_LOM => Ok(BamumSupplement::BamumLetterPhaseDashELom),
-            BAMUM_LETTER_PHASE_DASH_E_NSHIEE => Ok(BamumSupplement::BamumLetterPhaseDashENshiee),
-            BAMUM_LETTER_PHASE_DASH_E_NGOP => Ok(BamumSupplement::BamumLetterPhaseDashENgop),
-            BAMUM_LETTER_PHASE_DASH_E_MAEM => Ok(BamumSupplement::BamumLetterPhaseDashEMaem),
-            BAMUM_LETTER_PHASE_DASH_E_NGKEUX => Ok(BamumSupplement::BamumLetterPhaseDashENgkeux),
-            BAMUM_LETTER_PHASE_DASH_E_NGOQ => Ok(BamumSupplement::BamumLetterPhaseDashENgoq),
-            BAMUM_LETTER_PHASE_DASH_E_NSHUE => Ok(BamumSupplement::BamumLetterPhaseDashENshue),
-            BAMUM_LETTER_PHASE_DASH_E_RIMGBA => Ok(BamumSupplement::BamumLetterPhaseDashERimgba),
-            BAMUM_LETTER_PHASE_DASH_E_NJEUX => Ok(BamumSupplement::BamumLetterPhaseDashENjeux),
-            BAMUM_LETTER_PHASE_DASH_E_PEEM => Ok(BamumSupplement::BamumLetterPhaseDashEPeem),
-            BAMUM_LETTER_PHASE_DASH_E_SAA => Ok(BamumSupplement::BamumLetterPhaseDashESaa),
-            BAMUM_LETTER_PHASE_DASH_E_NGGURAE => Ok(BamumSupplement::BamumLetterPhaseDashENggurae),
-            BAMUM_LETTER_PHASE_DASH_E_MGBA => Ok(BamumSupplement::BamumLetterPhaseDashEMgba),
-            BAMUM_LETTER_PHASE_DASH_E_GHEUX => Ok(BamumSupplement::BamumLetterPhaseDashEGheux),
-            BAMUM_LETTER_PHASE_DASH_E_NGKEUAEM => Ok(BamumSupplement::BamumLetterPhaseDashENgkeuaem),
-            BAMUM_LETTER_PHASE_DASH_E_NJAEMLI => Ok(BamumSupplement::BamumLetterPhaseDashENjaemli),
-            BAMUM_LETTER_PHASE_DASH_E_MAP => Ok(BamumSupplement::BamumLetterPhaseDashEMap),
-            BAMUM_LETTER_PHASE_DASH_E_LOOT => Ok(BamumSupplement::BamumLetterPhaseDashELoot),
-            BAMUM_LETTER_PHASE_DASH_E_NGGEEEE => Ok(BamumSupplement::BamumLetterPhaseDashENggeeee),
-            BAMUM_LETTER_PHASE_DASH_E_NDIQ => Ok(BamumSupplement::BamumLetterPhaseDashENdiq),
-            BAMUM_LETTER_PHASE_DASH_E_TAEN_NTEUM => Ok(BamumSupplement::BamumLetterPhaseDashETaenNteum),
-            BAMUM_LETTER_PHASE_DASH_E_SET => Ok(BamumSupplement::BamumLetterPhaseDashESet),
-            BAMUM_LETTER_PHASE_DASH_E_PUM => Ok(BamumSupplement::BamumLetterPhaseDashEPum),
-            BAMUM_LETTER_PHASE_DASH_E_NDAA_SOFTNESS => Ok(BamumSupplement::BamumLetterPhaseDashENdaaSoftness),
-            BAMUM_LETTER_PHASE_DASH_E_NGGUAESHAE_NYAM => Ok(BamumSupplement::BamumLetterPhaseDashENgguaeshaeNyam),
-            BAMUM_LETTER_PHASE_DASH_E_YIEE => Ok(BamumSupplement::BamumLetterPhaseDashEYiee),
-            BAMUM_LETTER_PHASE_DASH_E_GHEUN => Ok(BamumSupplement::BamumLetterPhaseDashEGheun),
-            BAMUM_LETTER_PHASE_DASH_E_TUAE => Ok(BamumSupplement::BamumLetterPhaseDashETuae),
-            BAMUM_LETTER_PHASE_DASH_E_YEUAE => Ok(BamumSupplement::BamumLetterPhaseDashEYeuae),
-            BAMUM_LETTER_PHASE_DASH_E_PO => Ok(BamumSupplement::BamumLetterPhaseDashEPo),
-            BAMUM_LETTER_PHASE_DASH_E_TUMAE => Ok(BamumSupplement::BamumLetterPhaseDashETumae),
-            BAMUM_LETTER_PHASE_DASH_E_KEUAE => Ok(BamumSupplement::BamumLetterPhaseDashEKeuae),
-            BAMUM_LETTER_PHASE_DASH_E_SUAEN => Ok(BamumSupplement::BamumLetterPhaseDashESuaen),
-            BAMUM_LETTER_PHASE_DASH_E_TEUAEQ => Ok(BamumSupplement::BamumLetterPhaseDashETeuaeq),
-            BAMUM_LETTER_PHASE_DASH_E_VEUAE => Ok(BamumSupplement::BamumLetterPhaseDashEVeuae),
-            BAMUM_LETTER_PHASE_DASH_E_WEUX => Ok(BamumSupplement::BamumLetterPhaseDashEWeux),
-            BAMUM_LETTER_PHASE_DASH_E_LAAM => Ok(BamumSupplement::BamumLetterPhaseDashELaam),
-            BAMUM_LETTER_PHASE_DASH_E_PU => Ok(BamumSupplement::BamumLetterPhaseDashEPu),
-            BAMUM_LETTER_PHASE_DASH_E_TAAQ => Ok(BamumSupplement::BamumLetterPhaseDashETaaq),
-            BAMUM_LETTER_PHASE_DASH_E_GHAAMAE => Ok(BamumSupplement::BamumLetterPhaseDashEGhaamae),
-            BAMUM_LETTER_PHASE_DASH_E_NGEUREUT => Ok(BamumSupplement::BamumLetterPhaseDashENgeureut),
-            BAMUM_LETTER_PHASE_DASH_E_SHEUAEQ => Ok(BamumSupplement::BamumLetterPhaseDashESheuaeq),
-            BAMUM_LETTER_PHASE_DASH_E_MGBEN => Ok(BamumSupplement::BamumLetterPhaseDashEMgben),
-            BAMUM_LETTER_PHASE_DASH_E_MBEE => Ok(BamumSupplement::BamumLetterPhaseDashEMbee),
-            BAMUM_LETTER_PHASE_DASH_E_NZAQ => Ok(BamumSupplement::BamumLetterPhaseDashENzaq),
-            BAMUM_LETTER_PHASE_DASH_E_NKOM => Ok(BamumSupplement::BamumLetterPhaseDashENkom),
-            BAMUM_LETTER_PHASE_DASH_E_GBET => Ok(BamumSupplement::BamumLetterPhaseDashEGbet),
-            BAMUM_LETTER_PHASE_DASH_E_TUM => Ok(BamumSupplement::BamumLetterPhaseDashETum),
-            BAMUM_LETTER_PHASE_DASH_E_KUET => Ok(BamumSupplement::BamumLetterPhaseDashEKuet),
-            BAMUM_LETTER_PHASE_DASH_E_YAP => Ok(BamumSupplement::BamumLetterPhaseDashEYap),
-            BAMUM_LETTER_PHASE_DASH_E_NYI_CLEAVER => Ok(BamumSupplement::BamumLetterPhaseDashENyiCleaver),
-            BAMUM_LETTER_PHASE_DASH_E_YIT => Ok(BamumSupplement::BamumLetterPhaseDashEYit),
-            BAMUM_LETTER_PHASE_DASH_E_MFEUQ => Ok(BamumSupplement::BamumLetterPhaseDashEMfeuq),
-            BAMUM_LETTER_PHASE_DASH_E_NDIAQ => Ok(BamumSupplement::BamumLetterPhaseDashENdiaq),
-            BAMUM_LETTER_PHASE_DASH_E_PIEEQ => Ok(BamumSupplement::BamumLetterPhaseDashEPieeq),
-            BAMUM_LETTER_PHASE_DASH_E_YUEQ => Ok(BamumSupplement::BamumLetterPhaseDashEYueq),
-            BAMUM_LETTER_PHASE_DASH_E_LEUAEM => Ok(BamumSupplement::BamumLetterPhaseDashELeuaem),
-            BAMUM_LETTER_PHASE_DASH_E_FUE => Ok(BamumSupplement::BamumLetterPhaseDashEFue),
-            BAMUM_LETTER_PHASE_DASH_E_GBEUX => Ok(BamumSupplement::BamumLetterPhaseDashEGbeux),
-            BAMUM_LETTER_PHASE_DASH_E_NGKUP => Ok(BamumSupplement::BamumLetterPhaseDashENgkup),
-            BAMUM_LETTER_PHASE_DASH_E_KET => Ok(BamumSupplement::BamumLetterPhaseDashEKet),
-            BAMUM_LETTER_PHASE_DASH_E_MAE => Ok(BamumSupplement::BamumLetterPhaseDashEMae),
-            BAMUM_LETTER_PHASE_DASH_E_NGKAAMI => Ok(BamumSupplement::BamumLetterPhaseDashENgkaami),
-            BAMUM_LETTER_PHASE_DASH_E_GHET => Ok(BamumSupplement::BamumLetterPhaseDashEGhet),
-            BAMUM_LETTER_PHASE_DASH_E_FA => Ok(BamumSupplement::BamumLetterPhaseDashEFa),
-            BAMUM_LETTER_PHASE_DASH_E_NTUM => Ok(BamumSupplement::BamumLetterPhaseDashENtum),
-            BAMUM_LETTER_PHASE_DASH_E_PEUT => Ok(BamumSupplement::BamumLetterPhaseDashEPeut),
-            BAMUM_LETTER_PHASE_DASH_E_YEUM => Ok(BamumSupplement::BamumLetterPhaseDashEYeum),
-            BAMUM_LETTER_PHASE_DASH_E_NGGEUAE => Ok(BamumSupplement::BamumLetterPhaseDashENggeuae),
-            BAMUM_LETTER_PHASE_DASH_E_NYI_BETWEEN => Ok(BamumSupplement::BamumLetterPhaseDashENyiBetween),
-            BAMUM_LETTER_PHASE_DASH_E_NZUQ => Ok(BamumSupplement::BamumLetterPhaseDashENzuq),
-            BAMUM_LETTER_PHASE_DASH_E_POON => Ok(BamumSupplement::BamumLetterPhaseDashEPoon),
-            BAMUM_LETTER_PHASE_DASH_E_MIEE => Ok(BamumSupplement::BamumLetterPhaseDashEMiee),
-            BAMUM_LETTER_PHASE_DASH_E_FUET => Ok(BamumSupplement::BamumLetterPhaseDashEFuet),
-            BAMUM_LETTER_PHASE_DASH_E_NAE => Ok(BamumSupplement::BamumLetterPhaseDashENae),
-            BAMUM_LETTER_PHASE_DASH_E_MUAE => Ok(BamumSupplement::BamumLetterPhaseDashEMuae),
-            BAMUM_LETTER_PHASE_DASH_E_GHEUAE => Ok(BamumSupplement::BamumLetterPhaseDashEGheuae),
-            BAMUM_LETTER_PHASE_DASH_E_FU_I => Ok(BamumSupplement::BamumLetterPhaseDashEFuI),
-            BAMUM_LETTER_PHASE_DASH_E_MVI => Ok(BamumSupplement::BamumLetterPhaseDashEMvi),
-            BAMUM_LETTER_PHASE_DASH_E_PUAQ => Ok(BamumSupplement::BamumLetterPhaseDashEPuaq),
-            BAMUM_LETTER_PHASE_DASH_E_NGKUM => Ok(BamumSupplement::BamumLetterPhaseDashENgkum),
-            BAMUM_LETTER_PHASE_DASH_E_KUT => Ok(BamumSupplement::BamumLetterPhaseDashEKut),
-            BAMUM_LETTER_PHASE_DASH_E_PIET => Ok(BamumSupplement::BamumLetterPhaseDashEPiet),
-            BAMUM_LETTER_PHASE_DASH_E_NTAP => Ok(BamumSupplement::BamumLetterPhaseDashENtap),
-            BAMUM_LETTER_PHASE_DASH_E_YEUAET => Ok(BamumSupplement::BamumLetterPhaseDashEYeuaet),
-            BAMUM_LETTER_PHASE_DASH_E_NGGUP => Ok(BamumSupplement::BamumLetterPhaseDashENggup),
-            BAMUM_LETTER_PHASE_DASH_E_PA_PEOPLE => Ok(BamumSupplement::BamumLetterPhaseDashEPaPeople),
-            BAMUM_LETTER_PHASE_DASH_E_FU_CALL => Ok(BamumSupplement::BamumLetterPhaseDashEFuCall),
-            BAMUM_LETTER_PHASE_DASH_E_FOM => Ok(BamumSupplement::BamumLetterPhaseDashEFom),
-            BAMUM_LETTER_PHASE_DASH_E_NJEE => Ok(BamumSupplement::BamumLetterPhaseDashENjee),
-            BAMUM_LETTER_PHASE_DASH_E_A => Ok(BamumSupplement::BamumLetterPhaseDashEA),
-            BAMUM_LETTER_PHASE_DASH_E_TOQ => Ok(BamumSupplement::BamumLetterPhaseDashEToq),
-            BAMUM_LETTER_PHASE_DASH_E_O => Ok(BamumSupplement::BamumLetterPhaseDashEO),
-            BAMUM_LETTER_PHASE_DASH_E_I => Ok(BamumSupplement::BamumLetterPhaseDashEI),
-            BAMUM_LETTER_PHASE_DASH_E_LAQ => Ok(BamumSupplement::BamumLetterPhaseDashELaq),
-            BAMUM_LETTER_PHASE_DASH_E_PA_PLURAL => Ok(BamumSupplement::BamumLetterPhaseDashEPaPlural),
-            BAMUM_LETTER_PHASE_DASH_E_TAA => Ok(BamumSupplement::BamumLetterPhaseDashETaa),
-            BAMUM_LETTER_PHASE_DASH_E_TAQ => Ok(BamumSupplement::BamumLetterPhaseDashETaq),
-            BAMUM_LETTER_PHASE_DASH_E_NDAA_MY_HOUSE => Ok(BamumSupplement::BamumLetterPhaseDashENdaaMyHouse),
-            BAMUM_LETTER_PHASE_DASH_E_SHIQ => Ok(BamumSupplement::BamumLetterPhaseDashEShiq),
-            BAMUM_LETTER_PHASE_DASH_E_YEUX => Ok(BamumSupplement::BamumLetterPhaseDashEYeux),
-            BAMUM_LETTER_PHASE_DASH_E_NGUAE => Ok(BamumSupplement::BamumLetterPhaseDashENguae),
-            BAMUM_LETTER_PHASE_DASH_E_YUAEN => Ok(BamumSupplement::BamumLetterPhaseDashEYuaen),
-            BAMUM_LETTER_PHASE_DASH_E_YOQ_SWIMMING => Ok(BamumSupplement::BamumLetterPhaseDashEYoqSwimming),
-            BAMUM_LETTER_PHASE_DASH_E_YOQ_COVER => Ok(BamumSupplement::BamumLetterPhaseDashEYoqCover),
-            BAMUM_LETTER_PHASE_DASH_E_YUQ => Ok(BamumSupplement::BamumLetterPhaseDashEYuq),
-            BAMUM_LETTER_PHASE_DASH_E_YUN => Ok(BamumSupplement::BamumLetterPhaseDashEYun),
-            BAMUM_LETTER_PHASE_DASH_E_KEUX => Ok(BamumSupplement::BamumLetterPhaseDashEKeux),
-            BAMUM_LETTER_PHASE_DASH_E_PEUX => Ok(BamumSupplement::BamumLetterPhaseDashEPeux),
-            BAMUM_LETTER_PHASE_DASH_E_NJEE_EPOCH => Ok(BamumSupplement::BamumLetterPhaseDashENjeeEpoch),
-            BAMUM_LETTER_PHASE_DASH_E_PUE => Ok(BamumSupplement::BamumLetterPhaseDashEPue),
-            BAMUM_LETTER_PHASE_DASH_E_WUE => Ok(BamumSupplement::BamumLetterPhaseDashEWue),
-            BAMUM_LETTER_PHASE_DASH_E_FEE => Ok(BamumSupplement::BamumLetterPhaseDashEFee),
-            BAMUM_LETTER_PHASE_DASH_E_VEE => Ok(BamumSupplement::BamumLetterPhaseDashEVee),
-            BAMUM_LETTER_PHASE_DASH_E_LU => Ok(BamumSupplement::BamumLetterPhaseDashELu),
-            BAMUM_LETTER_PHASE_DASH_E_MI => Ok(BamumSupplement::BamumLetterPhaseDashEMi),
-            BAMUM_LETTER_PHASE_DASH_E_REUX => Ok(BamumSupplement::BamumLetterPhaseDashEReux),
-            BAMUM_LETTER_PHASE_DASH_E_RAE => Ok(BamumSupplement::BamumLetterPhaseDashERae),
-            BAMUM_LETTER_PHASE_DASH_E_NGUAET => Ok(BamumSupplement::BamumLetterPhaseDashENguaet),
-            BAMUM_LETTER_PHASE_DASH_E_NGA => Ok(BamumSupplement::BamumLetterPhaseDashENga),
-            BAMUM_LETTER_PHASE_DASH_E_SHO => Ok(BamumSupplement::BamumLetterPhaseDashESho),
-            BAMUM_LETTER_PHASE_DASH_E_SHOQ => Ok(BamumSupplement::BamumLetterPhaseDashEShoq),
-            BAMUM_LETTER_PHASE_DASH_E_FU_REMEDY => Ok(BamumSupplement::BamumLetterPhaseDashEFuRemedy),
-            BAMUM_LETTER_PHASE_DASH_E_NA => Ok(BamumSupplement::BamumLetterPhaseDashENa),
-            BAMUM_LETTER_PHASE_DASH_E_PI => Ok(BamumSupplement::BamumLetterPhaseDashEPi),
-            BAMUM_LETTER_PHASE_DASH_E_LOQ => Ok(BamumSupplement::BamumLetterPhaseDashELoq),
-            BAMUM_LETTER_PHASE_DASH_E_KO => Ok(BamumSupplement::BamumLetterPhaseDashEKo),
-            BAMUM_LETTER_PHASE_DASH_E_MEN => Ok(BamumSupplement::BamumLetterPhaseDashEMen),
-            BAMUM_LETTER_PHASE_DASH_E_MA => Ok(BamumSupplement::BamumLetterPhaseDashEMa),
-            BAMUM_LETTER_PHASE_DASH_E_MAQ => Ok(BamumSupplement::BamumLetterPhaseDashEMaq),
-            BAMUM_LETTER_PHASE_DASH_E_TEU => Ok(BamumSupplement::BamumLetterPhaseDashETeu),
-            BAMUM_LETTER_PHASE_DASH_E_KI => Ok(BamumSupplement::BamumLetterPhaseDashEKi),
-            BAMUM_LETTER_PHASE_DASH_E_MON => Ok(BamumSupplement::BamumLetterPhaseDashEMon),
-            BAMUM_LETTER_PHASE_DASH_E_TEN => Ok(BamumSupplement::BamumLetterPhaseDashETen),
-            BAMUM_LETTER_PHASE_DASH_E_FAQ => Ok(BamumSupplement::BamumLetterPhaseDashEFaq),
-            BAMUM_LETTER_PHASE_DASH_E_GHOM => Ok(BamumSupplement::BamumLetterPhaseDashEGhom),
-            BAMUM_LETTER_PHASE_DASH_F_KA => Ok(BamumSupplement::BamumLetterPhaseDashFKa),
-            BAMUM_LETTER_PHASE_DASH_F_U => Ok(BamumSupplement::BamumLetterPhaseDashFU),
-            BAMUM_LETTER_PHASE_DASH_F_KU => Ok(BamumSupplement::BamumLetterPhaseDashFKu),
-            BAMUM_LETTER_PHASE_DASH_F_EE => Ok(BamumSupplement::BamumLetterPhaseDashFEe),
-            BAMUM_LETTER_PHASE_DASH_F_REE => Ok(BamumSupplement::BamumLetterPhaseDashFRee),
-            BAMUM_LETTER_PHASE_DASH_F_TAE => Ok(BamumSupplement::BamumLetterPhaseDashFTae),
-            BAMUM_LETTER_PHASE_DASH_F_NYI => Ok(BamumSupplement::BamumLetterPhaseDashFNyi),
-            BAMUM_LETTER_PHASE_DASH_F_LA => Ok(BamumSupplement::BamumLetterPhaseDashFLa),
-            BAMUM_LETTER_PHASE_DASH_F_RII => Ok(BamumSupplement::BamumLetterPhaseDashFRii),
-            BAMUM_LETTER_PHASE_DASH_F_RIEE => Ok(BamumSupplement::BamumLetterPhaseDashFRiee),
-            BAMUM_LETTER_PHASE_DASH_F_MEEEE => Ok(BamumSupplement::BamumLetterPhaseDashFMeeee),
-            BAMUM_LETTER_PHASE_DASH_F_TAA => Ok(BamumSupplement::BamumLetterPhaseDashFTaa),
-            BAMUM_LETTER_PHASE_DASH_F_NDAA => Ok(BamumSupplement::BamumLetterPhaseDashFNdaa),
-            BAMUM_LETTER_PHASE_DASH_F_NJAEM => Ok(BamumSupplement::BamumLetterPhaseDashFNjaem),
-            BAMUM_LETTER_PHASE_DASH_F_M => Ok(BamumSupplement::BamumLetterPhaseDashFM),
-            BAMUM_LETTER_PHASE_DASH_F_SUU => Ok(BamumSupplement::BamumLetterPhaseDashFSuu),
-            BAMUM_LETTER_PHASE_DASH_F_SHII => Ok(BamumSupplement::BamumLetterPhaseDashFShii),
-            BAMUM_LETTER_PHASE_DASH_F_SI => Ok(BamumSupplement::BamumLetterPhaseDashFSi),
-            BAMUM_LETTER_PHASE_DASH_F_SEUX => Ok(BamumSupplement::BamumLetterPhaseDashFSeux),
-            BAMUM_LETTER_PHASE_DASH_F_KYEE => Ok(BamumSupplement::BamumLetterPhaseDashFKyee),
-            BAMUM_LETTER_PHASE_DASH_F_KET => Ok(BamumSupplement::BamumLetterPhaseDashFKet),
-            BAMUM_LETTER_PHASE_DASH_F_NUAE => Ok(BamumSupplement::BamumLetterPhaseDashFNuae),
-            BAMUM_LETTER_PHASE_DASH_F_NU => Ok(BamumSupplement::BamumLetterPhaseDashFNu),
-            BAMUM_LETTER_PHASE_DASH_F_NJUAE => Ok(BamumSupplement::BamumLetterPhaseDashFNjuae),
-            BAMUM_LETTER_PHASE_DASH_F_YOQ => Ok(BamumSupplement::BamumLetterPhaseDashFYoq),
-            BAMUM_LETTER_PHASE_DASH_F_SHU => Ok(BamumSupplement::BamumLetterPhaseDashFShu),
-            BAMUM_LETTER_PHASE_DASH_F_YA => Ok(BamumSupplement::BamumLetterPhaseDashFYa),
-            BAMUM_LETTER_PHASE_DASH_F_NSHA => Ok(BamumSupplement::BamumLetterPhaseDashFNsha),
-            BAMUM_LETTER_PHASE_DASH_F_PEUX => Ok(BamumSupplement::BamumLetterPhaseDashFPeux),
-            BAMUM_LETTER_PHASE_DASH_F_NTEE => Ok(BamumSupplement::BamumLetterPhaseDashFNtee),
-            BAMUM_LETTER_PHASE_DASH_F_WUE => Ok(BamumSupplement::BamumLetterPhaseDashFWue),
-            BAMUM_LETTER_PHASE_DASH_F_PEE => Ok(BamumSupplement::BamumLetterPhaseDashFPee),
-            BAMUM_LETTER_PHASE_DASH_F_RU => Ok(BamumSupplement::BamumLetterPhaseDashFRu),
-            BAMUM_LETTER_PHASE_DASH_F_NI => Ok(BamumSupplement::BamumLetterPhaseDashFNi),
-            BAMUM_LETTER_PHASE_DASH_F_REUX => Ok(BamumSupplement::BamumLetterPhaseDashFReux),
-            BAMUM_LETTER_PHASE_DASH_F_KEN => Ok(BamumSupplement::BamumLetterPhaseDashFKen),
-            BAMUM_LETTER_PHASE_DASH_F_NGKWAEN => Ok(BamumSupplement::BamumLetterPhaseDashFNgkwaen),
-            BAMUM_LETTER_PHASE_DASH_F_NGGA => Ok(BamumSupplement::BamumLetterPhaseDashFNgga),
-            BAMUM_LETTER_PHASE_DASH_F_SHO => Ok(BamumSupplement::BamumLetterPhaseDashFSho),
-            BAMUM_LETTER_PHASE_DASH_F_PUAE => Ok(BamumSupplement::BamumLetterPhaseDashFPuae),
-            BAMUM_LETTER_PHASE_DASH_F_FOM => Ok(BamumSupplement::BamumLetterPhaseDashFFom),
-            BAMUM_LETTER_PHASE_DASH_F_WA => Ok(BamumSupplement::BamumLetterPhaseDashFWa),
-            BAMUM_LETTER_PHASE_DASH_F_LI => Ok(BamumSupplement::BamumLetterPhaseDashFLi),
-            BAMUM_LETTER_PHASE_DASH_F_LOQ => Ok(BamumSupplement::BamumLetterPhaseDashFLoq),
-            BAMUM_LETTER_PHASE_DASH_F_KO => Ok(BamumSupplement::BamumLetterPhaseDashFKo),
-            BAMUM_LETTER_PHASE_DASH_F_MBEN => Ok(BamumSupplement::BamumLetterPhaseDashFMben),
-            BAMUM_LETTER_PHASE_DASH_F_REN => Ok(BamumSupplement::BamumLetterPhaseDashFRen),
-            BAMUM_LETTER_PHASE_DASH_F_MA => Ok(BamumSupplement::BamumLetterPhaseDashFMa),
-            BAMUM_LETTER_PHASE_DASH_F_MO => Ok(BamumSupplement::BamumLetterPhaseDashFMo),
-            BAMUM_LETTER_PHASE_DASH_F_MBAA => Ok(BamumSupplement::BamumLetterPhaseDashFMbaa),
-            BAMUM_LETTER_PHASE_DASH_F_TET => Ok(BamumSupplement::BamumLetterPhaseDashFTet),
-            BAMUM_LETTER_PHASE_DASH_F_KPA => Ok(BamumSupplement::BamumLetterPhaseDashFKpa),
-            BAMUM_LETTER_PHASE_DASH_F_SAMBA => Ok(BamumSupplement::BamumLetterPhaseDashFSamba),
-            BAMUM_LETTER_PHASE_DASH_F_VUEQ => Ok(BamumSupplement::BamumLetterPhaseDashFVueq),
+            '𖠀' => Ok(BamumSupplement::BamumLetterPhaseDashANgkueMfon),
+            '𖠁' => Ok(BamumSupplement::BamumLetterPhaseDashAGbieeFon),
+            '𖠂' => Ok(BamumSupplement::BamumLetterPhaseDashAPonMfonPipaemgbiee),
+            '𖠃' => Ok(BamumSupplement::BamumLetterPhaseDashAPonMfonPipaemba),
+            '𖠄' => Ok(BamumSupplement::BamumLetterPhaseDashANaaMfon),
+            '𖠅' => Ok(BamumSupplement::BamumLetterPhaseDashAShuenshuet),
+            '𖠆' => Ok(BamumSupplement::BamumLetterPhaseDashATitaMfon),
+            '𖠇' => Ok(BamumSupplement::BamumLetterPhaseDashANzaMfon),
+            '𖠈' => Ok(BamumSupplement::BamumLetterPhaseDashAShindaPaNji),
+            '𖠉' => Ok(BamumSupplement::BamumLetterPhaseDashAPonPaNjiPipaemgbiee),
+            '𖠊' => Ok(BamumSupplement::BamumLetterPhaseDashAPonPaNjiPipaemba),
+            '𖠋' => Ok(BamumSupplement::BamumLetterPhaseDashAMaembgbiee),
+            '𖠌' => Ok(BamumSupplement::BamumLetterPhaseDashATuMaemba),
+            '𖠍' => Ok(BamumSupplement::BamumLetterPhaseDashANgangu),
+            '𖠎' => Ok(BamumSupplement::BamumLetterPhaseDashAMaemveux),
+            '𖠏' => Ok(BamumSupplement::BamumLetterPhaseDashAMansuae),
+            '𖠐' => Ok(BamumSupplement::BamumLetterPhaseDashAMveuaengam),
+            '𖠑' => Ok(BamumSupplement::BamumLetterPhaseDashASeunyam),
+            '𖠒' => Ok(BamumSupplement::BamumLetterPhaseDashANtoqpen),
+            '𖠓' => Ok(BamumSupplement::BamumLetterPhaseDashAKeukeutnda),
+            '𖠔' => Ok(BamumSupplement::BamumLetterPhaseDashANkindi),
+            '𖠕' => Ok(BamumSupplement::BamumLetterPhaseDashASuu),
+            '𖠖' => Ok(BamumSupplement::BamumLetterPhaseDashANgkuenzeum),
+            '𖠗' => Ok(BamumSupplement::BamumLetterPhaseDashALapaq),
+            '𖠘' => Ok(BamumSupplement::BamumLetterPhaseDashALetKut),
+            '𖠙' => Ok(BamumSupplement::BamumLetterPhaseDashANtapMfaa),
+            '𖠚' => Ok(BamumSupplement::BamumLetterPhaseDashAMaekeup),
+            '𖠛' => Ok(BamumSupplement::BamumLetterPhaseDashAPashae),
+            '𖠜' => Ok(BamumSupplement::BamumLetterPhaseDashAGheuaerae),
+            '𖠝' => Ok(BamumSupplement::BamumLetterPhaseDashAPamshae),
+            '𖠞' => Ok(BamumSupplement::BamumLetterPhaseDashAMonNggeuaet),
+            '𖠟' => Ok(BamumSupplement::BamumLetterPhaseDashANzunMeut),
+            '𖠠' => Ok(BamumSupplement::BamumLetterPhaseDashAUYuqNae),
+            '𖠡' => Ok(BamumSupplement::BamumLetterPhaseDashAGheuaegheuae),
+            '𖠢' => Ok(BamumSupplement::BamumLetterPhaseDashANtapNtaa),
+            '𖠣' => Ok(BamumSupplement::BamumLetterPhaseDashASisa),
+            '𖠤' => Ok(BamumSupplement::BamumLetterPhaseDashAMgbasa),
+            '𖠥' => Ok(BamumSupplement::BamumLetterPhaseDashAMeunjomndeuq),
+            '𖠦' => Ok(BamumSupplement::BamumLetterPhaseDashAMoompuq),
+            '𖠧' => Ok(BamumSupplement::BamumLetterPhaseDashAKafa),
+            '𖠨' => Ok(BamumSupplement::BamumLetterPhaseDashAPaLeeraewa),
+            '𖠩' => Ok(BamumSupplement::BamumLetterPhaseDashANdaLeeraewa),
+            '𖠪' => Ok(BamumSupplement::BamumLetterPhaseDashAPet),
+            '𖠫' => Ok(BamumSupplement::BamumLetterPhaseDashAMaemkpen),
+            '𖠬' => Ok(BamumSupplement::BamumLetterPhaseDashANika),
+            '𖠭' => Ok(BamumSupplement::BamumLetterPhaseDashAPup),
+            '𖠮' => Ok(BamumSupplement::BamumLetterPhaseDashATuaep),
+            '𖠯' => Ok(BamumSupplement::BamumLetterPhaseDashALuaep),
+            '𖠰' => Ok(BamumSupplement::BamumLetterPhaseDashASonjam),
+            '𖠱' => Ok(BamumSupplement::BamumLetterPhaseDashATeuteuwen),
+            '𖠲' => Ok(BamumSupplement::BamumLetterPhaseDashAMaenyi),
+            '𖠳' => Ok(BamumSupplement::BamumLetterPhaseDashAKet),
+            '𖠴' => Ok(BamumSupplement::BamumLetterPhaseDashANdaanggeuaet),
+            '𖠵' => Ok(BamumSupplement::BamumLetterPhaseDashAKuoq),
+            '𖠶' => Ok(BamumSupplement::BamumLetterPhaseDashAMoomeut),
+            '𖠷' => Ok(BamumSupplement::BamumLetterPhaseDashAShum),
+            '𖠸' => Ok(BamumSupplement::BamumLetterPhaseDashALommae),
+            '𖠹' => Ok(BamumSupplement::BamumLetterPhaseDashAFiri),
+            '𖠺' => Ok(BamumSupplement::BamumLetterPhaseDashARom),
+            '𖠻' => Ok(BamumSupplement::BamumLetterPhaseDashAKpoq),
+            '𖠼' => Ok(BamumSupplement::BamumLetterPhaseDashASoq),
+            '𖠽' => Ok(BamumSupplement::BamumLetterPhaseDashAMapPieet),
+            '𖠾' => Ok(BamumSupplement::BamumLetterPhaseDashAShirae),
+            '𖠿' => Ok(BamumSupplement::BamumLetterPhaseDashANtap),
+            '𖡀' => Ok(BamumSupplement::BamumLetterPhaseDashAShoqNshutYum),
+            '𖡁' => Ok(BamumSupplement::BamumLetterPhaseDashANyitMongkeuaeq),
+            '𖡂' => Ok(BamumSupplement::BamumLetterPhaseDashAPaarae),
+            '𖡃' => Ok(BamumSupplement::BamumLetterPhaseDashANkaarae),
+            '𖡄' => Ok(BamumSupplement::BamumLetterPhaseDashAUnknown),
+            '𖡅' => Ok(BamumSupplement::BamumLetterPhaseDashANggen),
+            '𖡆' => Ok(BamumSupplement::BamumLetterPhaseDashAMaesi),
+            '𖡇' => Ok(BamumSupplement::BamumLetterPhaseDashANjam),
+            '𖡈' => Ok(BamumSupplement::BamumLetterPhaseDashAMbanyi),
+            '𖡉' => Ok(BamumSupplement::BamumLetterPhaseDashANyet),
+            '𖡊' => Ok(BamumSupplement::BamumLetterPhaseDashATeuaen),
+            '𖡋' => Ok(BamumSupplement::BamumLetterPhaseDashASot),
+            '𖡌' => Ok(BamumSupplement::BamumLetterPhaseDashAPaam),
+            '𖡍' => Ok(BamumSupplement::BamumLetterPhaseDashANshiee),
+            '𖡎' => Ok(BamumSupplement::BamumLetterPhaseDashAMaem),
+            '𖡏' => Ok(BamumSupplement::BamumLetterPhaseDashANyi),
+            '𖡐' => Ok(BamumSupplement::BamumLetterPhaseDashAKaq),
+            '𖡑' => Ok(BamumSupplement::BamumLetterPhaseDashANsha),
+            '𖡒' => Ok(BamumSupplement::BamumLetterPhaseDashAVee),
+            '𖡓' => Ok(BamumSupplement::BamumLetterPhaseDashALu),
+            '𖡔' => Ok(BamumSupplement::BamumLetterPhaseDashANen),
+            '𖡕' => Ok(BamumSupplement::BamumLetterPhaseDashANaq),
+            '𖡖' => Ok(BamumSupplement::BamumLetterPhaseDashAMbaq),
+            '𖡗' => Ok(BamumSupplement::BamumLetterPhaseDashBNshuet),
+            '𖡘' => Ok(BamumSupplement::BamumLetterPhaseDashBTuMaemgbiee),
+            '𖡙' => Ok(BamumSupplement::BamumLetterPhaseDashBSiee),
+            '𖡚' => Ok(BamumSupplement::BamumLetterPhaseDashBSetTu),
+            '𖡛' => Ok(BamumSupplement::BamumLetterPhaseDashBLomNteum),
+            '𖡜' => Ok(BamumSupplement::BamumLetterPhaseDashBMbaMaelee),
+            '𖡝' => Ok(BamumSupplement::BamumLetterPhaseDashBKieem),
+            '𖡞' => Ok(BamumSupplement::BamumLetterPhaseDashBYeurae),
+            '𖡟' => Ok(BamumSupplement::BamumLetterPhaseDashBMbaarae),
+            '𖡠' => Ok(BamumSupplement::BamumLetterPhaseDashBKam),
+            '𖡡' => Ok(BamumSupplement::BamumLetterPhaseDashBPeeshi),
+            '𖡢' => Ok(BamumSupplement::BamumLetterPhaseDashBYafuLeeraewa),
+            '𖡣' => Ok(BamumSupplement::BamumLetterPhaseDashBLamNshutNyam),
+            '𖡤' => Ok(BamumSupplement::BamumLetterPhaseDashBNtieeSheuoq),
+            '𖡥' => Ok(BamumSupplement::BamumLetterPhaseDashBNduNjaa),
+            '𖡦' => Ok(BamumSupplement::BamumLetterPhaseDashBGheugheuaem),
+            '𖡧' => Ok(BamumSupplement::BamumLetterPhaseDashBPit),
+            '𖡨' => Ok(BamumSupplement::BamumLetterPhaseDashBTuNsiee),
+            '𖡩' => Ok(BamumSupplement::BamumLetterPhaseDashBShetNjaq),
+            '𖡪' => Ok(BamumSupplement::BamumLetterPhaseDashBSheuaeqtu),
+            '𖡫' => Ok(BamumSupplement::BamumLetterPhaseDashBMfonTeuaeq),
+            '𖡬' => Ok(BamumSupplement::BamumLetterPhaseDashBMbitMbaaket),
+            '𖡭' => Ok(BamumSupplement::BamumLetterPhaseDashBNyiNteum),
+            '𖡮' => Ok(BamumSupplement::BamumLetterPhaseDashBKeupuq),
+            '𖡯' => Ok(BamumSupplement::BamumLetterPhaseDashBGheughen),
+            '𖡰' => Ok(BamumSupplement::BamumLetterPhaseDashBKeuyeux),
+            '𖡱' => Ok(BamumSupplement::BamumLetterPhaseDashBLaanae),
+            '𖡲' => Ok(BamumSupplement::BamumLetterPhaseDashBParum),
+            '𖡳' => Ok(BamumSupplement::BamumLetterPhaseDashBVeum),
+            '𖡴' => Ok(BamumSupplement::BamumLetterPhaseDashBNgkindiMvop),
+            '𖡵' => Ok(BamumSupplement::BamumLetterPhaseDashBNggeuMbu),
+            '𖡶' => Ok(BamumSupplement::BamumLetterPhaseDashBWuaet),
+            '𖡷' => Ok(BamumSupplement::BamumLetterPhaseDashBSakeuae),
+            '𖡸' => Ok(BamumSupplement::BamumLetterPhaseDashBTaam),
+            '𖡹' => Ok(BamumSupplement::BamumLetterPhaseDashBMeuq),
+            '𖡺' => Ok(BamumSupplement::BamumLetterPhaseDashBNgguoq),
+            '𖡻' => Ok(BamumSupplement::BamumLetterPhaseDashBNgguoqLarge),
+            '𖡼' => Ok(BamumSupplement::BamumLetterPhaseDashBMfiyaq),
+            '𖡽' => Ok(BamumSupplement::BamumLetterPhaseDashBSue),
+            '𖡾' => Ok(BamumSupplement::BamumLetterPhaseDashBMbeuri),
+            '𖡿' => Ok(BamumSupplement::BamumLetterPhaseDashBMontieen),
+            '𖢀' => Ok(BamumSupplement::BamumLetterPhaseDashBNyaemae),
+            '𖢁' => Ok(BamumSupplement::BamumLetterPhaseDashBPungaam),
+            '𖢂' => Ok(BamumSupplement::BamumLetterPhaseDashBMeutNggeet),
+            '𖢃' => Ok(BamumSupplement::BamumLetterPhaseDashBFeux),
+            '𖢄' => Ok(BamumSupplement::BamumLetterPhaseDashBMbuoq),
+            '𖢅' => Ok(BamumSupplement::BamumLetterPhaseDashBFee),
+            '𖢆' => Ok(BamumSupplement::BamumLetterPhaseDashBKeuaem),
+            '𖢇' => Ok(BamumSupplement::BamumLetterPhaseDashBMaNjeuaena),
+            '𖢈' => Ok(BamumSupplement::BamumLetterPhaseDashBMaNjuqa),
+            '𖢉' => Ok(BamumSupplement::BamumLetterPhaseDashBLet),
+            '𖢊' => Ok(BamumSupplement::BamumLetterPhaseDashBNggaam),
+            '𖢋' => Ok(BamumSupplement::BamumLetterPhaseDashBNsen),
+            '𖢌' => Ok(BamumSupplement::BamumLetterPhaseDashBMa),
+            '𖢍' => Ok(BamumSupplement::BamumLetterPhaseDashBKiq),
+            '𖢎' => Ok(BamumSupplement::BamumLetterPhaseDashBNgom),
+            '𖢏' => Ok(BamumSupplement::BamumLetterPhaseDashCNgkueMaemba),
+            '𖢐' => Ok(BamumSupplement::BamumLetterPhaseDashCNza),
+            '𖢑' => Ok(BamumSupplement::BamumLetterPhaseDashCYum),
+            '𖢒' => Ok(BamumSupplement::BamumLetterPhaseDashCWangkuoq),
+            '𖢓' => Ok(BamumSupplement::BamumLetterPhaseDashCNggen),
+            '𖢔' => Ok(BamumSupplement::BamumLetterPhaseDashCNdeuaeree),
+            '𖢕' => Ok(BamumSupplement::BamumLetterPhaseDashCNgkaq),
+            '𖢖' => Ok(BamumSupplement::BamumLetterPhaseDashCGharae),
+            '𖢗' => Ok(BamumSupplement::BamumLetterPhaseDashCMbeekeet),
+            '𖢘' => Ok(BamumSupplement::BamumLetterPhaseDashCGbayi),
+            '𖢙' => Ok(BamumSupplement::BamumLetterPhaseDashCNyirMkparaqMeun),
+            '𖢚' => Ok(BamumSupplement::BamumLetterPhaseDashCNtuMbit),
+            '𖢛' => Ok(BamumSupplement::BamumLetterPhaseDashCMbeum),
+            '𖢜' => Ok(BamumSupplement::BamumLetterPhaseDashCPirieen),
+            '𖢝' => Ok(BamumSupplement::BamumLetterPhaseDashCNdombu),
+            '𖢞' => Ok(BamumSupplement::BamumLetterPhaseDashCMbaaCabbageDashTree),
+            '𖢟' => Ok(BamumSupplement::BamumLetterPhaseDashCKeusheuaep),
+            '𖢠' => Ok(BamumSupplement::BamumLetterPhaseDashCGhap),
+            '𖢡' => Ok(BamumSupplement::BamumLetterPhaseDashCKeukaq),
+            '𖢢' => Ok(BamumSupplement::BamumLetterPhaseDashCYuMuomae),
+            '𖢣' => Ok(BamumSupplement::BamumLetterPhaseDashCNzeum),
+            '𖢤' => Ok(BamumSupplement::BamumLetterPhaseDashCMbue),
+            '𖢥' => Ok(BamumSupplement::BamumLetterPhaseDashCNseuaen),
+            '𖢦' => Ok(BamumSupplement::BamumLetterPhaseDashCMbit),
+            '𖢧' => Ok(BamumSupplement::BamumLetterPhaseDashCYeuq),
+            '𖢨' => Ok(BamumSupplement::BamumLetterPhaseDashCKparaq),
+            '𖢩' => Ok(BamumSupplement::BamumLetterPhaseDashCKaa),
+            '𖢪' => Ok(BamumSupplement::BamumLetterPhaseDashCSeux),
+            '𖢫' => Ok(BamumSupplement::BamumLetterPhaseDashCNdida),
+            '𖢬' => Ok(BamumSupplement::BamumLetterPhaseDashCTaashae),
+            '𖢭' => Ok(BamumSupplement::BamumLetterPhaseDashCNjueq),
+            '𖢮' => Ok(BamumSupplement::BamumLetterPhaseDashCTitaYue),
+            '𖢯' => Ok(BamumSupplement::BamumLetterPhaseDashCSuaet),
+            '𖢰' => Ok(BamumSupplement::BamumLetterPhaseDashCNgguaenNyam),
+            '𖢱' => Ok(BamumSupplement::BamumLetterPhaseDashCVeux),
+            '𖢲' => Ok(BamumSupplement::BamumLetterPhaseDashCNansanaq),
+            '𖢳' => Ok(BamumSupplement::BamumLetterPhaseDashCMaKeuaeri),
+            '𖢴' => Ok(BamumSupplement::BamumLetterPhaseDashCNtaa),
+            '𖢵' => Ok(BamumSupplement::BamumLetterPhaseDashCNgguon),
+            '𖢶' => Ok(BamumSupplement::BamumLetterPhaseDashCLap),
+            '𖢷' => Ok(BamumSupplement::BamumLetterPhaseDashCMbirieen),
+            '𖢸' => Ok(BamumSupplement::BamumLetterPhaseDashCMgbasaq),
+            '𖢹' => Ok(BamumSupplement::BamumLetterPhaseDashCNteungba),
+            '𖢺' => Ok(BamumSupplement::BamumLetterPhaseDashCTeuteux),
+            '𖢻' => Ok(BamumSupplement::BamumLetterPhaseDashCNggum),
+            '𖢼' => Ok(BamumSupplement::BamumLetterPhaseDashCFue),
+            '𖢽' => Ok(BamumSupplement::BamumLetterPhaseDashCNdeut),
+            '𖢾' => Ok(BamumSupplement::BamumLetterPhaseDashCNsa),
+            '𖢿' => Ok(BamumSupplement::BamumLetterPhaseDashCNshaq),
+            '𖣀' => Ok(BamumSupplement::BamumLetterPhaseDashCBung),
+            '𖣁' => Ok(BamumSupplement::BamumLetterPhaseDashCVeuaepen),
+            '𖣂' => Ok(BamumSupplement::BamumLetterPhaseDashCMberae),
+            '𖣃' => Ok(BamumSupplement::BamumLetterPhaseDashCRu),
+            '𖣄' => Ok(BamumSupplement::BamumLetterPhaseDashCNjaem),
+            '𖣅' => Ok(BamumSupplement::BamumLetterPhaseDashCLam),
+            '𖣆' => Ok(BamumSupplement::BamumLetterPhaseDashCTituaep),
+            '𖣇' => Ok(BamumSupplement::BamumLetterPhaseDashCNsuotNgom),
+            '𖣈' => Ok(BamumSupplement::BamumLetterPhaseDashCNjeeee),
+            '𖣉' => Ok(BamumSupplement::BamumLetterPhaseDashCKet),
+            '𖣊' => Ok(BamumSupplement::BamumLetterPhaseDashCNggu),
+            '𖣋' => Ok(BamumSupplement::BamumLetterPhaseDashCMaesi),
+            '𖣌' => Ok(BamumSupplement::BamumLetterPhaseDashCMbuaem),
+            '𖣍' => Ok(BamumSupplement::BamumLetterPhaseDashCLu),
+            '𖣎' => Ok(BamumSupplement::BamumLetterPhaseDashCKut),
+            '𖣏' => Ok(BamumSupplement::BamumLetterPhaseDashCNjam),
+            '𖣐' => Ok(BamumSupplement::BamumLetterPhaseDashCNgom),
+            '𖣑' => Ok(BamumSupplement::BamumLetterPhaseDashCWup),
+            '𖣒' => Ok(BamumSupplement::BamumLetterPhaseDashCNggueet),
+            '𖣓' => Ok(BamumSupplement::BamumLetterPhaseDashCNsom),
+            '𖣔' => Ok(BamumSupplement::BamumLetterPhaseDashCNten),
+            '𖣕' => Ok(BamumSupplement::BamumLetterPhaseDashCKuopNkaarae),
+            '𖣖' => Ok(BamumSupplement::BamumLetterPhaseDashCNsun),
+            '𖣗' => Ok(BamumSupplement::BamumLetterPhaseDashCNdam),
+            '𖣘' => Ok(BamumSupplement::BamumLetterPhaseDashCMaNsiee),
+            '𖣙' => Ok(BamumSupplement::BamumLetterPhaseDashCYaa),
+            '𖣚' => Ok(BamumSupplement::BamumLetterPhaseDashCNdap),
+            '𖣛' => Ok(BamumSupplement::BamumLetterPhaseDashCShueq),
+            '𖣜' => Ok(BamumSupplement::BamumLetterPhaseDashCSetfon),
+            '𖣝' => Ok(BamumSupplement::BamumLetterPhaseDashCMbi),
+            '𖣞' => Ok(BamumSupplement::BamumLetterPhaseDashCMaemba),
+            '𖣟' => Ok(BamumSupplement::BamumLetterPhaseDashCMbanyi),
+            '𖣠' => Ok(BamumSupplement::BamumLetterPhaseDashCKeuseux),
+            '𖣡' => Ok(BamumSupplement::BamumLetterPhaseDashCMbeux),
+            '𖣢' => Ok(BamumSupplement::BamumLetterPhaseDashCKeum),
+            '𖣣' => Ok(BamumSupplement::BamumLetterPhaseDashCMbaaPicket),
+            '𖣤' => Ok(BamumSupplement::BamumLetterPhaseDashCYuwoq),
+            '𖣥' => Ok(BamumSupplement::BamumLetterPhaseDashCNjeux),
+            '𖣦' => Ok(BamumSupplement::BamumLetterPhaseDashCMiee),
+            '𖣧' => Ok(BamumSupplement::BamumLetterPhaseDashCMuae),
+            '𖣨' => Ok(BamumSupplement::BamumLetterPhaseDashCShiq),
+            '𖣩' => Ok(BamumSupplement::BamumLetterPhaseDashCKenLaw),
+            '𖣪' => Ok(BamumSupplement::BamumLetterPhaseDashCKenFatigue),
+            '𖣫' => Ok(BamumSupplement::BamumLetterPhaseDashCNgaq),
+            '𖣬' => Ok(BamumSupplement::BamumLetterPhaseDashCNaq),
+            '𖣭' => Ok(BamumSupplement::BamumLetterPhaseDashCLiq),
+            '𖣮' => Ok(BamumSupplement::BamumLetterPhaseDashCPin),
+            '𖣯' => Ok(BamumSupplement::BamumLetterPhaseDashCPen),
+            '𖣰' => Ok(BamumSupplement::BamumLetterPhaseDashCTet),
+            '𖣱' => Ok(BamumSupplement::BamumLetterPhaseDashDMbuo),
+            '𖣲' => Ok(BamumSupplement::BamumLetterPhaseDashDWap),
+            '𖣳' => Ok(BamumSupplement::BamumLetterPhaseDashDNji),
+            '𖣴' => Ok(BamumSupplement::BamumLetterPhaseDashDMfon),
+            '𖣵' => Ok(BamumSupplement::BamumLetterPhaseDashDNjiee),
+            '𖣶' => Ok(BamumSupplement::BamumLetterPhaseDashDLiee),
+            '𖣷' => Ok(BamumSupplement::BamumLetterPhaseDashDNjeut),
+            '𖣸' => Ok(BamumSupplement::BamumLetterPhaseDashDNshee),
+            '𖣹' => Ok(BamumSupplement::BamumLetterPhaseDashDNggaamae),
+            '𖣺' => Ok(BamumSupplement::BamumLetterPhaseDashDNyam),
+            '𖣻' => Ok(BamumSupplement::BamumLetterPhaseDashDWuaen),
+            '𖣼' => Ok(BamumSupplement::BamumLetterPhaseDashDNgkun),
+            '𖣽' => Ok(BamumSupplement::BamumLetterPhaseDashDShee),
+            '𖣾' => Ok(BamumSupplement::BamumLetterPhaseDashDNgkap),
+            '𖣿' => Ok(BamumSupplement::BamumLetterPhaseDashDKeuaetmeun),
+            '𖤀' => Ok(BamumSupplement::BamumLetterPhaseDashDTeut),
+            '𖤁' => Ok(BamumSupplement::BamumLetterPhaseDashDSheuae),
+            '𖤂' => Ok(BamumSupplement::BamumLetterPhaseDashDNjap),
+            '𖤃' => Ok(BamumSupplement::BamumLetterPhaseDashDSue),
+            '𖤄' => Ok(BamumSupplement::BamumLetterPhaseDashDKet),
+            '𖤅' => Ok(BamumSupplement::BamumLetterPhaseDashDYaemmae),
+            '𖤆' => Ok(BamumSupplement::BamumLetterPhaseDashDKuom),
+            '𖤇' => Ok(BamumSupplement::BamumLetterPhaseDashDSap),
+            '𖤈' => Ok(BamumSupplement::BamumLetterPhaseDashDMfeut),
+            '𖤉' => Ok(BamumSupplement::BamumLetterPhaseDashDNdeux),
+            '𖤊' => Ok(BamumSupplement::BamumLetterPhaseDashDMaleeri),
+            '𖤋' => Ok(BamumSupplement::BamumLetterPhaseDashDMeut),
+            '𖤌' => Ok(BamumSupplement::BamumLetterPhaseDashDSeuaeq),
+            '𖤍' => Ok(BamumSupplement::BamumLetterPhaseDashDYen),
+            '𖤎' => Ok(BamumSupplement::BamumLetterPhaseDashDNjeuaem),
+            '𖤏' => Ok(BamumSupplement::BamumLetterPhaseDashDKeuotMbuae),
+            '𖤐' => Ok(BamumSupplement::BamumLetterPhaseDashDNgkeuri),
+            '𖤑' => Ok(BamumSupplement::BamumLetterPhaseDashDTu),
+            '𖤒' => Ok(BamumSupplement::BamumLetterPhaseDashDGhaa),
+            '𖤓' => Ok(BamumSupplement::BamumLetterPhaseDashDNgkyee),
+            '𖤔' => Ok(BamumSupplement::BamumLetterPhaseDashDFeufeuaet),
+            '𖤕' => Ok(BamumSupplement::BamumLetterPhaseDashDNdee),
+            '𖤖' => Ok(BamumSupplement::BamumLetterPhaseDashDMgbofum),
+            '𖤗' => Ok(BamumSupplement::BamumLetterPhaseDashDLeuaep),
+            '𖤘' => Ok(BamumSupplement::BamumLetterPhaseDashDNdon),
+            '𖤙' => Ok(BamumSupplement::BamumLetterPhaseDashDMoni),
+            '𖤚' => Ok(BamumSupplement::BamumLetterPhaseDashDMgbeun),
+            '𖤛' => Ok(BamumSupplement::BamumLetterPhaseDashDPuut),
+            '𖤜' => Ok(BamumSupplement::BamumLetterPhaseDashDMgbiee),
+            '𖤝' => Ok(BamumSupplement::BamumLetterPhaseDashDMfo),
+            '𖤞' => Ok(BamumSupplement::BamumLetterPhaseDashDLum),
+            '𖤟' => Ok(BamumSupplement::BamumLetterPhaseDashDNsieep),
+            '𖤠' => Ok(BamumSupplement::BamumLetterPhaseDashDMbaa),
+            '𖤡' => Ok(BamumSupplement::BamumLetterPhaseDashDKwaet),
+            '𖤢' => Ok(BamumSupplement::BamumLetterPhaseDashDNyet),
+            '𖤣' => Ok(BamumSupplement::BamumLetterPhaseDashDTeuaen),
+            '𖤤' => Ok(BamumSupplement::BamumLetterPhaseDashDSot),
+            '𖤥' => Ok(BamumSupplement::BamumLetterPhaseDashDYuwoq),
+            '𖤦' => Ok(BamumSupplement::BamumLetterPhaseDashDKeum),
+            '𖤧' => Ok(BamumSupplement::BamumLetterPhaseDashDRaem),
+            '𖤨' => Ok(BamumSupplement::BamumLetterPhaseDashDTeeee),
+            '𖤩' => Ok(BamumSupplement::BamumLetterPhaseDashDNgkeuaeq),
+            '𖤪' => Ok(BamumSupplement::BamumLetterPhaseDashDMfeuae),
+            '𖤫' => Ok(BamumSupplement::BamumLetterPhaseDashDNsieet),
+            '𖤬' => Ok(BamumSupplement::BamumLetterPhaseDashDKeup),
+            '𖤭' => Ok(BamumSupplement::BamumLetterPhaseDashDPip),
+            '𖤮' => Ok(BamumSupplement::BamumLetterPhaseDashDPeutae),
+            '𖤯' => Ok(BamumSupplement::BamumLetterPhaseDashDNyue),
+            '𖤰' => Ok(BamumSupplement::BamumLetterPhaseDashDLet),
+            '𖤱' => Ok(BamumSupplement::BamumLetterPhaseDashDNggaam),
+            '𖤲' => Ok(BamumSupplement::BamumLetterPhaseDashDMfiee),
+            '𖤳' => Ok(BamumSupplement::BamumLetterPhaseDashDNggwaen),
+            '𖤴' => Ok(BamumSupplement::BamumLetterPhaseDashDYuom),
+            '𖤵' => Ok(BamumSupplement::BamumLetterPhaseDashDPap),
+            '𖤶' => Ok(BamumSupplement::BamumLetterPhaseDashDYuop),
+            '𖤷' => Ok(BamumSupplement::BamumLetterPhaseDashDNdam),
+            '𖤸' => Ok(BamumSupplement::BamumLetterPhaseDashDNteum),
+            '𖤹' => Ok(BamumSupplement::BamumLetterPhaseDashDSuae),
+            '𖤺' => Ok(BamumSupplement::BamumLetterPhaseDashDKun),
+            '𖤻' => Ok(BamumSupplement::BamumLetterPhaseDashDNggeux),
+            '𖤼' => Ok(BamumSupplement::BamumLetterPhaseDashDNgkiee),
+            '𖤽' => Ok(BamumSupplement::BamumLetterPhaseDashDTuot),
+            '𖤾' => Ok(BamumSupplement::BamumLetterPhaseDashDMeun),
+            '𖤿' => Ok(BamumSupplement::BamumLetterPhaseDashDKuq),
+            '𖥀' => Ok(BamumSupplement::BamumLetterPhaseDashDNsum),
+            '𖥁' => Ok(BamumSupplement::BamumLetterPhaseDashDTeun),
+            '𖥂' => Ok(BamumSupplement::BamumLetterPhaseDashDMaenjet),
+            '𖥃' => Ok(BamumSupplement::BamumLetterPhaseDashDNggap),
+            '𖥄' => Ok(BamumSupplement::BamumLetterPhaseDashDLeum),
+            '𖥅' => Ok(BamumSupplement::BamumLetterPhaseDashDNgguom),
+            '𖥆' => Ok(BamumSupplement::BamumLetterPhaseDashDNshut),
+            '𖥇' => Ok(BamumSupplement::BamumLetterPhaseDashDNjueq),
+            '𖥈' => Ok(BamumSupplement::BamumLetterPhaseDashDGheuae),
+            '𖥉' => Ok(BamumSupplement::BamumLetterPhaseDashDKu),
+            '𖥊' => Ok(BamumSupplement::BamumLetterPhaseDashDRenOld),
+            '𖥋' => Ok(BamumSupplement::BamumLetterPhaseDashDTae),
+            '𖥌' => Ok(BamumSupplement::BamumLetterPhaseDashDToq),
+            '𖥍' => Ok(BamumSupplement::BamumLetterPhaseDashDNyi),
+            '𖥎' => Ok(BamumSupplement::BamumLetterPhaseDashDRii),
+            '𖥏' => Ok(BamumSupplement::BamumLetterPhaseDashDLeeee),
+            '𖥐' => Ok(BamumSupplement::BamumLetterPhaseDashDMeeee),
+            '𖥑' => Ok(BamumSupplement::BamumLetterPhaseDashDM),
+            '𖥒' => Ok(BamumSupplement::BamumLetterPhaseDashDSuu),
+            '𖥓' => Ok(BamumSupplement::BamumLetterPhaseDashDMu),
+            '𖥔' => Ok(BamumSupplement::BamumLetterPhaseDashDShii),
+            '𖥕' => Ok(BamumSupplement::BamumLetterPhaseDashDSheux),
+            '𖥖' => Ok(BamumSupplement::BamumLetterPhaseDashDKyee),
+            '𖥗' => Ok(BamumSupplement::BamumLetterPhaseDashDNu),
+            '𖥘' => Ok(BamumSupplement::BamumLetterPhaseDashDShu),
+            '𖥙' => Ok(BamumSupplement::BamumLetterPhaseDashDNtee),
+            '𖥚' => Ok(BamumSupplement::BamumLetterPhaseDashDPee),
+            '𖥛' => Ok(BamumSupplement::BamumLetterPhaseDashDNi),
+            '𖥜' => Ok(BamumSupplement::BamumLetterPhaseDashDShoq),
+            '𖥝' => Ok(BamumSupplement::BamumLetterPhaseDashDPuq),
+            '𖥞' => Ok(BamumSupplement::BamumLetterPhaseDashDMvop),
+            '𖥟' => Ok(BamumSupplement::BamumLetterPhaseDashDLoq),
+            '𖥠' => Ok(BamumSupplement::BamumLetterPhaseDashDRenMuch),
+            '𖥡' => Ok(BamumSupplement::BamumLetterPhaseDashDTi),
+            '𖥢' => Ok(BamumSupplement::BamumLetterPhaseDashDNtuu),
+            '𖥣' => Ok(BamumSupplement::BamumLetterPhaseDashDMbaaSeven),
+            '𖥤' => Ok(BamumSupplement::BamumLetterPhaseDashDSaq),
+            '𖥥' => Ok(BamumSupplement::BamumLetterPhaseDashDFaa),
+            '𖥦' => Ok(BamumSupplement::BamumLetterPhaseDashENdap),
+            '𖥧' => Ok(BamumSupplement::BamumLetterPhaseDashEToon),
+            '𖥨' => Ok(BamumSupplement::BamumLetterPhaseDashEMbeum),
+            '𖥩' => Ok(BamumSupplement::BamumLetterPhaseDashELap),
+            '𖥪' => Ok(BamumSupplement::BamumLetterPhaseDashEVom),
+            '𖥫' => Ok(BamumSupplement::BamumLetterPhaseDashELoon),
+            '𖥬' => Ok(BamumSupplement::BamumLetterPhaseDashEPaa),
+            '𖥭' => Ok(BamumSupplement::BamumLetterPhaseDashESom),
+            '𖥮' => Ok(BamumSupplement::BamumLetterPhaseDashERaq),
+            '𖥯' => Ok(BamumSupplement::BamumLetterPhaseDashENshuop),
+            '𖥰' => Ok(BamumSupplement::BamumLetterPhaseDashENdun),
+            '𖥱' => Ok(BamumSupplement::BamumLetterPhaseDashEPuae),
+            '𖥲' => Ok(BamumSupplement::BamumLetterPhaseDashETam),
+            '𖥳' => Ok(BamumSupplement::BamumLetterPhaseDashENgka),
+            '𖥴' => Ok(BamumSupplement::BamumLetterPhaseDashEKpeux),
+            '𖥵' => Ok(BamumSupplement::BamumLetterPhaseDashEWuo),
+            '𖥶' => Ok(BamumSupplement::BamumLetterPhaseDashESee),
+            '𖥷' => Ok(BamumSupplement::BamumLetterPhaseDashENggeuaet),
+            '𖥸' => Ok(BamumSupplement::BamumLetterPhaseDashEPaam),
+            '𖥹' => Ok(BamumSupplement::BamumLetterPhaseDashEToo),
+            '𖥺' => Ok(BamumSupplement::BamumLetterPhaseDashEKuop),
+            '𖥻' => Ok(BamumSupplement::BamumLetterPhaseDashELom),
+            '𖥼' => Ok(BamumSupplement::BamumLetterPhaseDashENshiee),
+            '𖥽' => Ok(BamumSupplement::BamumLetterPhaseDashENgop),
+            '𖥾' => Ok(BamumSupplement::BamumLetterPhaseDashEMaem),
+            '𖥿' => Ok(BamumSupplement::BamumLetterPhaseDashENgkeux),
+            '𖦀' => Ok(BamumSupplement::BamumLetterPhaseDashENgoq),
+            '𖦁' => Ok(BamumSupplement::BamumLetterPhaseDashENshue),
+            '𖦂' => Ok(BamumSupplement::BamumLetterPhaseDashERimgba),
+            '𖦃' => Ok(BamumSupplement::BamumLetterPhaseDashENjeux),
+            '𖦄' => Ok(BamumSupplement::BamumLetterPhaseDashEPeem),
+            '𖦅' => Ok(BamumSupplement::BamumLetterPhaseDashESaa),
+            '𖦆' => Ok(BamumSupplement::BamumLetterPhaseDashENggurae),
+            '𖦇' => Ok(BamumSupplement::BamumLetterPhaseDashEMgba),
+            '𖦈' => Ok(BamumSupplement::BamumLetterPhaseDashEGheux),
+            '𖦉' => Ok(BamumSupplement::BamumLetterPhaseDashENgkeuaem),
+            '𖦊' => Ok(BamumSupplement::BamumLetterPhaseDashENjaemli),
+            '𖦋' => Ok(BamumSupplement::BamumLetterPhaseDashEMap),
+            '𖦌' => Ok(BamumSupplement::BamumLetterPhaseDashELoot),
+            '𖦍' => Ok(BamumSupplement::BamumLetterPhaseDashENggeeee),
+            '𖦎' => Ok(BamumSupplement::BamumLetterPhaseDashENdiq),
+            '𖦏' => Ok(BamumSupplement::BamumLetterPhaseDashETaenNteum),
+            '𖦐' => Ok(BamumSupplement::BamumLetterPhaseDashESet),
+            '𖦑' => Ok(BamumSupplement::BamumLetterPhaseDashEPum),
+            '𖦒' => Ok(BamumSupplement::BamumLetterPhaseDashENdaaSoftness),
+            '𖦓' => Ok(BamumSupplement::BamumLetterPhaseDashENgguaeshaeNyam),
+            '𖦔' => Ok(BamumSupplement::BamumLetterPhaseDashEYiee),
+            '𖦕' => Ok(BamumSupplement::BamumLetterPhaseDashEGheun),
+            '𖦖' => Ok(BamumSupplement::BamumLetterPhaseDashETuae),
+            '𖦗' => Ok(BamumSupplement::BamumLetterPhaseDashEYeuae),
+            '𖦘' => Ok(BamumSupplement::BamumLetterPhaseDashEPo),
+            '𖦙' => Ok(BamumSupplement::BamumLetterPhaseDashETumae),
+            '𖦚' => Ok(BamumSupplement::BamumLetterPhaseDashEKeuae),
+            '𖦛' => Ok(BamumSupplement::BamumLetterPhaseDashESuaen),
+            '𖦜' => Ok(BamumSupplement::BamumLetterPhaseDashETeuaeq),
+            '𖦝' => Ok(BamumSupplement::BamumLetterPhaseDashEVeuae),
+            '𖦞' => Ok(BamumSupplement::BamumLetterPhaseDashEWeux),
+            '𖦟' => Ok(BamumSupplement::BamumLetterPhaseDashELaam),
+            '𖦠' => Ok(BamumSupplement::BamumLetterPhaseDashEPu),
+            '𖦡' => Ok(BamumSupplement::BamumLetterPhaseDashETaaq),
+            '𖦢' => Ok(BamumSupplement::BamumLetterPhaseDashEGhaamae),
+            '𖦣' => Ok(BamumSupplement::BamumLetterPhaseDashENgeureut),
+            '𖦤' => Ok(BamumSupplement::BamumLetterPhaseDashESheuaeq),
+            '𖦥' => Ok(BamumSupplement::BamumLetterPhaseDashEMgben),
+            '𖦦' => Ok(BamumSupplement::BamumLetterPhaseDashEMbee),
+            '𖦧' => Ok(BamumSupplement::BamumLetterPhaseDashENzaq),
+            '𖦨' => Ok(BamumSupplement::BamumLetterPhaseDashENkom),
+            '𖦩' => Ok(BamumSupplement::BamumLetterPhaseDashEGbet),
+            '𖦪' => Ok(BamumSupplement::BamumLetterPhaseDashETum),
+            '𖦫' => Ok(BamumSupplement::BamumLetterPhaseDashEKuet),
+            '𖦬' => Ok(BamumSupplement::BamumLetterPhaseDashEYap),
+            '𖦭' => Ok(BamumSupplement::BamumLetterPhaseDashENyiCleaver),
+            '𖦮' => Ok(BamumSupplement::BamumLetterPhaseDashEYit),
+            '𖦯' => Ok(BamumSupplement::BamumLetterPhaseDashEMfeuq),
+            '𖦰' => Ok(BamumSupplement::BamumLetterPhaseDashENdiaq),
+            '𖦱' => Ok(BamumSupplement::BamumLetterPhaseDashEPieeq),
+            '𖦲' => Ok(BamumSupplement::BamumLetterPhaseDashEYueq),
+            '𖦳' => Ok(BamumSupplement::BamumLetterPhaseDashELeuaem),
+            '𖦴' => Ok(BamumSupplement::BamumLetterPhaseDashEFue),
+            '𖦵' => Ok(BamumSupplement::BamumLetterPhaseDashEGbeux),
+            '𖦶' => Ok(BamumSupplement::BamumLetterPhaseDashENgkup),
+            '𖦷' => Ok(BamumSupplement::BamumLetterPhaseDashEKet),
+            '𖦸' => Ok(BamumSupplement::BamumLetterPhaseDashEMae),
+            '𖦹' => Ok(BamumSupplement::BamumLetterPhaseDashENgkaami),
+            '𖦺' => Ok(BamumSupplement::BamumLetterPhaseDashEGhet),
+            '𖦻' => Ok(BamumSupplement::BamumLetterPhaseDashEFa),
+            '𖦼' => Ok(BamumSupplement::BamumLetterPhaseDashENtum),
+            '𖦽' => Ok(BamumSupplement::BamumLetterPhaseDashEPeut),
+            '𖦾' => Ok(BamumSupplement::BamumLetterPhaseDashEYeum),
+            '𖦿' => Ok(BamumSupplement::BamumLetterPhaseDashENggeuae),
+            '𖧀' => Ok(BamumSupplement::BamumLetterPhaseDashENyiBetween),
+            '𖧁' => Ok(BamumSupplement::BamumLetterPhaseDashENzuq),
+            '𖧂' => Ok(BamumSupplement::BamumLetterPhaseDashEPoon),
+            '𖧃' => Ok(BamumSupplement::BamumLetterPhaseDashEMiee),
+            '𖧄' => Ok(BamumSupplement::BamumLetterPhaseDashEFuet),
+            '𖧅' => Ok(BamumSupplement::BamumLetterPhaseDashENae),
+            '𖧆' => Ok(BamumSupplement::BamumLetterPhaseDashEMuae),
+            '𖧇' => Ok(BamumSupplement::BamumLetterPhaseDashEGheuae),
+            '𖧈' => Ok(BamumSupplement::BamumLetterPhaseDashEFuI),
+            '𖧉' => Ok(BamumSupplement::BamumLetterPhaseDashEMvi),
+            '𖧊' => Ok(BamumSupplement::BamumLetterPhaseDashEPuaq),
+            '𖧋' => Ok(BamumSupplement::BamumLetterPhaseDashENgkum),
+            '𖧌' => Ok(BamumSupplement::BamumLetterPhaseDashEKut),
+            '𖧍' => Ok(BamumSupplement::BamumLetterPhaseDashEPiet),
+            '𖧎' => Ok(BamumSupplement::BamumLetterPhaseDashENtap),
+            '𖧏' => Ok(BamumSupplement::BamumLetterPhaseDashEYeuaet),
+            '𖧐' => Ok(BamumSupplement::BamumLetterPhaseDashENggup),
+            '𖧑' => Ok(BamumSupplement::BamumLetterPhaseDashEPaPeople),
+            '𖧒' => Ok(BamumSupplement::BamumLetterPhaseDashEFuCall),
+            '𖧓' => Ok(BamumSupplement::BamumLetterPhaseDashEFom),
+            '𖧔' => Ok(BamumSupplement::BamumLetterPhaseDashENjee),
+            '𖧕' => Ok(BamumSupplement::BamumLetterPhaseDashEA),
+            '𖧖' => Ok(BamumSupplement::BamumLetterPhaseDashEToq),
+            '𖧗' => Ok(BamumSupplement::BamumLetterPhaseDashEO),
+            '𖧘' => Ok(BamumSupplement::BamumLetterPhaseDashEI),
+            '𖧙' => Ok(BamumSupplement::BamumLetterPhaseDashELaq),
+            '𖧚' => Ok(BamumSupplement::BamumLetterPhaseDashEPaPlural),
+            '𖧛' => Ok(BamumSupplement::BamumLetterPhaseDashETaa),
+            '𖧜' => Ok(BamumSupplement::BamumLetterPhaseDashETaq),
+            '𖧝' => Ok(BamumSupplement::BamumLetterPhaseDashENdaaMyHouse),
+            '𖧞' => Ok(BamumSupplement::BamumLetterPhaseDashEShiq),
+            '𖧟' => Ok(BamumSupplement::BamumLetterPhaseDashEYeux),
+            '𖧠' => Ok(BamumSupplement::BamumLetterPhaseDashENguae),
+            '𖧡' => Ok(BamumSupplement::BamumLetterPhaseDashEYuaen),
+            '𖧢' => Ok(BamumSupplement::BamumLetterPhaseDashEYoqSwimming),
+            '𖧣' => Ok(BamumSupplement::BamumLetterPhaseDashEYoqCover),
+            '𖧤' => Ok(BamumSupplement::BamumLetterPhaseDashEYuq),
+            '𖧥' => Ok(BamumSupplement::BamumLetterPhaseDashEYun),
+            '𖧦' => Ok(BamumSupplement::BamumLetterPhaseDashEKeux),
+            '𖧧' => Ok(BamumSupplement::BamumLetterPhaseDashEPeux),
+            '𖧨' => Ok(BamumSupplement::BamumLetterPhaseDashENjeeEpoch),
+            '𖧩' => Ok(BamumSupplement::BamumLetterPhaseDashEPue),
+            '𖧪' => Ok(BamumSupplement::BamumLetterPhaseDashEWue),
+            '𖧫' => Ok(BamumSupplement::BamumLetterPhaseDashEFee),
+            '𖧬' => Ok(BamumSupplement::BamumLetterPhaseDashEVee),
+            '𖧭' => Ok(BamumSupplement::BamumLetterPhaseDashELu),
+            '𖧮' => Ok(BamumSupplement::BamumLetterPhaseDashEMi),
+            '𖧯' => Ok(BamumSupplement::BamumLetterPhaseDashEReux),
+            '𖧰' => Ok(BamumSupplement::BamumLetterPhaseDashERae),
+            '𖧱' => Ok(BamumSupplement::BamumLetterPhaseDashENguaet),
+            '𖧲' => Ok(BamumSupplement::BamumLetterPhaseDashENga),
+            '𖧳' => Ok(BamumSupplement::BamumLetterPhaseDashESho),
+            '𖧴' => Ok(BamumSupplement::BamumLetterPhaseDashEShoq),
+            '𖧵' => Ok(BamumSupplement::BamumLetterPhaseDashEFuRemedy),
+            '𖧶' => Ok(BamumSupplement::BamumLetterPhaseDashENa),
+            '𖧷' => Ok(BamumSupplement::BamumLetterPhaseDashEPi),
+            '𖧸' => Ok(BamumSupplement::BamumLetterPhaseDashELoq),
+            '𖧹' => Ok(BamumSupplement::BamumLetterPhaseDashEKo),
+            '𖧺' => Ok(BamumSupplement::BamumLetterPhaseDashEMen),
+            '𖧻' => Ok(BamumSupplement::BamumLetterPhaseDashEMa),
+            '𖧼' => Ok(BamumSupplement::BamumLetterPhaseDashEMaq),
+            '𖧽' => Ok(BamumSupplement::BamumLetterPhaseDashETeu),
+            '𖧾' => Ok(BamumSupplement::BamumLetterPhaseDashEKi),
+            '𖧿' => Ok(BamumSupplement::BamumLetterPhaseDashEMon),
+            '𖨀' => Ok(BamumSupplement::BamumLetterPhaseDashETen),
+            '𖨁' => Ok(BamumSupplement::BamumLetterPhaseDashEFaq),
+            '𖨂' => Ok(BamumSupplement::BamumLetterPhaseDashEGhom),
+            '𖨃' => Ok(BamumSupplement::BamumLetterPhaseDashFKa),
+            '𖨄' => Ok(BamumSupplement::BamumLetterPhaseDashFU),
+            '𖨅' => Ok(BamumSupplement::BamumLetterPhaseDashFKu),
+            '𖨆' => Ok(BamumSupplement::BamumLetterPhaseDashFEe),
+            '𖨇' => Ok(BamumSupplement::BamumLetterPhaseDashFRee),
+            '𖨈' => Ok(BamumSupplement::BamumLetterPhaseDashFTae),
+            '𖨉' => Ok(BamumSupplement::BamumLetterPhaseDashFNyi),
+            '𖨊' => Ok(BamumSupplement::BamumLetterPhaseDashFLa),
+            '𖨋' => Ok(BamumSupplement::BamumLetterPhaseDashFRii),
+            '𖨌' => Ok(BamumSupplement::BamumLetterPhaseDashFRiee),
+            '𖨍' => Ok(BamumSupplement::BamumLetterPhaseDashFMeeee),
+            '𖨎' => Ok(BamumSupplement::BamumLetterPhaseDashFTaa),
+            '𖨏' => Ok(BamumSupplement::BamumLetterPhaseDashFNdaa),
+            '𖨐' => Ok(BamumSupplement::BamumLetterPhaseDashFNjaem),
+            '𖨑' => Ok(BamumSupplement::BamumLetterPhaseDashFM),
+            '𖨒' => Ok(BamumSupplement::BamumLetterPhaseDashFSuu),
+            '𖨓' => Ok(BamumSupplement::BamumLetterPhaseDashFShii),
+            '𖨔' => Ok(BamumSupplement::BamumLetterPhaseDashFSi),
+            '𖨕' => Ok(BamumSupplement::BamumLetterPhaseDashFSeux),
+            '𖨖' => Ok(BamumSupplement::BamumLetterPhaseDashFKyee),
+            '𖨗' => Ok(BamumSupplement::BamumLetterPhaseDashFKet),
+            '𖨘' => Ok(BamumSupplement::BamumLetterPhaseDashFNuae),
+            '𖨙' => Ok(BamumSupplement::BamumLetterPhaseDashFNu),
+            '𖨚' => Ok(BamumSupplement::BamumLetterPhaseDashFNjuae),
+            '𖨛' => Ok(BamumSupplement::BamumLetterPhaseDashFYoq),
+            '𖨜' => Ok(BamumSupplement::BamumLetterPhaseDashFShu),
+            '𖨝' => Ok(BamumSupplement::BamumLetterPhaseDashFYa),
+            '𖨞' => Ok(BamumSupplement::BamumLetterPhaseDashFNsha),
+            '𖨟' => Ok(BamumSupplement::BamumLetterPhaseDashFPeux),
+            '𖨠' => Ok(BamumSupplement::BamumLetterPhaseDashFNtee),
+            '𖨡' => Ok(BamumSupplement::BamumLetterPhaseDashFWue),
+            '𖨢' => Ok(BamumSupplement::BamumLetterPhaseDashFPee),
+            '𖨣' => Ok(BamumSupplement::BamumLetterPhaseDashFRu),
+            '𖨤' => Ok(BamumSupplement::BamumLetterPhaseDashFNi),
+            '𖨥' => Ok(BamumSupplement::BamumLetterPhaseDashFReux),
+            '𖨦' => Ok(BamumSupplement::BamumLetterPhaseDashFKen),
+            '𖨧' => Ok(BamumSupplement::BamumLetterPhaseDashFNgkwaen),
+            '𖨨' => Ok(BamumSupplement::BamumLetterPhaseDashFNgga),
+            '𖨩' => Ok(BamumSupplement::BamumLetterPhaseDashFSho),
+            '𖨪' => Ok(BamumSupplement::BamumLetterPhaseDashFPuae),
+            '𖨫' => Ok(BamumSupplement::BamumLetterPhaseDashFFom),
+            '𖨬' => Ok(BamumSupplement::BamumLetterPhaseDashFWa),
+            '𖨭' => Ok(BamumSupplement::BamumLetterPhaseDashFLi),
+            '𖨮' => Ok(BamumSupplement::BamumLetterPhaseDashFLoq),
+            '𖨯' => Ok(BamumSupplement::BamumLetterPhaseDashFKo),
+            '𖨰' => Ok(BamumSupplement::BamumLetterPhaseDashFMben),
+            '𖨱' => Ok(BamumSupplement::BamumLetterPhaseDashFRen),
+            '𖨲' => Ok(BamumSupplement::BamumLetterPhaseDashFMa),
+            '𖨳' => Ok(BamumSupplement::BamumLetterPhaseDashFMo),
+            '𖨴' => Ok(BamumSupplement::BamumLetterPhaseDashFMbaa),
+            '𖨵' => Ok(BamumSupplement::BamumLetterPhaseDashFTet),
+            '𖨶' => Ok(BamumSupplement::BamumLetterPhaseDashFKpa),
+            '𖨷' => Ok(BamumSupplement::BamumLetterPhaseDashFSamba),
+            '𖨸' => Ok(BamumSupplement::BamumLetterPhaseDashFVueq),
             _ => Err(()),
         }
     }

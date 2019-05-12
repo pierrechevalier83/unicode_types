@@ -1,132 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{4dc0}: '䷀'
-    pub const HEXAGRAM_FOR_THE_CREATIVE_HEAVEN: char = '䷀';
-    /// \u{4dc1}: '䷁'
-    pub const HEXAGRAM_FOR_THE_RECEPTIVE_EARTH: char = '䷁';
-    /// \u{4dc2}: '䷂'
-    pub const HEXAGRAM_FOR_DIFFICULTY_AT_THE_BEGINNING: char = '䷂';
-    /// \u{4dc3}: '䷃'
-    pub const HEXAGRAM_FOR_YOUTHFUL_FOLLY: char = '䷃';
-    /// \u{4dc4}: '䷄'
-    pub const HEXAGRAM_FOR_WAITING: char = '䷄';
-    /// \u{4dc5}: '䷅'
-    pub const HEXAGRAM_FOR_CONFLICT: char = '䷅';
-    /// \u{4dc6}: '䷆'
-    pub const HEXAGRAM_FOR_THE_ARMY: char = '䷆';
-    /// \u{4dc7}: '䷇'
-    pub const HEXAGRAM_FOR_HOLDING_TOGETHER: char = '䷇';
-    /// \u{4dc8}: '䷈'
-    pub const HEXAGRAM_FOR_SMALL_TAMING: char = '䷈';
-    /// \u{4dc9}: '䷉'
-    pub const HEXAGRAM_FOR_TREADING: char = '䷉';
-    /// \u{4dca}: '䷊'
-    pub const HEXAGRAM_FOR_PEACE: char = '䷊';
-    /// \u{4dcb}: '䷋'
-    pub const HEXAGRAM_FOR_STANDSTILL: char = '䷋';
-    /// \u{4dcc}: '䷌'
-    pub const HEXAGRAM_FOR_FELLOWSHIP: char = '䷌';
-    /// \u{4dcd}: '䷍'
-    pub const HEXAGRAM_FOR_GREAT_POSSESSION: char = '䷍';
-    /// \u{4dce}: '䷎'
-    pub const HEXAGRAM_FOR_MODESTY: char = '䷎';
-    /// \u{4dcf}: '䷏'
-    pub const HEXAGRAM_FOR_ENTHUSIASM: char = '䷏';
-    /// \u{4dd0}: '䷐'
-    pub const HEXAGRAM_FOR_FOLLOWING: char = '䷐';
-    /// \u{4dd1}: '䷑'
-    pub const HEXAGRAM_FOR_WORK_ON_THE_DECAYED: char = '䷑';
-    /// \u{4dd2}: '䷒'
-    pub const HEXAGRAM_FOR_APPROACH: char = '䷒';
-    /// \u{4dd3}: '䷓'
-    pub const HEXAGRAM_FOR_CONTEMPLATION: char = '䷓';
-    /// \u{4dd4}: '䷔'
-    pub const HEXAGRAM_FOR_BITING_THROUGH: char = '䷔';
-    /// \u{4dd5}: '䷕'
-    pub const HEXAGRAM_FOR_GRACE: char = '䷕';
-    /// \u{4dd6}: '䷖'
-    pub const HEXAGRAM_FOR_SPLITTING_APART: char = '䷖';
-    /// \u{4dd7}: '䷗'
-    pub const HEXAGRAM_FOR_RETURN: char = '䷗';
-    /// \u{4dd8}: '䷘'
-    pub const HEXAGRAM_FOR_INNOCENCE: char = '䷘';
-    /// \u{4dd9}: '䷙'
-    pub const HEXAGRAM_FOR_GREAT_TAMING: char = '䷙';
-    /// \u{4dda}: '䷚'
-    pub const HEXAGRAM_FOR_MOUTH_CORNERS: char = '䷚';
-    /// \u{4ddb}: '䷛'
-    pub const HEXAGRAM_FOR_GREAT_PREPONDERANCE: char = '䷛';
-    /// \u{4ddc}: '䷜'
-    pub const HEXAGRAM_FOR_THE_ABYSMAL_WATER: char = '䷜';
-    /// \u{4ddd}: '䷝'
-    pub const HEXAGRAM_FOR_THE_CLINGING_FIRE: char = '䷝';
-    /// \u{4dde}: '䷞'
-    pub const HEXAGRAM_FOR_INFLUENCE: char = '䷞';
-    /// \u{4ddf}: '䷟'
-    pub const HEXAGRAM_FOR_DURATION: char = '䷟';
-    /// \u{4de0}: '䷠'
-    pub const HEXAGRAM_FOR_RETREAT: char = '䷠';
-    /// \u{4de1}: '䷡'
-    pub const HEXAGRAM_FOR_GREAT_POWER: char = '䷡';
-    /// \u{4de2}: '䷢'
-    pub const HEXAGRAM_FOR_PROGRESS: char = '䷢';
-    /// \u{4de3}: '䷣'
-    pub const HEXAGRAM_FOR_DARKENING_OF_THE_LIGHT: char = '䷣';
-    /// \u{4de4}: '䷤'
-    pub const HEXAGRAM_FOR_THE_FAMILY: char = '䷤';
-    /// \u{4de5}: '䷥'
-    pub const HEXAGRAM_FOR_OPPOSITION: char = '䷥';
-    /// \u{4de6}: '䷦'
-    pub const HEXAGRAM_FOR_OBSTRUCTION: char = '䷦';
-    /// \u{4de7}: '䷧'
-    pub const HEXAGRAM_FOR_DELIVERANCE: char = '䷧';
-    /// \u{4de8}: '䷨'
-    pub const HEXAGRAM_FOR_DECREASE: char = '䷨';
-    /// \u{4de9}: '䷩'
-    pub const HEXAGRAM_FOR_INCREASE: char = '䷩';
-    /// \u{4dea}: '䷪'
-    pub const HEXAGRAM_FOR_BREAKTHROUGH: char = '䷪';
-    /// \u{4deb}: '䷫'
-    pub const HEXAGRAM_FOR_COMING_TO_MEET: char = '䷫';
-    /// \u{4dec}: '䷬'
-    pub const HEXAGRAM_FOR_GATHERING_TOGETHER: char = '䷬';
-    /// \u{4ded}: '䷭'
-    pub const HEXAGRAM_FOR_PUSHING_UPWARD: char = '䷭';
-    /// \u{4dee}: '䷮'
-    pub const HEXAGRAM_FOR_OPPRESSION: char = '䷮';
-    /// \u{4def}: '䷯'
-    pub const HEXAGRAM_FOR_THE_WELL: char = '䷯';
-    /// \u{4df0}: '䷰'
-    pub const HEXAGRAM_FOR_REVOLUTION: char = '䷰';
-    /// \u{4df1}: '䷱'
-    pub const HEXAGRAM_FOR_THE_CAULDRON: char = '䷱';
-    /// \u{4df2}: '䷲'
-    pub const HEXAGRAM_FOR_THE_AROUSING_THUNDER: char = '䷲';
-    /// \u{4df3}: '䷳'
-    pub const HEXAGRAM_FOR_THE_KEEPING_STILL_MOUNTAIN: char = '䷳';
-    /// \u{4df4}: '䷴'
-    pub const HEXAGRAM_FOR_DEVELOPMENT: char = '䷴';
-    /// \u{4df5}: '䷵'
-    pub const HEXAGRAM_FOR_THE_MARRYING_MAIDEN: char = '䷵';
-    /// \u{4df6}: '䷶'
-    pub const HEXAGRAM_FOR_ABUNDANCE: char = '䷶';
-    /// \u{4df7}: '䷷'
-    pub const HEXAGRAM_FOR_THE_WANDERER: char = '䷷';
-    /// \u{4df8}: '䷸'
-    pub const HEXAGRAM_FOR_THE_GENTLE_WIND: char = '䷸';
-    /// \u{4df9}: '䷹'
-    pub const HEXAGRAM_FOR_THE_JOYOUS_LAKE: char = '䷹';
-    /// \u{4dfa}: '䷺'
-    pub const HEXAGRAM_FOR_DISPERSION: char = '䷺';
-    /// \u{4dfb}: '䷻'
-    pub const HEXAGRAM_FOR_LIMITATION: char = '䷻';
-    /// \u{4dfc}: '䷼'
-    pub const HEXAGRAM_FOR_INNER_TRUTH: char = '䷼';
-    /// \u{4dfd}: '䷽'
-    pub const HEXAGRAM_FOR_SMALL_PREPONDERANCE: char = '䷽';
-    /// \u{4dfe}: '䷾'
-    pub const HEXAGRAM_FOR_AFTER_COMPLETION: char = '䷾';
-}
 
 /// An enum to represent all characters in the YijingHexagramSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -261,71 +132,70 @@ pub enum YijingHexagramSymbols {
 
 impl Into<char> for YijingHexagramSymbols {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            YijingHexagramSymbols::HexagramForTheCreativeHeaven => HEXAGRAM_FOR_THE_CREATIVE_HEAVEN,
-            YijingHexagramSymbols::HexagramForTheReceptiveEarth => HEXAGRAM_FOR_THE_RECEPTIVE_EARTH,
-            YijingHexagramSymbols::HexagramForDifficultyAtTheBeginning => HEXAGRAM_FOR_DIFFICULTY_AT_THE_BEGINNING,
-            YijingHexagramSymbols::HexagramForYouthfulFolly => HEXAGRAM_FOR_YOUTHFUL_FOLLY,
-            YijingHexagramSymbols::HexagramForWaiting => HEXAGRAM_FOR_WAITING,
-            YijingHexagramSymbols::HexagramForConflict => HEXAGRAM_FOR_CONFLICT,
-            YijingHexagramSymbols::HexagramForTheArmy => HEXAGRAM_FOR_THE_ARMY,
-            YijingHexagramSymbols::HexagramForHoldingTogether => HEXAGRAM_FOR_HOLDING_TOGETHER,
-            YijingHexagramSymbols::HexagramForSmallTaming => HEXAGRAM_FOR_SMALL_TAMING,
-            YijingHexagramSymbols::HexagramForTreading => HEXAGRAM_FOR_TREADING,
-            YijingHexagramSymbols::HexagramForPeace => HEXAGRAM_FOR_PEACE,
-            YijingHexagramSymbols::HexagramForStandstill => HEXAGRAM_FOR_STANDSTILL,
-            YijingHexagramSymbols::HexagramForFellowship => HEXAGRAM_FOR_FELLOWSHIP,
-            YijingHexagramSymbols::HexagramForGreatPossession => HEXAGRAM_FOR_GREAT_POSSESSION,
-            YijingHexagramSymbols::HexagramForModesty => HEXAGRAM_FOR_MODESTY,
-            YijingHexagramSymbols::HexagramForEnthusiasm => HEXAGRAM_FOR_ENTHUSIASM,
-            YijingHexagramSymbols::HexagramForFollowing => HEXAGRAM_FOR_FOLLOWING,
-            YijingHexagramSymbols::HexagramForWorkOnTheDecayed => HEXAGRAM_FOR_WORK_ON_THE_DECAYED,
-            YijingHexagramSymbols::HexagramForApproach => HEXAGRAM_FOR_APPROACH,
-            YijingHexagramSymbols::HexagramForContemplation => HEXAGRAM_FOR_CONTEMPLATION,
-            YijingHexagramSymbols::HexagramForBitingThrough => HEXAGRAM_FOR_BITING_THROUGH,
-            YijingHexagramSymbols::HexagramForGrace => HEXAGRAM_FOR_GRACE,
-            YijingHexagramSymbols::HexagramForSplittingApart => HEXAGRAM_FOR_SPLITTING_APART,
-            YijingHexagramSymbols::HexagramForReturn => HEXAGRAM_FOR_RETURN,
-            YijingHexagramSymbols::HexagramForInnocence => HEXAGRAM_FOR_INNOCENCE,
-            YijingHexagramSymbols::HexagramForGreatTaming => HEXAGRAM_FOR_GREAT_TAMING,
-            YijingHexagramSymbols::HexagramForMouthCorners => HEXAGRAM_FOR_MOUTH_CORNERS,
-            YijingHexagramSymbols::HexagramForGreatPreponderance => HEXAGRAM_FOR_GREAT_PREPONDERANCE,
-            YijingHexagramSymbols::HexagramForTheAbysmalWater => HEXAGRAM_FOR_THE_ABYSMAL_WATER,
-            YijingHexagramSymbols::HexagramForTheClingingFire => HEXAGRAM_FOR_THE_CLINGING_FIRE,
-            YijingHexagramSymbols::HexagramForInfluence => HEXAGRAM_FOR_INFLUENCE,
-            YijingHexagramSymbols::HexagramForDuration => HEXAGRAM_FOR_DURATION,
-            YijingHexagramSymbols::HexagramForRetreat => HEXAGRAM_FOR_RETREAT,
-            YijingHexagramSymbols::HexagramForGreatPower => HEXAGRAM_FOR_GREAT_POWER,
-            YijingHexagramSymbols::HexagramForProgress => HEXAGRAM_FOR_PROGRESS,
-            YijingHexagramSymbols::HexagramForDarkeningOfTheLight => HEXAGRAM_FOR_DARKENING_OF_THE_LIGHT,
-            YijingHexagramSymbols::HexagramForTheFamily => HEXAGRAM_FOR_THE_FAMILY,
-            YijingHexagramSymbols::HexagramForOpposition => HEXAGRAM_FOR_OPPOSITION,
-            YijingHexagramSymbols::HexagramForObstruction => HEXAGRAM_FOR_OBSTRUCTION,
-            YijingHexagramSymbols::HexagramForDeliverance => HEXAGRAM_FOR_DELIVERANCE,
-            YijingHexagramSymbols::HexagramForDecrease => HEXAGRAM_FOR_DECREASE,
-            YijingHexagramSymbols::HexagramForIncrease => HEXAGRAM_FOR_INCREASE,
-            YijingHexagramSymbols::HexagramForBreakthrough => HEXAGRAM_FOR_BREAKTHROUGH,
-            YijingHexagramSymbols::HexagramForComingToMeet => HEXAGRAM_FOR_COMING_TO_MEET,
-            YijingHexagramSymbols::HexagramForGatheringTogether => HEXAGRAM_FOR_GATHERING_TOGETHER,
-            YijingHexagramSymbols::HexagramForPushingUpward => HEXAGRAM_FOR_PUSHING_UPWARD,
-            YijingHexagramSymbols::HexagramForOppression => HEXAGRAM_FOR_OPPRESSION,
-            YijingHexagramSymbols::HexagramForTheWell => HEXAGRAM_FOR_THE_WELL,
-            YijingHexagramSymbols::HexagramForRevolution => HEXAGRAM_FOR_REVOLUTION,
-            YijingHexagramSymbols::HexagramForTheCauldron => HEXAGRAM_FOR_THE_CAULDRON,
-            YijingHexagramSymbols::HexagramForTheArousingThunder => HEXAGRAM_FOR_THE_AROUSING_THUNDER,
-            YijingHexagramSymbols::HexagramForTheKeepingStillMountain => HEXAGRAM_FOR_THE_KEEPING_STILL_MOUNTAIN,
-            YijingHexagramSymbols::HexagramForDevelopment => HEXAGRAM_FOR_DEVELOPMENT,
-            YijingHexagramSymbols::HexagramForTheMarryingMaiden => HEXAGRAM_FOR_THE_MARRYING_MAIDEN,
-            YijingHexagramSymbols::HexagramForAbundance => HEXAGRAM_FOR_ABUNDANCE,
-            YijingHexagramSymbols::HexagramForTheWanderer => HEXAGRAM_FOR_THE_WANDERER,
-            YijingHexagramSymbols::HexagramForTheGentleWind => HEXAGRAM_FOR_THE_GENTLE_WIND,
-            YijingHexagramSymbols::HexagramForTheJoyousLake => HEXAGRAM_FOR_THE_JOYOUS_LAKE,
-            YijingHexagramSymbols::HexagramForDispersion => HEXAGRAM_FOR_DISPERSION,
-            YijingHexagramSymbols::HexagramForLimitation => HEXAGRAM_FOR_LIMITATION,
-            YijingHexagramSymbols::HexagramForInnerTruth => HEXAGRAM_FOR_INNER_TRUTH,
-            YijingHexagramSymbols::HexagramForSmallPreponderance => HEXAGRAM_FOR_SMALL_PREPONDERANCE,
-            YijingHexagramSymbols::HexagramForAfterCompletion => HEXAGRAM_FOR_AFTER_COMPLETION,
+            YijingHexagramSymbols::HexagramForTheCreativeHeaven => '䷀',
+            YijingHexagramSymbols::HexagramForTheReceptiveEarth => '䷁',
+            YijingHexagramSymbols::HexagramForDifficultyAtTheBeginning => '䷂',
+            YijingHexagramSymbols::HexagramForYouthfulFolly => '䷃',
+            YijingHexagramSymbols::HexagramForWaiting => '䷄',
+            YijingHexagramSymbols::HexagramForConflict => '䷅',
+            YijingHexagramSymbols::HexagramForTheArmy => '䷆',
+            YijingHexagramSymbols::HexagramForHoldingTogether => '䷇',
+            YijingHexagramSymbols::HexagramForSmallTaming => '䷈',
+            YijingHexagramSymbols::HexagramForTreading => '䷉',
+            YijingHexagramSymbols::HexagramForPeace => '䷊',
+            YijingHexagramSymbols::HexagramForStandstill => '䷋',
+            YijingHexagramSymbols::HexagramForFellowship => '䷌',
+            YijingHexagramSymbols::HexagramForGreatPossession => '䷍',
+            YijingHexagramSymbols::HexagramForModesty => '䷎',
+            YijingHexagramSymbols::HexagramForEnthusiasm => '䷏',
+            YijingHexagramSymbols::HexagramForFollowing => '䷐',
+            YijingHexagramSymbols::HexagramForWorkOnTheDecayed => '䷑',
+            YijingHexagramSymbols::HexagramForApproach => '䷒',
+            YijingHexagramSymbols::HexagramForContemplation => '䷓',
+            YijingHexagramSymbols::HexagramForBitingThrough => '䷔',
+            YijingHexagramSymbols::HexagramForGrace => '䷕',
+            YijingHexagramSymbols::HexagramForSplittingApart => '䷖',
+            YijingHexagramSymbols::HexagramForReturn => '䷗',
+            YijingHexagramSymbols::HexagramForInnocence => '䷘',
+            YijingHexagramSymbols::HexagramForGreatTaming => '䷙',
+            YijingHexagramSymbols::HexagramForMouthCorners => '䷚',
+            YijingHexagramSymbols::HexagramForGreatPreponderance => '䷛',
+            YijingHexagramSymbols::HexagramForTheAbysmalWater => '䷜',
+            YijingHexagramSymbols::HexagramForTheClingingFire => '䷝',
+            YijingHexagramSymbols::HexagramForInfluence => '䷞',
+            YijingHexagramSymbols::HexagramForDuration => '䷟',
+            YijingHexagramSymbols::HexagramForRetreat => '䷠',
+            YijingHexagramSymbols::HexagramForGreatPower => '䷡',
+            YijingHexagramSymbols::HexagramForProgress => '䷢',
+            YijingHexagramSymbols::HexagramForDarkeningOfTheLight => '䷣',
+            YijingHexagramSymbols::HexagramForTheFamily => '䷤',
+            YijingHexagramSymbols::HexagramForOpposition => '䷥',
+            YijingHexagramSymbols::HexagramForObstruction => '䷦',
+            YijingHexagramSymbols::HexagramForDeliverance => '䷧',
+            YijingHexagramSymbols::HexagramForDecrease => '䷨',
+            YijingHexagramSymbols::HexagramForIncrease => '䷩',
+            YijingHexagramSymbols::HexagramForBreakthrough => '䷪',
+            YijingHexagramSymbols::HexagramForComingToMeet => '䷫',
+            YijingHexagramSymbols::HexagramForGatheringTogether => '䷬',
+            YijingHexagramSymbols::HexagramForPushingUpward => '䷭',
+            YijingHexagramSymbols::HexagramForOppression => '䷮',
+            YijingHexagramSymbols::HexagramForTheWell => '䷯',
+            YijingHexagramSymbols::HexagramForRevolution => '䷰',
+            YijingHexagramSymbols::HexagramForTheCauldron => '䷱',
+            YijingHexagramSymbols::HexagramForTheArousingThunder => '䷲',
+            YijingHexagramSymbols::HexagramForTheKeepingStillMountain => '䷳',
+            YijingHexagramSymbols::HexagramForDevelopment => '䷴',
+            YijingHexagramSymbols::HexagramForTheMarryingMaiden => '䷵',
+            YijingHexagramSymbols::HexagramForAbundance => '䷶',
+            YijingHexagramSymbols::HexagramForTheWanderer => '䷷',
+            YijingHexagramSymbols::HexagramForTheGentleWind => '䷸',
+            YijingHexagramSymbols::HexagramForTheJoyousLake => '䷹',
+            YijingHexagramSymbols::HexagramForDispersion => '䷺',
+            YijingHexagramSymbols::HexagramForLimitation => '䷻',
+            YijingHexagramSymbols::HexagramForInnerTruth => '䷼',
+            YijingHexagramSymbols::HexagramForSmallPreponderance => '䷽',
+            YijingHexagramSymbols::HexagramForAfterCompletion => '䷾',
         }
     }
 }
@@ -333,71 +203,70 @@ impl Into<char> for YijingHexagramSymbols {
 impl std::convert::TryFrom<char> for YijingHexagramSymbols {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            HEXAGRAM_FOR_THE_CREATIVE_HEAVEN => Ok(YijingHexagramSymbols::HexagramForTheCreativeHeaven),
-            HEXAGRAM_FOR_THE_RECEPTIVE_EARTH => Ok(YijingHexagramSymbols::HexagramForTheReceptiveEarth),
-            HEXAGRAM_FOR_DIFFICULTY_AT_THE_BEGINNING => Ok(YijingHexagramSymbols::HexagramForDifficultyAtTheBeginning),
-            HEXAGRAM_FOR_YOUTHFUL_FOLLY => Ok(YijingHexagramSymbols::HexagramForYouthfulFolly),
-            HEXAGRAM_FOR_WAITING => Ok(YijingHexagramSymbols::HexagramForWaiting),
-            HEXAGRAM_FOR_CONFLICT => Ok(YijingHexagramSymbols::HexagramForConflict),
-            HEXAGRAM_FOR_THE_ARMY => Ok(YijingHexagramSymbols::HexagramForTheArmy),
-            HEXAGRAM_FOR_HOLDING_TOGETHER => Ok(YijingHexagramSymbols::HexagramForHoldingTogether),
-            HEXAGRAM_FOR_SMALL_TAMING => Ok(YijingHexagramSymbols::HexagramForSmallTaming),
-            HEXAGRAM_FOR_TREADING => Ok(YijingHexagramSymbols::HexagramForTreading),
-            HEXAGRAM_FOR_PEACE => Ok(YijingHexagramSymbols::HexagramForPeace),
-            HEXAGRAM_FOR_STANDSTILL => Ok(YijingHexagramSymbols::HexagramForStandstill),
-            HEXAGRAM_FOR_FELLOWSHIP => Ok(YijingHexagramSymbols::HexagramForFellowship),
-            HEXAGRAM_FOR_GREAT_POSSESSION => Ok(YijingHexagramSymbols::HexagramForGreatPossession),
-            HEXAGRAM_FOR_MODESTY => Ok(YijingHexagramSymbols::HexagramForModesty),
-            HEXAGRAM_FOR_ENTHUSIASM => Ok(YijingHexagramSymbols::HexagramForEnthusiasm),
-            HEXAGRAM_FOR_FOLLOWING => Ok(YijingHexagramSymbols::HexagramForFollowing),
-            HEXAGRAM_FOR_WORK_ON_THE_DECAYED => Ok(YijingHexagramSymbols::HexagramForWorkOnTheDecayed),
-            HEXAGRAM_FOR_APPROACH => Ok(YijingHexagramSymbols::HexagramForApproach),
-            HEXAGRAM_FOR_CONTEMPLATION => Ok(YijingHexagramSymbols::HexagramForContemplation),
-            HEXAGRAM_FOR_BITING_THROUGH => Ok(YijingHexagramSymbols::HexagramForBitingThrough),
-            HEXAGRAM_FOR_GRACE => Ok(YijingHexagramSymbols::HexagramForGrace),
-            HEXAGRAM_FOR_SPLITTING_APART => Ok(YijingHexagramSymbols::HexagramForSplittingApart),
-            HEXAGRAM_FOR_RETURN => Ok(YijingHexagramSymbols::HexagramForReturn),
-            HEXAGRAM_FOR_INNOCENCE => Ok(YijingHexagramSymbols::HexagramForInnocence),
-            HEXAGRAM_FOR_GREAT_TAMING => Ok(YijingHexagramSymbols::HexagramForGreatTaming),
-            HEXAGRAM_FOR_MOUTH_CORNERS => Ok(YijingHexagramSymbols::HexagramForMouthCorners),
-            HEXAGRAM_FOR_GREAT_PREPONDERANCE => Ok(YijingHexagramSymbols::HexagramForGreatPreponderance),
-            HEXAGRAM_FOR_THE_ABYSMAL_WATER => Ok(YijingHexagramSymbols::HexagramForTheAbysmalWater),
-            HEXAGRAM_FOR_THE_CLINGING_FIRE => Ok(YijingHexagramSymbols::HexagramForTheClingingFire),
-            HEXAGRAM_FOR_INFLUENCE => Ok(YijingHexagramSymbols::HexagramForInfluence),
-            HEXAGRAM_FOR_DURATION => Ok(YijingHexagramSymbols::HexagramForDuration),
-            HEXAGRAM_FOR_RETREAT => Ok(YijingHexagramSymbols::HexagramForRetreat),
-            HEXAGRAM_FOR_GREAT_POWER => Ok(YijingHexagramSymbols::HexagramForGreatPower),
-            HEXAGRAM_FOR_PROGRESS => Ok(YijingHexagramSymbols::HexagramForProgress),
-            HEXAGRAM_FOR_DARKENING_OF_THE_LIGHT => Ok(YijingHexagramSymbols::HexagramForDarkeningOfTheLight),
-            HEXAGRAM_FOR_THE_FAMILY => Ok(YijingHexagramSymbols::HexagramForTheFamily),
-            HEXAGRAM_FOR_OPPOSITION => Ok(YijingHexagramSymbols::HexagramForOpposition),
-            HEXAGRAM_FOR_OBSTRUCTION => Ok(YijingHexagramSymbols::HexagramForObstruction),
-            HEXAGRAM_FOR_DELIVERANCE => Ok(YijingHexagramSymbols::HexagramForDeliverance),
-            HEXAGRAM_FOR_DECREASE => Ok(YijingHexagramSymbols::HexagramForDecrease),
-            HEXAGRAM_FOR_INCREASE => Ok(YijingHexagramSymbols::HexagramForIncrease),
-            HEXAGRAM_FOR_BREAKTHROUGH => Ok(YijingHexagramSymbols::HexagramForBreakthrough),
-            HEXAGRAM_FOR_COMING_TO_MEET => Ok(YijingHexagramSymbols::HexagramForComingToMeet),
-            HEXAGRAM_FOR_GATHERING_TOGETHER => Ok(YijingHexagramSymbols::HexagramForGatheringTogether),
-            HEXAGRAM_FOR_PUSHING_UPWARD => Ok(YijingHexagramSymbols::HexagramForPushingUpward),
-            HEXAGRAM_FOR_OPPRESSION => Ok(YijingHexagramSymbols::HexagramForOppression),
-            HEXAGRAM_FOR_THE_WELL => Ok(YijingHexagramSymbols::HexagramForTheWell),
-            HEXAGRAM_FOR_REVOLUTION => Ok(YijingHexagramSymbols::HexagramForRevolution),
-            HEXAGRAM_FOR_THE_CAULDRON => Ok(YijingHexagramSymbols::HexagramForTheCauldron),
-            HEXAGRAM_FOR_THE_AROUSING_THUNDER => Ok(YijingHexagramSymbols::HexagramForTheArousingThunder),
-            HEXAGRAM_FOR_THE_KEEPING_STILL_MOUNTAIN => Ok(YijingHexagramSymbols::HexagramForTheKeepingStillMountain),
-            HEXAGRAM_FOR_DEVELOPMENT => Ok(YijingHexagramSymbols::HexagramForDevelopment),
-            HEXAGRAM_FOR_THE_MARRYING_MAIDEN => Ok(YijingHexagramSymbols::HexagramForTheMarryingMaiden),
-            HEXAGRAM_FOR_ABUNDANCE => Ok(YijingHexagramSymbols::HexagramForAbundance),
-            HEXAGRAM_FOR_THE_WANDERER => Ok(YijingHexagramSymbols::HexagramForTheWanderer),
-            HEXAGRAM_FOR_THE_GENTLE_WIND => Ok(YijingHexagramSymbols::HexagramForTheGentleWind),
-            HEXAGRAM_FOR_THE_JOYOUS_LAKE => Ok(YijingHexagramSymbols::HexagramForTheJoyousLake),
-            HEXAGRAM_FOR_DISPERSION => Ok(YijingHexagramSymbols::HexagramForDispersion),
-            HEXAGRAM_FOR_LIMITATION => Ok(YijingHexagramSymbols::HexagramForLimitation),
-            HEXAGRAM_FOR_INNER_TRUTH => Ok(YijingHexagramSymbols::HexagramForInnerTruth),
-            HEXAGRAM_FOR_SMALL_PREPONDERANCE => Ok(YijingHexagramSymbols::HexagramForSmallPreponderance),
-            HEXAGRAM_FOR_AFTER_COMPLETION => Ok(YijingHexagramSymbols::HexagramForAfterCompletion),
+            '䷀' => Ok(YijingHexagramSymbols::HexagramForTheCreativeHeaven),
+            '䷁' => Ok(YijingHexagramSymbols::HexagramForTheReceptiveEarth),
+            '䷂' => Ok(YijingHexagramSymbols::HexagramForDifficultyAtTheBeginning),
+            '䷃' => Ok(YijingHexagramSymbols::HexagramForYouthfulFolly),
+            '䷄' => Ok(YijingHexagramSymbols::HexagramForWaiting),
+            '䷅' => Ok(YijingHexagramSymbols::HexagramForConflict),
+            '䷆' => Ok(YijingHexagramSymbols::HexagramForTheArmy),
+            '䷇' => Ok(YijingHexagramSymbols::HexagramForHoldingTogether),
+            '䷈' => Ok(YijingHexagramSymbols::HexagramForSmallTaming),
+            '䷉' => Ok(YijingHexagramSymbols::HexagramForTreading),
+            '䷊' => Ok(YijingHexagramSymbols::HexagramForPeace),
+            '䷋' => Ok(YijingHexagramSymbols::HexagramForStandstill),
+            '䷌' => Ok(YijingHexagramSymbols::HexagramForFellowship),
+            '䷍' => Ok(YijingHexagramSymbols::HexagramForGreatPossession),
+            '䷎' => Ok(YijingHexagramSymbols::HexagramForModesty),
+            '䷏' => Ok(YijingHexagramSymbols::HexagramForEnthusiasm),
+            '䷐' => Ok(YijingHexagramSymbols::HexagramForFollowing),
+            '䷑' => Ok(YijingHexagramSymbols::HexagramForWorkOnTheDecayed),
+            '䷒' => Ok(YijingHexagramSymbols::HexagramForApproach),
+            '䷓' => Ok(YijingHexagramSymbols::HexagramForContemplation),
+            '䷔' => Ok(YijingHexagramSymbols::HexagramForBitingThrough),
+            '䷕' => Ok(YijingHexagramSymbols::HexagramForGrace),
+            '䷖' => Ok(YijingHexagramSymbols::HexagramForSplittingApart),
+            '䷗' => Ok(YijingHexagramSymbols::HexagramForReturn),
+            '䷘' => Ok(YijingHexagramSymbols::HexagramForInnocence),
+            '䷙' => Ok(YijingHexagramSymbols::HexagramForGreatTaming),
+            '䷚' => Ok(YijingHexagramSymbols::HexagramForMouthCorners),
+            '䷛' => Ok(YijingHexagramSymbols::HexagramForGreatPreponderance),
+            '䷜' => Ok(YijingHexagramSymbols::HexagramForTheAbysmalWater),
+            '䷝' => Ok(YijingHexagramSymbols::HexagramForTheClingingFire),
+            '䷞' => Ok(YijingHexagramSymbols::HexagramForInfluence),
+            '䷟' => Ok(YijingHexagramSymbols::HexagramForDuration),
+            '䷠' => Ok(YijingHexagramSymbols::HexagramForRetreat),
+            '䷡' => Ok(YijingHexagramSymbols::HexagramForGreatPower),
+            '䷢' => Ok(YijingHexagramSymbols::HexagramForProgress),
+            '䷣' => Ok(YijingHexagramSymbols::HexagramForDarkeningOfTheLight),
+            '䷤' => Ok(YijingHexagramSymbols::HexagramForTheFamily),
+            '䷥' => Ok(YijingHexagramSymbols::HexagramForOpposition),
+            '䷦' => Ok(YijingHexagramSymbols::HexagramForObstruction),
+            '䷧' => Ok(YijingHexagramSymbols::HexagramForDeliverance),
+            '䷨' => Ok(YijingHexagramSymbols::HexagramForDecrease),
+            '䷩' => Ok(YijingHexagramSymbols::HexagramForIncrease),
+            '䷪' => Ok(YijingHexagramSymbols::HexagramForBreakthrough),
+            '䷫' => Ok(YijingHexagramSymbols::HexagramForComingToMeet),
+            '䷬' => Ok(YijingHexagramSymbols::HexagramForGatheringTogether),
+            '䷭' => Ok(YijingHexagramSymbols::HexagramForPushingUpward),
+            '䷮' => Ok(YijingHexagramSymbols::HexagramForOppression),
+            '䷯' => Ok(YijingHexagramSymbols::HexagramForTheWell),
+            '䷰' => Ok(YijingHexagramSymbols::HexagramForRevolution),
+            '䷱' => Ok(YijingHexagramSymbols::HexagramForTheCauldron),
+            '䷲' => Ok(YijingHexagramSymbols::HexagramForTheArousingThunder),
+            '䷳' => Ok(YijingHexagramSymbols::HexagramForTheKeepingStillMountain),
+            '䷴' => Ok(YijingHexagramSymbols::HexagramForDevelopment),
+            '䷵' => Ok(YijingHexagramSymbols::HexagramForTheMarryingMaiden),
+            '䷶' => Ok(YijingHexagramSymbols::HexagramForAbundance),
+            '䷷' => Ok(YijingHexagramSymbols::HexagramForTheWanderer),
+            '䷸' => Ok(YijingHexagramSymbols::HexagramForTheGentleWind),
+            '䷹' => Ok(YijingHexagramSymbols::HexagramForTheJoyousLake),
+            '䷺' => Ok(YijingHexagramSymbols::HexagramForDispersion),
+            '䷻' => Ok(YijingHexagramSymbols::HexagramForLimitation),
+            '䷼' => Ok(YijingHexagramSymbols::HexagramForInnerTruth),
+            '䷽' => Ok(YijingHexagramSymbols::HexagramForSmallPreponderance),
+            '䷾' => Ok(YijingHexagramSymbols::HexagramForAfterCompletion),
             _ => Err(()),
         }
     }

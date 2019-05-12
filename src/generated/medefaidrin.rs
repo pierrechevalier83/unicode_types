@@ -1,188 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{16e40}: '𖹀'
-    pub const CAPITAL_LETTER_M: char = '𖹀';
-    /// \u{16e41}: '𖹁'
-    pub const CAPITAL_LETTER_S: char = '𖹁';
-    /// \u{16e42}: '𖹂'
-    pub const CAPITAL_LETTER_V: char = '𖹂';
-    /// \u{16e43}: '𖹃'
-    pub const CAPITAL_LETTER_W: char = '𖹃';
-    /// \u{16e44}: '𖹄'
-    pub const CAPITAL_LETTER_ATIU: char = '𖹄';
-    /// \u{16e45}: '𖹅'
-    pub const CAPITAL_LETTER_Z: char = '𖹅';
-    /// \u{16e46}: '𖹆'
-    pub const CAPITAL_LETTER_KP: char = '𖹆';
-    /// \u{16e47}: '𖹇'
-    pub const CAPITAL_LETTER_P: char = '𖹇';
-    /// \u{16e48}: '𖹈'
-    pub const CAPITAL_LETTER_T: char = '𖹈';
-    /// \u{16e49}: '𖹉'
-    pub const CAPITAL_LETTER_G: char = '𖹉';
-    /// \u{16e4a}: '𖹊'
-    pub const CAPITAL_LETTER_F: char = '𖹊';
-    /// \u{16e4b}: '𖹋'
-    pub const CAPITAL_LETTER_I: char = '𖹋';
-    /// \u{16e4c}: '𖹌'
-    pub const CAPITAL_LETTER_K: char = '𖹌';
-    /// \u{16e4d}: '𖹍'
-    pub const CAPITAL_LETTER_A: char = '𖹍';
-    /// \u{16e4e}: '𖹎'
-    pub const CAPITAL_LETTER_J: char = '𖹎';
-    /// \u{16e4f}: '𖹏'
-    pub const CAPITAL_LETTER_E: char = '𖹏';
-    /// \u{16e50}: '𖹐'
-    pub const CAPITAL_LETTER_B: char = '𖹐';
-    /// \u{16e51}: '𖹑'
-    pub const CAPITAL_LETTER_C: char = '𖹑';
-    /// \u{16e52}: '𖹒'
-    pub const CAPITAL_LETTER_U: char = '𖹒';
-    /// \u{16e53}: '𖹓'
-    pub const CAPITAL_LETTER_YU: char = '𖹓';
-    /// \u{16e54}: '𖹔'
-    pub const CAPITAL_LETTER_L: char = '𖹔';
-    /// \u{16e55}: '𖹕'
-    pub const CAPITAL_LETTER_Q: char = '𖹕';
-    /// \u{16e56}: '𖹖'
-    pub const CAPITAL_LETTER_HP: char = '𖹖';
-    /// \u{16e57}: '𖹗'
-    pub const CAPITAL_LETTER_NY: char = '𖹗';
-    /// \u{16e58}: '𖹘'
-    pub const CAPITAL_LETTER_X: char = '𖹘';
-    /// \u{16e59}: '𖹙'
-    pub const CAPITAL_LETTER_D: char = '𖹙';
-    /// \u{16e5a}: '𖹚'
-    pub const CAPITAL_LETTER_OE: char = '𖹚';
-    /// \u{16e5b}: '𖹛'
-    pub const CAPITAL_LETTER_N: char = '𖹛';
-    /// \u{16e5c}: '𖹜'
-    pub const CAPITAL_LETTER_R: char = '𖹜';
-    /// \u{16e5d}: '𖹝'
-    pub const CAPITAL_LETTER_O: char = '𖹝';
-    /// \u{16e5e}: '𖹞'
-    pub const CAPITAL_LETTER_AI: char = '𖹞';
-    /// \u{16e5f}: '𖹟'
-    pub const CAPITAL_LETTER_Y: char = '𖹟';
-    /// \u{16e60}: '𖹠'
-    pub const SMALL_LETTER_M: char = '𖹠';
-    /// \u{16e61}: '𖹡'
-    pub const SMALL_LETTER_S: char = '𖹡';
-    /// \u{16e62}: '𖹢'
-    pub const SMALL_LETTER_V: char = '𖹢';
-    /// \u{16e63}: '𖹣'
-    pub const SMALL_LETTER_W: char = '𖹣';
-    /// \u{16e64}: '𖹤'
-    pub const SMALL_LETTER_ATIU: char = '𖹤';
-    /// \u{16e65}: '𖹥'
-    pub const SMALL_LETTER_Z: char = '𖹥';
-    /// \u{16e66}: '𖹦'
-    pub const SMALL_LETTER_KP: char = '𖹦';
-    /// \u{16e67}: '𖹧'
-    pub const SMALL_LETTER_P: char = '𖹧';
-    /// \u{16e68}: '𖹨'
-    pub const SMALL_LETTER_T: char = '𖹨';
-    /// \u{16e69}: '𖹩'
-    pub const SMALL_LETTER_G: char = '𖹩';
-    /// \u{16e6a}: '𖹪'
-    pub const SMALL_LETTER_F: char = '𖹪';
-    /// \u{16e6b}: '𖹫'
-    pub const SMALL_LETTER_I: char = '𖹫';
-    /// \u{16e6c}: '𖹬'
-    pub const SMALL_LETTER_K: char = '𖹬';
-    /// \u{16e6d}: '𖹭'
-    pub const SMALL_LETTER_A: char = '𖹭';
-    /// \u{16e6e}: '𖹮'
-    pub const SMALL_LETTER_J: char = '𖹮';
-    /// \u{16e6f}: '𖹯'
-    pub const SMALL_LETTER_E: char = '𖹯';
-    /// \u{16e70}: '𖹰'
-    pub const SMALL_LETTER_B: char = '𖹰';
-    /// \u{16e71}: '𖹱'
-    pub const SMALL_LETTER_C: char = '𖹱';
-    /// \u{16e72}: '𖹲'
-    pub const SMALL_LETTER_U: char = '𖹲';
-    /// \u{16e73}: '𖹳'
-    pub const SMALL_LETTER_YU: char = '𖹳';
-    /// \u{16e74}: '𖹴'
-    pub const SMALL_LETTER_L: char = '𖹴';
-    /// \u{16e75}: '𖹵'
-    pub const SMALL_LETTER_Q: char = '𖹵';
-    /// \u{16e76}: '𖹶'
-    pub const SMALL_LETTER_HP: char = '𖹶';
-    /// \u{16e77}: '𖹷'
-    pub const SMALL_LETTER_NY: char = '𖹷';
-    /// \u{16e78}: '𖹸'
-    pub const SMALL_LETTER_X: char = '𖹸';
-    /// \u{16e79}: '𖹹'
-    pub const SMALL_LETTER_D: char = '𖹹';
-    /// \u{16e7a}: '𖹺'
-    pub const SMALL_LETTER_OE: char = '𖹺';
-    /// \u{16e7b}: '𖹻'
-    pub const SMALL_LETTER_N: char = '𖹻';
-    /// \u{16e7c}: '𖹼'
-    pub const SMALL_LETTER_R: char = '𖹼';
-    /// \u{16e7d}: '𖹽'
-    pub const SMALL_LETTER_O: char = '𖹽';
-    /// \u{16e7e}: '𖹾'
-    pub const SMALL_LETTER_AI: char = '𖹾';
-    /// \u{16e7f}: '𖹿'
-    pub const SMALL_LETTER_Y: char = '𖹿';
-    /// \u{16e80}: '𖺀'
-    pub const DIGIT_ZERO: char = '𖺀';
-    /// \u{16e81}: '𖺁'
-    pub const DIGIT_ONE: char = '𖺁';
-    /// \u{16e82}: '𖺂'
-    pub const DIGIT_TWO: char = '𖺂';
-    /// \u{16e83}: '𖺃'
-    pub const DIGIT_THREE: char = '𖺃';
-    /// \u{16e84}: '𖺄'
-    pub const DIGIT_FOUR: char = '𖺄';
-    /// \u{16e85}: '𖺅'
-    pub const DIGIT_FIVE: char = '𖺅';
-    /// \u{16e86}: '𖺆'
-    pub const DIGIT_SIX: char = '𖺆';
-    /// \u{16e87}: '𖺇'
-    pub const DIGIT_SEVEN: char = '𖺇';
-    /// \u{16e88}: '𖺈'
-    pub const DIGIT_EIGHT: char = '𖺈';
-    /// \u{16e89}: '𖺉'
-    pub const DIGIT_NINE: char = '𖺉';
-    /// \u{16e8a}: '𖺊'
-    pub const NUMBER_TEN: char = '𖺊';
-    /// \u{16e8b}: '𖺋'
-    pub const NUMBER_ELEVEN: char = '𖺋';
-    /// \u{16e8c}: '𖺌'
-    pub const NUMBER_TWELVE: char = '𖺌';
-    /// \u{16e8d}: '𖺍'
-    pub const NUMBER_THIRTEEN: char = '𖺍';
-    /// \u{16e8e}: '𖺎'
-    pub const NUMBER_FOURTEEN: char = '𖺎';
-    /// \u{16e8f}: '𖺏'
-    pub const NUMBER_FIFTEEN: char = '𖺏';
-    /// \u{16e90}: '𖺐'
-    pub const NUMBER_SIXTEEN: char = '𖺐';
-    /// \u{16e91}: '𖺑'
-    pub const NUMBER_SEVENTEEN: char = '𖺑';
-    /// \u{16e92}: '𖺒'
-    pub const NUMBER_EIGHTEEN: char = '𖺒';
-    /// \u{16e93}: '𖺓'
-    pub const NUMBER_NINETEEN: char = '𖺓';
-    /// \u{16e94}: '𖺔'
-    pub const DIGIT_ONE_ALTERNATE_FORM: char = '𖺔';
-    /// \u{16e95}: '𖺕'
-    pub const DIGIT_TWO_ALTERNATE_FORM: char = '𖺕';
-    /// \u{16e96}: '𖺖'
-    pub const DIGIT_THREE_ALTERNATE_FORM: char = '𖺖';
-    /// \u{16e97}: '𖺗'
-    pub const COMMA: char = '𖺗';
-    /// \u{16e98}: '𖺘'
-    pub const FULL_STOP: char = '𖺘';
-    /// \u{16e99}: '𖺙'
-    pub const SYMBOL_AIVA: char = '𖺙';
-    /// \u{16e9a}: '𖺚'
-    pub const EXCLAMATION_OH: char = '𖺚';
-}
 
 /// An enum to represent all characters in the Medefaidrin block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -373,99 +188,98 @@ pub enum Medefaidrin {
 
 impl Into<char> for Medefaidrin {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Medefaidrin::CapitalLetterM => CAPITAL_LETTER_M,
-            Medefaidrin::CapitalLetterS => CAPITAL_LETTER_S,
-            Medefaidrin::CapitalLetterV => CAPITAL_LETTER_V,
-            Medefaidrin::CapitalLetterW => CAPITAL_LETTER_W,
-            Medefaidrin::CapitalLetterAtiu => CAPITAL_LETTER_ATIU,
-            Medefaidrin::CapitalLetterZ => CAPITAL_LETTER_Z,
-            Medefaidrin::CapitalLetterKp => CAPITAL_LETTER_KP,
-            Medefaidrin::CapitalLetterP => CAPITAL_LETTER_P,
-            Medefaidrin::CapitalLetterT => CAPITAL_LETTER_T,
-            Medefaidrin::CapitalLetterG => CAPITAL_LETTER_G,
-            Medefaidrin::CapitalLetterF => CAPITAL_LETTER_F,
-            Medefaidrin::CapitalLetterI => CAPITAL_LETTER_I,
-            Medefaidrin::CapitalLetterK => CAPITAL_LETTER_K,
-            Medefaidrin::CapitalLetterA => CAPITAL_LETTER_A,
-            Medefaidrin::CapitalLetterJ => CAPITAL_LETTER_J,
-            Medefaidrin::CapitalLetterE => CAPITAL_LETTER_E,
-            Medefaidrin::CapitalLetterB => CAPITAL_LETTER_B,
-            Medefaidrin::CapitalLetterC => CAPITAL_LETTER_C,
-            Medefaidrin::CapitalLetterU => CAPITAL_LETTER_U,
-            Medefaidrin::CapitalLetterYu => CAPITAL_LETTER_YU,
-            Medefaidrin::CapitalLetterL => CAPITAL_LETTER_L,
-            Medefaidrin::CapitalLetterQ => CAPITAL_LETTER_Q,
-            Medefaidrin::CapitalLetterHp => CAPITAL_LETTER_HP,
-            Medefaidrin::CapitalLetterNy => CAPITAL_LETTER_NY,
-            Medefaidrin::CapitalLetterX => CAPITAL_LETTER_X,
-            Medefaidrin::CapitalLetterD => CAPITAL_LETTER_D,
-            Medefaidrin::CapitalLetterOe => CAPITAL_LETTER_OE,
-            Medefaidrin::CapitalLetterN => CAPITAL_LETTER_N,
-            Medefaidrin::CapitalLetterR => CAPITAL_LETTER_R,
-            Medefaidrin::CapitalLetterO => CAPITAL_LETTER_O,
-            Medefaidrin::CapitalLetterAi => CAPITAL_LETTER_AI,
-            Medefaidrin::CapitalLetterY => CAPITAL_LETTER_Y,
-            Medefaidrin::SmallLetterM => SMALL_LETTER_M,
-            Medefaidrin::SmallLetterS => SMALL_LETTER_S,
-            Medefaidrin::SmallLetterV => SMALL_LETTER_V,
-            Medefaidrin::SmallLetterW => SMALL_LETTER_W,
-            Medefaidrin::SmallLetterAtiu => SMALL_LETTER_ATIU,
-            Medefaidrin::SmallLetterZ => SMALL_LETTER_Z,
-            Medefaidrin::SmallLetterKp => SMALL_LETTER_KP,
-            Medefaidrin::SmallLetterP => SMALL_LETTER_P,
-            Medefaidrin::SmallLetterT => SMALL_LETTER_T,
-            Medefaidrin::SmallLetterG => SMALL_LETTER_G,
-            Medefaidrin::SmallLetterF => SMALL_LETTER_F,
-            Medefaidrin::SmallLetterI => SMALL_LETTER_I,
-            Medefaidrin::SmallLetterK => SMALL_LETTER_K,
-            Medefaidrin::SmallLetterA => SMALL_LETTER_A,
-            Medefaidrin::SmallLetterJ => SMALL_LETTER_J,
-            Medefaidrin::SmallLetterE => SMALL_LETTER_E,
-            Medefaidrin::SmallLetterB => SMALL_LETTER_B,
-            Medefaidrin::SmallLetterC => SMALL_LETTER_C,
-            Medefaidrin::SmallLetterU => SMALL_LETTER_U,
-            Medefaidrin::SmallLetterYu => SMALL_LETTER_YU,
-            Medefaidrin::SmallLetterL => SMALL_LETTER_L,
-            Medefaidrin::SmallLetterQ => SMALL_LETTER_Q,
-            Medefaidrin::SmallLetterHp => SMALL_LETTER_HP,
-            Medefaidrin::SmallLetterNy => SMALL_LETTER_NY,
-            Medefaidrin::SmallLetterX => SMALL_LETTER_X,
-            Medefaidrin::SmallLetterD => SMALL_LETTER_D,
-            Medefaidrin::SmallLetterOe => SMALL_LETTER_OE,
-            Medefaidrin::SmallLetterN => SMALL_LETTER_N,
-            Medefaidrin::SmallLetterR => SMALL_LETTER_R,
-            Medefaidrin::SmallLetterO => SMALL_LETTER_O,
-            Medefaidrin::SmallLetterAi => SMALL_LETTER_AI,
-            Medefaidrin::SmallLetterY => SMALL_LETTER_Y,
-            Medefaidrin::DigitZero => DIGIT_ZERO,
-            Medefaidrin::DigitOne => DIGIT_ONE,
-            Medefaidrin::DigitTwo => DIGIT_TWO,
-            Medefaidrin::DigitThree => DIGIT_THREE,
-            Medefaidrin::DigitFour => DIGIT_FOUR,
-            Medefaidrin::DigitFive => DIGIT_FIVE,
-            Medefaidrin::DigitSix => DIGIT_SIX,
-            Medefaidrin::DigitSeven => DIGIT_SEVEN,
-            Medefaidrin::DigitEight => DIGIT_EIGHT,
-            Medefaidrin::DigitNine => DIGIT_NINE,
-            Medefaidrin::NumberTen => NUMBER_TEN,
-            Medefaidrin::NumberEleven => NUMBER_ELEVEN,
-            Medefaidrin::NumberTwelve => NUMBER_TWELVE,
-            Medefaidrin::NumberThirteen => NUMBER_THIRTEEN,
-            Medefaidrin::NumberFourteen => NUMBER_FOURTEEN,
-            Medefaidrin::NumberFifteen => NUMBER_FIFTEEN,
-            Medefaidrin::NumberSixteen => NUMBER_SIXTEEN,
-            Medefaidrin::NumberSeventeen => NUMBER_SEVENTEEN,
-            Medefaidrin::NumberEighteen => NUMBER_EIGHTEEN,
-            Medefaidrin::NumberNineteen => NUMBER_NINETEEN,
-            Medefaidrin::DigitOneAlternateForm => DIGIT_ONE_ALTERNATE_FORM,
-            Medefaidrin::DigitTwoAlternateForm => DIGIT_TWO_ALTERNATE_FORM,
-            Medefaidrin::DigitThreeAlternateForm => DIGIT_THREE_ALTERNATE_FORM,
-            Medefaidrin::Comma => COMMA,
-            Medefaidrin::FullStop => FULL_STOP,
-            Medefaidrin::SymbolAiva => SYMBOL_AIVA,
-            Medefaidrin::ExclamationOh => EXCLAMATION_OH,
+            Medefaidrin::CapitalLetterM => '𖹀',
+            Medefaidrin::CapitalLetterS => '𖹁',
+            Medefaidrin::CapitalLetterV => '𖹂',
+            Medefaidrin::CapitalLetterW => '𖹃',
+            Medefaidrin::CapitalLetterAtiu => '𖹄',
+            Medefaidrin::CapitalLetterZ => '𖹅',
+            Medefaidrin::CapitalLetterKp => '𖹆',
+            Medefaidrin::CapitalLetterP => '𖹇',
+            Medefaidrin::CapitalLetterT => '𖹈',
+            Medefaidrin::CapitalLetterG => '𖹉',
+            Medefaidrin::CapitalLetterF => '𖹊',
+            Medefaidrin::CapitalLetterI => '𖹋',
+            Medefaidrin::CapitalLetterK => '𖹌',
+            Medefaidrin::CapitalLetterA => '𖹍',
+            Medefaidrin::CapitalLetterJ => '𖹎',
+            Medefaidrin::CapitalLetterE => '𖹏',
+            Medefaidrin::CapitalLetterB => '𖹐',
+            Medefaidrin::CapitalLetterC => '𖹑',
+            Medefaidrin::CapitalLetterU => '𖹒',
+            Medefaidrin::CapitalLetterYu => '𖹓',
+            Medefaidrin::CapitalLetterL => '𖹔',
+            Medefaidrin::CapitalLetterQ => '𖹕',
+            Medefaidrin::CapitalLetterHp => '𖹖',
+            Medefaidrin::CapitalLetterNy => '𖹗',
+            Medefaidrin::CapitalLetterX => '𖹘',
+            Medefaidrin::CapitalLetterD => '𖹙',
+            Medefaidrin::CapitalLetterOe => '𖹚',
+            Medefaidrin::CapitalLetterN => '𖹛',
+            Medefaidrin::CapitalLetterR => '𖹜',
+            Medefaidrin::CapitalLetterO => '𖹝',
+            Medefaidrin::CapitalLetterAi => '𖹞',
+            Medefaidrin::CapitalLetterY => '𖹟',
+            Medefaidrin::SmallLetterM => '𖹠',
+            Medefaidrin::SmallLetterS => '𖹡',
+            Medefaidrin::SmallLetterV => '𖹢',
+            Medefaidrin::SmallLetterW => '𖹣',
+            Medefaidrin::SmallLetterAtiu => '𖹤',
+            Medefaidrin::SmallLetterZ => '𖹥',
+            Medefaidrin::SmallLetterKp => '𖹦',
+            Medefaidrin::SmallLetterP => '𖹧',
+            Medefaidrin::SmallLetterT => '𖹨',
+            Medefaidrin::SmallLetterG => '𖹩',
+            Medefaidrin::SmallLetterF => '𖹪',
+            Medefaidrin::SmallLetterI => '𖹫',
+            Medefaidrin::SmallLetterK => '𖹬',
+            Medefaidrin::SmallLetterA => '𖹭',
+            Medefaidrin::SmallLetterJ => '𖹮',
+            Medefaidrin::SmallLetterE => '𖹯',
+            Medefaidrin::SmallLetterB => '𖹰',
+            Medefaidrin::SmallLetterC => '𖹱',
+            Medefaidrin::SmallLetterU => '𖹲',
+            Medefaidrin::SmallLetterYu => '𖹳',
+            Medefaidrin::SmallLetterL => '𖹴',
+            Medefaidrin::SmallLetterQ => '𖹵',
+            Medefaidrin::SmallLetterHp => '𖹶',
+            Medefaidrin::SmallLetterNy => '𖹷',
+            Medefaidrin::SmallLetterX => '𖹸',
+            Medefaidrin::SmallLetterD => '𖹹',
+            Medefaidrin::SmallLetterOe => '𖹺',
+            Medefaidrin::SmallLetterN => '𖹻',
+            Medefaidrin::SmallLetterR => '𖹼',
+            Medefaidrin::SmallLetterO => '𖹽',
+            Medefaidrin::SmallLetterAi => '𖹾',
+            Medefaidrin::SmallLetterY => '𖹿',
+            Medefaidrin::DigitZero => '𖺀',
+            Medefaidrin::DigitOne => '𖺁',
+            Medefaidrin::DigitTwo => '𖺂',
+            Medefaidrin::DigitThree => '𖺃',
+            Medefaidrin::DigitFour => '𖺄',
+            Medefaidrin::DigitFive => '𖺅',
+            Medefaidrin::DigitSix => '𖺆',
+            Medefaidrin::DigitSeven => '𖺇',
+            Medefaidrin::DigitEight => '𖺈',
+            Medefaidrin::DigitNine => '𖺉',
+            Medefaidrin::NumberTen => '𖺊',
+            Medefaidrin::NumberEleven => '𖺋',
+            Medefaidrin::NumberTwelve => '𖺌',
+            Medefaidrin::NumberThirteen => '𖺍',
+            Medefaidrin::NumberFourteen => '𖺎',
+            Medefaidrin::NumberFifteen => '𖺏',
+            Medefaidrin::NumberSixteen => '𖺐',
+            Medefaidrin::NumberSeventeen => '𖺑',
+            Medefaidrin::NumberEighteen => '𖺒',
+            Medefaidrin::NumberNineteen => '𖺓',
+            Medefaidrin::DigitOneAlternateForm => '𖺔',
+            Medefaidrin::DigitTwoAlternateForm => '𖺕',
+            Medefaidrin::DigitThreeAlternateForm => '𖺖',
+            Medefaidrin::Comma => '𖺗',
+            Medefaidrin::FullStop => '𖺘',
+            Medefaidrin::SymbolAiva => '𖺙',
+            Medefaidrin::ExclamationOh => '𖺚',
         }
     }
 }
@@ -473,99 +287,98 @@ impl Into<char> for Medefaidrin {
 impl std::convert::TryFrom<char> for Medefaidrin {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CAPITAL_LETTER_M => Ok(Medefaidrin::CapitalLetterM),
-            CAPITAL_LETTER_S => Ok(Medefaidrin::CapitalLetterS),
-            CAPITAL_LETTER_V => Ok(Medefaidrin::CapitalLetterV),
-            CAPITAL_LETTER_W => Ok(Medefaidrin::CapitalLetterW),
-            CAPITAL_LETTER_ATIU => Ok(Medefaidrin::CapitalLetterAtiu),
-            CAPITAL_LETTER_Z => Ok(Medefaidrin::CapitalLetterZ),
-            CAPITAL_LETTER_KP => Ok(Medefaidrin::CapitalLetterKp),
-            CAPITAL_LETTER_P => Ok(Medefaidrin::CapitalLetterP),
-            CAPITAL_LETTER_T => Ok(Medefaidrin::CapitalLetterT),
-            CAPITAL_LETTER_G => Ok(Medefaidrin::CapitalLetterG),
-            CAPITAL_LETTER_F => Ok(Medefaidrin::CapitalLetterF),
-            CAPITAL_LETTER_I => Ok(Medefaidrin::CapitalLetterI),
-            CAPITAL_LETTER_K => Ok(Medefaidrin::CapitalLetterK),
-            CAPITAL_LETTER_A => Ok(Medefaidrin::CapitalLetterA),
-            CAPITAL_LETTER_J => Ok(Medefaidrin::CapitalLetterJ),
-            CAPITAL_LETTER_E => Ok(Medefaidrin::CapitalLetterE),
-            CAPITAL_LETTER_B => Ok(Medefaidrin::CapitalLetterB),
-            CAPITAL_LETTER_C => Ok(Medefaidrin::CapitalLetterC),
-            CAPITAL_LETTER_U => Ok(Medefaidrin::CapitalLetterU),
-            CAPITAL_LETTER_YU => Ok(Medefaidrin::CapitalLetterYu),
-            CAPITAL_LETTER_L => Ok(Medefaidrin::CapitalLetterL),
-            CAPITAL_LETTER_Q => Ok(Medefaidrin::CapitalLetterQ),
-            CAPITAL_LETTER_HP => Ok(Medefaidrin::CapitalLetterHp),
-            CAPITAL_LETTER_NY => Ok(Medefaidrin::CapitalLetterNy),
-            CAPITAL_LETTER_X => Ok(Medefaidrin::CapitalLetterX),
-            CAPITAL_LETTER_D => Ok(Medefaidrin::CapitalLetterD),
-            CAPITAL_LETTER_OE => Ok(Medefaidrin::CapitalLetterOe),
-            CAPITAL_LETTER_N => Ok(Medefaidrin::CapitalLetterN),
-            CAPITAL_LETTER_R => Ok(Medefaidrin::CapitalLetterR),
-            CAPITAL_LETTER_O => Ok(Medefaidrin::CapitalLetterO),
-            CAPITAL_LETTER_AI => Ok(Medefaidrin::CapitalLetterAi),
-            CAPITAL_LETTER_Y => Ok(Medefaidrin::CapitalLetterY),
-            SMALL_LETTER_M => Ok(Medefaidrin::SmallLetterM),
-            SMALL_LETTER_S => Ok(Medefaidrin::SmallLetterS),
-            SMALL_LETTER_V => Ok(Medefaidrin::SmallLetterV),
-            SMALL_LETTER_W => Ok(Medefaidrin::SmallLetterW),
-            SMALL_LETTER_ATIU => Ok(Medefaidrin::SmallLetterAtiu),
-            SMALL_LETTER_Z => Ok(Medefaidrin::SmallLetterZ),
-            SMALL_LETTER_KP => Ok(Medefaidrin::SmallLetterKp),
-            SMALL_LETTER_P => Ok(Medefaidrin::SmallLetterP),
-            SMALL_LETTER_T => Ok(Medefaidrin::SmallLetterT),
-            SMALL_LETTER_G => Ok(Medefaidrin::SmallLetterG),
-            SMALL_LETTER_F => Ok(Medefaidrin::SmallLetterF),
-            SMALL_LETTER_I => Ok(Medefaidrin::SmallLetterI),
-            SMALL_LETTER_K => Ok(Medefaidrin::SmallLetterK),
-            SMALL_LETTER_A => Ok(Medefaidrin::SmallLetterA),
-            SMALL_LETTER_J => Ok(Medefaidrin::SmallLetterJ),
-            SMALL_LETTER_E => Ok(Medefaidrin::SmallLetterE),
-            SMALL_LETTER_B => Ok(Medefaidrin::SmallLetterB),
-            SMALL_LETTER_C => Ok(Medefaidrin::SmallLetterC),
-            SMALL_LETTER_U => Ok(Medefaidrin::SmallLetterU),
-            SMALL_LETTER_YU => Ok(Medefaidrin::SmallLetterYu),
-            SMALL_LETTER_L => Ok(Medefaidrin::SmallLetterL),
-            SMALL_LETTER_Q => Ok(Medefaidrin::SmallLetterQ),
-            SMALL_LETTER_HP => Ok(Medefaidrin::SmallLetterHp),
-            SMALL_LETTER_NY => Ok(Medefaidrin::SmallLetterNy),
-            SMALL_LETTER_X => Ok(Medefaidrin::SmallLetterX),
-            SMALL_LETTER_D => Ok(Medefaidrin::SmallLetterD),
-            SMALL_LETTER_OE => Ok(Medefaidrin::SmallLetterOe),
-            SMALL_LETTER_N => Ok(Medefaidrin::SmallLetterN),
-            SMALL_LETTER_R => Ok(Medefaidrin::SmallLetterR),
-            SMALL_LETTER_O => Ok(Medefaidrin::SmallLetterO),
-            SMALL_LETTER_AI => Ok(Medefaidrin::SmallLetterAi),
-            SMALL_LETTER_Y => Ok(Medefaidrin::SmallLetterY),
-            DIGIT_ZERO => Ok(Medefaidrin::DigitZero),
-            DIGIT_ONE => Ok(Medefaidrin::DigitOne),
-            DIGIT_TWO => Ok(Medefaidrin::DigitTwo),
-            DIGIT_THREE => Ok(Medefaidrin::DigitThree),
-            DIGIT_FOUR => Ok(Medefaidrin::DigitFour),
-            DIGIT_FIVE => Ok(Medefaidrin::DigitFive),
-            DIGIT_SIX => Ok(Medefaidrin::DigitSix),
-            DIGIT_SEVEN => Ok(Medefaidrin::DigitSeven),
-            DIGIT_EIGHT => Ok(Medefaidrin::DigitEight),
-            DIGIT_NINE => Ok(Medefaidrin::DigitNine),
-            NUMBER_TEN => Ok(Medefaidrin::NumberTen),
-            NUMBER_ELEVEN => Ok(Medefaidrin::NumberEleven),
-            NUMBER_TWELVE => Ok(Medefaidrin::NumberTwelve),
-            NUMBER_THIRTEEN => Ok(Medefaidrin::NumberThirteen),
-            NUMBER_FOURTEEN => Ok(Medefaidrin::NumberFourteen),
-            NUMBER_FIFTEEN => Ok(Medefaidrin::NumberFifteen),
-            NUMBER_SIXTEEN => Ok(Medefaidrin::NumberSixteen),
-            NUMBER_SEVENTEEN => Ok(Medefaidrin::NumberSeventeen),
-            NUMBER_EIGHTEEN => Ok(Medefaidrin::NumberEighteen),
-            NUMBER_NINETEEN => Ok(Medefaidrin::NumberNineteen),
-            DIGIT_ONE_ALTERNATE_FORM => Ok(Medefaidrin::DigitOneAlternateForm),
-            DIGIT_TWO_ALTERNATE_FORM => Ok(Medefaidrin::DigitTwoAlternateForm),
-            DIGIT_THREE_ALTERNATE_FORM => Ok(Medefaidrin::DigitThreeAlternateForm),
-            COMMA => Ok(Medefaidrin::Comma),
-            FULL_STOP => Ok(Medefaidrin::FullStop),
-            SYMBOL_AIVA => Ok(Medefaidrin::SymbolAiva),
-            EXCLAMATION_OH => Ok(Medefaidrin::ExclamationOh),
+            '𖹀' => Ok(Medefaidrin::CapitalLetterM),
+            '𖹁' => Ok(Medefaidrin::CapitalLetterS),
+            '𖹂' => Ok(Medefaidrin::CapitalLetterV),
+            '𖹃' => Ok(Medefaidrin::CapitalLetterW),
+            '𖹄' => Ok(Medefaidrin::CapitalLetterAtiu),
+            '𖹅' => Ok(Medefaidrin::CapitalLetterZ),
+            '𖹆' => Ok(Medefaidrin::CapitalLetterKp),
+            '𖹇' => Ok(Medefaidrin::CapitalLetterP),
+            '𖹈' => Ok(Medefaidrin::CapitalLetterT),
+            '𖹉' => Ok(Medefaidrin::CapitalLetterG),
+            '𖹊' => Ok(Medefaidrin::CapitalLetterF),
+            '𖹋' => Ok(Medefaidrin::CapitalLetterI),
+            '𖹌' => Ok(Medefaidrin::CapitalLetterK),
+            '𖹍' => Ok(Medefaidrin::CapitalLetterA),
+            '𖹎' => Ok(Medefaidrin::CapitalLetterJ),
+            '𖹏' => Ok(Medefaidrin::CapitalLetterE),
+            '𖹐' => Ok(Medefaidrin::CapitalLetterB),
+            '𖹑' => Ok(Medefaidrin::CapitalLetterC),
+            '𖹒' => Ok(Medefaidrin::CapitalLetterU),
+            '𖹓' => Ok(Medefaidrin::CapitalLetterYu),
+            '𖹔' => Ok(Medefaidrin::CapitalLetterL),
+            '𖹕' => Ok(Medefaidrin::CapitalLetterQ),
+            '𖹖' => Ok(Medefaidrin::CapitalLetterHp),
+            '𖹗' => Ok(Medefaidrin::CapitalLetterNy),
+            '𖹘' => Ok(Medefaidrin::CapitalLetterX),
+            '𖹙' => Ok(Medefaidrin::CapitalLetterD),
+            '𖹚' => Ok(Medefaidrin::CapitalLetterOe),
+            '𖹛' => Ok(Medefaidrin::CapitalLetterN),
+            '𖹜' => Ok(Medefaidrin::CapitalLetterR),
+            '𖹝' => Ok(Medefaidrin::CapitalLetterO),
+            '𖹞' => Ok(Medefaidrin::CapitalLetterAi),
+            '𖹟' => Ok(Medefaidrin::CapitalLetterY),
+            '𖹠' => Ok(Medefaidrin::SmallLetterM),
+            '𖹡' => Ok(Medefaidrin::SmallLetterS),
+            '𖹢' => Ok(Medefaidrin::SmallLetterV),
+            '𖹣' => Ok(Medefaidrin::SmallLetterW),
+            '𖹤' => Ok(Medefaidrin::SmallLetterAtiu),
+            '𖹥' => Ok(Medefaidrin::SmallLetterZ),
+            '𖹦' => Ok(Medefaidrin::SmallLetterKp),
+            '𖹧' => Ok(Medefaidrin::SmallLetterP),
+            '𖹨' => Ok(Medefaidrin::SmallLetterT),
+            '𖹩' => Ok(Medefaidrin::SmallLetterG),
+            '𖹪' => Ok(Medefaidrin::SmallLetterF),
+            '𖹫' => Ok(Medefaidrin::SmallLetterI),
+            '𖹬' => Ok(Medefaidrin::SmallLetterK),
+            '𖹭' => Ok(Medefaidrin::SmallLetterA),
+            '𖹮' => Ok(Medefaidrin::SmallLetterJ),
+            '𖹯' => Ok(Medefaidrin::SmallLetterE),
+            '𖹰' => Ok(Medefaidrin::SmallLetterB),
+            '𖹱' => Ok(Medefaidrin::SmallLetterC),
+            '𖹲' => Ok(Medefaidrin::SmallLetterU),
+            '𖹳' => Ok(Medefaidrin::SmallLetterYu),
+            '𖹴' => Ok(Medefaidrin::SmallLetterL),
+            '𖹵' => Ok(Medefaidrin::SmallLetterQ),
+            '𖹶' => Ok(Medefaidrin::SmallLetterHp),
+            '𖹷' => Ok(Medefaidrin::SmallLetterNy),
+            '𖹸' => Ok(Medefaidrin::SmallLetterX),
+            '𖹹' => Ok(Medefaidrin::SmallLetterD),
+            '𖹺' => Ok(Medefaidrin::SmallLetterOe),
+            '𖹻' => Ok(Medefaidrin::SmallLetterN),
+            '𖹼' => Ok(Medefaidrin::SmallLetterR),
+            '𖹽' => Ok(Medefaidrin::SmallLetterO),
+            '𖹾' => Ok(Medefaidrin::SmallLetterAi),
+            '𖹿' => Ok(Medefaidrin::SmallLetterY),
+            '𖺀' => Ok(Medefaidrin::DigitZero),
+            '𖺁' => Ok(Medefaidrin::DigitOne),
+            '𖺂' => Ok(Medefaidrin::DigitTwo),
+            '𖺃' => Ok(Medefaidrin::DigitThree),
+            '𖺄' => Ok(Medefaidrin::DigitFour),
+            '𖺅' => Ok(Medefaidrin::DigitFive),
+            '𖺆' => Ok(Medefaidrin::DigitSix),
+            '𖺇' => Ok(Medefaidrin::DigitSeven),
+            '𖺈' => Ok(Medefaidrin::DigitEight),
+            '𖺉' => Ok(Medefaidrin::DigitNine),
+            '𖺊' => Ok(Medefaidrin::NumberTen),
+            '𖺋' => Ok(Medefaidrin::NumberEleven),
+            '𖺌' => Ok(Medefaidrin::NumberTwelve),
+            '𖺍' => Ok(Medefaidrin::NumberThirteen),
+            '𖺎' => Ok(Medefaidrin::NumberFourteen),
+            '𖺏' => Ok(Medefaidrin::NumberFifteen),
+            '𖺐' => Ok(Medefaidrin::NumberSixteen),
+            '𖺑' => Ok(Medefaidrin::NumberSeventeen),
+            '𖺒' => Ok(Medefaidrin::NumberEighteen),
+            '𖺓' => Ok(Medefaidrin::NumberNineteen),
+            '𖺔' => Ok(Medefaidrin::DigitOneAlternateForm),
+            '𖺕' => Ok(Medefaidrin::DigitTwoAlternateForm),
+            '𖺖' => Ok(Medefaidrin::DigitThreeAlternateForm),
+            '𖺗' => Ok(Medefaidrin::Comma),
+            '𖺘' => Ok(Medefaidrin::FullStop),
+            '𖺙' => Ok(Medefaidrin::SymbolAiva),
+            '𖺚' => Ok(Medefaidrin::ExclamationOh),
             _ => Err(()),
         }
     }

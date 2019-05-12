@@ -1,68 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10e60}: '𐹠'
-    pub const RUMI_DIGIT_ONE: char = '𐹠';
-    /// \u{10e61}: '𐹡'
-    pub const RUMI_DIGIT_TWO: char = '𐹡';
-    /// \u{10e62}: '𐹢'
-    pub const RUMI_DIGIT_THREE: char = '𐹢';
-    /// \u{10e63}: '𐹣'
-    pub const RUMI_DIGIT_FOUR: char = '𐹣';
-    /// \u{10e64}: '𐹤'
-    pub const RUMI_DIGIT_FIVE: char = '𐹤';
-    /// \u{10e65}: '𐹥'
-    pub const RUMI_DIGIT_SIX: char = '𐹥';
-    /// \u{10e66}: '𐹦'
-    pub const RUMI_DIGIT_SEVEN: char = '𐹦';
-    /// \u{10e67}: '𐹧'
-    pub const RUMI_DIGIT_EIGHT: char = '𐹧';
-    /// \u{10e68}: '𐹨'
-    pub const RUMI_DIGIT_NINE: char = '𐹨';
-    /// \u{10e69}: '𐹩'
-    pub const RUMI_NUMBER_TEN: char = '𐹩';
-    /// \u{10e6a}: '𐹪'
-    pub const RUMI_NUMBER_TWENTY: char = '𐹪';
-    /// \u{10e6b}: '𐹫'
-    pub const RUMI_NUMBER_THIRTY: char = '𐹫';
-    /// \u{10e6c}: '𐹬'
-    pub const RUMI_NUMBER_FORTY: char = '𐹬';
-    /// \u{10e6d}: '𐹭'
-    pub const RUMI_NUMBER_FIFTY: char = '𐹭';
-    /// \u{10e6e}: '𐹮'
-    pub const RUMI_NUMBER_SIXTY: char = '𐹮';
-    /// \u{10e6f}: '𐹯'
-    pub const RUMI_NUMBER_SEVENTY: char = '𐹯';
-    /// \u{10e70}: '𐹰'
-    pub const RUMI_NUMBER_EIGHTY: char = '𐹰';
-    /// \u{10e71}: '𐹱'
-    pub const RUMI_NUMBER_NINETY: char = '𐹱';
-    /// \u{10e72}: '𐹲'
-    pub const RUMI_NUMBER_ONE_HUNDRED: char = '𐹲';
-    /// \u{10e73}: '𐹳'
-    pub const RUMI_NUMBER_TWO_HUNDRED: char = '𐹳';
-    /// \u{10e74}: '𐹴'
-    pub const RUMI_NUMBER_THREE_HUNDRED: char = '𐹴';
-    /// \u{10e75}: '𐹵'
-    pub const RUMI_NUMBER_FOUR_HUNDRED: char = '𐹵';
-    /// \u{10e76}: '𐹶'
-    pub const RUMI_NUMBER_FIVE_HUNDRED: char = '𐹶';
-    /// \u{10e77}: '𐹷'
-    pub const RUMI_NUMBER_SIX_HUNDRED: char = '𐹷';
-    /// \u{10e78}: '𐹸'
-    pub const RUMI_NUMBER_SEVEN_HUNDRED: char = '𐹸';
-    /// \u{10e79}: '𐹹'
-    pub const RUMI_NUMBER_EIGHT_HUNDRED: char = '𐹹';
-    /// \u{10e7a}: '𐹺'
-    pub const RUMI_NUMBER_NINE_HUNDRED: char = '𐹺';
-    /// \u{10e7b}: '𐹻'
-    pub const RUMI_FRACTION_ONE_HALF: char = '𐹻';
-    /// \u{10e7c}: '𐹼'
-    pub const RUMI_FRACTION_ONE_QUARTER: char = '𐹼';
-    /// \u{10e7d}: '𐹽'
-    pub const RUMI_FRACTION_ONE_THIRD: char = '𐹽';
-    /// \u{10e7e}: '𐹾'
-    pub const RUMI_FRACTION_TWO_THIRDS: char = '𐹾';
-}
 
 /// An enum to represent all characters in the RumiNumeralSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -133,39 +68,38 @@ pub enum RumiNumeralSymbols {
 
 impl Into<char> for RumiNumeralSymbols {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            RumiNumeralSymbols::RumiDigitOne => RUMI_DIGIT_ONE,
-            RumiNumeralSymbols::RumiDigitTwo => RUMI_DIGIT_TWO,
-            RumiNumeralSymbols::RumiDigitThree => RUMI_DIGIT_THREE,
-            RumiNumeralSymbols::RumiDigitFour => RUMI_DIGIT_FOUR,
-            RumiNumeralSymbols::RumiDigitFive => RUMI_DIGIT_FIVE,
-            RumiNumeralSymbols::RumiDigitSix => RUMI_DIGIT_SIX,
-            RumiNumeralSymbols::RumiDigitSeven => RUMI_DIGIT_SEVEN,
-            RumiNumeralSymbols::RumiDigitEight => RUMI_DIGIT_EIGHT,
-            RumiNumeralSymbols::RumiDigitNine => RUMI_DIGIT_NINE,
-            RumiNumeralSymbols::RumiNumberTen => RUMI_NUMBER_TEN,
-            RumiNumeralSymbols::RumiNumberTwenty => RUMI_NUMBER_TWENTY,
-            RumiNumeralSymbols::RumiNumberThirty => RUMI_NUMBER_THIRTY,
-            RumiNumeralSymbols::RumiNumberForty => RUMI_NUMBER_FORTY,
-            RumiNumeralSymbols::RumiNumberFifty => RUMI_NUMBER_FIFTY,
-            RumiNumeralSymbols::RumiNumberSixty => RUMI_NUMBER_SIXTY,
-            RumiNumeralSymbols::RumiNumberSeventy => RUMI_NUMBER_SEVENTY,
-            RumiNumeralSymbols::RumiNumberEighty => RUMI_NUMBER_EIGHTY,
-            RumiNumeralSymbols::RumiNumberNinety => RUMI_NUMBER_NINETY,
-            RumiNumeralSymbols::RumiNumberOneHundred => RUMI_NUMBER_ONE_HUNDRED,
-            RumiNumeralSymbols::RumiNumberTwoHundred => RUMI_NUMBER_TWO_HUNDRED,
-            RumiNumeralSymbols::RumiNumberThreeHundred => RUMI_NUMBER_THREE_HUNDRED,
-            RumiNumeralSymbols::RumiNumberFourHundred => RUMI_NUMBER_FOUR_HUNDRED,
-            RumiNumeralSymbols::RumiNumberFiveHundred => RUMI_NUMBER_FIVE_HUNDRED,
-            RumiNumeralSymbols::RumiNumberSixHundred => RUMI_NUMBER_SIX_HUNDRED,
-            RumiNumeralSymbols::RumiNumberSevenHundred => RUMI_NUMBER_SEVEN_HUNDRED,
-            RumiNumeralSymbols::RumiNumberEightHundred => RUMI_NUMBER_EIGHT_HUNDRED,
-            RumiNumeralSymbols::RumiNumberNineHundred => RUMI_NUMBER_NINE_HUNDRED,
-            RumiNumeralSymbols::RumiFractionOneHalf => RUMI_FRACTION_ONE_HALF,
-            RumiNumeralSymbols::RumiFractionOneQuarter => RUMI_FRACTION_ONE_QUARTER,
-            RumiNumeralSymbols::RumiFractionOneThird => RUMI_FRACTION_ONE_THIRD,
-            RumiNumeralSymbols::RumiFractionTwoThirds => RUMI_FRACTION_TWO_THIRDS,
+            RumiNumeralSymbols::RumiDigitOne => '𐹠',
+            RumiNumeralSymbols::RumiDigitTwo => '𐹡',
+            RumiNumeralSymbols::RumiDigitThree => '𐹢',
+            RumiNumeralSymbols::RumiDigitFour => '𐹣',
+            RumiNumeralSymbols::RumiDigitFive => '𐹤',
+            RumiNumeralSymbols::RumiDigitSix => '𐹥',
+            RumiNumeralSymbols::RumiDigitSeven => '𐹦',
+            RumiNumeralSymbols::RumiDigitEight => '𐹧',
+            RumiNumeralSymbols::RumiDigitNine => '𐹨',
+            RumiNumeralSymbols::RumiNumberTen => '𐹩',
+            RumiNumeralSymbols::RumiNumberTwenty => '𐹪',
+            RumiNumeralSymbols::RumiNumberThirty => '𐹫',
+            RumiNumeralSymbols::RumiNumberForty => '𐹬',
+            RumiNumeralSymbols::RumiNumberFifty => '𐹭',
+            RumiNumeralSymbols::RumiNumberSixty => '𐹮',
+            RumiNumeralSymbols::RumiNumberSeventy => '𐹯',
+            RumiNumeralSymbols::RumiNumberEighty => '𐹰',
+            RumiNumeralSymbols::RumiNumberNinety => '𐹱',
+            RumiNumeralSymbols::RumiNumberOneHundred => '𐹲',
+            RumiNumeralSymbols::RumiNumberTwoHundred => '𐹳',
+            RumiNumeralSymbols::RumiNumberThreeHundred => '𐹴',
+            RumiNumeralSymbols::RumiNumberFourHundred => '𐹵',
+            RumiNumeralSymbols::RumiNumberFiveHundred => '𐹶',
+            RumiNumeralSymbols::RumiNumberSixHundred => '𐹷',
+            RumiNumeralSymbols::RumiNumberSevenHundred => '𐹸',
+            RumiNumeralSymbols::RumiNumberEightHundred => '𐹹',
+            RumiNumeralSymbols::RumiNumberNineHundred => '𐹺',
+            RumiNumeralSymbols::RumiFractionOneHalf => '𐹻',
+            RumiNumeralSymbols::RumiFractionOneQuarter => '𐹼',
+            RumiNumeralSymbols::RumiFractionOneThird => '𐹽',
+            RumiNumeralSymbols::RumiFractionTwoThirds => '𐹾',
         }
     }
 }
@@ -173,39 +107,38 @@ impl Into<char> for RumiNumeralSymbols {
 impl std::convert::TryFrom<char> for RumiNumeralSymbols {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            RUMI_DIGIT_ONE => Ok(RumiNumeralSymbols::RumiDigitOne),
-            RUMI_DIGIT_TWO => Ok(RumiNumeralSymbols::RumiDigitTwo),
-            RUMI_DIGIT_THREE => Ok(RumiNumeralSymbols::RumiDigitThree),
-            RUMI_DIGIT_FOUR => Ok(RumiNumeralSymbols::RumiDigitFour),
-            RUMI_DIGIT_FIVE => Ok(RumiNumeralSymbols::RumiDigitFive),
-            RUMI_DIGIT_SIX => Ok(RumiNumeralSymbols::RumiDigitSix),
-            RUMI_DIGIT_SEVEN => Ok(RumiNumeralSymbols::RumiDigitSeven),
-            RUMI_DIGIT_EIGHT => Ok(RumiNumeralSymbols::RumiDigitEight),
-            RUMI_DIGIT_NINE => Ok(RumiNumeralSymbols::RumiDigitNine),
-            RUMI_NUMBER_TEN => Ok(RumiNumeralSymbols::RumiNumberTen),
-            RUMI_NUMBER_TWENTY => Ok(RumiNumeralSymbols::RumiNumberTwenty),
-            RUMI_NUMBER_THIRTY => Ok(RumiNumeralSymbols::RumiNumberThirty),
-            RUMI_NUMBER_FORTY => Ok(RumiNumeralSymbols::RumiNumberForty),
-            RUMI_NUMBER_FIFTY => Ok(RumiNumeralSymbols::RumiNumberFifty),
-            RUMI_NUMBER_SIXTY => Ok(RumiNumeralSymbols::RumiNumberSixty),
-            RUMI_NUMBER_SEVENTY => Ok(RumiNumeralSymbols::RumiNumberSeventy),
-            RUMI_NUMBER_EIGHTY => Ok(RumiNumeralSymbols::RumiNumberEighty),
-            RUMI_NUMBER_NINETY => Ok(RumiNumeralSymbols::RumiNumberNinety),
-            RUMI_NUMBER_ONE_HUNDRED => Ok(RumiNumeralSymbols::RumiNumberOneHundred),
-            RUMI_NUMBER_TWO_HUNDRED => Ok(RumiNumeralSymbols::RumiNumberTwoHundred),
-            RUMI_NUMBER_THREE_HUNDRED => Ok(RumiNumeralSymbols::RumiNumberThreeHundred),
-            RUMI_NUMBER_FOUR_HUNDRED => Ok(RumiNumeralSymbols::RumiNumberFourHundred),
-            RUMI_NUMBER_FIVE_HUNDRED => Ok(RumiNumeralSymbols::RumiNumberFiveHundred),
-            RUMI_NUMBER_SIX_HUNDRED => Ok(RumiNumeralSymbols::RumiNumberSixHundred),
-            RUMI_NUMBER_SEVEN_HUNDRED => Ok(RumiNumeralSymbols::RumiNumberSevenHundred),
-            RUMI_NUMBER_EIGHT_HUNDRED => Ok(RumiNumeralSymbols::RumiNumberEightHundred),
-            RUMI_NUMBER_NINE_HUNDRED => Ok(RumiNumeralSymbols::RumiNumberNineHundred),
-            RUMI_FRACTION_ONE_HALF => Ok(RumiNumeralSymbols::RumiFractionOneHalf),
-            RUMI_FRACTION_ONE_QUARTER => Ok(RumiNumeralSymbols::RumiFractionOneQuarter),
-            RUMI_FRACTION_ONE_THIRD => Ok(RumiNumeralSymbols::RumiFractionOneThird),
-            RUMI_FRACTION_TWO_THIRDS => Ok(RumiNumeralSymbols::RumiFractionTwoThirds),
+            '𐹠' => Ok(RumiNumeralSymbols::RumiDigitOne),
+            '𐹡' => Ok(RumiNumeralSymbols::RumiDigitTwo),
+            '𐹢' => Ok(RumiNumeralSymbols::RumiDigitThree),
+            '𐹣' => Ok(RumiNumeralSymbols::RumiDigitFour),
+            '𐹤' => Ok(RumiNumeralSymbols::RumiDigitFive),
+            '𐹥' => Ok(RumiNumeralSymbols::RumiDigitSix),
+            '𐹦' => Ok(RumiNumeralSymbols::RumiDigitSeven),
+            '𐹧' => Ok(RumiNumeralSymbols::RumiDigitEight),
+            '𐹨' => Ok(RumiNumeralSymbols::RumiDigitNine),
+            '𐹩' => Ok(RumiNumeralSymbols::RumiNumberTen),
+            '𐹪' => Ok(RumiNumeralSymbols::RumiNumberTwenty),
+            '𐹫' => Ok(RumiNumeralSymbols::RumiNumberThirty),
+            '𐹬' => Ok(RumiNumeralSymbols::RumiNumberForty),
+            '𐹭' => Ok(RumiNumeralSymbols::RumiNumberFifty),
+            '𐹮' => Ok(RumiNumeralSymbols::RumiNumberSixty),
+            '𐹯' => Ok(RumiNumeralSymbols::RumiNumberSeventy),
+            '𐹰' => Ok(RumiNumeralSymbols::RumiNumberEighty),
+            '𐹱' => Ok(RumiNumeralSymbols::RumiNumberNinety),
+            '𐹲' => Ok(RumiNumeralSymbols::RumiNumberOneHundred),
+            '𐹳' => Ok(RumiNumeralSymbols::RumiNumberTwoHundred),
+            '𐹴' => Ok(RumiNumeralSymbols::RumiNumberThreeHundred),
+            '𐹵' => Ok(RumiNumeralSymbols::RumiNumberFourHundred),
+            '𐹶' => Ok(RumiNumeralSymbols::RumiNumberFiveHundred),
+            '𐹷' => Ok(RumiNumeralSymbols::RumiNumberSixHundred),
+            '𐹸' => Ok(RumiNumeralSymbols::RumiNumberSevenHundred),
+            '𐹹' => Ok(RumiNumeralSymbols::RumiNumberEightHundred),
+            '𐹺' => Ok(RumiNumeralSymbols::RumiNumberNineHundred),
+            '𐹻' => Ok(RumiNumeralSymbols::RumiFractionOneHalf),
+            '𐹼' => Ok(RumiNumeralSymbols::RumiFractionOneQuarter),
+            '𐹽' => Ok(RumiNumeralSymbols::RumiFractionOneThird),
+            '𐹾' => Ok(RumiNumeralSymbols::RumiFractionTwoThirds),
             _ => Err(()),
         }
     }

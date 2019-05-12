@@ -1,156 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11d00}: '𑴀'
-    pub const LETTER_A: char = '𑴀';
-    /// \u{11d01}: '𑴁'
-    pub const LETTER_AA: char = '𑴁';
-    /// \u{11d02}: '𑴂'
-    pub const LETTER_I: char = '𑴂';
-    /// \u{11d03}: '𑴃'
-    pub const LETTER_II: char = '𑴃';
-    /// \u{11d04}: '𑴄'
-    pub const LETTER_U: char = '𑴄';
-    /// \u{11d05}: '𑴅'
-    pub const LETTER_UU: char = '𑴅';
-    /// \u{11d06}: '𑴆'
-    pub const LETTER_E: char = '𑴆';
-    /// \u{11d08}: '𑴈'
-    pub const LETTER_AI: char = '𑴈';
-    /// \u{11d09}: '𑴉'
-    pub const LETTER_O: char = '𑴉';
-    /// \u{11d0b}: '𑴋'
-    pub const LETTER_AU: char = '𑴋';
-    /// \u{11d0c}: '𑴌'
-    pub const LETTER_KA: char = '𑴌';
-    /// \u{11d0d}: '𑴍'
-    pub const LETTER_KHA: char = '𑴍';
-    /// \u{11d0e}: '𑴎'
-    pub const LETTER_GA: char = '𑴎';
-    /// \u{11d0f}: '𑴏'
-    pub const LETTER_GHA: char = '𑴏';
-    /// \u{11d10}: '𑴐'
-    pub const LETTER_NGA: char = '𑴐';
-    /// \u{11d11}: '𑴑'
-    pub const LETTER_CA: char = '𑴑';
-    /// \u{11d12}: '𑴒'
-    pub const LETTER_CHA: char = '𑴒';
-    /// \u{11d13}: '𑴓'
-    pub const LETTER_JA: char = '𑴓';
-    /// \u{11d14}: '𑴔'
-    pub const LETTER_JHA: char = '𑴔';
-    /// \u{11d15}: '𑴕'
-    pub const LETTER_NYA: char = '𑴕';
-    /// \u{11d16}: '𑴖'
-    pub const LETTER_TTA: char = '𑴖';
-    /// \u{11d17}: '𑴗'
-    pub const LETTER_TTHA: char = '𑴗';
-    /// \u{11d18}: '𑴘'
-    pub const LETTER_DDA: char = '𑴘';
-    /// \u{11d19}: '𑴙'
-    pub const LETTER_DDHA: char = '𑴙';
-    /// \u{11d1a}: '𑴚'
-    pub const LETTER_NNA: char = '𑴚';
-    /// \u{11d1b}: '𑴛'
-    pub const LETTER_TA: char = '𑴛';
-    /// \u{11d1c}: '𑴜'
-    pub const LETTER_THA: char = '𑴜';
-    /// \u{11d1d}: '𑴝'
-    pub const LETTER_DA: char = '𑴝';
-    /// \u{11d1e}: '𑴞'
-    pub const LETTER_DHA: char = '𑴞';
-    /// \u{11d1f}: '𑴟'
-    pub const LETTER_NA: char = '𑴟';
-    /// \u{11d20}: '𑴠'
-    pub const LETTER_PA: char = '𑴠';
-    /// \u{11d21}: '𑴡'
-    pub const LETTER_PHA: char = '𑴡';
-    /// \u{11d22}: '𑴢'
-    pub const LETTER_BA: char = '𑴢';
-    /// \u{11d23}: '𑴣'
-    pub const LETTER_BHA: char = '𑴣';
-    /// \u{11d24}: '𑴤'
-    pub const LETTER_MA: char = '𑴤';
-    /// \u{11d25}: '𑴥'
-    pub const LETTER_YA: char = '𑴥';
-    /// \u{11d26}: '𑴦'
-    pub const LETTER_RA: char = '𑴦';
-    /// \u{11d27}: '𑴧'
-    pub const LETTER_LA: char = '𑴧';
-    /// \u{11d28}: '𑴨'
-    pub const LETTER_VA: char = '𑴨';
-    /// \u{11d29}: '𑴩'
-    pub const LETTER_SHA: char = '𑴩';
-    /// \u{11d2a}: '𑴪'
-    pub const LETTER_SSA: char = '𑴪';
-    /// \u{11d2b}: '𑴫'
-    pub const LETTER_SA: char = '𑴫';
-    /// \u{11d2c}: '𑴬'
-    pub const LETTER_HA: char = '𑴬';
-    /// \u{11d2d}: '𑴭'
-    pub const LETTER_LLA: char = '𑴭';
-    /// \u{11d2e}: '𑴮'
-    pub const LETTER_KSSA: char = '𑴮';
-    /// \u{11d2f}: '𑴯'
-    pub const LETTER_JNYA: char = '𑴯';
-    /// \u{11d30}: '𑴰'
-    pub const LETTER_TRA: char = '𑴰';
-    /// \u{11d31}: '𑴱'
-    pub const VOWEL_SIGN_AA: char = '𑴱';
-    /// \u{11d32}: '𑴲'
-    pub const VOWEL_SIGN_I: char = '𑴲';
-    /// \u{11d33}: '𑴳'
-    pub const VOWEL_SIGN_II: char = '𑴳';
-    /// \u{11d34}: '𑴴'
-    pub const VOWEL_SIGN_U: char = '𑴴';
-    /// \u{11d35}: '𑴵'
-    pub const VOWEL_SIGN_UU: char = '𑴵';
-    /// \u{11d36}: '𑴶'
-    pub const VOWEL_SIGN_VOCALIC_R: char = '𑴶';
-    /// \u{11d3a}: '𑴺'
-    pub const VOWEL_SIGN_E: char = '𑴺';
-    /// \u{11d3c}: '𑴼'
-    pub const VOWEL_SIGN_AI: char = '𑴼';
-    /// \u{11d3d}: '𑴽'
-    pub const VOWEL_SIGN_O: char = '𑴽';
-    /// \u{11d3f}: '𑴿'
-    pub const VOWEL_SIGN_AU: char = '𑴿';
-    /// \u{11d40}: '𑵀'
-    pub const SIGN_ANUSVARA: char = '𑵀';
-    /// \u{11d41}: '𑵁'
-    pub const SIGN_VISARGA: char = '𑵁';
-    /// \u{11d42}: '𑵂'
-    pub const SIGN_NUKTA: char = '𑵂';
-    /// \u{11d43}: '𑵃'
-    pub const SIGN_CANDRA: char = '𑵃';
-    /// \u{11d44}: '𑵄'
-    pub const SIGN_HALANTA: char = '𑵄';
-    /// \u{11d45}: '𑵅'
-    pub const VIRAMA: char = '𑵅';
-    /// \u{11d46}: '𑵆'
-    pub const REPHA: char = '𑵆';
-    /// \u{11d47}: '𑵇'
-    pub const RA_DASH_KARA: char = '𑵇';
-    /// \u{11d50}: '𑵐'
-    pub const DIGIT_ZERO: char = '𑵐';
-    /// \u{11d51}: '𑵑'
-    pub const DIGIT_ONE: char = '𑵑';
-    /// \u{11d52}: '𑵒'
-    pub const DIGIT_TWO: char = '𑵒';
-    /// \u{11d53}: '𑵓'
-    pub const DIGIT_THREE: char = '𑵓';
-    /// \u{11d54}: '𑵔'
-    pub const DIGIT_FOUR: char = '𑵔';
-    /// \u{11d55}: '𑵕'
-    pub const DIGIT_FIVE: char = '𑵕';
-    /// \u{11d56}: '𑵖'
-    pub const DIGIT_SIX: char = '𑵖';
-    /// \u{11d57}: '𑵗'
-    pub const DIGIT_SEVEN: char = '𑵗';
-    /// \u{11d58}: '𑵘'
-    pub const DIGIT_EIGHT: char = '𑵘';
-    /// \u{11d59}: '𑵙'
-    pub const DIGIT_NINE: char = '𑵙';
-}
 
 /// An enum to represent all characters in the MasaramGondi block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -309,83 +156,82 @@ pub enum MasaramGondi {
 
 impl Into<char> for MasaramGondi {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MasaramGondi::LetterA => LETTER_A,
-            MasaramGondi::LetterAa => LETTER_AA,
-            MasaramGondi::LetterI => LETTER_I,
-            MasaramGondi::LetterIi => LETTER_II,
-            MasaramGondi::LetterU => LETTER_U,
-            MasaramGondi::LetterUu => LETTER_UU,
-            MasaramGondi::LetterE => LETTER_E,
-            MasaramGondi::LetterAi => LETTER_AI,
-            MasaramGondi::LetterO => LETTER_O,
-            MasaramGondi::LetterAu => LETTER_AU,
-            MasaramGondi::LetterKa => LETTER_KA,
-            MasaramGondi::LetterKha => LETTER_KHA,
-            MasaramGondi::LetterGa => LETTER_GA,
-            MasaramGondi::LetterGha => LETTER_GHA,
-            MasaramGondi::LetterNga => LETTER_NGA,
-            MasaramGondi::LetterCa => LETTER_CA,
-            MasaramGondi::LetterCha => LETTER_CHA,
-            MasaramGondi::LetterJa => LETTER_JA,
-            MasaramGondi::LetterJha => LETTER_JHA,
-            MasaramGondi::LetterNya => LETTER_NYA,
-            MasaramGondi::LetterTta => LETTER_TTA,
-            MasaramGondi::LetterTtha => LETTER_TTHA,
-            MasaramGondi::LetterDda => LETTER_DDA,
-            MasaramGondi::LetterDdha => LETTER_DDHA,
-            MasaramGondi::LetterNna => LETTER_NNA,
-            MasaramGondi::LetterTa => LETTER_TA,
-            MasaramGondi::LetterTha => LETTER_THA,
-            MasaramGondi::LetterDa => LETTER_DA,
-            MasaramGondi::LetterDha => LETTER_DHA,
-            MasaramGondi::LetterNa => LETTER_NA,
-            MasaramGondi::LetterPa => LETTER_PA,
-            MasaramGondi::LetterPha => LETTER_PHA,
-            MasaramGondi::LetterBa => LETTER_BA,
-            MasaramGondi::LetterBha => LETTER_BHA,
-            MasaramGondi::LetterMa => LETTER_MA,
-            MasaramGondi::LetterYa => LETTER_YA,
-            MasaramGondi::LetterRa => LETTER_RA,
-            MasaramGondi::LetterLa => LETTER_LA,
-            MasaramGondi::LetterVa => LETTER_VA,
-            MasaramGondi::LetterSha => LETTER_SHA,
-            MasaramGondi::LetterSsa => LETTER_SSA,
-            MasaramGondi::LetterSa => LETTER_SA,
-            MasaramGondi::LetterHa => LETTER_HA,
-            MasaramGondi::LetterLla => LETTER_LLA,
-            MasaramGondi::LetterKssa => LETTER_KSSA,
-            MasaramGondi::LetterJnya => LETTER_JNYA,
-            MasaramGondi::LetterTra => LETTER_TRA,
-            MasaramGondi::VowelSignAa => VOWEL_SIGN_AA,
-            MasaramGondi::VowelSignI => VOWEL_SIGN_I,
-            MasaramGondi::VowelSignIi => VOWEL_SIGN_II,
-            MasaramGondi::VowelSignU => VOWEL_SIGN_U,
-            MasaramGondi::VowelSignUu => VOWEL_SIGN_UU,
-            MasaramGondi::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            MasaramGondi::VowelSignE => VOWEL_SIGN_E,
-            MasaramGondi::VowelSignAi => VOWEL_SIGN_AI,
-            MasaramGondi::VowelSignO => VOWEL_SIGN_O,
-            MasaramGondi::VowelSignAu => VOWEL_SIGN_AU,
-            MasaramGondi::SignAnusvara => SIGN_ANUSVARA,
-            MasaramGondi::SignVisarga => SIGN_VISARGA,
-            MasaramGondi::SignNukta => SIGN_NUKTA,
-            MasaramGondi::SignCandra => SIGN_CANDRA,
-            MasaramGondi::SignHalanta => SIGN_HALANTA,
-            MasaramGondi::Virama => VIRAMA,
-            MasaramGondi::Repha => REPHA,
-            MasaramGondi::RaDashKara => RA_DASH_KARA,
-            MasaramGondi::DigitZero => DIGIT_ZERO,
-            MasaramGondi::DigitOne => DIGIT_ONE,
-            MasaramGondi::DigitTwo => DIGIT_TWO,
-            MasaramGondi::DigitThree => DIGIT_THREE,
-            MasaramGondi::DigitFour => DIGIT_FOUR,
-            MasaramGondi::DigitFive => DIGIT_FIVE,
-            MasaramGondi::DigitSix => DIGIT_SIX,
-            MasaramGondi::DigitSeven => DIGIT_SEVEN,
-            MasaramGondi::DigitEight => DIGIT_EIGHT,
-            MasaramGondi::DigitNine => DIGIT_NINE,
+            MasaramGondi::LetterA => '𑴀',
+            MasaramGondi::LetterAa => '𑴁',
+            MasaramGondi::LetterI => '𑴂',
+            MasaramGondi::LetterIi => '𑴃',
+            MasaramGondi::LetterU => '𑴄',
+            MasaramGondi::LetterUu => '𑴅',
+            MasaramGondi::LetterE => '𑴆',
+            MasaramGondi::LetterAi => '𑴈',
+            MasaramGondi::LetterO => '𑴉',
+            MasaramGondi::LetterAu => '𑴋',
+            MasaramGondi::LetterKa => '𑴌',
+            MasaramGondi::LetterKha => '𑴍',
+            MasaramGondi::LetterGa => '𑴎',
+            MasaramGondi::LetterGha => '𑴏',
+            MasaramGondi::LetterNga => '𑴐',
+            MasaramGondi::LetterCa => '𑴑',
+            MasaramGondi::LetterCha => '𑴒',
+            MasaramGondi::LetterJa => '𑴓',
+            MasaramGondi::LetterJha => '𑴔',
+            MasaramGondi::LetterNya => '𑴕',
+            MasaramGondi::LetterTta => '𑴖',
+            MasaramGondi::LetterTtha => '𑴗',
+            MasaramGondi::LetterDda => '𑴘',
+            MasaramGondi::LetterDdha => '𑴙',
+            MasaramGondi::LetterNna => '𑴚',
+            MasaramGondi::LetterTa => '𑴛',
+            MasaramGondi::LetterTha => '𑴜',
+            MasaramGondi::LetterDa => '𑴝',
+            MasaramGondi::LetterDha => '𑴞',
+            MasaramGondi::LetterNa => '𑴟',
+            MasaramGondi::LetterPa => '𑴠',
+            MasaramGondi::LetterPha => '𑴡',
+            MasaramGondi::LetterBa => '𑴢',
+            MasaramGondi::LetterBha => '𑴣',
+            MasaramGondi::LetterMa => '𑴤',
+            MasaramGondi::LetterYa => '𑴥',
+            MasaramGondi::LetterRa => '𑴦',
+            MasaramGondi::LetterLa => '𑴧',
+            MasaramGondi::LetterVa => '𑴨',
+            MasaramGondi::LetterSha => '𑴩',
+            MasaramGondi::LetterSsa => '𑴪',
+            MasaramGondi::LetterSa => '𑴫',
+            MasaramGondi::LetterHa => '𑴬',
+            MasaramGondi::LetterLla => '𑴭',
+            MasaramGondi::LetterKssa => '𑴮',
+            MasaramGondi::LetterJnya => '𑴯',
+            MasaramGondi::LetterTra => '𑴰',
+            MasaramGondi::VowelSignAa => '𑴱',
+            MasaramGondi::VowelSignI => '𑴲',
+            MasaramGondi::VowelSignIi => '𑴳',
+            MasaramGondi::VowelSignU => '𑴴',
+            MasaramGondi::VowelSignUu => '𑴵',
+            MasaramGondi::VowelSignVocalicR => '𑴶',
+            MasaramGondi::VowelSignE => '𑴺',
+            MasaramGondi::VowelSignAi => '𑴼',
+            MasaramGondi::VowelSignO => '𑴽',
+            MasaramGondi::VowelSignAu => '𑴿',
+            MasaramGondi::SignAnusvara => '𑵀',
+            MasaramGondi::SignVisarga => '𑵁',
+            MasaramGondi::SignNukta => '𑵂',
+            MasaramGondi::SignCandra => '𑵃',
+            MasaramGondi::SignHalanta => '𑵄',
+            MasaramGondi::Virama => '𑵅',
+            MasaramGondi::Repha => '𑵆',
+            MasaramGondi::RaDashKara => '𑵇',
+            MasaramGondi::DigitZero => '𑵐',
+            MasaramGondi::DigitOne => '𑵑',
+            MasaramGondi::DigitTwo => '𑵒',
+            MasaramGondi::DigitThree => '𑵓',
+            MasaramGondi::DigitFour => '𑵔',
+            MasaramGondi::DigitFive => '𑵕',
+            MasaramGondi::DigitSix => '𑵖',
+            MasaramGondi::DigitSeven => '𑵗',
+            MasaramGondi::DigitEight => '𑵘',
+            MasaramGondi::DigitNine => '𑵙',
         }
     }
 }
@@ -393,83 +239,82 @@ impl Into<char> for MasaramGondi {
 impl std::convert::TryFrom<char> for MasaramGondi {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(MasaramGondi::LetterA),
-            LETTER_AA => Ok(MasaramGondi::LetterAa),
-            LETTER_I => Ok(MasaramGondi::LetterI),
-            LETTER_II => Ok(MasaramGondi::LetterIi),
-            LETTER_U => Ok(MasaramGondi::LetterU),
-            LETTER_UU => Ok(MasaramGondi::LetterUu),
-            LETTER_E => Ok(MasaramGondi::LetterE),
-            LETTER_AI => Ok(MasaramGondi::LetterAi),
-            LETTER_O => Ok(MasaramGondi::LetterO),
-            LETTER_AU => Ok(MasaramGondi::LetterAu),
-            LETTER_KA => Ok(MasaramGondi::LetterKa),
-            LETTER_KHA => Ok(MasaramGondi::LetterKha),
-            LETTER_GA => Ok(MasaramGondi::LetterGa),
-            LETTER_GHA => Ok(MasaramGondi::LetterGha),
-            LETTER_NGA => Ok(MasaramGondi::LetterNga),
-            LETTER_CA => Ok(MasaramGondi::LetterCa),
-            LETTER_CHA => Ok(MasaramGondi::LetterCha),
-            LETTER_JA => Ok(MasaramGondi::LetterJa),
-            LETTER_JHA => Ok(MasaramGondi::LetterJha),
-            LETTER_NYA => Ok(MasaramGondi::LetterNya),
-            LETTER_TTA => Ok(MasaramGondi::LetterTta),
-            LETTER_TTHA => Ok(MasaramGondi::LetterTtha),
-            LETTER_DDA => Ok(MasaramGondi::LetterDda),
-            LETTER_DDHA => Ok(MasaramGondi::LetterDdha),
-            LETTER_NNA => Ok(MasaramGondi::LetterNna),
-            LETTER_TA => Ok(MasaramGondi::LetterTa),
-            LETTER_THA => Ok(MasaramGondi::LetterTha),
-            LETTER_DA => Ok(MasaramGondi::LetterDa),
-            LETTER_DHA => Ok(MasaramGondi::LetterDha),
-            LETTER_NA => Ok(MasaramGondi::LetterNa),
-            LETTER_PA => Ok(MasaramGondi::LetterPa),
-            LETTER_PHA => Ok(MasaramGondi::LetterPha),
-            LETTER_BA => Ok(MasaramGondi::LetterBa),
-            LETTER_BHA => Ok(MasaramGondi::LetterBha),
-            LETTER_MA => Ok(MasaramGondi::LetterMa),
-            LETTER_YA => Ok(MasaramGondi::LetterYa),
-            LETTER_RA => Ok(MasaramGondi::LetterRa),
-            LETTER_LA => Ok(MasaramGondi::LetterLa),
-            LETTER_VA => Ok(MasaramGondi::LetterVa),
-            LETTER_SHA => Ok(MasaramGondi::LetterSha),
-            LETTER_SSA => Ok(MasaramGondi::LetterSsa),
-            LETTER_SA => Ok(MasaramGondi::LetterSa),
-            LETTER_HA => Ok(MasaramGondi::LetterHa),
-            LETTER_LLA => Ok(MasaramGondi::LetterLla),
-            LETTER_KSSA => Ok(MasaramGondi::LetterKssa),
-            LETTER_JNYA => Ok(MasaramGondi::LetterJnya),
-            LETTER_TRA => Ok(MasaramGondi::LetterTra),
-            VOWEL_SIGN_AA => Ok(MasaramGondi::VowelSignAa),
-            VOWEL_SIGN_I => Ok(MasaramGondi::VowelSignI),
-            VOWEL_SIGN_II => Ok(MasaramGondi::VowelSignIi),
-            VOWEL_SIGN_U => Ok(MasaramGondi::VowelSignU),
-            VOWEL_SIGN_UU => Ok(MasaramGondi::VowelSignUu),
-            VOWEL_SIGN_VOCALIC_R => Ok(MasaramGondi::VowelSignVocalicR),
-            VOWEL_SIGN_E => Ok(MasaramGondi::VowelSignE),
-            VOWEL_SIGN_AI => Ok(MasaramGondi::VowelSignAi),
-            VOWEL_SIGN_O => Ok(MasaramGondi::VowelSignO),
-            VOWEL_SIGN_AU => Ok(MasaramGondi::VowelSignAu),
-            SIGN_ANUSVARA => Ok(MasaramGondi::SignAnusvara),
-            SIGN_VISARGA => Ok(MasaramGondi::SignVisarga),
-            SIGN_NUKTA => Ok(MasaramGondi::SignNukta),
-            SIGN_CANDRA => Ok(MasaramGondi::SignCandra),
-            SIGN_HALANTA => Ok(MasaramGondi::SignHalanta),
-            VIRAMA => Ok(MasaramGondi::Virama),
-            REPHA => Ok(MasaramGondi::Repha),
-            RA_DASH_KARA => Ok(MasaramGondi::RaDashKara),
-            DIGIT_ZERO => Ok(MasaramGondi::DigitZero),
-            DIGIT_ONE => Ok(MasaramGondi::DigitOne),
-            DIGIT_TWO => Ok(MasaramGondi::DigitTwo),
-            DIGIT_THREE => Ok(MasaramGondi::DigitThree),
-            DIGIT_FOUR => Ok(MasaramGondi::DigitFour),
-            DIGIT_FIVE => Ok(MasaramGondi::DigitFive),
-            DIGIT_SIX => Ok(MasaramGondi::DigitSix),
-            DIGIT_SEVEN => Ok(MasaramGondi::DigitSeven),
-            DIGIT_EIGHT => Ok(MasaramGondi::DigitEight),
-            DIGIT_NINE => Ok(MasaramGondi::DigitNine),
+            '𑴀' => Ok(MasaramGondi::LetterA),
+            '𑴁' => Ok(MasaramGondi::LetterAa),
+            '𑴂' => Ok(MasaramGondi::LetterI),
+            '𑴃' => Ok(MasaramGondi::LetterIi),
+            '𑴄' => Ok(MasaramGondi::LetterU),
+            '𑴅' => Ok(MasaramGondi::LetterUu),
+            '𑴆' => Ok(MasaramGondi::LetterE),
+            '𑴈' => Ok(MasaramGondi::LetterAi),
+            '𑴉' => Ok(MasaramGondi::LetterO),
+            '𑴋' => Ok(MasaramGondi::LetterAu),
+            '𑴌' => Ok(MasaramGondi::LetterKa),
+            '𑴍' => Ok(MasaramGondi::LetterKha),
+            '𑴎' => Ok(MasaramGondi::LetterGa),
+            '𑴏' => Ok(MasaramGondi::LetterGha),
+            '𑴐' => Ok(MasaramGondi::LetterNga),
+            '𑴑' => Ok(MasaramGondi::LetterCa),
+            '𑴒' => Ok(MasaramGondi::LetterCha),
+            '𑴓' => Ok(MasaramGondi::LetterJa),
+            '𑴔' => Ok(MasaramGondi::LetterJha),
+            '𑴕' => Ok(MasaramGondi::LetterNya),
+            '𑴖' => Ok(MasaramGondi::LetterTta),
+            '𑴗' => Ok(MasaramGondi::LetterTtha),
+            '𑴘' => Ok(MasaramGondi::LetterDda),
+            '𑴙' => Ok(MasaramGondi::LetterDdha),
+            '𑴚' => Ok(MasaramGondi::LetterNna),
+            '𑴛' => Ok(MasaramGondi::LetterTa),
+            '𑴜' => Ok(MasaramGondi::LetterTha),
+            '𑴝' => Ok(MasaramGondi::LetterDa),
+            '𑴞' => Ok(MasaramGondi::LetterDha),
+            '𑴟' => Ok(MasaramGondi::LetterNa),
+            '𑴠' => Ok(MasaramGondi::LetterPa),
+            '𑴡' => Ok(MasaramGondi::LetterPha),
+            '𑴢' => Ok(MasaramGondi::LetterBa),
+            '𑴣' => Ok(MasaramGondi::LetterBha),
+            '𑴤' => Ok(MasaramGondi::LetterMa),
+            '𑴥' => Ok(MasaramGondi::LetterYa),
+            '𑴦' => Ok(MasaramGondi::LetterRa),
+            '𑴧' => Ok(MasaramGondi::LetterLa),
+            '𑴨' => Ok(MasaramGondi::LetterVa),
+            '𑴩' => Ok(MasaramGondi::LetterSha),
+            '𑴪' => Ok(MasaramGondi::LetterSsa),
+            '𑴫' => Ok(MasaramGondi::LetterSa),
+            '𑴬' => Ok(MasaramGondi::LetterHa),
+            '𑴭' => Ok(MasaramGondi::LetterLla),
+            '𑴮' => Ok(MasaramGondi::LetterKssa),
+            '𑴯' => Ok(MasaramGondi::LetterJnya),
+            '𑴰' => Ok(MasaramGondi::LetterTra),
+            '𑴱' => Ok(MasaramGondi::VowelSignAa),
+            '𑴲' => Ok(MasaramGondi::VowelSignI),
+            '𑴳' => Ok(MasaramGondi::VowelSignIi),
+            '𑴴' => Ok(MasaramGondi::VowelSignU),
+            '𑴵' => Ok(MasaramGondi::VowelSignUu),
+            '𑴶' => Ok(MasaramGondi::VowelSignVocalicR),
+            '𑴺' => Ok(MasaramGondi::VowelSignE),
+            '𑴼' => Ok(MasaramGondi::VowelSignAi),
+            '𑴽' => Ok(MasaramGondi::VowelSignO),
+            '𑴿' => Ok(MasaramGondi::VowelSignAu),
+            '𑵀' => Ok(MasaramGondi::SignAnusvara),
+            '𑵁' => Ok(MasaramGondi::SignVisarga),
+            '𑵂' => Ok(MasaramGondi::SignNukta),
+            '𑵃' => Ok(MasaramGondi::SignCandra),
+            '𑵄' => Ok(MasaramGondi::SignHalanta),
+            '𑵅' => Ok(MasaramGondi::Virama),
+            '𑵆' => Ok(MasaramGondi::Repha),
+            '𑵇' => Ok(MasaramGondi::RaDashKara),
+            '𑵐' => Ok(MasaramGondi::DigitZero),
+            '𑵑' => Ok(MasaramGondi::DigitOne),
+            '𑵒' => Ok(MasaramGondi::DigitTwo),
+            '𑵓' => Ok(MasaramGondi::DigitThree),
+            '𑵔' => Ok(MasaramGondi::DigitFour),
+            '𑵕' => Ok(MasaramGondi::DigitFive),
+            '𑵖' => Ok(MasaramGondi::DigitSix),
+            '𑵗' => Ok(MasaramGondi::DigitSeven),
+            '𑵘' => Ok(MasaramGondi::DigitEight),
+            '𑵙' => Ok(MasaramGondi::DigitNine),
             _ => Err(()),
         }
     }

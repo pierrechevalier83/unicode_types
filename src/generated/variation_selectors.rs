@@ -1,36 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{fe00}: '︀'
-    pub const VARIATION_SELECTOR_DASH_1: char = '︀';
-    /// \u{fe01}: '︁'
-    pub const VARIATION_SELECTOR_DASH_2: char = '︁';
-    /// \u{fe02}: '︂'
-    pub const VARIATION_SELECTOR_DASH_3: char = '︂';
-    /// \u{fe03}: '︃'
-    pub const VARIATION_SELECTOR_DASH_4: char = '︃';
-    /// \u{fe04}: '︄'
-    pub const VARIATION_SELECTOR_DASH_5: char = '︄';
-    /// \u{fe05}: '︅'
-    pub const VARIATION_SELECTOR_DASH_6: char = '︅';
-    /// \u{fe06}: '︆'
-    pub const VARIATION_SELECTOR_DASH_7: char = '︆';
-    /// \u{fe07}: '︇'
-    pub const VARIATION_SELECTOR_DASH_8: char = '︇';
-    /// \u{fe08}: '︈'
-    pub const VARIATION_SELECTOR_DASH_9: char = '︈';
-    /// \u{fe09}: '︉'
-    pub const VARIATION_SELECTOR_DASH_10: char = '︉';
-    /// \u{fe0a}: '︊'
-    pub const VARIATION_SELECTOR_DASH_11: char = '︊';
-    /// \u{fe0b}: '︋'
-    pub const VARIATION_SELECTOR_DASH_12: char = '︋';
-    /// \u{fe0c}: '︌'
-    pub const VARIATION_SELECTOR_DASH_13: char = '︌';
-    /// \u{fe0d}: '︍'
-    pub const VARIATION_SELECTOR_DASH_14: char = '︍';
-    /// \u{fe0e}: '︎'
-    pub const VARIATION_SELECTOR_DASH_15: char = '︎';
-}
 
 /// An enum to represent all characters in the VariationSelectors block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -69,23 +36,22 @@ pub enum VariationSelectors {
 
 impl Into<char> for VariationSelectors {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            VariationSelectors::VariationSelectorDash1 => VARIATION_SELECTOR_DASH_1,
-            VariationSelectors::VariationSelectorDash2 => VARIATION_SELECTOR_DASH_2,
-            VariationSelectors::VariationSelectorDash3 => VARIATION_SELECTOR_DASH_3,
-            VariationSelectors::VariationSelectorDash4 => VARIATION_SELECTOR_DASH_4,
-            VariationSelectors::VariationSelectorDash5 => VARIATION_SELECTOR_DASH_5,
-            VariationSelectors::VariationSelectorDash6 => VARIATION_SELECTOR_DASH_6,
-            VariationSelectors::VariationSelectorDash7 => VARIATION_SELECTOR_DASH_7,
-            VariationSelectors::VariationSelectorDash8 => VARIATION_SELECTOR_DASH_8,
-            VariationSelectors::VariationSelectorDash9 => VARIATION_SELECTOR_DASH_9,
-            VariationSelectors::VariationSelectorDash10 => VARIATION_SELECTOR_DASH_10,
-            VariationSelectors::VariationSelectorDash11 => VARIATION_SELECTOR_DASH_11,
-            VariationSelectors::VariationSelectorDash12 => VARIATION_SELECTOR_DASH_12,
-            VariationSelectors::VariationSelectorDash13 => VARIATION_SELECTOR_DASH_13,
-            VariationSelectors::VariationSelectorDash14 => VARIATION_SELECTOR_DASH_14,
-            VariationSelectors::VariationSelectorDash15 => VARIATION_SELECTOR_DASH_15,
+            VariationSelectors::VariationSelectorDash1 => '︀',
+            VariationSelectors::VariationSelectorDash2 => '︁',
+            VariationSelectors::VariationSelectorDash3 => '︂',
+            VariationSelectors::VariationSelectorDash4 => '︃',
+            VariationSelectors::VariationSelectorDash5 => '︄',
+            VariationSelectors::VariationSelectorDash6 => '︅',
+            VariationSelectors::VariationSelectorDash7 => '︆',
+            VariationSelectors::VariationSelectorDash8 => '︇',
+            VariationSelectors::VariationSelectorDash9 => '︈',
+            VariationSelectors::VariationSelectorDash10 => '︉',
+            VariationSelectors::VariationSelectorDash11 => '︊',
+            VariationSelectors::VariationSelectorDash12 => '︋',
+            VariationSelectors::VariationSelectorDash13 => '︌',
+            VariationSelectors::VariationSelectorDash14 => '︍',
+            VariationSelectors::VariationSelectorDash15 => '︎',
         }
     }
 }
@@ -93,23 +59,22 @@ impl Into<char> for VariationSelectors {
 impl std::convert::TryFrom<char> for VariationSelectors {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            VARIATION_SELECTOR_DASH_1 => Ok(VariationSelectors::VariationSelectorDash1),
-            VARIATION_SELECTOR_DASH_2 => Ok(VariationSelectors::VariationSelectorDash2),
-            VARIATION_SELECTOR_DASH_3 => Ok(VariationSelectors::VariationSelectorDash3),
-            VARIATION_SELECTOR_DASH_4 => Ok(VariationSelectors::VariationSelectorDash4),
-            VARIATION_SELECTOR_DASH_5 => Ok(VariationSelectors::VariationSelectorDash5),
-            VARIATION_SELECTOR_DASH_6 => Ok(VariationSelectors::VariationSelectorDash6),
-            VARIATION_SELECTOR_DASH_7 => Ok(VariationSelectors::VariationSelectorDash7),
-            VARIATION_SELECTOR_DASH_8 => Ok(VariationSelectors::VariationSelectorDash8),
-            VARIATION_SELECTOR_DASH_9 => Ok(VariationSelectors::VariationSelectorDash9),
-            VARIATION_SELECTOR_DASH_10 => Ok(VariationSelectors::VariationSelectorDash10),
-            VARIATION_SELECTOR_DASH_11 => Ok(VariationSelectors::VariationSelectorDash11),
-            VARIATION_SELECTOR_DASH_12 => Ok(VariationSelectors::VariationSelectorDash12),
-            VARIATION_SELECTOR_DASH_13 => Ok(VariationSelectors::VariationSelectorDash13),
-            VARIATION_SELECTOR_DASH_14 => Ok(VariationSelectors::VariationSelectorDash14),
-            VARIATION_SELECTOR_DASH_15 => Ok(VariationSelectors::VariationSelectorDash15),
+            '︀' => Ok(VariationSelectors::VariationSelectorDash1),
+            '︁' => Ok(VariationSelectors::VariationSelectorDash2),
+            '︂' => Ok(VariationSelectors::VariationSelectorDash3),
+            '︃' => Ok(VariationSelectors::VariationSelectorDash4),
+            '︄' => Ok(VariationSelectors::VariationSelectorDash5),
+            '︅' => Ok(VariationSelectors::VariationSelectorDash6),
+            '︆' => Ok(VariationSelectors::VariationSelectorDash7),
+            '︇' => Ok(VariationSelectors::VariationSelectorDash8),
+            '︈' => Ok(VariationSelectors::VariationSelectorDash9),
+            '︉' => Ok(VariationSelectors::VariationSelectorDash10),
+            '︊' => Ok(VariationSelectors::VariationSelectorDash11),
+            '︋' => Ok(VariationSelectors::VariationSelectorDash12),
+            '︌' => Ok(VariationSelectors::VariationSelectorDash13),
+            '︍' => Ok(VariationSelectors::VariationSelectorDash14),
+            '︎' => Ok(VariationSelectors::VariationSelectorDash15),
             _ => Err(()),
         }
     }

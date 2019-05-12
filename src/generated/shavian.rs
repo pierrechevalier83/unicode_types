@@ -1,100 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10450}: '𐑐'
-    pub const LETTER_PEEP: char = '𐑐';
-    /// \u{10451}: '𐑑'
-    pub const LETTER_TOT: char = '𐑑';
-    /// \u{10452}: '𐑒'
-    pub const LETTER_KICK: char = '𐑒';
-    /// \u{10453}: '𐑓'
-    pub const LETTER_FEE: char = '𐑓';
-    /// \u{10454}: '𐑔'
-    pub const LETTER_THIGH: char = '𐑔';
-    /// \u{10455}: '𐑕'
-    pub const LETTER_SO: char = '𐑕';
-    /// \u{10456}: '𐑖'
-    pub const LETTER_SURE: char = '𐑖';
-    /// \u{10457}: '𐑗'
-    pub const LETTER_CHURCH: char = '𐑗';
-    /// \u{10458}: '𐑘'
-    pub const LETTER_YEA: char = '𐑘';
-    /// \u{10459}: '𐑙'
-    pub const LETTER_HUNG: char = '𐑙';
-    /// \u{1045a}: '𐑚'
-    pub const LETTER_BIB: char = '𐑚';
-    /// \u{1045b}: '𐑛'
-    pub const LETTER_DEAD: char = '𐑛';
-    /// \u{1045c}: '𐑜'
-    pub const LETTER_GAG: char = '𐑜';
-    /// \u{1045d}: '𐑝'
-    pub const LETTER_VOW: char = '𐑝';
-    /// \u{1045e}: '𐑞'
-    pub const LETTER_THEY: char = '𐑞';
-    /// \u{1045f}: '𐑟'
-    pub const LETTER_ZOO: char = '𐑟';
-    /// \u{10460}: '𐑠'
-    pub const LETTER_MEASURE: char = '𐑠';
-    /// \u{10461}: '𐑡'
-    pub const LETTER_JUDGE: char = '𐑡';
-    /// \u{10462}: '𐑢'
-    pub const LETTER_WOE: char = '𐑢';
-    /// \u{10463}: '𐑣'
-    pub const LETTER_HA_DASH_HA: char = '𐑣';
-    /// \u{10464}: '𐑤'
-    pub const LETTER_LOLL: char = '𐑤';
-    /// \u{10465}: '𐑥'
-    pub const LETTER_MIME: char = '𐑥';
-    /// \u{10466}: '𐑦'
-    pub const LETTER_IF: char = '𐑦';
-    /// \u{10467}: '𐑧'
-    pub const LETTER_EGG: char = '𐑧';
-    /// \u{10468}: '𐑨'
-    pub const LETTER_ASH: char = '𐑨';
-    /// \u{10469}: '𐑩'
-    pub const LETTER_ADO: char = '𐑩';
-    /// \u{1046a}: '𐑪'
-    pub const LETTER_ON: char = '𐑪';
-    /// \u{1046b}: '𐑫'
-    pub const LETTER_WOOL: char = '𐑫';
-    /// \u{1046c}: '𐑬'
-    pub const LETTER_OUT: char = '𐑬';
-    /// \u{1046d}: '𐑭'
-    pub const LETTER_AH: char = '𐑭';
-    /// \u{1046e}: '𐑮'
-    pub const LETTER_ROAR: char = '𐑮';
-    /// \u{1046f}: '𐑯'
-    pub const LETTER_NUN: char = '𐑯';
-    /// \u{10470}: '𐑰'
-    pub const LETTER_EAT: char = '𐑰';
-    /// \u{10471}: '𐑱'
-    pub const LETTER_AGE: char = '𐑱';
-    /// \u{10472}: '𐑲'
-    pub const LETTER_ICE: char = '𐑲';
-    /// \u{10473}: '𐑳'
-    pub const LETTER_UP: char = '𐑳';
-    /// \u{10474}: '𐑴'
-    pub const LETTER_OAK: char = '𐑴';
-    /// \u{10475}: '𐑵'
-    pub const LETTER_OOZE: char = '𐑵';
-    /// \u{10476}: '𐑶'
-    pub const LETTER_OIL: char = '𐑶';
-    /// \u{10477}: '𐑷'
-    pub const LETTER_AWE: char = '𐑷';
-    /// \u{10478}: '𐑸'
-    pub const LETTER_ARE: char = '𐑸';
-    /// \u{10479}: '𐑹'
-    pub const LETTER_OR: char = '𐑹';
-    /// \u{1047a}: '𐑺'
-    pub const LETTER_AIR: char = '𐑺';
-    /// \u{1047b}: '𐑻'
-    pub const LETTER_ERR: char = '𐑻';
-    /// \u{1047c}: '𐑼'
-    pub const LETTER_ARRAY: char = '𐑼';
-    /// \u{1047d}: '𐑽'
-    pub const LETTER_EAR: char = '𐑽';
-    /// \u{1047e}: '𐑾'
-    pub const LETTER_IAN: char = '𐑾';
-}
 
 /// An enum to represent all characters in the Shavian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -197,55 +100,54 @@ pub enum Shavian {
 
 impl Into<char> for Shavian {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Shavian::LetterPeep => LETTER_PEEP,
-            Shavian::LetterTot => LETTER_TOT,
-            Shavian::LetterKick => LETTER_KICK,
-            Shavian::LetterFee => LETTER_FEE,
-            Shavian::LetterThigh => LETTER_THIGH,
-            Shavian::LetterSo => LETTER_SO,
-            Shavian::LetterSure => LETTER_SURE,
-            Shavian::LetterChurch => LETTER_CHURCH,
-            Shavian::LetterYea => LETTER_YEA,
-            Shavian::LetterHung => LETTER_HUNG,
-            Shavian::LetterBib => LETTER_BIB,
-            Shavian::LetterDead => LETTER_DEAD,
-            Shavian::LetterGag => LETTER_GAG,
-            Shavian::LetterVow => LETTER_VOW,
-            Shavian::LetterThey => LETTER_THEY,
-            Shavian::LetterZoo => LETTER_ZOO,
-            Shavian::LetterMeasure => LETTER_MEASURE,
-            Shavian::LetterJudge => LETTER_JUDGE,
-            Shavian::LetterWoe => LETTER_WOE,
-            Shavian::LetterHaDashHa => LETTER_HA_DASH_HA,
-            Shavian::LetterLoll => LETTER_LOLL,
-            Shavian::LetterMime => LETTER_MIME,
-            Shavian::LetterIf => LETTER_IF,
-            Shavian::LetterEgg => LETTER_EGG,
-            Shavian::LetterAsh => LETTER_ASH,
-            Shavian::LetterAdo => LETTER_ADO,
-            Shavian::LetterOn => LETTER_ON,
-            Shavian::LetterWool => LETTER_WOOL,
-            Shavian::LetterOut => LETTER_OUT,
-            Shavian::LetterAh => LETTER_AH,
-            Shavian::LetterRoar => LETTER_ROAR,
-            Shavian::LetterNun => LETTER_NUN,
-            Shavian::LetterEat => LETTER_EAT,
-            Shavian::LetterAge => LETTER_AGE,
-            Shavian::LetterIce => LETTER_ICE,
-            Shavian::LetterUp => LETTER_UP,
-            Shavian::LetterOak => LETTER_OAK,
-            Shavian::LetterOoze => LETTER_OOZE,
-            Shavian::LetterOil => LETTER_OIL,
-            Shavian::LetterAwe => LETTER_AWE,
-            Shavian::LetterAre => LETTER_ARE,
-            Shavian::LetterOr => LETTER_OR,
-            Shavian::LetterAir => LETTER_AIR,
-            Shavian::LetterErr => LETTER_ERR,
-            Shavian::LetterArray => LETTER_ARRAY,
-            Shavian::LetterEar => LETTER_EAR,
-            Shavian::LetterIan => LETTER_IAN,
+            Shavian::LetterPeep => '𐑐',
+            Shavian::LetterTot => '𐑑',
+            Shavian::LetterKick => '𐑒',
+            Shavian::LetterFee => '𐑓',
+            Shavian::LetterThigh => '𐑔',
+            Shavian::LetterSo => '𐑕',
+            Shavian::LetterSure => '𐑖',
+            Shavian::LetterChurch => '𐑗',
+            Shavian::LetterYea => '𐑘',
+            Shavian::LetterHung => '𐑙',
+            Shavian::LetterBib => '𐑚',
+            Shavian::LetterDead => '𐑛',
+            Shavian::LetterGag => '𐑜',
+            Shavian::LetterVow => '𐑝',
+            Shavian::LetterThey => '𐑞',
+            Shavian::LetterZoo => '𐑟',
+            Shavian::LetterMeasure => '𐑠',
+            Shavian::LetterJudge => '𐑡',
+            Shavian::LetterWoe => '𐑢',
+            Shavian::LetterHaDashHa => '𐑣',
+            Shavian::LetterLoll => '𐑤',
+            Shavian::LetterMime => '𐑥',
+            Shavian::LetterIf => '𐑦',
+            Shavian::LetterEgg => '𐑧',
+            Shavian::LetterAsh => '𐑨',
+            Shavian::LetterAdo => '𐑩',
+            Shavian::LetterOn => '𐑪',
+            Shavian::LetterWool => '𐑫',
+            Shavian::LetterOut => '𐑬',
+            Shavian::LetterAh => '𐑭',
+            Shavian::LetterRoar => '𐑮',
+            Shavian::LetterNun => '𐑯',
+            Shavian::LetterEat => '𐑰',
+            Shavian::LetterAge => '𐑱',
+            Shavian::LetterIce => '𐑲',
+            Shavian::LetterUp => '𐑳',
+            Shavian::LetterOak => '𐑴',
+            Shavian::LetterOoze => '𐑵',
+            Shavian::LetterOil => '𐑶',
+            Shavian::LetterAwe => '𐑷',
+            Shavian::LetterAre => '𐑸',
+            Shavian::LetterOr => '𐑹',
+            Shavian::LetterAir => '𐑺',
+            Shavian::LetterErr => '𐑻',
+            Shavian::LetterArray => '𐑼',
+            Shavian::LetterEar => '𐑽',
+            Shavian::LetterIan => '𐑾',
         }
     }
 }
@@ -253,55 +155,54 @@ impl Into<char> for Shavian {
 impl std::convert::TryFrom<char> for Shavian {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_PEEP => Ok(Shavian::LetterPeep),
-            LETTER_TOT => Ok(Shavian::LetterTot),
-            LETTER_KICK => Ok(Shavian::LetterKick),
-            LETTER_FEE => Ok(Shavian::LetterFee),
-            LETTER_THIGH => Ok(Shavian::LetterThigh),
-            LETTER_SO => Ok(Shavian::LetterSo),
-            LETTER_SURE => Ok(Shavian::LetterSure),
-            LETTER_CHURCH => Ok(Shavian::LetterChurch),
-            LETTER_YEA => Ok(Shavian::LetterYea),
-            LETTER_HUNG => Ok(Shavian::LetterHung),
-            LETTER_BIB => Ok(Shavian::LetterBib),
-            LETTER_DEAD => Ok(Shavian::LetterDead),
-            LETTER_GAG => Ok(Shavian::LetterGag),
-            LETTER_VOW => Ok(Shavian::LetterVow),
-            LETTER_THEY => Ok(Shavian::LetterThey),
-            LETTER_ZOO => Ok(Shavian::LetterZoo),
-            LETTER_MEASURE => Ok(Shavian::LetterMeasure),
-            LETTER_JUDGE => Ok(Shavian::LetterJudge),
-            LETTER_WOE => Ok(Shavian::LetterWoe),
-            LETTER_HA_DASH_HA => Ok(Shavian::LetterHaDashHa),
-            LETTER_LOLL => Ok(Shavian::LetterLoll),
-            LETTER_MIME => Ok(Shavian::LetterMime),
-            LETTER_IF => Ok(Shavian::LetterIf),
-            LETTER_EGG => Ok(Shavian::LetterEgg),
-            LETTER_ASH => Ok(Shavian::LetterAsh),
-            LETTER_ADO => Ok(Shavian::LetterAdo),
-            LETTER_ON => Ok(Shavian::LetterOn),
-            LETTER_WOOL => Ok(Shavian::LetterWool),
-            LETTER_OUT => Ok(Shavian::LetterOut),
-            LETTER_AH => Ok(Shavian::LetterAh),
-            LETTER_ROAR => Ok(Shavian::LetterRoar),
-            LETTER_NUN => Ok(Shavian::LetterNun),
-            LETTER_EAT => Ok(Shavian::LetterEat),
-            LETTER_AGE => Ok(Shavian::LetterAge),
-            LETTER_ICE => Ok(Shavian::LetterIce),
-            LETTER_UP => Ok(Shavian::LetterUp),
-            LETTER_OAK => Ok(Shavian::LetterOak),
-            LETTER_OOZE => Ok(Shavian::LetterOoze),
-            LETTER_OIL => Ok(Shavian::LetterOil),
-            LETTER_AWE => Ok(Shavian::LetterAwe),
-            LETTER_ARE => Ok(Shavian::LetterAre),
-            LETTER_OR => Ok(Shavian::LetterOr),
-            LETTER_AIR => Ok(Shavian::LetterAir),
-            LETTER_ERR => Ok(Shavian::LetterErr),
-            LETTER_ARRAY => Ok(Shavian::LetterArray),
-            LETTER_EAR => Ok(Shavian::LetterEar),
-            LETTER_IAN => Ok(Shavian::LetterIan),
+            '𐑐' => Ok(Shavian::LetterPeep),
+            '𐑑' => Ok(Shavian::LetterTot),
+            '𐑒' => Ok(Shavian::LetterKick),
+            '𐑓' => Ok(Shavian::LetterFee),
+            '𐑔' => Ok(Shavian::LetterThigh),
+            '𐑕' => Ok(Shavian::LetterSo),
+            '𐑖' => Ok(Shavian::LetterSure),
+            '𐑗' => Ok(Shavian::LetterChurch),
+            '𐑘' => Ok(Shavian::LetterYea),
+            '𐑙' => Ok(Shavian::LetterHung),
+            '𐑚' => Ok(Shavian::LetterBib),
+            '𐑛' => Ok(Shavian::LetterDead),
+            '𐑜' => Ok(Shavian::LetterGag),
+            '𐑝' => Ok(Shavian::LetterVow),
+            '𐑞' => Ok(Shavian::LetterThey),
+            '𐑟' => Ok(Shavian::LetterZoo),
+            '𐑠' => Ok(Shavian::LetterMeasure),
+            '𐑡' => Ok(Shavian::LetterJudge),
+            '𐑢' => Ok(Shavian::LetterWoe),
+            '𐑣' => Ok(Shavian::LetterHaDashHa),
+            '𐑤' => Ok(Shavian::LetterLoll),
+            '𐑥' => Ok(Shavian::LetterMime),
+            '𐑦' => Ok(Shavian::LetterIf),
+            '𐑧' => Ok(Shavian::LetterEgg),
+            '𐑨' => Ok(Shavian::LetterAsh),
+            '𐑩' => Ok(Shavian::LetterAdo),
+            '𐑪' => Ok(Shavian::LetterOn),
+            '𐑫' => Ok(Shavian::LetterWool),
+            '𐑬' => Ok(Shavian::LetterOut),
+            '𐑭' => Ok(Shavian::LetterAh),
+            '𐑮' => Ok(Shavian::LetterRoar),
+            '𐑯' => Ok(Shavian::LetterNun),
+            '𐑰' => Ok(Shavian::LetterEat),
+            '𐑱' => Ok(Shavian::LetterAge),
+            '𐑲' => Ok(Shavian::LetterIce),
+            '𐑳' => Ok(Shavian::LetterUp),
+            '𐑴' => Ok(Shavian::LetterOak),
+            '𐑵' => Ok(Shavian::LetterOoze),
+            '𐑶' => Ok(Shavian::LetterOil),
+            '𐑷' => Ok(Shavian::LetterAwe),
+            '𐑸' => Ok(Shavian::LetterAre),
+            '𐑹' => Ok(Shavian::LetterOr),
+            '𐑺' => Ok(Shavian::LetterAir),
+            '𐑻' => Ok(Shavian::LetterErr),
+            '𐑼' => Ok(Shavian::LetterArray),
+            '𐑽' => Ok(Shavian::LetterEar),
+            '𐑾' => Ok(Shavian::LetterIan),
             _ => Err(()),
         }
     }

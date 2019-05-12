@@ -1,92 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1cd0}: '᳐'
-    pub const VEDIC_TONE_KARSHANA: char = '᳐';
-    /// \u{1cd1}: '᳑'
-    pub const VEDIC_TONE_SHARA: char = '᳑';
-    /// \u{1cd2}: '᳒'
-    pub const VEDIC_TONE_PRENKHA: char = '᳒';
-    /// \u{1cd3}: '᳓'
-    pub const VEDIC_SIGN_NIHSHVASA: char = '᳓';
-    /// \u{1cd4}: '᳔'
-    pub const VEDIC_SIGN_YAJURVEDIC_MIDLINE_SVARITA: char = '᳔';
-    /// \u{1cd5}: '᳕'
-    pub const VEDIC_TONE_YAJURVEDIC_AGGRAVATED_INDEPENDENT_SVARITA: char = '᳕';
-    /// \u{1cd6}: '᳖'
-    pub const VEDIC_TONE_YAJURVEDIC_INDEPENDENT_SVARITA: char = '᳖';
-    /// \u{1cd7}: '᳗'
-    pub const VEDIC_TONE_YAJURVEDIC_KATHAKA_INDEPENDENT_SVARITA: char = '᳗';
-    /// \u{1cd8}: '᳘'
-    pub const VEDIC_TONE_CANDRA_BELOW: char = '᳘';
-    /// \u{1cd9}: '᳙'
-    pub const VEDIC_TONE_YAJURVEDIC_KATHAKA_INDEPENDENT_SVARITA_SCHROEDER: char = '᳙';
-    /// \u{1cda}: '᳚'
-    pub const VEDIC_TONE_DOUBLE_SVARITA: char = '᳚';
-    /// \u{1cdb}: '᳛'
-    pub const VEDIC_TONE_TRIPLE_SVARITA: char = '᳛';
-    /// \u{1cdc}: '᳜'
-    pub const VEDIC_TONE_KATHAKA_ANUDATTA: char = '᳜';
-    /// \u{1cdd}: '᳝'
-    pub const VEDIC_TONE_DOT_BELOW: char = '᳝';
-    /// \u{1cde}: '᳞'
-    pub const VEDIC_TONE_TWO_DOTS_BELOW: char = '᳞';
-    /// \u{1cdf}: '᳟'
-    pub const VEDIC_TONE_THREE_DOTS_BELOW: char = '᳟';
-    /// \u{1ce0}: '᳠'
-    pub const VEDIC_TONE_RIGVEDIC_KASHMIRI_INDEPENDENT_SVARITA: char = '᳠';
-    /// \u{1ce1}: '᳡'
-    pub const VEDIC_TONE_ATHARVAVEDIC_INDEPENDENT_SVARITA: char = '᳡';
-    /// \u{1ce2}: '᳢'
-    pub const VEDIC_SIGN_VISARGA_SVARITA: char = '᳢';
-    /// \u{1ce3}: '᳣'
-    pub const VEDIC_SIGN_VISARGA_UDATTA: char = '᳣';
-    /// \u{1ce4}: '᳤'
-    pub const VEDIC_SIGN_REVERSED_VISARGA_UDATTA: char = '᳤';
-    /// \u{1ce5}: '᳥'
-    pub const VEDIC_SIGN_VISARGA_ANUDATTA: char = '᳥';
-    /// \u{1ce6}: '᳦'
-    pub const VEDIC_SIGN_REVERSED_VISARGA_ANUDATTA: char = '᳦';
-    /// \u{1ce7}: '᳧'
-    pub const VEDIC_SIGN_VISARGA_UDATTA_WITH_TAIL: char = '᳧';
-    /// \u{1ce8}: '᳨'
-    pub const VEDIC_SIGN_VISARGA_ANUDATTA_WITH_TAIL: char = '᳨';
-    /// \u{1ce9}: 'ᳩ'
-    pub const VEDIC_SIGN_ANUSVARA_ANTARGOMUKHA: char = 'ᳩ';
-    /// \u{1cea}: 'ᳪ'
-    pub const VEDIC_SIGN_ANUSVARA_BAHIRGOMUKHA: char = 'ᳪ';
-    /// \u{1ceb}: 'ᳫ'
-    pub const VEDIC_SIGN_ANUSVARA_VAMAGOMUKHA: char = 'ᳫ';
-    /// \u{1cec}: 'ᳬ'
-    pub const VEDIC_SIGN_ANUSVARA_VAMAGOMUKHA_WITH_TAIL: char = 'ᳬ';
-    /// \u{1ced}: '᳭'
-    pub const VEDIC_SIGN_TIRYAK: char = '᳭';
-    /// \u{1cee}: 'ᳮ'
-    pub const VEDIC_SIGN_HEXIFORM_LONG_ANUSVARA: char = 'ᳮ';
-    /// \u{1cef}: 'ᳯ'
-    pub const VEDIC_SIGN_LONG_ANUSVARA: char = 'ᳯ';
-    /// \u{1cf0}: 'ᳰ'
-    pub const VEDIC_SIGN_RTHANG_LONG_ANUSVARA: char = 'ᳰ';
-    /// \u{1cf1}: 'ᳱ'
-    pub const VEDIC_SIGN_ANUSVARA_UBHAYATO_MUKHA: char = 'ᳱ';
-    /// \u{1cf2}: 'ᳲ'
-    pub const VEDIC_SIGN_ARDHAVISARGA: char = 'ᳲ';
-    /// \u{1cf3}: 'ᳳ'
-    pub const VEDIC_SIGN_ROTATED_ARDHAVISARGA: char = 'ᳳ';
-    /// \u{1cf4}: '᳴'
-    pub const VEDIC_TONE_CANDRA_ABOVE: char = '᳴';
-    /// \u{1cf5}: 'ᳵ'
-    pub const VEDIC_SIGN_JIHVAMULIYA: char = 'ᳵ';
-    /// \u{1cf6}: 'ᳶ'
-    pub const VEDIC_SIGN_UPADHMANIYA: char = 'ᳶ';
-    /// \u{1cf7}: '᳷'
-    pub const VEDIC_SIGN_ATIKRAMA: char = '᳷';
-    /// \u{1cf8}: '᳸'
-    pub const VEDIC_TONE_RING_ABOVE: char = '᳸';
-    /// \u{1cf9}: '᳹'
-    pub const VEDIC_TONE_DOUBLE_RING_ABOVE: char = '᳹';
-    /// \u{1cfa}: 'ᳺ'
-    pub const VEDIC_SIGN_DOUBLE_ANUSVARA_ANTARGOMUKHA: char = 'ᳺ';
-}
 
 /// An enum to represent all characters in the VedicExtensions block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -181,51 +92,50 @@ pub enum VedicExtensions {
 
 impl Into<char> for VedicExtensions {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            VedicExtensions::VedicToneKarshana => VEDIC_TONE_KARSHANA,
-            VedicExtensions::VedicToneShara => VEDIC_TONE_SHARA,
-            VedicExtensions::VedicTonePrenkha => VEDIC_TONE_PRENKHA,
-            VedicExtensions::VedicSignNihshvasa => VEDIC_SIGN_NIHSHVASA,
-            VedicExtensions::VedicSignYajurvedicMidlineSvarita => VEDIC_SIGN_YAJURVEDIC_MIDLINE_SVARITA,
-            VedicExtensions::VedicToneYajurvedicAggravatedIndependentSvarita => VEDIC_TONE_YAJURVEDIC_AGGRAVATED_INDEPENDENT_SVARITA,
-            VedicExtensions::VedicToneYajurvedicIndependentSvarita => VEDIC_TONE_YAJURVEDIC_INDEPENDENT_SVARITA,
-            VedicExtensions::VedicToneYajurvedicKathakaIndependentSvarita => VEDIC_TONE_YAJURVEDIC_KATHAKA_INDEPENDENT_SVARITA,
-            VedicExtensions::VedicToneCandraBelow => VEDIC_TONE_CANDRA_BELOW,
-            VedicExtensions::VedicToneYajurvedicKathakaIndependentSvaritaSchroeder => VEDIC_TONE_YAJURVEDIC_KATHAKA_INDEPENDENT_SVARITA_SCHROEDER,
-            VedicExtensions::VedicToneDoubleSvarita => VEDIC_TONE_DOUBLE_SVARITA,
-            VedicExtensions::VedicToneTripleSvarita => VEDIC_TONE_TRIPLE_SVARITA,
-            VedicExtensions::VedicToneKathakaAnudatta => VEDIC_TONE_KATHAKA_ANUDATTA,
-            VedicExtensions::VedicToneDotBelow => VEDIC_TONE_DOT_BELOW,
-            VedicExtensions::VedicToneTwoDotsBelow => VEDIC_TONE_TWO_DOTS_BELOW,
-            VedicExtensions::VedicToneThreeDotsBelow => VEDIC_TONE_THREE_DOTS_BELOW,
-            VedicExtensions::VedicToneRigvedicKashmiriIndependentSvarita => VEDIC_TONE_RIGVEDIC_KASHMIRI_INDEPENDENT_SVARITA,
-            VedicExtensions::VedicToneAtharvavedicIndependentSvarita => VEDIC_TONE_ATHARVAVEDIC_INDEPENDENT_SVARITA,
-            VedicExtensions::VedicSignVisargaSvarita => VEDIC_SIGN_VISARGA_SVARITA,
-            VedicExtensions::VedicSignVisargaUdatta => VEDIC_SIGN_VISARGA_UDATTA,
-            VedicExtensions::VedicSignReversedVisargaUdatta => VEDIC_SIGN_REVERSED_VISARGA_UDATTA,
-            VedicExtensions::VedicSignVisargaAnudatta => VEDIC_SIGN_VISARGA_ANUDATTA,
-            VedicExtensions::VedicSignReversedVisargaAnudatta => VEDIC_SIGN_REVERSED_VISARGA_ANUDATTA,
-            VedicExtensions::VedicSignVisargaUdattaWithTail => VEDIC_SIGN_VISARGA_UDATTA_WITH_TAIL,
-            VedicExtensions::VedicSignVisargaAnudattaWithTail => VEDIC_SIGN_VISARGA_ANUDATTA_WITH_TAIL,
-            VedicExtensions::VedicSignAnusvaraAntargomukha => VEDIC_SIGN_ANUSVARA_ANTARGOMUKHA,
-            VedicExtensions::VedicSignAnusvaraBahirgomukha => VEDIC_SIGN_ANUSVARA_BAHIRGOMUKHA,
-            VedicExtensions::VedicSignAnusvaraVamagomukha => VEDIC_SIGN_ANUSVARA_VAMAGOMUKHA,
-            VedicExtensions::VedicSignAnusvaraVamagomukhaWithTail => VEDIC_SIGN_ANUSVARA_VAMAGOMUKHA_WITH_TAIL,
-            VedicExtensions::VedicSignTiryak => VEDIC_SIGN_TIRYAK,
-            VedicExtensions::VedicSignHexiformLongAnusvara => VEDIC_SIGN_HEXIFORM_LONG_ANUSVARA,
-            VedicExtensions::VedicSignLongAnusvara => VEDIC_SIGN_LONG_ANUSVARA,
-            VedicExtensions::VedicSignRthangLongAnusvara => VEDIC_SIGN_RTHANG_LONG_ANUSVARA,
-            VedicExtensions::VedicSignAnusvaraUbhayatoMukha => VEDIC_SIGN_ANUSVARA_UBHAYATO_MUKHA,
-            VedicExtensions::VedicSignArdhavisarga => VEDIC_SIGN_ARDHAVISARGA,
-            VedicExtensions::VedicSignRotatedArdhavisarga => VEDIC_SIGN_ROTATED_ARDHAVISARGA,
-            VedicExtensions::VedicToneCandraAbove => VEDIC_TONE_CANDRA_ABOVE,
-            VedicExtensions::VedicSignJihvamuliya => VEDIC_SIGN_JIHVAMULIYA,
-            VedicExtensions::VedicSignUpadhmaniya => VEDIC_SIGN_UPADHMANIYA,
-            VedicExtensions::VedicSignAtikrama => VEDIC_SIGN_ATIKRAMA,
-            VedicExtensions::VedicToneRingAbove => VEDIC_TONE_RING_ABOVE,
-            VedicExtensions::VedicToneDoubleRingAbove => VEDIC_TONE_DOUBLE_RING_ABOVE,
-            VedicExtensions::VedicSignDoubleAnusvaraAntargomukha => VEDIC_SIGN_DOUBLE_ANUSVARA_ANTARGOMUKHA,
+            VedicExtensions::VedicToneKarshana => '᳐',
+            VedicExtensions::VedicToneShara => '᳑',
+            VedicExtensions::VedicTonePrenkha => '᳒',
+            VedicExtensions::VedicSignNihshvasa => '᳓',
+            VedicExtensions::VedicSignYajurvedicMidlineSvarita => '᳔',
+            VedicExtensions::VedicToneYajurvedicAggravatedIndependentSvarita => '᳕',
+            VedicExtensions::VedicToneYajurvedicIndependentSvarita => '᳖',
+            VedicExtensions::VedicToneYajurvedicKathakaIndependentSvarita => '᳗',
+            VedicExtensions::VedicToneCandraBelow => '᳘',
+            VedicExtensions::VedicToneYajurvedicKathakaIndependentSvaritaSchroeder => '᳙',
+            VedicExtensions::VedicToneDoubleSvarita => '᳚',
+            VedicExtensions::VedicToneTripleSvarita => '᳛',
+            VedicExtensions::VedicToneKathakaAnudatta => '᳜',
+            VedicExtensions::VedicToneDotBelow => '᳝',
+            VedicExtensions::VedicToneTwoDotsBelow => '᳞',
+            VedicExtensions::VedicToneThreeDotsBelow => '᳟',
+            VedicExtensions::VedicToneRigvedicKashmiriIndependentSvarita => '᳠',
+            VedicExtensions::VedicToneAtharvavedicIndependentSvarita => '᳡',
+            VedicExtensions::VedicSignVisargaSvarita => '᳢',
+            VedicExtensions::VedicSignVisargaUdatta => '᳣',
+            VedicExtensions::VedicSignReversedVisargaUdatta => '᳤',
+            VedicExtensions::VedicSignVisargaAnudatta => '᳥',
+            VedicExtensions::VedicSignReversedVisargaAnudatta => '᳦',
+            VedicExtensions::VedicSignVisargaUdattaWithTail => '᳧',
+            VedicExtensions::VedicSignVisargaAnudattaWithTail => '᳨',
+            VedicExtensions::VedicSignAnusvaraAntargomukha => 'ᳩ',
+            VedicExtensions::VedicSignAnusvaraBahirgomukha => 'ᳪ',
+            VedicExtensions::VedicSignAnusvaraVamagomukha => 'ᳫ',
+            VedicExtensions::VedicSignAnusvaraVamagomukhaWithTail => 'ᳬ',
+            VedicExtensions::VedicSignTiryak => '᳭',
+            VedicExtensions::VedicSignHexiformLongAnusvara => 'ᳮ',
+            VedicExtensions::VedicSignLongAnusvara => 'ᳯ',
+            VedicExtensions::VedicSignRthangLongAnusvara => 'ᳰ',
+            VedicExtensions::VedicSignAnusvaraUbhayatoMukha => 'ᳱ',
+            VedicExtensions::VedicSignArdhavisarga => 'ᳲ',
+            VedicExtensions::VedicSignRotatedArdhavisarga => 'ᳳ',
+            VedicExtensions::VedicToneCandraAbove => '᳴',
+            VedicExtensions::VedicSignJihvamuliya => 'ᳵ',
+            VedicExtensions::VedicSignUpadhmaniya => 'ᳶ',
+            VedicExtensions::VedicSignAtikrama => '᳷',
+            VedicExtensions::VedicToneRingAbove => '᳸',
+            VedicExtensions::VedicToneDoubleRingAbove => '᳹',
+            VedicExtensions::VedicSignDoubleAnusvaraAntargomukha => 'ᳺ',
         }
     }
 }
@@ -233,51 +143,50 @@ impl Into<char> for VedicExtensions {
 impl std::convert::TryFrom<char> for VedicExtensions {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            VEDIC_TONE_KARSHANA => Ok(VedicExtensions::VedicToneKarshana),
-            VEDIC_TONE_SHARA => Ok(VedicExtensions::VedicToneShara),
-            VEDIC_TONE_PRENKHA => Ok(VedicExtensions::VedicTonePrenkha),
-            VEDIC_SIGN_NIHSHVASA => Ok(VedicExtensions::VedicSignNihshvasa),
-            VEDIC_SIGN_YAJURVEDIC_MIDLINE_SVARITA => Ok(VedicExtensions::VedicSignYajurvedicMidlineSvarita),
-            VEDIC_TONE_YAJURVEDIC_AGGRAVATED_INDEPENDENT_SVARITA => Ok(VedicExtensions::VedicToneYajurvedicAggravatedIndependentSvarita),
-            VEDIC_TONE_YAJURVEDIC_INDEPENDENT_SVARITA => Ok(VedicExtensions::VedicToneYajurvedicIndependentSvarita),
-            VEDIC_TONE_YAJURVEDIC_KATHAKA_INDEPENDENT_SVARITA => Ok(VedicExtensions::VedicToneYajurvedicKathakaIndependentSvarita),
-            VEDIC_TONE_CANDRA_BELOW => Ok(VedicExtensions::VedicToneCandraBelow),
-            VEDIC_TONE_YAJURVEDIC_KATHAKA_INDEPENDENT_SVARITA_SCHROEDER => Ok(VedicExtensions::VedicToneYajurvedicKathakaIndependentSvaritaSchroeder),
-            VEDIC_TONE_DOUBLE_SVARITA => Ok(VedicExtensions::VedicToneDoubleSvarita),
-            VEDIC_TONE_TRIPLE_SVARITA => Ok(VedicExtensions::VedicToneTripleSvarita),
-            VEDIC_TONE_KATHAKA_ANUDATTA => Ok(VedicExtensions::VedicToneKathakaAnudatta),
-            VEDIC_TONE_DOT_BELOW => Ok(VedicExtensions::VedicToneDotBelow),
-            VEDIC_TONE_TWO_DOTS_BELOW => Ok(VedicExtensions::VedicToneTwoDotsBelow),
-            VEDIC_TONE_THREE_DOTS_BELOW => Ok(VedicExtensions::VedicToneThreeDotsBelow),
-            VEDIC_TONE_RIGVEDIC_KASHMIRI_INDEPENDENT_SVARITA => Ok(VedicExtensions::VedicToneRigvedicKashmiriIndependentSvarita),
-            VEDIC_TONE_ATHARVAVEDIC_INDEPENDENT_SVARITA => Ok(VedicExtensions::VedicToneAtharvavedicIndependentSvarita),
-            VEDIC_SIGN_VISARGA_SVARITA => Ok(VedicExtensions::VedicSignVisargaSvarita),
-            VEDIC_SIGN_VISARGA_UDATTA => Ok(VedicExtensions::VedicSignVisargaUdatta),
-            VEDIC_SIGN_REVERSED_VISARGA_UDATTA => Ok(VedicExtensions::VedicSignReversedVisargaUdatta),
-            VEDIC_SIGN_VISARGA_ANUDATTA => Ok(VedicExtensions::VedicSignVisargaAnudatta),
-            VEDIC_SIGN_REVERSED_VISARGA_ANUDATTA => Ok(VedicExtensions::VedicSignReversedVisargaAnudatta),
-            VEDIC_SIGN_VISARGA_UDATTA_WITH_TAIL => Ok(VedicExtensions::VedicSignVisargaUdattaWithTail),
-            VEDIC_SIGN_VISARGA_ANUDATTA_WITH_TAIL => Ok(VedicExtensions::VedicSignVisargaAnudattaWithTail),
-            VEDIC_SIGN_ANUSVARA_ANTARGOMUKHA => Ok(VedicExtensions::VedicSignAnusvaraAntargomukha),
-            VEDIC_SIGN_ANUSVARA_BAHIRGOMUKHA => Ok(VedicExtensions::VedicSignAnusvaraBahirgomukha),
-            VEDIC_SIGN_ANUSVARA_VAMAGOMUKHA => Ok(VedicExtensions::VedicSignAnusvaraVamagomukha),
-            VEDIC_SIGN_ANUSVARA_VAMAGOMUKHA_WITH_TAIL => Ok(VedicExtensions::VedicSignAnusvaraVamagomukhaWithTail),
-            VEDIC_SIGN_TIRYAK => Ok(VedicExtensions::VedicSignTiryak),
-            VEDIC_SIGN_HEXIFORM_LONG_ANUSVARA => Ok(VedicExtensions::VedicSignHexiformLongAnusvara),
-            VEDIC_SIGN_LONG_ANUSVARA => Ok(VedicExtensions::VedicSignLongAnusvara),
-            VEDIC_SIGN_RTHANG_LONG_ANUSVARA => Ok(VedicExtensions::VedicSignRthangLongAnusvara),
-            VEDIC_SIGN_ANUSVARA_UBHAYATO_MUKHA => Ok(VedicExtensions::VedicSignAnusvaraUbhayatoMukha),
-            VEDIC_SIGN_ARDHAVISARGA => Ok(VedicExtensions::VedicSignArdhavisarga),
-            VEDIC_SIGN_ROTATED_ARDHAVISARGA => Ok(VedicExtensions::VedicSignRotatedArdhavisarga),
-            VEDIC_TONE_CANDRA_ABOVE => Ok(VedicExtensions::VedicToneCandraAbove),
-            VEDIC_SIGN_JIHVAMULIYA => Ok(VedicExtensions::VedicSignJihvamuliya),
-            VEDIC_SIGN_UPADHMANIYA => Ok(VedicExtensions::VedicSignUpadhmaniya),
-            VEDIC_SIGN_ATIKRAMA => Ok(VedicExtensions::VedicSignAtikrama),
-            VEDIC_TONE_RING_ABOVE => Ok(VedicExtensions::VedicToneRingAbove),
-            VEDIC_TONE_DOUBLE_RING_ABOVE => Ok(VedicExtensions::VedicToneDoubleRingAbove),
-            VEDIC_SIGN_DOUBLE_ANUSVARA_ANTARGOMUKHA => Ok(VedicExtensions::VedicSignDoubleAnusvaraAntargomukha),
+            '᳐' => Ok(VedicExtensions::VedicToneKarshana),
+            '᳑' => Ok(VedicExtensions::VedicToneShara),
+            '᳒' => Ok(VedicExtensions::VedicTonePrenkha),
+            '᳓' => Ok(VedicExtensions::VedicSignNihshvasa),
+            '᳔' => Ok(VedicExtensions::VedicSignYajurvedicMidlineSvarita),
+            '᳕' => Ok(VedicExtensions::VedicToneYajurvedicAggravatedIndependentSvarita),
+            '᳖' => Ok(VedicExtensions::VedicToneYajurvedicIndependentSvarita),
+            '᳗' => Ok(VedicExtensions::VedicToneYajurvedicKathakaIndependentSvarita),
+            '᳘' => Ok(VedicExtensions::VedicToneCandraBelow),
+            '᳙' => Ok(VedicExtensions::VedicToneYajurvedicKathakaIndependentSvaritaSchroeder),
+            '᳚' => Ok(VedicExtensions::VedicToneDoubleSvarita),
+            '᳛' => Ok(VedicExtensions::VedicToneTripleSvarita),
+            '᳜' => Ok(VedicExtensions::VedicToneKathakaAnudatta),
+            '᳝' => Ok(VedicExtensions::VedicToneDotBelow),
+            '᳞' => Ok(VedicExtensions::VedicToneTwoDotsBelow),
+            '᳟' => Ok(VedicExtensions::VedicToneThreeDotsBelow),
+            '᳠' => Ok(VedicExtensions::VedicToneRigvedicKashmiriIndependentSvarita),
+            '᳡' => Ok(VedicExtensions::VedicToneAtharvavedicIndependentSvarita),
+            '᳢' => Ok(VedicExtensions::VedicSignVisargaSvarita),
+            '᳣' => Ok(VedicExtensions::VedicSignVisargaUdatta),
+            '᳤' => Ok(VedicExtensions::VedicSignReversedVisargaUdatta),
+            '᳥' => Ok(VedicExtensions::VedicSignVisargaAnudatta),
+            '᳦' => Ok(VedicExtensions::VedicSignReversedVisargaAnudatta),
+            '᳧' => Ok(VedicExtensions::VedicSignVisargaUdattaWithTail),
+            '᳨' => Ok(VedicExtensions::VedicSignVisargaAnudattaWithTail),
+            'ᳩ' => Ok(VedicExtensions::VedicSignAnusvaraAntargomukha),
+            'ᳪ' => Ok(VedicExtensions::VedicSignAnusvaraBahirgomukha),
+            'ᳫ' => Ok(VedicExtensions::VedicSignAnusvaraVamagomukha),
+            'ᳬ' => Ok(VedicExtensions::VedicSignAnusvaraVamagomukhaWithTail),
+            '᳭' => Ok(VedicExtensions::VedicSignTiryak),
+            'ᳮ' => Ok(VedicExtensions::VedicSignHexiformLongAnusvara),
+            'ᳯ' => Ok(VedicExtensions::VedicSignLongAnusvara),
+            'ᳰ' => Ok(VedicExtensions::VedicSignRthangLongAnusvara),
+            'ᳱ' => Ok(VedicExtensions::VedicSignAnusvaraUbhayatoMukha),
+            'ᳲ' => Ok(VedicExtensions::VedicSignArdhavisarga),
+            'ᳳ' => Ok(VedicExtensions::VedicSignRotatedArdhavisarga),
+            '᳴' => Ok(VedicExtensions::VedicToneCandraAbove),
+            'ᳵ' => Ok(VedicExtensions::VedicSignJihvamuliya),
+            'ᳶ' => Ok(VedicExtensions::VedicSignUpadhmaniya),
+            '᳷' => Ok(VedicExtensions::VedicSignAtikrama),
+            '᳸' => Ok(VedicExtensions::VedicToneRingAbove),
+            '᳹' => Ok(VedicExtensions::VedicToneDoubleRingAbove),
+            'ᳺ' => Ok(VedicExtensions::VedicSignDoubleAnusvaraAntargomukha),
             _ => Err(()),
         }
     }

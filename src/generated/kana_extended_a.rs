@@ -1,68 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1b100}: '𛄀'
-    pub const HENTAIGANA_LETTER_RE_DASH_3: char = '𛄀';
-    /// \u{1b101}: '𛄁'
-    pub const HENTAIGANA_LETTER_RE_DASH_4: char = '𛄁';
-    /// \u{1b102}: '𛄂'
-    pub const HENTAIGANA_LETTER_RO_DASH_1: char = '𛄂';
-    /// \u{1b103}: '𛄃'
-    pub const HENTAIGANA_LETTER_RO_DASH_2: char = '𛄃';
-    /// \u{1b104}: '𛄄'
-    pub const HENTAIGANA_LETTER_RO_DASH_3: char = '𛄄';
-    /// \u{1b105}: '𛄅'
-    pub const HENTAIGANA_LETTER_RO_DASH_4: char = '𛄅';
-    /// \u{1b106}: '𛄆'
-    pub const HENTAIGANA_LETTER_RO_DASH_5: char = '𛄆';
-    /// \u{1b107}: '𛄇'
-    pub const HENTAIGANA_LETTER_RO_DASH_6: char = '𛄇';
-    /// \u{1b108}: '𛄈'
-    pub const HENTAIGANA_LETTER_WA_DASH_1: char = '𛄈';
-    /// \u{1b109}: '𛄉'
-    pub const HENTAIGANA_LETTER_WA_DASH_2: char = '𛄉';
-    /// \u{1b10a}: '𛄊'
-    pub const HENTAIGANA_LETTER_WA_DASH_3: char = '𛄊';
-    /// \u{1b10b}: '𛄋'
-    pub const HENTAIGANA_LETTER_WA_DASH_4: char = '𛄋';
-    /// \u{1b10c}: '𛄌'
-    pub const HENTAIGANA_LETTER_WA_DASH_5: char = '𛄌';
-    /// \u{1b10d}: '𛄍'
-    pub const HENTAIGANA_LETTER_WI_DASH_1: char = '𛄍';
-    /// \u{1b10e}: '𛄎'
-    pub const HENTAIGANA_LETTER_WI_DASH_2: char = '𛄎';
-    /// \u{1b10f}: '𛄏'
-    pub const HENTAIGANA_LETTER_WI_DASH_3: char = '𛄏';
-    /// \u{1b110}: '𛄐'
-    pub const HENTAIGANA_LETTER_WI_DASH_4: char = '𛄐';
-    /// \u{1b111}: '𛄑'
-    pub const HENTAIGANA_LETTER_WI_DASH_5: char = '𛄑';
-    /// \u{1b112}: '𛄒'
-    pub const HENTAIGANA_LETTER_WE_DASH_1: char = '𛄒';
-    /// \u{1b113}: '𛄓'
-    pub const HENTAIGANA_LETTER_WE_DASH_2: char = '𛄓';
-    /// \u{1b114}: '𛄔'
-    pub const HENTAIGANA_LETTER_WE_DASH_3: char = '𛄔';
-    /// \u{1b115}: '𛄕'
-    pub const HENTAIGANA_LETTER_WE_DASH_4: char = '𛄕';
-    /// \u{1b116}: '𛄖'
-    pub const HENTAIGANA_LETTER_WO_DASH_1: char = '𛄖';
-    /// \u{1b117}: '𛄗'
-    pub const HENTAIGANA_LETTER_WO_DASH_2: char = '𛄗';
-    /// \u{1b118}: '𛄘'
-    pub const HENTAIGANA_LETTER_WO_DASH_3: char = '𛄘';
-    /// \u{1b119}: '𛄙'
-    pub const HENTAIGANA_LETTER_WO_DASH_4: char = '𛄙';
-    /// \u{1b11a}: '𛄚'
-    pub const HENTAIGANA_LETTER_WO_DASH_5: char = '𛄚';
-    /// \u{1b11b}: '𛄛'
-    pub const HENTAIGANA_LETTER_WO_DASH_6: char = '𛄛';
-    /// \u{1b11c}: '𛄜'
-    pub const HENTAIGANA_LETTER_WO_DASH_7: char = '𛄜';
-    /// \u{1b11d}: '𛄝'
-    pub const HENTAIGANA_LETTER_N_DASH_MU_DASH_MO_DASH_1: char = '𛄝';
-    /// \u{1b11e}: '𛄞'
-    pub const HENTAIGANA_LETTER_N_DASH_MU_DASH_MO_DASH_2: char = '𛄞';
-}
 
 /// An enum to represent all characters in the KanaExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -133,39 +68,38 @@ pub enum KanaExtendedA {
 
 impl Into<char> for KanaExtendedA {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            KanaExtendedA::HentaiganaLetterReDash3 => HENTAIGANA_LETTER_RE_DASH_3,
-            KanaExtendedA::HentaiganaLetterReDash4 => HENTAIGANA_LETTER_RE_DASH_4,
-            KanaExtendedA::HentaiganaLetterRoDash1 => HENTAIGANA_LETTER_RO_DASH_1,
-            KanaExtendedA::HentaiganaLetterRoDash2 => HENTAIGANA_LETTER_RO_DASH_2,
-            KanaExtendedA::HentaiganaLetterRoDash3 => HENTAIGANA_LETTER_RO_DASH_3,
-            KanaExtendedA::HentaiganaLetterRoDash4 => HENTAIGANA_LETTER_RO_DASH_4,
-            KanaExtendedA::HentaiganaLetterRoDash5 => HENTAIGANA_LETTER_RO_DASH_5,
-            KanaExtendedA::HentaiganaLetterRoDash6 => HENTAIGANA_LETTER_RO_DASH_6,
-            KanaExtendedA::HentaiganaLetterWaDash1 => HENTAIGANA_LETTER_WA_DASH_1,
-            KanaExtendedA::HentaiganaLetterWaDash2 => HENTAIGANA_LETTER_WA_DASH_2,
-            KanaExtendedA::HentaiganaLetterWaDash3 => HENTAIGANA_LETTER_WA_DASH_3,
-            KanaExtendedA::HentaiganaLetterWaDash4 => HENTAIGANA_LETTER_WA_DASH_4,
-            KanaExtendedA::HentaiganaLetterWaDash5 => HENTAIGANA_LETTER_WA_DASH_5,
-            KanaExtendedA::HentaiganaLetterWiDash1 => HENTAIGANA_LETTER_WI_DASH_1,
-            KanaExtendedA::HentaiganaLetterWiDash2 => HENTAIGANA_LETTER_WI_DASH_2,
-            KanaExtendedA::HentaiganaLetterWiDash3 => HENTAIGANA_LETTER_WI_DASH_3,
-            KanaExtendedA::HentaiganaLetterWiDash4 => HENTAIGANA_LETTER_WI_DASH_4,
-            KanaExtendedA::HentaiganaLetterWiDash5 => HENTAIGANA_LETTER_WI_DASH_5,
-            KanaExtendedA::HentaiganaLetterWeDash1 => HENTAIGANA_LETTER_WE_DASH_1,
-            KanaExtendedA::HentaiganaLetterWeDash2 => HENTAIGANA_LETTER_WE_DASH_2,
-            KanaExtendedA::HentaiganaLetterWeDash3 => HENTAIGANA_LETTER_WE_DASH_3,
-            KanaExtendedA::HentaiganaLetterWeDash4 => HENTAIGANA_LETTER_WE_DASH_4,
-            KanaExtendedA::HentaiganaLetterWoDash1 => HENTAIGANA_LETTER_WO_DASH_1,
-            KanaExtendedA::HentaiganaLetterWoDash2 => HENTAIGANA_LETTER_WO_DASH_2,
-            KanaExtendedA::HentaiganaLetterWoDash3 => HENTAIGANA_LETTER_WO_DASH_3,
-            KanaExtendedA::HentaiganaLetterWoDash4 => HENTAIGANA_LETTER_WO_DASH_4,
-            KanaExtendedA::HentaiganaLetterWoDash5 => HENTAIGANA_LETTER_WO_DASH_5,
-            KanaExtendedA::HentaiganaLetterWoDash6 => HENTAIGANA_LETTER_WO_DASH_6,
-            KanaExtendedA::HentaiganaLetterWoDash7 => HENTAIGANA_LETTER_WO_DASH_7,
-            KanaExtendedA::HentaiganaLetterNDashMuDashMoDash1 => HENTAIGANA_LETTER_N_DASH_MU_DASH_MO_DASH_1,
-            KanaExtendedA::HentaiganaLetterNDashMuDashMoDash2 => HENTAIGANA_LETTER_N_DASH_MU_DASH_MO_DASH_2,
+            KanaExtendedA::HentaiganaLetterReDash3 => '𛄀',
+            KanaExtendedA::HentaiganaLetterReDash4 => '𛄁',
+            KanaExtendedA::HentaiganaLetterRoDash1 => '𛄂',
+            KanaExtendedA::HentaiganaLetterRoDash2 => '𛄃',
+            KanaExtendedA::HentaiganaLetterRoDash3 => '𛄄',
+            KanaExtendedA::HentaiganaLetterRoDash4 => '𛄅',
+            KanaExtendedA::HentaiganaLetterRoDash5 => '𛄆',
+            KanaExtendedA::HentaiganaLetterRoDash6 => '𛄇',
+            KanaExtendedA::HentaiganaLetterWaDash1 => '𛄈',
+            KanaExtendedA::HentaiganaLetterWaDash2 => '𛄉',
+            KanaExtendedA::HentaiganaLetterWaDash3 => '𛄊',
+            KanaExtendedA::HentaiganaLetterWaDash4 => '𛄋',
+            KanaExtendedA::HentaiganaLetterWaDash5 => '𛄌',
+            KanaExtendedA::HentaiganaLetterWiDash1 => '𛄍',
+            KanaExtendedA::HentaiganaLetterWiDash2 => '𛄎',
+            KanaExtendedA::HentaiganaLetterWiDash3 => '𛄏',
+            KanaExtendedA::HentaiganaLetterWiDash4 => '𛄐',
+            KanaExtendedA::HentaiganaLetterWiDash5 => '𛄑',
+            KanaExtendedA::HentaiganaLetterWeDash1 => '𛄒',
+            KanaExtendedA::HentaiganaLetterWeDash2 => '𛄓',
+            KanaExtendedA::HentaiganaLetterWeDash3 => '𛄔',
+            KanaExtendedA::HentaiganaLetterWeDash4 => '𛄕',
+            KanaExtendedA::HentaiganaLetterWoDash1 => '𛄖',
+            KanaExtendedA::HentaiganaLetterWoDash2 => '𛄗',
+            KanaExtendedA::HentaiganaLetterWoDash3 => '𛄘',
+            KanaExtendedA::HentaiganaLetterWoDash4 => '𛄙',
+            KanaExtendedA::HentaiganaLetterWoDash5 => '𛄚',
+            KanaExtendedA::HentaiganaLetterWoDash6 => '𛄛',
+            KanaExtendedA::HentaiganaLetterWoDash7 => '𛄜',
+            KanaExtendedA::HentaiganaLetterNDashMuDashMoDash1 => '𛄝',
+            KanaExtendedA::HentaiganaLetterNDashMuDashMoDash2 => '𛄞',
         }
     }
 }
@@ -173,39 +107,38 @@ impl Into<char> for KanaExtendedA {
 impl std::convert::TryFrom<char> for KanaExtendedA {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            HENTAIGANA_LETTER_RE_DASH_3 => Ok(KanaExtendedA::HentaiganaLetterReDash3),
-            HENTAIGANA_LETTER_RE_DASH_4 => Ok(KanaExtendedA::HentaiganaLetterReDash4),
-            HENTAIGANA_LETTER_RO_DASH_1 => Ok(KanaExtendedA::HentaiganaLetterRoDash1),
-            HENTAIGANA_LETTER_RO_DASH_2 => Ok(KanaExtendedA::HentaiganaLetterRoDash2),
-            HENTAIGANA_LETTER_RO_DASH_3 => Ok(KanaExtendedA::HentaiganaLetterRoDash3),
-            HENTAIGANA_LETTER_RO_DASH_4 => Ok(KanaExtendedA::HentaiganaLetterRoDash4),
-            HENTAIGANA_LETTER_RO_DASH_5 => Ok(KanaExtendedA::HentaiganaLetterRoDash5),
-            HENTAIGANA_LETTER_RO_DASH_6 => Ok(KanaExtendedA::HentaiganaLetterRoDash6),
-            HENTAIGANA_LETTER_WA_DASH_1 => Ok(KanaExtendedA::HentaiganaLetterWaDash1),
-            HENTAIGANA_LETTER_WA_DASH_2 => Ok(KanaExtendedA::HentaiganaLetterWaDash2),
-            HENTAIGANA_LETTER_WA_DASH_3 => Ok(KanaExtendedA::HentaiganaLetterWaDash3),
-            HENTAIGANA_LETTER_WA_DASH_4 => Ok(KanaExtendedA::HentaiganaLetterWaDash4),
-            HENTAIGANA_LETTER_WA_DASH_5 => Ok(KanaExtendedA::HentaiganaLetterWaDash5),
-            HENTAIGANA_LETTER_WI_DASH_1 => Ok(KanaExtendedA::HentaiganaLetterWiDash1),
-            HENTAIGANA_LETTER_WI_DASH_2 => Ok(KanaExtendedA::HentaiganaLetterWiDash2),
-            HENTAIGANA_LETTER_WI_DASH_3 => Ok(KanaExtendedA::HentaiganaLetterWiDash3),
-            HENTAIGANA_LETTER_WI_DASH_4 => Ok(KanaExtendedA::HentaiganaLetterWiDash4),
-            HENTAIGANA_LETTER_WI_DASH_5 => Ok(KanaExtendedA::HentaiganaLetterWiDash5),
-            HENTAIGANA_LETTER_WE_DASH_1 => Ok(KanaExtendedA::HentaiganaLetterWeDash1),
-            HENTAIGANA_LETTER_WE_DASH_2 => Ok(KanaExtendedA::HentaiganaLetterWeDash2),
-            HENTAIGANA_LETTER_WE_DASH_3 => Ok(KanaExtendedA::HentaiganaLetterWeDash3),
-            HENTAIGANA_LETTER_WE_DASH_4 => Ok(KanaExtendedA::HentaiganaLetterWeDash4),
-            HENTAIGANA_LETTER_WO_DASH_1 => Ok(KanaExtendedA::HentaiganaLetterWoDash1),
-            HENTAIGANA_LETTER_WO_DASH_2 => Ok(KanaExtendedA::HentaiganaLetterWoDash2),
-            HENTAIGANA_LETTER_WO_DASH_3 => Ok(KanaExtendedA::HentaiganaLetterWoDash3),
-            HENTAIGANA_LETTER_WO_DASH_4 => Ok(KanaExtendedA::HentaiganaLetterWoDash4),
-            HENTAIGANA_LETTER_WO_DASH_5 => Ok(KanaExtendedA::HentaiganaLetterWoDash5),
-            HENTAIGANA_LETTER_WO_DASH_6 => Ok(KanaExtendedA::HentaiganaLetterWoDash6),
-            HENTAIGANA_LETTER_WO_DASH_7 => Ok(KanaExtendedA::HentaiganaLetterWoDash7),
-            HENTAIGANA_LETTER_N_DASH_MU_DASH_MO_DASH_1 => Ok(KanaExtendedA::HentaiganaLetterNDashMuDashMoDash1),
-            HENTAIGANA_LETTER_N_DASH_MU_DASH_MO_DASH_2 => Ok(KanaExtendedA::HentaiganaLetterNDashMuDashMoDash2),
+            '𛄀' => Ok(KanaExtendedA::HentaiganaLetterReDash3),
+            '𛄁' => Ok(KanaExtendedA::HentaiganaLetterReDash4),
+            '𛄂' => Ok(KanaExtendedA::HentaiganaLetterRoDash1),
+            '𛄃' => Ok(KanaExtendedA::HentaiganaLetterRoDash2),
+            '𛄄' => Ok(KanaExtendedA::HentaiganaLetterRoDash3),
+            '𛄅' => Ok(KanaExtendedA::HentaiganaLetterRoDash4),
+            '𛄆' => Ok(KanaExtendedA::HentaiganaLetterRoDash5),
+            '𛄇' => Ok(KanaExtendedA::HentaiganaLetterRoDash6),
+            '𛄈' => Ok(KanaExtendedA::HentaiganaLetterWaDash1),
+            '𛄉' => Ok(KanaExtendedA::HentaiganaLetterWaDash2),
+            '𛄊' => Ok(KanaExtendedA::HentaiganaLetterWaDash3),
+            '𛄋' => Ok(KanaExtendedA::HentaiganaLetterWaDash4),
+            '𛄌' => Ok(KanaExtendedA::HentaiganaLetterWaDash5),
+            '𛄍' => Ok(KanaExtendedA::HentaiganaLetterWiDash1),
+            '𛄎' => Ok(KanaExtendedA::HentaiganaLetterWiDash2),
+            '𛄏' => Ok(KanaExtendedA::HentaiganaLetterWiDash3),
+            '𛄐' => Ok(KanaExtendedA::HentaiganaLetterWiDash4),
+            '𛄑' => Ok(KanaExtendedA::HentaiganaLetterWiDash5),
+            '𛄒' => Ok(KanaExtendedA::HentaiganaLetterWeDash1),
+            '𛄓' => Ok(KanaExtendedA::HentaiganaLetterWeDash2),
+            '𛄔' => Ok(KanaExtendedA::HentaiganaLetterWeDash3),
+            '𛄕' => Ok(KanaExtendedA::HentaiganaLetterWeDash4),
+            '𛄖' => Ok(KanaExtendedA::HentaiganaLetterWoDash1),
+            '𛄗' => Ok(KanaExtendedA::HentaiganaLetterWoDash2),
+            '𛄘' => Ok(KanaExtendedA::HentaiganaLetterWoDash3),
+            '𛄙' => Ok(KanaExtendedA::HentaiganaLetterWoDash4),
+            '𛄚' => Ok(KanaExtendedA::HentaiganaLetterWoDash5),
+            '𛄛' => Ok(KanaExtendedA::HentaiganaLetterWoDash6),
+            '𛄜' => Ok(KanaExtendedA::HentaiganaLetterWoDash7),
+            '𛄝' => Ok(KanaExtendedA::HentaiganaLetterNDashMuDashMoDash1),
+            '𛄞' => Ok(KanaExtendedA::HentaiganaLetterNDashMuDashMoDash2),
             _ => Err(()),
         }
     }

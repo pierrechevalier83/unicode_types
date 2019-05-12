@@ -1,134 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1f200}: '🈀'
-    pub const SQUARE_HIRAGANA_HOKA: char = '🈀';
-    /// \u{1f201}: '🈁'
-    pub const SQUARED_KATAKANA_KOKO: char = '🈁';
-    /// \u{1f202}: '🈂'
-    pub const SQUARED_KATAKANA_SA: char = '🈂';
-    /// \u{1f210}: '🈐'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_624B: char = '🈐';
-    /// \u{1f211}: '🈑'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5B57: char = '🈑';
-    /// \u{1f212}: '🈒'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_53CC: char = '🈒';
-    /// \u{1f213}: '🈓'
-    pub const SQUARED_KATAKANA_DE: char = '🈓';
-    /// \u{1f214}: '🈔'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E8C: char = '🈔';
-    /// \u{1f215}: '🈕'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_591A: char = '🈕';
-    /// \u{1f216}: '🈖'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_89E3: char = '🈖';
-    /// \u{1f217}: '🈗'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5929: char = '🈗';
-    /// \u{1f218}: '🈘'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4EA4: char = '🈘';
-    /// \u{1f219}: '🈙'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6620: char = '🈙';
-    /// \u{1f21a}: '🈚'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7121: char = '🈚';
-    /// \u{1f21b}: '🈛'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6599: char = '🈛';
-    /// \u{1f21c}: '🈜'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_524D: char = '🈜';
-    /// \u{1f21d}: '🈝'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5F8C: char = '🈝';
-    /// \u{1f21e}: '🈞'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_518D: char = '🈞';
-    /// \u{1f21f}: '🈟'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_65B0: char = '🈟';
-    /// \u{1f220}: '🈠'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_521D: char = '🈠';
-    /// \u{1f221}: '🈡'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7D42: char = '🈡';
-    /// \u{1f222}: '🈢'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_751F: char = '🈢';
-    /// \u{1f223}: '🈣'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_8CA9: char = '🈣';
-    /// \u{1f224}: '🈤'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_58F0: char = '🈤';
-    /// \u{1f225}: '🈥'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5439: char = '🈥';
-    /// \u{1f226}: '🈦'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6F14: char = '🈦';
-    /// \u{1f227}: '🈧'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6295: char = '🈧';
-    /// \u{1f228}: '🈨'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6355: char = '🈨';
-    /// \u{1f229}: '🈩'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E00: char = '🈩';
-    /// \u{1f22a}: '🈪'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E09: char = '🈪';
-    /// \u{1f22b}: '🈫'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_904A: char = '🈫';
-    /// \u{1f22c}: '🈬'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5DE6: char = '🈬';
-    /// \u{1f22d}: '🈭'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E2D: char = '🈭';
-    /// \u{1f22e}: '🈮'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_53F3: char = '🈮';
-    /// \u{1f22f}: '🈯'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6307: char = '🈯';
-    /// \u{1f230}: '🈰'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_8D70: char = '🈰';
-    /// \u{1f231}: '🈱'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6253: char = '🈱';
-    /// \u{1f232}: '🈲'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7981: char = '🈲';
-    /// \u{1f233}: '🈳'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7A7A: char = '🈳';
-    /// \u{1f234}: '🈴'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5408: char = '🈴';
-    /// \u{1f235}: '🈵'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6E80: char = '🈵';
-    /// \u{1f236}: '🈶'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6709: char = '🈶';
-    /// \u{1f237}: '🈷'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6708: char = '🈷';
-    /// \u{1f238}: '🈸'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7533: char = '🈸';
-    /// \u{1f239}: '🈹'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5272: char = '🈹';
-    /// \u{1f23a}: '🈺'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_55B6: char = '🈺';
-    /// \u{1f23b}: '🈻'
-    pub const SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_914D: char = '🈻';
-    /// \u{1f240}: '🉀'
-    pub const TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_672C: char = '🉀';
-    /// \u{1f241}: '🉁'
-    pub const TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_4E09: char = '🉁';
-    /// \u{1f242}: '🉂'
-    pub const TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_4E8C: char = '🉂';
-    /// \u{1f243}: '🉃'
-    pub const TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_5B89: char = '🉃';
-    /// \u{1f244}: '🉄'
-    pub const TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_70B9: char = '🉄';
-    /// \u{1f245}: '🉅'
-    pub const TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_6253: char = '🉅';
-    /// \u{1f246}: '🉆'
-    pub const TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_76D7: char = '🉆';
-    /// \u{1f247}: '🉇'
-    pub const TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_52DD: char = '🉇';
-    /// \u{1f248}: '🉈'
-    pub const TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_6557: char = '🉈';
-    /// \u{1f250}: '🉐'
-    pub const CIRCLED_IDEOGRAPH_ADVANTAGE: char = '🉐';
-    /// \u{1f251}: '🉑'
-    pub const CIRCLED_IDEOGRAPH_ACCEPT: char = '🉑';
-    /// \u{1f260}: '🉠'
-    pub const ROUNDED_SYMBOL_FOR_FU: char = '🉠';
-    /// \u{1f261}: '🉡'
-    pub const ROUNDED_SYMBOL_FOR_LU: char = '🉡';
-    /// \u{1f262}: '🉢'
-    pub const ROUNDED_SYMBOL_FOR_SHOU: char = '🉢';
-    /// \u{1f263}: '🉣'
-    pub const ROUNDED_SYMBOL_FOR_XI: char = '🉣';
-    /// \u{1f264}: '🉤'
-    pub const ROUNDED_SYMBOL_FOR_SHUANGXI: char = '🉤';
-    /// \u{1f265}: '🉥'
-    pub const ROUNDED_SYMBOL_FOR_CAI: char = '🉥';
-}
 
 /// An enum to represent all characters in the EnclosedIdeographicSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -265,72 +134,71 @@ pub enum EnclosedIdeographicSupplement {
 
 impl Into<char> for EnclosedIdeographicSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            EnclosedIdeographicSupplement::SquareHiraganaHoka => SQUARE_HIRAGANA_HOKA,
-            EnclosedIdeographicSupplement::SquaredKatakanaKoko => SQUARED_KATAKANA_KOKO,
-            EnclosedIdeographicSupplement::SquaredKatakanaSa => SQUARED_KATAKANA_SA,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash624b => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_624B,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5b57 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5B57,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash53cc => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_53CC,
-            EnclosedIdeographicSupplement::SquaredKatakanaDe => SQUARED_KATAKANA_DE,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e8c => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E8C,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash591a => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_591A,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash89e3 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_89E3,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5929 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5929,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4ea4 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4EA4,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6620 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6620,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7121 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7121,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6599 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6599,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash524d => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_524D,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5f8c => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5F8C,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash518d => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_518D,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash65b0 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_65B0,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash521d => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_521D,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7d42 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7D42,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash751f => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_751F,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash8ca9 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_8CA9,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash58f0 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_58F0,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5439 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5439,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6f14 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6F14,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6295 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6295,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6355 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6355,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e00 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E00,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e09 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E09,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash904a => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_904A,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5de6 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5DE6,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e2d => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E2D,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash53f3 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_53F3,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6307 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6307,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash8d70 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_8D70,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6253 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6253,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7981 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7981,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7a7a => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7A7A,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5408 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5408,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6e80 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6E80,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6709 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6709,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6708 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6708,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7533 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7533,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5272 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5272,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash55b6 => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_55B6,
-            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash914d => SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_914D,
-            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash672c => TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_672C,
-            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash4e09 => TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_4E09,
-            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash4e8c => TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_4E8C,
-            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash5b89 => TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_5B89,
-            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash70b9 => TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_70B9,
-            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash6253 => TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_6253,
-            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash76d7 => TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_76D7,
-            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash52dd => TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_52DD,
-            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash6557 => TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_6557,
-            EnclosedIdeographicSupplement::CircledIdeographAdvantage => CIRCLED_IDEOGRAPH_ADVANTAGE,
-            EnclosedIdeographicSupplement::CircledIdeographAccept => CIRCLED_IDEOGRAPH_ACCEPT,
-            EnclosedIdeographicSupplement::RoundedSymbolForFu => ROUNDED_SYMBOL_FOR_FU,
-            EnclosedIdeographicSupplement::RoundedSymbolForLu => ROUNDED_SYMBOL_FOR_LU,
-            EnclosedIdeographicSupplement::RoundedSymbolForShou => ROUNDED_SYMBOL_FOR_SHOU,
-            EnclosedIdeographicSupplement::RoundedSymbolForXi => ROUNDED_SYMBOL_FOR_XI,
-            EnclosedIdeographicSupplement::RoundedSymbolForShuangxi => ROUNDED_SYMBOL_FOR_SHUANGXI,
-            EnclosedIdeographicSupplement::RoundedSymbolForCai => ROUNDED_SYMBOL_FOR_CAI,
+            EnclosedIdeographicSupplement::SquareHiraganaHoka => '🈀',
+            EnclosedIdeographicSupplement::SquaredKatakanaKoko => '🈁',
+            EnclosedIdeographicSupplement::SquaredKatakanaSa => '🈂',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash624b => '🈐',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5b57 => '🈑',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash53cc => '🈒',
+            EnclosedIdeographicSupplement::SquaredKatakanaDe => '🈓',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e8c => '🈔',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash591a => '🈕',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash89e3 => '🈖',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5929 => '🈗',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4ea4 => '🈘',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6620 => '🈙',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7121 => '🈚',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6599 => '🈛',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash524d => '🈜',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5f8c => '🈝',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash518d => '🈞',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash65b0 => '🈟',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash521d => '🈠',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7d42 => '🈡',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash751f => '🈢',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash8ca9 => '🈣',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash58f0 => '🈤',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5439 => '🈥',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6f14 => '🈦',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6295 => '🈧',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6355 => '🈨',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e00 => '🈩',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e09 => '🈪',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash904a => '🈫',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5de6 => '🈬',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e2d => '🈭',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash53f3 => '🈮',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6307 => '🈯',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash8d70 => '🈰',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6253 => '🈱',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7981 => '🈲',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7a7a => '🈳',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5408 => '🈴',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6e80 => '🈵',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6709 => '🈶',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6708 => '🈷',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7533 => '🈸',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5272 => '🈹',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash55b6 => '🈺',
+            EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash914d => '🈻',
+            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash672c => '🉀',
+            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash4e09 => '🉁',
+            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash4e8c => '🉂',
+            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash5b89 => '🉃',
+            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash70b9 => '🉄',
+            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash6253 => '🉅',
+            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash76d7 => '🉆',
+            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash52dd => '🉇',
+            EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash6557 => '🉈',
+            EnclosedIdeographicSupplement::CircledIdeographAdvantage => '🉐',
+            EnclosedIdeographicSupplement::CircledIdeographAccept => '🉑',
+            EnclosedIdeographicSupplement::RoundedSymbolForFu => '🉠',
+            EnclosedIdeographicSupplement::RoundedSymbolForLu => '🉡',
+            EnclosedIdeographicSupplement::RoundedSymbolForShou => '🉢',
+            EnclosedIdeographicSupplement::RoundedSymbolForXi => '🉣',
+            EnclosedIdeographicSupplement::RoundedSymbolForShuangxi => '🉤',
+            EnclosedIdeographicSupplement::RoundedSymbolForCai => '🉥',
         }
     }
 }
@@ -338,72 +206,71 @@ impl Into<char> for EnclosedIdeographicSupplement {
 impl std::convert::TryFrom<char> for EnclosedIdeographicSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SQUARE_HIRAGANA_HOKA => Ok(EnclosedIdeographicSupplement::SquareHiraganaHoka),
-            SQUARED_KATAKANA_KOKO => Ok(EnclosedIdeographicSupplement::SquaredKatakanaKoko),
-            SQUARED_KATAKANA_SA => Ok(EnclosedIdeographicSupplement::SquaredKatakanaSa),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_624B => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash624b),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5B57 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5b57),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_53CC => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash53cc),
-            SQUARED_KATAKANA_DE => Ok(EnclosedIdeographicSupplement::SquaredKatakanaDe),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E8C => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e8c),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_591A => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash591a),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_89E3 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash89e3),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5929 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5929),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4EA4 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4ea4),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6620 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6620),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7121 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7121),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6599 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6599),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_524D => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash524d),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5F8C => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5f8c),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_518D => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash518d),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_65B0 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash65b0),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_521D => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash521d),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7D42 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7d42),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_751F => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash751f),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_8CA9 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash8ca9),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_58F0 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash58f0),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5439 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5439),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6F14 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6f14),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6295 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6295),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6355 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6355),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E00 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e00),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E09 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e09),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_904A => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash904a),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5DE6 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5de6),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_4E2D => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e2d),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_53F3 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash53f3),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6307 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6307),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_8D70 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash8d70),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6253 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6253),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7981 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7981),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7A7A => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7a7a),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5408 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5408),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6E80 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6e80),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6709 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6709),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_6708 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6708),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_7533 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7533),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_5272 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5272),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_55B6 => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash55b6),
-            SQUARED_CJK_UNIFIED_IDEOGRAPH_DASH_914D => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash914d),
-            TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_672C => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash672c),
-            TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_4E09 => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash4e09),
-            TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_4E8C => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash4e8c),
-            TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_5B89 => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash5b89),
-            TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_70B9 => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash70b9),
-            TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_6253 => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash6253),
-            TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_76D7 => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash76d7),
-            TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_52DD => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash52dd),
-            TORTOISE_SHELL_BRACKETED_CJK_UNIFIED_IDEOGRAPH_DASH_6557 => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash6557),
-            CIRCLED_IDEOGRAPH_ADVANTAGE => Ok(EnclosedIdeographicSupplement::CircledIdeographAdvantage),
-            CIRCLED_IDEOGRAPH_ACCEPT => Ok(EnclosedIdeographicSupplement::CircledIdeographAccept),
-            ROUNDED_SYMBOL_FOR_FU => Ok(EnclosedIdeographicSupplement::RoundedSymbolForFu),
-            ROUNDED_SYMBOL_FOR_LU => Ok(EnclosedIdeographicSupplement::RoundedSymbolForLu),
-            ROUNDED_SYMBOL_FOR_SHOU => Ok(EnclosedIdeographicSupplement::RoundedSymbolForShou),
-            ROUNDED_SYMBOL_FOR_XI => Ok(EnclosedIdeographicSupplement::RoundedSymbolForXi),
-            ROUNDED_SYMBOL_FOR_SHUANGXI => Ok(EnclosedIdeographicSupplement::RoundedSymbolForShuangxi),
-            ROUNDED_SYMBOL_FOR_CAI => Ok(EnclosedIdeographicSupplement::RoundedSymbolForCai),
+            '🈀' => Ok(EnclosedIdeographicSupplement::SquareHiraganaHoka),
+            '🈁' => Ok(EnclosedIdeographicSupplement::SquaredKatakanaKoko),
+            '🈂' => Ok(EnclosedIdeographicSupplement::SquaredKatakanaSa),
+            '🈐' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash624b),
+            '🈑' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5b57),
+            '🈒' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash53cc),
+            '🈓' => Ok(EnclosedIdeographicSupplement::SquaredKatakanaDe),
+            '🈔' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e8c),
+            '🈕' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash591a),
+            '🈖' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash89e3),
+            '🈗' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5929),
+            '🈘' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4ea4),
+            '🈙' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6620),
+            '🈚' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7121),
+            '🈛' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6599),
+            '🈜' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash524d),
+            '🈝' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5f8c),
+            '🈞' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash518d),
+            '🈟' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash65b0),
+            '🈠' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash521d),
+            '🈡' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7d42),
+            '🈢' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash751f),
+            '🈣' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash8ca9),
+            '🈤' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash58f0),
+            '🈥' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5439),
+            '🈦' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6f14),
+            '🈧' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6295),
+            '🈨' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6355),
+            '🈩' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e00),
+            '🈪' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e09),
+            '🈫' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash904a),
+            '🈬' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5de6),
+            '🈭' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash4e2d),
+            '🈮' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash53f3),
+            '🈯' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6307),
+            '🈰' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash8d70),
+            '🈱' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6253),
+            '🈲' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7981),
+            '🈳' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7a7a),
+            '🈴' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5408),
+            '🈵' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6e80),
+            '🈶' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6709),
+            '🈷' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash6708),
+            '🈸' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash7533),
+            '🈹' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash5272),
+            '🈺' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash55b6),
+            '🈻' => Ok(EnclosedIdeographicSupplement::SquaredCjkUnifiedIdeographDash914d),
+            '🉀' => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash672c),
+            '🉁' => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash4e09),
+            '🉂' => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash4e8c),
+            '🉃' => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash5b89),
+            '🉄' => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash70b9),
+            '🉅' => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash6253),
+            '🉆' => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash76d7),
+            '🉇' => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash52dd),
+            '🉈' => Ok(EnclosedIdeographicSupplement::TortoiseShellBracketedCjkUnifiedIdeographDash6557),
+            '🉐' => Ok(EnclosedIdeographicSupplement::CircledIdeographAdvantage),
+            '🉑' => Ok(EnclosedIdeographicSupplement::CircledIdeographAccept),
+            '🉠' => Ok(EnclosedIdeographicSupplement::RoundedSymbolForFu),
+            '🉡' => Ok(EnclosedIdeographicSupplement::RoundedSymbolForLu),
+            '🉢' => Ok(EnclosedIdeographicSupplement::RoundedSymbolForShou),
+            '🉣' => Ok(EnclosedIdeographicSupplement::RoundedSymbolForXi),
+            '🉤' => Ok(EnclosedIdeographicSupplement::RoundedSymbolForShuangxi),
+            '🉥' => Ok(EnclosedIdeographicSupplement::RoundedSymbolForCai),
             _ => Err(()),
         }
     }

@@ -1,46 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1d2e0}: '𝋠'
-    pub const MAYAN_NUMERAL_ZERO: char = '𝋠';
-    /// \u{1d2e1}: '𝋡'
-    pub const MAYAN_NUMERAL_ONE: char = '𝋡';
-    /// \u{1d2e2}: '𝋢'
-    pub const MAYAN_NUMERAL_TWO: char = '𝋢';
-    /// \u{1d2e3}: '𝋣'
-    pub const MAYAN_NUMERAL_THREE: char = '𝋣';
-    /// \u{1d2e4}: '𝋤'
-    pub const MAYAN_NUMERAL_FOUR: char = '𝋤';
-    /// \u{1d2e5}: '𝋥'
-    pub const MAYAN_NUMERAL_FIVE: char = '𝋥';
-    /// \u{1d2e6}: '𝋦'
-    pub const MAYAN_NUMERAL_SIX: char = '𝋦';
-    /// \u{1d2e7}: '𝋧'
-    pub const MAYAN_NUMERAL_SEVEN: char = '𝋧';
-    /// \u{1d2e8}: '𝋨'
-    pub const MAYAN_NUMERAL_EIGHT: char = '𝋨';
-    /// \u{1d2e9}: '𝋩'
-    pub const MAYAN_NUMERAL_NINE: char = '𝋩';
-    /// \u{1d2ea}: '𝋪'
-    pub const MAYAN_NUMERAL_TEN: char = '𝋪';
-    /// \u{1d2eb}: '𝋫'
-    pub const MAYAN_NUMERAL_ELEVEN: char = '𝋫';
-    /// \u{1d2ec}: '𝋬'
-    pub const MAYAN_NUMERAL_TWELVE: char = '𝋬';
-    /// \u{1d2ed}: '𝋭'
-    pub const MAYAN_NUMERAL_THIRTEEN: char = '𝋭';
-    /// \u{1d2ee}: '𝋮'
-    pub const MAYAN_NUMERAL_FOURTEEN: char = '𝋮';
-    /// \u{1d2ef}: '𝋯'
-    pub const MAYAN_NUMERAL_FIFTEEN: char = '𝋯';
-    /// \u{1d2f0}: '𝋰'
-    pub const MAYAN_NUMERAL_SIXTEEN: char = '𝋰';
-    /// \u{1d2f1}: '𝋱'
-    pub const MAYAN_NUMERAL_SEVENTEEN: char = '𝋱';
-    /// \u{1d2f2}: '𝋲'
-    pub const MAYAN_NUMERAL_EIGHTEEN: char = '𝋲';
-    /// \u{1d2f3}: '𝋳'
-    pub const MAYAN_NUMERAL_NINETEEN: char = '𝋳';
-}
 
 /// An enum to represent all characters in the MayanNumerals block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -89,28 +46,27 @@ pub enum MayanNumerals {
 
 impl Into<char> for MayanNumerals {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MayanNumerals::MayanNumeralZero => MAYAN_NUMERAL_ZERO,
-            MayanNumerals::MayanNumeralOne => MAYAN_NUMERAL_ONE,
-            MayanNumerals::MayanNumeralTwo => MAYAN_NUMERAL_TWO,
-            MayanNumerals::MayanNumeralThree => MAYAN_NUMERAL_THREE,
-            MayanNumerals::MayanNumeralFour => MAYAN_NUMERAL_FOUR,
-            MayanNumerals::MayanNumeralFive => MAYAN_NUMERAL_FIVE,
-            MayanNumerals::MayanNumeralSix => MAYAN_NUMERAL_SIX,
-            MayanNumerals::MayanNumeralSeven => MAYAN_NUMERAL_SEVEN,
-            MayanNumerals::MayanNumeralEight => MAYAN_NUMERAL_EIGHT,
-            MayanNumerals::MayanNumeralNine => MAYAN_NUMERAL_NINE,
-            MayanNumerals::MayanNumeralTen => MAYAN_NUMERAL_TEN,
-            MayanNumerals::MayanNumeralEleven => MAYAN_NUMERAL_ELEVEN,
-            MayanNumerals::MayanNumeralTwelve => MAYAN_NUMERAL_TWELVE,
-            MayanNumerals::MayanNumeralThirteen => MAYAN_NUMERAL_THIRTEEN,
-            MayanNumerals::MayanNumeralFourteen => MAYAN_NUMERAL_FOURTEEN,
-            MayanNumerals::MayanNumeralFifteen => MAYAN_NUMERAL_FIFTEEN,
-            MayanNumerals::MayanNumeralSixteen => MAYAN_NUMERAL_SIXTEEN,
-            MayanNumerals::MayanNumeralSeventeen => MAYAN_NUMERAL_SEVENTEEN,
-            MayanNumerals::MayanNumeralEighteen => MAYAN_NUMERAL_EIGHTEEN,
-            MayanNumerals::MayanNumeralNineteen => MAYAN_NUMERAL_NINETEEN,
+            MayanNumerals::MayanNumeralZero => '𝋠',
+            MayanNumerals::MayanNumeralOne => '𝋡',
+            MayanNumerals::MayanNumeralTwo => '𝋢',
+            MayanNumerals::MayanNumeralThree => '𝋣',
+            MayanNumerals::MayanNumeralFour => '𝋤',
+            MayanNumerals::MayanNumeralFive => '𝋥',
+            MayanNumerals::MayanNumeralSix => '𝋦',
+            MayanNumerals::MayanNumeralSeven => '𝋧',
+            MayanNumerals::MayanNumeralEight => '𝋨',
+            MayanNumerals::MayanNumeralNine => '𝋩',
+            MayanNumerals::MayanNumeralTen => '𝋪',
+            MayanNumerals::MayanNumeralEleven => '𝋫',
+            MayanNumerals::MayanNumeralTwelve => '𝋬',
+            MayanNumerals::MayanNumeralThirteen => '𝋭',
+            MayanNumerals::MayanNumeralFourteen => '𝋮',
+            MayanNumerals::MayanNumeralFifteen => '𝋯',
+            MayanNumerals::MayanNumeralSixteen => '𝋰',
+            MayanNumerals::MayanNumeralSeventeen => '𝋱',
+            MayanNumerals::MayanNumeralEighteen => '𝋲',
+            MayanNumerals::MayanNumeralNineteen => '𝋳',
         }
     }
 }
@@ -118,28 +74,27 @@ impl Into<char> for MayanNumerals {
 impl std::convert::TryFrom<char> for MayanNumerals {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            MAYAN_NUMERAL_ZERO => Ok(MayanNumerals::MayanNumeralZero),
-            MAYAN_NUMERAL_ONE => Ok(MayanNumerals::MayanNumeralOne),
-            MAYAN_NUMERAL_TWO => Ok(MayanNumerals::MayanNumeralTwo),
-            MAYAN_NUMERAL_THREE => Ok(MayanNumerals::MayanNumeralThree),
-            MAYAN_NUMERAL_FOUR => Ok(MayanNumerals::MayanNumeralFour),
-            MAYAN_NUMERAL_FIVE => Ok(MayanNumerals::MayanNumeralFive),
-            MAYAN_NUMERAL_SIX => Ok(MayanNumerals::MayanNumeralSix),
-            MAYAN_NUMERAL_SEVEN => Ok(MayanNumerals::MayanNumeralSeven),
-            MAYAN_NUMERAL_EIGHT => Ok(MayanNumerals::MayanNumeralEight),
-            MAYAN_NUMERAL_NINE => Ok(MayanNumerals::MayanNumeralNine),
-            MAYAN_NUMERAL_TEN => Ok(MayanNumerals::MayanNumeralTen),
-            MAYAN_NUMERAL_ELEVEN => Ok(MayanNumerals::MayanNumeralEleven),
-            MAYAN_NUMERAL_TWELVE => Ok(MayanNumerals::MayanNumeralTwelve),
-            MAYAN_NUMERAL_THIRTEEN => Ok(MayanNumerals::MayanNumeralThirteen),
-            MAYAN_NUMERAL_FOURTEEN => Ok(MayanNumerals::MayanNumeralFourteen),
-            MAYAN_NUMERAL_FIFTEEN => Ok(MayanNumerals::MayanNumeralFifteen),
-            MAYAN_NUMERAL_SIXTEEN => Ok(MayanNumerals::MayanNumeralSixteen),
-            MAYAN_NUMERAL_SEVENTEEN => Ok(MayanNumerals::MayanNumeralSeventeen),
-            MAYAN_NUMERAL_EIGHTEEN => Ok(MayanNumerals::MayanNumeralEighteen),
-            MAYAN_NUMERAL_NINETEEN => Ok(MayanNumerals::MayanNumeralNineteen),
+            '𝋠' => Ok(MayanNumerals::MayanNumeralZero),
+            '𝋡' => Ok(MayanNumerals::MayanNumeralOne),
+            '𝋢' => Ok(MayanNumerals::MayanNumeralTwo),
+            '𝋣' => Ok(MayanNumerals::MayanNumeralThree),
+            '𝋤' => Ok(MayanNumerals::MayanNumeralFour),
+            '𝋥' => Ok(MayanNumerals::MayanNumeralFive),
+            '𝋦' => Ok(MayanNumerals::MayanNumeralSix),
+            '𝋧' => Ok(MayanNumerals::MayanNumeralSeven),
+            '𝋨' => Ok(MayanNumerals::MayanNumeralEight),
+            '𝋩' => Ok(MayanNumerals::MayanNumeralNine),
+            '𝋪' => Ok(MayanNumerals::MayanNumeralTen),
+            '𝋫' => Ok(MayanNumerals::MayanNumeralEleven),
+            '𝋬' => Ok(MayanNumerals::MayanNumeralTwelve),
+            '𝋭' => Ok(MayanNumerals::MayanNumeralThirteen),
+            '𝋮' => Ok(MayanNumerals::MayanNumeralFourteen),
+            '𝋯' => Ok(MayanNumerals::MayanNumeralFifteen),
+            '𝋰' => Ok(MayanNumerals::MayanNumeralSixteen),
+            '𝋱' => Ok(MayanNumerals::MayanNumeralSeventeen),
+            '𝋲' => Ok(MayanNumerals::MayanNumeralEighteen),
+            '𝋳' => Ok(MayanNumerals::MayanNumeralNineteen),
             _ => Err(()),
         }
     }

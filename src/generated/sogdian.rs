@@ -1,90 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10f30}: '𐼰'
-    pub const LETTER_ALEPH: char = '𐼰';
-    /// \u{10f31}: '𐼱'
-    pub const LETTER_BETH: char = '𐼱';
-    /// \u{10f32}: '𐼲'
-    pub const LETTER_GIMEL: char = '𐼲';
-    /// \u{10f33}: '𐼳'
-    pub const LETTER_HE: char = '𐼳';
-    /// \u{10f34}: '𐼴'
-    pub const LETTER_WAW: char = '𐼴';
-    /// \u{10f35}: '𐼵'
-    pub const LETTER_ZAYIN: char = '𐼵';
-    /// \u{10f36}: '𐼶'
-    pub const LETTER_HETH: char = '𐼶';
-    /// \u{10f37}: '𐼷'
-    pub const LETTER_YODH: char = '𐼷';
-    /// \u{10f38}: '𐼸'
-    pub const LETTER_KAPH: char = '𐼸';
-    /// \u{10f39}: '𐼹'
-    pub const LETTER_LAMEDH: char = '𐼹';
-    /// \u{10f3a}: '𐼺'
-    pub const LETTER_MEM: char = '𐼺';
-    /// \u{10f3b}: '𐼻'
-    pub const LETTER_NUN: char = '𐼻';
-    /// \u{10f3c}: '𐼼'
-    pub const LETTER_SAMEKH: char = '𐼼';
-    /// \u{10f3d}: '𐼽'
-    pub const LETTER_AYIN: char = '𐼽';
-    /// \u{10f3e}: '𐼾'
-    pub const LETTER_PE: char = '𐼾';
-    /// \u{10f3f}: '𐼿'
-    pub const LETTER_SADHE: char = '𐼿';
-    /// \u{10f40}: '𐽀'
-    pub const LETTER_RESH_DASH_AYIN: char = '𐽀';
-    /// \u{10f41}: '𐽁'
-    pub const LETTER_SHIN: char = '𐽁';
-    /// \u{10f42}: '𐽂'
-    pub const LETTER_TAW: char = '𐽂';
-    /// \u{10f43}: '𐽃'
-    pub const LETTER_FETH: char = '𐽃';
-    /// \u{10f44}: '𐽄'
-    pub const LETTER_LESH: char = '𐽄';
-    /// \u{10f45}: '𐽅'
-    pub const INDEPENDENT_SHIN: char = '𐽅';
-    /// \u{10f46}: '𐽆'
-    pub const COMBINING_DOT_BELOW: char = '𐽆';
-    /// \u{10f47}: '𐽇'
-    pub const COMBINING_TWO_DOTS_BELOW: char = '𐽇';
-    /// \u{10f48}: '𐽈'
-    pub const COMBINING_DOT_ABOVE: char = '𐽈';
-    /// \u{10f49}: '𐽉'
-    pub const COMBINING_TWO_DOTS_ABOVE: char = '𐽉';
-    /// \u{10f4a}: '𐽊'
-    pub const COMBINING_CURVE_ABOVE: char = '𐽊';
-    /// \u{10f4b}: '𐽋'
-    pub const COMBINING_CURVE_BELOW: char = '𐽋';
-    /// \u{10f4c}: '𐽌'
-    pub const COMBINING_HOOK_ABOVE: char = '𐽌';
-    /// \u{10f4d}: '𐽍'
-    pub const COMBINING_HOOK_BELOW: char = '𐽍';
-    /// \u{10f4e}: '𐽎'
-    pub const COMBINING_LONG_HOOK_BELOW: char = '𐽎';
-    /// \u{10f4f}: '𐽏'
-    pub const COMBINING_RESH_BELOW: char = '𐽏';
-    /// \u{10f50}: '𐽐'
-    pub const COMBINING_STROKE_BELOW: char = '𐽐';
-    /// \u{10f51}: '𐽑'
-    pub const NUMBER_ONE: char = '𐽑';
-    /// \u{10f52}: '𐽒'
-    pub const NUMBER_TEN: char = '𐽒';
-    /// \u{10f53}: '𐽓'
-    pub const NUMBER_TWENTY: char = '𐽓';
-    /// \u{10f54}: '𐽔'
-    pub const NUMBER_ONE_HUNDRED: char = '𐽔';
-    /// \u{10f55}: '𐽕'
-    pub const PUNCTUATION_TWO_VERTICAL_BARS: char = '𐽕';
-    /// \u{10f56}: '𐽖'
-    pub const PUNCTUATION_TWO_VERTICAL_BARS_WITH_DOTS: char = '𐽖';
-    /// \u{10f57}: '𐽗'
-    pub const PUNCTUATION_CIRCLE_WITH_DOT: char = '𐽗';
-    /// \u{10f58}: '𐽘'
-    pub const PUNCTUATION_TWO_CIRCLES_WITH_DOTS: char = '𐽘';
-    /// \u{10f59}: '𐽙'
-    pub const PUNCTUATION_HALF_CIRCLE_WITH_DOT: char = '𐽙';
-}
 
 /// An enum to represent all characters in the Sogdian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -177,50 +90,49 @@ pub enum Sogdian {
 
 impl Into<char> for Sogdian {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Sogdian::LetterAleph => LETTER_ALEPH,
-            Sogdian::LetterBeth => LETTER_BETH,
-            Sogdian::LetterGimel => LETTER_GIMEL,
-            Sogdian::LetterHe => LETTER_HE,
-            Sogdian::LetterWaw => LETTER_WAW,
-            Sogdian::LetterZayin => LETTER_ZAYIN,
-            Sogdian::LetterHeth => LETTER_HETH,
-            Sogdian::LetterYodh => LETTER_YODH,
-            Sogdian::LetterKaph => LETTER_KAPH,
-            Sogdian::LetterLamedh => LETTER_LAMEDH,
-            Sogdian::LetterMem => LETTER_MEM,
-            Sogdian::LetterNun => LETTER_NUN,
-            Sogdian::LetterSamekh => LETTER_SAMEKH,
-            Sogdian::LetterAyin => LETTER_AYIN,
-            Sogdian::LetterPe => LETTER_PE,
-            Sogdian::LetterSadhe => LETTER_SADHE,
-            Sogdian::LetterReshDashAyin => LETTER_RESH_DASH_AYIN,
-            Sogdian::LetterShin => LETTER_SHIN,
-            Sogdian::LetterTaw => LETTER_TAW,
-            Sogdian::LetterFeth => LETTER_FETH,
-            Sogdian::LetterLesh => LETTER_LESH,
-            Sogdian::IndependentShin => INDEPENDENT_SHIN,
-            Sogdian::CombiningDotBelow => COMBINING_DOT_BELOW,
-            Sogdian::CombiningTwoDotsBelow => COMBINING_TWO_DOTS_BELOW,
-            Sogdian::CombiningDotAbove => COMBINING_DOT_ABOVE,
-            Sogdian::CombiningTwoDotsAbove => COMBINING_TWO_DOTS_ABOVE,
-            Sogdian::CombiningCurveAbove => COMBINING_CURVE_ABOVE,
-            Sogdian::CombiningCurveBelow => COMBINING_CURVE_BELOW,
-            Sogdian::CombiningHookAbove => COMBINING_HOOK_ABOVE,
-            Sogdian::CombiningHookBelow => COMBINING_HOOK_BELOW,
-            Sogdian::CombiningLongHookBelow => COMBINING_LONG_HOOK_BELOW,
-            Sogdian::CombiningReshBelow => COMBINING_RESH_BELOW,
-            Sogdian::CombiningStrokeBelow => COMBINING_STROKE_BELOW,
-            Sogdian::NumberOne => NUMBER_ONE,
-            Sogdian::NumberTen => NUMBER_TEN,
-            Sogdian::NumberTwenty => NUMBER_TWENTY,
-            Sogdian::NumberOneHundred => NUMBER_ONE_HUNDRED,
-            Sogdian::PunctuationTwoVerticalBars => PUNCTUATION_TWO_VERTICAL_BARS,
-            Sogdian::PunctuationTwoVerticalBarsWithDots => PUNCTUATION_TWO_VERTICAL_BARS_WITH_DOTS,
-            Sogdian::PunctuationCircleWithDot => PUNCTUATION_CIRCLE_WITH_DOT,
-            Sogdian::PunctuationTwoCirclesWithDots => PUNCTUATION_TWO_CIRCLES_WITH_DOTS,
-            Sogdian::PunctuationHalfCircleWithDot => PUNCTUATION_HALF_CIRCLE_WITH_DOT,
+            Sogdian::LetterAleph => '𐼰',
+            Sogdian::LetterBeth => '𐼱',
+            Sogdian::LetterGimel => '𐼲',
+            Sogdian::LetterHe => '𐼳',
+            Sogdian::LetterWaw => '𐼴',
+            Sogdian::LetterZayin => '𐼵',
+            Sogdian::LetterHeth => '𐼶',
+            Sogdian::LetterYodh => '𐼷',
+            Sogdian::LetterKaph => '𐼸',
+            Sogdian::LetterLamedh => '𐼹',
+            Sogdian::LetterMem => '𐼺',
+            Sogdian::LetterNun => '𐼻',
+            Sogdian::LetterSamekh => '𐼼',
+            Sogdian::LetterAyin => '𐼽',
+            Sogdian::LetterPe => '𐼾',
+            Sogdian::LetterSadhe => '𐼿',
+            Sogdian::LetterReshDashAyin => '𐽀',
+            Sogdian::LetterShin => '𐽁',
+            Sogdian::LetterTaw => '𐽂',
+            Sogdian::LetterFeth => '𐽃',
+            Sogdian::LetterLesh => '𐽄',
+            Sogdian::IndependentShin => '𐽅',
+            Sogdian::CombiningDotBelow => '𐽆',
+            Sogdian::CombiningTwoDotsBelow => '𐽇',
+            Sogdian::CombiningDotAbove => '𐽈',
+            Sogdian::CombiningTwoDotsAbove => '𐽉',
+            Sogdian::CombiningCurveAbove => '𐽊',
+            Sogdian::CombiningCurveBelow => '𐽋',
+            Sogdian::CombiningHookAbove => '𐽌',
+            Sogdian::CombiningHookBelow => '𐽍',
+            Sogdian::CombiningLongHookBelow => '𐽎',
+            Sogdian::CombiningReshBelow => '𐽏',
+            Sogdian::CombiningStrokeBelow => '𐽐',
+            Sogdian::NumberOne => '𐽑',
+            Sogdian::NumberTen => '𐽒',
+            Sogdian::NumberTwenty => '𐽓',
+            Sogdian::NumberOneHundred => '𐽔',
+            Sogdian::PunctuationTwoVerticalBars => '𐽕',
+            Sogdian::PunctuationTwoVerticalBarsWithDots => '𐽖',
+            Sogdian::PunctuationCircleWithDot => '𐽗',
+            Sogdian::PunctuationTwoCirclesWithDots => '𐽘',
+            Sogdian::PunctuationHalfCircleWithDot => '𐽙',
         }
     }
 }
@@ -228,50 +140,49 @@ impl Into<char> for Sogdian {
 impl std::convert::TryFrom<char> for Sogdian {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_ALEPH => Ok(Sogdian::LetterAleph),
-            LETTER_BETH => Ok(Sogdian::LetterBeth),
-            LETTER_GIMEL => Ok(Sogdian::LetterGimel),
-            LETTER_HE => Ok(Sogdian::LetterHe),
-            LETTER_WAW => Ok(Sogdian::LetterWaw),
-            LETTER_ZAYIN => Ok(Sogdian::LetterZayin),
-            LETTER_HETH => Ok(Sogdian::LetterHeth),
-            LETTER_YODH => Ok(Sogdian::LetterYodh),
-            LETTER_KAPH => Ok(Sogdian::LetterKaph),
-            LETTER_LAMEDH => Ok(Sogdian::LetterLamedh),
-            LETTER_MEM => Ok(Sogdian::LetterMem),
-            LETTER_NUN => Ok(Sogdian::LetterNun),
-            LETTER_SAMEKH => Ok(Sogdian::LetterSamekh),
-            LETTER_AYIN => Ok(Sogdian::LetterAyin),
-            LETTER_PE => Ok(Sogdian::LetterPe),
-            LETTER_SADHE => Ok(Sogdian::LetterSadhe),
-            LETTER_RESH_DASH_AYIN => Ok(Sogdian::LetterReshDashAyin),
-            LETTER_SHIN => Ok(Sogdian::LetterShin),
-            LETTER_TAW => Ok(Sogdian::LetterTaw),
-            LETTER_FETH => Ok(Sogdian::LetterFeth),
-            LETTER_LESH => Ok(Sogdian::LetterLesh),
-            INDEPENDENT_SHIN => Ok(Sogdian::IndependentShin),
-            COMBINING_DOT_BELOW => Ok(Sogdian::CombiningDotBelow),
-            COMBINING_TWO_DOTS_BELOW => Ok(Sogdian::CombiningTwoDotsBelow),
-            COMBINING_DOT_ABOVE => Ok(Sogdian::CombiningDotAbove),
-            COMBINING_TWO_DOTS_ABOVE => Ok(Sogdian::CombiningTwoDotsAbove),
-            COMBINING_CURVE_ABOVE => Ok(Sogdian::CombiningCurveAbove),
-            COMBINING_CURVE_BELOW => Ok(Sogdian::CombiningCurveBelow),
-            COMBINING_HOOK_ABOVE => Ok(Sogdian::CombiningHookAbove),
-            COMBINING_HOOK_BELOW => Ok(Sogdian::CombiningHookBelow),
-            COMBINING_LONG_HOOK_BELOW => Ok(Sogdian::CombiningLongHookBelow),
-            COMBINING_RESH_BELOW => Ok(Sogdian::CombiningReshBelow),
-            COMBINING_STROKE_BELOW => Ok(Sogdian::CombiningStrokeBelow),
-            NUMBER_ONE => Ok(Sogdian::NumberOne),
-            NUMBER_TEN => Ok(Sogdian::NumberTen),
-            NUMBER_TWENTY => Ok(Sogdian::NumberTwenty),
-            NUMBER_ONE_HUNDRED => Ok(Sogdian::NumberOneHundred),
-            PUNCTUATION_TWO_VERTICAL_BARS => Ok(Sogdian::PunctuationTwoVerticalBars),
-            PUNCTUATION_TWO_VERTICAL_BARS_WITH_DOTS => Ok(Sogdian::PunctuationTwoVerticalBarsWithDots),
-            PUNCTUATION_CIRCLE_WITH_DOT => Ok(Sogdian::PunctuationCircleWithDot),
-            PUNCTUATION_TWO_CIRCLES_WITH_DOTS => Ok(Sogdian::PunctuationTwoCirclesWithDots),
-            PUNCTUATION_HALF_CIRCLE_WITH_DOT => Ok(Sogdian::PunctuationHalfCircleWithDot),
+            '𐼰' => Ok(Sogdian::LetterAleph),
+            '𐼱' => Ok(Sogdian::LetterBeth),
+            '𐼲' => Ok(Sogdian::LetterGimel),
+            '𐼳' => Ok(Sogdian::LetterHe),
+            '𐼴' => Ok(Sogdian::LetterWaw),
+            '𐼵' => Ok(Sogdian::LetterZayin),
+            '𐼶' => Ok(Sogdian::LetterHeth),
+            '𐼷' => Ok(Sogdian::LetterYodh),
+            '𐼸' => Ok(Sogdian::LetterKaph),
+            '𐼹' => Ok(Sogdian::LetterLamedh),
+            '𐼺' => Ok(Sogdian::LetterMem),
+            '𐼻' => Ok(Sogdian::LetterNun),
+            '𐼼' => Ok(Sogdian::LetterSamekh),
+            '𐼽' => Ok(Sogdian::LetterAyin),
+            '𐼾' => Ok(Sogdian::LetterPe),
+            '𐼿' => Ok(Sogdian::LetterSadhe),
+            '𐽀' => Ok(Sogdian::LetterReshDashAyin),
+            '𐽁' => Ok(Sogdian::LetterShin),
+            '𐽂' => Ok(Sogdian::LetterTaw),
+            '𐽃' => Ok(Sogdian::LetterFeth),
+            '𐽄' => Ok(Sogdian::LetterLesh),
+            '𐽅' => Ok(Sogdian::IndependentShin),
+            '𐽆' => Ok(Sogdian::CombiningDotBelow),
+            '𐽇' => Ok(Sogdian::CombiningTwoDotsBelow),
+            '𐽈' => Ok(Sogdian::CombiningDotAbove),
+            '𐽉' => Ok(Sogdian::CombiningTwoDotsAbove),
+            '𐽊' => Ok(Sogdian::CombiningCurveAbove),
+            '𐽋' => Ok(Sogdian::CombiningCurveBelow),
+            '𐽌' => Ok(Sogdian::CombiningHookAbove),
+            '𐽍' => Ok(Sogdian::CombiningHookBelow),
+            '𐽎' => Ok(Sogdian::CombiningLongHookBelow),
+            '𐽏' => Ok(Sogdian::CombiningReshBelow),
+            '𐽐' => Ok(Sogdian::CombiningStrokeBelow),
+            '𐽑' => Ok(Sogdian::NumberOne),
+            '𐽒' => Ok(Sogdian::NumberTen),
+            '𐽓' => Ok(Sogdian::NumberTwenty),
+            '𐽔' => Ok(Sogdian::NumberOneHundred),
+            '𐽕' => Ok(Sogdian::PunctuationTwoVerticalBars),
+            '𐽖' => Ok(Sogdian::PunctuationTwoVerticalBarsWithDots),
+            '𐽗' => Ok(Sogdian::PunctuationCircleWithDot),
+            '𐽘' => Ok(Sogdian::PunctuationTwoCirclesWithDots),
+            '𐽙' => Ok(Sogdian::PunctuationHalfCircleWithDot),
             _ => Err(()),
         }
     }

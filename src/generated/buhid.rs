@@ -1,46 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1740}: 'ᝀ'
-    pub const LETTER_A: char = 'ᝀ';
-    /// \u{1741}: 'ᝁ'
-    pub const LETTER_I: char = 'ᝁ';
-    /// \u{1742}: 'ᝂ'
-    pub const LETTER_U: char = 'ᝂ';
-    /// \u{1743}: 'ᝃ'
-    pub const LETTER_KA: char = 'ᝃ';
-    /// \u{1744}: 'ᝄ'
-    pub const LETTER_GA: char = 'ᝄ';
-    /// \u{1745}: 'ᝅ'
-    pub const LETTER_NGA: char = 'ᝅ';
-    /// \u{1746}: 'ᝆ'
-    pub const LETTER_TA: char = 'ᝆ';
-    /// \u{1747}: 'ᝇ'
-    pub const LETTER_DA: char = 'ᝇ';
-    /// \u{1748}: 'ᝈ'
-    pub const LETTER_NA: char = 'ᝈ';
-    /// \u{1749}: 'ᝉ'
-    pub const LETTER_PA: char = 'ᝉ';
-    /// \u{174a}: 'ᝊ'
-    pub const LETTER_BA: char = 'ᝊ';
-    /// \u{174b}: 'ᝋ'
-    pub const LETTER_MA: char = 'ᝋ';
-    /// \u{174c}: 'ᝌ'
-    pub const LETTER_YA: char = 'ᝌ';
-    /// \u{174d}: 'ᝍ'
-    pub const LETTER_RA: char = 'ᝍ';
-    /// \u{174e}: 'ᝎ'
-    pub const LETTER_LA: char = 'ᝎ';
-    /// \u{174f}: 'ᝏ'
-    pub const LETTER_WA: char = 'ᝏ';
-    /// \u{1750}: 'ᝐ'
-    pub const LETTER_SA: char = 'ᝐ';
-    /// \u{1751}: 'ᝑ'
-    pub const LETTER_HA: char = 'ᝑ';
-    /// \u{1752}: 'ᝒ'
-    pub const VOWEL_SIGN_I: char = 'ᝒ';
-    /// \u{1753}: 'ᝓ'
-    pub const VOWEL_SIGN_U: char = 'ᝓ';
-}
 
 /// An enum to represent all characters in the Buhid block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -89,28 +46,27 @@ pub enum Buhid {
 
 impl Into<char> for Buhid {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Buhid::LetterA => LETTER_A,
-            Buhid::LetterI => LETTER_I,
-            Buhid::LetterU => LETTER_U,
-            Buhid::LetterKa => LETTER_KA,
-            Buhid::LetterGa => LETTER_GA,
-            Buhid::LetterNga => LETTER_NGA,
-            Buhid::LetterTa => LETTER_TA,
-            Buhid::LetterDa => LETTER_DA,
-            Buhid::LetterNa => LETTER_NA,
-            Buhid::LetterPa => LETTER_PA,
-            Buhid::LetterBa => LETTER_BA,
-            Buhid::LetterMa => LETTER_MA,
-            Buhid::LetterYa => LETTER_YA,
-            Buhid::LetterRa => LETTER_RA,
-            Buhid::LetterLa => LETTER_LA,
-            Buhid::LetterWa => LETTER_WA,
-            Buhid::LetterSa => LETTER_SA,
-            Buhid::LetterHa => LETTER_HA,
-            Buhid::VowelSignI => VOWEL_SIGN_I,
-            Buhid::VowelSignU => VOWEL_SIGN_U,
+            Buhid::LetterA => 'ᝀ',
+            Buhid::LetterI => 'ᝁ',
+            Buhid::LetterU => 'ᝂ',
+            Buhid::LetterKa => 'ᝃ',
+            Buhid::LetterGa => 'ᝄ',
+            Buhid::LetterNga => 'ᝅ',
+            Buhid::LetterTa => 'ᝆ',
+            Buhid::LetterDa => 'ᝇ',
+            Buhid::LetterNa => 'ᝈ',
+            Buhid::LetterPa => 'ᝉ',
+            Buhid::LetterBa => 'ᝊ',
+            Buhid::LetterMa => 'ᝋ',
+            Buhid::LetterYa => 'ᝌ',
+            Buhid::LetterRa => 'ᝍ',
+            Buhid::LetterLa => 'ᝎ',
+            Buhid::LetterWa => 'ᝏ',
+            Buhid::LetterSa => 'ᝐ',
+            Buhid::LetterHa => 'ᝑ',
+            Buhid::VowelSignI => 'ᝒ',
+            Buhid::VowelSignU => 'ᝓ',
         }
     }
 }
@@ -118,28 +74,27 @@ impl Into<char> for Buhid {
 impl std::convert::TryFrom<char> for Buhid {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Buhid::LetterA),
-            LETTER_I => Ok(Buhid::LetterI),
-            LETTER_U => Ok(Buhid::LetterU),
-            LETTER_KA => Ok(Buhid::LetterKa),
-            LETTER_GA => Ok(Buhid::LetterGa),
-            LETTER_NGA => Ok(Buhid::LetterNga),
-            LETTER_TA => Ok(Buhid::LetterTa),
-            LETTER_DA => Ok(Buhid::LetterDa),
-            LETTER_NA => Ok(Buhid::LetterNa),
-            LETTER_PA => Ok(Buhid::LetterPa),
-            LETTER_BA => Ok(Buhid::LetterBa),
-            LETTER_MA => Ok(Buhid::LetterMa),
-            LETTER_YA => Ok(Buhid::LetterYa),
-            LETTER_RA => Ok(Buhid::LetterRa),
-            LETTER_LA => Ok(Buhid::LetterLa),
-            LETTER_WA => Ok(Buhid::LetterWa),
-            LETTER_SA => Ok(Buhid::LetterSa),
-            LETTER_HA => Ok(Buhid::LetterHa),
-            VOWEL_SIGN_I => Ok(Buhid::VowelSignI),
-            VOWEL_SIGN_U => Ok(Buhid::VowelSignU),
+            'ᝀ' => Ok(Buhid::LetterA),
+            'ᝁ' => Ok(Buhid::LetterI),
+            'ᝂ' => Ok(Buhid::LetterU),
+            'ᝃ' => Ok(Buhid::LetterKa),
+            'ᝄ' => Ok(Buhid::LetterGa),
+            'ᝅ' => Ok(Buhid::LetterNga),
+            'ᝆ' => Ok(Buhid::LetterTa),
+            'ᝇ' => Ok(Buhid::LetterDa),
+            'ᝈ' => Ok(Buhid::LetterNa),
+            'ᝉ' => Ok(Buhid::LetterPa),
+            'ᝊ' => Ok(Buhid::LetterBa),
+            'ᝋ' => Ok(Buhid::LetterMa),
+            'ᝌ' => Ok(Buhid::LetterYa),
+            'ᝍ' => Ok(Buhid::LetterRa),
+            'ᝎ' => Ok(Buhid::LetterLa),
+            'ᝏ' => Ok(Buhid::LetterWa),
+            'ᝐ' => Ok(Buhid::LetterSa),
+            'ᝑ' => Ok(Buhid::LetterHa),
+            'ᝒ' => Ok(Buhid::VowelSignI),
+            'ᝓ' => Ok(Buhid::VowelSignU),
             _ => Err(()),
         }
     }

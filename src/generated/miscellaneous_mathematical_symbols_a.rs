@@ -1,100 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{27c0}: '⟀'
-    pub const THREE_DIMENSIONAL_ANGLE: char = '⟀';
-    /// \u{27c1}: '⟁'
-    pub const WHITE_TRIANGLE_CONTAINING_SMALL_WHITE_TRIANGLE: char = '⟁';
-    /// \u{27c2}: '⟂'
-    pub const PERPENDICULAR: char = '⟂';
-    /// \u{27c3}: '⟃'
-    pub const OPEN_SUBSET: char = '⟃';
-    /// \u{27c4}: '⟄'
-    pub const OPEN_SUPERSET: char = '⟄';
-    /// \u{27c5}: '⟅'
-    pub const LEFT_S_DASH_SHAPED_BAG_DELIMITER: char = '⟅';
-    /// \u{27c6}: '⟆'
-    pub const RIGHT_S_DASH_SHAPED_BAG_DELIMITER: char = '⟆';
-    /// \u{27c7}: '⟇'
-    pub const OR_WITH_DOT_INSIDE: char = '⟇';
-    /// \u{27c8}: '⟈'
-    pub const REVERSE_SOLIDUS_PRECEDING_SUBSET: char = '⟈';
-    /// \u{27c9}: '⟉'
-    pub const SUPERSET_PRECEDING_SOLIDUS: char = '⟉';
-    /// \u{27ca}: '⟊'
-    pub const VERTICAL_BAR_WITH_HORIZONTAL_STROKE: char = '⟊';
-    /// \u{27cb}: '⟋'
-    pub const MATHEMATICAL_RISING_DIAGONAL: char = '⟋';
-    /// \u{27cc}: '⟌'
-    pub const LONG_DIVISION: char = '⟌';
-    /// \u{27cd}: '⟍'
-    pub const MATHEMATICAL_FALLING_DIAGONAL: char = '⟍';
-    /// \u{27ce}: '⟎'
-    pub const SQUARED_LOGICAL_AND: char = '⟎';
-    /// \u{27cf}: '⟏'
-    pub const SQUARED_LOGICAL_OR: char = '⟏';
-    /// \u{27d0}: '⟐'
-    pub const WHITE_DIAMOND_WITH_CENTRED_DOT: char = '⟐';
-    /// \u{27d1}: '⟑'
-    pub const AND_WITH_DOT: char = '⟑';
-    /// \u{27d2}: '⟒'
-    pub const ELEMENT_OF_OPENING_UPWARDS: char = '⟒';
-    /// \u{27d3}: '⟓'
-    pub const LOWER_RIGHT_CORNER_WITH_DOT: char = '⟓';
-    /// \u{27d4}: '⟔'
-    pub const UPPER_LEFT_CORNER_WITH_DOT: char = '⟔';
-    /// \u{27d5}: '⟕'
-    pub const LEFT_OUTER_JOIN: char = '⟕';
-    /// \u{27d6}: '⟖'
-    pub const RIGHT_OUTER_JOIN: char = '⟖';
-    /// \u{27d7}: '⟗'
-    pub const FULL_OUTER_JOIN: char = '⟗';
-    /// \u{27d8}: '⟘'
-    pub const LARGE_UP_TACK: char = '⟘';
-    /// \u{27d9}: '⟙'
-    pub const LARGE_DOWN_TACK: char = '⟙';
-    /// \u{27da}: '⟚'
-    pub const LEFT_AND_RIGHT_DOUBLE_TURNSTILE: char = '⟚';
-    /// \u{27db}: '⟛'
-    pub const LEFT_AND_RIGHT_TACK: char = '⟛';
-    /// \u{27dc}: '⟜'
-    pub const LEFT_MULTIMAP: char = '⟜';
-    /// \u{27dd}: '⟝'
-    pub const LONG_RIGHT_TACK: char = '⟝';
-    /// \u{27de}: '⟞'
-    pub const LONG_LEFT_TACK: char = '⟞';
-    /// \u{27df}: '⟟'
-    pub const UP_TACK_WITH_CIRCLE_ABOVE: char = '⟟';
-    /// \u{27e0}: '⟠'
-    pub const LOZENGE_DIVIDED_BY_HORIZONTAL_RULE: char = '⟠';
-    /// \u{27e1}: '⟡'
-    pub const WHITE_CONCAVE_DASH_SIDED_DIAMOND: char = '⟡';
-    /// \u{27e2}: '⟢'
-    pub const WHITE_CONCAVE_DASH_SIDED_DIAMOND_WITH_LEFTWARDS_TICK: char = '⟢';
-    /// \u{27e3}: '⟣'
-    pub const WHITE_CONCAVE_DASH_SIDED_DIAMOND_WITH_RIGHTWARDS_TICK: char = '⟣';
-    /// \u{27e4}: '⟤'
-    pub const WHITE_SQUARE_WITH_LEFTWARDS_TICK: char = '⟤';
-    /// \u{27e5}: '⟥'
-    pub const WHITE_SQUARE_WITH_RIGHTWARDS_TICK: char = '⟥';
-    /// \u{27e6}: '⟦'
-    pub const MATHEMATICAL_LEFT_WHITE_SQUARE_BRACKET: char = '⟦';
-    /// \u{27e7}: '⟧'
-    pub const MATHEMATICAL_RIGHT_WHITE_SQUARE_BRACKET: char = '⟧';
-    /// \u{27e8}: '⟨'
-    pub const MATHEMATICAL_LEFT_ANGLE_BRACKET: char = '⟨';
-    /// \u{27e9}: '⟩'
-    pub const MATHEMATICAL_RIGHT_ANGLE_BRACKET: char = '⟩';
-    /// \u{27ea}: '⟪'
-    pub const MATHEMATICAL_LEFT_DOUBLE_ANGLE_BRACKET: char = '⟪';
-    /// \u{27eb}: '⟫'
-    pub const MATHEMATICAL_RIGHT_DOUBLE_ANGLE_BRACKET: char = '⟫';
-    /// \u{27ec}: '⟬'
-    pub const MATHEMATICAL_LEFT_WHITE_TORTOISE_SHELL_BRACKET: char = '⟬';
-    /// \u{27ed}: '⟭'
-    pub const MATHEMATICAL_RIGHT_WHITE_TORTOISE_SHELL_BRACKET: char = '⟭';
-    /// \u{27ee}: '⟮'
-    pub const MATHEMATICAL_LEFT_FLATTENED_PARENTHESIS: char = '⟮';
-}
 
 /// An enum to represent all characters in the MiscellaneousMathematicalSymbolsA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -197,55 +100,54 @@ pub enum MiscellaneousMathematicalSymbolsA {
 
 impl Into<char> for MiscellaneousMathematicalSymbolsA {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MiscellaneousMathematicalSymbolsA::ThreeDimensionalAngle => THREE_DIMENSIONAL_ANGLE,
-            MiscellaneousMathematicalSymbolsA::WhiteTriangleContainingSmallWhiteTriangle => WHITE_TRIANGLE_CONTAINING_SMALL_WHITE_TRIANGLE,
-            MiscellaneousMathematicalSymbolsA::Perpendicular => PERPENDICULAR,
-            MiscellaneousMathematicalSymbolsA::OpenSubset => OPEN_SUBSET,
-            MiscellaneousMathematicalSymbolsA::OpenSuperset => OPEN_SUPERSET,
-            MiscellaneousMathematicalSymbolsA::LeftSDashShapedBagDelimiter => LEFT_S_DASH_SHAPED_BAG_DELIMITER,
-            MiscellaneousMathematicalSymbolsA::RightSDashShapedBagDelimiter => RIGHT_S_DASH_SHAPED_BAG_DELIMITER,
-            MiscellaneousMathematicalSymbolsA::OrWithDotInside => OR_WITH_DOT_INSIDE,
-            MiscellaneousMathematicalSymbolsA::ReverseSolidusPrecedingSubset => REVERSE_SOLIDUS_PRECEDING_SUBSET,
-            MiscellaneousMathematicalSymbolsA::SupersetPrecedingSolidus => SUPERSET_PRECEDING_SOLIDUS,
-            MiscellaneousMathematicalSymbolsA::VerticalBarWithHorizontalStroke => VERTICAL_BAR_WITH_HORIZONTAL_STROKE,
-            MiscellaneousMathematicalSymbolsA::MathematicalRisingDiagonal => MATHEMATICAL_RISING_DIAGONAL,
-            MiscellaneousMathematicalSymbolsA::LongDivision => LONG_DIVISION,
-            MiscellaneousMathematicalSymbolsA::MathematicalFallingDiagonal => MATHEMATICAL_FALLING_DIAGONAL,
-            MiscellaneousMathematicalSymbolsA::SquaredLogicalAnd => SQUARED_LOGICAL_AND,
-            MiscellaneousMathematicalSymbolsA::SquaredLogicalOr => SQUARED_LOGICAL_OR,
-            MiscellaneousMathematicalSymbolsA::WhiteDiamondWithCentredDot => WHITE_DIAMOND_WITH_CENTRED_DOT,
-            MiscellaneousMathematicalSymbolsA::AndWithDot => AND_WITH_DOT,
-            MiscellaneousMathematicalSymbolsA::ElementOfOpeningUpwards => ELEMENT_OF_OPENING_UPWARDS,
-            MiscellaneousMathematicalSymbolsA::LowerRightCornerWithDot => LOWER_RIGHT_CORNER_WITH_DOT,
-            MiscellaneousMathematicalSymbolsA::UpperLeftCornerWithDot => UPPER_LEFT_CORNER_WITH_DOT,
-            MiscellaneousMathematicalSymbolsA::LeftOuterJoin => LEFT_OUTER_JOIN,
-            MiscellaneousMathematicalSymbolsA::RightOuterJoin => RIGHT_OUTER_JOIN,
-            MiscellaneousMathematicalSymbolsA::FullOuterJoin => FULL_OUTER_JOIN,
-            MiscellaneousMathematicalSymbolsA::LargeUpTack => LARGE_UP_TACK,
-            MiscellaneousMathematicalSymbolsA::LargeDownTack => LARGE_DOWN_TACK,
-            MiscellaneousMathematicalSymbolsA::LeftAndRightDoubleTurnstile => LEFT_AND_RIGHT_DOUBLE_TURNSTILE,
-            MiscellaneousMathematicalSymbolsA::LeftAndRightTack => LEFT_AND_RIGHT_TACK,
-            MiscellaneousMathematicalSymbolsA::LeftMultimap => LEFT_MULTIMAP,
-            MiscellaneousMathematicalSymbolsA::LongRightTack => LONG_RIGHT_TACK,
-            MiscellaneousMathematicalSymbolsA::LongLeftTack => LONG_LEFT_TACK,
-            MiscellaneousMathematicalSymbolsA::UpTackWithCircleAbove => UP_TACK_WITH_CIRCLE_ABOVE,
-            MiscellaneousMathematicalSymbolsA::LozengeDividedByHorizontalRule => LOZENGE_DIVIDED_BY_HORIZONTAL_RULE,
-            MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamond => WHITE_CONCAVE_DASH_SIDED_DIAMOND,
-            MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithLeftwardsTick => WHITE_CONCAVE_DASH_SIDED_DIAMOND_WITH_LEFTWARDS_TICK,
-            MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithRightwardsTick => WHITE_CONCAVE_DASH_SIDED_DIAMOND_WITH_RIGHTWARDS_TICK,
-            MiscellaneousMathematicalSymbolsA::WhiteSquareWithLeftwardsTick => WHITE_SQUARE_WITH_LEFTWARDS_TICK,
-            MiscellaneousMathematicalSymbolsA::WhiteSquareWithRightwardsTick => WHITE_SQUARE_WITH_RIGHTWARDS_TICK,
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteSquareBracket => MATHEMATICAL_LEFT_WHITE_SQUARE_BRACKET,
-            MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteSquareBracket => MATHEMATICAL_RIGHT_WHITE_SQUARE_BRACKET,
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftAngleBracket => MATHEMATICAL_LEFT_ANGLE_BRACKET,
-            MiscellaneousMathematicalSymbolsA::MathematicalRightAngleBracket => MATHEMATICAL_RIGHT_ANGLE_BRACKET,
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftDoubleAngleBracket => MATHEMATICAL_LEFT_DOUBLE_ANGLE_BRACKET,
-            MiscellaneousMathematicalSymbolsA::MathematicalRightDoubleAngleBracket => MATHEMATICAL_RIGHT_DOUBLE_ANGLE_BRACKET,
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteTortoiseShellBracket => MATHEMATICAL_LEFT_WHITE_TORTOISE_SHELL_BRACKET,
-            MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteTortoiseShellBracket => MATHEMATICAL_RIGHT_WHITE_TORTOISE_SHELL_BRACKET,
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftFlattenedParenthesis => MATHEMATICAL_LEFT_FLATTENED_PARENTHESIS,
+            MiscellaneousMathematicalSymbolsA::ThreeDimensionalAngle => '⟀',
+            MiscellaneousMathematicalSymbolsA::WhiteTriangleContainingSmallWhiteTriangle => '⟁',
+            MiscellaneousMathematicalSymbolsA::Perpendicular => '⟂',
+            MiscellaneousMathematicalSymbolsA::OpenSubset => '⟃',
+            MiscellaneousMathematicalSymbolsA::OpenSuperset => '⟄',
+            MiscellaneousMathematicalSymbolsA::LeftSDashShapedBagDelimiter => '⟅',
+            MiscellaneousMathematicalSymbolsA::RightSDashShapedBagDelimiter => '⟆',
+            MiscellaneousMathematicalSymbolsA::OrWithDotInside => '⟇',
+            MiscellaneousMathematicalSymbolsA::ReverseSolidusPrecedingSubset => '⟈',
+            MiscellaneousMathematicalSymbolsA::SupersetPrecedingSolidus => '⟉',
+            MiscellaneousMathematicalSymbolsA::VerticalBarWithHorizontalStroke => '⟊',
+            MiscellaneousMathematicalSymbolsA::MathematicalRisingDiagonal => '⟋',
+            MiscellaneousMathematicalSymbolsA::LongDivision => '⟌',
+            MiscellaneousMathematicalSymbolsA::MathematicalFallingDiagonal => '⟍',
+            MiscellaneousMathematicalSymbolsA::SquaredLogicalAnd => '⟎',
+            MiscellaneousMathematicalSymbolsA::SquaredLogicalOr => '⟏',
+            MiscellaneousMathematicalSymbolsA::WhiteDiamondWithCentredDot => '⟐',
+            MiscellaneousMathematicalSymbolsA::AndWithDot => '⟑',
+            MiscellaneousMathematicalSymbolsA::ElementOfOpeningUpwards => '⟒',
+            MiscellaneousMathematicalSymbolsA::LowerRightCornerWithDot => '⟓',
+            MiscellaneousMathematicalSymbolsA::UpperLeftCornerWithDot => '⟔',
+            MiscellaneousMathematicalSymbolsA::LeftOuterJoin => '⟕',
+            MiscellaneousMathematicalSymbolsA::RightOuterJoin => '⟖',
+            MiscellaneousMathematicalSymbolsA::FullOuterJoin => '⟗',
+            MiscellaneousMathematicalSymbolsA::LargeUpTack => '⟘',
+            MiscellaneousMathematicalSymbolsA::LargeDownTack => '⟙',
+            MiscellaneousMathematicalSymbolsA::LeftAndRightDoubleTurnstile => '⟚',
+            MiscellaneousMathematicalSymbolsA::LeftAndRightTack => '⟛',
+            MiscellaneousMathematicalSymbolsA::LeftMultimap => '⟜',
+            MiscellaneousMathematicalSymbolsA::LongRightTack => '⟝',
+            MiscellaneousMathematicalSymbolsA::LongLeftTack => '⟞',
+            MiscellaneousMathematicalSymbolsA::UpTackWithCircleAbove => '⟟',
+            MiscellaneousMathematicalSymbolsA::LozengeDividedByHorizontalRule => '⟠',
+            MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamond => '⟡',
+            MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithLeftwardsTick => '⟢',
+            MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithRightwardsTick => '⟣',
+            MiscellaneousMathematicalSymbolsA::WhiteSquareWithLeftwardsTick => '⟤',
+            MiscellaneousMathematicalSymbolsA::WhiteSquareWithRightwardsTick => '⟥',
+            MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteSquareBracket => '⟦',
+            MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteSquareBracket => '⟧',
+            MiscellaneousMathematicalSymbolsA::MathematicalLeftAngleBracket => '⟨',
+            MiscellaneousMathematicalSymbolsA::MathematicalRightAngleBracket => '⟩',
+            MiscellaneousMathematicalSymbolsA::MathematicalLeftDoubleAngleBracket => '⟪',
+            MiscellaneousMathematicalSymbolsA::MathematicalRightDoubleAngleBracket => '⟫',
+            MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteTortoiseShellBracket => '⟬',
+            MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteTortoiseShellBracket => '⟭',
+            MiscellaneousMathematicalSymbolsA::MathematicalLeftFlattenedParenthesis => '⟮',
         }
     }
 }
@@ -253,55 +155,54 @@ impl Into<char> for MiscellaneousMathematicalSymbolsA {
 impl std::convert::TryFrom<char> for MiscellaneousMathematicalSymbolsA {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            THREE_DIMENSIONAL_ANGLE => Ok(MiscellaneousMathematicalSymbolsA::ThreeDimensionalAngle),
-            WHITE_TRIANGLE_CONTAINING_SMALL_WHITE_TRIANGLE => Ok(MiscellaneousMathematicalSymbolsA::WhiteTriangleContainingSmallWhiteTriangle),
-            PERPENDICULAR => Ok(MiscellaneousMathematicalSymbolsA::Perpendicular),
-            OPEN_SUBSET => Ok(MiscellaneousMathematicalSymbolsA::OpenSubset),
-            OPEN_SUPERSET => Ok(MiscellaneousMathematicalSymbolsA::OpenSuperset),
-            LEFT_S_DASH_SHAPED_BAG_DELIMITER => Ok(MiscellaneousMathematicalSymbolsA::LeftSDashShapedBagDelimiter),
-            RIGHT_S_DASH_SHAPED_BAG_DELIMITER => Ok(MiscellaneousMathematicalSymbolsA::RightSDashShapedBagDelimiter),
-            OR_WITH_DOT_INSIDE => Ok(MiscellaneousMathematicalSymbolsA::OrWithDotInside),
-            REVERSE_SOLIDUS_PRECEDING_SUBSET => Ok(MiscellaneousMathematicalSymbolsA::ReverseSolidusPrecedingSubset),
-            SUPERSET_PRECEDING_SOLIDUS => Ok(MiscellaneousMathematicalSymbolsA::SupersetPrecedingSolidus),
-            VERTICAL_BAR_WITH_HORIZONTAL_STROKE => Ok(MiscellaneousMathematicalSymbolsA::VerticalBarWithHorizontalStroke),
-            MATHEMATICAL_RISING_DIAGONAL => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRisingDiagonal),
-            LONG_DIVISION => Ok(MiscellaneousMathematicalSymbolsA::LongDivision),
-            MATHEMATICAL_FALLING_DIAGONAL => Ok(MiscellaneousMathematicalSymbolsA::MathematicalFallingDiagonal),
-            SQUARED_LOGICAL_AND => Ok(MiscellaneousMathematicalSymbolsA::SquaredLogicalAnd),
-            SQUARED_LOGICAL_OR => Ok(MiscellaneousMathematicalSymbolsA::SquaredLogicalOr),
-            WHITE_DIAMOND_WITH_CENTRED_DOT => Ok(MiscellaneousMathematicalSymbolsA::WhiteDiamondWithCentredDot),
-            AND_WITH_DOT => Ok(MiscellaneousMathematicalSymbolsA::AndWithDot),
-            ELEMENT_OF_OPENING_UPWARDS => Ok(MiscellaneousMathematicalSymbolsA::ElementOfOpeningUpwards),
-            LOWER_RIGHT_CORNER_WITH_DOT => Ok(MiscellaneousMathematicalSymbolsA::LowerRightCornerWithDot),
-            UPPER_LEFT_CORNER_WITH_DOT => Ok(MiscellaneousMathematicalSymbolsA::UpperLeftCornerWithDot),
-            LEFT_OUTER_JOIN => Ok(MiscellaneousMathematicalSymbolsA::LeftOuterJoin),
-            RIGHT_OUTER_JOIN => Ok(MiscellaneousMathematicalSymbolsA::RightOuterJoin),
-            FULL_OUTER_JOIN => Ok(MiscellaneousMathematicalSymbolsA::FullOuterJoin),
-            LARGE_UP_TACK => Ok(MiscellaneousMathematicalSymbolsA::LargeUpTack),
-            LARGE_DOWN_TACK => Ok(MiscellaneousMathematicalSymbolsA::LargeDownTack),
-            LEFT_AND_RIGHT_DOUBLE_TURNSTILE => Ok(MiscellaneousMathematicalSymbolsA::LeftAndRightDoubleTurnstile),
-            LEFT_AND_RIGHT_TACK => Ok(MiscellaneousMathematicalSymbolsA::LeftAndRightTack),
-            LEFT_MULTIMAP => Ok(MiscellaneousMathematicalSymbolsA::LeftMultimap),
-            LONG_RIGHT_TACK => Ok(MiscellaneousMathematicalSymbolsA::LongRightTack),
-            LONG_LEFT_TACK => Ok(MiscellaneousMathematicalSymbolsA::LongLeftTack),
-            UP_TACK_WITH_CIRCLE_ABOVE => Ok(MiscellaneousMathematicalSymbolsA::UpTackWithCircleAbove),
-            LOZENGE_DIVIDED_BY_HORIZONTAL_RULE => Ok(MiscellaneousMathematicalSymbolsA::LozengeDividedByHorizontalRule),
-            WHITE_CONCAVE_DASH_SIDED_DIAMOND => Ok(MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamond),
-            WHITE_CONCAVE_DASH_SIDED_DIAMOND_WITH_LEFTWARDS_TICK => Ok(MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithLeftwardsTick),
-            WHITE_CONCAVE_DASH_SIDED_DIAMOND_WITH_RIGHTWARDS_TICK => Ok(MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithRightwardsTick),
-            WHITE_SQUARE_WITH_LEFTWARDS_TICK => Ok(MiscellaneousMathematicalSymbolsA::WhiteSquareWithLeftwardsTick),
-            WHITE_SQUARE_WITH_RIGHTWARDS_TICK => Ok(MiscellaneousMathematicalSymbolsA::WhiteSquareWithRightwardsTick),
-            MATHEMATICAL_LEFT_WHITE_SQUARE_BRACKET => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteSquareBracket),
-            MATHEMATICAL_RIGHT_WHITE_SQUARE_BRACKET => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteSquareBracket),
-            MATHEMATICAL_LEFT_ANGLE_BRACKET => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftAngleBracket),
-            MATHEMATICAL_RIGHT_ANGLE_BRACKET => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRightAngleBracket),
-            MATHEMATICAL_LEFT_DOUBLE_ANGLE_BRACKET => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftDoubleAngleBracket),
-            MATHEMATICAL_RIGHT_DOUBLE_ANGLE_BRACKET => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRightDoubleAngleBracket),
-            MATHEMATICAL_LEFT_WHITE_TORTOISE_SHELL_BRACKET => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteTortoiseShellBracket),
-            MATHEMATICAL_RIGHT_WHITE_TORTOISE_SHELL_BRACKET => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteTortoiseShellBracket),
-            MATHEMATICAL_LEFT_FLATTENED_PARENTHESIS => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftFlattenedParenthesis),
+            '⟀' => Ok(MiscellaneousMathematicalSymbolsA::ThreeDimensionalAngle),
+            '⟁' => Ok(MiscellaneousMathematicalSymbolsA::WhiteTriangleContainingSmallWhiteTriangle),
+            '⟂' => Ok(MiscellaneousMathematicalSymbolsA::Perpendicular),
+            '⟃' => Ok(MiscellaneousMathematicalSymbolsA::OpenSubset),
+            '⟄' => Ok(MiscellaneousMathematicalSymbolsA::OpenSuperset),
+            '⟅' => Ok(MiscellaneousMathematicalSymbolsA::LeftSDashShapedBagDelimiter),
+            '⟆' => Ok(MiscellaneousMathematicalSymbolsA::RightSDashShapedBagDelimiter),
+            '⟇' => Ok(MiscellaneousMathematicalSymbolsA::OrWithDotInside),
+            '⟈' => Ok(MiscellaneousMathematicalSymbolsA::ReverseSolidusPrecedingSubset),
+            '⟉' => Ok(MiscellaneousMathematicalSymbolsA::SupersetPrecedingSolidus),
+            '⟊' => Ok(MiscellaneousMathematicalSymbolsA::VerticalBarWithHorizontalStroke),
+            '⟋' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRisingDiagonal),
+            '⟌' => Ok(MiscellaneousMathematicalSymbolsA::LongDivision),
+            '⟍' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalFallingDiagonal),
+            '⟎' => Ok(MiscellaneousMathematicalSymbolsA::SquaredLogicalAnd),
+            '⟏' => Ok(MiscellaneousMathematicalSymbolsA::SquaredLogicalOr),
+            '⟐' => Ok(MiscellaneousMathematicalSymbolsA::WhiteDiamondWithCentredDot),
+            '⟑' => Ok(MiscellaneousMathematicalSymbolsA::AndWithDot),
+            '⟒' => Ok(MiscellaneousMathematicalSymbolsA::ElementOfOpeningUpwards),
+            '⟓' => Ok(MiscellaneousMathematicalSymbolsA::LowerRightCornerWithDot),
+            '⟔' => Ok(MiscellaneousMathematicalSymbolsA::UpperLeftCornerWithDot),
+            '⟕' => Ok(MiscellaneousMathematicalSymbolsA::LeftOuterJoin),
+            '⟖' => Ok(MiscellaneousMathematicalSymbolsA::RightOuterJoin),
+            '⟗' => Ok(MiscellaneousMathematicalSymbolsA::FullOuterJoin),
+            '⟘' => Ok(MiscellaneousMathematicalSymbolsA::LargeUpTack),
+            '⟙' => Ok(MiscellaneousMathematicalSymbolsA::LargeDownTack),
+            '⟚' => Ok(MiscellaneousMathematicalSymbolsA::LeftAndRightDoubleTurnstile),
+            '⟛' => Ok(MiscellaneousMathematicalSymbolsA::LeftAndRightTack),
+            '⟜' => Ok(MiscellaneousMathematicalSymbolsA::LeftMultimap),
+            '⟝' => Ok(MiscellaneousMathematicalSymbolsA::LongRightTack),
+            '⟞' => Ok(MiscellaneousMathematicalSymbolsA::LongLeftTack),
+            '⟟' => Ok(MiscellaneousMathematicalSymbolsA::UpTackWithCircleAbove),
+            '⟠' => Ok(MiscellaneousMathematicalSymbolsA::LozengeDividedByHorizontalRule),
+            '⟡' => Ok(MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamond),
+            '⟢' => Ok(MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithLeftwardsTick),
+            '⟣' => Ok(MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithRightwardsTick),
+            '⟤' => Ok(MiscellaneousMathematicalSymbolsA::WhiteSquareWithLeftwardsTick),
+            '⟥' => Ok(MiscellaneousMathematicalSymbolsA::WhiteSquareWithRightwardsTick),
+            '⟦' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteSquareBracket),
+            '⟧' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteSquareBracket),
+            '⟨' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftAngleBracket),
+            '⟩' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRightAngleBracket),
+            '⟪' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftDoubleAngleBracket),
+            '⟫' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRightDoubleAngleBracket),
+            '⟬' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteTortoiseShellBracket),
+            '⟭' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteTortoiseShellBracket),
+            '⟮' => Ok(MiscellaneousMathematicalSymbolsA::MathematicalLeftFlattenedParenthesis),
             _ => Err(()),
         }
     }

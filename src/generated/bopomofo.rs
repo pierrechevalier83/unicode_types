@@ -1,90 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{3105}: 'ㄅ'
-    pub const LETTER_B: char = 'ㄅ';
-    /// \u{3106}: 'ㄆ'
-    pub const LETTER_P: char = 'ㄆ';
-    /// \u{3107}: 'ㄇ'
-    pub const LETTER_M: char = 'ㄇ';
-    /// \u{3108}: 'ㄈ'
-    pub const LETTER_F: char = 'ㄈ';
-    /// \u{3109}: 'ㄉ'
-    pub const LETTER_D: char = 'ㄉ';
-    /// \u{310a}: 'ㄊ'
-    pub const LETTER_T: char = 'ㄊ';
-    /// \u{310b}: 'ㄋ'
-    pub const LETTER_N: char = 'ㄋ';
-    /// \u{310c}: 'ㄌ'
-    pub const LETTER_L: char = 'ㄌ';
-    /// \u{310d}: 'ㄍ'
-    pub const LETTER_G: char = 'ㄍ';
-    /// \u{310e}: 'ㄎ'
-    pub const LETTER_K: char = 'ㄎ';
-    /// \u{310f}: 'ㄏ'
-    pub const LETTER_H: char = 'ㄏ';
-    /// \u{3110}: 'ㄐ'
-    pub const LETTER_J: char = 'ㄐ';
-    /// \u{3111}: 'ㄑ'
-    pub const LETTER_Q: char = 'ㄑ';
-    /// \u{3112}: 'ㄒ'
-    pub const LETTER_X: char = 'ㄒ';
-    /// \u{3113}: 'ㄓ'
-    pub const LETTER_ZH: char = 'ㄓ';
-    /// \u{3114}: 'ㄔ'
-    pub const LETTER_CH: char = 'ㄔ';
-    /// \u{3115}: 'ㄕ'
-    pub const LETTER_SH: char = 'ㄕ';
-    /// \u{3116}: 'ㄖ'
-    pub const LETTER_R: char = 'ㄖ';
-    /// \u{3117}: 'ㄗ'
-    pub const LETTER_Z: char = 'ㄗ';
-    /// \u{3118}: 'ㄘ'
-    pub const LETTER_C: char = 'ㄘ';
-    /// \u{3119}: 'ㄙ'
-    pub const LETTER_S: char = 'ㄙ';
-    /// \u{311a}: 'ㄚ'
-    pub const LETTER_A: char = 'ㄚ';
-    /// \u{311b}: 'ㄛ'
-    pub const LETTER_O: char = 'ㄛ';
-    /// \u{311c}: 'ㄜ'
-    pub const LETTER_E: char = 'ㄜ';
-    /// \u{311d}: 'ㄝ'
-    pub const LETTER_EH: char = 'ㄝ';
-    /// \u{311e}: 'ㄞ'
-    pub const LETTER_AI: char = 'ㄞ';
-    /// \u{311f}: 'ㄟ'
-    pub const LETTER_EI: char = 'ㄟ';
-    /// \u{3120}: 'ㄠ'
-    pub const LETTER_AU: char = 'ㄠ';
-    /// \u{3121}: 'ㄡ'
-    pub const LETTER_OU: char = 'ㄡ';
-    /// \u{3122}: 'ㄢ'
-    pub const LETTER_AN: char = 'ㄢ';
-    /// \u{3123}: 'ㄣ'
-    pub const LETTER_EN: char = 'ㄣ';
-    /// \u{3124}: 'ㄤ'
-    pub const LETTER_ANG: char = 'ㄤ';
-    /// \u{3125}: 'ㄥ'
-    pub const LETTER_ENG: char = 'ㄥ';
-    /// \u{3126}: 'ㄦ'
-    pub const LETTER_ER: char = 'ㄦ';
-    /// \u{3127}: 'ㄧ'
-    pub const LETTER_I: char = 'ㄧ';
-    /// \u{3128}: 'ㄨ'
-    pub const LETTER_U: char = 'ㄨ';
-    /// \u{3129}: 'ㄩ'
-    pub const LETTER_IU: char = 'ㄩ';
-    /// \u{312a}: 'ㄪ'
-    pub const LETTER_V: char = 'ㄪ';
-    /// \u{312b}: 'ㄫ'
-    pub const LETTER_NG: char = 'ㄫ';
-    /// \u{312c}: 'ㄬ'
-    pub const LETTER_GN: char = 'ㄬ';
-    /// \u{312d}: 'ㄭ'
-    pub const LETTER_IH: char = 'ㄭ';
-    /// \u{312e}: 'ㄮ'
-    pub const LETTER_O_WITH_DOT_ABOVE: char = 'ㄮ';
-}
 
 /// An enum to represent all characters in the Bopomofo block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -177,50 +90,49 @@ pub enum Bopomofo {
 
 impl Into<char> for Bopomofo {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Bopomofo::LetterB => LETTER_B,
-            Bopomofo::LetterP => LETTER_P,
-            Bopomofo::LetterM => LETTER_M,
-            Bopomofo::LetterF => LETTER_F,
-            Bopomofo::LetterD => LETTER_D,
-            Bopomofo::LetterT => LETTER_T,
-            Bopomofo::LetterN => LETTER_N,
-            Bopomofo::LetterL => LETTER_L,
-            Bopomofo::LetterG => LETTER_G,
-            Bopomofo::LetterK => LETTER_K,
-            Bopomofo::LetterH => LETTER_H,
-            Bopomofo::LetterJ => LETTER_J,
-            Bopomofo::LetterQ => LETTER_Q,
-            Bopomofo::LetterX => LETTER_X,
-            Bopomofo::LetterZh => LETTER_ZH,
-            Bopomofo::LetterCh => LETTER_CH,
-            Bopomofo::LetterSh => LETTER_SH,
-            Bopomofo::LetterR => LETTER_R,
-            Bopomofo::LetterZ => LETTER_Z,
-            Bopomofo::LetterC => LETTER_C,
-            Bopomofo::LetterS => LETTER_S,
-            Bopomofo::LetterA => LETTER_A,
-            Bopomofo::LetterO => LETTER_O,
-            Bopomofo::LetterE => LETTER_E,
-            Bopomofo::LetterEh => LETTER_EH,
-            Bopomofo::LetterAi => LETTER_AI,
-            Bopomofo::LetterEi => LETTER_EI,
-            Bopomofo::LetterAu => LETTER_AU,
-            Bopomofo::LetterOu => LETTER_OU,
-            Bopomofo::LetterAn => LETTER_AN,
-            Bopomofo::LetterEn => LETTER_EN,
-            Bopomofo::LetterAng => LETTER_ANG,
-            Bopomofo::LetterEng => LETTER_ENG,
-            Bopomofo::LetterEr => LETTER_ER,
-            Bopomofo::LetterI => LETTER_I,
-            Bopomofo::LetterU => LETTER_U,
-            Bopomofo::LetterIu => LETTER_IU,
-            Bopomofo::LetterV => LETTER_V,
-            Bopomofo::LetterNg => LETTER_NG,
-            Bopomofo::LetterGn => LETTER_GN,
-            Bopomofo::LetterIh => LETTER_IH,
-            Bopomofo::LetterOWithDotAbove => LETTER_O_WITH_DOT_ABOVE,
+            Bopomofo::LetterB => 'ㄅ',
+            Bopomofo::LetterP => 'ㄆ',
+            Bopomofo::LetterM => 'ㄇ',
+            Bopomofo::LetterF => 'ㄈ',
+            Bopomofo::LetterD => 'ㄉ',
+            Bopomofo::LetterT => 'ㄊ',
+            Bopomofo::LetterN => 'ㄋ',
+            Bopomofo::LetterL => 'ㄌ',
+            Bopomofo::LetterG => 'ㄍ',
+            Bopomofo::LetterK => 'ㄎ',
+            Bopomofo::LetterH => 'ㄏ',
+            Bopomofo::LetterJ => 'ㄐ',
+            Bopomofo::LetterQ => 'ㄑ',
+            Bopomofo::LetterX => 'ㄒ',
+            Bopomofo::LetterZh => 'ㄓ',
+            Bopomofo::LetterCh => 'ㄔ',
+            Bopomofo::LetterSh => 'ㄕ',
+            Bopomofo::LetterR => 'ㄖ',
+            Bopomofo::LetterZ => 'ㄗ',
+            Bopomofo::LetterC => 'ㄘ',
+            Bopomofo::LetterS => 'ㄙ',
+            Bopomofo::LetterA => 'ㄚ',
+            Bopomofo::LetterO => 'ㄛ',
+            Bopomofo::LetterE => 'ㄜ',
+            Bopomofo::LetterEh => 'ㄝ',
+            Bopomofo::LetterAi => 'ㄞ',
+            Bopomofo::LetterEi => 'ㄟ',
+            Bopomofo::LetterAu => 'ㄠ',
+            Bopomofo::LetterOu => 'ㄡ',
+            Bopomofo::LetterAn => 'ㄢ',
+            Bopomofo::LetterEn => 'ㄣ',
+            Bopomofo::LetterAng => 'ㄤ',
+            Bopomofo::LetterEng => 'ㄥ',
+            Bopomofo::LetterEr => 'ㄦ',
+            Bopomofo::LetterI => 'ㄧ',
+            Bopomofo::LetterU => 'ㄨ',
+            Bopomofo::LetterIu => 'ㄩ',
+            Bopomofo::LetterV => 'ㄪ',
+            Bopomofo::LetterNg => 'ㄫ',
+            Bopomofo::LetterGn => 'ㄬ',
+            Bopomofo::LetterIh => 'ㄭ',
+            Bopomofo::LetterOWithDotAbove => 'ㄮ',
         }
     }
 }
@@ -228,50 +140,49 @@ impl Into<char> for Bopomofo {
 impl std::convert::TryFrom<char> for Bopomofo {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_B => Ok(Bopomofo::LetterB),
-            LETTER_P => Ok(Bopomofo::LetterP),
-            LETTER_M => Ok(Bopomofo::LetterM),
-            LETTER_F => Ok(Bopomofo::LetterF),
-            LETTER_D => Ok(Bopomofo::LetterD),
-            LETTER_T => Ok(Bopomofo::LetterT),
-            LETTER_N => Ok(Bopomofo::LetterN),
-            LETTER_L => Ok(Bopomofo::LetterL),
-            LETTER_G => Ok(Bopomofo::LetterG),
-            LETTER_K => Ok(Bopomofo::LetterK),
-            LETTER_H => Ok(Bopomofo::LetterH),
-            LETTER_J => Ok(Bopomofo::LetterJ),
-            LETTER_Q => Ok(Bopomofo::LetterQ),
-            LETTER_X => Ok(Bopomofo::LetterX),
-            LETTER_ZH => Ok(Bopomofo::LetterZh),
-            LETTER_CH => Ok(Bopomofo::LetterCh),
-            LETTER_SH => Ok(Bopomofo::LetterSh),
-            LETTER_R => Ok(Bopomofo::LetterR),
-            LETTER_Z => Ok(Bopomofo::LetterZ),
-            LETTER_C => Ok(Bopomofo::LetterC),
-            LETTER_S => Ok(Bopomofo::LetterS),
-            LETTER_A => Ok(Bopomofo::LetterA),
-            LETTER_O => Ok(Bopomofo::LetterO),
-            LETTER_E => Ok(Bopomofo::LetterE),
-            LETTER_EH => Ok(Bopomofo::LetterEh),
-            LETTER_AI => Ok(Bopomofo::LetterAi),
-            LETTER_EI => Ok(Bopomofo::LetterEi),
-            LETTER_AU => Ok(Bopomofo::LetterAu),
-            LETTER_OU => Ok(Bopomofo::LetterOu),
-            LETTER_AN => Ok(Bopomofo::LetterAn),
-            LETTER_EN => Ok(Bopomofo::LetterEn),
-            LETTER_ANG => Ok(Bopomofo::LetterAng),
-            LETTER_ENG => Ok(Bopomofo::LetterEng),
-            LETTER_ER => Ok(Bopomofo::LetterEr),
-            LETTER_I => Ok(Bopomofo::LetterI),
-            LETTER_U => Ok(Bopomofo::LetterU),
-            LETTER_IU => Ok(Bopomofo::LetterIu),
-            LETTER_V => Ok(Bopomofo::LetterV),
-            LETTER_NG => Ok(Bopomofo::LetterNg),
-            LETTER_GN => Ok(Bopomofo::LetterGn),
-            LETTER_IH => Ok(Bopomofo::LetterIh),
-            LETTER_O_WITH_DOT_ABOVE => Ok(Bopomofo::LetterOWithDotAbove),
+            'ㄅ' => Ok(Bopomofo::LetterB),
+            'ㄆ' => Ok(Bopomofo::LetterP),
+            'ㄇ' => Ok(Bopomofo::LetterM),
+            'ㄈ' => Ok(Bopomofo::LetterF),
+            'ㄉ' => Ok(Bopomofo::LetterD),
+            'ㄊ' => Ok(Bopomofo::LetterT),
+            'ㄋ' => Ok(Bopomofo::LetterN),
+            'ㄌ' => Ok(Bopomofo::LetterL),
+            'ㄍ' => Ok(Bopomofo::LetterG),
+            'ㄎ' => Ok(Bopomofo::LetterK),
+            'ㄏ' => Ok(Bopomofo::LetterH),
+            'ㄐ' => Ok(Bopomofo::LetterJ),
+            'ㄑ' => Ok(Bopomofo::LetterQ),
+            'ㄒ' => Ok(Bopomofo::LetterX),
+            'ㄓ' => Ok(Bopomofo::LetterZh),
+            'ㄔ' => Ok(Bopomofo::LetterCh),
+            'ㄕ' => Ok(Bopomofo::LetterSh),
+            'ㄖ' => Ok(Bopomofo::LetterR),
+            'ㄗ' => Ok(Bopomofo::LetterZ),
+            'ㄘ' => Ok(Bopomofo::LetterC),
+            'ㄙ' => Ok(Bopomofo::LetterS),
+            'ㄚ' => Ok(Bopomofo::LetterA),
+            'ㄛ' => Ok(Bopomofo::LetterO),
+            'ㄜ' => Ok(Bopomofo::LetterE),
+            'ㄝ' => Ok(Bopomofo::LetterEh),
+            'ㄞ' => Ok(Bopomofo::LetterAi),
+            'ㄟ' => Ok(Bopomofo::LetterEi),
+            'ㄠ' => Ok(Bopomofo::LetterAu),
+            'ㄡ' => Ok(Bopomofo::LetterOu),
+            'ㄢ' => Ok(Bopomofo::LetterAn),
+            'ㄣ' => Ok(Bopomofo::LetterEn),
+            'ㄤ' => Ok(Bopomofo::LetterAng),
+            'ㄥ' => Ok(Bopomofo::LetterEng),
+            'ㄦ' => Ok(Bopomofo::LetterEr),
+            'ㄧ' => Ok(Bopomofo::LetterI),
+            'ㄨ' => Ok(Bopomofo::LetterU),
+            'ㄩ' => Ok(Bopomofo::LetterIu),
+            'ㄪ' => Ok(Bopomofo::LetterV),
+            'ㄫ' => Ok(Bopomofo::LetterNg),
+            'ㄬ' => Ok(Bopomofo::LetterGn),
+            'ㄭ' => Ok(Bopomofo::LetterIh),
+            'ㄮ' => Ok(Bopomofo::LetterOWithDotAbove),
             _ => Err(()),
         }
     }

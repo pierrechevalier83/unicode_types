@@ -1,170 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1980}: 'ᦀ'
-    pub const LETTER_HIGH_QA: char = 'ᦀ';
-    /// \u{1981}: 'ᦁ'
-    pub const LETTER_LOW_QA: char = 'ᦁ';
-    /// \u{1982}: 'ᦂ'
-    pub const LETTER_HIGH_KA: char = 'ᦂ';
-    /// \u{1983}: 'ᦃ'
-    pub const LETTER_HIGH_XA: char = 'ᦃ';
-    /// \u{1984}: 'ᦄ'
-    pub const LETTER_HIGH_NGA: char = 'ᦄ';
-    /// \u{1985}: 'ᦅ'
-    pub const LETTER_LOW_KA: char = 'ᦅ';
-    /// \u{1986}: 'ᦆ'
-    pub const LETTER_LOW_XA: char = 'ᦆ';
-    /// \u{1987}: 'ᦇ'
-    pub const LETTER_LOW_NGA: char = 'ᦇ';
-    /// \u{1988}: 'ᦈ'
-    pub const LETTER_HIGH_TSA: char = 'ᦈ';
-    /// \u{1989}: 'ᦉ'
-    pub const LETTER_HIGH_SA: char = 'ᦉ';
-    /// \u{198a}: 'ᦊ'
-    pub const LETTER_HIGH_YA: char = 'ᦊ';
-    /// \u{198b}: 'ᦋ'
-    pub const LETTER_LOW_TSA: char = 'ᦋ';
-    /// \u{198c}: 'ᦌ'
-    pub const LETTER_LOW_SA: char = 'ᦌ';
-    /// \u{198d}: 'ᦍ'
-    pub const LETTER_LOW_YA: char = 'ᦍ';
-    /// \u{198e}: 'ᦎ'
-    pub const LETTER_HIGH_TA: char = 'ᦎ';
-    /// \u{198f}: 'ᦏ'
-    pub const LETTER_HIGH_THA: char = 'ᦏ';
-    /// \u{1990}: 'ᦐ'
-    pub const LETTER_HIGH_NA: char = 'ᦐ';
-    /// \u{1991}: 'ᦑ'
-    pub const LETTER_LOW_TA: char = 'ᦑ';
-    /// \u{1992}: 'ᦒ'
-    pub const LETTER_LOW_THA: char = 'ᦒ';
-    /// \u{1993}: 'ᦓ'
-    pub const LETTER_LOW_NA: char = 'ᦓ';
-    /// \u{1994}: 'ᦔ'
-    pub const LETTER_HIGH_PA: char = 'ᦔ';
-    /// \u{1995}: 'ᦕ'
-    pub const LETTER_HIGH_PHA: char = 'ᦕ';
-    /// \u{1996}: 'ᦖ'
-    pub const LETTER_HIGH_MA: char = 'ᦖ';
-    /// \u{1997}: 'ᦗ'
-    pub const LETTER_LOW_PA: char = 'ᦗ';
-    /// \u{1998}: 'ᦘ'
-    pub const LETTER_LOW_PHA: char = 'ᦘ';
-    /// \u{1999}: 'ᦙ'
-    pub const LETTER_LOW_MA: char = 'ᦙ';
-    /// \u{199a}: 'ᦚ'
-    pub const LETTER_HIGH_FA: char = 'ᦚ';
-    /// \u{199b}: 'ᦛ'
-    pub const LETTER_HIGH_VA: char = 'ᦛ';
-    /// \u{199c}: 'ᦜ'
-    pub const LETTER_HIGH_LA: char = 'ᦜ';
-    /// \u{199d}: 'ᦝ'
-    pub const LETTER_LOW_FA: char = 'ᦝ';
-    /// \u{199e}: 'ᦞ'
-    pub const LETTER_LOW_VA: char = 'ᦞ';
-    /// \u{199f}: 'ᦟ'
-    pub const LETTER_LOW_LA: char = 'ᦟ';
-    /// \u{19a0}: 'ᦠ'
-    pub const LETTER_HIGH_HA: char = 'ᦠ';
-    /// \u{19a1}: 'ᦡ'
-    pub const LETTER_HIGH_DA: char = 'ᦡ';
-    /// \u{19a2}: 'ᦢ'
-    pub const LETTER_HIGH_BA: char = 'ᦢ';
-    /// \u{19a3}: 'ᦣ'
-    pub const LETTER_LOW_HA: char = 'ᦣ';
-    /// \u{19a4}: 'ᦤ'
-    pub const LETTER_LOW_DA: char = 'ᦤ';
-    /// \u{19a5}: 'ᦥ'
-    pub const LETTER_LOW_BA: char = 'ᦥ';
-    /// \u{19a6}: 'ᦦ'
-    pub const LETTER_HIGH_KVA: char = 'ᦦ';
-    /// \u{19a7}: 'ᦧ'
-    pub const LETTER_HIGH_XVA: char = 'ᦧ';
-    /// \u{19a8}: 'ᦨ'
-    pub const LETTER_LOW_KVA: char = 'ᦨ';
-    /// \u{19a9}: 'ᦩ'
-    pub const LETTER_LOW_XVA: char = 'ᦩ';
-    /// \u{19aa}: 'ᦪ'
-    pub const LETTER_HIGH_SUA: char = 'ᦪ';
-    /// \u{19ab}: 'ᦫ'
-    pub const LETTER_LOW_SUA: char = 'ᦫ';
-    /// \u{19b0}: 'ᦰ'
-    pub const VOWEL_SIGN_VOWEL_SHORTENER: char = 'ᦰ';
-    /// \u{19b1}: 'ᦱ'
-    pub const VOWEL_SIGN_AA: char = 'ᦱ';
-    /// \u{19b2}: 'ᦲ'
-    pub const VOWEL_SIGN_II: char = 'ᦲ';
-    /// \u{19b3}: 'ᦳ'
-    pub const VOWEL_SIGN_U: char = 'ᦳ';
-    /// \u{19b4}: 'ᦴ'
-    pub const VOWEL_SIGN_UU: char = 'ᦴ';
-    /// \u{19b5}: 'ᦵ'
-    pub const VOWEL_SIGN_E: char = 'ᦵ';
-    /// \u{19b6}: 'ᦶ'
-    pub const VOWEL_SIGN_AE: char = 'ᦶ';
-    /// \u{19b7}: 'ᦷ'
-    pub const VOWEL_SIGN_O: char = 'ᦷ';
-    /// \u{19b8}: 'ᦸ'
-    pub const VOWEL_SIGN_OA: char = 'ᦸ';
-    /// \u{19b9}: 'ᦹ'
-    pub const VOWEL_SIGN_UE: char = 'ᦹ';
-    /// \u{19ba}: 'ᦺ'
-    pub const VOWEL_SIGN_AY: char = 'ᦺ';
-    /// \u{19bb}: 'ᦻ'
-    pub const VOWEL_SIGN_AAY: char = 'ᦻ';
-    /// \u{19bc}: 'ᦼ'
-    pub const VOWEL_SIGN_UY: char = 'ᦼ';
-    /// \u{19bd}: 'ᦽ'
-    pub const VOWEL_SIGN_OY: char = 'ᦽ';
-    /// \u{19be}: 'ᦾ'
-    pub const VOWEL_SIGN_OAY: char = 'ᦾ';
-    /// \u{19bf}: 'ᦿ'
-    pub const VOWEL_SIGN_UEY: char = 'ᦿ';
-    /// \u{19c0}: 'ᧀ'
-    pub const VOWEL_SIGN_IY: char = 'ᧀ';
-    /// \u{19c1}: 'ᧁ'
-    pub const LETTER_FINAL_V: char = 'ᧁ';
-    /// \u{19c2}: 'ᧂ'
-    pub const LETTER_FINAL_NG: char = 'ᧂ';
-    /// \u{19c3}: 'ᧃ'
-    pub const LETTER_FINAL_N: char = 'ᧃ';
-    /// \u{19c4}: 'ᧄ'
-    pub const LETTER_FINAL_M: char = 'ᧄ';
-    /// \u{19c5}: 'ᧅ'
-    pub const LETTER_FINAL_K: char = 'ᧅ';
-    /// \u{19c6}: 'ᧆ'
-    pub const LETTER_FINAL_D: char = 'ᧆ';
-    /// \u{19c7}: 'ᧇ'
-    pub const LETTER_FINAL_B: char = 'ᧇ';
-    /// \u{19c8}: 'ᧈ'
-    pub const TONE_MARK_DASH_1: char = 'ᧈ';
-    /// \u{19c9}: 'ᧉ'
-    pub const TONE_MARK_DASH_2: char = 'ᧉ';
-    /// \u{19d0}: '᧐'
-    pub const DIGIT_ZERO: char = '᧐';
-    /// \u{19d1}: '᧑'
-    pub const DIGIT_ONE: char = '᧑';
-    /// \u{19d2}: '᧒'
-    pub const DIGIT_TWO: char = '᧒';
-    /// \u{19d3}: '᧓'
-    pub const DIGIT_THREE: char = '᧓';
-    /// \u{19d4}: '᧔'
-    pub const DIGIT_FOUR: char = '᧔';
-    /// \u{19d5}: '᧕'
-    pub const DIGIT_FIVE: char = '᧕';
-    /// \u{19d6}: '᧖'
-    pub const DIGIT_SIX: char = '᧖';
-    /// \u{19d7}: '᧗'
-    pub const DIGIT_SEVEN: char = '᧗';
-    /// \u{19d8}: '᧘'
-    pub const DIGIT_EIGHT: char = '᧘';
-    /// \u{19d9}: '᧙'
-    pub const DIGIT_NINE: char = '᧙';
-    /// \u{19da}: '᧚'
-    pub const THAM_DIGIT_ONE: char = '᧚';
-    /// \u{19de}: '᧞'
-    pub const SIGN_LAE: char = '᧞';
-}
 
 /// An enum to represent all characters in the NewTaiLue block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -337,90 +170,89 @@ pub enum NewTaiLue {
 
 impl Into<char> for NewTaiLue {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            NewTaiLue::LetterHighQa => LETTER_HIGH_QA,
-            NewTaiLue::LetterLowQa => LETTER_LOW_QA,
-            NewTaiLue::LetterHighKa => LETTER_HIGH_KA,
-            NewTaiLue::LetterHighXa => LETTER_HIGH_XA,
-            NewTaiLue::LetterHighNga => LETTER_HIGH_NGA,
-            NewTaiLue::LetterLowKa => LETTER_LOW_KA,
-            NewTaiLue::LetterLowXa => LETTER_LOW_XA,
-            NewTaiLue::LetterLowNga => LETTER_LOW_NGA,
-            NewTaiLue::LetterHighTsa => LETTER_HIGH_TSA,
-            NewTaiLue::LetterHighSa => LETTER_HIGH_SA,
-            NewTaiLue::LetterHighYa => LETTER_HIGH_YA,
-            NewTaiLue::LetterLowTsa => LETTER_LOW_TSA,
-            NewTaiLue::LetterLowSa => LETTER_LOW_SA,
-            NewTaiLue::LetterLowYa => LETTER_LOW_YA,
-            NewTaiLue::LetterHighTa => LETTER_HIGH_TA,
-            NewTaiLue::LetterHighTha => LETTER_HIGH_THA,
-            NewTaiLue::LetterHighNa => LETTER_HIGH_NA,
-            NewTaiLue::LetterLowTa => LETTER_LOW_TA,
-            NewTaiLue::LetterLowTha => LETTER_LOW_THA,
-            NewTaiLue::LetterLowNa => LETTER_LOW_NA,
-            NewTaiLue::LetterHighPa => LETTER_HIGH_PA,
-            NewTaiLue::LetterHighPha => LETTER_HIGH_PHA,
-            NewTaiLue::LetterHighMa => LETTER_HIGH_MA,
-            NewTaiLue::LetterLowPa => LETTER_LOW_PA,
-            NewTaiLue::LetterLowPha => LETTER_LOW_PHA,
-            NewTaiLue::LetterLowMa => LETTER_LOW_MA,
-            NewTaiLue::LetterHighFa => LETTER_HIGH_FA,
-            NewTaiLue::LetterHighVa => LETTER_HIGH_VA,
-            NewTaiLue::LetterHighLa => LETTER_HIGH_LA,
-            NewTaiLue::LetterLowFa => LETTER_LOW_FA,
-            NewTaiLue::LetterLowVa => LETTER_LOW_VA,
-            NewTaiLue::LetterLowLa => LETTER_LOW_LA,
-            NewTaiLue::LetterHighHa => LETTER_HIGH_HA,
-            NewTaiLue::LetterHighDa => LETTER_HIGH_DA,
-            NewTaiLue::LetterHighBa => LETTER_HIGH_BA,
-            NewTaiLue::LetterLowHa => LETTER_LOW_HA,
-            NewTaiLue::LetterLowDa => LETTER_LOW_DA,
-            NewTaiLue::LetterLowBa => LETTER_LOW_BA,
-            NewTaiLue::LetterHighKva => LETTER_HIGH_KVA,
-            NewTaiLue::LetterHighXva => LETTER_HIGH_XVA,
-            NewTaiLue::LetterLowKva => LETTER_LOW_KVA,
-            NewTaiLue::LetterLowXva => LETTER_LOW_XVA,
-            NewTaiLue::LetterHighSua => LETTER_HIGH_SUA,
-            NewTaiLue::LetterLowSua => LETTER_LOW_SUA,
-            NewTaiLue::VowelSignVowelShortener => VOWEL_SIGN_VOWEL_SHORTENER,
-            NewTaiLue::VowelSignAa => VOWEL_SIGN_AA,
-            NewTaiLue::VowelSignIi => VOWEL_SIGN_II,
-            NewTaiLue::VowelSignU => VOWEL_SIGN_U,
-            NewTaiLue::VowelSignUu => VOWEL_SIGN_UU,
-            NewTaiLue::VowelSignE => VOWEL_SIGN_E,
-            NewTaiLue::VowelSignAe => VOWEL_SIGN_AE,
-            NewTaiLue::VowelSignO => VOWEL_SIGN_O,
-            NewTaiLue::VowelSignOa => VOWEL_SIGN_OA,
-            NewTaiLue::VowelSignUe => VOWEL_SIGN_UE,
-            NewTaiLue::VowelSignAy => VOWEL_SIGN_AY,
-            NewTaiLue::VowelSignAay => VOWEL_SIGN_AAY,
-            NewTaiLue::VowelSignUy => VOWEL_SIGN_UY,
-            NewTaiLue::VowelSignOy => VOWEL_SIGN_OY,
-            NewTaiLue::VowelSignOay => VOWEL_SIGN_OAY,
-            NewTaiLue::VowelSignUey => VOWEL_SIGN_UEY,
-            NewTaiLue::VowelSignIy => VOWEL_SIGN_IY,
-            NewTaiLue::LetterFinalV => LETTER_FINAL_V,
-            NewTaiLue::LetterFinalNg => LETTER_FINAL_NG,
-            NewTaiLue::LetterFinalN => LETTER_FINAL_N,
-            NewTaiLue::LetterFinalM => LETTER_FINAL_M,
-            NewTaiLue::LetterFinalK => LETTER_FINAL_K,
-            NewTaiLue::LetterFinalD => LETTER_FINAL_D,
-            NewTaiLue::LetterFinalB => LETTER_FINAL_B,
-            NewTaiLue::ToneMarkDash1 => TONE_MARK_DASH_1,
-            NewTaiLue::ToneMarkDash2 => TONE_MARK_DASH_2,
-            NewTaiLue::DigitZero => DIGIT_ZERO,
-            NewTaiLue::DigitOne => DIGIT_ONE,
-            NewTaiLue::DigitTwo => DIGIT_TWO,
-            NewTaiLue::DigitThree => DIGIT_THREE,
-            NewTaiLue::DigitFour => DIGIT_FOUR,
-            NewTaiLue::DigitFive => DIGIT_FIVE,
-            NewTaiLue::DigitSix => DIGIT_SIX,
-            NewTaiLue::DigitSeven => DIGIT_SEVEN,
-            NewTaiLue::DigitEight => DIGIT_EIGHT,
-            NewTaiLue::DigitNine => DIGIT_NINE,
-            NewTaiLue::ThamDigitOne => THAM_DIGIT_ONE,
-            NewTaiLue::SignLae => SIGN_LAE,
+            NewTaiLue::LetterHighQa => 'ᦀ',
+            NewTaiLue::LetterLowQa => 'ᦁ',
+            NewTaiLue::LetterHighKa => 'ᦂ',
+            NewTaiLue::LetterHighXa => 'ᦃ',
+            NewTaiLue::LetterHighNga => 'ᦄ',
+            NewTaiLue::LetterLowKa => 'ᦅ',
+            NewTaiLue::LetterLowXa => 'ᦆ',
+            NewTaiLue::LetterLowNga => 'ᦇ',
+            NewTaiLue::LetterHighTsa => 'ᦈ',
+            NewTaiLue::LetterHighSa => 'ᦉ',
+            NewTaiLue::LetterHighYa => 'ᦊ',
+            NewTaiLue::LetterLowTsa => 'ᦋ',
+            NewTaiLue::LetterLowSa => 'ᦌ',
+            NewTaiLue::LetterLowYa => 'ᦍ',
+            NewTaiLue::LetterHighTa => 'ᦎ',
+            NewTaiLue::LetterHighTha => 'ᦏ',
+            NewTaiLue::LetterHighNa => 'ᦐ',
+            NewTaiLue::LetterLowTa => 'ᦑ',
+            NewTaiLue::LetterLowTha => 'ᦒ',
+            NewTaiLue::LetterLowNa => 'ᦓ',
+            NewTaiLue::LetterHighPa => 'ᦔ',
+            NewTaiLue::LetterHighPha => 'ᦕ',
+            NewTaiLue::LetterHighMa => 'ᦖ',
+            NewTaiLue::LetterLowPa => 'ᦗ',
+            NewTaiLue::LetterLowPha => 'ᦘ',
+            NewTaiLue::LetterLowMa => 'ᦙ',
+            NewTaiLue::LetterHighFa => 'ᦚ',
+            NewTaiLue::LetterHighVa => 'ᦛ',
+            NewTaiLue::LetterHighLa => 'ᦜ',
+            NewTaiLue::LetterLowFa => 'ᦝ',
+            NewTaiLue::LetterLowVa => 'ᦞ',
+            NewTaiLue::LetterLowLa => 'ᦟ',
+            NewTaiLue::LetterHighHa => 'ᦠ',
+            NewTaiLue::LetterHighDa => 'ᦡ',
+            NewTaiLue::LetterHighBa => 'ᦢ',
+            NewTaiLue::LetterLowHa => 'ᦣ',
+            NewTaiLue::LetterLowDa => 'ᦤ',
+            NewTaiLue::LetterLowBa => 'ᦥ',
+            NewTaiLue::LetterHighKva => 'ᦦ',
+            NewTaiLue::LetterHighXva => 'ᦧ',
+            NewTaiLue::LetterLowKva => 'ᦨ',
+            NewTaiLue::LetterLowXva => 'ᦩ',
+            NewTaiLue::LetterHighSua => 'ᦪ',
+            NewTaiLue::LetterLowSua => 'ᦫ',
+            NewTaiLue::VowelSignVowelShortener => 'ᦰ',
+            NewTaiLue::VowelSignAa => 'ᦱ',
+            NewTaiLue::VowelSignIi => 'ᦲ',
+            NewTaiLue::VowelSignU => 'ᦳ',
+            NewTaiLue::VowelSignUu => 'ᦴ',
+            NewTaiLue::VowelSignE => 'ᦵ',
+            NewTaiLue::VowelSignAe => 'ᦶ',
+            NewTaiLue::VowelSignO => 'ᦷ',
+            NewTaiLue::VowelSignOa => 'ᦸ',
+            NewTaiLue::VowelSignUe => 'ᦹ',
+            NewTaiLue::VowelSignAy => 'ᦺ',
+            NewTaiLue::VowelSignAay => 'ᦻ',
+            NewTaiLue::VowelSignUy => 'ᦼ',
+            NewTaiLue::VowelSignOy => 'ᦽ',
+            NewTaiLue::VowelSignOay => 'ᦾ',
+            NewTaiLue::VowelSignUey => 'ᦿ',
+            NewTaiLue::VowelSignIy => 'ᧀ',
+            NewTaiLue::LetterFinalV => 'ᧁ',
+            NewTaiLue::LetterFinalNg => 'ᧂ',
+            NewTaiLue::LetterFinalN => 'ᧃ',
+            NewTaiLue::LetterFinalM => 'ᧄ',
+            NewTaiLue::LetterFinalK => 'ᧅ',
+            NewTaiLue::LetterFinalD => 'ᧆ',
+            NewTaiLue::LetterFinalB => 'ᧇ',
+            NewTaiLue::ToneMarkDash1 => 'ᧈ',
+            NewTaiLue::ToneMarkDash2 => 'ᧉ',
+            NewTaiLue::DigitZero => '᧐',
+            NewTaiLue::DigitOne => '᧑',
+            NewTaiLue::DigitTwo => '᧒',
+            NewTaiLue::DigitThree => '᧓',
+            NewTaiLue::DigitFour => '᧔',
+            NewTaiLue::DigitFive => '᧕',
+            NewTaiLue::DigitSix => '᧖',
+            NewTaiLue::DigitSeven => '᧗',
+            NewTaiLue::DigitEight => '᧘',
+            NewTaiLue::DigitNine => '᧙',
+            NewTaiLue::ThamDigitOne => '᧚',
+            NewTaiLue::SignLae => '᧞',
         }
     }
 }
@@ -428,90 +260,89 @@ impl Into<char> for NewTaiLue {
 impl std::convert::TryFrom<char> for NewTaiLue {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_HIGH_QA => Ok(NewTaiLue::LetterHighQa),
-            LETTER_LOW_QA => Ok(NewTaiLue::LetterLowQa),
-            LETTER_HIGH_KA => Ok(NewTaiLue::LetterHighKa),
-            LETTER_HIGH_XA => Ok(NewTaiLue::LetterHighXa),
-            LETTER_HIGH_NGA => Ok(NewTaiLue::LetterHighNga),
-            LETTER_LOW_KA => Ok(NewTaiLue::LetterLowKa),
-            LETTER_LOW_XA => Ok(NewTaiLue::LetterLowXa),
-            LETTER_LOW_NGA => Ok(NewTaiLue::LetterLowNga),
-            LETTER_HIGH_TSA => Ok(NewTaiLue::LetterHighTsa),
-            LETTER_HIGH_SA => Ok(NewTaiLue::LetterHighSa),
-            LETTER_HIGH_YA => Ok(NewTaiLue::LetterHighYa),
-            LETTER_LOW_TSA => Ok(NewTaiLue::LetterLowTsa),
-            LETTER_LOW_SA => Ok(NewTaiLue::LetterLowSa),
-            LETTER_LOW_YA => Ok(NewTaiLue::LetterLowYa),
-            LETTER_HIGH_TA => Ok(NewTaiLue::LetterHighTa),
-            LETTER_HIGH_THA => Ok(NewTaiLue::LetterHighTha),
-            LETTER_HIGH_NA => Ok(NewTaiLue::LetterHighNa),
-            LETTER_LOW_TA => Ok(NewTaiLue::LetterLowTa),
-            LETTER_LOW_THA => Ok(NewTaiLue::LetterLowTha),
-            LETTER_LOW_NA => Ok(NewTaiLue::LetterLowNa),
-            LETTER_HIGH_PA => Ok(NewTaiLue::LetterHighPa),
-            LETTER_HIGH_PHA => Ok(NewTaiLue::LetterHighPha),
-            LETTER_HIGH_MA => Ok(NewTaiLue::LetterHighMa),
-            LETTER_LOW_PA => Ok(NewTaiLue::LetterLowPa),
-            LETTER_LOW_PHA => Ok(NewTaiLue::LetterLowPha),
-            LETTER_LOW_MA => Ok(NewTaiLue::LetterLowMa),
-            LETTER_HIGH_FA => Ok(NewTaiLue::LetterHighFa),
-            LETTER_HIGH_VA => Ok(NewTaiLue::LetterHighVa),
-            LETTER_HIGH_LA => Ok(NewTaiLue::LetterHighLa),
-            LETTER_LOW_FA => Ok(NewTaiLue::LetterLowFa),
-            LETTER_LOW_VA => Ok(NewTaiLue::LetterLowVa),
-            LETTER_LOW_LA => Ok(NewTaiLue::LetterLowLa),
-            LETTER_HIGH_HA => Ok(NewTaiLue::LetterHighHa),
-            LETTER_HIGH_DA => Ok(NewTaiLue::LetterHighDa),
-            LETTER_HIGH_BA => Ok(NewTaiLue::LetterHighBa),
-            LETTER_LOW_HA => Ok(NewTaiLue::LetterLowHa),
-            LETTER_LOW_DA => Ok(NewTaiLue::LetterLowDa),
-            LETTER_LOW_BA => Ok(NewTaiLue::LetterLowBa),
-            LETTER_HIGH_KVA => Ok(NewTaiLue::LetterHighKva),
-            LETTER_HIGH_XVA => Ok(NewTaiLue::LetterHighXva),
-            LETTER_LOW_KVA => Ok(NewTaiLue::LetterLowKva),
-            LETTER_LOW_XVA => Ok(NewTaiLue::LetterLowXva),
-            LETTER_HIGH_SUA => Ok(NewTaiLue::LetterHighSua),
-            LETTER_LOW_SUA => Ok(NewTaiLue::LetterLowSua),
-            VOWEL_SIGN_VOWEL_SHORTENER => Ok(NewTaiLue::VowelSignVowelShortener),
-            VOWEL_SIGN_AA => Ok(NewTaiLue::VowelSignAa),
-            VOWEL_SIGN_II => Ok(NewTaiLue::VowelSignIi),
-            VOWEL_SIGN_U => Ok(NewTaiLue::VowelSignU),
-            VOWEL_SIGN_UU => Ok(NewTaiLue::VowelSignUu),
-            VOWEL_SIGN_E => Ok(NewTaiLue::VowelSignE),
-            VOWEL_SIGN_AE => Ok(NewTaiLue::VowelSignAe),
-            VOWEL_SIGN_O => Ok(NewTaiLue::VowelSignO),
-            VOWEL_SIGN_OA => Ok(NewTaiLue::VowelSignOa),
-            VOWEL_SIGN_UE => Ok(NewTaiLue::VowelSignUe),
-            VOWEL_SIGN_AY => Ok(NewTaiLue::VowelSignAy),
-            VOWEL_SIGN_AAY => Ok(NewTaiLue::VowelSignAay),
-            VOWEL_SIGN_UY => Ok(NewTaiLue::VowelSignUy),
-            VOWEL_SIGN_OY => Ok(NewTaiLue::VowelSignOy),
-            VOWEL_SIGN_OAY => Ok(NewTaiLue::VowelSignOay),
-            VOWEL_SIGN_UEY => Ok(NewTaiLue::VowelSignUey),
-            VOWEL_SIGN_IY => Ok(NewTaiLue::VowelSignIy),
-            LETTER_FINAL_V => Ok(NewTaiLue::LetterFinalV),
-            LETTER_FINAL_NG => Ok(NewTaiLue::LetterFinalNg),
-            LETTER_FINAL_N => Ok(NewTaiLue::LetterFinalN),
-            LETTER_FINAL_M => Ok(NewTaiLue::LetterFinalM),
-            LETTER_FINAL_K => Ok(NewTaiLue::LetterFinalK),
-            LETTER_FINAL_D => Ok(NewTaiLue::LetterFinalD),
-            LETTER_FINAL_B => Ok(NewTaiLue::LetterFinalB),
-            TONE_MARK_DASH_1 => Ok(NewTaiLue::ToneMarkDash1),
-            TONE_MARK_DASH_2 => Ok(NewTaiLue::ToneMarkDash2),
-            DIGIT_ZERO => Ok(NewTaiLue::DigitZero),
-            DIGIT_ONE => Ok(NewTaiLue::DigitOne),
-            DIGIT_TWO => Ok(NewTaiLue::DigitTwo),
-            DIGIT_THREE => Ok(NewTaiLue::DigitThree),
-            DIGIT_FOUR => Ok(NewTaiLue::DigitFour),
-            DIGIT_FIVE => Ok(NewTaiLue::DigitFive),
-            DIGIT_SIX => Ok(NewTaiLue::DigitSix),
-            DIGIT_SEVEN => Ok(NewTaiLue::DigitSeven),
-            DIGIT_EIGHT => Ok(NewTaiLue::DigitEight),
-            DIGIT_NINE => Ok(NewTaiLue::DigitNine),
-            THAM_DIGIT_ONE => Ok(NewTaiLue::ThamDigitOne),
-            SIGN_LAE => Ok(NewTaiLue::SignLae),
+            'ᦀ' => Ok(NewTaiLue::LetterHighQa),
+            'ᦁ' => Ok(NewTaiLue::LetterLowQa),
+            'ᦂ' => Ok(NewTaiLue::LetterHighKa),
+            'ᦃ' => Ok(NewTaiLue::LetterHighXa),
+            'ᦄ' => Ok(NewTaiLue::LetterHighNga),
+            'ᦅ' => Ok(NewTaiLue::LetterLowKa),
+            'ᦆ' => Ok(NewTaiLue::LetterLowXa),
+            'ᦇ' => Ok(NewTaiLue::LetterLowNga),
+            'ᦈ' => Ok(NewTaiLue::LetterHighTsa),
+            'ᦉ' => Ok(NewTaiLue::LetterHighSa),
+            'ᦊ' => Ok(NewTaiLue::LetterHighYa),
+            'ᦋ' => Ok(NewTaiLue::LetterLowTsa),
+            'ᦌ' => Ok(NewTaiLue::LetterLowSa),
+            'ᦍ' => Ok(NewTaiLue::LetterLowYa),
+            'ᦎ' => Ok(NewTaiLue::LetterHighTa),
+            'ᦏ' => Ok(NewTaiLue::LetterHighTha),
+            'ᦐ' => Ok(NewTaiLue::LetterHighNa),
+            'ᦑ' => Ok(NewTaiLue::LetterLowTa),
+            'ᦒ' => Ok(NewTaiLue::LetterLowTha),
+            'ᦓ' => Ok(NewTaiLue::LetterLowNa),
+            'ᦔ' => Ok(NewTaiLue::LetterHighPa),
+            'ᦕ' => Ok(NewTaiLue::LetterHighPha),
+            'ᦖ' => Ok(NewTaiLue::LetterHighMa),
+            'ᦗ' => Ok(NewTaiLue::LetterLowPa),
+            'ᦘ' => Ok(NewTaiLue::LetterLowPha),
+            'ᦙ' => Ok(NewTaiLue::LetterLowMa),
+            'ᦚ' => Ok(NewTaiLue::LetterHighFa),
+            'ᦛ' => Ok(NewTaiLue::LetterHighVa),
+            'ᦜ' => Ok(NewTaiLue::LetterHighLa),
+            'ᦝ' => Ok(NewTaiLue::LetterLowFa),
+            'ᦞ' => Ok(NewTaiLue::LetterLowVa),
+            'ᦟ' => Ok(NewTaiLue::LetterLowLa),
+            'ᦠ' => Ok(NewTaiLue::LetterHighHa),
+            'ᦡ' => Ok(NewTaiLue::LetterHighDa),
+            'ᦢ' => Ok(NewTaiLue::LetterHighBa),
+            'ᦣ' => Ok(NewTaiLue::LetterLowHa),
+            'ᦤ' => Ok(NewTaiLue::LetterLowDa),
+            'ᦥ' => Ok(NewTaiLue::LetterLowBa),
+            'ᦦ' => Ok(NewTaiLue::LetterHighKva),
+            'ᦧ' => Ok(NewTaiLue::LetterHighXva),
+            'ᦨ' => Ok(NewTaiLue::LetterLowKva),
+            'ᦩ' => Ok(NewTaiLue::LetterLowXva),
+            'ᦪ' => Ok(NewTaiLue::LetterHighSua),
+            'ᦫ' => Ok(NewTaiLue::LetterLowSua),
+            'ᦰ' => Ok(NewTaiLue::VowelSignVowelShortener),
+            'ᦱ' => Ok(NewTaiLue::VowelSignAa),
+            'ᦲ' => Ok(NewTaiLue::VowelSignIi),
+            'ᦳ' => Ok(NewTaiLue::VowelSignU),
+            'ᦴ' => Ok(NewTaiLue::VowelSignUu),
+            'ᦵ' => Ok(NewTaiLue::VowelSignE),
+            'ᦶ' => Ok(NewTaiLue::VowelSignAe),
+            'ᦷ' => Ok(NewTaiLue::VowelSignO),
+            'ᦸ' => Ok(NewTaiLue::VowelSignOa),
+            'ᦹ' => Ok(NewTaiLue::VowelSignUe),
+            'ᦺ' => Ok(NewTaiLue::VowelSignAy),
+            'ᦻ' => Ok(NewTaiLue::VowelSignAay),
+            'ᦼ' => Ok(NewTaiLue::VowelSignUy),
+            'ᦽ' => Ok(NewTaiLue::VowelSignOy),
+            'ᦾ' => Ok(NewTaiLue::VowelSignOay),
+            'ᦿ' => Ok(NewTaiLue::VowelSignUey),
+            'ᧀ' => Ok(NewTaiLue::VowelSignIy),
+            'ᧁ' => Ok(NewTaiLue::LetterFinalV),
+            'ᧂ' => Ok(NewTaiLue::LetterFinalNg),
+            'ᧃ' => Ok(NewTaiLue::LetterFinalN),
+            'ᧄ' => Ok(NewTaiLue::LetterFinalM),
+            'ᧅ' => Ok(NewTaiLue::LetterFinalK),
+            'ᧆ' => Ok(NewTaiLue::LetterFinalD),
+            'ᧇ' => Ok(NewTaiLue::LetterFinalB),
+            'ᧈ' => Ok(NewTaiLue::ToneMarkDash1),
+            'ᧉ' => Ok(NewTaiLue::ToneMarkDash2),
+            '᧐' => Ok(NewTaiLue::DigitZero),
+            '᧑' => Ok(NewTaiLue::DigitOne),
+            '᧒' => Ok(NewTaiLue::DigitTwo),
+            '᧓' => Ok(NewTaiLue::DigitThree),
+            '᧔' => Ok(NewTaiLue::DigitFour),
+            '᧕' => Ok(NewTaiLue::DigitFive),
+            '᧖' => Ok(NewTaiLue::DigitSix),
+            '᧗' => Ok(NewTaiLue::DigitSeven),
+            '᧘' => Ok(NewTaiLue::DigitEight),
+            '᧙' => Ok(NewTaiLue::DigitNine),
+            '᧚' => Ok(NewTaiLue::ThamDigitOne),
+            '᧞' => Ok(NewTaiLue::SignLae),
             _ => Err(()),
         }
     }

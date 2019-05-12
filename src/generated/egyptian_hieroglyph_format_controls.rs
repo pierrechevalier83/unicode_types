@@ -1,24 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{13430}: '𓐰'
-    pub const EGYPTIAN_HIEROGLYPH_VERTICAL_JOINER: char = '𓐰';
-    /// \u{13431}: '𓐱'
-    pub const EGYPTIAN_HIEROGLYPH_HORIZONTAL_JOINER: char = '𓐱';
-    /// \u{13432}: '𓐲'
-    pub const EGYPTIAN_HIEROGLYPH_INSERT_AT_TOP_START: char = '𓐲';
-    /// \u{13433}: '𓐳'
-    pub const EGYPTIAN_HIEROGLYPH_INSERT_AT_BOTTOM_START: char = '𓐳';
-    /// \u{13434}: '𓐴'
-    pub const EGYPTIAN_HIEROGLYPH_INSERT_AT_TOP_END: char = '𓐴';
-    /// \u{13435}: '𓐵'
-    pub const EGYPTIAN_HIEROGLYPH_INSERT_AT_BOTTOM_END: char = '𓐵';
-    /// \u{13436}: '𓐶'
-    pub const EGYPTIAN_HIEROGLYPH_OVERLAY_MIDDLE: char = '𓐶';
-    /// \u{13437}: '𓐷'
-    pub const EGYPTIAN_HIEROGLYPH_BEGIN_SEGMENT: char = '𓐷';
-    /// \u{13438}: '𓐸'
-    pub const EGYPTIAN_HIEROGLYPH_END_SEGMENT: char = '𓐸';
-}
 
 /// An enum to represent all characters in the EgyptianHieroglyphFormatControls block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -45,17 +24,16 @@ pub enum EgyptianHieroglyphFormatControls {
 
 impl Into<char> for EgyptianHieroglyphFormatControls {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphVerticalJoiner => EGYPTIAN_HIEROGLYPH_VERTICAL_JOINER,
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphHorizontalJoiner => EGYPTIAN_HIEROGLYPH_HORIZONTAL_JOINER,
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopStart => EGYPTIAN_HIEROGLYPH_INSERT_AT_TOP_START,
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomStart => EGYPTIAN_HIEROGLYPH_INSERT_AT_BOTTOM_START,
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopEnd => EGYPTIAN_HIEROGLYPH_INSERT_AT_TOP_END,
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomEnd => EGYPTIAN_HIEROGLYPH_INSERT_AT_BOTTOM_END,
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphOverlayMiddle => EGYPTIAN_HIEROGLYPH_OVERLAY_MIDDLE,
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphBeginSegment => EGYPTIAN_HIEROGLYPH_BEGIN_SEGMENT,
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphEndSegment => EGYPTIAN_HIEROGLYPH_END_SEGMENT,
+            EgyptianHieroglyphFormatControls::EgyptianHieroglyphVerticalJoiner => '𓐰',
+            EgyptianHieroglyphFormatControls::EgyptianHieroglyphHorizontalJoiner => '𓐱',
+            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopStart => '𓐲',
+            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomStart => '𓐳',
+            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopEnd => '𓐴',
+            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomEnd => '𓐵',
+            EgyptianHieroglyphFormatControls::EgyptianHieroglyphOverlayMiddle => '𓐶',
+            EgyptianHieroglyphFormatControls::EgyptianHieroglyphBeginSegment => '𓐷',
+            EgyptianHieroglyphFormatControls::EgyptianHieroglyphEndSegment => '𓐸',
         }
     }
 }
@@ -63,17 +41,16 @@ impl Into<char> for EgyptianHieroglyphFormatControls {
 impl std::convert::TryFrom<char> for EgyptianHieroglyphFormatControls {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            EGYPTIAN_HIEROGLYPH_VERTICAL_JOINER => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphVerticalJoiner),
-            EGYPTIAN_HIEROGLYPH_HORIZONTAL_JOINER => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphHorizontalJoiner),
-            EGYPTIAN_HIEROGLYPH_INSERT_AT_TOP_START => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopStart),
-            EGYPTIAN_HIEROGLYPH_INSERT_AT_BOTTOM_START => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomStart),
-            EGYPTIAN_HIEROGLYPH_INSERT_AT_TOP_END => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopEnd),
-            EGYPTIAN_HIEROGLYPH_INSERT_AT_BOTTOM_END => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomEnd),
-            EGYPTIAN_HIEROGLYPH_OVERLAY_MIDDLE => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphOverlayMiddle),
-            EGYPTIAN_HIEROGLYPH_BEGIN_SEGMENT => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphBeginSegment),
-            EGYPTIAN_HIEROGLYPH_END_SEGMENT => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphEndSegment),
+            '𓐰' => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphVerticalJoiner),
+            '𓐱' => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphHorizontalJoiner),
+            '𓐲' => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopStart),
+            '𓐳' => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomStart),
+            '𓐴' => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopEnd),
+            '𓐵' => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomEnd),
+            '𓐶' => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphOverlayMiddle),
+            '𓐷' => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphBeginSegment),
+            '𓐸' => Ok(EgyptianHieroglyphFormatControls::EgyptianHieroglyphEndSegment),
             _ => Err(()),
         }
     }

@@ -1,76 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1950}: 'ᥐ'
-    pub const LETTER_KA: char = 'ᥐ';
-    /// \u{1951}: 'ᥑ'
-    pub const LETTER_XA: char = 'ᥑ';
-    /// \u{1952}: 'ᥒ'
-    pub const LETTER_NGA: char = 'ᥒ';
-    /// \u{1953}: 'ᥓ'
-    pub const LETTER_TSA: char = 'ᥓ';
-    /// \u{1954}: 'ᥔ'
-    pub const LETTER_SA: char = 'ᥔ';
-    /// \u{1955}: 'ᥕ'
-    pub const LETTER_YA: char = 'ᥕ';
-    /// \u{1956}: 'ᥖ'
-    pub const LETTER_TA: char = 'ᥖ';
-    /// \u{1957}: 'ᥗ'
-    pub const LETTER_THA: char = 'ᥗ';
-    /// \u{1958}: 'ᥘ'
-    pub const LETTER_LA: char = 'ᥘ';
-    /// \u{1959}: 'ᥙ'
-    pub const LETTER_PA: char = 'ᥙ';
-    /// \u{195a}: 'ᥚ'
-    pub const LETTER_PHA: char = 'ᥚ';
-    /// \u{195b}: 'ᥛ'
-    pub const LETTER_MA: char = 'ᥛ';
-    /// \u{195c}: 'ᥜ'
-    pub const LETTER_FA: char = 'ᥜ';
-    /// \u{195d}: 'ᥝ'
-    pub const LETTER_VA: char = 'ᥝ';
-    /// \u{195e}: 'ᥞ'
-    pub const LETTER_HA: char = 'ᥞ';
-    /// \u{195f}: 'ᥟ'
-    pub const LETTER_QA: char = 'ᥟ';
-    /// \u{1960}: 'ᥠ'
-    pub const LETTER_KHA: char = 'ᥠ';
-    /// \u{1961}: 'ᥡ'
-    pub const LETTER_TSHA: char = 'ᥡ';
-    /// \u{1962}: 'ᥢ'
-    pub const LETTER_NA: char = 'ᥢ';
-    /// \u{1963}: 'ᥣ'
-    pub const LETTER_A: char = 'ᥣ';
-    /// \u{1964}: 'ᥤ'
-    pub const LETTER_I: char = 'ᥤ';
-    /// \u{1965}: 'ᥥ'
-    pub const LETTER_EE: char = 'ᥥ';
-    /// \u{1966}: 'ᥦ'
-    pub const LETTER_EH: char = 'ᥦ';
-    /// \u{1967}: 'ᥧ'
-    pub const LETTER_U: char = 'ᥧ';
-    /// \u{1968}: 'ᥨ'
-    pub const LETTER_OO: char = 'ᥨ';
-    /// \u{1969}: 'ᥩ'
-    pub const LETTER_O: char = 'ᥩ';
-    /// \u{196a}: 'ᥪ'
-    pub const LETTER_UE: char = 'ᥪ';
-    /// \u{196b}: 'ᥫ'
-    pub const LETTER_E: char = 'ᥫ';
-    /// \u{196c}: 'ᥬ'
-    pub const LETTER_AUE: char = 'ᥬ';
-    /// \u{196d}: 'ᥭ'
-    pub const LETTER_AI: char = 'ᥭ';
-    /// \u{1970}: 'ᥰ'
-    pub const LETTER_TONE_DASH_2: char = 'ᥰ';
-    /// \u{1971}: 'ᥱ'
-    pub const LETTER_TONE_DASH_3: char = 'ᥱ';
-    /// \u{1972}: 'ᥲ'
-    pub const LETTER_TONE_DASH_4: char = 'ᥲ';
-    /// \u{1973}: 'ᥳ'
-    pub const LETTER_TONE_DASH_5: char = 'ᥳ';
-    /// \u{1974}: 'ᥴ'
-    pub const LETTER_TONE_DASH_6: char = 'ᥴ';
-}
 
 /// An enum to represent all characters in the TaiLe block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -149,43 +76,42 @@ pub enum TaiLe {
 
 impl Into<char> for TaiLe {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            TaiLe::LetterKa => LETTER_KA,
-            TaiLe::LetterXa => LETTER_XA,
-            TaiLe::LetterNga => LETTER_NGA,
-            TaiLe::LetterTsa => LETTER_TSA,
-            TaiLe::LetterSa => LETTER_SA,
-            TaiLe::LetterYa => LETTER_YA,
-            TaiLe::LetterTa => LETTER_TA,
-            TaiLe::LetterTha => LETTER_THA,
-            TaiLe::LetterLa => LETTER_LA,
-            TaiLe::LetterPa => LETTER_PA,
-            TaiLe::LetterPha => LETTER_PHA,
-            TaiLe::LetterMa => LETTER_MA,
-            TaiLe::LetterFa => LETTER_FA,
-            TaiLe::LetterVa => LETTER_VA,
-            TaiLe::LetterHa => LETTER_HA,
-            TaiLe::LetterQa => LETTER_QA,
-            TaiLe::LetterKha => LETTER_KHA,
-            TaiLe::LetterTsha => LETTER_TSHA,
-            TaiLe::LetterNa => LETTER_NA,
-            TaiLe::LetterA => LETTER_A,
-            TaiLe::LetterI => LETTER_I,
-            TaiLe::LetterEe => LETTER_EE,
-            TaiLe::LetterEh => LETTER_EH,
-            TaiLe::LetterU => LETTER_U,
-            TaiLe::LetterOo => LETTER_OO,
-            TaiLe::LetterO => LETTER_O,
-            TaiLe::LetterUe => LETTER_UE,
-            TaiLe::LetterE => LETTER_E,
-            TaiLe::LetterAue => LETTER_AUE,
-            TaiLe::LetterAi => LETTER_AI,
-            TaiLe::LetterToneDash2 => LETTER_TONE_DASH_2,
-            TaiLe::LetterToneDash3 => LETTER_TONE_DASH_3,
-            TaiLe::LetterToneDash4 => LETTER_TONE_DASH_4,
-            TaiLe::LetterToneDash5 => LETTER_TONE_DASH_5,
-            TaiLe::LetterToneDash6 => LETTER_TONE_DASH_6,
+            TaiLe::LetterKa => 'ᥐ',
+            TaiLe::LetterXa => 'ᥑ',
+            TaiLe::LetterNga => 'ᥒ',
+            TaiLe::LetterTsa => 'ᥓ',
+            TaiLe::LetterSa => 'ᥔ',
+            TaiLe::LetterYa => 'ᥕ',
+            TaiLe::LetterTa => 'ᥖ',
+            TaiLe::LetterTha => 'ᥗ',
+            TaiLe::LetterLa => 'ᥘ',
+            TaiLe::LetterPa => 'ᥙ',
+            TaiLe::LetterPha => 'ᥚ',
+            TaiLe::LetterMa => 'ᥛ',
+            TaiLe::LetterFa => 'ᥜ',
+            TaiLe::LetterVa => 'ᥝ',
+            TaiLe::LetterHa => 'ᥞ',
+            TaiLe::LetterQa => 'ᥟ',
+            TaiLe::LetterKha => 'ᥠ',
+            TaiLe::LetterTsha => 'ᥡ',
+            TaiLe::LetterNa => 'ᥢ',
+            TaiLe::LetterA => 'ᥣ',
+            TaiLe::LetterI => 'ᥤ',
+            TaiLe::LetterEe => 'ᥥ',
+            TaiLe::LetterEh => 'ᥦ',
+            TaiLe::LetterU => 'ᥧ',
+            TaiLe::LetterOo => 'ᥨ',
+            TaiLe::LetterO => 'ᥩ',
+            TaiLe::LetterUe => 'ᥪ',
+            TaiLe::LetterE => 'ᥫ',
+            TaiLe::LetterAue => 'ᥬ',
+            TaiLe::LetterAi => 'ᥭ',
+            TaiLe::LetterToneDash2 => 'ᥰ',
+            TaiLe::LetterToneDash3 => 'ᥱ',
+            TaiLe::LetterToneDash4 => 'ᥲ',
+            TaiLe::LetterToneDash5 => 'ᥳ',
+            TaiLe::LetterToneDash6 => 'ᥴ',
         }
     }
 }
@@ -193,43 +119,42 @@ impl Into<char> for TaiLe {
 impl std::convert::TryFrom<char> for TaiLe {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_KA => Ok(TaiLe::LetterKa),
-            LETTER_XA => Ok(TaiLe::LetterXa),
-            LETTER_NGA => Ok(TaiLe::LetterNga),
-            LETTER_TSA => Ok(TaiLe::LetterTsa),
-            LETTER_SA => Ok(TaiLe::LetterSa),
-            LETTER_YA => Ok(TaiLe::LetterYa),
-            LETTER_TA => Ok(TaiLe::LetterTa),
-            LETTER_THA => Ok(TaiLe::LetterTha),
-            LETTER_LA => Ok(TaiLe::LetterLa),
-            LETTER_PA => Ok(TaiLe::LetterPa),
-            LETTER_PHA => Ok(TaiLe::LetterPha),
-            LETTER_MA => Ok(TaiLe::LetterMa),
-            LETTER_FA => Ok(TaiLe::LetterFa),
-            LETTER_VA => Ok(TaiLe::LetterVa),
-            LETTER_HA => Ok(TaiLe::LetterHa),
-            LETTER_QA => Ok(TaiLe::LetterQa),
-            LETTER_KHA => Ok(TaiLe::LetterKha),
-            LETTER_TSHA => Ok(TaiLe::LetterTsha),
-            LETTER_NA => Ok(TaiLe::LetterNa),
-            LETTER_A => Ok(TaiLe::LetterA),
-            LETTER_I => Ok(TaiLe::LetterI),
-            LETTER_EE => Ok(TaiLe::LetterEe),
-            LETTER_EH => Ok(TaiLe::LetterEh),
-            LETTER_U => Ok(TaiLe::LetterU),
-            LETTER_OO => Ok(TaiLe::LetterOo),
-            LETTER_O => Ok(TaiLe::LetterO),
-            LETTER_UE => Ok(TaiLe::LetterUe),
-            LETTER_E => Ok(TaiLe::LetterE),
-            LETTER_AUE => Ok(TaiLe::LetterAue),
-            LETTER_AI => Ok(TaiLe::LetterAi),
-            LETTER_TONE_DASH_2 => Ok(TaiLe::LetterToneDash2),
-            LETTER_TONE_DASH_3 => Ok(TaiLe::LetterToneDash3),
-            LETTER_TONE_DASH_4 => Ok(TaiLe::LetterToneDash4),
-            LETTER_TONE_DASH_5 => Ok(TaiLe::LetterToneDash5),
-            LETTER_TONE_DASH_6 => Ok(TaiLe::LetterToneDash6),
+            'ᥐ' => Ok(TaiLe::LetterKa),
+            'ᥑ' => Ok(TaiLe::LetterXa),
+            'ᥒ' => Ok(TaiLe::LetterNga),
+            'ᥓ' => Ok(TaiLe::LetterTsa),
+            'ᥔ' => Ok(TaiLe::LetterSa),
+            'ᥕ' => Ok(TaiLe::LetterYa),
+            'ᥖ' => Ok(TaiLe::LetterTa),
+            'ᥗ' => Ok(TaiLe::LetterTha),
+            'ᥘ' => Ok(TaiLe::LetterLa),
+            'ᥙ' => Ok(TaiLe::LetterPa),
+            'ᥚ' => Ok(TaiLe::LetterPha),
+            'ᥛ' => Ok(TaiLe::LetterMa),
+            'ᥜ' => Ok(TaiLe::LetterFa),
+            'ᥝ' => Ok(TaiLe::LetterVa),
+            'ᥞ' => Ok(TaiLe::LetterHa),
+            'ᥟ' => Ok(TaiLe::LetterQa),
+            'ᥠ' => Ok(TaiLe::LetterKha),
+            'ᥡ' => Ok(TaiLe::LetterTsha),
+            'ᥢ' => Ok(TaiLe::LetterNa),
+            'ᥣ' => Ok(TaiLe::LetterA),
+            'ᥤ' => Ok(TaiLe::LetterI),
+            'ᥥ' => Ok(TaiLe::LetterEe),
+            'ᥦ' => Ok(TaiLe::LetterEh),
+            'ᥧ' => Ok(TaiLe::LetterU),
+            'ᥨ' => Ok(TaiLe::LetterOo),
+            'ᥩ' => Ok(TaiLe::LetterO),
+            'ᥪ' => Ok(TaiLe::LetterUe),
+            'ᥫ' => Ok(TaiLe::LetterE),
+            'ᥬ' => Ok(TaiLe::LetterAue),
+            'ᥭ' => Ok(TaiLe::LetterAi),
+            'ᥰ' => Ok(TaiLe::LetterToneDash2),
+            'ᥱ' => Ok(TaiLe::LetterToneDash3),
+            'ᥲ' => Ok(TaiLe::LetterToneDash4),
+            'ᥳ' => Ok(TaiLe::LetterToneDash5),
+            'ᥴ' => Ok(TaiLe::LetterToneDash6),
             _ => Err(()),
         }
     }

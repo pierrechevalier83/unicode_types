@@ -1,260 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1a20}: 'ᨠ'
-    pub const LETTER_HIGH_KA: char = 'ᨠ';
-    /// \u{1a21}: 'ᨡ'
-    pub const LETTER_HIGH_KHA: char = 'ᨡ';
-    /// \u{1a22}: 'ᨢ'
-    pub const LETTER_HIGH_KXA: char = 'ᨢ';
-    /// \u{1a23}: 'ᨣ'
-    pub const LETTER_LOW_KA: char = 'ᨣ';
-    /// \u{1a24}: 'ᨤ'
-    pub const LETTER_LOW_KXA: char = 'ᨤ';
-    /// \u{1a25}: 'ᨥ'
-    pub const LETTER_LOW_KHA: char = 'ᨥ';
-    /// \u{1a26}: 'ᨦ'
-    pub const LETTER_NGA: char = 'ᨦ';
-    /// \u{1a27}: 'ᨧ'
-    pub const LETTER_HIGH_CA: char = 'ᨧ';
-    /// \u{1a28}: 'ᨨ'
-    pub const LETTER_HIGH_CHA: char = 'ᨨ';
-    /// \u{1a29}: 'ᨩ'
-    pub const LETTER_LOW_CA: char = 'ᨩ';
-    /// \u{1a2a}: 'ᨪ'
-    pub const LETTER_LOW_SA: char = 'ᨪ';
-    /// \u{1a2b}: 'ᨫ'
-    pub const LETTER_LOW_CHA: char = 'ᨫ';
-    /// \u{1a2c}: 'ᨬ'
-    pub const LETTER_NYA: char = 'ᨬ';
-    /// \u{1a2d}: 'ᨭ'
-    pub const LETTER_RATA: char = 'ᨭ';
-    /// \u{1a2e}: 'ᨮ'
-    pub const LETTER_HIGH_RATHA: char = 'ᨮ';
-    /// \u{1a2f}: 'ᨯ'
-    pub const LETTER_DA: char = 'ᨯ';
-    /// \u{1a30}: 'ᨰ'
-    pub const LETTER_LOW_RATHA: char = 'ᨰ';
-    /// \u{1a31}: 'ᨱ'
-    pub const LETTER_RANA: char = 'ᨱ';
-    /// \u{1a32}: 'ᨲ'
-    pub const LETTER_HIGH_TA: char = 'ᨲ';
-    /// \u{1a33}: 'ᨳ'
-    pub const LETTER_HIGH_THA: char = 'ᨳ';
-    /// \u{1a34}: 'ᨴ'
-    pub const LETTER_LOW_TA: char = 'ᨴ';
-    /// \u{1a35}: 'ᨵ'
-    pub const LETTER_LOW_THA: char = 'ᨵ';
-    /// \u{1a36}: 'ᨶ'
-    pub const LETTER_NA: char = 'ᨶ';
-    /// \u{1a37}: 'ᨷ'
-    pub const LETTER_BA: char = 'ᨷ';
-    /// \u{1a38}: 'ᨸ'
-    pub const LETTER_HIGH_PA: char = 'ᨸ';
-    /// \u{1a39}: 'ᨹ'
-    pub const LETTER_HIGH_PHA: char = 'ᨹ';
-    /// \u{1a3a}: 'ᨺ'
-    pub const LETTER_HIGH_FA: char = 'ᨺ';
-    /// \u{1a3b}: 'ᨻ'
-    pub const LETTER_LOW_PA: char = 'ᨻ';
-    /// \u{1a3c}: 'ᨼ'
-    pub const LETTER_LOW_FA: char = 'ᨼ';
-    /// \u{1a3d}: 'ᨽ'
-    pub const LETTER_LOW_PHA: char = 'ᨽ';
-    /// \u{1a3e}: 'ᨾ'
-    pub const LETTER_MA: char = 'ᨾ';
-    /// \u{1a3f}: 'ᨿ'
-    pub const LETTER_LOW_YA: char = 'ᨿ';
-    /// \u{1a40}: 'ᩀ'
-    pub const LETTER_HIGH_YA: char = 'ᩀ';
-    /// \u{1a41}: 'ᩁ'
-    pub const LETTER_RA: char = 'ᩁ';
-    /// \u{1a42}: 'ᩂ'
-    pub const LETTER_RUE: char = 'ᩂ';
-    /// \u{1a43}: 'ᩃ'
-    pub const LETTER_LA: char = 'ᩃ';
-    /// \u{1a44}: 'ᩄ'
-    pub const LETTER_LUE: char = 'ᩄ';
-    /// \u{1a45}: 'ᩅ'
-    pub const LETTER_WA: char = 'ᩅ';
-    /// \u{1a46}: 'ᩆ'
-    pub const LETTER_HIGH_SHA: char = 'ᩆ';
-    /// \u{1a47}: 'ᩇ'
-    pub const LETTER_HIGH_SSA: char = 'ᩇ';
-    /// \u{1a48}: 'ᩈ'
-    pub const LETTER_HIGH_SA: char = 'ᩈ';
-    /// \u{1a49}: 'ᩉ'
-    pub const LETTER_HIGH_HA: char = 'ᩉ';
-    /// \u{1a4a}: 'ᩊ'
-    pub const LETTER_LLA: char = 'ᩊ';
-    /// \u{1a4b}: 'ᩋ'
-    pub const LETTER_A: char = 'ᩋ';
-    /// \u{1a4c}: 'ᩌ'
-    pub const LETTER_LOW_HA: char = 'ᩌ';
-    /// \u{1a4d}: 'ᩍ'
-    pub const LETTER_I: char = 'ᩍ';
-    /// \u{1a4e}: 'ᩎ'
-    pub const LETTER_II: char = 'ᩎ';
-    /// \u{1a4f}: 'ᩏ'
-    pub const LETTER_U: char = 'ᩏ';
-    /// \u{1a50}: 'ᩐ'
-    pub const LETTER_UU: char = 'ᩐ';
-    /// \u{1a51}: 'ᩑ'
-    pub const LETTER_EE: char = 'ᩑ';
-    /// \u{1a52}: 'ᩒ'
-    pub const LETTER_OO: char = 'ᩒ';
-    /// \u{1a53}: 'ᩓ'
-    pub const LETTER_LAE: char = 'ᩓ';
-    /// \u{1a54}: 'ᩔ'
-    pub const LETTER_GREAT_SA: char = 'ᩔ';
-    /// \u{1a55}: 'ᩕ'
-    pub const CONSONANT_SIGN_MEDIAL_RA: char = 'ᩕ';
-    /// \u{1a56}: 'ᩖ'
-    pub const CONSONANT_SIGN_MEDIAL_LA: char = 'ᩖ';
-    /// \u{1a57}: 'ᩗ'
-    pub const CONSONANT_SIGN_LA_TANG_LAI: char = 'ᩗ';
-    /// \u{1a58}: 'ᩘ'
-    pub const SIGN_MAI_KANG_LAI: char = 'ᩘ';
-    /// \u{1a59}: 'ᩙ'
-    pub const CONSONANT_SIGN_FINAL_NGA: char = 'ᩙ';
-    /// \u{1a5a}: 'ᩚ'
-    pub const CONSONANT_SIGN_LOW_PA: char = 'ᩚ';
-    /// \u{1a5b}: 'ᩛ'
-    pub const CONSONANT_SIGN_HIGH_RATHA_OR_LOW_PA: char = 'ᩛ';
-    /// \u{1a5c}: 'ᩜ'
-    pub const CONSONANT_SIGN_MA: char = 'ᩜ';
-    /// \u{1a5d}: 'ᩝ'
-    pub const CONSONANT_SIGN_BA: char = 'ᩝ';
-    /// \u{1a5e}: 'ᩞ'
-    pub const CONSONANT_SIGN_SA: char = 'ᩞ';
-    /// \u{1a60}: '᩠'
-    pub const SIGN_SAKOT: char = '᩠';
-    /// \u{1a61}: 'ᩡ'
-    pub const VOWEL_SIGN_A: char = 'ᩡ';
-    /// \u{1a62}: 'ᩢ'
-    pub const VOWEL_SIGN_MAI_SAT: char = 'ᩢ';
-    /// \u{1a63}: 'ᩣ'
-    pub const VOWEL_SIGN_AA: char = 'ᩣ';
-    /// \u{1a64}: 'ᩤ'
-    pub const VOWEL_SIGN_TALL_AA: char = 'ᩤ';
-    /// \u{1a65}: 'ᩥ'
-    pub const VOWEL_SIGN_I: char = 'ᩥ';
-    /// \u{1a66}: 'ᩦ'
-    pub const VOWEL_SIGN_II: char = 'ᩦ';
-    /// \u{1a67}: 'ᩧ'
-    pub const VOWEL_SIGN_UE: char = 'ᩧ';
-    /// \u{1a68}: 'ᩨ'
-    pub const VOWEL_SIGN_UUE: char = 'ᩨ';
-    /// \u{1a69}: 'ᩩ'
-    pub const VOWEL_SIGN_U: char = 'ᩩ';
-    /// \u{1a6a}: 'ᩪ'
-    pub const VOWEL_SIGN_UU: char = 'ᩪ';
-    /// \u{1a6b}: 'ᩫ'
-    pub const VOWEL_SIGN_O: char = 'ᩫ';
-    /// \u{1a6c}: 'ᩬ'
-    pub const VOWEL_SIGN_OA_BELOW: char = 'ᩬ';
-    /// \u{1a6d}: 'ᩭ'
-    pub const VOWEL_SIGN_OY: char = 'ᩭ';
-    /// \u{1a6e}: 'ᩮ'
-    pub const VOWEL_SIGN_E: char = 'ᩮ';
-    /// \u{1a6f}: 'ᩯ'
-    pub const VOWEL_SIGN_AE: char = 'ᩯ';
-    /// \u{1a70}: 'ᩰ'
-    pub const VOWEL_SIGN_OO: char = 'ᩰ';
-    /// \u{1a71}: 'ᩱ'
-    pub const VOWEL_SIGN_AI: char = 'ᩱ';
-    /// \u{1a72}: 'ᩲ'
-    pub const VOWEL_SIGN_THAM_AI: char = 'ᩲ';
-    /// \u{1a73}: 'ᩳ'
-    pub const VOWEL_SIGN_OA_ABOVE: char = 'ᩳ';
-    /// \u{1a74}: 'ᩴ'
-    pub const SIGN_MAI_KANG: char = 'ᩴ';
-    /// \u{1a75}: '᩵'
-    pub const SIGN_TONE_DASH_1: char = '᩵';
-    /// \u{1a76}: '᩶'
-    pub const SIGN_TONE_DASH_2: char = '᩶';
-    /// \u{1a77}: '᩷'
-    pub const SIGN_KHUEN_TONE_DASH_3: char = '᩷';
-    /// \u{1a78}: '᩸'
-    pub const SIGN_KHUEN_TONE_DASH_4: char = '᩸';
-    /// \u{1a79}: '᩹'
-    pub const SIGN_KHUEN_TONE_DASH_5: char = '᩹';
-    /// \u{1a7a}: '᩺'
-    pub const SIGN_RA_HAAM: char = '᩺';
-    /// \u{1a7b}: '᩻'
-    pub const SIGN_MAI_SAM: char = '᩻';
-    /// \u{1a7c}: '᩼'
-    pub const SIGN_KHUEN_DASH_LUE_KARAN: char = '᩼';
-    /// \u{1a7f}: '᩿'
-    pub const COMBINING_CRYPTOGRAMMIC_DOT: char = '᩿';
-    /// \u{1a80}: '᪀'
-    pub const HORA_DIGIT_ZERO: char = '᪀';
-    /// \u{1a81}: '᪁'
-    pub const HORA_DIGIT_ONE: char = '᪁';
-    /// \u{1a82}: '᪂'
-    pub const HORA_DIGIT_TWO: char = '᪂';
-    /// \u{1a83}: '᪃'
-    pub const HORA_DIGIT_THREE: char = '᪃';
-    /// \u{1a84}: '᪄'
-    pub const HORA_DIGIT_FOUR: char = '᪄';
-    /// \u{1a85}: '᪅'
-    pub const HORA_DIGIT_FIVE: char = '᪅';
-    /// \u{1a86}: '᪆'
-    pub const HORA_DIGIT_SIX: char = '᪆';
-    /// \u{1a87}: '᪇'
-    pub const HORA_DIGIT_SEVEN: char = '᪇';
-    /// \u{1a88}: '᪈'
-    pub const HORA_DIGIT_EIGHT: char = '᪈';
-    /// \u{1a89}: '᪉'
-    pub const HORA_DIGIT_NINE: char = '᪉';
-    /// \u{1a90}: '᪐'
-    pub const THAM_DIGIT_ZERO: char = '᪐';
-    /// \u{1a91}: '᪑'
-    pub const THAM_DIGIT_ONE: char = '᪑';
-    /// \u{1a92}: '᪒'
-    pub const THAM_DIGIT_TWO: char = '᪒';
-    /// \u{1a93}: '᪓'
-    pub const THAM_DIGIT_THREE: char = '᪓';
-    /// \u{1a94}: '᪔'
-    pub const THAM_DIGIT_FOUR: char = '᪔';
-    /// \u{1a95}: '᪕'
-    pub const THAM_DIGIT_FIVE: char = '᪕';
-    /// \u{1a96}: '᪖'
-    pub const THAM_DIGIT_SIX: char = '᪖';
-    /// \u{1a97}: '᪗'
-    pub const THAM_DIGIT_SEVEN: char = '᪗';
-    /// \u{1a98}: '᪘'
-    pub const THAM_DIGIT_EIGHT: char = '᪘';
-    /// \u{1a99}: '᪙'
-    pub const THAM_DIGIT_NINE: char = '᪙';
-    /// \u{1aa0}: '᪠'
-    pub const SIGN_WIANG: char = '᪠';
-    /// \u{1aa1}: '᪡'
-    pub const SIGN_WIANGWAAK: char = '᪡';
-    /// \u{1aa2}: '᪢'
-    pub const SIGN_SAWAN: char = '᪢';
-    /// \u{1aa3}: '᪣'
-    pub const SIGN_KEOW: char = '᪣';
-    /// \u{1aa4}: '᪤'
-    pub const SIGN_HOY: char = '᪤';
-    /// \u{1aa5}: '᪥'
-    pub const SIGN_DOKMAI: char = '᪥';
-    /// \u{1aa6}: '᪦'
-    pub const SIGN_REVERSED_ROTATED_RANA: char = '᪦';
-    /// \u{1aa7}: 'ᪧ'
-    pub const SIGN_MAI_YAMOK: char = 'ᪧ';
-    /// \u{1aa8}: '᪨'
-    pub const SIGN_KAAN: char = '᪨';
-    /// \u{1aa9}: '᪩'
-    pub const SIGN_KAANKUU: char = '᪩';
-    /// \u{1aaa}: '᪪'
-    pub const SIGN_SATKAAN: char = '᪪';
-    /// \u{1aab}: '᪫'
-    pub const SIGN_SATKAANKUU: char = '᪫';
-    /// \u{1aac}: '᪬'
-    pub const SIGN_HANG: char = '᪬';
-    /// \u{1aad}: '᪭'
-    pub const SIGN_CAANG: char = '᪭';
-}
 
 /// An enum to represent all characters in the TaiTham block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -517,135 +260,134 @@ pub enum TaiTham {
 
 impl Into<char> for TaiTham {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            TaiTham::LetterHighKa => LETTER_HIGH_KA,
-            TaiTham::LetterHighKha => LETTER_HIGH_KHA,
-            TaiTham::LetterHighKxa => LETTER_HIGH_KXA,
-            TaiTham::LetterLowKa => LETTER_LOW_KA,
-            TaiTham::LetterLowKxa => LETTER_LOW_KXA,
-            TaiTham::LetterLowKha => LETTER_LOW_KHA,
-            TaiTham::LetterNga => LETTER_NGA,
-            TaiTham::LetterHighCa => LETTER_HIGH_CA,
-            TaiTham::LetterHighCha => LETTER_HIGH_CHA,
-            TaiTham::LetterLowCa => LETTER_LOW_CA,
-            TaiTham::LetterLowSa => LETTER_LOW_SA,
-            TaiTham::LetterLowCha => LETTER_LOW_CHA,
-            TaiTham::LetterNya => LETTER_NYA,
-            TaiTham::LetterRata => LETTER_RATA,
-            TaiTham::LetterHighRatha => LETTER_HIGH_RATHA,
-            TaiTham::LetterDa => LETTER_DA,
-            TaiTham::LetterLowRatha => LETTER_LOW_RATHA,
-            TaiTham::LetterRana => LETTER_RANA,
-            TaiTham::LetterHighTa => LETTER_HIGH_TA,
-            TaiTham::LetterHighTha => LETTER_HIGH_THA,
-            TaiTham::LetterLowTa => LETTER_LOW_TA,
-            TaiTham::LetterLowTha => LETTER_LOW_THA,
-            TaiTham::LetterNa => LETTER_NA,
-            TaiTham::LetterBa => LETTER_BA,
-            TaiTham::LetterHighPa => LETTER_HIGH_PA,
-            TaiTham::LetterHighPha => LETTER_HIGH_PHA,
-            TaiTham::LetterHighFa => LETTER_HIGH_FA,
-            TaiTham::LetterLowPa => LETTER_LOW_PA,
-            TaiTham::LetterLowFa => LETTER_LOW_FA,
-            TaiTham::LetterLowPha => LETTER_LOW_PHA,
-            TaiTham::LetterMa => LETTER_MA,
-            TaiTham::LetterLowYa => LETTER_LOW_YA,
-            TaiTham::LetterHighYa => LETTER_HIGH_YA,
-            TaiTham::LetterRa => LETTER_RA,
-            TaiTham::LetterRue => LETTER_RUE,
-            TaiTham::LetterLa => LETTER_LA,
-            TaiTham::LetterLue => LETTER_LUE,
-            TaiTham::LetterWa => LETTER_WA,
-            TaiTham::LetterHighSha => LETTER_HIGH_SHA,
-            TaiTham::LetterHighSsa => LETTER_HIGH_SSA,
-            TaiTham::LetterHighSa => LETTER_HIGH_SA,
-            TaiTham::LetterHighHa => LETTER_HIGH_HA,
-            TaiTham::LetterLla => LETTER_LLA,
-            TaiTham::LetterA => LETTER_A,
-            TaiTham::LetterLowHa => LETTER_LOW_HA,
-            TaiTham::LetterI => LETTER_I,
-            TaiTham::LetterIi => LETTER_II,
-            TaiTham::LetterU => LETTER_U,
-            TaiTham::LetterUu => LETTER_UU,
-            TaiTham::LetterEe => LETTER_EE,
-            TaiTham::LetterOo => LETTER_OO,
-            TaiTham::LetterLae => LETTER_LAE,
-            TaiTham::LetterGreatSa => LETTER_GREAT_SA,
-            TaiTham::ConsonantSignMedialRa => CONSONANT_SIGN_MEDIAL_RA,
-            TaiTham::ConsonantSignMedialLa => CONSONANT_SIGN_MEDIAL_LA,
-            TaiTham::ConsonantSignLaTangLai => CONSONANT_SIGN_LA_TANG_LAI,
-            TaiTham::SignMaiKangLai => SIGN_MAI_KANG_LAI,
-            TaiTham::ConsonantSignFinalNga => CONSONANT_SIGN_FINAL_NGA,
-            TaiTham::ConsonantSignLowPa => CONSONANT_SIGN_LOW_PA,
-            TaiTham::ConsonantSignHighRathaOrLowPa => CONSONANT_SIGN_HIGH_RATHA_OR_LOW_PA,
-            TaiTham::ConsonantSignMa => CONSONANT_SIGN_MA,
-            TaiTham::ConsonantSignBa => CONSONANT_SIGN_BA,
-            TaiTham::ConsonantSignSa => CONSONANT_SIGN_SA,
-            TaiTham::SignSakot => SIGN_SAKOT,
-            TaiTham::VowelSignA => VOWEL_SIGN_A,
-            TaiTham::VowelSignMaiSat => VOWEL_SIGN_MAI_SAT,
-            TaiTham::VowelSignAa => VOWEL_SIGN_AA,
-            TaiTham::VowelSignTallAa => VOWEL_SIGN_TALL_AA,
-            TaiTham::VowelSignI => VOWEL_SIGN_I,
-            TaiTham::VowelSignIi => VOWEL_SIGN_II,
-            TaiTham::VowelSignUe => VOWEL_SIGN_UE,
-            TaiTham::VowelSignUue => VOWEL_SIGN_UUE,
-            TaiTham::VowelSignU => VOWEL_SIGN_U,
-            TaiTham::VowelSignUu => VOWEL_SIGN_UU,
-            TaiTham::VowelSignO => VOWEL_SIGN_O,
-            TaiTham::VowelSignOaBelow => VOWEL_SIGN_OA_BELOW,
-            TaiTham::VowelSignOy => VOWEL_SIGN_OY,
-            TaiTham::VowelSignE => VOWEL_SIGN_E,
-            TaiTham::VowelSignAe => VOWEL_SIGN_AE,
-            TaiTham::VowelSignOo => VOWEL_SIGN_OO,
-            TaiTham::VowelSignAi => VOWEL_SIGN_AI,
-            TaiTham::VowelSignThamAi => VOWEL_SIGN_THAM_AI,
-            TaiTham::VowelSignOaAbove => VOWEL_SIGN_OA_ABOVE,
-            TaiTham::SignMaiKang => SIGN_MAI_KANG,
-            TaiTham::SignToneDash1 => SIGN_TONE_DASH_1,
-            TaiTham::SignToneDash2 => SIGN_TONE_DASH_2,
-            TaiTham::SignKhuenToneDash3 => SIGN_KHUEN_TONE_DASH_3,
-            TaiTham::SignKhuenToneDash4 => SIGN_KHUEN_TONE_DASH_4,
-            TaiTham::SignKhuenToneDash5 => SIGN_KHUEN_TONE_DASH_5,
-            TaiTham::SignRaHaam => SIGN_RA_HAAM,
-            TaiTham::SignMaiSam => SIGN_MAI_SAM,
-            TaiTham::SignKhuenDashLueKaran => SIGN_KHUEN_DASH_LUE_KARAN,
-            TaiTham::CombiningCryptogrammicDot => COMBINING_CRYPTOGRAMMIC_DOT,
-            TaiTham::HoraDigitZero => HORA_DIGIT_ZERO,
-            TaiTham::HoraDigitOne => HORA_DIGIT_ONE,
-            TaiTham::HoraDigitTwo => HORA_DIGIT_TWO,
-            TaiTham::HoraDigitThree => HORA_DIGIT_THREE,
-            TaiTham::HoraDigitFour => HORA_DIGIT_FOUR,
-            TaiTham::HoraDigitFive => HORA_DIGIT_FIVE,
-            TaiTham::HoraDigitSix => HORA_DIGIT_SIX,
-            TaiTham::HoraDigitSeven => HORA_DIGIT_SEVEN,
-            TaiTham::HoraDigitEight => HORA_DIGIT_EIGHT,
-            TaiTham::HoraDigitNine => HORA_DIGIT_NINE,
-            TaiTham::ThamDigitZero => THAM_DIGIT_ZERO,
-            TaiTham::ThamDigitOne => THAM_DIGIT_ONE,
-            TaiTham::ThamDigitTwo => THAM_DIGIT_TWO,
-            TaiTham::ThamDigitThree => THAM_DIGIT_THREE,
-            TaiTham::ThamDigitFour => THAM_DIGIT_FOUR,
-            TaiTham::ThamDigitFive => THAM_DIGIT_FIVE,
-            TaiTham::ThamDigitSix => THAM_DIGIT_SIX,
-            TaiTham::ThamDigitSeven => THAM_DIGIT_SEVEN,
-            TaiTham::ThamDigitEight => THAM_DIGIT_EIGHT,
-            TaiTham::ThamDigitNine => THAM_DIGIT_NINE,
-            TaiTham::SignWiang => SIGN_WIANG,
-            TaiTham::SignWiangwaak => SIGN_WIANGWAAK,
-            TaiTham::SignSawan => SIGN_SAWAN,
-            TaiTham::SignKeow => SIGN_KEOW,
-            TaiTham::SignHoy => SIGN_HOY,
-            TaiTham::SignDokmai => SIGN_DOKMAI,
-            TaiTham::SignReversedRotatedRana => SIGN_REVERSED_ROTATED_RANA,
-            TaiTham::SignMaiYamok => SIGN_MAI_YAMOK,
-            TaiTham::SignKaan => SIGN_KAAN,
-            TaiTham::SignKaankuu => SIGN_KAANKUU,
-            TaiTham::SignSatkaan => SIGN_SATKAAN,
-            TaiTham::SignSatkaankuu => SIGN_SATKAANKUU,
-            TaiTham::SignHang => SIGN_HANG,
-            TaiTham::SignCaang => SIGN_CAANG,
+            TaiTham::LetterHighKa => 'ᨠ',
+            TaiTham::LetterHighKha => 'ᨡ',
+            TaiTham::LetterHighKxa => 'ᨢ',
+            TaiTham::LetterLowKa => 'ᨣ',
+            TaiTham::LetterLowKxa => 'ᨤ',
+            TaiTham::LetterLowKha => 'ᨥ',
+            TaiTham::LetterNga => 'ᨦ',
+            TaiTham::LetterHighCa => 'ᨧ',
+            TaiTham::LetterHighCha => 'ᨨ',
+            TaiTham::LetterLowCa => 'ᨩ',
+            TaiTham::LetterLowSa => 'ᨪ',
+            TaiTham::LetterLowCha => 'ᨫ',
+            TaiTham::LetterNya => 'ᨬ',
+            TaiTham::LetterRata => 'ᨭ',
+            TaiTham::LetterHighRatha => 'ᨮ',
+            TaiTham::LetterDa => 'ᨯ',
+            TaiTham::LetterLowRatha => 'ᨰ',
+            TaiTham::LetterRana => 'ᨱ',
+            TaiTham::LetterHighTa => 'ᨲ',
+            TaiTham::LetterHighTha => 'ᨳ',
+            TaiTham::LetterLowTa => 'ᨴ',
+            TaiTham::LetterLowTha => 'ᨵ',
+            TaiTham::LetterNa => 'ᨶ',
+            TaiTham::LetterBa => 'ᨷ',
+            TaiTham::LetterHighPa => 'ᨸ',
+            TaiTham::LetterHighPha => 'ᨹ',
+            TaiTham::LetterHighFa => 'ᨺ',
+            TaiTham::LetterLowPa => 'ᨻ',
+            TaiTham::LetterLowFa => 'ᨼ',
+            TaiTham::LetterLowPha => 'ᨽ',
+            TaiTham::LetterMa => 'ᨾ',
+            TaiTham::LetterLowYa => 'ᨿ',
+            TaiTham::LetterHighYa => 'ᩀ',
+            TaiTham::LetterRa => 'ᩁ',
+            TaiTham::LetterRue => 'ᩂ',
+            TaiTham::LetterLa => 'ᩃ',
+            TaiTham::LetterLue => 'ᩄ',
+            TaiTham::LetterWa => 'ᩅ',
+            TaiTham::LetterHighSha => 'ᩆ',
+            TaiTham::LetterHighSsa => 'ᩇ',
+            TaiTham::LetterHighSa => 'ᩈ',
+            TaiTham::LetterHighHa => 'ᩉ',
+            TaiTham::LetterLla => 'ᩊ',
+            TaiTham::LetterA => 'ᩋ',
+            TaiTham::LetterLowHa => 'ᩌ',
+            TaiTham::LetterI => 'ᩍ',
+            TaiTham::LetterIi => 'ᩎ',
+            TaiTham::LetterU => 'ᩏ',
+            TaiTham::LetterUu => 'ᩐ',
+            TaiTham::LetterEe => 'ᩑ',
+            TaiTham::LetterOo => 'ᩒ',
+            TaiTham::LetterLae => 'ᩓ',
+            TaiTham::LetterGreatSa => 'ᩔ',
+            TaiTham::ConsonantSignMedialRa => 'ᩕ',
+            TaiTham::ConsonantSignMedialLa => 'ᩖ',
+            TaiTham::ConsonantSignLaTangLai => 'ᩗ',
+            TaiTham::SignMaiKangLai => 'ᩘ',
+            TaiTham::ConsonantSignFinalNga => 'ᩙ',
+            TaiTham::ConsonantSignLowPa => 'ᩚ',
+            TaiTham::ConsonantSignHighRathaOrLowPa => 'ᩛ',
+            TaiTham::ConsonantSignMa => 'ᩜ',
+            TaiTham::ConsonantSignBa => 'ᩝ',
+            TaiTham::ConsonantSignSa => 'ᩞ',
+            TaiTham::SignSakot => '᩠',
+            TaiTham::VowelSignA => 'ᩡ',
+            TaiTham::VowelSignMaiSat => 'ᩢ',
+            TaiTham::VowelSignAa => 'ᩣ',
+            TaiTham::VowelSignTallAa => 'ᩤ',
+            TaiTham::VowelSignI => 'ᩥ',
+            TaiTham::VowelSignIi => 'ᩦ',
+            TaiTham::VowelSignUe => 'ᩧ',
+            TaiTham::VowelSignUue => 'ᩨ',
+            TaiTham::VowelSignU => 'ᩩ',
+            TaiTham::VowelSignUu => 'ᩪ',
+            TaiTham::VowelSignO => 'ᩫ',
+            TaiTham::VowelSignOaBelow => 'ᩬ',
+            TaiTham::VowelSignOy => 'ᩭ',
+            TaiTham::VowelSignE => 'ᩮ',
+            TaiTham::VowelSignAe => 'ᩯ',
+            TaiTham::VowelSignOo => 'ᩰ',
+            TaiTham::VowelSignAi => 'ᩱ',
+            TaiTham::VowelSignThamAi => 'ᩲ',
+            TaiTham::VowelSignOaAbove => 'ᩳ',
+            TaiTham::SignMaiKang => 'ᩴ',
+            TaiTham::SignToneDash1 => '᩵',
+            TaiTham::SignToneDash2 => '᩶',
+            TaiTham::SignKhuenToneDash3 => '᩷',
+            TaiTham::SignKhuenToneDash4 => '᩸',
+            TaiTham::SignKhuenToneDash5 => '᩹',
+            TaiTham::SignRaHaam => '᩺',
+            TaiTham::SignMaiSam => '᩻',
+            TaiTham::SignKhuenDashLueKaran => '᩼',
+            TaiTham::CombiningCryptogrammicDot => '᩿',
+            TaiTham::HoraDigitZero => '᪀',
+            TaiTham::HoraDigitOne => '᪁',
+            TaiTham::HoraDigitTwo => '᪂',
+            TaiTham::HoraDigitThree => '᪃',
+            TaiTham::HoraDigitFour => '᪄',
+            TaiTham::HoraDigitFive => '᪅',
+            TaiTham::HoraDigitSix => '᪆',
+            TaiTham::HoraDigitSeven => '᪇',
+            TaiTham::HoraDigitEight => '᪈',
+            TaiTham::HoraDigitNine => '᪉',
+            TaiTham::ThamDigitZero => '᪐',
+            TaiTham::ThamDigitOne => '᪑',
+            TaiTham::ThamDigitTwo => '᪒',
+            TaiTham::ThamDigitThree => '᪓',
+            TaiTham::ThamDigitFour => '᪔',
+            TaiTham::ThamDigitFive => '᪕',
+            TaiTham::ThamDigitSix => '᪖',
+            TaiTham::ThamDigitSeven => '᪗',
+            TaiTham::ThamDigitEight => '᪘',
+            TaiTham::ThamDigitNine => '᪙',
+            TaiTham::SignWiang => '᪠',
+            TaiTham::SignWiangwaak => '᪡',
+            TaiTham::SignSawan => '᪢',
+            TaiTham::SignKeow => '᪣',
+            TaiTham::SignHoy => '᪤',
+            TaiTham::SignDokmai => '᪥',
+            TaiTham::SignReversedRotatedRana => '᪦',
+            TaiTham::SignMaiYamok => 'ᪧ',
+            TaiTham::SignKaan => '᪨',
+            TaiTham::SignKaankuu => '᪩',
+            TaiTham::SignSatkaan => '᪪',
+            TaiTham::SignSatkaankuu => '᪫',
+            TaiTham::SignHang => '᪬',
+            TaiTham::SignCaang => '᪭',
         }
     }
 }
@@ -653,135 +395,134 @@ impl Into<char> for TaiTham {
 impl std::convert::TryFrom<char> for TaiTham {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_HIGH_KA => Ok(TaiTham::LetterHighKa),
-            LETTER_HIGH_KHA => Ok(TaiTham::LetterHighKha),
-            LETTER_HIGH_KXA => Ok(TaiTham::LetterHighKxa),
-            LETTER_LOW_KA => Ok(TaiTham::LetterLowKa),
-            LETTER_LOW_KXA => Ok(TaiTham::LetterLowKxa),
-            LETTER_LOW_KHA => Ok(TaiTham::LetterLowKha),
-            LETTER_NGA => Ok(TaiTham::LetterNga),
-            LETTER_HIGH_CA => Ok(TaiTham::LetterHighCa),
-            LETTER_HIGH_CHA => Ok(TaiTham::LetterHighCha),
-            LETTER_LOW_CA => Ok(TaiTham::LetterLowCa),
-            LETTER_LOW_SA => Ok(TaiTham::LetterLowSa),
-            LETTER_LOW_CHA => Ok(TaiTham::LetterLowCha),
-            LETTER_NYA => Ok(TaiTham::LetterNya),
-            LETTER_RATA => Ok(TaiTham::LetterRata),
-            LETTER_HIGH_RATHA => Ok(TaiTham::LetterHighRatha),
-            LETTER_DA => Ok(TaiTham::LetterDa),
-            LETTER_LOW_RATHA => Ok(TaiTham::LetterLowRatha),
-            LETTER_RANA => Ok(TaiTham::LetterRana),
-            LETTER_HIGH_TA => Ok(TaiTham::LetterHighTa),
-            LETTER_HIGH_THA => Ok(TaiTham::LetterHighTha),
-            LETTER_LOW_TA => Ok(TaiTham::LetterLowTa),
-            LETTER_LOW_THA => Ok(TaiTham::LetterLowTha),
-            LETTER_NA => Ok(TaiTham::LetterNa),
-            LETTER_BA => Ok(TaiTham::LetterBa),
-            LETTER_HIGH_PA => Ok(TaiTham::LetterHighPa),
-            LETTER_HIGH_PHA => Ok(TaiTham::LetterHighPha),
-            LETTER_HIGH_FA => Ok(TaiTham::LetterHighFa),
-            LETTER_LOW_PA => Ok(TaiTham::LetterLowPa),
-            LETTER_LOW_FA => Ok(TaiTham::LetterLowFa),
-            LETTER_LOW_PHA => Ok(TaiTham::LetterLowPha),
-            LETTER_MA => Ok(TaiTham::LetterMa),
-            LETTER_LOW_YA => Ok(TaiTham::LetterLowYa),
-            LETTER_HIGH_YA => Ok(TaiTham::LetterHighYa),
-            LETTER_RA => Ok(TaiTham::LetterRa),
-            LETTER_RUE => Ok(TaiTham::LetterRue),
-            LETTER_LA => Ok(TaiTham::LetterLa),
-            LETTER_LUE => Ok(TaiTham::LetterLue),
-            LETTER_WA => Ok(TaiTham::LetterWa),
-            LETTER_HIGH_SHA => Ok(TaiTham::LetterHighSha),
-            LETTER_HIGH_SSA => Ok(TaiTham::LetterHighSsa),
-            LETTER_HIGH_SA => Ok(TaiTham::LetterHighSa),
-            LETTER_HIGH_HA => Ok(TaiTham::LetterHighHa),
-            LETTER_LLA => Ok(TaiTham::LetterLla),
-            LETTER_A => Ok(TaiTham::LetterA),
-            LETTER_LOW_HA => Ok(TaiTham::LetterLowHa),
-            LETTER_I => Ok(TaiTham::LetterI),
-            LETTER_II => Ok(TaiTham::LetterIi),
-            LETTER_U => Ok(TaiTham::LetterU),
-            LETTER_UU => Ok(TaiTham::LetterUu),
-            LETTER_EE => Ok(TaiTham::LetterEe),
-            LETTER_OO => Ok(TaiTham::LetterOo),
-            LETTER_LAE => Ok(TaiTham::LetterLae),
-            LETTER_GREAT_SA => Ok(TaiTham::LetterGreatSa),
-            CONSONANT_SIGN_MEDIAL_RA => Ok(TaiTham::ConsonantSignMedialRa),
-            CONSONANT_SIGN_MEDIAL_LA => Ok(TaiTham::ConsonantSignMedialLa),
-            CONSONANT_SIGN_LA_TANG_LAI => Ok(TaiTham::ConsonantSignLaTangLai),
-            SIGN_MAI_KANG_LAI => Ok(TaiTham::SignMaiKangLai),
-            CONSONANT_SIGN_FINAL_NGA => Ok(TaiTham::ConsonantSignFinalNga),
-            CONSONANT_SIGN_LOW_PA => Ok(TaiTham::ConsonantSignLowPa),
-            CONSONANT_SIGN_HIGH_RATHA_OR_LOW_PA => Ok(TaiTham::ConsonantSignHighRathaOrLowPa),
-            CONSONANT_SIGN_MA => Ok(TaiTham::ConsonantSignMa),
-            CONSONANT_SIGN_BA => Ok(TaiTham::ConsonantSignBa),
-            CONSONANT_SIGN_SA => Ok(TaiTham::ConsonantSignSa),
-            SIGN_SAKOT => Ok(TaiTham::SignSakot),
-            VOWEL_SIGN_A => Ok(TaiTham::VowelSignA),
-            VOWEL_SIGN_MAI_SAT => Ok(TaiTham::VowelSignMaiSat),
-            VOWEL_SIGN_AA => Ok(TaiTham::VowelSignAa),
-            VOWEL_SIGN_TALL_AA => Ok(TaiTham::VowelSignTallAa),
-            VOWEL_SIGN_I => Ok(TaiTham::VowelSignI),
-            VOWEL_SIGN_II => Ok(TaiTham::VowelSignIi),
-            VOWEL_SIGN_UE => Ok(TaiTham::VowelSignUe),
-            VOWEL_SIGN_UUE => Ok(TaiTham::VowelSignUue),
-            VOWEL_SIGN_U => Ok(TaiTham::VowelSignU),
-            VOWEL_SIGN_UU => Ok(TaiTham::VowelSignUu),
-            VOWEL_SIGN_O => Ok(TaiTham::VowelSignO),
-            VOWEL_SIGN_OA_BELOW => Ok(TaiTham::VowelSignOaBelow),
-            VOWEL_SIGN_OY => Ok(TaiTham::VowelSignOy),
-            VOWEL_SIGN_E => Ok(TaiTham::VowelSignE),
-            VOWEL_SIGN_AE => Ok(TaiTham::VowelSignAe),
-            VOWEL_SIGN_OO => Ok(TaiTham::VowelSignOo),
-            VOWEL_SIGN_AI => Ok(TaiTham::VowelSignAi),
-            VOWEL_SIGN_THAM_AI => Ok(TaiTham::VowelSignThamAi),
-            VOWEL_SIGN_OA_ABOVE => Ok(TaiTham::VowelSignOaAbove),
-            SIGN_MAI_KANG => Ok(TaiTham::SignMaiKang),
-            SIGN_TONE_DASH_1 => Ok(TaiTham::SignToneDash1),
-            SIGN_TONE_DASH_2 => Ok(TaiTham::SignToneDash2),
-            SIGN_KHUEN_TONE_DASH_3 => Ok(TaiTham::SignKhuenToneDash3),
-            SIGN_KHUEN_TONE_DASH_4 => Ok(TaiTham::SignKhuenToneDash4),
-            SIGN_KHUEN_TONE_DASH_5 => Ok(TaiTham::SignKhuenToneDash5),
-            SIGN_RA_HAAM => Ok(TaiTham::SignRaHaam),
-            SIGN_MAI_SAM => Ok(TaiTham::SignMaiSam),
-            SIGN_KHUEN_DASH_LUE_KARAN => Ok(TaiTham::SignKhuenDashLueKaran),
-            COMBINING_CRYPTOGRAMMIC_DOT => Ok(TaiTham::CombiningCryptogrammicDot),
-            HORA_DIGIT_ZERO => Ok(TaiTham::HoraDigitZero),
-            HORA_DIGIT_ONE => Ok(TaiTham::HoraDigitOne),
-            HORA_DIGIT_TWO => Ok(TaiTham::HoraDigitTwo),
-            HORA_DIGIT_THREE => Ok(TaiTham::HoraDigitThree),
-            HORA_DIGIT_FOUR => Ok(TaiTham::HoraDigitFour),
-            HORA_DIGIT_FIVE => Ok(TaiTham::HoraDigitFive),
-            HORA_DIGIT_SIX => Ok(TaiTham::HoraDigitSix),
-            HORA_DIGIT_SEVEN => Ok(TaiTham::HoraDigitSeven),
-            HORA_DIGIT_EIGHT => Ok(TaiTham::HoraDigitEight),
-            HORA_DIGIT_NINE => Ok(TaiTham::HoraDigitNine),
-            THAM_DIGIT_ZERO => Ok(TaiTham::ThamDigitZero),
-            THAM_DIGIT_ONE => Ok(TaiTham::ThamDigitOne),
-            THAM_DIGIT_TWO => Ok(TaiTham::ThamDigitTwo),
-            THAM_DIGIT_THREE => Ok(TaiTham::ThamDigitThree),
-            THAM_DIGIT_FOUR => Ok(TaiTham::ThamDigitFour),
-            THAM_DIGIT_FIVE => Ok(TaiTham::ThamDigitFive),
-            THAM_DIGIT_SIX => Ok(TaiTham::ThamDigitSix),
-            THAM_DIGIT_SEVEN => Ok(TaiTham::ThamDigitSeven),
-            THAM_DIGIT_EIGHT => Ok(TaiTham::ThamDigitEight),
-            THAM_DIGIT_NINE => Ok(TaiTham::ThamDigitNine),
-            SIGN_WIANG => Ok(TaiTham::SignWiang),
-            SIGN_WIANGWAAK => Ok(TaiTham::SignWiangwaak),
-            SIGN_SAWAN => Ok(TaiTham::SignSawan),
-            SIGN_KEOW => Ok(TaiTham::SignKeow),
-            SIGN_HOY => Ok(TaiTham::SignHoy),
-            SIGN_DOKMAI => Ok(TaiTham::SignDokmai),
-            SIGN_REVERSED_ROTATED_RANA => Ok(TaiTham::SignReversedRotatedRana),
-            SIGN_MAI_YAMOK => Ok(TaiTham::SignMaiYamok),
-            SIGN_KAAN => Ok(TaiTham::SignKaan),
-            SIGN_KAANKUU => Ok(TaiTham::SignKaankuu),
-            SIGN_SATKAAN => Ok(TaiTham::SignSatkaan),
-            SIGN_SATKAANKUU => Ok(TaiTham::SignSatkaankuu),
-            SIGN_HANG => Ok(TaiTham::SignHang),
-            SIGN_CAANG => Ok(TaiTham::SignCaang),
+            'ᨠ' => Ok(TaiTham::LetterHighKa),
+            'ᨡ' => Ok(TaiTham::LetterHighKha),
+            'ᨢ' => Ok(TaiTham::LetterHighKxa),
+            'ᨣ' => Ok(TaiTham::LetterLowKa),
+            'ᨤ' => Ok(TaiTham::LetterLowKxa),
+            'ᨥ' => Ok(TaiTham::LetterLowKha),
+            'ᨦ' => Ok(TaiTham::LetterNga),
+            'ᨧ' => Ok(TaiTham::LetterHighCa),
+            'ᨨ' => Ok(TaiTham::LetterHighCha),
+            'ᨩ' => Ok(TaiTham::LetterLowCa),
+            'ᨪ' => Ok(TaiTham::LetterLowSa),
+            'ᨫ' => Ok(TaiTham::LetterLowCha),
+            'ᨬ' => Ok(TaiTham::LetterNya),
+            'ᨭ' => Ok(TaiTham::LetterRata),
+            'ᨮ' => Ok(TaiTham::LetterHighRatha),
+            'ᨯ' => Ok(TaiTham::LetterDa),
+            'ᨰ' => Ok(TaiTham::LetterLowRatha),
+            'ᨱ' => Ok(TaiTham::LetterRana),
+            'ᨲ' => Ok(TaiTham::LetterHighTa),
+            'ᨳ' => Ok(TaiTham::LetterHighTha),
+            'ᨴ' => Ok(TaiTham::LetterLowTa),
+            'ᨵ' => Ok(TaiTham::LetterLowTha),
+            'ᨶ' => Ok(TaiTham::LetterNa),
+            'ᨷ' => Ok(TaiTham::LetterBa),
+            'ᨸ' => Ok(TaiTham::LetterHighPa),
+            'ᨹ' => Ok(TaiTham::LetterHighPha),
+            'ᨺ' => Ok(TaiTham::LetterHighFa),
+            'ᨻ' => Ok(TaiTham::LetterLowPa),
+            'ᨼ' => Ok(TaiTham::LetterLowFa),
+            'ᨽ' => Ok(TaiTham::LetterLowPha),
+            'ᨾ' => Ok(TaiTham::LetterMa),
+            'ᨿ' => Ok(TaiTham::LetterLowYa),
+            'ᩀ' => Ok(TaiTham::LetterHighYa),
+            'ᩁ' => Ok(TaiTham::LetterRa),
+            'ᩂ' => Ok(TaiTham::LetterRue),
+            'ᩃ' => Ok(TaiTham::LetterLa),
+            'ᩄ' => Ok(TaiTham::LetterLue),
+            'ᩅ' => Ok(TaiTham::LetterWa),
+            'ᩆ' => Ok(TaiTham::LetterHighSha),
+            'ᩇ' => Ok(TaiTham::LetterHighSsa),
+            'ᩈ' => Ok(TaiTham::LetterHighSa),
+            'ᩉ' => Ok(TaiTham::LetterHighHa),
+            'ᩊ' => Ok(TaiTham::LetterLla),
+            'ᩋ' => Ok(TaiTham::LetterA),
+            'ᩌ' => Ok(TaiTham::LetterLowHa),
+            'ᩍ' => Ok(TaiTham::LetterI),
+            'ᩎ' => Ok(TaiTham::LetterIi),
+            'ᩏ' => Ok(TaiTham::LetterU),
+            'ᩐ' => Ok(TaiTham::LetterUu),
+            'ᩑ' => Ok(TaiTham::LetterEe),
+            'ᩒ' => Ok(TaiTham::LetterOo),
+            'ᩓ' => Ok(TaiTham::LetterLae),
+            'ᩔ' => Ok(TaiTham::LetterGreatSa),
+            'ᩕ' => Ok(TaiTham::ConsonantSignMedialRa),
+            'ᩖ' => Ok(TaiTham::ConsonantSignMedialLa),
+            'ᩗ' => Ok(TaiTham::ConsonantSignLaTangLai),
+            'ᩘ' => Ok(TaiTham::SignMaiKangLai),
+            'ᩙ' => Ok(TaiTham::ConsonantSignFinalNga),
+            'ᩚ' => Ok(TaiTham::ConsonantSignLowPa),
+            'ᩛ' => Ok(TaiTham::ConsonantSignHighRathaOrLowPa),
+            'ᩜ' => Ok(TaiTham::ConsonantSignMa),
+            'ᩝ' => Ok(TaiTham::ConsonantSignBa),
+            'ᩞ' => Ok(TaiTham::ConsonantSignSa),
+            '᩠' => Ok(TaiTham::SignSakot),
+            'ᩡ' => Ok(TaiTham::VowelSignA),
+            'ᩢ' => Ok(TaiTham::VowelSignMaiSat),
+            'ᩣ' => Ok(TaiTham::VowelSignAa),
+            'ᩤ' => Ok(TaiTham::VowelSignTallAa),
+            'ᩥ' => Ok(TaiTham::VowelSignI),
+            'ᩦ' => Ok(TaiTham::VowelSignIi),
+            'ᩧ' => Ok(TaiTham::VowelSignUe),
+            'ᩨ' => Ok(TaiTham::VowelSignUue),
+            'ᩩ' => Ok(TaiTham::VowelSignU),
+            'ᩪ' => Ok(TaiTham::VowelSignUu),
+            'ᩫ' => Ok(TaiTham::VowelSignO),
+            'ᩬ' => Ok(TaiTham::VowelSignOaBelow),
+            'ᩭ' => Ok(TaiTham::VowelSignOy),
+            'ᩮ' => Ok(TaiTham::VowelSignE),
+            'ᩯ' => Ok(TaiTham::VowelSignAe),
+            'ᩰ' => Ok(TaiTham::VowelSignOo),
+            'ᩱ' => Ok(TaiTham::VowelSignAi),
+            'ᩲ' => Ok(TaiTham::VowelSignThamAi),
+            'ᩳ' => Ok(TaiTham::VowelSignOaAbove),
+            'ᩴ' => Ok(TaiTham::SignMaiKang),
+            '᩵' => Ok(TaiTham::SignToneDash1),
+            '᩶' => Ok(TaiTham::SignToneDash2),
+            '᩷' => Ok(TaiTham::SignKhuenToneDash3),
+            '᩸' => Ok(TaiTham::SignKhuenToneDash4),
+            '᩹' => Ok(TaiTham::SignKhuenToneDash5),
+            '᩺' => Ok(TaiTham::SignRaHaam),
+            '᩻' => Ok(TaiTham::SignMaiSam),
+            '᩼' => Ok(TaiTham::SignKhuenDashLueKaran),
+            '᩿' => Ok(TaiTham::CombiningCryptogrammicDot),
+            '᪀' => Ok(TaiTham::HoraDigitZero),
+            '᪁' => Ok(TaiTham::HoraDigitOne),
+            '᪂' => Ok(TaiTham::HoraDigitTwo),
+            '᪃' => Ok(TaiTham::HoraDigitThree),
+            '᪄' => Ok(TaiTham::HoraDigitFour),
+            '᪅' => Ok(TaiTham::HoraDigitFive),
+            '᪆' => Ok(TaiTham::HoraDigitSix),
+            '᪇' => Ok(TaiTham::HoraDigitSeven),
+            '᪈' => Ok(TaiTham::HoraDigitEight),
+            '᪉' => Ok(TaiTham::HoraDigitNine),
+            '᪐' => Ok(TaiTham::ThamDigitZero),
+            '᪑' => Ok(TaiTham::ThamDigitOne),
+            '᪒' => Ok(TaiTham::ThamDigitTwo),
+            '᪓' => Ok(TaiTham::ThamDigitThree),
+            '᪔' => Ok(TaiTham::ThamDigitFour),
+            '᪕' => Ok(TaiTham::ThamDigitFive),
+            '᪖' => Ok(TaiTham::ThamDigitSix),
+            '᪗' => Ok(TaiTham::ThamDigitSeven),
+            '᪘' => Ok(TaiTham::ThamDigitEight),
+            '᪙' => Ok(TaiTham::ThamDigitNine),
+            '᪠' => Ok(TaiTham::SignWiang),
+            '᪡' => Ok(TaiTham::SignWiangwaak),
+            '᪢' => Ok(TaiTham::SignSawan),
+            '᪣' => Ok(TaiTham::SignKeow),
+            '᪤' => Ok(TaiTham::SignHoy),
+            '᪥' => Ok(TaiTham::SignDokmai),
+            '᪦' => Ok(TaiTham::SignReversedRotatedRana),
+            'ᪧ' => Ok(TaiTham::SignMaiYamok),
+            '᪨' => Ok(TaiTham::SignKaan),
+            '᪩' => Ok(TaiTham::SignKaankuu),
+            '᪪' => Ok(TaiTham::SignSatkaan),
+            '᪫' => Ok(TaiTham::SignSatkaankuu),
+            '᪬' => Ok(TaiTham::SignHang),
+            '᪭' => Ok(TaiTham::SignCaang),
             _ => Err(()),
         }
     }

@@ -1,186 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{531}: 'Ա'
-    pub const CAPITAL_LETTER_AYB: char = 'Ա';
-    /// \u{532}: 'Բ'
-    pub const CAPITAL_LETTER_BEN: char = 'Բ';
-    /// \u{533}: 'Գ'
-    pub const CAPITAL_LETTER_GIM: char = 'Գ';
-    /// \u{534}: 'Դ'
-    pub const CAPITAL_LETTER_DA: char = 'Դ';
-    /// \u{535}: 'Ե'
-    pub const CAPITAL_LETTER_ECH: char = 'Ե';
-    /// \u{536}: 'Զ'
-    pub const CAPITAL_LETTER_ZA: char = 'Զ';
-    /// \u{537}: 'Է'
-    pub const CAPITAL_LETTER_EH: char = 'Է';
-    /// \u{538}: 'Ը'
-    pub const CAPITAL_LETTER_ET: char = 'Ը';
-    /// \u{539}: 'Թ'
-    pub const CAPITAL_LETTER_TO: char = 'Թ';
-    /// \u{53a}: 'Ժ'
-    pub const CAPITAL_LETTER_ZHE: char = 'Ժ';
-    /// \u{53b}: 'Ի'
-    pub const CAPITAL_LETTER_INI: char = 'Ի';
-    /// \u{53c}: 'Լ'
-    pub const CAPITAL_LETTER_LIWN: char = 'Լ';
-    /// \u{53d}: 'Խ'
-    pub const CAPITAL_LETTER_XEH: char = 'Խ';
-    /// \u{53e}: 'Ծ'
-    pub const CAPITAL_LETTER_CA: char = 'Ծ';
-    /// \u{53f}: 'Կ'
-    pub const CAPITAL_LETTER_KEN: char = 'Կ';
-    /// \u{540}: 'Հ'
-    pub const CAPITAL_LETTER_HO: char = 'Հ';
-    /// \u{541}: 'Ձ'
-    pub const CAPITAL_LETTER_JA: char = 'Ձ';
-    /// \u{542}: 'Ղ'
-    pub const CAPITAL_LETTER_GHAD: char = 'Ղ';
-    /// \u{543}: 'Ճ'
-    pub const CAPITAL_LETTER_CHEH: char = 'Ճ';
-    /// \u{544}: 'Մ'
-    pub const CAPITAL_LETTER_MEN: char = 'Մ';
-    /// \u{545}: 'Յ'
-    pub const CAPITAL_LETTER_YI: char = 'Յ';
-    /// \u{546}: 'Ն'
-    pub const CAPITAL_LETTER_NOW: char = 'Ն';
-    /// \u{547}: 'Շ'
-    pub const CAPITAL_LETTER_SHA: char = 'Շ';
-    /// \u{548}: 'Ո'
-    pub const CAPITAL_LETTER_VO: char = 'Ո';
-    /// \u{549}: 'Չ'
-    pub const CAPITAL_LETTER_CHA: char = 'Չ';
-    /// \u{54a}: 'Պ'
-    pub const CAPITAL_LETTER_PEH: char = 'Պ';
-    /// \u{54b}: 'Ջ'
-    pub const CAPITAL_LETTER_JHEH: char = 'Ջ';
-    /// \u{54c}: 'Ռ'
-    pub const CAPITAL_LETTER_RA: char = 'Ռ';
-    /// \u{54d}: 'Ս'
-    pub const CAPITAL_LETTER_SEH: char = 'Ս';
-    /// \u{54e}: 'Վ'
-    pub const CAPITAL_LETTER_VEW: char = 'Վ';
-    /// \u{54f}: 'Տ'
-    pub const CAPITAL_LETTER_TIWN: char = 'Տ';
-    /// \u{550}: 'Ր'
-    pub const CAPITAL_LETTER_REH: char = 'Ր';
-    /// \u{551}: 'Ց'
-    pub const CAPITAL_LETTER_CO: char = 'Ց';
-    /// \u{552}: 'Ւ'
-    pub const CAPITAL_LETTER_YIWN: char = 'Ւ';
-    /// \u{553}: 'Փ'
-    pub const CAPITAL_LETTER_PIWR: char = 'Փ';
-    /// \u{554}: 'Ք'
-    pub const CAPITAL_LETTER_KEH: char = 'Ք';
-    /// \u{555}: 'Օ'
-    pub const CAPITAL_LETTER_OH: char = 'Օ';
-    /// \u{556}: 'Ֆ'
-    pub const CAPITAL_LETTER_FEH: char = 'Ֆ';
-    /// \u{559}: 'ՙ'
-    pub const MODIFIER_LETTER_LEFT_HALF_RING: char = 'ՙ';
-    /// \u{55a}: '՚'
-    pub const APOSTROPHE: char = '՚';
-    /// \u{55b}: '՛'
-    pub const EMPHASIS_MARK: char = '՛';
-    /// \u{55c}: '՜'
-    pub const EXCLAMATION_MARK: char = '՜';
-    /// \u{55d}: '՝'
-    pub const COMMA: char = '՝';
-    /// \u{55e}: '՞'
-    pub const QUESTION_MARK: char = '՞';
-    /// \u{55f}: '՟'
-    pub const ABBREVIATION_MARK: char = '՟';
-    /// \u{560}: 'ՠ'
-    pub const SMALL_LETTER_TURNED_AYB: char = 'ՠ';
-    /// \u{561}: 'ա'
-    pub const SMALL_LETTER_AYB: char = 'ա';
-    /// \u{562}: 'բ'
-    pub const SMALL_LETTER_BEN: char = 'բ';
-    /// \u{563}: 'գ'
-    pub const SMALL_LETTER_GIM: char = 'գ';
-    /// \u{564}: 'դ'
-    pub const SMALL_LETTER_DA: char = 'դ';
-    /// \u{565}: 'ե'
-    pub const SMALL_LETTER_ECH: char = 'ե';
-    /// \u{566}: 'զ'
-    pub const SMALL_LETTER_ZA: char = 'զ';
-    /// \u{567}: 'է'
-    pub const SMALL_LETTER_EH: char = 'է';
-    /// \u{568}: 'ը'
-    pub const SMALL_LETTER_ET: char = 'ը';
-    /// \u{569}: 'թ'
-    pub const SMALL_LETTER_TO: char = 'թ';
-    /// \u{56a}: 'ժ'
-    pub const SMALL_LETTER_ZHE: char = 'ժ';
-    /// \u{56b}: 'ի'
-    pub const SMALL_LETTER_INI: char = 'ի';
-    /// \u{56c}: 'լ'
-    pub const SMALL_LETTER_LIWN: char = 'լ';
-    /// \u{56d}: 'խ'
-    pub const SMALL_LETTER_XEH: char = 'խ';
-    /// \u{56e}: 'ծ'
-    pub const SMALL_LETTER_CA: char = 'ծ';
-    /// \u{56f}: 'կ'
-    pub const SMALL_LETTER_KEN: char = 'կ';
-    /// \u{570}: 'հ'
-    pub const SMALL_LETTER_HO: char = 'հ';
-    /// \u{571}: 'ձ'
-    pub const SMALL_LETTER_JA: char = 'ձ';
-    /// \u{572}: 'ղ'
-    pub const SMALL_LETTER_GHAD: char = 'ղ';
-    /// \u{573}: 'ճ'
-    pub const SMALL_LETTER_CHEH: char = 'ճ';
-    /// \u{574}: 'մ'
-    pub const SMALL_LETTER_MEN: char = 'մ';
-    /// \u{575}: 'յ'
-    pub const SMALL_LETTER_YI: char = 'յ';
-    /// \u{576}: 'ն'
-    pub const SMALL_LETTER_NOW: char = 'ն';
-    /// \u{577}: 'շ'
-    pub const SMALL_LETTER_SHA: char = 'շ';
-    /// \u{578}: 'ո'
-    pub const SMALL_LETTER_VO: char = 'ո';
-    /// \u{579}: 'չ'
-    pub const SMALL_LETTER_CHA: char = 'չ';
-    /// \u{57a}: 'պ'
-    pub const SMALL_LETTER_PEH: char = 'պ';
-    /// \u{57b}: 'ջ'
-    pub const SMALL_LETTER_JHEH: char = 'ջ';
-    /// \u{57c}: 'ռ'
-    pub const SMALL_LETTER_RA: char = 'ռ';
-    /// \u{57d}: 'ս'
-    pub const SMALL_LETTER_SEH: char = 'ս';
-    /// \u{57e}: 'վ'
-    pub const SMALL_LETTER_VEW: char = 'վ';
-    /// \u{57f}: 'տ'
-    pub const SMALL_LETTER_TIWN: char = 'տ';
-    /// \u{580}: 'ր'
-    pub const SMALL_LETTER_REH: char = 'ր';
-    /// \u{581}: 'ց'
-    pub const SMALL_LETTER_CO: char = 'ց';
-    /// \u{582}: 'ւ'
-    pub const SMALL_LETTER_YIWN: char = 'ւ';
-    /// \u{583}: 'փ'
-    pub const SMALL_LETTER_PIWR: char = 'փ';
-    /// \u{584}: 'ք'
-    pub const SMALL_LETTER_KEH: char = 'ք';
-    /// \u{585}: 'օ'
-    pub const SMALL_LETTER_OH: char = 'օ';
-    /// \u{586}: 'ֆ'
-    pub const SMALL_LETTER_FEH: char = 'ֆ';
-    /// \u{587}: 'և'
-    pub const SMALL_LIGATURE_ECH_YIWN: char = 'և';
-    /// \u{588}: 'ֈ'
-    pub const SMALL_LETTER_YI_WITH_STROKE: char = 'ֈ';
-    /// \u{589}: '։'
-    pub const FULL_STOP: char = '։';
-    /// \u{58a}: '֊'
-    pub const HYPHEN: char = '֊';
-    /// \u{58d}: '֍'
-    pub const RIGHT_DASH_FACING_ETERNITY_SIGN: char = '֍';
-    /// \u{58e}: '֎'
-    pub const LEFT_DASH_FACING_ETERNITY_SIGN: char = '֎';
-}
 
 /// An enum to represent all characters in the Armenian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -369,98 +186,97 @@ pub enum Armenian {
 
 impl Into<char> for Armenian {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Armenian::CapitalLetterAyb => CAPITAL_LETTER_AYB,
-            Armenian::CapitalLetterBen => CAPITAL_LETTER_BEN,
-            Armenian::CapitalLetterGim => CAPITAL_LETTER_GIM,
-            Armenian::CapitalLetterDa => CAPITAL_LETTER_DA,
-            Armenian::CapitalLetterEch => CAPITAL_LETTER_ECH,
-            Armenian::CapitalLetterZa => CAPITAL_LETTER_ZA,
-            Armenian::CapitalLetterEh => CAPITAL_LETTER_EH,
-            Armenian::CapitalLetterEt => CAPITAL_LETTER_ET,
-            Armenian::CapitalLetterTo => CAPITAL_LETTER_TO,
-            Armenian::CapitalLetterZhe => CAPITAL_LETTER_ZHE,
-            Armenian::CapitalLetterIni => CAPITAL_LETTER_INI,
-            Armenian::CapitalLetterLiwn => CAPITAL_LETTER_LIWN,
-            Armenian::CapitalLetterXeh => CAPITAL_LETTER_XEH,
-            Armenian::CapitalLetterCa => CAPITAL_LETTER_CA,
-            Armenian::CapitalLetterKen => CAPITAL_LETTER_KEN,
-            Armenian::CapitalLetterHo => CAPITAL_LETTER_HO,
-            Armenian::CapitalLetterJa => CAPITAL_LETTER_JA,
-            Armenian::CapitalLetterGhad => CAPITAL_LETTER_GHAD,
-            Armenian::CapitalLetterCheh => CAPITAL_LETTER_CHEH,
-            Armenian::CapitalLetterMen => CAPITAL_LETTER_MEN,
-            Armenian::CapitalLetterYi => CAPITAL_LETTER_YI,
-            Armenian::CapitalLetterNow => CAPITAL_LETTER_NOW,
-            Armenian::CapitalLetterSha => CAPITAL_LETTER_SHA,
-            Armenian::CapitalLetterVo => CAPITAL_LETTER_VO,
-            Armenian::CapitalLetterCha => CAPITAL_LETTER_CHA,
-            Armenian::CapitalLetterPeh => CAPITAL_LETTER_PEH,
-            Armenian::CapitalLetterJheh => CAPITAL_LETTER_JHEH,
-            Armenian::CapitalLetterRa => CAPITAL_LETTER_RA,
-            Armenian::CapitalLetterSeh => CAPITAL_LETTER_SEH,
-            Armenian::CapitalLetterVew => CAPITAL_LETTER_VEW,
-            Armenian::CapitalLetterTiwn => CAPITAL_LETTER_TIWN,
-            Armenian::CapitalLetterReh => CAPITAL_LETTER_REH,
-            Armenian::CapitalLetterCo => CAPITAL_LETTER_CO,
-            Armenian::CapitalLetterYiwn => CAPITAL_LETTER_YIWN,
-            Armenian::CapitalLetterPiwr => CAPITAL_LETTER_PIWR,
-            Armenian::CapitalLetterKeh => CAPITAL_LETTER_KEH,
-            Armenian::CapitalLetterOh => CAPITAL_LETTER_OH,
-            Armenian::CapitalLetterFeh => CAPITAL_LETTER_FEH,
-            Armenian::ModifierLetterLeftHalfRing => MODIFIER_LETTER_LEFT_HALF_RING,
-            Armenian::Apostrophe => APOSTROPHE,
-            Armenian::EmphasisMark => EMPHASIS_MARK,
-            Armenian::ExclamationMark => EXCLAMATION_MARK,
-            Armenian::Comma => COMMA,
-            Armenian::QuestionMark => QUESTION_MARK,
-            Armenian::AbbreviationMark => ABBREVIATION_MARK,
-            Armenian::SmallLetterTurnedAyb => SMALL_LETTER_TURNED_AYB,
-            Armenian::SmallLetterAyb => SMALL_LETTER_AYB,
-            Armenian::SmallLetterBen => SMALL_LETTER_BEN,
-            Armenian::SmallLetterGim => SMALL_LETTER_GIM,
-            Armenian::SmallLetterDa => SMALL_LETTER_DA,
-            Armenian::SmallLetterEch => SMALL_LETTER_ECH,
-            Armenian::SmallLetterZa => SMALL_LETTER_ZA,
-            Armenian::SmallLetterEh => SMALL_LETTER_EH,
-            Armenian::SmallLetterEt => SMALL_LETTER_ET,
-            Armenian::SmallLetterTo => SMALL_LETTER_TO,
-            Armenian::SmallLetterZhe => SMALL_LETTER_ZHE,
-            Armenian::SmallLetterIni => SMALL_LETTER_INI,
-            Armenian::SmallLetterLiwn => SMALL_LETTER_LIWN,
-            Armenian::SmallLetterXeh => SMALL_LETTER_XEH,
-            Armenian::SmallLetterCa => SMALL_LETTER_CA,
-            Armenian::SmallLetterKen => SMALL_LETTER_KEN,
-            Armenian::SmallLetterHo => SMALL_LETTER_HO,
-            Armenian::SmallLetterJa => SMALL_LETTER_JA,
-            Armenian::SmallLetterGhad => SMALL_LETTER_GHAD,
-            Armenian::SmallLetterCheh => SMALL_LETTER_CHEH,
-            Armenian::SmallLetterMen => SMALL_LETTER_MEN,
-            Armenian::SmallLetterYi => SMALL_LETTER_YI,
-            Armenian::SmallLetterNow => SMALL_LETTER_NOW,
-            Armenian::SmallLetterSha => SMALL_LETTER_SHA,
-            Armenian::SmallLetterVo => SMALL_LETTER_VO,
-            Armenian::SmallLetterCha => SMALL_LETTER_CHA,
-            Armenian::SmallLetterPeh => SMALL_LETTER_PEH,
-            Armenian::SmallLetterJheh => SMALL_LETTER_JHEH,
-            Armenian::SmallLetterRa => SMALL_LETTER_RA,
-            Armenian::SmallLetterSeh => SMALL_LETTER_SEH,
-            Armenian::SmallLetterVew => SMALL_LETTER_VEW,
-            Armenian::SmallLetterTiwn => SMALL_LETTER_TIWN,
-            Armenian::SmallLetterReh => SMALL_LETTER_REH,
-            Armenian::SmallLetterCo => SMALL_LETTER_CO,
-            Armenian::SmallLetterYiwn => SMALL_LETTER_YIWN,
-            Armenian::SmallLetterPiwr => SMALL_LETTER_PIWR,
-            Armenian::SmallLetterKeh => SMALL_LETTER_KEH,
-            Armenian::SmallLetterOh => SMALL_LETTER_OH,
-            Armenian::SmallLetterFeh => SMALL_LETTER_FEH,
-            Armenian::SmallLigatureEchYiwn => SMALL_LIGATURE_ECH_YIWN,
-            Armenian::SmallLetterYiWithStroke => SMALL_LETTER_YI_WITH_STROKE,
-            Armenian::FullStop => FULL_STOP,
-            Armenian::Hyphen => HYPHEN,
-            Armenian::RightDashFacingEternitySign => RIGHT_DASH_FACING_ETERNITY_SIGN,
-            Armenian::LeftDashFacingEternitySign => LEFT_DASH_FACING_ETERNITY_SIGN,
+            Armenian::CapitalLetterAyb => 'Ա',
+            Armenian::CapitalLetterBen => 'Բ',
+            Armenian::CapitalLetterGim => 'Գ',
+            Armenian::CapitalLetterDa => 'Դ',
+            Armenian::CapitalLetterEch => 'Ե',
+            Armenian::CapitalLetterZa => 'Զ',
+            Armenian::CapitalLetterEh => 'Է',
+            Armenian::CapitalLetterEt => 'Ը',
+            Armenian::CapitalLetterTo => 'Թ',
+            Armenian::CapitalLetterZhe => 'Ժ',
+            Armenian::CapitalLetterIni => 'Ի',
+            Armenian::CapitalLetterLiwn => 'Լ',
+            Armenian::CapitalLetterXeh => 'Խ',
+            Armenian::CapitalLetterCa => 'Ծ',
+            Armenian::CapitalLetterKen => 'Կ',
+            Armenian::CapitalLetterHo => 'Հ',
+            Armenian::CapitalLetterJa => 'Ձ',
+            Armenian::CapitalLetterGhad => 'Ղ',
+            Armenian::CapitalLetterCheh => 'Ճ',
+            Armenian::CapitalLetterMen => 'Մ',
+            Armenian::CapitalLetterYi => 'Յ',
+            Armenian::CapitalLetterNow => 'Ն',
+            Armenian::CapitalLetterSha => 'Շ',
+            Armenian::CapitalLetterVo => 'Ո',
+            Armenian::CapitalLetterCha => 'Չ',
+            Armenian::CapitalLetterPeh => 'Պ',
+            Armenian::CapitalLetterJheh => 'Ջ',
+            Armenian::CapitalLetterRa => 'Ռ',
+            Armenian::CapitalLetterSeh => 'Ս',
+            Armenian::CapitalLetterVew => 'Վ',
+            Armenian::CapitalLetterTiwn => 'Տ',
+            Armenian::CapitalLetterReh => 'Ր',
+            Armenian::CapitalLetterCo => 'Ց',
+            Armenian::CapitalLetterYiwn => 'Ւ',
+            Armenian::CapitalLetterPiwr => 'Փ',
+            Armenian::CapitalLetterKeh => 'Ք',
+            Armenian::CapitalLetterOh => 'Օ',
+            Armenian::CapitalLetterFeh => 'Ֆ',
+            Armenian::ModifierLetterLeftHalfRing => 'ՙ',
+            Armenian::Apostrophe => '՚',
+            Armenian::EmphasisMark => '՛',
+            Armenian::ExclamationMark => '՜',
+            Armenian::Comma => '՝',
+            Armenian::QuestionMark => '՞',
+            Armenian::AbbreviationMark => '՟',
+            Armenian::SmallLetterTurnedAyb => 'ՠ',
+            Armenian::SmallLetterAyb => 'ա',
+            Armenian::SmallLetterBen => 'բ',
+            Armenian::SmallLetterGim => 'գ',
+            Armenian::SmallLetterDa => 'դ',
+            Armenian::SmallLetterEch => 'ե',
+            Armenian::SmallLetterZa => 'զ',
+            Armenian::SmallLetterEh => 'է',
+            Armenian::SmallLetterEt => 'ը',
+            Armenian::SmallLetterTo => 'թ',
+            Armenian::SmallLetterZhe => 'ժ',
+            Armenian::SmallLetterIni => 'ի',
+            Armenian::SmallLetterLiwn => 'լ',
+            Armenian::SmallLetterXeh => 'խ',
+            Armenian::SmallLetterCa => 'ծ',
+            Armenian::SmallLetterKen => 'կ',
+            Armenian::SmallLetterHo => 'հ',
+            Armenian::SmallLetterJa => 'ձ',
+            Armenian::SmallLetterGhad => 'ղ',
+            Armenian::SmallLetterCheh => 'ճ',
+            Armenian::SmallLetterMen => 'մ',
+            Armenian::SmallLetterYi => 'յ',
+            Armenian::SmallLetterNow => 'ն',
+            Armenian::SmallLetterSha => 'շ',
+            Armenian::SmallLetterVo => 'ո',
+            Armenian::SmallLetterCha => 'չ',
+            Armenian::SmallLetterPeh => 'պ',
+            Armenian::SmallLetterJheh => 'ջ',
+            Armenian::SmallLetterRa => 'ռ',
+            Armenian::SmallLetterSeh => 'ս',
+            Armenian::SmallLetterVew => 'վ',
+            Armenian::SmallLetterTiwn => 'տ',
+            Armenian::SmallLetterReh => 'ր',
+            Armenian::SmallLetterCo => 'ց',
+            Armenian::SmallLetterYiwn => 'ւ',
+            Armenian::SmallLetterPiwr => 'փ',
+            Armenian::SmallLetterKeh => 'ք',
+            Armenian::SmallLetterOh => 'օ',
+            Armenian::SmallLetterFeh => 'ֆ',
+            Armenian::SmallLigatureEchYiwn => 'և',
+            Armenian::SmallLetterYiWithStroke => 'ֈ',
+            Armenian::FullStop => '։',
+            Armenian::Hyphen => '֊',
+            Armenian::RightDashFacingEternitySign => '֍',
+            Armenian::LeftDashFacingEternitySign => '֎',
         }
     }
 }
@@ -468,98 +284,97 @@ impl Into<char> for Armenian {
 impl std::convert::TryFrom<char> for Armenian {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CAPITAL_LETTER_AYB => Ok(Armenian::CapitalLetterAyb),
-            CAPITAL_LETTER_BEN => Ok(Armenian::CapitalLetterBen),
-            CAPITAL_LETTER_GIM => Ok(Armenian::CapitalLetterGim),
-            CAPITAL_LETTER_DA => Ok(Armenian::CapitalLetterDa),
-            CAPITAL_LETTER_ECH => Ok(Armenian::CapitalLetterEch),
-            CAPITAL_LETTER_ZA => Ok(Armenian::CapitalLetterZa),
-            CAPITAL_LETTER_EH => Ok(Armenian::CapitalLetterEh),
-            CAPITAL_LETTER_ET => Ok(Armenian::CapitalLetterEt),
-            CAPITAL_LETTER_TO => Ok(Armenian::CapitalLetterTo),
-            CAPITAL_LETTER_ZHE => Ok(Armenian::CapitalLetterZhe),
-            CAPITAL_LETTER_INI => Ok(Armenian::CapitalLetterIni),
-            CAPITAL_LETTER_LIWN => Ok(Armenian::CapitalLetterLiwn),
-            CAPITAL_LETTER_XEH => Ok(Armenian::CapitalLetterXeh),
-            CAPITAL_LETTER_CA => Ok(Armenian::CapitalLetterCa),
-            CAPITAL_LETTER_KEN => Ok(Armenian::CapitalLetterKen),
-            CAPITAL_LETTER_HO => Ok(Armenian::CapitalLetterHo),
-            CAPITAL_LETTER_JA => Ok(Armenian::CapitalLetterJa),
-            CAPITAL_LETTER_GHAD => Ok(Armenian::CapitalLetterGhad),
-            CAPITAL_LETTER_CHEH => Ok(Armenian::CapitalLetterCheh),
-            CAPITAL_LETTER_MEN => Ok(Armenian::CapitalLetterMen),
-            CAPITAL_LETTER_YI => Ok(Armenian::CapitalLetterYi),
-            CAPITAL_LETTER_NOW => Ok(Armenian::CapitalLetterNow),
-            CAPITAL_LETTER_SHA => Ok(Armenian::CapitalLetterSha),
-            CAPITAL_LETTER_VO => Ok(Armenian::CapitalLetterVo),
-            CAPITAL_LETTER_CHA => Ok(Armenian::CapitalLetterCha),
-            CAPITAL_LETTER_PEH => Ok(Armenian::CapitalLetterPeh),
-            CAPITAL_LETTER_JHEH => Ok(Armenian::CapitalLetterJheh),
-            CAPITAL_LETTER_RA => Ok(Armenian::CapitalLetterRa),
-            CAPITAL_LETTER_SEH => Ok(Armenian::CapitalLetterSeh),
-            CAPITAL_LETTER_VEW => Ok(Armenian::CapitalLetterVew),
-            CAPITAL_LETTER_TIWN => Ok(Armenian::CapitalLetterTiwn),
-            CAPITAL_LETTER_REH => Ok(Armenian::CapitalLetterReh),
-            CAPITAL_LETTER_CO => Ok(Armenian::CapitalLetterCo),
-            CAPITAL_LETTER_YIWN => Ok(Armenian::CapitalLetterYiwn),
-            CAPITAL_LETTER_PIWR => Ok(Armenian::CapitalLetterPiwr),
-            CAPITAL_LETTER_KEH => Ok(Armenian::CapitalLetterKeh),
-            CAPITAL_LETTER_OH => Ok(Armenian::CapitalLetterOh),
-            CAPITAL_LETTER_FEH => Ok(Armenian::CapitalLetterFeh),
-            MODIFIER_LETTER_LEFT_HALF_RING => Ok(Armenian::ModifierLetterLeftHalfRing),
-            APOSTROPHE => Ok(Armenian::Apostrophe),
-            EMPHASIS_MARK => Ok(Armenian::EmphasisMark),
-            EXCLAMATION_MARK => Ok(Armenian::ExclamationMark),
-            COMMA => Ok(Armenian::Comma),
-            QUESTION_MARK => Ok(Armenian::QuestionMark),
-            ABBREVIATION_MARK => Ok(Armenian::AbbreviationMark),
-            SMALL_LETTER_TURNED_AYB => Ok(Armenian::SmallLetterTurnedAyb),
-            SMALL_LETTER_AYB => Ok(Armenian::SmallLetterAyb),
-            SMALL_LETTER_BEN => Ok(Armenian::SmallLetterBen),
-            SMALL_LETTER_GIM => Ok(Armenian::SmallLetterGim),
-            SMALL_LETTER_DA => Ok(Armenian::SmallLetterDa),
-            SMALL_LETTER_ECH => Ok(Armenian::SmallLetterEch),
-            SMALL_LETTER_ZA => Ok(Armenian::SmallLetterZa),
-            SMALL_LETTER_EH => Ok(Armenian::SmallLetterEh),
-            SMALL_LETTER_ET => Ok(Armenian::SmallLetterEt),
-            SMALL_LETTER_TO => Ok(Armenian::SmallLetterTo),
-            SMALL_LETTER_ZHE => Ok(Armenian::SmallLetterZhe),
-            SMALL_LETTER_INI => Ok(Armenian::SmallLetterIni),
-            SMALL_LETTER_LIWN => Ok(Armenian::SmallLetterLiwn),
-            SMALL_LETTER_XEH => Ok(Armenian::SmallLetterXeh),
-            SMALL_LETTER_CA => Ok(Armenian::SmallLetterCa),
-            SMALL_LETTER_KEN => Ok(Armenian::SmallLetterKen),
-            SMALL_LETTER_HO => Ok(Armenian::SmallLetterHo),
-            SMALL_LETTER_JA => Ok(Armenian::SmallLetterJa),
-            SMALL_LETTER_GHAD => Ok(Armenian::SmallLetterGhad),
-            SMALL_LETTER_CHEH => Ok(Armenian::SmallLetterCheh),
-            SMALL_LETTER_MEN => Ok(Armenian::SmallLetterMen),
-            SMALL_LETTER_YI => Ok(Armenian::SmallLetterYi),
-            SMALL_LETTER_NOW => Ok(Armenian::SmallLetterNow),
-            SMALL_LETTER_SHA => Ok(Armenian::SmallLetterSha),
-            SMALL_LETTER_VO => Ok(Armenian::SmallLetterVo),
-            SMALL_LETTER_CHA => Ok(Armenian::SmallLetterCha),
-            SMALL_LETTER_PEH => Ok(Armenian::SmallLetterPeh),
-            SMALL_LETTER_JHEH => Ok(Armenian::SmallLetterJheh),
-            SMALL_LETTER_RA => Ok(Armenian::SmallLetterRa),
-            SMALL_LETTER_SEH => Ok(Armenian::SmallLetterSeh),
-            SMALL_LETTER_VEW => Ok(Armenian::SmallLetterVew),
-            SMALL_LETTER_TIWN => Ok(Armenian::SmallLetterTiwn),
-            SMALL_LETTER_REH => Ok(Armenian::SmallLetterReh),
-            SMALL_LETTER_CO => Ok(Armenian::SmallLetterCo),
-            SMALL_LETTER_YIWN => Ok(Armenian::SmallLetterYiwn),
-            SMALL_LETTER_PIWR => Ok(Armenian::SmallLetterPiwr),
-            SMALL_LETTER_KEH => Ok(Armenian::SmallLetterKeh),
-            SMALL_LETTER_OH => Ok(Armenian::SmallLetterOh),
-            SMALL_LETTER_FEH => Ok(Armenian::SmallLetterFeh),
-            SMALL_LIGATURE_ECH_YIWN => Ok(Armenian::SmallLigatureEchYiwn),
-            SMALL_LETTER_YI_WITH_STROKE => Ok(Armenian::SmallLetterYiWithStroke),
-            FULL_STOP => Ok(Armenian::FullStop),
-            HYPHEN => Ok(Armenian::Hyphen),
-            RIGHT_DASH_FACING_ETERNITY_SIGN => Ok(Armenian::RightDashFacingEternitySign),
-            LEFT_DASH_FACING_ETERNITY_SIGN => Ok(Armenian::LeftDashFacingEternitySign),
+            'Ա' => Ok(Armenian::CapitalLetterAyb),
+            'Բ' => Ok(Armenian::CapitalLetterBen),
+            'Գ' => Ok(Armenian::CapitalLetterGim),
+            'Դ' => Ok(Armenian::CapitalLetterDa),
+            'Ե' => Ok(Armenian::CapitalLetterEch),
+            'Զ' => Ok(Armenian::CapitalLetterZa),
+            'Է' => Ok(Armenian::CapitalLetterEh),
+            'Ը' => Ok(Armenian::CapitalLetterEt),
+            'Թ' => Ok(Armenian::CapitalLetterTo),
+            'Ժ' => Ok(Armenian::CapitalLetterZhe),
+            'Ի' => Ok(Armenian::CapitalLetterIni),
+            'Լ' => Ok(Armenian::CapitalLetterLiwn),
+            'Խ' => Ok(Armenian::CapitalLetterXeh),
+            'Ծ' => Ok(Armenian::CapitalLetterCa),
+            'Կ' => Ok(Armenian::CapitalLetterKen),
+            'Հ' => Ok(Armenian::CapitalLetterHo),
+            'Ձ' => Ok(Armenian::CapitalLetterJa),
+            'Ղ' => Ok(Armenian::CapitalLetterGhad),
+            'Ճ' => Ok(Armenian::CapitalLetterCheh),
+            'Մ' => Ok(Armenian::CapitalLetterMen),
+            'Յ' => Ok(Armenian::CapitalLetterYi),
+            'Ն' => Ok(Armenian::CapitalLetterNow),
+            'Շ' => Ok(Armenian::CapitalLetterSha),
+            'Ո' => Ok(Armenian::CapitalLetterVo),
+            'Չ' => Ok(Armenian::CapitalLetterCha),
+            'Պ' => Ok(Armenian::CapitalLetterPeh),
+            'Ջ' => Ok(Armenian::CapitalLetterJheh),
+            'Ռ' => Ok(Armenian::CapitalLetterRa),
+            'Ս' => Ok(Armenian::CapitalLetterSeh),
+            'Վ' => Ok(Armenian::CapitalLetterVew),
+            'Տ' => Ok(Armenian::CapitalLetterTiwn),
+            'Ր' => Ok(Armenian::CapitalLetterReh),
+            'Ց' => Ok(Armenian::CapitalLetterCo),
+            'Ւ' => Ok(Armenian::CapitalLetterYiwn),
+            'Փ' => Ok(Armenian::CapitalLetterPiwr),
+            'Ք' => Ok(Armenian::CapitalLetterKeh),
+            'Օ' => Ok(Armenian::CapitalLetterOh),
+            'Ֆ' => Ok(Armenian::CapitalLetterFeh),
+            'ՙ' => Ok(Armenian::ModifierLetterLeftHalfRing),
+            '՚' => Ok(Armenian::Apostrophe),
+            '՛' => Ok(Armenian::EmphasisMark),
+            '՜' => Ok(Armenian::ExclamationMark),
+            '՝' => Ok(Armenian::Comma),
+            '՞' => Ok(Armenian::QuestionMark),
+            '՟' => Ok(Armenian::AbbreviationMark),
+            'ՠ' => Ok(Armenian::SmallLetterTurnedAyb),
+            'ա' => Ok(Armenian::SmallLetterAyb),
+            'բ' => Ok(Armenian::SmallLetterBen),
+            'գ' => Ok(Armenian::SmallLetterGim),
+            'դ' => Ok(Armenian::SmallLetterDa),
+            'ե' => Ok(Armenian::SmallLetterEch),
+            'զ' => Ok(Armenian::SmallLetterZa),
+            'է' => Ok(Armenian::SmallLetterEh),
+            'ը' => Ok(Armenian::SmallLetterEt),
+            'թ' => Ok(Armenian::SmallLetterTo),
+            'ժ' => Ok(Armenian::SmallLetterZhe),
+            'ի' => Ok(Armenian::SmallLetterIni),
+            'լ' => Ok(Armenian::SmallLetterLiwn),
+            'խ' => Ok(Armenian::SmallLetterXeh),
+            'ծ' => Ok(Armenian::SmallLetterCa),
+            'կ' => Ok(Armenian::SmallLetterKen),
+            'հ' => Ok(Armenian::SmallLetterHo),
+            'ձ' => Ok(Armenian::SmallLetterJa),
+            'ղ' => Ok(Armenian::SmallLetterGhad),
+            'ճ' => Ok(Armenian::SmallLetterCheh),
+            'մ' => Ok(Armenian::SmallLetterMen),
+            'յ' => Ok(Armenian::SmallLetterYi),
+            'ն' => Ok(Armenian::SmallLetterNow),
+            'շ' => Ok(Armenian::SmallLetterSha),
+            'ո' => Ok(Armenian::SmallLetterVo),
+            'չ' => Ok(Armenian::SmallLetterCha),
+            'պ' => Ok(Armenian::SmallLetterPeh),
+            'ջ' => Ok(Armenian::SmallLetterJheh),
+            'ռ' => Ok(Armenian::SmallLetterRa),
+            'ս' => Ok(Armenian::SmallLetterSeh),
+            'վ' => Ok(Armenian::SmallLetterVew),
+            'տ' => Ok(Armenian::SmallLetterTiwn),
+            'ր' => Ok(Armenian::SmallLetterReh),
+            'ց' => Ok(Armenian::SmallLetterCo),
+            'ւ' => Ok(Armenian::SmallLetterYiwn),
+            'փ' => Ok(Armenian::SmallLetterPiwr),
+            'ք' => Ok(Armenian::SmallLetterKeh),
+            'օ' => Ok(Armenian::SmallLetterOh),
+            'ֆ' => Ok(Armenian::SmallLetterFeh),
+            'և' => Ok(Armenian::SmallLigatureEchYiwn),
+            'ֈ' => Ok(Armenian::SmallLetterYiWithStroke),
+            '։' => Ok(Armenian::FullStop),
+            '֊' => Ok(Armenian::Hyphen),
+            '֍' => Ok(Armenian::RightDashFacingEternitySign),
+            '֎' => Ok(Armenian::LeftDashFacingEternitySign),
             _ => Err(()),
         }
     }

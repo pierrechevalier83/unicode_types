@@ -1,132 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{3000}: '　'
-    pub const IDEOGRAPHIC_SPACE: char = '　';
-    /// \u{3001}: '、'
-    pub const IDEOGRAPHIC_COMMA: char = '、';
-    /// \u{3002}: '。'
-    pub const IDEOGRAPHIC_FULL_STOP: char = '。';
-    /// \u{3003}: '〃'
-    pub const DITTO_MARK: char = '〃';
-    /// \u{3004}: '〄'
-    pub const JAPANESE_INDUSTRIAL_STANDARD_SYMBOL: char = '〄';
-    /// \u{3005}: '々'
-    pub const IDEOGRAPHIC_ITERATION_MARK: char = '々';
-    /// \u{3006}: '〆'
-    pub const IDEOGRAPHIC_CLOSING_MARK: char = '〆';
-    /// \u{3007}: '〇'
-    pub const IDEOGRAPHIC_NUMBER_ZERO: char = '〇';
-    /// \u{3008}: '〈'
-    pub const LEFT_ANGLE_BRACKET: char = '〈';
-    /// \u{3009}: '〉'
-    pub const RIGHT_ANGLE_BRACKET: char = '〉';
-    /// \u{300a}: '《'
-    pub const LEFT_DOUBLE_ANGLE_BRACKET: char = '《';
-    /// \u{300b}: '》'
-    pub const RIGHT_DOUBLE_ANGLE_BRACKET: char = '》';
-    /// \u{300c}: '「'
-    pub const LEFT_CORNER_BRACKET: char = '「';
-    /// \u{300d}: '」'
-    pub const RIGHT_CORNER_BRACKET: char = '」';
-    /// \u{300e}: '『'
-    pub const LEFT_WHITE_CORNER_BRACKET: char = '『';
-    /// \u{300f}: '』'
-    pub const RIGHT_WHITE_CORNER_BRACKET: char = '』';
-    /// \u{3010}: '【'
-    pub const LEFT_BLACK_LENTICULAR_BRACKET: char = '【';
-    /// \u{3011}: '】'
-    pub const RIGHT_BLACK_LENTICULAR_BRACKET: char = '】';
-    /// \u{3012}: '〒'
-    pub const POSTAL_MARK: char = '〒';
-    /// \u{3013}: '〓'
-    pub const GETA_MARK: char = '〓';
-    /// \u{3014}: '〔'
-    pub const LEFT_TORTOISE_SHELL_BRACKET: char = '〔';
-    /// \u{3015}: '〕'
-    pub const RIGHT_TORTOISE_SHELL_BRACKET: char = '〕';
-    /// \u{3016}: '〖'
-    pub const LEFT_WHITE_LENTICULAR_BRACKET: char = '〖';
-    /// \u{3017}: '〗'
-    pub const RIGHT_WHITE_LENTICULAR_BRACKET: char = '〗';
-    /// \u{3018}: '〘'
-    pub const LEFT_WHITE_TORTOISE_SHELL_BRACKET: char = '〘';
-    /// \u{3019}: '〙'
-    pub const RIGHT_WHITE_TORTOISE_SHELL_BRACKET: char = '〙';
-    /// \u{301a}: '〚'
-    pub const LEFT_WHITE_SQUARE_BRACKET: char = '〚';
-    /// \u{301b}: '〛'
-    pub const RIGHT_WHITE_SQUARE_BRACKET: char = '〛';
-    /// \u{301c}: '〜'
-    pub const WAVE_DASH: char = '〜';
-    /// \u{301d}: '〝'
-    pub const REVERSED_DOUBLE_PRIME_QUOTATION_MARK: char = '〝';
-    /// \u{301e}: '〞'
-    pub const DOUBLE_PRIME_QUOTATION_MARK: char = '〞';
-    /// \u{301f}: '〟'
-    pub const LOW_DOUBLE_PRIME_QUOTATION_MARK: char = '〟';
-    /// \u{3020}: '〠'
-    pub const POSTAL_MARK_FACE: char = '〠';
-    /// \u{3021}: '〡'
-    pub const HANGZHOU_NUMERAL_ONE: char = '〡';
-    /// \u{3022}: '〢'
-    pub const HANGZHOU_NUMERAL_TWO: char = '〢';
-    /// \u{3023}: '〣'
-    pub const HANGZHOU_NUMERAL_THREE: char = '〣';
-    /// \u{3024}: '〤'
-    pub const HANGZHOU_NUMERAL_FOUR: char = '〤';
-    /// \u{3025}: '〥'
-    pub const HANGZHOU_NUMERAL_FIVE: char = '〥';
-    /// \u{3026}: '〦'
-    pub const HANGZHOU_NUMERAL_SIX: char = '〦';
-    /// \u{3027}: '〧'
-    pub const HANGZHOU_NUMERAL_SEVEN: char = '〧';
-    /// \u{3028}: '〨'
-    pub const HANGZHOU_NUMERAL_EIGHT: char = '〨';
-    /// \u{3029}: '〩'
-    pub const HANGZHOU_NUMERAL_NINE: char = '〩';
-    /// \u{302a}: '〪'
-    pub const IDEOGRAPHIC_LEVEL_TONE_MARK: char = '〪';
-    /// \u{302b}: '〫'
-    pub const IDEOGRAPHIC_RISING_TONE_MARK: char = '〫';
-    /// \u{302c}: '〬'
-    pub const IDEOGRAPHIC_DEPARTING_TONE_MARK: char = '〬';
-    /// \u{302d}: '〭'
-    pub const IDEOGRAPHIC_ENTERING_TONE_MARK: char = '〭';
-    /// \u{302e}: '〮'
-    pub const HANGUL_SINGLE_DOT_TONE_MARK: char = '〮';
-    /// \u{302f}: '〯'
-    pub const HANGUL_DOUBLE_DOT_TONE_MARK: char = '〯';
-    /// \u{3030}: '〰'
-    pub const WAVY_DASH: char = '〰';
-    /// \u{3031}: '〱'
-    pub const VERTICAL_KANA_REPEAT_MARK: char = '〱';
-    /// \u{3032}: '〲'
-    pub const VERTICAL_KANA_REPEAT_WITH_VOICED_SOUND_MARK: char = '〲';
-    /// \u{3033}: '〳'
-    pub const VERTICAL_KANA_REPEAT_MARK_UPPER_HALF: char = '〳';
-    /// \u{3034}: '〴'
-    pub const VERTICAL_KANA_REPEAT_WITH_VOICED_SOUND_MARK_UPPER_HALF: char = '〴';
-    /// \u{3035}: '〵'
-    pub const VERTICAL_KANA_REPEAT_MARK_LOWER_HALF: char = '〵';
-    /// \u{3036}: '〶'
-    pub const CIRCLED_POSTAL_MARK: char = '〶';
-    /// \u{3037}: '〷'
-    pub const IDEOGRAPHIC_TELEGRAPH_LINE_FEED_SEPARATOR_SYMBOL: char = '〷';
-    /// \u{3038}: '〸'
-    pub const HANGZHOU_NUMERAL_TEN: char = '〸';
-    /// \u{3039}: '〹'
-    pub const HANGZHOU_NUMERAL_TWENTY: char = '〹';
-    /// \u{303a}: '〺'
-    pub const HANGZHOU_NUMERAL_THIRTY: char = '〺';
-    /// \u{303b}: '〻'
-    pub const VERTICAL_IDEOGRAPHIC_ITERATION_MARK: char = '〻';
-    /// \u{303c}: '〼'
-    pub const MASU_MARK: char = '〼';
-    /// \u{303d}: '〽'
-    pub const PART_ALTERNATION_MARK: char = '〽';
-    /// \u{303e}: '〾'
-    pub const IDEOGRAPHIC_VARIATION_INDICATOR: char = '〾';
-}
 
 /// An enum to represent all characters in the CJKSymbolsandPunctuation block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -261,71 +132,70 @@ pub enum CJKSymbolsandPunctuation {
 
 impl Into<char> for CJKSymbolsandPunctuation {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CJKSymbolsandPunctuation::IdeographicSpace => IDEOGRAPHIC_SPACE,
-            CJKSymbolsandPunctuation::IdeographicComma => IDEOGRAPHIC_COMMA,
-            CJKSymbolsandPunctuation::IdeographicFullStop => IDEOGRAPHIC_FULL_STOP,
-            CJKSymbolsandPunctuation::DittoMark => DITTO_MARK,
-            CJKSymbolsandPunctuation::JapaneseIndustrialStandardSymbol => JAPANESE_INDUSTRIAL_STANDARD_SYMBOL,
-            CJKSymbolsandPunctuation::IdeographicIterationMark => IDEOGRAPHIC_ITERATION_MARK,
-            CJKSymbolsandPunctuation::IdeographicClosingMark => IDEOGRAPHIC_CLOSING_MARK,
-            CJKSymbolsandPunctuation::IdeographicNumberZero => IDEOGRAPHIC_NUMBER_ZERO,
-            CJKSymbolsandPunctuation::LeftAngleBracket => LEFT_ANGLE_BRACKET,
-            CJKSymbolsandPunctuation::RightAngleBracket => RIGHT_ANGLE_BRACKET,
-            CJKSymbolsandPunctuation::LeftDoubleAngleBracket => LEFT_DOUBLE_ANGLE_BRACKET,
-            CJKSymbolsandPunctuation::RightDoubleAngleBracket => RIGHT_DOUBLE_ANGLE_BRACKET,
-            CJKSymbolsandPunctuation::LeftCornerBracket => LEFT_CORNER_BRACKET,
-            CJKSymbolsandPunctuation::RightCornerBracket => RIGHT_CORNER_BRACKET,
-            CJKSymbolsandPunctuation::LeftWhiteCornerBracket => LEFT_WHITE_CORNER_BRACKET,
-            CJKSymbolsandPunctuation::RightWhiteCornerBracket => RIGHT_WHITE_CORNER_BRACKET,
-            CJKSymbolsandPunctuation::LeftBlackLenticularBracket => LEFT_BLACK_LENTICULAR_BRACKET,
-            CJKSymbolsandPunctuation::RightBlackLenticularBracket => RIGHT_BLACK_LENTICULAR_BRACKET,
-            CJKSymbolsandPunctuation::PostalMark => POSTAL_MARK,
-            CJKSymbolsandPunctuation::GetaMark => GETA_MARK,
-            CJKSymbolsandPunctuation::LeftTortoiseShellBracket => LEFT_TORTOISE_SHELL_BRACKET,
-            CJKSymbolsandPunctuation::RightTortoiseShellBracket => RIGHT_TORTOISE_SHELL_BRACKET,
-            CJKSymbolsandPunctuation::LeftWhiteLenticularBracket => LEFT_WHITE_LENTICULAR_BRACKET,
-            CJKSymbolsandPunctuation::RightWhiteLenticularBracket => RIGHT_WHITE_LENTICULAR_BRACKET,
-            CJKSymbolsandPunctuation::LeftWhiteTortoiseShellBracket => LEFT_WHITE_TORTOISE_SHELL_BRACKET,
-            CJKSymbolsandPunctuation::RightWhiteTortoiseShellBracket => RIGHT_WHITE_TORTOISE_SHELL_BRACKET,
-            CJKSymbolsandPunctuation::LeftWhiteSquareBracket => LEFT_WHITE_SQUARE_BRACKET,
-            CJKSymbolsandPunctuation::RightWhiteSquareBracket => RIGHT_WHITE_SQUARE_BRACKET,
-            CJKSymbolsandPunctuation::WaveDash => WAVE_DASH,
-            CJKSymbolsandPunctuation::ReversedDoublePrimeQuotationMark => REVERSED_DOUBLE_PRIME_QUOTATION_MARK,
-            CJKSymbolsandPunctuation::DoublePrimeQuotationMark => DOUBLE_PRIME_QUOTATION_MARK,
-            CJKSymbolsandPunctuation::LowDoublePrimeQuotationMark => LOW_DOUBLE_PRIME_QUOTATION_MARK,
-            CJKSymbolsandPunctuation::PostalMarkFace => POSTAL_MARK_FACE,
-            CJKSymbolsandPunctuation::HangzhouNumeralOne => HANGZHOU_NUMERAL_ONE,
-            CJKSymbolsandPunctuation::HangzhouNumeralTwo => HANGZHOU_NUMERAL_TWO,
-            CJKSymbolsandPunctuation::HangzhouNumeralThree => HANGZHOU_NUMERAL_THREE,
-            CJKSymbolsandPunctuation::HangzhouNumeralFour => HANGZHOU_NUMERAL_FOUR,
-            CJKSymbolsandPunctuation::HangzhouNumeralFive => HANGZHOU_NUMERAL_FIVE,
-            CJKSymbolsandPunctuation::HangzhouNumeralSix => HANGZHOU_NUMERAL_SIX,
-            CJKSymbolsandPunctuation::HangzhouNumeralSeven => HANGZHOU_NUMERAL_SEVEN,
-            CJKSymbolsandPunctuation::HangzhouNumeralEight => HANGZHOU_NUMERAL_EIGHT,
-            CJKSymbolsandPunctuation::HangzhouNumeralNine => HANGZHOU_NUMERAL_NINE,
-            CJKSymbolsandPunctuation::IdeographicLevelToneMark => IDEOGRAPHIC_LEVEL_TONE_MARK,
-            CJKSymbolsandPunctuation::IdeographicRisingToneMark => IDEOGRAPHIC_RISING_TONE_MARK,
-            CJKSymbolsandPunctuation::IdeographicDepartingToneMark => IDEOGRAPHIC_DEPARTING_TONE_MARK,
-            CJKSymbolsandPunctuation::IdeographicEnteringToneMark => IDEOGRAPHIC_ENTERING_TONE_MARK,
-            CJKSymbolsandPunctuation::HangulSingleDotToneMark => HANGUL_SINGLE_DOT_TONE_MARK,
-            CJKSymbolsandPunctuation::HangulDoubleDotToneMark => HANGUL_DOUBLE_DOT_TONE_MARK,
-            CJKSymbolsandPunctuation::WavyDash => WAVY_DASH,
-            CJKSymbolsandPunctuation::VerticalKanaRepeatMark => VERTICAL_KANA_REPEAT_MARK,
-            CJKSymbolsandPunctuation::VerticalKanaRepeatWithVoicedSoundMark => VERTICAL_KANA_REPEAT_WITH_VOICED_SOUND_MARK,
-            CJKSymbolsandPunctuation::VerticalKanaRepeatMarkUpperHalf => VERTICAL_KANA_REPEAT_MARK_UPPER_HALF,
-            CJKSymbolsandPunctuation::VerticalKanaRepeatWithVoicedSoundMarkUpperHalf => VERTICAL_KANA_REPEAT_WITH_VOICED_SOUND_MARK_UPPER_HALF,
-            CJKSymbolsandPunctuation::VerticalKanaRepeatMarkLowerHalf => VERTICAL_KANA_REPEAT_MARK_LOWER_HALF,
-            CJKSymbolsandPunctuation::CircledPostalMark => CIRCLED_POSTAL_MARK,
-            CJKSymbolsandPunctuation::IdeographicTelegraphLineFeedSeparatorSymbol => IDEOGRAPHIC_TELEGRAPH_LINE_FEED_SEPARATOR_SYMBOL,
-            CJKSymbolsandPunctuation::HangzhouNumeralTen => HANGZHOU_NUMERAL_TEN,
-            CJKSymbolsandPunctuation::HangzhouNumeralTwenty => HANGZHOU_NUMERAL_TWENTY,
-            CJKSymbolsandPunctuation::HangzhouNumeralThirty => HANGZHOU_NUMERAL_THIRTY,
-            CJKSymbolsandPunctuation::VerticalIdeographicIterationMark => VERTICAL_IDEOGRAPHIC_ITERATION_MARK,
-            CJKSymbolsandPunctuation::MasuMark => MASU_MARK,
-            CJKSymbolsandPunctuation::PartAlternationMark => PART_ALTERNATION_MARK,
-            CJKSymbolsandPunctuation::IdeographicVariationIndicator => IDEOGRAPHIC_VARIATION_INDICATOR,
+            CJKSymbolsandPunctuation::IdeographicSpace => '　',
+            CJKSymbolsandPunctuation::IdeographicComma => '、',
+            CJKSymbolsandPunctuation::IdeographicFullStop => '。',
+            CJKSymbolsandPunctuation::DittoMark => '〃',
+            CJKSymbolsandPunctuation::JapaneseIndustrialStandardSymbol => '〄',
+            CJKSymbolsandPunctuation::IdeographicIterationMark => '々',
+            CJKSymbolsandPunctuation::IdeographicClosingMark => '〆',
+            CJKSymbolsandPunctuation::IdeographicNumberZero => '〇',
+            CJKSymbolsandPunctuation::LeftAngleBracket => '〈',
+            CJKSymbolsandPunctuation::RightAngleBracket => '〉',
+            CJKSymbolsandPunctuation::LeftDoubleAngleBracket => '《',
+            CJKSymbolsandPunctuation::RightDoubleAngleBracket => '》',
+            CJKSymbolsandPunctuation::LeftCornerBracket => '「',
+            CJKSymbolsandPunctuation::RightCornerBracket => '」',
+            CJKSymbolsandPunctuation::LeftWhiteCornerBracket => '『',
+            CJKSymbolsandPunctuation::RightWhiteCornerBracket => '』',
+            CJKSymbolsandPunctuation::LeftBlackLenticularBracket => '【',
+            CJKSymbolsandPunctuation::RightBlackLenticularBracket => '】',
+            CJKSymbolsandPunctuation::PostalMark => '〒',
+            CJKSymbolsandPunctuation::GetaMark => '〓',
+            CJKSymbolsandPunctuation::LeftTortoiseShellBracket => '〔',
+            CJKSymbolsandPunctuation::RightTortoiseShellBracket => '〕',
+            CJKSymbolsandPunctuation::LeftWhiteLenticularBracket => '〖',
+            CJKSymbolsandPunctuation::RightWhiteLenticularBracket => '〗',
+            CJKSymbolsandPunctuation::LeftWhiteTortoiseShellBracket => '〘',
+            CJKSymbolsandPunctuation::RightWhiteTortoiseShellBracket => '〙',
+            CJKSymbolsandPunctuation::LeftWhiteSquareBracket => '〚',
+            CJKSymbolsandPunctuation::RightWhiteSquareBracket => '〛',
+            CJKSymbolsandPunctuation::WaveDash => '〜',
+            CJKSymbolsandPunctuation::ReversedDoublePrimeQuotationMark => '〝',
+            CJKSymbolsandPunctuation::DoublePrimeQuotationMark => '〞',
+            CJKSymbolsandPunctuation::LowDoublePrimeQuotationMark => '〟',
+            CJKSymbolsandPunctuation::PostalMarkFace => '〠',
+            CJKSymbolsandPunctuation::HangzhouNumeralOne => '〡',
+            CJKSymbolsandPunctuation::HangzhouNumeralTwo => '〢',
+            CJKSymbolsandPunctuation::HangzhouNumeralThree => '〣',
+            CJKSymbolsandPunctuation::HangzhouNumeralFour => '〤',
+            CJKSymbolsandPunctuation::HangzhouNumeralFive => '〥',
+            CJKSymbolsandPunctuation::HangzhouNumeralSix => '〦',
+            CJKSymbolsandPunctuation::HangzhouNumeralSeven => '〧',
+            CJKSymbolsandPunctuation::HangzhouNumeralEight => '〨',
+            CJKSymbolsandPunctuation::HangzhouNumeralNine => '〩',
+            CJKSymbolsandPunctuation::IdeographicLevelToneMark => '〪',
+            CJKSymbolsandPunctuation::IdeographicRisingToneMark => '〫',
+            CJKSymbolsandPunctuation::IdeographicDepartingToneMark => '〬',
+            CJKSymbolsandPunctuation::IdeographicEnteringToneMark => '〭',
+            CJKSymbolsandPunctuation::HangulSingleDotToneMark => '〮',
+            CJKSymbolsandPunctuation::HangulDoubleDotToneMark => '〯',
+            CJKSymbolsandPunctuation::WavyDash => '〰',
+            CJKSymbolsandPunctuation::VerticalKanaRepeatMark => '〱',
+            CJKSymbolsandPunctuation::VerticalKanaRepeatWithVoicedSoundMark => '〲',
+            CJKSymbolsandPunctuation::VerticalKanaRepeatMarkUpperHalf => '〳',
+            CJKSymbolsandPunctuation::VerticalKanaRepeatWithVoicedSoundMarkUpperHalf => '〴',
+            CJKSymbolsandPunctuation::VerticalKanaRepeatMarkLowerHalf => '〵',
+            CJKSymbolsandPunctuation::CircledPostalMark => '〶',
+            CJKSymbolsandPunctuation::IdeographicTelegraphLineFeedSeparatorSymbol => '〷',
+            CJKSymbolsandPunctuation::HangzhouNumeralTen => '〸',
+            CJKSymbolsandPunctuation::HangzhouNumeralTwenty => '〹',
+            CJKSymbolsandPunctuation::HangzhouNumeralThirty => '〺',
+            CJKSymbolsandPunctuation::VerticalIdeographicIterationMark => '〻',
+            CJKSymbolsandPunctuation::MasuMark => '〼',
+            CJKSymbolsandPunctuation::PartAlternationMark => '〽',
+            CJKSymbolsandPunctuation::IdeographicVariationIndicator => '〾',
         }
     }
 }
@@ -333,71 +203,70 @@ impl Into<char> for CJKSymbolsandPunctuation {
 impl std::convert::TryFrom<char> for CJKSymbolsandPunctuation {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            IDEOGRAPHIC_SPACE => Ok(CJKSymbolsandPunctuation::IdeographicSpace),
-            IDEOGRAPHIC_COMMA => Ok(CJKSymbolsandPunctuation::IdeographicComma),
-            IDEOGRAPHIC_FULL_STOP => Ok(CJKSymbolsandPunctuation::IdeographicFullStop),
-            DITTO_MARK => Ok(CJKSymbolsandPunctuation::DittoMark),
-            JAPANESE_INDUSTRIAL_STANDARD_SYMBOL => Ok(CJKSymbolsandPunctuation::JapaneseIndustrialStandardSymbol),
-            IDEOGRAPHIC_ITERATION_MARK => Ok(CJKSymbolsandPunctuation::IdeographicIterationMark),
-            IDEOGRAPHIC_CLOSING_MARK => Ok(CJKSymbolsandPunctuation::IdeographicClosingMark),
-            IDEOGRAPHIC_NUMBER_ZERO => Ok(CJKSymbolsandPunctuation::IdeographicNumberZero),
-            LEFT_ANGLE_BRACKET => Ok(CJKSymbolsandPunctuation::LeftAngleBracket),
-            RIGHT_ANGLE_BRACKET => Ok(CJKSymbolsandPunctuation::RightAngleBracket),
-            LEFT_DOUBLE_ANGLE_BRACKET => Ok(CJKSymbolsandPunctuation::LeftDoubleAngleBracket),
-            RIGHT_DOUBLE_ANGLE_BRACKET => Ok(CJKSymbolsandPunctuation::RightDoubleAngleBracket),
-            LEFT_CORNER_BRACKET => Ok(CJKSymbolsandPunctuation::LeftCornerBracket),
-            RIGHT_CORNER_BRACKET => Ok(CJKSymbolsandPunctuation::RightCornerBracket),
-            LEFT_WHITE_CORNER_BRACKET => Ok(CJKSymbolsandPunctuation::LeftWhiteCornerBracket),
-            RIGHT_WHITE_CORNER_BRACKET => Ok(CJKSymbolsandPunctuation::RightWhiteCornerBracket),
-            LEFT_BLACK_LENTICULAR_BRACKET => Ok(CJKSymbolsandPunctuation::LeftBlackLenticularBracket),
-            RIGHT_BLACK_LENTICULAR_BRACKET => Ok(CJKSymbolsandPunctuation::RightBlackLenticularBracket),
-            POSTAL_MARK => Ok(CJKSymbolsandPunctuation::PostalMark),
-            GETA_MARK => Ok(CJKSymbolsandPunctuation::GetaMark),
-            LEFT_TORTOISE_SHELL_BRACKET => Ok(CJKSymbolsandPunctuation::LeftTortoiseShellBracket),
-            RIGHT_TORTOISE_SHELL_BRACKET => Ok(CJKSymbolsandPunctuation::RightTortoiseShellBracket),
-            LEFT_WHITE_LENTICULAR_BRACKET => Ok(CJKSymbolsandPunctuation::LeftWhiteLenticularBracket),
-            RIGHT_WHITE_LENTICULAR_BRACKET => Ok(CJKSymbolsandPunctuation::RightWhiteLenticularBracket),
-            LEFT_WHITE_TORTOISE_SHELL_BRACKET => Ok(CJKSymbolsandPunctuation::LeftWhiteTortoiseShellBracket),
-            RIGHT_WHITE_TORTOISE_SHELL_BRACKET => Ok(CJKSymbolsandPunctuation::RightWhiteTortoiseShellBracket),
-            LEFT_WHITE_SQUARE_BRACKET => Ok(CJKSymbolsandPunctuation::LeftWhiteSquareBracket),
-            RIGHT_WHITE_SQUARE_BRACKET => Ok(CJKSymbolsandPunctuation::RightWhiteSquareBracket),
-            WAVE_DASH => Ok(CJKSymbolsandPunctuation::WaveDash),
-            REVERSED_DOUBLE_PRIME_QUOTATION_MARK => Ok(CJKSymbolsandPunctuation::ReversedDoublePrimeQuotationMark),
-            DOUBLE_PRIME_QUOTATION_MARK => Ok(CJKSymbolsandPunctuation::DoublePrimeQuotationMark),
-            LOW_DOUBLE_PRIME_QUOTATION_MARK => Ok(CJKSymbolsandPunctuation::LowDoublePrimeQuotationMark),
-            POSTAL_MARK_FACE => Ok(CJKSymbolsandPunctuation::PostalMarkFace),
-            HANGZHOU_NUMERAL_ONE => Ok(CJKSymbolsandPunctuation::HangzhouNumeralOne),
-            HANGZHOU_NUMERAL_TWO => Ok(CJKSymbolsandPunctuation::HangzhouNumeralTwo),
-            HANGZHOU_NUMERAL_THREE => Ok(CJKSymbolsandPunctuation::HangzhouNumeralThree),
-            HANGZHOU_NUMERAL_FOUR => Ok(CJKSymbolsandPunctuation::HangzhouNumeralFour),
-            HANGZHOU_NUMERAL_FIVE => Ok(CJKSymbolsandPunctuation::HangzhouNumeralFive),
-            HANGZHOU_NUMERAL_SIX => Ok(CJKSymbolsandPunctuation::HangzhouNumeralSix),
-            HANGZHOU_NUMERAL_SEVEN => Ok(CJKSymbolsandPunctuation::HangzhouNumeralSeven),
-            HANGZHOU_NUMERAL_EIGHT => Ok(CJKSymbolsandPunctuation::HangzhouNumeralEight),
-            HANGZHOU_NUMERAL_NINE => Ok(CJKSymbolsandPunctuation::HangzhouNumeralNine),
-            IDEOGRAPHIC_LEVEL_TONE_MARK => Ok(CJKSymbolsandPunctuation::IdeographicLevelToneMark),
-            IDEOGRAPHIC_RISING_TONE_MARK => Ok(CJKSymbolsandPunctuation::IdeographicRisingToneMark),
-            IDEOGRAPHIC_DEPARTING_TONE_MARK => Ok(CJKSymbolsandPunctuation::IdeographicDepartingToneMark),
-            IDEOGRAPHIC_ENTERING_TONE_MARK => Ok(CJKSymbolsandPunctuation::IdeographicEnteringToneMark),
-            HANGUL_SINGLE_DOT_TONE_MARK => Ok(CJKSymbolsandPunctuation::HangulSingleDotToneMark),
-            HANGUL_DOUBLE_DOT_TONE_MARK => Ok(CJKSymbolsandPunctuation::HangulDoubleDotToneMark),
-            WAVY_DASH => Ok(CJKSymbolsandPunctuation::WavyDash),
-            VERTICAL_KANA_REPEAT_MARK => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatMark),
-            VERTICAL_KANA_REPEAT_WITH_VOICED_SOUND_MARK => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatWithVoicedSoundMark),
-            VERTICAL_KANA_REPEAT_MARK_UPPER_HALF => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatMarkUpperHalf),
-            VERTICAL_KANA_REPEAT_WITH_VOICED_SOUND_MARK_UPPER_HALF => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatWithVoicedSoundMarkUpperHalf),
-            VERTICAL_KANA_REPEAT_MARK_LOWER_HALF => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatMarkLowerHalf),
-            CIRCLED_POSTAL_MARK => Ok(CJKSymbolsandPunctuation::CircledPostalMark),
-            IDEOGRAPHIC_TELEGRAPH_LINE_FEED_SEPARATOR_SYMBOL => Ok(CJKSymbolsandPunctuation::IdeographicTelegraphLineFeedSeparatorSymbol),
-            HANGZHOU_NUMERAL_TEN => Ok(CJKSymbolsandPunctuation::HangzhouNumeralTen),
-            HANGZHOU_NUMERAL_TWENTY => Ok(CJKSymbolsandPunctuation::HangzhouNumeralTwenty),
-            HANGZHOU_NUMERAL_THIRTY => Ok(CJKSymbolsandPunctuation::HangzhouNumeralThirty),
-            VERTICAL_IDEOGRAPHIC_ITERATION_MARK => Ok(CJKSymbolsandPunctuation::VerticalIdeographicIterationMark),
-            MASU_MARK => Ok(CJKSymbolsandPunctuation::MasuMark),
-            PART_ALTERNATION_MARK => Ok(CJKSymbolsandPunctuation::PartAlternationMark),
-            IDEOGRAPHIC_VARIATION_INDICATOR => Ok(CJKSymbolsandPunctuation::IdeographicVariationIndicator),
+            '　' => Ok(CJKSymbolsandPunctuation::IdeographicSpace),
+            '、' => Ok(CJKSymbolsandPunctuation::IdeographicComma),
+            '。' => Ok(CJKSymbolsandPunctuation::IdeographicFullStop),
+            '〃' => Ok(CJKSymbolsandPunctuation::DittoMark),
+            '〄' => Ok(CJKSymbolsandPunctuation::JapaneseIndustrialStandardSymbol),
+            '々' => Ok(CJKSymbolsandPunctuation::IdeographicIterationMark),
+            '〆' => Ok(CJKSymbolsandPunctuation::IdeographicClosingMark),
+            '〇' => Ok(CJKSymbolsandPunctuation::IdeographicNumberZero),
+            '〈' => Ok(CJKSymbolsandPunctuation::LeftAngleBracket),
+            '〉' => Ok(CJKSymbolsandPunctuation::RightAngleBracket),
+            '《' => Ok(CJKSymbolsandPunctuation::LeftDoubleAngleBracket),
+            '》' => Ok(CJKSymbolsandPunctuation::RightDoubleAngleBracket),
+            '「' => Ok(CJKSymbolsandPunctuation::LeftCornerBracket),
+            '」' => Ok(CJKSymbolsandPunctuation::RightCornerBracket),
+            '『' => Ok(CJKSymbolsandPunctuation::LeftWhiteCornerBracket),
+            '』' => Ok(CJKSymbolsandPunctuation::RightWhiteCornerBracket),
+            '【' => Ok(CJKSymbolsandPunctuation::LeftBlackLenticularBracket),
+            '】' => Ok(CJKSymbolsandPunctuation::RightBlackLenticularBracket),
+            '〒' => Ok(CJKSymbolsandPunctuation::PostalMark),
+            '〓' => Ok(CJKSymbolsandPunctuation::GetaMark),
+            '〔' => Ok(CJKSymbolsandPunctuation::LeftTortoiseShellBracket),
+            '〕' => Ok(CJKSymbolsandPunctuation::RightTortoiseShellBracket),
+            '〖' => Ok(CJKSymbolsandPunctuation::LeftWhiteLenticularBracket),
+            '〗' => Ok(CJKSymbolsandPunctuation::RightWhiteLenticularBracket),
+            '〘' => Ok(CJKSymbolsandPunctuation::LeftWhiteTortoiseShellBracket),
+            '〙' => Ok(CJKSymbolsandPunctuation::RightWhiteTortoiseShellBracket),
+            '〚' => Ok(CJKSymbolsandPunctuation::LeftWhiteSquareBracket),
+            '〛' => Ok(CJKSymbolsandPunctuation::RightWhiteSquareBracket),
+            '〜' => Ok(CJKSymbolsandPunctuation::WaveDash),
+            '〝' => Ok(CJKSymbolsandPunctuation::ReversedDoublePrimeQuotationMark),
+            '〞' => Ok(CJKSymbolsandPunctuation::DoublePrimeQuotationMark),
+            '〟' => Ok(CJKSymbolsandPunctuation::LowDoublePrimeQuotationMark),
+            '〠' => Ok(CJKSymbolsandPunctuation::PostalMarkFace),
+            '〡' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralOne),
+            '〢' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralTwo),
+            '〣' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralThree),
+            '〤' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralFour),
+            '〥' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralFive),
+            '〦' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralSix),
+            '〧' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralSeven),
+            '〨' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralEight),
+            '〩' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralNine),
+            '〪' => Ok(CJKSymbolsandPunctuation::IdeographicLevelToneMark),
+            '〫' => Ok(CJKSymbolsandPunctuation::IdeographicRisingToneMark),
+            '〬' => Ok(CJKSymbolsandPunctuation::IdeographicDepartingToneMark),
+            '〭' => Ok(CJKSymbolsandPunctuation::IdeographicEnteringToneMark),
+            '〮' => Ok(CJKSymbolsandPunctuation::HangulSingleDotToneMark),
+            '〯' => Ok(CJKSymbolsandPunctuation::HangulDoubleDotToneMark),
+            '〰' => Ok(CJKSymbolsandPunctuation::WavyDash),
+            '〱' => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatMark),
+            '〲' => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatWithVoicedSoundMark),
+            '〳' => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatMarkUpperHalf),
+            '〴' => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatWithVoicedSoundMarkUpperHalf),
+            '〵' => Ok(CJKSymbolsandPunctuation::VerticalKanaRepeatMarkLowerHalf),
+            '〶' => Ok(CJKSymbolsandPunctuation::CircledPostalMark),
+            '〷' => Ok(CJKSymbolsandPunctuation::IdeographicTelegraphLineFeedSeparatorSymbol),
+            '〸' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralTen),
+            '〹' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralTwenty),
+            '〺' => Ok(CJKSymbolsandPunctuation::HangzhouNumeralThirty),
+            '〻' => Ok(CJKSymbolsandPunctuation::VerticalIdeographicIterationMark),
+            '〼' => Ok(CJKSymbolsandPunctuation::MasuMark),
+            '〽' => Ok(CJKSymbolsandPunctuation::PartAlternationMark),
+            '〾' => Ok(CJKSymbolsandPunctuation::IdeographicVariationIndicator),
             _ => Err(()),
         }
     }

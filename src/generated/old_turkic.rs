@@ -1,152 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10c00}: '𐰀'
-    pub const LETTER_ORKHON_A: char = '𐰀';
-    /// \u{10c01}: '𐰁'
-    pub const LETTER_YENISEI_A: char = '𐰁';
-    /// \u{10c02}: '𐰂'
-    pub const LETTER_YENISEI_AE: char = '𐰂';
-    /// \u{10c03}: '𐰃'
-    pub const LETTER_ORKHON_I: char = '𐰃';
-    /// \u{10c04}: '𐰄'
-    pub const LETTER_YENISEI_I: char = '𐰄';
-    /// \u{10c05}: '𐰅'
-    pub const LETTER_YENISEI_E: char = '𐰅';
-    /// \u{10c06}: '𐰆'
-    pub const LETTER_ORKHON_O: char = '𐰆';
-    /// \u{10c07}: '𐰇'
-    pub const LETTER_ORKHON_OE: char = '𐰇';
-    /// \u{10c08}: '𐰈'
-    pub const LETTER_YENISEI_OE: char = '𐰈';
-    /// \u{10c09}: '𐰉'
-    pub const LETTER_ORKHON_AB: char = '𐰉';
-    /// \u{10c0a}: '𐰊'
-    pub const LETTER_YENISEI_AB: char = '𐰊';
-    /// \u{10c0b}: '𐰋'
-    pub const LETTER_ORKHON_AEB: char = '𐰋';
-    /// \u{10c0c}: '𐰌'
-    pub const LETTER_YENISEI_AEB: char = '𐰌';
-    /// \u{10c0d}: '𐰍'
-    pub const LETTER_ORKHON_AG: char = '𐰍';
-    /// \u{10c0e}: '𐰎'
-    pub const LETTER_YENISEI_AG: char = '𐰎';
-    /// \u{10c0f}: '𐰏'
-    pub const LETTER_ORKHON_AEG: char = '𐰏';
-    /// \u{10c10}: '𐰐'
-    pub const LETTER_YENISEI_AEG: char = '𐰐';
-    /// \u{10c11}: '𐰑'
-    pub const LETTER_ORKHON_AD: char = '𐰑';
-    /// \u{10c12}: '𐰒'
-    pub const LETTER_YENISEI_AD: char = '𐰒';
-    /// \u{10c13}: '𐰓'
-    pub const LETTER_ORKHON_AED: char = '𐰓';
-    /// \u{10c14}: '𐰔'
-    pub const LETTER_ORKHON_EZ: char = '𐰔';
-    /// \u{10c15}: '𐰕'
-    pub const LETTER_YENISEI_EZ: char = '𐰕';
-    /// \u{10c16}: '𐰖'
-    pub const LETTER_ORKHON_AY: char = '𐰖';
-    /// \u{10c17}: '𐰗'
-    pub const LETTER_YENISEI_AY: char = '𐰗';
-    /// \u{10c18}: '𐰘'
-    pub const LETTER_ORKHON_AEY: char = '𐰘';
-    /// \u{10c19}: '𐰙'
-    pub const LETTER_YENISEI_AEY: char = '𐰙';
-    /// \u{10c1a}: '𐰚'
-    pub const LETTER_ORKHON_AEK: char = '𐰚';
-    /// \u{10c1b}: '𐰛'
-    pub const LETTER_YENISEI_AEK: char = '𐰛';
-    /// \u{10c1c}: '𐰜'
-    pub const LETTER_ORKHON_OEK: char = '𐰜';
-    /// \u{10c1d}: '𐰝'
-    pub const LETTER_YENISEI_OEK: char = '𐰝';
-    /// \u{10c1e}: '𐰞'
-    pub const LETTER_ORKHON_AL: char = '𐰞';
-    /// \u{10c1f}: '𐰟'
-    pub const LETTER_YENISEI_AL: char = '𐰟';
-    /// \u{10c20}: '𐰠'
-    pub const LETTER_ORKHON_AEL: char = '𐰠';
-    /// \u{10c21}: '𐰡'
-    pub const LETTER_ORKHON_ELT: char = '𐰡';
-    /// \u{10c22}: '𐰢'
-    pub const LETTER_ORKHON_EM: char = '𐰢';
-    /// \u{10c23}: '𐰣'
-    pub const LETTER_ORKHON_AN: char = '𐰣';
-    /// \u{10c24}: '𐰤'
-    pub const LETTER_ORKHON_AEN: char = '𐰤';
-    /// \u{10c25}: '𐰥'
-    pub const LETTER_YENISEI_AEN: char = '𐰥';
-    /// \u{10c26}: '𐰦'
-    pub const LETTER_ORKHON_ENT: char = '𐰦';
-    /// \u{10c27}: '𐰧'
-    pub const LETTER_YENISEI_ENT: char = '𐰧';
-    /// \u{10c28}: '𐰨'
-    pub const LETTER_ORKHON_ENC: char = '𐰨';
-    /// \u{10c29}: '𐰩'
-    pub const LETTER_YENISEI_ENC: char = '𐰩';
-    /// \u{10c2a}: '𐰪'
-    pub const LETTER_ORKHON_ENY: char = '𐰪';
-    /// \u{10c2b}: '𐰫'
-    pub const LETTER_YENISEI_ENY: char = '𐰫';
-    /// \u{10c2c}: '𐰬'
-    pub const LETTER_YENISEI_ANG: char = '𐰬';
-    /// \u{10c2d}: '𐰭'
-    pub const LETTER_ORKHON_ENG: char = '𐰭';
-    /// \u{10c2e}: '𐰮'
-    pub const LETTER_YENISEI_AENG: char = '𐰮';
-    /// \u{10c2f}: '𐰯'
-    pub const LETTER_ORKHON_EP: char = '𐰯';
-    /// \u{10c30}: '𐰰'
-    pub const LETTER_ORKHON_OP: char = '𐰰';
-    /// \u{10c31}: '𐰱'
-    pub const LETTER_ORKHON_IC: char = '𐰱';
-    /// \u{10c32}: '𐰲'
-    pub const LETTER_ORKHON_EC: char = '𐰲';
-    /// \u{10c33}: '𐰳'
-    pub const LETTER_YENISEI_EC: char = '𐰳';
-    /// \u{10c34}: '𐰴'
-    pub const LETTER_ORKHON_AQ: char = '𐰴';
-    /// \u{10c35}: '𐰵'
-    pub const LETTER_YENISEI_AQ: char = '𐰵';
-    /// \u{10c36}: '𐰶'
-    pub const LETTER_ORKHON_IQ: char = '𐰶';
-    /// \u{10c37}: '𐰷'
-    pub const LETTER_YENISEI_IQ: char = '𐰷';
-    /// \u{10c38}: '𐰸'
-    pub const LETTER_ORKHON_OQ: char = '𐰸';
-    /// \u{10c39}: '𐰹'
-    pub const LETTER_YENISEI_OQ: char = '𐰹';
-    /// \u{10c3a}: '𐰺'
-    pub const LETTER_ORKHON_AR: char = '𐰺';
-    /// \u{10c3b}: '𐰻'
-    pub const LETTER_YENISEI_AR: char = '𐰻';
-    /// \u{10c3c}: '𐰼'
-    pub const LETTER_ORKHON_AER: char = '𐰼';
-    /// \u{10c3d}: '𐰽'
-    pub const LETTER_ORKHON_AS: char = '𐰽';
-    /// \u{10c3e}: '𐰾'
-    pub const LETTER_ORKHON_AES: char = '𐰾';
-    /// \u{10c3f}: '𐰿'
-    pub const LETTER_ORKHON_ASH: char = '𐰿';
-    /// \u{10c40}: '𐱀'
-    pub const LETTER_YENISEI_ASH: char = '𐱀';
-    /// \u{10c41}: '𐱁'
-    pub const LETTER_ORKHON_ESH: char = '𐱁';
-    /// \u{10c42}: '𐱂'
-    pub const LETTER_YENISEI_ESH: char = '𐱂';
-    /// \u{10c43}: '𐱃'
-    pub const LETTER_ORKHON_AT: char = '𐱃';
-    /// \u{10c44}: '𐱄'
-    pub const LETTER_YENISEI_AT: char = '𐱄';
-    /// \u{10c45}: '𐱅'
-    pub const LETTER_ORKHON_AET: char = '𐱅';
-    /// \u{10c46}: '𐱆'
-    pub const LETTER_YENISEI_AET: char = '𐱆';
-    /// \u{10c47}: '𐱇'
-    pub const LETTER_ORKHON_OT: char = '𐱇';
-    /// \u{10c48}: '𐱈'
-    pub const LETTER_ORKHON_BASH: char = '𐱈';
-}
 
 /// An enum to represent all characters in the OldTurkic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -301,81 +152,80 @@ pub enum OldTurkic {
 
 impl Into<char> for OldTurkic {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            OldTurkic::LetterOrkhonA => LETTER_ORKHON_A,
-            OldTurkic::LetterYeniseiA => LETTER_YENISEI_A,
-            OldTurkic::LetterYeniseiAe => LETTER_YENISEI_AE,
-            OldTurkic::LetterOrkhonI => LETTER_ORKHON_I,
-            OldTurkic::LetterYeniseiI => LETTER_YENISEI_I,
-            OldTurkic::LetterYeniseiE => LETTER_YENISEI_E,
-            OldTurkic::LetterOrkhonO => LETTER_ORKHON_O,
-            OldTurkic::LetterOrkhonOe => LETTER_ORKHON_OE,
-            OldTurkic::LetterYeniseiOe => LETTER_YENISEI_OE,
-            OldTurkic::LetterOrkhonAb => LETTER_ORKHON_AB,
-            OldTurkic::LetterYeniseiAb => LETTER_YENISEI_AB,
-            OldTurkic::LetterOrkhonAeb => LETTER_ORKHON_AEB,
-            OldTurkic::LetterYeniseiAeb => LETTER_YENISEI_AEB,
-            OldTurkic::LetterOrkhonAg => LETTER_ORKHON_AG,
-            OldTurkic::LetterYeniseiAg => LETTER_YENISEI_AG,
-            OldTurkic::LetterOrkhonAeg => LETTER_ORKHON_AEG,
-            OldTurkic::LetterYeniseiAeg => LETTER_YENISEI_AEG,
-            OldTurkic::LetterOrkhonAd => LETTER_ORKHON_AD,
-            OldTurkic::LetterYeniseiAd => LETTER_YENISEI_AD,
-            OldTurkic::LetterOrkhonAed => LETTER_ORKHON_AED,
-            OldTurkic::LetterOrkhonEz => LETTER_ORKHON_EZ,
-            OldTurkic::LetterYeniseiEz => LETTER_YENISEI_EZ,
-            OldTurkic::LetterOrkhonAy => LETTER_ORKHON_AY,
-            OldTurkic::LetterYeniseiAy => LETTER_YENISEI_AY,
-            OldTurkic::LetterOrkhonAey => LETTER_ORKHON_AEY,
-            OldTurkic::LetterYeniseiAey => LETTER_YENISEI_AEY,
-            OldTurkic::LetterOrkhonAek => LETTER_ORKHON_AEK,
-            OldTurkic::LetterYeniseiAek => LETTER_YENISEI_AEK,
-            OldTurkic::LetterOrkhonOek => LETTER_ORKHON_OEK,
-            OldTurkic::LetterYeniseiOek => LETTER_YENISEI_OEK,
-            OldTurkic::LetterOrkhonAl => LETTER_ORKHON_AL,
-            OldTurkic::LetterYeniseiAl => LETTER_YENISEI_AL,
-            OldTurkic::LetterOrkhonAel => LETTER_ORKHON_AEL,
-            OldTurkic::LetterOrkhonElt => LETTER_ORKHON_ELT,
-            OldTurkic::LetterOrkhonEm => LETTER_ORKHON_EM,
-            OldTurkic::LetterOrkhonAn => LETTER_ORKHON_AN,
-            OldTurkic::LetterOrkhonAen => LETTER_ORKHON_AEN,
-            OldTurkic::LetterYeniseiAen => LETTER_YENISEI_AEN,
-            OldTurkic::LetterOrkhonEnt => LETTER_ORKHON_ENT,
-            OldTurkic::LetterYeniseiEnt => LETTER_YENISEI_ENT,
-            OldTurkic::LetterOrkhonEnc => LETTER_ORKHON_ENC,
-            OldTurkic::LetterYeniseiEnc => LETTER_YENISEI_ENC,
-            OldTurkic::LetterOrkhonEny => LETTER_ORKHON_ENY,
-            OldTurkic::LetterYeniseiEny => LETTER_YENISEI_ENY,
-            OldTurkic::LetterYeniseiAng => LETTER_YENISEI_ANG,
-            OldTurkic::LetterOrkhonEng => LETTER_ORKHON_ENG,
-            OldTurkic::LetterYeniseiAeng => LETTER_YENISEI_AENG,
-            OldTurkic::LetterOrkhonEp => LETTER_ORKHON_EP,
-            OldTurkic::LetterOrkhonOp => LETTER_ORKHON_OP,
-            OldTurkic::LetterOrkhonIc => LETTER_ORKHON_IC,
-            OldTurkic::LetterOrkhonEc => LETTER_ORKHON_EC,
-            OldTurkic::LetterYeniseiEc => LETTER_YENISEI_EC,
-            OldTurkic::LetterOrkhonAq => LETTER_ORKHON_AQ,
-            OldTurkic::LetterYeniseiAq => LETTER_YENISEI_AQ,
-            OldTurkic::LetterOrkhonIq => LETTER_ORKHON_IQ,
-            OldTurkic::LetterYeniseiIq => LETTER_YENISEI_IQ,
-            OldTurkic::LetterOrkhonOq => LETTER_ORKHON_OQ,
-            OldTurkic::LetterYeniseiOq => LETTER_YENISEI_OQ,
-            OldTurkic::LetterOrkhonAr => LETTER_ORKHON_AR,
-            OldTurkic::LetterYeniseiAr => LETTER_YENISEI_AR,
-            OldTurkic::LetterOrkhonAer => LETTER_ORKHON_AER,
-            OldTurkic::LetterOrkhonAs => LETTER_ORKHON_AS,
-            OldTurkic::LetterOrkhonAes => LETTER_ORKHON_AES,
-            OldTurkic::LetterOrkhonAsh => LETTER_ORKHON_ASH,
-            OldTurkic::LetterYeniseiAsh => LETTER_YENISEI_ASH,
-            OldTurkic::LetterOrkhonEsh => LETTER_ORKHON_ESH,
-            OldTurkic::LetterYeniseiEsh => LETTER_YENISEI_ESH,
-            OldTurkic::LetterOrkhonAt => LETTER_ORKHON_AT,
-            OldTurkic::LetterYeniseiAt => LETTER_YENISEI_AT,
-            OldTurkic::LetterOrkhonAet => LETTER_ORKHON_AET,
-            OldTurkic::LetterYeniseiAet => LETTER_YENISEI_AET,
-            OldTurkic::LetterOrkhonOt => LETTER_ORKHON_OT,
-            OldTurkic::LetterOrkhonBash => LETTER_ORKHON_BASH,
+            OldTurkic::LetterOrkhonA => '𐰀',
+            OldTurkic::LetterYeniseiA => '𐰁',
+            OldTurkic::LetterYeniseiAe => '𐰂',
+            OldTurkic::LetterOrkhonI => '𐰃',
+            OldTurkic::LetterYeniseiI => '𐰄',
+            OldTurkic::LetterYeniseiE => '𐰅',
+            OldTurkic::LetterOrkhonO => '𐰆',
+            OldTurkic::LetterOrkhonOe => '𐰇',
+            OldTurkic::LetterYeniseiOe => '𐰈',
+            OldTurkic::LetterOrkhonAb => '𐰉',
+            OldTurkic::LetterYeniseiAb => '𐰊',
+            OldTurkic::LetterOrkhonAeb => '𐰋',
+            OldTurkic::LetterYeniseiAeb => '𐰌',
+            OldTurkic::LetterOrkhonAg => '𐰍',
+            OldTurkic::LetterYeniseiAg => '𐰎',
+            OldTurkic::LetterOrkhonAeg => '𐰏',
+            OldTurkic::LetterYeniseiAeg => '𐰐',
+            OldTurkic::LetterOrkhonAd => '𐰑',
+            OldTurkic::LetterYeniseiAd => '𐰒',
+            OldTurkic::LetterOrkhonAed => '𐰓',
+            OldTurkic::LetterOrkhonEz => '𐰔',
+            OldTurkic::LetterYeniseiEz => '𐰕',
+            OldTurkic::LetterOrkhonAy => '𐰖',
+            OldTurkic::LetterYeniseiAy => '𐰗',
+            OldTurkic::LetterOrkhonAey => '𐰘',
+            OldTurkic::LetterYeniseiAey => '𐰙',
+            OldTurkic::LetterOrkhonAek => '𐰚',
+            OldTurkic::LetterYeniseiAek => '𐰛',
+            OldTurkic::LetterOrkhonOek => '𐰜',
+            OldTurkic::LetterYeniseiOek => '𐰝',
+            OldTurkic::LetterOrkhonAl => '𐰞',
+            OldTurkic::LetterYeniseiAl => '𐰟',
+            OldTurkic::LetterOrkhonAel => '𐰠',
+            OldTurkic::LetterOrkhonElt => '𐰡',
+            OldTurkic::LetterOrkhonEm => '𐰢',
+            OldTurkic::LetterOrkhonAn => '𐰣',
+            OldTurkic::LetterOrkhonAen => '𐰤',
+            OldTurkic::LetterYeniseiAen => '𐰥',
+            OldTurkic::LetterOrkhonEnt => '𐰦',
+            OldTurkic::LetterYeniseiEnt => '𐰧',
+            OldTurkic::LetterOrkhonEnc => '𐰨',
+            OldTurkic::LetterYeniseiEnc => '𐰩',
+            OldTurkic::LetterOrkhonEny => '𐰪',
+            OldTurkic::LetterYeniseiEny => '𐰫',
+            OldTurkic::LetterYeniseiAng => '𐰬',
+            OldTurkic::LetterOrkhonEng => '𐰭',
+            OldTurkic::LetterYeniseiAeng => '𐰮',
+            OldTurkic::LetterOrkhonEp => '𐰯',
+            OldTurkic::LetterOrkhonOp => '𐰰',
+            OldTurkic::LetterOrkhonIc => '𐰱',
+            OldTurkic::LetterOrkhonEc => '𐰲',
+            OldTurkic::LetterYeniseiEc => '𐰳',
+            OldTurkic::LetterOrkhonAq => '𐰴',
+            OldTurkic::LetterYeniseiAq => '𐰵',
+            OldTurkic::LetterOrkhonIq => '𐰶',
+            OldTurkic::LetterYeniseiIq => '𐰷',
+            OldTurkic::LetterOrkhonOq => '𐰸',
+            OldTurkic::LetterYeniseiOq => '𐰹',
+            OldTurkic::LetterOrkhonAr => '𐰺',
+            OldTurkic::LetterYeniseiAr => '𐰻',
+            OldTurkic::LetterOrkhonAer => '𐰼',
+            OldTurkic::LetterOrkhonAs => '𐰽',
+            OldTurkic::LetterOrkhonAes => '𐰾',
+            OldTurkic::LetterOrkhonAsh => '𐰿',
+            OldTurkic::LetterYeniseiAsh => '𐱀',
+            OldTurkic::LetterOrkhonEsh => '𐱁',
+            OldTurkic::LetterYeniseiEsh => '𐱂',
+            OldTurkic::LetterOrkhonAt => '𐱃',
+            OldTurkic::LetterYeniseiAt => '𐱄',
+            OldTurkic::LetterOrkhonAet => '𐱅',
+            OldTurkic::LetterYeniseiAet => '𐱆',
+            OldTurkic::LetterOrkhonOt => '𐱇',
+            OldTurkic::LetterOrkhonBash => '𐱈',
         }
     }
 }
@@ -383,81 +233,80 @@ impl Into<char> for OldTurkic {
 impl std::convert::TryFrom<char> for OldTurkic {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_ORKHON_A => Ok(OldTurkic::LetterOrkhonA),
-            LETTER_YENISEI_A => Ok(OldTurkic::LetterYeniseiA),
-            LETTER_YENISEI_AE => Ok(OldTurkic::LetterYeniseiAe),
-            LETTER_ORKHON_I => Ok(OldTurkic::LetterOrkhonI),
-            LETTER_YENISEI_I => Ok(OldTurkic::LetterYeniseiI),
-            LETTER_YENISEI_E => Ok(OldTurkic::LetterYeniseiE),
-            LETTER_ORKHON_O => Ok(OldTurkic::LetterOrkhonO),
-            LETTER_ORKHON_OE => Ok(OldTurkic::LetterOrkhonOe),
-            LETTER_YENISEI_OE => Ok(OldTurkic::LetterYeniseiOe),
-            LETTER_ORKHON_AB => Ok(OldTurkic::LetterOrkhonAb),
-            LETTER_YENISEI_AB => Ok(OldTurkic::LetterYeniseiAb),
-            LETTER_ORKHON_AEB => Ok(OldTurkic::LetterOrkhonAeb),
-            LETTER_YENISEI_AEB => Ok(OldTurkic::LetterYeniseiAeb),
-            LETTER_ORKHON_AG => Ok(OldTurkic::LetterOrkhonAg),
-            LETTER_YENISEI_AG => Ok(OldTurkic::LetterYeniseiAg),
-            LETTER_ORKHON_AEG => Ok(OldTurkic::LetterOrkhonAeg),
-            LETTER_YENISEI_AEG => Ok(OldTurkic::LetterYeniseiAeg),
-            LETTER_ORKHON_AD => Ok(OldTurkic::LetterOrkhonAd),
-            LETTER_YENISEI_AD => Ok(OldTurkic::LetterYeniseiAd),
-            LETTER_ORKHON_AED => Ok(OldTurkic::LetterOrkhonAed),
-            LETTER_ORKHON_EZ => Ok(OldTurkic::LetterOrkhonEz),
-            LETTER_YENISEI_EZ => Ok(OldTurkic::LetterYeniseiEz),
-            LETTER_ORKHON_AY => Ok(OldTurkic::LetterOrkhonAy),
-            LETTER_YENISEI_AY => Ok(OldTurkic::LetterYeniseiAy),
-            LETTER_ORKHON_AEY => Ok(OldTurkic::LetterOrkhonAey),
-            LETTER_YENISEI_AEY => Ok(OldTurkic::LetterYeniseiAey),
-            LETTER_ORKHON_AEK => Ok(OldTurkic::LetterOrkhonAek),
-            LETTER_YENISEI_AEK => Ok(OldTurkic::LetterYeniseiAek),
-            LETTER_ORKHON_OEK => Ok(OldTurkic::LetterOrkhonOek),
-            LETTER_YENISEI_OEK => Ok(OldTurkic::LetterYeniseiOek),
-            LETTER_ORKHON_AL => Ok(OldTurkic::LetterOrkhonAl),
-            LETTER_YENISEI_AL => Ok(OldTurkic::LetterYeniseiAl),
-            LETTER_ORKHON_AEL => Ok(OldTurkic::LetterOrkhonAel),
-            LETTER_ORKHON_ELT => Ok(OldTurkic::LetterOrkhonElt),
-            LETTER_ORKHON_EM => Ok(OldTurkic::LetterOrkhonEm),
-            LETTER_ORKHON_AN => Ok(OldTurkic::LetterOrkhonAn),
-            LETTER_ORKHON_AEN => Ok(OldTurkic::LetterOrkhonAen),
-            LETTER_YENISEI_AEN => Ok(OldTurkic::LetterYeniseiAen),
-            LETTER_ORKHON_ENT => Ok(OldTurkic::LetterOrkhonEnt),
-            LETTER_YENISEI_ENT => Ok(OldTurkic::LetterYeniseiEnt),
-            LETTER_ORKHON_ENC => Ok(OldTurkic::LetterOrkhonEnc),
-            LETTER_YENISEI_ENC => Ok(OldTurkic::LetterYeniseiEnc),
-            LETTER_ORKHON_ENY => Ok(OldTurkic::LetterOrkhonEny),
-            LETTER_YENISEI_ENY => Ok(OldTurkic::LetterYeniseiEny),
-            LETTER_YENISEI_ANG => Ok(OldTurkic::LetterYeniseiAng),
-            LETTER_ORKHON_ENG => Ok(OldTurkic::LetterOrkhonEng),
-            LETTER_YENISEI_AENG => Ok(OldTurkic::LetterYeniseiAeng),
-            LETTER_ORKHON_EP => Ok(OldTurkic::LetterOrkhonEp),
-            LETTER_ORKHON_OP => Ok(OldTurkic::LetterOrkhonOp),
-            LETTER_ORKHON_IC => Ok(OldTurkic::LetterOrkhonIc),
-            LETTER_ORKHON_EC => Ok(OldTurkic::LetterOrkhonEc),
-            LETTER_YENISEI_EC => Ok(OldTurkic::LetterYeniseiEc),
-            LETTER_ORKHON_AQ => Ok(OldTurkic::LetterOrkhonAq),
-            LETTER_YENISEI_AQ => Ok(OldTurkic::LetterYeniseiAq),
-            LETTER_ORKHON_IQ => Ok(OldTurkic::LetterOrkhonIq),
-            LETTER_YENISEI_IQ => Ok(OldTurkic::LetterYeniseiIq),
-            LETTER_ORKHON_OQ => Ok(OldTurkic::LetterOrkhonOq),
-            LETTER_YENISEI_OQ => Ok(OldTurkic::LetterYeniseiOq),
-            LETTER_ORKHON_AR => Ok(OldTurkic::LetterOrkhonAr),
-            LETTER_YENISEI_AR => Ok(OldTurkic::LetterYeniseiAr),
-            LETTER_ORKHON_AER => Ok(OldTurkic::LetterOrkhonAer),
-            LETTER_ORKHON_AS => Ok(OldTurkic::LetterOrkhonAs),
-            LETTER_ORKHON_AES => Ok(OldTurkic::LetterOrkhonAes),
-            LETTER_ORKHON_ASH => Ok(OldTurkic::LetterOrkhonAsh),
-            LETTER_YENISEI_ASH => Ok(OldTurkic::LetterYeniseiAsh),
-            LETTER_ORKHON_ESH => Ok(OldTurkic::LetterOrkhonEsh),
-            LETTER_YENISEI_ESH => Ok(OldTurkic::LetterYeniseiEsh),
-            LETTER_ORKHON_AT => Ok(OldTurkic::LetterOrkhonAt),
-            LETTER_YENISEI_AT => Ok(OldTurkic::LetterYeniseiAt),
-            LETTER_ORKHON_AET => Ok(OldTurkic::LetterOrkhonAet),
-            LETTER_YENISEI_AET => Ok(OldTurkic::LetterYeniseiAet),
-            LETTER_ORKHON_OT => Ok(OldTurkic::LetterOrkhonOt),
-            LETTER_ORKHON_BASH => Ok(OldTurkic::LetterOrkhonBash),
+            '𐰀' => Ok(OldTurkic::LetterOrkhonA),
+            '𐰁' => Ok(OldTurkic::LetterYeniseiA),
+            '𐰂' => Ok(OldTurkic::LetterYeniseiAe),
+            '𐰃' => Ok(OldTurkic::LetterOrkhonI),
+            '𐰄' => Ok(OldTurkic::LetterYeniseiI),
+            '𐰅' => Ok(OldTurkic::LetterYeniseiE),
+            '𐰆' => Ok(OldTurkic::LetterOrkhonO),
+            '𐰇' => Ok(OldTurkic::LetterOrkhonOe),
+            '𐰈' => Ok(OldTurkic::LetterYeniseiOe),
+            '𐰉' => Ok(OldTurkic::LetterOrkhonAb),
+            '𐰊' => Ok(OldTurkic::LetterYeniseiAb),
+            '𐰋' => Ok(OldTurkic::LetterOrkhonAeb),
+            '𐰌' => Ok(OldTurkic::LetterYeniseiAeb),
+            '𐰍' => Ok(OldTurkic::LetterOrkhonAg),
+            '𐰎' => Ok(OldTurkic::LetterYeniseiAg),
+            '𐰏' => Ok(OldTurkic::LetterOrkhonAeg),
+            '𐰐' => Ok(OldTurkic::LetterYeniseiAeg),
+            '𐰑' => Ok(OldTurkic::LetterOrkhonAd),
+            '𐰒' => Ok(OldTurkic::LetterYeniseiAd),
+            '𐰓' => Ok(OldTurkic::LetterOrkhonAed),
+            '𐰔' => Ok(OldTurkic::LetterOrkhonEz),
+            '𐰕' => Ok(OldTurkic::LetterYeniseiEz),
+            '𐰖' => Ok(OldTurkic::LetterOrkhonAy),
+            '𐰗' => Ok(OldTurkic::LetterYeniseiAy),
+            '𐰘' => Ok(OldTurkic::LetterOrkhonAey),
+            '𐰙' => Ok(OldTurkic::LetterYeniseiAey),
+            '𐰚' => Ok(OldTurkic::LetterOrkhonAek),
+            '𐰛' => Ok(OldTurkic::LetterYeniseiAek),
+            '𐰜' => Ok(OldTurkic::LetterOrkhonOek),
+            '𐰝' => Ok(OldTurkic::LetterYeniseiOek),
+            '𐰞' => Ok(OldTurkic::LetterOrkhonAl),
+            '𐰟' => Ok(OldTurkic::LetterYeniseiAl),
+            '𐰠' => Ok(OldTurkic::LetterOrkhonAel),
+            '𐰡' => Ok(OldTurkic::LetterOrkhonElt),
+            '𐰢' => Ok(OldTurkic::LetterOrkhonEm),
+            '𐰣' => Ok(OldTurkic::LetterOrkhonAn),
+            '𐰤' => Ok(OldTurkic::LetterOrkhonAen),
+            '𐰥' => Ok(OldTurkic::LetterYeniseiAen),
+            '𐰦' => Ok(OldTurkic::LetterOrkhonEnt),
+            '𐰧' => Ok(OldTurkic::LetterYeniseiEnt),
+            '𐰨' => Ok(OldTurkic::LetterOrkhonEnc),
+            '𐰩' => Ok(OldTurkic::LetterYeniseiEnc),
+            '𐰪' => Ok(OldTurkic::LetterOrkhonEny),
+            '𐰫' => Ok(OldTurkic::LetterYeniseiEny),
+            '𐰬' => Ok(OldTurkic::LetterYeniseiAng),
+            '𐰭' => Ok(OldTurkic::LetterOrkhonEng),
+            '𐰮' => Ok(OldTurkic::LetterYeniseiAeng),
+            '𐰯' => Ok(OldTurkic::LetterOrkhonEp),
+            '𐰰' => Ok(OldTurkic::LetterOrkhonOp),
+            '𐰱' => Ok(OldTurkic::LetterOrkhonIc),
+            '𐰲' => Ok(OldTurkic::LetterOrkhonEc),
+            '𐰳' => Ok(OldTurkic::LetterYeniseiEc),
+            '𐰴' => Ok(OldTurkic::LetterOrkhonAq),
+            '𐰵' => Ok(OldTurkic::LetterYeniseiAq),
+            '𐰶' => Ok(OldTurkic::LetterOrkhonIq),
+            '𐰷' => Ok(OldTurkic::LetterYeniseiIq),
+            '𐰸' => Ok(OldTurkic::LetterOrkhonOq),
+            '𐰹' => Ok(OldTurkic::LetterYeniseiOq),
+            '𐰺' => Ok(OldTurkic::LetterOrkhonAr),
+            '𐰻' => Ok(OldTurkic::LetterYeniseiAr),
+            '𐰼' => Ok(OldTurkic::LetterOrkhonAer),
+            '𐰽' => Ok(OldTurkic::LetterOrkhonAs),
+            '𐰾' => Ok(OldTurkic::LetterOrkhonAes),
+            '𐰿' => Ok(OldTurkic::LetterOrkhonAsh),
+            '𐱀' => Ok(OldTurkic::LetterYeniseiAsh),
+            '𐱁' => Ok(OldTurkic::LetterOrkhonEsh),
+            '𐱂' => Ok(OldTurkic::LetterYeniseiEsh),
+            '𐱃' => Ok(OldTurkic::LetterOrkhonAt),
+            '𐱄' => Ok(OldTurkic::LetterYeniseiAt),
+            '𐱅' => Ok(OldTurkic::LetterOrkhonAet),
+            '𐱆' => Ok(OldTurkic::LetterYeniseiAet),
+            '𐱇' => Ok(OldTurkic::LetterOrkhonOt),
+            '𐱈' => Ok(OldTurkic::LetterOrkhonBash),
             _ => Err(()),
         }
     }

@@ -1,180 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1e900}: '𞤀'
-    pub const CAPITAL_LETTER_ALIF: char = '𞤀';
-    /// \u{1e901}: '𞤁'
-    pub const CAPITAL_LETTER_DAALI: char = '𞤁';
-    /// \u{1e902}: '𞤂'
-    pub const CAPITAL_LETTER_LAAM: char = '𞤂';
-    /// \u{1e903}: '𞤃'
-    pub const CAPITAL_LETTER_MIIM: char = '𞤃';
-    /// \u{1e904}: '𞤄'
-    pub const CAPITAL_LETTER_BA: char = '𞤄';
-    /// \u{1e905}: '𞤅'
-    pub const CAPITAL_LETTER_SINNYIIYHE: char = '𞤅';
-    /// \u{1e906}: '𞤆'
-    pub const CAPITAL_LETTER_PE: char = '𞤆';
-    /// \u{1e907}: '𞤇'
-    pub const CAPITAL_LETTER_BHE: char = '𞤇';
-    /// \u{1e908}: '𞤈'
-    pub const CAPITAL_LETTER_RA: char = '𞤈';
-    /// \u{1e909}: '𞤉'
-    pub const CAPITAL_LETTER_E: char = '𞤉';
-    /// \u{1e90a}: '𞤊'
-    pub const CAPITAL_LETTER_FA: char = '𞤊';
-    /// \u{1e90b}: '𞤋'
-    pub const CAPITAL_LETTER_I: char = '𞤋';
-    /// \u{1e90c}: '𞤌'
-    pub const CAPITAL_LETTER_O: char = '𞤌';
-    /// \u{1e90d}: '𞤍'
-    pub const CAPITAL_LETTER_DHA: char = '𞤍';
-    /// \u{1e90e}: '𞤎'
-    pub const CAPITAL_LETTER_YHE: char = '𞤎';
-    /// \u{1e90f}: '𞤏'
-    pub const CAPITAL_LETTER_WAW: char = '𞤏';
-    /// \u{1e910}: '𞤐'
-    pub const CAPITAL_LETTER_NUN: char = '𞤐';
-    /// \u{1e911}: '𞤑'
-    pub const CAPITAL_LETTER_KAF: char = '𞤑';
-    /// \u{1e912}: '𞤒'
-    pub const CAPITAL_LETTER_YA: char = '𞤒';
-    /// \u{1e913}: '𞤓'
-    pub const CAPITAL_LETTER_U: char = '𞤓';
-    /// \u{1e914}: '𞤔'
-    pub const CAPITAL_LETTER_JIIM: char = '𞤔';
-    /// \u{1e915}: '𞤕'
-    pub const CAPITAL_LETTER_CHI: char = '𞤕';
-    /// \u{1e916}: '𞤖'
-    pub const CAPITAL_LETTER_HA: char = '𞤖';
-    /// \u{1e917}: '𞤗'
-    pub const CAPITAL_LETTER_QAAF: char = '𞤗';
-    /// \u{1e918}: '𞤘'
-    pub const CAPITAL_LETTER_GA: char = '𞤘';
-    /// \u{1e919}: '𞤙'
-    pub const CAPITAL_LETTER_NYA: char = '𞤙';
-    /// \u{1e91a}: '𞤚'
-    pub const CAPITAL_LETTER_TU: char = '𞤚';
-    /// \u{1e91b}: '𞤛'
-    pub const CAPITAL_LETTER_NHA: char = '𞤛';
-    /// \u{1e91c}: '𞤜'
-    pub const CAPITAL_LETTER_VA: char = '𞤜';
-    /// \u{1e91d}: '𞤝'
-    pub const CAPITAL_LETTER_KHA: char = '𞤝';
-    /// \u{1e91e}: '𞤞'
-    pub const CAPITAL_LETTER_GBE: char = '𞤞';
-    /// \u{1e91f}: '𞤟'
-    pub const CAPITAL_LETTER_ZAL: char = '𞤟';
-    /// \u{1e920}: '𞤠'
-    pub const CAPITAL_LETTER_KPO: char = '𞤠';
-    /// \u{1e921}: '𞤡'
-    pub const CAPITAL_LETTER_SHA: char = '𞤡';
-    /// \u{1e922}: '𞤢'
-    pub const SMALL_LETTER_ALIF: char = '𞤢';
-    /// \u{1e923}: '𞤣'
-    pub const SMALL_LETTER_DAALI: char = '𞤣';
-    /// \u{1e924}: '𞤤'
-    pub const SMALL_LETTER_LAAM: char = '𞤤';
-    /// \u{1e925}: '𞤥'
-    pub const SMALL_LETTER_MIIM: char = '𞤥';
-    /// \u{1e926}: '𞤦'
-    pub const SMALL_LETTER_BA: char = '𞤦';
-    /// \u{1e927}: '𞤧'
-    pub const SMALL_LETTER_SINNYIIYHE: char = '𞤧';
-    /// \u{1e928}: '𞤨'
-    pub const SMALL_LETTER_PE: char = '𞤨';
-    /// \u{1e929}: '𞤩'
-    pub const SMALL_LETTER_BHE: char = '𞤩';
-    /// \u{1e92a}: '𞤪'
-    pub const SMALL_LETTER_RA: char = '𞤪';
-    /// \u{1e92b}: '𞤫'
-    pub const SMALL_LETTER_E: char = '𞤫';
-    /// \u{1e92c}: '𞤬'
-    pub const SMALL_LETTER_FA: char = '𞤬';
-    /// \u{1e92d}: '𞤭'
-    pub const SMALL_LETTER_I: char = '𞤭';
-    /// \u{1e92e}: '𞤮'
-    pub const SMALL_LETTER_O: char = '𞤮';
-    /// \u{1e92f}: '𞤯'
-    pub const SMALL_LETTER_DHA: char = '𞤯';
-    /// \u{1e930}: '𞤰'
-    pub const SMALL_LETTER_YHE: char = '𞤰';
-    /// \u{1e931}: '𞤱'
-    pub const SMALL_LETTER_WAW: char = '𞤱';
-    /// \u{1e932}: '𞤲'
-    pub const SMALL_LETTER_NUN: char = '𞤲';
-    /// \u{1e933}: '𞤳'
-    pub const SMALL_LETTER_KAF: char = '𞤳';
-    /// \u{1e934}: '𞤴'
-    pub const SMALL_LETTER_YA: char = '𞤴';
-    /// \u{1e935}: '𞤵'
-    pub const SMALL_LETTER_U: char = '𞤵';
-    /// \u{1e936}: '𞤶'
-    pub const SMALL_LETTER_JIIM: char = '𞤶';
-    /// \u{1e937}: '𞤷'
-    pub const SMALL_LETTER_CHI: char = '𞤷';
-    /// \u{1e938}: '𞤸'
-    pub const SMALL_LETTER_HA: char = '𞤸';
-    /// \u{1e939}: '𞤹'
-    pub const SMALL_LETTER_QAAF: char = '𞤹';
-    /// \u{1e93a}: '𞤺'
-    pub const SMALL_LETTER_GA: char = '𞤺';
-    /// \u{1e93b}: '𞤻'
-    pub const SMALL_LETTER_NYA: char = '𞤻';
-    /// \u{1e93c}: '𞤼'
-    pub const SMALL_LETTER_TU: char = '𞤼';
-    /// \u{1e93d}: '𞤽'
-    pub const SMALL_LETTER_NHA: char = '𞤽';
-    /// \u{1e93e}: '𞤾'
-    pub const SMALL_LETTER_VA: char = '𞤾';
-    /// \u{1e93f}: '𞤿'
-    pub const SMALL_LETTER_KHA: char = '𞤿';
-    /// \u{1e940}: '𞥀'
-    pub const SMALL_LETTER_GBE: char = '𞥀';
-    /// \u{1e941}: '𞥁'
-    pub const SMALL_LETTER_ZAL: char = '𞥁';
-    /// \u{1e942}: '𞥂'
-    pub const SMALL_LETTER_KPO: char = '𞥂';
-    /// \u{1e943}: '𞥃'
-    pub const SMALL_LETTER_SHA: char = '𞥃';
-    /// \u{1e944}: '𞥄'
-    pub const ALIF_LENGTHENER: char = '𞥄';
-    /// \u{1e945}: '𞥅'
-    pub const VOWEL_LENGTHENER: char = '𞥅';
-    /// \u{1e946}: '𞥆'
-    pub const GEMINATION_MARK: char = '𞥆';
-    /// \u{1e947}: '𞥇'
-    pub const HAMZA: char = '𞥇';
-    /// \u{1e948}: '𞥈'
-    pub const CONSONANT_MODIFIER: char = '𞥈';
-    /// \u{1e949}: '𞥉'
-    pub const GEMINATE_CONSONANT_MODIFIER: char = '𞥉';
-    /// \u{1e94a}: '𞥊'
-    pub const NUKTA: char = '𞥊';
-    /// \u{1e94b}: '𞥋'
-    pub const NASALIZATION_MARK: char = '𞥋';
-    /// \u{1e950}: '𞥐'
-    pub const DIGIT_ZERO: char = '𞥐';
-    /// \u{1e951}: '𞥑'
-    pub const DIGIT_ONE: char = '𞥑';
-    /// \u{1e952}: '𞥒'
-    pub const DIGIT_TWO: char = '𞥒';
-    /// \u{1e953}: '𞥓'
-    pub const DIGIT_THREE: char = '𞥓';
-    /// \u{1e954}: '𞥔'
-    pub const DIGIT_FOUR: char = '𞥔';
-    /// \u{1e955}: '𞥕'
-    pub const DIGIT_FIVE: char = '𞥕';
-    /// \u{1e956}: '𞥖'
-    pub const DIGIT_SIX: char = '𞥖';
-    /// \u{1e957}: '𞥗'
-    pub const DIGIT_SEVEN: char = '𞥗';
-    /// \u{1e958}: '𞥘'
-    pub const DIGIT_EIGHT: char = '𞥘';
-    /// \u{1e959}: '𞥙'
-    pub const DIGIT_NINE: char = '𞥙';
-    /// \u{1e95e}: '𞥞'
-    pub const INITIAL_EXCLAMATION_MARK: char = '𞥞';
-}
 
 /// An enum to represent all characters in the Adlam block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -357,95 +180,94 @@ pub enum Adlam {
 
 impl Into<char> for Adlam {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Adlam::CapitalLetterAlif => CAPITAL_LETTER_ALIF,
-            Adlam::CapitalLetterDaali => CAPITAL_LETTER_DAALI,
-            Adlam::CapitalLetterLaam => CAPITAL_LETTER_LAAM,
-            Adlam::CapitalLetterMiim => CAPITAL_LETTER_MIIM,
-            Adlam::CapitalLetterBa => CAPITAL_LETTER_BA,
-            Adlam::CapitalLetterSinnyiiyhe => CAPITAL_LETTER_SINNYIIYHE,
-            Adlam::CapitalLetterPe => CAPITAL_LETTER_PE,
-            Adlam::CapitalLetterBhe => CAPITAL_LETTER_BHE,
-            Adlam::CapitalLetterRa => CAPITAL_LETTER_RA,
-            Adlam::CapitalLetterE => CAPITAL_LETTER_E,
-            Adlam::CapitalLetterFa => CAPITAL_LETTER_FA,
-            Adlam::CapitalLetterI => CAPITAL_LETTER_I,
-            Adlam::CapitalLetterO => CAPITAL_LETTER_O,
-            Adlam::CapitalLetterDha => CAPITAL_LETTER_DHA,
-            Adlam::CapitalLetterYhe => CAPITAL_LETTER_YHE,
-            Adlam::CapitalLetterWaw => CAPITAL_LETTER_WAW,
-            Adlam::CapitalLetterNun => CAPITAL_LETTER_NUN,
-            Adlam::CapitalLetterKaf => CAPITAL_LETTER_KAF,
-            Adlam::CapitalLetterYa => CAPITAL_LETTER_YA,
-            Adlam::CapitalLetterU => CAPITAL_LETTER_U,
-            Adlam::CapitalLetterJiim => CAPITAL_LETTER_JIIM,
-            Adlam::CapitalLetterChi => CAPITAL_LETTER_CHI,
-            Adlam::CapitalLetterHa => CAPITAL_LETTER_HA,
-            Adlam::CapitalLetterQaaf => CAPITAL_LETTER_QAAF,
-            Adlam::CapitalLetterGa => CAPITAL_LETTER_GA,
-            Adlam::CapitalLetterNya => CAPITAL_LETTER_NYA,
-            Adlam::CapitalLetterTu => CAPITAL_LETTER_TU,
-            Adlam::CapitalLetterNha => CAPITAL_LETTER_NHA,
-            Adlam::CapitalLetterVa => CAPITAL_LETTER_VA,
-            Adlam::CapitalLetterKha => CAPITAL_LETTER_KHA,
-            Adlam::CapitalLetterGbe => CAPITAL_LETTER_GBE,
-            Adlam::CapitalLetterZal => CAPITAL_LETTER_ZAL,
-            Adlam::CapitalLetterKpo => CAPITAL_LETTER_KPO,
-            Adlam::CapitalLetterSha => CAPITAL_LETTER_SHA,
-            Adlam::SmallLetterAlif => SMALL_LETTER_ALIF,
-            Adlam::SmallLetterDaali => SMALL_LETTER_DAALI,
-            Adlam::SmallLetterLaam => SMALL_LETTER_LAAM,
-            Adlam::SmallLetterMiim => SMALL_LETTER_MIIM,
-            Adlam::SmallLetterBa => SMALL_LETTER_BA,
-            Adlam::SmallLetterSinnyiiyhe => SMALL_LETTER_SINNYIIYHE,
-            Adlam::SmallLetterPe => SMALL_LETTER_PE,
-            Adlam::SmallLetterBhe => SMALL_LETTER_BHE,
-            Adlam::SmallLetterRa => SMALL_LETTER_RA,
-            Adlam::SmallLetterE => SMALL_LETTER_E,
-            Adlam::SmallLetterFa => SMALL_LETTER_FA,
-            Adlam::SmallLetterI => SMALL_LETTER_I,
-            Adlam::SmallLetterO => SMALL_LETTER_O,
-            Adlam::SmallLetterDha => SMALL_LETTER_DHA,
-            Adlam::SmallLetterYhe => SMALL_LETTER_YHE,
-            Adlam::SmallLetterWaw => SMALL_LETTER_WAW,
-            Adlam::SmallLetterNun => SMALL_LETTER_NUN,
-            Adlam::SmallLetterKaf => SMALL_LETTER_KAF,
-            Adlam::SmallLetterYa => SMALL_LETTER_YA,
-            Adlam::SmallLetterU => SMALL_LETTER_U,
-            Adlam::SmallLetterJiim => SMALL_LETTER_JIIM,
-            Adlam::SmallLetterChi => SMALL_LETTER_CHI,
-            Adlam::SmallLetterHa => SMALL_LETTER_HA,
-            Adlam::SmallLetterQaaf => SMALL_LETTER_QAAF,
-            Adlam::SmallLetterGa => SMALL_LETTER_GA,
-            Adlam::SmallLetterNya => SMALL_LETTER_NYA,
-            Adlam::SmallLetterTu => SMALL_LETTER_TU,
-            Adlam::SmallLetterNha => SMALL_LETTER_NHA,
-            Adlam::SmallLetterVa => SMALL_LETTER_VA,
-            Adlam::SmallLetterKha => SMALL_LETTER_KHA,
-            Adlam::SmallLetterGbe => SMALL_LETTER_GBE,
-            Adlam::SmallLetterZal => SMALL_LETTER_ZAL,
-            Adlam::SmallLetterKpo => SMALL_LETTER_KPO,
-            Adlam::SmallLetterSha => SMALL_LETTER_SHA,
-            Adlam::AlifLengthener => ALIF_LENGTHENER,
-            Adlam::VowelLengthener => VOWEL_LENGTHENER,
-            Adlam::GeminationMark => GEMINATION_MARK,
-            Adlam::Hamza => HAMZA,
-            Adlam::ConsonantModifier => CONSONANT_MODIFIER,
-            Adlam::GeminateConsonantModifier => GEMINATE_CONSONANT_MODIFIER,
-            Adlam::Nukta => NUKTA,
-            Adlam::NasalizationMark => NASALIZATION_MARK,
-            Adlam::DigitZero => DIGIT_ZERO,
-            Adlam::DigitOne => DIGIT_ONE,
-            Adlam::DigitTwo => DIGIT_TWO,
-            Adlam::DigitThree => DIGIT_THREE,
-            Adlam::DigitFour => DIGIT_FOUR,
-            Adlam::DigitFive => DIGIT_FIVE,
-            Adlam::DigitSix => DIGIT_SIX,
-            Adlam::DigitSeven => DIGIT_SEVEN,
-            Adlam::DigitEight => DIGIT_EIGHT,
-            Adlam::DigitNine => DIGIT_NINE,
-            Adlam::InitialExclamationMark => INITIAL_EXCLAMATION_MARK,
+            Adlam::CapitalLetterAlif => '𞤀',
+            Adlam::CapitalLetterDaali => '𞤁',
+            Adlam::CapitalLetterLaam => '𞤂',
+            Adlam::CapitalLetterMiim => '𞤃',
+            Adlam::CapitalLetterBa => '𞤄',
+            Adlam::CapitalLetterSinnyiiyhe => '𞤅',
+            Adlam::CapitalLetterPe => '𞤆',
+            Adlam::CapitalLetterBhe => '𞤇',
+            Adlam::CapitalLetterRa => '𞤈',
+            Adlam::CapitalLetterE => '𞤉',
+            Adlam::CapitalLetterFa => '𞤊',
+            Adlam::CapitalLetterI => '𞤋',
+            Adlam::CapitalLetterO => '𞤌',
+            Adlam::CapitalLetterDha => '𞤍',
+            Adlam::CapitalLetterYhe => '𞤎',
+            Adlam::CapitalLetterWaw => '𞤏',
+            Adlam::CapitalLetterNun => '𞤐',
+            Adlam::CapitalLetterKaf => '𞤑',
+            Adlam::CapitalLetterYa => '𞤒',
+            Adlam::CapitalLetterU => '𞤓',
+            Adlam::CapitalLetterJiim => '𞤔',
+            Adlam::CapitalLetterChi => '𞤕',
+            Adlam::CapitalLetterHa => '𞤖',
+            Adlam::CapitalLetterQaaf => '𞤗',
+            Adlam::CapitalLetterGa => '𞤘',
+            Adlam::CapitalLetterNya => '𞤙',
+            Adlam::CapitalLetterTu => '𞤚',
+            Adlam::CapitalLetterNha => '𞤛',
+            Adlam::CapitalLetterVa => '𞤜',
+            Adlam::CapitalLetterKha => '𞤝',
+            Adlam::CapitalLetterGbe => '𞤞',
+            Adlam::CapitalLetterZal => '𞤟',
+            Adlam::CapitalLetterKpo => '𞤠',
+            Adlam::CapitalLetterSha => '𞤡',
+            Adlam::SmallLetterAlif => '𞤢',
+            Adlam::SmallLetterDaali => '𞤣',
+            Adlam::SmallLetterLaam => '𞤤',
+            Adlam::SmallLetterMiim => '𞤥',
+            Adlam::SmallLetterBa => '𞤦',
+            Adlam::SmallLetterSinnyiiyhe => '𞤧',
+            Adlam::SmallLetterPe => '𞤨',
+            Adlam::SmallLetterBhe => '𞤩',
+            Adlam::SmallLetterRa => '𞤪',
+            Adlam::SmallLetterE => '𞤫',
+            Adlam::SmallLetterFa => '𞤬',
+            Adlam::SmallLetterI => '𞤭',
+            Adlam::SmallLetterO => '𞤮',
+            Adlam::SmallLetterDha => '𞤯',
+            Adlam::SmallLetterYhe => '𞤰',
+            Adlam::SmallLetterWaw => '𞤱',
+            Adlam::SmallLetterNun => '𞤲',
+            Adlam::SmallLetterKaf => '𞤳',
+            Adlam::SmallLetterYa => '𞤴',
+            Adlam::SmallLetterU => '𞤵',
+            Adlam::SmallLetterJiim => '𞤶',
+            Adlam::SmallLetterChi => '𞤷',
+            Adlam::SmallLetterHa => '𞤸',
+            Adlam::SmallLetterQaaf => '𞤹',
+            Adlam::SmallLetterGa => '𞤺',
+            Adlam::SmallLetterNya => '𞤻',
+            Adlam::SmallLetterTu => '𞤼',
+            Adlam::SmallLetterNha => '𞤽',
+            Adlam::SmallLetterVa => '𞤾',
+            Adlam::SmallLetterKha => '𞤿',
+            Adlam::SmallLetterGbe => '𞥀',
+            Adlam::SmallLetterZal => '𞥁',
+            Adlam::SmallLetterKpo => '𞥂',
+            Adlam::SmallLetterSha => '𞥃',
+            Adlam::AlifLengthener => '𞥄',
+            Adlam::VowelLengthener => '𞥅',
+            Adlam::GeminationMark => '𞥆',
+            Adlam::Hamza => '𞥇',
+            Adlam::ConsonantModifier => '𞥈',
+            Adlam::GeminateConsonantModifier => '𞥉',
+            Adlam::Nukta => '𞥊',
+            Adlam::NasalizationMark => '𞥋',
+            Adlam::DigitZero => '𞥐',
+            Adlam::DigitOne => '𞥑',
+            Adlam::DigitTwo => '𞥒',
+            Adlam::DigitThree => '𞥓',
+            Adlam::DigitFour => '𞥔',
+            Adlam::DigitFive => '𞥕',
+            Adlam::DigitSix => '𞥖',
+            Adlam::DigitSeven => '𞥗',
+            Adlam::DigitEight => '𞥘',
+            Adlam::DigitNine => '𞥙',
+            Adlam::InitialExclamationMark => '𞥞',
         }
     }
 }
@@ -453,95 +275,94 @@ impl Into<char> for Adlam {
 impl std::convert::TryFrom<char> for Adlam {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CAPITAL_LETTER_ALIF => Ok(Adlam::CapitalLetterAlif),
-            CAPITAL_LETTER_DAALI => Ok(Adlam::CapitalLetterDaali),
-            CAPITAL_LETTER_LAAM => Ok(Adlam::CapitalLetterLaam),
-            CAPITAL_LETTER_MIIM => Ok(Adlam::CapitalLetterMiim),
-            CAPITAL_LETTER_BA => Ok(Adlam::CapitalLetterBa),
-            CAPITAL_LETTER_SINNYIIYHE => Ok(Adlam::CapitalLetterSinnyiiyhe),
-            CAPITAL_LETTER_PE => Ok(Adlam::CapitalLetterPe),
-            CAPITAL_LETTER_BHE => Ok(Adlam::CapitalLetterBhe),
-            CAPITAL_LETTER_RA => Ok(Adlam::CapitalLetterRa),
-            CAPITAL_LETTER_E => Ok(Adlam::CapitalLetterE),
-            CAPITAL_LETTER_FA => Ok(Adlam::CapitalLetterFa),
-            CAPITAL_LETTER_I => Ok(Adlam::CapitalLetterI),
-            CAPITAL_LETTER_O => Ok(Adlam::CapitalLetterO),
-            CAPITAL_LETTER_DHA => Ok(Adlam::CapitalLetterDha),
-            CAPITAL_LETTER_YHE => Ok(Adlam::CapitalLetterYhe),
-            CAPITAL_LETTER_WAW => Ok(Adlam::CapitalLetterWaw),
-            CAPITAL_LETTER_NUN => Ok(Adlam::CapitalLetterNun),
-            CAPITAL_LETTER_KAF => Ok(Adlam::CapitalLetterKaf),
-            CAPITAL_LETTER_YA => Ok(Adlam::CapitalLetterYa),
-            CAPITAL_LETTER_U => Ok(Adlam::CapitalLetterU),
-            CAPITAL_LETTER_JIIM => Ok(Adlam::CapitalLetterJiim),
-            CAPITAL_LETTER_CHI => Ok(Adlam::CapitalLetterChi),
-            CAPITAL_LETTER_HA => Ok(Adlam::CapitalLetterHa),
-            CAPITAL_LETTER_QAAF => Ok(Adlam::CapitalLetterQaaf),
-            CAPITAL_LETTER_GA => Ok(Adlam::CapitalLetterGa),
-            CAPITAL_LETTER_NYA => Ok(Adlam::CapitalLetterNya),
-            CAPITAL_LETTER_TU => Ok(Adlam::CapitalLetterTu),
-            CAPITAL_LETTER_NHA => Ok(Adlam::CapitalLetterNha),
-            CAPITAL_LETTER_VA => Ok(Adlam::CapitalLetterVa),
-            CAPITAL_LETTER_KHA => Ok(Adlam::CapitalLetterKha),
-            CAPITAL_LETTER_GBE => Ok(Adlam::CapitalLetterGbe),
-            CAPITAL_LETTER_ZAL => Ok(Adlam::CapitalLetterZal),
-            CAPITAL_LETTER_KPO => Ok(Adlam::CapitalLetterKpo),
-            CAPITAL_LETTER_SHA => Ok(Adlam::CapitalLetterSha),
-            SMALL_LETTER_ALIF => Ok(Adlam::SmallLetterAlif),
-            SMALL_LETTER_DAALI => Ok(Adlam::SmallLetterDaali),
-            SMALL_LETTER_LAAM => Ok(Adlam::SmallLetterLaam),
-            SMALL_LETTER_MIIM => Ok(Adlam::SmallLetterMiim),
-            SMALL_LETTER_BA => Ok(Adlam::SmallLetterBa),
-            SMALL_LETTER_SINNYIIYHE => Ok(Adlam::SmallLetterSinnyiiyhe),
-            SMALL_LETTER_PE => Ok(Adlam::SmallLetterPe),
-            SMALL_LETTER_BHE => Ok(Adlam::SmallLetterBhe),
-            SMALL_LETTER_RA => Ok(Adlam::SmallLetterRa),
-            SMALL_LETTER_E => Ok(Adlam::SmallLetterE),
-            SMALL_LETTER_FA => Ok(Adlam::SmallLetterFa),
-            SMALL_LETTER_I => Ok(Adlam::SmallLetterI),
-            SMALL_LETTER_O => Ok(Adlam::SmallLetterO),
-            SMALL_LETTER_DHA => Ok(Adlam::SmallLetterDha),
-            SMALL_LETTER_YHE => Ok(Adlam::SmallLetterYhe),
-            SMALL_LETTER_WAW => Ok(Adlam::SmallLetterWaw),
-            SMALL_LETTER_NUN => Ok(Adlam::SmallLetterNun),
-            SMALL_LETTER_KAF => Ok(Adlam::SmallLetterKaf),
-            SMALL_LETTER_YA => Ok(Adlam::SmallLetterYa),
-            SMALL_LETTER_U => Ok(Adlam::SmallLetterU),
-            SMALL_LETTER_JIIM => Ok(Adlam::SmallLetterJiim),
-            SMALL_LETTER_CHI => Ok(Adlam::SmallLetterChi),
-            SMALL_LETTER_HA => Ok(Adlam::SmallLetterHa),
-            SMALL_LETTER_QAAF => Ok(Adlam::SmallLetterQaaf),
-            SMALL_LETTER_GA => Ok(Adlam::SmallLetterGa),
-            SMALL_LETTER_NYA => Ok(Adlam::SmallLetterNya),
-            SMALL_LETTER_TU => Ok(Adlam::SmallLetterTu),
-            SMALL_LETTER_NHA => Ok(Adlam::SmallLetterNha),
-            SMALL_LETTER_VA => Ok(Adlam::SmallLetterVa),
-            SMALL_LETTER_KHA => Ok(Adlam::SmallLetterKha),
-            SMALL_LETTER_GBE => Ok(Adlam::SmallLetterGbe),
-            SMALL_LETTER_ZAL => Ok(Adlam::SmallLetterZal),
-            SMALL_LETTER_KPO => Ok(Adlam::SmallLetterKpo),
-            SMALL_LETTER_SHA => Ok(Adlam::SmallLetterSha),
-            ALIF_LENGTHENER => Ok(Adlam::AlifLengthener),
-            VOWEL_LENGTHENER => Ok(Adlam::VowelLengthener),
-            GEMINATION_MARK => Ok(Adlam::GeminationMark),
-            HAMZA => Ok(Adlam::Hamza),
-            CONSONANT_MODIFIER => Ok(Adlam::ConsonantModifier),
-            GEMINATE_CONSONANT_MODIFIER => Ok(Adlam::GeminateConsonantModifier),
-            NUKTA => Ok(Adlam::Nukta),
-            NASALIZATION_MARK => Ok(Adlam::NasalizationMark),
-            DIGIT_ZERO => Ok(Adlam::DigitZero),
-            DIGIT_ONE => Ok(Adlam::DigitOne),
-            DIGIT_TWO => Ok(Adlam::DigitTwo),
-            DIGIT_THREE => Ok(Adlam::DigitThree),
-            DIGIT_FOUR => Ok(Adlam::DigitFour),
-            DIGIT_FIVE => Ok(Adlam::DigitFive),
-            DIGIT_SIX => Ok(Adlam::DigitSix),
-            DIGIT_SEVEN => Ok(Adlam::DigitSeven),
-            DIGIT_EIGHT => Ok(Adlam::DigitEight),
-            DIGIT_NINE => Ok(Adlam::DigitNine),
-            INITIAL_EXCLAMATION_MARK => Ok(Adlam::InitialExclamationMark),
+            '𞤀' => Ok(Adlam::CapitalLetterAlif),
+            '𞤁' => Ok(Adlam::CapitalLetterDaali),
+            '𞤂' => Ok(Adlam::CapitalLetterLaam),
+            '𞤃' => Ok(Adlam::CapitalLetterMiim),
+            '𞤄' => Ok(Adlam::CapitalLetterBa),
+            '𞤅' => Ok(Adlam::CapitalLetterSinnyiiyhe),
+            '𞤆' => Ok(Adlam::CapitalLetterPe),
+            '𞤇' => Ok(Adlam::CapitalLetterBhe),
+            '𞤈' => Ok(Adlam::CapitalLetterRa),
+            '𞤉' => Ok(Adlam::CapitalLetterE),
+            '𞤊' => Ok(Adlam::CapitalLetterFa),
+            '𞤋' => Ok(Adlam::CapitalLetterI),
+            '𞤌' => Ok(Adlam::CapitalLetterO),
+            '𞤍' => Ok(Adlam::CapitalLetterDha),
+            '𞤎' => Ok(Adlam::CapitalLetterYhe),
+            '𞤏' => Ok(Adlam::CapitalLetterWaw),
+            '𞤐' => Ok(Adlam::CapitalLetterNun),
+            '𞤑' => Ok(Adlam::CapitalLetterKaf),
+            '𞤒' => Ok(Adlam::CapitalLetterYa),
+            '𞤓' => Ok(Adlam::CapitalLetterU),
+            '𞤔' => Ok(Adlam::CapitalLetterJiim),
+            '𞤕' => Ok(Adlam::CapitalLetterChi),
+            '𞤖' => Ok(Adlam::CapitalLetterHa),
+            '𞤗' => Ok(Adlam::CapitalLetterQaaf),
+            '𞤘' => Ok(Adlam::CapitalLetterGa),
+            '𞤙' => Ok(Adlam::CapitalLetterNya),
+            '𞤚' => Ok(Adlam::CapitalLetterTu),
+            '𞤛' => Ok(Adlam::CapitalLetterNha),
+            '𞤜' => Ok(Adlam::CapitalLetterVa),
+            '𞤝' => Ok(Adlam::CapitalLetterKha),
+            '𞤞' => Ok(Adlam::CapitalLetterGbe),
+            '𞤟' => Ok(Adlam::CapitalLetterZal),
+            '𞤠' => Ok(Adlam::CapitalLetterKpo),
+            '𞤡' => Ok(Adlam::CapitalLetterSha),
+            '𞤢' => Ok(Adlam::SmallLetterAlif),
+            '𞤣' => Ok(Adlam::SmallLetterDaali),
+            '𞤤' => Ok(Adlam::SmallLetterLaam),
+            '𞤥' => Ok(Adlam::SmallLetterMiim),
+            '𞤦' => Ok(Adlam::SmallLetterBa),
+            '𞤧' => Ok(Adlam::SmallLetterSinnyiiyhe),
+            '𞤨' => Ok(Adlam::SmallLetterPe),
+            '𞤩' => Ok(Adlam::SmallLetterBhe),
+            '𞤪' => Ok(Adlam::SmallLetterRa),
+            '𞤫' => Ok(Adlam::SmallLetterE),
+            '𞤬' => Ok(Adlam::SmallLetterFa),
+            '𞤭' => Ok(Adlam::SmallLetterI),
+            '𞤮' => Ok(Adlam::SmallLetterO),
+            '𞤯' => Ok(Adlam::SmallLetterDha),
+            '𞤰' => Ok(Adlam::SmallLetterYhe),
+            '𞤱' => Ok(Adlam::SmallLetterWaw),
+            '𞤲' => Ok(Adlam::SmallLetterNun),
+            '𞤳' => Ok(Adlam::SmallLetterKaf),
+            '𞤴' => Ok(Adlam::SmallLetterYa),
+            '𞤵' => Ok(Adlam::SmallLetterU),
+            '𞤶' => Ok(Adlam::SmallLetterJiim),
+            '𞤷' => Ok(Adlam::SmallLetterChi),
+            '𞤸' => Ok(Adlam::SmallLetterHa),
+            '𞤹' => Ok(Adlam::SmallLetterQaaf),
+            '𞤺' => Ok(Adlam::SmallLetterGa),
+            '𞤻' => Ok(Adlam::SmallLetterNya),
+            '𞤼' => Ok(Adlam::SmallLetterTu),
+            '𞤽' => Ok(Adlam::SmallLetterNha),
+            '𞤾' => Ok(Adlam::SmallLetterVa),
+            '𞤿' => Ok(Adlam::SmallLetterKha),
+            '𞥀' => Ok(Adlam::SmallLetterGbe),
+            '𞥁' => Ok(Adlam::SmallLetterZal),
+            '𞥂' => Ok(Adlam::SmallLetterKpo),
+            '𞥃' => Ok(Adlam::SmallLetterSha),
+            '𞥄' => Ok(Adlam::AlifLengthener),
+            '𞥅' => Ok(Adlam::VowelLengthener),
+            '𞥆' => Ok(Adlam::GeminationMark),
+            '𞥇' => Ok(Adlam::Hamza),
+            '𞥈' => Ok(Adlam::ConsonantModifier),
+            '𞥉' => Ok(Adlam::GeminateConsonantModifier),
+            '𞥊' => Ok(Adlam::Nukta),
+            '𞥋' => Ok(Adlam::NasalizationMark),
+            '𞥐' => Ok(Adlam::DigitZero),
+            '𞥑' => Ok(Adlam::DigitOne),
+            '𞥒' => Ok(Adlam::DigitTwo),
+            '𞥓' => Ok(Adlam::DigitThree),
+            '𞥔' => Ok(Adlam::DigitFour),
+            '𞥕' => Ok(Adlam::DigitFive),
+            '𞥖' => Ok(Adlam::DigitSix),
+            '𞥗' => Ok(Adlam::DigitSeven),
+            '𞥘' => Ok(Adlam::DigitEight),
+            '𞥙' => Ok(Adlam::DigitNine),
+            '𞥞' => Ok(Adlam::InitialExclamationMark),
             _ => Err(()),
         }
     }

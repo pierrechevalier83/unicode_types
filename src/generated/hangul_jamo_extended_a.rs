@@ -1,64 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a960}: 'ꥠ'
-    pub const HANGUL_CHOSEONG_TIKEUT_DASH_MIEUM: char = 'ꥠ';
-    /// \u{a961}: 'ꥡ'
-    pub const HANGUL_CHOSEONG_TIKEUT_DASH_PIEUP: char = 'ꥡ';
-    /// \u{a962}: 'ꥢ'
-    pub const HANGUL_CHOSEONG_TIKEUT_DASH_SIOS: char = 'ꥢ';
-    /// \u{a963}: 'ꥣ'
-    pub const HANGUL_CHOSEONG_TIKEUT_DASH_CIEUC: char = 'ꥣ';
-    /// \u{a964}: 'ꥤ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_KIYEOK: char = 'ꥤ';
-    /// \u{a965}: 'ꥥ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_SSANGKIYEOK: char = 'ꥥ';
-    /// \u{a966}: 'ꥦ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_TIKEUT: char = 'ꥦ';
-    /// \u{a967}: 'ꥧ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_SSANGTIKEUT: char = 'ꥧ';
-    /// \u{a968}: 'ꥨ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_MIEUM: char = 'ꥨ';
-    /// \u{a969}: 'ꥩ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_PIEUP: char = 'ꥩ';
-    /// \u{a96a}: 'ꥪ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_SSANGPIEUP: char = 'ꥪ';
-    /// \u{a96b}: 'ꥫ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_KAPYEOUNPIEUP: char = 'ꥫ';
-    /// \u{a96c}: 'ꥬ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_SIOS: char = 'ꥬ';
-    /// \u{a96d}: 'ꥭ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_CIEUC: char = 'ꥭ';
-    /// \u{a96e}: 'ꥮ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_KHIEUKH: char = 'ꥮ';
-    /// \u{a96f}: 'ꥯ'
-    pub const HANGUL_CHOSEONG_MIEUM_DASH_KIYEOK: char = 'ꥯ';
-    /// \u{a970}: 'ꥰ'
-    pub const HANGUL_CHOSEONG_MIEUM_DASH_TIKEUT: char = 'ꥰ';
-    /// \u{a971}: 'ꥱ'
-    pub const HANGUL_CHOSEONG_MIEUM_DASH_SIOS: char = 'ꥱ';
-    /// \u{a972}: 'ꥲ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_THIEUTH: char = 'ꥲ';
-    /// \u{a973}: 'ꥳ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_KHIEUKH: char = 'ꥳ';
-    /// \u{a974}: 'ꥴ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_HIEUH: char = 'ꥴ';
-    /// \u{a975}: 'ꥵ'
-    pub const HANGUL_CHOSEONG_SSANGSIOS_DASH_PIEUP: char = 'ꥵ';
-    /// \u{a976}: 'ꥶ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_RIEUL: char = 'ꥶ';
-    /// \u{a977}: 'ꥷ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_HIEUH: char = 'ꥷ';
-    /// \u{a978}: 'ꥸ'
-    pub const HANGUL_CHOSEONG_SSANGCIEUC_DASH_HIEUH: char = 'ꥸ';
-    /// \u{a979}: 'ꥹ'
-    pub const HANGUL_CHOSEONG_SSANGTHIEUTH: char = 'ꥹ';
-    /// \u{a97a}: 'ꥺ'
-    pub const HANGUL_CHOSEONG_PHIEUPH_DASH_HIEUH: char = 'ꥺ';
-    /// \u{a97b}: 'ꥻ'
-    pub const HANGUL_CHOSEONG_HIEUH_DASH_SIOS: char = 'ꥻ';
-    /// \u{a97c}: 'ꥼ'
-    pub const HANGUL_CHOSEONG_SSANGYEORINHIEUH: char = 'ꥼ';
-}
 
 /// An enum to represent all characters in the HangulJamoExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -125,37 +64,36 @@ pub enum HangulJamoExtendedA {
 
 impl Into<char> for HangulJamoExtendedA {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            HangulJamoExtendedA::HangulChoseongTikeutDashMieum => HANGUL_CHOSEONG_TIKEUT_DASH_MIEUM,
-            HangulJamoExtendedA::HangulChoseongTikeutDashPieup => HANGUL_CHOSEONG_TIKEUT_DASH_PIEUP,
-            HangulJamoExtendedA::HangulChoseongTikeutDashSios => HANGUL_CHOSEONG_TIKEUT_DASH_SIOS,
-            HangulJamoExtendedA::HangulChoseongTikeutDashCieuc => HANGUL_CHOSEONG_TIKEUT_DASH_CIEUC,
-            HangulJamoExtendedA::HangulChoseongRieulDashKiyeok => HANGUL_CHOSEONG_RIEUL_DASH_KIYEOK,
-            HangulJamoExtendedA::HangulChoseongRieulDashSsangkiyeok => HANGUL_CHOSEONG_RIEUL_DASH_SSANGKIYEOK,
-            HangulJamoExtendedA::HangulChoseongRieulDashTikeut => HANGUL_CHOSEONG_RIEUL_DASH_TIKEUT,
-            HangulJamoExtendedA::HangulChoseongRieulDashSsangtikeut => HANGUL_CHOSEONG_RIEUL_DASH_SSANGTIKEUT,
-            HangulJamoExtendedA::HangulChoseongRieulDashMieum => HANGUL_CHOSEONG_RIEUL_DASH_MIEUM,
-            HangulJamoExtendedA::HangulChoseongRieulDashPieup => HANGUL_CHOSEONG_RIEUL_DASH_PIEUP,
-            HangulJamoExtendedA::HangulChoseongRieulDashSsangpieup => HANGUL_CHOSEONG_RIEUL_DASH_SSANGPIEUP,
-            HangulJamoExtendedA::HangulChoseongRieulDashKapyeounpieup => HANGUL_CHOSEONG_RIEUL_DASH_KAPYEOUNPIEUP,
-            HangulJamoExtendedA::HangulChoseongRieulDashSios => HANGUL_CHOSEONG_RIEUL_DASH_SIOS,
-            HangulJamoExtendedA::HangulChoseongRieulDashCieuc => HANGUL_CHOSEONG_RIEUL_DASH_CIEUC,
-            HangulJamoExtendedA::HangulChoseongRieulDashKhieukh => HANGUL_CHOSEONG_RIEUL_DASH_KHIEUKH,
-            HangulJamoExtendedA::HangulChoseongMieumDashKiyeok => HANGUL_CHOSEONG_MIEUM_DASH_KIYEOK,
-            HangulJamoExtendedA::HangulChoseongMieumDashTikeut => HANGUL_CHOSEONG_MIEUM_DASH_TIKEUT,
-            HangulJamoExtendedA::HangulChoseongMieumDashSios => HANGUL_CHOSEONG_MIEUM_DASH_SIOS,
-            HangulJamoExtendedA::HangulChoseongPieupDashSiosDashThieuth => HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_THIEUTH,
-            HangulJamoExtendedA::HangulChoseongPieupDashKhieukh => HANGUL_CHOSEONG_PIEUP_DASH_KHIEUKH,
-            HangulJamoExtendedA::HangulChoseongPieupDashHieuh => HANGUL_CHOSEONG_PIEUP_DASH_HIEUH,
-            HangulJamoExtendedA::HangulChoseongSsangsiosDashPieup => HANGUL_CHOSEONG_SSANGSIOS_DASH_PIEUP,
-            HangulJamoExtendedA::HangulChoseongIeungDashRieul => HANGUL_CHOSEONG_IEUNG_DASH_RIEUL,
-            HangulJamoExtendedA::HangulChoseongIeungDashHieuh => HANGUL_CHOSEONG_IEUNG_DASH_HIEUH,
-            HangulJamoExtendedA::HangulChoseongSsangcieucDashHieuh => HANGUL_CHOSEONG_SSANGCIEUC_DASH_HIEUH,
-            HangulJamoExtendedA::HangulChoseongSsangthieuth => HANGUL_CHOSEONG_SSANGTHIEUTH,
-            HangulJamoExtendedA::HangulChoseongPhieuphDashHieuh => HANGUL_CHOSEONG_PHIEUPH_DASH_HIEUH,
-            HangulJamoExtendedA::HangulChoseongHieuhDashSios => HANGUL_CHOSEONG_HIEUH_DASH_SIOS,
-            HangulJamoExtendedA::HangulChoseongSsangyeorinhieuh => HANGUL_CHOSEONG_SSANGYEORINHIEUH,
+            HangulJamoExtendedA::HangulChoseongTikeutDashMieum => 'ꥠ',
+            HangulJamoExtendedA::HangulChoseongTikeutDashPieup => 'ꥡ',
+            HangulJamoExtendedA::HangulChoseongTikeutDashSios => 'ꥢ',
+            HangulJamoExtendedA::HangulChoseongTikeutDashCieuc => 'ꥣ',
+            HangulJamoExtendedA::HangulChoseongRieulDashKiyeok => 'ꥤ',
+            HangulJamoExtendedA::HangulChoseongRieulDashSsangkiyeok => 'ꥥ',
+            HangulJamoExtendedA::HangulChoseongRieulDashTikeut => 'ꥦ',
+            HangulJamoExtendedA::HangulChoseongRieulDashSsangtikeut => 'ꥧ',
+            HangulJamoExtendedA::HangulChoseongRieulDashMieum => 'ꥨ',
+            HangulJamoExtendedA::HangulChoseongRieulDashPieup => 'ꥩ',
+            HangulJamoExtendedA::HangulChoseongRieulDashSsangpieup => 'ꥪ',
+            HangulJamoExtendedA::HangulChoseongRieulDashKapyeounpieup => 'ꥫ',
+            HangulJamoExtendedA::HangulChoseongRieulDashSios => 'ꥬ',
+            HangulJamoExtendedA::HangulChoseongRieulDashCieuc => 'ꥭ',
+            HangulJamoExtendedA::HangulChoseongRieulDashKhieukh => 'ꥮ',
+            HangulJamoExtendedA::HangulChoseongMieumDashKiyeok => 'ꥯ',
+            HangulJamoExtendedA::HangulChoseongMieumDashTikeut => 'ꥰ',
+            HangulJamoExtendedA::HangulChoseongMieumDashSios => 'ꥱ',
+            HangulJamoExtendedA::HangulChoseongPieupDashSiosDashThieuth => 'ꥲ',
+            HangulJamoExtendedA::HangulChoseongPieupDashKhieukh => 'ꥳ',
+            HangulJamoExtendedA::HangulChoseongPieupDashHieuh => 'ꥴ',
+            HangulJamoExtendedA::HangulChoseongSsangsiosDashPieup => 'ꥵ',
+            HangulJamoExtendedA::HangulChoseongIeungDashRieul => 'ꥶ',
+            HangulJamoExtendedA::HangulChoseongIeungDashHieuh => 'ꥷ',
+            HangulJamoExtendedA::HangulChoseongSsangcieucDashHieuh => 'ꥸ',
+            HangulJamoExtendedA::HangulChoseongSsangthieuth => 'ꥹ',
+            HangulJamoExtendedA::HangulChoseongPhieuphDashHieuh => 'ꥺ',
+            HangulJamoExtendedA::HangulChoseongHieuhDashSios => 'ꥻ',
+            HangulJamoExtendedA::HangulChoseongSsangyeorinhieuh => 'ꥼ',
         }
     }
 }
@@ -163,37 +101,36 @@ impl Into<char> for HangulJamoExtendedA {
 impl std::convert::TryFrom<char> for HangulJamoExtendedA {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            HANGUL_CHOSEONG_TIKEUT_DASH_MIEUM => Ok(HangulJamoExtendedA::HangulChoseongTikeutDashMieum),
-            HANGUL_CHOSEONG_TIKEUT_DASH_PIEUP => Ok(HangulJamoExtendedA::HangulChoseongTikeutDashPieup),
-            HANGUL_CHOSEONG_TIKEUT_DASH_SIOS => Ok(HangulJamoExtendedA::HangulChoseongTikeutDashSios),
-            HANGUL_CHOSEONG_TIKEUT_DASH_CIEUC => Ok(HangulJamoExtendedA::HangulChoseongTikeutDashCieuc),
-            HANGUL_CHOSEONG_RIEUL_DASH_KIYEOK => Ok(HangulJamoExtendedA::HangulChoseongRieulDashKiyeok),
-            HANGUL_CHOSEONG_RIEUL_DASH_SSANGKIYEOK => Ok(HangulJamoExtendedA::HangulChoseongRieulDashSsangkiyeok),
-            HANGUL_CHOSEONG_RIEUL_DASH_TIKEUT => Ok(HangulJamoExtendedA::HangulChoseongRieulDashTikeut),
-            HANGUL_CHOSEONG_RIEUL_DASH_SSANGTIKEUT => Ok(HangulJamoExtendedA::HangulChoseongRieulDashSsangtikeut),
-            HANGUL_CHOSEONG_RIEUL_DASH_MIEUM => Ok(HangulJamoExtendedA::HangulChoseongRieulDashMieum),
-            HANGUL_CHOSEONG_RIEUL_DASH_PIEUP => Ok(HangulJamoExtendedA::HangulChoseongRieulDashPieup),
-            HANGUL_CHOSEONG_RIEUL_DASH_SSANGPIEUP => Ok(HangulJamoExtendedA::HangulChoseongRieulDashSsangpieup),
-            HANGUL_CHOSEONG_RIEUL_DASH_KAPYEOUNPIEUP => Ok(HangulJamoExtendedA::HangulChoseongRieulDashKapyeounpieup),
-            HANGUL_CHOSEONG_RIEUL_DASH_SIOS => Ok(HangulJamoExtendedA::HangulChoseongRieulDashSios),
-            HANGUL_CHOSEONG_RIEUL_DASH_CIEUC => Ok(HangulJamoExtendedA::HangulChoseongRieulDashCieuc),
-            HANGUL_CHOSEONG_RIEUL_DASH_KHIEUKH => Ok(HangulJamoExtendedA::HangulChoseongRieulDashKhieukh),
-            HANGUL_CHOSEONG_MIEUM_DASH_KIYEOK => Ok(HangulJamoExtendedA::HangulChoseongMieumDashKiyeok),
-            HANGUL_CHOSEONG_MIEUM_DASH_TIKEUT => Ok(HangulJamoExtendedA::HangulChoseongMieumDashTikeut),
-            HANGUL_CHOSEONG_MIEUM_DASH_SIOS => Ok(HangulJamoExtendedA::HangulChoseongMieumDashSios),
-            HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_THIEUTH => Ok(HangulJamoExtendedA::HangulChoseongPieupDashSiosDashThieuth),
-            HANGUL_CHOSEONG_PIEUP_DASH_KHIEUKH => Ok(HangulJamoExtendedA::HangulChoseongPieupDashKhieukh),
-            HANGUL_CHOSEONG_PIEUP_DASH_HIEUH => Ok(HangulJamoExtendedA::HangulChoseongPieupDashHieuh),
-            HANGUL_CHOSEONG_SSANGSIOS_DASH_PIEUP => Ok(HangulJamoExtendedA::HangulChoseongSsangsiosDashPieup),
-            HANGUL_CHOSEONG_IEUNG_DASH_RIEUL => Ok(HangulJamoExtendedA::HangulChoseongIeungDashRieul),
-            HANGUL_CHOSEONG_IEUNG_DASH_HIEUH => Ok(HangulJamoExtendedA::HangulChoseongIeungDashHieuh),
-            HANGUL_CHOSEONG_SSANGCIEUC_DASH_HIEUH => Ok(HangulJamoExtendedA::HangulChoseongSsangcieucDashHieuh),
-            HANGUL_CHOSEONG_SSANGTHIEUTH => Ok(HangulJamoExtendedA::HangulChoseongSsangthieuth),
-            HANGUL_CHOSEONG_PHIEUPH_DASH_HIEUH => Ok(HangulJamoExtendedA::HangulChoseongPhieuphDashHieuh),
-            HANGUL_CHOSEONG_HIEUH_DASH_SIOS => Ok(HangulJamoExtendedA::HangulChoseongHieuhDashSios),
-            HANGUL_CHOSEONG_SSANGYEORINHIEUH => Ok(HangulJamoExtendedA::HangulChoseongSsangyeorinhieuh),
+            'ꥠ' => Ok(HangulJamoExtendedA::HangulChoseongTikeutDashMieum),
+            'ꥡ' => Ok(HangulJamoExtendedA::HangulChoseongTikeutDashPieup),
+            'ꥢ' => Ok(HangulJamoExtendedA::HangulChoseongTikeutDashSios),
+            'ꥣ' => Ok(HangulJamoExtendedA::HangulChoseongTikeutDashCieuc),
+            'ꥤ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashKiyeok),
+            'ꥥ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashSsangkiyeok),
+            'ꥦ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashTikeut),
+            'ꥧ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashSsangtikeut),
+            'ꥨ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashMieum),
+            'ꥩ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashPieup),
+            'ꥪ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashSsangpieup),
+            'ꥫ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashKapyeounpieup),
+            'ꥬ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashSios),
+            'ꥭ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashCieuc),
+            'ꥮ' => Ok(HangulJamoExtendedA::HangulChoseongRieulDashKhieukh),
+            'ꥯ' => Ok(HangulJamoExtendedA::HangulChoseongMieumDashKiyeok),
+            'ꥰ' => Ok(HangulJamoExtendedA::HangulChoseongMieumDashTikeut),
+            'ꥱ' => Ok(HangulJamoExtendedA::HangulChoseongMieumDashSios),
+            'ꥲ' => Ok(HangulJamoExtendedA::HangulChoseongPieupDashSiosDashThieuth),
+            'ꥳ' => Ok(HangulJamoExtendedA::HangulChoseongPieupDashKhieukh),
+            'ꥴ' => Ok(HangulJamoExtendedA::HangulChoseongPieupDashHieuh),
+            'ꥵ' => Ok(HangulJamoExtendedA::HangulChoseongSsangsiosDashPieup),
+            'ꥶ' => Ok(HangulJamoExtendedA::HangulChoseongIeungDashRieul),
+            'ꥷ' => Ok(HangulJamoExtendedA::HangulChoseongIeungDashHieuh),
+            'ꥸ' => Ok(HangulJamoExtendedA::HangulChoseongSsangcieucDashHieuh),
+            'ꥹ' => Ok(HangulJamoExtendedA::HangulChoseongSsangthieuth),
+            'ꥺ' => Ok(HangulJamoExtendedA::HangulChoseongPhieuphDashHieuh),
+            'ꥻ' => Ok(HangulJamoExtendedA::HangulChoseongHieuhDashSios),
+            'ꥼ' => Ok(HangulJamoExtendedA::HangulChoseongSsangyeorinhieuh),
             _ => Err(()),
         }
     }

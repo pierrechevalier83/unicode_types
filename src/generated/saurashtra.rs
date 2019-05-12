@@ -1,170 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a880}: 'ꢀ'
-    pub const SIGN_ANUSVARA: char = 'ꢀ';
-    /// \u{a881}: 'ꢁ'
-    pub const SIGN_VISARGA: char = 'ꢁ';
-    /// \u{a882}: 'ꢂ'
-    pub const LETTER_A: char = 'ꢂ';
-    /// \u{a883}: 'ꢃ'
-    pub const LETTER_AA: char = 'ꢃ';
-    /// \u{a884}: 'ꢄ'
-    pub const LETTER_I: char = 'ꢄ';
-    /// \u{a885}: 'ꢅ'
-    pub const LETTER_II: char = 'ꢅ';
-    /// \u{a886}: 'ꢆ'
-    pub const LETTER_U: char = 'ꢆ';
-    /// \u{a887}: 'ꢇ'
-    pub const LETTER_UU: char = 'ꢇ';
-    /// \u{a888}: 'ꢈ'
-    pub const LETTER_VOCALIC_R: char = 'ꢈ';
-    /// \u{a889}: 'ꢉ'
-    pub const LETTER_VOCALIC_RR: char = 'ꢉ';
-    /// \u{a88a}: 'ꢊ'
-    pub const LETTER_VOCALIC_L: char = 'ꢊ';
-    /// \u{a88b}: 'ꢋ'
-    pub const LETTER_VOCALIC_LL: char = 'ꢋ';
-    /// \u{a88c}: 'ꢌ'
-    pub const LETTER_E: char = 'ꢌ';
-    /// \u{a88d}: 'ꢍ'
-    pub const LETTER_EE: char = 'ꢍ';
-    /// \u{a88e}: 'ꢎ'
-    pub const LETTER_AI: char = 'ꢎ';
-    /// \u{a88f}: 'ꢏ'
-    pub const LETTER_O: char = 'ꢏ';
-    /// \u{a890}: 'ꢐ'
-    pub const LETTER_OO: char = 'ꢐ';
-    /// \u{a891}: 'ꢑ'
-    pub const LETTER_AU: char = 'ꢑ';
-    /// \u{a892}: 'ꢒ'
-    pub const LETTER_KA: char = 'ꢒ';
-    /// \u{a893}: 'ꢓ'
-    pub const LETTER_KHA: char = 'ꢓ';
-    /// \u{a894}: 'ꢔ'
-    pub const LETTER_GA: char = 'ꢔ';
-    /// \u{a895}: 'ꢕ'
-    pub const LETTER_GHA: char = 'ꢕ';
-    /// \u{a896}: 'ꢖ'
-    pub const LETTER_NGA: char = 'ꢖ';
-    /// \u{a897}: 'ꢗ'
-    pub const LETTER_CA: char = 'ꢗ';
-    /// \u{a898}: 'ꢘ'
-    pub const LETTER_CHA: char = 'ꢘ';
-    /// \u{a899}: 'ꢙ'
-    pub const LETTER_JA: char = 'ꢙ';
-    /// \u{a89a}: 'ꢚ'
-    pub const LETTER_JHA: char = 'ꢚ';
-    /// \u{a89b}: 'ꢛ'
-    pub const LETTER_NYA: char = 'ꢛ';
-    /// \u{a89c}: 'ꢜ'
-    pub const LETTER_TTA: char = 'ꢜ';
-    /// \u{a89d}: 'ꢝ'
-    pub const LETTER_TTHA: char = 'ꢝ';
-    /// \u{a89e}: 'ꢞ'
-    pub const LETTER_DDA: char = 'ꢞ';
-    /// \u{a89f}: 'ꢟ'
-    pub const LETTER_DDHA: char = 'ꢟ';
-    /// \u{a8a0}: 'ꢠ'
-    pub const LETTER_NNA: char = 'ꢠ';
-    /// \u{a8a1}: 'ꢡ'
-    pub const LETTER_TA: char = 'ꢡ';
-    /// \u{a8a2}: 'ꢢ'
-    pub const LETTER_THA: char = 'ꢢ';
-    /// \u{a8a3}: 'ꢣ'
-    pub const LETTER_DA: char = 'ꢣ';
-    /// \u{a8a4}: 'ꢤ'
-    pub const LETTER_DHA: char = 'ꢤ';
-    /// \u{a8a5}: 'ꢥ'
-    pub const LETTER_NA: char = 'ꢥ';
-    /// \u{a8a6}: 'ꢦ'
-    pub const LETTER_PA: char = 'ꢦ';
-    /// \u{a8a7}: 'ꢧ'
-    pub const LETTER_PHA: char = 'ꢧ';
-    /// \u{a8a8}: 'ꢨ'
-    pub const LETTER_BA: char = 'ꢨ';
-    /// \u{a8a9}: 'ꢩ'
-    pub const LETTER_BHA: char = 'ꢩ';
-    /// \u{a8aa}: 'ꢪ'
-    pub const LETTER_MA: char = 'ꢪ';
-    /// \u{a8ab}: 'ꢫ'
-    pub const LETTER_YA: char = 'ꢫ';
-    /// \u{a8ac}: 'ꢬ'
-    pub const LETTER_RA: char = 'ꢬ';
-    /// \u{a8ad}: 'ꢭ'
-    pub const LETTER_LA: char = 'ꢭ';
-    /// \u{a8ae}: 'ꢮ'
-    pub const LETTER_VA: char = 'ꢮ';
-    /// \u{a8af}: 'ꢯ'
-    pub const LETTER_SHA: char = 'ꢯ';
-    /// \u{a8b0}: 'ꢰ'
-    pub const LETTER_SSA: char = 'ꢰ';
-    /// \u{a8b1}: 'ꢱ'
-    pub const LETTER_SA: char = 'ꢱ';
-    /// \u{a8b2}: 'ꢲ'
-    pub const LETTER_HA: char = 'ꢲ';
-    /// \u{a8b3}: 'ꢳ'
-    pub const LETTER_LLA: char = 'ꢳ';
-    /// \u{a8b4}: 'ꢴ'
-    pub const CONSONANT_SIGN_HAARU: char = 'ꢴ';
-    /// \u{a8b5}: 'ꢵ'
-    pub const VOWEL_SIGN_AA: char = 'ꢵ';
-    /// \u{a8b6}: 'ꢶ'
-    pub const VOWEL_SIGN_I: char = 'ꢶ';
-    /// \u{a8b7}: 'ꢷ'
-    pub const VOWEL_SIGN_II: char = 'ꢷ';
-    /// \u{a8b8}: 'ꢸ'
-    pub const VOWEL_SIGN_U: char = 'ꢸ';
-    /// \u{a8b9}: 'ꢹ'
-    pub const VOWEL_SIGN_UU: char = 'ꢹ';
-    /// \u{a8ba}: 'ꢺ'
-    pub const VOWEL_SIGN_VOCALIC_R: char = 'ꢺ';
-    /// \u{a8bb}: 'ꢻ'
-    pub const VOWEL_SIGN_VOCALIC_RR: char = 'ꢻ';
-    /// \u{a8bc}: 'ꢼ'
-    pub const VOWEL_SIGN_VOCALIC_L: char = 'ꢼ';
-    /// \u{a8bd}: 'ꢽ'
-    pub const VOWEL_SIGN_VOCALIC_LL: char = 'ꢽ';
-    /// \u{a8be}: 'ꢾ'
-    pub const VOWEL_SIGN_E: char = 'ꢾ';
-    /// \u{a8bf}: 'ꢿ'
-    pub const VOWEL_SIGN_EE: char = 'ꢿ';
-    /// \u{a8c0}: 'ꣀ'
-    pub const VOWEL_SIGN_AI: char = 'ꣀ';
-    /// \u{a8c1}: 'ꣁ'
-    pub const VOWEL_SIGN_O: char = 'ꣁ';
-    /// \u{a8c2}: 'ꣂ'
-    pub const VOWEL_SIGN_OO: char = 'ꣂ';
-    /// \u{a8c3}: 'ꣃ'
-    pub const VOWEL_SIGN_AU: char = 'ꣃ';
-    /// \u{a8c4}: '꣄'
-    pub const SIGN_VIRAMA: char = '꣄';
-    /// \u{a8c5}: 'ꣅ'
-    pub const SIGN_CANDRABINDU: char = 'ꣅ';
-    /// \u{a8ce}: '꣎'
-    pub const DANDA: char = '꣎';
-    /// \u{a8cf}: '꣏'
-    pub const DOUBLE_DANDA: char = '꣏';
-    /// \u{a8d0}: '꣐'
-    pub const DIGIT_ZERO: char = '꣐';
-    /// \u{a8d1}: '꣑'
-    pub const DIGIT_ONE: char = '꣑';
-    /// \u{a8d2}: '꣒'
-    pub const DIGIT_TWO: char = '꣒';
-    /// \u{a8d3}: '꣓'
-    pub const DIGIT_THREE: char = '꣓';
-    /// \u{a8d4}: '꣔'
-    pub const DIGIT_FOUR: char = '꣔';
-    /// \u{a8d5}: '꣕'
-    pub const DIGIT_FIVE: char = '꣕';
-    /// \u{a8d6}: '꣖'
-    pub const DIGIT_SIX: char = '꣖';
-    /// \u{a8d7}: '꣗'
-    pub const DIGIT_SEVEN: char = '꣗';
-    /// \u{a8d8}: '꣘'
-    pub const DIGIT_EIGHT: char = '꣘';
-    /// \u{a8d9}: '꣙'
-    pub const DIGIT_NINE: char = '꣙';
-}
 
 /// An enum to represent all characters in the Saurashtra block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -337,90 +170,89 @@ pub enum Saurashtra {
 
 impl Into<char> for Saurashtra {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Saurashtra::SignAnusvara => SIGN_ANUSVARA,
-            Saurashtra::SignVisarga => SIGN_VISARGA,
-            Saurashtra::LetterA => LETTER_A,
-            Saurashtra::LetterAa => LETTER_AA,
-            Saurashtra::LetterI => LETTER_I,
-            Saurashtra::LetterIi => LETTER_II,
-            Saurashtra::LetterU => LETTER_U,
-            Saurashtra::LetterUu => LETTER_UU,
-            Saurashtra::LetterVocalicR => LETTER_VOCALIC_R,
-            Saurashtra::LetterVocalicRr => LETTER_VOCALIC_RR,
-            Saurashtra::LetterVocalicL => LETTER_VOCALIC_L,
-            Saurashtra::LetterVocalicLl => LETTER_VOCALIC_LL,
-            Saurashtra::LetterE => LETTER_E,
-            Saurashtra::LetterEe => LETTER_EE,
-            Saurashtra::LetterAi => LETTER_AI,
-            Saurashtra::LetterO => LETTER_O,
-            Saurashtra::LetterOo => LETTER_OO,
-            Saurashtra::LetterAu => LETTER_AU,
-            Saurashtra::LetterKa => LETTER_KA,
-            Saurashtra::LetterKha => LETTER_KHA,
-            Saurashtra::LetterGa => LETTER_GA,
-            Saurashtra::LetterGha => LETTER_GHA,
-            Saurashtra::LetterNga => LETTER_NGA,
-            Saurashtra::LetterCa => LETTER_CA,
-            Saurashtra::LetterCha => LETTER_CHA,
-            Saurashtra::LetterJa => LETTER_JA,
-            Saurashtra::LetterJha => LETTER_JHA,
-            Saurashtra::LetterNya => LETTER_NYA,
-            Saurashtra::LetterTta => LETTER_TTA,
-            Saurashtra::LetterTtha => LETTER_TTHA,
-            Saurashtra::LetterDda => LETTER_DDA,
-            Saurashtra::LetterDdha => LETTER_DDHA,
-            Saurashtra::LetterNna => LETTER_NNA,
-            Saurashtra::LetterTa => LETTER_TA,
-            Saurashtra::LetterTha => LETTER_THA,
-            Saurashtra::LetterDa => LETTER_DA,
-            Saurashtra::LetterDha => LETTER_DHA,
-            Saurashtra::LetterNa => LETTER_NA,
-            Saurashtra::LetterPa => LETTER_PA,
-            Saurashtra::LetterPha => LETTER_PHA,
-            Saurashtra::LetterBa => LETTER_BA,
-            Saurashtra::LetterBha => LETTER_BHA,
-            Saurashtra::LetterMa => LETTER_MA,
-            Saurashtra::LetterYa => LETTER_YA,
-            Saurashtra::LetterRa => LETTER_RA,
-            Saurashtra::LetterLa => LETTER_LA,
-            Saurashtra::LetterVa => LETTER_VA,
-            Saurashtra::LetterSha => LETTER_SHA,
-            Saurashtra::LetterSsa => LETTER_SSA,
-            Saurashtra::LetterSa => LETTER_SA,
-            Saurashtra::LetterHa => LETTER_HA,
-            Saurashtra::LetterLla => LETTER_LLA,
-            Saurashtra::ConsonantSignHaaru => CONSONANT_SIGN_HAARU,
-            Saurashtra::VowelSignAa => VOWEL_SIGN_AA,
-            Saurashtra::VowelSignI => VOWEL_SIGN_I,
-            Saurashtra::VowelSignIi => VOWEL_SIGN_II,
-            Saurashtra::VowelSignU => VOWEL_SIGN_U,
-            Saurashtra::VowelSignUu => VOWEL_SIGN_UU,
-            Saurashtra::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            Saurashtra::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
-            Saurashtra::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
-            Saurashtra::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
-            Saurashtra::VowelSignE => VOWEL_SIGN_E,
-            Saurashtra::VowelSignEe => VOWEL_SIGN_EE,
-            Saurashtra::VowelSignAi => VOWEL_SIGN_AI,
-            Saurashtra::VowelSignO => VOWEL_SIGN_O,
-            Saurashtra::VowelSignOo => VOWEL_SIGN_OO,
-            Saurashtra::VowelSignAu => VOWEL_SIGN_AU,
-            Saurashtra::SignVirama => SIGN_VIRAMA,
-            Saurashtra::SignCandrabindu => SIGN_CANDRABINDU,
-            Saurashtra::Danda => DANDA,
-            Saurashtra::DoubleDanda => DOUBLE_DANDA,
-            Saurashtra::DigitZero => DIGIT_ZERO,
-            Saurashtra::DigitOne => DIGIT_ONE,
-            Saurashtra::DigitTwo => DIGIT_TWO,
-            Saurashtra::DigitThree => DIGIT_THREE,
-            Saurashtra::DigitFour => DIGIT_FOUR,
-            Saurashtra::DigitFive => DIGIT_FIVE,
-            Saurashtra::DigitSix => DIGIT_SIX,
-            Saurashtra::DigitSeven => DIGIT_SEVEN,
-            Saurashtra::DigitEight => DIGIT_EIGHT,
-            Saurashtra::DigitNine => DIGIT_NINE,
+            Saurashtra::SignAnusvara => 'ꢀ',
+            Saurashtra::SignVisarga => 'ꢁ',
+            Saurashtra::LetterA => 'ꢂ',
+            Saurashtra::LetterAa => 'ꢃ',
+            Saurashtra::LetterI => 'ꢄ',
+            Saurashtra::LetterIi => 'ꢅ',
+            Saurashtra::LetterU => 'ꢆ',
+            Saurashtra::LetterUu => 'ꢇ',
+            Saurashtra::LetterVocalicR => 'ꢈ',
+            Saurashtra::LetterVocalicRr => 'ꢉ',
+            Saurashtra::LetterVocalicL => 'ꢊ',
+            Saurashtra::LetterVocalicLl => 'ꢋ',
+            Saurashtra::LetterE => 'ꢌ',
+            Saurashtra::LetterEe => 'ꢍ',
+            Saurashtra::LetterAi => 'ꢎ',
+            Saurashtra::LetterO => 'ꢏ',
+            Saurashtra::LetterOo => 'ꢐ',
+            Saurashtra::LetterAu => 'ꢑ',
+            Saurashtra::LetterKa => 'ꢒ',
+            Saurashtra::LetterKha => 'ꢓ',
+            Saurashtra::LetterGa => 'ꢔ',
+            Saurashtra::LetterGha => 'ꢕ',
+            Saurashtra::LetterNga => 'ꢖ',
+            Saurashtra::LetterCa => 'ꢗ',
+            Saurashtra::LetterCha => 'ꢘ',
+            Saurashtra::LetterJa => 'ꢙ',
+            Saurashtra::LetterJha => 'ꢚ',
+            Saurashtra::LetterNya => 'ꢛ',
+            Saurashtra::LetterTta => 'ꢜ',
+            Saurashtra::LetterTtha => 'ꢝ',
+            Saurashtra::LetterDda => 'ꢞ',
+            Saurashtra::LetterDdha => 'ꢟ',
+            Saurashtra::LetterNna => 'ꢠ',
+            Saurashtra::LetterTa => 'ꢡ',
+            Saurashtra::LetterTha => 'ꢢ',
+            Saurashtra::LetterDa => 'ꢣ',
+            Saurashtra::LetterDha => 'ꢤ',
+            Saurashtra::LetterNa => 'ꢥ',
+            Saurashtra::LetterPa => 'ꢦ',
+            Saurashtra::LetterPha => 'ꢧ',
+            Saurashtra::LetterBa => 'ꢨ',
+            Saurashtra::LetterBha => 'ꢩ',
+            Saurashtra::LetterMa => 'ꢪ',
+            Saurashtra::LetterYa => 'ꢫ',
+            Saurashtra::LetterRa => 'ꢬ',
+            Saurashtra::LetterLa => 'ꢭ',
+            Saurashtra::LetterVa => 'ꢮ',
+            Saurashtra::LetterSha => 'ꢯ',
+            Saurashtra::LetterSsa => 'ꢰ',
+            Saurashtra::LetterSa => 'ꢱ',
+            Saurashtra::LetterHa => 'ꢲ',
+            Saurashtra::LetterLla => 'ꢳ',
+            Saurashtra::ConsonantSignHaaru => 'ꢴ',
+            Saurashtra::VowelSignAa => 'ꢵ',
+            Saurashtra::VowelSignI => 'ꢶ',
+            Saurashtra::VowelSignIi => 'ꢷ',
+            Saurashtra::VowelSignU => 'ꢸ',
+            Saurashtra::VowelSignUu => 'ꢹ',
+            Saurashtra::VowelSignVocalicR => 'ꢺ',
+            Saurashtra::VowelSignVocalicRr => 'ꢻ',
+            Saurashtra::VowelSignVocalicL => 'ꢼ',
+            Saurashtra::VowelSignVocalicLl => 'ꢽ',
+            Saurashtra::VowelSignE => 'ꢾ',
+            Saurashtra::VowelSignEe => 'ꢿ',
+            Saurashtra::VowelSignAi => 'ꣀ',
+            Saurashtra::VowelSignO => 'ꣁ',
+            Saurashtra::VowelSignOo => 'ꣂ',
+            Saurashtra::VowelSignAu => 'ꣃ',
+            Saurashtra::SignVirama => '꣄',
+            Saurashtra::SignCandrabindu => 'ꣅ',
+            Saurashtra::Danda => '꣎',
+            Saurashtra::DoubleDanda => '꣏',
+            Saurashtra::DigitZero => '꣐',
+            Saurashtra::DigitOne => '꣑',
+            Saurashtra::DigitTwo => '꣒',
+            Saurashtra::DigitThree => '꣓',
+            Saurashtra::DigitFour => '꣔',
+            Saurashtra::DigitFive => '꣕',
+            Saurashtra::DigitSix => '꣖',
+            Saurashtra::DigitSeven => '꣗',
+            Saurashtra::DigitEight => '꣘',
+            Saurashtra::DigitNine => '꣙',
         }
     }
 }
@@ -428,90 +260,89 @@ impl Into<char> for Saurashtra {
 impl std::convert::TryFrom<char> for Saurashtra {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_ANUSVARA => Ok(Saurashtra::SignAnusvara),
-            SIGN_VISARGA => Ok(Saurashtra::SignVisarga),
-            LETTER_A => Ok(Saurashtra::LetterA),
-            LETTER_AA => Ok(Saurashtra::LetterAa),
-            LETTER_I => Ok(Saurashtra::LetterI),
-            LETTER_II => Ok(Saurashtra::LetterIi),
-            LETTER_U => Ok(Saurashtra::LetterU),
-            LETTER_UU => Ok(Saurashtra::LetterUu),
-            LETTER_VOCALIC_R => Ok(Saurashtra::LetterVocalicR),
-            LETTER_VOCALIC_RR => Ok(Saurashtra::LetterVocalicRr),
-            LETTER_VOCALIC_L => Ok(Saurashtra::LetterVocalicL),
-            LETTER_VOCALIC_LL => Ok(Saurashtra::LetterVocalicLl),
-            LETTER_E => Ok(Saurashtra::LetterE),
-            LETTER_EE => Ok(Saurashtra::LetterEe),
-            LETTER_AI => Ok(Saurashtra::LetterAi),
-            LETTER_O => Ok(Saurashtra::LetterO),
-            LETTER_OO => Ok(Saurashtra::LetterOo),
-            LETTER_AU => Ok(Saurashtra::LetterAu),
-            LETTER_KA => Ok(Saurashtra::LetterKa),
-            LETTER_KHA => Ok(Saurashtra::LetterKha),
-            LETTER_GA => Ok(Saurashtra::LetterGa),
-            LETTER_GHA => Ok(Saurashtra::LetterGha),
-            LETTER_NGA => Ok(Saurashtra::LetterNga),
-            LETTER_CA => Ok(Saurashtra::LetterCa),
-            LETTER_CHA => Ok(Saurashtra::LetterCha),
-            LETTER_JA => Ok(Saurashtra::LetterJa),
-            LETTER_JHA => Ok(Saurashtra::LetterJha),
-            LETTER_NYA => Ok(Saurashtra::LetterNya),
-            LETTER_TTA => Ok(Saurashtra::LetterTta),
-            LETTER_TTHA => Ok(Saurashtra::LetterTtha),
-            LETTER_DDA => Ok(Saurashtra::LetterDda),
-            LETTER_DDHA => Ok(Saurashtra::LetterDdha),
-            LETTER_NNA => Ok(Saurashtra::LetterNna),
-            LETTER_TA => Ok(Saurashtra::LetterTa),
-            LETTER_THA => Ok(Saurashtra::LetterTha),
-            LETTER_DA => Ok(Saurashtra::LetterDa),
-            LETTER_DHA => Ok(Saurashtra::LetterDha),
-            LETTER_NA => Ok(Saurashtra::LetterNa),
-            LETTER_PA => Ok(Saurashtra::LetterPa),
-            LETTER_PHA => Ok(Saurashtra::LetterPha),
-            LETTER_BA => Ok(Saurashtra::LetterBa),
-            LETTER_BHA => Ok(Saurashtra::LetterBha),
-            LETTER_MA => Ok(Saurashtra::LetterMa),
-            LETTER_YA => Ok(Saurashtra::LetterYa),
-            LETTER_RA => Ok(Saurashtra::LetterRa),
-            LETTER_LA => Ok(Saurashtra::LetterLa),
-            LETTER_VA => Ok(Saurashtra::LetterVa),
-            LETTER_SHA => Ok(Saurashtra::LetterSha),
-            LETTER_SSA => Ok(Saurashtra::LetterSsa),
-            LETTER_SA => Ok(Saurashtra::LetterSa),
-            LETTER_HA => Ok(Saurashtra::LetterHa),
-            LETTER_LLA => Ok(Saurashtra::LetterLla),
-            CONSONANT_SIGN_HAARU => Ok(Saurashtra::ConsonantSignHaaru),
-            VOWEL_SIGN_AA => Ok(Saurashtra::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Saurashtra::VowelSignI),
-            VOWEL_SIGN_II => Ok(Saurashtra::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Saurashtra::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Saurashtra::VowelSignUu),
-            VOWEL_SIGN_VOCALIC_R => Ok(Saurashtra::VowelSignVocalicR),
-            VOWEL_SIGN_VOCALIC_RR => Ok(Saurashtra::VowelSignVocalicRr),
-            VOWEL_SIGN_VOCALIC_L => Ok(Saurashtra::VowelSignVocalicL),
-            VOWEL_SIGN_VOCALIC_LL => Ok(Saurashtra::VowelSignVocalicLl),
-            VOWEL_SIGN_E => Ok(Saurashtra::VowelSignE),
-            VOWEL_SIGN_EE => Ok(Saurashtra::VowelSignEe),
-            VOWEL_SIGN_AI => Ok(Saurashtra::VowelSignAi),
-            VOWEL_SIGN_O => Ok(Saurashtra::VowelSignO),
-            VOWEL_SIGN_OO => Ok(Saurashtra::VowelSignOo),
-            VOWEL_SIGN_AU => Ok(Saurashtra::VowelSignAu),
-            SIGN_VIRAMA => Ok(Saurashtra::SignVirama),
-            SIGN_CANDRABINDU => Ok(Saurashtra::SignCandrabindu),
-            DANDA => Ok(Saurashtra::Danda),
-            DOUBLE_DANDA => Ok(Saurashtra::DoubleDanda),
-            DIGIT_ZERO => Ok(Saurashtra::DigitZero),
-            DIGIT_ONE => Ok(Saurashtra::DigitOne),
-            DIGIT_TWO => Ok(Saurashtra::DigitTwo),
-            DIGIT_THREE => Ok(Saurashtra::DigitThree),
-            DIGIT_FOUR => Ok(Saurashtra::DigitFour),
-            DIGIT_FIVE => Ok(Saurashtra::DigitFive),
-            DIGIT_SIX => Ok(Saurashtra::DigitSix),
-            DIGIT_SEVEN => Ok(Saurashtra::DigitSeven),
-            DIGIT_EIGHT => Ok(Saurashtra::DigitEight),
-            DIGIT_NINE => Ok(Saurashtra::DigitNine),
+            'ꢀ' => Ok(Saurashtra::SignAnusvara),
+            'ꢁ' => Ok(Saurashtra::SignVisarga),
+            'ꢂ' => Ok(Saurashtra::LetterA),
+            'ꢃ' => Ok(Saurashtra::LetterAa),
+            'ꢄ' => Ok(Saurashtra::LetterI),
+            'ꢅ' => Ok(Saurashtra::LetterIi),
+            'ꢆ' => Ok(Saurashtra::LetterU),
+            'ꢇ' => Ok(Saurashtra::LetterUu),
+            'ꢈ' => Ok(Saurashtra::LetterVocalicR),
+            'ꢉ' => Ok(Saurashtra::LetterVocalicRr),
+            'ꢊ' => Ok(Saurashtra::LetterVocalicL),
+            'ꢋ' => Ok(Saurashtra::LetterVocalicLl),
+            'ꢌ' => Ok(Saurashtra::LetterE),
+            'ꢍ' => Ok(Saurashtra::LetterEe),
+            'ꢎ' => Ok(Saurashtra::LetterAi),
+            'ꢏ' => Ok(Saurashtra::LetterO),
+            'ꢐ' => Ok(Saurashtra::LetterOo),
+            'ꢑ' => Ok(Saurashtra::LetterAu),
+            'ꢒ' => Ok(Saurashtra::LetterKa),
+            'ꢓ' => Ok(Saurashtra::LetterKha),
+            'ꢔ' => Ok(Saurashtra::LetterGa),
+            'ꢕ' => Ok(Saurashtra::LetterGha),
+            'ꢖ' => Ok(Saurashtra::LetterNga),
+            'ꢗ' => Ok(Saurashtra::LetterCa),
+            'ꢘ' => Ok(Saurashtra::LetterCha),
+            'ꢙ' => Ok(Saurashtra::LetterJa),
+            'ꢚ' => Ok(Saurashtra::LetterJha),
+            'ꢛ' => Ok(Saurashtra::LetterNya),
+            'ꢜ' => Ok(Saurashtra::LetterTta),
+            'ꢝ' => Ok(Saurashtra::LetterTtha),
+            'ꢞ' => Ok(Saurashtra::LetterDda),
+            'ꢟ' => Ok(Saurashtra::LetterDdha),
+            'ꢠ' => Ok(Saurashtra::LetterNna),
+            'ꢡ' => Ok(Saurashtra::LetterTa),
+            'ꢢ' => Ok(Saurashtra::LetterTha),
+            'ꢣ' => Ok(Saurashtra::LetterDa),
+            'ꢤ' => Ok(Saurashtra::LetterDha),
+            'ꢥ' => Ok(Saurashtra::LetterNa),
+            'ꢦ' => Ok(Saurashtra::LetterPa),
+            'ꢧ' => Ok(Saurashtra::LetterPha),
+            'ꢨ' => Ok(Saurashtra::LetterBa),
+            'ꢩ' => Ok(Saurashtra::LetterBha),
+            'ꢪ' => Ok(Saurashtra::LetterMa),
+            'ꢫ' => Ok(Saurashtra::LetterYa),
+            'ꢬ' => Ok(Saurashtra::LetterRa),
+            'ꢭ' => Ok(Saurashtra::LetterLa),
+            'ꢮ' => Ok(Saurashtra::LetterVa),
+            'ꢯ' => Ok(Saurashtra::LetterSha),
+            'ꢰ' => Ok(Saurashtra::LetterSsa),
+            'ꢱ' => Ok(Saurashtra::LetterSa),
+            'ꢲ' => Ok(Saurashtra::LetterHa),
+            'ꢳ' => Ok(Saurashtra::LetterLla),
+            'ꢴ' => Ok(Saurashtra::ConsonantSignHaaru),
+            'ꢵ' => Ok(Saurashtra::VowelSignAa),
+            'ꢶ' => Ok(Saurashtra::VowelSignI),
+            'ꢷ' => Ok(Saurashtra::VowelSignIi),
+            'ꢸ' => Ok(Saurashtra::VowelSignU),
+            'ꢹ' => Ok(Saurashtra::VowelSignUu),
+            'ꢺ' => Ok(Saurashtra::VowelSignVocalicR),
+            'ꢻ' => Ok(Saurashtra::VowelSignVocalicRr),
+            'ꢼ' => Ok(Saurashtra::VowelSignVocalicL),
+            'ꢽ' => Ok(Saurashtra::VowelSignVocalicLl),
+            'ꢾ' => Ok(Saurashtra::VowelSignE),
+            'ꢿ' => Ok(Saurashtra::VowelSignEe),
+            'ꣀ' => Ok(Saurashtra::VowelSignAi),
+            'ꣁ' => Ok(Saurashtra::VowelSignO),
+            'ꣂ' => Ok(Saurashtra::VowelSignOo),
+            'ꣃ' => Ok(Saurashtra::VowelSignAu),
+            '꣄' => Ok(Saurashtra::SignVirama),
+            'ꣅ' => Ok(Saurashtra::SignCandrabindu),
+            '꣎' => Ok(Saurashtra::Danda),
+            '꣏' => Ok(Saurashtra::DoubleDanda),
+            '꣐' => Ok(Saurashtra::DigitZero),
+            '꣑' => Ok(Saurashtra::DigitOne),
+            '꣒' => Ok(Saurashtra::DigitTwo),
+            '꣓' => Ok(Saurashtra::DigitThree),
+            '꣔' => Ok(Saurashtra::DigitFour),
+            '꣕' => Ok(Saurashtra::DigitFive),
+            '꣖' => Ok(Saurashtra::DigitSix),
+            '꣗' => Ok(Saurashtra::DigitSeven),
+            '꣘' => Ok(Saurashtra::DigitEight),
+            '꣙' => Ok(Saurashtra::DigitNine),
             _ => Err(()),
         }
     }

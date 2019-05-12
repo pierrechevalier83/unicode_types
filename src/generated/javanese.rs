@@ -1,186 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a980}: 'ꦀ'
-    pub const SIGN_PANYANGGA: char = 'ꦀ';
-    /// \u{a981}: 'ꦁ'
-    pub const SIGN_CECAK: char = 'ꦁ';
-    /// \u{a982}: 'ꦂ'
-    pub const SIGN_LAYAR: char = 'ꦂ';
-    /// \u{a983}: 'ꦃ'
-    pub const SIGN_WIGNYAN: char = 'ꦃ';
-    /// \u{a984}: 'ꦄ'
-    pub const LETTER_A: char = 'ꦄ';
-    /// \u{a985}: 'ꦅ'
-    pub const LETTER_I_KAWI: char = 'ꦅ';
-    /// \u{a986}: 'ꦆ'
-    pub const LETTER_I: char = 'ꦆ';
-    /// \u{a987}: 'ꦇ'
-    pub const LETTER_II: char = 'ꦇ';
-    /// \u{a988}: 'ꦈ'
-    pub const LETTER_U: char = 'ꦈ';
-    /// \u{a989}: 'ꦉ'
-    pub const LETTER_PA_CEREK: char = 'ꦉ';
-    /// \u{a98a}: 'ꦊ'
-    pub const LETTER_NGA_LELET: char = 'ꦊ';
-    /// \u{a98b}: 'ꦋ'
-    pub const LETTER_NGA_LELET_RASWADI: char = 'ꦋ';
-    /// \u{a98c}: 'ꦌ'
-    pub const LETTER_E: char = 'ꦌ';
-    /// \u{a98d}: 'ꦍ'
-    pub const LETTER_AI: char = 'ꦍ';
-    /// \u{a98e}: 'ꦎ'
-    pub const LETTER_O: char = 'ꦎ';
-    /// \u{a98f}: 'ꦏ'
-    pub const LETTER_KA: char = 'ꦏ';
-    /// \u{a990}: 'ꦐ'
-    pub const LETTER_KA_SASAK: char = 'ꦐ';
-    /// \u{a991}: 'ꦑ'
-    pub const LETTER_KA_MURDA: char = 'ꦑ';
-    /// \u{a992}: 'ꦒ'
-    pub const LETTER_GA: char = 'ꦒ';
-    /// \u{a993}: 'ꦓ'
-    pub const LETTER_GA_MURDA: char = 'ꦓ';
-    /// \u{a994}: 'ꦔ'
-    pub const LETTER_NGA: char = 'ꦔ';
-    /// \u{a995}: 'ꦕ'
-    pub const LETTER_CA: char = 'ꦕ';
-    /// \u{a996}: 'ꦖ'
-    pub const LETTER_CA_MURDA: char = 'ꦖ';
-    /// \u{a997}: 'ꦗ'
-    pub const LETTER_JA: char = 'ꦗ';
-    /// \u{a998}: 'ꦘ'
-    pub const LETTER_NYA_MURDA: char = 'ꦘ';
-    /// \u{a999}: 'ꦙ'
-    pub const LETTER_JA_MAHAPRANA: char = 'ꦙ';
-    /// \u{a99a}: 'ꦚ'
-    pub const LETTER_NYA: char = 'ꦚ';
-    /// \u{a99b}: 'ꦛ'
-    pub const LETTER_TTA: char = 'ꦛ';
-    /// \u{a99c}: 'ꦜ'
-    pub const LETTER_TTA_MAHAPRANA: char = 'ꦜ';
-    /// \u{a99d}: 'ꦝ'
-    pub const LETTER_DDA: char = 'ꦝ';
-    /// \u{a99e}: 'ꦞ'
-    pub const LETTER_DDA_MAHAPRANA: char = 'ꦞ';
-    /// \u{a99f}: 'ꦟ'
-    pub const LETTER_NA_MURDA: char = 'ꦟ';
-    /// \u{a9a0}: 'ꦠ'
-    pub const LETTER_TA: char = 'ꦠ';
-    /// \u{a9a1}: 'ꦡ'
-    pub const LETTER_TA_MURDA: char = 'ꦡ';
-    /// \u{a9a2}: 'ꦢ'
-    pub const LETTER_DA: char = 'ꦢ';
-    /// \u{a9a3}: 'ꦣ'
-    pub const LETTER_DA_MAHAPRANA: char = 'ꦣ';
-    /// \u{a9a4}: 'ꦤ'
-    pub const LETTER_NA: char = 'ꦤ';
-    /// \u{a9a5}: 'ꦥ'
-    pub const LETTER_PA: char = 'ꦥ';
-    /// \u{a9a6}: 'ꦦ'
-    pub const LETTER_PA_MURDA: char = 'ꦦ';
-    /// \u{a9a7}: 'ꦧ'
-    pub const LETTER_BA: char = 'ꦧ';
-    /// \u{a9a8}: 'ꦨ'
-    pub const LETTER_BA_MURDA: char = 'ꦨ';
-    /// \u{a9a9}: 'ꦩ'
-    pub const LETTER_MA: char = 'ꦩ';
-    /// \u{a9aa}: 'ꦪ'
-    pub const LETTER_YA: char = 'ꦪ';
-    /// \u{a9ab}: 'ꦫ'
-    pub const LETTER_RA: char = 'ꦫ';
-    /// \u{a9ac}: 'ꦬ'
-    pub const LETTER_RA_AGUNG: char = 'ꦬ';
-    /// \u{a9ad}: 'ꦭ'
-    pub const LETTER_LA: char = 'ꦭ';
-    /// \u{a9ae}: 'ꦮ'
-    pub const LETTER_WA: char = 'ꦮ';
-    /// \u{a9af}: 'ꦯ'
-    pub const LETTER_SA_MURDA: char = 'ꦯ';
-    /// \u{a9b0}: 'ꦰ'
-    pub const LETTER_SA_MAHAPRANA: char = 'ꦰ';
-    /// \u{a9b1}: 'ꦱ'
-    pub const LETTER_SA: char = 'ꦱ';
-    /// \u{a9b2}: 'ꦲ'
-    pub const LETTER_HA: char = 'ꦲ';
-    /// \u{a9b3}: '꦳'
-    pub const SIGN_CECAK_TELU: char = '꦳';
-    /// \u{a9b4}: 'ꦴ'
-    pub const VOWEL_SIGN_TARUNG: char = 'ꦴ';
-    /// \u{a9b5}: 'ꦵ'
-    pub const VOWEL_SIGN_TOLONG: char = 'ꦵ';
-    /// \u{a9b6}: 'ꦶ'
-    pub const VOWEL_SIGN_WULU: char = 'ꦶ';
-    /// \u{a9b7}: 'ꦷ'
-    pub const VOWEL_SIGN_WULU_MELIK: char = 'ꦷ';
-    /// \u{a9b8}: 'ꦸ'
-    pub const VOWEL_SIGN_SUKU: char = 'ꦸ';
-    /// \u{a9b9}: 'ꦹ'
-    pub const VOWEL_SIGN_SUKU_MENDUT: char = 'ꦹ';
-    /// \u{a9ba}: 'ꦺ'
-    pub const VOWEL_SIGN_TALING: char = 'ꦺ';
-    /// \u{a9bb}: 'ꦻ'
-    pub const VOWEL_SIGN_DIRGA_MURE: char = 'ꦻ';
-    /// \u{a9bc}: 'ꦼ'
-    pub const VOWEL_SIGN_PEPET: char = 'ꦼ';
-    /// \u{a9bd}: 'ꦽ'
-    pub const CONSONANT_SIGN_KERET: char = 'ꦽ';
-    /// \u{a9be}: 'ꦾ'
-    pub const CONSONANT_SIGN_PENGKAL: char = 'ꦾ';
-    /// \u{a9bf}: 'ꦿ'
-    pub const CONSONANT_SIGN_CAKRA: char = 'ꦿ';
-    /// \u{a9c0}: '꧀'
-    pub const PANGKON: char = '꧀';
-    /// \u{a9c1}: '꧁'
-    pub const LEFT_RERENGGAN: char = '꧁';
-    /// \u{a9c2}: '꧂'
-    pub const RIGHT_RERENGGAN: char = '꧂';
-    /// \u{a9c3}: '꧃'
-    pub const PADA_ANDAP: char = '꧃';
-    /// \u{a9c4}: '꧄'
-    pub const PADA_MADYA: char = '꧄';
-    /// \u{a9c5}: '꧅'
-    pub const PADA_LUHUR: char = '꧅';
-    /// \u{a9c6}: '꧆'
-    pub const PADA_WINDU: char = '꧆';
-    /// \u{a9c7}: '꧇'
-    pub const PADA_PANGKAT: char = '꧇';
-    /// \u{a9c8}: '꧈'
-    pub const PADA_LINGSA: char = '꧈';
-    /// \u{a9c9}: '꧉'
-    pub const PADA_LUNGSI: char = '꧉';
-    /// \u{a9ca}: '꧊'
-    pub const PADA_ADEG: char = '꧊';
-    /// \u{a9cb}: '꧋'
-    pub const PADA_ADEG_ADEG: char = '꧋';
-    /// \u{a9cc}: '꧌'
-    pub const PADA_PISELEH: char = '꧌';
-    /// \u{a9cd}: '꧍'
-    pub const TURNED_PADA_PISELEH: char = '꧍';
-    /// \u{a9cf}: 'ꧏ'
-    pub const PANGRANGKEP: char = 'ꧏ';
-    /// \u{a9d0}: '꧐'
-    pub const DIGIT_ZERO: char = '꧐';
-    /// \u{a9d1}: '꧑'
-    pub const DIGIT_ONE: char = '꧑';
-    /// \u{a9d2}: '꧒'
-    pub const DIGIT_TWO: char = '꧒';
-    /// \u{a9d3}: '꧓'
-    pub const DIGIT_THREE: char = '꧓';
-    /// \u{a9d4}: '꧔'
-    pub const DIGIT_FOUR: char = '꧔';
-    /// \u{a9d5}: '꧕'
-    pub const DIGIT_FIVE: char = '꧕';
-    /// \u{a9d6}: '꧖'
-    pub const DIGIT_SIX: char = '꧖';
-    /// \u{a9d7}: '꧗'
-    pub const DIGIT_SEVEN: char = '꧗';
-    /// \u{a9d8}: '꧘'
-    pub const DIGIT_EIGHT: char = '꧘';
-    /// \u{a9d9}: '꧙'
-    pub const DIGIT_NINE: char = '꧙';
-    /// \u{a9de}: '꧞'
-    pub const PADA_TIRTA_TUMETES: char = '꧞';
-}
 
 /// An enum to represent all characters in the Javanese block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -369,98 +186,97 @@ pub enum Javanese {
 
 impl Into<char> for Javanese {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Javanese::SignPanyangga => SIGN_PANYANGGA,
-            Javanese::SignCecak => SIGN_CECAK,
-            Javanese::SignLayar => SIGN_LAYAR,
-            Javanese::SignWignyan => SIGN_WIGNYAN,
-            Javanese::LetterA => LETTER_A,
-            Javanese::LetterIKawi => LETTER_I_KAWI,
-            Javanese::LetterI => LETTER_I,
-            Javanese::LetterIi => LETTER_II,
-            Javanese::LetterU => LETTER_U,
-            Javanese::LetterPaCerek => LETTER_PA_CEREK,
-            Javanese::LetterNgaLelet => LETTER_NGA_LELET,
-            Javanese::LetterNgaLeletRaswadi => LETTER_NGA_LELET_RASWADI,
-            Javanese::LetterE => LETTER_E,
-            Javanese::LetterAi => LETTER_AI,
-            Javanese::LetterO => LETTER_O,
-            Javanese::LetterKa => LETTER_KA,
-            Javanese::LetterKaSasak => LETTER_KA_SASAK,
-            Javanese::LetterKaMurda => LETTER_KA_MURDA,
-            Javanese::LetterGa => LETTER_GA,
-            Javanese::LetterGaMurda => LETTER_GA_MURDA,
-            Javanese::LetterNga => LETTER_NGA,
-            Javanese::LetterCa => LETTER_CA,
-            Javanese::LetterCaMurda => LETTER_CA_MURDA,
-            Javanese::LetterJa => LETTER_JA,
-            Javanese::LetterNyaMurda => LETTER_NYA_MURDA,
-            Javanese::LetterJaMahaprana => LETTER_JA_MAHAPRANA,
-            Javanese::LetterNya => LETTER_NYA,
-            Javanese::LetterTta => LETTER_TTA,
-            Javanese::LetterTtaMahaprana => LETTER_TTA_MAHAPRANA,
-            Javanese::LetterDda => LETTER_DDA,
-            Javanese::LetterDdaMahaprana => LETTER_DDA_MAHAPRANA,
-            Javanese::LetterNaMurda => LETTER_NA_MURDA,
-            Javanese::LetterTa => LETTER_TA,
-            Javanese::LetterTaMurda => LETTER_TA_MURDA,
-            Javanese::LetterDa => LETTER_DA,
-            Javanese::LetterDaMahaprana => LETTER_DA_MAHAPRANA,
-            Javanese::LetterNa => LETTER_NA,
-            Javanese::LetterPa => LETTER_PA,
-            Javanese::LetterPaMurda => LETTER_PA_MURDA,
-            Javanese::LetterBa => LETTER_BA,
-            Javanese::LetterBaMurda => LETTER_BA_MURDA,
-            Javanese::LetterMa => LETTER_MA,
-            Javanese::LetterYa => LETTER_YA,
-            Javanese::LetterRa => LETTER_RA,
-            Javanese::LetterRaAgung => LETTER_RA_AGUNG,
-            Javanese::LetterLa => LETTER_LA,
-            Javanese::LetterWa => LETTER_WA,
-            Javanese::LetterSaMurda => LETTER_SA_MURDA,
-            Javanese::LetterSaMahaprana => LETTER_SA_MAHAPRANA,
-            Javanese::LetterSa => LETTER_SA,
-            Javanese::LetterHa => LETTER_HA,
-            Javanese::SignCecakTelu => SIGN_CECAK_TELU,
-            Javanese::VowelSignTarung => VOWEL_SIGN_TARUNG,
-            Javanese::VowelSignTolong => VOWEL_SIGN_TOLONG,
-            Javanese::VowelSignWulu => VOWEL_SIGN_WULU,
-            Javanese::VowelSignWuluMelik => VOWEL_SIGN_WULU_MELIK,
-            Javanese::VowelSignSuku => VOWEL_SIGN_SUKU,
-            Javanese::VowelSignSukuMendut => VOWEL_SIGN_SUKU_MENDUT,
-            Javanese::VowelSignTaling => VOWEL_SIGN_TALING,
-            Javanese::VowelSignDirgaMure => VOWEL_SIGN_DIRGA_MURE,
-            Javanese::VowelSignPepet => VOWEL_SIGN_PEPET,
-            Javanese::ConsonantSignKeret => CONSONANT_SIGN_KERET,
-            Javanese::ConsonantSignPengkal => CONSONANT_SIGN_PENGKAL,
-            Javanese::ConsonantSignCakra => CONSONANT_SIGN_CAKRA,
-            Javanese::Pangkon => PANGKON,
-            Javanese::LeftRerenggan => LEFT_RERENGGAN,
-            Javanese::RightRerenggan => RIGHT_RERENGGAN,
-            Javanese::PadaAndap => PADA_ANDAP,
-            Javanese::PadaMadya => PADA_MADYA,
-            Javanese::PadaLuhur => PADA_LUHUR,
-            Javanese::PadaWindu => PADA_WINDU,
-            Javanese::PadaPangkat => PADA_PANGKAT,
-            Javanese::PadaLingsa => PADA_LINGSA,
-            Javanese::PadaLungsi => PADA_LUNGSI,
-            Javanese::PadaAdeg => PADA_ADEG,
-            Javanese::PadaAdegAdeg => PADA_ADEG_ADEG,
-            Javanese::PadaPiseleh => PADA_PISELEH,
-            Javanese::TurnedPadaPiseleh => TURNED_PADA_PISELEH,
-            Javanese::Pangrangkep => PANGRANGKEP,
-            Javanese::DigitZero => DIGIT_ZERO,
-            Javanese::DigitOne => DIGIT_ONE,
-            Javanese::DigitTwo => DIGIT_TWO,
-            Javanese::DigitThree => DIGIT_THREE,
-            Javanese::DigitFour => DIGIT_FOUR,
-            Javanese::DigitFive => DIGIT_FIVE,
-            Javanese::DigitSix => DIGIT_SIX,
-            Javanese::DigitSeven => DIGIT_SEVEN,
-            Javanese::DigitEight => DIGIT_EIGHT,
-            Javanese::DigitNine => DIGIT_NINE,
-            Javanese::PadaTirtaTumetes => PADA_TIRTA_TUMETES,
+            Javanese::SignPanyangga => 'ꦀ',
+            Javanese::SignCecak => 'ꦁ',
+            Javanese::SignLayar => 'ꦂ',
+            Javanese::SignWignyan => 'ꦃ',
+            Javanese::LetterA => 'ꦄ',
+            Javanese::LetterIKawi => 'ꦅ',
+            Javanese::LetterI => 'ꦆ',
+            Javanese::LetterIi => 'ꦇ',
+            Javanese::LetterU => 'ꦈ',
+            Javanese::LetterPaCerek => 'ꦉ',
+            Javanese::LetterNgaLelet => 'ꦊ',
+            Javanese::LetterNgaLeletRaswadi => 'ꦋ',
+            Javanese::LetterE => 'ꦌ',
+            Javanese::LetterAi => 'ꦍ',
+            Javanese::LetterO => 'ꦎ',
+            Javanese::LetterKa => 'ꦏ',
+            Javanese::LetterKaSasak => 'ꦐ',
+            Javanese::LetterKaMurda => 'ꦑ',
+            Javanese::LetterGa => 'ꦒ',
+            Javanese::LetterGaMurda => 'ꦓ',
+            Javanese::LetterNga => 'ꦔ',
+            Javanese::LetterCa => 'ꦕ',
+            Javanese::LetterCaMurda => 'ꦖ',
+            Javanese::LetterJa => 'ꦗ',
+            Javanese::LetterNyaMurda => 'ꦘ',
+            Javanese::LetterJaMahaprana => 'ꦙ',
+            Javanese::LetterNya => 'ꦚ',
+            Javanese::LetterTta => 'ꦛ',
+            Javanese::LetterTtaMahaprana => 'ꦜ',
+            Javanese::LetterDda => 'ꦝ',
+            Javanese::LetterDdaMahaprana => 'ꦞ',
+            Javanese::LetterNaMurda => 'ꦟ',
+            Javanese::LetterTa => 'ꦠ',
+            Javanese::LetterTaMurda => 'ꦡ',
+            Javanese::LetterDa => 'ꦢ',
+            Javanese::LetterDaMahaprana => 'ꦣ',
+            Javanese::LetterNa => 'ꦤ',
+            Javanese::LetterPa => 'ꦥ',
+            Javanese::LetterPaMurda => 'ꦦ',
+            Javanese::LetterBa => 'ꦧ',
+            Javanese::LetterBaMurda => 'ꦨ',
+            Javanese::LetterMa => 'ꦩ',
+            Javanese::LetterYa => 'ꦪ',
+            Javanese::LetterRa => 'ꦫ',
+            Javanese::LetterRaAgung => 'ꦬ',
+            Javanese::LetterLa => 'ꦭ',
+            Javanese::LetterWa => 'ꦮ',
+            Javanese::LetterSaMurda => 'ꦯ',
+            Javanese::LetterSaMahaprana => 'ꦰ',
+            Javanese::LetterSa => 'ꦱ',
+            Javanese::LetterHa => 'ꦲ',
+            Javanese::SignCecakTelu => '꦳',
+            Javanese::VowelSignTarung => 'ꦴ',
+            Javanese::VowelSignTolong => 'ꦵ',
+            Javanese::VowelSignWulu => 'ꦶ',
+            Javanese::VowelSignWuluMelik => 'ꦷ',
+            Javanese::VowelSignSuku => 'ꦸ',
+            Javanese::VowelSignSukuMendut => 'ꦹ',
+            Javanese::VowelSignTaling => 'ꦺ',
+            Javanese::VowelSignDirgaMure => 'ꦻ',
+            Javanese::VowelSignPepet => 'ꦼ',
+            Javanese::ConsonantSignKeret => 'ꦽ',
+            Javanese::ConsonantSignPengkal => 'ꦾ',
+            Javanese::ConsonantSignCakra => 'ꦿ',
+            Javanese::Pangkon => '꧀',
+            Javanese::LeftRerenggan => '꧁',
+            Javanese::RightRerenggan => '꧂',
+            Javanese::PadaAndap => '꧃',
+            Javanese::PadaMadya => '꧄',
+            Javanese::PadaLuhur => '꧅',
+            Javanese::PadaWindu => '꧆',
+            Javanese::PadaPangkat => '꧇',
+            Javanese::PadaLingsa => '꧈',
+            Javanese::PadaLungsi => '꧉',
+            Javanese::PadaAdeg => '꧊',
+            Javanese::PadaAdegAdeg => '꧋',
+            Javanese::PadaPiseleh => '꧌',
+            Javanese::TurnedPadaPiseleh => '꧍',
+            Javanese::Pangrangkep => 'ꧏ',
+            Javanese::DigitZero => '꧐',
+            Javanese::DigitOne => '꧑',
+            Javanese::DigitTwo => '꧒',
+            Javanese::DigitThree => '꧓',
+            Javanese::DigitFour => '꧔',
+            Javanese::DigitFive => '꧕',
+            Javanese::DigitSix => '꧖',
+            Javanese::DigitSeven => '꧗',
+            Javanese::DigitEight => '꧘',
+            Javanese::DigitNine => '꧙',
+            Javanese::PadaTirtaTumetes => '꧞',
         }
     }
 }
@@ -468,98 +284,97 @@ impl Into<char> for Javanese {
 impl std::convert::TryFrom<char> for Javanese {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_PANYANGGA => Ok(Javanese::SignPanyangga),
-            SIGN_CECAK => Ok(Javanese::SignCecak),
-            SIGN_LAYAR => Ok(Javanese::SignLayar),
-            SIGN_WIGNYAN => Ok(Javanese::SignWignyan),
-            LETTER_A => Ok(Javanese::LetterA),
-            LETTER_I_KAWI => Ok(Javanese::LetterIKawi),
-            LETTER_I => Ok(Javanese::LetterI),
-            LETTER_II => Ok(Javanese::LetterIi),
-            LETTER_U => Ok(Javanese::LetterU),
-            LETTER_PA_CEREK => Ok(Javanese::LetterPaCerek),
-            LETTER_NGA_LELET => Ok(Javanese::LetterNgaLelet),
-            LETTER_NGA_LELET_RASWADI => Ok(Javanese::LetterNgaLeletRaswadi),
-            LETTER_E => Ok(Javanese::LetterE),
-            LETTER_AI => Ok(Javanese::LetterAi),
-            LETTER_O => Ok(Javanese::LetterO),
-            LETTER_KA => Ok(Javanese::LetterKa),
-            LETTER_KA_SASAK => Ok(Javanese::LetterKaSasak),
-            LETTER_KA_MURDA => Ok(Javanese::LetterKaMurda),
-            LETTER_GA => Ok(Javanese::LetterGa),
-            LETTER_GA_MURDA => Ok(Javanese::LetterGaMurda),
-            LETTER_NGA => Ok(Javanese::LetterNga),
-            LETTER_CA => Ok(Javanese::LetterCa),
-            LETTER_CA_MURDA => Ok(Javanese::LetterCaMurda),
-            LETTER_JA => Ok(Javanese::LetterJa),
-            LETTER_NYA_MURDA => Ok(Javanese::LetterNyaMurda),
-            LETTER_JA_MAHAPRANA => Ok(Javanese::LetterJaMahaprana),
-            LETTER_NYA => Ok(Javanese::LetterNya),
-            LETTER_TTA => Ok(Javanese::LetterTta),
-            LETTER_TTA_MAHAPRANA => Ok(Javanese::LetterTtaMahaprana),
-            LETTER_DDA => Ok(Javanese::LetterDda),
-            LETTER_DDA_MAHAPRANA => Ok(Javanese::LetterDdaMahaprana),
-            LETTER_NA_MURDA => Ok(Javanese::LetterNaMurda),
-            LETTER_TA => Ok(Javanese::LetterTa),
-            LETTER_TA_MURDA => Ok(Javanese::LetterTaMurda),
-            LETTER_DA => Ok(Javanese::LetterDa),
-            LETTER_DA_MAHAPRANA => Ok(Javanese::LetterDaMahaprana),
-            LETTER_NA => Ok(Javanese::LetterNa),
-            LETTER_PA => Ok(Javanese::LetterPa),
-            LETTER_PA_MURDA => Ok(Javanese::LetterPaMurda),
-            LETTER_BA => Ok(Javanese::LetterBa),
-            LETTER_BA_MURDA => Ok(Javanese::LetterBaMurda),
-            LETTER_MA => Ok(Javanese::LetterMa),
-            LETTER_YA => Ok(Javanese::LetterYa),
-            LETTER_RA => Ok(Javanese::LetterRa),
-            LETTER_RA_AGUNG => Ok(Javanese::LetterRaAgung),
-            LETTER_LA => Ok(Javanese::LetterLa),
-            LETTER_WA => Ok(Javanese::LetterWa),
-            LETTER_SA_MURDA => Ok(Javanese::LetterSaMurda),
-            LETTER_SA_MAHAPRANA => Ok(Javanese::LetterSaMahaprana),
-            LETTER_SA => Ok(Javanese::LetterSa),
-            LETTER_HA => Ok(Javanese::LetterHa),
-            SIGN_CECAK_TELU => Ok(Javanese::SignCecakTelu),
-            VOWEL_SIGN_TARUNG => Ok(Javanese::VowelSignTarung),
-            VOWEL_SIGN_TOLONG => Ok(Javanese::VowelSignTolong),
-            VOWEL_SIGN_WULU => Ok(Javanese::VowelSignWulu),
-            VOWEL_SIGN_WULU_MELIK => Ok(Javanese::VowelSignWuluMelik),
-            VOWEL_SIGN_SUKU => Ok(Javanese::VowelSignSuku),
-            VOWEL_SIGN_SUKU_MENDUT => Ok(Javanese::VowelSignSukuMendut),
-            VOWEL_SIGN_TALING => Ok(Javanese::VowelSignTaling),
-            VOWEL_SIGN_DIRGA_MURE => Ok(Javanese::VowelSignDirgaMure),
-            VOWEL_SIGN_PEPET => Ok(Javanese::VowelSignPepet),
-            CONSONANT_SIGN_KERET => Ok(Javanese::ConsonantSignKeret),
-            CONSONANT_SIGN_PENGKAL => Ok(Javanese::ConsonantSignPengkal),
-            CONSONANT_SIGN_CAKRA => Ok(Javanese::ConsonantSignCakra),
-            PANGKON => Ok(Javanese::Pangkon),
-            LEFT_RERENGGAN => Ok(Javanese::LeftRerenggan),
-            RIGHT_RERENGGAN => Ok(Javanese::RightRerenggan),
-            PADA_ANDAP => Ok(Javanese::PadaAndap),
-            PADA_MADYA => Ok(Javanese::PadaMadya),
-            PADA_LUHUR => Ok(Javanese::PadaLuhur),
-            PADA_WINDU => Ok(Javanese::PadaWindu),
-            PADA_PANGKAT => Ok(Javanese::PadaPangkat),
-            PADA_LINGSA => Ok(Javanese::PadaLingsa),
-            PADA_LUNGSI => Ok(Javanese::PadaLungsi),
-            PADA_ADEG => Ok(Javanese::PadaAdeg),
-            PADA_ADEG_ADEG => Ok(Javanese::PadaAdegAdeg),
-            PADA_PISELEH => Ok(Javanese::PadaPiseleh),
-            TURNED_PADA_PISELEH => Ok(Javanese::TurnedPadaPiseleh),
-            PANGRANGKEP => Ok(Javanese::Pangrangkep),
-            DIGIT_ZERO => Ok(Javanese::DigitZero),
-            DIGIT_ONE => Ok(Javanese::DigitOne),
-            DIGIT_TWO => Ok(Javanese::DigitTwo),
-            DIGIT_THREE => Ok(Javanese::DigitThree),
-            DIGIT_FOUR => Ok(Javanese::DigitFour),
-            DIGIT_FIVE => Ok(Javanese::DigitFive),
-            DIGIT_SIX => Ok(Javanese::DigitSix),
-            DIGIT_SEVEN => Ok(Javanese::DigitSeven),
-            DIGIT_EIGHT => Ok(Javanese::DigitEight),
-            DIGIT_NINE => Ok(Javanese::DigitNine),
-            PADA_TIRTA_TUMETES => Ok(Javanese::PadaTirtaTumetes),
+            'ꦀ' => Ok(Javanese::SignPanyangga),
+            'ꦁ' => Ok(Javanese::SignCecak),
+            'ꦂ' => Ok(Javanese::SignLayar),
+            'ꦃ' => Ok(Javanese::SignWignyan),
+            'ꦄ' => Ok(Javanese::LetterA),
+            'ꦅ' => Ok(Javanese::LetterIKawi),
+            'ꦆ' => Ok(Javanese::LetterI),
+            'ꦇ' => Ok(Javanese::LetterIi),
+            'ꦈ' => Ok(Javanese::LetterU),
+            'ꦉ' => Ok(Javanese::LetterPaCerek),
+            'ꦊ' => Ok(Javanese::LetterNgaLelet),
+            'ꦋ' => Ok(Javanese::LetterNgaLeletRaswadi),
+            'ꦌ' => Ok(Javanese::LetterE),
+            'ꦍ' => Ok(Javanese::LetterAi),
+            'ꦎ' => Ok(Javanese::LetterO),
+            'ꦏ' => Ok(Javanese::LetterKa),
+            'ꦐ' => Ok(Javanese::LetterKaSasak),
+            'ꦑ' => Ok(Javanese::LetterKaMurda),
+            'ꦒ' => Ok(Javanese::LetterGa),
+            'ꦓ' => Ok(Javanese::LetterGaMurda),
+            'ꦔ' => Ok(Javanese::LetterNga),
+            'ꦕ' => Ok(Javanese::LetterCa),
+            'ꦖ' => Ok(Javanese::LetterCaMurda),
+            'ꦗ' => Ok(Javanese::LetterJa),
+            'ꦘ' => Ok(Javanese::LetterNyaMurda),
+            'ꦙ' => Ok(Javanese::LetterJaMahaprana),
+            'ꦚ' => Ok(Javanese::LetterNya),
+            'ꦛ' => Ok(Javanese::LetterTta),
+            'ꦜ' => Ok(Javanese::LetterTtaMahaprana),
+            'ꦝ' => Ok(Javanese::LetterDda),
+            'ꦞ' => Ok(Javanese::LetterDdaMahaprana),
+            'ꦟ' => Ok(Javanese::LetterNaMurda),
+            'ꦠ' => Ok(Javanese::LetterTa),
+            'ꦡ' => Ok(Javanese::LetterTaMurda),
+            'ꦢ' => Ok(Javanese::LetterDa),
+            'ꦣ' => Ok(Javanese::LetterDaMahaprana),
+            'ꦤ' => Ok(Javanese::LetterNa),
+            'ꦥ' => Ok(Javanese::LetterPa),
+            'ꦦ' => Ok(Javanese::LetterPaMurda),
+            'ꦧ' => Ok(Javanese::LetterBa),
+            'ꦨ' => Ok(Javanese::LetterBaMurda),
+            'ꦩ' => Ok(Javanese::LetterMa),
+            'ꦪ' => Ok(Javanese::LetterYa),
+            'ꦫ' => Ok(Javanese::LetterRa),
+            'ꦬ' => Ok(Javanese::LetterRaAgung),
+            'ꦭ' => Ok(Javanese::LetterLa),
+            'ꦮ' => Ok(Javanese::LetterWa),
+            'ꦯ' => Ok(Javanese::LetterSaMurda),
+            'ꦰ' => Ok(Javanese::LetterSaMahaprana),
+            'ꦱ' => Ok(Javanese::LetterSa),
+            'ꦲ' => Ok(Javanese::LetterHa),
+            '꦳' => Ok(Javanese::SignCecakTelu),
+            'ꦴ' => Ok(Javanese::VowelSignTarung),
+            'ꦵ' => Ok(Javanese::VowelSignTolong),
+            'ꦶ' => Ok(Javanese::VowelSignWulu),
+            'ꦷ' => Ok(Javanese::VowelSignWuluMelik),
+            'ꦸ' => Ok(Javanese::VowelSignSuku),
+            'ꦹ' => Ok(Javanese::VowelSignSukuMendut),
+            'ꦺ' => Ok(Javanese::VowelSignTaling),
+            'ꦻ' => Ok(Javanese::VowelSignDirgaMure),
+            'ꦼ' => Ok(Javanese::VowelSignPepet),
+            'ꦽ' => Ok(Javanese::ConsonantSignKeret),
+            'ꦾ' => Ok(Javanese::ConsonantSignPengkal),
+            'ꦿ' => Ok(Javanese::ConsonantSignCakra),
+            '꧀' => Ok(Javanese::Pangkon),
+            '꧁' => Ok(Javanese::LeftRerenggan),
+            '꧂' => Ok(Javanese::RightRerenggan),
+            '꧃' => Ok(Javanese::PadaAndap),
+            '꧄' => Ok(Javanese::PadaMadya),
+            '꧅' => Ok(Javanese::PadaLuhur),
+            '꧆' => Ok(Javanese::PadaWindu),
+            '꧇' => Ok(Javanese::PadaPangkat),
+            '꧈' => Ok(Javanese::PadaLingsa),
+            '꧉' => Ok(Javanese::PadaLungsi),
+            '꧊' => Ok(Javanese::PadaAdeg),
+            '꧋' => Ok(Javanese::PadaAdegAdeg),
+            '꧌' => Ok(Javanese::PadaPiseleh),
+            '꧍' => Ok(Javanese::TurnedPadaPiseleh),
+            'ꧏ' => Ok(Javanese::Pangrangkep),
+            '꧐' => Ok(Javanese::DigitZero),
+            '꧑' => Ok(Javanese::DigitOne),
+            '꧒' => Ok(Javanese::DigitTwo),
+            '꧓' => Ok(Javanese::DigitThree),
+            '꧔' => Ok(Javanese::DigitFour),
+            '꧕' => Ok(Javanese::DigitFive),
+            '꧖' => Ok(Javanese::DigitSix),
+            '꧗' => Ok(Javanese::DigitSeven),
+            '꧘' => Ok(Javanese::DigitEight),
+            '꧙' => Ok(Javanese::DigitNine),
+            '꧞' => Ok(Javanese::PadaTirtaTumetes),
             _ => Err(()),
         }
     }

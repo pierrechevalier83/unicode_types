@@ -1,390 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1f100}: '🄀'
-    pub const DIGIT_ZERO_FULL_STOP: char = '🄀';
-    /// \u{1f101}: '🄁'
-    pub const DIGIT_ZERO_COMMA: char = '🄁';
-    /// \u{1f102}: '🄂'
-    pub const DIGIT_ONE_COMMA: char = '🄂';
-    /// \u{1f103}: '🄃'
-    pub const DIGIT_TWO_COMMA: char = '🄃';
-    /// \u{1f104}: '🄄'
-    pub const DIGIT_THREE_COMMA: char = '🄄';
-    /// \u{1f105}: '🄅'
-    pub const DIGIT_FOUR_COMMA: char = '🄅';
-    /// \u{1f106}: '🄆'
-    pub const DIGIT_FIVE_COMMA: char = '🄆';
-    /// \u{1f107}: '🄇'
-    pub const DIGIT_SIX_COMMA: char = '🄇';
-    /// \u{1f108}: '🄈'
-    pub const DIGIT_SEVEN_COMMA: char = '🄈';
-    /// \u{1f109}: '🄉'
-    pub const DIGIT_EIGHT_COMMA: char = '🄉';
-    /// \u{1f10a}: '🄊'
-    pub const DIGIT_NINE_COMMA: char = '🄊';
-    /// \u{1f10b}: '🄋'
-    pub const DINGBAT_CIRCLED_SANS_DASH_SERIF_DIGIT_ZERO: char = '🄋';
-    /// \u{1f10c}: '🄌'
-    pub const DINGBAT_NEGATIVE_CIRCLED_SANS_DASH_SERIF_DIGIT_ZERO: char = '🄌';
-    /// \u{1f110}: '🄐'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_A: char = '🄐';
-    /// \u{1f111}: '🄑'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_B: char = '🄑';
-    /// \u{1f112}: '🄒'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_C: char = '🄒';
-    /// \u{1f113}: '🄓'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_D: char = '🄓';
-    /// \u{1f114}: '🄔'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_E: char = '🄔';
-    /// \u{1f115}: '🄕'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_F: char = '🄕';
-    /// \u{1f116}: '🄖'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_G: char = '🄖';
-    /// \u{1f117}: '🄗'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_H: char = '🄗';
-    /// \u{1f118}: '🄘'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_I: char = '🄘';
-    /// \u{1f119}: '🄙'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_J: char = '🄙';
-    /// \u{1f11a}: '🄚'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_K: char = '🄚';
-    /// \u{1f11b}: '🄛'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_L: char = '🄛';
-    /// \u{1f11c}: '🄜'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_M: char = '🄜';
-    /// \u{1f11d}: '🄝'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_N: char = '🄝';
-    /// \u{1f11e}: '🄞'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_O: char = '🄞';
-    /// \u{1f11f}: '🄟'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_P: char = '🄟';
-    /// \u{1f120}: '🄠'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_Q: char = '🄠';
-    /// \u{1f121}: '🄡'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_R: char = '🄡';
-    /// \u{1f122}: '🄢'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_S: char = '🄢';
-    /// \u{1f123}: '🄣'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_T: char = '🄣';
-    /// \u{1f124}: '🄤'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_U: char = '🄤';
-    /// \u{1f125}: '🄥'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_V: char = '🄥';
-    /// \u{1f126}: '🄦'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_W: char = '🄦';
-    /// \u{1f127}: '🄧'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_X: char = '🄧';
-    /// \u{1f128}: '🄨'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_Y: char = '🄨';
-    /// \u{1f129}: '🄩'
-    pub const PARENTHESIZED_LATIN_CAPITAL_LETTER_Z: char = '🄩';
-    /// \u{1f12a}: '🄪'
-    pub const TORTOISE_SHELL_BRACKETED_LATIN_CAPITAL_LETTER_S: char = '🄪';
-    /// \u{1f12b}: '🄫'
-    pub const CIRCLED_ITALIC_LATIN_CAPITAL_LETTER_C: char = '🄫';
-    /// \u{1f12c}: '🄬'
-    pub const CIRCLED_ITALIC_LATIN_CAPITAL_LETTER_R: char = '🄬';
-    /// \u{1f12d}: '🄭'
-    pub const CIRCLED_CD: char = '🄭';
-    /// \u{1f12e}: '🄮'
-    pub const CIRCLED_WZ: char = '🄮';
-    /// \u{1f12f}: '🄯'
-    pub const COPYLEFT_SYMBOL: char = '🄯';
-    /// \u{1f130}: '🄰'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_A: char = '🄰';
-    /// \u{1f131}: '🄱'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_B: char = '🄱';
-    /// \u{1f132}: '🄲'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_C: char = '🄲';
-    /// \u{1f133}: '🄳'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_D: char = '🄳';
-    /// \u{1f134}: '🄴'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_E: char = '🄴';
-    /// \u{1f135}: '🄵'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_F: char = '🄵';
-    /// \u{1f136}: '🄶'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_G: char = '🄶';
-    /// \u{1f137}: '🄷'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_H: char = '🄷';
-    /// \u{1f138}: '🄸'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_I: char = '🄸';
-    /// \u{1f139}: '🄹'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_J: char = '🄹';
-    /// \u{1f13a}: '🄺'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_K: char = '🄺';
-    /// \u{1f13b}: '🄻'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_L: char = '🄻';
-    /// \u{1f13c}: '🄼'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_M: char = '🄼';
-    /// \u{1f13d}: '🄽'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_N: char = '🄽';
-    /// \u{1f13e}: '🄾'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_O: char = '🄾';
-    /// \u{1f13f}: '🄿'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_P: char = '🄿';
-    /// \u{1f140}: '🅀'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_Q: char = '🅀';
-    /// \u{1f141}: '🅁'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_R: char = '🅁';
-    /// \u{1f142}: '🅂'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_S: char = '🅂';
-    /// \u{1f143}: '🅃'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_T: char = '🅃';
-    /// \u{1f144}: '🅄'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_U: char = '🅄';
-    /// \u{1f145}: '🅅'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_V: char = '🅅';
-    /// \u{1f146}: '🅆'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_W: char = '🅆';
-    /// \u{1f147}: '🅇'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_X: char = '🅇';
-    /// \u{1f148}: '🅈'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_Y: char = '🅈';
-    /// \u{1f149}: '🅉'
-    pub const SQUARED_LATIN_CAPITAL_LETTER_Z: char = '🅉';
-    /// \u{1f14a}: '🅊'
-    pub const SQUARED_HV: char = '🅊';
-    /// \u{1f14b}: '🅋'
-    pub const SQUARED_MV: char = '🅋';
-    /// \u{1f14c}: '🅌'
-    pub const SQUARED_SD: char = '🅌';
-    /// \u{1f14d}: '🅍'
-    pub const SQUARED_SS: char = '🅍';
-    /// \u{1f14e}: '🅎'
-    pub const SQUARED_PPV: char = '🅎';
-    /// \u{1f14f}: '🅏'
-    pub const SQUARED_WC: char = '🅏';
-    /// \u{1f150}: '🅐'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_A: char = '🅐';
-    /// \u{1f151}: '🅑'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_B: char = '🅑';
-    /// \u{1f152}: '🅒'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_C: char = '🅒';
-    /// \u{1f153}: '🅓'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_D: char = '🅓';
-    /// \u{1f154}: '🅔'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_E: char = '🅔';
-    /// \u{1f155}: '🅕'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_F: char = '🅕';
-    /// \u{1f156}: '🅖'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_G: char = '🅖';
-    /// \u{1f157}: '🅗'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_H: char = '🅗';
-    /// \u{1f158}: '🅘'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_I: char = '🅘';
-    /// \u{1f159}: '🅙'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_J: char = '🅙';
-    /// \u{1f15a}: '🅚'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_K: char = '🅚';
-    /// \u{1f15b}: '🅛'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_L: char = '🅛';
-    /// \u{1f15c}: '🅜'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_M: char = '🅜';
-    /// \u{1f15d}: '🅝'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_N: char = '🅝';
-    /// \u{1f15e}: '🅞'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_O: char = '🅞';
-    /// \u{1f15f}: '🅟'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_P: char = '🅟';
-    /// \u{1f160}: '🅠'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_Q: char = '🅠';
-    /// \u{1f161}: '🅡'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_R: char = '🅡';
-    /// \u{1f162}: '🅢'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_S: char = '🅢';
-    /// \u{1f163}: '🅣'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_T: char = '🅣';
-    /// \u{1f164}: '🅤'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_U: char = '🅤';
-    /// \u{1f165}: '🅥'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_V: char = '🅥';
-    /// \u{1f166}: '🅦'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_W: char = '🅦';
-    /// \u{1f167}: '🅧'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_X: char = '🅧';
-    /// \u{1f168}: '🅨'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_Y: char = '🅨';
-    /// \u{1f169}: '🅩'
-    pub const NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_Z: char = '🅩';
-    /// \u{1f16a}: '🅪'
-    pub const RAISED_MC_SIGN: char = '🅪';
-    /// \u{1f16b}: '🅫'
-    pub const RAISED_MD_SIGN: char = '🅫';
-    /// \u{1f16c}: '🅬'
-    pub const RAISED_MR_SIGN: char = '🅬';
-    /// \u{1f170}: '🅰'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_A: char = '🅰';
-    /// \u{1f171}: '🅱'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_B: char = '🅱';
-    /// \u{1f172}: '🅲'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_C: char = '🅲';
-    /// \u{1f173}: '🅳'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_D: char = '🅳';
-    /// \u{1f174}: '🅴'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_E: char = '🅴';
-    /// \u{1f175}: '🅵'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_F: char = '🅵';
-    /// \u{1f176}: '🅶'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_G: char = '🅶';
-    /// \u{1f177}: '🅷'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_H: char = '🅷';
-    /// \u{1f178}: '🅸'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_I: char = '🅸';
-    /// \u{1f179}: '🅹'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_J: char = '🅹';
-    /// \u{1f17a}: '🅺'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_K: char = '🅺';
-    /// \u{1f17b}: '🅻'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_L: char = '🅻';
-    /// \u{1f17c}: '🅼'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_M: char = '🅼';
-    /// \u{1f17d}: '🅽'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_N: char = '🅽';
-    /// \u{1f17e}: '🅾'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_O: char = '🅾';
-    /// \u{1f17f}: '🅿'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_P: char = '🅿';
-    /// \u{1f180}: '🆀'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_Q: char = '🆀';
-    /// \u{1f181}: '🆁'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_R: char = '🆁';
-    /// \u{1f182}: '🆂'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_S: char = '🆂';
-    /// \u{1f183}: '🆃'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_T: char = '🆃';
-    /// \u{1f184}: '🆄'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_U: char = '🆄';
-    /// \u{1f185}: '🆅'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_V: char = '🆅';
-    /// \u{1f186}: '🆆'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_W: char = '🆆';
-    /// \u{1f187}: '🆇'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_X: char = '🆇';
-    /// \u{1f188}: '🆈'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_Y: char = '🆈';
-    /// \u{1f189}: '🆉'
-    pub const NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_Z: char = '🆉';
-    /// \u{1f18a}: '🆊'
-    pub const CROSSED_NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_P: char = '🆊';
-    /// \u{1f18b}: '🆋'
-    pub const NEGATIVE_SQUARED_IC: char = '🆋';
-    /// \u{1f18c}: '🆌'
-    pub const NEGATIVE_SQUARED_PA: char = '🆌';
-    /// \u{1f18d}: '🆍'
-    pub const NEGATIVE_SQUARED_SA: char = '🆍';
-    /// \u{1f18e}: '🆎'
-    pub const NEGATIVE_SQUARED_AB: char = '🆎';
-    /// \u{1f18f}: '🆏'
-    pub const NEGATIVE_SQUARED_WC: char = '🆏';
-    /// \u{1f190}: '🆐'
-    pub const SQUARE_DJ: char = '🆐';
-    /// \u{1f191}: '🆑'
-    pub const SQUARED_CL: char = '🆑';
-    /// \u{1f192}: '🆒'
-    pub const SQUARED_COOL: char = '🆒';
-    /// \u{1f193}: '🆓'
-    pub const SQUARED_FREE: char = '🆓';
-    /// \u{1f194}: '🆔'
-    pub const SQUARED_ID: char = '🆔';
-    /// \u{1f195}: '🆕'
-    pub const SQUARED_NEW: char = '🆕';
-    /// \u{1f196}: '🆖'
-    pub const SQUARED_NG: char = '🆖';
-    /// \u{1f197}: '🆗'
-    pub const SQUARED_OK: char = '🆗';
-    /// \u{1f198}: '🆘'
-    pub const SQUARED_SOS: char = '🆘';
-    /// \u{1f199}: '🆙'
-    pub const SQUARED_UP_WITH_EXCLAMATION_MARK: char = '🆙';
-    /// \u{1f19a}: '🆚'
-    pub const SQUARED_VS: char = '🆚';
-    /// \u{1f19b}: '🆛'
-    pub const SQUARED_THREE_D: char = '🆛';
-    /// \u{1f19c}: '🆜'
-    pub const SQUARED_SECOND_SCREEN: char = '🆜';
-    /// \u{1f19d}: '🆝'
-    pub const SQUARED_TWO_K: char = '🆝';
-    /// \u{1f19e}: '🆞'
-    pub const SQUARED_FOUR_K: char = '🆞';
-    /// \u{1f19f}: '🆟'
-    pub const SQUARED_EIGHT_K: char = '🆟';
-    /// \u{1f1a0}: '🆠'
-    pub const SQUARED_FIVE_POINT_ONE: char = '🆠';
-    /// \u{1f1a1}: '🆡'
-    pub const SQUARED_SEVEN_POINT_ONE: char = '🆡';
-    /// \u{1f1a2}: '🆢'
-    pub const SQUARED_TWENTY_DASH_TWO_POINT_TWO: char = '🆢';
-    /// \u{1f1a3}: '🆣'
-    pub const SQUARED_SIXTY_P: char = '🆣';
-    /// \u{1f1a4}: '🆤'
-    pub const SQUARED_ONE_HUNDRED_TWENTY_P: char = '🆤';
-    /// \u{1f1a5}: '🆥'
-    pub const SQUARED_LATIN_SMALL_LETTER_D: char = '🆥';
-    /// \u{1f1a6}: '🆦'
-    pub const SQUARED_HC: char = '🆦';
-    /// \u{1f1a7}: '🆧'
-    pub const SQUARED_HDR: char = '🆧';
-    /// \u{1f1a8}: '🆨'
-    pub const SQUARED_HI_DASH_RES: char = '🆨';
-    /// \u{1f1a9}: '🆩'
-    pub const SQUARED_LOSSLESS: char = '🆩';
-    /// \u{1f1aa}: '🆪'
-    pub const SQUARED_SHV: char = '🆪';
-    /// \u{1f1ab}: '🆫'
-    pub const SQUARED_UHD: char = '🆫';
-    /// \u{1f1ac}: '🆬'
-    pub const SQUARED_VOD: char = '🆬';
-    /// \u{1f1e6}: '🇦'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_A: char = '🇦';
-    /// \u{1f1e7}: '🇧'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_B: char = '🇧';
-    /// \u{1f1e8}: '🇨'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_C: char = '🇨';
-    /// \u{1f1e9}: '🇩'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_D: char = '🇩';
-    /// \u{1f1ea}: '🇪'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_E: char = '🇪';
-    /// \u{1f1eb}: '🇫'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_F: char = '🇫';
-    /// \u{1f1ec}: '🇬'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_G: char = '🇬';
-    /// \u{1f1ed}: '🇭'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_H: char = '🇭';
-    /// \u{1f1ee}: '🇮'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_I: char = '🇮';
-    /// \u{1f1ef}: '🇯'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_J: char = '🇯';
-    /// \u{1f1f0}: '🇰'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_K: char = '🇰';
-    /// \u{1f1f1}: '🇱'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_L: char = '🇱';
-    /// \u{1f1f2}: '🇲'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_M: char = '🇲';
-    /// \u{1f1f3}: '🇳'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_N: char = '🇳';
-    /// \u{1f1f4}: '🇴'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_O: char = '🇴';
-    /// \u{1f1f5}: '🇵'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_P: char = '🇵';
-    /// \u{1f1f6}: '🇶'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_Q: char = '🇶';
-    /// \u{1f1f7}: '🇷'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_R: char = '🇷';
-    /// \u{1f1f8}: '🇸'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_S: char = '🇸';
-    /// \u{1f1f9}: '🇹'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_T: char = '🇹';
-    /// \u{1f1fa}: '🇺'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_U: char = '🇺';
-    /// \u{1f1fb}: '🇻'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_V: char = '🇻';
-    /// \u{1f1fc}: '🇼'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_W: char = '🇼';
-    /// \u{1f1fd}: '🇽'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_X: char = '🇽';
-    /// \u{1f1fe}: '🇾'
-    pub const REGIONAL_INDICATOR_SYMBOL_LETTER_Y: char = '🇾';
-}
 
 /// An enum to represent all characters in the EnclosedAlphanumericSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -777,200 +390,199 @@ pub enum EnclosedAlphanumericSupplement {
 
 impl Into<char> for EnclosedAlphanumericSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            EnclosedAlphanumericSupplement::DigitZeroFullStop => DIGIT_ZERO_FULL_STOP,
-            EnclosedAlphanumericSupplement::DigitZeroComma => DIGIT_ZERO_COMMA,
-            EnclosedAlphanumericSupplement::DigitOneComma => DIGIT_ONE_COMMA,
-            EnclosedAlphanumericSupplement::DigitTwoComma => DIGIT_TWO_COMMA,
-            EnclosedAlphanumericSupplement::DigitThreeComma => DIGIT_THREE_COMMA,
-            EnclosedAlphanumericSupplement::DigitFourComma => DIGIT_FOUR_COMMA,
-            EnclosedAlphanumericSupplement::DigitFiveComma => DIGIT_FIVE_COMMA,
-            EnclosedAlphanumericSupplement::DigitSixComma => DIGIT_SIX_COMMA,
-            EnclosedAlphanumericSupplement::DigitSevenComma => DIGIT_SEVEN_COMMA,
-            EnclosedAlphanumericSupplement::DigitEightComma => DIGIT_EIGHT_COMMA,
-            EnclosedAlphanumericSupplement::DigitNineComma => DIGIT_NINE_COMMA,
-            EnclosedAlphanumericSupplement::DingbatCircledSansDashSerifDigitZero => DINGBAT_CIRCLED_SANS_DASH_SERIF_DIGIT_ZERO,
-            EnclosedAlphanumericSupplement::DingbatNegativeCircledSansDashSerifDigitZero => DINGBAT_NEGATIVE_CIRCLED_SANS_DASH_SERIF_DIGIT_ZERO,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterA => PARENTHESIZED_LATIN_CAPITAL_LETTER_A,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterB => PARENTHESIZED_LATIN_CAPITAL_LETTER_B,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterC => PARENTHESIZED_LATIN_CAPITAL_LETTER_C,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterD => PARENTHESIZED_LATIN_CAPITAL_LETTER_D,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterE => PARENTHESIZED_LATIN_CAPITAL_LETTER_E,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterF => PARENTHESIZED_LATIN_CAPITAL_LETTER_F,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterG => PARENTHESIZED_LATIN_CAPITAL_LETTER_G,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterH => PARENTHESIZED_LATIN_CAPITAL_LETTER_H,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterI => PARENTHESIZED_LATIN_CAPITAL_LETTER_I,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterJ => PARENTHESIZED_LATIN_CAPITAL_LETTER_J,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterK => PARENTHESIZED_LATIN_CAPITAL_LETTER_K,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterL => PARENTHESIZED_LATIN_CAPITAL_LETTER_L,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterM => PARENTHESIZED_LATIN_CAPITAL_LETTER_M,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterN => PARENTHESIZED_LATIN_CAPITAL_LETTER_N,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterO => PARENTHESIZED_LATIN_CAPITAL_LETTER_O,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterP => PARENTHESIZED_LATIN_CAPITAL_LETTER_P,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterQ => PARENTHESIZED_LATIN_CAPITAL_LETTER_Q,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterR => PARENTHESIZED_LATIN_CAPITAL_LETTER_R,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterS => PARENTHESIZED_LATIN_CAPITAL_LETTER_S,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterT => PARENTHESIZED_LATIN_CAPITAL_LETTER_T,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterU => PARENTHESIZED_LATIN_CAPITAL_LETTER_U,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterV => PARENTHESIZED_LATIN_CAPITAL_LETTER_V,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterW => PARENTHESIZED_LATIN_CAPITAL_LETTER_W,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterX => PARENTHESIZED_LATIN_CAPITAL_LETTER_X,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterY => PARENTHESIZED_LATIN_CAPITAL_LETTER_Y,
-            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterZ => PARENTHESIZED_LATIN_CAPITAL_LETTER_Z,
-            EnclosedAlphanumericSupplement::TortoiseShellBracketedLatinCapitalLetterS => TORTOISE_SHELL_BRACKETED_LATIN_CAPITAL_LETTER_S,
-            EnclosedAlphanumericSupplement::CircledItalicLatinCapitalLetterC => CIRCLED_ITALIC_LATIN_CAPITAL_LETTER_C,
-            EnclosedAlphanumericSupplement::CircledItalicLatinCapitalLetterR => CIRCLED_ITALIC_LATIN_CAPITAL_LETTER_R,
-            EnclosedAlphanumericSupplement::CircledCd => CIRCLED_CD,
-            EnclosedAlphanumericSupplement::CircledWz => CIRCLED_WZ,
-            EnclosedAlphanumericSupplement::CopyleftSymbol => COPYLEFT_SYMBOL,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterA => SQUARED_LATIN_CAPITAL_LETTER_A,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterB => SQUARED_LATIN_CAPITAL_LETTER_B,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterC => SQUARED_LATIN_CAPITAL_LETTER_C,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterD => SQUARED_LATIN_CAPITAL_LETTER_D,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterE => SQUARED_LATIN_CAPITAL_LETTER_E,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterF => SQUARED_LATIN_CAPITAL_LETTER_F,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterG => SQUARED_LATIN_CAPITAL_LETTER_G,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterH => SQUARED_LATIN_CAPITAL_LETTER_H,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterI => SQUARED_LATIN_CAPITAL_LETTER_I,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterJ => SQUARED_LATIN_CAPITAL_LETTER_J,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterK => SQUARED_LATIN_CAPITAL_LETTER_K,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterL => SQUARED_LATIN_CAPITAL_LETTER_L,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterM => SQUARED_LATIN_CAPITAL_LETTER_M,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterN => SQUARED_LATIN_CAPITAL_LETTER_N,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterO => SQUARED_LATIN_CAPITAL_LETTER_O,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterP => SQUARED_LATIN_CAPITAL_LETTER_P,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterQ => SQUARED_LATIN_CAPITAL_LETTER_Q,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterR => SQUARED_LATIN_CAPITAL_LETTER_R,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterS => SQUARED_LATIN_CAPITAL_LETTER_S,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterT => SQUARED_LATIN_CAPITAL_LETTER_T,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterU => SQUARED_LATIN_CAPITAL_LETTER_U,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterV => SQUARED_LATIN_CAPITAL_LETTER_V,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterW => SQUARED_LATIN_CAPITAL_LETTER_W,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterX => SQUARED_LATIN_CAPITAL_LETTER_X,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterY => SQUARED_LATIN_CAPITAL_LETTER_Y,
-            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterZ => SQUARED_LATIN_CAPITAL_LETTER_Z,
-            EnclosedAlphanumericSupplement::SquaredHv => SQUARED_HV,
-            EnclosedAlphanumericSupplement::SquaredMv => SQUARED_MV,
-            EnclosedAlphanumericSupplement::SquaredSd => SQUARED_SD,
-            EnclosedAlphanumericSupplement::SquaredSs => SQUARED_SS,
-            EnclosedAlphanumericSupplement::SquaredPpv => SQUARED_PPV,
-            EnclosedAlphanumericSupplement::SquaredWc => SQUARED_WC,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterA => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_A,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterB => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_B,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterC => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_C,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterD => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_D,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterE => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_E,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterF => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_F,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterG => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_G,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterH => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_H,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterI => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_I,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterJ => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_J,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterK => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_K,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterL => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_L,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterM => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_M,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterN => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_N,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterO => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_O,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterP => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_P,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterQ => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_Q,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterR => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_R,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterS => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_S,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterT => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_T,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterU => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_U,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterV => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_V,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterW => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_W,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterX => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_X,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterY => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_Y,
-            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterZ => NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_Z,
-            EnclosedAlphanumericSupplement::RaisedMcSign => RAISED_MC_SIGN,
-            EnclosedAlphanumericSupplement::RaisedMdSign => RAISED_MD_SIGN,
-            EnclosedAlphanumericSupplement::RaisedMrSign => RAISED_MR_SIGN,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterA => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_A,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterB => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_B,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterC => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_C,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterD => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_D,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterE => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_E,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterF => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_F,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterG => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_G,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterH => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_H,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterI => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_I,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterJ => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_J,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterK => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_K,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterL => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_L,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterM => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_M,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterN => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_N,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterO => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_O,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterP => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_P,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterQ => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_Q,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterR => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_R,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterS => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_S,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterT => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_T,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterU => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_U,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterV => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_V,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterW => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_W,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterX => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_X,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterY => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_Y,
-            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterZ => NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_Z,
-            EnclosedAlphanumericSupplement::CrossedNegativeSquaredLatinCapitalLetterP => CROSSED_NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_P,
-            EnclosedAlphanumericSupplement::NegativeSquaredIc => NEGATIVE_SQUARED_IC,
-            EnclosedAlphanumericSupplement::NegativeSquaredPa => NEGATIVE_SQUARED_PA,
-            EnclosedAlphanumericSupplement::NegativeSquaredSa => NEGATIVE_SQUARED_SA,
-            EnclosedAlphanumericSupplement::NegativeSquaredAb => NEGATIVE_SQUARED_AB,
-            EnclosedAlphanumericSupplement::NegativeSquaredWc => NEGATIVE_SQUARED_WC,
-            EnclosedAlphanumericSupplement::SquareDj => SQUARE_DJ,
-            EnclosedAlphanumericSupplement::SquaredCl => SQUARED_CL,
-            EnclosedAlphanumericSupplement::SquaredCool => SQUARED_COOL,
-            EnclosedAlphanumericSupplement::SquaredFree => SQUARED_FREE,
-            EnclosedAlphanumericSupplement::SquaredId => SQUARED_ID,
-            EnclosedAlphanumericSupplement::SquaredNew => SQUARED_NEW,
-            EnclosedAlphanumericSupplement::SquaredNg => SQUARED_NG,
-            EnclosedAlphanumericSupplement::SquaredOk => SQUARED_OK,
-            EnclosedAlphanumericSupplement::SquaredSos => SQUARED_SOS,
-            EnclosedAlphanumericSupplement::SquaredUpWithExclamationMark => SQUARED_UP_WITH_EXCLAMATION_MARK,
-            EnclosedAlphanumericSupplement::SquaredVs => SQUARED_VS,
-            EnclosedAlphanumericSupplement::SquaredThreeD => SQUARED_THREE_D,
-            EnclosedAlphanumericSupplement::SquaredSecondScreen => SQUARED_SECOND_SCREEN,
-            EnclosedAlphanumericSupplement::SquaredTwoK => SQUARED_TWO_K,
-            EnclosedAlphanumericSupplement::SquaredFourK => SQUARED_FOUR_K,
-            EnclosedAlphanumericSupplement::SquaredEightK => SQUARED_EIGHT_K,
-            EnclosedAlphanumericSupplement::SquaredFivePointOne => SQUARED_FIVE_POINT_ONE,
-            EnclosedAlphanumericSupplement::SquaredSevenPointOne => SQUARED_SEVEN_POINT_ONE,
-            EnclosedAlphanumericSupplement::SquaredTwentyDashTwoPointTwo => SQUARED_TWENTY_DASH_TWO_POINT_TWO,
-            EnclosedAlphanumericSupplement::SquaredSixtyP => SQUARED_SIXTY_P,
-            EnclosedAlphanumericSupplement::SquaredOneHundredTwentyP => SQUARED_ONE_HUNDRED_TWENTY_P,
-            EnclosedAlphanumericSupplement::SquaredLatinSmallLetterD => SQUARED_LATIN_SMALL_LETTER_D,
-            EnclosedAlphanumericSupplement::SquaredHc => SQUARED_HC,
-            EnclosedAlphanumericSupplement::SquaredHdr => SQUARED_HDR,
-            EnclosedAlphanumericSupplement::SquaredHiDashRes => SQUARED_HI_DASH_RES,
-            EnclosedAlphanumericSupplement::SquaredLossless => SQUARED_LOSSLESS,
-            EnclosedAlphanumericSupplement::SquaredShv => SQUARED_SHV,
-            EnclosedAlphanumericSupplement::SquaredUhd => SQUARED_UHD,
-            EnclosedAlphanumericSupplement::SquaredVod => SQUARED_VOD,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterA => REGIONAL_INDICATOR_SYMBOL_LETTER_A,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterB => REGIONAL_INDICATOR_SYMBOL_LETTER_B,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterC => REGIONAL_INDICATOR_SYMBOL_LETTER_C,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterD => REGIONAL_INDICATOR_SYMBOL_LETTER_D,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterE => REGIONAL_INDICATOR_SYMBOL_LETTER_E,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterF => REGIONAL_INDICATOR_SYMBOL_LETTER_F,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterG => REGIONAL_INDICATOR_SYMBOL_LETTER_G,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterH => REGIONAL_INDICATOR_SYMBOL_LETTER_H,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterI => REGIONAL_INDICATOR_SYMBOL_LETTER_I,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterJ => REGIONAL_INDICATOR_SYMBOL_LETTER_J,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterK => REGIONAL_INDICATOR_SYMBOL_LETTER_K,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterL => REGIONAL_INDICATOR_SYMBOL_LETTER_L,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterM => REGIONAL_INDICATOR_SYMBOL_LETTER_M,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterN => REGIONAL_INDICATOR_SYMBOL_LETTER_N,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterO => REGIONAL_INDICATOR_SYMBOL_LETTER_O,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterP => REGIONAL_INDICATOR_SYMBOL_LETTER_P,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterQ => REGIONAL_INDICATOR_SYMBOL_LETTER_Q,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterR => REGIONAL_INDICATOR_SYMBOL_LETTER_R,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterS => REGIONAL_INDICATOR_SYMBOL_LETTER_S,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterT => REGIONAL_INDICATOR_SYMBOL_LETTER_T,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterU => REGIONAL_INDICATOR_SYMBOL_LETTER_U,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterV => REGIONAL_INDICATOR_SYMBOL_LETTER_V,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterW => REGIONAL_INDICATOR_SYMBOL_LETTER_W,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterX => REGIONAL_INDICATOR_SYMBOL_LETTER_X,
-            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterY => REGIONAL_INDICATOR_SYMBOL_LETTER_Y,
+            EnclosedAlphanumericSupplement::DigitZeroFullStop => '🄀',
+            EnclosedAlphanumericSupplement::DigitZeroComma => '🄁',
+            EnclosedAlphanumericSupplement::DigitOneComma => '🄂',
+            EnclosedAlphanumericSupplement::DigitTwoComma => '🄃',
+            EnclosedAlphanumericSupplement::DigitThreeComma => '🄄',
+            EnclosedAlphanumericSupplement::DigitFourComma => '🄅',
+            EnclosedAlphanumericSupplement::DigitFiveComma => '🄆',
+            EnclosedAlphanumericSupplement::DigitSixComma => '🄇',
+            EnclosedAlphanumericSupplement::DigitSevenComma => '🄈',
+            EnclosedAlphanumericSupplement::DigitEightComma => '🄉',
+            EnclosedAlphanumericSupplement::DigitNineComma => '🄊',
+            EnclosedAlphanumericSupplement::DingbatCircledSansDashSerifDigitZero => '🄋',
+            EnclosedAlphanumericSupplement::DingbatNegativeCircledSansDashSerifDigitZero => '🄌',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterA => '🄐',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterB => '🄑',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterC => '🄒',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterD => '🄓',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterE => '🄔',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterF => '🄕',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterG => '🄖',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterH => '🄗',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterI => '🄘',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterJ => '🄙',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterK => '🄚',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterL => '🄛',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterM => '🄜',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterN => '🄝',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterO => '🄞',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterP => '🄟',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterQ => '🄠',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterR => '🄡',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterS => '🄢',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterT => '🄣',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterU => '🄤',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterV => '🄥',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterW => '🄦',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterX => '🄧',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterY => '🄨',
+            EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterZ => '🄩',
+            EnclosedAlphanumericSupplement::TortoiseShellBracketedLatinCapitalLetterS => '🄪',
+            EnclosedAlphanumericSupplement::CircledItalicLatinCapitalLetterC => '🄫',
+            EnclosedAlphanumericSupplement::CircledItalicLatinCapitalLetterR => '🄬',
+            EnclosedAlphanumericSupplement::CircledCd => '🄭',
+            EnclosedAlphanumericSupplement::CircledWz => '🄮',
+            EnclosedAlphanumericSupplement::CopyleftSymbol => '🄯',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterA => '🄰',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterB => '🄱',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterC => '🄲',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterD => '🄳',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterE => '🄴',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterF => '🄵',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterG => '🄶',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterH => '🄷',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterI => '🄸',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterJ => '🄹',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterK => '🄺',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterL => '🄻',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterM => '🄼',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterN => '🄽',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterO => '🄾',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterP => '🄿',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterQ => '🅀',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterR => '🅁',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterS => '🅂',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterT => '🅃',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterU => '🅄',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterV => '🅅',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterW => '🅆',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterX => '🅇',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterY => '🅈',
+            EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterZ => '🅉',
+            EnclosedAlphanumericSupplement::SquaredHv => '🅊',
+            EnclosedAlphanumericSupplement::SquaredMv => '🅋',
+            EnclosedAlphanumericSupplement::SquaredSd => '🅌',
+            EnclosedAlphanumericSupplement::SquaredSs => '🅍',
+            EnclosedAlphanumericSupplement::SquaredPpv => '🅎',
+            EnclosedAlphanumericSupplement::SquaredWc => '🅏',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterA => '🅐',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterB => '🅑',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterC => '🅒',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterD => '🅓',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterE => '🅔',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterF => '🅕',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterG => '🅖',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterH => '🅗',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterI => '🅘',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterJ => '🅙',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterK => '🅚',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterL => '🅛',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterM => '🅜',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterN => '🅝',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterO => '🅞',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterP => '🅟',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterQ => '🅠',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterR => '🅡',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterS => '🅢',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterT => '🅣',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterU => '🅤',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterV => '🅥',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterW => '🅦',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterX => '🅧',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterY => '🅨',
+            EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterZ => '🅩',
+            EnclosedAlphanumericSupplement::RaisedMcSign => '🅪',
+            EnclosedAlphanumericSupplement::RaisedMdSign => '🅫',
+            EnclosedAlphanumericSupplement::RaisedMrSign => '🅬',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterA => '🅰',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterB => '🅱',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterC => '🅲',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterD => '🅳',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterE => '🅴',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterF => '🅵',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterG => '🅶',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterH => '🅷',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterI => '🅸',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterJ => '🅹',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterK => '🅺',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterL => '🅻',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterM => '🅼',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterN => '🅽',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterO => '🅾',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterP => '🅿',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterQ => '🆀',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterR => '🆁',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterS => '🆂',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterT => '🆃',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterU => '🆄',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterV => '🆅',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterW => '🆆',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterX => '🆇',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterY => '🆈',
+            EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterZ => '🆉',
+            EnclosedAlphanumericSupplement::CrossedNegativeSquaredLatinCapitalLetterP => '🆊',
+            EnclosedAlphanumericSupplement::NegativeSquaredIc => '🆋',
+            EnclosedAlphanumericSupplement::NegativeSquaredPa => '🆌',
+            EnclosedAlphanumericSupplement::NegativeSquaredSa => '🆍',
+            EnclosedAlphanumericSupplement::NegativeSquaredAb => '🆎',
+            EnclosedAlphanumericSupplement::NegativeSquaredWc => '🆏',
+            EnclosedAlphanumericSupplement::SquareDj => '🆐',
+            EnclosedAlphanumericSupplement::SquaredCl => '🆑',
+            EnclosedAlphanumericSupplement::SquaredCool => '🆒',
+            EnclosedAlphanumericSupplement::SquaredFree => '🆓',
+            EnclosedAlphanumericSupplement::SquaredId => '🆔',
+            EnclosedAlphanumericSupplement::SquaredNew => '🆕',
+            EnclosedAlphanumericSupplement::SquaredNg => '🆖',
+            EnclosedAlphanumericSupplement::SquaredOk => '🆗',
+            EnclosedAlphanumericSupplement::SquaredSos => '🆘',
+            EnclosedAlphanumericSupplement::SquaredUpWithExclamationMark => '🆙',
+            EnclosedAlphanumericSupplement::SquaredVs => '🆚',
+            EnclosedAlphanumericSupplement::SquaredThreeD => '🆛',
+            EnclosedAlphanumericSupplement::SquaredSecondScreen => '🆜',
+            EnclosedAlphanumericSupplement::SquaredTwoK => '🆝',
+            EnclosedAlphanumericSupplement::SquaredFourK => '🆞',
+            EnclosedAlphanumericSupplement::SquaredEightK => '🆟',
+            EnclosedAlphanumericSupplement::SquaredFivePointOne => '🆠',
+            EnclosedAlphanumericSupplement::SquaredSevenPointOne => '🆡',
+            EnclosedAlphanumericSupplement::SquaredTwentyDashTwoPointTwo => '🆢',
+            EnclosedAlphanumericSupplement::SquaredSixtyP => '🆣',
+            EnclosedAlphanumericSupplement::SquaredOneHundredTwentyP => '🆤',
+            EnclosedAlphanumericSupplement::SquaredLatinSmallLetterD => '🆥',
+            EnclosedAlphanumericSupplement::SquaredHc => '🆦',
+            EnclosedAlphanumericSupplement::SquaredHdr => '🆧',
+            EnclosedAlphanumericSupplement::SquaredHiDashRes => '🆨',
+            EnclosedAlphanumericSupplement::SquaredLossless => '🆩',
+            EnclosedAlphanumericSupplement::SquaredShv => '🆪',
+            EnclosedAlphanumericSupplement::SquaredUhd => '🆫',
+            EnclosedAlphanumericSupplement::SquaredVod => '🆬',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterA => '🇦',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterB => '🇧',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterC => '🇨',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterD => '🇩',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterE => '🇪',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterF => '🇫',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterG => '🇬',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterH => '🇭',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterI => '🇮',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterJ => '🇯',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterK => '🇰',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterL => '🇱',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterM => '🇲',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterN => '🇳',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterO => '🇴',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterP => '🇵',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterQ => '🇶',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterR => '🇷',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterS => '🇸',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterT => '🇹',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterU => '🇺',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterV => '🇻',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterW => '🇼',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterX => '🇽',
+            EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterY => '🇾',
         }
     }
 }
@@ -978,200 +590,199 @@ impl Into<char> for EnclosedAlphanumericSupplement {
 impl std::convert::TryFrom<char> for EnclosedAlphanumericSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            DIGIT_ZERO_FULL_STOP => Ok(EnclosedAlphanumericSupplement::DigitZeroFullStop),
-            DIGIT_ZERO_COMMA => Ok(EnclosedAlphanumericSupplement::DigitZeroComma),
-            DIGIT_ONE_COMMA => Ok(EnclosedAlphanumericSupplement::DigitOneComma),
-            DIGIT_TWO_COMMA => Ok(EnclosedAlphanumericSupplement::DigitTwoComma),
-            DIGIT_THREE_COMMA => Ok(EnclosedAlphanumericSupplement::DigitThreeComma),
-            DIGIT_FOUR_COMMA => Ok(EnclosedAlphanumericSupplement::DigitFourComma),
-            DIGIT_FIVE_COMMA => Ok(EnclosedAlphanumericSupplement::DigitFiveComma),
-            DIGIT_SIX_COMMA => Ok(EnclosedAlphanumericSupplement::DigitSixComma),
-            DIGIT_SEVEN_COMMA => Ok(EnclosedAlphanumericSupplement::DigitSevenComma),
-            DIGIT_EIGHT_COMMA => Ok(EnclosedAlphanumericSupplement::DigitEightComma),
-            DIGIT_NINE_COMMA => Ok(EnclosedAlphanumericSupplement::DigitNineComma),
-            DINGBAT_CIRCLED_SANS_DASH_SERIF_DIGIT_ZERO => Ok(EnclosedAlphanumericSupplement::DingbatCircledSansDashSerifDigitZero),
-            DINGBAT_NEGATIVE_CIRCLED_SANS_DASH_SERIF_DIGIT_ZERO => Ok(EnclosedAlphanumericSupplement::DingbatNegativeCircledSansDashSerifDigitZero),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_A => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterA),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_B => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterB),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_C => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterC),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_D => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterD),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_E => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterE),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_F => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterF),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_G => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterG),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_H => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterH),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_I => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterI),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_J => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterJ),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_K => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterK),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_L => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterL),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_M => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterM),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_N => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterN),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_O => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterO),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_P => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterP),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_Q => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterQ),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_R => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterR),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_S => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterS),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_T => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterT),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_U => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterU),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_V => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterV),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_W => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterW),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_X => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterX),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_Y => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterY),
-            PARENTHESIZED_LATIN_CAPITAL_LETTER_Z => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterZ),
-            TORTOISE_SHELL_BRACKETED_LATIN_CAPITAL_LETTER_S => Ok(EnclosedAlphanumericSupplement::TortoiseShellBracketedLatinCapitalLetterS),
-            CIRCLED_ITALIC_LATIN_CAPITAL_LETTER_C => Ok(EnclosedAlphanumericSupplement::CircledItalicLatinCapitalLetterC),
-            CIRCLED_ITALIC_LATIN_CAPITAL_LETTER_R => Ok(EnclosedAlphanumericSupplement::CircledItalicLatinCapitalLetterR),
-            CIRCLED_CD => Ok(EnclosedAlphanumericSupplement::CircledCd),
-            CIRCLED_WZ => Ok(EnclosedAlphanumericSupplement::CircledWz),
-            COPYLEFT_SYMBOL => Ok(EnclosedAlphanumericSupplement::CopyleftSymbol),
-            SQUARED_LATIN_CAPITAL_LETTER_A => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterA),
-            SQUARED_LATIN_CAPITAL_LETTER_B => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterB),
-            SQUARED_LATIN_CAPITAL_LETTER_C => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterC),
-            SQUARED_LATIN_CAPITAL_LETTER_D => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterD),
-            SQUARED_LATIN_CAPITAL_LETTER_E => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterE),
-            SQUARED_LATIN_CAPITAL_LETTER_F => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterF),
-            SQUARED_LATIN_CAPITAL_LETTER_G => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterG),
-            SQUARED_LATIN_CAPITAL_LETTER_H => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterH),
-            SQUARED_LATIN_CAPITAL_LETTER_I => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterI),
-            SQUARED_LATIN_CAPITAL_LETTER_J => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterJ),
-            SQUARED_LATIN_CAPITAL_LETTER_K => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterK),
-            SQUARED_LATIN_CAPITAL_LETTER_L => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterL),
-            SQUARED_LATIN_CAPITAL_LETTER_M => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterM),
-            SQUARED_LATIN_CAPITAL_LETTER_N => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterN),
-            SQUARED_LATIN_CAPITAL_LETTER_O => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterO),
-            SQUARED_LATIN_CAPITAL_LETTER_P => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterP),
-            SQUARED_LATIN_CAPITAL_LETTER_Q => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterQ),
-            SQUARED_LATIN_CAPITAL_LETTER_R => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterR),
-            SQUARED_LATIN_CAPITAL_LETTER_S => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterS),
-            SQUARED_LATIN_CAPITAL_LETTER_T => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterT),
-            SQUARED_LATIN_CAPITAL_LETTER_U => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterU),
-            SQUARED_LATIN_CAPITAL_LETTER_V => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterV),
-            SQUARED_LATIN_CAPITAL_LETTER_W => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterW),
-            SQUARED_LATIN_CAPITAL_LETTER_X => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterX),
-            SQUARED_LATIN_CAPITAL_LETTER_Y => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterY),
-            SQUARED_LATIN_CAPITAL_LETTER_Z => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterZ),
-            SQUARED_HV => Ok(EnclosedAlphanumericSupplement::SquaredHv),
-            SQUARED_MV => Ok(EnclosedAlphanumericSupplement::SquaredMv),
-            SQUARED_SD => Ok(EnclosedAlphanumericSupplement::SquaredSd),
-            SQUARED_SS => Ok(EnclosedAlphanumericSupplement::SquaredSs),
-            SQUARED_PPV => Ok(EnclosedAlphanumericSupplement::SquaredPpv),
-            SQUARED_WC => Ok(EnclosedAlphanumericSupplement::SquaredWc),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_A => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterA),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_B => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterB),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_C => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterC),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_D => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterD),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_E => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterE),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_F => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterF),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_G => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterG),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_H => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterH),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_I => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterI),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_J => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterJ),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_K => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterK),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_L => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterL),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_M => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterM),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_N => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterN),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_O => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterO),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_P => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterP),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_Q => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterQ),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_R => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterR),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_S => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterS),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_T => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterT),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_U => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterU),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_V => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterV),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_W => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterW),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_X => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterX),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_Y => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterY),
-            NEGATIVE_CIRCLED_LATIN_CAPITAL_LETTER_Z => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterZ),
-            RAISED_MC_SIGN => Ok(EnclosedAlphanumericSupplement::RaisedMcSign),
-            RAISED_MD_SIGN => Ok(EnclosedAlphanumericSupplement::RaisedMdSign),
-            RAISED_MR_SIGN => Ok(EnclosedAlphanumericSupplement::RaisedMrSign),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_A => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterA),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_B => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterB),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_C => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterC),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_D => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterD),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_E => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterE),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_F => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterF),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_G => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterG),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_H => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterH),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_I => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterI),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_J => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterJ),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_K => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterK),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_L => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterL),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_M => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterM),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_N => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterN),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_O => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterO),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_P => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterP),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_Q => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterQ),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_R => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterR),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_S => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterS),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_T => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterT),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_U => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterU),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_V => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterV),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_W => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterW),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_X => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterX),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_Y => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterY),
-            NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_Z => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterZ),
-            CROSSED_NEGATIVE_SQUARED_LATIN_CAPITAL_LETTER_P => Ok(EnclosedAlphanumericSupplement::CrossedNegativeSquaredLatinCapitalLetterP),
-            NEGATIVE_SQUARED_IC => Ok(EnclosedAlphanumericSupplement::NegativeSquaredIc),
-            NEGATIVE_SQUARED_PA => Ok(EnclosedAlphanumericSupplement::NegativeSquaredPa),
-            NEGATIVE_SQUARED_SA => Ok(EnclosedAlphanumericSupplement::NegativeSquaredSa),
-            NEGATIVE_SQUARED_AB => Ok(EnclosedAlphanumericSupplement::NegativeSquaredAb),
-            NEGATIVE_SQUARED_WC => Ok(EnclosedAlphanumericSupplement::NegativeSquaredWc),
-            SQUARE_DJ => Ok(EnclosedAlphanumericSupplement::SquareDj),
-            SQUARED_CL => Ok(EnclosedAlphanumericSupplement::SquaredCl),
-            SQUARED_COOL => Ok(EnclosedAlphanumericSupplement::SquaredCool),
-            SQUARED_FREE => Ok(EnclosedAlphanumericSupplement::SquaredFree),
-            SQUARED_ID => Ok(EnclosedAlphanumericSupplement::SquaredId),
-            SQUARED_NEW => Ok(EnclosedAlphanumericSupplement::SquaredNew),
-            SQUARED_NG => Ok(EnclosedAlphanumericSupplement::SquaredNg),
-            SQUARED_OK => Ok(EnclosedAlphanumericSupplement::SquaredOk),
-            SQUARED_SOS => Ok(EnclosedAlphanumericSupplement::SquaredSos),
-            SQUARED_UP_WITH_EXCLAMATION_MARK => Ok(EnclosedAlphanumericSupplement::SquaredUpWithExclamationMark),
-            SQUARED_VS => Ok(EnclosedAlphanumericSupplement::SquaredVs),
-            SQUARED_THREE_D => Ok(EnclosedAlphanumericSupplement::SquaredThreeD),
-            SQUARED_SECOND_SCREEN => Ok(EnclosedAlphanumericSupplement::SquaredSecondScreen),
-            SQUARED_TWO_K => Ok(EnclosedAlphanumericSupplement::SquaredTwoK),
-            SQUARED_FOUR_K => Ok(EnclosedAlphanumericSupplement::SquaredFourK),
-            SQUARED_EIGHT_K => Ok(EnclosedAlphanumericSupplement::SquaredEightK),
-            SQUARED_FIVE_POINT_ONE => Ok(EnclosedAlphanumericSupplement::SquaredFivePointOne),
-            SQUARED_SEVEN_POINT_ONE => Ok(EnclosedAlphanumericSupplement::SquaredSevenPointOne),
-            SQUARED_TWENTY_DASH_TWO_POINT_TWO => Ok(EnclosedAlphanumericSupplement::SquaredTwentyDashTwoPointTwo),
-            SQUARED_SIXTY_P => Ok(EnclosedAlphanumericSupplement::SquaredSixtyP),
-            SQUARED_ONE_HUNDRED_TWENTY_P => Ok(EnclosedAlphanumericSupplement::SquaredOneHundredTwentyP),
-            SQUARED_LATIN_SMALL_LETTER_D => Ok(EnclosedAlphanumericSupplement::SquaredLatinSmallLetterD),
-            SQUARED_HC => Ok(EnclosedAlphanumericSupplement::SquaredHc),
-            SQUARED_HDR => Ok(EnclosedAlphanumericSupplement::SquaredHdr),
-            SQUARED_HI_DASH_RES => Ok(EnclosedAlphanumericSupplement::SquaredHiDashRes),
-            SQUARED_LOSSLESS => Ok(EnclosedAlphanumericSupplement::SquaredLossless),
-            SQUARED_SHV => Ok(EnclosedAlphanumericSupplement::SquaredShv),
-            SQUARED_UHD => Ok(EnclosedAlphanumericSupplement::SquaredUhd),
-            SQUARED_VOD => Ok(EnclosedAlphanumericSupplement::SquaredVod),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_A => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterA),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_B => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterB),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_C => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterC),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_D => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterD),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_E => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterE),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_F => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterF),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_G => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterG),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_H => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterH),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_I => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterI),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_J => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterJ),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_K => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterK),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_L => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterL),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_M => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterM),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_N => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterN),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_O => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterO),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_P => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterP),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_Q => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterQ),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_R => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterR),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_S => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterS),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_T => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterT),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_U => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterU),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_V => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterV),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_W => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterW),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_X => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterX),
-            REGIONAL_INDICATOR_SYMBOL_LETTER_Y => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterY),
+            '🄀' => Ok(EnclosedAlphanumericSupplement::DigitZeroFullStop),
+            '🄁' => Ok(EnclosedAlphanumericSupplement::DigitZeroComma),
+            '🄂' => Ok(EnclosedAlphanumericSupplement::DigitOneComma),
+            '🄃' => Ok(EnclosedAlphanumericSupplement::DigitTwoComma),
+            '🄄' => Ok(EnclosedAlphanumericSupplement::DigitThreeComma),
+            '🄅' => Ok(EnclosedAlphanumericSupplement::DigitFourComma),
+            '🄆' => Ok(EnclosedAlphanumericSupplement::DigitFiveComma),
+            '🄇' => Ok(EnclosedAlphanumericSupplement::DigitSixComma),
+            '🄈' => Ok(EnclosedAlphanumericSupplement::DigitSevenComma),
+            '🄉' => Ok(EnclosedAlphanumericSupplement::DigitEightComma),
+            '🄊' => Ok(EnclosedAlphanumericSupplement::DigitNineComma),
+            '🄋' => Ok(EnclosedAlphanumericSupplement::DingbatCircledSansDashSerifDigitZero),
+            '🄌' => Ok(EnclosedAlphanumericSupplement::DingbatNegativeCircledSansDashSerifDigitZero),
+            '🄐' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterA),
+            '🄑' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterB),
+            '🄒' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterC),
+            '🄓' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterD),
+            '🄔' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterE),
+            '🄕' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterF),
+            '🄖' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterG),
+            '🄗' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterH),
+            '🄘' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterI),
+            '🄙' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterJ),
+            '🄚' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterK),
+            '🄛' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterL),
+            '🄜' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterM),
+            '🄝' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterN),
+            '🄞' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterO),
+            '🄟' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterP),
+            '🄠' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterQ),
+            '🄡' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterR),
+            '🄢' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterS),
+            '🄣' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterT),
+            '🄤' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterU),
+            '🄥' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterV),
+            '🄦' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterW),
+            '🄧' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterX),
+            '🄨' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterY),
+            '🄩' => Ok(EnclosedAlphanumericSupplement::ParenthesizedLatinCapitalLetterZ),
+            '🄪' => Ok(EnclosedAlphanumericSupplement::TortoiseShellBracketedLatinCapitalLetterS),
+            '🄫' => Ok(EnclosedAlphanumericSupplement::CircledItalicLatinCapitalLetterC),
+            '🄬' => Ok(EnclosedAlphanumericSupplement::CircledItalicLatinCapitalLetterR),
+            '🄭' => Ok(EnclosedAlphanumericSupplement::CircledCd),
+            '🄮' => Ok(EnclosedAlphanumericSupplement::CircledWz),
+            '🄯' => Ok(EnclosedAlphanumericSupplement::CopyleftSymbol),
+            '🄰' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterA),
+            '🄱' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterB),
+            '🄲' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterC),
+            '🄳' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterD),
+            '🄴' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterE),
+            '🄵' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterF),
+            '🄶' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterG),
+            '🄷' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterH),
+            '🄸' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterI),
+            '🄹' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterJ),
+            '🄺' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterK),
+            '🄻' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterL),
+            '🄼' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterM),
+            '🄽' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterN),
+            '🄾' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterO),
+            '🄿' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterP),
+            '🅀' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterQ),
+            '🅁' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterR),
+            '🅂' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterS),
+            '🅃' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterT),
+            '🅄' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterU),
+            '🅅' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterV),
+            '🅆' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterW),
+            '🅇' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterX),
+            '🅈' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterY),
+            '🅉' => Ok(EnclosedAlphanumericSupplement::SquaredLatinCapitalLetterZ),
+            '🅊' => Ok(EnclosedAlphanumericSupplement::SquaredHv),
+            '🅋' => Ok(EnclosedAlphanumericSupplement::SquaredMv),
+            '🅌' => Ok(EnclosedAlphanumericSupplement::SquaredSd),
+            '🅍' => Ok(EnclosedAlphanumericSupplement::SquaredSs),
+            '🅎' => Ok(EnclosedAlphanumericSupplement::SquaredPpv),
+            '🅏' => Ok(EnclosedAlphanumericSupplement::SquaredWc),
+            '🅐' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterA),
+            '🅑' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterB),
+            '🅒' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterC),
+            '🅓' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterD),
+            '🅔' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterE),
+            '🅕' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterF),
+            '🅖' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterG),
+            '🅗' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterH),
+            '🅘' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterI),
+            '🅙' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterJ),
+            '🅚' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterK),
+            '🅛' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterL),
+            '🅜' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterM),
+            '🅝' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterN),
+            '🅞' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterO),
+            '🅟' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterP),
+            '🅠' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterQ),
+            '🅡' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterR),
+            '🅢' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterS),
+            '🅣' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterT),
+            '🅤' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterU),
+            '🅥' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterV),
+            '🅦' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterW),
+            '🅧' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterX),
+            '🅨' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterY),
+            '🅩' => Ok(EnclosedAlphanumericSupplement::NegativeCircledLatinCapitalLetterZ),
+            '🅪' => Ok(EnclosedAlphanumericSupplement::RaisedMcSign),
+            '🅫' => Ok(EnclosedAlphanumericSupplement::RaisedMdSign),
+            '🅬' => Ok(EnclosedAlphanumericSupplement::RaisedMrSign),
+            '🅰' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterA),
+            '🅱' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterB),
+            '🅲' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterC),
+            '🅳' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterD),
+            '🅴' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterE),
+            '🅵' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterF),
+            '🅶' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterG),
+            '🅷' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterH),
+            '🅸' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterI),
+            '🅹' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterJ),
+            '🅺' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterK),
+            '🅻' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterL),
+            '🅼' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterM),
+            '🅽' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterN),
+            '🅾' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterO),
+            '🅿' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterP),
+            '🆀' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterQ),
+            '🆁' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterR),
+            '🆂' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterS),
+            '🆃' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterT),
+            '🆄' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterU),
+            '🆅' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterV),
+            '🆆' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterW),
+            '🆇' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterX),
+            '🆈' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterY),
+            '🆉' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredLatinCapitalLetterZ),
+            '🆊' => Ok(EnclosedAlphanumericSupplement::CrossedNegativeSquaredLatinCapitalLetterP),
+            '🆋' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredIc),
+            '🆌' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredPa),
+            '🆍' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredSa),
+            '🆎' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredAb),
+            '🆏' => Ok(EnclosedAlphanumericSupplement::NegativeSquaredWc),
+            '🆐' => Ok(EnclosedAlphanumericSupplement::SquareDj),
+            '🆑' => Ok(EnclosedAlphanumericSupplement::SquaredCl),
+            '🆒' => Ok(EnclosedAlphanumericSupplement::SquaredCool),
+            '🆓' => Ok(EnclosedAlphanumericSupplement::SquaredFree),
+            '🆔' => Ok(EnclosedAlphanumericSupplement::SquaredId),
+            '🆕' => Ok(EnclosedAlphanumericSupplement::SquaredNew),
+            '🆖' => Ok(EnclosedAlphanumericSupplement::SquaredNg),
+            '🆗' => Ok(EnclosedAlphanumericSupplement::SquaredOk),
+            '🆘' => Ok(EnclosedAlphanumericSupplement::SquaredSos),
+            '🆙' => Ok(EnclosedAlphanumericSupplement::SquaredUpWithExclamationMark),
+            '🆚' => Ok(EnclosedAlphanumericSupplement::SquaredVs),
+            '🆛' => Ok(EnclosedAlphanumericSupplement::SquaredThreeD),
+            '🆜' => Ok(EnclosedAlphanumericSupplement::SquaredSecondScreen),
+            '🆝' => Ok(EnclosedAlphanumericSupplement::SquaredTwoK),
+            '🆞' => Ok(EnclosedAlphanumericSupplement::SquaredFourK),
+            '🆟' => Ok(EnclosedAlphanumericSupplement::SquaredEightK),
+            '🆠' => Ok(EnclosedAlphanumericSupplement::SquaredFivePointOne),
+            '🆡' => Ok(EnclosedAlphanumericSupplement::SquaredSevenPointOne),
+            '🆢' => Ok(EnclosedAlphanumericSupplement::SquaredTwentyDashTwoPointTwo),
+            '🆣' => Ok(EnclosedAlphanumericSupplement::SquaredSixtyP),
+            '🆤' => Ok(EnclosedAlphanumericSupplement::SquaredOneHundredTwentyP),
+            '🆥' => Ok(EnclosedAlphanumericSupplement::SquaredLatinSmallLetterD),
+            '🆦' => Ok(EnclosedAlphanumericSupplement::SquaredHc),
+            '🆧' => Ok(EnclosedAlphanumericSupplement::SquaredHdr),
+            '🆨' => Ok(EnclosedAlphanumericSupplement::SquaredHiDashRes),
+            '🆩' => Ok(EnclosedAlphanumericSupplement::SquaredLossless),
+            '🆪' => Ok(EnclosedAlphanumericSupplement::SquaredShv),
+            '🆫' => Ok(EnclosedAlphanumericSupplement::SquaredUhd),
+            '🆬' => Ok(EnclosedAlphanumericSupplement::SquaredVod),
+            '🇦' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterA),
+            '🇧' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterB),
+            '🇨' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterC),
+            '🇩' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterD),
+            '🇪' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterE),
+            '🇫' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterF),
+            '🇬' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterG),
+            '🇭' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterH),
+            '🇮' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterI),
+            '🇯' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterJ),
+            '🇰' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterK),
+            '🇱' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterL),
+            '🇲' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterM),
+            '🇳' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterN),
+            '🇴' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterO),
+            '🇵' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterP),
+            '🇶' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterQ),
+            '🇷' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterR),
+            '🇸' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterS),
+            '🇹' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterT),
+            '🇺' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterU),
+            '🇻' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterV),
+            '🇼' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterW),
+            '🇽' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterX),
+            '🇾' => Ok(EnclosedAlphanumericSupplement::RegionalIndicatorSymbolLetterY),
             _ => Err(()),
         }
     }

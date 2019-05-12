@@ -1,14 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1bca0}: '𛲠'
-    pub const SHORTHAND_FORMAT_LETTER_OVERLAP: char = '𛲠';
-    /// \u{1bca1}: '𛲡'
-    pub const SHORTHAND_FORMAT_CONTINUING_OVERLAP: char = '𛲡';
-    /// \u{1bca2}: '𛲢'
-    pub const SHORTHAND_FORMAT_DOWN_STEP: char = '𛲢';
-    /// \u{1bca3}: '𛲣'
-    pub const SHORTHAND_FORMAT_UP_STEP: char = '𛲣';
-}
 
 /// An enum to represent all characters in the ShorthandFormatControls block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -25,12 +14,11 @@ pub enum ShorthandFormatControls {
 
 impl Into<char> for ShorthandFormatControls {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            ShorthandFormatControls::ShorthandFormatLetterOverlap => SHORTHAND_FORMAT_LETTER_OVERLAP,
-            ShorthandFormatControls::ShorthandFormatContinuingOverlap => SHORTHAND_FORMAT_CONTINUING_OVERLAP,
-            ShorthandFormatControls::ShorthandFormatDownStep => SHORTHAND_FORMAT_DOWN_STEP,
-            ShorthandFormatControls::ShorthandFormatUpStep => SHORTHAND_FORMAT_UP_STEP,
+            ShorthandFormatControls::ShorthandFormatLetterOverlap => '𛲠',
+            ShorthandFormatControls::ShorthandFormatContinuingOverlap => '𛲡',
+            ShorthandFormatControls::ShorthandFormatDownStep => '𛲢',
+            ShorthandFormatControls::ShorthandFormatUpStep => '𛲣',
         }
     }
 }
@@ -38,12 +26,11 @@ impl Into<char> for ShorthandFormatControls {
 impl std::convert::TryFrom<char> for ShorthandFormatControls {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SHORTHAND_FORMAT_LETTER_OVERLAP => Ok(ShorthandFormatControls::ShorthandFormatLetterOverlap),
-            SHORTHAND_FORMAT_CONTINUING_OVERLAP => Ok(ShorthandFormatControls::ShorthandFormatContinuingOverlap),
-            SHORTHAND_FORMAT_DOWN_STEP => Ok(ShorthandFormatControls::ShorthandFormatDownStep),
-            SHORTHAND_FORMAT_UP_STEP => Ok(ShorthandFormatControls::ShorthandFormatUpStep),
+            '𛲠' => Ok(ShorthandFormatControls::ShorthandFormatLetterOverlap),
+            '𛲡' => Ok(ShorthandFormatControls::ShorthandFormatContinuingOverlap),
+            '𛲢' => Ok(ShorthandFormatControls::ShorthandFormatDownStep),
+            '𛲣' => Ok(ShorthandFormatControls::ShorthandFormatUpStep),
             _ => Err(()),
         }
     }

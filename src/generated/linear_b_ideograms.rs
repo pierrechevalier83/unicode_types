@@ -1,252 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10080}: '𐂀'
-    pub const LINEAR_B_IDEOGRAM_B100_MAN: char = '𐂀';
-    /// \u{10081}: '𐂁'
-    pub const LINEAR_B_IDEOGRAM_B102_WOMAN: char = '𐂁';
-    /// \u{10082}: '𐂂'
-    pub const LINEAR_B_IDEOGRAM_B104_DEER: char = '𐂂';
-    /// \u{10083}: '𐂃'
-    pub const LINEAR_B_IDEOGRAM_B105_EQUID: char = '𐂃';
-    /// \u{10084}: '𐂄'
-    pub const LINEAR_B_IDEOGRAM_B105F_MARE: char = '𐂄';
-    /// \u{10085}: '𐂅'
-    pub const LINEAR_B_IDEOGRAM_B105M_STALLION: char = '𐂅';
-    /// \u{10086}: '𐂆'
-    pub const LINEAR_B_IDEOGRAM_B106F_EWE: char = '𐂆';
-    /// \u{10087}: '𐂇'
-    pub const LINEAR_B_IDEOGRAM_B106M_RAM: char = '𐂇';
-    /// \u{10088}: '𐂈'
-    pub const LINEAR_B_IDEOGRAM_B107F_SHE_DASH_GOAT: char = '𐂈';
-    /// \u{10089}: '𐂉'
-    pub const LINEAR_B_IDEOGRAM_B107M_HE_DASH_GOAT: char = '𐂉';
-    /// \u{1008a}: '𐂊'
-    pub const LINEAR_B_IDEOGRAM_B108F_SOW: char = '𐂊';
-    /// \u{1008b}: '𐂋'
-    pub const LINEAR_B_IDEOGRAM_B108M_BOAR: char = '𐂋';
-    /// \u{1008c}: '𐂌'
-    pub const LINEAR_B_IDEOGRAM_B109F_COW: char = '𐂌';
-    /// \u{1008d}: '𐂍'
-    pub const LINEAR_B_IDEOGRAM_B109M_BULL: char = '𐂍';
-    /// \u{1008e}: '𐂎'
-    pub const LINEAR_B_IDEOGRAM_B120_WHEAT: char = '𐂎';
-    /// \u{1008f}: '𐂏'
-    pub const LINEAR_B_IDEOGRAM_B121_BARLEY: char = '𐂏';
-    /// \u{10090}: '𐂐'
-    pub const LINEAR_B_IDEOGRAM_B122_OLIVE: char = '𐂐';
-    /// \u{10091}: '𐂑'
-    pub const LINEAR_B_IDEOGRAM_B123_SPICE: char = '𐂑';
-    /// \u{10092}: '𐂒'
-    pub const LINEAR_B_IDEOGRAM_B125_CYPERUS: char = '𐂒';
-    /// \u{10093}: '𐂓'
-    pub const LINEAR_B_MONOGRAM_B127_KAPO: char = '𐂓';
-    /// \u{10094}: '𐂔'
-    pub const LINEAR_B_MONOGRAM_B128_KANAKO: char = '𐂔';
-    /// \u{10095}: '𐂕'
-    pub const LINEAR_B_IDEOGRAM_B130_OIL: char = '𐂕';
-    /// \u{10096}: '𐂖'
-    pub const LINEAR_B_IDEOGRAM_B131_WINE: char = '𐂖';
-    /// \u{10097}: '𐂗'
-    pub const LINEAR_B_IDEOGRAM_B132: char = '𐂗';
-    /// \u{10098}: '𐂘'
-    pub const LINEAR_B_MONOGRAM_B133_AREPA: char = '𐂘';
-    /// \u{10099}: '𐂙'
-    pub const LINEAR_B_MONOGRAM_B135_MERI: char = '𐂙';
-    /// \u{1009a}: '𐂚'
-    pub const LINEAR_B_IDEOGRAM_B140_BRONZE: char = '𐂚';
-    /// \u{1009b}: '𐂛'
-    pub const LINEAR_B_IDEOGRAM_B141_GOLD: char = '𐂛';
-    /// \u{1009c}: '𐂜'
-    pub const LINEAR_B_IDEOGRAM_B142: char = '𐂜';
-    /// \u{1009d}: '𐂝'
-    pub const LINEAR_B_IDEOGRAM_B145_WOOL: char = '𐂝';
-    /// \u{1009e}: '𐂞'
-    pub const LINEAR_B_IDEOGRAM_B146: char = '𐂞';
-    /// \u{1009f}: '𐂟'
-    pub const LINEAR_B_IDEOGRAM_B150: char = '𐂟';
-    /// \u{100a0}: '𐂠'
-    pub const LINEAR_B_IDEOGRAM_B151_HORN: char = '𐂠';
-    /// \u{100a1}: '𐂡'
-    pub const LINEAR_B_IDEOGRAM_B152: char = '𐂡';
-    /// \u{100a2}: '𐂢'
-    pub const LINEAR_B_IDEOGRAM_B153: char = '𐂢';
-    /// \u{100a3}: '𐂣'
-    pub const LINEAR_B_IDEOGRAM_B154: char = '𐂣';
-    /// \u{100a4}: '𐂤'
-    pub const LINEAR_B_MONOGRAM_B156_TURO2: char = '𐂤';
-    /// \u{100a5}: '𐂥'
-    pub const LINEAR_B_IDEOGRAM_B157: char = '𐂥';
-    /// \u{100a6}: '𐂦'
-    pub const LINEAR_B_IDEOGRAM_B158: char = '𐂦';
-    /// \u{100a7}: '𐂧'
-    pub const LINEAR_B_IDEOGRAM_B159_CLOTH: char = '𐂧';
-    /// \u{100a8}: '𐂨'
-    pub const LINEAR_B_IDEOGRAM_B160: char = '𐂨';
-    /// \u{100a9}: '𐂩'
-    pub const LINEAR_B_IDEOGRAM_B161: char = '𐂩';
-    /// \u{100aa}: '𐂪'
-    pub const LINEAR_B_IDEOGRAM_B162_GARMENT: char = '𐂪';
-    /// \u{100ab}: '𐂫'
-    pub const LINEAR_B_IDEOGRAM_B163_ARMOUR: char = '𐂫';
-    /// \u{100ac}: '𐂬'
-    pub const LINEAR_B_IDEOGRAM_B164: char = '𐂬';
-    /// \u{100ad}: '𐂭'
-    pub const LINEAR_B_IDEOGRAM_B165: char = '𐂭';
-    /// \u{100ae}: '𐂮'
-    pub const LINEAR_B_IDEOGRAM_B166: char = '𐂮';
-    /// \u{100af}: '𐂯'
-    pub const LINEAR_B_IDEOGRAM_B167: char = '𐂯';
-    /// \u{100b0}: '𐂰'
-    pub const LINEAR_B_IDEOGRAM_B168: char = '𐂰';
-    /// \u{100b1}: '𐂱'
-    pub const LINEAR_B_IDEOGRAM_B169: char = '𐂱';
-    /// \u{100b2}: '𐂲'
-    pub const LINEAR_B_IDEOGRAM_B170: char = '𐂲';
-    /// \u{100b3}: '𐂳'
-    pub const LINEAR_B_IDEOGRAM_B171: char = '𐂳';
-    /// \u{100b4}: '𐂴'
-    pub const LINEAR_B_IDEOGRAM_B172: char = '𐂴';
-    /// \u{100b5}: '𐂵'
-    pub const LINEAR_B_IDEOGRAM_B173_MONTH: char = '𐂵';
-    /// \u{100b6}: '𐂶'
-    pub const LINEAR_B_IDEOGRAM_B174: char = '𐂶';
-    /// \u{100b7}: '𐂷'
-    pub const LINEAR_B_IDEOGRAM_B176_TREE: char = '𐂷';
-    /// \u{100b8}: '𐂸'
-    pub const LINEAR_B_IDEOGRAM_B177: char = '𐂸';
-    /// \u{100b9}: '𐂹'
-    pub const LINEAR_B_IDEOGRAM_B178: char = '𐂹';
-    /// \u{100ba}: '𐂺'
-    pub const LINEAR_B_IDEOGRAM_B179: char = '𐂺';
-    /// \u{100bb}: '𐂻'
-    pub const LINEAR_B_IDEOGRAM_B180: char = '𐂻';
-    /// \u{100bc}: '𐂼'
-    pub const LINEAR_B_IDEOGRAM_B181: char = '𐂼';
-    /// \u{100bd}: '𐂽'
-    pub const LINEAR_B_IDEOGRAM_B182: char = '𐂽';
-    /// \u{100be}: '𐂾'
-    pub const LINEAR_B_IDEOGRAM_B183: char = '𐂾';
-    /// \u{100bf}: '𐂿'
-    pub const LINEAR_B_IDEOGRAM_B184: char = '𐂿';
-    /// \u{100c0}: '𐃀'
-    pub const LINEAR_B_IDEOGRAM_B185: char = '𐃀';
-    /// \u{100c1}: '𐃁'
-    pub const LINEAR_B_IDEOGRAM_B189: char = '𐃁';
-    /// \u{100c2}: '𐃂'
-    pub const LINEAR_B_IDEOGRAM_B190: char = '𐃂';
-    /// \u{100c3}: '𐃃'
-    pub const LINEAR_B_IDEOGRAM_B191_HELMET: char = '𐃃';
-    /// \u{100c4}: '𐃄'
-    pub const LINEAR_B_IDEOGRAM_B220_FOOTSTOOL: char = '𐃄';
-    /// \u{100c5}: '𐃅'
-    pub const LINEAR_B_IDEOGRAM_B225_BATHTUB: char = '𐃅';
-    /// \u{100c6}: '𐃆'
-    pub const LINEAR_B_IDEOGRAM_B230_SPEAR: char = '𐃆';
-    /// \u{100c7}: '𐃇'
-    pub const LINEAR_B_IDEOGRAM_B231_ARROW: char = '𐃇';
-    /// \u{100c8}: '𐃈'
-    pub const LINEAR_B_IDEOGRAM_B232: char = '𐃈';
-    /// \u{100c9}: '𐃉'
-    pub const LINEAR_B_IDEOGRAM_B233_SWORD: char = '𐃉';
-    /// \u{100ca}: '𐃊'
-    pub const LINEAR_B_IDEOGRAM_B234: char = '𐃊';
-    /// \u{100cb}: '𐃋'
-    pub const LINEAR_B_IDEOGRAM_B236: char = '𐃋';
-    /// \u{100cc}: '𐃌'
-    pub const LINEAR_B_IDEOGRAM_B240_WHEELED_CHARIOT: char = '𐃌';
-    /// \u{100cd}: '𐃍'
-    pub const LINEAR_B_IDEOGRAM_B241_CHARIOT: char = '𐃍';
-    /// \u{100ce}: '𐃎'
-    pub const LINEAR_B_IDEOGRAM_B242_CHARIOT_FRAME: char = '𐃎';
-    /// \u{100cf}: '𐃏'
-    pub const LINEAR_B_IDEOGRAM_B243_WHEEL: char = '𐃏';
-    /// \u{100d0}: '𐃐'
-    pub const LINEAR_B_IDEOGRAM_B245: char = '𐃐';
-    /// \u{100d1}: '𐃑'
-    pub const LINEAR_B_IDEOGRAM_B246: char = '𐃑';
-    /// \u{100d2}: '𐃒'
-    pub const LINEAR_B_MONOGRAM_B247_DIPTE: char = '𐃒';
-    /// \u{100d3}: '𐃓'
-    pub const LINEAR_B_IDEOGRAM_B248: char = '𐃓';
-    /// \u{100d4}: '𐃔'
-    pub const LINEAR_B_IDEOGRAM_B249: char = '𐃔';
-    /// \u{100d5}: '𐃕'
-    pub const LINEAR_B_IDEOGRAM_B251: char = '𐃕';
-    /// \u{100d6}: '𐃖'
-    pub const LINEAR_B_IDEOGRAM_B252: char = '𐃖';
-    /// \u{100d7}: '𐃗'
-    pub const LINEAR_B_IDEOGRAM_B253: char = '𐃗';
-    /// \u{100d8}: '𐃘'
-    pub const LINEAR_B_IDEOGRAM_B254_DART: char = '𐃘';
-    /// \u{100d9}: '𐃙'
-    pub const LINEAR_B_IDEOGRAM_B255: char = '𐃙';
-    /// \u{100da}: '𐃚'
-    pub const LINEAR_B_IDEOGRAM_B256: char = '𐃚';
-    /// \u{100db}: '𐃛'
-    pub const LINEAR_B_IDEOGRAM_B257: char = '𐃛';
-    /// \u{100dc}: '𐃜'
-    pub const LINEAR_B_IDEOGRAM_B258: char = '𐃜';
-    /// \u{100dd}: '𐃝'
-    pub const LINEAR_B_IDEOGRAM_B259: char = '𐃝';
-    /// \u{100de}: '𐃞'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B155: char = '𐃞';
-    /// \u{100df}: '𐃟'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B200: char = '𐃟';
-    /// \u{100e0}: '𐃠'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B201: char = '𐃠';
-    /// \u{100e1}: '𐃡'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B202: char = '𐃡';
-    /// \u{100e2}: '𐃢'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B203: char = '𐃢';
-    /// \u{100e3}: '𐃣'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B204: char = '𐃣';
-    /// \u{100e4}: '𐃤'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B205: char = '𐃤';
-    /// \u{100e5}: '𐃥'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B206: char = '𐃥';
-    /// \u{100e6}: '𐃦'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B207: char = '𐃦';
-    /// \u{100e7}: '𐃧'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B208: char = '𐃧';
-    /// \u{100e8}: '𐃨'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B209: char = '𐃨';
-    /// \u{100e9}: '𐃩'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B210: char = '𐃩';
-    /// \u{100ea}: '𐃪'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B211: char = '𐃪';
-    /// \u{100eb}: '𐃫'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B212: char = '𐃫';
-    /// \u{100ec}: '𐃬'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B213: char = '𐃬';
-    /// \u{100ed}: '𐃭'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B214: char = '𐃭';
-    /// \u{100ee}: '𐃮'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B215: char = '𐃮';
-    /// \u{100ef}: '𐃯'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B216: char = '𐃯';
-    /// \u{100f0}: '𐃰'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B217: char = '𐃰';
-    /// \u{100f1}: '𐃱'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B218: char = '𐃱';
-    /// \u{100f2}: '𐃲'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B219: char = '𐃲';
-    /// \u{100f3}: '𐃳'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B221: char = '𐃳';
-    /// \u{100f4}: '𐃴'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B222: char = '𐃴';
-    /// \u{100f5}: '𐃵'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B226: char = '𐃵';
-    /// \u{100f6}: '𐃶'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B227: char = '𐃶';
-    /// \u{100f7}: '𐃷'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B228: char = '𐃷';
-    /// \u{100f8}: '𐃸'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B229: char = '𐃸';
-    /// \u{100f9}: '𐃹'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B250: char = '𐃹';
-    /// \u{100fa}: '𐃺'
-    pub const LINEAR_B_IDEOGRAM_VESSEL_B305: char = '𐃺';
-}
 
 /// An enum to represent all characters in the LinearBIdeograms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -501,131 +252,130 @@ pub enum LinearBIdeograms {
 
 impl Into<char> for LinearBIdeograms {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            LinearBIdeograms::LinearBIdeogramB100Man => LINEAR_B_IDEOGRAM_B100_MAN,
-            LinearBIdeograms::LinearBIdeogramB102Woman => LINEAR_B_IDEOGRAM_B102_WOMAN,
-            LinearBIdeograms::LinearBIdeogramB104Deer => LINEAR_B_IDEOGRAM_B104_DEER,
-            LinearBIdeograms::LinearBIdeogramB105Equid => LINEAR_B_IDEOGRAM_B105_EQUID,
-            LinearBIdeograms::LinearBIdeogramB105fMare => LINEAR_B_IDEOGRAM_B105F_MARE,
-            LinearBIdeograms::LinearBIdeogramB105mStallion => LINEAR_B_IDEOGRAM_B105M_STALLION,
-            LinearBIdeograms::LinearBIdeogramB106fEwe => LINEAR_B_IDEOGRAM_B106F_EWE,
-            LinearBIdeograms::LinearBIdeogramB106mRam => LINEAR_B_IDEOGRAM_B106M_RAM,
-            LinearBIdeograms::LinearBIdeogramB107fSheDashGoat => LINEAR_B_IDEOGRAM_B107F_SHE_DASH_GOAT,
-            LinearBIdeograms::LinearBIdeogramB107mHeDashGoat => LINEAR_B_IDEOGRAM_B107M_HE_DASH_GOAT,
-            LinearBIdeograms::LinearBIdeogramB108fSow => LINEAR_B_IDEOGRAM_B108F_SOW,
-            LinearBIdeograms::LinearBIdeogramB108mBoar => LINEAR_B_IDEOGRAM_B108M_BOAR,
-            LinearBIdeograms::LinearBIdeogramB109fCow => LINEAR_B_IDEOGRAM_B109F_COW,
-            LinearBIdeograms::LinearBIdeogramB109mBull => LINEAR_B_IDEOGRAM_B109M_BULL,
-            LinearBIdeograms::LinearBIdeogramB120Wheat => LINEAR_B_IDEOGRAM_B120_WHEAT,
-            LinearBIdeograms::LinearBIdeogramB121Barley => LINEAR_B_IDEOGRAM_B121_BARLEY,
-            LinearBIdeograms::LinearBIdeogramB122Olive => LINEAR_B_IDEOGRAM_B122_OLIVE,
-            LinearBIdeograms::LinearBIdeogramB123Spice => LINEAR_B_IDEOGRAM_B123_SPICE,
-            LinearBIdeograms::LinearBIdeogramB125Cyperus => LINEAR_B_IDEOGRAM_B125_CYPERUS,
-            LinearBIdeograms::LinearBMonogramB127Kapo => LINEAR_B_MONOGRAM_B127_KAPO,
-            LinearBIdeograms::LinearBMonogramB128Kanako => LINEAR_B_MONOGRAM_B128_KANAKO,
-            LinearBIdeograms::LinearBIdeogramB130Oil => LINEAR_B_IDEOGRAM_B130_OIL,
-            LinearBIdeograms::LinearBIdeogramB131Wine => LINEAR_B_IDEOGRAM_B131_WINE,
-            LinearBIdeograms::LinearBIdeogramB132 => LINEAR_B_IDEOGRAM_B132,
-            LinearBIdeograms::LinearBMonogramB133Arepa => LINEAR_B_MONOGRAM_B133_AREPA,
-            LinearBIdeograms::LinearBMonogramB135Meri => LINEAR_B_MONOGRAM_B135_MERI,
-            LinearBIdeograms::LinearBIdeogramB140Bronze => LINEAR_B_IDEOGRAM_B140_BRONZE,
-            LinearBIdeograms::LinearBIdeogramB141Gold => LINEAR_B_IDEOGRAM_B141_GOLD,
-            LinearBIdeograms::LinearBIdeogramB142 => LINEAR_B_IDEOGRAM_B142,
-            LinearBIdeograms::LinearBIdeogramB145Wool => LINEAR_B_IDEOGRAM_B145_WOOL,
-            LinearBIdeograms::LinearBIdeogramB146 => LINEAR_B_IDEOGRAM_B146,
-            LinearBIdeograms::LinearBIdeogramB150 => LINEAR_B_IDEOGRAM_B150,
-            LinearBIdeograms::LinearBIdeogramB151Horn => LINEAR_B_IDEOGRAM_B151_HORN,
-            LinearBIdeograms::LinearBIdeogramB152 => LINEAR_B_IDEOGRAM_B152,
-            LinearBIdeograms::LinearBIdeogramB153 => LINEAR_B_IDEOGRAM_B153,
-            LinearBIdeograms::LinearBIdeogramB154 => LINEAR_B_IDEOGRAM_B154,
-            LinearBIdeograms::LinearBMonogramB156Turo2 => LINEAR_B_MONOGRAM_B156_TURO2,
-            LinearBIdeograms::LinearBIdeogramB157 => LINEAR_B_IDEOGRAM_B157,
-            LinearBIdeograms::LinearBIdeogramB158 => LINEAR_B_IDEOGRAM_B158,
-            LinearBIdeograms::LinearBIdeogramB159Cloth => LINEAR_B_IDEOGRAM_B159_CLOTH,
-            LinearBIdeograms::LinearBIdeogramB160 => LINEAR_B_IDEOGRAM_B160,
-            LinearBIdeograms::LinearBIdeogramB161 => LINEAR_B_IDEOGRAM_B161,
-            LinearBIdeograms::LinearBIdeogramB162Garment => LINEAR_B_IDEOGRAM_B162_GARMENT,
-            LinearBIdeograms::LinearBIdeogramB163Armour => LINEAR_B_IDEOGRAM_B163_ARMOUR,
-            LinearBIdeograms::LinearBIdeogramB164 => LINEAR_B_IDEOGRAM_B164,
-            LinearBIdeograms::LinearBIdeogramB165 => LINEAR_B_IDEOGRAM_B165,
-            LinearBIdeograms::LinearBIdeogramB166 => LINEAR_B_IDEOGRAM_B166,
-            LinearBIdeograms::LinearBIdeogramB167 => LINEAR_B_IDEOGRAM_B167,
-            LinearBIdeograms::LinearBIdeogramB168 => LINEAR_B_IDEOGRAM_B168,
-            LinearBIdeograms::LinearBIdeogramB169 => LINEAR_B_IDEOGRAM_B169,
-            LinearBIdeograms::LinearBIdeogramB170 => LINEAR_B_IDEOGRAM_B170,
-            LinearBIdeograms::LinearBIdeogramB171 => LINEAR_B_IDEOGRAM_B171,
-            LinearBIdeograms::LinearBIdeogramB172 => LINEAR_B_IDEOGRAM_B172,
-            LinearBIdeograms::LinearBIdeogramB173Month => LINEAR_B_IDEOGRAM_B173_MONTH,
-            LinearBIdeograms::LinearBIdeogramB174 => LINEAR_B_IDEOGRAM_B174,
-            LinearBIdeograms::LinearBIdeogramB176Tree => LINEAR_B_IDEOGRAM_B176_TREE,
-            LinearBIdeograms::LinearBIdeogramB177 => LINEAR_B_IDEOGRAM_B177,
-            LinearBIdeograms::LinearBIdeogramB178 => LINEAR_B_IDEOGRAM_B178,
-            LinearBIdeograms::LinearBIdeogramB179 => LINEAR_B_IDEOGRAM_B179,
-            LinearBIdeograms::LinearBIdeogramB180 => LINEAR_B_IDEOGRAM_B180,
-            LinearBIdeograms::LinearBIdeogramB181 => LINEAR_B_IDEOGRAM_B181,
-            LinearBIdeograms::LinearBIdeogramB182 => LINEAR_B_IDEOGRAM_B182,
-            LinearBIdeograms::LinearBIdeogramB183 => LINEAR_B_IDEOGRAM_B183,
-            LinearBIdeograms::LinearBIdeogramB184 => LINEAR_B_IDEOGRAM_B184,
-            LinearBIdeograms::LinearBIdeogramB185 => LINEAR_B_IDEOGRAM_B185,
-            LinearBIdeograms::LinearBIdeogramB189 => LINEAR_B_IDEOGRAM_B189,
-            LinearBIdeograms::LinearBIdeogramB190 => LINEAR_B_IDEOGRAM_B190,
-            LinearBIdeograms::LinearBIdeogramB191Helmet => LINEAR_B_IDEOGRAM_B191_HELMET,
-            LinearBIdeograms::LinearBIdeogramB220Footstool => LINEAR_B_IDEOGRAM_B220_FOOTSTOOL,
-            LinearBIdeograms::LinearBIdeogramB225Bathtub => LINEAR_B_IDEOGRAM_B225_BATHTUB,
-            LinearBIdeograms::LinearBIdeogramB230Spear => LINEAR_B_IDEOGRAM_B230_SPEAR,
-            LinearBIdeograms::LinearBIdeogramB231Arrow => LINEAR_B_IDEOGRAM_B231_ARROW,
-            LinearBIdeograms::LinearBIdeogramB232 => LINEAR_B_IDEOGRAM_B232,
-            LinearBIdeograms::LinearBIdeogramB233Sword => LINEAR_B_IDEOGRAM_B233_SWORD,
-            LinearBIdeograms::LinearBIdeogramB234 => LINEAR_B_IDEOGRAM_B234,
-            LinearBIdeograms::LinearBIdeogramB236 => LINEAR_B_IDEOGRAM_B236,
-            LinearBIdeograms::LinearBIdeogramB240WheeledChariot => LINEAR_B_IDEOGRAM_B240_WHEELED_CHARIOT,
-            LinearBIdeograms::LinearBIdeogramB241Chariot => LINEAR_B_IDEOGRAM_B241_CHARIOT,
-            LinearBIdeograms::LinearBIdeogramB242ChariotFrame => LINEAR_B_IDEOGRAM_B242_CHARIOT_FRAME,
-            LinearBIdeograms::LinearBIdeogramB243Wheel => LINEAR_B_IDEOGRAM_B243_WHEEL,
-            LinearBIdeograms::LinearBIdeogramB245 => LINEAR_B_IDEOGRAM_B245,
-            LinearBIdeograms::LinearBIdeogramB246 => LINEAR_B_IDEOGRAM_B246,
-            LinearBIdeograms::LinearBMonogramB247Dipte => LINEAR_B_MONOGRAM_B247_DIPTE,
-            LinearBIdeograms::LinearBIdeogramB248 => LINEAR_B_IDEOGRAM_B248,
-            LinearBIdeograms::LinearBIdeogramB249 => LINEAR_B_IDEOGRAM_B249,
-            LinearBIdeograms::LinearBIdeogramB251 => LINEAR_B_IDEOGRAM_B251,
-            LinearBIdeograms::LinearBIdeogramB252 => LINEAR_B_IDEOGRAM_B252,
-            LinearBIdeograms::LinearBIdeogramB253 => LINEAR_B_IDEOGRAM_B253,
-            LinearBIdeograms::LinearBIdeogramB254Dart => LINEAR_B_IDEOGRAM_B254_DART,
-            LinearBIdeograms::LinearBIdeogramB255 => LINEAR_B_IDEOGRAM_B255,
-            LinearBIdeograms::LinearBIdeogramB256 => LINEAR_B_IDEOGRAM_B256,
-            LinearBIdeograms::LinearBIdeogramB257 => LINEAR_B_IDEOGRAM_B257,
-            LinearBIdeograms::LinearBIdeogramB258 => LINEAR_B_IDEOGRAM_B258,
-            LinearBIdeograms::LinearBIdeogramB259 => LINEAR_B_IDEOGRAM_B259,
-            LinearBIdeograms::LinearBIdeogramVesselB155 => LINEAR_B_IDEOGRAM_VESSEL_B155,
-            LinearBIdeograms::LinearBIdeogramVesselB200 => LINEAR_B_IDEOGRAM_VESSEL_B200,
-            LinearBIdeograms::LinearBIdeogramVesselB201 => LINEAR_B_IDEOGRAM_VESSEL_B201,
-            LinearBIdeograms::LinearBIdeogramVesselB202 => LINEAR_B_IDEOGRAM_VESSEL_B202,
-            LinearBIdeograms::LinearBIdeogramVesselB203 => LINEAR_B_IDEOGRAM_VESSEL_B203,
-            LinearBIdeograms::LinearBIdeogramVesselB204 => LINEAR_B_IDEOGRAM_VESSEL_B204,
-            LinearBIdeograms::LinearBIdeogramVesselB205 => LINEAR_B_IDEOGRAM_VESSEL_B205,
-            LinearBIdeograms::LinearBIdeogramVesselB206 => LINEAR_B_IDEOGRAM_VESSEL_B206,
-            LinearBIdeograms::LinearBIdeogramVesselB207 => LINEAR_B_IDEOGRAM_VESSEL_B207,
-            LinearBIdeograms::LinearBIdeogramVesselB208 => LINEAR_B_IDEOGRAM_VESSEL_B208,
-            LinearBIdeograms::LinearBIdeogramVesselB209 => LINEAR_B_IDEOGRAM_VESSEL_B209,
-            LinearBIdeograms::LinearBIdeogramVesselB210 => LINEAR_B_IDEOGRAM_VESSEL_B210,
-            LinearBIdeograms::LinearBIdeogramVesselB211 => LINEAR_B_IDEOGRAM_VESSEL_B211,
-            LinearBIdeograms::LinearBIdeogramVesselB212 => LINEAR_B_IDEOGRAM_VESSEL_B212,
-            LinearBIdeograms::LinearBIdeogramVesselB213 => LINEAR_B_IDEOGRAM_VESSEL_B213,
-            LinearBIdeograms::LinearBIdeogramVesselB214 => LINEAR_B_IDEOGRAM_VESSEL_B214,
-            LinearBIdeograms::LinearBIdeogramVesselB215 => LINEAR_B_IDEOGRAM_VESSEL_B215,
-            LinearBIdeograms::LinearBIdeogramVesselB216 => LINEAR_B_IDEOGRAM_VESSEL_B216,
-            LinearBIdeograms::LinearBIdeogramVesselB217 => LINEAR_B_IDEOGRAM_VESSEL_B217,
-            LinearBIdeograms::LinearBIdeogramVesselB218 => LINEAR_B_IDEOGRAM_VESSEL_B218,
-            LinearBIdeograms::LinearBIdeogramVesselB219 => LINEAR_B_IDEOGRAM_VESSEL_B219,
-            LinearBIdeograms::LinearBIdeogramVesselB221 => LINEAR_B_IDEOGRAM_VESSEL_B221,
-            LinearBIdeograms::LinearBIdeogramVesselB222 => LINEAR_B_IDEOGRAM_VESSEL_B222,
-            LinearBIdeograms::LinearBIdeogramVesselB226 => LINEAR_B_IDEOGRAM_VESSEL_B226,
-            LinearBIdeograms::LinearBIdeogramVesselB227 => LINEAR_B_IDEOGRAM_VESSEL_B227,
-            LinearBIdeograms::LinearBIdeogramVesselB228 => LINEAR_B_IDEOGRAM_VESSEL_B228,
-            LinearBIdeograms::LinearBIdeogramVesselB229 => LINEAR_B_IDEOGRAM_VESSEL_B229,
-            LinearBIdeograms::LinearBIdeogramVesselB250 => LINEAR_B_IDEOGRAM_VESSEL_B250,
-            LinearBIdeograms::LinearBIdeogramVesselB305 => LINEAR_B_IDEOGRAM_VESSEL_B305,
+            LinearBIdeograms::LinearBIdeogramB100Man => '𐂀',
+            LinearBIdeograms::LinearBIdeogramB102Woman => '𐂁',
+            LinearBIdeograms::LinearBIdeogramB104Deer => '𐂂',
+            LinearBIdeograms::LinearBIdeogramB105Equid => '𐂃',
+            LinearBIdeograms::LinearBIdeogramB105fMare => '𐂄',
+            LinearBIdeograms::LinearBIdeogramB105mStallion => '𐂅',
+            LinearBIdeograms::LinearBIdeogramB106fEwe => '𐂆',
+            LinearBIdeograms::LinearBIdeogramB106mRam => '𐂇',
+            LinearBIdeograms::LinearBIdeogramB107fSheDashGoat => '𐂈',
+            LinearBIdeograms::LinearBIdeogramB107mHeDashGoat => '𐂉',
+            LinearBIdeograms::LinearBIdeogramB108fSow => '𐂊',
+            LinearBIdeograms::LinearBIdeogramB108mBoar => '𐂋',
+            LinearBIdeograms::LinearBIdeogramB109fCow => '𐂌',
+            LinearBIdeograms::LinearBIdeogramB109mBull => '𐂍',
+            LinearBIdeograms::LinearBIdeogramB120Wheat => '𐂎',
+            LinearBIdeograms::LinearBIdeogramB121Barley => '𐂏',
+            LinearBIdeograms::LinearBIdeogramB122Olive => '𐂐',
+            LinearBIdeograms::LinearBIdeogramB123Spice => '𐂑',
+            LinearBIdeograms::LinearBIdeogramB125Cyperus => '𐂒',
+            LinearBIdeograms::LinearBMonogramB127Kapo => '𐂓',
+            LinearBIdeograms::LinearBMonogramB128Kanako => '𐂔',
+            LinearBIdeograms::LinearBIdeogramB130Oil => '𐂕',
+            LinearBIdeograms::LinearBIdeogramB131Wine => '𐂖',
+            LinearBIdeograms::LinearBIdeogramB132 => '𐂗',
+            LinearBIdeograms::LinearBMonogramB133Arepa => '𐂘',
+            LinearBIdeograms::LinearBMonogramB135Meri => '𐂙',
+            LinearBIdeograms::LinearBIdeogramB140Bronze => '𐂚',
+            LinearBIdeograms::LinearBIdeogramB141Gold => '𐂛',
+            LinearBIdeograms::LinearBIdeogramB142 => '𐂜',
+            LinearBIdeograms::LinearBIdeogramB145Wool => '𐂝',
+            LinearBIdeograms::LinearBIdeogramB146 => '𐂞',
+            LinearBIdeograms::LinearBIdeogramB150 => '𐂟',
+            LinearBIdeograms::LinearBIdeogramB151Horn => '𐂠',
+            LinearBIdeograms::LinearBIdeogramB152 => '𐂡',
+            LinearBIdeograms::LinearBIdeogramB153 => '𐂢',
+            LinearBIdeograms::LinearBIdeogramB154 => '𐂣',
+            LinearBIdeograms::LinearBMonogramB156Turo2 => '𐂤',
+            LinearBIdeograms::LinearBIdeogramB157 => '𐂥',
+            LinearBIdeograms::LinearBIdeogramB158 => '𐂦',
+            LinearBIdeograms::LinearBIdeogramB159Cloth => '𐂧',
+            LinearBIdeograms::LinearBIdeogramB160 => '𐂨',
+            LinearBIdeograms::LinearBIdeogramB161 => '𐂩',
+            LinearBIdeograms::LinearBIdeogramB162Garment => '𐂪',
+            LinearBIdeograms::LinearBIdeogramB163Armour => '𐂫',
+            LinearBIdeograms::LinearBIdeogramB164 => '𐂬',
+            LinearBIdeograms::LinearBIdeogramB165 => '𐂭',
+            LinearBIdeograms::LinearBIdeogramB166 => '𐂮',
+            LinearBIdeograms::LinearBIdeogramB167 => '𐂯',
+            LinearBIdeograms::LinearBIdeogramB168 => '𐂰',
+            LinearBIdeograms::LinearBIdeogramB169 => '𐂱',
+            LinearBIdeograms::LinearBIdeogramB170 => '𐂲',
+            LinearBIdeograms::LinearBIdeogramB171 => '𐂳',
+            LinearBIdeograms::LinearBIdeogramB172 => '𐂴',
+            LinearBIdeograms::LinearBIdeogramB173Month => '𐂵',
+            LinearBIdeograms::LinearBIdeogramB174 => '𐂶',
+            LinearBIdeograms::LinearBIdeogramB176Tree => '𐂷',
+            LinearBIdeograms::LinearBIdeogramB177 => '𐂸',
+            LinearBIdeograms::LinearBIdeogramB178 => '𐂹',
+            LinearBIdeograms::LinearBIdeogramB179 => '𐂺',
+            LinearBIdeograms::LinearBIdeogramB180 => '𐂻',
+            LinearBIdeograms::LinearBIdeogramB181 => '𐂼',
+            LinearBIdeograms::LinearBIdeogramB182 => '𐂽',
+            LinearBIdeograms::LinearBIdeogramB183 => '𐂾',
+            LinearBIdeograms::LinearBIdeogramB184 => '𐂿',
+            LinearBIdeograms::LinearBIdeogramB185 => '𐃀',
+            LinearBIdeograms::LinearBIdeogramB189 => '𐃁',
+            LinearBIdeograms::LinearBIdeogramB190 => '𐃂',
+            LinearBIdeograms::LinearBIdeogramB191Helmet => '𐃃',
+            LinearBIdeograms::LinearBIdeogramB220Footstool => '𐃄',
+            LinearBIdeograms::LinearBIdeogramB225Bathtub => '𐃅',
+            LinearBIdeograms::LinearBIdeogramB230Spear => '𐃆',
+            LinearBIdeograms::LinearBIdeogramB231Arrow => '𐃇',
+            LinearBIdeograms::LinearBIdeogramB232 => '𐃈',
+            LinearBIdeograms::LinearBIdeogramB233Sword => '𐃉',
+            LinearBIdeograms::LinearBIdeogramB234 => '𐃊',
+            LinearBIdeograms::LinearBIdeogramB236 => '𐃋',
+            LinearBIdeograms::LinearBIdeogramB240WheeledChariot => '𐃌',
+            LinearBIdeograms::LinearBIdeogramB241Chariot => '𐃍',
+            LinearBIdeograms::LinearBIdeogramB242ChariotFrame => '𐃎',
+            LinearBIdeograms::LinearBIdeogramB243Wheel => '𐃏',
+            LinearBIdeograms::LinearBIdeogramB245 => '𐃐',
+            LinearBIdeograms::LinearBIdeogramB246 => '𐃑',
+            LinearBIdeograms::LinearBMonogramB247Dipte => '𐃒',
+            LinearBIdeograms::LinearBIdeogramB248 => '𐃓',
+            LinearBIdeograms::LinearBIdeogramB249 => '𐃔',
+            LinearBIdeograms::LinearBIdeogramB251 => '𐃕',
+            LinearBIdeograms::LinearBIdeogramB252 => '𐃖',
+            LinearBIdeograms::LinearBIdeogramB253 => '𐃗',
+            LinearBIdeograms::LinearBIdeogramB254Dart => '𐃘',
+            LinearBIdeograms::LinearBIdeogramB255 => '𐃙',
+            LinearBIdeograms::LinearBIdeogramB256 => '𐃚',
+            LinearBIdeograms::LinearBIdeogramB257 => '𐃛',
+            LinearBIdeograms::LinearBIdeogramB258 => '𐃜',
+            LinearBIdeograms::LinearBIdeogramB259 => '𐃝',
+            LinearBIdeograms::LinearBIdeogramVesselB155 => '𐃞',
+            LinearBIdeograms::LinearBIdeogramVesselB200 => '𐃟',
+            LinearBIdeograms::LinearBIdeogramVesselB201 => '𐃠',
+            LinearBIdeograms::LinearBIdeogramVesselB202 => '𐃡',
+            LinearBIdeograms::LinearBIdeogramVesselB203 => '𐃢',
+            LinearBIdeograms::LinearBIdeogramVesselB204 => '𐃣',
+            LinearBIdeograms::LinearBIdeogramVesselB205 => '𐃤',
+            LinearBIdeograms::LinearBIdeogramVesselB206 => '𐃥',
+            LinearBIdeograms::LinearBIdeogramVesselB207 => '𐃦',
+            LinearBIdeograms::LinearBIdeogramVesselB208 => '𐃧',
+            LinearBIdeograms::LinearBIdeogramVesselB209 => '𐃨',
+            LinearBIdeograms::LinearBIdeogramVesselB210 => '𐃩',
+            LinearBIdeograms::LinearBIdeogramVesselB211 => '𐃪',
+            LinearBIdeograms::LinearBIdeogramVesselB212 => '𐃫',
+            LinearBIdeograms::LinearBIdeogramVesselB213 => '𐃬',
+            LinearBIdeograms::LinearBIdeogramVesselB214 => '𐃭',
+            LinearBIdeograms::LinearBIdeogramVesselB215 => '𐃮',
+            LinearBIdeograms::LinearBIdeogramVesselB216 => '𐃯',
+            LinearBIdeograms::LinearBIdeogramVesselB217 => '𐃰',
+            LinearBIdeograms::LinearBIdeogramVesselB218 => '𐃱',
+            LinearBIdeograms::LinearBIdeogramVesselB219 => '𐃲',
+            LinearBIdeograms::LinearBIdeogramVesselB221 => '𐃳',
+            LinearBIdeograms::LinearBIdeogramVesselB222 => '𐃴',
+            LinearBIdeograms::LinearBIdeogramVesselB226 => '𐃵',
+            LinearBIdeograms::LinearBIdeogramVesselB227 => '𐃶',
+            LinearBIdeograms::LinearBIdeogramVesselB228 => '𐃷',
+            LinearBIdeograms::LinearBIdeogramVesselB229 => '𐃸',
+            LinearBIdeograms::LinearBIdeogramVesselB250 => '𐃹',
+            LinearBIdeograms::LinearBIdeogramVesselB305 => '𐃺',
         }
     }
 }
@@ -633,131 +383,130 @@ impl Into<char> for LinearBIdeograms {
 impl std::convert::TryFrom<char> for LinearBIdeograms {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LINEAR_B_IDEOGRAM_B100_MAN => Ok(LinearBIdeograms::LinearBIdeogramB100Man),
-            LINEAR_B_IDEOGRAM_B102_WOMAN => Ok(LinearBIdeograms::LinearBIdeogramB102Woman),
-            LINEAR_B_IDEOGRAM_B104_DEER => Ok(LinearBIdeograms::LinearBIdeogramB104Deer),
-            LINEAR_B_IDEOGRAM_B105_EQUID => Ok(LinearBIdeograms::LinearBIdeogramB105Equid),
-            LINEAR_B_IDEOGRAM_B105F_MARE => Ok(LinearBIdeograms::LinearBIdeogramB105fMare),
-            LINEAR_B_IDEOGRAM_B105M_STALLION => Ok(LinearBIdeograms::LinearBIdeogramB105mStallion),
-            LINEAR_B_IDEOGRAM_B106F_EWE => Ok(LinearBIdeograms::LinearBIdeogramB106fEwe),
-            LINEAR_B_IDEOGRAM_B106M_RAM => Ok(LinearBIdeograms::LinearBIdeogramB106mRam),
-            LINEAR_B_IDEOGRAM_B107F_SHE_DASH_GOAT => Ok(LinearBIdeograms::LinearBIdeogramB107fSheDashGoat),
-            LINEAR_B_IDEOGRAM_B107M_HE_DASH_GOAT => Ok(LinearBIdeograms::LinearBIdeogramB107mHeDashGoat),
-            LINEAR_B_IDEOGRAM_B108F_SOW => Ok(LinearBIdeograms::LinearBIdeogramB108fSow),
-            LINEAR_B_IDEOGRAM_B108M_BOAR => Ok(LinearBIdeograms::LinearBIdeogramB108mBoar),
-            LINEAR_B_IDEOGRAM_B109F_COW => Ok(LinearBIdeograms::LinearBIdeogramB109fCow),
-            LINEAR_B_IDEOGRAM_B109M_BULL => Ok(LinearBIdeograms::LinearBIdeogramB109mBull),
-            LINEAR_B_IDEOGRAM_B120_WHEAT => Ok(LinearBIdeograms::LinearBIdeogramB120Wheat),
-            LINEAR_B_IDEOGRAM_B121_BARLEY => Ok(LinearBIdeograms::LinearBIdeogramB121Barley),
-            LINEAR_B_IDEOGRAM_B122_OLIVE => Ok(LinearBIdeograms::LinearBIdeogramB122Olive),
-            LINEAR_B_IDEOGRAM_B123_SPICE => Ok(LinearBIdeograms::LinearBIdeogramB123Spice),
-            LINEAR_B_IDEOGRAM_B125_CYPERUS => Ok(LinearBIdeograms::LinearBIdeogramB125Cyperus),
-            LINEAR_B_MONOGRAM_B127_KAPO => Ok(LinearBIdeograms::LinearBMonogramB127Kapo),
-            LINEAR_B_MONOGRAM_B128_KANAKO => Ok(LinearBIdeograms::LinearBMonogramB128Kanako),
-            LINEAR_B_IDEOGRAM_B130_OIL => Ok(LinearBIdeograms::LinearBIdeogramB130Oil),
-            LINEAR_B_IDEOGRAM_B131_WINE => Ok(LinearBIdeograms::LinearBIdeogramB131Wine),
-            LINEAR_B_IDEOGRAM_B132 => Ok(LinearBIdeograms::LinearBIdeogramB132),
-            LINEAR_B_MONOGRAM_B133_AREPA => Ok(LinearBIdeograms::LinearBMonogramB133Arepa),
-            LINEAR_B_MONOGRAM_B135_MERI => Ok(LinearBIdeograms::LinearBMonogramB135Meri),
-            LINEAR_B_IDEOGRAM_B140_BRONZE => Ok(LinearBIdeograms::LinearBIdeogramB140Bronze),
-            LINEAR_B_IDEOGRAM_B141_GOLD => Ok(LinearBIdeograms::LinearBIdeogramB141Gold),
-            LINEAR_B_IDEOGRAM_B142 => Ok(LinearBIdeograms::LinearBIdeogramB142),
-            LINEAR_B_IDEOGRAM_B145_WOOL => Ok(LinearBIdeograms::LinearBIdeogramB145Wool),
-            LINEAR_B_IDEOGRAM_B146 => Ok(LinearBIdeograms::LinearBIdeogramB146),
-            LINEAR_B_IDEOGRAM_B150 => Ok(LinearBIdeograms::LinearBIdeogramB150),
-            LINEAR_B_IDEOGRAM_B151_HORN => Ok(LinearBIdeograms::LinearBIdeogramB151Horn),
-            LINEAR_B_IDEOGRAM_B152 => Ok(LinearBIdeograms::LinearBIdeogramB152),
-            LINEAR_B_IDEOGRAM_B153 => Ok(LinearBIdeograms::LinearBIdeogramB153),
-            LINEAR_B_IDEOGRAM_B154 => Ok(LinearBIdeograms::LinearBIdeogramB154),
-            LINEAR_B_MONOGRAM_B156_TURO2 => Ok(LinearBIdeograms::LinearBMonogramB156Turo2),
-            LINEAR_B_IDEOGRAM_B157 => Ok(LinearBIdeograms::LinearBIdeogramB157),
-            LINEAR_B_IDEOGRAM_B158 => Ok(LinearBIdeograms::LinearBIdeogramB158),
-            LINEAR_B_IDEOGRAM_B159_CLOTH => Ok(LinearBIdeograms::LinearBIdeogramB159Cloth),
-            LINEAR_B_IDEOGRAM_B160 => Ok(LinearBIdeograms::LinearBIdeogramB160),
-            LINEAR_B_IDEOGRAM_B161 => Ok(LinearBIdeograms::LinearBIdeogramB161),
-            LINEAR_B_IDEOGRAM_B162_GARMENT => Ok(LinearBIdeograms::LinearBIdeogramB162Garment),
-            LINEAR_B_IDEOGRAM_B163_ARMOUR => Ok(LinearBIdeograms::LinearBIdeogramB163Armour),
-            LINEAR_B_IDEOGRAM_B164 => Ok(LinearBIdeograms::LinearBIdeogramB164),
-            LINEAR_B_IDEOGRAM_B165 => Ok(LinearBIdeograms::LinearBIdeogramB165),
-            LINEAR_B_IDEOGRAM_B166 => Ok(LinearBIdeograms::LinearBIdeogramB166),
-            LINEAR_B_IDEOGRAM_B167 => Ok(LinearBIdeograms::LinearBIdeogramB167),
-            LINEAR_B_IDEOGRAM_B168 => Ok(LinearBIdeograms::LinearBIdeogramB168),
-            LINEAR_B_IDEOGRAM_B169 => Ok(LinearBIdeograms::LinearBIdeogramB169),
-            LINEAR_B_IDEOGRAM_B170 => Ok(LinearBIdeograms::LinearBIdeogramB170),
-            LINEAR_B_IDEOGRAM_B171 => Ok(LinearBIdeograms::LinearBIdeogramB171),
-            LINEAR_B_IDEOGRAM_B172 => Ok(LinearBIdeograms::LinearBIdeogramB172),
-            LINEAR_B_IDEOGRAM_B173_MONTH => Ok(LinearBIdeograms::LinearBIdeogramB173Month),
-            LINEAR_B_IDEOGRAM_B174 => Ok(LinearBIdeograms::LinearBIdeogramB174),
-            LINEAR_B_IDEOGRAM_B176_TREE => Ok(LinearBIdeograms::LinearBIdeogramB176Tree),
-            LINEAR_B_IDEOGRAM_B177 => Ok(LinearBIdeograms::LinearBIdeogramB177),
-            LINEAR_B_IDEOGRAM_B178 => Ok(LinearBIdeograms::LinearBIdeogramB178),
-            LINEAR_B_IDEOGRAM_B179 => Ok(LinearBIdeograms::LinearBIdeogramB179),
-            LINEAR_B_IDEOGRAM_B180 => Ok(LinearBIdeograms::LinearBIdeogramB180),
-            LINEAR_B_IDEOGRAM_B181 => Ok(LinearBIdeograms::LinearBIdeogramB181),
-            LINEAR_B_IDEOGRAM_B182 => Ok(LinearBIdeograms::LinearBIdeogramB182),
-            LINEAR_B_IDEOGRAM_B183 => Ok(LinearBIdeograms::LinearBIdeogramB183),
-            LINEAR_B_IDEOGRAM_B184 => Ok(LinearBIdeograms::LinearBIdeogramB184),
-            LINEAR_B_IDEOGRAM_B185 => Ok(LinearBIdeograms::LinearBIdeogramB185),
-            LINEAR_B_IDEOGRAM_B189 => Ok(LinearBIdeograms::LinearBIdeogramB189),
-            LINEAR_B_IDEOGRAM_B190 => Ok(LinearBIdeograms::LinearBIdeogramB190),
-            LINEAR_B_IDEOGRAM_B191_HELMET => Ok(LinearBIdeograms::LinearBIdeogramB191Helmet),
-            LINEAR_B_IDEOGRAM_B220_FOOTSTOOL => Ok(LinearBIdeograms::LinearBIdeogramB220Footstool),
-            LINEAR_B_IDEOGRAM_B225_BATHTUB => Ok(LinearBIdeograms::LinearBIdeogramB225Bathtub),
-            LINEAR_B_IDEOGRAM_B230_SPEAR => Ok(LinearBIdeograms::LinearBIdeogramB230Spear),
-            LINEAR_B_IDEOGRAM_B231_ARROW => Ok(LinearBIdeograms::LinearBIdeogramB231Arrow),
-            LINEAR_B_IDEOGRAM_B232 => Ok(LinearBIdeograms::LinearBIdeogramB232),
-            LINEAR_B_IDEOGRAM_B233_SWORD => Ok(LinearBIdeograms::LinearBIdeogramB233Sword),
-            LINEAR_B_IDEOGRAM_B234 => Ok(LinearBIdeograms::LinearBIdeogramB234),
-            LINEAR_B_IDEOGRAM_B236 => Ok(LinearBIdeograms::LinearBIdeogramB236),
-            LINEAR_B_IDEOGRAM_B240_WHEELED_CHARIOT => Ok(LinearBIdeograms::LinearBIdeogramB240WheeledChariot),
-            LINEAR_B_IDEOGRAM_B241_CHARIOT => Ok(LinearBIdeograms::LinearBIdeogramB241Chariot),
-            LINEAR_B_IDEOGRAM_B242_CHARIOT_FRAME => Ok(LinearBIdeograms::LinearBIdeogramB242ChariotFrame),
-            LINEAR_B_IDEOGRAM_B243_WHEEL => Ok(LinearBIdeograms::LinearBIdeogramB243Wheel),
-            LINEAR_B_IDEOGRAM_B245 => Ok(LinearBIdeograms::LinearBIdeogramB245),
-            LINEAR_B_IDEOGRAM_B246 => Ok(LinearBIdeograms::LinearBIdeogramB246),
-            LINEAR_B_MONOGRAM_B247_DIPTE => Ok(LinearBIdeograms::LinearBMonogramB247Dipte),
-            LINEAR_B_IDEOGRAM_B248 => Ok(LinearBIdeograms::LinearBIdeogramB248),
-            LINEAR_B_IDEOGRAM_B249 => Ok(LinearBIdeograms::LinearBIdeogramB249),
-            LINEAR_B_IDEOGRAM_B251 => Ok(LinearBIdeograms::LinearBIdeogramB251),
-            LINEAR_B_IDEOGRAM_B252 => Ok(LinearBIdeograms::LinearBIdeogramB252),
-            LINEAR_B_IDEOGRAM_B253 => Ok(LinearBIdeograms::LinearBIdeogramB253),
-            LINEAR_B_IDEOGRAM_B254_DART => Ok(LinearBIdeograms::LinearBIdeogramB254Dart),
-            LINEAR_B_IDEOGRAM_B255 => Ok(LinearBIdeograms::LinearBIdeogramB255),
-            LINEAR_B_IDEOGRAM_B256 => Ok(LinearBIdeograms::LinearBIdeogramB256),
-            LINEAR_B_IDEOGRAM_B257 => Ok(LinearBIdeograms::LinearBIdeogramB257),
-            LINEAR_B_IDEOGRAM_B258 => Ok(LinearBIdeograms::LinearBIdeogramB258),
-            LINEAR_B_IDEOGRAM_B259 => Ok(LinearBIdeograms::LinearBIdeogramB259),
-            LINEAR_B_IDEOGRAM_VESSEL_B155 => Ok(LinearBIdeograms::LinearBIdeogramVesselB155),
-            LINEAR_B_IDEOGRAM_VESSEL_B200 => Ok(LinearBIdeograms::LinearBIdeogramVesselB200),
-            LINEAR_B_IDEOGRAM_VESSEL_B201 => Ok(LinearBIdeograms::LinearBIdeogramVesselB201),
-            LINEAR_B_IDEOGRAM_VESSEL_B202 => Ok(LinearBIdeograms::LinearBIdeogramVesselB202),
-            LINEAR_B_IDEOGRAM_VESSEL_B203 => Ok(LinearBIdeograms::LinearBIdeogramVesselB203),
-            LINEAR_B_IDEOGRAM_VESSEL_B204 => Ok(LinearBIdeograms::LinearBIdeogramVesselB204),
-            LINEAR_B_IDEOGRAM_VESSEL_B205 => Ok(LinearBIdeograms::LinearBIdeogramVesselB205),
-            LINEAR_B_IDEOGRAM_VESSEL_B206 => Ok(LinearBIdeograms::LinearBIdeogramVesselB206),
-            LINEAR_B_IDEOGRAM_VESSEL_B207 => Ok(LinearBIdeograms::LinearBIdeogramVesselB207),
-            LINEAR_B_IDEOGRAM_VESSEL_B208 => Ok(LinearBIdeograms::LinearBIdeogramVesselB208),
-            LINEAR_B_IDEOGRAM_VESSEL_B209 => Ok(LinearBIdeograms::LinearBIdeogramVesselB209),
-            LINEAR_B_IDEOGRAM_VESSEL_B210 => Ok(LinearBIdeograms::LinearBIdeogramVesselB210),
-            LINEAR_B_IDEOGRAM_VESSEL_B211 => Ok(LinearBIdeograms::LinearBIdeogramVesselB211),
-            LINEAR_B_IDEOGRAM_VESSEL_B212 => Ok(LinearBIdeograms::LinearBIdeogramVesselB212),
-            LINEAR_B_IDEOGRAM_VESSEL_B213 => Ok(LinearBIdeograms::LinearBIdeogramVesselB213),
-            LINEAR_B_IDEOGRAM_VESSEL_B214 => Ok(LinearBIdeograms::LinearBIdeogramVesselB214),
-            LINEAR_B_IDEOGRAM_VESSEL_B215 => Ok(LinearBIdeograms::LinearBIdeogramVesselB215),
-            LINEAR_B_IDEOGRAM_VESSEL_B216 => Ok(LinearBIdeograms::LinearBIdeogramVesselB216),
-            LINEAR_B_IDEOGRAM_VESSEL_B217 => Ok(LinearBIdeograms::LinearBIdeogramVesselB217),
-            LINEAR_B_IDEOGRAM_VESSEL_B218 => Ok(LinearBIdeograms::LinearBIdeogramVesselB218),
-            LINEAR_B_IDEOGRAM_VESSEL_B219 => Ok(LinearBIdeograms::LinearBIdeogramVesselB219),
-            LINEAR_B_IDEOGRAM_VESSEL_B221 => Ok(LinearBIdeograms::LinearBIdeogramVesselB221),
-            LINEAR_B_IDEOGRAM_VESSEL_B222 => Ok(LinearBIdeograms::LinearBIdeogramVesselB222),
-            LINEAR_B_IDEOGRAM_VESSEL_B226 => Ok(LinearBIdeograms::LinearBIdeogramVesselB226),
-            LINEAR_B_IDEOGRAM_VESSEL_B227 => Ok(LinearBIdeograms::LinearBIdeogramVesselB227),
-            LINEAR_B_IDEOGRAM_VESSEL_B228 => Ok(LinearBIdeograms::LinearBIdeogramVesselB228),
-            LINEAR_B_IDEOGRAM_VESSEL_B229 => Ok(LinearBIdeograms::LinearBIdeogramVesselB229),
-            LINEAR_B_IDEOGRAM_VESSEL_B250 => Ok(LinearBIdeograms::LinearBIdeogramVesselB250),
-            LINEAR_B_IDEOGRAM_VESSEL_B305 => Ok(LinearBIdeograms::LinearBIdeogramVesselB305),
+            '𐂀' => Ok(LinearBIdeograms::LinearBIdeogramB100Man),
+            '𐂁' => Ok(LinearBIdeograms::LinearBIdeogramB102Woman),
+            '𐂂' => Ok(LinearBIdeograms::LinearBIdeogramB104Deer),
+            '𐂃' => Ok(LinearBIdeograms::LinearBIdeogramB105Equid),
+            '𐂄' => Ok(LinearBIdeograms::LinearBIdeogramB105fMare),
+            '𐂅' => Ok(LinearBIdeograms::LinearBIdeogramB105mStallion),
+            '𐂆' => Ok(LinearBIdeograms::LinearBIdeogramB106fEwe),
+            '𐂇' => Ok(LinearBIdeograms::LinearBIdeogramB106mRam),
+            '𐂈' => Ok(LinearBIdeograms::LinearBIdeogramB107fSheDashGoat),
+            '𐂉' => Ok(LinearBIdeograms::LinearBIdeogramB107mHeDashGoat),
+            '𐂊' => Ok(LinearBIdeograms::LinearBIdeogramB108fSow),
+            '𐂋' => Ok(LinearBIdeograms::LinearBIdeogramB108mBoar),
+            '𐂌' => Ok(LinearBIdeograms::LinearBIdeogramB109fCow),
+            '𐂍' => Ok(LinearBIdeograms::LinearBIdeogramB109mBull),
+            '𐂎' => Ok(LinearBIdeograms::LinearBIdeogramB120Wheat),
+            '𐂏' => Ok(LinearBIdeograms::LinearBIdeogramB121Barley),
+            '𐂐' => Ok(LinearBIdeograms::LinearBIdeogramB122Olive),
+            '𐂑' => Ok(LinearBIdeograms::LinearBIdeogramB123Spice),
+            '𐂒' => Ok(LinearBIdeograms::LinearBIdeogramB125Cyperus),
+            '𐂓' => Ok(LinearBIdeograms::LinearBMonogramB127Kapo),
+            '𐂔' => Ok(LinearBIdeograms::LinearBMonogramB128Kanako),
+            '𐂕' => Ok(LinearBIdeograms::LinearBIdeogramB130Oil),
+            '𐂖' => Ok(LinearBIdeograms::LinearBIdeogramB131Wine),
+            '𐂗' => Ok(LinearBIdeograms::LinearBIdeogramB132),
+            '𐂘' => Ok(LinearBIdeograms::LinearBMonogramB133Arepa),
+            '𐂙' => Ok(LinearBIdeograms::LinearBMonogramB135Meri),
+            '𐂚' => Ok(LinearBIdeograms::LinearBIdeogramB140Bronze),
+            '𐂛' => Ok(LinearBIdeograms::LinearBIdeogramB141Gold),
+            '𐂜' => Ok(LinearBIdeograms::LinearBIdeogramB142),
+            '𐂝' => Ok(LinearBIdeograms::LinearBIdeogramB145Wool),
+            '𐂞' => Ok(LinearBIdeograms::LinearBIdeogramB146),
+            '𐂟' => Ok(LinearBIdeograms::LinearBIdeogramB150),
+            '𐂠' => Ok(LinearBIdeograms::LinearBIdeogramB151Horn),
+            '𐂡' => Ok(LinearBIdeograms::LinearBIdeogramB152),
+            '𐂢' => Ok(LinearBIdeograms::LinearBIdeogramB153),
+            '𐂣' => Ok(LinearBIdeograms::LinearBIdeogramB154),
+            '𐂤' => Ok(LinearBIdeograms::LinearBMonogramB156Turo2),
+            '𐂥' => Ok(LinearBIdeograms::LinearBIdeogramB157),
+            '𐂦' => Ok(LinearBIdeograms::LinearBIdeogramB158),
+            '𐂧' => Ok(LinearBIdeograms::LinearBIdeogramB159Cloth),
+            '𐂨' => Ok(LinearBIdeograms::LinearBIdeogramB160),
+            '𐂩' => Ok(LinearBIdeograms::LinearBIdeogramB161),
+            '𐂪' => Ok(LinearBIdeograms::LinearBIdeogramB162Garment),
+            '𐂫' => Ok(LinearBIdeograms::LinearBIdeogramB163Armour),
+            '𐂬' => Ok(LinearBIdeograms::LinearBIdeogramB164),
+            '𐂭' => Ok(LinearBIdeograms::LinearBIdeogramB165),
+            '𐂮' => Ok(LinearBIdeograms::LinearBIdeogramB166),
+            '𐂯' => Ok(LinearBIdeograms::LinearBIdeogramB167),
+            '𐂰' => Ok(LinearBIdeograms::LinearBIdeogramB168),
+            '𐂱' => Ok(LinearBIdeograms::LinearBIdeogramB169),
+            '𐂲' => Ok(LinearBIdeograms::LinearBIdeogramB170),
+            '𐂳' => Ok(LinearBIdeograms::LinearBIdeogramB171),
+            '𐂴' => Ok(LinearBIdeograms::LinearBIdeogramB172),
+            '𐂵' => Ok(LinearBIdeograms::LinearBIdeogramB173Month),
+            '𐂶' => Ok(LinearBIdeograms::LinearBIdeogramB174),
+            '𐂷' => Ok(LinearBIdeograms::LinearBIdeogramB176Tree),
+            '𐂸' => Ok(LinearBIdeograms::LinearBIdeogramB177),
+            '𐂹' => Ok(LinearBIdeograms::LinearBIdeogramB178),
+            '𐂺' => Ok(LinearBIdeograms::LinearBIdeogramB179),
+            '𐂻' => Ok(LinearBIdeograms::LinearBIdeogramB180),
+            '𐂼' => Ok(LinearBIdeograms::LinearBIdeogramB181),
+            '𐂽' => Ok(LinearBIdeograms::LinearBIdeogramB182),
+            '𐂾' => Ok(LinearBIdeograms::LinearBIdeogramB183),
+            '𐂿' => Ok(LinearBIdeograms::LinearBIdeogramB184),
+            '𐃀' => Ok(LinearBIdeograms::LinearBIdeogramB185),
+            '𐃁' => Ok(LinearBIdeograms::LinearBIdeogramB189),
+            '𐃂' => Ok(LinearBIdeograms::LinearBIdeogramB190),
+            '𐃃' => Ok(LinearBIdeograms::LinearBIdeogramB191Helmet),
+            '𐃄' => Ok(LinearBIdeograms::LinearBIdeogramB220Footstool),
+            '𐃅' => Ok(LinearBIdeograms::LinearBIdeogramB225Bathtub),
+            '𐃆' => Ok(LinearBIdeograms::LinearBIdeogramB230Spear),
+            '𐃇' => Ok(LinearBIdeograms::LinearBIdeogramB231Arrow),
+            '𐃈' => Ok(LinearBIdeograms::LinearBIdeogramB232),
+            '𐃉' => Ok(LinearBIdeograms::LinearBIdeogramB233Sword),
+            '𐃊' => Ok(LinearBIdeograms::LinearBIdeogramB234),
+            '𐃋' => Ok(LinearBIdeograms::LinearBIdeogramB236),
+            '𐃌' => Ok(LinearBIdeograms::LinearBIdeogramB240WheeledChariot),
+            '𐃍' => Ok(LinearBIdeograms::LinearBIdeogramB241Chariot),
+            '𐃎' => Ok(LinearBIdeograms::LinearBIdeogramB242ChariotFrame),
+            '𐃏' => Ok(LinearBIdeograms::LinearBIdeogramB243Wheel),
+            '𐃐' => Ok(LinearBIdeograms::LinearBIdeogramB245),
+            '𐃑' => Ok(LinearBIdeograms::LinearBIdeogramB246),
+            '𐃒' => Ok(LinearBIdeograms::LinearBMonogramB247Dipte),
+            '𐃓' => Ok(LinearBIdeograms::LinearBIdeogramB248),
+            '𐃔' => Ok(LinearBIdeograms::LinearBIdeogramB249),
+            '𐃕' => Ok(LinearBIdeograms::LinearBIdeogramB251),
+            '𐃖' => Ok(LinearBIdeograms::LinearBIdeogramB252),
+            '𐃗' => Ok(LinearBIdeograms::LinearBIdeogramB253),
+            '𐃘' => Ok(LinearBIdeograms::LinearBIdeogramB254Dart),
+            '𐃙' => Ok(LinearBIdeograms::LinearBIdeogramB255),
+            '𐃚' => Ok(LinearBIdeograms::LinearBIdeogramB256),
+            '𐃛' => Ok(LinearBIdeograms::LinearBIdeogramB257),
+            '𐃜' => Ok(LinearBIdeograms::LinearBIdeogramB258),
+            '𐃝' => Ok(LinearBIdeograms::LinearBIdeogramB259),
+            '𐃞' => Ok(LinearBIdeograms::LinearBIdeogramVesselB155),
+            '𐃟' => Ok(LinearBIdeograms::LinearBIdeogramVesselB200),
+            '𐃠' => Ok(LinearBIdeograms::LinearBIdeogramVesselB201),
+            '𐃡' => Ok(LinearBIdeograms::LinearBIdeogramVesselB202),
+            '𐃢' => Ok(LinearBIdeograms::LinearBIdeogramVesselB203),
+            '𐃣' => Ok(LinearBIdeograms::LinearBIdeogramVesselB204),
+            '𐃤' => Ok(LinearBIdeograms::LinearBIdeogramVesselB205),
+            '𐃥' => Ok(LinearBIdeograms::LinearBIdeogramVesselB206),
+            '𐃦' => Ok(LinearBIdeograms::LinearBIdeogramVesselB207),
+            '𐃧' => Ok(LinearBIdeograms::LinearBIdeogramVesselB208),
+            '𐃨' => Ok(LinearBIdeograms::LinearBIdeogramVesselB209),
+            '𐃩' => Ok(LinearBIdeograms::LinearBIdeogramVesselB210),
+            '𐃪' => Ok(LinearBIdeograms::LinearBIdeogramVesselB211),
+            '𐃫' => Ok(LinearBIdeograms::LinearBIdeogramVesselB212),
+            '𐃬' => Ok(LinearBIdeograms::LinearBIdeogramVesselB213),
+            '𐃭' => Ok(LinearBIdeograms::LinearBIdeogramVesselB214),
+            '𐃮' => Ok(LinearBIdeograms::LinearBIdeogramVesselB215),
+            '𐃯' => Ok(LinearBIdeograms::LinearBIdeogramVesselB216),
+            '𐃰' => Ok(LinearBIdeograms::LinearBIdeogramVesselB217),
+            '𐃱' => Ok(LinearBIdeograms::LinearBIdeogramVesselB218),
+            '𐃲' => Ok(LinearBIdeograms::LinearBIdeogramVesselB219),
+            '𐃳' => Ok(LinearBIdeograms::LinearBIdeogramVesselB221),
+            '𐃴' => Ok(LinearBIdeograms::LinearBIdeogramVesselB222),
+            '𐃵' => Ok(LinearBIdeograms::LinearBIdeogramVesselB226),
+            '𐃶' => Ok(LinearBIdeograms::LinearBIdeogramVesselB227),
+            '𐃷' => Ok(LinearBIdeograms::LinearBIdeogramVesselB228),
+            '𐃸' => Ok(LinearBIdeograms::LinearBIdeogramVesselB229),
+            '𐃹' => Ok(LinearBIdeograms::LinearBIdeogramVesselB250),
+            '𐃺' => Ok(LinearBIdeograms::LinearBIdeogramVesselB305),
             _ => Err(()),
         }
     }

@@ -1,516 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2300}: '⌀'
-    pub const DIAMETER_SIGN: char = '⌀';
-    /// \u{2301}: '⌁'
-    pub const ELECTRIC_ARROW: char = '⌁';
-    /// \u{2302}: '⌂'
-    pub const HOUSE: char = '⌂';
-    /// \u{2303}: '⌃'
-    pub const UP_ARROWHEAD: char = '⌃';
-    /// \u{2304}: '⌄'
-    pub const DOWN_ARROWHEAD: char = '⌄';
-    /// \u{2305}: '⌅'
-    pub const PROJECTIVE: char = '⌅';
-    /// \u{2306}: '⌆'
-    pub const PERSPECTIVE: char = '⌆';
-    /// \u{2307}: '⌇'
-    pub const WAVY_LINE: char = '⌇';
-    /// \u{2308}: '⌈'
-    pub const LEFT_CEILING: char = '⌈';
-    /// \u{2309}: '⌉'
-    pub const RIGHT_CEILING: char = '⌉';
-    /// \u{230a}: '⌊'
-    pub const LEFT_FLOOR: char = '⌊';
-    /// \u{230b}: '⌋'
-    pub const RIGHT_FLOOR: char = '⌋';
-    /// \u{230c}: '⌌'
-    pub const BOTTOM_RIGHT_CROP: char = '⌌';
-    /// \u{230d}: '⌍'
-    pub const BOTTOM_LEFT_CROP: char = '⌍';
-    /// \u{230e}: '⌎'
-    pub const TOP_RIGHT_CROP: char = '⌎';
-    /// \u{230f}: '⌏'
-    pub const TOP_LEFT_CROP: char = '⌏';
-    /// \u{2310}: '⌐'
-    pub const REVERSED_NOT_SIGN: char = '⌐';
-    /// \u{2311}: '⌑'
-    pub const SQUARE_LOZENGE: char = '⌑';
-    /// \u{2312}: '⌒'
-    pub const ARC: char = '⌒';
-    /// \u{2313}: '⌓'
-    pub const SEGMENT: char = '⌓';
-    /// \u{2314}: '⌔'
-    pub const SECTOR: char = '⌔';
-    /// \u{2315}: '⌕'
-    pub const TELEPHONE_RECORDER: char = '⌕';
-    /// \u{2316}: '⌖'
-    pub const POSITION_INDICATOR: char = '⌖';
-    /// \u{2317}: '⌗'
-    pub const VIEWDATA_SQUARE: char = '⌗';
-    /// \u{2318}: '⌘'
-    pub const PLACE_OF_INTEREST_SIGN: char = '⌘';
-    /// \u{2319}: '⌙'
-    pub const TURNED_NOT_SIGN: char = '⌙';
-    /// \u{231a}: '⌚'
-    pub const WATCH: char = '⌚';
-    /// \u{231b}: '⌛'
-    pub const HOURGLASS: char = '⌛';
-    /// \u{231c}: '⌜'
-    pub const TOP_LEFT_CORNER: char = '⌜';
-    /// \u{231d}: '⌝'
-    pub const TOP_RIGHT_CORNER: char = '⌝';
-    /// \u{231e}: '⌞'
-    pub const BOTTOM_LEFT_CORNER: char = '⌞';
-    /// \u{231f}: '⌟'
-    pub const BOTTOM_RIGHT_CORNER: char = '⌟';
-    /// \u{2320}: '⌠'
-    pub const TOP_HALF_INTEGRAL: char = '⌠';
-    /// \u{2321}: '⌡'
-    pub const BOTTOM_HALF_INTEGRAL: char = '⌡';
-    /// \u{2322}: '⌢'
-    pub const FROWN: char = '⌢';
-    /// \u{2323}: '⌣'
-    pub const SMILE: char = '⌣';
-    /// \u{2324}: '⌤'
-    pub const UP_ARROWHEAD_BETWEEN_TWO_HORIZONTAL_BARS: char = '⌤';
-    /// \u{2325}: '⌥'
-    pub const OPTION_KEY: char = '⌥';
-    /// \u{2326}: '⌦'
-    pub const ERASE_TO_THE_RIGHT: char = '⌦';
-    /// \u{2327}: '⌧'
-    pub const X_IN_A_RECTANGLE_BOX: char = '⌧';
-    /// \u{2328}: '⌨'
-    pub const KEYBOARD: char = '⌨';
-    /// \u{2329}: '〈'
-    pub const LEFT_DASH_POINTING_ANGLE_BRACKET: char = '〈';
-    /// \u{232a}: '〉'
-    pub const RIGHT_DASH_POINTING_ANGLE_BRACKET: char = '〉';
-    /// \u{232b}: '⌫'
-    pub const ERASE_TO_THE_LEFT: char = '⌫';
-    /// \u{232c}: '⌬'
-    pub const BENZENE_RING: char = '⌬';
-    /// \u{232d}: '⌭'
-    pub const CYLINDRICITY: char = '⌭';
-    /// \u{232e}: '⌮'
-    pub const ALL_AROUND_DASH_PROFILE: char = '⌮';
-    /// \u{232f}: '⌯'
-    pub const SYMMETRY: char = '⌯';
-    /// \u{2330}: '⌰'
-    pub const TOTAL_RUNOUT: char = '⌰';
-    /// \u{2331}: '⌱'
-    pub const DIMENSION_ORIGIN: char = '⌱';
-    /// \u{2332}: '⌲'
-    pub const CONICAL_TAPER: char = '⌲';
-    /// \u{2333}: '⌳'
-    pub const SLOPE: char = '⌳';
-    /// \u{2334}: '⌴'
-    pub const COUNTERBORE: char = '⌴';
-    /// \u{2335}: '⌵'
-    pub const COUNTERSINK: char = '⌵';
-    /// \u{2336}: '⌶'
-    pub const APL_FUNCTIONAL_SYMBOL_I_DASH_BEAM: char = '⌶';
-    /// \u{2337}: '⌷'
-    pub const APL_FUNCTIONAL_SYMBOL_SQUISH_QUAD: char = '⌷';
-    /// \u{2338}: '⌸'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_EQUAL: char = '⌸';
-    /// \u{2339}: '⌹'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_DIVIDE: char = '⌹';
-    /// \u{233a}: '⌺'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_DIAMOND: char = '⌺';
-    /// \u{233b}: '⌻'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_JOT: char = '⌻';
-    /// \u{233c}: '⌼'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_CIRCLE: char = '⌼';
-    /// \u{233d}: '⌽'
-    pub const APL_FUNCTIONAL_SYMBOL_CIRCLE_STILE: char = '⌽';
-    /// \u{233e}: '⌾'
-    pub const APL_FUNCTIONAL_SYMBOL_CIRCLE_JOT: char = '⌾';
-    /// \u{233f}: '⌿'
-    pub const APL_FUNCTIONAL_SYMBOL_SLASH_BAR: char = '⌿';
-    /// \u{2340}: '⍀'
-    pub const APL_FUNCTIONAL_SYMBOL_BACKSLASH_BAR: char = '⍀';
-    /// \u{2341}: '⍁'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_SLASH: char = '⍁';
-    /// \u{2342}: '⍂'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_BACKSLASH: char = '⍂';
-    /// \u{2343}: '⍃'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_LESS_DASH_THAN: char = '⍃';
-    /// \u{2344}: '⍄'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_GREATER_DASH_THAN: char = '⍄';
-    /// \u{2345}: '⍅'
-    pub const APL_FUNCTIONAL_SYMBOL_LEFTWARDS_VANE: char = '⍅';
-    /// \u{2346}: '⍆'
-    pub const APL_FUNCTIONAL_SYMBOL_RIGHTWARDS_VANE: char = '⍆';
-    /// \u{2347}: '⍇'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_LEFTWARDS_ARROW: char = '⍇';
-    /// \u{2348}: '⍈'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_RIGHTWARDS_ARROW: char = '⍈';
-    /// \u{2349}: '⍉'
-    pub const APL_FUNCTIONAL_SYMBOL_CIRCLE_BACKSLASH: char = '⍉';
-    /// \u{234a}: '⍊'
-    pub const APL_FUNCTIONAL_SYMBOL_DOWN_TACK_UNDERBAR: char = '⍊';
-    /// \u{234b}: '⍋'
-    pub const APL_FUNCTIONAL_SYMBOL_DELTA_STILE: char = '⍋';
-    /// \u{234c}: '⍌'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_DOWN_CARET: char = '⍌';
-    /// \u{234d}: '⍍'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_DELTA: char = '⍍';
-    /// \u{234e}: '⍎'
-    pub const APL_FUNCTIONAL_SYMBOL_DOWN_TACK_JOT: char = '⍎';
-    /// \u{234f}: '⍏'
-    pub const APL_FUNCTIONAL_SYMBOL_UPWARDS_VANE: char = '⍏';
-    /// \u{2350}: '⍐'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_UPWARDS_ARROW: char = '⍐';
-    /// \u{2351}: '⍑'
-    pub const APL_FUNCTIONAL_SYMBOL_UP_TACK_OVERBAR: char = '⍑';
-    /// \u{2352}: '⍒'
-    pub const APL_FUNCTIONAL_SYMBOL_DEL_STILE: char = '⍒';
-    /// \u{2353}: '⍓'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_UP_CARET: char = '⍓';
-    /// \u{2354}: '⍔'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_DEL: char = '⍔';
-    /// \u{2355}: '⍕'
-    pub const APL_FUNCTIONAL_SYMBOL_UP_TACK_JOT: char = '⍕';
-    /// \u{2356}: '⍖'
-    pub const APL_FUNCTIONAL_SYMBOL_DOWNWARDS_VANE: char = '⍖';
-    /// \u{2357}: '⍗'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_DOWNWARDS_ARROW: char = '⍗';
-    /// \u{2358}: '⍘'
-    pub const APL_FUNCTIONAL_SYMBOL_QUOTE_UNDERBAR: char = '⍘';
-    /// \u{2359}: '⍙'
-    pub const APL_FUNCTIONAL_SYMBOL_DELTA_UNDERBAR: char = '⍙';
-    /// \u{235a}: '⍚'
-    pub const APL_FUNCTIONAL_SYMBOL_DIAMOND_UNDERBAR: char = '⍚';
-    /// \u{235b}: '⍛'
-    pub const APL_FUNCTIONAL_SYMBOL_JOT_UNDERBAR: char = '⍛';
-    /// \u{235c}: '⍜'
-    pub const APL_FUNCTIONAL_SYMBOL_CIRCLE_UNDERBAR: char = '⍜';
-    /// \u{235d}: '⍝'
-    pub const APL_FUNCTIONAL_SYMBOL_UP_SHOE_JOT: char = '⍝';
-    /// \u{235e}: '⍞'
-    pub const APL_FUNCTIONAL_SYMBOL_QUOTE_QUAD: char = '⍞';
-    /// \u{235f}: '⍟'
-    pub const APL_FUNCTIONAL_SYMBOL_CIRCLE_STAR: char = '⍟';
-    /// \u{2360}: '⍠'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_COLON: char = '⍠';
-    /// \u{2361}: '⍡'
-    pub const APL_FUNCTIONAL_SYMBOL_UP_TACK_DIAERESIS: char = '⍡';
-    /// \u{2362}: '⍢'
-    pub const APL_FUNCTIONAL_SYMBOL_DEL_DIAERESIS: char = '⍢';
-    /// \u{2363}: '⍣'
-    pub const APL_FUNCTIONAL_SYMBOL_STAR_DIAERESIS: char = '⍣';
-    /// \u{2364}: '⍤'
-    pub const APL_FUNCTIONAL_SYMBOL_JOT_DIAERESIS: char = '⍤';
-    /// \u{2365}: '⍥'
-    pub const APL_FUNCTIONAL_SYMBOL_CIRCLE_DIAERESIS: char = '⍥';
-    /// \u{2366}: '⍦'
-    pub const APL_FUNCTIONAL_SYMBOL_DOWN_SHOE_STILE: char = '⍦';
-    /// \u{2367}: '⍧'
-    pub const APL_FUNCTIONAL_SYMBOL_LEFT_SHOE_STILE: char = '⍧';
-    /// \u{2368}: '⍨'
-    pub const APL_FUNCTIONAL_SYMBOL_TILDE_DIAERESIS: char = '⍨';
-    /// \u{2369}: '⍩'
-    pub const APL_FUNCTIONAL_SYMBOL_GREATER_DASH_THAN_DIAERESIS: char = '⍩';
-    /// \u{236a}: '⍪'
-    pub const APL_FUNCTIONAL_SYMBOL_COMMA_BAR: char = '⍪';
-    /// \u{236b}: '⍫'
-    pub const APL_FUNCTIONAL_SYMBOL_DEL_TILDE: char = '⍫';
-    /// \u{236c}: '⍬'
-    pub const APL_FUNCTIONAL_SYMBOL_ZILDE: char = '⍬';
-    /// \u{236d}: '⍭'
-    pub const APL_FUNCTIONAL_SYMBOL_STILE_TILDE: char = '⍭';
-    /// \u{236e}: '⍮'
-    pub const APL_FUNCTIONAL_SYMBOL_SEMICOLON_UNDERBAR: char = '⍮';
-    /// \u{236f}: '⍯'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_NOT_EQUAL: char = '⍯';
-    /// \u{2370}: '⍰'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD_QUESTION: char = '⍰';
-    /// \u{2371}: '⍱'
-    pub const APL_FUNCTIONAL_SYMBOL_DOWN_CARET_TILDE: char = '⍱';
-    /// \u{2372}: '⍲'
-    pub const APL_FUNCTIONAL_SYMBOL_UP_CARET_TILDE: char = '⍲';
-    /// \u{2373}: '⍳'
-    pub const APL_FUNCTIONAL_SYMBOL_IOTA: char = '⍳';
-    /// \u{2374}: '⍴'
-    pub const APL_FUNCTIONAL_SYMBOL_RHO: char = '⍴';
-    /// \u{2375}: '⍵'
-    pub const APL_FUNCTIONAL_SYMBOL_OMEGA: char = '⍵';
-    /// \u{2376}: '⍶'
-    pub const APL_FUNCTIONAL_SYMBOL_ALPHA_UNDERBAR: char = '⍶';
-    /// \u{2377}: '⍷'
-    pub const APL_FUNCTIONAL_SYMBOL_EPSILON_UNDERBAR: char = '⍷';
-    /// \u{2378}: '⍸'
-    pub const APL_FUNCTIONAL_SYMBOL_IOTA_UNDERBAR: char = '⍸';
-    /// \u{2379}: '⍹'
-    pub const APL_FUNCTIONAL_SYMBOL_OMEGA_UNDERBAR: char = '⍹';
-    /// \u{237a}: '⍺'
-    pub const APL_FUNCTIONAL_SYMBOL_ALPHA: char = '⍺';
-    /// \u{237b}: '⍻'
-    pub const NOT_CHECK_MARK: char = '⍻';
-    /// \u{237c}: '⍼'
-    pub const RIGHT_ANGLE_WITH_DOWNWARDS_ZIGZAG_ARROW: char = '⍼';
-    /// \u{237d}: '⍽'
-    pub const SHOULDERED_OPEN_BOX: char = '⍽';
-    /// \u{237e}: '⍾'
-    pub const BELL_SYMBOL: char = '⍾';
-    /// \u{237f}: '⍿'
-    pub const VERTICAL_LINE_WITH_MIDDLE_DOT: char = '⍿';
-    /// \u{2380}: '⎀'
-    pub const INSERTION_SYMBOL: char = '⎀';
-    /// \u{2381}: '⎁'
-    pub const CONTINUOUS_UNDERLINE_SYMBOL: char = '⎁';
-    /// \u{2382}: '⎂'
-    pub const DISCONTINUOUS_UNDERLINE_SYMBOL: char = '⎂';
-    /// \u{2383}: '⎃'
-    pub const EMPHASIS_SYMBOL: char = '⎃';
-    /// \u{2384}: '⎄'
-    pub const COMPOSITION_SYMBOL: char = '⎄';
-    /// \u{2385}: '⎅'
-    pub const WHITE_SQUARE_WITH_CENTRE_VERTICAL_LINE: char = '⎅';
-    /// \u{2386}: '⎆'
-    pub const ENTER_SYMBOL: char = '⎆';
-    /// \u{2387}: '⎇'
-    pub const ALTERNATIVE_KEY_SYMBOL: char = '⎇';
-    /// \u{2388}: '⎈'
-    pub const HELM_SYMBOL: char = '⎈';
-    /// \u{2389}: '⎉'
-    pub const CIRCLED_HORIZONTAL_BAR_WITH_NOTCH: char = '⎉';
-    /// \u{238a}: '⎊'
-    pub const CIRCLED_TRIANGLE_DOWN: char = '⎊';
-    /// \u{238b}: '⎋'
-    pub const BROKEN_CIRCLE_WITH_NORTHWEST_ARROW: char = '⎋';
-    /// \u{238c}: '⎌'
-    pub const UNDO_SYMBOL: char = '⎌';
-    /// \u{238d}: '⎍'
-    pub const MONOSTABLE_SYMBOL: char = '⎍';
-    /// \u{238e}: '⎎'
-    pub const HYSTERESIS_SYMBOL: char = '⎎';
-    /// \u{238f}: '⎏'
-    pub const OPEN_DASH_CIRCUIT_DASH_OUTPUT_H_DASH_TYPE_SYMBOL: char = '⎏';
-    /// \u{2390}: '⎐'
-    pub const OPEN_DASH_CIRCUIT_DASH_OUTPUT_L_DASH_TYPE_SYMBOL: char = '⎐';
-    /// \u{2391}: '⎑'
-    pub const PASSIVE_DASH_PULL_DASH_DOWN_DASH_OUTPUT_SYMBOL: char = '⎑';
-    /// \u{2392}: '⎒'
-    pub const PASSIVE_DASH_PULL_DASH_UP_DASH_OUTPUT_SYMBOL: char = '⎒';
-    /// \u{2393}: '⎓'
-    pub const DIRECT_CURRENT_SYMBOL_FORM_TWO: char = '⎓';
-    /// \u{2394}: '⎔'
-    pub const SOFTWARE_DASH_FUNCTION_SYMBOL: char = '⎔';
-    /// \u{2395}: '⎕'
-    pub const APL_FUNCTIONAL_SYMBOL_QUAD: char = '⎕';
-    /// \u{2396}: '⎖'
-    pub const DECIMAL_SEPARATOR_KEY_SYMBOL: char = '⎖';
-    /// \u{2397}: '⎗'
-    pub const PREVIOUS_PAGE: char = '⎗';
-    /// \u{2398}: '⎘'
-    pub const NEXT_PAGE: char = '⎘';
-    /// \u{2399}: '⎙'
-    pub const PRINT_SCREEN_SYMBOL: char = '⎙';
-    /// \u{239a}: '⎚'
-    pub const CLEAR_SCREEN_SYMBOL: char = '⎚';
-    /// \u{239b}: '⎛'
-    pub const LEFT_PARENTHESIS_UPPER_HOOK: char = '⎛';
-    /// \u{239c}: '⎜'
-    pub const LEFT_PARENTHESIS_EXTENSION: char = '⎜';
-    /// \u{239d}: '⎝'
-    pub const LEFT_PARENTHESIS_LOWER_HOOK: char = '⎝';
-    /// \u{239e}: '⎞'
-    pub const RIGHT_PARENTHESIS_UPPER_HOOK: char = '⎞';
-    /// \u{239f}: '⎟'
-    pub const RIGHT_PARENTHESIS_EXTENSION: char = '⎟';
-    /// \u{23a0}: '⎠'
-    pub const RIGHT_PARENTHESIS_LOWER_HOOK: char = '⎠';
-    /// \u{23a1}: '⎡'
-    pub const LEFT_SQUARE_BRACKET_UPPER_CORNER: char = '⎡';
-    /// \u{23a2}: '⎢'
-    pub const LEFT_SQUARE_BRACKET_EXTENSION: char = '⎢';
-    /// \u{23a3}: '⎣'
-    pub const LEFT_SQUARE_BRACKET_LOWER_CORNER: char = '⎣';
-    /// \u{23a4}: '⎤'
-    pub const RIGHT_SQUARE_BRACKET_UPPER_CORNER: char = '⎤';
-    /// \u{23a5}: '⎥'
-    pub const RIGHT_SQUARE_BRACKET_EXTENSION: char = '⎥';
-    /// \u{23a6}: '⎦'
-    pub const RIGHT_SQUARE_BRACKET_LOWER_CORNER: char = '⎦';
-    /// \u{23a7}: '⎧'
-    pub const LEFT_CURLY_BRACKET_UPPER_HOOK: char = '⎧';
-    /// \u{23a8}: '⎨'
-    pub const LEFT_CURLY_BRACKET_MIDDLE_PIECE: char = '⎨';
-    /// \u{23a9}: '⎩'
-    pub const LEFT_CURLY_BRACKET_LOWER_HOOK: char = '⎩';
-    /// \u{23aa}: '⎪'
-    pub const CURLY_BRACKET_EXTENSION: char = '⎪';
-    /// \u{23ab}: '⎫'
-    pub const RIGHT_CURLY_BRACKET_UPPER_HOOK: char = '⎫';
-    /// \u{23ac}: '⎬'
-    pub const RIGHT_CURLY_BRACKET_MIDDLE_PIECE: char = '⎬';
-    /// \u{23ad}: '⎭'
-    pub const RIGHT_CURLY_BRACKET_LOWER_HOOK: char = '⎭';
-    /// \u{23ae}: '⎮'
-    pub const INTEGRAL_EXTENSION: char = '⎮';
-    /// \u{23af}: '⎯'
-    pub const HORIZONTAL_LINE_EXTENSION: char = '⎯';
-    /// \u{23b0}: '⎰'
-    pub const UPPER_LEFT_OR_LOWER_RIGHT_CURLY_BRACKET_SECTION: char = '⎰';
-    /// \u{23b1}: '⎱'
-    pub const UPPER_RIGHT_OR_LOWER_LEFT_CURLY_BRACKET_SECTION: char = '⎱';
-    /// \u{23b2}: '⎲'
-    pub const SUMMATION_TOP: char = '⎲';
-    /// \u{23b3}: '⎳'
-    pub const SUMMATION_BOTTOM: char = '⎳';
-    /// \u{23b4}: '⎴'
-    pub const TOP_SQUARE_BRACKET: char = '⎴';
-    /// \u{23b5}: '⎵'
-    pub const BOTTOM_SQUARE_BRACKET: char = '⎵';
-    /// \u{23b6}: '⎶'
-    pub const BOTTOM_SQUARE_BRACKET_OVER_TOP_SQUARE_BRACKET: char = '⎶';
-    /// \u{23b7}: '⎷'
-    pub const RADICAL_SYMBOL_BOTTOM: char = '⎷';
-    /// \u{23b8}: '⎸'
-    pub const LEFT_VERTICAL_BOX_LINE: char = '⎸';
-    /// \u{23b9}: '⎹'
-    pub const RIGHT_VERTICAL_BOX_LINE: char = '⎹';
-    /// \u{23ba}: '⎺'
-    pub const HORIZONTAL_SCAN_LINE_DASH_1: char = '⎺';
-    /// \u{23bb}: '⎻'
-    pub const HORIZONTAL_SCAN_LINE_DASH_3: char = '⎻';
-    /// \u{23bc}: '⎼'
-    pub const HORIZONTAL_SCAN_LINE_DASH_7: char = '⎼';
-    /// \u{23bd}: '⎽'
-    pub const HORIZONTAL_SCAN_LINE_DASH_9: char = '⎽';
-    /// \u{23be}: '⎾'
-    pub const DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_TOP_RIGHT: char = '⎾';
-    /// \u{23bf}: '⎿'
-    pub const DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_BOTTOM_RIGHT: char = '⎿';
-    /// \u{23c0}: '⏀'
-    pub const DENTISTRY_SYMBOL_LIGHT_VERTICAL_WITH_CIRCLE: char = '⏀';
-    /// \u{23c1}: '⏁'
-    pub const DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_CIRCLE: char = '⏁';
-    /// \u{23c2}: '⏂'
-    pub const DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_CIRCLE: char = '⏂';
-    /// \u{23c3}: '⏃'
-    pub const DENTISTRY_SYMBOL_LIGHT_VERTICAL_WITH_TRIANGLE: char = '⏃';
-    /// \u{23c4}: '⏄'
-    pub const DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_TRIANGLE: char = '⏄';
-    /// \u{23c5}: '⏅'
-    pub const DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_TRIANGLE: char = '⏅';
-    /// \u{23c6}: '⏆'
-    pub const DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_WAVE: char = '⏆';
-    /// \u{23c7}: '⏇'
-    pub const DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_WAVE: char = '⏇';
-    /// \u{23c8}: '⏈'
-    pub const DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_WAVE: char = '⏈';
-    /// \u{23c9}: '⏉'
-    pub const DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL: char = '⏉';
-    /// \u{23ca}: '⏊'
-    pub const DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL: char = '⏊';
-    /// \u{23cb}: '⏋'
-    pub const DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_TOP_LEFT: char = '⏋';
-    /// \u{23cc}: '⏌'
-    pub const DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_BOTTOM_LEFT: char = '⏌';
-    /// \u{23cd}: '⏍'
-    pub const SQUARE_FOOT: char = '⏍';
-    /// \u{23ce}: '⏎'
-    pub const RETURN_SYMBOL: char = '⏎';
-    /// \u{23cf}: '⏏'
-    pub const EJECT_SYMBOL: char = '⏏';
-    /// \u{23d0}: '⏐'
-    pub const VERTICAL_LINE_EXTENSION: char = '⏐';
-    /// \u{23d1}: '⏑'
-    pub const METRICAL_BREVE: char = '⏑';
-    /// \u{23d2}: '⏒'
-    pub const METRICAL_LONG_OVER_SHORT: char = '⏒';
-    /// \u{23d3}: '⏓'
-    pub const METRICAL_SHORT_OVER_LONG: char = '⏓';
-    /// \u{23d4}: '⏔'
-    pub const METRICAL_LONG_OVER_TWO_SHORTS: char = '⏔';
-    /// \u{23d5}: '⏕'
-    pub const METRICAL_TWO_SHORTS_OVER_LONG: char = '⏕';
-    /// \u{23d6}: '⏖'
-    pub const METRICAL_TWO_SHORTS_JOINED: char = '⏖';
-    /// \u{23d7}: '⏗'
-    pub const METRICAL_TRISEME: char = '⏗';
-    /// \u{23d8}: '⏘'
-    pub const METRICAL_TETRASEME: char = '⏘';
-    /// \u{23d9}: '⏙'
-    pub const METRICAL_PENTASEME: char = '⏙';
-    /// \u{23da}: '⏚'
-    pub const EARTH_GROUND: char = '⏚';
-    /// \u{23db}: '⏛'
-    pub const FUSE: char = '⏛';
-    /// \u{23dc}: '⏜'
-    pub const TOP_PARENTHESIS: char = '⏜';
-    /// \u{23dd}: '⏝'
-    pub const BOTTOM_PARENTHESIS: char = '⏝';
-    /// \u{23de}: '⏞'
-    pub const TOP_CURLY_BRACKET: char = '⏞';
-    /// \u{23df}: '⏟'
-    pub const BOTTOM_CURLY_BRACKET: char = '⏟';
-    /// \u{23e0}: '⏠'
-    pub const TOP_TORTOISE_SHELL_BRACKET: char = '⏠';
-    /// \u{23e1}: '⏡'
-    pub const BOTTOM_TORTOISE_SHELL_BRACKET: char = '⏡';
-    /// \u{23e2}: '⏢'
-    pub const WHITE_TRAPEZIUM: char = '⏢';
-    /// \u{23e3}: '⏣'
-    pub const BENZENE_RING_WITH_CIRCLE: char = '⏣';
-    /// \u{23e4}: '⏤'
-    pub const STRAIGHTNESS: char = '⏤';
-    /// \u{23e5}: '⏥'
-    pub const FLATNESS: char = '⏥';
-    /// \u{23e6}: '⏦'
-    pub const AC_CURRENT: char = '⏦';
-    /// \u{23e7}: '⏧'
-    pub const ELECTRICAL_INTERSECTION: char = '⏧';
-    /// \u{23e8}: '⏨'
-    pub const DECIMAL_EXPONENT_SYMBOL: char = '⏨';
-    /// \u{23e9}: '⏩'
-    pub const BLACK_RIGHT_DASH_POINTING_DOUBLE_TRIANGLE: char = '⏩';
-    /// \u{23ea}: '⏪'
-    pub const BLACK_LEFT_DASH_POINTING_DOUBLE_TRIANGLE: char = '⏪';
-    /// \u{23eb}: '⏫'
-    pub const BLACK_UP_DASH_POINTING_DOUBLE_TRIANGLE: char = '⏫';
-    /// \u{23ec}: '⏬'
-    pub const BLACK_DOWN_DASH_POINTING_DOUBLE_TRIANGLE: char = '⏬';
-    /// \u{23ed}: '⏭'
-    pub const BLACK_RIGHT_DASH_POINTING_DOUBLE_TRIANGLE_WITH_VERTICAL_BAR: char = '⏭';
-    /// \u{23ee}: '⏮'
-    pub const BLACK_LEFT_DASH_POINTING_DOUBLE_TRIANGLE_WITH_VERTICAL_BAR: char = '⏮';
-    /// \u{23ef}: '⏯'
-    pub const BLACK_RIGHT_DASH_POINTING_TRIANGLE_WITH_DOUBLE_VERTICAL_BAR: char = '⏯';
-    /// \u{23f0}: '⏰'
-    pub const ALARM_CLOCK: char = '⏰';
-    /// \u{23f1}: '⏱'
-    pub const STOPWATCH: char = '⏱';
-    /// \u{23f2}: '⏲'
-    pub const TIMER_CLOCK: char = '⏲';
-    /// \u{23f3}: '⏳'
-    pub const HOURGLASS_WITH_FLOWING_SAND: char = '⏳';
-    /// \u{23f4}: '⏴'
-    pub const BLACK_MEDIUM_LEFT_DASH_POINTING_TRIANGLE: char = '⏴';
-    /// \u{23f5}: '⏵'
-    pub const BLACK_MEDIUM_RIGHT_DASH_POINTING_TRIANGLE: char = '⏵';
-    /// \u{23f6}: '⏶'
-    pub const BLACK_MEDIUM_UP_DASH_POINTING_TRIANGLE: char = '⏶';
-    /// \u{23f7}: '⏷'
-    pub const BLACK_MEDIUM_DOWN_DASH_POINTING_TRIANGLE: char = '⏷';
-    /// \u{23f8}: '⏸'
-    pub const DOUBLE_VERTICAL_BAR: char = '⏸';
-    /// \u{23f9}: '⏹'
-    pub const BLACK_SQUARE_FOR_STOP: char = '⏹';
-    /// \u{23fa}: '⏺'
-    pub const BLACK_CIRCLE_FOR_RECORD: char = '⏺';
-    /// \u{23fb}: '⏻'
-    pub const POWER_SYMBOL: char = '⏻';
-    /// \u{23fc}: '⏼'
-    pub const POWER_ON_DASH_OFF_SYMBOL: char = '⏼';
-    /// \u{23fd}: '⏽'
-    pub const POWER_ON_SYMBOL: char = '⏽';
-    /// \u{23fe}: '⏾'
-    pub const POWER_SLEEP_SYMBOL: char = '⏾';
-}
 
 /// An enum to represent all characters in the MiscellaneousTechnical block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -1029,263 +516,262 @@ pub enum MiscellaneousTechnical {
 
 impl Into<char> for MiscellaneousTechnical {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MiscellaneousTechnical::DiameterSign => DIAMETER_SIGN,
-            MiscellaneousTechnical::ElectricArrow => ELECTRIC_ARROW,
-            MiscellaneousTechnical::House => HOUSE,
-            MiscellaneousTechnical::UpArrowhead => UP_ARROWHEAD,
-            MiscellaneousTechnical::DownArrowhead => DOWN_ARROWHEAD,
-            MiscellaneousTechnical::Projective => PROJECTIVE,
-            MiscellaneousTechnical::Perspective => PERSPECTIVE,
-            MiscellaneousTechnical::WavyLine => WAVY_LINE,
-            MiscellaneousTechnical::LeftCeiling => LEFT_CEILING,
-            MiscellaneousTechnical::RightCeiling => RIGHT_CEILING,
-            MiscellaneousTechnical::LeftFloor => LEFT_FLOOR,
-            MiscellaneousTechnical::RightFloor => RIGHT_FLOOR,
-            MiscellaneousTechnical::BottomRightCrop => BOTTOM_RIGHT_CROP,
-            MiscellaneousTechnical::BottomLeftCrop => BOTTOM_LEFT_CROP,
-            MiscellaneousTechnical::TopRightCrop => TOP_RIGHT_CROP,
-            MiscellaneousTechnical::TopLeftCrop => TOP_LEFT_CROP,
-            MiscellaneousTechnical::ReversedNotSign => REVERSED_NOT_SIGN,
-            MiscellaneousTechnical::SquareLozenge => SQUARE_LOZENGE,
-            MiscellaneousTechnical::Arc => ARC,
-            MiscellaneousTechnical::Segment => SEGMENT,
-            MiscellaneousTechnical::Sector => SECTOR,
-            MiscellaneousTechnical::TelephoneRecorder => TELEPHONE_RECORDER,
-            MiscellaneousTechnical::PositionIndicator => POSITION_INDICATOR,
-            MiscellaneousTechnical::ViewdataSquare => VIEWDATA_SQUARE,
-            MiscellaneousTechnical::PlaceOfInterestSign => PLACE_OF_INTEREST_SIGN,
-            MiscellaneousTechnical::TurnedNotSign => TURNED_NOT_SIGN,
-            MiscellaneousTechnical::Watch => WATCH,
-            MiscellaneousTechnical::Hourglass => HOURGLASS,
-            MiscellaneousTechnical::TopLeftCorner => TOP_LEFT_CORNER,
-            MiscellaneousTechnical::TopRightCorner => TOP_RIGHT_CORNER,
-            MiscellaneousTechnical::BottomLeftCorner => BOTTOM_LEFT_CORNER,
-            MiscellaneousTechnical::BottomRightCorner => BOTTOM_RIGHT_CORNER,
-            MiscellaneousTechnical::TopHalfIntegral => TOP_HALF_INTEGRAL,
-            MiscellaneousTechnical::BottomHalfIntegral => BOTTOM_HALF_INTEGRAL,
-            MiscellaneousTechnical::Frown => FROWN,
-            MiscellaneousTechnical::Smile => SMILE,
-            MiscellaneousTechnical::UpArrowheadBetweenTwoHorizontalBars => UP_ARROWHEAD_BETWEEN_TWO_HORIZONTAL_BARS,
-            MiscellaneousTechnical::OptionKey => OPTION_KEY,
-            MiscellaneousTechnical::EraseToTheRight => ERASE_TO_THE_RIGHT,
-            MiscellaneousTechnical::XInARectangleBox => X_IN_A_RECTANGLE_BOX,
-            MiscellaneousTechnical::Keyboard => KEYBOARD,
-            MiscellaneousTechnical::LeftDashPointingAngleBracket => LEFT_DASH_POINTING_ANGLE_BRACKET,
-            MiscellaneousTechnical::RightDashPointingAngleBracket => RIGHT_DASH_POINTING_ANGLE_BRACKET,
-            MiscellaneousTechnical::EraseToTheLeft => ERASE_TO_THE_LEFT,
-            MiscellaneousTechnical::BenzeneRing => BENZENE_RING,
-            MiscellaneousTechnical::Cylindricity => CYLINDRICITY,
-            MiscellaneousTechnical::AllAroundDashProfile => ALL_AROUND_DASH_PROFILE,
-            MiscellaneousTechnical::Symmetry => SYMMETRY,
-            MiscellaneousTechnical::TotalRunout => TOTAL_RUNOUT,
-            MiscellaneousTechnical::DimensionOrigin => DIMENSION_ORIGIN,
-            MiscellaneousTechnical::ConicalTaper => CONICAL_TAPER,
-            MiscellaneousTechnical::Slope => SLOPE,
-            MiscellaneousTechnical::Counterbore => COUNTERBORE,
-            MiscellaneousTechnical::Countersink => COUNTERSINK,
-            MiscellaneousTechnical::AplFunctionalSymbolIDashBeam => APL_FUNCTIONAL_SYMBOL_I_DASH_BEAM,
-            MiscellaneousTechnical::AplFunctionalSymbolSquishQuad => APL_FUNCTIONAL_SYMBOL_SQUISH_QUAD,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadEqual => APL_FUNCTIONAL_SYMBOL_QUAD_EQUAL,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadDivide => APL_FUNCTIONAL_SYMBOL_QUAD_DIVIDE,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadDiamond => APL_FUNCTIONAL_SYMBOL_QUAD_DIAMOND,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadJot => APL_FUNCTIONAL_SYMBOL_QUAD_JOT,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadCircle => APL_FUNCTIONAL_SYMBOL_QUAD_CIRCLE,
-            MiscellaneousTechnical::AplFunctionalSymbolCircleStile => APL_FUNCTIONAL_SYMBOL_CIRCLE_STILE,
-            MiscellaneousTechnical::AplFunctionalSymbolCircleJot => APL_FUNCTIONAL_SYMBOL_CIRCLE_JOT,
-            MiscellaneousTechnical::AplFunctionalSymbolSlashBar => APL_FUNCTIONAL_SYMBOL_SLASH_BAR,
-            MiscellaneousTechnical::AplFunctionalSymbolBackslashBar => APL_FUNCTIONAL_SYMBOL_BACKSLASH_BAR,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadSlash => APL_FUNCTIONAL_SYMBOL_QUAD_SLASH,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadBackslash => APL_FUNCTIONAL_SYMBOL_QUAD_BACKSLASH,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadLessDashThan => APL_FUNCTIONAL_SYMBOL_QUAD_LESS_DASH_THAN,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadGreaterDashThan => APL_FUNCTIONAL_SYMBOL_QUAD_GREATER_DASH_THAN,
-            MiscellaneousTechnical::AplFunctionalSymbolLeftwardsVane => APL_FUNCTIONAL_SYMBOL_LEFTWARDS_VANE,
-            MiscellaneousTechnical::AplFunctionalSymbolRightwardsVane => APL_FUNCTIONAL_SYMBOL_RIGHTWARDS_VANE,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadLeftwardsArrow => APL_FUNCTIONAL_SYMBOL_QUAD_LEFTWARDS_ARROW,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadRightwardsArrow => APL_FUNCTIONAL_SYMBOL_QUAD_RIGHTWARDS_ARROW,
-            MiscellaneousTechnical::AplFunctionalSymbolCircleBackslash => APL_FUNCTIONAL_SYMBOL_CIRCLE_BACKSLASH,
-            MiscellaneousTechnical::AplFunctionalSymbolDownTackUnderbar => APL_FUNCTIONAL_SYMBOL_DOWN_TACK_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolDeltaStile => APL_FUNCTIONAL_SYMBOL_DELTA_STILE,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadDownCaret => APL_FUNCTIONAL_SYMBOL_QUAD_DOWN_CARET,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadDelta => APL_FUNCTIONAL_SYMBOL_QUAD_DELTA,
-            MiscellaneousTechnical::AplFunctionalSymbolDownTackJot => APL_FUNCTIONAL_SYMBOL_DOWN_TACK_JOT,
-            MiscellaneousTechnical::AplFunctionalSymbolUpwardsVane => APL_FUNCTIONAL_SYMBOL_UPWARDS_VANE,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadUpwardsArrow => APL_FUNCTIONAL_SYMBOL_QUAD_UPWARDS_ARROW,
-            MiscellaneousTechnical::AplFunctionalSymbolUpTackOverbar => APL_FUNCTIONAL_SYMBOL_UP_TACK_OVERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolDelStile => APL_FUNCTIONAL_SYMBOL_DEL_STILE,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadUpCaret => APL_FUNCTIONAL_SYMBOL_QUAD_UP_CARET,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadDel => APL_FUNCTIONAL_SYMBOL_QUAD_DEL,
-            MiscellaneousTechnical::AplFunctionalSymbolUpTackJot => APL_FUNCTIONAL_SYMBOL_UP_TACK_JOT,
-            MiscellaneousTechnical::AplFunctionalSymbolDownwardsVane => APL_FUNCTIONAL_SYMBOL_DOWNWARDS_VANE,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadDownwardsArrow => APL_FUNCTIONAL_SYMBOL_QUAD_DOWNWARDS_ARROW,
-            MiscellaneousTechnical::AplFunctionalSymbolQuoteUnderbar => APL_FUNCTIONAL_SYMBOL_QUOTE_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolDeltaUnderbar => APL_FUNCTIONAL_SYMBOL_DELTA_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolDiamondUnderbar => APL_FUNCTIONAL_SYMBOL_DIAMOND_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolJotUnderbar => APL_FUNCTIONAL_SYMBOL_JOT_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolCircleUnderbar => APL_FUNCTIONAL_SYMBOL_CIRCLE_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolUpShoeJot => APL_FUNCTIONAL_SYMBOL_UP_SHOE_JOT,
-            MiscellaneousTechnical::AplFunctionalSymbolQuoteQuad => APL_FUNCTIONAL_SYMBOL_QUOTE_QUAD,
-            MiscellaneousTechnical::AplFunctionalSymbolCircleStar => APL_FUNCTIONAL_SYMBOL_CIRCLE_STAR,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadColon => APL_FUNCTIONAL_SYMBOL_QUAD_COLON,
-            MiscellaneousTechnical::AplFunctionalSymbolUpTackDiaeresis => APL_FUNCTIONAL_SYMBOL_UP_TACK_DIAERESIS,
-            MiscellaneousTechnical::AplFunctionalSymbolDelDiaeresis => APL_FUNCTIONAL_SYMBOL_DEL_DIAERESIS,
-            MiscellaneousTechnical::AplFunctionalSymbolStarDiaeresis => APL_FUNCTIONAL_SYMBOL_STAR_DIAERESIS,
-            MiscellaneousTechnical::AplFunctionalSymbolJotDiaeresis => APL_FUNCTIONAL_SYMBOL_JOT_DIAERESIS,
-            MiscellaneousTechnical::AplFunctionalSymbolCircleDiaeresis => APL_FUNCTIONAL_SYMBOL_CIRCLE_DIAERESIS,
-            MiscellaneousTechnical::AplFunctionalSymbolDownShoeStile => APL_FUNCTIONAL_SYMBOL_DOWN_SHOE_STILE,
-            MiscellaneousTechnical::AplFunctionalSymbolLeftShoeStile => APL_FUNCTIONAL_SYMBOL_LEFT_SHOE_STILE,
-            MiscellaneousTechnical::AplFunctionalSymbolTildeDiaeresis => APL_FUNCTIONAL_SYMBOL_TILDE_DIAERESIS,
-            MiscellaneousTechnical::AplFunctionalSymbolGreaterDashThanDiaeresis => APL_FUNCTIONAL_SYMBOL_GREATER_DASH_THAN_DIAERESIS,
-            MiscellaneousTechnical::AplFunctionalSymbolCommaBar => APL_FUNCTIONAL_SYMBOL_COMMA_BAR,
-            MiscellaneousTechnical::AplFunctionalSymbolDelTilde => APL_FUNCTIONAL_SYMBOL_DEL_TILDE,
-            MiscellaneousTechnical::AplFunctionalSymbolZilde => APL_FUNCTIONAL_SYMBOL_ZILDE,
-            MiscellaneousTechnical::AplFunctionalSymbolStileTilde => APL_FUNCTIONAL_SYMBOL_STILE_TILDE,
-            MiscellaneousTechnical::AplFunctionalSymbolSemicolonUnderbar => APL_FUNCTIONAL_SYMBOL_SEMICOLON_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadNotEqual => APL_FUNCTIONAL_SYMBOL_QUAD_NOT_EQUAL,
-            MiscellaneousTechnical::AplFunctionalSymbolQuadQuestion => APL_FUNCTIONAL_SYMBOL_QUAD_QUESTION,
-            MiscellaneousTechnical::AplFunctionalSymbolDownCaretTilde => APL_FUNCTIONAL_SYMBOL_DOWN_CARET_TILDE,
-            MiscellaneousTechnical::AplFunctionalSymbolUpCaretTilde => APL_FUNCTIONAL_SYMBOL_UP_CARET_TILDE,
-            MiscellaneousTechnical::AplFunctionalSymbolIota => APL_FUNCTIONAL_SYMBOL_IOTA,
-            MiscellaneousTechnical::AplFunctionalSymbolRho => APL_FUNCTIONAL_SYMBOL_RHO,
-            MiscellaneousTechnical::AplFunctionalSymbolOmega => APL_FUNCTIONAL_SYMBOL_OMEGA,
-            MiscellaneousTechnical::AplFunctionalSymbolAlphaUnderbar => APL_FUNCTIONAL_SYMBOL_ALPHA_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolEpsilonUnderbar => APL_FUNCTIONAL_SYMBOL_EPSILON_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolIotaUnderbar => APL_FUNCTIONAL_SYMBOL_IOTA_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolOmegaUnderbar => APL_FUNCTIONAL_SYMBOL_OMEGA_UNDERBAR,
-            MiscellaneousTechnical::AplFunctionalSymbolAlpha => APL_FUNCTIONAL_SYMBOL_ALPHA,
-            MiscellaneousTechnical::NotCheckMark => NOT_CHECK_MARK,
-            MiscellaneousTechnical::RightAngleWithDownwardsZigzagArrow => RIGHT_ANGLE_WITH_DOWNWARDS_ZIGZAG_ARROW,
-            MiscellaneousTechnical::ShoulderedOpenBox => SHOULDERED_OPEN_BOX,
-            MiscellaneousTechnical::BellSymbol => BELL_SYMBOL,
-            MiscellaneousTechnical::VerticalLineWithMiddleDot => VERTICAL_LINE_WITH_MIDDLE_DOT,
-            MiscellaneousTechnical::InsertionSymbol => INSERTION_SYMBOL,
-            MiscellaneousTechnical::ContinuousUnderlineSymbol => CONTINUOUS_UNDERLINE_SYMBOL,
-            MiscellaneousTechnical::DiscontinuousUnderlineSymbol => DISCONTINUOUS_UNDERLINE_SYMBOL,
-            MiscellaneousTechnical::EmphasisSymbol => EMPHASIS_SYMBOL,
-            MiscellaneousTechnical::CompositionSymbol => COMPOSITION_SYMBOL,
-            MiscellaneousTechnical::WhiteSquareWithCentreVerticalLine => WHITE_SQUARE_WITH_CENTRE_VERTICAL_LINE,
-            MiscellaneousTechnical::EnterSymbol => ENTER_SYMBOL,
-            MiscellaneousTechnical::AlternativeKeySymbol => ALTERNATIVE_KEY_SYMBOL,
-            MiscellaneousTechnical::HelmSymbol => HELM_SYMBOL,
-            MiscellaneousTechnical::CircledHorizontalBarWithNotch => CIRCLED_HORIZONTAL_BAR_WITH_NOTCH,
-            MiscellaneousTechnical::CircledTriangleDown => CIRCLED_TRIANGLE_DOWN,
-            MiscellaneousTechnical::BrokenCircleWithNorthwestArrow => BROKEN_CIRCLE_WITH_NORTHWEST_ARROW,
-            MiscellaneousTechnical::UndoSymbol => UNDO_SYMBOL,
-            MiscellaneousTechnical::MonostableSymbol => MONOSTABLE_SYMBOL,
-            MiscellaneousTechnical::HysteresisSymbol => HYSTERESIS_SYMBOL,
-            MiscellaneousTechnical::OpenDashCircuitDashOutputHDashTypeSymbol => OPEN_DASH_CIRCUIT_DASH_OUTPUT_H_DASH_TYPE_SYMBOL,
-            MiscellaneousTechnical::OpenDashCircuitDashOutputLDashTypeSymbol => OPEN_DASH_CIRCUIT_DASH_OUTPUT_L_DASH_TYPE_SYMBOL,
-            MiscellaneousTechnical::PassiveDashPullDashDownDashOutputSymbol => PASSIVE_DASH_PULL_DASH_DOWN_DASH_OUTPUT_SYMBOL,
-            MiscellaneousTechnical::PassiveDashPullDashUpDashOutputSymbol => PASSIVE_DASH_PULL_DASH_UP_DASH_OUTPUT_SYMBOL,
-            MiscellaneousTechnical::DirectCurrentSymbolFormTwo => DIRECT_CURRENT_SYMBOL_FORM_TWO,
-            MiscellaneousTechnical::SoftwareDashFunctionSymbol => SOFTWARE_DASH_FUNCTION_SYMBOL,
-            MiscellaneousTechnical::AplFunctionalSymbolQuad => APL_FUNCTIONAL_SYMBOL_QUAD,
-            MiscellaneousTechnical::DecimalSeparatorKeySymbol => DECIMAL_SEPARATOR_KEY_SYMBOL,
-            MiscellaneousTechnical::PreviousPage => PREVIOUS_PAGE,
-            MiscellaneousTechnical::NextPage => NEXT_PAGE,
-            MiscellaneousTechnical::PrintScreenSymbol => PRINT_SCREEN_SYMBOL,
-            MiscellaneousTechnical::ClearScreenSymbol => CLEAR_SCREEN_SYMBOL,
-            MiscellaneousTechnical::LeftParenthesisUpperHook => LEFT_PARENTHESIS_UPPER_HOOK,
-            MiscellaneousTechnical::LeftParenthesisExtension => LEFT_PARENTHESIS_EXTENSION,
-            MiscellaneousTechnical::LeftParenthesisLowerHook => LEFT_PARENTHESIS_LOWER_HOOK,
-            MiscellaneousTechnical::RightParenthesisUpperHook => RIGHT_PARENTHESIS_UPPER_HOOK,
-            MiscellaneousTechnical::RightParenthesisExtension => RIGHT_PARENTHESIS_EXTENSION,
-            MiscellaneousTechnical::RightParenthesisLowerHook => RIGHT_PARENTHESIS_LOWER_HOOK,
-            MiscellaneousTechnical::LeftSquareBracketUpperCorner => LEFT_SQUARE_BRACKET_UPPER_CORNER,
-            MiscellaneousTechnical::LeftSquareBracketExtension => LEFT_SQUARE_BRACKET_EXTENSION,
-            MiscellaneousTechnical::LeftSquareBracketLowerCorner => LEFT_SQUARE_BRACKET_LOWER_CORNER,
-            MiscellaneousTechnical::RightSquareBracketUpperCorner => RIGHT_SQUARE_BRACKET_UPPER_CORNER,
-            MiscellaneousTechnical::RightSquareBracketExtension => RIGHT_SQUARE_BRACKET_EXTENSION,
-            MiscellaneousTechnical::RightSquareBracketLowerCorner => RIGHT_SQUARE_BRACKET_LOWER_CORNER,
-            MiscellaneousTechnical::LeftCurlyBracketUpperHook => LEFT_CURLY_BRACKET_UPPER_HOOK,
-            MiscellaneousTechnical::LeftCurlyBracketMiddlePiece => LEFT_CURLY_BRACKET_MIDDLE_PIECE,
-            MiscellaneousTechnical::LeftCurlyBracketLowerHook => LEFT_CURLY_BRACKET_LOWER_HOOK,
-            MiscellaneousTechnical::CurlyBracketExtension => CURLY_BRACKET_EXTENSION,
-            MiscellaneousTechnical::RightCurlyBracketUpperHook => RIGHT_CURLY_BRACKET_UPPER_HOOK,
-            MiscellaneousTechnical::RightCurlyBracketMiddlePiece => RIGHT_CURLY_BRACKET_MIDDLE_PIECE,
-            MiscellaneousTechnical::RightCurlyBracketLowerHook => RIGHT_CURLY_BRACKET_LOWER_HOOK,
-            MiscellaneousTechnical::IntegralExtension => INTEGRAL_EXTENSION,
-            MiscellaneousTechnical::HorizontalLineExtension => HORIZONTAL_LINE_EXTENSION,
-            MiscellaneousTechnical::UpperLeftOrLowerRightCurlyBracketSection => UPPER_LEFT_OR_LOWER_RIGHT_CURLY_BRACKET_SECTION,
-            MiscellaneousTechnical::UpperRightOrLowerLeftCurlyBracketSection => UPPER_RIGHT_OR_LOWER_LEFT_CURLY_BRACKET_SECTION,
-            MiscellaneousTechnical::SummationTop => SUMMATION_TOP,
-            MiscellaneousTechnical::SummationBottom => SUMMATION_BOTTOM,
-            MiscellaneousTechnical::TopSquareBracket => TOP_SQUARE_BRACKET,
-            MiscellaneousTechnical::BottomSquareBracket => BOTTOM_SQUARE_BRACKET,
-            MiscellaneousTechnical::BottomSquareBracketOverTopSquareBracket => BOTTOM_SQUARE_BRACKET_OVER_TOP_SQUARE_BRACKET,
-            MiscellaneousTechnical::RadicalSymbolBottom => RADICAL_SYMBOL_BOTTOM,
-            MiscellaneousTechnical::LeftVerticalBoxLine => LEFT_VERTICAL_BOX_LINE,
-            MiscellaneousTechnical::RightVerticalBoxLine => RIGHT_VERTICAL_BOX_LINE,
-            MiscellaneousTechnical::HorizontalScanLineDash1 => HORIZONTAL_SCAN_LINE_DASH_1,
-            MiscellaneousTechnical::HorizontalScanLineDash3 => HORIZONTAL_SCAN_LINE_DASH_3,
-            MiscellaneousTechnical::HorizontalScanLineDash7 => HORIZONTAL_SCAN_LINE_DASH_7,
-            MiscellaneousTechnical::HorizontalScanLineDash9 => HORIZONTAL_SCAN_LINE_DASH_9,
-            MiscellaneousTechnical::DentistrySymbolLightVerticalAndTopRight => DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_TOP_RIGHT,
-            MiscellaneousTechnical::DentistrySymbolLightVerticalAndBottomRight => DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_BOTTOM_RIGHT,
-            MiscellaneousTechnical::DentistrySymbolLightVerticalWithCircle => DENTISTRY_SYMBOL_LIGHT_VERTICAL_WITH_CIRCLE,
-            MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithCircle => DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_CIRCLE,
-            MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithCircle => DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_CIRCLE,
-            MiscellaneousTechnical::DentistrySymbolLightVerticalWithTriangle => DENTISTRY_SYMBOL_LIGHT_VERTICAL_WITH_TRIANGLE,
-            MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithTriangle => DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_TRIANGLE,
-            MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithTriangle => DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_TRIANGLE,
-            MiscellaneousTechnical::DentistrySymbolLightVerticalAndWave => DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_WAVE,
-            MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithWave => DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_WAVE,
-            MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithWave => DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_WAVE,
-            MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontal => DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL,
-            MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontal => DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL,
-            MiscellaneousTechnical::DentistrySymbolLightVerticalAndTopLeft => DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_TOP_LEFT,
-            MiscellaneousTechnical::DentistrySymbolLightVerticalAndBottomLeft => DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_BOTTOM_LEFT,
-            MiscellaneousTechnical::SquareFoot => SQUARE_FOOT,
-            MiscellaneousTechnical::ReturnSymbol => RETURN_SYMBOL,
-            MiscellaneousTechnical::EjectSymbol => EJECT_SYMBOL,
-            MiscellaneousTechnical::VerticalLineExtension => VERTICAL_LINE_EXTENSION,
-            MiscellaneousTechnical::MetricalBreve => METRICAL_BREVE,
-            MiscellaneousTechnical::MetricalLongOverShort => METRICAL_LONG_OVER_SHORT,
-            MiscellaneousTechnical::MetricalShortOverLong => METRICAL_SHORT_OVER_LONG,
-            MiscellaneousTechnical::MetricalLongOverTwoShorts => METRICAL_LONG_OVER_TWO_SHORTS,
-            MiscellaneousTechnical::MetricalTwoShortsOverLong => METRICAL_TWO_SHORTS_OVER_LONG,
-            MiscellaneousTechnical::MetricalTwoShortsJoined => METRICAL_TWO_SHORTS_JOINED,
-            MiscellaneousTechnical::MetricalTriseme => METRICAL_TRISEME,
-            MiscellaneousTechnical::MetricalTetraseme => METRICAL_TETRASEME,
-            MiscellaneousTechnical::MetricalPentaseme => METRICAL_PENTASEME,
-            MiscellaneousTechnical::EarthGround => EARTH_GROUND,
-            MiscellaneousTechnical::Fuse => FUSE,
-            MiscellaneousTechnical::TopParenthesis => TOP_PARENTHESIS,
-            MiscellaneousTechnical::BottomParenthesis => BOTTOM_PARENTHESIS,
-            MiscellaneousTechnical::TopCurlyBracket => TOP_CURLY_BRACKET,
-            MiscellaneousTechnical::BottomCurlyBracket => BOTTOM_CURLY_BRACKET,
-            MiscellaneousTechnical::TopTortoiseShellBracket => TOP_TORTOISE_SHELL_BRACKET,
-            MiscellaneousTechnical::BottomTortoiseShellBracket => BOTTOM_TORTOISE_SHELL_BRACKET,
-            MiscellaneousTechnical::WhiteTrapezium => WHITE_TRAPEZIUM,
-            MiscellaneousTechnical::BenzeneRingWithCircle => BENZENE_RING_WITH_CIRCLE,
-            MiscellaneousTechnical::Straightness => STRAIGHTNESS,
-            MiscellaneousTechnical::Flatness => FLATNESS,
-            MiscellaneousTechnical::AcCurrent => AC_CURRENT,
-            MiscellaneousTechnical::ElectricalIntersection => ELECTRICAL_INTERSECTION,
-            MiscellaneousTechnical::DecimalExponentSymbol => DECIMAL_EXPONENT_SYMBOL,
-            MiscellaneousTechnical::BlackRightDashPointingDoubleTriangle => BLACK_RIGHT_DASH_POINTING_DOUBLE_TRIANGLE,
-            MiscellaneousTechnical::BlackLeftDashPointingDoubleTriangle => BLACK_LEFT_DASH_POINTING_DOUBLE_TRIANGLE,
-            MiscellaneousTechnical::BlackUpDashPointingDoubleTriangle => BLACK_UP_DASH_POINTING_DOUBLE_TRIANGLE,
-            MiscellaneousTechnical::BlackDownDashPointingDoubleTriangle => BLACK_DOWN_DASH_POINTING_DOUBLE_TRIANGLE,
-            MiscellaneousTechnical::BlackRightDashPointingDoubleTriangleWithVerticalBar => BLACK_RIGHT_DASH_POINTING_DOUBLE_TRIANGLE_WITH_VERTICAL_BAR,
-            MiscellaneousTechnical::BlackLeftDashPointingDoubleTriangleWithVerticalBar => BLACK_LEFT_DASH_POINTING_DOUBLE_TRIANGLE_WITH_VERTICAL_BAR,
-            MiscellaneousTechnical::BlackRightDashPointingTriangleWithDoubleVerticalBar => BLACK_RIGHT_DASH_POINTING_TRIANGLE_WITH_DOUBLE_VERTICAL_BAR,
-            MiscellaneousTechnical::AlarmClock => ALARM_CLOCK,
-            MiscellaneousTechnical::Stopwatch => STOPWATCH,
-            MiscellaneousTechnical::TimerClock => TIMER_CLOCK,
-            MiscellaneousTechnical::HourglassWithFlowingSand => HOURGLASS_WITH_FLOWING_SAND,
-            MiscellaneousTechnical::BlackMediumLeftDashPointingTriangle => BLACK_MEDIUM_LEFT_DASH_POINTING_TRIANGLE,
-            MiscellaneousTechnical::BlackMediumRightDashPointingTriangle => BLACK_MEDIUM_RIGHT_DASH_POINTING_TRIANGLE,
-            MiscellaneousTechnical::BlackMediumUpDashPointingTriangle => BLACK_MEDIUM_UP_DASH_POINTING_TRIANGLE,
-            MiscellaneousTechnical::BlackMediumDownDashPointingTriangle => BLACK_MEDIUM_DOWN_DASH_POINTING_TRIANGLE,
-            MiscellaneousTechnical::DoubleVerticalBar => DOUBLE_VERTICAL_BAR,
-            MiscellaneousTechnical::BlackSquareForStop => BLACK_SQUARE_FOR_STOP,
-            MiscellaneousTechnical::BlackCircleForRecord => BLACK_CIRCLE_FOR_RECORD,
-            MiscellaneousTechnical::PowerSymbol => POWER_SYMBOL,
-            MiscellaneousTechnical::PowerOnDashOffSymbol => POWER_ON_DASH_OFF_SYMBOL,
-            MiscellaneousTechnical::PowerOnSymbol => POWER_ON_SYMBOL,
-            MiscellaneousTechnical::PowerSleepSymbol => POWER_SLEEP_SYMBOL,
+            MiscellaneousTechnical::DiameterSign => '⌀',
+            MiscellaneousTechnical::ElectricArrow => '⌁',
+            MiscellaneousTechnical::House => '⌂',
+            MiscellaneousTechnical::UpArrowhead => '⌃',
+            MiscellaneousTechnical::DownArrowhead => '⌄',
+            MiscellaneousTechnical::Projective => '⌅',
+            MiscellaneousTechnical::Perspective => '⌆',
+            MiscellaneousTechnical::WavyLine => '⌇',
+            MiscellaneousTechnical::LeftCeiling => '⌈',
+            MiscellaneousTechnical::RightCeiling => '⌉',
+            MiscellaneousTechnical::LeftFloor => '⌊',
+            MiscellaneousTechnical::RightFloor => '⌋',
+            MiscellaneousTechnical::BottomRightCrop => '⌌',
+            MiscellaneousTechnical::BottomLeftCrop => '⌍',
+            MiscellaneousTechnical::TopRightCrop => '⌎',
+            MiscellaneousTechnical::TopLeftCrop => '⌏',
+            MiscellaneousTechnical::ReversedNotSign => '⌐',
+            MiscellaneousTechnical::SquareLozenge => '⌑',
+            MiscellaneousTechnical::Arc => '⌒',
+            MiscellaneousTechnical::Segment => '⌓',
+            MiscellaneousTechnical::Sector => '⌔',
+            MiscellaneousTechnical::TelephoneRecorder => '⌕',
+            MiscellaneousTechnical::PositionIndicator => '⌖',
+            MiscellaneousTechnical::ViewdataSquare => '⌗',
+            MiscellaneousTechnical::PlaceOfInterestSign => '⌘',
+            MiscellaneousTechnical::TurnedNotSign => '⌙',
+            MiscellaneousTechnical::Watch => '⌚',
+            MiscellaneousTechnical::Hourglass => '⌛',
+            MiscellaneousTechnical::TopLeftCorner => '⌜',
+            MiscellaneousTechnical::TopRightCorner => '⌝',
+            MiscellaneousTechnical::BottomLeftCorner => '⌞',
+            MiscellaneousTechnical::BottomRightCorner => '⌟',
+            MiscellaneousTechnical::TopHalfIntegral => '⌠',
+            MiscellaneousTechnical::BottomHalfIntegral => '⌡',
+            MiscellaneousTechnical::Frown => '⌢',
+            MiscellaneousTechnical::Smile => '⌣',
+            MiscellaneousTechnical::UpArrowheadBetweenTwoHorizontalBars => '⌤',
+            MiscellaneousTechnical::OptionKey => '⌥',
+            MiscellaneousTechnical::EraseToTheRight => '⌦',
+            MiscellaneousTechnical::XInARectangleBox => '⌧',
+            MiscellaneousTechnical::Keyboard => '⌨',
+            MiscellaneousTechnical::LeftDashPointingAngleBracket => '〈',
+            MiscellaneousTechnical::RightDashPointingAngleBracket => '〉',
+            MiscellaneousTechnical::EraseToTheLeft => '⌫',
+            MiscellaneousTechnical::BenzeneRing => '⌬',
+            MiscellaneousTechnical::Cylindricity => '⌭',
+            MiscellaneousTechnical::AllAroundDashProfile => '⌮',
+            MiscellaneousTechnical::Symmetry => '⌯',
+            MiscellaneousTechnical::TotalRunout => '⌰',
+            MiscellaneousTechnical::DimensionOrigin => '⌱',
+            MiscellaneousTechnical::ConicalTaper => '⌲',
+            MiscellaneousTechnical::Slope => '⌳',
+            MiscellaneousTechnical::Counterbore => '⌴',
+            MiscellaneousTechnical::Countersink => '⌵',
+            MiscellaneousTechnical::AplFunctionalSymbolIDashBeam => '⌶',
+            MiscellaneousTechnical::AplFunctionalSymbolSquishQuad => '⌷',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadEqual => '⌸',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadDivide => '⌹',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadDiamond => '⌺',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadJot => '⌻',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadCircle => '⌼',
+            MiscellaneousTechnical::AplFunctionalSymbolCircleStile => '⌽',
+            MiscellaneousTechnical::AplFunctionalSymbolCircleJot => '⌾',
+            MiscellaneousTechnical::AplFunctionalSymbolSlashBar => '⌿',
+            MiscellaneousTechnical::AplFunctionalSymbolBackslashBar => '⍀',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadSlash => '⍁',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadBackslash => '⍂',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadLessDashThan => '⍃',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadGreaterDashThan => '⍄',
+            MiscellaneousTechnical::AplFunctionalSymbolLeftwardsVane => '⍅',
+            MiscellaneousTechnical::AplFunctionalSymbolRightwardsVane => '⍆',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadLeftwardsArrow => '⍇',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadRightwardsArrow => '⍈',
+            MiscellaneousTechnical::AplFunctionalSymbolCircleBackslash => '⍉',
+            MiscellaneousTechnical::AplFunctionalSymbolDownTackUnderbar => '⍊',
+            MiscellaneousTechnical::AplFunctionalSymbolDeltaStile => '⍋',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadDownCaret => '⍌',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadDelta => '⍍',
+            MiscellaneousTechnical::AplFunctionalSymbolDownTackJot => '⍎',
+            MiscellaneousTechnical::AplFunctionalSymbolUpwardsVane => '⍏',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadUpwardsArrow => '⍐',
+            MiscellaneousTechnical::AplFunctionalSymbolUpTackOverbar => '⍑',
+            MiscellaneousTechnical::AplFunctionalSymbolDelStile => '⍒',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadUpCaret => '⍓',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadDel => '⍔',
+            MiscellaneousTechnical::AplFunctionalSymbolUpTackJot => '⍕',
+            MiscellaneousTechnical::AplFunctionalSymbolDownwardsVane => '⍖',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadDownwardsArrow => '⍗',
+            MiscellaneousTechnical::AplFunctionalSymbolQuoteUnderbar => '⍘',
+            MiscellaneousTechnical::AplFunctionalSymbolDeltaUnderbar => '⍙',
+            MiscellaneousTechnical::AplFunctionalSymbolDiamondUnderbar => '⍚',
+            MiscellaneousTechnical::AplFunctionalSymbolJotUnderbar => '⍛',
+            MiscellaneousTechnical::AplFunctionalSymbolCircleUnderbar => '⍜',
+            MiscellaneousTechnical::AplFunctionalSymbolUpShoeJot => '⍝',
+            MiscellaneousTechnical::AplFunctionalSymbolQuoteQuad => '⍞',
+            MiscellaneousTechnical::AplFunctionalSymbolCircleStar => '⍟',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadColon => '⍠',
+            MiscellaneousTechnical::AplFunctionalSymbolUpTackDiaeresis => '⍡',
+            MiscellaneousTechnical::AplFunctionalSymbolDelDiaeresis => '⍢',
+            MiscellaneousTechnical::AplFunctionalSymbolStarDiaeresis => '⍣',
+            MiscellaneousTechnical::AplFunctionalSymbolJotDiaeresis => '⍤',
+            MiscellaneousTechnical::AplFunctionalSymbolCircleDiaeresis => '⍥',
+            MiscellaneousTechnical::AplFunctionalSymbolDownShoeStile => '⍦',
+            MiscellaneousTechnical::AplFunctionalSymbolLeftShoeStile => '⍧',
+            MiscellaneousTechnical::AplFunctionalSymbolTildeDiaeresis => '⍨',
+            MiscellaneousTechnical::AplFunctionalSymbolGreaterDashThanDiaeresis => '⍩',
+            MiscellaneousTechnical::AplFunctionalSymbolCommaBar => '⍪',
+            MiscellaneousTechnical::AplFunctionalSymbolDelTilde => '⍫',
+            MiscellaneousTechnical::AplFunctionalSymbolZilde => '⍬',
+            MiscellaneousTechnical::AplFunctionalSymbolStileTilde => '⍭',
+            MiscellaneousTechnical::AplFunctionalSymbolSemicolonUnderbar => '⍮',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadNotEqual => '⍯',
+            MiscellaneousTechnical::AplFunctionalSymbolQuadQuestion => '⍰',
+            MiscellaneousTechnical::AplFunctionalSymbolDownCaretTilde => '⍱',
+            MiscellaneousTechnical::AplFunctionalSymbolUpCaretTilde => '⍲',
+            MiscellaneousTechnical::AplFunctionalSymbolIota => '⍳',
+            MiscellaneousTechnical::AplFunctionalSymbolRho => '⍴',
+            MiscellaneousTechnical::AplFunctionalSymbolOmega => '⍵',
+            MiscellaneousTechnical::AplFunctionalSymbolAlphaUnderbar => '⍶',
+            MiscellaneousTechnical::AplFunctionalSymbolEpsilonUnderbar => '⍷',
+            MiscellaneousTechnical::AplFunctionalSymbolIotaUnderbar => '⍸',
+            MiscellaneousTechnical::AplFunctionalSymbolOmegaUnderbar => '⍹',
+            MiscellaneousTechnical::AplFunctionalSymbolAlpha => '⍺',
+            MiscellaneousTechnical::NotCheckMark => '⍻',
+            MiscellaneousTechnical::RightAngleWithDownwardsZigzagArrow => '⍼',
+            MiscellaneousTechnical::ShoulderedOpenBox => '⍽',
+            MiscellaneousTechnical::BellSymbol => '⍾',
+            MiscellaneousTechnical::VerticalLineWithMiddleDot => '⍿',
+            MiscellaneousTechnical::InsertionSymbol => '⎀',
+            MiscellaneousTechnical::ContinuousUnderlineSymbol => '⎁',
+            MiscellaneousTechnical::DiscontinuousUnderlineSymbol => '⎂',
+            MiscellaneousTechnical::EmphasisSymbol => '⎃',
+            MiscellaneousTechnical::CompositionSymbol => '⎄',
+            MiscellaneousTechnical::WhiteSquareWithCentreVerticalLine => '⎅',
+            MiscellaneousTechnical::EnterSymbol => '⎆',
+            MiscellaneousTechnical::AlternativeKeySymbol => '⎇',
+            MiscellaneousTechnical::HelmSymbol => '⎈',
+            MiscellaneousTechnical::CircledHorizontalBarWithNotch => '⎉',
+            MiscellaneousTechnical::CircledTriangleDown => '⎊',
+            MiscellaneousTechnical::BrokenCircleWithNorthwestArrow => '⎋',
+            MiscellaneousTechnical::UndoSymbol => '⎌',
+            MiscellaneousTechnical::MonostableSymbol => '⎍',
+            MiscellaneousTechnical::HysteresisSymbol => '⎎',
+            MiscellaneousTechnical::OpenDashCircuitDashOutputHDashTypeSymbol => '⎏',
+            MiscellaneousTechnical::OpenDashCircuitDashOutputLDashTypeSymbol => '⎐',
+            MiscellaneousTechnical::PassiveDashPullDashDownDashOutputSymbol => '⎑',
+            MiscellaneousTechnical::PassiveDashPullDashUpDashOutputSymbol => '⎒',
+            MiscellaneousTechnical::DirectCurrentSymbolFormTwo => '⎓',
+            MiscellaneousTechnical::SoftwareDashFunctionSymbol => '⎔',
+            MiscellaneousTechnical::AplFunctionalSymbolQuad => '⎕',
+            MiscellaneousTechnical::DecimalSeparatorKeySymbol => '⎖',
+            MiscellaneousTechnical::PreviousPage => '⎗',
+            MiscellaneousTechnical::NextPage => '⎘',
+            MiscellaneousTechnical::PrintScreenSymbol => '⎙',
+            MiscellaneousTechnical::ClearScreenSymbol => '⎚',
+            MiscellaneousTechnical::LeftParenthesisUpperHook => '⎛',
+            MiscellaneousTechnical::LeftParenthesisExtension => '⎜',
+            MiscellaneousTechnical::LeftParenthesisLowerHook => '⎝',
+            MiscellaneousTechnical::RightParenthesisUpperHook => '⎞',
+            MiscellaneousTechnical::RightParenthesisExtension => '⎟',
+            MiscellaneousTechnical::RightParenthesisLowerHook => '⎠',
+            MiscellaneousTechnical::LeftSquareBracketUpperCorner => '⎡',
+            MiscellaneousTechnical::LeftSquareBracketExtension => '⎢',
+            MiscellaneousTechnical::LeftSquareBracketLowerCorner => '⎣',
+            MiscellaneousTechnical::RightSquareBracketUpperCorner => '⎤',
+            MiscellaneousTechnical::RightSquareBracketExtension => '⎥',
+            MiscellaneousTechnical::RightSquareBracketLowerCorner => '⎦',
+            MiscellaneousTechnical::LeftCurlyBracketUpperHook => '⎧',
+            MiscellaneousTechnical::LeftCurlyBracketMiddlePiece => '⎨',
+            MiscellaneousTechnical::LeftCurlyBracketLowerHook => '⎩',
+            MiscellaneousTechnical::CurlyBracketExtension => '⎪',
+            MiscellaneousTechnical::RightCurlyBracketUpperHook => '⎫',
+            MiscellaneousTechnical::RightCurlyBracketMiddlePiece => '⎬',
+            MiscellaneousTechnical::RightCurlyBracketLowerHook => '⎭',
+            MiscellaneousTechnical::IntegralExtension => '⎮',
+            MiscellaneousTechnical::HorizontalLineExtension => '⎯',
+            MiscellaneousTechnical::UpperLeftOrLowerRightCurlyBracketSection => '⎰',
+            MiscellaneousTechnical::UpperRightOrLowerLeftCurlyBracketSection => '⎱',
+            MiscellaneousTechnical::SummationTop => '⎲',
+            MiscellaneousTechnical::SummationBottom => '⎳',
+            MiscellaneousTechnical::TopSquareBracket => '⎴',
+            MiscellaneousTechnical::BottomSquareBracket => '⎵',
+            MiscellaneousTechnical::BottomSquareBracketOverTopSquareBracket => '⎶',
+            MiscellaneousTechnical::RadicalSymbolBottom => '⎷',
+            MiscellaneousTechnical::LeftVerticalBoxLine => '⎸',
+            MiscellaneousTechnical::RightVerticalBoxLine => '⎹',
+            MiscellaneousTechnical::HorizontalScanLineDash1 => '⎺',
+            MiscellaneousTechnical::HorizontalScanLineDash3 => '⎻',
+            MiscellaneousTechnical::HorizontalScanLineDash7 => '⎼',
+            MiscellaneousTechnical::HorizontalScanLineDash9 => '⎽',
+            MiscellaneousTechnical::DentistrySymbolLightVerticalAndTopRight => '⎾',
+            MiscellaneousTechnical::DentistrySymbolLightVerticalAndBottomRight => '⎿',
+            MiscellaneousTechnical::DentistrySymbolLightVerticalWithCircle => '⏀',
+            MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithCircle => '⏁',
+            MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithCircle => '⏂',
+            MiscellaneousTechnical::DentistrySymbolLightVerticalWithTriangle => '⏃',
+            MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithTriangle => '⏄',
+            MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithTriangle => '⏅',
+            MiscellaneousTechnical::DentistrySymbolLightVerticalAndWave => '⏆',
+            MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithWave => '⏇',
+            MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithWave => '⏈',
+            MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontal => '⏉',
+            MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontal => '⏊',
+            MiscellaneousTechnical::DentistrySymbolLightVerticalAndTopLeft => '⏋',
+            MiscellaneousTechnical::DentistrySymbolLightVerticalAndBottomLeft => '⏌',
+            MiscellaneousTechnical::SquareFoot => '⏍',
+            MiscellaneousTechnical::ReturnSymbol => '⏎',
+            MiscellaneousTechnical::EjectSymbol => '⏏',
+            MiscellaneousTechnical::VerticalLineExtension => '⏐',
+            MiscellaneousTechnical::MetricalBreve => '⏑',
+            MiscellaneousTechnical::MetricalLongOverShort => '⏒',
+            MiscellaneousTechnical::MetricalShortOverLong => '⏓',
+            MiscellaneousTechnical::MetricalLongOverTwoShorts => '⏔',
+            MiscellaneousTechnical::MetricalTwoShortsOverLong => '⏕',
+            MiscellaneousTechnical::MetricalTwoShortsJoined => '⏖',
+            MiscellaneousTechnical::MetricalTriseme => '⏗',
+            MiscellaneousTechnical::MetricalTetraseme => '⏘',
+            MiscellaneousTechnical::MetricalPentaseme => '⏙',
+            MiscellaneousTechnical::EarthGround => '⏚',
+            MiscellaneousTechnical::Fuse => '⏛',
+            MiscellaneousTechnical::TopParenthesis => '⏜',
+            MiscellaneousTechnical::BottomParenthesis => '⏝',
+            MiscellaneousTechnical::TopCurlyBracket => '⏞',
+            MiscellaneousTechnical::BottomCurlyBracket => '⏟',
+            MiscellaneousTechnical::TopTortoiseShellBracket => '⏠',
+            MiscellaneousTechnical::BottomTortoiseShellBracket => '⏡',
+            MiscellaneousTechnical::WhiteTrapezium => '⏢',
+            MiscellaneousTechnical::BenzeneRingWithCircle => '⏣',
+            MiscellaneousTechnical::Straightness => '⏤',
+            MiscellaneousTechnical::Flatness => '⏥',
+            MiscellaneousTechnical::AcCurrent => '⏦',
+            MiscellaneousTechnical::ElectricalIntersection => '⏧',
+            MiscellaneousTechnical::DecimalExponentSymbol => '⏨',
+            MiscellaneousTechnical::BlackRightDashPointingDoubleTriangle => '⏩',
+            MiscellaneousTechnical::BlackLeftDashPointingDoubleTriangle => '⏪',
+            MiscellaneousTechnical::BlackUpDashPointingDoubleTriangle => '⏫',
+            MiscellaneousTechnical::BlackDownDashPointingDoubleTriangle => '⏬',
+            MiscellaneousTechnical::BlackRightDashPointingDoubleTriangleWithVerticalBar => '⏭',
+            MiscellaneousTechnical::BlackLeftDashPointingDoubleTriangleWithVerticalBar => '⏮',
+            MiscellaneousTechnical::BlackRightDashPointingTriangleWithDoubleVerticalBar => '⏯',
+            MiscellaneousTechnical::AlarmClock => '⏰',
+            MiscellaneousTechnical::Stopwatch => '⏱',
+            MiscellaneousTechnical::TimerClock => '⏲',
+            MiscellaneousTechnical::HourglassWithFlowingSand => '⏳',
+            MiscellaneousTechnical::BlackMediumLeftDashPointingTriangle => '⏴',
+            MiscellaneousTechnical::BlackMediumRightDashPointingTriangle => '⏵',
+            MiscellaneousTechnical::BlackMediumUpDashPointingTriangle => '⏶',
+            MiscellaneousTechnical::BlackMediumDownDashPointingTriangle => '⏷',
+            MiscellaneousTechnical::DoubleVerticalBar => '⏸',
+            MiscellaneousTechnical::BlackSquareForStop => '⏹',
+            MiscellaneousTechnical::BlackCircleForRecord => '⏺',
+            MiscellaneousTechnical::PowerSymbol => '⏻',
+            MiscellaneousTechnical::PowerOnDashOffSymbol => '⏼',
+            MiscellaneousTechnical::PowerOnSymbol => '⏽',
+            MiscellaneousTechnical::PowerSleepSymbol => '⏾',
         }
     }
 }
@@ -1293,263 +779,262 @@ impl Into<char> for MiscellaneousTechnical {
 impl std::convert::TryFrom<char> for MiscellaneousTechnical {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            DIAMETER_SIGN => Ok(MiscellaneousTechnical::DiameterSign),
-            ELECTRIC_ARROW => Ok(MiscellaneousTechnical::ElectricArrow),
-            HOUSE => Ok(MiscellaneousTechnical::House),
-            UP_ARROWHEAD => Ok(MiscellaneousTechnical::UpArrowhead),
-            DOWN_ARROWHEAD => Ok(MiscellaneousTechnical::DownArrowhead),
-            PROJECTIVE => Ok(MiscellaneousTechnical::Projective),
-            PERSPECTIVE => Ok(MiscellaneousTechnical::Perspective),
-            WAVY_LINE => Ok(MiscellaneousTechnical::WavyLine),
-            LEFT_CEILING => Ok(MiscellaneousTechnical::LeftCeiling),
-            RIGHT_CEILING => Ok(MiscellaneousTechnical::RightCeiling),
-            LEFT_FLOOR => Ok(MiscellaneousTechnical::LeftFloor),
-            RIGHT_FLOOR => Ok(MiscellaneousTechnical::RightFloor),
-            BOTTOM_RIGHT_CROP => Ok(MiscellaneousTechnical::BottomRightCrop),
-            BOTTOM_LEFT_CROP => Ok(MiscellaneousTechnical::BottomLeftCrop),
-            TOP_RIGHT_CROP => Ok(MiscellaneousTechnical::TopRightCrop),
-            TOP_LEFT_CROP => Ok(MiscellaneousTechnical::TopLeftCrop),
-            REVERSED_NOT_SIGN => Ok(MiscellaneousTechnical::ReversedNotSign),
-            SQUARE_LOZENGE => Ok(MiscellaneousTechnical::SquareLozenge),
-            ARC => Ok(MiscellaneousTechnical::Arc),
-            SEGMENT => Ok(MiscellaneousTechnical::Segment),
-            SECTOR => Ok(MiscellaneousTechnical::Sector),
-            TELEPHONE_RECORDER => Ok(MiscellaneousTechnical::TelephoneRecorder),
-            POSITION_INDICATOR => Ok(MiscellaneousTechnical::PositionIndicator),
-            VIEWDATA_SQUARE => Ok(MiscellaneousTechnical::ViewdataSquare),
-            PLACE_OF_INTEREST_SIGN => Ok(MiscellaneousTechnical::PlaceOfInterestSign),
-            TURNED_NOT_SIGN => Ok(MiscellaneousTechnical::TurnedNotSign),
-            WATCH => Ok(MiscellaneousTechnical::Watch),
-            HOURGLASS => Ok(MiscellaneousTechnical::Hourglass),
-            TOP_LEFT_CORNER => Ok(MiscellaneousTechnical::TopLeftCorner),
-            TOP_RIGHT_CORNER => Ok(MiscellaneousTechnical::TopRightCorner),
-            BOTTOM_LEFT_CORNER => Ok(MiscellaneousTechnical::BottomLeftCorner),
-            BOTTOM_RIGHT_CORNER => Ok(MiscellaneousTechnical::BottomRightCorner),
-            TOP_HALF_INTEGRAL => Ok(MiscellaneousTechnical::TopHalfIntegral),
-            BOTTOM_HALF_INTEGRAL => Ok(MiscellaneousTechnical::BottomHalfIntegral),
-            FROWN => Ok(MiscellaneousTechnical::Frown),
-            SMILE => Ok(MiscellaneousTechnical::Smile),
-            UP_ARROWHEAD_BETWEEN_TWO_HORIZONTAL_BARS => Ok(MiscellaneousTechnical::UpArrowheadBetweenTwoHorizontalBars),
-            OPTION_KEY => Ok(MiscellaneousTechnical::OptionKey),
-            ERASE_TO_THE_RIGHT => Ok(MiscellaneousTechnical::EraseToTheRight),
-            X_IN_A_RECTANGLE_BOX => Ok(MiscellaneousTechnical::XInARectangleBox),
-            KEYBOARD => Ok(MiscellaneousTechnical::Keyboard),
-            LEFT_DASH_POINTING_ANGLE_BRACKET => Ok(MiscellaneousTechnical::LeftDashPointingAngleBracket),
-            RIGHT_DASH_POINTING_ANGLE_BRACKET => Ok(MiscellaneousTechnical::RightDashPointingAngleBracket),
-            ERASE_TO_THE_LEFT => Ok(MiscellaneousTechnical::EraseToTheLeft),
-            BENZENE_RING => Ok(MiscellaneousTechnical::BenzeneRing),
-            CYLINDRICITY => Ok(MiscellaneousTechnical::Cylindricity),
-            ALL_AROUND_DASH_PROFILE => Ok(MiscellaneousTechnical::AllAroundDashProfile),
-            SYMMETRY => Ok(MiscellaneousTechnical::Symmetry),
-            TOTAL_RUNOUT => Ok(MiscellaneousTechnical::TotalRunout),
-            DIMENSION_ORIGIN => Ok(MiscellaneousTechnical::DimensionOrigin),
-            CONICAL_TAPER => Ok(MiscellaneousTechnical::ConicalTaper),
-            SLOPE => Ok(MiscellaneousTechnical::Slope),
-            COUNTERBORE => Ok(MiscellaneousTechnical::Counterbore),
-            COUNTERSINK => Ok(MiscellaneousTechnical::Countersink),
-            APL_FUNCTIONAL_SYMBOL_I_DASH_BEAM => Ok(MiscellaneousTechnical::AplFunctionalSymbolIDashBeam),
-            APL_FUNCTIONAL_SYMBOL_SQUISH_QUAD => Ok(MiscellaneousTechnical::AplFunctionalSymbolSquishQuad),
-            APL_FUNCTIONAL_SYMBOL_QUAD_EQUAL => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadEqual),
-            APL_FUNCTIONAL_SYMBOL_QUAD_DIVIDE => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDivide),
-            APL_FUNCTIONAL_SYMBOL_QUAD_DIAMOND => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDiamond),
-            APL_FUNCTIONAL_SYMBOL_QUAD_JOT => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadJot),
-            APL_FUNCTIONAL_SYMBOL_QUAD_CIRCLE => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadCircle),
-            APL_FUNCTIONAL_SYMBOL_CIRCLE_STILE => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleStile),
-            APL_FUNCTIONAL_SYMBOL_CIRCLE_JOT => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleJot),
-            APL_FUNCTIONAL_SYMBOL_SLASH_BAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolSlashBar),
-            APL_FUNCTIONAL_SYMBOL_BACKSLASH_BAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolBackslashBar),
-            APL_FUNCTIONAL_SYMBOL_QUAD_SLASH => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadSlash),
-            APL_FUNCTIONAL_SYMBOL_QUAD_BACKSLASH => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadBackslash),
-            APL_FUNCTIONAL_SYMBOL_QUAD_LESS_DASH_THAN => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadLessDashThan),
-            APL_FUNCTIONAL_SYMBOL_QUAD_GREATER_DASH_THAN => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadGreaterDashThan),
-            APL_FUNCTIONAL_SYMBOL_LEFTWARDS_VANE => Ok(MiscellaneousTechnical::AplFunctionalSymbolLeftwardsVane),
-            APL_FUNCTIONAL_SYMBOL_RIGHTWARDS_VANE => Ok(MiscellaneousTechnical::AplFunctionalSymbolRightwardsVane),
-            APL_FUNCTIONAL_SYMBOL_QUAD_LEFTWARDS_ARROW => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadLeftwardsArrow),
-            APL_FUNCTIONAL_SYMBOL_QUAD_RIGHTWARDS_ARROW => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadRightwardsArrow),
-            APL_FUNCTIONAL_SYMBOL_CIRCLE_BACKSLASH => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleBackslash),
-            APL_FUNCTIONAL_SYMBOL_DOWN_TACK_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownTackUnderbar),
-            APL_FUNCTIONAL_SYMBOL_DELTA_STILE => Ok(MiscellaneousTechnical::AplFunctionalSymbolDeltaStile),
-            APL_FUNCTIONAL_SYMBOL_QUAD_DOWN_CARET => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDownCaret),
-            APL_FUNCTIONAL_SYMBOL_QUAD_DELTA => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDelta),
-            APL_FUNCTIONAL_SYMBOL_DOWN_TACK_JOT => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownTackJot),
-            APL_FUNCTIONAL_SYMBOL_UPWARDS_VANE => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpwardsVane),
-            APL_FUNCTIONAL_SYMBOL_QUAD_UPWARDS_ARROW => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadUpwardsArrow),
-            APL_FUNCTIONAL_SYMBOL_UP_TACK_OVERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpTackOverbar),
-            APL_FUNCTIONAL_SYMBOL_DEL_STILE => Ok(MiscellaneousTechnical::AplFunctionalSymbolDelStile),
-            APL_FUNCTIONAL_SYMBOL_QUAD_UP_CARET => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadUpCaret),
-            APL_FUNCTIONAL_SYMBOL_QUAD_DEL => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDel),
-            APL_FUNCTIONAL_SYMBOL_UP_TACK_JOT => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpTackJot),
-            APL_FUNCTIONAL_SYMBOL_DOWNWARDS_VANE => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownwardsVane),
-            APL_FUNCTIONAL_SYMBOL_QUAD_DOWNWARDS_ARROW => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDownwardsArrow),
-            APL_FUNCTIONAL_SYMBOL_QUOTE_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuoteUnderbar),
-            APL_FUNCTIONAL_SYMBOL_DELTA_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolDeltaUnderbar),
-            APL_FUNCTIONAL_SYMBOL_DIAMOND_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolDiamondUnderbar),
-            APL_FUNCTIONAL_SYMBOL_JOT_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolJotUnderbar),
-            APL_FUNCTIONAL_SYMBOL_CIRCLE_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleUnderbar),
-            APL_FUNCTIONAL_SYMBOL_UP_SHOE_JOT => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpShoeJot),
-            APL_FUNCTIONAL_SYMBOL_QUOTE_QUAD => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuoteQuad),
-            APL_FUNCTIONAL_SYMBOL_CIRCLE_STAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleStar),
-            APL_FUNCTIONAL_SYMBOL_QUAD_COLON => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadColon),
-            APL_FUNCTIONAL_SYMBOL_UP_TACK_DIAERESIS => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpTackDiaeresis),
-            APL_FUNCTIONAL_SYMBOL_DEL_DIAERESIS => Ok(MiscellaneousTechnical::AplFunctionalSymbolDelDiaeresis),
-            APL_FUNCTIONAL_SYMBOL_STAR_DIAERESIS => Ok(MiscellaneousTechnical::AplFunctionalSymbolStarDiaeresis),
-            APL_FUNCTIONAL_SYMBOL_JOT_DIAERESIS => Ok(MiscellaneousTechnical::AplFunctionalSymbolJotDiaeresis),
-            APL_FUNCTIONAL_SYMBOL_CIRCLE_DIAERESIS => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleDiaeresis),
-            APL_FUNCTIONAL_SYMBOL_DOWN_SHOE_STILE => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownShoeStile),
-            APL_FUNCTIONAL_SYMBOL_LEFT_SHOE_STILE => Ok(MiscellaneousTechnical::AplFunctionalSymbolLeftShoeStile),
-            APL_FUNCTIONAL_SYMBOL_TILDE_DIAERESIS => Ok(MiscellaneousTechnical::AplFunctionalSymbolTildeDiaeresis),
-            APL_FUNCTIONAL_SYMBOL_GREATER_DASH_THAN_DIAERESIS => Ok(MiscellaneousTechnical::AplFunctionalSymbolGreaterDashThanDiaeresis),
-            APL_FUNCTIONAL_SYMBOL_COMMA_BAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolCommaBar),
-            APL_FUNCTIONAL_SYMBOL_DEL_TILDE => Ok(MiscellaneousTechnical::AplFunctionalSymbolDelTilde),
-            APL_FUNCTIONAL_SYMBOL_ZILDE => Ok(MiscellaneousTechnical::AplFunctionalSymbolZilde),
-            APL_FUNCTIONAL_SYMBOL_STILE_TILDE => Ok(MiscellaneousTechnical::AplFunctionalSymbolStileTilde),
-            APL_FUNCTIONAL_SYMBOL_SEMICOLON_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolSemicolonUnderbar),
-            APL_FUNCTIONAL_SYMBOL_QUAD_NOT_EQUAL => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadNotEqual),
-            APL_FUNCTIONAL_SYMBOL_QUAD_QUESTION => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadQuestion),
-            APL_FUNCTIONAL_SYMBOL_DOWN_CARET_TILDE => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownCaretTilde),
-            APL_FUNCTIONAL_SYMBOL_UP_CARET_TILDE => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpCaretTilde),
-            APL_FUNCTIONAL_SYMBOL_IOTA => Ok(MiscellaneousTechnical::AplFunctionalSymbolIota),
-            APL_FUNCTIONAL_SYMBOL_RHO => Ok(MiscellaneousTechnical::AplFunctionalSymbolRho),
-            APL_FUNCTIONAL_SYMBOL_OMEGA => Ok(MiscellaneousTechnical::AplFunctionalSymbolOmega),
-            APL_FUNCTIONAL_SYMBOL_ALPHA_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolAlphaUnderbar),
-            APL_FUNCTIONAL_SYMBOL_EPSILON_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolEpsilonUnderbar),
-            APL_FUNCTIONAL_SYMBOL_IOTA_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolIotaUnderbar),
-            APL_FUNCTIONAL_SYMBOL_OMEGA_UNDERBAR => Ok(MiscellaneousTechnical::AplFunctionalSymbolOmegaUnderbar),
-            APL_FUNCTIONAL_SYMBOL_ALPHA => Ok(MiscellaneousTechnical::AplFunctionalSymbolAlpha),
-            NOT_CHECK_MARK => Ok(MiscellaneousTechnical::NotCheckMark),
-            RIGHT_ANGLE_WITH_DOWNWARDS_ZIGZAG_ARROW => Ok(MiscellaneousTechnical::RightAngleWithDownwardsZigzagArrow),
-            SHOULDERED_OPEN_BOX => Ok(MiscellaneousTechnical::ShoulderedOpenBox),
-            BELL_SYMBOL => Ok(MiscellaneousTechnical::BellSymbol),
-            VERTICAL_LINE_WITH_MIDDLE_DOT => Ok(MiscellaneousTechnical::VerticalLineWithMiddleDot),
-            INSERTION_SYMBOL => Ok(MiscellaneousTechnical::InsertionSymbol),
-            CONTINUOUS_UNDERLINE_SYMBOL => Ok(MiscellaneousTechnical::ContinuousUnderlineSymbol),
-            DISCONTINUOUS_UNDERLINE_SYMBOL => Ok(MiscellaneousTechnical::DiscontinuousUnderlineSymbol),
-            EMPHASIS_SYMBOL => Ok(MiscellaneousTechnical::EmphasisSymbol),
-            COMPOSITION_SYMBOL => Ok(MiscellaneousTechnical::CompositionSymbol),
-            WHITE_SQUARE_WITH_CENTRE_VERTICAL_LINE => Ok(MiscellaneousTechnical::WhiteSquareWithCentreVerticalLine),
-            ENTER_SYMBOL => Ok(MiscellaneousTechnical::EnterSymbol),
-            ALTERNATIVE_KEY_SYMBOL => Ok(MiscellaneousTechnical::AlternativeKeySymbol),
-            HELM_SYMBOL => Ok(MiscellaneousTechnical::HelmSymbol),
-            CIRCLED_HORIZONTAL_BAR_WITH_NOTCH => Ok(MiscellaneousTechnical::CircledHorizontalBarWithNotch),
-            CIRCLED_TRIANGLE_DOWN => Ok(MiscellaneousTechnical::CircledTriangleDown),
-            BROKEN_CIRCLE_WITH_NORTHWEST_ARROW => Ok(MiscellaneousTechnical::BrokenCircleWithNorthwestArrow),
-            UNDO_SYMBOL => Ok(MiscellaneousTechnical::UndoSymbol),
-            MONOSTABLE_SYMBOL => Ok(MiscellaneousTechnical::MonostableSymbol),
-            HYSTERESIS_SYMBOL => Ok(MiscellaneousTechnical::HysteresisSymbol),
-            OPEN_DASH_CIRCUIT_DASH_OUTPUT_H_DASH_TYPE_SYMBOL => Ok(MiscellaneousTechnical::OpenDashCircuitDashOutputHDashTypeSymbol),
-            OPEN_DASH_CIRCUIT_DASH_OUTPUT_L_DASH_TYPE_SYMBOL => Ok(MiscellaneousTechnical::OpenDashCircuitDashOutputLDashTypeSymbol),
-            PASSIVE_DASH_PULL_DASH_DOWN_DASH_OUTPUT_SYMBOL => Ok(MiscellaneousTechnical::PassiveDashPullDashDownDashOutputSymbol),
-            PASSIVE_DASH_PULL_DASH_UP_DASH_OUTPUT_SYMBOL => Ok(MiscellaneousTechnical::PassiveDashPullDashUpDashOutputSymbol),
-            DIRECT_CURRENT_SYMBOL_FORM_TWO => Ok(MiscellaneousTechnical::DirectCurrentSymbolFormTwo),
-            SOFTWARE_DASH_FUNCTION_SYMBOL => Ok(MiscellaneousTechnical::SoftwareDashFunctionSymbol),
-            APL_FUNCTIONAL_SYMBOL_QUAD => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuad),
-            DECIMAL_SEPARATOR_KEY_SYMBOL => Ok(MiscellaneousTechnical::DecimalSeparatorKeySymbol),
-            PREVIOUS_PAGE => Ok(MiscellaneousTechnical::PreviousPage),
-            NEXT_PAGE => Ok(MiscellaneousTechnical::NextPage),
-            PRINT_SCREEN_SYMBOL => Ok(MiscellaneousTechnical::PrintScreenSymbol),
-            CLEAR_SCREEN_SYMBOL => Ok(MiscellaneousTechnical::ClearScreenSymbol),
-            LEFT_PARENTHESIS_UPPER_HOOK => Ok(MiscellaneousTechnical::LeftParenthesisUpperHook),
-            LEFT_PARENTHESIS_EXTENSION => Ok(MiscellaneousTechnical::LeftParenthesisExtension),
-            LEFT_PARENTHESIS_LOWER_HOOK => Ok(MiscellaneousTechnical::LeftParenthesisLowerHook),
-            RIGHT_PARENTHESIS_UPPER_HOOK => Ok(MiscellaneousTechnical::RightParenthesisUpperHook),
-            RIGHT_PARENTHESIS_EXTENSION => Ok(MiscellaneousTechnical::RightParenthesisExtension),
-            RIGHT_PARENTHESIS_LOWER_HOOK => Ok(MiscellaneousTechnical::RightParenthesisLowerHook),
-            LEFT_SQUARE_BRACKET_UPPER_CORNER => Ok(MiscellaneousTechnical::LeftSquareBracketUpperCorner),
-            LEFT_SQUARE_BRACKET_EXTENSION => Ok(MiscellaneousTechnical::LeftSquareBracketExtension),
-            LEFT_SQUARE_BRACKET_LOWER_CORNER => Ok(MiscellaneousTechnical::LeftSquareBracketLowerCorner),
-            RIGHT_SQUARE_BRACKET_UPPER_CORNER => Ok(MiscellaneousTechnical::RightSquareBracketUpperCorner),
-            RIGHT_SQUARE_BRACKET_EXTENSION => Ok(MiscellaneousTechnical::RightSquareBracketExtension),
-            RIGHT_SQUARE_BRACKET_LOWER_CORNER => Ok(MiscellaneousTechnical::RightSquareBracketLowerCorner),
-            LEFT_CURLY_BRACKET_UPPER_HOOK => Ok(MiscellaneousTechnical::LeftCurlyBracketUpperHook),
-            LEFT_CURLY_BRACKET_MIDDLE_PIECE => Ok(MiscellaneousTechnical::LeftCurlyBracketMiddlePiece),
-            LEFT_CURLY_BRACKET_LOWER_HOOK => Ok(MiscellaneousTechnical::LeftCurlyBracketLowerHook),
-            CURLY_BRACKET_EXTENSION => Ok(MiscellaneousTechnical::CurlyBracketExtension),
-            RIGHT_CURLY_BRACKET_UPPER_HOOK => Ok(MiscellaneousTechnical::RightCurlyBracketUpperHook),
-            RIGHT_CURLY_BRACKET_MIDDLE_PIECE => Ok(MiscellaneousTechnical::RightCurlyBracketMiddlePiece),
-            RIGHT_CURLY_BRACKET_LOWER_HOOK => Ok(MiscellaneousTechnical::RightCurlyBracketLowerHook),
-            INTEGRAL_EXTENSION => Ok(MiscellaneousTechnical::IntegralExtension),
-            HORIZONTAL_LINE_EXTENSION => Ok(MiscellaneousTechnical::HorizontalLineExtension),
-            UPPER_LEFT_OR_LOWER_RIGHT_CURLY_BRACKET_SECTION => Ok(MiscellaneousTechnical::UpperLeftOrLowerRightCurlyBracketSection),
-            UPPER_RIGHT_OR_LOWER_LEFT_CURLY_BRACKET_SECTION => Ok(MiscellaneousTechnical::UpperRightOrLowerLeftCurlyBracketSection),
-            SUMMATION_TOP => Ok(MiscellaneousTechnical::SummationTop),
-            SUMMATION_BOTTOM => Ok(MiscellaneousTechnical::SummationBottom),
-            TOP_SQUARE_BRACKET => Ok(MiscellaneousTechnical::TopSquareBracket),
-            BOTTOM_SQUARE_BRACKET => Ok(MiscellaneousTechnical::BottomSquareBracket),
-            BOTTOM_SQUARE_BRACKET_OVER_TOP_SQUARE_BRACKET => Ok(MiscellaneousTechnical::BottomSquareBracketOverTopSquareBracket),
-            RADICAL_SYMBOL_BOTTOM => Ok(MiscellaneousTechnical::RadicalSymbolBottom),
-            LEFT_VERTICAL_BOX_LINE => Ok(MiscellaneousTechnical::LeftVerticalBoxLine),
-            RIGHT_VERTICAL_BOX_LINE => Ok(MiscellaneousTechnical::RightVerticalBoxLine),
-            HORIZONTAL_SCAN_LINE_DASH_1 => Ok(MiscellaneousTechnical::HorizontalScanLineDash1),
-            HORIZONTAL_SCAN_LINE_DASH_3 => Ok(MiscellaneousTechnical::HorizontalScanLineDash3),
-            HORIZONTAL_SCAN_LINE_DASH_7 => Ok(MiscellaneousTechnical::HorizontalScanLineDash7),
-            HORIZONTAL_SCAN_LINE_DASH_9 => Ok(MiscellaneousTechnical::HorizontalScanLineDash9),
-            DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_TOP_RIGHT => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndTopRight),
-            DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_BOTTOM_RIGHT => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndBottomRight),
-            DENTISTRY_SYMBOL_LIGHT_VERTICAL_WITH_CIRCLE => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalWithCircle),
-            DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_CIRCLE => Ok(MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithCircle),
-            DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_CIRCLE => Ok(MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithCircle),
-            DENTISTRY_SYMBOL_LIGHT_VERTICAL_WITH_TRIANGLE => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalWithTriangle),
-            DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_TRIANGLE => Ok(MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithTriangle),
-            DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_TRIANGLE => Ok(MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithTriangle),
-            DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_WAVE => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndWave),
-            DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL_WITH_WAVE => Ok(MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithWave),
-            DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL_WITH_WAVE => Ok(MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithWave),
-            DENTISTRY_SYMBOL_LIGHT_DOWN_AND_HORIZONTAL => Ok(MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontal),
-            DENTISTRY_SYMBOL_LIGHT_UP_AND_HORIZONTAL => Ok(MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontal),
-            DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_TOP_LEFT => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndTopLeft),
-            DENTISTRY_SYMBOL_LIGHT_VERTICAL_AND_BOTTOM_LEFT => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndBottomLeft),
-            SQUARE_FOOT => Ok(MiscellaneousTechnical::SquareFoot),
-            RETURN_SYMBOL => Ok(MiscellaneousTechnical::ReturnSymbol),
-            EJECT_SYMBOL => Ok(MiscellaneousTechnical::EjectSymbol),
-            VERTICAL_LINE_EXTENSION => Ok(MiscellaneousTechnical::VerticalLineExtension),
-            METRICAL_BREVE => Ok(MiscellaneousTechnical::MetricalBreve),
-            METRICAL_LONG_OVER_SHORT => Ok(MiscellaneousTechnical::MetricalLongOverShort),
-            METRICAL_SHORT_OVER_LONG => Ok(MiscellaneousTechnical::MetricalShortOverLong),
-            METRICAL_LONG_OVER_TWO_SHORTS => Ok(MiscellaneousTechnical::MetricalLongOverTwoShorts),
-            METRICAL_TWO_SHORTS_OVER_LONG => Ok(MiscellaneousTechnical::MetricalTwoShortsOverLong),
-            METRICAL_TWO_SHORTS_JOINED => Ok(MiscellaneousTechnical::MetricalTwoShortsJoined),
-            METRICAL_TRISEME => Ok(MiscellaneousTechnical::MetricalTriseme),
-            METRICAL_TETRASEME => Ok(MiscellaneousTechnical::MetricalTetraseme),
-            METRICAL_PENTASEME => Ok(MiscellaneousTechnical::MetricalPentaseme),
-            EARTH_GROUND => Ok(MiscellaneousTechnical::EarthGround),
-            FUSE => Ok(MiscellaneousTechnical::Fuse),
-            TOP_PARENTHESIS => Ok(MiscellaneousTechnical::TopParenthesis),
-            BOTTOM_PARENTHESIS => Ok(MiscellaneousTechnical::BottomParenthesis),
-            TOP_CURLY_BRACKET => Ok(MiscellaneousTechnical::TopCurlyBracket),
-            BOTTOM_CURLY_BRACKET => Ok(MiscellaneousTechnical::BottomCurlyBracket),
-            TOP_TORTOISE_SHELL_BRACKET => Ok(MiscellaneousTechnical::TopTortoiseShellBracket),
-            BOTTOM_TORTOISE_SHELL_BRACKET => Ok(MiscellaneousTechnical::BottomTortoiseShellBracket),
-            WHITE_TRAPEZIUM => Ok(MiscellaneousTechnical::WhiteTrapezium),
-            BENZENE_RING_WITH_CIRCLE => Ok(MiscellaneousTechnical::BenzeneRingWithCircle),
-            STRAIGHTNESS => Ok(MiscellaneousTechnical::Straightness),
-            FLATNESS => Ok(MiscellaneousTechnical::Flatness),
-            AC_CURRENT => Ok(MiscellaneousTechnical::AcCurrent),
-            ELECTRICAL_INTERSECTION => Ok(MiscellaneousTechnical::ElectricalIntersection),
-            DECIMAL_EXPONENT_SYMBOL => Ok(MiscellaneousTechnical::DecimalExponentSymbol),
-            BLACK_RIGHT_DASH_POINTING_DOUBLE_TRIANGLE => Ok(MiscellaneousTechnical::BlackRightDashPointingDoubleTriangle),
-            BLACK_LEFT_DASH_POINTING_DOUBLE_TRIANGLE => Ok(MiscellaneousTechnical::BlackLeftDashPointingDoubleTriangle),
-            BLACK_UP_DASH_POINTING_DOUBLE_TRIANGLE => Ok(MiscellaneousTechnical::BlackUpDashPointingDoubleTriangle),
-            BLACK_DOWN_DASH_POINTING_DOUBLE_TRIANGLE => Ok(MiscellaneousTechnical::BlackDownDashPointingDoubleTriangle),
-            BLACK_RIGHT_DASH_POINTING_DOUBLE_TRIANGLE_WITH_VERTICAL_BAR => Ok(MiscellaneousTechnical::BlackRightDashPointingDoubleTriangleWithVerticalBar),
-            BLACK_LEFT_DASH_POINTING_DOUBLE_TRIANGLE_WITH_VERTICAL_BAR => Ok(MiscellaneousTechnical::BlackLeftDashPointingDoubleTriangleWithVerticalBar),
-            BLACK_RIGHT_DASH_POINTING_TRIANGLE_WITH_DOUBLE_VERTICAL_BAR => Ok(MiscellaneousTechnical::BlackRightDashPointingTriangleWithDoubleVerticalBar),
-            ALARM_CLOCK => Ok(MiscellaneousTechnical::AlarmClock),
-            STOPWATCH => Ok(MiscellaneousTechnical::Stopwatch),
-            TIMER_CLOCK => Ok(MiscellaneousTechnical::TimerClock),
-            HOURGLASS_WITH_FLOWING_SAND => Ok(MiscellaneousTechnical::HourglassWithFlowingSand),
-            BLACK_MEDIUM_LEFT_DASH_POINTING_TRIANGLE => Ok(MiscellaneousTechnical::BlackMediumLeftDashPointingTriangle),
-            BLACK_MEDIUM_RIGHT_DASH_POINTING_TRIANGLE => Ok(MiscellaneousTechnical::BlackMediumRightDashPointingTriangle),
-            BLACK_MEDIUM_UP_DASH_POINTING_TRIANGLE => Ok(MiscellaneousTechnical::BlackMediumUpDashPointingTriangle),
-            BLACK_MEDIUM_DOWN_DASH_POINTING_TRIANGLE => Ok(MiscellaneousTechnical::BlackMediumDownDashPointingTriangle),
-            DOUBLE_VERTICAL_BAR => Ok(MiscellaneousTechnical::DoubleVerticalBar),
-            BLACK_SQUARE_FOR_STOP => Ok(MiscellaneousTechnical::BlackSquareForStop),
-            BLACK_CIRCLE_FOR_RECORD => Ok(MiscellaneousTechnical::BlackCircleForRecord),
-            POWER_SYMBOL => Ok(MiscellaneousTechnical::PowerSymbol),
-            POWER_ON_DASH_OFF_SYMBOL => Ok(MiscellaneousTechnical::PowerOnDashOffSymbol),
-            POWER_ON_SYMBOL => Ok(MiscellaneousTechnical::PowerOnSymbol),
-            POWER_SLEEP_SYMBOL => Ok(MiscellaneousTechnical::PowerSleepSymbol),
+            '⌀' => Ok(MiscellaneousTechnical::DiameterSign),
+            '⌁' => Ok(MiscellaneousTechnical::ElectricArrow),
+            '⌂' => Ok(MiscellaneousTechnical::House),
+            '⌃' => Ok(MiscellaneousTechnical::UpArrowhead),
+            '⌄' => Ok(MiscellaneousTechnical::DownArrowhead),
+            '⌅' => Ok(MiscellaneousTechnical::Projective),
+            '⌆' => Ok(MiscellaneousTechnical::Perspective),
+            '⌇' => Ok(MiscellaneousTechnical::WavyLine),
+            '⌈' => Ok(MiscellaneousTechnical::LeftCeiling),
+            '⌉' => Ok(MiscellaneousTechnical::RightCeiling),
+            '⌊' => Ok(MiscellaneousTechnical::LeftFloor),
+            '⌋' => Ok(MiscellaneousTechnical::RightFloor),
+            '⌌' => Ok(MiscellaneousTechnical::BottomRightCrop),
+            '⌍' => Ok(MiscellaneousTechnical::BottomLeftCrop),
+            '⌎' => Ok(MiscellaneousTechnical::TopRightCrop),
+            '⌏' => Ok(MiscellaneousTechnical::TopLeftCrop),
+            '⌐' => Ok(MiscellaneousTechnical::ReversedNotSign),
+            '⌑' => Ok(MiscellaneousTechnical::SquareLozenge),
+            '⌒' => Ok(MiscellaneousTechnical::Arc),
+            '⌓' => Ok(MiscellaneousTechnical::Segment),
+            '⌔' => Ok(MiscellaneousTechnical::Sector),
+            '⌕' => Ok(MiscellaneousTechnical::TelephoneRecorder),
+            '⌖' => Ok(MiscellaneousTechnical::PositionIndicator),
+            '⌗' => Ok(MiscellaneousTechnical::ViewdataSquare),
+            '⌘' => Ok(MiscellaneousTechnical::PlaceOfInterestSign),
+            '⌙' => Ok(MiscellaneousTechnical::TurnedNotSign),
+            '⌚' => Ok(MiscellaneousTechnical::Watch),
+            '⌛' => Ok(MiscellaneousTechnical::Hourglass),
+            '⌜' => Ok(MiscellaneousTechnical::TopLeftCorner),
+            '⌝' => Ok(MiscellaneousTechnical::TopRightCorner),
+            '⌞' => Ok(MiscellaneousTechnical::BottomLeftCorner),
+            '⌟' => Ok(MiscellaneousTechnical::BottomRightCorner),
+            '⌠' => Ok(MiscellaneousTechnical::TopHalfIntegral),
+            '⌡' => Ok(MiscellaneousTechnical::BottomHalfIntegral),
+            '⌢' => Ok(MiscellaneousTechnical::Frown),
+            '⌣' => Ok(MiscellaneousTechnical::Smile),
+            '⌤' => Ok(MiscellaneousTechnical::UpArrowheadBetweenTwoHorizontalBars),
+            '⌥' => Ok(MiscellaneousTechnical::OptionKey),
+            '⌦' => Ok(MiscellaneousTechnical::EraseToTheRight),
+            '⌧' => Ok(MiscellaneousTechnical::XInARectangleBox),
+            '⌨' => Ok(MiscellaneousTechnical::Keyboard),
+            '〈' => Ok(MiscellaneousTechnical::LeftDashPointingAngleBracket),
+            '〉' => Ok(MiscellaneousTechnical::RightDashPointingAngleBracket),
+            '⌫' => Ok(MiscellaneousTechnical::EraseToTheLeft),
+            '⌬' => Ok(MiscellaneousTechnical::BenzeneRing),
+            '⌭' => Ok(MiscellaneousTechnical::Cylindricity),
+            '⌮' => Ok(MiscellaneousTechnical::AllAroundDashProfile),
+            '⌯' => Ok(MiscellaneousTechnical::Symmetry),
+            '⌰' => Ok(MiscellaneousTechnical::TotalRunout),
+            '⌱' => Ok(MiscellaneousTechnical::DimensionOrigin),
+            '⌲' => Ok(MiscellaneousTechnical::ConicalTaper),
+            '⌳' => Ok(MiscellaneousTechnical::Slope),
+            '⌴' => Ok(MiscellaneousTechnical::Counterbore),
+            '⌵' => Ok(MiscellaneousTechnical::Countersink),
+            '⌶' => Ok(MiscellaneousTechnical::AplFunctionalSymbolIDashBeam),
+            '⌷' => Ok(MiscellaneousTechnical::AplFunctionalSymbolSquishQuad),
+            '⌸' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadEqual),
+            '⌹' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDivide),
+            '⌺' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDiamond),
+            '⌻' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadJot),
+            '⌼' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadCircle),
+            '⌽' => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleStile),
+            '⌾' => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleJot),
+            '⌿' => Ok(MiscellaneousTechnical::AplFunctionalSymbolSlashBar),
+            '⍀' => Ok(MiscellaneousTechnical::AplFunctionalSymbolBackslashBar),
+            '⍁' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadSlash),
+            '⍂' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadBackslash),
+            '⍃' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadLessDashThan),
+            '⍄' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadGreaterDashThan),
+            '⍅' => Ok(MiscellaneousTechnical::AplFunctionalSymbolLeftwardsVane),
+            '⍆' => Ok(MiscellaneousTechnical::AplFunctionalSymbolRightwardsVane),
+            '⍇' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadLeftwardsArrow),
+            '⍈' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadRightwardsArrow),
+            '⍉' => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleBackslash),
+            '⍊' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownTackUnderbar),
+            '⍋' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDeltaStile),
+            '⍌' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDownCaret),
+            '⍍' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDelta),
+            '⍎' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownTackJot),
+            '⍏' => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpwardsVane),
+            '⍐' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadUpwardsArrow),
+            '⍑' => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpTackOverbar),
+            '⍒' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDelStile),
+            '⍓' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadUpCaret),
+            '⍔' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDel),
+            '⍕' => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpTackJot),
+            '⍖' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownwardsVane),
+            '⍗' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadDownwardsArrow),
+            '⍘' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuoteUnderbar),
+            '⍙' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDeltaUnderbar),
+            '⍚' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDiamondUnderbar),
+            '⍛' => Ok(MiscellaneousTechnical::AplFunctionalSymbolJotUnderbar),
+            '⍜' => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleUnderbar),
+            '⍝' => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpShoeJot),
+            '⍞' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuoteQuad),
+            '⍟' => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleStar),
+            '⍠' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadColon),
+            '⍡' => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpTackDiaeresis),
+            '⍢' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDelDiaeresis),
+            '⍣' => Ok(MiscellaneousTechnical::AplFunctionalSymbolStarDiaeresis),
+            '⍤' => Ok(MiscellaneousTechnical::AplFunctionalSymbolJotDiaeresis),
+            '⍥' => Ok(MiscellaneousTechnical::AplFunctionalSymbolCircleDiaeresis),
+            '⍦' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownShoeStile),
+            '⍧' => Ok(MiscellaneousTechnical::AplFunctionalSymbolLeftShoeStile),
+            '⍨' => Ok(MiscellaneousTechnical::AplFunctionalSymbolTildeDiaeresis),
+            '⍩' => Ok(MiscellaneousTechnical::AplFunctionalSymbolGreaterDashThanDiaeresis),
+            '⍪' => Ok(MiscellaneousTechnical::AplFunctionalSymbolCommaBar),
+            '⍫' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDelTilde),
+            '⍬' => Ok(MiscellaneousTechnical::AplFunctionalSymbolZilde),
+            '⍭' => Ok(MiscellaneousTechnical::AplFunctionalSymbolStileTilde),
+            '⍮' => Ok(MiscellaneousTechnical::AplFunctionalSymbolSemicolonUnderbar),
+            '⍯' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadNotEqual),
+            '⍰' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuadQuestion),
+            '⍱' => Ok(MiscellaneousTechnical::AplFunctionalSymbolDownCaretTilde),
+            '⍲' => Ok(MiscellaneousTechnical::AplFunctionalSymbolUpCaretTilde),
+            '⍳' => Ok(MiscellaneousTechnical::AplFunctionalSymbolIota),
+            '⍴' => Ok(MiscellaneousTechnical::AplFunctionalSymbolRho),
+            '⍵' => Ok(MiscellaneousTechnical::AplFunctionalSymbolOmega),
+            '⍶' => Ok(MiscellaneousTechnical::AplFunctionalSymbolAlphaUnderbar),
+            '⍷' => Ok(MiscellaneousTechnical::AplFunctionalSymbolEpsilonUnderbar),
+            '⍸' => Ok(MiscellaneousTechnical::AplFunctionalSymbolIotaUnderbar),
+            '⍹' => Ok(MiscellaneousTechnical::AplFunctionalSymbolOmegaUnderbar),
+            '⍺' => Ok(MiscellaneousTechnical::AplFunctionalSymbolAlpha),
+            '⍻' => Ok(MiscellaneousTechnical::NotCheckMark),
+            '⍼' => Ok(MiscellaneousTechnical::RightAngleWithDownwardsZigzagArrow),
+            '⍽' => Ok(MiscellaneousTechnical::ShoulderedOpenBox),
+            '⍾' => Ok(MiscellaneousTechnical::BellSymbol),
+            '⍿' => Ok(MiscellaneousTechnical::VerticalLineWithMiddleDot),
+            '⎀' => Ok(MiscellaneousTechnical::InsertionSymbol),
+            '⎁' => Ok(MiscellaneousTechnical::ContinuousUnderlineSymbol),
+            '⎂' => Ok(MiscellaneousTechnical::DiscontinuousUnderlineSymbol),
+            '⎃' => Ok(MiscellaneousTechnical::EmphasisSymbol),
+            '⎄' => Ok(MiscellaneousTechnical::CompositionSymbol),
+            '⎅' => Ok(MiscellaneousTechnical::WhiteSquareWithCentreVerticalLine),
+            '⎆' => Ok(MiscellaneousTechnical::EnterSymbol),
+            '⎇' => Ok(MiscellaneousTechnical::AlternativeKeySymbol),
+            '⎈' => Ok(MiscellaneousTechnical::HelmSymbol),
+            '⎉' => Ok(MiscellaneousTechnical::CircledHorizontalBarWithNotch),
+            '⎊' => Ok(MiscellaneousTechnical::CircledTriangleDown),
+            '⎋' => Ok(MiscellaneousTechnical::BrokenCircleWithNorthwestArrow),
+            '⎌' => Ok(MiscellaneousTechnical::UndoSymbol),
+            '⎍' => Ok(MiscellaneousTechnical::MonostableSymbol),
+            '⎎' => Ok(MiscellaneousTechnical::HysteresisSymbol),
+            '⎏' => Ok(MiscellaneousTechnical::OpenDashCircuitDashOutputHDashTypeSymbol),
+            '⎐' => Ok(MiscellaneousTechnical::OpenDashCircuitDashOutputLDashTypeSymbol),
+            '⎑' => Ok(MiscellaneousTechnical::PassiveDashPullDashDownDashOutputSymbol),
+            '⎒' => Ok(MiscellaneousTechnical::PassiveDashPullDashUpDashOutputSymbol),
+            '⎓' => Ok(MiscellaneousTechnical::DirectCurrentSymbolFormTwo),
+            '⎔' => Ok(MiscellaneousTechnical::SoftwareDashFunctionSymbol),
+            '⎕' => Ok(MiscellaneousTechnical::AplFunctionalSymbolQuad),
+            '⎖' => Ok(MiscellaneousTechnical::DecimalSeparatorKeySymbol),
+            '⎗' => Ok(MiscellaneousTechnical::PreviousPage),
+            '⎘' => Ok(MiscellaneousTechnical::NextPage),
+            '⎙' => Ok(MiscellaneousTechnical::PrintScreenSymbol),
+            '⎚' => Ok(MiscellaneousTechnical::ClearScreenSymbol),
+            '⎛' => Ok(MiscellaneousTechnical::LeftParenthesisUpperHook),
+            '⎜' => Ok(MiscellaneousTechnical::LeftParenthesisExtension),
+            '⎝' => Ok(MiscellaneousTechnical::LeftParenthesisLowerHook),
+            '⎞' => Ok(MiscellaneousTechnical::RightParenthesisUpperHook),
+            '⎟' => Ok(MiscellaneousTechnical::RightParenthesisExtension),
+            '⎠' => Ok(MiscellaneousTechnical::RightParenthesisLowerHook),
+            '⎡' => Ok(MiscellaneousTechnical::LeftSquareBracketUpperCorner),
+            '⎢' => Ok(MiscellaneousTechnical::LeftSquareBracketExtension),
+            '⎣' => Ok(MiscellaneousTechnical::LeftSquareBracketLowerCorner),
+            '⎤' => Ok(MiscellaneousTechnical::RightSquareBracketUpperCorner),
+            '⎥' => Ok(MiscellaneousTechnical::RightSquareBracketExtension),
+            '⎦' => Ok(MiscellaneousTechnical::RightSquareBracketLowerCorner),
+            '⎧' => Ok(MiscellaneousTechnical::LeftCurlyBracketUpperHook),
+            '⎨' => Ok(MiscellaneousTechnical::LeftCurlyBracketMiddlePiece),
+            '⎩' => Ok(MiscellaneousTechnical::LeftCurlyBracketLowerHook),
+            '⎪' => Ok(MiscellaneousTechnical::CurlyBracketExtension),
+            '⎫' => Ok(MiscellaneousTechnical::RightCurlyBracketUpperHook),
+            '⎬' => Ok(MiscellaneousTechnical::RightCurlyBracketMiddlePiece),
+            '⎭' => Ok(MiscellaneousTechnical::RightCurlyBracketLowerHook),
+            '⎮' => Ok(MiscellaneousTechnical::IntegralExtension),
+            '⎯' => Ok(MiscellaneousTechnical::HorizontalLineExtension),
+            '⎰' => Ok(MiscellaneousTechnical::UpperLeftOrLowerRightCurlyBracketSection),
+            '⎱' => Ok(MiscellaneousTechnical::UpperRightOrLowerLeftCurlyBracketSection),
+            '⎲' => Ok(MiscellaneousTechnical::SummationTop),
+            '⎳' => Ok(MiscellaneousTechnical::SummationBottom),
+            '⎴' => Ok(MiscellaneousTechnical::TopSquareBracket),
+            '⎵' => Ok(MiscellaneousTechnical::BottomSquareBracket),
+            '⎶' => Ok(MiscellaneousTechnical::BottomSquareBracketOverTopSquareBracket),
+            '⎷' => Ok(MiscellaneousTechnical::RadicalSymbolBottom),
+            '⎸' => Ok(MiscellaneousTechnical::LeftVerticalBoxLine),
+            '⎹' => Ok(MiscellaneousTechnical::RightVerticalBoxLine),
+            '⎺' => Ok(MiscellaneousTechnical::HorizontalScanLineDash1),
+            '⎻' => Ok(MiscellaneousTechnical::HorizontalScanLineDash3),
+            '⎼' => Ok(MiscellaneousTechnical::HorizontalScanLineDash7),
+            '⎽' => Ok(MiscellaneousTechnical::HorizontalScanLineDash9),
+            '⎾' => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndTopRight),
+            '⎿' => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndBottomRight),
+            '⏀' => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalWithCircle),
+            '⏁' => Ok(MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithCircle),
+            '⏂' => Ok(MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithCircle),
+            '⏃' => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalWithTriangle),
+            '⏄' => Ok(MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithTriangle),
+            '⏅' => Ok(MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithTriangle),
+            '⏆' => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndWave),
+            '⏇' => Ok(MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontalWithWave),
+            '⏈' => Ok(MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontalWithWave),
+            '⏉' => Ok(MiscellaneousTechnical::DentistrySymbolLightDownAndHorizontal),
+            '⏊' => Ok(MiscellaneousTechnical::DentistrySymbolLightUpAndHorizontal),
+            '⏋' => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndTopLeft),
+            '⏌' => Ok(MiscellaneousTechnical::DentistrySymbolLightVerticalAndBottomLeft),
+            '⏍' => Ok(MiscellaneousTechnical::SquareFoot),
+            '⏎' => Ok(MiscellaneousTechnical::ReturnSymbol),
+            '⏏' => Ok(MiscellaneousTechnical::EjectSymbol),
+            '⏐' => Ok(MiscellaneousTechnical::VerticalLineExtension),
+            '⏑' => Ok(MiscellaneousTechnical::MetricalBreve),
+            '⏒' => Ok(MiscellaneousTechnical::MetricalLongOverShort),
+            '⏓' => Ok(MiscellaneousTechnical::MetricalShortOverLong),
+            '⏔' => Ok(MiscellaneousTechnical::MetricalLongOverTwoShorts),
+            '⏕' => Ok(MiscellaneousTechnical::MetricalTwoShortsOverLong),
+            '⏖' => Ok(MiscellaneousTechnical::MetricalTwoShortsJoined),
+            '⏗' => Ok(MiscellaneousTechnical::MetricalTriseme),
+            '⏘' => Ok(MiscellaneousTechnical::MetricalTetraseme),
+            '⏙' => Ok(MiscellaneousTechnical::MetricalPentaseme),
+            '⏚' => Ok(MiscellaneousTechnical::EarthGround),
+            '⏛' => Ok(MiscellaneousTechnical::Fuse),
+            '⏜' => Ok(MiscellaneousTechnical::TopParenthesis),
+            '⏝' => Ok(MiscellaneousTechnical::BottomParenthesis),
+            '⏞' => Ok(MiscellaneousTechnical::TopCurlyBracket),
+            '⏟' => Ok(MiscellaneousTechnical::BottomCurlyBracket),
+            '⏠' => Ok(MiscellaneousTechnical::TopTortoiseShellBracket),
+            '⏡' => Ok(MiscellaneousTechnical::BottomTortoiseShellBracket),
+            '⏢' => Ok(MiscellaneousTechnical::WhiteTrapezium),
+            '⏣' => Ok(MiscellaneousTechnical::BenzeneRingWithCircle),
+            '⏤' => Ok(MiscellaneousTechnical::Straightness),
+            '⏥' => Ok(MiscellaneousTechnical::Flatness),
+            '⏦' => Ok(MiscellaneousTechnical::AcCurrent),
+            '⏧' => Ok(MiscellaneousTechnical::ElectricalIntersection),
+            '⏨' => Ok(MiscellaneousTechnical::DecimalExponentSymbol),
+            '⏩' => Ok(MiscellaneousTechnical::BlackRightDashPointingDoubleTriangle),
+            '⏪' => Ok(MiscellaneousTechnical::BlackLeftDashPointingDoubleTriangle),
+            '⏫' => Ok(MiscellaneousTechnical::BlackUpDashPointingDoubleTriangle),
+            '⏬' => Ok(MiscellaneousTechnical::BlackDownDashPointingDoubleTriangle),
+            '⏭' => Ok(MiscellaneousTechnical::BlackRightDashPointingDoubleTriangleWithVerticalBar),
+            '⏮' => Ok(MiscellaneousTechnical::BlackLeftDashPointingDoubleTriangleWithVerticalBar),
+            '⏯' => Ok(MiscellaneousTechnical::BlackRightDashPointingTriangleWithDoubleVerticalBar),
+            '⏰' => Ok(MiscellaneousTechnical::AlarmClock),
+            '⏱' => Ok(MiscellaneousTechnical::Stopwatch),
+            '⏲' => Ok(MiscellaneousTechnical::TimerClock),
+            '⏳' => Ok(MiscellaneousTechnical::HourglassWithFlowingSand),
+            '⏴' => Ok(MiscellaneousTechnical::BlackMediumLeftDashPointingTriangle),
+            '⏵' => Ok(MiscellaneousTechnical::BlackMediumRightDashPointingTriangle),
+            '⏶' => Ok(MiscellaneousTechnical::BlackMediumUpDashPointingTriangle),
+            '⏷' => Ok(MiscellaneousTechnical::BlackMediumDownDashPointingTriangle),
+            '⏸' => Ok(MiscellaneousTechnical::DoubleVerticalBar),
+            '⏹' => Ok(MiscellaneousTechnical::BlackSquareForStop),
+            '⏺' => Ok(MiscellaneousTechnical::BlackCircleForRecord),
+            '⏻' => Ok(MiscellaneousTechnical::PowerSymbol),
+            '⏼' => Ok(MiscellaneousTechnical::PowerOnDashOffSymbol),
+            '⏽' => Ok(MiscellaneousTechnical::PowerOnSymbol),
+            '⏾' => Ok(MiscellaneousTechnical::PowerSleepSymbol),
             _ => Err(()),
         }
     }

@@ -1,68 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10a60}: '𐩠'
-    pub const LETTER_HE: char = '𐩠';
-    /// \u{10a61}: '𐩡'
-    pub const LETTER_LAMEDH: char = '𐩡';
-    /// \u{10a62}: '𐩢'
-    pub const LETTER_HETH: char = '𐩢';
-    /// \u{10a63}: '𐩣'
-    pub const LETTER_MEM: char = '𐩣';
-    /// \u{10a64}: '𐩤'
-    pub const LETTER_QOPH: char = '𐩤';
-    /// \u{10a65}: '𐩥'
-    pub const LETTER_WAW: char = '𐩥';
-    /// \u{10a66}: '𐩦'
-    pub const LETTER_SHIN: char = '𐩦';
-    /// \u{10a67}: '𐩧'
-    pub const LETTER_RESH: char = '𐩧';
-    /// \u{10a68}: '𐩨'
-    pub const LETTER_BETH: char = '𐩨';
-    /// \u{10a69}: '𐩩'
-    pub const LETTER_TAW: char = '𐩩';
-    /// \u{10a6a}: '𐩪'
-    pub const LETTER_SAT: char = '𐩪';
-    /// \u{10a6b}: '𐩫'
-    pub const LETTER_KAPH: char = '𐩫';
-    /// \u{10a6c}: '𐩬'
-    pub const LETTER_NUN: char = '𐩬';
-    /// \u{10a6d}: '𐩭'
-    pub const LETTER_KHETH: char = '𐩭';
-    /// \u{10a6e}: '𐩮'
-    pub const LETTER_SADHE: char = '𐩮';
-    /// \u{10a6f}: '𐩯'
-    pub const LETTER_SAMEKH: char = '𐩯';
-    /// \u{10a70}: '𐩰'
-    pub const LETTER_FE: char = '𐩰';
-    /// \u{10a71}: '𐩱'
-    pub const LETTER_ALEF: char = '𐩱';
-    /// \u{10a72}: '𐩲'
-    pub const LETTER_AYN: char = '𐩲';
-    /// \u{10a73}: '𐩳'
-    pub const LETTER_DHADHE: char = '𐩳';
-    /// \u{10a74}: '𐩴'
-    pub const LETTER_GIMEL: char = '𐩴';
-    /// \u{10a75}: '𐩵'
-    pub const LETTER_DALETH: char = '𐩵';
-    /// \u{10a76}: '𐩶'
-    pub const LETTER_GHAYN: char = '𐩶';
-    /// \u{10a77}: '𐩷'
-    pub const LETTER_TETH: char = '𐩷';
-    /// \u{10a78}: '𐩸'
-    pub const LETTER_ZAYN: char = '𐩸';
-    /// \u{10a79}: '𐩹'
-    pub const LETTER_DHALETH: char = '𐩹';
-    /// \u{10a7a}: '𐩺'
-    pub const LETTER_YODH: char = '𐩺';
-    /// \u{10a7b}: '𐩻'
-    pub const LETTER_THAW: char = '𐩻';
-    /// \u{10a7c}: '𐩼'
-    pub const LETTER_THETH: char = '𐩼';
-    /// \u{10a7d}: '𐩽'
-    pub const NUMBER_ONE: char = '𐩽';
-    /// \u{10a7e}: '𐩾'
-    pub const NUMBER_FIFTY: char = '𐩾';
-}
 
 /// An enum to represent all characters in the OldSouthArabian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -133,39 +68,38 @@ pub enum OldSouthArabian {
 
 impl Into<char> for OldSouthArabian {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            OldSouthArabian::LetterHe => LETTER_HE,
-            OldSouthArabian::LetterLamedh => LETTER_LAMEDH,
-            OldSouthArabian::LetterHeth => LETTER_HETH,
-            OldSouthArabian::LetterMem => LETTER_MEM,
-            OldSouthArabian::LetterQoph => LETTER_QOPH,
-            OldSouthArabian::LetterWaw => LETTER_WAW,
-            OldSouthArabian::LetterShin => LETTER_SHIN,
-            OldSouthArabian::LetterResh => LETTER_RESH,
-            OldSouthArabian::LetterBeth => LETTER_BETH,
-            OldSouthArabian::LetterTaw => LETTER_TAW,
-            OldSouthArabian::LetterSat => LETTER_SAT,
-            OldSouthArabian::LetterKaph => LETTER_KAPH,
-            OldSouthArabian::LetterNun => LETTER_NUN,
-            OldSouthArabian::LetterKheth => LETTER_KHETH,
-            OldSouthArabian::LetterSadhe => LETTER_SADHE,
-            OldSouthArabian::LetterSamekh => LETTER_SAMEKH,
-            OldSouthArabian::LetterFe => LETTER_FE,
-            OldSouthArabian::LetterAlef => LETTER_ALEF,
-            OldSouthArabian::LetterAyn => LETTER_AYN,
-            OldSouthArabian::LetterDhadhe => LETTER_DHADHE,
-            OldSouthArabian::LetterGimel => LETTER_GIMEL,
-            OldSouthArabian::LetterDaleth => LETTER_DALETH,
-            OldSouthArabian::LetterGhayn => LETTER_GHAYN,
-            OldSouthArabian::LetterTeth => LETTER_TETH,
-            OldSouthArabian::LetterZayn => LETTER_ZAYN,
-            OldSouthArabian::LetterDhaleth => LETTER_DHALETH,
-            OldSouthArabian::LetterYodh => LETTER_YODH,
-            OldSouthArabian::LetterThaw => LETTER_THAW,
-            OldSouthArabian::LetterTheth => LETTER_THETH,
-            OldSouthArabian::NumberOne => NUMBER_ONE,
-            OldSouthArabian::NumberFifty => NUMBER_FIFTY,
+            OldSouthArabian::LetterHe => '𐩠',
+            OldSouthArabian::LetterLamedh => '𐩡',
+            OldSouthArabian::LetterHeth => '𐩢',
+            OldSouthArabian::LetterMem => '𐩣',
+            OldSouthArabian::LetterQoph => '𐩤',
+            OldSouthArabian::LetterWaw => '𐩥',
+            OldSouthArabian::LetterShin => '𐩦',
+            OldSouthArabian::LetterResh => '𐩧',
+            OldSouthArabian::LetterBeth => '𐩨',
+            OldSouthArabian::LetterTaw => '𐩩',
+            OldSouthArabian::LetterSat => '𐩪',
+            OldSouthArabian::LetterKaph => '𐩫',
+            OldSouthArabian::LetterNun => '𐩬',
+            OldSouthArabian::LetterKheth => '𐩭',
+            OldSouthArabian::LetterSadhe => '𐩮',
+            OldSouthArabian::LetterSamekh => '𐩯',
+            OldSouthArabian::LetterFe => '𐩰',
+            OldSouthArabian::LetterAlef => '𐩱',
+            OldSouthArabian::LetterAyn => '𐩲',
+            OldSouthArabian::LetterDhadhe => '𐩳',
+            OldSouthArabian::LetterGimel => '𐩴',
+            OldSouthArabian::LetterDaleth => '𐩵',
+            OldSouthArabian::LetterGhayn => '𐩶',
+            OldSouthArabian::LetterTeth => '𐩷',
+            OldSouthArabian::LetterZayn => '𐩸',
+            OldSouthArabian::LetterDhaleth => '𐩹',
+            OldSouthArabian::LetterYodh => '𐩺',
+            OldSouthArabian::LetterThaw => '𐩻',
+            OldSouthArabian::LetterTheth => '𐩼',
+            OldSouthArabian::NumberOne => '𐩽',
+            OldSouthArabian::NumberFifty => '𐩾',
         }
     }
 }
@@ -173,39 +107,38 @@ impl Into<char> for OldSouthArabian {
 impl std::convert::TryFrom<char> for OldSouthArabian {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_HE => Ok(OldSouthArabian::LetterHe),
-            LETTER_LAMEDH => Ok(OldSouthArabian::LetterLamedh),
-            LETTER_HETH => Ok(OldSouthArabian::LetterHeth),
-            LETTER_MEM => Ok(OldSouthArabian::LetterMem),
-            LETTER_QOPH => Ok(OldSouthArabian::LetterQoph),
-            LETTER_WAW => Ok(OldSouthArabian::LetterWaw),
-            LETTER_SHIN => Ok(OldSouthArabian::LetterShin),
-            LETTER_RESH => Ok(OldSouthArabian::LetterResh),
-            LETTER_BETH => Ok(OldSouthArabian::LetterBeth),
-            LETTER_TAW => Ok(OldSouthArabian::LetterTaw),
-            LETTER_SAT => Ok(OldSouthArabian::LetterSat),
-            LETTER_KAPH => Ok(OldSouthArabian::LetterKaph),
-            LETTER_NUN => Ok(OldSouthArabian::LetterNun),
-            LETTER_KHETH => Ok(OldSouthArabian::LetterKheth),
-            LETTER_SADHE => Ok(OldSouthArabian::LetterSadhe),
-            LETTER_SAMEKH => Ok(OldSouthArabian::LetterSamekh),
-            LETTER_FE => Ok(OldSouthArabian::LetterFe),
-            LETTER_ALEF => Ok(OldSouthArabian::LetterAlef),
-            LETTER_AYN => Ok(OldSouthArabian::LetterAyn),
-            LETTER_DHADHE => Ok(OldSouthArabian::LetterDhadhe),
-            LETTER_GIMEL => Ok(OldSouthArabian::LetterGimel),
-            LETTER_DALETH => Ok(OldSouthArabian::LetterDaleth),
-            LETTER_GHAYN => Ok(OldSouthArabian::LetterGhayn),
-            LETTER_TETH => Ok(OldSouthArabian::LetterTeth),
-            LETTER_ZAYN => Ok(OldSouthArabian::LetterZayn),
-            LETTER_DHALETH => Ok(OldSouthArabian::LetterDhaleth),
-            LETTER_YODH => Ok(OldSouthArabian::LetterYodh),
-            LETTER_THAW => Ok(OldSouthArabian::LetterThaw),
-            LETTER_THETH => Ok(OldSouthArabian::LetterTheth),
-            NUMBER_ONE => Ok(OldSouthArabian::NumberOne),
-            NUMBER_FIFTY => Ok(OldSouthArabian::NumberFifty),
+            '𐩠' => Ok(OldSouthArabian::LetterHe),
+            '𐩡' => Ok(OldSouthArabian::LetterLamedh),
+            '𐩢' => Ok(OldSouthArabian::LetterHeth),
+            '𐩣' => Ok(OldSouthArabian::LetterMem),
+            '𐩤' => Ok(OldSouthArabian::LetterQoph),
+            '𐩥' => Ok(OldSouthArabian::LetterWaw),
+            '𐩦' => Ok(OldSouthArabian::LetterShin),
+            '𐩧' => Ok(OldSouthArabian::LetterResh),
+            '𐩨' => Ok(OldSouthArabian::LetterBeth),
+            '𐩩' => Ok(OldSouthArabian::LetterTaw),
+            '𐩪' => Ok(OldSouthArabian::LetterSat),
+            '𐩫' => Ok(OldSouthArabian::LetterKaph),
+            '𐩬' => Ok(OldSouthArabian::LetterNun),
+            '𐩭' => Ok(OldSouthArabian::LetterKheth),
+            '𐩮' => Ok(OldSouthArabian::LetterSadhe),
+            '𐩯' => Ok(OldSouthArabian::LetterSamekh),
+            '𐩰' => Ok(OldSouthArabian::LetterFe),
+            '𐩱' => Ok(OldSouthArabian::LetterAlef),
+            '𐩲' => Ok(OldSouthArabian::LetterAyn),
+            '𐩳' => Ok(OldSouthArabian::LetterDhadhe),
+            '𐩴' => Ok(OldSouthArabian::LetterGimel),
+            '𐩵' => Ok(OldSouthArabian::LetterDaleth),
+            '𐩶' => Ok(OldSouthArabian::LetterGhayn),
+            '𐩷' => Ok(OldSouthArabian::LetterTeth),
+            '𐩸' => Ok(OldSouthArabian::LetterZayn),
+            '𐩹' => Ok(OldSouthArabian::LetterDhaleth),
+            '𐩺' => Ok(OldSouthArabian::LetterYodh),
+            '𐩻' => Ok(OldSouthArabian::LetterThaw),
+            '𐩼' => Ok(OldSouthArabian::LetterTheth),
+            '𐩽' => Ok(OldSouthArabian::NumberOne),
+            '𐩾' => Ok(OldSouthArabian::NumberFifty),
             _ => Err(()),
         }
     }

@@ -1,132 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1d80}: 'ᶀ'
-    pub const LATIN_SMALL_LETTER_B_WITH_PALATAL_HOOK: char = 'ᶀ';
-    /// \u{1d81}: 'ᶁ'
-    pub const LATIN_SMALL_LETTER_D_WITH_PALATAL_HOOK: char = 'ᶁ';
-    /// \u{1d82}: 'ᶂ'
-    pub const LATIN_SMALL_LETTER_F_WITH_PALATAL_HOOK: char = 'ᶂ';
-    /// \u{1d83}: 'ᶃ'
-    pub const LATIN_SMALL_LETTER_G_WITH_PALATAL_HOOK: char = 'ᶃ';
-    /// \u{1d84}: 'ᶄ'
-    pub const LATIN_SMALL_LETTER_K_WITH_PALATAL_HOOK: char = 'ᶄ';
-    /// \u{1d85}: 'ᶅ'
-    pub const LATIN_SMALL_LETTER_L_WITH_PALATAL_HOOK: char = 'ᶅ';
-    /// \u{1d86}: 'ᶆ'
-    pub const LATIN_SMALL_LETTER_M_WITH_PALATAL_HOOK: char = 'ᶆ';
-    /// \u{1d87}: 'ᶇ'
-    pub const LATIN_SMALL_LETTER_N_WITH_PALATAL_HOOK: char = 'ᶇ';
-    /// \u{1d88}: 'ᶈ'
-    pub const LATIN_SMALL_LETTER_P_WITH_PALATAL_HOOK: char = 'ᶈ';
-    /// \u{1d89}: 'ᶉ'
-    pub const LATIN_SMALL_LETTER_R_WITH_PALATAL_HOOK: char = 'ᶉ';
-    /// \u{1d8a}: 'ᶊ'
-    pub const LATIN_SMALL_LETTER_S_WITH_PALATAL_HOOK: char = 'ᶊ';
-    /// \u{1d8b}: 'ᶋ'
-    pub const LATIN_SMALL_LETTER_ESH_WITH_PALATAL_HOOK: char = 'ᶋ';
-    /// \u{1d8c}: 'ᶌ'
-    pub const LATIN_SMALL_LETTER_V_WITH_PALATAL_HOOK: char = 'ᶌ';
-    /// \u{1d8d}: 'ᶍ'
-    pub const LATIN_SMALL_LETTER_X_WITH_PALATAL_HOOK: char = 'ᶍ';
-    /// \u{1d8e}: 'ᶎ'
-    pub const LATIN_SMALL_LETTER_Z_WITH_PALATAL_HOOK: char = 'ᶎ';
-    /// \u{1d8f}: 'ᶏ'
-    pub const LATIN_SMALL_LETTER_A_WITH_RETROFLEX_HOOK: char = 'ᶏ';
-    /// \u{1d90}: 'ᶐ'
-    pub const LATIN_SMALL_LETTER_ALPHA_WITH_RETROFLEX_HOOK: char = 'ᶐ';
-    /// \u{1d91}: 'ᶑ'
-    pub const LATIN_SMALL_LETTER_D_WITH_HOOK_AND_TAIL: char = 'ᶑ';
-    /// \u{1d92}: 'ᶒ'
-    pub const LATIN_SMALL_LETTER_E_WITH_RETROFLEX_HOOK: char = 'ᶒ';
-    /// \u{1d93}: 'ᶓ'
-    pub const LATIN_SMALL_LETTER_OPEN_E_WITH_RETROFLEX_HOOK: char = 'ᶓ';
-    /// \u{1d94}: 'ᶔ'
-    pub const LATIN_SMALL_LETTER_REVERSED_OPEN_E_WITH_RETROFLEX_HOOK: char = 'ᶔ';
-    /// \u{1d95}: 'ᶕ'
-    pub const LATIN_SMALL_LETTER_SCHWA_WITH_RETROFLEX_HOOK: char = 'ᶕ';
-    /// \u{1d96}: 'ᶖ'
-    pub const LATIN_SMALL_LETTER_I_WITH_RETROFLEX_HOOK: char = 'ᶖ';
-    /// \u{1d97}: 'ᶗ'
-    pub const LATIN_SMALL_LETTER_OPEN_O_WITH_RETROFLEX_HOOK: char = 'ᶗ';
-    /// \u{1d98}: 'ᶘ'
-    pub const LATIN_SMALL_LETTER_ESH_WITH_RETROFLEX_HOOK: char = 'ᶘ';
-    /// \u{1d99}: 'ᶙ'
-    pub const LATIN_SMALL_LETTER_U_WITH_RETROFLEX_HOOK: char = 'ᶙ';
-    /// \u{1d9a}: 'ᶚ'
-    pub const LATIN_SMALL_LETTER_EZH_WITH_RETROFLEX_HOOK: char = 'ᶚ';
-    /// \u{1d9b}: 'ᶛ'
-    pub const MODIFIER_LETTER_SMALL_TURNED_ALPHA: char = 'ᶛ';
-    /// \u{1d9c}: 'ᶜ'
-    pub const MODIFIER_LETTER_SMALL_C: char = 'ᶜ';
-    /// \u{1d9d}: 'ᶝ'
-    pub const MODIFIER_LETTER_SMALL_C_WITH_CURL: char = 'ᶝ';
-    /// \u{1d9e}: 'ᶞ'
-    pub const MODIFIER_LETTER_SMALL_ETH: char = 'ᶞ';
-    /// \u{1d9f}: 'ᶟ'
-    pub const MODIFIER_LETTER_SMALL_REVERSED_OPEN_E: char = 'ᶟ';
-    /// \u{1da0}: 'ᶠ'
-    pub const MODIFIER_LETTER_SMALL_F: char = 'ᶠ';
-    /// \u{1da1}: 'ᶡ'
-    pub const MODIFIER_LETTER_SMALL_DOTLESS_J_WITH_STROKE: char = 'ᶡ';
-    /// \u{1da2}: 'ᶢ'
-    pub const MODIFIER_LETTER_SMALL_SCRIPT_G: char = 'ᶢ';
-    /// \u{1da3}: 'ᶣ'
-    pub const MODIFIER_LETTER_SMALL_TURNED_H: char = 'ᶣ';
-    /// \u{1da4}: 'ᶤ'
-    pub const MODIFIER_LETTER_SMALL_I_WITH_STROKE: char = 'ᶤ';
-    /// \u{1da5}: 'ᶥ'
-    pub const MODIFIER_LETTER_SMALL_IOTA: char = 'ᶥ';
-    /// \u{1da6}: 'ᶦ'
-    pub const MODIFIER_LETTER_SMALL_CAPITAL_I: char = 'ᶦ';
-    /// \u{1da7}: 'ᶧ'
-    pub const MODIFIER_LETTER_SMALL_CAPITAL_I_WITH_STROKE: char = 'ᶧ';
-    /// \u{1da8}: 'ᶨ'
-    pub const MODIFIER_LETTER_SMALL_J_WITH_CROSSED_DASH_TAIL: char = 'ᶨ';
-    /// \u{1da9}: 'ᶩ'
-    pub const MODIFIER_LETTER_SMALL_L_WITH_RETROFLEX_HOOK: char = 'ᶩ';
-    /// \u{1daa}: 'ᶪ'
-    pub const MODIFIER_LETTER_SMALL_L_WITH_PALATAL_HOOK: char = 'ᶪ';
-    /// \u{1dab}: 'ᶫ'
-    pub const MODIFIER_LETTER_SMALL_CAPITAL_L: char = 'ᶫ';
-    /// \u{1dac}: 'ᶬ'
-    pub const MODIFIER_LETTER_SMALL_M_WITH_HOOK: char = 'ᶬ';
-    /// \u{1dad}: 'ᶭ'
-    pub const MODIFIER_LETTER_SMALL_TURNED_M_WITH_LONG_LEG: char = 'ᶭ';
-    /// \u{1dae}: 'ᶮ'
-    pub const MODIFIER_LETTER_SMALL_N_WITH_LEFT_HOOK: char = 'ᶮ';
-    /// \u{1daf}: 'ᶯ'
-    pub const MODIFIER_LETTER_SMALL_N_WITH_RETROFLEX_HOOK: char = 'ᶯ';
-    /// \u{1db0}: 'ᶰ'
-    pub const MODIFIER_LETTER_SMALL_CAPITAL_N: char = 'ᶰ';
-    /// \u{1db1}: 'ᶱ'
-    pub const MODIFIER_LETTER_SMALL_BARRED_O: char = 'ᶱ';
-    /// \u{1db2}: 'ᶲ'
-    pub const MODIFIER_LETTER_SMALL_PHI: char = 'ᶲ';
-    /// \u{1db3}: 'ᶳ'
-    pub const MODIFIER_LETTER_SMALL_S_WITH_HOOK: char = 'ᶳ';
-    /// \u{1db4}: 'ᶴ'
-    pub const MODIFIER_LETTER_SMALL_ESH: char = 'ᶴ';
-    /// \u{1db5}: 'ᶵ'
-    pub const MODIFIER_LETTER_SMALL_T_WITH_PALATAL_HOOK: char = 'ᶵ';
-    /// \u{1db6}: 'ᶶ'
-    pub const MODIFIER_LETTER_SMALL_U_BAR: char = 'ᶶ';
-    /// \u{1db7}: 'ᶷ'
-    pub const MODIFIER_LETTER_SMALL_UPSILON: char = 'ᶷ';
-    /// \u{1db8}: 'ᶸ'
-    pub const MODIFIER_LETTER_SMALL_CAPITAL_U: char = 'ᶸ';
-    /// \u{1db9}: 'ᶹ'
-    pub const MODIFIER_LETTER_SMALL_V_WITH_HOOK: char = 'ᶹ';
-    /// \u{1dba}: 'ᶺ'
-    pub const MODIFIER_LETTER_SMALL_TURNED_V: char = 'ᶺ';
-    /// \u{1dbb}: 'ᶻ'
-    pub const MODIFIER_LETTER_SMALL_Z: char = 'ᶻ';
-    /// \u{1dbc}: 'ᶼ'
-    pub const MODIFIER_LETTER_SMALL_Z_WITH_RETROFLEX_HOOK: char = 'ᶼ';
-    /// \u{1dbd}: 'ᶽ'
-    pub const MODIFIER_LETTER_SMALL_Z_WITH_CURL: char = 'ᶽ';
-    /// \u{1dbe}: 'ᶾ'
-    pub const MODIFIER_LETTER_SMALL_EZH: char = 'ᶾ';
-}
 
 /// An enum to represent all characters in the PhoneticExtensionsSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -261,71 +132,70 @@ pub enum PhoneticExtensionsSupplement {
 
 impl Into<char> for PhoneticExtensionsSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            PhoneticExtensionsSupplement::LatinSmallLetterBWithPalatalHook => LATIN_SMALL_LETTER_B_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterDWithPalatalHook => LATIN_SMALL_LETTER_D_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterFWithPalatalHook => LATIN_SMALL_LETTER_F_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterGWithPalatalHook => LATIN_SMALL_LETTER_G_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterKWithPalatalHook => LATIN_SMALL_LETTER_K_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterLWithPalatalHook => LATIN_SMALL_LETTER_L_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterMWithPalatalHook => LATIN_SMALL_LETTER_M_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterNWithPalatalHook => LATIN_SMALL_LETTER_N_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterPWithPalatalHook => LATIN_SMALL_LETTER_P_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterRWithPalatalHook => LATIN_SMALL_LETTER_R_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterSWithPalatalHook => LATIN_SMALL_LETTER_S_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterEshWithPalatalHook => LATIN_SMALL_LETTER_ESH_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterVWithPalatalHook => LATIN_SMALL_LETTER_V_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterXWithPalatalHook => LATIN_SMALL_LETTER_X_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterZWithPalatalHook => LATIN_SMALL_LETTER_Z_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterAWithRetroflexHook => LATIN_SMALL_LETTER_A_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterAlphaWithRetroflexHook => LATIN_SMALL_LETTER_ALPHA_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterDWithHookAndTail => LATIN_SMALL_LETTER_D_WITH_HOOK_AND_TAIL,
-            PhoneticExtensionsSupplement::LatinSmallLetterEWithRetroflexHook => LATIN_SMALL_LETTER_E_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterOpenEWithRetroflexHook => LATIN_SMALL_LETTER_OPEN_E_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterReversedOpenEWithRetroflexHook => LATIN_SMALL_LETTER_REVERSED_OPEN_E_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterSchwaWithRetroflexHook => LATIN_SMALL_LETTER_SCHWA_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterIWithRetroflexHook => LATIN_SMALL_LETTER_I_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterOpenOWithRetroflexHook => LATIN_SMALL_LETTER_OPEN_O_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterEshWithRetroflexHook => LATIN_SMALL_LETTER_ESH_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterUWithRetroflexHook => LATIN_SMALL_LETTER_U_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::LatinSmallLetterEzhWithRetroflexHook => LATIN_SMALL_LETTER_EZH_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallTurnedAlpha => MODIFIER_LETTER_SMALL_TURNED_ALPHA,
-            PhoneticExtensionsSupplement::ModifierLetterSmallC => MODIFIER_LETTER_SMALL_C,
-            PhoneticExtensionsSupplement::ModifierLetterSmallCWithCurl => MODIFIER_LETTER_SMALL_C_WITH_CURL,
-            PhoneticExtensionsSupplement::ModifierLetterSmallEth => MODIFIER_LETTER_SMALL_ETH,
-            PhoneticExtensionsSupplement::ModifierLetterSmallReversedOpenE => MODIFIER_LETTER_SMALL_REVERSED_OPEN_E,
-            PhoneticExtensionsSupplement::ModifierLetterSmallF => MODIFIER_LETTER_SMALL_F,
-            PhoneticExtensionsSupplement::ModifierLetterSmallDotlessJWithStroke => MODIFIER_LETTER_SMALL_DOTLESS_J_WITH_STROKE,
-            PhoneticExtensionsSupplement::ModifierLetterSmallScriptG => MODIFIER_LETTER_SMALL_SCRIPT_G,
-            PhoneticExtensionsSupplement::ModifierLetterSmallTurnedH => MODIFIER_LETTER_SMALL_TURNED_H,
-            PhoneticExtensionsSupplement::ModifierLetterSmallIWithStroke => MODIFIER_LETTER_SMALL_I_WITH_STROKE,
-            PhoneticExtensionsSupplement::ModifierLetterSmallIota => MODIFIER_LETTER_SMALL_IOTA,
-            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalI => MODIFIER_LETTER_SMALL_CAPITAL_I,
-            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalIWithStroke => MODIFIER_LETTER_SMALL_CAPITAL_I_WITH_STROKE,
-            PhoneticExtensionsSupplement::ModifierLetterSmallJWithCrossedDashTail => MODIFIER_LETTER_SMALL_J_WITH_CROSSED_DASH_TAIL,
-            PhoneticExtensionsSupplement::ModifierLetterSmallLWithRetroflexHook => MODIFIER_LETTER_SMALL_L_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallLWithPalatalHook => MODIFIER_LETTER_SMALL_L_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalL => MODIFIER_LETTER_SMALL_CAPITAL_L,
-            PhoneticExtensionsSupplement::ModifierLetterSmallMWithHook => MODIFIER_LETTER_SMALL_M_WITH_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallTurnedMWithLongLeg => MODIFIER_LETTER_SMALL_TURNED_M_WITH_LONG_LEG,
-            PhoneticExtensionsSupplement::ModifierLetterSmallNWithLeftHook => MODIFIER_LETTER_SMALL_N_WITH_LEFT_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallNWithRetroflexHook => MODIFIER_LETTER_SMALL_N_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalN => MODIFIER_LETTER_SMALL_CAPITAL_N,
-            PhoneticExtensionsSupplement::ModifierLetterSmallBarredO => MODIFIER_LETTER_SMALL_BARRED_O,
-            PhoneticExtensionsSupplement::ModifierLetterSmallPhi => MODIFIER_LETTER_SMALL_PHI,
-            PhoneticExtensionsSupplement::ModifierLetterSmallSWithHook => MODIFIER_LETTER_SMALL_S_WITH_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallEsh => MODIFIER_LETTER_SMALL_ESH,
-            PhoneticExtensionsSupplement::ModifierLetterSmallTWithPalatalHook => MODIFIER_LETTER_SMALL_T_WITH_PALATAL_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallUBar => MODIFIER_LETTER_SMALL_U_BAR,
-            PhoneticExtensionsSupplement::ModifierLetterSmallUpsilon => MODIFIER_LETTER_SMALL_UPSILON,
-            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalU => MODIFIER_LETTER_SMALL_CAPITAL_U,
-            PhoneticExtensionsSupplement::ModifierLetterSmallVWithHook => MODIFIER_LETTER_SMALL_V_WITH_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallTurnedV => MODIFIER_LETTER_SMALL_TURNED_V,
-            PhoneticExtensionsSupplement::ModifierLetterSmallZ => MODIFIER_LETTER_SMALL_Z,
-            PhoneticExtensionsSupplement::ModifierLetterSmallZWithRetroflexHook => MODIFIER_LETTER_SMALL_Z_WITH_RETROFLEX_HOOK,
-            PhoneticExtensionsSupplement::ModifierLetterSmallZWithCurl => MODIFIER_LETTER_SMALL_Z_WITH_CURL,
-            PhoneticExtensionsSupplement::ModifierLetterSmallEzh => MODIFIER_LETTER_SMALL_EZH,
+            PhoneticExtensionsSupplement::LatinSmallLetterBWithPalatalHook => 'ᶀ',
+            PhoneticExtensionsSupplement::LatinSmallLetterDWithPalatalHook => 'ᶁ',
+            PhoneticExtensionsSupplement::LatinSmallLetterFWithPalatalHook => 'ᶂ',
+            PhoneticExtensionsSupplement::LatinSmallLetterGWithPalatalHook => 'ᶃ',
+            PhoneticExtensionsSupplement::LatinSmallLetterKWithPalatalHook => 'ᶄ',
+            PhoneticExtensionsSupplement::LatinSmallLetterLWithPalatalHook => 'ᶅ',
+            PhoneticExtensionsSupplement::LatinSmallLetterMWithPalatalHook => 'ᶆ',
+            PhoneticExtensionsSupplement::LatinSmallLetterNWithPalatalHook => 'ᶇ',
+            PhoneticExtensionsSupplement::LatinSmallLetterPWithPalatalHook => 'ᶈ',
+            PhoneticExtensionsSupplement::LatinSmallLetterRWithPalatalHook => 'ᶉ',
+            PhoneticExtensionsSupplement::LatinSmallLetterSWithPalatalHook => 'ᶊ',
+            PhoneticExtensionsSupplement::LatinSmallLetterEshWithPalatalHook => 'ᶋ',
+            PhoneticExtensionsSupplement::LatinSmallLetterVWithPalatalHook => 'ᶌ',
+            PhoneticExtensionsSupplement::LatinSmallLetterXWithPalatalHook => 'ᶍ',
+            PhoneticExtensionsSupplement::LatinSmallLetterZWithPalatalHook => 'ᶎ',
+            PhoneticExtensionsSupplement::LatinSmallLetterAWithRetroflexHook => 'ᶏ',
+            PhoneticExtensionsSupplement::LatinSmallLetterAlphaWithRetroflexHook => 'ᶐ',
+            PhoneticExtensionsSupplement::LatinSmallLetterDWithHookAndTail => 'ᶑ',
+            PhoneticExtensionsSupplement::LatinSmallLetterEWithRetroflexHook => 'ᶒ',
+            PhoneticExtensionsSupplement::LatinSmallLetterOpenEWithRetroflexHook => 'ᶓ',
+            PhoneticExtensionsSupplement::LatinSmallLetterReversedOpenEWithRetroflexHook => 'ᶔ',
+            PhoneticExtensionsSupplement::LatinSmallLetterSchwaWithRetroflexHook => 'ᶕ',
+            PhoneticExtensionsSupplement::LatinSmallLetterIWithRetroflexHook => 'ᶖ',
+            PhoneticExtensionsSupplement::LatinSmallLetterOpenOWithRetroflexHook => 'ᶗ',
+            PhoneticExtensionsSupplement::LatinSmallLetterEshWithRetroflexHook => 'ᶘ',
+            PhoneticExtensionsSupplement::LatinSmallLetterUWithRetroflexHook => 'ᶙ',
+            PhoneticExtensionsSupplement::LatinSmallLetterEzhWithRetroflexHook => 'ᶚ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallTurnedAlpha => 'ᶛ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallC => 'ᶜ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallCWithCurl => 'ᶝ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallEth => 'ᶞ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallReversedOpenE => 'ᶟ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallF => 'ᶠ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallDotlessJWithStroke => 'ᶡ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallScriptG => 'ᶢ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallTurnedH => 'ᶣ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallIWithStroke => 'ᶤ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallIota => 'ᶥ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalI => 'ᶦ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalIWithStroke => 'ᶧ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallJWithCrossedDashTail => 'ᶨ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallLWithRetroflexHook => 'ᶩ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallLWithPalatalHook => 'ᶪ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalL => 'ᶫ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallMWithHook => 'ᶬ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallTurnedMWithLongLeg => 'ᶭ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallNWithLeftHook => 'ᶮ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallNWithRetroflexHook => 'ᶯ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalN => 'ᶰ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallBarredO => 'ᶱ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallPhi => 'ᶲ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallSWithHook => 'ᶳ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallEsh => 'ᶴ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallTWithPalatalHook => 'ᶵ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallUBar => 'ᶶ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallUpsilon => 'ᶷ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallCapitalU => 'ᶸ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallVWithHook => 'ᶹ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallTurnedV => 'ᶺ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallZ => 'ᶻ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallZWithRetroflexHook => 'ᶼ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallZWithCurl => 'ᶽ',
+            PhoneticExtensionsSupplement::ModifierLetterSmallEzh => 'ᶾ',
         }
     }
 }
@@ -333,71 +203,70 @@ impl Into<char> for PhoneticExtensionsSupplement {
 impl std::convert::TryFrom<char> for PhoneticExtensionsSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LATIN_SMALL_LETTER_B_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterBWithPalatalHook),
-            LATIN_SMALL_LETTER_D_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterDWithPalatalHook),
-            LATIN_SMALL_LETTER_F_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterFWithPalatalHook),
-            LATIN_SMALL_LETTER_G_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterGWithPalatalHook),
-            LATIN_SMALL_LETTER_K_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterKWithPalatalHook),
-            LATIN_SMALL_LETTER_L_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterLWithPalatalHook),
-            LATIN_SMALL_LETTER_M_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterMWithPalatalHook),
-            LATIN_SMALL_LETTER_N_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterNWithPalatalHook),
-            LATIN_SMALL_LETTER_P_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterPWithPalatalHook),
-            LATIN_SMALL_LETTER_R_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterRWithPalatalHook),
-            LATIN_SMALL_LETTER_S_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterSWithPalatalHook),
-            LATIN_SMALL_LETTER_ESH_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterEshWithPalatalHook),
-            LATIN_SMALL_LETTER_V_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterVWithPalatalHook),
-            LATIN_SMALL_LETTER_X_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterXWithPalatalHook),
-            LATIN_SMALL_LETTER_Z_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterZWithPalatalHook),
-            LATIN_SMALL_LETTER_A_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterAWithRetroflexHook),
-            LATIN_SMALL_LETTER_ALPHA_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterAlphaWithRetroflexHook),
-            LATIN_SMALL_LETTER_D_WITH_HOOK_AND_TAIL => Ok(PhoneticExtensionsSupplement::LatinSmallLetterDWithHookAndTail),
-            LATIN_SMALL_LETTER_E_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterEWithRetroflexHook),
-            LATIN_SMALL_LETTER_OPEN_E_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterOpenEWithRetroflexHook),
-            LATIN_SMALL_LETTER_REVERSED_OPEN_E_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterReversedOpenEWithRetroflexHook),
-            LATIN_SMALL_LETTER_SCHWA_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterSchwaWithRetroflexHook),
-            LATIN_SMALL_LETTER_I_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterIWithRetroflexHook),
-            LATIN_SMALL_LETTER_OPEN_O_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterOpenOWithRetroflexHook),
-            LATIN_SMALL_LETTER_ESH_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterEshWithRetroflexHook),
-            LATIN_SMALL_LETTER_U_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterUWithRetroflexHook),
-            LATIN_SMALL_LETTER_EZH_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::LatinSmallLetterEzhWithRetroflexHook),
-            MODIFIER_LETTER_SMALL_TURNED_ALPHA => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTurnedAlpha),
-            MODIFIER_LETTER_SMALL_C => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallC),
-            MODIFIER_LETTER_SMALL_C_WITH_CURL => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCWithCurl),
-            MODIFIER_LETTER_SMALL_ETH => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallEth),
-            MODIFIER_LETTER_SMALL_REVERSED_OPEN_E => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallReversedOpenE),
-            MODIFIER_LETTER_SMALL_F => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallF),
-            MODIFIER_LETTER_SMALL_DOTLESS_J_WITH_STROKE => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallDotlessJWithStroke),
-            MODIFIER_LETTER_SMALL_SCRIPT_G => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallScriptG),
-            MODIFIER_LETTER_SMALL_TURNED_H => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTurnedH),
-            MODIFIER_LETTER_SMALL_I_WITH_STROKE => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallIWithStroke),
-            MODIFIER_LETTER_SMALL_IOTA => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallIota),
-            MODIFIER_LETTER_SMALL_CAPITAL_I => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalI),
-            MODIFIER_LETTER_SMALL_CAPITAL_I_WITH_STROKE => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalIWithStroke),
-            MODIFIER_LETTER_SMALL_J_WITH_CROSSED_DASH_TAIL => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallJWithCrossedDashTail),
-            MODIFIER_LETTER_SMALL_L_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallLWithRetroflexHook),
-            MODIFIER_LETTER_SMALL_L_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallLWithPalatalHook),
-            MODIFIER_LETTER_SMALL_CAPITAL_L => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalL),
-            MODIFIER_LETTER_SMALL_M_WITH_HOOK => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallMWithHook),
-            MODIFIER_LETTER_SMALL_TURNED_M_WITH_LONG_LEG => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTurnedMWithLongLeg),
-            MODIFIER_LETTER_SMALL_N_WITH_LEFT_HOOK => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallNWithLeftHook),
-            MODIFIER_LETTER_SMALL_N_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallNWithRetroflexHook),
-            MODIFIER_LETTER_SMALL_CAPITAL_N => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalN),
-            MODIFIER_LETTER_SMALL_BARRED_O => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallBarredO),
-            MODIFIER_LETTER_SMALL_PHI => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallPhi),
-            MODIFIER_LETTER_SMALL_S_WITH_HOOK => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallSWithHook),
-            MODIFIER_LETTER_SMALL_ESH => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallEsh),
-            MODIFIER_LETTER_SMALL_T_WITH_PALATAL_HOOK => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTWithPalatalHook),
-            MODIFIER_LETTER_SMALL_U_BAR => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallUBar),
-            MODIFIER_LETTER_SMALL_UPSILON => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallUpsilon),
-            MODIFIER_LETTER_SMALL_CAPITAL_U => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalU),
-            MODIFIER_LETTER_SMALL_V_WITH_HOOK => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallVWithHook),
-            MODIFIER_LETTER_SMALL_TURNED_V => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTurnedV),
-            MODIFIER_LETTER_SMALL_Z => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallZ),
-            MODIFIER_LETTER_SMALL_Z_WITH_RETROFLEX_HOOK => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallZWithRetroflexHook),
-            MODIFIER_LETTER_SMALL_Z_WITH_CURL => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallZWithCurl),
-            MODIFIER_LETTER_SMALL_EZH => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallEzh),
+            'ᶀ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterBWithPalatalHook),
+            'ᶁ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterDWithPalatalHook),
+            'ᶂ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterFWithPalatalHook),
+            'ᶃ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterGWithPalatalHook),
+            'ᶄ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterKWithPalatalHook),
+            'ᶅ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterLWithPalatalHook),
+            'ᶆ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterMWithPalatalHook),
+            'ᶇ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterNWithPalatalHook),
+            'ᶈ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterPWithPalatalHook),
+            'ᶉ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterRWithPalatalHook),
+            'ᶊ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterSWithPalatalHook),
+            'ᶋ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterEshWithPalatalHook),
+            'ᶌ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterVWithPalatalHook),
+            'ᶍ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterXWithPalatalHook),
+            'ᶎ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterZWithPalatalHook),
+            'ᶏ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterAWithRetroflexHook),
+            'ᶐ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterAlphaWithRetroflexHook),
+            'ᶑ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterDWithHookAndTail),
+            'ᶒ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterEWithRetroflexHook),
+            'ᶓ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterOpenEWithRetroflexHook),
+            'ᶔ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterReversedOpenEWithRetroflexHook),
+            'ᶕ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterSchwaWithRetroflexHook),
+            'ᶖ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterIWithRetroflexHook),
+            'ᶗ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterOpenOWithRetroflexHook),
+            'ᶘ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterEshWithRetroflexHook),
+            'ᶙ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterUWithRetroflexHook),
+            'ᶚ' => Ok(PhoneticExtensionsSupplement::LatinSmallLetterEzhWithRetroflexHook),
+            'ᶛ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTurnedAlpha),
+            'ᶜ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallC),
+            'ᶝ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCWithCurl),
+            'ᶞ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallEth),
+            'ᶟ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallReversedOpenE),
+            'ᶠ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallF),
+            'ᶡ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallDotlessJWithStroke),
+            'ᶢ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallScriptG),
+            'ᶣ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTurnedH),
+            'ᶤ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallIWithStroke),
+            'ᶥ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallIota),
+            'ᶦ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalI),
+            'ᶧ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalIWithStroke),
+            'ᶨ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallJWithCrossedDashTail),
+            'ᶩ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallLWithRetroflexHook),
+            'ᶪ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallLWithPalatalHook),
+            'ᶫ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalL),
+            'ᶬ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallMWithHook),
+            'ᶭ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTurnedMWithLongLeg),
+            'ᶮ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallNWithLeftHook),
+            'ᶯ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallNWithRetroflexHook),
+            'ᶰ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalN),
+            'ᶱ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallBarredO),
+            'ᶲ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallPhi),
+            'ᶳ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallSWithHook),
+            'ᶴ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallEsh),
+            'ᶵ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTWithPalatalHook),
+            'ᶶ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallUBar),
+            'ᶷ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallUpsilon),
+            'ᶸ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallCapitalU),
+            'ᶹ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallVWithHook),
+            'ᶺ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallTurnedV),
+            'ᶻ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallZ),
+            'ᶼ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallZWithRetroflexHook),
+            'ᶽ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallZWithCurl),
+            'ᶾ' => Ok(PhoneticExtensionsSupplement::ModifierLetterSmallEzh),
             _ => Err(()),
         }
     }

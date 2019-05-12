@@ -1,798 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1b170}: '𛅰'
-    pub const CHARACTER_DASH_1B170: char = '𛅰';
-    /// \u{1b171}: '𛅱'
-    pub const CHARACTER_DASH_1B171: char = '𛅱';
-    /// \u{1b172}: '𛅲'
-    pub const CHARACTER_DASH_1B172: char = '𛅲';
-    /// \u{1b173}: '𛅳'
-    pub const CHARACTER_DASH_1B173: char = '𛅳';
-    /// \u{1b174}: '𛅴'
-    pub const CHARACTER_DASH_1B174: char = '𛅴';
-    /// \u{1b175}: '𛅵'
-    pub const CHARACTER_DASH_1B175: char = '𛅵';
-    /// \u{1b176}: '𛅶'
-    pub const CHARACTER_DASH_1B176: char = '𛅶';
-    /// \u{1b177}: '𛅷'
-    pub const CHARACTER_DASH_1B177: char = '𛅷';
-    /// \u{1b178}: '𛅸'
-    pub const CHARACTER_DASH_1B178: char = '𛅸';
-    /// \u{1b179}: '𛅹'
-    pub const CHARACTER_DASH_1B179: char = '𛅹';
-    /// \u{1b17a}: '𛅺'
-    pub const CHARACTER_DASH_1B17A: char = '𛅺';
-    /// \u{1b17b}: '𛅻'
-    pub const CHARACTER_DASH_1B17B: char = '𛅻';
-    /// \u{1b17c}: '𛅼'
-    pub const CHARACTER_DASH_1B17C: char = '𛅼';
-    /// \u{1b17d}: '𛅽'
-    pub const CHARACTER_DASH_1B17D: char = '𛅽';
-    /// \u{1b17e}: '𛅾'
-    pub const CHARACTER_DASH_1B17E: char = '𛅾';
-    /// \u{1b17f}: '𛅿'
-    pub const CHARACTER_DASH_1B17F: char = '𛅿';
-    /// \u{1b180}: '𛆀'
-    pub const CHARACTER_DASH_1B180: char = '𛆀';
-    /// \u{1b181}: '𛆁'
-    pub const CHARACTER_DASH_1B181: char = '𛆁';
-    /// \u{1b182}: '𛆂'
-    pub const CHARACTER_DASH_1B182: char = '𛆂';
-    /// \u{1b183}: '𛆃'
-    pub const CHARACTER_DASH_1B183: char = '𛆃';
-    /// \u{1b184}: '𛆄'
-    pub const CHARACTER_DASH_1B184: char = '𛆄';
-    /// \u{1b185}: '𛆅'
-    pub const CHARACTER_DASH_1B185: char = '𛆅';
-    /// \u{1b186}: '𛆆'
-    pub const CHARACTER_DASH_1B186: char = '𛆆';
-    /// \u{1b187}: '𛆇'
-    pub const CHARACTER_DASH_1B187: char = '𛆇';
-    /// \u{1b188}: '𛆈'
-    pub const CHARACTER_DASH_1B188: char = '𛆈';
-    /// \u{1b189}: '𛆉'
-    pub const CHARACTER_DASH_1B189: char = '𛆉';
-    /// \u{1b18a}: '𛆊'
-    pub const CHARACTER_DASH_1B18A: char = '𛆊';
-    /// \u{1b18b}: '𛆋'
-    pub const CHARACTER_DASH_1B18B: char = '𛆋';
-    /// \u{1b18c}: '𛆌'
-    pub const CHARACTER_DASH_1B18C: char = '𛆌';
-    /// \u{1b18d}: '𛆍'
-    pub const CHARACTER_DASH_1B18D: char = '𛆍';
-    /// \u{1b18e}: '𛆎'
-    pub const CHARACTER_DASH_1B18E: char = '𛆎';
-    /// \u{1b18f}: '𛆏'
-    pub const CHARACTER_DASH_1B18F: char = '𛆏';
-    /// \u{1b190}: '𛆐'
-    pub const CHARACTER_DASH_1B190: char = '𛆐';
-    /// \u{1b191}: '𛆑'
-    pub const CHARACTER_DASH_1B191: char = '𛆑';
-    /// \u{1b192}: '𛆒'
-    pub const CHARACTER_DASH_1B192: char = '𛆒';
-    /// \u{1b193}: '𛆓'
-    pub const CHARACTER_DASH_1B193: char = '𛆓';
-    /// \u{1b194}: '𛆔'
-    pub const CHARACTER_DASH_1B194: char = '𛆔';
-    /// \u{1b195}: '𛆕'
-    pub const CHARACTER_DASH_1B195: char = '𛆕';
-    /// \u{1b196}: '𛆖'
-    pub const CHARACTER_DASH_1B196: char = '𛆖';
-    /// \u{1b197}: '𛆗'
-    pub const CHARACTER_DASH_1B197: char = '𛆗';
-    /// \u{1b198}: '𛆘'
-    pub const CHARACTER_DASH_1B198: char = '𛆘';
-    /// \u{1b199}: '𛆙'
-    pub const CHARACTER_DASH_1B199: char = '𛆙';
-    /// \u{1b19a}: '𛆚'
-    pub const CHARACTER_DASH_1B19A: char = '𛆚';
-    /// \u{1b19b}: '𛆛'
-    pub const CHARACTER_DASH_1B19B: char = '𛆛';
-    /// \u{1b19c}: '𛆜'
-    pub const CHARACTER_DASH_1B19C: char = '𛆜';
-    /// \u{1b19d}: '𛆝'
-    pub const CHARACTER_DASH_1B19D: char = '𛆝';
-    /// \u{1b19e}: '𛆞'
-    pub const CHARACTER_DASH_1B19E: char = '𛆞';
-    /// \u{1b19f}: '𛆟'
-    pub const CHARACTER_DASH_1B19F: char = '𛆟';
-    /// \u{1b1a0}: '𛆠'
-    pub const CHARACTER_DASH_1B1A0: char = '𛆠';
-    /// \u{1b1a1}: '𛆡'
-    pub const CHARACTER_DASH_1B1A1: char = '𛆡';
-    /// \u{1b1a2}: '𛆢'
-    pub const CHARACTER_DASH_1B1A2: char = '𛆢';
-    /// \u{1b1a3}: '𛆣'
-    pub const CHARACTER_DASH_1B1A3: char = '𛆣';
-    /// \u{1b1a4}: '𛆤'
-    pub const CHARACTER_DASH_1B1A4: char = '𛆤';
-    /// \u{1b1a5}: '𛆥'
-    pub const CHARACTER_DASH_1B1A5: char = '𛆥';
-    /// \u{1b1a6}: '𛆦'
-    pub const CHARACTER_DASH_1B1A6: char = '𛆦';
-    /// \u{1b1a7}: '𛆧'
-    pub const CHARACTER_DASH_1B1A7: char = '𛆧';
-    /// \u{1b1a8}: '𛆨'
-    pub const CHARACTER_DASH_1B1A8: char = '𛆨';
-    /// \u{1b1a9}: '𛆩'
-    pub const CHARACTER_DASH_1B1A9: char = '𛆩';
-    /// \u{1b1aa}: '𛆪'
-    pub const CHARACTER_DASH_1B1AA: char = '𛆪';
-    /// \u{1b1ab}: '𛆫'
-    pub const CHARACTER_DASH_1B1AB: char = '𛆫';
-    /// \u{1b1ac}: '𛆬'
-    pub const CHARACTER_DASH_1B1AC: char = '𛆬';
-    /// \u{1b1ad}: '𛆭'
-    pub const CHARACTER_DASH_1B1AD: char = '𛆭';
-    /// \u{1b1ae}: '𛆮'
-    pub const CHARACTER_DASH_1B1AE: char = '𛆮';
-    /// \u{1b1af}: '𛆯'
-    pub const CHARACTER_DASH_1B1AF: char = '𛆯';
-    /// \u{1b1b0}: '𛆰'
-    pub const CHARACTER_DASH_1B1B0: char = '𛆰';
-    /// \u{1b1b1}: '𛆱'
-    pub const CHARACTER_DASH_1B1B1: char = '𛆱';
-    /// \u{1b1b2}: '𛆲'
-    pub const CHARACTER_DASH_1B1B2: char = '𛆲';
-    /// \u{1b1b3}: '𛆳'
-    pub const CHARACTER_DASH_1B1B3: char = '𛆳';
-    /// \u{1b1b4}: '𛆴'
-    pub const CHARACTER_DASH_1B1B4: char = '𛆴';
-    /// \u{1b1b5}: '𛆵'
-    pub const CHARACTER_DASH_1B1B5: char = '𛆵';
-    /// \u{1b1b6}: '𛆶'
-    pub const CHARACTER_DASH_1B1B6: char = '𛆶';
-    /// \u{1b1b7}: '𛆷'
-    pub const CHARACTER_DASH_1B1B7: char = '𛆷';
-    /// \u{1b1b8}: '𛆸'
-    pub const CHARACTER_DASH_1B1B8: char = '𛆸';
-    /// \u{1b1b9}: '𛆹'
-    pub const CHARACTER_DASH_1B1B9: char = '𛆹';
-    /// \u{1b1ba}: '𛆺'
-    pub const CHARACTER_DASH_1B1BA: char = '𛆺';
-    /// \u{1b1bb}: '𛆻'
-    pub const CHARACTER_DASH_1B1BB: char = '𛆻';
-    /// \u{1b1bc}: '𛆼'
-    pub const CHARACTER_DASH_1B1BC: char = '𛆼';
-    /// \u{1b1bd}: '𛆽'
-    pub const CHARACTER_DASH_1B1BD: char = '𛆽';
-    /// \u{1b1be}: '𛆾'
-    pub const CHARACTER_DASH_1B1BE: char = '𛆾';
-    /// \u{1b1bf}: '𛆿'
-    pub const CHARACTER_DASH_1B1BF: char = '𛆿';
-    /// \u{1b1c0}: '𛇀'
-    pub const CHARACTER_DASH_1B1C0: char = '𛇀';
-    /// \u{1b1c1}: '𛇁'
-    pub const CHARACTER_DASH_1B1C1: char = '𛇁';
-    /// \u{1b1c2}: '𛇂'
-    pub const CHARACTER_DASH_1B1C2: char = '𛇂';
-    /// \u{1b1c3}: '𛇃'
-    pub const CHARACTER_DASH_1B1C3: char = '𛇃';
-    /// \u{1b1c4}: '𛇄'
-    pub const CHARACTER_DASH_1B1C4: char = '𛇄';
-    /// \u{1b1c5}: '𛇅'
-    pub const CHARACTER_DASH_1B1C5: char = '𛇅';
-    /// \u{1b1c6}: '𛇆'
-    pub const CHARACTER_DASH_1B1C6: char = '𛇆';
-    /// \u{1b1c7}: '𛇇'
-    pub const CHARACTER_DASH_1B1C7: char = '𛇇';
-    /// \u{1b1c8}: '𛇈'
-    pub const CHARACTER_DASH_1B1C8: char = '𛇈';
-    /// \u{1b1c9}: '𛇉'
-    pub const CHARACTER_DASH_1B1C9: char = '𛇉';
-    /// \u{1b1ca}: '𛇊'
-    pub const CHARACTER_DASH_1B1CA: char = '𛇊';
-    /// \u{1b1cb}: '𛇋'
-    pub const CHARACTER_DASH_1B1CB: char = '𛇋';
-    /// \u{1b1cc}: '𛇌'
-    pub const CHARACTER_DASH_1B1CC: char = '𛇌';
-    /// \u{1b1cd}: '𛇍'
-    pub const CHARACTER_DASH_1B1CD: char = '𛇍';
-    /// \u{1b1ce}: '𛇎'
-    pub const CHARACTER_DASH_1B1CE: char = '𛇎';
-    /// \u{1b1cf}: '𛇏'
-    pub const CHARACTER_DASH_1B1CF: char = '𛇏';
-    /// \u{1b1d0}: '𛇐'
-    pub const CHARACTER_DASH_1B1D0: char = '𛇐';
-    /// \u{1b1d1}: '𛇑'
-    pub const CHARACTER_DASH_1B1D1: char = '𛇑';
-    /// \u{1b1d2}: '𛇒'
-    pub const CHARACTER_DASH_1B1D2: char = '𛇒';
-    /// \u{1b1d3}: '𛇓'
-    pub const CHARACTER_DASH_1B1D3: char = '𛇓';
-    /// \u{1b1d4}: '𛇔'
-    pub const CHARACTER_DASH_1B1D4: char = '𛇔';
-    /// \u{1b1d5}: '𛇕'
-    pub const CHARACTER_DASH_1B1D5: char = '𛇕';
-    /// \u{1b1d6}: '𛇖'
-    pub const CHARACTER_DASH_1B1D6: char = '𛇖';
-    /// \u{1b1d7}: '𛇗'
-    pub const CHARACTER_DASH_1B1D7: char = '𛇗';
-    /// \u{1b1d8}: '𛇘'
-    pub const CHARACTER_DASH_1B1D8: char = '𛇘';
-    /// \u{1b1d9}: '𛇙'
-    pub const CHARACTER_DASH_1B1D9: char = '𛇙';
-    /// \u{1b1da}: '𛇚'
-    pub const CHARACTER_DASH_1B1DA: char = '𛇚';
-    /// \u{1b1db}: '𛇛'
-    pub const CHARACTER_DASH_1B1DB: char = '𛇛';
-    /// \u{1b1dc}: '𛇜'
-    pub const CHARACTER_DASH_1B1DC: char = '𛇜';
-    /// \u{1b1dd}: '𛇝'
-    pub const CHARACTER_DASH_1B1DD: char = '𛇝';
-    /// \u{1b1de}: '𛇞'
-    pub const CHARACTER_DASH_1B1DE: char = '𛇞';
-    /// \u{1b1df}: '𛇟'
-    pub const CHARACTER_DASH_1B1DF: char = '𛇟';
-    /// \u{1b1e0}: '𛇠'
-    pub const CHARACTER_DASH_1B1E0: char = '𛇠';
-    /// \u{1b1e1}: '𛇡'
-    pub const CHARACTER_DASH_1B1E1: char = '𛇡';
-    /// \u{1b1e2}: '𛇢'
-    pub const CHARACTER_DASH_1B1E2: char = '𛇢';
-    /// \u{1b1e3}: '𛇣'
-    pub const CHARACTER_DASH_1B1E3: char = '𛇣';
-    /// \u{1b1e4}: '𛇤'
-    pub const CHARACTER_DASH_1B1E4: char = '𛇤';
-    /// \u{1b1e5}: '𛇥'
-    pub const CHARACTER_DASH_1B1E5: char = '𛇥';
-    /// \u{1b1e6}: '𛇦'
-    pub const CHARACTER_DASH_1B1E6: char = '𛇦';
-    /// \u{1b1e7}: '𛇧'
-    pub const CHARACTER_DASH_1B1E7: char = '𛇧';
-    /// \u{1b1e8}: '𛇨'
-    pub const CHARACTER_DASH_1B1E8: char = '𛇨';
-    /// \u{1b1e9}: '𛇩'
-    pub const CHARACTER_DASH_1B1E9: char = '𛇩';
-    /// \u{1b1ea}: '𛇪'
-    pub const CHARACTER_DASH_1B1EA: char = '𛇪';
-    /// \u{1b1eb}: '𛇫'
-    pub const CHARACTER_DASH_1B1EB: char = '𛇫';
-    /// \u{1b1ec}: '𛇬'
-    pub const CHARACTER_DASH_1B1EC: char = '𛇬';
-    /// \u{1b1ed}: '𛇭'
-    pub const CHARACTER_DASH_1B1ED: char = '𛇭';
-    /// \u{1b1ee}: '𛇮'
-    pub const CHARACTER_DASH_1B1EE: char = '𛇮';
-    /// \u{1b1ef}: '𛇯'
-    pub const CHARACTER_DASH_1B1EF: char = '𛇯';
-    /// \u{1b1f0}: '𛇰'
-    pub const CHARACTER_DASH_1B1F0: char = '𛇰';
-    /// \u{1b1f1}: '𛇱'
-    pub const CHARACTER_DASH_1B1F1: char = '𛇱';
-    /// \u{1b1f2}: '𛇲'
-    pub const CHARACTER_DASH_1B1F2: char = '𛇲';
-    /// \u{1b1f3}: '𛇳'
-    pub const CHARACTER_DASH_1B1F3: char = '𛇳';
-    /// \u{1b1f4}: '𛇴'
-    pub const CHARACTER_DASH_1B1F4: char = '𛇴';
-    /// \u{1b1f5}: '𛇵'
-    pub const CHARACTER_DASH_1B1F5: char = '𛇵';
-    /// \u{1b1f6}: '𛇶'
-    pub const CHARACTER_DASH_1B1F6: char = '𛇶';
-    /// \u{1b1f7}: '𛇷'
-    pub const CHARACTER_DASH_1B1F7: char = '𛇷';
-    /// \u{1b1f8}: '𛇸'
-    pub const CHARACTER_DASH_1B1F8: char = '𛇸';
-    /// \u{1b1f9}: '𛇹'
-    pub const CHARACTER_DASH_1B1F9: char = '𛇹';
-    /// \u{1b1fa}: '𛇺'
-    pub const CHARACTER_DASH_1B1FA: char = '𛇺';
-    /// \u{1b1fb}: '𛇻'
-    pub const CHARACTER_DASH_1B1FB: char = '𛇻';
-    /// \u{1b1fc}: '𛇼'
-    pub const CHARACTER_DASH_1B1FC: char = '𛇼';
-    /// \u{1b1fd}: '𛇽'
-    pub const CHARACTER_DASH_1B1FD: char = '𛇽';
-    /// \u{1b1fe}: '𛇾'
-    pub const CHARACTER_DASH_1B1FE: char = '𛇾';
-    /// \u{1b1ff}: '𛇿'
-    pub const CHARACTER_DASH_1B1FF: char = '𛇿';
-    /// \u{1b200}: '𛈀'
-    pub const CHARACTER_DASH_1B200: char = '𛈀';
-    /// \u{1b201}: '𛈁'
-    pub const CHARACTER_DASH_1B201: char = '𛈁';
-    /// \u{1b202}: '𛈂'
-    pub const CHARACTER_DASH_1B202: char = '𛈂';
-    /// \u{1b203}: '𛈃'
-    pub const CHARACTER_DASH_1B203: char = '𛈃';
-    /// \u{1b204}: '𛈄'
-    pub const CHARACTER_DASH_1B204: char = '𛈄';
-    /// \u{1b205}: '𛈅'
-    pub const CHARACTER_DASH_1B205: char = '𛈅';
-    /// \u{1b206}: '𛈆'
-    pub const CHARACTER_DASH_1B206: char = '𛈆';
-    /// \u{1b207}: '𛈇'
-    pub const CHARACTER_DASH_1B207: char = '𛈇';
-    /// \u{1b208}: '𛈈'
-    pub const CHARACTER_DASH_1B208: char = '𛈈';
-    /// \u{1b209}: '𛈉'
-    pub const CHARACTER_DASH_1B209: char = '𛈉';
-    /// \u{1b20a}: '𛈊'
-    pub const CHARACTER_DASH_1B20A: char = '𛈊';
-    /// \u{1b20b}: '𛈋'
-    pub const CHARACTER_DASH_1B20B: char = '𛈋';
-    /// \u{1b20c}: '𛈌'
-    pub const CHARACTER_DASH_1B20C: char = '𛈌';
-    /// \u{1b20d}: '𛈍'
-    pub const CHARACTER_DASH_1B20D: char = '𛈍';
-    /// \u{1b20e}: '𛈎'
-    pub const CHARACTER_DASH_1B20E: char = '𛈎';
-    /// \u{1b20f}: '𛈏'
-    pub const CHARACTER_DASH_1B20F: char = '𛈏';
-    /// \u{1b210}: '𛈐'
-    pub const CHARACTER_DASH_1B210: char = '𛈐';
-    /// \u{1b211}: '𛈑'
-    pub const CHARACTER_DASH_1B211: char = '𛈑';
-    /// \u{1b212}: '𛈒'
-    pub const CHARACTER_DASH_1B212: char = '𛈒';
-    /// \u{1b213}: '𛈓'
-    pub const CHARACTER_DASH_1B213: char = '𛈓';
-    /// \u{1b214}: '𛈔'
-    pub const CHARACTER_DASH_1B214: char = '𛈔';
-    /// \u{1b215}: '𛈕'
-    pub const CHARACTER_DASH_1B215: char = '𛈕';
-    /// \u{1b216}: '𛈖'
-    pub const CHARACTER_DASH_1B216: char = '𛈖';
-    /// \u{1b217}: '𛈗'
-    pub const CHARACTER_DASH_1B217: char = '𛈗';
-    /// \u{1b218}: '𛈘'
-    pub const CHARACTER_DASH_1B218: char = '𛈘';
-    /// \u{1b219}: '𛈙'
-    pub const CHARACTER_DASH_1B219: char = '𛈙';
-    /// \u{1b21a}: '𛈚'
-    pub const CHARACTER_DASH_1B21A: char = '𛈚';
-    /// \u{1b21b}: '𛈛'
-    pub const CHARACTER_DASH_1B21B: char = '𛈛';
-    /// \u{1b21c}: '𛈜'
-    pub const CHARACTER_DASH_1B21C: char = '𛈜';
-    /// \u{1b21d}: '𛈝'
-    pub const CHARACTER_DASH_1B21D: char = '𛈝';
-    /// \u{1b21e}: '𛈞'
-    pub const CHARACTER_DASH_1B21E: char = '𛈞';
-    /// \u{1b21f}: '𛈟'
-    pub const CHARACTER_DASH_1B21F: char = '𛈟';
-    /// \u{1b220}: '𛈠'
-    pub const CHARACTER_DASH_1B220: char = '𛈠';
-    /// \u{1b221}: '𛈡'
-    pub const CHARACTER_DASH_1B221: char = '𛈡';
-    /// \u{1b222}: '𛈢'
-    pub const CHARACTER_DASH_1B222: char = '𛈢';
-    /// \u{1b223}: '𛈣'
-    pub const CHARACTER_DASH_1B223: char = '𛈣';
-    /// \u{1b224}: '𛈤'
-    pub const CHARACTER_DASH_1B224: char = '𛈤';
-    /// \u{1b225}: '𛈥'
-    pub const CHARACTER_DASH_1B225: char = '𛈥';
-    /// \u{1b226}: '𛈦'
-    pub const CHARACTER_DASH_1B226: char = '𛈦';
-    /// \u{1b227}: '𛈧'
-    pub const CHARACTER_DASH_1B227: char = '𛈧';
-    /// \u{1b228}: '𛈨'
-    pub const CHARACTER_DASH_1B228: char = '𛈨';
-    /// \u{1b229}: '𛈩'
-    pub const CHARACTER_DASH_1B229: char = '𛈩';
-    /// \u{1b22a}: '𛈪'
-    pub const CHARACTER_DASH_1B22A: char = '𛈪';
-    /// \u{1b22b}: '𛈫'
-    pub const CHARACTER_DASH_1B22B: char = '𛈫';
-    /// \u{1b22c}: '𛈬'
-    pub const CHARACTER_DASH_1B22C: char = '𛈬';
-    /// \u{1b22d}: '𛈭'
-    pub const CHARACTER_DASH_1B22D: char = '𛈭';
-    /// \u{1b22e}: '𛈮'
-    pub const CHARACTER_DASH_1B22E: char = '𛈮';
-    /// \u{1b22f}: '𛈯'
-    pub const CHARACTER_DASH_1B22F: char = '𛈯';
-    /// \u{1b230}: '𛈰'
-    pub const CHARACTER_DASH_1B230: char = '𛈰';
-    /// \u{1b231}: '𛈱'
-    pub const CHARACTER_DASH_1B231: char = '𛈱';
-    /// \u{1b232}: '𛈲'
-    pub const CHARACTER_DASH_1B232: char = '𛈲';
-    /// \u{1b233}: '𛈳'
-    pub const CHARACTER_DASH_1B233: char = '𛈳';
-    /// \u{1b234}: '𛈴'
-    pub const CHARACTER_DASH_1B234: char = '𛈴';
-    /// \u{1b235}: '𛈵'
-    pub const CHARACTER_DASH_1B235: char = '𛈵';
-    /// \u{1b236}: '𛈶'
-    pub const CHARACTER_DASH_1B236: char = '𛈶';
-    /// \u{1b237}: '𛈷'
-    pub const CHARACTER_DASH_1B237: char = '𛈷';
-    /// \u{1b238}: '𛈸'
-    pub const CHARACTER_DASH_1B238: char = '𛈸';
-    /// \u{1b239}: '𛈹'
-    pub const CHARACTER_DASH_1B239: char = '𛈹';
-    /// \u{1b23a}: '𛈺'
-    pub const CHARACTER_DASH_1B23A: char = '𛈺';
-    /// \u{1b23b}: '𛈻'
-    pub const CHARACTER_DASH_1B23B: char = '𛈻';
-    /// \u{1b23c}: '𛈼'
-    pub const CHARACTER_DASH_1B23C: char = '𛈼';
-    /// \u{1b23d}: '𛈽'
-    pub const CHARACTER_DASH_1B23D: char = '𛈽';
-    /// \u{1b23e}: '𛈾'
-    pub const CHARACTER_DASH_1B23E: char = '𛈾';
-    /// \u{1b23f}: '𛈿'
-    pub const CHARACTER_DASH_1B23F: char = '𛈿';
-    /// \u{1b240}: '𛉀'
-    pub const CHARACTER_DASH_1B240: char = '𛉀';
-    /// \u{1b241}: '𛉁'
-    pub const CHARACTER_DASH_1B241: char = '𛉁';
-    /// \u{1b242}: '𛉂'
-    pub const CHARACTER_DASH_1B242: char = '𛉂';
-    /// \u{1b243}: '𛉃'
-    pub const CHARACTER_DASH_1B243: char = '𛉃';
-    /// \u{1b244}: '𛉄'
-    pub const CHARACTER_DASH_1B244: char = '𛉄';
-    /// \u{1b245}: '𛉅'
-    pub const CHARACTER_DASH_1B245: char = '𛉅';
-    /// \u{1b246}: '𛉆'
-    pub const CHARACTER_DASH_1B246: char = '𛉆';
-    /// \u{1b247}: '𛉇'
-    pub const CHARACTER_DASH_1B247: char = '𛉇';
-    /// \u{1b248}: '𛉈'
-    pub const CHARACTER_DASH_1B248: char = '𛉈';
-    /// \u{1b249}: '𛉉'
-    pub const CHARACTER_DASH_1B249: char = '𛉉';
-    /// \u{1b24a}: '𛉊'
-    pub const CHARACTER_DASH_1B24A: char = '𛉊';
-    /// \u{1b24b}: '𛉋'
-    pub const CHARACTER_DASH_1B24B: char = '𛉋';
-    /// \u{1b24c}: '𛉌'
-    pub const CHARACTER_DASH_1B24C: char = '𛉌';
-    /// \u{1b24d}: '𛉍'
-    pub const CHARACTER_DASH_1B24D: char = '𛉍';
-    /// \u{1b24e}: '𛉎'
-    pub const CHARACTER_DASH_1B24E: char = '𛉎';
-    /// \u{1b24f}: '𛉏'
-    pub const CHARACTER_DASH_1B24F: char = '𛉏';
-    /// \u{1b250}: '𛉐'
-    pub const CHARACTER_DASH_1B250: char = '𛉐';
-    /// \u{1b251}: '𛉑'
-    pub const CHARACTER_DASH_1B251: char = '𛉑';
-    /// \u{1b252}: '𛉒'
-    pub const CHARACTER_DASH_1B252: char = '𛉒';
-    /// \u{1b253}: '𛉓'
-    pub const CHARACTER_DASH_1B253: char = '𛉓';
-    /// \u{1b254}: '𛉔'
-    pub const CHARACTER_DASH_1B254: char = '𛉔';
-    /// \u{1b255}: '𛉕'
-    pub const CHARACTER_DASH_1B255: char = '𛉕';
-    /// \u{1b256}: '𛉖'
-    pub const CHARACTER_DASH_1B256: char = '𛉖';
-    /// \u{1b257}: '𛉗'
-    pub const CHARACTER_DASH_1B257: char = '𛉗';
-    /// \u{1b258}: '𛉘'
-    pub const CHARACTER_DASH_1B258: char = '𛉘';
-    /// \u{1b259}: '𛉙'
-    pub const CHARACTER_DASH_1B259: char = '𛉙';
-    /// \u{1b25a}: '𛉚'
-    pub const CHARACTER_DASH_1B25A: char = '𛉚';
-    /// \u{1b25b}: '𛉛'
-    pub const CHARACTER_DASH_1B25B: char = '𛉛';
-    /// \u{1b25c}: '𛉜'
-    pub const CHARACTER_DASH_1B25C: char = '𛉜';
-    /// \u{1b25d}: '𛉝'
-    pub const CHARACTER_DASH_1B25D: char = '𛉝';
-    /// \u{1b25e}: '𛉞'
-    pub const CHARACTER_DASH_1B25E: char = '𛉞';
-    /// \u{1b25f}: '𛉟'
-    pub const CHARACTER_DASH_1B25F: char = '𛉟';
-    /// \u{1b260}: '𛉠'
-    pub const CHARACTER_DASH_1B260: char = '𛉠';
-    /// \u{1b261}: '𛉡'
-    pub const CHARACTER_DASH_1B261: char = '𛉡';
-    /// \u{1b262}: '𛉢'
-    pub const CHARACTER_DASH_1B262: char = '𛉢';
-    /// \u{1b263}: '𛉣'
-    pub const CHARACTER_DASH_1B263: char = '𛉣';
-    /// \u{1b264}: '𛉤'
-    pub const CHARACTER_DASH_1B264: char = '𛉤';
-    /// \u{1b265}: '𛉥'
-    pub const CHARACTER_DASH_1B265: char = '𛉥';
-    /// \u{1b266}: '𛉦'
-    pub const CHARACTER_DASH_1B266: char = '𛉦';
-    /// \u{1b267}: '𛉧'
-    pub const CHARACTER_DASH_1B267: char = '𛉧';
-    /// \u{1b268}: '𛉨'
-    pub const CHARACTER_DASH_1B268: char = '𛉨';
-    /// \u{1b269}: '𛉩'
-    pub const CHARACTER_DASH_1B269: char = '𛉩';
-    /// \u{1b26a}: '𛉪'
-    pub const CHARACTER_DASH_1B26A: char = '𛉪';
-    /// \u{1b26b}: '𛉫'
-    pub const CHARACTER_DASH_1B26B: char = '𛉫';
-    /// \u{1b26c}: '𛉬'
-    pub const CHARACTER_DASH_1B26C: char = '𛉬';
-    /// \u{1b26d}: '𛉭'
-    pub const CHARACTER_DASH_1B26D: char = '𛉭';
-    /// \u{1b26e}: '𛉮'
-    pub const CHARACTER_DASH_1B26E: char = '𛉮';
-    /// \u{1b26f}: '𛉯'
-    pub const CHARACTER_DASH_1B26F: char = '𛉯';
-    /// \u{1b270}: '𛉰'
-    pub const CHARACTER_DASH_1B270: char = '𛉰';
-    /// \u{1b271}: '𛉱'
-    pub const CHARACTER_DASH_1B271: char = '𛉱';
-    /// \u{1b272}: '𛉲'
-    pub const CHARACTER_DASH_1B272: char = '𛉲';
-    /// \u{1b273}: '𛉳'
-    pub const CHARACTER_DASH_1B273: char = '𛉳';
-    /// \u{1b274}: '𛉴'
-    pub const CHARACTER_DASH_1B274: char = '𛉴';
-    /// \u{1b275}: '𛉵'
-    pub const CHARACTER_DASH_1B275: char = '𛉵';
-    /// \u{1b276}: '𛉶'
-    pub const CHARACTER_DASH_1B276: char = '𛉶';
-    /// \u{1b277}: '𛉷'
-    pub const CHARACTER_DASH_1B277: char = '𛉷';
-    /// \u{1b278}: '𛉸'
-    pub const CHARACTER_DASH_1B278: char = '𛉸';
-    /// \u{1b279}: '𛉹'
-    pub const CHARACTER_DASH_1B279: char = '𛉹';
-    /// \u{1b27a}: '𛉺'
-    pub const CHARACTER_DASH_1B27A: char = '𛉺';
-    /// \u{1b27b}: '𛉻'
-    pub const CHARACTER_DASH_1B27B: char = '𛉻';
-    /// \u{1b27c}: '𛉼'
-    pub const CHARACTER_DASH_1B27C: char = '𛉼';
-    /// \u{1b27d}: '𛉽'
-    pub const CHARACTER_DASH_1B27D: char = '𛉽';
-    /// \u{1b27e}: '𛉾'
-    pub const CHARACTER_DASH_1B27E: char = '𛉾';
-    /// \u{1b27f}: '𛉿'
-    pub const CHARACTER_DASH_1B27F: char = '𛉿';
-    /// \u{1b280}: '𛊀'
-    pub const CHARACTER_DASH_1B280: char = '𛊀';
-    /// \u{1b281}: '𛊁'
-    pub const CHARACTER_DASH_1B281: char = '𛊁';
-    /// \u{1b282}: '𛊂'
-    pub const CHARACTER_DASH_1B282: char = '𛊂';
-    /// \u{1b283}: '𛊃'
-    pub const CHARACTER_DASH_1B283: char = '𛊃';
-    /// \u{1b284}: '𛊄'
-    pub const CHARACTER_DASH_1B284: char = '𛊄';
-    /// \u{1b285}: '𛊅'
-    pub const CHARACTER_DASH_1B285: char = '𛊅';
-    /// \u{1b286}: '𛊆'
-    pub const CHARACTER_DASH_1B286: char = '𛊆';
-    /// \u{1b287}: '𛊇'
-    pub const CHARACTER_DASH_1B287: char = '𛊇';
-    /// \u{1b288}: '𛊈'
-    pub const CHARACTER_DASH_1B288: char = '𛊈';
-    /// \u{1b289}: '𛊉'
-    pub const CHARACTER_DASH_1B289: char = '𛊉';
-    /// \u{1b28a}: '𛊊'
-    pub const CHARACTER_DASH_1B28A: char = '𛊊';
-    /// \u{1b28b}: '𛊋'
-    pub const CHARACTER_DASH_1B28B: char = '𛊋';
-    /// \u{1b28c}: '𛊌'
-    pub const CHARACTER_DASH_1B28C: char = '𛊌';
-    /// \u{1b28d}: '𛊍'
-    pub const CHARACTER_DASH_1B28D: char = '𛊍';
-    /// \u{1b28e}: '𛊎'
-    pub const CHARACTER_DASH_1B28E: char = '𛊎';
-    /// \u{1b28f}: '𛊏'
-    pub const CHARACTER_DASH_1B28F: char = '𛊏';
-    /// \u{1b290}: '𛊐'
-    pub const CHARACTER_DASH_1B290: char = '𛊐';
-    /// \u{1b291}: '𛊑'
-    pub const CHARACTER_DASH_1B291: char = '𛊑';
-    /// \u{1b292}: '𛊒'
-    pub const CHARACTER_DASH_1B292: char = '𛊒';
-    /// \u{1b293}: '𛊓'
-    pub const CHARACTER_DASH_1B293: char = '𛊓';
-    /// \u{1b294}: '𛊔'
-    pub const CHARACTER_DASH_1B294: char = '𛊔';
-    /// \u{1b295}: '𛊕'
-    pub const CHARACTER_DASH_1B295: char = '𛊕';
-    /// \u{1b296}: '𛊖'
-    pub const CHARACTER_DASH_1B296: char = '𛊖';
-    /// \u{1b297}: '𛊗'
-    pub const CHARACTER_DASH_1B297: char = '𛊗';
-    /// \u{1b298}: '𛊘'
-    pub const CHARACTER_DASH_1B298: char = '𛊘';
-    /// \u{1b299}: '𛊙'
-    pub const CHARACTER_DASH_1B299: char = '𛊙';
-    /// \u{1b29a}: '𛊚'
-    pub const CHARACTER_DASH_1B29A: char = '𛊚';
-    /// \u{1b29b}: '𛊛'
-    pub const CHARACTER_DASH_1B29B: char = '𛊛';
-    /// \u{1b29c}: '𛊜'
-    pub const CHARACTER_DASH_1B29C: char = '𛊜';
-    /// \u{1b29d}: '𛊝'
-    pub const CHARACTER_DASH_1B29D: char = '𛊝';
-    /// \u{1b29e}: '𛊞'
-    pub const CHARACTER_DASH_1B29E: char = '𛊞';
-    /// \u{1b29f}: '𛊟'
-    pub const CHARACTER_DASH_1B29F: char = '𛊟';
-    /// \u{1b2a0}: '𛊠'
-    pub const CHARACTER_DASH_1B2A0: char = '𛊠';
-    /// \u{1b2a1}: '𛊡'
-    pub const CHARACTER_DASH_1B2A1: char = '𛊡';
-    /// \u{1b2a2}: '𛊢'
-    pub const CHARACTER_DASH_1B2A2: char = '𛊢';
-    /// \u{1b2a3}: '𛊣'
-    pub const CHARACTER_DASH_1B2A3: char = '𛊣';
-    /// \u{1b2a4}: '𛊤'
-    pub const CHARACTER_DASH_1B2A4: char = '𛊤';
-    /// \u{1b2a5}: '𛊥'
-    pub const CHARACTER_DASH_1B2A5: char = '𛊥';
-    /// \u{1b2a6}: '𛊦'
-    pub const CHARACTER_DASH_1B2A6: char = '𛊦';
-    /// \u{1b2a7}: '𛊧'
-    pub const CHARACTER_DASH_1B2A7: char = '𛊧';
-    /// \u{1b2a8}: '𛊨'
-    pub const CHARACTER_DASH_1B2A8: char = '𛊨';
-    /// \u{1b2a9}: '𛊩'
-    pub const CHARACTER_DASH_1B2A9: char = '𛊩';
-    /// \u{1b2aa}: '𛊪'
-    pub const CHARACTER_DASH_1B2AA: char = '𛊪';
-    /// \u{1b2ab}: '𛊫'
-    pub const CHARACTER_DASH_1B2AB: char = '𛊫';
-    /// \u{1b2ac}: '𛊬'
-    pub const CHARACTER_DASH_1B2AC: char = '𛊬';
-    /// \u{1b2ad}: '𛊭'
-    pub const CHARACTER_DASH_1B2AD: char = '𛊭';
-    /// \u{1b2ae}: '𛊮'
-    pub const CHARACTER_DASH_1B2AE: char = '𛊮';
-    /// \u{1b2af}: '𛊯'
-    pub const CHARACTER_DASH_1B2AF: char = '𛊯';
-    /// \u{1b2b0}: '𛊰'
-    pub const CHARACTER_DASH_1B2B0: char = '𛊰';
-    /// \u{1b2b1}: '𛊱'
-    pub const CHARACTER_DASH_1B2B1: char = '𛊱';
-    /// \u{1b2b2}: '𛊲'
-    pub const CHARACTER_DASH_1B2B2: char = '𛊲';
-    /// \u{1b2b3}: '𛊳'
-    pub const CHARACTER_DASH_1B2B3: char = '𛊳';
-    /// \u{1b2b4}: '𛊴'
-    pub const CHARACTER_DASH_1B2B4: char = '𛊴';
-    /// \u{1b2b5}: '𛊵'
-    pub const CHARACTER_DASH_1B2B5: char = '𛊵';
-    /// \u{1b2b6}: '𛊶'
-    pub const CHARACTER_DASH_1B2B6: char = '𛊶';
-    /// \u{1b2b7}: '𛊷'
-    pub const CHARACTER_DASH_1B2B7: char = '𛊷';
-    /// \u{1b2b8}: '𛊸'
-    pub const CHARACTER_DASH_1B2B8: char = '𛊸';
-    /// \u{1b2b9}: '𛊹'
-    pub const CHARACTER_DASH_1B2B9: char = '𛊹';
-    /// \u{1b2ba}: '𛊺'
-    pub const CHARACTER_DASH_1B2BA: char = '𛊺';
-    /// \u{1b2bb}: '𛊻'
-    pub const CHARACTER_DASH_1B2BB: char = '𛊻';
-    /// \u{1b2bc}: '𛊼'
-    pub const CHARACTER_DASH_1B2BC: char = '𛊼';
-    /// \u{1b2bd}: '𛊽'
-    pub const CHARACTER_DASH_1B2BD: char = '𛊽';
-    /// \u{1b2be}: '𛊾'
-    pub const CHARACTER_DASH_1B2BE: char = '𛊾';
-    /// \u{1b2bf}: '𛊿'
-    pub const CHARACTER_DASH_1B2BF: char = '𛊿';
-    /// \u{1b2c0}: '𛋀'
-    pub const CHARACTER_DASH_1B2C0: char = '𛋀';
-    /// \u{1b2c1}: '𛋁'
-    pub const CHARACTER_DASH_1B2C1: char = '𛋁';
-    /// \u{1b2c2}: '𛋂'
-    pub const CHARACTER_DASH_1B2C2: char = '𛋂';
-    /// \u{1b2c3}: '𛋃'
-    pub const CHARACTER_DASH_1B2C3: char = '𛋃';
-    /// \u{1b2c4}: '𛋄'
-    pub const CHARACTER_DASH_1B2C4: char = '𛋄';
-    /// \u{1b2c5}: '𛋅'
-    pub const CHARACTER_DASH_1B2C5: char = '𛋅';
-    /// \u{1b2c6}: '𛋆'
-    pub const CHARACTER_DASH_1B2C6: char = '𛋆';
-    /// \u{1b2c7}: '𛋇'
-    pub const CHARACTER_DASH_1B2C7: char = '𛋇';
-    /// \u{1b2c8}: '𛋈'
-    pub const CHARACTER_DASH_1B2C8: char = '𛋈';
-    /// \u{1b2c9}: '𛋉'
-    pub const CHARACTER_DASH_1B2C9: char = '𛋉';
-    /// \u{1b2ca}: '𛋊'
-    pub const CHARACTER_DASH_1B2CA: char = '𛋊';
-    /// \u{1b2cb}: '𛋋'
-    pub const CHARACTER_DASH_1B2CB: char = '𛋋';
-    /// \u{1b2cc}: '𛋌'
-    pub const CHARACTER_DASH_1B2CC: char = '𛋌';
-    /// \u{1b2cd}: '𛋍'
-    pub const CHARACTER_DASH_1B2CD: char = '𛋍';
-    /// \u{1b2ce}: '𛋎'
-    pub const CHARACTER_DASH_1B2CE: char = '𛋎';
-    /// \u{1b2cf}: '𛋏'
-    pub const CHARACTER_DASH_1B2CF: char = '𛋏';
-    /// \u{1b2d0}: '𛋐'
-    pub const CHARACTER_DASH_1B2D0: char = '𛋐';
-    /// \u{1b2d1}: '𛋑'
-    pub const CHARACTER_DASH_1B2D1: char = '𛋑';
-    /// \u{1b2d2}: '𛋒'
-    pub const CHARACTER_DASH_1B2D2: char = '𛋒';
-    /// \u{1b2d3}: '𛋓'
-    pub const CHARACTER_DASH_1B2D3: char = '𛋓';
-    /// \u{1b2d4}: '𛋔'
-    pub const CHARACTER_DASH_1B2D4: char = '𛋔';
-    /// \u{1b2d5}: '𛋕'
-    pub const CHARACTER_DASH_1B2D5: char = '𛋕';
-    /// \u{1b2d6}: '𛋖'
-    pub const CHARACTER_DASH_1B2D6: char = '𛋖';
-    /// \u{1b2d7}: '𛋗'
-    pub const CHARACTER_DASH_1B2D7: char = '𛋗';
-    /// \u{1b2d8}: '𛋘'
-    pub const CHARACTER_DASH_1B2D8: char = '𛋘';
-    /// \u{1b2d9}: '𛋙'
-    pub const CHARACTER_DASH_1B2D9: char = '𛋙';
-    /// \u{1b2da}: '𛋚'
-    pub const CHARACTER_DASH_1B2DA: char = '𛋚';
-    /// \u{1b2db}: '𛋛'
-    pub const CHARACTER_DASH_1B2DB: char = '𛋛';
-    /// \u{1b2dc}: '𛋜'
-    pub const CHARACTER_DASH_1B2DC: char = '𛋜';
-    /// \u{1b2dd}: '𛋝'
-    pub const CHARACTER_DASH_1B2DD: char = '𛋝';
-    /// \u{1b2de}: '𛋞'
-    pub const CHARACTER_DASH_1B2DE: char = '𛋞';
-    /// \u{1b2df}: '𛋟'
-    pub const CHARACTER_DASH_1B2DF: char = '𛋟';
-    /// \u{1b2e0}: '𛋠'
-    pub const CHARACTER_DASH_1B2E0: char = '𛋠';
-    /// \u{1b2e1}: '𛋡'
-    pub const CHARACTER_DASH_1B2E1: char = '𛋡';
-    /// \u{1b2e2}: '𛋢'
-    pub const CHARACTER_DASH_1B2E2: char = '𛋢';
-    /// \u{1b2e3}: '𛋣'
-    pub const CHARACTER_DASH_1B2E3: char = '𛋣';
-    /// \u{1b2e4}: '𛋤'
-    pub const CHARACTER_DASH_1B2E4: char = '𛋤';
-    /// \u{1b2e5}: '𛋥'
-    pub const CHARACTER_DASH_1B2E5: char = '𛋥';
-    /// \u{1b2e6}: '𛋦'
-    pub const CHARACTER_DASH_1B2E6: char = '𛋦';
-    /// \u{1b2e7}: '𛋧'
-    pub const CHARACTER_DASH_1B2E7: char = '𛋧';
-    /// \u{1b2e8}: '𛋨'
-    pub const CHARACTER_DASH_1B2E8: char = '𛋨';
-    /// \u{1b2e9}: '𛋩'
-    pub const CHARACTER_DASH_1B2E9: char = '𛋩';
-    /// \u{1b2ea}: '𛋪'
-    pub const CHARACTER_DASH_1B2EA: char = '𛋪';
-    /// \u{1b2eb}: '𛋫'
-    pub const CHARACTER_DASH_1B2EB: char = '𛋫';
-    /// \u{1b2ec}: '𛋬'
-    pub const CHARACTER_DASH_1B2EC: char = '𛋬';
-    /// \u{1b2ed}: '𛋭'
-    pub const CHARACTER_DASH_1B2ED: char = '𛋭';
-    /// \u{1b2ee}: '𛋮'
-    pub const CHARACTER_DASH_1B2EE: char = '𛋮';
-    /// \u{1b2ef}: '𛋯'
-    pub const CHARACTER_DASH_1B2EF: char = '𛋯';
-    /// \u{1b2f0}: '𛋰'
-    pub const CHARACTER_DASH_1B2F0: char = '𛋰';
-    /// \u{1b2f1}: '𛋱'
-    pub const CHARACTER_DASH_1B2F1: char = '𛋱';
-    /// \u{1b2f2}: '𛋲'
-    pub const CHARACTER_DASH_1B2F2: char = '𛋲';
-    /// \u{1b2f3}: '𛋳'
-    pub const CHARACTER_DASH_1B2F3: char = '𛋳';
-    /// \u{1b2f4}: '𛋴'
-    pub const CHARACTER_DASH_1B2F4: char = '𛋴';
-    /// \u{1b2f5}: '𛋵'
-    pub const CHARACTER_DASH_1B2F5: char = '𛋵';
-    /// \u{1b2f6}: '𛋶'
-    pub const CHARACTER_DASH_1B2F6: char = '𛋶';
-    /// \u{1b2f7}: '𛋷'
-    pub const CHARACTER_DASH_1B2F7: char = '𛋷';
-    /// \u{1b2f8}: '𛋸'
-    pub const CHARACTER_DASH_1B2F8: char = '𛋸';
-    /// \u{1b2f9}: '𛋹'
-    pub const CHARACTER_DASH_1B2F9: char = '𛋹';
-    /// \u{1b2fa}: '𛋺'
-    pub const CHARACTER_DASH_1B2FA: char = '𛋺';
-    /// \u{1b2fb}: '𛋻'
-    pub const CHARACTER_DASH_1B2FB: char = '𛋻';
-}
 
 /// An enum to represent all characters in the Nushu block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -1593,404 +798,403 @@ pub enum Nushu {
 
 impl Into<char> for Nushu {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Nushu::CharacterDash1b170 => CHARACTER_DASH_1B170,
-            Nushu::CharacterDash1b171 => CHARACTER_DASH_1B171,
-            Nushu::CharacterDash1b172 => CHARACTER_DASH_1B172,
-            Nushu::CharacterDash1b173 => CHARACTER_DASH_1B173,
-            Nushu::CharacterDash1b174 => CHARACTER_DASH_1B174,
-            Nushu::CharacterDash1b175 => CHARACTER_DASH_1B175,
-            Nushu::CharacterDash1b176 => CHARACTER_DASH_1B176,
-            Nushu::CharacterDash1b177 => CHARACTER_DASH_1B177,
-            Nushu::CharacterDash1b178 => CHARACTER_DASH_1B178,
-            Nushu::CharacterDash1b179 => CHARACTER_DASH_1B179,
-            Nushu::CharacterDash1b17a => CHARACTER_DASH_1B17A,
-            Nushu::CharacterDash1b17b => CHARACTER_DASH_1B17B,
-            Nushu::CharacterDash1b17c => CHARACTER_DASH_1B17C,
-            Nushu::CharacterDash1b17d => CHARACTER_DASH_1B17D,
-            Nushu::CharacterDash1b17e => CHARACTER_DASH_1B17E,
-            Nushu::CharacterDash1b17f => CHARACTER_DASH_1B17F,
-            Nushu::CharacterDash1b180 => CHARACTER_DASH_1B180,
-            Nushu::CharacterDash1b181 => CHARACTER_DASH_1B181,
-            Nushu::CharacterDash1b182 => CHARACTER_DASH_1B182,
-            Nushu::CharacterDash1b183 => CHARACTER_DASH_1B183,
-            Nushu::CharacterDash1b184 => CHARACTER_DASH_1B184,
-            Nushu::CharacterDash1b185 => CHARACTER_DASH_1B185,
-            Nushu::CharacterDash1b186 => CHARACTER_DASH_1B186,
-            Nushu::CharacterDash1b187 => CHARACTER_DASH_1B187,
-            Nushu::CharacterDash1b188 => CHARACTER_DASH_1B188,
-            Nushu::CharacterDash1b189 => CHARACTER_DASH_1B189,
-            Nushu::CharacterDash1b18a => CHARACTER_DASH_1B18A,
-            Nushu::CharacterDash1b18b => CHARACTER_DASH_1B18B,
-            Nushu::CharacterDash1b18c => CHARACTER_DASH_1B18C,
-            Nushu::CharacterDash1b18d => CHARACTER_DASH_1B18D,
-            Nushu::CharacterDash1b18e => CHARACTER_DASH_1B18E,
-            Nushu::CharacterDash1b18f => CHARACTER_DASH_1B18F,
-            Nushu::CharacterDash1b190 => CHARACTER_DASH_1B190,
-            Nushu::CharacterDash1b191 => CHARACTER_DASH_1B191,
-            Nushu::CharacterDash1b192 => CHARACTER_DASH_1B192,
-            Nushu::CharacterDash1b193 => CHARACTER_DASH_1B193,
-            Nushu::CharacterDash1b194 => CHARACTER_DASH_1B194,
-            Nushu::CharacterDash1b195 => CHARACTER_DASH_1B195,
-            Nushu::CharacterDash1b196 => CHARACTER_DASH_1B196,
-            Nushu::CharacterDash1b197 => CHARACTER_DASH_1B197,
-            Nushu::CharacterDash1b198 => CHARACTER_DASH_1B198,
-            Nushu::CharacterDash1b199 => CHARACTER_DASH_1B199,
-            Nushu::CharacterDash1b19a => CHARACTER_DASH_1B19A,
-            Nushu::CharacterDash1b19b => CHARACTER_DASH_1B19B,
-            Nushu::CharacterDash1b19c => CHARACTER_DASH_1B19C,
-            Nushu::CharacterDash1b19d => CHARACTER_DASH_1B19D,
-            Nushu::CharacterDash1b19e => CHARACTER_DASH_1B19E,
-            Nushu::CharacterDash1b19f => CHARACTER_DASH_1B19F,
-            Nushu::CharacterDash1b1a0 => CHARACTER_DASH_1B1A0,
-            Nushu::CharacterDash1b1a1 => CHARACTER_DASH_1B1A1,
-            Nushu::CharacterDash1b1a2 => CHARACTER_DASH_1B1A2,
-            Nushu::CharacterDash1b1a3 => CHARACTER_DASH_1B1A3,
-            Nushu::CharacterDash1b1a4 => CHARACTER_DASH_1B1A4,
-            Nushu::CharacterDash1b1a5 => CHARACTER_DASH_1B1A5,
-            Nushu::CharacterDash1b1a6 => CHARACTER_DASH_1B1A6,
-            Nushu::CharacterDash1b1a7 => CHARACTER_DASH_1B1A7,
-            Nushu::CharacterDash1b1a8 => CHARACTER_DASH_1B1A8,
-            Nushu::CharacterDash1b1a9 => CHARACTER_DASH_1B1A9,
-            Nushu::CharacterDash1b1aa => CHARACTER_DASH_1B1AA,
-            Nushu::CharacterDash1b1ab => CHARACTER_DASH_1B1AB,
-            Nushu::CharacterDash1b1ac => CHARACTER_DASH_1B1AC,
-            Nushu::CharacterDash1b1ad => CHARACTER_DASH_1B1AD,
-            Nushu::CharacterDash1b1ae => CHARACTER_DASH_1B1AE,
-            Nushu::CharacterDash1b1af => CHARACTER_DASH_1B1AF,
-            Nushu::CharacterDash1b1b0 => CHARACTER_DASH_1B1B0,
-            Nushu::CharacterDash1b1b1 => CHARACTER_DASH_1B1B1,
-            Nushu::CharacterDash1b1b2 => CHARACTER_DASH_1B1B2,
-            Nushu::CharacterDash1b1b3 => CHARACTER_DASH_1B1B3,
-            Nushu::CharacterDash1b1b4 => CHARACTER_DASH_1B1B4,
-            Nushu::CharacterDash1b1b5 => CHARACTER_DASH_1B1B5,
-            Nushu::CharacterDash1b1b6 => CHARACTER_DASH_1B1B6,
-            Nushu::CharacterDash1b1b7 => CHARACTER_DASH_1B1B7,
-            Nushu::CharacterDash1b1b8 => CHARACTER_DASH_1B1B8,
-            Nushu::CharacterDash1b1b9 => CHARACTER_DASH_1B1B9,
-            Nushu::CharacterDash1b1ba => CHARACTER_DASH_1B1BA,
-            Nushu::CharacterDash1b1bb => CHARACTER_DASH_1B1BB,
-            Nushu::CharacterDash1b1bc => CHARACTER_DASH_1B1BC,
-            Nushu::CharacterDash1b1bd => CHARACTER_DASH_1B1BD,
-            Nushu::CharacterDash1b1be => CHARACTER_DASH_1B1BE,
-            Nushu::CharacterDash1b1bf => CHARACTER_DASH_1B1BF,
-            Nushu::CharacterDash1b1c0 => CHARACTER_DASH_1B1C0,
-            Nushu::CharacterDash1b1c1 => CHARACTER_DASH_1B1C1,
-            Nushu::CharacterDash1b1c2 => CHARACTER_DASH_1B1C2,
-            Nushu::CharacterDash1b1c3 => CHARACTER_DASH_1B1C3,
-            Nushu::CharacterDash1b1c4 => CHARACTER_DASH_1B1C4,
-            Nushu::CharacterDash1b1c5 => CHARACTER_DASH_1B1C5,
-            Nushu::CharacterDash1b1c6 => CHARACTER_DASH_1B1C6,
-            Nushu::CharacterDash1b1c7 => CHARACTER_DASH_1B1C7,
-            Nushu::CharacterDash1b1c8 => CHARACTER_DASH_1B1C8,
-            Nushu::CharacterDash1b1c9 => CHARACTER_DASH_1B1C9,
-            Nushu::CharacterDash1b1ca => CHARACTER_DASH_1B1CA,
-            Nushu::CharacterDash1b1cb => CHARACTER_DASH_1B1CB,
-            Nushu::CharacterDash1b1cc => CHARACTER_DASH_1B1CC,
-            Nushu::CharacterDash1b1cd => CHARACTER_DASH_1B1CD,
-            Nushu::CharacterDash1b1ce => CHARACTER_DASH_1B1CE,
-            Nushu::CharacterDash1b1cf => CHARACTER_DASH_1B1CF,
-            Nushu::CharacterDash1b1d0 => CHARACTER_DASH_1B1D0,
-            Nushu::CharacterDash1b1d1 => CHARACTER_DASH_1B1D1,
-            Nushu::CharacterDash1b1d2 => CHARACTER_DASH_1B1D2,
-            Nushu::CharacterDash1b1d3 => CHARACTER_DASH_1B1D3,
-            Nushu::CharacterDash1b1d4 => CHARACTER_DASH_1B1D4,
-            Nushu::CharacterDash1b1d5 => CHARACTER_DASH_1B1D5,
-            Nushu::CharacterDash1b1d6 => CHARACTER_DASH_1B1D6,
-            Nushu::CharacterDash1b1d7 => CHARACTER_DASH_1B1D7,
-            Nushu::CharacterDash1b1d8 => CHARACTER_DASH_1B1D8,
-            Nushu::CharacterDash1b1d9 => CHARACTER_DASH_1B1D9,
-            Nushu::CharacterDash1b1da => CHARACTER_DASH_1B1DA,
-            Nushu::CharacterDash1b1db => CHARACTER_DASH_1B1DB,
-            Nushu::CharacterDash1b1dc => CHARACTER_DASH_1B1DC,
-            Nushu::CharacterDash1b1dd => CHARACTER_DASH_1B1DD,
-            Nushu::CharacterDash1b1de => CHARACTER_DASH_1B1DE,
-            Nushu::CharacterDash1b1df => CHARACTER_DASH_1B1DF,
-            Nushu::CharacterDash1b1e0 => CHARACTER_DASH_1B1E0,
-            Nushu::CharacterDash1b1e1 => CHARACTER_DASH_1B1E1,
-            Nushu::CharacterDash1b1e2 => CHARACTER_DASH_1B1E2,
-            Nushu::CharacterDash1b1e3 => CHARACTER_DASH_1B1E3,
-            Nushu::CharacterDash1b1e4 => CHARACTER_DASH_1B1E4,
-            Nushu::CharacterDash1b1e5 => CHARACTER_DASH_1B1E5,
-            Nushu::CharacterDash1b1e6 => CHARACTER_DASH_1B1E6,
-            Nushu::CharacterDash1b1e7 => CHARACTER_DASH_1B1E7,
-            Nushu::CharacterDash1b1e8 => CHARACTER_DASH_1B1E8,
-            Nushu::CharacterDash1b1e9 => CHARACTER_DASH_1B1E9,
-            Nushu::CharacterDash1b1ea => CHARACTER_DASH_1B1EA,
-            Nushu::CharacterDash1b1eb => CHARACTER_DASH_1B1EB,
-            Nushu::CharacterDash1b1ec => CHARACTER_DASH_1B1EC,
-            Nushu::CharacterDash1b1ed => CHARACTER_DASH_1B1ED,
-            Nushu::CharacterDash1b1ee => CHARACTER_DASH_1B1EE,
-            Nushu::CharacterDash1b1ef => CHARACTER_DASH_1B1EF,
-            Nushu::CharacterDash1b1f0 => CHARACTER_DASH_1B1F0,
-            Nushu::CharacterDash1b1f1 => CHARACTER_DASH_1B1F1,
-            Nushu::CharacterDash1b1f2 => CHARACTER_DASH_1B1F2,
-            Nushu::CharacterDash1b1f3 => CHARACTER_DASH_1B1F3,
-            Nushu::CharacterDash1b1f4 => CHARACTER_DASH_1B1F4,
-            Nushu::CharacterDash1b1f5 => CHARACTER_DASH_1B1F5,
-            Nushu::CharacterDash1b1f6 => CHARACTER_DASH_1B1F6,
-            Nushu::CharacterDash1b1f7 => CHARACTER_DASH_1B1F7,
-            Nushu::CharacterDash1b1f8 => CHARACTER_DASH_1B1F8,
-            Nushu::CharacterDash1b1f9 => CHARACTER_DASH_1B1F9,
-            Nushu::CharacterDash1b1fa => CHARACTER_DASH_1B1FA,
-            Nushu::CharacterDash1b1fb => CHARACTER_DASH_1B1FB,
-            Nushu::CharacterDash1b1fc => CHARACTER_DASH_1B1FC,
-            Nushu::CharacterDash1b1fd => CHARACTER_DASH_1B1FD,
-            Nushu::CharacterDash1b1fe => CHARACTER_DASH_1B1FE,
-            Nushu::CharacterDash1b1ff => CHARACTER_DASH_1B1FF,
-            Nushu::CharacterDash1b200 => CHARACTER_DASH_1B200,
-            Nushu::CharacterDash1b201 => CHARACTER_DASH_1B201,
-            Nushu::CharacterDash1b202 => CHARACTER_DASH_1B202,
-            Nushu::CharacterDash1b203 => CHARACTER_DASH_1B203,
-            Nushu::CharacterDash1b204 => CHARACTER_DASH_1B204,
-            Nushu::CharacterDash1b205 => CHARACTER_DASH_1B205,
-            Nushu::CharacterDash1b206 => CHARACTER_DASH_1B206,
-            Nushu::CharacterDash1b207 => CHARACTER_DASH_1B207,
-            Nushu::CharacterDash1b208 => CHARACTER_DASH_1B208,
-            Nushu::CharacterDash1b209 => CHARACTER_DASH_1B209,
-            Nushu::CharacterDash1b20a => CHARACTER_DASH_1B20A,
-            Nushu::CharacterDash1b20b => CHARACTER_DASH_1B20B,
-            Nushu::CharacterDash1b20c => CHARACTER_DASH_1B20C,
-            Nushu::CharacterDash1b20d => CHARACTER_DASH_1B20D,
-            Nushu::CharacterDash1b20e => CHARACTER_DASH_1B20E,
-            Nushu::CharacterDash1b20f => CHARACTER_DASH_1B20F,
-            Nushu::CharacterDash1b210 => CHARACTER_DASH_1B210,
-            Nushu::CharacterDash1b211 => CHARACTER_DASH_1B211,
-            Nushu::CharacterDash1b212 => CHARACTER_DASH_1B212,
-            Nushu::CharacterDash1b213 => CHARACTER_DASH_1B213,
-            Nushu::CharacterDash1b214 => CHARACTER_DASH_1B214,
-            Nushu::CharacterDash1b215 => CHARACTER_DASH_1B215,
-            Nushu::CharacterDash1b216 => CHARACTER_DASH_1B216,
-            Nushu::CharacterDash1b217 => CHARACTER_DASH_1B217,
-            Nushu::CharacterDash1b218 => CHARACTER_DASH_1B218,
-            Nushu::CharacterDash1b219 => CHARACTER_DASH_1B219,
-            Nushu::CharacterDash1b21a => CHARACTER_DASH_1B21A,
-            Nushu::CharacterDash1b21b => CHARACTER_DASH_1B21B,
-            Nushu::CharacterDash1b21c => CHARACTER_DASH_1B21C,
-            Nushu::CharacterDash1b21d => CHARACTER_DASH_1B21D,
-            Nushu::CharacterDash1b21e => CHARACTER_DASH_1B21E,
-            Nushu::CharacterDash1b21f => CHARACTER_DASH_1B21F,
-            Nushu::CharacterDash1b220 => CHARACTER_DASH_1B220,
-            Nushu::CharacterDash1b221 => CHARACTER_DASH_1B221,
-            Nushu::CharacterDash1b222 => CHARACTER_DASH_1B222,
-            Nushu::CharacterDash1b223 => CHARACTER_DASH_1B223,
-            Nushu::CharacterDash1b224 => CHARACTER_DASH_1B224,
-            Nushu::CharacterDash1b225 => CHARACTER_DASH_1B225,
-            Nushu::CharacterDash1b226 => CHARACTER_DASH_1B226,
-            Nushu::CharacterDash1b227 => CHARACTER_DASH_1B227,
-            Nushu::CharacterDash1b228 => CHARACTER_DASH_1B228,
-            Nushu::CharacterDash1b229 => CHARACTER_DASH_1B229,
-            Nushu::CharacterDash1b22a => CHARACTER_DASH_1B22A,
-            Nushu::CharacterDash1b22b => CHARACTER_DASH_1B22B,
-            Nushu::CharacterDash1b22c => CHARACTER_DASH_1B22C,
-            Nushu::CharacterDash1b22d => CHARACTER_DASH_1B22D,
-            Nushu::CharacterDash1b22e => CHARACTER_DASH_1B22E,
-            Nushu::CharacterDash1b22f => CHARACTER_DASH_1B22F,
-            Nushu::CharacterDash1b230 => CHARACTER_DASH_1B230,
-            Nushu::CharacterDash1b231 => CHARACTER_DASH_1B231,
-            Nushu::CharacterDash1b232 => CHARACTER_DASH_1B232,
-            Nushu::CharacterDash1b233 => CHARACTER_DASH_1B233,
-            Nushu::CharacterDash1b234 => CHARACTER_DASH_1B234,
-            Nushu::CharacterDash1b235 => CHARACTER_DASH_1B235,
-            Nushu::CharacterDash1b236 => CHARACTER_DASH_1B236,
-            Nushu::CharacterDash1b237 => CHARACTER_DASH_1B237,
-            Nushu::CharacterDash1b238 => CHARACTER_DASH_1B238,
-            Nushu::CharacterDash1b239 => CHARACTER_DASH_1B239,
-            Nushu::CharacterDash1b23a => CHARACTER_DASH_1B23A,
-            Nushu::CharacterDash1b23b => CHARACTER_DASH_1B23B,
-            Nushu::CharacterDash1b23c => CHARACTER_DASH_1B23C,
-            Nushu::CharacterDash1b23d => CHARACTER_DASH_1B23D,
-            Nushu::CharacterDash1b23e => CHARACTER_DASH_1B23E,
-            Nushu::CharacterDash1b23f => CHARACTER_DASH_1B23F,
-            Nushu::CharacterDash1b240 => CHARACTER_DASH_1B240,
-            Nushu::CharacterDash1b241 => CHARACTER_DASH_1B241,
-            Nushu::CharacterDash1b242 => CHARACTER_DASH_1B242,
-            Nushu::CharacterDash1b243 => CHARACTER_DASH_1B243,
-            Nushu::CharacterDash1b244 => CHARACTER_DASH_1B244,
-            Nushu::CharacterDash1b245 => CHARACTER_DASH_1B245,
-            Nushu::CharacterDash1b246 => CHARACTER_DASH_1B246,
-            Nushu::CharacterDash1b247 => CHARACTER_DASH_1B247,
-            Nushu::CharacterDash1b248 => CHARACTER_DASH_1B248,
-            Nushu::CharacterDash1b249 => CHARACTER_DASH_1B249,
-            Nushu::CharacterDash1b24a => CHARACTER_DASH_1B24A,
-            Nushu::CharacterDash1b24b => CHARACTER_DASH_1B24B,
-            Nushu::CharacterDash1b24c => CHARACTER_DASH_1B24C,
-            Nushu::CharacterDash1b24d => CHARACTER_DASH_1B24D,
-            Nushu::CharacterDash1b24e => CHARACTER_DASH_1B24E,
-            Nushu::CharacterDash1b24f => CHARACTER_DASH_1B24F,
-            Nushu::CharacterDash1b250 => CHARACTER_DASH_1B250,
-            Nushu::CharacterDash1b251 => CHARACTER_DASH_1B251,
-            Nushu::CharacterDash1b252 => CHARACTER_DASH_1B252,
-            Nushu::CharacterDash1b253 => CHARACTER_DASH_1B253,
-            Nushu::CharacterDash1b254 => CHARACTER_DASH_1B254,
-            Nushu::CharacterDash1b255 => CHARACTER_DASH_1B255,
-            Nushu::CharacterDash1b256 => CHARACTER_DASH_1B256,
-            Nushu::CharacterDash1b257 => CHARACTER_DASH_1B257,
-            Nushu::CharacterDash1b258 => CHARACTER_DASH_1B258,
-            Nushu::CharacterDash1b259 => CHARACTER_DASH_1B259,
-            Nushu::CharacterDash1b25a => CHARACTER_DASH_1B25A,
-            Nushu::CharacterDash1b25b => CHARACTER_DASH_1B25B,
-            Nushu::CharacterDash1b25c => CHARACTER_DASH_1B25C,
-            Nushu::CharacterDash1b25d => CHARACTER_DASH_1B25D,
-            Nushu::CharacterDash1b25e => CHARACTER_DASH_1B25E,
-            Nushu::CharacterDash1b25f => CHARACTER_DASH_1B25F,
-            Nushu::CharacterDash1b260 => CHARACTER_DASH_1B260,
-            Nushu::CharacterDash1b261 => CHARACTER_DASH_1B261,
-            Nushu::CharacterDash1b262 => CHARACTER_DASH_1B262,
-            Nushu::CharacterDash1b263 => CHARACTER_DASH_1B263,
-            Nushu::CharacterDash1b264 => CHARACTER_DASH_1B264,
-            Nushu::CharacterDash1b265 => CHARACTER_DASH_1B265,
-            Nushu::CharacterDash1b266 => CHARACTER_DASH_1B266,
-            Nushu::CharacterDash1b267 => CHARACTER_DASH_1B267,
-            Nushu::CharacterDash1b268 => CHARACTER_DASH_1B268,
-            Nushu::CharacterDash1b269 => CHARACTER_DASH_1B269,
-            Nushu::CharacterDash1b26a => CHARACTER_DASH_1B26A,
-            Nushu::CharacterDash1b26b => CHARACTER_DASH_1B26B,
-            Nushu::CharacterDash1b26c => CHARACTER_DASH_1B26C,
-            Nushu::CharacterDash1b26d => CHARACTER_DASH_1B26D,
-            Nushu::CharacterDash1b26e => CHARACTER_DASH_1B26E,
-            Nushu::CharacterDash1b26f => CHARACTER_DASH_1B26F,
-            Nushu::CharacterDash1b270 => CHARACTER_DASH_1B270,
-            Nushu::CharacterDash1b271 => CHARACTER_DASH_1B271,
-            Nushu::CharacterDash1b272 => CHARACTER_DASH_1B272,
-            Nushu::CharacterDash1b273 => CHARACTER_DASH_1B273,
-            Nushu::CharacterDash1b274 => CHARACTER_DASH_1B274,
-            Nushu::CharacterDash1b275 => CHARACTER_DASH_1B275,
-            Nushu::CharacterDash1b276 => CHARACTER_DASH_1B276,
-            Nushu::CharacterDash1b277 => CHARACTER_DASH_1B277,
-            Nushu::CharacterDash1b278 => CHARACTER_DASH_1B278,
-            Nushu::CharacterDash1b279 => CHARACTER_DASH_1B279,
-            Nushu::CharacterDash1b27a => CHARACTER_DASH_1B27A,
-            Nushu::CharacterDash1b27b => CHARACTER_DASH_1B27B,
-            Nushu::CharacterDash1b27c => CHARACTER_DASH_1B27C,
-            Nushu::CharacterDash1b27d => CHARACTER_DASH_1B27D,
-            Nushu::CharacterDash1b27e => CHARACTER_DASH_1B27E,
-            Nushu::CharacterDash1b27f => CHARACTER_DASH_1B27F,
-            Nushu::CharacterDash1b280 => CHARACTER_DASH_1B280,
-            Nushu::CharacterDash1b281 => CHARACTER_DASH_1B281,
-            Nushu::CharacterDash1b282 => CHARACTER_DASH_1B282,
-            Nushu::CharacterDash1b283 => CHARACTER_DASH_1B283,
-            Nushu::CharacterDash1b284 => CHARACTER_DASH_1B284,
-            Nushu::CharacterDash1b285 => CHARACTER_DASH_1B285,
-            Nushu::CharacterDash1b286 => CHARACTER_DASH_1B286,
-            Nushu::CharacterDash1b287 => CHARACTER_DASH_1B287,
-            Nushu::CharacterDash1b288 => CHARACTER_DASH_1B288,
-            Nushu::CharacterDash1b289 => CHARACTER_DASH_1B289,
-            Nushu::CharacterDash1b28a => CHARACTER_DASH_1B28A,
-            Nushu::CharacterDash1b28b => CHARACTER_DASH_1B28B,
-            Nushu::CharacterDash1b28c => CHARACTER_DASH_1B28C,
-            Nushu::CharacterDash1b28d => CHARACTER_DASH_1B28D,
-            Nushu::CharacterDash1b28e => CHARACTER_DASH_1B28E,
-            Nushu::CharacterDash1b28f => CHARACTER_DASH_1B28F,
-            Nushu::CharacterDash1b290 => CHARACTER_DASH_1B290,
-            Nushu::CharacterDash1b291 => CHARACTER_DASH_1B291,
-            Nushu::CharacterDash1b292 => CHARACTER_DASH_1B292,
-            Nushu::CharacterDash1b293 => CHARACTER_DASH_1B293,
-            Nushu::CharacterDash1b294 => CHARACTER_DASH_1B294,
-            Nushu::CharacterDash1b295 => CHARACTER_DASH_1B295,
-            Nushu::CharacterDash1b296 => CHARACTER_DASH_1B296,
-            Nushu::CharacterDash1b297 => CHARACTER_DASH_1B297,
-            Nushu::CharacterDash1b298 => CHARACTER_DASH_1B298,
-            Nushu::CharacterDash1b299 => CHARACTER_DASH_1B299,
-            Nushu::CharacterDash1b29a => CHARACTER_DASH_1B29A,
-            Nushu::CharacterDash1b29b => CHARACTER_DASH_1B29B,
-            Nushu::CharacterDash1b29c => CHARACTER_DASH_1B29C,
-            Nushu::CharacterDash1b29d => CHARACTER_DASH_1B29D,
-            Nushu::CharacterDash1b29e => CHARACTER_DASH_1B29E,
-            Nushu::CharacterDash1b29f => CHARACTER_DASH_1B29F,
-            Nushu::CharacterDash1b2a0 => CHARACTER_DASH_1B2A0,
-            Nushu::CharacterDash1b2a1 => CHARACTER_DASH_1B2A1,
-            Nushu::CharacterDash1b2a2 => CHARACTER_DASH_1B2A2,
-            Nushu::CharacterDash1b2a3 => CHARACTER_DASH_1B2A3,
-            Nushu::CharacterDash1b2a4 => CHARACTER_DASH_1B2A4,
-            Nushu::CharacterDash1b2a5 => CHARACTER_DASH_1B2A5,
-            Nushu::CharacterDash1b2a6 => CHARACTER_DASH_1B2A6,
-            Nushu::CharacterDash1b2a7 => CHARACTER_DASH_1B2A7,
-            Nushu::CharacterDash1b2a8 => CHARACTER_DASH_1B2A8,
-            Nushu::CharacterDash1b2a9 => CHARACTER_DASH_1B2A9,
-            Nushu::CharacterDash1b2aa => CHARACTER_DASH_1B2AA,
-            Nushu::CharacterDash1b2ab => CHARACTER_DASH_1B2AB,
-            Nushu::CharacterDash1b2ac => CHARACTER_DASH_1B2AC,
-            Nushu::CharacterDash1b2ad => CHARACTER_DASH_1B2AD,
-            Nushu::CharacterDash1b2ae => CHARACTER_DASH_1B2AE,
-            Nushu::CharacterDash1b2af => CHARACTER_DASH_1B2AF,
-            Nushu::CharacterDash1b2b0 => CHARACTER_DASH_1B2B0,
-            Nushu::CharacterDash1b2b1 => CHARACTER_DASH_1B2B1,
-            Nushu::CharacterDash1b2b2 => CHARACTER_DASH_1B2B2,
-            Nushu::CharacterDash1b2b3 => CHARACTER_DASH_1B2B3,
-            Nushu::CharacterDash1b2b4 => CHARACTER_DASH_1B2B4,
-            Nushu::CharacterDash1b2b5 => CHARACTER_DASH_1B2B5,
-            Nushu::CharacterDash1b2b6 => CHARACTER_DASH_1B2B6,
-            Nushu::CharacterDash1b2b7 => CHARACTER_DASH_1B2B7,
-            Nushu::CharacterDash1b2b8 => CHARACTER_DASH_1B2B8,
-            Nushu::CharacterDash1b2b9 => CHARACTER_DASH_1B2B9,
-            Nushu::CharacterDash1b2ba => CHARACTER_DASH_1B2BA,
-            Nushu::CharacterDash1b2bb => CHARACTER_DASH_1B2BB,
-            Nushu::CharacterDash1b2bc => CHARACTER_DASH_1B2BC,
-            Nushu::CharacterDash1b2bd => CHARACTER_DASH_1B2BD,
-            Nushu::CharacterDash1b2be => CHARACTER_DASH_1B2BE,
-            Nushu::CharacterDash1b2bf => CHARACTER_DASH_1B2BF,
-            Nushu::CharacterDash1b2c0 => CHARACTER_DASH_1B2C0,
-            Nushu::CharacterDash1b2c1 => CHARACTER_DASH_1B2C1,
-            Nushu::CharacterDash1b2c2 => CHARACTER_DASH_1B2C2,
-            Nushu::CharacterDash1b2c3 => CHARACTER_DASH_1B2C3,
-            Nushu::CharacterDash1b2c4 => CHARACTER_DASH_1B2C4,
-            Nushu::CharacterDash1b2c5 => CHARACTER_DASH_1B2C5,
-            Nushu::CharacterDash1b2c6 => CHARACTER_DASH_1B2C6,
-            Nushu::CharacterDash1b2c7 => CHARACTER_DASH_1B2C7,
-            Nushu::CharacterDash1b2c8 => CHARACTER_DASH_1B2C8,
-            Nushu::CharacterDash1b2c9 => CHARACTER_DASH_1B2C9,
-            Nushu::CharacterDash1b2ca => CHARACTER_DASH_1B2CA,
-            Nushu::CharacterDash1b2cb => CHARACTER_DASH_1B2CB,
-            Nushu::CharacterDash1b2cc => CHARACTER_DASH_1B2CC,
-            Nushu::CharacterDash1b2cd => CHARACTER_DASH_1B2CD,
-            Nushu::CharacterDash1b2ce => CHARACTER_DASH_1B2CE,
-            Nushu::CharacterDash1b2cf => CHARACTER_DASH_1B2CF,
-            Nushu::CharacterDash1b2d0 => CHARACTER_DASH_1B2D0,
-            Nushu::CharacterDash1b2d1 => CHARACTER_DASH_1B2D1,
-            Nushu::CharacterDash1b2d2 => CHARACTER_DASH_1B2D2,
-            Nushu::CharacterDash1b2d3 => CHARACTER_DASH_1B2D3,
-            Nushu::CharacterDash1b2d4 => CHARACTER_DASH_1B2D4,
-            Nushu::CharacterDash1b2d5 => CHARACTER_DASH_1B2D5,
-            Nushu::CharacterDash1b2d6 => CHARACTER_DASH_1B2D6,
-            Nushu::CharacterDash1b2d7 => CHARACTER_DASH_1B2D7,
-            Nushu::CharacterDash1b2d8 => CHARACTER_DASH_1B2D8,
-            Nushu::CharacterDash1b2d9 => CHARACTER_DASH_1B2D9,
-            Nushu::CharacterDash1b2da => CHARACTER_DASH_1B2DA,
-            Nushu::CharacterDash1b2db => CHARACTER_DASH_1B2DB,
-            Nushu::CharacterDash1b2dc => CHARACTER_DASH_1B2DC,
-            Nushu::CharacterDash1b2dd => CHARACTER_DASH_1B2DD,
-            Nushu::CharacterDash1b2de => CHARACTER_DASH_1B2DE,
-            Nushu::CharacterDash1b2df => CHARACTER_DASH_1B2DF,
-            Nushu::CharacterDash1b2e0 => CHARACTER_DASH_1B2E0,
-            Nushu::CharacterDash1b2e1 => CHARACTER_DASH_1B2E1,
-            Nushu::CharacterDash1b2e2 => CHARACTER_DASH_1B2E2,
-            Nushu::CharacterDash1b2e3 => CHARACTER_DASH_1B2E3,
-            Nushu::CharacterDash1b2e4 => CHARACTER_DASH_1B2E4,
-            Nushu::CharacterDash1b2e5 => CHARACTER_DASH_1B2E5,
-            Nushu::CharacterDash1b2e6 => CHARACTER_DASH_1B2E6,
-            Nushu::CharacterDash1b2e7 => CHARACTER_DASH_1B2E7,
-            Nushu::CharacterDash1b2e8 => CHARACTER_DASH_1B2E8,
-            Nushu::CharacterDash1b2e9 => CHARACTER_DASH_1B2E9,
-            Nushu::CharacterDash1b2ea => CHARACTER_DASH_1B2EA,
-            Nushu::CharacterDash1b2eb => CHARACTER_DASH_1B2EB,
-            Nushu::CharacterDash1b2ec => CHARACTER_DASH_1B2EC,
-            Nushu::CharacterDash1b2ed => CHARACTER_DASH_1B2ED,
-            Nushu::CharacterDash1b2ee => CHARACTER_DASH_1B2EE,
-            Nushu::CharacterDash1b2ef => CHARACTER_DASH_1B2EF,
-            Nushu::CharacterDash1b2f0 => CHARACTER_DASH_1B2F0,
-            Nushu::CharacterDash1b2f1 => CHARACTER_DASH_1B2F1,
-            Nushu::CharacterDash1b2f2 => CHARACTER_DASH_1B2F2,
-            Nushu::CharacterDash1b2f3 => CHARACTER_DASH_1B2F3,
-            Nushu::CharacterDash1b2f4 => CHARACTER_DASH_1B2F4,
-            Nushu::CharacterDash1b2f5 => CHARACTER_DASH_1B2F5,
-            Nushu::CharacterDash1b2f6 => CHARACTER_DASH_1B2F6,
-            Nushu::CharacterDash1b2f7 => CHARACTER_DASH_1B2F7,
-            Nushu::CharacterDash1b2f8 => CHARACTER_DASH_1B2F8,
-            Nushu::CharacterDash1b2f9 => CHARACTER_DASH_1B2F9,
-            Nushu::CharacterDash1b2fa => CHARACTER_DASH_1B2FA,
-            Nushu::CharacterDash1b2fb => CHARACTER_DASH_1B2FB,
+            Nushu::CharacterDash1b170 => '𛅰',
+            Nushu::CharacterDash1b171 => '𛅱',
+            Nushu::CharacterDash1b172 => '𛅲',
+            Nushu::CharacterDash1b173 => '𛅳',
+            Nushu::CharacterDash1b174 => '𛅴',
+            Nushu::CharacterDash1b175 => '𛅵',
+            Nushu::CharacterDash1b176 => '𛅶',
+            Nushu::CharacterDash1b177 => '𛅷',
+            Nushu::CharacterDash1b178 => '𛅸',
+            Nushu::CharacterDash1b179 => '𛅹',
+            Nushu::CharacterDash1b17a => '𛅺',
+            Nushu::CharacterDash1b17b => '𛅻',
+            Nushu::CharacterDash1b17c => '𛅼',
+            Nushu::CharacterDash1b17d => '𛅽',
+            Nushu::CharacterDash1b17e => '𛅾',
+            Nushu::CharacterDash1b17f => '𛅿',
+            Nushu::CharacterDash1b180 => '𛆀',
+            Nushu::CharacterDash1b181 => '𛆁',
+            Nushu::CharacterDash1b182 => '𛆂',
+            Nushu::CharacterDash1b183 => '𛆃',
+            Nushu::CharacterDash1b184 => '𛆄',
+            Nushu::CharacterDash1b185 => '𛆅',
+            Nushu::CharacterDash1b186 => '𛆆',
+            Nushu::CharacterDash1b187 => '𛆇',
+            Nushu::CharacterDash1b188 => '𛆈',
+            Nushu::CharacterDash1b189 => '𛆉',
+            Nushu::CharacterDash1b18a => '𛆊',
+            Nushu::CharacterDash1b18b => '𛆋',
+            Nushu::CharacterDash1b18c => '𛆌',
+            Nushu::CharacterDash1b18d => '𛆍',
+            Nushu::CharacterDash1b18e => '𛆎',
+            Nushu::CharacterDash1b18f => '𛆏',
+            Nushu::CharacterDash1b190 => '𛆐',
+            Nushu::CharacterDash1b191 => '𛆑',
+            Nushu::CharacterDash1b192 => '𛆒',
+            Nushu::CharacterDash1b193 => '𛆓',
+            Nushu::CharacterDash1b194 => '𛆔',
+            Nushu::CharacterDash1b195 => '𛆕',
+            Nushu::CharacterDash1b196 => '𛆖',
+            Nushu::CharacterDash1b197 => '𛆗',
+            Nushu::CharacterDash1b198 => '𛆘',
+            Nushu::CharacterDash1b199 => '𛆙',
+            Nushu::CharacterDash1b19a => '𛆚',
+            Nushu::CharacterDash1b19b => '𛆛',
+            Nushu::CharacterDash1b19c => '𛆜',
+            Nushu::CharacterDash1b19d => '𛆝',
+            Nushu::CharacterDash1b19e => '𛆞',
+            Nushu::CharacterDash1b19f => '𛆟',
+            Nushu::CharacterDash1b1a0 => '𛆠',
+            Nushu::CharacterDash1b1a1 => '𛆡',
+            Nushu::CharacterDash1b1a2 => '𛆢',
+            Nushu::CharacterDash1b1a3 => '𛆣',
+            Nushu::CharacterDash1b1a4 => '𛆤',
+            Nushu::CharacterDash1b1a5 => '𛆥',
+            Nushu::CharacterDash1b1a6 => '𛆦',
+            Nushu::CharacterDash1b1a7 => '𛆧',
+            Nushu::CharacterDash1b1a8 => '𛆨',
+            Nushu::CharacterDash1b1a9 => '𛆩',
+            Nushu::CharacterDash1b1aa => '𛆪',
+            Nushu::CharacterDash1b1ab => '𛆫',
+            Nushu::CharacterDash1b1ac => '𛆬',
+            Nushu::CharacterDash1b1ad => '𛆭',
+            Nushu::CharacterDash1b1ae => '𛆮',
+            Nushu::CharacterDash1b1af => '𛆯',
+            Nushu::CharacterDash1b1b0 => '𛆰',
+            Nushu::CharacterDash1b1b1 => '𛆱',
+            Nushu::CharacterDash1b1b2 => '𛆲',
+            Nushu::CharacterDash1b1b3 => '𛆳',
+            Nushu::CharacterDash1b1b4 => '𛆴',
+            Nushu::CharacterDash1b1b5 => '𛆵',
+            Nushu::CharacterDash1b1b6 => '𛆶',
+            Nushu::CharacterDash1b1b7 => '𛆷',
+            Nushu::CharacterDash1b1b8 => '𛆸',
+            Nushu::CharacterDash1b1b9 => '𛆹',
+            Nushu::CharacterDash1b1ba => '𛆺',
+            Nushu::CharacterDash1b1bb => '𛆻',
+            Nushu::CharacterDash1b1bc => '𛆼',
+            Nushu::CharacterDash1b1bd => '𛆽',
+            Nushu::CharacterDash1b1be => '𛆾',
+            Nushu::CharacterDash1b1bf => '𛆿',
+            Nushu::CharacterDash1b1c0 => '𛇀',
+            Nushu::CharacterDash1b1c1 => '𛇁',
+            Nushu::CharacterDash1b1c2 => '𛇂',
+            Nushu::CharacterDash1b1c3 => '𛇃',
+            Nushu::CharacterDash1b1c4 => '𛇄',
+            Nushu::CharacterDash1b1c5 => '𛇅',
+            Nushu::CharacterDash1b1c6 => '𛇆',
+            Nushu::CharacterDash1b1c7 => '𛇇',
+            Nushu::CharacterDash1b1c8 => '𛇈',
+            Nushu::CharacterDash1b1c9 => '𛇉',
+            Nushu::CharacterDash1b1ca => '𛇊',
+            Nushu::CharacterDash1b1cb => '𛇋',
+            Nushu::CharacterDash1b1cc => '𛇌',
+            Nushu::CharacterDash1b1cd => '𛇍',
+            Nushu::CharacterDash1b1ce => '𛇎',
+            Nushu::CharacterDash1b1cf => '𛇏',
+            Nushu::CharacterDash1b1d0 => '𛇐',
+            Nushu::CharacterDash1b1d1 => '𛇑',
+            Nushu::CharacterDash1b1d2 => '𛇒',
+            Nushu::CharacterDash1b1d3 => '𛇓',
+            Nushu::CharacterDash1b1d4 => '𛇔',
+            Nushu::CharacterDash1b1d5 => '𛇕',
+            Nushu::CharacterDash1b1d6 => '𛇖',
+            Nushu::CharacterDash1b1d7 => '𛇗',
+            Nushu::CharacterDash1b1d8 => '𛇘',
+            Nushu::CharacterDash1b1d9 => '𛇙',
+            Nushu::CharacterDash1b1da => '𛇚',
+            Nushu::CharacterDash1b1db => '𛇛',
+            Nushu::CharacterDash1b1dc => '𛇜',
+            Nushu::CharacterDash1b1dd => '𛇝',
+            Nushu::CharacterDash1b1de => '𛇞',
+            Nushu::CharacterDash1b1df => '𛇟',
+            Nushu::CharacterDash1b1e0 => '𛇠',
+            Nushu::CharacterDash1b1e1 => '𛇡',
+            Nushu::CharacterDash1b1e2 => '𛇢',
+            Nushu::CharacterDash1b1e3 => '𛇣',
+            Nushu::CharacterDash1b1e4 => '𛇤',
+            Nushu::CharacterDash1b1e5 => '𛇥',
+            Nushu::CharacterDash1b1e6 => '𛇦',
+            Nushu::CharacterDash1b1e7 => '𛇧',
+            Nushu::CharacterDash1b1e8 => '𛇨',
+            Nushu::CharacterDash1b1e9 => '𛇩',
+            Nushu::CharacterDash1b1ea => '𛇪',
+            Nushu::CharacterDash1b1eb => '𛇫',
+            Nushu::CharacterDash1b1ec => '𛇬',
+            Nushu::CharacterDash1b1ed => '𛇭',
+            Nushu::CharacterDash1b1ee => '𛇮',
+            Nushu::CharacterDash1b1ef => '𛇯',
+            Nushu::CharacterDash1b1f0 => '𛇰',
+            Nushu::CharacterDash1b1f1 => '𛇱',
+            Nushu::CharacterDash1b1f2 => '𛇲',
+            Nushu::CharacterDash1b1f3 => '𛇳',
+            Nushu::CharacterDash1b1f4 => '𛇴',
+            Nushu::CharacterDash1b1f5 => '𛇵',
+            Nushu::CharacterDash1b1f6 => '𛇶',
+            Nushu::CharacterDash1b1f7 => '𛇷',
+            Nushu::CharacterDash1b1f8 => '𛇸',
+            Nushu::CharacterDash1b1f9 => '𛇹',
+            Nushu::CharacterDash1b1fa => '𛇺',
+            Nushu::CharacterDash1b1fb => '𛇻',
+            Nushu::CharacterDash1b1fc => '𛇼',
+            Nushu::CharacterDash1b1fd => '𛇽',
+            Nushu::CharacterDash1b1fe => '𛇾',
+            Nushu::CharacterDash1b1ff => '𛇿',
+            Nushu::CharacterDash1b200 => '𛈀',
+            Nushu::CharacterDash1b201 => '𛈁',
+            Nushu::CharacterDash1b202 => '𛈂',
+            Nushu::CharacterDash1b203 => '𛈃',
+            Nushu::CharacterDash1b204 => '𛈄',
+            Nushu::CharacterDash1b205 => '𛈅',
+            Nushu::CharacterDash1b206 => '𛈆',
+            Nushu::CharacterDash1b207 => '𛈇',
+            Nushu::CharacterDash1b208 => '𛈈',
+            Nushu::CharacterDash1b209 => '𛈉',
+            Nushu::CharacterDash1b20a => '𛈊',
+            Nushu::CharacterDash1b20b => '𛈋',
+            Nushu::CharacterDash1b20c => '𛈌',
+            Nushu::CharacterDash1b20d => '𛈍',
+            Nushu::CharacterDash1b20e => '𛈎',
+            Nushu::CharacterDash1b20f => '𛈏',
+            Nushu::CharacterDash1b210 => '𛈐',
+            Nushu::CharacterDash1b211 => '𛈑',
+            Nushu::CharacterDash1b212 => '𛈒',
+            Nushu::CharacterDash1b213 => '𛈓',
+            Nushu::CharacterDash1b214 => '𛈔',
+            Nushu::CharacterDash1b215 => '𛈕',
+            Nushu::CharacterDash1b216 => '𛈖',
+            Nushu::CharacterDash1b217 => '𛈗',
+            Nushu::CharacterDash1b218 => '𛈘',
+            Nushu::CharacterDash1b219 => '𛈙',
+            Nushu::CharacterDash1b21a => '𛈚',
+            Nushu::CharacterDash1b21b => '𛈛',
+            Nushu::CharacterDash1b21c => '𛈜',
+            Nushu::CharacterDash1b21d => '𛈝',
+            Nushu::CharacterDash1b21e => '𛈞',
+            Nushu::CharacterDash1b21f => '𛈟',
+            Nushu::CharacterDash1b220 => '𛈠',
+            Nushu::CharacterDash1b221 => '𛈡',
+            Nushu::CharacterDash1b222 => '𛈢',
+            Nushu::CharacterDash1b223 => '𛈣',
+            Nushu::CharacterDash1b224 => '𛈤',
+            Nushu::CharacterDash1b225 => '𛈥',
+            Nushu::CharacterDash1b226 => '𛈦',
+            Nushu::CharacterDash1b227 => '𛈧',
+            Nushu::CharacterDash1b228 => '𛈨',
+            Nushu::CharacterDash1b229 => '𛈩',
+            Nushu::CharacterDash1b22a => '𛈪',
+            Nushu::CharacterDash1b22b => '𛈫',
+            Nushu::CharacterDash1b22c => '𛈬',
+            Nushu::CharacterDash1b22d => '𛈭',
+            Nushu::CharacterDash1b22e => '𛈮',
+            Nushu::CharacterDash1b22f => '𛈯',
+            Nushu::CharacterDash1b230 => '𛈰',
+            Nushu::CharacterDash1b231 => '𛈱',
+            Nushu::CharacterDash1b232 => '𛈲',
+            Nushu::CharacterDash1b233 => '𛈳',
+            Nushu::CharacterDash1b234 => '𛈴',
+            Nushu::CharacterDash1b235 => '𛈵',
+            Nushu::CharacterDash1b236 => '𛈶',
+            Nushu::CharacterDash1b237 => '𛈷',
+            Nushu::CharacterDash1b238 => '𛈸',
+            Nushu::CharacterDash1b239 => '𛈹',
+            Nushu::CharacterDash1b23a => '𛈺',
+            Nushu::CharacterDash1b23b => '𛈻',
+            Nushu::CharacterDash1b23c => '𛈼',
+            Nushu::CharacterDash1b23d => '𛈽',
+            Nushu::CharacterDash1b23e => '𛈾',
+            Nushu::CharacterDash1b23f => '𛈿',
+            Nushu::CharacterDash1b240 => '𛉀',
+            Nushu::CharacterDash1b241 => '𛉁',
+            Nushu::CharacterDash1b242 => '𛉂',
+            Nushu::CharacterDash1b243 => '𛉃',
+            Nushu::CharacterDash1b244 => '𛉄',
+            Nushu::CharacterDash1b245 => '𛉅',
+            Nushu::CharacterDash1b246 => '𛉆',
+            Nushu::CharacterDash1b247 => '𛉇',
+            Nushu::CharacterDash1b248 => '𛉈',
+            Nushu::CharacterDash1b249 => '𛉉',
+            Nushu::CharacterDash1b24a => '𛉊',
+            Nushu::CharacterDash1b24b => '𛉋',
+            Nushu::CharacterDash1b24c => '𛉌',
+            Nushu::CharacterDash1b24d => '𛉍',
+            Nushu::CharacterDash1b24e => '𛉎',
+            Nushu::CharacterDash1b24f => '𛉏',
+            Nushu::CharacterDash1b250 => '𛉐',
+            Nushu::CharacterDash1b251 => '𛉑',
+            Nushu::CharacterDash1b252 => '𛉒',
+            Nushu::CharacterDash1b253 => '𛉓',
+            Nushu::CharacterDash1b254 => '𛉔',
+            Nushu::CharacterDash1b255 => '𛉕',
+            Nushu::CharacterDash1b256 => '𛉖',
+            Nushu::CharacterDash1b257 => '𛉗',
+            Nushu::CharacterDash1b258 => '𛉘',
+            Nushu::CharacterDash1b259 => '𛉙',
+            Nushu::CharacterDash1b25a => '𛉚',
+            Nushu::CharacterDash1b25b => '𛉛',
+            Nushu::CharacterDash1b25c => '𛉜',
+            Nushu::CharacterDash1b25d => '𛉝',
+            Nushu::CharacterDash1b25e => '𛉞',
+            Nushu::CharacterDash1b25f => '𛉟',
+            Nushu::CharacterDash1b260 => '𛉠',
+            Nushu::CharacterDash1b261 => '𛉡',
+            Nushu::CharacterDash1b262 => '𛉢',
+            Nushu::CharacterDash1b263 => '𛉣',
+            Nushu::CharacterDash1b264 => '𛉤',
+            Nushu::CharacterDash1b265 => '𛉥',
+            Nushu::CharacterDash1b266 => '𛉦',
+            Nushu::CharacterDash1b267 => '𛉧',
+            Nushu::CharacterDash1b268 => '𛉨',
+            Nushu::CharacterDash1b269 => '𛉩',
+            Nushu::CharacterDash1b26a => '𛉪',
+            Nushu::CharacterDash1b26b => '𛉫',
+            Nushu::CharacterDash1b26c => '𛉬',
+            Nushu::CharacterDash1b26d => '𛉭',
+            Nushu::CharacterDash1b26e => '𛉮',
+            Nushu::CharacterDash1b26f => '𛉯',
+            Nushu::CharacterDash1b270 => '𛉰',
+            Nushu::CharacterDash1b271 => '𛉱',
+            Nushu::CharacterDash1b272 => '𛉲',
+            Nushu::CharacterDash1b273 => '𛉳',
+            Nushu::CharacterDash1b274 => '𛉴',
+            Nushu::CharacterDash1b275 => '𛉵',
+            Nushu::CharacterDash1b276 => '𛉶',
+            Nushu::CharacterDash1b277 => '𛉷',
+            Nushu::CharacterDash1b278 => '𛉸',
+            Nushu::CharacterDash1b279 => '𛉹',
+            Nushu::CharacterDash1b27a => '𛉺',
+            Nushu::CharacterDash1b27b => '𛉻',
+            Nushu::CharacterDash1b27c => '𛉼',
+            Nushu::CharacterDash1b27d => '𛉽',
+            Nushu::CharacterDash1b27e => '𛉾',
+            Nushu::CharacterDash1b27f => '𛉿',
+            Nushu::CharacterDash1b280 => '𛊀',
+            Nushu::CharacterDash1b281 => '𛊁',
+            Nushu::CharacterDash1b282 => '𛊂',
+            Nushu::CharacterDash1b283 => '𛊃',
+            Nushu::CharacterDash1b284 => '𛊄',
+            Nushu::CharacterDash1b285 => '𛊅',
+            Nushu::CharacterDash1b286 => '𛊆',
+            Nushu::CharacterDash1b287 => '𛊇',
+            Nushu::CharacterDash1b288 => '𛊈',
+            Nushu::CharacterDash1b289 => '𛊉',
+            Nushu::CharacterDash1b28a => '𛊊',
+            Nushu::CharacterDash1b28b => '𛊋',
+            Nushu::CharacterDash1b28c => '𛊌',
+            Nushu::CharacterDash1b28d => '𛊍',
+            Nushu::CharacterDash1b28e => '𛊎',
+            Nushu::CharacterDash1b28f => '𛊏',
+            Nushu::CharacterDash1b290 => '𛊐',
+            Nushu::CharacterDash1b291 => '𛊑',
+            Nushu::CharacterDash1b292 => '𛊒',
+            Nushu::CharacterDash1b293 => '𛊓',
+            Nushu::CharacterDash1b294 => '𛊔',
+            Nushu::CharacterDash1b295 => '𛊕',
+            Nushu::CharacterDash1b296 => '𛊖',
+            Nushu::CharacterDash1b297 => '𛊗',
+            Nushu::CharacterDash1b298 => '𛊘',
+            Nushu::CharacterDash1b299 => '𛊙',
+            Nushu::CharacterDash1b29a => '𛊚',
+            Nushu::CharacterDash1b29b => '𛊛',
+            Nushu::CharacterDash1b29c => '𛊜',
+            Nushu::CharacterDash1b29d => '𛊝',
+            Nushu::CharacterDash1b29e => '𛊞',
+            Nushu::CharacterDash1b29f => '𛊟',
+            Nushu::CharacterDash1b2a0 => '𛊠',
+            Nushu::CharacterDash1b2a1 => '𛊡',
+            Nushu::CharacterDash1b2a2 => '𛊢',
+            Nushu::CharacterDash1b2a3 => '𛊣',
+            Nushu::CharacterDash1b2a4 => '𛊤',
+            Nushu::CharacterDash1b2a5 => '𛊥',
+            Nushu::CharacterDash1b2a6 => '𛊦',
+            Nushu::CharacterDash1b2a7 => '𛊧',
+            Nushu::CharacterDash1b2a8 => '𛊨',
+            Nushu::CharacterDash1b2a9 => '𛊩',
+            Nushu::CharacterDash1b2aa => '𛊪',
+            Nushu::CharacterDash1b2ab => '𛊫',
+            Nushu::CharacterDash1b2ac => '𛊬',
+            Nushu::CharacterDash1b2ad => '𛊭',
+            Nushu::CharacterDash1b2ae => '𛊮',
+            Nushu::CharacterDash1b2af => '𛊯',
+            Nushu::CharacterDash1b2b0 => '𛊰',
+            Nushu::CharacterDash1b2b1 => '𛊱',
+            Nushu::CharacterDash1b2b2 => '𛊲',
+            Nushu::CharacterDash1b2b3 => '𛊳',
+            Nushu::CharacterDash1b2b4 => '𛊴',
+            Nushu::CharacterDash1b2b5 => '𛊵',
+            Nushu::CharacterDash1b2b6 => '𛊶',
+            Nushu::CharacterDash1b2b7 => '𛊷',
+            Nushu::CharacterDash1b2b8 => '𛊸',
+            Nushu::CharacterDash1b2b9 => '𛊹',
+            Nushu::CharacterDash1b2ba => '𛊺',
+            Nushu::CharacterDash1b2bb => '𛊻',
+            Nushu::CharacterDash1b2bc => '𛊼',
+            Nushu::CharacterDash1b2bd => '𛊽',
+            Nushu::CharacterDash1b2be => '𛊾',
+            Nushu::CharacterDash1b2bf => '𛊿',
+            Nushu::CharacterDash1b2c0 => '𛋀',
+            Nushu::CharacterDash1b2c1 => '𛋁',
+            Nushu::CharacterDash1b2c2 => '𛋂',
+            Nushu::CharacterDash1b2c3 => '𛋃',
+            Nushu::CharacterDash1b2c4 => '𛋄',
+            Nushu::CharacterDash1b2c5 => '𛋅',
+            Nushu::CharacterDash1b2c6 => '𛋆',
+            Nushu::CharacterDash1b2c7 => '𛋇',
+            Nushu::CharacterDash1b2c8 => '𛋈',
+            Nushu::CharacterDash1b2c9 => '𛋉',
+            Nushu::CharacterDash1b2ca => '𛋊',
+            Nushu::CharacterDash1b2cb => '𛋋',
+            Nushu::CharacterDash1b2cc => '𛋌',
+            Nushu::CharacterDash1b2cd => '𛋍',
+            Nushu::CharacterDash1b2ce => '𛋎',
+            Nushu::CharacterDash1b2cf => '𛋏',
+            Nushu::CharacterDash1b2d0 => '𛋐',
+            Nushu::CharacterDash1b2d1 => '𛋑',
+            Nushu::CharacterDash1b2d2 => '𛋒',
+            Nushu::CharacterDash1b2d3 => '𛋓',
+            Nushu::CharacterDash1b2d4 => '𛋔',
+            Nushu::CharacterDash1b2d5 => '𛋕',
+            Nushu::CharacterDash1b2d6 => '𛋖',
+            Nushu::CharacterDash1b2d7 => '𛋗',
+            Nushu::CharacterDash1b2d8 => '𛋘',
+            Nushu::CharacterDash1b2d9 => '𛋙',
+            Nushu::CharacterDash1b2da => '𛋚',
+            Nushu::CharacterDash1b2db => '𛋛',
+            Nushu::CharacterDash1b2dc => '𛋜',
+            Nushu::CharacterDash1b2dd => '𛋝',
+            Nushu::CharacterDash1b2de => '𛋞',
+            Nushu::CharacterDash1b2df => '𛋟',
+            Nushu::CharacterDash1b2e0 => '𛋠',
+            Nushu::CharacterDash1b2e1 => '𛋡',
+            Nushu::CharacterDash1b2e2 => '𛋢',
+            Nushu::CharacterDash1b2e3 => '𛋣',
+            Nushu::CharacterDash1b2e4 => '𛋤',
+            Nushu::CharacterDash1b2e5 => '𛋥',
+            Nushu::CharacterDash1b2e6 => '𛋦',
+            Nushu::CharacterDash1b2e7 => '𛋧',
+            Nushu::CharacterDash1b2e8 => '𛋨',
+            Nushu::CharacterDash1b2e9 => '𛋩',
+            Nushu::CharacterDash1b2ea => '𛋪',
+            Nushu::CharacterDash1b2eb => '𛋫',
+            Nushu::CharacterDash1b2ec => '𛋬',
+            Nushu::CharacterDash1b2ed => '𛋭',
+            Nushu::CharacterDash1b2ee => '𛋮',
+            Nushu::CharacterDash1b2ef => '𛋯',
+            Nushu::CharacterDash1b2f0 => '𛋰',
+            Nushu::CharacterDash1b2f1 => '𛋱',
+            Nushu::CharacterDash1b2f2 => '𛋲',
+            Nushu::CharacterDash1b2f3 => '𛋳',
+            Nushu::CharacterDash1b2f4 => '𛋴',
+            Nushu::CharacterDash1b2f5 => '𛋵',
+            Nushu::CharacterDash1b2f6 => '𛋶',
+            Nushu::CharacterDash1b2f7 => '𛋷',
+            Nushu::CharacterDash1b2f8 => '𛋸',
+            Nushu::CharacterDash1b2f9 => '𛋹',
+            Nushu::CharacterDash1b2fa => '𛋺',
+            Nushu::CharacterDash1b2fb => '𛋻',
         }
     }
 }
@@ -1998,404 +1202,403 @@ impl Into<char> for Nushu {
 impl std::convert::TryFrom<char> for Nushu {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CHARACTER_DASH_1B170 => Ok(Nushu::CharacterDash1b170),
-            CHARACTER_DASH_1B171 => Ok(Nushu::CharacterDash1b171),
-            CHARACTER_DASH_1B172 => Ok(Nushu::CharacterDash1b172),
-            CHARACTER_DASH_1B173 => Ok(Nushu::CharacterDash1b173),
-            CHARACTER_DASH_1B174 => Ok(Nushu::CharacterDash1b174),
-            CHARACTER_DASH_1B175 => Ok(Nushu::CharacterDash1b175),
-            CHARACTER_DASH_1B176 => Ok(Nushu::CharacterDash1b176),
-            CHARACTER_DASH_1B177 => Ok(Nushu::CharacterDash1b177),
-            CHARACTER_DASH_1B178 => Ok(Nushu::CharacterDash1b178),
-            CHARACTER_DASH_1B179 => Ok(Nushu::CharacterDash1b179),
-            CHARACTER_DASH_1B17A => Ok(Nushu::CharacterDash1b17a),
-            CHARACTER_DASH_1B17B => Ok(Nushu::CharacterDash1b17b),
-            CHARACTER_DASH_1B17C => Ok(Nushu::CharacterDash1b17c),
-            CHARACTER_DASH_1B17D => Ok(Nushu::CharacterDash1b17d),
-            CHARACTER_DASH_1B17E => Ok(Nushu::CharacterDash1b17e),
-            CHARACTER_DASH_1B17F => Ok(Nushu::CharacterDash1b17f),
-            CHARACTER_DASH_1B180 => Ok(Nushu::CharacterDash1b180),
-            CHARACTER_DASH_1B181 => Ok(Nushu::CharacterDash1b181),
-            CHARACTER_DASH_1B182 => Ok(Nushu::CharacterDash1b182),
-            CHARACTER_DASH_1B183 => Ok(Nushu::CharacterDash1b183),
-            CHARACTER_DASH_1B184 => Ok(Nushu::CharacterDash1b184),
-            CHARACTER_DASH_1B185 => Ok(Nushu::CharacterDash1b185),
-            CHARACTER_DASH_1B186 => Ok(Nushu::CharacterDash1b186),
-            CHARACTER_DASH_1B187 => Ok(Nushu::CharacterDash1b187),
-            CHARACTER_DASH_1B188 => Ok(Nushu::CharacterDash1b188),
-            CHARACTER_DASH_1B189 => Ok(Nushu::CharacterDash1b189),
-            CHARACTER_DASH_1B18A => Ok(Nushu::CharacterDash1b18a),
-            CHARACTER_DASH_1B18B => Ok(Nushu::CharacterDash1b18b),
-            CHARACTER_DASH_1B18C => Ok(Nushu::CharacterDash1b18c),
-            CHARACTER_DASH_1B18D => Ok(Nushu::CharacterDash1b18d),
-            CHARACTER_DASH_1B18E => Ok(Nushu::CharacterDash1b18e),
-            CHARACTER_DASH_1B18F => Ok(Nushu::CharacterDash1b18f),
-            CHARACTER_DASH_1B190 => Ok(Nushu::CharacterDash1b190),
-            CHARACTER_DASH_1B191 => Ok(Nushu::CharacterDash1b191),
-            CHARACTER_DASH_1B192 => Ok(Nushu::CharacterDash1b192),
-            CHARACTER_DASH_1B193 => Ok(Nushu::CharacterDash1b193),
-            CHARACTER_DASH_1B194 => Ok(Nushu::CharacterDash1b194),
-            CHARACTER_DASH_1B195 => Ok(Nushu::CharacterDash1b195),
-            CHARACTER_DASH_1B196 => Ok(Nushu::CharacterDash1b196),
-            CHARACTER_DASH_1B197 => Ok(Nushu::CharacterDash1b197),
-            CHARACTER_DASH_1B198 => Ok(Nushu::CharacterDash1b198),
-            CHARACTER_DASH_1B199 => Ok(Nushu::CharacterDash1b199),
-            CHARACTER_DASH_1B19A => Ok(Nushu::CharacterDash1b19a),
-            CHARACTER_DASH_1B19B => Ok(Nushu::CharacterDash1b19b),
-            CHARACTER_DASH_1B19C => Ok(Nushu::CharacterDash1b19c),
-            CHARACTER_DASH_1B19D => Ok(Nushu::CharacterDash1b19d),
-            CHARACTER_DASH_1B19E => Ok(Nushu::CharacterDash1b19e),
-            CHARACTER_DASH_1B19F => Ok(Nushu::CharacterDash1b19f),
-            CHARACTER_DASH_1B1A0 => Ok(Nushu::CharacterDash1b1a0),
-            CHARACTER_DASH_1B1A1 => Ok(Nushu::CharacterDash1b1a1),
-            CHARACTER_DASH_1B1A2 => Ok(Nushu::CharacterDash1b1a2),
-            CHARACTER_DASH_1B1A3 => Ok(Nushu::CharacterDash1b1a3),
-            CHARACTER_DASH_1B1A4 => Ok(Nushu::CharacterDash1b1a4),
-            CHARACTER_DASH_1B1A5 => Ok(Nushu::CharacterDash1b1a5),
-            CHARACTER_DASH_1B1A6 => Ok(Nushu::CharacterDash1b1a6),
-            CHARACTER_DASH_1B1A7 => Ok(Nushu::CharacterDash1b1a7),
-            CHARACTER_DASH_1B1A8 => Ok(Nushu::CharacterDash1b1a8),
-            CHARACTER_DASH_1B1A9 => Ok(Nushu::CharacterDash1b1a9),
-            CHARACTER_DASH_1B1AA => Ok(Nushu::CharacterDash1b1aa),
-            CHARACTER_DASH_1B1AB => Ok(Nushu::CharacterDash1b1ab),
-            CHARACTER_DASH_1B1AC => Ok(Nushu::CharacterDash1b1ac),
-            CHARACTER_DASH_1B1AD => Ok(Nushu::CharacterDash1b1ad),
-            CHARACTER_DASH_1B1AE => Ok(Nushu::CharacterDash1b1ae),
-            CHARACTER_DASH_1B1AF => Ok(Nushu::CharacterDash1b1af),
-            CHARACTER_DASH_1B1B0 => Ok(Nushu::CharacterDash1b1b0),
-            CHARACTER_DASH_1B1B1 => Ok(Nushu::CharacterDash1b1b1),
-            CHARACTER_DASH_1B1B2 => Ok(Nushu::CharacterDash1b1b2),
-            CHARACTER_DASH_1B1B3 => Ok(Nushu::CharacterDash1b1b3),
-            CHARACTER_DASH_1B1B4 => Ok(Nushu::CharacterDash1b1b4),
-            CHARACTER_DASH_1B1B5 => Ok(Nushu::CharacterDash1b1b5),
-            CHARACTER_DASH_1B1B6 => Ok(Nushu::CharacterDash1b1b6),
-            CHARACTER_DASH_1B1B7 => Ok(Nushu::CharacterDash1b1b7),
-            CHARACTER_DASH_1B1B8 => Ok(Nushu::CharacterDash1b1b8),
-            CHARACTER_DASH_1B1B9 => Ok(Nushu::CharacterDash1b1b9),
-            CHARACTER_DASH_1B1BA => Ok(Nushu::CharacterDash1b1ba),
-            CHARACTER_DASH_1B1BB => Ok(Nushu::CharacterDash1b1bb),
-            CHARACTER_DASH_1B1BC => Ok(Nushu::CharacterDash1b1bc),
-            CHARACTER_DASH_1B1BD => Ok(Nushu::CharacterDash1b1bd),
-            CHARACTER_DASH_1B1BE => Ok(Nushu::CharacterDash1b1be),
-            CHARACTER_DASH_1B1BF => Ok(Nushu::CharacterDash1b1bf),
-            CHARACTER_DASH_1B1C0 => Ok(Nushu::CharacterDash1b1c0),
-            CHARACTER_DASH_1B1C1 => Ok(Nushu::CharacterDash1b1c1),
-            CHARACTER_DASH_1B1C2 => Ok(Nushu::CharacterDash1b1c2),
-            CHARACTER_DASH_1B1C3 => Ok(Nushu::CharacterDash1b1c3),
-            CHARACTER_DASH_1B1C4 => Ok(Nushu::CharacterDash1b1c4),
-            CHARACTER_DASH_1B1C5 => Ok(Nushu::CharacterDash1b1c5),
-            CHARACTER_DASH_1B1C6 => Ok(Nushu::CharacterDash1b1c6),
-            CHARACTER_DASH_1B1C7 => Ok(Nushu::CharacterDash1b1c7),
-            CHARACTER_DASH_1B1C8 => Ok(Nushu::CharacterDash1b1c8),
-            CHARACTER_DASH_1B1C9 => Ok(Nushu::CharacterDash1b1c9),
-            CHARACTER_DASH_1B1CA => Ok(Nushu::CharacterDash1b1ca),
-            CHARACTER_DASH_1B1CB => Ok(Nushu::CharacterDash1b1cb),
-            CHARACTER_DASH_1B1CC => Ok(Nushu::CharacterDash1b1cc),
-            CHARACTER_DASH_1B1CD => Ok(Nushu::CharacterDash1b1cd),
-            CHARACTER_DASH_1B1CE => Ok(Nushu::CharacterDash1b1ce),
-            CHARACTER_DASH_1B1CF => Ok(Nushu::CharacterDash1b1cf),
-            CHARACTER_DASH_1B1D0 => Ok(Nushu::CharacterDash1b1d0),
-            CHARACTER_DASH_1B1D1 => Ok(Nushu::CharacterDash1b1d1),
-            CHARACTER_DASH_1B1D2 => Ok(Nushu::CharacterDash1b1d2),
-            CHARACTER_DASH_1B1D3 => Ok(Nushu::CharacterDash1b1d3),
-            CHARACTER_DASH_1B1D4 => Ok(Nushu::CharacterDash1b1d4),
-            CHARACTER_DASH_1B1D5 => Ok(Nushu::CharacterDash1b1d5),
-            CHARACTER_DASH_1B1D6 => Ok(Nushu::CharacterDash1b1d6),
-            CHARACTER_DASH_1B1D7 => Ok(Nushu::CharacterDash1b1d7),
-            CHARACTER_DASH_1B1D8 => Ok(Nushu::CharacterDash1b1d8),
-            CHARACTER_DASH_1B1D9 => Ok(Nushu::CharacterDash1b1d9),
-            CHARACTER_DASH_1B1DA => Ok(Nushu::CharacterDash1b1da),
-            CHARACTER_DASH_1B1DB => Ok(Nushu::CharacterDash1b1db),
-            CHARACTER_DASH_1B1DC => Ok(Nushu::CharacterDash1b1dc),
-            CHARACTER_DASH_1B1DD => Ok(Nushu::CharacterDash1b1dd),
-            CHARACTER_DASH_1B1DE => Ok(Nushu::CharacterDash1b1de),
-            CHARACTER_DASH_1B1DF => Ok(Nushu::CharacterDash1b1df),
-            CHARACTER_DASH_1B1E0 => Ok(Nushu::CharacterDash1b1e0),
-            CHARACTER_DASH_1B1E1 => Ok(Nushu::CharacterDash1b1e1),
-            CHARACTER_DASH_1B1E2 => Ok(Nushu::CharacterDash1b1e2),
-            CHARACTER_DASH_1B1E3 => Ok(Nushu::CharacterDash1b1e3),
-            CHARACTER_DASH_1B1E4 => Ok(Nushu::CharacterDash1b1e4),
-            CHARACTER_DASH_1B1E5 => Ok(Nushu::CharacterDash1b1e5),
-            CHARACTER_DASH_1B1E6 => Ok(Nushu::CharacterDash1b1e6),
-            CHARACTER_DASH_1B1E7 => Ok(Nushu::CharacterDash1b1e7),
-            CHARACTER_DASH_1B1E8 => Ok(Nushu::CharacterDash1b1e8),
-            CHARACTER_DASH_1B1E9 => Ok(Nushu::CharacterDash1b1e9),
-            CHARACTER_DASH_1B1EA => Ok(Nushu::CharacterDash1b1ea),
-            CHARACTER_DASH_1B1EB => Ok(Nushu::CharacterDash1b1eb),
-            CHARACTER_DASH_1B1EC => Ok(Nushu::CharacterDash1b1ec),
-            CHARACTER_DASH_1B1ED => Ok(Nushu::CharacterDash1b1ed),
-            CHARACTER_DASH_1B1EE => Ok(Nushu::CharacterDash1b1ee),
-            CHARACTER_DASH_1B1EF => Ok(Nushu::CharacterDash1b1ef),
-            CHARACTER_DASH_1B1F0 => Ok(Nushu::CharacterDash1b1f0),
-            CHARACTER_DASH_1B1F1 => Ok(Nushu::CharacterDash1b1f1),
-            CHARACTER_DASH_1B1F2 => Ok(Nushu::CharacterDash1b1f2),
-            CHARACTER_DASH_1B1F3 => Ok(Nushu::CharacterDash1b1f3),
-            CHARACTER_DASH_1B1F4 => Ok(Nushu::CharacterDash1b1f4),
-            CHARACTER_DASH_1B1F5 => Ok(Nushu::CharacterDash1b1f5),
-            CHARACTER_DASH_1B1F6 => Ok(Nushu::CharacterDash1b1f6),
-            CHARACTER_DASH_1B1F7 => Ok(Nushu::CharacterDash1b1f7),
-            CHARACTER_DASH_1B1F8 => Ok(Nushu::CharacterDash1b1f8),
-            CHARACTER_DASH_1B1F9 => Ok(Nushu::CharacterDash1b1f9),
-            CHARACTER_DASH_1B1FA => Ok(Nushu::CharacterDash1b1fa),
-            CHARACTER_DASH_1B1FB => Ok(Nushu::CharacterDash1b1fb),
-            CHARACTER_DASH_1B1FC => Ok(Nushu::CharacterDash1b1fc),
-            CHARACTER_DASH_1B1FD => Ok(Nushu::CharacterDash1b1fd),
-            CHARACTER_DASH_1B1FE => Ok(Nushu::CharacterDash1b1fe),
-            CHARACTER_DASH_1B1FF => Ok(Nushu::CharacterDash1b1ff),
-            CHARACTER_DASH_1B200 => Ok(Nushu::CharacterDash1b200),
-            CHARACTER_DASH_1B201 => Ok(Nushu::CharacterDash1b201),
-            CHARACTER_DASH_1B202 => Ok(Nushu::CharacterDash1b202),
-            CHARACTER_DASH_1B203 => Ok(Nushu::CharacterDash1b203),
-            CHARACTER_DASH_1B204 => Ok(Nushu::CharacterDash1b204),
-            CHARACTER_DASH_1B205 => Ok(Nushu::CharacterDash1b205),
-            CHARACTER_DASH_1B206 => Ok(Nushu::CharacterDash1b206),
-            CHARACTER_DASH_1B207 => Ok(Nushu::CharacterDash1b207),
-            CHARACTER_DASH_1B208 => Ok(Nushu::CharacterDash1b208),
-            CHARACTER_DASH_1B209 => Ok(Nushu::CharacterDash1b209),
-            CHARACTER_DASH_1B20A => Ok(Nushu::CharacterDash1b20a),
-            CHARACTER_DASH_1B20B => Ok(Nushu::CharacterDash1b20b),
-            CHARACTER_DASH_1B20C => Ok(Nushu::CharacterDash1b20c),
-            CHARACTER_DASH_1B20D => Ok(Nushu::CharacterDash1b20d),
-            CHARACTER_DASH_1B20E => Ok(Nushu::CharacterDash1b20e),
-            CHARACTER_DASH_1B20F => Ok(Nushu::CharacterDash1b20f),
-            CHARACTER_DASH_1B210 => Ok(Nushu::CharacterDash1b210),
-            CHARACTER_DASH_1B211 => Ok(Nushu::CharacterDash1b211),
-            CHARACTER_DASH_1B212 => Ok(Nushu::CharacterDash1b212),
-            CHARACTER_DASH_1B213 => Ok(Nushu::CharacterDash1b213),
-            CHARACTER_DASH_1B214 => Ok(Nushu::CharacterDash1b214),
-            CHARACTER_DASH_1B215 => Ok(Nushu::CharacterDash1b215),
-            CHARACTER_DASH_1B216 => Ok(Nushu::CharacterDash1b216),
-            CHARACTER_DASH_1B217 => Ok(Nushu::CharacterDash1b217),
-            CHARACTER_DASH_1B218 => Ok(Nushu::CharacterDash1b218),
-            CHARACTER_DASH_1B219 => Ok(Nushu::CharacterDash1b219),
-            CHARACTER_DASH_1B21A => Ok(Nushu::CharacterDash1b21a),
-            CHARACTER_DASH_1B21B => Ok(Nushu::CharacterDash1b21b),
-            CHARACTER_DASH_1B21C => Ok(Nushu::CharacterDash1b21c),
-            CHARACTER_DASH_1B21D => Ok(Nushu::CharacterDash1b21d),
-            CHARACTER_DASH_1B21E => Ok(Nushu::CharacterDash1b21e),
-            CHARACTER_DASH_1B21F => Ok(Nushu::CharacterDash1b21f),
-            CHARACTER_DASH_1B220 => Ok(Nushu::CharacterDash1b220),
-            CHARACTER_DASH_1B221 => Ok(Nushu::CharacterDash1b221),
-            CHARACTER_DASH_1B222 => Ok(Nushu::CharacterDash1b222),
-            CHARACTER_DASH_1B223 => Ok(Nushu::CharacterDash1b223),
-            CHARACTER_DASH_1B224 => Ok(Nushu::CharacterDash1b224),
-            CHARACTER_DASH_1B225 => Ok(Nushu::CharacterDash1b225),
-            CHARACTER_DASH_1B226 => Ok(Nushu::CharacterDash1b226),
-            CHARACTER_DASH_1B227 => Ok(Nushu::CharacterDash1b227),
-            CHARACTER_DASH_1B228 => Ok(Nushu::CharacterDash1b228),
-            CHARACTER_DASH_1B229 => Ok(Nushu::CharacterDash1b229),
-            CHARACTER_DASH_1B22A => Ok(Nushu::CharacterDash1b22a),
-            CHARACTER_DASH_1B22B => Ok(Nushu::CharacterDash1b22b),
-            CHARACTER_DASH_1B22C => Ok(Nushu::CharacterDash1b22c),
-            CHARACTER_DASH_1B22D => Ok(Nushu::CharacterDash1b22d),
-            CHARACTER_DASH_1B22E => Ok(Nushu::CharacterDash1b22e),
-            CHARACTER_DASH_1B22F => Ok(Nushu::CharacterDash1b22f),
-            CHARACTER_DASH_1B230 => Ok(Nushu::CharacterDash1b230),
-            CHARACTER_DASH_1B231 => Ok(Nushu::CharacterDash1b231),
-            CHARACTER_DASH_1B232 => Ok(Nushu::CharacterDash1b232),
-            CHARACTER_DASH_1B233 => Ok(Nushu::CharacterDash1b233),
-            CHARACTER_DASH_1B234 => Ok(Nushu::CharacterDash1b234),
-            CHARACTER_DASH_1B235 => Ok(Nushu::CharacterDash1b235),
-            CHARACTER_DASH_1B236 => Ok(Nushu::CharacterDash1b236),
-            CHARACTER_DASH_1B237 => Ok(Nushu::CharacterDash1b237),
-            CHARACTER_DASH_1B238 => Ok(Nushu::CharacterDash1b238),
-            CHARACTER_DASH_1B239 => Ok(Nushu::CharacterDash1b239),
-            CHARACTER_DASH_1B23A => Ok(Nushu::CharacterDash1b23a),
-            CHARACTER_DASH_1B23B => Ok(Nushu::CharacterDash1b23b),
-            CHARACTER_DASH_1B23C => Ok(Nushu::CharacterDash1b23c),
-            CHARACTER_DASH_1B23D => Ok(Nushu::CharacterDash1b23d),
-            CHARACTER_DASH_1B23E => Ok(Nushu::CharacterDash1b23e),
-            CHARACTER_DASH_1B23F => Ok(Nushu::CharacterDash1b23f),
-            CHARACTER_DASH_1B240 => Ok(Nushu::CharacterDash1b240),
-            CHARACTER_DASH_1B241 => Ok(Nushu::CharacterDash1b241),
-            CHARACTER_DASH_1B242 => Ok(Nushu::CharacterDash1b242),
-            CHARACTER_DASH_1B243 => Ok(Nushu::CharacterDash1b243),
-            CHARACTER_DASH_1B244 => Ok(Nushu::CharacterDash1b244),
-            CHARACTER_DASH_1B245 => Ok(Nushu::CharacterDash1b245),
-            CHARACTER_DASH_1B246 => Ok(Nushu::CharacterDash1b246),
-            CHARACTER_DASH_1B247 => Ok(Nushu::CharacterDash1b247),
-            CHARACTER_DASH_1B248 => Ok(Nushu::CharacterDash1b248),
-            CHARACTER_DASH_1B249 => Ok(Nushu::CharacterDash1b249),
-            CHARACTER_DASH_1B24A => Ok(Nushu::CharacterDash1b24a),
-            CHARACTER_DASH_1B24B => Ok(Nushu::CharacterDash1b24b),
-            CHARACTER_DASH_1B24C => Ok(Nushu::CharacterDash1b24c),
-            CHARACTER_DASH_1B24D => Ok(Nushu::CharacterDash1b24d),
-            CHARACTER_DASH_1B24E => Ok(Nushu::CharacterDash1b24e),
-            CHARACTER_DASH_1B24F => Ok(Nushu::CharacterDash1b24f),
-            CHARACTER_DASH_1B250 => Ok(Nushu::CharacterDash1b250),
-            CHARACTER_DASH_1B251 => Ok(Nushu::CharacterDash1b251),
-            CHARACTER_DASH_1B252 => Ok(Nushu::CharacterDash1b252),
-            CHARACTER_DASH_1B253 => Ok(Nushu::CharacterDash1b253),
-            CHARACTER_DASH_1B254 => Ok(Nushu::CharacterDash1b254),
-            CHARACTER_DASH_1B255 => Ok(Nushu::CharacterDash1b255),
-            CHARACTER_DASH_1B256 => Ok(Nushu::CharacterDash1b256),
-            CHARACTER_DASH_1B257 => Ok(Nushu::CharacterDash1b257),
-            CHARACTER_DASH_1B258 => Ok(Nushu::CharacterDash1b258),
-            CHARACTER_DASH_1B259 => Ok(Nushu::CharacterDash1b259),
-            CHARACTER_DASH_1B25A => Ok(Nushu::CharacterDash1b25a),
-            CHARACTER_DASH_1B25B => Ok(Nushu::CharacterDash1b25b),
-            CHARACTER_DASH_1B25C => Ok(Nushu::CharacterDash1b25c),
-            CHARACTER_DASH_1B25D => Ok(Nushu::CharacterDash1b25d),
-            CHARACTER_DASH_1B25E => Ok(Nushu::CharacterDash1b25e),
-            CHARACTER_DASH_1B25F => Ok(Nushu::CharacterDash1b25f),
-            CHARACTER_DASH_1B260 => Ok(Nushu::CharacterDash1b260),
-            CHARACTER_DASH_1B261 => Ok(Nushu::CharacterDash1b261),
-            CHARACTER_DASH_1B262 => Ok(Nushu::CharacterDash1b262),
-            CHARACTER_DASH_1B263 => Ok(Nushu::CharacterDash1b263),
-            CHARACTER_DASH_1B264 => Ok(Nushu::CharacterDash1b264),
-            CHARACTER_DASH_1B265 => Ok(Nushu::CharacterDash1b265),
-            CHARACTER_DASH_1B266 => Ok(Nushu::CharacterDash1b266),
-            CHARACTER_DASH_1B267 => Ok(Nushu::CharacterDash1b267),
-            CHARACTER_DASH_1B268 => Ok(Nushu::CharacterDash1b268),
-            CHARACTER_DASH_1B269 => Ok(Nushu::CharacterDash1b269),
-            CHARACTER_DASH_1B26A => Ok(Nushu::CharacterDash1b26a),
-            CHARACTER_DASH_1B26B => Ok(Nushu::CharacterDash1b26b),
-            CHARACTER_DASH_1B26C => Ok(Nushu::CharacterDash1b26c),
-            CHARACTER_DASH_1B26D => Ok(Nushu::CharacterDash1b26d),
-            CHARACTER_DASH_1B26E => Ok(Nushu::CharacterDash1b26e),
-            CHARACTER_DASH_1B26F => Ok(Nushu::CharacterDash1b26f),
-            CHARACTER_DASH_1B270 => Ok(Nushu::CharacterDash1b270),
-            CHARACTER_DASH_1B271 => Ok(Nushu::CharacterDash1b271),
-            CHARACTER_DASH_1B272 => Ok(Nushu::CharacterDash1b272),
-            CHARACTER_DASH_1B273 => Ok(Nushu::CharacterDash1b273),
-            CHARACTER_DASH_1B274 => Ok(Nushu::CharacterDash1b274),
-            CHARACTER_DASH_1B275 => Ok(Nushu::CharacterDash1b275),
-            CHARACTER_DASH_1B276 => Ok(Nushu::CharacterDash1b276),
-            CHARACTER_DASH_1B277 => Ok(Nushu::CharacterDash1b277),
-            CHARACTER_DASH_1B278 => Ok(Nushu::CharacterDash1b278),
-            CHARACTER_DASH_1B279 => Ok(Nushu::CharacterDash1b279),
-            CHARACTER_DASH_1B27A => Ok(Nushu::CharacterDash1b27a),
-            CHARACTER_DASH_1B27B => Ok(Nushu::CharacterDash1b27b),
-            CHARACTER_DASH_1B27C => Ok(Nushu::CharacterDash1b27c),
-            CHARACTER_DASH_1B27D => Ok(Nushu::CharacterDash1b27d),
-            CHARACTER_DASH_1B27E => Ok(Nushu::CharacterDash1b27e),
-            CHARACTER_DASH_1B27F => Ok(Nushu::CharacterDash1b27f),
-            CHARACTER_DASH_1B280 => Ok(Nushu::CharacterDash1b280),
-            CHARACTER_DASH_1B281 => Ok(Nushu::CharacterDash1b281),
-            CHARACTER_DASH_1B282 => Ok(Nushu::CharacterDash1b282),
-            CHARACTER_DASH_1B283 => Ok(Nushu::CharacterDash1b283),
-            CHARACTER_DASH_1B284 => Ok(Nushu::CharacterDash1b284),
-            CHARACTER_DASH_1B285 => Ok(Nushu::CharacterDash1b285),
-            CHARACTER_DASH_1B286 => Ok(Nushu::CharacterDash1b286),
-            CHARACTER_DASH_1B287 => Ok(Nushu::CharacterDash1b287),
-            CHARACTER_DASH_1B288 => Ok(Nushu::CharacterDash1b288),
-            CHARACTER_DASH_1B289 => Ok(Nushu::CharacterDash1b289),
-            CHARACTER_DASH_1B28A => Ok(Nushu::CharacterDash1b28a),
-            CHARACTER_DASH_1B28B => Ok(Nushu::CharacterDash1b28b),
-            CHARACTER_DASH_1B28C => Ok(Nushu::CharacterDash1b28c),
-            CHARACTER_DASH_1B28D => Ok(Nushu::CharacterDash1b28d),
-            CHARACTER_DASH_1B28E => Ok(Nushu::CharacterDash1b28e),
-            CHARACTER_DASH_1B28F => Ok(Nushu::CharacterDash1b28f),
-            CHARACTER_DASH_1B290 => Ok(Nushu::CharacterDash1b290),
-            CHARACTER_DASH_1B291 => Ok(Nushu::CharacterDash1b291),
-            CHARACTER_DASH_1B292 => Ok(Nushu::CharacterDash1b292),
-            CHARACTER_DASH_1B293 => Ok(Nushu::CharacterDash1b293),
-            CHARACTER_DASH_1B294 => Ok(Nushu::CharacterDash1b294),
-            CHARACTER_DASH_1B295 => Ok(Nushu::CharacterDash1b295),
-            CHARACTER_DASH_1B296 => Ok(Nushu::CharacterDash1b296),
-            CHARACTER_DASH_1B297 => Ok(Nushu::CharacterDash1b297),
-            CHARACTER_DASH_1B298 => Ok(Nushu::CharacterDash1b298),
-            CHARACTER_DASH_1B299 => Ok(Nushu::CharacterDash1b299),
-            CHARACTER_DASH_1B29A => Ok(Nushu::CharacterDash1b29a),
-            CHARACTER_DASH_1B29B => Ok(Nushu::CharacterDash1b29b),
-            CHARACTER_DASH_1B29C => Ok(Nushu::CharacterDash1b29c),
-            CHARACTER_DASH_1B29D => Ok(Nushu::CharacterDash1b29d),
-            CHARACTER_DASH_1B29E => Ok(Nushu::CharacterDash1b29e),
-            CHARACTER_DASH_1B29F => Ok(Nushu::CharacterDash1b29f),
-            CHARACTER_DASH_1B2A0 => Ok(Nushu::CharacterDash1b2a0),
-            CHARACTER_DASH_1B2A1 => Ok(Nushu::CharacterDash1b2a1),
-            CHARACTER_DASH_1B2A2 => Ok(Nushu::CharacterDash1b2a2),
-            CHARACTER_DASH_1B2A3 => Ok(Nushu::CharacterDash1b2a3),
-            CHARACTER_DASH_1B2A4 => Ok(Nushu::CharacterDash1b2a4),
-            CHARACTER_DASH_1B2A5 => Ok(Nushu::CharacterDash1b2a5),
-            CHARACTER_DASH_1B2A6 => Ok(Nushu::CharacterDash1b2a6),
-            CHARACTER_DASH_1B2A7 => Ok(Nushu::CharacterDash1b2a7),
-            CHARACTER_DASH_1B2A8 => Ok(Nushu::CharacterDash1b2a8),
-            CHARACTER_DASH_1B2A9 => Ok(Nushu::CharacterDash1b2a9),
-            CHARACTER_DASH_1B2AA => Ok(Nushu::CharacterDash1b2aa),
-            CHARACTER_DASH_1B2AB => Ok(Nushu::CharacterDash1b2ab),
-            CHARACTER_DASH_1B2AC => Ok(Nushu::CharacterDash1b2ac),
-            CHARACTER_DASH_1B2AD => Ok(Nushu::CharacterDash1b2ad),
-            CHARACTER_DASH_1B2AE => Ok(Nushu::CharacterDash1b2ae),
-            CHARACTER_DASH_1B2AF => Ok(Nushu::CharacterDash1b2af),
-            CHARACTER_DASH_1B2B0 => Ok(Nushu::CharacterDash1b2b0),
-            CHARACTER_DASH_1B2B1 => Ok(Nushu::CharacterDash1b2b1),
-            CHARACTER_DASH_1B2B2 => Ok(Nushu::CharacterDash1b2b2),
-            CHARACTER_DASH_1B2B3 => Ok(Nushu::CharacterDash1b2b3),
-            CHARACTER_DASH_1B2B4 => Ok(Nushu::CharacterDash1b2b4),
-            CHARACTER_DASH_1B2B5 => Ok(Nushu::CharacterDash1b2b5),
-            CHARACTER_DASH_1B2B6 => Ok(Nushu::CharacterDash1b2b6),
-            CHARACTER_DASH_1B2B7 => Ok(Nushu::CharacterDash1b2b7),
-            CHARACTER_DASH_1B2B8 => Ok(Nushu::CharacterDash1b2b8),
-            CHARACTER_DASH_1B2B9 => Ok(Nushu::CharacterDash1b2b9),
-            CHARACTER_DASH_1B2BA => Ok(Nushu::CharacterDash1b2ba),
-            CHARACTER_DASH_1B2BB => Ok(Nushu::CharacterDash1b2bb),
-            CHARACTER_DASH_1B2BC => Ok(Nushu::CharacterDash1b2bc),
-            CHARACTER_DASH_1B2BD => Ok(Nushu::CharacterDash1b2bd),
-            CHARACTER_DASH_1B2BE => Ok(Nushu::CharacterDash1b2be),
-            CHARACTER_DASH_1B2BF => Ok(Nushu::CharacterDash1b2bf),
-            CHARACTER_DASH_1B2C0 => Ok(Nushu::CharacterDash1b2c0),
-            CHARACTER_DASH_1B2C1 => Ok(Nushu::CharacterDash1b2c1),
-            CHARACTER_DASH_1B2C2 => Ok(Nushu::CharacterDash1b2c2),
-            CHARACTER_DASH_1B2C3 => Ok(Nushu::CharacterDash1b2c3),
-            CHARACTER_DASH_1B2C4 => Ok(Nushu::CharacterDash1b2c4),
-            CHARACTER_DASH_1B2C5 => Ok(Nushu::CharacterDash1b2c5),
-            CHARACTER_DASH_1B2C6 => Ok(Nushu::CharacterDash1b2c6),
-            CHARACTER_DASH_1B2C7 => Ok(Nushu::CharacterDash1b2c7),
-            CHARACTER_DASH_1B2C8 => Ok(Nushu::CharacterDash1b2c8),
-            CHARACTER_DASH_1B2C9 => Ok(Nushu::CharacterDash1b2c9),
-            CHARACTER_DASH_1B2CA => Ok(Nushu::CharacterDash1b2ca),
-            CHARACTER_DASH_1B2CB => Ok(Nushu::CharacterDash1b2cb),
-            CHARACTER_DASH_1B2CC => Ok(Nushu::CharacterDash1b2cc),
-            CHARACTER_DASH_1B2CD => Ok(Nushu::CharacterDash1b2cd),
-            CHARACTER_DASH_1B2CE => Ok(Nushu::CharacterDash1b2ce),
-            CHARACTER_DASH_1B2CF => Ok(Nushu::CharacterDash1b2cf),
-            CHARACTER_DASH_1B2D0 => Ok(Nushu::CharacterDash1b2d0),
-            CHARACTER_DASH_1B2D1 => Ok(Nushu::CharacterDash1b2d1),
-            CHARACTER_DASH_1B2D2 => Ok(Nushu::CharacterDash1b2d2),
-            CHARACTER_DASH_1B2D3 => Ok(Nushu::CharacterDash1b2d3),
-            CHARACTER_DASH_1B2D4 => Ok(Nushu::CharacterDash1b2d4),
-            CHARACTER_DASH_1B2D5 => Ok(Nushu::CharacterDash1b2d5),
-            CHARACTER_DASH_1B2D6 => Ok(Nushu::CharacterDash1b2d6),
-            CHARACTER_DASH_1B2D7 => Ok(Nushu::CharacterDash1b2d7),
-            CHARACTER_DASH_1B2D8 => Ok(Nushu::CharacterDash1b2d8),
-            CHARACTER_DASH_1B2D9 => Ok(Nushu::CharacterDash1b2d9),
-            CHARACTER_DASH_1B2DA => Ok(Nushu::CharacterDash1b2da),
-            CHARACTER_DASH_1B2DB => Ok(Nushu::CharacterDash1b2db),
-            CHARACTER_DASH_1B2DC => Ok(Nushu::CharacterDash1b2dc),
-            CHARACTER_DASH_1B2DD => Ok(Nushu::CharacterDash1b2dd),
-            CHARACTER_DASH_1B2DE => Ok(Nushu::CharacterDash1b2de),
-            CHARACTER_DASH_1B2DF => Ok(Nushu::CharacterDash1b2df),
-            CHARACTER_DASH_1B2E0 => Ok(Nushu::CharacterDash1b2e0),
-            CHARACTER_DASH_1B2E1 => Ok(Nushu::CharacterDash1b2e1),
-            CHARACTER_DASH_1B2E2 => Ok(Nushu::CharacterDash1b2e2),
-            CHARACTER_DASH_1B2E3 => Ok(Nushu::CharacterDash1b2e3),
-            CHARACTER_DASH_1B2E4 => Ok(Nushu::CharacterDash1b2e4),
-            CHARACTER_DASH_1B2E5 => Ok(Nushu::CharacterDash1b2e5),
-            CHARACTER_DASH_1B2E6 => Ok(Nushu::CharacterDash1b2e6),
-            CHARACTER_DASH_1B2E7 => Ok(Nushu::CharacterDash1b2e7),
-            CHARACTER_DASH_1B2E8 => Ok(Nushu::CharacterDash1b2e8),
-            CHARACTER_DASH_1B2E9 => Ok(Nushu::CharacterDash1b2e9),
-            CHARACTER_DASH_1B2EA => Ok(Nushu::CharacterDash1b2ea),
-            CHARACTER_DASH_1B2EB => Ok(Nushu::CharacterDash1b2eb),
-            CHARACTER_DASH_1B2EC => Ok(Nushu::CharacterDash1b2ec),
-            CHARACTER_DASH_1B2ED => Ok(Nushu::CharacterDash1b2ed),
-            CHARACTER_DASH_1B2EE => Ok(Nushu::CharacterDash1b2ee),
-            CHARACTER_DASH_1B2EF => Ok(Nushu::CharacterDash1b2ef),
-            CHARACTER_DASH_1B2F0 => Ok(Nushu::CharacterDash1b2f0),
-            CHARACTER_DASH_1B2F1 => Ok(Nushu::CharacterDash1b2f1),
-            CHARACTER_DASH_1B2F2 => Ok(Nushu::CharacterDash1b2f2),
-            CHARACTER_DASH_1B2F3 => Ok(Nushu::CharacterDash1b2f3),
-            CHARACTER_DASH_1B2F4 => Ok(Nushu::CharacterDash1b2f4),
-            CHARACTER_DASH_1B2F5 => Ok(Nushu::CharacterDash1b2f5),
-            CHARACTER_DASH_1B2F6 => Ok(Nushu::CharacterDash1b2f6),
-            CHARACTER_DASH_1B2F7 => Ok(Nushu::CharacterDash1b2f7),
-            CHARACTER_DASH_1B2F8 => Ok(Nushu::CharacterDash1b2f8),
-            CHARACTER_DASH_1B2F9 => Ok(Nushu::CharacterDash1b2f9),
-            CHARACTER_DASH_1B2FA => Ok(Nushu::CharacterDash1b2fa),
-            CHARACTER_DASH_1B2FB => Ok(Nushu::CharacterDash1b2fb),
+            '𛅰' => Ok(Nushu::CharacterDash1b170),
+            '𛅱' => Ok(Nushu::CharacterDash1b171),
+            '𛅲' => Ok(Nushu::CharacterDash1b172),
+            '𛅳' => Ok(Nushu::CharacterDash1b173),
+            '𛅴' => Ok(Nushu::CharacterDash1b174),
+            '𛅵' => Ok(Nushu::CharacterDash1b175),
+            '𛅶' => Ok(Nushu::CharacterDash1b176),
+            '𛅷' => Ok(Nushu::CharacterDash1b177),
+            '𛅸' => Ok(Nushu::CharacterDash1b178),
+            '𛅹' => Ok(Nushu::CharacterDash1b179),
+            '𛅺' => Ok(Nushu::CharacterDash1b17a),
+            '𛅻' => Ok(Nushu::CharacterDash1b17b),
+            '𛅼' => Ok(Nushu::CharacterDash1b17c),
+            '𛅽' => Ok(Nushu::CharacterDash1b17d),
+            '𛅾' => Ok(Nushu::CharacterDash1b17e),
+            '𛅿' => Ok(Nushu::CharacterDash1b17f),
+            '𛆀' => Ok(Nushu::CharacterDash1b180),
+            '𛆁' => Ok(Nushu::CharacterDash1b181),
+            '𛆂' => Ok(Nushu::CharacterDash1b182),
+            '𛆃' => Ok(Nushu::CharacterDash1b183),
+            '𛆄' => Ok(Nushu::CharacterDash1b184),
+            '𛆅' => Ok(Nushu::CharacterDash1b185),
+            '𛆆' => Ok(Nushu::CharacterDash1b186),
+            '𛆇' => Ok(Nushu::CharacterDash1b187),
+            '𛆈' => Ok(Nushu::CharacterDash1b188),
+            '𛆉' => Ok(Nushu::CharacterDash1b189),
+            '𛆊' => Ok(Nushu::CharacterDash1b18a),
+            '𛆋' => Ok(Nushu::CharacterDash1b18b),
+            '𛆌' => Ok(Nushu::CharacterDash1b18c),
+            '𛆍' => Ok(Nushu::CharacterDash1b18d),
+            '𛆎' => Ok(Nushu::CharacterDash1b18e),
+            '𛆏' => Ok(Nushu::CharacterDash1b18f),
+            '𛆐' => Ok(Nushu::CharacterDash1b190),
+            '𛆑' => Ok(Nushu::CharacterDash1b191),
+            '𛆒' => Ok(Nushu::CharacterDash1b192),
+            '𛆓' => Ok(Nushu::CharacterDash1b193),
+            '𛆔' => Ok(Nushu::CharacterDash1b194),
+            '𛆕' => Ok(Nushu::CharacterDash1b195),
+            '𛆖' => Ok(Nushu::CharacterDash1b196),
+            '𛆗' => Ok(Nushu::CharacterDash1b197),
+            '𛆘' => Ok(Nushu::CharacterDash1b198),
+            '𛆙' => Ok(Nushu::CharacterDash1b199),
+            '𛆚' => Ok(Nushu::CharacterDash1b19a),
+            '𛆛' => Ok(Nushu::CharacterDash1b19b),
+            '𛆜' => Ok(Nushu::CharacterDash1b19c),
+            '𛆝' => Ok(Nushu::CharacterDash1b19d),
+            '𛆞' => Ok(Nushu::CharacterDash1b19e),
+            '𛆟' => Ok(Nushu::CharacterDash1b19f),
+            '𛆠' => Ok(Nushu::CharacterDash1b1a0),
+            '𛆡' => Ok(Nushu::CharacterDash1b1a1),
+            '𛆢' => Ok(Nushu::CharacterDash1b1a2),
+            '𛆣' => Ok(Nushu::CharacterDash1b1a3),
+            '𛆤' => Ok(Nushu::CharacterDash1b1a4),
+            '𛆥' => Ok(Nushu::CharacterDash1b1a5),
+            '𛆦' => Ok(Nushu::CharacterDash1b1a6),
+            '𛆧' => Ok(Nushu::CharacterDash1b1a7),
+            '𛆨' => Ok(Nushu::CharacterDash1b1a8),
+            '𛆩' => Ok(Nushu::CharacterDash1b1a9),
+            '𛆪' => Ok(Nushu::CharacterDash1b1aa),
+            '𛆫' => Ok(Nushu::CharacterDash1b1ab),
+            '𛆬' => Ok(Nushu::CharacterDash1b1ac),
+            '𛆭' => Ok(Nushu::CharacterDash1b1ad),
+            '𛆮' => Ok(Nushu::CharacterDash1b1ae),
+            '𛆯' => Ok(Nushu::CharacterDash1b1af),
+            '𛆰' => Ok(Nushu::CharacterDash1b1b0),
+            '𛆱' => Ok(Nushu::CharacterDash1b1b1),
+            '𛆲' => Ok(Nushu::CharacterDash1b1b2),
+            '𛆳' => Ok(Nushu::CharacterDash1b1b3),
+            '𛆴' => Ok(Nushu::CharacterDash1b1b4),
+            '𛆵' => Ok(Nushu::CharacterDash1b1b5),
+            '𛆶' => Ok(Nushu::CharacterDash1b1b6),
+            '𛆷' => Ok(Nushu::CharacterDash1b1b7),
+            '𛆸' => Ok(Nushu::CharacterDash1b1b8),
+            '𛆹' => Ok(Nushu::CharacterDash1b1b9),
+            '𛆺' => Ok(Nushu::CharacterDash1b1ba),
+            '𛆻' => Ok(Nushu::CharacterDash1b1bb),
+            '𛆼' => Ok(Nushu::CharacterDash1b1bc),
+            '𛆽' => Ok(Nushu::CharacterDash1b1bd),
+            '𛆾' => Ok(Nushu::CharacterDash1b1be),
+            '𛆿' => Ok(Nushu::CharacterDash1b1bf),
+            '𛇀' => Ok(Nushu::CharacterDash1b1c0),
+            '𛇁' => Ok(Nushu::CharacterDash1b1c1),
+            '𛇂' => Ok(Nushu::CharacterDash1b1c2),
+            '𛇃' => Ok(Nushu::CharacterDash1b1c3),
+            '𛇄' => Ok(Nushu::CharacterDash1b1c4),
+            '𛇅' => Ok(Nushu::CharacterDash1b1c5),
+            '𛇆' => Ok(Nushu::CharacterDash1b1c6),
+            '𛇇' => Ok(Nushu::CharacterDash1b1c7),
+            '𛇈' => Ok(Nushu::CharacterDash1b1c8),
+            '𛇉' => Ok(Nushu::CharacterDash1b1c9),
+            '𛇊' => Ok(Nushu::CharacterDash1b1ca),
+            '𛇋' => Ok(Nushu::CharacterDash1b1cb),
+            '𛇌' => Ok(Nushu::CharacterDash1b1cc),
+            '𛇍' => Ok(Nushu::CharacterDash1b1cd),
+            '𛇎' => Ok(Nushu::CharacterDash1b1ce),
+            '𛇏' => Ok(Nushu::CharacterDash1b1cf),
+            '𛇐' => Ok(Nushu::CharacterDash1b1d0),
+            '𛇑' => Ok(Nushu::CharacterDash1b1d1),
+            '𛇒' => Ok(Nushu::CharacterDash1b1d2),
+            '𛇓' => Ok(Nushu::CharacterDash1b1d3),
+            '𛇔' => Ok(Nushu::CharacterDash1b1d4),
+            '𛇕' => Ok(Nushu::CharacterDash1b1d5),
+            '𛇖' => Ok(Nushu::CharacterDash1b1d6),
+            '𛇗' => Ok(Nushu::CharacterDash1b1d7),
+            '𛇘' => Ok(Nushu::CharacterDash1b1d8),
+            '𛇙' => Ok(Nushu::CharacterDash1b1d9),
+            '𛇚' => Ok(Nushu::CharacterDash1b1da),
+            '𛇛' => Ok(Nushu::CharacterDash1b1db),
+            '𛇜' => Ok(Nushu::CharacterDash1b1dc),
+            '𛇝' => Ok(Nushu::CharacterDash1b1dd),
+            '𛇞' => Ok(Nushu::CharacterDash1b1de),
+            '𛇟' => Ok(Nushu::CharacterDash1b1df),
+            '𛇠' => Ok(Nushu::CharacterDash1b1e0),
+            '𛇡' => Ok(Nushu::CharacterDash1b1e1),
+            '𛇢' => Ok(Nushu::CharacterDash1b1e2),
+            '𛇣' => Ok(Nushu::CharacterDash1b1e3),
+            '𛇤' => Ok(Nushu::CharacterDash1b1e4),
+            '𛇥' => Ok(Nushu::CharacterDash1b1e5),
+            '𛇦' => Ok(Nushu::CharacterDash1b1e6),
+            '𛇧' => Ok(Nushu::CharacterDash1b1e7),
+            '𛇨' => Ok(Nushu::CharacterDash1b1e8),
+            '𛇩' => Ok(Nushu::CharacterDash1b1e9),
+            '𛇪' => Ok(Nushu::CharacterDash1b1ea),
+            '𛇫' => Ok(Nushu::CharacterDash1b1eb),
+            '𛇬' => Ok(Nushu::CharacterDash1b1ec),
+            '𛇭' => Ok(Nushu::CharacterDash1b1ed),
+            '𛇮' => Ok(Nushu::CharacterDash1b1ee),
+            '𛇯' => Ok(Nushu::CharacterDash1b1ef),
+            '𛇰' => Ok(Nushu::CharacterDash1b1f0),
+            '𛇱' => Ok(Nushu::CharacterDash1b1f1),
+            '𛇲' => Ok(Nushu::CharacterDash1b1f2),
+            '𛇳' => Ok(Nushu::CharacterDash1b1f3),
+            '𛇴' => Ok(Nushu::CharacterDash1b1f4),
+            '𛇵' => Ok(Nushu::CharacterDash1b1f5),
+            '𛇶' => Ok(Nushu::CharacterDash1b1f6),
+            '𛇷' => Ok(Nushu::CharacterDash1b1f7),
+            '𛇸' => Ok(Nushu::CharacterDash1b1f8),
+            '𛇹' => Ok(Nushu::CharacterDash1b1f9),
+            '𛇺' => Ok(Nushu::CharacterDash1b1fa),
+            '𛇻' => Ok(Nushu::CharacterDash1b1fb),
+            '𛇼' => Ok(Nushu::CharacterDash1b1fc),
+            '𛇽' => Ok(Nushu::CharacterDash1b1fd),
+            '𛇾' => Ok(Nushu::CharacterDash1b1fe),
+            '𛇿' => Ok(Nushu::CharacterDash1b1ff),
+            '𛈀' => Ok(Nushu::CharacterDash1b200),
+            '𛈁' => Ok(Nushu::CharacterDash1b201),
+            '𛈂' => Ok(Nushu::CharacterDash1b202),
+            '𛈃' => Ok(Nushu::CharacterDash1b203),
+            '𛈄' => Ok(Nushu::CharacterDash1b204),
+            '𛈅' => Ok(Nushu::CharacterDash1b205),
+            '𛈆' => Ok(Nushu::CharacterDash1b206),
+            '𛈇' => Ok(Nushu::CharacterDash1b207),
+            '𛈈' => Ok(Nushu::CharacterDash1b208),
+            '𛈉' => Ok(Nushu::CharacterDash1b209),
+            '𛈊' => Ok(Nushu::CharacterDash1b20a),
+            '𛈋' => Ok(Nushu::CharacterDash1b20b),
+            '𛈌' => Ok(Nushu::CharacterDash1b20c),
+            '𛈍' => Ok(Nushu::CharacterDash1b20d),
+            '𛈎' => Ok(Nushu::CharacterDash1b20e),
+            '𛈏' => Ok(Nushu::CharacterDash1b20f),
+            '𛈐' => Ok(Nushu::CharacterDash1b210),
+            '𛈑' => Ok(Nushu::CharacterDash1b211),
+            '𛈒' => Ok(Nushu::CharacterDash1b212),
+            '𛈓' => Ok(Nushu::CharacterDash1b213),
+            '𛈔' => Ok(Nushu::CharacterDash1b214),
+            '𛈕' => Ok(Nushu::CharacterDash1b215),
+            '𛈖' => Ok(Nushu::CharacterDash1b216),
+            '𛈗' => Ok(Nushu::CharacterDash1b217),
+            '𛈘' => Ok(Nushu::CharacterDash1b218),
+            '𛈙' => Ok(Nushu::CharacterDash1b219),
+            '𛈚' => Ok(Nushu::CharacterDash1b21a),
+            '𛈛' => Ok(Nushu::CharacterDash1b21b),
+            '𛈜' => Ok(Nushu::CharacterDash1b21c),
+            '𛈝' => Ok(Nushu::CharacterDash1b21d),
+            '𛈞' => Ok(Nushu::CharacterDash1b21e),
+            '𛈟' => Ok(Nushu::CharacterDash1b21f),
+            '𛈠' => Ok(Nushu::CharacterDash1b220),
+            '𛈡' => Ok(Nushu::CharacterDash1b221),
+            '𛈢' => Ok(Nushu::CharacterDash1b222),
+            '𛈣' => Ok(Nushu::CharacterDash1b223),
+            '𛈤' => Ok(Nushu::CharacterDash1b224),
+            '𛈥' => Ok(Nushu::CharacterDash1b225),
+            '𛈦' => Ok(Nushu::CharacterDash1b226),
+            '𛈧' => Ok(Nushu::CharacterDash1b227),
+            '𛈨' => Ok(Nushu::CharacterDash1b228),
+            '𛈩' => Ok(Nushu::CharacterDash1b229),
+            '𛈪' => Ok(Nushu::CharacterDash1b22a),
+            '𛈫' => Ok(Nushu::CharacterDash1b22b),
+            '𛈬' => Ok(Nushu::CharacterDash1b22c),
+            '𛈭' => Ok(Nushu::CharacterDash1b22d),
+            '𛈮' => Ok(Nushu::CharacterDash1b22e),
+            '𛈯' => Ok(Nushu::CharacterDash1b22f),
+            '𛈰' => Ok(Nushu::CharacterDash1b230),
+            '𛈱' => Ok(Nushu::CharacterDash1b231),
+            '𛈲' => Ok(Nushu::CharacterDash1b232),
+            '𛈳' => Ok(Nushu::CharacterDash1b233),
+            '𛈴' => Ok(Nushu::CharacterDash1b234),
+            '𛈵' => Ok(Nushu::CharacterDash1b235),
+            '𛈶' => Ok(Nushu::CharacterDash1b236),
+            '𛈷' => Ok(Nushu::CharacterDash1b237),
+            '𛈸' => Ok(Nushu::CharacterDash1b238),
+            '𛈹' => Ok(Nushu::CharacterDash1b239),
+            '𛈺' => Ok(Nushu::CharacterDash1b23a),
+            '𛈻' => Ok(Nushu::CharacterDash1b23b),
+            '𛈼' => Ok(Nushu::CharacterDash1b23c),
+            '𛈽' => Ok(Nushu::CharacterDash1b23d),
+            '𛈾' => Ok(Nushu::CharacterDash1b23e),
+            '𛈿' => Ok(Nushu::CharacterDash1b23f),
+            '𛉀' => Ok(Nushu::CharacterDash1b240),
+            '𛉁' => Ok(Nushu::CharacterDash1b241),
+            '𛉂' => Ok(Nushu::CharacterDash1b242),
+            '𛉃' => Ok(Nushu::CharacterDash1b243),
+            '𛉄' => Ok(Nushu::CharacterDash1b244),
+            '𛉅' => Ok(Nushu::CharacterDash1b245),
+            '𛉆' => Ok(Nushu::CharacterDash1b246),
+            '𛉇' => Ok(Nushu::CharacterDash1b247),
+            '𛉈' => Ok(Nushu::CharacterDash1b248),
+            '𛉉' => Ok(Nushu::CharacterDash1b249),
+            '𛉊' => Ok(Nushu::CharacterDash1b24a),
+            '𛉋' => Ok(Nushu::CharacterDash1b24b),
+            '𛉌' => Ok(Nushu::CharacterDash1b24c),
+            '𛉍' => Ok(Nushu::CharacterDash1b24d),
+            '𛉎' => Ok(Nushu::CharacterDash1b24e),
+            '𛉏' => Ok(Nushu::CharacterDash1b24f),
+            '𛉐' => Ok(Nushu::CharacterDash1b250),
+            '𛉑' => Ok(Nushu::CharacterDash1b251),
+            '𛉒' => Ok(Nushu::CharacterDash1b252),
+            '𛉓' => Ok(Nushu::CharacterDash1b253),
+            '𛉔' => Ok(Nushu::CharacterDash1b254),
+            '𛉕' => Ok(Nushu::CharacterDash1b255),
+            '𛉖' => Ok(Nushu::CharacterDash1b256),
+            '𛉗' => Ok(Nushu::CharacterDash1b257),
+            '𛉘' => Ok(Nushu::CharacterDash1b258),
+            '𛉙' => Ok(Nushu::CharacterDash1b259),
+            '𛉚' => Ok(Nushu::CharacterDash1b25a),
+            '𛉛' => Ok(Nushu::CharacterDash1b25b),
+            '𛉜' => Ok(Nushu::CharacterDash1b25c),
+            '𛉝' => Ok(Nushu::CharacterDash1b25d),
+            '𛉞' => Ok(Nushu::CharacterDash1b25e),
+            '𛉟' => Ok(Nushu::CharacterDash1b25f),
+            '𛉠' => Ok(Nushu::CharacterDash1b260),
+            '𛉡' => Ok(Nushu::CharacterDash1b261),
+            '𛉢' => Ok(Nushu::CharacterDash1b262),
+            '𛉣' => Ok(Nushu::CharacterDash1b263),
+            '𛉤' => Ok(Nushu::CharacterDash1b264),
+            '𛉥' => Ok(Nushu::CharacterDash1b265),
+            '𛉦' => Ok(Nushu::CharacterDash1b266),
+            '𛉧' => Ok(Nushu::CharacterDash1b267),
+            '𛉨' => Ok(Nushu::CharacterDash1b268),
+            '𛉩' => Ok(Nushu::CharacterDash1b269),
+            '𛉪' => Ok(Nushu::CharacterDash1b26a),
+            '𛉫' => Ok(Nushu::CharacterDash1b26b),
+            '𛉬' => Ok(Nushu::CharacterDash1b26c),
+            '𛉭' => Ok(Nushu::CharacterDash1b26d),
+            '𛉮' => Ok(Nushu::CharacterDash1b26e),
+            '𛉯' => Ok(Nushu::CharacterDash1b26f),
+            '𛉰' => Ok(Nushu::CharacterDash1b270),
+            '𛉱' => Ok(Nushu::CharacterDash1b271),
+            '𛉲' => Ok(Nushu::CharacterDash1b272),
+            '𛉳' => Ok(Nushu::CharacterDash1b273),
+            '𛉴' => Ok(Nushu::CharacterDash1b274),
+            '𛉵' => Ok(Nushu::CharacterDash1b275),
+            '𛉶' => Ok(Nushu::CharacterDash1b276),
+            '𛉷' => Ok(Nushu::CharacterDash1b277),
+            '𛉸' => Ok(Nushu::CharacterDash1b278),
+            '𛉹' => Ok(Nushu::CharacterDash1b279),
+            '𛉺' => Ok(Nushu::CharacterDash1b27a),
+            '𛉻' => Ok(Nushu::CharacterDash1b27b),
+            '𛉼' => Ok(Nushu::CharacterDash1b27c),
+            '𛉽' => Ok(Nushu::CharacterDash1b27d),
+            '𛉾' => Ok(Nushu::CharacterDash1b27e),
+            '𛉿' => Ok(Nushu::CharacterDash1b27f),
+            '𛊀' => Ok(Nushu::CharacterDash1b280),
+            '𛊁' => Ok(Nushu::CharacterDash1b281),
+            '𛊂' => Ok(Nushu::CharacterDash1b282),
+            '𛊃' => Ok(Nushu::CharacterDash1b283),
+            '𛊄' => Ok(Nushu::CharacterDash1b284),
+            '𛊅' => Ok(Nushu::CharacterDash1b285),
+            '𛊆' => Ok(Nushu::CharacterDash1b286),
+            '𛊇' => Ok(Nushu::CharacterDash1b287),
+            '𛊈' => Ok(Nushu::CharacterDash1b288),
+            '𛊉' => Ok(Nushu::CharacterDash1b289),
+            '𛊊' => Ok(Nushu::CharacterDash1b28a),
+            '𛊋' => Ok(Nushu::CharacterDash1b28b),
+            '𛊌' => Ok(Nushu::CharacterDash1b28c),
+            '𛊍' => Ok(Nushu::CharacterDash1b28d),
+            '𛊎' => Ok(Nushu::CharacterDash1b28e),
+            '𛊏' => Ok(Nushu::CharacterDash1b28f),
+            '𛊐' => Ok(Nushu::CharacterDash1b290),
+            '𛊑' => Ok(Nushu::CharacterDash1b291),
+            '𛊒' => Ok(Nushu::CharacterDash1b292),
+            '𛊓' => Ok(Nushu::CharacterDash1b293),
+            '𛊔' => Ok(Nushu::CharacterDash1b294),
+            '𛊕' => Ok(Nushu::CharacterDash1b295),
+            '𛊖' => Ok(Nushu::CharacterDash1b296),
+            '𛊗' => Ok(Nushu::CharacterDash1b297),
+            '𛊘' => Ok(Nushu::CharacterDash1b298),
+            '𛊙' => Ok(Nushu::CharacterDash1b299),
+            '𛊚' => Ok(Nushu::CharacterDash1b29a),
+            '𛊛' => Ok(Nushu::CharacterDash1b29b),
+            '𛊜' => Ok(Nushu::CharacterDash1b29c),
+            '𛊝' => Ok(Nushu::CharacterDash1b29d),
+            '𛊞' => Ok(Nushu::CharacterDash1b29e),
+            '𛊟' => Ok(Nushu::CharacterDash1b29f),
+            '𛊠' => Ok(Nushu::CharacterDash1b2a0),
+            '𛊡' => Ok(Nushu::CharacterDash1b2a1),
+            '𛊢' => Ok(Nushu::CharacterDash1b2a2),
+            '𛊣' => Ok(Nushu::CharacterDash1b2a3),
+            '𛊤' => Ok(Nushu::CharacterDash1b2a4),
+            '𛊥' => Ok(Nushu::CharacterDash1b2a5),
+            '𛊦' => Ok(Nushu::CharacterDash1b2a6),
+            '𛊧' => Ok(Nushu::CharacterDash1b2a7),
+            '𛊨' => Ok(Nushu::CharacterDash1b2a8),
+            '𛊩' => Ok(Nushu::CharacterDash1b2a9),
+            '𛊪' => Ok(Nushu::CharacterDash1b2aa),
+            '𛊫' => Ok(Nushu::CharacterDash1b2ab),
+            '𛊬' => Ok(Nushu::CharacterDash1b2ac),
+            '𛊭' => Ok(Nushu::CharacterDash1b2ad),
+            '𛊮' => Ok(Nushu::CharacterDash1b2ae),
+            '𛊯' => Ok(Nushu::CharacterDash1b2af),
+            '𛊰' => Ok(Nushu::CharacterDash1b2b0),
+            '𛊱' => Ok(Nushu::CharacterDash1b2b1),
+            '𛊲' => Ok(Nushu::CharacterDash1b2b2),
+            '𛊳' => Ok(Nushu::CharacterDash1b2b3),
+            '𛊴' => Ok(Nushu::CharacterDash1b2b4),
+            '𛊵' => Ok(Nushu::CharacterDash1b2b5),
+            '𛊶' => Ok(Nushu::CharacterDash1b2b6),
+            '𛊷' => Ok(Nushu::CharacterDash1b2b7),
+            '𛊸' => Ok(Nushu::CharacterDash1b2b8),
+            '𛊹' => Ok(Nushu::CharacterDash1b2b9),
+            '𛊺' => Ok(Nushu::CharacterDash1b2ba),
+            '𛊻' => Ok(Nushu::CharacterDash1b2bb),
+            '𛊼' => Ok(Nushu::CharacterDash1b2bc),
+            '𛊽' => Ok(Nushu::CharacterDash1b2bd),
+            '𛊾' => Ok(Nushu::CharacterDash1b2be),
+            '𛊿' => Ok(Nushu::CharacterDash1b2bf),
+            '𛋀' => Ok(Nushu::CharacterDash1b2c0),
+            '𛋁' => Ok(Nushu::CharacterDash1b2c1),
+            '𛋂' => Ok(Nushu::CharacterDash1b2c2),
+            '𛋃' => Ok(Nushu::CharacterDash1b2c3),
+            '𛋄' => Ok(Nushu::CharacterDash1b2c4),
+            '𛋅' => Ok(Nushu::CharacterDash1b2c5),
+            '𛋆' => Ok(Nushu::CharacterDash1b2c6),
+            '𛋇' => Ok(Nushu::CharacterDash1b2c7),
+            '𛋈' => Ok(Nushu::CharacterDash1b2c8),
+            '𛋉' => Ok(Nushu::CharacterDash1b2c9),
+            '𛋊' => Ok(Nushu::CharacterDash1b2ca),
+            '𛋋' => Ok(Nushu::CharacterDash1b2cb),
+            '𛋌' => Ok(Nushu::CharacterDash1b2cc),
+            '𛋍' => Ok(Nushu::CharacterDash1b2cd),
+            '𛋎' => Ok(Nushu::CharacterDash1b2ce),
+            '𛋏' => Ok(Nushu::CharacterDash1b2cf),
+            '𛋐' => Ok(Nushu::CharacterDash1b2d0),
+            '𛋑' => Ok(Nushu::CharacterDash1b2d1),
+            '𛋒' => Ok(Nushu::CharacterDash1b2d2),
+            '𛋓' => Ok(Nushu::CharacterDash1b2d3),
+            '𛋔' => Ok(Nushu::CharacterDash1b2d4),
+            '𛋕' => Ok(Nushu::CharacterDash1b2d5),
+            '𛋖' => Ok(Nushu::CharacterDash1b2d6),
+            '𛋗' => Ok(Nushu::CharacterDash1b2d7),
+            '𛋘' => Ok(Nushu::CharacterDash1b2d8),
+            '𛋙' => Ok(Nushu::CharacterDash1b2d9),
+            '𛋚' => Ok(Nushu::CharacterDash1b2da),
+            '𛋛' => Ok(Nushu::CharacterDash1b2db),
+            '𛋜' => Ok(Nushu::CharacterDash1b2dc),
+            '𛋝' => Ok(Nushu::CharacterDash1b2dd),
+            '𛋞' => Ok(Nushu::CharacterDash1b2de),
+            '𛋟' => Ok(Nushu::CharacterDash1b2df),
+            '𛋠' => Ok(Nushu::CharacterDash1b2e0),
+            '𛋡' => Ok(Nushu::CharacterDash1b2e1),
+            '𛋢' => Ok(Nushu::CharacterDash1b2e2),
+            '𛋣' => Ok(Nushu::CharacterDash1b2e3),
+            '𛋤' => Ok(Nushu::CharacterDash1b2e4),
+            '𛋥' => Ok(Nushu::CharacterDash1b2e5),
+            '𛋦' => Ok(Nushu::CharacterDash1b2e6),
+            '𛋧' => Ok(Nushu::CharacterDash1b2e7),
+            '𛋨' => Ok(Nushu::CharacterDash1b2e8),
+            '𛋩' => Ok(Nushu::CharacterDash1b2e9),
+            '𛋪' => Ok(Nushu::CharacterDash1b2ea),
+            '𛋫' => Ok(Nushu::CharacterDash1b2eb),
+            '𛋬' => Ok(Nushu::CharacterDash1b2ec),
+            '𛋭' => Ok(Nushu::CharacterDash1b2ed),
+            '𛋮' => Ok(Nushu::CharacterDash1b2ee),
+            '𛋯' => Ok(Nushu::CharacterDash1b2ef),
+            '𛋰' => Ok(Nushu::CharacterDash1b2f0),
+            '𛋱' => Ok(Nushu::CharacterDash1b2f1),
+            '𛋲' => Ok(Nushu::CharacterDash1b2f2),
+            '𛋳' => Ok(Nushu::CharacterDash1b2f3),
+            '𛋴' => Ok(Nushu::CharacterDash1b2f4),
+            '𛋵' => Ok(Nushu::CharacterDash1b2f5),
+            '𛋶' => Ok(Nushu::CharacterDash1b2f6),
+            '𛋷' => Ok(Nushu::CharacterDash1b2f7),
+            '𛋸' => Ok(Nushu::CharacterDash1b2f8),
+            '𛋹' => Ok(Nushu::CharacterDash1b2f9),
+            '𛋺' => Ok(Nushu::CharacterDash1b2fa),
+            '𛋻' => Ok(Nushu::CharacterDash1b2fb),
             _ => Err(()),
         }
     }

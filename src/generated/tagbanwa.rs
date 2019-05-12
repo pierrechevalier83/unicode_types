@@ -1,42 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1760}: 'ᝠ'
-    pub const LETTER_A: char = 'ᝠ';
-    /// \u{1761}: 'ᝡ'
-    pub const LETTER_I: char = 'ᝡ';
-    /// \u{1762}: 'ᝢ'
-    pub const LETTER_U: char = 'ᝢ';
-    /// \u{1763}: 'ᝣ'
-    pub const LETTER_KA: char = 'ᝣ';
-    /// \u{1764}: 'ᝤ'
-    pub const LETTER_GA: char = 'ᝤ';
-    /// \u{1765}: 'ᝥ'
-    pub const LETTER_NGA: char = 'ᝥ';
-    /// \u{1766}: 'ᝦ'
-    pub const LETTER_TA: char = 'ᝦ';
-    /// \u{1767}: 'ᝧ'
-    pub const LETTER_DA: char = 'ᝧ';
-    /// \u{1768}: 'ᝨ'
-    pub const LETTER_NA: char = 'ᝨ';
-    /// \u{1769}: 'ᝩ'
-    pub const LETTER_PA: char = 'ᝩ';
-    /// \u{176a}: 'ᝪ'
-    pub const LETTER_BA: char = 'ᝪ';
-    /// \u{176b}: 'ᝫ'
-    pub const LETTER_MA: char = 'ᝫ';
-    /// \u{176c}: 'ᝬ'
-    pub const LETTER_YA: char = 'ᝬ';
-    /// \u{176e}: 'ᝮ'
-    pub const LETTER_LA: char = 'ᝮ';
-    /// \u{176f}: 'ᝯ'
-    pub const LETTER_WA: char = 'ᝯ';
-    /// \u{1770}: 'ᝰ'
-    pub const LETTER_SA: char = 'ᝰ';
-    /// \u{1772}: 'ᝲ'
-    pub const VOWEL_SIGN_I: char = 'ᝲ';
-    /// \u{1773}: 'ᝳ'
-    pub const VOWEL_SIGN_U: char = 'ᝳ';
-}
 
 /// An enum to represent all characters in the Tagbanwa block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -81,26 +42,25 @@ pub enum Tagbanwa {
 
 impl Into<char> for Tagbanwa {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Tagbanwa::LetterA => LETTER_A,
-            Tagbanwa::LetterI => LETTER_I,
-            Tagbanwa::LetterU => LETTER_U,
-            Tagbanwa::LetterKa => LETTER_KA,
-            Tagbanwa::LetterGa => LETTER_GA,
-            Tagbanwa::LetterNga => LETTER_NGA,
-            Tagbanwa::LetterTa => LETTER_TA,
-            Tagbanwa::LetterDa => LETTER_DA,
-            Tagbanwa::LetterNa => LETTER_NA,
-            Tagbanwa::LetterPa => LETTER_PA,
-            Tagbanwa::LetterBa => LETTER_BA,
-            Tagbanwa::LetterMa => LETTER_MA,
-            Tagbanwa::LetterYa => LETTER_YA,
-            Tagbanwa::LetterLa => LETTER_LA,
-            Tagbanwa::LetterWa => LETTER_WA,
-            Tagbanwa::LetterSa => LETTER_SA,
-            Tagbanwa::VowelSignI => VOWEL_SIGN_I,
-            Tagbanwa::VowelSignU => VOWEL_SIGN_U,
+            Tagbanwa::LetterA => 'ᝠ',
+            Tagbanwa::LetterI => 'ᝡ',
+            Tagbanwa::LetterU => 'ᝢ',
+            Tagbanwa::LetterKa => 'ᝣ',
+            Tagbanwa::LetterGa => 'ᝤ',
+            Tagbanwa::LetterNga => 'ᝥ',
+            Tagbanwa::LetterTa => 'ᝦ',
+            Tagbanwa::LetterDa => 'ᝧ',
+            Tagbanwa::LetterNa => 'ᝨ',
+            Tagbanwa::LetterPa => 'ᝩ',
+            Tagbanwa::LetterBa => 'ᝪ',
+            Tagbanwa::LetterMa => 'ᝫ',
+            Tagbanwa::LetterYa => 'ᝬ',
+            Tagbanwa::LetterLa => 'ᝮ',
+            Tagbanwa::LetterWa => 'ᝯ',
+            Tagbanwa::LetterSa => 'ᝰ',
+            Tagbanwa::VowelSignI => 'ᝲ',
+            Tagbanwa::VowelSignU => 'ᝳ',
         }
     }
 }
@@ -108,26 +68,25 @@ impl Into<char> for Tagbanwa {
 impl std::convert::TryFrom<char> for Tagbanwa {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Tagbanwa::LetterA),
-            LETTER_I => Ok(Tagbanwa::LetterI),
-            LETTER_U => Ok(Tagbanwa::LetterU),
-            LETTER_KA => Ok(Tagbanwa::LetterKa),
-            LETTER_GA => Ok(Tagbanwa::LetterGa),
-            LETTER_NGA => Ok(Tagbanwa::LetterNga),
-            LETTER_TA => Ok(Tagbanwa::LetterTa),
-            LETTER_DA => Ok(Tagbanwa::LetterDa),
-            LETTER_NA => Ok(Tagbanwa::LetterNa),
-            LETTER_PA => Ok(Tagbanwa::LetterPa),
-            LETTER_BA => Ok(Tagbanwa::LetterBa),
-            LETTER_MA => Ok(Tagbanwa::LetterMa),
-            LETTER_YA => Ok(Tagbanwa::LetterYa),
-            LETTER_LA => Ok(Tagbanwa::LetterLa),
-            LETTER_WA => Ok(Tagbanwa::LetterWa),
-            LETTER_SA => Ok(Tagbanwa::LetterSa),
-            VOWEL_SIGN_I => Ok(Tagbanwa::VowelSignI),
-            VOWEL_SIGN_U => Ok(Tagbanwa::VowelSignU),
+            'ᝠ' => Ok(Tagbanwa::LetterA),
+            'ᝡ' => Ok(Tagbanwa::LetterI),
+            'ᝢ' => Ok(Tagbanwa::LetterU),
+            'ᝣ' => Ok(Tagbanwa::LetterKa),
+            'ᝤ' => Ok(Tagbanwa::LetterGa),
+            'ᝥ' => Ok(Tagbanwa::LetterNga),
+            'ᝦ' => Ok(Tagbanwa::LetterTa),
+            'ᝧ' => Ok(Tagbanwa::LetterDa),
+            'ᝨ' => Ok(Tagbanwa::LetterNa),
+            'ᝩ' => Ok(Tagbanwa::LetterPa),
+            'ᝪ' => Ok(Tagbanwa::LetterBa),
+            'ᝫ' => Ok(Tagbanwa::LetterMa),
+            'ᝬ' => Ok(Tagbanwa::LetterYa),
+            'ᝮ' => Ok(Tagbanwa::LetterLa),
+            'ᝯ' => Ok(Tagbanwa::LetterWa),
+            'ᝰ' => Ok(Tagbanwa::LetterSa),
+            'ᝲ' => Ok(Tagbanwa::VowelSignI),
+            'ᝳ' => Ok(Tagbanwa::VowelSignU),
             _ => Err(()),
         }
     }

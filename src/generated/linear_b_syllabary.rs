@@ -1,182 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10000}: '𐀀'
-    pub const LINEAR_B_SYLLABLE_B008_A: char = '𐀀';
-    /// \u{10001}: '𐀁'
-    pub const LINEAR_B_SYLLABLE_B038_E: char = '𐀁';
-    /// \u{10002}: '𐀂'
-    pub const LINEAR_B_SYLLABLE_B028_I: char = '𐀂';
-    /// \u{10003}: '𐀃'
-    pub const LINEAR_B_SYLLABLE_B061_O: char = '𐀃';
-    /// \u{10004}: '𐀄'
-    pub const LINEAR_B_SYLLABLE_B010_U: char = '𐀄';
-    /// \u{10005}: '𐀅'
-    pub const LINEAR_B_SYLLABLE_B001_DA: char = '𐀅';
-    /// \u{10006}: '𐀆'
-    pub const LINEAR_B_SYLLABLE_B045_DE: char = '𐀆';
-    /// \u{10007}: '𐀇'
-    pub const LINEAR_B_SYLLABLE_B007_DI: char = '𐀇';
-    /// \u{10008}: '𐀈'
-    pub const LINEAR_B_SYLLABLE_B014_DO: char = '𐀈';
-    /// \u{10009}: '𐀉'
-    pub const LINEAR_B_SYLLABLE_B051_DU: char = '𐀉';
-    /// \u{1000a}: '𐀊'
-    pub const LINEAR_B_SYLLABLE_B057_JA: char = '𐀊';
-    /// \u{1000b}: '𐀋'
-    pub const LINEAR_B_SYLLABLE_B046_JE: char = '𐀋';
-    /// \u{1000d}: '𐀍'
-    pub const LINEAR_B_SYLLABLE_B036_JO: char = '𐀍';
-    /// \u{1000e}: '𐀎'
-    pub const LINEAR_B_SYLLABLE_B065_JU: char = '𐀎';
-    /// \u{1000f}: '𐀏'
-    pub const LINEAR_B_SYLLABLE_B077_KA: char = '𐀏';
-    /// \u{10010}: '𐀐'
-    pub const LINEAR_B_SYLLABLE_B044_KE: char = '𐀐';
-    /// \u{10011}: '𐀑'
-    pub const LINEAR_B_SYLLABLE_B067_KI: char = '𐀑';
-    /// \u{10012}: '𐀒'
-    pub const LINEAR_B_SYLLABLE_B070_KO: char = '𐀒';
-    /// \u{10013}: '𐀓'
-    pub const LINEAR_B_SYLLABLE_B081_KU: char = '𐀓';
-    /// \u{10014}: '𐀔'
-    pub const LINEAR_B_SYLLABLE_B080_MA: char = '𐀔';
-    /// \u{10015}: '𐀕'
-    pub const LINEAR_B_SYLLABLE_B013_ME: char = '𐀕';
-    /// \u{10016}: '𐀖'
-    pub const LINEAR_B_SYLLABLE_B073_MI: char = '𐀖';
-    /// \u{10017}: '𐀗'
-    pub const LINEAR_B_SYLLABLE_B015_MO: char = '𐀗';
-    /// \u{10018}: '𐀘'
-    pub const LINEAR_B_SYLLABLE_B023_MU: char = '𐀘';
-    /// \u{10019}: '𐀙'
-    pub const LINEAR_B_SYLLABLE_B006_NA: char = '𐀙';
-    /// \u{1001a}: '𐀚'
-    pub const LINEAR_B_SYLLABLE_B024_NE: char = '𐀚';
-    /// \u{1001b}: '𐀛'
-    pub const LINEAR_B_SYLLABLE_B030_NI: char = '𐀛';
-    /// \u{1001c}: '𐀜'
-    pub const LINEAR_B_SYLLABLE_B052_NO: char = '𐀜';
-    /// \u{1001d}: '𐀝'
-    pub const LINEAR_B_SYLLABLE_B055_NU: char = '𐀝';
-    /// \u{1001e}: '𐀞'
-    pub const LINEAR_B_SYLLABLE_B003_PA: char = '𐀞';
-    /// \u{1001f}: '𐀟'
-    pub const LINEAR_B_SYLLABLE_B072_PE: char = '𐀟';
-    /// \u{10020}: '𐀠'
-    pub const LINEAR_B_SYLLABLE_B039_PI: char = '𐀠';
-    /// \u{10021}: '𐀡'
-    pub const LINEAR_B_SYLLABLE_B011_PO: char = '𐀡';
-    /// \u{10022}: '𐀢'
-    pub const LINEAR_B_SYLLABLE_B050_PU: char = '𐀢';
-    /// \u{10023}: '𐀣'
-    pub const LINEAR_B_SYLLABLE_B016_QA: char = '𐀣';
-    /// \u{10024}: '𐀤'
-    pub const LINEAR_B_SYLLABLE_B078_QE: char = '𐀤';
-    /// \u{10025}: '𐀥'
-    pub const LINEAR_B_SYLLABLE_B021_QI: char = '𐀥';
-    /// \u{10026}: '𐀦'
-    pub const LINEAR_B_SYLLABLE_B032_QO: char = '𐀦';
-    /// \u{10028}: '𐀨'
-    pub const LINEAR_B_SYLLABLE_B060_RA: char = '𐀨';
-    /// \u{10029}: '𐀩'
-    pub const LINEAR_B_SYLLABLE_B027_RE: char = '𐀩';
-    /// \u{1002a}: '𐀪'
-    pub const LINEAR_B_SYLLABLE_B053_RI: char = '𐀪';
-    /// \u{1002b}: '𐀫'
-    pub const LINEAR_B_SYLLABLE_B002_RO: char = '𐀫';
-    /// \u{1002c}: '𐀬'
-    pub const LINEAR_B_SYLLABLE_B026_RU: char = '𐀬';
-    /// \u{1002d}: '𐀭'
-    pub const LINEAR_B_SYLLABLE_B031_SA: char = '𐀭';
-    /// \u{1002e}: '𐀮'
-    pub const LINEAR_B_SYLLABLE_B009_SE: char = '𐀮';
-    /// \u{1002f}: '𐀯'
-    pub const LINEAR_B_SYLLABLE_B041_SI: char = '𐀯';
-    /// \u{10030}: '𐀰'
-    pub const LINEAR_B_SYLLABLE_B012_SO: char = '𐀰';
-    /// \u{10031}: '𐀱'
-    pub const LINEAR_B_SYLLABLE_B058_SU: char = '𐀱';
-    /// \u{10032}: '𐀲'
-    pub const LINEAR_B_SYLLABLE_B059_TA: char = '𐀲';
-    /// \u{10033}: '𐀳'
-    pub const LINEAR_B_SYLLABLE_B004_TE: char = '𐀳';
-    /// \u{10034}: '𐀴'
-    pub const LINEAR_B_SYLLABLE_B037_TI: char = '𐀴';
-    /// \u{10035}: '𐀵'
-    pub const LINEAR_B_SYLLABLE_B005_TO: char = '𐀵';
-    /// \u{10036}: '𐀶'
-    pub const LINEAR_B_SYLLABLE_B069_TU: char = '𐀶';
-    /// \u{10037}: '𐀷'
-    pub const LINEAR_B_SYLLABLE_B054_WA: char = '𐀷';
-    /// \u{10038}: '𐀸'
-    pub const LINEAR_B_SYLLABLE_B075_WE: char = '𐀸';
-    /// \u{10039}: '𐀹'
-    pub const LINEAR_B_SYLLABLE_B040_WI: char = '𐀹';
-    /// \u{1003a}: '𐀺'
-    pub const LINEAR_B_SYLLABLE_B042_WO: char = '𐀺';
-    /// \u{1003c}: '𐀼'
-    pub const LINEAR_B_SYLLABLE_B017_ZA: char = '𐀼';
-    /// \u{1003d}: '𐀽'
-    pub const LINEAR_B_SYLLABLE_B074_ZE: char = '𐀽';
-    /// \u{1003f}: '𐀿'
-    pub const LINEAR_B_SYLLABLE_B020_ZO: char = '𐀿';
-    /// \u{10040}: '𐁀'
-    pub const LINEAR_B_SYLLABLE_B025_A2: char = '𐁀';
-    /// \u{10041}: '𐁁'
-    pub const LINEAR_B_SYLLABLE_B043_A3: char = '𐁁';
-    /// \u{10042}: '𐁂'
-    pub const LINEAR_B_SYLLABLE_B085_AU: char = '𐁂';
-    /// \u{10043}: '𐁃'
-    pub const LINEAR_B_SYLLABLE_B071_DWE: char = '𐁃';
-    /// \u{10044}: '𐁄'
-    pub const LINEAR_B_SYLLABLE_B090_DWO: char = '𐁄';
-    /// \u{10045}: '𐁅'
-    pub const LINEAR_B_SYLLABLE_B048_NWA: char = '𐁅';
-    /// \u{10046}: '𐁆'
-    pub const LINEAR_B_SYLLABLE_B029_PU2: char = '𐁆';
-    /// \u{10047}: '𐁇'
-    pub const LINEAR_B_SYLLABLE_B062_PTE: char = '𐁇';
-    /// \u{10048}: '𐁈'
-    pub const LINEAR_B_SYLLABLE_B076_RA2: char = '𐁈';
-    /// \u{10049}: '𐁉'
-    pub const LINEAR_B_SYLLABLE_B033_RA3: char = '𐁉';
-    /// \u{1004a}: '𐁊'
-    pub const LINEAR_B_SYLLABLE_B068_RO2: char = '𐁊';
-    /// \u{1004b}: '𐁋'
-    pub const LINEAR_B_SYLLABLE_B066_TA2: char = '𐁋';
-    /// \u{1004c}: '𐁌'
-    pub const LINEAR_B_SYLLABLE_B087_TWE: char = '𐁌';
-    /// \u{1004d}: '𐁍'
-    pub const LINEAR_B_SYLLABLE_B091_TWO: char = '𐁍';
-    /// \u{10050}: '𐁐'
-    pub const LINEAR_B_SYMBOL_B018: char = '𐁐';
-    /// \u{10051}: '𐁑'
-    pub const LINEAR_B_SYMBOL_B019: char = '𐁑';
-    /// \u{10052}: '𐁒'
-    pub const LINEAR_B_SYMBOL_B022: char = '𐁒';
-    /// \u{10053}: '𐁓'
-    pub const LINEAR_B_SYMBOL_B034: char = '𐁓';
-    /// \u{10054}: '𐁔'
-    pub const LINEAR_B_SYMBOL_B047: char = '𐁔';
-    /// \u{10055}: '𐁕'
-    pub const LINEAR_B_SYMBOL_B049: char = '𐁕';
-    /// \u{10056}: '𐁖'
-    pub const LINEAR_B_SYMBOL_B056: char = '𐁖';
-    /// \u{10057}: '𐁗'
-    pub const LINEAR_B_SYMBOL_B063: char = '𐁗';
-    /// \u{10058}: '𐁘'
-    pub const LINEAR_B_SYMBOL_B064: char = '𐁘';
-    /// \u{10059}: '𐁙'
-    pub const LINEAR_B_SYMBOL_B079: char = '𐁙';
-    /// \u{1005a}: '𐁚'
-    pub const LINEAR_B_SYMBOL_B082: char = '𐁚';
-    /// \u{1005b}: '𐁛'
-    pub const LINEAR_B_SYMBOL_B083: char = '𐁛';
-    /// \u{1005c}: '𐁜'
-    pub const LINEAR_B_SYMBOL_B086: char = '𐁜';
-    /// \u{1005d}: '𐁝'
-    pub const LINEAR_B_SYMBOL_B089: char = '𐁝';
-}
 
 /// An enum to represent all characters in the LinearBSyllabary block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -361,96 +182,95 @@ pub enum LinearBSyllabary {
 
 impl Into<char> for LinearBSyllabary {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            LinearBSyllabary::LinearBSyllableB008A => LINEAR_B_SYLLABLE_B008_A,
-            LinearBSyllabary::LinearBSyllableB038E => LINEAR_B_SYLLABLE_B038_E,
-            LinearBSyllabary::LinearBSyllableB028I => LINEAR_B_SYLLABLE_B028_I,
-            LinearBSyllabary::LinearBSyllableB061O => LINEAR_B_SYLLABLE_B061_O,
-            LinearBSyllabary::LinearBSyllableB010U => LINEAR_B_SYLLABLE_B010_U,
-            LinearBSyllabary::LinearBSyllableB001Da => LINEAR_B_SYLLABLE_B001_DA,
-            LinearBSyllabary::LinearBSyllableB045De => LINEAR_B_SYLLABLE_B045_DE,
-            LinearBSyllabary::LinearBSyllableB007Di => LINEAR_B_SYLLABLE_B007_DI,
-            LinearBSyllabary::LinearBSyllableB014Do => LINEAR_B_SYLLABLE_B014_DO,
-            LinearBSyllabary::LinearBSyllableB051Du => LINEAR_B_SYLLABLE_B051_DU,
-            LinearBSyllabary::LinearBSyllableB057Ja => LINEAR_B_SYLLABLE_B057_JA,
-            LinearBSyllabary::LinearBSyllableB046Je => LINEAR_B_SYLLABLE_B046_JE,
-            LinearBSyllabary::LinearBSyllableB036Jo => LINEAR_B_SYLLABLE_B036_JO,
-            LinearBSyllabary::LinearBSyllableB065Ju => LINEAR_B_SYLLABLE_B065_JU,
-            LinearBSyllabary::LinearBSyllableB077Ka => LINEAR_B_SYLLABLE_B077_KA,
-            LinearBSyllabary::LinearBSyllableB044Ke => LINEAR_B_SYLLABLE_B044_KE,
-            LinearBSyllabary::LinearBSyllableB067Ki => LINEAR_B_SYLLABLE_B067_KI,
-            LinearBSyllabary::LinearBSyllableB070Ko => LINEAR_B_SYLLABLE_B070_KO,
-            LinearBSyllabary::LinearBSyllableB081Ku => LINEAR_B_SYLLABLE_B081_KU,
-            LinearBSyllabary::LinearBSyllableB080Ma => LINEAR_B_SYLLABLE_B080_MA,
-            LinearBSyllabary::LinearBSyllableB013Me => LINEAR_B_SYLLABLE_B013_ME,
-            LinearBSyllabary::LinearBSyllableB073Mi => LINEAR_B_SYLLABLE_B073_MI,
-            LinearBSyllabary::LinearBSyllableB015Mo => LINEAR_B_SYLLABLE_B015_MO,
-            LinearBSyllabary::LinearBSyllableB023Mu => LINEAR_B_SYLLABLE_B023_MU,
-            LinearBSyllabary::LinearBSyllableB006Na => LINEAR_B_SYLLABLE_B006_NA,
-            LinearBSyllabary::LinearBSyllableB024Ne => LINEAR_B_SYLLABLE_B024_NE,
-            LinearBSyllabary::LinearBSyllableB030Ni => LINEAR_B_SYLLABLE_B030_NI,
-            LinearBSyllabary::LinearBSyllableB052No => LINEAR_B_SYLLABLE_B052_NO,
-            LinearBSyllabary::LinearBSyllableB055Nu => LINEAR_B_SYLLABLE_B055_NU,
-            LinearBSyllabary::LinearBSyllableB003Pa => LINEAR_B_SYLLABLE_B003_PA,
-            LinearBSyllabary::LinearBSyllableB072Pe => LINEAR_B_SYLLABLE_B072_PE,
-            LinearBSyllabary::LinearBSyllableB039Pi => LINEAR_B_SYLLABLE_B039_PI,
-            LinearBSyllabary::LinearBSyllableB011Po => LINEAR_B_SYLLABLE_B011_PO,
-            LinearBSyllabary::LinearBSyllableB050Pu => LINEAR_B_SYLLABLE_B050_PU,
-            LinearBSyllabary::LinearBSyllableB016Qa => LINEAR_B_SYLLABLE_B016_QA,
-            LinearBSyllabary::LinearBSyllableB078Qe => LINEAR_B_SYLLABLE_B078_QE,
-            LinearBSyllabary::LinearBSyllableB021Qi => LINEAR_B_SYLLABLE_B021_QI,
-            LinearBSyllabary::LinearBSyllableB032Qo => LINEAR_B_SYLLABLE_B032_QO,
-            LinearBSyllabary::LinearBSyllableB060Ra => LINEAR_B_SYLLABLE_B060_RA,
-            LinearBSyllabary::LinearBSyllableB027Re => LINEAR_B_SYLLABLE_B027_RE,
-            LinearBSyllabary::LinearBSyllableB053Ri => LINEAR_B_SYLLABLE_B053_RI,
-            LinearBSyllabary::LinearBSyllableB002Ro => LINEAR_B_SYLLABLE_B002_RO,
-            LinearBSyllabary::LinearBSyllableB026Ru => LINEAR_B_SYLLABLE_B026_RU,
-            LinearBSyllabary::LinearBSyllableB031Sa => LINEAR_B_SYLLABLE_B031_SA,
-            LinearBSyllabary::LinearBSyllableB009Se => LINEAR_B_SYLLABLE_B009_SE,
-            LinearBSyllabary::LinearBSyllableB041Si => LINEAR_B_SYLLABLE_B041_SI,
-            LinearBSyllabary::LinearBSyllableB012So => LINEAR_B_SYLLABLE_B012_SO,
-            LinearBSyllabary::LinearBSyllableB058Su => LINEAR_B_SYLLABLE_B058_SU,
-            LinearBSyllabary::LinearBSyllableB059Ta => LINEAR_B_SYLLABLE_B059_TA,
-            LinearBSyllabary::LinearBSyllableB004Te => LINEAR_B_SYLLABLE_B004_TE,
-            LinearBSyllabary::LinearBSyllableB037Ti => LINEAR_B_SYLLABLE_B037_TI,
-            LinearBSyllabary::LinearBSyllableB005To => LINEAR_B_SYLLABLE_B005_TO,
-            LinearBSyllabary::LinearBSyllableB069Tu => LINEAR_B_SYLLABLE_B069_TU,
-            LinearBSyllabary::LinearBSyllableB054Wa => LINEAR_B_SYLLABLE_B054_WA,
-            LinearBSyllabary::LinearBSyllableB075We => LINEAR_B_SYLLABLE_B075_WE,
-            LinearBSyllabary::LinearBSyllableB040Wi => LINEAR_B_SYLLABLE_B040_WI,
-            LinearBSyllabary::LinearBSyllableB042Wo => LINEAR_B_SYLLABLE_B042_WO,
-            LinearBSyllabary::LinearBSyllableB017Za => LINEAR_B_SYLLABLE_B017_ZA,
-            LinearBSyllabary::LinearBSyllableB074Ze => LINEAR_B_SYLLABLE_B074_ZE,
-            LinearBSyllabary::LinearBSyllableB020Zo => LINEAR_B_SYLLABLE_B020_ZO,
-            LinearBSyllabary::LinearBSyllableB025A2 => LINEAR_B_SYLLABLE_B025_A2,
-            LinearBSyllabary::LinearBSyllableB043A3 => LINEAR_B_SYLLABLE_B043_A3,
-            LinearBSyllabary::LinearBSyllableB085Au => LINEAR_B_SYLLABLE_B085_AU,
-            LinearBSyllabary::LinearBSyllableB071Dwe => LINEAR_B_SYLLABLE_B071_DWE,
-            LinearBSyllabary::LinearBSyllableB090Dwo => LINEAR_B_SYLLABLE_B090_DWO,
-            LinearBSyllabary::LinearBSyllableB048Nwa => LINEAR_B_SYLLABLE_B048_NWA,
-            LinearBSyllabary::LinearBSyllableB029Pu2 => LINEAR_B_SYLLABLE_B029_PU2,
-            LinearBSyllabary::LinearBSyllableB062Pte => LINEAR_B_SYLLABLE_B062_PTE,
-            LinearBSyllabary::LinearBSyllableB076Ra2 => LINEAR_B_SYLLABLE_B076_RA2,
-            LinearBSyllabary::LinearBSyllableB033Ra3 => LINEAR_B_SYLLABLE_B033_RA3,
-            LinearBSyllabary::LinearBSyllableB068Ro2 => LINEAR_B_SYLLABLE_B068_RO2,
-            LinearBSyllabary::LinearBSyllableB066Ta2 => LINEAR_B_SYLLABLE_B066_TA2,
-            LinearBSyllabary::LinearBSyllableB087Twe => LINEAR_B_SYLLABLE_B087_TWE,
-            LinearBSyllabary::LinearBSyllableB091Two => LINEAR_B_SYLLABLE_B091_TWO,
-            LinearBSyllabary::LinearBSymbolB018 => LINEAR_B_SYMBOL_B018,
-            LinearBSyllabary::LinearBSymbolB019 => LINEAR_B_SYMBOL_B019,
-            LinearBSyllabary::LinearBSymbolB022 => LINEAR_B_SYMBOL_B022,
-            LinearBSyllabary::LinearBSymbolB034 => LINEAR_B_SYMBOL_B034,
-            LinearBSyllabary::LinearBSymbolB047 => LINEAR_B_SYMBOL_B047,
-            LinearBSyllabary::LinearBSymbolB049 => LINEAR_B_SYMBOL_B049,
-            LinearBSyllabary::LinearBSymbolB056 => LINEAR_B_SYMBOL_B056,
-            LinearBSyllabary::LinearBSymbolB063 => LINEAR_B_SYMBOL_B063,
-            LinearBSyllabary::LinearBSymbolB064 => LINEAR_B_SYMBOL_B064,
-            LinearBSyllabary::LinearBSymbolB079 => LINEAR_B_SYMBOL_B079,
-            LinearBSyllabary::LinearBSymbolB082 => LINEAR_B_SYMBOL_B082,
-            LinearBSyllabary::LinearBSymbolB083 => LINEAR_B_SYMBOL_B083,
-            LinearBSyllabary::LinearBSymbolB086 => LINEAR_B_SYMBOL_B086,
-            LinearBSyllabary::LinearBSymbolB089 => LINEAR_B_SYMBOL_B089,
+            LinearBSyllabary::LinearBSyllableB008A => '𐀀',
+            LinearBSyllabary::LinearBSyllableB038E => '𐀁',
+            LinearBSyllabary::LinearBSyllableB028I => '𐀂',
+            LinearBSyllabary::LinearBSyllableB061O => '𐀃',
+            LinearBSyllabary::LinearBSyllableB010U => '𐀄',
+            LinearBSyllabary::LinearBSyllableB001Da => '𐀅',
+            LinearBSyllabary::LinearBSyllableB045De => '𐀆',
+            LinearBSyllabary::LinearBSyllableB007Di => '𐀇',
+            LinearBSyllabary::LinearBSyllableB014Do => '𐀈',
+            LinearBSyllabary::LinearBSyllableB051Du => '𐀉',
+            LinearBSyllabary::LinearBSyllableB057Ja => '𐀊',
+            LinearBSyllabary::LinearBSyllableB046Je => '𐀋',
+            LinearBSyllabary::LinearBSyllableB036Jo => '𐀍',
+            LinearBSyllabary::LinearBSyllableB065Ju => '𐀎',
+            LinearBSyllabary::LinearBSyllableB077Ka => '𐀏',
+            LinearBSyllabary::LinearBSyllableB044Ke => '𐀐',
+            LinearBSyllabary::LinearBSyllableB067Ki => '𐀑',
+            LinearBSyllabary::LinearBSyllableB070Ko => '𐀒',
+            LinearBSyllabary::LinearBSyllableB081Ku => '𐀓',
+            LinearBSyllabary::LinearBSyllableB080Ma => '𐀔',
+            LinearBSyllabary::LinearBSyllableB013Me => '𐀕',
+            LinearBSyllabary::LinearBSyllableB073Mi => '𐀖',
+            LinearBSyllabary::LinearBSyllableB015Mo => '𐀗',
+            LinearBSyllabary::LinearBSyllableB023Mu => '𐀘',
+            LinearBSyllabary::LinearBSyllableB006Na => '𐀙',
+            LinearBSyllabary::LinearBSyllableB024Ne => '𐀚',
+            LinearBSyllabary::LinearBSyllableB030Ni => '𐀛',
+            LinearBSyllabary::LinearBSyllableB052No => '𐀜',
+            LinearBSyllabary::LinearBSyllableB055Nu => '𐀝',
+            LinearBSyllabary::LinearBSyllableB003Pa => '𐀞',
+            LinearBSyllabary::LinearBSyllableB072Pe => '𐀟',
+            LinearBSyllabary::LinearBSyllableB039Pi => '𐀠',
+            LinearBSyllabary::LinearBSyllableB011Po => '𐀡',
+            LinearBSyllabary::LinearBSyllableB050Pu => '𐀢',
+            LinearBSyllabary::LinearBSyllableB016Qa => '𐀣',
+            LinearBSyllabary::LinearBSyllableB078Qe => '𐀤',
+            LinearBSyllabary::LinearBSyllableB021Qi => '𐀥',
+            LinearBSyllabary::LinearBSyllableB032Qo => '𐀦',
+            LinearBSyllabary::LinearBSyllableB060Ra => '𐀨',
+            LinearBSyllabary::LinearBSyllableB027Re => '𐀩',
+            LinearBSyllabary::LinearBSyllableB053Ri => '𐀪',
+            LinearBSyllabary::LinearBSyllableB002Ro => '𐀫',
+            LinearBSyllabary::LinearBSyllableB026Ru => '𐀬',
+            LinearBSyllabary::LinearBSyllableB031Sa => '𐀭',
+            LinearBSyllabary::LinearBSyllableB009Se => '𐀮',
+            LinearBSyllabary::LinearBSyllableB041Si => '𐀯',
+            LinearBSyllabary::LinearBSyllableB012So => '𐀰',
+            LinearBSyllabary::LinearBSyllableB058Su => '𐀱',
+            LinearBSyllabary::LinearBSyllableB059Ta => '𐀲',
+            LinearBSyllabary::LinearBSyllableB004Te => '𐀳',
+            LinearBSyllabary::LinearBSyllableB037Ti => '𐀴',
+            LinearBSyllabary::LinearBSyllableB005To => '𐀵',
+            LinearBSyllabary::LinearBSyllableB069Tu => '𐀶',
+            LinearBSyllabary::LinearBSyllableB054Wa => '𐀷',
+            LinearBSyllabary::LinearBSyllableB075We => '𐀸',
+            LinearBSyllabary::LinearBSyllableB040Wi => '𐀹',
+            LinearBSyllabary::LinearBSyllableB042Wo => '𐀺',
+            LinearBSyllabary::LinearBSyllableB017Za => '𐀼',
+            LinearBSyllabary::LinearBSyllableB074Ze => '𐀽',
+            LinearBSyllabary::LinearBSyllableB020Zo => '𐀿',
+            LinearBSyllabary::LinearBSyllableB025A2 => '𐁀',
+            LinearBSyllabary::LinearBSyllableB043A3 => '𐁁',
+            LinearBSyllabary::LinearBSyllableB085Au => '𐁂',
+            LinearBSyllabary::LinearBSyllableB071Dwe => '𐁃',
+            LinearBSyllabary::LinearBSyllableB090Dwo => '𐁄',
+            LinearBSyllabary::LinearBSyllableB048Nwa => '𐁅',
+            LinearBSyllabary::LinearBSyllableB029Pu2 => '𐁆',
+            LinearBSyllabary::LinearBSyllableB062Pte => '𐁇',
+            LinearBSyllabary::LinearBSyllableB076Ra2 => '𐁈',
+            LinearBSyllabary::LinearBSyllableB033Ra3 => '𐁉',
+            LinearBSyllabary::LinearBSyllableB068Ro2 => '𐁊',
+            LinearBSyllabary::LinearBSyllableB066Ta2 => '𐁋',
+            LinearBSyllabary::LinearBSyllableB087Twe => '𐁌',
+            LinearBSyllabary::LinearBSyllableB091Two => '𐁍',
+            LinearBSyllabary::LinearBSymbolB018 => '𐁐',
+            LinearBSyllabary::LinearBSymbolB019 => '𐁑',
+            LinearBSyllabary::LinearBSymbolB022 => '𐁒',
+            LinearBSyllabary::LinearBSymbolB034 => '𐁓',
+            LinearBSyllabary::LinearBSymbolB047 => '𐁔',
+            LinearBSyllabary::LinearBSymbolB049 => '𐁕',
+            LinearBSyllabary::LinearBSymbolB056 => '𐁖',
+            LinearBSyllabary::LinearBSymbolB063 => '𐁗',
+            LinearBSyllabary::LinearBSymbolB064 => '𐁘',
+            LinearBSyllabary::LinearBSymbolB079 => '𐁙',
+            LinearBSyllabary::LinearBSymbolB082 => '𐁚',
+            LinearBSyllabary::LinearBSymbolB083 => '𐁛',
+            LinearBSyllabary::LinearBSymbolB086 => '𐁜',
+            LinearBSyllabary::LinearBSymbolB089 => '𐁝',
         }
     }
 }
@@ -458,96 +278,95 @@ impl Into<char> for LinearBSyllabary {
 impl std::convert::TryFrom<char> for LinearBSyllabary {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LINEAR_B_SYLLABLE_B008_A => Ok(LinearBSyllabary::LinearBSyllableB008A),
-            LINEAR_B_SYLLABLE_B038_E => Ok(LinearBSyllabary::LinearBSyllableB038E),
-            LINEAR_B_SYLLABLE_B028_I => Ok(LinearBSyllabary::LinearBSyllableB028I),
-            LINEAR_B_SYLLABLE_B061_O => Ok(LinearBSyllabary::LinearBSyllableB061O),
-            LINEAR_B_SYLLABLE_B010_U => Ok(LinearBSyllabary::LinearBSyllableB010U),
-            LINEAR_B_SYLLABLE_B001_DA => Ok(LinearBSyllabary::LinearBSyllableB001Da),
-            LINEAR_B_SYLLABLE_B045_DE => Ok(LinearBSyllabary::LinearBSyllableB045De),
-            LINEAR_B_SYLLABLE_B007_DI => Ok(LinearBSyllabary::LinearBSyllableB007Di),
-            LINEAR_B_SYLLABLE_B014_DO => Ok(LinearBSyllabary::LinearBSyllableB014Do),
-            LINEAR_B_SYLLABLE_B051_DU => Ok(LinearBSyllabary::LinearBSyllableB051Du),
-            LINEAR_B_SYLLABLE_B057_JA => Ok(LinearBSyllabary::LinearBSyllableB057Ja),
-            LINEAR_B_SYLLABLE_B046_JE => Ok(LinearBSyllabary::LinearBSyllableB046Je),
-            LINEAR_B_SYLLABLE_B036_JO => Ok(LinearBSyllabary::LinearBSyllableB036Jo),
-            LINEAR_B_SYLLABLE_B065_JU => Ok(LinearBSyllabary::LinearBSyllableB065Ju),
-            LINEAR_B_SYLLABLE_B077_KA => Ok(LinearBSyllabary::LinearBSyllableB077Ka),
-            LINEAR_B_SYLLABLE_B044_KE => Ok(LinearBSyllabary::LinearBSyllableB044Ke),
-            LINEAR_B_SYLLABLE_B067_KI => Ok(LinearBSyllabary::LinearBSyllableB067Ki),
-            LINEAR_B_SYLLABLE_B070_KO => Ok(LinearBSyllabary::LinearBSyllableB070Ko),
-            LINEAR_B_SYLLABLE_B081_KU => Ok(LinearBSyllabary::LinearBSyllableB081Ku),
-            LINEAR_B_SYLLABLE_B080_MA => Ok(LinearBSyllabary::LinearBSyllableB080Ma),
-            LINEAR_B_SYLLABLE_B013_ME => Ok(LinearBSyllabary::LinearBSyllableB013Me),
-            LINEAR_B_SYLLABLE_B073_MI => Ok(LinearBSyllabary::LinearBSyllableB073Mi),
-            LINEAR_B_SYLLABLE_B015_MO => Ok(LinearBSyllabary::LinearBSyllableB015Mo),
-            LINEAR_B_SYLLABLE_B023_MU => Ok(LinearBSyllabary::LinearBSyllableB023Mu),
-            LINEAR_B_SYLLABLE_B006_NA => Ok(LinearBSyllabary::LinearBSyllableB006Na),
-            LINEAR_B_SYLLABLE_B024_NE => Ok(LinearBSyllabary::LinearBSyllableB024Ne),
-            LINEAR_B_SYLLABLE_B030_NI => Ok(LinearBSyllabary::LinearBSyllableB030Ni),
-            LINEAR_B_SYLLABLE_B052_NO => Ok(LinearBSyllabary::LinearBSyllableB052No),
-            LINEAR_B_SYLLABLE_B055_NU => Ok(LinearBSyllabary::LinearBSyllableB055Nu),
-            LINEAR_B_SYLLABLE_B003_PA => Ok(LinearBSyllabary::LinearBSyllableB003Pa),
-            LINEAR_B_SYLLABLE_B072_PE => Ok(LinearBSyllabary::LinearBSyllableB072Pe),
-            LINEAR_B_SYLLABLE_B039_PI => Ok(LinearBSyllabary::LinearBSyllableB039Pi),
-            LINEAR_B_SYLLABLE_B011_PO => Ok(LinearBSyllabary::LinearBSyllableB011Po),
-            LINEAR_B_SYLLABLE_B050_PU => Ok(LinearBSyllabary::LinearBSyllableB050Pu),
-            LINEAR_B_SYLLABLE_B016_QA => Ok(LinearBSyllabary::LinearBSyllableB016Qa),
-            LINEAR_B_SYLLABLE_B078_QE => Ok(LinearBSyllabary::LinearBSyllableB078Qe),
-            LINEAR_B_SYLLABLE_B021_QI => Ok(LinearBSyllabary::LinearBSyllableB021Qi),
-            LINEAR_B_SYLLABLE_B032_QO => Ok(LinearBSyllabary::LinearBSyllableB032Qo),
-            LINEAR_B_SYLLABLE_B060_RA => Ok(LinearBSyllabary::LinearBSyllableB060Ra),
-            LINEAR_B_SYLLABLE_B027_RE => Ok(LinearBSyllabary::LinearBSyllableB027Re),
-            LINEAR_B_SYLLABLE_B053_RI => Ok(LinearBSyllabary::LinearBSyllableB053Ri),
-            LINEAR_B_SYLLABLE_B002_RO => Ok(LinearBSyllabary::LinearBSyllableB002Ro),
-            LINEAR_B_SYLLABLE_B026_RU => Ok(LinearBSyllabary::LinearBSyllableB026Ru),
-            LINEAR_B_SYLLABLE_B031_SA => Ok(LinearBSyllabary::LinearBSyllableB031Sa),
-            LINEAR_B_SYLLABLE_B009_SE => Ok(LinearBSyllabary::LinearBSyllableB009Se),
-            LINEAR_B_SYLLABLE_B041_SI => Ok(LinearBSyllabary::LinearBSyllableB041Si),
-            LINEAR_B_SYLLABLE_B012_SO => Ok(LinearBSyllabary::LinearBSyllableB012So),
-            LINEAR_B_SYLLABLE_B058_SU => Ok(LinearBSyllabary::LinearBSyllableB058Su),
-            LINEAR_B_SYLLABLE_B059_TA => Ok(LinearBSyllabary::LinearBSyllableB059Ta),
-            LINEAR_B_SYLLABLE_B004_TE => Ok(LinearBSyllabary::LinearBSyllableB004Te),
-            LINEAR_B_SYLLABLE_B037_TI => Ok(LinearBSyllabary::LinearBSyllableB037Ti),
-            LINEAR_B_SYLLABLE_B005_TO => Ok(LinearBSyllabary::LinearBSyllableB005To),
-            LINEAR_B_SYLLABLE_B069_TU => Ok(LinearBSyllabary::LinearBSyllableB069Tu),
-            LINEAR_B_SYLLABLE_B054_WA => Ok(LinearBSyllabary::LinearBSyllableB054Wa),
-            LINEAR_B_SYLLABLE_B075_WE => Ok(LinearBSyllabary::LinearBSyllableB075We),
-            LINEAR_B_SYLLABLE_B040_WI => Ok(LinearBSyllabary::LinearBSyllableB040Wi),
-            LINEAR_B_SYLLABLE_B042_WO => Ok(LinearBSyllabary::LinearBSyllableB042Wo),
-            LINEAR_B_SYLLABLE_B017_ZA => Ok(LinearBSyllabary::LinearBSyllableB017Za),
-            LINEAR_B_SYLLABLE_B074_ZE => Ok(LinearBSyllabary::LinearBSyllableB074Ze),
-            LINEAR_B_SYLLABLE_B020_ZO => Ok(LinearBSyllabary::LinearBSyllableB020Zo),
-            LINEAR_B_SYLLABLE_B025_A2 => Ok(LinearBSyllabary::LinearBSyllableB025A2),
-            LINEAR_B_SYLLABLE_B043_A3 => Ok(LinearBSyllabary::LinearBSyllableB043A3),
-            LINEAR_B_SYLLABLE_B085_AU => Ok(LinearBSyllabary::LinearBSyllableB085Au),
-            LINEAR_B_SYLLABLE_B071_DWE => Ok(LinearBSyllabary::LinearBSyllableB071Dwe),
-            LINEAR_B_SYLLABLE_B090_DWO => Ok(LinearBSyllabary::LinearBSyllableB090Dwo),
-            LINEAR_B_SYLLABLE_B048_NWA => Ok(LinearBSyllabary::LinearBSyllableB048Nwa),
-            LINEAR_B_SYLLABLE_B029_PU2 => Ok(LinearBSyllabary::LinearBSyllableB029Pu2),
-            LINEAR_B_SYLLABLE_B062_PTE => Ok(LinearBSyllabary::LinearBSyllableB062Pte),
-            LINEAR_B_SYLLABLE_B076_RA2 => Ok(LinearBSyllabary::LinearBSyllableB076Ra2),
-            LINEAR_B_SYLLABLE_B033_RA3 => Ok(LinearBSyllabary::LinearBSyllableB033Ra3),
-            LINEAR_B_SYLLABLE_B068_RO2 => Ok(LinearBSyllabary::LinearBSyllableB068Ro2),
-            LINEAR_B_SYLLABLE_B066_TA2 => Ok(LinearBSyllabary::LinearBSyllableB066Ta2),
-            LINEAR_B_SYLLABLE_B087_TWE => Ok(LinearBSyllabary::LinearBSyllableB087Twe),
-            LINEAR_B_SYLLABLE_B091_TWO => Ok(LinearBSyllabary::LinearBSyllableB091Two),
-            LINEAR_B_SYMBOL_B018 => Ok(LinearBSyllabary::LinearBSymbolB018),
-            LINEAR_B_SYMBOL_B019 => Ok(LinearBSyllabary::LinearBSymbolB019),
-            LINEAR_B_SYMBOL_B022 => Ok(LinearBSyllabary::LinearBSymbolB022),
-            LINEAR_B_SYMBOL_B034 => Ok(LinearBSyllabary::LinearBSymbolB034),
-            LINEAR_B_SYMBOL_B047 => Ok(LinearBSyllabary::LinearBSymbolB047),
-            LINEAR_B_SYMBOL_B049 => Ok(LinearBSyllabary::LinearBSymbolB049),
-            LINEAR_B_SYMBOL_B056 => Ok(LinearBSyllabary::LinearBSymbolB056),
-            LINEAR_B_SYMBOL_B063 => Ok(LinearBSyllabary::LinearBSymbolB063),
-            LINEAR_B_SYMBOL_B064 => Ok(LinearBSyllabary::LinearBSymbolB064),
-            LINEAR_B_SYMBOL_B079 => Ok(LinearBSyllabary::LinearBSymbolB079),
-            LINEAR_B_SYMBOL_B082 => Ok(LinearBSyllabary::LinearBSymbolB082),
-            LINEAR_B_SYMBOL_B083 => Ok(LinearBSyllabary::LinearBSymbolB083),
-            LINEAR_B_SYMBOL_B086 => Ok(LinearBSyllabary::LinearBSymbolB086),
-            LINEAR_B_SYMBOL_B089 => Ok(LinearBSyllabary::LinearBSymbolB089),
+            '𐀀' => Ok(LinearBSyllabary::LinearBSyllableB008A),
+            '𐀁' => Ok(LinearBSyllabary::LinearBSyllableB038E),
+            '𐀂' => Ok(LinearBSyllabary::LinearBSyllableB028I),
+            '𐀃' => Ok(LinearBSyllabary::LinearBSyllableB061O),
+            '𐀄' => Ok(LinearBSyllabary::LinearBSyllableB010U),
+            '𐀅' => Ok(LinearBSyllabary::LinearBSyllableB001Da),
+            '𐀆' => Ok(LinearBSyllabary::LinearBSyllableB045De),
+            '𐀇' => Ok(LinearBSyllabary::LinearBSyllableB007Di),
+            '𐀈' => Ok(LinearBSyllabary::LinearBSyllableB014Do),
+            '𐀉' => Ok(LinearBSyllabary::LinearBSyllableB051Du),
+            '𐀊' => Ok(LinearBSyllabary::LinearBSyllableB057Ja),
+            '𐀋' => Ok(LinearBSyllabary::LinearBSyllableB046Je),
+            '𐀍' => Ok(LinearBSyllabary::LinearBSyllableB036Jo),
+            '𐀎' => Ok(LinearBSyllabary::LinearBSyllableB065Ju),
+            '𐀏' => Ok(LinearBSyllabary::LinearBSyllableB077Ka),
+            '𐀐' => Ok(LinearBSyllabary::LinearBSyllableB044Ke),
+            '𐀑' => Ok(LinearBSyllabary::LinearBSyllableB067Ki),
+            '𐀒' => Ok(LinearBSyllabary::LinearBSyllableB070Ko),
+            '𐀓' => Ok(LinearBSyllabary::LinearBSyllableB081Ku),
+            '𐀔' => Ok(LinearBSyllabary::LinearBSyllableB080Ma),
+            '𐀕' => Ok(LinearBSyllabary::LinearBSyllableB013Me),
+            '𐀖' => Ok(LinearBSyllabary::LinearBSyllableB073Mi),
+            '𐀗' => Ok(LinearBSyllabary::LinearBSyllableB015Mo),
+            '𐀘' => Ok(LinearBSyllabary::LinearBSyllableB023Mu),
+            '𐀙' => Ok(LinearBSyllabary::LinearBSyllableB006Na),
+            '𐀚' => Ok(LinearBSyllabary::LinearBSyllableB024Ne),
+            '𐀛' => Ok(LinearBSyllabary::LinearBSyllableB030Ni),
+            '𐀜' => Ok(LinearBSyllabary::LinearBSyllableB052No),
+            '𐀝' => Ok(LinearBSyllabary::LinearBSyllableB055Nu),
+            '𐀞' => Ok(LinearBSyllabary::LinearBSyllableB003Pa),
+            '𐀟' => Ok(LinearBSyllabary::LinearBSyllableB072Pe),
+            '𐀠' => Ok(LinearBSyllabary::LinearBSyllableB039Pi),
+            '𐀡' => Ok(LinearBSyllabary::LinearBSyllableB011Po),
+            '𐀢' => Ok(LinearBSyllabary::LinearBSyllableB050Pu),
+            '𐀣' => Ok(LinearBSyllabary::LinearBSyllableB016Qa),
+            '𐀤' => Ok(LinearBSyllabary::LinearBSyllableB078Qe),
+            '𐀥' => Ok(LinearBSyllabary::LinearBSyllableB021Qi),
+            '𐀦' => Ok(LinearBSyllabary::LinearBSyllableB032Qo),
+            '𐀨' => Ok(LinearBSyllabary::LinearBSyllableB060Ra),
+            '𐀩' => Ok(LinearBSyllabary::LinearBSyllableB027Re),
+            '𐀪' => Ok(LinearBSyllabary::LinearBSyllableB053Ri),
+            '𐀫' => Ok(LinearBSyllabary::LinearBSyllableB002Ro),
+            '𐀬' => Ok(LinearBSyllabary::LinearBSyllableB026Ru),
+            '𐀭' => Ok(LinearBSyllabary::LinearBSyllableB031Sa),
+            '𐀮' => Ok(LinearBSyllabary::LinearBSyllableB009Se),
+            '𐀯' => Ok(LinearBSyllabary::LinearBSyllableB041Si),
+            '𐀰' => Ok(LinearBSyllabary::LinearBSyllableB012So),
+            '𐀱' => Ok(LinearBSyllabary::LinearBSyllableB058Su),
+            '𐀲' => Ok(LinearBSyllabary::LinearBSyllableB059Ta),
+            '𐀳' => Ok(LinearBSyllabary::LinearBSyllableB004Te),
+            '𐀴' => Ok(LinearBSyllabary::LinearBSyllableB037Ti),
+            '𐀵' => Ok(LinearBSyllabary::LinearBSyllableB005To),
+            '𐀶' => Ok(LinearBSyllabary::LinearBSyllableB069Tu),
+            '𐀷' => Ok(LinearBSyllabary::LinearBSyllableB054Wa),
+            '𐀸' => Ok(LinearBSyllabary::LinearBSyllableB075We),
+            '𐀹' => Ok(LinearBSyllabary::LinearBSyllableB040Wi),
+            '𐀺' => Ok(LinearBSyllabary::LinearBSyllableB042Wo),
+            '𐀼' => Ok(LinearBSyllabary::LinearBSyllableB017Za),
+            '𐀽' => Ok(LinearBSyllabary::LinearBSyllableB074Ze),
+            '𐀿' => Ok(LinearBSyllabary::LinearBSyllableB020Zo),
+            '𐁀' => Ok(LinearBSyllabary::LinearBSyllableB025A2),
+            '𐁁' => Ok(LinearBSyllabary::LinearBSyllableB043A3),
+            '𐁂' => Ok(LinearBSyllabary::LinearBSyllableB085Au),
+            '𐁃' => Ok(LinearBSyllabary::LinearBSyllableB071Dwe),
+            '𐁄' => Ok(LinearBSyllabary::LinearBSyllableB090Dwo),
+            '𐁅' => Ok(LinearBSyllabary::LinearBSyllableB048Nwa),
+            '𐁆' => Ok(LinearBSyllabary::LinearBSyllableB029Pu2),
+            '𐁇' => Ok(LinearBSyllabary::LinearBSyllableB062Pte),
+            '𐁈' => Ok(LinearBSyllabary::LinearBSyllableB076Ra2),
+            '𐁉' => Ok(LinearBSyllabary::LinearBSyllableB033Ra3),
+            '𐁊' => Ok(LinearBSyllabary::LinearBSyllableB068Ro2),
+            '𐁋' => Ok(LinearBSyllabary::LinearBSyllableB066Ta2),
+            '𐁌' => Ok(LinearBSyllabary::LinearBSyllableB087Twe),
+            '𐁍' => Ok(LinearBSyllabary::LinearBSyllableB091Two),
+            '𐁐' => Ok(LinearBSyllabary::LinearBSymbolB018),
+            '𐁑' => Ok(LinearBSyllabary::LinearBSymbolB019),
+            '𐁒' => Ok(LinearBSyllabary::LinearBSymbolB022),
+            '𐁓' => Ok(LinearBSyllabary::LinearBSymbolB034),
+            '𐁔' => Ok(LinearBSyllabary::LinearBSymbolB047),
+            '𐁕' => Ok(LinearBSyllabary::LinearBSymbolB049),
+            '𐁖' => Ok(LinearBSyllabary::LinearBSymbolB056),
+            '𐁗' => Ok(LinearBSyllabary::LinearBSymbolB063),
+            '𐁘' => Ok(LinearBSyllabary::LinearBSymbolB064),
+            '𐁙' => Ok(LinearBSyllabary::LinearBSymbolB079),
+            '𐁚' => Ok(LinearBSyllabary::LinearBSymbolB082),
+            '𐁛' => Ok(LinearBSyllabary::LinearBSymbolB083),
+            '𐁜' => Ok(LinearBSyllabary::LinearBSymbolB086),
+            '𐁝' => Ok(LinearBSyllabary::LinearBSymbolB089),
             _ => Err(()),
         }
     }

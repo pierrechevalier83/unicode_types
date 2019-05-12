@@ -1,126 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2150}: '⅐'
-    pub const VULGAR_FRACTION_ONE_SEVENTH: char = '⅐';
-    /// \u{2151}: '⅑'
-    pub const VULGAR_FRACTION_ONE_NINTH: char = '⅑';
-    /// \u{2152}: '⅒'
-    pub const VULGAR_FRACTION_ONE_TENTH: char = '⅒';
-    /// \u{2153}: '⅓'
-    pub const VULGAR_FRACTION_ONE_THIRD: char = '⅓';
-    /// \u{2154}: '⅔'
-    pub const VULGAR_FRACTION_TWO_THIRDS: char = '⅔';
-    /// \u{2155}: '⅕'
-    pub const VULGAR_FRACTION_ONE_FIFTH: char = '⅕';
-    /// \u{2156}: '⅖'
-    pub const VULGAR_FRACTION_TWO_FIFTHS: char = '⅖';
-    /// \u{2157}: '⅗'
-    pub const VULGAR_FRACTION_THREE_FIFTHS: char = '⅗';
-    /// \u{2158}: '⅘'
-    pub const VULGAR_FRACTION_FOUR_FIFTHS: char = '⅘';
-    /// \u{2159}: '⅙'
-    pub const VULGAR_FRACTION_ONE_SIXTH: char = '⅙';
-    /// \u{215a}: '⅚'
-    pub const VULGAR_FRACTION_FIVE_SIXTHS: char = '⅚';
-    /// \u{215b}: '⅛'
-    pub const VULGAR_FRACTION_ONE_EIGHTH: char = '⅛';
-    /// \u{215c}: '⅜'
-    pub const VULGAR_FRACTION_THREE_EIGHTHS: char = '⅜';
-    /// \u{215d}: '⅝'
-    pub const VULGAR_FRACTION_FIVE_EIGHTHS: char = '⅝';
-    /// \u{215e}: '⅞'
-    pub const VULGAR_FRACTION_SEVEN_EIGHTHS: char = '⅞';
-    /// \u{215f}: '⅟'
-    pub const FRACTION_NUMERATOR_ONE: char = '⅟';
-    /// \u{2160}: 'Ⅰ'
-    pub const ROMAN_NUMERAL_ONE: char = 'Ⅰ';
-    /// \u{2161}: 'Ⅱ'
-    pub const ROMAN_NUMERAL_TWO: char = 'Ⅱ';
-    /// \u{2162}: 'Ⅲ'
-    pub const ROMAN_NUMERAL_THREE: char = 'Ⅲ';
-    /// \u{2163}: 'Ⅳ'
-    pub const ROMAN_NUMERAL_FOUR: char = 'Ⅳ';
-    /// \u{2164}: 'Ⅴ'
-    pub const ROMAN_NUMERAL_FIVE: char = 'Ⅴ';
-    /// \u{2165}: 'Ⅵ'
-    pub const ROMAN_NUMERAL_SIX: char = 'Ⅵ';
-    /// \u{2166}: 'Ⅶ'
-    pub const ROMAN_NUMERAL_SEVEN: char = 'Ⅶ';
-    /// \u{2167}: 'Ⅷ'
-    pub const ROMAN_NUMERAL_EIGHT: char = 'Ⅷ';
-    /// \u{2168}: 'Ⅸ'
-    pub const ROMAN_NUMERAL_NINE: char = 'Ⅸ';
-    /// \u{2169}: 'Ⅹ'
-    pub const ROMAN_NUMERAL_TEN: char = 'Ⅹ';
-    /// \u{216a}: 'Ⅺ'
-    pub const ROMAN_NUMERAL_ELEVEN: char = 'Ⅺ';
-    /// \u{216b}: 'Ⅻ'
-    pub const ROMAN_NUMERAL_TWELVE: char = 'Ⅻ';
-    /// \u{216c}: 'Ⅼ'
-    pub const ROMAN_NUMERAL_FIFTY: char = 'Ⅼ';
-    /// \u{216d}: 'Ⅽ'
-    pub const ROMAN_NUMERAL_ONE_HUNDRED: char = 'Ⅽ';
-    /// \u{216e}: 'Ⅾ'
-    pub const ROMAN_NUMERAL_FIVE_HUNDRED: char = 'Ⅾ';
-    /// \u{216f}: 'Ⅿ'
-    pub const ROMAN_NUMERAL_ONE_THOUSAND: char = 'Ⅿ';
-    /// \u{2170}: 'ⅰ'
-    pub const SMALL_ROMAN_NUMERAL_ONE: char = 'ⅰ';
-    /// \u{2171}: 'ⅱ'
-    pub const SMALL_ROMAN_NUMERAL_TWO: char = 'ⅱ';
-    /// \u{2172}: 'ⅲ'
-    pub const SMALL_ROMAN_NUMERAL_THREE: char = 'ⅲ';
-    /// \u{2173}: 'ⅳ'
-    pub const SMALL_ROMAN_NUMERAL_FOUR: char = 'ⅳ';
-    /// \u{2174}: 'ⅴ'
-    pub const SMALL_ROMAN_NUMERAL_FIVE: char = 'ⅴ';
-    /// \u{2175}: 'ⅵ'
-    pub const SMALL_ROMAN_NUMERAL_SIX: char = 'ⅵ';
-    /// \u{2176}: 'ⅶ'
-    pub const SMALL_ROMAN_NUMERAL_SEVEN: char = 'ⅶ';
-    /// \u{2177}: 'ⅷ'
-    pub const SMALL_ROMAN_NUMERAL_EIGHT: char = 'ⅷ';
-    /// \u{2178}: 'ⅸ'
-    pub const SMALL_ROMAN_NUMERAL_NINE: char = 'ⅸ';
-    /// \u{2179}: 'ⅹ'
-    pub const SMALL_ROMAN_NUMERAL_TEN: char = 'ⅹ';
-    /// \u{217a}: 'ⅺ'
-    pub const SMALL_ROMAN_NUMERAL_ELEVEN: char = 'ⅺ';
-    /// \u{217b}: 'ⅻ'
-    pub const SMALL_ROMAN_NUMERAL_TWELVE: char = 'ⅻ';
-    /// \u{217c}: 'ⅼ'
-    pub const SMALL_ROMAN_NUMERAL_FIFTY: char = 'ⅼ';
-    /// \u{217d}: 'ⅽ'
-    pub const SMALL_ROMAN_NUMERAL_ONE_HUNDRED: char = 'ⅽ';
-    /// \u{217e}: 'ⅾ'
-    pub const SMALL_ROMAN_NUMERAL_FIVE_HUNDRED: char = 'ⅾ';
-    /// \u{217f}: 'ⅿ'
-    pub const SMALL_ROMAN_NUMERAL_ONE_THOUSAND: char = 'ⅿ';
-    /// \u{2180}: 'ↀ'
-    pub const ROMAN_NUMERAL_ONE_THOUSAND_C_D: char = 'ↀ';
-    /// \u{2181}: 'ↁ'
-    pub const ROMAN_NUMERAL_FIVE_THOUSAND: char = 'ↁ';
-    /// \u{2182}: 'ↂ'
-    pub const ROMAN_NUMERAL_TEN_THOUSAND: char = 'ↂ';
-    /// \u{2183}: 'Ↄ'
-    pub const ROMAN_NUMERAL_REVERSED_ONE_HUNDRED: char = 'Ↄ';
-    /// \u{2184}: 'ↄ'
-    pub const LATIN_SMALL_LETTER_REVERSED_C: char = 'ↄ';
-    /// \u{2185}: 'ↅ'
-    pub const ROMAN_NUMERAL_SIX_LATE_FORM: char = 'ↅ';
-    /// \u{2186}: 'ↆ'
-    pub const ROMAN_NUMERAL_FIFTY_EARLY_FORM: char = 'ↆ';
-    /// \u{2187}: 'ↇ'
-    pub const ROMAN_NUMERAL_FIFTY_THOUSAND: char = 'ↇ';
-    /// \u{2188}: 'ↈ'
-    pub const ROMAN_NUMERAL_ONE_HUNDRED_THOUSAND: char = 'ↈ';
-    /// \u{2189}: '↉'
-    pub const VULGAR_FRACTION_ZERO_THIRDS: char = '↉';
-    /// \u{218a}: '↊'
-    pub const TURNED_DIGIT_TWO: char = '↊';
-    /// \u{218b}: '↋'
-    pub const TURNED_DIGIT_THREE: char = '↋';
-}
 
 /// An enum to represent all characters in the NumberForms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -249,68 +126,67 @@ pub enum NumberForms {
 
 impl Into<char> for NumberForms {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            NumberForms::VulgarFractionOneSeventh => VULGAR_FRACTION_ONE_SEVENTH,
-            NumberForms::VulgarFractionOneNinth => VULGAR_FRACTION_ONE_NINTH,
-            NumberForms::VulgarFractionOneTenth => VULGAR_FRACTION_ONE_TENTH,
-            NumberForms::VulgarFractionOneThird => VULGAR_FRACTION_ONE_THIRD,
-            NumberForms::VulgarFractionTwoThirds => VULGAR_FRACTION_TWO_THIRDS,
-            NumberForms::VulgarFractionOneFifth => VULGAR_FRACTION_ONE_FIFTH,
-            NumberForms::VulgarFractionTwoFifths => VULGAR_FRACTION_TWO_FIFTHS,
-            NumberForms::VulgarFractionThreeFifths => VULGAR_FRACTION_THREE_FIFTHS,
-            NumberForms::VulgarFractionFourFifths => VULGAR_FRACTION_FOUR_FIFTHS,
-            NumberForms::VulgarFractionOneSixth => VULGAR_FRACTION_ONE_SIXTH,
-            NumberForms::VulgarFractionFiveSixths => VULGAR_FRACTION_FIVE_SIXTHS,
-            NumberForms::VulgarFractionOneEighth => VULGAR_FRACTION_ONE_EIGHTH,
-            NumberForms::VulgarFractionThreeEighths => VULGAR_FRACTION_THREE_EIGHTHS,
-            NumberForms::VulgarFractionFiveEighths => VULGAR_FRACTION_FIVE_EIGHTHS,
-            NumberForms::VulgarFractionSevenEighths => VULGAR_FRACTION_SEVEN_EIGHTHS,
-            NumberForms::FractionNumeratorOne => FRACTION_NUMERATOR_ONE,
-            NumberForms::RomanNumeralOne => ROMAN_NUMERAL_ONE,
-            NumberForms::RomanNumeralTwo => ROMAN_NUMERAL_TWO,
-            NumberForms::RomanNumeralThree => ROMAN_NUMERAL_THREE,
-            NumberForms::RomanNumeralFour => ROMAN_NUMERAL_FOUR,
-            NumberForms::RomanNumeralFive => ROMAN_NUMERAL_FIVE,
-            NumberForms::RomanNumeralSix => ROMAN_NUMERAL_SIX,
-            NumberForms::RomanNumeralSeven => ROMAN_NUMERAL_SEVEN,
-            NumberForms::RomanNumeralEight => ROMAN_NUMERAL_EIGHT,
-            NumberForms::RomanNumeralNine => ROMAN_NUMERAL_NINE,
-            NumberForms::RomanNumeralTen => ROMAN_NUMERAL_TEN,
-            NumberForms::RomanNumeralEleven => ROMAN_NUMERAL_ELEVEN,
-            NumberForms::RomanNumeralTwelve => ROMAN_NUMERAL_TWELVE,
-            NumberForms::RomanNumeralFifty => ROMAN_NUMERAL_FIFTY,
-            NumberForms::RomanNumeralOneHundred => ROMAN_NUMERAL_ONE_HUNDRED,
-            NumberForms::RomanNumeralFiveHundred => ROMAN_NUMERAL_FIVE_HUNDRED,
-            NumberForms::RomanNumeralOneThousand => ROMAN_NUMERAL_ONE_THOUSAND,
-            NumberForms::SmallRomanNumeralOne => SMALL_ROMAN_NUMERAL_ONE,
-            NumberForms::SmallRomanNumeralTwo => SMALL_ROMAN_NUMERAL_TWO,
-            NumberForms::SmallRomanNumeralThree => SMALL_ROMAN_NUMERAL_THREE,
-            NumberForms::SmallRomanNumeralFour => SMALL_ROMAN_NUMERAL_FOUR,
-            NumberForms::SmallRomanNumeralFive => SMALL_ROMAN_NUMERAL_FIVE,
-            NumberForms::SmallRomanNumeralSix => SMALL_ROMAN_NUMERAL_SIX,
-            NumberForms::SmallRomanNumeralSeven => SMALL_ROMAN_NUMERAL_SEVEN,
-            NumberForms::SmallRomanNumeralEight => SMALL_ROMAN_NUMERAL_EIGHT,
-            NumberForms::SmallRomanNumeralNine => SMALL_ROMAN_NUMERAL_NINE,
-            NumberForms::SmallRomanNumeralTen => SMALL_ROMAN_NUMERAL_TEN,
-            NumberForms::SmallRomanNumeralEleven => SMALL_ROMAN_NUMERAL_ELEVEN,
-            NumberForms::SmallRomanNumeralTwelve => SMALL_ROMAN_NUMERAL_TWELVE,
-            NumberForms::SmallRomanNumeralFifty => SMALL_ROMAN_NUMERAL_FIFTY,
-            NumberForms::SmallRomanNumeralOneHundred => SMALL_ROMAN_NUMERAL_ONE_HUNDRED,
-            NumberForms::SmallRomanNumeralFiveHundred => SMALL_ROMAN_NUMERAL_FIVE_HUNDRED,
-            NumberForms::SmallRomanNumeralOneThousand => SMALL_ROMAN_NUMERAL_ONE_THOUSAND,
-            NumberForms::RomanNumeralOneThousandCD => ROMAN_NUMERAL_ONE_THOUSAND_C_D,
-            NumberForms::RomanNumeralFiveThousand => ROMAN_NUMERAL_FIVE_THOUSAND,
-            NumberForms::RomanNumeralTenThousand => ROMAN_NUMERAL_TEN_THOUSAND,
-            NumberForms::RomanNumeralReversedOneHundred => ROMAN_NUMERAL_REVERSED_ONE_HUNDRED,
-            NumberForms::LatinSmallLetterReversedC => LATIN_SMALL_LETTER_REVERSED_C,
-            NumberForms::RomanNumeralSixLateForm => ROMAN_NUMERAL_SIX_LATE_FORM,
-            NumberForms::RomanNumeralFiftyEarlyForm => ROMAN_NUMERAL_FIFTY_EARLY_FORM,
-            NumberForms::RomanNumeralFiftyThousand => ROMAN_NUMERAL_FIFTY_THOUSAND,
-            NumberForms::RomanNumeralOneHundredThousand => ROMAN_NUMERAL_ONE_HUNDRED_THOUSAND,
-            NumberForms::VulgarFractionZeroThirds => VULGAR_FRACTION_ZERO_THIRDS,
-            NumberForms::TurnedDigitTwo => TURNED_DIGIT_TWO,
-            NumberForms::TurnedDigitThree => TURNED_DIGIT_THREE,
+            NumberForms::VulgarFractionOneSeventh => '⅐',
+            NumberForms::VulgarFractionOneNinth => '⅑',
+            NumberForms::VulgarFractionOneTenth => '⅒',
+            NumberForms::VulgarFractionOneThird => '⅓',
+            NumberForms::VulgarFractionTwoThirds => '⅔',
+            NumberForms::VulgarFractionOneFifth => '⅕',
+            NumberForms::VulgarFractionTwoFifths => '⅖',
+            NumberForms::VulgarFractionThreeFifths => '⅗',
+            NumberForms::VulgarFractionFourFifths => '⅘',
+            NumberForms::VulgarFractionOneSixth => '⅙',
+            NumberForms::VulgarFractionFiveSixths => '⅚',
+            NumberForms::VulgarFractionOneEighth => '⅛',
+            NumberForms::VulgarFractionThreeEighths => '⅜',
+            NumberForms::VulgarFractionFiveEighths => '⅝',
+            NumberForms::VulgarFractionSevenEighths => '⅞',
+            NumberForms::FractionNumeratorOne => '⅟',
+            NumberForms::RomanNumeralOne => 'Ⅰ',
+            NumberForms::RomanNumeralTwo => 'Ⅱ',
+            NumberForms::RomanNumeralThree => 'Ⅲ',
+            NumberForms::RomanNumeralFour => 'Ⅳ',
+            NumberForms::RomanNumeralFive => 'Ⅴ',
+            NumberForms::RomanNumeralSix => 'Ⅵ',
+            NumberForms::RomanNumeralSeven => 'Ⅶ',
+            NumberForms::RomanNumeralEight => 'Ⅷ',
+            NumberForms::RomanNumeralNine => 'Ⅸ',
+            NumberForms::RomanNumeralTen => 'Ⅹ',
+            NumberForms::RomanNumeralEleven => 'Ⅺ',
+            NumberForms::RomanNumeralTwelve => 'Ⅻ',
+            NumberForms::RomanNumeralFifty => 'Ⅼ',
+            NumberForms::RomanNumeralOneHundred => 'Ⅽ',
+            NumberForms::RomanNumeralFiveHundred => 'Ⅾ',
+            NumberForms::RomanNumeralOneThousand => 'Ⅿ',
+            NumberForms::SmallRomanNumeralOne => 'ⅰ',
+            NumberForms::SmallRomanNumeralTwo => 'ⅱ',
+            NumberForms::SmallRomanNumeralThree => 'ⅲ',
+            NumberForms::SmallRomanNumeralFour => 'ⅳ',
+            NumberForms::SmallRomanNumeralFive => 'ⅴ',
+            NumberForms::SmallRomanNumeralSix => 'ⅵ',
+            NumberForms::SmallRomanNumeralSeven => 'ⅶ',
+            NumberForms::SmallRomanNumeralEight => 'ⅷ',
+            NumberForms::SmallRomanNumeralNine => 'ⅸ',
+            NumberForms::SmallRomanNumeralTen => 'ⅹ',
+            NumberForms::SmallRomanNumeralEleven => 'ⅺ',
+            NumberForms::SmallRomanNumeralTwelve => 'ⅻ',
+            NumberForms::SmallRomanNumeralFifty => 'ⅼ',
+            NumberForms::SmallRomanNumeralOneHundred => 'ⅽ',
+            NumberForms::SmallRomanNumeralFiveHundred => 'ⅾ',
+            NumberForms::SmallRomanNumeralOneThousand => 'ⅿ',
+            NumberForms::RomanNumeralOneThousandCD => 'ↀ',
+            NumberForms::RomanNumeralFiveThousand => 'ↁ',
+            NumberForms::RomanNumeralTenThousand => 'ↂ',
+            NumberForms::RomanNumeralReversedOneHundred => 'Ↄ',
+            NumberForms::LatinSmallLetterReversedC => 'ↄ',
+            NumberForms::RomanNumeralSixLateForm => 'ↅ',
+            NumberForms::RomanNumeralFiftyEarlyForm => 'ↆ',
+            NumberForms::RomanNumeralFiftyThousand => 'ↇ',
+            NumberForms::RomanNumeralOneHundredThousand => 'ↈ',
+            NumberForms::VulgarFractionZeroThirds => '↉',
+            NumberForms::TurnedDigitTwo => '↊',
+            NumberForms::TurnedDigitThree => '↋',
         }
     }
 }
@@ -318,68 +194,67 @@ impl Into<char> for NumberForms {
 impl std::convert::TryFrom<char> for NumberForms {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            VULGAR_FRACTION_ONE_SEVENTH => Ok(NumberForms::VulgarFractionOneSeventh),
-            VULGAR_FRACTION_ONE_NINTH => Ok(NumberForms::VulgarFractionOneNinth),
-            VULGAR_FRACTION_ONE_TENTH => Ok(NumberForms::VulgarFractionOneTenth),
-            VULGAR_FRACTION_ONE_THIRD => Ok(NumberForms::VulgarFractionOneThird),
-            VULGAR_FRACTION_TWO_THIRDS => Ok(NumberForms::VulgarFractionTwoThirds),
-            VULGAR_FRACTION_ONE_FIFTH => Ok(NumberForms::VulgarFractionOneFifth),
-            VULGAR_FRACTION_TWO_FIFTHS => Ok(NumberForms::VulgarFractionTwoFifths),
-            VULGAR_FRACTION_THREE_FIFTHS => Ok(NumberForms::VulgarFractionThreeFifths),
-            VULGAR_FRACTION_FOUR_FIFTHS => Ok(NumberForms::VulgarFractionFourFifths),
-            VULGAR_FRACTION_ONE_SIXTH => Ok(NumberForms::VulgarFractionOneSixth),
-            VULGAR_FRACTION_FIVE_SIXTHS => Ok(NumberForms::VulgarFractionFiveSixths),
-            VULGAR_FRACTION_ONE_EIGHTH => Ok(NumberForms::VulgarFractionOneEighth),
-            VULGAR_FRACTION_THREE_EIGHTHS => Ok(NumberForms::VulgarFractionThreeEighths),
-            VULGAR_FRACTION_FIVE_EIGHTHS => Ok(NumberForms::VulgarFractionFiveEighths),
-            VULGAR_FRACTION_SEVEN_EIGHTHS => Ok(NumberForms::VulgarFractionSevenEighths),
-            FRACTION_NUMERATOR_ONE => Ok(NumberForms::FractionNumeratorOne),
-            ROMAN_NUMERAL_ONE => Ok(NumberForms::RomanNumeralOne),
-            ROMAN_NUMERAL_TWO => Ok(NumberForms::RomanNumeralTwo),
-            ROMAN_NUMERAL_THREE => Ok(NumberForms::RomanNumeralThree),
-            ROMAN_NUMERAL_FOUR => Ok(NumberForms::RomanNumeralFour),
-            ROMAN_NUMERAL_FIVE => Ok(NumberForms::RomanNumeralFive),
-            ROMAN_NUMERAL_SIX => Ok(NumberForms::RomanNumeralSix),
-            ROMAN_NUMERAL_SEVEN => Ok(NumberForms::RomanNumeralSeven),
-            ROMAN_NUMERAL_EIGHT => Ok(NumberForms::RomanNumeralEight),
-            ROMAN_NUMERAL_NINE => Ok(NumberForms::RomanNumeralNine),
-            ROMAN_NUMERAL_TEN => Ok(NumberForms::RomanNumeralTen),
-            ROMAN_NUMERAL_ELEVEN => Ok(NumberForms::RomanNumeralEleven),
-            ROMAN_NUMERAL_TWELVE => Ok(NumberForms::RomanNumeralTwelve),
-            ROMAN_NUMERAL_FIFTY => Ok(NumberForms::RomanNumeralFifty),
-            ROMAN_NUMERAL_ONE_HUNDRED => Ok(NumberForms::RomanNumeralOneHundred),
-            ROMAN_NUMERAL_FIVE_HUNDRED => Ok(NumberForms::RomanNumeralFiveHundred),
-            ROMAN_NUMERAL_ONE_THOUSAND => Ok(NumberForms::RomanNumeralOneThousand),
-            SMALL_ROMAN_NUMERAL_ONE => Ok(NumberForms::SmallRomanNumeralOne),
-            SMALL_ROMAN_NUMERAL_TWO => Ok(NumberForms::SmallRomanNumeralTwo),
-            SMALL_ROMAN_NUMERAL_THREE => Ok(NumberForms::SmallRomanNumeralThree),
-            SMALL_ROMAN_NUMERAL_FOUR => Ok(NumberForms::SmallRomanNumeralFour),
-            SMALL_ROMAN_NUMERAL_FIVE => Ok(NumberForms::SmallRomanNumeralFive),
-            SMALL_ROMAN_NUMERAL_SIX => Ok(NumberForms::SmallRomanNumeralSix),
-            SMALL_ROMAN_NUMERAL_SEVEN => Ok(NumberForms::SmallRomanNumeralSeven),
-            SMALL_ROMAN_NUMERAL_EIGHT => Ok(NumberForms::SmallRomanNumeralEight),
-            SMALL_ROMAN_NUMERAL_NINE => Ok(NumberForms::SmallRomanNumeralNine),
-            SMALL_ROMAN_NUMERAL_TEN => Ok(NumberForms::SmallRomanNumeralTen),
-            SMALL_ROMAN_NUMERAL_ELEVEN => Ok(NumberForms::SmallRomanNumeralEleven),
-            SMALL_ROMAN_NUMERAL_TWELVE => Ok(NumberForms::SmallRomanNumeralTwelve),
-            SMALL_ROMAN_NUMERAL_FIFTY => Ok(NumberForms::SmallRomanNumeralFifty),
-            SMALL_ROMAN_NUMERAL_ONE_HUNDRED => Ok(NumberForms::SmallRomanNumeralOneHundred),
-            SMALL_ROMAN_NUMERAL_FIVE_HUNDRED => Ok(NumberForms::SmallRomanNumeralFiveHundred),
-            SMALL_ROMAN_NUMERAL_ONE_THOUSAND => Ok(NumberForms::SmallRomanNumeralOneThousand),
-            ROMAN_NUMERAL_ONE_THOUSAND_C_D => Ok(NumberForms::RomanNumeralOneThousandCD),
-            ROMAN_NUMERAL_FIVE_THOUSAND => Ok(NumberForms::RomanNumeralFiveThousand),
-            ROMAN_NUMERAL_TEN_THOUSAND => Ok(NumberForms::RomanNumeralTenThousand),
-            ROMAN_NUMERAL_REVERSED_ONE_HUNDRED => Ok(NumberForms::RomanNumeralReversedOneHundred),
-            LATIN_SMALL_LETTER_REVERSED_C => Ok(NumberForms::LatinSmallLetterReversedC),
-            ROMAN_NUMERAL_SIX_LATE_FORM => Ok(NumberForms::RomanNumeralSixLateForm),
-            ROMAN_NUMERAL_FIFTY_EARLY_FORM => Ok(NumberForms::RomanNumeralFiftyEarlyForm),
-            ROMAN_NUMERAL_FIFTY_THOUSAND => Ok(NumberForms::RomanNumeralFiftyThousand),
-            ROMAN_NUMERAL_ONE_HUNDRED_THOUSAND => Ok(NumberForms::RomanNumeralOneHundredThousand),
-            VULGAR_FRACTION_ZERO_THIRDS => Ok(NumberForms::VulgarFractionZeroThirds),
-            TURNED_DIGIT_TWO => Ok(NumberForms::TurnedDigitTwo),
-            TURNED_DIGIT_THREE => Ok(NumberForms::TurnedDigitThree),
+            '⅐' => Ok(NumberForms::VulgarFractionOneSeventh),
+            '⅑' => Ok(NumberForms::VulgarFractionOneNinth),
+            '⅒' => Ok(NumberForms::VulgarFractionOneTenth),
+            '⅓' => Ok(NumberForms::VulgarFractionOneThird),
+            '⅔' => Ok(NumberForms::VulgarFractionTwoThirds),
+            '⅕' => Ok(NumberForms::VulgarFractionOneFifth),
+            '⅖' => Ok(NumberForms::VulgarFractionTwoFifths),
+            '⅗' => Ok(NumberForms::VulgarFractionThreeFifths),
+            '⅘' => Ok(NumberForms::VulgarFractionFourFifths),
+            '⅙' => Ok(NumberForms::VulgarFractionOneSixth),
+            '⅚' => Ok(NumberForms::VulgarFractionFiveSixths),
+            '⅛' => Ok(NumberForms::VulgarFractionOneEighth),
+            '⅜' => Ok(NumberForms::VulgarFractionThreeEighths),
+            '⅝' => Ok(NumberForms::VulgarFractionFiveEighths),
+            '⅞' => Ok(NumberForms::VulgarFractionSevenEighths),
+            '⅟' => Ok(NumberForms::FractionNumeratorOne),
+            'Ⅰ' => Ok(NumberForms::RomanNumeralOne),
+            'Ⅱ' => Ok(NumberForms::RomanNumeralTwo),
+            'Ⅲ' => Ok(NumberForms::RomanNumeralThree),
+            'Ⅳ' => Ok(NumberForms::RomanNumeralFour),
+            'Ⅴ' => Ok(NumberForms::RomanNumeralFive),
+            'Ⅵ' => Ok(NumberForms::RomanNumeralSix),
+            'Ⅶ' => Ok(NumberForms::RomanNumeralSeven),
+            'Ⅷ' => Ok(NumberForms::RomanNumeralEight),
+            'Ⅸ' => Ok(NumberForms::RomanNumeralNine),
+            'Ⅹ' => Ok(NumberForms::RomanNumeralTen),
+            'Ⅺ' => Ok(NumberForms::RomanNumeralEleven),
+            'Ⅻ' => Ok(NumberForms::RomanNumeralTwelve),
+            'Ⅼ' => Ok(NumberForms::RomanNumeralFifty),
+            'Ⅽ' => Ok(NumberForms::RomanNumeralOneHundred),
+            'Ⅾ' => Ok(NumberForms::RomanNumeralFiveHundred),
+            'Ⅿ' => Ok(NumberForms::RomanNumeralOneThousand),
+            'ⅰ' => Ok(NumberForms::SmallRomanNumeralOne),
+            'ⅱ' => Ok(NumberForms::SmallRomanNumeralTwo),
+            'ⅲ' => Ok(NumberForms::SmallRomanNumeralThree),
+            'ⅳ' => Ok(NumberForms::SmallRomanNumeralFour),
+            'ⅴ' => Ok(NumberForms::SmallRomanNumeralFive),
+            'ⅵ' => Ok(NumberForms::SmallRomanNumeralSix),
+            'ⅶ' => Ok(NumberForms::SmallRomanNumeralSeven),
+            'ⅷ' => Ok(NumberForms::SmallRomanNumeralEight),
+            'ⅸ' => Ok(NumberForms::SmallRomanNumeralNine),
+            'ⅹ' => Ok(NumberForms::SmallRomanNumeralTen),
+            'ⅺ' => Ok(NumberForms::SmallRomanNumeralEleven),
+            'ⅻ' => Ok(NumberForms::SmallRomanNumeralTwelve),
+            'ⅼ' => Ok(NumberForms::SmallRomanNumeralFifty),
+            'ⅽ' => Ok(NumberForms::SmallRomanNumeralOneHundred),
+            'ⅾ' => Ok(NumberForms::SmallRomanNumeralFiveHundred),
+            'ⅿ' => Ok(NumberForms::SmallRomanNumeralOneThousand),
+            'ↀ' => Ok(NumberForms::RomanNumeralOneThousandCD),
+            'ↁ' => Ok(NumberForms::RomanNumeralFiveThousand),
+            'ↂ' => Ok(NumberForms::RomanNumeralTenThousand),
+            'Ↄ' => Ok(NumberForms::RomanNumeralReversedOneHundred),
+            'ↄ' => Ok(NumberForms::LatinSmallLetterReversedC),
+            'ↅ' => Ok(NumberForms::RomanNumeralSixLateForm),
+            'ↆ' => Ok(NumberForms::RomanNumeralFiftyEarlyForm),
+            'ↇ' => Ok(NumberForms::RomanNumeralFiftyThousand),
+            'ↈ' => Ok(NumberForms::RomanNumeralOneHundredThousand),
+            '↉' => Ok(NumberForms::VulgarFractionZeroThirds),
+            '↊' => Ok(NumberForms::TurnedDigitTwo),
+            '↋' => Ok(NumberForms::TurnedDigitThree),
             _ => Err(()),
         }
     }

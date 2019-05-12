@@ -1,98 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{101d0}: '𐇐'
-    pub const SIGN_PEDESTRIAN: char = '𐇐';
-    /// \u{101d1}: '𐇑'
-    pub const SIGN_PLUMED_HEAD: char = '𐇑';
-    /// \u{101d2}: '𐇒'
-    pub const SIGN_TATTOOED_HEAD: char = '𐇒';
-    /// \u{101d3}: '𐇓'
-    pub const SIGN_CAPTIVE: char = '𐇓';
-    /// \u{101d4}: '𐇔'
-    pub const SIGN_CHILD: char = '𐇔';
-    /// \u{101d5}: '𐇕'
-    pub const SIGN_WOMAN: char = '𐇕';
-    /// \u{101d6}: '𐇖'
-    pub const SIGN_HELMET: char = '𐇖';
-    /// \u{101d7}: '𐇗'
-    pub const SIGN_GAUNTLET: char = '𐇗';
-    /// \u{101d8}: '𐇘'
-    pub const SIGN_TIARA: char = '𐇘';
-    /// \u{101d9}: '𐇙'
-    pub const SIGN_ARROW: char = '𐇙';
-    /// \u{101da}: '𐇚'
-    pub const SIGN_BOW: char = '𐇚';
-    /// \u{101db}: '𐇛'
-    pub const SIGN_SHIELD: char = '𐇛';
-    /// \u{101dc}: '𐇜'
-    pub const SIGN_CLUB: char = '𐇜';
-    /// \u{101dd}: '𐇝'
-    pub const SIGN_MANACLES: char = '𐇝';
-    /// \u{101de}: '𐇞'
-    pub const SIGN_MATTOCK: char = '𐇞';
-    /// \u{101df}: '𐇟'
-    pub const SIGN_SAW: char = '𐇟';
-    /// \u{101e0}: '𐇠'
-    pub const SIGN_LID: char = '𐇠';
-    /// \u{101e1}: '𐇡'
-    pub const SIGN_BOOMERANG: char = '𐇡';
-    /// \u{101e2}: '𐇢'
-    pub const SIGN_CARPENTRY_PLANE: char = '𐇢';
-    /// \u{101e3}: '𐇣'
-    pub const SIGN_DOLIUM: char = '𐇣';
-    /// \u{101e4}: '𐇤'
-    pub const SIGN_COMB: char = '𐇤';
-    /// \u{101e5}: '𐇥'
-    pub const SIGN_SLING: char = '𐇥';
-    /// \u{101e6}: '𐇦'
-    pub const SIGN_COLUMN: char = '𐇦';
-    /// \u{101e7}: '𐇧'
-    pub const SIGN_BEEHIVE: char = '𐇧';
-    /// \u{101e8}: '𐇨'
-    pub const SIGN_SHIP: char = '𐇨';
-    /// \u{101e9}: '𐇩'
-    pub const SIGN_HORN: char = '𐇩';
-    /// \u{101ea}: '𐇪'
-    pub const SIGN_HIDE: char = '𐇪';
-    /// \u{101eb}: '𐇫'
-    pub const SIGN_BULLS_LEG: char = '𐇫';
-    /// \u{101ec}: '𐇬'
-    pub const SIGN_CAT: char = '𐇬';
-    /// \u{101ed}: '𐇭'
-    pub const SIGN_RAM: char = '𐇭';
-    /// \u{101ee}: '𐇮'
-    pub const SIGN_EAGLE: char = '𐇮';
-    /// \u{101ef}: '𐇯'
-    pub const SIGN_DOVE: char = '𐇯';
-    /// \u{101f0}: '𐇰'
-    pub const SIGN_TUNNY: char = '𐇰';
-    /// \u{101f1}: '𐇱'
-    pub const SIGN_BEE: char = '𐇱';
-    /// \u{101f2}: '𐇲'
-    pub const SIGN_PLANE_TREE: char = '𐇲';
-    /// \u{101f3}: '𐇳'
-    pub const SIGN_VINE: char = '𐇳';
-    /// \u{101f4}: '𐇴'
-    pub const SIGN_PAPYRUS: char = '𐇴';
-    /// \u{101f5}: '𐇵'
-    pub const SIGN_ROSETTE: char = '𐇵';
-    /// \u{101f6}: '𐇶'
-    pub const SIGN_LILY: char = '𐇶';
-    /// \u{101f7}: '𐇷'
-    pub const SIGN_OX_BACK: char = '𐇷';
-    /// \u{101f8}: '𐇸'
-    pub const SIGN_FLUTE: char = '𐇸';
-    /// \u{101f9}: '𐇹'
-    pub const SIGN_GRATER: char = '𐇹';
-    /// \u{101fa}: '𐇺'
-    pub const SIGN_STRAINER: char = '𐇺';
-    /// \u{101fb}: '𐇻'
-    pub const SIGN_SMALL_AXE: char = '𐇻';
-    /// \u{101fc}: '𐇼'
-    pub const SIGN_WAVY_BAND: char = '𐇼';
-    /// \u{101fd}: '𐇽'
-    pub const SIGN_COMBINING_OBLIQUE_STROKE: char = '𐇽';
-}
 
 /// An enum to represent all characters in the PhaistosDisc block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -193,54 +98,53 @@ pub enum PhaistosDisc {
 
 impl Into<char> for PhaistosDisc {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            PhaistosDisc::SignPedestrian => SIGN_PEDESTRIAN,
-            PhaistosDisc::SignPlumedHead => SIGN_PLUMED_HEAD,
-            PhaistosDisc::SignTattooedHead => SIGN_TATTOOED_HEAD,
-            PhaistosDisc::SignCaptive => SIGN_CAPTIVE,
-            PhaistosDisc::SignChild => SIGN_CHILD,
-            PhaistosDisc::SignWoman => SIGN_WOMAN,
-            PhaistosDisc::SignHelmet => SIGN_HELMET,
-            PhaistosDisc::SignGauntlet => SIGN_GAUNTLET,
-            PhaistosDisc::SignTiara => SIGN_TIARA,
-            PhaistosDisc::SignArrow => SIGN_ARROW,
-            PhaistosDisc::SignBow => SIGN_BOW,
-            PhaistosDisc::SignShield => SIGN_SHIELD,
-            PhaistosDisc::SignClub => SIGN_CLUB,
-            PhaistosDisc::SignManacles => SIGN_MANACLES,
-            PhaistosDisc::SignMattock => SIGN_MATTOCK,
-            PhaistosDisc::SignSaw => SIGN_SAW,
-            PhaistosDisc::SignLid => SIGN_LID,
-            PhaistosDisc::SignBoomerang => SIGN_BOOMERANG,
-            PhaistosDisc::SignCarpentryPlane => SIGN_CARPENTRY_PLANE,
-            PhaistosDisc::SignDolium => SIGN_DOLIUM,
-            PhaistosDisc::SignComb => SIGN_COMB,
-            PhaistosDisc::SignSling => SIGN_SLING,
-            PhaistosDisc::SignColumn => SIGN_COLUMN,
-            PhaistosDisc::SignBeehive => SIGN_BEEHIVE,
-            PhaistosDisc::SignShip => SIGN_SHIP,
-            PhaistosDisc::SignHorn => SIGN_HORN,
-            PhaistosDisc::SignHide => SIGN_HIDE,
-            PhaistosDisc::SignBullsLeg => SIGN_BULLS_LEG,
-            PhaistosDisc::SignCat => SIGN_CAT,
-            PhaistosDisc::SignRam => SIGN_RAM,
-            PhaistosDisc::SignEagle => SIGN_EAGLE,
-            PhaistosDisc::SignDove => SIGN_DOVE,
-            PhaistosDisc::SignTunny => SIGN_TUNNY,
-            PhaistosDisc::SignBee => SIGN_BEE,
-            PhaistosDisc::SignPlaneTree => SIGN_PLANE_TREE,
-            PhaistosDisc::SignVine => SIGN_VINE,
-            PhaistosDisc::SignPapyrus => SIGN_PAPYRUS,
-            PhaistosDisc::SignRosette => SIGN_ROSETTE,
-            PhaistosDisc::SignLily => SIGN_LILY,
-            PhaistosDisc::SignOxBack => SIGN_OX_BACK,
-            PhaistosDisc::SignFlute => SIGN_FLUTE,
-            PhaistosDisc::SignGrater => SIGN_GRATER,
-            PhaistosDisc::SignStrainer => SIGN_STRAINER,
-            PhaistosDisc::SignSmallAxe => SIGN_SMALL_AXE,
-            PhaistosDisc::SignWavyBand => SIGN_WAVY_BAND,
-            PhaistosDisc::SignCombiningObliqueStroke => SIGN_COMBINING_OBLIQUE_STROKE,
+            PhaistosDisc::SignPedestrian => '𐇐',
+            PhaistosDisc::SignPlumedHead => '𐇑',
+            PhaistosDisc::SignTattooedHead => '𐇒',
+            PhaistosDisc::SignCaptive => '𐇓',
+            PhaistosDisc::SignChild => '𐇔',
+            PhaistosDisc::SignWoman => '𐇕',
+            PhaistosDisc::SignHelmet => '𐇖',
+            PhaistosDisc::SignGauntlet => '𐇗',
+            PhaistosDisc::SignTiara => '𐇘',
+            PhaistosDisc::SignArrow => '𐇙',
+            PhaistosDisc::SignBow => '𐇚',
+            PhaistosDisc::SignShield => '𐇛',
+            PhaistosDisc::SignClub => '𐇜',
+            PhaistosDisc::SignManacles => '𐇝',
+            PhaistosDisc::SignMattock => '𐇞',
+            PhaistosDisc::SignSaw => '𐇟',
+            PhaistosDisc::SignLid => '𐇠',
+            PhaistosDisc::SignBoomerang => '𐇡',
+            PhaistosDisc::SignCarpentryPlane => '𐇢',
+            PhaistosDisc::SignDolium => '𐇣',
+            PhaistosDisc::SignComb => '𐇤',
+            PhaistosDisc::SignSling => '𐇥',
+            PhaistosDisc::SignColumn => '𐇦',
+            PhaistosDisc::SignBeehive => '𐇧',
+            PhaistosDisc::SignShip => '𐇨',
+            PhaistosDisc::SignHorn => '𐇩',
+            PhaistosDisc::SignHide => '𐇪',
+            PhaistosDisc::SignBullsLeg => '𐇫',
+            PhaistosDisc::SignCat => '𐇬',
+            PhaistosDisc::SignRam => '𐇭',
+            PhaistosDisc::SignEagle => '𐇮',
+            PhaistosDisc::SignDove => '𐇯',
+            PhaistosDisc::SignTunny => '𐇰',
+            PhaistosDisc::SignBee => '𐇱',
+            PhaistosDisc::SignPlaneTree => '𐇲',
+            PhaistosDisc::SignVine => '𐇳',
+            PhaistosDisc::SignPapyrus => '𐇴',
+            PhaistosDisc::SignRosette => '𐇵',
+            PhaistosDisc::SignLily => '𐇶',
+            PhaistosDisc::SignOxBack => '𐇷',
+            PhaistosDisc::SignFlute => '𐇸',
+            PhaistosDisc::SignGrater => '𐇹',
+            PhaistosDisc::SignStrainer => '𐇺',
+            PhaistosDisc::SignSmallAxe => '𐇻',
+            PhaistosDisc::SignWavyBand => '𐇼',
+            PhaistosDisc::SignCombiningObliqueStroke => '𐇽',
         }
     }
 }
@@ -248,54 +152,53 @@ impl Into<char> for PhaistosDisc {
 impl std::convert::TryFrom<char> for PhaistosDisc {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_PEDESTRIAN => Ok(PhaistosDisc::SignPedestrian),
-            SIGN_PLUMED_HEAD => Ok(PhaistosDisc::SignPlumedHead),
-            SIGN_TATTOOED_HEAD => Ok(PhaistosDisc::SignTattooedHead),
-            SIGN_CAPTIVE => Ok(PhaistosDisc::SignCaptive),
-            SIGN_CHILD => Ok(PhaistosDisc::SignChild),
-            SIGN_WOMAN => Ok(PhaistosDisc::SignWoman),
-            SIGN_HELMET => Ok(PhaistosDisc::SignHelmet),
-            SIGN_GAUNTLET => Ok(PhaistosDisc::SignGauntlet),
-            SIGN_TIARA => Ok(PhaistosDisc::SignTiara),
-            SIGN_ARROW => Ok(PhaistosDisc::SignArrow),
-            SIGN_BOW => Ok(PhaistosDisc::SignBow),
-            SIGN_SHIELD => Ok(PhaistosDisc::SignShield),
-            SIGN_CLUB => Ok(PhaistosDisc::SignClub),
-            SIGN_MANACLES => Ok(PhaistosDisc::SignManacles),
-            SIGN_MATTOCK => Ok(PhaistosDisc::SignMattock),
-            SIGN_SAW => Ok(PhaistosDisc::SignSaw),
-            SIGN_LID => Ok(PhaistosDisc::SignLid),
-            SIGN_BOOMERANG => Ok(PhaistosDisc::SignBoomerang),
-            SIGN_CARPENTRY_PLANE => Ok(PhaistosDisc::SignCarpentryPlane),
-            SIGN_DOLIUM => Ok(PhaistosDisc::SignDolium),
-            SIGN_COMB => Ok(PhaistosDisc::SignComb),
-            SIGN_SLING => Ok(PhaistosDisc::SignSling),
-            SIGN_COLUMN => Ok(PhaistosDisc::SignColumn),
-            SIGN_BEEHIVE => Ok(PhaistosDisc::SignBeehive),
-            SIGN_SHIP => Ok(PhaistosDisc::SignShip),
-            SIGN_HORN => Ok(PhaistosDisc::SignHorn),
-            SIGN_HIDE => Ok(PhaistosDisc::SignHide),
-            SIGN_BULLS_LEG => Ok(PhaistosDisc::SignBullsLeg),
-            SIGN_CAT => Ok(PhaistosDisc::SignCat),
-            SIGN_RAM => Ok(PhaistosDisc::SignRam),
-            SIGN_EAGLE => Ok(PhaistosDisc::SignEagle),
-            SIGN_DOVE => Ok(PhaistosDisc::SignDove),
-            SIGN_TUNNY => Ok(PhaistosDisc::SignTunny),
-            SIGN_BEE => Ok(PhaistosDisc::SignBee),
-            SIGN_PLANE_TREE => Ok(PhaistosDisc::SignPlaneTree),
-            SIGN_VINE => Ok(PhaistosDisc::SignVine),
-            SIGN_PAPYRUS => Ok(PhaistosDisc::SignPapyrus),
-            SIGN_ROSETTE => Ok(PhaistosDisc::SignRosette),
-            SIGN_LILY => Ok(PhaistosDisc::SignLily),
-            SIGN_OX_BACK => Ok(PhaistosDisc::SignOxBack),
-            SIGN_FLUTE => Ok(PhaistosDisc::SignFlute),
-            SIGN_GRATER => Ok(PhaistosDisc::SignGrater),
-            SIGN_STRAINER => Ok(PhaistosDisc::SignStrainer),
-            SIGN_SMALL_AXE => Ok(PhaistosDisc::SignSmallAxe),
-            SIGN_WAVY_BAND => Ok(PhaistosDisc::SignWavyBand),
-            SIGN_COMBINING_OBLIQUE_STROKE => Ok(PhaistosDisc::SignCombiningObliqueStroke),
+            '𐇐' => Ok(PhaistosDisc::SignPedestrian),
+            '𐇑' => Ok(PhaistosDisc::SignPlumedHead),
+            '𐇒' => Ok(PhaistosDisc::SignTattooedHead),
+            '𐇓' => Ok(PhaistosDisc::SignCaptive),
+            '𐇔' => Ok(PhaistosDisc::SignChild),
+            '𐇕' => Ok(PhaistosDisc::SignWoman),
+            '𐇖' => Ok(PhaistosDisc::SignHelmet),
+            '𐇗' => Ok(PhaistosDisc::SignGauntlet),
+            '𐇘' => Ok(PhaistosDisc::SignTiara),
+            '𐇙' => Ok(PhaistosDisc::SignArrow),
+            '𐇚' => Ok(PhaistosDisc::SignBow),
+            '𐇛' => Ok(PhaistosDisc::SignShield),
+            '𐇜' => Ok(PhaistosDisc::SignClub),
+            '𐇝' => Ok(PhaistosDisc::SignManacles),
+            '𐇞' => Ok(PhaistosDisc::SignMattock),
+            '𐇟' => Ok(PhaistosDisc::SignSaw),
+            '𐇠' => Ok(PhaistosDisc::SignLid),
+            '𐇡' => Ok(PhaistosDisc::SignBoomerang),
+            '𐇢' => Ok(PhaistosDisc::SignCarpentryPlane),
+            '𐇣' => Ok(PhaistosDisc::SignDolium),
+            '𐇤' => Ok(PhaistosDisc::SignComb),
+            '𐇥' => Ok(PhaistosDisc::SignSling),
+            '𐇦' => Ok(PhaistosDisc::SignColumn),
+            '𐇧' => Ok(PhaistosDisc::SignBeehive),
+            '𐇨' => Ok(PhaistosDisc::SignShip),
+            '𐇩' => Ok(PhaistosDisc::SignHorn),
+            '𐇪' => Ok(PhaistosDisc::SignHide),
+            '𐇫' => Ok(PhaistosDisc::SignBullsLeg),
+            '𐇬' => Ok(PhaistosDisc::SignCat),
+            '𐇭' => Ok(PhaistosDisc::SignRam),
+            '𐇮' => Ok(PhaistosDisc::SignEagle),
+            '𐇯' => Ok(PhaistosDisc::SignDove),
+            '𐇰' => Ok(PhaistosDisc::SignTunny),
+            '𐇱' => Ok(PhaistosDisc::SignBee),
+            '𐇲' => Ok(PhaistosDisc::SignPlaneTree),
+            '𐇳' => Ok(PhaistosDisc::SignVine),
+            '𐇴' => Ok(PhaistosDisc::SignPapyrus),
+            '𐇵' => Ok(PhaistosDisc::SignRosette),
+            '𐇶' => Ok(PhaistosDisc::SignLily),
+            '𐇷' => Ok(PhaistosDisc::SignOxBack),
+            '𐇸' => Ok(PhaistosDisc::SignFlute),
+            '𐇹' => Ok(PhaistosDisc::SignGrater),
+            '𐇺' => Ok(PhaistosDisc::SignStrainer),
+            '𐇻' => Ok(PhaistosDisc::SignSmallAxe),
+            '𐇼' => Ok(PhaistosDisc::SignWavyBand),
+            '𐇽' => Ok(PhaistosDisc::SignCombiningObliqueStroke),
             _ => Err(()),
         }
     }

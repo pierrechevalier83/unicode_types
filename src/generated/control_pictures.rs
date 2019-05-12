@@ -1,84 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2400}: '␀'
-    pub const SYMBOL_FOR_NULL: char = '␀';
-    /// \u{2401}: '␁'
-    pub const SYMBOL_FOR_START_OF_HEADING: char = '␁';
-    /// \u{2402}: '␂'
-    pub const SYMBOL_FOR_START_OF_TEXT: char = '␂';
-    /// \u{2403}: '␃'
-    pub const SYMBOL_FOR_END_OF_TEXT: char = '␃';
-    /// \u{2404}: '␄'
-    pub const SYMBOL_FOR_END_OF_TRANSMISSION: char = '␄';
-    /// \u{2405}: '␅'
-    pub const SYMBOL_FOR_ENQUIRY: char = '␅';
-    /// \u{2406}: '␆'
-    pub const SYMBOL_FOR_ACKNOWLEDGE: char = '␆';
-    /// \u{2407}: '␇'
-    pub const SYMBOL_FOR_BELL: char = '␇';
-    /// \u{2408}: '␈'
-    pub const SYMBOL_FOR_BACKSPACE: char = '␈';
-    /// \u{2409}: '␉'
-    pub const SYMBOL_FOR_HORIZONTAL_TABULATION: char = '␉';
-    /// \u{240a}: '␊'
-    pub const SYMBOL_FOR_LINE_FEED: char = '␊';
-    /// \u{240b}: '␋'
-    pub const SYMBOL_FOR_VERTICAL_TABULATION: char = '␋';
-    /// \u{240c}: '␌'
-    pub const SYMBOL_FOR_FORM_FEED: char = '␌';
-    /// \u{240d}: '␍'
-    pub const SYMBOL_FOR_CARRIAGE_RETURN: char = '␍';
-    /// \u{240e}: '␎'
-    pub const SYMBOL_FOR_SHIFT_OUT: char = '␎';
-    /// \u{240f}: '␏'
-    pub const SYMBOL_FOR_SHIFT_IN: char = '␏';
-    /// \u{2410}: '␐'
-    pub const SYMBOL_FOR_DATA_LINK_ESCAPE: char = '␐';
-    /// \u{2411}: '␑'
-    pub const SYMBOL_FOR_DEVICE_CONTROL_ONE: char = '␑';
-    /// \u{2412}: '␒'
-    pub const SYMBOL_FOR_DEVICE_CONTROL_TWO: char = '␒';
-    /// \u{2413}: '␓'
-    pub const SYMBOL_FOR_DEVICE_CONTROL_THREE: char = '␓';
-    /// \u{2414}: '␔'
-    pub const SYMBOL_FOR_DEVICE_CONTROL_FOUR: char = '␔';
-    /// \u{2415}: '␕'
-    pub const SYMBOL_FOR_NEGATIVE_ACKNOWLEDGE: char = '␕';
-    /// \u{2416}: '␖'
-    pub const SYMBOL_FOR_SYNCHRONOUS_IDLE: char = '␖';
-    /// \u{2417}: '␗'
-    pub const SYMBOL_FOR_END_OF_TRANSMISSION_BLOCK: char = '␗';
-    /// \u{2418}: '␘'
-    pub const SYMBOL_FOR_CANCEL: char = '␘';
-    /// \u{2419}: '␙'
-    pub const SYMBOL_FOR_END_OF_MEDIUM: char = '␙';
-    /// \u{241a}: '␚'
-    pub const SYMBOL_FOR_SUBSTITUTE: char = '␚';
-    /// \u{241b}: '␛'
-    pub const SYMBOL_FOR_ESCAPE: char = '␛';
-    /// \u{241c}: '␜'
-    pub const SYMBOL_FOR_FILE_SEPARATOR: char = '␜';
-    /// \u{241d}: '␝'
-    pub const SYMBOL_FOR_GROUP_SEPARATOR: char = '␝';
-    /// \u{241e}: '␞'
-    pub const SYMBOL_FOR_RECORD_SEPARATOR: char = '␞';
-    /// \u{241f}: '␟'
-    pub const SYMBOL_FOR_UNIT_SEPARATOR: char = '␟';
-    /// \u{2420}: '␠'
-    pub const SYMBOL_FOR_SPACE: char = '␠';
-    /// \u{2421}: '␡'
-    pub const SYMBOL_FOR_DELETE: char = '␡';
-    /// \u{2422}: '␢'
-    pub const BLANK_SYMBOL: char = '␢';
-    /// \u{2423}: '␣'
-    pub const OPEN_BOX: char = '␣';
-    /// \u{2424}: '␤'
-    pub const SYMBOL_FOR_NEWLINE: char = '␤';
-    /// \u{2425}: '␥'
-    pub const SYMBOL_FOR_DELETE_FORM_TWO: char = '␥';
-    /// \u{2426}: '␦'
-    pub const SYMBOL_FOR_SUBSTITUTE_FORM_TWO: char = '␦';
-}
 
 /// An enum to represent all characters in the ControlPictures block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -165,47 +84,46 @@ pub enum ControlPictures {
 
 impl Into<char> for ControlPictures {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            ControlPictures::SymbolForNull => SYMBOL_FOR_NULL,
-            ControlPictures::SymbolForStartOfHeading => SYMBOL_FOR_START_OF_HEADING,
-            ControlPictures::SymbolForStartOfText => SYMBOL_FOR_START_OF_TEXT,
-            ControlPictures::SymbolForEndOfText => SYMBOL_FOR_END_OF_TEXT,
-            ControlPictures::SymbolForEndOfTransmission => SYMBOL_FOR_END_OF_TRANSMISSION,
-            ControlPictures::SymbolForEnquiry => SYMBOL_FOR_ENQUIRY,
-            ControlPictures::SymbolForAcknowledge => SYMBOL_FOR_ACKNOWLEDGE,
-            ControlPictures::SymbolForBell => SYMBOL_FOR_BELL,
-            ControlPictures::SymbolForBackspace => SYMBOL_FOR_BACKSPACE,
-            ControlPictures::SymbolForHorizontalTabulation => SYMBOL_FOR_HORIZONTAL_TABULATION,
-            ControlPictures::SymbolForLineFeed => SYMBOL_FOR_LINE_FEED,
-            ControlPictures::SymbolForVerticalTabulation => SYMBOL_FOR_VERTICAL_TABULATION,
-            ControlPictures::SymbolForFormFeed => SYMBOL_FOR_FORM_FEED,
-            ControlPictures::SymbolForCarriageReturn => SYMBOL_FOR_CARRIAGE_RETURN,
-            ControlPictures::SymbolForShiftOut => SYMBOL_FOR_SHIFT_OUT,
-            ControlPictures::SymbolForShiftIn => SYMBOL_FOR_SHIFT_IN,
-            ControlPictures::SymbolForDataLinkEscape => SYMBOL_FOR_DATA_LINK_ESCAPE,
-            ControlPictures::SymbolForDeviceControlOne => SYMBOL_FOR_DEVICE_CONTROL_ONE,
-            ControlPictures::SymbolForDeviceControlTwo => SYMBOL_FOR_DEVICE_CONTROL_TWO,
-            ControlPictures::SymbolForDeviceControlThree => SYMBOL_FOR_DEVICE_CONTROL_THREE,
-            ControlPictures::SymbolForDeviceControlFour => SYMBOL_FOR_DEVICE_CONTROL_FOUR,
-            ControlPictures::SymbolForNegativeAcknowledge => SYMBOL_FOR_NEGATIVE_ACKNOWLEDGE,
-            ControlPictures::SymbolForSynchronousIdle => SYMBOL_FOR_SYNCHRONOUS_IDLE,
-            ControlPictures::SymbolForEndOfTransmissionBlock => SYMBOL_FOR_END_OF_TRANSMISSION_BLOCK,
-            ControlPictures::SymbolForCancel => SYMBOL_FOR_CANCEL,
-            ControlPictures::SymbolForEndOfMedium => SYMBOL_FOR_END_OF_MEDIUM,
-            ControlPictures::SymbolForSubstitute => SYMBOL_FOR_SUBSTITUTE,
-            ControlPictures::SymbolForEscape => SYMBOL_FOR_ESCAPE,
-            ControlPictures::SymbolForFileSeparator => SYMBOL_FOR_FILE_SEPARATOR,
-            ControlPictures::SymbolForGroupSeparator => SYMBOL_FOR_GROUP_SEPARATOR,
-            ControlPictures::SymbolForRecordSeparator => SYMBOL_FOR_RECORD_SEPARATOR,
-            ControlPictures::SymbolForUnitSeparator => SYMBOL_FOR_UNIT_SEPARATOR,
-            ControlPictures::SymbolForSpace => SYMBOL_FOR_SPACE,
-            ControlPictures::SymbolForDelete => SYMBOL_FOR_DELETE,
-            ControlPictures::BlankSymbol => BLANK_SYMBOL,
-            ControlPictures::OpenBox => OPEN_BOX,
-            ControlPictures::SymbolForNewline => SYMBOL_FOR_NEWLINE,
-            ControlPictures::SymbolForDeleteFormTwo => SYMBOL_FOR_DELETE_FORM_TWO,
-            ControlPictures::SymbolForSubstituteFormTwo => SYMBOL_FOR_SUBSTITUTE_FORM_TWO,
+            ControlPictures::SymbolForNull => '␀',
+            ControlPictures::SymbolForStartOfHeading => '␁',
+            ControlPictures::SymbolForStartOfText => '␂',
+            ControlPictures::SymbolForEndOfText => '␃',
+            ControlPictures::SymbolForEndOfTransmission => '␄',
+            ControlPictures::SymbolForEnquiry => '␅',
+            ControlPictures::SymbolForAcknowledge => '␆',
+            ControlPictures::SymbolForBell => '␇',
+            ControlPictures::SymbolForBackspace => '␈',
+            ControlPictures::SymbolForHorizontalTabulation => '␉',
+            ControlPictures::SymbolForLineFeed => '␊',
+            ControlPictures::SymbolForVerticalTabulation => '␋',
+            ControlPictures::SymbolForFormFeed => '␌',
+            ControlPictures::SymbolForCarriageReturn => '␍',
+            ControlPictures::SymbolForShiftOut => '␎',
+            ControlPictures::SymbolForShiftIn => '␏',
+            ControlPictures::SymbolForDataLinkEscape => '␐',
+            ControlPictures::SymbolForDeviceControlOne => '␑',
+            ControlPictures::SymbolForDeviceControlTwo => '␒',
+            ControlPictures::SymbolForDeviceControlThree => '␓',
+            ControlPictures::SymbolForDeviceControlFour => '␔',
+            ControlPictures::SymbolForNegativeAcknowledge => '␕',
+            ControlPictures::SymbolForSynchronousIdle => '␖',
+            ControlPictures::SymbolForEndOfTransmissionBlock => '␗',
+            ControlPictures::SymbolForCancel => '␘',
+            ControlPictures::SymbolForEndOfMedium => '␙',
+            ControlPictures::SymbolForSubstitute => '␚',
+            ControlPictures::SymbolForEscape => '␛',
+            ControlPictures::SymbolForFileSeparator => '␜',
+            ControlPictures::SymbolForGroupSeparator => '␝',
+            ControlPictures::SymbolForRecordSeparator => '␞',
+            ControlPictures::SymbolForUnitSeparator => '␟',
+            ControlPictures::SymbolForSpace => '␠',
+            ControlPictures::SymbolForDelete => '␡',
+            ControlPictures::BlankSymbol => '␢',
+            ControlPictures::OpenBox => '␣',
+            ControlPictures::SymbolForNewline => '␤',
+            ControlPictures::SymbolForDeleteFormTwo => '␥',
+            ControlPictures::SymbolForSubstituteFormTwo => '␦',
         }
     }
 }
@@ -213,47 +131,46 @@ impl Into<char> for ControlPictures {
 impl std::convert::TryFrom<char> for ControlPictures {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SYMBOL_FOR_NULL => Ok(ControlPictures::SymbolForNull),
-            SYMBOL_FOR_START_OF_HEADING => Ok(ControlPictures::SymbolForStartOfHeading),
-            SYMBOL_FOR_START_OF_TEXT => Ok(ControlPictures::SymbolForStartOfText),
-            SYMBOL_FOR_END_OF_TEXT => Ok(ControlPictures::SymbolForEndOfText),
-            SYMBOL_FOR_END_OF_TRANSMISSION => Ok(ControlPictures::SymbolForEndOfTransmission),
-            SYMBOL_FOR_ENQUIRY => Ok(ControlPictures::SymbolForEnquiry),
-            SYMBOL_FOR_ACKNOWLEDGE => Ok(ControlPictures::SymbolForAcknowledge),
-            SYMBOL_FOR_BELL => Ok(ControlPictures::SymbolForBell),
-            SYMBOL_FOR_BACKSPACE => Ok(ControlPictures::SymbolForBackspace),
-            SYMBOL_FOR_HORIZONTAL_TABULATION => Ok(ControlPictures::SymbolForHorizontalTabulation),
-            SYMBOL_FOR_LINE_FEED => Ok(ControlPictures::SymbolForLineFeed),
-            SYMBOL_FOR_VERTICAL_TABULATION => Ok(ControlPictures::SymbolForVerticalTabulation),
-            SYMBOL_FOR_FORM_FEED => Ok(ControlPictures::SymbolForFormFeed),
-            SYMBOL_FOR_CARRIAGE_RETURN => Ok(ControlPictures::SymbolForCarriageReturn),
-            SYMBOL_FOR_SHIFT_OUT => Ok(ControlPictures::SymbolForShiftOut),
-            SYMBOL_FOR_SHIFT_IN => Ok(ControlPictures::SymbolForShiftIn),
-            SYMBOL_FOR_DATA_LINK_ESCAPE => Ok(ControlPictures::SymbolForDataLinkEscape),
-            SYMBOL_FOR_DEVICE_CONTROL_ONE => Ok(ControlPictures::SymbolForDeviceControlOne),
-            SYMBOL_FOR_DEVICE_CONTROL_TWO => Ok(ControlPictures::SymbolForDeviceControlTwo),
-            SYMBOL_FOR_DEVICE_CONTROL_THREE => Ok(ControlPictures::SymbolForDeviceControlThree),
-            SYMBOL_FOR_DEVICE_CONTROL_FOUR => Ok(ControlPictures::SymbolForDeviceControlFour),
-            SYMBOL_FOR_NEGATIVE_ACKNOWLEDGE => Ok(ControlPictures::SymbolForNegativeAcknowledge),
-            SYMBOL_FOR_SYNCHRONOUS_IDLE => Ok(ControlPictures::SymbolForSynchronousIdle),
-            SYMBOL_FOR_END_OF_TRANSMISSION_BLOCK => Ok(ControlPictures::SymbolForEndOfTransmissionBlock),
-            SYMBOL_FOR_CANCEL => Ok(ControlPictures::SymbolForCancel),
-            SYMBOL_FOR_END_OF_MEDIUM => Ok(ControlPictures::SymbolForEndOfMedium),
-            SYMBOL_FOR_SUBSTITUTE => Ok(ControlPictures::SymbolForSubstitute),
-            SYMBOL_FOR_ESCAPE => Ok(ControlPictures::SymbolForEscape),
-            SYMBOL_FOR_FILE_SEPARATOR => Ok(ControlPictures::SymbolForFileSeparator),
-            SYMBOL_FOR_GROUP_SEPARATOR => Ok(ControlPictures::SymbolForGroupSeparator),
-            SYMBOL_FOR_RECORD_SEPARATOR => Ok(ControlPictures::SymbolForRecordSeparator),
-            SYMBOL_FOR_UNIT_SEPARATOR => Ok(ControlPictures::SymbolForUnitSeparator),
-            SYMBOL_FOR_SPACE => Ok(ControlPictures::SymbolForSpace),
-            SYMBOL_FOR_DELETE => Ok(ControlPictures::SymbolForDelete),
-            BLANK_SYMBOL => Ok(ControlPictures::BlankSymbol),
-            OPEN_BOX => Ok(ControlPictures::OpenBox),
-            SYMBOL_FOR_NEWLINE => Ok(ControlPictures::SymbolForNewline),
-            SYMBOL_FOR_DELETE_FORM_TWO => Ok(ControlPictures::SymbolForDeleteFormTwo),
-            SYMBOL_FOR_SUBSTITUTE_FORM_TWO => Ok(ControlPictures::SymbolForSubstituteFormTwo),
+            '␀' => Ok(ControlPictures::SymbolForNull),
+            '␁' => Ok(ControlPictures::SymbolForStartOfHeading),
+            '␂' => Ok(ControlPictures::SymbolForStartOfText),
+            '␃' => Ok(ControlPictures::SymbolForEndOfText),
+            '␄' => Ok(ControlPictures::SymbolForEndOfTransmission),
+            '␅' => Ok(ControlPictures::SymbolForEnquiry),
+            '␆' => Ok(ControlPictures::SymbolForAcknowledge),
+            '␇' => Ok(ControlPictures::SymbolForBell),
+            '␈' => Ok(ControlPictures::SymbolForBackspace),
+            '␉' => Ok(ControlPictures::SymbolForHorizontalTabulation),
+            '␊' => Ok(ControlPictures::SymbolForLineFeed),
+            '␋' => Ok(ControlPictures::SymbolForVerticalTabulation),
+            '␌' => Ok(ControlPictures::SymbolForFormFeed),
+            '␍' => Ok(ControlPictures::SymbolForCarriageReturn),
+            '␎' => Ok(ControlPictures::SymbolForShiftOut),
+            '␏' => Ok(ControlPictures::SymbolForShiftIn),
+            '␐' => Ok(ControlPictures::SymbolForDataLinkEscape),
+            '␑' => Ok(ControlPictures::SymbolForDeviceControlOne),
+            '␒' => Ok(ControlPictures::SymbolForDeviceControlTwo),
+            '␓' => Ok(ControlPictures::SymbolForDeviceControlThree),
+            '␔' => Ok(ControlPictures::SymbolForDeviceControlFour),
+            '␕' => Ok(ControlPictures::SymbolForNegativeAcknowledge),
+            '␖' => Ok(ControlPictures::SymbolForSynchronousIdle),
+            '␗' => Ok(ControlPictures::SymbolForEndOfTransmissionBlock),
+            '␘' => Ok(ControlPictures::SymbolForCancel),
+            '␙' => Ok(ControlPictures::SymbolForEndOfMedium),
+            '␚' => Ok(ControlPictures::SymbolForSubstitute),
+            '␛' => Ok(ControlPictures::SymbolForEscape),
+            '␜' => Ok(ControlPictures::SymbolForFileSeparator),
+            '␝' => Ok(ControlPictures::SymbolForGroupSeparator),
+            '␞' => Ok(ControlPictures::SymbolForRecordSeparator),
+            '␟' => Ok(ControlPictures::SymbolForUnitSeparator),
+            '␠' => Ok(ControlPictures::SymbolForSpace),
+            '␡' => Ok(ControlPictures::SymbolForDelete),
+            '␢' => Ok(ControlPictures::BlankSymbol),
+            '␣' => Ok(ControlPictures::OpenBox),
+            '␤' => Ok(ControlPictures::SymbolForNewline),
+            '␥' => Ok(ControlPictures::SymbolForDeleteFormTwo),
+            '␦' => Ok(ControlPictures::SymbolForSubstituteFormTwo),
             _ => Err(()),
         }
     }

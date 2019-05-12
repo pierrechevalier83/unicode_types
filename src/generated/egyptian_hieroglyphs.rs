@@ -1,2148 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{13000}: '𓀀'
-    pub const EGYPTIAN_HIEROGLYPH_A001: char = '𓀀';
-    /// \u{13001}: '𓀁'
-    pub const EGYPTIAN_HIEROGLYPH_A002: char = '𓀁';
-    /// \u{13002}: '𓀂'
-    pub const EGYPTIAN_HIEROGLYPH_A003: char = '𓀂';
-    /// \u{13003}: '𓀃'
-    pub const EGYPTIAN_HIEROGLYPH_A004: char = '𓀃';
-    /// \u{13004}: '𓀄'
-    pub const EGYPTIAN_HIEROGLYPH_A005: char = '𓀄';
-    /// \u{13005}: '𓀅'
-    pub const EGYPTIAN_HIEROGLYPH_A005A: char = '𓀅';
-    /// \u{13006}: '𓀆'
-    pub const EGYPTIAN_HIEROGLYPH_A006: char = '𓀆';
-    /// \u{13007}: '𓀇'
-    pub const EGYPTIAN_HIEROGLYPH_A006A: char = '𓀇';
-    /// \u{13008}: '𓀈'
-    pub const EGYPTIAN_HIEROGLYPH_A006B: char = '𓀈';
-    /// \u{13009}: '𓀉'
-    pub const EGYPTIAN_HIEROGLYPH_A007: char = '𓀉';
-    /// \u{1300a}: '𓀊'
-    pub const EGYPTIAN_HIEROGLYPH_A008: char = '𓀊';
-    /// \u{1300b}: '𓀋'
-    pub const EGYPTIAN_HIEROGLYPH_A009: char = '𓀋';
-    /// \u{1300c}: '𓀌'
-    pub const EGYPTIAN_HIEROGLYPH_A010: char = '𓀌';
-    /// \u{1300d}: '𓀍'
-    pub const EGYPTIAN_HIEROGLYPH_A011: char = '𓀍';
-    /// \u{1300e}: '𓀎'
-    pub const EGYPTIAN_HIEROGLYPH_A012: char = '𓀎';
-    /// \u{1300f}: '𓀏'
-    pub const EGYPTIAN_HIEROGLYPH_A013: char = '𓀏';
-    /// \u{13010}: '𓀐'
-    pub const EGYPTIAN_HIEROGLYPH_A014: char = '𓀐';
-    /// \u{13011}: '𓀑'
-    pub const EGYPTIAN_HIEROGLYPH_A014A: char = '𓀑';
-    /// \u{13012}: '𓀒'
-    pub const EGYPTIAN_HIEROGLYPH_A015: char = '𓀒';
-    /// \u{13013}: '𓀓'
-    pub const EGYPTIAN_HIEROGLYPH_A016: char = '𓀓';
-    /// \u{13014}: '𓀔'
-    pub const EGYPTIAN_HIEROGLYPH_A017: char = '𓀔';
-    /// \u{13015}: '𓀕'
-    pub const EGYPTIAN_HIEROGLYPH_A017A: char = '𓀕';
-    /// \u{13016}: '𓀖'
-    pub const EGYPTIAN_HIEROGLYPH_A018: char = '𓀖';
-    /// \u{13017}: '𓀗'
-    pub const EGYPTIAN_HIEROGLYPH_A019: char = '𓀗';
-    /// \u{13018}: '𓀘'
-    pub const EGYPTIAN_HIEROGLYPH_A020: char = '𓀘';
-    /// \u{13019}: '𓀙'
-    pub const EGYPTIAN_HIEROGLYPH_A021: char = '𓀙';
-    /// \u{1301a}: '𓀚'
-    pub const EGYPTIAN_HIEROGLYPH_A022: char = '𓀚';
-    /// \u{1301b}: '𓀛'
-    pub const EGYPTIAN_HIEROGLYPH_A023: char = '𓀛';
-    /// \u{1301c}: '𓀜'
-    pub const EGYPTIAN_HIEROGLYPH_A024: char = '𓀜';
-    /// \u{1301d}: '𓀝'
-    pub const EGYPTIAN_HIEROGLYPH_A025: char = '𓀝';
-    /// \u{1301e}: '𓀞'
-    pub const EGYPTIAN_HIEROGLYPH_A026: char = '𓀞';
-    /// \u{1301f}: '𓀟'
-    pub const EGYPTIAN_HIEROGLYPH_A027: char = '𓀟';
-    /// \u{13020}: '𓀠'
-    pub const EGYPTIAN_HIEROGLYPH_A028: char = '𓀠';
-    /// \u{13021}: '𓀡'
-    pub const EGYPTIAN_HIEROGLYPH_A029: char = '𓀡';
-    /// \u{13022}: '𓀢'
-    pub const EGYPTIAN_HIEROGLYPH_A030: char = '𓀢';
-    /// \u{13023}: '𓀣'
-    pub const EGYPTIAN_HIEROGLYPH_A031: char = '𓀣';
-    /// \u{13024}: '𓀤'
-    pub const EGYPTIAN_HIEROGLYPH_A032: char = '𓀤';
-    /// \u{13025}: '𓀥'
-    pub const EGYPTIAN_HIEROGLYPH_A032A: char = '𓀥';
-    /// \u{13026}: '𓀦'
-    pub const EGYPTIAN_HIEROGLYPH_A033: char = '𓀦';
-    /// \u{13027}: '𓀧'
-    pub const EGYPTIAN_HIEROGLYPH_A034: char = '𓀧';
-    /// \u{13028}: '𓀨'
-    pub const EGYPTIAN_HIEROGLYPH_A035: char = '𓀨';
-    /// \u{13029}: '𓀩'
-    pub const EGYPTIAN_HIEROGLYPH_A036: char = '𓀩';
-    /// \u{1302a}: '𓀪'
-    pub const EGYPTIAN_HIEROGLYPH_A037: char = '𓀪';
-    /// \u{1302b}: '𓀫'
-    pub const EGYPTIAN_HIEROGLYPH_A038: char = '𓀫';
-    /// \u{1302c}: '𓀬'
-    pub const EGYPTIAN_HIEROGLYPH_A039: char = '𓀬';
-    /// \u{1302d}: '𓀭'
-    pub const EGYPTIAN_HIEROGLYPH_A040: char = '𓀭';
-    /// \u{1302e}: '𓀮'
-    pub const EGYPTIAN_HIEROGLYPH_A040A: char = '𓀮';
-    /// \u{1302f}: '𓀯'
-    pub const EGYPTIAN_HIEROGLYPH_A041: char = '𓀯';
-    /// \u{13030}: '𓀰'
-    pub const EGYPTIAN_HIEROGLYPH_A042: char = '𓀰';
-    /// \u{13031}: '𓀱'
-    pub const EGYPTIAN_HIEROGLYPH_A042A: char = '𓀱';
-    /// \u{13032}: '𓀲'
-    pub const EGYPTIAN_HIEROGLYPH_A043: char = '𓀲';
-    /// \u{13033}: '𓀳'
-    pub const EGYPTIAN_HIEROGLYPH_A043A: char = '𓀳';
-    /// \u{13034}: '𓀴'
-    pub const EGYPTIAN_HIEROGLYPH_A044: char = '𓀴';
-    /// \u{13035}: '𓀵'
-    pub const EGYPTIAN_HIEROGLYPH_A045: char = '𓀵';
-    /// \u{13036}: '𓀶'
-    pub const EGYPTIAN_HIEROGLYPH_A045A: char = '𓀶';
-    /// \u{13037}: '𓀷'
-    pub const EGYPTIAN_HIEROGLYPH_A046: char = '𓀷';
-    /// \u{13038}: '𓀸'
-    pub const EGYPTIAN_HIEROGLYPH_A047: char = '𓀸';
-    /// \u{13039}: '𓀹'
-    pub const EGYPTIAN_HIEROGLYPH_A048: char = '𓀹';
-    /// \u{1303a}: '𓀺'
-    pub const EGYPTIAN_HIEROGLYPH_A049: char = '𓀺';
-    /// \u{1303b}: '𓀻'
-    pub const EGYPTIAN_HIEROGLYPH_A050: char = '𓀻';
-    /// \u{1303c}: '𓀼'
-    pub const EGYPTIAN_HIEROGLYPH_A051: char = '𓀼';
-    /// \u{1303d}: '𓀽'
-    pub const EGYPTIAN_HIEROGLYPH_A052: char = '𓀽';
-    /// \u{1303e}: '𓀾'
-    pub const EGYPTIAN_HIEROGLYPH_A053: char = '𓀾';
-    /// \u{1303f}: '𓀿'
-    pub const EGYPTIAN_HIEROGLYPH_A054: char = '𓀿';
-    /// \u{13040}: '𓁀'
-    pub const EGYPTIAN_HIEROGLYPH_A055: char = '𓁀';
-    /// \u{13041}: '𓁁'
-    pub const EGYPTIAN_HIEROGLYPH_A056: char = '𓁁';
-    /// \u{13042}: '𓁂'
-    pub const EGYPTIAN_HIEROGLYPH_A057: char = '𓁂';
-    /// \u{13043}: '𓁃'
-    pub const EGYPTIAN_HIEROGLYPH_A058: char = '𓁃';
-    /// \u{13044}: '𓁄'
-    pub const EGYPTIAN_HIEROGLYPH_A059: char = '𓁄';
-    /// \u{13045}: '𓁅'
-    pub const EGYPTIAN_HIEROGLYPH_A060: char = '𓁅';
-    /// \u{13046}: '𓁆'
-    pub const EGYPTIAN_HIEROGLYPH_A061: char = '𓁆';
-    /// \u{13047}: '𓁇'
-    pub const EGYPTIAN_HIEROGLYPH_A062: char = '𓁇';
-    /// \u{13048}: '𓁈'
-    pub const EGYPTIAN_HIEROGLYPH_A063: char = '𓁈';
-    /// \u{13049}: '𓁉'
-    pub const EGYPTIAN_HIEROGLYPH_A064: char = '𓁉';
-    /// \u{1304a}: '𓁊'
-    pub const EGYPTIAN_HIEROGLYPH_A065: char = '𓁊';
-    /// \u{1304b}: '𓁋'
-    pub const EGYPTIAN_HIEROGLYPH_A066: char = '𓁋';
-    /// \u{1304c}: '𓁌'
-    pub const EGYPTIAN_HIEROGLYPH_A067: char = '𓁌';
-    /// \u{1304d}: '𓁍'
-    pub const EGYPTIAN_HIEROGLYPH_A068: char = '𓁍';
-    /// \u{1304e}: '𓁎'
-    pub const EGYPTIAN_HIEROGLYPH_A069: char = '𓁎';
-    /// \u{1304f}: '𓁏'
-    pub const EGYPTIAN_HIEROGLYPH_A070: char = '𓁏';
-    /// \u{13050}: '𓁐'
-    pub const EGYPTIAN_HIEROGLYPH_B001: char = '𓁐';
-    /// \u{13051}: '𓁑'
-    pub const EGYPTIAN_HIEROGLYPH_B002: char = '𓁑';
-    /// \u{13052}: '𓁒'
-    pub const EGYPTIAN_HIEROGLYPH_B003: char = '𓁒';
-    /// \u{13053}: '𓁓'
-    pub const EGYPTIAN_HIEROGLYPH_B004: char = '𓁓';
-    /// \u{13054}: '𓁔'
-    pub const EGYPTIAN_HIEROGLYPH_B005: char = '𓁔';
-    /// \u{13055}: '𓁕'
-    pub const EGYPTIAN_HIEROGLYPH_B005A: char = '𓁕';
-    /// \u{13056}: '𓁖'
-    pub const EGYPTIAN_HIEROGLYPH_B006: char = '𓁖';
-    /// \u{13057}: '𓁗'
-    pub const EGYPTIAN_HIEROGLYPH_B007: char = '𓁗';
-    /// \u{13058}: '𓁘'
-    pub const EGYPTIAN_HIEROGLYPH_B008: char = '𓁘';
-    /// \u{13059}: '𓁙'
-    pub const EGYPTIAN_HIEROGLYPH_B009: char = '𓁙';
-    /// \u{1305a}: '𓁚'
-    pub const EGYPTIAN_HIEROGLYPH_C001: char = '𓁚';
-    /// \u{1305b}: '𓁛'
-    pub const EGYPTIAN_HIEROGLYPH_C002: char = '𓁛';
-    /// \u{1305c}: '𓁜'
-    pub const EGYPTIAN_HIEROGLYPH_C002A: char = '𓁜';
-    /// \u{1305d}: '𓁝'
-    pub const EGYPTIAN_HIEROGLYPH_C002B: char = '𓁝';
-    /// \u{1305e}: '𓁞'
-    pub const EGYPTIAN_HIEROGLYPH_C002C: char = '𓁞';
-    /// \u{1305f}: '𓁟'
-    pub const EGYPTIAN_HIEROGLYPH_C003: char = '𓁟';
-    /// \u{13060}: '𓁠'
-    pub const EGYPTIAN_HIEROGLYPH_C004: char = '𓁠';
-    /// \u{13061}: '𓁡'
-    pub const EGYPTIAN_HIEROGLYPH_C005: char = '𓁡';
-    /// \u{13062}: '𓁢'
-    pub const EGYPTIAN_HIEROGLYPH_C006: char = '𓁢';
-    /// \u{13063}: '𓁣'
-    pub const EGYPTIAN_HIEROGLYPH_C007: char = '𓁣';
-    /// \u{13064}: '𓁤'
-    pub const EGYPTIAN_HIEROGLYPH_C008: char = '𓁤';
-    /// \u{13065}: '𓁥'
-    pub const EGYPTIAN_HIEROGLYPH_C009: char = '𓁥';
-    /// \u{13066}: '𓁦'
-    pub const EGYPTIAN_HIEROGLYPH_C010: char = '𓁦';
-    /// \u{13067}: '𓁧'
-    pub const EGYPTIAN_HIEROGLYPH_C010A: char = '𓁧';
-    /// \u{13068}: '𓁨'
-    pub const EGYPTIAN_HIEROGLYPH_C011: char = '𓁨';
-    /// \u{13069}: '𓁩'
-    pub const EGYPTIAN_HIEROGLYPH_C012: char = '𓁩';
-    /// \u{1306a}: '𓁪'
-    pub const EGYPTIAN_HIEROGLYPH_C013: char = '𓁪';
-    /// \u{1306b}: '𓁫'
-    pub const EGYPTIAN_HIEROGLYPH_C014: char = '𓁫';
-    /// \u{1306c}: '𓁬'
-    pub const EGYPTIAN_HIEROGLYPH_C015: char = '𓁬';
-    /// \u{1306d}: '𓁭'
-    pub const EGYPTIAN_HIEROGLYPH_C016: char = '𓁭';
-    /// \u{1306e}: '𓁮'
-    pub const EGYPTIAN_HIEROGLYPH_C017: char = '𓁮';
-    /// \u{1306f}: '𓁯'
-    pub const EGYPTIAN_HIEROGLYPH_C018: char = '𓁯';
-    /// \u{13070}: '𓁰'
-    pub const EGYPTIAN_HIEROGLYPH_C019: char = '𓁰';
-    /// \u{13071}: '𓁱'
-    pub const EGYPTIAN_HIEROGLYPH_C020: char = '𓁱';
-    /// \u{13072}: '𓁲'
-    pub const EGYPTIAN_HIEROGLYPH_C021: char = '𓁲';
-    /// \u{13073}: '𓁳'
-    pub const EGYPTIAN_HIEROGLYPH_C022: char = '𓁳';
-    /// \u{13074}: '𓁴'
-    pub const EGYPTIAN_HIEROGLYPH_C023: char = '𓁴';
-    /// \u{13075}: '𓁵'
-    pub const EGYPTIAN_HIEROGLYPH_C024: char = '𓁵';
-    /// \u{13076}: '𓁶'
-    pub const EGYPTIAN_HIEROGLYPH_D001: char = '𓁶';
-    /// \u{13077}: '𓁷'
-    pub const EGYPTIAN_HIEROGLYPH_D002: char = '𓁷';
-    /// \u{13078}: '𓁸'
-    pub const EGYPTIAN_HIEROGLYPH_D003: char = '𓁸';
-    /// \u{13079}: '𓁹'
-    pub const EGYPTIAN_HIEROGLYPH_D004: char = '𓁹';
-    /// \u{1307a}: '𓁺'
-    pub const EGYPTIAN_HIEROGLYPH_D005: char = '𓁺';
-    /// \u{1307b}: '𓁻'
-    pub const EGYPTIAN_HIEROGLYPH_D006: char = '𓁻';
-    /// \u{1307c}: '𓁼'
-    pub const EGYPTIAN_HIEROGLYPH_D007: char = '𓁼';
-    /// \u{1307d}: '𓁽'
-    pub const EGYPTIAN_HIEROGLYPH_D008: char = '𓁽';
-    /// \u{1307e}: '𓁾'
-    pub const EGYPTIAN_HIEROGLYPH_D008A: char = '𓁾';
-    /// \u{1307f}: '𓁿'
-    pub const EGYPTIAN_HIEROGLYPH_D009: char = '𓁿';
-    /// \u{13080}: '𓂀'
-    pub const EGYPTIAN_HIEROGLYPH_D010: char = '𓂀';
-    /// \u{13081}: '𓂁'
-    pub const EGYPTIAN_HIEROGLYPH_D011: char = '𓂁';
-    /// \u{13082}: '𓂂'
-    pub const EGYPTIAN_HIEROGLYPH_D012: char = '𓂂';
-    /// \u{13083}: '𓂃'
-    pub const EGYPTIAN_HIEROGLYPH_D013: char = '𓂃';
-    /// \u{13084}: '𓂄'
-    pub const EGYPTIAN_HIEROGLYPH_D014: char = '𓂄';
-    /// \u{13085}: '𓂅'
-    pub const EGYPTIAN_HIEROGLYPH_D015: char = '𓂅';
-    /// \u{13086}: '𓂆'
-    pub const EGYPTIAN_HIEROGLYPH_D016: char = '𓂆';
-    /// \u{13087}: '𓂇'
-    pub const EGYPTIAN_HIEROGLYPH_D017: char = '𓂇';
-    /// \u{13088}: '𓂈'
-    pub const EGYPTIAN_HIEROGLYPH_D018: char = '𓂈';
-    /// \u{13089}: '𓂉'
-    pub const EGYPTIAN_HIEROGLYPH_D019: char = '𓂉';
-    /// \u{1308a}: '𓂊'
-    pub const EGYPTIAN_HIEROGLYPH_D020: char = '𓂊';
-    /// \u{1308b}: '𓂋'
-    pub const EGYPTIAN_HIEROGLYPH_D021: char = '𓂋';
-    /// \u{1308c}: '𓂌'
-    pub const EGYPTIAN_HIEROGLYPH_D022: char = '𓂌';
-    /// \u{1308d}: '𓂍'
-    pub const EGYPTIAN_HIEROGLYPH_D023: char = '𓂍';
-    /// \u{1308e}: '𓂎'
-    pub const EGYPTIAN_HIEROGLYPH_D024: char = '𓂎';
-    /// \u{1308f}: '𓂏'
-    pub const EGYPTIAN_HIEROGLYPH_D025: char = '𓂏';
-    /// \u{13090}: '𓂐'
-    pub const EGYPTIAN_HIEROGLYPH_D026: char = '𓂐';
-    /// \u{13091}: '𓂑'
-    pub const EGYPTIAN_HIEROGLYPH_D027: char = '𓂑';
-    /// \u{13092}: '𓂒'
-    pub const EGYPTIAN_HIEROGLYPH_D027A: char = '𓂒';
-    /// \u{13093}: '𓂓'
-    pub const EGYPTIAN_HIEROGLYPH_D028: char = '𓂓';
-    /// \u{13094}: '𓂔'
-    pub const EGYPTIAN_HIEROGLYPH_D029: char = '𓂔';
-    /// \u{13095}: '𓂕'
-    pub const EGYPTIAN_HIEROGLYPH_D030: char = '𓂕';
-    /// \u{13096}: '𓂖'
-    pub const EGYPTIAN_HIEROGLYPH_D031: char = '𓂖';
-    /// \u{13097}: '𓂗'
-    pub const EGYPTIAN_HIEROGLYPH_D031A: char = '𓂗';
-    /// \u{13098}: '𓂘'
-    pub const EGYPTIAN_HIEROGLYPH_D032: char = '𓂘';
-    /// \u{13099}: '𓂙'
-    pub const EGYPTIAN_HIEROGLYPH_D033: char = '𓂙';
-    /// \u{1309a}: '𓂚'
-    pub const EGYPTIAN_HIEROGLYPH_D034: char = '𓂚';
-    /// \u{1309b}: '𓂛'
-    pub const EGYPTIAN_HIEROGLYPH_D034A: char = '𓂛';
-    /// \u{1309c}: '𓂜'
-    pub const EGYPTIAN_HIEROGLYPH_D035: char = '𓂜';
-    /// \u{1309d}: '𓂝'
-    pub const EGYPTIAN_HIEROGLYPH_D036: char = '𓂝';
-    /// \u{1309e}: '𓂞'
-    pub const EGYPTIAN_HIEROGLYPH_D037: char = '𓂞';
-    /// \u{1309f}: '𓂟'
-    pub const EGYPTIAN_HIEROGLYPH_D038: char = '𓂟';
-    /// \u{130a0}: '𓂠'
-    pub const EGYPTIAN_HIEROGLYPH_D039: char = '𓂠';
-    /// \u{130a1}: '𓂡'
-    pub const EGYPTIAN_HIEROGLYPH_D040: char = '𓂡';
-    /// \u{130a2}: '𓂢'
-    pub const EGYPTIAN_HIEROGLYPH_D041: char = '𓂢';
-    /// \u{130a3}: '𓂣'
-    pub const EGYPTIAN_HIEROGLYPH_D042: char = '𓂣';
-    /// \u{130a4}: '𓂤'
-    pub const EGYPTIAN_HIEROGLYPH_D043: char = '𓂤';
-    /// \u{130a5}: '𓂥'
-    pub const EGYPTIAN_HIEROGLYPH_D044: char = '𓂥';
-    /// \u{130a6}: '𓂦'
-    pub const EGYPTIAN_HIEROGLYPH_D045: char = '𓂦';
-    /// \u{130a7}: '𓂧'
-    pub const EGYPTIAN_HIEROGLYPH_D046: char = '𓂧';
-    /// \u{130a8}: '𓂨'
-    pub const EGYPTIAN_HIEROGLYPH_D046A: char = '𓂨';
-    /// \u{130a9}: '𓂩'
-    pub const EGYPTIAN_HIEROGLYPH_D047: char = '𓂩';
-    /// \u{130aa}: '𓂪'
-    pub const EGYPTIAN_HIEROGLYPH_D048: char = '𓂪';
-    /// \u{130ab}: '𓂫'
-    pub const EGYPTIAN_HIEROGLYPH_D048A: char = '𓂫';
-    /// \u{130ac}: '𓂬'
-    pub const EGYPTIAN_HIEROGLYPH_D049: char = '𓂬';
-    /// \u{130ad}: '𓂭'
-    pub const EGYPTIAN_HIEROGLYPH_D050: char = '𓂭';
-    /// \u{130ae}: '𓂮'
-    pub const EGYPTIAN_HIEROGLYPH_D050A: char = '𓂮';
-    /// \u{130af}: '𓂯'
-    pub const EGYPTIAN_HIEROGLYPH_D050B: char = '𓂯';
-    /// \u{130b0}: '𓂰'
-    pub const EGYPTIAN_HIEROGLYPH_D050C: char = '𓂰';
-    /// \u{130b1}: '𓂱'
-    pub const EGYPTIAN_HIEROGLYPH_D050D: char = '𓂱';
-    /// \u{130b2}: '𓂲'
-    pub const EGYPTIAN_HIEROGLYPH_D050E: char = '𓂲';
-    /// \u{130b3}: '𓂳'
-    pub const EGYPTIAN_HIEROGLYPH_D050F: char = '𓂳';
-    /// \u{130b4}: '𓂴'
-    pub const EGYPTIAN_HIEROGLYPH_D050G: char = '𓂴';
-    /// \u{130b5}: '𓂵'
-    pub const EGYPTIAN_HIEROGLYPH_D050H: char = '𓂵';
-    /// \u{130b6}: '𓂶'
-    pub const EGYPTIAN_HIEROGLYPH_D050I: char = '𓂶';
-    /// \u{130b7}: '𓂷'
-    pub const EGYPTIAN_HIEROGLYPH_D051: char = '𓂷';
-    /// \u{130b8}: '𓂸'
-    pub const EGYPTIAN_HIEROGLYPH_D052: char = '𓂸';
-    /// \u{130b9}: '𓂹'
-    pub const EGYPTIAN_HIEROGLYPH_D052A: char = '𓂹';
-    /// \u{130ba}: '𓂺'
-    pub const EGYPTIAN_HIEROGLYPH_D053: char = '𓂺';
-    /// \u{130bb}: '𓂻'
-    pub const EGYPTIAN_HIEROGLYPH_D054: char = '𓂻';
-    /// \u{130bc}: '𓂼'
-    pub const EGYPTIAN_HIEROGLYPH_D054A: char = '𓂼';
-    /// \u{130bd}: '𓂽'
-    pub const EGYPTIAN_HIEROGLYPH_D055: char = '𓂽';
-    /// \u{130be}: '𓂾'
-    pub const EGYPTIAN_HIEROGLYPH_D056: char = '𓂾';
-    /// \u{130bf}: '𓂿'
-    pub const EGYPTIAN_HIEROGLYPH_D057: char = '𓂿';
-    /// \u{130c0}: '𓃀'
-    pub const EGYPTIAN_HIEROGLYPH_D058: char = '𓃀';
-    /// \u{130c1}: '𓃁'
-    pub const EGYPTIAN_HIEROGLYPH_D059: char = '𓃁';
-    /// \u{130c2}: '𓃂'
-    pub const EGYPTIAN_HIEROGLYPH_D060: char = '𓃂';
-    /// \u{130c3}: '𓃃'
-    pub const EGYPTIAN_HIEROGLYPH_D061: char = '𓃃';
-    /// \u{130c4}: '𓃄'
-    pub const EGYPTIAN_HIEROGLYPH_D062: char = '𓃄';
-    /// \u{130c5}: '𓃅'
-    pub const EGYPTIAN_HIEROGLYPH_D063: char = '𓃅';
-    /// \u{130c6}: '𓃆'
-    pub const EGYPTIAN_HIEROGLYPH_D064: char = '𓃆';
-    /// \u{130c7}: '𓃇'
-    pub const EGYPTIAN_HIEROGLYPH_D065: char = '𓃇';
-    /// \u{130c8}: '𓃈'
-    pub const EGYPTIAN_HIEROGLYPH_D066: char = '𓃈';
-    /// \u{130c9}: '𓃉'
-    pub const EGYPTIAN_HIEROGLYPH_D067: char = '𓃉';
-    /// \u{130ca}: '𓃊'
-    pub const EGYPTIAN_HIEROGLYPH_D067A: char = '𓃊';
-    /// \u{130cb}: '𓃋'
-    pub const EGYPTIAN_HIEROGLYPH_D067B: char = '𓃋';
-    /// \u{130cc}: '𓃌'
-    pub const EGYPTIAN_HIEROGLYPH_D067C: char = '𓃌';
-    /// \u{130cd}: '𓃍'
-    pub const EGYPTIAN_HIEROGLYPH_D067D: char = '𓃍';
-    /// \u{130ce}: '𓃎'
-    pub const EGYPTIAN_HIEROGLYPH_D067E: char = '𓃎';
-    /// \u{130cf}: '𓃏'
-    pub const EGYPTIAN_HIEROGLYPH_D067F: char = '𓃏';
-    /// \u{130d0}: '𓃐'
-    pub const EGYPTIAN_HIEROGLYPH_D067G: char = '𓃐';
-    /// \u{130d1}: '𓃑'
-    pub const EGYPTIAN_HIEROGLYPH_D067H: char = '𓃑';
-    /// \u{130d2}: '𓃒'
-    pub const EGYPTIAN_HIEROGLYPH_E001: char = '𓃒';
-    /// \u{130d3}: '𓃓'
-    pub const EGYPTIAN_HIEROGLYPH_E002: char = '𓃓';
-    /// \u{130d4}: '𓃔'
-    pub const EGYPTIAN_HIEROGLYPH_E003: char = '𓃔';
-    /// \u{130d5}: '𓃕'
-    pub const EGYPTIAN_HIEROGLYPH_E004: char = '𓃕';
-    /// \u{130d6}: '𓃖'
-    pub const EGYPTIAN_HIEROGLYPH_E005: char = '𓃖';
-    /// \u{130d7}: '𓃗'
-    pub const EGYPTIAN_HIEROGLYPH_E006: char = '𓃗';
-    /// \u{130d8}: '𓃘'
-    pub const EGYPTIAN_HIEROGLYPH_E007: char = '𓃘';
-    /// \u{130d9}: '𓃙'
-    pub const EGYPTIAN_HIEROGLYPH_E008: char = '𓃙';
-    /// \u{130da}: '𓃚'
-    pub const EGYPTIAN_HIEROGLYPH_E008A: char = '𓃚';
-    /// \u{130db}: '𓃛'
-    pub const EGYPTIAN_HIEROGLYPH_E009: char = '𓃛';
-    /// \u{130dc}: '𓃜'
-    pub const EGYPTIAN_HIEROGLYPH_E009A: char = '𓃜';
-    /// \u{130dd}: '𓃝'
-    pub const EGYPTIAN_HIEROGLYPH_E010: char = '𓃝';
-    /// \u{130de}: '𓃞'
-    pub const EGYPTIAN_HIEROGLYPH_E011: char = '𓃞';
-    /// \u{130df}: '𓃟'
-    pub const EGYPTIAN_HIEROGLYPH_E012: char = '𓃟';
-    /// \u{130e0}: '𓃠'
-    pub const EGYPTIAN_HIEROGLYPH_E013: char = '𓃠';
-    /// \u{130e1}: '𓃡'
-    pub const EGYPTIAN_HIEROGLYPH_E014: char = '𓃡';
-    /// \u{130e2}: '𓃢'
-    pub const EGYPTIAN_HIEROGLYPH_E015: char = '𓃢';
-    /// \u{130e3}: '𓃣'
-    pub const EGYPTIAN_HIEROGLYPH_E016: char = '𓃣';
-    /// \u{130e4}: '𓃤'
-    pub const EGYPTIAN_HIEROGLYPH_E016A: char = '𓃤';
-    /// \u{130e5}: '𓃥'
-    pub const EGYPTIAN_HIEROGLYPH_E017: char = '𓃥';
-    /// \u{130e6}: '𓃦'
-    pub const EGYPTIAN_HIEROGLYPH_E017A: char = '𓃦';
-    /// \u{130e7}: '𓃧'
-    pub const EGYPTIAN_HIEROGLYPH_E018: char = '𓃧';
-    /// \u{130e8}: '𓃨'
-    pub const EGYPTIAN_HIEROGLYPH_E019: char = '𓃨';
-    /// \u{130e9}: '𓃩'
-    pub const EGYPTIAN_HIEROGLYPH_E020: char = '𓃩';
-    /// \u{130ea}: '𓃪'
-    pub const EGYPTIAN_HIEROGLYPH_E020A: char = '𓃪';
-    /// \u{130eb}: '𓃫'
-    pub const EGYPTIAN_HIEROGLYPH_E021: char = '𓃫';
-    /// \u{130ec}: '𓃬'
-    pub const EGYPTIAN_HIEROGLYPH_E022: char = '𓃬';
-    /// \u{130ed}: '𓃭'
-    pub const EGYPTIAN_HIEROGLYPH_E023: char = '𓃭';
-    /// \u{130ee}: '𓃮'
-    pub const EGYPTIAN_HIEROGLYPH_E024: char = '𓃮';
-    /// \u{130ef}: '𓃯'
-    pub const EGYPTIAN_HIEROGLYPH_E025: char = '𓃯';
-    /// \u{130f0}: '𓃰'
-    pub const EGYPTIAN_HIEROGLYPH_E026: char = '𓃰';
-    /// \u{130f1}: '𓃱'
-    pub const EGYPTIAN_HIEROGLYPH_E027: char = '𓃱';
-    /// \u{130f2}: '𓃲'
-    pub const EGYPTIAN_HIEROGLYPH_E028: char = '𓃲';
-    /// \u{130f3}: '𓃳'
-    pub const EGYPTIAN_HIEROGLYPH_E028A: char = '𓃳';
-    /// \u{130f4}: '𓃴'
-    pub const EGYPTIAN_HIEROGLYPH_E029: char = '𓃴';
-    /// \u{130f5}: '𓃵'
-    pub const EGYPTIAN_HIEROGLYPH_E030: char = '𓃵';
-    /// \u{130f6}: '𓃶'
-    pub const EGYPTIAN_HIEROGLYPH_E031: char = '𓃶';
-    /// \u{130f7}: '𓃷'
-    pub const EGYPTIAN_HIEROGLYPH_E032: char = '𓃷';
-    /// \u{130f8}: '𓃸'
-    pub const EGYPTIAN_HIEROGLYPH_E033: char = '𓃸';
-    /// \u{130f9}: '𓃹'
-    pub const EGYPTIAN_HIEROGLYPH_E034: char = '𓃹';
-    /// \u{130fa}: '𓃺'
-    pub const EGYPTIAN_HIEROGLYPH_E034A: char = '𓃺';
-    /// \u{130fb}: '𓃻'
-    pub const EGYPTIAN_HIEROGLYPH_E036: char = '𓃻';
-    /// \u{130fc}: '𓃼'
-    pub const EGYPTIAN_HIEROGLYPH_E037: char = '𓃼';
-    /// \u{130fd}: '𓃽'
-    pub const EGYPTIAN_HIEROGLYPH_E038: char = '𓃽';
-    /// \u{130fe}: '𓃾'
-    pub const EGYPTIAN_HIEROGLYPH_F001: char = '𓃾';
-    /// \u{130ff}: '𓃿'
-    pub const EGYPTIAN_HIEROGLYPH_F001A: char = '𓃿';
-    /// \u{13100}: '𓄀'
-    pub const EGYPTIAN_HIEROGLYPH_F002: char = '𓄀';
-    /// \u{13101}: '𓄁'
-    pub const EGYPTIAN_HIEROGLYPH_F003: char = '𓄁';
-    /// \u{13102}: '𓄂'
-    pub const EGYPTIAN_HIEROGLYPH_F004: char = '𓄂';
-    /// \u{13103}: '𓄃'
-    pub const EGYPTIAN_HIEROGLYPH_F005: char = '𓄃';
-    /// \u{13104}: '𓄄'
-    pub const EGYPTIAN_HIEROGLYPH_F006: char = '𓄄';
-    /// \u{13105}: '𓄅'
-    pub const EGYPTIAN_HIEROGLYPH_F007: char = '𓄅';
-    /// \u{13106}: '𓄆'
-    pub const EGYPTIAN_HIEROGLYPH_F008: char = '𓄆';
-    /// \u{13107}: '𓄇'
-    pub const EGYPTIAN_HIEROGLYPH_F009: char = '𓄇';
-    /// \u{13108}: '𓄈'
-    pub const EGYPTIAN_HIEROGLYPH_F010: char = '𓄈';
-    /// \u{13109}: '𓄉'
-    pub const EGYPTIAN_HIEROGLYPH_F011: char = '𓄉';
-    /// \u{1310a}: '𓄊'
-    pub const EGYPTIAN_HIEROGLYPH_F012: char = '𓄊';
-    /// \u{1310b}: '𓄋'
-    pub const EGYPTIAN_HIEROGLYPH_F013: char = '𓄋';
-    /// \u{1310c}: '𓄌'
-    pub const EGYPTIAN_HIEROGLYPH_F013A: char = '𓄌';
-    /// \u{1310d}: '𓄍'
-    pub const EGYPTIAN_HIEROGLYPH_F014: char = '𓄍';
-    /// \u{1310e}: '𓄎'
-    pub const EGYPTIAN_HIEROGLYPH_F015: char = '𓄎';
-    /// \u{1310f}: '𓄏'
-    pub const EGYPTIAN_HIEROGLYPH_F016: char = '𓄏';
-    /// \u{13110}: '𓄐'
-    pub const EGYPTIAN_HIEROGLYPH_F017: char = '𓄐';
-    /// \u{13111}: '𓄑'
-    pub const EGYPTIAN_HIEROGLYPH_F018: char = '𓄑';
-    /// \u{13112}: '𓄒'
-    pub const EGYPTIAN_HIEROGLYPH_F019: char = '𓄒';
-    /// \u{13113}: '𓄓'
-    pub const EGYPTIAN_HIEROGLYPH_F020: char = '𓄓';
-    /// \u{13114}: '𓄔'
-    pub const EGYPTIAN_HIEROGLYPH_F021: char = '𓄔';
-    /// \u{13115}: '𓄕'
-    pub const EGYPTIAN_HIEROGLYPH_F021A: char = '𓄕';
-    /// \u{13116}: '𓄖'
-    pub const EGYPTIAN_HIEROGLYPH_F022: char = '𓄖';
-    /// \u{13117}: '𓄗'
-    pub const EGYPTIAN_HIEROGLYPH_F023: char = '𓄗';
-    /// \u{13118}: '𓄘'
-    pub const EGYPTIAN_HIEROGLYPH_F024: char = '𓄘';
-    /// \u{13119}: '𓄙'
-    pub const EGYPTIAN_HIEROGLYPH_F025: char = '𓄙';
-    /// \u{1311a}: '𓄚'
-    pub const EGYPTIAN_HIEROGLYPH_F026: char = '𓄚';
-    /// \u{1311b}: '𓄛'
-    pub const EGYPTIAN_HIEROGLYPH_F027: char = '𓄛';
-    /// \u{1311c}: '𓄜'
-    pub const EGYPTIAN_HIEROGLYPH_F028: char = '𓄜';
-    /// \u{1311d}: '𓄝'
-    pub const EGYPTIAN_HIEROGLYPH_F029: char = '𓄝';
-    /// \u{1311e}: '𓄞'
-    pub const EGYPTIAN_HIEROGLYPH_F030: char = '𓄞';
-    /// \u{1311f}: '𓄟'
-    pub const EGYPTIAN_HIEROGLYPH_F031: char = '𓄟';
-    /// \u{13120}: '𓄠'
-    pub const EGYPTIAN_HIEROGLYPH_F031A: char = '𓄠';
-    /// \u{13121}: '𓄡'
-    pub const EGYPTIAN_HIEROGLYPH_F032: char = '𓄡';
-    /// \u{13122}: '𓄢'
-    pub const EGYPTIAN_HIEROGLYPH_F033: char = '𓄢';
-    /// \u{13123}: '𓄣'
-    pub const EGYPTIAN_HIEROGLYPH_F034: char = '𓄣';
-    /// \u{13124}: '𓄤'
-    pub const EGYPTIAN_HIEROGLYPH_F035: char = '𓄤';
-    /// \u{13125}: '𓄥'
-    pub const EGYPTIAN_HIEROGLYPH_F036: char = '𓄥';
-    /// \u{13126}: '𓄦'
-    pub const EGYPTIAN_HIEROGLYPH_F037: char = '𓄦';
-    /// \u{13127}: '𓄧'
-    pub const EGYPTIAN_HIEROGLYPH_F037A: char = '𓄧';
-    /// \u{13128}: '𓄨'
-    pub const EGYPTIAN_HIEROGLYPH_F038: char = '𓄨';
-    /// \u{13129}: '𓄩'
-    pub const EGYPTIAN_HIEROGLYPH_F038A: char = '𓄩';
-    /// \u{1312a}: '𓄪'
-    pub const EGYPTIAN_HIEROGLYPH_F039: char = '𓄪';
-    /// \u{1312b}: '𓄫'
-    pub const EGYPTIAN_HIEROGLYPH_F040: char = '𓄫';
-    /// \u{1312c}: '𓄬'
-    pub const EGYPTIAN_HIEROGLYPH_F041: char = '𓄬';
-    /// \u{1312d}: '𓄭'
-    pub const EGYPTIAN_HIEROGLYPH_F042: char = '𓄭';
-    /// \u{1312e}: '𓄮'
-    pub const EGYPTIAN_HIEROGLYPH_F043: char = '𓄮';
-    /// \u{1312f}: '𓄯'
-    pub const EGYPTIAN_HIEROGLYPH_F044: char = '𓄯';
-    /// \u{13130}: '𓄰'
-    pub const EGYPTIAN_HIEROGLYPH_F045: char = '𓄰';
-    /// \u{13131}: '𓄱'
-    pub const EGYPTIAN_HIEROGLYPH_F045A: char = '𓄱';
-    /// \u{13132}: '𓄲'
-    pub const EGYPTIAN_HIEROGLYPH_F046: char = '𓄲';
-    /// \u{13133}: '𓄳'
-    pub const EGYPTIAN_HIEROGLYPH_F046A: char = '𓄳';
-    /// \u{13134}: '𓄴'
-    pub const EGYPTIAN_HIEROGLYPH_F047: char = '𓄴';
-    /// \u{13135}: '𓄵'
-    pub const EGYPTIAN_HIEROGLYPH_F047A: char = '𓄵';
-    /// \u{13136}: '𓄶'
-    pub const EGYPTIAN_HIEROGLYPH_F048: char = '𓄶';
-    /// \u{13137}: '𓄷'
-    pub const EGYPTIAN_HIEROGLYPH_F049: char = '𓄷';
-    /// \u{13138}: '𓄸'
-    pub const EGYPTIAN_HIEROGLYPH_F050: char = '𓄸';
-    /// \u{13139}: '𓄹'
-    pub const EGYPTIAN_HIEROGLYPH_F051: char = '𓄹';
-    /// \u{1313a}: '𓄺'
-    pub const EGYPTIAN_HIEROGLYPH_F051A: char = '𓄺';
-    /// \u{1313b}: '𓄻'
-    pub const EGYPTIAN_HIEROGLYPH_F051B: char = '𓄻';
-    /// \u{1313c}: '𓄼'
-    pub const EGYPTIAN_HIEROGLYPH_F051C: char = '𓄼';
-    /// \u{1313d}: '𓄽'
-    pub const EGYPTIAN_HIEROGLYPH_F052: char = '𓄽';
-    /// \u{1313e}: '𓄾'
-    pub const EGYPTIAN_HIEROGLYPH_F053: char = '𓄾';
-    /// \u{1313f}: '𓄿'
-    pub const EGYPTIAN_HIEROGLYPH_G001: char = '𓄿';
-    /// \u{13140}: '𓅀'
-    pub const EGYPTIAN_HIEROGLYPH_G002: char = '𓅀';
-    /// \u{13141}: '𓅁'
-    pub const EGYPTIAN_HIEROGLYPH_G003: char = '𓅁';
-    /// \u{13142}: '𓅂'
-    pub const EGYPTIAN_HIEROGLYPH_G004: char = '𓅂';
-    /// \u{13143}: '𓅃'
-    pub const EGYPTIAN_HIEROGLYPH_G005: char = '𓅃';
-    /// \u{13144}: '𓅄'
-    pub const EGYPTIAN_HIEROGLYPH_G006: char = '𓅄';
-    /// \u{13145}: '𓅅'
-    pub const EGYPTIAN_HIEROGLYPH_G006A: char = '𓅅';
-    /// \u{13146}: '𓅆'
-    pub const EGYPTIAN_HIEROGLYPH_G007: char = '𓅆';
-    /// \u{13147}: '𓅇'
-    pub const EGYPTIAN_HIEROGLYPH_G007A: char = '𓅇';
-    /// \u{13148}: '𓅈'
-    pub const EGYPTIAN_HIEROGLYPH_G007B: char = '𓅈';
-    /// \u{13149}: '𓅉'
-    pub const EGYPTIAN_HIEROGLYPH_G008: char = '𓅉';
-    /// \u{1314a}: '𓅊'
-    pub const EGYPTIAN_HIEROGLYPH_G009: char = '𓅊';
-    /// \u{1314b}: '𓅋'
-    pub const EGYPTIAN_HIEROGLYPH_G010: char = '𓅋';
-    /// \u{1314c}: '𓅌'
-    pub const EGYPTIAN_HIEROGLYPH_G011: char = '𓅌';
-    /// \u{1314d}: '𓅍'
-    pub const EGYPTIAN_HIEROGLYPH_G011A: char = '𓅍';
-    /// \u{1314e}: '𓅎'
-    pub const EGYPTIAN_HIEROGLYPH_G012: char = '𓅎';
-    /// \u{1314f}: '𓅏'
-    pub const EGYPTIAN_HIEROGLYPH_G013: char = '𓅏';
-    /// \u{13150}: '𓅐'
-    pub const EGYPTIAN_HIEROGLYPH_G014: char = '𓅐';
-    /// \u{13151}: '𓅑'
-    pub const EGYPTIAN_HIEROGLYPH_G015: char = '𓅑';
-    /// \u{13152}: '𓅒'
-    pub const EGYPTIAN_HIEROGLYPH_G016: char = '𓅒';
-    /// \u{13153}: '𓅓'
-    pub const EGYPTIAN_HIEROGLYPH_G017: char = '𓅓';
-    /// \u{13154}: '𓅔'
-    pub const EGYPTIAN_HIEROGLYPH_G018: char = '𓅔';
-    /// \u{13155}: '𓅕'
-    pub const EGYPTIAN_HIEROGLYPH_G019: char = '𓅕';
-    /// \u{13156}: '𓅖'
-    pub const EGYPTIAN_HIEROGLYPH_G020: char = '𓅖';
-    /// \u{13157}: '𓅗'
-    pub const EGYPTIAN_HIEROGLYPH_G020A: char = '𓅗';
-    /// \u{13158}: '𓅘'
-    pub const EGYPTIAN_HIEROGLYPH_G021: char = '𓅘';
-    /// \u{13159}: '𓅙'
-    pub const EGYPTIAN_HIEROGLYPH_G022: char = '𓅙';
-    /// \u{1315a}: '𓅚'
-    pub const EGYPTIAN_HIEROGLYPH_G023: char = '𓅚';
-    /// \u{1315b}: '𓅛'
-    pub const EGYPTIAN_HIEROGLYPH_G024: char = '𓅛';
-    /// \u{1315c}: '𓅜'
-    pub const EGYPTIAN_HIEROGLYPH_G025: char = '𓅜';
-    /// \u{1315d}: '𓅝'
-    pub const EGYPTIAN_HIEROGLYPH_G026: char = '𓅝';
-    /// \u{1315e}: '𓅞'
-    pub const EGYPTIAN_HIEROGLYPH_G026A: char = '𓅞';
-    /// \u{1315f}: '𓅟'
-    pub const EGYPTIAN_HIEROGLYPH_G027: char = '𓅟';
-    /// \u{13160}: '𓅠'
-    pub const EGYPTIAN_HIEROGLYPH_G028: char = '𓅠';
-    /// \u{13161}: '𓅡'
-    pub const EGYPTIAN_HIEROGLYPH_G029: char = '𓅡';
-    /// \u{13162}: '𓅢'
-    pub const EGYPTIAN_HIEROGLYPH_G030: char = '𓅢';
-    /// \u{13163}: '𓅣'
-    pub const EGYPTIAN_HIEROGLYPH_G031: char = '𓅣';
-    /// \u{13164}: '𓅤'
-    pub const EGYPTIAN_HIEROGLYPH_G032: char = '𓅤';
-    /// \u{13165}: '𓅥'
-    pub const EGYPTIAN_HIEROGLYPH_G033: char = '𓅥';
-    /// \u{13166}: '𓅦'
-    pub const EGYPTIAN_HIEROGLYPH_G034: char = '𓅦';
-    /// \u{13167}: '𓅧'
-    pub const EGYPTIAN_HIEROGLYPH_G035: char = '𓅧';
-    /// \u{13168}: '𓅨'
-    pub const EGYPTIAN_HIEROGLYPH_G036: char = '𓅨';
-    /// \u{13169}: '𓅩'
-    pub const EGYPTIAN_HIEROGLYPH_G036A: char = '𓅩';
-    /// \u{1316a}: '𓅪'
-    pub const EGYPTIAN_HIEROGLYPH_G037: char = '𓅪';
-    /// \u{1316b}: '𓅫'
-    pub const EGYPTIAN_HIEROGLYPH_G037A: char = '𓅫';
-    /// \u{1316c}: '𓅬'
-    pub const EGYPTIAN_HIEROGLYPH_G038: char = '𓅬';
-    /// \u{1316d}: '𓅭'
-    pub const EGYPTIAN_HIEROGLYPH_G039: char = '𓅭';
-    /// \u{1316e}: '𓅮'
-    pub const EGYPTIAN_HIEROGLYPH_G040: char = '𓅮';
-    /// \u{1316f}: '𓅯'
-    pub const EGYPTIAN_HIEROGLYPH_G041: char = '𓅯';
-    /// \u{13170}: '𓅰'
-    pub const EGYPTIAN_HIEROGLYPH_G042: char = '𓅰';
-    /// \u{13171}: '𓅱'
-    pub const EGYPTIAN_HIEROGLYPH_G043: char = '𓅱';
-    /// \u{13172}: '𓅲'
-    pub const EGYPTIAN_HIEROGLYPH_G043A: char = '𓅲';
-    /// \u{13173}: '𓅳'
-    pub const EGYPTIAN_HIEROGLYPH_G044: char = '𓅳';
-    /// \u{13174}: '𓅴'
-    pub const EGYPTIAN_HIEROGLYPH_G045: char = '𓅴';
-    /// \u{13175}: '𓅵'
-    pub const EGYPTIAN_HIEROGLYPH_G045A: char = '𓅵';
-    /// \u{13176}: '𓅶'
-    pub const EGYPTIAN_HIEROGLYPH_G046: char = '𓅶';
-    /// \u{13177}: '𓅷'
-    pub const EGYPTIAN_HIEROGLYPH_G047: char = '𓅷';
-    /// \u{13178}: '𓅸'
-    pub const EGYPTIAN_HIEROGLYPH_G048: char = '𓅸';
-    /// \u{13179}: '𓅹'
-    pub const EGYPTIAN_HIEROGLYPH_G049: char = '𓅹';
-    /// \u{1317a}: '𓅺'
-    pub const EGYPTIAN_HIEROGLYPH_G050: char = '𓅺';
-    /// \u{1317b}: '𓅻'
-    pub const EGYPTIAN_HIEROGLYPH_G051: char = '𓅻';
-    /// \u{1317c}: '𓅼'
-    pub const EGYPTIAN_HIEROGLYPH_G052: char = '𓅼';
-    /// \u{1317d}: '𓅽'
-    pub const EGYPTIAN_HIEROGLYPH_G053: char = '𓅽';
-    /// \u{1317e}: '𓅾'
-    pub const EGYPTIAN_HIEROGLYPH_G054: char = '𓅾';
-    /// \u{1317f}: '𓅿'
-    pub const EGYPTIAN_HIEROGLYPH_H001: char = '𓅿';
-    /// \u{13180}: '𓆀'
-    pub const EGYPTIAN_HIEROGLYPH_H002: char = '𓆀';
-    /// \u{13181}: '𓆁'
-    pub const EGYPTIAN_HIEROGLYPH_H003: char = '𓆁';
-    /// \u{13182}: '𓆂'
-    pub const EGYPTIAN_HIEROGLYPH_H004: char = '𓆂';
-    /// \u{13183}: '𓆃'
-    pub const EGYPTIAN_HIEROGLYPH_H005: char = '𓆃';
-    /// \u{13184}: '𓆄'
-    pub const EGYPTIAN_HIEROGLYPH_H006: char = '𓆄';
-    /// \u{13185}: '𓆅'
-    pub const EGYPTIAN_HIEROGLYPH_H006A: char = '𓆅';
-    /// \u{13186}: '𓆆'
-    pub const EGYPTIAN_HIEROGLYPH_H007: char = '𓆆';
-    /// \u{13187}: '𓆇'
-    pub const EGYPTIAN_HIEROGLYPH_H008: char = '𓆇';
-    /// \u{13188}: '𓆈'
-    pub const EGYPTIAN_HIEROGLYPH_I001: char = '𓆈';
-    /// \u{13189}: '𓆉'
-    pub const EGYPTIAN_HIEROGLYPH_I002: char = '𓆉';
-    /// \u{1318a}: '𓆊'
-    pub const EGYPTIAN_HIEROGLYPH_I003: char = '𓆊';
-    /// \u{1318b}: '𓆋'
-    pub const EGYPTIAN_HIEROGLYPH_I004: char = '𓆋';
-    /// \u{1318c}: '𓆌'
-    pub const EGYPTIAN_HIEROGLYPH_I005: char = '𓆌';
-    /// \u{1318d}: '𓆍'
-    pub const EGYPTIAN_HIEROGLYPH_I005A: char = '𓆍';
-    /// \u{1318e}: '𓆎'
-    pub const EGYPTIAN_HIEROGLYPH_I006: char = '𓆎';
-    /// \u{1318f}: '𓆏'
-    pub const EGYPTIAN_HIEROGLYPH_I007: char = '𓆏';
-    /// \u{13190}: '𓆐'
-    pub const EGYPTIAN_HIEROGLYPH_I008: char = '𓆐';
-    /// \u{13191}: '𓆑'
-    pub const EGYPTIAN_HIEROGLYPH_I009: char = '𓆑';
-    /// \u{13192}: '𓆒'
-    pub const EGYPTIAN_HIEROGLYPH_I009A: char = '𓆒';
-    /// \u{13193}: '𓆓'
-    pub const EGYPTIAN_HIEROGLYPH_I010: char = '𓆓';
-    /// \u{13194}: '𓆔'
-    pub const EGYPTIAN_HIEROGLYPH_I010A: char = '𓆔';
-    /// \u{13195}: '𓆕'
-    pub const EGYPTIAN_HIEROGLYPH_I011: char = '𓆕';
-    /// \u{13196}: '𓆖'
-    pub const EGYPTIAN_HIEROGLYPH_I011A: char = '𓆖';
-    /// \u{13197}: '𓆗'
-    pub const EGYPTIAN_HIEROGLYPH_I012: char = '𓆗';
-    /// \u{13198}: '𓆘'
-    pub const EGYPTIAN_HIEROGLYPH_I013: char = '𓆘';
-    /// \u{13199}: '𓆙'
-    pub const EGYPTIAN_HIEROGLYPH_I014: char = '𓆙';
-    /// \u{1319a}: '𓆚'
-    pub const EGYPTIAN_HIEROGLYPH_I015: char = '𓆚';
-    /// \u{1319b}: '𓆛'
-    pub const EGYPTIAN_HIEROGLYPH_K001: char = '𓆛';
-    /// \u{1319c}: '𓆜'
-    pub const EGYPTIAN_HIEROGLYPH_K002: char = '𓆜';
-    /// \u{1319d}: '𓆝'
-    pub const EGYPTIAN_HIEROGLYPH_K003: char = '𓆝';
-    /// \u{1319e}: '𓆞'
-    pub const EGYPTIAN_HIEROGLYPH_K004: char = '𓆞';
-    /// \u{1319f}: '𓆟'
-    pub const EGYPTIAN_HIEROGLYPH_K005: char = '𓆟';
-    /// \u{131a0}: '𓆠'
-    pub const EGYPTIAN_HIEROGLYPH_K006: char = '𓆠';
-    /// \u{131a1}: '𓆡'
-    pub const EGYPTIAN_HIEROGLYPH_K007: char = '𓆡';
-    /// \u{131a2}: '𓆢'
-    pub const EGYPTIAN_HIEROGLYPH_K008: char = '𓆢';
-    /// \u{131a3}: '𓆣'
-    pub const EGYPTIAN_HIEROGLYPH_L001: char = '𓆣';
-    /// \u{131a4}: '𓆤'
-    pub const EGYPTIAN_HIEROGLYPH_L002: char = '𓆤';
-    /// \u{131a5}: '𓆥'
-    pub const EGYPTIAN_HIEROGLYPH_L002A: char = '𓆥';
-    /// \u{131a6}: '𓆦'
-    pub const EGYPTIAN_HIEROGLYPH_L003: char = '𓆦';
-    /// \u{131a7}: '𓆧'
-    pub const EGYPTIAN_HIEROGLYPH_L004: char = '𓆧';
-    /// \u{131a8}: '𓆨'
-    pub const EGYPTIAN_HIEROGLYPH_L005: char = '𓆨';
-    /// \u{131a9}: '𓆩'
-    pub const EGYPTIAN_HIEROGLYPH_L006: char = '𓆩';
-    /// \u{131aa}: '𓆪'
-    pub const EGYPTIAN_HIEROGLYPH_L006A: char = '𓆪';
-    /// \u{131ab}: '𓆫'
-    pub const EGYPTIAN_HIEROGLYPH_L007: char = '𓆫';
-    /// \u{131ac}: '𓆬'
-    pub const EGYPTIAN_HIEROGLYPH_L008: char = '𓆬';
-    /// \u{131ad}: '𓆭'
-    pub const EGYPTIAN_HIEROGLYPH_M001: char = '𓆭';
-    /// \u{131ae}: '𓆮'
-    pub const EGYPTIAN_HIEROGLYPH_M001A: char = '𓆮';
-    /// \u{131af}: '𓆯'
-    pub const EGYPTIAN_HIEROGLYPH_M001B: char = '𓆯';
-    /// \u{131b0}: '𓆰'
-    pub const EGYPTIAN_HIEROGLYPH_M002: char = '𓆰';
-    /// \u{131b1}: '𓆱'
-    pub const EGYPTIAN_HIEROGLYPH_M003: char = '𓆱';
-    /// \u{131b2}: '𓆲'
-    pub const EGYPTIAN_HIEROGLYPH_M003A: char = '𓆲';
-    /// \u{131b3}: '𓆳'
-    pub const EGYPTIAN_HIEROGLYPH_M004: char = '𓆳';
-    /// \u{131b4}: '𓆴'
-    pub const EGYPTIAN_HIEROGLYPH_M005: char = '𓆴';
-    /// \u{131b5}: '𓆵'
-    pub const EGYPTIAN_HIEROGLYPH_M006: char = '𓆵';
-    /// \u{131b6}: '𓆶'
-    pub const EGYPTIAN_HIEROGLYPH_M007: char = '𓆶';
-    /// \u{131b7}: '𓆷'
-    pub const EGYPTIAN_HIEROGLYPH_M008: char = '𓆷';
-    /// \u{131b8}: '𓆸'
-    pub const EGYPTIAN_HIEROGLYPH_M009: char = '𓆸';
-    /// \u{131b9}: '𓆹'
-    pub const EGYPTIAN_HIEROGLYPH_M010: char = '𓆹';
-    /// \u{131ba}: '𓆺'
-    pub const EGYPTIAN_HIEROGLYPH_M010A: char = '𓆺';
-    /// \u{131bb}: '𓆻'
-    pub const EGYPTIAN_HIEROGLYPH_M011: char = '𓆻';
-    /// \u{131bc}: '𓆼'
-    pub const EGYPTIAN_HIEROGLYPH_M012: char = '𓆼';
-    /// \u{131bd}: '𓆽'
-    pub const EGYPTIAN_HIEROGLYPH_M012A: char = '𓆽';
-    /// \u{131be}: '𓆾'
-    pub const EGYPTIAN_HIEROGLYPH_M012B: char = '𓆾';
-    /// \u{131bf}: '𓆿'
-    pub const EGYPTIAN_HIEROGLYPH_M012C: char = '𓆿';
-    /// \u{131c0}: '𓇀'
-    pub const EGYPTIAN_HIEROGLYPH_M012D: char = '𓇀';
-    /// \u{131c1}: '𓇁'
-    pub const EGYPTIAN_HIEROGLYPH_M012E: char = '𓇁';
-    /// \u{131c2}: '𓇂'
-    pub const EGYPTIAN_HIEROGLYPH_M012F: char = '𓇂';
-    /// \u{131c3}: '𓇃'
-    pub const EGYPTIAN_HIEROGLYPH_M012G: char = '𓇃';
-    /// \u{131c4}: '𓇄'
-    pub const EGYPTIAN_HIEROGLYPH_M012H: char = '𓇄';
-    /// \u{131c5}: '𓇅'
-    pub const EGYPTIAN_HIEROGLYPH_M013: char = '𓇅';
-    /// \u{131c6}: '𓇆'
-    pub const EGYPTIAN_HIEROGLYPH_M014: char = '𓇆';
-    /// \u{131c7}: '𓇇'
-    pub const EGYPTIAN_HIEROGLYPH_M015: char = '𓇇';
-    /// \u{131c8}: '𓇈'
-    pub const EGYPTIAN_HIEROGLYPH_M015A: char = '𓇈';
-    /// \u{131c9}: '𓇉'
-    pub const EGYPTIAN_HIEROGLYPH_M016: char = '𓇉';
-    /// \u{131ca}: '𓇊'
-    pub const EGYPTIAN_HIEROGLYPH_M016A: char = '𓇊';
-    /// \u{131cb}: '𓇋'
-    pub const EGYPTIAN_HIEROGLYPH_M017: char = '𓇋';
-    /// \u{131cc}: '𓇌'
-    pub const EGYPTIAN_HIEROGLYPH_M017A: char = '𓇌';
-    /// \u{131cd}: '𓇍'
-    pub const EGYPTIAN_HIEROGLYPH_M018: char = '𓇍';
-    /// \u{131ce}: '𓇎'
-    pub const EGYPTIAN_HIEROGLYPH_M019: char = '𓇎';
-    /// \u{131cf}: '𓇏'
-    pub const EGYPTIAN_HIEROGLYPH_M020: char = '𓇏';
-    /// \u{131d0}: '𓇐'
-    pub const EGYPTIAN_HIEROGLYPH_M021: char = '𓇐';
-    /// \u{131d1}: '𓇑'
-    pub const EGYPTIAN_HIEROGLYPH_M022: char = '𓇑';
-    /// \u{131d2}: '𓇒'
-    pub const EGYPTIAN_HIEROGLYPH_M022A: char = '𓇒';
-    /// \u{131d3}: '𓇓'
-    pub const EGYPTIAN_HIEROGLYPH_M023: char = '𓇓';
-    /// \u{131d4}: '𓇔'
-    pub const EGYPTIAN_HIEROGLYPH_M024: char = '𓇔';
-    /// \u{131d5}: '𓇕'
-    pub const EGYPTIAN_HIEROGLYPH_M024A: char = '𓇕';
-    /// \u{131d6}: '𓇖'
-    pub const EGYPTIAN_HIEROGLYPH_M025: char = '𓇖';
-    /// \u{131d7}: '𓇗'
-    pub const EGYPTIAN_HIEROGLYPH_M026: char = '𓇗';
-    /// \u{131d8}: '𓇘'
-    pub const EGYPTIAN_HIEROGLYPH_M027: char = '𓇘';
-    /// \u{131d9}: '𓇙'
-    pub const EGYPTIAN_HIEROGLYPH_M028: char = '𓇙';
-    /// \u{131da}: '𓇚'
-    pub const EGYPTIAN_HIEROGLYPH_M028A: char = '𓇚';
-    /// \u{131db}: '𓇛'
-    pub const EGYPTIAN_HIEROGLYPH_M029: char = '𓇛';
-    /// \u{131dc}: '𓇜'
-    pub const EGYPTIAN_HIEROGLYPH_M030: char = '𓇜';
-    /// \u{131dd}: '𓇝'
-    pub const EGYPTIAN_HIEROGLYPH_M031: char = '𓇝';
-    /// \u{131de}: '𓇞'
-    pub const EGYPTIAN_HIEROGLYPH_M031A: char = '𓇞';
-    /// \u{131df}: '𓇟'
-    pub const EGYPTIAN_HIEROGLYPH_M032: char = '𓇟';
-    /// \u{131e0}: '𓇠'
-    pub const EGYPTIAN_HIEROGLYPH_M033: char = '𓇠';
-    /// \u{131e1}: '𓇡'
-    pub const EGYPTIAN_HIEROGLYPH_M033A: char = '𓇡';
-    /// \u{131e2}: '𓇢'
-    pub const EGYPTIAN_HIEROGLYPH_M033B: char = '𓇢';
-    /// \u{131e3}: '𓇣'
-    pub const EGYPTIAN_HIEROGLYPH_M034: char = '𓇣';
-    /// \u{131e4}: '𓇤'
-    pub const EGYPTIAN_HIEROGLYPH_M035: char = '𓇤';
-    /// \u{131e5}: '𓇥'
-    pub const EGYPTIAN_HIEROGLYPH_M036: char = '𓇥';
-    /// \u{131e6}: '𓇦'
-    pub const EGYPTIAN_HIEROGLYPH_M037: char = '𓇦';
-    /// \u{131e7}: '𓇧'
-    pub const EGYPTIAN_HIEROGLYPH_M038: char = '𓇧';
-    /// \u{131e8}: '𓇨'
-    pub const EGYPTIAN_HIEROGLYPH_M039: char = '𓇨';
-    /// \u{131e9}: '𓇩'
-    pub const EGYPTIAN_HIEROGLYPH_M040: char = '𓇩';
-    /// \u{131ea}: '𓇪'
-    pub const EGYPTIAN_HIEROGLYPH_M040A: char = '𓇪';
-    /// \u{131eb}: '𓇫'
-    pub const EGYPTIAN_HIEROGLYPH_M041: char = '𓇫';
-    /// \u{131ec}: '𓇬'
-    pub const EGYPTIAN_HIEROGLYPH_M042: char = '𓇬';
-    /// \u{131ed}: '𓇭'
-    pub const EGYPTIAN_HIEROGLYPH_M043: char = '𓇭';
-    /// \u{131ee}: '𓇮'
-    pub const EGYPTIAN_HIEROGLYPH_M044: char = '𓇮';
-    /// \u{131ef}: '𓇯'
-    pub const EGYPTIAN_HIEROGLYPH_N001: char = '𓇯';
-    /// \u{131f0}: '𓇰'
-    pub const EGYPTIAN_HIEROGLYPH_N002: char = '𓇰';
-    /// \u{131f1}: '𓇱'
-    pub const EGYPTIAN_HIEROGLYPH_N003: char = '𓇱';
-    /// \u{131f2}: '𓇲'
-    pub const EGYPTIAN_HIEROGLYPH_N004: char = '𓇲';
-    /// \u{131f3}: '𓇳'
-    pub const EGYPTIAN_HIEROGLYPH_N005: char = '𓇳';
-    /// \u{131f4}: '𓇴'
-    pub const EGYPTIAN_HIEROGLYPH_N006: char = '𓇴';
-    /// \u{131f5}: '𓇵'
-    pub const EGYPTIAN_HIEROGLYPH_N007: char = '𓇵';
-    /// \u{131f6}: '𓇶'
-    pub const EGYPTIAN_HIEROGLYPH_N008: char = '𓇶';
-    /// \u{131f7}: '𓇷'
-    pub const EGYPTIAN_HIEROGLYPH_N009: char = '𓇷';
-    /// \u{131f8}: '𓇸'
-    pub const EGYPTIAN_HIEROGLYPH_N010: char = '𓇸';
-    /// \u{131f9}: '𓇹'
-    pub const EGYPTIAN_HIEROGLYPH_N011: char = '𓇹';
-    /// \u{131fa}: '𓇺'
-    pub const EGYPTIAN_HIEROGLYPH_N012: char = '𓇺';
-    /// \u{131fb}: '𓇻'
-    pub const EGYPTIAN_HIEROGLYPH_N013: char = '𓇻';
-    /// \u{131fc}: '𓇼'
-    pub const EGYPTIAN_HIEROGLYPH_N014: char = '𓇼';
-    /// \u{131fd}: '𓇽'
-    pub const EGYPTIAN_HIEROGLYPH_N015: char = '𓇽';
-    /// \u{131fe}: '𓇾'
-    pub const EGYPTIAN_HIEROGLYPH_N016: char = '𓇾';
-    /// \u{131ff}: '𓇿'
-    pub const EGYPTIAN_HIEROGLYPH_N017: char = '𓇿';
-    /// \u{13200}: '𓈀'
-    pub const EGYPTIAN_HIEROGLYPH_N018: char = '𓈀';
-    /// \u{13201}: '𓈁'
-    pub const EGYPTIAN_HIEROGLYPH_N018A: char = '𓈁';
-    /// \u{13202}: '𓈂'
-    pub const EGYPTIAN_HIEROGLYPH_N018B: char = '𓈂';
-    /// \u{13203}: '𓈃'
-    pub const EGYPTIAN_HIEROGLYPH_N019: char = '𓈃';
-    /// \u{13204}: '𓈄'
-    pub const EGYPTIAN_HIEROGLYPH_N020: char = '𓈄';
-    /// \u{13205}: '𓈅'
-    pub const EGYPTIAN_HIEROGLYPH_N021: char = '𓈅';
-    /// \u{13206}: '𓈆'
-    pub const EGYPTIAN_HIEROGLYPH_N022: char = '𓈆';
-    /// \u{13207}: '𓈇'
-    pub const EGYPTIAN_HIEROGLYPH_N023: char = '𓈇';
-    /// \u{13208}: '𓈈'
-    pub const EGYPTIAN_HIEROGLYPH_N024: char = '𓈈';
-    /// \u{13209}: '𓈉'
-    pub const EGYPTIAN_HIEROGLYPH_N025: char = '𓈉';
-    /// \u{1320a}: '𓈊'
-    pub const EGYPTIAN_HIEROGLYPH_N025A: char = '𓈊';
-    /// \u{1320b}: '𓈋'
-    pub const EGYPTIAN_HIEROGLYPH_N026: char = '𓈋';
-    /// \u{1320c}: '𓈌'
-    pub const EGYPTIAN_HIEROGLYPH_N027: char = '𓈌';
-    /// \u{1320d}: '𓈍'
-    pub const EGYPTIAN_HIEROGLYPH_N028: char = '𓈍';
-    /// \u{1320e}: '𓈎'
-    pub const EGYPTIAN_HIEROGLYPH_N029: char = '𓈎';
-    /// \u{1320f}: '𓈏'
-    pub const EGYPTIAN_HIEROGLYPH_N030: char = '𓈏';
-    /// \u{13210}: '𓈐'
-    pub const EGYPTIAN_HIEROGLYPH_N031: char = '𓈐';
-    /// \u{13211}: '𓈑'
-    pub const EGYPTIAN_HIEROGLYPH_N032: char = '𓈑';
-    /// \u{13212}: '𓈒'
-    pub const EGYPTIAN_HIEROGLYPH_N033: char = '𓈒';
-    /// \u{13213}: '𓈓'
-    pub const EGYPTIAN_HIEROGLYPH_N033A: char = '𓈓';
-    /// \u{13214}: '𓈔'
-    pub const EGYPTIAN_HIEROGLYPH_N034: char = '𓈔';
-    /// \u{13215}: '𓈕'
-    pub const EGYPTIAN_HIEROGLYPH_N034A: char = '𓈕';
-    /// \u{13216}: '𓈖'
-    pub const EGYPTIAN_HIEROGLYPH_N035: char = '𓈖';
-    /// \u{13217}: '𓈗'
-    pub const EGYPTIAN_HIEROGLYPH_N035A: char = '𓈗';
-    /// \u{13218}: '𓈘'
-    pub const EGYPTIAN_HIEROGLYPH_N036: char = '𓈘';
-    /// \u{13219}: '𓈙'
-    pub const EGYPTIAN_HIEROGLYPH_N037: char = '𓈙';
-    /// \u{1321a}: '𓈚'
-    pub const EGYPTIAN_HIEROGLYPH_N037A: char = '𓈚';
-    /// \u{1321b}: '𓈛'
-    pub const EGYPTIAN_HIEROGLYPH_N038: char = '𓈛';
-    /// \u{1321c}: '𓈜'
-    pub const EGYPTIAN_HIEROGLYPH_N039: char = '𓈜';
-    /// \u{1321d}: '𓈝'
-    pub const EGYPTIAN_HIEROGLYPH_N040: char = '𓈝';
-    /// \u{1321e}: '𓈞'
-    pub const EGYPTIAN_HIEROGLYPH_N041: char = '𓈞';
-    /// \u{1321f}: '𓈟'
-    pub const EGYPTIAN_HIEROGLYPH_N042: char = '𓈟';
-    /// \u{13220}: '𓈠'
-    pub const EGYPTIAN_HIEROGLYPH_NL001: char = '𓈠';
-    /// \u{13221}: '𓈡'
-    pub const EGYPTIAN_HIEROGLYPH_NL002: char = '𓈡';
-    /// \u{13222}: '𓈢'
-    pub const EGYPTIAN_HIEROGLYPH_NL003: char = '𓈢';
-    /// \u{13223}: '𓈣'
-    pub const EGYPTIAN_HIEROGLYPH_NL004: char = '𓈣';
-    /// \u{13224}: '𓈤'
-    pub const EGYPTIAN_HIEROGLYPH_NL005: char = '𓈤';
-    /// \u{13225}: '𓈥'
-    pub const EGYPTIAN_HIEROGLYPH_NL005A: char = '𓈥';
-    /// \u{13226}: '𓈦'
-    pub const EGYPTIAN_HIEROGLYPH_NL006: char = '𓈦';
-    /// \u{13227}: '𓈧'
-    pub const EGYPTIAN_HIEROGLYPH_NL007: char = '𓈧';
-    /// \u{13228}: '𓈨'
-    pub const EGYPTIAN_HIEROGLYPH_NL008: char = '𓈨';
-    /// \u{13229}: '𓈩'
-    pub const EGYPTIAN_HIEROGLYPH_NL009: char = '𓈩';
-    /// \u{1322a}: '𓈪'
-    pub const EGYPTIAN_HIEROGLYPH_NL010: char = '𓈪';
-    /// \u{1322b}: '𓈫'
-    pub const EGYPTIAN_HIEROGLYPH_NL011: char = '𓈫';
-    /// \u{1322c}: '𓈬'
-    pub const EGYPTIAN_HIEROGLYPH_NL012: char = '𓈬';
-    /// \u{1322d}: '𓈭'
-    pub const EGYPTIAN_HIEROGLYPH_NL013: char = '𓈭';
-    /// \u{1322e}: '𓈮'
-    pub const EGYPTIAN_HIEROGLYPH_NL014: char = '𓈮';
-    /// \u{1322f}: '𓈯'
-    pub const EGYPTIAN_HIEROGLYPH_NL015: char = '𓈯';
-    /// \u{13230}: '𓈰'
-    pub const EGYPTIAN_HIEROGLYPH_NL016: char = '𓈰';
-    /// \u{13231}: '𓈱'
-    pub const EGYPTIAN_HIEROGLYPH_NL017: char = '𓈱';
-    /// \u{13232}: '𓈲'
-    pub const EGYPTIAN_HIEROGLYPH_NL017A: char = '𓈲';
-    /// \u{13233}: '𓈳'
-    pub const EGYPTIAN_HIEROGLYPH_NL018: char = '𓈳';
-    /// \u{13234}: '𓈴'
-    pub const EGYPTIAN_HIEROGLYPH_NL019: char = '𓈴';
-    /// \u{13235}: '𓈵'
-    pub const EGYPTIAN_HIEROGLYPH_NL020: char = '𓈵';
-    /// \u{13236}: '𓈶'
-    pub const EGYPTIAN_HIEROGLYPH_NU001: char = '𓈶';
-    /// \u{13237}: '𓈷'
-    pub const EGYPTIAN_HIEROGLYPH_NU002: char = '𓈷';
-    /// \u{13238}: '𓈸'
-    pub const EGYPTIAN_HIEROGLYPH_NU003: char = '𓈸';
-    /// \u{13239}: '𓈹'
-    pub const EGYPTIAN_HIEROGLYPH_NU004: char = '𓈹';
-    /// \u{1323a}: '𓈺'
-    pub const EGYPTIAN_HIEROGLYPH_NU005: char = '𓈺';
-    /// \u{1323b}: '𓈻'
-    pub const EGYPTIAN_HIEROGLYPH_NU006: char = '𓈻';
-    /// \u{1323c}: '𓈼'
-    pub const EGYPTIAN_HIEROGLYPH_NU007: char = '𓈼';
-    /// \u{1323d}: '𓈽'
-    pub const EGYPTIAN_HIEROGLYPH_NU008: char = '𓈽';
-    /// \u{1323e}: '𓈾'
-    pub const EGYPTIAN_HIEROGLYPH_NU009: char = '𓈾';
-    /// \u{1323f}: '𓈿'
-    pub const EGYPTIAN_HIEROGLYPH_NU010: char = '𓈿';
-    /// \u{13240}: '𓉀'
-    pub const EGYPTIAN_HIEROGLYPH_NU010A: char = '𓉀';
-    /// \u{13241}: '𓉁'
-    pub const EGYPTIAN_HIEROGLYPH_NU011: char = '𓉁';
-    /// \u{13242}: '𓉂'
-    pub const EGYPTIAN_HIEROGLYPH_NU011A: char = '𓉂';
-    /// \u{13243}: '𓉃'
-    pub const EGYPTIAN_HIEROGLYPH_NU012: char = '𓉃';
-    /// \u{13244}: '𓉄'
-    pub const EGYPTIAN_HIEROGLYPH_NU013: char = '𓉄';
-    /// \u{13245}: '𓉅'
-    pub const EGYPTIAN_HIEROGLYPH_NU014: char = '𓉅';
-    /// \u{13246}: '𓉆'
-    pub const EGYPTIAN_HIEROGLYPH_NU015: char = '𓉆';
-    /// \u{13247}: '𓉇'
-    pub const EGYPTIAN_HIEROGLYPH_NU016: char = '𓉇';
-    /// \u{13248}: '𓉈'
-    pub const EGYPTIAN_HIEROGLYPH_NU017: char = '𓉈';
-    /// \u{13249}: '𓉉'
-    pub const EGYPTIAN_HIEROGLYPH_NU018: char = '𓉉';
-    /// \u{1324a}: '𓉊'
-    pub const EGYPTIAN_HIEROGLYPH_NU018A: char = '𓉊';
-    /// \u{1324b}: '𓉋'
-    pub const EGYPTIAN_HIEROGLYPH_NU019: char = '𓉋';
-    /// \u{1324c}: '𓉌'
-    pub const EGYPTIAN_HIEROGLYPH_NU020: char = '𓉌';
-    /// \u{1324d}: '𓉍'
-    pub const EGYPTIAN_HIEROGLYPH_NU021: char = '𓉍';
-    /// \u{1324e}: '𓉎'
-    pub const EGYPTIAN_HIEROGLYPH_NU022: char = '𓉎';
-    /// \u{1324f}: '𓉏'
-    pub const EGYPTIAN_HIEROGLYPH_NU022A: char = '𓉏';
-    /// \u{13250}: '𓉐'
-    pub const EGYPTIAN_HIEROGLYPH_O001: char = '𓉐';
-    /// \u{13251}: '𓉑'
-    pub const EGYPTIAN_HIEROGLYPH_O001A: char = '𓉑';
-    /// \u{13252}: '𓉒'
-    pub const EGYPTIAN_HIEROGLYPH_O002: char = '𓉒';
-    /// \u{13253}: '𓉓'
-    pub const EGYPTIAN_HIEROGLYPH_O003: char = '𓉓';
-    /// \u{13254}: '𓉔'
-    pub const EGYPTIAN_HIEROGLYPH_O004: char = '𓉔';
-    /// \u{13255}: '𓉕'
-    pub const EGYPTIAN_HIEROGLYPH_O005: char = '𓉕';
-    /// \u{13256}: '𓉖'
-    pub const EGYPTIAN_HIEROGLYPH_O005A: char = '𓉖';
-    /// \u{13257}: '𓉗'
-    pub const EGYPTIAN_HIEROGLYPH_O006: char = '𓉗';
-    /// \u{13258}: '𓉘'
-    pub const EGYPTIAN_HIEROGLYPH_O006A: char = '𓉘';
-    /// \u{13259}: '𓉙'
-    pub const EGYPTIAN_HIEROGLYPH_O006B: char = '𓉙';
-    /// \u{1325a}: '𓉚'
-    pub const EGYPTIAN_HIEROGLYPH_O006C: char = '𓉚';
-    /// \u{1325b}: '𓉛'
-    pub const EGYPTIAN_HIEROGLYPH_O006D: char = '𓉛';
-    /// \u{1325c}: '𓉜'
-    pub const EGYPTIAN_HIEROGLYPH_O006E: char = '𓉜';
-    /// \u{1325d}: '𓉝'
-    pub const EGYPTIAN_HIEROGLYPH_O006F: char = '𓉝';
-    /// \u{1325e}: '𓉞'
-    pub const EGYPTIAN_HIEROGLYPH_O007: char = '𓉞';
-    /// \u{1325f}: '𓉟'
-    pub const EGYPTIAN_HIEROGLYPH_O008: char = '𓉟';
-    /// \u{13260}: '𓉠'
-    pub const EGYPTIAN_HIEROGLYPH_O009: char = '𓉠';
-    /// \u{13261}: '𓉡'
-    pub const EGYPTIAN_HIEROGLYPH_O010: char = '𓉡';
-    /// \u{13262}: '𓉢'
-    pub const EGYPTIAN_HIEROGLYPH_O010A: char = '𓉢';
-    /// \u{13263}: '𓉣'
-    pub const EGYPTIAN_HIEROGLYPH_O010B: char = '𓉣';
-    /// \u{13264}: '𓉤'
-    pub const EGYPTIAN_HIEROGLYPH_O010C: char = '𓉤';
-    /// \u{13265}: '𓉥'
-    pub const EGYPTIAN_HIEROGLYPH_O011: char = '𓉥';
-    /// \u{13266}: '𓉦'
-    pub const EGYPTIAN_HIEROGLYPH_O012: char = '𓉦';
-    /// \u{13267}: '𓉧'
-    pub const EGYPTIAN_HIEROGLYPH_O013: char = '𓉧';
-    /// \u{13268}: '𓉨'
-    pub const EGYPTIAN_HIEROGLYPH_O014: char = '𓉨';
-    /// \u{13269}: '𓉩'
-    pub const EGYPTIAN_HIEROGLYPH_O015: char = '𓉩';
-    /// \u{1326a}: '𓉪'
-    pub const EGYPTIAN_HIEROGLYPH_O016: char = '𓉪';
-    /// \u{1326b}: '𓉫'
-    pub const EGYPTIAN_HIEROGLYPH_O017: char = '𓉫';
-    /// \u{1326c}: '𓉬'
-    pub const EGYPTIAN_HIEROGLYPH_O018: char = '𓉬';
-    /// \u{1326d}: '𓉭'
-    pub const EGYPTIAN_HIEROGLYPH_O019: char = '𓉭';
-    /// \u{1326e}: '𓉮'
-    pub const EGYPTIAN_HIEROGLYPH_O019A: char = '𓉮';
-    /// \u{1326f}: '𓉯'
-    pub const EGYPTIAN_HIEROGLYPH_O020: char = '𓉯';
-    /// \u{13270}: '𓉰'
-    pub const EGYPTIAN_HIEROGLYPH_O020A: char = '𓉰';
-    /// \u{13271}: '𓉱'
-    pub const EGYPTIAN_HIEROGLYPH_O021: char = '𓉱';
-    /// \u{13272}: '𓉲'
-    pub const EGYPTIAN_HIEROGLYPH_O022: char = '𓉲';
-    /// \u{13273}: '𓉳'
-    pub const EGYPTIAN_HIEROGLYPH_O023: char = '𓉳';
-    /// \u{13274}: '𓉴'
-    pub const EGYPTIAN_HIEROGLYPH_O024: char = '𓉴';
-    /// \u{13275}: '𓉵'
-    pub const EGYPTIAN_HIEROGLYPH_O024A: char = '𓉵';
-    /// \u{13276}: '𓉶'
-    pub const EGYPTIAN_HIEROGLYPH_O025: char = '𓉶';
-    /// \u{13277}: '𓉷'
-    pub const EGYPTIAN_HIEROGLYPH_O025A: char = '𓉷';
-    /// \u{13278}: '𓉸'
-    pub const EGYPTIAN_HIEROGLYPH_O026: char = '𓉸';
-    /// \u{13279}: '𓉹'
-    pub const EGYPTIAN_HIEROGLYPH_O027: char = '𓉹';
-    /// \u{1327a}: '𓉺'
-    pub const EGYPTIAN_HIEROGLYPH_O028: char = '𓉺';
-    /// \u{1327b}: '𓉻'
-    pub const EGYPTIAN_HIEROGLYPH_O029: char = '𓉻';
-    /// \u{1327c}: '𓉼'
-    pub const EGYPTIAN_HIEROGLYPH_O029A: char = '𓉼';
-    /// \u{1327d}: '𓉽'
-    pub const EGYPTIAN_HIEROGLYPH_O030: char = '𓉽';
-    /// \u{1327e}: '𓉾'
-    pub const EGYPTIAN_HIEROGLYPH_O030A: char = '𓉾';
-    /// \u{1327f}: '𓉿'
-    pub const EGYPTIAN_HIEROGLYPH_O031: char = '𓉿';
-    /// \u{13280}: '𓊀'
-    pub const EGYPTIAN_HIEROGLYPH_O032: char = '𓊀';
-    /// \u{13281}: '𓊁'
-    pub const EGYPTIAN_HIEROGLYPH_O033: char = '𓊁';
-    /// \u{13282}: '𓊂'
-    pub const EGYPTIAN_HIEROGLYPH_O033A: char = '𓊂';
-    /// \u{13283}: '𓊃'
-    pub const EGYPTIAN_HIEROGLYPH_O034: char = '𓊃';
-    /// \u{13284}: '𓊄'
-    pub const EGYPTIAN_HIEROGLYPH_O035: char = '𓊄';
-    /// \u{13285}: '𓊅'
-    pub const EGYPTIAN_HIEROGLYPH_O036: char = '𓊅';
-    /// \u{13286}: '𓊆'
-    pub const EGYPTIAN_HIEROGLYPH_O036A: char = '𓊆';
-    /// \u{13287}: '𓊇'
-    pub const EGYPTIAN_HIEROGLYPH_O036B: char = '𓊇';
-    /// \u{13288}: '𓊈'
-    pub const EGYPTIAN_HIEROGLYPH_O036C: char = '𓊈';
-    /// \u{13289}: '𓊉'
-    pub const EGYPTIAN_HIEROGLYPH_O036D: char = '𓊉';
-    /// \u{1328a}: '𓊊'
-    pub const EGYPTIAN_HIEROGLYPH_O037: char = '𓊊';
-    /// \u{1328b}: '𓊋'
-    pub const EGYPTIAN_HIEROGLYPH_O038: char = '𓊋';
-    /// \u{1328c}: '𓊌'
-    pub const EGYPTIAN_HIEROGLYPH_O039: char = '𓊌';
-    /// \u{1328d}: '𓊍'
-    pub const EGYPTIAN_HIEROGLYPH_O040: char = '𓊍';
-    /// \u{1328e}: '𓊎'
-    pub const EGYPTIAN_HIEROGLYPH_O041: char = '𓊎';
-    /// \u{1328f}: '𓊏'
-    pub const EGYPTIAN_HIEROGLYPH_O042: char = '𓊏';
-    /// \u{13290}: '𓊐'
-    pub const EGYPTIAN_HIEROGLYPH_O043: char = '𓊐';
-    /// \u{13291}: '𓊑'
-    pub const EGYPTIAN_HIEROGLYPH_O044: char = '𓊑';
-    /// \u{13292}: '𓊒'
-    pub const EGYPTIAN_HIEROGLYPH_O045: char = '𓊒';
-    /// \u{13293}: '𓊓'
-    pub const EGYPTIAN_HIEROGLYPH_O046: char = '𓊓';
-    /// \u{13294}: '𓊔'
-    pub const EGYPTIAN_HIEROGLYPH_O047: char = '𓊔';
-    /// \u{13295}: '𓊕'
-    pub const EGYPTIAN_HIEROGLYPH_O048: char = '𓊕';
-    /// \u{13296}: '𓊖'
-    pub const EGYPTIAN_HIEROGLYPH_O049: char = '𓊖';
-    /// \u{13297}: '𓊗'
-    pub const EGYPTIAN_HIEROGLYPH_O050: char = '𓊗';
-    /// \u{13298}: '𓊘'
-    pub const EGYPTIAN_HIEROGLYPH_O050A: char = '𓊘';
-    /// \u{13299}: '𓊙'
-    pub const EGYPTIAN_HIEROGLYPH_O050B: char = '𓊙';
-    /// \u{1329a}: '𓊚'
-    pub const EGYPTIAN_HIEROGLYPH_O051: char = '𓊚';
-    /// \u{1329b}: '𓊛'
-    pub const EGYPTIAN_HIEROGLYPH_P001: char = '𓊛';
-    /// \u{1329c}: '𓊜'
-    pub const EGYPTIAN_HIEROGLYPH_P001A: char = '𓊜';
-    /// \u{1329d}: '𓊝'
-    pub const EGYPTIAN_HIEROGLYPH_P002: char = '𓊝';
-    /// \u{1329e}: '𓊞'
-    pub const EGYPTIAN_HIEROGLYPH_P003: char = '𓊞';
-    /// \u{1329f}: '𓊟'
-    pub const EGYPTIAN_HIEROGLYPH_P003A: char = '𓊟';
-    /// \u{132a0}: '𓊠'
-    pub const EGYPTIAN_HIEROGLYPH_P004: char = '𓊠';
-    /// \u{132a1}: '𓊡'
-    pub const EGYPTIAN_HIEROGLYPH_P005: char = '𓊡';
-    /// \u{132a2}: '𓊢'
-    pub const EGYPTIAN_HIEROGLYPH_P006: char = '𓊢';
-    /// \u{132a3}: '𓊣'
-    pub const EGYPTIAN_HIEROGLYPH_P007: char = '𓊣';
-    /// \u{132a4}: '𓊤'
-    pub const EGYPTIAN_HIEROGLYPH_P008: char = '𓊤';
-    /// \u{132a5}: '𓊥'
-    pub const EGYPTIAN_HIEROGLYPH_P009: char = '𓊥';
-    /// \u{132a6}: '𓊦'
-    pub const EGYPTIAN_HIEROGLYPH_P010: char = '𓊦';
-    /// \u{132a7}: '𓊧'
-    pub const EGYPTIAN_HIEROGLYPH_P011: char = '𓊧';
-    /// \u{132a8}: '𓊨'
-    pub const EGYPTIAN_HIEROGLYPH_Q001: char = '𓊨';
-    /// \u{132a9}: '𓊩'
-    pub const EGYPTIAN_HIEROGLYPH_Q002: char = '𓊩';
-    /// \u{132aa}: '𓊪'
-    pub const EGYPTIAN_HIEROGLYPH_Q003: char = '𓊪';
-    /// \u{132ab}: '𓊫'
-    pub const EGYPTIAN_HIEROGLYPH_Q004: char = '𓊫';
-    /// \u{132ac}: '𓊬'
-    pub const EGYPTIAN_HIEROGLYPH_Q005: char = '𓊬';
-    /// \u{132ad}: '𓊭'
-    pub const EGYPTIAN_HIEROGLYPH_Q006: char = '𓊭';
-    /// \u{132ae}: '𓊮'
-    pub const EGYPTIAN_HIEROGLYPH_Q007: char = '𓊮';
-    /// \u{132af}: '𓊯'
-    pub const EGYPTIAN_HIEROGLYPH_R001: char = '𓊯';
-    /// \u{132b0}: '𓊰'
-    pub const EGYPTIAN_HIEROGLYPH_R002: char = '𓊰';
-    /// \u{132b1}: '𓊱'
-    pub const EGYPTIAN_HIEROGLYPH_R002A: char = '𓊱';
-    /// \u{132b2}: '𓊲'
-    pub const EGYPTIAN_HIEROGLYPH_R003: char = '𓊲';
-    /// \u{132b3}: '𓊳'
-    pub const EGYPTIAN_HIEROGLYPH_R003A: char = '𓊳';
-    /// \u{132b4}: '𓊴'
-    pub const EGYPTIAN_HIEROGLYPH_R003B: char = '𓊴';
-    /// \u{132b5}: '𓊵'
-    pub const EGYPTIAN_HIEROGLYPH_R004: char = '𓊵';
-    /// \u{132b6}: '𓊶'
-    pub const EGYPTIAN_HIEROGLYPH_R005: char = '𓊶';
-    /// \u{132b7}: '𓊷'
-    pub const EGYPTIAN_HIEROGLYPH_R006: char = '𓊷';
-    /// \u{132b8}: '𓊸'
-    pub const EGYPTIAN_HIEROGLYPH_R007: char = '𓊸';
-    /// \u{132b9}: '𓊹'
-    pub const EGYPTIAN_HIEROGLYPH_R008: char = '𓊹';
-    /// \u{132ba}: '𓊺'
-    pub const EGYPTIAN_HIEROGLYPH_R009: char = '𓊺';
-    /// \u{132bb}: '𓊻'
-    pub const EGYPTIAN_HIEROGLYPH_R010: char = '𓊻';
-    /// \u{132bc}: '𓊼'
-    pub const EGYPTIAN_HIEROGLYPH_R010A: char = '𓊼';
-    /// \u{132bd}: '𓊽'
-    pub const EGYPTIAN_HIEROGLYPH_R011: char = '𓊽';
-    /// \u{132be}: '𓊾'
-    pub const EGYPTIAN_HIEROGLYPH_R012: char = '𓊾';
-    /// \u{132bf}: '𓊿'
-    pub const EGYPTIAN_HIEROGLYPH_R013: char = '𓊿';
-    /// \u{132c0}: '𓋀'
-    pub const EGYPTIAN_HIEROGLYPH_R014: char = '𓋀';
-    /// \u{132c1}: '𓋁'
-    pub const EGYPTIAN_HIEROGLYPH_R015: char = '𓋁';
-    /// \u{132c2}: '𓋂'
-    pub const EGYPTIAN_HIEROGLYPH_R016: char = '𓋂';
-    /// \u{132c3}: '𓋃'
-    pub const EGYPTIAN_HIEROGLYPH_R016A: char = '𓋃';
-    /// \u{132c4}: '𓋄'
-    pub const EGYPTIAN_HIEROGLYPH_R017: char = '𓋄';
-    /// \u{132c5}: '𓋅'
-    pub const EGYPTIAN_HIEROGLYPH_R018: char = '𓋅';
-    /// \u{132c6}: '𓋆'
-    pub const EGYPTIAN_HIEROGLYPH_R019: char = '𓋆';
-    /// \u{132c7}: '𓋇'
-    pub const EGYPTIAN_HIEROGLYPH_R020: char = '𓋇';
-    /// \u{132c8}: '𓋈'
-    pub const EGYPTIAN_HIEROGLYPH_R021: char = '𓋈';
-    /// \u{132c9}: '𓋉'
-    pub const EGYPTIAN_HIEROGLYPH_R022: char = '𓋉';
-    /// \u{132ca}: '𓋊'
-    pub const EGYPTIAN_HIEROGLYPH_R023: char = '𓋊';
-    /// \u{132cb}: '𓋋'
-    pub const EGYPTIAN_HIEROGLYPH_R024: char = '𓋋';
-    /// \u{132cc}: '𓋌'
-    pub const EGYPTIAN_HIEROGLYPH_R025: char = '𓋌';
-    /// \u{132cd}: '𓋍'
-    pub const EGYPTIAN_HIEROGLYPH_R026: char = '𓋍';
-    /// \u{132ce}: '𓋎'
-    pub const EGYPTIAN_HIEROGLYPH_R027: char = '𓋎';
-    /// \u{132cf}: '𓋏'
-    pub const EGYPTIAN_HIEROGLYPH_R028: char = '𓋏';
-    /// \u{132d0}: '𓋐'
-    pub const EGYPTIAN_HIEROGLYPH_R029: char = '𓋐';
-    /// \u{132d1}: '𓋑'
-    pub const EGYPTIAN_HIEROGLYPH_S001: char = '𓋑';
-    /// \u{132d2}: '𓋒'
-    pub const EGYPTIAN_HIEROGLYPH_S002: char = '𓋒';
-    /// \u{132d3}: '𓋓'
-    pub const EGYPTIAN_HIEROGLYPH_S002A: char = '𓋓';
-    /// \u{132d4}: '𓋔'
-    pub const EGYPTIAN_HIEROGLYPH_S003: char = '𓋔';
-    /// \u{132d5}: '𓋕'
-    pub const EGYPTIAN_HIEROGLYPH_S004: char = '𓋕';
-    /// \u{132d6}: '𓋖'
-    pub const EGYPTIAN_HIEROGLYPH_S005: char = '𓋖';
-    /// \u{132d7}: '𓋗'
-    pub const EGYPTIAN_HIEROGLYPH_S006: char = '𓋗';
-    /// \u{132d8}: '𓋘'
-    pub const EGYPTIAN_HIEROGLYPH_S006A: char = '𓋘';
-    /// \u{132d9}: '𓋙'
-    pub const EGYPTIAN_HIEROGLYPH_S007: char = '𓋙';
-    /// \u{132da}: '𓋚'
-    pub const EGYPTIAN_HIEROGLYPH_S008: char = '𓋚';
-    /// \u{132db}: '𓋛'
-    pub const EGYPTIAN_HIEROGLYPH_S009: char = '𓋛';
-    /// \u{132dc}: '𓋜'
-    pub const EGYPTIAN_HIEROGLYPH_S010: char = '𓋜';
-    /// \u{132dd}: '𓋝'
-    pub const EGYPTIAN_HIEROGLYPH_S011: char = '𓋝';
-    /// \u{132de}: '𓋞'
-    pub const EGYPTIAN_HIEROGLYPH_S012: char = '𓋞';
-    /// \u{132df}: '𓋟'
-    pub const EGYPTIAN_HIEROGLYPH_S013: char = '𓋟';
-    /// \u{132e0}: '𓋠'
-    pub const EGYPTIAN_HIEROGLYPH_S014: char = '𓋠';
-    /// \u{132e1}: '𓋡'
-    pub const EGYPTIAN_HIEROGLYPH_S014A: char = '𓋡';
-    /// \u{132e2}: '𓋢'
-    pub const EGYPTIAN_HIEROGLYPH_S014B: char = '𓋢';
-    /// \u{132e3}: '𓋣'
-    pub const EGYPTIAN_HIEROGLYPH_S015: char = '𓋣';
-    /// \u{132e4}: '𓋤'
-    pub const EGYPTIAN_HIEROGLYPH_S016: char = '𓋤';
-    /// \u{132e5}: '𓋥'
-    pub const EGYPTIAN_HIEROGLYPH_S017: char = '𓋥';
-    /// \u{132e6}: '𓋦'
-    pub const EGYPTIAN_HIEROGLYPH_S017A: char = '𓋦';
-    /// \u{132e7}: '𓋧'
-    pub const EGYPTIAN_HIEROGLYPH_S018: char = '𓋧';
-    /// \u{132e8}: '𓋨'
-    pub const EGYPTIAN_HIEROGLYPH_S019: char = '𓋨';
-    /// \u{132e9}: '𓋩'
-    pub const EGYPTIAN_HIEROGLYPH_S020: char = '𓋩';
-    /// \u{132ea}: '𓋪'
-    pub const EGYPTIAN_HIEROGLYPH_S021: char = '𓋪';
-    /// \u{132eb}: '𓋫'
-    pub const EGYPTIAN_HIEROGLYPH_S022: char = '𓋫';
-    /// \u{132ec}: '𓋬'
-    pub const EGYPTIAN_HIEROGLYPH_S023: char = '𓋬';
-    /// \u{132ed}: '𓋭'
-    pub const EGYPTIAN_HIEROGLYPH_S024: char = '𓋭';
-    /// \u{132ee}: '𓋮'
-    pub const EGYPTIAN_HIEROGLYPH_S025: char = '𓋮';
-    /// \u{132ef}: '𓋯'
-    pub const EGYPTIAN_HIEROGLYPH_S026: char = '𓋯';
-    /// \u{132f0}: '𓋰'
-    pub const EGYPTIAN_HIEROGLYPH_S026A: char = '𓋰';
-    /// \u{132f1}: '𓋱'
-    pub const EGYPTIAN_HIEROGLYPH_S026B: char = '𓋱';
-    /// \u{132f2}: '𓋲'
-    pub const EGYPTIAN_HIEROGLYPH_S027: char = '𓋲';
-    /// \u{132f3}: '𓋳'
-    pub const EGYPTIAN_HIEROGLYPH_S028: char = '𓋳';
-    /// \u{132f4}: '𓋴'
-    pub const EGYPTIAN_HIEROGLYPH_S029: char = '𓋴';
-    /// \u{132f5}: '𓋵'
-    pub const EGYPTIAN_HIEROGLYPH_S030: char = '𓋵';
-    /// \u{132f6}: '𓋶'
-    pub const EGYPTIAN_HIEROGLYPH_S031: char = '𓋶';
-    /// \u{132f7}: '𓋷'
-    pub const EGYPTIAN_HIEROGLYPH_S032: char = '𓋷';
-    /// \u{132f8}: '𓋸'
-    pub const EGYPTIAN_HIEROGLYPH_S033: char = '𓋸';
-    /// \u{132f9}: '𓋹'
-    pub const EGYPTIAN_HIEROGLYPH_S034: char = '𓋹';
-    /// \u{132fa}: '𓋺'
-    pub const EGYPTIAN_HIEROGLYPH_S035: char = '𓋺';
-    /// \u{132fb}: '𓋻'
-    pub const EGYPTIAN_HIEROGLYPH_S035A: char = '𓋻';
-    /// \u{132fc}: '𓋼'
-    pub const EGYPTIAN_HIEROGLYPH_S036: char = '𓋼';
-    /// \u{132fd}: '𓋽'
-    pub const EGYPTIAN_HIEROGLYPH_S037: char = '𓋽';
-    /// \u{132fe}: '𓋾'
-    pub const EGYPTIAN_HIEROGLYPH_S038: char = '𓋾';
-    /// \u{132ff}: '𓋿'
-    pub const EGYPTIAN_HIEROGLYPH_S039: char = '𓋿';
-    /// \u{13300}: '𓌀'
-    pub const EGYPTIAN_HIEROGLYPH_S040: char = '𓌀';
-    /// \u{13301}: '𓌁'
-    pub const EGYPTIAN_HIEROGLYPH_S041: char = '𓌁';
-    /// \u{13302}: '𓌂'
-    pub const EGYPTIAN_HIEROGLYPH_S042: char = '𓌂';
-    /// \u{13303}: '𓌃'
-    pub const EGYPTIAN_HIEROGLYPH_S043: char = '𓌃';
-    /// \u{13304}: '𓌄'
-    pub const EGYPTIAN_HIEROGLYPH_S044: char = '𓌄';
-    /// \u{13305}: '𓌅'
-    pub const EGYPTIAN_HIEROGLYPH_S045: char = '𓌅';
-    /// \u{13306}: '𓌆'
-    pub const EGYPTIAN_HIEROGLYPH_S046: char = '𓌆';
-    /// \u{13307}: '𓌇'
-    pub const EGYPTIAN_HIEROGLYPH_T001: char = '𓌇';
-    /// \u{13308}: '𓌈'
-    pub const EGYPTIAN_HIEROGLYPH_T002: char = '𓌈';
-    /// \u{13309}: '𓌉'
-    pub const EGYPTIAN_HIEROGLYPH_T003: char = '𓌉';
-    /// \u{1330a}: '𓌊'
-    pub const EGYPTIAN_HIEROGLYPH_T003A: char = '𓌊';
-    /// \u{1330b}: '𓌋'
-    pub const EGYPTIAN_HIEROGLYPH_T004: char = '𓌋';
-    /// \u{1330c}: '𓌌'
-    pub const EGYPTIAN_HIEROGLYPH_T005: char = '𓌌';
-    /// \u{1330d}: '𓌍'
-    pub const EGYPTIAN_HIEROGLYPH_T006: char = '𓌍';
-    /// \u{1330e}: '𓌎'
-    pub const EGYPTIAN_HIEROGLYPH_T007: char = '𓌎';
-    /// \u{1330f}: '𓌏'
-    pub const EGYPTIAN_HIEROGLYPH_T007A: char = '𓌏';
-    /// \u{13310}: '𓌐'
-    pub const EGYPTIAN_HIEROGLYPH_T008: char = '𓌐';
-    /// \u{13311}: '𓌑'
-    pub const EGYPTIAN_HIEROGLYPH_T008A: char = '𓌑';
-    /// \u{13312}: '𓌒'
-    pub const EGYPTIAN_HIEROGLYPH_T009: char = '𓌒';
-    /// \u{13313}: '𓌓'
-    pub const EGYPTIAN_HIEROGLYPH_T009A: char = '𓌓';
-    /// \u{13314}: '𓌔'
-    pub const EGYPTIAN_HIEROGLYPH_T010: char = '𓌔';
-    /// \u{13315}: '𓌕'
-    pub const EGYPTIAN_HIEROGLYPH_T011: char = '𓌕';
-    /// \u{13316}: '𓌖'
-    pub const EGYPTIAN_HIEROGLYPH_T011A: char = '𓌖';
-    /// \u{13317}: '𓌗'
-    pub const EGYPTIAN_HIEROGLYPH_T012: char = '𓌗';
-    /// \u{13318}: '𓌘'
-    pub const EGYPTIAN_HIEROGLYPH_T013: char = '𓌘';
-    /// \u{13319}: '𓌙'
-    pub const EGYPTIAN_HIEROGLYPH_T014: char = '𓌙';
-    /// \u{1331a}: '𓌚'
-    pub const EGYPTIAN_HIEROGLYPH_T015: char = '𓌚';
-    /// \u{1331b}: '𓌛'
-    pub const EGYPTIAN_HIEROGLYPH_T016: char = '𓌛';
-    /// \u{1331c}: '𓌜'
-    pub const EGYPTIAN_HIEROGLYPH_T016A: char = '𓌜';
-    /// \u{1331d}: '𓌝'
-    pub const EGYPTIAN_HIEROGLYPH_T017: char = '𓌝';
-    /// \u{1331e}: '𓌞'
-    pub const EGYPTIAN_HIEROGLYPH_T018: char = '𓌞';
-    /// \u{1331f}: '𓌟'
-    pub const EGYPTIAN_HIEROGLYPH_T019: char = '𓌟';
-    /// \u{13320}: '𓌠'
-    pub const EGYPTIAN_HIEROGLYPH_T020: char = '𓌠';
-    /// \u{13321}: '𓌡'
-    pub const EGYPTIAN_HIEROGLYPH_T021: char = '𓌡';
-    /// \u{13322}: '𓌢'
-    pub const EGYPTIAN_HIEROGLYPH_T022: char = '𓌢';
-    /// \u{13323}: '𓌣'
-    pub const EGYPTIAN_HIEROGLYPH_T023: char = '𓌣';
-    /// \u{13324}: '𓌤'
-    pub const EGYPTIAN_HIEROGLYPH_T024: char = '𓌤';
-    /// \u{13325}: '𓌥'
-    pub const EGYPTIAN_HIEROGLYPH_T025: char = '𓌥';
-    /// \u{13326}: '𓌦'
-    pub const EGYPTIAN_HIEROGLYPH_T026: char = '𓌦';
-    /// \u{13327}: '𓌧'
-    pub const EGYPTIAN_HIEROGLYPH_T027: char = '𓌧';
-    /// \u{13328}: '𓌨'
-    pub const EGYPTIAN_HIEROGLYPH_T028: char = '𓌨';
-    /// \u{13329}: '𓌩'
-    pub const EGYPTIAN_HIEROGLYPH_T029: char = '𓌩';
-    /// \u{1332a}: '𓌪'
-    pub const EGYPTIAN_HIEROGLYPH_T030: char = '𓌪';
-    /// \u{1332b}: '𓌫'
-    pub const EGYPTIAN_HIEROGLYPH_T031: char = '𓌫';
-    /// \u{1332c}: '𓌬'
-    pub const EGYPTIAN_HIEROGLYPH_T032: char = '𓌬';
-    /// \u{1332d}: '𓌭'
-    pub const EGYPTIAN_HIEROGLYPH_T032A: char = '𓌭';
-    /// \u{1332e}: '𓌮'
-    pub const EGYPTIAN_HIEROGLYPH_T033: char = '𓌮';
-    /// \u{1332f}: '𓌯'
-    pub const EGYPTIAN_HIEROGLYPH_T033A: char = '𓌯';
-    /// \u{13330}: '𓌰'
-    pub const EGYPTIAN_HIEROGLYPH_T034: char = '𓌰';
-    /// \u{13331}: '𓌱'
-    pub const EGYPTIAN_HIEROGLYPH_T035: char = '𓌱';
-    /// \u{13332}: '𓌲'
-    pub const EGYPTIAN_HIEROGLYPH_T036: char = '𓌲';
-    /// \u{13333}: '𓌳'
-    pub const EGYPTIAN_HIEROGLYPH_U001: char = '𓌳';
-    /// \u{13334}: '𓌴'
-    pub const EGYPTIAN_HIEROGLYPH_U002: char = '𓌴';
-    /// \u{13335}: '𓌵'
-    pub const EGYPTIAN_HIEROGLYPH_U003: char = '𓌵';
-    /// \u{13336}: '𓌶'
-    pub const EGYPTIAN_HIEROGLYPH_U004: char = '𓌶';
-    /// \u{13337}: '𓌷'
-    pub const EGYPTIAN_HIEROGLYPH_U005: char = '𓌷';
-    /// \u{13338}: '𓌸'
-    pub const EGYPTIAN_HIEROGLYPH_U006: char = '𓌸';
-    /// \u{13339}: '𓌹'
-    pub const EGYPTIAN_HIEROGLYPH_U006A: char = '𓌹';
-    /// \u{1333a}: '𓌺'
-    pub const EGYPTIAN_HIEROGLYPH_U006B: char = '𓌺';
-    /// \u{1333b}: '𓌻'
-    pub const EGYPTIAN_HIEROGLYPH_U007: char = '𓌻';
-    /// \u{1333c}: '𓌼'
-    pub const EGYPTIAN_HIEROGLYPH_U008: char = '𓌼';
-    /// \u{1333d}: '𓌽'
-    pub const EGYPTIAN_HIEROGLYPH_U009: char = '𓌽';
-    /// \u{1333e}: '𓌾'
-    pub const EGYPTIAN_HIEROGLYPH_U010: char = '𓌾';
-    /// \u{1333f}: '𓌿'
-    pub const EGYPTIAN_HIEROGLYPH_U011: char = '𓌿';
-    /// \u{13340}: '𓍀'
-    pub const EGYPTIAN_HIEROGLYPH_U012: char = '𓍀';
-    /// \u{13341}: '𓍁'
-    pub const EGYPTIAN_HIEROGLYPH_U013: char = '𓍁';
-    /// \u{13342}: '𓍂'
-    pub const EGYPTIAN_HIEROGLYPH_U014: char = '𓍂';
-    /// \u{13343}: '𓍃'
-    pub const EGYPTIAN_HIEROGLYPH_U015: char = '𓍃';
-    /// \u{13344}: '𓍄'
-    pub const EGYPTIAN_HIEROGLYPH_U016: char = '𓍄';
-    /// \u{13345}: '𓍅'
-    pub const EGYPTIAN_HIEROGLYPH_U017: char = '𓍅';
-    /// \u{13346}: '𓍆'
-    pub const EGYPTIAN_HIEROGLYPH_U018: char = '𓍆';
-    /// \u{13347}: '𓍇'
-    pub const EGYPTIAN_HIEROGLYPH_U019: char = '𓍇';
-    /// \u{13348}: '𓍈'
-    pub const EGYPTIAN_HIEROGLYPH_U020: char = '𓍈';
-    /// \u{13349}: '𓍉'
-    pub const EGYPTIAN_HIEROGLYPH_U021: char = '𓍉';
-    /// \u{1334a}: '𓍊'
-    pub const EGYPTIAN_HIEROGLYPH_U022: char = '𓍊';
-    /// \u{1334b}: '𓍋'
-    pub const EGYPTIAN_HIEROGLYPH_U023: char = '𓍋';
-    /// \u{1334c}: '𓍌'
-    pub const EGYPTIAN_HIEROGLYPH_U023A: char = '𓍌';
-    /// \u{1334d}: '𓍍'
-    pub const EGYPTIAN_HIEROGLYPH_U024: char = '𓍍';
-    /// \u{1334e}: '𓍎'
-    pub const EGYPTIAN_HIEROGLYPH_U025: char = '𓍎';
-    /// \u{1334f}: '𓍏'
-    pub const EGYPTIAN_HIEROGLYPH_U026: char = '𓍏';
-    /// \u{13350}: '𓍐'
-    pub const EGYPTIAN_HIEROGLYPH_U027: char = '𓍐';
-    /// \u{13351}: '𓍑'
-    pub const EGYPTIAN_HIEROGLYPH_U028: char = '𓍑';
-    /// \u{13352}: '𓍒'
-    pub const EGYPTIAN_HIEROGLYPH_U029: char = '𓍒';
-    /// \u{13353}: '𓍓'
-    pub const EGYPTIAN_HIEROGLYPH_U029A: char = '𓍓';
-    /// \u{13354}: '𓍔'
-    pub const EGYPTIAN_HIEROGLYPH_U030: char = '𓍔';
-    /// \u{13355}: '𓍕'
-    pub const EGYPTIAN_HIEROGLYPH_U031: char = '𓍕';
-    /// \u{13356}: '𓍖'
-    pub const EGYPTIAN_HIEROGLYPH_U032: char = '𓍖';
-    /// \u{13357}: '𓍗'
-    pub const EGYPTIAN_HIEROGLYPH_U032A: char = '𓍗';
-    /// \u{13358}: '𓍘'
-    pub const EGYPTIAN_HIEROGLYPH_U033: char = '𓍘';
-    /// \u{13359}: '𓍙'
-    pub const EGYPTIAN_HIEROGLYPH_U034: char = '𓍙';
-    /// \u{1335a}: '𓍚'
-    pub const EGYPTIAN_HIEROGLYPH_U035: char = '𓍚';
-    /// \u{1335b}: '𓍛'
-    pub const EGYPTIAN_HIEROGLYPH_U036: char = '𓍛';
-    /// \u{1335c}: '𓍜'
-    pub const EGYPTIAN_HIEROGLYPH_U037: char = '𓍜';
-    /// \u{1335d}: '𓍝'
-    pub const EGYPTIAN_HIEROGLYPH_U038: char = '𓍝';
-    /// \u{1335e}: '𓍞'
-    pub const EGYPTIAN_HIEROGLYPH_U039: char = '𓍞';
-    /// \u{1335f}: '𓍟'
-    pub const EGYPTIAN_HIEROGLYPH_U040: char = '𓍟';
-    /// \u{13360}: '𓍠'
-    pub const EGYPTIAN_HIEROGLYPH_U041: char = '𓍠';
-    /// \u{13361}: '𓍡'
-    pub const EGYPTIAN_HIEROGLYPH_U042: char = '𓍡';
-    /// \u{13362}: '𓍢'
-    pub const EGYPTIAN_HIEROGLYPH_V001: char = '𓍢';
-    /// \u{13363}: '𓍣'
-    pub const EGYPTIAN_HIEROGLYPH_V001A: char = '𓍣';
-    /// \u{13364}: '𓍤'
-    pub const EGYPTIAN_HIEROGLYPH_V001B: char = '𓍤';
-    /// \u{13365}: '𓍥'
-    pub const EGYPTIAN_HIEROGLYPH_V001C: char = '𓍥';
-    /// \u{13366}: '𓍦'
-    pub const EGYPTIAN_HIEROGLYPH_V001D: char = '𓍦';
-    /// \u{13367}: '𓍧'
-    pub const EGYPTIAN_HIEROGLYPH_V001E: char = '𓍧';
-    /// \u{13368}: '𓍨'
-    pub const EGYPTIAN_HIEROGLYPH_V001F: char = '𓍨';
-    /// \u{13369}: '𓍩'
-    pub const EGYPTIAN_HIEROGLYPH_V001G: char = '𓍩';
-    /// \u{1336a}: '𓍪'
-    pub const EGYPTIAN_HIEROGLYPH_V001H: char = '𓍪';
-    /// \u{1336b}: '𓍫'
-    pub const EGYPTIAN_HIEROGLYPH_V001I: char = '𓍫';
-    /// \u{1336c}: '𓍬'
-    pub const EGYPTIAN_HIEROGLYPH_V002: char = '𓍬';
-    /// \u{1336d}: '𓍭'
-    pub const EGYPTIAN_HIEROGLYPH_V002A: char = '𓍭';
-    /// \u{1336e}: '𓍮'
-    pub const EGYPTIAN_HIEROGLYPH_V003: char = '𓍮';
-    /// \u{1336f}: '𓍯'
-    pub const EGYPTIAN_HIEROGLYPH_V004: char = '𓍯';
-    /// \u{13370}: '𓍰'
-    pub const EGYPTIAN_HIEROGLYPH_V005: char = '𓍰';
-    /// \u{13371}: '𓍱'
-    pub const EGYPTIAN_HIEROGLYPH_V006: char = '𓍱';
-    /// \u{13372}: '𓍲'
-    pub const EGYPTIAN_HIEROGLYPH_V007: char = '𓍲';
-    /// \u{13373}: '𓍳'
-    pub const EGYPTIAN_HIEROGLYPH_V007A: char = '𓍳';
-    /// \u{13374}: '𓍴'
-    pub const EGYPTIAN_HIEROGLYPH_V007B: char = '𓍴';
-    /// \u{13375}: '𓍵'
-    pub const EGYPTIAN_HIEROGLYPH_V008: char = '𓍵';
-    /// \u{13376}: '𓍶'
-    pub const EGYPTIAN_HIEROGLYPH_V009: char = '𓍶';
-    /// \u{13377}: '𓍷'
-    pub const EGYPTIAN_HIEROGLYPH_V010: char = '𓍷';
-    /// \u{13378}: '𓍸'
-    pub const EGYPTIAN_HIEROGLYPH_V011: char = '𓍸';
-    /// \u{13379}: '𓍹'
-    pub const EGYPTIAN_HIEROGLYPH_V011A: char = '𓍹';
-    /// \u{1337a}: '𓍺'
-    pub const EGYPTIAN_HIEROGLYPH_V011B: char = '𓍺';
-    /// \u{1337b}: '𓍻'
-    pub const EGYPTIAN_HIEROGLYPH_V011C: char = '𓍻';
-    /// \u{1337c}: '𓍼'
-    pub const EGYPTIAN_HIEROGLYPH_V012: char = '𓍼';
-    /// \u{1337d}: '𓍽'
-    pub const EGYPTIAN_HIEROGLYPH_V012A: char = '𓍽';
-    /// \u{1337e}: '𓍾'
-    pub const EGYPTIAN_HIEROGLYPH_V012B: char = '𓍾';
-    /// \u{1337f}: '𓍿'
-    pub const EGYPTIAN_HIEROGLYPH_V013: char = '𓍿';
-    /// \u{13380}: '𓎀'
-    pub const EGYPTIAN_HIEROGLYPH_V014: char = '𓎀';
-    /// \u{13381}: '𓎁'
-    pub const EGYPTIAN_HIEROGLYPH_V015: char = '𓎁';
-    /// \u{13382}: '𓎂'
-    pub const EGYPTIAN_HIEROGLYPH_V016: char = '𓎂';
-    /// \u{13383}: '𓎃'
-    pub const EGYPTIAN_HIEROGLYPH_V017: char = '𓎃';
-    /// \u{13384}: '𓎄'
-    pub const EGYPTIAN_HIEROGLYPH_V018: char = '𓎄';
-    /// \u{13385}: '𓎅'
-    pub const EGYPTIAN_HIEROGLYPH_V019: char = '𓎅';
-    /// \u{13386}: '𓎆'
-    pub const EGYPTIAN_HIEROGLYPH_V020: char = '𓎆';
-    /// \u{13387}: '𓎇'
-    pub const EGYPTIAN_HIEROGLYPH_V020A: char = '𓎇';
-    /// \u{13388}: '𓎈'
-    pub const EGYPTIAN_HIEROGLYPH_V020B: char = '𓎈';
-    /// \u{13389}: '𓎉'
-    pub const EGYPTIAN_HIEROGLYPH_V020C: char = '𓎉';
-    /// \u{1338a}: '𓎊'
-    pub const EGYPTIAN_HIEROGLYPH_V020D: char = '𓎊';
-    /// \u{1338b}: '𓎋'
-    pub const EGYPTIAN_HIEROGLYPH_V020E: char = '𓎋';
-    /// \u{1338c}: '𓎌'
-    pub const EGYPTIAN_HIEROGLYPH_V020F: char = '𓎌';
-    /// \u{1338d}: '𓎍'
-    pub const EGYPTIAN_HIEROGLYPH_V020G: char = '𓎍';
-    /// \u{1338e}: '𓎎'
-    pub const EGYPTIAN_HIEROGLYPH_V020H: char = '𓎎';
-    /// \u{1338f}: '𓎏'
-    pub const EGYPTIAN_HIEROGLYPH_V020I: char = '𓎏';
-    /// \u{13390}: '𓎐'
-    pub const EGYPTIAN_HIEROGLYPH_V020J: char = '𓎐';
-    /// \u{13391}: '𓎑'
-    pub const EGYPTIAN_HIEROGLYPH_V020K: char = '𓎑';
-    /// \u{13392}: '𓎒'
-    pub const EGYPTIAN_HIEROGLYPH_V020L: char = '𓎒';
-    /// \u{13393}: '𓎓'
-    pub const EGYPTIAN_HIEROGLYPH_V021: char = '𓎓';
-    /// \u{13394}: '𓎔'
-    pub const EGYPTIAN_HIEROGLYPH_V022: char = '𓎔';
-    /// \u{13395}: '𓎕'
-    pub const EGYPTIAN_HIEROGLYPH_V023: char = '𓎕';
-    /// \u{13396}: '𓎖'
-    pub const EGYPTIAN_HIEROGLYPH_V023A: char = '𓎖';
-    /// \u{13397}: '𓎗'
-    pub const EGYPTIAN_HIEROGLYPH_V024: char = '𓎗';
-    /// \u{13398}: '𓎘'
-    pub const EGYPTIAN_HIEROGLYPH_V025: char = '𓎘';
-    /// \u{13399}: '𓎙'
-    pub const EGYPTIAN_HIEROGLYPH_V026: char = '𓎙';
-    /// \u{1339a}: '𓎚'
-    pub const EGYPTIAN_HIEROGLYPH_V027: char = '𓎚';
-    /// \u{1339b}: '𓎛'
-    pub const EGYPTIAN_HIEROGLYPH_V028: char = '𓎛';
-    /// \u{1339c}: '𓎜'
-    pub const EGYPTIAN_HIEROGLYPH_V028A: char = '𓎜';
-    /// \u{1339d}: '𓎝'
-    pub const EGYPTIAN_HIEROGLYPH_V029: char = '𓎝';
-    /// \u{1339e}: '𓎞'
-    pub const EGYPTIAN_HIEROGLYPH_V029A: char = '𓎞';
-    /// \u{1339f}: '𓎟'
-    pub const EGYPTIAN_HIEROGLYPH_V030: char = '𓎟';
-    /// \u{133a0}: '𓎠'
-    pub const EGYPTIAN_HIEROGLYPH_V030A: char = '𓎠';
-    /// \u{133a1}: '𓎡'
-    pub const EGYPTIAN_HIEROGLYPH_V031: char = '𓎡';
-    /// \u{133a2}: '𓎢'
-    pub const EGYPTIAN_HIEROGLYPH_V031A: char = '𓎢';
-    /// \u{133a3}: '𓎣'
-    pub const EGYPTIAN_HIEROGLYPH_V032: char = '𓎣';
-    /// \u{133a4}: '𓎤'
-    pub const EGYPTIAN_HIEROGLYPH_V033: char = '𓎤';
-    /// \u{133a5}: '𓎥'
-    pub const EGYPTIAN_HIEROGLYPH_V033A: char = '𓎥';
-    /// \u{133a6}: '𓎦'
-    pub const EGYPTIAN_HIEROGLYPH_V034: char = '𓎦';
-    /// \u{133a7}: '𓎧'
-    pub const EGYPTIAN_HIEROGLYPH_V035: char = '𓎧';
-    /// \u{133a8}: '𓎨'
-    pub const EGYPTIAN_HIEROGLYPH_V036: char = '𓎨';
-    /// \u{133a9}: '𓎩'
-    pub const EGYPTIAN_HIEROGLYPH_V037: char = '𓎩';
-    /// \u{133aa}: '𓎪'
-    pub const EGYPTIAN_HIEROGLYPH_V037A: char = '𓎪';
-    /// \u{133ab}: '𓎫'
-    pub const EGYPTIAN_HIEROGLYPH_V038: char = '𓎫';
-    /// \u{133ac}: '𓎬'
-    pub const EGYPTIAN_HIEROGLYPH_V039: char = '𓎬';
-    /// \u{133ad}: '𓎭'
-    pub const EGYPTIAN_HIEROGLYPH_V040: char = '𓎭';
-    /// \u{133ae}: '𓎮'
-    pub const EGYPTIAN_HIEROGLYPH_V040A: char = '𓎮';
-    /// \u{133af}: '𓎯'
-    pub const EGYPTIAN_HIEROGLYPH_W001: char = '𓎯';
-    /// \u{133b0}: '𓎰'
-    pub const EGYPTIAN_HIEROGLYPH_W002: char = '𓎰';
-    /// \u{133b1}: '𓎱'
-    pub const EGYPTIAN_HIEROGLYPH_W003: char = '𓎱';
-    /// \u{133b2}: '𓎲'
-    pub const EGYPTIAN_HIEROGLYPH_W003A: char = '𓎲';
-    /// \u{133b3}: '𓎳'
-    pub const EGYPTIAN_HIEROGLYPH_W004: char = '𓎳';
-    /// \u{133b4}: '𓎴'
-    pub const EGYPTIAN_HIEROGLYPH_W005: char = '𓎴';
-    /// \u{133b5}: '𓎵'
-    pub const EGYPTIAN_HIEROGLYPH_W006: char = '𓎵';
-    /// \u{133b6}: '𓎶'
-    pub const EGYPTIAN_HIEROGLYPH_W007: char = '𓎶';
-    /// \u{133b7}: '𓎷'
-    pub const EGYPTIAN_HIEROGLYPH_W008: char = '𓎷';
-    /// \u{133b8}: '𓎸'
-    pub const EGYPTIAN_HIEROGLYPH_W009: char = '𓎸';
-    /// \u{133b9}: '𓎹'
-    pub const EGYPTIAN_HIEROGLYPH_W009A: char = '𓎹';
-    /// \u{133ba}: '𓎺'
-    pub const EGYPTIAN_HIEROGLYPH_W010: char = '𓎺';
-    /// \u{133bb}: '𓎻'
-    pub const EGYPTIAN_HIEROGLYPH_W010A: char = '𓎻';
-    /// \u{133bc}: '𓎼'
-    pub const EGYPTIAN_HIEROGLYPH_W011: char = '𓎼';
-    /// \u{133bd}: '𓎽'
-    pub const EGYPTIAN_HIEROGLYPH_W012: char = '𓎽';
-    /// \u{133be}: '𓎾'
-    pub const EGYPTIAN_HIEROGLYPH_W013: char = '𓎾';
-    /// \u{133bf}: '𓎿'
-    pub const EGYPTIAN_HIEROGLYPH_W014: char = '𓎿';
-    /// \u{133c0}: '𓏀'
-    pub const EGYPTIAN_HIEROGLYPH_W014A: char = '𓏀';
-    /// \u{133c1}: '𓏁'
-    pub const EGYPTIAN_HIEROGLYPH_W015: char = '𓏁';
-    /// \u{133c2}: '𓏂'
-    pub const EGYPTIAN_HIEROGLYPH_W016: char = '𓏂';
-    /// \u{133c3}: '𓏃'
-    pub const EGYPTIAN_HIEROGLYPH_W017: char = '𓏃';
-    /// \u{133c4}: '𓏄'
-    pub const EGYPTIAN_HIEROGLYPH_W017A: char = '𓏄';
-    /// \u{133c5}: '𓏅'
-    pub const EGYPTIAN_HIEROGLYPH_W018: char = '𓏅';
-    /// \u{133c6}: '𓏆'
-    pub const EGYPTIAN_HIEROGLYPH_W018A: char = '𓏆';
-    /// \u{133c7}: '𓏇'
-    pub const EGYPTIAN_HIEROGLYPH_W019: char = '𓏇';
-    /// \u{133c8}: '𓏈'
-    pub const EGYPTIAN_HIEROGLYPH_W020: char = '𓏈';
-    /// \u{133c9}: '𓏉'
-    pub const EGYPTIAN_HIEROGLYPH_W021: char = '𓏉';
-    /// \u{133ca}: '𓏊'
-    pub const EGYPTIAN_HIEROGLYPH_W022: char = '𓏊';
-    /// \u{133cb}: '𓏋'
-    pub const EGYPTIAN_HIEROGLYPH_W023: char = '𓏋';
-    /// \u{133cc}: '𓏌'
-    pub const EGYPTIAN_HIEROGLYPH_W024: char = '𓏌';
-    /// \u{133cd}: '𓏍'
-    pub const EGYPTIAN_HIEROGLYPH_W024A: char = '𓏍';
-    /// \u{133ce}: '𓏎'
-    pub const EGYPTIAN_HIEROGLYPH_W025: char = '𓏎';
-    /// \u{133cf}: '𓏏'
-    pub const EGYPTIAN_HIEROGLYPH_X001: char = '𓏏';
-    /// \u{133d0}: '𓏐'
-    pub const EGYPTIAN_HIEROGLYPH_X002: char = '𓏐';
-    /// \u{133d1}: '𓏑'
-    pub const EGYPTIAN_HIEROGLYPH_X003: char = '𓏑';
-    /// \u{133d2}: '𓏒'
-    pub const EGYPTIAN_HIEROGLYPH_X004: char = '𓏒';
-    /// \u{133d3}: '𓏓'
-    pub const EGYPTIAN_HIEROGLYPH_X004A: char = '𓏓';
-    /// \u{133d4}: '𓏔'
-    pub const EGYPTIAN_HIEROGLYPH_X004B: char = '𓏔';
-    /// \u{133d5}: '𓏕'
-    pub const EGYPTIAN_HIEROGLYPH_X005: char = '𓏕';
-    /// \u{133d6}: '𓏖'
-    pub const EGYPTIAN_HIEROGLYPH_X006: char = '𓏖';
-    /// \u{133d7}: '𓏗'
-    pub const EGYPTIAN_HIEROGLYPH_X006A: char = '𓏗';
-    /// \u{133d8}: '𓏘'
-    pub const EGYPTIAN_HIEROGLYPH_X007: char = '𓏘';
-    /// \u{133d9}: '𓏙'
-    pub const EGYPTIAN_HIEROGLYPH_X008: char = '𓏙';
-    /// \u{133da}: '𓏚'
-    pub const EGYPTIAN_HIEROGLYPH_X008A: char = '𓏚';
-    /// \u{133db}: '𓏛'
-    pub const EGYPTIAN_HIEROGLYPH_Y001: char = '𓏛';
-    /// \u{133dc}: '𓏜'
-    pub const EGYPTIAN_HIEROGLYPH_Y001A: char = '𓏜';
-    /// \u{133dd}: '𓏝'
-    pub const EGYPTIAN_HIEROGLYPH_Y002: char = '𓏝';
-    /// \u{133de}: '𓏞'
-    pub const EGYPTIAN_HIEROGLYPH_Y003: char = '𓏞';
-    /// \u{133df}: '𓏟'
-    pub const EGYPTIAN_HIEROGLYPH_Y004: char = '𓏟';
-    /// \u{133e0}: '𓏠'
-    pub const EGYPTIAN_HIEROGLYPH_Y005: char = '𓏠';
-    /// \u{133e1}: '𓏡'
-    pub const EGYPTIAN_HIEROGLYPH_Y006: char = '𓏡';
-    /// \u{133e2}: '𓏢'
-    pub const EGYPTIAN_HIEROGLYPH_Y007: char = '𓏢';
-    /// \u{133e3}: '𓏣'
-    pub const EGYPTIAN_HIEROGLYPH_Y008: char = '𓏣';
-    /// \u{133e4}: '𓏤'
-    pub const EGYPTIAN_HIEROGLYPH_Z001: char = '𓏤';
-    /// \u{133e5}: '𓏥'
-    pub const EGYPTIAN_HIEROGLYPH_Z002: char = '𓏥';
-    /// \u{133e6}: '𓏦'
-    pub const EGYPTIAN_HIEROGLYPH_Z002A: char = '𓏦';
-    /// \u{133e7}: '𓏧'
-    pub const EGYPTIAN_HIEROGLYPH_Z002B: char = '𓏧';
-    /// \u{133e8}: '𓏨'
-    pub const EGYPTIAN_HIEROGLYPH_Z002C: char = '𓏨';
-    /// \u{133e9}: '𓏩'
-    pub const EGYPTIAN_HIEROGLYPH_Z002D: char = '𓏩';
-    /// \u{133ea}: '𓏪'
-    pub const EGYPTIAN_HIEROGLYPH_Z003: char = '𓏪';
-    /// \u{133eb}: '𓏫'
-    pub const EGYPTIAN_HIEROGLYPH_Z003A: char = '𓏫';
-    /// \u{133ec}: '𓏬'
-    pub const EGYPTIAN_HIEROGLYPH_Z003B: char = '𓏬';
-    /// \u{133ed}: '𓏭'
-    pub const EGYPTIAN_HIEROGLYPH_Z004: char = '𓏭';
-    /// \u{133ee}: '𓏮'
-    pub const EGYPTIAN_HIEROGLYPH_Z004A: char = '𓏮';
-    /// \u{133ef}: '𓏯'
-    pub const EGYPTIAN_HIEROGLYPH_Z005: char = '𓏯';
-    /// \u{133f0}: '𓏰'
-    pub const EGYPTIAN_HIEROGLYPH_Z005A: char = '𓏰';
-    /// \u{133f1}: '𓏱'
-    pub const EGYPTIAN_HIEROGLYPH_Z006: char = '𓏱';
-    /// \u{133f2}: '𓏲'
-    pub const EGYPTIAN_HIEROGLYPH_Z007: char = '𓏲';
-    /// \u{133f3}: '𓏳'
-    pub const EGYPTIAN_HIEROGLYPH_Z008: char = '𓏳';
-    /// \u{133f4}: '𓏴'
-    pub const EGYPTIAN_HIEROGLYPH_Z009: char = '𓏴';
-    /// \u{133f5}: '𓏵'
-    pub const EGYPTIAN_HIEROGLYPH_Z010: char = '𓏵';
-    /// \u{133f6}: '𓏶'
-    pub const EGYPTIAN_HIEROGLYPH_Z011: char = '𓏶';
-    /// \u{133f7}: '𓏷'
-    pub const EGYPTIAN_HIEROGLYPH_Z012: char = '𓏷';
-    /// \u{133f8}: '𓏸'
-    pub const EGYPTIAN_HIEROGLYPH_Z013: char = '𓏸';
-    /// \u{133f9}: '𓏹'
-    pub const EGYPTIAN_HIEROGLYPH_Z014: char = '𓏹';
-    /// \u{133fa}: '𓏺'
-    pub const EGYPTIAN_HIEROGLYPH_Z015: char = '𓏺';
-    /// \u{133fb}: '𓏻'
-    pub const EGYPTIAN_HIEROGLYPH_Z015A: char = '𓏻';
-    /// \u{133fc}: '𓏼'
-    pub const EGYPTIAN_HIEROGLYPH_Z015B: char = '𓏼';
-    /// \u{133fd}: '𓏽'
-    pub const EGYPTIAN_HIEROGLYPH_Z015C: char = '𓏽';
-    /// \u{133fe}: '𓏾'
-    pub const EGYPTIAN_HIEROGLYPH_Z015D: char = '𓏾';
-    /// \u{133ff}: '𓏿'
-    pub const EGYPTIAN_HIEROGLYPH_Z015E: char = '𓏿';
-    /// \u{13400}: '𓐀'
-    pub const EGYPTIAN_HIEROGLYPH_Z015F: char = '𓐀';
-    /// \u{13401}: '𓐁'
-    pub const EGYPTIAN_HIEROGLYPH_Z015G: char = '𓐁';
-    /// \u{13402}: '𓐂'
-    pub const EGYPTIAN_HIEROGLYPH_Z015H: char = '𓐂';
-    /// \u{13403}: '𓐃'
-    pub const EGYPTIAN_HIEROGLYPH_Z015I: char = '𓐃';
-    /// \u{13404}: '𓐄'
-    pub const EGYPTIAN_HIEROGLYPH_Z016: char = '𓐄';
-    /// \u{13405}: '𓐅'
-    pub const EGYPTIAN_HIEROGLYPH_Z016A: char = '𓐅';
-    /// \u{13406}: '𓐆'
-    pub const EGYPTIAN_HIEROGLYPH_Z016B: char = '𓐆';
-    /// \u{13407}: '𓐇'
-    pub const EGYPTIAN_HIEROGLYPH_Z016C: char = '𓐇';
-    /// \u{13408}: '𓐈'
-    pub const EGYPTIAN_HIEROGLYPH_Z016D: char = '𓐈';
-    /// \u{13409}: '𓐉'
-    pub const EGYPTIAN_HIEROGLYPH_Z016E: char = '𓐉';
-    /// \u{1340a}: '𓐊'
-    pub const EGYPTIAN_HIEROGLYPH_Z016F: char = '𓐊';
-    /// \u{1340b}: '𓐋'
-    pub const EGYPTIAN_HIEROGLYPH_Z016G: char = '𓐋';
-    /// \u{1340c}: '𓐌'
-    pub const EGYPTIAN_HIEROGLYPH_Z016H: char = '𓐌';
-    /// \u{1340d}: '𓐍'
-    pub const EGYPTIAN_HIEROGLYPH_AA001: char = '𓐍';
-    /// \u{1340e}: '𓐎'
-    pub const EGYPTIAN_HIEROGLYPH_AA002: char = '𓐎';
-    /// \u{1340f}: '𓐏'
-    pub const EGYPTIAN_HIEROGLYPH_AA003: char = '𓐏';
-    /// \u{13410}: '𓐐'
-    pub const EGYPTIAN_HIEROGLYPH_AA004: char = '𓐐';
-    /// \u{13411}: '𓐑'
-    pub const EGYPTIAN_HIEROGLYPH_AA005: char = '𓐑';
-    /// \u{13412}: '𓐒'
-    pub const EGYPTIAN_HIEROGLYPH_AA006: char = '𓐒';
-    /// \u{13413}: '𓐓'
-    pub const EGYPTIAN_HIEROGLYPH_AA007: char = '𓐓';
-    /// \u{13414}: '𓐔'
-    pub const EGYPTIAN_HIEROGLYPH_AA007A: char = '𓐔';
-    /// \u{13415}: '𓐕'
-    pub const EGYPTIAN_HIEROGLYPH_AA007B: char = '𓐕';
-    /// \u{13416}: '𓐖'
-    pub const EGYPTIAN_HIEROGLYPH_AA008: char = '𓐖';
-    /// \u{13417}: '𓐗'
-    pub const EGYPTIAN_HIEROGLYPH_AA009: char = '𓐗';
-    /// \u{13418}: '𓐘'
-    pub const EGYPTIAN_HIEROGLYPH_AA010: char = '𓐘';
-    /// \u{13419}: '𓐙'
-    pub const EGYPTIAN_HIEROGLYPH_AA011: char = '𓐙';
-    /// \u{1341a}: '𓐚'
-    pub const EGYPTIAN_HIEROGLYPH_AA012: char = '𓐚';
-    /// \u{1341b}: '𓐛'
-    pub const EGYPTIAN_HIEROGLYPH_AA013: char = '𓐛';
-    /// \u{1341c}: '𓐜'
-    pub const EGYPTIAN_HIEROGLYPH_AA014: char = '𓐜';
-    /// \u{1341d}: '𓐝'
-    pub const EGYPTIAN_HIEROGLYPH_AA015: char = '𓐝';
-    /// \u{1341e}: '𓐞'
-    pub const EGYPTIAN_HIEROGLYPH_AA016: char = '𓐞';
-    /// \u{1341f}: '𓐟'
-    pub const EGYPTIAN_HIEROGLYPH_AA017: char = '𓐟';
-    /// \u{13420}: '𓐠'
-    pub const EGYPTIAN_HIEROGLYPH_AA018: char = '𓐠';
-    /// \u{13421}: '𓐡'
-    pub const EGYPTIAN_HIEROGLYPH_AA019: char = '𓐡';
-    /// \u{13422}: '𓐢'
-    pub const EGYPTIAN_HIEROGLYPH_AA020: char = '𓐢';
-    /// \u{13423}: '𓐣'
-    pub const EGYPTIAN_HIEROGLYPH_AA021: char = '𓐣';
-    /// \u{13424}: '𓐤'
-    pub const EGYPTIAN_HIEROGLYPH_AA022: char = '𓐤';
-    /// \u{13425}: '𓐥'
-    pub const EGYPTIAN_HIEROGLYPH_AA023: char = '𓐥';
-    /// \u{13426}: '𓐦'
-    pub const EGYPTIAN_HIEROGLYPH_AA024: char = '𓐦';
-    /// \u{13427}: '𓐧'
-    pub const EGYPTIAN_HIEROGLYPH_AA025: char = '𓐧';
-    /// \u{13428}: '𓐨'
-    pub const EGYPTIAN_HIEROGLYPH_AA026: char = '𓐨';
-    /// \u{13429}: '𓐩'
-    pub const EGYPTIAN_HIEROGLYPH_AA027: char = '𓐩';
-    /// \u{1342a}: '𓐪'
-    pub const EGYPTIAN_HIEROGLYPH_AA028: char = '𓐪';
-    /// \u{1342b}: '𓐫'
-    pub const EGYPTIAN_HIEROGLYPH_AA029: char = '𓐫';
-    /// \u{1342c}: '𓐬'
-    pub const EGYPTIAN_HIEROGLYPH_AA030: char = '𓐬';
-    /// \u{1342d}: '𓐭'
-    pub const EGYPTIAN_HIEROGLYPH_AA031: char = '𓐭';
-    /// \u{1342e}: '𓐮'
-    pub const EGYPTIAN_HIEROGLYPH_AA032: char = '𓐮';
-}
 
 /// An enum to represent all characters in the EgyptianHieroglyphs block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -4293,1079 +2148,1078 @@ pub enum EgyptianHieroglyphs {
 
 impl Into<char> for EgyptianHieroglyphs {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            EgyptianHieroglyphs::EgyptianHieroglyphA001 => EGYPTIAN_HIEROGLYPH_A001,
-            EgyptianHieroglyphs::EgyptianHieroglyphA002 => EGYPTIAN_HIEROGLYPH_A002,
-            EgyptianHieroglyphs::EgyptianHieroglyphA003 => EGYPTIAN_HIEROGLYPH_A003,
-            EgyptianHieroglyphs::EgyptianHieroglyphA004 => EGYPTIAN_HIEROGLYPH_A004,
-            EgyptianHieroglyphs::EgyptianHieroglyphA005 => EGYPTIAN_HIEROGLYPH_A005,
-            EgyptianHieroglyphs::EgyptianHieroglyphA005a => EGYPTIAN_HIEROGLYPH_A005A,
-            EgyptianHieroglyphs::EgyptianHieroglyphA006 => EGYPTIAN_HIEROGLYPH_A006,
-            EgyptianHieroglyphs::EgyptianHieroglyphA006a => EGYPTIAN_HIEROGLYPH_A006A,
-            EgyptianHieroglyphs::EgyptianHieroglyphA006b => EGYPTIAN_HIEROGLYPH_A006B,
-            EgyptianHieroglyphs::EgyptianHieroglyphA007 => EGYPTIAN_HIEROGLYPH_A007,
-            EgyptianHieroglyphs::EgyptianHieroglyphA008 => EGYPTIAN_HIEROGLYPH_A008,
-            EgyptianHieroglyphs::EgyptianHieroglyphA009 => EGYPTIAN_HIEROGLYPH_A009,
-            EgyptianHieroglyphs::EgyptianHieroglyphA010 => EGYPTIAN_HIEROGLYPH_A010,
-            EgyptianHieroglyphs::EgyptianHieroglyphA011 => EGYPTIAN_HIEROGLYPH_A011,
-            EgyptianHieroglyphs::EgyptianHieroglyphA012 => EGYPTIAN_HIEROGLYPH_A012,
-            EgyptianHieroglyphs::EgyptianHieroglyphA013 => EGYPTIAN_HIEROGLYPH_A013,
-            EgyptianHieroglyphs::EgyptianHieroglyphA014 => EGYPTIAN_HIEROGLYPH_A014,
-            EgyptianHieroglyphs::EgyptianHieroglyphA014a => EGYPTIAN_HIEROGLYPH_A014A,
-            EgyptianHieroglyphs::EgyptianHieroglyphA015 => EGYPTIAN_HIEROGLYPH_A015,
-            EgyptianHieroglyphs::EgyptianHieroglyphA016 => EGYPTIAN_HIEROGLYPH_A016,
-            EgyptianHieroglyphs::EgyptianHieroglyphA017 => EGYPTIAN_HIEROGLYPH_A017,
-            EgyptianHieroglyphs::EgyptianHieroglyphA017a => EGYPTIAN_HIEROGLYPH_A017A,
-            EgyptianHieroglyphs::EgyptianHieroglyphA018 => EGYPTIAN_HIEROGLYPH_A018,
-            EgyptianHieroglyphs::EgyptianHieroglyphA019 => EGYPTIAN_HIEROGLYPH_A019,
-            EgyptianHieroglyphs::EgyptianHieroglyphA020 => EGYPTIAN_HIEROGLYPH_A020,
-            EgyptianHieroglyphs::EgyptianHieroglyphA021 => EGYPTIAN_HIEROGLYPH_A021,
-            EgyptianHieroglyphs::EgyptianHieroglyphA022 => EGYPTIAN_HIEROGLYPH_A022,
-            EgyptianHieroglyphs::EgyptianHieroglyphA023 => EGYPTIAN_HIEROGLYPH_A023,
-            EgyptianHieroglyphs::EgyptianHieroglyphA024 => EGYPTIAN_HIEROGLYPH_A024,
-            EgyptianHieroglyphs::EgyptianHieroglyphA025 => EGYPTIAN_HIEROGLYPH_A025,
-            EgyptianHieroglyphs::EgyptianHieroglyphA026 => EGYPTIAN_HIEROGLYPH_A026,
-            EgyptianHieroglyphs::EgyptianHieroglyphA027 => EGYPTIAN_HIEROGLYPH_A027,
-            EgyptianHieroglyphs::EgyptianHieroglyphA028 => EGYPTIAN_HIEROGLYPH_A028,
-            EgyptianHieroglyphs::EgyptianHieroglyphA029 => EGYPTIAN_HIEROGLYPH_A029,
-            EgyptianHieroglyphs::EgyptianHieroglyphA030 => EGYPTIAN_HIEROGLYPH_A030,
-            EgyptianHieroglyphs::EgyptianHieroglyphA031 => EGYPTIAN_HIEROGLYPH_A031,
-            EgyptianHieroglyphs::EgyptianHieroglyphA032 => EGYPTIAN_HIEROGLYPH_A032,
-            EgyptianHieroglyphs::EgyptianHieroglyphA032a => EGYPTIAN_HIEROGLYPH_A032A,
-            EgyptianHieroglyphs::EgyptianHieroglyphA033 => EGYPTIAN_HIEROGLYPH_A033,
-            EgyptianHieroglyphs::EgyptianHieroglyphA034 => EGYPTIAN_HIEROGLYPH_A034,
-            EgyptianHieroglyphs::EgyptianHieroglyphA035 => EGYPTIAN_HIEROGLYPH_A035,
-            EgyptianHieroglyphs::EgyptianHieroglyphA036 => EGYPTIAN_HIEROGLYPH_A036,
-            EgyptianHieroglyphs::EgyptianHieroglyphA037 => EGYPTIAN_HIEROGLYPH_A037,
-            EgyptianHieroglyphs::EgyptianHieroglyphA038 => EGYPTIAN_HIEROGLYPH_A038,
-            EgyptianHieroglyphs::EgyptianHieroglyphA039 => EGYPTIAN_HIEROGLYPH_A039,
-            EgyptianHieroglyphs::EgyptianHieroglyphA040 => EGYPTIAN_HIEROGLYPH_A040,
-            EgyptianHieroglyphs::EgyptianHieroglyphA040a => EGYPTIAN_HIEROGLYPH_A040A,
-            EgyptianHieroglyphs::EgyptianHieroglyphA041 => EGYPTIAN_HIEROGLYPH_A041,
-            EgyptianHieroglyphs::EgyptianHieroglyphA042 => EGYPTIAN_HIEROGLYPH_A042,
-            EgyptianHieroglyphs::EgyptianHieroglyphA042a => EGYPTIAN_HIEROGLYPH_A042A,
-            EgyptianHieroglyphs::EgyptianHieroglyphA043 => EGYPTIAN_HIEROGLYPH_A043,
-            EgyptianHieroglyphs::EgyptianHieroglyphA043a => EGYPTIAN_HIEROGLYPH_A043A,
-            EgyptianHieroglyphs::EgyptianHieroglyphA044 => EGYPTIAN_HIEROGLYPH_A044,
-            EgyptianHieroglyphs::EgyptianHieroglyphA045 => EGYPTIAN_HIEROGLYPH_A045,
-            EgyptianHieroglyphs::EgyptianHieroglyphA045a => EGYPTIAN_HIEROGLYPH_A045A,
-            EgyptianHieroglyphs::EgyptianHieroglyphA046 => EGYPTIAN_HIEROGLYPH_A046,
-            EgyptianHieroglyphs::EgyptianHieroglyphA047 => EGYPTIAN_HIEROGLYPH_A047,
-            EgyptianHieroglyphs::EgyptianHieroglyphA048 => EGYPTIAN_HIEROGLYPH_A048,
-            EgyptianHieroglyphs::EgyptianHieroglyphA049 => EGYPTIAN_HIEROGLYPH_A049,
-            EgyptianHieroglyphs::EgyptianHieroglyphA050 => EGYPTIAN_HIEROGLYPH_A050,
-            EgyptianHieroglyphs::EgyptianHieroglyphA051 => EGYPTIAN_HIEROGLYPH_A051,
-            EgyptianHieroglyphs::EgyptianHieroglyphA052 => EGYPTIAN_HIEROGLYPH_A052,
-            EgyptianHieroglyphs::EgyptianHieroglyphA053 => EGYPTIAN_HIEROGLYPH_A053,
-            EgyptianHieroglyphs::EgyptianHieroglyphA054 => EGYPTIAN_HIEROGLYPH_A054,
-            EgyptianHieroglyphs::EgyptianHieroglyphA055 => EGYPTIAN_HIEROGLYPH_A055,
-            EgyptianHieroglyphs::EgyptianHieroglyphA056 => EGYPTIAN_HIEROGLYPH_A056,
-            EgyptianHieroglyphs::EgyptianHieroglyphA057 => EGYPTIAN_HIEROGLYPH_A057,
-            EgyptianHieroglyphs::EgyptianHieroglyphA058 => EGYPTIAN_HIEROGLYPH_A058,
-            EgyptianHieroglyphs::EgyptianHieroglyphA059 => EGYPTIAN_HIEROGLYPH_A059,
-            EgyptianHieroglyphs::EgyptianHieroglyphA060 => EGYPTIAN_HIEROGLYPH_A060,
-            EgyptianHieroglyphs::EgyptianHieroglyphA061 => EGYPTIAN_HIEROGLYPH_A061,
-            EgyptianHieroglyphs::EgyptianHieroglyphA062 => EGYPTIAN_HIEROGLYPH_A062,
-            EgyptianHieroglyphs::EgyptianHieroglyphA063 => EGYPTIAN_HIEROGLYPH_A063,
-            EgyptianHieroglyphs::EgyptianHieroglyphA064 => EGYPTIAN_HIEROGLYPH_A064,
-            EgyptianHieroglyphs::EgyptianHieroglyphA065 => EGYPTIAN_HIEROGLYPH_A065,
-            EgyptianHieroglyphs::EgyptianHieroglyphA066 => EGYPTIAN_HIEROGLYPH_A066,
-            EgyptianHieroglyphs::EgyptianHieroglyphA067 => EGYPTIAN_HIEROGLYPH_A067,
-            EgyptianHieroglyphs::EgyptianHieroglyphA068 => EGYPTIAN_HIEROGLYPH_A068,
-            EgyptianHieroglyphs::EgyptianHieroglyphA069 => EGYPTIAN_HIEROGLYPH_A069,
-            EgyptianHieroglyphs::EgyptianHieroglyphA070 => EGYPTIAN_HIEROGLYPH_A070,
-            EgyptianHieroglyphs::EgyptianHieroglyphB001 => EGYPTIAN_HIEROGLYPH_B001,
-            EgyptianHieroglyphs::EgyptianHieroglyphB002 => EGYPTIAN_HIEROGLYPH_B002,
-            EgyptianHieroglyphs::EgyptianHieroglyphB003 => EGYPTIAN_HIEROGLYPH_B003,
-            EgyptianHieroglyphs::EgyptianHieroglyphB004 => EGYPTIAN_HIEROGLYPH_B004,
-            EgyptianHieroglyphs::EgyptianHieroglyphB005 => EGYPTIAN_HIEROGLYPH_B005,
-            EgyptianHieroglyphs::EgyptianHieroglyphB005a => EGYPTIAN_HIEROGLYPH_B005A,
-            EgyptianHieroglyphs::EgyptianHieroglyphB006 => EGYPTIAN_HIEROGLYPH_B006,
-            EgyptianHieroglyphs::EgyptianHieroglyphB007 => EGYPTIAN_HIEROGLYPH_B007,
-            EgyptianHieroglyphs::EgyptianHieroglyphB008 => EGYPTIAN_HIEROGLYPH_B008,
-            EgyptianHieroglyphs::EgyptianHieroglyphB009 => EGYPTIAN_HIEROGLYPH_B009,
-            EgyptianHieroglyphs::EgyptianHieroglyphC001 => EGYPTIAN_HIEROGLYPH_C001,
-            EgyptianHieroglyphs::EgyptianHieroglyphC002 => EGYPTIAN_HIEROGLYPH_C002,
-            EgyptianHieroglyphs::EgyptianHieroglyphC002a => EGYPTIAN_HIEROGLYPH_C002A,
-            EgyptianHieroglyphs::EgyptianHieroglyphC002b => EGYPTIAN_HIEROGLYPH_C002B,
-            EgyptianHieroglyphs::EgyptianHieroglyphC002c => EGYPTIAN_HIEROGLYPH_C002C,
-            EgyptianHieroglyphs::EgyptianHieroglyphC003 => EGYPTIAN_HIEROGLYPH_C003,
-            EgyptianHieroglyphs::EgyptianHieroglyphC004 => EGYPTIAN_HIEROGLYPH_C004,
-            EgyptianHieroglyphs::EgyptianHieroglyphC005 => EGYPTIAN_HIEROGLYPH_C005,
-            EgyptianHieroglyphs::EgyptianHieroglyphC006 => EGYPTIAN_HIEROGLYPH_C006,
-            EgyptianHieroglyphs::EgyptianHieroglyphC007 => EGYPTIAN_HIEROGLYPH_C007,
-            EgyptianHieroglyphs::EgyptianHieroglyphC008 => EGYPTIAN_HIEROGLYPH_C008,
-            EgyptianHieroglyphs::EgyptianHieroglyphC009 => EGYPTIAN_HIEROGLYPH_C009,
-            EgyptianHieroglyphs::EgyptianHieroglyphC010 => EGYPTIAN_HIEROGLYPH_C010,
-            EgyptianHieroglyphs::EgyptianHieroglyphC010a => EGYPTIAN_HIEROGLYPH_C010A,
-            EgyptianHieroglyphs::EgyptianHieroglyphC011 => EGYPTIAN_HIEROGLYPH_C011,
-            EgyptianHieroglyphs::EgyptianHieroglyphC012 => EGYPTIAN_HIEROGLYPH_C012,
-            EgyptianHieroglyphs::EgyptianHieroglyphC013 => EGYPTIAN_HIEROGLYPH_C013,
-            EgyptianHieroglyphs::EgyptianHieroglyphC014 => EGYPTIAN_HIEROGLYPH_C014,
-            EgyptianHieroglyphs::EgyptianHieroglyphC015 => EGYPTIAN_HIEROGLYPH_C015,
-            EgyptianHieroglyphs::EgyptianHieroglyphC016 => EGYPTIAN_HIEROGLYPH_C016,
-            EgyptianHieroglyphs::EgyptianHieroglyphC017 => EGYPTIAN_HIEROGLYPH_C017,
-            EgyptianHieroglyphs::EgyptianHieroglyphC018 => EGYPTIAN_HIEROGLYPH_C018,
-            EgyptianHieroglyphs::EgyptianHieroglyphC019 => EGYPTIAN_HIEROGLYPH_C019,
-            EgyptianHieroglyphs::EgyptianHieroglyphC020 => EGYPTIAN_HIEROGLYPH_C020,
-            EgyptianHieroglyphs::EgyptianHieroglyphC021 => EGYPTIAN_HIEROGLYPH_C021,
-            EgyptianHieroglyphs::EgyptianHieroglyphC022 => EGYPTIAN_HIEROGLYPH_C022,
-            EgyptianHieroglyphs::EgyptianHieroglyphC023 => EGYPTIAN_HIEROGLYPH_C023,
-            EgyptianHieroglyphs::EgyptianHieroglyphC024 => EGYPTIAN_HIEROGLYPH_C024,
-            EgyptianHieroglyphs::EgyptianHieroglyphD001 => EGYPTIAN_HIEROGLYPH_D001,
-            EgyptianHieroglyphs::EgyptianHieroglyphD002 => EGYPTIAN_HIEROGLYPH_D002,
-            EgyptianHieroglyphs::EgyptianHieroglyphD003 => EGYPTIAN_HIEROGLYPH_D003,
-            EgyptianHieroglyphs::EgyptianHieroglyphD004 => EGYPTIAN_HIEROGLYPH_D004,
-            EgyptianHieroglyphs::EgyptianHieroglyphD005 => EGYPTIAN_HIEROGLYPH_D005,
-            EgyptianHieroglyphs::EgyptianHieroglyphD006 => EGYPTIAN_HIEROGLYPH_D006,
-            EgyptianHieroglyphs::EgyptianHieroglyphD007 => EGYPTIAN_HIEROGLYPH_D007,
-            EgyptianHieroglyphs::EgyptianHieroglyphD008 => EGYPTIAN_HIEROGLYPH_D008,
-            EgyptianHieroglyphs::EgyptianHieroglyphD008a => EGYPTIAN_HIEROGLYPH_D008A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD009 => EGYPTIAN_HIEROGLYPH_D009,
-            EgyptianHieroglyphs::EgyptianHieroglyphD010 => EGYPTIAN_HIEROGLYPH_D010,
-            EgyptianHieroglyphs::EgyptianHieroglyphD011 => EGYPTIAN_HIEROGLYPH_D011,
-            EgyptianHieroglyphs::EgyptianHieroglyphD012 => EGYPTIAN_HIEROGLYPH_D012,
-            EgyptianHieroglyphs::EgyptianHieroglyphD013 => EGYPTIAN_HIEROGLYPH_D013,
-            EgyptianHieroglyphs::EgyptianHieroglyphD014 => EGYPTIAN_HIEROGLYPH_D014,
-            EgyptianHieroglyphs::EgyptianHieroglyphD015 => EGYPTIAN_HIEROGLYPH_D015,
-            EgyptianHieroglyphs::EgyptianHieroglyphD016 => EGYPTIAN_HIEROGLYPH_D016,
-            EgyptianHieroglyphs::EgyptianHieroglyphD017 => EGYPTIAN_HIEROGLYPH_D017,
-            EgyptianHieroglyphs::EgyptianHieroglyphD018 => EGYPTIAN_HIEROGLYPH_D018,
-            EgyptianHieroglyphs::EgyptianHieroglyphD019 => EGYPTIAN_HIEROGLYPH_D019,
-            EgyptianHieroglyphs::EgyptianHieroglyphD020 => EGYPTIAN_HIEROGLYPH_D020,
-            EgyptianHieroglyphs::EgyptianHieroglyphD021 => EGYPTIAN_HIEROGLYPH_D021,
-            EgyptianHieroglyphs::EgyptianHieroglyphD022 => EGYPTIAN_HIEROGLYPH_D022,
-            EgyptianHieroglyphs::EgyptianHieroglyphD023 => EGYPTIAN_HIEROGLYPH_D023,
-            EgyptianHieroglyphs::EgyptianHieroglyphD024 => EGYPTIAN_HIEROGLYPH_D024,
-            EgyptianHieroglyphs::EgyptianHieroglyphD025 => EGYPTIAN_HIEROGLYPH_D025,
-            EgyptianHieroglyphs::EgyptianHieroglyphD026 => EGYPTIAN_HIEROGLYPH_D026,
-            EgyptianHieroglyphs::EgyptianHieroglyphD027 => EGYPTIAN_HIEROGLYPH_D027,
-            EgyptianHieroglyphs::EgyptianHieroglyphD027a => EGYPTIAN_HIEROGLYPH_D027A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD028 => EGYPTIAN_HIEROGLYPH_D028,
-            EgyptianHieroglyphs::EgyptianHieroglyphD029 => EGYPTIAN_HIEROGLYPH_D029,
-            EgyptianHieroglyphs::EgyptianHieroglyphD030 => EGYPTIAN_HIEROGLYPH_D030,
-            EgyptianHieroglyphs::EgyptianHieroglyphD031 => EGYPTIAN_HIEROGLYPH_D031,
-            EgyptianHieroglyphs::EgyptianHieroglyphD031a => EGYPTIAN_HIEROGLYPH_D031A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD032 => EGYPTIAN_HIEROGLYPH_D032,
-            EgyptianHieroglyphs::EgyptianHieroglyphD033 => EGYPTIAN_HIEROGLYPH_D033,
-            EgyptianHieroglyphs::EgyptianHieroglyphD034 => EGYPTIAN_HIEROGLYPH_D034,
-            EgyptianHieroglyphs::EgyptianHieroglyphD034a => EGYPTIAN_HIEROGLYPH_D034A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD035 => EGYPTIAN_HIEROGLYPH_D035,
-            EgyptianHieroglyphs::EgyptianHieroglyphD036 => EGYPTIAN_HIEROGLYPH_D036,
-            EgyptianHieroglyphs::EgyptianHieroglyphD037 => EGYPTIAN_HIEROGLYPH_D037,
-            EgyptianHieroglyphs::EgyptianHieroglyphD038 => EGYPTIAN_HIEROGLYPH_D038,
-            EgyptianHieroglyphs::EgyptianHieroglyphD039 => EGYPTIAN_HIEROGLYPH_D039,
-            EgyptianHieroglyphs::EgyptianHieroglyphD040 => EGYPTIAN_HIEROGLYPH_D040,
-            EgyptianHieroglyphs::EgyptianHieroglyphD041 => EGYPTIAN_HIEROGLYPH_D041,
-            EgyptianHieroglyphs::EgyptianHieroglyphD042 => EGYPTIAN_HIEROGLYPH_D042,
-            EgyptianHieroglyphs::EgyptianHieroglyphD043 => EGYPTIAN_HIEROGLYPH_D043,
-            EgyptianHieroglyphs::EgyptianHieroglyphD044 => EGYPTIAN_HIEROGLYPH_D044,
-            EgyptianHieroglyphs::EgyptianHieroglyphD045 => EGYPTIAN_HIEROGLYPH_D045,
-            EgyptianHieroglyphs::EgyptianHieroglyphD046 => EGYPTIAN_HIEROGLYPH_D046,
-            EgyptianHieroglyphs::EgyptianHieroglyphD046a => EGYPTIAN_HIEROGLYPH_D046A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD047 => EGYPTIAN_HIEROGLYPH_D047,
-            EgyptianHieroglyphs::EgyptianHieroglyphD048 => EGYPTIAN_HIEROGLYPH_D048,
-            EgyptianHieroglyphs::EgyptianHieroglyphD048a => EGYPTIAN_HIEROGLYPH_D048A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD049 => EGYPTIAN_HIEROGLYPH_D049,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050 => EGYPTIAN_HIEROGLYPH_D050,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050a => EGYPTIAN_HIEROGLYPH_D050A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050b => EGYPTIAN_HIEROGLYPH_D050B,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050c => EGYPTIAN_HIEROGLYPH_D050C,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050d => EGYPTIAN_HIEROGLYPH_D050D,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050e => EGYPTIAN_HIEROGLYPH_D050E,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050f => EGYPTIAN_HIEROGLYPH_D050F,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050g => EGYPTIAN_HIEROGLYPH_D050G,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050h => EGYPTIAN_HIEROGLYPH_D050H,
-            EgyptianHieroglyphs::EgyptianHieroglyphD050i => EGYPTIAN_HIEROGLYPH_D050I,
-            EgyptianHieroglyphs::EgyptianHieroglyphD051 => EGYPTIAN_HIEROGLYPH_D051,
-            EgyptianHieroglyphs::EgyptianHieroglyphD052 => EGYPTIAN_HIEROGLYPH_D052,
-            EgyptianHieroglyphs::EgyptianHieroglyphD052a => EGYPTIAN_HIEROGLYPH_D052A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD053 => EGYPTIAN_HIEROGLYPH_D053,
-            EgyptianHieroglyphs::EgyptianHieroglyphD054 => EGYPTIAN_HIEROGLYPH_D054,
-            EgyptianHieroglyphs::EgyptianHieroglyphD054a => EGYPTIAN_HIEROGLYPH_D054A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD055 => EGYPTIAN_HIEROGLYPH_D055,
-            EgyptianHieroglyphs::EgyptianHieroglyphD056 => EGYPTIAN_HIEROGLYPH_D056,
-            EgyptianHieroglyphs::EgyptianHieroglyphD057 => EGYPTIAN_HIEROGLYPH_D057,
-            EgyptianHieroglyphs::EgyptianHieroglyphD058 => EGYPTIAN_HIEROGLYPH_D058,
-            EgyptianHieroglyphs::EgyptianHieroglyphD059 => EGYPTIAN_HIEROGLYPH_D059,
-            EgyptianHieroglyphs::EgyptianHieroglyphD060 => EGYPTIAN_HIEROGLYPH_D060,
-            EgyptianHieroglyphs::EgyptianHieroglyphD061 => EGYPTIAN_HIEROGLYPH_D061,
-            EgyptianHieroglyphs::EgyptianHieroglyphD062 => EGYPTIAN_HIEROGLYPH_D062,
-            EgyptianHieroglyphs::EgyptianHieroglyphD063 => EGYPTIAN_HIEROGLYPH_D063,
-            EgyptianHieroglyphs::EgyptianHieroglyphD064 => EGYPTIAN_HIEROGLYPH_D064,
-            EgyptianHieroglyphs::EgyptianHieroglyphD065 => EGYPTIAN_HIEROGLYPH_D065,
-            EgyptianHieroglyphs::EgyptianHieroglyphD066 => EGYPTIAN_HIEROGLYPH_D066,
-            EgyptianHieroglyphs::EgyptianHieroglyphD067 => EGYPTIAN_HIEROGLYPH_D067,
-            EgyptianHieroglyphs::EgyptianHieroglyphD067a => EGYPTIAN_HIEROGLYPH_D067A,
-            EgyptianHieroglyphs::EgyptianHieroglyphD067b => EGYPTIAN_HIEROGLYPH_D067B,
-            EgyptianHieroglyphs::EgyptianHieroglyphD067c => EGYPTIAN_HIEROGLYPH_D067C,
-            EgyptianHieroglyphs::EgyptianHieroglyphD067d => EGYPTIAN_HIEROGLYPH_D067D,
-            EgyptianHieroglyphs::EgyptianHieroglyphD067e => EGYPTIAN_HIEROGLYPH_D067E,
-            EgyptianHieroglyphs::EgyptianHieroglyphD067f => EGYPTIAN_HIEROGLYPH_D067F,
-            EgyptianHieroglyphs::EgyptianHieroglyphD067g => EGYPTIAN_HIEROGLYPH_D067G,
-            EgyptianHieroglyphs::EgyptianHieroglyphD067h => EGYPTIAN_HIEROGLYPH_D067H,
-            EgyptianHieroglyphs::EgyptianHieroglyphE001 => EGYPTIAN_HIEROGLYPH_E001,
-            EgyptianHieroglyphs::EgyptianHieroglyphE002 => EGYPTIAN_HIEROGLYPH_E002,
-            EgyptianHieroglyphs::EgyptianHieroglyphE003 => EGYPTIAN_HIEROGLYPH_E003,
-            EgyptianHieroglyphs::EgyptianHieroglyphE004 => EGYPTIAN_HIEROGLYPH_E004,
-            EgyptianHieroglyphs::EgyptianHieroglyphE005 => EGYPTIAN_HIEROGLYPH_E005,
-            EgyptianHieroglyphs::EgyptianHieroglyphE006 => EGYPTIAN_HIEROGLYPH_E006,
-            EgyptianHieroglyphs::EgyptianHieroglyphE007 => EGYPTIAN_HIEROGLYPH_E007,
-            EgyptianHieroglyphs::EgyptianHieroglyphE008 => EGYPTIAN_HIEROGLYPH_E008,
-            EgyptianHieroglyphs::EgyptianHieroglyphE008a => EGYPTIAN_HIEROGLYPH_E008A,
-            EgyptianHieroglyphs::EgyptianHieroglyphE009 => EGYPTIAN_HIEROGLYPH_E009,
-            EgyptianHieroglyphs::EgyptianHieroglyphE009a => EGYPTIAN_HIEROGLYPH_E009A,
-            EgyptianHieroglyphs::EgyptianHieroglyphE010 => EGYPTIAN_HIEROGLYPH_E010,
-            EgyptianHieroglyphs::EgyptianHieroglyphE011 => EGYPTIAN_HIEROGLYPH_E011,
-            EgyptianHieroglyphs::EgyptianHieroglyphE012 => EGYPTIAN_HIEROGLYPH_E012,
-            EgyptianHieroglyphs::EgyptianHieroglyphE013 => EGYPTIAN_HIEROGLYPH_E013,
-            EgyptianHieroglyphs::EgyptianHieroglyphE014 => EGYPTIAN_HIEROGLYPH_E014,
-            EgyptianHieroglyphs::EgyptianHieroglyphE015 => EGYPTIAN_HIEROGLYPH_E015,
-            EgyptianHieroglyphs::EgyptianHieroglyphE016 => EGYPTIAN_HIEROGLYPH_E016,
-            EgyptianHieroglyphs::EgyptianHieroglyphE016a => EGYPTIAN_HIEROGLYPH_E016A,
-            EgyptianHieroglyphs::EgyptianHieroglyphE017 => EGYPTIAN_HIEROGLYPH_E017,
-            EgyptianHieroglyphs::EgyptianHieroglyphE017a => EGYPTIAN_HIEROGLYPH_E017A,
-            EgyptianHieroglyphs::EgyptianHieroglyphE018 => EGYPTIAN_HIEROGLYPH_E018,
-            EgyptianHieroglyphs::EgyptianHieroglyphE019 => EGYPTIAN_HIEROGLYPH_E019,
-            EgyptianHieroglyphs::EgyptianHieroglyphE020 => EGYPTIAN_HIEROGLYPH_E020,
-            EgyptianHieroglyphs::EgyptianHieroglyphE020a => EGYPTIAN_HIEROGLYPH_E020A,
-            EgyptianHieroglyphs::EgyptianHieroglyphE021 => EGYPTIAN_HIEROGLYPH_E021,
-            EgyptianHieroglyphs::EgyptianHieroglyphE022 => EGYPTIAN_HIEROGLYPH_E022,
-            EgyptianHieroglyphs::EgyptianHieroglyphE023 => EGYPTIAN_HIEROGLYPH_E023,
-            EgyptianHieroglyphs::EgyptianHieroglyphE024 => EGYPTIAN_HIEROGLYPH_E024,
-            EgyptianHieroglyphs::EgyptianHieroglyphE025 => EGYPTIAN_HIEROGLYPH_E025,
-            EgyptianHieroglyphs::EgyptianHieroglyphE026 => EGYPTIAN_HIEROGLYPH_E026,
-            EgyptianHieroglyphs::EgyptianHieroglyphE027 => EGYPTIAN_HIEROGLYPH_E027,
-            EgyptianHieroglyphs::EgyptianHieroglyphE028 => EGYPTIAN_HIEROGLYPH_E028,
-            EgyptianHieroglyphs::EgyptianHieroglyphE028a => EGYPTIAN_HIEROGLYPH_E028A,
-            EgyptianHieroglyphs::EgyptianHieroglyphE029 => EGYPTIAN_HIEROGLYPH_E029,
-            EgyptianHieroglyphs::EgyptianHieroglyphE030 => EGYPTIAN_HIEROGLYPH_E030,
-            EgyptianHieroglyphs::EgyptianHieroglyphE031 => EGYPTIAN_HIEROGLYPH_E031,
-            EgyptianHieroglyphs::EgyptianHieroglyphE032 => EGYPTIAN_HIEROGLYPH_E032,
-            EgyptianHieroglyphs::EgyptianHieroglyphE033 => EGYPTIAN_HIEROGLYPH_E033,
-            EgyptianHieroglyphs::EgyptianHieroglyphE034 => EGYPTIAN_HIEROGLYPH_E034,
-            EgyptianHieroglyphs::EgyptianHieroglyphE034a => EGYPTIAN_HIEROGLYPH_E034A,
-            EgyptianHieroglyphs::EgyptianHieroglyphE036 => EGYPTIAN_HIEROGLYPH_E036,
-            EgyptianHieroglyphs::EgyptianHieroglyphE037 => EGYPTIAN_HIEROGLYPH_E037,
-            EgyptianHieroglyphs::EgyptianHieroglyphE038 => EGYPTIAN_HIEROGLYPH_E038,
-            EgyptianHieroglyphs::EgyptianHieroglyphF001 => EGYPTIAN_HIEROGLYPH_F001,
-            EgyptianHieroglyphs::EgyptianHieroglyphF001a => EGYPTIAN_HIEROGLYPH_F001A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF002 => EGYPTIAN_HIEROGLYPH_F002,
-            EgyptianHieroglyphs::EgyptianHieroglyphF003 => EGYPTIAN_HIEROGLYPH_F003,
-            EgyptianHieroglyphs::EgyptianHieroglyphF004 => EGYPTIAN_HIEROGLYPH_F004,
-            EgyptianHieroglyphs::EgyptianHieroglyphF005 => EGYPTIAN_HIEROGLYPH_F005,
-            EgyptianHieroglyphs::EgyptianHieroglyphF006 => EGYPTIAN_HIEROGLYPH_F006,
-            EgyptianHieroglyphs::EgyptianHieroglyphF007 => EGYPTIAN_HIEROGLYPH_F007,
-            EgyptianHieroglyphs::EgyptianHieroglyphF008 => EGYPTIAN_HIEROGLYPH_F008,
-            EgyptianHieroglyphs::EgyptianHieroglyphF009 => EGYPTIAN_HIEROGLYPH_F009,
-            EgyptianHieroglyphs::EgyptianHieroglyphF010 => EGYPTIAN_HIEROGLYPH_F010,
-            EgyptianHieroglyphs::EgyptianHieroglyphF011 => EGYPTIAN_HIEROGLYPH_F011,
-            EgyptianHieroglyphs::EgyptianHieroglyphF012 => EGYPTIAN_HIEROGLYPH_F012,
-            EgyptianHieroglyphs::EgyptianHieroglyphF013 => EGYPTIAN_HIEROGLYPH_F013,
-            EgyptianHieroglyphs::EgyptianHieroglyphF013a => EGYPTIAN_HIEROGLYPH_F013A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF014 => EGYPTIAN_HIEROGLYPH_F014,
-            EgyptianHieroglyphs::EgyptianHieroglyphF015 => EGYPTIAN_HIEROGLYPH_F015,
-            EgyptianHieroglyphs::EgyptianHieroglyphF016 => EGYPTIAN_HIEROGLYPH_F016,
-            EgyptianHieroglyphs::EgyptianHieroglyphF017 => EGYPTIAN_HIEROGLYPH_F017,
-            EgyptianHieroglyphs::EgyptianHieroglyphF018 => EGYPTIAN_HIEROGLYPH_F018,
-            EgyptianHieroglyphs::EgyptianHieroglyphF019 => EGYPTIAN_HIEROGLYPH_F019,
-            EgyptianHieroglyphs::EgyptianHieroglyphF020 => EGYPTIAN_HIEROGLYPH_F020,
-            EgyptianHieroglyphs::EgyptianHieroglyphF021 => EGYPTIAN_HIEROGLYPH_F021,
-            EgyptianHieroglyphs::EgyptianHieroglyphF021a => EGYPTIAN_HIEROGLYPH_F021A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF022 => EGYPTIAN_HIEROGLYPH_F022,
-            EgyptianHieroglyphs::EgyptianHieroglyphF023 => EGYPTIAN_HIEROGLYPH_F023,
-            EgyptianHieroglyphs::EgyptianHieroglyphF024 => EGYPTIAN_HIEROGLYPH_F024,
-            EgyptianHieroglyphs::EgyptianHieroglyphF025 => EGYPTIAN_HIEROGLYPH_F025,
-            EgyptianHieroglyphs::EgyptianHieroglyphF026 => EGYPTIAN_HIEROGLYPH_F026,
-            EgyptianHieroglyphs::EgyptianHieroglyphF027 => EGYPTIAN_HIEROGLYPH_F027,
-            EgyptianHieroglyphs::EgyptianHieroglyphF028 => EGYPTIAN_HIEROGLYPH_F028,
-            EgyptianHieroglyphs::EgyptianHieroglyphF029 => EGYPTIAN_HIEROGLYPH_F029,
-            EgyptianHieroglyphs::EgyptianHieroglyphF030 => EGYPTIAN_HIEROGLYPH_F030,
-            EgyptianHieroglyphs::EgyptianHieroglyphF031 => EGYPTIAN_HIEROGLYPH_F031,
-            EgyptianHieroglyphs::EgyptianHieroglyphF031a => EGYPTIAN_HIEROGLYPH_F031A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF032 => EGYPTIAN_HIEROGLYPH_F032,
-            EgyptianHieroglyphs::EgyptianHieroglyphF033 => EGYPTIAN_HIEROGLYPH_F033,
-            EgyptianHieroglyphs::EgyptianHieroglyphF034 => EGYPTIAN_HIEROGLYPH_F034,
-            EgyptianHieroglyphs::EgyptianHieroglyphF035 => EGYPTIAN_HIEROGLYPH_F035,
-            EgyptianHieroglyphs::EgyptianHieroglyphF036 => EGYPTIAN_HIEROGLYPH_F036,
-            EgyptianHieroglyphs::EgyptianHieroglyphF037 => EGYPTIAN_HIEROGLYPH_F037,
-            EgyptianHieroglyphs::EgyptianHieroglyphF037a => EGYPTIAN_HIEROGLYPH_F037A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF038 => EGYPTIAN_HIEROGLYPH_F038,
-            EgyptianHieroglyphs::EgyptianHieroglyphF038a => EGYPTIAN_HIEROGLYPH_F038A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF039 => EGYPTIAN_HIEROGLYPH_F039,
-            EgyptianHieroglyphs::EgyptianHieroglyphF040 => EGYPTIAN_HIEROGLYPH_F040,
-            EgyptianHieroglyphs::EgyptianHieroglyphF041 => EGYPTIAN_HIEROGLYPH_F041,
-            EgyptianHieroglyphs::EgyptianHieroglyphF042 => EGYPTIAN_HIEROGLYPH_F042,
-            EgyptianHieroglyphs::EgyptianHieroglyphF043 => EGYPTIAN_HIEROGLYPH_F043,
-            EgyptianHieroglyphs::EgyptianHieroglyphF044 => EGYPTIAN_HIEROGLYPH_F044,
-            EgyptianHieroglyphs::EgyptianHieroglyphF045 => EGYPTIAN_HIEROGLYPH_F045,
-            EgyptianHieroglyphs::EgyptianHieroglyphF045a => EGYPTIAN_HIEROGLYPH_F045A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF046 => EGYPTIAN_HIEROGLYPH_F046,
-            EgyptianHieroglyphs::EgyptianHieroglyphF046a => EGYPTIAN_HIEROGLYPH_F046A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF047 => EGYPTIAN_HIEROGLYPH_F047,
-            EgyptianHieroglyphs::EgyptianHieroglyphF047a => EGYPTIAN_HIEROGLYPH_F047A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF048 => EGYPTIAN_HIEROGLYPH_F048,
-            EgyptianHieroglyphs::EgyptianHieroglyphF049 => EGYPTIAN_HIEROGLYPH_F049,
-            EgyptianHieroglyphs::EgyptianHieroglyphF050 => EGYPTIAN_HIEROGLYPH_F050,
-            EgyptianHieroglyphs::EgyptianHieroglyphF051 => EGYPTIAN_HIEROGLYPH_F051,
-            EgyptianHieroglyphs::EgyptianHieroglyphF051a => EGYPTIAN_HIEROGLYPH_F051A,
-            EgyptianHieroglyphs::EgyptianHieroglyphF051b => EGYPTIAN_HIEROGLYPH_F051B,
-            EgyptianHieroglyphs::EgyptianHieroglyphF051c => EGYPTIAN_HIEROGLYPH_F051C,
-            EgyptianHieroglyphs::EgyptianHieroglyphF052 => EGYPTIAN_HIEROGLYPH_F052,
-            EgyptianHieroglyphs::EgyptianHieroglyphF053 => EGYPTIAN_HIEROGLYPH_F053,
-            EgyptianHieroglyphs::EgyptianHieroglyphG001 => EGYPTIAN_HIEROGLYPH_G001,
-            EgyptianHieroglyphs::EgyptianHieroglyphG002 => EGYPTIAN_HIEROGLYPH_G002,
-            EgyptianHieroglyphs::EgyptianHieroglyphG003 => EGYPTIAN_HIEROGLYPH_G003,
-            EgyptianHieroglyphs::EgyptianHieroglyphG004 => EGYPTIAN_HIEROGLYPH_G004,
-            EgyptianHieroglyphs::EgyptianHieroglyphG005 => EGYPTIAN_HIEROGLYPH_G005,
-            EgyptianHieroglyphs::EgyptianHieroglyphG006 => EGYPTIAN_HIEROGLYPH_G006,
-            EgyptianHieroglyphs::EgyptianHieroglyphG006a => EGYPTIAN_HIEROGLYPH_G006A,
-            EgyptianHieroglyphs::EgyptianHieroglyphG007 => EGYPTIAN_HIEROGLYPH_G007,
-            EgyptianHieroglyphs::EgyptianHieroglyphG007a => EGYPTIAN_HIEROGLYPH_G007A,
-            EgyptianHieroglyphs::EgyptianHieroglyphG007b => EGYPTIAN_HIEROGLYPH_G007B,
-            EgyptianHieroglyphs::EgyptianHieroglyphG008 => EGYPTIAN_HIEROGLYPH_G008,
-            EgyptianHieroglyphs::EgyptianHieroglyphG009 => EGYPTIAN_HIEROGLYPH_G009,
-            EgyptianHieroglyphs::EgyptianHieroglyphG010 => EGYPTIAN_HIEROGLYPH_G010,
-            EgyptianHieroglyphs::EgyptianHieroglyphG011 => EGYPTIAN_HIEROGLYPH_G011,
-            EgyptianHieroglyphs::EgyptianHieroglyphG011a => EGYPTIAN_HIEROGLYPH_G011A,
-            EgyptianHieroglyphs::EgyptianHieroglyphG012 => EGYPTIAN_HIEROGLYPH_G012,
-            EgyptianHieroglyphs::EgyptianHieroglyphG013 => EGYPTIAN_HIEROGLYPH_G013,
-            EgyptianHieroglyphs::EgyptianHieroglyphG014 => EGYPTIAN_HIEROGLYPH_G014,
-            EgyptianHieroglyphs::EgyptianHieroglyphG015 => EGYPTIAN_HIEROGLYPH_G015,
-            EgyptianHieroglyphs::EgyptianHieroglyphG016 => EGYPTIAN_HIEROGLYPH_G016,
-            EgyptianHieroglyphs::EgyptianHieroglyphG017 => EGYPTIAN_HIEROGLYPH_G017,
-            EgyptianHieroglyphs::EgyptianHieroglyphG018 => EGYPTIAN_HIEROGLYPH_G018,
-            EgyptianHieroglyphs::EgyptianHieroglyphG019 => EGYPTIAN_HIEROGLYPH_G019,
-            EgyptianHieroglyphs::EgyptianHieroglyphG020 => EGYPTIAN_HIEROGLYPH_G020,
-            EgyptianHieroglyphs::EgyptianHieroglyphG020a => EGYPTIAN_HIEROGLYPH_G020A,
-            EgyptianHieroglyphs::EgyptianHieroglyphG021 => EGYPTIAN_HIEROGLYPH_G021,
-            EgyptianHieroglyphs::EgyptianHieroglyphG022 => EGYPTIAN_HIEROGLYPH_G022,
-            EgyptianHieroglyphs::EgyptianHieroglyphG023 => EGYPTIAN_HIEROGLYPH_G023,
-            EgyptianHieroglyphs::EgyptianHieroglyphG024 => EGYPTIAN_HIEROGLYPH_G024,
-            EgyptianHieroglyphs::EgyptianHieroglyphG025 => EGYPTIAN_HIEROGLYPH_G025,
-            EgyptianHieroglyphs::EgyptianHieroglyphG026 => EGYPTIAN_HIEROGLYPH_G026,
-            EgyptianHieroglyphs::EgyptianHieroglyphG026a => EGYPTIAN_HIEROGLYPH_G026A,
-            EgyptianHieroglyphs::EgyptianHieroglyphG027 => EGYPTIAN_HIEROGLYPH_G027,
-            EgyptianHieroglyphs::EgyptianHieroglyphG028 => EGYPTIAN_HIEROGLYPH_G028,
-            EgyptianHieroglyphs::EgyptianHieroglyphG029 => EGYPTIAN_HIEROGLYPH_G029,
-            EgyptianHieroglyphs::EgyptianHieroglyphG030 => EGYPTIAN_HIEROGLYPH_G030,
-            EgyptianHieroglyphs::EgyptianHieroglyphG031 => EGYPTIAN_HIEROGLYPH_G031,
-            EgyptianHieroglyphs::EgyptianHieroglyphG032 => EGYPTIAN_HIEROGLYPH_G032,
-            EgyptianHieroglyphs::EgyptianHieroglyphG033 => EGYPTIAN_HIEROGLYPH_G033,
-            EgyptianHieroglyphs::EgyptianHieroglyphG034 => EGYPTIAN_HIEROGLYPH_G034,
-            EgyptianHieroglyphs::EgyptianHieroglyphG035 => EGYPTIAN_HIEROGLYPH_G035,
-            EgyptianHieroglyphs::EgyptianHieroglyphG036 => EGYPTIAN_HIEROGLYPH_G036,
-            EgyptianHieroglyphs::EgyptianHieroglyphG036a => EGYPTIAN_HIEROGLYPH_G036A,
-            EgyptianHieroglyphs::EgyptianHieroglyphG037 => EGYPTIAN_HIEROGLYPH_G037,
-            EgyptianHieroglyphs::EgyptianHieroglyphG037a => EGYPTIAN_HIEROGLYPH_G037A,
-            EgyptianHieroglyphs::EgyptianHieroglyphG038 => EGYPTIAN_HIEROGLYPH_G038,
-            EgyptianHieroglyphs::EgyptianHieroglyphG039 => EGYPTIAN_HIEROGLYPH_G039,
-            EgyptianHieroglyphs::EgyptianHieroglyphG040 => EGYPTIAN_HIEROGLYPH_G040,
-            EgyptianHieroglyphs::EgyptianHieroglyphG041 => EGYPTIAN_HIEROGLYPH_G041,
-            EgyptianHieroglyphs::EgyptianHieroglyphG042 => EGYPTIAN_HIEROGLYPH_G042,
-            EgyptianHieroglyphs::EgyptianHieroglyphG043 => EGYPTIAN_HIEROGLYPH_G043,
-            EgyptianHieroglyphs::EgyptianHieroglyphG043a => EGYPTIAN_HIEROGLYPH_G043A,
-            EgyptianHieroglyphs::EgyptianHieroglyphG044 => EGYPTIAN_HIEROGLYPH_G044,
-            EgyptianHieroglyphs::EgyptianHieroglyphG045 => EGYPTIAN_HIEROGLYPH_G045,
-            EgyptianHieroglyphs::EgyptianHieroglyphG045a => EGYPTIAN_HIEROGLYPH_G045A,
-            EgyptianHieroglyphs::EgyptianHieroglyphG046 => EGYPTIAN_HIEROGLYPH_G046,
-            EgyptianHieroglyphs::EgyptianHieroglyphG047 => EGYPTIAN_HIEROGLYPH_G047,
-            EgyptianHieroglyphs::EgyptianHieroglyphG048 => EGYPTIAN_HIEROGLYPH_G048,
-            EgyptianHieroglyphs::EgyptianHieroglyphG049 => EGYPTIAN_HIEROGLYPH_G049,
-            EgyptianHieroglyphs::EgyptianHieroglyphG050 => EGYPTIAN_HIEROGLYPH_G050,
-            EgyptianHieroglyphs::EgyptianHieroglyphG051 => EGYPTIAN_HIEROGLYPH_G051,
-            EgyptianHieroglyphs::EgyptianHieroglyphG052 => EGYPTIAN_HIEROGLYPH_G052,
-            EgyptianHieroglyphs::EgyptianHieroglyphG053 => EGYPTIAN_HIEROGLYPH_G053,
-            EgyptianHieroglyphs::EgyptianHieroglyphG054 => EGYPTIAN_HIEROGLYPH_G054,
-            EgyptianHieroglyphs::EgyptianHieroglyphH001 => EGYPTIAN_HIEROGLYPH_H001,
-            EgyptianHieroglyphs::EgyptianHieroglyphH002 => EGYPTIAN_HIEROGLYPH_H002,
-            EgyptianHieroglyphs::EgyptianHieroglyphH003 => EGYPTIAN_HIEROGLYPH_H003,
-            EgyptianHieroglyphs::EgyptianHieroglyphH004 => EGYPTIAN_HIEROGLYPH_H004,
-            EgyptianHieroglyphs::EgyptianHieroglyphH005 => EGYPTIAN_HIEROGLYPH_H005,
-            EgyptianHieroglyphs::EgyptianHieroglyphH006 => EGYPTIAN_HIEROGLYPH_H006,
-            EgyptianHieroglyphs::EgyptianHieroglyphH006a => EGYPTIAN_HIEROGLYPH_H006A,
-            EgyptianHieroglyphs::EgyptianHieroglyphH007 => EGYPTIAN_HIEROGLYPH_H007,
-            EgyptianHieroglyphs::EgyptianHieroglyphH008 => EGYPTIAN_HIEROGLYPH_H008,
-            EgyptianHieroglyphs::EgyptianHieroglyphI001 => EGYPTIAN_HIEROGLYPH_I001,
-            EgyptianHieroglyphs::EgyptianHieroglyphI002 => EGYPTIAN_HIEROGLYPH_I002,
-            EgyptianHieroglyphs::EgyptianHieroglyphI003 => EGYPTIAN_HIEROGLYPH_I003,
-            EgyptianHieroglyphs::EgyptianHieroglyphI004 => EGYPTIAN_HIEROGLYPH_I004,
-            EgyptianHieroglyphs::EgyptianHieroglyphI005 => EGYPTIAN_HIEROGLYPH_I005,
-            EgyptianHieroglyphs::EgyptianHieroglyphI005a => EGYPTIAN_HIEROGLYPH_I005A,
-            EgyptianHieroglyphs::EgyptianHieroglyphI006 => EGYPTIAN_HIEROGLYPH_I006,
-            EgyptianHieroglyphs::EgyptianHieroglyphI007 => EGYPTIAN_HIEROGLYPH_I007,
-            EgyptianHieroglyphs::EgyptianHieroglyphI008 => EGYPTIAN_HIEROGLYPH_I008,
-            EgyptianHieroglyphs::EgyptianHieroglyphI009 => EGYPTIAN_HIEROGLYPH_I009,
-            EgyptianHieroglyphs::EgyptianHieroglyphI009a => EGYPTIAN_HIEROGLYPH_I009A,
-            EgyptianHieroglyphs::EgyptianHieroglyphI010 => EGYPTIAN_HIEROGLYPH_I010,
-            EgyptianHieroglyphs::EgyptianHieroglyphI010a => EGYPTIAN_HIEROGLYPH_I010A,
-            EgyptianHieroglyphs::EgyptianHieroglyphI011 => EGYPTIAN_HIEROGLYPH_I011,
-            EgyptianHieroglyphs::EgyptianHieroglyphI011a => EGYPTIAN_HIEROGLYPH_I011A,
-            EgyptianHieroglyphs::EgyptianHieroglyphI012 => EGYPTIAN_HIEROGLYPH_I012,
-            EgyptianHieroglyphs::EgyptianHieroglyphI013 => EGYPTIAN_HIEROGLYPH_I013,
-            EgyptianHieroglyphs::EgyptianHieroglyphI014 => EGYPTIAN_HIEROGLYPH_I014,
-            EgyptianHieroglyphs::EgyptianHieroglyphI015 => EGYPTIAN_HIEROGLYPH_I015,
-            EgyptianHieroglyphs::EgyptianHieroglyphK001 => EGYPTIAN_HIEROGLYPH_K001,
-            EgyptianHieroglyphs::EgyptianHieroglyphK002 => EGYPTIAN_HIEROGLYPH_K002,
-            EgyptianHieroglyphs::EgyptianHieroglyphK003 => EGYPTIAN_HIEROGLYPH_K003,
-            EgyptianHieroglyphs::EgyptianHieroglyphK004 => EGYPTIAN_HIEROGLYPH_K004,
-            EgyptianHieroglyphs::EgyptianHieroglyphK005 => EGYPTIAN_HIEROGLYPH_K005,
-            EgyptianHieroglyphs::EgyptianHieroglyphK006 => EGYPTIAN_HIEROGLYPH_K006,
-            EgyptianHieroglyphs::EgyptianHieroglyphK007 => EGYPTIAN_HIEROGLYPH_K007,
-            EgyptianHieroglyphs::EgyptianHieroglyphK008 => EGYPTIAN_HIEROGLYPH_K008,
-            EgyptianHieroglyphs::EgyptianHieroglyphL001 => EGYPTIAN_HIEROGLYPH_L001,
-            EgyptianHieroglyphs::EgyptianHieroglyphL002 => EGYPTIAN_HIEROGLYPH_L002,
-            EgyptianHieroglyphs::EgyptianHieroglyphL002a => EGYPTIAN_HIEROGLYPH_L002A,
-            EgyptianHieroglyphs::EgyptianHieroglyphL003 => EGYPTIAN_HIEROGLYPH_L003,
-            EgyptianHieroglyphs::EgyptianHieroglyphL004 => EGYPTIAN_HIEROGLYPH_L004,
-            EgyptianHieroglyphs::EgyptianHieroglyphL005 => EGYPTIAN_HIEROGLYPH_L005,
-            EgyptianHieroglyphs::EgyptianHieroglyphL006 => EGYPTIAN_HIEROGLYPH_L006,
-            EgyptianHieroglyphs::EgyptianHieroglyphL006a => EGYPTIAN_HIEROGLYPH_L006A,
-            EgyptianHieroglyphs::EgyptianHieroglyphL007 => EGYPTIAN_HIEROGLYPH_L007,
-            EgyptianHieroglyphs::EgyptianHieroglyphL008 => EGYPTIAN_HIEROGLYPH_L008,
-            EgyptianHieroglyphs::EgyptianHieroglyphM001 => EGYPTIAN_HIEROGLYPH_M001,
-            EgyptianHieroglyphs::EgyptianHieroglyphM001a => EGYPTIAN_HIEROGLYPH_M001A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM001b => EGYPTIAN_HIEROGLYPH_M001B,
-            EgyptianHieroglyphs::EgyptianHieroglyphM002 => EGYPTIAN_HIEROGLYPH_M002,
-            EgyptianHieroglyphs::EgyptianHieroglyphM003 => EGYPTIAN_HIEROGLYPH_M003,
-            EgyptianHieroglyphs::EgyptianHieroglyphM003a => EGYPTIAN_HIEROGLYPH_M003A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM004 => EGYPTIAN_HIEROGLYPH_M004,
-            EgyptianHieroglyphs::EgyptianHieroglyphM005 => EGYPTIAN_HIEROGLYPH_M005,
-            EgyptianHieroglyphs::EgyptianHieroglyphM006 => EGYPTIAN_HIEROGLYPH_M006,
-            EgyptianHieroglyphs::EgyptianHieroglyphM007 => EGYPTIAN_HIEROGLYPH_M007,
-            EgyptianHieroglyphs::EgyptianHieroglyphM008 => EGYPTIAN_HIEROGLYPH_M008,
-            EgyptianHieroglyphs::EgyptianHieroglyphM009 => EGYPTIAN_HIEROGLYPH_M009,
-            EgyptianHieroglyphs::EgyptianHieroglyphM010 => EGYPTIAN_HIEROGLYPH_M010,
-            EgyptianHieroglyphs::EgyptianHieroglyphM010a => EGYPTIAN_HIEROGLYPH_M010A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM011 => EGYPTIAN_HIEROGLYPH_M011,
-            EgyptianHieroglyphs::EgyptianHieroglyphM012 => EGYPTIAN_HIEROGLYPH_M012,
-            EgyptianHieroglyphs::EgyptianHieroglyphM012a => EGYPTIAN_HIEROGLYPH_M012A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM012b => EGYPTIAN_HIEROGLYPH_M012B,
-            EgyptianHieroglyphs::EgyptianHieroglyphM012c => EGYPTIAN_HIEROGLYPH_M012C,
-            EgyptianHieroglyphs::EgyptianHieroglyphM012d => EGYPTIAN_HIEROGLYPH_M012D,
-            EgyptianHieroglyphs::EgyptianHieroglyphM012e => EGYPTIAN_HIEROGLYPH_M012E,
-            EgyptianHieroglyphs::EgyptianHieroglyphM012f => EGYPTIAN_HIEROGLYPH_M012F,
-            EgyptianHieroglyphs::EgyptianHieroglyphM012g => EGYPTIAN_HIEROGLYPH_M012G,
-            EgyptianHieroglyphs::EgyptianHieroglyphM012h => EGYPTIAN_HIEROGLYPH_M012H,
-            EgyptianHieroglyphs::EgyptianHieroglyphM013 => EGYPTIAN_HIEROGLYPH_M013,
-            EgyptianHieroglyphs::EgyptianHieroglyphM014 => EGYPTIAN_HIEROGLYPH_M014,
-            EgyptianHieroglyphs::EgyptianHieroglyphM015 => EGYPTIAN_HIEROGLYPH_M015,
-            EgyptianHieroglyphs::EgyptianHieroglyphM015a => EGYPTIAN_HIEROGLYPH_M015A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM016 => EGYPTIAN_HIEROGLYPH_M016,
-            EgyptianHieroglyphs::EgyptianHieroglyphM016a => EGYPTIAN_HIEROGLYPH_M016A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM017 => EGYPTIAN_HIEROGLYPH_M017,
-            EgyptianHieroglyphs::EgyptianHieroglyphM017a => EGYPTIAN_HIEROGLYPH_M017A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM018 => EGYPTIAN_HIEROGLYPH_M018,
-            EgyptianHieroglyphs::EgyptianHieroglyphM019 => EGYPTIAN_HIEROGLYPH_M019,
-            EgyptianHieroglyphs::EgyptianHieroglyphM020 => EGYPTIAN_HIEROGLYPH_M020,
-            EgyptianHieroglyphs::EgyptianHieroglyphM021 => EGYPTIAN_HIEROGLYPH_M021,
-            EgyptianHieroglyphs::EgyptianHieroglyphM022 => EGYPTIAN_HIEROGLYPH_M022,
-            EgyptianHieroglyphs::EgyptianHieroglyphM022a => EGYPTIAN_HIEROGLYPH_M022A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM023 => EGYPTIAN_HIEROGLYPH_M023,
-            EgyptianHieroglyphs::EgyptianHieroglyphM024 => EGYPTIAN_HIEROGLYPH_M024,
-            EgyptianHieroglyphs::EgyptianHieroglyphM024a => EGYPTIAN_HIEROGLYPH_M024A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM025 => EGYPTIAN_HIEROGLYPH_M025,
-            EgyptianHieroglyphs::EgyptianHieroglyphM026 => EGYPTIAN_HIEROGLYPH_M026,
-            EgyptianHieroglyphs::EgyptianHieroglyphM027 => EGYPTIAN_HIEROGLYPH_M027,
-            EgyptianHieroglyphs::EgyptianHieroglyphM028 => EGYPTIAN_HIEROGLYPH_M028,
-            EgyptianHieroglyphs::EgyptianHieroglyphM028a => EGYPTIAN_HIEROGLYPH_M028A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM029 => EGYPTIAN_HIEROGLYPH_M029,
-            EgyptianHieroglyphs::EgyptianHieroglyphM030 => EGYPTIAN_HIEROGLYPH_M030,
-            EgyptianHieroglyphs::EgyptianHieroglyphM031 => EGYPTIAN_HIEROGLYPH_M031,
-            EgyptianHieroglyphs::EgyptianHieroglyphM031a => EGYPTIAN_HIEROGLYPH_M031A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM032 => EGYPTIAN_HIEROGLYPH_M032,
-            EgyptianHieroglyphs::EgyptianHieroglyphM033 => EGYPTIAN_HIEROGLYPH_M033,
-            EgyptianHieroglyphs::EgyptianHieroglyphM033a => EGYPTIAN_HIEROGLYPH_M033A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM033b => EGYPTIAN_HIEROGLYPH_M033B,
-            EgyptianHieroglyphs::EgyptianHieroglyphM034 => EGYPTIAN_HIEROGLYPH_M034,
-            EgyptianHieroglyphs::EgyptianHieroglyphM035 => EGYPTIAN_HIEROGLYPH_M035,
-            EgyptianHieroglyphs::EgyptianHieroglyphM036 => EGYPTIAN_HIEROGLYPH_M036,
-            EgyptianHieroglyphs::EgyptianHieroglyphM037 => EGYPTIAN_HIEROGLYPH_M037,
-            EgyptianHieroglyphs::EgyptianHieroglyphM038 => EGYPTIAN_HIEROGLYPH_M038,
-            EgyptianHieroglyphs::EgyptianHieroglyphM039 => EGYPTIAN_HIEROGLYPH_M039,
-            EgyptianHieroglyphs::EgyptianHieroglyphM040 => EGYPTIAN_HIEROGLYPH_M040,
-            EgyptianHieroglyphs::EgyptianHieroglyphM040a => EGYPTIAN_HIEROGLYPH_M040A,
-            EgyptianHieroglyphs::EgyptianHieroglyphM041 => EGYPTIAN_HIEROGLYPH_M041,
-            EgyptianHieroglyphs::EgyptianHieroglyphM042 => EGYPTIAN_HIEROGLYPH_M042,
-            EgyptianHieroglyphs::EgyptianHieroglyphM043 => EGYPTIAN_HIEROGLYPH_M043,
-            EgyptianHieroglyphs::EgyptianHieroglyphM044 => EGYPTIAN_HIEROGLYPH_M044,
-            EgyptianHieroglyphs::EgyptianHieroglyphN001 => EGYPTIAN_HIEROGLYPH_N001,
-            EgyptianHieroglyphs::EgyptianHieroglyphN002 => EGYPTIAN_HIEROGLYPH_N002,
-            EgyptianHieroglyphs::EgyptianHieroglyphN003 => EGYPTIAN_HIEROGLYPH_N003,
-            EgyptianHieroglyphs::EgyptianHieroglyphN004 => EGYPTIAN_HIEROGLYPH_N004,
-            EgyptianHieroglyphs::EgyptianHieroglyphN005 => EGYPTIAN_HIEROGLYPH_N005,
-            EgyptianHieroglyphs::EgyptianHieroglyphN006 => EGYPTIAN_HIEROGLYPH_N006,
-            EgyptianHieroglyphs::EgyptianHieroglyphN007 => EGYPTIAN_HIEROGLYPH_N007,
-            EgyptianHieroglyphs::EgyptianHieroglyphN008 => EGYPTIAN_HIEROGLYPH_N008,
-            EgyptianHieroglyphs::EgyptianHieroglyphN009 => EGYPTIAN_HIEROGLYPH_N009,
-            EgyptianHieroglyphs::EgyptianHieroglyphN010 => EGYPTIAN_HIEROGLYPH_N010,
-            EgyptianHieroglyphs::EgyptianHieroglyphN011 => EGYPTIAN_HIEROGLYPH_N011,
-            EgyptianHieroglyphs::EgyptianHieroglyphN012 => EGYPTIAN_HIEROGLYPH_N012,
-            EgyptianHieroglyphs::EgyptianHieroglyphN013 => EGYPTIAN_HIEROGLYPH_N013,
-            EgyptianHieroglyphs::EgyptianHieroglyphN014 => EGYPTIAN_HIEROGLYPH_N014,
-            EgyptianHieroglyphs::EgyptianHieroglyphN015 => EGYPTIAN_HIEROGLYPH_N015,
-            EgyptianHieroglyphs::EgyptianHieroglyphN016 => EGYPTIAN_HIEROGLYPH_N016,
-            EgyptianHieroglyphs::EgyptianHieroglyphN017 => EGYPTIAN_HIEROGLYPH_N017,
-            EgyptianHieroglyphs::EgyptianHieroglyphN018 => EGYPTIAN_HIEROGLYPH_N018,
-            EgyptianHieroglyphs::EgyptianHieroglyphN018a => EGYPTIAN_HIEROGLYPH_N018A,
-            EgyptianHieroglyphs::EgyptianHieroglyphN018b => EGYPTIAN_HIEROGLYPH_N018B,
-            EgyptianHieroglyphs::EgyptianHieroglyphN019 => EGYPTIAN_HIEROGLYPH_N019,
-            EgyptianHieroglyphs::EgyptianHieroglyphN020 => EGYPTIAN_HIEROGLYPH_N020,
-            EgyptianHieroglyphs::EgyptianHieroglyphN021 => EGYPTIAN_HIEROGLYPH_N021,
-            EgyptianHieroglyphs::EgyptianHieroglyphN022 => EGYPTIAN_HIEROGLYPH_N022,
-            EgyptianHieroglyphs::EgyptianHieroglyphN023 => EGYPTIAN_HIEROGLYPH_N023,
-            EgyptianHieroglyphs::EgyptianHieroglyphN024 => EGYPTIAN_HIEROGLYPH_N024,
-            EgyptianHieroglyphs::EgyptianHieroglyphN025 => EGYPTIAN_HIEROGLYPH_N025,
-            EgyptianHieroglyphs::EgyptianHieroglyphN025a => EGYPTIAN_HIEROGLYPH_N025A,
-            EgyptianHieroglyphs::EgyptianHieroglyphN026 => EGYPTIAN_HIEROGLYPH_N026,
-            EgyptianHieroglyphs::EgyptianHieroglyphN027 => EGYPTIAN_HIEROGLYPH_N027,
-            EgyptianHieroglyphs::EgyptianHieroglyphN028 => EGYPTIAN_HIEROGLYPH_N028,
-            EgyptianHieroglyphs::EgyptianHieroglyphN029 => EGYPTIAN_HIEROGLYPH_N029,
-            EgyptianHieroglyphs::EgyptianHieroglyphN030 => EGYPTIAN_HIEROGLYPH_N030,
-            EgyptianHieroglyphs::EgyptianHieroglyphN031 => EGYPTIAN_HIEROGLYPH_N031,
-            EgyptianHieroglyphs::EgyptianHieroglyphN032 => EGYPTIAN_HIEROGLYPH_N032,
-            EgyptianHieroglyphs::EgyptianHieroglyphN033 => EGYPTIAN_HIEROGLYPH_N033,
-            EgyptianHieroglyphs::EgyptianHieroglyphN033a => EGYPTIAN_HIEROGLYPH_N033A,
-            EgyptianHieroglyphs::EgyptianHieroglyphN034 => EGYPTIAN_HIEROGLYPH_N034,
-            EgyptianHieroglyphs::EgyptianHieroglyphN034a => EGYPTIAN_HIEROGLYPH_N034A,
-            EgyptianHieroglyphs::EgyptianHieroglyphN035 => EGYPTIAN_HIEROGLYPH_N035,
-            EgyptianHieroglyphs::EgyptianHieroglyphN035a => EGYPTIAN_HIEROGLYPH_N035A,
-            EgyptianHieroglyphs::EgyptianHieroglyphN036 => EGYPTIAN_HIEROGLYPH_N036,
-            EgyptianHieroglyphs::EgyptianHieroglyphN037 => EGYPTIAN_HIEROGLYPH_N037,
-            EgyptianHieroglyphs::EgyptianHieroglyphN037a => EGYPTIAN_HIEROGLYPH_N037A,
-            EgyptianHieroglyphs::EgyptianHieroglyphN038 => EGYPTIAN_HIEROGLYPH_N038,
-            EgyptianHieroglyphs::EgyptianHieroglyphN039 => EGYPTIAN_HIEROGLYPH_N039,
-            EgyptianHieroglyphs::EgyptianHieroglyphN040 => EGYPTIAN_HIEROGLYPH_N040,
-            EgyptianHieroglyphs::EgyptianHieroglyphN041 => EGYPTIAN_HIEROGLYPH_N041,
-            EgyptianHieroglyphs::EgyptianHieroglyphN042 => EGYPTIAN_HIEROGLYPH_N042,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl001 => EGYPTIAN_HIEROGLYPH_NL001,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl002 => EGYPTIAN_HIEROGLYPH_NL002,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl003 => EGYPTIAN_HIEROGLYPH_NL003,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl004 => EGYPTIAN_HIEROGLYPH_NL004,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl005 => EGYPTIAN_HIEROGLYPH_NL005,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl005a => EGYPTIAN_HIEROGLYPH_NL005A,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl006 => EGYPTIAN_HIEROGLYPH_NL006,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl007 => EGYPTIAN_HIEROGLYPH_NL007,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl008 => EGYPTIAN_HIEROGLYPH_NL008,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl009 => EGYPTIAN_HIEROGLYPH_NL009,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl010 => EGYPTIAN_HIEROGLYPH_NL010,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl011 => EGYPTIAN_HIEROGLYPH_NL011,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl012 => EGYPTIAN_HIEROGLYPH_NL012,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl013 => EGYPTIAN_HIEROGLYPH_NL013,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl014 => EGYPTIAN_HIEROGLYPH_NL014,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl015 => EGYPTIAN_HIEROGLYPH_NL015,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl016 => EGYPTIAN_HIEROGLYPH_NL016,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl017 => EGYPTIAN_HIEROGLYPH_NL017,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl017a => EGYPTIAN_HIEROGLYPH_NL017A,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl018 => EGYPTIAN_HIEROGLYPH_NL018,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl019 => EGYPTIAN_HIEROGLYPH_NL019,
-            EgyptianHieroglyphs::EgyptianHieroglyphNl020 => EGYPTIAN_HIEROGLYPH_NL020,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu001 => EGYPTIAN_HIEROGLYPH_NU001,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu002 => EGYPTIAN_HIEROGLYPH_NU002,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu003 => EGYPTIAN_HIEROGLYPH_NU003,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu004 => EGYPTIAN_HIEROGLYPH_NU004,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu005 => EGYPTIAN_HIEROGLYPH_NU005,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu006 => EGYPTIAN_HIEROGLYPH_NU006,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu007 => EGYPTIAN_HIEROGLYPH_NU007,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu008 => EGYPTIAN_HIEROGLYPH_NU008,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu009 => EGYPTIAN_HIEROGLYPH_NU009,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu010 => EGYPTIAN_HIEROGLYPH_NU010,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu010a => EGYPTIAN_HIEROGLYPH_NU010A,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu011 => EGYPTIAN_HIEROGLYPH_NU011,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu011a => EGYPTIAN_HIEROGLYPH_NU011A,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu012 => EGYPTIAN_HIEROGLYPH_NU012,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu013 => EGYPTIAN_HIEROGLYPH_NU013,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu014 => EGYPTIAN_HIEROGLYPH_NU014,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu015 => EGYPTIAN_HIEROGLYPH_NU015,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu016 => EGYPTIAN_HIEROGLYPH_NU016,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu017 => EGYPTIAN_HIEROGLYPH_NU017,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu018 => EGYPTIAN_HIEROGLYPH_NU018,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu018a => EGYPTIAN_HIEROGLYPH_NU018A,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu019 => EGYPTIAN_HIEROGLYPH_NU019,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu020 => EGYPTIAN_HIEROGLYPH_NU020,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu021 => EGYPTIAN_HIEROGLYPH_NU021,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu022 => EGYPTIAN_HIEROGLYPH_NU022,
-            EgyptianHieroglyphs::EgyptianHieroglyphNu022a => EGYPTIAN_HIEROGLYPH_NU022A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO001 => EGYPTIAN_HIEROGLYPH_O001,
-            EgyptianHieroglyphs::EgyptianHieroglyphO001a => EGYPTIAN_HIEROGLYPH_O001A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO002 => EGYPTIAN_HIEROGLYPH_O002,
-            EgyptianHieroglyphs::EgyptianHieroglyphO003 => EGYPTIAN_HIEROGLYPH_O003,
-            EgyptianHieroglyphs::EgyptianHieroglyphO004 => EGYPTIAN_HIEROGLYPH_O004,
-            EgyptianHieroglyphs::EgyptianHieroglyphO005 => EGYPTIAN_HIEROGLYPH_O005,
-            EgyptianHieroglyphs::EgyptianHieroglyphO005a => EGYPTIAN_HIEROGLYPH_O005A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO006 => EGYPTIAN_HIEROGLYPH_O006,
-            EgyptianHieroglyphs::EgyptianHieroglyphO006a => EGYPTIAN_HIEROGLYPH_O006A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO006b => EGYPTIAN_HIEROGLYPH_O006B,
-            EgyptianHieroglyphs::EgyptianHieroglyphO006c => EGYPTIAN_HIEROGLYPH_O006C,
-            EgyptianHieroglyphs::EgyptianHieroglyphO006d => EGYPTIAN_HIEROGLYPH_O006D,
-            EgyptianHieroglyphs::EgyptianHieroglyphO006e => EGYPTIAN_HIEROGLYPH_O006E,
-            EgyptianHieroglyphs::EgyptianHieroglyphO006f => EGYPTIAN_HIEROGLYPH_O006F,
-            EgyptianHieroglyphs::EgyptianHieroglyphO007 => EGYPTIAN_HIEROGLYPH_O007,
-            EgyptianHieroglyphs::EgyptianHieroglyphO008 => EGYPTIAN_HIEROGLYPH_O008,
-            EgyptianHieroglyphs::EgyptianHieroglyphO009 => EGYPTIAN_HIEROGLYPH_O009,
-            EgyptianHieroglyphs::EgyptianHieroglyphO010 => EGYPTIAN_HIEROGLYPH_O010,
-            EgyptianHieroglyphs::EgyptianHieroglyphO010a => EGYPTIAN_HIEROGLYPH_O010A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO010b => EGYPTIAN_HIEROGLYPH_O010B,
-            EgyptianHieroglyphs::EgyptianHieroglyphO010c => EGYPTIAN_HIEROGLYPH_O010C,
-            EgyptianHieroglyphs::EgyptianHieroglyphO011 => EGYPTIAN_HIEROGLYPH_O011,
-            EgyptianHieroglyphs::EgyptianHieroglyphO012 => EGYPTIAN_HIEROGLYPH_O012,
-            EgyptianHieroglyphs::EgyptianHieroglyphO013 => EGYPTIAN_HIEROGLYPH_O013,
-            EgyptianHieroglyphs::EgyptianHieroglyphO014 => EGYPTIAN_HIEROGLYPH_O014,
-            EgyptianHieroglyphs::EgyptianHieroglyphO015 => EGYPTIAN_HIEROGLYPH_O015,
-            EgyptianHieroglyphs::EgyptianHieroglyphO016 => EGYPTIAN_HIEROGLYPH_O016,
-            EgyptianHieroglyphs::EgyptianHieroglyphO017 => EGYPTIAN_HIEROGLYPH_O017,
-            EgyptianHieroglyphs::EgyptianHieroglyphO018 => EGYPTIAN_HIEROGLYPH_O018,
-            EgyptianHieroglyphs::EgyptianHieroglyphO019 => EGYPTIAN_HIEROGLYPH_O019,
-            EgyptianHieroglyphs::EgyptianHieroglyphO019a => EGYPTIAN_HIEROGLYPH_O019A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO020 => EGYPTIAN_HIEROGLYPH_O020,
-            EgyptianHieroglyphs::EgyptianHieroglyphO020a => EGYPTIAN_HIEROGLYPH_O020A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO021 => EGYPTIAN_HIEROGLYPH_O021,
-            EgyptianHieroglyphs::EgyptianHieroglyphO022 => EGYPTIAN_HIEROGLYPH_O022,
-            EgyptianHieroglyphs::EgyptianHieroglyphO023 => EGYPTIAN_HIEROGLYPH_O023,
-            EgyptianHieroglyphs::EgyptianHieroglyphO024 => EGYPTIAN_HIEROGLYPH_O024,
-            EgyptianHieroglyphs::EgyptianHieroglyphO024a => EGYPTIAN_HIEROGLYPH_O024A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO025 => EGYPTIAN_HIEROGLYPH_O025,
-            EgyptianHieroglyphs::EgyptianHieroglyphO025a => EGYPTIAN_HIEROGLYPH_O025A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO026 => EGYPTIAN_HIEROGLYPH_O026,
-            EgyptianHieroglyphs::EgyptianHieroglyphO027 => EGYPTIAN_HIEROGLYPH_O027,
-            EgyptianHieroglyphs::EgyptianHieroglyphO028 => EGYPTIAN_HIEROGLYPH_O028,
-            EgyptianHieroglyphs::EgyptianHieroglyphO029 => EGYPTIAN_HIEROGLYPH_O029,
-            EgyptianHieroglyphs::EgyptianHieroglyphO029a => EGYPTIAN_HIEROGLYPH_O029A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO030 => EGYPTIAN_HIEROGLYPH_O030,
-            EgyptianHieroglyphs::EgyptianHieroglyphO030a => EGYPTIAN_HIEROGLYPH_O030A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO031 => EGYPTIAN_HIEROGLYPH_O031,
-            EgyptianHieroglyphs::EgyptianHieroglyphO032 => EGYPTIAN_HIEROGLYPH_O032,
-            EgyptianHieroglyphs::EgyptianHieroglyphO033 => EGYPTIAN_HIEROGLYPH_O033,
-            EgyptianHieroglyphs::EgyptianHieroglyphO033a => EGYPTIAN_HIEROGLYPH_O033A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO034 => EGYPTIAN_HIEROGLYPH_O034,
-            EgyptianHieroglyphs::EgyptianHieroglyphO035 => EGYPTIAN_HIEROGLYPH_O035,
-            EgyptianHieroglyphs::EgyptianHieroglyphO036 => EGYPTIAN_HIEROGLYPH_O036,
-            EgyptianHieroglyphs::EgyptianHieroglyphO036a => EGYPTIAN_HIEROGLYPH_O036A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO036b => EGYPTIAN_HIEROGLYPH_O036B,
-            EgyptianHieroglyphs::EgyptianHieroglyphO036c => EGYPTIAN_HIEROGLYPH_O036C,
-            EgyptianHieroglyphs::EgyptianHieroglyphO036d => EGYPTIAN_HIEROGLYPH_O036D,
-            EgyptianHieroglyphs::EgyptianHieroglyphO037 => EGYPTIAN_HIEROGLYPH_O037,
-            EgyptianHieroglyphs::EgyptianHieroglyphO038 => EGYPTIAN_HIEROGLYPH_O038,
-            EgyptianHieroglyphs::EgyptianHieroglyphO039 => EGYPTIAN_HIEROGLYPH_O039,
-            EgyptianHieroglyphs::EgyptianHieroglyphO040 => EGYPTIAN_HIEROGLYPH_O040,
-            EgyptianHieroglyphs::EgyptianHieroglyphO041 => EGYPTIAN_HIEROGLYPH_O041,
-            EgyptianHieroglyphs::EgyptianHieroglyphO042 => EGYPTIAN_HIEROGLYPH_O042,
-            EgyptianHieroglyphs::EgyptianHieroglyphO043 => EGYPTIAN_HIEROGLYPH_O043,
-            EgyptianHieroglyphs::EgyptianHieroglyphO044 => EGYPTIAN_HIEROGLYPH_O044,
-            EgyptianHieroglyphs::EgyptianHieroglyphO045 => EGYPTIAN_HIEROGLYPH_O045,
-            EgyptianHieroglyphs::EgyptianHieroglyphO046 => EGYPTIAN_HIEROGLYPH_O046,
-            EgyptianHieroglyphs::EgyptianHieroglyphO047 => EGYPTIAN_HIEROGLYPH_O047,
-            EgyptianHieroglyphs::EgyptianHieroglyphO048 => EGYPTIAN_HIEROGLYPH_O048,
-            EgyptianHieroglyphs::EgyptianHieroglyphO049 => EGYPTIAN_HIEROGLYPH_O049,
-            EgyptianHieroglyphs::EgyptianHieroglyphO050 => EGYPTIAN_HIEROGLYPH_O050,
-            EgyptianHieroglyphs::EgyptianHieroglyphO050a => EGYPTIAN_HIEROGLYPH_O050A,
-            EgyptianHieroglyphs::EgyptianHieroglyphO050b => EGYPTIAN_HIEROGLYPH_O050B,
-            EgyptianHieroglyphs::EgyptianHieroglyphO051 => EGYPTIAN_HIEROGLYPH_O051,
-            EgyptianHieroglyphs::EgyptianHieroglyphP001 => EGYPTIAN_HIEROGLYPH_P001,
-            EgyptianHieroglyphs::EgyptianHieroglyphP001a => EGYPTIAN_HIEROGLYPH_P001A,
-            EgyptianHieroglyphs::EgyptianHieroglyphP002 => EGYPTIAN_HIEROGLYPH_P002,
-            EgyptianHieroglyphs::EgyptianHieroglyphP003 => EGYPTIAN_HIEROGLYPH_P003,
-            EgyptianHieroglyphs::EgyptianHieroglyphP003a => EGYPTIAN_HIEROGLYPH_P003A,
-            EgyptianHieroglyphs::EgyptianHieroglyphP004 => EGYPTIAN_HIEROGLYPH_P004,
-            EgyptianHieroglyphs::EgyptianHieroglyphP005 => EGYPTIAN_HIEROGLYPH_P005,
-            EgyptianHieroglyphs::EgyptianHieroglyphP006 => EGYPTIAN_HIEROGLYPH_P006,
-            EgyptianHieroglyphs::EgyptianHieroglyphP007 => EGYPTIAN_HIEROGLYPH_P007,
-            EgyptianHieroglyphs::EgyptianHieroglyphP008 => EGYPTIAN_HIEROGLYPH_P008,
-            EgyptianHieroglyphs::EgyptianHieroglyphP009 => EGYPTIAN_HIEROGLYPH_P009,
-            EgyptianHieroglyphs::EgyptianHieroglyphP010 => EGYPTIAN_HIEROGLYPH_P010,
-            EgyptianHieroglyphs::EgyptianHieroglyphP011 => EGYPTIAN_HIEROGLYPH_P011,
-            EgyptianHieroglyphs::EgyptianHieroglyphQ001 => EGYPTIAN_HIEROGLYPH_Q001,
-            EgyptianHieroglyphs::EgyptianHieroglyphQ002 => EGYPTIAN_HIEROGLYPH_Q002,
-            EgyptianHieroglyphs::EgyptianHieroglyphQ003 => EGYPTIAN_HIEROGLYPH_Q003,
-            EgyptianHieroglyphs::EgyptianHieroglyphQ004 => EGYPTIAN_HIEROGLYPH_Q004,
-            EgyptianHieroglyphs::EgyptianHieroglyphQ005 => EGYPTIAN_HIEROGLYPH_Q005,
-            EgyptianHieroglyphs::EgyptianHieroglyphQ006 => EGYPTIAN_HIEROGLYPH_Q006,
-            EgyptianHieroglyphs::EgyptianHieroglyphQ007 => EGYPTIAN_HIEROGLYPH_Q007,
-            EgyptianHieroglyphs::EgyptianHieroglyphR001 => EGYPTIAN_HIEROGLYPH_R001,
-            EgyptianHieroglyphs::EgyptianHieroglyphR002 => EGYPTIAN_HIEROGLYPH_R002,
-            EgyptianHieroglyphs::EgyptianHieroglyphR002a => EGYPTIAN_HIEROGLYPH_R002A,
-            EgyptianHieroglyphs::EgyptianHieroglyphR003 => EGYPTIAN_HIEROGLYPH_R003,
-            EgyptianHieroglyphs::EgyptianHieroglyphR003a => EGYPTIAN_HIEROGLYPH_R003A,
-            EgyptianHieroglyphs::EgyptianHieroglyphR003b => EGYPTIAN_HIEROGLYPH_R003B,
-            EgyptianHieroglyphs::EgyptianHieroglyphR004 => EGYPTIAN_HIEROGLYPH_R004,
-            EgyptianHieroglyphs::EgyptianHieroglyphR005 => EGYPTIAN_HIEROGLYPH_R005,
-            EgyptianHieroglyphs::EgyptianHieroglyphR006 => EGYPTIAN_HIEROGLYPH_R006,
-            EgyptianHieroglyphs::EgyptianHieroglyphR007 => EGYPTIAN_HIEROGLYPH_R007,
-            EgyptianHieroglyphs::EgyptianHieroglyphR008 => EGYPTIAN_HIEROGLYPH_R008,
-            EgyptianHieroglyphs::EgyptianHieroglyphR009 => EGYPTIAN_HIEROGLYPH_R009,
-            EgyptianHieroglyphs::EgyptianHieroglyphR010 => EGYPTIAN_HIEROGLYPH_R010,
-            EgyptianHieroglyphs::EgyptianHieroglyphR010a => EGYPTIAN_HIEROGLYPH_R010A,
-            EgyptianHieroglyphs::EgyptianHieroglyphR011 => EGYPTIAN_HIEROGLYPH_R011,
-            EgyptianHieroglyphs::EgyptianHieroglyphR012 => EGYPTIAN_HIEROGLYPH_R012,
-            EgyptianHieroglyphs::EgyptianHieroglyphR013 => EGYPTIAN_HIEROGLYPH_R013,
-            EgyptianHieroglyphs::EgyptianHieroglyphR014 => EGYPTIAN_HIEROGLYPH_R014,
-            EgyptianHieroglyphs::EgyptianHieroglyphR015 => EGYPTIAN_HIEROGLYPH_R015,
-            EgyptianHieroglyphs::EgyptianHieroglyphR016 => EGYPTIAN_HIEROGLYPH_R016,
-            EgyptianHieroglyphs::EgyptianHieroglyphR016a => EGYPTIAN_HIEROGLYPH_R016A,
-            EgyptianHieroglyphs::EgyptianHieroglyphR017 => EGYPTIAN_HIEROGLYPH_R017,
-            EgyptianHieroglyphs::EgyptianHieroglyphR018 => EGYPTIAN_HIEROGLYPH_R018,
-            EgyptianHieroglyphs::EgyptianHieroglyphR019 => EGYPTIAN_HIEROGLYPH_R019,
-            EgyptianHieroglyphs::EgyptianHieroglyphR020 => EGYPTIAN_HIEROGLYPH_R020,
-            EgyptianHieroglyphs::EgyptianHieroglyphR021 => EGYPTIAN_HIEROGLYPH_R021,
-            EgyptianHieroglyphs::EgyptianHieroglyphR022 => EGYPTIAN_HIEROGLYPH_R022,
-            EgyptianHieroglyphs::EgyptianHieroglyphR023 => EGYPTIAN_HIEROGLYPH_R023,
-            EgyptianHieroglyphs::EgyptianHieroglyphR024 => EGYPTIAN_HIEROGLYPH_R024,
-            EgyptianHieroglyphs::EgyptianHieroglyphR025 => EGYPTIAN_HIEROGLYPH_R025,
-            EgyptianHieroglyphs::EgyptianHieroglyphR026 => EGYPTIAN_HIEROGLYPH_R026,
-            EgyptianHieroglyphs::EgyptianHieroglyphR027 => EGYPTIAN_HIEROGLYPH_R027,
-            EgyptianHieroglyphs::EgyptianHieroglyphR028 => EGYPTIAN_HIEROGLYPH_R028,
-            EgyptianHieroglyphs::EgyptianHieroglyphR029 => EGYPTIAN_HIEROGLYPH_R029,
-            EgyptianHieroglyphs::EgyptianHieroglyphS001 => EGYPTIAN_HIEROGLYPH_S001,
-            EgyptianHieroglyphs::EgyptianHieroglyphS002 => EGYPTIAN_HIEROGLYPH_S002,
-            EgyptianHieroglyphs::EgyptianHieroglyphS002a => EGYPTIAN_HIEROGLYPH_S002A,
-            EgyptianHieroglyphs::EgyptianHieroglyphS003 => EGYPTIAN_HIEROGLYPH_S003,
-            EgyptianHieroglyphs::EgyptianHieroglyphS004 => EGYPTIAN_HIEROGLYPH_S004,
-            EgyptianHieroglyphs::EgyptianHieroglyphS005 => EGYPTIAN_HIEROGLYPH_S005,
-            EgyptianHieroglyphs::EgyptianHieroglyphS006 => EGYPTIAN_HIEROGLYPH_S006,
-            EgyptianHieroglyphs::EgyptianHieroglyphS006a => EGYPTIAN_HIEROGLYPH_S006A,
-            EgyptianHieroglyphs::EgyptianHieroglyphS007 => EGYPTIAN_HIEROGLYPH_S007,
-            EgyptianHieroglyphs::EgyptianHieroglyphS008 => EGYPTIAN_HIEROGLYPH_S008,
-            EgyptianHieroglyphs::EgyptianHieroglyphS009 => EGYPTIAN_HIEROGLYPH_S009,
-            EgyptianHieroglyphs::EgyptianHieroglyphS010 => EGYPTIAN_HIEROGLYPH_S010,
-            EgyptianHieroglyphs::EgyptianHieroglyphS011 => EGYPTIAN_HIEROGLYPH_S011,
-            EgyptianHieroglyphs::EgyptianHieroglyphS012 => EGYPTIAN_HIEROGLYPH_S012,
-            EgyptianHieroglyphs::EgyptianHieroglyphS013 => EGYPTIAN_HIEROGLYPH_S013,
-            EgyptianHieroglyphs::EgyptianHieroglyphS014 => EGYPTIAN_HIEROGLYPH_S014,
-            EgyptianHieroglyphs::EgyptianHieroglyphS014a => EGYPTIAN_HIEROGLYPH_S014A,
-            EgyptianHieroglyphs::EgyptianHieroglyphS014b => EGYPTIAN_HIEROGLYPH_S014B,
-            EgyptianHieroglyphs::EgyptianHieroglyphS015 => EGYPTIAN_HIEROGLYPH_S015,
-            EgyptianHieroglyphs::EgyptianHieroglyphS016 => EGYPTIAN_HIEROGLYPH_S016,
-            EgyptianHieroglyphs::EgyptianHieroglyphS017 => EGYPTIAN_HIEROGLYPH_S017,
-            EgyptianHieroglyphs::EgyptianHieroglyphS017a => EGYPTIAN_HIEROGLYPH_S017A,
-            EgyptianHieroglyphs::EgyptianHieroglyphS018 => EGYPTIAN_HIEROGLYPH_S018,
-            EgyptianHieroglyphs::EgyptianHieroglyphS019 => EGYPTIAN_HIEROGLYPH_S019,
-            EgyptianHieroglyphs::EgyptianHieroglyphS020 => EGYPTIAN_HIEROGLYPH_S020,
-            EgyptianHieroglyphs::EgyptianHieroglyphS021 => EGYPTIAN_HIEROGLYPH_S021,
-            EgyptianHieroglyphs::EgyptianHieroglyphS022 => EGYPTIAN_HIEROGLYPH_S022,
-            EgyptianHieroglyphs::EgyptianHieroglyphS023 => EGYPTIAN_HIEROGLYPH_S023,
-            EgyptianHieroglyphs::EgyptianHieroglyphS024 => EGYPTIAN_HIEROGLYPH_S024,
-            EgyptianHieroglyphs::EgyptianHieroglyphS025 => EGYPTIAN_HIEROGLYPH_S025,
-            EgyptianHieroglyphs::EgyptianHieroglyphS026 => EGYPTIAN_HIEROGLYPH_S026,
-            EgyptianHieroglyphs::EgyptianHieroglyphS026a => EGYPTIAN_HIEROGLYPH_S026A,
-            EgyptianHieroglyphs::EgyptianHieroglyphS026b => EGYPTIAN_HIEROGLYPH_S026B,
-            EgyptianHieroglyphs::EgyptianHieroglyphS027 => EGYPTIAN_HIEROGLYPH_S027,
-            EgyptianHieroglyphs::EgyptianHieroglyphS028 => EGYPTIAN_HIEROGLYPH_S028,
-            EgyptianHieroglyphs::EgyptianHieroglyphS029 => EGYPTIAN_HIEROGLYPH_S029,
-            EgyptianHieroglyphs::EgyptianHieroglyphS030 => EGYPTIAN_HIEROGLYPH_S030,
-            EgyptianHieroglyphs::EgyptianHieroglyphS031 => EGYPTIAN_HIEROGLYPH_S031,
-            EgyptianHieroglyphs::EgyptianHieroglyphS032 => EGYPTIAN_HIEROGLYPH_S032,
-            EgyptianHieroglyphs::EgyptianHieroglyphS033 => EGYPTIAN_HIEROGLYPH_S033,
-            EgyptianHieroglyphs::EgyptianHieroglyphS034 => EGYPTIAN_HIEROGLYPH_S034,
-            EgyptianHieroglyphs::EgyptianHieroglyphS035 => EGYPTIAN_HIEROGLYPH_S035,
-            EgyptianHieroglyphs::EgyptianHieroglyphS035a => EGYPTIAN_HIEROGLYPH_S035A,
-            EgyptianHieroglyphs::EgyptianHieroglyphS036 => EGYPTIAN_HIEROGLYPH_S036,
-            EgyptianHieroglyphs::EgyptianHieroglyphS037 => EGYPTIAN_HIEROGLYPH_S037,
-            EgyptianHieroglyphs::EgyptianHieroglyphS038 => EGYPTIAN_HIEROGLYPH_S038,
-            EgyptianHieroglyphs::EgyptianHieroglyphS039 => EGYPTIAN_HIEROGLYPH_S039,
-            EgyptianHieroglyphs::EgyptianHieroglyphS040 => EGYPTIAN_HIEROGLYPH_S040,
-            EgyptianHieroglyphs::EgyptianHieroglyphS041 => EGYPTIAN_HIEROGLYPH_S041,
-            EgyptianHieroglyphs::EgyptianHieroglyphS042 => EGYPTIAN_HIEROGLYPH_S042,
-            EgyptianHieroglyphs::EgyptianHieroglyphS043 => EGYPTIAN_HIEROGLYPH_S043,
-            EgyptianHieroglyphs::EgyptianHieroglyphS044 => EGYPTIAN_HIEROGLYPH_S044,
-            EgyptianHieroglyphs::EgyptianHieroglyphS045 => EGYPTIAN_HIEROGLYPH_S045,
-            EgyptianHieroglyphs::EgyptianHieroglyphS046 => EGYPTIAN_HIEROGLYPH_S046,
-            EgyptianHieroglyphs::EgyptianHieroglyphT001 => EGYPTIAN_HIEROGLYPH_T001,
-            EgyptianHieroglyphs::EgyptianHieroglyphT002 => EGYPTIAN_HIEROGLYPH_T002,
-            EgyptianHieroglyphs::EgyptianHieroglyphT003 => EGYPTIAN_HIEROGLYPH_T003,
-            EgyptianHieroglyphs::EgyptianHieroglyphT003a => EGYPTIAN_HIEROGLYPH_T003A,
-            EgyptianHieroglyphs::EgyptianHieroglyphT004 => EGYPTIAN_HIEROGLYPH_T004,
-            EgyptianHieroglyphs::EgyptianHieroglyphT005 => EGYPTIAN_HIEROGLYPH_T005,
-            EgyptianHieroglyphs::EgyptianHieroglyphT006 => EGYPTIAN_HIEROGLYPH_T006,
-            EgyptianHieroglyphs::EgyptianHieroglyphT007 => EGYPTIAN_HIEROGLYPH_T007,
-            EgyptianHieroglyphs::EgyptianHieroglyphT007a => EGYPTIAN_HIEROGLYPH_T007A,
-            EgyptianHieroglyphs::EgyptianHieroglyphT008 => EGYPTIAN_HIEROGLYPH_T008,
-            EgyptianHieroglyphs::EgyptianHieroglyphT008a => EGYPTIAN_HIEROGLYPH_T008A,
-            EgyptianHieroglyphs::EgyptianHieroglyphT009 => EGYPTIAN_HIEROGLYPH_T009,
-            EgyptianHieroglyphs::EgyptianHieroglyphT009a => EGYPTIAN_HIEROGLYPH_T009A,
-            EgyptianHieroglyphs::EgyptianHieroglyphT010 => EGYPTIAN_HIEROGLYPH_T010,
-            EgyptianHieroglyphs::EgyptianHieroglyphT011 => EGYPTIAN_HIEROGLYPH_T011,
-            EgyptianHieroglyphs::EgyptianHieroglyphT011a => EGYPTIAN_HIEROGLYPH_T011A,
-            EgyptianHieroglyphs::EgyptianHieroglyphT012 => EGYPTIAN_HIEROGLYPH_T012,
-            EgyptianHieroglyphs::EgyptianHieroglyphT013 => EGYPTIAN_HIEROGLYPH_T013,
-            EgyptianHieroglyphs::EgyptianHieroglyphT014 => EGYPTIAN_HIEROGLYPH_T014,
-            EgyptianHieroglyphs::EgyptianHieroglyphT015 => EGYPTIAN_HIEROGLYPH_T015,
-            EgyptianHieroglyphs::EgyptianHieroglyphT016 => EGYPTIAN_HIEROGLYPH_T016,
-            EgyptianHieroglyphs::EgyptianHieroglyphT016a => EGYPTIAN_HIEROGLYPH_T016A,
-            EgyptianHieroglyphs::EgyptianHieroglyphT017 => EGYPTIAN_HIEROGLYPH_T017,
-            EgyptianHieroglyphs::EgyptianHieroglyphT018 => EGYPTIAN_HIEROGLYPH_T018,
-            EgyptianHieroglyphs::EgyptianHieroglyphT019 => EGYPTIAN_HIEROGLYPH_T019,
-            EgyptianHieroglyphs::EgyptianHieroglyphT020 => EGYPTIAN_HIEROGLYPH_T020,
-            EgyptianHieroglyphs::EgyptianHieroglyphT021 => EGYPTIAN_HIEROGLYPH_T021,
-            EgyptianHieroglyphs::EgyptianHieroglyphT022 => EGYPTIAN_HIEROGLYPH_T022,
-            EgyptianHieroglyphs::EgyptianHieroglyphT023 => EGYPTIAN_HIEROGLYPH_T023,
-            EgyptianHieroglyphs::EgyptianHieroglyphT024 => EGYPTIAN_HIEROGLYPH_T024,
-            EgyptianHieroglyphs::EgyptianHieroglyphT025 => EGYPTIAN_HIEROGLYPH_T025,
-            EgyptianHieroglyphs::EgyptianHieroglyphT026 => EGYPTIAN_HIEROGLYPH_T026,
-            EgyptianHieroglyphs::EgyptianHieroglyphT027 => EGYPTIAN_HIEROGLYPH_T027,
-            EgyptianHieroglyphs::EgyptianHieroglyphT028 => EGYPTIAN_HIEROGLYPH_T028,
-            EgyptianHieroglyphs::EgyptianHieroglyphT029 => EGYPTIAN_HIEROGLYPH_T029,
-            EgyptianHieroglyphs::EgyptianHieroglyphT030 => EGYPTIAN_HIEROGLYPH_T030,
-            EgyptianHieroglyphs::EgyptianHieroglyphT031 => EGYPTIAN_HIEROGLYPH_T031,
-            EgyptianHieroglyphs::EgyptianHieroglyphT032 => EGYPTIAN_HIEROGLYPH_T032,
-            EgyptianHieroglyphs::EgyptianHieroglyphT032a => EGYPTIAN_HIEROGLYPH_T032A,
-            EgyptianHieroglyphs::EgyptianHieroglyphT033 => EGYPTIAN_HIEROGLYPH_T033,
-            EgyptianHieroglyphs::EgyptianHieroglyphT033a => EGYPTIAN_HIEROGLYPH_T033A,
-            EgyptianHieroglyphs::EgyptianHieroglyphT034 => EGYPTIAN_HIEROGLYPH_T034,
-            EgyptianHieroglyphs::EgyptianHieroglyphT035 => EGYPTIAN_HIEROGLYPH_T035,
-            EgyptianHieroglyphs::EgyptianHieroglyphT036 => EGYPTIAN_HIEROGLYPH_T036,
-            EgyptianHieroglyphs::EgyptianHieroglyphU001 => EGYPTIAN_HIEROGLYPH_U001,
-            EgyptianHieroglyphs::EgyptianHieroglyphU002 => EGYPTIAN_HIEROGLYPH_U002,
-            EgyptianHieroglyphs::EgyptianHieroglyphU003 => EGYPTIAN_HIEROGLYPH_U003,
-            EgyptianHieroglyphs::EgyptianHieroglyphU004 => EGYPTIAN_HIEROGLYPH_U004,
-            EgyptianHieroglyphs::EgyptianHieroglyphU005 => EGYPTIAN_HIEROGLYPH_U005,
-            EgyptianHieroglyphs::EgyptianHieroglyphU006 => EGYPTIAN_HIEROGLYPH_U006,
-            EgyptianHieroglyphs::EgyptianHieroglyphU006a => EGYPTIAN_HIEROGLYPH_U006A,
-            EgyptianHieroglyphs::EgyptianHieroglyphU006b => EGYPTIAN_HIEROGLYPH_U006B,
-            EgyptianHieroglyphs::EgyptianHieroglyphU007 => EGYPTIAN_HIEROGLYPH_U007,
-            EgyptianHieroglyphs::EgyptianHieroglyphU008 => EGYPTIAN_HIEROGLYPH_U008,
-            EgyptianHieroglyphs::EgyptianHieroglyphU009 => EGYPTIAN_HIEROGLYPH_U009,
-            EgyptianHieroglyphs::EgyptianHieroglyphU010 => EGYPTIAN_HIEROGLYPH_U010,
-            EgyptianHieroglyphs::EgyptianHieroglyphU011 => EGYPTIAN_HIEROGLYPH_U011,
-            EgyptianHieroglyphs::EgyptianHieroglyphU012 => EGYPTIAN_HIEROGLYPH_U012,
-            EgyptianHieroglyphs::EgyptianHieroglyphU013 => EGYPTIAN_HIEROGLYPH_U013,
-            EgyptianHieroglyphs::EgyptianHieroglyphU014 => EGYPTIAN_HIEROGLYPH_U014,
-            EgyptianHieroglyphs::EgyptianHieroglyphU015 => EGYPTIAN_HIEROGLYPH_U015,
-            EgyptianHieroglyphs::EgyptianHieroglyphU016 => EGYPTIAN_HIEROGLYPH_U016,
-            EgyptianHieroglyphs::EgyptianHieroglyphU017 => EGYPTIAN_HIEROGLYPH_U017,
-            EgyptianHieroglyphs::EgyptianHieroglyphU018 => EGYPTIAN_HIEROGLYPH_U018,
-            EgyptianHieroglyphs::EgyptianHieroglyphU019 => EGYPTIAN_HIEROGLYPH_U019,
-            EgyptianHieroglyphs::EgyptianHieroglyphU020 => EGYPTIAN_HIEROGLYPH_U020,
-            EgyptianHieroglyphs::EgyptianHieroglyphU021 => EGYPTIAN_HIEROGLYPH_U021,
-            EgyptianHieroglyphs::EgyptianHieroglyphU022 => EGYPTIAN_HIEROGLYPH_U022,
-            EgyptianHieroglyphs::EgyptianHieroglyphU023 => EGYPTIAN_HIEROGLYPH_U023,
-            EgyptianHieroglyphs::EgyptianHieroglyphU023a => EGYPTIAN_HIEROGLYPH_U023A,
-            EgyptianHieroglyphs::EgyptianHieroglyphU024 => EGYPTIAN_HIEROGLYPH_U024,
-            EgyptianHieroglyphs::EgyptianHieroglyphU025 => EGYPTIAN_HIEROGLYPH_U025,
-            EgyptianHieroglyphs::EgyptianHieroglyphU026 => EGYPTIAN_HIEROGLYPH_U026,
-            EgyptianHieroglyphs::EgyptianHieroglyphU027 => EGYPTIAN_HIEROGLYPH_U027,
-            EgyptianHieroglyphs::EgyptianHieroglyphU028 => EGYPTIAN_HIEROGLYPH_U028,
-            EgyptianHieroglyphs::EgyptianHieroglyphU029 => EGYPTIAN_HIEROGLYPH_U029,
-            EgyptianHieroglyphs::EgyptianHieroglyphU029a => EGYPTIAN_HIEROGLYPH_U029A,
-            EgyptianHieroglyphs::EgyptianHieroglyphU030 => EGYPTIAN_HIEROGLYPH_U030,
-            EgyptianHieroglyphs::EgyptianHieroglyphU031 => EGYPTIAN_HIEROGLYPH_U031,
-            EgyptianHieroglyphs::EgyptianHieroglyphU032 => EGYPTIAN_HIEROGLYPH_U032,
-            EgyptianHieroglyphs::EgyptianHieroglyphU032a => EGYPTIAN_HIEROGLYPH_U032A,
-            EgyptianHieroglyphs::EgyptianHieroglyphU033 => EGYPTIAN_HIEROGLYPH_U033,
-            EgyptianHieroglyphs::EgyptianHieroglyphU034 => EGYPTIAN_HIEROGLYPH_U034,
-            EgyptianHieroglyphs::EgyptianHieroglyphU035 => EGYPTIAN_HIEROGLYPH_U035,
-            EgyptianHieroglyphs::EgyptianHieroglyphU036 => EGYPTIAN_HIEROGLYPH_U036,
-            EgyptianHieroglyphs::EgyptianHieroglyphU037 => EGYPTIAN_HIEROGLYPH_U037,
-            EgyptianHieroglyphs::EgyptianHieroglyphU038 => EGYPTIAN_HIEROGLYPH_U038,
-            EgyptianHieroglyphs::EgyptianHieroglyphU039 => EGYPTIAN_HIEROGLYPH_U039,
-            EgyptianHieroglyphs::EgyptianHieroglyphU040 => EGYPTIAN_HIEROGLYPH_U040,
-            EgyptianHieroglyphs::EgyptianHieroglyphU041 => EGYPTIAN_HIEROGLYPH_U041,
-            EgyptianHieroglyphs::EgyptianHieroglyphU042 => EGYPTIAN_HIEROGLYPH_U042,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001 => EGYPTIAN_HIEROGLYPH_V001,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001a => EGYPTIAN_HIEROGLYPH_V001A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001b => EGYPTIAN_HIEROGLYPH_V001B,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001c => EGYPTIAN_HIEROGLYPH_V001C,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001d => EGYPTIAN_HIEROGLYPH_V001D,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001e => EGYPTIAN_HIEROGLYPH_V001E,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001f => EGYPTIAN_HIEROGLYPH_V001F,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001g => EGYPTIAN_HIEROGLYPH_V001G,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001h => EGYPTIAN_HIEROGLYPH_V001H,
-            EgyptianHieroglyphs::EgyptianHieroglyphV001i => EGYPTIAN_HIEROGLYPH_V001I,
-            EgyptianHieroglyphs::EgyptianHieroglyphV002 => EGYPTIAN_HIEROGLYPH_V002,
-            EgyptianHieroglyphs::EgyptianHieroglyphV002a => EGYPTIAN_HIEROGLYPH_V002A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV003 => EGYPTIAN_HIEROGLYPH_V003,
-            EgyptianHieroglyphs::EgyptianHieroglyphV004 => EGYPTIAN_HIEROGLYPH_V004,
-            EgyptianHieroglyphs::EgyptianHieroglyphV005 => EGYPTIAN_HIEROGLYPH_V005,
-            EgyptianHieroglyphs::EgyptianHieroglyphV006 => EGYPTIAN_HIEROGLYPH_V006,
-            EgyptianHieroglyphs::EgyptianHieroglyphV007 => EGYPTIAN_HIEROGLYPH_V007,
-            EgyptianHieroglyphs::EgyptianHieroglyphV007a => EGYPTIAN_HIEROGLYPH_V007A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV007b => EGYPTIAN_HIEROGLYPH_V007B,
-            EgyptianHieroglyphs::EgyptianHieroglyphV008 => EGYPTIAN_HIEROGLYPH_V008,
-            EgyptianHieroglyphs::EgyptianHieroglyphV009 => EGYPTIAN_HIEROGLYPH_V009,
-            EgyptianHieroglyphs::EgyptianHieroglyphV010 => EGYPTIAN_HIEROGLYPH_V010,
-            EgyptianHieroglyphs::EgyptianHieroglyphV011 => EGYPTIAN_HIEROGLYPH_V011,
-            EgyptianHieroglyphs::EgyptianHieroglyphV011a => EGYPTIAN_HIEROGLYPH_V011A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV011b => EGYPTIAN_HIEROGLYPH_V011B,
-            EgyptianHieroglyphs::EgyptianHieroglyphV011c => EGYPTIAN_HIEROGLYPH_V011C,
-            EgyptianHieroglyphs::EgyptianHieroglyphV012 => EGYPTIAN_HIEROGLYPH_V012,
-            EgyptianHieroglyphs::EgyptianHieroglyphV012a => EGYPTIAN_HIEROGLYPH_V012A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV012b => EGYPTIAN_HIEROGLYPH_V012B,
-            EgyptianHieroglyphs::EgyptianHieroglyphV013 => EGYPTIAN_HIEROGLYPH_V013,
-            EgyptianHieroglyphs::EgyptianHieroglyphV014 => EGYPTIAN_HIEROGLYPH_V014,
-            EgyptianHieroglyphs::EgyptianHieroglyphV015 => EGYPTIAN_HIEROGLYPH_V015,
-            EgyptianHieroglyphs::EgyptianHieroglyphV016 => EGYPTIAN_HIEROGLYPH_V016,
-            EgyptianHieroglyphs::EgyptianHieroglyphV017 => EGYPTIAN_HIEROGLYPH_V017,
-            EgyptianHieroglyphs::EgyptianHieroglyphV018 => EGYPTIAN_HIEROGLYPH_V018,
-            EgyptianHieroglyphs::EgyptianHieroglyphV019 => EGYPTIAN_HIEROGLYPH_V019,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020 => EGYPTIAN_HIEROGLYPH_V020,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020a => EGYPTIAN_HIEROGLYPH_V020A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020b => EGYPTIAN_HIEROGLYPH_V020B,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020c => EGYPTIAN_HIEROGLYPH_V020C,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020d => EGYPTIAN_HIEROGLYPH_V020D,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020e => EGYPTIAN_HIEROGLYPH_V020E,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020f => EGYPTIAN_HIEROGLYPH_V020F,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020g => EGYPTIAN_HIEROGLYPH_V020G,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020h => EGYPTIAN_HIEROGLYPH_V020H,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020i => EGYPTIAN_HIEROGLYPH_V020I,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020j => EGYPTIAN_HIEROGLYPH_V020J,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020k => EGYPTIAN_HIEROGLYPH_V020K,
-            EgyptianHieroglyphs::EgyptianHieroglyphV020l => EGYPTIAN_HIEROGLYPH_V020L,
-            EgyptianHieroglyphs::EgyptianHieroglyphV021 => EGYPTIAN_HIEROGLYPH_V021,
-            EgyptianHieroglyphs::EgyptianHieroglyphV022 => EGYPTIAN_HIEROGLYPH_V022,
-            EgyptianHieroglyphs::EgyptianHieroglyphV023 => EGYPTIAN_HIEROGLYPH_V023,
-            EgyptianHieroglyphs::EgyptianHieroglyphV023a => EGYPTIAN_HIEROGLYPH_V023A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV024 => EGYPTIAN_HIEROGLYPH_V024,
-            EgyptianHieroglyphs::EgyptianHieroglyphV025 => EGYPTIAN_HIEROGLYPH_V025,
-            EgyptianHieroglyphs::EgyptianHieroglyphV026 => EGYPTIAN_HIEROGLYPH_V026,
-            EgyptianHieroglyphs::EgyptianHieroglyphV027 => EGYPTIAN_HIEROGLYPH_V027,
-            EgyptianHieroglyphs::EgyptianHieroglyphV028 => EGYPTIAN_HIEROGLYPH_V028,
-            EgyptianHieroglyphs::EgyptianHieroglyphV028a => EGYPTIAN_HIEROGLYPH_V028A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV029 => EGYPTIAN_HIEROGLYPH_V029,
-            EgyptianHieroglyphs::EgyptianHieroglyphV029a => EGYPTIAN_HIEROGLYPH_V029A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV030 => EGYPTIAN_HIEROGLYPH_V030,
-            EgyptianHieroglyphs::EgyptianHieroglyphV030a => EGYPTIAN_HIEROGLYPH_V030A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV031 => EGYPTIAN_HIEROGLYPH_V031,
-            EgyptianHieroglyphs::EgyptianHieroglyphV031a => EGYPTIAN_HIEROGLYPH_V031A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV032 => EGYPTIAN_HIEROGLYPH_V032,
-            EgyptianHieroglyphs::EgyptianHieroglyphV033 => EGYPTIAN_HIEROGLYPH_V033,
-            EgyptianHieroglyphs::EgyptianHieroglyphV033a => EGYPTIAN_HIEROGLYPH_V033A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV034 => EGYPTIAN_HIEROGLYPH_V034,
-            EgyptianHieroglyphs::EgyptianHieroglyphV035 => EGYPTIAN_HIEROGLYPH_V035,
-            EgyptianHieroglyphs::EgyptianHieroglyphV036 => EGYPTIAN_HIEROGLYPH_V036,
-            EgyptianHieroglyphs::EgyptianHieroglyphV037 => EGYPTIAN_HIEROGLYPH_V037,
-            EgyptianHieroglyphs::EgyptianHieroglyphV037a => EGYPTIAN_HIEROGLYPH_V037A,
-            EgyptianHieroglyphs::EgyptianHieroglyphV038 => EGYPTIAN_HIEROGLYPH_V038,
-            EgyptianHieroglyphs::EgyptianHieroglyphV039 => EGYPTIAN_HIEROGLYPH_V039,
-            EgyptianHieroglyphs::EgyptianHieroglyphV040 => EGYPTIAN_HIEROGLYPH_V040,
-            EgyptianHieroglyphs::EgyptianHieroglyphV040a => EGYPTIAN_HIEROGLYPH_V040A,
-            EgyptianHieroglyphs::EgyptianHieroglyphW001 => EGYPTIAN_HIEROGLYPH_W001,
-            EgyptianHieroglyphs::EgyptianHieroglyphW002 => EGYPTIAN_HIEROGLYPH_W002,
-            EgyptianHieroglyphs::EgyptianHieroglyphW003 => EGYPTIAN_HIEROGLYPH_W003,
-            EgyptianHieroglyphs::EgyptianHieroglyphW003a => EGYPTIAN_HIEROGLYPH_W003A,
-            EgyptianHieroglyphs::EgyptianHieroglyphW004 => EGYPTIAN_HIEROGLYPH_W004,
-            EgyptianHieroglyphs::EgyptianHieroglyphW005 => EGYPTIAN_HIEROGLYPH_W005,
-            EgyptianHieroglyphs::EgyptianHieroglyphW006 => EGYPTIAN_HIEROGLYPH_W006,
-            EgyptianHieroglyphs::EgyptianHieroglyphW007 => EGYPTIAN_HIEROGLYPH_W007,
-            EgyptianHieroglyphs::EgyptianHieroglyphW008 => EGYPTIAN_HIEROGLYPH_W008,
-            EgyptianHieroglyphs::EgyptianHieroglyphW009 => EGYPTIAN_HIEROGLYPH_W009,
-            EgyptianHieroglyphs::EgyptianHieroglyphW009a => EGYPTIAN_HIEROGLYPH_W009A,
-            EgyptianHieroglyphs::EgyptianHieroglyphW010 => EGYPTIAN_HIEROGLYPH_W010,
-            EgyptianHieroglyphs::EgyptianHieroglyphW010a => EGYPTIAN_HIEROGLYPH_W010A,
-            EgyptianHieroglyphs::EgyptianHieroglyphW011 => EGYPTIAN_HIEROGLYPH_W011,
-            EgyptianHieroglyphs::EgyptianHieroglyphW012 => EGYPTIAN_HIEROGLYPH_W012,
-            EgyptianHieroglyphs::EgyptianHieroglyphW013 => EGYPTIAN_HIEROGLYPH_W013,
-            EgyptianHieroglyphs::EgyptianHieroglyphW014 => EGYPTIAN_HIEROGLYPH_W014,
-            EgyptianHieroglyphs::EgyptianHieroglyphW014a => EGYPTIAN_HIEROGLYPH_W014A,
-            EgyptianHieroglyphs::EgyptianHieroglyphW015 => EGYPTIAN_HIEROGLYPH_W015,
-            EgyptianHieroglyphs::EgyptianHieroglyphW016 => EGYPTIAN_HIEROGLYPH_W016,
-            EgyptianHieroglyphs::EgyptianHieroglyphW017 => EGYPTIAN_HIEROGLYPH_W017,
-            EgyptianHieroglyphs::EgyptianHieroglyphW017a => EGYPTIAN_HIEROGLYPH_W017A,
-            EgyptianHieroglyphs::EgyptianHieroglyphW018 => EGYPTIAN_HIEROGLYPH_W018,
-            EgyptianHieroglyphs::EgyptianHieroglyphW018a => EGYPTIAN_HIEROGLYPH_W018A,
-            EgyptianHieroglyphs::EgyptianHieroglyphW019 => EGYPTIAN_HIEROGLYPH_W019,
-            EgyptianHieroglyphs::EgyptianHieroglyphW020 => EGYPTIAN_HIEROGLYPH_W020,
-            EgyptianHieroglyphs::EgyptianHieroglyphW021 => EGYPTIAN_HIEROGLYPH_W021,
-            EgyptianHieroglyphs::EgyptianHieroglyphW022 => EGYPTIAN_HIEROGLYPH_W022,
-            EgyptianHieroglyphs::EgyptianHieroglyphW023 => EGYPTIAN_HIEROGLYPH_W023,
-            EgyptianHieroglyphs::EgyptianHieroglyphW024 => EGYPTIAN_HIEROGLYPH_W024,
-            EgyptianHieroglyphs::EgyptianHieroglyphW024a => EGYPTIAN_HIEROGLYPH_W024A,
-            EgyptianHieroglyphs::EgyptianHieroglyphW025 => EGYPTIAN_HIEROGLYPH_W025,
-            EgyptianHieroglyphs::EgyptianHieroglyphX001 => EGYPTIAN_HIEROGLYPH_X001,
-            EgyptianHieroglyphs::EgyptianHieroglyphX002 => EGYPTIAN_HIEROGLYPH_X002,
-            EgyptianHieroglyphs::EgyptianHieroglyphX003 => EGYPTIAN_HIEROGLYPH_X003,
-            EgyptianHieroglyphs::EgyptianHieroglyphX004 => EGYPTIAN_HIEROGLYPH_X004,
-            EgyptianHieroglyphs::EgyptianHieroglyphX004a => EGYPTIAN_HIEROGLYPH_X004A,
-            EgyptianHieroglyphs::EgyptianHieroglyphX004b => EGYPTIAN_HIEROGLYPH_X004B,
-            EgyptianHieroglyphs::EgyptianHieroglyphX005 => EGYPTIAN_HIEROGLYPH_X005,
-            EgyptianHieroglyphs::EgyptianHieroglyphX006 => EGYPTIAN_HIEROGLYPH_X006,
-            EgyptianHieroglyphs::EgyptianHieroglyphX006a => EGYPTIAN_HIEROGLYPH_X006A,
-            EgyptianHieroglyphs::EgyptianHieroglyphX007 => EGYPTIAN_HIEROGLYPH_X007,
-            EgyptianHieroglyphs::EgyptianHieroglyphX008 => EGYPTIAN_HIEROGLYPH_X008,
-            EgyptianHieroglyphs::EgyptianHieroglyphX008a => EGYPTIAN_HIEROGLYPH_X008A,
-            EgyptianHieroglyphs::EgyptianHieroglyphY001 => EGYPTIAN_HIEROGLYPH_Y001,
-            EgyptianHieroglyphs::EgyptianHieroglyphY001a => EGYPTIAN_HIEROGLYPH_Y001A,
-            EgyptianHieroglyphs::EgyptianHieroglyphY002 => EGYPTIAN_HIEROGLYPH_Y002,
-            EgyptianHieroglyphs::EgyptianHieroglyphY003 => EGYPTIAN_HIEROGLYPH_Y003,
-            EgyptianHieroglyphs::EgyptianHieroglyphY004 => EGYPTIAN_HIEROGLYPH_Y004,
-            EgyptianHieroglyphs::EgyptianHieroglyphY005 => EGYPTIAN_HIEROGLYPH_Y005,
-            EgyptianHieroglyphs::EgyptianHieroglyphY006 => EGYPTIAN_HIEROGLYPH_Y006,
-            EgyptianHieroglyphs::EgyptianHieroglyphY007 => EGYPTIAN_HIEROGLYPH_Y007,
-            EgyptianHieroglyphs::EgyptianHieroglyphY008 => EGYPTIAN_HIEROGLYPH_Y008,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ001 => EGYPTIAN_HIEROGLYPH_Z001,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ002 => EGYPTIAN_HIEROGLYPH_Z002,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ002a => EGYPTIAN_HIEROGLYPH_Z002A,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ002b => EGYPTIAN_HIEROGLYPH_Z002B,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ002c => EGYPTIAN_HIEROGLYPH_Z002C,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ002d => EGYPTIAN_HIEROGLYPH_Z002D,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ003 => EGYPTIAN_HIEROGLYPH_Z003,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ003a => EGYPTIAN_HIEROGLYPH_Z003A,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ003b => EGYPTIAN_HIEROGLYPH_Z003B,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ004 => EGYPTIAN_HIEROGLYPH_Z004,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ004a => EGYPTIAN_HIEROGLYPH_Z004A,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ005 => EGYPTIAN_HIEROGLYPH_Z005,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ005a => EGYPTIAN_HIEROGLYPH_Z005A,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ006 => EGYPTIAN_HIEROGLYPH_Z006,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ007 => EGYPTIAN_HIEROGLYPH_Z007,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ008 => EGYPTIAN_HIEROGLYPH_Z008,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ009 => EGYPTIAN_HIEROGLYPH_Z009,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ010 => EGYPTIAN_HIEROGLYPH_Z010,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ011 => EGYPTIAN_HIEROGLYPH_Z011,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ012 => EGYPTIAN_HIEROGLYPH_Z012,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ013 => EGYPTIAN_HIEROGLYPH_Z013,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ014 => EGYPTIAN_HIEROGLYPH_Z014,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015 => EGYPTIAN_HIEROGLYPH_Z015,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015a => EGYPTIAN_HIEROGLYPH_Z015A,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015b => EGYPTIAN_HIEROGLYPH_Z015B,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015c => EGYPTIAN_HIEROGLYPH_Z015C,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015d => EGYPTIAN_HIEROGLYPH_Z015D,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015e => EGYPTIAN_HIEROGLYPH_Z015E,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015f => EGYPTIAN_HIEROGLYPH_Z015F,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015g => EGYPTIAN_HIEROGLYPH_Z015G,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015h => EGYPTIAN_HIEROGLYPH_Z015H,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ015i => EGYPTIAN_HIEROGLYPH_Z015I,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ016 => EGYPTIAN_HIEROGLYPH_Z016,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ016a => EGYPTIAN_HIEROGLYPH_Z016A,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ016b => EGYPTIAN_HIEROGLYPH_Z016B,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ016c => EGYPTIAN_HIEROGLYPH_Z016C,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ016d => EGYPTIAN_HIEROGLYPH_Z016D,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ016e => EGYPTIAN_HIEROGLYPH_Z016E,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ016f => EGYPTIAN_HIEROGLYPH_Z016F,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ016g => EGYPTIAN_HIEROGLYPH_Z016G,
-            EgyptianHieroglyphs::EgyptianHieroglyphZ016h => EGYPTIAN_HIEROGLYPH_Z016H,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa001 => EGYPTIAN_HIEROGLYPH_AA001,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa002 => EGYPTIAN_HIEROGLYPH_AA002,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa003 => EGYPTIAN_HIEROGLYPH_AA003,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa004 => EGYPTIAN_HIEROGLYPH_AA004,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa005 => EGYPTIAN_HIEROGLYPH_AA005,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa006 => EGYPTIAN_HIEROGLYPH_AA006,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa007 => EGYPTIAN_HIEROGLYPH_AA007,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa007a => EGYPTIAN_HIEROGLYPH_AA007A,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa007b => EGYPTIAN_HIEROGLYPH_AA007B,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa008 => EGYPTIAN_HIEROGLYPH_AA008,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa009 => EGYPTIAN_HIEROGLYPH_AA009,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa010 => EGYPTIAN_HIEROGLYPH_AA010,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa011 => EGYPTIAN_HIEROGLYPH_AA011,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa012 => EGYPTIAN_HIEROGLYPH_AA012,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa013 => EGYPTIAN_HIEROGLYPH_AA013,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa014 => EGYPTIAN_HIEROGLYPH_AA014,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa015 => EGYPTIAN_HIEROGLYPH_AA015,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa016 => EGYPTIAN_HIEROGLYPH_AA016,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa017 => EGYPTIAN_HIEROGLYPH_AA017,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa018 => EGYPTIAN_HIEROGLYPH_AA018,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa019 => EGYPTIAN_HIEROGLYPH_AA019,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa020 => EGYPTIAN_HIEROGLYPH_AA020,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa021 => EGYPTIAN_HIEROGLYPH_AA021,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa022 => EGYPTIAN_HIEROGLYPH_AA022,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa023 => EGYPTIAN_HIEROGLYPH_AA023,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa024 => EGYPTIAN_HIEROGLYPH_AA024,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa025 => EGYPTIAN_HIEROGLYPH_AA025,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa026 => EGYPTIAN_HIEROGLYPH_AA026,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa027 => EGYPTIAN_HIEROGLYPH_AA027,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa028 => EGYPTIAN_HIEROGLYPH_AA028,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa029 => EGYPTIAN_HIEROGLYPH_AA029,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa030 => EGYPTIAN_HIEROGLYPH_AA030,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa031 => EGYPTIAN_HIEROGLYPH_AA031,
-            EgyptianHieroglyphs::EgyptianHieroglyphAa032 => EGYPTIAN_HIEROGLYPH_AA032,
+            EgyptianHieroglyphs::EgyptianHieroglyphA001 => '𓀀',
+            EgyptianHieroglyphs::EgyptianHieroglyphA002 => '𓀁',
+            EgyptianHieroglyphs::EgyptianHieroglyphA003 => '𓀂',
+            EgyptianHieroglyphs::EgyptianHieroglyphA004 => '𓀃',
+            EgyptianHieroglyphs::EgyptianHieroglyphA005 => '𓀄',
+            EgyptianHieroglyphs::EgyptianHieroglyphA005a => '𓀅',
+            EgyptianHieroglyphs::EgyptianHieroglyphA006 => '𓀆',
+            EgyptianHieroglyphs::EgyptianHieroglyphA006a => '𓀇',
+            EgyptianHieroglyphs::EgyptianHieroglyphA006b => '𓀈',
+            EgyptianHieroglyphs::EgyptianHieroglyphA007 => '𓀉',
+            EgyptianHieroglyphs::EgyptianHieroglyphA008 => '𓀊',
+            EgyptianHieroglyphs::EgyptianHieroglyphA009 => '𓀋',
+            EgyptianHieroglyphs::EgyptianHieroglyphA010 => '𓀌',
+            EgyptianHieroglyphs::EgyptianHieroglyphA011 => '𓀍',
+            EgyptianHieroglyphs::EgyptianHieroglyphA012 => '𓀎',
+            EgyptianHieroglyphs::EgyptianHieroglyphA013 => '𓀏',
+            EgyptianHieroglyphs::EgyptianHieroglyphA014 => '𓀐',
+            EgyptianHieroglyphs::EgyptianHieroglyphA014a => '𓀑',
+            EgyptianHieroglyphs::EgyptianHieroglyphA015 => '𓀒',
+            EgyptianHieroglyphs::EgyptianHieroglyphA016 => '𓀓',
+            EgyptianHieroglyphs::EgyptianHieroglyphA017 => '𓀔',
+            EgyptianHieroglyphs::EgyptianHieroglyphA017a => '𓀕',
+            EgyptianHieroglyphs::EgyptianHieroglyphA018 => '𓀖',
+            EgyptianHieroglyphs::EgyptianHieroglyphA019 => '𓀗',
+            EgyptianHieroglyphs::EgyptianHieroglyphA020 => '𓀘',
+            EgyptianHieroglyphs::EgyptianHieroglyphA021 => '𓀙',
+            EgyptianHieroglyphs::EgyptianHieroglyphA022 => '𓀚',
+            EgyptianHieroglyphs::EgyptianHieroglyphA023 => '𓀛',
+            EgyptianHieroglyphs::EgyptianHieroglyphA024 => '𓀜',
+            EgyptianHieroglyphs::EgyptianHieroglyphA025 => '𓀝',
+            EgyptianHieroglyphs::EgyptianHieroglyphA026 => '𓀞',
+            EgyptianHieroglyphs::EgyptianHieroglyphA027 => '𓀟',
+            EgyptianHieroglyphs::EgyptianHieroglyphA028 => '𓀠',
+            EgyptianHieroglyphs::EgyptianHieroglyphA029 => '𓀡',
+            EgyptianHieroglyphs::EgyptianHieroglyphA030 => '𓀢',
+            EgyptianHieroglyphs::EgyptianHieroglyphA031 => '𓀣',
+            EgyptianHieroglyphs::EgyptianHieroglyphA032 => '𓀤',
+            EgyptianHieroglyphs::EgyptianHieroglyphA032a => '𓀥',
+            EgyptianHieroglyphs::EgyptianHieroglyphA033 => '𓀦',
+            EgyptianHieroglyphs::EgyptianHieroglyphA034 => '𓀧',
+            EgyptianHieroglyphs::EgyptianHieroglyphA035 => '𓀨',
+            EgyptianHieroglyphs::EgyptianHieroglyphA036 => '𓀩',
+            EgyptianHieroglyphs::EgyptianHieroglyphA037 => '𓀪',
+            EgyptianHieroglyphs::EgyptianHieroglyphA038 => '𓀫',
+            EgyptianHieroglyphs::EgyptianHieroglyphA039 => '𓀬',
+            EgyptianHieroglyphs::EgyptianHieroglyphA040 => '𓀭',
+            EgyptianHieroglyphs::EgyptianHieroglyphA040a => '𓀮',
+            EgyptianHieroglyphs::EgyptianHieroglyphA041 => '𓀯',
+            EgyptianHieroglyphs::EgyptianHieroglyphA042 => '𓀰',
+            EgyptianHieroglyphs::EgyptianHieroglyphA042a => '𓀱',
+            EgyptianHieroglyphs::EgyptianHieroglyphA043 => '𓀲',
+            EgyptianHieroglyphs::EgyptianHieroglyphA043a => '𓀳',
+            EgyptianHieroglyphs::EgyptianHieroglyphA044 => '𓀴',
+            EgyptianHieroglyphs::EgyptianHieroglyphA045 => '𓀵',
+            EgyptianHieroglyphs::EgyptianHieroglyphA045a => '𓀶',
+            EgyptianHieroglyphs::EgyptianHieroglyphA046 => '𓀷',
+            EgyptianHieroglyphs::EgyptianHieroglyphA047 => '𓀸',
+            EgyptianHieroglyphs::EgyptianHieroglyphA048 => '𓀹',
+            EgyptianHieroglyphs::EgyptianHieroglyphA049 => '𓀺',
+            EgyptianHieroglyphs::EgyptianHieroglyphA050 => '𓀻',
+            EgyptianHieroglyphs::EgyptianHieroglyphA051 => '𓀼',
+            EgyptianHieroglyphs::EgyptianHieroglyphA052 => '𓀽',
+            EgyptianHieroglyphs::EgyptianHieroglyphA053 => '𓀾',
+            EgyptianHieroglyphs::EgyptianHieroglyphA054 => '𓀿',
+            EgyptianHieroglyphs::EgyptianHieroglyphA055 => '𓁀',
+            EgyptianHieroglyphs::EgyptianHieroglyphA056 => '𓁁',
+            EgyptianHieroglyphs::EgyptianHieroglyphA057 => '𓁂',
+            EgyptianHieroglyphs::EgyptianHieroglyphA058 => '𓁃',
+            EgyptianHieroglyphs::EgyptianHieroglyphA059 => '𓁄',
+            EgyptianHieroglyphs::EgyptianHieroglyphA060 => '𓁅',
+            EgyptianHieroglyphs::EgyptianHieroglyphA061 => '𓁆',
+            EgyptianHieroglyphs::EgyptianHieroglyphA062 => '𓁇',
+            EgyptianHieroglyphs::EgyptianHieroglyphA063 => '𓁈',
+            EgyptianHieroglyphs::EgyptianHieroglyphA064 => '𓁉',
+            EgyptianHieroglyphs::EgyptianHieroglyphA065 => '𓁊',
+            EgyptianHieroglyphs::EgyptianHieroglyphA066 => '𓁋',
+            EgyptianHieroglyphs::EgyptianHieroglyphA067 => '𓁌',
+            EgyptianHieroglyphs::EgyptianHieroglyphA068 => '𓁍',
+            EgyptianHieroglyphs::EgyptianHieroglyphA069 => '𓁎',
+            EgyptianHieroglyphs::EgyptianHieroglyphA070 => '𓁏',
+            EgyptianHieroglyphs::EgyptianHieroglyphB001 => '𓁐',
+            EgyptianHieroglyphs::EgyptianHieroglyphB002 => '𓁑',
+            EgyptianHieroglyphs::EgyptianHieroglyphB003 => '𓁒',
+            EgyptianHieroglyphs::EgyptianHieroglyphB004 => '𓁓',
+            EgyptianHieroglyphs::EgyptianHieroglyphB005 => '𓁔',
+            EgyptianHieroglyphs::EgyptianHieroglyphB005a => '𓁕',
+            EgyptianHieroglyphs::EgyptianHieroglyphB006 => '𓁖',
+            EgyptianHieroglyphs::EgyptianHieroglyphB007 => '𓁗',
+            EgyptianHieroglyphs::EgyptianHieroglyphB008 => '𓁘',
+            EgyptianHieroglyphs::EgyptianHieroglyphB009 => '𓁙',
+            EgyptianHieroglyphs::EgyptianHieroglyphC001 => '𓁚',
+            EgyptianHieroglyphs::EgyptianHieroglyphC002 => '𓁛',
+            EgyptianHieroglyphs::EgyptianHieroglyphC002a => '𓁜',
+            EgyptianHieroglyphs::EgyptianHieroglyphC002b => '𓁝',
+            EgyptianHieroglyphs::EgyptianHieroglyphC002c => '𓁞',
+            EgyptianHieroglyphs::EgyptianHieroglyphC003 => '𓁟',
+            EgyptianHieroglyphs::EgyptianHieroglyphC004 => '𓁠',
+            EgyptianHieroglyphs::EgyptianHieroglyphC005 => '𓁡',
+            EgyptianHieroglyphs::EgyptianHieroglyphC006 => '𓁢',
+            EgyptianHieroglyphs::EgyptianHieroglyphC007 => '𓁣',
+            EgyptianHieroglyphs::EgyptianHieroglyphC008 => '𓁤',
+            EgyptianHieroglyphs::EgyptianHieroglyphC009 => '𓁥',
+            EgyptianHieroglyphs::EgyptianHieroglyphC010 => '𓁦',
+            EgyptianHieroglyphs::EgyptianHieroglyphC010a => '𓁧',
+            EgyptianHieroglyphs::EgyptianHieroglyphC011 => '𓁨',
+            EgyptianHieroglyphs::EgyptianHieroglyphC012 => '𓁩',
+            EgyptianHieroglyphs::EgyptianHieroglyphC013 => '𓁪',
+            EgyptianHieroglyphs::EgyptianHieroglyphC014 => '𓁫',
+            EgyptianHieroglyphs::EgyptianHieroglyphC015 => '𓁬',
+            EgyptianHieroglyphs::EgyptianHieroglyphC016 => '𓁭',
+            EgyptianHieroglyphs::EgyptianHieroglyphC017 => '𓁮',
+            EgyptianHieroglyphs::EgyptianHieroglyphC018 => '𓁯',
+            EgyptianHieroglyphs::EgyptianHieroglyphC019 => '𓁰',
+            EgyptianHieroglyphs::EgyptianHieroglyphC020 => '𓁱',
+            EgyptianHieroglyphs::EgyptianHieroglyphC021 => '𓁲',
+            EgyptianHieroglyphs::EgyptianHieroglyphC022 => '𓁳',
+            EgyptianHieroglyphs::EgyptianHieroglyphC023 => '𓁴',
+            EgyptianHieroglyphs::EgyptianHieroglyphC024 => '𓁵',
+            EgyptianHieroglyphs::EgyptianHieroglyphD001 => '𓁶',
+            EgyptianHieroglyphs::EgyptianHieroglyphD002 => '𓁷',
+            EgyptianHieroglyphs::EgyptianHieroglyphD003 => '𓁸',
+            EgyptianHieroglyphs::EgyptianHieroglyphD004 => '𓁹',
+            EgyptianHieroglyphs::EgyptianHieroglyphD005 => '𓁺',
+            EgyptianHieroglyphs::EgyptianHieroglyphD006 => '𓁻',
+            EgyptianHieroglyphs::EgyptianHieroglyphD007 => '𓁼',
+            EgyptianHieroglyphs::EgyptianHieroglyphD008 => '𓁽',
+            EgyptianHieroglyphs::EgyptianHieroglyphD008a => '𓁾',
+            EgyptianHieroglyphs::EgyptianHieroglyphD009 => '𓁿',
+            EgyptianHieroglyphs::EgyptianHieroglyphD010 => '𓂀',
+            EgyptianHieroglyphs::EgyptianHieroglyphD011 => '𓂁',
+            EgyptianHieroglyphs::EgyptianHieroglyphD012 => '𓂂',
+            EgyptianHieroglyphs::EgyptianHieroglyphD013 => '𓂃',
+            EgyptianHieroglyphs::EgyptianHieroglyphD014 => '𓂄',
+            EgyptianHieroglyphs::EgyptianHieroglyphD015 => '𓂅',
+            EgyptianHieroglyphs::EgyptianHieroglyphD016 => '𓂆',
+            EgyptianHieroglyphs::EgyptianHieroglyphD017 => '𓂇',
+            EgyptianHieroglyphs::EgyptianHieroglyphD018 => '𓂈',
+            EgyptianHieroglyphs::EgyptianHieroglyphD019 => '𓂉',
+            EgyptianHieroglyphs::EgyptianHieroglyphD020 => '𓂊',
+            EgyptianHieroglyphs::EgyptianHieroglyphD021 => '𓂋',
+            EgyptianHieroglyphs::EgyptianHieroglyphD022 => '𓂌',
+            EgyptianHieroglyphs::EgyptianHieroglyphD023 => '𓂍',
+            EgyptianHieroglyphs::EgyptianHieroglyphD024 => '𓂎',
+            EgyptianHieroglyphs::EgyptianHieroglyphD025 => '𓂏',
+            EgyptianHieroglyphs::EgyptianHieroglyphD026 => '𓂐',
+            EgyptianHieroglyphs::EgyptianHieroglyphD027 => '𓂑',
+            EgyptianHieroglyphs::EgyptianHieroglyphD027a => '𓂒',
+            EgyptianHieroglyphs::EgyptianHieroglyphD028 => '𓂓',
+            EgyptianHieroglyphs::EgyptianHieroglyphD029 => '𓂔',
+            EgyptianHieroglyphs::EgyptianHieroglyphD030 => '𓂕',
+            EgyptianHieroglyphs::EgyptianHieroglyphD031 => '𓂖',
+            EgyptianHieroglyphs::EgyptianHieroglyphD031a => '𓂗',
+            EgyptianHieroglyphs::EgyptianHieroglyphD032 => '𓂘',
+            EgyptianHieroglyphs::EgyptianHieroglyphD033 => '𓂙',
+            EgyptianHieroglyphs::EgyptianHieroglyphD034 => '𓂚',
+            EgyptianHieroglyphs::EgyptianHieroglyphD034a => '𓂛',
+            EgyptianHieroglyphs::EgyptianHieroglyphD035 => '𓂜',
+            EgyptianHieroglyphs::EgyptianHieroglyphD036 => '𓂝',
+            EgyptianHieroglyphs::EgyptianHieroglyphD037 => '𓂞',
+            EgyptianHieroglyphs::EgyptianHieroglyphD038 => '𓂟',
+            EgyptianHieroglyphs::EgyptianHieroglyphD039 => '𓂠',
+            EgyptianHieroglyphs::EgyptianHieroglyphD040 => '𓂡',
+            EgyptianHieroglyphs::EgyptianHieroglyphD041 => '𓂢',
+            EgyptianHieroglyphs::EgyptianHieroglyphD042 => '𓂣',
+            EgyptianHieroglyphs::EgyptianHieroglyphD043 => '𓂤',
+            EgyptianHieroglyphs::EgyptianHieroglyphD044 => '𓂥',
+            EgyptianHieroglyphs::EgyptianHieroglyphD045 => '𓂦',
+            EgyptianHieroglyphs::EgyptianHieroglyphD046 => '𓂧',
+            EgyptianHieroglyphs::EgyptianHieroglyphD046a => '𓂨',
+            EgyptianHieroglyphs::EgyptianHieroglyphD047 => '𓂩',
+            EgyptianHieroglyphs::EgyptianHieroglyphD048 => '𓂪',
+            EgyptianHieroglyphs::EgyptianHieroglyphD048a => '𓂫',
+            EgyptianHieroglyphs::EgyptianHieroglyphD049 => '𓂬',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050 => '𓂭',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050a => '𓂮',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050b => '𓂯',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050c => '𓂰',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050d => '𓂱',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050e => '𓂲',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050f => '𓂳',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050g => '𓂴',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050h => '𓂵',
+            EgyptianHieroglyphs::EgyptianHieroglyphD050i => '𓂶',
+            EgyptianHieroglyphs::EgyptianHieroglyphD051 => '𓂷',
+            EgyptianHieroglyphs::EgyptianHieroglyphD052 => '𓂸',
+            EgyptianHieroglyphs::EgyptianHieroglyphD052a => '𓂹',
+            EgyptianHieroglyphs::EgyptianHieroglyphD053 => '𓂺',
+            EgyptianHieroglyphs::EgyptianHieroglyphD054 => '𓂻',
+            EgyptianHieroglyphs::EgyptianHieroglyphD054a => '𓂼',
+            EgyptianHieroglyphs::EgyptianHieroglyphD055 => '𓂽',
+            EgyptianHieroglyphs::EgyptianHieroglyphD056 => '𓂾',
+            EgyptianHieroglyphs::EgyptianHieroglyphD057 => '𓂿',
+            EgyptianHieroglyphs::EgyptianHieroglyphD058 => '𓃀',
+            EgyptianHieroglyphs::EgyptianHieroglyphD059 => '𓃁',
+            EgyptianHieroglyphs::EgyptianHieroglyphD060 => '𓃂',
+            EgyptianHieroglyphs::EgyptianHieroglyphD061 => '𓃃',
+            EgyptianHieroglyphs::EgyptianHieroglyphD062 => '𓃄',
+            EgyptianHieroglyphs::EgyptianHieroglyphD063 => '𓃅',
+            EgyptianHieroglyphs::EgyptianHieroglyphD064 => '𓃆',
+            EgyptianHieroglyphs::EgyptianHieroglyphD065 => '𓃇',
+            EgyptianHieroglyphs::EgyptianHieroglyphD066 => '𓃈',
+            EgyptianHieroglyphs::EgyptianHieroglyphD067 => '𓃉',
+            EgyptianHieroglyphs::EgyptianHieroglyphD067a => '𓃊',
+            EgyptianHieroglyphs::EgyptianHieroglyphD067b => '𓃋',
+            EgyptianHieroglyphs::EgyptianHieroglyphD067c => '𓃌',
+            EgyptianHieroglyphs::EgyptianHieroglyphD067d => '𓃍',
+            EgyptianHieroglyphs::EgyptianHieroglyphD067e => '𓃎',
+            EgyptianHieroglyphs::EgyptianHieroglyphD067f => '𓃏',
+            EgyptianHieroglyphs::EgyptianHieroglyphD067g => '𓃐',
+            EgyptianHieroglyphs::EgyptianHieroglyphD067h => '𓃑',
+            EgyptianHieroglyphs::EgyptianHieroglyphE001 => '𓃒',
+            EgyptianHieroglyphs::EgyptianHieroglyphE002 => '𓃓',
+            EgyptianHieroglyphs::EgyptianHieroglyphE003 => '𓃔',
+            EgyptianHieroglyphs::EgyptianHieroglyphE004 => '𓃕',
+            EgyptianHieroglyphs::EgyptianHieroglyphE005 => '𓃖',
+            EgyptianHieroglyphs::EgyptianHieroglyphE006 => '𓃗',
+            EgyptianHieroglyphs::EgyptianHieroglyphE007 => '𓃘',
+            EgyptianHieroglyphs::EgyptianHieroglyphE008 => '𓃙',
+            EgyptianHieroglyphs::EgyptianHieroglyphE008a => '𓃚',
+            EgyptianHieroglyphs::EgyptianHieroglyphE009 => '𓃛',
+            EgyptianHieroglyphs::EgyptianHieroglyphE009a => '𓃜',
+            EgyptianHieroglyphs::EgyptianHieroglyphE010 => '𓃝',
+            EgyptianHieroglyphs::EgyptianHieroglyphE011 => '𓃞',
+            EgyptianHieroglyphs::EgyptianHieroglyphE012 => '𓃟',
+            EgyptianHieroglyphs::EgyptianHieroglyphE013 => '𓃠',
+            EgyptianHieroglyphs::EgyptianHieroglyphE014 => '𓃡',
+            EgyptianHieroglyphs::EgyptianHieroglyphE015 => '𓃢',
+            EgyptianHieroglyphs::EgyptianHieroglyphE016 => '𓃣',
+            EgyptianHieroglyphs::EgyptianHieroglyphE016a => '𓃤',
+            EgyptianHieroglyphs::EgyptianHieroglyphE017 => '𓃥',
+            EgyptianHieroglyphs::EgyptianHieroglyphE017a => '𓃦',
+            EgyptianHieroglyphs::EgyptianHieroglyphE018 => '𓃧',
+            EgyptianHieroglyphs::EgyptianHieroglyphE019 => '𓃨',
+            EgyptianHieroglyphs::EgyptianHieroglyphE020 => '𓃩',
+            EgyptianHieroglyphs::EgyptianHieroglyphE020a => '𓃪',
+            EgyptianHieroglyphs::EgyptianHieroglyphE021 => '𓃫',
+            EgyptianHieroglyphs::EgyptianHieroglyphE022 => '𓃬',
+            EgyptianHieroglyphs::EgyptianHieroglyphE023 => '𓃭',
+            EgyptianHieroglyphs::EgyptianHieroglyphE024 => '𓃮',
+            EgyptianHieroglyphs::EgyptianHieroglyphE025 => '𓃯',
+            EgyptianHieroglyphs::EgyptianHieroglyphE026 => '𓃰',
+            EgyptianHieroglyphs::EgyptianHieroglyphE027 => '𓃱',
+            EgyptianHieroglyphs::EgyptianHieroglyphE028 => '𓃲',
+            EgyptianHieroglyphs::EgyptianHieroglyphE028a => '𓃳',
+            EgyptianHieroglyphs::EgyptianHieroglyphE029 => '𓃴',
+            EgyptianHieroglyphs::EgyptianHieroglyphE030 => '𓃵',
+            EgyptianHieroglyphs::EgyptianHieroglyphE031 => '𓃶',
+            EgyptianHieroglyphs::EgyptianHieroglyphE032 => '𓃷',
+            EgyptianHieroglyphs::EgyptianHieroglyphE033 => '𓃸',
+            EgyptianHieroglyphs::EgyptianHieroglyphE034 => '𓃹',
+            EgyptianHieroglyphs::EgyptianHieroglyphE034a => '𓃺',
+            EgyptianHieroglyphs::EgyptianHieroglyphE036 => '𓃻',
+            EgyptianHieroglyphs::EgyptianHieroglyphE037 => '𓃼',
+            EgyptianHieroglyphs::EgyptianHieroglyphE038 => '𓃽',
+            EgyptianHieroglyphs::EgyptianHieroglyphF001 => '𓃾',
+            EgyptianHieroglyphs::EgyptianHieroglyphF001a => '𓃿',
+            EgyptianHieroglyphs::EgyptianHieroglyphF002 => '𓄀',
+            EgyptianHieroglyphs::EgyptianHieroglyphF003 => '𓄁',
+            EgyptianHieroglyphs::EgyptianHieroglyphF004 => '𓄂',
+            EgyptianHieroglyphs::EgyptianHieroglyphF005 => '𓄃',
+            EgyptianHieroglyphs::EgyptianHieroglyphF006 => '𓄄',
+            EgyptianHieroglyphs::EgyptianHieroglyphF007 => '𓄅',
+            EgyptianHieroglyphs::EgyptianHieroglyphF008 => '𓄆',
+            EgyptianHieroglyphs::EgyptianHieroglyphF009 => '𓄇',
+            EgyptianHieroglyphs::EgyptianHieroglyphF010 => '𓄈',
+            EgyptianHieroglyphs::EgyptianHieroglyphF011 => '𓄉',
+            EgyptianHieroglyphs::EgyptianHieroglyphF012 => '𓄊',
+            EgyptianHieroglyphs::EgyptianHieroglyphF013 => '𓄋',
+            EgyptianHieroglyphs::EgyptianHieroglyphF013a => '𓄌',
+            EgyptianHieroglyphs::EgyptianHieroglyphF014 => '𓄍',
+            EgyptianHieroglyphs::EgyptianHieroglyphF015 => '𓄎',
+            EgyptianHieroglyphs::EgyptianHieroglyphF016 => '𓄏',
+            EgyptianHieroglyphs::EgyptianHieroglyphF017 => '𓄐',
+            EgyptianHieroglyphs::EgyptianHieroglyphF018 => '𓄑',
+            EgyptianHieroglyphs::EgyptianHieroglyphF019 => '𓄒',
+            EgyptianHieroglyphs::EgyptianHieroglyphF020 => '𓄓',
+            EgyptianHieroglyphs::EgyptianHieroglyphF021 => '𓄔',
+            EgyptianHieroglyphs::EgyptianHieroglyphF021a => '𓄕',
+            EgyptianHieroglyphs::EgyptianHieroglyphF022 => '𓄖',
+            EgyptianHieroglyphs::EgyptianHieroglyphF023 => '𓄗',
+            EgyptianHieroglyphs::EgyptianHieroglyphF024 => '𓄘',
+            EgyptianHieroglyphs::EgyptianHieroglyphF025 => '𓄙',
+            EgyptianHieroglyphs::EgyptianHieroglyphF026 => '𓄚',
+            EgyptianHieroglyphs::EgyptianHieroglyphF027 => '𓄛',
+            EgyptianHieroglyphs::EgyptianHieroglyphF028 => '𓄜',
+            EgyptianHieroglyphs::EgyptianHieroglyphF029 => '𓄝',
+            EgyptianHieroglyphs::EgyptianHieroglyphF030 => '𓄞',
+            EgyptianHieroglyphs::EgyptianHieroglyphF031 => '𓄟',
+            EgyptianHieroglyphs::EgyptianHieroglyphF031a => '𓄠',
+            EgyptianHieroglyphs::EgyptianHieroglyphF032 => '𓄡',
+            EgyptianHieroglyphs::EgyptianHieroglyphF033 => '𓄢',
+            EgyptianHieroglyphs::EgyptianHieroglyphF034 => '𓄣',
+            EgyptianHieroglyphs::EgyptianHieroglyphF035 => '𓄤',
+            EgyptianHieroglyphs::EgyptianHieroglyphF036 => '𓄥',
+            EgyptianHieroglyphs::EgyptianHieroglyphF037 => '𓄦',
+            EgyptianHieroglyphs::EgyptianHieroglyphF037a => '𓄧',
+            EgyptianHieroglyphs::EgyptianHieroglyphF038 => '𓄨',
+            EgyptianHieroglyphs::EgyptianHieroglyphF038a => '𓄩',
+            EgyptianHieroglyphs::EgyptianHieroglyphF039 => '𓄪',
+            EgyptianHieroglyphs::EgyptianHieroglyphF040 => '𓄫',
+            EgyptianHieroglyphs::EgyptianHieroglyphF041 => '𓄬',
+            EgyptianHieroglyphs::EgyptianHieroglyphF042 => '𓄭',
+            EgyptianHieroglyphs::EgyptianHieroglyphF043 => '𓄮',
+            EgyptianHieroglyphs::EgyptianHieroglyphF044 => '𓄯',
+            EgyptianHieroglyphs::EgyptianHieroglyphF045 => '𓄰',
+            EgyptianHieroglyphs::EgyptianHieroglyphF045a => '𓄱',
+            EgyptianHieroglyphs::EgyptianHieroglyphF046 => '𓄲',
+            EgyptianHieroglyphs::EgyptianHieroglyphF046a => '𓄳',
+            EgyptianHieroglyphs::EgyptianHieroglyphF047 => '𓄴',
+            EgyptianHieroglyphs::EgyptianHieroglyphF047a => '𓄵',
+            EgyptianHieroglyphs::EgyptianHieroglyphF048 => '𓄶',
+            EgyptianHieroglyphs::EgyptianHieroglyphF049 => '𓄷',
+            EgyptianHieroglyphs::EgyptianHieroglyphF050 => '𓄸',
+            EgyptianHieroglyphs::EgyptianHieroglyphF051 => '𓄹',
+            EgyptianHieroglyphs::EgyptianHieroglyphF051a => '𓄺',
+            EgyptianHieroglyphs::EgyptianHieroglyphF051b => '𓄻',
+            EgyptianHieroglyphs::EgyptianHieroglyphF051c => '𓄼',
+            EgyptianHieroglyphs::EgyptianHieroglyphF052 => '𓄽',
+            EgyptianHieroglyphs::EgyptianHieroglyphF053 => '𓄾',
+            EgyptianHieroglyphs::EgyptianHieroglyphG001 => '𓄿',
+            EgyptianHieroglyphs::EgyptianHieroglyphG002 => '𓅀',
+            EgyptianHieroglyphs::EgyptianHieroglyphG003 => '𓅁',
+            EgyptianHieroglyphs::EgyptianHieroglyphG004 => '𓅂',
+            EgyptianHieroglyphs::EgyptianHieroglyphG005 => '𓅃',
+            EgyptianHieroglyphs::EgyptianHieroglyphG006 => '𓅄',
+            EgyptianHieroglyphs::EgyptianHieroglyphG006a => '𓅅',
+            EgyptianHieroglyphs::EgyptianHieroglyphG007 => '𓅆',
+            EgyptianHieroglyphs::EgyptianHieroglyphG007a => '𓅇',
+            EgyptianHieroglyphs::EgyptianHieroglyphG007b => '𓅈',
+            EgyptianHieroglyphs::EgyptianHieroglyphG008 => '𓅉',
+            EgyptianHieroglyphs::EgyptianHieroglyphG009 => '𓅊',
+            EgyptianHieroglyphs::EgyptianHieroglyphG010 => '𓅋',
+            EgyptianHieroglyphs::EgyptianHieroglyphG011 => '𓅌',
+            EgyptianHieroglyphs::EgyptianHieroglyphG011a => '𓅍',
+            EgyptianHieroglyphs::EgyptianHieroglyphG012 => '𓅎',
+            EgyptianHieroglyphs::EgyptianHieroglyphG013 => '𓅏',
+            EgyptianHieroglyphs::EgyptianHieroglyphG014 => '𓅐',
+            EgyptianHieroglyphs::EgyptianHieroglyphG015 => '𓅑',
+            EgyptianHieroglyphs::EgyptianHieroglyphG016 => '𓅒',
+            EgyptianHieroglyphs::EgyptianHieroglyphG017 => '𓅓',
+            EgyptianHieroglyphs::EgyptianHieroglyphG018 => '𓅔',
+            EgyptianHieroglyphs::EgyptianHieroglyphG019 => '𓅕',
+            EgyptianHieroglyphs::EgyptianHieroglyphG020 => '𓅖',
+            EgyptianHieroglyphs::EgyptianHieroglyphG020a => '𓅗',
+            EgyptianHieroglyphs::EgyptianHieroglyphG021 => '𓅘',
+            EgyptianHieroglyphs::EgyptianHieroglyphG022 => '𓅙',
+            EgyptianHieroglyphs::EgyptianHieroglyphG023 => '𓅚',
+            EgyptianHieroglyphs::EgyptianHieroglyphG024 => '𓅛',
+            EgyptianHieroglyphs::EgyptianHieroglyphG025 => '𓅜',
+            EgyptianHieroglyphs::EgyptianHieroglyphG026 => '𓅝',
+            EgyptianHieroglyphs::EgyptianHieroglyphG026a => '𓅞',
+            EgyptianHieroglyphs::EgyptianHieroglyphG027 => '𓅟',
+            EgyptianHieroglyphs::EgyptianHieroglyphG028 => '𓅠',
+            EgyptianHieroglyphs::EgyptianHieroglyphG029 => '𓅡',
+            EgyptianHieroglyphs::EgyptianHieroglyphG030 => '𓅢',
+            EgyptianHieroglyphs::EgyptianHieroglyphG031 => '𓅣',
+            EgyptianHieroglyphs::EgyptianHieroglyphG032 => '𓅤',
+            EgyptianHieroglyphs::EgyptianHieroglyphG033 => '𓅥',
+            EgyptianHieroglyphs::EgyptianHieroglyphG034 => '𓅦',
+            EgyptianHieroglyphs::EgyptianHieroglyphG035 => '𓅧',
+            EgyptianHieroglyphs::EgyptianHieroglyphG036 => '𓅨',
+            EgyptianHieroglyphs::EgyptianHieroglyphG036a => '𓅩',
+            EgyptianHieroglyphs::EgyptianHieroglyphG037 => '𓅪',
+            EgyptianHieroglyphs::EgyptianHieroglyphG037a => '𓅫',
+            EgyptianHieroglyphs::EgyptianHieroglyphG038 => '𓅬',
+            EgyptianHieroglyphs::EgyptianHieroglyphG039 => '𓅭',
+            EgyptianHieroglyphs::EgyptianHieroglyphG040 => '𓅮',
+            EgyptianHieroglyphs::EgyptianHieroglyphG041 => '𓅯',
+            EgyptianHieroglyphs::EgyptianHieroglyphG042 => '𓅰',
+            EgyptianHieroglyphs::EgyptianHieroglyphG043 => '𓅱',
+            EgyptianHieroglyphs::EgyptianHieroglyphG043a => '𓅲',
+            EgyptianHieroglyphs::EgyptianHieroglyphG044 => '𓅳',
+            EgyptianHieroglyphs::EgyptianHieroglyphG045 => '𓅴',
+            EgyptianHieroglyphs::EgyptianHieroglyphG045a => '𓅵',
+            EgyptianHieroglyphs::EgyptianHieroglyphG046 => '𓅶',
+            EgyptianHieroglyphs::EgyptianHieroglyphG047 => '𓅷',
+            EgyptianHieroglyphs::EgyptianHieroglyphG048 => '𓅸',
+            EgyptianHieroglyphs::EgyptianHieroglyphG049 => '𓅹',
+            EgyptianHieroglyphs::EgyptianHieroglyphG050 => '𓅺',
+            EgyptianHieroglyphs::EgyptianHieroglyphG051 => '𓅻',
+            EgyptianHieroglyphs::EgyptianHieroglyphG052 => '𓅼',
+            EgyptianHieroglyphs::EgyptianHieroglyphG053 => '𓅽',
+            EgyptianHieroglyphs::EgyptianHieroglyphG054 => '𓅾',
+            EgyptianHieroglyphs::EgyptianHieroglyphH001 => '𓅿',
+            EgyptianHieroglyphs::EgyptianHieroglyphH002 => '𓆀',
+            EgyptianHieroglyphs::EgyptianHieroglyphH003 => '𓆁',
+            EgyptianHieroglyphs::EgyptianHieroglyphH004 => '𓆂',
+            EgyptianHieroglyphs::EgyptianHieroglyphH005 => '𓆃',
+            EgyptianHieroglyphs::EgyptianHieroglyphH006 => '𓆄',
+            EgyptianHieroglyphs::EgyptianHieroglyphH006a => '𓆅',
+            EgyptianHieroglyphs::EgyptianHieroglyphH007 => '𓆆',
+            EgyptianHieroglyphs::EgyptianHieroglyphH008 => '𓆇',
+            EgyptianHieroglyphs::EgyptianHieroglyphI001 => '𓆈',
+            EgyptianHieroglyphs::EgyptianHieroglyphI002 => '𓆉',
+            EgyptianHieroglyphs::EgyptianHieroglyphI003 => '𓆊',
+            EgyptianHieroglyphs::EgyptianHieroglyphI004 => '𓆋',
+            EgyptianHieroglyphs::EgyptianHieroglyphI005 => '𓆌',
+            EgyptianHieroglyphs::EgyptianHieroglyphI005a => '𓆍',
+            EgyptianHieroglyphs::EgyptianHieroglyphI006 => '𓆎',
+            EgyptianHieroglyphs::EgyptianHieroglyphI007 => '𓆏',
+            EgyptianHieroglyphs::EgyptianHieroglyphI008 => '𓆐',
+            EgyptianHieroglyphs::EgyptianHieroglyphI009 => '𓆑',
+            EgyptianHieroglyphs::EgyptianHieroglyphI009a => '𓆒',
+            EgyptianHieroglyphs::EgyptianHieroglyphI010 => '𓆓',
+            EgyptianHieroglyphs::EgyptianHieroglyphI010a => '𓆔',
+            EgyptianHieroglyphs::EgyptianHieroglyphI011 => '𓆕',
+            EgyptianHieroglyphs::EgyptianHieroglyphI011a => '𓆖',
+            EgyptianHieroglyphs::EgyptianHieroglyphI012 => '𓆗',
+            EgyptianHieroglyphs::EgyptianHieroglyphI013 => '𓆘',
+            EgyptianHieroglyphs::EgyptianHieroglyphI014 => '𓆙',
+            EgyptianHieroglyphs::EgyptianHieroglyphI015 => '𓆚',
+            EgyptianHieroglyphs::EgyptianHieroglyphK001 => '𓆛',
+            EgyptianHieroglyphs::EgyptianHieroglyphK002 => '𓆜',
+            EgyptianHieroglyphs::EgyptianHieroglyphK003 => '𓆝',
+            EgyptianHieroglyphs::EgyptianHieroglyphK004 => '𓆞',
+            EgyptianHieroglyphs::EgyptianHieroglyphK005 => '𓆟',
+            EgyptianHieroglyphs::EgyptianHieroglyphK006 => '𓆠',
+            EgyptianHieroglyphs::EgyptianHieroglyphK007 => '𓆡',
+            EgyptianHieroglyphs::EgyptianHieroglyphK008 => '𓆢',
+            EgyptianHieroglyphs::EgyptianHieroglyphL001 => '𓆣',
+            EgyptianHieroglyphs::EgyptianHieroglyphL002 => '𓆤',
+            EgyptianHieroglyphs::EgyptianHieroglyphL002a => '𓆥',
+            EgyptianHieroglyphs::EgyptianHieroglyphL003 => '𓆦',
+            EgyptianHieroglyphs::EgyptianHieroglyphL004 => '𓆧',
+            EgyptianHieroglyphs::EgyptianHieroglyphL005 => '𓆨',
+            EgyptianHieroglyphs::EgyptianHieroglyphL006 => '𓆩',
+            EgyptianHieroglyphs::EgyptianHieroglyphL006a => '𓆪',
+            EgyptianHieroglyphs::EgyptianHieroglyphL007 => '𓆫',
+            EgyptianHieroglyphs::EgyptianHieroglyphL008 => '𓆬',
+            EgyptianHieroglyphs::EgyptianHieroglyphM001 => '𓆭',
+            EgyptianHieroglyphs::EgyptianHieroglyphM001a => '𓆮',
+            EgyptianHieroglyphs::EgyptianHieroglyphM001b => '𓆯',
+            EgyptianHieroglyphs::EgyptianHieroglyphM002 => '𓆰',
+            EgyptianHieroglyphs::EgyptianHieroglyphM003 => '𓆱',
+            EgyptianHieroglyphs::EgyptianHieroglyphM003a => '𓆲',
+            EgyptianHieroglyphs::EgyptianHieroglyphM004 => '𓆳',
+            EgyptianHieroglyphs::EgyptianHieroglyphM005 => '𓆴',
+            EgyptianHieroglyphs::EgyptianHieroglyphM006 => '𓆵',
+            EgyptianHieroglyphs::EgyptianHieroglyphM007 => '𓆶',
+            EgyptianHieroglyphs::EgyptianHieroglyphM008 => '𓆷',
+            EgyptianHieroglyphs::EgyptianHieroglyphM009 => '𓆸',
+            EgyptianHieroglyphs::EgyptianHieroglyphM010 => '𓆹',
+            EgyptianHieroglyphs::EgyptianHieroglyphM010a => '𓆺',
+            EgyptianHieroglyphs::EgyptianHieroglyphM011 => '𓆻',
+            EgyptianHieroglyphs::EgyptianHieroglyphM012 => '𓆼',
+            EgyptianHieroglyphs::EgyptianHieroglyphM012a => '𓆽',
+            EgyptianHieroglyphs::EgyptianHieroglyphM012b => '𓆾',
+            EgyptianHieroglyphs::EgyptianHieroglyphM012c => '𓆿',
+            EgyptianHieroglyphs::EgyptianHieroglyphM012d => '𓇀',
+            EgyptianHieroglyphs::EgyptianHieroglyphM012e => '𓇁',
+            EgyptianHieroglyphs::EgyptianHieroglyphM012f => '𓇂',
+            EgyptianHieroglyphs::EgyptianHieroglyphM012g => '𓇃',
+            EgyptianHieroglyphs::EgyptianHieroglyphM012h => '𓇄',
+            EgyptianHieroglyphs::EgyptianHieroglyphM013 => '𓇅',
+            EgyptianHieroglyphs::EgyptianHieroglyphM014 => '𓇆',
+            EgyptianHieroglyphs::EgyptianHieroglyphM015 => '𓇇',
+            EgyptianHieroglyphs::EgyptianHieroglyphM015a => '𓇈',
+            EgyptianHieroglyphs::EgyptianHieroglyphM016 => '𓇉',
+            EgyptianHieroglyphs::EgyptianHieroglyphM016a => '𓇊',
+            EgyptianHieroglyphs::EgyptianHieroglyphM017 => '𓇋',
+            EgyptianHieroglyphs::EgyptianHieroglyphM017a => '𓇌',
+            EgyptianHieroglyphs::EgyptianHieroglyphM018 => '𓇍',
+            EgyptianHieroglyphs::EgyptianHieroglyphM019 => '𓇎',
+            EgyptianHieroglyphs::EgyptianHieroglyphM020 => '𓇏',
+            EgyptianHieroglyphs::EgyptianHieroglyphM021 => '𓇐',
+            EgyptianHieroglyphs::EgyptianHieroglyphM022 => '𓇑',
+            EgyptianHieroglyphs::EgyptianHieroglyphM022a => '𓇒',
+            EgyptianHieroglyphs::EgyptianHieroglyphM023 => '𓇓',
+            EgyptianHieroglyphs::EgyptianHieroglyphM024 => '𓇔',
+            EgyptianHieroglyphs::EgyptianHieroglyphM024a => '𓇕',
+            EgyptianHieroglyphs::EgyptianHieroglyphM025 => '𓇖',
+            EgyptianHieroglyphs::EgyptianHieroglyphM026 => '𓇗',
+            EgyptianHieroglyphs::EgyptianHieroglyphM027 => '𓇘',
+            EgyptianHieroglyphs::EgyptianHieroglyphM028 => '𓇙',
+            EgyptianHieroglyphs::EgyptianHieroglyphM028a => '𓇚',
+            EgyptianHieroglyphs::EgyptianHieroglyphM029 => '𓇛',
+            EgyptianHieroglyphs::EgyptianHieroglyphM030 => '𓇜',
+            EgyptianHieroglyphs::EgyptianHieroglyphM031 => '𓇝',
+            EgyptianHieroglyphs::EgyptianHieroglyphM031a => '𓇞',
+            EgyptianHieroglyphs::EgyptianHieroglyphM032 => '𓇟',
+            EgyptianHieroglyphs::EgyptianHieroglyphM033 => '𓇠',
+            EgyptianHieroglyphs::EgyptianHieroglyphM033a => '𓇡',
+            EgyptianHieroglyphs::EgyptianHieroglyphM033b => '𓇢',
+            EgyptianHieroglyphs::EgyptianHieroglyphM034 => '𓇣',
+            EgyptianHieroglyphs::EgyptianHieroglyphM035 => '𓇤',
+            EgyptianHieroglyphs::EgyptianHieroglyphM036 => '𓇥',
+            EgyptianHieroglyphs::EgyptianHieroglyphM037 => '𓇦',
+            EgyptianHieroglyphs::EgyptianHieroglyphM038 => '𓇧',
+            EgyptianHieroglyphs::EgyptianHieroglyphM039 => '𓇨',
+            EgyptianHieroglyphs::EgyptianHieroglyphM040 => '𓇩',
+            EgyptianHieroglyphs::EgyptianHieroglyphM040a => '𓇪',
+            EgyptianHieroglyphs::EgyptianHieroglyphM041 => '𓇫',
+            EgyptianHieroglyphs::EgyptianHieroglyphM042 => '𓇬',
+            EgyptianHieroglyphs::EgyptianHieroglyphM043 => '𓇭',
+            EgyptianHieroglyphs::EgyptianHieroglyphM044 => '𓇮',
+            EgyptianHieroglyphs::EgyptianHieroglyphN001 => '𓇯',
+            EgyptianHieroglyphs::EgyptianHieroglyphN002 => '𓇰',
+            EgyptianHieroglyphs::EgyptianHieroglyphN003 => '𓇱',
+            EgyptianHieroglyphs::EgyptianHieroglyphN004 => '𓇲',
+            EgyptianHieroglyphs::EgyptianHieroglyphN005 => '𓇳',
+            EgyptianHieroglyphs::EgyptianHieroglyphN006 => '𓇴',
+            EgyptianHieroglyphs::EgyptianHieroglyphN007 => '𓇵',
+            EgyptianHieroglyphs::EgyptianHieroglyphN008 => '𓇶',
+            EgyptianHieroglyphs::EgyptianHieroglyphN009 => '𓇷',
+            EgyptianHieroglyphs::EgyptianHieroglyphN010 => '𓇸',
+            EgyptianHieroglyphs::EgyptianHieroglyphN011 => '𓇹',
+            EgyptianHieroglyphs::EgyptianHieroglyphN012 => '𓇺',
+            EgyptianHieroglyphs::EgyptianHieroglyphN013 => '𓇻',
+            EgyptianHieroglyphs::EgyptianHieroglyphN014 => '𓇼',
+            EgyptianHieroglyphs::EgyptianHieroglyphN015 => '𓇽',
+            EgyptianHieroglyphs::EgyptianHieroglyphN016 => '𓇾',
+            EgyptianHieroglyphs::EgyptianHieroglyphN017 => '𓇿',
+            EgyptianHieroglyphs::EgyptianHieroglyphN018 => '𓈀',
+            EgyptianHieroglyphs::EgyptianHieroglyphN018a => '𓈁',
+            EgyptianHieroglyphs::EgyptianHieroglyphN018b => '𓈂',
+            EgyptianHieroglyphs::EgyptianHieroglyphN019 => '𓈃',
+            EgyptianHieroglyphs::EgyptianHieroglyphN020 => '𓈄',
+            EgyptianHieroglyphs::EgyptianHieroglyphN021 => '𓈅',
+            EgyptianHieroglyphs::EgyptianHieroglyphN022 => '𓈆',
+            EgyptianHieroglyphs::EgyptianHieroglyphN023 => '𓈇',
+            EgyptianHieroglyphs::EgyptianHieroglyphN024 => '𓈈',
+            EgyptianHieroglyphs::EgyptianHieroglyphN025 => '𓈉',
+            EgyptianHieroglyphs::EgyptianHieroglyphN025a => '𓈊',
+            EgyptianHieroglyphs::EgyptianHieroglyphN026 => '𓈋',
+            EgyptianHieroglyphs::EgyptianHieroglyphN027 => '𓈌',
+            EgyptianHieroglyphs::EgyptianHieroglyphN028 => '𓈍',
+            EgyptianHieroglyphs::EgyptianHieroglyphN029 => '𓈎',
+            EgyptianHieroglyphs::EgyptianHieroglyphN030 => '𓈏',
+            EgyptianHieroglyphs::EgyptianHieroglyphN031 => '𓈐',
+            EgyptianHieroglyphs::EgyptianHieroglyphN032 => '𓈑',
+            EgyptianHieroglyphs::EgyptianHieroglyphN033 => '𓈒',
+            EgyptianHieroglyphs::EgyptianHieroglyphN033a => '𓈓',
+            EgyptianHieroglyphs::EgyptianHieroglyphN034 => '𓈔',
+            EgyptianHieroglyphs::EgyptianHieroglyphN034a => '𓈕',
+            EgyptianHieroglyphs::EgyptianHieroglyphN035 => '𓈖',
+            EgyptianHieroglyphs::EgyptianHieroglyphN035a => '𓈗',
+            EgyptianHieroglyphs::EgyptianHieroglyphN036 => '𓈘',
+            EgyptianHieroglyphs::EgyptianHieroglyphN037 => '𓈙',
+            EgyptianHieroglyphs::EgyptianHieroglyphN037a => '𓈚',
+            EgyptianHieroglyphs::EgyptianHieroglyphN038 => '𓈛',
+            EgyptianHieroglyphs::EgyptianHieroglyphN039 => '𓈜',
+            EgyptianHieroglyphs::EgyptianHieroglyphN040 => '𓈝',
+            EgyptianHieroglyphs::EgyptianHieroglyphN041 => '𓈞',
+            EgyptianHieroglyphs::EgyptianHieroglyphN042 => '𓈟',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl001 => '𓈠',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl002 => '𓈡',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl003 => '𓈢',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl004 => '𓈣',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl005 => '𓈤',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl005a => '𓈥',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl006 => '𓈦',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl007 => '𓈧',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl008 => '𓈨',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl009 => '𓈩',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl010 => '𓈪',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl011 => '𓈫',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl012 => '𓈬',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl013 => '𓈭',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl014 => '𓈮',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl015 => '𓈯',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl016 => '𓈰',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl017 => '𓈱',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl017a => '𓈲',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl018 => '𓈳',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl019 => '𓈴',
+            EgyptianHieroglyphs::EgyptianHieroglyphNl020 => '𓈵',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu001 => '𓈶',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu002 => '𓈷',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu003 => '𓈸',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu004 => '𓈹',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu005 => '𓈺',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu006 => '𓈻',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu007 => '𓈼',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu008 => '𓈽',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu009 => '𓈾',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu010 => '𓈿',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu010a => '𓉀',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu011 => '𓉁',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu011a => '𓉂',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu012 => '𓉃',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu013 => '𓉄',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu014 => '𓉅',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu015 => '𓉆',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu016 => '𓉇',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu017 => '𓉈',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu018 => '𓉉',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu018a => '𓉊',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu019 => '𓉋',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu020 => '𓉌',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu021 => '𓉍',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu022 => '𓉎',
+            EgyptianHieroglyphs::EgyptianHieroglyphNu022a => '𓉏',
+            EgyptianHieroglyphs::EgyptianHieroglyphO001 => '𓉐',
+            EgyptianHieroglyphs::EgyptianHieroglyphO001a => '𓉑',
+            EgyptianHieroglyphs::EgyptianHieroglyphO002 => '𓉒',
+            EgyptianHieroglyphs::EgyptianHieroglyphO003 => '𓉓',
+            EgyptianHieroglyphs::EgyptianHieroglyphO004 => '𓉔',
+            EgyptianHieroglyphs::EgyptianHieroglyphO005 => '𓉕',
+            EgyptianHieroglyphs::EgyptianHieroglyphO005a => '𓉖',
+            EgyptianHieroglyphs::EgyptianHieroglyphO006 => '𓉗',
+            EgyptianHieroglyphs::EgyptianHieroglyphO006a => '𓉘',
+            EgyptianHieroglyphs::EgyptianHieroglyphO006b => '𓉙',
+            EgyptianHieroglyphs::EgyptianHieroglyphO006c => '𓉚',
+            EgyptianHieroglyphs::EgyptianHieroglyphO006d => '𓉛',
+            EgyptianHieroglyphs::EgyptianHieroglyphO006e => '𓉜',
+            EgyptianHieroglyphs::EgyptianHieroglyphO006f => '𓉝',
+            EgyptianHieroglyphs::EgyptianHieroglyphO007 => '𓉞',
+            EgyptianHieroglyphs::EgyptianHieroglyphO008 => '𓉟',
+            EgyptianHieroglyphs::EgyptianHieroglyphO009 => '𓉠',
+            EgyptianHieroglyphs::EgyptianHieroglyphO010 => '𓉡',
+            EgyptianHieroglyphs::EgyptianHieroglyphO010a => '𓉢',
+            EgyptianHieroglyphs::EgyptianHieroglyphO010b => '𓉣',
+            EgyptianHieroglyphs::EgyptianHieroglyphO010c => '𓉤',
+            EgyptianHieroglyphs::EgyptianHieroglyphO011 => '𓉥',
+            EgyptianHieroglyphs::EgyptianHieroglyphO012 => '𓉦',
+            EgyptianHieroglyphs::EgyptianHieroglyphO013 => '𓉧',
+            EgyptianHieroglyphs::EgyptianHieroglyphO014 => '𓉨',
+            EgyptianHieroglyphs::EgyptianHieroglyphO015 => '𓉩',
+            EgyptianHieroglyphs::EgyptianHieroglyphO016 => '𓉪',
+            EgyptianHieroglyphs::EgyptianHieroglyphO017 => '𓉫',
+            EgyptianHieroglyphs::EgyptianHieroglyphO018 => '𓉬',
+            EgyptianHieroglyphs::EgyptianHieroglyphO019 => '𓉭',
+            EgyptianHieroglyphs::EgyptianHieroglyphO019a => '𓉮',
+            EgyptianHieroglyphs::EgyptianHieroglyphO020 => '𓉯',
+            EgyptianHieroglyphs::EgyptianHieroglyphO020a => '𓉰',
+            EgyptianHieroglyphs::EgyptianHieroglyphO021 => '𓉱',
+            EgyptianHieroglyphs::EgyptianHieroglyphO022 => '𓉲',
+            EgyptianHieroglyphs::EgyptianHieroglyphO023 => '𓉳',
+            EgyptianHieroglyphs::EgyptianHieroglyphO024 => '𓉴',
+            EgyptianHieroglyphs::EgyptianHieroglyphO024a => '𓉵',
+            EgyptianHieroglyphs::EgyptianHieroglyphO025 => '𓉶',
+            EgyptianHieroglyphs::EgyptianHieroglyphO025a => '𓉷',
+            EgyptianHieroglyphs::EgyptianHieroglyphO026 => '𓉸',
+            EgyptianHieroglyphs::EgyptianHieroglyphO027 => '𓉹',
+            EgyptianHieroglyphs::EgyptianHieroglyphO028 => '𓉺',
+            EgyptianHieroglyphs::EgyptianHieroglyphO029 => '𓉻',
+            EgyptianHieroglyphs::EgyptianHieroglyphO029a => '𓉼',
+            EgyptianHieroglyphs::EgyptianHieroglyphO030 => '𓉽',
+            EgyptianHieroglyphs::EgyptianHieroglyphO030a => '𓉾',
+            EgyptianHieroglyphs::EgyptianHieroglyphO031 => '𓉿',
+            EgyptianHieroglyphs::EgyptianHieroglyphO032 => '𓊀',
+            EgyptianHieroglyphs::EgyptianHieroglyphO033 => '𓊁',
+            EgyptianHieroglyphs::EgyptianHieroglyphO033a => '𓊂',
+            EgyptianHieroglyphs::EgyptianHieroglyphO034 => '𓊃',
+            EgyptianHieroglyphs::EgyptianHieroglyphO035 => '𓊄',
+            EgyptianHieroglyphs::EgyptianHieroglyphO036 => '𓊅',
+            EgyptianHieroglyphs::EgyptianHieroglyphO036a => '𓊆',
+            EgyptianHieroglyphs::EgyptianHieroglyphO036b => '𓊇',
+            EgyptianHieroglyphs::EgyptianHieroglyphO036c => '𓊈',
+            EgyptianHieroglyphs::EgyptianHieroglyphO036d => '𓊉',
+            EgyptianHieroglyphs::EgyptianHieroglyphO037 => '𓊊',
+            EgyptianHieroglyphs::EgyptianHieroglyphO038 => '𓊋',
+            EgyptianHieroglyphs::EgyptianHieroglyphO039 => '𓊌',
+            EgyptianHieroglyphs::EgyptianHieroglyphO040 => '𓊍',
+            EgyptianHieroglyphs::EgyptianHieroglyphO041 => '𓊎',
+            EgyptianHieroglyphs::EgyptianHieroglyphO042 => '𓊏',
+            EgyptianHieroglyphs::EgyptianHieroglyphO043 => '𓊐',
+            EgyptianHieroglyphs::EgyptianHieroglyphO044 => '𓊑',
+            EgyptianHieroglyphs::EgyptianHieroglyphO045 => '𓊒',
+            EgyptianHieroglyphs::EgyptianHieroglyphO046 => '𓊓',
+            EgyptianHieroglyphs::EgyptianHieroglyphO047 => '𓊔',
+            EgyptianHieroglyphs::EgyptianHieroglyphO048 => '𓊕',
+            EgyptianHieroglyphs::EgyptianHieroglyphO049 => '𓊖',
+            EgyptianHieroglyphs::EgyptianHieroglyphO050 => '𓊗',
+            EgyptianHieroglyphs::EgyptianHieroglyphO050a => '𓊘',
+            EgyptianHieroglyphs::EgyptianHieroglyphO050b => '𓊙',
+            EgyptianHieroglyphs::EgyptianHieroglyphO051 => '𓊚',
+            EgyptianHieroglyphs::EgyptianHieroglyphP001 => '𓊛',
+            EgyptianHieroglyphs::EgyptianHieroglyphP001a => '𓊜',
+            EgyptianHieroglyphs::EgyptianHieroglyphP002 => '𓊝',
+            EgyptianHieroglyphs::EgyptianHieroglyphP003 => '𓊞',
+            EgyptianHieroglyphs::EgyptianHieroglyphP003a => '𓊟',
+            EgyptianHieroglyphs::EgyptianHieroglyphP004 => '𓊠',
+            EgyptianHieroglyphs::EgyptianHieroglyphP005 => '𓊡',
+            EgyptianHieroglyphs::EgyptianHieroglyphP006 => '𓊢',
+            EgyptianHieroglyphs::EgyptianHieroglyphP007 => '𓊣',
+            EgyptianHieroglyphs::EgyptianHieroglyphP008 => '𓊤',
+            EgyptianHieroglyphs::EgyptianHieroglyphP009 => '𓊥',
+            EgyptianHieroglyphs::EgyptianHieroglyphP010 => '𓊦',
+            EgyptianHieroglyphs::EgyptianHieroglyphP011 => '𓊧',
+            EgyptianHieroglyphs::EgyptianHieroglyphQ001 => '𓊨',
+            EgyptianHieroglyphs::EgyptianHieroglyphQ002 => '𓊩',
+            EgyptianHieroglyphs::EgyptianHieroglyphQ003 => '𓊪',
+            EgyptianHieroglyphs::EgyptianHieroglyphQ004 => '𓊫',
+            EgyptianHieroglyphs::EgyptianHieroglyphQ005 => '𓊬',
+            EgyptianHieroglyphs::EgyptianHieroglyphQ006 => '𓊭',
+            EgyptianHieroglyphs::EgyptianHieroglyphQ007 => '𓊮',
+            EgyptianHieroglyphs::EgyptianHieroglyphR001 => '𓊯',
+            EgyptianHieroglyphs::EgyptianHieroglyphR002 => '𓊰',
+            EgyptianHieroglyphs::EgyptianHieroglyphR002a => '𓊱',
+            EgyptianHieroglyphs::EgyptianHieroglyphR003 => '𓊲',
+            EgyptianHieroglyphs::EgyptianHieroglyphR003a => '𓊳',
+            EgyptianHieroglyphs::EgyptianHieroglyphR003b => '𓊴',
+            EgyptianHieroglyphs::EgyptianHieroglyphR004 => '𓊵',
+            EgyptianHieroglyphs::EgyptianHieroglyphR005 => '𓊶',
+            EgyptianHieroglyphs::EgyptianHieroglyphR006 => '𓊷',
+            EgyptianHieroglyphs::EgyptianHieroglyphR007 => '𓊸',
+            EgyptianHieroglyphs::EgyptianHieroglyphR008 => '𓊹',
+            EgyptianHieroglyphs::EgyptianHieroglyphR009 => '𓊺',
+            EgyptianHieroglyphs::EgyptianHieroglyphR010 => '𓊻',
+            EgyptianHieroglyphs::EgyptianHieroglyphR010a => '𓊼',
+            EgyptianHieroglyphs::EgyptianHieroglyphR011 => '𓊽',
+            EgyptianHieroglyphs::EgyptianHieroglyphR012 => '𓊾',
+            EgyptianHieroglyphs::EgyptianHieroglyphR013 => '𓊿',
+            EgyptianHieroglyphs::EgyptianHieroglyphR014 => '𓋀',
+            EgyptianHieroglyphs::EgyptianHieroglyphR015 => '𓋁',
+            EgyptianHieroglyphs::EgyptianHieroglyphR016 => '𓋂',
+            EgyptianHieroglyphs::EgyptianHieroglyphR016a => '𓋃',
+            EgyptianHieroglyphs::EgyptianHieroglyphR017 => '𓋄',
+            EgyptianHieroglyphs::EgyptianHieroglyphR018 => '𓋅',
+            EgyptianHieroglyphs::EgyptianHieroglyphR019 => '𓋆',
+            EgyptianHieroglyphs::EgyptianHieroglyphR020 => '𓋇',
+            EgyptianHieroglyphs::EgyptianHieroglyphR021 => '𓋈',
+            EgyptianHieroglyphs::EgyptianHieroglyphR022 => '𓋉',
+            EgyptianHieroglyphs::EgyptianHieroglyphR023 => '𓋊',
+            EgyptianHieroglyphs::EgyptianHieroglyphR024 => '𓋋',
+            EgyptianHieroglyphs::EgyptianHieroglyphR025 => '𓋌',
+            EgyptianHieroglyphs::EgyptianHieroglyphR026 => '𓋍',
+            EgyptianHieroglyphs::EgyptianHieroglyphR027 => '𓋎',
+            EgyptianHieroglyphs::EgyptianHieroglyphR028 => '𓋏',
+            EgyptianHieroglyphs::EgyptianHieroglyphR029 => '𓋐',
+            EgyptianHieroglyphs::EgyptianHieroglyphS001 => '𓋑',
+            EgyptianHieroglyphs::EgyptianHieroglyphS002 => '𓋒',
+            EgyptianHieroglyphs::EgyptianHieroglyphS002a => '𓋓',
+            EgyptianHieroglyphs::EgyptianHieroglyphS003 => '𓋔',
+            EgyptianHieroglyphs::EgyptianHieroglyphS004 => '𓋕',
+            EgyptianHieroglyphs::EgyptianHieroglyphS005 => '𓋖',
+            EgyptianHieroglyphs::EgyptianHieroglyphS006 => '𓋗',
+            EgyptianHieroglyphs::EgyptianHieroglyphS006a => '𓋘',
+            EgyptianHieroglyphs::EgyptianHieroglyphS007 => '𓋙',
+            EgyptianHieroglyphs::EgyptianHieroglyphS008 => '𓋚',
+            EgyptianHieroglyphs::EgyptianHieroglyphS009 => '𓋛',
+            EgyptianHieroglyphs::EgyptianHieroglyphS010 => '𓋜',
+            EgyptianHieroglyphs::EgyptianHieroglyphS011 => '𓋝',
+            EgyptianHieroglyphs::EgyptianHieroglyphS012 => '𓋞',
+            EgyptianHieroglyphs::EgyptianHieroglyphS013 => '𓋟',
+            EgyptianHieroglyphs::EgyptianHieroglyphS014 => '𓋠',
+            EgyptianHieroglyphs::EgyptianHieroglyphS014a => '𓋡',
+            EgyptianHieroglyphs::EgyptianHieroglyphS014b => '𓋢',
+            EgyptianHieroglyphs::EgyptianHieroglyphS015 => '𓋣',
+            EgyptianHieroglyphs::EgyptianHieroglyphS016 => '𓋤',
+            EgyptianHieroglyphs::EgyptianHieroglyphS017 => '𓋥',
+            EgyptianHieroglyphs::EgyptianHieroglyphS017a => '𓋦',
+            EgyptianHieroglyphs::EgyptianHieroglyphS018 => '𓋧',
+            EgyptianHieroglyphs::EgyptianHieroglyphS019 => '𓋨',
+            EgyptianHieroglyphs::EgyptianHieroglyphS020 => '𓋩',
+            EgyptianHieroglyphs::EgyptianHieroglyphS021 => '𓋪',
+            EgyptianHieroglyphs::EgyptianHieroglyphS022 => '𓋫',
+            EgyptianHieroglyphs::EgyptianHieroglyphS023 => '𓋬',
+            EgyptianHieroglyphs::EgyptianHieroglyphS024 => '𓋭',
+            EgyptianHieroglyphs::EgyptianHieroglyphS025 => '𓋮',
+            EgyptianHieroglyphs::EgyptianHieroglyphS026 => '𓋯',
+            EgyptianHieroglyphs::EgyptianHieroglyphS026a => '𓋰',
+            EgyptianHieroglyphs::EgyptianHieroglyphS026b => '𓋱',
+            EgyptianHieroglyphs::EgyptianHieroglyphS027 => '𓋲',
+            EgyptianHieroglyphs::EgyptianHieroglyphS028 => '𓋳',
+            EgyptianHieroglyphs::EgyptianHieroglyphS029 => '𓋴',
+            EgyptianHieroglyphs::EgyptianHieroglyphS030 => '𓋵',
+            EgyptianHieroglyphs::EgyptianHieroglyphS031 => '𓋶',
+            EgyptianHieroglyphs::EgyptianHieroglyphS032 => '𓋷',
+            EgyptianHieroglyphs::EgyptianHieroglyphS033 => '𓋸',
+            EgyptianHieroglyphs::EgyptianHieroglyphS034 => '𓋹',
+            EgyptianHieroglyphs::EgyptianHieroglyphS035 => '𓋺',
+            EgyptianHieroglyphs::EgyptianHieroglyphS035a => '𓋻',
+            EgyptianHieroglyphs::EgyptianHieroglyphS036 => '𓋼',
+            EgyptianHieroglyphs::EgyptianHieroglyphS037 => '𓋽',
+            EgyptianHieroglyphs::EgyptianHieroglyphS038 => '𓋾',
+            EgyptianHieroglyphs::EgyptianHieroglyphS039 => '𓋿',
+            EgyptianHieroglyphs::EgyptianHieroglyphS040 => '𓌀',
+            EgyptianHieroglyphs::EgyptianHieroglyphS041 => '𓌁',
+            EgyptianHieroglyphs::EgyptianHieroglyphS042 => '𓌂',
+            EgyptianHieroglyphs::EgyptianHieroglyphS043 => '𓌃',
+            EgyptianHieroglyphs::EgyptianHieroglyphS044 => '𓌄',
+            EgyptianHieroglyphs::EgyptianHieroglyphS045 => '𓌅',
+            EgyptianHieroglyphs::EgyptianHieroglyphS046 => '𓌆',
+            EgyptianHieroglyphs::EgyptianHieroglyphT001 => '𓌇',
+            EgyptianHieroglyphs::EgyptianHieroglyphT002 => '𓌈',
+            EgyptianHieroglyphs::EgyptianHieroglyphT003 => '𓌉',
+            EgyptianHieroglyphs::EgyptianHieroglyphT003a => '𓌊',
+            EgyptianHieroglyphs::EgyptianHieroglyphT004 => '𓌋',
+            EgyptianHieroglyphs::EgyptianHieroglyphT005 => '𓌌',
+            EgyptianHieroglyphs::EgyptianHieroglyphT006 => '𓌍',
+            EgyptianHieroglyphs::EgyptianHieroglyphT007 => '𓌎',
+            EgyptianHieroglyphs::EgyptianHieroglyphT007a => '𓌏',
+            EgyptianHieroglyphs::EgyptianHieroglyphT008 => '𓌐',
+            EgyptianHieroglyphs::EgyptianHieroglyphT008a => '𓌑',
+            EgyptianHieroglyphs::EgyptianHieroglyphT009 => '𓌒',
+            EgyptianHieroglyphs::EgyptianHieroglyphT009a => '𓌓',
+            EgyptianHieroglyphs::EgyptianHieroglyphT010 => '𓌔',
+            EgyptianHieroglyphs::EgyptianHieroglyphT011 => '𓌕',
+            EgyptianHieroglyphs::EgyptianHieroglyphT011a => '𓌖',
+            EgyptianHieroglyphs::EgyptianHieroglyphT012 => '𓌗',
+            EgyptianHieroglyphs::EgyptianHieroglyphT013 => '𓌘',
+            EgyptianHieroglyphs::EgyptianHieroglyphT014 => '𓌙',
+            EgyptianHieroglyphs::EgyptianHieroglyphT015 => '𓌚',
+            EgyptianHieroglyphs::EgyptianHieroglyphT016 => '𓌛',
+            EgyptianHieroglyphs::EgyptianHieroglyphT016a => '𓌜',
+            EgyptianHieroglyphs::EgyptianHieroglyphT017 => '𓌝',
+            EgyptianHieroglyphs::EgyptianHieroglyphT018 => '𓌞',
+            EgyptianHieroglyphs::EgyptianHieroglyphT019 => '𓌟',
+            EgyptianHieroglyphs::EgyptianHieroglyphT020 => '𓌠',
+            EgyptianHieroglyphs::EgyptianHieroglyphT021 => '𓌡',
+            EgyptianHieroglyphs::EgyptianHieroglyphT022 => '𓌢',
+            EgyptianHieroglyphs::EgyptianHieroglyphT023 => '𓌣',
+            EgyptianHieroglyphs::EgyptianHieroglyphT024 => '𓌤',
+            EgyptianHieroglyphs::EgyptianHieroglyphT025 => '𓌥',
+            EgyptianHieroglyphs::EgyptianHieroglyphT026 => '𓌦',
+            EgyptianHieroglyphs::EgyptianHieroglyphT027 => '𓌧',
+            EgyptianHieroglyphs::EgyptianHieroglyphT028 => '𓌨',
+            EgyptianHieroglyphs::EgyptianHieroglyphT029 => '𓌩',
+            EgyptianHieroglyphs::EgyptianHieroglyphT030 => '𓌪',
+            EgyptianHieroglyphs::EgyptianHieroglyphT031 => '𓌫',
+            EgyptianHieroglyphs::EgyptianHieroglyphT032 => '𓌬',
+            EgyptianHieroglyphs::EgyptianHieroglyphT032a => '𓌭',
+            EgyptianHieroglyphs::EgyptianHieroglyphT033 => '𓌮',
+            EgyptianHieroglyphs::EgyptianHieroglyphT033a => '𓌯',
+            EgyptianHieroglyphs::EgyptianHieroglyphT034 => '𓌰',
+            EgyptianHieroglyphs::EgyptianHieroglyphT035 => '𓌱',
+            EgyptianHieroglyphs::EgyptianHieroglyphT036 => '𓌲',
+            EgyptianHieroglyphs::EgyptianHieroglyphU001 => '𓌳',
+            EgyptianHieroglyphs::EgyptianHieroglyphU002 => '𓌴',
+            EgyptianHieroglyphs::EgyptianHieroglyphU003 => '𓌵',
+            EgyptianHieroglyphs::EgyptianHieroglyphU004 => '𓌶',
+            EgyptianHieroglyphs::EgyptianHieroglyphU005 => '𓌷',
+            EgyptianHieroglyphs::EgyptianHieroglyphU006 => '𓌸',
+            EgyptianHieroglyphs::EgyptianHieroglyphU006a => '𓌹',
+            EgyptianHieroglyphs::EgyptianHieroglyphU006b => '𓌺',
+            EgyptianHieroglyphs::EgyptianHieroglyphU007 => '𓌻',
+            EgyptianHieroglyphs::EgyptianHieroglyphU008 => '𓌼',
+            EgyptianHieroglyphs::EgyptianHieroglyphU009 => '𓌽',
+            EgyptianHieroglyphs::EgyptianHieroglyphU010 => '𓌾',
+            EgyptianHieroglyphs::EgyptianHieroglyphU011 => '𓌿',
+            EgyptianHieroglyphs::EgyptianHieroglyphU012 => '𓍀',
+            EgyptianHieroglyphs::EgyptianHieroglyphU013 => '𓍁',
+            EgyptianHieroglyphs::EgyptianHieroglyphU014 => '𓍂',
+            EgyptianHieroglyphs::EgyptianHieroglyphU015 => '𓍃',
+            EgyptianHieroglyphs::EgyptianHieroglyphU016 => '𓍄',
+            EgyptianHieroglyphs::EgyptianHieroglyphU017 => '𓍅',
+            EgyptianHieroglyphs::EgyptianHieroglyphU018 => '𓍆',
+            EgyptianHieroglyphs::EgyptianHieroglyphU019 => '𓍇',
+            EgyptianHieroglyphs::EgyptianHieroglyphU020 => '𓍈',
+            EgyptianHieroglyphs::EgyptianHieroglyphU021 => '𓍉',
+            EgyptianHieroglyphs::EgyptianHieroglyphU022 => '𓍊',
+            EgyptianHieroglyphs::EgyptianHieroglyphU023 => '𓍋',
+            EgyptianHieroglyphs::EgyptianHieroglyphU023a => '𓍌',
+            EgyptianHieroglyphs::EgyptianHieroglyphU024 => '𓍍',
+            EgyptianHieroglyphs::EgyptianHieroglyphU025 => '𓍎',
+            EgyptianHieroglyphs::EgyptianHieroglyphU026 => '𓍏',
+            EgyptianHieroglyphs::EgyptianHieroglyphU027 => '𓍐',
+            EgyptianHieroglyphs::EgyptianHieroglyphU028 => '𓍑',
+            EgyptianHieroglyphs::EgyptianHieroglyphU029 => '𓍒',
+            EgyptianHieroglyphs::EgyptianHieroglyphU029a => '𓍓',
+            EgyptianHieroglyphs::EgyptianHieroglyphU030 => '𓍔',
+            EgyptianHieroglyphs::EgyptianHieroglyphU031 => '𓍕',
+            EgyptianHieroglyphs::EgyptianHieroglyphU032 => '𓍖',
+            EgyptianHieroglyphs::EgyptianHieroglyphU032a => '𓍗',
+            EgyptianHieroglyphs::EgyptianHieroglyphU033 => '𓍘',
+            EgyptianHieroglyphs::EgyptianHieroglyphU034 => '𓍙',
+            EgyptianHieroglyphs::EgyptianHieroglyphU035 => '𓍚',
+            EgyptianHieroglyphs::EgyptianHieroglyphU036 => '𓍛',
+            EgyptianHieroglyphs::EgyptianHieroglyphU037 => '𓍜',
+            EgyptianHieroglyphs::EgyptianHieroglyphU038 => '𓍝',
+            EgyptianHieroglyphs::EgyptianHieroglyphU039 => '𓍞',
+            EgyptianHieroglyphs::EgyptianHieroglyphU040 => '𓍟',
+            EgyptianHieroglyphs::EgyptianHieroglyphU041 => '𓍠',
+            EgyptianHieroglyphs::EgyptianHieroglyphU042 => '𓍡',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001 => '𓍢',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001a => '𓍣',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001b => '𓍤',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001c => '𓍥',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001d => '𓍦',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001e => '𓍧',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001f => '𓍨',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001g => '𓍩',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001h => '𓍪',
+            EgyptianHieroglyphs::EgyptianHieroglyphV001i => '𓍫',
+            EgyptianHieroglyphs::EgyptianHieroglyphV002 => '𓍬',
+            EgyptianHieroglyphs::EgyptianHieroglyphV002a => '𓍭',
+            EgyptianHieroglyphs::EgyptianHieroglyphV003 => '𓍮',
+            EgyptianHieroglyphs::EgyptianHieroglyphV004 => '𓍯',
+            EgyptianHieroglyphs::EgyptianHieroglyphV005 => '𓍰',
+            EgyptianHieroglyphs::EgyptianHieroglyphV006 => '𓍱',
+            EgyptianHieroglyphs::EgyptianHieroglyphV007 => '𓍲',
+            EgyptianHieroglyphs::EgyptianHieroglyphV007a => '𓍳',
+            EgyptianHieroglyphs::EgyptianHieroglyphV007b => '𓍴',
+            EgyptianHieroglyphs::EgyptianHieroglyphV008 => '𓍵',
+            EgyptianHieroglyphs::EgyptianHieroglyphV009 => '𓍶',
+            EgyptianHieroglyphs::EgyptianHieroglyphV010 => '𓍷',
+            EgyptianHieroglyphs::EgyptianHieroglyphV011 => '𓍸',
+            EgyptianHieroglyphs::EgyptianHieroglyphV011a => '𓍹',
+            EgyptianHieroglyphs::EgyptianHieroglyphV011b => '𓍺',
+            EgyptianHieroglyphs::EgyptianHieroglyphV011c => '𓍻',
+            EgyptianHieroglyphs::EgyptianHieroglyphV012 => '𓍼',
+            EgyptianHieroglyphs::EgyptianHieroglyphV012a => '𓍽',
+            EgyptianHieroglyphs::EgyptianHieroglyphV012b => '𓍾',
+            EgyptianHieroglyphs::EgyptianHieroglyphV013 => '𓍿',
+            EgyptianHieroglyphs::EgyptianHieroglyphV014 => '𓎀',
+            EgyptianHieroglyphs::EgyptianHieroglyphV015 => '𓎁',
+            EgyptianHieroglyphs::EgyptianHieroglyphV016 => '𓎂',
+            EgyptianHieroglyphs::EgyptianHieroglyphV017 => '𓎃',
+            EgyptianHieroglyphs::EgyptianHieroglyphV018 => '𓎄',
+            EgyptianHieroglyphs::EgyptianHieroglyphV019 => '𓎅',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020 => '𓎆',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020a => '𓎇',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020b => '𓎈',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020c => '𓎉',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020d => '𓎊',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020e => '𓎋',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020f => '𓎌',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020g => '𓎍',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020h => '𓎎',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020i => '𓎏',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020j => '𓎐',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020k => '𓎑',
+            EgyptianHieroglyphs::EgyptianHieroglyphV020l => '𓎒',
+            EgyptianHieroglyphs::EgyptianHieroglyphV021 => '𓎓',
+            EgyptianHieroglyphs::EgyptianHieroglyphV022 => '𓎔',
+            EgyptianHieroglyphs::EgyptianHieroglyphV023 => '𓎕',
+            EgyptianHieroglyphs::EgyptianHieroglyphV023a => '𓎖',
+            EgyptianHieroglyphs::EgyptianHieroglyphV024 => '𓎗',
+            EgyptianHieroglyphs::EgyptianHieroglyphV025 => '𓎘',
+            EgyptianHieroglyphs::EgyptianHieroglyphV026 => '𓎙',
+            EgyptianHieroglyphs::EgyptianHieroglyphV027 => '𓎚',
+            EgyptianHieroglyphs::EgyptianHieroglyphV028 => '𓎛',
+            EgyptianHieroglyphs::EgyptianHieroglyphV028a => '𓎜',
+            EgyptianHieroglyphs::EgyptianHieroglyphV029 => '𓎝',
+            EgyptianHieroglyphs::EgyptianHieroglyphV029a => '𓎞',
+            EgyptianHieroglyphs::EgyptianHieroglyphV030 => '𓎟',
+            EgyptianHieroglyphs::EgyptianHieroglyphV030a => '𓎠',
+            EgyptianHieroglyphs::EgyptianHieroglyphV031 => '𓎡',
+            EgyptianHieroglyphs::EgyptianHieroglyphV031a => '𓎢',
+            EgyptianHieroglyphs::EgyptianHieroglyphV032 => '𓎣',
+            EgyptianHieroglyphs::EgyptianHieroglyphV033 => '𓎤',
+            EgyptianHieroglyphs::EgyptianHieroglyphV033a => '𓎥',
+            EgyptianHieroglyphs::EgyptianHieroglyphV034 => '𓎦',
+            EgyptianHieroglyphs::EgyptianHieroglyphV035 => '𓎧',
+            EgyptianHieroglyphs::EgyptianHieroglyphV036 => '𓎨',
+            EgyptianHieroglyphs::EgyptianHieroglyphV037 => '𓎩',
+            EgyptianHieroglyphs::EgyptianHieroglyphV037a => '𓎪',
+            EgyptianHieroglyphs::EgyptianHieroglyphV038 => '𓎫',
+            EgyptianHieroglyphs::EgyptianHieroglyphV039 => '𓎬',
+            EgyptianHieroglyphs::EgyptianHieroglyphV040 => '𓎭',
+            EgyptianHieroglyphs::EgyptianHieroglyphV040a => '𓎮',
+            EgyptianHieroglyphs::EgyptianHieroglyphW001 => '𓎯',
+            EgyptianHieroglyphs::EgyptianHieroglyphW002 => '𓎰',
+            EgyptianHieroglyphs::EgyptianHieroglyphW003 => '𓎱',
+            EgyptianHieroglyphs::EgyptianHieroglyphW003a => '𓎲',
+            EgyptianHieroglyphs::EgyptianHieroglyphW004 => '𓎳',
+            EgyptianHieroglyphs::EgyptianHieroglyphW005 => '𓎴',
+            EgyptianHieroglyphs::EgyptianHieroglyphW006 => '𓎵',
+            EgyptianHieroglyphs::EgyptianHieroglyphW007 => '𓎶',
+            EgyptianHieroglyphs::EgyptianHieroglyphW008 => '𓎷',
+            EgyptianHieroglyphs::EgyptianHieroglyphW009 => '𓎸',
+            EgyptianHieroglyphs::EgyptianHieroglyphW009a => '𓎹',
+            EgyptianHieroglyphs::EgyptianHieroglyphW010 => '𓎺',
+            EgyptianHieroglyphs::EgyptianHieroglyphW010a => '𓎻',
+            EgyptianHieroglyphs::EgyptianHieroglyphW011 => '𓎼',
+            EgyptianHieroglyphs::EgyptianHieroglyphW012 => '𓎽',
+            EgyptianHieroglyphs::EgyptianHieroglyphW013 => '𓎾',
+            EgyptianHieroglyphs::EgyptianHieroglyphW014 => '𓎿',
+            EgyptianHieroglyphs::EgyptianHieroglyphW014a => '𓏀',
+            EgyptianHieroglyphs::EgyptianHieroglyphW015 => '𓏁',
+            EgyptianHieroglyphs::EgyptianHieroglyphW016 => '𓏂',
+            EgyptianHieroglyphs::EgyptianHieroglyphW017 => '𓏃',
+            EgyptianHieroglyphs::EgyptianHieroglyphW017a => '𓏄',
+            EgyptianHieroglyphs::EgyptianHieroglyphW018 => '𓏅',
+            EgyptianHieroglyphs::EgyptianHieroglyphW018a => '𓏆',
+            EgyptianHieroglyphs::EgyptianHieroglyphW019 => '𓏇',
+            EgyptianHieroglyphs::EgyptianHieroglyphW020 => '𓏈',
+            EgyptianHieroglyphs::EgyptianHieroglyphW021 => '𓏉',
+            EgyptianHieroglyphs::EgyptianHieroglyphW022 => '𓏊',
+            EgyptianHieroglyphs::EgyptianHieroglyphW023 => '𓏋',
+            EgyptianHieroglyphs::EgyptianHieroglyphW024 => '𓏌',
+            EgyptianHieroglyphs::EgyptianHieroglyphW024a => '𓏍',
+            EgyptianHieroglyphs::EgyptianHieroglyphW025 => '𓏎',
+            EgyptianHieroglyphs::EgyptianHieroglyphX001 => '𓏏',
+            EgyptianHieroglyphs::EgyptianHieroglyphX002 => '𓏐',
+            EgyptianHieroglyphs::EgyptianHieroglyphX003 => '𓏑',
+            EgyptianHieroglyphs::EgyptianHieroglyphX004 => '𓏒',
+            EgyptianHieroglyphs::EgyptianHieroglyphX004a => '𓏓',
+            EgyptianHieroglyphs::EgyptianHieroglyphX004b => '𓏔',
+            EgyptianHieroglyphs::EgyptianHieroglyphX005 => '𓏕',
+            EgyptianHieroglyphs::EgyptianHieroglyphX006 => '𓏖',
+            EgyptianHieroglyphs::EgyptianHieroglyphX006a => '𓏗',
+            EgyptianHieroglyphs::EgyptianHieroglyphX007 => '𓏘',
+            EgyptianHieroglyphs::EgyptianHieroglyphX008 => '𓏙',
+            EgyptianHieroglyphs::EgyptianHieroglyphX008a => '𓏚',
+            EgyptianHieroglyphs::EgyptianHieroglyphY001 => '𓏛',
+            EgyptianHieroglyphs::EgyptianHieroglyphY001a => '𓏜',
+            EgyptianHieroglyphs::EgyptianHieroglyphY002 => '𓏝',
+            EgyptianHieroglyphs::EgyptianHieroglyphY003 => '𓏞',
+            EgyptianHieroglyphs::EgyptianHieroglyphY004 => '𓏟',
+            EgyptianHieroglyphs::EgyptianHieroglyphY005 => '𓏠',
+            EgyptianHieroglyphs::EgyptianHieroglyphY006 => '𓏡',
+            EgyptianHieroglyphs::EgyptianHieroglyphY007 => '𓏢',
+            EgyptianHieroglyphs::EgyptianHieroglyphY008 => '𓏣',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ001 => '𓏤',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ002 => '𓏥',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ002a => '𓏦',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ002b => '𓏧',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ002c => '𓏨',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ002d => '𓏩',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ003 => '𓏪',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ003a => '𓏫',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ003b => '𓏬',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ004 => '𓏭',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ004a => '𓏮',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ005 => '𓏯',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ005a => '𓏰',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ006 => '𓏱',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ007 => '𓏲',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ008 => '𓏳',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ009 => '𓏴',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ010 => '𓏵',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ011 => '𓏶',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ012 => '𓏷',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ013 => '𓏸',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ014 => '𓏹',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015 => '𓏺',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015a => '𓏻',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015b => '𓏼',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015c => '𓏽',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015d => '𓏾',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015e => '𓏿',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015f => '𓐀',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015g => '𓐁',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015h => '𓐂',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ015i => '𓐃',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ016 => '𓐄',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ016a => '𓐅',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ016b => '𓐆',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ016c => '𓐇',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ016d => '𓐈',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ016e => '𓐉',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ016f => '𓐊',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ016g => '𓐋',
+            EgyptianHieroglyphs::EgyptianHieroglyphZ016h => '𓐌',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa001 => '𓐍',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa002 => '𓐎',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa003 => '𓐏',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa004 => '𓐐',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa005 => '𓐑',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa006 => '𓐒',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa007 => '𓐓',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa007a => '𓐔',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa007b => '𓐕',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa008 => '𓐖',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa009 => '𓐗',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa010 => '𓐘',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa011 => '𓐙',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa012 => '𓐚',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa013 => '𓐛',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa014 => '𓐜',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa015 => '𓐝',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa016 => '𓐞',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa017 => '𓐟',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa018 => '𓐠',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa019 => '𓐡',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa020 => '𓐢',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa021 => '𓐣',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa022 => '𓐤',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa023 => '𓐥',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa024 => '𓐦',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa025 => '𓐧',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa026 => '𓐨',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa027 => '𓐩',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa028 => '𓐪',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa029 => '𓐫',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa030 => '𓐬',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa031 => '𓐭',
+            EgyptianHieroglyphs::EgyptianHieroglyphAa032 => '𓐮',
         }
     }
 }
@@ -5373,1079 +3227,1078 @@ impl Into<char> for EgyptianHieroglyphs {
 impl std::convert::TryFrom<char> for EgyptianHieroglyphs {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            EGYPTIAN_HIEROGLYPH_A001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA001),
-            EGYPTIAN_HIEROGLYPH_A002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA002),
-            EGYPTIAN_HIEROGLYPH_A003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA003),
-            EGYPTIAN_HIEROGLYPH_A004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA004),
-            EGYPTIAN_HIEROGLYPH_A005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA005),
-            EGYPTIAN_HIEROGLYPH_A005A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA005a),
-            EGYPTIAN_HIEROGLYPH_A006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA006),
-            EGYPTIAN_HIEROGLYPH_A006A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA006a),
-            EGYPTIAN_HIEROGLYPH_A006B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA006b),
-            EGYPTIAN_HIEROGLYPH_A007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA007),
-            EGYPTIAN_HIEROGLYPH_A008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA008),
-            EGYPTIAN_HIEROGLYPH_A009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA009),
-            EGYPTIAN_HIEROGLYPH_A010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA010),
-            EGYPTIAN_HIEROGLYPH_A011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA011),
-            EGYPTIAN_HIEROGLYPH_A012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA012),
-            EGYPTIAN_HIEROGLYPH_A013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA013),
-            EGYPTIAN_HIEROGLYPH_A014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA014),
-            EGYPTIAN_HIEROGLYPH_A014A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA014a),
-            EGYPTIAN_HIEROGLYPH_A015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA015),
-            EGYPTIAN_HIEROGLYPH_A016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA016),
-            EGYPTIAN_HIEROGLYPH_A017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA017),
-            EGYPTIAN_HIEROGLYPH_A017A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA017a),
-            EGYPTIAN_HIEROGLYPH_A018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA018),
-            EGYPTIAN_HIEROGLYPH_A019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA019),
-            EGYPTIAN_HIEROGLYPH_A020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA020),
-            EGYPTIAN_HIEROGLYPH_A021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA021),
-            EGYPTIAN_HIEROGLYPH_A022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA022),
-            EGYPTIAN_HIEROGLYPH_A023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA023),
-            EGYPTIAN_HIEROGLYPH_A024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA024),
-            EGYPTIAN_HIEROGLYPH_A025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA025),
-            EGYPTIAN_HIEROGLYPH_A026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA026),
-            EGYPTIAN_HIEROGLYPH_A027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA027),
-            EGYPTIAN_HIEROGLYPH_A028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA028),
-            EGYPTIAN_HIEROGLYPH_A029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA029),
-            EGYPTIAN_HIEROGLYPH_A030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA030),
-            EGYPTIAN_HIEROGLYPH_A031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA031),
-            EGYPTIAN_HIEROGLYPH_A032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA032),
-            EGYPTIAN_HIEROGLYPH_A032A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA032a),
-            EGYPTIAN_HIEROGLYPH_A033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA033),
-            EGYPTIAN_HIEROGLYPH_A034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA034),
-            EGYPTIAN_HIEROGLYPH_A035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA035),
-            EGYPTIAN_HIEROGLYPH_A036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA036),
-            EGYPTIAN_HIEROGLYPH_A037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA037),
-            EGYPTIAN_HIEROGLYPH_A038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA038),
-            EGYPTIAN_HIEROGLYPH_A039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA039),
-            EGYPTIAN_HIEROGLYPH_A040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA040),
-            EGYPTIAN_HIEROGLYPH_A040A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA040a),
-            EGYPTIAN_HIEROGLYPH_A041 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA041),
-            EGYPTIAN_HIEROGLYPH_A042 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA042),
-            EGYPTIAN_HIEROGLYPH_A042A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA042a),
-            EGYPTIAN_HIEROGLYPH_A043 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA043),
-            EGYPTIAN_HIEROGLYPH_A043A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA043a),
-            EGYPTIAN_HIEROGLYPH_A044 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA044),
-            EGYPTIAN_HIEROGLYPH_A045 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA045),
-            EGYPTIAN_HIEROGLYPH_A045A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA045a),
-            EGYPTIAN_HIEROGLYPH_A046 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA046),
-            EGYPTIAN_HIEROGLYPH_A047 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA047),
-            EGYPTIAN_HIEROGLYPH_A048 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA048),
-            EGYPTIAN_HIEROGLYPH_A049 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA049),
-            EGYPTIAN_HIEROGLYPH_A050 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA050),
-            EGYPTIAN_HIEROGLYPH_A051 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA051),
-            EGYPTIAN_HIEROGLYPH_A052 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA052),
-            EGYPTIAN_HIEROGLYPH_A053 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA053),
-            EGYPTIAN_HIEROGLYPH_A054 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA054),
-            EGYPTIAN_HIEROGLYPH_A055 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA055),
-            EGYPTIAN_HIEROGLYPH_A056 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA056),
-            EGYPTIAN_HIEROGLYPH_A057 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA057),
-            EGYPTIAN_HIEROGLYPH_A058 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA058),
-            EGYPTIAN_HIEROGLYPH_A059 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA059),
-            EGYPTIAN_HIEROGLYPH_A060 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA060),
-            EGYPTIAN_HIEROGLYPH_A061 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA061),
-            EGYPTIAN_HIEROGLYPH_A062 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA062),
-            EGYPTIAN_HIEROGLYPH_A063 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA063),
-            EGYPTIAN_HIEROGLYPH_A064 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA064),
-            EGYPTIAN_HIEROGLYPH_A065 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA065),
-            EGYPTIAN_HIEROGLYPH_A066 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA066),
-            EGYPTIAN_HIEROGLYPH_A067 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA067),
-            EGYPTIAN_HIEROGLYPH_A068 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA068),
-            EGYPTIAN_HIEROGLYPH_A069 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA069),
-            EGYPTIAN_HIEROGLYPH_A070 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA070),
-            EGYPTIAN_HIEROGLYPH_B001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB001),
-            EGYPTIAN_HIEROGLYPH_B002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB002),
-            EGYPTIAN_HIEROGLYPH_B003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB003),
-            EGYPTIAN_HIEROGLYPH_B004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB004),
-            EGYPTIAN_HIEROGLYPH_B005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB005),
-            EGYPTIAN_HIEROGLYPH_B005A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB005a),
-            EGYPTIAN_HIEROGLYPH_B006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB006),
-            EGYPTIAN_HIEROGLYPH_B007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB007),
-            EGYPTIAN_HIEROGLYPH_B008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB008),
-            EGYPTIAN_HIEROGLYPH_B009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB009),
-            EGYPTIAN_HIEROGLYPH_C001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC001),
-            EGYPTIAN_HIEROGLYPH_C002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC002),
-            EGYPTIAN_HIEROGLYPH_C002A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC002a),
-            EGYPTIAN_HIEROGLYPH_C002B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC002b),
-            EGYPTIAN_HIEROGLYPH_C002C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC002c),
-            EGYPTIAN_HIEROGLYPH_C003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC003),
-            EGYPTIAN_HIEROGLYPH_C004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC004),
-            EGYPTIAN_HIEROGLYPH_C005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC005),
-            EGYPTIAN_HIEROGLYPH_C006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC006),
-            EGYPTIAN_HIEROGLYPH_C007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC007),
-            EGYPTIAN_HIEROGLYPH_C008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC008),
-            EGYPTIAN_HIEROGLYPH_C009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC009),
-            EGYPTIAN_HIEROGLYPH_C010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC010),
-            EGYPTIAN_HIEROGLYPH_C010A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC010a),
-            EGYPTIAN_HIEROGLYPH_C011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC011),
-            EGYPTIAN_HIEROGLYPH_C012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC012),
-            EGYPTIAN_HIEROGLYPH_C013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC013),
-            EGYPTIAN_HIEROGLYPH_C014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC014),
-            EGYPTIAN_HIEROGLYPH_C015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC015),
-            EGYPTIAN_HIEROGLYPH_C016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC016),
-            EGYPTIAN_HIEROGLYPH_C017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC017),
-            EGYPTIAN_HIEROGLYPH_C018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC018),
-            EGYPTIAN_HIEROGLYPH_C019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC019),
-            EGYPTIAN_HIEROGLYPH_C020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC020),
-            EGYPTIAN_HIEROGLYPH_C021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC021),
-            EGYPTIAN_HIEROGLYPH_C022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC022),
-            EGYPTIAN_HIEROGLYPH_C023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC023),
-            EGYPTIAN_HIEROGLYPH_C024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC024),
-            EGYPTIAN_HIEROGLYPH_D001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD001),
-            EGYPTIAN_HIEROGLYPH_D002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD002),
-            EGYPTIAN_HIEROGLYPH_D003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD003),
-            EGYPTIAN_HIEROGLYPH_D004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD004),
-            EGYPTIAN_HIEROGLYPH_D005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD005),
-            EGYPTIAN_HIEROGLYPH_D006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD006),
-            EGYPTIAN_HIEROGLYPH_D007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD007),
-            EGYPTIAN_HIEROGLYPH_D008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD008),
-            EGYPTIAN_HIEROGLYPH_D008A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD008a),
-            EGYPTIAN_HIEROGLYPH_D009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD009),
-            EGYPTIAN_HIEROGLYPH_D010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD010),
-            EGYPTIAN_HIEROGLYPH_D011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD011),
-            EGYPTIAN_HIEROGLYPH_D012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD012),
-            EGYPTIAN_HIEROGLYPH_D013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD013),
-            EGYPTIAN_HIEROGLYPH_D014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD014),
-            EGYPTIAN_HIEROGLYPH_D015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD015),
-            EGYPTIAN_HIEROGLYPH_D016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD016),
-            EGYPTIAN_HIEROGLYPH_D017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD017),
-            EGYPTIAN_HIEROGLYPH_D018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD018),
-            EGYPTIAN_HIEROGLYPH_D019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD019),
-            EGYPTIAN_HIEROGLYPH_D020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD020),
-            EGYPTIAN_HIEROGLYPH_D021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD021),
-            EGYPTIAN_HIEROGLYPH_D022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD022),
-            EGYPTIAN_HIEROGLYPH_D023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD023),
-            EGYPTIAN_HIEROGLYPH_D024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD024),
-            EGYPTIAN_HIEROGLYPH_D025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD025),
-            EGYPTIAN_HIEROGLYPH_D026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD026),
-            EGYPTIAN_HIEROGLYPH_D027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD027),
-            EGYPTIAN_HIEROGLYPH_D027A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD027a),
-            EGYPTIAN_HIEROGLYPH_D028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD028),
-            EGYPTIAN_HIEROGLYPH_D029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD029),
-            EGYPTIAN_HIEROGLYPH_D030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD030),
-            EGYPTIAN_HIEROGLYPH_D031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD031),
-            EGYPTIAN_HIEROGLYPH_D031A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD031a),
-            EGYPTIAN_HIEROGLYPH_D032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD032),
-            EGYPTIAN_HIEROGLYPH_D033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD033),
-            EGYPTIAN_HIEROGLYPH_D034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD034),
-            EGYPTIAN_HIEROGLYPH_D034A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD034a),
-            EGYPTIAN_HIEROGLYPH_D035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD035),
-            EGYPTIAN_HIEROGLYPH_D036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD036),
-            EGYPTIAN_HIEROGLYPH_D037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD037),
-            EGYPTIAN_HIEROGLYPH_D038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD038),
-            EGYPTIAN_HIEROGLYPH_D039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD039),
-            EGYPTIAN_HIEROGLYPH_D040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD040),
-            EGYPTIAN_HIEROGLYPH_D041 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD041),
-            EGYPTIAN_HIEROGLYPH_D042 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD042),
-            EGYPTIAN_HIEROGLYPH_D043 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD043),
-            EGYPTIAN_HIEROGLYPH_D044 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD044),
-            EGYPTIAN_HIEROGLYPH_D045 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD045),
-            EGYPTIAN_HIEROGLYPH_D046 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD046),
-            EGYPTIAN_HIEROGLYPH_D046A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD046a),
-            EGYPTIAN_HIEROGLYPH_D047 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD047),
-            EGYPTIAN_HIEROGLYPH_D048 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD048),
-            EGYPTIAN_HIEROGLYPH_D048A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD048a),
-            EGYPTIAN_HIEROGLYPH_D049 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD049),
-            EGYPTIAN_HIEROGLYPH_D050 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050),
-            EGYPTIAN_HIEROGLYPH_D050A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050a),
-            EGYPTIAN_HIEROGLYPH_D050B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050b),
-            EGYPTIAN_HIEROGLYPH_D050C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050c),
-            EGYPTIAN_HIEROGLYPH_D050D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050d),
-            EGYPTIAN_HIEROGLYPH_D050E => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050e),
-            EGYPTIAN_HIEROGLYPH_D050F => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050f),
-            EGYPTIAN_HIEROGLYPH_D050G => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050g),
-            EGYPTIAN_HIEROGLYPH_D050H => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050h),
-            EGYPTIAN_HIEROGLYPH_D050I => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050i),
-            EGYPTIAN_HIEROGLYPH_D051 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD051),
-            EGYPTIAN_HIEROGLYPH_D052 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD052),
-            EGYPTIAN_HIEROGLYPH_D052A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD052a),
-            EGYPTIAN_HIEROGLYPH_D053 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD053),
-            EGYPTIAN_HIEROGLYPH_D054 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD054),
-            EGYPTIAN_HIEROGLYPH_D054A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD054a),
-            EGYPTIAN_HIEROGLYPH_D055 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD055),
-            EGYPTIAN_HIEROGLYPH_D056 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD056),
-            EGYPTIAN_HIEROGLYPH_D057 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD057),
-            EGYPTIAN_HIEROGLYPH_D058 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD058),
-            EGYPTIAN_HIEROGLYPH_D059 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD059),
-            EGYPTIAN_HIEROGLYPH_D060 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD060),
-            EGYPTIAN_HIEROGLYPH_D061 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD061),
-            EGYPTIAN_HIEROGLYPH_D062 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD062),
-            EGYPTIAN_HIEROGLYPH_D063 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD063),
-            EGYPTIAN_HIEROGLYPH_D064 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD064),
-            EGYPTIAN_HIEROGLYPH_D065 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD065),
-            EGYPTIAN_HIEROGLYPH_D066 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD066),
-            EGYPTIAN_HIEROGLYPH_D067 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067),
-            EGYPTIAN_HIEROGLYPH_D067A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067a),
-            EGYPTIAN_HIEROGLYPH_D067B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067b),
-            EGYPTIAN_HIEROGLYPH_D067C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067c),
-            EGYPTIAN_HIEROGLYPH_D067D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067d),
-            EGYPTIAN_HIEROGLYPH_D067E => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067e),
-            EGYPTIAN_HIEROGLYPH_D067F => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067f),
-            EGYPTIAN_HIEROGLYPH_D067G => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067g),
-            EGYPTIAN_HIEROGLYPH_D067H => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067h),
-            EGYPTIAN_HIEROGLYPH_E001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE001),
-            EGYPTIAN_HIEROGLYPH_E002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE002),
-            EGYPTIAN_HIEROGLYPH_E003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE003),
-            EGYPTIAN_HIEROGLYPH_E004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE004),
-            EGYPTIAN_HIEROGLYPH_E005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE005),
-            EGYPTIAN_HIEROGLYPH_E006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE006),
-            EGYPTIAN_HIEROGLYPH_E007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE007),
-            EGYPTIAN_HIEROGLYPH_E008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE008),
-            EGYPTIAN_HIEROGLYPH_E008A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE008a),
-            EGYPTIAN_HIEROGLYPH_E009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE009),
-            EGYPTIAN_HIEROGLYPH_E009A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE009a),
-            EGYPTIAN_HIEROGLYPH_E010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE010),
-            EGYPTIAN_HIEROGLYPH_E011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE011),
-            EGYPTIAN_HIEROGLYPH_E012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE012),
-            EGYPTIAN_HIEROGLYPH_E013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE013),
-            EGYPTIAN_HIEROGLYPH_E014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE014),
-            EGYPTIAN_HIEROGLYPH_E015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE015),
-            EGYPTIAN_HIEROGLYPH_E016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE016),
-            EGYPTIAN_HIEROGLYPH_E016A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE016a),
-            EGYPTIAN_HIEROGLYPH_E017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE017),
-            EGYPTIAN_HIEROGLYPH_E017A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE017a),
-            EGYPTIAN_HIEROGLYPH_E018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE018),
-            EGYPTIAN_HIEROGLYPH_E019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE019),
-            EGYPTIAN_HIEROGLYPH_E020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE020),
-            EGYPTIAN_HIEROGLYPH_E020A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE020a),
-            EGYPTIAN_HIEROGLYPH_E021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE021),
-            EGYPTIAN_HIEROGLYPH_E022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE022),
-            EGYPTIAN_HIEROGLYPH_E023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE023),
-            EGYPTIAN_HIEROGLYPH_E024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE024),
-            EGYPTIAN_HIEROGLYPH_E025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE025),
-            EGYPTIAN_HIEROGLYPH_E026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE026),
-            EGYPTIAN_HIEROGLYPH_E027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE027),
-            EGYPTIAN_HIEROGLYPH_E028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE028),
-            EGYPTIAN_HIEROGLYPH_E028A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE028a),
-            EGYPTIAN_HIEROGLYPH_E029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE029),
-            EGYPTIAN_HIEROGLYPH_E030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE030),
-            EGYPTIAN_HIEROGLYPH_E031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE031),
-            EGYPTIAN_HIEROGLYPH_E032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE032),
-            EGYPTIAN_HIEROGLYPH_E033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE033),
-            EGYPTIAN_HIEROGLYPH_E034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE034),
-            EGYPTIAN_HIEROGLYPH_E034A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE034a),
-            EGYPTIAN_HIEROGLYPH_E036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE036),
-            EGYPTIAN_HIEROGLYPH_E037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE037),
-            EGYPTIAN_HIEROGLYPH_E038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE038),
-            EGYPTIAN_HIEROGLYPH_F001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF001),
-            EGYPTIAN_HIEROGLYPH_F001A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF001a),
-            EGYPTIAN_HIEROGLYPH_F002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF002),
-            EGYPTIAN_HIEROGLYPH_F003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF003),
-            EGYPTIAN_HIEROGLYPH_F004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF004),
-            EGYPTIAN_HIEROGLYPH_F005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF005),
-            EGYPTIAN_HIEROGLYPH_F006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF006),
-            EGYPTIAN_HIEROGLYPH_F007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF007),
-            EGYPTIAN_HIEROGLYPH_F008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF008),
-            EGYPTIAN_HIEROGLYPH_F009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF009),
-            EGYPTIAN_HIEROGLYPH_F010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF010),
-            EGYPTIAN_HIEROGLYPH_F011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF011),
-            EGYPTIAN_HIEROGLYPH_F012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF012),
-            EGYPTIAN_HIEROGLYPH_F013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF013),
-            EGYPTIAN_HIEROGLYPH_F013A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF013a),
-            EGYPTIAN_HIEROGLYPH_F014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF014),
-            EGYPTIAN_HIEROGLYPH_F015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF015),
-            EGYPTIAN_HIEROGLYPH_F016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF016),
-            EGYPTIAN_HIEROGLYPH_F017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF017),
-            EGYPTIAN_HIEROGLYPH_F018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF018),
-            EGYPTIAN_HIEROGLYPH_F019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF019),
-            EGYPTIAN_HIEROGLYPH_F020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF020),
-            EGYPTIAN_HIEROGLYPH_F021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF021),
-            EGYPTIAN_HIEROGLYPH_F021A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF021a),
-            EGYPTIAN_HIEROGLYPH_F022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF022),
-            EGYPTIAN_HIEROGLYPH_F023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF023),
-            EGYPTIAN_HIEROGLYPH_F024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF024),
-            EGYPTIAN_HIEROGLYPH_F025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF025),
-            EGYPTIAN_HIEROGLYPH_F026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF026),
-            EGYPTIAN_HIEROGLYPH_F027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF027),
-            EGYPTIAN_HIEROGLYPH_F028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF028),
-            EGYPTIAN_HIEROGLYPH_F029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF029),
-            EGYPTIAN_HIEROGLYPH_F030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF030),
-            EGYPTIAN_HIEROGLYPH_F031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF031),
-            EGYPTIAN_HIEROGLYPH_F031A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF031a),
-            EGYPTIAN_HIEROGLYPH_F032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF032),
-            EGYPTIAN_HIEROGLYPH_F033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF033),
-            EGYPTIAN_HIEROGLYPH_F034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF034),
-            EGYPTIAN_HIEROGLYPH_F035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF035),
-            EGYPTIAN_HIEROGLYPH_F036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF036),
-            EGYPTIAN_HIEROGLYPH_F037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF037),
-            EGYPTIAN_HIEROGLYPH_F037A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF037a),
-            EGYPTIAN_HIEROGLYPH_F038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF038),
-            EGYPTIAN_HIEROGLYPH_F038A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF038a),
-            EGYPTIAN_HIEROGLYPH_F039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF039),
-            EGYPTIAN_HIEROGLYPH_F040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF040),
-            EGYPTIAN_HIEROGLYPH_F041 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF041),
-            EGYPTIAN_HIEROGLYPH_F042 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF042),
-            EGYPTIAN_HIEROGLYPH_F043 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF043),
-            EGYPTIAN_HIEROGLYPH_F044 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF044),
-            EGYPTIAN_HIEROGLYPH_F045 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF045),
-            EGYPTIAN_HIEROGLYPH_F045A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF045a),
-            EGYPTIAN_HIEROGLYPH_F046 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF046),
-            EGYPTIAN_HIEROGLYPH_F046A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF046a),
-            EGYPTIAN_HIEROGLYPH_F047 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF047),
-            EGYPTIAN_HIEROGLYPH_F047A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF047a),
-            EGYPTIAN_HIEROGLYPH_F048 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF048),
-            EGYPTIAN_HIEROGLYPH_F049 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF049),
-            EGYPTIAN_HIEROGLYPH_F050 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF050),
-            EGYPTIAN_HIEROGLYPH_F051 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF051),
-            EGYPTIAN_HIEROGLYPH_F051A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF051a),
-            EGYPTIAN_HIEROGLYPH_F051B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF051b),
-            EGYPTIAN_HIEROGLYPH_F051C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF051c),
-            EGYPTIAN_HIEROGLYPH_F052 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF052),
-            EGYPTIAN_HIEROGLYPH_F053 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF053),
-            EGYPTIAN_HIEROGLYPH_G001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG001),
-            EGYPTIAN_HIEROGLYPH_G002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG002),
-            EGYPTIAN_HIEROGLYPH_G003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG003),
-            EGYPTIAN_HIEROGLYPH_G004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG004),
-            EGYPTIAN_HIEROGLYPH_G005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG005),
-            EGYPTIAN_HIEROGLYPH_G006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG006),
-            EGYPTIAN_HIEROGLYPH_G006A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG006a),
-            EGYPTIAN_HIEROGLYPH_G007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG007),
-            EGYPTIAN_HIEROGLYPH_G007A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG007a),
-            EGYPTIAN_HIEROGLYPH_G007B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG007b),
-            EGYPTIAN_HIEROGLYPH_G008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG008),
-            EGYPTIAN_HIEROGLYPH_G009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG009),
-            EGYPTIAN_HIEROGLYPH_G010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG010),
-            EGYPTIAN_HIEROGLYPH_G011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG011),
-            EGYPTIAN_HIEROGLYPH_G011A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG011a),
-            EGYPTIAN_HIEROGLYPH_G012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG012),
-            EGYPTIAN_HIEROGLYPH_G013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG013),
-            EGYPTIAN_HIEROGLYPH_G014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG014),
-            EGYPTIAN_HIEROGLYPH_G015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG015),
-            EGYPTIAN_HIEROGLYPH_G016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG016),
-            EGYPTIAN_HIEROGLYPH_G017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG017),
-            EGYPTIAN_HIEROGLYPH_G018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG018),
-            EGYPTIAN_HIEROGLYPH_G019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG019),
-            EGYPTIAN_HIEROGLYPH_G020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG020),
-            EGYPTIAN_HIEROGLYPH_G020A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG020a),
-            EGYPTIAN_HIEROGLYPH_G021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG021),
-            EGYPTIAN_HIEROGLYPH_G022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG022),
-            EGYPTIAN_HIEROGLYPH_G023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG023),
-            EGYPTIAN_HIEROGLYPH_G024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG024),
-            EGYPTIAN_HIEROGLYPH_G025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG025),
-            EGYPTIAN_HIEROGLYPH_G026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG026),
-            EGYPTIAN_HIEROGLYPH_G026A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG026a),
-            EGYPTIAN_HIEROGLYPH_G027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG027),
-            EGYPTIAN_HIEROGLYPH_G028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG028),
-            EGYPTIAN_HIEROGLYPH_G029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG029),
-            EGYPTIAN_HIEROGLYPH_G030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG030),
-            EGYPTIAN_HIEROGLYPH_G031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG031),
-            EGYPTIAN_HIEROGLYPH_G032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG032),
-            EGYPTIAN_HIEROGLYPH_G033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG033),
-            EGYPTIAN_HIEROGLYPH_G034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG034),
-            EGYPTIAN_HIEROGLYPH_G035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG035),
-            EGYPTIAN_HIEROGLYPH_G036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG036),
-            EGYPTIAN_HIEROGLYPH_G036A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG036a),
-            EGYPTIAN_HIEROGLYPH_G037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG037),
-            EGYPTIAN_HIEROGLYPH_G037A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG037a),
-            EGYPTIAN_HIEROGLYPH_G038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG038),
-            EGYPTIAN_HIEROGLYPH_G039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG039),
-            EGYPTIAN_HIEROGLYPH_G040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG040),
-            EGYPTIAN_HIEROGLYPH_G041 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG041),
-            EGYPTIAN_HIEROGLYPH_G042 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG042),
-            EGYPTIAN_HIEROGLYPH_G043 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG043),
-            EGYPTIAN_HIEROGLYPH_G043A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG043a),
-            EGYPTIAN_HIEROGLYPH_G044 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG044),
-            EGYPTIAN_HIEROGLYPH_G045 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG045),
-            EGYPTIAN_HIEROGLYPH_G045A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG045a),
-            EGYPTIAN_HIEROGLYPH_G046 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG046),
-            EGYPTIAN_HIEROGLYPH_G047 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG047),
-            EGYPTIAN_HIEROGLYPH_G048 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG048),
-            EGYPTIAN_HIEROGLYPH_G049 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG049),
-            EGYPTIAN_HIEROGLYPH_G050 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG050),
-            EGYPTIAN_HIEROGLYPH_G051 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG051),
-            EGYPTIAN_HIEROGLYPH_G052 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG052),
-            EGYPTIAN_HIEROGLYPH_G053 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG053),
-            EGYPTIAN_HIEROGLYPH_G054 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG054),
-            EGYPTIAN_HIEROGLYPH_H001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH001),
-            EGYPTIAN_HIEROGLYPH_H002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH002),
-            EGYPTIAN_HIEROGLYPH_H003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH003),
-            EGYPTIAN_HIEROGLYPH_H004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH004),
-            EGYPTIAN_HIEROGLYPH_H005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH005),
-            EGYPTIAN_HIEROGLYPH_H006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH006),
-            EGYPTIAN_HIEROGLYPH_H006A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH006a),
-            EGYPTIAN_HIEROGLYPH_H007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH007),
-            EGYPTIAN_HIEROGLYPH_H008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH008),
-            EGYPTIAN_HIEROGLYPH_I001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI001),
-            EGYPTIAN_HIEROGLYPH_I002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI002),
-            EGYPTIAN_HIEROGLYPH_I003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI003),
-            EGYPTIAN_HIEROGLYPH_I004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI004),
-            EGYPTIAN_HIEROGLYPH_I005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI005),
-            EGYPTIAN_HIEROGLYPH_I005A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI005a),
-            EGYPTIAN_HIEROGLYPH_I006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI006),
-            EGYPTIAN_HIEROGLYPH_I007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI007),
-            EGYPTIAN_HIEROGLYPH_I008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI008),
-            EGYPTIAN_HIEROGLYPH_I009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI009),
-            EGYPTIAN_HIEROGLYPH_I009A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI009a),
-            EGYPTIAN_HIEROGLYPH_I010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI010),
-            EGYPTIAN_HIEROGLYPH_I010A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI010a),
-            EGYPTIAN_HIEROGLYPH_I011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI011),
-            EGYPTIAN_HIEROGLYPH_I011A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI011a),
-            EGYPTIAN_HIEROGLYPH_I012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI012),
-            EGYPTIAN_HIEROGLYPH_I013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI013),
-            EGYPTIAN_HIEROGLYPH_I014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI014),
-            EGYPTIAN_HIEROGLYPH_I015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI015),
-            EGYPTIAN_HIEROGLYPH_K001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK001),
-            EGYPTIAN_HIEROGLYPH_K002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK002),
-            EGYPTIAN_HIEROGLYPH_K003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK003),
-            EGYPTIAN_HIEROGLYPH_K004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK004),
-            EGYPTIAN_HIEROGLYPH_K005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK005),
-            EGYPTIAN_HIEROGLYPH_K006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK006),
-            EGYPTIAN_HIEROGLYPH_K007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK007),
-            EGYPTIAN_HIEROGLYPH_K008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK008),
-            EGYPTIAN_HIEROGLYPH_L001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL001),
-            EGYPTIAN_HIEROGLYPH_L002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL002),
-            EGYPTIAN_HIEROGLYPH_L002A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL002a),
-            EGYPTIAN_HIEROGLYPH_L003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL003),
-            EGYPTIAN_HIEROGLYPH_L004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL004),
-            EGYPTIAN_HIEROGLYPH_L005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL005),
-            EGYPTIAN_HIEROGLYPH_L006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL006),
-            EGYPTIAN_HIEROGLYPH_L006A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL006a),
-            EGYPTIAN_HIEROGLYPH_L007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL007),
-            EGYPTIAN_HIEROGLYPH_L008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL008),
-            EGYPTIAN_HIEROGLYPH_M001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM001),
-            EGYPTIAN_HIEROGLYPH_M001A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM001a),
-            EGYPTIAN_HIEROGLYPH_M001B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM001b),
-            EGYPTIAN_HIEROGLYPH_M002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM002),
-            EGYPTIAN_HIEROGLYPH_M003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM003),
-            EGYPTIAN_HIEROGLYPH_M003A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM003a),
-            EGYPTIAN_HIEROGLYPH_M004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM004),
-            EGYPTIAN_HIEROGLYPH_M005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM005),
-            EGYPTIAN_HIEROGLYPH_M006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM006),
-            EGYPTIAN_HIEROGLYPH_M007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM007),
-            EGYPTIAN_HIEROGLYPH_M008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM008),
-            EGYPTIAN_HIEROGLYPH_M009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM009),
-            EGYPTIAN_HIEROGLYPH_M010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM010),
-            EGYPTIAN_HIEROGLYPH_M010A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM010a),
-            EGYPTIAN_HIEROGLYPH_M011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM011),
-            EGYPTIAN_HIEROGLYPH_M012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012),
-            EGYPTIAN_HIEROGLYPH_M012A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012a),
-            EGYPTIAN_HIEROGLYPH_M012B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012b),
-            EGYPTIAN_HIEROGLYPH_M012C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012c),
-            EGYPTIAN_HIEROGLYPH_M012D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012d),
-            EGYPTIAN_HIEROGLYPH_M012E => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012e),
-            EGYPTIAN_HIEROGLYPH_M012F => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012f),
-            EGYPTIAN_HIEROGLYPH_M012G => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012g),
-            EGYPTIAN_HIEROGLYPH_M012H => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012h),
-            EGYPTIAN_HIEROGLYPH_M013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM013),
-            EGYPTIAN_HIEROGLYPH_M014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM014),
-            EGYPTIAN_HIEROGLYPH_M015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM015),
-            EGYPTIAN_HIEROGLYPH_M015A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM015a),
-            EGYPTIAN_HIEROGLYPH_M016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM016),
-            EGYPTIAN_HIEROGLYPH_M016A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM016a),
-            EGYPTIAN_HIEROGLYPH_M017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM017),
-            EGYPTIAN_HIEROGLYPH_M017A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM017a),
-            EGYPTIAN_HIEROGLYPH_M018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM018),
-            EGYPTIAN_HIEROGLYPH_M019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM019),
-            EGYPTIAN_HIEROGLYPH_M020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM020),
-            EGYPTIAN_HIEROGLYPH_M021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM021),
-            EGYPTIAN_HIEROGLYPH_M022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM022),
-            EGYPTIAN_HIEROGLYPH_M022A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM022a),
-            EGYPTIAN_HIEROGLYPH_M023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM023),
-            EGYPTIAN_HIEROGLYPH_M024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM024),
-            EGYPTIAN_HIEROGLYPH_M024A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM024a),
-            EGYPTIAN_HIEROGLYPH_M025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM025),
-            EGYPTIAN_HIEROGLYPH_M026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM026),
-            EGYPTIAN_HIEROGLYPH_M027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM027),
-            EGYPTIAN_HIEROGLYPH_M028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM028),
-            EGYPTIAN_HIEROGLYPH_M028A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM028a),
-            EGYPTIAN_HIEROGLYPH_M029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM029),
-            EGYPTIAN_HIEROGLYPH_M030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM030),
-            EGYPTIAN_HIEROGLYPH_M031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM031),
-            EGYPTIAN_HIEROGLYPH_M031A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM031a),
-            EGYPTIAN_HIEROGLYPH_M032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM032),
-            EGYPTIAN_HIEROGLYPH_M033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM033),
-            EGYPTIAN_HIEROGLYPH_M033A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM033a),
-            EGYPTIAN_HIEROGLYPH_M033B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM033b),
-            EGYPTIAN_HIEROGLYPH_M034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM034),
-            EGYPTIAN_HIEROGLYPH_M035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM035),
-            EGYPTIAN_HIEROGLYPH_M036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM036),
-            EGYPTIAN_HIEROGLYPH_M037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM037),
-            EGYPTIAN_HIEROGLYPH_M038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM038),
-            EGYPTIAN_HIEROGLYPH_M039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM039),
-            EGYPTIAN_HIEROGLYPH_M040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM040),
-            EGYPTIAN_HIEROGLYPH_M040A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM040a),
-            EGYPTIAN_HIEROGLYPH_M041 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM041),
-            EGYPTIAN_HIEROGLYPH_M042 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM042),
-            EGYPTIAN_HIEROGLYPH_M043 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM043),
-            EGYPTIAN_HIEROGLYPH_M044 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM044),
-            EGYPTIAN_HIEROGLYPH_N001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN001),
-            EGYPTIAN_HIEROGLYPH_N002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN002),
-            EGYPTIAN_HIEROGLYPH_N003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN003),
-            EGYPTIAN_HIEROGLYPH_N004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN004),
-            EGYPTIAN_HIEROGLYPH_N005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN005),
-            EGYPTIAN_HIEROGLYPH_N006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN006),
-            EGYPTIAN_HIEROGLYPH_N007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN007),
-            EGYPTIAN_HIEROGLYPH_N008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN008),
-            EGYPTIAN_HIEROGLYPH_N009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN009),
-            EGYPTIAN_HIEROGLYPH_N010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN010),
-            EGYPTIAN_HIEROGLYPH_N011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN011),
-            EGYPTIAN_HIEROGLYPH_N012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN012),
-            EGYPTIAN_HIEROGLYPH_N013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN013),
-            EGYPTIAN_HIEROGLYPH_N014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN014),
-            EGYPTIAN_HIEROGLYPH_N015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN015),
-            EGYPTIAN_HIEROGLYPH_N016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN016),
-            EGYPTIAN_HIEROGLYPH_N017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN017),
-            EGYPTIAN_HIEROGLYPH_N018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN018),
-            EGYPTIAN_HIEROGLYPH_N018A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN018a),
-            EGYPTIAN_HIEROGLYPH_N018B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN018b),
-            EGYPTIAN_HIEROGLYPH_N019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN019),
-            EGYPTIAN_HIEROGLYPH_N020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN020),
-            EGYPTIAN_HIEROGLYPH_N021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN021),
-            EGYPTIAN_HIEROGLYPH_N022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN022),
-            EGYPTIAN_HIEROGLYPH_N023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN023),
-            EGYPTIAN_HIEROGLYPH_N024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN024),
-            EGYPTIAN_HIEROGLYPH_N025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN025),
-            EGYPTIAN_HIEROGLYPH_N025A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN025a),
-            EGYPTIAN_HIEROGLYPH_N026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN026),
-            EGYPTIAN_HIEROGLYPH_N027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN027),
-            EGYPTIAN_HIEROGLYPH_N028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN028),
-            EGYPTIAN_HIEROGLYPH_N029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN029),
-            EGYPTIAN_HIEROGLYPH_N030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN030),
-            EGYPTIAN_HIEROGLYPH_N031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN031),
-            EGYPTIAN_HIEROGLYPH_N032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN032),
-            EGYPTIAN_HIEROGLYPH_N033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN033),
-            EGYPTIAN_HIEROGLYPH_N033A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN033a),
-            EGYPTIAN_HIEROGLYPH_N034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN034),
-            EGYPTIAN_HIEROGLYPH_N034A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN034a),
-            EGYPTIAN_HIEROGLYPH_N035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN035),
-            EGYPTIAN_HIEROGLYPH_N035A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN035a),
-            EGYPTIAN_HIEROGLYPH_N036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN036),
-            EGYPTIAN_HIEROGLYPH_N037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN037),
-            EGYPTIAN_HIEROGLYPH_N037A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN037a),
-            EGYPTIAN_HIEROGLYPH_N038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN038),
-            EGYPTIAN_HIEROGLYPH_N039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN039),
-            EGYPTIAN_HIEROGLYPH_N040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN040),
-            EGYPTIAN_HIEROGLYPH_N041 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN041),
-            EGYPTIAN_HIEROGLYPH_N042 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN042),
-            EGYPTIAN_HIEROGLYPH_NL001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl001),
-            EGYPTIAN_HIEROGLYPH_NL002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl002),
-            EGYPTIAN_HIEROGLYPH_NL003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl003),
-            EGYPTIAN_HIEROGLYPH_NL004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl004),
-            EGYPTIAN_HIEROGLYPH_NL005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl005),
-            EGYPTIAN_HIEROGLYPH_NL005A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl005a),
-            EGYPTIAN_HIEROGLYPH_NL006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl006),
-            EGYPTIAN_HIEROGLYPH_NL007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl007),
-            EGYPTIAN_HIEROGLYPH_NL008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl008),
-            EGYPTIAN_HIEROGLYPH_NL009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl009),
-            EGYPTIAN_HIEROGLYPH_NL010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl010),
-            EGYPTIAN_HIEROGLYPH_NL011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl011),
-            EGYPTIAN_HIEROGLYPH_NL012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl012),
-            EGYPTIAN_HIEROGLYPH_NL013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl013),
-            EGYPTIAN_HIEROGLYPH_NL014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl014),
-            EGYPTIAN_HIEROGLYPH_NL015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl015),
-            EGYPTIAN_HIEROGLYPH_NL016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl016),
-            EGYPTIAN_HIEROGLYPH_NL017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl017),
-            EGYPTIAN_HIEROGLYPH_NL017A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl017a),
-            EGYPTIAN_HIEROGLYPH_NL018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl018),
-            EGYPTIAN_HIEROGLYPH_NL019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl019),
-            EGYPTIAN_HIEROGLYPH_NL020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl020),
-            EGYPTIAN_HIEROGLYPH_NU001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu001),
-            EGYPTIAN_HIEROGLYPH_NU002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu002),
-            EGYPTIAN_HIEROGLYPH_NU003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu003),
-            EGYPTIAN_HIEROGLYPH_NU004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu004),
-            EGYPTIAN_HIEROGLYPH_NU005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu005),
-            EGYPTIAN_HIEROGLYPH_NU006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu006),
-            EGYPTIAN_HIEROGLYPH_NU007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu007),
-            EGYPTIAN_HIEROGLYPH_NU008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu008),
-            EGYPTIAN_HIEROGLYPH_NU009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu009),
-            EGYPTIAN_HIEROGLYPH_NU010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu010),
-            EGYPTIAN_HIEROGLYPH_NU010A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu010a),
-            EGYPTIAN_HIEROGLYPH_NU011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu011),
-            EGYPTIAN_HIEROGLYPH_NU011A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu011a),
-            EGYPTIAN_HIEROGLYPH_NU012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu012),
-            EGYPTIAN_HIEROGLYPH_NU013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu013),
-            EGYPTIAN_HIEROGLYPH_NU014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu014),
-            EGYPTIAN_HIEROGLYPH_NU015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu015),
-            EGYPTIAN_HIEROGLYPH_NU016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu016),
-            EGYPTIAN_HIEROGLYPH_NU017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu017),
-            EGYPTIAN_HIEROGLYPH_NU018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu018),
-            EGYPTIAN_HIEROGLYPH_NU018A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu018a),
-            EGYPTIAN_HIEROGLYPH_NU019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu019),
-            EGYPTIAN_HIEROGLYPH_NU020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu020),
-            EGYPTIAN_HIEROGLYPH_NU021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu021),
-            EGYPTIAN_HIEROGLYPH_NU022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu022),
-            EGYPTIAN_HIEROGLYPH_NU022A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu022a),
-            EGYPTIAN_HIEROGLYPH_O001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO001),
-            EGYPTIAN_HIEROGLYPH_O001A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO001a),
-            EGYPTIAN_HIEROGLYPH_O002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO002),
-            EGYPTIAN_HIEROGLYPH_O003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO003),
-            EGYPTIAN_HIEROGLYPH_O004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO004),
-            EGYPTIAN_HIEROGLYPH_O005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO005),
-            EGYPTIAN_HIEROGLYPH_O005A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO005a),
-            EGYPTIAN_HIEROGLYPH_O006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006),
-            EGYPTIAN_HIEROGLYPH_O006A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006a),
-            EGYPTIAN_HIEROGLYPH_O006B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006b),
-            EGYPTIAN_HIEROGLYPH_O006C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006c),
-            EGYPTIAN_HIEROGLYPH_O006D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006d),
-            EGYPTIAN_HIEROGLYPH_O006E => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006e),
-            EGYPTIAN_HIEROGLYPH_O006F => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006f),
-            EGYPTIAN_HIEROGLYPH_O007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO007),
-            EGYPTIAN_HIEROGLYPH_O008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO008),
-            EGYPTIAN_HIEROGLYPH_O009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO009),
-            EGYPTIAN_HIEROGLYPH_O010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO010),
-            EGYPTIAN_HIEROGLYPH_O010A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO010a),
-            EGYPTIAN_HIEROGLYPH_O010B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO010b),
-            EGYPTIAN_HIEROGLYPH_O010C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO010c),
-            EGYPTIAN_HIEROGLYPH_O011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO011),
-            EGYPTIAN_HIEROGLYPH_O012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO012),
-            EGYPTIAN_HIEROGLYPH_O013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO013),
-            EGYPTIAN_HIEROGLYPH_O014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO014),
-            EGYPTIAN_HIEROGLYPH_O015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO015),
-            EGYPTIAN_HIEROGLYPH_O016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO016),
-            EGYPTIAN_HIEROGLYPH_O017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO017),
-            EGYPTIAN_HIEROGLYPH_O018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO018),
-            EGYPTIAN_HIEROGLYPH_O019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO019),
-            EGYPTIAN_HIEROGLYPH_O019A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO019a),
-            EGYPTIAN_HIEROGLYPH_O020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO020),
-            EGYPTIAN_HIEROGLYPH_O020A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO020a),
-            EGYPTIAN_HIEROGLYPH_O021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO021),
-            EGYPTIAN_HIEROGLYPH_O022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO022),
-            EGYPTIAN_HIEROGLYPH_O023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO023),
-            EGYPTIAN_HIEROGLYPH_O024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO024),
-            EGYPTIAN_HIEROGLYPH_O024A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO024a),
-            EGYPTIAN_HIEROGLYPH_O025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO025),
-            EGYPTIAN_HIEROGLYPH_O025A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO025a),
-            EGYPTIAN_HIEROGLYPH_O026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO026),
-            EGYPTIAN_HIEROGLYPH_O027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO027),
-            EGYPTIAN_HIEROGLYPH_O028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO028),
-            EGYPTIAN_HIEROGLYPH_O029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO029),
-            EGYPTIAN_HIEROGLYPH_O029A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO029a),
-            EGYPTIAN_HIEROGLYPH_O030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO030),
-            EGYPTIAN_HIEROGLYPH_O030A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO030a),
-            EGYPTIAN_HIEROGLYPH_O031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO031),
-            EGYPTIAN_HIEROGLYPH_O032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO032),
-            EGYPTIAN_HIEROGLYPH_O033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO033),
-            EGYPTIAN_HIEROGLYPH_O033A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO033a),
-            EGYPTIAN_HIEROGLYPH_O034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO034),
-            EGYPTIAN_HIEROGLYPH_O035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO035),
-            EGYPTIAN_HIEROGLYPH_O036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036),
-            EGYPTIAN_HIEROGLYPH_O036A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036a),
-            EGYPTIAN_HIEROGLYPH_O036B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036b),
-            EGYPTIAN_HIEROGLYPH_O036C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036c),
-            EGYPTIAN_HIEROGLYPH_O036D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036d),
-            EGYPTIAN_HIEROGLYPH_O037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO037),
-            EGYPTIAN_HIEROGLYPH_O038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO038),
-            EGYPTIAN_HIEROGLYPH_O039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO039),
-            EGYPTIAN_HIEROGLYPH_O040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO040),
-            EGYPTIAN_HIEROGLYPH_O041 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO041),
-            EGYPTIAN_HIEROGLYPH_O042 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO042),
-            EGYPTIAN_HIEROGLYPH_O043 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO043),
-            EGYPTIAN_HIEROGLYPH_O044 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO044),
-            EGYPTIAN_HIEROGLYPH_O045 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO045),
-            EGYPTIAN_HIEROGLYPH_O046 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO046),
-            EGYPTIAN_HIEROGLYPH_O047 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO047),
-            EGYPTIAN_HIEROGLYPH_O048 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO048),
-            EGYPTIAN_HIEROGLYPH_O049 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO049),
-            EGYPTIAN_HIEROGLYPH_O050 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO050),
-            EGYPTIAN_HIEROGLYPH_O050A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO050a),
-            EGYPTIAN_HIEROGLYPH_O050B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO050b),
-            EGYPTIAN_HIEROGLYPH_O051 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO051),
-            EGYPTIAN_HIEROGLYPH_P001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP001),
-            EGYPTIAN_HIEROGLYPH_P001A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP001a),
-            EGYPTIAN_HIEROGLYPH_P002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP002),
-            EGYPTIAN_HIEROGLYPH_P003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP003),
-            EGYPTIAN_HIEROGLYPH_P003A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP003a),
-            EGYPTIAN_HIEROGLYPH_P004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP004),
-            EGYPTIAN_HIEROGLYPH_P005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP005),
-            EGYPTIAN_HIEROGLYPH_P006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP006),
-            EGYPTIAN_HIEROGLYPH_P007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP007),
-            EGYPTIAN_HIEROGLYPH_P008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP008),
-            EGYPTIAN_HIEROGLYPH_P009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP009),
-            EGYPTIAN_HIEROGLYPH_P010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP010),
-            EGYPTIAN_HIEROGLYPH_P011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP011),
-            EGYPTIAN_HIEROGLYPH_Q001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ001),
-            EGYPTIAN_HIEROGLYPH_Q002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ002),
-            EGYPTIAN_HIEROGLYPH_Q003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ003),
-            EGYPTIAN_HIEROGLYPH_Q004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ004),
-            EGYPTIAN_HIEROGLYPH_Q005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ005),
-            EGYPTIAN_HIEROGLYPH_Q006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ006),
-            EGYPTIAN_HIEROGLYPH_Q007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ007),
-            EGYPTIAN_HIEROGLYPH_R001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR001),
-            EGYPTIAN_HIEROGLYPH_R002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR002),
-            EGYPTIAN_HIEROGLYPH_R002A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR002a),
-            EGYPTIAN_HIEROGLYPH_R003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR003),
-            EGYPTIAN_HIEROGLYPH_R003A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR003a),
-            EGYPTIAN_HIEROGLYPH_R003B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR003b),
-            EGYPTIAN_HIEROGLYPH_R004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR004),
-            EGYPTIAN_HIEROGLYPH_R005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR005),
-            EGYPTIAN_HIEROGLYPH_R006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR006),
-            EGYPTIAN_HIEROGLYPH_R007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR007),
-            EGYPTIAN_HIEROGLYPH_R008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR008),
-            EGYPTIAN_HIEROGLYPH_R009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR009),
-            EGYPTIAN_HIEROGLYPH_R010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR010),
-            EGYPTIAN_HIEROGLYPH_R010A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR010a),
-            EGYPTIAN_HIEROGLYPH_R011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR011),
-            EGYPTIAN_HIEROGLYPH_R012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR012),
-            EGYPTIAN_HIEROGLYPH_R013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR013),
-            EGYPTIAN_HIEROGLYPH_R014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR014),
-            EGYPTIAN_HIEROGLYPH_R015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR015),
-            EGYPTIAN_HIEROGLYPH_R016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR016),
-            EGYPTIAN_HIEROGLYPH_R016A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR016a),
-            EGYPTIAN_HIEROGLYPH_R017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR017),
-            EGYPTIAN_HIEROGLYPH_R018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR018),
-            EGYPTIAN_HIEROGLYPH_R019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR019),
-            EGYPTIAN_HIEROGLYPH_R020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR020),
-            EGYPTIAN_HIEROGLYPH_R021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR021),
-            EGYPTIAN_HIEROGLYPH_R022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR022),
-            EGYPTIAN_HIEROGLYPH_R023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR023),
-            EGYPTIAN_HIEROGLYPH_R024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR024),
-            EGYPTIAN_HIEROGLYPH_R025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR025),
-            EGYPTIAN_HIEROGLYPH_R026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR026),
-            EGYPTIAN_HIEROGLYPH_R027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR027),
-            EGYPTIAN_HIEROGLYPH_R028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR028),
-            EGYPTIAN_HIEROGLYPH_R029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR029),
-            EGYPTIAN_HIEROGLYPH_S001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS001),
-            EGYPTIAN_HIEROGLYPH_S002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS002),
-            EGYPTIAN_HIEROGLYPH_S002A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS002a),
-            EGYPTIAN_HIEROGLYPH_S003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS003),
-            EGYPTIAN_HIEROGLYPH_S004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS004),
-            EGYPTIAN_HIEROGLYPH_S005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS005),
-            EGYPTIAN_HIEROGLYPH_S006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS006),
-            EGYPTIAN_HIEROGLYPH_S006A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS006a),
-            EGYPTIAN_HIEROGLYPH_S007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS007),
-            EGYPTIAN_HIEROGLYPH_S008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS008),
-            EGYPTIAN_HIEROGLYPH_S009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS009),
-            EGYPTIAN_HIEROGLYPH_S010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS010),
-            EGYPTIAN_HIEROGLYPH_S011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS011),
-            EGYPTIAN_HIEROGLYPH_S012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS012),
-            EGYPTIAN_HIEROGLYPH_S013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS013),
-            EGYPTIAN_HIEROGLYPH_S014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS014),
-            EGYPTIAN_HIEROGLYPH_S014A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS014a),
-            EGYPTIAN_HIEROGLYPH_S014B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS014b),
-            EGYPTIAN_HIEROGLYPH_S015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS015),
-            EGYPTIAN_HIEROGLYPH_S016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS016),
-            EGYPTIAN_HIEROGLYPH_S017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS017),
-            EGYPTIAN_HIEROGLYPH_S017A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS017a),
-            EGYPTIAN_HIEROGLYPH_S018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS018),
-            EGYPTIAN_HIEROGLYPH_S019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS019),
-            EGYPTIAN_HIEROGLYPH_S020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS020),
-            EGYPTIAN_HIEROGLYPH_S021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS021),
-            EGYPTIAN_HIEROGLYPH_S022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS022),
-            EGYPTIAN_HIEROGLYPH_S023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS023),
-            EGYPTIAN_HIEROGLYPH_S024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS024),
-            EGYPTIAN_HIEROGLYPH_S025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS025),
-            EGYPTIAN_HIEROGLYPH_S026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS026),
-            EGYPTIAN_HIEROGLYPH_S026A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS026a),
-            EGYPTIAN_HIEROGLYPH_S026B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS026b),
-            EGYPTIAN_HIEROGLYPH_S027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS027),
-            EGYPTIAN_HIEROGLYPH_S028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS028),
-            EGYPTIAN_HIEROGLYPH_S029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS029),
-            EGYPTIAN_HIEROGLYPH_S030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS030),
-            EGYPTIAN_HIEROGLYPH_S031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS031),
-            EGYPTIAN_HIEROGLYPH_S032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS032),
-            EGYPTIAN_HIEROGLYPH_S033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS033),
-            EGYPTIAN_HIEROGLYPH_S034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS034),
-            EGYPTIAN_HIEROGLYPH_S035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS035),
-            EGYPTIAN_HIEROGLYPH_S035A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS035a),
-            EGYPTIAN_HIEROGLYPH_S036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS036),
-            EGYPTIAN_HIEROGLYPH_S037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS037),
-            EGYPTIAN_HIEROGLYPH_S038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS038),
-            EGYPTIAN_HIEROGLYPH_S039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS039),
-            EGYPTIAN_HIEROGLYPH_S040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS040),
-            EGYPTIAN_HIEROGLYPH_S041 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS041),
-            EGYPTIAN_HIEROGLYPH_S042 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS042),
-            EGYPTIAN_HIEROGLYPH_S043 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS043),
-            EGYPTIAN_HIEROGLYPH_S044 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS044),
-            EGYPTIAN_HIEROGLYPH_S045 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS045),
-            EGYPTIAN_HIEROGLYPH_S046 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS046),
-            EGYPTIAN_HIEROGLYPH_T001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT001),
-            EGYPTIAN_HIEROGLYPH_T002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT002),
-            EGYPTIAN_HIEROGLYPH_T003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT003),
-            EGYPTIAN_HIEROGLYPH_T003A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT003a),
-            EGYPTIAN_HIEROGLYPH_T004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT004),
-            EGYPTIAN_HIEROGLYPH_T005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT005),
-            EGYPTIAN_HIEROGLYPH_T006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT006),
-            EGYPTIAN_HIEROGLYPH_T007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT007),
-            EGYPTIAN_HIEROGLYPH_T007A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT007a),
-            EGYPTIAN_HIEROGLYPH_T008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT008),
-            EGYPTIAN_HIEROGLYPH_T008A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT008a),
-            EGYPTIAN_HIEROGLYPH_T009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT009),
-            EGYPTIAN_HIEROGLYPH_T009A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT009a),
-            EGYPTIAN_HIEROGLYPH_T010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT010),
-            EGYPTIAN_HIEROGLYPH_T011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT011),
-            EGYPTIAN_HIEROGLYPH_T011A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT011a),
-            EGYPTIAN_HIEROGLYPH_T012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT012),
-            EGYPTIAN_HIEROGLYPH_T013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT013),
-            EGYPTIAN_HIEROGLYPH_T014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT014),
-            EGYPTIAN_HIEROGLYPH_T015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT015),
-            EGYPTIAN_HIEROGLYPH_T016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT016),
-            EGYPTIAN_HIEROGLYPH_T016A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT016a),
-            EGYPTIAN_HIEROGLYPH_T017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT017),
-            EGYPTIAN_HIEROGLYPH_T018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT018),
-            EGYPTIAN_HIEROGLYPH_T019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT019),
-            EGYPTIAN_HIEROGLYPH_T020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT020),
-            EGYPTIAN_HIEROGLYPH_T021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT021),
-            EGYPTIAN_HIEROGLYPH_T022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT022),
-            EGYPTIAN_HIEROGLYPH_T023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT023),
-            EGYPTIAN_HIEROGLYPH_T024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT024),
-            EGYPTIAN_HIEROGLYPH_T025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT025),
-            EGYPTIAN_HIEROGLYPH_T026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT026),
-            EGYPTIAN_HIEROGLYPH_T027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT027),
-            EGYPTIAN_HIEROGLYPH_T028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT028),
-            EGYPTIAN_HIEROGLYPH_T029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT029),
-            EGYPTIAN_HIEROGLYPH_T030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT030),
-            EGYPTIAN_HIEROGLYPH_T031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT031),
-            EGYPTIAN_HIEROGLYPH_T032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT032),
-            EGYPTIAN_HIEROGLYPH_T032A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT032a),
-            EGYPTIAN_HIEROGLYPH_T033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT033),
-            EGYPTIAN_HIEROGLYPH_T033A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT033a),
-            EGYPTIAN_HIEROGLYPH_T034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT034),
-            EGYPTIAN_HIEROGLYPH_T035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT035),
-            EGYPTIAN_HIEROGLYPH_T036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT036),
-            EGYPTIAN_HIEROGLYPH_U001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU001),
-            EGYPTIAN_HIEROGLYPH_U002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU002),
-            EGYPTIAN_HIEROGLYPH_U003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU003),
-            EGYPTIAN_HIEROGLYPH_U004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU004),
-            EGYPTIAN_HIEROGLYPH_U005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU005),
-            EGYPTIAN_HIEROGLYPH_U006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU006),
-            EGYPTIAN_HIEROGLYPH_U006A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU006a),
-            EGYPTIAN_HIEROGLYPH_U006B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU006b),
-            EGYPTIAN_HIEROGLYPH_U007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU007),
-            EGYPTIAN_HIEROGLYPH_U008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU008),
-            EGYPTIAN_HIEROGLYPH_U009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU009),
-            EGYPTIAN_HIEROGLYPH_U010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU010),
-            EGYPTIAN_HIEROGLYPH_U011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU011),
-            EGYPTIAN_HIEROGLYPH_U012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU012),
-            EGYPTIAN_HIEROGLYPH_U013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU013),
-            EGYPTIAN_HIEROGLYPH_U014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU014),
-            EGYPTIAN_HIEROGLYPH_U015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU015),
-            EGYPTIAN_HIEROGLYPH_U016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU016),
-            EGYPTIAN_HIEROGLYPH_U017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU017),
-            EGYPTIAN_HIEROGLYPH_U018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU018),
-            EGYPTIAN_HIEROGLYPH_U019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU019),
-            EGYPTIAN_HIEROGLYPH_U020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU020),
-            EGYPTIAN_HIEROGLYPH_U021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU021),
-            EGYPTIAN_HIEROGLYPH_U022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU022),
-            EGYPTIAN_HIEROGLYPH_U023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU023),
-            EGYPTIAN_HIEROGLYPH_U023A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU023a),
-            EGYPTIAN_HIEROGLYPH_U024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU024),
-            EGYPTIAN_HIEROGLYPH_U025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU025),
-            EGYPTIAN_HIEROGLYPH_U026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU026),
-            EGYPTIAN_HIEROGLYPH_U027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU027),
-            EGYPTIAN_HIEROGLYPH_U028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU028),
-            EGYPTIAN_HIEROGLYPH_U029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU029),
-            EGYPTIAN_HIEROGLYPH_U029A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU029a),
-            EGYPTIAN_HIEROGLYPH_U030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU030),
-            EGYPTIAN_HIEROGLYPH_U031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU031),
-            EGYPTIAN_HIEROGLYPH_U032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU032),
-            EGYPTIAN_HIEROGLYPH_U032A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU032a),
-            EGYPTIAN_HIEROGLYPH_U033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU033),
-            EGYPTIAN_HIEROGLYPH_U034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU034),
-            EGYPTIAN_HIEROGLYPH_U035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU035),
-            EGYPTIAN_HIEROGLYPH_U036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU036),
-            EGYPTIAN_HIEROGLYPH_U037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU037),
-            EGYPTIAN_HIEROGLYPH_U038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU038),
-            EGYPTIAN_HIEROGLYPH_U039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU039),
-            EGYPTIAN_HIEROGLYPH_U040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU040),
-            EGYPTIAN_HIEROGLYPH_U041 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU041),
-            EGYPTIAN_HIEROGLYPH_U042 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU042),
-            EGYPTIAN_HIEROGLYPH_V001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001),
-            EGYPTIAN_HIEROGLYPH_V001A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001a),
-            EGYPTIAN_HIEROGLYPH_V001B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001b),
-            EGYPTIAN_HIEROGLYPH_V001C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001c),
-            EGYPTIAN_HIEROGLYPH_V001D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001d),
-            EGYPTIAN_HIEROGLYPH_V001E => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001e),
-            EGYPTIAN_HIEROGLYPH_V001F => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001f),
-            EGYPTIAN_HIEROGLYPH_V001G => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001g),
-            EGYPTIAN_HIEROGLYPH_V001H => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001h),
-            EGYPTIAN_HIEROGLYPH_V001I => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001i),
-            EGYPTIAN_HIEROGLYPH_V002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV002),
-            EGYPTIAN_HIEROGLYPH_V002A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV002a),
-            EGYPTIAN_HIEROGLYPH_V003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV003),
-            EGYPTIAN_HIEROGLYPH_V004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV004),
-            EGYPTIAN_HIEROGLYPH_V005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV005),
-            EGYPTIAN_HIEROGLYPH_V006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV006),
-            EGYPTIAN_HIEROGLYPH_V007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV007),
-            EGYPTIAN_HIEROGLYPH_V007A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV007a),
-            EGYPTIAN_HIEROGLYPH_V007B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV007b),
-            EGYPTIAN_HIEROGLYPH_V008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV008),
-            EGYPTIAN_HIEROGLYPH_V009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV009),
-            EGYPTIAN_HIEROGLYPH_V010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV010),
-            EGYPTIAN_HIEROGLYPH_V011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV011),
-            EGYPTIAN_HIEROGLYPH_V011A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV011a),
-            EGYPTIAN_HIEROGLYPH_V011B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV011b),
-            EGYPTIAN_HIEROGLYPH_V011C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV011c),
-            EGYPTIAN_HIEROGLYPH_V012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV012),
-            EGYPTIAN_HIEROGLYPH_V012A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV012a),
-            EGYPTIAN_HIEROGLYPH_V012B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV012b),
-            EGYPTIAN_HIEROGLYPH_V013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV013),
-            EGYPTIAN_HIEROGLYPH_V014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV014),
-            EGYPTIAN_HIEROGLYPH_V015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV015),
-            EGYPTIAN_HIEROGLYPH_V016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV016),
-            EGYPTIAN_HIEROGLYPH_V017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV017),
-            EGYPTIAN_HIEROGLYPH_V018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV018),
-            EGYPTIAN_HIEROGLYPH_V019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV019),
-            EGYPTIAN_HIEROGLYPH_V020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020),
-            EGYPTIAN_HIEROGLYPH_V020A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020a),
-            EGYPTIAN_HIEROGLYPH_V020B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020b),
-            EGYPTIAN_HIEROGLYPH_V020C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020c),
-            EGYPTIAN_HIEROGLYPH_V020D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020d),
-            EGYPTIAN_HIEROGLYPH_V020E => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020e),
-            EGYPTIAN_HIEROGLYPH_V020F => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020f),
-            EGYPTIAN_HIEROGLYPH_V020G => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020g),
-            EGYPTIAN_HIEROGLYPH_V020H => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020h),
-            EGYPTIAN_HIEROGLYPH_V020I => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020i),
-            EGYPTIAN_HIEROGLYPH_V020J => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020j),
-            EGYPTIAN_HIEROGLYPH_V020K => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020k),
-            EGYPTIAN_HIEROGLYPH_V020L => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020l),
-            EGYPTIAN_HIEROGLYPH_V021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV021),
-            EGYPTIAN_HIEROGLYPH_V022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV022),
-            EGYPTIAN_HIEROGLYPH_V023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV023),
-            EGYPTIAN_HIEROGLYPH_V023A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV023a),
-            EGYPTIAN_HIEROGLYPH_V024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV024),
-            EGYPTIAN_HIEROGLYPH_V025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV025),
-            EGYPTIAN_HIEROGLYPH_V026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV026),
-            EGYPTIAN_HIEROGLYPH_V027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV027),
-            EGYPTIAN_HIEROGLYPH_V028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV028),
-            EGYPTIAN_HIEROGLYPH_V028A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV028a),
-            EGYPTIAN_HIEROGLYPH_V029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV029),
-            EGYPTIAN_HIEROGLYPH_V029A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV029a),
-            EGYPTIAN_HIEROGLYPH_V030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV030),
-            EGYPTIAN_HIEROGLYPH_V030A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV030a),
-            EGYPTIAN_HIEROGLYPH_V031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV031),
-            EGYPTIAN_HIEROGLYPH_V031A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV031a),
-            EGYPTIAN_HIEROGLYPH_V032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV032),
-            EGYPTIAN_HIEROGLYPH_V033 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV033),
-            EGYPTIAN_HIEROGLYPH_V033A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV033a),
-            EGYPTIAN_HIEROGLYPH_V034 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV034),
-            EGYPTIAN_HIEROGLYPH_V035 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV035),
-            EGYPTIAN_HIEROGLYPH_V036 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV036),
-            EGYPTIAN_HIEROGLYPH_V037 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV037),
-            EGYPTIAN_HIEROGLYPH_V037A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV037a),
-            EGYPTIAN_HIEROGLYPH_V038 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV038),
-            EGYPTIAN_HIEROGLYPH_V039 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV039),
-            EGYPTIAN_HIEROGLYPH_V040 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV040),
-            EGYPTIAN_HIEROGLYPH_V040A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV040a),
-            EGYPTIAN_HIEROGLYPH_W001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW001),
-            EGYPTIAN_HIEROGLYPH_W002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW002),
-            EGYPTIAN_HIEROGLYPH_W003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW003),
-            EGYPTIAN_HIEROGLYPH_W003A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW003a),
-            EGYPTIAN_HIEROGLYPH_W004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW004),
-            EGYPTIAN_HIEROGLYPH_W005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW005),
-            EGYPTIAN_HIEROGLYPH_W006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW006),
-            EGYPTIAN_HIEROGLYPH_W007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW007),
-            EGYPTIAN_HIEROGLYPH_W008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW008),
-            EGYPTIAN_HIEROGLYPH_W009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW009),
-            EGYPTIAN_HIEROGLYPH_W009A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW009a),
-            EGYPTIAN_HIEROGLYPH_W010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW010),
-            EGYPTIAN_HIEROGLYPH_W010A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW010a),
-            EGYPTIAN_HIEROGLYPH_W011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW011),
-            EGYPTIAN_HIEROGLYPH_W012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW012),
-            EGYPTIAN_HIEROGLYPH_W013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW013),
-            EGYPTIAN_HIEROGLYPH_W014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW014),
-            EGYPTIAN_HIEROGLYPH_W014A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW014a),
-            EGYPTIAN_HIEROGLYPH_W015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW015),
-            EGYPTIAN_HIEROGLYPH_W016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW016),
-            EGYPTIAN_HIEROGLYPH_W017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW017),
-            EGYPTIAN_HIEROGLYPH_W017A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW017a),
-            EGYPTIAN_HIEROGLYPH_W018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW018),
-            EGYPTIAN_HIEROGLYPH_W018A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW018a),
-            EGYPTIAN_HIEROGLYPH_W019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW019),
-            EGYPTIAN_HIEROGLYPH_W020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW020),
-            EGYPTIAN_HIEROGLYPH_W021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW021),
-            EGYPTIAN_HIEROGLYPH_W022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW022),
-            EGYPTIAN_HIEROGLYPH_W023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW023),
-            EGYPTIAN_HIEROGLYPH_W024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW024),
-            EGYPTIAN_HIEROGLYPH_W024A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW024a),
-            EGYPTIAN_HIEROGLYPH_W025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW025),
-            EGYPTIAN_HIEROGLYPH_X001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX001),
-            EGYPTIAN_HIEROGLYPH_X002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX002),
-            EGYPTIAN_HIEROGLYPH_X003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX003),
-            EGYPTIAN_HIEROGLYPH_X004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX004),
-            EGYPTIAN_HIEROGLYPH_X004A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX004a),
-            EGYPTIAN_HIEROGLYPH_X004B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX004b),
-            EGYPTIAN_HIEROGLYPH_X005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX005),
-            EGYPTIAN_HIEROGLYPH_X006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX006),
-            EGYPTIAN_HIEROGLYPH_X006A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX006a),
-            EGYPTIAN_HIEROGLYPH_X007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX007),
-            EGYPTIAN_HIEROGLYPH_X008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX008),
-            EGYPTIAN_HIEROGLYPH_X008A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX008a),
-            EGYPTIAN_HIEROGLYPH_Y001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY001),
-            EGYPTIAN_HIEROGLYPH_Y001A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY001a),
-            EGYPTIAN_HIEROGLYPH_Y002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY002),
-            EGYPTIAN_HIEROGLYPH_Y003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY003),
-            EGYPTIAN_HIEROGLYPH_Y004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY004),
-            EGYPTIAN_HIEROGLYPH_Y005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY005),
-            EGYPTIAN_HIEROGLYPH_Y006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY006),
-            EGYPTIAN_HIEROGLYPH_Y007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY007),
-            EGYPTIAN_HIEROGLYPH_Y008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY008),
-            EGYPTIAN_HIEROGLYPH_Z001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ001),
-            EGYPTIAN_HIEROGLYPH_Z002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002),
-            EGYPTIAN_HIEROGLYPH_Z002A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002a),
-            EGYPTIAN_HIEROGLYPH_Z002B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002b),
-            EGYPTIAN_HIEROGLYPH_Z002C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002c),
-            EGYPTIAN_HIEROGLYPH_Z002D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002d),
-            EGYPTIAN_HIEROGLYPH_Z003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ003),
-            EGYPTIAN_HIEROGLYPH_Z003A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ003a),
-            EGYPTIAN_HIEROGLYPH_Z003B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ003b),
-            EGYPTIAN_HIEROGLYPH_Z004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ004),
-            EGYPTIAN_HIEROGLYPH_Z004A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ004a),
-            EGYPTIAN_HIEROGLYPH_Z005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ005),
-            EGYPTIAN_HIEROGLYPH_Z005A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ005a),
-            EGYPTIAN_HIEROGLYPH_Z006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ006),
-            EGYPTIAN_HIEROGLYPH_Z007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ007),
-            EGYPTIAN_HIEROGLYPH_Z008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ008),
-            EGYPTIAN_HIEROGLYPH_Z009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ009),
-            EGYPTIAN_HIEROGLYPH_Z010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ010),
-            EGYPTIAN_HIEROGLYPH_Z011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ011),
-            EGYPTIAN_HIEROGLYPH_Z012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ012),
-            EGYPTIAN_HIEROGLYPH_Z013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ013),
-            EGYPTIAN_HIEROGLYPH_Z014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ014),
-            EGYPTIAN_HIEROGLYPH_Z015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015),
-            EGYPTIAN_HIEROGLYPH_Z015A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015a),
-            EGYPTIAN_HIEROGLYPH_Z015B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015b),
-            EGYPTIAN_HIEROGLYPH_Z015C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015c),
-            EGYPTIAN_HIEROGLYPH_Z015D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015d),
-            EGYPTIAN_HIEROGLYPH_Z015E => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015e),
-            EGYPTIAN_HIEROGLYPH_Z015F => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015f),
-            EGYPTIAN_HIEROGLYPH_Z015G => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015g),
-            EGYPTIAN_HIEROGLYPH_Z015H => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015h),
-            EGYPTIAN_HIEROGLYPH_Z015I => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015i),
-            EGYPTIAN_HIEROGLYPH_Z016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016),
-            EGYPTIAN_HIEROGLYPH_Z016A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016a),
-            EGYPTIAN_HIEROGLYPH_Z016B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016b),
-            EGYPTIAN_HIEROGLYPH_Z016C => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016c),
-            EGYPTIAN_HIEROGLYPH_Z016D => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016d),
-            EGYPTIAN_HIEROGLYPH_Z016E => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016e),
-            EGYPTIAN_HIEROGLYPH_Z016F => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016f),
-            EGYPTIAN_HIEROGLYPH_Z016G => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016g),
-            EGYPTIAN_HIEROGLYPH_Z016H => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016h),
-            EGYPTIAN_HIEROGLYPH_AA001 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa001),
-            EGYPTIAN_HIEROGLYPH_AA002 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa002),
-            EGYPTIAN_HIEROGLYPH_AA003 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa003),
-            EGYPTIAN_HIEROGLYPH_AA004 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa004),
-            EGYPTIAN_HIEROGLYPH_AA005 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa005),
-            EGYPTIAN_HIEROGLYPH_AA006 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa006),
-            EGYPTIAN_HIEROGLYPH_AA007 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa007),
-            EGYPTIAN_HIEROGLYPH_AA007A => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa007a),
-            EGYPTIAN_HIEROGLYPH_AA007B => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa007b),
-            EGYPTIAN_HIEROGLYPH_AA008 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa008),
-            EGYPTIAN_HIEROGLYPH_AA009 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa009),
-            EGYPTIAN_HIEROGLYPH_AA010 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa010),
-            EGYPTIAN_HIEROGLYPH_AA011 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa011),
-            EGYPTIAN_HIEROGLYPH_AA012 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa012),
-            EGYPTIAN_HIEROGLYPH_AA013 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa013),
-            EGYPTIAN_HIEROGLYPH_AA014 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa014),
-            EGYPTIAN_HIEROGLYPH_AA015 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa015),
-            EGYPTIAN_HIEROGLYPH_AA016 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa016),
-            EGYPTIAN_HIEROGLYPH_AA017 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa017),
-            EGYPTIAN_HIEROGLYPH_AA018 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa018),
-            EGYPTIAN_HIEROGLYPH_AA019 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa019),
-            EGYPTIAN_HIEROGLYPH_AA020 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa020),
-            EGYPTIAN_HIEROGLYPH_AA021 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa021),
-            EGYPTIAN_HIEROGLYPH_AA022 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa022),
-            EGYPTIAN_HIEROGLYPH_AA023 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa023),
-            EGYPTIAN_HIEROGLYPH_AA024 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa024),
-            EGYPTIAN_HIEROGLYPH_AA025 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa025),
-            EGYPTIAN_HIEROGLYPH_AA026 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa026),
-            EGYPTIAN_HIEROGLYPH_AA027 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa027),
-            EGYPTIAN_HIEROGLYPH_AA028 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa028),
-            EGYPTIAN_HIEROGLYPH_AA029 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa029),
-            EGYPTIAN_HIEROGLYPH_AA030 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa030),
-            EGYPTIAN_HIEROGLYPH_AA031 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa031),
-            EGYPTIAN_HIEROGLYPH_AA032 => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa032),
+            '𓀀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA001),
+            '𓀁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA002),
+            '𓀂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA003),
+            '𓀃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA004),
+            '𓀄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA005),
+            '𓀅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA005a),
+            '𓀆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA006),
+            '𓀇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA006a),
+            '𓀈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA006b),
+            '𓀉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA007),
+            '𓀊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA008),
+            '𓀋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA009),
+            '𓀌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA010),
+            '𓀍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA011),
+            '𓀎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA012),
+            '𓀏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA013),
+            '𓀐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA014),
+            '𓀑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA014a),
+            '𓀒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA015),
+            '𓀓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA016),
+            '𓀔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA017),
+            '𓀕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA017a),
+            '𓀖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA018),
+            '𓀗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA019),
+            '𓀘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA020),
+            '𓀙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA021),
+            '𓀚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA022),
+            '𓀛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA023),
+            '𓀜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA024),
+            '𓀝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA025),
+            '𓀞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA026),
+            '𓀟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA027),
+            '𓀠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA028),
+            '𓀡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA029),
+            '𓀢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA030),
+            '𓀣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA031),
+            '𓀤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA032),
+            '𓀥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA032a),
+            '𓀦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA033),
+            '𓀧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA034),
+            '𓀨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA035),
+            '𓀩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA036),
+            '𓀪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA037),
+            '𓀫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA038),
+            '𓀬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA039),
+            '𓀭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA040),
+            '𓀮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA040a),
+            '𓀯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA041),
+            '𓀰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA042),
+            '𓀱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA042a),
+            '𓀲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA043),
+            '𓀳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA043a),
+            '𓀴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA044),
+            '𓀵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA045),
+            '𓀶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA045a),
+            '𓀷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA046),
+            '𓀸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA047),
+            '𓀹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA048),
+            '𓀺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA049),
+            '𓀻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA050),
+            '𓀼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA051),
+            '𓀽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA052),
+            '𓀾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA053),
+            '𓀿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA054),
+            '𓁀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA055),
+            '𓁁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA056),
+            '𓁂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA057),
+            '𓁃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA058),
+            '𓁄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA059),
+            '𓁅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA060),
+            '𓁆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA061),
+            '𓁇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA062),
+            '𓁈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA063),
+            '𓁉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA064),
+            '𓁊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA065),
+            '𓁋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA066),
+            '𓁌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA067),
+            '𓁍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA068),
+            '𓁎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA069),
+            '𓁏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphA070),
+            '𓁐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB001),
+            '𓁑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB002),
+            '𓁒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB003),
+            '𓁓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB004),
+            '𓁔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB005),
+            '𓁕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB005a),
+            '𓁖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB006),
+            '𓁗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB007),
+            '𓁘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB008),
+            '𓁙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphB009),
+            '𓁚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC001),
+            '𓁛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC002),
+            '𓁜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC002a),
+            '𓁝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC002b),
+            '𓁞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC002c),
+            '𓁟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC003),
+            '𓁠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC004),
+            '𓁡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC005),
+            '𓁢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC006),
+            '𓁣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC007),
+            '𓁤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC008),
+            '𓁥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC009),
+            '𓁦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC010),
+            '𓁧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC010a),
+            '𓁨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC011),
+            '𓁩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC012),
+            '𓁪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC013),
+            '𓁫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC014),
+            '𓁬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC015),
+            '𓁭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC016),
+            '𓁮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC017),
+            '𓁯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC018),
+            '𓁰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC019),
+            '𓁱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC020),
+            '𓁲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC021),
+            '𓁳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC022),
+            '𓁴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC023),
+            '𓁵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphC024),
+            '𓁶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD001),
+            '𓁷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD002),
+            '𓁸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD003),
+            '𓁹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD004),
+            '𓁺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD005),
+            '𓁻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD006),
+            '𓁼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD007),
+            '𓁽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD008),
+            '𓁾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD008a),
+            '𓁿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD009),
+            '𓂀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD010),
+            '𓂁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD011),
+            '𓂂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD012),
+            '𓂃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD013),
+            '𓂄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD014),
+            '𓂅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD015),
+            '𓂆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD016),
+            '𓂇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD017),
+            '𓂈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD018),
+            '𓂉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD019),
+            '𓂊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD020),
+            '𓂋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD021),
+            '𓂌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD022),
+            '𓂍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD023),
+            '𓂎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD024),
+            '𓂏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD025),
+            '𓂐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD026),
+            '𓂑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD027),
+            '𓂒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD027a),
+            '𓂓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD028),
+            '𓂔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD029),
+            '𓂕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD030),
+            '𓂖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD031),
+            '𓂗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD031a),
+            '𓂘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD032),
+            '𓂙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD033),
+            '𓂚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD034),
+            '𓂛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD034a),
+            '𓂜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD035),
+            '𓂝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD036),
+            '𓂞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD037),
+            '𓂟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD038),
+            '𓂠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD039),
+            '𓂡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD040),
+            '𓂢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD041),
+            '𓂣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD042),
+            '𓂤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD043),
+            '𓂥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD044),
+            '𓂦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD045),
+            '𓂧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD046),
+            '𓂨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD046a),
+            '𓂩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD047),
+            '𓂪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD048),
+            '𓂫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD048a),
+            '𓂬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD049),
+            '𓂭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050),
+            '𓂮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050a),
+            '𓂯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050b),
+            '𓂰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050c),
+            '𓂱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050d),
+            '𓂲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050e),
+            '𓂳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050f),
+            '𓂴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050g),
+            '𓂵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050h),
+            '𓂶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD050i),
+            '𓂷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD051),
+            '𓂸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD052),
+            '𓂹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD052a),
+            '𓂺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD053),
+            '𓂻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD054),
+            '𓂼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD054a),
+            '𓂽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD055),
+            '𓂾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD056),
+            '𓂿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD057),
+            '𓃀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD058),
+            '𓃁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD059),
+            '𓃂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD060),
+            '𓃃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD061),
+            '𓃄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD062),
+            '𓃅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD063),
+            '𓃆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD064),
+            '𓃇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD065),
+            '𓃈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD066),
+            '𓃉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067),
+            '𓃊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067a),
+            '𓃋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067b),
+            '𓃌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067c),
+            '𓃍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067d),
+            '𓃎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067e),
+            '𓃏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067f),
+            '𓃐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067g),
+            '𓃑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphD067h),
+            '𓃒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE001),
+            '𓃓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE002),
+            '𓃔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE003),
+            '𓃕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE004),
+            '𓃖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE005),
+            '𓃗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE006),
+            '𓃘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE007),
+            '𓃙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE008),
+            '𓃚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE008a),
+            '𓃛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE009),
+            '𓃜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE009a),
+            '𓃝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE010),
+            '𓃞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE011),
+            '𓃟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE012),
+            '𓃠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE013),
+            '𓃡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE014),
+            '𓃢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE015),
+            '𓃣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE016),
+            '𓃤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE016a),
+            '𓃥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE017),
+            '𓃦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE017a),
+            '𓃧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE018),
+            '𓃨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE019),
+            '𓃩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE020),
+            '𓃪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE020a),
+            '𓃫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE021),
+            '𓃬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE022),
+            '𓃭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE023),
+            '𓃮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE024),
+            '𓃯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE025),
+            '𓃰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE026),
+            '𓃱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE027),
+            '𓃲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE028),
+            '𓃳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE028a),
+            '𓃴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE029),
+            '𓃵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE030),
+            '𓃶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE031),
+            '𓃷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE032),
+            '𓃸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE033),
+            '𓃹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE034),
+            '𓃺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE034a),
+            '𓃻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE036),
+            '𓃼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE037),
+            '𓃽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphE038),
+            '𓃾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF001),
+            '𓃿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF001a),
+            '𓄀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF002),
+            '𓄁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF003),
+            '𓄂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF004),
+            '𓄃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF005),
+            '𓄄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF006),
+            '𓄅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF007),
+            '𓄆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF008),
+            '𓄇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF009),
+            '𓄈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF010),
+            '𓄉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF011),
+            '𓄊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF012),
+            '𓄋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF013),
+            '𓄌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF013a),
+            '𓄍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF014),
+            '𓄎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF015),
+            '𓄏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF016),
+            '𓄐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF017),
+            '𓄑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF018),
+            '𓄒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF019),
+            '𓄓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF020),
+            '𓄔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF021),
+            '𓄕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF021a),
+            '𓄖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF022),
+            '𓄗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF023),
+            '𓄘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF024),
+            '𓄙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF025),
+            '𓄚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF026),
+            '𓄛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF027),
+            '𓄜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF028),
+            '𓄝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF029),
+            '𓄞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF030),
+            '𓄟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF031),
+            '𓄠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF031a),
+            '𓄡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF032),
+            '𓄢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF033),
+            '𓄣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF034),
+            '𓄤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF035),
+            '𓄥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF036),
+            '𓄦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF037),
+            '𓄧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF037a),
+            '𓄨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF038),
+            '𓄩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF038a),
+            '𓄪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF039),
+            '𓄫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF040),
+            '𓄬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF041),
+            '𓄭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF042),
+            '𓄮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF043),
+            '𓄯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF044),
+            '𓄰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF045),
+            '𓄱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF045a),
+            '𓄲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF046),
+            '𓄳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF046a),
+            '𓄴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF047),
+            '𓄵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF047a),
+            '𓄶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF048),
+            '𓄷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF049),
+            '𓄸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF050),
+            '𓄹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF051),
+            '𓄺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF051a),
+            '𓄻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF051b),
+            '𓄼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF051c),
+            '𓄽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF052),
+            '𓄾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphF053),
+            '𓄿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG001),
+            '𓅀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG002),
+            '𓅁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG003),
+            '𓅂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG004),
+            '𓅃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG005),
+            '𓅄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG006),
+            '𓅅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG006a),
+            '𓅆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG007),
+            '𓅇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG007a),
+            '𓅈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG007b),
+            '𓅉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG008),
+            '𓅊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG009),
+            '𓅋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG010),
+            '𓅌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG011),
+            '𓅍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG011a),
+            '𓅎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG012),
+            '𓅏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG013),
+            '𓅐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG014),
+            '𓅑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG015),
+            '𓅒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG016),
+            '𓅓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG017),
+            '𓅔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG018),
+            '𓅕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG019),
+            '𓅖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG020),
+            '𓅗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG020a),
+            '𓅘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG021),
+            '𓅙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG022),
+            '𓅚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG023),
+            '𓅛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG024),
+            '𓅜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG025),
+            '𓅝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG026),
+            '𓅞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG026a),
+            '𓅟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG027),
+            '𓅠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG028),
+            '𓅡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG029),
+            '𓅢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG030),
+            '𓅣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG031),
+            '𓅤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG032),
+            '𓅥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG033),
+            '𓅦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG034),
+            '𓅧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG035),
+            '𓅨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG036),
+            '𓅩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG036a),
+            '𓅪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG037),
+            '𓅫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG037a),
+            '𓅬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG038),
+            '𓅭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG039),
+            '𓅮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG040),
+            '𓅯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG041),
+            '𓅰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG042),
+            '𓅱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG043),
+            '𓅲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG043a),
+            '𓅳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG044),
+            '𓅴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG045),
+            '𓅵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG045a),
+            '𓅶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG046),
+            '𓅷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG047),
+            '𓅸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG048),
+            '𓅹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG049),
+            '𓅺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG050),
+            '𓅻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG051),
+            '𓅼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG052),
+            '𓅽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG053),
+            '𓅾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphG054),
+            '𓅿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH001),
+            '𓆀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH002),
+            '𓆁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH003),
+            '𓆂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH004),
+            '𓆃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH005),
+            '𓆄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH006),
+            '𓆅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH006a),
+            '𓆆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH007),
+            '𓆇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphH008),
+            '𓆈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI001),
+            '𓆉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI002),
+            '𓆊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI003),
+            '𓆋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI004),
+            '𓆌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI005),
+            '𓆍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI005a),
+            '𓆎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI006),
+            '𓆏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI007),
+            '𓆐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI008),
+            '𓆑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI009),
+            '𓆒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI009a),
+            '𓆓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI010),
+            '𓆔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI010a),
+            '𓆕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI011),
+            '𓆖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI011a),
+            '𓆗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI012),
+            '𓆘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI013),
+            '𓆙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI014),
+            '𓆚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphI015),
+            '𓆛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK001),
+            '𓆜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK002),
+            '𓆝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK003),
+            '𓆞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK004),
+            '𓆟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK005),
+            '𓆠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK006),
+            '𓆡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK007),
+            '𓆢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphK008),
+            '𓆣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL001),
+            '𓆤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL002),
+            '𓆥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL002a),
+            '𓆦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL003),
+            '𓆧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL004),
+            '𓆨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL005),
+            '𓆩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL006),
+            '𓆪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL006a),
+            '𓆫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL007),
+            '𓆬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphL008),
+            '𓆭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM001),
+            '𓆮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM001a),
+            '𓆯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM001b),
+            '𓆰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM002),
+            '𓆱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM003),
+            '𓆲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM003a),
+            '𓆳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM004),
+            '𓆴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM005),
+            '𓆵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM006),
+            '𓆶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM007),
+            '𓆷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM008),
+            '𓆸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM009),
+            '𓆹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM010),
+            '𓆺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM010a),
+            '𓆻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM011),
+            '𓆼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012),
+            '𓆽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012a),
+            '𓆾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012b),
+            '𓆿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012c),
+            '𓇀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012d),
+            '𓇁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012e),
+            '𓇂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012f),
+            '𓇃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012g),
+            '𓇄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM012h),
+            '𓇅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM013),
+            '𓇆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM014),
+            '𓇇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM015),
+            '𓇈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM015a),
+            '𓇉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM016),
+            '𓇊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM016a),
+            '𓇋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM017),
+            '𓇌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM017a),
+            '𓇍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM018),
+            '𓇎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM019),
+            '𓇏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM020),
+            '𓇐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM021),
+            '𓇑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM022),
+            '𓇒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM022a),
+            '𓇓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM023),
+            '𓇔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM024),
+            '𓇕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM024a),
+            '𓇖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM025),
+            '𓇗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM026),
+            '𓇘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM027),
+            '𓇙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM028),
+            '𓇚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM028a),
+            '𓇛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM029),
+            '𓇜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM030),
+            '𓇝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM031),
+            '𓇞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM031a),
+            '𓇟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM032),
+            '𓇠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM033),
+            '𓇡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM033a),
+            '𓇢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM033b),
+            '𓇣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM034),
+            '𓇤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM035),
+            '𓇥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM036),
+            '𓇦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM037),
+            '𓇧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM038),
+            '𓇨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM039),
+            '𓇩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM040),
+            '𓇪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM040a),
+            '𓇫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM041),
+            '𓇬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM042),
+            '𓇭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM043),
+            '𓇮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphM044),
+            '𓇯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN001),
+            '𓇰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN002),
+            '𓇱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN003),
+            '𓇲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN004),
+            '𓇳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN005),
+            '𓇴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN006),
+            '𓇵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN007),
+            '𓇶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN008),
+            '𓇷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN009),
+            '𓇸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN010),
+            '𓇹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN011),
+            '𓇺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN012),
+            '𓇻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN013),
+            '𓇼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN014),
+            '𓇽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN015),
+            '𓇾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN016),
+            '𓇿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN017),
+            '𓈀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN018),
+            '𓈁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN018a),
+            '𓈂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN018b),
+            '𓈃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN019),
+            '𓈄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN020),
+            '𓈅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN021),
+            '𓈆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN022),
+            '𓈇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN023),
+            '𓈈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN024),
+            '𓈉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN025),
+            '𓈊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN025a),
+            '𓈋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN026),
+            '𓈌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN027),
+            '𓈍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN028),
+            '𓈎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN029),
+            '𓈏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN030),
+            '𓈐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN031),
+            '𓈑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN032),
+            '𓈒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN033),
+            '𓈓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN033a),
+            '𓈔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN034),
+            '𓈕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN034a),
+            '𓈖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN035),
+            '𓈗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN035a),
+            '𓈘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN036),
+            '𓈙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN037),
+            '𓈚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN037a),
+            '𓈛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN038),
+            '𓈜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN039),
+            '𓈝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN040),
+            '𓈞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN041),
+            '𓈟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphN042),
+            '𓈠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl001),
+            '𓈡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl002),
+            '𓈢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl003),
+            '𓈣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl004),
+            '𓈤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl005),
+            '𓈥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl005a),
+            '𓈦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl006),
+            '𓈧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl007),
+            '𓈨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl008),
+            '𓈩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl009),
+            '𓈪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl010),
+            '𓈫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl011),
+            '𓈬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl012),
+            '𓈭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl013),
+            '𓈮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl014),
+            '𓈯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl015),
+            '𓈰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl016),
+            '𓈱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl017),
+            '𓈲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl017a),
+            '𓈳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl018),
+            '𓈴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl019),
+            '𓈵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNl020),
+            '𓈶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu001),
+            '𓈷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu002),
+            '𓈸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu003),
+            '𓈹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu004),
+            '𓈺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu005),
+            '𓈻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu006),
+            '𓈼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu007),
+            '𓈽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu008),
+            '𓈾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu009),
+            '𓈿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu010),
+            '𓉀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu010a),
+            '𓉁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu011),
+            '𓉂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu011a),
+            '𓉃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu012),
+            '𓉄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu013),
+            '𓉅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu014),
+            '𓉆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu015),
+            '𓉇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu016),
+            '𓉈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu017),
+            '𓉉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu018),
+            '𓉊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu018a),
+            '𓉋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu019),
+            '𓉌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu020),
+            '𓉍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu021),
+            '𓉎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu022),
+            '𓉏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphNu022a),
+            '𓉐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO001),
+            '𓉑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO001a),
+            '𓉒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO002),
+            '𓉓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO003),
+            '𓉔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO004),
+            '𓉕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO005),
+            '𓉖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO005a),
+            '𓉗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006),
+            '𓉘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006a),
+            '𓉙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006b),
+            '𓉚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006c),
+            '𓉛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006d),
+            '𓉜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006e),
+            '𓉝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO006f),
+            '𓉞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO007),
+            '𓉟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO008),
+            '𓉠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO009),
+            '𓉡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO010),
+            '𓉢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO010a),
+            '𓉣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO010b),
+            '𓉤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO010c),
+            '𓉥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO011),
+            '𓉦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO012),
+            '𓉧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO013),
+            '𓉨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO014),
+            '𓉩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO015),
+            '𓉪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO016),
+            '𓉫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO017),
+            '𓉬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO018),
+            '𓉭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO019),
+            '𓉮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO019a),
+            '𓉯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO020),
+            '𓉰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO020a),
+            '𓉱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO021),
+            '𓉲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO022),
+            '𓉳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO023),
+            '𓉴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO024),
+            '𓉵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO024a),
+            '𓉶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO025),
+            '𓉷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO025a),
+            '𓉸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO026),
+            '𓉹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO027),
+            '𓉺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO028),
+            '𓉻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO029),
+            '𓉼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO029a),
+            '𓉽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO030),
+            '𓉾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO030a),
+            '𓉿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO031),
+            '𓊀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO032),
+            '𓊁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO033),
+            '𓊂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO033a),
+            '𓊃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO034),
+            '𓊄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO035),
+            '𓊅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036),
+            '𓊆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036a),
+            '𓊇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036b),
+            '𓊈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036c),
+            '𓊉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO036d),
+            '𓊊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO037),
+            '𓊋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO038),
+            '𓊌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO039),
+            '𓊍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO040),
+            '𓊎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO041),
+            '𓊏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO042),
+            '𓊐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO043),
+            '𓊑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO044),
+            '𓊒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO045),
+            '𓊓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO046),
+            '𓊔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO047),
+            '𓊕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO048),
+            '𓊖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO049),
+            '𓊗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO050),
+            '𓊘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO050a),
+            '𓊙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO050b),
+            '𓊚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphO051),
+            '𓊛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP001),
+            '𓊜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP001a),
+            '𓊝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP002),
+            '𓊞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP003),
+            '𓊟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP003a),
+            '𓊠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP004),
+            '𓊡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP005),
+            '𓊢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP006),
+            '𓊣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP007),
+            '𓊤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP008),
+            '𓊥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP009),
+            '𓊦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP010),
+            '𓊧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphP011),
+            '𓊨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ001),
+            '𓊩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ002),
+            '𓊪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ003),
+            '𓊫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ004),
+            '𓊬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ005),
+            '𓊭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ006),
+            '𓊮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphQ007),
+            '𓊯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR001),
+            '𓊰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR002),
+            '𓊱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR002a),
+            '𓊲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR003),
+            '𓊳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR003a),
+            '𓊴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR003b),
+            '𓊵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR004),
+            '𓊶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR005),
+            '𓊷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR006),
+            '𓊸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR007),
+            '𓊹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR008),
+            '𓊺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR009),
+            '𓊻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR010),
+            '𓊼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR010a),
+            '𓊽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR011),
+            '𓊾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR012),
+            '𓊿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR013),
+            '𓋀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR014),
+            '𓋁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR015),
+            '𓋂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR016),
+            '𓋃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR016a),
+            '𓋄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR017),
+            '𓋅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR018),
+            '𓋆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR019),
+            '𓋇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR020),
+            '𓋈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR021),
+            '𓋉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR022),
+            '𓋊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR023),
+            '𓋋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR024),
+            '𓋌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR025),
+            '𓋍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR026),
+            '𓋎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR027),
+            '𓋏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR028),
+            '𓋐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphR029),
+            '𓋑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS001),
+            '𓋒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS002),
+            '𓋓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS002a),
+            '𓋔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS003),
+            '𓋕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS004),
+            '𓋖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS005),
+            '𓋗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS006),
+            '𓋘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS006a),
+            '𓋙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS007),
+            '𓋚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS008),
+            '𓋛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS009),
+            '𓋜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS010),
+            '𓋝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS011),
+            '𓋞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS012),
+            '𓋟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS013),
+            '𓋠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS014),
+            '𓋡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS014a),
+            '𓋢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS014b),
+            '𓋣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS015),
+            '𓋤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS016),
+            '𓋥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS017),
+            '𓋦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS017a),
+            '𓋧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS018),
+            '𓋨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS019),
+            '𓋩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS020),
+            '𓋪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS021),
+            '𓋫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS022),
+            '𓋬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS023),
+            '𓋭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS024),
+            '𓋮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS025),
+            '𓋯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS026),
+            '𓋰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS026a),
+            '𓋱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS026b),
+            '𓋲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS027),
+            '𓋳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS028),
+            '𓋴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS029),
+            '𓋵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS030),
+            '𓋶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS031),
+            '𓋷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS032),
+            '𓋸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS033),
+            '𓋹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS034),
+            '𓋺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS035),
+            '𓋻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS035a),
+            '𓋼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS036),
+            '𓋽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS037),
+            '𓋾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS038),
+            '𓋿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS039),
+            '𓌀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS040),
+            '𓌁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS041),
+            '𓌂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS042),
+            '𓌃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS043),
+            '𓌄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS044),
+            '𓌅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS045),
+            '𓌆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphS046),
+            '𓌇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT001),
+            '𓌈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT002),
+            '𓌉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT003),
+            '𓌊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT003a),
+            '𓌋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT004),
+            '𓌌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT005),
+            '𓌍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT006),
+            '𓌎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT007),
+            '𓌏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT007a),
+            '𓌐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT008),
+            '𓌑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT008a),
+            '𓌒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT009),
+            '𓌓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT009a),
+            '𓌔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT010),
+            '𓌕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT011),
+            '𓌖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT011a),
+            '𓌗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT012),
+            '𓌘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT013),
+            '𓌙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT014),
+            '𓌚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT015),
+            '𓌛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT016),
+            '𓌜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT016a),
+            '𓌝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT017),
+            '𓌞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT018),
+            '𓌟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT019),
+            '𓌠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT020),
+            '𓌡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT021),
+            '𓌢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT022),
+            '𓌣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT023),
+            '𓌤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT024),
+            '𓌥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT025),
+            '𓌦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT026),
+            '𓌧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT027),
+            '𓌨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT028),
+            '𓌩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT029),
+            '𓌪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT030),
+            '𓌫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT031),
+            '𓌬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT032),
+            '𓌭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT032a),
+            '𓌮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT033),
+            '𓌯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT033a),
+            '𓌰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT034),
+            '𓌱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT035),
+            '𓌲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphT036),
+            '𓌳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU001),
+            '𓌴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU002),
+            '𓌵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU003),
+            '𓌶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU004),
+            '𓌷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU005),
+            '𓌸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU006),
+            '𓌹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU006a),
+            '𓌺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU006b),
+            '𓌻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU007),
+            '𓌼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU008),
+            '𓌽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU009),
+            '𓌾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU010),
+            '𓌿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU011),
+            '𓍀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU012),
+            '𓍁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU013),
+            '𓍂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU014),
+            '𓍃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU015),
+            '𓍄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU016),
+            '𓍅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU017),
+            '𓍆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU018),
+            '𓍇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU019),
+            '𓍈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU020),
+            '𓍉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU021),
+            '𓍊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU022),
+            '𓍋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU023),
+            '𓍌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU023a),
+            '𓍍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU024),
+            '𓍎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU025),
+            '𓍏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU026),
+            '𓍐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU027),
+            '𓍑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU028),
+            '𓍒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU029),
+            '𓍓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU029a),
+            '𓍔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU030),
+            '𓍕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU031),
+            '𓍖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU032),
+            '𓍗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU032a),
+            '𓍘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU033),
+            '𓍙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU034),
+            '𓍚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU035),
+            '𓍛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU036),
+            '𓍜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU037),
+            '𓍝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU038),
+            '𓍞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU039),
+            '𓍟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU040),
+            '𓍠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU041),
+            '𓍡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphU042),
+            '𓍢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001),
+            '𓍣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001a),
+            '𓍤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001b),
+            '𓍥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001c),
+            '𓍦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001d),
+            '𓍧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001e),
+            '𓍨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001f),
+            '𓍩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001g),
+            '𓍪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001h),
+            '𓍫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV001i),
+            '𓍬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV002),
+            '𓍭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV002a),
+            '𓍮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV003),
+            '𓍯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV004),
+            '𓍰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV005),
+            '𓍱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV006),
+            '𓍲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV007),
+            '𓍳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV007a),
+            '𓍴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV007b),
+            '𓍵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV008),
+            '𓍶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV009),
+            '𓍷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV010),
+            '𓍸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV011),
+            '𓍹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV011a),
+            '𓍺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV011b),
+            '𓍻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV011c),
+            '𓍼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV012),
+            '𓍽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV012a),
+            '𓍾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV012b),
+            '𓍿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV013),
+            '𓎀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV014),
+            '𓎁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV015),
+            '𓎂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV016),
+            '𓎃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV017),
+            '𓎄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV018),
+            '𓎅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV019),
+            '𓎆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020),
+            '𓎇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020a),
+            '𓎈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020b),
+            '𓎉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020c),
+            '𓎊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020d),
+            '𓎋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020e),
+            '𓎌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020f),
+            '𓎍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020g),
+            '𓎎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020h),
+            '𓎏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020i),
+            '𓎐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020j),
+            '𓎑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020k),
+            '𓎒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV020l),
+            '𓎓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV021),
+            '𓎔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV022),
+            '𓎕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV023),
+            '𓎖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV023a),
+            '𓎗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV024),
+            '𓎘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV025),
+            '𓎙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV026),
+            '𓎚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV027),
+            '𓎛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV028),
+            '𓎜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV028a),
+            '𓎝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV029),
+            '𓎞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV029a),
+            '𓎟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV030),
+            '𓎠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV030a),
+            '𓎡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV031),
+            '𓎢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV031a),
+            '𓎣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV032),
+            '𓎤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV033),
+            '𓎥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV033a),
+            '𓎦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV034),
+            '𓎧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV035),
+            '𓎨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV036),
+            '𓎩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV037),
+            '𓎪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV037a),
+            '𓎫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV038),
+            '𓎬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV039),
+            '𓎭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV040),
+            '𓎮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphV040a),
+            '𓎯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW001),
+            '𓎰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW002),
+            '𓎱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW003),
+            '𓎲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW003a),
+            '𓎳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW004),
+            '𓎴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW005),
+            '𓎵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW006),
+            '𓎶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW007),
+            '𓎷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW008),
+            '𓎸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW009),
+            '𓎹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW009a),
+            '𓎺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW010),
+            '𓎻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW010a),
+            '𓎼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW011),
+            '𓎽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW012),
+            '𓎾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW013),
+            '𓎿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW014),
+            '𓏀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW014a),
+            '𓏁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW015),
+            '𓏂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW016),
+            '𓏃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW017),
+            '𓏄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW017a),
+            '𓏅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW018),
+            '𓏆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW018a),
+            '𓏇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW019),
+            '𓏈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW020),
+            '𓏉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW021),
+            '𓏊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW022),
+            '𓏋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW023),
+            '𓏌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW024),
+            '𓏍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW024a),
+            '𓏎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphW025),
+            '𓏏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX001),
+            '𓏐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX002),
+            '𓏑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX003),
+            '𓏒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX004),
+            '𓏓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX004a),
+            '𓏔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX004b),
+            '𓏕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX005),
+            '𓏖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX006),
+            '𓏗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX006a),
+            '𓏘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX007),
+            '𓏙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX008),
+            '𓏚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphX008a),
+            '𓏛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY001),
+            '𓏜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY001a),
+            '𓏝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY002),
+            '𓏞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY003),
+            '𓏟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY004),
+            '𓏠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY005),
+            '𓏡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY006),
+            '𓏢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY007),
+            '𓏣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphY008),
+            '𓏤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ001),
+            '𓏥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002),
+            '𓏦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002a),
+            '𓏧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002b),
+            '𓏨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002c),
+            '𓏩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ002d),
+            '𓏪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ003),
+            '𓏫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ003a),
+            '𓏬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ003b),
+            '𓏭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ004),
+            '𓏮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ004a),
+            '𓏯' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ005),
+            '𓏰' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ005a),
+            '𓏱' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ006),
+            '𓏲' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ007),
+            '𓏳' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ008),
+            '𓏴' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ009),
+            '𓏵' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ010),
+            '𓏶' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ011),
+            '𓏷' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ012),
+            '𓏸' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ013),
+            '𓏹' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ014),
+            '𓏺' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015),
+            '𓏻' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015a),
+            '𓏼' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015b),
+            '𓏽' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015c),
+            '𓏾' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015d),
+            '𓏿' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015e),
+            '𓐀' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015f),
+            '𓐁' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015g),
+            '𓐂' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015h),
+            '𓐃' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ015i),
+            '𓐄' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016),
+            '𓐅' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016a),
+            '𓐆' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016b),
+            '𓐇' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016c),
+            '𓐈' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016d),
+            '𓐉' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016e),
+            '𓐊' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016f),
+            '𓐋' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016g),
+            '𓐌' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphZ016h),
+            '𓐍' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa001),
+            '𓐎' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa002),
+            '𓐏' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa003),
+            '𓐐' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa004),
+            '𓐑' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa005),
+            '𓐒' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa006),
+            '𓐓' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa007),
+            '𓐔' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa007a),
+            '𓐕' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa007b),
+            '𓐖' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa008),
+            '𓐗' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa009),
+            '𓐘' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa010),
+            '𓐙' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa011),
+            '𓐚' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa012),
+            '𓐛' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa013),
+            '𓐜' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa014),
+            '𓐝' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa015),
+            '𓐞' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa016),
+            '𓐟' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa017),
+            '𓐠' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa018),
+            '𓐡' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa019),
+            '𓐢' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa020),
+            '𓐣' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa021),
+            '𓐤' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa022),
+            '𓐥' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa023),
+            '𓐦' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa024),
+            '𓐧' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa025),
+            '𓐨' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa026),
+            '𓐩' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa027),
+            '𓐪' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa028),
+            '𓐫' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa029),
+            '𓐬' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa030),
+            '𓐭' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa031),
+            '𓐮' => Ok(EgyptianHieroglyphs::EgyptianHieroglyphAa032),
             _ => Err(()),
         }
     }

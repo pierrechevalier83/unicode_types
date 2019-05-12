@@ -1,514 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{3200}: '㈀'
-    pub const PARENTHESIZED_HANGUL_KIYEOK: char = '㈀';
-    /// \u{3201}: '㈁'
-    pub const PARENTHESIZED_HANGUL_NIEUN: char = '㈁';
-    /// \u{3202}: '㈂'
-    pub const PARENTHESIZED_HANGUL_TIKEUT: char = '㈂';
-    /// \u{3203}: '㈃'
-    pub const PARENTHESIZED_HANGUL_RIEUL: char = '㈃';
-    /// \u{3204}: '㈄'
-    pub const PARENTHESIZED_HANGUL_MIEUM: char = '㈄';
-    /// \u{3205}: '㈅'
-    pub const PARENTHESIZED_HANGUL_PIEUP: char = '㈅';
-    /// \u{3206}: '㈆'
-    pub const PARENTHESIZED_HANGUL_SIOS: char = '㈆';
-    /// \u{3207}: '㈇'
-    pub const PARENTHESIZED_HANGUL_IEUNG: char = '㈇';
-    /// \u{3208}: '㈈'
-    pub const PARENTHESIZED_HANGUL_CIEUC: char = '㈈';
-    /// \u{3209}: '㈉'
-    pub const PARENTHESIZED_HANGUL_CHIEUCH: char = '㈉';
-    /// \u{320a}: '㈊'
-    pub const PARENTHESIZED_HANGUL_KHIEUKH: char = '㈊';
-    /// \u{320b}: '㈋'
-    pub const PARENTHESIZED_HANGUL_THIEUTH: char = '㈋';
-    /// \u{320c}: '㈌'
-    pub const PARENTHESIZED_HANGUL_PHIEUPH: char = '㈌';
-    /// \u{320d}: '㈍'
-    pub const PARENTHESIZED_HANGUL_HIEUH: char = '㈍';
-    /// \u{320e}: '㈎'
-    pub const PARENTHESIZED_HANGUL_KIYEOK_A: char = '㈎';
-    /// \u{320f}: '㈏'
-    pub const PARENTHESIZED_HANGUL_NIEUN_A: char = '㈏';
-    /// \u{3210}: '㈐'
-    pub const PARENTHESIZED_HANGUL_TIKEUT_A: char = '㈐';
-    /// \u{3211}: '㈑'
-    pub const PARENTHESIZED_HANGUL_RIEUL_A: char = '㈑';
-    /// \u{3212}: '㈒'
-    pub const PARENTHESIZED_HANGUL_MIEUM_A: char = '㈒';
-    /// \u{3213}: '㈓'
-    pub const PARENTHESIZED_HANGUL_PIEUP_A: char = '㈓';
-    /// \u{3214}: '㈔'
-    pub const PARENTHESIZED_HANGUL_SIOS_A: char = '㈔';
-    /// \u{3215}: '㈕'
-    pub const PARENTHESIZED_HANGUL_IEUNG_A: char = '㈕';
-    /// \u{3216}: '㈖'
-    pub const PARENTHESIZED_HANGUL_CIEUC_A: char = '㈖';
-    /// \u{3217}: '㈗'
-    pub const PARENTHESIZED_HANGUL_CHIEUCH_A: char = '㈗';
-    /// \u{3218}: '㈘'
-    pub const PARENTHESIZED_HANGUL_KHIEUKH_A: char = '㈘';
-    /// \u{3219}: '㈙'
-    pub const PARENTHESIZED_HANGUL_THIEUTH_A: char = '㈙';
-    /// \u{321a}: '㈚'
-    pub const PARENTHESIZED_HANGUL_PHIEUPH_A: char = '㈚';
-    /// \u{321b}: '㈛'
-    pub const PARENTHESIZED_HANGUL_HIEUH_A: char = '㈛';
-    /// \u{321c}: '㈜'
-    pub const PARENTHESIZED_HANGUL_CIEUC_U: char = '㈜';
-    /// \u{321d}: '㈝'
-    pub const PARENTHESIZED_KOREAN_CHARACTER_OJEON: char = '㈝';
-    /// \u{321e}: '㈞'
-    pub const PARENTHESIZED_KOREAN_CHARACTER_O_HU: char = '㈞';
-    /// \u{3220}: '㈠'
-    pub const PARENTHESIZED_IDEOGRAPH_ONE: char = '㈠';
-    /// \u{3221}: '㈡'
-    pub const PARENTHESIZED_IDEOGRAPH_TWO: char = '㈡';
-    /// \u{3222}: '㈢'
-    pub const PARENTHESIZED_IDEOGRAPH_THREE: char = '㈢';
-    /// \u{3223}: '㈣'
-    pub const PARENTHESIZED_IDEOGRAPH_FOUR: char = '㈣';
-    /// \u{3224}: '㈤'
-    pub const PARENTHESIZED_IDEOGRAPH_FIVE: char = '㈤';
-    /// \u{3225}: '㈥'
-    pub const PARENTHESIZED_IDEOGRAPH_SIX: char = '㈥';
-    /// \u{3226}: '㈦'
-    pub const PARENTHESIZED_IDEOGRAPH_SEVEN: char = '㈦';
-    /// \u{3227}: '㈧'
-    pub const PARENTHESIZED_IDEOGRAPH_EIGHT: char = '㈧';
-    /// \u{3228}: '㈨'
-    pub const PARENTHESIZED_IDEOGRAPH_NINE: char = '㈨';
-    /// \u{3229}: '㈩'
-    pub const PARENTHESIZED_IDEOGRAPH_TEN: char = '㈩';
-    /// \u{322a}: '㈪'
-    pub const PARENTHESIZED_IDEOGRAPH_MOON: char = '㈪';
-    /// \u{322b}: '㈫'
-    pub const PARENTHESIZED_IDEOGRAPH_FIRE: char = '㈫';
-    /// \u{322c}: '㈬'
-    pub const PARENTHESIZED_IDEOGRAPH_WATER: char = '㈬';
-    /// \u{322d}: '㈭'
-    pub const PARENTHESIZED_IDEOGRAPH_WOOD: char = '㈭';
-    /// \u{322e}: '㈮'
-    pub const PARENTHESIZED_IDEOGRAPH_METAL: char = '㈮';
-    /// \u{322f}: '㈯'
-    pub const PARENTHESIZED_IDEOGRAPH_EARTH: char = '㈯';
-    /// \u{3230}: '㈰'
-    pub const PARENTHESIZED_IDEOGRAPH_SUN: char = '㈰';
-    /// \u{3231}: '㈱'
-    pub const PARENTHESIZED_IDEOGRAPH_STOCK: char = '㈱';
-    /// \u{3232}: '㈲'
-    pub const PARENTHESIZED_IDEOGRAPH_HAVE: char = '㈲';
-    /// \u{3233}: '㈳'
-    pub const PARENTHESIZED_IDEOGRAPH_SOCIETY: char = '㈳';
-    /// \u{3234}: '㈴'
-    pub const PARENTHESIZED_IDEOGRAPH_NAME: char = '㈴';
-    /// \u{3235}: '㈵'
-    pub const PARENTHESIZED_IDEOGRAPH_SPECIAL: char = '㈵';
-    /// \u{3236}: '㈶'
-    pub const PARENTHESIZED_IDEOGRAPH_FINANCIAL: char = '㈶';
-    /// \u{3237}: '㈷'
-    pub const PARENTHESIZED_IDEOGRAPH_CONGRATULATION: char = '㈷';
-    /// \u{3238}: '㈸'
-    pub const PARENTHESIZED_IDEOGRAPH_LABOR: char = '㈸';
-    /// \u{3239}: '㈹'
-    pub const PARENTHESIZED_IDEOGRAPH_REPRESENT: char = '㈹';
-    /// \u{323a}: '㈺'
-    pub const PARENTHESIZED_IDEOGRAPH_CALL: char = '㈺';
-    /// \u{323b}: '㈻'
-    pub const PARENTHESIZED_IDEOGRAPH_STUDY: char = '㈻';
-    /// \u{323c}: '㈼'
-    pub const PARENTHESIZED_IDEOGRAPH_SUPERVISE: char = '㈼';
-    /// \u{323d}: '㈽'
-    pub const PARENTHESIZED_IDEOGRAPH_ENTERPRISE: char = '㈽';
-    /// \u{323e}: '㈾'
-    pub const PARENTHESIZED_IDEOGRAPH_RESOURCE: char = '㈾';
-    /// \u{323f}: '㈿'
-    pub const PARENTHESIZED_IDEOGRAPH_ALLIANCE: char = '㈿';
-    /// \u{3240}: '㉀'
-    pub const PARENTHESIZED_IDEOGRAPH_FESTIVAL: char = '㉀';
-    /// \u{3241}: '㉁'
-    pub const PARENTHESIZED_IDEOGRAPH_REST: char = '㉁';
-    /// \u{3242}: '㉂'
-    pub const PARENTHESIZED_IDEOGRAPH_SELF: char = '㉂';
-    /// \u{3243}: '㉃'
-    pub const PARENTHESIZED_IDEOGRAPH_REACH: char = '㉃';
-    /// \u{3244}: '㉄'
-    pub const CIRCLED_IDEOGRAPH_QUESTION: char = '㉄';
-    /// \u{3245}: '㉅'
-    pub const CIRCLED_IDEOGRAPH_KINDERGARTEN: char = '㉅';
-    /// \u{3246}: '㉆'
-    pub const CIRCLED_IDEOGRAPH_SCHOOL: char = '㉆';
-    /// \u{3247}: '㉇'
-    pub const CIRCLED_IDEOGRAPH_KOTO: char = '㉇';
-    /// \u{3248}: '㉈'
-    pub const CIRCLED_NUMBER_TEN_ON_BLACK_SQUARE: char = '㉈';
-    /// \u{3249}: '㉉'
-    pub const CIRCLED_NUMBER_TWENTY_ON_BLACK_SQUARE: char = '㉉';
-    /// \u{324a}: '㉊'
-    pub const CIRCLED_NUMBER_THIRTY_ON_BLACK_SQUARE: char = '㉊';
-    /// \u{324b}: '㉋'
-    pub const CIRCLED_NUMBER_FORTY_ON_BLACK_SQUARE: char = '㉋';
-    /// \u{324c}: '㉌'
-    pub const CIRCLED_NUMBER_FIFTY_ON_BLACK_SQUARE: char = '㉌';
-    /// \u{324d}: '㉍'
-    pub const CIRCLED_NUMBER_SIXTY_ON_BLACK_SQUARE: char = '㉍';
-    /// \u{324e}: '㉎'
-    pub const CIRCLED_NUMBER_SEVENTY_ON_BLACK_SQUARE: char = '㉎';
-    /// \u{324f}: '㉏'
-    pub const CIRCLED_NUMBER_EIGHTY_ON_BLACK_SQUARE: char = '㉏';
-    /// \u{3250}: '㉐'
-    pub const PARTNERSHIP_SIGN: char = '㉐';
-    /// \u{3251}: '㉑'
-    pub const CIRCLED_NUMBER_TWENTY_ONE: char = '㉑';
-    /// \u{3252}: '㉒'
-    pub const CIRCLED_NUMBER_TWENTY_TWO: char = '㉒';
-    /// \u{3253}: '㉓'
-    pub const CIRCLED_NUMBER_TWENTY_THREE: char = '㉓';
-    /// \u{3254}: '㉔'
-    pub const CIRCLED_NUMBER_TWENTY_FOUR: char = '㉔';
-    /// \u{3255}: '㉕'
-    pub const CIRCLED_NUMBER_TWENTY_FIVE: char = '㉕';
-    /// \u{3256}: '㉖'
-    pub const CIRCLED_NUMBER_TWENTY_SIX: char = '㉖';
-    /// \u{3257}: '㉗'
-    pub const CIRCLED_NUMBER_TWENTY_SEVEN: char = '㉗';
-    /// \u{3258}: '㉘'
-    pub const CIRCLED_NUMBER_TWENTY_EIGHT: char = '㉘';
-    /// \u{3259}: '㉙'
-    pub const CIRCLED_NUMBER_TWENTY_NINE: char = '㉙';
-    /// \u{325a}: '㉚'
-    pub const CIRCLED_NUMBER_THIRTY: char = '㉚';
-    /// \u{325b}: '㉛'
-    pub const CIRCLED_NUMBER_THIRTY_ONE: char = '㉛';
-    /// \u{325c}: '㉜'
-    pub const CIRCLED_NUMBER_THIRTY_TWO: char = '㉜';
-    /// \u{325d}: '㉝'
-    pub const CIRCLED_NUMBER_THIRTY_THREE: char = '㉝';
-    /// \u{325e}: '㉞'
-    pub const CIRCLED_NUMBER_THIRTY_FOUR: char = '㉞';
-    /// \u{325f}: '㉟'
-    pub const CIRCLED_NUMBER_THIRTY_FIVE: char = '㉟';
-    /// \u{3260}: '㉠'
-    pub const CIRCLED_HANGUL_KIYEOK: char = '㉠';
-    /// \u{3261}: '㉡'
-    pub const CIRCLED_HANGUL_NIEUN: char = '㉡';
-    /// \u{3262}: '㉢'
-    pub const CIRCLED_HANGUL_TIKEUT: char = '㉢';
-    /// \u{3263}: '㉣'
-    pub const CIRCLED_HANGUL_RIEUL: char = '㉣';
-    /// \u{3264}: '㉤'
-    pub const CIRCLED_HANGUL_MIEUM: char = '㉤';
-    /// \u{3265}: '㉥'
-    pub const CIRCLED_HANGUL_PIEUP: char = '㉥';
-    /// \u{3266}: '㉦'
-    pub const CIRCLED_HANGUL_SIOS: char = '㉦';
-    /// \u{3267}: '㉧'
-    pub const CIRCLED_HANGUL_IEUNG: char = '㉧';
-    /// \u{3268}: '㉨'
-    pub const CIRCLED_HANGUL_CIEUC: char = '㉨';
-    /// \u{3269}: '㉩'
-    pub const CIRCLED_HANGUL_CHIEUCH: char = '㉩';
-    /// \u{326a}: '㉪'
-    pub const CIRCLED_HANGUL_KHIEUKH: char = '㉪';
-    /// \u{326b}: '㉫'
-    pub const CIRCLED_HANGUL_THIEUTH: char = '㉫';
-    /// \u{326c}: '㉬'
-    pub const CIRCLED_HANGUL_PHIEUPH: char = '㉬';
-    /// \u{326d}: '㉭'
-    pub const CIRCLED_HANGUL_HIEUH: char = '㉭';
-    /// \u{326e}: '㉮'
-    pub const CIRCLED_HANGUL_KIYEOK_A: char = '㉮';
-    /// \u{326f}: '㉯'
-    pub const CIRCLED_HANGUL_NIEUN_A: char = '㉯';
-    /// \u{3270}: '㉰'
-    pub const CIRCLED_HANGUL_TIKEUT_A: char = '㉰';
-    /// \u{3271}: '㉱'
-    pub const CIRCLED_HANGUL_RIEUL_A: char = '㉱';
-    /// \u{3272}: '㉲'
-    pub const CIRCLED_HANGUL_MIEUM_A: char = '㉲';
-    /// \u{3273}: '㉳'
-    pub const CIRCLED_HANGUL_PIEUP_A: char = '㉳';
-    /// \u{3274}: '㉴'
-    pub const CIRCLED_HANGUL_SIOS_A: char = '㉴';
-    /// \u{3275}: '㉵'
-    pub const CIRCLED_HANGUL_IEUNG_A: char = '㉵';
-    /// \u{3276}: '㉶'
-    pub const CIRCLED_HANGUL_CIEUC_A: char = '㉶';
-    /// \u{3277}: '㉷'
-    pub const CIRCLED_HANGUL_CHIEUCH_A: char = '㉷';
-    /// \u{3278}: '㉸'
-    pub const CIRCLED_HANGUL_KHIEUKH_A: char = '㉸';
-    /// \u{3279}: '㉹'
-    pub const CIRCLED_HANGUL_THIEUTH_A: char = '㉹';
-    /// \u{327a}: '㉺'
-    pub const CIRCLED_HANGUL_PHIEUPH_A: char = '㉺';
-    /// \u{327b}: '㉻'
-    pub const CIRCLED_HANGUL_HIEUH_A: char = '㉻';
-    /// \u{327c}: '㉼'
-    pub const CIRCLED_KOREAN_CHARACTER_CHAMKO: char = '㉼';
-    /// \u{327d}: '㉽'
-    pub const CIRCLED_KOREAN_CHARACTER_JUEUI: char = '㉽';
-    /// \u{327e}: '㉾'
-    pub const CIRCLED_HANGUL_IEUNG_U: char = '㉾';
-    /// \u{327f}: '㉿'
-    pub const KOREAN_STANDARD_SYMBOL: char = '㉿';
-    /// \u{3280}: '㊀'
-    pub const CIRCLED_IDEOGRAPH_ONE: char = '㊀';
-    /// \u{3281}: '㊁'
-    pub const CIRCLED_IDEOGRAPH_TWO: char = '㊁';
-    /// \u{3282}: '㊂'
-    pub const CIRCLED_IDEOGRAPH_THREE: char = '㊂';
-    /// \u{3283}: '㊃'
-    pub const CIRCLED_IDEOGRAPH_FOUR: char = '㊃';
-    /// \u{3284}: '㊄'
-    pub const CIRCLED_IDEOGRAPH_FIVE: char = '㊄';
-    /// \u{3285}: '㊅'
-    pub const CIRCLED_IDEOGRAPH_SIX: char = '㊅';
-    /// \u{3286}: '㊆'
-    pub const CIRCLED_IDEOGRAPH_SEVEN: char = '㊆';
-    /// \u{3287}: '㊇'
-    pub const CIRCLED_IDEOGRAPH_EIGHT: char = '㊇';
-    /// \u{3288}: '㊈'
-    pub const CIRCLED_IDEOGRAPH_NINE: char = '㊈';
-    /// \u{3289}: '㊉'
-    pub const CIRCLED_IDEOGRAPH_TEN: char = '㊉';
-    /// \u{328a}: '㊊'
-    pub const CIRCLED_IDEOGRAPH_MOON: char = '㊊';
-    /// \u{328b}: '㊋'
-    pub const CIRCLED_IDEOGRAPH_FIRE: char = '㊋';
-    /// \u{328c}: '㊌'
-    pub const CIRCLED_IDEOGRAPH_WATER: char = '㊌';
-    /// \u{328d}: '㊍'
-    pub const CIRCLED_IDEOGRAPH_WOOD: char = '㊍';
-    /// \u{328e}: '㊎'
-    pub const CIRCLED_IDEOGRAPH_METAL: char = '㊎';
-    /// \u{328f}: '㊏'
-    pub const CIRCLED_IDEOGRAPH_EARTH: char = '㊏';
-    /// \u{3290}: '㊐'
-    pub const CIRCLED_IDEOGRAPH_SUN: char = '㊐';
-    /// \u{3291}: '㊑'
-    pub const CIRCLED_IDEOGRAPH_STOCK: char = '㊑';
-    /// \u{3292}: '㊒'
-    pub const CIRCLED_IDEOGRAPH_HAVE: char = '㊒';
-    /// \u{3293}: '㊓'
-    pub const CIRCLED_IDEOGRAPH_SOCIETY: char = '㊓';
-    /// \u{3294}: '㊔'
-    pub const CIRCLED_IDEOGRAPH_NAME: char = '㊔';
-    /// \u{3295}: '㊕'
-    pub const CIRCLED_IDEOGRAPH_SPECIAL: char = '㊕';
-    /// \u{3296}: '㊖'
-    pub const CIRCLED_IDEOGRAPH_FINANCIAL: char = '㊖';
-    /// \u{3297}: '㊗'
-    pub const CIRCLED_IDEOGRAPH_CONGRATULATION: char = '㊗';
-    /// \u{3298}: '㊘'
-    pub const CIRCLED_IDEOGRAPH_LABOR: char = '㊘';
-    /// \u{3299}: '㊙'
-    pub const CIRCLED_IDEOGRAPH_SECRET: char = '㊙';
-    /// \u{329a}: '㊚'
-    pub const CIRCLED_IDEOGRAPH_MALE: char = '㊚';
-    /// \u{329b}: '㊛'
-    pub const CIRCLED_IDEOGRAPH_FEMALE: char = '㊛';
-    /// \u{329c}: '㊜'
-    pub const CIRCLED_IDEOGRAPH_SUITABLE: char = '㊜';
-    /// \u{329d}: '㊝'
-    pub const CIRCLED_IDEOGRAPH_EXCELLENT: char = '㊝';
-    /// \u{329e}: '㊞'
-    pub const CIRCLED_IDEOGRAPH_PRINT: char = '㊞';
-    /// \u{329f}: '㊟'
-    pub const CIRCLED_IDEOGRAPH_ATTENTION: char = '㊟';
-    /// \u{32a0}: '㊠'
-    pub const CIRCLED_IDEOGRAPH_ITEM: char = '㊠';
-    /// \u{32a1}: '㊡'
-    pub const CIRCLED_IDEOGRAPH_REST: char = '㊡';
-    /// \u{32a2}: '㊢'
-    pub const CIRCLED_IDEOGRAPH_COPY: char = '㊢';
-    /// \u{32a3}: '㊣'
-    pub const CIRCLED_IDEOGRAPH_CORRECT: char = '㊣';
-    /// \u{32a4}: '㊤'
-    pub const CIRCLED_IDEOGRAPH_HIGH: char = '㊤';
-    /// \u{32a5}: '㊥'
-    pub const CIRCLED_IDEOGRAPH_CENTRE: char = '㊥';
-    /// \u{32a6}: '㊦'
-    pub const CIRCLED_IDEOGRAPH_LOW: char = '㊦';
-    /// \u{32a7}: '㊧'
-    pub const CIRCLED_IDEOGRAPH_LEFT: char = '㊧';
-    /// \u{32a8}: '㊨'
-    pub const CIRCLED_IDEOGRAPH_RIGHT: char = '㊨';
-    /// \u{32a9}: '㊩'
-    pub const CIRCLED_IDEOGRAPH_MEDICINE: char = '㊩';
-    /// \u{32aa}: '㊪'
-    pub const CIRCLED_IDEOGRAPH_RELIGION: char = '㊪';
-    /// \u{32ab}: '㊫'
-    pub const CIRCLED_IDEOGRAPH_STUDY: char = '㊫';
-    /// \u{32ac}: '㊬'
-    pub const CIRCLED_IDEOGRAPH_SUPERVISE: char = '㊬';
-    /// \u{32ad}: '㊭'
-    pub const CIRCLED_IDEOGRAPH_ENTERPRISE: char = '㊭';
-    /// \u{32ae}: '㊮'
-    pub const CIRCLED_IDEOGRAPH_RESOURCE: char = '㊮';
-    /// \u{32af}: '㊯'
-    pub const CIRCLED_IDEOGRAPH_ALLIANCE: char = '㊯';
-    /// \u{32b0}: '㊰'
-    pub const CIRCLED_IDEOGRAPH_NIGHT: char = '㊰';
-    /// \u{32b1}: '㊱'
-    pub const CIRCLED_NUMBER_THIRTY_SIX: char = '㊱';
-    /// \u{32b2}: '㊲'
-    pub const CIRCLED_NUMBER_THIRTY_SEVEN: char = '㊲';
-    /// \u{32b3}: '㊳'
-    pub const CIRCLED_NUMBER_THIRTY_EIGHT: char = '㊳';
-    /// \u{32b4}: '㊴'
-    pub const CIRCLED_NUMBER_THIRTY_NINE: char = '㊴';
-    /// \u{32b5}: '㊵'
-    pub const CIRCLED_NUMBER_FORTY: char = '㊵';
-    /// \u{32b6}: '㊶'
-    pub const CIRCLED_NUMBER_FORTY_ONE: char = '㊶';
-    /// \u{32b7}: '㊷'
-    pub const CIRCLED_NUMBER_FORTY_TWO: char = '㊷';
-    /// \u{32b8}: '㊸'
-    pub const CIRCLED_NUMBER_FORTY_THREE: char = '㊸';
-    /// \u{32b9}: '㊹'
-    pub const CIRCLED_NUMBER_FORTY_FOUR: char = '㊹';
-    /// \u{32ba}: '㊺'
-    pub const CIRCLED_NUMBER_FORTY_FIVE: char = '㊺';
-    /// \u{32bb}: '㊻'
-    pub const CIRCLED_NUMBER_FORTY_SIX: char = '㊻';
-    /// \u{32bc}: '㊼'
-    pub const CIRCLED_NUMBER_FORTY_SEVEN: char = '㊼';
-    /// \u{32bd}: '㊽'
-    pub const CIRCLED_NUMBER_FORTY_EIGHT: char = '㊽';
-    /// \u{32be}: '㊾'
-    pub const CIRCLED_NUMBER_FORTY_NINE: char = '㊾';
-    /// \u{32bf}: '㊿'
-    pub const CIRCLED_NUMBER_FIFTY: char = '㊿';
-    /// \u{32c0}: '㋀'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_JANUARY: char = '㋀';
-    /// \u{32c1}: '㋁'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_FEBRUARY: char = '㋁';
-    /// \u{32c2}: '㋂'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_MARCH: char = '㋂';
-    /// \u{32c3}: '㋃'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_APRIL: char = '㋃';
-    /// \u{32c4}: '㋄'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_MAY: char = '㋄';
-    /// \u{32c5}: '㋅'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_JUNE: char = '㋅';
-    /// \u{32c6}: '㋆'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_JULY: char = '㋆';
-    /// \u{32c7}: '㋇'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_AUGUST: char = '㋇';
-    /// \u{32c8}: '㋈'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_SEPTEMBER: char = '㋈';
-    /// \u{32c9}: '㋉'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_OCTOBER: char = '㋉';
-    /// \u{32ca}: '㋊'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_NOVEMBER: char = '㋊';
-    /// \u{32cb}: '㋋'
-    pub const IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_DECEMBER: char = '㋋';
-    /// \u{32cc}: '㋌'
-    pub const SQUARE_HG: char = '㋌';
-    /// \u{32cd}: '㋍'
-    pub const SQUARE_ERG: char = '㋍';
-    /// \u{32ce}: '㋎'
-    pub const SQUARE_EV: char = '㋎';
-    /// \u{32cf}: '㋏'
-    pub const LIMITED_LIABILITY_SIGN: char = '㋏';
-    /// \u{32d0}: '㋐'
-    pub const CIRCLED_KATAKANA_A: char = '㋐';
-    /// \u{32d1}: '㋑'
-    pub const CIRCLED_KATAKANA_I: char = '㋑';
-    /// \u{32d2}: '㋒'
-    pub const CIRCLED_KATAKANA_U: char = '㋒';
-    /// \u{32d3}: '㋓'
-    pub const CIRCLED_KATAKANA_E: char = '㋓';
-    /// \u{32d4}: '㋔'
-    pub const CIRCLED_KATAKANA_O: char = '㋔';
-    /// \u{32d5}: '㋕'
-    pub const CIRCLED_KATAKANA_KA: char = '㋕';
-    /// \u{32d6}: '㋖'
-    pub const CIRCLED_KATAKANA_KI: char = '㋖';
-    /// \u{32d7}: '㋗'
-    pub const CIRCLED_KATAKANA_KU: char = '㋗';
-    /// \u{32d8}: '㋘'
-    pub const CIRCLED_KATAKANA_KE: char = '㋘';
-    /// \u{32d9}: '㋙'
-    pub const CIRCLED_KATAKANA_KO: char = '㋙';
-    /// \u{32da}: '㋚'
-    pub const CIRCLED_KATAKANA_SA: char = '㋚';
-    /// \u{32db}: '㋛'
-    pub const CIRCLED_KATAKANA_SI: char = '㋛';
-    /// \u{32dc}: '㋜'
-    pub const CIRCLED_KATAKANA_SU: char = '㋜';
-    /// \u{32dd}: '㋝'
-    pub const CIRCLED_KATAKANA_SE: char = '㋝';
-    /// \u{32de}: '㋞'
-    pub const CIRCLED_KATAKANA_SO: char = '㋞';
-    /// \u{32df}: '㋟'
-    pub const CIRCLED_KATAKANA_TA: char = '㋟';
-    /// \u{32e0}: '㋠'
-    pub const CIRCLED_KATAKANA_TI: char = '㋠';
-    /// \u{32e1}: '㋡'
-    pub const CIRCLED_KATAKANA_TU: char = '㋡';
-    /// \u{32e2}: '㋢'
-    pub const CIRCLED_KATAKANA_TE: char = '㋢';
-    /// \u{32e3}: '㋣'
-    pub const CIRCLED_KATAKANA_TO: char = '㋣';
-    /// \u{32e4}: '㋤'
-    pub const CIRCLED_KATAKANA_NA: char = '㋤';
-    /// \u{32e5}: '㋥'
-    pub const CIRCLED_KATAKANA_NI: char = '㋥';
-    /// \u{32e6}: '㋦'
-    pub const CIRCLED_KATAKANA_NU: char = '㋦';
-    /// \u{32e7}: '㋧'
-    pub const CIRCLED_KATAKANA_NE: char = '㋧';
-    /// \u{32e8}: '㋨'
-    pub const CIRCLED_KATAKANA_NO: char = '㋨';
-    /// \u{32e9}: '㋩'
-    pub const CIRCLED_KATAKANA_HA: char = '㋩';
-    /// \u{32ea}: '㋪'
-    pub const CIRCLED_KATAKANA_HI: char = '㋪';
-    /// \u{32eb}: '㋫'
-    pub const CIRCLED_KATAKANA_HU: char = '㋫';
-    /// \u{32ec}: '㋬'
-    pub const CIRCLED_KATAKANA_HE: char = '㋬';
-    /// \u{32ed}: '㋭'
-    pub const CIRCLED_KATAKANA_HO: char = '㋭';
-    /// \u{32ee}: '㋮'
-    pub const CIRCLED_KATAKANA_MA: char = '㋮';
-    /// \u{32ef}: '㋯'
-    pub const CIRCLED_KATAKANA_MI: char = '㋯';
-    /// \u{32f0}: '㋰'
-    pub const CIRCLED_KATAKANA_MU: char = '㋰';
-    /// \u{32f1}: '㋱'
-    pub const CIRCLED_KATAKANA_ME: char = '㋱';
-    /// \u{32f2}: '㋲'
-    pub const CIRCLED_KATAKANA_MO: char = '㋲';
-    /// \u{32f3}: '㋳'
-    pub const CIRCLED_KATAKANA_YA: char = '㋳';
-    /// \u{32f4}: '㋴'
-    pub const CIRCLED_KATAKANA_YU: char = '㋴';
-    /// \u{32f5}: '㋵'
-    pub const CIRCLED_KATAKANA_YO: char = '㋵';
-    /// \u{32f6}: '㋶'
-    pub const CIRCLED_KATAKANA_RA: char = '㋶';
-    /// \u{32f7}: '㋷'
-    pub const CIRCLED_KATAKANA_RI: char = '㋷';
-    /// \u{32f8}: '㋸'
-    pub const CIRCLED_KATAKANA_RU: char = '㋸';
-    /// \u{32f9}: '㋹'
-    pub const CIRCLED_KATAKANA_RE: char = '㋹';
-    /// \u{32fa}: '㋺'
-    pub const CIRCLED_KATAKANA_RO: char = '㋺';
-    /// \u{32fb}: '㋻'
-    pub const CIRCLED_KATAKANA_WA: char = '㋻';
-    /// \u{32fc}: '㋼'
-    pub const CIRCLED_KATAKANA_WI: char = '㋼';
-    /// \u{32fd}: '㋽'
-    pub const CIRCLED_KATAKANA_WE: char = '㋽';
-    /// \u{32fe}: '㋾'
-    pub const CIRCLED_KATAKANA_WO: char = '㋾';
-}
 
 /// An enum to represent all characters in the EnclosedCJKLettersandMonths block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -1025,262 +514,261 @@ pub enum EnclosedCJKLettersandMonths {
 
 impl Into<char> for EnclosedCJKLettersandMonths {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            EnclosedCJKLettersandMonths::ParenthesizedHangulKiyeok => PARENTHESIZED_HANGUL_KIYEOK,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulNieun => PARENTHESIZED_HANGUL_NIEUN,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulTikeut => PARENTHESIZED_HANGUL_TIKEUT,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulRieul => PARENTHESIZED_HANGUL_RIEUL,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulMieum => PARENTHESIZED_HANGUL_MIEUM,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulPieup => PARENTHESIZED_HANGUL_PIEUP,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulSios => PARENTHESIZED_HANGUL_SIOS,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulIeung => PARENTHESIZED_HANGUL_IEUNG,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulCieuc => PARENTHESIZED_HANGUL_CIEUC,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulChieuch => PARENTHESIZED_HANGUL_CHIEUCH,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulKhieukh => PARENTHESIZED_HANGUL_KHIEUKH,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulThieuth => PARENTHESIZED_HANGUL_THIEUTH,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulPhieuph => PARENTHESIZED_HANGUL_PHIEUPH,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulHieuh => PARENTHESIZED_HANGUL_HIEUH,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulKiyeokA => PARENTHESIZED_HANGUL_KIYEOK_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulNieunA => PARENTHESIZED_HANGUL_NIEUN_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulTikeutA => PARENTHESIZED_HANGUL_TIKEUT_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulRieulA => PARENTHESIZED_HANGUL_RIEUL_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulMieumA => PARENTHESIZED_HANGUL_MIEUM_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulPieupA => PARENTHESIZED_HANGUL_PIEUP_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulSiosA => PARENTHESIZED_HANGUL_SIOS_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulIeungA => PARENTHESIZED_HANGUL_IEUNG_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulCieucA => PARENTHESIZED_HANGUL_CIEUC_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulChieuchA => PARENTHESIZED_HANGUL_CHIEUCH_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulKhieukhA => PARENTHESIZED_HANGUL_KHIEUKH_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulThieuthA => PARENTHESIZED_HANGUL_THIEUTH_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulPhieuphA => PARENTHESIZED_HANGUL_PHIEUPH_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulHieuhA => PARENTHESIZED_HANGUL_HIEUH_A,
-            EnclosedCJKLettersandMonths::ParenthesizedHangulCieucU => PARENTHESIZED_HANGUL_CIEUC_U,
-            EnclosedCJKLettersandMonths::ParenthesizedKoreanCharacterOjeon => PARENTHESIZED_KOREAN_CHARACTER_OJEON,
-            EnclosedCJKLettersandMonths::ParenthesizedKoreanCharacterOHu => PARENTHESIZED_KOREAN_CHARACTER_O_HU,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographOne => PARENTHESIZED_IDEOGRAPH_ONE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographTwo => PARENTHESIZED_IDEOGRAPH_TWO,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographThree => PARENTHESIZED_IDEOGRAPH_THREE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographFour => PARENTHESIZED_IDEOGRAPH_FOUR,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographFive => PARENTHESIZED_IDEOGRAPH_FIVE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographSix => PARENTHESIZED_IDEOGRAPH_SIX,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographSeven => PARENTHESIZED_IDEOGRAPH_SEVEN,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographEight => PARENTHESIZED_IDEOGRAPH_EIGHT,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographNine => PARENTHESIZED_IDEOGRAPH_NINE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographTen => PARENTHESIZED_IDEOGRAPH_TEN,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographMoon => PARENTHESIZED_IDEOGRAPH_MOON,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographFire => PARENTHESIZED_IDEOGRAPH_FIRE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographWater => PARENTHESIZED_IDEOGRAPH_WATER,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographWood => PARENTHESIZED_IDEOGRAPH_WOOD,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographMetal => PARENTHESIZED_IDEOGRAPH_METAL,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographEarth => PARENTHESIZED_IDEOGRAPH_EARTH,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographSun => PARENTHESIZED_IDEOGRAPH_SUN,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographStock => PARENTHESIZED_IDEOGRAPH_STOCK,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographHave => PARENTHESIZED_IDEOGRAPH_HAVE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographSociety => PARENTHESIZED_IDEOGRAPH_SOCIETY,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographName => PARENTHESIZED_IDEOGRAPH_NAME,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographSpecial => PARENTHESIZED_IDEOGRAPH_SPECIAL,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographFinancial => PARENTHESIZED_IDEOGRAPH_FINANCIAL,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographCongratulation => PARENTHESIZED_IDEOGRAPH_CONGRATULATION,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographLabor => PARENTHESIZED_IDEOGRAPH_LABOR,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographRepresent => PARENTHESIZED_IDEOGRAPH_REPRESENT,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographCall => PARENTHESIZED_IDEOGRAPH_CALL,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographStudy => PARENTHESIZED_IDEOGRAPH_STUDY,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographSupervise => PARENTHESIZED_IDEOGRAPH_SUPERVISE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographEnterprise => PARENTHESIZED_IDEOGRAPH_ENTERPRISE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographResource => PARENTHESIZED_IDEOGRAPH_RESOURCE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographAlliance => PARENTHESIZED_IDEOGRAPH_ALLIANCE,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographFestival => PARENTHESIZED_IDEOGRAPH_FESTIVAL,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographRest => PARENTHESIZED_IDEOGRAPH_REST,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographSelf => PARENTHESIZED_IDEOGRAPH_SELF,
-            EnclosedCJKLettersandMonths::ParenthesizedIdeographReach => PARENTHESIZED_IDEOGRAPH_REACH,
-            EnclosedCJKLettersandMonths::CircledIdeographQuestion => CIRCLED_IDEOGRAPH_QUESTION,
-            EnclosedCJKLettersandMonths::CircledIdeographKindergarten => CIRCLED_IDEOGRAPH_KINDERGARTEN,
-            EnclosedCJKLettersandMonths::CircledIdeographSchool => CIRCLED_IDEOGRAPH_SCHOOL,
-            EnclosedCJKLettersandMonths::CircledIdeographKoto => CIRCLED_IDEOGRAPH_KOTO,
-            EnclosedCJKLettersandMonths::CircledNumberTenOnBlackSquare => CIRCLED_NUMBER_TEN_ON_BLACK_SQUARE,
-            EnclosedCJKLettersandMonths::CircledNumberTwentyOnBlackSquare => CIRCLED_NUMBER_TWENTY_ON_BLACK_SQUARE,
-            EnclosedCJKLettersandMonths::CircledNumberThirtyOnBlackSquare => CIRCLED_NUMBER_THIRTY_ON_BLACK_SQUARE,
-            EnclosedCJKLettersandMonths::CircledNumberFortyOnBlackSquare => CIRCLED_NUMBER_FORTY_ON_BLACK_SQUARE,
-            EnclosedCJKLettersandMonths::CircledNumberFiftyOnBlackSquare => CIRCLED_NUMBER_FIFTY_ON_BLACK_SQUARE,
-            EnclosedCJKLettersandMonths::CircledNumberSixtyOnBlackSquare => CIRCLED_NUMBER_SIXTY_ON_BLACK_SQUARE,
-            EnclosedCJKLettersandMonths::CircledNumberSeventyOnBlackSquare => CIRCLED_NUMBER_SEVENTY_ON_BLACK_SQUARE,
-            EnclosedCJKLettersandMonths::CircledNumberEightyOnBlackSquare => CIRCLED_NUMBER_EIGHTY_ON_BLACK_SQUARE,
-            EnclosedCJKLettersandMonths::PartnershipSign => PARTNERSHIP_SIGN,
-            EnclosedCJKLettersandMonths::CircledNumberTwentyOne => CIRCLED_NUMBER_TWENTY_ONE,
-            EnclosedCJKLettersandMonths::CircledNumberTwentyTwo => CIRCLED_NUMBER_TWENTY_TWO,
-            EnclosedCJKLettersandMonths::CircledNumberTwentyThree => CIRCLED_NUMBER_TWENTY_THREE,
-            EnclosedCJKLettersandMonths::CircledNumberTwentyFour => CIRCLED_NUMBER_TWENTY_FOUR,
-            EnclosedCJKLettersandMonths::CircledNumberTwentyFive => CIRCLED_NUMBER_TWENTY_FIVE,
-            EnclosedCJKLettersandMonths::CircledNumberTwentySix => CIRCLED_NUMBER_TWENTY_SIX,
-            EnclosedCJKLettersandMonths::CircledNumberTwentySeven => CIRCLED_NUMBER_TWENTY_SEVEN,
-            EnclosedCJKLettersandMonths::CircledNumberTwentyEight => CIRCLED_NUMBER_TWENTY_EIGHT,
-            EnclosedCJKLettersandMonths::CircledNumberTwentyNine => CIRCLED_NUMBER_TWENTY_NINE,
-            EnclosedCJKLettersandMonths::CircledNumberThirty => CIRCLED_NUMBER_THIRTY,
-            EnclosedCJKLettersandMonths::CircledNumberThirtyOne => CIRCLED_NUMBER_THIRTY_ONE,
-            EnclosedCJKLettersandMonths::CircledNumberThirtyTwo => CIRCLED_NUMBER_THIRTY_TWO,
-            EnclosedCJKLettersandMonths::CircledNumberThirtyThree => CIRCLED_NUMBER_THIRTY_THREE,
-            EnclosedCJKLettersandMonths::CircledNumberThirtyFour => CIRCLED_NUMBER_THIRTY_FOUR,
-            EnclosedCJKLettersandMonths::CircledNumberThirtyFive => CIRCLED_NUMBER_THIRTY_FIVE,
-            EnclosedCJKLettersandMonths::CircledHangulKiyeok => CIRCLED_HANGUL_KIYEOK,
-            EnclosedCJKLettersandMonths::CircledHangulNieun => CIRCLED_HANGUL_NIEUN,
-            EnclosedCJKLettersandMonths::CircledHangulTikeut => CIRCLED_HANGUL_TIKEUT,
-            EnclosedCJKLettersandMonths::CircledHangulRieul => CIRCLED_HANGUL_RIEUL,
-            EnclosedCJKLettersandMonths::CircledHangulMieum => CIRCLED_HANGUL_MIEUM,
-            EnclosedCJKLettersandMonths::CircledHangulPieup => CIRCLED_HANGUL_PIEUP,
-            EnclosedCJKLettersandMonths::CircledHangulSios => CIRCLED_HANGUL_SIOS,
-            EnclosedCJKLettersandMonths::CircledHangulIeung => CIRCLED_HANGUL_IEUNG,
-            EnclosedCJKLettersandMonths::CircledHangulCieuc => CIRCLED_HANGUL_CIEUC,
-            EnclosedCJKLettersandMonths::CircledHangulChieuch => CIRCLED_HANGUL_CHIEUCH,
-            EnclosedCJKLettersandMonths::CircledHangulKhieukh => CIRCLED_HANGUL_KHIEUKH,
-            EnclosedCJKLettersandMonths::CircledHangulThieuth => CIRCLED_HANGUL_THIEUTH,
-            EnclosedCJKLettersandMonths::CircledHangulPhieuph => CIRCLED_HANGUL_PHIEUPH,
-            EnclosedCJKLettersandMonths::CircledHangulHieuh => CIRCLED_HANGUL_HIEUH,
-            EnclosedCJKLettersandMonths::CircledHangulKiyeokA => CIRCLED_HANGUL_KIYEOK_A,
-            EnclosedCJKLettersandMonths::CircledHangulNieunA => CIRCLED_HANGUL_NIEUN_A,
-            EnclosedCJKLettersandMonths::CircledHangulTikeutA => CIRCLED_HANGUL_TIKEUT_A,
-            EnclosedCJKLettersandMonths::CircledHangulRieulA => CIRCLED_HANGUL_RIEUL_A,
-            EnclosedCJKLettersandMonths::CircledHangulMieumA => CIRCLED_HANGUL_MIEUM_A,
-            EnclosedCJKLettersandMonths::CircledHangulPieupA => CIRCLED_HANGUL_PIEUP_A,
-            EnclosedCJKLettersandMonths::CircledHangulSiosA => CIRCLED_HANGUL_SIOS_A,
-            EnclosedCJKLettersandMonths::CircledHangulIeungA => CIRCLED_HANGUL_IEUNG_A,
-            EnclosedCJKLettersandMonths::CircledHangulCieucA => CIRCLED_HANGUL_CIEUC_A,
-            EnclosedCJKLettersandMonths::CircledHangulChieuchA => CIRCLED_HANGUL_CHIEUCH_A,
-            EnclosedCJKLettersandMonths::CircledHangulKhieukhA => CIRCLED_HANGUL_KHIEUKH_A,
-            EnclosedCJKLettersandMonths::CircledHangulThieuthA => CIRCLED_HANGUL_THIEUTH_A,
-            EnclosedCJKLettersandMonths::CircledHangulPhieuphA => CIRCLED_HANGUL_PHIEUPH_A,
-            EnclosedCJKLettersandMonths::CircledHangulHieuhA => CIRCLED_HANGUL_HIEUH_A,
-            EnclosedCJKLettersandMonths::CircledKoreanCharacterChamko => CIRCLED_KOREAN_CHARACTER_CHAMKO,
-            EnclosedCJKLettersandMonths::CircledKoreanCharacterJueui => CIRCLED_KOREAN_CHARACTER_JUEUI,
-            EnclosedCJKLettersandMonths::CircledHangulIeungU => CIRCLED_HANGUL_IEUNG_U,
-            EnclosedCJKLettersandMonths::KoreanStandardSymbol => KOREAN_STANDARD_SYMBOL,
-            EnclosedCJKLettersandMonths::CircledIdeographOne => CIRCLED_IDEOGRAPH_ONE,
-            EnclosedCJKLettersandMonths::CircledIdeographTwo => CIRCLED_IDEOGRAPH_TWO,
-            EnclosedCJKLettersandMonths::CircledIdeographThree => CIRCLED_IDEOGRAPH_THREE,
-            EnclosedCJKLettersandMonths::CircledIdeographFour => CIRCLED_IDEOGRAPH_FOUR,
-            EnclosedCJKLettersandMonths::CircledIdeographFive => CIRCLED_IDEOGRAPH_FIVE,
-            EnclosedCJKLettersandMonths::CircledIdeographSix => CIRCLED_IDEOGRAPH_SIX,
-            EnclosedCJKLettersandMonths::CircledIdeographSeven => CIRCLED_IDEOGRAPH_SEVEN,
-            EnclosedCJKLettersandMonths::CircledIdeographEight => CIRCLED_IDEOGRAPH_EIGHT,
-            EnclosedCJKLettersandMonths::CircledIdeographNine => CIRCLED_IDEOGRAPH_NINE,
-            EnclosedCJKLettersandMonths::CircledIdeographTen => CIRCLED_IDEOGRAPH_TEN,
-            EnclosedCJKLettersandMonths::CircledIdeographMoon => CIRCLED_IDEOGRAPH_MOON,
-            EnclosedCJKLettersandMonths::CircledIdeographFire => CIRCLED_IDEOGRAPH_FIRE,
-            EnclosedCJKLettersandMonths::CircledIdeographWater => CIRCLED_IDEOGRAPH_WATER,
-            EnclosedCJKLettersandMonths::CircledIdeographWood => CIRCLED_IDEOGRAPH_WOOD,
-            EnclosedCJKLettersandMonths::CircledIdeographMetal => CIRCLED_IDEOGRAPH_METAL,
-            EnclosedCJKLettersandMonths::CircledIdeographEarth => CIRCLED_IDEOGRAPH_EARTH,
-            EnclosedCJKLettersandMonths::CircledIdeographSun => CIRCLED_IDEOGRAPH_SUN,
-            EnclosedCJKLettersandMonths::CircledIdeographStock => CIRCLED_IDEOGRAPH_STOCK,
-            EnclosedCJKLettersandMonths::CircledIdeographHave => CIRCLED_IDEOGRAPH_HAVE,
-            EnclosedCJKLettersandMonths::CircledIdeographSociety => CIRCLED_IDEOGRAPH_SOCIETY,
-            EnclosedCJKLettersandMonths::CircledIdeographName => CIRCLED_IDEOGRAPH_NAME,
-            EnclosedCJKLettersandMonths::CircledIdeographSpecial => CIRCLED_IDEOGRAPH_SPECIAL,
-            EnclosedCJKLettersandMonths::CircledIdeographFinancial => CIRCLED_IDEOGRAPH_FINANCIAL,
-            EnclosedCJKLettersandMonths::CircledIdeographCongratulation => CIRCLED_IDEOGRAPH_CONGRATULATION,
-            EnclosedCJKLettersandMonths::CircledIdeographLabor => CIRCLED_IDEOGRAPH_LABOR,
-            EnclosedCJKLettersandMonths::CircledIdeographSecret => CIRCLED_IDEOGRAPH_SECRET,
-            EnclosedCJKLettersandMonths::CircledIdeographMale => CIRCLED_IDEOGRAPH_MALE,
-            EnclosedCJKLettersandMonths::CircledIdeographFemale => CIRCLED_IDEOGRAPH_FEMALE,
-            EnclosedCJKLettersandMonths::CircledIdeographSuitable => CIRCLED_IDEOGRAPH_SUITABLE,
-            EnclosedCJKLettersandMonths::CircledIdeographExcellent => CIRCLED_IDEOGRAPH_EXCELLENT,
-            EnclosedCJKLettersandMonths::CircledIdeographPrint => CIRCLED_IDEOGRAPH_PRINT,
-            EnclosedCJKLettersandMonths::CircledIdeographAttention => CIRCLED_IDEOGRAPH_ATTENTION,
-            EnclosedCJKLettersandMonths::CircledIdeographItem => CIRCLED_IDEOGRAPH_ITEM,
-            EnclosedCJKLettersandMonths::CircledIdeographRest => CIRCLED_IDEOGRAPH_REST,
-            EnclosedCJKLettersandMonths::CircledIdeographCopy => CIRCLED_IDEOGRAPH_COPY,
-            EnclosedCJKLettersandMonths::CircledIdeographCorrect => CIRCLED_IDEOGRAPH_CORRECT,
-            EnclosedCJKLettersandMonths::CircledIdeographHigh => CIRCLED_IDEOGRAPH_HIGH,
-            EnclosedCJKLettersandMonths::CircledIdeographCentre => CIRCLED_IDEOGRAPH_CENTRE,
-            EnclosedCJKLettersandMonths::CircledIdeographLow => CIRCLED_IDEOGRAPH_LOW,
-            EnclosedCJKLettersandMonths::CircledIdeographLeft => CIRCLED_IDEOGRAPH_LEFT,
-            EnclosedCJKLettersandMonths::CircledIdeographRight => CIRCLED_IDEOGRAPH_RIGHT,
-            EnclosedCJKLettersandMonths::CircledIdeographMedicine => CIRCLED_IDEOGRAPH_MEDICINE,
-            EnclosedCJKLettersandMonths::CircledIdeographReligion => CIRCLED_IDEOGRAPH_RELIGION,
-            EnclosedCJKLettersandMonths::CircledIdeographStudy => CIRCLED_IDEOGRAPH_STUDY,
-            EnclosedCJKLettersandMonths::CircledIdeographSupervise => CIRCLED_IDEOGRAPH_SUPERVISE,
-            EnclosedCJKLettersandMonths::CircledIdeographEnterprise => CIRCLED_IDEOGRAPH_ENTERPRISE,
-            EnclosedCJKLettersandMonths::CircledIdeographResource => CIRCLED_IDEOGRAPH_RESOURCE,
-            EnclosedCJKLettersandMonths::CircledIdeographAlliance => CIRCLED_IDEOGRAPH_ALLIANCE,
-            EnclosedCJKLettersandMonths::CircledIdeographNight => CIRCLED_IDEOGRAPH_NIGHT,
-            EnclosedCJKLettersandMonths::CircledNumberThirtySix => CIRCLED_NUMBER_THIRTY_SIX,
-            EnclosedCJKLettersandMonths::CircledNumberThirtySeven => CIRCLED_NUMBER_THIRTY_SEVEN,
-            EnclosedCJKLettersandMonths::CircledNumberThirtyEight => CIRCLED_NUMBER_THIRTY_EIGHT,
-            EnclosedCJKLettersandMonths::CircledNumberThirtyNine => CIRCLED_NUMBER_THIRTY_NINE,
-            EnclosedCJKLettersandMonths::CircledNumberForty => CIRCLED_NUMBER_FORTY,
-            EnclosedCJKLettersandMonths::CircledNumberFortyOne => CIRCLED_NUMBER_FORTY_ONE,
-            EnclosedCJKLettersandMonths::CircledNumberFortyTwo => CIRCLED_NUMBER_FORTY_TWO,
-            EnclosedCJKLettersandMonths::CircledNumberFortyThree => CIRCLED_NUMBER_FORTY_THREE,
-            EnclosedCJKLettersandMonths::CircledNumberFortyFour => CIRCLED_NUMBER_FORTY_FOUR,
-            EnclosedCJKLettersandMonths::CircledNumberFortyFive => CIRCLED_NUMBER_FORTY_FIVE,
-            EnclosedCJKLettersandMonths::CircledNumberFortySix => CIRCLED_NUMBER_FORTY_SIX,
-            EnclosedCJKLettersandMonths::CircledNumberFortySeven => CIRCLED_NUMBER_FORTY_SEVEN,
-            EnclosedCJKLettersandMonths::CircledNumberFortyEight => CIRCLED_NUMBER_FORTY_EIGHT,
-            EnclosedCJKLettersandMonths::CircledNumberFortyNine => CIRCLED_NUMBER_FORTY_NINE,
-            EnclosedCJKLettersandMonths::CircledNumberFifty => CIRCLED_NUMBER_FIFTY,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJanuary => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_JANUARY,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForFebruary => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_FEBRUARY,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForMarch => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_MARCH,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForApril => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_APRIL,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForMay => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_MAY,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJune => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_JUNE,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJuly => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_JULY,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForAugust => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_AUGUST,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForSeptember => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_SEPTEMBER,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForOctober => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_OCTOBER,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForNovember => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_NOVEMBER,
-            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForDecember => IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_DECEMBER,
-            EnclosedCJKLettersandMonths::SquareHg => SQUARE_HG,
-            EnclosedCJKLettersandMonths::SquareErg => SQUARE_ERG,
-            EnclosedCJKLettersandMonths::SquareEv => SQUARE_EV,
-            EnclosedCJKLettersandMonths::LimitedLiabilitySign => LIMITED_LIABILITY_SIGN,
-            EnclosedCJKLettersandMonths::CircledKatakanaA => CIRCLED_KATAKANA_A,
-            EnclosedCJKLettersandMonths::CircledKatakanaI => CIRCLED_KATAKANA_I,
-            EnclosedCJKLettersandMonths::CircledKatakanaU => CIRCLED_KATAKANA_U,
-            EnclosedCJKLettersandMonths::CircledKatakanaE => CIRCLED_KATAKANA_E,
-            EnclosedCJKLettersandMonths::CircledKatakanaO => CIRCLED_KATAKANA_O,
-            EnclosedCJKLettersandMonths::CircledKatakanaKa => CIRCLED_KATAKANA_KA,
-            EnclosedCJKLettersandMonths::CircledKatakanaKi => CIRCLED_KATAKANA_KI,
-            EnclosedCJKLettersandMonths::CircledKatakanaKu => CIRCLED_KATAKANA_KU,
-            EnclosedCJKLettersandMonths::CircledKatakanaKe => CIRCLED_KATAKANA_KE,
-            EnclosedCJKLettersandMonths::CircledKatakanaKo => CIRCLED_KATAKANA_KO,
-            EnclosedCJKLettersandMonths::CircledKatakanaSa => CIRCLED_KATAKANA_SA,
-            EnclosedCJKLettersandMonths::CircledKatakanaSi => CIRCLED_KATAKANA_SI,
-            EnclosedCJKLettersandMonths::CircledKatakanaSu => CIRCLED_KATAKANA_SU,
-            EnclosedCJKLettersandMonths::CircledKatakanaSe => CIRCLED_KATAKANA_SE,
-            EnclosedCJKLettersandMonths::CircledKatakanaSo => CIRCLED_KATAKANA_SO,
-            EnclosedCJKLettersandMonths::CircledKatakanaTa => CIRCLED_KATAKANA_TA,
-            EnclosedCJKLettersandMonths::CircledKatakanaTi => CIRCLED_KATAKANA_TI,
-            EnclosedCJKLettersandMonths::CircledKatakanaTu => CIRCLED_KATAKANA_TU,
-            EnclosedCJKLettersandMonths::CircledKatakanaTe => CIRCLED_KATAKANA_TE,
-            EnclosedCJKLettersandMonths::CircledKatakanaTo => CIRCLED_KATAKANA_TO,
-            EnclosedCJKLettersandMonths::CircledKatakanaNa => CIRCLED_KATAKANA_NA,
-            EnclosedCJKLettersandMonths::CircledKatakanaNi => CIRCLED_KATAKANA_NI,
-            EnclosedCJKLettersandMonths::CircledKatakanaNu => CIRCLED_KATAKANA_NU,
-            EnclosedCJKLettersandMonths::CircledKatakanaNe => CIRCLED_KATAKANA_NE,
-            EnclosedCJKLettersandMonths::CircledKatakanaNo => CIRCLED_KATAKANA_NO,
-            EnclosedCJKLettersandMonths::CircledKatakanaHa => CIRCLED_KATAKANA_HA,
-            EnclosedCJKLettersandMonths::CircledKatakanaHi => CIRCLED_KATAKANA_HI,
-            EnclosedCJKLettersandMonths::CircledKatakanaHu => CIRCLED_KATAKANA_HU,
-            EnclosedCJKLettersandMonths::CircledKatakanaHe => CIRCLED_KATAKANA_HE,
-            EnclosedCJKLettersandMonths::CircledKatakanaHo => CIRCLED_KATAKANA_HO,
-            EnclosedCJKLettersandMonths::CircledKatakanaMa => CIRCLED_KATAKANA_MA,
-            EnclosedCJKLettersandMonths::CircledKatakanaMi => CIRCLED_KATAKANA_MI,
-            EnclosedCJKLettersandMonths::CircledKatakanaMu => CIRCLED_KATAKANA_MU,
-            EnclosedCJKLettersandMonths::CircledKatakanaMe => CIRCLED_KATAKANA_ME,
-            EnclosedCJKLettersandMonths::CircledKatakanaMo => CIRCLED_KATAKANA_MO,
-            EnclosedCJKLettersandMonths::CircledKatakanaYa => CIRCLED_KATAKANA_YA,
-            EnclosedCJKLettersandMonths::CircledKatakanaYu => CIRCLED_KATAKANA_YU,
-            EnclosedCJKLettersandMonths::CircledKatakanaYo => CIRCLED_KATAKANA_YO,
-            EnclosedCJKLettersandMonths::CircledKatakanaRa => CIRCLED_KATAKANA_RA,
-            EnclosedCJKLettersandMonths::CircledKatakanaRi => CIRCLED_KATAKANA_RI,
-            EnclosedCJKLettersandMonths::CircledKatakanaRu => CIRCLED_KATAKANA_RU,
-            EnclosedCJKLettersandMonths::CircledKatakanaRe => CIRCLED_KATAKANA_RE,
-            EnclosedCJKLettersandMonths::CircledKatakanaRo => CIRCLED_KATAKANA_RO,
-            EnclosedCJKLettersandMonths::CircledKatakanaWa => CIRCLED_KATAKANA_WA,
-            EnclosedCJKLettersandMonths::CircledKatakanaWi => CIRCLED_KATAKANA_WI,
-            EnclosedCJKLettersandMonths::CircledKatakanaWe => CIRCLED_KATAKANA_WE,
-            EnclosedCJKLettersandMonths::CircledKatakanaWo => CIRCLED_KATAKANA_WO,
+            EnclosedCJKLettersandMonths::ParenthesizedHangulKiyeok => '㈀',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulNieun => '㈁',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulTikeut => '㈂',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulRieul => '㈃',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulMieum => '㈄',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulPieup => '㈅',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulSios => '㈆',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulIeung => '㈇',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulCieuc => '㈈',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulChieuch => '㈉',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulKhieukh => '㈊',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulThieuth => '㈋',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulPhieuph => '㈌',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulHieuh => '㈍',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulKiyeokA => '㈎',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulNieunA => '㈏',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulTikeutA => '㈐',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulRieulA => '㈑',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulMieumA => '㈒',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulPieupA => '㈓',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulSiosA => '㈔',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulIeungA => '㈕',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulCieucA => '㈖',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulChieuchA => '㈗',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulKhieukhA => '㈘',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulThieuthA => '㈙',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulPhieuphA => '㈚',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulHieuhA => '㈛',
+            EnclosedCJKLettersandMonths::ParenthesizedHangulCieucU => '㈜',
+            EnclosedCJKLettersandMonths::ParenthesizedKoreanCharacterOjeon => '㈝',
+            EnclosedCJKLettersandMonths::ParenthesizedKoreanCharacterOHu => '㈞',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographOne => '㈠',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographTwo => '㈡',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographThree => '㈢',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographFour => '㈣',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographFive => '㈤',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographSix => '㈥',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographSeven => '㈦',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographEight => '㈧',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographNine => '㈨',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographTen => '㈩',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographMoon => '㈪',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographFire => '㈫',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographWater => '㈬',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographWood => '㈭',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographMetal => '㈮',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographEarth => '㈯',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographSun => '㈰',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographStock => '㈱',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographHave => '㈲',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographSociety => '㈳',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographName => '㈴',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographSpecial => '㈵',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographFinancial => '㈶',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographCongratulation => '㈷',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographLabor => '㈸',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographRepresent => '㈹',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographCall => '㈺',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographStudy => '㈻',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographSupervise => '㈼',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographEnterprise => '㈽',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographResource => '㈾',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographAlliance => '㈿',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographFestival => '㉀',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographRest => '㉁',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographSelf => '㉂',
+            EnclosedCJKLettersandMonths::ParenthesizedIdeographReach => '㉃',
+            EnclosedCJKLettersandMonths::CircledIdeographQuestion => '㉄',
+            EnclosedCJKLettersandMonths::CircledIdeographKindergarten => '㉅',
+            EnclosedCJKLettersandMonths::CircledIdeographSchool => '㉆',
+            EnclosedCJKLettersandMonths::CircledIdeographKoto => '㉇',
+            EnclosedCJKLettersandMonths::CircledNumberTenOnBlackSquare => '㉈',
+            EnclosedCJKLettersandMonths::CircledNumberTwentyOnBlackSquare => '㉉',
+            EnclosedCJKLettersandMonths::CircledNumberThirtyOnBlackSquare => '㉊',
+            EnclosedCJKLettersandMonths::CircledNumberFortyOnBlackSquare => '㉋',
+            EnclosedCJKLettersandMonths::CircledNumberFiftyOnBlackSquare => '㉌',
+            EnclosedCJKLettersandMonths::CircledNumberSixtyOnBlackSquare => '㉍',
+            EnclosedCJKLettersandMonths::CircledNumberSeventyOnBlackSquare => '㉎',
+            EnclosedCJKLettersandMonths::CircledNumberEightyOnBlackSquare => '㉏',
+            EnclosedCJKLettersandMonths::PartnershipSign => '㉐',
+            EnclosedCJKLettersandMonths::CircledNumberTwentyOne => '㉑',
+            EnclosedCJKLettersandMonths::CircledNumberTwentyTwo => '㉒',
+            EnclosedCJKLettersandMonths::CircledNumberTwentyThree => '㉓',
+            EnclosedCJKLettersandMonths::CircledNumberTwentyFour => '㉔',
+            EnclosedCJKLettersandMonths::CircledNumberTwentyFive => '㉕',
+            EnclosedCJKLettersandMonths::CircledNumberTwentySix => '㉖',
+            EnclosedCJKLettersandMonths::CircledNumberTwentySeven => '㉗',
+            EnclosedCJKLettersandMonths::CircledNumberTwentyEight => '㉘',
+            EnclosedCJKLettersandMonths::CircledNumberTwentyNine => '㉙',
+            EnclosedCJKLettersandMonths::CircledNumberThirty => '㉚',
+            EnclosedCJKLettersandMonths::CircledNumberThirtyOne => '㉛',
+            EnclosedCJKLettersandMonths::CircledNumberThirtyTwo => '㉜',
+            EnclosedCJKLettersandMonths::CircledNumberThirtyThree => '㉝',
+            EnclosedCJKLettersandMonths::CircledNumberThirtyFour => '㉞',
+            EnclosedCJKLettersandMonths::CircledNumberThirtyFive => '㉟',
+            EnclosedCJKLettersandMonths::CircledHangulKiyeok => '㉠',
+            EnclosedCJKLettersandMonths::CircledHangulNieun => '㉡',
+            EnclosedCJKLettersandMonths::CircledHangulTikeut => '㉢',
+            EnclosedCJKLettersandMonths::CircledHangulRieul => '㉣',
+            EnclosedCJKLettersandMonths::CircledHangulMieum => '㉤',
+            EnclosedCJKLettersandMonths::CircledHangulPieup => '㉥',
+            EnclosedCJKLettersandMonths::CircledHangulSios => '㉦',
+            EnclosedCJKLettersandMonths::CircledHangulIeung => '㉧',
+            EnclosedCJKLettersandMonths::CircledHangulCieuc => '㉨',
+            EnclosedCJKLettersandMonths::CircledHangulChieuch => '㉩',
+            EnclosedCJKLettersandMonths::CircledHangulKhieukh => '㉪',
+            EnclosedCJKLettersandMonths::CircledHangulThieuth => '㉫',
+            EnclosedCJKLettersandMonths::CircledHangulPhieuph => '㉬',
+            EnclosedCJKLettersandMonths::CircledHangulHieuh => '㉭',
+            EnclosedCJKLettersandMonths::CircledHangulKiyeokA => '㉮',
+            EnclosedCJKLettersandMonths::CircledHangulNieunA => '㉯',
+            EnclosedCJKLettersandMonths::CircledHangulTikeutA => '㉰',
+            EnclosedCJKLettersandMonths::CircledHangulRieulA => '㉱',
+            EnclosedCJKLettersandMonths::CircledHangulMieumA => '㉲',
+            EnclosedCJKLettersandMonths::CircledHangulPieupA => '㉳',
+            EnclosedCJKLettersandMonths::CircledHangulSiosA => '㉴',
+            EnclosedCJKLettersandMonths::CircledHangulIeungA => '㉵',
+            EnclosedCJKLettersandMonths::CircledHangulCieucA => '㉶',
+            EnclosedCJKLettersandMonths::CircledHangulChieuchA => '㉷',
+            EnclosedCJKLettersandMonths::CircledHangulKhieukhA => '㉸',
+            EnclosedCJKLettersandMonths::CircledHangulThieuthA => '㉹',
+            EnclosedCJKLettersandMonths::CircledHangulPhieuphA => '㉺',
+            EnclosedCJKLettersandMonths::CircledHangulHieuhA => '㉻',
+            EnclosedCJKLettersandMonths::CircledKoreanCharacterChamko => '㉼',
+            EnclosedCJKLettersandMonths::CircledKoreanCharacterJueui => '㉽',
+            EnclosedCJKLettersandMonths::CircledHangulIeungU => '㉾',
+            EnclosedCJKLettersandMonths::KoreanStandardSymbol => '㉿',
+            EnclosedCJKLettersandMonths::CircledIdeographOne => '㊀',
+            EnclosedCJKLettersandMonths::CircledIdeographTwo => '㊁',
+            EnclosedCJKLettersandMonths::CircledIdeographThree => '㊂',
+            EnclosedCJKLettersandMonths::CircledIdeographFour => '㊃',
+            EnclosedCJKLettersandMonths::CircledIdeographFive => '㊄',
+            EnclosedCJKLettersandMonths::CircledIdeographSix => '㊅',
+            EnclosedCJKLettersandMonths::CircledIdeographSeven => '㊆',
+            EnclosedCJKLettersandMonths::CircledIdeographEight => '㊇',
+            EnclosedCJKLettersandMonths::CircledIdeographNine => '㊈',
+            EnclosedCJKLettersandMonths::CircledIdeographTen => '㊉',
+            EnclosedCJKLettersandMonths::CircledIdeographMoon => '㊊',
+            EnclosedCJKLettersandMonths::CircledIdeographFire => '㊋',
+            EnclosedCJKLettersandMonths::CircledIdeographWater => '㊌',
+            EnclosedCJKLettersandMonths::CircledIdeographWood => '㊍',
+            EnclosedCJKLettersandMonths::CircledIdeographMetal => '㊎',
+            EnclosedCJKLettersandMonths::CircledIdeographEarth => '㊏',
+            EnclosedCJKLettersandMonths::CircledIdeographSun => '㊐',
+            EnclosedCJKLettersandMonths::CircledIdeographStock => '㊑',
+            EnclosedCJKLettersandMonths::CircledIdeographHave => '㊒',
+            EnclosedCJKLettersandMonths::CircledIdeographSociety => '㊓',
+            EnclosedCJKLettersandMonths::CircledIdeographName => '㊔',
+            EnclosedCJKLettersandMonths::CircledIdeographSpecial => '㊕',
+            EnclosedCJKLettersandMonths::CircledIdeographFinancial => '㊖',
+            EnclosedCJKLettersandMonths::CircledIdeographCongratulation => '㊗',
+            EnclosedCJKLettersandMonths::CircledIdeographLabor => '㊘',
+            EnclosedCJKLettersandMonths::CircledIdeographSecret => '㊙',
+            EnclosedCJKLettersandMonths::CircledIdeographMale => '㊚',
+            EnclosedCJKLettersandMonths::CircledIdeographFemale => '㊛',
+            EnclosedCJKLettersandMonths::CircledIdeographSuitable => '㊜',
+            EnclosedCJKLettersandMonths::CircledIdeographExcellent => '㊝',
+            EnclosedCJKLettersandMonths::CircledIdeographPrint => '㊞',
+            EnclosedCJKLettersandMonths::CircledIdeographAttention => '㊟',
+            EnclosedCJKLettersandMonths::CircledIdeographItem => '㊠',
+            EnclosedCJKLettersandMonths::CircledIdeographRest => '㊡',
+            EnclosedCJKLettersandMonths::CircledIdeographCopy => '㊢',
+            EnclosedCJKLettersandMonths::CircledIdeographCorrect => '㊣',
+            EnclosedCJKLettersandMonths::CircledIdeographHigh => '㊤',
+            EnclosedCJKLettersandMonths::CircledIdeographCentre => '㊥',
+            EnclosedCJKLettersandMonths::CircledIdeographLow => '㊦',
+            EnclosedCJKLettersandMonths::CircledIdeographLeft => '㊧',
+            EnclosedCJKLettersandMonths::CircledIdeographRight => '㊨',
+            EnclosedCJKLettersandMonths::CircledIdeographMedicine => '㊩',
+            EnclosedCJKLettersandMonths::CircledIdeographReligion => '㊪',
+            EnclosedCJKLettersandMonths::CircledIdeographStudy => '㊫',
+            EnclosedCJKLettersandMonths::CircledIdeographSupervise => '㊬',
+            EnclosedCJKLettersandMonths::CircledIdeographEnterprise => '㊭',
+            EnclosedCJKLettersandMonths::CircledIdeographResource => '㊮',
+            EnclosedCJKLettersandMonths::CircledIdeographAlliance => '㊯',
+            EnclosedCJKLettersandMonths::CircledIdeographNight => '㊰',
+            EnclosedCJKLettersandMonths::CircledNumberThirtySix => '㊱',
+            EnclosedCJKLettersandMonths::CircledNumberThirtySeven => '㊲',
+            EnclosedCJKLettersandMonths::CircledNumberThirtyEight => '㊳',
+            EnclosedCJKLettersandMonths::CircledNumberThirtyNine => '㊴',
+            EnclosedCJKLettersandMonths::CircledNumberForty => '㊵',
+            EnclosedCJKLettersandMonths::CircledNumberFortyOne => '㊶',
+            EnclosedCJKLettersandMonths::CircledNumberFortyTwo => '㊷',
+            EnclosedCJKLettersandMonths::CircledNumberFortyThree => '㊸',
+            EnclosedCJKLettersandMonths::CircledNumberFortyFour => '㊹',
+            EnclosedCJKLettersandMonths::CircledNumberFortyFive => '㊺',
+            EnclosedCJKLettersandMonths::CircledNumberFortySix => '㊻',
+            EnclosedCJKLettersandMonths::CircledNumberFortySeven => '㊼',
+            EnclosedCJKLettersandMonths::CircledNumberFortyEight => '㊽',
+            EnclosedCJKLettersandMonths::CircledNumberFortyNine => '㊾',
+            EnclosedCJKLettersandMonths::CircledNumberFifty => '㊿',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJanuary => '㋀',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForFebruary => '㋁',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForMarch => '㋂',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForApril => '㋃',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForMay => '㋄',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJune => '㋅',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJuly => '㋆',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForAugust => '㋇',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForSeptember => '㋈',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForOctober => '㋉',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForNovember => '㋊',
+            EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForDecember => '㋋',
+            EnclosedCJKLettersandMonths::SquareHg => '㋌',
+            EnclosedCJKLettersandMonths::SquareErg => '㋍',
+            EnclosedCJKLettersandMonths::SquareEv => '㋎',
+            EnclosedCJKLettersandMonths::LimitedLiabilitySign => '㋏',
+            EnclosedCJKLettersandMonths::CircledKatakanaA => '㋐',
+            EnclosedCJKLettersandMonths::CircledKatakanaI => '㋑',
+            EnclosedCJKLettersandMonths::CircledKatakanaU => '㋒',
+            EnclosedCJKLettersandMonths::CircledKatakanaE => '㋓',
+            EnclosedCJKLettersandMonths::CircledKatakanaO => '㋔',
+            EnclosedCJKLettersandMonths::CircledKatakanaKa => '㋕',
+            EnclosedCJKLettersandMonths::CircledKatakanaKi => '㋖',
+            EnclosedCJKLettersandMonths::CircledKatakanaKu => '㋗',
+            EnclosedCJKLettersandMonths::CircledKatakanaKe => '㋘',
+            EnclosedCJKLettersandMonths::CircledKatakanaKo => '㋙',
+            EnclosedCJKLettersandMonths::CircledKatakanaSa => '㋚',
+            EnclosedCJKLettersandMonths::CircledKatakanaSi => '㋛',
+            EnclosedCJKLettersandMonths::CircledKatakanaSu => '㋜',
+            EnclosedCJKLettersandMonths::CircledKatakanaSe => '㋝',
+            EnclosedCJKLettersandMonths::CircledKatakanaSo => '㋞',
+            EnclosedCJKLettersandMonths::CircledKatakanaTa => '㋟',
+            EnclosedCJKLettersandMonths::CircledKatakanaTi => '㋠',
+            EnclosedCJKLettersandMonths::CircledKatakanaTu => '㋡',
+            EnclosedCJKLettersandMonths::CircledKatakanaTe => '㋢',
+            EnclosedCJKLettersandMonths::CircledKatakanaTo => '㋣',
+            EnclosedCJKLettersandMonths::CircledKatakanaNa => '㋤',
+            EnclosedCJKLettersandMonths::CircledKatakanaNi => '㋥',
+            EnclosedCJKLettersandMonths::CircledKatakanaNu => '㋦',
+            EnclosedCJKLettersandMonths::CircledKatakanaNe => '㋧',
+            EnclosedCJKLettersandMonths::CircledKatakanaNo => '㋨',
+            EnclosedCJKLettersandMonths::CircledKatakanaHa => '㋩',
+            EnclosedCJKLettersandMonths::CircledKatakanaHi => '㋪',
+            EnclosedCJKLettersandMonths::CircledKatakanaHu => '㋫',
+            EnclosedCJKLettersandMonths::CircledKatakanaHe => '㋬',
+            EnclosedCJKLettersandMonths::CircledKatakanaHo => '㋭',
+            EnclosedCJKLettersandMonths::CircledKatakanaMa => '㋮',
+            EnclosedCJKLettersandMonths::CircledKatakanaMi => '㋯',
+            EnclosedCJKLettersandMonths::CircledKatakanaMu => '㋰',
+            EnclosedCJKLettersandMonths::CircledKatakanaMe => '㋱',
+            EnclosedCJKLettersandMonths::CircledKatakanaMo => '㋲',
+            EnclosedCJKLettersandMonths::CircledKatakanaYa => '㋳',
+            EnclosedCJKLettersandMonths::CircledKatakanaYu => '㋴',
+            EnclosedCJKLettersandMonths::CircledKatakanaYo => '㋵',
+            EnclosedCJKLettersandMonths::CircledKatakanaRa => '㋶',
+            EnclosedCJKLettersandMonths::CircledKatakanaRi => '㋷',
+            EnclosedCJKLettersandMonths::CircledKatakanaRu => '㋸',
+            EnclosedCJKLettersandMonths::CircledKatakanaRe => '㋹',
+            EnclosedCJKLettersandMonths::CircledKatakanaRo => '㋺',
+            EnclosedCJKLettersandMonths::CircledKatakanaWa => '㋻',
+            EnclosedCJKLettersandMonths::CircledKatakanaWi => '㋼',
+            EnclosedCJKLettersandMonths::CircledKatakanaWe => '㋽',
+            EnclosedCJKLettersandMonths::CircledKatakanaWo => '㋾',
         }
     }
 }
@@ -1288,262 +776,261 @@ impl Into<char> for EnclosedCJKLettersandMonths {
 impl std::convert::TryFrom<char> for EnclosedCJKLettersandMonths {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            PARENTHESIZED_HANGUL_KIYEOK => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulKiyeok),
-            PARENTHESIZED_HANGUL_NIEUN => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulNieun),
-            PARENTHESIZED_HANGUL_TIKEUT => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulTikeut),
-            PARENTHESIZED_HANGUL_RIEUL => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulRieul),
-            PARENTHESIZED_HANGUL_MIEUM => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulMieum),
-            PARENTHESIZED_HANGUL_PIEUP => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulPieup),
-            PARENTHESIZED_HANGUL_SIOS => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulSios),
-            PARENTHESIZED_HANGUL_IEUNG => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulIeung),
-            PARENTHESIZED_HANGUL_CIEUC => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulCieuc),
-            PARENTHESIZED_HANGUL_CHIEUCH => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulChieuch),
-            PARENTHESIZED_HANGUL_KHIEUKH => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulKhieukh),
-            PARENTHESIZED_HANGUL_THIEUTH => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulThieuth),
-            PARENTHESIZED_HANGUL_PHIEUPH => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulPhieuph),
-            PARENTHESIZED_HANGUL_HIEUH => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulHieuh),
-            PARENTHESIZED_HANGUL_KIYEOK_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulKiyeokA),
-            PARENTHESIZED_HANGUL_NIEUN_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulNieunA),
-            PARENTHESIZED_HANGUL_TIKEUT_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulTikeutA),
-            PARENTHESIZED_HANGUL_RIEUL_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulRieulA),
-            PARENTHESIZED_HANGUL_MIEUM_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulMieumA),
-            PARENTHESIZED_HANGUL_PIEUP_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulPieupA),
-            PARENTHESIZED_HANGUL_SIOS_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulSiosA),
-            PARENTHESIZED_HANGUL_IEUNG_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulIeungA),
-            PARENTHESIZED_HANGUL_CIEUC_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulCieucA),
-            PARENTHESIZED_HANGUL_CHIEUCH_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulChieuchA),
-            PARENTHESIZED_HANGUL_KHIEUKH_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulKhieukhA),
-            PARENTHESIZED_HANGUL_THIEUTH_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulThieuthA),
-            PARENTHESIZED_HANGUL_PHIEUPH_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulPhieuphA),
-            PARENTHESIZED_HANGUL_HIEUH_A => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulHieuhA),
-            PARENTHESIZED_HANGUL_CIEUC_U => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulCieucU),
-            PARENTHESIZED_KOREAN_CHARACTER_OJEON => Ok(EnclosedCJKLettersandMonths::ParenthesizedKoreanCharacterOjeon),
-            PARENTHESIZED_KOREAN_CHARACTER_O_HU => Ok(EnclosedCJKLettersandMonths::ParenthesizedKoreanCharacterOHu),
-            PARENTHESIZED_IDEOGRAPH_ONE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographOne),
-            PARENTHESIZED_IDEOGRAPH_TWO => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographTwo),
-            PARENTHESIZED_IDEOGRAPH_THREE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographThree),
-            PARENTHESIZED_IDEOGRAPH_FOUR => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFour),
-            PARENTHESIZED_IDEOGRAPH_FIVE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFive),
-            PARENTHESIZED_IDEOGRAPH_SIX => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSix),
-            PARENTHESIZED_IDEOGRAPH_SEVEN => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSeven),
-            PARENTHESIZED_IDEOGRAPH_EIGHT => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographEight),
-            PARENTHESIZED_IDEOGRAPH_NINE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographNine),
-            PARENTHESIZED_IDEOGRAPH_TEN => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographTen),
-            PARENTHESIZED_IDEOGRAPH_MOON => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographMoon),
-            PARENTHESIZED_IDEOGRAPH_FIRE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFire),
-            PARENTHESIZED_IDEOGRAPH_WATER => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographWater),
-            PARENTHESIZED_IDEOGRAPH_WOOD => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographWood),
-            PARENTHESIZED_IDEOGRAPH_METAL => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographMetal),
-            PARENTHESIZED_IDEOGRAPH_EARTH => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographEarth),
-            PARENTHESIZED_IDEOGRAPH_SUN => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSun),
-            PARENTHESIZED_IDEOGRAPH_STOCK => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographStock),
-            PARENTHESIZED_IDEOGRAPH_HAVE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographHave),
-            PARENTHESIZED_IDEOGRAPH_SOCIETY => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSociety),
-            PARENTHESIZED_IDEOGRAPH_NAME => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographName),
-            PARENTHESIZED_IDEOGRAPH_SPECIAL => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSpecial),
-            PARENTHESIZED_IDEOGRAPH_FINANCIAL => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFinancial),
-            PARENTHESIZED_IDEOGRAPH_CONGRATULATION => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographCongratulation),
-            PARENTHESIZED_IDEOGRAPH_LABOR => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographLabor),
-            PARENTHESIZED_IDEOGRAPH_REPRESENT => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographRepresent),
-            PARENTHESIZED_IDEOGRAPH_CALL => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographCall),
-            PARENTHESIZED_IDEOGRAPH_STUDY => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographStudy),
-            PARENTHESIZED_IDEOGRAPH_SUPERVISE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSupervise),
-            PARENTHESIZED_IDEOGRAPH_ENTERPRISE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographEnterprise),
-            PARENTHESIZED_IDEOGRAPH_RESOURCE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographResource),
-            PARENTHESIZED_IDEOGRAPH_ALLIANCE => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographAlliance),
-            PARENTHESIZED_IDEOGRAPH_FESTIVAL => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFestival),
-            PARENTHESIZED_IDEOGRAPH_REST => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographRest),
-            PARENTHESIZED_IDEOGRAPH_SELF => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSelf),
-            PARENTHESIZED_IDEOGRAPH_REACH => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographReach),
-            CIRCLED_IDEOGRAPH_QUESTION => Ok(EnclosedCJKLettersandMonths::CircledIdeographQuestion),
-            CIRCLED_IDEOGRAPH_KINDERGARTEN => Ok(EnclosedCJKLettersandMonths::CircledIdeographKindergarten),
-            CIRCLED_IDEOGRAPH_SCHOOL => Ok(EnclosedCJKLettersandMonths::CircledIdeographSchool),
-            CIRCLED_IDEOGRAPH_KOTO => Ok(EnclosedCJKLettersandMonths::CircledIdeographKoto),
-            CIRCLED_NUMBER_TEN_ON_BLACK_SQUARE => Ok(EnclosedCJKLettersandMonths::CircledNumberTenOnBlackSquare),
-            CIRCLED_NUMBER_TWENTY_ON_BLACK_SQUARE => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyOnBlackSquare),
-            CIRCLED_NUMBER_THIRTY_ON_BLACK_SQUARE => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyOnBlackSquare),
-            CIRCLED_NUMBER_FORTY_ON_BLACK_SQUARE => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyOnBlackSquare),
-            CIRCLED_NUMBER_FIFTY_ON_BLACK_SQUARE => Ok(EnclosedCJKLettersandMonths::CircledNumberFiftyOnBlackSquare),
-            CIRCLED_NUMBER_SIXTY_ON_BLACK_SQUARE => Ok(EnclosedCJKLettersandMonths::CircledNumberSixtyOnBlackSquare),
-            CIRCLED_NUMBER_SEVENTY_ON_BLACK_SQUARE => Ok(EnclosedCJKLettersandMonths::CircledNumberSeventyOnBlackSquare),
-            CIRCLED_NUMBER_EIGHTY_ON_BLACK_SQUARE => Ok(EnclosedCJKLettersandMonths::CircledNumberEightyOnBlackSquare),
-            PARTNERSHIP_SIGN => Ok(EnclosedCJKLettersandMonths::PartnershipSign),
-            CIRCLED_NUMBER_TWENTY_ONE => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyOne),
-            CIRCLED_NUMBER_TWENTY_TWO => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyTwo),
-            CIRCLED_NUMBER_TWENTY_THREE => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyThree),
-            CIRCLED_NUMBER_TWENTY_FOUR => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyFour),
-            CIRCLED_NUMBER_TWENTY_FIVE => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyFive),
-            CIRCLED_NUMBER_TWENTY_SIX => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentySix),
-            CIRCLED_NUMBER_TWENTY_SEVEN => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentySeven),
-            CIRCLED_NUMBER_TWENTY_EIGHT => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyEight),
-            CIRCLED_NUMBER_TWENTY_NINE => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyNine),
-            CIRCLED_NUMBER_THIRTY => Ok(EnclosedCJKLettersandMonths::CircledNumberThirty),
-            CIRCLED_NUMBER_THIRTY_ONE => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyOne),
-            CIRCLED_NUMBER_THIRTY_TWO => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyTwo),
-            CIRCLED_NUMBER_THIRTY_THREE => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyThree),
-            CIRCLED_NUMBER_THIRTY_FOUR => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyFour),
-            CIRCLED_NUMBER_THIRTY_FIVE => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyFive),
-            CIRCLED_HANGUL_KIYEOK => Ok(EnclosedCJKLettersandMonths::CircledHangulKiyeok),
-            CIRCLED_HANGUL_NIEUN => Ok(EnclosedCJKLettersandMonths::CircledHangulNieun),
-            CIRCLED_HANGUL_TIKEUT => Ok(EnclosedCJKLettersandMonths::CircledHangulTikeut),
-            CIRCLED_HANGUL_RIEUL => Ok(EnclosedCJKLettersandMonths::CircledHangulRieul),
-            CIRCLED_HANGUL_MIEUM => Ok(EnclosedCJKLettersandMonths::CircledHangulMieum),
-            CIRCLED_HANGUL_PIEUP => Ok(EnclosedCJKLettersandMonths::CircledHangulPieup),
-            CIRCLED_HANGUL_SIOS => Ok(EnclosedCJKLettersandMonths::CircledHangulSios),
-            CIRCLED_HANGUL_IEUNG => Ok(EnclosedCJKLettersandMonths::CircledHangulIeung),
-            CIRCLED_HANGUL_CIEUC => Ok(EnclosedCJKLettersandMonths::CircledHangulCieuc),
-            CIRCLED_HANGUL_CHIEUCH => Ok(EnclosedCJKLettersandMonths::CircledHangulChieuch),
-            CIRCLED_HANGUL_KHIEUKH => Ok(EnclosedCJKLettersandMonths::CircledHangulKhieukh),
-            CIRCLED_HANGUL_THIEUTH => Ok(EnclosedCJKLettersandMonths::CircledHangulThieuth),
-            CIRCLED_HANGUL_PHIEUPH => Ok(EnclosedCJKLettersandMonths::CircledHangulPhieuph),
-            CIRCLED_HANGUL_HIEUH => Ok(EnclosedCJKLettersandMonths::CircledHangulHieuh),
-            CIRCLED_HANGUL_KIYEOK_A => Ok(EnclosedCJKLettersandMonths::CircledHangulKiyeokA),
-            CIRCLED_HANGUL_NIEUN_A => Ok(EnclosedCJKLettersandMonths::CircledHangulNieunA),
-            CIRCLED_HANGUL_TIKEUT_A => Ok(EnclosedCJKLettersandMonths::CircledHangulTikeutA),
-            CIRCLED_HANGUL_RIEUL_A => Ok(EnclosedCJKLettersandMonths::CircledHangulRieulA),
-            CIRCLED_HANGUL_MIEUM_A => Ok(EnclosedCJKLettersandMonths::CircledHangulMieumA),
-            CIRCLED_HANGUL_PIEUP_A => Ok(EnclosedCJKLettersandMonths::CircledHangulPieupA),
-            CIRCLED_HANGUL_SIOS_A => Ok(EnclosedCJKLettersandMonths::CircledHangulSiosA),
-            CIRCLED_HANGUL_IEUNG_A => Ok(EnclosedCJKLettersandMonths::CircledHangulIeungA),
-            CIRCLED_HANGUL_CIEUC_A => Ok(EnclosedCJKLettersandMonths::CircledHangulCieucA),
-            CIRCLED_HANGUL_CHIEUCH_A => Ok(EnclosedCJKLettersandMonths::CircledHangulChieuchA),
-            CIRCLED_HANGUL_KHIEUKH_A => Ok(EnclosedCJKLettersandMonths::CircledHangulKhieukhA),
-            CIRCLED_HANGUL_THIEUTH_A => Ok(EnclosedCJKLettersandMonths::CircledHangulThieuthA),
-            CIRCLED_HANGUL_PHIEUPH_A => Ok(EnclosedCJKLettersandMonths::CircledHangulPhieuphA),
-            CIRCLED_HANGUL_HIEUH_A => Ok(EnclosedCJKLettersandMonths::CircledHangulHieuhA),
-            CIRCLED_KOREAN_CHARACTER_CHAMKO => Ok(EnclosedCJKLettersandMonths::CircledKoreanCharacterChamko),
-            CIRCLED_KOREAN_CHARACTER_JUEUI => Ok(EnclosedCJKLettersandMonths::CircledKoreanCharacterJueui),
-            CIRCLED_HANGUL_IEUNG_U => Ok(EnclosedCJKLettersandMonths::CircledHangulIeungU),
-            KOREAN_STANDARD_SYMBOL => Ok(EnclosedCJKLettersandMonths::KoreanStandardSymbol),
-            CIRCLED_IDEOGRAPH_ONE => Ok(EnclosedCJKLettersandMonths::CircledIdeographOne),
-            CIRCLED_IDEOGRAPH_TWO => Ok(EnclosedCJKLettersandMonths::CircledIdeographTwo),
-            CIRCLED_IDEOGRAPH_THREE => Ok(EnclosedCJKLettersandMonths::CircledIdeographThree),
-            CIRCLED_IDEOGRAPH_FOUR => Ok(EnclosedCJKLettersandMonths::CircledIdeographFour),
-            CIRCLED_IDEOGRAPH_FIVE => Ok(EnclosedCJKLettersandMonths::CircledIdeographFive),
-            CIRCLED_IDEOGRAPH_SIX => Ok(EnclosedCJKLettersandMonths::CircledIdeographSix),
-            CIRCLED_IDEOGRAPH_SEVEN => Ok(EnclosedCJKLettersandMonths::CircledIdeographSeven),
-            CIRCLED_IDEOGRAPH_EIGHT => Ok(EnclosedCJKLettersandMonths::CircledIdeographEight),
-            CIRCLED_IDEOGRAPH_NINE => Ok(EnclosedCJKLettersandMonths::CircledIdeographNine),
-            CIRCLED_IDEOGRAPH_TEN => Ok(EnclosedCJKLettersandMonths::CircledIdeographTen),
-            CIRCLED_IDEOGRAPH_MOON => Ok(EnclosedCJKLettersandMonths::CircledIdeographMoon),
-            CIRCLED_IDEOGRAPH_FIRE => Ok(EnclosedCJKLettersandMonths::CircledIdeographFire),
-            CIRCLED_IDEOGRAPH_WATER => Ok(EnclosedCJKLettersandMonths::CircledIdeographWater),
-            CIRCLED_IDEOGRAPH_WOOD => Ok(EnclosedCJKLettersandMonths::CircledIdeographWood),
-            CIRCLED_IDEOGRAPH_METAL => Ok(EnclosedCJKLettersandMonths::CircledIdeographMetal),
-            CIRCLED_IDEOGRAPH_EARTH => Ok(EnclosedCJKLettersandMonths::CircledIdeographEarth),
-            CIRCLED_IDEOGRAPH_SUN => Ok(EnclosedCJKLettersandMonths::CircledIdeographSun),
-            CIRCLED_IDEOGRAPH_STOCK => Ok(EnclosedCJKLettersandMonths::CircledIdeographStock),
-            CIRCLED_IDEOGRAPH_HAVE => Ok(EnclosedCJKLettersandMonths::CircledIdeographHave),
-            CIRCLED_IDEOGRAPH_SOCIETY => Ok(EnclosedCJKLettersandMonths::CircledIdeographSociety),
-            CIRCLED_IDEOGRAPH_NAME => Ok(EnclosedCJKLettersandMonths::CircledIdeographName),
-            CIRCLED_IDEOGRAPH_SPECIAL => Ok(EnclosedCJKLettersandMonths::CircledIdeographSpecial),
-            CIRCLED_IDEOGRAPH_FINANCIAL => Ok(EnclosedCJKLettersandMonths::CircledIdeographFinancial),
-            CIRCLED_IDEOGRAPH_CONGRATULATION => Ok(EnclosedCJKLettersandMonths::CircledIdeographCongratulation),
-            CIRCLED_IDEOGRAPH_LABOR => Ok(EnclosedCJKLettersandMonths::CircledIdeographLabor),
-            CIRCLED_IDEOGRAPH_SECRET => Ok(EnclosedCJKLettersandMonths::CircledIdeographSecret),
-            CIRCLED_IDEOGRAPH_MALE => Ok(EnclosedCJKLettersandMonths::CircledIdeographMale),
-            CIRCLED_IDEOGRAPH_FEMALE => Ok(EnclosedCJKLettersandMonths::CircledIdeographFemale),
-            CIRCLED_IDEOGRAPH_SUITABLE => Ok(EnclosedCJKLettersandMonths::CircledIdeographSuitable),
-            CIRCLED_IDEOGRAPH_EXCELLENT => Ok(EnclosedCJKLettersandMonths::CircledIdeographExcellent),
-            CIRCLED_IDEOGRAPH_PRINT => Ok(EnclosedCJKLettersandMonths::CircledIdeographPrint),
-            CIRCLED_IDEOGRAPH_ATTENTION => Ok(EnclosedCJKLettersandMonths::CircledIdeographAttention),
-            CIRCLED_IDEOGRAPH_ITEM => Ok(EnclosedCJKLettersandMonths::CircledIdeographItem),
-            CIRCLED_IDEOGRAPH_REST => Ok(EnclosedCJKLettersandMonths::CircledIdeographRest),
-            CIRCLED_IDEOGRAPH_COPY => Ok(EnclosedCJKLettersandMonths::CircledIdeographCopy),
-            CIRCLED_IDEOGRAPH_CORRECT => Ok(EnclosedCJKLettersandMonths::CircledIdeographCorrect),
-            CIRCLED_IDEOGRAPH_HIGH => Ok(EnclosedCJKLettersandMonths::CircledIdeographHigh),
-            CIRCLED_IDEOGRAPH_CENTRE => Ok(EnclosedCJKLettersandMonths::CircledIdeographCentre),
-            CIRCLED_IDEOGRAPH_LOW => Ok(EnclosedCJKLettersandMonths::CircledIdeographLow),
-            CIRCLED_IDEOGRAPH_LEFT => Ok(EnclosedCJKLettersandMonths::CircledIdeographLeft),
-            CIRCLED_IDEOGRAPH_RIGHT => Ok(EnclosedCJKLettersandMonths::CircledIdeographRight),
-            CIRCLED_IDEOGRAPH_MEDICINE => Ok(EnclosedCJKLettersandMonths::CircledIdeographMedicine),
-            CIRCLED_IDEOGRAPH_RELIGION => Ok(EnclosedCJKLettersandMonths::CircledIdeographReligion),
-            CIRCLED_IDEOGRAPH_STUDY => Ok(EnclosedCJKLettersandMonths::CircledIdeographStudy),
-            CIRCLED_IDEOGRAPH_SUPERVISE => Ok(EnclosedCJKLettersandMonths::CircledIdeographSupervise),
-            CIRCLED_IDEOGRAPH_ENTERPRISE => Ok(EnclosedCJKLettersandMonths::CircledIdeographEnterprise),
-            CIRCLED_IDEOGRAPH_RESOURCE => Ok(EnclosedCJKLettersandMonths::CircledIdeographResource),
-            CIRCLED_IDEOGRAPH_ALLIANCE => Ok(EnclosedCJKLettersandMonths::CircledIdeographAlliance),
-            CIRCLED_IDEOGRAPH_NIGHT => Ok(EnclosedCJKLettersandMonths::CircledIdeographNight),
-            CIRCLED_NUMBER_THIRTY_SIX => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtySix),
-            CIRCLED_NUMBER_THIRTY_SEVEN => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtySeven),
-            CIRCLED_NUMBER_THIRTY_EIGHT => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyEight),
-            CIRCLED_NUMBER_THIRTY_NINE => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyNine),
-            CIRCLED_NUMBER_FORTY => Ok(EnclosedCJKLettersandMonths::CircledNumberForty),
-            CIRCLED_NUMBER_FORTY_ONE => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyOne),
-            CIRCLED_NUMBER_FORTY_TWO => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyTwo),
-            CIRCLED_NUMBER_FORTY_THREE => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyThree),
-            CIRCLED_NUMBER_FORTY_FOUR => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyFour),
-            CIRCLED_NUMBER_FORTY_FIVE => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyFive),
-            CIRCLED_NUMBER_FORTY_SIX => Ok(EnclosedCJKLettersandMonths::CircledNumberFortySix),
-            CIRCLED_NUMBER_FORTY_SEVEN => Ok(EnclosedCJKLettersandMonths::CircledNumberFortySeven),
-            CIRCLED_NUMBER_FORTY_EIGHT => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyEight),
-            CIRCLED_NUMBER_FORTY_NINE => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyNine),
-            CIRCLED_NUMBER_FIFTY => Ok(EnclosedCJKLettersandMonths::CircledNumberFifty),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_JANUARY => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJanuary),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_FEBRUARY => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForFebruary),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_MARCH => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForMarch),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_APRIL => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForApril),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_MAY => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForMay),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_JUNE => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJune),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_JULY => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJuly),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_AUGUST => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForAugust),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_SEPTEMBER => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForSeptember),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_OCTOBER => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForOctober),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_NOVEMBER => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForNovember),
-            IDEOGRAPHIC_TELEGRAPH_SYMBOL_FOR_DECEMBER => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForDecember),
-            SQUARE_HG => Ok(EnclosedCJKLettersandMonths::SquareHg),
-            SQUARE_ERG => Ok(EnclosedCJKLettersandMonths::SquareErg),
-            SQUARE_EV => Ok(EnclosedCJKLettersandMonths::SquareEv),
-            LIMITED_LIABILITY_SIGN => Ok(EnclosedCJKLettersandMonths::LimitedLiabilitySign),
-            CIRCLED_KATAKANA_A => Ok(EnclosedCJKLettersandMonths::CircledKatakanaA),
-            CIRCLED_KATAKANA_I => Ok(EnclosedCJKLettersandMonths::CircledKatakanaI),
-            CIRCLED_KATAKANA_U => Ok(EnclosedCJKLettersandMonths::CircledKatakanaU),
-            CIRCLED_KATAKANA_E => Ok(EnclosedCJKLettersandMonths::CircledKatakanaE),
-            CIRCLED_KATAKANA_O => Ok(EnclosedCJKLettersandMonths::CircledKatakanaO),
-            CIRCLED_KATAKANA_KA => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKa),
-            CIRCLED_KATAKANA_KI => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKi),
-            CIRCLED_KATAKANA_KU => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKu),
-            CIRCLED_KATAKANA_KE => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKe),
-            CIRCLED_KATAKANA_KO => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKo),
-            CIRCLED_KATAKANA_SA => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSa),
-            CIRCLED_KATAKANA_SI => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSi),
-            CIRCLED_KATAKANA_SU => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSu),
-            CIRCLED_KATAKANA_SE => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSe),
-            CIRCLED_KATAKANA_SO => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSo),
-            CIRCLED_KATAKANA_TA => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTa),
-            CIRCLED_KATAKANA_TI => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTi),
-            CIRCLED_KATAKANA_TU => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTu),
-            CIRCLED_KATAKANA_TE => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTe),
-            CIRCLED_KATAKANA_TO => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTo),
-            CIRCLED_KATAKANA_NA => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNa),
-            CIRCLED_KATAKANA_NI => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNi),
-            CIRCLED_KATAKANA_NU => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNu),
-            CIRCLED_KATAKANA_NE => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNe),
-            CIRCLED_KATAKANA_NO => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNo),
-            CIRCLED_KATAKANA_HA => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHa),
-            CIRCLED_KATAKANA_HI => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHi),
-            CIRCLED_KATAKANA_HU => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHu),
-            CIRCLED_KATAKANA_HE => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHe),
-            CIRCLED_KATAKANA_HO => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHo),
-            CIRCLED_KATAKANA_MA => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMa),
-            CIRCLED_KATAKANA_MI => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMi),
-            CIRCLED_KATAKANA_MU => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMu),
-            CIRCLED_KATAKANA_ME => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMe),
-            CIRCLED_KATAKANA_MO => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMo),
-            CIRCLED_KATAKANA_YA => Ok(EnclosedCJKLettersandMonths::CircledKatakanaYa),
-            CIRCLED_KATAKANA_YU => Ok(EnclosedCJKLettersandMonths::CircledKatakanaYu),
-            CIRCLED_KATAKANA_YO => Ok(EnclosedCJKLettersandMonths::CircledKatakanaYo),
-            CIRCLED_KATAKANA_RA => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRa),
-            CIRCLED_KATAKANA_RI => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRi),
-            CIRCLED_KATAKANA_RU => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRu),
-            CIRCLED_KATAKANA_RE => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRe),
-            CIRCLED_KATAKANA_RO => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRo),
-            CIRCLED_KATAKANA_WA => Ok(EnclosedCJKLettersandMonths::CircledKatakanaWa),
-            CIRCLED_KATAKANA_WI => Ok(EnclosedCJKLettersandMonths::CircledKatakanaWi),
-            CIRCLED_KATAKANA_WE => Ok(EnclosedCJKLettersandMonths::CircledKatakanaWe),
-            CIRCLED_KATAKANA_WO => Ok(EnclosedCJKLettersandMonths::CircledKatakanaWo),
+            '㈀' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulKiyeok),
+            '㈁' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulNieun),
+            '㈂' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulTikeut),
+            '㈃' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulRieul),
+            '㈄' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulMieum),
+            '㈅' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulPieup),
+            '㈆' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulSios),
+            '㈇' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulIeung),
+            '㈈' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulCieuc),
+            '㈉' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulChieuch),
+            '㈊' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulKhieukh),
+            '㈋' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulThieuth),
+            '㈌' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulPhieuph),
+            '㈍' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulHieuh),
+            '㈎' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulKiyeokA),
+            '㈏' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulNieunA),
+            '㈐' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulTikeutA),
+            '㈑' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulRieulA),
+            '㈒' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulMieumA),
+            '㈓' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulPieupA),
+            '㈔' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulSiosA),
+            '㈕' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulIeungA),
+            '㈖' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulCieucA),
+            '㈗' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulChieuchA),
+            '㈘' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulKhieukhA),
+            '㈙' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulThieuthA),
+            '㈚' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulPhieuphA),
+            '㈛' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulHieuhA),
+            '㈜' => Ok(EnclosedCJKLettersandMonths::ParenthesizedHangulCieucU),
+            '㈝' => Ok(EnclosedCJKLettersandMonths::ParenthesizedKoreanCharacterOjeon),
+            '㈞' => Ok(EnclosedCJKLettersandMonths::ParenthesizedKoreanCharacterOHu),
+            '㈠' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographOne),
+            '㈡' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographTwo),
+            '㈢' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographThree),
+            '㈣' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFour),
+            '㈤' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFive),
+            '㈥' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSix),
+            '㈦' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSeven),
+            '㈧' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographEight),
+            '㈨' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographNine),
+            '㈩' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographTen),
+            '㈪' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographMoon),
+            '㈫' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFire),
+            '㈬' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographWater),
+            '㈭' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographWood),
+            '㈮' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographMetal),
+            '㈯' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographEarth),
+            '㈰' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSun),
+            '㈱' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographStock),
+            '㈲' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographHave),
+            '㈳' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSociety),
+            '㈴' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographName),
+            '㈵' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSpecial),
+            '㈶' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFinancial),
+            '㈷' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographCongratulation),
+            '㈸' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographLabor),
+            '㈹' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographRepresent),
+            '㈺' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographCall),
+            '㈻' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographStudy),
+            '㈼' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSupervise),
+            '㈽' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographEnterprise),
+            '㈾' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographResource),
+            '㈿' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographAlliance),
+            '㉀' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographFestival),
+            '㉁' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographRest),
+            '㉂' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographSelf),
+            '㉃' => Ok(EnclosedCJKLettersandMonths::ParenthesizedIdeographReach),
+            '㉄' => Ok(EnclosedCJKLettersandMonths::CircledIdeographQuestion),
+            '㉅' => Ok(EnclosedCJKLettersandMonths::CircledIdeographKindergarten),
+            '㉆' => Ok(EnclosedCJKLettersandMonths::CircledIdeographSchool),
+            '㉇' => Ok(EnclosedCJKLettersandMonths::CircledIdeographKoto),
+            '㉈' => Ok(EnclosedCJKLettersandMonths::CircledNumberTenOnBlackSquare),
+            '㉉' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyOnBlackSquare),
+            '㉊' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyOnBlackSquare),
+            '㉋' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyOnBlackSquare),
+            '㉌' => Ok(EnclosedCJKLettersandMonths::CircledNumberFiftyOnBlackSquare),
+            '㉍' => Ok(EnclosedCJKLettersandMonths::CircledNumberSixtyOnBlackSquare),
+            '㉎' => Ok(EnclosedCJKLettersandMonths::CircledNumberSeventyOnBlackSquare),
+            '㉏' => Ok(EnclosedCJKLettersandMonths::CircledNumberEightyOnBlackSquare),
+            '㉐' => Ok(EnclosedCJKLettersandMonths::PartnershipSign),
+            '㉑' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyOne),
+            '㉒' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyTwo),
+            '㉓' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyThree),
+            '㉔' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyFour),
+            '㉕' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyFive),
+            '㉖' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentySix),
+            '㉗' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentySeven),
+            '㉘' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyEight),
+            '㉙' => Ok(EnclosedCJKLettersandMonths::CircledNumberTwentyNine),
+            '㉚' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirty),
+            '㉛' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyOne),
+            '㉜' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyTwo),
+            '㉝' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyThree),
+            '㉞' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyFour),
+            '㉟' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyFive),
+            '㉠' => Ok(EnclosedCJKLettersandMonths::CircledHangulKiyeok),
+            '㉡' => Ok(EnclosedCJKLettersandMonths::CircledHangulNieun),
+            '㉢' => Ok(EnclosedCJKLettersandMonths::CircledHangulTikeut),
+            '㉣' => Ok(EnclosedCJKLettersandMonths::CircledHangulRieul),
+            '㉤' => Ok(EnclosedCJKLettersandMonths::CircledHangulMieum),
+            '㉥' => Ok(EnclosedCJKLettersandMonths::CircledHangulPieup),
+            '㉦' => Ok(EnclosedCJKLettersandMonths::CircledHangulSios),
+            '㉧' => Ok(EnclosedCJKLettersandMonths::CircledHangulIeung),
+            '㉨' => Ok(EnclosedCJKLettersandMonths::CircledHangulCieuc),
+            '㉩' => Ok(EnclosedCJKLettersandMonths::CircledHangulChieuch),
+            '㉪' => Ok(EnclosedCJKLettersandMonths::CircledHangulKhieukh),
+            '㉫' => Ok(EnclosedCJKLettersandMonths::CircledHangulThieuth),
+            '㉬' => Ok(EnclosedCJKLettersandMonths::CircledHangulPhieuph),
+            '㉭' => Ok(EnclosedCJKLettersandMonths::CircledHangulHieuh),
+            '㉮' => Ok(EnclosedCJKLettersandMonths::CircledHangulKiyeokA),
+            '㉯' => Ok(EnclosedCJKLettersandMonths::CircledHangulNieunA),
+            '㉰' => Ok(EnclosedCJKLettersandMonths::CircledHangulTikeutA),
+            '㉱' => Ok(EnclosedCJKLettersandMonths::CircledHangulRieulA),
+            '㉲' => Ok(EnclosedCJKLettersandMonths::CircledHangulMieumA),
+            '㉳' => Ok(EnclosedCJKLettersandMonths::CircledHangulPieupA),
+            '㉴' => Ok(EnclosedCJKLettersandMonths::CircledHangulSiosA),
+            '㉵' => Ok(EnclosedCJKLettersandMonths::CircledHangulIeungA),
+            '㉶' => Ok(EnclosedCJKLettersandMonths::CircledHangulCieucA),
+            '㉷' => Ok(EnclosedCJKLettersandMonths::CircledHangulChieuchA),
+            '㉸' => Ok(EnclosedCJKLettersandMonths::CircledHangulKhieukhA),
+            '㉹' => Ok(EnclosedCJKLettersandMonths::CircledHangulThieuthA),
+            '㉺' => Ok(EnclosedCJKLettersandMonths::CircledHangulPhieuphA),
+            '㉻' => Ok(EnclosedCJKLettersandMonths::CircledHangulHieuhA),
+            '㉼' => Ok(EnclosedCJKLettersandMonths::CircledKoreanCharacterChamko),
+            '㉽' => Ok(EnclosedCJKLettersandMonths::CircledKoreanCharacterJueui),
+            '㉾' => Ok(EnclosedCJKLettersandMonths::CircledHangulIeungU),
+            '㉿' => Ok(EnclosedCJKLettersandMonths::KoreanStandardSymbol),
+            '㊀' => Ok(EnclosedCJKLettersandMonths::CircledIdeographOne),
+            '㊁' => Ok(EnclosedCJKLettersandMonths::CircledIdeographTwo),
+            '㊂' => Ok(EnclosedCJKLettersandMonths::CircledIdeographThree),
+            '㊃' => Ok(EnclosedCJKLettersandMonths::CircledIdeographFour),
+            '㊄' => Ok(EnclosedCJKLettersandMonths::CircledIdeographFive),
+            '㊅' => Ok(EnclosedCJKLettersandMonths::CircledIdeographSix),
+            '㊆' => Ok(EnclosedCJKLettersandMonths::CircledIdeographSeven),
+            '㊇' => Ok(EnclosedCJKLettersandMonths::CircledIdeographEight),
+            '㊈' => Ok(EnclosedCJKLettersandMonths::CircledIdeographNine),
+            '㊉' => Ok(EnclosedCJKLettersandMonths::CircledIdeographTen),
+            '㊊' => Ok(EnclosedCJKLettersandMonths::CircledIdeographMoon),
+            '㊋' => Ok(EnclosedCJKLettersandMonths::CircledIdeographFire),
+            '㊌' => Ok(EnclosedCJKLettersandMonths::CircledIdeographWater),
+            '㊍' => Ok(EnclosedCJKLettersandMonths::CircledIdeographWood),
+            '㊎' => Ok(EnclosedCJKLettersandMonths::CircledIdeographMetal),
+            '㊏' => Ok(EnclosedCJKLettersandMonths::CircledIdeographEarth),
+            '㊐' => Ok(EnclosedCJKLettersandMonths::CircledIdeographSun),
+            '㊑' => Ok(EnclosedCJKLettersandMonths::CircledIdeographStock),
+            '㊒' => Ok(EnclosedCJKLettersandMonths::CircledIdeographHave),
+            '㊓' => Ok(EnclosedCJKLettersandMonths::CircledIdeographSociety),
+            '㊔' => Ok(EnclosedCJKLettersandMonths::CircledIdeographName),
+            '㊕' => Ok(EnclosedCJKLettersandMonths::CircledIdeographSpecial),
+            '㊖' => Ok(EnclosedCJKLettersandMonths::CircledIdeographFinancial),
+            '㊗' => Ok(EnclosedCJKLettersandMonths::CircledIdeographCongratulation),
+            '㊘' => Ok(EnclosedCJKLettersandMonths::CircledIdeographLabor),
+            '㊙' => Ok(EnclosedCJKLettersandMonths::CircledIdeographSecret),
+            '㊚' => Ok(EnclosedCJKLettersandMonths::CircledIdeographMale),
+            '㊛' => Ok(EnclosedCJKLettersandMonths::CircledIdeographFemale),
+            '㊜' => Ok(EnclosedCJKLettersandMonths::CircledIdeographSuitable),
+            '㊝' => Ok(EnclosedCJKLettersandMonths::CircledIdeographExcellent),
+            '㊞' => Ok(EnclosedCJKLettersandMonths::CircledIdeographPrint),
+            '㊟' => Ok(EnclosedCJKLettersandMonths::CircledIdeographAttention),
+            '㊠' => Ok(EnclosedCJKLettersandMonths::CircledIdeographItem),
+            '㊡' => Ok(EnclosedCJKLettersandMonths::CircledIdeographRest),
+            '㊢' => Ok(EnclosedCJKLettersandMonths::CircledIdeographCopy),
+            '㊣' => Ok(EnclosedCJKLettersandMonths::CircledIdeographCorrect),
+            '㊤' => Ok(EnclosedCJKLettersandMonths::CircledIdeographHigh),
+            '㊥' => Ok(EnclosedCJKLettersandMonths::CircledIdeographCentre),
+            '㊦' => Ok(EnclosedCJKLettersandMonths::CircledIdeographLow),
+            '㊧' => Ok(EnclosedCJKLettersandMonths::CircledIdeographLeft),
+            '㊨' => Ok(EnclosedCJKLettersandMonths::CircledIdeographRight),
+            '㊩' => Ok(EnclosedCJKLettersandMonths::CircledIdeographMedicine),
+            '㊪' => Ok(EnclosedCJKLettersandMonths::CircledIdeographReligion),
+            '㊫' => Ok(EnclosedCJKLettersandMonths::CircledIdeographStudy),
+            '㊬' => Ok(EnclosedCJKLettersandMonths::CircledIdeographSupervise),
+            '㊭' => Ok(EnclosedCJKLettersandMonths::CircledIdeographEnterprise),
+            '㊮' => Ok(EnclosedCJKLettersandMonths::CircledIdeographResource),
+            '㊯' => Ok(EnclosedCJKLettersandMonths::CircledIdeographAlliance),
+            '㊰' => Ok(EnclosedCJKLettersandMonths::CircledIdeographNight),
+            '㊱' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtySix),
+            '㊲' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtySeven),
+            '㊳' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyEight),
+            '㊴' => Ok(EnclosedCJKLettersandMonths::CircledNumberThirtyNine),
+            '㊵' => Ok(EnclosedCJKLettersandMonths::CircledNumberForty),
+            '㊶' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyOne),
+            '㊷' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyTwo),
+            '㊸' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyThree),
+            '㊹' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyFour),
+            '㊺' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyFive),
+            '㊻' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortySix),
+            '㊼' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortySeven),
+            '㊽' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyEight),
+            '㊾' => Ok(EnclosedCJKLettersandMonths::CircledNumberFortyNine),
+            '㊿' => Ok(EnclosedCJKLettersandMonths::CircledNumberFifty),
+            '㋀' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJanuary),
+            '㋁' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForFebruary),
+            '㋂' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForMarch),
+            '㋃' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForApril),
+            '㋄' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForMay),
+            '㋅' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJune),
+            '㋆' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForJuly),
+            '㋇' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForAugust),
+            '㋈' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForSeptember),
+            '㋉' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForOctober),
+            '㋊' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForNovember),
+            '㋋' => Ok(EnclosedCJKLettersandMonths::IdeographicTelegraphSymbolForDecember),
+            '㋌' => Ok(EnclosedCJKLettersandMonths::SquareHg),
+            '㋍' => Ok(EnclosedCJKLettersandMonths::SquareErg),
+            '㋎' => Ok(EnclosedCJKLettersandMonths::SquareEv),
+            '㋏' => Ok(EnclosedCJKLettersandMonths::LimitedLiabilitySign),
+            '㋐' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaA),
+            '㋑' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaI),
+            '㋒' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaU),
+            '㋓' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaE),
+            '㋔' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaO),
+            '㋕' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKa),
+            '㋖' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKi),
+            '㋗' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKu),
+            '㋘' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKe),
+            '㋙' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaKo),
+            '㋚' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSa),
+            '㋛' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSi),
+            '㋜' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSu),
+            '㋝' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSe),
+            '㋞' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaSo),
+            '㋟' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTa),
+            '㋠' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTi),
+            '㋡' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTu),
+            '㋢' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTe),
+            '㋣' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaTo),
+            '㋤' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNa),
+            '㋥' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNi),
+            '㋦' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNu),
+            '㋧' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNe),
+            '㋨' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaNo),
+            '㋩' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHa),
+            '㋪' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHi),
+            '㋫' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHu),
+            '㋬' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHe),
+            '㋭' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaHo),
+            '㋮' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMa),
+            '㋯' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMi),
+            '㋰' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMu),
+            '㋱' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMe),
+            '㋲' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaMo),
+            '㋳' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaYa),
+            '㋴' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaYu),
+            '㋵' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaYo),
+            '㋶' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRa),
+            '㋷' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRi),
+            '㋸' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRu),
+            '㋹' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRe),
+            '㋺' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaRo),
+            '㋻' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaWa),
+            '㋼' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaWi),
+            '㋽' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaWe),
+            '㋾' => Ok(EnclosedCJKLettersandMonths::CircledKatakanaWo),
             _ => Err(()),
         }
     }

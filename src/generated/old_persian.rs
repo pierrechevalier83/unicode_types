@@ -1,106 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{103a0}: '𐎠'
-    pub const SIGN_A: char = '𐎠';
-    /// \u{103a1}: '𐎡'
-    pub const SIGN_I: char = '𐎡';
-    /// \u{103a2}: '𐎢'
-    pub const SIGN_U: char = '𐎢';
-    /// \u{103a3}: '𐎣'
-    pub const SIGN_KA: char = '𐎣';
-    /// \u{103a4}: '𐎤'
-    pub const SIGN_KU: char = '𐎤';
-    /// \u{103a5}: '𐎥'
-    pub const SIGN_GA: char = '𐎥';
-    /// \u{103a6}: '𐎦'
-    pub const SIGN_GU: char = '𐎦';
-    /// \u{103a7}: '𐎧'
-    pub const SIGN_XA: char = '𐎧';
-    /// \u{103a8}: '𐎨'
-    pub const SIGN_CA: char = '𐎨';
-    /// \u{103a9}: '𐎩'
-    pub const SIGN_JA: char = '𐎩';
-    /// \u{103aa}: '𐎪'
-    pub const SIGN_JI: char = '𐎪';
-    /// \u{103ab}: '𐎫'
-    pub const SIGN_TA: char = '𐎫';
-    /// \u{103ac}: '𐎬'
-    pub const SIGN_TU: char = '𐎬';
-    /// \u{103ad}: '𐎭'
-    pub const SIGN_DA: char = '𐎭';
-    /// \u{103ae}: '𐎮'
-    pub const SIGN_DI: char = '𐎮';
-    /// \u{103af}: '𐎯'
-    pub const SIGN_DU: char = '𐎯';
-    /// \u{103b0}: '𐎰'
-    pub const SIGN_THA: char = '𐎰';
-    /// \u{103b1}: '𐎱'
-    pub const SIGN_PA: char = '𐎱';
-    /// \u{103b2}: '𐎲'
-    pub const SIGN_BA: char = '𐎲';
-    /// \u{103b3}: '𐎳'
-    pub const SIGN_FA: char = '𐎳';
-    /// \u{103b4}: '𐎴'
-    pub const SIGN_NA: char = '𐎴';
-    /// \u{103b5}: '𐎵'
-    pub const SIGN_NU: char = '𐎵';
-    /// \u{103b6}: '𐎶'
-    pub const SIGN_MA: char = '𐎶';
-    /// \u{103b7}: '𐎷'
-    pub const SIGN_MI: char = '𐎷';
-    /// \u{103b8}: '𐎸'
-    pub const SIGN_MU: char = '𐎸';
-    /// \u{103b9}: '𐎹'
-    pub const SIGN_YA: char = '𐎹';
-    /// \u{103ba}: '𐎺'
-    pub const SIGN_VA: char = '𐎺';
-    /// \u{103bb}: '𐎻'
-    pub const SIGN_VI: char = '𐎻';
-    /// \u{103bc}: '𐎼'
-    pub const SIGN_RA: char = '𐎼';
-    /// \u{103bd}: '𐎽'
-    pub const SIGN_RU: char = '𐎽';
-    /// \u{103be}: '𐎾'
-    pub const SIGN_LA: char = '𐎾';
-    /// \u{103bf}: '𐎿'
-    pub const SIGN_SA: char = '𐎿';
-    /// \u{103c0}: '𐏀'
-    pub const SIGN_ZA: char = '𐏀';
-    /// \u{103c1}: '𐏁'
-    pub const SIGN_SHA: char = '𐏁';
-    /// \u{103c2}: '𐏂'
-    pub const SIGN_SSA: char = '𐏂';
-    /// \u{103c3}: '𐏃'
-    pub const SIGN_HA: char = '𐏃';
-    /// \u{103c8}: '𐏈'
-    pub const SIGN_AURAMAZDAA: char = '𐏈';
-    /// \u{103c9}: '𐏉'
-    pub const SIGN_AURAMAZDAA_DASH_2: char = '𐏉';
-    /// \u{103ca}: '𐏊'
-    pub const SIGN_AURAMAZDAAHA: char = '𐏊';
-    /// \u{103cb}: '𐏋'
-    pub const SIGN_XSHAAYATHIYA: char = '𐏋';
-    /// \u{103cc}: '𐏌'
-    pub const SIGN_DAHYAAUSH: char = '𐏌';
-    /// \u{103cd}: '𐏍'
-    pub const SIGN_DAHYAAUSH_DASH_2: char = '𐏍';
-    /// \u{103ce}: '𐏎'
-    pub const SIGN_BAGA: char = '𐏎';
-    /// \u{103cf}: '𐏏'
-    pub const SIGN_BUUMISH: char = '𐏏';
-    /// \u{103d0}: '𐏐'
-    pub const WORD_DIVIDER: char = '𐏐';
-    /// \u{103d1}: '𐏑'
-    pub const NUMBER_ONE: char = '𐏑';
-    /// \u{103d2}: '𐏒'
-    pub const NUMBER_TWO: char = '𐏒';
-    /// \u{103d3}: '𐏓'
-    pub const NUMBER_TEN: char = '𐏓';
-    /// \u{103d4}: '𐏔'
-    pub const NUMBER_TWENTY: char = '𐏔';
-    /// \u{103d5}: '𐏕'
-    pub const NUMBER_HUNDRED: char = '𐏕';
-}
 
 /// An enum to represent all characters in the OldPersian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -209,58 +106,57 @@ pub enum OldPersian {
 
 impl Into<char> for OldPersian {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            OldPersian::SignA => SIGN_A,
-            OldPersian::SignI => SIGN_I,
-            OldPersian::SignU => SIGN_U,
-            OldPersian::SignKa => SIGN_KA,
-            OldPersian::SignKu => SIGN_KU,
-            OldPersian::SignGa => SIGN_GA,
-            OldPersian::SignGu => SIGN_GU,
-            OldPersian::SignXa => SIGN_XA,
-            OldPersian::SignCa => SIGN_CA,
-            OldPersian::SignJa => SIGN_JA,
-            OldPersian::SignJi => SIGN_JI,
-            OldPersian::SignTa => SIGN_TA,
-            OldPersian::SignTu => SIGN_TU,
-            OldPersian::SignDa => SIGN_DA,
-            OldPersian::SignDi => SIGN_DI,
-            OldPersian::SignDu => SIGN_DU,
-            OldPersian::SignTha => SIGN_THA,
-            OldPersian::SignPa => SIGN_PA,
-            OldPersian::SignBa => SIGN_BA,
-            OldPersian::SignFa => SIGN_FA,
-            OldPersian::SignNa => SIGN_NA,
-            OldPersian::SignNu => SIGN_NU,
-            OldPersian::SignMa => SIGN_MA,
-            OldPersian::SignMi => SIGN_MI,
-            OldPersian::SignMu => SIGN_MU,
-            OldPersian::SignYa => SIGN_YA,
-            OldPersian::SignVa => SIGN_VA,
-            OldPersian::SignVi => SIGN_VI,
-            OldPersian::SignRa => SIGN_RA,
-            OldPersian::SignRu => SIGN_RU,
-            OldPersian::SignLa => SIGN_LA,
-            OldPersian::SignSa => SIGN_SA,
-            OldPersian::SignZa => SIGN_ZA,
-            OldPersian::SignSha => SIGN_SHA,
-            OldPersian::SignSsa => SIGN_SSA,
-            OldPersian::SignHa => SIGN_HA,
-            OldPersian::SignAuramazdaa => SIGN_AURAMAZDAA,
-            OldPersian::SignAuramazdaaDash2 => SIGN_AURAMAZDAA_DASH_2,
-            OldPersian::SignAuramazdaaha => SIGN_AURAMAZDAAHA,
-            OldPersian::SignXshaayathiya => SIGN_XSHAAYATHIYA,
-            OldPersian::SignDahyaaush => SIGN_DAHYAAUSH,
-            OldPersian::SignDahyaaushDash2 => SIGN_DAHYAAUSH_DASH_2,
-            OldPersian::SignBaga => SIGN_BAGA,
-            OldPersian::SignBuumish => SIGN_BUUMISH,
-            OldPersian::WordDivider => WORD_DIVIDER,
-            OldPersian::NumberOne => NUMBER_ONE,
-            OldPersian::NumberTwo => NUMBER_TWO,
-            OldPersian::NumberTen => NUMBER_TEN,
-            OldPersian::NumberTwenty => NUMBER_TWENTY,
-            OldPersian::NumberHundred => NUMBER_HUNDRED,
+            OldPersian::SignA => '𐎠',
+            OldPersian::SignI => '𐎡',
+            OldPersian::SignU => '𐎢',
+            OldPersian::SignKa => '𐎣',
+            OldPersian::SignKu => '𐎤',
+            OldPersian::SignGa => '𐎥',
+            OldPersian::SignGu => '𐎦',
+            OldPersian::SignXa => '𐎧',
+            OldPersian::SignCa => '𐎨',
+            OldPersian::SignJa => '𐎩',
+            OldPersian::SignJi => '𐎪',
+            OldPersian::SignTa => '𐎫',
+            OldPersian::SignTu => '𐎬',
+            OldPersian::SignDa => '𐎭',
+            OldPersian::SignDi => '𐎮',
+            OldPersian::SignDu => '𐎯',
+            OldPersian::SignTha => '𐎰',
+            OldPersian::SignPa => '𐎱',
+            OldPersian::SignBa => '𐎲',
+            OldPersian::SignFa => '𐎳',
+            OldPersian::SignNa => '𐎴',
+            OldPersian::SignNu => '𐎵',
+            OldPersian::SignMa => '𐎶',
+            OldPersian::SignMi => '𐎷',
+            OldPersian::SignMu => '𐎸',
+            OldPersian::SignYa => '𐎹',
+            OldPersian::SignVa => '𐎺',
+            OldPersian::SignVi => '𐎻',
+            OldPersian::SignRa => '𐎼',
+            OldPersian::SignRu => '𐎽',
+            OldPersian::SignLa => '𐎾',
+            OldPersian::SignSa => '𐎿',
+            OldPersian::SignZa => '𐏀',
+            OldPersian::SignSha => '𐏁',
+            OldPersian::SignSsa => '𐏂',
+            OldPersian::SignHa => '𐏃',
+            OldPersian::SignAuramazdaa => '𐏈',
+            OldPersian::SignAuramazdaaDash2 => '𐏉',
+            OldPersian::SignAuramazdaaha => '𐏊',
+            OldPersian::SignXshaayathiya => '𐏋',
+            OldPersian::SignDahyaaush => '𐏌',
+            OldPersian::SignDahyaaushDash2 => '𐏍',
+            OldPersian::SignBaga => '𐏎',
+            OldPersian::SignBuumish => '𐏏',
+            OldPersian::WordDivider => '𐏐',
+            OldPersian::NumberOne => '𐏑',
+            OldPersian::NumberTwo => '𐏒',
+            OldPersian::NumberTen => '𐏓',
+            OldPersian::NumberTwenty => '𐏔',
+            OldPersian::NumberHundred => '𐏕',
         }
     }
 }
@@ -268,58 +164,57 @@ impl Into<char> for OldPersian {
 impl std::convert::TryFrom<char> for OldPersian {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_A => Ok(OldPersian::SignA),
-            SIGN_I => Ok(OldPersian::SignI),
-            SIGN_U => Ok(OldPersian::SignU),
-            SIGN_KA => Ok(OldPersian::SignKa),
-            SIGN_KU => Ok(OldPersian::SignKu),
-            SIGN_GA => Ok(OldPersian::SignGa),
-            SIGN_GU => Ok(OldPersian::SignGu),
-            SIGN_XA => Ok(OldPersian::SignXa),
-            SIGN_CA => Ok(OldPersian::SignCa),
-            SIGN_JA => Ok(OldPersian::SignJa),
-            SIGN_JI => Ok(OldPersian::SignJi),
-            SIGN_TA => Ok(OldPersian::SignTa),
-            SIGN_TU => Ok(OldPersian::SignTu),
-            SIGN_DA => Ok(OldPersian::SignDa),
-            SIGN_DI => Ok(OldPersian::SignDi),
-            SIGN_DU => Ok(OldPersian::SignDu),
-            SIGN_THA => Ok(OldPersian::SignTha),
-            SIGN_PA => Ok(OldPersian::SignPa),
-            SIGN_BA => Ok(OldPersian::SignBa),
-            SIGN_FA => Ok(OldPersian::SignFa),
-            SIGN_NA => Ok(OldPersian::SignNa),
-            SIGN_NU => Ok(OldPersian::SignNu),
-            SIGN_MA => Ok(OldPersian::SignMa),
-            SIGN_MI => Ok(OldPersian::SignMi),
-            SIGN_MU => Ok(OldPersian::SignMu),
-            SIGN_YA => Ok(OldPersian::SignYa),
-            SIGN_VA => Ok(OldPersian::SignVa),
-            SIGN_VI => Ok(OldPersian::SignVi),
-            SIGN_RA => Ok(OldPersian::SignRa),
-            SIGN_RU => Ok(OldPersian::SignRu),
-            SIGN_LA => Ok(OldPersian::SignLa),
-            SIGN_SA => Ok(OldPersian::SignSa),
-            SIGN_ZA => Ok(OldPersian::SignZa),
-            SIGN_SHA => Ok(OldPersian::SignSha),
-            SIGN_SSA => Ok(OldPersian::SignSsa),
-            SIGN_HA => Ok(OldPersian::SignHa),
-            SIGN_AURAMAZDAA => Ok(OldPersian::SignAuramazdaa),
-            SIGN_AURAMAZDAA_DASH_2 => Ok(OldPersian::SignAuramazdaaDash2),
-            SIGN_AURAMAZDAAHA => Ok(OldPersian::SignAuramazdaaha),
-            SIGN_XSHAAYATHIYA => Ok(OldPersian::SignXshaayathiya),
-            SIGN_DAHYAAUSH => Ok(OldPersian::SignDahyaaush),
-            SIGN_DAHYAAUSH_DASH_2 => Ok(OldPersian::SignDahyaaushDash2),
-            SIGN_BAGA => Ok(OldPersian::SignBaga),
-            SIGN_BUUMISH => Ok(OldPersian::SignBuumish),
-            WORD_DIVIDER => Ok(OldPersian::WordDivider),
-            NUMBER_ONE => Ok(OldPersian::NumberOne),
-            NUMBER_TWO => Ok(OldPersian::NumberTwo),
-            NUMBER_TEN => Ok(OldPersian::NumberTen),
-            NUMBER_TWENTY => Ok(OldPersian::NumberTwenty),
-            NUMBER_HUNDRED => Ok(OldPersian::NumberHundred),
+            '𐎠' => Ok(OldPersian::SignA),
+            '𐎡' => Ok(OldPersian::SignI),
+            '𐎢' => Ok(OldPersian::SignU),
+            '𐎣' => Ok(OldPersian::SignKa),
+            '𐎤' => Ok(OldPersian::SignKu),
+            '𐎥' => Ok(OldPersian::SignGa),
+            '𐎦' => Ok(OldPersian::SignGu),
+            '𐎧' => Ok(OldPersian::SignXa),
+            '𐎨' => Ok(OldPersian::SignCa),
+            '𐎩' => Ok(OldPersian::SignJa),
+            '𐎪' => Ok(OldPersian::SignJi),
+            '𐎫' => Ok(OldPersian::SignTa),
+            '𐎬' => Ok(OldPersian::SignTu),
+            '𐎭' => Ok(OldPersian::SignDa),
+            '𐎮' => Ok(OldPersian::SignDi),
+            '𐎯' => Ok(OldPersian::SignDu),
+            '𐎰' => Ok(OldPersian::SignTha),
+            '𐎱' => Ok(OldPersian::SignPa),
+            '𐎲' => Ok(OldPersian::SignBa),
+            '𐎳' => Ok(OldPersian::SignFa),
+            '𐎴' => Ok(OldPersian::SignNa),
+            '𐎵' => Ok(OldPersian::SignNu),
+            '𐎶' => Ok(OldPersian::SignMa),
+            '𐎷' => Ok(OldPersian::SignMi),
+            '𐎸' => Ok(OldPersian::SignMu),
+            '𐎹' => Ok(OldPersian::SignYa),
+            '𐎺' => Ok(OldPersian::SignVa),
+            '𐎻' => Ok(OldPersian::SignVi),
+            '𐎼' => Ok(OldPersian::SignRa),
+            '𐎽' => Ok(OldPersian::SignRu),
+            '𐎾' => Ok(OldPersian::SignLa),
+            '𐎿' => Ok(OldPersian::SignSa),
+            '𐏀' => Ok(OldPersian::SignZa),
+            '𐏁' => Ok(OldPersian::SignSha),
+            '𐏂' => Ok(OldPersian::SignSsa),
+            '𐏃' => Ok(OldPersian::SignHa),
+            '𐏈' => Ok(OldPersian::SignAuramazdaa),
+            '𐏉' => Ok(OldPersian::SignAuramazdaaDash2),
+            '𐏊' => Ok(OldPersian::SignAuramazdaaha),
+            '𐏋' => Ok(OldPersian::SignXshaayathiya),
+            '𐏌' => Ok(OldPersian::SignDahyaaush),
+            '𐏍' => Ok(OldPersian::SignDahyaaushDash2),
+            '𐏎' => Ok(OldPersian::SignBaga),
+            '𐏏' => Ok(OldPersian::SignBuumish),
+            '𐏐' => Ok(OldPersian::WordDivider),
+            '𐏑' => Ok(OldPersian::NumberOne),
+            '𐏒' => Ok(OldPersian::NumberTwo),
+            '𐏓' => Ok(OldPersian::NumberTen),
+            '𐏔' => Ok(OldPersian::NumberTwenty),
+            '𐏕' => Ok(OldPersian::NumberHundred),
             _ => Err(()),
         }
     }

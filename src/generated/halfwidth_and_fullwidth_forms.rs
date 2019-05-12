@@ -1,456 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{ff01}: '！'
-    pub const FULLWIDTH_EXCLAMATION_MARK: char = '！';
-    /// \u{ff02}: '＂'
-    pub const FULLWIDTH_QUOTATION_MARK: char = '＂';
-    /// \u{ff03}: '＃'
-    pub const FULLWIDTH_NUMBER_SIGN: char = '＃';
-    /// \u{ff04}: '＄'
-    pub const FULLWIDTH_DOLLAR_SIGN: char = '＄';
-    /// \u{ff05}: '％'
-    pub const FULLWIDTH_PERCENT_SIGN: char = '％';
-    /// \u{ff06}: '＆'
-    pub const FULLWIDTH_AMPERSAND: char = '＆';
-    /// \u{ff07}: '＇'
-    pub const FULLWIDTH_APOSTROPHE: char = '＇';
-    /// \u{ff08}: '（'
-    pub const FULLWIDTH_LEFT_PARENTHESIS: char = '（';
-    /// \u{ff09}: '）'
-    pub const FULLWIDTH_RIGHT_PARENTHESIS: char = '）';
-    /// \u{ff0a}: '＊'
-    pub const FULLWIDTH_ASTERISK: char = '＊';
-    /// \u{ff0b}: '＋'
-    pub const FULLWIDTH_PLUS_SIGN: char = '＋';
-    /// \u{ff0c}: '，'
-    pub const FULLWIDTH_COMMA: char = '，';
-    /// \u{ff0d}: '－'
-    pub const FULLWIDTH_HYPHEN_DASH_MINUS: char = '－';
-    /// \u{ff0e}: '．'
-    pub const FULLWIDTH_FULL_STOP: char = '．';
-    /// \u{ff0f}: '／'
-    pub const FULLWIDTH_SOLIDUS: char = '／';
-    /// \u{ff10}: '０'
-    pub const FULLWIDTH_DIGIT_ZERO: char = '０';
-    /// \u{ff11}: '１'
-    pub const FULLWIDTH_DIGIT_ONE: char = '１';
-    /// \u{ff12}: '２'
-    pub const FULLWIDTH_DIGIT_TWO: char = '２';
-    /// \u{ff13}: '３'
-    pub const FULLWIDTH_DIGIT_THREE: char = '３';
-    /// \u{ff14}: '４'
-    pub const FULLWIDTH_DIGIT_FOUR: char = '４';
-    /// \u{ff15}: '５'
-    pub const FULLWIDTH_DIGIT_FIVE: char = '５';
-    /// \u{ff16}: '６'
-    pub const FULLWIDTH_DIGIT_SIX: char = '６';
-    /// \u{ff17}: '７'
-    pub const FULLWIDTH_DIGIT_SEVEN: char = '７';
-    /// \u{ff18}: '８'
-    pub const FULLWIDTH_DIGIT_EIGHT: char = '８';
-    /// \u{ff19}: '９'
-    pub const FULLWIDTH_DIGIT_NINE: char = '９';
-    /// \u{ff1a}: '：'
-    pub const FULLWIDTH_COLON: char = '：';
-    /// \u{ff1b}: '；'
-    pub const FULLWIDTH_SEMICOLON: char = '；';
-    /// \u{ff1c}: '＜'
-    pub const FULLWIDTH_LESS_DASH_THAN_SIGN: char = '＜';
-    /// \u{ff1d}: '＝'
-    pub const FULLWIDTH_EQUALS_SIGN: char = '＝';
-    /// \u{ff1e}: '＞'
-    pub const FULLWIDTH_GREATER_DASH_THAN_SIGN: char = '＞';
-    /// \u{ff1f}: '？'
-    pub const FULLWIDTH_QUESTION_MARK: char = '？';
-    /// \u{ff20}: '＠'
-    pub const FULLWIDTH_COMMERCIAL_AT: char = '＠';
-    /// \u{ff21}: 'Ａ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_A: char = 'Ａ';
-    /// \u{ff22}: 'Ｂ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_B: char = 'Ｂ';
-    /// \u{ff23}: 'Ｃ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_C: char = 'Ｃ';
-    /// \u{ff24}: 'Ｄ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_D: char = 'Ｄ';
-    /// \u{ff25}: 'Ｅ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_E: char = 'Ｅ';
-    /// \u{ff26}: 'Ｆ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_F: char = 'Ｆ';
-    /// \u{ff27}: 'Ｇ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_G: char = 'Ｇ';
-    /// \u{ff28}: 'Ｈ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_H: char = 'Ｈ';
-    /// \u{ff29}: 'Ｉ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_I: char = 'Ｉ';
-    /// \u{ff2a}: 'Ｊ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_J: char = 'Ｊ';
-    /// \u{ff2b}: 'Ｋ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_K: char = 'Ｋ';
-    /// \u{ff2c}: 'Ｌ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_L: char = 'Ｌ';
-    /// \u{ff2d}: 'Ｍ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_M: char = 'Ｍ';
-    /// \u{ff2e}: 'Ｎ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_N: char = 'Ｎ';
-    /// \u{ff2f}: 'Ｏ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_O: char = 'Ｏ';
-    /// \u{ff30}: 'Ｐ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_P: char = 'Ｐ';
-    /// \u{ff31}: 'Ｑ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_Q: char = 'Ｑ';
-    /// \u{ff32}: 'Ｒ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_R: char = 'Ｒ';
-    /// \u{ff33}: 'Ｓ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_S: char = 'Ｓ';
-    /// \u{ff34}: 'Ｔ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_T: char = 'Ｔ';
-    /// \u{ff35}: 'Ｕ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_U: char = 'Ｕ';
-    /// \u{ff36}: 'Ｖ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_V: char = 'Ｖ';
-    /// \u{ff37}: 'Ｗ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_W: char = 'Ｗ';
-    /// \u{ff38}: 'Ｘ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_X: char = 'Ｘ';
-    /// \u{ff39}: 'Ｙ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_Y: char = 'Ｙ';
-    /// \u{ff3a}: 'Ｚ'
-    pub const FULLWIDTH_LATIN_CAPITAL_LETTER_Z: char = 'Ｚ';
-    /// \u{ff3b}: '［'
-    pub const FULLWIDTH_LEFT_SQUARE_BRACKET: char = '［';
-    /// \u{ff3c}: '＼'
-    pub const FULLWIDTH_REVERSE_SOLIDUS: char = '＼';
-    /// \u{ff3d}: '］'
-    pub const FULLWIDTH_RIGHT_SQUARE_BRACKET: char = '］';
-    /// \u{ff3e}: '＾'
-    pub const FULLWIDTH_CIRCUMFLEX_ACCENT: char = '＾';
-    /// \u{ff3f}: '＿'
-    pub const FULLWIDTH_LOW_LINE: char = '＿';
-    /// \u{ff40}: '｀'
-    pub const FULLWIDTH_GRAVE_ACCENT: char = '｀';
-    /// \u{ff41}: 'ａ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_A: char = 'ａ';
-    /// \u{ff42}: 'ｂ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_B: char = 'ｂ';
-    /// \u{ff43}: 'ｃ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_C: char = 'ｃ';
-    /// \u{ff44}: 'ｄ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_D: char = 'ｄ';
-    /// \u{ff45}: 'ｅ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_E: char = 'ｅ';
-    /// \u{ff46}: 'ｆ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_F: char = 'ｆ';
-    /// \u{ff47}: 'ｇ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_G: char = 'ｇ';
-    /// \u{ff48}: 'ｈ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_H: char = 'ｈ';
-    /// \u{ff49}: 'ｉ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_I: char = 'ｉ';
-    /// \u{ff4a}: 'ｊ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_J: char = 'ｊ';
-    /// \u{ff4b}: 'ｋ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_K: char = 'ｋ';
-    /// \u{ff4c}: 'ｌ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_L: char = 'ｌ';
-    /// \u{ff4d}: 'ｍ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_M: char = 'ｍ';
-    /// \u{ff4e}: 'ｎ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_N: char = 'ｎ';
-    /// \u{ff4f}: 'ｏ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_O: char = 'ｏ';
-    /// \u{ff50}: 'ｐ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_P: char = 'ｐ';
-    /// \u{ff51}: 'ｑ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_Q: char = 'ｑ';
-    /// \u{ff52}: 'ｒ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_R: char = 'ｒ';
-    /// \u{ff53}: 'ｓ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_S: char = 'ｓ';
-    /// \u{ff54}: 'ｔ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_T: char = 'ｔ';
-    /// \u{ff55}: 'ｕ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_U: char = 'ｕ';
-    /// \u{ff56}: 'ｖ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_V: char = 'ｖ';
-    /// \u{ff57}: 'ｗ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_W: char = 'ｗ';
-    /// \u{ff58}: 'ｘ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_X: char = 'ｘ';
-    /// \u{ff59}: 'ｙ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_Y: char = 'ｙ';
-    /// \u{ff5a}: 'ｚ'
-    pub const FULLWIDTH_LATIN_SMALL_LETTER_Z: char = 'ｚ';
-    /// \u{ff5b}: '｛'
-    pub const FULLWIDTH_LEFT_CURLY_BRACKET: char = '｛';
-    /// \u{ff5c}: '｜'
-    pub const FULLWIDTH_VERTICAL_LINE: char = '｜';
-    /// \u{ff5d}: '｝'
-    pub const FULLWIDTH_RIGHT_CURLY_BRACKET: char = '｝';
-    /// \u{ff5e}: '～'
-    pub const FULLWIDTH_TILDE: char = '～';
-    /// \u{ff5f}: '｟'
-    pub const FULLWIDTH_LEFT_WHITE_PARENTHESIS: char = '｟';
-    /// \u{ff60}: '｠'
-    pub const FULLWIDTH_RIGHT_WHITE_PARENTHESIS: char = '｠';
-    /// \u{ff61}: '｡'
-    pub const HALFWIDTH_IDEOGRAPHIC_FULL_STOP: char = '｡';
-    /// \u{ff62}: '｢'
-    pub const HALFWIDTH_LEFT_CORNER_BRACKET: char = '｢';
-    /// \u{ff63}: '｣'
-    pub const HALFWIDTH_RIGHT_CORNER_BRACKET: char = '｣';
-    /// \u{ff64}: '､'
-    pub const HALFWIDTH_IDEOGRAPHIC_COMMA: char = '､';
-    /// \u{ff65}: '･'
-    pub const HALFWIDTH_KATAKANA_MIDDLE_DOT: char = '･';
-    /// \u{ff66}: 'ｦ'
-    pub const HALFWIDTH_KATAKANA_LETTER_WO: char = 'ｦ';
-    /// \u{ff67}: 'ｧ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SMALL_A: char = 'ｧ';
-    /// \u{ff68}: 'ｨ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SMALL_I: char = 'ｨ';
-    /// \u{ff69}: 'ｩ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SMALL_U: char = 'ｩ';
-    /// \u{ff6a}: 'ｪ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SMALL_E: char = 'ｪ';
-    /// \u{ff6b}: 'ｫ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SMALL_O: char = 'ｫ';
-    /// \u{ff6c}: 'ｬ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SMALL_YA: char = 'ｬ';
-    /// \u{ff6d}: 'ｭ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SMALL_YU: char = 'ｭ';
-    /// \u{ff6e}: 'ｮ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SMALL_YO: char = 'ｮ';
-    /// \u{ff6f}: 'ｯ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SMALL_TU: char = 'ｯ';
-    /// \u{ff70}: 'ｰ'
-    pub const HALFWIDTH_KATAKANA_DASH_HIRAGANA_PROLONGED_SOUND_MARK: char = 'ｰ';
-    /// \u{ff71}: 'ｱ'
-    pub const HALFWIDTH_KATAKANA_LETTER_A: char = 'ｱ';
-    /// \u{ff72}: 'ｲ'
-    pub const HALFWIDTH_KATAKANA_LETTER_I: char = 'ｲ';
-    /// \u{ff73}: 'ｳ'
-    pub const HALFWIDTH_KATAKANA_LETTER_U: char = 'ｳ';
-    /// \u{ff74}: 'ｴ'
-    pub const HALFWIDTH_KATAKANA_LETTER_E: char = 'ｴ';
-    /// \u{ff75}: 'ｵ'
-    pub const HALFWIDTH_KATAKANA_LETTER_O: char = 'ｵ';
-    /// \u{ff76}: 'ｶ'
-    pub const HALFWIDTH_KATAKANA_LETTER_KA: char = 'ｶ';
-    /// \u{ff77}: 'ｷ'
-    pub const HALFWIDTH_KATAKANA_LETTER_KI: char = 'ｷ';
-    /// \u{ff78}: 'ｸ'
-    pub const HALFWIDTH_KATAKANA_LETTER_KU: char = 'ｸ';
-    /// \u{ff79}: 'ｹ'
-    pub const HALFWIDTH_KATAKANA_LETTER_KE: char = 'ｹ';
-    /// \u{ff7a}: 'ｺ'
-    pub const HALFWIDTH_KATAKANA_LETTER_KO: char = 'ｺ';
-    /// \u{ff7b}: 'ｻ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SA: char = 'ｻ';
-    /// \u{ff7c}: 'ｼ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SI: char = 'ｼ';
-    /// \u{ff7d}: 'ｽ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SU: char = 'ｽ';
-    /// \u{ff7e}: 'ｾ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SE: char = 'ｾ';
-    /// \u{ff7f}: 'ｿ'
-    pub const HALFWIDTH_KATAKANA_LETTER_SO: char = 'ｿ';
-    /// \u{ff80}: 'ﾀ'
-    pub const HALFWIDTH_KATAKANA_LETTER_TA: char = 'ﾀ';
-    /// \u{ff81}: 'ﾁ'
-    pub const HALFWIDTH_KATAKANA_LETTER_TI: char = 'ﾁ';
-    /// \u{ff82}: 'ﾂ'
-    pub const HALFWIDTH_KATAKANA_LETTER_TU: char = 'ﾂ';
-    /// \u{ff83}: 'ﾃ'
-    pub const HALFWIDTH_KATAKANA_LETTER_TE: char = 'ﾃ';
-    /// \u{ff84}: 'ﾄ'
-    pub const HALFWIDTH_KATAKANA_LETTER_TO: char = 'ﾄ';
-    /// \u{ff85}: 'ﾅ'
-    pub const HALFWIDTH_KATAKANA_LETTER_NA: char = 'ﾅ';
-    /// \u{ff86}: 'ﾆ'
-    pub const HALFWIDTH_KATAKANA_LETTER_NI: char = 'ﾆ';
-    /// \u{ff87}: 'ﾇ'
-    pub const HALFWIDTH_KATAKANA_LETTER_NU: char = 'ﾇ';
-    /// \u{ff88}: 'ﾈ'
-    pub const HALFWIDTH_KATAKANA_LETTER_NE: char = 'ﾈ';
-    /// \u{ff89}: 'ﾉ'
-    pub const HALFWIDTH_KATAKANA_LETTER_NO: char = 'ﾉ';
-    /// \u{ff8a}: 'ﾊ'
-    pub const HALFWIDTH_KATAKANA_LETTER_HA: char = 'ﾊ';
-    /// \u{ff8b}: 'ﾋ'
-    pub const HALFWIDTH_KATAKANA_LETTER_HI: char = 'ﾋ';
-    /// \u{ff8c}: 'ﾌ'
-    pub const HALFWIDTH_KATAKANA_LETTER_HU: char = 'ﾌ';
-    /// \u{ff8d}: 'ﾍ'
-    pub const HALFWIDTH_KATAKANA_LETTER_HE: char = 'ﾍ';
-    /// \u{ff8e}: 'ﾎ'
-    pub const HALFWIDTH_KATAKANA_LETTER_HO: char = 'ﾎ';
-    /// \u{ff8f}: 'ﾏ'
-    pub const HALFWIDTH_KATAKANA_LETTER_MA: char = 'ﾏ';
-    /// \u{ff90}: 'ﾐ'
-    pub const HALFWIDTH_KATAKANA_LETTER_MI: char = 'ﾐ';
-    /// \u{ff91}: 'ﾑ'
-    pub const HALFWIDTH_KATAKANA_LETTER_MU: char = 'ﾑ';
-    /// \u{ff92}: 'ﾒ'
-    pub const HALFWIDTH_KATAKANA_LETTER_ME: char = 'ﾒ';
-    /// \u{ff93}: 'ﾓ'
-    pub const HALFWIDTH_KATAKANA_LETTER_MO: char = 'ﾓ';
-    /// \u{ff94}: 'ﾔ'
-    pub const HALFWIDTH_KATAKANA_LETTER_YA: char = 'ﾔ';
-    /// \u{ff95}: 'ﾕ'
-    pub const HALFWIDTH_KATAKANA_LETTER_YU: char = 'ﾕ';
-    /// \u{ff96}: 'ﾖ'
-    pub const HALFWIDTH_KATAKANA_LETTER_YO: char = 'ﾖ';
-    /// \u{ff97}: 'ﾗ'
-    pub const HALFWIDTH_KATAKANA_LETTER_RA: char = 'ﾗ';
-    /// \u{ff98}: 'ﾘ'
-    pub const HALFWIDTH_KATAKANA_LETTER_RI: char = 'ﾘ';
-    /// \u{ff99}: 'ﾙ'
-    pub const HALFWIDTH_KATAKANA_LETTER_RU: char = 'ﾙ';
-    /// \u{ff9a}: 'ﾚ'
-    pub const HALFWIDTH_KATAKANA_LETTER_RE: char = 'ﾚ';
-    /// \u{ff9b}: 'ﾛ'
-    pub const HALFWIDTH_KATAKANA_LETTER_RO: char = 'ﾛ';
-    /// \u{ff9c}: 'ﾜ'
-    pub const HALFWIDTH_KATAKANA_LETTER_WA: char = 'ﾜ';
-    /// \u{ff9d}: 'ﾝ'
-    pub const HALFWIDTH_KATAKANA_LETTER_N: char = 'ﾝ';
-    /// \u{ff9e}: 'ﾞ'
-    pub const HALFWIDTH_KATAKANA_VOICED_SOUND_MARK: char = 'ﾞ';
-    /// \u{ff9f}: 'ﾟ'
-    pub const HALFWIDTH_KATAKANA_SEMI_DASH_VOICED_SOUND_MARK: char = 'ﾟ';
-    /// \u{ffa0}: 'ﾠ'
-    pub const HALFWIDTH_HANGUL_FILLER: char = 'ﾠ';
-    /// \u{ffa1}: 'ﾡ'
-    pub const HALFWIDTH_HANGUL_LETTER_KIYEOK: char = 'ﾡ';
-    /// \u{ffa2}: 'ﾢ'
-    pub const HALFWIDTH_HANGUL_LETTER_SSANGKIYEOK: char = 'ﾢ';
-    /// \u{ffa3}: 'ﾣ'
-    pub const HALFWIDTH_HANGUL_LETTER_KIYEOK_DASH_SIOS: char = 'ﾣ';
-    /// \u{ffa4}: 'ﾤ'
-    pub const HALFWIDTH_HANGUL_LETTER_NIEUN: char = 'ﾤ';
-    /// \u{ffa5}: 'ﾥ'
-    pub const HALFWIDTH_HANGUL_LETTER_NIEUN_DASH_CIEUC: char = 'ﾥ';
-    /// \u{ffa6}: 'ﾦ'
-    pub const HALFWIDTH_HANGUL_LETTER_NIEUN_DASH_HIEUH: char = 'ﾦ';
-    /// \u{ffa7}: 'ﾧ'
-    pub const HALFWIDTH_HANGUL_LETTER_TIKEUT: char = 'ﾧ';
-    /// \u{ffa8}: 'ﾨ'
-    pub const HALFWIDTH_HANGUL_LETTER_SSANGTIKEUT: char = 'ﾨ';
-    /// \u{ffa9}: 'ﾩ'
-    pub const HALFWIDTH_HANGUL_LETTER_RIEUL: char = 'ﾩ';
-    /// \u{ffaa}: 'ﾪ'
-    pub const HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_KIYEOK: char = 'ﾪ';
-    /// \u{ffab}: 'ﾫ'
-    pub const HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_MIEUM: char = 'ﾫ';
-    /// \u{ffac}: 'ﾬ'
-    pub const HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_PIEUP: char = 'ﾬ';
-    /// \u{ffad}: 'ﾭ'
-    pub const HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_SIOS: char = 'ﾭ';
-    /// \u{ffae}: 'ﾮ'
-    pub const HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_THIEUTH: char = 'ﾮ';
-    /// \u{ffaf}: 'ﾯ'
-    pub const HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_PHIEUPH: char = 'ﾯ';
-    /// \u{ffb0}: 'ﾰ'
-    pub const HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_HIEUH: char = 'ﾰ';
-    /// \u{ffb1}: 'ﾱ'
-    pub const HALFWIDTH_HANGUL_LETTER_MIEUM: char = 'ﾱ';
-    /// \u{ffb2}: 'ﾲ'
-    pub const HALFWIDTH_HANGUL_LETTER_PIEUP: char = 'ﾲ';
-    /// \u{ffb3}: 'ﾳ'
-    pub const HALFWIDTH_HANGUL_LETTER_SSANGPIEUP: char = 'ﾳ';
-    /// \u{ffb4}: 'ﾴ'
-    pub const HALFWIDTH_HANGUL_LETTER_PIEUP_DASH_SIOS: char = 'ﾴ';
-    /// \u{ffb5}: 'ﾵ'
-    pub const HALFWIDTH_HANGUL_LETTER_SIOS: char = 'ﾵ';
-    /// \u{ffb6}: 'ﾶ'
-    pub const HALFWIDTH_HANGUL_LETTER_SSANGSIOS: char = 'ﾶ';
-    /// \u{ffb7}: 'ﾷ'
-    pub const HALFWIDTH_HANGUL_LETTER_IEUNG: char = 'ﾷ';
-    /// \u{ffb8}: 'ﾸ'
-    pub const HALFWIDTH_HANGUL_LETTER_CIEUC: char = 'ﾸ';
-    /// \u{ffb9}: 'ﾹ'
-    pub const HALFWIDTH_HANGUL_LETTER_SSANGCIEUC: char = 'ﾹ';
-    /// \u{ffba}: 'ﾺ'
-    pub const HALFWIDTH_HANGUL_LETTER_CHIEUCH: char = 'ﾺ';
-    /// \u{ffbb}: 'ﾻ'
-    pub const HALFWIDTH_HANGUL_LETTER_KHIEUKH: char = 'ﾻ';
-    /// \u{ffbc}: 'ﾼ'
-    pub const HALFWIDTH_HANGUL_LETTER_THIEUTH: char = 'ﾼ';
-    /// \u{ffbd}: 'ﾽ'
-    pub const HALFWIDTH_HANGUL_LETTER_PHIEUPH: char = 'ﾽ';
-    /// \u{ffbe}: 'ﾾ'
-    pub const HALFWIDTH_HANGUL_LETTER_HIEUH: char = 'ﾾ';
-    /// \u{ffc2}: 'ￂ'
-    pub const HALFWIDTH_HANGUL_LETTER_A: char = 'ￂ';
-    /// \u{ffc3}: 'ￃ'
-    pub const HALFWIDTH_HANGUL_LETTER_AE: char = 'ￃ';
-    /// \u{ffc4}: 'ￄ'
-    pub const HALFWIDTH_HANGUL_LETTER_YA: char = 'ￄ';
-    /// \u{ffc5}: 'ￅ'
-    pub const HALFWIDTH_HANGUL_LETTER_YAE: char = 'ￅ';
-    /// \u{ffc6}: 'ￆ'
-    pub const HALFWIDTH_HANGUL_LETTER_EO: char = 'ￆ';
-    /// \u{ffc7}: 'ￇ'
-    pub const HALFWIDTH_HANGUL_LETTER_E: char = 'ￇ';
-    /// \u{ffca}: 'ￊ'
-    pub const HALFWIDTH_HANGUL_LETTER_YEO: char = 'ￊ';
-    /// \u{ffcb}: 'ￋ'
-    pub const HALFWIDTH_HANGUL_LETTER_YE: char = 'ￋ';
-    /// \u{ffcc}: 'ￌ'
-    pub const HALFWIDTH_HANGUL_LETTER_O: char = 'ￌ';
-    /// \u{ffcd}: 'ￍ'
-    pub const HALFWIDTH_HANGUL_LETTER_WA: char = 'ￍ';
-    /// \u{ffce}: 'ￎ'
-    pub const HALFWIDTH_HANGUL_LETTER_WAE: char = 'ￎ';
-    /// \u{ffcf}: 'ￏ'
-    pub const HALFWIDTH_HANGUL_LETTER_OE: char = 'ￏ';
-    /// \u{ffd2}: 'ￒ'
-    pub const HALFWIDTH_HANGUL_LETTER_YO: char = 'ￒ';
-    /// \u{ffd3}: 'ￓ'
-    pub const HALFWIDTH_HANGUL_LETTER_U: char = 'ￓ';
-    /// \u{ffd4}: 'ￔ'
-    pub const HALFWIDTH_HANGUL_LETTER_WEO: char = 'ￔ';
-    /// \u{ffd5}: 'ￕ'
-    pub const HALFWIDTH_HANGUL_LETTER_WE: char = 'ￕ';
-    /// \u{ffd6}: 'ￖ'
-    pub const HALFWIDTH_HANGUL_LETTER_WI: char = 'ￖ';
-    /// \u{ffd7}: 'ￗ'
-    pub const HALFWIDTH_HANGUL_LETTER_YU: char = 'ￗ';
-    /// \u{ffda}: 'ￚ'
-    pub const HALFWIDTH_HANGUL_LETTER_EU: char = 'ￚ';
-    /// \u{ffdb}: 'ￛ'
-    pub const HALFWIDTH_HANGUL_LETTER_YI: char = 'ￛ';
-    /// \u{ffdc}: 'ￜ'
-    pub const HALFWIDTH_HANGUL_LETTER_I: char = 'ￜ';
-    /// \u{ffe0}: '￠'
-    pub const FULLWIDTH_CENT_SIGN: char = '￠';
-    /// \u{ffe1}: '￡'
-    pub const FULLWIDTH_POUND_SIGN: char = '￡';
-    /// \u{ffe2}: '￢'
-    pub const FULLWIDTH_NOT_SIGN: char = '￢';
-    /// \u{ffe3}: '￣'
-    pub const FULLWIDTH_MACRON: char = '￣';
-    /// \u{ffe4}: '￤'
-    pub const FULLWIDTH_BROKEN_BAR: char = '￤';
-    /// \u{ffe5}: '￥'
-    pub const FULLWIDTH_YEN_SIGN: char = '￥';
-    /// \u{ffe6}: '￦'
-    pub const FULLWIDTH_WON_SIGN: char = '￦';
-    /// \u{ffe8}: '￨'
-    pub const HALFWIDTH_FORMS_LIGHT_VERTICAL: char = '￨';
-    /// \u{ffe9}: '￩'
-    pub const HALFWIDTH_LEFTWARDS_ARROW: char = '￩';
-    /// \u{ffea}: '￪'
-    pub const HALFWIDTH_UPWARDS_ARROW: char = '￪';
-    /// \u{ffeb}: '￫'
-    pub const HALFWIDTH_RIGHTWARDS_ARROW: char = '￫';
-    /// \u{ffec}: '￬'
-    pub const HALFWIDTH_DOWNWARDS_ARROW: char = '￬';
-    /// \u{ffed}: '￭'
-    pub const HALFWIDTH_BLACK_SQUARE: char = '￭';
-    /// \u{ffee}: '￮'
-    pub const HALFWIDTH_WHITE_CIRCLE: char = '￮';
-}
 
 /// An enum to represent all characters in the HalfwidthandFullwidthForms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -909,233 +456,232 @@ pub enum HalfwidthandFullwidthForms {
 
 impl Into<char> for HalfwidthandFullwidthForms {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            HalfwidthandFullwidthForms::FullwidthExclamationMark => FULLWIDTH_EXCLAMATION_MARK,
-            HalfwidthandFullwidthForms::FullwidthQuotationMark => FULLWIDTH_QUOTATION_MARK,
-            HalfwidthandFullwidthForms::FullwidthNumberSign => FULLWIDTH_NUMBER_SIGN,
-            HalfwidthandFullwidthForms::FullwidthDollarSign => FULLWIDTH_DOLLAR_SIGN,
-            HalfwidthandFullwidthForms::FullwidthPercentSign => FULLWIDTH_PERCENT_SIGN,
-            HalfwidthandFullwidthForms::FullwidthAmpersand => FULLWIDTH_AMPERSAND,
-            HalfwidthandFullwidthForms::FullwidthApostrophe => FULLWIDTH_APOSTROPHE,
-            HalfwidthandFullwidthForms::FullwidthLeftParenthesis => FULLWIDTH_LEFT_PARENTHESIS,
-            HalfwidthandFullwidthForms::FullwidthRightParenthesis => FULLWIDTH_RIGHT_PARENTHESIS,
-            HalfwidthandFullwidthForms::FullwidthAsterisk => FULLWIDTH_ASTERISK,
-            HalfwidthandFullwidthForms::FullwidthPlusSign => FULLWIDTH_PLUS_SIGN,
-            HalfwidthandFullwidthForms::FullwidthComma => FULLWIDTH_COMMA,
-            HalfwidthandFullwidthForms::FullwidthHyphenDashMinus => FULLWIDTH_HYPHEN_DASH_MINUS,
-            HalfwidthandFullwidthForms::FullwidthFullStop => FULLWIDTH_FULL_STOP,
-            HalfwidthandFullwidthForms::FullwidthSolidus => FULLWIDTH_SOLIDUS,
-            HalfwidthandFullwidthForms::FullwidthDigitZero => FULLWIDTH_DIGIT_ZERO,
-            HalfwidthandFullwidthForms::FullwidthDigitOne => FULLWIDTH_DIGIT_ONE,
-            HalfwidthandFullwidthForms::FullwidthDigitTwo => FULLWIDTH_DIGIT_TWO,
-            HalfwidthandFullwidthForms::FullwidthDigitThree => FULLWIDTH_DIGIT_THREE,
-            HalfwidthandFullwidthForms::FullwidthDigitFour => FULLWIDTH_DIGIT_FOUR,
-            HalfwidthandFullwidthForms::FullwidthDigitFive => FULLWIDTH_DIGIT_FIVE,
-            HalfwidthandFullwidthForms::FullwidthDigitSix => FULLWIDTH_DIGIT_SIX,
-            HalfwidthandFullwidthForms::FullwidthDigitSeven => FULLWIDTH_DIGIT_SEVEN,
-            HalfwidthandFullwidthForms::FullwidthDigitEight => FULLWIDTH_DIGIT_EIGHT,
-            HalfwidthandFullwidthForms::FullwidthDigitNine => FULLWIDTH_DIGIT_NINE,
-            HalfwidthandFullwidthForms::FullwidthColon => FULLWIDTH_COLON,
-            HalfwidthandFullwidthForms::FullwidthSemicolon => FULLWIDTH_SEMICOLON,
-            HalfwidthandFullwidthForms::FullwidthLessDashThanSign => FULLWIDTH_LESS_DASH_THAN_SIGN,
-            HalfwidthandFullwidthForms::FullwidthEqualsSign => FULLWIDTH_EQUALS_SIGN,
-            HalfwidthandFullwidthForms::FullwidthGreaterDashThanSign => FULLWIDTH_GREATER_DASH_THAN_SIGN,
-            HalfwidthandFullwidthForms::FullwidthQuestionMark => FULLWIDTH_QUESTION_MARK,
-            HalfwidthandFullwidthForms::FullwidthCommercialAt => FULLWIDTH_COMMERCIAL_AT,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterA => FULLWIDTH_LATIN_CAPITAL_LETTER_A,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterB => FULLWIDTH_LATIN_CAPITAL_LETTER_B,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterC => FULLWIDTH_LATIN_CAPITAL_LETTER_C,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterD => FULLWIDTH_LATIN_CAPITAL_LETTER_D,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterE => FULLWIDTH_LATIN_CAPITAL_LETTER_E,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterF => FULLWIDTH_LATIN_CAPITAL_LETTER_F,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterG => FULLWIDTH_LATIN_CAPITAL_LETTER_G,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterH => FULLWIDTH_LATIN_CAPITAL_LETTER_H,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterI => FULLWIDTH_LATIN_CAPITAL_LETTER_I,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterJ => FULLWIDTH_LATIN_CAPITAL_LETTER_J,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterK => FULLWIDTH_LATIN_CAPITAL_LETTER_K,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterL => FULLWIDTH_LATIN_CAPITAL_LETTER_L,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterM => FULLWIDTH_LATIN_CAPITAL_LETTER_M,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterN => FULLWIDTH_LATIN_CAPITAL_LETTER_N,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterO => FULLWIDTH_LATIN_CAPITAL_LETTER_O,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterP => FULLWIDTH_LATIN_CAPITAL_LETTER_P,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterQ => FULLWIDTH_LATIN_CAPITAL_LETTER_Q,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterR => FULLWIDTH_LATIN_CAPITAL_LETTER_R,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterS => FULLWIDTH_LATIN_CAPITAL_LETTER_S,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterT => FULLWIDTH_LATIN_CAPITAL_LETTER_T,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterU => FULLWIDTH_LATIN_CAPITAL_LETTER_U,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterV => FULLWIDTH_LATIN_CAPITAL_LETTER_V,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterW => FULLWIDTH_LATIN_CAPITAL_LETTER_W,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterX => FULLWIDTH_LATIN_CAPITAL_LETTER_X,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterY => FULLWIDTH_LATIN_CAPITAL_LETTER_Y,
-            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterZ => FULLWIDTH_LATIN_CAPITAL_LETTER_Z,
-            HalfwidthandFullwidthForms::FullwidthLeftSquareBracket => FULLWIDTH_LEFT_SQUARE_BRACKET,
-            HalfwidthandFullwidthForms::FullwidthReverseSolidus => FULLWIDTH_REVERSE_SOLIDUS,
-            HalfwidthandFullwidthForms::FullwidthRightSquareBracket => FULLWIDTH_RIGHT_SQUARE_BRACKET,
-            HalfwidthandFullwidthForms::FullwidthCircumflexAccent => FULLWIDTH_CIRCUMFLEX_ACCENT,
-            HalfwidthandFullwidthForms::FullwidthLowLine => FULLWIDTH_LOW_LINE,
-            HalfwidthandFullwidthForms::FullwidthGraveAccent => FULLWIDTH_GRAVE_ACCENT,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterA => FULLWIDTH_LATIN_SMALL_LETTER_A,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterB => FULLWIDTH_LATIN_SMALL_LETTER_B,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterC => FULLWIDTH_LATIN_SMALL_LETTER_C,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterD => FULLWIDTH_LATIN_SMALL_LETTER_D,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterE => FULLWIDTH_LATIN_SMALL_LETTER_E,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterF => FULLWIDTH_LATIN_SMALL_LETTER_F,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterG => FULLWIDTH_LATIN_SMALL_LETTER_G,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterH => FULLWIDTH_LATIN_SMALL_LETTER_H,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterI => FULLWIDTH_LATIN_SMALL_LETTER_I,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterJ => FULLWIDTH_LATIN_SMALL_LETTER_J,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterK => FULLWIDTH_LATIN_SMALL_LETTER_K,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterL => FULLWIDTH_LATIN_SMALL_LETTER_L,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterM => FULLWIDTH_LATIN_SMALL_LETTER_M,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterN => FULLWIDTH_LATIN_SMALL_LETTER_N,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterO => FULLWIDTH_LATIN_SMALL_LETTER_O,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterP => FULLWIDTH_LATIN_SMALL_LETTER_P,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterQ => FULLWIDTH_LATIN_SMALL_LETTER_Q,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterR => FULLWIDTH_LATIN_SMALL_LETTER_R,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterS => FULLWIDTH_LATIN_SMALL_LETTER_S,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterT => FULLWIDTH_LATIN_SMALL_LETTER_T,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterU => FULLWIDTH_LATIN_SMALL_LETTER_U,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterV => FULLWIDTH_LATIN_SMALL_LETTER_V,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterW => FULLWIDTH_LATIN_SMALL_LETTER_W,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterX => FULLWIDTH_LATIN_SMALL_LETTER_X,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterY => FULLWIDTH_LATIN_SMALL_LETTER_Y,
-            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterZ => FULLWIDTH_LATIN_SMALL_LETTER_Z,
-            HalfwidthandFullwidthForms::FullwidthLeftCurlyBracket => FULLWIDTH_LEFT_CURLY_BRACKET,
-            HalfwidthandFullwidthForms::FullwidthVerticalLine => FULLWIDTH_VERTICAL_LINE,
-            HalfwidthandFullwidthForms::FullwidthRightCurlyBracket => FULLWIDTH_RIGHT_CURLY_BRACKET,
-            HalfwidthandFullwidthForms::FullwidthTilde => FULLWIDTH_TILDE,
-            HalfwidthandFullwidthForms::FullwidthLeftWhiteParenthesis => FULLWIDTH_LEFT_WHITE_PARENTHESIS,
-            HalfwidthandFullwidthForms::FullwidthRightWhiteParenthesis => FULLWIDTH_RIGHT_WHITE_PARENTHESIS,
-            HalfwidthandFullwidthForms::HalfwidthIdeographicFullStop => HALFWIDTH_IDEOGRAPHIC_FULL_STOP,
-            HalfwidthandFullwidthForms::HalfwidthLeftCornerBracket => HALFWIDTH_LEFT_CORNER_BRACKET,
-            HalfwidthandFullwidthForms::HalfwidthRightCornerBracket => HALFWIDTH_RIGHT_CORNER_BRACKET,
-            HalfwidthandFullwidthForms::HalfwidthIdeographicComma => HALFWIDTH_IDEOGRAPHIC_COMMA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaMiddleDot => HALFWIDTH_KATAKANA_MIDDLE_DOT,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterWo => HALFWIDTH_KATAKANA_LETTER_WO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallA => HALFWIDTH_KATAKANA_LETTER_SMALL_A,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallI => HALFWIDTH_KATAKANA_LETTER_SMALL_I,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallU => HALFWIDTH_KATAKANA_LETTER_SMALL_U,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallE => HALFWIDTH_KATAKANA_LETTER_SMALL_E,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallO => HALFWIDTH_KATAKANA_LETTER_SMALL_O,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYa => HALFWIDTH_KATAKANA_LETTER_SMALL_YA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYu => HALFWIDTH_KATAKANA_LETTER_SMALL_YU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYo => HALFWIDTH_KATAKANA_LETTER_SMALL_YO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallTu => HALFWIDTH_KATAKANA_LETTER_SMALL_TU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaDashHiraganaProlongedSoundMark => HALFWIDTH_KATAKANA_DASH_HIRAGANA_PROLONGED_SOUND_MARK,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterA => HALFWIDTH_KATAKANA_LETTER_A,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterI => HALFWIDTH_KATAKANA_LETTER_I,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterU => HALFWIDTH_KATAKANA_LETTER_U,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterE => HALFWIDTH_KATAKANA_LETTER_E,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterO => HALFWIDTH_KATAKANA_LETTER_O,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKa => HALFWIDTH_KATAKANA_LETTER_KA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKi => HALFWIDTH_KATAKANA_LETTER_KI,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKu => HALFWIDTH_KATAKANA_LETTER_KU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKe => HALFWIDTH_KATAKANA_LETTER_KE,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKo => HALFWIDTH_KATAKANA_LETTER_KO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSa => HALFWIDTH_KATAKANA_LETTER_SA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSi => HALFWIDTH_KATAKANA_LETTER_SI,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSu => HALFWIDTH_KATAKANA_LETTER_SU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSe => HALFWIDTH_KATAKANA_LETTER_SE,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSo => HALFWIDTH_KATAKANA_LETTER_SO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTa => HALFWIDTH_KATAKANA_LETTER_TA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTi => HALFWIDTH_KATAKANA_LETTER_TI,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTu => HALFWIDTH_KATAKANA_LETTER_TU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTe => HALFWIDTH_KATAKANA_LETTER_TE,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTo => HALFWIDTH_KATAKANA_LETTER_TO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNa => HALFWIDTH_KATAKANA_LETTER_NA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNi => HALFWIDTH_KATAKANA_LETTER_NI,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNu => HALFWIDTH_KATAKANA_LETTER_NU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNe => HALFWIDTH_KATAKANA_LETTER_NE,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNo => HALFWIDTH_KATAKANA_LETTER_NO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHa => HALFWIDTH_KATAKANA_LETTER_HA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHi => HALFWIDTH_KATAKANA_LETTER_HI,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHu => HALFWIDTH_KATAKANA_LETTER_HU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHe => HALFWIDTH_KATAKANA_LETTER_HE,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHo => HALFWIDTH_KATAKANA_LETTER_HO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMa => HALFWIDTH_KATAKANA_LETTER_MA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMi => HALFWIDTH_KATAKANA_LETTER_MI,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMu => HALFWIDTH_KATAKANA_LETTER_MU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMe => HALFWIDTH_KATAKANA_LETTER_ME,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMo => HALFWIDTH_KATAKANA_LETTER_MO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYa => HALFWIDTH_KATAKANA_LETTER_YA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYu => HALFWIDTH_KATAKANA_LETTER_YU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYo => HALFWIDTH_KATAKANA_LETTER_YO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRa => HALFWIDTH_KATAKANA_LETTER_RA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRi => HALFWIDTH_KATAKANA_LETTER_RI,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRu => HALFWIDTH_KATAKANA_LETTER_RU,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRe => HALFWIDTH_KATAKANA_LETTER_RE,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRo => HALFWIDTH_KATAKANA_LETTER_RO,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterWa => HALFWIDTH_KATAKANA_LETTER_WA,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterN => HALFWIDTH_KATAKANA_LETTER_N,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaVoicedSoundMark => HALFWIDTH_KATAKANA_VOICED_SOUND_MARK,
-            HalfwidthandFullwidthForms::HalfwidthKatakanaSemiDashVoicedSoundMark => HALFWIDTH_KATAKANA_SEMI_DASH_VOICED_SOUND_MARK,
-            HalfwidthandFullwidthForms::HalfwidthHangulFiller => HALFWIDTH_HANGUL_FILLER,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterKiyeok => HALFWIDTH_HANGUL_LETTER_KIYEOK,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangkiyeok => HALFWIDTH_HANGUL_LETTER_SSANGKIYEOK,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterKiyeokDashSios => HALFWIDTH_HANGUL_LETTER_KIYEOK_DASH_SIOS,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterNieun => HALFWIDTH_HANGUL_LETTER_NIEUN,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterNieunDashCieuc => HALFWIDTH_HANGUL_LETTER_NIEUN_DASH_CIEUC,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterNieunDashHieuh => HALFWIDTH_HANGUL_LETTER_NIEUN_DASH_HIEUH,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterTikeut => HALFWIDTH_HANGUL_LETTER_TIKEUT,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangtikeut => HALFWIDTH_HANGUL_LETTER_SSANGTIKEUT,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieul => HALFWIDTH_HANGUL_LETTER_RIEUL,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashKiyeok => HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_KIYEOK,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashMieum => HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_MIEUM,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashPieup => HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_PIEUP,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashSios => HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_SIOS,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashThieuth => HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_THIEUTH,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashPhieuph => HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_PHIEUPH,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashHieuh => HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_HIEUH,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterMieum => HALFWIDTH_HANGUL_LETTER_MIEUM,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterPieup => HALFWIDTH_HANGUL_LETTER_PIEUP,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangpieup => HALFWIDTH_HANGUL_LETTER_SSANGPIEUP,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterPieupDashSios => HALFWIDTH_HANGUL_LETTER_PIEUP_DASH_SIOS,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterSios => HALFWIDTH_HANGUL_LETTER_SIOS,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangsios => HALFWIDTH_HANGUL_LETTER_SSANGSIOS,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterIeung => HALFWIDTH_HANGUL_LETTER_IEUNG,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterCieuc => HALFWIDTH_HANGUL_LETTER_CIEUC,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangcieuc => HALFWIDTH_HANGUL_LETTER_SSANGCIEUC,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterChieuch => HALFWIDTH_HANGUL_LETTER_CHIEUCH,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterKhieukh => HALFWIDTH_HANGUL_LETTER_KHIEUKH,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterThieuth => HALFWIDTH_HANGUL_LETTER_THIEUTH,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterPhieuph => HALFWIDTH_HANGUL_LETTER_PHIEUPH,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterHieuh => HALFWIDTH_HANGUL_LETTER_HIEUH,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterA => HALFWIDTH_HANGUL_LETTER_A,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterAe => HALFWIDTH_HANGUL_LETTER_AE,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterYa => HALFWIDTH_HANGUL_LETTER_YA,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterYae => HALFWIDTH_HANGUL_LETTER_YAE,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterEo => HALFWIDTH_HANGUL_LETTER_EO,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterE => HALFWIDTH_HANGUL_LETTER_E,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterYeo => HALFWIDTH_HANGUL_LETTER_YEO,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterYe => HALFWIDTH_HANGUL_LETTER_YE,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterO => HALFWIDTH_HANGUL_LETTER_O,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterWa => HALFWIDTH_HANGUL_LETTER_WA,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterWae => HALFWIDTH_HANGUL_LETTER_WAE,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterOe => HALFWIDTH_HANGUL_LETTER_OE,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterYo => HALFWIDTH_HANGUL_LETTER_YO,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterU => HALFWIDTH_HANGUL_LETTER_U,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterWeo => HALFWIDTH_HANGUL_LETTER_WEO,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterWe => HALFWIDTH_HANGUL_LETTER_WE,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterWi => HALFWIDTH_HANGUL_LETTER_WI,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterYu => HALFWIDTH_HANGUL_LETTER_YU,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterEu => HALFWIDTH_HANGUL_LETTER_EU,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterYi => HALFWIDTH_HANGUL_LETTER_YI,
-            HalfwidthandFullwidthForms::HalfwidthHangulLetterI => HALFWIDTH_HANGUL_LETTER_I,
-            HalfwidthandFullwidthForms::FullwidthCentSign => FULLWIDTH_CENT_SIGN,
-            HalfwidthandFullwidthForms::FullwidthPoundSign => FULLWIDTH_POUND_SIGN,
-            HalfwidthandFullwidthForms::FullwidthNotSign => FULLWIDTH_NOT_SIGN,
-            HalfwidthandFullwidthForms::FullwidthMacron => FULLWIDTH_MACRON,
-            HalfwidthandFullwidthForms::FullwidthBrokenBar => FULLWIDTH_BROKEN_BAR,
-            HalfwidthandFullwidthForms::FullwidthYenSign => FULLWIDTH_YEN_SIGN,
-            HalfwidthandFullwidthForms::FullwidthWonSign => FULLWIDTH_WON_SIGN,
-            HalfwidthandFullwidthForms::HalfwidthFormsLightVertical => HALFWIDTH_FORMS_LIGHT_VERTICAL,
-            HalfwidthandFullwidthForms::HalfwidthLeftwardsArrow => HALFWIDTH_LEFTWARDS_ARROW,
-            HalfwidthandFullwidthForms::HalfwidthUpwardsArrow => HALFWIDTH_UPWARDS_ARROW,
-            HalfwidthandFullwidthForms::HalfwidthRightwardsArrow => HALFWIDTH_RIGHTWARDS_ARROW,
-            HalfwidthandFullwidthForms::HalfwidthDownwardsArrow => HALFWIDTH_DOWNWARDS_ARROW,
-            HalfwidthandFullwidthForms::HalfwidthBlackSquare => HALFWIDTH_BLACK_SQUARE,
-            HalfwidthandFullwidthForms::HalfwidthWhiteCircle => HALFWIDTH_WHITE_CIRCLE,
+            HalfwidthandFullwidthForms::FullwidthExclamationMark => '！',
+            HalfwidthandFullwidthForms::FullwidthQuotationMark => '＂',
+            HalfwidthandFullwidthForms::FullwidthNumberSign => '＃',
+            HalfwidthandFullwidthForms::FullwidthDollarSign => '＄',
+            HalfwidthandFullwidthForms::FullwidthPercentSign => '％',
+            HalfwidthandFullwidthForms::FullwidthAmpersand => '＆',
+            HalfwidthandFullwidthForms::FullwidthApostrophe => '＇',
+            HalfwidthandFullwidthForms::FullwidthLeftParenthesis => '（',
+            HalfwidthandFullwidthForms::FullwidthRightParenthesis => '）',
+            HalfwidthandFullwidthForms::FullwidthAsterisk => '＊',
+            HalfwidthandFullwidthForms::FullwidthPlusSign => '＋',
+            HalfwidthandFullwidthForms::FullwidthComma => '，',
+            HalfwidthandFullwidthForms::FullwidthHyphenDashMinus => '－',
+            HalfwidthandFullwidthForms::FullwidthFullStop => '．',
+            HalfwidthandFullwidthForms::FullwidthSolidus => '／',
+            HalfwidthandFullwidthForms::FullwidthDigitZero => '０',
+            HalfwidthandFullwidthForms::FullwidthDigitOne => '１',
+            HalfwidthandFullwidthForms::FullwidthDigitTwo => '２',
+            HalfwidthandFullwidthForms::FullwidthDigitThree => '３',
+            HalfwidthandFullwidthForms::FullwidthDigitFour => '４',
+            HalfwidthandFullwidthForms::FullwidthDigitFive => '５',
+            HalfwidthandFullwidthForms::FullwidthDigitSix => '６',
+            HalfwidthandFullwidthForms::FullwidthDigitSeven => '７',
+            HalfwidthandFullwidthForms::FullwidthDigitEight => '８',
+            HalfwidthandFullwidthForms::FullwidthDigitNine => '９',
+            HalfwidthandFullwidthForms::FullwidthColon => '：',
+            HalfwidthandFullwidthForms::FullwidthSemicolon => '；',
+            HalfwidthandFullwidthForms::FullwidthLessDashThanSign => '＜',
+            HalfwidthandFullwidthForms::FullwidthEqualsSign => '＝',
+            HalfwidthandFullwidthForms::FullwidthGreaterDashThanSign => '＞',
+            HalfwidthandFullwidthForms::FullwidthQuestionMark => '？',
+            HalfwidthandFullwidthForms::FullwidthCommercialAt => '＠',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterA => 'Ａ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterB => 'Ｂ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterC => 'Ｃ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterD => 'Ｄ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterE => 'Ｅ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterF => 'Ｆ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterG => 'Ｇ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterH => 'Ｈ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterI => 'Ｉ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterJ => 'Ｊ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterK => 'Ｋ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterL => 'Ｌ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterM => 'Ｍ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterN => 'Ｎ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterO => 'Ｏ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterP => 'Ｐ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterQ => 'Ｑ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterR => 'Ｒ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterS => 'Ｓ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterT => 'Ｔ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterU => 'Ｕ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterV => 'Ｖ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterW => 'Ｗ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterX => 'Ｘ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterY => 'Ｙ',
+            HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterZ => 'Ｚ',
+            HalfwidthandFullwidthForms::FullwidthLeftSquareBracket => '［',
+            HalfwidthandFullwidthForms::FullwidthReverseSolidus => '＼',
+            HalfwidthandFullwidthForms::FullwidthRightSquareBracket => '］',
+            HalfwidthandFullwidthForms::FullwidthCircumflexAccent => '＾',
+            HalfwidthandFullwidthForms::FullwidthLowLine => '＿',
+            HalfwidthandFullwidthForms::FullwidthGraveAccent => '｀',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterA => 'ａ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterB => 'ｂ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterC => 'ｃ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterD => 'ｄ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterE => 'ｅ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterF => 'ｆ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterG => 'ｇ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterH => 'ｈ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterI => 'ｉ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterJ => 'ｊ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterK => 'ｋ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterL => 'ｌ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterM => 'ｍ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterN => 'ｎ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterO => 'ｏ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterP => 'ｐ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterQ => 'ｑ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterR => 'ｒ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterS => 'ｓ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterT => 'ｔ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterU => 'ｕ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterV => 'ｖ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterW => 'ｗ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterX => 'ｘ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterY => 'ｙ',
+            HalfwidthandFullwidthForms::FullwidthLatinSmallLetterZ => 'ｚ',
+            HalfwidthandFullwidthForms::FullwidthLeftCurlyBracket => '｛',
+            HalfwidthandFullwidthForms::FullwidthVerticalLine => '｜',
+            HalfwidthandFullwidthForms::FullwidthRightCurlyBracket => '｝',
+            HalfwidthandFullwidthForms::FullwidthTilde => '～',
+            HalfwidthandFullwidthForms::FullwidthLeftWhiteParenthesis => '｟',
+            HalfwidthandFullwidthForms::FullwidthRightWhiteParenthesis => '｠',
+            HalfwidthandFullwidthForms::HalfwidthIdeographicFullStop => '｡',
+            HalfwidthandFullwidthForms::HalfwidthLeftCornerBracket => '｢',
+            HalfwidthandFullwidthForms::HalfwidthRightCornerBracket => '｣',
+            HalfwidthandFullwidthForms::HalfwidthIdeographicComma => '､',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaMiddleDot => '･',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterWo => 'ｦ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallA => 'ｧ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallI => 'ｨ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallU => 'ｩ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallE => 'ｪ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallO => 'ｫ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYa => 'ｬ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYu => 'ｭ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYo => 'ｮ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallTu => 'ｯ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaDashHiraganaProlongedSoundMark => 'ｰ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterA => 'ｱ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterI => 'ｲ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterU => 'ｳ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterE => 'ｴ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterO => 'ｵ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKa => 'ｶ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKi => 'ｷ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKu => 'ｸ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKe => 'ｹ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKo => 'ｺ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSa => 'ｻ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSi => 'ｼ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSu => 'ｽ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSe => 'ｾ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSo => 'ｿ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTa => 'ﾀ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTi => 'ﾁ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTu => 'ﾂ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTe => 'ﾃ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTo => 'ﾄ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNa => 'ﾅ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNi => 'ﾆ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNu => 'ﾇ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNe => 'ﾈ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNo => 'ﾉ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHa => 'ﾊ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHi => 'ﾋ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHu => 'ﾌ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHe => 'ﾍ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHo => 'ﾎ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMa => 'ﾏ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMi => 'ﾐ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMu => 'ﾑ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMe => 'ﾒ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMo => 'ﾓ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYa => 'ﾔ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYu => 'ﾕ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYo => 'ﾖ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRa => 'ﾗ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRi => 'ﾘ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRu => 'ﾙ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRe => 'ﾚ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRo => 'ﾛ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterWa => 'ﾜ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaLetterN => 'ﾝ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaVoicedSoundMark => 'ﾞ',
+            HalfwidthandFullwidthForms::HalfwidthKatakanaSemiDashVoicedSoundMark => 'ﾟ',
+            HalfwidthandFullwidthForms::HalfwidthHangulFiller => 'ﾠ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterKiyeok => 'ﾡ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangkiyeok => 'ﾢ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterKiyeokDashSios => 'ﾣ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterNieun => 'ﾤ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterNieunDashCieuc => 'ﾥ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterNieunDashHieuh => 'ﾦ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterTikeut => 'ﾧ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangtikeut => 'ﾨ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieul => 'ﾩ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashKiyeok => 'ﾪ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashMieum => 'ﾫ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashPieup => 'ﾬ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashSios => 'ﾭ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashThieuth => 'ﾮ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashPhieuph => 'ﾯ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashHieuh => 'ﾰ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterMieum => 'ﾱ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterPieup => 'ﾲ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangpieup => 'ﾳ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterPieupDashSios => 'ﾴ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterSios => 'ﾵ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangsios => 'ﾶ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterIeung => 'ﾷ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterCieuc => 'ﾸ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangcieuc => 'ﾹ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterChieuch => 'ﾺ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterKhieukh => 'ﾻ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterThieuth => 'ﾼ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterPhieuph => 'ﾽ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterHieuh => 'ﾾ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterA => 'ￂ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterAe => 'ￃ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterYa => 'ￄ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterYae => 'ￅ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterEo => 'ￆ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterE => 'ￇ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterYeo => 'ￊ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterYe => 'ￋ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterO => 'ￌ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterWa => 'ￍ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterWae => 'ￎ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterOe => 'ￏ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterYo => 'ￒ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterU => 'ￓ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterWeo => 'ￔ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterWe => 'ￕ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterWi => 'ￖ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterYu => 'ￗ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterEu => 'ￚ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterYi => 'ￛ',
+            HalfwidthandFullwidthForms::HalfwidthHangulLetterI => 'ￜ',
+            HalfwidthandFullwidthForms::FullwidthCentSign => '￠',
+            HalfwidthandFullwidthForms::FullwidthPoundSign => '￡',
+            HalfwidthandFullwidthForms::FullwidthNotSign => '￢',
+            HalfwidthandFullwidthForms::FullwidthMacron => '￣',
+            HalfwidthandFullwidthForms::FullwidthBrokenBar => '￤',
+            HalfwidthandFullwidthForms::FullwidthYenSign => '￥',
+            HalfwidthandFullwidthForms::FullwidthWonSign => '￦',
+            HalfwidthandFullwidthForms::HalfwidthFormsLightVertical => '￨',
+            HalfwidthandFullwidthForms::HalfwidthLeftwardsArrow => '￩',
+            HalfwidthandFullwidthForms::HalfwidthUpwardsArrow => '￪',
+            HalfwidthandFullwidthForms::HalfwidthRightwardsArrow => '￫',
+            HalfwidthandFullwidthForms::HalfwidthDownwardsArrow => '￬',
+            HalfwidthandFullwidthForms::HalfwidthBlackSquare => '￭',
+            HalfwidthandFullwidthForms::HalfwidthWhiteCircle => '￮',
         }
     }
 }
@@ -1143,233 +689,232 @@ impl Into<char> for HalfwidthandFullwidthForms {
 impl std::convert::TryFrom<char> for HalfwidthandFullwidthForms {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            FULLWIDTH_EXCLAMATION_MARK => Ok(HalfwidthandFullwidthForms::FullwidthExclamationMark),
-            FULLWIDTH_QUOTATION_MARK => Ok(HalfwidthandFullwidthForms::FullwidthQuotationMark),
-            FULLWIDTH_NUMBER_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthNumberSign),
-            FULLWIDTH_DOLLAR_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthDollarSign),
-            FULLWIDTH_PERCENT_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthPercentSign),
-            FULLWIDTH_AMPERSAND => Ok(HalfwidthandFullwidthForms::FullwidthAmpersand),
-            FULLWIDTH_APOSTROPHE => Ok(HalfwidthandFullwidthForms::FullwidthApostrophe),
-            FULLWIDTH_LEFT_PARENTHESIS => Ok(HalfwidthandFullwidthForms::FullwidthLeftParenthesis),
-            FULLWIDTH_RIGHT_PARENTHESIS => Ok(HalfwidthandFullwidthForms::FullwidthRightParenthesis),
-            FULLWIDTH_ASTERISK => Ok(HalfwidthandFullwidthForms::FullwidthAsterisk),
-            FULLWIDTH_PLUS_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthPlusSign),
-            FULLWIDTH_COMMA => Ok(HalfwidthandFullwidthForms::FullwidthComma),
-            FULLWIDTH_HYPHEN_DASH_MINUS => Ok(HalfwidthandFullwidthForms::FullwidthHyphenDashMinus),
-            FULLWIDTH_FULL_STOP => Ok(HalfwidthandFullwidthForms::FullwidthFullStop),
-            FULLWIDTH_SOLIDUS => Ok(HalfwidthandFullwidthForms::FullwidthSolidus),
-            FULLWIDTH_DIGIT_ZERO => Ok(HalfwidthandFullwidthForms::FullwidthDigitZero),
-            FULLWIDTH_DIGIT_ONE => Ok(HalfwidthandFullwidthForms::FullwidthDigitOne),
-            FULLWIDTH_DIGIT_TWO => Ok(HalfwidthandFullwidthForms::FullwidthDigitTwo),
-            FULLWIDTH_DIGIT_THREE => Ok(HalfwidthandFullwidthForms::FullwidthDigitThree),
-            FULLWIDTH_DIGIT_FOUR => Ok(HalfwidthandFullwidthForms::FullwidthDigitFour),
-            FULLWIDTH_DIGIT_FIVE => Ok(HalfwidthandFullwidthForms::FullwidthDigitFive),
-            FULLWIDTH_DIGIT_SIX => Ok(HalfwidthandFullwidthForms::FullwidthDigitSix),
-            FULLWIDTH_DIGIT_SEVEN => Ok(HalfwidthandFullwidthForms::FullwidthDigitSeven),
-            FULLWIDTH_DIGIT_EIGHT => Ok(HalfwidthandFullwidthForms::FullwidthDigitEight),
-            FULLWIDTH_DIGIT_NINE => Ok(HalfwidthandFullwidthForms::FullwidthDigitNine),
-            FULLWIDTH_COLON => Ok(HalfwidthandFullwidthForms::FullwidthColon),
-            FULLWIDTH_SEMICOLON => Ok(HalfwidthandFullwidthForms::FullwidthSemicolon),
-            FULLWIDTH_LESS_DASH_THAN_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthLessDashThanSign),
-            FULLWIDTH_EQUALS_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthEqualsSign),
-            FULLWIDTH_GREATER_DASH_THAN_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthGreaterDashThanSign),
-            FULLWIDTH_QUESTION_MARK => Ok(HalfwidthandFullwidthForms::FullwidthQuestionMark),
-            FULLWIDTH_COMMERCIAL_AT => Ok(HalfwidthandFullwidthForms::FullwidthCommercialAt),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_A => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterA),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_B => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterB),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_C => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterC),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_D => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterD),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_E => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterE),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_F => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterF),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_G => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterG),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_H => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterH),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_I => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterI),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_J => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterJ),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_K => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterK),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_L => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterL),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_M => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterM),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_N => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterN),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_O => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterO),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_P => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterP),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_Q => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterQ),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_R => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterR),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_S => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterS),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_T => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterT),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_U => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterU),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_V => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterV),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_W => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterW),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_X => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterX),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_Y => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterY),
-            FULLWIDTH_LATIN_CAPITAL_LETTER_Z => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterZ),
-            FULLWIDTH_LEFT_SQUARE_BRACKET => Ok(HalfwidthandFullwidthForms::FullwidthLeftSquareBracket),
-            FULLWIDTH_REVERSE_SOLIDUS => Ok(HalfwidthandFullwidthForms::FullwidthReverseSolidus),
-            FULLWIDTH_RIGHT_SQUARE_BRACKET => Ok(HalfwidthandFullwidthForms::FullwidthRightSquareBracket),
-            FULLWIDTH_CIRCUMFLEX_ACCENT => Ok(HalfwidthandFullwidthForms::FullwidthCircumflexAccent),
-            FULLWIDTH_LOW_LINE => Ok(HalfwidthandFullwidthForms::FullwidthLowLine),
-            FULLWIDTH_GRAVE_ACCENT => Ok(HalfwidthandFullwidthForms::FullwidthGraveAccent),
-            FULLWIDTH_LATIN_SMALL_LETTER_A => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterA),
-            FULLWIDTH_LATIN_SMALL_LETTER_B => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterB),
-            FULLWIDTH_LATIN_SMALL_LETTER_C => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterC),
-            FULLWIDTH_LATIN_SMALL_LETTER_D => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterD),
-            FULLWIDTH_LATIN_SMALL_LETTER_E => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterE),
-            FULLWIDTH_LATIN_SMALL_LETTER_F => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterF),
-            FULLWIDTH_LATIN_SMALL_LETTER_G => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterG),
-            FULLWIDTH_LATIN_SMALL_LETTER_H => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterH),
-            FULLWIDTH_LATIN_SMALL_LETTER_I => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterI),
-            FULLWIDTH_LATIN_SMALL_LETTER_J => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterJ),
-            FULLWIDTH_LATIN_SMALL_LETTER_K => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterK),
-            FULLWIDTH_LATIN_SMALL_LETTER_L => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterL),
-            FULLWIDTH_LATIN_SMALL_LETTER_M => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterM),
-            FULLWIDTH_LATIN_SMALL_LETTER_N => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterN),
-            FULLWIDTH_LATIN_SMALL_LETTER_O => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterO),
-            FULLWIDTH_LATIN_SMALL_LETTER_P => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterP),
-            FULLWIDTH_LATIN_SMALL_LETTER_Q => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterQ),
-            FULLWIDTH_LATIN_SMALL_LETTER_R => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterR),
-            FULLWIDTH_LATIN_SMALL_LETTER_S => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterS),
-            FULLWIDTH_LATIN_SMALL_LETTER_T => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterT),
-            FULLWIDTH_LATIN_SMALL_LETTER_U => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterU),
-            FULLWIDTH_LATIN_SMALL_LETTER_V => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterV),
-            FULLWIDTH_LATIN_SMALL_LETTER_W => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterW),
-            FULLWIDTH_LATIN_SMALL_LETTER_X => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterX),
-            FULLWIDTH_LATIN_SMALL_LETTER_Y => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterY),
-            FULLWIDTH_LATIN_SMALL_LETTER_Z => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterZ),
-            FULLWIDTH_LEFT_CURLY_BRACKET => Ok(HalfwidthandFullwidthForms::FullwidthLeftCurlyBracket),
-            FULLWIDTH_VERTICAL_LINE => Ok(HalfwidthandFullwidthForms::FullwidthVerticalLine),
-            FULLWIDTH_RIGHT_CURLY_BRACKET => Ok(HalfwidthandFullwidthForms::FullwidthRightCurlyBracket),
-            FULLWIDTH_TILDE => Ok(HalfwidthandFullwidthForms::FullwidthTilde),
-            FULLWIDTH_LEFT_WHITE_PARENTHESIS => Ok(HalfwidthandFullwidthForms::FullwidthLeftWhiteParenthesis),
-            FULLWIDTH_RIGHT_WHITE_PARENTHESIS => Ok(HalfwidthandFullwidthForms::FullwidthRightWhiteParenthesis),
-            HALFWIDTH_IDEOGRAPHIC_FULL_STOP => Ok(HalfwidthandFullwidthForms::HalfwidthIdeographicFullStop),
-            HALFWIDTH_LEFT_CORNER_BRACKET => Ok(HalfwidthandFullwidthForms::HalfwidthLeftCornerBracket),
-            HALFWIDTH_RIGHT_CORNER_BRACKET => Ok(HalfwidthandFullwidthForms::HalfwidthRightCornerBracket),
-            HALFWIDTH_IDEOGRAPHIC_COMMA => Ok(HalfwidthandFullwidthForms::HalfwidthIdeographicComma),
-            HALFWIDTH_KATAKANA_MIDDLE_DOT => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaMiddleDot),
-            HALFWIDTH_KATAKANA_LETTER_WO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterWo),
-            HALFWIDTH_KATAKANA_LETTER_SMALL_A => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallA),
-            HALFWIDTH_KATAKANA_LETTER_SMALL_I => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallI),
-            HALFWIDTH_KATAKANA_LETTER_SMALL_U => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallU),
-            HALFWIDTH_KATAKANA_LETTER_SMALL_E => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallE),
-            HALFWIDTH_KATAKANA_LETTER_SMALL_O => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallO),
-            HALFWIDTH_KATAKANA_LETTER_SMALL_YA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYa),
-            HALFWIDTH_KATAKANA_LETTER_SMALL_YU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYu),
-            HALFWIDTH_KATAKANA_LETTER_SMALL_YO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYo),
-            HALFWIDTH_KATAKANA_LETTER_SMALL_TU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallTu),
-            HALFWIDTH_KATAKANA_DASH_HIRAGANA_PROLONGED_SOUND_MARK => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaDashHiraganaProlongedSoundMark),
-            HALFWIDTH_KATAKANA_LETTER_A => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterA),
-            HALFWIDTH_KATAKANA_LETTER_I => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterI),
-            HALFWIDTH_KATAKANA_LETTER_U => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterU),
-            HALFWIDTH_KATAKANA_LETTER_E => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterE),
-            HALFWIDTH_KATAKANA_LETTER_O => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterO),
-            HALFWIDTH_KATAKANA_LETTER_KA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKa),
-            HALFWIDTH_KATAKANA_LETTER_KI => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKi),
-            HALFWIDTH_KATAKANA_LETTER_KU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKu),
-            HALFWIDTH_KATAKANA_LETTER_KE => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKe),
-            HALFWIDTH_KATAKANA_LETTER_KO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKo),
-            HALFWIDTH_KATAKANA_LETTER_SA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSa),
-            HALFWIDTH_KATAKANA_LETTER_SI => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSi),
-            HALFWIDTH_KATAKANA_LETTER_SU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSu),
-            HALFWIDTH_KATAKANA_LETTER_SE => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSe),
-            HALFWIDTH_KATAKANA_LETTER_SO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSo),
-            HALFWIDTH_KATAKANA_LETTER_TA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTa),
-            HALFWIDTH_KATAKANA_LETTER_TI => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTi),
-            HALFWIDTH_KATAKANA_LETTER_TU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTu),
-            HALFWIDTH_KATAKANA_LETTER_TE => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTe),
-            HALFWIDTH_KATAKANA_LETTER_TO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTo),
-            HALFWIDTH_KATAKANA_LETTER_NA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNa),
-            HALFWIDTH_KATAKANA_LETTER_NI => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNi),
-            HALFWIDTH_KATAKANA_LETTER_NU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNu),
-            HALFWIDTH_KATAKANA_LETTER_NE => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNe),
-            HALFWIDTH_KATAKANA_LETTER_NO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNo),
-            HALFWIDTH_KATAKANA_LETTER_HA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHa),
-            HALFWIDTH_KATAKANA_LETTER_HI => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHi),
-            HALFWIDTH_KATAKANA_LETTER_HU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHu),
-            HALFWIDTH_KATAKANA_LETTER_HE => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHe),
-            HALFWIDTH_KATAKANA_LETTER_HO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHo),
-            HALFWIDTH_KATAKANA_LETTER_MA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMa),
-            HALFWIDTH_KATAKANA_LETTER_MI => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMi),
-            HALFWIDTH_KATAKANA_LETTER_MU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMu),
-            HALFWIDTH_KATAKANA_LETTER_ME => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMe),
-            HALFWIDTH_KATAKANA_LETTER_MO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMo),
-            HALFWIDTH_KATAKANA_LETTER_YA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYa),
-            HALFWIDTH_KATAKANA_LETTER_YU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYu),
-            HALFWIDTH_KATAKANA_LETTER_YO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYo),
-            HALFWIDTH_KATAKANA_LETTER_RA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRa),
-            HALFWIDTH_KATAKANA_LETTER_RI => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRi),
-            HALFWIDTH_KATAKANA_LETTER_RU => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRu),
-            HALFWIDTH_KATAKANA_LETTER_RE => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRe),
-            HALFWIDTH_KATAKANA_LETTER_RO => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRo),
-            HALFWIDTH_KATAKANA_LETTER_WA => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterWa),
-            HALFWIDTH_KATAKANA_LETTER_N => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterN),
-            HALFWIDTH_KATAKANA_VOICED_SOUND_MARK => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaVoicedSoundMark),
-            HALFWIDTH_KATAKANA_SEMI_DASH_VOICED_SOUND_MARK => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaSemiDashVoicedSoundMark),
-            HALFWIDTH_HANGUL_FILLER => Ok(HalfwidthandFullwidthForms::HalfwidthHangulFiller),
-            HALFWIDTH_HANGUL_LETTER_KIYEOK => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterKiyeok),
-            HALFWIDTH_HANGUL_LETTER_SSANGKIYEOK => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangkiyeok),
-            HALFWIDTH_HANGUL_LETTER_KIYEOK_DASH_SIOS => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterKiyeokDashSios),
-            HALFWIDTH_HANGUL_LETTER_NIEUN => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterNieun),
-            HALFWIDTH_HANGUL_LETTER_NIEUN_DASH_CIEUC => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterNieunDashCieuc),
-            HALFWIDTH_HANGUL_LETTER_NIEUN_DASH_HIEUH => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterNieunDashHieuh),
-            HALFWIDTH_HANGUL_LETTER_TIKEUT => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterTikeut),
-            HALFWIDTH_HANGUL_LETTER_SSANGTIKEUT => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangtikeut),
-            HALFWIDTH_HANGUL_LETTER_RIEUL => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieul),
-            HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_KIYEOK => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashKiyeok),
-            HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_MIEUM => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashMieum),
-            HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_PIEUP => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashPieup),
-            HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_SIOS => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashSios),
-            HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_THIEUTH => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashThieuth),
-            HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_PHIEUPH => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashPhieuph),
-            HALFWIDTH_HANGUL_LETTER_RIEUL_DASH_HIEUH => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashHieuh),
-            HALFWIDTH_HANGUL_LETTER_MIEUM => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterMieum),
-            HALFWIDTH_HANGUL_LETTER_PIEUP => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterPieup),
-            HALFWIDTH_HANGUL_LETTER_SSANGPIEUP => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangpieup),
-            HALFWIDTH_HANGUL_LETTER_PIEUP_DASH_SIOS => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterPieupDashSios),
-            HALFWIDTH_HANGUL_LETTER_SIOS => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSios),
-            HALFWIDTH_HANGUL_LETTER_SSANGSIOS => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangsios),
-            HALFWIDTH_HANGUL_LETTER_IEUNG => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterIeung),
-            HALFWIDTH_HANGUL_LETTER_CIEUC => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterCieuc),
-            HALFWIDTH_HANGUL_LETTER_SSANGCIEUC => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangcieuc),
-            HALFWIDTH_HANGUL_LETTER_CHIEUCH => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterChieuch),
-            HALFWIDTH_HANGUL_LETTER_KHIEUKH => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterKhieukh),
-            HALFWIDTH_HANGUL_LETTER_THIEUTH => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterThieuth),
-            HALFWIDTH_HANGUL_LETTER_PHIEUPH => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterPhieuph),
-            HALFWIDTH_HANGUL_LETTER_HIEUH => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterHieuh),
-            HALFWIDTH_HANGUL_LETTER_A => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterA),
-            HALFWIDTH_HANGUL_LETTER_AE => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterAe),
-            HALFWIDTH_HANGUL_LETTER_YA => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYa),
-            HALFWIDTH_HANGUL_LETTER_YAE => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYae),
-            HALFWIDTH_HANGUL_LETTER_EO => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterEo),
-            HALFWIDTH_HANGUL_LETTER_E => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterE),
-            HALFWIDTH_HANGUL_LETTER_YEO => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYeo),
-            HALFWIDTH_HANGUL_LETTER_YE => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYe),
-            HALFWIDTH_HANGUL_LETTER_O => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterO),
-            HALFWIDTH_HANGUL_LETTER_WA => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWa),
-            HALFWIDTH_HANGUL_LETTER_WAE => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWae),
-            HALFWIDTH_HANGUL_LETTER_OE => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterOe),
-            HALFWIDTH_HANGUL_LETTER_YO => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYo),
-            HALFWIDTH_HANGUL_LETTER_U => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterU),
-            HALFWIDTH_HANGUL_LETTER_WEO => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWeo),
-            HALFWIDTH_HANGUL_LETTER_WE => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWe),
-            HALFWIDTH_HANGUL_LETTER_WI => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWi),
-            HALFWIDTH_HANGUL_LETTER_YU => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYu),
-            HALFWIDTH_HANGUL_LETTER_EU => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterEu),
-            HALFWIDTH_HANGUL_LETTER_YI => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYi),
-            HALFWIDTH_HANGUL_LETTER_I => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterI),
-            FULLWIDTH_CENT_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthCentSign),
-            FULLWIDTH_POUND_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthPoundSign),
-            FULLWIDTH_NOT_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthNotSign),
-            FULLWIDTH_MACRON => Ok(HalfwidthandFullwidthForms::FullwidthMacron),
-            FULLWIDTH_BROKEN_BAR => Ok(HalfwidthandFullwidthForms::FullwidthBrokenBar),
-            FULLWIDTH_YEN_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthYenSign),
-            FULLWIDTH_WON_SIGN => Ok(HalfwidthandFullwidthForms::FullwidthWonSign),
-            HALFWIDTH_FORMS_LIGHT_VERTICAL => Ok(HalfwidthandFullwidthForms::HalfwidthFormsLightVertical),
-            HALFWIDTH_LEFTWARDS_ARROW => Ok(HalfwidthandFullwidthForms::HalfwidthLeftwardsArrow),
-            HALFWIDTH_UPWARDS_ARROW => Ok(HalfwidthandFullwidthForms::HalfwidthUpwardsArrow),
-            HALFWIDTH_RIGHTWARDS_ARROW => Ok(HalfwidthandFullwidthForms::HalfwidthRightwardsArrow),
-            HALFWIDTH_DOWNWARDS_ARROW => Ok(HalfwidthandFullwidthForms::HalfwidthDownwardsArrow),
-            HALFWIDTH_BLACK_SQUARE => Ok(HalfwidthandFullwidthForms::HalfwidthBlackSquare),
-            HALFWIDTH_WHITE_CIRCLE => Ok(HalfwidthandFullwidthForms::HalfwidthWhiteCircle),
+            '！' => Ok(HalfwidthandFullwidthForms::FullwidthExclamationMark),
+            '＂' => Ok(HalfwidthandFullwidthForms::FullwidthQuotationMark),
+            '＃' => Ok(HalfwidthandFullwidthForms::FullwidthNumberSign),
+            '＄' => Ok(HalfwidthandFullwidthForms::FullwidthDollarSign),
+            '％' => Ok(HalfwidthandFullwidthForms::FullwidthPercentSign),
+            '＆' => Ok(HalfwidthandFullwidthForms::FullwidthAmpersand),
+            '＇' => Ok(HalfwidthandFullwidthForms::FullwidthApostrophe),
+            '（' => Ok(HalfwidthandFullwidthForms::FullwidthLeftParenthesis),
+            '）' => Ok(HalfwidthandFullwidthForms::FullwidthRightParenthesis),
+            '＊' => Ok(HalfwidthandFullwidthForms::FullwidthAsterisk),
+            '＋' => Ok(HalfwidthandFullwidthForms::FullwidthPlusSign),
+            '，' => Ok(HalfwidthandFullwidthForms::FullwidthComma),
+            '－' => Ok(HalfwidthandFullwidthForms::FullwidthHyphenDashMinus),
+            '．' => Ok(HalfwidthandFullwidthForms::FullwidthFullStop),
+            '／' => Ok(HalfwidthandFullwidthForms::FullwidthSolidus),
+            '０' => Ok(HalfwidthandFullwidthForms::FullwidthDigitZero),
+            '１' => Ok(HalfwidthandFullwidthForms::FullwidthDigitOne),
+            '２' => Ok(HalfwidthandFullwidthForms::FullwidthDigitTwo),
+            '３' => Ok(HalfwidthandFullwidthForms::FullwidthDigitThree),
+            '４' => Ok(HalfwidthandFullwidthForms::FullwidthDigitFour),
+            '５' => Ok(HalfwidthandFullwidthForms::FullwidthDigitFive),
+            '６' => Ok(HalfwidthandFullwidthForms::FullwidthDigitSix),
+            '７' => Ok(HalfwidthandFullwidthForms::FullwidthDigitSeven),
+            '８' => Ok(HalfwidthandFullwidthForms::FullwidthDigitEight),
+            '９' => Ok(HalfwidthandFullwidthForms::FullwidthDigitNine),
+            '：' => Ok(HalfwidthandFullwidthForms::FullwidthColon),
+            '；' => Ok(HalfwidthandFullwidthForms::FullwidthSemicolon),
+            '＜' => Ok(HalfwidthandFullwidthForms::FullwidthLessDashThanSign),
+            '＝' => Ok(HalfwidthandFullwidthForms::FullwidthEqualsSign),
+            '＞' => Ok(HalfwidthandFullwidthForms::FullwidthGreaterDashThanSign),
+            '？' => Ok(HalfwidthandFullwidthForms::FullwidthQuestionMark),
+            '＠' => Ok(HalfwidthandFullwidthForms::FullwidthCommercialAt),
+            'Ａ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterA),
+            'Ｂ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterB),
+            'Ｃ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterC),
+            'Ｄ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterD),
+            'Ｅ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterE),
+            'Ｆ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterF),
+            'Ｇ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterG),
+            'Ｈ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterH),
+            'Ｉ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterI),
+            'Ｊ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterJ),
+            'Ｋ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterK),
+            'Ｌ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterL),
+            'Ｍ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterM),
+            'Ｎ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterN),
+            'Ｏ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterO),
+            'Ｐ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterP),
+            'Ｑ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterQ),
+            'Ｒ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterR),
+            'Ｓ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterS),
+            'Ｔ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterT),
+            'Ｕ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterU),
+            'Ｖ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterV),
+            'Ｗ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterW),
+            'Ｘ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterX),
+            'Ｙ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterY),
+            'Ｚ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinCapitalLetterZ),
+            '［' => Ok(HalfwidthandFullwidthForms::FullwidthLeftSquareBracket),
+            '＼' => Ok(HalfwidthandFullwidthForms::FullwidthReverseSolidus),
+            '］' => Ok(HalfwidthandFullwidthForms::FullwidthRightSquareBracket),
+            '＾' => Ok(HalfwidthandFullwidthForms::FullwidthCircumflexAccent),
+            '＿' => Ok(HalfwidthandFullwidthForms::FullwidthLowLine),
+            '｀' => Ok(HalfwidthandFullwidthForms::FullwidthGraveAccent),
+            'ａ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterA),
+            'ｂ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterB),
+            'ｃ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterC),
+            'ｄ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterD),
+            'ｅ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterE),
+            'ｆ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterF),
+            'ｇ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterG),
+            'ｈ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterH),
+            'ｉ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterI),
+            'ｊ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterJ),
+            'ｋ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterK),
+            'ｌ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterL),
+            'ｍ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterM),
+            'ｎ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterN),
+            'ｏ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterO),
+            'ｐ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterP),
+            'ｑ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterQ),
+            'ｒ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterR),
+            'ｓ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterS),
+            'ｔ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterT),
+            'ｕ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterU),
+            'ｖ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterV),
+            'ｗ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterW),
+            'ｘ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterX),
+            'ｙ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterY),
+            'ｚ' => Ok(HalfwidthandFullwidthForms::FullwidthLatinSmallLetterZ),
+            '｛' => Ok(HalfwidthandFullwidthForms::FullwidthLeftCurlyBracket),
+            '｜' => Ok(HalfwidthandFullwidthForms::FullwidthVerticalLine),
+            '｝' => Ok(HalfwidthandFullwidthForms::FullwidthRightCurlyBracket),
+            '～' => Ok(HalfwidthandFullwidthForms::FullwidthTilde),
+            '｟' => Ok(HalfwidthandFullwidthForms::FullwidthLeftWhiteParenthesis),
+            '｠' => Ok(HalfwidthandFullwidthForms::FullwidthRightWhiteParenthesis),
+            '｡' => Ok(HalfwidthandFullwidthForms::HalfwidthIdeographicFullStop),
+            '｢' => Ok(HalfwidthandFullwidthForms::HalfwidthLeftCornerBracket),
+            '｣' => Ok(HalfwidthandFullwidthForms::HalfwidthRightCornerBracket),
+            '､' => Ok(HalfwidthandFullwidthForms::HalfwidthIdeographicComma),
+            '･' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaMiddleDot),
+            'ｦ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterWo),
+            'ｧ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallA),
+            'ｨ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallI),
+            'ｩ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallU),
+            'ｪ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallE),
+            'ｫ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallO),
+            'ｬ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYa),
+            'ｭ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYu),
+            'ｮ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallYo),
+            'ｯ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSmallTu),
+            'ｰ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaDashHiraganaProlongedSoundMark),
+            'ｱ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterA),
+            'ｲ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterI),
+            'ｳ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterU),
+            'ｴ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterE),
+            'ｵ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterO),
+            'ｶ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKa),
+            'ｷ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKi),
+            'ｸ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKu),
+            'ｹ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKe),
+            'ｺ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterKo),
+            'ｻ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSa),
+            'ｼ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSi),
+            'ｽ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSu),
+            'ｾ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSe),
+            'ｿ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterSo),
+            'ﾀ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTa),
+            'ﾁ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTi),
+            'ﾂ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTu),
+            'ﾃ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTe),
+            'ﾄ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterTo),
+            'ﾅ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNa),
+            'ﾆ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNi),
+            'ﾇ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNu),
+            'ﾈ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNe),
+            'ﾉ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterNo),
+            'ﾊ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHa),
+            'ﾋ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHi),
+            'ﾌ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHu),
+            'ﾍ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHe),
+            'ﾎ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterHo),
+            'ﾏ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMa),
+            'ﾐ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMi),
+            'ﾑ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMu),
+            'ﾒ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMe),
+            'ﾓ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterMo),
+            'ﾔ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYa),
+            'ﾕ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYu),
+            'ﾖ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterYo),
+            'ﾗ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRa),
+            'ﾘ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRi),
+            'ﾙ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRu),
+            'ﾚ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRe),
+            'ﾛ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterRo),
+            'ﾜ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterWa),
+            'ﾝ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaLetterN),
+            'ﾞ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaVoicedSoundMark),
+            'ﾟ' => Ok(HalfwidthandFullwidthForms::HalfwidthKatakanaSemiDashVoicedSoundMark),
+            'ﾠ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulFiller),
+            'ﾡ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterKiyeok),
+            'ﾢ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangkiyeok),
+            'ﾣ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterKiyeokDashSios),
+            'ﾤ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterNieun),
+            'ﾥ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterNieunDashCieuc),
+            'ﾦ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterNieunDashHieuh),
+            'ﾧ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterTikeut),
+            'ﾨ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangtikeut),
+            'ﾩ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieul),
+            'ﾪ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashKiyeok),
+            'ﾫ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashMieum),
+            'ﾬ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashPieup),
+            'ﾭ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashSios),
+            'ﾮ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashThieuth),
+            'ﾯ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashPhieuph),
+            'ﾰ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterRieulDashHieuh),
+            'ﾱ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterMieum),
+            'ﾲ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterPieup),
+            'ﾳ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangpieup),
+            'ﾴ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterPieupDashSios),
+            'ﾵ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSios),
+            'ﾶ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangsios),
+            'ﾷ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterIeung),
+            'ﾸ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterCieuc),
+            'ﾹ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterSsangcieuc),
+            'ﾺ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterChieuch),
+            'ﾻ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterKhieukh),
+            'ﾼ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterThieuth),
+            'ﾽ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterPhieuph),
+            'ﾾ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterHieuh),
+            'ￂ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterA),
+            'ￃ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterAe),
+            'ￄ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYa),
+            'ￅ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYae),
+            'ￆ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterEo),
+            'ￇ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterE),
+            'ￊ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYeo),
+            'ￋ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYe),
+            'ￌ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterO),
+            'ￍ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWa),
+            'ￎ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWae),
+            'ￏ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterOe),
+            'ￒ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYo),
+            'ￓ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterU),
+            'ￔ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWeo),
+            'ￕ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWe),
+            'ￖ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterWi),
+            'ￗ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYu),
+            'ￚ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterEu),
+            'ￛ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterYi),
+            'ￜ' => Ok(HalfwidthandFullwidthForms::HalfwidthHangulLetterI),
+            '￠' => Ok(HalfwidthandFullwidthForms::FullwidthCentSign),
+            '￡' => Ok(HalfwidthandFullwidthForms::FullwidthPoundSign),
+            '￢' => Ok(HalfwidthandFullwidthForms::FullwidthNotSign),
+            '￣' => Ok(HalfwidthandFullwidthForms::FullwidthMacron),
+            '￤' => Ok(HalfwidthandFullwidthForms::FullwidthBrokenBar),
+            '￥' => Ok(HalfwidthandFullwidthForms::FullwidthYenSign),
+            '￦' => Ok(HalfwidthandFullwidthForms::FullwidthWonSign),
+            '￨' => Ok(HalfwidthandFullwidthForms::HalfwidthFormsLightVertical),
+            '￩' => Ok(HalfwidthandFullwidthForms::HalfwidthLeftwardsArrow),
+            '￪' => Ok(HalfwidthandFullwidthForms::HalfwidthUpwardsArrow),
+            '￫' => Ok(HalfwidthandFullwidthForms::HalfwidthRightwardsArrow),
+            '￬' => Ok(HalfwidthandFullwidthForms::HalfwidthDownwardsArrow),
+            '￭' => Ok(HalfwidthandFullwidthForms::HalfwidthBlackSquare),
+            '￮' => Ok(HalfwidthandFullwidthForms::HalfwidthWhiteCircle),
             _ => Err(()),
         }
     }

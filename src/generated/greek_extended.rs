@@ -1,472 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1f00}: 'ἀ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PSILI: char = 'ἀ';
-    /// \u{1f01}: 'ἁ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_DASIA: char = 'ἁ';
-    /// \u{1f02}: 'ἂ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_VARIA: char = 'ἂ';
-    /// \u{1f03}: 'ἃ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_VARIA: char = 'ἃ';
-    /// \u{1f04}: 'ἄ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_OXIA: char = 'ἄ';
-    /// \u{1f05}: 'ἅ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_OXIA: char = 'ἅ';
-    /// \u{1f06}: 'ἆ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI: char = 'ἆ';
-    /// \u{1f07}: 'ἇ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI: char = 'ἇ';
-    /// \u{1f08}: 'Ἀ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI: char = 'Ἀ';
-    /// \u{1f09}: 'Ἁ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA: char = 'Ἁ';
-    /// \u{1f0a}: 'Ἂ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_VARIA: char = 'Ἂ';
-    /// \u{1f0b}: 'Ἃ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_VARIA: char = 'Ἃ';
-    /// \u{1f0c}: 'Ἄ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_OXIA: char = 'Ἄ';
-    /// \u{1f0d}: 'Ἅ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_OXIA: char = 'Ἅ';
-    /// \u{1f0e}: 'Ἆ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI: char = 'Ἆ';
-    /// \u{1f0f}: 'Ἇ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI: char = 'Ἇ';
-    /// \u{1f10}: 'ἐ'
-    pub const GREEK_SMALL_LETTER_EPSILON_WITH_PSILI: char = 'ἐ';
-    /// \u{1f11}: 'ἑ'
-    pub const GREEK_SMALL_LETTER_EPSILON_WITH_DASIA: char = 'ἑ';
-    /// \u{1f12}: 'ἒ'
-    pub const GREEK_SMALL_LETTER_EPSILON_WITH_PSILI_AND_VARIA: char = 'ἒ';
-    /// \u{1f13}: 'ἓ'
-    pub const GREEK_SMALL_LETTER_EPSILON_WITH_DASIA_AND_VARIA: char = 'ἓ';
-    /// \u{1f14}: 'ἔ'
-    pub const GREEK_SMALL_LETTER_EPSILON_WITH_PSILI_AND_OXIA: char = 'ἔ';
-    /// \u{1f15}: 'ἕ'
-    pub const GREEK_SMALL_LETTER_EPSILON_WITH_DASIA_AND_OXIA: char = 'ἕ';
-    /// \u{1f18}: 'Ἐ'
-    pub const GREEK_CAPITAL_LETTER_EPSILON_WITH_PSILI: char = 'Ἐ';
-    /// \u{1f19}: 'Ἑ'
-    pub const GREEK_CAPITAL_LETTER_EPSILON_WITH_DASIA: char = 'Ἑ';
-    /// \u{1f1a}: 'Ἒ'
-    pub const GREEK_CAPITAL_LETTER_EPSILON_WITH_PSILI_AND_VARIA: char = 'Ἒ';
-    /// \u{1f1b}: 'Ἓ'
-    pub const GREEK_CAPITAL_LETTER_EPSILON_WITH_DASIA_AND_VARIA: char = 'Ἓ';
-    /// \u{1f1c}: 'Ἔ'
-    pub const GREEK_CAPITAL_LETTER_EPSILON_WITH_PSILI_AND_OXIA: char = 'Ἔ';
-    /// \u{1f1d}: 'Ἕ'
-    pub const GREEK_CAPITAL_LETTER_EPSILON_WITH_DASIA_AND_OXIA: char = 'Ἕ';
-    /// \u{1f20}: 'ἠ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PSILI: char = 'ἠ';
-    /// \u{1f21}: 'ἡ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_DASIA: char = 'ἡ';
-    /// \u{1f22}: 'ἢ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_VARIA: char = 'ἢ';
-    /// \u{1f23}: 'ἣ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_VARIA: char = 'ἣ';
-    /// \u{1f24}: 'ἤ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_OXIA: char = 'ἤ';
-    /// \u{1f25}: 'ἥ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_OXIA: char = 'ἥ';
-    /// \u{1f26}: 'ἦ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI: char = 'ἦ';
-    /// \u{1f27}: 'ἧ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI: char = 'ἧ';
-    /// \u{1f28}: 'Ἠ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_PSILI: char = 'Ἠ';
-    /// \u{1f29}: 'Ἡ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_DASIA: char = 'Ἡ';
-    /// \u{1f2a}: 'Ἢ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_VARIA: char = 'Ἢ';
-    /// \u{1f2b}: 'Ἣ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_VARIA: char = 'Ἣ';
-    /// \u{1f2c}: 'Ἤ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_OXIA: char = 'Ἤ';
-    /// \u{1f2d}: 'Ἥ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_OXIA: char = 'Ἥ';
-    /// \u{1f2e}: 'Ἦ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI: char = 'Ἦ';
-    /// \u{1f2f}: 'Ἧ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI: char = 'Ἧ';
-    /// \u{1f30}: 'ἰ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_PSILI: char = 'ἰ';
-    /// \u{1f31}: 'ἱ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_DASIA: char = 'ἱ';
-    /// \u{1f32}: 'ἲ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_PSILI_AND_VARIA: char = 'ἲ';
-    /// \u{1f33}: 'ἳ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_DASIA_AND_VARIA: char = 'ἳ';
-    /// \u{1f34}: 'ἴ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_PSILI_AND_OXIA: char = 'ἴ';
-    /// \u{1f35}: 'ἵ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_DASIA_AND_OXIA: char = 'ἵ';
-    /// \u{1f36}: 'ἶ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_PSILI_AND_PERISPOMENI: char = 'ἶ';
-    /// \u{1f37}: 'ἷ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_DASIA_AND_PERISPOMENI: char = 'ἷ';
-    /// \u{1f38}: 'Ἰ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI: char = 'Ἰ';
-    /// \u{1f39}: 'Ἱ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA: char = 'Ἱ';
-    /// \u{1f3a}: 'Ἲ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI_AND_VARIA: char = 'Ἲ';
-    /// \u{1f3b}: 'Ἳ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA_AND_VARIA: char = 'Ἳ';
-    /// \u{1f3c}: 'Ἴ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI_AND_OXIA: char = 'Ἴ';
-    /// \u{1f3d}: 'Ἵ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA_AND_OXIA: char = 'Ἵ';
-    /// \u{1f3e}: 'Ἶ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI_AND_PERISPOMENI: char = 'Ἶ';
-    /// \u{1f3f}: 'Ἷ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA_AND_PERISPOMENI: char = 'Ἷ';
-    /// \u{1f40}: 'ὀ'
-    pub const GREEK_SMALL_LETTER_OMICRON_WITH_PSILI: char = 'ὀ';
-    /// \u{1f41}: 'ὁ'
-    pub const GREEK_SMALL_LETTER_OMICRON_WITH_DASIA: char = 'ὁ';
-    /// \u{1f42}: 'ὂ'
-    pub const GREEK_SMALL_LETTER_OMICRON_WITH_PSILI_AND_VARIA: char = 'ὂ';
-    /// \u{1f43}: 'ὃ'
-    pub const GREEK_SMALL_LETTER_OMICRON_WITH_DASIA_AND_VARIA: char = 'ὃ';
-    /// \u{1f44}: 'ὄ'
-    pub const GREEK_SMALL_LETTER_OMICRON_WITH_PSILI_AND_OXIA: char = 'ὄ';
-    /// \u{1f45}: 'ὅ'
-    pub const GREEK_SMALL_LETTER_OMICRON_WITH_DASIA_AND_OXIA: char = 'ὅ';
-    /// \u{1f48}: 'Ὀ'
-    pub const GREEK_CAPITAL_LETTER_OMICRON_WITH_PSILI: char = 'Ὀ';
-    /// \u{1f49}: 'Ὁ'
-    pub const GREEK_CAPITAL_LETTER_OMICRON_WITH_DASIA: char = 'Ὁ';
-    /// \u{1f4a}: 'Ὂ'
-    pub const GREEK_CAPITAL_LETTER_OMICRON_WITH_PSILI_AND_VARIA: char = 'Ὂ';
-    /// \u{1f4b}: 'Ὃ'
-    pub const GREEK_CAPITAL_LETTER_OMICRON_WITH_DASIA_AND_VARIA: char = 'Ὃ';
-    /// \u{1f4c}: 'Ὄ'
-    pub const GREEK_CAPITAL_LETTER_OMICRON_WITH_PSILI_AND_OXIA: char = 'Ὄ';
-    /// \u{1f4d}: 'Ὅ'
-    pub const GREEK_CAPITAL_LETTER_OMICRON_WITH_DASIA_AND_OXIA: char = 'Ὅ';
-    /// \u{1f50}: 'ὐ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_PSILI: char = 'ὐ';
-    /// \u{1f51}: 'ὑ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_DASIA: char = 'ὑ';
-    /// \u{1f52}: 'ὒ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_PSILI_AND_VARIA: char = 'ὒ';
-    /// \u{1f53}: 'ὓ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_DASIA_AND_VARIA: char = 'ὓ';
-    /// \u{1f54}: 'ὔ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_PSILI_AND_OXIA: char = 'ὔ';
-    /// \u{1f55}: 'ὕ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_DASIA_AND_OXIA: char = 'ὕ';
-    /// \u{1f56}: 'ὖ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_PSILI_AND_PERISPOMENI: char = 'ὖ';
-    /// \u{1f57}: 'ὗ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_DASIA_AND_PERISPOMENI: char = 'ὗ';
-    /// \u{1f59}: 'Ὑ'
-    pub const GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA: char = 'Ὑ';
-    /// \u{1f5b}: 'Ὓ'
-    pub const GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA_AND_VARIA: char = 'Ὓ';
-    /// \u{1f5d}: 'Ὕ'
-    pub const GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA_AND_OXIA: char = 'Ὕ';
-    /// \u{1f5f}: 'Ὗ'
-    pub const GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA_AND_PERISPOMENI: char = 'Ὗ';
-    /// \u{1f60}: 'ὠ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PSILI: char = 'ὠ';
-    /// \u{1f61}: 'ὡ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_DASIA: char = 'ὡ';
-    /// \u{1f62}: 'ὢ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_VARIA: char = 'ὢ';
-    /// \u{1f63}: 'ὣ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_VARIA: char = 'ὣ';
-    /// \u{1f64}: 'ὤ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_OXIA: char = 'ὤ';
-    /// \u{1f65}: 'ὥ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_OXIA: char = 'ὥ';
-    /// \u{1f66}: 'ὦ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI: char = 'ὦ';
-    /// \u{1f67}: 'ὧ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI: char = 'ὧ';
-    /// \u{1f68}: 'Ὠ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI: char = 'Ὠ';
-    /// \u{1f69}: 'Ὡ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA: char = 'Ὡ';
-    /// \u{1f6a}: 'Ὢ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_VARIA: char = 'Ὢ';
-    /// \u{1f6b}: 'Ὣ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_VARIA: char = 'Ὣ';
-    /// \u{1f6c}: 'Ὤ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_OXIA: char = 'Ὤ';
-    /// \u{1f6d}: 'Ὥ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_OXIA: char = 'Ὥ';
-    /// \u{1f6e}: 'Ὦ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI: char = 'Ὦ';
-    /// \u{1f6f}: 'Ὧ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI: char = 'Ὧ';
-    /// \u{1f70}: 'ὰ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_VARIA: char = 'ὰ';
-    /// \u{1f71}: 'ά'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_OXIA: char = 'ά';
-    /// \u{1f72}: 'ὲ'
-    pub const GREEK_SMALL_LETTER_EPSILON_WITH_VARIA: char = 'ὲ';
-    /// \u{1f73}: 'έ'
-    pub const GREEK_SMALL_LETTER_EPSILON_WITH_OXIA: char = 'έ';
-    /// \u{1f74}: 'ὴ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_VARIA: char = 'ὴ';
-    /// \u{1f75}: 'ή'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_OXIA: char = 'ή';
-    /// \u{1f76}: 'ὶ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_VARIA: char = 'ὶ';
-    /// \u{1f77}: 'ί'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_OXIA: char = 'ί';
-    /// \u{1f78}: 'ὸ'
-    pub const GREEK_SMALL_LETTER_OMICRON_WITH_VARIA: char = 'ὸ';
-    /// \u{1f79}: 'ό'
-    pub const GREEK_SMALL_LETTER_OMICRON_WITH_OXIA: char = 'ό';
-    /// \u{1f7a}: 'ὺ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_VARIA: char = 'ὺ';
-    /// \u{1f7b}: 'ύ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_OXIA: char = 'ύ';
-    /// \u{1f7c}: 'ὼ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_VARIA: char = 'ὼ';
-    /// \u{1f7d}: 'ώ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_OXIA: char = 'ώ';
-    /// \u{1f80}: 'ᾀ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_YPOGEGRAMMENI: char = 'ᾀ';
-    /// \u{1f81}: 'ᾁ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_YPOGEGRAMMENI: char = 'ᾁ';
-    /// \u{1f82}: 'ᾂ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_VARIA_AND_YPOGEGRAMMENI: char = 'ᾂ';
-    /// \u{1f83}: 'ᾃ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_VARIA_AND_YPOGEGRAMMENI: char = 'ᾃ';
-    /// \u{1f84}: 'ᾄ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_OXIA_AND_YPOGEGRAMMENI: char = 'ᾄ';
-    /// \u{1f85}: 'ᾅ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_OXIA_AND_YPOGEGRAMMENI: char = 'ᾅ';
-    /// \u{1f86}: 'ᾆ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI_AND_YPOGEGRAMMENI: char = 'ᾆ';
-    /// \u{1f87}: 'ᾇ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI_AND_YPOGEGRAMMENI: char = 'ᾇ';
-    /// \u{1f88}: 'ᾈ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_PROSGEGRAMMENI: char = 'ᾈ';
-    /// \u{1f89}: 'ᾉ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_PROSGEGRAMMENI: char = 'ᾉ';
-    /// \u{1f8a}: 'ᾊ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_VARIA_AND_PROSGEGRAMMENI: char = 'ᾊ';
-    /// \u{1f8b}: 'ᾋ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_VARIA_AND_PROSGEGRAMMENI: char = 'ᾋ';
-    /// \u{1f8c}: 'ᾌ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_OXIA_AND_PROSGEGRAMMENI: char = 'ᾌ';
-    /// \u{1f8d}: 'ᾍ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_OXIA_AND_PROSGEGRAMMENI: char = 'ᾍ';
-    /// \u{1f8e}: 'ᾎ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI_AND_PROSGEGRAMMENI: char = 'ᾎ';
-    /// \u{1f8f}: 'ᾏ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI_AND_PROSGEGRAMMENI: char = 'ᾏ';
-    /// \u{1f90}: 'ᾐ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_YPOGEGRAMMENI: char = 'ᾐ';
-    /// \u{1f91}: 'ᾑ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_YPOGEGRAMMENI: char = 'ᾑ';
-    /// \u{1f92}: 'ᾒ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_VARIA_AND_YPOGEGRAMMENI: char = 'ᾒ';
-    /// \u{1f93}: 'ᾓ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_VARIA_AND_YPOGEGRAMMENI: char = 'ᾓ';
-    /// \u{1f94}: 'ᾔ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_OXIA_AND_YPOGEGRAMMENI: char = 'ᾔ';
-    /// \u{1f95}: 'ᾕ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_OXIA_AND_YPOGEGRAMMENI: char = 'ᾕ';
-    /// \u{1f96}: 'ᾖ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI_AND_YPOGEGRAMMENI: char = 'ᾖ';
-    /// \u{1f97}: 'ᾗ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI_AND_YPOGEGRAMMENI: char = 'ᾗ';
-    /// \u{1f98}: 'ᾘ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_PROSGEGRAMMENI: char = 'ᾘ';
-    /// \u{1f99}: 'ᾙ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_PROSGEGRAMMENI: char = 'ᾙ';
-    /// \u{1f9a}: 'ᾚ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_VARIA_AND_PROSGEGRAMMENI: char = 'ᾚ';
-    /// \u{1f9b}: 'ᾛ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_VARIA_AND_PROSGEGRAMMENI: char = 'ᾛ';
-    /// \u{1f9c}: 'ᾜ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_OXIA_AND_PROSGEGRAMMENI: char = 'ᾜ';
-    /// \u{1f9d}: 'ᾝ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_OXIA_AND_PROSGEGRAMMENI: char = 'ᾝ';
-    /// \u{1f9e}: 'ᾞ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI_AND_PROSGEGRAMMENI: char = 'ᾞ';
-    /// \u{1f9f}: 'ᾟ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI_AND_PROSGEGRAMMENI: char = 'ᾟ';
-    /// \u{1fa0}: 'ᾠ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_YPOGEGRAMMENI: char = 'ᾠ';
-    /// \u{1fa1}: 'ᾡ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_YPOGEGRAMMENI: char = 'ᾡ';
-    /// \u{1fa2}: 'ᾢ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_VARIA_AND_YPOGEGRAMMENI: char = 'ᾢ';
-    /// \u{1fa3}: 'ᾣ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_VARIA_AND_YPOGEGRAMMENI: char = 'ᾣ';
-    /// \u{1fa4}: 'ᾤ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_OXIA_AND_YPOGEGRAMMENI: char = 'ᾤ';
-    /// \u{1fa5}: 'ᾥ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_OXIA_AND_YPOGEGRAMMENI: char = 'ᾥ';
-    /// \u{1fa6}: 'ᾦ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI_AND_YPOGEGRAMMENI: char = 'ᾦ';
-    /// \u{1fa7}: 'ᾧ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI_AND_YPOGEGRAMMENI: char = 'ᾧ';
-    /// \u{1fa8}: 'ᾨ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_PROSGEGRAMMENI: char = 'ᾨ';
-    /// \u{1fa9}: 'ᾩ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_PROSGEGRAMMENI: char = 'ᾩ';
-    /// \u{1faa}: 'ᾪ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_VARIA_AND_PROSGEGRAMMENI: char = 'ᾪ';
-    /// \u{1fab}: 'ᾫ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_VARIA_AND_PROSGEGRAMMENI: char = 'ᾫ';
-    /// \u{1fac}: 'ᾬ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_OXIA_AND_PROSGEGRAMMENI: char = 'ᾬ';
-    /// \u{1fad}: 'ᾭ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_OXIA_AND_PROSGEGRAMMENI: char = 'ᾭ';
-    /// \u{1fae}: 'ᾮ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI_AND_PROSGEGRAMMENI: char = 'ᾮ';
-    /// \u{1faf}: 'ᾯ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI_AND_PROSGEGRAMMENI: char = 'ᾯ';
-    /// \u{1fb0}: 'ᾰ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_VRACHY: char = 'ᾰ';
-    /// \u{1fb1}: 'ᾱ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_MACRON: char = 'ᾱ';
-    /// \u{1fb2}: 'ᾲ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_VARIA_AND_YPOGEGRAMMENI: char = 'ᾲ';
-    /// \u{1fb3}: 'ᾳ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_YPOGEGRAMMENI: char = 'ᾳ';
-    /// \u{1fb4}: 'ᾴ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_OXIA_AND_YPOGEGRAMMENI: char = 'ᾴ';
-    /// \u{1fb6}: 'ᾶ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PERISPOMENI: char = 'ᾶ';
-    /// \u{1fb7}: 'ᾷ'
-    pub const GREEK_SMALL_LETTER_ALPHA_WITH_PERISPOMENI_AND_YPOGEGRAMMENI: char = 'ᾷ';
-    /// \u{1fb8}: 'Ᾰ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_VRACHY: char = 'Ᾰ';
-    /// \u{1fb9}: 'Ᾱ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_MACRON: char = 'Ᾱ';
-    /// \u{1fba}: 'Ὰ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_VARIA: char = 'Ὰ';
-    /// \u{1fbb}: 'Ά'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_OXIA: char = 'Ά';
-    /// \u{1fbc}: 'ᾼ'
-    pub const GREEK_CAPITAL_LETTER_ALPHA_WITH_PROSGEGRAMMENI: char = 'ᾼ';
-    /// \u{1fbd}: '᾽'
-    pub const GREEK_KORONIS: char = '᾽';
-    /// \u{1fbe}: 'ι'
-    pub const GREEK_PROSGEGRAMMENI: char = 'ι';
-    /// \u{1fbf}: '᾿'
-    pub const GREEK_PSILI: char = '᾿';
-    /// \u{1fc0}: '῀'
-    pub const GREEK_PERISPOMENI: char = '῀';
-    /// \u{1fc1}: '῁'
-    pub const GREEK_DIALYTIKA_AND_PERISPOMENI: char = '῁';
-    /// \u{1fc2}: 'ῂ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_VARIA_AND_YPOGEGRAMMENI: char = 'ῂ';
-    /// \u{1fc3}: 'ῃ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_YPOGEGRAMMENI: char = 'ῃ';
-    /// \u{1fc4}: 'ῄ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_OXIA_AND_YPOGEGRAMMENI: char = 'ῄ';
-    /// \u{1fc6}: 'ῆ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PERISPOMENI: char = 'ῆ';
-    /// \u{1fc7}: 'ῇ'
-    pub const GREEK_SMALL_LETTER_ETA_WITH_PERISPOMENI_AND_YPOGEGRAMMENI: char = 'ῇ';
-    /// \u{1fc8}: 'Ὲ'
-    pub const GREEK_CAPITAL_LETTER_EPSILON_WITH_VARIA: char = 'Ὲ';
-    /// \u{1fc9}: 'Έ'
-    pub const GREEK_CAPITAL_LETTER_EPSILON_WITH_OXIA: char = 'Έ';
-    /// \u{1fca}: 'Ὴ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_VARIA: char = 'Ὴ';
-    /// \u{1fcb}: 'Ή'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_OXIA: char = 'Ή';
-    /// \u{1fcc}: 'ῌ'
-    pub const GREEK_CAPITAL_LETTER_ETA_WITH_PROSGEGRAMMENI: char = 'ῌ';
-    /// \u{1fcd}: '῍'
-    pub const GREEK_PSILI_AND_VARIA: char = '῍';
-    /// \u{1fce}: '῎'
-    pub const GREEK_PSILI_AND_OXIA: char = '῎';
-    /// \u{1fcf}: '῏'
-    pub const GREEK_PSILI_AND_PERISPOMENI: char = '῏';
-    /// \u{1fd0}: 'ῐ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_VRACHY: char = 'ῐ';
-    /// \u{1fd1}: 'ῑ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_MACRON: char = 'ῑ';
-    /// \u{1fd2}: 'ῒ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_DIALYTIKA_AND_VARIA: char = 'ῒ';
-    /// \u{1fd3}: 'ΐ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_DIALYTIKA_AND_OXIA: char = 'ΐ';
-    /// \u{1fd6}: 'ῖ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_PERISPOMENI: char = 'ῖ';
-    /// \u{1fd7}: 'ῗ'
-    pub const GREEK_SMALL_LETTER_IOTA_WITH_DIALYTIKA_AND_PERISPOMENI: char = 'ῗ';
-    /// \u{1fd8}: 'Ῐ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_VRACHY: char = 'Ῐ';
-    /// \u{1fd9}: 'Ῑ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_MACRON: char = 'Ῑ';
-    /// \u{1fda}: 'Ὶ'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_VARIA: char = 'Ὶ';
-    /// \u{1fdb}: 'Ί'
-    pub const GREEK_CAPITAL_LETTER_IOTA_WITH_OXIA: char = 'Ί';
-    /// \u{1fdd}: '῝'
-    pub const GREEK_DASIA_AND_VARIA: char = '῝';
-    /// \u{1fde}: '῞'
-    pub const GREEK_DASIA_AND_OXIA: char = '῞';
-    /// \u{1fdf}: '῟'
-    pub const GREEK_DASIA_AND_PERISPOMENI: char = '῟';
-    /// \u{1fe0}: 'ῠ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_VRACHY: char = 'ῠ';
-    /// \u{1fe1}: 'ῡ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_MACRON: char = 'ῡ';
-    /// \u{1fe2}: 'ῢ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_DIALYTIKA_AND_VARIA: char = 'ῢ';
-    /// \u{1fe3}: 'ΰ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_DIALYTIKA_AND_OXIA: char = 'ΰ';
-    /// \u{1fe4}: 'ῤ'
-    pub const GREEK_SMALL_LETTER_RHO_WITH_PSILI: char = 'ῤ';
-    /// \u{1fe5}: 'ῥ'
-    pub const GREEK_SMALL_LETTER_RHO_WITH_DASIA: char = 'ῥ';
-    /// \u{1fe6}: 'ῦ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_PERISPOMENI: char = 'ῦ';
-    /// \u{1fe7}: 'ῧ'
-    pub const GREEK_SMALL_LETTER_UPSILON_WITH_DIALYTIKA_AND_PERISPOMENI: char = 'ῧ';
-    /// \u{1fe8}: 'Ῠ'
-    pub const GREEK_CAPITAL_LETTER_UPSILON_WITH_VRACHY: char = 'Ῠ';
-    /// \u{1fe9}: 'Ῡ'
-    pub const GREEK_CAPITAL_LETTER_UPSILON_WITH_MACRON: char = 'Ῡ';
-    /// \u{1fea}: 'Ὺ'
-    pub const GREEK_CAPITAL_LETTER_UPSILON_WITH_VARIA: char = 'Ὺ';
-    /// \u{1feb}: 'Ύ'
-    pub const GREEK_CAPITAL_LETTER_UPSILON_WITH_OXIA: char = 'Ύ';
-    /// \u{1fec}: 'Ῥ'
-    pub const GREEK_CAPITAL_LETTER_RHO_WITH_DASIA: char = 'Ῥ';
-    /// \u{1fed}: '῭'
-    pub const GREEK_DIALYTIKA_AND_VARIA: char = '῭';
-    /// \u{1fee}: '΅'
-    pub const GREEK_DIALYTIKA_AND_OXIA: char = '΅';
-    /// \u{1fef}: '`'
-    pub const GREEK_VARIA: char = '`';
-    /// \u{1ff2}: 'ῲ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_VARIA_AND_YPOGEGRAMMENI: char = 'ῲ';
-    /// \u{1ff3}: 'ῳ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_YPOGEGRAMMENI: char = 'ῳ';
-    /// \u{1ff4}: 'ῴ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_OXIA_AND_YPOGEGRAMMENI: char = 'ῴ';
-    /// \u{1ff6}: 'ῶ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PERISPOMENI: char = 'ῶ';
-    /// \u{1ff7}: 'ῷ'
-    pub const GREEK_SMALL_LETTER_OMEGA_WITH_PERISPOMENI_AND_YPOGEGRAMMENI: char = 'ῷ';
-    /// \u{1ff8}: 'Ὸ'
-    pub const GREEK_CAPITAL_LETTER_OMICRON_WITH_VARIA: char = 'Ὸ';
-    /// \u{1ff9}: 'Ό'
-    pub const GREEK_CAPITAL_LETTER_OMICRON_WITH_OXIA: char = 'Ό';
-    /// \u{1ffa}: 'Ὼ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_VARIA: char = 'Ὼ';
-    /// \u{1ffb}: 'Ώ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_OXIA: char = 'Ώ';
-    /// \u{1ffc}: 'ῼ'
-    pub const GREEK_CAPITAL_LETTER_OMEGA_WITH_PROSGEGRAMMENI: char = 'ῼ';
-    /// \u{1ffd}: '´'
-    pub const GREEK_OXIA: char = '´';
-    /// \u{1ffe}: '῾'
-    pub const GREEK_DASIA: char = '῾';
-}
 
 /// An enum to represent all characters in the GreekExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -941,241 +472,240 @@ pub enum GreekExtended {
 
 impl Into<char> for GreekExtended {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            GreekExtended::GreekSmallLetterAlphaWithPsili => GREEK_SMALL_LETTER_ALPHA_WITH_PSILI,
-            GreekExtended::GreekSmallLetterAlphaWithDasia => GREEK_SMALL_LETTER_ALPHA_WITH_DASIA,
-            GreekExtended::GreekSmallLetterAlphaWithPsiliAndVaria => GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekSmallLetterAlphaWithDasiaAndVaria => GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekSmallLetterAlphaWithPsiliAndOxia => GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekSmallLetterAlphaWithDasiaAndOxia => GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekSmallLetterAlphaWithPsiliAndPerispomeni => GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterAlphaWithDasiaAndPerispomeni => GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithPsili => GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI,
-            GreekExtended::GreekCapitalLetterAlphaWithDasia => GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA,
-            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndVaria => GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndVaria => GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndOxia => GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndOxia => GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndPerispomeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndPerispomeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterEpsilonWithPsili => GREEK_SMALL_LETTER_EPSILON_WITH_PSILI,
-            GreekExtended::GreekSmallLetterEpsilonWithDasia => GREEK_SMALL_LETTER_EPSILON_WITH_DASIA,
-            GreekExtended::GreekSmallLetterEpsilonWithPsiliAndVaria => GREEK_SMALL_LETTER_EPSILON_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekSmallLetterEpsilonWithDasiaAndVaria => GREEK_SMALL_LETTER_EPSILON_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekSmallLetterEpsilonWithPsiliAndOxia => GREEK_SMALL_LETTER_EPSILON_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekSmallLetterEpsilonWithDasiaAndOxia => GREEK_SMALL_LETTER_EPSILON_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekCapitalLetterEpsilonWithPsili => GREEK_CAPITAL_LETTER_EPSILON_WITH_PSILI,
-            GreekExtended::GreekCapitalLetterEpsilonWithDasia => GREEK_CAPITAL_LETTER_EPSILON_WITH_DASIA,
-            GreekExtended::GreekCapitalLetterEpsilonWithPsiliAndVaria => GREEK_CAPITAL_LETTER_EPSILON_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekCapitalLetterEpsilonWithDasiaAndVaria => GREEK_CAPITAL_LETTER_EPSILON_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekCapitalLetterEpsilonWithPsiliAndOxia => GREEK_CAPITAL_LETTER_EPSILON_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekCapitalLetterEpsilonWithDasiaAndOxia => GREEK_CAPITAL_LETTER_EPSILON_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekSmallLetterEtaWithPsili => GREEK_SMALL_LETTER_ETA_WITH_PSILI,
-            GreekExtended::GreekSmallLetterEtaWithDasia => GREEK_SMALL_LETTER_ETA_WITH_DASIA,
-            GreekExtended::GreekSmallLetterEtaWithPsiliAndVaria => GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekSmallLetterEtaWithDasiaAndVaria => GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekSmallLetterEtaWithPsiliAndOxia => GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekSmallLetterEtaWithDasiaAndOxia => GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekSmallLetterEtaWithPsiliAndPerispomeni => GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterEtaWithDasiaAndPerispomeni => GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterEtaWithPsili => GREEK_CAPITAL_LETTER_ETA_WITH_PSILI,
-            GreekExtended::GreekCapitalLetterEtaWithDasia => GREEK_CAPITAL_LETTER_ETA_WITH_DASIA,
-            GreekExtended::GreekCapitalLetterEtaWithPsiliAndVaria => GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekCapitalLetterEtaWithDasiaAndVaria => GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekCapitalLetterEtaWithPsiliAndOxia => GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekCapitalLetterEtaWithDasiaAndOxia => GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekCapitalLetterEtaWithPsiliAndPerispomeni => GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterEtaWithDasiaAndPerispomeni => GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterIotaWithPsili => GREEK_SMALL_LETTER_IOTA_WITH_PSILI,
-            GreekExtended::GreekSmallLetterIotaWithDasia => GREEK_SMALL_LETTER_IOTA_WITH_DASIA,
-            GreekExtended::GreekSmallLetterIotaWithPsiliAndVaria => GREEK_SMALL_LETTER_IOTA_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekSmallLetterIotaWithDasiaAndVaria => GREEK_SMALL_LETTER_IOTA_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekSmallLetterIotaWithPsiliAndOxia => GREEK_SMALL_LETTER_IOTA_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekSmallLetterIotaWithDasiaAndOxia => GREEK_SMALL_LETTER_IOTA_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekSmallLetterIotaWithPsiliAndPerispomeni => GREEK_SMALL_LETTER_IOTA_WITH_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterIotaWithDasiaAndPerispomeni => GREEK_SMALL_LETTER_IOTA_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterIotaWithPsili => GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI,
-            GreekExtended::GreekCapitalLetterIotaWithDasia => GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA,
-            GreekExtended::GreekCapitalLetterIotaWithPsiliAndVaria => GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekCapitalLetterIotaWithDasiaAndVaria => GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekCapitalLetterIotaWithPsiliAndOxia => GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekCapitalLetterIotaWithDasiaAndOxia => GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekCapitalLetterIotaWithPsiliAndPerispomeni => GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterIotaWithDasiaAndPerispomeni => GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterOmicronWithPsili => GREEK_SMALL_LETTER_OMICRON_WITH_PSILI,
-            GreekExtended::GreekSmallLetterOmicronWithDasia => GREEK_SMALL_LETTER_OMICRON_WITH_DASIA,
-            GreekExtended::GreekSmallLetterOmicronWithPsiliAndVaria => GREEK_SMALL_LETTER_OMICRON_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekSmallLetterOmicronWithDasiaAndVaria => GREEK_SMALL_LETTER_OMICRON_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekSmallLetterOmicronWithPsiliAndOxia => GREEK_SMALL_LETTER_OMICRON_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekSmallLetterOmicronWithDasiaAndOxia => GREEK_SMALL_LETTER_OMICRON_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekCapitalLetterOmicronWithPsili => GREEK_CAPITAL_LETTER_OMICRON_WITH_PSILI,
-            GreekExtended::GreekCapitalLetterOmicronWithDasia => GREEK_CAPITAL_LETTER_OMICRON_WITH_DASIA,
-            GreekExtended::GreekCapitalLetterOmicronWithPsiliAndVaria => GREEK_CAPITAL_LETTER_OMICRON_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekCapitalLetterOmicronWithDasiaAndVaria => GREEK_CAPITAL_LETTER_OMICRON_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekCapitalLetterOmicronWithPsiliAndOxia => GREEK_CAPITAL_LETTER_OMICRON_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekCapitalLetterOmicronWithDasiaAndOxia => GREEK_CAPITAL_LETTER_OMICRON_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekSmallLetterUpsilonWithPsili => GREEK_SMALL_LETTER_UPSILON_WITH_PSILI,
-            GreekExtended::GreekSmallLetterUpsilonWithDasia => GREEK_SMALL_LETTER_UPSILON_WITH_DASIA,
-            GreekExtended::GreekSmallLetterUpsilonWithPsiliAndVaria => GREEK_SMALL_LETTER_UPSILON_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekSmallLetterUpsilonWithDasiaAndVaria => GREEK_SMALL_LETTER_UPSILON_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekSmallLetterUpsilonWithPsiliAndOxia => GREEK_SMALL_LETTER_UPSILON_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekSmallLetterUpsilonWithDasiaAndOxia => GREEK_SMALL_LETTER_UPSILON_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekSmallLetterUpsilonWithPsiliAndPerispomeni => GREEK_SMALL_LETTER_UPSILON_WITH_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterUpsilonWithDasiaAndPerispomeni => GREEK_SMALL_LETTER_UPSILON_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterUpsilonWithDasia => GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA,
-            GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndVaria => GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndOxia => GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndPerispomeni => GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterOmegaWithPsili => GREEK_SMALL_LETTER_OMEGA_WITH_PSILI,
-            GreekExtended::GreekSmallLetterOmegaWithDasia => GREEK_SMALL_LETTER_OMEGA_WITH_DASIA,
-            GreekExtended::GreekSmallLetterOmegaWithPsiliAndVaria => GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekSmallLetterOmegaWithDasiaAndVaria => GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekSmallLetterOmegaWithPsiliAndOxia => GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekSmallLetterOmegaWithDasiaAndOxia => GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekSmallLetterOmegaWithPsiliAndPerispomeni => GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterOmegaWithDasiaAndPerispomeni => GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithPsili => GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI,
-            GreekExtended::GreekCapitalLetterOmegaWithDasia => GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA,
-            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndVaria => GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_VARIA,
-            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndVaria => GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_VARIA,
-            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndOxia => GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_OXIA,
-            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndOxia => GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_OXIA,
-            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndPerispomeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndPerispomeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterAlphaWithVaria => GREEK_SMALL_LETTER_ALPHA_WITH_VARIA,
-            GreekExtended::GreekSmallLetterAlphaWithOxia => GREEK_SMALL_LETTER_ALPHA_WITH_OXIA,
-            GreekExtended::GreekSmallLetterEpsilonWithVaria => GREEK_SMALL_LETTER_EPSILON_WITH_VARIA,
-            GreekExtended::GreekSmallLetterEpsilonWithOxia => GREEK_SMALL_LETTER_EPSILON_WITH_OXIA,
-            GreekExtended::GreekSmallLetterEtaWithVaria => GREEK_SMALL_LETTER_ETA_WITH_VARIA,
-            GreekExtended::GreekSmallLetterEtaWithOxia => GREEK_SMALL_LETTER_ETA_WITH_OXIA,
-            GreekExtended::GreekSmallLetterIotaWithVaria => GREEK_SMALL_LETTER_IOTA_WITH_VARIA,
-            GreekExtended::GreekSmallLetterIotaWithOxia => GREEK_SMALL_LETTER_IOTA_WITH_OXIA,
-            GreekExtended::GreekSmallLetterOmicronWithVaria => GREEK_SMALL_LETTER_OMICRON_WITH_VARIA,
-            GreekExtended::GreekSmallLetterOmicronWithOxia => GREEK_SMALL_LETTER_OMICRON_WITH_OXIA,
-            GreekExtended::GreekSmallLetterUpsilonWithVaria => GREEK_SMALL_LETTER_UPSILON_WITH_VARIA,
-            GreekExtended::GreekSmallLetterUpsilonWithOxia => GREEK_SMALL_LETTER_UPSILON_WITH_OXIA,
-            GreekExtended::GreekSmallLetterOmegaWithVaria => GREEK_SMALL_LETTER_OMEGA_WITH_VARIA,
-            GreekExtended::GreekSmallLetterOmegaWithOxia => GREEK_SMALL_LETTER_OMEGA_WITH_OXIA,
-            GreekExtended::GreekSmallLetterAlphaWithPsiliAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithDasiaAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithPsiliAndVariaAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_VARIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithDasiaAndVariaAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_VARIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithPsiliAndOxiaAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_OXIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithDasiaAndOxiaAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_OXIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithPsiliAndPerispomeniAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithDasiaAndPerispomeniAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndProsgegrammeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndVariaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_VARIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndVariaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_VARIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndOxiaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_OXIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndOxiaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_OXIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndPerispomeniAndProsgegrammeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndPerispomeniAndProsgegrammeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithPsiliAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithDasiaAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithPsiliAndVariaAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_VARIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithDasiaAndVariaAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_VARIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithPsiliAndOxiaAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_OXIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithDasiaAndOxiaAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_OXIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithPsiliAndPerispomeniAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithDasiaAndPerispomeniAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterEtaWithPsiliAndProsgegrammeni => GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterEtaWithDasiaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterEtaWithPsiliAndVariaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_VARIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterEtaWithDasiaAndVariaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_VARIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterEtaWithPsiliAndOxiaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_OXIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterEtaWithDasiaAndOxiaAndProsgegrammeni => GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_OXIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterEtaWithPsiliAndPerispomeniAndProsgegrammeni => GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterEtaWithDasiaAndPerispomeniAndProsgegrammeni => GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithPsiliAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithDasiaAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithPsiliAndVariaAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_VARIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithDasiaAndVariaAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_VARIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithPsiliAndOxiaAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_OXIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithDasiaAndOxiaAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_OXIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithPsiliAndPerispomeniAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithDasiaAndPerispomeniAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndProsgegrammeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndProsgegrammeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndVariaAndProsgegrammeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_VARIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndVariaAndProsgegrammeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_VARIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndOxiaAndProsgegrammeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_OXIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndOxiaAndProsgegrammeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_OXIA_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndPerispomeniAndProsgegrammeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndPerispomeniAndProsgegrammeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI_AND_PROSGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithVrachy => GREEK_SMALL_LETTER_ALPHA_WITH_VRACHY,
-            GreekExtended::GreekSmallLetterAlphaWithMacron => GREEK_SMALL_LETTER_ALPHA_WITH_MACRON,
-            GreekExtended::GreekSmallLetterAlphaWithVariaAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_VARIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithOxiaAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_OXIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterAlphaWithPerispomeni => GREEK_SMALL_LETTER_ALPHA_WITH_PERISPOMENI,
-            GreekExtended::GreekSmallLetterAlphaWithPerispomeniAndYpogegrammeni => GREEK_SMALL_LETTER_ALPHA_WITH_PERISPOMENI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterAlphaWithVrachy => GREEK_CAPITAL_LETTER_ALPHA_WITH_VRACHY,
-            GreekExtended::GreekCapitalLetterAlphaWithMacron => GREEK_CAPITAL_LETTER_ALPHA_WITH_MACRON,
-            GreekExtended::GreekCapitalLetterAlphaWithVaria => GREEK_CAPITAL_LETTER_ALPHA_WITH_VARIA,
-            GreekExtended::GreekCapitalLetterAlphaWithOxia => GREEK_CAPITAL_LETTER_ALPHA_WITH_OXIA,
-            GreekExtended::GreekCapitalLetterAlphaWithProsgegrammeni => GREEK_CAPITAL_LETTER_ALPHA_WITH_PROSGEGRAMMENI,
-            GreekExtended::GreekKoronis => GREEK_KORONIS,
-            GreekExtended::GreekProsgegrammeni => GREEK_PROSGEGRAMMENI,
-            GreekExtended::GreekPsili => GREEK_PSILI,
-            GreekExtended::GreekPerispomeni => GREEK_PERISPOMENI,
-            GreekExtended::GreekDialytikaAndPerispomeni => GREEK_DIALYTIKA_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterEtaWithVariaAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_VARIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithOxiaAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_OXIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterEtaWithPerispomeni => GREEK_SMALL_LETTER_ETA_WITH_PERISPOMENI,
-            GreekExtended::GreekSmallLetterEtaWithPerispomeniAndYpogegrammeni => GREEK_SMALL_LETTER_ETA_WITH_PERISPOMENI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterEpsilonWithVaria => GREEK_CAPITAL_LETTER_EPSILON_WITH_VARIA,
-            GreekExtended::GreekCapitalLetterEpsilonWithOxia => GREEK_CAPITAL_LETTER_EPSILON_WITH_OXIA,
-            GreekExtended::GreekCapitalLetterEtaWithVaria => GREEK_CAPITAL_LETTER_ETA_WITH_VARIA,
-            GreekExtended::GreekCapitalLetterEtaWithOxia => GREEK_CAPITAL_LETTER_ETA_WITH_OXIA,
-            GreekExtended::GreekCapitalLetterEtaWithProsgegrammeni => GREEK_CAPITAL_LETTER_ETA_WITH_PROSGEGRAMMENI,
-            GreekExtended::GreekPsiliAndVaria => GREEK_PSILI_AND_VARIA,
-            GreekExtended::GreekPsiliAndOxia => GREEK_PSILI_AND_OXIA,
-            GreekExtended::GreekPsiliAndPerispomeni => GREEK_PSILI_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterIotaWithVrachy => GREEK_SMALL_LETTER_IOTA_WITH_VRACHY,
-            GreekExtended::GreekSmallLetterIotaWithMacron => GREEK_SMALL_LETTER_IOTA_WITH_MACRON,
-            GreekExtended::GreekSmallLetterIotaWithDialytikaAndVaria => GREEK_SMALL_LETTER_IOTA_WITH_DIALYTIKA_AND_VARIA,
-            GreekExtended::GreekSmallLetterIotaWithDialytikaAndOxia => GREEK_SMALL_LETTER_IOTA_WITH_DIALYTIKA_AND_OXIA,
-            GreekExtended::GreekSmallLetterIotaWithPerispomeni => GREEK_SMALL_LETTER_IOTA_WITH_PERISPOMENI,
-            GreekExtended::GreekSmallLetterIotaWithDialytikaAndPerispomeni => GREEK_SMALL_LETTER_IOTA_WITH_DIALYTIKA_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterIotaWithVrachy => GREEK_CAPITAL_LETTER_IOTA_WITH_VRACHY,
-            GreekExtended::GreekCapitalLetterIotaWithMacron => GREEK_CAPITAL_LETTER_IOTA_WITH_MACRON,
-            GreekExtended::GreekCapitalLetterIotaWithVaria => GREEK_CAPITAL_LETTER_IOTA_WITH_VARIA,
-            GreekExtended::GreekCapitalLetterIotaWithOxia => GREEK_CAPITAL_LETTER_IOTA_WITH_OXIA,
-            GreekExtended::GreekDasiaAndVaria => GREEK_DASIA_AND_VARIA,
-            GreekExtended::GreekDasiaAndOxia => GREEK_DASIA_AND_OXIA,
-            GreekExtended::GreekDasiaAndPerispomeni => GREEK_DASIA_AND_PERISPOMENI,
-            GreekExtended::GreekSmallLetterUpsilonWithVrachy => GREEK_SMALL_LETTER_UPSILON_WITH_VRACHY,
-            GreekExtended::GreekSmallLetterUpsilonWithMacron => GREEK_SMALL_LETTER_UPSILON_WITH_MACRON,
-            GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndVaria => GREEK_SMALL_LETTER_UPSILON_WITH_DIALYTIKA_AND_VARIA,
-            GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndOxia => GREEK_SMALL_LETTER_UPSILON_WITH_DIALYTIKA_AND_OXIA,
-            GreekExtended::GreekSmallLetterRhoWithPsili => GREEK_SMALL_LETTER_RHO_WITH_PSILI,
-            GreekExtended::GreekSmallLetterRhoWithDasia => GREEK_SMALL_LETTER_RHO_WITH_DASIA,
-            GreekExtended::GreekSmallLetterUpsilonWithPerispomeni => GREEK_SMALL_LETTER_UPSILON_WITH_PERISPOMENI,
-            GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndPerispomeni => GREEK_SMALL_LETTER_UPSILON_WITH_DIALYTIKA_AND_PERISPOMENI,
-            GreekExtended::GreekCapitalLetterUpsilonWithVrachy => GREEK_CAPITAL_LETTER_UPSILON_WITH_VRACHY,
-            GreekExtended::GreekCapitalLetterUpsilonWithMacron => GREEK_CAPITAL_LETTER_UPSILON_WITH_MACRON,
-            GreekExtended::GreekCapitalLetterUpsilonWithVaria => GREEK_CAPITAL_LETTER_UPSILON_WITH_VARIA,
-            GreekExtended::GreekCapitalLetterUpsilonWithOxia => GREEK_CAPITAL_LETTER_UPSILON_WITH_OXIA,
-            GreekExtended::GreekCapitalLetterRhoWithDasia => GREEK_CAPITAL_LETTER_RHO_WITH_DASIA,
-            GreekExtended::GreekDialytikaAndVaria => GREEK_DIALYTIKA_AND_VARIA,
-            GreekExtended::GreekDialytikaAndOxia => GREEK_DIALYTIKA_AND_OXIA,
-            GreekExtended::GreekVaria => GREEK_VARIA,
-            GreekExtended::GreekSmallLetterOmegaWithVariaAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_VARIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithOxiaAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_OXIA_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekSmallLetterOmegaWithPerispomeni => GREEK_SMALL_LETTER_OMEGA_WITH_PERISPOMENI,
-            GreekExtended::GreekSmallLetterOmegaWithPerispomeniAndYpogegrammeni => GREEK_SMALL_LETTER_OMEGA_WITH_PERISPOMENI_AND_YPOGEGRAMMENI,
-            GreekExtended::GreekCapitalLetterOmicronWithVaria => GREEK_CAPITAL_LETTER_OMICRON_WITH_VARIA,
-            GreekExtended::GreekCapitalLetterOmicronWithOxia => GREEK_CAPITAL_LETTER_OMICRON_WITH_OXIA,
-            GreekExtended::GreekCapitalLetterOmegaWithVaria => GREEK_CAPITAL_LETTER_OMEGA_WITH_VARIA,
-            GreekExtended::GreekCapitalLetterOmegaWithOxia => GREEK_CAPITAL_LETTER_OMEGA_WITH_OXIA,
-            GreekExtended::GreekCapitalLetterOmegaWithProsgegrammeni => GREEK_CAPITAL_LETTER_OMEGA_WITH_PROSGEGRAMMENI,
-            GreekExtended::GreekOxia => GREEK_OXIA,
-            GreekExtended::GreekDasia => GREEK_DASIA,
+            GreekExtended::GreekSmallLetterAlphaWithPsili => 'ἀ',
+            GreekExtended::GreekSmallLetterAlphaWithDasia => 'ἁ',
+            GreekExtended::GreekSmallLetterAlphaWithPsiliAndVaria => 'ἂ',
+            GreekExtended::GreekSmallLetterAlphaWithDasiaAndVaria => 'ἃ',
+            GreekExtended::GreekSmallLetterAlphaWithPsiliAndOxia => 'ἄ',
+            GreekExtended::GreekSmallLetterAlphaWithDasiaAndOxia => 'ἅ',
+            GreekExtended::GreekSmallLetterAlphaWithPsiliAndPerispomeni => 'ἆ',
+            GreekExtended::GreekSmallLetterAlphaWithDasiaAndPerispomeni => 'ἇ',
+            GreekExtended::GreekCapitalLetterAlphaWithPsili => 'Ἀ',
+            GreekExtended::GreekCapitalLetterAlphaWithDasia => 'Ἁ',
+            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndVaria => 'Ἂ',
+            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndVaria => 'Ἃ',
+            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndOxia => 'Ἄ',
+            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndOxia => 'Ἅ',
+            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndPerispomeni => 'Ἆ',
+            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndPerispomeni => 'Ἇ',
+            GreekExtended::GreekSmallLetterEpsilonWithPsili => 'ἐ',
+            GreekExtended::GreekSmallLetterEpsilonWithDasia => 'ἑ',
+            GreekExtended::GreekSmallLetterEpsilonWithPsiliAndVaria => 'ἒ',
+            GreekExtended::GreekSmallLetterEpsilonWithDasiaAndVaria => 'ἓ',
+            GreekExtended::GreekSmallLetterEpsilonWithPsiliAndOxia => 'ἔ',
+            GreekExtended::GreekSmallLetterEpsilonWithDasiaAndOxia => 'ἕ',
+            GreekExtended::GreekCapitalLetterEpsilonWithPsili => 'Ἐ',
+            GreekExtended::GreekCapitalLetterEpsilonWithDasia => 'Ἑ',
+            GreekExtended::GreekCapitalLetterEpsilonWithPsiliAndVaria => 'Ἒ',
+            GreekExtended::GreekCapitalLetterEpsilonWithDasiaAndVaria => 'Ἓ',
+            GreekExtended::GreekCapitalLetterEpsilonWithPsiliAndOxia => 'Ἔ',
+            GreekExtended::GreekCapitalLetterEpsilonWithDasiaAndOxia => 'Ἕ',
+            GreekExtended::GreekSmallLetterEtaWithPsili => 'ἠ',
+            GreekExtended::GreekSmallLetterEtaWithDasia => 'ἡ',
+            GreekExtended::GreekSmallLetterEtaWithPsiliAndVaria => 'ἢ',
+            GreekExtended::GreekSmallLetterEtaWithDasiaAndVaria => 'ἣ',
+            GreekExtended::GreekSmallLetterEtaWithPsiliAndOxia => 'ἤ',
+            GreekExtended::GreekSmallLetterEtaWithDasiaAndOxia => 'ἥ',
+            GreekExtended::GreekSmallLetterEtaWithPsiliAndPerispomeni => 'ἦ',
+            GreekExtended::GreekSmallLetterEtaWithDasiaAndPerispomeni => 'ἧ',
+            GreekExtended::GreekCapitalLetterEtaWithPsili => 'Ἠ',
+            GreekExtended::GreekCapitalLetterEtaWithDasia => 'Ἡ',
+            GreekExtended::GreekCapitalLetterEtaWithPsiliAndVaria => 'Ἢ',
+            GreekExtended::GreekCapitalLetterEtaWithDasiaAndVaria => 'Ἣ',
+            GreekExtended::GreekCapitalLetterEtaWithPsiliAndOxia => 'Ἤ',
+            GreekExtended::GreekCapitalLetterEtaWithDasiaAndOxia => 'Ἥ',
+            GreekExtended::GreekCapitalLetterEtaWithPsiliAndPerispomeni => 'Ἦ',
+            GreekExtended::GreekCapitalLetterEtaWithDasiaAndPerispomeni => 'Ἧ',
+            GreekExtended::GreekSmallLetterIotaWithPsili => 'ἰ',
+            GreekExtended::GreekSmallLetterIotaWithDasia => 'ἱ',
+            GreekExtended::GreekSmallLetterIotaWithPsiliAndVaria => 'ἲ',
+            GreekExtended::GreekSmallLetterIotaWithDasiaAndVaria => 'ἳ',
+            GreekExtended::GreekSmallLetterIotaWithPsiliAndOxia => 'ἴ',
+            GreekExtended::GreekSmallLetterIotaWithDasiaAndOxia => 'ἵ',
+            GreekExtended::GreekSmallLetterIotaWithPsiliAndPerispomeni => 'ἶ',
+            GreekExtended::GreekSmallLetterIotaWithDasiaAndPerispomeni => 'ἷ',
+            GreekExtended::GreekCapitalLetterIotaWithPsili => 'Ἰ',
+            GreekExtended::GreekCapitalLetterIotaWithDasia => 'Ἱ',
+            GreekExtended::GreekCapitalLetterIotaWithPsiliAndVaria => 'Ἲ',
+            GreekExtended::GreekCapitalLetterIotaWithDasiaAndVaria => 'Ἳ',
+            GreekExtended::GreekCapitalLetterIotaWithPsiliAndOxia => 'Ἴ',
+            GreekExtended::GreekCapitalLetterIotaWithDasiaAndOxia => 'Ἵ',
+            GreekExtended::GreekCapitalLetterIotaWithPsiliAndPerispomeni => 'Ἶ',
+            GreekExtended::GreekCapitalLetterIotaWithDasiaAndPerispomeni => 'Ἷ',
+            GreekExtended::GreekSmallLetterOmicronWithPsili => 'ὀ',
+            GreekExtended::GreekSmallLetterOmicronWithDasia => 'ὁ',
+            GreekExtended::GreekSmallLetterOmicronWithPsiliAndVaria => 'ὂ',
+            GreekExtended::GreekSmallLetterOmicronWithDasiaAndVaria => 'ὃ',
+            GreekExtended::GreekSmallLetterOmicronWithPsiliAndOxia => 'ὄ',
+            GreekExtended::GreekSmallLetterOmicronWithDasiaAndOxia => 'ὅ',
+            GreekExtended::GreekCapitalLetterOmicronWithPsili => 'Ὀ',
+            GreekExtended::GreekCapitalLetterOmicronWithDasia => 'Ὁ',
+            GreekExtended::GreekCapitalLetterOmicronWithPsiliAndVaria => 'Ὂ',
+            GreekExtended::GreekCapitalLetterOmicronWithDasiaAndVaria => 'Ὃ',
+            GreekExtended::GreekCapitalLetterOmicronWithPsiliAndOxia => 'Ὄ',
+            GreekExtended::GreekCapitalLetterOmicronWithDasiaAndOxia => 'Ὅ',
+            GreekExtended::GreekSmallLetterUpsilonWithPsili => 'ὐ',
+            GreekExtended::GreekSmallLetterUpsilonWithDasia => 'ὑ',
+            GreekExtended::GreekSmallLetterUpsilonWithPsiliAndVaria => 'ὒ',
+            GreekExtended::GreekSmallLetterUpsilonWithDasiaAndVaria => 'ὓ',
+            GreekExtended::GreekSmallLetterUpsilonWithPsiliAndOxia => 'ὔ',
+            GreekExtended::GreekSmallLetterUpsilonWithDasiaAndOxia => 'ὕ',
+            GreekExtended::GreekSmallLetterUpsilonWithPsiliAndPerispomeni => 'ὖ',
+            GreekExtended::GreekSmallLetterUpsilonWithDasiaAndPerispomeni => 'ὗ',
+            GreekExtended::GreekCapitalLetterUpsilonWithDasia => 'Ὑ',
+            GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndVaria => 'Ὓ',
+            GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndOxia => 'Ὕ',
+            GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndPerispomeni => 'Ὗ',
+            GreekExtended::GreekSmallLetterOmegaWithPsili => 'ὠ',
+            GreekExtended::GreekSmallLetterOmegaWithDasia => 'ὡ',
+            GreekExtended::GreekSmallLetterOmegaWithPsiliAndVaria => 'ὢ',
+            GreekExtended::GreekSmallLetterOmegaWithDasiaAndVaria => 'ὣ',
+            GreekExtended::GreekSmallLetterOmegaWithPsiliAndOxia => 'ὤ',
+            GreekExtended::GreekSmallLetterOmegaWithDasiaAndOxia => 'ὥ',
+            GreekExtended::GreekSmallLetterOmegaWithPsiliAndPerispomeni => 'ὦ',
+            GreekExtended::GreekSmallLetterOmegaWithDasiaAndPerispomeni => 'ὧ',
+            GreekExtended::GreekCapitalLetterOmegaWithPsili => 'Ὠ',
+            GreekExtended::GreekCapitalLetterOmegaWithDasia => 'Ὡ',
+            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndVaria => 'Ὢ',
+            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndVaria => 'Ὣ',
+            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndOxia => 'Ὤ',
+            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndOxia => 'Ὥ',
+            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndPerispomeni => 'Ὦ',
+            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndPerispomeni => 'Ὧ',
+            GreekExtended::GreekSmallLetterAlphaWithVaria => 'ὰ',
+            GreekExtended::GreekSmallLetterAlphaWithOxia => 'ά',
+            GreekExtended::GreekSmallLetterEpsilonWithVaria => 'ὲ',
+            GreekExtended::GreekSmallLetterEpsilonWithOxia => 'έ',
+            GreekExtended::GreekSmallLetterEtaWithVaria => 'ὴ',
+            GreekExtended::GreekSmallLetterEtaWithOxia => 'ή',
+            GreekExtended::GreekSmallLetterIotaWithVaria => 'ὶ',
+            GreekExtended::GreekSmallLetterIotaWithOxia => 'ί',
+            GreekExtended::GreekSmallLetterOmicronWithVaria => 'ὸ',
+            GreekExtended::GreekSmallLetterOmicronWithOxia => 'ό',
+            GreekExtended::GreekSmallLetterUpsilonWithVaria => 'ὺ',
+            GreekExtended::GreekSmallLetterUpsilonWithOxia => 'ύ',
+            GreekExtended::GreekSmallLetterOmegaWithVaria => 'ὼ',
+            GreekExtended::GreekSmallLetterOmegaWithOxia => 'ώ',
+            GreekExtended::GreekSmallLetterAlphaWithPsiliAndYpogegrammeni => 'ᾀ',
+            GreekExtended::GreekSmallLetterAlphaWithDasiaAndYpogegrammeni => 'ᾁ',
+            GreekExtended::GreekSmallLetterAlphaWithPsiliAndVariaAndYpogegrammeni => 'ᾂ',
+            GreekExtended::GreekSmallLetterAlphaWithDasiaAndVariaAndYpogegrammeni => 'ᾃ',
+            GreekExtended::GreekSmallLetterAlphaWithPsiliAndOxiaAndYpogegrammeni => 'ᾄ',
+            GreekExtended::GreekSmallLetterAlphaWithDasiaAndOxiaAndYpogegrammeni => 'ᾅ',
+            GreekExtended::GreekSmallLetterAlphaWithPsiliAndPerispomeniAndYpogegrammeni => 'ᾆ',
+            GreekExtended::GreekSmallLetterAlphaWithDasiaAndPerispomeniAndYpogegrammeni => 'ᾇ',
+            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndProsgegrammeni => 'ᾈ',
+            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndProsgegrammeni => 'ᾉ',
+            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndVariaAndProsgegrammeni => 'ᾊ',
+            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndVariaAndProsgegrammeni => 'ᾋ',
+            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndOxiaAndProsgegrammeni => 'ᾌ',
+            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndOxiaAndProsgegrammeni => 'ᾍ',
+            GreekExtended::GreekCapitalLetterAlphaWithPsiliAndPerispomeniAndProsgegrammeni => 'ᾎ',
+            GreekExtended::GreekCapitalLetterAlphaWithDasiaAndPerispomeniAndProsgegrammeni => 'ᾏ',
+            GreekExtended::GreekSmallLetterEtaWithPsiliAndYpogegrammeni => 'ᾐ',
+            GreekExtended::GreekSmallLetterEtaWithDasiaAndYpogegrammeni => 'ᾑ',
+            GreekExtended::GreekSmallLetterEtaWithPsiliAndVariaAndYpogegrammeni => 'ᾒ',
+            GreekExtended::GreekSmallLetterEtaWithDasiaAndVariaAndYpogegrammeni => 'ᾓ',
+            GreekExtended::GreekSmallLetterEtaWithPsiliAndOxiaAndYpogegrammeni => 'ᾔ',
+            GreekExtended::GreekSmallLetterEtaWithDasiaAndOxiaAndYpogegrammeni => 'ᾕ',
+            GreekExtended::GreekSmallLetterEtaWithPsiliAndPerispomeniAndYpogegrammeni => 'ᾖ',
+            GreekExtended::GreekSmallLetterEtaWithDasiaAndPerispomeniAndYpogegrammeni => 'ᾗ',
+            GreekExtended::GreekCapitalLetterEtaWithPsiliAndProsgegrammeni => 'ᾘ',
+            GreekExtended::GreekCapitalLetterEtaWithDasiaAndProsgegrammeni => 'ᾙ',
+            GreekExtended::GreekCapitalLetterEtaWithPsiliAndVariaAndProsgegrammeni => 'ᾚ',
+            GreekExtended::GreekCapitalLetterEtaWithDasiaAndVariaAndProsgegrammeni => 'ᾛ',
+            GreekExtended::GreekCapitalLetterEtaWithPsiliAndOxiaAndProsgegrammeni => 'ᾜ',
+            GreekExtended::GreekCapitalLetterEtaWithDasiaAndOxiaAndProsgegrammeni => 'ᾝ',
+            GreekExtended::GreekCapitalLetterEtaWithPsiliAndPerispomeniAndProsgegrammeni => 'ᾞ',
+            GreekExtended::GreekCapitalLetterEtaWithDasiaAndPerispomeniAndProsgegrammeni => 'ᾟ',
+            GreekExtended::GreekSmallLetterOmegaWithPsiliAndYpogegrammeni => 'ᾠ',
+            GreekExtended::GreekSmallLetterOmegaWithDasiaAndYpogegrammeni => 'ᾡ',
+            GreekExtended::GreekSmallLetterOmegaWithPsiliAndVariaAndYpogegrammeni => 'ᾢ',
+            GreekExtended::GreekSmallLetterOmegaWithDasiaAndVariaAndYpogegrammeni => 'ᾣ',
+            GreekExtended::GreekSmallLetterOmegaWithPsiliAndOxiaAndYpogegrammeni => 'ᾤ',
+            GreekExtended::GreekSmallLetterOmegaWithDasiaAndOxiaAndYpogegrammeni => 'ᾥ',
+            GreekExtended::GreekSmallLetterOmegaWithPsiliAndPerispomeniAndYpogegrammeni => 'ᾦ',
+            GreekExtended::GreekSmallLetterOmegaWithDasiaAndPerispomeniAndYpogegrammeni => 'ᾧ',
+            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndProsgegrammeni => 'ᾨ',
+            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndProsgegrammeni => 'ᾩ',
+            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndVariaAndProsgegrammeni => 'ᾪ',
+            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndVariaAndProsgegrammeni => 'ᾫ',
+            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndOxiaAndProsgegrammeni => 'ᾬ',
+            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndOxiaAndProsgegrammeni => 'ᾭ',
+            GreekExtended::GreekCapitalLetterOmegaWithPsiliAndPerispomeniAndProsgegrammeni => 'ᾮ',
+            GreekExtended::GreekCapitalLetterOmegaWithDasiaAndPerispomeniAndProsgegrammeni => 'ᾯ',
+            GreekExtended::GreekSmallLetterAlphaWithVrachy => 'ᾰ',
+            GreekExtended::GreekSmallLetterAlphaWithMacron => 'ᾱ',
+            GreekExtended::GreekSmallLetterAlphaWithVariaAndYpogegrammeni => 'ᾲ',
+            GreekExtended::GreekSmallLetterAlphaWithYpogegrammeni => 'ᾳ',
+            GreekExtended::GreekSmallLetterAlphaWithOxiaAndYpogegrammeni => 'ᾴ',
+            GreekExtended::GreekSmallLetterAlphaWithPerispomeni => 'ᾶ',
+            GreekExtended::GreekSmallLetterAlphaWithPerispomeniAndYpogegrammeni => 'ᾷ',
+            GreekExtended::GreekCapitalLetterAlphaWithVrachy => 'Ᾰ',
+            GreekExtended::GreekCapitalLetterAlphaWithMacron => 'Ᾱ',
+            GreekExtended::GreekCapitalLetterAlphaWithVaria => 'Ὰ',
+            GreekExtended::GreekCapitalLetterAlphaWithOxia => 'Ά',
+            GreekExtended::GreekCapitalLetterAlphaWithProsgegrammeni => 'ᾼ',
+            GreekExtended::GreekKoronis => '᾽',
+            GreekExtended::GreekProsgegrammeni => 'ι',
+            GreekExtended::GreekPsili => '᾿',
+            GreekExtended::GreekPerispomeni => '῀',
+            GreekExtended::GreekDialytikaAndPerispomeni => '῁',
+            GreekExtended::GreekSmallLetterEtaWithVariaAndYpogegrammeni => 'ῂ',
+            GreekExtended::GreekSmallLetterEtaWithYpogegrammeni => 'ῃ',
+            GreekExtended::GreekSmallLetterEtaWithOxiaAndYpogegrammeni => 'ῄ',
+            GreekExtended::GreekSmallLetterEtaWithPerispomeni => 'ῆ',
+            GreekExtended::GreekSmallLetterEtaWithPerispomeniAndYpogegrammeni => 'ῇ',
+            GreekExtended::GreekCapitalLetterEpsilonWithVaria => 'Ὲ',
+            GreekExtended::GreekCapitalLetterEpsilonWithOxia => 'Έ',
+            GreekExtended::GreekCapitalLetterEtaWithVaria => 'Ὴ',
+            GreekExtended::GreekCapitalLetterEtaWithOxia => 'Ή',
+            GreekExtended::GreekCapitalLetterEtaWithProsgegrammeni => 'ῌ',
+            GreekExtended::GreekPsiliAndVaria => '῍',
+            GreekExtended::GreekPsiliAndOxia => '῎',
+            GreekExtended::GreekPsiliAndPerispomeni => '῏',
+            GreekExtended::GreekSmallLetterIotaWithVrachy => 'ῐ',
+            GreekExtended::GreekSmallLetterIotaWithMacron => 'ῑ',
+            GreekExtended::GreekSmallLetterIotaWithDialytikaAndVaria => 'ῒ',
+            GreekExtended::GreekSmallLetterIotaWithDialytikaAndOxia => 'ΐ',
+            GreekExtended::GreekSmallLetterIotaWithPerispomeni => 'ῖ',
+            GreekExtended::GreekSmallLetterIotaWithDialytikaAndPerispomeni => 'ῗ',
+            GreekExtended::GreekCapitalLetterIotaWithVrachy => 'Ῐ',
+            GreekExtended::GreekCapitalLetterIotaWithMacron => 'Ῑ',
+            GreekExtended::GreekCapitalLetterIotaWithVaria => 'Ὶ',
+            GreekExtended::GreekCapitalLetterIotaWithOxia => 'Ί',
+            GreekExtended::GreekDasiaAndVaria => '῝',
+            GreekExtended::GreekDasiaAndOxia => '῞',
+            GreekExtended::GreekDasiaAndPerispomeni => '῟',
+            GreekExtended::GreekSmallLetterUpsilonWithVrachy => 'ῠ',
+            GreekExtended::GreekSmallLetterUpsilonWithMacron => 'ῡ',
+            GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndVaria => 'ῢ',
+            GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndOxia => 'ΰ',
+            GreekExtended::GreekSmallLetterRhoWithPsili => 'ῤ',
+            GreekExtended::GreekSmallLetterRhoWithDasia => 'ῥ',
+            GreekExtended::GreekSmallLetterUpsilonWithPerispomeni => 'ῦ',
+            GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndPerispomeni => 'ῧ',
+            GreekExtended::GreekCapitalLetterUpsilonWithVrachy => 'Ῠ',
+            GreekExtended::GreekCapitalLetterUpsilonWithMacron => 'Ῡ',
+            GreekExtended::GreekCapitalLetterUpsilonWithVaria => 'Ὺ',
+            GreekExtended::GreekCapitalLetterUpsilonWithOxia => 'Ύ',
+            GreekExtended::GreekCapitalLetterRhoWithDasia => 'Ῥ',
+            GreekExtended::GreekDialytikaAndVaria => '῭',
+            GreekExtended::GreekDialytikaAndOxia => '΅',
+            GreekExtended::GreekVaria => '`',
+            GreekExtended::GreekSmallLetterOmegaWithVariaAndYpogegrammeni => 'ῲ',
+            GreekExtended::GreekSmallLetterOmegaWithYpogegrammeni => 'ῳ',
+            GreekExtended::GreekSmallLetterOmegaWithOxiaAndYpogegrammeni => 'ῴ',
+            GreekExtended::GreekSmallLetterOmegaWithPerispomeni => 'ῶ',
+            GreekExtended::GreekSmallLetterOmegaWithPerispomeniAndYpogegrammeni => 'ῷ',
+            GreekExtended::GreekCapitalLetterOmicronWithVaria => 'Ὸ',
+            GreekExtended::GreekCapitalLetterOmicronWithOxia => 'Ό',
+            GreekExtended::GreekCapitalLetterOmegaWithVaria => 'Ὼ',
+            GreekExtended::GreekCapitalLetterOmegaWithOxia => 'Ώ',
+            GreekExtended::GreekCapitalLetterOmegaWithProsgegrammeni => 'ῼ',
+            GreekExtended::GreekOxia => '´',
+            GreekExtended::GreekDasia => '῾',
         }
     }
 }
@@ -1183,241 +713,240 @@ impl Into<char> for GreekExtended {
 impl std::convert::TryFrom<char> for GreekExtended {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            GREEK_SMALL_LETTER_ALPHA_WITH_PSILI => Ok(GreekExtended::GreekSmallLetterAlphaWithPsili),
-            GREEK_SMALL_LETTER_ALPHA_WITH_DASIA => Ok(GreekExtended::GreekSmallLetterAlphaWithDasia),
-            GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndVaria),
-            GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndVaria),
-            GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndOxia),
-            GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndOxia),
-            GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndPerispomeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndPerispomeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsili),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasia),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndVaria),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndVaria),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndOxia),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndOxia),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndPerispomeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndPerispomeni),
-            GREEK_SMALL_LETTER_EPSILON_WITH_PSILI => Ok(GreekExtended::GreekSmallLetterEpsilonWithPsili),
-            GREEK_SMALL_LETTER_EPSILON_WITH_DASIA => Ok(GreekExtended::GreekSmallLetterEpsilonWithDasia),
-            GREEK_SMALL_LETTER_EPSILON_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekSmallLetterEpsilonWithPsiliAndVaria),
-            GREEK_SMALL_LETTER_EPSILON_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekSmallLetterEpsilonWithDasiaAndVaria),
-            GREEK_SMALL_LETTER_EPSILON_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekSmallLetterEpsilonWithPsiliAndOxia),
-            GREEK_SMALL_LETTER_EPSILON_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekSmallLetterEpsilonWithDasiaAndOxia),
-            GREEK_CAPITAL_LETTER_EPSILON_WITH_PSILI => Ok(GreekExtended::GreekCapitalLetterEpsilonWithPsili),
-            GREEK_CAPITAL_LETTER_EPSILON_WITH_DASIA => Ok(GreekExtended::GreekCapitalLetterEpsilonWithDasia),
-            GREEK_CAPITAL_LETTER_EPSILON_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterEpsilonWithPsiliAndVaria),
-            GREEK_CAPITAL_LETTER_EPSILON_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterEpsilonWithDasiaAndVaria),
-            GREEK_CAPITAL_LETTER_EPSILON_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterEpsilonWithPsiliAndOxia),
-            GREEK_CAPITAL_LETTER_EPSILON_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterEpsilonWithDasiaAndOxia),
-            GREEK_SMALL_LETTER_ETA_WITH_PSILI => Ok(GreekExtended::GreekSmallLetterEtaWithPsili),
-            GREEK_SMALL_LETTER_ETA_WITH_DASIA => Ok(GreekExtended::GreekSmallLetterEtaWithDasia),
-            GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndVaria),
-            GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndVaria),
-            GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndOxia),
-            GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndOxia),
-            GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndPerispomeni),
-            GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndPerispomeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_PSILI => Ok(GreekExtended::GreekCapitalLetterEtaWithPsili),
-            GREEK_CAPITAL_LETTER_ETA_WITH_DASIA => Ok(GreekExtended::GreekCapitalLetterEtaWithDasia),
-            GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndVaria),
-            GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndVaria),
-            GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndOxia),
-            GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndOxia),
-            GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndPerispomeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndPerispomeni),
-            GREEK_SMALL_LETTER_IOTA_WITH_PSILI => Ok(GreekExtended::GreekSmallLetterIotaWithPsili),
-            GREEK_SMALL_LETTER_IOTA_WITH_DASIA => Ok(GreekExtended::GreekSmallLetterIotaWithDasia),
-            GREEK_SMALL_LETTER_IOTA_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekSmallLetterIotaWithPsiliAndVaria),
-            GREEK_SMALL_LETTER_IOTA_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekSmallLetterIotaWithDasiaAndVaria),
-            GREEK_SMALL_LETTER_IOTA_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekSmallLetterIotaWithPsiliAndOxia),
-            GREEK_SMALL_LETTER_IOTA_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekSmallLetterIotaWithDasiaAndOxia),
-            GREEK_SMALL_LETTER_IOTA_WITH_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterIotaWithPsiliAndPerispomeni),
-            GREEK_SMALL_LETTER_IOTA_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterIotaWithDasiaAndPerispomeni),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI => Ok(GreekExtended::GreekCapitalLetterIotaWithPsili),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA => Ok(GreekExtended::GreekCapitalLetterIotaWithDasia),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterIotaWithPsiliAndVaria),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterIotaWithDasiaAndVaria),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterIotaWithPsiliAndOxia),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterIotaWithDasiaAndOxia),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekCapitalLetterIotaWithPsiliAndPerispomeni),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekCapitalLetterIotaWithDasiaAndPerispomeni),
-            GREEK_SMALL_LETTER_OMICRON_WITH_PSILI => Ok(GreekExtended::GreekSmallLetterOmicronWithPsili),
-            GREEK_SMALL_LETTER_OMICRON_WITH_DASIA => Ok(GreekExtended::GreekSmallLetterOmicronWithDasia),
-            GREEK_SMALL_LETTER_OMICRON_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekSmallLetterOmicronWithPsiliAndVaria),
-            GREEK_SMALL_LETTER_OMICRON_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekSmallLetterOmicronWithDasiaAndVaria),
-            GREEK_SMALL_LETTER_OMICRON_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekSmallLetterOmicronWithPsiliAndOxia),
-            GREEK_SMALL_LETTER_OMICRON_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekSmallLetterOmicronWithDasiaAndOxia),
-            GREEK_CAPITAL_LETTER_OMICRON_WITH_PSILI => Ok(GreekExtended::GreekCapitalLetterOmicronWithPsili),
-            GREEK_CAPITAL_LETTER_OMICRON_WITH_DASIA => Ok(GreekExtended::GreekCapitalLetterOmicronWithDasia),
-            GREEK_CAPITAL_LETTER_OMICRON_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterOmicronWithPsiliAndVaria),
-            GREEK_CAPITAL_LETTER_OMICRON_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterOmicronWithDasiaAndVaria),
-            GREEK_CAPITAL_LETTER_OMICRON_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterOmicronWithPsiliAndOxia),
-            GREEK_CAPITAL_LETTER_OMICRON_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterOmicronWithDasiaAndOxia),
-            GREEK_SMALL_LETTER_UPSILON_WITH_PSILI => Ok(GreekExtended::GreekSmallLetterUpsilonWithPsili),
-            GREEK_SMALL_LETTER_UPSILON_WITH_DASIA => Ok(GreekExtended::GreekSmallLetterUpsilonWithDasia),
-            GREEK_SMALL_LETTER_UPSILON_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekSmallLetterUpsilonWithPsiliAndVaria),
-            GREEK_SMALL_LETTER_UPSILON_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekSmallLetterUpsilonWithDasiaAndVaria),
-            GREEK_SMALL_LETTER_UPSILON_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekSmallLetterUpsilonWithPsiliAndOxia),
-            GREEK_SMALL_LETTER_UPSILON_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekSmallLetterUpsilonWithDasiaAndOxia),
-            GREEK_SMALL_LETTER_UPSILON_WITH_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterUpsilonWithPsiliAndPerispomeni),
-            GREEK_SMALL_LETTER_UPSILON_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterUpsilonWithDasiaAndPerispomeni),
-            GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA => Ok(GreekExtended::GreekCapitalLetterUpsilonWithDasia),
-            GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndVaria),
-            GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndOxia),
-            GREEK_CAPITAL_LETTER_UPSILON_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndPerispomeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PSILI => Ok(GreekExtended::GreekSmallLetterOmegaWithPsili),
-            GREEK_SMALL_LETTER_OMEGA_WITH_DASIA => Ok(GreekExtended::GreekSmallLetterOmegaWithDasia),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndVaria),
-            GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndVaria),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndOxia),
-            GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndOxia),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndPerispomeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndPerispomeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsili),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasia),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndVaria),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_VARIA => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndVaria),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndOxia),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_OXIA => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndOxia),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndPerispomeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndPerispomeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_VARIA => Ok(GreekExtended::GreekSmallLetterAlphaWithVaria),
-            GREEK_SMALL_LETTER_ALPHA_WITH_OXIA => Ok(GreekExtended::GreekSmallLetterAlphaWithOxia),
-            GREEK_SMALL_LETTER_EPSILON_WITH_VARIA => Ok(GreekExtended::GreekSmallLetterEpsilonWithVaria),
-            GREEK_SMALL_LETTER_EPSILON_WITH_OXIA => Ok(GreekExtended::GreekSmallLetterEpsilonWithOxia),
-            GREEK_SMALL_LETTER_ETA_WITH_VARIA => Ok(GreekExtended::GreekSmallLetterEtaWithVaria),
-            GREEK_SMALL_LETTER_ETA_WITH_OXIA => Ok(GreekExtended::GreekSmallLetterEtaWithOxia),
-            GREEK_SMALL_LETTER_IOTA_WITH_VARIA => Ok(GreekExtended::GreekSmallLetterIotaWithVaria),
-            GREEK_SMALL_LETTER_IOTA_WITH_OXIA => Ok(GreekExtended::GreekSmallLetterIotaWithOxia),
-            GREEK_SMALL_LETTER_OMICRON_WITH_VARIA => Ok(GreekExtended::GreekSmallLetterOmicronWithVaria),
-            GREEK_SMALL_LETTER_OMICRON_WITH_OXIA => Ok(GreekExtended::GreekSmallLetterOmicronWithOxia),
-            GREEK_SMALL_LETTER_UPSILON_WITH_VARIA => Ok(GreekExtended::GreekSmallLetterUpsilonWithVaria),
-            GREEK_SMALL_LETTER_UPSILON_WITH_OXIA => Ok(GreekExtended::GreekSmallLetterUpsilonWithOxia),
-            GREEK_SMALL_LETTER_OMEGA_WITH_VARIA => Ok(GreekExtended::GreekSmallLetterOmegaWithVaria),
-            GREEK_SMALL_LETTER_OMEGA_WITH_OXIA => Ok(GreekExtended::GreekSmallLetterOmegaWithOxia),
-            GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_VARIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndVariaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_VARIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndVariaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_OXIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndOxiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_OXIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndOxiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndPerispomeniAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndPerispomeniAndYpogegrammeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_VARIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndVariaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_VARIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndVariaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_OXIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndOxiaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_OXIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndOxiaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_PSILI_AND_PERISPOMENI_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndPerispomeniAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_DASIA_AND_PERISPOMENI_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndPerispomeniAndProsgegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_VARIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndVariaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_VARIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndVariaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_OXIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndOxiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_OXIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndOxiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndPerispomeniAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndPerispomeniAndYpogegrammeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_VARIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndVariaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_VARIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndVariaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_OXIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndOxiaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_OXIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndOxiaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_PSILI_AND_PERISPOMENI_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndPerispomeniAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_ETA_WITH_DASIA_AND_PERISPOMENI_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndPerispomeniAndProsgegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_VARIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndVariaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_VARIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndVariaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_OXIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndOxiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_OXIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndOxiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndPerispomeniAndYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndPerispomeniAndYpogegrammeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_VARIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndVariaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_VARIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndVariaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_OXIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndOxiaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_OXIA_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndOxiaAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_PSILI_AND_PERISPOMENI_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndPerispomeniAndProsgegrammeni),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_DASIA_AND_PERISPOMENI_AND_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndPerispomeniAndProsgegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_VRACHY => Ok(GreekExtended::GreekSmallLetterAlphaWithVrachy),
-            GREEK_SMALL_LETTER_ALPHA_WITH_MACRON => Ok(GreekExtended::GreekSmallLetterAlphaWithMacron),
-            GREEK_SMALL_LETTER_ALPHA_WITH_VARIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithVariaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_OXIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithOxiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithPerispomeni),
-            GREEK_SMALL_LETTER_ALPHA_WITH_PERISPOMENI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterAlphaWithPerispomeniAndYpogegrammeni),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_VRACHY => Ok(GreekExtended::GreekCapitalLetterAlphaWithVrachy),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_MACRON => Ok(GreekExtended::GreekCapitalLetterAlphaWithMacron),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_VARIA => Ok(GreekExtended::GreekCapitalLetterAlphaWithVaria),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_OXIA => Ok(GreekExtended::GreekCapitalLetterAlphaWithOxia),
-            GREEK_CAPITAL_LETTER_ALPHA_WITH_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterAlphaWithProsgegrammeni),
-            GREEK_KORONIS => Ok(GreekExtended::GreekKoronis),
-            GREEK_PROSGEGRAMMENI => Ok(GreekExtended::GreekProsgegrammeni),
-            GREEK_PSILI => Ok(GreekExtended::GreekPsili),
-            GREEK_PERISPOMENI => Ok(GreekExtended::GreekPerispomeni),
-            GREEK_DIALYTIKA_AND_PERISPOMENI => Ok(GreekExtended::GreekDialytikaAndPerispomeni),
-            GREEK_SMALL_LETTER_ETA_WITH_VARIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithVariaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_OXIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithOxiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_ETA_WITH_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterEtaWithPerispomeni),
-            GREEK_SMALL_LETTER_ETA_WITH_PERISPOMENI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterEtaWithPerispomeniAndYpogegrammeni),
-            GREEK_CAPITAL_LETTER_EPSILON_WITH_VARIA => Ok(GreekExtended::GreekCapitalLetterEpsilonWithVaria),
-            GREEK_CAPITAL_LETTER_EPSILON_WITH_OXIA => Ok(GreekExtended::GreekCapitalLetterEpsilonWithOxia),
-            GREEK_CAPITAL_LETTER_ETA_WITH_VARIA => Ok(GreekExtended::GreekCapitalLetterEtaWithVaria),
-            GREEK_CAPITAL_LETTER_ETA_WITH_OXIA => Ok(GreekExtended::GreekCapitalLetterEtaWithOxia),
-            GREEK_CAPITAL_LETTER_ETA_WITH_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterEtaWithProsgegrammeni),
-            GREEK_PSILI_AND_VARIA => Ok(GreekExtended::GreekPsiliAndVaria),
-            GREEK_PSILI_AND_OXIA => Ok(GreekExtended::GreekPsiliAndOxia),
-            GREEK_PSILI_AND_PERISPOMENI => Ok(GreekExtended::GreekPsiliAndPerispomeni),
-            GREEK_SMALL_LETTER_IOTA_WITH_VRACHY => Ok(GreekExtended::GreekSmallLetterIotaWithVrachy),
-            GREEK_SMALL_LETTER_IOTA_WITH_MACRON => Ok(GreekExtended::GreekSmallLetterIotaWithMacron),
-            GREEK_SMALL_LETTER_IOTA_WITH_DIALYTIKA_AND_VARIA => Ok(GreekExtended::GreekSmallLetterIotaWithDialytikaAndVaria),
-            GREEK_SMALL_LETTER_IOTA_WITH_DIALYTIKA_AND_OXIA => Ok(GreekExtended::GreekSmallLetterIotaWithDialytikaAndOxia),
-            GREEK_SMALL_LETTER_IOTA_WITH_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterIotaWithPerispomeni),
-            GREEK_SMALL_LETTER_IOTA_WITH_DIALYTIKA_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterIotaWithDialytikaAndPerispomeni),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_VRACHY => Ok(GreekExtended::GreekCapitalLetterIotaWithVrachy),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_MACRON => Ok(GreekExtended::GreekCapitalLetterIotaWithMacron),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_VARIA => Ok(GreekExtended::GreekCapitalLetterIotaWithVaria),
-            GREEK_CAPITAL_LETTER_IOTA_WITH_OXIA => Ok(GreekExtended::GreekCapitalLetterIotaWithOxia),
-            GREEK_DASIA_AND_VARIA => Ok(GreekExtended::GreekDasiaAndVaria),
-            GREEK_DASIA_AND_OXIA => Ok(GreekExtended::GreekDasiaAndOxia),
-            GREEK_DASIA_AND_PERISPOMENI => Ok(GreekExtended::GreekDasiaAndPerispomeni),
-            GREEK_SMALL_LETTER_UPSILON_WITH_VRACHY => Ok(GreekExtended::GreekSmallLetterUpsilonWithVrachy),
-            GREEK_SMALL_LETTER_UPSILON_WITH_MACRON => Ok(GreekExtended::GreekSmallLetterUpsilonWithMacron),
-            GREEK_SMALL_LETTER_UPSILON_WITH_DIALYTIKA_AND_VARIA => Ok(GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndVaria),
-            GREEK_SMALL_LETTER_UPSILON_WITH_DIALYTIKA_AND_OXIA => Ok(GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndOxia),
-            GREEK_SMALL_LETTER_RHO_WITH_PSILI => Ok(GreekExtended::GreekSmallLetterRhoWithPsili),
-            GREEK_SMALL_LETTER_RHO_WITH_DASIA => Ok(GreekExtended::GreekSmallLetterRhoWithDasia),
-            GREEK_SMALL_LETTER_UPSILON_WITH_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterUpsilonWithPerispomeni),
-            GREEK_SMALL_LETTER_UPSILON_WITH_DIALYTIKA_AND_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndPerispomeni),
-            GREEK_CAPITAL_LETTER_UPSILON_WITH_VRACHY => Ok(GreekExtended::GreekCapitalLetterUpsilonWithVrachy),
-            GREEK_CAPITAL_LETTER_UPSILON_WITH_MACRON => Ok(GreekExtended::GreekCapitalLetterUpsilonWithMacron),
-            GREEK_CAPITAL_LETTER_UPSILON_WITH_VARIA => Ok(GreekExtended::GreekCapitalLetterUpsilonWithVaria),
-            GREEK_CAPITAL_LETTER_UPSILON_WITH_OXIA => Ok(GreekExtended::GreekCapitalLetterUpsilonWithOxia),
-            GREEK_CAPITAL_LETTER_RHO_WITH_DASIA => Ok(GreekExtended::GreekCapitalLetterRhoWithDasia),
-            GREEK_DIALYTIKA_AND_VARIA => Ok(GreekExtended::GreekDialytikaAndVaria),
-            GREEK_DIALYTIKA_AND_OXIA => Ok(GreekExtended::GreekDialytikaAndOxia),
-            GREEK_VARIA => Ok(GreekExtended::GreekVaria),
-            GREEK_SMALL_LETTER_OMEGA_WITH_VARIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithVariaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_OXIA_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithOxiaAndYpogegrammeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PERISPOMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithPerispomeni),
-            GREEK_SMALL_LETTER_OMEGA_WITH_PERISPOMENI_AND_YPOGEGRAMMENI => Ok(GreekExtended::GreekSmallLetterOmegaWithPerispomeniAndYpogegrammeni),
-            GREEK_CAPITAL_LETTER_OMICRON_WITH_VARIA => Ok(GreekExtended::GreekCapitalLetterOmicronWithVaria),
-            GREEK_CAPITAL_LETTER_OMICRON_WITH_OXIA => Ok(GreekExtended::GreekCapitalLetterOmicronWithOxia),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_VARIA => Ok(GreekExtended::GreekCapitalLetterOmegaWithVaria),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_OXIA => Ok(GreekExtended::GreekCapitalLetterOmegaWithOxia),
-            GREEK_CAPITAL_LETTER_OMEGA_WITH_PROSGEGRAMMENI => Ok(GreekExtended::GreekCapitalLetterOmegaWithProsgegrammeni),
-            GREEK_OXIA => Ok(GreekExtended::GreekOxia),
-            GREEK_DASIA => Ok(GreekExtended::GreekDasia),
+            'ἀ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPsili),
+            'ἁ' => Ok(GreekExtended::GreekSmallLetterAlphaWithDasia),
+            'ἂ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndVaria),
+            'ἃ' => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndVaria),
+            'ἄ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndOxia),
+            'ἅ' => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndOxia),
+            'ἆ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndPerispomeni),
+            'ἇ' => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndPerispomeni),
+            'Ἀ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsili),
+            'Ἁ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasia),
+            'Ἂ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndVaria),
+            'Ἃ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndVaria),
+            'Ἄ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndOxia),
+            'Ἅ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndOxia),
+            'Ἆ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndPerispomeni),
+            'Ἇ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndPerispomeni),
+            'ἐ' => Ok(GreekExtended::GreekSmallLetterEpsilonWithPsili),
+            'ἑ' => Ok(GreekExtended::GreekSmallLetterEpsilonWithDasia),
+            'ἒ' => Ok(GreekExtended::GreekSmallLetterEpsilonWithPsiliAndVaria),
+            'ἓ' => Ok(GreekExtended::GreekSmallLetterEpsilonWithDasiaAndVaria),
+            'ἔ' => Ok(GreekExtended::GreekSmallLetterEpsilonWithPsiliAndOxia),
+            'ἕ' => Ok(GreekExtended::GreekSmallLetterEpsilonWithDasiaAndOxia),
+            'Ἐ' => Ok(GreekExtended::GreekCapitalLetterEpsilonWithPsili),
+            'Ἑ' => Ok(GreekExtended::GreekCapitalLetterEpsilonWithDasia),
+            'Ἒ' => Ok(GreekExtended::GreekCapitalLetterEpsilonWithPsiliAndVaria),
+            'Ἓ' => Ok(GreekExtended::GreekCapitalLetterEpsilonWithDasiaAndVaria),
+            'Ἔ' => Ok(GreekExtended::GreekCapitalLetterEpsilonWithPsiliAndOxia),
+            'Ἕ' => Ok(GreekExtended::GreekCapitalLetterEpsilonWithDasiaAndOxia),
+            'ἠ' => Ok(GreekExtended::GreekSmallLetterEtaWithPsili),
+            'ἡ' => Ok(GreekExtended::GreekSmallLetterEtaWithDasia),
+            'ἢ' => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndVaria),
+            'ἣ' => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndVaria),
+            'ἤ' => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndOxia),
+            'ἥ' => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndOxia),
+            'ἦ' => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndPerispomeni),
+            'ἧ' => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndPerispomeni),
+            'Ἠ' => Ok(GreekExtended::GreekCapitalLetterEtaWithPsili),
+            'Ἡ' => Ok(GreekExtended::GreekCapitalLetterEtaWithDasia),
+            'Ἢ' => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndVaria),
+            'Ἣ' => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndVaria),
+            'Ἤ' => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndOxia),
+            'Ἥ' => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndOxia),
+            'Ἦ' => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndPerispomeni),
+            'Ἧ' => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndPerispomeni),
+            'ἰ' => Ok(GreekExtended::GreekSmallLetterIotaWithPsili),
+            'ἱ' => Ok(GreekExtended::GreekSmallLetterIotaWithDasia),
+            'ἲ' => Ok(GreekExtended::GreekSmallLetterIotaWithPsiliAndVaria),
+            'ἳ' => Ok(GreekExtended::GreekSmallLetterIotaWithDasiaAndVaria),
+            'ἴ' => Ok(GreekExtended::GreekSmallLetterIotaWithPsiliAndOxia),
+            'ἵ' => Ok(GreekExtended::GreekSmallLetterIotaWithDasiaAndOxia),
+            'ἶ' => Ok(GreekExtended::GreekSmallLetterIotaWithPsiliAndPerispomeni),
+            'ἷ' => Ok(GreekExtended::GreekSmallLetterIotaWithDasiaAndPerispomeni),
+            'Ἰ' => Ok(GreekExtended::GreekCapitalLetterIotaWithPsili),
+            'Ἱ' => Ok(GreekExtended::GreekCapitalLetterIotaWithDasia),
+            'Ἲ' => Ok(GreekExtended::GreekCapitalLetterIotaWithPsiliAndVaria),
+            'Ἳ' => Ok(GreekExtended::GreekCapitalLetterIotaWithDasiaAndVaria),
+            'Ἴ' => Ok(GreekExtended::GreekCapitalLetterIotaWithPsiliAndOxia),
+            'Ἵ' => Ok(GreekExtended::GreekCapitalLetterIotaWithDasiaAndOxia),
+            'Ἶ' => Ok(GreekExtended::GreekCapitalLetterIotaWithPsiliAndPerispomeni),
+            'Ἷ' => Ok(GreekExtended::GreekCapitalLetterIotaWithDasiaAndPerispomeni),
+            'ὀ' => Ok(GreekExtended::GreekSmallLetterOmicronWithPsili),
+            'ὁ' => Ok(GreekExtended::GreekSmallLetterOmicronWithDasia),
+            'ὂ' => Ok(GreekExtended::GreekSmallLetterOmicronWithPsiliAndVaria),
+            'ὃ' => Ok(GreekExtended::GreekSmallLetterOmicronWithDasiaAndVaria),
+            'ὄ' => Ok(GreekExtended::GreekSmallLetterOmicronWithPsiliAndOxia),
+            'ὅ' => Ok(GreekExtended::GreekSmallLetterOmicronWithDasiaAndOxia),
+            'Ὀ' => Ok(GreekExtended::GreekCapitalLetterOmicronWithPsili),
+            'Ὁ' => Ok(GreekExtended::GreekCapitalLetterOmicronWithDasia),
+            'Ὂ' => Ok(GreekExtended::GreekCapitalLetterOmicronWithPsiliAndVaria),
+            'Ὃ' => Ok(GreekExtended::GreekCapitalLetterOmicronWithDasiaAndVaria),
+            'Ὄ' => Ok(GreekExtended::GreekCapitalLetterOmicronWithPsiliAndOxia),
+            'Ὅ' => Ok(GreekExtended::GreekCapitalLetterOmicronWithDasiaAndOxia),
+            'ὐ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithPsili),
+            'ὑ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithDasia),
+            'ὒ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithPsiliAndVaria),
+            'ὓ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithDasiaAndVaria),
+            'ὔ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithPsiliAndOxia),
+            'ὕ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithDasiaAndOxia),
+            'ὖ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithPsiliAndPerispomeni),
+            'ὗ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithDasiaAndPerispomeni),
+            'Ὑ' => Ok(GreekExtended::GreekCapitalLetterUpsilonWithDasia),
+            'Ὓ' => Ok(GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndVaria),
+            'Ὕ' => Ok(GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndOxia),
+            'Ὗ' => Ok(GreekExtended::GreekCapitalLetterUpsilonWithDasiaAndPerispomeni),
+            'ὠ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPsili),
+            'ὡ' => Ok(GreekExtended::GreekSmallLetterOmegaWithDasia),
+            'ὢ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndVaria),
+            'ὣ' => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndVaria),
+            'ὤ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndOxia),
+            'ὥ' => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndOxia),
+            'ὦ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndPerispomeni),
+            'ὧ' => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndPerispomeni),
+            'Ὠ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsili),
+            'Ὡ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasia),
+            'Ὢ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndVaria),
+            'Ὣ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndVaria),
+            'Ὤ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndOxia),
+            'Ὥ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndOxia),
+            'Ὦ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndPerispomeni),
+            'Ὧ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndPerispomeni),
+            'ὰ' => Ok(GreekExtended::GreekSmallLetterAlphaWithVaria),
+            'ά' => Ok(GreekExtended::GreekSmallLetterAlphaWithOxia),
+            'ὲ' => Ok(GreekExtended::GreekSmallLetterEpsilonWithVaria),
+            'έ' => Ok(GreekExtended::GreekSmallLetterEpsilonWithOxia),
+            'ὴ' => Ok(GreekExtended::GreekSmallLetterEtaWithVaria),
+            'ή' => Ok(GreekExtended::GreekSmallLetterEtaWithOxia),
+            'ὶ' => Ok(GreekExtended::GreekSmallLetterIotaWithVaria),
+            'ί' => Ok(GreekExtended::GreekSmallLetterIotaWithOxia),
+            'ὸ' => Ok(GreekExtended::GreekSmallLetterOmicronWithVaria),
+            'ό' => Ok(GreekExtended::GreekSmallLetterOmicronWithOxia),
+            'ὺ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithVaria),
+            'ύ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithOxia),
+            'ὼ' => Ok(GreekExtended::GreekSmallLetterOmegaWithVaria),
+            'ώ' => Ok(GreekExtended::GreekSmallLetterOmegaWithOxia),
+            'ᾀ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndYpogegrammeni),
+            'ᾁ' => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndYpogegrammeni),
+            'ᾂ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndVariaAndYpogegrammeni),
+            'ᾃ' => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndVariaAndYpogegrammeni),
+            'ᾄ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndOxiaAndYpogegrammeni),
+            'ᾅ' => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndOxiaAndYpogegrammeni),
+            'ᾆ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPsiliAndPerispomeniAndYpogegrammeni),
+            'ᾇ' => Ok(GreekExtended::GreekSmallLetterAlphaWithDasiaAndPerispomeniAndYpogegrammeni),
+            'ᾈ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndProsgegrammeni),
+            'ᾉ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndProsgegrammeni),
+            'ᾊ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndVariaAndProsgegrammeni),
+            'ᾋ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndVariaAndProsgegrammeni),
+            'ᾌ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndOxiaAndProsgegrammeni),
+            'ᾍ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndOxiaAndProsgegrammeni),
+            'ᾎ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithPsiliAndPerispomeniAndProsgegrammeni),
+            'ᾏ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithDasiaAndPerispomeniAndProsgegrammeni),
+            'ᾐ' => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndYpogegrammeni),
+            'ᾑ' => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndYpogegrammeni),
+            'ᾒ' => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndVariaAndYpogegrammeni),
+            'ᾓ' => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndVariaAndYpogegrammeni),
+            'ᾔ' => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndOxiaAndYpogegrammeni),
+            'ᾕ' => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndOxiaAndYpogegrammeni),
+            'ᾖ' => Ok(GreekExtended::GreekSmallLetterEtaWithPsiliAndPerispomeniAndYpogegrammeni),
+            'ᾗ' => Ok(GreekExtended::GreekSmallLetterEtaWithDasiaAndPerispomeniAndYpogegrammeni),
+            'ᾘ' => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndProsgegrammeni),
+            'ᾙ' => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndProsgegrammeni),
+            'ᾚ' => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndVariaAndProsgegrammeni),
+            'ᾛ' => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndVariaAndProsgegrammeni),
+            'ᾜ' => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndOxiaAndProsgegrammeni),
+            'ᾝ' => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndOxiaAndProsgegrammeni),
+            'ᾞ' => Ok(GreekExtended::GreekCapitalLetterEtaWithPsiliAndPerispomeniAndProsgegrammeni),
+            'ᾟ' => Ok(GreekExtended::GreekCapitalLetterEtaWithDasiaAndPerispomeniAndProsgegrammeni),
+            'ᾠ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndYpogegrammeni),
+            'ᾡ' => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndYpogegrammeni),
+            'ᾢ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndVariaAndYpogegrammeni),
+            'ᾣ' => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndVariaAndYpogegrammeni),
+            'ᾤ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndOxiaAndYpogegrammeni),
+            'ᾥ' => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndOxiaAndYpogegrammeni),
+            'ᾦ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPsiliAndPerispomeniAndYpogegrammeni),
+            'ᾧ' => Ok(GreekExtended::GreekSmallLetterOmegaWithDasiaAndPerispomeniAndYpogegrammeni),
+            'ᾨ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndProsgegrammeni),
+            'ᾩ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndProsgegrammeni),
+            'ᾪ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndVariaAndProsgegrammeni),
+            'ᾫ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndVariaAndProsgegrammeni),
+            'ᾬ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndOxiaAndProsgegrammeni),
+            'ᾭ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndOxiaAndProsgegrammeni),
+            'ᾮ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithPsiliAndPerispomeniAndProsgegrammeni),
+            'ᾯ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithDasiaAndPerispomeniAndProsgegrammeni),
+            'ᾰ' => Ok(GreekExtended::GreekSmallLetterAlphaWithVrachy),
+            'ᾱ' => Ok(GreekExtended::GreekSmallLetterAlphaWithMacron),
+            'ᾲ' => Ok(GreekExtended::GreekSmallLetterAlphaWithVariaAndYpogegrammeni),
+            'ᾳ' => Ok(GreekExtended::GreekSmallLetterAlphaWithYpogegrammeni),
+            'ᾴ' => Ok(GreekExtended::GreekSmallLetterAlphaWithOxiaAndYpogegrammeni),
+            'ᾶ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPerispomeni),
+            'ᾷ' => Ok(GreekExtended::GreekSmallLetterAlphaWithPerispomeniAndYpogegrammeni),
+            'Ᾰ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithVrachy),
+            'Ᾱ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithMacron),
+            'Ὰ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithVaria),
+            'Ά' => Ok(GreekExtended::GreekCapitalLetterAlphaWithOxia),
+            'ᾼ' => Ok(GreekExtended::GreekCapitalLetterAlphaWithProsgegrammeni),
+            '᾽' => Ok(GreekExtended::GreekKoronis),
+            'ι' => Ok(GreekExtended::GreekProsgegrammeni),
+            '᾿' => Ok(GreekExtended::GreekPsili),
+            '῀' => Ok(GreekExtended::GreekPerispomeni),
+            '῁' => Ok(GreekExtended::GreekDialytikaAndPerispomeni),
+            'ῂ' => Ok(GreekExtended::GreekSmallLetterEtaWithVariaAndYpogegrammeni),
+            'ῃ' => Ok(GreekExtended::GreekSmallLetterEtaWithYpogegrammeni),
+            'ῄ' => Ok(GreekExtended::GreekSmallLetterEtaWithOxiaAndYpogegrammeni),
+            'ῆ' => Ok(GreekExtended::GreekSmallLetterEtaWithPerispomeni),
+            'ῇ' => Ok(GreekExtended::GreekSmallLetterEtaWithPerispomeniAndYpogegrammeni),
+            'Ὲ' => Ok(GreekExtended::GreekCapitalLetterEpsilonWithVaria),
+            'Έ' => Ok(GreekExtended::GreekCapitalLetterEpsilonWithOxia),
+            'Ὴ' => Ok(GreekExtended::GreekCapitalLetterEtaWithVaria),
+            'Ή' => Ok(GreekExtended::GreekCapitalLetterEtaWithOxia),
+            'ῌ' => Ok(GreekExtended::GreekCapitalLetterEtaWithProsgegrammeni),
+            '῍' => Ok(GreekExtended::GreekPsiliAndVaria),
+            '῎' => Ok(GreekExtended::GreekPsiliAndOxia),
+            '῏' => Ok(GreekExtended::GreekPsiliAndPerispomeni),
+            'ῐ' => Ok(GreekExtended::GreekSmallLetterIotaWithVrachy),
+            'ῑ' => Ok(GreekExtended::GreekSmallLetterIotaWithMacron),
+            'ῒ' => Ok(GreekExtended::GreekSmallLetterIotaWithDialytikaAndVaria),
+            'ΐ' => Ok(GreekExtended::GreekSmallLetterIotaWithDialytikaAndOxia),
+            'ῖ' => Ok(GreekExtended::GreekSmallLetterIotaWithPerispomeni),
+            'ῗ' => Ok(GreekExtended::GreekSmallLetterIotaWithDialytikaAndPerispomeni),
+            'Ῐ' => Ok(GreekExtended::GreekCapitalLetterIotaWithVrachy),
+            'Ῑ' => Ok(GreekExtended::GreekCapitalLetterIotaWithMacron),
+            'Ὶ' => Ok(GreekExtended::GreekCapitalLetterIotaWithVaria),
+            'Ί' => Ok(GreekExtended::GreekCapitalLetterIotaWithOxia),
+            '῝' => Ok(GreekExtended::GreekDasiaAndVaria),
+            '῞' => Ok(GreekExtended::GreekDasiaAndOxia),
+            '῟' => Ok(GreekExtended::GreekDasiaAndPerispomeni),
+            'ῠ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithVrachy),
+            'ῡ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithMacron),
+            'ῢ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndVaria),
+            'ΰ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndOxia),
+            'ῤ' => Ok(GreekExtended::GreekSmallLetterRhoWithPsili),
+            'ῥ' => Ok(GreekExtended::GreekSmallLetterRhoWithDasia),
+            'ῦ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithPerispomeni),
+            'ῧ' => Ok(GreekExtended::GreekSmallLetterUpsilonWithDialytikaAndPerispomeni),
+            'Ῠ' => Ok(GreekExtended::GreekCapitalLetterUpsilonWithVrachy),
+            'Ῡ' => Ok(GreekExtended::GreekCapitalLetterUpsilonWithMacron),
+            'Ὺ' => Ok(GreekExtended::GreekCapitalLetterUpsilonWithVaria),
+            'Ύ' => Ok(GreekExtended::GreekCapitalLetterUpsilonWithOxia),
+            'Ῥ' => Ok(GreekExtended::GreekCapitalLetterRhoWithDasia),
+            '῭' => Ok(GreekExtended::GreekDialytikaAndVaria),
+            '΅' => Ok(GreekExtended::GreekDialytikaAndOxia),
+            '`' => Ok(GreekExtended::GreekVaria),
+            'ῲ' => Ok(GreekExtended::GreekSmallLetterOmegaWithVariaAndYpogegrammeni),
+            'ῳ' => Ok(GreekExtended::GreekSmallLetterOmegaWithYpogegrammeni),
+            'ῴ' => Ok(GreekExtended::GreekSmallLetterOmegaWithOxiaAndYpogegrammeni),
+            'ῶ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPerispomeni),
+            'ῷ' => Ok(GreekExtended::GreekSmallLetterOmegaWithPerispomeniAndYpogegrammeni),
+            'Ὸ' => Ok(GreekExtended::GreekCapitalLetterOmicronWithVaria),
+            'Ό' => Ok(GreekExtended::GreekCapitalLetterOmicronWithOxia),
+            'Ὼ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithVaria),
+            'Ώ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithOxia),
+            'ῼ' => Ok(GreekExtended::GreekCapitalLetterOmegaWithProsgegrammeni),
+            '´' => Ok(GreekExtended::GreekOxia),
+            '῾' => Ok(GreekExtended::GreekDasia),
             _ => Err(()),
         }
     }

@@ -1,20 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1b150}: '𛅐'
-    pub const HIRAGANA_LETTER_SMALL_WI: char = '𛅐';
-    /// \u{1b151}: '𛅑'
-    pub const HIRAGANA_LETTER_SMALL_WE: char = '𛅑';
-    /// \u{1b152}: '𛅒'
-    pub const HIRAGANA_LETTER_SMALL_WO: char = '𛅒';
-    /// \u{1b164}: '𛅤'
-    pub const KATAKANA_LETTER_SMALL_WI: char = '𛅤';
-    /// \u{1b165}: '𛅥'
-    pub const KATAKANA_LETTER_SMALL_WE: char = '𛅥';
-    /// \u{1b166}: '𛅦'
-    pub const KATAKANA_LETTER_SMALL_WO: char = '𛅦';
-    /// \u{1b167}: '𛅧'
-    pub const KATAKANA_LETTER_SMALL_N: char = '𛅧';
-}
 
 /// An enum to represent all characters in the SmallKanaExtension block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -37,15 +20,14 @@ pub enum SmallKanaExtension {
 
 impl Into<char> for SmallKanaExtension {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SmallKanaExtension::HiraganaLetterSmallWi => HIRAGANA_LETTER_SMALL_WI,
-            SmallKanaExtension::HiraganaLetterSmallWe => HIRAGANA_LETTER_SMALL_WE,
-            SmallKanaExtension::HiraganaLetterSmallWo => HIRAGANA_LETTER_SMALL_WO,
-            SmallKanaExtension::KatakanaLetterSmallWi => KATAKANA_LETTER_SMALL_WI,
-            SmallKanaExtension::KatakanaLetterSmallWe => KATAKANA_LETTER_SMALL_WE,
-            SmallKanaExtension::KatakanaLetterSmallWo => KATAKANA_LETTER_SMALL_WO,
-            SmallKanaExtension::KatakanaLetterSmallN => KATAKANA_LETTER_SMALL_N,
+            SmallKanaExtension::HiraganaLetterSmallWi => '𛅐',
+            SmallKanaExtension::HiraganaLetterSmallWe => '𛅑',
+            SmallKanaExtension::HiraganaLetterSmallWo => '𛅒',
+            SmallKanaExtension::KatakanaLetterSmallWi => '𛅤',
+            SmallKanaExtension::KatakanaLetterSmallWe => '𛅥',
+            SmallKanaExtension::KatakanaLetterSmallWo => '𛅦',
+            SmallKanaExtension::KatakanaLetterSmallN => '𛅧',
         }
     }
 }
@@ -53,15 +35,14 @@ impl Into<char> for SmallKanaExtension {
 impl std::convert::TryFrom<char> for SmallKanaExtension {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            HIRAGANA_LETTER_SMALL_WI => Ok(SmallKanaExtension::HiraganaLetterSmallWi),
-            HIRAGANA_LETTER_SMALL_WE => Ok(SmallKanaExtension::HiraganaLetterSmallWe),
-            HIRAGANA_LETTER_SMALL_WO => Ok(SmallKanaExtension::HiraganaLetterSmallWo),
-            KATAKANA_LETTER_SMALL_WI => Ok(SmallKanaExtension::KatakanaLetterSmallWi),
-            KATAKANA_LETTER_SMALL_WE => Ok(SmallKanaExtension::KatakanaLetterSmallWe),
-            KATAKANA_LETTER_SMALL_WO => Ok(SmallKanaExtension::KatakanaLetterSmallWo),
-            KATAKANA_LETTER_SMALL_N => Ok(SmallKanaExtension::KatakanaLetterSmallN),
+            '𛅐' => Ok(SmallKanaExtension::HiraganaLetterSmallWi),
+            '𛅑' => Ok(SmallKanaExtension::HiraganaLetterSmallWe),
+            '𛅒' => Ok(SmallKanaExtension::HiraganaLetterSmallWo),
+            '𛅤' => Ok(SmallKanaExtension::KatakanaLetterSmallWi),
+            '𛅥' => Ok(SmallKanaExtension::KatakanaLetterSmallWe),
+            '𛅦' => Ok(SmallKanaExtension::KatakanaLetterSmallWo),
+            '𛅧' => Ok(SmallKanaExtension::KatakanaLetterSmallN),
             _ => Err(()),
         }
     }

@@ -1,118 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10100}: '𐄀'
-    pub const AEGEAN_WORD_SEPARATOR_LINE: char = '𐄀';
-    /// \u{10101}: '𐄁'
-    pub const AEGEAN_WORD_SEPARATOR_DOT: char = '𐄁';
-    /// \u{10102}: '𐄂'
-    pub const AEGEAN_CHECK_MARK: char = '𐄂';
-    /// \u{10107}: '𐄇'
-    pub const AEGEAN_NUMBER_ONE: char = '𐄇';
-    /// \u{10108}: '𐄈'
-    pub const AEGEAN_NUMBER_TWO: char = '𐄈';
-    /// \u{10109}: '𐄉'
-    pub const AEGEAN_NUMBER_THREE: char = '𐄉';
-    /// \u{1010a}: '𐄊'
-    pub const AEGEAN_NUMBER_FOUR: char = '𐄊';
-    /// \u{1010b}: '𐄋'
-    pub const AEGEAN_NUMBER_FIVE: char = '𐄋';
-    /// \u{1010c}: '𐄌'
-    pub const AEGEAN_NUMBER_SIX: char = '𐄌';
-    /// \u{1010d}: '𐄍'
-    pub const AEGEAN_NUMBER_SEVEN: char = '𐄍';
-    /// \u{1010e}: '𐄎'
-    pub const AEGEAN_NUMBER_EIGHT: char = '𐄎';
-    /// \u{1010f}: '𐄏'
-    pub const AEGEAN_NUMBER_NINE: char = '𐄏';
-    /// \u{10110}: '𐄐'
-    pub const AEGEAN_NUMBER_TEN: char = '𐄐';
-    /// \u{10111}: '𐄑'
-    pub const AEGEAN_NUMBER_TWENTY: char = '𐄑';
-    /// \u{10112}: '𐄒'
-    pub const AEGEAN_NUMBER_THIRTY: char = '𐄒';
-    /// \u{10113}: '𐄓'
-    pub const AEGEAN_NUMBER_FORTY: char = '𐄓';
-    /// \u{10114}: '𐄔'
-    pub const AEGEAN_NUMBER_FIFTY: char = '𐄔';
-    /// \u{10115}: '𐄕'
-    pub const AEGEAN_NUMBER_SIXTY: char = '𐄕';
-    /// \u{10116}: '𐄖'
-    pub const AEGEAN_NUMBER_SEVENTY: char = '𐄖';
-    /// \u{10117}: '𐄗'
-    pub const AEGEAN_NUMBER_EIGHTY: char = '𐄗';
-    /// \u{10118}: '𐄘'
-    pub const AEGEAN_NUMBER_NINETY: char = '𐄘';
-    /// \u{10119}: '𐄙'
-    pub const AEGEAN_NUMBER_ONE_HUNDRED: char = '𐄙';
-    /// \u{1011a}: '𐄚'
-    pub const AEGEAN_NUMBER_TWO_HUNDRED: char = '𐄚';
-    /// \u{1011b}: '𐄛'
-    pub const AEGEAN_NUMBER_THREE_HUNDRED: char = '𐄛';
-    /// \u{1011c}: '𐄜'
-    pub const AEGEAN_NUMBER_FOUR_HUNDRED: char = '𐄜';
-    /// \u{1011d}: '𐄝'
-    pub const AEGEAN_NUMBER_FIVE_HUNDRED: char = '𐄝';
-    /// \u{1011e}: '𐄞'
-    pub const AEGEAN_NUMBER_SIX_HUNDRED: char = '𐄞';
-    /// \u{1011f}: '𐄟'
-    pub const AEGEAN_NUMBER_SEVEN_HUNDRED: char = '𐄟';
-    /// \u{10120}: '𐄠'
-    pub const AEGEAN_NUMBER_EIGHT_HUNDRED: char = '𐄠';
-    /// \u{10121}: '𐄡'
-    pub const AEGEAN_NUMBER_NINE_HUNDRED: char = '𐄡';
-    /// \u{10122}: '𐄢'
-    pub const AEGEAN_NUMBER_ONE_THOUSAND: char = '𐄢';
-    /// \u{10123}: '𐄣'
-    pub const AEGEAN_NUMBER_TWO_THOUSAND: char = '𐄣';
-    /// \u{10124}: '𐄤'
-    pub const AEGEAN_NUMBER_THREE_THOUSAND: char = '𐄤';
-    /// \u{10125}: '𐄥'
-    pub const AEGEAN_NUMBER_FOUR_THOUSAND: char = '𐄥';
-    /// \u{10126}: '𐄦'
-    pub const AEGEAN_NUMBER_FIVE_THOUSAND: char = '𐄦';
-    /// \u{10127}: '𐄧'
-    pub const AEGEAN_NUMBER_SIX_THOUSAND: char = '𐄧';
-    /// \u{10128}: '𐄨'
-    pub const AEGEAN_NUMBER_SEVEN_THOUSAND: char = '𐄨';
-    /// \u{10129}: '𐄩'
-    pub const AEGEAN_NUMBER_EIGHT_THOUSAND: char = '𐄩';
-    /// \u{1012a}: '𐄪'
-    pub const AEGEAN_NUMBER_NINE_THOUSAND: char = '𐄪';
-    /// \u{1012b}: '𐄫'
-    pub const AEGEAN_NUMBER_TEN_THOUSAND: char = '𐄫';
-    /// \u{1012c}: '𐄬'
-    pub const AEGEAN_NUMBER_TWENTY_THOUSAND: char = '𐄬';
-    /// \u{1012d}: '𐄭'
-    pub const AEGEAN_NUMBER_THIRTY_THOUSAND: char = '𐄭';
-    /// \u{1012e}: '𐄮'
-    pub const AEGEAN_NUMBER_FORTY_THOUSAND: char = '𐄮';
-    /// \u{1012f}: '𐄯'
-    pub const AEGEAN_NUMBER_FIFTY_THOUSAND: char = '𐄯';
-    /// \u{10130}: '𐄰'
-    pub const AEGEAN_NUMBER_SIXTY_THOUSAND: char = '𐄰';
-    /// \u{10131}: '𐄱'
-    pub const AEGEAN_NUMBER_SEVENTY_THOUSAND: char = '𐄱';
-    /// \u{10132}: '𐄲'
-    pub const AEGEAN_NUMBER_EIGHTY_THOUSAND: char = '𐄲';
-    /// \u{10133}: '𐄳'
-    pub const AEGEAN_NUMBER_NINETY_THOUSAND: char = '𐄳';
-    /// \u{10137}: '𐄷'
-    pub const AEGEAN_WEIGHT_BASE_UNIT: char = '𐄷';
-    /// \u{10138}: '𐄸'
-    pub const AEGEAN_WEIGHT_FIRST_SUBUNIT: char = '𐄸';
-    /// \u{10139}: '𐄹'
-    pub const AEGEAN_WEIGHT_SECOND_SUBUNIT: char = '𐄹';
-    /// \u{1013a}: '𐄺'
-    pub const AEGEAN_WEIGHT_THIRD_SUBUNIT: char = '𐄺';
-    /// \u{1013b}: '𐄻'
-    pub const AEGEAN_WEIGHT_FOURTH_SUBUNIT: char = '𐄻';
-    /// \u{1013c}: '𐄼'
-    pub const AEGEAN_DRY_MEASURE_FIRST_SUBUNIT: char = '𐄼';
-    /// \u{1013d}: '𐄽'
-    pub const AEGEAN_LIQUID_MEASURE_FIRST_SUBUNIT: char = '𐄽';
-    /// \u{1013e}: '𐄾'
-    pub const AEGEAN_MEASURE_SECOND_SUBUNIT: char = '𐄾';
-}
 
 /// An enum to represent all characters in the AegeanNumbers block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -233,64 +118,63 @@ pub enum AegeanNumbers {
 
 impl Into<char> for AegeanNumbers {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            AegeanNumbers::AegeanWordSeparatorLine => AEGEAN_WORD_SEPARATOR_LINE,
-            AegeanNumbers::AegeanWordSeparatorDot => AEGEAN_WORD_SEPARATOR_DOT,
-            AegeanNumbers::AegeanCheckMark => AEGEAN_CHECK_MARK,
-            AegeanNumbers::AegeanNumberOne => AEGEAN_NUMBER_ONE,
-            AegeanNumbers::AegeanNumberTwo => AEGEAN_NUMBER_TWO,
-            AegeanNumbers::AegeanNumberThree => AEGEAN_NUMBER_THREE,
-            AegeanNumbers::AegeanNumberFour => AEGEAN_NUMBER_FOUR,
-            AegeanNumbers::AegeanNumberFive => AEGEAN_NUMBER_FIVE,
-            AegeanNumbers::AegeanNumberSix => AEGEAN_NUMBER_SIX,
-            AegeanNumbers::AegeanNumberSeven => AEGEAN_NUMBER_SEVEN,
-            AegeanNumbers::AegeanNumberEight => AEGEAN_NUMBER_EIGHT,
-            AegeanNumbers::AegeanNumberNine => AEGEAN_NUMBER_NINE,
-            AegeanNumbers::AegeanNumberTen => AEGEAN_NUMBER_TEN,
-            AegeanNumbers::AegeanNumberTwenty => AEGEAN_NUMBER_TWENTY,
-            AegeanNumbers::AegeanNumberThirty => AEGEAN_NUMBER_THIRTY,
-            AegeanNumbers::AegeanNumberForty => AEGEAN_NUMBER_FORTY,
-            AegeanNumbers::AegeanNumberFifty => AEGEAN_NUMBER_FIFTY,
-            AegeanNumbers::AegeanNumberSixty => AEGEAN_NUMBER_SIXTY,
-            AegeanNumbers::AegeanNumberSeventy => AEGEAN_NUMBER_SEVENTY,
-            AegeanNumbers::AegeanNumberEighty => AEGEAN_NUMBER_EIGHTY,
-            AegeanNumbers::AegeanNumberNinety => AEGEAN_NUMBER_NINETY,
-            AegeanNumbers::AegeanNumberOneHundred => AEGEAN_NUMBER_ONE_HUNDRED,
-            AegeanNumbers::AegeanNumberTwoHundred => AEGEAN_NUMBER_TWO_HUNDRED,
-            AegeanNumbers::AegeanNumberThreeHundred => AEGEAN_NUMBER_THREE_HUNDRED,
-            AegeanNumbers::AegeanNumberFourHundred => AEGEAN_NUMBER_FOUR_HUNDRED,
-            AegeanNumbers::AegeanNumberFiveHundred => AEGEAN_NUMBER_FIVE_HUNDRED,
-            AegeanNumbers::AegeanNumberSixHundred => AEGEAN_NUMBER_SIX_HUNDRED,
-            AegeanNumbers::AegeanNumberSevenHundred => AEGEAN_NUMBER_SEVEN_HUNDRED,
-            AegeanNumbers::AegeanNumberEightHundred => AEGEAN_NUMBER_EIGHT_HUNDRED,
-            AegeanNumbers::AegeanNumberNineHundred => AEGEAN_NUMBER_NINE_HUNDRED,
-            AegeanNumbers::AegeanNumberOneThousand => AEGEAN_NUMBER_ONE_THOUSAND,
-            AegeanNumbers::AegeanNumberTwoThousand => AEGEAN_NUMBER_TWO_THOUSAND,
-            AegeanNumbers::AegeanNumberThreeThousand => AEGEAN_NUMBER_THREE_THOUSAND,
-            AegeanNumbers::AegeanNumberFourThousand => AEGEAN_NUMBER_FOUR_THOUSAND,
-            AegeanNumbers::AegeanNumberFiveThousand => AEGEAN_NUMBER_FIVE_THOUSAND,
-            AegeanNumbers::AegeanNumberSixThousand => AEGEAN_NUMBER_SIX_THOUSAND,
-            AegeanNumbers::AegeanNumberSevenThousand => AEGEAN_NUMBER_SEVEN_THOUSAND,
-            AegeanNumbers::AegeanNumberEightThousand => AEGEAN_NUMBER_EIGHT_THOUSAND,
-            AegeanNumbers::AegeanNumberNineThousand => AEGEAN_NUMBER_NINE_THOUSAND,
-            AegeanNumbers::AegeanNumberTenThousand => AEGEAN_NUMBER_TEN_THOUSAND,
-            AegeanNumbers::AegeanNumberTwentyThousand => AEGEAN_NUMBER_TWENTY_THOUSAND,
-            AegeanNumbers::AegeanNumberThirtyThousand => AEGEAN_NUMBER_THIRTY_THOUSAND,
-            AegeanNumbers::AegeanNumberFortyThousand => AEGEAN_NUMBER_FORTY_THOUSAND,
-            AegeanNumbers::AegeanNumberFiftyThousand => AEGEAN_NUMBER_FIFTY_THOUSAND,
-            AegeanNumbers::AegeanNumberSixtyThousand => AEGEAN_NUMBER_SIXTY_THOUSAND,
-            AegeanNumbers::AegeanNumberSeventyThousand => AEGEAN_NUMBER_SEVENTY_THOUSAND,
-            AegeanNumbers::AegeanNumberEightyThousand => AEGEAN_NUMBER_EIGHTY_THOUSAND,
-            AegeanNumbers::AegeanNumberNinetyThousand => AEGEAN_NUMBER_NINETY_THOUSAND,
-            AegeanNumbers::AegeanWeightBaseUnit => AEGEAN_WEIGHT_BASE_UNIT,
-            AegeanNumbers::AegeanWeightFirstSubunit => AEGEAN_WEIGHT_FIRST_SUBUNIT,
-            AegeanNumbers::AegeanWeightSecondSubunit => AEGEAN_WEIGHT_SECOND_SUBUNIT,
-            AegeanNumbers::AegeanWeightThirdSubunit => AEGEAN_WEIGHT_THIRD_SUBUNIT,
-            AegeanNumbers::AegeanWeightFourthSubunit => AEGEAN_WEIGHT_FOURTH_SUBUNIT,
-            AegeanNumbers::AegeanDryMeasureFirstSubunit => AEGEAN_DRY_MEASURE_FIRST_SUBUNIT,
-            AegeanNumbers::AegeanLiquidMeasureFirstSubunit => AEGEAN_LIQUID_MEASURE_FIRST_SUBUNIT,
-            AegeanNumbers::AegeanMeasureSecondSubunit => AEGEAN_MEASURE_SECOND_SUBUNIT,
+            AegeanNumbers::AegeanWordSeparatorLine => '𐄀',
+            AegeanNumbers::AegeanWordSeparatorDot => '𐄁',
+            AegeanNumbers::AegeanCheckMark => '𐄂',
+            AegeanNumbers::AegeanNumberOne => '𐄇',
+            AegeanNumbers::AegeanNumberTwo => '𐄈',
+            AegeanNumbers::AegeanNumberThree => '𐄉',
+            AegeanNumbers::AegeanNumberFour => '𐄊',
+            AegeanNumbers::AegeanNumberFive => '𐄋',
+            AegeanNumbers::AegeanNumberSix => '𐄌',
+            AegeanNumbers::AegeanNumberSeven => '𐄍',
+            AegeanNumbers::AegeanNumberEight => '𐄎',
+            AegeanNumbers::AegeanNumberNine => '𐄏',
+            AegeanNumbers::AegeanNumberTen => '𐄐',
+            AegeanNumbers::AegeanNumberTwenty => '𐄑',
+            AegeanNumbers::AegeanNumberThirty => '𐄒',
+            AegeanNumbers::AegeanNumberForty => '𐄓',
+            AegeanNumbers::AegeanNumberFifty => '𐄔',
+            AegeanNumbers::AegeanNumberSixty => '𐄕',
+            AegeanNumbers::AegeanNumberSeventy => '𐄖',
+            AegeanNumbers::AegeanNumberEighty => '𐄗',
+            AegeanNumbers::AegeanNumberNinety => '𐄘',
+            AegeanNumbers::AegeanNumberOneHundred => '𐄙',
+            AegeanNumbers::AegeanNumberTwoHundred => '𐄚',
+            AegeanNumbers::AegeanNumberThreeHundred => '𐄛',
+            AegeanNumbers::AegeanNumberFourHundred => '𐄜',
+            AegeanNumbers::AegeanNumberFiveHundred => '𐄝',
+            AegeanNumbers::AegeanNumberSixHundred => '𐄞',
+            AegeanNumbers::AegeanNumberSevenHundred => '𐄟',
+            AegeanNumbers::AegeanNumberEightHundred => '𐄠',
+            AegeanNumbers::AegeanNumberNineHundred => '𐄡',
+            AegeanNumbers::AegeanNumberOneThousand => '𐄢',
+            AegeanNumbers::AegeanNumberTwoThousand => '𐄣',
+            AegeanNumbers::AegeanNumberThreeThousand => '𐄤',
+            AegeanNumbers::AegeanNumberFourThousand => '𐄥',
+            AegeanNumbers::AegeanNumberFiveThousand => '𐄦',
+            AegeanNumbers::AegeanNumberSixThousand => '𐄧',
+            AegeanNumbers::AegeanNumberSevenThousand => '𐄨',
+            AegeanNumbers::AegeanNumberEightThousand => '𐄩',
+            AegeanNumbers::AegeanNumberNineThousand => '𐄪',
+            AegeanNumbers::AegeanNumberTenThousand => '𐄫',
+            AegeanNumbers::AegeanNumberTwentyThousand => '𐄬',
+            AegeanNumbers::AegeanNumberThirtyThousand => '𐄭',
+            AegeanNumbers::AegeanNumberFortyThousand => '𐄮',
+            AegeanNumbers::AegeanNumberFiftyThousand => '𐄯',
+            AegeanNumbers::AegeanNumberSixtyThousand => '𐄰',
+            AegeanNumbers::AegeanNumberSeventyThousand => '𐄱',
+            AegeanNumbers::AegeanNumberEightyThousand => '𐄲',
+            AegeanNumbers::AegeanNumberNinetyThousand => '𐄳',
+            AegeanNumbers::AegeanWeightBaseUnit => '𐄷',
+            AegeanNumbers::AegeanWeightFirstSubunit => '𐄸',
+            AegeanNumbers::AegeanWeightSecondSubunit => '𐄹',
+            AegeanNumbers::AegeanWeightThirdSubunit => '𐄺',
+            AegeanNumbers::AegeanWeightFourthSubunit => '𐄻',
+            AegeanNumbers::AegeanDryMeasureFirstSubunit => '𐄼',
+            AegeanNumbers::AegeanLiquidMeasureFirstSubunit => '𐄽',
+            AegeanNumbers::AegeanMeasureSecondSubunit => '𐄾',
         }
     }
 }
@@ -298,64 +182,63 @@ impl Into<char> for AegeanNumbers {
 impl std::convert::TryFrom<char> for AegeanNumbers {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            AEGEAN_WORD_SEPARATOR_LINE => Ok(AegeanNumbers::AegeanWordSeparatorLine),
-            AEGEAN_WORD_SEPARATOR_DOT => Ok(AegeanNumbers::AegeanWordSeparatorDot),
-            AEGEAN_CHECK_MARK => Ok(AegeanNumbers::AegeanCheckMark),
-            AEGEAN_NUMBER_ONE => Ok(AegeanNumbers::AegeanNumberOne),
-            AEGEAN_NUMBER_TWO => Ok(AegeanNumbers::AegeanNumberTwo),
-            AEGEAN_NUMBER_THREE => Ok(AegeanNumbers::AegeanNumberThree),
-            AEGEAN_NUMBER_FOUR => Ok(AegeanNumbers::AegeanNumberFour),
-            AEGEAN_NUMBER_FIVE => Ok(AegeanNumbers::AegeanNumberFive),
-            AEGEAN_NUMBER_SIX => Ok(AegeanNumbers::AegeanNumberSix),
-            AEGEAN_NUMBER_SEVEN => Ok(AegeanNumbers::AegeanNumberSeven),
-            AEGEAN_NUMBER_EIGHT => Ok(AegeanNumbers::AegeanNumberEight),
-            AEGEAN_NUMBER_NINE => Ok(AegeanNumbers::AegeanNumberNine),
-            AEGEAN_NUMBER_TEN => Ok(AegeanNumbers::AegeanNumberTen),
-            AEGEAN_NUMBER_TWENTY => Ok(AegeanNumbers::AegeanNumberTwenty),
-            AEGEAN_NUMBER_THIRTY => Ok(AegeanNumbers::AegeanNumberThirty),
-            AEGEAN_NUMBER_FORTY => Ok(AegeanNumbers::AegeanNumberForty),
-            AEGEAN_NUMBER_FIFTY => Ok(AegeanNumbers::AegeanNumberFifty),
-            AEGEAN_NUMBER_SIXTY => Ok(AegeanNumbers::AegeanNumberSixty),
-            AEGEAN_NUMBER_SEVENTY => Ok(AegeanNumbers::AegeanNumberSeventy),
-            AEGEAN_NUMBER_EIGHTY => Ok(AegeanNumbers::AegeanNumberEighty),
-            AEGEAN_NUMBER_NINETY => Ok(AegeanNumbers::AegeanNumberNinety),
-            AEGEAN_NUMBER_ONE_HUNDRED => Ok(AegeanNumbers::AegeanNumberOneHundred),
-            AEGEAN_NUMBER_TWO_HUNDRED => Ok(AegeanNumbers::AegeanNumberTwoHundred),
-            AEGEAN_NUMBER_THREE_HUNDRED => Ok(AegeanNumbers::AegeanNumberThreeHundred),
-            AEGEAN_NUMBER_FOUR_HUNDRED => Ok(AegeanNumbers::AegeanNumberFourHundred),
-            AEGEAN_NUMBER_FIVE_HUNDRED => Ok(AegeanNumbers::AegeanNumberFiveHundred),
-            AEGEAN_NUMBER_SIX_HUNDRED => Ok(AegeanNumbers::AegeanNumberSixHundred),
-            AEGEAN_NUMBER_SEVEN_HUNDRED => Ok(AegeanNumbers::AegeanNumberSevenHundred),
-            AEGEAN_NUMBER_EIGHT_HUNDRED => Ok(AegeanNumbers::AegeanNumberEightHundred),
-            AEGEAN_NUMBER_NINE_HUNDRED => Ok(AegeanNumbers::AegeanNumberNineHundred),
-            AEGEAN_NUMBER_ONE_THOUSAND => Ok(AegeanNumbers::AegeanNumberOneThousand),
-            AEGEAN_NUMBER_TWO_THOUSAND => Ok(AegeanNumbers::AegeanNumberTwoThousand),
-            AEGEAN_NUMBER_THREE_THOUSAND => Ok(AegeanNumbers::AegeanNumberThreeThousand),
-            AEGEAN_NUMBER_FOUR_THOUSAND => Ok(AegeanNumbers::AegeanNumberFourThousand),
-            AEGEAN_NUMBER_FIVE_THOUSAND => Ok(AegeanNumbers::AegeanNumberFiveThousand),
-            AEGEAN_NUMBER_SIX_THOUSAND => Ok(AegeanNumbers::AegeanNumberSixThousand),
-            AEGEAN_NUMBER_SEVEN_THOUSAND => Ok(AegeanNumbers::AegeanNumberSevenThousand),
-            AEGEAN_NUMBER_EIGHT_THOUSAND => Ok(AegeanNumbers::AegeanNumberEightThousand),
-            AEGEAN_NUMBER_NINE_THOUSAND => Ok(AegeanNumbers::AegeanNumberNineThousand),
-            AEGEAN_NUMBER_TEN_THOUSAND => Ok(AegeanNumbers::AegeanNumberTenThousand),
-            AEGEAN_NUMBER_TWENTY_THOUSAND => Ok(AegeanNumbers::AegeanNumberTwentyThousand),
-            AEGEAN_NUMBER_THIRTY_THOUSAND => Ok(AegeanNumbers::AegeanNumberThirtyThousand),
-            AEGEAN_NUMBER_FORTY_THOUSAND => Ok(AegeanNumbers::AegeanNumberFortyThousand),
-            AEGEAN_NUMBER_FIFTY_THOUSAND => Ok(AegeanNumbers::AegeanNumberFiftyThousand),
-            AEGEAN_NUMBER_SIXTY_THOUSAND => Ok(AegeanNumbers::AegeanNumberSixtyThousand),
-            AEGEAN_NUMBER_SEVENTY_THOUSAND => Ok(AegeanNumbers::AegeanNumberSeventyThousand),
-            AEGEAN_NUMBER_EIGHTY_THOUSAND => Ok(AegeanNumbers::AegeanNumberEightyThousand),
-            AEGEAN_NUMBER_NINETY_THOUSAND => Ok(AegeanNumbers::AegeanNumberNinetyThousand),
-            AEGEAN_WEIGHT_BASE_UNIT => Ok(AegeanNumbers::AegeanWeightBaseUnit),
-            AEGEAN_WEIGHT_FIRST_SUBUNIT => Ok(AegeanNumbers::AegeanWeightFirstSubunit),
-            AEGEAN_WEIGHT_SECOND_SUBUNIT => Ok(AegeanNumbers::AegeanWeightSecondSubunit),
-            AEGEAN_WEIGHT_THIRD_SUBUNIT => Ok(AegeanNumbers::AegeanWeightThirdSubunit),
-            AEGEAN_WEIGHT_FOURTH_SUBUNIT => Ok(AegeanNumbers::AegeanWeightFourthSubunit),
-            AEGEAN_DRY_MEASURE_FIRST_SUBUNIT => Ok(AegeanNumbers::AegeanDryMeasureFirstSubunit),
-            AEGEAN_LIQUID_MEASURE_FIRST_SUBUNIT => Ok(AegeanNumbers::AegeanLiquidMeasureFirstSubunit),
-            AEGEAN_MEASURE_SECOND_SUBUNIT => Ok(AegeanNumbers::AegeanMeasureSecondSubunit),
+            '𐄀' => Ok(AegeanNumbers::AegeanWordSeparatorLine),
+            '𐄁' => Ok(AegeanNumbers::AegeanWordSeparatorDot),
+            '𐄂' => Ok(AegeanNumbers::AegeanCheckMark),
+            '𐄇' => Ok(AegeanNumbers::AegeanNumberOne),
+            '𐄈' => Ok(AegeanNumbers::AegeanNumberTwo),
+            '𐄉' => Ok(AegeanNumbers::AegeanNumberThree),
+            '𐄊' => Ok(AegeanNumbers::AegeanNumberFour),
+            '𐄋' => Ok(AegeanNumbers::AegeanNumberFive),
+            '𐄌' => Ok(AegeanNumbers::AegeanNumberSix),
+            '𐄍' => Ok(AegeanNumbers::AegeanNumberSeven),
+            '𐄎' => Ok(AegeanNumbers::AegeanNumberEight),
+            '𐄏' => Ok(AegeanNumbers::AegeanNumberNine),
+            '𐄐' => Ok(AegeanNumbers::AegeanNumberTen),
+            '𐄑' => Ok(AegeanNumbers::AegeanNumberTwenty),
+            '𐄒' => Ok(AegeanNumbers::AegeanNumberThirty),
+            '𐄓' => Ok(AegeanNumbers::AegeanNumberForty),
+            '𐄔' => Ok(AegeanNumbers::AegeanNumberFifty),
+            '𐄕' => Ok(AegeanNumbers::AegeanNumberSixty),
+            '𐄖' => Ok(AegeanNumbers::AegeanNumberSeventy),
+            '𐄗' => Ok(AegeanNumbers::AegeanNumberEighty),
+            '𐄘' => Ok(AegeanNumbers::AegeanNumberNinety),
+            '𐄙' => Ok(AegeanNumbers::AegeanNumberOneHundred),
+            '𐄚' => Ok(AegeanNumbers::AegeanNumberTwoHundred),
+            '𐄛' => Ok(AegeanNumbers::AegeanNumberThreeHundred),
+            '𐄜' => Ok(AegeanNumbers::AegeanNumberFourHundred),
+            '𐄝' => Ok(AegeanNumbers::AegeanNumberFiveHundred),
+            '𐄞' => Ok(AegeanNumbers::AegeanNumberSixHundred),
+            '𐄟' => Ok(AegeanNumbers::AegeanNumberSevenHundred),
+            '𐄠' => Ok(AegeanNumbers::AegeanNumberEightHundred),
+            '𐄡' => Ok(AegeanNumbers::AegeanNumberNineHundred),
+            '𐄢' => Ok(AegeanNumbers::AegeanNumberOneThousand),
+            '𐄣' => Ok(AegeanNumbers::AegeanNumberTwoThousand),
+            '𐄤' => Ok(AegeanNumbers::AegeanNumberThreeThousand),
+            '𐄥' => Ok(AegeanNumbers::AegeanNumberFourThousand),
+            '𐄦' => Ok(AegeanNumbers::AegeanNumberFiveThousand),
+            '𐄧' => Ok(AegeanNumbers::AegeanNumberSixThousand),
+            '𐄨' => Ok(AegeanNumbers::AegeanNumberSevenThousand),
+            '𐄩' => Ok(AegeanNumbers::AegeanNumberEightThousand),
+            '𐄪' => Ok(AegeanNumbers::AegeanNumberNineThousand),
+            '𐄫' => Ok(AegeanNumbers::AegeanNumberTenThousand),
+            '𐄬' => Ok(AegeanNumbers::AegeanNumberTwentyThousand),
+            '𐄭' => Ok(AegeanNumbers::AegeanNumberThirtyThousand),
+            '𐄮' => Ok(AegeanNumbers::AegeanNumberFortyThousand),
+            '𐄯' => Ok(AegeanNumbers::AegeanNumberFiftyThousand),
+            '𐄰' => Ok(AegeanNumbers::AegeanNumberSixtyThousand),
+            '𐄱' => Ok(AegeanNumbers::AegeanNumberSeventyThousand),
+            '𐄲' => Ok(AegeanNumbers::AegeanNumberEightyThousand),
+            '𐄳' => Ok(AegeanNumbers::AegeanNumberNinetyThousand),
+            '𐄷' => Ok(AegeanNumbers::AegeanWeightBaseUnit),
+            '𐄸' => Ok(AegeanNumbers::AegeanWeightFirstSubunit),
+            '𐄹' => Ok(AegeanNumbers::AegeanWeightSecondSubunit),
+            '𐄺' => Ok(AegeanNumbers::AegeanWeightThirdSubunit),
+            '𐄻' => Ok(AegeanNumbers::AegeanWeightFourthSubunit),
+            '𐄼' => Ok(AegeanNumbers::AegeanDryMeasureFirstSubunit),
+            '𐄽' => Ok(AegeanNumbers::AegeanLiquidMeasureFirstSubunit),
+            '𐄾' => Ok(AegeanNumbers::AegeanMeasureSecondSubunit),
             _ => Err(()),
         }
     }

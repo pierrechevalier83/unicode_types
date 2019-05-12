@@ -1,198 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{e0001}: '󠀁'
-    pub const LANGUAGE_TAG: char = '󠀁';
-    /// \u{e0020}: '󠀠'
-    pub const TAG_SPACE: char = '󠀠';
-    /// \u{e0021}: '󠀡'
-    pub const TAG_EXCLAMATION_MARK: char = '󠀡';
-    /// \u{e0022}: '󠀢'
-    pub const TAG_QUOTATION_MARK: char = '󠀢';
-    /// \u{e0023}: '󠀣'
-    pub const TAG_NUMBER_SIGN: char = '󠀣';
-    /// \u{e0024}: '󠀤'
-    pub const TAG_DOLLAR_SIGN: char = '󠀤';
-    /// \u{e0025}: '󠀥'
-    pub const TAG_PERCENT_SIGN: char = '󠀥';
-    /// \u{e0026}: '󠀦'
-    pub const TAG_AMPERSAND: char = '󠀦';
-    /// \u{e0027}: '󠀧'
-    pub const TAG_APOSTROPHE: char = '󠀧';
-    /// \u{e0028}: '󠀨'
-    pub const TAG_LEFT_PARENTHESIS: char = '󠀨';
-    /// \u{e0029}: '󠀩'
-    pub const TAG_RIGHT_PARENTHESIS: char = '󠀩';
-    /// \u{e002a}: '󠀪'
-    pub const TAG_ASTERISK: char = '󠀪';
-    /// \u{e002b}: '󠀫'
-    pub const TAG_PLUS_SIGN: char = '󠀫';
-    /// \u{e002c}: '󠀬'
-    pub const TAG_COMMA: char = '󠀬';
-    /// \u{e002d}: '󠀭'
-    pub const TAG_HYPHEN_DASH_MINUS: char = '󠀭';
-    /// \u{e002e}: '󠀮'
-    pub const TAG_FULL_STOP: char = '󠀮';
-    /// \u{e002f}: '󠀯'
-    pub const TAG_SOLIDUS: char = '󠀯';
-    /// \u{e0030}: '󠀰'
-    pub const TAG_DIGIT_ZERO: char = '󠀰';
-    /// \u{e0031}: '󠀱'
-    pub const TAG_DIGIT_ONE: char = '󠀱';
-    /// \u{e0032}: '󠀲'
-    pub const TAG_DIGIT_TWO: char = '󠀲';
-    /// \u{e0033}: '󠀳'
-    pub const TAG_DIGIT_THREE: char = '󠀳';
-    /// \u{e0034}: '󠀴'
-    pub const TAG_DIGIT_FOUR: char = '󠀴';
-    /// \u{e0035}: '󠀵'
-    pub const TAG_DIGIT_FIVE: char = '󠀵';
-    /// \u{e0036}: '󠀶'
-    pub const TAG_DIGIT_SIX: char = '󠀶';
-    /// \u{e0037}: '󠀷'
-    pub const TAG_DIGIT_SEVEN: char = '󠀷';
-    /// \u{e0038}: '󠀸'
-    pub const TAG_DIGIT_EIGHT: char = '󠀸';
-    /// \u{e0039}: '󠀹'
-    pub const TAG_DIGIT_NINE: char = '󠀹';
-    /// \u{e003a}: '󠀺'
-    pub const TAG_COLON: char = '󠀺';
-    /// \u{e003b}: '󠀻'
-    pub const TAG_SEMICOLON: char = '󠀻';
-    /// \u{e003c}: '󠀼'
-    pub const TAG_LESS_DASH_THAN_SIGN: char = '󠀼';
-    /// \u{e003d}: '󠀽'
-    pub const TAG_EQUALS_SIGN: char = '󠀽';
-    /// \u{e003e}: '󠀾'
-    pub const TAG_GREATER_DASH_THAN_SIGN: char = '󠀾';
-    /// \u{e003f}: '󠀿'
-    pub const TAG_QUESTION_MARK: char = '󠀿';
-    /// \u{e0040}: '󠁀'
-    pub const TAG_COMMERCIAL_AT: char = '󠁀';
-    /// \u{e0041}: '󠁁'
-    pub const TAG_LATIN_CAPITAL_LETTER_A: char = '󠁁';
-    /// \u{e0042}: '󠁂'
-    pub const TAG_LATIN_CAPITAL_LETTER_B: char = '󠁂';
-    /// \u{e0043}: '󠁃'
-    pub const TAG_LATIN_CAPITAL_LETTER_C: char = '󠁃';
-    /// \u{e0044}: '󠁄'
-    pub const TAG_LATIN_CAPITAL_LETTER_D: char = '󠁄';
-    /// \u{e0045}: '󠁅'
-    pub const TAG_LATIN_CAPITAL_LETTER_E: char = '󠁅';
-    /// \u{e0046}: '󠁆'
-    pub const TAG_LATIN_CAPITAL_LETTER_F: char = '󠁆';
-    /// \u{e0047}: '󠁇'
-    pub const TAG_LATIN_CAPITAL_LETTER_G: char = '󠁇';
-    /// \u{e0048}: '󠁈'
-    pub const TAG_LATIN_CAPITAL_LETTER_H: char = '󠁈';
-    /// \u{e0049}: '󠁉'
-    pub const TAG_LATIN_CAPITAL_LETTER_I: char = '󠁉';
-    /// \u{e004a}: '󠁊'
-    pub const TAG_LATIN_CAPITAL_LETTER_J: char = '󠁊';
-    /// \u{e004b}: '󠁋'
-    pub const TAG_LATIN_CAPITAL_LETTER_K: char = '󠁋';
-    /// \u{e004c}: '󠁌'
-    pub const TAG_LATIN_CAPITAL_LETTER_L: char = '󠁌';
-    /// \u{e004d}: '󠁍'
-    pub const TAG_LATIN_CAPITAL_LETTER_M: char = '󠁍';
-    /// \u{e004e}: '󠁎'
-    pub const TAG_LATIN_CAPITAL_LETTER_N: char = '󠁎';
-    /// \u{e004f}: '󠁏'
-    pub const TAG_LATIN_CAPITAL_LETTER_O: char = '󠁏';
-    /// \u{e0050}: '󠁐'
-    pub const TAG_LATIN_CAPITAL_LETTER_P: char = '󠁐';
-    /// \u{e0051}: '󠁑'
-    pub const TAG_LATIN_CAPITAL_LETTER_Q: char = '󠁑';
-    /// \u{e0052}: '󠁒'
-    pub const TAG_LATIN_CAPITAL_LETTER_R: char = '󠁒';
-    /// \u{e0053}: '󠁓'
-    pub const TAG_LATIN_CAPITAL_LETTER_S: char = '󠁓';
-    /// \u{e0054}: '󠁔'
-    pub const TAG_LATIN_CAPITAL_LETTER_T: char = '󠁔';
-    /// \u{e0055}: '󠁕'
-    pub const TAG_LATIN_CAPITAL_LETTER_U: char = '󠁕';
-    /// \u{e0056}: '󠁖'
-    pub const TAG_LATIN_CAPITAL_LETTER_V: char = '󠁖';
-    /// \u{e0057}: '󠁗'
-    pub const TAG_LATIN_CAPITAL_LETTER_W: char = '󠁗';
-    /// \u{e0058}: '󠁘'
-    pub const TAG_LATIN_CAPITAL_LETTER_X: char = '󠁘';
-    /// \u{e0059}: '󠁙'
-    pub const TAG_LATIN_CAPITAL_LETTER_Y: char = '󠁙';
-    /// \u{e005a}: '󠁚'
-    pub const TAG_LATIN_CAPITAL_LETTER_Z: char = '󠁚';
-    /// \u{e005b}: '󠁛'
-    pub const TAG_LEFT_SQUARE_BRACKET: char = '󠁛';
-    /// \u{e005c}: '󠁜'
-    pub const TAG_REVERSE_SOLIDUS: char = '󠁜';
-    /// \u{e005d}: '󠁝'
-    pub const TAG_RIGHT_SQUARE_BRACKET: char = '󠁝';
-    /// \u{e005e}: '󠁞'
-    pub const TAG_CIRCUMFLEX_ACCENT: char = '󠁞';
-    /// \u{e005f}: '󠁟'
-    pub const TAG_LOW_LINE: char = '󠁟';
-    /// \u{e0060}: '󠁠'
-    pub const TAG_GRAVE_ACCENT: char = '󠁠';
-    /// \u{e0061}: '󠁡'
-    pub const TAG_LATIN_SMALL_LETTER_A: char = '󠁡';
-    /// \u{e0062}: '󠁢'
-    pub const TAG_LATIN_SMALL_LETTER_B: char = '󠁢';
-    /// \u{e0063}: '󠁣'
-    pub const TAG_LATIN_SMALL_LETTER_C: char = '󠁣';
-    /// \u{e0064}: '󠁤'
-    pub const TAG_LATIN_SMALL_LETTER_D: char = '󠁤';
-    /// \u{e0065}: '󠁥'
-    pub const TAG_LATIN_SMALL_LETTER_E: char = '󠁥';
-    /// \u{e0066}: '󠁦'
-    pub const TAG_LATIN_SMALL_LETTER_F: char = '󠁦';
-    /// \u{e0067}: '󠁧'
-    pub const TAG_LATIN_SMALL_LETTER_G: char = '󠁧';
-    /// \u{e0068}: '󠁨'
-    pub const TAG_LATIN_SMALL_LETTER_H: char = '󠁨';
-    /// \u{e0069}: '󠁩'
-    pub const TAG_LATIN_SMALL_LETTER_I: char = '󠁩';
-    /// \u{e006a}: '󠁪'
-    pub const TAG_LATIN_SMALL_LETTER_J: char = '󠁪';
-    /// \u{e006b}: '󠁫'
-    pub const TAG_LATIN_SMALL_LETTER_K: char = '󠁫';
-    /// \u{e006c}: '󠁬'
-    pub const TAG_LATIN_SMALL_LETTER_L: char = '󠁬';
-    /// \u{e006d}: '󠁭'
-    pub const TAG_LATIN_SMALL_LETTER_M: char = '󠁭';
-    /// \u{e006e}: '󠁮'
-    pub const TAG_LATIN_SMALL_LETTER_N: char = '󠁮';
-    /// \u{e006f}: '󠁯'
-    pub const TAG_LATIN_SMALL_LETTER_O: char = '󠁯';
-    /// \u{e0070}: '󠁰'
-    pub const TAG_LATIN_SMALL_LETTER_P: char = '󠁰';
-    /// \u{e0071}: '󠁱'
-    pub const TAG_LATIN_SMALL_LETTER_Q: char = '󠁱';
-    /// \u{e0072}: '󠁲'
-    pub const TAG_LATIN_SMALL_LETTER_R: char = '󠁲';
-    /// \u{e0073}: '󠁳'
-    pub const TAG_LATIN_SMALL_LETTER_S: char = '󠁳';
-    /// \u{e0074}: '󠁴'
-    pub const TAG_LATIN_SMALL_LETTER_T: char = '󠁴';
-    /// \u{e0075}: '󠁵'
-    pub const TAG_LATIN_SMALL_LETTER_U: char = '󠁵';
-    /// \u{e0076}: '󠁶'
-    pub const TAG_LATIN_SMALL_LETTER_V: char = '󠁶';
-    /// \u{e0077}: '󠁷'
-    pub const TAG_LATIN_SMALL_LETTER_W: char = '󠁷';
-    /// \u{e0078}: '󠁸'
-    pub const TAG_LATIN_SMALL_LETTER_X: char = '󠁸';
-    /// \u{e0079}: '󠁹'
-    pub const TAG_LATIN_SMALL_LETTER_Y: char = '󠁹';
-    /// \u{e007a}: '󠁺'
-    pub const TAG_LATIN_SMALL_LETTER_Z: char = '󠁺';
-    /// \u{e007b}: '󠁻'
-    pub const TAG_LEFT_CURLY_BRACKET: char = '󠁻';
-    /// \u{e007c}: '󠁼'
-    pub const TAG_VERTICAL_LINE: char = '󠁼';
-    /// \u{e007d}: '󠁽'
-    pub const TAG_RIGHT_CURLY_BRACKET: char = '󠁽';
-    /// \u{e007e}: '󠁾'
-    pub const TAG_TILDE: char = '󠁾';
-}
 
 /// An enum to represent all characters in the Tags block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -393,104 +198,103 @@ pub enum Tags {
 
 impl Into<char> for Tags {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Tags::LanguageTag => LANGUAGE_TAG,
-            Tags::TagSpace => TAG_SPACE,
-            Tags::TagExclamationMark => TAG_EXCLAMATION_MARK,
-            Tags::TagQuotationMark => TAG_QUOTATION_MARK,
-            Tags::TagNumberSign => TAG_NUMBER_SIGN,
-            Tags::TagDollarSign => TAG_DOLLAR_SIGN,
-            Tags::TagPercentSign => TAG_PERCENT_SIGN,
-            Tags::TagAmpersand => TAG_AMPERSAND,
-            Tags::TagApostrophe => TAG_APOSTROPHE,
-            Tags::TagLeftParenthesis => TAG_LEFT_PARENTHESIS,
-            Tags::TagRightParenthesis => TAG_RIGHT_PARENTHESIS,
-            Tags::TagAsterisk => TAG_ASTERISK,
-            Tags::TagPlusSign => TAG_PLUS_SIGN,
-            Tags::TagComma => TAG_COMMA,
-            Tags::TagHyphenDashMinus => TAG_HYPHEN_DASH_MINUS,
-            Tags::TagFullStop => TAG_FULL_STOP,
-            Tags::TagSolidus => TAG_SOLIDUS,
-            Tags::TagDigitZero => TAG_DIGIT_ZERO,
-            Tags::TagDigitOne => TAG_DIGIT_ONE,
-            Tags::TagDigitTwo => TAG_DIGIT_TWO,
-            Tags::TagDigitThree => TAG_DIGIT_THREE,
-            Tags::TagDigitFour => TAG_DIGIT_FOUR,
-            Tags::TagDigitFive => TAG_DIGIT_FIVE,
-            Tags::TagDigitSix => TAG_DIGIT_SIX,
-            Tags::TagDigitSeven => TAG_DIGIT_SEVEN,
-            Tags::TagDigitEight => TAG_DIGIT_EIGHT,
-            Tags::TagDigitNine => TAG_DIGIT_NINE,
-            Tags::TagColon => TAG_COLON,
-            Tags::TagSemicolon => TAG_SEMICOLON,
-            Tags::TagLessDashThanSign => TAG_LESS_DASH_THAN_SIGN,
-            Tags::TagEqualsSign => TAG_EQUALS_SIGN,
-            Tags::TagGreaterDashThanSign => TAG_GREATER_DASH_THAN_SIGN,
-            Tags::TagQuestionMark => TAG_QUESTION_MARK,
-            Tags::TagCommercialAt => TAG_COMMERCIAL_AT,
-            Tags::TagLatinCapitalLetterA => TAG_LATIN_CAPITAL_LETTER_A,
-            Tags::TagLatinCapitalLetterB => TAG_LATIN_CAPITAL_LETTER_B,
-            Tags::TagLatinCapitalLetterC => TAG_LATIN_CAPITAL_LETTER_C,
-            Tags::TagLatinCapitalLetterD => TAG_LATIN_CAPITAL_LETTER_D,
-            Tags::TagLatinCapitalLetterE => TAG_LATIN_CAPITAL_LETTER_E,
-            Tags::TagLatinCapitalLetterF => TAG_LATIN_CAPITAL_LETTER_F,
-            Tags::TagLatinCapitalLetterG => TAG_LATIN_CAPITAL_LETTER_G,
-            Tags::TagLatinCapitalLetterH => TAG_LATIN_CAPITAL_LETTER_H,
-            Tags::TagLatinCapitalLetterI => TAG_LATIN_CAPITAL_LETTER_I,
-            Tags::TagLatinCapitalLetterJ => TAG_LATIN_CAPITAL_LETTER_J,
-            Tags::TagLatinCapitalLetterK => TAG_LATIN_CAPITAL_LETTER_K,
-            Tags::TagLatinCapitalLetterL => TAG_LATIN_CAPITAL_LETTER_L,
-            Tags::TagLatinCapitalLetterM => TAG_LATIN_CAPITAL_LETTER_M,
-            Tags::TagLatinCapitalLetterN => TAG_LATIN_CAPITAL_LETTER_N,
-            Tags::TagLatinCapitalLetterO => TAG_LATIN_CAPITAL_LETTER_O,
-            Tags::TagLatinCapitalLetterP => TAG_LATIN_CAPITAL_LETTER_P,
-            Tags::TagLatinCapitalLetterQ => TAG_LATIN_CAPITAL_LETTER_Q,
-            Tags::TagLatinCapitalLetterR => TAG_LATIN_CAPITAL_LETTER_R,
-            Tags::TagLatinCapitalLetterS => TAG_LATIN_CAPITAL_LETTER_S,
-            Tags::TagLatinCapitalLetterT => TAG_LATIN_CAPITAL_LETTER_T,
-            Tags::TagLatinCapitalLetterU => TAG_LATIN_CAPITAL_LETTER_U,
-            Tags::TagLatinCapitalLetterV => TAG_LATIN_CAPITAL_LETTER_V,
-            Tags::TagLatinCapitalLetterW => TAG_LATIN_CAPITAL_LETTER_W,
-            Tags::TagLatinCapitalLetterX => TAG_LATIN_CAPITAL_LETTER_X,
-            Tags::TagLatinCapitalLetterY => TAG_LATIN_CAPITAL_LETTER_Y,
-            Tags::TagLatinCapitalLetterZ => TAG_LATIN_CAPITAL_LETTER_Z,
-            Tags::TagLeftSquareBracket => TAG_LEFT_SQUARE_BRACKET,
-            Tags::TagReverseSolidus => TAG_REVERSE_SOLIDUS,
-            Tags::TagRightSquareBracket => TAG_RIGHT_SQUARE_BRACKET,
-            Tags::TagCircumflexAccent => TAG_CIRCUMFLEX_ACCENT,
-            Tags::TagLowLine => TAG_LOW_LINE,
-            Tags::TagGraveAccent => TAG_GRAVE_ACCENT,
-            Tags::TagLatinSmallLetterA => TAG_LATIN_SMALL_LETTER_A,
-            Tags::TagLatinSmallLetterB => TAG_LATIN_SMALL_LETTER_B,
-            Tags::TagLatinSmallLetterC => TAG_LATIN_SMALL_LETTER_C,
-            Tags::TagLatinSmallLetterD => TAG_LATIN_SMALL_LETTER_D,
-            Tags::TagLatinSmallLetterE => TAG_LATIN_SMALL_LETTER_E,
-            Tags::TagLatinSmallLetterF => TAG_LATIN_SMALL_LETTER_F,
-            Tags::TagLatinSmallLetterG => TAG_LATIN_SMALL_LETTER_G,
-            Tags::TagLatinSmallLetterH => TAG_LATIN_SMALL_LETTER_H,
-            Tags::TagLatinSmallLetterI => TAG_LATIN_SMALL_LETTER_I,
-            Tags::TagLatinSmallLetterJ => TAG_LATIN_SMALL_LETTER_J,
-            Tags::TagLatinSmallLetterK => TAG_LATIN_SMALL_LETTER_K,
-            Tags::TagLatinSmallLetterL => TAG_LATIN_SMALL_LETTER_L,
-            Tags::TagLatinSmallLetterM => TAG_LATIN_SMALL_LETTER_M,
-            Tags::TagLatinSmallLetterN => TAG_LATIN_SMALL_LETTER_N,
-            Tags::TagLatinSmallLetterO => TAG_LATIN_SMALL_LETTER_O,
-            Tags::TagLatinSmallLetterP => TAG_LATIN_SMALL_LETTER_P,
-            Tags::TagLatinSmallLetterQ => TAG_LATIN_SMALL_LETTER_Q,
-            Tags::TagLatinSmallLetterR => TAG_LATIN_SMALL_LETTER_R,
-            Tags::TagLatinSmallLetterS => TAG_LATIN_SMALL_LETTER_S,
-            Tags::TagLatinSmallLetterT => TAG_LATIN_SMALL_LETTER_T,
-            Tags::TagLatinSmallLetterU => TAG_LATIN_SMALL_LETTER_U,
-            Tags::TagLatinSmallLetterV => TAG_LATIN_SMALL_LETTER_V,
-            Tags::TagLatinSmallLetterW => TAG_LATIN_SMALL_LETTER_W,
-            Tags::TagLatinSmallLetterX => TAG_LATIN_SMALL_LETTER_X,
-            Tags::TagLatinSmallLetterY => TAG_LATIN_SMALL_LETTER_Y,
-            Tags::TagLatinSmallLetterZ => TAG_LATIN_SMALL_LETTER_Z,
-            Tags::TagLeftCurlyBracket => TAG_LEFT_CURLY_BRACKET,
-            Tags::TagVerticalLine => TAG_VERTICAL_LINE,
-            Tags::TagRightCurlyBracket => TAG_RIGHT_CURLY_BRACKET,
-            Tags::TagTilde => TAG_TILDE,
+            Tags::LanguageTag => '󠀁',
+            Tags::TagSpace => '󠀠',
+            Tags::TagExclamationMark => '󠀡',
+            Tags::TagQuotationMark => '󠀢',
+            Tags::TagNumberSign => '󠀣',
+            Tags::TagDollarSign => '󠀤',
+            Tags::TagPercentSign => '󠀥',
+            Tags::TagAmpersand => '󠀦',
+            Tags::TagApostrophe => '󠀧',
+            Tags::TagLeftParenthesis => '󠀨',
+            Tags::TagRightParenthesis => '󠀩',
+            Tags::TagAsterisk => '󠀪',
+            Tags::TagPlusSign => '󠀫',
+            Tags::TagComma => '󠀬',
+            Tags::TagHyphenDashMinus => '󠀭',
+            Tags::TagFullStop => '󠀮',
+            Tags::TagSolidus => '󠀯',
+            Tags::TagDigitZero => '󠀰',
+            Tags::TagDigitOne => '󠀱',
+            Tags::TagDigitTwo => '󠀲',
+            Tags::TagDigitThree => '󠀳',
+            Tags::TagDigitFour => '󠀴',
+            Tags::TagDigitFive => '󠀵',
+            Tags::TagDigitSix => '󠀶',
+            Tags::TagDigitSeven => '󠀷',
+            Tags::TagDigitEight => '󠀸',
+            Tags::TagDigitNine => '󠀹',
+            Tags::TagColon => '󠀺',
+            Tags::TagSemicolon => '󠀻',
+            Tags::TagLessDashThanSign => '󠀼',
+            Tags::TagEqualsSign => '󠀽',
+            Tags::TagGreaterDashThanSign => '󠀾',
+            Tags::TagQuestionMark => '󠀿',
+            Tags::TagCommercialAt => '󠁀',
+            Tags::TagLatinCapitalLetterA => '󠁁',
+            Tags::TagLatinCapitalLetterB => '󠁂',
+            Tags::TagLatinCapitalLetterC => '󠁃',
+            Tags::TagLatinCapitalLetterD => '󠁄',
+            Tags::TagLatinCapitalLetterE => '󠁅',
+            Tags::TagLatinCapitalLetterF => '󠁆',
+            Tags::TagLatinCapitalLetterG => '󠁇',
+            Tags::TagLatinCapitalLetterH => '󠁈',
+            Tags::TagLatinCapitalLetterI => '󠁉',
+            Tags::TagLatinCapitalLetterJ => '󠁊',
+            Tags::TagLatinCapitalLetterK => '󠁋',
+            Tags::TagLatinCapitalLetterL => '󠁌',
+            Tags::TagLatinCapitalLetterM => '󠁍',
+            Tags::TagLatinCapitalLetterN => '󠁎',
+            Tags::TagLatinCapitalLetterO => '󠁏',
+            Tags::TagLatinCapitalLetterP => '󠁐',
+            Tags::TagLatinCapitalLetterQ => '󠁑',
+            Tags::TagLatinCapitalLetterR => '󠁒',
+            Tags::TagLatinCapitalLetterS => '󠁓',
+            Tags::TagLatinCapitalLetterT => '󠁔',
+            Tags::TagLatinCapitalLetterU => '󠁕',
+            Tags::TagLatinCapitalLetterV => '󠁖',
+            Tags::TagLatinCapitalLetterW => '󠁗',
+            Tags::TagLatinCapitalLetterX => '󠁘',
+            Tags::TagLatinCapitalLetterY => '󠁙',
+            Tags::TagLatinCapitalLetterZ => '󠁚',
+            Tags::TagLeftSquareBracket => '󠁛',
+            Tags::TagReverseSolidus => '󠁜',
+            Tags::TagRightSquareBracket => '󠁝',
+            Tags::TagCircumflexAccent => '󠁞',
+            Tags::TagLowLine => '󠁟',
+            Tags::TagGraveAccent => '󠁠',
+            Tags::TagLatinSmallLetterA => '󠁡',
+            Tags::TagLatinSmallLetterB => '󠁢',
+            Tags::TagLatinSmallLetterC => '󠁣',
+            Tags::TagLatinSmallLetterD => '󠁤',
+            Tags::TagLatinSmallLetterE => '󠁥',
+            Tags::TagLatinSmallLetterF => '󠁦',
+            Tags::TagLatinSmallLetterG => '󠁧',
+            Tags::TagLatinSmallLetterH => '󠁨',
+            Tags::TagLatinSmallLetterI => '󠁩',
+            Tags::TagLatinSmallLetterJ => '󠁪',
+            Tags::TagLatinSmallLetterK => '󠁫',
+            Tags::TagLatinSmallLetterL => '󠁬',
+            Tags::TagLatinSmallLetterM => '󠁭',
+            Tags::TagLatinSmallLetterN => '󠁮',
+            Tags::TagLatinSmallLetterO => '󠁯',
+            Tags::TagLatinSmallLetterP => '󠁰',
+            Tags::TagLatinSmallLetterQ => '󠁱',
+            Tags::TagLatinSmallLetterR => '󠁲',
+            Tags::TagLatinSmallLetterS => '󠁳',
+            Tags::TagLatinSmallLetterT => '󠁴',
+            Tags::TagLatinSmallLetterU => '󠁵',
+            Tags::TagLatinSmallLetterV => '󠁶',
+            Tags::TagLatinSmallLetterW => '󠁷',
+            Tags::TagLatinSmallLetterX => '󠁸',
+            Tags::TagLatinSmallLetterY => '󠁹',
+            Tags::TagLatinSmallLetterZ => '󠁺',
+            Tags::TagLeftCurlyBracket => '󠁻',
+            Tags::TagVerticalLine => '󠁼',
+            Tags::TagRightCurlyBracket => '󠁽',
+            Tags::TagTilde => '󠁾',
         }
     }
 }
@@ -498,104 +302,103 @@ impl Into<char> for Tags {
 impl std::convert::TryFrom<char> for Tags {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LANGUAGE_TAG => Ok(Tags::LanguageTag),
-            TAG_SPACE => Ok(Tags::TagSpace),
-            TAG_EXCLAMATION_MARK => Ok(Tags::TagExclamationMark),
-            TAG_QUOTATION_MARK => Ok(Tags::TagQuotationMark),
-            TAG_NUMBER_SIGN => Ok(Tags::TagNumberSign),
-            TAG_DOLLAR_SIGN => Ok(Tags::TagDollarSign),
-            TAG_PERCENT_SIGN => Ok(Tags::TagPercentSign),
-            TAG_AMPERSAND => Ok(Tags::TagAmpersand),
-            TAG_APOSTROPHE => Ok(Tags::TagApostrophe),
-            TAG_LEFT_PARENTHESIS => Ok(Tags::TagLeftParenthesis),
-            TAG_RIGHT_PARENTHESIS => Ok(Tags::TagRightParenthesis),
-            TAG_ASTERISK => Ok(Tags::TagAsterisk),
-            TAG_PLUS_SIGN => Ok(Tags::TagPlusSign),
-            TAG_COMMA => Ok(Tags::TagComma),
-            TAG_HYPHEN_DASH_MINUS => Ok(Tags::TagHyphenDashMinus),
-            TAG_FULL_STOP => Ok(Tags::TagFullStop),
-            TAG_SOLIDUS => Ok(Tags::TagSolidus),
-            TAG_DIGIT_ZERO => Ok(Tags::TagDigitZero),
-            TAG_DIGIT_ONE => Ok(Tags::TagDigitOne),
-            TAG_DIGIT_TWO => Ok(Tags::TagDigitTwo),
-            TAG_DIGIT_THREE => Ok(Tags::TagDigitThree),
-            TAG_DIGIT_FOUR => Ok(Tags::TagDigitFour),
-            TAG_DIGIT_FIVE => Ok(Tags::TagDigitFive),
-            TAG_DIGIT_SIX => Ok(Tags::TagDigitSix),
-            TAG_DIGIT_SEVEN => Ok(Tags::TagDigitSeven),
-            TAG_DIGIT_EIGHT => Ok(Tags::TagDigitEight),
-            TAG_DIGIT_NINE => Ok(Tags::TagDigitNine),
-            TAG_COLON => Ok(Tags::TagColon),
-            TAG_SEMICOLON => Ok(Tags::TagSemicolon),
-            TAG_LESS_DASH_THAN_SIGN => Ok(Tags::TagLessDashThanSign),
-            TAG_EQUALS_SIGN => Ok(Tags::TagEqualsSign),
-            TAG_GREATER_DASH_THAN_SIGN => Ok(Tags::TagGreaterDashThanSign),
-            TAG_QUESTION_MARK => Ok(Tags::TagQuestionMark),
-            TAG_COMMERCIAL_AT => Ok(Tags::TagCommercialAt),
-            TAG_LATIN_CAPITAL_LETTER_A => Ok(Tags::TagLatinCapitalLetterA),
-            TAG_LATIN_CAPITAL_LETTER_B => Ok(Tags::TagLatinCapitalLetterB),
-            TAG_LATIN_CAPITAL_LETTER_C => Ok(Tags::TagLatinCapitalLetterC),
-            TAG_LATIN_CAPITAL_LETTER_D => Ok(Tags::TagLatinCapitalLetterD),
-            TAG_LATIN_CAPITAL_LETTER_E => Ok(Tags::TagLatinCapitalLetterE),
-            TAG_LATIN_CAPITAL_LETTER_F => Ok(Tags::TagLatinCapitalLetterF),
-            TAG_LATIN_CAPITAL_LETTER_G => Ok(Tags::TagLatinCapitalLetterG),
-            TAG_LATIN_CAPITAL_LETTER_H => Ok(Tags::TagLatinCapitalLetterH),
-            TAG_LATIN_CAPITAL_LETTER_I => Ok(Tags::TagLatinCapitalLetterI),
-            TAG_LATIN_CAPITAL_LETTER_J => Ok(Tags::TagLatinCapitalLetterJ),
-            TAG_LATIN_CAPITAL_LETTER_K => Ok(Tags::TagLatinCapitalLetterK),
-            TAG_LATIN_CAPITAL_LETTER_L => Ok(Tags::TagLatinCapitalLetterL),
-            TAG_LATIN_CAPITAL_LETTER_M => Ok(Tags::TagLatinCapitalLetterM),
-            TAG_LATIN_CAPITAL_LETTER_N => Ok(Tags::TagLatinCapitalLetterN),
-            TAG_LATIN_CAPITAL_LETTER_O => Ok(Tags::TagLatinCapitalLetterO),
-            TAG_LATIN_CAPITAL_LETTER_P => Ok(Tags::TagLatinCapitalLetterP),
-            TAG_LATIN_CAPITAL_LETTER_Q => Ok(Tags::TagLatinCapitalLetterQ),
-            TAG_LATIN_CAPITAL_LETTER_R => Ok(Tags::TagLatinCapitalLetterR),
-            TAG_LATIN_CAPITAL_LETTER_S => Ok(Tags::TagLatinCapitalLetterS),
-            TAG_LATIN_CAPITAL_LETTER_T => Ok(Tags::TagLatinCapitalLetterT),
-            TAG_LATIN_CAPITAL_LETTER_U => Ok(Tags::TagLatinCapitalLetterU),
-            TAG_LATIN_CAPITAL_LETTER_V => Ok(Tags::TagLatinCapitalLetterV),
-            TAG_LATIN_CAPITAL_LETTER_W => Ok(Tags::TagLatinCapitalLetterW),
-            TAG_LATIN_CAPITAL_LETTER_X => Ok(Tags::TagLatinCapitalLetterX),
-            TAG_LATIN_CAPITAL_LETTER_Y => Ok(Tags::TagLatinCapitalLetterY),
-            TAG_LATIN_CAPITAL_LETTER_Z => Ok(Tags::TagLatinCapitalLetterZ),
-            TAG_LEFT_SQUARE_BRACKET => Ok(Tags::TagLeftSquareBracket),
-            TAG_REVERSE_SOLIDUS => Ok(Tags::TagReverseSolidus),
-            TAG_RIGHT_SQUARE_BRACKET => Ok(Tags::TagRightSquareBracket),
-            TAG_CIRCUMFLEX_ACCENT => Ok(Tags::TagCircumflexAccent),
-            TAG_LOW_LINE => Ok(Tags::TagLowLine),
-            TAG_GRAVE_ACCENT => Ok(Tags::TagGraveAccent),
-            TAG_LATIN_SMALL_LETTER_A => Ok(Tags::TagLatinSmallLetterA),
-            TAG_LATIN_SMALL_LETTER_B => Ok(Tags::TagLatinSmallLetterB),
-            TAG_LATIN_SMALL_LETTER_C => Ok(Tags::TagLatinSmallLetterC),
-            TAG_LATIN_SMALL_LETTER_D => Ok(Tags::TagLatinSmallLetterD),
-            TAG_LATIN_SMALL_LETTER_E => Ok(Tags::TagLatinSmallLetterE),
-            TAG_LATIN_SMALL_LETTER_F => Ok(Tags::TagLatinSmallLetterF),
-            TAG_LATIN_SMALL_LETTER_G => Ok(Tags::TagLatinSmallLetterG),
-            TAG_LATIN_SMALL_LETTER_H => Ok(Tags::TagLatinSmallLetterH),
-            TAG_LATIN_SMALL_LETTER_I => Ok(Tags::TagLatinSmallLetterI),
-            TAG_LATIN_SMALL_LETTER_J => Ok(Tags::TagLatinSmallLetterJ),
-            TAG_LATIN_SMALL_LETTER_K => Ok(Tags::TagLatinSmallLetterK),
-            TAG_LATIN_SMALL_LETTER_L => Ok(Tags::TagLatinSmallLetterL),
-            TAG_LATIN_SMALL_LETTER_M => Ok(Tags::TagLatinSmallLetterM),
-            TAG_LATIN_SMALL_LETTER_N => Ok(Tags::TagLatinSmallLetterN),
-            TAG_LATIN_SMALL_LETTER_O => Ok(Tags::TagLatinSmallLetterO),
-            TAG_LATIN_SMALL_LETTER_P => Ok(Tags::TagLatinSmallLetterP),
-            TAG_LATIN_SMALL_LETTER_Q => Ok(Tags::TagLatinSmallLetterQ),
-            TAG_LATIN_SMALL_LETTER_R => Ok(Tags::TagLatinSmallLetterR),
-            TAG_LATIN_SMALL_LETTER_S => Ok(Tags::TagLatinSmallLetterS),
-            TAG_LATIN_SMALL_LETTER_T => Ok(Tags::TagLatinSmallLetterT),
-            TAG_LATIN_SMALL_LETTER_U => Ok(Tags::TagLatinSmallLetterU),
-            TAG_LATIN_SMALL_LETTER_V => Ok(Tags::TagLatinSmallLetterV),
-            TAG_LATIN_SMALL_LETTER_W => Ok(Tags::TagLatinSmallLetterW),
-            TAG_LATIN_SMALL_LETTER_X => Ok(Tags::TagLatinSmallLetterX),
-            TAG_LATIN_SMALL_LETTER_Y => Ok(Tags::TagLatinSmallLetterY),
-            TAG_LATIN_SMALL_LETTER_Z => Ok(Tags::TagLatinSmallLetterZ),
-            TAG_LEFT_CURLY_BRACKET => Ok(Tags::TagLeftCurlyBracket),
-            TAG_VERTICAL_LINE => Ok(Tags::TagVerticalLine),
-            TAG_RIGHT_CURLY_BRACKET => Ok(Tags::TagRightCurlyBracket),
-            TAG_TILDE => Ok(Tags::TagTilde),
+            '󠀁' => Ok(Tags::LanguageTag),
+            '󠀠' => Ok(Tags::TagSpace),
+            '󠀡' => Ok(Tags::TagExclamationMark),
+            '󠀢' => Ok(Tags::TagQuotationMark),
+            '󠀣' => Ok(Tags::TagNumberSign),
+            '󠀤' => Ok(Tags::TagDollarSign),
+            '󠀥' => Ok(Tags::TagPercentSign),
+            '󠀦' => Ok(Tags::TagAmpersand),
+            '󠀧' => Ok(Tags::TagApostrophe),
+            '󠀨' => Ok(Tags::TagLeftParenthesis),
+            '󠀩' => Ok(Tags::TagRightParenthesis),
+            '󠀪' => Ok(Tags::TagAsterisk),
+            '󠀫' => Ok(Tags::TagPlusSign),
+            '󠀬' => Ok(Tags::TagComma),
+            '󠀭' => Ok(Tags::TagHyphenDashMinus),
+            '󠀮' => Ok(Tags::TagFullStop),
+            '󠀯' => Ok(Tags::TagSolidus),
+            '󠀰' => Ok(Tags::TagDigitZero),
+            '󠀱' => Ok(Tags::TagDigitOne),
+            '󠀲' => Ok(Tags::TagDigitTwo),
+            '󠀳' => Ok(Tags::TagDigitThree),
+            '󠀴' => Ok(Tags::TagDigitFour),
+            '󠀵' => Ok(Tags::TagDigitFive),
+            '󠀶' => Ok(Tags::TagDigitSix),
+            '󠀷' => Ok(Tags::TagDigitSeven),
+            '󠀸' => Ok(Tags::TagDigitEight),
+            '󠀹' => Ok(Tags::TagDigitNine),
+            '󠀺' => Ok(Tags::TagColon),
+            '󠀻' => Ok(Tags::TagSemicolon),
+            '󠀼' => Ok(Tags::TagLessDashThanSign),
+            '󠀽' => Ok(Tags::TagEqualsSign),
+            '󠀾' => Ok(Tags::TagGreaterDashThanSign),
+            '󠀿' => Ok(Tags::TagQuestionMark),
+            '󠁀' => Ok(Tags::TagCommercialAt),
+            '󠁁' => Ok(Tags::TagLatinCapitalLetterA),
+            '󠁂' => Ok(Tags::TagLatinCapitalLetterB),
+            '󠁃' => Ok(Tags::TagLatinCapitalLetterC),
+            '󠁄' => Ok(Tags::TagLatinCapitalLetterD),
+            '󠁅' => Ok(Tags::TagLatinCapitalLetterE),
+            '󠁆' => Ok(Tags::TagLatinCapitalLetterF),
+            '󠁇' => Ok(Tags::TagLatinCapitalLetterG),
+            '󠁈' => Ok(Tags::TagLatinCapitalLetterH),
+            '󠁉' => Ok(Tags::TagLatinCapitalLetterI),
+            '󠁊' => Ok(Tags::TagLatinCapitalLetterJ),
+            '󠁋' => Ok(Tags::TagLatinCapitalLetterK),
+            '󠁌' => Ok(Tags::TagLatinCapitalLetterL),
+            '󠁍' => Ok(Tags::TagLatinCapitalLetterM),
+            '󠁎' => Ok(Tags::TagLatinCapitalLetterN),
+            '󠁏' => Ok(Tags::TagLatinCapitalLetterO),
+            '󠁐' => Ok(Tags::TagLatinCapitalLetterP),
+            '󠁑' => Ok(Tags::TagLatinCapitalLetterQ),
+            '󠁒' => Ok(Tags::TagLatinCapitalLetterR),
+            '󠁓' => Ok(Tags::TagLatinCapitalLetterS),
+            '󠁔' => Ok(Tags::TagLatinCapitalLetterT),
+            '󠁕' => Ok(Tags::TagLatinCapitalLetterU),
+            '󠁖' => Ok(Tags::TagLatinCapitalLetterV),
+            '󠁗' => Ok(Tags::TagLatinCapitalLetterW),
+            '󠁘' => Ok(Tags::TagLatinCapitalLetterX),
+            '󠁙' => Ok(Tags::TagLatinCapitalLetterY),
+            '󠁚' => Ok(Tags::TagLatinCapitalLetterZ),
+            '󠁛' => Ok(Tags::TagLeftSquareBracket),
+            '󠁜' => Ok(Tags::TagReverseSolidus),
+            '󠁝' => Ok(Tags::TagRightSquareBracket),
+            '󠁞' => Ok(Tags::TagCircumflexAccent),
+            '󠁟' => Ok(Tags::TagLowLine),
+            '󠁠' => Ok(Tags::TagGraveAccent),
+            '󠁡' => Ok(Tags::TagLatinSmallLetterA),
+            '󠁢' => Ok(Tags::TagLatinSmallLetterB),
+            '󠁣' => Ok(Tags::TagLatinSmallLetterC),
+            '󠁤' => Ok(Tags::TagLatinSmallLetterD),
+            '󠁥' => Ok(Tags::TagLatinSmallLetterE),
+            '󠁦' => Ok(Tags::TagLatinSmallLetterF),
+            '󠁧' => Ok(Tags::TagLatinSmallLetterG),
+            '󠁨' => Ok(Tags::TagLatinSmallLetterH),
+            '󠁩' => Ok(Tags::TagLatinSmallLetterI),
+            '󠁪' => Ok(Tags::TagLatinSmallLetterJ),
+            '󠁫' => Ok(Tags::TagLatinSmallLetterK),
+            '󠁬' => Ok(Tags::TagLatinSmallLetterL),
+            '󠁭' => Ok(Tags::TagLatinSmallLetterM),
+            '󠁮' => Ok(Tags::TagLatinSmallLetterN),
+            '󠁯' => Ok(Tags::TagLatinSmallLetterO),
+            '󠁰' => Ok(Tags::TagLatinSmallLetterP),
+            '󠁱' => Ok(Tags::TagLatinSmallLetterQ),
+            '󠁲' => Ok(Tags::TagLatinSmallLetterR),
+            '󠁳' => Ok(Tags::TagLatinSmallLetterS),
+            '󠁴' => Ok(Tags::TagLatinSmallLetterT),
+            '󠁵' => Ok(Tags::TagLatinSmallLetterU),
+            '󠁶' => Ok(Tags::TagLatinSmallLetterV),
+            '󠁷' => Ok(Tags::TagLatinSmallLetterW),
+            '󠁸' => Ok(Tags::TagLatinSmallLetterX),
+            '󠁹' => Ok(Tags::TagLatinSmallLetterY),
+            '󠁺' => Ok(Tags::TagLatinSmallLetterZ),
+            '󠁻' => Ok(Tags::TagLeftCurlyBracket),
+            '󠁼' => Ok(Tags::TagVerticalLine),
+            '󠁽' => Ok(Tags::TagRightCurlyBracket),
+            '󠁾' => Ok(Tags::TagTilde),
             _ => Err(()),
         }
     }

@@ -1,32 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10190}: '𐆐'
-    pub const ROMAN_SEXTANS_SIGN: char = '𐆐';
-    /// \u{10191}: '𐆑'
-    pub const ROMAN_UNCIA_SIGN: char = '𐆑';
-    /// \u{10192}: '𐆒'
-    pub const ROMAN_SEMUNCIA_SIGN: char = '𐆒';
-    /// \u{10193}: '𐆓'
-    pub const ROMAN_SEXTULA_SIGN: char = '𐆓';
-    /// \u{10194}: '𐆔'
-    pub const ROMAN_DIMIDIA_SEXTULA_SIGN: char = '𐆔';
-    /// \u{10195}: '𐆕'
-    pub const ROMAN_SILIQUA_SIGN: char = '𐆕';
-    /// \u{10196}: '𐆖'
-    pub const ROMAN_DENARIUS_SIGN: char = '𐆖';
-    /// \u{10197}: '𐆗'
-    pub const ROMAN_QUINARIUS_SIGN: char = '𐆗';
-    /// \u{10198}: '𐆘'
-    pub const ROMAN_SESTERTIUS_SIGN: char = '𐆘';
-    /// \u{10199}: '𐆙'
-    pub const ROMAN_DUPONDIUS_SIGN: char = '𐆙';
-    /// \u{1019a}: '𐆚'
-    pub const ROMAN_AS_SIGN: char = '𐆚';
-    /// \u{1019b}: '𐆛'
-    pub const ROMAN_CENTURIAL_SIGN: char = '𐆛';
-    /// \u{101a0}: '𐆠'
-    pub const GREEK_SYMBOL_TAU_RHO: char = '𐆠';
-}
 
 /// An enum to represent all characters in the AncientSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -61,21 +32,20 @@ pub enum AncientSymbols {
 
 impl Into<char> for AncientSymbols {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            AncientSymbols::RomanSextansSign => ROMAN_SEXTANS_SIGN,
-            AncientSymbols::RomanUnciaSign => ROMAN_UNCIA_SIGN,
-            AncientSymbols::RomanSemunciaSign => ROMAN_SEMUNCIA_SIGN,
-            AncientSymbols::RomanSextulaSign => ROMAN_SEXTULA_SIGN,
-            AncientSymbols::RomanDimidiaSextulaSign => ROMAN_DIMIDIA_SEXTULA_SIGN,
-            AncientSymbols::RomanSiliquaSign => ROMAN_SILIQUA_SIGN,
-            AncientSymbols::RomanDenariusSign => ROMAN_DENARIUS_SIGN,
-            AncientSymbols::RomanQuinariusSign => ROMAN_QUINARIUS_SIGN,
-            AncientSymbols::RomanSestertiusSign => ROMAN_SESTERTIUS_SIGN,
-            AncientSymbols::RomanDupondiusSign => ROMAN_DUPONDIUS_SIGN,
-            AncientSymbols::RomanAsSign => ROMAN_AS_SIGN,
-            AncientSymbols::RomanCenturialSign => ROMAN_CENTURIAL_SIGN,
-            AncientSymbols::GreekSymbolTauRho => GREEK_SYMBOL_TAU_RHO,
+            AncientSymbols::RomanSextansSign => '𐆐',
+            AncientSymbols::RomanUnciaSign => '𐆑',
+            AncientSymbols::RomanSemunciaSign => '𐆒',
+            AncientSymbols::RomanSextulaSign => '𐆓',
+            AncientSymbols::RomanDimidiaSextulaSign => '𐆔',
+            AncientSymbols::RomanSiliquaSign => '𐆕',
+            AncientSymbols::RomanDenariusSign => '𐆖',
+            AncientSymbols::RomanQuinariusSign => '𐆗',
+            AncientSymbols::RomanSestertiusSign => '𐆘',
+            AncientSymbols::RomanDupondiusSign => '𐆙',
+            AncientSymbols::RomanAsSign => '𐆚',
+            AncientSymbols::RomanCenturialSign => '𐆛',
+            AncientSymbols::GreekSymbolTauRho => '𐆠',
         }
     }
 }
@@ -83,21 +53,20 @@ impl Into<char> for AncientSymbols {
 impl std::convert::TryFrom<char> for AncientSymbols {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            ROMAN_SEXTANS_SIGN => Ok(AncientSymbols::RomanSextansSign),
-            ROMAN_UNCIA_SIGN => Ok(AncientSymbols::RomanUnciaSign),
-            ROMAN_SEMUNCIA_SIGN => Ok(AncientSymbols::RomanSemunciaSign),
-            ROMAN_SEXTULA_SIGN => Ok(AncientSymbols::RomanSextulaSign),
-            ROMAN_DIMIDIA_SEXTULA_SIGN => Ok(AncientSymbols::RomanDimidiaSextulaSign),
-            ROMAN_SILIQUA_SIGN => Ok(AncientSymbols::RomanSiliquaSign),
-            ROMAN_DENARIUS_SIGN => Ok(AncientSymbols::RomanDenariusSign),
-            ROMAN_QUINARIUS_SIGN => Ok(AncientSymbols::RomanQuinariusSign),
-            ROMAN_SESTERTIUS_SIGN => Ok(AncientSymbols::RomanSestertiusSign),
-            ROMAN_DUPONDIUS_SIGN => Ok(AncientSymbols::RomanDupondiusSign),
-            ROMAN_AS_SIGN => Ok(AncientSymbols::RomanAsSign),
-            ROMAN_CENTURIAL_SIGN => Ok(AncientSymbols::RomanCenturialSign),
-            GREEK_SYMBOL_TAU_RHO => Ok(AncientSymbols::GreekSymbolTauRho),
+            '𐆐' => Ok(AncientSymbols::RomanSextansSign),
+            '𐆑' => Ok(AncientSymbols::RomanUnciaSign),
+            '𐆒' => Ok(AncientSymbols::RomanSemunciaSign),
+            '𐆓' => Ok(AncientSymbols::RomanSextulaSign),
+            '𐆔' => Ok(AncientSymbols::RomanDimidiaSextulaSign),
+            '𐆕' => Ok(AncientSymbols::RomanSiliquaSign),
+            '𐆖' => Ok(AncientSymbols::RomanDenariusSign),
+            '𐆗' => Ok(AncientSymbols::RomanQuinariusSign),
+            '𐆘' => Ok(AncientSymbols::RomanSestertiusSign),
+            '𐆙' => Ok(AncientSymbols::RomanDupondiusSign),
+            '𐆚' => Ok(AncientSymbols::RomanAsSign),
+            '𐆛' => Ok(AncientSymbols::RomanCenturialSign),
+            '𐆠' => Ok(AncientSymbols::GreekSymbolTauRho),
             _ => Err(()),
         }
     }

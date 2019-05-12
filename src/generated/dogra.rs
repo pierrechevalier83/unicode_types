@@ -1,126 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11800}: '𑠀'
-    pub const LETTER_A: char = '𑠀';
-    /// \u{11801}: '𑠁'
-    pub const LETTER_AA: char = '𑠁';
-    /// \u{11802}: '𑠂'
-    pub const LETTER_I: char = '𑠂';
-    /// \u{11803}: '𑠃'
-    pub const LETTER_II: char = '𑠃';
-    /// \u{11804}: '𑠄'
-    pub const LETTER_U: char = '𑠄';
-    /// \u{11805}: '𑠅'
-    pub const LETTER_UU: char = '𑠅';
-    /// \u{11806}: '𑠆'
-    pub const LETTER_E: char = '𑠆';
-    /// \u{11807}: '𑠇'
-    pub const LETTER_AI: char = '𑠇';
-    /// \u{11808}: '𑠈'
-    pub const LETTER_O: char = '𑠈';
-    /// \u{11809}: '𑠉'
-    pub const LETTER_AU: char = '𑠉';
-    /// \u{1180a}: '𑠊'
-    pub const LETTER_KA: char = '𑠊';
-    /// \u{1180b}: '𑠋'
-    pub const LETTER_KHA: char = '𑠋';
-    /// \u{1180c}: '𑠌'
-    pub const LETTER_GA: char = '𑠌';
-    /// \u{1180d}: '𑠍'
-    pub const LETTER_GHA: char = '𑠍';
-    /// \u{1180e}: '𑠎'
-    pub const LETTER_NGA: char = '𑠎';
-    /// \u{1180f}: '𑠏'
-    pub const LETTER_CA: char = '𑠏';
-    /// \u{11810}: '𑠐'
-    pub const LETTER_CHA: char = '𑠐';
-    /// \u{11811}: '𑠑'
-    pub const LETTER_JA: char = '𑠑';
-    /// \u{11812}: '𑠒'
-    pub const LETTER_JHA: char = '𑠒';
-    /// \u{11813}: '𑠓'
-    pub const LETTER_NYA: char = '𑠓';
-    /// \u{11814}: '𑠔'
-    pub const LETTER_TTA: char = '𑠔';
-    /// \u{11815}: '𑠕'
-    pub const LETTER_TTHA: char = '𑠕';
-    /// \u{11816}: '𑠖'
-    pub const LETTER_DDA: char = '𑠖';
-    /// \u{11817}: '𑠗'
-    pub const LETTER_DDHA: char = '𑠗';
-    /// \u{11818}: '𑠘'
-    pub const LETTER_NNA: char = '𑠘';
-    /// \u{11819}: '𑠙'
-    pub const LETTER_TA: char = '𑠙';
-    /// \u{1181a}: '𑠚'
-    pub const LETTER_THA: char = '𑠚';
-    /// \u{1181b}: '𑠛'
-    pub const LETTER_DA: char = '𑠛';
-    /// \u{1181c}: '𑠜'
-    pub const LETTER_DHA: char = '𑠜';
-    /// \u{1181d}: '𑠝'
-    pub const LETTER_NA: char = '𑠝';
-    /// \u{1181e}: '𑠞'
-    pub const LETTER_PA: char = '𑠞';
-    /// \u{1181f}: '𑠟'
-    pub const LETTER_PHA: char = '𑠟';
-    /// \u{11820}: '𑠠'
-    pub const LETTER_BA: char = '𑠠';
-    /// \u{11821}: '𑠡'
-    pub const LETTER_BHA: char = '𑠡';
-    /// \u{11822}: '𑠢'
-    pub const LETTER_MA: char = '𑠢';
-    /// \u{11823}: '𑠣'
-    pub const LETTER_YA: char = '𑠣';
-    /// \u{11824}: '𑠤'
-    pub const LETTER_RA: char = '𑠤';
-    /// \u{11825}: '𑠥'
-    pub const LETTER_LA: char = '𑠥';
-    /// \u{11826}: '𑠦'
-    pub const LETTER_VA: char = '𑠦';
-    /// \u{11827}: '𑠧'
-    pub const LETTER_SHA: char = '𑠧';
-    /// \u{11828}: '𑠨'
-    pub const LETTER_SSA: char = '𑠨';
-    /// \u{11829}: '𑠩'
-    pub const LETTER_SA: char = '𑠩';
-    /// \u{1182a}: '𑠪'
-    pub const LETTER_HA: char = '𑠪';
-    /// \u{1182b}: '𑠫'
-    pub const LETTER_RRA: char = '𑠫';
-    /// \u{1182c}: '𑠬'
-    pub const VOWEL_SIGN_AA: char = '𑠬';
-    /// \u{1182d}: '𑠭'
-    pub const VOWEL_SIGN_I: char = '𑠭';
-    /// \u{1182e}: '𑠮'
-    pub const VOWEL_SIGN_II: char = '𑠮';
-    /// \u{1182f}: '𑠯'
-    pub const VOWEL_SIGN_U: char = '𑠯';
-    /// \u{11830}: '𑠰'
-    pub const VOWEL_SIGN_UU: char = '𑠰';
-    /// \u{11831}: '𑠱'
-    pub const VOWEL_SIGN_VOCALIC_R: char = '𑠱';
-    /// \u{11832}: '𑠲'
-    pub const VOWEL_SIGN_VOCALIC_RR: char = '𑠲';
-    /// \u{11833}: '𑠳'
-    pub const VOWEL_SIGN_E: char = '𑠳';
-    /// \u{11834}: '𑠴'
-    pub const VOWEL_SIGN_AI: char = '𑠴';
-    /// \u{11835}: '𑠵'
-    pub const VOWEL_SIGN_O: char = '𑠵';
-    /// \u{11836}: '𑠶'
-    pub const VOWEL_SIGN_AU: char = '𑠶';
-    /// \u{11837}: '𑠷'
-    pub const SIGN_ANUSVARA: char = '𑠷';
-    /// \u{11838}: '𑠸'
-    pub const SIGN_VISARGA: char = '𑠸';
-    /// \u{11839}: '𑠹'
-    pub const SIGN_VIRAMA: char = '𑠹';
-    /// \u{1183a}: '𑠺'
-    pub const SIGN_NUKTA: char = '𑠺';
-    /// \u{1183b}: '𑠻'
-    pub const ABBREVIATION_SIGN: char = '𑠻';
-}
 
 /// An enum to represent all characters in the Dogra block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -249,68 +126,67 @@ pub enum Dogra {
 
 impl Into<char> for Dogra {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Dogra::LetterA => LETTER_A,
-            Dogra::LetterAa => LETTER_AA,
-            Dogra::LetterI => LETTER_I,
-            Dogra::LetterIi => LETTER_II,
-            Dogra::LetterU => LETTER_U,
-            Dogra::LetterUu => LETTER_UU,
-            Dogra::LetterE => LETTER_E,
-            Dogra::LetterAi => LETTER_AI,
-            Dogra::LetterO => LETTER_O,
-            Dogra::LetterAu => LETTER_AU,
-            Dogra::LetterKa => LETTER_KA,
-            Dogra::LetterKha => LETTER_KHA,
-            Dogra::LetterGa => LETTER_GA,
-            Dogra::LetterGha => LETTER_GHA,
-            Dogra::LetterNga => LETTER_NGA,
-            Dogra::LetterCa => LETTER_CA,
-            Dogra::LetterCha => LETTER_CHA,
-            Dogra::LetterJa => LETTER_JA,
-            Dogra::LetterJha => LETTER_JHA,
-            Dogra::LetterNya => LETTER_NYA,
-            Dogra::LetterTta => LETTER_TTA,
-            Dogra::LetterTtha => LETTER_TTHA,
-            Dogra::LetterDda => LETTER_DDA,
-            Dogra::LetterDdha => LETTER_DDHA,
-            Dogra::LetterNna => LETTER_NNA,
-            Dogra::LetterTa => LETTER_TA,
-            Dogra::LetterTha => LETTER_THA,
-            Dogra::LetterDa => LETTER_DA,
-            Dogra::LetterDha => LETTER_DHA,
-            Dogra::LetterNa => LETTER_NA,
-            Dogra::LetterPa => LETTER_PA,
-            Dogra::LetterPha => LETTER_PHA,
-            Dogra::LetterBa => LETTER_BA,
-            Dogra::LetterBha => LETTER_BHA,
-            Dogra::LetterMa => LETTER_MA,
-            Dogra::LetterYa => LETTER_YA,
-            Dogra::LetterRa => LETTER_RA,
-            Dogra::LetterLa => LETTER_LA,
-            Dogra::LetterVa => LETTER_VA,
-            Dogra::LetterSha => LETTER_SHA,
-            Dogra::LetterSsa => LETTER_SSA,
-            Dogra::LetterSa => LETTER_SA,
-            Dogra::LetterHa => LETTER_HA,
-            Dogra::LetterRra => LETTER_RRA,
-            Dogra::VowelSignAa => VOWEL_SIGN_AA,
-            Dogra::VowelSignI => VOWEL_SIGN_I,
-            Dogra::VowelSignIi => VOWEL_SIGN_II,
-            Dogra::VowelSignU => VOWEL_SIGN_U,
-            Dogra::VowelSignUu => VOWEL_SIGN_UU,
-            Dogra::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            Dogra::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
-            Dogra::VowelSignE => VOWEL_SIGN_E,
-            Dogra::VowelSignAi => VOWEL_SIGN_AI,
-            Dogra::VowelSignO => VOWEL_SIGN_O,
-            Dogra::VowelSignAu => VOWEL_SIGN_AU,
-            Dogra::SignAnusvara => SIGN_ANUSVARA,
-            Dogra::SignVisarga => SIGN_VISARGA,
-            Dogra::SignVirama => SIGN_VIRAMA,
-            Dogra::SignNukta => SIGN_NUKTA,
-            Dogra::AbbreviationSign => ABBREVIATION_SIGN,
+            Dogra::LetterA => '𑠀',
+            Dogra::LetterAa => '𑠁',
+            Dogra::LetterI => '𑠂',
+            Dogra::LetterIi => '𑠃',
+            Dogra::LetterU => '𑠄',
+            Dogra::LetterUu => '𑠅',
+            Dogra::LetterE => '𑠆',
+            Dogra::LetterAi => '𑠇',
+            Dogra::LetterO => '𑠈',
+            Dogra::LetterAu => '𑠉',
+            Dogra::LetterKa => '𑠊',
+            Dogra::LetterKha => '𑠋',
+            Dogra::LetterGa => '𑠌',
+            Dogra::LetterGha => '𑠍',
+            Dogra::LetterNga => '𑠎',
+            Dogra::LetterCa => '𑠏',
+            Dogra::LetterCha => '𑠐',
+            Dogra::LetterJa => '𑠑',
+            Dogra::LetterJha => '𑠒',
+            Dogra::LetterNya => '𑠓',
+            Dogra::LetterTta => '𑠔',
+            Dogra::LetterTtha => '𑠕',
+            Dogra::LetterDda => '𑠖',
+            Dogra::LetterDdha => '𑠗',
+            Dogra::LetterNna => '𑠘',
+            Dogra::LetterTa => '𑠙',
+            Dogra::LetterTha => '𑠚',
+            Dogra::LetterDa => '𑠛',
+            Dogra::LetterDha => '𑠜',
+            Dogra::LetterNa => '𑠝',
+            Dogra::LetterPa => '𑠞',
+            Dogra::LetterPha => '𑠟',
+            Dogra::LetterBa => '𑠠',
+            Dogra::LetterBha => '𑠡',
+            Dogra::LetterMa => '𑠢',
+            Dogra::LetterYa => '𑠣',
+            Dogra::LetterRa => '𑠤',
+            Dogra::LetterLa => '𑠥',
+            Dogra::LetterVa => '𑠦',
+            Dogra::LetterSha => '𑠧',
+            Dogra::LetterSsa => '𑠨',
+            Dogra::LetterSa => '𑠩',
+            Dogra::LetterHa => '𑠪',
+            Dogra::LetterRra => '𑠫',
+            Dogra::VowelSignAa => '𑠬',
+            Dogra::VowelSignI => '𑠭',
+            Dogra::VowelSignIi => '𑠮',
+            Dogra::VowelSignU => '𑠯',
+            Dogra::VowelSignUu => '𑠰',
+            Dogra::VowelSignVocalicR => '𑠱',
+            Dogra::VowelSignVocalicRr => '𑠲',
+            Dogra::VowelSignE => '𑠳',
+            Dogra::VowelSignAi => '𑠴',
+            Dogra::VowelSignO => '𑠵',
+            Dogra::VowelSignAu => '𑠶',
+            Dogra::SignAnusvara => '𑠷',
+            Dogra::SignVisarga => '𑠸',
+            Dogra::SignVirama => '𑠹',
+            Dogra::SignNukta => '𑠺',
+            Dogra::AbbreviationSign => '𑠻',
         }
     }
 }
@@ -318,68 +194,67 @@ impl Into<char> for Dogra {
 impl std::convert::TryFrom<char> for Dogra {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Dogra::LetterA),
-            LETTER_AA => Ok(Dogra::LetterAa),
-            LETTER_I => Ok(Dogra::LetterI),
-            LETTER_II => Ok(Dogra::LetterIi),
-            LETTER_U => Ok(Dogra::LetterU),
-            LETTER_UU => Ok(Dogra::LetterUu),
-            LETTER_E => Ok(Dogra::LetterE),
-            LETTER_AI => Ok(Dogra::LetterAi),
-            LETTER_O => Ok(Dogra::LetterO),
-            LETTER_AU => Ok(Dogra::LetterAu),
-            LETTER_KA => Ok(Dogra::LetterKa),
-            LETTER_KHA => Ok(Dogra::LetterKha),
-            LETTER_GA => Ok(Dogra::LetterGa),
-            LETTER_GHA => Ok(Dogra::LetterGha),
-            LETTER_NGA => Ok(Dogra::LetterNga),
-            LETTER_CA => Ok(Dogra::LetterCa),
-            LETTER_CHA => Ok(Dogra::LetterCha),
-            LETTER_JA => Ok(Dogra::LetterJa),
-            LETTER_JHA => Ok(Dogra::LetterJha),
-            LETTER_NYA => Ok(Dogra::LetterNya),
-            LETTER_TTA => Ok(Dogra::LetterTta),
-            LETTER_TTHA => Ok(Dogra::LetterTtha),
-            LETTER_DDA => Ok(Dogra::LetterDda),
-            LETTER_DDHA => Ok(Dogra::LetterDdha),
-            LETTER_NNA => Ok(Dogra::LetterNna),
-            LETTER_TA => Ok(Dogra::LetterTa),
-            LETTER_THA => Ok(Dogra::LetterTha),
-            LETTER_DA => Ok(Dogra::LetterDa),
-            LETTER_DHA => Ok(Dogra::LetterDha),
-            LETTER_NA => Ok(Dogra::LetterNa),
-            LETTER_PA => Ok(Dogra::LetterPa),
-            LETTER_PHA => Ok(Dogra::LetterPha),
-            LETTER_BA => Ok(Dogra::LetterBa),
-            LETTER_BHA => Ok(Dogra::LetterBha),
-            LETTER_MA => Ok(Dogra::LetterMa),
-            LETTER_YA => Ok(Dogra::LetterYa),
-            LETTER_RA => Ok(Dogra::LetterRa),
-            LETTER_LA => Ok(Dogra::LetterLa),
-            LETTER_VA => Ok(Dogra::LetterVa),
-            LETTER_SHA => Ok(Dogra::LetterSha),
-            LETTER_SSA => Ok(Dogra::LetterSsa),
-            LETTER_SA => Ok(Dogra::LetterSa),
-            LETTER_HA => Ok(Dogra::LetterHa),
-            LETTER_RRA => Ok(Dogra::LetterRra),
-            VOWEL_SIGN_AA => Ok(Dogra::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Dogra::VowelSignI),
-            VOWEL_SIGN_II => Ok(Dogra::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Dogra::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Dogra::VowelSignUu),
-            VOWEL_SIGN_VOCALIC_R => Ok(Dogra::VowelSignVocalicR),
-            VOWEL_SIGN_VOCALIC_RR => Ok(Dogra::VowelSignVocalicRr),
-            VOWEL_SIGN_E => Ok(Dogra::VowelSignE),
-            VOWEL_SIGN_AI => Ok(Dogra::VowelSignAi),
-            VOWEL_SIGN_O => Ok(Dogra::VowelSignO),
-            VOWEL_SIGN_AU => Ok(Dogra::VowelSignAu),
-            SIGN_ANUSVARA => Ok(Dogra::SignAnusvara),
-            SIGN_VISARGA => Ok(Dogra::SignVisarga),
-            SIGN_VIRAMA => Ok(Dogra::SignVirama),
-            SIGN_NUKTA => Ok(Dogra::SignNukta),
-            ABBREVIATION_SIGN => Ok(Dogra::AbbreviationSign),
+            '𑠀' => Ok(Dogra::LetterA),
+            '𑠁' => Ok(Dogra::LetterAa),
+            '𑠂' => Ok(Dogra::LetterI),
+            '𑠃' => Ok(Dogra::LetterIi),
+            '𑠄' => Ok(Dogra::LetterU),
+            '𑠅' => Ok(Dogra::LetterUu),
+            '𑠆' => Ok(Dogra::LetterE),
+            '𑠇' => Ok(Dogra::LetterAi),
+            '𑠈' => Ok(Dogra::LetterO),
+            '𑠉' => Ok(Dogra::LetterAu),
+            '𑠊' => Ok(Dogra::LetterKa),
+            '𑠋' => Ok(Dogra::LetterKha),
+            '𑠌' => Ok(Dogra::LetterGa),
+            '𑠍' => Ok(Dogra::LetterGha),
+            '𑠎' => Ok(Dogra::LetterNga),
+            '𑠏' => Ok(Dogra::LetterCa),
+            '𑠐' => Ok(Dogra::LetterCha),
+            '𑠑' => Ok(Dogra::LetterJa),
+            '𑠒' => Ok(Dogra::LetterJha),
+            '𑠓' => Ok(Dogra::LetterNya),
+            '𑠔' => Ok(Dogra::LetterTta),
+            '𑠕' => Ok(Dogra::LetterTtha),
+            '𑠖' => Ok(Dogra::LetterDda),
+            '𑠗' => Ok(Dogra::LetterDdha),
+            '𑠘' => Ok(Dogra::LetterNna),
+            '𑠙' => Ok(Dogra::LetterTa),
+            '𑠚' => Ok(Dogra::LetterTha),
+            '𑠛' => Ok(Dogra::LetterDa),
+            '𑠜' => Ok(Dogra::LetterDha),
+            '𑠝' => Ok(Dogra::LetterNa),
+            '𑠞' => Ok(Dogra::LetterPa),
+            '𑠟' => Ok(Dogra::LetterPha),
+            '𑠠' => Ok(Dogra::LetterBa),
+            '𑠡' => Ok(Dogra::LetterBha),
+            '𑠢' => Ok(Dogra::LetterMa),
+            '𑠣' => Ok(Dogra::LetterYa),
+            '𑠤' => Ok(Dogra::LetterRa),
+            '𑠥' => Ok(Dogra::LetterLa),
+            '𑠦' => Ok(Dogra::LetterVa),
+            '𑠧' => Ok(Dogra::LetterSha),
+            '𑠨' => Ok(Dogra::LetterSsa),
+            '𑠩' => Ok(Dogra::LetterSa),
+            '𑠪' => Ok(Dogra::LetterHa),
+            '𑠫' => Ok(Dogra::LetterRra),
+            '𑠬' => Ok(Dogra::VowelSignAa),
+            '𑠭' => Ok(Dogra::VowelSignI),
+            '𑠮' => Ok(Dogra::VowelSignIi),
+            '𑠯' => Ok(Dogra::VowelSignU),
+            '𑠰' => Ok(Dogra::VowelSignUu),
+            '𑠱' => Ok(Dogra::VowelSignVocalicR),
+            '𑠲' => Ok(Dogra::VowelSignVocalicRr),
+            '𑠳' => Ok(Dogra::VowelSignE),
+            '𑠴' => Ok(Dogra::VowelSignAi),
+            '𑠵' => Ok(Dogra::VowelSignO),
+            '𑠶' => Ok(Dogra::VowelSignAu),
+            '𑠷' => Ok(Dogra::SignAnusvara),
+            '𑠸' => Ok(Dogra::SignVisarga),
+            '𑠹' => Ok(Dogra::SignVirama),
+            '𑠺' => Ok(Dogra::SignNukta),
+            '𑠻' => Ok(Dogra::AbbreviationSign),
             _ => Err(()),
         }
     }

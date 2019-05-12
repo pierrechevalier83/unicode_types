@@ -1,236 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2e80}: '⺀'
-    pub const CJK_RADICAL_REPEAT: char = '⺀';
-    /// \u{2e81}: '⺁'
-    pub const CJK_RADICAL_CLIFF: char = '⺁';
-    /// \u{2e82}: '⺂'
-    pub const CJK_RADICAL_SECOND_ONE: char = '⺂';
-    /// \u{2e83}: '⺃'
-    pub const CJK_RADICAL_SECOND_TWO: char = '⺃';
-    /// \u{2e84}: '⺄'
-    pub const CJK_RADICAL_SECOND_THREE: char = '⺄';
-    /// \u{2e85}: '⺅'
-    pub const CJK_RADICAL_PERSON: char = '⺅';
-    /// \u{2e86}: '⺆'
-    pub const CJK_RADICAL_BOX: char = '⺆';
-    /// \u{2e87}: '⺇'
-    pub const CJK_RADICAL_TABLE: char = '⺇';
-    /// \u{2e88}: '⺈'
-    pub const CJK_RADICAL_KNIFE_ONE: char = '⺈';
-    /// \u{2e89}: '⺉'
-    pub const CJK_RADICAL_KNIFE_TWO: char = '⺉';
-    /// \u{2e8a}: '⺊'
-    pub const CJK_RADICAL_DIVINATION: char = '⺊';
-    /// \u{2e8b}: '⺋'
-    pub const CJK_RADICAL_SEAL: char = '⺋';
-    /// \u{2e8c}: '⺌'
-    pub const CJK_RADICAL_SMALL_ONE: char = '⺌';
-    /// \u{2e8d}: '⺍'
-    pub const CJK_RADICAL_SMALL_TWO: char = '⺍';
-    /// \u{2e8e}: '⺎'
-    pub const CJK_RADICAL_LAME_ONE: char = '⺎';
-    /// \u{2e8f}: '⺏'
-    pub const CJK_RADICAL_LAME_TWO: char = '⺏';
-    /// \u{2e90}: '⺐'
-    pub const CJK_RADICAL_LAME_THREE: char = '⺐';
-    /// \u{2e91}: '⺑'
-    pub const CJK_RADICAL_LAME_FOUR: char = '⺑';
-    /// \u{2e92}: '⺒'
-    pub const CJK_RADICAL_SNAKE: char = '⺒';
-    /// \u{2e93}: '⺓'
-    pub const CJK_RADICAL_THREAD: char = '⺓';
-    /// \u{2e94}: '⺔'
-    pub const CJK_RADICAL_SNOUT_ONE: char = '⺔';
-    /// \u{2e95}: '⺕'
-    pub const CJK_RADICAL_SNOUT_TWO: char = '⺕';
-    /// \u{2e96}: '⺖'
-    pub const CJK_RADICAL_HEART_ONE: char = '⺖';
-    /// \u{2e97}: '⺗'
-    pub const CJK_RADICAL_HEART_TWO: char = '⺗';
-    /// \u{2e98}: '⺘'
-    pub const CJK_RADICAL_HAND: char = '⺘';
-    /// \u{2e99}: '⺙'
-    pub const CJK_RADICAL_RAP: char = '⺙';
-    /// \u{2e9b}: '⺛'
-    pub const CJK_RADICAL_CHOKE: char = '⺛';
-    /// \u{2e9c}: '⺜'
-    pub const CJK_RADICAL_SUN: char = '⺜';
-    /// \u{2e9d}: '⺝'
-    pub const CJK_RADICAL_MOON: char = '⺝';
-    /// \u{2e9e}: '⺞'
-    pub const CJK_RADICAL_DEATH: char = '⺞';
-    /// \u{2e9f}: '⺟'
-    pub const CJK_RADICAL_MOTHER: char = '⺟';
-    /// \u{2ea0}: '⺠'
-    pub const CJK_RADICAL_CIVILIAN: char = '⺠';
-    /// \u{2ea1}: '⺡'
-    pub const CJK_RADICAL_WATER_ONE: char = '⺡';
-    /// \u{2ea2}: '⺢'
-    pub const CJK_RADICAL_WATER_TWO: char = '⺢';
-    /// \u{2ea3}: '⺣'
-    pub const CJK_RADICAL_FIRE: char = '⺣';
-    /// \u{2ea4}: '⺤'
-    pub const CJK_RADICAL_PAW_ONE: char = '⺤';
-    /// \u{2ea5}: '⺥'
-    pub const CJK_RADICAL_PAW_TWO: char = '⺥';
-    /// \u{2ea6}: '⺦'
-    pub const CJK_RADICAL_SIMPLIFIED_HALF_TREE_TRUNK: char = '⺦';
-    /// \u{2ea7}: '⺧'
-    pub const CJK_RADICAL_COW: char = '⺧';
-    /// \u{2ea8}: '⺨'
-    pub const CJK_RADICAL_DOG: char = '⺨';
-    /// \u{2ea9}: '⺩'
-    pub const CJK_RADICAL_JADE: char = '⺩';
-    /// \u{2eaa}: '⺪'
-    pub const CJK_RADICAL_BOLT_OF_CLOTH: char = '⺪';
-    /// \u{2eab}: '⺫'
-    pub const CJK_RADICAL_EYE: char = '⺫';
-    /// \u{2eac}: '⺬'
-    pub const CJK_RADICAL_SPIRIT_ONE: char = '⺬';
-    /// \u{2ead}: '⺭'
-    pub const CJK_RADICAL_SPIRIT_TWO: char = '⺭';
-    /// \u{2eae}: '⺮'
-    pub const CJK_RADICAL_BAMBOO: char = '⺮';
-    /// \u{2eaf}: '⺯'
-    pub const CJK_RADICAL_SILK: char = '⺯';
-    /// \u{2eb0}: '⺰'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_SILK: char = '⺰';
-    /// \u{2eb1}: '⺱'
-    pub const CJK_RADICAL_NET_ONE: char = '⺱';
-    /// \u{2eb2}: '⺲'
-    pub const CJK_RADICAL_NET_TWO: char = '⺲';
-    /// \u{2eb3}: '⺳'
-    pub const CJK_RADICAL_NET_THREE: char = '⺳';
-    /// \u{2eb4}: '⺴'
-    pub const CJK_RADICAL_NET_FOUR: char = '⺴';
-    /// \u{2eb5}: '⺵'
-    pub const CJK_RADICAL_MESH: char = '⺵';
-    /// \u{2eb6}: '⺶'
-    pub const CJK_RADICAL_SHEEP: char = '⺶';
-    /// \u{2eb7}: '⺷'
-    pub const CJK_RADICAL_RAM: char = '⺷';
-    /// \u{2eb8}: '⺸'
-    pub const CJK_RADICAL_EWE: char = '⺸';
-    /// \u{2eb9}: '⺹'
-    pub const CJK_RADICAL_OLD: char = '⺹';
-    /// \u{2eba}: '⺺'
-    pub const CJK_RADICAL_BRUSH_ONE: char = '⺺';
-    /// \u{2ebb}: '⺻'
-    pub const CJK_RADICAL_BRUSH_TWO: char = '⺻';
-    /// \u{2ebc}: '⺼'
-    pub const CJK_RADICAL_MEAT: char = '⺼';
-    /// \u{2ebd}: '⺽'
-    pub const CJK_RADICAL_MORTAR: char = '⺽';
-    /// \u{2ebe}: '⺾'
-    pub const CJK_RADICAL_GRASS_ONE: char = '⺾';
-    /// \u{2ebf}: '⺿'
-    pub const CJK_RADICAL_GRASS_TWO: char = '⺿';
-    /// \u{2ec0}: '⻀'
-    pub const CJK_RADICAL_GRASS_THREE: char = '⻀';
-    /// \u{2ec1}: '⻁'
-    pub const CJK_RADICAL_TIGER: char = '⻁';
-    /// \u{2ec2}: '⻂'
-    pub const CJK_RADICAL_CLOTHES: char = '⻂';
-    /// \u{2ec3}: '⻃'
-    pub const CJK_RADICAL_WEST_ONE: char = '⻃';
-    /// \u{2ec4}: '⻄'
-    pub const CJK_RADICAL_WEST_TWO: char = '⻄';
-    /// \u{2ec5}: '⻅'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_SEE: char = '⻅';
-    /// \u{2ec6}: '⻆'
-    pub const CJK_RADICAL_SIMPLIFIED_HORN: char = '⻆';
-    /// \u{2ec7}: '⻇'
-    pub const CJK_RADICAL_HORN: char = '⻇';
-    /// \u{2ec8}: '⻈'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_SPEECH: char = '⻈';
-    /// \u{2ec9}: '⻉'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_SHELL: char = '⻉';
-    /// \u{2eca}: '⻊'
-    pub const CJK_RADICAL_FOOT: char = '⻊';
-    /// \u{2ecb}: '⻋'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_CART: char = '⻋';
-    /// \u{2ecc}: '⻌'
-    pub const CJK_RADICAL_SIMPLIFIED_WALK: char = '⻌';
-    /// \u{2ecd}: '⻍'
-    pub const CJK_RADICAL_WALK_ONE: char = '⻍';
-    /// \u{2ece}: '⻎'
-    pub const CJK_RADICAL_WALK_TWO: char = '⻎';
-    /// \u{2ecf}: '⻏'
-    pub const CJK_RADICAL_CITY: char = '⻏';
-    /// \u{2ed0}: '⻐'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_GOLD: char = '⻐';
-    /// \u{2ed1}: '⻑'
-    pub const CJK_RADICAL_LONG_ONE: char = '⻑';
-    /// \u{2ed2}: '⻒'
-    pub const CJK_RADICAL_LONG_TWO: char = '⻒';
-    /// \u{2ed3}: '⻓'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_LONG: char = '⻓';
-    /// \u{2ed4}: '⻔'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_GATE: char = '⻔';
-    /// \u{2ed5}: '⻕'
-    pub const CJK_RADICAL_MOUND_ONE: char = '⻕';
-    /// \u{2ed6}: '⻖'
-    pub const CJK_RADICAL_MOUND_TWO: char = '⻖';
-    /// \u{2ed7}: '⻗'
-    pub const CJK_RADICAL_RAIN: char = '⻗';
-    /// \u{2ed8}: '⻘'
-    pub const CJK_RADICAL_BLUE: char = '⻘';
-    /// \u{2ed9}: '⻙'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_TANNED_LEATHER: char = '⻙';
-    /// \u{2eda}: '⻚'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_LEAF: char = '⻚';
-    /// \u{2edb}: '⻛'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_WIND: char = '⻛';
-    /// \u{2edc}: '⻜'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_FLY: char = '⻜';
-    /// \u{2edd}: '⻝'
-    pub const CJK_RADICAL_EAT_ONE: char = '⻝';
-    /// \u{2ede}: '⻞'
-    pub const CJK_RADICAL_EAT_TWO: char = '⻞';
-    /// \u{2edf}: '⻟'
-    pub const CJK_RADICAL_EAT_THREE: char = '⻟';
-    /// \u{2ee0}: '⻠'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_EAT: char = '⻠';
-    /// \u{2ee1}: '⻡'
-    pub const CJK_RADICAL_HEAD: char = '⻡';
-    /// \u{2ee2}: '⻢'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_HORSE: char = '⻢';
-    /// \u{2ee3}: '⻣'
-    pub const CJK_RADICAL_BONE: char = '⻣';
-    /// \u{2ee4}: '⻤'
-    pub const CJK_RADICAL_GHOST: char = '⻤';
-    /// \u{2ee5}: '⻥'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_FISH: char = '⻥';
-    /// \u{2ee6}: '⻦'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_BIRD: char = '⻦';
-    /// \u{2ee7}: '⻧'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_SALT: char = '⻧';
-    /// \u{2ee8}: '⻨'
-    pub const CJK_RADICAL_SIMPLIFIED_WHEAT: char = '⻨';
-    /// \u{2ee9}: '⻩'
-    pub const CJK_RADICAL_SIMPLIFIED_YELLOW: char = '⻩';
-    /// \u{2eea}: '⻪'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_FROG: char = '⻪';
-    /// \u{2eeb}: '⻫'
-    pub const CJK_RADICAL_J_DASH_SIMPLIFIED_EVEN: char = '⻫';
-    /// \u{2eec}: '⻬'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_EVEN: char = '⻬';
-    /// \u{2eed}: '⻭'
-    pub const CJK_RADICAL_J_DASH_SIMPLIFIED_TOOTH: char = '⻭';
-    /// \u{2eee}: '⻮'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_TOOTH: char = '⻮';
-    /// \u{2eef}: '⻯'
-    pub const CJK_RADICAL_J_DASH_SIMPLIFIED_DRAGON: char = '⻯';
-    /// \u{2ef0}: '⻰'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_DRAGON: char = '⻰';
-    /// \u{2ef1}: '⻱'
-    pub const CJK_RADICAL_TURTLE: char = '⻱';
-    /// \u{2ef2}: '⻲'
-    pub const CJK_RADICAL_J_DASH_SIMPLIFIED_TURTLE: char = '⻲';
-    /// \u{2ef3}: '⻳'
-    pub const CJK_RADICAL_C_DASH_SIMPLIFIED_TURTLE: char = '⻳';
-}
 
 /// An enum to represent all characters in the CJKRadicalsSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -469,123 +236,122 @@ pub enum CJKRadicalsSupplement {
 
 impl Into<char> for CJKRadicalsSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CJKRadicalsSupplement::CjkRadicalRepeat => CJK_RADICAL_REPEAT,
-            CJKRadicalsSupplement::CjkRadicalCliff => CJK_RADICAL_CLIFF,
-            CJKRadicalsSupplement::CjkRadicalSecondOne => CJK_RADICAL_SECOND_ONE,
-            CJKRadicalsSupplement::CjkRadicalSecondTwo => CJK_RADICAL_SECOND_TWO,
-            CJKRadicalsSupplement::CjkRadicalSecondThree => CJK_RADICAL_SECOND_THREE,
-            CJKRadicalsSupplement::CjkRadicalPerson => CJK_RADICAL_PERSON,
-            CJKRadicalsSupplement::CjkRadicalBox => CJK_RADICAL_BOX,
-            CJKRadicalsSupplement::CjkRadicalTable => CJK_RADICAL_TABLE,
-            CJKRadicalsSupplement::CjkRadicalKnifeOne => CJK_RADICAL_KNIFE_ONE,
-            CJKRadicalsSupplement::CjkRadicalKnifeTwo => CJK_RADICAL_KNIFE_TWO,
-            CJKRadicalsSupplement::CjkRadicalDivination => CJK_RADICAL_DIVINATION,
-            CJKRadicalsSupplement::CjkRadicalSeal => CJK_RADICAL_SEAL,
-            CJKRadicalsSupplement::CjkRadicalSmallOne => CJK_RADICAL_SMALL_ONE,
-            CJKRadicalsSupplement::CjkRadicalSmallTwo => CJK_RADICAL_SMALL_TWO,
-            CJKRadicalsSupplement::CjkRadicalLameOne => CJK_RADICAL_LAME_ONE,
-            CJKRadicalsSupplement::CjkRadicalLameTwo => CJK_RADICAL_LAME_TWO,
-            CJKRadicalsSupplement::CjkRadicalLameThree => CJK_RADICAL_LAME_THREE,
-            CJKRadicalsSupplement::CjkRadicalLameFour => CJK_RADICAL_LAME_FOUR,
-            CJKRadicalsSupplement::CjkRadicalSnake => CJK_RADICAL_SNAKE,
-            CJKRadicalsSupplement::CjkRadicalThread => CJK_RADICAL_THREAD,
-            CJKRadicalsSupplement::CjkRadicalSnoutOne => CJK_RADICAL_SNOUT_ONE,
-            CJKRadicalsSupplement::CjkRadicalSnoutTwo => CJK_RADICAL_SNOUT_TWO,
-            CJKRadicalsSupplement::CjkRadicalHeartOne => CJK_RADICAL_HEART_ONE,
-            CJKRadicalsSupplement::CjkRadicalHeartTwo => CJK_RADICAL_HEART_TWO,
-            CJKRadicalsSupplement::CjkRadicalHand => CJK_RADICAL_HAND,
-            CJKRadicalsSupplement::CjkRadicalRap => CJK_RADICAL_RAP,
-            CJKRadicalsSupplement::CjkRadicalChoke => CJK_RADICAL_CHOKE,
-            CJKRadicalsSupplement::CjkRadicalSun => CJK_RADICAL_SUN,
-            CJKRadicalsSupplement::CjkRadicalMoon => CJK_RADICAL_MOON,
-            CJKRadicalsSupplement::CjkRadicalDeath => CJK_RADICAL_DEATH,
-            CJKRadicalsSupplement::CjkRadicalMother => CJK_RADICAL_MOTHER,
-            CJKRadicalsSupplement::CjkRadicalCivilian => CJK_RADICAL_CIVILIAN,
-            CJKRadicalsSupplement::CjkRadicalWaterOne => CJK_RADICAL_WATER_ONE,
-            CJKRadicalsSupplement::CjkRadicalWaterTwo => CJK_RADICAL_WATER_TWO,
-            CJKRadicalsSupplement::CjkRadicalFire => CJK_RADICAL_FIRE,
-            CJKRadicalsSupplement::CjkRadicalPawOne => CJK_RADICAL_PAW_ONE,
-            CJKRadicalsSupplement::CjkRadicalPawTwo => CJK_RADICAL_PAW_TWO,
-            CJKRadicalsSupplement::CjkRadicalSimplifiedHalfTreeTrunk => CJK_RADICAL_SIMPLIFIED_HALF_TREE_TRUNK,
-            CJKRadicalsSupplement::CjkRadicalCow => CJK_RADICAL_COW,
-            CJKRadicalsSupplement::CjkRadicalDog => CJK_RADICAL_DOG,
-            CJKRadicalsSupplement::CjkRadicalJade => CJK_RADICAL_JADE,
-            CJKRadicalsSupplement::CjkRadicalBoltOfCloth => CJK_RADICAL_BOLT_OF_CLOTH,
-            CJKRadicalsSupplement::CjkRadicalEye => CJK_RADICAL_EYE,
-            CJKRadicalsSupplement::CjkRadicalSpiritOne => CJK_RADICAL_SPIRIT_ONE,
-            CJKRadicalsSupplement::CjkRadicalSpiritTwo => CJK_RADICAL_SPIRIT_TWO,
-            CJKRadicalsSupplement::CjkRadicalBamboo => CJK_RADICAL_BAMBOO,
-            CJKRadicalsSupplement::CjkRadicalSilk => CJK_RADICAL_SILK,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSilk => CJK_RADICAL_C_DASH_SIMPLIFIED_SILK,
-            CJKRadicalsSupplement::CjkRadicalNetOne => CJK_RADICAL_NET_ONE,
-            CJKRadicalsSupplement::CjkRadicalNetTwo => CJK_RADICAL_NET_TWO,
-            CJKRadicalsSupplement::CjkRadicalNetThree => CJK_RADICAL_NET_THREE,
-            CJKRadicalsSupplement::CjkRadicalNetFour => CJK_RADICAL_NET_FOUR,
-            CJKRadicalsSupplement::CjkRadicalMesh => CJK_RADICAL_MESH,
-            CJKRadicalsSupplement::CjkRadicalSheep => CJK_RADICAL_SHEEP,
-            CJKRadicalsSupplement::CjkRadicalRam => CJK_RADICAL_RAM,
-            CJKRadicalsSupplement::CjkRadicalEwe => CJK_RADICAL_EWE,
-            CJKRadicalsSupplement::CjkRadicalOld => CJK_RADICAL_OLD,
-            CJKRadicalsSupplement::CjkRadicalBrushOne => CJK_RADICAL_BRUSH_ONE,
-            CJKRadicalsSupplement::CjkRadicalBrushTwo => CJK_RADICAL_BRUSH_TWO,
-            CJKRadicalsSupplement::CjkRadicalMeat => CJK_RADICAL_MEAT,
-            CJKRadicalsSupplement::CjkRadicalMortar => CJK_RADICAL_MORTAR,
-            CJKRadicalsSupplement::CjkRadicalGrassOne => CJK_RADICAL_GRASS_ONE,
-            CJKRadicalsSupplement::CjkRadicalGrassTwo => CJK_RADICAL_GRASS_TWO,
-            CJKRadicalsSupplement::CjkRadicalGrassThree => CJK_RADICAL_GRASS_THREE,
-            CJKRadicalsSupplement::CjkRadicalTiger => CJK_RADICAL_TIGER,
-            CJKRadicalsSupplement::CjkRadicalClothes => CJK_RADICAL_CLOTHES,
-            CJKRadicalsSupplement::CjkRadicalWestOne => CJK_RADICAL_WEST_ONE,
-            CJKRadicalsSupplement::CjkRadicalWestTwo => CJK_RADICAL_WEST_TWO,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSee => CJK_RADICAL_C_DASH_SIMPLIFIED_SEE,
-            CJKRadicalsSupplement::CjkRadicalSimplifiedHorn => CJK_RADICAL_SIMPLIFIED_HORN,
-            CJKRadicalsSupplement::CjkRadicalHorn => CJK_RADICAL_HORN,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSpeech => CJK_RADICAL_C_DASH_SIMPLIFIED_SPEECH,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedShell => CJK_RADICAL_C_DASH_SIMPLIFIED_SHELL,
-            CJKRadicalsSupplement::CjkRadicalFoot => CJK_RADICAL_FOOT,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedCart => CJK_RADICAL_C_DASH_SIMPLIFIED_CART,
-            CJKRadicalsSupplement::CjkRadicalSimplifiedWalk => CJK_RADICAL_SIMPLIFIED_WALK,
-            CJKRadicalsSupplement::CjkRadicalWalkOne => CJK_RADICAL_WALK_ONE,
-            CJKRadicalsSupplement::CjkRadicalWalkTwo => CJK_RADICAL_WALK_TWO,
-            CJKRadicalsSupplement::CjkRadicalCity => CJK_RADICAL_CITY,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedGold => CJK_RADICAL_C_DASH_SIMPLIFIED_GOLD,
-            CJKRadicalsSupplement::CjkRadicalLongOne => CJK_RADICAL_LONG_ONE,
-            CJKRadicalsSupplement::CjkRadicalLongTwo => CJK_RADICAL_LONG_TWO,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedLong => CJK_RADICAL_C_DASH_SIMPLIFIED_LONG,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedGate => CJK_RADICAL_C_DASH_SIMPLIFIED_GATE,
-            CJKRadicalsSupplement::CjkRadicalMoundOne => CJK_RADICAL_MOUND_ONE,
-            CJKRadicalsSupplement::CjkRadicalMoundTwo => CJK_RADICAL_MOUND_TWO,
-            CJKRadicalsSupplement::CjkRadicalRain => CJK_RADICAL_RAIN,
-            CJKRadicalsSupplement::CjkRadicalBlue => CJK_RADICAL_BLUE,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTannedLeather => CJK_RADICAL_C_DASH_SIMPLIFIED_TANNED_LEATHER,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedLeaf => CJK_RADICAL_C_DASH_SIMPLIFIED_LEAF,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedWind => CJK_RADICAL_C_DASH_SIMPLIFIED_WIND,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFly => CJK_RADICAL_C_DASH_SIMPLIFIED_FLY,
-            CJKRadicalsSupplement::CjkRadicalEatOne => CJK_RADICAL_EAT_ONE,
-            CJKRadicalsSupplement::CjkRadicalEatTwo => CJK_RADICAL_EAT_TWO,
-            CJKRadicalsSupplement::CjkRadicalEatThree => CJK_RADICAL_EAT_THREE,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedEat => CJK_RADICAL_C_DASH_SIMPLIFIED_EAT,
-            CJKRadicalsSupplement::CjkRadicalHead => CJK_RADICAL_HEAD,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedHorse => CJK_RADICAL_C_DASH_SIMPLIFIED_HORSE,
-            CJKRadicalsSupplement::CjkRadicalBone => CJK_RADICAL_BONE,
-            CJKRadicalsSupplement::CjkRadicalGhost => CJK_RADICAL_GHOST,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFish => CJK_RADICAL_C_DASH_SIMPLIFIED_FISH,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedBird => CJK_RADICAL_C_DASH_SIMPLIFIED_BIRD,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSalt => CJK_RADICAL_C_DASH_SIMPLIFIED_SALT,
-            CJKRadicalsSupplement::CjkRadicalSimplifiedWheat => CJK_RADICAL_SIMPLIFIED_WHEAT,
-            CJKRadicalsSupplement::CjkRadicalSimplifiedYellow => CJK_RADICAL_SIMPLIFIED_YELLOW,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFrog => CJK_RADICAL_C_DASH_SIMPLIFIED_FROG,
-            CJKRadicalsSupplement::CjkRadicalJDashSimplifiedEven => CJK_RADICAL_J_DASH_SIMPLIFIED_EVEN,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedEven => CJK_RADICAL_C_DASH_SIMPLIFIED_EVEN,
-            CJKRadicalsSupplement::CjkRadicalJDashSimplifiedTooth => CJK_RADICAL_J_DASH_SIMPLIFIED_TOOTH,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTooth => CJK_RADICAL_C_DASH_SIMPLIFIED_TOOTH,
-            CJKRadicalsSupplement::CjkRadicalJDashSimplifiedDragon => CJK_RADICAL_J_DASH_SIMPLIFIED_DRAGON,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedDragon => CJK_RADICAL_C_DASH_SIMPLIFIED_DRAGON,
-            CJKRadicalsSupplement::CjkRadicalTurtle => CJK_RADICAL_TURTLE,
-            CJKRadicalsSupplement::CjkRadicalJDashSimplifiedTurtle => CJK_RADICAL_J_DASH_SIMPLIFIED_TURTLE,
-            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTurtle => CJK_RADICAL_C_DASH_SIMPLIFIED_TURTLE,
+            CJKRadicalsSupplement::CjkRadicalRepeat => '⺀',
+            CJKRadicalsSupplement::CjkRadicalCliff => '⺁',
+            CJKRadicalsSupplement::CjkRadicalSecondOne => '⺂',
+            CJKRadicalsSupplement::CjkRadicalSecondTwo => '⺃',
+            CJKRadicalsSupplement::CjkRadicalSecondThree => '⺄',
+            CJKRadicalsSupplement::CjkRadicalPerson => '⺅',
+            CJKRadicalsSupplement::CjkRadicalBox => '⺆',
+            CJKRadicalsSupplement::CjkRadicalTable => '⺇',
+            CJKRadicalsSupplement::CjkRadicalKnifeOne => '⺈',
+            CJKRadicalsSupplement::CjkRadicalKnifeTwo => '⺉',
+            CJKRadicalsSupplement::CjkRadicalDivination => '⺊',
+            CJKRadicalsSupplement::CjkRadicalSeal => '⺋',
+            CJKRadicalsSupplement::CjkRadicalSmallOne => '⺌',
+            CJKRadicalsSupplement::CjkRadicalSmallTwo => '⺍',
+            CJKRadicalsSupplement::CjkRadicalLameOne => '⺎',
+            CJKRadicalsSupplement::CjkRadicalLameTwo => '⺏',
+            CJKRadicalsSupplement::CjkRadicalLameThree => '⺐',
+            CJKRadicalsSupplement::CjkRadicalLameFour => '⺑',
+            CJKRadicalsSupplement::CjkRadicalSnake => '⺒',
+            CJKRadicalsSupplement::CjkRadicalThread => '⺓',
+            CJKRadicalsSupplement::CjkRadicalSnoutOne => '⺔',
+            CJKRadicalsSupplement::CjkRadicalSnoutTwo => '⺕',
+            CJKRadicalsSupplement::CjkRadicalHeartOne => '⺖',
+            CJKRadicalsSupplement::CjkRadicalHeartTwo => '⺗',
+            CJKRadicalsSupplement::CjkRadicalHand => '⺘',
+            CJKRadicalsSupplement::CjkRadicalRap => '⺙',
+            CJKRadicalsSupplement::CjkRadicalChoke => '⺛',
+            CJKRadicalsSupplement::CjkRadicalSun => '⺜',
+            CJKRadicalsSupplement::CjkRadicalMoon => '⺝',
+            CJKRadicalsSupplement::CjkRadicalDeath => '⺞',
+            CJKRadicalsSupplement::CjkRadicalMother => '⺟',
+            CJKRadicalsSupplement::CjkRadicalCivilian => '⺠',
+            CJKRadicalsSupplement::CjkRadicalWaterOne => '⺡',
+            CJKRadicalsSupplement::CjkRadicalWaterTwo => '⺢',
+            CJKRadicalsSupplement::CjkRadicalFire => '⺣',
+            CJKRadicalsSupplement::CjkRadicalPawOne => '⺤',
+            CJKRadicalsSupplement::CjkRadicalPawTwo => '⺥',
+            CJKRadicalsSupplement::CjkRadicalSimplifiedHalfTreeTrunk => '⺦',
+            CJKRadicalsSupplement::CjkRadicalCow => '⺧',
+            CJKRadicalsSupplement::CjkRadicalDog => '⺨',
+            CJKRadicalsSupplement::CjkRadicalJade => '⺩',
+            CJKRadicalsSupplement::CjkRadicalBoltOfCloth => '⺪',
+            CJKRadicalsSupplement::CjkRadicalEye => '⺫',
+            CJKRadicalsSupplement::CjkRadicalSpiritOne => '⺬',
+            CJKRadicalsSupplement::CjkRadicalSpiritTwo => '⺭',
+            CJKRadicalsSupplement::CjkRadicalBamboo => '⺮',
+            CJKRadicalsSupplement::CjkRadicalSilk => '⺯',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSilk => '⺰',
+            CJKRadicalsSupplement::CjkRadicalNetOne => '⺱',
+            CJKRadicalsSupplement::CjkRadicalNetTwo => '⺲',
+            CJKRadicalsSupplement::CjkRadicalNetThree => '⺳',
+            CJKRadicalsSupplement::CjkRadicalNetFour => '⺴',
+            CJKRadicalsSupplement::CjkRadicalMesh => '⺵',
+            CJKRadicalsSupplement::CjkRadicalSheep => '⺶',
+            CJKRadicalsSupplement::CjkRadicalRam => '⺷',
+            CJKRadicalsSupplement::CjkRadicalEwe => '⺸',
+            CJKRadicalsSupplement::CjkRadicalOld => '⺹',
+            CJKRadicalsSupplement::CjkRadicalBrushOne => '⺺',
+            CJKRadicalsSupplement::CjkRadicalBrushTwo => '⺻',
+            CJKRadicalsSupplement::CjkRadicalMeat => '⺼',
+            CJKRadicalsSupplement::CjkRadicalMortar => '⺽',
+            CJKRadicalsSupplement::CjkRadicalGrassOne => '⺾',
+            CJKRadicalsSupplement::CjkRadicalGrassTwo => '⺿',
+            CJKRadicalsSupplement::CjkRadicalGrassThree => '⻀',
+            CJKRadicalsSupplement::CjkRadicalTiger => '⻁',
+            CJKRadicalsSupplement::CjkRadicalClothes => '⻂',
+            CJKRadicalsSupplement::CjkRadicalWestOne => '⻃',
+            CJKRadicalsSupplement::CjkRadicalWestTwo => '⻄',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSee => '⻅',
+            CJKRadicalsSupplement::CjkRadicalSimplifiedHorn => '⻆',
+            CJKRadicalsSupplement::CjkRadicalHorn => '⻇',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSpeech => '⻈',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedShell => '⻉',
+            CJKRadicalsSupplement::CjkRadicalFoot => '⻊',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedCart => '⻋',
+            CJKRadicalsSupplement::CjkRadicalSimplifiedWalk => '⻌',
+            CJKRadicalsSupplement::CjkRadicalWalkOne => '⻍',
+            CJKRadicalsSupplement::CjkRadicalWalkTwo => '⻎',
+            CJKRadicalsSupplement::CjkRadicalCity => '⻏',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedGold => '⻐',
+            CJKRadicalsSupplement::CjkRadicalLongOne => '⻑',
+            CJKRadicalsSupplement::CjkRadicalLongTwo => '⻒',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedLong => '⻓',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedGate => '⻔',
+            CJKRadicalsSupplement::CjkRadicalMoundOne => '⻕',
+            CJKRadicalsSupplement::CjkRadicalMoundTwo => '⻖',
+            CJKRadicalsSupplement::CjkRadicalRain => '⻗',
+            CJKRadicalsSupplement::CjkRadicalBlue => '⻘',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTannedLeather => '⻙',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedLeaf => '⻚',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedWind => '⻛',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFly => '⻜',
+            CJKRadicalsSupplement::CjkRadicalEatOne => '⻝',
+            CJKRadicalsSupplement::CjkRadicalEatTwo => '⻞',
+            CJKRadicalsSupplement::CjkRadicalEatThree => '⻟',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedEat => '⻠',
+            CJKRadicalsSupplement::CjkRadicalHead => '⻡',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedHorse => '⻢',
+            CJKRadicalsSupplement::CjkRadicalBone => '⻣',
+            CJKRadicalsSupplement::CjkRadicalGhost => '⻤',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFish => '⻥',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedBird => '⻦',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSalt => '⻧',
+            CJKRadicalsSupplement::CjkRadicalSimplifiedWheat => '⻨',
+            CJKRadicalsSupplement::CjkRadicalSimplifiedYellow => '⻩',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFrog => '⻪',
+            CJKRadicalsSupplement::CjkRadicalJDashSimplifiedEven => '⻫',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedEven => '⻬',
+            CJKRadicalsSupplement::CjkRadicalJDashSimplifiedTooth => '⻭',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTooth => '⻮',
+            CJKRadicalsSupplement::CjkRadicalJDashSimplifiedDragon => '⻯',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedDragon => '⻰',
+            CJKRadicalsSupplement::CjkRadicalTurtle => '⻱',
+            CJKRadicalsSupplement::CjkRadicalJDashSimplifiedTurtle => '⻲',
+            CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTurtle => '⻳',
         }
     }
 }
@@ -593,123 +359,122 @@ impl Into<char> for CJKRadicalsSupplement {
 impl std::convert::TryFrom<char> for CJKRadicalsSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CJK_RADICAL_REPEAT => Ok(CJKRadicalsSupplement::CjkRadicalRepeat),
-            CJK_RADICAL_CLIFF => Ok(CJKRadicalsSupplement::CjkRadicalCliff),
-            CJK_RADICAL_SECOND_ONE => Ok(CJKRadicalsSupplement::CjkRadicalSecondOne),
-            CJK_RADICAL_SECOND_TWO => Ok(CJKRadicalsSupplement::CjkRadicalSecondTwo),
-            CJK_RADICAL_SECOND_THREE => Ok(CJKRadicalsSupplement::CjkRadicalSecondThree),
-            CJK_RADICAL_PERSON => Ok(CJKRadicalsSupplement::CjkRadicalPerson),
-            CJK_RADICAL_BOX => Ok(CJKRadicalsSupplement::CjkRadicalBox),
-            CJK_RADICAL_TABLE => Ok(CJKRadicalsSupplement::CjkRadicalTable),
-            CJK_RADICAL_KNIFE_ONE => Ok(CJKRadicalsSupplement::CjkRadicalKnifeOne),
-            CJK_RADICAL_KNIFE_TWO => Ok(CJKRadicalsSupplement::CjkRadicalKnifeTwo),
-            CJK_RADICAL_DIVINATION => Ok(CJKRadicalsSupplement::CjkRadicalDivination),
-            CJK_RADICAL_SEAL => Ok(CJKRadicalsSupplement::CjkRadicalSeal),
-            CJK_RADICAL_SMALL_ONE => Ok(CJKRadicalsSupplement::CjkRadicalSmallOne),
-            CJK_RADICAL_SMALL_TWO => Ok(CJKRadicalsSupplement::CjkRadicalSmallTwo),
-            CJK_RADICAL_LAME_ONE => Ok(CJKRadicalsSupplement::CjkRadicalLameOne),
-            CJK_RADICAL_LAME_TWO => Ok(CJKRadicalsSupplement::CjkRadicalLameTwo),
-            CJK_RADICAL_LAME_THREE => Ok(CJKRadicalsSupplement::CjkRadicalLameThree),
-            CJK_RADICAL_LAME_FOUR => Ok(CJKRadicalsSupplement::CjkRadicalLameFour),
-            CJK_RADICAL_SNAKE => Ok(CJKRadicalsSupplement::CjkRadicalSnake),
-            CJK_RADICAL_THREAD => Ok(CJKRadicalsSupplement::CjkRadicalThread),
-            CJK_RADICAL_SNOUT_ONE => Ok(CJKRadicalsSupplement::CjkRadicalSnoutOne),
-            CJK_RADICAL_SNOUT_TWO => Ok(CJKRadicalsSupplement::CjkRadicalSnoutTwo),
-            CJK_RADICAL_HEART_ONE => Ok(CJKRadicalsSupplement::CjkRadicalHeartOne),
-            CJK_RADICAL_HEART_TWO => Ok(CJKRadicalsSupplement::CjkRadicalHeartTwo),
-            CJK_RADICAL_HAND => Ok(CJKRadicalsSupplement::CjkRadicalHand),
-            CJK_RADICAL_RAP => Ok(CJKRadicalsSupplement::CjkRadicalRap),
-            CJK_RADICAL_CHOKE => Ok(CJKRadicalsSupplement::CjkRadicalChoke),
-            CJK_RADICAL_SUN => Ok(CJKRadicalsSupplement::CjkRadicalSun),
-            CJK_RADICAL_MOON => Ok(CJKRadicalsSupplement::CjkRadicalMoon),
-            CJK_RADICAL_DEATH => Ok(CJKRadicalsSupplement::CjkRadicalDeath),
-            CJK_RADICAL_MOTHER => Ok(CJKRadicalsSupplement::CjkRadicalMother),
-            CJK_RADICAL_CIVILIAN => Ok(CJKRadicalsSupplement::CjkRadicalCivilian),
-            CJK_RADICAL_WATER_ONE => Ok(CJKRadicalsSupplement::CjkRadicalWaterOne),
-            CJK_RADICAL_WATER_TWO => Ok(CJKRadicalsSupplement::CjkRadicalWaterTwo),
-            CJK_RADICAL_FIRE => Ok(CJKRadicalsSupplement::CjkRadicalFire),
-            CJK_RADICAL_PAW_ONE => Ok(CJKRadicalsSupplement::CjkRadicalPawOne),
-            CJK_RADICAL_PAW_TWO => Ok(CJKRadicalsSupplement::CjkRadicalPawTwo),
-            CJK_RADICAL_SIMPLIFIED_HALF_TREE_TRUNK => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedHalfTreeTrunk),
-            CJK_RADICAL_COW => Ok(CJKRadicalsSupplement::CjkRadicalCow),
-            CJK_RADICAL_DOG => Ok(CJKRadicalsSupplement::CjkRadicalDog),
-            CJK_RADICAL_JADE => Ok(CJKRadicalsSupplement::CjkRadicalJade),
-            CJK_RADICAL_BOLT_OF_CLOTH => Ok(CJKRadicalsSupplement::CjkRadicalBoltOfCloth),
-            CJK_RADICAL_EYE => Ok(CJKRadicalsSupplement::CjkRadicalEye),
-            CJK_RADICAL_SPIRIT_ONE => Ok(CJKRadicalsSupplement::CjkRadicalSpiritOne),
-            CJK_RADICAL_SPIRIT_TWO => Ok(CJKRadicalsSupplement::CjkRadicalSpiritTwo),
-            CJK_RADICAL_BAMBOO => Ok(CJKRadicalsSupplement::CjkRadicalBamboo),
-            CJK_RADICAL_SILK => Ok(CJKRadicalsSupplement::CjkRadicalSilk),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_SILK => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSilk),
-            CJK_RADICAL_NET_ONE => Ok(CJKRadicalsSupplement::CjkRadicalNetOne),
-            CJK_RADICAL_NET_TWO => Ok(CJKRadicalsSupplement::CjkRadicalNetTwo),
-            CJK_RADICAL_NET_THREE => Ok(CJKRadicalsSupplement::CjkRadicalNetThree),
-            CJK_RADICAL_NET_FOUR => Ok(CJKRadicalsSupplement::CjkRadicalNetFour),
-            CJK_RADICAL_MESH => Ok(CJKRadicalsSupplement::CjkRadicalMesh),
-            CJK_RADICAL_SHEEP => Ok(CJKRadicalsSupplement::CjkRadicalSheep),
-            CJK_RADICAL_RAM => Ok(CJKRadicalsSupplement::CjkRadicalRam),
-            CJK_RADICAL_EWE => Ok(CJKRadicalsSupplement::CjkRadicalEwe),
-            CJK_RADICAL_OLD => Ok(CJKRadicalsSupplement::CjkRadicalOld),
-            CJK_RADICAL_BRUSH_ONE => Ok(CJKRadicalsSupplement::CjkRadicalBrushOne),
-            CJK_RADICAL_BRUSH_TWO => Ok(CJKRadicalsSupplement::CjkRadicalBrushTwo),
-            CJK_RADICAL_MEAT => Ok(CJKRadicalsSupplement::CjkRadicalMeat),
-            CJK_RADICAL_MORTAR => Ok(CJKRadicalsSupplement::CjkRadicalMortar),
-            CJK_RADICAL_GRASS_ONE => Ok(CJKRadicalsSupplement::CjkRadicalGrassOne),
-            CJK_RADICAL_GRASS_TWO => Ok(CJKRadicalsSupplement::CjkRadicalGrassTwo),
-            CJK_RADICAL_GRASS_THREE => Ok(CJKRadicalsSupplement::CjkRadicalGrassThree),
-            CJK_RADICAL_TIGER => Ok(CJKRadicalsSupplement::CjkRadicalTiger),
-            CJK_RADICAL_CLOTHES => Ok(CJKRadicalsSupplement::CjkRadicalClothes),
-            CJK_RADICAL_WEST_ONE => Ok(CJKRadicalsSupplement::CjkRadicalWestOne),
-            CJK_RADICAL_WEST_TWO => Ok(CJKRadicalsSupplement::CjkRadicalWestTwo),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_SEE => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSee),
-            CJK_RADICAL_SIMPLIFIED_HORN => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedHorn),
-            CJK_RADICAL_HORN => Ok(CJKRadicalsSupplement::CjkRadicalHorn),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_SPEECH => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSpeech),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_SHELL => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedShell),
-            CJK_RADICAL_FOOT => Ok(CJKRadicalsSupplement::CjkRadicalFoot),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_CART => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedCart),
-            CJK_RADICAL_SIMPLIFIED_WALK => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedWalk),
-            CJK_RADICAL_WALK_ONE => Ok(CJKRadicalsSupplement::CjkRadicalWalkOne),
-            CJK_RADICAL_WALK_TWO => Ok(CJKRadicalsSupplement::CjkRadicalWalkTwo),
-            CJK_RADICAL_CITY => Ok(CJKRadicalsSupplement::CjkRadicalCity),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_GOLD => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedGold),
-            CJK_RADICAL_LONG_ONE => Ok(CJKRadicalsSupplement::CjkRadicalLongOne),
-            CJK_RADICAL_LONG_TWO => Ok(CJKRadicalsSupplement::CjkRadicalLongTwo),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_LONG => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedLong),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_GATE => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedGate),
-            CJK_RADICAL_MOUND_ONE => Ok(CJKRadicalsSupplement::CjkRadicalMoundOne),
-            CJK_RADICAL_MOUND_TWO => Ok(CJKRadicalsSupplement::CjkRadicalMoundTwo),
-            CJK_RADICAL_RAIN => Ok(CJKRadicalsSupplement::CjkRadicalRain),
-            CJK_RADICAL_BLUE => Ok(CJKRadicalsSupplement::CjkRadicalBlue),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_TANNED_LEATHER => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTannedLeather),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_LEAF => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedLeaf),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_WIND => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedWind),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_FLY => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFly),
-            CJK_RADICAL_EAT_ONE => Ok(CJKRadicalsSupplement::CjkRadicalEatOne),
-            CJK_RADICAL_EAT_TWO => Ok(CJKRadicalsSupplement::CjkRadicalEatTwo),
-            CJK_RADICAL_EAT_THREE => Ok(CJKRadicalsSupplement::CjkRadicalEatThree),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_EAT => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedEat),
-            CJK_RADICAL_HEAD => Ok(CJKRadicalsSupplement::CjkRadicalHead),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_HORSE => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedHorse),
-            CJK_RADICAL_BONE => Ok(CJKRadicalsSupplement::CjkRadicalBone),
-            CJK_RADICAL_GHOST => Ok(CJKRadicalsSupplement::CjkRadicalGhost),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_FISH => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFish),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_BIRD => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedBird),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_SALT => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSalt),
-            CJK_RADICAL_SIMPLIFIED_WHEAT => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedWheat),
-            CJK_RADICAL_SIMPLIFIED_YELLOW => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedYellow),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_FROG => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFrog),
-            CJK_RADICAL_J_DASH_SIMPLIFIED_EVEN => Ok(CJKRadicalsSupplement::CjkRadicalJDashSimplifiedEven),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_EVEN => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedEven),
-            CJK_RADICAL_J_DASH_SIMPLIFIED_TOOTH => Ok(CJKRadicalsSupplement::CjkRadicalJDashSimplifiedTooth),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_TOOTH => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTooth),
-            CJK_RADICAL_J_DASH_SIMPLIFIED_DRAGON => Ok(CJKRadicalsSupplement::CjkRadicalJDashSimplifiedDragon),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_DRAGON => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedDragon),
-            CJK_RADICAL_TURTLE => Ok(CJKRadicalsSupplement::CjkRadicalTurtle),
-            CJK_RADICAL_J_DASH_SIMPLIFIED_TURTLE => Ok(CJKRadicalsSupplement::CjkRadicalJDashSimplifiedTurtle),
-            CJK_RADICAL_C_DASH_SIMPLIFIED_TURTLE => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTurtle),
+            '⺀' => Ok(CJKRadicalsSupplement::CjkRadicalRepeat),
+            '⺁' => Ok(CJKRadicalsSupplement::CjkRadicalCliff),
+            '⺂' => Ok(CJKRadicalsSupplement::CjkRadicalSecondOne),
+            '⺃' => Ok(CJKRadicalsSupplement::CjkRadicalSecondTwo),
+            '⺄' => Ok(CJKRadicalsSupplement::CjkRadicalSecondThree),
+            '⺅' => Ok(CJKRadicalsSupplement::CjkRadicalPerson),
+            '⺆' => Ok(CJKRadicalsSupplement::CjkRadicalBox),
+            '⺇' => Ok(CJKRadicalsSupplement::CjkRadicalTable),
+            '⺈' => Ok(CJKRadicalsSupplement::CjkRadicalKnifeOne),
+            '⺉' => Ok(CJKRadicalsSupplement::CjkRadicalKnifeTwo),
+            '⺊' => Ok(CJKRadicalsSupplement::CjkRadicalDivination),
+            '⺋' => Ok(CJKRadicalsSupplement::CjkRadicalSeal),
+            '⺌' => Ok(CJKRadicalsSupplement::CjkRadicalSmallOne),
+            '⺍' => Ok(CJKRadicalsSupplement::CjkRadicalSmallTwo),
+            '⺎' => Ok(CJKRadicalsSupplement::CjkRadicalLameOne),
+            '⺏' => Ok(CJKRadicalsSupplement::CjkRadicalLameTwo),
+            '⺐' => Ok(CJKRadicalsSupplement::CjkRadicalLameThree),
+            '⺑' => Ok(CJKRadicalsSupplement::CjkRadicalLameFour),
+            '⺒' => Ok(CJKRadicalsSupplement::CjkRadicalSnake),
+            '⺓' => Ok(CJKRadicalsSupplement::CjkRadicalThread),
+            '⺔' => Ok(CJKRadicalsSupplement::CjkRadicalSnoutOne),
+            '⺕' => Ok(CJKRadicalsSupplement::CjkRadicalSnoutTwo),
+            '⺖' => Ok(CJKRadicalsSupplement::CjkRadicalHeartOne),
+            '⺗' => Ok(CJKRadicalsSupplement::CjkRadicalHeartTwo),
+            '⺘' => Ok(CJKRadicalsSupplement::CjkRadicalHand),
+            '⺙' => Ok(CJKRadicalsSupplement::CjkRadicalRap),
+            '⺛' => Ok(CJKRadicalsSupplement::CjkRadicalChoke),
+            '⺜' => Ok(CJKRadicalsSupplement::CjkRadicalSun),
+            '⺝' => Ok(CJKRadicalsSupplement::CjkRadicalMoon),
+            '⺞' => Ok(CJKRadicalsSupplement::CjkRadicalDeath),
+            '⺟' => Ok(CJKRadicalsSupplement::CjkRadicalMother),
+            '⺠' => Ok(CJKRadicalsSupplement::CjkRadicalCivilian),
+            '⺡' => Ok(CJKRadicalsSupplement::CjkRadicalWaterOne),
+            '⺢' => Ok(CJKRadicalsSupplement::CjkRadicalWaterTwo),
+            '⺣' => Ok(CJKRadicalsSupplement::CjkRadicalFire),
+            '⺤' => Ok(CJKRadicalsSupplement::CjkRadicalPawOne),
+            '⺥' => Ok(CJKRadicalsSupplement::CjkRadicalPawTwo),
+            '⺦' => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedHalfTreeTrunk),
+            '⺧' => Ok(CJKRadicalsSupplement::CjkRadicalCow),
+            '⺨' => Ok(CJKRadicalsSupplement::CjkRadicalDog),
+            '⺩' => Ok(CJKRadicalsSupplement::CjkRadicalJade),
+            '⺪' => Ok(CJKRadicalsSupplement::CjkRadicalBoltOfCloth),
+            '⺫' => Ok(CJKRadicalsSupplement::CjkRadicalEye),
+            '⺬' => Ok(CJKRadicalsSupplement::CjkRadicalSpiritOne),
+            '⺭' => Ok(CJKRadicalsSupplement::CjkRadicalSpiritTwo),
+            '⺮' => Ok(CJKRadicalsSupplement::CjkRadicalBamboo),
+            '⺯' => Ok(CJKRadicalsSupplement::CjkRadicalSilk),
+            '⺰' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSilk),
+            '⺱' => Ok(CJKRadicalsSupplement::CjkRadicalNetOne),
+            '⺲' => Ok(CJKRadicalsSupplement::CjkRadicalNetTwo),
+            '⺳' => Ok(CJKRadicalsSupplement::CjkRadicalNetThree),
+            '⺴' => Ok(CJKRadicalsSupplement::CjkRadicalNetFour),
+            '⺵' => Ok(CJKRadicalsSupplement::CjkRadicalMesh),
+            '⺶' => Ok(CJKRadicalsSupplement::CjkRadicalSheep),
+            '⺷' => Ok(CJKRadicalsSupplement::CjkRadicalRam),
+            '⺸' => Ok(CJKRadicalsSupplement::CjkRadicalEwe),
+            '⺹' => Ok(CJKRadicalsSupplement::CjkRadicalOld),
+            '⺺' => Ok(CJKRadicalsSupplement::CjkRadicalBrushOne),
+            '⺻' => Ok(CJKRadicalsSupplement::CjkRadicalBrushTwo),
+            '⺼' => Ok(CJKRadicalsSupplement::CjkRadicalMeat),
+            '⺽' => Ok(CJKRadicalsSupplement::CjkRadicalMortar),
+            '⺾' => Ok(CJKRadicalsSupplement::CjkRadicalGrassOne),
+            '⺿' => Ok(CJKRadicalsSupplement::CjkRadicalGrassTwo),
+            '⻀' => Ok(CJKRadicalsSupplement::CjkRadicalGrassThree),
+            '⻁' => Ok(CJKRadicalsSupplement::CjkRadicalTiger),
+            '⻂' => Ok(CJKRadicalsSupplement::CjkRadicalClothes),
+            '⻃' => Ok(CJKRadicalsSupplement::CjkRadicalWestOne),
+            '⻄' => Ok(CJKRadicalsSupplement::CjkRadicalWestTwo),
+            '⻅' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSee),
+            '⻆' => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedHorn),
+            '⻇' => Ok(CJKRadicalsSupplement::CjkRadicalHorn),
+            '⻈' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSpeech),
+            '⻉' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedShell),
+            '⻊' => Ok(CJKRadicalsSupplement::CjkRadicalFoot),
+            '⻋' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedCart),
+            '⻌' => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedWalk),
+            '⻍' => Ok(CJKRadicalsSupplement::CjkRadicalWalkOne),
+            '⻎' => Ok(CJKRadicalsSupplement::CjkRadicalWalkTwo),
+            '⻏' => Ok(CJKRadicalsSupplement::CjkRadicalCity),
+            '⻐' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedGold),
+            '⻑' => Ok(CJKRadicalsSupplement::CjkRadicalLongOne),
+            '⻒' => Ok(CJKRadicalsSupplement::CjkRadicalLongTwo),
+            '⻓' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedLong),
+            '⻔' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedGate),
+            '⻕' => Ok(CJKRadicalsSupplement::CjkRadicalMoundOne),
+            '⻖' => Ok(CJKRadicalsSupplement::CjkRadicalMoundTwo),
+            '⻗' => Ok(CJKRadicalsSupplement::CjkRadicalRain),
+            '⻘' => Ok(CJKRadicalsSupplement::CjkRadicalBlue),
+            '⻙' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTannedLeather),
+            '⻚' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedLeaf),
+            '⻛' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedWind),
+            '⻜' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFly),
+            '⻝' => Ok(CJKRadicalsSupplement::CjkRadicalEatOne),
+            '⻞' => Ok(CJKRadicalsSupplement::CjkRadicalEatTwo),
+            '⻟' => Ok(CJKRadicalsSupplement::CjkRadicalEatThree),
+            '⻠' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedEat),
+            '⻡' => Ok(CJKRadicalsSupplement::CjkRadicalHead),
+            '⻢' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedHorse),
+            '⻣' => Ok(CJKRadicalsSupplement::CjkRadicalBone),
+            '⻤' => Ok(CJKRadicalsSupplement::CjkRadicalGhost),
+            '⻥' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFish),
+            '⻦' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedBird),
+            '⻧' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedSalt),
+            '⻨' => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedWheat),
+            '⻩' => Ok(CJKRadicalsSupplement::CjkRadicalSimplifiedYellow),
+            '⻪' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedFrog),
+            '⻫' => Ok(CJKRadicalsSupplement::CjkRadicalJDashSimplifiedEven),
+            '⻬' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedEven),
+            '⻭' => Ok(CJKRadicalsSupplement::CjkRadicalJDashSimplifiedTooth),
+            '⻮' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTooth),
+            '⻯' => Ok(CJKRadicalsSupplement::CjkRadicalJDashSimplifiedDragon),
+            '⻰' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedDragon),
+            '⻱' => Ok(CJKRadicalsSupplement::CjkRadicalTurtle),
+            '⻲' => Ok(CJKRadicalsSupplement::CjkRadicalJDashSimplifiedTurtle),
+            '⻳' => Ok(CJKRadicalsSupplement::CjkRadicalCDashSimplifiedTurtle),
             _ => Err(()),
         }
     }

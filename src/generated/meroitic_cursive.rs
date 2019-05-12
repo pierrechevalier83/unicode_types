@@ -1,184 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{109a0}: '𐦠'
-    pub const LETTER_A: char = '𐦠';
-    /// \u{109a1}: '𐦡'
-    pub const LETTER_E: char = '𐦡';
-    /// \u{109a2}: '𐦢'
-    pub const LETTER_I: char = '𐦢';
-    /// \u{109a3}: '𐦣'
-    pub const LETTER_O: char = '𐦣';
-    /// \u{109a4}: '𐦤'
-    pub const LETTER_YA: char = '𐦤';
-    /// \u{109a5}: '𐦥'
-    pub const LETTER_WA: char = '𐦥';
-    /// \u{109a6}: '𐦦'
-    pub const LETTER_BA: char = '𐦦';
-    /// \u{109a7}: '𐦧'
-    pub const LETTER_PA: char = '𐦧';
-    /// \u{109a8}: '𐦨'
-    pub const LETTER_MA: char = '𐦨';
-    /// \u{109a9}: '𐦩'
-    pub const LETTER_NA: char = '𐦩';
-    /// \u{109aa}: '𐦪'
-    pub const LETTER_NE: char = '𐦪';
-    /// \u{109ab}: '𐦫'
-    pub const LETTER_RA: char = '𐦫';
-    /// \u{109ac}: '𐦬'
-    pub const LETTER_LA: char = '𐦬';
-    /// \u{109ad}: '𐦭'
-    pub const LETTER_KHA: char = '𐦭';
-    /// \u{109ae}: '𐦮'
-    pub const LETTER_HHA: char = '𐦮';
-    /// \u{109af}: '𐦯'
-    pub const LETTER_SA: char = '𐦯';
-    /// \u{109b0}: '𐦰'
-    pub const LETTER_ARCHAIC_SA: char = '𐦰';
-    /// \u{109b1}: '𐦱'
-    pub const LETTER_SE: char = '𐦱';
-    /// \u{109b2}: '𐦲'
-    pub const LETTER_KA: char = '𐦲';
-    /// \u{109b3}: '𐦳'
-    pub const LETTER_QA: char = '𐦳';
-    /// \u{109b4}: '𐦴'
-    pub const LETTER_TA: char = '𐦴';
-    /// \u{109b5}: '𐦵'
-    pub const LETTER_TE: char = '𐦵';
-    /// \u{109b6}: '𐦶'
-    pub const LETTER_TO: char = '𐦶';
-    /// \u{109b7}: '𐦷'
-    pub const LETTER_DA: char = '𐦷';
-    /// \u{109bc}: '𐦼'
-    pub const FRACTION_ELEVEN_TWELFTHS: char = '𐦼';
-    /// \u{109bd}: '𐦽'
-    pub const FRACTION_ONE_HALF: char = '𐦽';
-    /// \u{109be}: '𐦾'
-    pub const LOGOGRAM_RMT: char = '𐦾';
-    /// \u{109bf}: '𐦿'
-    pub const LOGOGRAM_IMN: char = '𐦿';
-    /// \u{109c0}: '𐧀'
-    pub const NUMBER_ONE: char = '𐧀';
-    /// \u{109c1}: '𐧁'
-    pub const NUMBER_TWO: char = '𐧁';
-    /// \u{109c2}: '𐧂'
-    pub const NUMBER_THREE: char = '𐧂';
-    /// \u{109c3}: '𐧃'
-    pub const NUMBER_FOUR: char = '𐧃';
-    /// \u{109c4}: '𐧄'
-    pub const NUMBER_FIVE: char = '𐧄';
-    /// \u{109c5}: '𐧅'
-    pub const NUMBER_SIX: char = '𐧅';
-    /// \u{109c6}: '𐧆'
-    pub const NUMBER_SEVEN: char = '𐧆';
-    /// \u{109c7}: '𐧇'
-    pub const NUMBER_EIGHT: char = '𐧇';
-    /// \u{109c8}: '𐧈'
-    pub const NUMBER_NINE: char = '𐧈';
-    /// \u{109c9}: '𐧉'
-    pub const NUMBER_TEN: char = '𐧉';
-    /// \u{109ca}: '𐧊'
-    pub const NUMBER_TWENTY: char = '𐧊';
-    /// \u{109cb}: '𐧋'
-    pub const NUMBER_THIRTY: char = '𐧋';
-    /// \u{109cc}: '𐧌'
-    pub const NUMBER_FORTY: char = '𐧌';
-    /// \u{109cd}: '𐧍'
-    pub const NUMBER_FIFTY: char = '𐧍';
-    /// \u{109ce}: '𐧎'
-    pub const NUMBER_SIXTY: char = '𐧎';
-    /// \u{109cf}: '𐧏'
-    pub const NUMBER_SEVENTY: char = '𐧏';
-    /// \u{109d2}: '𐧒'
-    pub const NUMBER_ONE_HUNDRED: char = '𐧒';
-    /// \u{109d3}: '𐧓'
-    pub const NUMBER_TWO_HUNDRED: char = '𐧓';
-    /// \u{109d4}: '𐧔'
-    pub const NUMBER_THREE_HUNDRED: char = '𐧔';
-    /// \u{109d5}: '𐧕'
-    pub const NUMBER_FOUR_HUNDRED: char = '𐧕';
-    /// \u{109d6}: '𐧖'
-    pub const NUMBER_FIVE_HUNDRED: char = '𐧖';
-    /// \u{109d7}: '𐧗'
-    pub const NUMBER_SIX_HUNDRED: char = '𐧗';
-    /// \u{109d8}: '𐧘'
-    pub const NUMBER_SEVEN_HUNDRED: char = '𐧘';
-    /// \u{109d9}: '𐧙'
-    pub const NUMBER_EIGHT_HUNDRED: char = '𐧙';
-    /// \u{109da}: '𐧚'
-    pub const NUMBER_NINE_HUNDRED: char = '𐧚';
-    /// \u{109db}: '𐧛'
-    pub const NUMBER_ONE_THOUSAND: char = '𐧛';
-    /// \u{109dc}: '𐧜'
-    pub const NUMBER_TWO_THOUSAND: char = '𐧜';
-    /// \u{109dd}: '𐧝'
-    pub const NUMBER_THREE_THOUSAND: char = '𐧝';
-    /// \u{109de}: '𐧞'
-    pub const NUMBER_FOUR_THOUSAND: char = '𐧞';
-    /// \u{109df}: '𐧟'
-    pub const NUMBER_FIVE_THOUSAND: char = '𐧟';
-    /// \u{109e0}: '𐧠'
-    pub const NUMBER_SIX_THOUSAND: char = '𐧠';
-    /// \u{109e1}: '𐧡'
-    pub const NUMBER_SEVEN_THOUSAND: char = '𐧡';
-    /// \u{109e2}: '𐧢'
-    pub const NUMBER_EIGHT_THOUSAND: char = '𐧢';
-    /// \u{109e3}: '𐧣'
-    pub const NUMBER_NINE_THOUSAND: char = '𐧣';
-    /// \u{109e4}: '𐧤'
-    pub const NUMBER_TEN_THOUSAND: char = '𐧤';
-    /// \u{109e5}: '𐧥'
-    pub const NUMBER_TWENTY_THOUSAND: char = '𐧥';
-    /// \u{109e6}: '𐧦'
-    pub const NUMBER_THIRTY_THOUSAND: char = '𐧦';
-    /// \u{109e7}: '𐧧'
-    pub const NUMBER_FORTY_THOUSAND: char = '𐧧';
-    /// \u{109e8}: '𐧨'
-    pub const NUMBER_FIFTY_THOUSAND: char = '𐧨';
-    /// \u{109e9}: '𐧩'
-    pub const NUMBER_SIXTY_THOUSAND: char = '𐧩';
-    /// \u{109ea}: '𐧪'
-    pub const NUMBER_SEVENTY_THOUSAND: char = '𐧪';
-    /// \u{109eb}: '𐧫'
-    pub const NUMBER_EIGHTY_THOUSAND: char = '𐧫';
-    /// \u{109ec}: '𐧬'
-    pub const NUMBER_NINETY_THOUSAND: char = '𐧬';
-    /// \u{109ed}: '𐧭'
-    pub const NUMBER_ONE_HUNDRED_THOUSAND: char = '𐧭';
-    /// \u{109ee}: '𐧮'
-    pub const NUMBER_TWO_HUNDRED_THOUSAND: char = '𐧮';
-    /// \u{109ef}: '𐧯'
-    pub const NUMBER_THREE_HUNDRED_THOUSAND: char = '𐧯';
-    /// \u{109f0}: '𐧰'
-    pub const NUMBER_FOUR_HUNDRED_THOUSAND: char = '𐧰';
-    /// \u{109f1}: '𐧱'
-    pub const NUMBER_FIVE_HUNDRED_THOUSAND: char = '𐧱';
-    /// \u{109f2}: '𐧲'
-    pub const NUMBER_SIX_HUNDRED_THOUSAND: char = '𐧲';
-    /// \u{109f3}: '𐧳'
-    pub const NUMBER_SEVEN_HUNDRED_THOUSAND: char = '𐧳';
-    /// \u{109f4}: '𐧴'
-    pub const NUMBER_EIGHT_HUNDRED_THOUSAND: char = '𐧴';
-    /// \u{109f5}: '𐧵'
-    pub const NUMBER_NINE_HUNDRED_THOUSAND: char = '𐧵';
-    /// \u{109f6}: '𐧶'
-    pub const FRACTION_ONE_TWELFTH: char = '𐧶';
-    /// \u{109f7}: '𐧷'
-    pub const FRACTION_TWO_TWELFTHS: char = '𐧷';
-    /// \u{109f8}: '𐧸'
-    pub const FRACTION_THREE_TWELFTHS: char = '𐧸';
-    /// \u{109f9}: '𐧹'
-    pub const FRACTION_FOUR_TWELFTHS: char = '𐧹';
-    /// \u{109fa}: '𐧺'
-    pub const FRACTION_FIVE_TWELFTHS: char = '𐧺';
-    /// \u{109fb}: '𐧻'
-    pub const FRACTION_SIX_TWELFTHS: char = '𐧻';
-    /// \u{109fc}: '𐧼'
-    pub const FRACTION_SEVEN_TWELFTHS: char = '𐧼';
-    /// \u{109fd}: '𐧽'
-    pub const FRACTION_EIGHT_TWELFTHS: char = '𐧽';
-    /// \u{109fe}: '𐧾'
-    pub const FRACTION_NINE_TWELFTHS: char = '𐧾';
-}
 
 /// An enum to represent all characters in the MeroiticCursive block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -365,97 +184,96 @@ pub enum MeroiticCursive {
 
 impl Into<char> for MeroiticCursive {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MeroiticCursive::LetterA => LETTER_A,
-            MeroiticCursive::LetterE => LETTER_E,
-            MeroiticCursive::LetterI => LETTER_I,
-            MeroiticCursive::LetterO => LETTER_O,
-            MeroiticCursive::LetterYa => LETTER_YA,
-            MeroiticCursive::LetterWa => LETTER_WA,
-            MeroiticCursive::LetterBa => LETTER_BA,
-            MeroiticCursive::LetterPa => LETTER_PA,
-            MeroiticCursive::LetterMa => LETTER_MA,
-            MeroiticCursive::LetterNa => LETTER_NA,
-            MeroiticCursive::LetterNe => LETTER_NE,
-            MeroiticCursive::LetterRa => LETTER_RA,
-            MeroiticCursive::LetterLa => LETTER_LA,
-            MeroiticCursive::LetterKha => LETTER_KHA,
-            MeroiticCursive::LetterHha => LETTER_HHA,
-            MeroiticCursive::LetterSa => LETTER_SA,
-            MeroiticCursive::LetterArchaicSa => LETTER_ARCHAIC_SA,
-            MeroiticCursive::LetterSe => LETTER_SE,
-            MeroiticCursive::LetterKa => LETTER_KA,
-            MeroiticCursive::LetterQa => LETTER_QA,
-            MeroiticCursive::LetterTa => LETTER_TA,
-            MeroiticCursive::LetterTe => LETTER_TE,
-            MeroiticCursive::LetterTo => LETTER_TO,
-            MeroiticCursive::LetterDa => LETTER_DA,
-            MeroiticCursive::FractionElevenTwelfths => FRACTION_ELEVEN_TWELFTHS,
-            MeroiticCursive::FractionOneHalf => FRACTION_ONE_HALF,
-            MeroiticCursive::LogogramRmt => LOGOGRAM_RMT,
-            MeroiticCursive::LogogramImn => LOGOGRAM_IMN,
-            MeroiticCursive::NumberOne => NUMBER_ONE,
-            MeroiticCursive::NumberTwo => NUMBER_TWO,
-            MeroiticCursive::NumberThree => NUMBER_THREE,
-            MeroiticCursive::NumberFour => NUMBER_FOUR,
-            MeroiticCursive::NumberFive => NUMBER_FIVE,
-            MeroiticCursive::NumberSix => NUMBER_SIX,
-            MeroiticCursive::NumberSeven => NUMBER_SEVEN,
-            MeroiticCursive::NumberEight => NUMBER_EIGHT,
-            MeroiticCursive::NumberNine => NUMBER_NINE,
-            MeroiticCursive::NumberTen => NUMBER_TEN,
-            MeroiticCursive::NumberTwenty => NUMBER_TWENTY,
-            MeroiticCursive::NumberThirty => NUMBER_THIRTY,
-            MeroiticCursive::NumberForty => NUMBER_FORTY,
-            MeroiticCursive::NumberFifty => NUMBER_FIFTY,
-            MeroiticCursive::NumberSixty => NUMBER_SIXTY,
-            MeroiticCursive::NumberSeventy => NUMBER_SEVENTY,
-            MeroiticCursive::NumberOneHundred => NUMBER_ONE_HUNDRED,
-            MeroiticCursive::NumberTwoHundred => NUMBER_TWO_HUNDRED,
-            MeroiticCursive::NumberThreeHundred => NUMBER_THREE_HUNDRED,
-            MeroiticCursive::NumberFourHundred => NUMBER_FOUR_HUNDRED,
-            MeroiticCursive::NumberFiveHundred => NUMBER_FIVE_HUNDRED,
-            MeroiticCursive::NumberSixHundred => NUMBER_SIX_HUNDRED,
-            MeroiticCursive::NumberSevenHundred => NUMBER_SEVEN_HUNDRED,
-            MeroiticCursive::NumberEightHundred => NUMBER_EIGHT_HUNDRED,
-            MeroiticCursive::NumberNineHundred => NUMBER_NINE_HUNDRED,
-            MeroiticCursive::NumberOneThousand => NUMBER_ONE_THOUSAND,
-            MeroiticCursive::NumberTwoThousand => NUMBER_TWO_THOUSAND,
-            MeroiticCursive::NumberThreeThousand => NUMBER_THREE_THOUSAND,
-            MeroiticCursive::NumberFourThousand => NUMBER_FOUR_THOUSAND,
-            MeroiticCursive::NumberFiveThousand => NUMBER_FIVE_THOUSAND,
-            MeroiticCursive::NumberSixThousand => NUMBER_SIX_THOUSAND,
-            MeroiticCursive::NumberSevenThousand => NUMBER_SEVEN_THOUSAND,
-            MeroiticCursive::NumberEightThousand => NUMBER_EIGHT_THOUSAND,
-            MeroiticCursive::NumberNineThousand => NUMBER_NINE_THOUSAND,
-            MeroiticCursive::NumberTenThousand => NUMBER_TEN_THOUSAND,
-            MeroiticCursive::NumberTwentyThousand => NUMBER_TWENTY_THOUSAND,
-            MeroiticCursive::NumberThirtyThousand => NUMBER_THIRTY_THOUSAND,
-            MeroiticCursive::NumberFortyThousand => NUMBER_FORTY_THOUSAND,
-            MeroiticCursive::NumberFiftyThousand => NUMBER_FIFTY_THOUSAND,
-            MeroiticCursive::NumberSixtyThousand => NUMBER_SIXTY_THOUSAND,
-            MeroiticCursive::NumberSeventyThousand => NUMBER_SEVENTY_THOUSAND,
-            MeroiticCursive::NumberEightyThousand => NUMBER_EIGHTY_THOUSAND,
-            MeroiticCursive::NumberNinetyThousand => NUMBER_NINETY_THOUSAND,
-            MeroiticCursive::NumberOneHundredThousand => NUMBER_ONE_HUNDRED_THOUSAND,
-            MeroiticCursive::NumberTwoHundredThousand => NUMBER_TWO_HUNDRED_THOUSAND,
-            MeroiticCursive::NumberThreeHundredThousand => NUMBER_THREE_HUNDRED_THOUSAND,
-            MeroiticCursive::NumberFourHundredThousand => NUMBER_FOUR_HUNDRED_THOUSAND,
-            MeroiticCursive::NumberFiveHundredThousand => NUMBER_FIVE_HUNDRED_THOUSAND,
-            MeroiticCursive::NumberSixHundredThousand => NUMBER_SIX_HUNDRED_THOUSAND,
-            MeroiticCursive::NumberSevenHundredThousand => NUMBER_SEVEN_HUNDRED_THOUSAND,
-            MeroiticCursive::NumberEightHundredThousand => NUMBER_EIGHT_HUNDRED_THOUSAND,
-            MeroiticCursive::NumberNineHundredThousand => NUMBER_NINE_HUNDRED_THOUSAND,
-            MeroiticCursive::FractionOneTwelfth => FRACTION_ONE_TWELFTH,
-            MeroiticCursive::FractionTwoTwelfths => FRACTION_TWO_TWELFTHS,
-            MeroiticCursive::FractionThreeTwelfths => FRACTION_THREE_TWELFTHS,
-            MeroiticCursive::FractionFourTwelfths => FRACTION_FOUR_TWELFTHS,
-            MeroiticCursive::FractionFiveTwelfths => FRACTION_FIVE_TWELFTHS,
-            MeroiticCursive::FractionSixTwelfths => FRACTION_SIX_TWELFTHS,
-            MeroiticCursive::FractionSevenTwelfths => FRACTION_SEVEN_TWELFTHS,
-            MeroiticCursive::FractionEightTwelfths => FRACTION_EIGHT_TWELFTHS,
-            MeroiticCursive::FractionNineTwelfths => FRACTION_NINE_TWELFTHS,
+            MeroiticCursive::LetterA => '𐦠',
+            MeroiticCursive::LetterE => '𐦡',
+            MeroiticCursive::LetterI => '𐦢',
+            MeroiticCursive::LetterO => '𐦣',
+            MeroiticCursive::LetterYa => '𐦤',
+            MeroiticCursive::LetterWa => '𐦥',
+            MeroiticCursive::LetterBa => '𐦦',
+            MeroiticCursive::LetterPa => '𐦧',
+            MeroiticCursive::LetterMa => '𐦨',
+            MeroiticCursive::LetterNa => '𐦩',
+            MeroiticCursive::LetterNe => '𐦪',
+            MeroiticCursive::LetterRa => '𐦫',
+            MeroiticCursive::LetterLa => '𐦬',
+            MeroiticCursive::LetterKha => '𐦭',
+            MeroiticCursive::LetterHha => '𐦮',
+            MeroiticCursive::LetterSa => '𐦯',
+            MeroiticCursive::LetterArchaicSa => '𐦰',
+            MeroiticCursive::LetterSe => '𐦱',
+            MeroiticCursive::LetterKa => '𐦲',
+            MeroiticCursive::LetterQa => '𐦳',
+            MeroiticCursive::LetterTa => '𐦴',
+            MeroiticCursive::LetterTe => '𐦵',
+            MeroiticCursive::LetterTo => '𐦶',
+            MeroiticCursive::LetterDa => '𐦷',
+            MeroiticCursive::FractionElevenTwelfths => '𐦼',
+            MeroiticCursive::FractionOneHalf => '𐦽',
+            MeroiticCursive::LogogramRmt => '𐦾',
+            MeroiticCursive::LogogramImn => '𐦿',
+            MeroiticCursive::NumberOne => '𐧀',
+            MeroiticCursive::NumberTwo => '𐧁',
+            MeroiticCursive::NumberThree => '𐧂',
+            MeroiticCursive::NumberFour => '𐧃',
+            MeroiticCursive::NumberFive => '𐧄',
+            MeroiticCursive::NumberSix => '𐧅',
+            MeroiticCursive::NumberSeven => '𐧆',
+            MeroiticCursive::NumberEight => '𐧇',
+            MeroiticCursive::NumberNine => '𐧈',
+            MeroiticCursive::NumberTen => '𐧉',
+            MeroiticCursive::NumberTwenty => '𐧊',
+            MeroiticCursive::NumberThirty => '𐧋',
+            MeroiticCursive::NumberForty => '𐧌',
+            MeroiticCursive::NumberFifty => '𐧍',
+            MeroiticCursive::NumberSixty => '𐧎',
+            MeroiticCursive::NumberSeventy => '𐧏',
+            MeroiticCursive::NumberOneHundred => '𐧒',
+            MeroiticCursive::NumberTwoHundred => '𐧓',
+            MeroiticCursive::NumberThreeHundred => '𐧔',
+            MeroiticCursive::NumberFourHundred => '𐧕',
+            MeroiticCursive::NumberFiveHundred => '𐧖',
+            MeroiticCursive::NumberSixHundred => '𐧗',
+            MeroiticCursive::NumberSevenHundred => '𐧘',
+            MeroiticCursive::NumberEightHundred => '𐧙',
+            MeroiticCursive::NumberNineHundred => '𐧚',
+            MeroiticCursive::NumberOneThousand => '𐧛',
+            MeroiticCursive::NumberTwoThousand => '𐧜',
+            MeroiticCursive::NumberThreeThousand => '𐧝',
+            MeroiticCursive::NumberFourThousand => '𐧞',
+            MeroiticCursive::NumberFiveThousand => '𐧟',
+            MeroiticCursive::NumberSixThousand => '𐧠',
+            MeroiticCursive::NumberSevenThousand => '𐧡',
+            MeroiticCursive::NumberEightThousand => '𐧢',
+            MeroiticCursive::NumberNineThousand => '𐧣',
+            MeroiticCursive::NumberTenThousand => '𐧤',
+            MeroiticCursive::NumberTwentyThousand => '𐧥',
+            MeroiticCursive::NumberThirtyThousand => '𐧦',
+            MeroiticCursive::NumberFortyThousand => '𐧧',
+            MeroiticCursive::NumberFiftyThousand => '𐧨',
+            MeroiticCursive::NumberSixtyThousand => '𐧩',
+            MeroiticCursive::NumberSeventyThousand => '𐧪',
+            MeroiticCursive::NumberEightyThousand => '𐧫',
+            MeroiticCursive::NumberNinetyThousand => '𐧬',
+            MeroiticCursive::NumberOneHundredThousand => '𐧭',
+            MeroiticCursive::NumberTwoHundredThousand => '𐧮',
+            MeroiticCursive::NumberThreeHundredThousand => '𐧯',
+            MeroiticCursive::NumberFourHundredThousand => '𐧰',
+            MeroiticCursive::NumberFiveHundredThousand => '𐧱',
+            MeroiticCursive::NumberSixHundredThousand => '𐧲',
+            MeroiticCursive::NumberSevenHundredThousand => '𐧳',
+            MeroiticCursive::NumberEightHundredThousand => '𐧴',
+            MeroiticCursive::NumberNineHundredThousand => '𐧵',
+            MeroiticCursive::FractionOneTwelfth => '𐧶',
+            MeroiticCursive::FractionTwoTwelfths => '𐧷',
+            MeroiticCursive::FractionThreeTwelfths => '𐧸',
+            MeroiticCursive::FractionFourTwelfths => '𐧹',
+            MeroiticCursive::FractionFiveTwelfths => '𐧺',
+            MeroiticCursive::FractionSixTwelfths => '𐧻',
+            MeroiticCursive::FractionSevenTwelfths => '𐧼',
+            MeroiticCursive::FractionEightTwelfths => '𐧽',
+            MeroiticCursive::FractionNineTwelfths => '𐧾',
         }
     }
 }
@@ -463,97 +281,96 @@ impl Into<char> for MeroiticCursive {
 impl std::convert::TryFrom<char> for MeroiticCursive {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(MeroiticCursive::LetterA),
-            LETTER_E => Ok(MeroiticCursive::LetterE),
-            LETTER_I => Ok(MeroiticCursive::LetterI),
-            LETTER_O => Ok(MeroiticCursive::LetterO),
-            LETTER_YA => Ok(MeroiticCursive::LetterYa),
-            LETTER_WA => Ok(MeroiticCursive::LetterWa),
-            LETTER_BA => Ok(MeroiticCursive::LetterBa),
-            LETTER_PA => Ok(MeroiticCursive::LetterPa),
-            LETTER_MA => Ok(MeroiticCursive::LetterMa),
-            LETTER_NA => Ok(MeroiticCursive::LetterNa),
-            LETTER_NE => Ok(MeroiticCursive::LetterNe),
-            LETTER_RA => Ok(MeroiticCursive::LetterRa),
-            LETTER_LA => Ok(MeroiticCursive::LetterLa),
-            LETTER_KHA => Ok(MeroiticCursive::LetterKha),
-            LETTER_HHA => Ok(MeroiticCursive::LetterHha),
-            LETTER_SA => Ok(MeroiticCursive::LetterSa),
-            LETTER_ARCHAIC_SA => Ok(MeroiticCursive::LetterArchaicSa),
-            LETTER_SE => Ok(MeroiticCursive::LetterSe),
-            LETTER_KA => Ok(MeroiticCursive::LetterKa),
-            LETTER_QA => Ok(MeroiticCursive::LetterQa),
-            LETTER_TA => Ok(MeroiticCursive::LetterTa),
-            LETTER_TE => Ok(MeroiticCursive::LetterTe),
-            LETTER_TO => Ok(MeroiticCursive::LetterTo),
-            LETTER_DA => Ok(MeroiticCursive::LetterDa),
-            FRACTION_ELEVEN_TWELFTHS => Ok(MeroiticCursive::FractionElevenTwelfths),
-            FRACTION_ONE_HALF => Ok(MeroiticCursive::FractionOneHalf),
-            LOGOGRAM_RMT => Ok(MeroiticCursive::LogogramRmt),
-            LOGOGRAM_IMN => Ok(MeroiticCursive::LogogramImn),
-            NUMBER_ONE => Ok(MeroiticCursive::NumberOne),
-            NUMBER_TWO => Ok(MeroiticCursive::NumberTwo),
-            NUMBER_THREE => Ok(MeroiticCursive::NumberThree),
-            NUMBER_FOUR => Ok(MeroiticCursive::NumberFour),
-            NUMBER_FIVE => Ok(MeroiticCursive::NumberFive),
-            NUMBER_SIX => Ok(MeroiticCursive::NumberSix),
-            NUMBER_SEVEN => Ok(MeroiticCursive::NumberSeven),
-            NUMBER_EIGHT => Ok(MeroiticCursive::NumberEight),
-            NUMBER_NINE => Ok(MeroiticCursive::NumberNine),
-            NUMBER_TEN => Ok(MeroiticCursive::NumberTen),
-            NUMBER_TWENTY => Ok(MeroiticCursive::NumberTwenty),
-            NUMBER_THIRTY => Ok(MeroiticCursive::NumberThirty),
-            NUMBER_FORTY => Ok(MeroiticCursive::NumberForty),
-            NUMBER_FIFTY => Ok(MeroiticCursive::NumberFifty),
-            NUMBER_SIXTY => Ok(MeroiticCursive::NumberSixty),
-            NUMBER_SEVENTY => Ok(MeroiticCursive::NumberSeventy),
-            NUMBER_ONE_HUNDRED => Ok(MeroiticCursive::NumberOneHundred),
-            NUMBER_TWO_HUNDRED => Ok(MeroiticCursive::NumberTwoHundred),
-            NUMBER_THREE_HUNDRED => Ok(MeroiticCursive::NumberThreeHundred),
-            NUMBER_FOUR_HUNDRED => Ok(MeroiticCursive::NumberFourHundred),
-            NUMBER_FIVE_HUNDRED => Ok(MeroiticCursive::NumberFiveHundred),
-            NUMBER_SIX_HUNDRED => Ok(MeroiticCursive::NumberSixHundred),
-            NUMBER_SEVEN_HUNDRED => Ok(MeroiticCursive::NumberSevenHundred),
-            NUMBER_EIGHT_HUNDRED => Ok(MeroiticCursive::NumberEightHundred),
-            NUMBER_NINE_HUNDRED => Ok(MeroiticCursive::NumberNineHundred),
-            NUMBER_ONE_THOUSAND => Ok(MeroiticCursive::NumberOneThousand),
-            NUMBER_TWO_THOUSAND => Ok(MeroiticCursive::NumberTwoThousand),
-            NUMBER_THREE_THOUSAND => Ok(MeroiticCursive::NumberThreeThousand),
-            NUMBER_FOUR_THOUSAND => Ok(MeroiticCursive::NumberFourThousand),
-            NUMBER_FIVE_THOUSAND => Ok(MeroiticCursive::NumberFiveThousand),
-            NUMBER_SIX_THOUSAND => Ok(MeroiticCursive::NumberSixThousand),
-            NUMBER_SEVEN_THOUSAND => Ok(MeroiticCursive::NumberSevenThousand),
-            NUMBER_EIGHT_THOUSAND => Ok(MeroiticCursive::NumberEightThousand),
-            NUMBER_NINE_THOUSAND => Ok(MeroiticCursive::NumberNineThousand),
-            NUMBER_TEN_THOUSAND => Ok(MeroiticCursive::NumberTenThousand),
-            NUMBER_TWENTY_THOUSAND => Ok(MeroiticCursive::NumberTwentyThousand),
-            NUMBER_THIRTY_THOUSAND => Ok(MeroiticCursive::NumberThirtyThousand),
-            NUMBER_FORTY_THOUSAND => Ok(MeroiticCursive::NumberFortyThousand),
-            NUMBER_FIFTY_THOUSAND => Ok(MeroiticCursive::NumberFiftyThousand),
-            NUMBER_SIXTY_THOUSAND => Ok(MeroiticCursive::NumberSixtyThousand),
-            NUMBER_SEVENTY_THOUSAND => Ok(MeroiticCursive::NumberSeventyThousand),
-            NUMBER_EIGHTY_THOUSAND => Ok(MeroiticCursive::NumberEightyThousand),
-            NUMBER_NINETY_THOUSAND => Ok(MeroiticCursive::NumberNinetyThousand),
-            NUMBER_ONE_HUNDRED_THOUSAND => Ok(MeroiticCursive::NumberOneHundredThousand),
-            NUMBER_TWO_HUNDRED_THOUSAND => Ok(MeroiticCursive::NumberTwoHundredThousand),
-            NUMBER_THREE_HUNDRED_THOUSAND => Ok(MeroiticCursive::NumberThreeHundredThousand),
-            NUMBER_FOUR_HUNDRED_THOUSAND => Ok(MeroiticCursive::NumberFourHundredThousand),
-            NUMBER_FIVE_HUNDRED_THOUSAND => Ok(MeroiticCursive::NumberFiveHundredThousand),
-            NUMBER_SIX_HUNDRED_THOUSAND => Ok(MeroiticCursive::NumberSixHundredThousand),
-            NUMBER_SEVEN_HUNDRED_THOUSAND => Ok(MeroiticCursive::NumberSevenHundredThousand),
-            NUMBER_EIGHT_HUNDRED_THOUSAND => Ok(MeroiticCursive::NumberEightHundredThousand),
-            NUMBER_NINE_HUNDRED_THOUSAND => Ok(MeroiticCursive::NumberNineHundredThousand),
-            FRACTION_ONE_TWELFTH => Ok(MeroiticCursive::FractionOneTwelfth),
-            FRACTION_TWO_TWELFTHS => Ok(MeroiticCursive::FractionTwoTwelfths),
-            FRACTION_THREE_TWELFTHS => Ok(MeroiticCursive::FractionThreeTwelfths),
-            FRACTION_FOUR_TWELFTHS => Ok(MeroiticCursive::FractionFourTwelfths),
-            FRACTION_FIVE_TWELFTHS => Ok(MeroiticCursive::FractionFiveTwelfths),
-            FRACTION_SIX_TWELFTHS => Ok(MeroiticCursive::FractionSixTwelfths),
-            FRACTION_SEVEN_TWELFTHS => Ok(MeroiticCursive::FractionSevenTwelfths),
-            FRACTION_EIGHT_TWELFTHS => Ok(MeroiticCursive::FractionEightTwelfths),
-            FRACTION_NINE_TWELFTHS => Ok(MeroiticCursive::FractionNineTwelfths),
+            '𐦠' => Ok(MeroiticCursive::LetterA),
+            '𐦡' => Ok(MeroiticCursive::LetterE),
+            '𐦢' => Ok(MeroiticCursive::LetterI),
+            '𐦣' => Ok(MeroiticCursive::LetterO),
+            '𐦤' => Ok(MeroiticCursive::LetterYa),
+            '𐦥' => Ok(MeroiticCursive::LetterWa),
+            '𐦦' => Ok(MeroiticCursive::LetterBa),
+            '𐦧' => Ok(MeroiticCursive::LetterPa),
+            '𐦨' => Ok(MeroiticCursive::LetterMa),
+            '𐦩' => Ok(MeroiticCursive::LetterNa),
+            '𐦪' => Ok(MeroiticCursive::LetterNe),
+            '𐦫' => Ok(MeroiticCursive::LetterRa),
+            '𐦬' => Ok(MeroiticCursive::LetterLa),
+            '𐦭' => Ok(MeroiticCursive::LetterKha),
+            '𐦮' => Ok(MeroiticCursive::LetterHha),
+            '𐦯' => Ok(MeroiticCursive::LetterSa),
+            '𐦰' => Ok(MeroiticCursive::LetterArchaicSa),
+            '𐦱' => Ok(MeroiticCursive::LetterSe),
+            '𐦲' => Ok(MeroiticCursive::LetterKa),
+            '𐦳' => Ok(MeroiticCursive::LetterQa),
+            '𐦴' => Ok(MeroiticCursive::LetterTa),
+            '𐦵' => Ok(MeroiticCursive::LetterTe),
+            '𐦶' => Ok(MeroiticCursive::LetterTo),
+            '𐦷' => Ok(MeroiticCursive::LetterDa),
+            '𐦼' => Ok(MeroiticCursive::FractionElevenTwelfths),
+            '𐦽' => Ok(MeroiticCursive::FractionOneHalf),
+            '𐦾' => Ok(MeroiticCursive::LogogramRmt),
+            '𐦿' => Ok(MeroiticCursive::LogogramImn),
+            '𐧀' => Ok(MeroiticCursive::NumberOne),
+            '𐧁' => Ok(MeroiticCursive::NumberTwo),
+            '𐧂' => Ok(MeroiticCursive::NumberThree),
+            '𐧃' => Ok(MeroiticCursive::NumberFour),
+            '𐧄' => Ok(MeroiticCursive::NumberFive),
+            '𐧅' => Ok(MeroiticCursive::NumberSix),
+            '𐧆' => Ok(MeroiticCursive::NumberSeven),
+            '𐧇' => Ok(MeroiticCursive::NumberEight),
+            '𐧈' => Ok(MeroiticCursive::NumberNine),
+            '𐧉' => Ok(MeroiticCursive::NumberTen),
+            '𐧊' => Ok(MeroiticCursive::NumberTwenty),
+            '𐧋' => Ok(MeroiticCursive::NumberThirty),
+            '𐧌' => Ok(MeroiticCursive::NumberForty),
+            '𐧍' => Ok(MeroiticCursive::NumberFifty),
+            '𐧎' => Ok(MeroiticCursive::NumberSixty),
+            '𐧏' => Ok(MeroiticCursive::NumberSeventy),
+            '𐧒' => Ok(MeroiticCursive::NumberOneHundred),
+            '𐧓' => Ok(MeroiticCursive::NumberTwoHundred),
+            '𐧔' => Ok(MeroiticCursive::NumberThreeHundred),
+            '𐧕' => Ok(MeroiticCursive::NumberFourHundred),
+            '𐧖' => Ok(MeroiticCursive::NumberFiveHundred),
+            '𐧗' => Ok(MeroiticCursive::NumberSixHundred),
+            '𐧘' => Ok(MeroiticCursive::NumberSevenHundred),
+            '𐧙' => Ok(MeroiticCursive::NumberEightHundred),
+            '𐧚' => Ok(MeroiticCursive::NumberNineHundred),
+            '𐧛' => Ok(MeroiticCursive::NumberOneThousand),
+            '𐧜' => Ok(MeroiticCursive::NumberTwoThousand),
+            '𐧝' => Ok(MeroiticCursive::NumberThreeThousand),
+            '𐧞' => Ok(MeroiticCursive::NumberFourThousand),
+            '𐧟' => Ok(MeroiticCursive::NumberFiveThousand),
+            '𐧠' => Ok(MeroiticCursive::NumberSixThousand),
+            '𐧡' => Ok(MeroiticCursive::NumberSevenThousand),
+            '𐧢' => Ok(MeroiticCursive::NumberEightThousand),
+            '𐧣' => Ok(MeroiticCursive::NumberNineThousand),
+            '𐧤' => Ok(MeroiticCursive::NumberTenThousand),
+            '𐧥' => Ok(MeroiticCursive::NumberTwentyThousand),
+            '𐧦' => Ok(MeroiticCursive::NumberThirtyThousand),
+            '𐧧' => Ok(MeroiticCursive::NumberFortyThousand),
+            '𐧨' => Ok(MeroiticCursive::NumberFiftyThousand),
+            '𐧩' => Ok(MeroiticCursive::NumberSixtyThousand),
+            '𐧪' => Ok(MeroiticCursive::NumberSeventyThousand),
+            '𐧫' => Ok(MeroiticCursive::NumberEightyThousand),
+            '𐧬' => Ok(MeroiticCursive::NumberNinetyThousand),
+            '𐧭' => Ok(MeroiticCursive::NumberOneHundredThousand),
+            '𐧮' => Ok(MeroiticCursive::NumberTwoHundredThousand),
+            '𐧯' => Ok(MeroiticCursive::NumberThreeHundredThousand),
+            '𐧰' => Ok(MeroiticCursive::NumberFourHundredThousand),
+            '𐧱' => Ok(MeroiticCursive::NumberFiveHundredThousand),
+            '𐧲' => Ok(MeroiticCursive::NumberSixHundredThousand),
+            '𐧳' => Ok(MeroiticCursive::NumberSevenHundredThousand),
+            '𐧴' => Ok(MeroiticCursive::NumberEightHundredThousand),
+            '𐧵' => Ok(MeroiticCursive::NumberNineHundredThousand),
+            '𐧶' => Ok(MeroiticCursive::FractionOneTwelfth),
+            '𐧷' => Ok(MeroiticCursive::FractionTwoTwelfths),
+            '𐧸' => Ok(MeroiticCursive::FractionThreeTwelfths),
+            '𐧹' => Ok(MeroiticCursive::FractionFourTwelfths),
+            '𐧺' => Ok(MeroiticCursive::FractionFiveTwelfths),
+            '𐧻' => Ok(MeroiticCursive::FractionSixTwelfths),
+            '𐧼' => Ok(MeroiticCursive::FractionSevenTwelfths),
+            '𐧽' => Ok(MeroiticCursive::FractionEightTwelfths),
+            '𐧾' => Ok(MeroiticCursive::FractionNineTwelfths),
             _ => Err(()),
         }
     }

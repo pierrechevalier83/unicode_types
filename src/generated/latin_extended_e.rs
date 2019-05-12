@@ -1,118 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{ab30}: 'ꬰ'
-    pub const LATIN_SMALL_LETTER_BARRED_ALPHA: char = 'ꬰ';
-    /// \u{ab31}: 'ꬱ'
-    pub const LATIN_SMALL_LETTER_A_REVERSED_DASH_SCHWA: char = 'ꬱ';
-    /// \u{ab32}: 'ꬲ'
-    pub const LATIN_SMALL_LETTER_BLACKLETTER_E: char = 'ꬲ';
-    /// \u{ab33}: 'ꬳ'
-    pub const LATIN_SMALL_LETTER_BARRED_E: char = 'ꬳ';
-    /// \u{ab34}: 'ꬴ'
-    pub const LATIN_SMALL_LETTER_E_WITH_FLOURISH: char = 'ꬴ';
-    /// \u{ab35}: 'ꬵ'
-    pub const LATIN_SMALL_LETTER_LENIS_F: char = 'ꬵ';
-    /// \u{ab36}: 'ꬶ'
-    pub const LATIN_SMALL_LETTER_SCRIPT_G_WITH_CROSSED_DASH_TAIL: char = 'ꬶ';
-    /// \u{ab37}: 'ꬷ'
-    pub const LATIN_SMALL_LETTER_L_WITH_INVERTED_LAZY_S: char = 'ꬷ';
-    /// \u{ab38}: 'ꬸ'
-    pub const LATIN_SMALL_LETTER_L_WITH_DOUBLE_MIDDLE_TILDE: char = 'ꬸ';
-    /// \u{ab39}: 'ꬹ'
-    pub const LATIN_SMALL_LETTER_L_WITH_MIDDLE_RING: char = 'ꬹ';
-    /// \u{ab3a}: 'ꬺ'
-    pub const LATIN_SMALL_LETTER_M_WITH_CROSSED_DASH_TAIL: char = 'ꬺ';
-    /// \u{ab3b}: 'ꬻ'
-    pub const LATIN_SMALL_LETTER_N_WITH_CROSSED_DASH_TAIL: char = 'ꬻ';
-    /// \u{ab3c}: 'ꬼ'
-    pub const LATIN_SMALL_LETTER_ENG_WITH_CROSSED_DASH_TAIL: char = 'ꬼ';
-    /// \u{ab3d}: 'ꬽ'
-    pub const LATIN_SMALL_LETTER_BLACKLETTER_O: char = 'ꬽ';
-    /// \u{ab3e}: 'ꬾ'
-    pub const LATIN_SMALL_LETTER_BLACKLETTER_O_WITH_STROKE: char = 'ꬾ';
-    /// \u{ab3f}: 'ꬿ'
-    pub const LATIN_SMALL_LETTER_OPEN_O_WITH_STROKE: char = 'ꬿ';
-    /// \u{ab40}: 'ꭀ'
-    pub const LATIN_SMALL_LETTER_INVERTED_OE: char = 'ꭀ';
-    /// \u{ab41}: 'ꭁ'
-    pub const LATIN_SMALL_LETTER_TURNED_OE_WITH_STROKE: char = 'ꭁ';
-    /// \u{ab42}: 'ꭂ'
-    pub const LATIN_SMALL_LETTER_TURNED_OE_WITH_HORIZONTAL_STROKE: char = 'ꭂ';
-    /// \u{ab43}: 'ꭃ'
-    pub const LATIN_SMALL_LETTER_TURNED_O_OPEN_DASH_O: char = 'ꭃ';
-    /// \u{ab44}: 'ꭄ'
-    pub const LATIN_SMALL_LETTER_TURNED_O_OPEN_DASH_O_WITH_STROKE: char = 'ꭄ';
-    /// \u{ab45}: 'ꭅ'
-    pub const LATIN_SMALL_LETTER_STIRRUP_R: char = 'ꭅ';
-    /// \u{ab46}: 'ꭆ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_R_WITH_RIGHT_LEG: char = 'ꭆ';
-    /// \u{ab47}: 'ꭇ'
-    pub const LATIN_SMALL_LETTER_R_WITHOUT_HANDLE: char = 'ꭇ';
-    /// \u{ab48}: 'ꭈ'
-    pub const LATIN_SMALL_LETTER_DOUBLE_R: char = 'ꭈ';
-    /// \u{ab49}: 'ꭉ'
-    pub const LATIN_SMALL_LETTER_R_WITH_CROSSED_DASH_TAIL: char = 'ꭉ';
-    /// \u{ab4a}: 'ꭊ'
-    pub const LATIN_SMALL_LETTER_DOUBLE_R_WITH_CROSSED_DASH_TAIL: char = 'ꭊ';
-    /// \u{ab4b}: 'ꭋ'
-    pub const LATIN_SMALL_LETTER_SCRIPT_R: char = 'ꭋ';
-    /// \u{ab4c}: 'ꭌ'
-    pub const LATIN_SMALL_LETTER_SCRIPT_R_WITH_RING: char = 'ꭌ';
-    /// \u{ab4d}: 'ꭍ'
-    pub const LATIN_SMALL_LETTER_BASELINE_ESH: char = 'ꭍ';
-    /// \u{ab4e}: 'ꭎ'
-    pub const LATIN_SMALL_LETTER_U_WITH_SHORT_RIGHT_LEG: char = 'ꭎ';
-    /// \u{ab4f}: 'ꭏ'
-    pub const LATIN_SMALL_LETTER_U_BAR_WITH_SHORT_RIGHT_LEG: char = 'ꭏ';
-    /// \u{ab50}: 'ꭐ'
-    pub const LATIN_SMALL_LETTER_UI: char = 'ꭐ';
-    /// \u{ab51}: 'ꭑ'
-    pub const LATIN_SMALL_LETTER_TURNED_UI: char = 'ꭑ';
-    /// \u{ab52}: 'ꭒ'
-    pub const LATIN_SMALL_LETTER_U_WITH_LEFT_HOOK: char = 'ꭒ';
-    /// \u{ab53}: 'ꭓ'
-    pub const LATIN_SMALL_LETTER_CHI: char = 'ꭓ';
-    /// \u{ab54}: 'ꭔ'
-    pub const LATIN_SMALL_LETTER_CHI_WITH_LOW_RIGHT_RING: char = 'ꭔ';
-    /// \u{ab55}: 'ꭕ'
-    pub const LATIN_SMALL_LETTER_CHI_WITH_LOW_LEFT_SERIF: char = 'ꭕ';
-    /// \u{ab56}: 'ꭖ'
-    pub const LATIN_SMALL_LETTER_X_WITH_LOW_RIGHT_RING: char = 'ꭖ';
-    /// \u{ab57}: 'ꭗ'
-    pub const LATIN_SMALL_LETTER_X_WITH_LONG_LEFT_LEG: char = 'ꭗ';
-    /// \u{ab58}: 'ꭘ'
-    pub const LATIN_SMALL_LETTER_X_WITH_LONG_LEFT_LEG_AND_LOW_RIGHT_RING: char = 'ꭘ';
-    /// \u{ab59}: 'ꭙ'
-    pub const LATIN_SMALL_LETTER_X_WITH_LONG_LEFT_LEG_WITH_SERIF: char = 'ꭙ';
-    /// \u{ab5a}: 'ꭚ'
-    pub const LATIN_SMALL_LETTER_Y_WITH_SHORT_RIGHT_LEG: char = 'ꭚ';
-    /// \u{ab5b}: '꭛'
-    pub const MODIFIER_BREVE_WITH_INVERTED_BREVE: char = '꭛';
-    /// \u{ab5c}: 'ꭜ'
-    pub const MODIFIER_LETTER_SMALL_HENG: char = 'ꭜ';
-    /// \u{ab5d}: 'ꭝ'
-    pub const MODIFIER_LETTER_SMALL_L_WITH_INVERTED_LAZY_S: char = 'ꭝ';
-    /// \u{ab5e}: 'ꭞ'
-    pub const MODIFIER_LETTER_SMALL_L_WITH_MIDDLE_TILDE: char = 'ꭞ';
-    /// \u{ab5f}: 'ꭟ'
-    pub const MODIFIER_LETTER_SMALL_U_WITH_LEFT_HOOK: char = 'ꭟ';
-    /// \u{ab60}: 'ꭠ'
-    pub const LATIN_SMALL_LETTER_SAKHA_YAT: char = 'ꭠ';
-    /// \u{ab61}: 'ꭡ'
-    pub const LATIN_SMALL_LETTER_IOTIFIED_E: char = 'ꭡ';
-    /// \u{ab62}: 'ꭢ'
-    pub const LATIN_SMALL_LETTER_OPEN_OE: char = 'ꭢ';
-    /// \u{ab63}: 'ꭣ'
-    pub const LATIN_SMALL_LETTER_UO: char = 'ꭣ';
-    /// \u{ab64}: 'ꭤ'
-    pub const LATIN_SMALL_LETTER_INVERTED_ALPHA: char = 'ꭤ';
-    /// \u{ab65}: 'ꭥ'
-    pub const GREEK_LETTER_SMALL_CAPITAL_OMEGA: char = 'ꭥ';
-    /// \u{ab66}: 'ꭦ'
-    pub const LATIN_SMALL_LETTER_DZ_DIGRAPH_WITH_RETROFLEX_HOOK: char = 'ꭦ';
-    /// \u{ab67}: 'ꭧ'
-    pub const LATIN_SMALL_LETTER_TS_DIGRAPH_WITH_RETROFLEX_HOOK: char = 'ꭧ';
-}
 
 /// An enum to represent all characters in the LatinExtendedE block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -233,64 +118,63 @@ pub enum LatinExtendedE {
 
 impl Into<char> for LatinExtendedE {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            LatinExtendedE::LatinSmallLetterBarredAlpha => LATIN_SMALL_LETTER_BARRED_ALPHA,
-            LatinExtendedE::LatinSmallLetterAReversedDashSchwa => LATIN_SMALL_LETTER_A_REVERSED_DASH_SCHWA,
-            LatinExtendedE::LatinSmallLetterBlackletterE => LATIN_SMALL_LETTER_BLACKLETTER_E,
-            LatinExtendedE::LatinSmallLetterBarredE => LATIN_SMALL_LETTER_BARRED_E,
-            LatinExtendedE::LatinSmallLetterEWithFlourish => LATIN_SMALL_LETTER_E_WITH_FLOURISH,
-            LatinExtendedE::LatinSmallLetterLenisF => LATIN_SMALL_LETTER_LENIS_F,
-            LatinExtendedE::LatinSmallLetterScriptGWithCrossedDashTail => LATIN_SMALL_LETTER_SCRIPT_G_WITH_CROSSED_DASH_TAIL,
-            LatinExtendedE::LatinSmallLetterLWithInvertedLazyS => LATIN_SMALL_LETTER_L_WITH_INVERTED_LAZY_S,
-            LatinExtendedE::LatinSmallLetterLWithDoubleMiddleTilde => LATIN_SMALL_LETTER_L_WITH_DOUBLE_MIDDLE_TILDE,
-            LatinExtendedE::LatinSmallLetterLWithMiddleRing => LATIN_SMALL_LETTER_L_WITH_MIDDLE_RING,
-            LatinExtendedE::LatinSmallLetterMWithCrossedDashTail => LATIN_SMALL_LETTER_M_WITH_CROSSED_DASH_TAIL,
-            LatinExtendedE::LatinSmallLetterNWithCrossedDashTail => LATIN_SMALL_LETTER_N_WITH_CROSSED_DASH_TAIL,
-            LatinExtendedE::LatinSmallLetterEngWithCrossedDashTail => LATIN_SMALL_LETTER_ENG_WITH_CROSSED_DASH_TAIL,
-            LatinExtendedE::LatinSmallLetterBlackletterO => LATIN_SMALL_LETTER_BLACKLETTER_O,
-            LatinExtendedE::LatinSmallLetterBlackletterOWithStroke => LATIN_SMALL_LETTER_BLACKLETTER_O_WITH_STROKE,
-            LatinExtendedE::LatinSmallLetterOpenOWithStroke => LATIN_SMALL_LETTER_OPEN_O_WITH_STROKE,
-            LatinExtendedE::LatinSmallLetterInvertedOe => LATIN_SMALL_LETTER_INVERTED_OE,
-            LatinExtendedE::LatinSmallLetterTurnedOeWithStroke => LATIN_SMALL_LETTER_TURNED_OE_WITH_STROKE,
-            LatinExtendedE::LatinSmallLetterTurnedOeWithHorizontalStroke => LATIN_SMALL_LETTER_TURNED_OE_WITH_HORIZONTAL_STROKE,
-            LatinExtendedE::LatinSmallLetterTurnedOOpenDashO => LATIN_SMALL_LETTER_TURNED_O_OPEN_DASH_O,
-            LatinExtendedE::LatinSmallLetterTurnedOOpenDashOWithStroke => LATIN_SMALL_LETTER_TURNED_O_OPEN_DASH_O_WITH_STROKE,
-            LatinExtendedE::LatinSmallLetterStirrupR => LATIN_SMALL_LETTER_STIRRUP_R,
-            LatinExtendedE::LatinLetterSmallCapitalRWithRightLeg => LATIN_LETTER_SMALL_CAPITAL_R_WITH_RIGHT_LEG,
-            LatinExtendedE::LatinSmallLetterRWithoutHandle => LATIN_SMALL_LETTER_R_WITHOUT_HANDLE,
-            LatinExtendedE::LatinSmallLetterDoubleR => LATIN_SMALL_LETTER_DOUBLE_R,
-            LatinExtendedE::LatinSmallLetterRWithCrossedDashTail => LATIN_SMALL_LETTER_R_WITH_CROSSED_DASH_TAIL,
-            LatinExtendedE::LatinSmallLetterDoubleRWithCrossedDashTail => LATIN_SMALL_LETTER_DOUBLE_R_WITH_CROSSED_DASH_TAIL,
-            LatinExtendedE::LatinSmallLetterScriptR => LATIN_SMALL_LETTER_SCRIPT_R,
-            LatinExtendedE::LatinSmallLetterScriptRWithRing => LATIN_SMALL_LETTER_SCRIPT_R_WITH_RING,
-            LatinExtendedE::LatinSmallLetterBaselineEsh => LATIN_SMALL_LETTER_BASELINE_ESH,
-            LatinExtendedE::LatinSmallLetterUWithShortRightLeg => LATIN_SMALL_LETTER_U_WITH_SHORT_RIGHT_LEG,
-            LatinExtendedE::LatinSmallLetterUBarWithShortRightLeg => LATIN_SMALL_LETTER_U_BAR_WITH_SHORT_RIGHT_LEG,
-            LatinExtendedE::LatinSmallLetterUi => LATIN_SMALL_LETTER_UI,
-            LatinExtendedE::LatinSmallLetterTurnedUi => LATIN_SMALL_LETTER_TURNED_UI,
-            LatinExtendedE::LatinSmallLetterUWithLeftHook => LATIN_SMALL_LETTER_U_WITH_LEFT_HOOK,
-            LatinExtendedE::LatinSmallLetterChi => LATIN_SMALL_LETTER_CHI,
-            LatinExtendedE::LatinSmallLetterChiWithLowRightRing => LATIN_SMALL_LETTER_CHI_WITH_LOW_RIGHT_RING,
-            LatinExtendedE::LatinSmallLetterChiWithLowLeftSerif => LATIN_SMALL_LETTER_CHI_WITH_LOW_LEFT_SERIF,
-            LatinExtendedE::LatinSmallLetterXWithLowRightRing => LATIN_SMALL_LETTER_X_WITH_LOW_RIGHT_RING,
-            LatinExtendedE::LatinSmallLetterXWithLongLeftLeg => LATIN_SMALL_LETTER_X_WITH_LONG_LEFT_LEG,
-            LatinExtendedE::LatinSmallLetterXWithLongLeftLegAndLowRightRing => LATIN_SMALL_LETTER_X_WITH_LONG_LEFT_LEG_AND_LOW_RIGHT_RING,
-            LatinExtendedE::LatinSmallLetterXWithLongLeftLegWithSerif => LATIN_SMALL_LETTER_X_WITH_LONG_LEFT_LEG_WITH_SERIF,
-            LatinExtendedE::LatinSmallLetterYWithShortRightLeg => LATIN_SMALL_LETTER_Y_WITH_SHORT_RIGHT_LEG,
-            LatinExtendedE::ModifierBreveWithInvertedBreve => MODIFIER_BREVE_WITH_INVERTED_BREVE,
-            LatinExtendedE::ModifierLetterSmallHeng => MODIFIER_LETTER_SMALL_HENG,
-            LatinExtendedE::ModifierLetterSmallLWithInvertedLazyS => MODIFIER_LETTER_SMALL_L_WITH_INVERTED_LAZY_S,
-            LatinExtendedE::ModifierLetterSmallLWithMiddleTilde => MODIFIER_LETTER_SMALL_L_WITH_MIDDLE_TILDE,
-            LatinExtendedE::ModifierLetterSmallUWithLeftHook => MODIFIER_LETTER_SMALL_U_WITH_LEFT_HOOK,
-            LatinExtendedE::LatinSmallLetterSakhaYat => LATIN_SMALL_LETTER_SAKHA_YAT,
-            LatinExtendedE::LatinSmallLetterIotifiedE => LATIN_SMALL_LETTER_IOTIFIED_E,
-            LatinExtendedE::LatinSmallLetterOpenOe => LATIN_SMALL_LETTER_OPEN_OE,
-            LatinExtendedE::LatinSmallLetterUo => LATIN_SMALL_LETTER_UO,
-            LatinExtendedE::LatinSmallLetterInvertedAlpha => LATIN_SMALL_LETTER_INVERTED_ALPHA,
-            LatinExtendedE::GreekLetterSmallCapitalOmega => GREEK_LETTER_SMALL_CAPITAL_OMEGA,
-            LatinExtendedE::LatinSmallLetterDzDigraphWithRetroflexHook => LATIN_SMALL_LETTER_DZ_DIGRAPH_WITH_RETROFLEX_HOOK,
-            LatinExtendedE::LatinSmallLetterTsDigraphWithRetroflexHook => LATIN_SMALL_LETTER_TS_DIGRAPH_WITH_RETROFLEX_HOOK,
+            LatinExtendedE::LatinSmallLetterBarredAlpha => 'ꬰ',
+            LatinExtendedE::LatinSmallLetterAReversedDashSchwa => 'ꬱ',
+            LatinExtendedE::LatinSmallLetterBlackletterE => 'ꬲ',
+            LatinExtendedE::LatinSmallLetterBarredE => 'ꬳ',
+            LatinExtendedE::LatinSmallLetterEWithFlourish => 'ꬴ',
+            LatinExtendedE::LatinSmallLetterLenisF => 'ꬵ',
+            LatinExtendedE::LatinSmallLetterScriptGWithCrossedDashTail => 'ꬶ',
+            LatinExtendedE::LatinSmallLetterLWithInvertedLazyS => 'ꬷ',
+            LatinExtendedE::LatinSmallLetterLWithDoubleMiddleTilde => 'ꬸ',
+            LatinExtendedE::LatinSmallLetterLWithMiddleRing => 'ꬹ',
+            LatinExtendedE::LatinSmallLetterMWithCrossedDashTail => 'ꬺ',
+            LatinExtendedE::LatinSmallLetterNWithCrossedDashTail => 'ꬻ',
+            LatinExtendedE::LatinSmallLetterEngWithCrossedDashTail => 'ꬼ',
+            LatinExtendedE::LatinSmallLetterBlackletterO => 'ꬽ',
+            LatinExtendedE::LatinSmallLetterBlackletterOWithStroke => 'ꬾ',
+            LatinExtendedE::LatinSmallLetterOpenOWithStroke => 'ꬿ',
+            LatinExtendedE::LatinSmallLetterInvertedOe => 'ꭀ',
+            LatinExtendedE::LatinSmallLetterTurnedOeWithStroke => 'ꭁ',
+            LatinExtendedE::LatinSmallLetterTurnedOeWithHorizontalStroke => 'ꭂ',
+            LatinExtendedE::LatinSmallLetterTurnedOOpenDashO => 'ꭃ',
+            LatinExtendedE::LatinSmallLetterTurnedOOpenDashOWithStroke => 'ꭄ',
+            LatinExtendedE::LatinSmallLetterStirrupR => 'ꭅ',
+            LatinExtendedE::LatinLetterSmallCapitalRWithRightLeg => 'ꭆ',
+            LatinExtendedE::LatinSmallLetterRWithoutHandle => 'ꭇ',
+            LatinExtendedE::LatinSmallLetterDoubleR => 'ꭈ',
+            LatinExtendedE::LatinSmallLetterRWithCrossedDashTail => 'ꭉ',
+            LatinExtendedE::LatinSmallLetterDoubleRWithCrossedDashTail => 'ꭊ',
+            LatinExtendedE::LatinSmallLetterScriptR => 'ꭋ',
+            LatinExtendedE::LatinSmallLetterScriptRWithRing => 'ꭌ',
+            LatinExtendedE::LatinSmallLetterBaselineEsh => 'ꭍ',
+            LatinExtendedE::LatinSmallLetterUWithShortRightLeg => 'ꭎ',
+            LatinExtendedE::LatinSmallLetterUBarWithShortRightLeg => 'ꭏ',
+            LatinExtendedE::LatinSmallLetterUi => 'ꭐ',
+            LatinExtendedE::LatinSmallLetterTurnedUi => 'ꭑ',
+            LatinExtendedE::LatinSmallLetterUWithLeftHook => 'ꭒ',
+            LatinExtendedE::LatinSmallLetterChi => 'ꭓ',
+            LatinExtendedE::LatinSmallLetterChiWithLowRightRing => 'ꭔ',
+            LatinExtendedE::LatinSmallLetterChiWithLowLeftSerif => 'ꭕ',
+            LatinExtendedE::LatinSmallLetterXWithLowRightRing => 'ꭖ',
+            LatinExtendedE::LatinSmallLetterXWithLongLeftLeg => 'ꭗ',
+            LatinExtendedE::LatinSmallLetterXWithLongLeftLegAndLowRightRing => 'ꭘ',
+            LatinExtendedE::LatinSmallLetterXWithLongLeftLegWithSerif => 'ꭙ',
+            LatinExtendedE::LatinSmallLetterYWithShortRightLeg => 'ꭚ',
+            LatinExtendedE::ModifierBreveWithInvertedBreve => '꭛',
+            LatinExtendedE::ModifierLetterSmallHeng => 'ꭜ',
+            LatinExtendedE::ModifierLetterSmallLWithInvertedLazyS => 'ꭝ',
+            LatinExtendedE::ModifierLetterSmallLWithMiddleTilde => 'ꭞ',
+            LatinExtendedE::ModifierLetterSmallUWithLeftHook => 'ꭟ',
+            LatinExtendedE::LatinSmallLetterSakhaYat => 'ꭠ',
+            LatinExtendedE::LatinSmallLetterIotifiedE => 'ꭡ',
+            LatinExtendedE::LatinSmallLetterOpenOe => 'ꭢ',
+            LatinExtendedE::LatinSmallLetterUo => 'ꭣ',
+            LatinExtendedE::LatinSmallLetterInvertedAlpha => 'ꭤ',
+            LatinExtendedE::GreekLetterSmallCapitalOmega => 'ꭥ',
+            LatinExtendedE::LatinSmallLetterDzDigraphWithRetroflexHook => 'ꭦ',
+            LatinExtendedE::LatinSmallLetterTsDigraphWithRetroflexHook => 'ꭧ',
         }
     }
 }
@@ -298,64 +182,63 @@ impl Into<char> for LatinExtendedE {
 impl std::convert::TryFrom<char> for LatinExtendedE {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LATIN_SMALL_LETTER_BARRED_ALPHA => Ok(LatinExtendedE::LatinSmallLetterBarredAlpha),
-            LATIN_SMALL_LETTER_A_REVERSED_DASH_SCHWA => Ok(LatinExtendedE::LatinSmallLetterAReversedDashSchwa),
-            LATIN_SMALL_LETTER_BLACKLETTER_E => Ok(LatinExtendedE::LatinSmallLetterBlackletterE),
-            LATIN_SMALL_LETTER_BARRED_E => Ok(LatinExtendedE::LatinSmallLetterBarredE),
-            LATIN_SMALL_LETTER_E_WITH_FLOURISH => Ok(LatinExtendedE::LatinSmallLetterEWithFlourish),
-            LATIN_SMALL_LETTER_LENIS_F => Ok(LatinExtendedE::LatinSmallLetterLenisF),
-            LATIN_SMALL_LETTER_SCRIPT_G_WITH_CROSSED_DASH_TAIL => Ok(LatinExtendedE::LatinSmallLetterScriptGWithCrossedDashTail),
-            LATIN_SMALL_LETTER_L_WITH_INVERTED_LAZY_S => Ok(LatinExtendedE::LatinSmallLetterLWithInvertedLazyS),
-            LATIN_SMALL_LETTER_L_WITH_DOUBLE_MIDDLE_TILDE => Ok(LatinExtendedE::LatinSmallLetterLWithDoubleMiddleTilde),
-            LATIN_SMALL_LETTER_L_WITH_MIDDLE_RING => Ok(LatinExtendedE::LatinSmallLetterLWithMiddleRing),
-            LATIN_SMALL_LETTER_M_WITH_CROSSED_DASH_TAIL => Ok(LatinExtendedE::LatinSmallLetterMWithCrossedDashTail),
-            LATIN_SMALL_LETTER_N_WITH_CROSSED_DASH_TAIL => Ok(LatinExtendedE::LatinSmallLetterNWithCrossedDashTail),
-            LATIN_SMALL_LETTER_ENG_WITH_CROSSED_DASH_TAIL => Ok(LatinExtendedE::LatinSmallLetterEngWithCrossedDashTail),
-            LATIN_SMALL_LETTER_BLACKLETTER_O => Ok(LatinExtendedE::LatinSmallLetterBlackletterO),
-            LATIN_SMALL_LETTER_BLACKLETTER_O_WITH_STROKE => Ok(LatinExtendedE::LatinSmallLetterBlackletterOWithStroke),
-            LATIN_SMALL_LETTER_OPEN_O_WITH_STROKE => Ok(LatinExtendedE::LatinSmallLetterOpenOWithStroke),
-            LATIN_SMALL_LETTER_INVERTED_OE => Ok(LatinExtendedE::LatinSmallLetterInvertedOe),
-            LATIN_SMALL_LETTER_TURNED_OE_WITH_STROKE => Ok(LatinExtendedE::LatinSmallLetterTurnedOeWithStroke),
-            LATIN_SMALL_LETTER_TURNED_OE_WITH_HORIZONTAL_STROKE => Ok(LatinExtendedE::LatinSmallLetterTurnedOeWithHorizontalStroke),
-            LATIN_SMALL_LETTER_TURNED_O_OPEN_DASH_O => Ok(LatinExtendedE::LatinSmallLetterTurnedOOpenDashO),
-            LATIN_SMALL_LETTER_TURNED_O_OPEN_DASH_O_WITH_STROKE => Ok(LatinExtendedE::LatinSmallLetterTurnedOOpenDashOWithStroke),
-            LATIN_SMALL_LETTER_STIRRUP_R => Ok(LatinExtendedE::LatinSmallLetterStirrupR),
-            LATIN_LETTER_SMALL_CAPITAL_R_WITH_RIGHT_LEG => Ok(LatinExtendedE::LatinLetterSmallCapitalRWithRightLeg),
-            LATIN_SMALL_LETTER_R_WITHOUT_HANDLE => Ok(LatinExtendedE::LatinSmallLetterRWithoutHandle),
-            LATIN_SMALL_LETTER_DOUBLE_R => Ok(LatinExtendedE::LatinSmallLetterDoubleR),
-            LATIN_SMALL_LETTER_R_WITH_CROSSED_DASH_TAIL => Ok(LatinExtendedE::LatinSmallLetterRWithCrossedDashTail),
-            LATIN_SMALL_LETTER_DOUBLE_R_WITH_CROSSED_DASH_TAIL => Ok(LatinExtendedE::LatinSmallLetterDoubleRWithCrossedDashTail),
-            LATIN_SMALL_LETTER_SCRIPT_R => Ok(LatinExtendedE::LatinSmallLetterScriptR),
-            LATIN_SMALL_LETTER_SCRIPT_R_WITH_RING => Ok(LatinExtendedE::LatinSmallLetterScriptRWithRing),
-            LATIN_SMALL_LETTER_BASELINE_ESH => Ok(LatinExtendedE::LatinSmallLetterBaselineEsh),
-            LATIN_SMALL_LETTER_U_WITH_SHORT_RIGHT_LEG => Ok(LatinExtendedE::LatinSmallLetterUWithShortRightLeg),
-            LATIN_SMALL_LETTER_U_BAR_WITH_SHORT_RIGHT_LEG => Ok(LatinExtendedE::LatinSmallLetterUBarWithShortRightLeg),
-            LATIN_SMALL_LETTER_UI => Ok(LatinExtendedE::LatinSmallLetterUi),
-            LATIN_SMALL_LETTER_TURNED_UI => Ok(LatinExtendedE::LatinSmallLetterTurnedUi),
-            LATIN_SMALL_LETTER_U_WITH_LEFT_HOOK => Ok(LatinExtendedE::LatinSmallLetterUWithLeftHook),
-            LATIN_SMALL_LETTER_CHI => Ok(LatinExtendedE::LatinSmallLetterChi),
-            LATIN_SMALL_LETTER_CHI_WITH_LOW_RIGHT_RING => Ok(LatinExtendedE::LatinSmallLetterChiWithLowRightRing),
-            LATIN_SMALL_LETTER_CHI_WITH_LOW_LEFT_SERIF => Ok(LatinExtendedE::LatinSmallLetterChiWithLowLeftSerif),
-            LATIN_SMALL_LETTER_X_WITH_LOW_RIGHT_RING => Ok(LatinExtendedE::LatinSmallLetterXWithLowRightRing),
-            LATIN_SMALL_LETTER_X_WITH_LONG_LEFT_LEG => Ok(LatinExtendedE::LatinSmallLetterXWithLongLeftLeg),
-            LATIN_SMALL_LETTER_X_WITH_LONG_LEFT_LEG_AND_LOW_RIGHT_RING => Ok(LatinExtendedE::LatinSmallLetterXWithLongLeftLegAndLowRightRing),
-            LATIN_SMALL_LETTER_X_WITH_LONG_LEFT_LEG_WITH_SERIF => Ok(LatinExtendedE::LatinSmallLetterXWithLongLeftLegWithSerif),
-            LATIN_SMALL_LETTER_Y_WITH_SHORT_RIGHT_LEG => Ok(LatinExtendedE::LatinSmallLetterYWithShortRightLeg),
-            MODIFIER_BREVE_WITH_INVERTED_BREVE => Ok(LatinExtendedE::ModifierBreveWithInvertedBreve),
-            MODIFIER_LETTER_SMALL_HENG => Ok(LatinExtendedE::ModifierLetterSmallHeng),
-            MODIFIER_LETTER_SMALL_L_WITH_INVERTED_LAZY_S => Ok(LatinExtendedE::ModifierLetterSmallLWithInvertedLazyS),
-            MODIFIER_LETTER_SMALL_L_WITH_MIDDLE_TILDE => Ok(LatinExtendedE::ModifierLetterSmallLWithMiddleTilde),
-            MODIFIER_LETTER_SMALL_U_WITH_LEFT_HOOK => Ok(LatinExtendedE::ModifierLetterSmallUWithLeftHook),
-            LATIN_SMALL_LETTER_SAKHA_YAT => Ok(LatinExtendedE::LatinSmallLetterSakhaYat),
-            LATIN_SMALL_LETTER_IOTIFIED_E => Ok(LatinExtendedE::LatinSmallLetterIotifiedE),
-            LATIN_SMALL_LETTER_OPEN_OE => Ok(LatinExtendedE::LatinSmallLetterOpenOe),
-            LATIN_SMALL_LETTER_UO => Ok(LatinExtendedE::LatinSmallLetterUo),
-            LATIN_SMALL_LETTER_INVERTED_ALPHA => Ok(LatinExtendedE::LatinSmallLetterInvertedAlpha),
-            GREEK_LETTER_SMALL_CAPITAL_OMEGA => Ok(LatinExtendedE::GreekLetterSmallCapitalOmega),
-            LATIN_SMALL_LETTER_DZ_DIGRAPH_WITH_RETROFLEX_HOOK => Ok(LatinExtendedE::LatinSmallLetterDzDigraphWithRetroflexHook),
-            LATIN_SMALL_LETTER_TS_DIGRAPH_WITH_RETROFLEX_HOOK => Ok(LatinExtendedE::LatinSmallLetterTsDigraphWithRetroflexHook),
+            'ꬰ' => Ok(LatinExtendedE::LatinSmallLetterBarredAlpha),
+            'ꬱ' => Ok(LatinExtendedE::LatinSmallLetterAReversedDashSchwa),
+            'ꬲ' => Ok(LatinExtendedE::LatinSmallLetterBlackletterE),
+            'ꬳ' => Ok(LatinExtendedE::LatinSmallLetterBarredE),
+            'ꬴ' => Ok(LatinExtendedE::LatinSmallLetterEWithFlourish),
+            'ꬵ' => Ok(LatinExtendedE::LatinSmallLetterLenisF),
+            'ꬶ' => Ok(LatinExtendedE::LatinSmallLetterScriptGWithCrossedDashTail),
+            'ꬷ' => Ok(LatinExtendedE::LatinSmallLetterLWithInvertedLazyS),
+            'ꬸ' => Ok(LatinExtendedE::LatinSmallLetterLWithDoubleMiddleTilde),
+            'ꬹ' => Ok(LatinExtendedE::LatinSmallLetterLWithMiddleRing),
+            'ꬺ' => Ok(LatinExtendedE::LatinSmallLetterMWithCrossedDashTail),
+            'ꬻ' => Ok(LatinExtendedE::LatinSmallLetterNWithCrossedDashTail),
+            'ꬼ' => Ok(LatinExtendedE::LatinSmallLetterEngWithCrossedDashTail),
+            'ꬽ' => Ok(LatinExtendedE::LatinSmallLetterBlackletterO),
+            'ꬾ' => Ok(LatinExtendedE::LatinSmallLetterBlackletterOWithStroke),
+            'ꬿ' => Ok(LatinExtendedE::LatinSmallLetterOpenOWithStroke),
+            'ꭀ' => Ok(LatinExtendedE::LatinSmallLetterInvertedOe),
+            'ꭁ' => Ok(LatinExtendedE::LatinSmallLetterTurnedOeWithStroke),
+            'ꭂ' => Ok(LatinExtendedE::LatinSmallLetterTurnedOeWithHorizontalStroke),
+            'ꭃ' => Ok(LatinExtendedE::LatinSmallLetterTurnedOOpenDashO),
+            'ꭄ' => Ok(LatinExtendedE::LatinSmallLetterTurnedOOpenDashOWithStroke),
+            'ꭅ' => Ok(LatinExtendedE::LatinSmallLetterStirrupR),
+            'ꭆ' => Ok(LatinExtendedE::LatinLetterSmallCapitalRWithRightLeg),
+            'ꭇ' => Ok(LatinExtendedE::LatinSmallLetterRWithoutHandle),
+            'ꭈ' => Ok(LatinExtendedE::LatinSmallLetterDoubleR),
+            'ꭉ' => Ok(LatinExtendedE::LatinSmallLetterRWithCrossedDashTail),
+            'ꭊ' => Ok(LatinExtendedE::LatinSmallLetterDoubleRWithCrossedDashTail),
+            'ꭋ' => Ok(LatinExtendedE::LatinSmallLetterScriptR),
+            'ꭌ' => Ok(LatinExtendedE::LatinSmallLetterScriptRWithRing),
+            'ꭍ' => Ok(LatinExtendedE::LatinSmallLetterBaselineEsh),
+            'ꭎ' => Ok(LatinExtendedE::LatinSmallLetterUWithShortRightLeg),
+            'ꭏ' => Ok(LatinExtendedE::LatinSmallLetterUBarWithShortRightLeg),
+            'ꭐ' => Ok(LatinExtendedE::LatinSmallLetterUi),
+            'ꭑ' => Ok(LatinExtendedE::LatinSmallLetterTurnedUi),
+            'ꭒ' => Ok(LatinExtendedE::LatinSmallLetterUWithLeftHook),
+            'ꭓ' => Ok(LatinExtendedE::LatinSmallLetterChi),
+            'ꭔ' => Ok(LatinExtendedE::LatinSmallLetterChiWithLowRightRing),
+            'ꭕ' => Ok(LatinExtendedE::LatinSmallLetterChiWithLowLeftSerif),
+            'ꭖ' => Ok(LatinExtendedE::LatinSmallLetterXWithLowRightRing),
+            'ꭗ' => Ok(LatinExtendedE::LatinSmallLetterXWithLongLeftLeg),
+            'ꭘ' => Ok(LatinExtendedE::LatinSmallLetterXWithLongLeftLegAndLowRightRing),
+            'ꭙ' => Ok(LatinExtendedE::LatinSmallLetterXWithLongLeftLegWithSerif),
+            'ꭚ' => Ok(LatinExtendedE::LatinSmallLetterYWithShortRightLeg),
+            '꭛' => Ok(LatinExtendedE::ModifierBreveWithInvertedBreve),
+            'ꭜ' => Ok(LatinExtendedE::ModifierLetterSmallHeng),
+            'ꭝ' => Ok(LatinExtendedE::ModifierLetterSmallLWithInvertedLazyS),
+            'ꭞ' => Ok(LatinExtendedE::ModifierLetterSmallLWithMiddleTilde),
+            'ꭟ' => Ok(LatinExtendedE::ModifierLetterSmallUWithLeftHook),
+            'ꭠ' => Ok(LatinExtendedE::LatinSmallLetterSakhaYat),
+            'ꭡ' => Ok(LatinExtendedE::LatinSmallLetterIotifiedE),
+            'ꭢ' => Ok(LatinExtendedE::LatinSmallLetterOpenOe),
+            'ꭣ' => Ok(LatinExtendedE::LatinSmallLetterUo),
+            'ꭤ' => Ok(LatinExtendedE::LatinSmallLetterInvertedAlpha),
+            'ꭥ' => Ok(LatinExtendedE::GreekLetterSmallCapitalOmega),
+            'ꭦ' => Ok(LatinExtendedE::LatinSmallLetterDzDigraphWithRetroflexHook),
+            'ꭧ' => Ok(LatinExtendedE::LatinSmallLetterTsDigraphWithRetroflexHook),
             _ => Err(()),
         }
     }

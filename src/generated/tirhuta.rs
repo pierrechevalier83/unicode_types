@@ -1,170 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11480}: '𑒀'
-    pub const ANJI: char = '𑒀';
-    /// \u{11481}: '𑒁'
-    pub const LETTER_A: char = '𑒁';
-    /// \u{11482}: '𑒂'
-    pub const LETTER_AA: char = '𑒂';
-    /// \u{11483}: '𑒃'
-    pub const LETTER_I: char = '𑒃';
-    /// \u{11484}: '𑒄'
-    pub const LETTER_II: char = '𑒄';
-    /// \u{11485}: '𑒅'
-    pub const LETTER_U: char = '𑒅';
-    /// \u{11486}: '𑒆'
-    pub const LETTER_UU: char = '𑒆';
-    /// \u{11487}: '𑒇'
-    pub const LETTER_VOCALIC_R: char = '𑒇';
-    /// \u{11488}: '𑒈'
-    pub const LETTER_VOCALIC_RR: char = '𑒈';
-    /// \u{11489}: '𑒉'
-    pub const LETTER_VOCALIC_L: char = '𑒉';
-    /// \u{1148a}: '𑒊'
-    pub const LETTER_VOCALIC_LL: char = '𑒊';
-    /// \u{1148b}: '𑒋'
-    pub const LETTER_E: char = '𑒋';
-    /// \u{1148c}: '𑒌'
-    pub const LETTER_AI: char = '𑒌';
-    /// \u{1148d}: '𑒍'
-    pub const LETTER_O: char = '𑒍';
-    /// \u{1148e}: '𑒎'
-    pub const LETTER_AU: char = '𑒎';
-    /// \u{1148f}: '𑒏'
-    pub const LETTER_KA: char = '𑒏';
-    /// \u{11490}: '𑒐'
-    pub const LETTER_KHA: char = '𑒐';
-    /// \u{11491}: '𑒑'
-    pub const LETTER_GA: char = '𑒑';
-    /// \u{11492}: '𑒒'
-    pub const LETTER_GHA: char = '𑒒';
-    /// \u{11493}: '𑒓'
-    pub const LETTER_NGA: char = '𑒓';
-    /// \u{11494}: '𑒔'
-    pub const LETTER_CA: char = '𑒔';
-    /// \u{11495}: '𑒕'
-    pub const LETTER_CHA: char = '𑒕';
-    /// \u{11496}: '𑒖'
-    pub const LETTER_JA: char = '𑒖';
-    /// \u{11497}: '𑒗'
-    pub const LETTER_JHA: char = '𑒗';
-    /// \u{11498}: '𑒘'
-    pub const LETTER_NYA: char = '𑒘';
-    /// \u{11499}: '𑒙'
-    pub const LETTER_TTA: char = '𑒙';
-    /// \u{1149a}: '𑒚'
-    pub const LETTER_TTHA: char = '𑒚';
-    /// \u{1149b}: '𑒛'
-    pub const LETTER_DDA: char = '𑒛';
-    /// \u{1149c}: '𑒜'
-    pub const LETTER_DDHA: char = '𑒜';
-    /// \u{1149d}: '𑒝'
-    pub const LETTER_NNA: char = '𑒝';
-    /// \u{1149e}: '𑒞'
-    pub const LETTER_TA: char = '𑒞';
-    /// \u{1149f}: '𑒟'
-    pub const LETTER_THA: char = '𑒟';
-    /// \u{114a0}: '𑒠'
-    pub const LETTER_DA: char = '𑒠';
-    /// \u{114a1}: '𑒡'
-    pub const LETTER_DHA: char = '𑒡';
-    /// \u{114a2}: '𑒢'
-    pub const LETTER_NA: char = '𑒢';
-    /// \u{114a3}: '𑒣'
-    pub const LETTER_PA: char = '𑒣';
-    /// \u{114a4}: '𑒤'
-    pub const LETTER_PHA: char = '𑒤';
-    /// \u{114a5}: '𑒥'
-    pub const LETTER_BA: char = '𑒥';
-    /// \u{114a6}: '𑒦'
-    pub const LETTER_BHA: char = '𑒦';
-    /// \u{114a7}: '𑒧'
-    pub const LETTER_MA: char = '𑒧';
-    /// \u{114a8}: '𑒨'
-    pub const LETTER_YA: char = '𑒨';
-    /// \u{114a9}: '𑒩'
-    pub const LETTER_RA: char = '𑒩';
-    /// \u{114aa}: '𑒪'
-    pub const LETTER_LA: char = '𑒪';
-    /// \u{114ab}: '𑒫'
-    pub const LETTER_VA: char = '𑒫';
-    /// \u{114ac}: '𑒬'
-    pub const LETTER_SHA: char = '𑒬';
-    /// \u{114ad}: '𑒭'
-    pub const LETTER_SSA: char = '𑒭';
-    /// \u{114ae}: '𑒮'
-    pub const LETTER_SA: char = '𑒮';
-    /// \u{114af}: '𑒯'
-    pub const LETTER_HA: char = '𑒯';
-    /// \u{114b0}: '𑒰'
-    pub const VOWEL_SIGN_AA: char = '𑒰';
-    /// \u{114b1}: '𑒱'
-    pub const VOWEL_SIGN_I: char = '𑒱';
-    /// \u{114b2}: '𑒲'
-    pub const VOWEL_SIGN_II: char = '𑒲';
-    /// \u{114b3}: '𑒳'
-    pub const VOWEL_SIGN_U: char = '𑒳';
-    /// \u{114b4}: '𑒴'
-    pub const VOWEL_SIGN_UU: char = '𑒴';
-    /// \u{114b5}: '𑒵'
-    pub const VOWEL_SIGN_VOCALIC_R: char = '𑒵';
-    /// \u{114b6}: '𑒶'
-    pub const VOWEL_SIGN_VOCALIC_RR: char = '𑒶';
-    /// \u{114b7}: '𑒷'
-    pub const VOWEL_SIGN_VOCALIC_L: char = '𑒷';
-    /// \u{114b8}: '𑒸'
-    pub const VOWEL_SIGN_VOCALIC_LL: char = '𑒸';
-    /// \u{114b9}: '𑒹'
-    pub const VOWEL_SIGN_E: char = '𑒹';
-    /// \u{114ba}: '𑒺'
-    pub const VOWEL_SIGN_SHORT_E: char = '𑒺';
-    /// \u{114bb}: '𑒻'
-    pub const VOWEL_SIGN_AI: char = '𑒻';
-    /// \u{114bc}: '𑒼'
-    pub const VOWEL_SIGN_O: char = '𑒼';
-    /// \u{114bd}: '𑒽'
-    pub const VOWEL_SIGN_SHORT_O: char = '𑒽';
-    /// \u{114be}: '𑒾'
-    pub const VOWEL_SIGN_AU: char = '𑒾';
-    /// \u{114bf}: '𑒿'
-    pub const SIGN_CANDRABINDU: char = '𑒿';
-    /// \u{114c0}: '𑓀'
-    pub const SIGN_ANUSVARA: char = '𑓀';
-    /// \u{114c1}: '𑓁'
-    pub const SIGN_VISARGA: char = '𑓁';
-    /// \u{114c2}: '𑓂'
-    pub const SIGN_VIRAMA: char = '𑓂';
-    /// \u{114c3}: '𑓃'
-    pub const SIGN_NUKTA: char = '𑓃';
-    /// \u{114c4}: '𑓄'
-    pub const SIGN_AVAGRAHA: char = '𑓄';
-    /// \u{114c5}: '𑓅'
-    pub const GVANG: char = '𑓅';
-    /// \u{114c6}: '𑓆'
-    pub const ABBREVIATION_SIGN: char = '𑓆';
-    /// \u{114c7}: '𑓇'
-    pub const OM: char = '𑓇';
-    /// \u{114d0}: '𑓐'
-    pub const DIGIT_ZERO: char = '𑓐';
-    /// \u{114d1}: '𑓑'
-    pub const DIGIT_ONE: char = '𑓑';
-    /// \u{114d2}: '𑓒'
-    pub const DIGIT_TWO: char = '𑓒';
-    /// \u{114d3}: '𑓓'
-    pub const DIGIT_THREE: char = '𑓓';
-    /// \u{114d4}: '𑓔'
-    pub const DIGIT_FOUR: char = '𑓔';
-    /// \u{114d5}: '𑓕'
-    pub const DIGIT_FIVE: char = '𑓕';
-    /// \u{114d6}: '𑓖'
-    pub const DIGIT_SIX: char = '𑓖';
-    /// \u{114d7}: '𑓗'
-    pub const DIGIT_SEVEN: char = '𑓗';
-    /// \u{114d8}: '𑓘'
-    pub const DIGIT_EIGHT: char = '𑓘';
-    /// \u{114d9}: '𑓙'
-    pub const DIGIT_NINE: char = '𑓙';
-}
 
 /// An enum to represent all characters in the Tirhuta block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -337,90 +170,89 @@ pub enum Tirhuta {
 
 impl Into<char> for Tirhuta {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Tirhuta::Anji => ANJI,
-            Tirhuta::LetterA => LETTER_A,
-            Tirhuta::LetterAa => LETTER_AA,
-            Tirhuta::LetterI => LETTER_I,
-            Tirhuta::LetterIi => LETTER_II,
-            Tirhuta::LetterU => LETTER_U,
-            Tirhuta::LetterUu => LETTER_UU,
-            Tirhuta::LetterVocalicR => LETTER_VOCALIC_R,
-            Tirhuta::LetterVocalicRr => LETTER_VOCALIC_RR,
-            Tirhuta::LetterVocalicL => LETTER_VOCALIC_L,
-            Tirhuta::LetterVocalicLl => LETTER_VOCALIC_LL,
-            Tirhuta::LetterE => LETTER_E,
-            Tirhuta::LetterAi => LETTER_AI,
-            Tirhuta::LetterO => LETTER_O,
-            Tirhuta::LetterAu => LETTER_AU,
-            Tirhuta::LetterKa => LETTER_KA,
-            Tirhuta::LetterKha => LETTER_KHA,
-            Tirhuta::LetterGa => LETTER_GA,
-            Tirhuta::LetterGha => LETTER_GHA,
-            Tirhuta::LetterNga => LETTER_NGA,
-            Tirhuta::LetterCa => LETTER_CA,
-            Tirhuta::LetterCha => LETTER_CHA,
-            Tirhuta::LetterJa => LETTER_JA,
-            Tirhuta::LetterJha => LETTER_JHA,
-            Tirhuta::LetterNya => LETTER_NYA,
-            Tirhuta::LetterTta => LETTER_TTA,
-            Tirhuta::LetterTtha => LETTER_TTHA,
-            Tirhuta::LetterDda => LETTER_DDA,
-            Tirhuta::LetterDdha => LETTER_DDHA,
-            Tirhuta::LetterNna => LETTER_NNA,
-            Tirhuta::LetterTa => LETTER_TA,
-            Tirhuta::LetterTha => LETTER_THA,
-            Tirhuta::LetterDa => LETTER_DA,
-            Tirhuta::LetterDha => LETTER_DHA,
-            Tirhuta::LetterNa => LETTER_NA,
-            Tirhuta::LetterPa => LETTER_PA,
-            Tirhuta::LetterPha => LETTER_PHA,
-            Tirhuta::LetterBa => LETTER_BA,
-            Tirhuta::LetterBha => LETTER_BHA,
-            Tirhuta::LetterMa => LETTER_MA,
-            Tirhuta::LetterYa => LETTER_YA,
-            Tirhuta::LetterRa => LETTER_RA,
-            Tirhuta::LetterLa => LETTER_LA,
-            Tirhuta::LetterVa => LETTER_VA,
-            Tirhuta::LetterSha => LETTER_SHA,
-            Tirhuta::LetterSsa => LETTER_SSA,
-            Tirhuta::LetterSa => LETTER_SA,
-            Tirhuta::LetterHa => LETTER_HA,
-            Tirhuta::VowelSignAa => VOWEL_SIGN_AA,
-            Tirhuta::VowelSignI => VOWEL_SIGN_I,
-            Tirhuta::VowelSignIi => VOWEL_SIGN_II,
-            Tirhuta::VowelSignU => VOWEL_SIGN_U,
-            Tirhuta::VowelSignUu => VOWEL_SIGN_UU,
-            Tirhuta::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            Tirhuta::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
-            Tirhuta::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
-            Tirhuta::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
-            Tirhuta::VowelSignE => VOWEL_SIGN_E,
-            Tirhuta::VowelSignShortE => VOWEL_SIGN_SHORT_E,
-            Tirhuta::VowelSignAi => VOWEL_SIGN_AI,
-            Tirhuta::VowelSignO => VOWEL_SIGN_O,
-            Tirhuta::VowelSignShortO => VOWEL_SIGN_SHORT_O,
-            Tirhuta::VowelSignAu => VOWEL_SIGN_AU,
-            Tirhuta::SignCandrabindu => SIGN_CANDRABINDU,
-            Tirhuta::SignAnusvara => SIGN_ANUSVARA,
-            Tirhuta::SignVisarga => SIGN_VISARGA,
-            Tirhuta::SignVirama => SIGN_VIRAMA,
-            Tirhuta::SignNukta => SIGN_NUKTA,
-            Tirhuta::SignAvagraha => SIGN_AVAGRAHA,
-            Tirhuta::Gvang => GVANG,
-            Tirhuta::AbbreviationSign => ABBREVIATION_SIGN,
-            Tirhuta::Om => OM,
-            Tirhuta::DigitZero => DIGIT_ZERO,
-            Tirhuta::DigitOne => DIGIT_ONE,
-            Tirhuta::DigitTwo => DIGIT_TWO,
-            Tirhuta::DigitThree => DIGIT_THREE,
-            Tirhuta::DigitFour => DIGIT_FOUR,
-            Tirhuta::DigitFive => DIGIT_FIVE,
-            Tirhuta::DigitSix => DIGIT_SIX,
-            Tirhuta::DigitSeven => DIGIT_SEVEN,
-            Tirhuta::DigitEight => DIGIT_EIGHT,
-            Tirhuta::DigitNine => DIGIT_NINE,
+            Tirhuta::Anji => '𑒀',
+            Tirhuta::LetterA => '𑒁',
+            Tirhuta::LetterAa => '𑒂',
+            Tirhuta::LetterI => '𑒃',
+            Tirhuta::LetterIi => '𑒄',
+            Tirhuta::LetterU => '𑒅',
+            Tirhuta::LetterUu => '𑒆',
+            Tirhuta::LetterVocalicR => '𑒇',
+            Tirhuta::LetterVocalicRr => '𑒈',
+            Tirhuta::LetterVocalicL => '𑒉',
+            Tirhuta::LetterVocalicLl => '𑒊',
+            Tirhuta::LetterE => '𑒋',
+            Tirhuta::LetterAi => '𑒌',
+            Tirhuta::LetterO => '𑒍',
+            Tirhuta::LetterAu => '𑒎',
+            Tirhuta::LetterKa => '𑒏',
+            Tirhuta::LetterKha => '𑒐',
+            Tirhuta::LetterGa => '𑒑',
+            Tirhuta::LetterGha => '𑒒',
+            Tirhuta::LetterNga => '𑒓',
+            Tirhuta::LetterCa => '𑒔',
+            Tirhuta::LetterCha => '𑒕',
+            Tirhuta::LetterJa => '𑒖',
+            Tirhuta::LetterJha => '𑒗',
+            Tirhuta::LetterNya => '𑒘',
+            Tirhuta::LetterTta => '𑒙',
+            Tirhuta::LetterTtha => '𑒚',
+            Tirhuta::LetterDda => '𑒛',
+            Tirhuta::LetterDdha => '𑒜',
+            Tirhuta::LetterNna => '𑒝',
+            Tirhuta::LetterTa => '𑒞',
+            Tirhuta::LetterTha => '𑒟',
+            Tirhuta::LetterDa => '𑒠',
+            Tirhuta::LetterDha => '𑒡',
+            Tirhuta::LetterNa => '𑒢',
+            Tirhuta::LetterPa => '𑒣',
+            Tirhuta::LetterPha => '𑒤',
+            Tirhuta::LetterBa => '𑒥',
+            Tirhuta::LetterBha => '𑒦',
+            Tirhuta::LetterMa => '𑒧',
+            Tirhuta::LetterYa => '𑒨',
+            Tirhuta::LetterRa => '𑒩',
+            Tirhuta::LetterLa => '𑒪',
+            Tirhuta::LetterVa => '𑒫',
+            Tirhuta::LetterSha => '𑒬',
+            Tirhuta::LetterSsa => '𑒭',
+            Tirhuta::LetterSa => '𑒮',
+            Tirhuta::LetterHa => '𑒯',
+            Tirhuta::VowelSignAa => '𑒰',
+            Tirhuta::VowelSignI => '𑒱',
+            Tirhuta::VowelSignIi => '𑒲',
+            Tirhuta::VowelSignU => '𑒳',
+            Tirhuta::VowelSignUu => '𑒴',
+            Tirhuta::VowelSignVocalicR => '𑒵',
+            Tirhuta::VowelSignVocalicRr => '𑒶',
+            Tirhuta::VowelSignVocalicL => '𑒷',
+            Tirhuta::VowelSignVocalicLl => '𑒸',
+            Tirhuta::VowelSignE => '𑒹',
+            Tirhuta::VowelSignShortE => '𑒺',
+            Tirhuta::VowelSignAi => '𑒻',
+            Tirhuta::VowelSignO => '𑒼',
+            Tirhuta::VowelSignShortO => '𑒽',
+            Tirhuta::VowelSignAu => '𑒾',
+            Tirhuta::SignCandrabindu => '𑒿',
+            Tirhuta::SignAnusvara => '𑓀',
+            Tirhuta::SignVisarga => '𑓁',
+            Tirhuta::SignVirama => '𑓂',
+            Tirhuta::SignNukta => '𑓃',
+            Tirhuta::SignAvagraha => '𑓄',
+            Tirhuta::Gvang => '𑓅',
+            Tirhuta::AbbreviationSign => '𑓆',
+            Tirhuta::Om => '𑓇',
+            Tirhuta::DigitZero => '𑓐',
+            Tirhuta::DigitOne => '𑓑',
+            Tirhuta::DigitTwo => '𑓒',
+            Tirhuta::DigitThree => '𑓓',
+            Tirhuta::DigitFour => '𑓔',
+            Tirhuta::DigitFive => '𑓕',
+            Tirhuta::DigitSix => '𑓖',
+            Tirhuta::DigitSeven => '𑓗',
+            Tirhuta::DigitEight => '𑓘',
+            Tirhuta::DigitNine => '𑓙',
         }
     }
 }
@@ -428,90 +260,89 @@ impl Into<char> for Tirhuta {
 impl std::convert::TryFrom<char> for Tirhuta {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            ANJI => Ok(Tirhuta::Anji),
-            LETTER_A => Ok(Tirhuta::LetterA),
-            LETTER_AA => Ok(Tirhuta::LetterAa),
-            LETTER_I => Ok(Tirhuta::LetterI),
-            LETTER_II => Ok(Tirhuta::LetterIi),
-            LETTER_U => Ok(Tirhuta::LetterU),
-            LETTER_UU => Ok(Tirhuta::LetterUu),
-            LETTER_VOCALIC_R => Ok(Tirhuta::LetterVocalicR),
-            LETTER_VOCALIC_RR => Ok(Tirhuta::LetterVocalicRr),
-            LETTER_VOCALIC_L => Ok(Tirhuta::LetterVocalicL),
-            LETTER_VOCALIC_LL => Ok(Tirhuta::LetterVocalicLl),
-            LETTER_E => Ok(Tirhuta::LetterE),
-            LETTER_AI => Ok(Tirhuta::LetterAi),
-            LETTER_O => Ok(Tirhuta::LetterO),
-            LETTER_AU => Ok(Tirhuta::LetterAu),
-            LETTER_KA => Ok(Tirhuta::LetterKa),
-            LETTER_KHA => Ok(Tirhuta::LetterKha),
-            LETTER_GA => Ok(Tirhuta::LetterGa),
-            LETTER_GHA => Ok(Tirhuta::LetterGha),
-            LETTER_NGA => Ok(Tirhuta::LetterNga),
-            LETTER_CA => Ok(Tirhuta::LetterCa),
-            LETTER_CHA => Ok(Tirhuta::LetterCha),
-            LETTER_JA => Ok(Tirhuta::LetterJa),
-            LETTER_JHA => Ok(Tirhuta::LetterJha),
-            LETTER_NYA => Ok(Tirhuta::LetterNya),
-            LETTER_TTA => Ok(Tirhuta::LetterTta),
-            LETTER_TTHA => Ok(Tirhuta::LetterTtha),
-            LETTER_DDA => Ok(Tirhuta::LetterDda),
-            LETTER_DDHA => Ok(Tirhuta::LetterDdha),
-            LETTER_NNA => Ok(Tirhuta::LetterNna),
-            LETTER_TA => Ok(Tirhuta::LetterTa),
-            LETTER_THA => Ok(Tirhuta::LetterTha),
-            LETTER_DA => Ok(Tirhuta::LetterDa),
-            LETTER_DHA => Ok(Tirhuta::LetterDha),
-            LETTER_NA => Ok(Tirhuta::LetterNa),
-            LETTER_PA => Ok(Tirhuta::LetterPa),
-            LETTER_PHA => Ok(Tirhuta::LetterPha),
-            LETTER_BA => Ok(Tirhuta::LetterBa),
-            LETTER_BHA => Ok(Tirhuta::LetterBha),
-            LETTER_MA => Ok(Tirhuta::LetterMa),
-            LETTER_YA => Ok(Tirhuta::LetterYa),
-            LETTER_RA => Ok(Tirhuta::LetterRa),
-            LETTER_LA => Ok(Tirhuta::LetterLa),
-            LETTER_VA => Ok(Tirhuta::LetterVa),
-            LETTER_SHA => Ok(Tirhuta::LetterSha),
-            LETTER_SSA => Ok(Tirhuta::LetterSsa),
-            LETTER_SA => Ok(Tirhuta::LetterSa),
-            LETTER_HA => Ok(Tirhuta::LetterHa),
-            VOWEL_SIGN_AA => Ok(Tirhuta::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Tirhuta::VowelSignI),
-            VOWEL_SIGN_II => Ok(Tirhuta::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Tirhuta::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Tirhuta::VowelSignUu),
-            VOWEL_SIGN_VOCALIC_R => Ok(Tirhuta::VowelSignVocalicR),
-            VOWEL_SIGN_VOCALIC_RR => Ok(Tirhuta::VowelSignVocalicRr),
-            VOWEL_SIGN_VOCALIC_L => Ok(Tirhuta::VowelSignVocalicL),
-            VOWEL_SIGN_VOCALIC_LL => Ok(Tirhuta::VowelSignVocalicLl),
-            VOWEL_SIGN_E => Ok(Tirhuta::VowelSignE),
-            VOWEL_SIGN_SHORT_E => Ok(Tirhuta::VowelSignShortE),
-            VOWEL_SIGN_AI => Ok(Tirhuta::VowelSignAi),
-            VOWEL_SIGN_O => Ok(Tirhuta::VowelSignO),
-            VOWEL_SIGN_SHORT_O => Ok(Tirhuta::VowelSignShortO),
-            VOWEL_SIGN_AU => Ok(Tirhuta::VowelSignAu),
-            SIGN_CANDRABINDU => Ok(Tirhuta::SignCandrabindu),
-            SIGN_ANUSVARA => Ok(Tirhuta::SignAnusvara),
-            SIGN_VISARGA => Ok(Tirhuta::SignVisarga),
-            SIGN_VIRAMA => Ok(Tirhuta::SignVirama),
-            SIGN_NUKTA => Ok(Tirhuta::SignNukta),
-            SIGN_AVAGRAHA => Ok(Tirhuta::SignAvagraha),
-            GVANG => Ok(Tirhuta::Gvang),
-            ABBREVIATION_SIGN => Ok(Tirhuta::AbbreviationSign),
-            OM => Ok(Tirhuta::Om),
-            DIGIT_ZERO => Ok(Tirhuta::DigitZero),
-            DIGIT_ONE => Ok(Tirhuta::DigitOne),
-            DIGIT_TWO => Ok(Tirhuta::DigitTwo),
-            DIGIT_THREE => Ok(Tirhuta::DigitThree),
-            DIGIT_FOUR => Ok(Tirhuta::DigitFour),
-            DIGIT_FIVE => Ok(Tirhuta::DigitFive),
-            DIGIT_SIX => Ok(Tirhuta::DigitSix),
-            DIGIT_SEVEN => Ok(Tirhuta::DigitSeven),
-            DIGIT_EIGHT => Ok(Tirhuta::DigitEight),
-            DIGIT_NINE => Ok(Tirhuta::DigitNine),
+            '𑒀' => Ok(Tirhuta::Anji),
+            '𑒁' => Ok(Tirhuta::LetterA),
+            '𑒂' => Ok(Tirhuta::LetterAa),
+            '𑒃' => Ok(Tirhuta::LetterI),
+            '𑒄' => Ok(Tirhuta::LetterIi),
+            '𑒅' => Ok(Tirhuta::LetterU),
+            '𑒆' => Ok(Tirhuta::LetterUu),
+            '𑒇' => Ok(Tirhuta::LetterVocalicR),
+            '𑒈' => Ok(Tirhuta::LetterVocalicRr),
+            '𑒉' => Ok(Tirhuta::LetterVocalicL),
+            '𑒊' => Ok(Tirhuta::LetterVocalicLl),
+            '𑒋' => Ok(Tirhuta::LetterE),
+            '𑒌' => Ok(Tirhuta::LetterAi),
+            '𑒍' => Ok(Tirhuta::LetterO),
+            '𑒎' => Ok(Tirhuta::LetterAu),
+            '𑒏' => Ok(Tirhuta::LetterKa),
+            '𑒐' => Ok(Tirhuta::LetterKha),
+            '𑒑' => Ok(Tirhuta::LetterGa),
+            '𑒒' => Ok(Tirhuta::LetterGha),
+            '𑒓' => Ok(Tirhuta::LetterNga),
+            '𑒔' => Ok(Tirhuta::LetterCa),
+            '𑒕' => Ok(Tirhuta::LetterCha),
+            '𑒖' => Ok(Tirhuta::LetterJa),
+            '𑒗' => Ok(Tirhuta::LetterJha),
+            '𑒘' => Ok(Tirhuta::LetterNya),
+            '𑒙' => Ok(Tirhuta::LetterTta),
+            '𑒚' => Ok(Tirhuta::LetterTtha),
+            '𑒛' => Ok(Tirhuta::LetterDda),
+            '𑒜' => Ok(Tirhuta::LetterDdha),
+            '𑒝' => Ok(Tirhuta::LetterNna),
+            '𑒞' => Ok(Tirhuta::LetterTa),
+            '𑒟' => Ok(Tirhuta::LetterTha),
+            '𑒠' => Ok(Tirhuta::LetterDa),
+            '𑒡' => Ok(Tirhuta::LetterDha),
+            '𑒢' => Ok(Tirhuta::LetterNa),
+            '𑒣' => Ok(Tirhuta::LetterPa),
+            '𑒤' => Ok(Tirhuta::LetterPha),
+            '𑒥' => Ok(Tirhuta::LetterBa),
+            '𑒦' => Ok(Tirhuta::LetterBha),
+            '𑒧' => Ok(Tirhuta::LetterMa),
+            '𑒨' => Ok(Tirhuta::LetterYa),
+            '𑒩' => Ok(Tirhuta::LetterRa),
+            '𑒪' => Ok(Tirhuta::LetterLa),
+            '𑒫' => Ok(Tirhuta::LetterVa),
+            '𑒬' => Ok(Tirhuta::LetterSha),
+            '𑒭' => Ok(Tirhuta::LetterSsa),
+            '𑒮' => Ok(Tirhuta::LetterSa),
+            '𑒯' => Ok(Tirhuta::LetterHa),
+            '𑒰' => Ok(Tirhuta::VowelSignAa),
+            '𑒱' => Ok(Tirhuta::VowelSignI),
+            '𑒲' => Ok(Tirhuta::VowelSignIi),
+            '𑒳' => Ok(Tirhuta::VowelSignU),
+            '𑒴' => Ok(Tirhuta::VowelSignUu),
+            '𑒵' => Ok(Tirhuta::VowelSignVocalicR),
+            '𑒶' => Ok(Tirhuta::VowelSignVocalicRr),
+            '𑒷' => Ok(Tirhuta::VowelSignVocalicL),
+            '𑒸' => Ok(Tirhuta::VowelSignVocalicLl),
+            '𑒹' => Ok(Tirhuta::VowelSignE),
+            '𑒺' => Ok(Tirhuta::VowelSignShortE),
+            '𑒻' => Ok(Tirhuta::VowelSignAi),
+            '𑒼' => Ok(Tirhuta::VowelSignO),
+            '𑒽' => Ok(Tirhuta::VowelSignShortO),
+            '𑒾' => Ok(Tirhuta::VowelSignAu),
+            '𑒿' => Ok(Tirhuta::SignCandrabindu),
+            '𑓀' => Ok(Tirhuta::SignAnusvara),
+            '𑓁' => Ok(Tirhuta::SignVisarga),
+            '𑓂' => Ok(Tirhuta::SignVirama),
+            '𑓃' => Ok(Tirhuta::SignNukta),
+            '𑓄' => Ok(Tirhuta::SignAvagraha),
+            '𑓅' => Ok(Tirhuta::Gvang),
+            '𑓆' => Ok(Tirhuta::AbbreviationSign),
+            '𑓇' => Ok(Tirhuta::Om),
+            '𑓐' => Ok(Tirhuta::DigitZero),
+            '𑓑' => Ok(Tirhuta::DigitOne),
+            '𑓒' => Ok(Tirhuta::DigitTwo),
+            '𑓓' => Ok(Tirhuta::DigitThree),
+            '𑓔' => Ok(Tirhuta::DigitFour),
+            '𑓕' => Ok(Tirhuta::DigitFive),
+            '𑓖' => Ok(Tirhuta::DigitSix),
+            '𑓗' => Ok(Tirhuta::DigitSeven),
+            '𑓘' => Ok(Tirhuta::DigitEight),
+            '𑓙' => Ok(Tirhuta::DigitNine),
             _ => Err(()),
         }
     }

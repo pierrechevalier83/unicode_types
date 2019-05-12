@@ -1,516 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2a00}: '⨀'
-    pub const N_DASH_ARY_CIRCLED_DOT_OPERATOR: char = '⨀';
-    /// \u{2a01}: '⨁'
-    pub const N_DASH_ARY_CIRCLED_PLUS_OPERATOR: char = '⨁';
-    /// \u{2a02}: '⨂'
-    pub const N_DASH_ARY_CIRCLED_TIMES_OPERATOR: char = '⨂';
-    /// \u{2a03}: '⨃'
-    pub const N_DASH_ARY_UNION_OPERATOR_WITH_DOT: char = '⨃';
-    /// \u{2a04}: '⨄'
-    pub const N_DASH_ARY_UNION_OPERATOR_WITH_PLUS: char = '⨄';
-    /// \u{2a05}: '⨅'
-    pub const N_DASH_ARY_SQUARE_INTERSECTION_OPERATOR: char = '⨅';
-    /// \u{2a06}: '⨆'
-    pub const N_DASH_ARY_SQUARE_UNION_OPERATOR: char = '⨆';
-    /// \u{2a07}: '⨇'
-    pub const TWO_LOGICAL_AND_OPERATOR: char = '⨇';
-    /// \u{2a08}: '⨈'
-    pub const TWO_LOGICAL_OR_OPERATOR: char = '⨈';
-    /// \u{2a09}: '⨉'
-    pub const N_DASH_ARY_TIMES_OPERATOR: char = '⨉';
-    /// \u{2a0a}: '⨊'
-    pub const MODULO_TWO_SUM: char = '⨊';
-    /// \u{2a0b}: '⨋'
-    pub const SUMMATION_WITH_INTEGRAL: char = '⨋';
-    /// \u{2a0c}: '⨌'
-    pub const QUADRUPLE_INTEGRAL_OPERATOR: char = '⨌';
-    /// \u{2a0d}: '⨍'
-    pub const FINITE_PART_INTEGRAL: char = '⨍';
-    /// \u{2a0e}: '⨎'
-    pub const INTEGRAL_WITH_DOUBLE_STROKE: char = '⨎';
-    /// \u{2a0f}: '⨏'
-    pub const INTEGRAL_AVERAGE_WITH_SLASH: char = '⨏';
-    /// \u{2a10}: '⨐'
-    pub const CIRCULATION_FUNCTION: char = '⨐';
-    /// \u{2a11}: '⨑'
-    pub const ANTICLOCKWISE_INTEGRATION: char = '⨑';
-    /// \u{2a12}: '⨒'
-    pub const LINE_INTEGRATION_WITH_RECTANGULAR_PATH_AROUND_POLE: char = '⨒';
-    /// \u{2a13}: '⨓'
-    pub const LINE_INTEGRATION_WITH_SEMICIRCULAR_PATH_AROUND_POLE: char = '⨓';
-    /// \u{2a14}: '⨔'
-    pub const LINE_INTEGRATION_NOT_INCLUDING_THE_POLE: char = '⨔';
-    /// \u{2a15}: '⨕'
-    pub const INTEGRAL_AROUND_A_POINT_OPERATOR: char = '⨕';
-    /// \u{2a16}: '⨖'
-    pub const QUATERNION_INTEGRAL_OPERATOR: char = '⨖';
-    /// \u{2a17}: '⨗'
-    pub const INTEGRAL_WITH_LEFTWARDS_ARROW_WITH_HOOK: char = '⨗';
-    /// \u{2a18}: '⨘'
-    pub const INTEGRAL_WITH_TIMES_SIGN: char = '⨘';
-    /// \u{2a19}: '⨙'
-    pub const INTEGRAL_WITH_INTERSECTION: char = '⨙';
-    /// \u{2a1a}: '⨚'
-    pub const INTEGRAL_WITH_UNION: char = '⨚';
-    /// \u{2a1b}: '⨛'
-    pub const INTEGRAL_WITH_OVERBAR: char = '⨛';
-    /// \u{2a1c}: '⨜'
-    pub const INTEGRAL_WITH_UNDERBAR: char = '⨜';
-    /// \u{2a1d}: '⨝'
-    pub const JOIN: char = '⨝';
-    /// \u{2a1e}: '⨞'
-    pub const LARGE_LEFT_TRIANGLE_OPERATOR: char = '⨞';
-    /// \u{2a1f}: '⨟'
-    pub const Z_NOTATION_SCHEMA_COMPOSITION: char = '⨟';
-    /// \u{2a20}: '⨠'
-    pub const Z_NOTATION_SCHEMA_PIPING: char = '⨠';
-    /// \u{2a21}: '⨡'
-    pub const Z_NOTATION_SCHEMA_PROJECTION: char = '⨡';
-    /// \u{2a22}: '⨢'
-    pub const PLUS_SIGN_WITH_SMALL_CIRCLE_ABOVE: char = '⨢';
-    /// \u{2a23}: '⨣'
-    pub const PLUS_SIGN_WITH_CIRCUMFLEX_ACCENT_ABOVE: char = '⨣';
-    /// \u{2a24}: '⨤'
-    pub const PLUS_SIGN_WITH_TILDE_ABOVE: char = '⨤';
-    /// \u{2a25}: '⨥'
-    pub const PLUS_SIGN_WITH_DOT_BELOW: char = '⨥';
-    /// \u{2a26}: '⨦'
-    pub const PLUS_SIGN_WITH_TILDE_BELOW: char = '⨦';
-    /// \u{2a27}: '⨧'
-    pub const PLUS_SIGN_WITH_SUBSCRIPT_TWO: char = '⨧';
-    /// \u{2a28}: '⨨'
-    pub const PLUS_SIGN_WITH_BLACK_TRIANGLE: char = '⨨';
-    /// \u{2a29}: '⨩'
-    pub const MINUS_SIGN_WITH_COMMA_ABOVE: char = '⨩';
-    /// \u{2a2a}: '⨪'
-    pub const MINUS_SIGN_WITH_DOT_BELOW: char = '⨪';
-    /// \u{2a2b}: '⨫'
-    pub const MINUS_SIGN_WITH_FALLING_DOTS: char = '⨫';
-    /// \u{2a2c}: '⨬'
-    pub const MINUS_SIGN_WITH_RISING_DOTS: char = '⨬';
-    /// \u{2a2d}: '⨭'
-    pub const PLUS_SIGN_IN_LEFT_HALF_CIRCLE: char = '⨭';
-    /// \u{2a2e}: '⨮'
-    pub const PLUS_SIGN_IN_RIGHT_HALF_CIRCLE: char = '⨮';
-    /// \u{2a2f}: '⨯'
-    pub const VECTOR_OR_CROSS_PRODUCT: char = '⨯';
-    /// \u{2a30}: '⨰'
-    pub const MULTIPLICATION_SIGN_WITH_DOT_ABOVE: char = '⨰';
-    /// \u{2a31}: '⨱'
-    pub const MULTIPLICATION_SIGN_WITH_UNDERBAR: char = '⨱';
-    /// \u{2a32}: '⨲'
-    pub const SEMIDIRECT_PRODUCT_WITH_BOTTOM_CLOSED: char = '⨲';
-    /// \u{2a33}: '⨳'
-    pub const SMASH_PRODUCT: char = '⨳';
-    /// \u{2a34}: '⨴'
-    pub const MULTIPLICATION_SIGN_IN_LEFT_HALF_CIRCLE: char = '⨴';
-    /// \u{2a35}: '⨵'
-    pub const MULTIPLICATION_SIGN_IN_RIGHT_HALF_CIRCLE: char = '⨵';
-    /// \u{2a36}: '⨶'
-    pub const CIRCLED_MULTIPLICATION_SIGN_WITH_CIRCUMFLEX_ACCENT: char = '⨶';
-    /// \u{2a37}: '⨷'
-    pub const MULTIPLICATION_SIGN_IN_DOUBLE_CIRCLE: char = '⨷';
-    /// \u{2a38}: '⨸'
-    pub const CIRCLED_DIVISION_SIGN: char = '⨸';
-    /// \u{2a39}: '⨹'
-    pub const PLUS_SIGN_IN_TRIANGLE: char = '⨹';
-    /// \u{2a3a}: '⨺'
-    pub const MINUS_SIGN_IN_TRIANGLE: char = '⨺';
-    /// \u{2a3b}: '⨻'
-    pub const MULTIPLICATION_SIGN_IN_TRIANGLE: char = '⨻';
-    /// \u{2a3c}: '⨼'
-    pub const INTERIOR_PRODUCT: char = '⨼';
-    /// \u{2a3d}: '⨽'
-    pub const RIGHTHAND_INTERIOR_PRODUCT: char = '⨽';
-    /// \u{2a3e}: '⨾'
-    pub const Z_NOTATION_RELATIONAL_COMPOSITION: char = '⨾';
-    /// \u{2a3f}: '⨿'
-    pub const AMALGAMATION_OR_COPRODUCT: char = '⨿';
-    /// \u{2a40}: '⩀'
-    pub const INTERSECTION_WITH_DOT: char = '⩀';
-    /// \u{2a41}: '⩁'
-    pub const UNION_WITH_MINUS_SIGN: char = '⩁';
-    /// \u{2a42}: '⩂'
-    pub const UNION_WITH_OVERBAR: char = '⩂';
-    /// \u{2a43}: '⩃'
-    pub const INTERSECTION_WITH_OVERBAR: char = '⩃';
-    /// \u{2a44}: '⩄'
-    pub const INTERSECTION_WITH_LOGICAL_AND: char = '⩄';
-    /// \u{2a45}: '⩅'
-    pub const UNION_WITH_LOGICAL_OR: char = '⩅';
-    /// \u{2a46}: '⩆'
-    pub const UNION_ABOVE_INTERSECTION: char = '⩆';
-    /// \u{2a47}: '⩇'
-    pub const INTERSECTION_ABOVE_UNION: char = '⩇';
-    /// \u{2a48}: '⩈'
-    pub const UNION_ABOVE_BAR_ABOVE_INTERSECTION: char = '⩈';
-    /// \u{2a49}: '⩉'
-    pub const INTERSECTION_ABOVE_BAR_ABOVE_UNION: char = '⩉';
-    /// \u{2a4a}: '⩊'
-    pub const UNION_BESIDE_AND_JOINED_WITH_UNION: char = '⩊';
-    /// \u{2a4b}: '⩋'
-    pub const INTERSECTION_BESIDE_AND_JOINED_WITH_INTERSECTION: char = '⩋';
-    /// \u{2a4c}: '⩌'
-    pub const CLOSED_UNION_WITH_SERIFS: char = '⩌';
-    /// \u{2a4d}: '⩍'
-    pub const CLOSED_INTERSECTION_WITH_SERIFS: char = '⩍';
-    /// \u{2a4e}: '⩎'
-    pub const DOUBLE_SQUARE_INTERSECTION: char = '⩎';
-    /// \u{2a4f}: '⩏'
-    pub const DOUBLE_SQUARE_UNION: char = '⩏';
-    /// \u{2a50}: '⩐'
-    pub const CLOSED_UNION_WITH_SERIFS_AND_SMASH_PRODUCT: char = '⩐';
-    /// \u{2a51}: '⩑'
-    pub const LOGICAL_AND_WITH_DOT_ABOVE: char = '⩑';
-    /// \u{2a52}: '⩒'
-    pub const LOGICAL_OR_WITH_DOT_ABOVE: char = '⩒';
-    /// \u{2a53}: '⩓'
-    pub const DOUBLE_LOGICAL_AND: char = '⩓';
-    /// \u{2a54}: '⩔'
-    pub const DOUBLE_LOGICAL_OR: char = '⩔';
-    /// \u{2a55}: '⩕'
-    pub const TWO_INTERSECTING_LOGICAL_AND: char = '⩕';
-    /// \u{2a56}: '⩖'
-    pub const TWO_INTERSECTING_LOGICAL_OR: char = '⩖';
-    /// \u{2a57}: '⩗'
-    pub const SLOPING_LARGE_OR: char = '⩗';
-    /// \u{2a58}: '⩘'
-    pub const SLOPING_LARGE_AND: char = '⩘';
-    /// \u{2a59}: '⩙'
-    pub const LOGICAL_OR_OVERLAPPING_LOGICAL_AND: char = '⩙';
-    /// \u{2a5a}: '⩚'
-    pub const LOGICAL_AND_WITH_MIDDLE_STEM: char = '⩚';
-    /// \u{2a5b}: '⩛'
-    pub const LOGICAL_OR_WITH_MIDDLE_STEM: char = '⩛';
-    /// \u{2a5c}: '⩜'
-    pub const LOGICAL_AND_WITH_HORIZONTAL_DASH: char = '⩜';
-    /// \u{2a5d}: '⩝'
-    pub const LOGICAL_OR_WITH_HORIZONTAL_DASH: char = '⩝';
-    /// \u{2a5e}: '⩞'
-    pub const LOGICAL_AND_WITH_DOUBLE_OVERBAR: char = '⩞';
-    /// \u{2a5f}: '⩟'
-    pub const LOGICAL_AND_WITH_UNDERBAR: char = '⩟';
-    /// \u{2a60}: '⩠'
-    pub const LOGICAL_AND_WITH_DOUBLE_UNDERBAR: char = '⩠';
-    /// \u{2a61}: '⩡'
-    pub const SMALL_VEE_WITH_UNDERBAR: char = '⩡';
-    /// \u{2a62}: '⩢'
-    pub const LOGICAL_OR_WITH_DOUBLE_OVERBAR: char = '⩢';
-    /// \u{2a63}: '⩣'
-    pub const LOGICAL_OR_WITH_DOUBLE_UNDERBAR: char = '⩣';
-    /// \u{2a64}: '⩤'
-    pub const Z_NOTATION_DOMAIN_ANTIRESTRICTION: char = '⩤';
-    /// \u{2a65}: '⩥'
-    pub const Z_NOTATION_RANGE_ANTIRESTRICTION: char = '⩥';
-    /// \u{2a66}: '⩦'
-    pub const EQUALS_SIGN_WITH_DOT_BELOW: char = '⩦';
-    /// \u{2a67}: '⩧'
-    pub const IDENTICAL_WITH_DOT_ABOVE: char = '⩧';
-    /// \u{2a68}: '⩨'
-    pub const TRIPLE_HORIZONTAL_BAR_WITH_DOUBLE_VERTICAL_STROKE: char = '⩨';
-    /// \u{2a69}: '⩩'
-    pub const TRIPLE_HORIZONTAL_BAR_WITH_TRIPLE_VERTICAL_STROKE: char = '⩩';
-    /// \u{2a6a}: '⩪'
-    pub const TILDE_OPERATOR_WITH_DOT_ABOVE: char = '⩪';
-    /// \u{2a6b}: '⩫'
-    pub const TILDE_OPERATOR_WITH_RISING_DOTS: char = '⩫';
-    /// \u{2a6c}: '⩬'
-    pub const SIMILAR_MINUS_SIMILAR: char = '⩬';
-    /// \u{2a6d}: '⩭'
-    pub const CONGRUENT_WITH_DOT_ABOVE: char = '⩭';
-    /// \u{2a6e}: '⩮'
-    pub const EQUALS_WITH_ASTERISK: char = '⩮';
-    /// \u{2a6f}: '⩯'
-    pub const ALMOST_EQUAL_TO_WITH_CIRCUMFLEX_ACCENT: char = '⩯';
-    /// \u{2a70}: '⩰'
-    pub const APPROXIMATELY_EQUAL_OR_EQUAL_TO: char = '⩰';
-    /// \u{2a71}: '⩱'
-    pub const EQUALS_SIGN_ABOVE_PLUS_SIGN: char = '⩱';
-    /// \u{2a72}: '⩲'
-    pub const PLUS_SIGN_ABOVE_EQUALS_SIGN: char = '⩲';
-    /// \u{2a73}: '⩳'
-    pub const EQUALS_SIGN_ABOVE_TILDE_OPERATOR: char = '⩳';
-    /// \u{2a74}: '⩴'
-    pub const DOUBLE_COLON_EQUAL: char = '⩴';
-    /// \u{2a75}: '⩵'
-    pub const TWO_CONSECUTIVE_EQUALS_SIGNS: char = '⩵';
-    /// \u{2a76}: '⩶'
-    pub const THREE_CONSECUTIVE_EQUALS_SIGNS: char = '⩶';
-    /// \u{2a77}: '⩷'
-    pub const EQUALS_SIGN_WITH_TWO_DOTS_ABOVE_AND_TWO_DOTS_BELOW: char = '⩷';
-    /// \u{2a78}: '⩸'
-    pub const EQUIVALENT_WITH_FOUR_DOTS_ABOVE: char = '⩸';
-    /// \u{2a79}: '⩹'
-    pub const LESS_DASH_THAN_WITH_CIRCLE_INSIDE: char = '⩹';
-    /// \u{2a7a}: '⩺'
-    pub const GREATER_DASH_THAN_WITH_CIRCLE_INSIDE: char = '⩺';
-    /// \u{2a7b}: '⩻'
-    pub const LESS_DASH_THAN_WITH_QUESTION_MARK_ABOVE: char = '⩻';
-    /// \u{2a7c}: '⩼'
-    pub const GREATER_DASH_THAN_WITH_QUESTION_MARK_ABOVE: char = '⩼';
-    /// \u{2a7d}: '⩽'
-    pub const LESS_DASH_THAN_OR_SLANTED_EQUAL_TO: char = '⩽';
-    /// \u{2a7e}: '⩾'
-    pub const GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO: char = '⩾';
-    /// \u{2a7f}: '⩿'
-    pub const LESS_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_INSIDE: char = '⩿';
-    /// \u{2a80}: '⪀'
-    pub const GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_INSIDE: char = '⪀';
-    /// \u{2a81}: '⪁'
-    pub const LESS_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE: char = '⪁';
-    /// \u{2a82}: '⪂'
-    pub const GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE: char = '⪂';
-    /// \u{2a83}: '⪃'
-    pub const LESS_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE_RIGHT: char = '⪃';
-    /// \u{2a84}: '⪄'
-    pub const GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE_LEFT: char = '⪄';
-    /// \u{2a85}: '⪅'
-    pub const LESS_DASH_THAN_OR_APPROXIMATE: char = '⪅';
-    /// \u{2a86}: '⪆'
-    pub const GREATER_DASH_THAN_OR_APPROXIMATE: char = '⪆';
-    /// \u{2a87}: '⪇'
-    pub const LESS_DASH_THAN_AND_SINGLE_DASH_LINE_NOT_EQUAL_TO: char = '⪇';
-    /// \u{2a88}: '⪈'
-    pub const GREATER_DASH_THAN_AND_SINGLE_DASH_LINE_NOT_EQUAL_TO: char = '⪈';
-    /// \u{2a89}: '⪉'
-    pub const LESS_DASH_THAN_AND_NOT_APPROXIMATE: char = '⪉';
-    /// \u{2a8a}: '⪊'
-    pub const GREATER_DASH_THAN_AND_NOT_APPROXIMATE: char = '⪊';
-    /// \u{2a8b}: '⪋'
-    pub const LESS_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL_ABOVE_GREATER_DASH_THAN: char = '⪋';
-    /// \u{2a8c}: '⪌'
-    pub const GREATER_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL_ABOVE_LESS_DASH_THAN: char = '⪌';
-    /// \u{2a8d}: '⪍'
-    pub const LESS_DASH_THAN_ABOVE_SIMILAR_OR_EQUAL: char = '⪍';
-    /// \u{2a8e}: '⪎'
-    pub const GREATER_DASH_THAN_ABOVE_SIMILAR_OR_EQUAL: char = '⪎';
-    /// \u{2a8f}: '⪏'
-    pub const LESS_DASH_THAN_ABOVE_SIMILAR_ABOVE_GREATER_DASH_THAN: char = '⪏';
-    /// \u{2a90}: '⪐'
-    pub const GREATER_DASH_THAN_ABOVE_SIMILAR_ABOVE_LESS_DASH_THAN: char = '⪐';
-    /// \u{2a91}: '⪑'
-    pub const LESS_DASH_THAN_ABOVE_GREATER_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL: char = '⪑';
-    /// \u{2a92}: '⪒'
-    pub const GREATER_DASH_THAN_ABOVE_LESS_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL: char = '⪒';
-    /// \u{2a93}: '⪓'
-    pub const LESS_DASH_THAN_ABOVE_SLANTED_EQUAL_ABOVE_GREATER_DASH_THAN_ABOVE_SLANTED_EQUAL: char = '⪓';
-    /// \u{2a94}: '⪔'
-    pub const GREATER_DASH_THAN_ABOVE_SLANTED_EQUAL_ABOVE_LESS_DASH_THAN_ABOVE_SLANTED_EQUAL: char = '⪔';
-    /// \u{2a95}: '⪕'
-    pub const SLANTED_EQUAL_TO_OR_LESS_DASH_THAN: char = '⪕';
-    /// \u{2a96}: '⪖'
-    pub const SLANTED_EQUAL_TO_OR_GREATER_DASH_THAN: char = '⪖';
-    /// \u{2a97}: '⪗'
-    pub const SLANTED_EQUAL_TO_OR_LESS_DASH_THAN_WITH_DOT_INSIDE: char = '⪗';
-    /// \u{2a98}: '⪘'
-    pub const SLANTED_EQUAL_TO_OR_GREATER_DASH_THAN_WITH_DOT_INSIDE: char = '⪘';
-    /// \u{2a99}: '⪙'
-    pub const DOUBLE_DASH_LINE_EQUAL_TO_OR_LESS_DASH_THAN: char = '⪙';
-    /// \u{2a9a}: '⪚'
-    pub const DOUBLE_DASH_LINE_EQUAL_TO_OR_GREATER_DASH_THAN: char = '⪚';
-    /// \u{2a9b}: '⪛'
-    pub const DOUBLE_DASH_LINE_SLANTED_EQUAL_TO_OR_LESS_DASH_THAN: char = '⪛';
-    /// \u{2a9c}: '⪜'
-    pub const DOUBLE_DASH_LINE_SLANTED_EQUAL_TO_OR_GREATER_DASH_THAN: char = '⪜';
-    /// \u{2a9d}: '⪝'
-    pub const SIMILAR_OR_LESS_DASH_THAN: char = '⪝';
-    /// \u{2a9e}: '⪞'
-    pub const SIMILAR_OR_GREATER_DASH_THAN: char = '⪞';
-    /// \u{2a9f}: '⪟'
-    pub const SIMILAR_ABOVE_LESS_DASH_THAN_ABOVE_EQUALS_SIGN: char = '⪟';
-    /// \u{2aa0}: '⪠'
-    pub const SIMILAR_ABOVE_GREATER_DASH_THAN_ABOVE_EQUALS_SIGN: char = '⪠';
-    /// \u{2aa1}: '⪡'
-    pub const DOUBLE_NESTED_LESS_DASH_THAN: char = '⪡';
-    /// \u{2aa2}: '⪢'
-    pub const DOUBLE_NESTED_GREATER_DASH_THAN: char = '⪢';
-    /// \u{2aa3}: '⪣'
-    pub const DOUBLE_NESTED_LESS_DASH_THAN_WITH_UNDERBAR: char = '⪣';
-    /// \u{2aa4}: '⪤'
-    pub const GREATER_DASH_THAN_OVERLAPPING_LESS_DASH_THAN: char = '⪤';
-    /// \u{2aa5}: '⪥'
-    pub const GREATER_DASH_THAN_BESIDE_LESS_DASH_THAN: char = '⪥';
-    /// \u{2aa6}: '⪦'
-    pub const LESS_DASH_THAN_CLOSED_BY_CURVE: char = '⪦';
-    /// \u{2aa7}: '⪧'
-    pub const GREATER_DASH_THAN_CLOSED_BY_CURVE: char = '⪧';
-    /// \u{2aa8}: '⪨'
-    pub const LESS_DASH_THAN_CLOSED_BY_CURVE_ABOVE_SLANTED_EQUAL: char = '⪨';
-    /// \u{2aa9}: '⪩'
-    pub const GREATER_DASH_THAN_CLOSED_BY_CURVE_ABOVE_SLANTED_EQUAL: char = '⪩';
-    /// \u{2aaa}: '⪪'
-    pub const SMALLER_THAN: char = '⪪';
-    /// \u{2aab}: '⪫'
-    pub const LARGER_THAN: char = '⪫';
-    /// \u{2aac}: '⪬'
-    pub const SMALLER_THAN_OR_EQUAL_TO: char = '⪬';
-    /// \u{2aad}: '⪭'
-    pub const LARGER_THAN_OR_EQUAL_TO: char = '⪭';
-    /// \u{2aae}: '⪮'
-    pub const EQUALS_SIGN_WITH_BUMPY_ABOVE: char = '⪮';
-    /// \u{2aaf}: '⪯'
-    pub const PRECEDES_ABOVE_SINGLE_DASH_LINE_EQUALS_SIGN: char = '⪯';
-    /// \u{2ab0}: '⪰'
-    pub const SUCCEEDS_ABOVE_SINGLE_DASH_LINE_EQUALS_SIGN: char = '⪰';
-    /// \u{2ab1}: '⪱'
-    pub const PRECEDES_ABOVE_SINGLE_DASH_LINE_NOT_EQUAL_TO: char = '⪱';
-    /// \u{2ab2}: '⪲'
-    pub const SUCCEEDS_ABOVE_SINGLE_DASH_LINE_NOT_EQUAL_TO: char = '⪲';
-    /// \u{2ab3}: '⪳'
-    pub const PRECEDES_ABOVE_EQUALS_SIGN: char = '⪳';
-    /// \u{2ab4}: '⪴'
-    pub const SUCCEEDS_ABOVE_EQUALS_SIGN: char = '⪴';
-    /// \u{2ab5}: '⪵'
-    pub const PRECEDES_ABOVE_NOT_EQUAL_TO: char = '⪵';
-    /// \u{2ab6}: '⪶'
-    pub const SUCCEEDS_ABOVE_NOT_EQUAL_TO: char = '⪶';
-    /// \u{2ab7}: '⪷'
-    pub const PRECEDES_ABOVE_ALMOST_EQUAL_TO: char = '⪷';
-    /// \u{2ab8}: '⪸'
-    pub const SUCCEEDS_ABOVE_ALMOST_EQUAL_TO: char = '⪸';
-    /// \u{2ab9}: '⪹'
-    pub const PRECEDES_ABOVE_NOT_ALMOST_EQUAL_TO: char = '⪹';
-    /// \u{2aba}: '⪺'
-    pub const SUCCEEDS_ABOVE_NOT_ALMOST_EQUAL_TO: char = '⪺';
-    /// \u{2abb}: '⪻'
-    pub const DOUBLE_PRECEDES: char = '⪻';
-    /// \u{2abc}: '⪼'
-    pub const DOUBLE_SUCCEEDS: char = '⪼';
-    /// \u{2abd}: '⪽'
-    pub const SUBSET_WITH_DOT: char = '⪽';
-    /// \u{2abe}: '⪾'
-    pub const SUPERSET_WITH_DOT: char = '⪾';
-    /// \u{2abf}: '⪿'
-    pub const SUBSET_WITH_PLUS_SIGN_BELOW: char = '⪿';
-    /// \u{2ac0}: '⫀'
-    pub const SUPERSET_WITH_PLUS_SIGN_BELOW: char = '⫀';
-    /// \u{2ac1}: '⫁'
-    pub const SUBSET_WITH_MULTIPLICATION_SIGN_BELOW: char = '⫁';
-    /// \u{2ac2}: '⫂'
-    pub const SUPERSET_WITH_MULTIPLICATION_SIGN_BELOW: char = '⫂';
-    /// \u{2ac3}: '⫃'
-    pub const SUBSET_OF_OR_EQUAL_TO_WITH_DOT_ABOVE: char = '⫃';
-    /// \u{2ac4}: '⫄'
-    pub const SUPERSET_OF_OR_EQUAL_TO_WITH_DOT_ABOVE: char = '⫄';
-    /// \u{2ac5}: '⫅'
-    pub const SUBSET_OF_ABOVE_EQUALS_SIGN: char = '⫅';
-    /// \u{2ac6}: '⫆'
-    pub const SUPERSET_OF_ABOVE_EQUALS_SIGN: char = '⫆';
-    /// \u{2ac7}: '⫇'
-    pub const SUBSET_OF_ABOVE_TILDE_OPERATOR: char = '⫇';
-    /// \u{2ac8}: '⫈'
-    pub const SUPERSET_OF_ABOVE_TILDE_OPERATOR: char = '⫈';
-    /// \u{2ac9}: '⫉'
-    pub const SUBSET_OF_ABOVE_ALMOST_EQUAL_TO: char = '⫉';
-    /// \u{2aca}: '⫊'
-    pub const SUPERSET_OF_ABOVE_ALMOST_EQUAL_TO: char = '⫊';
-    /// \u{2acb}: '⫋'
-    pub const SUBSET_OF_ABOVE_NOT_EQUAL_TO: char = '⫋';
-    /// \u{2acc}: '⫌'
-    pub const SUPERSET_OF_ABOVE_NOT_EQUAL_TO: char = '⫌';
-    /// \u{2acd}: '⫍'
-    pub const SQUARE_LEFT_OPEN_BOX_OPERATOR: char = '⫍';
-    /// \u{2ace}: '⫎'
-    pub const SQUARE_RIGHT_OPEN_BOX_OPERATOR: char = '⫎';
-    /// \u{2acf}: '⫏'
-    pub const CLOSED_SUBSET: char = '⫏';
-    /// \u{2ad0}: '⫐'
-    pub const CLOSED_SUPERSET: char = '⫐';
-    /// \u{2ad1}: '⫑'
-    pub const CLOSED_SUBSET_OR_EQUAL_TO: char = '⫑';
-    /// \u{2ad2}: '⫒'
-    pub const CLOSED_SUPERSET_OR_EQUAL_TO: char = '⫒';
-    /// \u{2ad3}: '⫓'
-    pub const SUBSET_ABOVE_SUPERSET: char = '⫓';
-    /// \u{2ad4}: '⫔'
-    pub const SUPERSET_ABOVE_SUBSET: char = '⫔';
-    /// \u{2ad5}: '⫕'
-    pub const SUBSET_ABOVE_SUBSET: char = '⫕';
-    /// \u{2ad6}: '⫖'
-    pub const SUPERSET_ABOVE_SUPERSET: char = '⫖';
-    /// \u{2ad7}: '⫗'
-    pub const SUPERSET_BESIDE_SUBSET: char = '⫗';
-    /// \u{2ad8}: '⫘'
-    pub const SUPERSET_BESIDE_AND_JOINED_BY_DASH_WITH_SUBSET: char = '⫘';
-    /// \u{2ad9}: '⫙'
-    pub const ELEMENT_OF_OPENING_DOWNWARDS: char = '⫙';
-    /// \u{2ada}: '⫚'
-    pub const PITCHFORK_WITH_TEE_TOP: char = '⫚';
-    /// \u{2adb}: '⫛'
-    pub const TRANSVERSAL_INTERSECTION: char = '⫛';
-    /// \u{2adc}: '⫝̸'
-    pub const FORKING: char = '⫝̸';
-    /// \u{2add}: '⫝'
-    pub const NONFORKING: char = '⫝';
-    /// \u{2ade}: '⫞'
-    pub const SHORT_LEFT_TACK: char = '⫞';
-    /// \u{2adf}: '⫟'
-    pub const SHORT_DOWN_TACK: char = '⫟';
-    /// \u{2ae0}: '⫠'
-    pub const SHORT_UP_TACK: char = '⫠';
-    /// \u{2ae1}: '⫡'
-    pub const PERPENDICULAR_WITH_S: char = '⫡';
-    /// \u{2ae2}: '⫢'
-    pub const VERTICAL_BAR_TRIPLE_RIGHT_TURNSTILE: char = '⫢';
-    /// \u{2ae3}: '⫣'
-    pub const DOUBLE_VERTICAL_BAR_LEFT_TURNSTILE: char = '⫣';
-    /// \u{2ae4}: '⫤'
-    pub const VERTICAL_BAR_DOUBLE_LEFT_TURNSTILE: char = '⫤';
-    /// \u{2ae5}: '⫥'
-    pub const DOUBLE_VERTICAL_BAR_DOUBLE_LEFT_TURNSTILE: char = '⫥';
-    /// \u{2ae6}: '⫦'
-    pub const LONG_DASH_FROM_LEFT_MEMBER_OF_DOUBLE_VERTICAL: char = '⫦';
-    /// \u{2ae7}: '⫧'
-    pub const SHORT_DOWN_TACK_WITH_OVERBAR: char = '⫧';
-    /// \u{2ae8}: '⫨'
-    pub const SHORT_UP_TACK_WITH_UNDERBAR: char = '⫨';
-    /// \u{2ae9}: '⫩'
-    pub const SHORT_UP_TACK_ABOVE_SHORT_DOWN_TACK: char = '⫩';
-    /// \u{2aea}: '⫪'
-    pub const DOUBLE_DOWN_TACK: char = '⫪';
-    /// \u{2aeb}: '⫫'
-    pub const DOUBLE_UP_TACK: char = '⫫';
-    /// \u{2aec}: '⫬'
-    pub const DOUBLE_STROKE_NOT_SIGN: char = '⫬';
-    /// \u{2aed}: '⫭'
-    pub const REVERSED_DOUBLE_STROKE_NOT_SIGN: char = '⫭';
-    /// \u{2aee}: '⫮'
-    pub const DOES_NOT_DIVIDE_WITH_REVERSED_NEGATION_SLASH: char = '⫮';
-    /// \u{2aef}: '⫯'
-    pub const VERTICAL_LINE_WITH_CIRCLE_ABOVE: char = '⫯';
-    /// \u{2af0}: '⫰'
-    pub const VERTICAL_LINE_WITH_CIRCLE_BELOW: char = '⫰';
-    /// \u{2af1}: '⫱'
-    pub const DOWN_TACK_WITH_CIRCLE_BELOW: char = '⫱';
-    /// \u{2af2}: '⫲'
-    pub const PARALLEL_WITH_HORIZONTAL_STROKE: char = '⫲';
-    /// \u{2af3}: '⫳'
-    pub const PARALLEL_WITH_TILDE_OPERATOR: char = '⫳';
-    /// \u{2af4}: '⫴'
-    pub const TRIPLE_VERTICAL_BAR_BINARY_RELATION: char = '⫴';
-    /// \u{2af5}: '⫵'
-    pub const TRIPLE_VERTICAL_BAR_WITH_HORIZONTAL_STROKE: char = '⫵';
-    /// \u{2af6}: '⫶'
-    pub const TRIPLE_COLON_OPERATOR: char = '⫶';
-    /// \u{2af7}: '⫷'
-    pub const TRIPLE_NESTED_LESS_DASH_THAN: char = '⫷';
-    /// \u{2af8}: '⫸'
-    pub const TRIPLE_NESTED_GREATER_DASH_THAN: char = '⫸';
-    /// \u{2af9}: '⫹'
-    pub const DOUBLE_DASH_LINE_SLANTED_LESS_DASH_THAN_OR_EQUAL_TO: char = '⫹';
-    /// \u{2afa}: '⫺'
-    pub const DOUBLE_DASH_LINE_SLANTED_GREATER_DASH_THAN_OR_EQUAL_TO: char = '⫺';
-    /// \u{2afb}: '⫻'
-    pub const TRIPLE_SOLIDUS_BINARY_RELATION: char = '⫻';
-    /// \u{2afc}: '⫼'
-    pub const LARGE_TRIPLE_VERTICAL_BAR_OPERATOR: char = '⫼';
-    /// \u{2afd}: '⫽'
-    pub const DOUBLE_SOLIDUS_OPERATOR: char = '⫽';
-    /// \u{2afe}: '⫾'
-    pub const WHITE_VERTICAL_BAR: char = '⫾';
-}
 
 /// An enum to represent all characters in the SupplementalMathematicalOperators block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -1029,263 +516,262 @@ pub enum SupplementalMathematicalOperators {
 
 impl Into<char> for SupplementalMathematicalOperators {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SupplementalMathematicalOperators::NDashAryCircledDotOperator => N_DASH_ARY_CIRCLED_DOT_OPERATOR,
-            SupplementalMathematicalOperators::NDashAryCircledPlusOperator => N_DASH_ARY_CIRCLED_PLUS_OPERATOR,
-            SupplementalMathematicalOperators::NDashAryCircledTimesOperator => N_DASH_ARY_CIRCLED_TIMES_OPERATOR,
-            SupplementalMathematicalOperators::NDashAryUnionOperatorWithDot => N_DASH_ARY_UNION_OPERATOR_WITH_DOT,
-            SupplementalMathematicalOperators::NDashAryUnionOperatorWithPlus => N_DASH_ARY_UNION_OPERATOR_WITH_PLUS,
-            SupplementalMathematicalOperators::NDashArySquareIntersectionOperator => N_DASH_ARY_SQUARE_INTERSECTION_OPERATOR,
-            SupplementalMathematicalOperators::NDashArySquareUnionOperator => N_DASH_ARY_SQUARE_UNION_OPERATOR,
-            SupplementalMathematicalOperators::TwoLogicalAndOperator => TWO_LOGICAL_AND_OPERATOR,
-            SupplementalMathematicalOperators::TwoLogicalOrOperator => TWO_LOGICAL_OR_OPERATOR,
-            SupplementalMathematicalOperators::NDashAryTimesOperator => N_DASH_ARY_TIMES_OPERATOR,
-            SupplementalMathematicalOperators::ModuloTwoSum => MODULO_TWO_SUM,
-            SupplementalMathematicalOperators::SummationWithIntegral => SUMMATION_WITH_INTEGRAL,
-            SupplementalMathematicalOperators::QuadrupleIntegralOperator => QUADRUPLE_INTEGRAL_OPERATOR,
-            SupplementalMathematicalOperators::FinitePartIntegral => FINITE_PART_INTEGRAL,
-            SupplementalMathematicalOperators::IntegralWithDoubleStroke => INTEGRAL_WITH_DOUBLE_STROKE,
-            SupplementalMathematicalOperators::IntegralAverageWithSlash => INTEGRAL_AVERAGE_WITH_SLASH,
-            SupplementalMathematicalOperators::CirculationFunction => CIRCULATION_FUNCTION,
-            SupplementalMathematicalOperators::AnticlockwiseIntegration => ANTICLOCKWISE_INTEGRATION,
-            SupplementalMathematicalOperators::LineIntegrationWithRectangularPathAroundPole => LINE_INTEGRATION_WITH_RECTANGULAR_PATH_AROUND_POLE,
-            SupplementalMathematicalOperators::LineIntegrationWithSemicircularPathAroundPole => LINE_INTEGRATION_WITH_SEMICIRCULAR_PATH_AROUND_POLE,
-            SupplementalMathematicalOperators::LineIntegrationNotIncludingThePole => LINE_INTEGRATION_NOT_INCLUDING_THE_POLE,
-            SupplementalMathematicalOperators::IntegralAroundAPointOperator => INTEGRAL_AROUND_A_POINT_OPERATOR,
-            SupplementalMathematicalOperators::QuaternionIntegralOperator => QUATERNION_INTEGRAL_OPERATOR,
-            SupplementalMathematicalOperators::IntegralWithLeftwardsArrowWithHook => INTEGRAL_WITH_LEFTWARDS_ARROW_WITH_HOOK,
-            SupplementalMathematicalOperators::IntegralWithTimesSign => INTEGRAL_WITH_TIMES_SIGN,
-            SupplementalMathematicalOperators::IntegralWithIntersection => INTEGRAL_WITH_INTERSECTION,
-            SupplementalMathematicalOperators::IntegralWithUnion => INTEGRAL_WITH_UNION,
-            SupplementalMathematicalOperators::IntegralWithOverbar => INTEGRAL_WITH_OVERBAR,
-            SupplementalMathematicalOperators::IntegralWithUnderbar => INTEGRAL_WITH_UNDERBAR,
-            SupplementalMathematicalOperators::Join => JOIN,
-            SupplementalMathematicalOperators::LargeLeftTriangleOperator => LARGE_LEFT_TRIANGLE_OPERATOR,
-            SupplementalMathematicalOperators::ZNotationSchemaComposition => Z_NOTATION_SCHEMA_COMPOSITION,
-            SupplementalMathematicalOperators::ZNotationSchemaPiping => Z_NOTATION_SCHEMA_PIPING,
-            SupplementalMathematicalOperators::ZNotationSchemaProjection => Z_NOTATION_SCHEMA_PROJECTION,
-            SupplementalMathematicalOperators::PlusSignWithSmallCircleAbove => PLUS_SIGN_WITH_SMALL_CIRCLE_ABOVE,
-            SupplementalMathematicalOperators::PlusSignWithCircumflexAccentAbove => PLUS_SIGN_WITH_CIRCUMFLEX_ACCENT_ABOVE,
-            SupplementalMathematicalOperators::PlusSignWithTildeAbove => PLUS_SIGN_WITH_TILDE_ABOVE,
-            SupplementalMathematicalOperators::PlusSignWithDotBelow => PLUS_SIGN_WITH_DOT_BELOW,
-            SupplementalMathematicalOperators::PlusSignWithTildeBelow => PLUS_SIGN_WITH_TILDE_BELOW,
-            SupplementalMathematicalOperators::PlusSignWithSubscriptTwo => PLUS_SIGN_WITH_SUBSCRIPT_TWO,
-            SupplementalMathematicalOperators::PlusSignWithBlackTriangle => PLUS_SIGN_WITH_BLACK_TRIANGLE,
-            SupplementalMathematicalOperators::MinusSignWithCommaAbove => MINUS_SIGN_WITH_COMMA_ABOVE,
-            SupplementalMathematicalOperators::MinusSignWithDotBelow => MINUS_SIGN_WITH_DOT_BELOW,
-            SupplementalMathematicalOperators::MinusSignWithFallingDots => MINUS_SIGN_WITH_FALLING_DOTS,
-            SupplementalMathematicalOperators::MinusSignWithRisingDots => MINUS_SIGN_WITH_RISING_DOTS,
-            SupplementalMathematicalOperators::PlusSignInLeftHalfCircle => PLUS_SIGN_IN_LEFT_HALF_CIRCLE,
-            SupplementalMathematicalOperators::PlusSignInRightHalfCircle => PLUS_SIGN_IN_RIGHT_HALF_CIRCLE,
-            SupplementalMathematicalOperators::VectorOrCrossProduct => VECTOR_OR_CROSS_PRODUCT,
-            SupplementalMathematicalOperators::MultiplicationSignWithDotAbove => MULTIPLICATION_SIGN_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::MultiplicationSignWithUnderbar => MULTIPLICATION_SIGN_WITH_UNDERBAR,
-            SupplementalMathematicalOperators::SemidirectProductWithBottomClosed => SEMIDIRECT_PRODUCT_WITH_BOTTOM_CLOSED,
-            SupplementalMathematicalOperators::SmashProduct => SMASH_PRODUCT,
-            SupplementalMathematicalOperators::MultiplicationSignInLeftHalfCircle => MULTIPLICATION_SIGN_IN_LEFT_HALF_CIRCLE,
-            SupplementalMathematicalOperators::MultiplicationSignInRightHalfCircle => MULTIPLICATION_SIGN_IN_RIGHT_HALF_CIRCLE,
-            SupplementalMathematicalOperators::CircledMultiplicationSignWithCircumflexAccent => CIRCLED_MULTIPLICATION_SIGN_WITH_CIRCUMFLEX_ACCENT,
-            SupplementalMathematicalOperators::MultiplicationSignInDoubleCircle => MULTIPLICATION_SIGN_IN_DOUBLE_CIRCLE,
-            SupplementalMathematicalOperators::CircledDivisionSign => CIRCLED_DIVISION_SIGN,
-            SupplementalMathematicalOperators::PlusSignInTriangle => PLUS_SIGN_IN_TRIANGLE,
-            SupplementalMathematicalOperators::MinusSignInTriangle => MINUS_SIGN_IN_TRIANGLE,
-            SupplementalMathematicalOperators::MultiplicationSignInTriangle => MULTIPLICATION_SIGN_IN_TRIANGLE,
-            SupplementalMathematicalOperators::InteriorProduct => INTERIOR_PRODUCT,
-            SupplementalMathematicalOperators::RighthandInteriorProduct => RIGHTHAND_INTERIOR_PRODUCT,
-            SupplementalMathematicalOperators::ZNotationRelationalComposition => Z_NOTATION_RELATIONAL_COMPOSITION,
-            SupplementalMathematicalOperators::AmalgamationOrCoproduct => AMALGAMATION_OR_COPRODUCT,
-            SupplementalMathematicalOperators::IntersectionWithDot => INTERSECTION_WITH_DOT,
-            SupplementalMathematicalOperators::UnionWithMinusSign => UNION_WITH_MINUS_SIGN,
-            SupplementalMathematicalOperators::UnionWithOverbar => UNION_WITH_OVERBAR,
-            SupplementalMathematicalOperators::IntersectionWithOverbar => INTERSECTION_WITH_OVERBAR,
-            SupplementalMathematicalOperators::IntersectionWithLogicalAnd => INTERSECTION_WITH_LOGICAL_AND,
-            SupplementalMathematicalOperators::UnionWithLogicalOr => UNION_WITH_LOGICAL_OR,
-            SupplementalMathematicalOperators::UnionAboveIntersection => UNION_ABOVE_INTERSECTION,
-            SupplementalMathematicalOperators::IntersectionAboveUnion => INTERSECTION_ABOVE_UNION,
-            SupplementalMathematicalOperators::UnionAboveBarAboveIntersection => UNION_ABOVE_BAR_ABOVE_INTERSECTION,
-            SupplementalMathematicalOperators::IntersectionAboveBarAboveUnion => INTERSECTION_ABOVE_BAR_ABOVE_UNION,
-            SupplementalMathematicalOperators::UnionBesideAndJoinedWithUnion => UNION_BESIDE_AND_JOINED_WITH_UNION,
-            SupplementalMathematicalOperators::IntersectionBesideAndJoinedWithIntersection => INTERSECTION_BESIDE_AND_JOINED_WITH_INTERSECTION,
-            SupplementalMathematicalOperators::ClosedUnionWithSerifs => CLOSED_UNION_WITH_SERIFS,
-            SupplementalMathematicalOperators::ClosedIntersectionWithSerifs => CLOSED_INTERSECTION_WITH_SERIFS,
-            SupplementalMathematicalOperators::DoubleSquareIntersection => DOUBLE_SQUARE_INTERSECTION,
-            SupplementalMathematicalOperators::DoubleSquareUnion => DOUBLE_SQUARE_UNION,
-            SupplementalMathematicalOperators::ClosedUnionWithSerifsAndSmashProduct => CLOSED_UNION_WITH_SERIFS_AND_SMASH_PRODUCT,
-            SupplementalMathematicalOperators::LogicalAndWithDotAbove => LOGICAL_AND_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::LogicalOrWithDotAbove => LOGICAL_OR_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::DoubleLogicalAnd => DOUBLE_LOGICAL_AND,
-            SupplementalMathematicalOperators::DoubleLogicalOr => DOUBLE_LOGICAL_OR,
-            SupplementalMathematicalOperators::TwoIntersectingLogicalAnd => TWO_INTERSECTING_LOGICAL_AND,
-            SupplementalMathematicalOperators::TwoIntersectingLogicalOr => TWO_INTERSECTING_LOGICAL_OR,
-            SupplementalMathematicalOperators::SlopingLargeOr => SLOPING_LARGE_OR,
-            SupplementalMathematicalOperators::SlopingLargeAnd => SLOPING_LARGE_AND,
-            SupplementalMathematicalOperators::LogicalOrOverlappingLogicalAnd => LOGICAL_OR_OVERLAPPING_LOGICAL_AND,
-            SupplementalMathematicalOperators::LogicalAndWithMiddleStem => LOGICAL_AND_WITH_MIDDLE_STEM,
-            SupplementalMathematicalOperators::LogicalOrWithMiddleStem => LOGICAL_OR_WITH_MIDDLE_STEM,
-            SupplementalMathematicalOperators::LogicalAndWithHorizontalDash => LOGICAL_AND_WITH_HORIZONTAL_DASH,
-            SupplementalMathematicalOperators::LogicalOrWithHorizontalDash => LOGICAL_OR_WITH_HORIZONTAL_DASH,
-            SupplementalMathematicalOperators::LogicalAndWithDoubleOverbar => LOGICAL_AND_WITH_DOUBLE_OVERBAR,
-            SupplementalMathematicalOperators::LogicalAndWithUnderbar => LOGICAL_AND_WITH_UNDERBAR,
-            SupplementalMathematicalOperators::LogicalAndWithDoubleUnderbar => LOGICAL_AND_WITH_DOUBLE_UNDERBAR,
-            SupplementalMathematicalOperators::SmallVeeWithUnderbar => SMALL_VEE_WITH_UNDERBAR,
-            SupplementalMathematicalOperators::LogicalOrWithDoubleOverbar => LOGICAL_OR_WITH_DOUBLE_OVERBAR,
-            SupplementalMathematicalOperators::LogicalOrWithDoubleUnderbar => LOGICAL_OR_WITH_DOUBLE_UNDERBAR,
-            SupplementalMathematicalOperators::ZNotationDomainAntirestriction => Z_NOTATION_DOMAIN_ANTIRESTRICTION,
-            SupplementalMathematicalOperators::ZNotationRangeAntirestriction => Z_NOTATION_RANGE_ANTIRESTRICTION,
-            SupplementalMathematicalOperators::EqualsSignWithDotBelow => EQUALS_SIGN_WITH_DOT_BELOW,
-            SupplementalMathematicalOperators::IdenticalWithDotAbove => IDENTICAL_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::TripleHorizontalBarWithDoubleVerticalStroke => TRIPLE_HORIZONTAL_BAR_WITH_DOUBLE_VERTICAL_STROKE,
-            SupplementalMathematicalOperators::TripleHorizontalBarWithTripleVerticalStroke => TRIPLE_HORIZONTAL_BAR_WITH_TRIPLE_VERTICAL_STROKE,
-            SupplementalMathematicalOperators::TildeOperatorWithDotAbove => TILDE_OPERATOR_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::TildeOperatorWithRisingDots => TILDE_OPERATOR_WITH_RISING_DOTS,
-            SupplementalMathematicalOperators::SimilarMinusSimilar => SIMILAR_MINUS_SIMILAR,
-            SupplementalMathematicalOperators::CongruentWithDotAbove => CONGRUENT_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::EqualsWithAsterisk => EQUALS_WITH_ASTERISK,
-            SupplementalMathematicalOperators::AlmostEqualToWithCircumflexAccent => ALMOST_EQUAL_TO_WITH_CIRCUMFLEX_ACCENT,
-            SupplementalMathematicalOperators::ApproximatelyEqualOrEqualTo => APPROXIMATELY_EQUAL_OR_EQUAL_TO,
-            SupplementalMathematicalOperators::EqualsSignAbovePlusSign => EQUALS_SIGN_ABOVE_PLUS_SIGN,
-            SupplementalMathematicalOperators::PlusSignAboveEqualsSign => PLUS_SIGN_ABOVE_EQUALS_SIGN,
-            SupplementalMathematicalOperators::EqualsSignAboveTildeOperator => EQUALS_SIGN_ABOVE_TILDE_OPERATOR,
-            SupplementalMathematicalOperators::DoubleColonEqual => DOUBLE_COLON_EQUAL,
-            SupplementalMathematicalOperators::TwoConsecutiveEqualsSigns => TWO_CONSECUTIVE_EQUALS_SIGNS,
-            SupplementalMathematicalOperators::ThreeConsecutiveEqualsSigns => THREE_CONSECUTIVE_EQUALS_SIGNS,
-            SupplementalMathematicalOperators::EqualsSignWithTwoDotsAboveAndTwoDotsBelow => EQUALS_SIGN_WITH_TWO_DOTS_ABOVE_AND_TWO_DOTS_BELOW,
-            SupplementalMathematicalOperators::EquivalentWithFourDotsAbove => EQUIVALENT_WITH_FOUR_DOTS_ABOVE,
-            SupplementalMathematicalOperators::LessDashThanWithCircleInside => LESS_DASH_THAN_WITH_CIRCLE_INSIDE,
-            SupplementalMathematicalOperators::GreaterDashThanWithCircleInside => GREATER_DASH_THAN_WITH_CIRCLE_INSIDE,
-            SupplementalMathematicalOperators::LessDashThanWithQuestionMarkAbove => LESS_DASH_THAN_WITH_QUESTION_MARK_ABOVE,
-            SupplementalMathematicalOperators::GreaterDashThanWithQuestionMarkAbove => GREATER_DASH_THAN_WITH_QUESTION_MARK_ABOVE,
-            SupplementalMathematicalOperators::LessDashThanOrSlantedEqualTo => LESS_DASH_THAN_OR_SLANTED_EQUAL_TO,
-            SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualTo => GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO,
-            SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotInside => LESS_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_INSIDE,
-            SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotInside => GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_INSIDE,
-            SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotAbove => LESS_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotAbove => GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotAboveRight => LESS_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE_RIGHT,
-            SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotAboveLeft => GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE_LEFT,
-            SupplementalMathematicalOperators::LessDashThanOrApproximate => LESS_DASH_THAN_OR_APPROXIMATE,
-            SupplementalMathematicalOperators::GreaterDashThanOrApproximate => GREATER_DASH_THAN_OR_APPROXIMATE,
-            SupplementalMathematicalOperators::LessDashThanAndSingleDashLineNotEqualTo => LESS_DASH_THAN_AND_SINGLE_DASH_LINE_NOT_EQUAL_TO,
-            SupplementalMathematicalOperators::GreaterDashThanAndSingleDashLineNotEqualTo => GREATER_DASH_THAN_AND_SINGLE_DASH_LINE_NOT_EQUAL_TO,
-            SupplementalMathematicalOperators::LessDashThanAndNotApproximate => LESS_DASH_THAN_AND_NOT_APPROXIMATE,
-            SupplementalMathematicalOperators::GreaterDashThanAndNotApproximate => GREATER_DASH_THAN_AND_NOT_APPROXIMATE,
-            SupplementalMathematicalOperators::LessDashThanAboveDoubleDashLineEqualAboveGreaterDashThan => LESS_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL_ABOVE_GREATER_DASH_THAN,
-            SupplementalMathematicalOperators::GreaterDashThanAboveDoubleDashLineEqualAboveLessDashThan => GREATER_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL_ABOVE_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::LessDashThanAboveSimilarOrEqual => LESS_DASH_THAN_ABOVE_SIMILAR_OR_EQUAL,
-            SupplementalMathematicalOperators::GreaterDashThanAboveSimilarOrEqual => GREATER_DASH_THAN_ABOVE_SIMILAR_OR_EQUAL,
-            SupplementalMathematicalOperators::LessDashThanAboveSimilarAboveGreaterDashThan => LESS_DASH_THAN_ABOVE_SIMILAR_ABOVE_GREATER_DASH_THAN,
-            SupplementalMathematicalOperators::GreaterDashThanAboveSimilarAboveLessDashThan => GREATER_DASH_THAN_ABOVE_SIMILAR_ABOVE_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::LessDashThanAboveGreaterDashThanAboveDoubleDashLineEqual => LESS_DASH_THAN_ABOVE_GREATER_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL,
-            SupplementalMathematicalOperators::GreaterDashThanAboveLessDashThanAboveDoubleDashLineEqual => GREATER_DASH_THAN_ABOVE_LESS_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL,
-            SupplementalMathematicalOperators::LessDashThanAboveSlantedEqualAboveGreaterDashThanAboveSlantedEqual => LESS_DASH_THAN_ABOVE_SLANTED_EQUAL_ABOVE_GREATER_DASH_THAN_ABOVE_SLANTED_EQUAL,
-            SupplementalMathematicalOperators::GreaterDashThanAboveSlantedEqualAboveLessDashThanAboveSlantedEqual => GREATER_DASH_THAN_ABOVE_SLANTED_EQUAL_ABOVE_LESS_DASH_THAN_ABOVE_SLANTED_EQUAL,
-            SupplementalMathematicalOperators::SlantedEqualToOrLessDashThan => SLANTED_EQUAL_TO_OR_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::SlantedEqualToOrGreaterDashThan => SLANTED_EQUAL_TO_OR_GREATER_DASH_THAN,
-            SupplementalMathematicalOperators::SlantedEqualToOrLessDashThanWithDotInside => SLANTED_EQUAL_TO_OR_LESS_DASH_THAN_WITH_DOT_INSIDE,
-            SupplementalMathematicalOperators::SlantedEqualToOrGreaterDashThanWithDotInside => SLANTED_EQUAL_TO_OR_GREATER_DASH_THAN_WITH_DOT_INSIDE,
-            SupplementalMathematicalOperators::DoubleDashLineEqualToOrLessDashThan => DOUBLE_DASH_LINE_EQUAL_TO_OR_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::DoubleDashLineEqualToOrGreaterDashThan => DOUBLE_DASH_LINE_EQUAL_TO_OR_GREATER_DASH_THAN,
-            SupplementalMathematicalOperators::DoubleDashLineSlantedEqualToOrLessDashThan => DOUBLE_DASH_LINE_SLANTED_EQUAL_TO_OR_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::DoubleDashLineSlantedEqualToOrGreaterDashThan => DOUBLE_DASH_LINE_SLANTED_EQUAL_TO_OR_GREATER_DASH_THAN,
-            SupplementalMathematicalOperators::SimilarOrLessDashThan => SIMILAR_OR_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::SimilarOrGreaterDashThan => SIMILAR_OR_GREATER_DASH_THAN,
-            SupplementalMathematicalOperators::SimilarAboveLessDashThanAboveEqualsSign => SIMILAR_ABOVE_LESS_DASH_THAN_ABOVE_EQUALS_SIGN,
-            SupplementalMathematicalOperators::SimilarAboveGreaterDashThanAboveEqualsSign => SIMILAR_ABOVE_GREATER_DASH_THAN_ABOVE_EQUALS_SIGN,
-            SupplementalMathematicalOperators::DoubleNestedLessDashThan => DOUBLE_NESTED_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::DoubleNestedGreaterDashThan => DOUBLE_NESTED_GREATER_DASH_THAN,
-            SupplementalMathematicalOperators::DoubleNestedLessDashThanWithUnderbar => DOUBLE_NESTED_LESS_DASH_THAN_WITH_UNDERBAR,
-            SupplementalMathematicalOperators::GreaterDashThanOverlappingLessDashThan => GREATER_DASH_THAN_OVERLAPPING_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::GreaterDashThanBesideLessDashThan => GREATER_DASH_THAN_BESIDE_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::LessDashThanClosedByCurve => LESS_DASH_THAN_CLOSED_BY_CURVE,
-            SupplementalMathematicalOperators::GreaterDashThanClosedByCurve => GREATER_DASH_THAN_CLOSED_BY_CURVE,
-            SupplementalMathematicalOperators::LessDashThanClosedByCurveAboveSlantedEqual => LESS_DASH_THAN_CLOSED_BY_CURVE_ABOVE_SLANTED_EQUAL,
-            SupplementalMathematicalOperators::GreaterDashThanClosedByCurveAboveSlantedEqual => GREATER_DASH_THAN_CLOSED_BY_CURVE_ABOVE_SLANTED_EQUAL,
-            SupplementalMathematicalOperators::SmallerThan => SMALLER_THAN,
-            SupplementalMathematicalOperators::LargerThan => LARGER_THAN,
-            SupplementalMathematicalOperators::SmallerThanOrEqualTo => SMALLER_THAN_OR_EQUAL_TO,
-            SupplementalMathematicalOperators::LargerThanOrEqualTo => LARGER_THAN_OR_EQUAL_TO,
-            SupplementalMathematicalOperators::EqualsSignWithBumpyAbove => EQUALS_SIGN_WITH_BUMPY_ABOVE,
-            SupplementalMathematicalOperators::PrecedesAboveSingleDashLineEqualsSign => PRECEDES_ABOVE_SINGLE_DASH_LINE_EQUALS_SIGN,
-            SupplementalMathematicalOperators::SucceedsAboveSingleDashLineEqualsSign => SUCCEEDS_ABOVE_SINGLE_DASH_LINE_EQUALS_SIGN,
-            SupplementalMathematicalOperators::PrecedesAboveSingleDashLineNotEqualTo => PRECEDES_ABOVE_SINGLE_DASH_LINE_NOT_EQUAL_TO,
-            SupplementalMathematicalOperators::SucceedsAboveSingleDashLineNotEqualTo => SUCCEEDS_ABOVE_SINGLE_DASH_LINE_NOT_EQUAL_TO,
-            SupplementalMathematicalOperators::PrecedesAboveEqualsSign => PRECEDES_ABOVE_EQUALS_SIGN,
-            SupplementalMathematicalOperators::SucceedsAboveEqualsSign => SUCCEEDS_ABOVE_EQUALS_SIGN,
-            SupplementalMathematicalOperators::PrecedesAboveNotEqualTo => PRECEDES_ABOVE_NOT_EQUAL_TO,
-            SupplementalMathematicalOperators::SucceedsAboveNotEqualTo => SUCCEEDS_ABOVE_NOT_EQUAL_TO,
-            SupplementalMathematicalOperators::PrecedesAboveAlmostEqualTo => PRECEDES_ABOVE_ALMOST_EQUAL_TO,
-            SupplementalMathematicalOperators::SucceedsAboveAlmostEqualTo => SUCCEEDS_ABOVE_ALMOST_EQUAL_TO,
-            SupplementalMathematicalOperators::PrecedesAboveNotAlmostEqualTo => PRECEDES_ABOVE_NOT_ALMOST_EQUAL_TO,
-            SupplementalMathematicalOperators::SucceedsAboveNotAlmostEqualTo => SUCCEEDS_ABOVE_NOT_ALMOST_EQUAL_TO,
-            SupplementalMathematicalOperators::DoublePrecedes => DOUBLE_PRECEDES,
-            SupplementalMathematicalOperators::DoubleSucceeds => DOUBLE_SUCCEEDS,
-            SupplementalMathematicalOperators::SubsetWithDot => SUBSET_WITH_DOT,
-            SupplementalMathematicalOperators::SupersetWithDot => SUPERSET_WITH_DOT,
-            SupplementalMathematicalOperators::SubsetWithPlusSignBelow => SUBSET_WITH_PLUS_SIGN_BELOW,
-            SupplementalMathematicalOperators::SupersetWithPlusSignBelow => SUPERSET_WITH_PLUS_SIGN_BELOW,
-            SupplementalMathematicalOperators::SubsetWithMultiplicationSignBelow => SUBSET_WITH_MULTIPLICATION_SIGN_BELOW,
-            SupplementalMathematicalOperators::SupersetWithMultiplicationSignBelow => SUPERSET_WITH_MULTIPLICATION_SIGN_BELOW,
-            SupplementalMathematicalOperators::SubsetOfOrEqualToWithDotAbove => SUBSET_OF_OR_EQUAL_TO_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::SupersetOfOrEqualToWithDotAbove => SUPERSET_OF_OR_EQUAL_TO_WITH_DOT_ABOVE,
-            SupplementalMathematicalOperators::SubsetOfAboveEqualsSign => SUBSET_OF_ABOVE_EQUALS_SIGN,
-            SupplementalMathematicalOperators::SupersetOfAboveEqualsSign => SUPERSET_OF_ABOVE_EQUALS_SIGN,
-            SupplementalMathematicalOperators::SubsetOfAboveTildeOperator => SUBSET_OF_ABOVE_TILDE_OPERATOR,
-            SupplementalMathematicalOperators::SupersetOfAboveTildeOperator => SUPERSET_OF_ABOVE_TILDE_OPERATOR,
-            SupplementalMathematicalOperators::SubsetOfAboveAlmostEqualTo => SUBSET_OF_ABOVE_ALMOST_EQUAL_TO,
-            SupplementalMathematicalOperators::SupersetOfAboveAlmostEqualTo => SUPERSET_OF_ABOVE_ALMOST_EQUAL_TO,
-            SupplementalMathematicalOperators::SubsetOfAboveNotEqualTo => SUBSET_OF_ABOVE_NOT_EQUAL_TO,
-            SupplementalMathematicalOperators::SupersetOfAboveNotEqualTo => SUPERSET_OF_ABOVE_NOT_EQUAL_TO,
-            SupplementalMathematicalOperators::SquareLeftOpenBoxOperator => SQUARE_LEFT_OPEN_BOX_OPERATOR,
-            SupplementalMathematicalOperators::SquareRightOpenBoxOperator => SQUARE_RIGHT_OPEN_BOX_OPERATOR,
-            SupplementalMathematicalOperators::ClosedSubset => CLOSED_SUBSET,
-            SupplementalMathematicalOperators::ClosedSuperset => CLOSED_SUPERSET,
-            SupplementalMathematicalOperators::ClosedSubsetOrEqualTo => CLOSED_SUBSET_OR_EQUAL_TO,
-            SupplementalMathematicalOperators::ClosedSupersetOrEqualTo => CLOSED_SUPERSET_OR_EQUAL_TO,
-            SupplementalMathematicalOperators::SubsetAboveSuperset => SUBSET_ABOVE_SUPERSET,
-            SupplementalMathematicalOperators::SupersetAboveSubset => SUPERSET_ABOVE_SUBSET,
-            SupplementalMathematicalOperators::SubsetAboveSubset => SUBSET_ABOVE_SUBSET,
-            SupplementalMathematicalOperators::SupersetAboveSuperset => SUPERSET_ABOVE_SUPERSET,
-            SupplementalMathematicalOperators::SupersetBesideSubset => SUPERSET_BESIDE_SUBSET,
-            SupplementalMathematicalOperators::SupersetBesideAndJoinedByDashWithSubset => SUPERSET_BESIDE_AND_JOINED_BY_DASH_WITH_SUBSET,
-            SupplementalMathematicalOperators::ElementOfOpeningDownwards => ELEMENT_OF_OPENING_DOWNWARDS,
-            SupplementalMathematicalOperators::PitchforkWithTeeTop => PITCHFORK_WITH_TEE_TOP,
-            SupplementalMathematicalOperators::TransversalIntersection => TRANSVERSAL_INTERSECTION,
-            SupplementalMathematicalOperators::Forking => FORKING,
-            SupplementalMathematicalOperators::Nonforking => NONFORKING,
-            SupplementalMathematicalOperators::ShortLeftTack => SHORT_LEFT_TACK,
-            SupplementalMathematicalOperators::ShortDownTack => SHORT_DOWN_TACK,
-            SupplementalMathematicalOperators::ShortUpTack => SHORT_UP_TACK,
-            SupplementalMathematicalOperators::PerpendicularWithS => PERPENDICULAR_WITH_S,
-            SupplementalMathematicalOperators::VerticalBarTripleRightTurnstile => VERTICAL_BAR_TRIPLE_RIGHT_TURNSTILE,
-            SupplementalMathematicalOperators::DoubleVerticalBarLeftTurnstile => DOUBLE_VERTICAL_BAR_LEFT_TURNSTILE,
-            SupplementalMathematicalOperators::VerticalBarDoubleLeftTurnstile => VERTICAL_BAR_DOUBLE_LEFT_TURNSTILE,
-            SupplementalMathematicalOperators::DoubleVerticalBarDoubleLeftTurnstile => DOUBLE_VERTICAL_BAR_DOUBLE_LEFT_TURNSTILE,
-            SupplementalMathematicalOperators::LongDashFromLeftMemberOfDoubleVertical => LONG_DASH_FROM_LEFT_MEMBER_OF_DOUBLE_VERTICAL,
-            SupplementalMathematicalOperators::ShortDownTackWithOverbar => SHORT_DOWN_TACK_WITH_OVERBAR,
-            SupplementalMathematicalOperators::ShortUpTackWithUnderbar => SHORT_UP_TACK_WITH_UNDERBAR,
-            SupplementalMathematicalOperators::ShortUpTackAboveShortDownTack => SHORT_UP_TACK_ABOVE_SHORT_DOWN_TACK,
-            SupplementalMathematicalOperators::DoubleDownTack => DOUBLE_DOWN_TACK,
-            SupplementalMathematicalOperators::DoubleUpTack => DOUBLE_UP_TACK,
-            SupplementalMathematicalOperators::DoubleStrokeNotSign => DOUBLE_STROKE_NOT_SIGN,
-            SupplementalMathematicalOperators::ReversedDoubleStrokeNotSign => REVERSED_DOUBLE_STROKE_NOT_SIGN,
-            SupplementalMathematicalOperators::DoesNotDivideWithReversedNegationSlash => DOES_NOT_DIVIDE_WITH_REVERSED_NEGATION_SLASH,
-            SupplementalMathematicalOperators::VerticalLineWithCircleAbove => VERTICAL_LINE_WITH_CIRCLE_ABOVE,
-            SupplementalMathematicalOperators::VerticalLineWithCircleBelow => VERTICAL_LINE_WITH_CIRCLE_BELOW,
-            SupplementalMathematicalOperators::DownTackWithCircleBelow => DOWN_TACK_WITH_CIRCLE_BELOW,
-            SupplementalMathematicalOperators::ParallelWithHorizontalStroke => PARALLEL_WITH_HORIZONTAL_STROKE,
-            SupplementalMathematicalOperators::ParallelWithTildeOperator => PARALLEL_WITH_TILDE_OPERATOR,
-            SupplementalMathematicalOperators::TripleVerticalBarBinaryRelation => TRIPLE_VERTICAL_BAR_BINARY_RELATION,
-            SupplementalMathematicalOperators::TripleVerticalBarWithHorizontalStroke => TRIPLE_VERTICAL_BAR_WITH_HORIZONTAL_STROKE,
-            SupplementalMathematicalOperators::TripleColonOperator => TRIPLE_COLON_OPERATOR,
-            SupplementalMathematicalOperators::TripleNestedLessDashThan => TRIPLE_NESTED_LESS_DASH_THAN,
-            SupplementalMathematicalOperators::TripleNestedGreaterDashThan => TRIPLE_NESTED_GREATER_DASH_THAN,
-            SupplementalMathematicalOperators::DoubleDashLineSlantedLessDashThanOrEqualTo => DOUBLE_DASH_LINE_SLANTED_LESS_DASH_THAN_OR_EQUAL_TO,
-            SupplementalMathematicalOperators::DoubleDashLineSlantedGreaterDashThanOrEqualTo => DOUBLE_DASH_LINE_SLANTED_GREATER_DASH_THAN_OR_EQUAL_TO,
-            SupplementalMathematicalOperators::TripleSolidusBinaryRelation => TRIPLE_SOLIDUS_BINARY_RELATION,
-            SupplementalMathematicalOperators::LargeTripleVerticalBarOperator => LARGE_TRIPLE_VERTICAL_BAR_OPERATOR,
-            SupplementalMathematicalOperators::DoubleSolidusOperator => DOUBLE_SOLIDUS_OPERATOR,
-            SupplementalMathematicalOperators::WhiteVerticalBar => WHITE_VERTICAL_BAR,
+            SupplementalMathematicalOperators::NDashAryCircledDotOperator => '⨀',
+            SupplementalMathematicalOperators::NDashAryCircledPlusOperator => '⨁',
+            SupplementalMathematicalOperators::NDashAryCircledTimesOperator => '⨂',
+            SupplementalMathematicalOperators::NDashAryUnionOperatorWithDot => '⨃',
+            SupplementalMathematicalOperators::NDashAryUnionOperatorWithPlus => '⨄',
+            SupplementalMathematicalOperators::NDashArySquareIntersectionOperator => '⨅',
+            SupplementalMathematicalOperators::NDashArySquareUnionOperator => '⨆',
+            SupplementalMathematicalOperators::TwoLogicalAndOperator => '⨇',
+            SupplementalMathematicalOperators::TwoLogicalOrOperator => '⨈',
+            SupplementalMathematicalOperators::NDashAryTimesOperator => '⨉',
+            SupplementalMathematicalOperators::ModuloTwoSum => '⨊',
+            SupplementalMathematicalOperators::SummationWithIntegral => '⨋',
+            SupplementalMathematicalOperators::QuadrupleIntegralOperator => '⨌',
+            SupplementalMathematicalOperators::FinitePartIntegral => '⨍',
+            SupplementalMathematicalOperators::IntegralWithDoubleStroke => '⨎',
+            SupplementalMathematicalOperators::IntegralAverageWithSlash => '⨏',
+            SupplementalMathematicalOperators::CirculationFunction => '⨐',
+            SupplementalMathematicalOperators::AnticlockwiseIntegration => '⨑',
+            SupplementalMathematicalOperators::LineIntegrationWithRectangularPathAroundPole => '⨒',
+            SupplementalMathematicalOperators::LineIntegrationWithSemicircularPathAroundPole => '⨓',
+            SupplementalMathematicalOperators::LineIntegrationNotIncludingThePole => '⨔',
+            SupplementalMathematicalOperators::IntegralAroundAPointOperator => '⨕',
+            SupplementalMathematicalOperators::QuaternionIntegralOperator => '⨖',
+            SupplementalMathematicalOperators::IntegralWithLeftwardsArrowWithHook => '⨗',
+            SupplementalMathematicalOperators::IntegralWithTimesSign => '⨘',
+            SupplementalMathematicalOperators::IntegralWithIntersection => '⨙',
+            SupplementalMathematicalOperators::IntegralWithUnion => '⨚',
+            SupplementalMathematicalOperators::IntegralWithOverbar => '⨛',
+            SupplementalMathematicalOperators::IntegralWithUnderbar => '⨜',
+            SupplementalMathematicalOperators::Join => '⨝',
+            SupplementalMathematicalOperators::LargeLeftTriangleOperator => '⨞',
+            SupplementalMathematicalOperators::ZNotationSchemaComposition => '⨟',
+            SupplementalMathematicalOperators::ZNotationSchemaPiping => '⨠',
+            SupplementalMathematicalOperators::ZNotationSchemaProjection => '⨡',
+            SupplementalMathematicalOperators::PlusSignWithSmallCircleAbove => '⨢',
+            SupplementalMathematicalOperators::PlusSignWithCircumflexAccentAbove => '⨣',
+            SupplementalMathematicalOperators::PlusSignWithTildeAbove => '⨤',
+            SupplementalMathematicalOperators::PlusSignWithDotBelow => '⨥',
+            SupplementalMathematicalOperators::PlusSignWithTildeBelow => '⨦',
+            SupplementalMathematicalOperators::PlusSignWithSubscriptTwo => '⨧',
+            SupplementalMathematicalOperators::PlusSignWithBlackTriangle => '⨨',
+            SupplementalMathematicalOperators::MinusSignWithCommaAbove => '⨩',
+            SupplementalMathematicalOperators::MinusSignWithDotBelow => '⨪',
+            SupplementalMathematicalOperators::MinusSignWithFallingDots => '⨫',
+            SupplementalMathematicalOperators::MinusSignWithRisingDots => '⨬',
+            SupplementalMathematicalOperators::PlusSignInLeftHalfCircle => '⨭',
+            SupplementalMathematicalOperators::PlusSignInRightHalfCircle => '⨮',
+            SupplementalMathematicalOperators::VectorOrCrossProduct => '⨯',
+            SupplementalMathematicalOperators::MultiplicationSignWithDotAbove => '⨰',
+            SupplementalMathematicalOperators::MultiplicationSignWithUnderbar => '⨱',
+            SupplementalMathematicalOperators::SemidirectProductWithBottomClosed => '⨲',
+            SupplementalMathematicalOperators::SmashProduct => '⨳',
+            SupplementalMathematicalOperators::MultiplicationSignInLeftHalfCircle => '⨴',
+            SupplementalMathematicalOperators::MultiplicationSignInRightHalfCircle => '⨵',
+            SupplementalMathematicalOperators::CircledMultiplicationSignWithCircumflexAccent => '⨶',
+            SupplementalMathematicalOperators::MultiplicationSignInDoubleCircle => '⨷',
+            SupplementalMathematicalOperators::CircledDivisionSign => '⨸',
+            SupplementalMathematicalOperators::PlusSignInTriangle => '⨹',
+            SupplementalMathematicalOperators::MinusSignInTriangle => '⨺',
+            SupplementalMathematicalOperators::MultiplicationSignInTriangle => '⨻',
+            SupplementalMathematicalOperators::InteriorProduct => '⨼',
+            SupplementalMathematicalOperators::RighthandInteriorProduct => '⨽',
+            SupplementalMathematicalOperators::ZNotationRelationalComposition => '⨾',
+            SupplementalMathematicalOperators::AmalgamationOrCoproduct => '⨿',
+            SupplementalMathematicalOperators::IntersectionWithDot => '⩀',
+            SupplementalMathematicalOperators::UnionWithMinusSign => '⩁',
+            SupplementalMathematicalOperators::UnionWithOverbar => '⩂',
+            SupplementalMathematicalOperators::IntersectionWithOverbar => '⩃',
+            SupplementalMathematicalOperators::IntersectionWithLogicalAnd => '⩄',
+            SupplementalMathematicalOperators::UnionWithLogicalOr => '⩅',
+            SupplementalMathematicalOperators::UnionAboveIntersection => '⩆',
+            SupplementalMathematicalOperators::IntersectionAboveUnion => '⩇',
+            SupplementalMathematicalOperators::UnionAboveBarAboveIntersection => '⩈',
+            SupplementalMathematicalOperators::IntersectionAboveBarAboveUnion => '⩉',
+            SupplementalMathematicalOperators::UnionBesideAndJoinedWithUnion => '⩊',
+            SupplementalMathematicalOperators::IntersectionBesideAndJoinedWithIntersection => '⩋',
+            SupplementalMathematicalOperators::ClosedUnionWithSerifs => '⩌',
+            SupplementalMathematicalOperators::ClosedIntersectionWithSerifs => '⩍',
+            SupplementalMathematicalOperators::DoubleSquareIntersection => '⩎',
+            SupplementalMathematicalOperators::DoubleSquareUnion => '⩏',
+            SupplementalMathematicalOperators::ClosedUnionWithSerifsAndSmashProduct => '⩐',
+            SupplementalMathematicalOperators::LogicalAndWithDotAbove => '⩑',
+            SupplementalMathematicalOperators::LogicalOrWithDotAbove => '⩒',
+            SupplementalMathematicalOperators::DoubleLogicalAnd => '⩓',
+            SupplementalMathematicalOperators::DoubleLogicalOr => '⩔',
+            SupplementalMathematicalOperators::TwoIntersectingLogicalAnd => '⩕',
+            SupplementalMathematicalOperators::TwoIntersectingLogicalOr => '⩖',
+            SupplementalMathematicalOperators::SlopingLargeOr => '⩗',
+            SupplementalMathematicalOperators::SlopingLargeAnd => '⩘',
+            SupplementalMathematicalOperators::LogicalOrOverlappingLogicalAnd => '⩙',
+            SupplementalMathematicalOperators::LogicalAndWithMiddleStem => '⩚',
+            SupplementalMathematicalOperators::LogicalOrWithMiddleStem => '⩛',
+            SupplementalMathematicalOperators::LogicalAndWithHorizontalDash => '⩜',
+            SupplementalMathematicalOperators::LogicalOrWithHorizontalDash => '⩝',
+            SupplementalMathematicalOperators::LogicalAndWithDoubleOverbar => '⩞',
+            SupplementalMathematicalOperators::LogicalAndWithUnderbar => '⩟',
+            SupplementalMathematicalOperators::LogicalAndWithDoubleUnderbar => '⩠',
+            SupplementalMathematicalOperators::SmallVeeWithUnderbar => '⩡',
+            SupplementalMathematicalOperators::LogicalOrWithDoubleOverbar => '⩢',
+            SupplementalMathematicalOperators::LogicalOrWithDoubleUnderbar => '⩣',
+            SupplementalMathematicalOperators::ZNotationDomainAntirestriction => '⩤',
+            SupplementalMathematicalOperators::ZNotationRangeAntirestriction => '⩥',
+            SupplementalMathematicalOperators::EqualsSignWithDotBelow => '⩦',
+            SupplementalMathematicalOperators::IdenticalWithDotAbove => '⩧',
+            SupplementalMathematicalOperators::TripleHorizontalBarWithDoubleVerticalStroke => '⩨',
+            SupplementalMathematicalOperators::TripleHorizontalBarWithTripleVerticalStroke => '⩩',
+            SupplementalMathematicalOperators::TildeOperatorWithDotAbove => '⩪',
+            SupplementalMathematicalOperators::TildeOperatorWithRisingDots => '⩫',
+            SupplementalMathematicalOperators::SimilarMinusSimilar => '⩬',
+            SupplementalMathematicalOperators::CongruentWithDotAbove => '⩭',
+            SupplementalMathematicalOperators::EqualsWithAsterisk => '⩮',
+            SupplementalMathematicalOperators::AlmostEqualToWithCircumflexAccent => '⩯',
+            SupplementalMathematicalOperators::ApproximatelyEqualOrEqualTo => '⩰',
+            SupplementalMathematicalOperators::EqualsSignAbovePlusSign => '⩱',
+            SupplementalMathematicalOperators::PlusSignAboveEqualsSign => '⩲',
+            SupplementalMathematicalOperators::EqualsSignAboveTildeOperator => '⩳',
+            SupplementalMathematicalOperators::DoubleColonEqual => '⩴',
+            SupplementalMathematicalOperators::TwoConsecutiveEqualsSigns => '⩵',
+            SupplementalMathematicalOperators::ThreeConsecutiveEqualsSigns => '⩶',
+            SupplementalMathematicalOperators::EqualsSignWithTwoDotsAboveAndTwoDotsBelow => '⩷',
+            SupplementalMathematicalOperators::EquivalentWithFourDotsAbove => '⩸',
+            SupplementalMathematicalOperators::LessDashThanWithCircleInside => '⩹',
+            SupplementalMathematicalOperators::GreaterDashThanWithCircleInside => '⩺',
+            SupplementalMathematicalOperators::LessDashThanWithQuestionMarkAbove => '⩻',
+            SupplementalMathematicalOperators::GreaterDashThanWithQuestionMarkAbove => '⩼',
+            SupplementalMathematicalOperators::LessDashThanOrSlantedEqualTo => '⩽',
+            SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualTo => '⩾',
+            SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotInside => '⩿',
+            SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotInside => '⪀',
+            SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotAbove => '⪁',
+            SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotAbove => '⪂',
+            SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotAboveRight => '⪃',
+            SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotAboveLeft => '⪄',
+            SupplementalMathematicalOperators::LessDashThanOrApproximate => '⪅',
+            SupplementalMathematicalOperators::GreaterDashThanOrApproximate => '⪆',
+            SupplementalMathematicalOperators::LessDashThanAndSingleDashLineNotEqualTo => '⪇',
+            SupplementalMathematicalOperators::GreaterDashThanAndSingleDashLineNotEqualTo => '⪈',
+            SupplementalMathematicalOperators::LessDashThanAndNotApproximate => '⪉',
+            SupplementalMathematicalOperators::GreaterDashThanAndNotApproximate => '⪊',
+            SupplementalMathematicalOperators::LessDashThanAboveDoubleDashLineEqualAboveGreaterDashThan => '⪋',
+            SupplementalMathematicalOperators::GreaterDashThanAboveDoubleDashLineEqualAboveLessDashThan => '⪌',
+            SupplementalMathematicalOperators::LessDashThanAboveSimilarOrEqual => '⪍',
+            SupplementalMathematicalOperators::GreaterDashThanAboveSimilarOrEqual => '⪎',
+            SupplementalMathematicalOperators::LessDashThanAboveSimilarAboveGreaterDashThan => '⪏',
+            SupplementalMathematicalOperators::GreaterDashThanAboveSimilarAboveLessDashThan => '⪐',
+            SupplementalMathematicalOperators::LessDashThanAboveGreaterDashThanAboveDoubleDashLineEqual => '⪑',
+            SupplementalMathematicalOperators::GreaterDashThanAboveLessDashThanAboveDoubleDashLineEqual => '⪒',
+            SupplementalMathematicalOperators::LessDashThanAboveSlantedEqualAboveGreaterDashThanAboveSlantedEqual => '⪓',
+            SupplementalMathematicalOperators::GreaterDashThanAboveSlantedEqualAboveLessDashThanAboveSlantedEqual => '⪔',
+            SupplementalMathematicalOperators::SlantedEqualToOrLessDashThan => '⪕',
+            SupplementalMathematicalOperators::SlantedEqualToOrGreaterDashThan => '⪖',
+            SupplementalMathematicalOperators::SlantedEqualToOrLessDashThanWithDotInside => '⪗',
+            SupplementalMathematicalOperators::SlantedEqualToOrGreaterDashThanWithDotInside => '⪘',
+            SupplementalMathematicalOperators::DoubleDashLineEqualToOrLessDashThan => '⪙',
+            SupplementalMathematicalOperators::DoubleDashLineEqualToOrGreaterDashThan => '⪚',
+            SupplementalMathematicalOperators::DoubleDashLineSlantedEqualToOrLessDashThan => '⪛',
+            SupplementalMathematicalOperators::DoubleDashLineSlantedEqualToOrGreaterDashThan => '⪜',
+            SupplementalMathematicalOperators::SimilarOrLessDashThan => '⪝',
+            SupplementalMathematicalOperators::SimilarOrGreaterDashThan => '⪞',
+            SupplementalMathematicalOperators::SimilarAboveLessDashThanAboveEqualsSign => '⪟',
+            SupplementalMathematicalOperators::SimilarAboveGreaterDashThanAboveEqualsSign => '⪠',
+            SupplementalMathematicalOperators::DoubleNestedLessDashThan => '⪡',
+            SupplementalMathematicalOperators::DoubleNestedGreaterDashThan => '⪢',
+            SupplementalMathematicalOperators::DoubleNestedLessDashThanWithUnderbar => '⪣',
+            SupplementalMathematicalOperators::GreaterDashThanOverlappingLessDashThan => '⪤',
+            SupplementalMathematicalOperators::GreaterDashThanBesideLessDashThan => '⪥',
+            SupplementalMathematicalOperators::LessDashThanClosedByCurve => '⪦',
+            SupplementalMathematicalOperators::GreaterDashThanClosedByCurve => '⪧',
+            SupplementalMathematicalOperators::LessDashThanClosedByCurveAboveSlantedEqual => '⪨',
+            SupplementalMathematicalOperators::GreaterDashThanClosedByCurveAboveSlantedEqual => '⪩',
+            SupplementalMathematicalOperators::SmallerThan => '⪪',
+            SupplementalMathematicalOperators::LargerThan => '⪫',
+            SupplementalMathematicalOperators::SmallerThanOrEqualTo => '⪬',
+            SupplementalMathematicalOperators::LargerThanOrEqualTo => '⪭',
+            SupplementalMathematicalOperators::EqualsSignWithBumpyAbove => '⪮',
+            SupplementalMathematicalOperators::PrecedesAboveSingleDashLineEqualsSign => '⪯',
+            SupplementalMathematicalOperators::SucceedsAboveSingleDashLineEqualsSign => '⪰',
+            SupplementalMathematicalOperators::PrecedesAboveSingleDashLineNotEqualTo => '⪱',
+            SupplementalMathematicalOperators::SucceedsAboveSingleDashLineNotEqualTo => '⪲',
+            SupplementalMathematicalOperators::PrecedesAboveEqualsSign => '⪳',
+            SupplementalMathematicalOperators::SucceedsAboveEqualsSign => '⪴',
+            SupplementalMathematicalOperators::PrecedesAboveNotEqualTo => '⪵',
+            SupplementalMathematicalOperators::SucceedsAboveNotEqualTo => '⪶',
+            SupplementalMathematicalOperators::PrecedesAboveAlmostEqualTo => '⪷',
+            SupplementalMathematicalOperators::SucceedsAboveAlmostEqualTo => '⪸',
+            SupplementalMathematicalOperators::PrecedesAboveNotAlmostEqualTo => '⪹',
+            SupplementalMathematicalOperators::SucceedsAboveNotAlmostEqualTo => '⪺',
+            SupplementalMathematicalOperators::DoublePrecedes => '⪻',
+            SupplementalMathematicalOperators::DoubleSucceeds => '⪼',
+            SupplementalMathematicalOperators::SubsetWithDot => '⪽',
+            SupplementalMathematicalOperators::SupersetWithDot => '⪾',
+            SupplementalMathematicalOperators::SubsetWithPlusSignBelow => '⪿',
+            SupplementalMathematicalOperators::SupersetWithPlusSignBelow => '⫀',
+            SupplementalMathematicalOperators::SubsetWithMultiplicationSignBelow => '⫁',
+            SupplementalMathematicalOperators::SupersetWithMultiplicationSignBelow => '⫂',
+            SupplementalMathematicalOperators::SubsetOfOrEqualToWithDotAbove => '⫃',
+            SupplementalMathematicalOperators::SupersetOfOrEqualToWithDotAbove => '⫄',
+            SupplementalMathematicalOperators::SubsetOfAboveEqualsSign => '⫅',
+            SupplementalMathematicalOperators::SupersetOfAboveEqualsSign => '⫆',
+            SupplementalMathematicalOperators::SubsetOfAboveTildeOperator => '⫇',
+            SupplementalMathematicalOperators::SupersetOfAboveTildeOperator => '⫈',
+            SupplementalMathematicalOperators::SubsetOfAboveAlmostEqualTo => '⫉',
+            SupplementalMathematicalOperators::SupersetOfAboveAlmostEqualTo => '⫊',
+            SupplementalMathematicalOperators::SubsetOfAboveNotEqualTo => '⫋',
+            SupplementalMathematicalOperators::SupersetOfAboveNotEqualTo => '⫌',
+            SupplementalMathematicalOperators::SquareLeftOpenBoxOperator => '⫍',
+            SupplementalMathematicalOperators::SquareRightOpenBoxOperator => '⫎',
+            SupplementalMathematicalOperators::ClosedSubset => '⫏',
+            SupplementalMathematicalOperators::ClosedSuperset => '⫐',
+            SupplementalMathematicalOperators::ClosedSubsetOrEqualTo => '⫑',
+            SupplementalMathematicalOperators::ClosedSupersetOrEqualTo => '⫒',
+            SupplementalMathematicalOperators::SubsetAboveSuperset => '⫓',
+            SupplementalMathematicalOperators::SupersetAboveSubset => '⫔',
+            SupplementalMathematicalOperators::SubsetAboveSubset => '⫕',
+            SupplementalMathematicalOperators::SupersetAboveSuperset => '⫖',
+            SupplementalMathematicalOperators::SupersetBesideSubset => '⫗',
+            SupplementalMathematicalOperators::SupersetBesideAndJoinedByDashWithSubset => '⫘',
+            SupplementalMathematicalOperators::ElementOfOpeningDownwards => '⫙',
+            SupplementalMathematicalOperators::PitchforkWithTeeTop => '⫚',
+            SupplementalMathematicalOperators::TransversalIntersection => '⫛',
+            SupplementalMathematicalOperators::Forking => '⫝̸',
+            SupplementalMathematicalOperators::Nonforking => '⫝',
+            SupplementalMathematicalOperators::ShortLeftTack => '⫞',
+            SupplementalMathematicalOperators::ShortDownTack => '⫟',
+            SupplementalMathematicalOperators::ShortUpTack => '⫠',
+            SupplementalMathematicalOperators::PerpendicularWithS => '⫡',
+            SupplementalMathematicalOperators::VerticalBarTripleRightTurnstile => '⫢',
+            SupplementalMathematicalOperators::DoubleVerticalBarLeftTurnstile => '⫣',
+            SupplementalMathematicalOperators::VerticalBarDoubleLeftTurnstile => '⫤',
+            SupplementalMathematicalOperators::DoubleVerticalBarDoubleLeftTurnstile => '⫥',
+            SupplementalMathematicalOperators::LongDashFromLeftMemberOfDoubleVertical => '⫦',
+            SupplementalMathematicalOperators::ShortDownTackWithOverbar => '⫧',
+            SupplementalMathematicalOperators::ShortUpTackWithUnderbar => '⫨',
+            SupplementalMathematicalOperators::ShortUpTackAboveShortDownTack => '⫩',
+            SupplementalMathematicalOperators::DoubleDownTack => '⫪',
+            SupplementalMathematicalOperators::DoubleUpTack => '⫫',
+            SupplementalMathematicalOperators::DoubleStrokeNotSign => '⫬',
+            SupplementalMathematicalOperators::ReversedDoubleStrokeNotSign => '⫭',
+            SupplementalMathematicalOperators::DoesNotDivideWithReversedNegationSlash => '⫮',
+            SupplementalMathematicalOperators::VerticalLineWithCircleAbove => '⫯',
+            SupplementalMathematicalOperators::VerticalLineWithCircleBelow => '⫰',
+            SupplementalMathematicalOperators::DownTackWithCircleBelow => '⫱',
+            SupplementalMathematicalOperators::ParallelWithHorizontalStroke => '⫲',
+            SupplementalMathematicalOperators::ParallelWithTildeOperator => '⫳',
+            SupplementalMathematicalOperators::TripleVerticalBarBinaryRelation => '⫴',
+            SupplementalMathematicalOperators::TripleVerticalBarWithHorizontalStroke => '⫵',
+            SupplementalMathematicalOperators::TripleColonOperator => '⫶',
+            SupplementalMathematicalOperators::TripleNestedLessDashThan => '⫷',
+            SupplementalMathematicalOperators::TripleNestedGreaterDashThan => '⫸',
+            SupplementalMathematicalOperators::DoubleDashLineSlantedLessDashThanOrEqualTo => '⫹',
+            SupplementalMathematicalOperators::DoubleDashLineSlantedGreaterDashThanOrEqualTo => '⫺',
+            SupplementalMathematicalOperators::TripleSolidusBinaryRelation => '⫻',
+            SupplementalMathematicalOperators::LargeTripleVerticalBarOperator => '⫼',
+            SupplementalMathematicalOperators::DoubleSolidusOperator => '⫽',
+            SupplementalMathematicalOperators::WhiteVerticalBar => '⫾',
         }
     }
 }
@@ -1293,263 +779,262 @@ impl Into<char> for SupplementalMathematicalOperators {
 impl std::convert::TryFrom<char> for SupplementalMathematicalOperators {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            N_DASH_ARY_CIRCLED_DOT_OPERATOR => Ok(SupplementalMathematicalOperators::NDashAryCircledDotOperator),
-            N_DASH_ARY_CIRCLED_PLUS_OPERATOR => Ok(SupplementalMathematicalOperators::NDashAryCircledPlusOperator),
-            N_DASH_ARY_CIRCLED_TIMES_OPERATOR => Ok(SupplementalMathematicalOperators::NDashAryCircledTimesOperator),
-            N_DASH_ARY_UNION_OPERATOR_WITH_DOT => Ok(SupplementalMathematicalOperators::NDashAryUnionOperatorWithDot),
-            N_DASH_ARY_UNION_OPERATOR_WITH_PLUS => Ok(SupplementalMathematicalOperators::NDashAryUnionOperatorWithPlus),
-            N_DASH_ARY_SQUARE_INTERSECTION_OPERATOR => Ok(SupplementalMathematicalOperators::NDashArySquareIntersectionOperator),
-            N_DASH_ARY_SQUARE_UNION_OPERATOR => Ok(SupplementalMathematicalOperators::NDashArySquareUnionOperator),
-            TWO_LOGICAL_AND_OPERATOR => Ok(SupplementalMathematicalOperators::TwoLogicalAndOperator),
-            TWO_LOGICAL_OR_OPERATOR => Ok(SupplementalMathematicalOperators::TwoLogicalOrOperator),
-            N_DASH_ARY_TIMES_OPERATOR => Ok(SupplementalMathematicalOperators::NDashAryTimesOperator),
-            MODULO_TWO_SUM => Ok(SupplementalMathematicalOperators::ModuloTwoSum),
-            SUMMATION_WITH_INTEGRAL => Ok(SupplementalMathematicalOperators::SummationWithIntegral),
-            QUADRUPLE_INTEGRAL_OPERATOR => Ok(SupplementalMathematicalOperators::QuadrupleIntegralOperator),
-            FINITE_PART_INTEGRAL => Ok(SupplementalMathematicalOperators::FinitePartIntegral),
-            INTEGRAL_WITH_DOUBLE_STROKE => Ok(SupplementalMathematicalOperators::IntegralWithDoubleStroke),
-            INTEGRAL_AVERAGE_WITH_SLASH => Ok(SupplementalMathematicalOperators::IntegralAverageWithSlash),
-            CIRCULATION_FUNCTION => Ok(SupplementalMathematicalOperators::CirculationFunction),
-            ANTICLOCKWISE_INTEGRATION => Ok(SupplementalMathematicalOperators::AnticlockwiseIntegration),
-            LINE_INTEGRATION_WITH_RECTANGULAR_PATH_AROUND_POLE => Ok(SupplementalMathematicalOperators::LineIntegrationWithRectangularPathAroundPole),
-            LINE_INTEGRATION_WITH_SEMICIRCULAR_PATH_AROUND_POLE => Ok(SupplementalMathematicalOperators::LineIntegrationWithSemicircularPathAroundPole),
-            LINE_INTEGRATION_NOT_INCLUDING_THE_POLE => Ok(SupplementalMathematicalOperators::LineIntegrationNotIncludingThePole),
-            INTEGRAL_AROUND_A_POINT_OPERATOR => Ok(SupplementalMathematicalOperators::IntegralAroundAPointOperator),
-            QUATERNION_INTEGRAL_OPERATOR => Ok(SupplementalMathematicalOperators::QuaternionIntegralOperator),
-            INTEGRAL_WITH_LEFTWARDS_ARROW_WITH_HOOK => Ok(SupplementalMathematicalOperators::IntegralWithLeftwardsArrowWithHook),
-            INTEGRAL_WITH_TIMES_SIGN => Ok(SupplementalMathematicalOperators::IntegralWithTimesSign),
-            INTEGRAL_WITH_INTERSECTION => Ok(SupplementalMathematicalOperators::IntegralWithIntersection),
-            INTEGRAL_WITH_UNION => Ok(SupplementalMathematicalOperators::IntegralWithUnion),
-            INTEGRAL_WITH_OVERBAR => Ok(SupplementalMathematicalOperators::IntegralWithOverbar),
-            INTEGRAL_WITH_UNDERBAR => Ok(SupplementalMathematicalOperators::IntegralWithUnderbar),
-            JOIN => Ok(SupplementalMathematicalOperators::Join),
-            LARGE_LEFT_TRIANGLE_OPERATOR => Ok(SupplementalMathematicalOperators::LargeLeftTriangleOperator),
-            Z_NOTATION_SCHEMA_COMPOSITION => Ok(SupplementalMathematicalOperators::ZNotationSchemaComposition),
-            Z_NOTATION_SCHEMA_PIPING => Ok(SupplementalMathematicalOperators::ZNotationSchemaPiping),
-            Z_NOTATION_SCHEMA_PROJECTION => Ok(SupplementalMathematicalOperators::ZNotationSchemaProjection),
-            PLUS_SIGN_WITH_SMALL_CIRCLE_ABOVE => Ok(SupplementalMathematicalOperators::PlusSignWithSmallCircleAbove),
-            PLUS_SIGN_WITH_CIRCUMFLEX_ACCENT_ABOVE => Ok(SupplementalMathematicalOperators::PlusSignWithCircumflexAccentAbove),
-            PLUS_SIGN_WITH_TILDE_ABOVE => Ok(SupplementalMathematicalOperators::PlusSignWithTildeAbove),
-            PLUS_SIGN_WITH_DOT_BELOW => Ok(SupplementalMathematicalOperators::PlusSignWithDotBelow),
-            PLUS_SIGN_WITH_TILDE_BELOW => Ok(SupplementalMathematicalOperators::PlusSignWithTildeBelow),
-            PLUS_SIGN_WITH_SUBSCRIPT_TWO => Ok(SupplementalMathematicalOperators::PlusSignWithSubscriptTwo),
-            PLUS_SIGN_WITH_BLACK_TRIANGLE => Ok(SupplementalMathematicalOperators::PlusSignWithBlackTriangle),
-            MINUS_SIGN_WITH_COMMA_ABOVE => Ok(SupplementalMathematicalOperators::MinusSignWithCommaAbove),
-            MINUS_SIGN_WITH_DOT_BELOW => Ok(SupplementalMathematicalOperators::MinusSignWithDotBelow),
-            MINUS_SIGN_WITH_FALLING_DOTS => Ok(SupplementalMathematicalOperators::MinusSignWithFallingDots),
-            MINUS_SIGN_WITH_RISING_DOTS => Ok(SupplementalMathematicalOperators::MinusSignWithRisingDots),
-            PLUS_SIGN_IN_LEFT_HALF_CIRCLE => Ok(SupplementalMathematicalOperators::PlusSignInLeftHalfCircle),
-            PLUS_SIGN_IN_RIGHT_HALF_CIRCLE => Ok(SupplementalMathematicalOperators::PlusSignInRightHalfCircle),
-            VECTOR_OR_CROSS_PRODUCT => Ok(SupplementalMathematicalOperators::VectorOrCrossProduct),
-            MULTIPLICATION_SIGN_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::MultiplicationSignWithDotAbove),
-            MULTIPLICATION_SIGN_WITH_UNDERBAR => Ok(SupplementalMathematicalOperators::MultiplicationSignWithUnderbar),
-            SEMIDIRECT_PRODUCT_WITH_BOTTOM_CLOSED => Ok(SupplementalMathematicalOperators::SemidirectProductWithBottomClosed),
-            SMASH_PRODUCT => Ok(SupplementalMathematicalOperators::SmashProduct),
-            MULTIPLICATION_SIGN_IN_LEFT_HALF_CIRCLE => Ok(SupplementalMathematicalOperators::MultiplicationSignInLeftHalfCircle),
-            MULTIPLICATION_SIGN_IN_RIGHT_HALF_CIRCLE => Ok(SupplementalMathematicalOperators::MultiplicationSignInRightHalfCircle),
-            CIRCLED_MULTIPLICATION_SIGN_WITH_CIRCUMFLEX_ACCENT => Ok(SupplementalMathematicalOperators::CircledMultiplicationSignWithCircumflexAccent),
-            MULTIPLICATION_SIGN_IN_DOUBLE_CIRCLE => Ok(SupplementalMathematicalOperators::MultiplicationSignInDoubleCircle),
-            CIRCLED_DIVISION_SIGN => Ok(SupplementalMathematicalOperators::CircledDivisionSign),
-            PLUS_SIGN_IN_TRIANGLE => Ok(SupplementalMathematicalOperators::PlusSignInTriangle),
-            MINUS_SIGN_IN_TRIANGLE => Ok(SupplementalMathematicalOperators::MinusSignInTriangle),
-            MULTIPLICATION_SIGN_IN_TRIANGLE => Ok(SupplementalMathematicalOperators::MultiplicationSignInTriangle),
-            INTERIOR_PRODUCT => Ok(SupplementalMathematicalOperators::InteriorProduct),
-            RIGHTHAND_INTERIOR_PRODUCT => Ok(SupplementalMathematicalOperators::RighthandInteriorProduct),
-            Z_NOTATION_RELATIONAL_COMPOSITION => Ok(SupplementalMathematicalOperators::ZNotationRelationalComposition),
-            AMALGAMATION_OR_COPRODUCT => Ok(SupplementalMathematicalOperators::AmalgamationOrCoproduct),
-            INTERSECTION_WITH_DOT => Ok(SupplementalMathematicalOperators::IntersectionWithDot),
-            UNION_WITH_MINUS_SIGN => Ok(SupplementalMathematicalOperators::UnionWithMinusSign),
-            UNION_WITH_OVERBAR => Ok(SupplementalMathematicalOperators::UnionWithOverbar),
-            INTERSECTION_WITH_OVERBAR => Ok(SupplementalMathematicalOperators::IntersectionWithOverbar),
-            INTERSECTION_WITH_LOGICAL_AND => Ok(SupplementalMathematicalOperators::IntersectionWithLogicalAnd),
-            UNION_WITH_LOGICAL_OR => Ok(SupplementalMathematicalOperators::UnionWithLogicalOr),
-            UNION_ABOVE_INTERSECTION => Ok(SupplementalMathematicalOperators::UnionAboveIntersection),
-            INTERSECTION_ABOVE_UNION => Ok(SupplementalMathematicalOperators::IntersectionAboveUnion),
-            UNION_ABOVE_BAR_ABOVE_INTERSECTION => Ok(SupplementalMathematicalOperators::UnionAboveBarAboveIntersection),
-            INTERSECTION_ABOVE_BAR_ABOVE_UNION => Ok(SupplementalMathematicalOperators::IntersectionAboveBarAboveUnion),
-            UNION_BESIDE_AND_JOINED_WITH_UNION => Ok(SupplementalMathematicalOperators::UnionBesideAndJoinedWithUnion),
-            INTERSECTION_BESIDE_AND_JOINED_WITH_INTERSECTION => Ok(SupplementalMathematicalOperators::IntersectionBesideAndJoinedWithIntersection),
-            CLOSED_UNION_WITH_SERIFS => Ok(SupplementalMathematicalOperators::ClosedUnionWithSerifs),
-            CLOSED_INTERSECTION_WITH_SERIFS => Ok(SupplementalMathematicalOperators::ClosedIntersectionWithSerifs),
-            DOUBLE_SQUARE_INTERSECTION => Ok(SupplementalMathematicalOperators::DoubleSquareIntersection),
-            DOUBLE_SQUARE_UNION => Ok(SupplementalMathematicalOperators::DoubleSquareUnion),
-            CLOSED_UNION_WITH_SERIFS_AND_SMASH_PRODUCT => Ok(SupplementalMathematicalOperators::ClosedUnionWithSerifsAndSmashProduct),
-            LOGICAL_AND_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::LogicalAndWithDotAbove),
-            LOGICAL_OR_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::LogicalOrWithDotAbove),
-            DOUBLE_LOGICAL_AND => Ok(SupplementalMathematicalOperators::DoubleLogicalAnd),
-            DOUBLE_LOGICAL_OR => Ok(SupplementalMathematicalOperators::DoubleLogicalOr),
-            TWO_INTERSECTING_LOGICAL_AND => Ok(SupplementalMathematicalOperators::TwoIntersectingLogicalAnd),
-            TWO_INTERSECTING_LOGICAL_OR => Ok(SupplementalMathematicalOperators::TwoIntersectingLogicalOr),
-            SLOPING_LARGE_OR => Ok(SupplementalMathematicalOperators::SlopingLargeOr),
-            SLOPING_LARGE_AND => Ok(SupplementalMathematicalOperators::SlopingLargeAnd),
-            LOGICAL_OR_OVERLAPPING_LOGICAL_AND => Ok(SupplementalMathematicalOperators::LogicalOrOverlappingLogicalAnd),
-            LOGICAL_AND_WITH_MIDDLE_STEM => Ok(SupplementalMathematicalOperators::LogicalAndWithMiddleStem),
-            LOGICAL_OR_WITH_MIDDLE_STEM => Ok(SupplementalMathematicalOperators::LogicalOrWithMiddleStem),
-            LOGICAL_AND_WITH_HORIZONTAL_DASH => Ok(SupplementalMathematicalOperators::LogicalAndWithHorizontalDash),
-            LOGICAL_OR_WITH_HORIZONTAL_DASH => Ok(SupplementalMathematicalOperators::LogicalOrWithHorizontalDash),
-            LOGICAL_AND_WITH_DOUBLE_OVERBAR => Ok(SupplementalMathematicalOperators::LogicalAndWithDoubleOverbar),
-            LOGICAL_AND_WITH_UNDERBAR => Ok(SupplementalMathematicalOperators::LogicalAndWithUnderbar),
-            LOGICAL_AND_WITH_DOUBLE_UNDERBAR => Ok(SupplementalMathematicalOperators::LogicalAndWithDoubleUnderbar),
-            SMALL_VEE_WITH_UNDERBAR => Ok(SupplementalMathematicalOperators::SmallVeeWithUnderbar),
-            LOGICAL_OR_WITH_DOUBLE_OVERBAR => Ok(SupplementalMathematicalOperators::LogicalOrWithDoubleOverbar),
-            LOGICAL_OR_WITH_DOUBLE_UNDERBAR => Ok(SupplementalMathematicalOperators::LogicalOrWithDoubleUnderbar),
-            Z_NOTATION_DOMAIN_ANTIRESTRICTION => Ok(SupplementalMathematicalOperators::ZNotationDomainAntirestriction),
-            Z_NOTATION_RANGE_ANTIRESTRICTION => Ok(SupplementalMathematicalOperators::ZNotationRangeAntirestriction),
-            EQUALS_SIGN_WITH_DOT_BELOW => Ok(SupplementalMathematicalOperators::EqualsSignWithDotBelow),
-            IDENTICAL_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::IdenticalWithDotAbove),
-            TRIPLE_HORIZONTAL_BAR_WITH_DOUBLE_VERTICAL_STROKE => Ok(SupplementalMathematicalOperators::TripleHorizontalBarWithDoubleVerticalStroke),
-            TRIPLE_HORIZONTAL_BAR_WITH_TRIPLE_VERTICAL_STROKE => Ok(SupplementalMathematicalOperators::TripleHorizontalBarWithTripleVerticalStroke),
-            TILDE_OPERATOR_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::TildeOperatorWithDotAbove),
-            TILDE_OPERATOR_WITH_RISING_DOTS => Ok(SupplementalMathematicalOperators::TildeOperatorWithRisingDots),
-            SIMILAR_MINUS_SIMILAR => Ok(SupplementalMathematicalOperators::SimilarMinusSimilar),
-            CONGRUENT_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::CongruentWithDotAbove),
-            EQUALS_WITH_ASTERISK => Ok(SupplementalMathematicalOperators::EqualsWithAsterisk),
-            ALMOST_EQUAL_TO_WITH_CIRCUMFLEX_ACCENT => Ok(SupplementalMathematicalOperators::AlmostEqualToWithCircumflexAccent),
-            APPROXIMATELY_EQUAL_OR_EQUAL_TO => Ok(SupplementalMathematicalOperators::ApproximatelyEqualOrEqualTo),
-            EQUALS_SIGN_ABOVE_PLUS_SIGN => Ok(SupplementalMathematicalOperators::EqualsSignAbovePlusSign),
-            PLUS_SIGN_ABOVE_EQUALS_SIGN => Ok(SupplementalMathematicalOperators::PlusSignAboveEqualsSign),
-            EQUALS_SIGN_ABOVE_TILDE_OPERATOR => Ok(SupplementalMathematicalOperators::EqualsSignAboveTildeOperator),
-            DOUBLE_COLON_EQUAL => Ok(SupplementalMathematicalOperators::DoubleColonEqual),
-            TWO_CONSECUTIVE_EQUALS_SIGNS => Ok(SupplementalMathematicalOperators::TwoConsecutiveEqualsSigns),
-            THREE_CONSECUTIVE_EQUALS_SIGNS => Ok(SupplementalMathematicalOperators::ThreeConsecutiveEqualsSigns),
-            EQUALS_SIGN_WITH_TWO_DOTS_ABOVE_AND_TWO_DOTS_BELOW => Ok(SupplementalMathematicalOperators::EqualsSignWithTwoDotsAboveAndTwoDotsBelow),
-            EQUIVALENT_WITH_FOUR_DOTS_ABOVE => Ok(SupplementalMathematicalOperators::EquivalentWithFourDotsAbove),
-            LESS_DASH_THAN_WITH_CIRCLE_INSIDE => Ok(SupplementalMathematicalOperators::LessDashThanWithCircleInside),
-            GREATER_DASH_THAN_WITH_CIRCLE_INSIDE => Ok(SupplementalMathematicalOperators::GreaterDashThanWithCircleInside),
-            LESS_DASH_THAN_WITH_QUESTION_MARK_ABOVE => Ok(SupplementalMathematicalOperators::LessDashThanWithQuestionMarkAbove),
-            GREATER_DASH_THAN_WITH_QUESTION_MARK_ABOVE => Ok(SupplementalMathematicalOperators::GreaterDashThanWithQuestionMarkAbove),
-            LESS_DASH_THAN_OR_SLANTED_EQUAL_TO => Ok(SupplementalMathematicalOperators::LessDashThanOrSlantedEqualTo),
-            GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO => Ok(SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualTo),
-            LESS_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_INSIDE => Ok(SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotInside),
-            GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_INSIDE => Ok(SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotInside),
-            LESS_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotAbove),
-            GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotAbove),
-            LESS_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE_RIGHT => Ok(SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotAboveRight),
-            GREATER_DASH_THAN_OR_SLANTED_EQUAL_TO_WITH_DOT_ABOVE_LEFT => Ok(SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotAboveLeft),
-            LESS_DASH_THAN_OR_APPROXIMATE => Ok(SupplementalMathematicalOperators::LessDashThanOrApproximate),
-            GREATER_DASH_THAN_OR_APPROXIMATE => Ok(SupplementalMathematicalOperators::GreaterDashThanOrApproximate),
-            LESS_DASH_THAN_AND_SINGLE_DASH_LINE_NOT_EQUAL_TO => Ok(SupplementalMathematicalOperators::LessDashThanAndSingleDashLineNotEqualTo),
-            GREATER_DASH_THAN_AND_SINGLE_DASH_LINE_NOT_EQUAL_TO => Ok(SupplementalMathematicalOperators::GreaterDashThanAndSingleDashLineNotEqualTo),
-            LESS_DASH_THAN_AND_NOT_APPROXIMATE => Ok(SupplementalMathematicalOperators::LessDashThanAndNotApproximate),
-            GREATER_DASH_THAN_AND_NOT_APPROXIMATE => Ok(SupplementalMathematicalOperators::GreaterDashThanAndNotApproximate),
-            LESS_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL_ABOVE_GREATER_DASH_THAN => Ok(SupplementalMathematicalOperators::LessDashThanAboveDoubleDashLineEqualAboveGreaterDashThan),
-            GREATER_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL_ABOVE_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveDoubleDashLineEqualAboveLessDashThan),
-            LESS_DASH_THAN_ABOVE_SIMILAR_OR_EQUAL => Ok(SupplementalMathematicalOperators::LessDashThanAboveSimilarOrEqual),
-            GREATER_DASH_THAN_ABOVE_SIMILAR_OR_EQUAL => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveSimilarOrEqual),
-            LESS_DASH_THAN_ABOVE_SIMILAR_ABOVE_GREATER_DASH_THAN => Ok(SupplementalMathematicalOperators::LessDashThanAboveSimilarAboveGreaterDashThan),
-            GREATER_DASH_THAN_ABOVE_SIMILAR_ABOVE_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveSimilarAboveLessDashThan),
-            LESS_DASH_THAN_ABOVE_GREATER_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL => Ok(SupplementalMathematicalOperators::LessDashThanAboveGreaterDashThanAboveDoubleDashLineEqual),
-            GREATER_DASH_THAN_ABOVE_LESS_DASH_THAN_ABOVE_DOUBLE_DASH_LINE_EQUAL => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveLessDashThanAboveDoubleDashLineEqual),
-            LESS_DASH_THAN_ABOVE_SLANTED_EQUAL_ABOVE_GREATER_DASH_THAN_ABOVE_SLANTED_EQUAL => Ok(SupplementalMathematicalOperators::LessDashThanAboveSlantedEqualAboveGreaterDashThanAboveSlantedEqual),
-            GREATER_DASH_THAN_ABOVE_SLANTED_EQUAL_ABOVE_LESS_DASH_THAN_ABOVE_SLANTED_EQUAL => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveSlantedEqualAboveLessDashThanAboveSlantedEqual),
-            SLANTED_EQUAL_TO_OR_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::SlantedEqualToOrLessDashThan),
-            SLANTED_EQUAL_TO_OR_GREATER_DASH_THAN => Ok(SupplementalMathematicalOperators::SlantedEqualToOrGreaterDashThan),
-            SLANTED_EQUAL_TO_OR_LESS_DASH_THAN_WITH_DOT_INSIDE => Ok(SupplementalMathematicalOperators::SlantedEqualToOrLessDashThanWithDotInside),
-            SLANTED_EQUAL_TO_OR_GREATER_DASH_THAN_WITH_DOT_INSIDE => Ok(SupplementalMathematicalOperators::SlantedEqualToOrGreaterDashThanWithDotInside),
-            DOUBLE_DASH_LINE_EQUAL_TO_OR_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::DoubleDashLineEqualToOrLessDashThan),
-            DOUBLE_DASH_LINE_EQUAL_TO_OR_GREATER_DASH_THAN => Ok(SupplementalMathematicalOperators::DoubleDashLineEqualToOrGreaterDashThan),
-            DOUBLE_DASH_LINE_SLANTED_EQUAL_TO_OR_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::DoubleDashLineSlantedEqualToOrLessDashThan),
-            DOUBLE_DASH_LINE_SLANTED_EQUAL_TO_OR_GREATER_DASH_THAN => Ok(SupplementalMathematicalOperators::DoubleDashLineSlantedEqualToOrGreaterDashThan),
-            SIMILAR_OR_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::SimilarOrLessDashThan),
-            SIMILAR_OR_GREATER_DASH_THAN => Ok(SupplementalMathematicalOperators::SimilarOrGreaterDashThan),
-            SIMILAR_ABOVE_LESS_DASH_THAN_ABOVE_EQUALS_SIGN => Ok(SupplementalMathematicalOperators::SimilarAboveLessDashThanAboveEqualsSign),
-            SIMILAR_ABOVE_GREATER_DASH_THAN_ABOVE_EQUALS_SIGN => Ok(SupplementalMathematicalOperators::SimilarAboveGreaterDashThanAboveEqualsSign),
-            DOUBLE_NESTED_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::DoubleNestedLessDashThan),
-            DOUBLE_NESTED_GREATER_DASH_THAN => Ok(SupplementalMathematicalOperators::DoubleNestedGreaterDashThan),
-            DOUBLE_NESTED_LESS_DASH_THAN_WITH_UNDERBAR => Ok(SupplementalMathematicalOperators::DoubleNestedLessDashThanWithUnderbar),
-            GREATER_DASH_THAN_OVERLAPPING_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::GreaterDashThanOverlappingLessDashThan),
-            GREATER_DASH_THAN_BESIDE_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::GreaterDashThanBesideLessDashThan),
-            LESS_DASH_THAN_CLOSED_BY_CURVE => Ok(SupplementalMathematicalOperators::LessDashThanClosedByCurve),
-            GREATER_DASH_THAN_CLOSED_BY_CURVE => Ok(SupplementalMathematicalOperators::GreaterDashThanClosedByCurve),
-            LESS_DASH_THAN_CLOSED_BY_CURVE_ABOVE_SLANTED_EQUAL => Ok(SupplementalMathematicalOperators::LessDashThanClosedByCurveAboveSlantedEqual),
-            GREATER_DASH_THAN_CLOSED_BY_CURVE_ABOVE_SLANTED_EQUAL => Ok(SupplementalMathematicalOperators::GreaterDashThanClosedByCurveAboveSlantedEqual),
-            SMALLER_THAN => Ok(SupplementalMathematicalOperators::SmallerThan),
-            LARGER_THAN => Ok(SupplementalMathematicalOperators::LargerThan),
-            SMALLER_THAN_OR_EQUAL_TO => Ok(SupplementalMathematicalOperators::SmallerThanOrEqualTo),
-            LARGER_THAN_OR_EQUAL_TO => Ok(SupplementalMathematicalOperators::LargerThanOrEqualTo),
-            EQUALS_SIGN_WITH_BUMPY_ABOVE => Ok(SupplementalMathematicalOperators::EqualsSignWithBumpyAbove),
-            PRECEDES_ABOVE_SINGLE_DASH_LINE_EQUALS_SIGN => Ok(SupplementalMathematicalOperators::PrecedesAboveSingleDashLineEqualsSign),
-            SUCCEEDS_ABOVE_SINGLE_DASH_LINE_EQUALS_SIGN => Ok(SupplementalMathematicalOperators::SucceedsAboveSingleDashLineEqualsSign),
-            PRECEDES_ABOVE_SINGLE_DASH_LINE_NOT_EQUAL_TO => Ok(SupplementalMathematicalOperators::PrecedesAboveSingleDashLineNotEqualTo),
-            SUCCEEDS_ABOVE_SINGLE_DASH_LINE_NOT_EQUAL_TO => Ok(SupplementalMathematicalOperators::SucceedsAboveSingleDashLineNotEqualTo),
-            PRECEDES_ABOVE_EQUALS_SIGN => Ok(SupplementalMathematicalOperators::PrecedesAboveEqualsSign),
-            SUCCEEDS_ABOVE_EQUALS_SIGN => Ok(SupplementalMathematicalOperators::SucceedsAboveEqualsSign),
-            PRECEDES_ABOVE_NOT_EQUAL_TO => Ok(SupplementalMathematicalOperators::PrecedesAboveNotEqualTo),
-            SUCCEEDS_ABOVE_NOT_EQUAL_TO => Ok(SupplementalMathematicalOperators::SucceedsAboveNotEqualTo),
-            PRECEDES_ABOVE_ALMOST_EQUAL_TO => Ok(SupplementalMathematicalOperators::PrecedesAboveAlmostEqualTo),
-            SUCCEEDS_ABOVE_ALMOST_EQUAL_TO => Ok(SupplementalMathematicalOperators::SucceedsAboveAlmostEqualTo),
-            PRECEDES_ABOVE_NOT_ALMOST_EQUAL_TO => Ok(SupplementalMathematicalOperators::PrecedesAboveNotAlmostEqualTo),
-            SUCCEEDS_ABOVE_NOT_ALMOST_EQUAL_TO => Ok(SupplementalMathematicalOperators::SucceedsAboveNotAlmostEqualTo),
-            DOUBLE_PRECEDES => Ok(SupplementalMathematicalOperators::DoublePrecedes),
-            DOUBLE_SUCCEEDS => Ok(SupplementalMathematicalOperators::DoubleSucceeds),
-            SUBSET_WITH_DOT => Ok(SupplementalMathematicalOperators::SubsetWithDot),
-            SUPERSET_WITH_DOT => Ok(SupplementalMathematicalOperators::SupersetWithDot),
-            SUBSET_WITH_PLUS_SIGN_BELOW => Ok(SupplementalMathematicalOperators::SubsetWithPlusSignBelow),
-            SUPERSET_WITH_PLUS_SIGN_BELOW => Ok(SupplementalMathematicalOperators::SupersetWithPlusSignBelow),
-            SUBSET_WITH_MULTIPLICATION_SIGN_BELOW => Ok(SupplementalMathematicalOperators::SubsetWithMultiplicationSignBelow),
-            SUPERSET_WITH_MULTIPLICATION_SIGN_BELOW => Ok(SupplementalMathematicalOperators::SupersetWithMultiplicationSignBelow),
-            SUBSET_OF_OR_EQUAL_TO_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::SubsetOfOrEqualToWithDotAbove),
-            SUPERSET_OF_OR_EQUAL_TO_WITH_DOT_ABOVE => Ok(SupplementalMathematicalOperators::SupersetOfOrEqualToWithDotAbove),
-            SUBSET_OF_ABOVE_EQUALS_SIGN => Ok(SupplementalMathematicalOperators::SubsetOfAboveEqualsSign),
-            SUPERSET_OF_ABOVE_EQUALS_SIGN => Ok(SupplementalMathematicalOperators::SupersetOfAboveEqualsSign),
-            SUBSET_OF_ABOVE_TILDE_OPERATOR => Ok(SupplementalMathematicalOperators::SubsetOfAboveTildeOperator),
-            SUPERSET_OF_ABOVE_TILDE_OPERATOR => Ok(SupplementalMathematicalOperators::SupersetOfAboveTildeOperator),
-            SUBSET_OF_ABOVE_ALMOST_EQUAL_TO => Ok(SupplementalMathematicalOperators::SubsetOfAboveAlmostEqualTo),
-            SUPERSET_OF_ABOVE_ALMOST_EQUAL_TO => Ok(SupplementalMathematicalOperators::SupersetOfAboveAlmostEqualTo),
-            SUBSET_OF_ABOVE_NOT_EQUAL_TO => Ok(SupplementalMathematicalOperators::SubsetOfAboveNotEqualTo),
-            SUPERSET_OF_ABOVE_NOT_EQUAL_TO => Ok(SupplementalMathematicalOperators::SupersetOfAboveNotEqualTo),
-            SQUARE_LEFT_OPEN_BOX_OPERATOR => Ok(SupplementalMathematicalOperators::SquareLeftOpenBoxOperator),
-            SQUARE_RIGHT_OPEN_BOX_OPERATOR => Ok(SupplementalMathematicalOperators::SquareRightOpenBoxOperator),
-            CLOSED_SUBSET => Ok(SupplementalMathematicalOperators::ClosedSubset),
-            CLOSED_SUPERSET => Ok(SupplementalMathematicalOperators::ClosedSuperset),
-            CLOSED_SUBSET_OR_EQUAL_TO => Ok(SupplementalMathematicalOperators::ClosedSubsetOrEqualTo),
-            CLOSED_SUPERSET_OR_EQUAL_TO => Ok(SupplementalMathematicalOperators::ClosedSupersetOrEqualTo),
-            SUBSET_ABOVE_SUPERSET => Ok(SupplementalMathematicalOperators::SubsetAboveSuperset),
-            SUPERSET_ABOVE_SUBSET => Ok(SupplementalMathematicalOperators::SupersetAboveSubset),
-            SUBSET_ABOVE_SUBSET => Ok(SupplementalMathematicalOperators::SubsetAboveSubset),
-            SUPERSET_ABOVE_SUPERSET => Ok(SupplementalMathematicalOperators::SupersetAboveSuperset),
-            SUPERSET_BESIDE_SUBSET => Ok(SupplementalMathematicalOperators::SupersetBesideSubset),
-            SUPERSET_BESIDE_AND_JOINED_BY_DASH_WITH_SUBSET => Ok(SupplementalMathematicalOperators::SupersetBesideAndJoinedByDashWithSubset),
-            ELEMENT_OF_OPENING_DOWNWARDS => Ok(SupplementalMathematicalOperators::ElementOfOpeningDownwards),
-            PITCHFORK_WITH_TEE_TOP => Ok(SupplementalMathematicalOperators::PitchforkWithTeeTop),
-            TRANSVERSAL_INTERSECTION => Ok(SupplementalMathematicalOperators::TransversalIntersection),
-            FORKING => Ok(SupplementalMathematicalOperators::Forking),
-            NONFORKING => Ok(SupplementalMathematicalOperators::Nonforking),
-            SHORT_LEFT_TACK => Ok(SupplementalMathematicalOperators::ShortLeftTack),
-            SHORT_DOWN_TACK => Ok(SupplementalMathematicalOperators::ShortDownTack),
-            SHORT_UP_TACK => Ok(SupplementalMathematicalOperators::ShortUpTack),
-            PERPENDICULAR_WITH_S => Ok(SupplementalMathematicalOperators::PerpendicularWithS),
-            VERTICAL_BAR_TRIPLE_RIGHT_TURNSTILE => Ok(SupplementalMathematicalOperators::VerticalBarTripleRightTurnstile),
-            DOUBLE_VERTICAL_BAR_LEFT_TURNSTILE => Ok(SupplementalMathematicalOperators::DoubleVerticalBarLeftTurnstile),
-            VERTICAL_BAR_DOUBLE_LEFT_TURNSTILE => Ok(SupplementalMathematicalOperators::VerticalBarDoubleLeftTurnstile),
-            DOUBLE_VERTICAL_BAR_DOUBLE_LEFT_TURNSTILE => Ok(SupplementalMathematicalOperators::DoubleVerticalBarDoubleLeftTurnstile),
-            LONG_DASH_FROM_LEFT_MEMBER_OF_DOUBLE_VERTICAL => Ok(SupplementalMathematicalOperators::LongDashFromLeftMemberOfDoubleVertical),
-            SHORT_DOWN_TACK_WITH_OVERBAR => Ok(SupplementalMathematicalOperators::ShortDownTackWithOverbar),
-            SHORT_UP_TACK_WITH_UNDERBAR => Ok(SupplementalMathematicalOperators::ShortUpTackWithUnderbar),
-            SHORT_UP_TACK_ABOVE_SHORT_DOWN_TACK => Ok(SupplementalMathematicalOperators::ShortUpTackAboveShortDownTack),
-            DOUBLE_DOWN_TACK => Ok(SupplementalMathematicalOperators::DoubleDownTack),
-            DOUBLE_UP_TACK => Ok(SupplementalMathematicalOperators::DoubleUpTack),
-            DOUBLE_STROKE_NOT_SIGN => Ok(SupplementalMathematicalOperators::DoubleStrokeNotSign),
-            REVERSED_DOUBLE_STROKE_NOT_SIGN => Ok(SupplementalMathematicalOperators::ReversedDoubleStrokeNotSign),
-            DOES_NOT_DIVIDE_WITH_REVERSED_NEGATION_SLASH => Ok(SupplementalMathematicalOperators::DoesNotDivideWithReversedNegationSlash),
-            VERTICAL_LINE_WITH_CIRCLE_ABOVE => Ok(SupplementalMathematicalOperators::VerticalLineWithCircleAbove),
-            VERTICAL_LINE_WITH_CIRCLE_BELOW => Ok(SupplementalMathematicalOperators::VerticalLineWithCircleBelow),
-            DOWN_TACK_WITH_CIRCLE_BELOW => Ok(SupplementalMathematicalOperators::DownTackWithCircleBelow),
-            PARALLEL_WITH_HORIZONTAL_STROKE => Ok(SupplementalMathematicalOperators::ParallelWithHorizontalStroke),
-            PARALLEL_WITH_TILDE_OPERATOR => Ok(SupplementalMathematicalOperators::ParallelWithTildeOperator),
-            TRIPLE_VERTICAL_BAR_BINARY_RELATION => Ok(SupplementalMathematicalOperators::TripleVerticalBarBinaryRelation),
-            TRIPLE_VERTICAL_BAR_WITH_HORIZONTAL_STROKE => Ok(SupplementalMathematicalOperators::TripleVerticalBarWithHorizontalStroke),
-            TRIPLE_COLON_OPERATOR => Ok(SupplementalMathematicalOperators::TripleColonOperator),
-            TRIPLE_NESTED_LESS_DASH_THAN => Ok(SupplementalMathematicalOperators::TripleNestedLessDashThan),
-            TRIPLE_NESTED_GREATER_DASH_THAN => Ok(SupplementalMathematicalOperators::TripleNestedGreaterDashThan),
-            DOUBLE_DASH_LINE_SLANTED_LESS_DASH_THAN_OR_EQUAL_TO => Ok(SupplementalMathematicalOperators::DoubleDashLineSlantedLessDashThanOrEqualTo),
-            DOUBLE_DASH_LINE_SLANTED_GREATER_DASH_THAN_OR_EQUAL_TO => Ok(SupplementalMathematicalOperators::DoubleDashLineSlantedGreaterDashThanOrEqualTo),
-            TRIPLE_SOLIDUS_BINARY_RELATION => Ok(SupplementalMathematicalOperators::TripleSolidusBinaryRelation),
-            LARGE_TRIPLE_VERTICAL_BAR_OPERATOR => Ok(SupplementalMathematicalOperators::LargeTripleVerticalBarOperator),
-            DOUBLE_SOLIDUS_OPERATOR => Ok(SupplementalMathematicalOperators::DoubleSolidusOperator),
-            WHITE_VERTICAL_BAR => Ok(SupplementalMathematicalOperators::WhiteVerticalBar),
+            '⨀' => Ok(SupplementalMathematicalOperators::NDashAryCircledDotOperator),
+            '⨁' => Ok(SupplementalMathematicalOperators::NDashAryCircledPlusOperator),
+            '⨂' => Ok(SupplementalMathematicalOperators::NDashAryCircledTimesOperator),
+            '⨃' => Ok(SupplementalMathematicalOperators::NDashAryUnionOperatorWithDot),
+            '⨄' => Ok(SupplementalMathematicalOperators::NDashAryUnionOperatorWithPlus),
+            '⨅' => Ok(SupplementalMathematicalOperators::NDashArySquareIntersectionOperator),
+            '⨆' => Ok(SupplementalMathematicalOperators::NDashArySquareUnionOperator),
+            '⨇' => Ok(SupplementalMathematicalOperators::TwoLogicalAndOperator),
+            '⨈' => Ok(SupplementalMathematicalOperators::TwoLogicalOrOperator),
+            '⨉' => Ok(SupplementalMathematicalOperators::NDashAryTimesOperator),
+            '⨊' => Ok(SupplementalMathematicalOperators::ModuloTwoSum),
+            '⨋' => Ok(SupplementalMathematicalOperators::SummationWithIntegral),
+            '⨌' => Ok(SupplementalMathematicalOperators::QuadrupleIntegralOperator),
+            '⨍' => Ok(SupplementalMathematicalOperators::FinitePartIntegral),
+            '⨎' => Ok(SupplementalMathematicalOperators::IntegralWithDoubleStroke),
+            '⨏' => Ok(SupplementalMathematicalOperators::IntegralAverageWithSlash),
+            '⨐' => Ok(SupplementalMathematicalOperators::CirculationFunction),
+            '⨑' => Ok(SupplementalMathematicalOperators::AnticlockwiseIntegration),
+            '⨒' => Ok(SupplementalMathematicalOperators::LineIntegrationWithRectangularPathAroundPole),
+            '⨓' => Ok(SupplementalMathematicalOperators::LineIntegrationWithSemicircularPathAroundPole),
+            '⨔' => Ok(SupplementalMathematicalOperators::LineIntegrationNotIncludingThePole),
+            '⨕' => Ok(SupplementalMathematicalOperators::IntegralAroundAPointOperator),
+            '⨖' => Ok(SupplementalMathematicalOperators::QuaternionIntegralOperator),
+            '⨗' => Ok(SupplementalMathematicalOperators::IntegralWithLeftwardsArrowWithHook),
+            '⨘' => Ok(SupplementalMathematicalOperators::IntegralWithTimesSign),
+            '⨙' => Ok(SupplementalMathematicalOperators::IntegralWithIntersection),
+            '⨚' => Ok(SupplementalMathematicalOperators::IntegralWithUnion),
+            '⨛' => Ok(SupplementalMathematicalOperators::IntegralWithOverbar),
+            '⨜' => Ok(SupplementalMathematicalOperators::IntegralWithUnderbar),
+            '⨝' => Ok(SupplementalMathematicalOperators::Join),
+            '⨞' => Ok(SupplementalMathematicalOperators::LargeLeftTriangleOperator),
+            '⨟' => Ok(SupplementalMathematicalOperators::ZNotationSchemaComposition),
+            '⨠' => Ok(SupplementalMathematicalOperators::ZNotationSchemaPiping),
+            '⨡' => Ok(SupplementalMathematicalOperators::ZNotationSchemaProjection),
+            '⨢' => Ok(SupplementalMathematicalOperators::PlusSignWithSmallCircleAbove),
+            '⨣' => Ok(SupplementalMathematicalOperators::PlusSignWithCircumflexAccentAbove),
+            '⨤' => Ok(SupplementalMathematicalOperators::PlusSignWithTildeAbove),
+            '⨥' => Ok(SupplementalMathematicalOperators::PlusSignWithDotBelow),
+            '⨦' => Ok(SupplementalMathematicalOperators::PlusSignWithTildeBelow),
+            '⨧' => Ok(SupplementalMathematicalOperators::PlusSignWithSubscriptTwo),
+            '⨨' => Ok(SupplementalMathematicalOperators::PlusSignWithBlackTriangle),
+            '⨩' => Ok(SupplementalMathematicalOperators::MinusSignWithCommaAbove),
+            '⨪' => Ok(SupplementalMathematicalOperators::MinusSignWithDotBelow),
+            '⨫' => Ok(SupplementalMathematicalOperators::MinusSignWithFallingDots),
+            '⨬' => Ok(SupplementalMathematicalOperators::MinusSignWithRisingDots),
+            '⨭' => Ok(SupplementalMathematicalOperators::PlusSignInLeftHalfCircle),
+            '⨮' => Ok(SupplementalMathematicalOperators::PlusSignInRightHalfCircle),
+            '⨯' => Ok(SupplementalMathematicalOperators::VectorOrCrossProduct),
+            '⨰' => Ok(SupplementalMathematicalOperators::MultiplicationSignWithDotAbove),
+            '⨱' => Ok(SupplementalMathematicalOperators::MultiplicationSignWithUnderbar),
+            '⨲' => Ok(SupplementalMathematicalOperators::SemidirectProductWithBottomClosed),
+            '⨳' => Ok(SupplementalMathematicalOperators::SmashProduct),
+            '⨴' => Ok(SupplementalMathematicalOperators::MultiplicationSignInLeftHalfCircle),
+            '⨵' => Ok(SupplementalMathematicalOperators::MultiplicationSignInRightHalfCircle),
+            '⨶' => Ok(SupplementalMathematicalOperators::CircledMultiplicationSignWithCircumflexAccent),
+            '⨷' => Ok(SupplementalMathematicalOperators::MultiplicationSignInDoubleCircle),
+            '⨸' => Ok(SupplementalMathematicalOperators::CircledDivisionSign),
+            '⨹' => Ok(SupplementalMathematicalOperators::PlusSignInTriangle),
+            '⨺' => Ok(SupplementalMathematicalOperators::MinusSignInTriangle),
+            '⨻' => Ok(SupplementalMathematicalOperators::MultiplicationSignInTriangle),
+            '⨼' => Ok(SupplementalMathematicalOperators::InteriorProduct),
+            '⨽' => Ok(SupplementalMathematicalOperators::RighthandInteriorProduct),
+            '⨾' => Ok(SupplementalMathematicalOperators::ZNotationRelationalComposition),
+            '⨿' => Ok(SupplementalMathematicalOperators::AmalgamationOrCoproduct),
+            '⩀' => Ok(SupplementalMathematicalOperators::IntersectionWithDot),
+            '⩁' => Ok(SupplementalMathematicalOperators::UnionWithMinusSign),
+            '⩂' => Ok(SupplementalMathematicalOperators::UnionWithOverbar),
+            '⩃' => Ok(SupplementalMathematicalOperators::IntersectionWithOverbar),
+            '⩄' => Ok(SupplementalMathematicalOperators::IntersectionWithLogicalAnd),
+            '⩅' => Ok(SupplementalMathematicalOperators::UnionWithLogicalOr),
+            '⩆' => Ok(SupplementalMathematicalOperators::UnionAboveIntersection),
+            '⩇' => Ok(SupplementalMathematicalOperators::IntersectionAboveUnion),
+            '⩈' => Ok(SupplementalMathematicalOperators::UnionAboveBarAboveIntersection),
+            '⩉' => Ok(SupplementalMathematicalOperators::IntersectionAboveBarAboveUnion),
+            '⩊' => Ok(SupplementalMathematicalOperators::UnionBesideAndJoinedWithUnion),
+            '⩋' => Ok(SupplementalMathematicalOperators::IntersectionBesideAndJoinedWithIntersection),
+            '⩌' => Ok(SupplementalMathematicalOperators::ClosedUnionWithSerifs),
+            '⩍' => Ok(SupplementalMathematicalOperators::ClosedIntersectionWithSerifs),
+            '⩎' => Ok(SupplementalMathematicalOperators::DoubleSquareIntersection),
+            '⩏' => Ok(SupplementalMathematicalOperators::DoubleSquareUnion),
+            '⩐' => Ok(SupplementalMathematicalOperators::ClosedUnionWithSerifsAndSmashProduct),
+            '⩑' => Ok(SupplementalMathematicalOperators::LogicalAndWithDotAbove),
+            '⩒' => Ok(SupplementalMathematicalOperators::LogicalOrWithDotAbove),
+            '⩓' => Ok(SupplementalMathematicalOperators::DoubleLogicalAnd),
+            '⩔' => Ok(SupplementalMathematicalOperators::DoubleLogicalOr),
+            '⩕' => Ok(SupplementalMathematicalOperators::TwoIntersectingLogicalAnd),
+            '⩖' => Ok(SupplementalMathematicalOperators::TwoIntersectingLogicalOr),
+            '⩗' => Ok(SupplementalMathematicalOperators::SlopingLargeOr),
+            '⩘' => Ok(SupplementalMathematicalOperators::SlopingLargeAnd),
+            '⩙' => Ok(SupplementalMathematicalOperators::LogicalOrOverlappingLogicalAnd),
+            '⩚' => Ok(SupplementalMathematicalOperators::LogicalAndWithMiddleStem),
+            '⩛' => Ok(SupplementalMathematicalOperators::LogicalOrWithMiddleStem),
+            '⩜' => Ok(SupplementalMathematicalOperators::LogicalAndWithHorizontalDash),
+            '⩝' => Ok(SupplementalMathematicalOperators::LogicalOrWithHorizontalDash),
+            '⩞' => Ok(SupplementalMathematicalOperators::LogicalAndWithDoubleOverbar),
+            '⩟' => Ok(SupplementalMathematicalOperators::LogicalAndWithUnderbar),
+            '⩠' => Ok(SupplementalMathematicalOperators::LogicalAndWithDoubleUnderbar),
+            '⩡' => Ok(SupplementalMathematicalOperators::SmallVeeWithUnderbar),
+            '⩢' => Ok(SupplementalMathematicalOperators::LogicalOrWithDoubleOverbar),
+            '⩣' => Ok(SupplementalMathematicalOperators::LogicalOrWithDoubleUnderbar),
+            '⩤' => Ok(SupplementalMathematicalOperators::ZNotationDomainAntirestriction),
+            '⩥' => Ok(SupplementalMathematicalOperators::ZNotationRangeAntirestriction),
+            '⩦' => Ok(SupplementalMathematicalOperators::EqualsSignWithDotBelow),
+            '⩧' => Ok(SupplementalMathematicalOperators::IdenticalWithDotAbove),
+            '⩨' => Ok(SupplementalMathematicalOperators::TripleHorizontalBarWithDoubleVerticalStroke),
+            '⩩' => Ok(SupplementalMathematicalOperators::TripleHorizontalBarWithTripleVerticalStroke),
+            '⩪' => Ok(SupplementalMathematicalOperators::TildeOperatorWithDotAbove),
+            '⩫' => Ok(SupplementalMathematicalOperators::TildeOperatorWithRisingDots),
+            '⩬' => Ok(SupplementalMathematicalOperators::SimilarMinusSimilar),
+            '⩭' => Ok(SupplementalMathematicalOperators::CongruentWithDotAbove),
+            '⩮' => Ok(SupplementalMathematicalOperators::EqualsWithAsterisk),
+            '⩯' => Ok(SupplementalMathematicalOperators::AlmostEqualToWithCircumflexAccent),
+            '⩰' => Ok(SupplementalMathematicalOperators::ApproximatelyEqualOrEqualTo),
+            '⩱' => Ok(SupplementalMathematicalOperators::EqualsSignAbovePlusSign),
+            '⩲' => Ok(SupplementalMathematicalOperators::PlusSignAboveEqualsSign),
+            '⩳' => Ok(SupplementalMathematicalOperators::EqualsSignAboveTildeOperator),
+            '⩴' => Ok(SupplementalMathematicalOperators::DoubleColonEqual),
+            '⩵' => Ok(SupplementalMathematicalOperators::TwoConsecutiveEqualsSigns),
+            '⩶' => Ok(SupplementalMathematicalOperators::ThreeConsecutiveEqualsSigns),
+            '⩷' => Ok(SupplementalMathematicalOperators::EqualsSignWithTwoDotsAboveAndTwoDotsBelow),
+            '⩸' => Ok(SupplementalMathematicalOperators::EquivalentWithFourDotsAbove),
+            '⩹' => Ok(SupplementalMathematicalOperators::LessDashThanWithCircleInside),
+            '⩺' => Ok(SupplementalMathematicalOperators::GreaterDashThanWithCircleInside),
+            '⩻' => Ok(SupplementalMathematicalOperators::LessDashThanWithQuestionMarkAbove),
+            '⩼' => Ok(SupplementalMathematicalOperators::GreaterDashThanWithQuestionMarkAbove),
+            '⩽' => Ok(SupplementalMathematicalOperators::LessDashThanOrSlantedEqualTo),
+            '⩾' => Ok(SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualTo),
+            '⩿' => Ok(SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotInside),
+            '⪀' => Ok(SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotInside),
+            '⪁' => Ok(SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotAbove),
+            '⪂' => Ok(SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotAbove),
+            '⪃' => Ok(SupplementalMathematicalOperators::LessDashThanOrSlantedEqualToWithDotAboveRight),
+            '⪄' => Ok(SupplementalMathematicalOperators::GreaterDashThanOrSlantedEqualToWithDotAboveLeft),
+            '⪅' => Ok(SupplementalMathematicalOperators::LessDashThanOrApproximate),
+            '⪆' => Ok(SupplementalMathematicalOperators::GreaterDashThanOrApproximate),
+            '⪇' => Ok(SupplementalMathematicalOperators::LessDashThanAndSingleDashLineNotEqualTo),
+            '⪈' => Ok(SupplementalMathematicalOperators::GreaterDashThanAndSingleDashLineNotEqualTo),
+            '⪉' => Ok(SupplementalMathematicalOperators::LessDashThanAndNotApproximate),
+            '⪊' => Ok(SupplementalMathematicalOperators::GreaterDashThanAndNotApproximate),
+            '⪋' => Ok(SupplementalMathematicalOperators::LessDashThanAboveDoubleDashLineEqualAboveGreaterDashThan),
+            '⪌' => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveDoubleDashLineEqualAboveLessDashThan),
+            '⪍' => Ok(SupplementalMathematicalOperators::LessDashThanAboveSimilarOrEqual),
+            '⪎' => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveSimilarOrEqual),
+            '⪏' => Ok(SupplementalMathematicalOperators::LessDashThanAboveSimilarAboveGreaterDashThan),
+            '⪐' => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveSimilarAboveLessDashThan),
+            '⪑' => Ok(SupplementalMathematicalOperators::LessDashThanAboveGreaterDashThanAboveDoubleDashLineEqual),
+            '⪒' => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveLessDashThanAboveDoubleDashLineEqual),
+            '⪓' => Ok(SupplementalMathematicalOperators::LessDashThanAboveSlantedEqualAboveGreaterDashThanAboveSlantedEqual),
+            '⪔' => Ok(SupplementalMathematicalOperators::GreaterDashThanAboveSlantedEqualAboveLessDashThanAboveSlantedEqual),
+            '⪕' => Ok(SupplementalMathematicalOperators::SlantedEqualToOrLessDashThan),
+            '⪖' => Ok(SupplementalMathematicalOperators::SlantedEqualToOrGreaterDashThan),
+            '⪗' => Ok(SupplementalMathematicalOperators::SlantedEqualToOrLessDashThanWithDotInside),
+            '⪘' => Ok(SupplementalMathematicalOperators::SlantedEqualToOrGreaterDashThanWithDotInside),
+            '⪙' => Ok(SupplementalMathematicalOperators::DoubleDashLineEqualToOrLessDashThan),
+            '⪚' => Ok(SupplementalMathematicalOperators::DoubleDashLineEqualToOrGreaterDashThan),
+            '⪛' => Ok(SupplementalMathematicalOperators::DoubleDashLineSlantedEqualToOrLessDashThan),
+            '⪜' => Ok(SupplementalMathematicalOperators::DoubleDashLineSlantedEqualToOrGreaterDashThan),
+            '⪝' => Ok(SupplementalMathematicalOperators::SimilarOrLessDashThan),
+            '⪞' => Ok(SupplementalMathematicalOperators::SimilarOrGreaterDashThan),
+            '⪟' => Ok(SupplementalMathematicalOperators::SimilarAboveLessDashThanAboveEqualsSign),
+            '⪠' => Ok(SupplementalMathematicalOperators::SimilarAboveGreaterDashThanAboveEqualsSign),
+            '⪡' => Ok(SupplementalMathematicalOperators::DoubleNestedLessDashThan),
+            '⪢' => Ok(SupplementalMathematicalOperators::DoubleNestedGreaterDashThan),
+            '⪣' => Ok(SupplementalMathematicalOperators::DoubleNestedLessDashThanWithUnderbar),
+            '⪤' => Ok(SupplementalMathematicalOperators::GreaterDashThanOverlappingLessDashThan),
+            '⪥' => Ok(SupplementalMathematicalOperators::GreaterDashThanBesideLessDashThan),
+            '⪦' => Ok(SupplementalMathematicalOperators::LessDashThanClosedByCurve),
+            '⪧' => Ok(SupplementalMathematicalOperators::GreaterDashThanClosedByCurve),
+            '⪨' => Ok(SupplementalMathematicalOperators::LessDashThanClosedByCurveAboveSlantedEqual),
+            '⪩' => Ok(SupplementalMathematicalOperators::GreaterDashThanClosedByCurveAboveSlantedEqual),
+            '⪪' => Ok(SupplementalMathematicalOperators::SmallerThan),
+            '⪫' => Ok(SupplementalMathematicalOperators::LargerThan),
+            '⪬' => Ok(SupplementalMathematicalOperators::SmallerThanOrEqualTo),
+            '⪭' => Ok(SupplementalMathematicalOperators::LargerThanOrEqualTo),
+            '⪮' => Ok(SupplementalMathematicalOperators::EqualsSignWithBumpyAbove),
+            '⪯' => Ok(SupplementalMathematicalOperators::PrecedesAboveSingleDashLineEqualsSign),
+            '⪰' => Ok(SupplementalMathematicalOperators::SucceedsAboveSingleDashLineEqualsSign),
+            '⪱' => Ok(SupplementalMathematicalOperators::PrecedesAboveSingleDashLineNotEqualTo),
+            '⪲' => Ok(SupplementalMathematicalOperators::SucceedsAboveSingleDashLineNotEqualTo),
+            '⪳' => Ok(SupplementalMathematicalOperators::PrecedesAboveEqualsSign),
+            '⪴' => Ok(SupplementalMathematicalOperators::SucceedsAboveEqualsSign),
+            '⪵' => Ok(SupplementalMathematicalOperators::PrecedesAboveNotEqualTo),
+            '⪶' => Ok(SupplementalMathematicalOperators::SucceedsAboveNotEqualTo),
+            '⪷' => Ok(SupplementalMathematicalOperators::PrecedesAboveAlmostEqualTo),
+            '⪸' => Ok(SupplementalMathematicalOperators::SucceedsAboveAlmostEqualTo),
+            '⪹' => Ok(SupplementalMathematicalOperators::PrecedesAboveNotAlmostEqualTo),
+            '⪺' => Ok(SupplementalMathematicalOperators::SucceedsAboveNotAlmostEqualTo),
+            '⪻' => Ok(SupplementalMathematicalOperators::DoublePrecedes),
+            '⪼' => Ok(SupplementalMathematicalOperators::DoubleSucceeds),
+            '⪽' => Ok(SupplementalMathematicalOperators::SubsetWithDot),
+            '⪾' => Ok(SupplementalMathematicalOperators::SupersetWithDot),
+            '⪿' => Ok(SupplementalMathematicalOperators::SubsetWithPlusSignBelow),
+            '⫀' => Ok(SupplementalMathematicalOperators::SupersetWithPlusSignBelow),
+            '⫁' => Ok(SupplementalMathematicalOperators::SubsetWithMultiplicationSignBelow),
+            '⫂' => Ok(SupplementalMathematicalOperators::SupersetWithMultiplicationSignBelow),
+            '⫃' => Ok(SupplementalMathematicalOperators::SubsetOfOrEqualToWithDotAbove),
+            '⫄' => Ok(SupplementalMathematicalOperators::SupersetOfOrEqualToWithDotAbove),
+            '⫅' => Ok(SupplementalMathematicalOperators::SubsetOfAboveEqualsSign),
+            '⫆' => Ok(SupplementalMathematicalOperators::SupersetOfAboveEqualsSign),
+            '⫇' => Ok(SupplementalMathematicalOperators::SubsetOfAboveTildeOperator),
+            '⫈' => Ok(SupplementalMathematicalOperators::SupersetOfAboveTildeOperator),
+            '⫉' => Ok(SupplementalMathematicalOperators::SubsetOfAboveAlmostEqualTo),
+            '⫊' => Ok(SupplementalMathematicalOperators::SupersetOfAboveAlmostEqualTo),
+            '⫋' => Ok(SupplementalMathematicalOperators::SubsetOfAboveNotEqualTo),
+            '⫌' => Ok(SupplementalMathematicalOperators::SupersetOfAboveNotEqualTo),
+            '⫍' => Ok(SupplementalMathematicalOperators::SquareLeftOpenBoxOperator),
+            '⫎' => Ok(SupplementalMathematicalOperators::SquareRightOpenBoxOperator),
+            '⫏' => Ok(SupplementalMathematicalOperators::ClosedSubset),
+            '⫐' => Ok(SupplementalMathematicalOperators::ClosedSuperset),
+            '⫑' => Ok(SupplementalMathematicalOperators::ClosedSubsetOrEqualTo),
+            '⫒' => Ok(SupplementalMathematicalOperators::ClosedSupersetOrEqualTo),
+            '⫓' => Ok(SupplementalMathematicalOperators::SubsetAboveSuperset),
+            '⫔' => Ok(SupplementalMathematicalOperators::SupersetAboveSubset),
+            '⫕' => Ok(SupplementalMathematicalOperators::SubsetAboveSubset),
+            '⫖' => Ok(SupplementalMathematicalOperators::SupersetAboveSuperset),
+            '⫗' => Ok(SupplementalMathematicalOperators::SupersetBesideSubset),
+            '⫘' => Ok(SupplementalMathematicalOperators::SupersetBesideAndJoinedByDashWithSubset),
+            '⫙' => Ok(SupplementalMathematicalOperators::ElementOfOpeningDownwards),
+            '⫚' => Ok(SupplementalMathematicalOperators::PitchforkWithTeeTop),
+            '⫛' => Ok(SupplementalMathematicalOperators::TransversalIntersection),
+            '⫝̸' => Ok(SupplementalMathematicalOperators::Forking),
+            '⫝' => Ok(SupplementalMathematicalOperators::Nonforking),
+            '⫞' => Ok(SupplementalMathematicalOperators::ShortLeftTack),
+            '⫟' => Ok(SupplementalMathematicalOperators::ShortDownTack),
+            '⫠' => Ok(SupplementalMathematicalOperators::ShortUpTack),
+            '⫡' => Ok(SupplementalMathematicalOperators::PerpendicularWithS),
+            '⫢' => Ok(SupplementalMathematicalOperators::VerticalBarTripleRightTurnstile),
+            '⫣' => Ok(SupplementalMathematicalOperators::DoubleVerticalBarLeftTurnstile),
+            '⫤' => Ok(SupplementalMathematicalOperators::VerticalBarDoubleLeftTurnstile),
+            '⫥' => Ok(SupplementalMathematicalOperators::DoubleVerticalBarDoubleLeftTurnstile),
+            '⫦' => Ok(SupplementalMathematicalOperators::LongDashFromLeftMemberOfDoubleVertical),
+            '⫧' => Ok(SupplementalMathematicalOperators::ShortDownTackWithOverbar),
+            '⫨' => Ok(SupplementalMathematicalOperators::ShortUpTackWithUnderbar),
+            '⫩' => Ok(SupplementalMathematicalOperators::ShortUpTackAboveShortDownTack),
+            '⫪' => Ok(SupplementalMathematicalOperators::DoubleDownTack),
+            '⫫' => Ok(SupplementalMathematicalOperators::DoubleUpTack),
+            '⫬' => Ok(SupplementalMathematicalOperators::DoubleStrokeNotSign),
+            '⫭' => Ok(SupplementalMathematicalOperators::ReversedDoubleStrokeNotSign),
+            '⫮' => Ok(SupplementalMathematicalOperators::DoesNotDivideWithReversedNegationSlash),
+            '⫯' => Ok(SupplementalMathematicalOperators::VerticalLineWithCircleAbove),
+            '⫰' => Ok(SupplementalMathematicalOperators::VerticalLineWithCircleBelow),
+            '⫱' => Ok(SupplementalMathematicalOperators::DownTackWithCircleBelow),
+            '⫲' => Ok(SupplementalMathematicalOperators::ParallelWithHorizontalStroke),
+            '⫳' => Ok(SupplementalMathematicalOperators::ParallelWithTildeOperator),
+            '⫴' => Ok(SupplementalMathematicalOperators::TripleVerticalBarBinaryRelation),
+            '⫵' => Ok(SupplementalMathematicalOperators::TripleVerticalBarWithHorizontalStroke),
+            '⫶' => Ok(SupplementalMathematicalOperators::TripleColonOperator),
+            '⫷' => Ok(SupplementalMathematicalOperators::TripleNestedLessDashThan),
+            '⫸' => Ok(SupplementalMathematicalOperators::TripleNestedGreaterDashThan),
+            '⫹' => Ok(SupplementalMathematicalOperators::DoubleDashLineSlantedLessDashThanOrEqualTo),
+            '⫺' => Ok(SupplementalMathematicalOperators::DoubleDashLineSlantedGreaterDashThanOrEqualTo),
+            '⫻' => Ok(SupplementalMathematicalOperators::TripleSolidusBinaryRelation),
+            '⫼' => Ok(SupplementalMathematicalOperators::LargeTripleVerticalBarOperator),
+            '⫽' => Ok(SupplementalMathematicalOperators::DoubleSolidusOperator),
+            '⫾' => Ok(SupplementalMathematicalOperators::WhiteVerticalBar),
             _ => Err(()),
         }
     }

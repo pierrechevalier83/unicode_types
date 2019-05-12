@@ -1,196 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{250}: 'ɐ'
-    pub const LATIN_SMALL_LETTER_TURNED_A: char = 'ɐ';
-    /// \u{251}: 'ɑ'
-    pub const LATIN_SMALL_LETTER_ALPHA: char = 'ɑ';
-    /// \u{252}: 'ɒ'
-    pub const LATIN_SMALL_LETTER_TURNED_ALPHA: char = 'ɒ';
-    /// \u{253}: 'ɓ'
-    pub const LATIN_SMALL_LETTER_B_WITH_HOOK: char = 'ɓ';
-    /// \u{254}: 'ɔ'
-    pub const LATIN_SMALL_LETTER_OPEN_O: char = 'ɔ';
-    /// \u{255}: 'ɕ'
-    pub const LATIN_SMALL_LETTER_C_WITH_CURL: char = 'ɕ';
-    /// \u{256}: 'ɖ'
-    pub const LATIN_SMALL_LETTER_D_WITH_TAIL: char = 'ɖ';
-    /// \u{257}: 'ɗ'
-    pub const LATIN_SMALL_LETTER_D_WITH_HOOK: char = 'ɗ';
-    /// \u{258}: 'ɘ'
-    pub const LATIN_SMALL_LETTER_REVERSED_E: char = 'ɘ';
-    /// \u{259}: 'ə'
-    pub const LATIN_SMALL_LETTER_SCHWA: char = 'ə';
-    /// \u{25a}: 'ɚ'
-    pub const LATIN_SMALL_LETTER_SCHWA_WITH_HOOK: char = 'ɚ';
-    /// \u{25b}: 'ɛ'
-    pub const LATIN_SMALL_LETTER_OPEN_E: char = 'ɛ';
-    /// \u{25c}: 'ɜ'
-    pub const LATIN_SMALL_LETTER_REVERSED_OPEN_E: char = 'ɜ';
-    /// \u{25d}: 'ɝ'
-    pub const LATIN_SMALL_LETTER_REVERSED_OPEN_E_WITH_HOOK: char = 'ɝ';
-    /// \u{25e}: 'ɞ'
-    pub const LATIN_SMALL_LETTER_CLOSED_REVERSED_OPEN_E: char = 'ɞ';
-    /// \u{25f}: 'ɟ'
-    pub const LATIN_SMALL_LETTER_DOTLESS_J_WITH_STROKE: char = 'ɟ';
-    /// \u{260}: 'ɠ'
-    pub const LATIN_SMALL_LETTER_G_WITH_HOOK: char = 'ɠ';
-    /// \u{261}: 'ɡ'
-    pub const LATIN_SMALL_LETTER_SCRIPT_G: char = 'ɡ';
-    /// \u{262}: 'ɢ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_G: char = 'ɢ';
-    /// \u{263}: 'ɣ'
-    pub const LATIN_SMALL_LETTER_GAMMA: char = 'ɣ';
-    /// \u{264}: 'ɤ'
-    pub const LATIN_SMALL_LETTER_RAMS_HORN: char = 'ɤ';
-    /// \u{265}: 'ɥ'
-    pub const LATIN_SMALL_LETTER_TURNED_H: char = 'ɥ';
-    /// \u{266}: 'ɦ'
-    pub const LATIN_SMALL_LETTER_H_WITH_HOOK: char = 'ɦ';
-    /// \u{267}: 'ɧ'
-    pub const LATIN_SMALL_LETTER_HENG_WITH_HOOK: char = 'ɧ';
-    /// \u{268}: 'ɨ'
-    pub const LATIN_SMALL_LETTER_I_WITH_STROKE: char = 'ɨ';
-    /// \u{269}: 'ɩ'
-    pub const LATIN_SMALL_LETTER_IOTA: char = 'ɩ';
-    /// \u{26a}: 'ɪ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_I: char = 'ɪ';
-    /// \u{26b}: 'ɫ'
-    pub const LATIN_SMALL_LETTER_L_WITH_MIDDLE_TILDE: char = 'ɫ';
-    /// \u{26c}: 'ɬ'
-    pub const LATIN_SMALL_LETTER_L_WITH_BELT: char = 'ɬ';
-    /// \u{26d}: 'ɭ'
-    pub const LATIN_SMALL_LETTER_L_WITH_RETROFLEX_HOOK: char = 'ɭ';
-    /// \u{26e}: 'ɮ'
-    pub const LATIN_SMALL_LETTER_LEZH: char = 'ɮ';
-    /// \u{26f}: 'ɯ'
-    pub const LATIN_SMALL_LETTER_TURNED_M: char = 'ɯ';
-    /// \u{270}: 'ɰ'
-    pub const LATIN_SMALL_LETTER_TURNED_M_WITH_LONG_LEG: char = 'ɰ';
-    /// \u{271}: 'ɱ'
-    pub const LATIN_SMALL_LETTER_M_WITH_HOOK: char = 'ɱ';
-    /// \u{272}: 'ɲ'
-    pub const LATIN_SMALL_LETTER_N_WITH_LEFT_HOOK: char = 'ɲ';
-    /// \u{273}: 'ɳ'
-    pub const LATIN_SMALL_LETTER_N_WITH_RETROFLEX_HOOK: char = 'ɳ';
-    /// \u{274}: 'ɴ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_N: char = 'ɴ';
-    /// \u{275}: 'ɵ'
-    pub const LATIN_SMALL_LETTER_BARRED_O: char = 'ɵ';
-    /// \u{276}: 'ɶ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_OE: char = 'ɶ';
-    /// \u{277}: 'ɷ'
-    pub const LATIN_SMALL_LETTER_CLOSED_OMEGA: char = 'ɷ';
-    /// \u{278}: 'ɸ'
-    pub const LATIN_SMALL_LETTER_PHI: char = 'ɸ';
-    /// \u{279}: 'ɹ'
-    pub const LATIN_SMALL_LETTER_TURNED_R: char = 'ɹ';
-    /// \u{27a}: 'ɺ'
-    pub const LATIN_SMALL_LETTER_TURNED_R_WITH_LONG_LEG: char = 'ɺ';
-    /// \u{27b}: 'ɻ'
-    pub const LATIN_SMALL_LETTER_TURNED_R_WITH_HOOK: char = 'ɻ';
-    /// \u{27c}: 'ɼ'
-    pub const LATIN_SMALL_LETTER_R_WITH_LONG_LEG: char = 'ɼ';
-    /// \u{27d}: 'ɽ'
-    pub const LATIN_SMALL_LETTER_R_WITH_TAIL: char = 'ɽ';
-    /// \u{27e}: 'ɾ'
-    pub const LATIN_SMALL_LETTER_R_WITH_FISHHOOK: char = 'ɾ';
-    /// \u{27f}: 'ɿ'
-    pub const LATIN_SMALL_LETTER_REVERSED_R_WITH_FISHHOOK: char = 'ɿ';
-    /// \u{280}: 'ʀ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_R: char = 'ʀ';
-    /// \u{281}: 'ʁ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_INVERTED_R: char = 'ʁ';
-    /// \u{282}: 'ʂ'
-    pub const LATIN_SMALL_LETTER_S_WITH_HOOK: char = 'ʂ';
-    /// \u{283}: 'ʃ'
-    pub const LATIN_SMALL_LETTER_ESH: char = 'ʃ';
-    /// \u{284}: 'ʄ'
-    pub const LATIN_SMALL_LETTER_DOTLESS_J_WITH_STROKE_AND_HOOK: char = 'ʄ';
-    /// \u{285}: 'ʅ'
-    pub const LATIN_SMALL_LETTER_SQUAT_REVERSED_ESH: char = 'ʅ';
-    /// \u{286}: 'ʆ'
-    pub const LATIN_SMALL_LETTER_ESH_WITH_CURL: char = 'ʆ';
-    /// \u{287}: 'ʇ'
-    pub const LATIN_SMALL_LETTER_TURNED_T: char = 'ʇ';
-    /// \u{288}: 'ʈ'
-    pub const LATIN_SMALL_LETTER_T_WITH_RETROFLEX_HOOK: char = 'ʈ';
-    /// \u{289}: 'ʉ'
-    pub const LATIN_SMALL_LETTER_U_BAR: char = 'ʉ';
-    /// \u{28a}: 'ʊ'
-    pub const LATIN_SMALL_LETTER_UPSILON: char = 'ʊ';
-    /// \u{28b}: 'ʋ'
-    pub const LATIN_SMALL_LETTER_V_WITH_HOOK: char = 'ʋ';
-    /// \u{28c}: 'ʌ'
-    pub const LATIN_SMALL_LETTER_TURNED_V: char = 'ʌ';
-    /// \u{28d}: 'ʍ'
-    pub const LATIN_SMALL_LETTER_TURNED_W: char = 'ʍ';
-    /// \u{28e}: 'ʎ'
-    pub const LATIN_SMALL_LETTER_TURNED_Y: char = 'ʎ';
-    /// \u{28f}: 'ʏ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_Y: char = 'ʏ';
-    /// \u{290}: 'ʐ'
-    pub const LATIN_SMALL_LETTER_Z_WITH_RETROFLEX_HOOK: char = 'ʐ';
-    /// \u{291}: 'ʑ'
-    pub const LATIN_SMALL_LETTER_Z_WITH_CURL: char = 'ʑ';
-    /// \u{292}: 'ʒ'
-    pub const LATIN_SMALL_LETTER_EZH: char = 'ʒ';
-    /// \u{293}: 'ʓ'
-    pub const LATIN_SMALL_LETTER_EZH_WITH_CURL: char = 'ʓ';
-    /// \u{294}: 'ʔ'
-    pub const LATIN_LETTER_GLOTTAL_STOP: char = 'ʔ';
-    /// \u{295}: 'ʕ'
-    pub const LATIN_LETTER_PHARYNGEAL_VOICED_FRICATIVE: char = 'ʕ';
-    /// \u{296}: 'ʖ'
-    pub const LATIN_LETTER_INVERTED_GLOTTAL_STOP: char = 'ʖ';
-    /// \u{297}: 'ʗ'
-    pub const LATIN_LETTER_STRETCHED_C: char = 'ʗ';
-    /// \u{298}: 'ʘ'
-    pub const LATIN_LETTER_BILABIAL_CLICK: char = 'ʘ';
-    /// \u{299}: 'ʙ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_B: char = 'ʙ';
-    /// \u{29a}: 'ʚ'
-    pub const LATIN_SMALL_LETTER_CLOSED_OPEN_E: char = 'ʚ';
-    /// \u{29b}: 'ʛ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_G_WITH_HOOK: char = 'ʛ';
-    /// \u{29c}: 'ʜ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_H: char = 'ʜ';
-    /// \u{29d}: 'ʝ'
-    pub const LATIN_SMALL_LETTER_J_WITH_CROSSED_DASH_TAIL: char = 'ʝ';
-    /// \u{29e}: 'ʞ'
-    pub const LATIN_SMALL_LETTER_TURNED_K: char = 'ʞ';
-    /// \u{29f}: 'ʟ'
-    pub const LATIN_LETTER_SMALL_CAPITAL_L: char = 'ʟ';
-    /// \u{2a0}: 'ʠ'
-    pub const LATIN_SMALL_LETTER_Q_WITH_HOOK: char = 'ʠ';
-    /// \u{2a1}: 'ʡ'
-    pub const LATIN_LETTER_GLOTTAL_STOP_WITH_STROKE: char = 'ʡ';
-    /// \u{2a2}: 'ʢ'
-    pub const LATIN_LETTER_REVERSED_GLOTTAL_STOP_WITH_STROKE: char = 'ʢ';
-    /// \u{2a3}: 'ʣ'
-    pub const LATIN_SMALL_LETTER_DZ_DIGRAPH: char = 'ʣ';
-    /// \u{2a4}: 'ʤ'
-    pub const LATIN_SMALL_LETTER_DEZH_DIGRAPH: char = 'ʤ';
-    /// \u{2a5}: 'ʥ'
-    pub const LATIN_SMALL_LETTER_DZ_DIGRAPH_WITH_CURL: char = 'ʥ';
-    /// \u{2a6}: 'ʦ'
-    pub const LATIN_SMALL_LETTER_TS_DIGRAPH: char = 'ʦ';
-    /// \u{2a7}: 'ʧ'
-    pub const LATIN_SMALL_LETTER_TESH_DIGRAPH: char = 'ʧ';
-    /// \u{2a8}: 'ʨ'
-    pub const LATIN_SMALL_LETTER_TC_DIGRAPH_WITH_CURL: char = 'ʨ';
-    /// \u{2a9}: 'ʩ'
-    pub const LATIN_SMALL_LETTER_FENG_DIGRAPH: char = 'ʩ';
-    /// \u{2aa}: 'ʪ'
-    pub const LATIN_SMALL_LETTER_LS_DIGRAPH: char = 'ʪ';
-    /// \u{2ab}: 'ʫ'
-    pub const LATIN_SMALL_LETTER_LZ_DIGRAPH: char = 'ʫ';
-    /// \u{2ac}: 'ʬ'
-    pub const LATIN_LETTER_BILABIAL_PERCUSSIVE: char = 'ʬ';
-    /// \u{2ad}: 'ʭ'
-    pub const LATIN_LETTER_BIDENTAL_PERCUSSIVE: char = 'ʭ';
-    /// \u{2ae}: 'ʮ'
-    pub const LATIN_SMALL_LETTER_TURNED_H_WITH_FISHHOOK: char = 'ʮ';
-}
 
 /// An enum to represent all characters in the IPAExtensions block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -389,103 +196,102 @@ pub enum IPAExtensions {
 
 impl Into<char> for IPAExtensions {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            IPAExtensions::LatinSmallLetterTurnedA => LATIN_SMALL_LETTER_TURNED_A,
-            IPAExtensions::LatinSmallLetterAlpha => LATIN_SMALL_LETTER_ALPHA,
-            IPAExtensions::LatinSmallLetterTurnedAlpha => LATIN_SMALL_LETTER_TURNED_ALPHA,
-            IPAExtensions::LatinSmallLetterBWithHook => LATIN_SMALL_LETTER_B_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterOpenO => LATIN_SMALL_LETTER_OPEN_O,
-            IPAExtensions::LatinSmallLetterCWithCurl => LATIN_SMALL_LETTER_C_WITH_CURL,
-            IPAExtensions::LatinSmallLetterDWithTail => LATIN_SMALL_LETTER_D_WITH_TAIL,
-            IPAExtensions::LatinSmallLetterDWithHook => LATIN_SMALL_LETTER_D_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterReversedE => LATIN_SMALL_LETTER_REVERSED_E,
-            IPAExtensions::LatinSmallLetterSchwa => LATIN_SMALL_LETTER_SCHWA,
-            IPAExtensions::LatinSmallLetterSchwaWithHook => LATIN_SMALL_LETTER_SCHWA_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterOpenE => LATIN_SMALL_LETTER_OPEN_E,
-            IPAExtensions::LatinSmallLetterReversedOpenE => LATIN_SMALL_LETTER_REVERSED_OPEN_E,
-            IPAExtensions::LatinSmallLetterReversedOpenEWithHook => LATIN_SMALL_LETTER_REVERSED_OPEN_E_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterClosedReversedOpenE => LATIN_SMALL_LETTER_CLOSED_REVERSED_OPEN_E,
-            IPAExtensions::LatinSmallLetterDotlessJWithStroke => LATIN_SMALL_LETTER_DOTLESS_J_WITH_STROKE,
-            IPAExtensions::LatinSmallLetterGWithHook => LATIN_SMALL_LETTER_G_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterScriptG => LATIN_SMALL_LETTER_SCRIPT_G,
-            IPAExtensions::LatinLetterSmallCapitalG => LATIN_LETTER_SMALL_CAPITAL_G,
-            IPAExtensions::LatinSmallLetterGamma => LATIN_SMALL_LETTER_GAMMA,
-            IPAExtensions::LatinSmallLetterRamsHorn => LATIN_SMALL_LETTER_RAMS_HORN,
-            IPAExtensions::LatinSmallLetterTurnedH => LATIN_SMALL_LETTER_TURNED_H,
-            IPAExtensions::LatinSmallLetterHWithHook => LATIN_SMALL_LETTER_H_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterHengWithHook => LATIN_SMALL_LETTER_HENG_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterIWithStroke => LATIN_SMALL_LETTER_I_WITH_STROKE,
-            IPAExtensions::LatinSmallLetterIota => LATIN_SMALL_LETTER_IOTA,
-            IPAExtensions::LatinLetterSmallCapitalI => LATIN_LETTER_SMALL_CAPITAL_I,
-            IPAExtensions::LatinSmallLetterLWithMiddleTilde => LATIN_SMALL_LETTER_L_WITH_MIDDLE_TILDE,
-            IPAExtensions::LatinSmallLetterLWithBelt => LATIN_SMALL_LETTER_L_WITH_BELT,
-            IPAExtensions::LatinSmallLetterLWithRetroflexHook => LATIN_SMALL_LETTER_L_WITH_RETROFLEX_HOOK,
-            IPAExtensions::LatinSmallLetterLezh => LATIN_SMALL_LETTER_LEZH,
-            IPAExtensions::LatinSmallLetterTurnedM => LATIN_SMALL_LETTER_TURNED_M,
-            IPAExtensions::LatinSmallLetterTurnedMWithLongLeg => LATIN_SMALL_LETTER_TURNED_M_WITH_LONG_LEG,
-            IPAExtensions::LatinSmallLetterMWithHook => LATIN_SMALL_LETTER_M_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterNWithLeftHook => LATIN_SMALL_LETTER_N_WITH_LEFT_HOOK,
-            IPAExtensions::LatinSmallLetterNWithRetroflexHook => LATIN_SMALL_LETTER_N_WITH_RETROFLEX_HOOK,
-            IPAExtensions::LatinLetterSmallCapitalN => LATIN_LETTER_SMALL_CAPITAL_N,
-            IPAExtensions::LatinSmallLetterBarredO => LATIN_SMALL_LETTER_BARRED_O,
-            IPAExtensions::LatinLetterSmallCapitalOe => LATIN_LETTER_SMALL_CAPITAL_OE,
-            IPAExtensions::LatinSmallLetterClosedOmega => LATIN_SMALL_LETTER_CLOSED_OMEGA,
-            IPAExtensions::LatinSmallLetterPhi => LATIN_SMALL_LETTER_PHI,
-            IPAExtensions::LatinSmallLetterTurnedR => LATIN_SMALL_LETTER_TURNED_R,
-            IPAExtensions::LatinSmallLetterTurnedRWithLongLeg => LATIN_SMALL_LETTER_TURNED_R_WITH_LONG_LEG,
-            IPAExtensions::LatinSmallLetterTurnedRWithHook => LATIN_SMALL_LETTER_TURNED_R_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterRWithLongLeg => LATIN_SMALL_LETTER_R_WITH_LONG_LEG,
-            IPAExtensions::LatinSmallLetterRWithTail => LATIN_SMALL_LETTER_R_WITH_TAIL,
-            IPAExtensions::LatinSmallLetterRWithFishhook => LATIN_SMALL_LETTER_R_WITH_FISHHOOK,
-            IPAExtensions::LatinSmallLetterReversedRWithFishhook => LATIN_SMALL_LETTER_REVERSED_R_WITH_FISHHOOK,
-            IPAExtensions::LatinLetterSmallCapitalR => LATIN_LETTER_SMALL_CAPITAL_R,
-            IPAExtensions::LatinLetterSmallCapitalInvertedR => LATIN_LETTER_SMALL_CAPITAL_INVERTED_R,
-            IPAExtensions::LatinSmallLetterSWithHook => LATIN_SMALL_LETTER_S_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterEsh => LATIN_SMALL_LETTER_ESH,
-            IPAExtensions::LatinSmallLetterDotlessJWithStrokeAndHook => LATIN_SMALL_LETTER_DOTLESS_J_WITH_STROKE_AND_HOOK,
-            IPAExtensions::LatinSmallLetterSquatReversedEsh => LATIN_SMALL_LETTER_SQUAT_REVERSED_ESH,
-            IPAExtensions::LatinSmallLetterEshWithCurl => LATIN_SMALL_LETTER_ESH_WITH_CURL,
-            IPAExtensions::LatinSmallLetterTurnedT => LATIN_SMALL_LETTER_TURNED_T,
-            IPAExtensions::LatinSmallLetterTWithRetroflexHook => LATIN_SMALL_LETTER_T_WITH_RETROFLEX_HOOK,
-            IPAExtensions::LatinSmallLetterUBar => LATIN_SMALL_LETTER_U_BAR,
-            IPAExtensions::LatinSmallLetterUpsilon => LATIN_SMALL_LETTER_UPSILON,
-            IPAExtensions::LatinSmallLetterVWithHook => LATIN_SMALL_LETTER_V_WITH_HOOK,
-            IPAExtensions::LatinSmallLetterTurnedV => LATIN_SMALL_LETTER_TURNED_V,
-            IPAExtensions::LatinSmallLetterTurnedW => LATIN_SMALL_LETTER_TURNED_W,
-            IPAExtensions::LatinSmallLetterTurnedY => LATIN_SMALL_LETTER_TURNED_Y,
-            IPAExtensions::LatinLetterSmallCapitalY => LATIN_LETTER_SMALL_CAPITAL_Y,
-            IPAExtensions::LatinSmallLetterZWithRetroflexHook => LATIN_SMALL_LETTER_Z_WITH_RETROFLEX_HOOK,
-            IPAExtensions::LatinSmallLetterZWithCurl => LATIN_SMALL_LETTER_Z_WITH_CURL,
-            IPAExtensions::LatinSmallLetterEzh => LATIN_SMALL_LETTER_EZH,
-            IPAExtensions::LatinSmallLetterEzhWithCurl => LATIN_SMALL_LETTER_EZH_WITH_CURL,
-            IPAExtensions::LatinLetterGlottalStop => LATIN_LETTER_GLOTTAL_STOP,
-            IPAExtensions::LatinLetterPharyngealVoicedFricative => LATIN_LETTER_PHARYNGEAL_VOICED_FRICATIVE,
-            IPAExtensions::LatinLetterInvertedGlottalStop => LATIN_LETTER_INVERTED_GLOTTAL_STOP,
-            IPAExtensions::LatinLetterStretchedC => LATIN_LETTER_STRETCHED_C,
-            IPAExtensions::LatinLetterBilabialClick => LATIN_LETTER_BILABIAL_CLICK,
-            IPAExtensions::LatinLetterSmallCapitalB => LATIN_LETTER_SMALL_CAPITAL_B,
-            IPAExtensions::LatinSmallLetterClosedOpenE => LATIN_SMALL_LETTER_CLOSED_OPEN_E,
-            IPAExtensions::LatinLetterSmallCapitalGWithHook => LATIN_LETTER_SMALL_CAPITAL_G_WITH_HOOK,
-            IPAExtensions::LatinLetterSmallCapitalH => LATIN_LETTER_SMALL_CAPITAL_H,
-            IPAExtensions::LatinSmallLetterJWithCrossedDashTail => LATIN_SMALL_LETTER_J_WITH_CROSSED_DASH_TAIL,
-            IPAExtensions::LatinSmallLetterTurnedK => LATIN_SMALL_LETTER_TURNED_K,
-            IPAExtensions::LatinLetterSmallCapitalL => LATIN_LETTER_SMALL_CAPITAL_L,
-            IPAExtensions::LatinSmallLetterQWithHook => LATIN_SMALL_LETTER_Q_WITH_HOOK,
-            IPAExtensions::LatinLetterGlottalStopWithStroke => LATIN_LETTER_GLOTTAL_STOP_WITH_STROKE,
-            IPAExtensions::LatinLetterReversedGlottalStopWithStroke => LATIN_LETTER_REVERSED_GLOTTAL_STOP_WITH_STROKE,
-            IPAExtensions::LatinSmallLetterDzDigraph => LATIN_SMALL_LETTER_DZ_DIGRAPH,
-            IPAExtensions::LatinSmallLetterDezhDigraph => LATIN_SMALL_LETTER_DEZH_DIGRAPH,
-            IPAExtensions::LatinSmallLetterDzDigraphWithCurl => LATIN_SMALL_LETTER_DZ_DIGRAPH_WITH_CURL,
-            IPAExtensions::LatinSmallLetterTsDigraph => LATIN_SMALL_LETTER_TS_DIGRAPH,
-            IPAExtensions::LatinSmallLetterTeshDigraph => LATIN_SMALL_LETTER_TESH_DIGRAPH,
-            IPAExtensions::LatinSmallLetterTcDigraphWithCurl => LATIN_SMALL_LETTER_TC_DIGRAPH_WITH_CURL,
-            IPAExtensions::LatinSmallLetterFengDigraph => LATIN_SMALL_LETTER_FENG_DIGRAPH,
-            IPAExtensions::LatinSmallLetterLsDigraph => LATIN_SMALL_LETTER_LS_DIGRAPH,
-            IPAExtensions::LatinSmallLetterLzDigraph => LATIN_SMALL_LETTER_LZ_DIGRAPH,
-            IPAExtensions::LatinLetterBilabialPercussive => LATIN_LETTER_BILABIAL_PERCUSSIVE,
-            IPAExtensions::LatinLetterBidentalPercussive => LATIN_LETTER_BIDENTAL_PERCUSSIVE,
-            IPAExtensions::LatinSmallLetterTurnedHWithFishhook => LATIN_SMALL_LETTER_TURNED_H_WITH_FISHHOOK,
+            IPAExtensions::LatinSmallLetterTurnedA => 'ɐ',
+            IPAExtensions::LatinSmallLetterAlpha => 'ɑ',
+            IPAExtensions::LatinSmallLetterTurnedAlpha => 'ɒ',
+            IPAExtensions::LatinSmallLetterBWithHook => 'ɓ',
+            IPAExtensions::LatinSmallLetterOpenO => 'ɔ',
+            IPAExtensions::LatinSmallLetterCWithCurl => 'ɕ',
+            IPAExtensions::LatinSmallLetterDWithTail => 'ɖ',
+            IPAExtensions::LatinSmallLetterDWithHook => 'ɗ',
+            IPAExtensions::LatinSmallLetterReversedE => 'ɘ',
+            IPAExtensions::LatinSmallLetterSchwa => 'ə',
+            IPAExtensions::LatinSmallLetterSchwaWithHook => 'ɚ',
+            IPAExtensions::LatinSmallLetterOpenE => 'ɛ',
+            IPAExtensions::LatinSmallLetterReversedOpenE => 'ɜ',
+            IPAExtensions::LatinSmallLetterReversedOpenEWithHook => 'ɝ',
+            IPAExtensions::LatinSmallLetterClosedReversedOpenE => 'ɞ',
+            IPAExtensions::LatinSmallLetterDotlessJWithStroke => 'ɟ',
+            IPAExtensions::LatinSmallLetterGWithHook => 'ɠ',
+            IPAExtensions::LatinSmallLetterScriptG => 'ɡ',
+            IPAExtensions::LatinLetterSmallCapitalG => 'ɢ',
+            IPAExtensions::LatinSmallLetterGamma => 'ɣ',
+            IPAExtensions::LatinSmallLetterRamsHorn => 'ɤ',
+            IPAExtensions::LatinSmallLetterTurnedH => 'ɥ',
+            IPAExtensions::LatinSmallLetterHWithHook => 'ɦ',
+            IPAExtensions::LatinSmallLetterHengWithHook => 'ɧ',
+            IPAExtensions::LatinSmallLetterIWithStroke => 'ɨ',
+            IPAExtensions::LatinSmallLetterIota => 'ɩ',
+            IPAExtensions::LatinLetterSmallCapitalI => 'ɪ',
+            IPAExtensions::LatinSmallLetterLWithMiddleTilde => 'ɫ',
+            IPAExtensions::LatinSmallLetterLWithBelt => 'ɬ',
+            IPAExtensions::LatinSmallLetterLWithRetroflexHook => 'ɭ',
+            IPAExtensions::LatinSmallLetterLezh => 'ɮ',
+            IPAExtensions::LatinSmallLetterTurnedM => 'ɯ',
+            IPAExtensions::LatinSmallLetterTurnedMWithLongLeg => 'ɰ',
+            IPAExtensions::LatinSmallLetterMWithHook => 'ɱ',
+            IPAExtensions::LatinSmallLetterNWithLeftHook => 'ɲ',
+            IPAExtensions::LatinSmallLetterNWithRetroflexHook => 'ɳ',
+            IPAExtensions::LatinLetterSmallCapitalN => 'ɴ',
+            IPAExtensions::LatinSmallLetterBarredO => 'ɵ',
+            IPAExtensions::LatinLetterSmallCapitalOe => 'ɶ',
+            IPAExtensions::LatinSmallLetterClosedOmega => 'ɷ',
+            IPAExtensions::LatinSmallLetterPhi => 'ɸ',
+            IPAExtensions::LatinSmallLetterTurnedR => 'ɹ',
+            IPAExtensions::LatinSmallLetterTurnedRWithLongLeg => 'ɺ',
+            IPAExtensions::LatinSmallLetterTurnedRWithHook => 'ɻ',
+            IPAExtensions::LatinSmallLetterRWithLongLeg => 'ɼ',
+            IPAExtensions::LatinSmallLetterRWithTail => 'ɽ',
+            IPAExtensions::LatinSmallLetterRWithFishhook => 'ɾ',
+            IPAExtensions::LatinSmallLetterReversedRWithFishhook => 'ɿ',
+            IPAExtensions::LatinLetterSmallCapitalR => 'ʀ',
+            IPAExtensions::LatinLetterSmallCapitalInvertedR => 'ʁ',
+            IPAExtensions::LatinSmallLetterSWithHook => 'ʂ',
+            IPAExtensions::LatinSmallLetterEsh => 'ʃ',
+            IPAExtensions::LatinSmallLetterDotlessJWithStrokeAndHook => 'ʄ',
+            IPAExtensions::LatinSmallLetterSquatReversedEsh => 'ʅ',
+            IPAExtensions::LatinSmallLetterEshWithCurl => 'ʆ',
+            IPAExtensions::LatinSmallLetterTurnedT => 'ʇ',
+            IPAExtensions::LatinSmallLetterTWithRetroflexHook => 'ʈ',
+            IPAExtensions::LatinSmallLetterUBar => 'ʉ',
+            IPAExtensions::LatinSmallLetterUpsilon => 'ʊ',
+            IPAExtensions::LatinSmallLetterVWithHook => 'ʋ',
+            IPAExtensions::LatinSmallLetterTurnedV => 'ʌ',
+            IPAExtensions::LatinSmallLetterTurnedW => 'ʍ',
+            IPAExtensions::LatinSmallLetterTurnedY => 'ʎ',
+            IPAExtensions::LatinLetterSmallCapitalY => 'ʏ',
+            IPAExtensions::LatinSmallLetterZWithRetroflexHook => 'ʐ',
+            IPAExtensions::LatinSmallLetterZWithCurl => 'ʑ',
+            IPAExtensions::LatinSmallLetterEzh => 'ʒ',
+            IPAExtensions::LatinSmallLetterEzhWithCurl => 'ʓ',
+            IPAExtensions::LatinLetterGlottalStop => 'ʔ',
+            IPAExtensions::LatinLetterPharyngealVoicedFricative => 'ʕ',
+            IPAExtensions::LatinLetterInvertedGlottalStop => 'ʖ',
+            IPAExtensions::LatinLetterStretchedC => 'ʗ',
+            IPAExtensions::LatinLetterBilabialClick => 'ʘ',
+            IPAExtensions::LatinLetterSmallCapitalB => 'ʙ',
+            IPAExtensions::LatinSmallLetterClosedOpenE => 'ʚ',
+            IPAExtensions::LatinLetterSmallCapitalGWithHook => 'ʛ',
+            IPAExtensions::LatinLetterSmallCapitalH => 'ʜ',
+            IPAExtensions::LatinSmallLetterJWithCrossedDashTail => 'ʝ',
+            IPAExtensions::LatinSmallLetterTurnedK => 'ʞ',
+            IPAExtensions::LatinLetterSmallCapitalL => 'ʟ',
+            IPAExtensions::LatinSmallLetterQWithHook => 'ʠ',
+            IPAExtensions::LatinLetterGlottalStopWithStroke => 'ʡ',
+            IPAExtensions::LatinLetterReversedGlottalStopWithStroke => 'ʢ',
+            IPAExtensions::LatinSmallLetterDzDigraph => 'ʣ',
+            IPAExtensions::LatinSmallLetterDezhDigraph => 'ʤ',
+            IPAExtensions::LatinSmallLetterDzDigraphWithCurl => 'ʥ',
+            IPAExtensions::LatinSmallLetterTsDigraph => 'ʦ',
+            IPAExtensions::LatinSmallLetterTeshDigraph => 'ʧ',
+            IPAExtensions::LatinSmallLetterTcDigraphWithCurl => 'ʨ',
+            IPAExtensions::LatinSmallLetterFengDigraph => 'ʩ',
+            IPAExtensions::LatinSmallLetterLsDigraph => 'ʪ',
+            IPAExtensions::LatinSmallLetterLzDigraph => 'ʫ',
+            IPAExtensions::LatinLetterBilabialPercussive => 'ʬ',
+            IPAExtensions::LatinLetterBidentalPercussive => 'ʭ',
+            IPAExtensions::LatinSmallLetterTurnedHWithFishhook => 'ʮ',
         }
     }
 }
@@ -493,103 +299,102 @@ impl Into<char> for IPAExtensions {
 impl std::convert::TryFrom<char> for IPAExtensions {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LATIN_SMALL_LETTER_TURNED_A => Ok(IPAExtensions::LatinSmallLetterTurnedA),
-            LATIN_SMALL_LETTER_ALPHA => Ok(IPAExtensions::LatinSmallLetterAlpha),
-            LATIN_SMALL_LETTER_TURNED_ALPHA => Ok(IPAExtensions::LatinSmallLetterTurnedAlpha),
-            LATIN_SMALL_LETTER_B_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterBWithHook),
-            LATIN_SMALL_LETTER_OPEN_O => Ok(IPAExtensions::LatinSmallLetterOpenO),
-            LATIN_SMALL_LETTER_C_WITH_CURL => Ok(IPAExtensions::LatinSmallLetterCWithCurl),
-            LATIN_SMALL_LETTER_D_WITH_TAIL => Ok(IPAExtensions::LatinSmallLetterDWithTail),
-            LATIN_SMALL_LETTER_D_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterDWithHook),
-            LATIN_SMALL_LETTER_REVERSED_E => Ok(IPAExtensions::LatinSmallLetterReversedE),
-            LATIN_SMALL_LETTER_SCHWA => Ok(IPAExtensions::LatinSmallLetterSchwa),
-            LATIN_SMALL_LETTER_SCHWA_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterSchwaWithHook),
-            LATIN_SMALL_LETTER_OPEN_E => Ok(IPAExtensions::LatinSmallLetterOpenE),
-            LATIN_SMALL_LETTER_REVERSED_OPEN_E => Ok(IPAExtensions::LatinSmallLetterReversedOpenE),
-            LATIN_SMALL_LETTER_REVERSED_OPEN_E_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterReversedOpenEWithHook),
-            LATIN_SMALL_LETTER_CLOSED_REVERSED_OPEN_E => Ok(IPAExtensions::LatinSmallLetterClosedReversedOpenE),
-            LATIN_SMALL_LETTER_DOTLESS_J_WITH_STROKE => Ok(IPAExtensions::LatinSmallLetterDotlessJWithStroke),
-            LATIN_SMALL_LETTER_G_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterGWithHook),
-            LATIN_SMALL_LETTER_SCRIPT_G => Ok(IPAExtensions::LatinSmallLetterScriptG),
-            LATIN_LETTER_SMALL_CAPITAL_G => Ok(IPAExtensions::LatinLetterSmallCapitalG),
-            LATIN_SMALL_LETTER_GAMMA => Ok(IPAExtensions::LatinSmallLetterGamma),
-            LATIN_SMALL_LETTER_RAMS_HORN => Ok(IPAExtensions::LatinSmallLetterRamsHorn),
-            LATIN_SMALL_LETTER_TURNED_H => Ok(IPAExtensions::LatinSmallLetterTurnedH),
-            LATIN_SMALL_LETTER_H_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterHWithHook),
-            LATIN_SMALL_LETTER_HENG_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterHengWithHook),
-            LATIN_SMALL_LETTER_I_WITH_STROKE => Ok(IPAExtensions::LatinSmallLetterIWithStroke),
-            LATIN_SMALL_LETTER_IOTA => Ok(IPAExtensions::LatinSmallLetterIota),
-            LATIN_LETTER_SMALL_CAPITAL_I => Ok(IPAExtensions::LatinLetterSmallCapitalI),
-            LATIN_SMALL_LETTER_L_WITH_MIDDLE_TILDE => Ok(IPAExtensions::LatinSmallLetterLWithMiddleTilde),
-            LATIN_SMALL_LETTER_L_WITH_BELT => Ok(IPAExtensions::LatinSmallLetterLWithBelt),
-            LATIN_SMALL_LETTER_L_WITH_RETROFLEX_HOOK => Ok(IPAExtensions::LatinSmallLetterLWithRetroflexHook),
-            LATIN_SMALL_LETTER_LEZH => Ok(IPAExtensions::LatinSmallLetterLezh),
-            LATIN_SMALL_LETTER_TURNED_M => Ok(IPAExtensions::LatinSmallLetterTurnedM),
-            LATIN_SMALL_LETTER_TURNED_M_WITH_LONG_LEG => Ok(IPAExtensions::LatinSmallLetterTurnedMWithLongLeg),
-            LATIN_SMALL_LETTER_M_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterMWithHook),
-            LATIN_SMALL_LETTER_N_WITH_LEFT_HOOK => Ok(IPAExtensions::LatinSmallLetterNWithLeftHook),
-            LATIN_SMALL_LETTER_N_WITH_RETROFLEX_HOOK => Ok(IPAExtensions::LatinSmallLetterNWithRetroflexHook),
-            LATIN_LETTER_SMALL_CAPITAL_N => Ok(IPAExtensions::LatinLetterSmallCapitalN),
-            LATIN_SMALL_LETTER_BARRED_O => Ok(IPAExtensions::LatinSmallLetterBarredO),
-            LATIN_LETTER_SMALL_CAPITAL_OE => Ok(IPAExtensions::LatinLetterSmallCapitalOe),
-            LATIN_SMALL_LETTER_CLOSED_OMEGA => Ok(IPAExtensions::LatinSmallLetterClosedOmega),
-            LATIN_SMALL_LETTER_PHI => Ok(IPAExtensions::LatinSmallLetterPhi),
-            LATIN_SMALL_LETTER_TURNED_R => Ok(IPAExtensions::LatinSmallLetterTurnedR),
-            LATIN_SMALL_LETTER_TURNED_R_WITH_LONG_LEG => Ok(IPAExtensions::LatinSmallLetterTurnedRWithLongLeg),
-            LATIN_SMALL_LETTER_TURNED_R_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterTurnedRWithHook),
-            LATIN_SMALL_LETTER_R_WITH_LONG_LEG => Ok(IPAExtensions::LatinSmallLetterRWithLongLeg),
-            LATIN_SMALL_LETTER_R_WITH_TAIL => Ok(IPAExtensions::LatinSmallLetterRWithTail),
-            LATIN_SMALL_LETTER_R_WITH_FISHHOOK => Ok(IPAExtensions::LatinSmallLetterRWithFishhook),
-            LATIN_SMALL_LETTER_REVERSED_R_WITH_FISHHOOK => Ok(IPAExtensions::LatinSmallLetterReversedRWithFishhook),
-            LATIN_LETTER_SMALL_CAPITAL_R => Ok(IPAExtensions::LatinLetterSmallCapitalR),
-            LATIN_LETTER_SMALL_CAPITAL_INVERTED_R => Ok(IPAExtensions::LatinLetterSmallCapitalInvertedR),
-            LATIN_SMALL_LETTER_S_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterSWithHook),
-            LATIN_SMALL_LETTER_ESH => Ok(IPAExtensions::LatinSmallLetterEsh),
-            LATIN_SMALL_LETTER_DOTLESS_J_WITH_STROKE_AND_HOOK => Ok(IPAExtensions::LatinSmallLetterDotlessJWithStrokeAndHook),
-            LATIN_SMALL_LETTER_SQUAT_REVERSED_ESH => Ok(IPAExtensions::LatinSmallLetterSquatReversedEsh),
-            LATIN_SMALL_LETTER_ESH_WITH_CURL => Ok(IPAExtensions::LatinSmallLetterEshWithCurl),
-            LATIN_SMALL_LETTER_TURNED_T => Ok(IPAExtensions::LatinSmallLetterTurnedT),
-            LATIN_SMALL_LETTER_T_WITH_RETROFLEX_HOOK => Ok(IPAExtensions::LatinSmallLetterTWithRetroflexHook),
-            LATIN_SMALL_LETTER_U_BAR => Ok(IPAExtensions::LatinSmallLetterUBar),
-            LATIN_SMALL_LETTER_UPSILON => Ok(IPAExtensions::LatinSmallLetterUpsilon),
-            LATIN_SMALL_LETTER_V_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterVWithHook),
-            LATIN_SMALL_LETTER_TURNED_V => Ok(IPAExtensions::LatinSmallLetterTurnedV),
-            LATIN_SMALL_LETTER_TURNED_W => Ok(IPAExtensions::LatinSmallLetterTurnedW),
-            LATIN_SMALL_LETTER_TURNED_Y => Ok(IPAExtensions::LatinSmallLetterTurnedY),
-            LATIN_LETTER_SMALL_CAPITAL_Y => Ok(IPAExtensions::LatinLetterSmallCapitalY),
-            LATIN_SMALL_LETTER_Z_WITH_RETROFLEX_HOOK => Ok(IPAExtensions::LatinSmallLetterZWithRetroflexHook),
-            LATIN_SMALL_LETTER_Z_WITH_CURL => Ok(IPAExtensions::LatinSmallLetterZWithCurl),
-            LATIN_SMALL_LETTER_EZH => Ok(IPAExtensions::LatinSmallLetterEzh),
-            LATIN_SMALL_LETTER_EZH_WITH_CURL => Ok(IPAExtensions::LatinSmallLetterEzhWithCurl),
-            LATIN_LETTER_GLOTTAL_STOP => Ok(IPAExtensions::LatinLetterGlottalStop),
-            LATIN_LETTER_PHARYNGEAL_VOICED_FRICATIVE => Ok(IPAExtensions::LatinLetterPharyngealVoicedFricative),
-            LATIN_LETTER_INVERTED_GLOTTAL_STOP => Ok(IPAExtensions::LatinLetterInvertedGlottalStop),
-            LATIN_LETTER_STRETCHED_C => Ok(IPAExtensions::LatinLetterStretchedC),
-            LATIN_LETTER_BILABIAL_CLICK => Ok(IPAExtensions::LatinLetterBilabialClick),
-            LATIN_LETTER_SMALL_CAPITAL_B => Ok(IPAExtensions::LatinLetterSmallCapitalB),
-            LATIN_SMALL_LETTER_CLOSED_OPEN_E => Ok(IPAExtensions::LatinSmallLetterClosedOpenE),
-            LATIN_LETTER_SMALL_CAPITAL_G_WITH_HOOK => Ok(IPAExtensions::LatinLetterSmallCapitalGWithHook),
-            LATIN_LETTER_SMALL_CAPITAL_H => Ok(IPAExtensions::LatinLetterSmallCapitalH),
-            LATIN_SMALL_LETTER_J_WITH_CROSSED_DASH_TAIL => Ok(IPAExtensions::LatinSmallLetterJWithCrossedDashTail),
-            LATIN_SMALL_LETTER_TURNED_K => Ok(IPAExtensions::LatinSmallLetterTurnedK),
-            LATIN_LETTER_SMALL_CAPITAL_L => Ok(IPAExtensions::LatinLetterSmallCapitalL),
-            LATIN_SMALL_LETTER_Q_WITH_HOOK => Ok(IPAExtensions::LatinSmallLetterQWithHook),
-            LATIN_LETTER_GLOTTAL_STOP_WITH_STROKE => Ok(IPAExtensions::LatinLetterGlottalStopWithStroke),
-            LATIN_LETTER_REVERSED_GLOTTAL_STOP_WITH_STROKE => Ok(IPAExtensions::LatinLetterReversedGlottalStopWithStroke),
-            LATIN_SMALL_LETTER_DZ_DIGRAPH => Ok(IPAExtensions::LatinSmallLetterDzDigraph),
-            LATIN_SMALL_LETTER_DEZH_DIGRAPH => Ok(IPAExtensions::LatinSmallLetterDezhDigraph),
-            LATIN_SMALL_LETTER_DZ_DIGRAPH_WITH_CURL => Ok(IPAExtensions::LatinSmallLetterDzDigraphWithCurl),
-            LATIN_SMALL_LETTER_TS_DIGRAPH => Ok(IPAExtensions::LatinSmallLetterTsDigraph),
-            LATIN_SMALL_LETTER_TESH_DIGRAPH => Ok(IPAExtensions::LatinSmallLetterTeshDigraph),
-            LATIN_SMALL_LETTER_TC_DIGRAPH_WITH_CURL => Ok(IPAExtensions::LatinSmallLetterTcDigraphWithCurl),
-            LATIN_SMALL_LETTER_FENG_DIGRAPH => Ok(IPAExtensions::LatinSmallLetterFengDigraph),
-            LATIN_SMALL_LETTER_LS_DIGRAPH => Ok(IPAExtensions::LatinSmallLetterLsDigraph),
-            LATIN_SMALL_LETTER_LZ_DIGRAPH => Ok(IPAExtensions::LatinSmallLetterLzDigraph),
-            LATIN_LETTER_BILABIAL_PERCUSSIVE => Ok(IPAExtensions::LatinLetterBilabialPercussive),
-            LATIN_LETTER_BIDENTAL_PERCUSSIVE => Ok(IPAExtensions::LatinLetterBidentalPercussive),
-            LATIN_SMALL_LETTER_TURNED_H_WITH_FISHHOOK => Ok(IPAExtensions::LatinSmallLetterTurnedHWithFishhook),
+            'ɐ' => Ok(IPAExtensions::LatinSmallLetterTurnedA),
+            'ɑ' => Ok(IPAExtensions::LatinSmallLetterAlpha),
+            'ɒ' => Ok(IPAExtensions::LatinSmallLetterTurnedAlpha),
+            'ɓ' => Ok(IPAExtensions::LatinSmallLetterBWithHook),
+            'ɔ' => Ok(IPAExtensions::LatinSmallLetterOpenO),
+            'ɕ' => Ok(IPAExtensions::LatinSmallLetterCWithCurl),
+            'ɖ' => Ok(IPAExtensions::LatinSmallLetterDWithTail),
+            'ɗ' => Ok(IPAExtensions::LatinSmallLetterDWithHook),
+            'ɘ' => Ok(IPAExtensions::LatinSmallLetterReversedE),
+            'ə' => Ok(IPAExtensions::LatinSmallLetterSchwa),
+            'ɚ' => Ok(IPAExtensions::LatinSmallLetterSchwaWithHook),
+            'ɛ' => Ok(IPAExtensions::LatinSmallLetterOpenE),
+            'ɜ' => Ok(IPAExtensions::LatinSmallLetterReversedOpenE),
+            'ɝ' => Ok(IPAExtensions::LatinSmallLetterReversedOpenEWithHook),
+            'ɞ' => Ok(IPAExtensions::LatinSmallLetterClosedReversedOpenE),
+            'ɟ' => Ok(IPAExtensions::LatinSmallLetterDotlessJWithStroke),
+            'ɠ' => Ok(IPAExtensions::LatinSmallLetterGWithHook),
+            'ɡ' => Ok(IPAExtensions::LatinSmallLetterScriptG),
+            'ɢ' => Ok(IPAExtensions::LatinLetterSmallCapitalG),
+            'ɣ' => Ok(IPAExtensions::LatinSmallLetterGamma),
+            'ɤ' => Ok(IPAExtensions::LatinSmallLetterRamsHorn),
+            'ɥ' => Ok(IPAExtensions::LatinSmallLetterTurnedH),
+            'ɦ' => Ok(IPAExtensions::LatinSmallLetterHWithHook),
+            'ɧ' => Ok(IPAExtensions::LatinSmallLetterHengWithHook),
+            'ɨ' => Ok(IPAExtensions::LatinSmallLetterIWithStroke),
+            'ɩ' => Ok(IPAExtensions::LatinSmallLetterIota),
+            'ɪ' => Ok(IPAExtensions::LatinLetterSmallCapitalI),
+            'ɫ' => Ok(IPAExtensions::LatinSmallLetterLWithMiddleTilde),
+            'ɬ' => Ok(IPAExtensions::LatinSmallLetterLWithBelt),
+            'ɭ' => Ok(IPAExtensions::LatinSmallLetterLWithRetroflexHook),
+            'ɮ' => Ok(IPAExtensions::LatinSmallLetterLezh),
+            'ɯ' => Ok(IPAExtensions::LatinSmallLetterTurnedM),
+            'ɰ' => Ok(IPAExtensions::LatinSmallLetterTurnedMWithLongLeg),
+            'ɱ' => Ok(IPAExtensions::LatinSmallLetterMWithHook),
+            'ɲ' => Ok(IPAExtensions::LatinSmallLetterNWithLeftHook),
+            'ɳ' => Ok(IPAExtensions::LatinSmallLetterNWithRetroflexHook),
+            'ɴ' => Ok(IPAExtensions::LatinLetterSmallCapitalN),
+            'ɵ' => Ok(IPAExtensions::LatinSmallLetterBarredO),
+            'ɶ' => Ok(IPAExtensions::LatinLetterSmallCapitalOe),
+            'ɷ' => Ok(IPAExtensions::LatinSmallLetterClosedOmega),
+            'ɸ' => Ok(IPAExtensions::LatinSmallLetterPhi),
+            'ɹ' => Ok(IPAExtensions::LatinSmallLetterTurnedR),
+            'ɺ' => Ok(IPAExtensions::LatinSmallLetterTurnedRWithLongLeg),
+            'ɻ' => Ok(IPAExtensions::LatinSmallLetterTurnedRWithHook),
+            'ɼ' => Ok(IPAExtensions::LatinSmallLetterRWithLongLeg),
+            'ɽ' => Ok(IPAExtensions::LatinSmallLetterRWithTail),
+            'ɾ' => Ok(IPAExtensions::LatinSmallLetterRWithFishhook),
+            'ɿ' => Ok(IPAExtensions::LatinSmallLetterReversedRWithFishhook),
+            'ʀ' => Ok(IPAExtensions::LatinLetterSmallCapitalR),
+            'ʁ' => Ok(IPAExtensions::LatinLetterSmallCapitalInvertedR),
+            'ʂ' => Ok(IPAExtensions::LatinSmallLetterSWithHook),
+            'ʃ' => Ok(IPAExtensions::LatinSmallLetterEsh),
+            'ʄ' => Ok(IPAExtensions::LatinSmallLetterDotlessJWithStrokeAndHook),
+            'ʅ' => Ok(IPAExtensions::LatinSmallLetterSquatReversedEsh),
+            'ʆ' => Ok(IPAExtensions::LatinSmallLetterEshWithCurl),
+            'ʇ' => Ok(IPAExtensions::LatinSmallLetterTurnedT),
+            'ʈ' => Ok(IPAExtensions::LatinSmallLetterTWithRetroflexHook),
+            'ʉ' => Ok(IPAExtensions::LatinSmallLetterUBar),
+            'ʊ' => Ok(IPAExtensions::LatinSmallLetterUpsilon),
+            'ʋ' => Ok(IPAExtensions::LatinSmallLetterVWithHook),
+            'ʌ' => Ok(IPAExtensions::LatinSmallLetterTurnedV),
+            'ʍ' => Ok(IPAExtensions::LatinSmallLetterTurnedW),
+            'ʎ' => Ok(IPAExtensions::LatinSmallLetterTurnedY),
+            'ʏ' => Ok(IPAExtensions::LatinLetterSmallCapitalY),
+            'ʐ' => Ok(IPAExtensions::LatinSmallLetterZWithRetroflexHook),
+            'ʑ' => Ok(IPAExtensions::LatinSmallLetterZWithCurl),
+            'ʒ' => Ok(IPAExtensions::LatinSmallLetterEzh),
+            'ʓ' => Ok(IPAExtensions::LatinSmallLetterEzhWithCurl),
+            'ʔ' => Ok(IPAExtensions::LatinLetterGlottalStop),
+            'ʕ' => Ok(IPAExtensions::LatinLetterPharyngealVoicedFricative),
+            'ʖ' => Ok(IPAExtensions::LatinLetterInvertedGlottalStop),
+            'ʗ' => Ok(IPAExtensions::LatinLetterStretchedC),
+            'ʘ' => Ok(IPAExtensions::LatinLetterBilabialClick),
+            'ʙ' => Ok(IPAExtensions::LatinLetterSmallCapitalB),
+            'ʚ' => Ok(IPAExtensions::LatinSmallLetterClosedOpenE),
+            'ʛ' => Ok(IPAExtensions::LatinLetterSmallCapitalGWithHook),
+            'ʜ' => Ok(IPAExtensions::LatinLetterSmallCapitalH),
+            'ʝ' => Ok(IPAExtensions::LatinSmallLetterJWithCrossedDashTail),
+            'ʞ' => Ok(IPAExtensions::LatinSmallLetterTurnedK),
+            'ʟ' => Ok(IPAExtensions::LatinLetterSmallCapitalL),
+            'ʠ' => Ok(IPAExtensions::LatinSmallLetterQWithHook),
+            'ʡ' => Ok(IPAExtensions::LatinLetterGlottalStopWithStroke),
+            'ʢ' => Ok(IPAExtensions::LatinLetterReversedGlottalStopWithStroke),
+            'ʣ' => Ok(IPAExtensions::LatinSmallLetterDzDigraph),
+            'ʤ' => Ok(IPAExtensions::LatinSmallLetterDezhDigraph),
+            'ʥ' => Ok(IPAExtensions::LatinSmallLetterDzDigraphWithCurl),
+            'ʦ' => Ok(IPAExtensions::LatinSmallLetterTsDigraph),
+            'ʧ' => Ok(IPAExtensions::LatinSmallLetterTeshDigraph),
+            'ʨ' => Ok(IPAExtensions::LatinSmallLetterTcDigraphWithCurl),
+            'ʩ' => Ok(IPAExtensions::LatinSmallLetterFengDigraph),
+            'ʪ' => Ok(IPAExtensions::LatinSmallLetterLsDigraph),
+            'ʫ' => Ok(IPAExtensions::LatinSmallLetterLzDigraph),
+            'ʬ' => Ok(IPAExtensions::LatinLetterBilabialPercussive),
+            'ʭ' => Ok(IPAExtensions::LatinLetterBidentalPercussive),
+            'ʮ' => Ok(IPAExtensions::LatinSmallLetterTurnedHWithFishhook),
             _ => Err(()),
         }
     }

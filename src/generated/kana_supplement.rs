@@ -1,516 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1b000}: '𛀀'
-    pub const KATAKANA_LETTER_ARCHAIC_E: char = '𛀀';
-    /// \u{1b001}: '𛀁'
-    pub const HIRAGANA_LETTER_ARCHAIC_YE: char = '𛀁';
-    /// \u{1b002}: '𛀂'
-    pub const HENTAIGANA_LETTER_A_DASH_1: char = '𛀂';
-    /// \u{1b003}: '𛀃'
-    pub const HENTAIGANA_LETTER_A_DASH_2: char = '𛀃';
-    /// \u{1b004}: '𛀄'
-    pub const HENTAIGANA_LETTER_A_DASH_3: char = '𛀄';
-    /// \u{1b005}: '𛀅'
-    pub const HENTAIGANA_LETTER_A_DASH_WO: char = '𛀅';
-    /// \u{1b006}: '𛀆'
-    pub const HENTAIGANA_LETTER_I_DASH_1: char = '𛀆';
-    /// \u{1b007}: '𛀇'
-    pub const HENTAIGANA_LETTER_I_DASH_2: char = '𛀇';
-    /// \u{1b008}: '𛀈'
-    pub const HENTAIGANA_LETTER_I_DASH_3: char = '𛀈';
-    /// \u{1b009}: '𛀉'
-    pub const HENTAIGANA_LETTER_I_DASH_4: char = '𛀉';
-    /// \u{1b00a}: '𛀊'
-    pub const HENTAIGANA_LETTER_U_DASH_1: char = '𛀊';
-    /// \u{1b00b}: '𛀋'
-    pub const HENTAIGANA_LETTER_U_DASH_2: char = '𛀋';
-    /// \u{1b00c}: '𛀌'
-    pub const HENTAIGANA_LETTER_U_DASH_3: char = '𛀌';
-    /// \u{1b00d}: '𛀍'
-    pub const HENTAIGANA_LETTER_U_DASH_4: char = '𛀍';
-    /// \u{1b00e}: '𛀎'
-    pub const HENTAIGANA_LETTER_U_DASH_5: char = '𛀎';
-    /// \u{1b00f}: '𛀏'
-    pub const HENTAIGANA_LETTER_E_DASH_2: char = '𛀏';
-    /// \u{1b010}: '𛀐'
-    pub const HENTAIGANA_LETTER_E_DASH_3: char = '𛀐';
-    /// \u{1b011}: '𛀑'
-    pub const HENTAIGANA_LETTER_E_DASH_4: char = '𛀑';
-    /// \u{1b012}: '𛀒'
-    pub const HENTAIGANA_LETTER_E_DASH_5: char = '𛀒';
-    /// \u{1b013}: '𛀓'
-    pub const HENTAIGANA_LETTER_E_DASH_6: char = '𛀓';
-    /// \u{1b014}: '𛀔'
-    pub const HENTAIGANA_LETTER_O_DASH_1: char = '𛀔';
-    /// \u{1b015}: '𛀕'
-    pub const HENTAIGANA_LETTER_O_DASH_2: char = '𛀕';
-    /// \u{1b016}: '𛀖'
-    pub const HENTAIGANA_LETTER_O_DASH_3: char = '𛀖';
-    /// \u{1b017}: '𛀗'
-    pub const HENTAIGANA_LETTER_KA_DASH_1: char = '𛀗';
-    /// \u{1b018}: '𛀘'
-    pub const HENTAIGANA_LETTER_KA_DASH_2: char = '𛀘';
-    /// \u{1b019}: '𛀙'
-    pub const HENTAIGANA_LETTER_KA_DASH_3: char = '𛀙';
-    /// \u{1b01a}: '𛀚'
-    pub const HENTAIGANA_LETTER_KA_DASH_4: char = '𛀚';
-    /// \u{1b01b}: '𛀛'
-    pub const HENTAIGANA_LETTER_KA_DASH_5: char = '𛀛';
-    /// \u{1b01c}: '𛀜'
-    pub const HENTAIGANA_LETTER_KA_DASH_6: char = '𛀜';
-    /// \u{1b01d}: '𛀝'
-    pub const HENTAIGANA_LETTER_KA_DASH_7: char = '𛀝';
-    /// \u{1b01e}: '𛀞'
-    pub const HENTAIGANA_LETTER_KA_DASH_8: char = '𛀞';
-    /// \u{1b01f}: '𛀟'
-    pub const HENTAIGANA_LETTER_KA_DASH_9: char = '𛀟';
-    /// \u{1b020}: '𛀠'
-    pub const HENTAIGANA_LETTER_KA_DASH_10: char = '𛀠';
-    /// \u{1b021}: '𛀡'
-    pub const HENTAIGANA_LETTER_KA_DASH_11: char = '𛀡';
-    /// \u{1b022}: '𛀢'
-    pub const HENTAIGANA_LETTER_KA_DASH_KE: char = '𛀢';
-    /// \u{1b023}: '𛀣'
-    pub const HENTAIGANA_LETTER_KI_DASH_1: char = '𛀣';
-    /// \u{1b024}: '𛀤'
-    pub const HENTAIGANA_LETTER_KI_DASH_2: char = '𛀤';
-    /// \u{1b025}: '𛀥'
-    pub const HENTAIGANA_LETTER_KI_DASH_3: char = '𛀥';
-    /// \u{1b026}: '𛀦'
-    pub const HENTAIGANA_LETTER_KI_DASH_4: char = '𛀦';
-    /// \u{1b027}: '𛀧'
-    pub const HENTAIGANA_LETTER_KI_DASH_5: char = '𛀧';
-    /// \u{1b028}: '𛀨'
-    pub const HENTAIGANA_LETTER_KI_DASH_6: char = '𛀨';
-    /// \u{1b029}: '𛀩'
-    pub const HENTAIGANA_LETTER_KI_DASH_7: char = '𛀩';
-    /// \u{1b02a}: '𛀪'
-    pub const HENTAIGANA_LETTER_KI_DASH_8: char = '𛀪';
-    /// \u{1b02b}: '𛀫'
-    pub const HENTAIGANA_LETTER_KU_DASH_1: char = '𛀫';
-    /// \u{1b02c}: '𛀬'
-    pub const HENTAIGANA_LETTER_KU_DASH_2: char = '𛀬';
-    /// \u{1b02d}: '𛀭'
-    pub const HENTAIGANA_LETTER_KU_DASH_3: char = '𛀭';
-    /// \u{1b02e}: '𛀮'
-    pub const HENTAIGANA_LETTER_KU_DASH_4: char = '𛀮';
-    /// \u{1b02f}: '𛀯'
-    pub const HENTAIGANA_LETTER_KU_DASH_5: char = '𛀯';
-    /// \u{1b030}: '𛀰'
-    pub const HENTAIGANA_LETTER_KU_DASH_6: char = '𛀰';
-    /// \u{1b031}: '𛀱'
-    pub const HENTAIGANA_LETTER_KU_DASH_7: char = '𛀱';
-    /// \u{1b032}: '𛀲'
-    pub const HENTAIGANA_LETTER_KE_DASH_1: char = '𛀲';
-    /// \u{1b033}: '𛀳'
-    pub const HENTAIGANA_LETTER_KE_DASH_2: char = '𛀳';
-    /// \u{1b034}: '𛀴'
-    pub const HENTAIGANA_LETTER_KE_DASH_3: char = '𛀴';
-    /// \u{1b035}: '𛀵'
-    pub const HENTAIGANA_LETTER_KE_DASH_4: char = '𛀵';
-    /// \u{1b036}: '𛀶'
-    pub const HENTAIGANA_LETTER_KE_DASH_5: char = '𛀶';
-    /// \u{1b037}: '𛀷'
-    pub const HENTAIGANA_LETTER_KE_DASH_6: char = '𛀷';
-    /// \u{1b038}: '𛀸'
-    pub const HENTAIGANA_LETTER_KO_DASH_1: char = '𛀸';
-    /// \u{1b039}: '𛀹'
-    pub const HENTAIGANA_LETTER_KO_DASH_2: char = '𛀹';
-    /// \u{1b03a}: '𛀺'
-    pub const HENTAIGANA_LETTER_KO_DASH_3: char = '𛀺';
-    /// \u{1b03b}: '𛀻'
-    pub const HENTAIGANA_LETTER_KO_DASH_KI: char = '𛀻';
-    /// \u{1b03c}: '𛀼'
-    pub const HENTAIGANA_LETTER_SA_DASH_1: char = '𛀼';
-    /// \u{1b03d}: '𛀽'
-    pub const HENTAIGANA_LETTER_SA_DASH_2: char = '𛀽';
-    /// \u{1b03e}: '𛀾'
-    pub const HENTAIGANA_LETTER_SA_DASH_3: char = '𛀾';
-    /// \u{1b03f}: '𛀿'
-    pub const HENTAIGANA_LETTER_SA_DASH_4: char = '𛀿';
-    /// \u{1b040}: '𛁀'
-    pub const HENTAIGANA_LETTER_SA_DASH_5: char = '𛁀';
-    /// \u{1b041}: '𛁁'
-    pub const HENTAIGANA_LETTER_SA_DASH_6: char = '𛁁';
-    /// \u{1b042}: '𛁂'
-    pub const HENTAIGANA_LETTER_SA_DASH_7: char = '𛁂';
-    /// \u{1b043}: '𛁃'
-    pub const HENTAIGANA_LETTER_SA_DASH_8: char = '𛁃';
-    /// \u{1b044}: '𛁄'
-    pub const HENTAIGANA_LETTER_SI_DASH_1: char = '𛁄';
-    /// \u{1b045}: '𛁅'
-    pub const HENTAIGANA_LETTER_SI_DASH_2: char = '𛁅';
-    /// \u{1b046}: '𛁆'
-    pub const HENTAIGANA_LETTER_SI_DASH_3: char = '𛁆';
-    /// \u{1b047}: '𛁇'
-    pub const HENTAIGANA_LETTER_SI_DASH_4: char = '𛁇';
-    /// \u{1b048}: '𛁈'
-    pub const HENTAIGANA_LETTER_SI_DASH_5: char = '𛁈';
-    /// \u{1b049}: '𛁉'
-    pub const HENTAIGANA_LETTER_SI_DASH_6: char = '𛁉';
-    /// \u{1b04a}: '𛁊'
-    pub const HENTAIGANA_LETTER_SU_DASH_1: char = '𛁊';
-    /// \u{1b04b}: '𛁋'
-    pub const HENTAIGANA_LETTER_SU_DASH_2: char = '𛁋';
-    /// \u{1b04c}: '𛁌'
-    pub const HENTAIGANA_LETTER_SU_DASH_3: char = '𛁌';
-    /// \u{1b04d}: '𛁍'
-    pub const HENTAIGANA_LETTER_SU_DASH_4: char = '𛁍';
-    /// \u{1b04e}: '𛁎'
-    pub const HENTAIGANA_LETTER_SU_DASH_5: char = '𛁎';
-    /// \u{1b04f}: '𛁏'
-    pub const HENTAIGANA_LETTER_SU_DASH_6: char = '𛁏';
-    /// \u{1b050}: '𛁐'
-    pub const HENTAIGANA_LETTER_SU_DASH_7: char = '𛁐';
-    /// \u{1b051}: '𛁑'
-    pub const HENTAIGANA_LETTER_SU_DASH_8: char = '𛁑';
-    /// \u{1b052}: '𛁒'
-    pub const HENTAIGANA_LETTER_SE_DASH_1: char = '𛁒';
-    /// \u{1b053}: '𛁓'
-    pub const HENTAIGANA_LETTER_SE_DASH_2: char = '𛁓';
-    /// \u{1b054}: '𛁔'
-    pub const HENTAIGANA_LETTER_SE_DASH_3: char = '𛁔';
-    /// \u{1b055}: '𛁕'
-    pub const HENTAIGANA_LETTER_SE_DASH_4: char = '𛁕';
-    /// \u{1b056}: '𛁖'
-    pub const HENTAIGANA_LETTER_SE_DASH_5: char = '𛁖';
-    /// \u{1b057}: '𛁗'
-    pub const HENTAIGANA_LETTER_SO_DASH_1: char = '𛁗';
-    /// \u{1b058}: '𛁘'
-    pub const HENTAIGANA_LETTER_SO_DASH_2: char = '𛁘';
-    /// \u{1b059}: '𛁙'
-    pub const HENTAIGANA_LETTER_SO_DASH_3: char = '𛁙';
-    /// \u{1b05a}: '𛁚'
-    pub const HENTAIGANA_LETTER_SO_DASH_4: char = '𛁚';
-    /// \u{1b05b}: '𛁛'
-    pub const HENTAIGANA_LETTER_SO_DASH_5: char = '𛁛';
-    /// \u{1b05c}: '𛁜'
-    pub const HENTAIGANA_LETTER_SO_DASH_6: char = '𛁜';
-    /// \u{1b05d}: '𛁝'
-    pub const HENTAIGANA_LETTER_SO_DASH_7: char = '𛁝';
-    /// \u{1b05e}: '𛁞'
-    pub const HENTAIGANA_LETTER_TA_DASH_1: char = '𛁞';
-    /// \u{1b05f}: '𛁟'
-    pub const HENTAIGANA_LETTER_TA_DASH_2: char = '𛁟';
-    /// \u{1b060}: '𛁠'
-    pub const HENTAIGANA_LETTER_TA_DASH_3: char = '𛁠';
-    /// \u{1b061}: '𛁡'
-    pub const HENTAIGANA_LETTER_TA_DASH_4: char = '𛁡';
-    /// \u{1b062}: '𛁢'
-    pub const HENTAIGANA_LETTER_TI_DASH_1: char = '𛁢';
-    /// \u{1b063}: '𛁣'
-    pub const HENTAIGANA_LETTER_TI_DASH_2: char = '𛁣';
-    /// \u{1b064}: '𛁤'
-    pub const HENTAIGANA_LETTER_TI_DASH_3: char = '𛁤';
-    /// \u{1b065}: '𛁥'
-    pub const HENTAIGANA_LETTER_TI_DASH_4: char = '𛁥';
-    /// \u{1b066}: '𛁦'
-    pub const HENTAIGANA_LETTER_TI_DASH_5: char = '𛁦';
-    /// \u{1b067}: '𛁧'
-    pub const HENTAIGANA_LETTER_TI_DASH_6: char = '𛁧';
-    /// \u{1b068}: '𛁨'
-    pub const HENTAIGANA_LETTER_TI_DASH_7: char = '𛁨';
-    /// \u{1b069}: '𛁩'
-    pub const HENTAIGANA_LETTER_TU_DASH_1: char = '𛁩';
-    /// \u{1b06a}: '𛁪'
-    pub const HENTAIGANA_LETTER_TU_DASH_2: char = '𛁪';
-    /// \u{1b06b}: '𛁫'
-    pub const HENTAIGANA_LETTER_TU_DASH_3: char = '𛁫';
-    /// \u{1b06c}: '𛁬'
-    pub const HENTAIGANA_LETTER_TU_DASH_4: char = '𛁬';
-    /// \u{1b06d}: '𛁭'
-    pub const HENTAIGANA_LETTER_TU_DASH_TO: char = '𛁭';
-    /// \u{1b06e}: '𛁮'
-    pub const HENTAIGANA_LETTER_TE_DASH_1: char = '𛁮';
-    /// \u{1b06f}: '𛁯'
-    pub const HENTAIGANA_LETTER_TE_DASH_2: char = '𛁯';
-    /// \u{1b070}: '𛁰'
-    pub const HENTAIGANA_LETTER_TE_DASH_3: char = '𛁰';
-    /// \u{1b071}: '𛁱'
-    pub const HENTAIGANA_LETTER_TE_DASH_4: char = '𛁱';
-    /// \u{1b072}: '𛁲'
-    pub const HENTAIGANA_LETTER_TE_DASH_5: char = '𛁲';
-    /// \u{1b073}: '𛁳'
-    pub const HENTAIGANA_LETTER_TE_DASH_6: char = '𛁳';
-    /// \u{1b074}: '𛁴'
-    pub const HENTAIGANA_LETTER_TE_DASH_7: char = '𛁴';
-    /// \u{1b075}: '𛁵'
-    pub const HENTAIGANA_LETTER_TE_DASH_8: char = '𛁵';
-    /// \u{1b076}: '𛁶'
-    pub const HENTAIGANA_LETTER_TE_DASH_9: char = '𛁶';
-    /// \u{1b077}: '𛁷'
-    pub const HENTAIGANA_LETTER_TO_DASH_1: char = '𛁷';
-    /// \u{1b078}: '𛁸'
-    pub const HENTAIGANA_LETTER_TO_DASH_2: char = '𛁸';
-    /// \u{1b079}: '𛁹'
-    pub const HENTAIGANA_LETTER_TO_DASH_3: char = '𛁹';
-    /// \u{1b07a}: '𛁺'
-    pub const HENTAIGANA_LETTER_TO_DASH_4: char = '𛁺';
-    /// \u{1b07b}: '𛁻'
-    pub const HENTAIGANA_LETTER_TO_DASH_5: char = '𛁻';
-    /// \u{1b07c}: '𛁼'
-    pub const HENTAIGANA_LETTER_TO_DASH_6: char = '𛁼';
-    /// \u{1b07d}: '𛁽'
-    pub const HENTAIGANA_LETTER_TO_DASH_RA: char = '𛁽';
-    /// \u{1b07e}: '𛁾'
-    pub const HENTAIGANA_LETTER_NA_DASH_1: char = '𛁾';
-    /// \u{1b07f}: '𛁿'
-    pub const HENTAIGANA_LETTER_NA_DASH_2: char = '𛁿';
-    /// \u{1b080}: '𛂀'
-    pub const HENTAIGANA_LETTER_NA_DASH_3: char = '𛂀';
-    /// \u{1b081}: '𛂁'
-    pub const HENTAIGANA_LETTER_NA_DASH_4: char = '𛂁';
-    /// \u{1b082}: '𛂂'
-    pub const HENTAIGANA_LETTER_NA_DASH_5: char = '𛂂';
-    /// \u{1b083}: '𛂃'
-    pub const HENTAIGANA_LETTER_NA_DASH_6: char = '𛂃';
-    /// \u{1b084}: '𛂄'
-    pub const HENTAIGANA_LETTER_NA_DASH_7: char = '𛂄';
-    /// \u{1b085}: '𛂅'
-    pub const HENTAIGANA_LETTER_NA_DASH_8: char = '𛂅';
-    /// \u{1b086}: '𛂆'
-    pub const HENTAIGANA_LETTER_NA_DASH_9: char = '𛂆';
-    /// \u{1b087}: '𛂇'
-    pub const HENTAIGANA_LETTER_NI_DASH_1: char = '𛂇';
-    /// \u{1b088}: '𛂈'
-    pub const HENTAIGANA_LETTER_NI_DASH_2: char = '𛂈';
-    /// \u{1b089}: '𛂉'
-    pub const HENTAIGANA_LETTER_NI_DASH_3: char = '𛂉';
-    /// \u{1b08a}: '𛂊'
-    pub const HENTAIGANA_LETTER_NI_DASH_4: char = '𛂊';
-    /// \u{1b08b}: '𛂋'
-    pub const HENTAIGANA_LETTER_NI_DASH_5: char = '𛂋';
-    /// \u{1b08c}: '𛂌'
-    pub const HENTAIGANA_LETTER_NI_DASH_6: char = '𛂌';
-    /// \u{1b08d}: '𛂍'
-    pub const HENTAIGANA_LETTER_NI_DASH_7: char = '𛂍';
-    /// \u{1b08e}: '𛂎'
-    pub const HENTAIGANA_LETTER_NI_DASH_TE: char = '𛂎';
-    /// \u{1b08f}: '𛂏'
-    pub const HENTAIGANA_LETTER_NU_DASH_1: char = '𛂏';
-    /// \u{1b090}: '𛂐'
-    pub const HENTAIGANA_LETTER_NU_DASH_2: char = '𛂐';
-    /// \u{1b091}: '𛂑'
-    pub const HENTAIGANA_LETTER_NU_DASH_3: char = '𛂑';
-    /// \u{1b092}: '𛂒'
-    pub const HENTAIGANA_LETTER_NE_DASH_1: char = '𛂒';
-    /// \u{1b093}: '𛂓'
-    pub const HENTAIGANA_LETTER_NE_DASH_2: char = '𛂓';
-    /// \u{1b094}: '𛂔'
-    pub const HENTAIGANA_LETTER_NE_DASH_3: char = '𛂔';
-    /// \u{1b095}: '𛂕'
-    pub const HENTAIGANA_LETTER_NE_DASH_4: char = '𛂕';
-    /// \u{1b096}: '𛂖'
-    pub const HENTAIGANA_LETTER_NE_DASH_5: char = '𛂖';
-    /// \u{1b097}: '𛂗'
-    pub const HENTAIGANA_LETTER_NE_DASH_6: char = '𛂗';
-    /// \u{1b098}: '𛂘'
-    pub const HENTAIGANA_LETTER_NE_DASH_KO: char = '𛂘';
-    /// \u{1b099}: '𛂙'
-    pub const HENTAIGANA_LETTER_NO_DASH_1: char = '𛂙';
-    /// \u{1b09a}: '𛂚'
-    pub const HENTAIGANA_LETTER_NO_DASH_2: char = '𛂚';
-    /// \u{1b09b}: '𛂛'
-    pub const HENTAIGANA_LETTER_NO_DASH_3: char = '𛂛';
-    /// \u{1b09c}: '𛂜'
-    pub const HENTAIGANA_LETTER_NO_DASH_4: char = '𛂜';
-    /// \u{1b09d}: '𛂝'
-    pub const HENTAIGANA_LETTER_NO_DASH_5: char = '𛂝';
-    /// \u{1b09e}: '𛂞'
-    pub const HENTAIGANA_LETTER_HA_DASH_1: char = '𛂞';
-    /// \u{1b09f}: '𛂟'
-    pub const HENTAIGANA_LETTER_HA_DASH_2: char = '𛂟';
-    /// \u{1b0a0}: '𛂠'
-    pub const HENTAIGANA_LETTER_HA_DASH_3: char = '𛂠';
-    /// \u{1b0a1}: '𛂡'
-    pub const HENTAIGANA_LETTER_HA_DASH_4: char = '𛂡';
-    /// \u{1b0a2}: '𛂢'
-    pub const HENTAIGANA_LETTER_HA_DASH_5: char = '𛂢';
-    /// \u{1b0a3}: '𛂣'
-    pub const HENTAIGANA_LETTER_HA_DASH_6: char = '𛂣';
-    /// \u{1b0a4}: '𛂤'
-    pub const HENTAIGANA_LETTER_HA_DASH_7: char = '𛂤';
-    /// \u{1b0a5}: '𛂥'
-    pub const HENTAIGANA_LETTER_HA_DASH_8: char = '𛂥';
-    /// \u{1b0a6}: '𛂦'
-    pub const HENTAIGANA_LETTER_HA_DASH_9: char = '𛂦';
-    /// \u{1b0a7}: '𛂧'
-    pub const HENTAIGANA_LETTER_HA_DASH_10: char = '𛂧';
-    /// \u{1b0a8}: '𛂨'
-    pub const HENTAIGANA_LETTER_HA_DASH_11: char = '𛂨';
-    /// \u{1b0a9}: '𛂩'
-    pub const HENTAIGANA_LETTER_HI_DASH_1: char = '𛂩';
-    /// \u{1b0aa}: '𛂪'
-    pub const HENTAIGANA_LETTER_HI_DASH_2: char = '𛂪';
-    /// \u{1b0ab}: '𛂫'
-    pub const HENTAIGANA_LETTER_HI_DASH_3: char = '𛂫';
-    /// \u{1b0ac}: '𛂬'
-    pub const HENTAIGANA_LETTER_HI_DASH_4: char = '𛂬';
-    /// \u{1b0ad}: '𛂭'
-    pub const HENTAIGANA_LETTER_HI_DASH_5: char = '𛂭';
-    /// \u{1b0ae}: '𛂮'
-    pub const HENTAIGANA_LETTER_HI_DASH_6: char = '𛂮';
-    /// \u{1b0af}: '𛂯'
-    pub const HENTAIGANA_LETTER_HI_DASH_7: char = '𛂯';
-    /// \u{1b0b0}: '𛂰'
-    pub const HENTAIGANA_LETTER_HU_DASH_1: char = '𛂰';
-    /// \u{1b0b1}: '𛂱'
-    pub const HENTAIGANA_LETTER_HU_DASH_2: char = '𛂱';
-    /// \u{1b0b2}: '𛂲'
-    pub const HENTAIGANA_LETTER_HU_DASH_3: char = '𛂲';
-    /// \u{1b0b3}: '𛂳'
-    pub const HENTAIGANA_LETTER_HE_DASH_1: char = '𛂳';
-    /// \u{1b0b4}: '𛂴'
-    pub const HENTAIGANA_LETTER_HE_DASH_2: char = '𛂴';
-    /// \u{1b0b5}: '𛂵'
-    pub const HENTAIGANA_LETTER_HE_DASH_3: char = '𛂵';
-    /// \u{1b0b6}: '𛂶'
-    pub const HENTAIGANA_LETTER_HE_DASH_4: char = '𛂶';
-    /// \u{1b0b7}: '𛂷'
-    pub const HENTAIGANA_LETTER_HE_DASH_5: char = '𛂷';
-    /// \u{1b0b8}: '𛂸'
-    pub const HENTAIGANA_LETTER_HE_DASH_6: char = '𛂸';
-    /// \u{1b0b9}: '𛂹'
-    pub const HENTAIGANA_LETTER_HE_DASH_7: char = '𛂹';
-    /// \u{1b0ba}: '𛂺'
-    pub const HENTAIGANA_LETTER_HO_DASH_1: char = '𛂺';
-    /// \u{1b0bb}: '𛂻'
-    pub const HENTAIGANA_LETTER_HO_DASH_2: char = '𛂻';
-    /// \u{1b0bc}: '𛂼'
-    pub const HENTAIGANA_LETTER_HO_DASH_3: char = '𛂼';
-    /// \u{1b0bd}: '𛂽'
-    pub const HENTAIGANA_LETTER_HO_DASH_4: char = '𛂽';
-    /// \u{1b0be}: '𛂾'
-    pub const HENTAIGANA_LETTER_HO_DASH_5: char = '𛂾';
-    /// \u{1b0bf}: '𛂿'
-    pub const HENTAIGANA_LETTER_HO_DASH_6: char = '𛂿';
-    /// \u{1b0c0}: '𛃀'
-    pub const HENTAIGANA_LETTER_HO_DASH_7: char = '𛃀';
-    /// \u{1b0c1}: '𛃁'
-    pub const HENTAIGANA_LETTER_HO_DASH_8: char = '𛃁';
-    /// \u{1b0c2}: '𛃂'
-    pub const HENTAIGANA_LETTER_MA_DASH_1: char = '𛃂';
-    /// \u{1b0c3}: '𛃃'
-    pub const HENTAIGANA_LETTER_MA_DASH_2: char = '𛃃';
-    /// \u{1b0c4}: '𛃄'
-    pub const HENTAIGANA_LETTER_MA_DASH_3: char = '𛃄';
-    /// \u{1b0c5}: '𛃅'
-    pub const HENTAIGANA_LETTER_MA_DASH_4: char = '𛃅';
-    /// \u{1b0c6}: '𛃆'
-    pub const HENTAIGANA_LETTER_MA_DASH_5: char = '𛃆';
-    /// \u{1b0c7}: '𛃇'
-    pub const HENTAIGANA_LETTER_MA_DASH_6: char = '𛃇';
-    /// \u{1b0c8}: '𛃈'
-    pub const HENTAIGANA_LETTER_MA_DASH_7: char = '𛃈';
-    /// \u{1b0c9}: '𛃉'
-    pub const HENTAIGANA_LETTER_MI_DASH_1: char = '𛃉';
-    /// \u{1b0ca}: '𛃊'
-    pub const HENTAIGANA_LETTER_MI_DASH_2: char = '𛃊';
-    /// \u{1b0cb}: '𛃋'
-    pub const HENTAIGANA_LETTER_MI_DASH_3: char = '𛃋';
-    /// \u{1b0cc}: '𛃌'
-    pub const HENTAIGANA_LETTER_MI_DASH_4: char = '𛃌';
-    /// \u{1b0cd}: '𛃍'
-    pub const HENTAIGANA_LETTER_MI_DASH_5: char = '𛃍';
-    /// \u{1b0ce}: '𛃎'
-    pub const HENTAIGANA_LETTER_MI_DASH_6: char = '𛃎';
-    /// \u{1b0cf}: '𛃏'
-    pub const HENTAIGANA_LETTER_MI_DASH_7: char = '𛃏';
-    /// \u{1b0d0}: '𛃐'
-    pub const HENTAIGANA_LETTER_MU_DASH_1: char = '𛃐';
-    /// \u{1b0d1}: '𛃑'
-    pub const HENTAIGANA_LETTER_MU_DASH_2: char = '𛃑';
-    /// \u{1b0d2}: '𛃒'
-    pub const HENTAIGANA_LETTER_MU_DASH_3: char = '𛃒';
-    /// \u{1b0d3}: '𛃓'
-    pub const HENTAIGANA_LETTER_MU_DASH_4: char = '𛃓';
-    /// \u{1b0d4}: '𛃔'
-    pub const HENTAIGANA_LETTER_ME_DASH_1: char = '𛃔';
-    /// \u{1b0d5}: '𛃕'
-    pub const HENTAIGANA_LETTER_ME_DASH_2: char = '𛃕';
-    /// \u{1b0d6}: '𛃖'
-    pub const HENTAIGANA_LETTER_ME_DASH_MA: char = '𛃖';
-    /// \u{1b0d7}: '𛃗'
-    pub const HENTAIGANA_LETTER_MO_DASH_1: char = '𛃗';
-    /// \u{1b0d8}: '𛃘'
-    pub const HENTAIGANA_LETTER_MO_DASH_2: char = '𛃘';
-    /// \u{1b0d9}: '𛃙'
-    pub const HENTAIGANA_LETTER_MO_DASH_3: char = '𛃙';
-    /// \u{1b0da}: '𛃚'
-    pub const HENTAIGANA_LETTER_MO_DASH_4: char = '𛃚';
-    /// \u{1b0db}: '𛃛'
-    pub const HENTAIGANA_LETTER_MO_DASH_5: char = '𛃛';
-    /// \u{1b0dc}: '𛃜'
-    pub const HENTAIGANA_LETTER_MO_DASH_6: char = '𛃜';
-    /// \u{1b0dd}: '𛃝'
-    pub const HENTAIGANA_LETTER_YA_DASH_1: char = '𛃝';
-    /// \u{1b0de}: '𛃞'
-    pub const HENTAIGANA_LETTER_YA_DASH_2: char = '𛃞';
-    /// \u{1b0df}: '𛃟'
-    pub const HENTAIGANA_LETTER_YA_DASH_3: char = '𛃟';
-    /// \u{1b0e0}: '𛃠'
-    pub const HENTAIGANA_LETTER_YA_DASH_4: char = '𛃠';
-    /// \u{1b0e1}: '𛃡'
-    pub const HENTAIGANA_LETTER_YA_DASH_5: char = '𛃡';
-    /// \u{1b0e2}: '𛃢'
-    pub const HENTAIGANA_LETTER_YA_DASH_YO: char = '𛃢';
-    /// \u{1b0e3}: '𛃣'
-    pub const HENTAIGANA_LETTER_YU_DASH_1: char = '𛃣';
-    /// \u{1b0e4}: '𛃤'
-    pub const HENTAIGANA_LETTER_YU_DASH_2: char = '𛃤';
-    /// \u{1b0e5}: '𛃥'
-    pub const HENTAIGANA_LETTER_YU_DASH_3: char = '𛃥';
-    /// \u{1b0e6}: '𛃦'
-    pub const HENTAIGANA_LETTER_YU_DASH_4: char = '𛃦';
-    /// \u{1b0e7}: '𛃧'
-    pub const HENTAIGANA_LETTER_YO_DASH_1: char = '𛃧';
-    /// \u{1b0e8}: '𛃨'
-    pub const HENTAIGANA_LETTER_YO_DASH_2: char = '𛃨';
-    /// \u{1b0e9}: '𛃩'
-    pub const HENTAIGANA_LETTER_YO_DASH_3: char = '𛃩';
-    /// \u{1b0ea}: '𛃪'
-    pub const HENTAIGANA_LETTER_YO_DASH_4: char = '𛃪';
-    /// \u{1b0eb}: '𛃫'
-    pub const HENTAIGANA_LETTER_YO_DASH_5: char = '𛃫';
-    /// \u{1b0ec}: '𛃬'
-    pub const HENTAIGANA_LETTER_YO_DASH_6: char = '𛃬';
-    /// \u{1b0ed}: '𛃭'
-    pub const HENTAIGANA_LETTER_RA_DASH_1: char = '𛃭';
-    /// \u{1b0ee}: '𛃮'
-    pub const HENTAIGANA_LETTER_RA_DASH_2: char = '𛃮';
-    /// \u{1b0ef}: '𛃯'
-    pub const HENTAIGANA_LETTER_RA_DASH_3: char = '𛃯';
-    /// \u{1b0f0}: '𛃰'
-    pub const HENTAIGANA_LETTER_RA_DASH_4: char = '𛃰';
-    /// \u{1b0f1}: '𛃱'
-    pub const HENTAIGANA_LETTER_RI_DASH_1: char = '𛃱';
-    /// \u{1b0f2}: '𛃲'
-    pub const HENTAIGANA_LETTER_RI_DASH_2: char = '𛃲';
-    /// \u{1b0f3}: '𛃳'
-    pub const HENTAIGANA_LETTER_RI_DASH_3: char = '𛃳';
-    /// \u{1b0f4}: '𛃴'
-    pub const HENTAIGANA_LETTER_RI_DASH_4: char = '𛃴';
-    /// \u{1b0f5}: '𛃵'
-    pub const HENTAIGANA_LETTER_RI_DASH_5: char = '𛃵';
-    /// \u{1b0f6}: '𛃶'
-    pub const HENTAIGANA_LETTER_RI_DASH_6: char = '𛃶';
-    /// \u{1b0f7}: '𛃷'
-    pub const HENTAIGANA_LETTER_RI_DASH_7: char = '𛃷';
-    /// \u{1b0f8}: '𛃸'
-    pub const HENTAIGANA_LETTER_RU_DASH_1: char = '𛃸';
-    /// \u{1b0f9}: '𛃹'
-    pub const HENTAIGANA_LETTER_RU_DASH_2: char = '𛃹';
-    /// \u{1b0fa}: '𛃺'
-    pub const HENTAIGANA_LETTER_RU_DASH_3: char = '𛃺';
-    /// \u{1b0fb}: '𛃻'
-    pub const HENTAIGANA_LETTER_RU_DASH_4: char = '𛃻';
-    /// \u{1b0fc}: '𛃼'
-    pub const HENTAIGANA_LETTER_RU_DASH_5: char = '𛃼';
-    /// \u{1b0fd}: '𛃽'
-    pub const HENTAIGANA_LETTER_RU_DASH_6: char = '𛃽';
-    /// \u{1b0fe}: '𛃾'
-    pub const HENTAIGANA_LETTER_RE_DASH_1: char = '𛃾';
-}
 
 /// An enum to represent all characters in the KanaSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -1029,263 +516,262 @@ pub enum KanaSupplement {
 
 impl Into<char> for KanaSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            KanaSupplement::KatakanaLetterArchaicE => KATAKANA_LETTER_ARCHAIC_E,
-            KanaSupplement::HiraganaLetterArchaicYe => HIRAGANA_LETTER_ARCHAIC_YE,
-            KanaSupplement::HentaiganaLetterADash1 => HENTAIGANA_LETTER_A_DASH_1,
-            KanaSupplement::HentaiganaLetterADash2 => HENTAIGANA_LETTER_A_DASH_2,
-            KanaSupplement::HentaiganaLetterADash3 => HENTAIGANA_LETTER_A_DASH_3,
-            KanaSupplement::HentaiganaLetterADashWo => HENTAIGANA_LETTER_A_DASH_WO,
-            KanaSupplement::HentaiganaLetterIDash1 => HENTAIGANA_LETTER_I_DASH_1,
-            KanaSupplement::HentaiganaLetterIDash2 => HENTAIGANA_LETTER_I_DASH_2,
-            KanaSupplement::HentaiganaLetterIDash3 => HENTAIGANA_LETTER_I_DASH_3,
-            KanaSupplement::HentaiganaLetterIDash4 => HENTAIGANA_LETTER_I_DASH_4,
-            KanaSupplement::HentaiganaLetterUDash1 => HENTAIGANA_LETTER_U_DASH_1,
-            KanaSupplement::HentaiganaLetterUDash2 => HENTAIGANA_LETTER_U_DASH_2,
-            KanaSupplement::HentaiganaLetterUDash3 => HENTAIGANA_LETTER_U_DASH_3,
-            KanaSupplement::HentaiganaLetterUDash4 => HENTAIGANA_LETTER_U_DASH_4,
-            KanaSupplement::HentaiganaLetterUDash5 => HENTAIGANA_LETTER_U_DASH_5,
-            KanaSupplement::HentaiganaLetterEDash2 => HENTAIGANA_LETTER_E_DASH_2,
-            KanaSupplement::HentaiganaLetterEDash3 => HENTAIGANA_LETTER_E_DASH_3,
-            KanaSupplement::HentaiganaLetterEDash4 => HENTAIGANA_LETTER_E_DASH_4,
-            KanaSupplement::HentaiganaLetterEDash5 => HENTAIGANA_LETTER_E_DASH_5,
-            KanaSupplement::HentaiganaLetterEDash6 => HENTAIGANA_LETTER_E_DASH_6,
-            KanaSupplement::HentaiganaLetterODash1 => HENTAIGANA_LETTER_O_DASH_1,
-            KanaSupplement::HentaiganaLetterODash2 => HENTAIGANA_LETTER_O_DASH_2,
-            KanaSupplement::HentaiganaLetterODash3 => HENTAIGANA_LETTER_O_DASH_3,
-            KanaSupplement::HentaiganaLetterKaDash1 => HENTAIGANA_LETTER_KA_DASH_1,
-            KanaSupplement::HentaiganaLetterKaDash2 => HENTAIGANA_LETTER_KA_DASH_2,
-            KanaSupplement::HentaiganaLetterKaDash3 => HENTAIGANA_LETTER_KA_DASH_3,
-            KanaSupplement::HentaiganaLetterKaDash4 => HENTAIGANA_LETTER_KA_DASH_4,
-            KanaSupplement::HentaiganaLetterKaDash5 => HENTAIGANA_LETTER_KA_DASH_5,
-            KanaSupplement::HentaiganaLetterKaDash6 => HENTAIGANA_LETTER_KA_DASH_6,
-            KanaSupplement::HentaiganaLetterKaDash7 => HENTAIGANA_LETTER_KA_DASH_7,
-            KanaSupplement::HentaiganaLetterKaDash8 => HENTAIGANA_LETTER_KA_DASH_8,
-            KanaSupplement::HentaiganaLetterKaDash9 => HENTAIGANA_LETTER_KA_DASH_9,
-            KanaSupplement::HentaiganaLetterKaDash10 => HENTAIGANA_LETTER_KA_DASH_10,
-            KanaSupplement::HentaiganaLetterKaDash11 => HENTAIGANA_LETTER_KA_DASH_11,
-            KanaSupplement::HentaiganaLetterKaDashKe => HENTAIGANA_LETTER_KA_DASH_KE,
-            KanaSupplement::HentaiganaLetterKiDash1 => HENTAIGANA_LETTER_KI_DASH_1,
-            KanaSupplement::HentaiganaLetterKiDash2 => HENTAIGANA_LETTER_KI_DASH_2,
-            KanaSupplement::HentaiganaLetterKiDash3 => HENTAIGANA_LETTER_KI_DASH_3,
-            KanaSupplement::HentaiganaLetterKiDash4 => HENTAIGANA_LETTER_KI_DASH_4,
-            KanaSupplement::HentaiganaLetterKiDash5 => HENTAIGANA_LETTER_KI_DASH_5,
-            KanaSupplement::HentaiganaLetterKiDash6 => HENTAIGANA_LETTER_KI_DASH_6,
-            KanaSupplement::HentaiganaLetterKiDash7 => HENTAIGANA_LETTER_KI_DASH_7,
-            KanaSupplement::HentaiganaLetterKiDash8 => HENTAIGANA_LETTER_KI_DASH_8,
-            KanaSupplement::HentaiganaLetterKuDash1 => HENTAIGANA_LETTER_KU_DASH_1,
-            KanaSupplement::HentaiganaLetterKuDash2 => HENTAIGANA_LETTER_KU_DASH_2,
-            KanaSupplement::HentaiganaLetterKuDash3 => HENTAIGANA_LETTER_KU_DASH_3,
-            KanaSupplement::HentaiganaLetterKuDash4 => HENTAIGANA_LETTER_KU_DASH_4,
-            KanaSupplement::HentaiganaLetterKuDash5 => HENTAIGANA_LETTER_KU_DASH_5,
-            KanaSupplement::HentaiganaLetterKuDash6 => HENTAIGANA_LETTER_KU_DASH_6,
-            KanaSupplement::HentaiganaLetterKuDash7 => HENTAIGANA_LETTER_KU_DASH_7,
-            KanaSupplement::HentaiganaLetterKeDash1 => HENTAIGANA_LETTER_KE_DASH_1,
-            KanaSupplement::HentaiganaLetterKeDash2 => HENTAIGANA_LETTER_KE_DASH_2,
-            KanaSupplement::HentaiganaLetterKeDash3 => HENTAIGANA_LETTER_KE_DASH_3,
-            KanaSupplement::HentaiganaLetterKeDash4 => HENTAIGANA_LETTER_KE_DASH_4,
-            KanaSupplement::HentaiganaLetterKeDash5 => HENTAIGANA_LETTER_KE_DASH_5,
-            KanaSupplement::HentaiganaLetterKeDash6 => HENTAIGANA_LETTER_KE_DASH_6,
-            KanaSupplement::HentaiganaLetterKoDash1 => HENTAIGANA_LETTER_KO_DASH_1,
-            KanaSupplement::HentaiganaLetterKoDash2 => HENTAIGANA_LETTER_KO_DASH_2,
-            KanaSupplement::HentaiganaLetterKoDash3 => HENTAIGANA_LETTER_KO_DASH_3,
-            KanaSupplement::HentaiganaLetterKoDashKi => HENTAIGANA_LETTER_KO_DASH_KI,
-            KanaSupplement::HentaiganaLetterSaDash1 => HENTAIGANA_LETTER_SA_DASH_1,
-            KanaSupplement::HentaiganaLetterSaDash2 => HENTAIGANA_LETTER_SA_DASH_2,
-            KanaSupplement::HentaiganaLetterSaDash3 => HENTAIGANA_LETTER_SA_DASH_3,
-            KanaSupplement::HentaiganaLetterSaDash4 => HENTAIGANA_LETTER_SA_DASH_4,
-            KanaSupplement::HentaiganaLetterSaDash5 => HENTAIGANA_LETTER_SA_DASH_5,
-            KanaSupplement::HentaiganaLetterSaDash6 => HENTAIGANA_LETTER_SA_DASH_6,
-            KanaSupplement::HentaiganaLetterSaDash7 => HENTAIGANA_LETTER_SA_DASH_7,
-            KanaSupplement::HentaiganaLetterSaDash8 => HENTAIGANA_LETTER_SA_DASH_8,
-            KanaSupplement::HentaiganaLetterSiDash1 => HENTAIGANA_LETTER_SI_DASH_1,
-            KanaSupplement::HentaiganaLetterSiDash2 => HENTAIGANA_LETTER_SI_DASH_2,
-            KanaSupplement::HentaiganaLetterSiDash3 => HENTAIGANA_LETTER_SI_DASH_3,
-            KanaSupplement::HentaiganaLetterSiDash4 => HENTAIGANA_LETTER_SI_DASH_4,
-            KanaSupplement::HentaiganaLetterSiDash5 => HENTAIGANA_LETTER_SI_DASH_5,
-            KanaSupplement::HentaiganaLetterSiDash6 => HENTAIGANA_LETTER_SI_DASH_6,
-            KanaSupplement::HentaiganaLetterSuDash1 => HENTAIGANA_LETTER_SU_DASH_1,
-            KanaSupplement::HentaiganaLetterSuDash2 => HENTAIGANA_LETTER_SU_DASH_2,
-            KanaSupplement::HentaiganaLetterSuDash3 => HENTAIGANA_LETTER_SU_DASH_3,
-            KanaSupplement::HentaiganaLetterSuDash4 => HENTAIGANA_LETTER_SU_DASH_4,
-            KanaSupplement::HentaiganaLetterSuDash5 => HENTAIGANA_LETTER_SU_DASH_5,
-            KanaSupplement::HentaiganaLetterSuDash6 => HENTAIGANA_LETTER_SU_DASH_6,
-            KanaSupplement::HentaiganaLetterSuDash7 => HENTAIGANA_LETTER_SU_DASH_7,
-            KanaSupplement::HentaiganaLetterSuDash8 => HENTAIGANA_LETTER_SU_DASH_8,
-            KanaSupplement::HentaiganaLetterSeDash1 => HENTAIGANA_LETTER_SE_DASH_1,
-            KanaSupplement::HentaiganaLetterSeDash2 => HENTAIGANA_LETTER_SE_DASH_2,
-            KanaSupplement::HentaiganaLetterSeDash3 => HENTAIGANA_LETTER_SE_DASH_3,
-            KanaSupplement::HentaiganaLetterSeDash4 => HENTAIGANA_LETTER_SE_DASH_4,
-            KanaSupplement::HentaiganaLetterSeDash5 => HENTAIGANA_LETTER_SE_DASH_5,
-            KanaSupplement::HentaiganaLetterSoDash1 => HENTAIGANA_LETTER_SO_DASH_1,
-            KanaSupplement::HentaiganaLetterSoDash2 => HENTAIGANA_LETTER_SO_DASH_2,
-            KanaSupplement::HentaiganaLetterSoDash3 => HENTAIGANA_LETTER_SO_DASH_3,
-            KanaSupplement::HentaiganaLetterSoDash4 => HENTAIGANA_LETTER_SO_DASH_4,
-            KanaSupplement::HentaiganaLetterSoDash5 => HENTAIGANA_LETTER_SO_DASH_5,
-            KanaSupplement::HentaiganaLetterSoDash6 => HENTAIGANA_LETTER_SO_DASH_6,
-            KanaSupplement::HentaiganaLetterSoDash7 => HENTAIGANA_LETTER_SO_DASH_7,
-            KanaSupplement::HentaiganaLetterTaDash1 => HENTAIGANA_LETTER_TA_DASH_1,
-            KanaSupplement::HentaiganaLetterTaDash2 => HENTAIGANA_LETTER_TA_DASH_2,
-            KanaSupplement::HentaiganaLetterTaDash3 => HENTAIGANA_LETTER_TA_DASH_3,
-            KanaSupplement::HentaiganaLetterTaDash4 => HENTAIGANA_LETTER_TA_DASH_4,
-            KanaSupplement::HentaiganaLetterTiDash1 => HENTAIGANA_LETTER_TI_DASH_1,
-            KanaSupplement::HentaiganaLetterTiDash2 => HENTAIGANA_LETTER_TI_DASH_2,
-            KanaSupplement::HentaiganaLetterTiDash3 => HENTAIGANA_LETTER_TI_DASH_3,
-            KanaSupplement::HentaiganaLetterTiDash4 => HENTAIGANA_LETTER_TI_DASH_4,
-            KanaSupplement::HentaiganaLetterTiDash5 => HENTAIGANA_LETTER_TI_DASH_5,
-            KanaSupplement::HentaiganaLetterTiDash6 => HENTAIGANA_LETTER_TI_DASH_6,
-            KanaSupplement::HentaiganaLetterTiDash7 => HENTAIGANA_LETTER_TI_DASH_7,
-            KanaSupplement::HentaiganaLetterTuDash1 => HENTAIGANA_LETTER_TU_DASH_1,
-            KanaSupplement::HentaiganaLetterTuDash2 => HENTAIGANA_LETTER_TU_DASH_2,
-            KanaSupplement::HentaiganaLetterTuDash3 => HENTAIGANA_LETTER_TU_DASH_3,
-            KanaSupplement::HentaiganaLetterTuDash4 => HENTAIGANA_LETTER_TU_DASH_4,
-            KanaSupplement::HentaiganaLetterTuDashTo => HENTAIGANA_LETTER_TU_DASH_TO,
-            KanaSupplement::HentaiganaLetterTeDash1 => HENTAIGANA_LETTER_TE_DASH_1,
-            KanaSupplement::HentaiganaLetterTeDash2 => HENTAIGANA_LETTER_TE_DASH_2,
-            KanaSupplement::HentaiganaLetterTeDash3 => HENTAIGANA_LETTER_TE_DASH_3,
-            KanaSupplement::HentaiganaLetterTeDash4 => HENTAIGANA_LETTER_TE_DASH_4,
-            KanaSupplement::HentaiganaLetterTeDash5 => HENTAIGANA_LETTER_TE_DASH_5,
-            KanaSupplement::HentaiganaLetterTeDash6 => HENTAIGANA_LETTER_TE_DASH_6,
-            KanaSupplement::HentaiganaLetterTeDash7 => HENTAIGANA_LETTER_TE_DASH_7,
-            KanaSupplement::HentaiganaLetterTeDash8 => HENTAIGANA_LETTER_TE_DASH_8,
-            KanaSupplement::HentaiganaLetterTeDash9 => HENTAIGANA_LETTER_TE_DASH_9,
-            KanaSupplement::HentaiganaLetterToDash1 => HENTAIGANA_LETTER_TO_DASH_1,
-            KanaSupplement::HentaiganaLetterToDash2 => HENTAIGANA_LETTER_TO_DASH_2,
-            KanaSupplement::HentaiganaLetterToDash3 => HENTAIGANA_LETTER_TO_DASH_3,
-            KanaSupplement::HentaiganaLetterToDash4 => HENTAIGANA_LETTER_TO_DASH_4,
-            KanaSupplement::HentaiganaLetterToDash5 => HENTAIGANA_LETTER_TO_DASH_5,
-            KanaSupplement::HentaiganaLetterToDash6 => HENTAIGANA_LETTER_TO_DASH_6,
-            KanaSupplement::HentaiganaLetterToDashRa => HENTAIGANA_LETTER_TO_DASH_RA,
-            KanaSupplement::HentaiganaLetterNaDash1 => HENTAIGANA_LETTER_NA_DASH_1,
-            KanaSupplement::HentaiganaLetterNaDash2 => HENTAIGANA_LETTER_NA_DASH_2,
-            KanaSupplement::HentaiganaLetterNaDash3 => HENTAIGANA_LETTER_NA_DASH_3,
-            KanaSupplement::HentaiganaLetterNaDash4 => HENTAIGANA_LETTER_NA_DASH_4,
-            KanaSupplement::HentaiganaLetterNaDash5 => HENTAIGANA_LETTER_NA_DASH_5,
-            KanaSupplement::HentaiganaLetterNaDash6 => HENTAIGANA_LETTER_NA_DASH_6,
-            KanaSupplement::HentaiganaLetterNaDash7 => HENTAIGANA_LETTER_NA_DASH_7,
-            KanaSupplement::HentaiganaLetterNaDash8 => HENTAIGANA_LETTER_NA_DASH_8,
-            KanaSupplement::HentaiganaLetterNaDash9 => HENTAIGANA_LETTER_NA_DASH_9,
-            KanaSupplement::HentaiganaLetterNiDash1 => HENTAIGANA_LETTER_NI_DASH_1,
-            KanaSupplement::HentaiganaLetterNiDash2 => HENTAIGANA_LETTER_NI_DASH_2,
-            KanaSupplement::HentaiganaLetterNiDash3 => HENTAIGANA_LETTER_NI_DASH_3,
-            KanaSupplement::HentaiganaLetterNiDash4 => HENTAIGANA_LETTER_NI_DASH_4,
-            KanaSupplement::HentaiganaLetterNiDash5 => HENTAIGANA_LETTER_NI_DASH_5,
-            KanaSupplement::HentaiganaLetterNiDash6 => HENTAIGANA_LETTER_NI_DASH_6,
-            KanaSupplement::HentaiganaLetterNiDash7 => HENTAIGANA_LETTER_NI_DASH_7,
-            KanaSupplement::HentaiganaLetterNiDashTe => HENTAIGANA_LETTER_NI_DASH_TE,
-            KanaSupplement::HentaiganaLetterNuDash1 => HENTAIGANA_LETTER_NU_DASH_1,
-            KanaSupplement::HentaiganaLetterNuDash2 => HENTAIGANA_LETTER_NU_DASH_2,
-            KanaSupplement::HentaiganaLetterNuDash3 => HENTAIGANA_LETTER_NU_DASH_3,
-            KanaSupplement::HentaiganaLetterNeDash1 => HENTAIGANA_LETTER_NE_DASH_1,
-            KanaSupplement::HentaiganaLetterNeDash2 => HENTAIGANA_LETTER_NE_DASH_2,
-            KanaSupplement::HentaiganaLetterNeDash3 => HENTAIGANA_LETTER_NE_DASH_3,
-            KanaSupplement::HentaiganaLetterNeDash4 => HENTAIGANA_LETTER_NE_DASH_4,
-            KanaSupplement::HentaiganaLetterNeDash5 => HENTAIGANA_LETTER_NE_DASH_5,
-            KanaSupplement::HentaiganaLetterNeDash6 => HENTAIGANA_LETTER_NE_DASH_6,
-            KanaSupplement::HentaiganaLetterNeDashKo => HENTAIGANA_LETTER_NE_DASH_KO,
-            KanaSupplement::HentaiganaLetterNoDash1 => HENTAIGANA_LETTER_NO_DASH_1,
-            KanaSupplement::HentaiganaLetterNoDash2 => HENTAIGANA_LETTER_NO_DASH_2,
-            KanaSupplement::HentaiganaLetterNoDash3 => HENTAIGANA_LETTER_NO_DASH_3,
-            KanaSupplement::HentaiganaLetterNoDash4 => HENTAIGANA_LETTER_NO_DASH_4,
-            KanaSupplement::HentaiganaLetterNoDash5 => HENTAIGANA_LETTER_NO_DASH_5,
-            KanaSupplement::HentaiganaLetterHaDash1 => HENTAIGANA_LETTER_HA_DASH_1,
-            KanaSupplement::HentaiganaLetterHaDash2 => HENTAIGANA_LETTER_HA_DASH_2,
-            KanaSupplement::HentaiganaLetterHaDash3 => HENTAIGANA_LETTER_HA_DASH_3,
-            KanaSupplement::HentaiganaLetterHaDash4 => HENTAIGANA_LETTER_HA_DASH_4,
-            KanaSupplement::HentaiganaLetterHaDash5 => HENTAIGANA_LETTER_HA_DASH_5,
-            KanaSupplement::HentaiganaLetterHaDash6 => HENTAIGANA_LETTER_HA_DASH_6,
-            KanaSupplement::HentaiganaLetterHaDash7 => HENTAIGANA_LETTER_HA_DASH_7,
-            KanaSupplement::HentaiganaLetterHaDash8 => HENTAIGANA_LETTER_HA_DASH_8,
-            KanaSupplement::HentaiganaLetterHaDash9 => HENTAIGANA_LETTER_HA_DASH_9,
-            KanaSupplement::HentaiganaLetterHaDash10 => HENTAIGANA_LETTER_HA_DASH_10,
-            KanaSupplement::HentaiganaLetterHaDash11 => HENTAIGANA_LETTER_HA_DASH_11,
-            KanaSupplement::HentaiganaLetterHiDash1 => HENTAIGANA_LETTER_HI_DASH_1,
-            KanaSupplement::HentaiganaLetterHiDash2 => HENTAIGANA_LETTER_HI_DASH_2,
-            KanaSupplement::HentaiganaLetterHiDash3 => HENTAIGANA_LETTER_HI_DASH_3,
-            KanaSupplement::HentaiganaLetterHiDash4 => HENTAIGANA_LETTER_HI_DASH_4,
-            KanaSupplement::HentaiganaLetterHiDash5 => HENTAIGANA_LETTER_HI_DASH_5,
-            KanaSupplement::HentaiganaLetterHiDash6 => HENTAIGANA_LETTER_HI_DASH_6,
-            KanaSupplement::HentaiganaLetterHiDash7 => HENTAIGANA_LETTER_HI_DASH_7,
-            KanaSupplement::HentaiganaLetterHuDash1 => HENTAIGANA_LETTER_HU_DASH_1,
-            KanaSupplement::HentaiganaLetterHuDash2 => HENTAIGANA_LETTER_HU_DASH_2,
-            KanaSupplement::HentaiganaLetterHuDash3 => HENTAIGANA_LETTER_HU_DASH_3,
-            KanaSupplement::HentaiganaLetterHeDash1 => HENTAIGANA_LETTER_HE_DASH_1,
-            KanaSupplement::HentaiganaLetterHeDash2 => HENTAIGANA_LETTER_HE_DASH_2,
-            KanaSupplement::HentaiganaLetterHeDash3 => HENTAIGANA_LETTER_HE_DASH_3,
-            KanaSupplement::HentaiganaLetterHeDash4 => HENTAIGANA_LETTER_HE_DASH_4,
-            KanaSupplement::HentaiganaLetterHeDash5 => HENTAIGANA_LETTER_HE_DASH_5,
-            KanaSupplement::HentaiganaLetterHeDash6 => HENTAIGANA_LETTER_HE_DASH_6,
-            KanaSupplement::HentaiganaLetterHeDash7 => HENTAIGANA_LETTER_HE_DASH_7,
-            KanaSupplement::HentaiganaLetterHoDash1 => HENTAIGANA_LETTER_HO_DASH_1,
-            KanaSupplement::HentaiganaLetterHoDash2 => HENTAIGANA_LETTER_HO_DASH_2,
-            KanaSupplement::HentaiganaLetterHoDash3 => HENTAIGANA_LETTER_HO_DASH_3,
-            KanaSupplement::HentaiganaLetterHoDash4 => HENTAIGANA_LETTER_HO_DASH_4,
-            KanaSupplement::HentaiganaLetterHoDash5 => HENTAIGANA_LETTER_HO_DASH_5,
-            KanaSupplement::HentaiganaLetterHoDash6 => HENTAIGANA_LETTER_HO_DASH_6,
-            KanaSupplement::HentaiganaLetterHoDash7 => HENTAIGANA_LETTER_HO_DASH_7,
-            KanaSupplement::HentaiganaLetterHoDash8 => HENTAIGANA_LETTER_HO_DASH_8,
-            KanaSupplement::HentaiganaLetterMaDash1 => HENTAIGANA_LETTER_MA_DASH_1,
-            KanaSupplement::HentaiganaLetterMaDash2 => HENTAIGANA_LETTER_MA_DASH_2,
-            KanaSupplement::HentaiganaLetterMaDash3 => HENTAIGANA_LETTER_MA_DASH_3,
-            KanaSupplement::HentaiganaLetterMaDash4 => HENTAIGANA_LETTER_MA_DASH_4,
-            KanaSupplement::HentaiganaLetterMaDash5 => HENTAIGANA_LETTER_MA_DASH_5,
-            KanaSupplement::HentaiganaLetterMaDash6 => HENTAIGANA_LETTER_MA_DASH_6,
-            KanaSupplement::HentaiganaLetterMaDash7 => HENTAIGANA_LETTER_MA_DASH_7,
-            KanaSupplement::HentaiganaLetterMiDash1 => HENTAIGANA_LETTER_MI_DASH_1,
-            KanaSupplement::HentaiganaLetterMiDash2 => HENTAIGANA_LETTER_MI_DASH_2,
-            KanaSupplement::HentaiganaLetterMiDash3 => HENTAIGANA_LETTER_MI_DASH_3,
-            KanaSupplement::HentaiganaLetterMiDash4 => HENTAIGANA_LETTER_MI_DASH_4,
-            KanaSupplement::HentaiganaLetterMiDash5 => HENTAIGANA_LETTER_MI_DASH_5,
-            KanaSupplement::HentaiganaLetterMiDash6 => HENTAIGANA_LETTER_MI_DASH_6,
-            KanaSupplement::HentaiganaLetterMiDash7 => HENTAIGANA_LETTER_MI_DASH_7,
-            KanaSupplement::HentaiganaLetterMuDash1 => HENTAIGANA_LETTER_MU_DASH_1,
-            KanaSupplement::HentaiganaLetterMuDash2 => HENTAIGANA_LETTER_MU_DASH_2,
-            KanaSupplement::HentaiganaLetterMuDash3 => HENTAIGANA_LETTER_MU_DASH_3,
-            KanaSupplement::HentaiganaLetterMuDash4 => HENTAIGANA_LETTER_MU_DASH_4,
-            KanaSupplement::HentaiganaLetterMeDash1 => HENTAIGANA_LETTER_ME_DASH_1,
-            KanaSupplement::HentaiganaLetterMeDash2 => HENTAIGANA_LETTER_ME_DASH_2,
-            KanaSupplement::HentaiganaLetterMeDashMa => HENTAIGANA_LETTER_ME_DASH_MA,
-            KanaSupplement::HentaiganaLetterMoDash1 => HENTAIGANA_LETTER_MO_DASH_1,
-            KanaSupplement::HentaiganaLetterMoDash2 => HENTAIGANA_LETTER_MO_DASH_2,
-            KanaSupplement::HentaiganaLetterMoDash3 => HENTAIGANA_LETTER_MO_DASH_3,
-            KanaSupplement::HentaiganaLetterMoDash4 => HENTAIGANA_LETTER_MO_DASH_4,
-            KanaSupplement::HentaiganaLetterMoDash5 => HENTAIGANA_LETTER_MO_DASH_5,
-            KanaSupplement::HentaiganaLetterMoDash6 => HENTAIGANA_LETTER_MO_DASH_6,
-            KanaSupplement::HentaiganaLetterYaDash1 => HENTAIGANA_LETTER_YA_DASH_1,
-            KanaSupplement::HentaiganaLetterYaDash2 => HENTAIGANA_LETTER_YA_DASH_2,
-            KanaSupplement::HentaiganaLetterYaDash3 => HENTAIGANA_LETTER_YA_DASH_3,
-            KanaSupplement::HentaiganaLetterYaDash4 => HENTAIGANA_LETTER_YA_DASH_4,
-            KanaSupplement::HentaiganaLetterYaDash5 => HENTAIGANA_LETTER_YA_DASH_5,
-            KanaSupplement::HentaiganaLetterYaDashYo => HENTAIGANA_LETTER_YA_DASH_YO,
-            KanaSupplement::HentaiganaLetterYuDash1 => HENTAIGANA_LETTER_YU_DASH_1,
-            KanaSupplement::HentaiganaLetterYuDash2 => HENTAIGANA_LETTER_YU_DASH_2,
-            KanaSupplement::HentaiganaLetterYuDash3 => HENTAIGANA_LETTER_YU_DASH_3,
-            KanaSupplement::HentaiganaLetterYuDash4 => HENTAIGANA_LETTER_YU_DASH_4,
-            KanaSupplement::HentaiganaLetterYoDash1 => HENTAIGANA_LETTER_YO_DASH_1,
-            KanaSupplement::HentaiganaLetterYoDash2 => HENTAIGANA_LETTER_YO_DASH_2,
-            KanaSupplement::HentaiganaLetterYoDash3 => HENTAIGANA_LETTER_YO_DASH_3,
-            KanaSupplement::HentaiganaLetterYoDash4 => HENTAIGANA_LETTER_YO_DASH_4,
-            KanaSupplement::HentaiganaLetterYoDash5 => HENTAIGANA_LETTER_YO_DASH_5,
-            KanaSupplement::HentaiganaLetterYoDash6 => HENTAIGANA_LETTER_YO_DASH_6,
-            KanaSupplement::HentaiganaLetterRaDash1 => HENTAIGANA_LETTER_RA_DASH_1,
-            KanaSupplement::HentaiganaLetterRaDash2 => HENTAIGANA_LETTER_RA_DASH_2,
-            KanaSupplement::HentaiganaLetterRaDash3 => HENTAIGANA_LETTER_RA_DASH_3,
-            KanaSupplement::HentaiganaLetterRaDash4 => HENTAIGANA_LETTER_RA_DASH_4,
-            KanaSupplement::HentaiganaLetterRiDash1 => HENTAIGANA_LETTER_RI_DASH_1,
-            KanaSupplement::HentaiganaLetterRiDash2 => HENTAIGANA_LETTER_RI_DASH_2,
-            KanaSupplement::HentaiganaLetterRiDash3 => HENTAIGANA_LETTER_RI_DASH_3,
-            KanaSupplement::HentaiganaLetterRiDash4 => HENTAIGANA_LETTER_RI_DASH_4,
-            KanaSupplement::HentaiganaLetterRiDash5 => HENTAIGANA_LETTER_RI_DASH_5,
-            KanaSupplement::HentaiganaLetterRiDash6 => HENTAIGANA_LETTER_RI_DASH_6,
-            KanaSupplement::HentaiganaLetterRiDash7 => HENTAIGANA_LETTER_RI_DASH_7,
-            KanaSupplement::HentaiganaLetterRuDash1 => HENTAIGANA_LETTER_RU_DASH_1,
-            KanaSupplement::HentaiganaLetterRuDash2 => HENTAIGANA_LETTER_RU_DASH_2,
-            KanaSupplement::HentaiganaLetterRuDash3 => HENTAIGANA_LETTER_RU_DASH_3,
-            KanaSupplement::HentaiganaLetterRuDash4 => HENTAIGANA_LETTER_RU_DASH_4,
-            KanaSupplement::HentaiganaLetterRuDash5 => HENTAIGANA_LETTER_RU_DASH_5,
-            KanaSupplement::HentaiganaLetterRuDash6 => HENTAIGANA_LETTER_RU_DASH_6,
-            KanaSupplement::HentaiganaLetterReDash1 => HENTAIGANA_LETTER_RE_DASH_1,
+            KanaSupplement::KatakanaLetterArchaicE => '𛀀',
+            KanaSupplement::HiraganaLetterArchaicYe => '𛀁',
+            KanaSupplement::HentaiganaLetterADash1 => '𛀂',
+            KanaSupplement::HentaiganaLetterADash2 => '𛀃',
+            KanaSupplement::HentaiganaLetterADash3 => '𛀄',
+            KanaSupplement::HentaiganaLetterADashWo => '𛀅',
+            KanaSupplement::HentaiganaLetterIDash1 => '𛀆',
+            KanaSupplement::HentaiganaLetterIDash2 => '𛀇',
+            KanaSupplement::HentaiganaLetterIDash3 => '𛀈',
+            KanaSupplement::HentaiganaLetterIDash4 => '𛀉',
+            KanaSupplement::HentaiganaLetterUDash1 => '𛀊',
+            KanaSupplement::HentaiganaLetterUDash2 => '𛀋',
+            KanaSupplement::HentaiganaLetterUDash3 => '𛀌',
+            KanaSupplement::HentaiganaLetterUDash4 => '𛀍',
+            KanaSupplement::HentaiganaLetterUDash5 => '𛀎',
+            KanaSupplement::HentaiganaLetterEDash2 => '𛀏',
+            KanaSupplement::HentaiganaLetterEDash3 => '𛀐',
+            KanaSupplement::HentaiganaLetterEDash4 => '𛀑',
+            KanaSupplement::HentaiganaLetterEDash5 => '𛀒',
+            KanaSupplement::HentaiganaLetterEDash6 => '𛀓',
+            KanaSupplement::HentaiganaLetterODash1 => '𛀔',
+            KanaSupplement::HentaiganaLetterODash2 => '𛀕',
+            KanaSupplement::HentaiganaLetterODash3 => '𛀖',
+            KanaSupplement::HentaiganaLetterKaDash1 => '𛀗',
+            KanaSupplement::HentaiganaLetterKaDash2 => '𛀘',
+            KanaSupplement::HentaiganaLetterKaDash3 => '𛀙',
+            KanaSupplement::HentaiganaLetterKaDash4 => '𛀚',
+            KanaSupplement::HentaiganaLetterKaDash5 => '𛀛',
+            KanaSupplement::HentaiganaLetterKaDash6 => '𛀜',
+            KanaSupplement::HentaiganaLetterKaDash7 => '𛀝',
+            KanaSupplement::HentaiganaLetterKaDash8 => '𛀞',
+            KanaSupplement::HentaiganaLetterKaDash9 => '𛀟',
+            KanaSupplement::HentaiganaLetterKaDash10 => '𛀠',
+            KanaSupplement::HentaiganaLetterKaDash11 => '𛀡',
+            KanaSupplement::HentaiganaLetterKaDashKe => '𛀢',
+            KanaSupplement::HentaiganaLetterKiDash1 => '𛀣',
+            KanaSupplement::HentaiganaLetterKiDash2 => '𛀤',
+            KanaSupplement::HentaiganaLetterKiDash3 => '𛀥',
+            KanaSupplement::HentaiganaLetterKiDash4 => '𛀦',
+            KanaSupplement::HentaiganaLetterKiDash5 => '𛀧',
+            KanaSupplement::HentaiganaLetterKiDash6 => '𛀨',
+            KanaSupplement::HentaiganaLetterKiDash7 => '𛀩',
+            KanaSupplement::HentaiganaLetterKiDash8 => '𛀪',
+            KanaSupplement::HentaiganaLetterKuDash1 => '𛀫',
+            KanaSupplement::HentaiganaLetterKuDash2 => '𛀬',
+            KanaSupplement::HentaiganaLetterKuDash3 => '𛀭',
+            KanaSupplement::HentaiganaLetterKuDash4 => '𛀮',
+            KanaSupplement::HentaiganaLetterKuDash5 => '𛀯',
+            KanaSupplement::HentaiganaLetterKuDash6 => '𛀰',
+            KanaSupplement::HentaiganaLetterKuDash7 => '𛀱',
+            KanaSupplement::HentaiganaLetterKeDash1 => '𛀲',
+            KanaSupplement::HentaiganaLetterKeDash2 => '𛀳',
+            KanaSupplement::HentaiganaLetterKeDash3 => '𛀴',
+            KanaSupplement::HentaiganaLetterKeDash4 => '𛀵',
+            KanaSupplement::HentaiganaLetterKeDash5 => '𛀶',
+            KanaSupplement::HentaiganaLetterKeDash6 => '𛀷',
+            KanaSupplement::HentaiganaLetterKoDash1 => '𛀸',
+            KanaSupplement::HentaiganaLetterKoDash2 => '𛀹',
+            KanaSupplement::HentaiganaLetterKoDash3 => '𛀺',
+            KanaSupplement::HentaiganaLetterKoDashKi => '𛀻',
+            KanaSupplement::HentaiganaLetterSaDash1 => '𛀼',
+            KanaSupplement::HentaiganaLetterSaDash2 => '𛀽',
+            KanaSupplement::HentaiganaLetterSaDash3 => '𛀾',
+            KanaSupplement::HentaiganaLetterSaDash4 => '𛀿',
+            KanaSupplement::HentaiganaLetterSaDash5 => '𛁀',
+            KanaSupplement::HentaiganaLetterSaDash6 => '𛁁',
+            KanaSupplement::HentaiganaLetterSaDash7 => '𛁂',
+            KanaSupplement::HentaiganaLetterSaDash8 => '𛁃',
+            KanaSupplement::HentaiganaLetterSiDash1 => '𛁄',
+            KanaSupplement::HentaiganaLetterSiDash2 => '𛁅',
+            KanaSupplement::HentaiganaLetterSiDash3 => '𛁆',
+            KanaSupplement::HentaiganaLetterSiDash4 => '𛁇',
+            KanaSupplement::HentaiganaLetterSiDash5 => '𛁈',
+            KanaSupplement::HentaiganaLetterSiDash6 => '𛁉',
+            KanaSupplement::HentaiganaLetterSuDash1 => '𛁊',
+            KanaSupplement::HentaiganaLetterSuDash2 => '𛁋',
+            KanaSupplement::HentaiganaLetterSuDash3 => '𛁌',
+            KanaSupplement::HentaiganaLetterSuDash4 => '𛁍',
+            KanaSupplement::HentaiganaLetterSuDash5 => '𛁎',
+            KanaSupplement::HentaiganaLetterSuDash6 => '𛁏',
+            KanaSupplement::HentaiganaLetterSuDash7 => '𛁐',
+            KanaSupplement::HentaiganaLetterSuDash8 => '𛁑',
+            KanaSupplement::HentaiganaLetterSeDash1 => '𛁒',
+            KanaSupplement::HentaiganaLetterSeDash2 => '𛁓',
+            KanaSupplement::HentaiganaLetterSeDash3 => '𛁔',
+            KanaSupplement::HentaiganaLetterSeDash4 => '𛁕',
+            KanaSupplement::HentaiganaLetterSeDash5 => '𛁖',
+            KanaSupplement::HentaiganaLetterSoDash1 => '𛁗',
+            KanaSupplement::HentaiganaLetterSoDash2 => '𛁘',
+            KanaSupplement::HentaiganaLetterSoDash3 => '𛁙',
+            KanaSupplement::HentaiganaLetterSoDash4 => '𛁚',
+            KanaSupplement::HentaiganaLetterSoDash5 => '𛁛',
+            KanaSupplement::HentaiganaLetterSoDash6 => '𛁜',
+            KanaSupplement::HentaiganaLetterSoDash7 => '𛁝',
+            KanaSupplement::HentaiganaLetterTaDash1 => '𛁞',
+            KanaSupplement::HentaiganaLetterTaDash2 => '𛁟',
+            KanaSupplement::HentaiganaLetterTaDash3 => '𛁠',
+            KanaSupplement::HentaiganaLetterTaDash4 => '𛁡',
+            KanaSupplement::HentaiganaLetterTiDash1 => '𛁢',
+            KanaSupplement::HentaiganaLetterTiDash2 => '𛁣',
+            KanaSupplement::HentaiganaLetterTiDash3 => '𛁤',
+            KanaSupplement::HentaiganaLetterTiDash4 => '𛁥',
+            KanaSupplement::HentaiganaLetterTiDash5 => '𛁦',
+            KanaSupplement::HentaiganaLetterTiDash6 => '𛁧',
+            KanaSupplement::HentaiganaLetterTiDash7 => '𛁨',
+            KanaSupplement::HentaiganaLetterTuDash1 => '𛁩',
+            KanaSupplement::HentaiganaLetterTuDash2 => '𛁪',
+            KanaSupplement::HentaiganaLetterTuDash3 => '𛁫',
+            KanaSupplement::HentaiganaLetterTuDash4 => '𛁬',
+            KanaSupplement::HentaiganaLetterTuDashTo => '𛁭',
+            KanaSupplement::HentaiganaLetterTeDash1 => '𛁮',
+            KanaSupplement::HentaiganaLetterTeDash2 => '𛁯',
+            KanaSupplement::HentaiganaLetterTeDash3 => '𛁰',
+            KanaSupplement::HentaiganaLetterTeDash4 => '𛁱',
+            KanaSupplement::HentaiganaLetterTeDash5 => '𛁲',
+            KanaSupplement::HentaiganaLetterTeDash6 => '𛁳',
+            KanaSupplement::HentaiganaLetterTeDash7 => '𛁴',
+            KanaSupplement::HentaiganaLetterTeDash8 => '𛁵',
+            KanaSupplement::HentaiganaLetterTeDash9 => '𛁶',
+            KanaSupplement::HentaiganaLetterToDash1 => '𛁷',
+            KanaSupplement::HentaiganaLetterToDash2 => '𛁸',
+            KanaSupplement::HentaiganaLetterToDash3 => '𛁹',
+            KanaSupplement::HentaiganaLetterToDash4 => '𛁺',
+            KanaSupplement::HentaiganaLetterToDash5 => '𛁻',
+            KanaSupplement::HentaiganaLetterToDash6 => '𛁼',
+            KanaSupplement::HentaiganaLetterToDashRa => '𛁽',
+            KanaSupplement::HentaiganaLetterNaDash1 => '𛁾',
+            KanaSupplement::HentaiganaLetterNaDash2 => '𛁿',
+            KanaSupplement::HentaiganaLetterNaDash3 => '𛂀',
+            KanaSupplement::HentaiganaLetterNaDash4 => '𛂁',
+            KanaSupplement::HentaiganaLetterNaDash5 => '𛂂',
+            KanaSupplement::HentaiganaLetterNaDash6 => '𛂃',
+            KanaSupplement::HentaiganaLetterNaDash7 => '𛂄',
+            KanaSupplement::HentaiganaLetterNaDash8 => '𛂅',
+            KanaSupplement::HentaiganaLetterNaDash9 => '𛂆',
+            KanaSupplement::HentaiganaLetterNiDash1 => '𛂇',
+            KanaSupplement::HentaiganaLetterNiDash2 => '𛂈',
+            KanaSupplement::HentaiganaLetterNiDash3 => '𛂉',
+            KanaSupplement::HentaiganaLetterNiDash4 => '𛂊',
+            KanaSupplement::HentaiganaLetterNiDash5 => '𛂋',
+            KanaSupplement::HentaiganaLetterNiDash6 => '𛂌',
+            KanaSupplement::HentaiganaLetterNiDash7 => '𛂍',
+            KanaSupplement::HentaiganaLetterNiDashTe => '𛂎',
+            KanaSupplement::HentaiganaLetterNuDash1 => '𛂏',
+            KanaSupplement::HentaiganaLetterNuDash2 => '𛂐',
+            KanaSupplement::HentaiganaLetterNuDash3 => '𛂑',
+            KanaSupplement::HentaiganaLetterNeDash1 => '𛂒',
+            KanaSupplement::HentaiganaLetterNeDash2 => '𛂓',
+            KanaSupplement::HentaiganaLetterNeDash3 => '𛂔',
+            KanaSupplement::HentaiganaLetterNeDash4 => '𛂕',
+            KanaSupplement::HentaiganaLetterNeDash5 => '𛂖',
+            KanaSupplement::HentaiganaLetterNeDash6 => '𛂗',
+            KanaSupplement::HentaiganaLetterNeDashKo => '𛂘',
+            KanaSupplement::HentaiganaLetterNoDash1 => '𛂙',
+            KanaSupplement::HentaiganaLetterNoDash2 => '𛂚',
+            KanaSupplement::HentaiganaLetterNoDash3 => '𛂛',
+            KanaSupplement::HentaiganaLetterNoDash4 => '𛂜',
+            KanaSupplement::HentaiganaLetterNoDash5 => '𛂝',
+            KanaSupplement::HentaiganaLetterHaDash1 => '𛂞',
+            KanaSupplement::HentaiganaLetterHaDash2 => '𛂟',
+            KanaSupplement::HentaiganaLetterHaDash3 => '𛂠',
+            KanaSupplement::HentaiganaLetterHaDash4 => '𛂡',
+            KanaSupplement::HentaiganaLetterHaDash5 => '𛂢',
+            KanaSupplement::HentaiganaLetterHaDash6 => '𛂣',
+            KanaSupplement::HentaiganaLetterHaDash7 => '𛂤',
+            KanaSupplement::HentaiganaLetterHaDash8 => '𛂥',
+            KanaSupplement::HentaiganaLetterHaDash9 => '𛂦',
+            KanaSupplement::HentaiganaLetterHaDash10 => '𛂧',
+            KanaSupplement::HentaiganaLetterHaDash11 => '𛂨',
+            KanaSupplement::HentaiganaLetterHiDash1 => '𛂩',
+            KanaSupplement::HentaiganaLetterHiDash2 => '𛂪',
+            KanaSupplement::HentaiganaLetterHiDash3 => '𛂫',
+            KanaSupplement::HentaiganaLetterHiDash4 => '𛂬',
+            KanaSupplement::HentaiganaLetterHiDash5 => '𛂭',
+            KanaSupplement::HentaiganaLetterHiDash6 => '𛂮',
+            KanaSupplement::HentaiganaLetterHiDash7 => '𛂯',
+            KanaSupplement::HentaiganaLetterHuDash1 => '𛂰',
+            KanaSupplement::HentaiganaLetterHuDash2 => '𛂱',
+            KanaSupplement::HentaiganaLetterHuDash3 => '𛂲',
+            KanaSupplement::HentaiganaLetterHeDash1 => '𛂳',
+            KanaSupplement::HentaiganaLetterHeDash2 => '𛂴',
+            KanaSupplement::HentaiganaLetterHeDash3 => '𛂵',
+            KanaSupplement::HentaiganaLetterHeDash4 => '𛂶',
+            KanaSupplement::HentaiganaLetterHeDash5 => '𛂷',
+            KanaSupplement::HentaiganaLetterHeDash6 => '𛂸',
+            KanaSupplement::HentaiganaLetterHeDash7 => '𛂹',
+            KanaSupplement::HentaiganaLetterHoDash1 => '𛂺',
+            KanaSupplement::HentaiganaLetterHoDash2 => '𛂻',
+            KanaSupplement::HentaiganaLetterHoDash3 => '𛂼',
+            KanaSupplement::HentaiganaLetterHoDash4 => '𛂽',
+            KanaSupplement::HentaiganaLetterHoDash5 => '𛂾',
+            KanaSupplement::HentaiganaLetterHoDash6 => '𛂿',
+            KanaSupplement::HentaiganaLetterHoDash7 => '𛃀',
+            KanaSupplement::HentaiganaLetterHoDash8 => '𛃁',
+            KanaSupplement::HentaiganaLetterMaDash1 => '𛃂',
+            KanaSupplement::HentaiganaLetterMaDash2 => '𛃃',
+            KanaSupplement::HentaiganaLetterMaDash3 => '𛃄',
+            KanaSupplement::HentaiganaLetterMaDash4 => '𛃅',
+            KanaSupplement::HentaiganaLetterMaDash5 => '𛃆',
+            KanaSupplement::HentaiganaLetterMaDash6 => '𛃇',
+            KanaSupplement::HentaiganaLetterMaDash7 => '𛃈',
+            KanaSupplement::HentaiganaLetterMiDash1 => '𛃉',
+            KanaSupplement::HentaiganaLetterMiDash2 => '𛃊',
+            KanaSupplement::HentaiganaLetterMiDash3 => '𛃋',
+            KanaSupplement::HentaiganaLetterMiDash4 => '𛃌',
+            KanaSupplement::HentaiganaLetterMiDash5 => '𛃍',
+            KanaSupplement::HentaiganaLetterMiDash6 => '𛃎',
+            KanaSupplement::HentaiganaLetterMiDash7 => '𛃏',
+            KanaSupplement::HentaiganaLetterMuDash1 => '𛃐',
+            KanaSupplement::HentaiganaLetterMuDash2 => '𛃑',
+            KanaSupplement::HentaiganaLetterMuDash3 => '𛃒',
+            KanaSupplement::HentaiganaLetterMuDash4 => '𛃓',
+            KanaSupplement::HentaiganaLetterMeDash1 => '𛃔',
+            KanaSupplement::HentaiganaLetterMeDash2 => '𛃕',
+            KanaSupplement::HentaiganaLetterMeDashMa => '𛃖',
+            KanaSupplement::HentaiganaLetterMoDash1 => '𛃗',
+            KanaSupplement::HentaiganaLetterMoDash2 => '𛃘',
+            KanaSupplement::HentaiganaLetterMoDash3 => '𛃙',
+            KanaSupplement::HentaiganaLetterMoDash4 => '𛃚',
+            KanaSupplement::HentaiganaLetterMoDash5 => '𛃛',
+            KanaSupplement::HentaiganaLetterMoDash6 => '𛃜',
+            KanaSupplement::HentaiganaLetterYaDash1 => '𛃝',
+            KanaSupplement::HentaiganaLetterYaDash2 => '𛃞',
+            KanaSupplement::HentaiganaLetterYaDash3 => '𛃟',
+            KanaSupplement::HentaiganaLetterYaDash4 => '𛃠',
+            KanaSupplement::HentaiganaLetterYaDash5 => '𛃡',
+            KanaSupplement::HentaiganaLetterYaDashYo => '𛃢',
+            KanaSupplement::HentaiganaLetterYuDash1 => '𛃣',
+            KanaSupplement::HentaiganaLetterYuDash2 => '𛃤',
+            KanaSupplement::HentaiganaLetterYuDash3 => '𛃥',
+            KanaSupplement::HentaiganaLetterYuDash4 => '𛃦',
+            KanaSupplement::HentaiganaLetterYoDash1 => '𛃧',
+            KanaSupplement::HentaiganaLetterYoDash2 => '𛃨',
+            KanaSupplement::HentaiganaLetterYoDash3 => '𛃩',
+            KanaSupplement::HentaiganaLetterYoDash4 => '𛃪',
+            KanaSupplement::HentaiganaLetterYoDash5 => '𛃫',
+            KanaSupplement::HentaiganaLetterYoDash6 => '𛃬',
+            KanaSupplement::HentaiganaLetterRaDash1 => '𛃭',
+            KanaSupplement::HentaiganaLetterRaDash2 => '𛃮',
+            KanaSupplement::HentaiganaLetterRaDash3 => '𛃯',
+            KanaSupplement::HentaiganaLetterRaDash4 => '𛃰',
+            KanaSupplement::HentaiganaLetterRiDash1 => '𛃱',
+            KanaSupplement::HentaiganaLetterRiDash2 => '𛃲',
+            KanaSupplement::HentaiganaLetterRiDash3 => '𛃳',
+            KanaSupplement::HentaiganaLetterRiDash4 => '𛃴',
+            KanaSupplement::HentaiganaLetterRiDash5 => '𛃵',
+            KanaSupplement::HentaiganaLetterRiDash6 => '𛃶',
+            KanaSupplement::HentaiganaLetterRiDash7 => '𛃷',
+            KanaSupplement::HentaiganaLetterRuDash1 => '𛃸',
+            KanaSupplement::HentaiganaLetterRuDash2 => '𛃹',
+            KanaSupplement::HentaiganaLetterRuDash3 => '𛃺',
+            KanaSupplement::HentaiganaLetterRuDash4 => '𛃻',
+            KanaSupplement::HentaiganaLetterRuDash5 => '𛃼',
+            KanaSupplement::HentaiganaLetterRuDash6 => '𛃽',
+            KanaSupplement::HentaiganaLetterReDash1 => '𛃾',
         }
     }
 }
@@ -1293,263 +779,262 @@ impl Into<char> for KanaSupplement {
 impl std::convert::TryFrom<char> for KanaSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            KATAKANA_LETTER_ARCHAIC_E => Ok(KanaSupplement::KatakanaLetterArchaicE),
-            HIRAGANA_LETTER_ARCHAIC_YE => Ok(KanaSupplement::HiraganaLetterArchaicYe),
-            HENTAIGANA_LETTER_A_DASH_1 => Ok(KanaSupplement::HentaiganaLetterADash1),
-            HENTAIGANA_LETTER_A_DASH_2 => Ok(KanaSupplement::HentaiganaLetterADash2),
-            HENTAIGANA_LETTER_A_DASH_3 => Ok(KanaSupplement::HentaiganaLetterADash3),
-            HENTAIGANA_LETTER_A_DASH_WO => Ok(KanaSupplement::HentaiganaLetterADashWo),
-            HENTAIGANA_LETTER_I_DASH_1 => Ok(KanaSupplement::HentaiganaLetterIDash1),
-            HENTAIGANA_LETTER_I_DASH_2 => Ok(KanaSupplement::HentaiganaLetterIDash2),
-            HENTAIGANA_LETTER_I_DASH_3 => Ok(KanaSupplement::HentaiganaLetterIDash3),
-            HENTAIGANA_LETTER_I_DASH_4 => Ok(KanaSupplement::HentaiganaLetterIDash4),
-            HENTAIGANA_LETTER_U_DASH_1 => Ok(KanaSupplement::HentaiganaLetterUDash1),
-            HENTAIGANA_LETTER_U_DASH_2 => Ok(KanaSupplement::HentaiganaLetterUDash2),
-            HENTAIGANA_LETTER_U_DASH_3 => Ok(KanaSupplement::HentaiganaLetterUDash3),
-            HENTAIGANA_LETTER_U_DASH_4 => Ok(KanaSupplement::HentaiganaLetterUDash4),
-            HENTAIGANA_LETTER_U_DASH_5 => Ok(KanaSupplement::HentaiganaLetterUDash5),
-            HENTAIGANA_LETTER_E_DASH_2 => Ok(KanaSupplement::HentaiganaLetterEDash2),
-            HENTAIGANA_LETTER_E_DASH_3 => Ok(KanaSupplement::HentaiganaLetterEDash3),
-            HENTAIGANA_LETTER_E_DASH_4 => Ok(KanaSupplement::HentaiganaLetterEDash4),
-            HENTAIGANA_LETTER_E_DASH_5 => Ok(KanaSupplement::HentaiganaLetterEDash5),
-            HENTAIGANA_LETTER_E_DASH_6 => Ok(KanaSupplement::HentaiganaLetterEDash6),
-            HENTAIGANA_LETTER_O_DASH_1 => Ok(KanaSupplement::HentaiganaLetterODash1),
-            HENTAIGANA_LETTER_O_DASH_2 => Ok(KanaSupplement::HentaiganaLetterODash2),
-            HENTAIGANA_LETTER_O_DASH_3 => Ok(KanaSupplement::HentaiganaLetterODash3),
-            HENTAIGANA_LETTER_KA_DASH_1 => Ok(KanaSupplement::HentaiganaLetterKaDash1),
-            HENTAIGANA_LETTER_KA_DASH_2 => Ok(KanaSupplement::HentaiganaLetterKaDash2),
-            HENTAIGANA_LETTER_KA_DASH_3 => Ok(KanaSupplement::HentaiganaLetterKaDash3),
-            HENTAIGANA_LETTER_KA_DASH_4 => Ok(KanaSupplement::HentaiganaLetterKaDash4),
-            HENTAIGANA_LETTER_KA_DASH_5 => Ok(KanaSupplement::HentaiganaLetterKaDash5),
-            HENTAIGANA_LETTER_KA_DASH_6 => Ok(KanaSupplement::HentaiganaLetterKaDash6),
-            HENTAIGANA_LETTER_KA_DASH_7 => Ok(KanaSupplement::HentaiganaLetterKaDash7),
-            HENTAIGANA_LETTER_KA_DASH_8 => Ok(KanaSupplement::HentaiganaLetterKaDash8),
-            HENTAIGANA_LETTER_KA_DASH_9 => Ok(KanaSupplement::HentaiganaLetterKaDash9),
-            HENTAIGANA_LETTER_KA_DASH_10 => Ok(KanaSupplement::HentaiganaLetterKaDash10),
-            HENTAIGANA_LETTER_KA_DASH_11 => Ok(KanaSupplement::HentaiganaLetterKaDash11),
-            HENTAIGANA_LETTER_KA_DASH_KE => Ok(KanaSupplement::HentaiganaLetterKaDashKe),
-            HENTAIGANA_LETTER_KI_DASH_1 => Ok(KanaSupplement::HentaiganaLetterKiDash1),
-            HENTAIGANA_LETTER_KI_DASH_2 => Ok(KanaSupplement::HentaiganaLetterKiDash2),
-            HENTAIGANA_LETTER_KI_DASH_3 => Ok(KanaSupplement::HentaiganaLetterKiDash3),
-            HENTAIGANA_LETTER_KI_DASH_4 => Ok(KanaSupplement::HentaiganaLetterKiDash4),
-            HENTAIGANA_LETTER_KI_DASH_5 => Ok(KanaSupplement::HentaiganaLetterKiDash5),
-            HENTAIGANA_LETTER_KI_DASH_6 => Ok(KanaSupplement::HentaiganaLetterKiDash6),
-            HENTAIGANA_LETTER_KI_DASH_7 => Ok(KanaSupplement::HentaiganaLetterKiDash7),
-            HENTAIGANA_LETTER_KI_DASH_8 => Ok(KanaSupplement::HentaiganaLetterKiDash8),
-            HENTAIGANA_LETTER_KU_DASH_1 => Ok(KanaSupplement::HentaiganaLetterKuDash1),
-            HENTAIGANA_LETTER_KU_DASH_2 => Ok(KanaSupplement::HentaiganaLetterKuDash2),
-            HENTAIGANA_LETTER_KU_DASH_3 => Ok(KanaSupplement::HentaiganaLetterKuDash3),
-            HENTAIGANA_LETTER_KU_DASH_4 => Ok(KanaSupplement::HentaiganaLetterKuDash4),
-            HENTAIGANA_LETTER_KU_DASH_5 => Ok(KanaSupplement::HentaiganaLetterKuDash5),
-            HENTAIGANA_LETTER_KU_DASH_6 => Ok(KanaSupplement::HentaiganaLetterKuDash6),
-            HENTAIGANA_LETTER_KU_DASH_7 => Ok(KanaSupplement::HentaiganaLetterKuDash7),
-            HENTAIGANA_LETTER_KE_DASH_1 => Ok(KanaSupplement::HentaiganaLetterKeDash1),
-            HENTAIGANA_LETTER_KE_DASH_2 => Ok(KanaSupplement::HentaiganaLetterKeDash2),
-            HENTAIGANA_LETTER_KE_DASH_3 => Ok(KanaSupplement::HentaiganaLetterKeDash3),
-            HENTAIGANA_LETTER_KE_DASH_4 => Ok(KanaSupplement::HentaiganaLetterKeDash4),
-            HENTAIGANA_LETTER_KE_DASH_5 => Ok(KanaSupplement::HentaiganaLetterKeDash5),
-            HENTAIGANA_LETTER_KE_DASH_6 => Ok(KanaSupplement::HentaiganaLetterKeDash6),
-            HENTAIGANA_LETTER_KO_DASH_1 => Ok(KanaSupplement::HentaiganaLetterKoDash1),
-            HENTAIGANA_LETTER_KO_DASH_2 => Ok(KanaSupplement::HentaiganaLetterKoDash2),
-            HENTAIGANA_LETTER_KO_DASH_3 => Ok(KanaSupplement::HentaiganaLetterKoDash3),
-            HENTAIGANA_LETTER_KO_DASH_KI => Ok(KanaSupplement::HentaiganaLetterKoDashKi),
-            HENTAIGANA_LETTER_SA_DASH_1 => Ok(KanaSupplement::HentaiganaLetterSaDash1),
-            HENTAIGANA_LETTER_SA_DASH_2 => Ok(KanaSupplement::HentaiganaLetterSaDash2),
-            HENTAIGANA_LETTER_SA_DASH_3 => Ok(KanaSupplement::HentaiganaLetterSaDash3),
-            HENTAIGANA_LETTER_SA_DASH_4 => Ok(KanaSupplement::HentaiganaLetterSaDash4),
-            HENTAIGANA_LETTER_SA_DASH_5 => Ok(KanaSupplement::HentaiganaLetterSaDash5),
-            HENTAIGANA_LETTER_SA_DASH_6 => Ok(KanaSupplement::HentaiganaLetterSaDash6),
-            HENTAIGANA_LETTER_SA_DASH_7 => Ok(KanaSupplement::HentaiganaLetterSaDash7),
-            HENTAIGANA_LETTER_SA_DASH_8 => Ok(KanaSupplement::HentaiganaLetterSaDash8),
-            HENTAIGANA_LETTER_SI_DASH_1 => Ok(KanaSupplement::HentaiganaLetterSiDash1),
-            HENTAIGANA_LETTER_SI_DASH_2 => Ok(KanaSupplement::HentaiganaLetterSiDash2),
-            HENTAIGANA_LETTER_SI_DASH_3 => Ok(KanaSupplement::HentaiganaLetterSiDash3),
-            HENTAIGANA_LETTER_SI_DASH_4 => Ok(KanaSupplement::HentaiganaLetterSiDash4),
-            HENTAIGANA_LETTER_SI_DASH_5 => Ok(KanaSupplement::HentaiganaLetterSiDash5),
-            HENTAIGANA_LETTER_SI_DASH_6 => Ok(KanaSupplement::HentaiganaLetterSiDash6),
-            HENTAIGANA_LETTER_SU_DASH_1 => Ok(KanaSupplement::HentaiganaLetterSuDash1),
-            HENTAIGANA_LETTER_SU_DASH_2 => Ok(KanaSupplement::HentaiganaLetterSuDash2),
-            HENTAIGANA_LETTER_SU_DASH_3 => Ok(KanaSupplement::HentaiganaLetterSuDash3),
-            HENTAIGANA_LETTER_SU_DASH_4 => Ok(KanaSupplement::HentaiganaLetterSuDash4),
-            HENTAIGANA_LETTER_SU_DASH_5 => Ok(KanaSupplement::HentaiganaLetterSuDash5),
-            HENTAIGANA_LETTER_SU_DASH_6 => Ok(KanaSupplement::HentaiganaLetterSuDash6),
-            HENTAIGANA_LETTER_SU_DASH_7 => Ok(KanaSupplement::HentaiganaLetterSuDash7),
-            HENTAIGANA_LETTER_SU_DASH_8 => Ok(KanaSupplement::HentaiganaLetterSuDash8),
-            HENTAIGANA_LETTER_SE_DASH_1 => Ok(KanaSupplement::HentaiganaLetterSeDash1),
-            HENTAIGANA_LETTER_SE_DASH_2 => Ok(KanaSupplement::HentaiganaLetterSeDash2),
-            HENTAIGANA_LETTER_SE_DASH_3 => Ok(KanaSupplement::HentaiganaLetterSeDash3),
-            HENTAIGANA_LETTER_SE_DASH_4 => Ok(KanaSupplement::HentaiganaLetterSeDash4),
-            HENTAIGANA_LETTER_SE_DASH_5 => Ok(KanaSupplement::HentaiganaLetterSeDash5),
-            HENTAIGANA_LETTER_SO_DASH_1 => Ok(KanaSupplement::HentaiganaLetterSoDash1),
-            HENTAIGANA_LETTER_SO_DASH_2 => Ok(KanaSupplement::HentaiganaLetterSoDash2),
-            HENTAIGANA_LETTER_SO_DASH_3 => Ok(KanaSupplement::HentaiganaLetterSoDash3),
-            HENTAIGANA_LETTER_SO_DASH_4 => Ok(KanaSupplement::HentaiganaLetterSoDash4),
-            HENTAIGANA_LETTER_SO_DASH_5 => Ok(KanaSupplement::HentaiganaLetterSoDash5),
-            HENTAIGANA_LETTER_SO_DASH_6 => Ok(KanaSupplement::HentaiganaLetterSoDash6),
-            HENTAIGANA_LETTER_SO_DASH_7 => Ok(KanaSupplement::HentaiganaLetterSoDash7),
-            HENTAIGANA_LETTER_TA_DASH_1 => Ok(KanaSupplement::HentaiganaLetterTaDash1),
-            HENTAIGANA_LETTER_TA_DASH_2 => Ok(KanaSupplement::HentaiganaLetterTaDash2),
-            HENTAIGANA_LETTER_TA_DASH_3 => Ok(KanaSupplement::HentaiganaLetterTaDash3),
-            HENTAIGANA_LETTER_TA_DASH_4 => Ok(KanaSupplement::HentaiganaLetterTaDash4),
-            HENTAIGANA_LETTER_TI_DASH_1 => Ok(KanaSupplement::HentaiganaLetterTiDash1),
-            HENTAIGANA_LETTER_TI_DASH_2 => Ok(KanaSupplement::HentaiganaLetterTiDash2),
-            HENTAIGANA_LETTER_TI_DASH_3 => Ok(KanaSupplement::HentaiganaLetterTiDash3),
-            HENTAIGANA_LETTER_TI_DASH_4 => Ok(KanaSupplement::HentaiganaLetterTiDash4),
-            HENTAIGANA_LETTER_TI_DASH_5 => Ok(KanaSupplement::HentaiganaLetterTiDash5),
-            HENTAIGANA_LETTER_TI_DASH_6 => Ok(KanaSupplement::HentaiganaLetterTiDash6),
-            HENTAIGANA_LETTER_TI_DASH_7 => Ok(KanaSupplement::HentaiganaLetterTiDash7),
-            HENTAIGANA_LETTER_TU_DASH_1 => Ok(KanaSupplement::HentaiganaLetterTuDash1),
-            HENTAIGANA_LETTER_TU_DASH_2 => Ok(KanaSupplement::HentaiganaLetterTuDash2),
-            HENTAIGANA_LETTER_TU_DASH_3 => Ok(KanaSupplement::HentaiganaLetterTuDash3),
-            HENTAIGANA_LETTER_TU_DASH_4 => Ok(KanaSupplement::HentaiganaLetterTuDash4),
-            HENTAIGANA_LETTER_TU_DASH_TO => Ok(KanaSupplement::HentaiganaLetterTuDashTo),
-            HENTAIGANA_LETTER_TE_DASH_1 => Ok(KanaSupplement::HentaiganaLetterTeDash1),
-            HENTAIGANA_LETTER_TE_DASH_2 => Ok(KanaSupplement::HentaiganaLetterTeDash2),
-            HENTAIGANA_LETTER_TE_DASH_3 => Ok(KanaSupplement::HentaiganaLetterTeDash3),
-            HENTAIGANA_LETTER_TE_DASH_4 => Ok(KanaSupplement::HentaiganaLetterTeDash4),
-            HENTAIGANA_LETTER_TE_DASH_5 => Ok(KanaSupplement::HentaiganaLetterTeDash5),
-            HENTAIGANA_LETTER_TE_DASH_6 => Ok(KanaSupplement::HentaiganaLetterTeDash6),
-            HENTAIGANA_LETTER_TE_DASH_7 => Ok(KanaSupplement::HentaiganaLetterTeDash7),
-            HENTAIGANA_LETTER_TE_DASH_8 => Ok(KanaSupplement::HentaiganaLetterTeDash8),
-            HENTAIGANA_LETTER_TE_DASH_9 => Ok(KanaSupplement::HentaiganaLetterTeDash9),
-            HENTAIGANA_LETTER_TO_DASH_1 => Ok(KanaSupplement::HentaiganaLetterToDash1),
-            HENTAIGANA_LETTER_TO_DASH_2 => Ok(KanaSupplement::HentaiganaLetterToDash2),
-            HENTAIGANA_LETTER_TO_DASH_3 => Ok(KanaSupplement::HentaiganaLetterToDash3),
-            HENTAIGANA_LETTER_TO_DASH_4 => Ok(KanaSupplement::HentaiganaLetterToDash4),
-            HENTAIGANA_LETTER_TO_DASH_5 => Ok(KanaSupplement::HentaiganaLetterToDash5),
-            HENTAIGANA_LETTER_TO_DASH_6 => Ok(KanaSupplement::HentaiganaLetterToDash6),
-            HENTAIGANA_LETTER_TO_DASH_RA => Ok(KanaSupplement::HentaiganaLetterToDashRa),
-            HENTAIGANA_LETTER_NA_DASH_1 => Ok(KanaSupplement::HentaiganaLetterNaDash1),
-            HENTAIGANA_LETTER_NA_DASH_2 => Ok(KanaSupplement::HentaiganaLetterNaDash2),
-            HENTAIGANA_LETTER_NA_DASH_3 => Ok(KanaSupplement::HentaiganaLetterNaDash3),
-            HENTAIGANA_LETTER_NA_DASH_4 => Ok(KanaSupplement::HentaiganaLetterNaDash4),
-            HENTAIGANA_LETTER_NA_DASH_5 => Ok(KanaSupplement::HentaiganaLetterNaDash5),
-            HENTAIGANA_LETTER_NA_DASH_6 => Ok(KanaSupplement::HentaiganaLetterNaDash6),
-            HENTAIGANA_LETTER_NA_DASH_7 => Ok(KanaSupplement::HentaiganaLetterNaDash7),
-            HENTAIGANA_LETTER_NA_DASH_8 => Ok(KanaSupplement::HentaiganaLetterNaDash8),
-            HENTAIGANA_LETTER_NA_DASH_9 => Ok(KanaSupplement::HentaiganaLetterNaDash9),
-            HENTAIGANA_LETTER_NI_DASH_1 => Ok(KanaSupplement::HentaiganaLetterNiDash1),
-            HENTAIGANA_LETTER_NI_DASH_2 => Ok(KanaSupplement::HentaiganaLetterNiDash2),
-            HENTAIGANA_LETTER_NI_DASH_3 => Ok(KanaSupplement::HentaiganaLetterNiDash3),
-            HENTAIGANA_LETTER_NI_DASH_4 => Ok(KanaSupplement::HentaiganaLetterNiDash4),
-            HENTAIGANA_LETTER_NI_DASH_5 => Ok(KanaSupplement::HentaiganaLetterNiDash5),
-            HENTAIGANA_LETTER_NI_DASH_6 => Ok(KanaSupplement::HentaiganaLetterNiDash6),
-            HENTAIGANA_LETTER_NI_DASH_7 => Ok(KanaSupplement::HentaiganaLetterNiDash7),
-            HENTAIGANA_LETTER_NI_DASH_TE => Ok(KanaSupplement::HentaiganaLetterNiDashTe),
-            HENTAIGANA_LETTER_NU_DASH_1 => Ok(KanaSupplement::HentaiganaLetterNuDash1),
-            HENTAIGANA_LETTER_NU_DASH_2 => Ok(KanaSupplement::HentaiganaLetterNuDash2),
-            HENTAIGANA_LETTER_NU_DASH_3 => Ok(KanaSupplement::HentaiganaLetterNuDash3),
-            HENTAIGANA_LETTER_NE_DASH_1 => Ok(KanaSupplement::HentaiganaLetterNeDash1),
-            HENTAIGANA_LETTER_NE_DASH_2 => Ok(KanaSupplement::HentaiganaLetterNeDash2),
-            HENTAIGANA_LETTER_NE_DASH_3 => Ok(KanaSupplement::HentaiganaLetterNeDash3),
-            HENTAIGANA_LETTER_NE_DASH_4 => Ok(KanaSupplement::HentaiganaLetterNeDash4),
-            HENTAIGANA_LETTER_NE_DASH_5 => Ok(KanaSupplement::HentaiganaLetterNeDash5),
-            HENTAIGANA_LETTER_NE_DASH_6 => Ok(KanaSupplement::HentaiganaLetterNeDash6),
-            HENTAIGANA_LETTER_NE_DASH_KO => Ok(KanaSupplement::HentaiganaLetterNeDashKo),
-            HENTAIGANA_LETTER_NO_DASH_1 => Ok(KanaSupplement::HentaiganaLetterNoDash1),
-            HENTAIGANA_LETTER_NO_DASH_2 => Ok(KanaSupplement::HentaiganaLetterNoDash2),
-            HENTAIGANA_LETTER_NO_DASH_3 => Ok(KanaSupplement::HentaiganaLetterNoDash3),
-            HENTAIGANA_LETTER_NO_DASH_4 => Ok(KanaSupplement::HentaiganaLetterNoDash4),
-            HENTAIGANA_LETTER_NO_DASH_5 => Ok(KanaSupplement::HentaiganaLetterNoDash5),
-            HENTAIGANA_LETTER_HA_DASH_1 => Ok(KanaSupplement::HentaiganaLetterHaDash1),
-            HENTAIGANA_LETTER_HA_DASH_2 => Ok(KanaSupplement::HentaiganaLetterHaDash2),
-            HENTAIGANA_LETTER_HA_DASH_3 => Ok(KanaSupplement::HentaiganaLetterHaDash3),
-            HENTAIGANA_LETTER_HA_DASH_4 => Ok(KanaSupplement::HentaiganaLetterHaDash4),
-            HENTAIGANA_LETTER_HA_DASH_5 => Ok(KanaSupplement::HentaiganaLetterHaDash5),
-            HENTAIGANA_LETTER_HA_DASH_6 => Ok(KanaSupplement::HentaiganaLetterHaDash6),
-            HENTAIGANA_LETTER_HA_DASH_7 => Ok(KanaSupplement::HentaiganaLetterHaDash7),
-            HENTAIGANA_LETTER_HA_DASH_8 => Ok(KanaSupplement::HentaiganaLetterHaDash8),
-            HENTAIGANA_LETTER_HA_DASH_9 => Ok(KanaSupplement::HentaiganaLetterHaDash9),
-            HENTAIGANA_LETTER_HA_DASH_10 => Ok(KanaSupplement::HentaiganaLetterHaDash10),
-            HENTAIGANA_LETTER_HA_DASH_11 => Ok(KanaSupplement::HentaiganaLetterHaDash11),
-            HENTAIGANA_LETTER_HI_DASH_1 => Ok(KanaSupplement::HentaiganaLetterHiDash1),
-            HENTAIGANA_LETTER_HI_DASH_2 => Ok(KanaSupplement::HentaiganaLetterHiDash2),
-            HENTAIGANA_LETTER_HI_DASH_3 => Ok(KanaSupplement::HentaiganaLetterHiDash3),
-            HENTAIGANA_LETTER_HI_DASH_4 => Ok(KanaSupplement::HentaiganaLetterHiDash4),
-            HENTAIGANA_LETTER_HI_DASH_5 => Ok(KanaSupplement::HentaiganaLetterHiDash5),
-            HENTAIGANA_LETTER_HI_DASH_6 => Ok(KanaSupplement::HentaiganaLetterHiDash6),
-            HENTAIGANA_LETTER_HI_DASH_7 => Ok(KanaSupplement::HentaiganaLetterHiDash7),
-            HENTAIGANA_LETTER_HU_DASH_1 => Ok(KanaSupplement::HentaiganaLetterHuDash1),
-            HENTAIGANA_LETTER_HU_DASH_2 => Ok(KanaSupplement::HentaiganaLetterHuDash2),
-            HENTAIGANA_LETTER_HU_DASH_3 => Ok(KanaSupplement::HentaiganaLetterHuDash3),
-            HENTAIGANA_LETTER_HE_DASH_1 => Ok(KanaSupplement::HentaiganaLetterHeDash1),
-            HENTAIGANA_LETTER_HE_DASH_2 => Ok(KanaSupplement::HentaiganaLetterHeDash2),
-            HENTAIGANA_LETTER_HE_DASH_3 => Ok(KanaSupplement::HentaiganaLetterHeDash3),
-            HENTAIGANA_LETTER_HE_DASH_4 => Ok(KanaSupplement::HentaiganaLetterHeDash4),
-            HENTAIGANA_LETTER_HE_DASH_5 => Ok(KanaSupplement::HentaiganaLetterHeDash5),
-            HENTAIGANA_LETTER_HE_DASH_6 => Ok(KanaSupplement::HentaiganaLetterHeDash6),
-            HENTAIGANA_LETTER_HE_DASH_7 => Ok(KanaSupplement::HentaiganaLetterHeDash7),
-            HENTAIGANA_LETTER_HO_DASH_1 => Ok(KanaSupplement::HentaiganaLetterHoDash1),
-            HENTAIGANA_LETTER_HO_DASH_2 => Ok(KanaSupplement::HentaiganaLetterHoDash2),
-            HENTAIGANA_LETTER_HO_DASH_3 => Ok(KanaSupplement::HentaiganaLetterHoDash3),
-            HENTAIGANA_LETTER_HO_DASH_4 => Ok(KanaSupplement::HentaiganaLetterHoDash4),
-            HENTAIGANA_LETTER_HO_DASH_5 => Ok(KanaSupplement::HentaiganaLetterHoDash5),
-            HENTAIGANA_LETTER_HO_DASH_6 => Ok(KanaSupplement::HentaiganaLetterHoDash6),
-            HENTAIGANA_LETTER_HO_DASH_7 => Ok(KanaSupplement::HentaiganaLetterHoDash7),
-            HENTAIGANA_LETTER_HO_DASH_8 => Ok(KanaSupplement::HentaiganaLetterHoDash8),
-            HENTAIGANA_LETTER_MA_DASH_1 => Ok(KanaSupplement::HentaiganaLetterMaDash1),
-            HENTAIGANA_LETTER_MA_DASH_2 => Ok(KanaSupplement::HentaiganaLetterMaDash2),
-            HENTAIGANA_LETTER_MA_DASH_3 => Ok(KanaSupplement::HentaiganaLetterMaDash3),
-            HENTAIGANA_LETTER_MA_DASH_4 => Ok(KanaSupplement::HentaiganaLetterMaDash4),
-            HENTAIGANA_LETTER_MA_DASH_5 => Ok(KanaSupplement::HentaiganaLetterMaDash5),
-            HENTAIGANA_LETTER_MA_DASH_6 => Ok(KanaSupplement::HentaiganaLetterMaDash6),
-            HENTAIGANA_LETTER_MA_DASH_7 => Ok(KanaSupplement::HentaiganaLetterMaDash7),
-            HENTAIGANA_LETTER_MI_DASH_1 => Ok(KanaSupplement::HentaiganaLetterMiDash1),
-            HENTAIGANA_LETTER_MI_DASH_2 => Ok(KanaSupplement::HentaiganaLetterMiDash2),
-            HENTAIGANA_LETTER_MI_DASH_3 => Ok(KanaSupplement::HentaiganaLetterMiDash3),
-            HENTAIGANA_LETTER_MI_DASH_4 => Ok(KanaSupplement::HentaiganaLetterMiDash4),
-            HENTAIGANA_LETTER_MI_DASH_5 => Ok(KanaSupplement::HentaiganaLetterMiDash5),
-            HENTAIGANA_LETTER_MI_DASH_6 => Ok(KanaSupplement::HentaiganaLetterMiDash6),
-            HENTAIGANA_LETTER_MI_DASH_7 => Ok(KanaSupplement::HentaiganaLetterMiDash7),
-            HENTAIGANA_LETTER_MU_DASH_1 => Ok(KanaSupplement::HentaiganaLetterMuDash1),
-            HENTAIGANA_LETTER_MU_DASH_2 => Ok(KanaSupplement::HentaiganaLetterMuDash2),
-            HENTAIGANA_LETTER_MU_DASH_3 => Ok(KanaSupplement::HentaiganaLetterMuDash3),
-            HENTAIGANA_LETTER_MU_DASH_4 => Ok(KanaSupplement::HentaiganaLetterMuDash4),
-            HENTAIGANA_LETTER_ME_DASH_1 => Ok(KanaSupplement::HentaiganaLetterMeDash1),
-            HENTAIGANA_LETTER_ME_DASH_2 => Ok(KanaSupplement::HentaiganaLetterMeDash2),
-            HENTAIGANA_LETTER_ME_DASH_MA => Ok(KanaSupplement::HentaiganaLetterMeDashMa),
-            HENTAIGANA_LETTER_MO_DASH_1 => Ok(KanaSupplement::HentaiganaLetterMoDash1),
-            HENTAIGANA_LETTER_MO_DASH_2 => Ok(KanaSupplement::HentaiganaLetterMoDash2),
-            HENTAIGANA_LETTER_MO_DASH_3 => Ok(KanaSupplement::HentaiganaLetterMoDash3),
-            HENTAIGANA_LETTER_MO_DASH_4 => Ok(KanaSupplement::HentaiganaLetterMoDash4),
-            HENTAIGANA_LETTER_MO_DASH_5 => Ok(KanaSupplement::HentaiganaLetterMoDash5),
-            HENTAIGANA_LETTER_MO_DASH_6 => Ok(KanaSupplement::HentaiganaLetterMoDash6),
-            HENTAIGANA_LETTER_YA_DASH_1 => Ok(KanaSupplement::HentaiganaLetterYaDash1),
-            HENTAIGANA_LETTER_YA_DASH_2 => Ok(KanaSupplement::HentaiganaLetterYaDash2),
-            HENTAIGANA_LETTER_YA_DASH_3 => Ok(KanaSupplement::HentaiganaLetterYaDash3),
-            HENTAIGANA_LETTER_YA_DASH_4 => Ok(KanaSupplement::HentaiganaLetterYaDash4),
-            HENTAIGANA_LETTER_YA_DASH_5 => Ok(KanaSupplement::HentaiganaLetterYaDash5),
-            HENTAIGANA_LETTER_YA_DASH_YO => Ok(KanaSupplement::HentaiganaLetterYaDashYo),
-            HENTAIGANA_LETTER_YU_DASH_1 => Ok(KanaSupplement::HentaiganaLetterYuDash1),
-            HENTAIGANA_LETTER_YU_DASH_2 => Ok(KanaSupplement::HentaiganaLetterYuDash2),
-            HENTAIGANA_LETTER_YU_DASH_3 => Ok(KanaSupplement::HentaiganaLetterYuDash3),
-            HENTAIGANA_LETTER_YU_DASH_4 => Ok(KanaSupplement::HentaiganaLetterYuDash4),
-            HENTAIGANA_LETTER_YO_DASH_1 => Ok(KanaSupplement::HentaiganaLetterYoDash1),
-            HENTAIGANA_LETTER_YO_DASH_2 => Ok(KanaSupplement::HentaiganaLetterYoDash2),
-            HENTAIGANA_LETTER_YO_DASH_3 => Ok(KanaSupplement::HentaiganaLetterYoDash3),
-            HENTAIGANA_LETTER_YO_DASH_4 => Ok(KanaSupplement::HentaiganaLetterYoDash4),
-            HENTAIGANA_LETTER_YO_DASH_5 => Ok(KanaSupplement::HentaiganaLetterYoDash5),
-            HENTAIGANA_LETTER_YO_DASH_6 => Ok(KanaSupplement::HentaiganaLetterYoDash6),
-            HENTAIGANA_LETTER_RA_DASH_1 => Ok(KanaSupplement::HentaiganaLetterRaDash1),
-            HENTAIGANA_LETTER_RA_DASH_2 => Ok(KanaSupplement::HentaiganaLetterRaDash2),
-            HENTAIGANA_LETTER_RA_DASH_3 => Ok(KanaSupplement::HentaiganaLetterRaDash3),
-            HENTAIGANA_LETTER_RA_DASH_4 => Ok(KanaSupplement::HentaiganaLetterRaDash4),
-            HENTAIGANA_LETTER_RI_DASH_1 => Ok(KanaSupplement::HentaiganaLetterRiDash1),
-            HENTAIGANA_LETTER_RI_DASH_2 => Ok(KanaSupplement::HentaiganaLetterRiDash2),
-            HENTAIGANA_LETTER_RI_DASH_3 => Ok(KanaSupplement::HentaiganaLetterRiDash3),
-            HENTAIGANA_LETTER_RI_DASH_4 => Ok(KanaSupplement::HentaiganaLetterRiDash4),
-            HENTAIGANA_LETTER_RI_DASH_5 => Ok(KanaSupplement::HentaiganaLetterRiDash5),
-            HENTAIGANA_LETTER_RI_DASH_6 => Ok(KanaSupplement::HentaiganaLetterRiDash6),
-            HENTAIGANA_LETTER_RI_DASH_7 => Ok(KanaSupplement::HentaiganaLetterRiDash7),
-            HENTAIGANA_LETTER_RU_DASH_1 => Ok(KanaSupplement::HentaiganaLetterRuDash1),
-            HENTAIGANA_LETTER_RU_DASH_2 => Ok(KanaSupplement::HentaiganaLetterRuDash2),
-            HENTAIGANA_LETTER_RU_DASH_3 => Ok(KanaSupplement::HentaiganaLetterRuDash3),
-            HENTAIGANA_LETTER_RU_DASH_4 => Ok(KanaSupplement::HentaiganaLetterRuDash4),
-            HENTAIGANA_LETTER_RU_DASH_5 => Ok(KanaSupplement::HentaiganaLetterRuDash5),
-            HENTAIGANA_LETTER_RU_DASH_6 => Ok(KanaSupplement::HentaiganaLetterRuDash6),
-            HENTAIGANA_LETTER_RE_DASH_1 => Ok(KanaSupplement::HentaiganaLetterReDash1),
+            '𛀀' => Ok(KanaSupplement::KatakanaLetterArchaicE),
+            '𛀁' => Ok(KanaSupplement::HiraganaLetterArchaicYe),
+            '𛀂' => Ok(KanaSupplement::HentaiganaLetterADash1),
+            '𛀃' => Ok(KanaSupplement::HentaiganaLetterADash2),
+            '𛀄' => Ok(KanaSupplement::HentaiganaLetterADash3),
+            '𛀅' => Ok(KanaSupplement::HentaiganaLetterADashWo),
+            '𛀆' => Ok(KanaSupplement::HentaiganaLetterIDash1),
+            '𛀇' => Ok(KanaSupplement::HentaiganaLetterIDash2),
+            '𛀈' => Ok(KanaSupplement::HentaiganaLetterIDash3),
+            '𛀉' => Ok(KanaSupplement::HentaiganaLetterIDash4),
+            '𛀊' => Ok(KanaSupplement::HentaiganaLetterUDash1),
+            '𛀋' => Ok(KanaSupplement::HentaiganaLetterUDash2),
+            '𛀌' => Ok(KanaSupplement::HentaiganaLetterUDash3),
+            '𛀍' => Ok(KanaSupplement::HentaiganaLetterUDash4),
+            '𛀎' => Ok(KanaSupplement::HentaiganaLetterUDash5),
+            '𛀏' => Ok(KanaSupplement::HentaiganaLetterEDash2),
+            '𛀐' => Ok(KanaSupplement::HentaiganaLetterEDash3),
+            '𛀑' => Ok(KanaSupplement::HentaiganaLetterEDash4),
+            '𛀒' => Ok(KanaSupplement::HentaiganaLetterEDash5),
+            '𛀓' => Ok(KanaSupplement::HentaiganaLetterEDash6),
+            '𛀔' => Ok(KanaSupplement::HentaiganaLetterODash1),
+            '𛀕' => Ok(KanaSupplement::HentaiganaLetterODash2),
+            '𛀖' => Ok(KanaSupplement::HentaiganaLetterODash3),
+            '𛀗' => Ok(KanaSupplement::HentaiganaLetterKaDash1),
+            '𛀘' => Ok(KanaSupplement::HentaiganaLetterKaDash2),
+            '𛀙' => Ok(KanaSupplement::HentaiganaLetterKaDash3),
+            '𛀚' => Ok(KanaSupplement::HentaiganaLetterKaDash4),
+            '𛀛' => Ok(KanaSupplement::HentaiganaLetterKaDash5),
+            '𛀜' => Ok(KanaSupplement::HentaiganaLetterKaDash6),
+            '𛀝' => Ok(KanaSupplement::HentaiganaLetterKaDash7),
+            '𛀞' => Ok(KanaSupplement::HentaiganaLetterKaDash8),
+            '𛀟' => Ok(KanaSupplement::HentaiganaLetterKaDash9),
+            '𛀠' => Ok(KanaSupplement::HentaiganaLetterKaDash10),
+            '𛀡' => Ok(KanaSupplement::HentaiganaLetterKaDash11),
+            '𛀢' => Ok(KanaSupplement::HentaiganaLetterKaDashKe),
+            '𛀣' => Ok(KanaSupplement::HentaiganaLetterKiDash1),
+            '𛀤' => Ok(KanaSupplement::HentaiganaLetterKiDash2),
+            '𛀥' => Ok(KanaSupplement::HentaiganaLetterKiDash3),
+            '𛀦' => Ok(KanaSupplement::HentaiganaLetterKiDash4),
+            '𛀧' => Ok(KanaSupplement::HentaiganaLetterKiDash5),
+            '𛀨' => Ok(KanaSupplement::HentaiganaLetterKiDash6),
+            '𛀩' => Ok(KanaSupplement::HentaiganaLetterKiDash7),
+            '𛀪' => Ok(KanaSupplement::HentaiganaLetterKiDash8),
+            '𛀫' => Ok(KanaSupplement::HentaiganaLetterKuDash1),
+            '𛀬' => Ok(KanaSupplement::HentaiganaLetterKuDash2),
+            '𛀭' => Ok(KanaSupplement::HentaiganaLetterKuDash3),
+            '𛀮' => Ok(KanaSupplement::HentaiganaLetterKuDash4),
+            '𛀯' => Ok(KanaSupplement::HentaiganaLetterKuDash5),
+            '𛀰' => Ok(KanaSupplement::HentaiganaLetterKuDash6),
+            '𛀱' => Ok(KanaSupplement::HentaiganaLetterKuDash7),
+            '𛀲' => Ok(KanaSupplement::HentaiganaLetterKeDash1),
+            '𛀳' => Ok(KanaSupplement::HentaiganaLetterKeDash2),
+            '𛀴' => Ok(KanaSupplement::HentaiganaLetterKeDash3),
+            '𛀵' => Ok(KanaSupplement::HentaiganaLetterKeDash4),
+            '𛀶' => Ok(KanaSupplement::HentaiganaLetterKeDash5),
+            '𛀷' => Ok(KanaSupplement::HentaiganaLetterKeDash6),
+            '𛀸' => Ok(KanaSupplement::HentaiganaLetterKoDash1),
+            '𛀹' => Ok(KanaSupplement::HentaiganaLetterKoDash2),
+            '𛀺' => Ok(KanaSupplement::HentaiganaLetterKoDash3),
+            '𛀻' => Ok(KanaSupplement::HentaiganaLetterKoDashKi),
+            '𛀼' => Ok(KanaSupplement::HentaiganaLetterSaDash1),
+            '𛀽' => Ok(KanaSupplement::HentaiganaLetterSaDash2),
+            '𛀾' => Ok(KanaSupplement::HentaiganaLetterSaDash3),
+            '𛀿' => Ok(KanaSupplement::HentaiganaLetterSaDash4),
+            '𛁀' => Ok(KanaSupplement::HentaiganaLetterSaDash5),
+            '𛁁' => Ok(KanaSupplement::HentaiganaLetterSaDash6),
+            '𛁂' => Ok(KanaSupplement::HentaiganaLetterSaDash7),
+            '𛁃' => Ok(KanaSupplement::HentaiganaLetterSaDash8),
+            '𛁄' => Ok(KanaSupplement::HentaiganaLetterSiDash1),
+            '𛁅' => Ok(KanaSupplement::HentaiganaLetterSiDash2),
+            '𛁆' => Ok(KanaSupplement::HentaiganaLetterSiDash3),
+            '𛁇' => Ok(KanaSupplement::HentaiganaLetterSiDash4),
+            '𛁈' => Ok(KanaSupplement::HentaiganaLetterSiDash5),
+            '𛁉' => Ok(KanaSupplement::HentaiganaLetterSiDash6),
+            '𛁊' => Ok(KanaSupplement::HentaiganaLetterSuDash1),
+            '𛁋' => Ok(KanaSupplement::HentaiganaLetterSuDash2),
+            '𛁌' => Ok(KanaSupplement::HentaiganaLetterSuDash3),
+            '𛁍' => Ok(KanaSupplement::HentaiganaLetterSuDash4),
+            '𛁎' => Ok(KanaSupplement::HentaiganaLetterSuDash5),
+            '𛁏' => Ok(KanaSupplement::HentaiganaLetterSuDash6),
+            '𛁐' => Ok(KanaSupplement::HentaiganaLetterSuDash7),
+            '𛁑' => Ok(KanaSupplement::HentaiganaLetterSuDash8),
+            '𛁒' => Ok(KanaSupplement::HentaiganaLetterSeDash1),
+            '𛁓' => Ok(KanaSupplement::HentaiganaLetterSeDash2),
+            '𛁔' => Ok(KanaSupplement::HentaiganaLetterSeDash3),
+            '𛁕' => Ok(KanaSupplement::HentaiganaLetterSeDash4),
+            '𛁖' => Ok(KanaSupplement::HentaiganaLetterSeDash5),
+            '𛁗' => Ok(KanaSupplement::HentaiganaLetterSoDash1),
+            '𛁘' => Ok(KanaSupplement::HentaiganaLetterSoDash2),
+            '𛁙' => Ok(KanaSupplement::HentaiganaLetterSoDash3),
+            '𛁚' => Ok(KanaSupplement::HentaiganaLetterSoDash4),
+            '𛁛' => Ok(KanaSupplement::HentaiganaLetterSoDash5),
+            '𛁜' => Ok(KanaSupplement::HentaiganaLetterSoDash6),
+            '𛁝' => Ok(KanaSupplement::HentaiganaLetterSoDash7),
+            '𛁞' => Ok(KanaSupplement::HentaiganaLetterTaDash1),
+            '𛁟' => Ok(KanaSupplement::HentaiganaLetterTaDash2),
+            '𛁠' => Ok(KanaSupplement::HentaiganaLetterTaDash3),
+            '𛁡' => Ok(KanaSupplement::HentaiganaLetterTaDash4),
+            '𛁢' => Ok(KanaSupplement::HentaiganaLetterTiDash1),
+            '𛁣' => Ok(KanaSupplement::HentaiganaLetterTiDash2),
+            '𛁤' => Ok(KanaSupplement::HentaiganaLetterTiDash3),
+            '𛁥' => Ok(KanaSupplement::HentaiganaLetterTiDash4),
+            '𛁦' => Ok(KanaSupplement::HentaiganaLetterTiDash5),
+            '𛁧' => Ok(KanaSupplement::HentaiganaLetterTiDash6),
+            '𛁨' => Ok(KanaSupplement::HentaiganaLetterTiDash7),
+            '𛁩' => Ok(KanaSupplement::HentaiganaLetterTuDash1),
+            '𛁪' => Ok(KanaSupplement::HentaiganaLetterTuDash2),
+            '𛁫' => Ok(KanaSupplement::HentaiganaLetterTuDash3),
+            '𛁬' => Ok(KanaSupplement::HentaiganaLetterTuDash4),
+            '𛁭' => Ok(KanaSupplement::HentaiganaLetterTuDashTo),
+            '𛁮' => Ok(KanaSupplement::HentaiganaLetterTeDash1),
+            '𛁯' => Ok(KanaSupplement::HentaiganaLetterTeDash2),
+            '𛁰' => Ok(KanaSupplement::HentaiganaLetterTeDash3),
+            '𛁱' => Ok(KanaSupplement::HentaiganaLetterTeDash4),
+            '𛁲' => Ok(KanaSupplement::HentaiganaLetterTeDash5),
+            '𛁳' => Ok(KanaSupplement::HentaiganaLetterTeDash6),
+            '𛁴' => Ok(KanaSupplement::HentaiganaLetterTeDash7),
+            '𛁵' => Ok(KanaSupplement::HentaiganaLetterTeDash8),
+            '𛁶' => Ok(KanaSupplement::HentaiganaLetterTeDash9),
+            '𛁷' => Ok(KanaSupplement::HentaiganaLetterToDash1),
+            '𛁸' => Ok(KanaSupplement::HentaiganaLetterToDash2),
+            '𛁹' => Ok(KanaSupplement::HentaiganaLetterToDash3),
+            '𛁺' => Ok(KanaSupplement::HentaiganaLetterToDash4),
+            '𛁻' => Ok(KanaSupplement::HentaiganaLetterToDash5),
+            '𛁼' => Ok(KanaSupplement::HentaiganaLetterToDash6),
+            '𛁽' => Ok(KanaSupplement::HentaiganaLetterToDashRa),
+            '𛁾' => Ok(KanaSupplement::HentaiganaLetterNaDash1),
+            '𛁿' => Ok(KanaSupplement::HentaiganaLetterNaDash2),
+            '𛂀' => Ok(KanaSupplement::HentaiganaLetterNaDash3),
+            '𛂁' => Ok(KanaSupplement::HentaiganaLetterNaDash4),
+            '𛂂' => Ok(KanaSupplement::HentaiganaLetterNaDash5),
+            '𛂃' => Ok(KanaSupplement::HentaiganaLetterNaDash6),
+            '𛂄' => Ok(KanaSupplement::HentaiganaLetterNaDash7),
+            '𛂅' => Ok(KanaSupplement::HentaiganaLetterNaDash8),
+            '𛂆' => Ok(KanaSupplement::HentaiganaLetterNaDash9),
+            '𛂇' => Ok(KanaSupplement::HentaiganaLetterNiDash1),
+            '𛂈' => Ok(KanaSupplement::HentaiganaLetterNiDash2),
+            '𛂉' => Ok(KanaSupplement::HentaiganaLetterNiDash3),
+            '𛂊' => Ok(KanaSupplement::HentaiganaLetterNiDash4),
+            '𛂋' => Ok(KanaSupplement::HentaiganaLetterNiDash5),
+            '𛂌' => Ok(KanaSupplement::HentaiganaLetterNiDash6),
+            '𛂍' => Ok(KanaSupplement::HentaiganaLetterNiDash7),
+            '𛂎' => Ok(KanaSupplement::HentaiganaLetterNiDashTe),
+            '𛂏' => Ok(KanaSupplement::HentaiganaLetterNuDash1),
+            '𛂐' => Ok(KanaSupplement::HentaiganaLetterNuDash2),
+            '𛂑' => Ok(KanaSupplement::HentaiganaLetterNuDash3),
+            '𛂒' => Ok(KanaSupplement::HentaiganaLetterNeDash1),
+            '𛂓' => Ok(KanaSupplement::HentaiganaLetterNeDash2),
+            '𛂔' => Ok(KanaSupplement::HentaiganaLetterNeDash3),
+            '𛂕' => Ok(KanaSupplement::HentaiganaLetterNeDash4),
+            '𛂖' => Ok(KanaSupplement::HentaiganaLetterNeDash5),
+            '𛂗' => Ok(KanaSupplement::HentaiganaLetterNeDash6),
+            '𛂘' => Ok(KanaSupplement::HentaiganaLetterNeDashKo),
+            '𛂙' => Ok(KanaSupplement::HentaiganaLetterNoDash1),
+            '𛂚' => Ok(KanaSupplement::HentaiganaLetterNoDash2),
+            '𛂛' => Ok(KanaSupplement::HentaiganaLetterNoDash3),
+            '𛂜' => Ok(KanaSupplement::HentaiganaLetterNoDash4),
+            '𛂝' => Ok(KanaSupplement::HentaiganaLetterNoDash5),
+            '𛂞' => Ok(KanaSupplement::HentaiganaLetterHaDash1),
+            '𛂟' => Ok(KanaSupplement::HentaiganaLetterHaDash2),
+            '𛂠' => Ok(KanaSupplement::HentaiganaLetterHaDash3),
+            '𛂡' => Ok(KanaSupplement::HentaiganaLetterHaDash4),
+            '𛂢' => Ok(KanaSupplement::HentaiganaLetterHaDash5),
+            '𛂣' => Ok(KanaSupplement::HentaiganaLetterHaDash6),
+            '𛂤' => Ok(KanaSupplement::HentaiganaLetterHaDash7),
+            '𛂥' => Ok(KanaSupplement::HentaiganaLetterHaDash8),
+            '𛂦' => Ok(KanaSupplement::HentaiganaLetterHaDash9),
+            '𛂧' => Ok(KanaSupplement::HentaiganaLetterHaDash10),
+            '𛂨' => Ok(KanaSupplement::HentaiganaLetterHaDash11),
+            '𛂩' => Ok(KanaSupplement::HentaiganaLetterHiDash1),
+            '𛂪' => Ok(KanaSupplement::HentaiganaLetterHiDash2),
+            '𛂫' => Ok(KanaSupplement::HentaiganaLetterHiDash3),
+            '𛂬' => Ok(KanaSupplement::HentaiganaLetterHiDash4),
+            '𛂭' => Ok(KanaSupplement::HentaiganaLetterHiDash5),
+            '𛂮' => Ok(KanaSupplement::HentaiganaLetterHiDash6),
+            '𛂯' => Ok(KanaSupplement::HentaiganaLetterHiDash7),
+            '𛂰' => Ok(KanaSupplement::HentaiganaLetterHuDash1),
+            '𛂱' => Ok(KanaSupplement::HentaiganaLetterHuDash2),
+            '𛂲' => Ok(KanaSupplement::HentaiganaLetterHuDash3),
+            '𛂳' => Ok(KanaSupplement::HentaiganaLetterHeDash1),
+            '𛂴' => Ok(KanaSupplement::HentaiganaLetterHeDash2),
+            '𛂵' => Ok(KanaSupplement::HentaiganaLetterHeDash3),
+            '𛂶' => Ok(KanaSupplement::HentaiganaLetterHeDash4),
+            '𛂷' => Ok(KanaSupplement::HentaiganaLetterHeDash5),
+            '𛂸' => Ok(KanaSupplement::HentaiganaLetterHeDash6),
+            '𛂹' => Ok(KanaSupplement::HentaiganaLetterHeDash7),
+            '𛂺' => Ok(KanaSupplement::HentaiganaLetterHoDash1),
+            '𛂻' => Ok(KanaSupplement::HentaiganaLetterHoDash2),
+            '𛂼' => Ok(KanaSupplement::HentaiganaLetterHoDash3),
+            '𛂽' => Ok(KanaSupplement::HentaiganaLetterHoDash4),
+            '𛂾' => Ok(KanaSupplement::HentaiganaLetterHoDash5),
+            '𛂿' => Ok(KanaSupplement::HentaiganaLetterHoDash6),
+            '𛃀' => Ok(KanaSupplement::HentaiganaLetterHoDash7),
+            '𛃁' => Ok(KanaSupplement::HentaiganaLetterHoDash8),
+            '𛃂' => Ok(KanaSupplement::HentaiganaLetterMaDash1),
+            '𛃃' => Ok(KanaSupplement::HentaiganaLetterMaDash2),
+            '𛃄' => Ok(KanaSupplement::HentaiganaLetterMaDash3),
+            '𛃅' => Ok(KanaSupplement::HentaiganaLetterMaDash4),
+            '𛃆' => Ok(KanaSupplement::HentaiganaLetterMaDash5),
+            '𛃇' => Ok(KanaSupplement::HentaiganaLetterMaDash6),
+            '𛃈' => Ok(KanaSupplement::HentaiganaLetterMaDash7),
+            '𛃉' => Ok(KanaSupplement::HentaiganaLetterMiDash1),
+            '𛃊' => Ok(KanaSupplement::HentaiganaLetterMiDash2),
+            '𛃋' => Ok(KanaSupplement::HentaiganaLetterMiDash3),
+            '𛃌' => Ok(KanaSupplement::HentaiganaLetterMiDash4),
+            '𛃍' => Ok(KanaSupplement::HentaiganaLetterMiDash5),
+            '𛃎' => Ok(KanaSupplement::HentaiganaLetterMiDash6),
+            '𛃏' => Ok(KanaSupplement::HentaiganaLetterMiDash7),
+            '𛃐' => Ok(KanaSupplement::HentaiganaLetterMuDash1),
+            '𛃑' => Ok(KanaSupplement::HentaiganaLetterMuDash2),
+            '𛃒' => Ok(KanaSupplement::HentaiganaLetterMuDash3),
+            '𛃓' => Ok(KanaSupplement::HentaiganaLetterMuDash4),
+            '𛃔' => Ok(KanaSupplement::HentaiganaLetterMeDash1),
+            '𛃕' => Ok(KanaSupplement::HentaiganaLetterMeDash2),
+            '𛃖' => Ok(KanaSupplement::HentaiganaLetterMeDashMa),
+            '𛃗' => Ok(KanaSupplement::HentaiganaLetterMoDash1),
+            '𛃘' => Ok(KanaSupplement::HentaiganaLetterMoDash2),
+            '𛃙' => Ok(KanaSupplement::HentaiganaLetterMoDash3),
+            '𛃚' => Ok(KanaSupplement::HentaiganaLetterMoDash4),
+            '𛃛' => Ok(KanaSupplement::HentaiganaLetterMoDash5),
+            '𛃜' => Ok(KanaSupplement::HentaiganaLetterMoDash6),
+            '𛃝' => Ok(KanaSupplement::HentaiganaLetterYaDash1),
+            '𛃞' => Ok(KanaSupplement::HentaiganaLetterYaDash2),
+            '𛃟' => Ok(KanaSupplement::HentaiganaLetterYaDash3),
+            '𛃠' => Ok(KanaSupplement::HentaiganaLetterYaDash4),
+            '𛃡' => Ok(KanaSupplement::HentaiganaLetterYaDash5),
+            '𛃢' => Ok(KanaSupplement::HentaiganaLetterYaDashYo),
+            '𛃣' => Ok(KanaSupplement::HentaiganaLetterYuDash1),
+            '𛃤' => Ok(KanaSupplement::HentaiganaLetterYuDash2),
+            '𛃥' => Ok(KanaSupplement::HentaiganaLetterYuDash3),
+            '𛃦' => Ok(KanaSupplement::HentaiganaLetterYuDash4),
+            '𛃧' => Ok(KanaSupplement::HentaiganaLetterYoDash1),
+            '𛃨' => Ok(KanaSupplement::HentaiganaLetterYoDash2),
+            '𛃩' => Ok(KanaSupplement::HentaiganaLetterYoDash3),
+            '𛃪' => Ok(KanaSupplement::HentaiganaLetterYoDash4),
+            '𛃫' => Ok(KanaSupplement::HentaiganaLetterYoDash5),
+            '𛃬' => Ok(KanaSupplement::HentaiganaLetterYoDash6),
+            '𛃭' => Ok(KanaSupplement::HentaiganaLetterRaDash1),
+            '𛃮' => Ok(KanaSupplement::HentaiganaLetterRaDash2),
+            '𛃯' => Ok(KanaSupplement::HentaiganaLetterRaDash3),
+            '𛃰' => Ok(KanaSupplement::HentaiganaLetterRaDash4),
+            '𛃱' => Ok(KanaSupplement::HentaiganaLetterRiDash1),
+            '𛃲' => Ok(KanaSupplement::HentaiganaLetterRiDash2),
+            '𛃳' => Ok(KanaSupplement::HentaiganaLetterRiDash3),
+            '𛃴' => Ok(KanaSupplement::HentaiganaLetterRiDash4),
+            '𛃵' => Ok(KanaSupplement::HentaiganaLetterRiDash5),
+            '𛃶' => Ok(KanaSupplement::HentaiganaLetterRiDash6),
+            '𛃷' => Ok(KanaSupplement::HentaiganaLetterRiDash7),
+            '𛃸' => Ok(KanaSupplement::HentaiganaLetterRuDash1),
+            '𛃹' => Ok(KanaSupplement::HentaiganaLetterRuDash2),
+            '𛃺' => Ok(KanaSupplement::HentaiganaLetterRuDash3),
+            '𛃻' => Ok(KanaSupplement::HentaiganaLetterRuDash4),
+            '𛃼' => Ok(KanaSupplement::HentaiganaLetterRuDash5),
+            '𛃽' => Ok(KanaSupplement::HentaiganaLetterRuDash6),
+            '𛃾' => Ok(KanaSupplement::HentaiganaLetterReDash1),
             _ => Err(()),
         }
     }

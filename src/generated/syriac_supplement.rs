@@ -1,28 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{860}: 'ࡠ'
-    pub const SYRIAC_LETTER_MALAYALAM_NGA: char = 'ࡠ';
-    /// \u{861}: 'ࡡ'
-    pub const SYRIAC_LETTER_MALAYALAM_JA: char = 'ࡡ';
-    /// \u{862}: 'ࡢ'
-    pub const SYRIAC_LETTER_MALAYALAM_NYA: char = 'ࡢ';
-    /// \u{863}: 'ࡣ'
-    pub const SYRIAC_LETTER_MALAYALAM_TTA: char = 'ࡣ';
-    /// \u{864}: 'ࡤ'
-    pub const SYRIAC_LETTER_MALAYALAM_NNA: char = 'ࡤ';
-    /// \u{865}: 'ࡥ'
-    pub const SYRIAC_LETTER_MALAYALAM_NNNA: char = 'ࡥ';
-    /// \u{866}: 'ࡦ'
-    pub const SYRIAC_LETTER_MALAYALAM_BHA: char = 'ࡦ';
-    /// \u{867}: 'ࡧ'
-    pub const SYRIAC_LETTER_MALAYALAM_RA: char = 'ࡧ';
-    /// \u{868}: 'ࡨ'
-    pub const SYRIAC_LETTER_MALAYALAM_LLA: char = 'ࡨ';
-    /// \u{869}: 'ࡩ'
-    pub const SYRIAC_LETTER_MALAYALAM_LLLA: char = 'ࡩ';
-    /// \u{86a}: 'ࡪ'
-    pub const SYRIAC_LETTER_MALAYALAM_SSA: char = 'ࡪ';
-}
 
 /// An enum to represent all characters in the SyriacSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -53,19 +28,18 @@ pub enum SyriacSupplement {
 
 impl Into<char> for SyriacSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SyriacSupplement::SyriacLetterMalayalamNga => SYRIAC_LETTER_MALAYALAM_NGA,
-            SyriacSupplement::SyriacLetterMalayalamJa => SYRIAC_LETTER_MALAYALAM_JA,
-            SyriacSupplement::SyriacLetterMalayalamNya => SYRIAC_LETTER_MALAYALAM_NYA,
-            SyriacSupplement::SyriacLetterMalayalamTta => SYRIAC_LETTER_MALAYALAM_TTA,
-            SyriacSupplement::SyriacLetterMalayalamNna => SYRIAC_LETTER_MALAYALAM_NNA,
-            SyriacSupplement::SyriacLetterMalayalamNnna => SYRIAC_LETTER_MALAYALAM_NNNA,
-            SyriacSupplement::SyriacLetterMalayalamBha => SYRIAC_LETTER_MALAYALAM_BHA,
-            SyriacSupplement::SyriacLetterMalayalamRa => SYRIAC_LETTER_MALAYALAM_RA,
-            SyriacSupplement::SyriacLetterMalayalamLla => SYRIAC_LETTER_MALAYALAM_LLA,
-            SyriacSupplement::SyriacLetterMalayalamLlla => SYRIAC_LETTER_MALAYALAM_LLLA,
-            SyriacSupplement::SyriacLetterMalayalamSsa => SYRIAC_LETTER_MALAYALAM_SSA,
+            SyriacSupplement::SyriacLetterMalayalamNga => 'ࡠ',
+            SyriacSupplement::SyriacLetterMalayalamJa => 'ࡡ',
+            SyriacSupplement::SyriacLetterMalayalamNya => 'ࡢ',
+            SyriacSupplement::SyriacLetterMalayalamTta => 'ࡣ',
+            SyriacSupplement::SyriacLetterMalayalamNna => 'ࡤ',
+            SyriacSupplement::SyriacLetterMalayalamNnna => 'ࡥ',
+            SyriacSupplement::SyriacLetterMalayalamBha => 'ࡦ',
+            SyriacSupplement::SyriacLetterMalayalamRa => 'ࡧ',
+            SyriacSupplement::SyriacLetterMalayalamLla => 'ࡨ',
+            SyriacSupplement::SyriacLetterMalayalamLlla => 'ࡩ',
+            SyriacSupplement::SyriacLetterMalayalamSsa => 'ࡪ',
         }
     }
 }
@@ -73,19 +47,18 @@ impl Into<char> for SyriacSupplement {
 impl std::convert::TryFrom<char> for SyriacSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SYRIAC_LETTER_MALAYALAM_NGA => Ok(SyriacSupplement::SyriacLetterMalayalamNga),
-            SYRIAC_LETTER_MALAYALAM_JA => Ok(SyriacSupplement::SyriacLetterMalayalamJa),
-            SYRIAC_LETTER_MALAYALAM_NYA => Ok(SyriacSupplement::SyriacLetterMalayalamNya),
-            SYRIAC_LETTER_MALAYALAM_TTA => Ok(SyriacSupplement::SyriacLetterMalayalamTta),
-            SYRIAC_LETTER_MALAYALAM_NNA => Ok(SyriacSupplement::SyriacLetterMalayalamNna),
-            SYRIAC_LETTER_MALAYALAM_NNNA => Ok(SyriacSupplement::SyriacLetterMalayalamNnna),
-            SYRIAC_LETTER_MALAYALAM_BHA => Ok(SyriacSupplement::SyriacLetterMalayalamBha),
-            SYRIAC_LETTER_MALAYALAM_RA => Ok(SyriacSupplement::SyriacLetterMalayalamRa),
-            SYRIAC_LETTER_MALAYALAM_LLA => Ok(SyriacSupplement::SyriacLetterMalayalamLla),
-            SYRIAC_LETTER_MALAYALAM_LLLA => Ok(SyriacSupplement::SyriacLetterMalayalamLlla),
-            SYRIAC_LETTER_MALAYALAM_SSA => Ok(SyriacSupplement::SyriacLetterMalayalamSsa),
+            'ࡠ' => Ok(SyriacSupplement::SyriacLetterMalayalamNga),
+            'ࡡ' => Ok(SyriacSupplement::SyriacLetterMalayalamJa),
+            'ࡢ' => Ok(SyriacSupplement::SyriacLetterMalayalamNya),
+            'ࡣ' => Ok(SyriacSupplement::SyriacLetterMalayalamTta),
+            'ࡤ' => Ok(SyriacSupplement::SyriacLetterMalayalamNna),
+            'ࡥ' => Ok(SyriacSupplement::SyriacLetterMalayalamNnna),
+            'ࡦ' => Ok(SyriacSupplement::SyriacLetterMalayalamBha),
+            'ࡧ' => Ok(SyriacSupplement::SyriacLetterMalayalamRa),
+            'ࡨ' => Ok(SyriacSupplement::SyriacLetterMalayalamLla),
+            'ࡩ' => Ok(SyriacSupplement::SyriacLetterMalayalamLlla),
+            'ࡪ' => Ok(SyriacSupplement::SyriacLetterMalayalamSsa),
             _ => Err(()),
         }
     }

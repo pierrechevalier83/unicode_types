@@ -1,30 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2ff0}: '⿰'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_LEFT_TO_RIGHT: char = '⿰';
-    /// \u{2ff1}: '⿱'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_ABOVE_TO_BELOW: char = '⿱';
-    /// \u{2ff2}: '⿲'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_LEFT_TO_MIDDLE_AND_RIGHT: char = '⿲';
-    /// \u{2ff3}: '⿳'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_ABOVE_TO_MIDDLE_AND_BELOW: char = '⿳';
-    /// \u{2ff4}: '⿴'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_FULL_SURROUND: char = '⿴';
-    /// \u{2ff5}: '⿵'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_ABOVE: char = '⿵';
-    /// \u{2ff6}: '⿶'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_BELOW: char = '⿶';
-    /// \u{2ff7}: '⿷'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_LEFT: char = '⿷';
-    /// \u{2ff8}: '⿸'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_UPPER_LEFT: char = '⿸';
-    /// \u{2ff9}: '⿹'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_UPPER_RIGHT: char = '⿹';
-    /// \u{2ffa}: '⿺'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_LOWER_LEFT: char = '⿺';
-    /// \u{2ffb}: '⿻'
-    pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_OVERLAID: char = '⿻';
-}
 
 /// An enum to represent all characters in the IdeographicDescriptionCharacters block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -57,20 +30,19 @@ pub enum IdeographicDescriptionCharacters {
 
 impl Into<char> for IdeographicDescriptionCharacters {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToRight => IDEOGRAPHIC_DESCRIPTION_CHARACTER_LEFT_TO_RIGHT,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToBelow => IDEOGRAPHIC_DESCRIPTION_CHARACTER_ABOVE_TO_BELOW,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToMiddleAndRight => IDEOGRAPHIC_DESCRIPTION_CHARACTER_LEFT_TO_MIDDLE_AND_RIGHT,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToMiddleAndBelow => IDEOGRAPHIC_DESCRIPTION_CHARACTER_ABOVE_TO_MIDDLE_AND_BELOW,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterFullSurround => IDEOGRAPHIC_DESCRIPTION_CHARACTER_FULL_SURROUND,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromAbove => IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_ABOVE,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromBelow => IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_BELOW,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLeft => IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_LEFT,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperLeft => IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_UPPER_LEFT,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperRight => IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_UPPER_RIGHT,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLowerLeft => IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_LOWER_LEFT,
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterOverlaid => IDEOGRAPHIC_DESCRIPTION_CHARACTER_OVERLAID,
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToRight => '⿰',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToBelow => '⿱',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToMiddleAndRight => '⿲',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToMiddleAndBelow => '⿳',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterFullSurround => '⿴',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromAbove => '⿵',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromBelow => '⿶',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLeft => '⿷',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperLeft => '⿸',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperRight => '⿹',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLowerLeft => '⿺',
+            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterOverlaid => '⿻',
         }
     }
 }
@@ -78,20 +50,19 @@ impl Into<char> for IdeographicDescriptionCharacters {
 impl std::convert::TryFrom<char> for IdeographicDescriptionCharacters {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_LEFT_TO_RIGHT => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToRight),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_ABOVE_TO_BELOW => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToBelow),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_LEFT_TO_MIDDLE_AND_RIGHT => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToMiddleAndRight),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_ABOVE_TO_MIDDLE_AND_BELOW => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToMiddleAndBelow),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_FULL_SURROUND => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterFullSurround),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_ABOVE => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromAbove),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_BELOW => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromBelow),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_LEFT => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLeft),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_UPPER_LEFT => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperLeft),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_UPPER_RIGHT => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperRight),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_SURROUND_FROM_LOWER_LEFT => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLowerLeft),
-            IDEOGRAPHIC_DESCRIPTION_CHARACTER_OVERLAID => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterOverlaid),
+            '⿰' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToRight),
+            '⿱' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToBelow),
+            '⿲' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToMiddleAndRight),
+            '⿳' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToMiddleAndBelow),
+            '⿴' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterFullSurround),
+            '⿵' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromAbove),
+            '⿶' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromBelow),
+            '⿷' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLeft),
+            '⿸' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperLeft),
+            '⿹' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperRight),
+            '⿺' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLowerLeft),
+            '⿻' => Ok(IdeographicDescriptionCharacters::IdeographicDescriptionCharacterOverlaid),
             _ => Err(()),
         }
     }

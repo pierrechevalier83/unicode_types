@@ -1,128 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1ed01}: '𞴁'
-    pub const OTTOMAN_SIYAQ_NUMBER_ONE: char = '𞴁';
-    /// \u{1ed02}: '𞴂'
-    pub const OTTOMAN_SIYAQ_NUMBER_TWO: char = '𞴂';
-    /// \u{1ed03}: '𞴃'
-    pub const OTTOMAN_SIYAQ_NUMBER_THREE: char = '𞴃';
-    /// \u{1ed04}: '𞴄'
-    pub const OTTOMAN_SIYAQ_NUMBER_FOUR: char = '𞴄';
-    /// \u{1ed05}: '𞴅'
-    pub const OTTOMAN_SIYAQ_NUMBER_FIVE: char = '𞴅';
-    /// \u{1ed06}: '𞴆'
-    pub const OTTOMAN_SIYAQ_NUMBER_SIX: char = '𞴆';
-    /// \u{1ed07}: '𞴇'
-    pub const OTTOMAN_SIYAQ_NUMBER_SEVEN: char = '𞴇';
-    /// \u{1ed08}: '𞴈'
-    pub const OTTOMAN_SIYAQ_NUMBER_EIGHT: char = '𞴈';
-    /// \u{1ed09}: '𞴉'
-    pub const OTTOMAN_SIYAQ_NUMBER_NINE: char = '𞴉';
-    /// \u{1ed0a}: '𞴊'
-    pub const OTTOMAN_SIYAQ_NUMBER_TEN: char = '𞴊';
-    /// \u{1ed0b}: '𞴋'
-    pub const OTTOMAN_SIYAQ_NUMBER_TWENTY: char = '𞴋';
-    /// \u{1ed0c}: '𞴌'
-    pub const OTTOMAN_SIYAQ_NUMBER_THIRTY: char = '𞴌';
-    /// \u{1ed0d}: '𞴍'
-    pub const OTTOMAN_SIYAQ_NUMBER_FORTY: char = '𞴍';
-    /// \u{1ed0e}: '𞴎'
-    pub const OTTOMAN_SIYAQ_NUMBER_FIFTY: char = '𞴎';
-    /// \u{1ed0f}: '𞴏'
-    pub const OTTOMAN_SIYAQ_NUMBER_SIXTY: char = '𞴏';
-    /// \u{1ed10}: '𞴐'
-    pub const OTTOMAN_SIYAQ_NUMBER_SEVENTY: char = '𞴐';
-    /// \u{1ed11}: '𞴑'
-    pub const OTTOMAN_SIYAQ_NUMBER_EIGHTY: char = '𞴑';
-    /// \u{1ed12}: '𞴒'
-    pub const OTTOMAN_SIYAQ_NUMBER_NINETY: char = '𞴒';
-    /// \u{1ed13}: '𞴓'
-    pub const OTTOMAN_SIYAQ_NUMBER_ONE_HUNDRED: char = '𞴓';
-    /// \u{1ed14}: '𞴔'
-    pub const OTTOMAN_SIYAQ_NUMBER_TWO_HUNDRED: char = '𞴔';
-    /// \u{1ed15}: '𞴕'
-    pub const OTTOMAN_SIYAQ_NUMBER_THREE_HUNDRED: char = '𞴕';
-    /// \u{1ed16}: '𞴖'
-    pub const OTTOMAN_SIYAQ_NUMBER_FOUR_HUNDRED: char = '𞴖';
-    /// \u{1ed17}: '𞴗'
-    pub const OTTOMAN_SIYAQ_NUMBER_FIVE_HUNDRED: char = '𞴗';
-    /// \u{1ed18}: '𞴘'
-    pub const OTTOMAN_SIYAQ_NUMBER_SIX_HUNDRED: char = '𞴘';
-    /// \u{1ed19}: '𞴙'
-    pub const OTTOMAN_SIYAQ_NUMBER_SEVEN_HUNDRED: char = '𞴙';
-    /// \u{1ed1a}: '𞴚'
-    pub const OTTOMAN_SIYAQ_NUMBER_EIGHT_HUNDRED: char = '𞴚';
-    /// \u{1ed1b}: '𞴛'
-    pub const OTTOMAN_SIYAQ_NUMBER_NINE_HUNDRED: char = '𞴛';
-    /// \u{1ed1c}: '𞴜'
-    pub const OTTOMAN_SIYAQ_NUMBER_ONE_THOUSAND: char = '𞴜';
-    /// \u{1ed1d}: '𞴝'
-    pub const OTTOMAN_SIYAQ_NUMBER_TWO_THOUSAND: char = '𞴝';
-    /// \u{1ed1e}: '𞴞'
-    pub const OTTOMAN_SIYAQ_NUMBER_THREE_THOUSAND: char = '𞴞';
-    /// \u{1ed1f}: '𞴟'
-    pub const OTTOMAN_SIYAQ_NUMBER_FOUR_THOUSAND: char = '𞴟';
-    /// \u{1ed20}: '𞴠'
-    pub const OTTOMAN_SIYAQ_NUMBER_FIVE_THOUSAND: char = '𞴠';
-    /// \u{1ed21}: '𞴡'
-    pub const OTTOMAN_SIYAQ_NUMBER_SIX_THOUSAND: char = '𞴡';
-    /// \u{1ed22}: '𞴢'
-    pub const OTTOMAN_SIYAQ_NUMBER_SEVEN_THOUSAND: char = '𞴢';
-    /// \u{1ed23}: '𞴣'
-    pub const OTTOMAN_SIYAQ_NUMBER_EIGHT_THOUSAND: char = '𞴣';
-    /// \u{1ed24}: '𞴤'
-    pub const OTTOMAN_SIYAQ_NUMBER_NINE_THOUSAND: char = '𞴤';
-    /// \u{1ed25}: '𞴥'
-    pub const OTTOMAN_SIYAQ_NUMBER_TEN_THOUSAND: char = '𞴥';
-    /// \u{1ed26}: '𞴦'
-    pub const OTTOMAN_SIYAQ_NUMBER_TWENTY_THOUSAND: char = '𞴦';
-    /// \u{1ed27}: '𞴧'
-    pub const OTTOMAN_SIYAQ_NUMBER_THIRTY_THOUSAND: char = '𞴧';
-    /// \u{1ed28}: '𞴨'
-    pub const OTTOMAN_SIYAQ_NUMBER_FORTY_THOUSAND: char = '𞴨';
-    /// \u{1ed29}: '𞴩'
-    pub const OTTOMAN_SIYAQ_NUMBER_FIFTY_THOUSAND: char = '𞴩';
-    /// \u{1ed2a}: '𞴪'
-    pub const OTTOMAN_SIYAQ_NUMBER_SIXTY_THOUSAND: char = '𞴪';
-    /// \u{1ed2b}: '𞴫'
-    pub const OTTOMAN_SIYAQ_NUMBER_SEVENTY_THOUSAND: char = '𞴫';
-    /// \u{1ed2c}: '𞴬'
-    pub const OTTOMAN_SIYAQ_NUMBER_EIGHTY_THOUSAND: char = '𞴬';
-    /// \u{1ed2d}: '𞴭'
-    pub const OTTOMAN_SIYAQ_NUMBER_NINETY_THOUSAND: char = '𞴭';
-    /// \u{1ed2e}: '𞴮'
-    pub const OTTOMAN_SIYAQ_MARRATAN: char = '𞴮';
-    /// \u{1ed2f}: '𞴯'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TWO: char = '𞴯';
-    /// \u{1ed30}: '𞴰'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_THREE: char = '𞴰';
-    /// \u{1ed31}: '𞴱'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_FOUR: char = '𞴱';
-    /// \u{1ed32}: '𞴲'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_FIVE: char = '𞴲';
-    /// \u{1ed33}: '𞴳'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_SIX: char = '𞴳';
-    /// \u{1ed34}: '𞴴'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_SEVEN: char = '𞴴';
-    /// \u{1ed35}: '𞴵'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_EIGHT: char = '𞴵';
-    /// \u{1ed36}: '𞴶'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_NINE: char = '𞴶';
-    /// \u{1ed37}: '𞴷'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TEN: char = '𞴷';
-    /// \u{1ed38}: '𞴸'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_FOUR_HUNDRED: char = '𞴸';
-    /// \u{1ed39}: '𞴹'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_SIX_HUNDRED: char = '𞴹';
-    /// \u{1ed3a}: '𞴺'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TWO_THOUSAND: char = '𞴺';
-    /// \u{1ed3b}: '𞴻'
-    pub const OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TEN_THOUSAND: char = '𞴻';
-    /// \u{1ed3c}: '𞴼'
-    pub const OTTOMAN_SIYAQ_FRACTION_ONE_HALF: char = '𞴼';
-    /// \u{1ed3d}: '𞴽'
-    pub const OTTOMAN_SIYAQ_FRACTION_ONE_SIXTH: char = '𞴽';
-}
 
 /// An enum to represent all characters in the OttomanSiyaqNumbers block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -253,69 +128,68 @@ pub enum OttomanSiyaqNumbers {
 
 impl Into<char> for OttomanSiyaqNumbers {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            OttomanSiyaqNumbers::OttomanSiyaqNumberOne => OTTOMAN_SIYAQ_NUMBER_ONE,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberTwo => OTTOMAN_SIYAQ_NUMBER_TWO,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberThree => OTTOMAN_SIYAQ_NUMBER_THREE,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberFour => OTTOMAN_SIYAQ_NUMBER_FOUR,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberFive => OTTOMAN_SIYAQ_NUMBER_FIVE,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSix => OTTOMAN_SIYAQ_NUMBER_SIX,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSeven => OTTOMAN_SIYAQ_NUMBER_SEVEN,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberEight => OTTOMAN_SIYAQ_NUMBER_EIGHT,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberNine => OTTOMAN_SIYAQ_NUMBER_NINE,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberTen => OTTOMAN_SIYAQ_NUMBER_TEN,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberTwenty => OTTOMAN_SIYAQ_NUMBER_TWENTY,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberThirty => OTTOMAN_SIYAQ_NUMBER_THIRTY,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberForty => OTTOMAN_SIYAQ_NUMBER_FORTY,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberFifty => OTTOMAN_SIYAQ_NUMBER_FIFTY,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSixty => OTTOMAN_SIYAQ_NUMBER_SIXTY,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSeventy => OTTOMAN_SIYAQ_NUMBER_SEVENTY,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberEighty => OTTOMAN_SIYAQ_NUMBER_EIGHTY,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberNinety => OTTOMAN_SIYAQ_NUMBER_NINETY,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberOneHundred => OTTOMAN_SIYAQ_NUMBER_ONE_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberTwoHundred => OTTOMAN_SIYAQ_NUMBER_TWO_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberThreeHundred => OTTOMAN_SIYAQ_NUMBER_THREE_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberFourHundred => OTTOMAN_SIYAQ_NUMBER_FOUR_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberFiveHundred => OTTOMAN_SIYAQ_NUMBER_FIVE_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSixHundred => OTTOMAN_SIYAQ_NUMBER_SIX_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSevenHundred => OTTOMAN_SIYAQ_NUMBER_SEVEN_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberEightHundred => OTTOMAN_SIYAQ_NUMBER_EIGHT_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberNineHundred => OTTOMAN_SIYAQ_NUMBER_NINE_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberOneThousand => OTTOMAN_SIYAQ_NUMBER_ONE_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberTwoThousand => OTTOMAN_SIYAQ_NUMBER_TWO_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberThreeThousand => OTTOMAN_SIYAQ_NUMBER_THREE_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberFourThousand => OTTOMAN_SIYAQ_NUMBER_FOUR_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberFiveThousand => OTTOMAN_SIYAQ_NUMBER_FIVE_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSixThousand => OTTOMAN_SIYAQ_NUMBER_SIX_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSevenThousand => OTTOMAN_SIYAQ_NUMBER_SEVEN_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberEightThousand => OTTOMAN_SIYAQ_NUMBER_EIGHT_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberNineThousand => OTTOMAN_SIYAQ_NUMBER_NINE_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberTenThousand => OTTOMAN_SIYAQ_NUMBER_TEN_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberTwentyThousand => OTTOMAN_SIYAQ_NUMBER_TWENTY_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberThirtyThousand => OTTOMAN_SIYAQ_NUMBER_THIRTY_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberFortyThousand => OTTOMAN_SIYAQ_NUMBER_FORTY_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberFiftyThousand => OTTOMAN_SIYAQ_NUMBER_FIFTY_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSixtyThousand => OTTOMAN_SIYAQ_NUMBER_SIXTY_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberSeventyThousand => OTTOMAN_SIYAQ_NUMBER_SEVENTY_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberEightyThousand => OTTOMAN_SIYAQ_NUMBER_EIGHTY_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqNumberNinetyThousand => OTTOMAN_SIYAQ_NUMBER_NINETY_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqMarratan => OTTOMAN_SIYAQ_MARRATAN,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTwo => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TWO,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberThree => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_THREE,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFour => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_FOUR,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFive => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_FIVE,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSix => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_SIX,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSeven => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_SEVEN,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberEight => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_EIGHT,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberNine => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_NINE,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTen => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TEN,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFourHundred => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_FOUR_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSixHundred => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_SIX_HUNDRED,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTwoThousand => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TWO_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTenThousand => OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TEN_THOUSAND,
-            OttomanSiyaqNumbers::OttomanSiyaqFractionOneHalf => OTTOMAN_SIYAQ_FRACTION_ONE_HALF,
-            OttomanSiyaqNumbers::OttomanSiyaqFractionOneSixth => OTTOMAN_SIYAQ_FRACTION_ONE_SIXTH,
+            OttomanSiyaqNumbers::OttomanSiyaqNumberOne => '𞴁',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberTwo => '𞴂',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberThree => '𞴃',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberFour => '𞴄',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberFive => '𞴅',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSix => '𞴆',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSeven => '𞴇',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberEight => '𞴈',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberNine => '𞴉',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberTen => '𞴊',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberTwenty => '𞴋',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberThirty => '𞴌',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberForty => '𞴍',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberFifty => '𞴎',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSixty => '𞴏',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSeventy => '𞴐',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberEighty => '𞴑',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberNinety => '𞴒',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberOneHundred => '𞴓',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberTwoHundred => '𞴔',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberThreeHundred => '𞴕',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberFourHundred => '𞴖',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberFiveHundred => '𞴗',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSixHundred => '𞴘',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSevenHundred => '𞴙',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberEightHundred => '𞴚',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberNineHundred => '𞴛',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberOneThousand => '𞴜',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberTwoThousand => '𞴝',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberThreeThousand => '𞴞',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberFourThousand => '𞴟',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberFiveThousand => '𞴠',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSixThousand => '𞴡',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSevenThousand => '𞴢',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberEightThousand => '𞴣',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberNineThousand => '𞴤',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberTenThousand => '𞴥',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberTwentyThousand => '𞴦',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberThirtyThousand => '𞴧',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberFortyThousand => '𞴨',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberFiftyThousand => '𞴩',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSixtyThousand => '𞴪',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberSeventyThousand => '𞴫',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberEightyThousand => '𞴬',
+            OttomanSiyaqNumbers::OttomanSiyaqNumberNinetyThousand => '𞴭',
+            OttomanSiyaqNumbers::OttomanSiyaqMarratan => '𞴮',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTwo => '𞴯',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberThree => '𞴰',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFour => '𞴱',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFive => '𞴲',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSix => '𞴳',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSeven => '𞴴',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberEight => '𞴵',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberNine => '𞴶',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTen => '𞴷',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFourHundred => '𞴸',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSixHundred => '𞴹',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTwoThousand => '𞴺',
+            OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTenThousand => '𞴻',
+            OttomanSiyaqNumbers::OttomanSiyaqFractionOneHalf => '𞴼',
+            OttomanSiyaqNumbers::OttomanSiyaqFractionOneSixth => '𞴽',
         }
     }
 }
@@ -323,69 +197,68 @@ impl Into<char> for OttomanSiyaqNumbers {
 impl std::convert::TryFrom<char> for OttomanSiyaqNumbers {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            OTTOMAN_SIYAQ_NUMBER_ONE => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberOne),
-            OTTOMAN_SIYAQ_NUMBER_TWO => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwo),
-            OTTOMAN_SIYAQ_NUMBER_THREE => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThree),
-            OTTOMAN_SIYAQ_NUMBER_FOUR => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFour),
-            OTTOMAN_SIYAQ_NUMBER_FIVE => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFive),
-            OTTOMAN_SIYAQ_NUMBER_SIX => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSix),
-            OTTOMAN_SIYAQ_NUMBER_SEVEN => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSeven),
-            OTTOMAN_SIYAQ_NUMBER_EIGHT => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEight),
-            OTTOMAN_SIYAQ_NUMBER_NINE => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNine),
-            OTTOMAN_SIYAQ_NUMBER_TEN => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTen),
-            OTTOMAN_SIYAQ_NUMBER_TWENTY => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwenty),
-            OTTOMAN_SIYAQ_NUMBER_THIRTY => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThirty),
-            OTTOMAN_SIYAQ_NUMBER_FORTY => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberForty),
-            OTTOMAN_SIYAQ_NUMBER_FIFTY => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFifty),
-            OTTOMAN_SIYAQ_NUMBER_SIXTY => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSixty),
-            OTTOMAN_SIYAQ_NUMBER_SEVENTY => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSeventy),
-            OTTOMAN_SIYAQ_NUMBER_EIGHTY => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEighty),
-            OTTOMAN_SIYAQ_NUMBER_NINETY => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNinety),
-            OTTOMAN_SIYAQ_NUMBER_ONE_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberOneHundred),
-            OTTOMAN_SIYAQ_NUMBER_TWO_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwoHundred),
-            OTTOMAN_SIYAQ_NUMBER_THREE_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThreeHundred),
-            OTTOMAN_SIYAQ_NUMBER_FOUR_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFourHundred),
-            OTTOMAN_SIYAQ_NUMBER_FIVE_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFiveHundred),
-            OTTOMAN_SIYAQ_NUMBER_SIX_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSixHundred),
-            OTTOMAN_SIYAQ_NUMBER_SEVEN_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSevenHundred),
-            OTTOMAN_SIYAQ_NUMBER_EIGHT_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEightHundred),
-            OTTOMAN_SIYAQ_NUMBER_NINE_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNineHundred),
-            OTTOMAN_SIYAQ_NUMBER_ONE_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberOneThousand),
-            OTTOMAN_SIYAQ_NUMBER_TWO_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwoThousand),
-            OTTOMAN_SIYAQ_NUMBER_THREE_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThreeThousand),
-            OTTOMAN_SIYAQ_NUMBER_FOUR_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFourThousand),
-            OTTOMAN_SIYAQ_NUMBER_FIVE_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFiveThousand),
-            OTTOMAN_SIYAQ_NUMBER_SIX_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSixThousand),
-            OTTOMAN_SIYAQ_NUMBER_SEVEN_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSevenThousand),
-            OTTOMAN_SIYAQ_NUMBER_EIGHT_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEightThousand),
-            OTTOMAN_SIYAQ_NUMBER_NINE_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNineThousand),
-            OTTOMAN_SIYAQ_NUMBER_TEN_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTenThousand),
-            OTTOMAN_SIYAQ_NUMBER_TWENTY_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwentyThousand),
-            OTTOMAN_SIYAQ_NUMBER_THIRTY_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThirtyThousand),
-            OTTOMAN_SIYAQ_NUMBER_FORTY_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFortyThousand),
-            OTTOMAN_SIYAQ_NUMBER_FIFTY_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFiftyThousand),
-            OTTOMAN_SIYAQ_NUMBER_SIXTY_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSixtyThousand),
-            OTTOMAN_SIYAQ_NUMBER_SEVENTY_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSeventyThousand),
-            OTTOMAN_SIYAQ_NUMBER_EIGHTY_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEightyThousand),
-            OTTOMAN_SIYAQ_NUMBER_NINETY_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNinetyThousand),
-            OTTOMAN_SIYAQ_MARRATAN => Ok(OttomanSiyaqNumbers::OttomanSiyaqMarratan),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TWO => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTwo),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_THREE => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberThree),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_FOUR => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFour),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_FIVE => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFive),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_SIX => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSix),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_SEVEN => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSeven),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_EIGHT => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberEight),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_NINE => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberNine),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TEN => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTen),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_FOUR_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFourHundred),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_SIX_HUNDRED => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSixHundred),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TWO_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTwoThousand),
-            OTTOMAN_SIYAQ_ALTERNATE_NUMBER_TEN_THOUSAND => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTenThousand),
-            OTTOMAN_SIYAQ_FRACTION_ONE_HALF => Ok(OttomanSiyaqNumbers::OttomanSiyaqFractionOneHalf),
-            OTTOMAN_SIYAQ_FRACTION_ONE_SIXTH => Ok(OttomanSiyaqNumbers::OttomanSiyaqFractionOneSixth),
+            '𞴁' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberOne),
+            '𞴂' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwo),
+            '𞴃' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThree),
+            '𞴄' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFour),
+            '𞴅' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFive),
+            '𞴆' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSix),
+            '𞴇' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSeven),
+            '𞴈' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEight),
+            '𞴉' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNine),
+            '𞴊' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTen),
+            '𞴋' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwenty),
+            '𞴌' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThirty),
+            '𞴍' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberForty),
+            '𞴎' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFifty),
+            '𞴏' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSixty),
+            '𞴐' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSeventy),
+            '𞴑' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEighty),
+            '𞴒' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNinety),
+            '𞴓' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberOneHundred),
+            '𞴔' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwoHundred),
+            '𞴕' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThreeHundred),
+            '𞴖' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFourHundred),
+            '𞴗' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFiveHundred),
+            '𞴘' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSixHundred),
+            '𞴙' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSevenHundred),
+            '𞴚' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEightHundred),
+            '𞴛' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNineHundred),
+            '𞴜' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberOneThousand),
+            '𞴝' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwoThousand),
+            '𞴞' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThreeThousand),
+            '𞴟' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFourThousand),
+            '𞴠' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFiveThousand),
+            '𞴡' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSixThousand),
+            '𞴢' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSevenThousand),
+            '𞴣' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEightThousand),
+            '𞴤' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNineThousand),
+            '𞴥' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTenThousand),
+            '𞴦' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberTwentyThousand),
+            '𞴧' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberThirtyThousand),
+            '𞴨' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFortyThousand),
+            '𞴩' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberFiftyThousand),
+            '𞴪' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSixtyThousand),
+            '𞴫' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberSeventyThousand),
+            '𞴬' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberEightyThousand),
+            '𞴭' => Ok(OttomanSiyaqNumbers::OttomanSiyaqNumberNinetyThousand),
+            '𞴮' => Ok(OttomanSiyaqNumbers::OttomanSiyaqMarratan),
+            '𞴯' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTwo),
+            '𞴰' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberThree),
+            '𞴱' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFour),
+            '𞴲' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFive),
+            '𞴳' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSix),
+            '𞴴' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSeven),
+            '𞴵' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberEight),
+            '𞴶' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberNine),
+            '𞴷' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTen),
+            '𞴸' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberFourHundred),
+            '𞴹' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberSixHundred),
+            '𞴺' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTwoThousand),
+            '𞴻' => Ok(OttomanSiyaqNumbers::OttomanSiyaqAlternateNumberTenThousand),
+            '𞴼' => Ok(OttomanSiyaqNumbers::OttomanSiyaqFractionOneHalf),
+            '𞴽' => Ok(OttomanSiyaqNumbers::OttomanSiyaqFractionOneSixth),
             _ => Err(()),
         }
     }

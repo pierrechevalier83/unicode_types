@@ -1,90 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{16a40}: '𖩀'
-    pub const LETTER_TA: char = '𖩀';
-    /// \u{16a41}: '𖩁'
-    pub const LETTER_NGI: char = '𖩁';
-    /// \u{16a42}: '𖩂'
-    pub const LETTER_YO: char = '𖩂';
-    /// \u{16a43}: '𖩃'
-    pub const LETTER_MIM: char = '𖩃';
-    /// \u{16a44}: '𖩄'
-    pub const LETTER_BA: char = '𖩄';
-    /// \u{16a45}: '𖩅'
-    pub const LETTER_DA: char = '𖩅';
-    /// \u{16a46}: '𖩆'
-    pub const LETTER_A: char = '𖩆';
-    /// \u{16a47}: '𖩇'
-    pub const LETTER_PHI: char = '𖩇';
-    /// \u{16a48}: '𖩈'
-    pub const LETTER_KHAI: char = '𖩈';
-    /// \u{16a49}: '𖩉'
-    pub const LETTER_HAO: char = '𖩉';
-    /// \u{16a4a}: '𖩊'
-    pub const LETTER_DAI: char = '𖩊';
-    /// \u{16a4b}: '𖩋'
-    pub const LETTER_CHU: char = '𖩋';
-    /// \u{16a4c}: '𖩌'
-    pub const LETTER_KEAAE: char = '𖩌';
-    /// \u{16a4d}: '𖩍'
-    pub const LETTER_OL: char = '𖩍';
-    /// \u{16a4e}: '𖩎'
-    pub const LETTER_MAEM: char = '𖩎';
-    /// \u{16a4f}: '𖩏'
-    pub const LETTER_NIN: char = '𖩏';
-    /// \u{16a50}: '𖩐'
-    pub const LETTER_PA: char = '𖩐';
-    /// \u{16a51}: '𖩑'
-    pub const LETTER_OO: char = '𖩑';
-    /// \u{16a52}: '𖩒'
-    pub const LETTER_O: char = '𖩒';
-    /// \u{16a53}: '𖩓'
-    pub const LETTER_RO: char = '𖩓';
-    /// \u{16a54}: '𖩔'
-    pub const LETTER_SHI: char = '𖩔';
-    /// \u{16a55}: '𖩕'
-    pub const LETTER_THEA: char = '𖩕';
-    /// \u{16a56}: '𖩖'
-    pub const LETTER_EA: char = '𖩖';
-    /// \u{16a57}: '𖩗'
-    pub const LETTER_WA: char = '𖩗';
-    /// \u{16a58}: '𖩘'
-    pub const LETTER_E: char = '𖩘';
-    /// \u{16a59}: '𖩙'
-    pub const LETTER_KO: char = '𖩙';
-    /// \u{16a5a}: '𖩚'
-    pub const LETTER_LAN: char = '𖩚';
-    /// \u{16a5b}: '𖩛'
-    pub const LETTER_LA: char = '𖩛';
-    /// \u{16a5c}: '𖩜'
-    pub const LETTER_HAI: char = '𖩜';
-    /// \u{16a5d}: '𖩝'
-    pub const LETTER_RI: char = '𖩝';
-    /// \u{16a5e}: '𖩞'
-    pub const LETTER_TEK: char = '𖩞';
-    /// \u{16a60}: '𖩠'
-    pub const DIGIT_ZERO: char = '𖩠';
-    /// \u{16a61}: '𖩡'
-    pub const DIGIT_ONE: char = '𖩡';
-    /// \u{16a62}: '𖩢'
-    pub const DIGIT_TWO: char = '𖩢';
-    /// \u{16a63}: '𖩣'
-    pub const DIGIT_THREE: char = '𖩣';
-    /// \u{16a64}: '𖩤'
-    pub const DIGIT_FOUR: char = '𖩤';
-    /// \u{16a65}: '𖩥'
-    pub const DIGIT_FIVE: char = '𖩥';
-    /// \u{16a66}: '𖩦'
-    pub const DIGIT_SIX: char = '𖩦';
-    /// \u{16a67}: '𖩧'
-    pub const DIGIT_SEVEN: char = '𖩧';
-    /// \u{16a68}: '𖩨'
-    pub const DIGIT_EIGHT: char = '𖩨';
-    /// \u{16a69}: '𖩩'
-    pub const DIGIT_NINE: char = '𖩩';
-    /// \u{16a6e}: '𖩮'
-    pub const DANDA: char = '𖩮';
-}
 
 /// An enum to represent all characters in the Mro block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -177,50 +90,49 @@ pub enum Mro {
 
 impl Into<char> for Mro {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Mro::LetterTa => LETTER_TA,
-            Mro::LetterNgi => LETTER_NGI,
-            Mro::LetterYo => LETTER_YO,
-            Mro::LetterMim => LETTER_MIM,
-            Mro::LetterBa => LETTER_BA,
-            Mro::LetterDa => LETTER_DA,
-            Mro::LetterA => LETTER_A,
-            Mro::LetterPhi => LETTER_PHI,
-            Mro::LetterKhai => LETTER_KHAI,
-            Mro::LetterHao => LETTER_HAO,
-            Mro::LetterDai => LETTER_DAI,
-            Mro::LetterChu => LETTER_CHU,
-            Mro::LetterKeaae => LETTER_KEAAE,
-            Mro::LetterOl => LETTER_OL,
-            Mro::LetterMaem => LETTER_MAEM,
-            Mro::LetterNin => LETTER_NIN,
-            Mro::LetterPa => LETTER_PA,
-            Mro::LetterOo => LETTER_OO,
-            Mro::LetterO => LETTER_O,
-            Mro::LetterRo => LETTER_RO,
-            Mro::LetterShi => LETTER_SHI,
-            Mro::LetterThea => LETTER_THEA,
-            Mro::LetterEa => LETTER_EA,
-            Mro::LetterWa => LETTER_WA,
-            Mro::LetterE => LETTER_E,
-            Mro::LetterKo => LETTER_KO,
-            Mro::LetterLan => LETTER_LAN,
-            Mro::LetterLa => LETTER_LA,
-            Mro::LetterHai => LETTER_HAI,
-            Mro::LetterRi => LETTER_RI,
-            Mro::LetterTek => LETTER_TEK,
-            Mro::DigitZero => DIGIT_ZERO,
-            Mro::DigitOne => DIGIT_ONE,
-            Mro::DigitTwo => DIGIT_TWO,
-            Mro::DigitThree => DIGIT_THREE,
-            Mro::DigitFour => DIGIT_FOUR,
-            Mro::DigitFive => DIGIT_FIVE,
-            Mro::DigitSix => DIGIT_SIX,
-            Mro::DigitSeven => DIGIT_SEVEN,
-            Mro::DigitEight => DIGIT_EIGHT,
-            Mro::DigitNine => DIGIT_NINE,
-            Mro::Danda => DANDA,
+            Mro::LetterTa => '𖩀',
+            Mro::LetterNgi => '𖩁',
+            Mro::LetterYo => '𖩂',
+            Mro::LetterMim => '𖩃',
+            Mro::LetterBa => '𖩄',
+            Mro::LetterDa => '𖩅',
+            Mro::LetterA => '𖩆',
+            Mro::LetterPhi => '𖩇',
+            Mro::LetterKhai => '𖩈',
+            Mro::LetterHao => '𖩉',
+            Mro::LetterDai => '𖩊',
+            Mro::LetterChu => '𖩋',
+            Mro::LetterKeaae => '𖩌',
+            Mro::LetterOl => '𖩍',
+            Mro::LetterMaem => '𖩎',
+            Mro::LetterNin => '𖩏',
+            Mro::LetterPa => '𖩐',
+            Mro::LetterOo => '𖩑',
+            Mro::LetterO => '𖩒',
+            Mro::LetterRo => '𖩓',
+            Mro::LetterShi => '𖩔',
+            Mro::LetterThea => '𖩕',
+            Mro::LetterEa => '𖩖',
+            Mro::LetterWa => '𖩗',
+            Mro::LetterE => '𖩘',
+            Mro::LetterKo => '𖩙',
+            Mro::LetterLan => '𖩚',
+            Mro::LetterLa => '𖩛',
+            Mro::LetterHai => '𖩜',
+            Mro::LetterRi => '𖩝',
+            Mro::LetterTek => '𖩞',
+            Mro::DigitZero => '𖩠',
+            Mro::DigitOne => '𖩡',
+            Mro::DigitTwo => '𖩢',
+            Mro::DigitThree => '𖩣',
+            Mro::DigitFour => '𖩤',
+            Mro::DigitFive => '𖩥',
+            Mro::DigitSix => '𖩦',
+            Mro::DigitSeven => '𖩧',
+            Mro::DigitEight => '𖩨',
+            Mro::DigitNine => '𖩩',
+            Mro::Danda => '𖩮',
         }
     }
 }
@@ -228,50 +140,49 @@ impl Into<char> for Mro {
 impl std::convert::TryFrom<char> for Mro {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_TA => Ok(Mro::LetterTa),
-            LETTER_NGI => Ok(Mro::LetterNgi),
-            LETTER_YO => Ok(Mro::LetterYo),
-            LETTER_MIM => Ok(Mro::LetterMim),
-            LETTER_BA => Ok(Mro::LetterBa),
-            LETTER_DA => Ok(Mro::LetterDa),
-            LETTER_A => Ok(Mro::LetterA),
-            LETTER_PHI => Ok(Mro::LetterPhi),
-            LETTER_KHAI => Ok(Mro::LetterKhai),
-            LETTER_HAO => Ok(Mro::LetterHao),
-            LETTER_DAI => Ok(Mro::LetterDai),
-            LETTER_CHU => Ok(Mro::LetterChu),
-            LETTER_KEAAE => Ok(Mro::LetterKeaae),
-            LETTER_OL => Ok(Mro::LetterOl),
-            LETTER_MAEM => Ok(Mro::LetterMaem),
-            LETTER_NIN => Ok(Mro::LetterNin),
-            LETTER_PA => Ok(Mro::LetterPa),
-            LETTER_OO => Ok(Mro::LetterOo),
-            LETTER_O => Ok(Mro::LetterO),
-            LETTER_RO => Ok(Mro::LetterRo),
-            LETTER_SHI => Ok(Mro::LetterShi),
-            LETTER_THEA => Ok(Mro::LetterThea),
-            LETTER_EA => Ok(Mro::LetterEa),
-            LETTER_WA => Ok(Mro::LetterWa),
-            LETTER_E => Ok(Mro::LetterE),
-            LETTER_KO => Ok(Mro::LetterKo),
-            LETTER_LAN => Ok(Mro::LetterLan),
-            LETTER_LA => Ok(Mro::LetterLa),
-            LETTER_HAI => Ok(Mro::LetterHai),
-            LETTER_RI => Ok(Mro::LetterRi),
-            LETTER_TEK => Ok(Mro::LetterTek),
-            DIGIT_ZERO => Ok(Mro::DigitZero),
-            DIGIT_ONE => Ok(Mro::DigitOne),
-            DIGIT_TWO => Ok(Mro::DigitTwo),
-            DIGIT_THREE => Ok(Mro::DigitThree),
-            DIGIT_FOUR => Ok(Mro::DigitFour),
-            DIGIT_FIVE => Ok(Mro::DigitFive),
-            DIGIT_SIX => Ok(Mro::DigitSix),
-            DIGIT_SEVEN => Ok(Mro::DigitSeven),
-            DIGIT_EIGHT => Ok(Mro::DigitEight),
-            DIGIT_NINE => Ok(Mro::DigitNine),
-            DANDA => Ok(Mro::Danda),
+            '𖩀' => Ok(Mro::LetterTa),
+            '𖩁' => Ok(Mro::LetterNgi),
+            '𖩂' => Ok(Mro::LetterYo),
+            '𖩃' => Ok(Mro::LetterMim),
+            '𖩄' => Ok(Mro::LetterBa),
+            '𖩅' => Ok(Mro::LetterDa),
+            '𖩆' => Ok(Mro::LetterA),
+            '𖩇' => Ok(Mro::LetterPhi),
+            '𖩈' => Ok(Mro::LetterKhai),
+            '𖩉' => Ok(Mro::LetterHao),
+            '𖩊' => Ok(Mro::LetterDai),
+            '𖩋' => Ok(Mro::LetterChu),
+            '𖩌' => Ok(Mro::LetterKeaae),
+            '𖩍' => Ok(Mro::LetterOl),
+            '𖩎' => Ok(Mro::LetterMaem),
+            '𖩏' => Ok(Mro::LetterNin),
+            '𖩐' => Ok(Mro::LetterPa),
+            '𖩑' => Ok(Mro::LetterOo),
+            '𖩒' => Ok(Mro::LetterO),
+            '𖩓' => Ok(Mro::LetterRo),
+            '𖩔' => Ok(Mro::LetterShi),
+            '𖩕' => Ok(Mro::LetterThea),
+            '𖩖' => Ok(Mro::LetterEa),
+            '𖩗' => Ok(Mro::LetterWa),
+            '𖩘' => Ok(Mro::LetterE),
+            '𖩙' => Ok(Mro::LetterKo),
+            '𖩚' => Ok(Mro::LetterLan),
+            '𖩛' => Ok(Mro::LetterLa),
+            '𖩜' => Ok(Mro::LetterHai),
+            '𖩝' => Ok(Mro::LetterRi),
+            '𖩞' => Ok(Mro::LetterTek),
+            '𖩠' => Ok(Mro::DigitZero),
+            '𖩡' => Ok(Mro::DigitOne),
+            '𖩢' => Ok(Mro::DigitTwo),
+            '𖩣' => Ok(Mro::DigitThree),
+            '𖩤' => Ok(Mro::DigitFour),
+            '𖩥' => Ok(Mro::DigitFive),
+            '𖩦' => Ok(Mro::DigitSix),
+            '𖩧' => Ok(Mro::DigitSeven),
+            '𖩨' => Ok(Mro::DigitEight),
+            '𖩩' => Ok(Mro::DigitNine),
+            '𖩮' => Ok(Mro::Danda),
             _ => Err(()),
         }
     }

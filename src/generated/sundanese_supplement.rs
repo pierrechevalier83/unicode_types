@@ -1,22 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1cc0}: '᳀'
-    pub const SUNDANESE_PUNCTUATION_BINDU_SURYA: char = '᳀';
-    /// \u{1cc1}: '᳁'
-    pub const SUNDANESE_PUNCTUATION_BINDU_PANGLONG: char = '᳁';
-    /// \u{1cc2}: '᳂'
-    pub const SUNDANESE_PUNCTUATION_BINDU_PURNAMA: char = '᳂';
-    /// \u{1cc3}: '᳃'
-    pub const SUNDANESE_PUNCTUATION_BINDU_CAKRA: char = '᳃';
-    /// \u{1cc4}: '᳄'
-    pub const SUNDANESE_PUNCTUATION_BINDU_LEU_SATANGA: char = '᳄';
-    /// \u{1cc5}: '᳅'
-    pub const SUNDANESE_PUNCTUATION_BINDU_KA_SATANGA: char = '᳅';
-    /// \u{1cc6}: '᳆'
-    pub const SUNDANESE_PUNCTUATION_BINDU_DA_SATANGA: char = '᳆';
-    /// \u{1cc7}: '᳇'
-    pub const SUNDANESE_PUNCTUATION_BINDU_BA_SATANGA: char = '᳇';
-}
 
 /// An enum to represent all characters in the SundaneseSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -41,16 +22,15 @@ pub enum SundaneseSupplement {
 
 impl Into<char> for SundaneseSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SundaneseSupplement::SundanesePunctuationBinduSurya => SUNDANESE_PUNCTUATION_BINDU_SURYA,
-            SundaneseSupplement::SundanesePunctuationBinduPanglong => SUNDANESE_PUNCTUATION_BINDU_PANGLONG,
-            SundaneseSupplement::SundanesePunctuationBinduPurnama => SUNDANESE_PUNCTUATION_BINDU_PURNAMA,
-            SundaneseSupplement::SundanesePunctuationBinduCakra => SUNDANESE_PUNCTUATION_BINDU_CAKRA,
-            SundaneseSupplement::SundanesePunctuationBinduLeuSatanga => SUNDANESE_PUNCTUATION_BINDU_LEU_SATANGA,
-            SundaneseSupplement::SundanesePunctuationBinduKaSatanga => SUNDANESE_PUNCTUATION_BINDU_KA_SATANGA,
-            SundaneseSupplement::SundanesePunctuationBinduDaSatanga => SUNDANESE_PUNCTUATION_BINDU_DA_SATANGA,
-            SundaneseSupplement::SundanesePunctuationBinduBaSatanga => SUNDANESE_PUNCTUATION_BINDU_BA_SATANGA,
+            SundaneseSupplement::SundanesePunctuationBinduSurya => '᳀',
+            SundaneseSupplement::SundanesePunctuationBinduPanglong => '᳁',
+            SundaneseSupplement::SundanesePunctuationBinduPurnama => '᳂',
+            SundaneseSupplement::SundanesePunctuationBinduCakra => '᳃',
+            SundaneseSupplement::SundanesePunctuationBinduLeuSatanga => '᳄',
+            SundaneseSupplement::SundanesePunctuationBinduKaSatanga => '᳅',
+            SundaneseSupplement::SundanesePunctuationBinduDaSatanga => '᳆',
+            SundaneseSupplement::SundanesePunctuationBinduBaSatanga => '᳇',
         }
     }
 }
@@ -58,16 +38,15 @@ impl Into<char> for SundaneseSupplement {
 impl std::convert::TryFrom<char> for SundaneseSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SUNDANESE_PUNCTUATION_BINDU_SURYA => Ok(SundaneseSupplement::SundanesePunctuationBinduSurya),
-            SUNDANESE_PUNCTUATION_BINDU_PANGLONG => Ok(SundaneseSupplement::SundanesePunctuationBinduPanglong),
-            SUNDANESE_PUNCTUATION_BINDU_PURNAMA => Ok(SundaneseSupplement::SundanesePunctuationBinduPurnama),
-            SUNDANESE_PUNCTUATION_BINDU_CAKRA => Ok(SundaneseSupplement::SundanesePunctuationBinduCakra),
-            SUNDANESE_PUNCTUATION_BINDU_LEU_SATANGA => Ok(SundaneseSupplement::SundanesePunctuationBinduLeuSatanga),
-            SUNDANESE_PUNCTUATION_BINDU_KA_SATANGA => Ok(SundaneseSupplement::SundanesePunctuationBinduKaSatanga),
-            SUNDANESE_PUNCTUATION_BINDU_DA_SATANGA => Ok(SundaneseSupplement::SundanesePunctuationBinduDaSatanga),
-            SUNDANESE_PUNCTUATION_BINDU_BA_SATANGA => Ok(SundaneseSupplement::SundanesePunctuationBinduBaSatanga),
+            '᳀' => Ok(SundaneseSupplement::SundanesePunctuationBinduSurya),
+            '᳁' => Ok(SundaneseSupplement::SundanesePunctuationBinduPanglong),
+            '᳂' => Ok(SundaneseSupplement::SundanesePunctuationBinduPurnama),
+            '᳃' => Ok(SundaneseSupplement::SundanesePunctuationBinduCakra),
+            '᳄' => Ok(SundaneseSupplement::SundanesePunctuationBinduLeuSatanga),
+            '᳅' => Ok(SundaneseSupplement::SundanesePunctuationBinduKaSatanga),
+            '᳆' => Ok(SundaneseSupplement::SundanesePunctuationBinduDaSatanga),
+            '᳇' => Ok(SundaneseSupplement::SundanesePunctuationBinduBaSatanga),
             _ => Err(()),
         }
     }

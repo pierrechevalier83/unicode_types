@@ -1,100 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{750}: 'ݐ'
-    pub const ARABIC_LETTER_BEH_WITH_THREE_DOTS_HORIZONTALLY_BELOW: char = 'ݐ';
-    /// \u{751}: 'ݑ'
-    pub const ARABIC_LETTER_BEH_WITH_DOT_BELOW_AND_THREE_DOTS_ABOVE: char = 'ݑ';
-    /// \u{752}: 'ݒ'
-    pub const ARABIC_LETTER_BEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW: char = 'ݒ';
-    /// \u{753}: 'ݓ'
-    pub const ARABIC_LETTER_BEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW_AND_TWO_DOTS_ABOVE: char = 'ݓ';
-    /// \u{754}: 'ݔ'
-    pub const ARABIC_LETTER_BEH_WITH_TWO_DOTS_BELOW_AND_DOT_ABOVE: char = 'ݔ';
-    /// \u{755}: 'ݕ'
-    pub const ARABIC_LETTER_BEH_WITH_INVERTED_SMALL_V_BELOW: char = 'ݕ';
-    /// \u{756}: 'ݖ'
-    pub const ARABIC_LETTER_BEH_WITH_SMALL_V: char = 'ݖ';
-    /// \u{757}: 'ݗ'
-    pub const ARABIC_LETTER_HAH_WITH_TWO_DOTS_ABOVE: char = 'ݗ';
-    /// \u{758}: 'ݘ'
-    pub const ARABIC_LETTER_HAH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW: char = 'ݘ';
-    /// \u{759}: 'ݙ'
-    pub const ARABIC_LETTER_DAL_WITH_TWO_DOTS_VERTICALLY_BELOW_AND_SMALL_TAH: char = 'ݙ';
-    /// \u{75a}: 'ݚ'
-    pub const ARABIC_LETTER_DAL_WITH_INVERTED_SMALL_V_BELOW: char = 'ݚ';
-    /// \u{75b}: 'ݛ'
-    pub const ARABIC_LETTER_REH_WITH_STROKE: char = 'ݛ';
-    /// \u{75c}: 'ݜ'
-    pub const ARABIC_LETTER_SEEN_WITH_FOUR_DOTS_ABOVE: char = 'ݜ';
-    /// \u{75d}: 'ݝ'
-    pub const ARABIC_LETTER_AIN_WITH_TWO_DOTS_ABOVE: char = 'ݝ';
-    /// \u{75e}: 'ݞ'
-    pub const ARABIC_LETTER_AIN_WITH_THREE_DOTS_POINTING_DOWNWARDS_ABOVE: char = 'ݞ';
-    /// \u{75f}: 'ݟ'
-    pub const ARABIC_LETTER_AIN_WITH_TWO_DOTS_VERTICALLY_ABOVE: char = 'ݟ';
-    /// \u{760}: 'ݠ'
-    pub const ARABIC_LETTER_FEH_WITH_TWO_DOTS_BELOW: char = 'ݠ';
-    /// \u{761}: 'ݡ'
-    pub const ARABIC_LETTER_FEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW: char = 'ݡ';
-    /// \u{762}: 'ݢ'
-    pub const ARABIC_LETTER_KEHEH_WITH_DOT_ABOVE: char = 'ݢ';
-    /// \u{763}: 'ݣ'
-    pub const ARABIC_LETTER_KEHEH_WITH_THREE_DOTS_ABOVE: char = 'ݣ';
-    /// \u{764}: 'ݤ'
-    pub const ARABIC_LETTER_KEHEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW: char = 'ݤ';
-    /// \u{765}: 'ݥ'
-    pub const ARABIC_LETTER_MEEM_WITH_DOT_ABOVE: char = 'ݥ';
-    /// \u{766}: 'ݦ'
-    pub const ARABIC_LETTER_MEEM_WITH_DOT_BELOW: char = 'ݦ';
-    /// \u{767}: 'ݧ'
-    pub const ARABIC_LETTER_NOON_WITH_TWO_DOTS_BELOW: char = 'ݧ';
-    /// \u{768}: 'ݨ'
-    pub const ARABIC_LETTER_NOON_WITH_SMALL_TAH: char = 'ݨ';
-    /// \u{769}: 'ݩ'
-    pub const ARABIC_LETTER_NOON_WITH_SMALL_V: char = 'ݩ';
-    /// \u{76a}: 'ݪ'
-    pub const ARABIC_LETTER_LAM_WITH_BAR: char = 'ݪ';
-    /// \u{76b}: 'ݫ'
-    pub const ARABIC_LETTER_REH_WITH_TWO_DOTS_VERTICALLY_ABOVE: char = 'ݫ';
-    /// \u{76c}: 'ݬ'
-    pub const ARABIC_LETTER_REH_WITH_HAMZA_ABOVE: char = 'ݬ';
-    /// \u{76d}: 'ݭ'
-    pub const ARABIC_LETTER_SEEN_WITH_TWO_DOTS_VERTICALLY_ABOVE: char = 'ݭ';
-    /// \u{76e}: 'ݮ'
-    pub const ARABIC_LETTER_HAH_WITH_SMALL_ARABIC_LETTER_TAH_BELOW: char = 'ݮ';
-    /// \u{76f}: 'ݯ'
-    pub const ARABIC_LETTER_HAH_WITH_SMALL_ARABIC_LETTER_TAH_AND_TWO_DOTS: char = 'ݯ';
-    /// \u{770}: 'ݰ'
-    pub const ARABIC_LETTER_SEEN_WITH_SMALL_ARABIC_LETTER_TAH_AND_TWO_DOTS: char = 'ݰ';
-    /// \u{771}: 'ݱ'
-    pub const ARABIC_LETTER_REH_WITH_SMALL_ARABIC_LETTER_TAH_AND_TWO_DOTS: char = 'ݱ';
-    /// \u{772}: 'ݲ'
-    pub const ARABIC_LETTER_HAH_WITH_SMALL_ARABIC_LETTER_TAH_ABOVE: char = 'ݲ';
-    /// \u{773}: 'ݳ'
-    pub const ARABIC_LETTER_ALEF_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE: char = 'ݳ';
-    /// \u{774}: 'ݴ'
-    pub const ARABIC_LETTER_ALEF_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE: char = 'ݴ';
-    /// \u{775}: 'ݵ'
-    pub const ARABIC_LETTER_FARSI_YEH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE: char = 'ݵ';
-    /// \u{776}: 'ݶ'
-    pub const ARABIC_LETTER_FARSI_YEH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE: char = 'ݶ';
-    /// \u{777}: 'ݷ'
-    pub const ARABIC_LETTER_FARSI_YEH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_FOUR_BELOW: char = 'ݷ';
-    /// \u{778}: 'ݸ'
-    pub const ARABIC_LETTER_WAW_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE: char = 'ݸ';
-    /// \u{779}: 'ݹ'
-    pub const ARABIC_LETTER_WAW_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE: char = 'ݹ';
-    /// \u{77a}: 'ݺ'
-    pub const ARABIC_LETTER_YEH_BARREE_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE: char = 'ݺ';
-    /// \u{77b}: 'ݻ'
-    pub const ARABIC_LETTER_YEH_BARREE_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE: char = 'ݻ';
-    /// \u{77c}: 'ݼ'
-    pub const ARABIC_LETTER_HAH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_FOUR_BELOW: char = 'ݼ';
-    /// \u{77d}: 'ݽ'
-    pub const ARABIC_LETTER_SEEN_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_FOUR_ABOVE: char = 'ݽ';
-    /// \u{77e}: 'ݾ'
-    pub const ARABIC_LETTER_SEEN_WITH_INVERTED_V: char = 'ݾ';
-}
 
 /// An enum to represent all characters in the ArabicSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -197,55 +100,54 @@ pub enum ArabicSupplement {
 
 impl Into<char> for ArabicSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            ArabicSupplement::ArabicLetterBehWithThreeDotsHorizontallyBelow => ARABIC_LETTER_BEH_WITH_THREE_DOTS_HORIZONTALLY_BELOW,
-            ArabicSupplement::ArabicLetterBehWithDotBelowAndThreeDotsAbove => ARABIC_LETTER_BEH_WITH_DOT_BELOW_AND_THREE_DOTS_ABOVE,
-            ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelow => ARABIC_LETTER_BEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW,
-            ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelowAndTwoDotsAbove => ARABIC_LETTER_BEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW_AND_TWO_DOTS_ABOVE,
-            ArabicSupplement::ArabicLetterBehWithTwoDotsBelowAndDotAbove => ARABIC_LETTER_BEH_WITH_TWO_DOTS_BELOW_AND_DOT_ABOVE,
-            ArabicSupplement::ArabicLetterBehWithInvertedSmallVBelow => ARABIC_LETTER_BEH_WITH_INVERTED_SMALL_V_BELOW,
-            ArabicSupplement::ArabicLetterBehWithSmallV => ARABIC_LETTER_BEH_WITH_SMALL_V,
-            ArabicSupplement::ArabicLetterHahWithTwoDotsAbove => ARABIC_LETTER_HAH_WITH_TWO_DOTS_ABOVE,
-            ArabicSupplement::ArabicLetterHahWithThreeDotsPointingUpwardsBelow => ARABIC_LETTER_HAH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW,
-            ArabicSupplement::ArabicLetterDalWithTwoDotsVerticallyBelowAndSmallTah => ARABIC_LETTER_DAL_WITH_TWO_DOTS_VERTICALLY_BELOW_AND_SMALL_TAH,
-            ArabicSupplement::ArabicLetterDalWithInvertedSmallVBelow => ARABIC_LETTER_DAL_WITH_INVERTED_SMALL_V_BELOW,
-            ArabicSupplement::ArabicLetterRehWithStroke => ARABIC_LETTER_REH_WITH_STROKE,
-            ArabicSupplement::ArabicLetterSeenWithFourDotsAbove => ARABIC_LETTER_SEEN_WITH_FOUR_DOTS_ABOVE,
-            ArabicSupplement::ArabicLetterAinWithTwoDotsAbove => ARABIC_LETTER_AIN_WITH_TWO_DOTS_ABOVE,
-            ArabicSupplement::ArabicLetterAinWithThreeDotsPointingDownwardsAbove => ARABIC_LETTER_AIN_WITH_THREE_DOTS_POINTING_DOWNWARDS_ABOVE,
-            ArabicSupplement::ArabicLetterAinWithTwoDotsVerticallyAbove => ARABIC_LETTER_AIN_WITH_TWO_DOTS_VERTICALLY_ABOVE,
-            ArabicSupplement::ArabicLetterFehWithTwoDotsBelow => ARABIC_LETTER_FEH_WITH_TWO_DOTS_BELOW,
-            ArabicSupplement::ArabicLetterFehWithThreeDotsPointingUpwardsBelow => ARABIC_LETTER_FEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW,
-            ArabicSupplement::ArabicLetterKehehWithDotAbove => ARABIC_LETTER_KEHEH_WITH_DOT_ABOVE,
-            ArabicSupplement::ArabicLetterKehehWithThreeDotsAbove => ARABIC_LETTER_KEHEH_WITH_THREE_DOTS_ABOVE,
-            ArabicSupplement::ArabicLetterKehehWithThreeDotsPointingUpwardsBelow => ARABIC_LETTER_KEHEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW,
-            ArabicSupplement::ArabicLetterMeemWithDotAbove => ARABIC_LETTER_MEEM_WITH_DOT_ABOVE,
-            ArabicSupplement::ArabicLetterMeemWithDotBelow => ARABIC_LETTER_MEEM_WITH_DOT_BELOW,
-            ArabicSupplement::ArabicLetterNoonWithTwoDotsBelow => ARABIC_LETTER_NOON_WITH_TWO_DOTS_BELOW,
-            ArabicSupplement::ArabicLetterNoonWithSmallTah => ARABIC_LETTER_NOON_WITH_SMALL_TAH,
-            ArabicSupplement::ArabicLetterNoonWithSmallV => ARABIC_LETTER_NOON_WITH_SMALL_V,
-            ArabicSupplement::ArabicLetterLamWithBar => ARABIC_LETTER_LAM_WITH_BAR,
-            ArabicSupplement::ArabicLetterRehWithTwoDotsVerticallyAbove => ARABIC_LETTER_REH_WITH_TWO_DOTS_VERTICALLY_ABOVE,
-            ArabicSupplement::ArabicLetterRehWithHamzaAbove => ARABIC_LETTER_REH_WITH_HAMZA_ABOVE,
-            ArabicSupplement::ArabicLetterSeenWithTwoDotsVerticallyAbove => ARABIC_LETTER_SEEN_WITH_TWO_DOTS_VERTICALLY_ABOVE,
-            ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahBelow => ARABIC_LETTER_HAH_WITH_SMALL_ARABIC_LETTER_TAH_BELOW,
-            ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAndTwoDots => ARABIC_LETTER_HAH_WITH_SMALL_ARABIC_LETTER_TAH_AND_TWO_DOTS,
-            ArabicSupplement::ArabicLetterSeenWithSmallArabicLetterTahAndTwoDots => ARABIC_LETTER_SEEN_WITH_SMALL_ARABIC_LETTER_TAH_AND_TWO_DOTS,
-            ArabicSupplement::ArabicLetterRehWithSmallArabicLetterTahAndTwoDots => ARABIC_LETTER_REH_WITH_SMALL_ARABIC_LETTER_TAH_AND_TWO_DOTS,
-            ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAbove => ARABIC_LETTER_HAH_WITH_SMALL_ARABIC_LETTER_TAH_ABOVE,
-            ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitTwoAbove => ARABIC_LETTER_ALEF_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE,
-            ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitThreeAbove => ARABIC_LETTER_ALEF_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE,
-            ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitTwoAbove => ARABIC_LETTER_FARSI_YEH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE,
-            ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitThreeAbove => ARABIC_LETTER_FARSI_YEH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE,
-            ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitFourBelow => ARABIC_LETTER_FARSI_YEH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_FOUR_BELOW,
-            ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitTwoAbove => ARABIC_LETTER_WAW_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE,
-            ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitThreeAbove => ARABIC_LETTER_WAW_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE,
-            ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitTwoAbove => ARABIC_LETTER_YEH_BARREE_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE,
-            ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitThreeAbove => ARABIC_LETTER_YEH_BARREE_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE,
-            ArabicSupplement::ArabicLetterHahWithExtendedArabicDashIndicDigitFourBelow => ARABIC_LETTER_HAH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_FOUR_BELOW,
-            ArabicSupplement::ArabicLetterSeenWithExtendedArabicDashIndicDigitFourAbove => ARABIC_LETTER_SEEN_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_FOUR_ABOVE,
-            ArabicSupplement::ArabicLetterSeenWithInvertedV => ARABIC_LETTER_SEEN_WITH_INVERTED_V,
+            ArabicSupplement::ArabicLetterBehWithThreeDotsHorizontallyBelow => 'ݐ',
+            ArabicSupplement::ArabicLetterBehWithDotBelowAndThreeDotsAbove => 'ݑ',
+            ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelow => 'ݒ',
+            ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelowAndTwoDotsAbove => 'ݓ',
+            ArabicSupplement::ArabicLetterBehWithTwoDotsBelowAndDotAbove => 'ݔ',
+            ArabicSupplement::ArabicLetterBehWithInvertedSmallVBelow => 'ݕ',
+            ArabicSupplement::ArabicLetterBehWithSmallV => 'ݖ',
+            ArabicSupplement::ArabicLetterHahWithTwoDotsAbove => 'ݗ',
+            ArabicSupplement::ArabicLetterHahWithThreeDotsPointingUpwardsBelow => 'ݘ',
+            ArabicSupplement::ArabicLetterDalWithTwoDotsVerticallyBelowAndSmallTah => 'ݙ',
+            ArabicSupplement::ArabicLetterDalWithInvertedSmallVBelow => 'ݚ',
+            ArabicSupplement::ArabicLetterRehWithStroke => 'ݛ',
+            ArabicSupplement::ArabicLetterSeenWithFourDotsAbove => 'ݜ',
+            ArabicSupplement::ArabicLetterAinWithTwoDotsAbove => 'ݝ',
+            ArabicSupplement::ArabicLetterAinWithThreeDotsPointingDownwardsAbove => 'ݞ',
+            ArabicSupplement::ArabicLetterAinWithTwoDotsVerticallyAbove => 'ݟ',
+            ArabicSupplement::ArabicLetterFehWithTwoDotsBelow => 'ݠ',
+            ArabicSupplement::ArabicLetterFehWithThreeDotsPointingUpwardsBelow => 'ݡ',
+            ArabicSupplement::ArabicLetterKehehWithDotAbove => 'ݢ',
+            ArabicSupplement::ArabicLetterKehehWithThreeDotsAbove => 'ݣ',
+            ArabicSupplement::ArabicLetterKehehWithThreeDotsPointingUpwardsBelow => 'ݤ',
+            ArabicSupplement::ArabicLetterMeemWithDotAbove => 'ݥ',
+            ArabicSupplement::ArabicLetterMeemWithDotBelow => 'ݦ',
+            ArabicSupplement::ArabicLetterNoonWithTwoDotsBelow => 'ݧ',
+            ArabicSupplement::ArabicLetterNoonWithSmallTah => 'ݨ',
+            ArabicSupplement::ArabicLetterNoonWithSmallV => 'ݩ',
+            ArabicSupplement::ArabicLetterLamWithBar => 'ݪ',
+            ArabicSupplement::ArabicLetterRehWithTwoDotsVerticallyAbove => 'ݫ',
+            ArabicSupplement::ArabicLetterRehWithHamzaAbove => 'ݬ',
+            ArabicSupplement::ArabicLetterSeenWithTwoDotsVerticallyAbove => 'ݭ',
+            ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahBelow => 'ݮ',
+            ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAndTwoDots => 'ݯ',
+            ArabicSupplement::ArabicLetterSeenWithSmallArabicLetterTahAndTwoDots => 'ݰ',
+            ArabicSupplement::ArabicLetterRehWithSmallArabicLetterTahAndTwoDots => 'ݱ',
+            ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAbove => 'ݲ',
+            ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitTwoAbove => 'ݳ',
+            ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitThreeAbove => 'ݴ',
+            ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitTwoAbove => 'ݵ',
+            ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitThreeAbove => 'ݶ',
+            ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitFourBelow => 'ݷ',
+            ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitTwoAbove => 'ݸ',
+            ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitThreeAbove => 'ݹ',
+            ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitTwoAbove => 'ݺ',
+            ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitThreeAbove => 'ݻ',
+            ArabicSupplement::ArabicLetterHahWithExtendedArabicDashIndicDigitFourBelow => 'ݼ',
+            ArabicSupplement::ArabicLetterSeenWithExtendedArabicDashIndicDigitFourAbove => 'ݽ',
+            ArabicSupplement::ArabicLetterSeenWithInvertedV => 'ݾ',
         }
     }
 }
@@ -253,55 +155,54 @@ impl Into<char> for ArabicSupplement {
 impl std::convert::TryFrom<char> for ArabicSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            ARABIC_LETTER_BEH_WITH_THREE_DOTS_HORIZONTALLY_BELOW => Ok(ArabicSupplement::ArabicLetterBehWithThreeDotsHorizontallyBelow),
-            ARABIC_LETTER_BEH_WITH_DOT_BELOW_AND_THREE_DOTS_ABOVE => Ok(ArabicSupplement::ArabicLetterBehWithDotBelowAndThreeDotsAbove),
-            ARABIC_LETTER_BEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW => Ok(ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelow),
-            ARABIC_LETTER_BEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW_AND_TWO_DOTS_ABOVE => Ok(ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelowAndTwoDotsAbove),
-            ARABIC_LETTER_BEH_WITH_TWO_DOTS_BELOW_AND_DOT_ABOVE => Ok(ArabicSupplement::ArabicLetterBehWithTwoDotsBelowAndDotAbove),
-            ARABIC_LETTER_BEH_WITH_INVERTED_SMALL_V_BELOW => Ok(ArabicSupplement::ArabicLetterBehWithInvertedSmallVBelow),
-            ARABIC_LETTER_BEH_WITH_SMALL_V => Ok(ArabicSupplement::ArabicLetterBehWithSmallV),
-            ARABIC_LETTER_HAH_WITH_TWO_DOTS_ABOVE => Ok(ArabicSupplement::ArabicLetterHahWithTwoDotsAbove),
-            ARABIC_LETTER_HAH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW => Ok(ArabicSupplement::ArabicLetterHahWithThreeDotsPointingUpwardsBelow),
-            ARABIC_LETTER_DAL_WITH_TWO_DOTS_VERTICALLY_BELOW_AND_SMALL_TAH => Ok(ArabicSupplement::ArabicLetterDalWithTwoDotsVerticallyBelowAndSmallTah),
-            ARABIC_LETTER_DAL_WITH_INVERTED_SMALL_V_BELOW => Ok(ArabicSupplement::ArabicLetterDalWithInvertedSmallVBelow),
-            ARABIC_LETTER_REH_WITH_STROKE => Ok(ArabicSupplement::ArabicLetterRehWithStroke),
-            ARABIC_LETTER_SEEN_WITH_FOUR_DOTS_ABOVE => Ok(ArabicSupplement::ArabicLetterSeenWithFourDotsAbove),
-            ARABIC_LETTER_AIN_WITH_TWO_DOTS_ABOVE => Ok(ArabicSupplement::ArabicLetterAinWithTwoDotsAbove),
-            ARABIC_LETTER_AIN_WITH_THREE_DOTS_POINTING_DOWNWARDS_ABOVE => Ok(ArabicSupplement::ArabicLetterAinWithThreeDotsPointingDownwardsAbove),
-            ARABIC_LETTER_AIN_WITH_TWO_DOTS_VERTICALLY_ABOVE => Ok(ArabicSupplement::ArabicLetterAinWithTwoDotsVerticallyAbove),
-            ARABIC_LETTER_FEH_WITH_TWO_DOTS_BELOW => Ok(ArabicSupplement::ArabicLetterFehWithTwoDotsBelow),
-            ARABIC_LETTER_FEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW => Ok(ArabicSupplement::ArabicLetterFehWithThreeDotsPointingUpwardsBelow),
-            ARABIC_LETTER_KEHEH_WITH_DOT_ABOVE => Ok(ArabicSupplement::ArabicLetterKehehWithDotAbove),
-            ARABIC_LETTER_KEHEH_WITH_THREE_DOTS_ABOVE => Ok(ArabicSupplement::ArabicLetterKehehWithThreeDotsAbove),
-            ARABIC_LETTER_KEHEH_WITH_THREE_DOTS_POINTING_UPWARDS_BELOW => Ok(ArabicSupplement::ArabicLetterKehehWithThreeDotsPointingUpwardsBelow),
-            ARABIC_LETTER_MEEM_WITH_DOT_ABOVE => Ok(ArabicSupplement::ArabicLetterMeemWithDotAbove),
-            ARABIC_LETTER_MEEM_WITH_DOT_BELOW => Ok(ArabicSupplement::ArabicLetterMeemWithDotBelow),
-            ARABIC_LETTER_NOON_WITH_TWO_DOTS_BELOW => Ok(ArabicSupplement::ArabicLetterNoonWithTwoDotsBelow),
-            ARABIC_LETTER_NOON_WITH_SMALL_TAH => Ok(ArabicSupplement::ArabicLetterNoonWithSmallTah),
-            ARABIC_LETTER_NOON_WITH_SMALL_V => Ok(ArabicSupplement::ArabicLetterNoonWithSmallV),
-            ARABIC_LETTER_LAM_WITH_BAR => Ok(ArabicSupplement::ArabicLetterLamWithBar),
-            ARABIC_LETTER_REH_WITH_TWO_DOTS_VERTICALLY_ABOVE => Ok(ArabicSupplement::ArabicLetterRehWithTwoDotsVerticallyAbove),
-            ARABIC_LETTER_REH_WITH_HAMZA_ABOVE => Ok(ArabicSupplement::ArabicLetterRehWithHamzaAbove),
-            ARABIC_LETTER_SEEN_WITH_TWO_DOTS_VERTICALLY_ABOVE => Ok(ArabicSupplement::ArabicLetterSeenWithTwoDotsVerticallyAbove),
-            ARABIC_LETTER_HAH_WITH_SMALL_ARABIC_LETTER_TAH_BELOW => Ok(ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahBelow),
-            ARABIC_LETTER_HAH_WITH_SMALL_ARABIC_LETTER_TAH_AND_TWO_DOTS => Ok(ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAndTwoDots),
-            ARABIC_LETTER_SEEN_WITH_SMALL_ARABIC_LETTER_TAH_AND_TWO_DOTS => Ok(ArabicSupplement::ArabicLetterSeenWithSmallArabicLetterTahAndTwoDots),
-            ARABIC_LETTER_REH_WITH_SMALL_ARABIC_LETTER_TAH_AND_TWO_DOTS => Ok(ArabicSupplement::ArabicLetterRehWithSmallArabicLetterTahAndTwoDots),
-            ARABIC_LETTER_HAH_WITH_SMALL_ARABIC_LETTER_TAH_ABOVE => Ok(ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAbove),
-            ARABIC_LETTER_ALEF_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE => Ok(ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitTwoAbove),
-            ARABIC_LETTER_ALEF_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE => Ok(ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitThreeAbove),
-            ARABIC_LETTER_FARSI_YEH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE => Ok(ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitTwoAbove),
-            ARABIC_LETTER_FARSI_YEH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE => Ok(ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitThreeAbove),
-            ARABIC_LETTER_FARSI_YEH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_FOUR_BELOW => Ok(ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitFourBelow),
-            ARABIC_LETTER_WAW_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE => Ok(ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitTwoAbove),
-            ARABIC_LETTER_WAW_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE => Ok(ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitThreeAbove),
-            ARABIC_LETTER_YEH_BARREE_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_TWO_ABOVE => Ok(ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitTwoAbove),
-            ARABIC_LETTER_YEH_BARREE_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_THREE_ABOVE => Ok(ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitThreeAbove),
-            ARABIC_LETTER_HAH_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_FOUR_BELOW => Ok(ArabicSupplement::ArabicLetterHahWithExtendedArabicDashIndicDigitFourBelow),
-            ARABIC_LETTER_SEEN_WITH_EXTENDED_ARABIC_DASH_INDIC_DIGIT_FOUR_ABOVE => Ok(ArabicSupplement::ArabicLetterSeenWithExtendedArabicDashIndicDigitFourAbove),
-            ARABIC_LETTER_SEEN_WITH_INVERTED_V => Ok(ArabicSupplement::ArabicLetterSeenWithInvertedV),
+            'ݐ' => Ok(ArabicSupplement::ArabicLetterBehWithThreeDotsHorizontallyBelow),
+            'ݑ' => Ok(ArabicSupplement::ArabicLetterBehWithDotBelowAndThreeDotsAbove),
+            'ݒ' => Ok(ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelow),
+            'ݓ' => Ok(ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelowAndTwoDotsAbove),
+            'ݔ' => Ok(ArabicSupplement::ArabicLetterBehWithTwoDotsBelowAndDotAbove),
+            'ݕ' => Ok(ArabicSupplement::ArabicLetterBehWithInvertedSmallVBelow),
+            'ݖ' => Ok(ArabicSupplement::ArabicLetterBehWithSmallV),
+            'ݗ' => Ok(ArabicSupplement::ArabicLetterHahWithTwoDotsAbove),
+            'ݘ' => Ok(ArabicSupplement::ArabicLetterHahWithThreeDotsPointingUpwardsBelow),
+            'ݙ' => Ok(ArabicSupplement::ArabicLetterDalWithTwoDotsVerticallyBelowAndSmallTah),
+            'ݚ' => Ok(ArabicSupplement::ArabicLetterDalWithInvertedSmallVBelow),
+            'ݛ' => Ok(ArabicSupplement::ArabicLetterRehWithStroke),
+            'ݜ' => Ok(ArabicSupplement::ArabicLetterSeenWithFourDotsAbove),
+            'ݝ' => Ok(ArabicSupplement::ArabicLetterAinWithTwoDotsAbove),
+            'ݞ' => Ok(ArabicSupplement::ArabicLetterAinWithThreeDotsPointingDownwardsAbove),
+            'ݟ' => Ok(ArabicSupplement::ArabicLetterAinWithTwoDotsVerticallyAbove),
+            'ݠ' => Ok(ArabicSupplement::ArabicLetterFehWithTwoDotsBelow),
+            'ݡ' => Ok(ArabicSupplement::ArabicLetterFehWithThreeDotsPointingUpwardsBelow),
+            'ݢ' => Ok(ArabicSupplement::ArabicLetterKehehWithDotAbove),
+            'ݣ' => Ok(ArabicSupplement::ArabicLetterKehehWithThreeDotsAbove),
+            'ݤ' => Ok(ArabicSupplement::ArabicLetterKehehWithThreeDotsPointingUpwardsBelow),
+            'ݥ' => Ok(ArabicSupplement::ArabicLetterMeemWithDotAbove),
+            'ݦ' => Ok(ArabicSupplement::ArabicLetterMeemWithDotBelow),
+            'ݧ' => Ok(ArabicSupplement::ArabicLetterNoonWithTwoDotsBelow),
+            'ݨ' => Ok(ArabicSupplement::ArabicLetterNoonWithSmallTah),
+            'ݩ' => Ok(ArabicSupplement::ArabicLetterNoonWithSmallV),
+            'ݪ' => Ok(ArabicSupplement::ArabicLetterLamWithBar),
+            'ݫ' => Ok(ArabicSupplement::ArabicLetterRehWithTwoDotsVerticallyAbove),
+            'ݬ' => Ok(ArabicSupplement::ArabicLetterRehWithHamzaAbove),
+            'ݭ' => Ok(ArabicSupplement::ArabicLetterSeenWithTwoDotsVerticallyAbove),
+            'ݮ' => Ok(ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahBelow),
+            'ݯ' => Ok(ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAndTwoDots),
+            'ݰ' => Ok(ArabicSupplement::ArabicLetterSeenWithSmallArabicLetterTahAndTwoDots),
+            'ݱ' => Ok(ArabicSupplement::ArabicLetterRehWithSmallArabicLetterTahAndTwoDots),
+            'ݲ' => Ok(ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAbove),
+            'ݳ' => Ok(ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitTwoAbove),
+            'ݴ' => Ok(ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitThreeAbove),
+            'ݵ' => Ok(ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitTwoAbove),
+            'ݶ' => Ok(ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitThreeAbove),
+            'ݷ' => Ok(ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitFourBelow),
+            'ݸ' => Ok(ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitTwoAbove),
+            'ݹ' => Ok(ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitThreeAbove),
+            'ݺ' => Ok(ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitTwoAbove),
+            'ݻ' => Ok(ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitThreeAbove),
+            'ݼ' => Ok(ArabicSupplement::ArabicLetterHahWithExtendedArabicDashIndicDigitFourBelow),
+            'ݽ' => Ok(ArabicSupplement::ArabicLetterSeenWithExtendedArabicDashIndicDigitFourAbove),
+            'ݾ' => Ok(ArabicSupplement::ArabicLetterSeenWithInvertedV),
             _ => Err(()),
         }
     }

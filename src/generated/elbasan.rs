@@ -1,86 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10500}: '𐔀'
-    pub const LETTER_A: char = '𐔀';
-    /// \u{10501}: '𐔁'
-    pub const LETTER_BE: char = '𐔁';
-    /// \u{10502}: '𐔂'
-    pub const LETTER_CE: char = '𐔂';
-    /// \u{10503}: '𐔃'
-    pub const LETTER_CHE: char = '𐔃';
-    /// \u{10504}: '𐔄'
-    pub const LETTER_DE: char = '𐔄';
-    /// \u{10505}: '𐔅'
-    pub const LETTER_NDE: char = '𐔅';
-    /// \u{10506}: '𐔆'
-    pub const LETTER_DHE: char = '𐔆';
-    /// \u{10507}: '𐔇'
-    pub const LETTER_EI: char = '𐔇';
-    /// \u{10508}: '𐔈'
-    pub const LETTER_E: char = '𐔈';
-    /// \u{10509}: '𐔉'
-    pub const LETTER_FE: char = '𐔉';
-    /// \u{1050a}: '𐔊'
-    pub const LETTER_GE: char = '𐔊';
-    /// \u{1050b}: '𐔋'
-    pub const LETTER_GJE: char = '𐔋';
-    /// \u{1050c}: '𐔌'
-    pub const LETTER_HE: char = '𐔌';
-    /// \u{1050d}: '𐔍'
-    pub const LETTER_I: char = '𐔍';
-    /// \u{1050e}: '𐔎'
-    pub const LETTER_JE: char = '𐔎';
-    /// \u{1050f}: '𐔏'
-    pub const LETTER_KE: char = '𐔏';
-    /// \u{10510}: '𐔐'
-    pub const LETTER_LE: char = '𐔐';
-    /// \u{10511}: '𐔑'
-    pub const LETTER_LLE: char = '𐔑';
-    /// \u{10512}: '𐔒'
-    pub const LETTER_ME: char = '𐔒';
-    /// \u{10513}: '𐔓'
-    pub const LETTER_NE: char = '𐔓';
-    /// \u{10514}: '𐔔'
-    pub const LETTER_NA: char = '𐔔';
-    /// \u{10515}: '𐔕'
-    pub const LETTER_NJE: char = '𐔕';
-    /// \u{10516}: '𐔖'
-    pub const LETTER_O: char = '𐔖';
-    /// \u{10517}: '𐔗'
-    pub const LETTER_PE: char = '𐔗';
-    /// \u{10518}: '𐔘'
-    pub const LETTER_QE: char = '𐔘';
-    /// \u{10519}: '𐔙'
-    pub const LETTER_RE: char = '𐔙';
-    /// \u{1051a}: '𐔚'
-    pub const LETTER_RRE: char = '𐔚';
-    /// \u{1051b}: '𐔛'
-    pub const LETTER_SE: char = '𐔛';
-    /// \u{1051c}: '𐔜'
-    pub const LETTER_SHE: char = '𐔜';
-    /// \u{1051d}: '𐔝'
-    pub const LETTER_TE: char = '𐔝';
-    /// \u{1051e}: '𐔞'
-    pub const LETTER_THE: char = '𐔞';
-    /// \u{1051f}: '𐔟'
-    pub const LETTER_U: char = '𐔟';
-    /// \u{10520}: '𐔠'
-    pub const LETTER_VE: char = '𐔠';
-    /// \u{10521}: '𐔡'
-    pub const LETTER_XE: char = '𐔡';
-    /// \u{10522}: '𐔢'
-    pub const LETTER_Y: char = '𐔢';
-    /// \u{10523}: '𐔣'
-    pub const LETTER_ZE: char = '𐔣';
-    /// \u{10524}: '𐔤'
-    pub const LETTER_ZHE: char = '𐔤';
-    /// \u{10525}: '𐔥'
-    pub const LETTER_GHE: char = '𐔥';
-    /// \u{10526}: '𐔦'
-    pub const LETTER_GHAMMA: char = '𐔦';
-    /// \u{10527}: '𐔧'
-    pub const LETTER_KHE: char = '𐔧';
-}
 
 /// An enum to represent all characters in the Elbasan block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -169,48 +86,47 @@ pub enum Elbasan {
 
 impl Into<char> for Elbasan {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Elbasan::LetterA => LETTER_A,
-            Elbasan::LetterBe => LETTER_BE,
-            Elbasan::LetterCe => LETTER_CE,
-            Elbasan::LetterChe => LETTER_CHE,
-            Elbasan::LetterDe => LETTER_DE,
-            Elbasan::LetterNde => LETTER_NDE,
-            Elbasan::LetterDhe => LETTER_DHE,
-            Elbasan::LetterEi => LETTER_EI,
-            Elbasan::LetterE => LETTER_E,
-            Elbasan::LetterFe => LETTER_FE,
-            Elbasan::LetterGe => LETTER_GE,
-            Elbasan::LetterGje => LETTER_GJE,
-            Elbasan::LetterHe => LETTER_HE,
-            Elbasan::LetterI => LETTER_I,
-            Elbasan::LetterJe => LETTER_JE,
-            Elbasan::LetterKe => LETTER_KE,
-            Elbasan::LetterLe => LETTER_LE,
-            Elbasan::LetterLle => LETTER_LLE,
-            Elbasan::LetterMe => LETTER_ME,
-            Elbasan::LetterNe => LETTER_NE,
-            Elbasan::LetterNa => LETTER_NA,
-            Elbasan::LetterNje => LETTER_NJE,
-            Elbasan::LetterO => LETTER_O,
-            Elbasan::LetterPe => LETTER_PE,
-            Elbasan::LetterQe => LETTER_QE,
-            Elbasan::LetterRe => LETTER_RE,
-            Elbasan::LetterRre => LETTER_RRE,
-            Elbasan::LetterSe => LETTER_SE,
-            Elbasan::LetterShe => LETTER_SHE,
-            Elbasan::LetterTe => LETTER_TE,
-            Elbasan::LetterThe => LETTER_THE,
-            Elbasan::LetterU => LETTER_U,
-            Elbasan::LetterVe => LETTER_VE,
-            Elbasan::LetterXe => LETTER_XE,
-            Elbasan::LetterY => LETTER_Y,
-            Elbasan::LetterZe => LETTER_ZE,
-            Elbasan::LetterZhe => LETTER_ZHE,
-            Elbasan::LetterGhe => LETTER_GHE,
-            Elbasan::LetterGhamma => LETTER_GHAMMA,
-            Elbasan::LetterKhe => LETTER_KHE,
+            Elbasan::LetterA => '𐔀',
+            Elbasan::LetterBe => '𐔁',
+            Elbasan::LetterCe => '𐔂',
+            Elbasan::LetterChe => '𐔃',
+            Elbasan::LetterDe => '𐔄',
+            Elbasan::LetterNde => '𐔅',
+            Elbasan::LetterDhe => '𐔆',
+            Elbasan::LetterEi => '𐔇',
+            Elbasan::LetterE => '𐔈',
+            Elbasan::LetterFe => '𐔉',
+            Elbasan::LetterGe => '𐔊',
+            Elbasan::LetterGje => '𐔋',
+            Elbasan::LetterHe => '𐔌',
+            Elbasan::LetterI => '𐔍',
+            Elbasan::LetterJe => '𐔎',
+            Elbasan::LetterKe => '𐔏',
+            Elbasan::LetterLe => '𐔐',
+            Elbasan::LetterLle => '𐔑',
+            Elbasan::LetterMe => '𐔒',
+            Elbasan::LetterNe => '𐔓',
+            Elbasan::LetterNa => '𐔔',
+            Elbasan::LetterNje => '𐔕',
+            Elbasan::LetterO => '𐔖',
+            Elbasan::LetterPe => '𐔗',
+            Elbasan::LetterQe => '𐔘',
+            Elbasan::LetterRe => '𐔙',
+            Elbasan::LetterRre => '𐔚',
+            Elbasan::LetterSe => '𐔛',
+            Elbasan::LetterShe => '𐔜',
+            Elbasan::LetterTe => '𐔝',
+            Elbasan::LetterThe => '𐔞',
+            Elbasan::LetterU => '𐔟',
+            Elbasan::LetterVe => '𐔠',
+            Elbasan::LetterXe => '𐔡',
+            Elbasan::LetterY => '𐔢',
+            Elbasan::LetterZe => '𐔣',
+            Elbasan::LetterZhe => '𐔤',
+            Elbasan::LetterGhe => '𐔥',
+            Elbasan::LetterGhamma => '𐔦',
+            Elbasan::LetterKhe => '𐔧',
         }
     }
 }
@@ -218,48 +134,47 @@ impl Into<char> for Elbasan {
 impl std::convert::TryFrom<char> for Elbasan {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Elbasan::LetterA),
-            LETTER_BE => Ok(Elbasan::LetterBe),
-            LETTER_CE => Ok(Elbasan::LetterCe),
-            LETTER_CHE => Ok(Elbasan::LetterChe),
-            LETTER_DE => Ok(Elbasan::LetterDe),
-            LETTER_NDE => Ok(Elbasan::LetterNde),
-            LETTER_DHE => Ok(Elbasan::LetterDhe),
-            LETTER_EI => Ok(Elbasan::LetterEi),
-            LETTER_E => Ok(Elbasan::LetterE),
-            LETTER_FE => Ok(Elbasan::LetterFe),
-            LETTER_GE => Ok(Elbasan::LetterGe),
-            LETTER_GJE => Ok(Elbasan::LetterGje),
-            LETTER_HE => Ok(Elbasan::LetterHe),
-            LETTER_I => Ok(Elbasan::LetterI),
-            LETTER_JE => Ok(Elbasan::LetterJe),
-            LETTER_KE => Ok(Elbasan::LetterKe),
-            LETTER_LE => Ok(Elbasan::LetterLe),
-            LETTER_LLE => Ok(Elbasan::LetterLle),
-            LETTER_ME => Ok(Elbasan::LetterMe),
-            LETTER_NE => Ok(Elbasan::LetterNe),
-            LETTER_NA => Ok(Elbasan::LetterNa),
-            LETTER_NJE => Ok(Elbasan::LetterNje),
-            LETTER_O => Ok(Elbasan::LetterO),
-            LETTER_PE => Ok(Elbasan::LetterPe),
-            LETTER_QE => Ok(Elbasan::LetterQe),
-            LETTER_RE => Ok(Elbasan::LetterRe),
-            LETTER_RRE => Ok(Elbasan::LetterRre),
-            LETTER_SE => Ok(Elbasan::LetterSe),
-            LETTER_SHE => Ok(Elbasan::LetterShe),
-            LETTER_TE => Ok(Elbasan::LetterTe),
-            LETTER_THE => Ok(Elbasan::LetterThe),
-            LETTER_U => Ok(Elbasan::LetterU),
-            LETTER_VE => Ok(Elbasan::LetterVe),
-            LETTER_XE => Ok(Elbasan::LetterXe),
-            LETTER_Y => Ok(Elbasan::LetterY),
-            LETTER_ZE => Ok(Elbasan::LetterZe),
-            LETTER_ZHE => Ok(Elbasan::LetterZhe),
-            LETTER_GHE => Ok(Elbasan::LetterGhe),
-            LETTER_GHAMMA => Ok(Elbasan::LetterGhamma),
-            LETTER_KHE => Ok(Elbasan::LetterKhe),
+            '𐔀' => Ok(Elbasan::LetterA),
+            '𐔁' => Ok(Elbasan::LetterBe),
+            '𐔂' => Ok(Elbasan::LetterCe),
+            '𐔃' => Ok(Elbasan::LetterChe),
+            '𐔄' => Ok(Elbasan::LetterDe),
+            '𐔅' => Ok(Elbasan::LetterNde),
+            '𐔆' => Ok(Elbasan::LetterDhe),
+            '𐔇' => Ok(Elbasan::LetterEi),
+            '𐔈' => Ok(Elbasan::LetterE),
+            '𐔉' => Ok(Elbasan::LetterFe),
+            '𐔊' => Ok(Elbasan::LetterGe),
+            '𐔋' => Ok(Elbasan::LetterGje),
+            '𐔌' => Ok(Elbasan::LetterHe),
+            '𐔍' => Ok(Elbasan::LetterI),
+            '𐔎' => Ok(Elbasan::LetterJe),
+            '𐔏' => Ok(Elbasan::LetterKe),
+            '𐔐' => Ok(Elbasan::LetterLe),
+            '𐔑' => Ok(Elbasan::LetterLle),
+            '𐔒' => Ok(Elbasan::LetterMe),
+            '𐔓' => Ok(Elbasan::LetterNe),
+            '𐔔' => Ok(Elbasan::LetterNa),
+            '𐔕' => Ok(Elbasan::LetterNje),
+            '𐔖' => Ok(Elbasan::LetterO),
+            '𐔗' => Ok(Elbasan::LetterPe),
+            '𐔘' => Ok(Elbasan::LetterQe),
+            '𐔙' => Ok(Elbasan::LetterRe),
+            '𐔚' => Ok(Elbasan::LetterRre),
+            '𐔛' => Ok(Elbasan::LetterSe),
+            '𐔜' => Ok(Elbasan::LetterShe),
+            '𐔝' => Ok(Elbasan::LetterTe),
+            '𐔞' => Ok(Elbasan::LetterThe),
+            '𐔟' => Ok(Elbasan::LetterU),
+            '𐔠' => Ok(Elbasan::LetterVe),
+            '𐔡' => Ok(Elbasan::LetterXe),
+            '𐔢' => Ok(Elbasan::LetterY),
+            '𐔣' => Ok(Elbasan::LetterZe),
+            '𐔤' => Ok(Elbasan::LetterZhe),
+            '𐔥' => Ok(Elbasan::LetterGhe),
+            '𐔦' => Ok(Elbasan::LetterGhamma),
+            '𐔧' => Ok(Elbasan::LetterKhe),
             _ => Err(()),
         }
     }

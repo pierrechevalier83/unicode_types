@@ -1,60 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{31a0}: 'ㆠ'
-    pub const BOPOMOFO_LETTER_BU: char = 'ㆠ';
-    /// \u{31a1}: 'ㆡ'
-    pub const BOPOMOFO_LETTER_ZI: char = 'ㆡ';
-    /// \u{31a2}: 'ㆢ'
-    pub const BOPOMOFO_LETTER_JI: char = 'ㆢ';
-    /// \u{31a3}: 'ㆣ'
-    pub const BOPOMOFO_LETTER_GU: char = 'ㆣ';
-    /// \u{31a4}: 'ㆤ'
-    pub const BOPOMOFO_LETTER_EE: char = 'ㆤ';
-    /// \u{31a5}: 'ㆥ'
-    pub const BOPOMOFO_LETTER_ENN: char = 'ㆥ';
-    /// \u{31a6}: 'ㆦ'
-    pub const BOPOMOFO_LETTER_OO: char = 'ㆦ';
-    /// \u{31a7}: 'ㆧ'
-    pub const BOPOMOFO_LETTER_ONN: char = 'ㆧ';
-    /// \u{31a8}: 'ㆨ'
-    pub const BOPOMOFO_LETTER_IR: char = 'ㆨ';
-    /// \u{31a9}: 'ㆩ'
-    pub const BOPOMOFO_LETTER_ANN: char = 'ㆩ';
-    /// \u{31aa}: 'ㆪ'
-    pub const BOPOMOFO_LETTER_INN: char = 'ㆪ';
-    /// \u{31ab}: 'ㆫ'
-    pub const BOPOMOFO_LETTER_UNN: char = 'ㆫ';
-    /// \u{31ac}: 'ㆬ'
-    pub const BOPOMOFO_LETTER_IM: char = 'ㆬ';
-    /// \u{31ad}: 'ㆭ'
-    pub const BOPOMOFO_LETTER_NGG: char = 'ㆭ';
-    /// \u{31ae}: 'ㆮ'
-    pub const BOPOMOFO_LETTER_AINN: char = 'ㆮ';
-    /// \u{31af}: 'ㆯ'
-    pub const BOPOMOFO_LETTER_AUNN: char = 'ㆯ';
-    /// \u{31b0}: 'ㆰ'
-    pub const BOPOMOFO_LETTER_AM: char = 'ㆰ';
-    /// \u{31b1}: 'ㆱ'
-    pub const BOPOMOFO_LETTER_OM: char = 'ㆱ';
-    /// \u{31b2}: 'ㆲ'
-    pub const BOPOMOFO_LETTER_ONG: char = 'ㆲ';
-    /// \u{31b3}: 'ㆳ'
-    pub const BOPOMOFO_LETTER_INNN: char = 'ㆳ';
-    /// \u{31b4}: 'ㆴ'
-    pub const BOPOMOFO_FINAL_LETTER_P: char = 'ㆴ';
-    /// \u{31b5}: 'ㆵ'
-    pub const BOPOMOFO_FINAL_LETTER_T: char = 'ㆵ';
-    /// \u{31b6}: 'ㆶ'
-    pub const BOPOMOFO_FINAL_LETTER_K: char = 'ㆶ';
-    /// \u{31b7}: 'ㆷ'
-    pub const BOPOMOFO_FINAL_LETTER_H: char = 'ㆷ';
-    /// \u{31b8}: 'ㆸ'
-    pub const BOPOMOFO_LETTER_GH: char = 'ㆸ';
-    /// \u{31b9}: 'ㆹ'
-    pub const BOPOMOFO_LETTER_LH: char = 'ㆹ';
-    /// \u{31ba}: 'ㆺ'
-    pub const BOPOMOFO_LETTER_ZY: char = 'ㆺ';
-}
 
 /// An enum to represent all characters in the BopomofoExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -117,35 +60,34 @@ pub enum BopomofoExtended {
 
 impl Into<char> for BopomofoExtended {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            BopomofoExtended::BopomofoLetterBu => BOPOMOFO_LETTER_BU,
-            BopomofoExtended::BopomofoLetterZi => BOPOMOFO_LETTER_ZI,
-            BopomofoExtended::BopomofoLetterJi => BOPOMOFO_LETTER_JI,
-            BopomofoExtended::BopomofoLetterGu => BOPOMOFO_LETTER_GU,
-            BopomofoExtended::BopomofoLetterEe => BOPOMOFO_LETTER_EE,
-            BopomofoExtended::BopomofoLetterEnn => BOPOMOFO_LETTER_ENN,
-            BopomofoExtended::BopomofoLetterOo => BOPOMOFO_LETTER_OO,
-            BopomofoExtended::BopomofoLetterOnn => BOPOMOFO_LETTER_ONN,
-            BopomofoExtended::BopomofoLetterIr => BOPOMOFO_LETTER_IR,
-            BopomofoExtended::BopomofoLetterAnn => BOPOMOFO_LETTER_ANN,
-            BopomofoExtended::BopomofoLetterInn => BOPOMOFO_LETTER_INN,
-            BopomofoExtended::BopomofoLetterUnn => BOPOMOFO_LETTER_UNN,
-            BopomofoExtended::BopomofoLetterIm => BOPOMOFO_LETTER_IM,
-            BopomofoExtended::BopomofoLetterNgg => BOPOMOFO_LETTER_NGG,
-            BopomofoExtended::BopomofoLetterAinn => BOPOMOFO_LETTER_AINN,
-            BopomofoExtended::BopomofoLetterAunn => BOPOMOFO_LETTER_AUNN,
-            BopomofoExtended::BopomofoLetterAm => BOPOMOFO_LETTER_AM,
-            BopomofoExtended::BopomofoLetterOm => BOPOMOFO_LETTER_OM,
-            BopomofoExtended::BopomofoLetterOng => BOPOMOFO_LETTER_ONG,
-            BopomofoExtended::BopomofoLetterInnn => BOPOMOFO_LETTER_INNN,
-            BopomofoExtended::BopomofoFinalLetterP => BOPOMOFO_FINAL_LETTER_P,
-            BopomofoExtended::BopomofoFinalLetterT => BOPOMOFO_FINAL_LETTER_T,
-            BopomofoExtended::BopomofoFinalLetterK => BOPOMOFO_FINAL_LETTER_K,
-            BopomofoExtended::BopomofoFinalLetterH => BOPOMOFO_FINAL_LETTER_H,
-            BopomofoExtended::BopomofoLetterGh => BOPOMOFO_LETTER_GH,
-            BopomofoExtended::BopomofoLetterLh => BOPOMOFO_LETTER_LH,
-            BopomofoExtended::BopomofoLetterZy => BOPOMOFO_LETTER_ZY,
+            BopomofoExtended::BopomofoLetterBu => 'ㆠ',
+            BopomofoExtended::BopomofoLetterZi => 'ㆡ',
+            BopomofoExtended::BopomofoLetterJi => 'ㆢ',
+            BopomofoExtended::BopomofoLetterGu => 'ㆣ',
+            BopomofoExtended::BopomofoLetterEe => 'ㆤ',
+            BopomofoExtended::BopomofoLetterEnn => 'ㆥ',
+            BopomofoExtended::BopomofoLetterOo => 'ㆦ',
+            BopomofoExtended::BopomofoLetterOnn => 'ㆧ',
+            BopomofoExtended::BopomofoLetterIr => 'ㆨ',
+            BopomofoExtended::BopomofoLetterAnn => 'ㆩ',
+            BopomofoExtended::BopomofoLetterInn => 'ㆪ',
+            BopomofoExtended::BopomofoLetterUnn => 'ㆫ',
+            BopomofoExtended::BopomofoLetterIm => 'ㆬ',
+            BopomofoExtended::BopomofoLetterNgg => 'ㆭ',
+            BopomofoExtended::BopomofoLetterAinn => 'ㆮ',
+            BopomofoExtended::BopomofoLetterAunn => 'ㆯ',
+            BopomofoExtended::BopomofoLetterAm => 'ㆰ',
+            BopomofoExtended::BopomofoLetterOm => 'ㆱ',
+            BopomofoExtended::BopomofoLetterOng => 'ㆲ',
+            BopomofoExtended::BopomofoLetterInnn => 'ㆳ',
+            BopomofoExtended::BopomofoFinalLetterP => 'ㆴ',
+            BopomofoExtended::BopomofoFinalLetterT => 'ㆵ',
+            BopomofoExtended::BopomofoFinalLetterK => 'ㆶ',
+            BopomofoExtended::BopomofoFinalLetterH => 'ㆷ',
+            BopomofoExtended::BopomofoLetterGh => 'ㆸ',
+            BopomofoExtended::BopomofoLetterLh => 'ㆹ',
+            BopomofoExtended::BopomofoLetterZy => 'ㆺ',
         }
     }
 }
@@ -153,35 +95,34 @@ impl Into<char> for BopomofoExtended {
 impl std::convert::TryFrom<char> for BopomofoExtended {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            BOPOMOFO_LETTER_BU => Ok(BopomofoExtended::BopomofoLetterBu),
-            BOPOMOFO_LETTER_ZI => Ok(BopomofoExtended::BopomofoLetterZi),
-            BOPOMOFO_LETTER_JI => Ok(BopomofoExtended::BopomofoLetterJi),
-            BOPOMOFO_LETTER_GU => Ok(BopomofoExtended::BopomofoLetterGu),
-            BOPOMOFO_LETTER_EE => Ok(BopomofoExtended::BopomofoLetterEe),
-            BOPOMOFO_LETTER_ENN => Ok(BopomofoExtended::BopomofoLetterEnn),
-            BOPOMOFO_LETTER_OO => Ok(BopomofoExtended::BopomofoLetterOo),
-            BOPOMOFO_LETTER_ONN => Ok(BopomofoExtended::BopomofoLetterOnn),
-            BOPOMOFO_LETTER_IR => Ok(BopomofoExtended::BopomofoLetterIr),
-            BOPOMOFO_LETTER_ANN => Ok(BopomofoExtended::BopomofoLetterAnn),
-            BOPOMOFO_LETTER_INN => Ok(BopomofoExtended::BopomofoLetterInn),
-            BOPOMOFO_LETTER_UNN => Ok(BopomofoExtended::BopomofoLetterUnn),
-            BOPOMOFO_LETTER_IM => Ok(BopomofoExtended::BopomofoLetterIm),
-            BOPOMOFO_LETTER_NGG => Ok(BopomofoExtended::BopomofoLetterNgg),
-            BOPOMOFO_LETTER_AINN => Ok(BopomofoExtended::BopomofoLetterAinn),
-            BOPOMOFO_LETTER_AUNN => Ok(BopomofoExtended::BopomofoLetterAunn),
-            BOPOMOFO_LETTER_AM => Ok(BopomofoExtended::BopomofoLetterAm),
-            BOPOMOFO_LETTER_OM => Ok(BopomofoExtended::BopomofoLetterOm),
-            BOPOMOFO_LETTER_ONG => Ok(BopomofoExtended::BopomofoLetterOng),
-            BOPOMOFO_LETTER_INNN => Ok(BopomofoExtended::BopomofoLetterInnn),
-            BOPOMOFO_FINAL_LETTER_P => Ok(BopomofoExtended::BopomofoFinalLetterP),
-            BOPOMOFO_FINAL_LETTER_T => Ok(BopomofoExtended::BopomofoFinalLetterT),
-            BOPOMOFO_FINAL_LETTER_K => Ok(BopomofoExtended::BopomofoFinalLetterK),
-            BOPOMOFO_FINAL_LETTER_H => Ok(BopomofoExtended::BopomofoFinalLetterH),
-            BOPOMOFO_LETTER_GH => Ok(BopomofoExtended::BopomofoLetterGh),
-            BOPOMOFO_LETTER_LH => Ok(BopomofoExtended::BopomofoLetterLh),
-            BOPOMOFO_LETTER_ZY => Ok(BopomofoExtended::BopomofoLetterZy),
+            'ㆠ' => Ok(BopomofoExtended::BopomofoLetterBu),
+            'ㆡ' => Ok(BopomofoExtended::BopomofoLetterZi),
+            'ㆢ' => Ok(BopomofoExtended::BopomofoLetterJi),
+            'ㆣ' => Ok(BopomofoExtended::BopomofoLetterGu),
+            'ㆤ' => Ok(BopomofoExtended::BopomofoLetterEe),
+            'ㆥ' => Ok(BopomofoExtended::BopomofoLetterEnn),
+            'ㆦ' => Ok(BopomofoExtended::BopomofoLetterOo),
+            'ㆧ' => Ok(BopomofoExtended::BopomofoLetterOnn),
+            'ㆨ' => Ok(BopomofoExtended::BopomofoLetterIr),
+            'ㆩ' => Ok(BopomofoExtended::BopomofoLetterAnn),
+            'ㆪ' => Ok(BopomofoExtended::BopomofoLetterInn),
+            'ㆫ' => Ok(BopomofoExtended::BopomofoLetterUnn),
+            'ㆬ' => Ok(BopomofoExtended::BopomofoLetterIm),
+            'ㆭ' => Ok(BopomofoExtended::BopomofoLetterNgg),
+            'ㆮ' => Ok(BopomofoExtended::BopomofoLetterAinn),
+            'ㆯ' => Ok(BopomofoExtended::BopomofoLetterAunn),
+            'ㆰ' => Ok(BopomofoExtended::BopomofoLetterAm),
+            'ㆱ' => Ok(BopomofoExtended::BopomofoLetterOm),
+            'ㆲ' => Ok(BopomofoExtended::BopomofoLetterOng),
+            'ㆳ' => Ok(BopomofoExtended::BopomofoLetterInnn),
+            'ㆴ' => Ok(BopomofoExtended::BopomofoFinalLetterP),
+            'ㆵ' => Ok(BopomofoExtended::BopomofoFinalLetterT),
+            'ㆶ' => Ok(BopomofoExtended::BopomofoFinalLetterK),
+            'ㆷ' => Ok(BopomofoExtended::BopomofoFinalLetterH),
+            'ㆸ' => Ok(BopomofoExtended::BopomofoLetterGh),
+            'ㆹ' => Ok(BopomofoExtended::BopomofoLetterLh),
+            'ㆺ' => Ok(BopomofoExtended::BopomofoLetterZy),
             _ => Err(()),
         }
     }

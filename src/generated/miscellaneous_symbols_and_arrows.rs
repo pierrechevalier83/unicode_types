@@ -1,508 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2b00}: '⬀'
-    pub const NORTH_EAST_WHITE_ARROW: char = '⬀';
-    /// \u{2b01}: '⬁'
-    pub const NORTH_WEST_WHITE_ARROW: char = '⬁';
-    /// \u{2b02}: '⬂'
-    pub const SOUTH_EAST_WHITE_ARROW: char = '⬂';
-    /// \u{2b03}: '⬃'
-    pub const SOUTH_WEST_WHITE_ARROW: char = '⬃';
-    /// \u{2b04}: '⬄'
-    pub const LEFT_RIGHT_WHITE_ARROW: char = '⬄';
-    /// \u{2b05}: '⬅'
-    pub const LEFTWARDS_BLACK_ARROW: char = '⬅';
-    /// \u{2b06}: '⬆'
-    pub const UPWARDS_BLACK_ARROW: char = '⬆';
-    /// \u{2b07}: '⬇'
-    pub const DOWNWARDS_BLACK_ARROW: char = '⬇';
-    /// \u{2b08}: '⬈'
-    pub const NORTH_EAST_BLACK_ARROW: char = '⬈';
-    /// \u{2b09}: '⬉'
-    pub const NORTH_WEST_BLACK_ARROW: char = '⬉';
-    /// \u{2b0a}: '⬊'
-    pub const SOUTH_EAST_BLACK_ARROW: char = '⬊';
-    /// \u{2b0b}: '⬋'
-    pub const SOUTH_WEST_BLACK_ARROW: char = '⬋';
-    /// \u{2b0c}: '⬌'
-    pub const LEFT_RIGHT_BLACK_ARROW: char = '⬌';
-    /// \u{2b0d}: '⬍'
-    pub const UP_DOWN_BLACK_ARROW: char = '⬍';
-    /// \u{2b0e}: '⬎'
-    pub const RIGHTWARDS_ARROW_WITH_TIP_DOWNWARDS: char = '⬎';
-    /// \u{2b0f}: '⬏'
-    pub const RIGHTWARDS_ARROW_WITH_TIP_UPWARDS: char = '⬏';
-    /// \u{2b10}: '⬐'
-    pub const LEFTWARDS_ARROW_WITH_TIP_DOWNWARDS: char = '⬐';
-    /// \u{2b11}: '⬑'
-    pub const LEFTWARDS_ARROW_WITH_TIP_UPWARDS: char = '⬑';
-    /// \u{2b12}: '⬒'
-    pub const SQUARE_WITH_TOP_HALF_BLACK: char = '⬒';
-    /// \u{2b13}: '⬓'
-    pub const SQUARE_WITH_BOTTOM_HALF_BLACK: char = '⬓';
-    /// \u{2b14}: '⬔'
-    pub const SQUARE_WITH_UPPER_RIGHT_DIAGONAL_HALF_BLACK: char = '⬔';
-    /// \u{2b15}: '⬕'
-    pub const SQUARE_WITH_LOWER_LEFT_DIAGONAL_HALF_BLACK: char = '⬕';
-    /// \u{2b16}: '⬖'
-    pub const DIAMOND_WITH_LEFT_HALF_BLACK: char = '⬖';
-    /// \u{2b17}: '⬗'
-    pub const DIAMOND_WITH_RIGHT_HALF_BLACK: char = '⬗';
-    /// \u{2b18}: '⬘'
-    pub const DIAMOND_WITH_TOP_HALF_BLACK: char = '⬘';
-    /// \u{2b19}: '⬙'
-    pub const DIAMOND_WITH_BOTTOM_HALF_BLACK: char = '⬙';
-    /// \u{2b1a}: '⬚'
-    pub const DOTTED_SQUARE: char = '⬚';
-    /// \u{2b1b}: '⬛'
-    pub const BLACK_LARGE_SQUARE: char = '⬛';
-    /// \u{2b1c}: '⬜'
-    pub const WHITE_LARGE_SQUARE: char = '⬜';
-    /// \u{2b1d}: '⬝'
-    pub const BLACK_VERY_SMALL_SQUARE: char = '⬝';
-    /// \u{2b1e}: '⬞'
-    pub const WHITE_VERY_SMALL_SQUARE: char = '⬞';
-    /// \u{2b1f}: '⬟'
-    pub const BLACK_PENTAGON: char = '⬟';
-    /// \u{2b20}: '⬠'
-    pub const WHITE_PENTAGON: char = '⬠';
-    /// \u{2b21}: '⬡'
-    pub const WHITE_HEXAGON: char = '⬡';
-    /// \u{2b22}: '⬢'
-    pub const BLACK_HEXAGON: char = '⬢';
-    /// \u{2b23}: '⬣'
-    pub const HORIZONTAL_BLACK_HEXAGON: char = '⬣';
-    /// \u{2b24}: '⬤'
-    pub const BLACK_LARGE_CIRCLE: char = '⬤';
-    /// \u{2b25}: '⬥'
-    pub const BLACK_MEDIUM_DIAMOND: char = '⬥';
-    /// \u{2b26}: '⬦'
-    pub const WHITE_MEDIUM_DIAMOND: char = '⬦';
-    /// \u{2b27}: '⬧'
-    pub const BLACK_MEDIUM_LOZENGE: char = '⬧';
-    /// \u{2b28}: '⬨'
-    pub const WHITE_MEDIUM_LOZENGE: char = '⬨';
-    /// \u{2b29}: '⬩'
-    pub const BLACK_SMALL_DIAMOND: char = '⬩';
-    /// \u{2b2a}: '⬪'
-    pub const BLACK_SMALL_LOZENGE: char = '⬪';
-    /// \u{2b2b}: '⬫'
-    pub const WHITE_SMALL_LOZENGE: char = '⬫';
-    /// \u{2b2c}: '⬬'
-    pub const BLACK_HORIZONTAL_ELLIPSE: char = '⬬';
-    /// \u{2b2d}: '⬭'
-    pub const WHITE_HORIZONTAL_ELLIPSE: char = '⬭';
-    /// \u{2b2e}: '⬮'
-    pub const BLACK_VERTICAL_ELLIPSE: char = '⬮';
-    /// \u{2b2f}: '⬯'
-    pub const WHITE_VERTICAL_ELLIPSE: char = '⬯';
-    /// \u{2b30}: '⬰'
-    pub const LEFT_ARROW_WITH_SMALL_CIRCLE: char = '⬰';
-    /// \u{2b31}: '⬱'
-    pub const THREE_LEFTWARDS_ARROWS: char = '⬱';
-    /// \u{2b32}: '⬲'
-    pub const LEFT_ARROW_WITH_CIRCLED_PLUS: char = '⬲';
-    /// \u{2b33}: '⬳'
-    pub const LONG_LEFTWARDS_SQUIGGLE_ARROW: char = '⬳';
-    /// \u{2b34}: '⬴'
-    pub const LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_VERTICAL_STROKE: char = '⬴';
-    /// \u{2b35}: '⬵'
-    pub const LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_DOUBLE_VERTICAL_STROKE: char = '⬵';
-    /// \u{2b36}: '⬶'
-    pub const LEFTWARDS_TWO_DASH_HEADED_ARROW_FROM_BAR: char = '⬶';
-    /// \u{2b37}: '⬷'
-    pub const LEFTWARDS_TWO_DASH_HEADED_TRIPLE_DASH_ARROW: char = '⬷';
-    /// \u{2b38}: '⬸'
-    pub const LEFTWARDS_ARROW_WITH_DOTTED_STEM: char = '⬸';
-    /// \u{2b39}: '⬹'
-    pub const LEFTWARDS_ARROW_WITH_TAIL_WITH_VERTICAL_STROKE: char = '⬹';
-    /// \u{2b3a}: '⬺'
-    pub const LEFTWARDS_ARROW_WITH_TAIL_WITH_DOUBLE_VERTICAL_STROKE: char = '⬺';
-    /// \u{2b3b}: '⬻'
-    pub const LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TAIL: char = '⬻';
-    /// \u{2b3c}: '⬼'
-    pub const LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TAIL_WITH_VERTICAL_STROKE: char = '⬼';
-    /// \u{2b3d}: '⬽'
-    pub const LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TAIL_WITH_DOUBLE_VERTICAL_STROKE: char = '⬽';
-    /// \u{2b3e}: '⬾'
-    pub const LEFTWARDS_ARROW_THROUGH_X: char = '⬾';
-    /// \u{2b3f}: '⬿'
-    pub const WAVE_ARROW_POINTING_DIRECTLY_LEFT: char = '⬿';
-    /// \u{2b40}: '⭀'
-    pub const EQUALS_SIGN_ABOVE_LEFTWARDS_ARROW: char = '⭀';
-    /// \u{2b41}: '⭁'
-    pub const REVERSE_TILDE_OPERATOR_ABOVE_LEFTWARDS_ARROW: char = '⭁';
-    /// \u{2b42}: '⭂'
-    pub const LEFTWARDS_ARROW_ABOVE_REVERSE_ALMOST_EQUAL_TO: char = '⭂';
-    /// \u{2b43}: '⭃'
-    pub const RIGHTWARDS_ARROW_THROUGH_GREATER_DASH_THAN: char = '⭃';
-    /// \u{2b44}: '⭄'
-    pub const RIGHTWARDS_ARROW_THROUGH_SUPERSET: char = '⭄';
-    /// \u{2b45}: '⭅'
-    pub const LEFTWARDS_QUADRUPLE_ARROW: char = '⭅';
-    /// \u{2b46}: '⭆'
-    pub const RIGHTWARDS_QUADRUPLE_ARROW: char = '⭆';
-    /// \u{2b47}: '⭇'
-    pub const REVERSE_TILDE_OPERATOR_ABOVE_RIGHTWARDS_ARROW: char = '⭇';
-    /// \u{2b48}: '⭈'
-    pub const RIGHTWARDS_ARROW_ABOVE_REVERSE_ALMOST_EQUAL_TO: char = '⭈';
-    /// \u{2b49}: '⭉'
-    pub const TILDE_OPERATOR_ABOVE_LEFTWARDS_ARROW: char = '⭉';
-    /// \u{2b4a}: '⭊'
-    pub const LEFTWARDS_ARROW_ABOVE_ALMOST_EQUAL_TO: char = '⭊';
-    /// \u{2b4b}: '⭋'
-    pub const LEFTWARDS_ARROW_ABOVE_REVERSE_TILDE_OPERATOR: char = '⭋';
-    /// \u{2b4c}: '⭌'
-    pub const RIGHTWARDS_ARROW_ABOVE_REVERSE_TILDE_OPERATOR: char = '⭌';
-    /// \u{2b4d}: '⭍'
-    pub const DOWNWARDS_TRIANGLE_DASH_HEADED_ZIGZAG_ARROW: char = '⭍';
-    /// \u{2b4e}: '⭎'
-    pub const SHORT_SLANTED_NORTH_ARROW: char = '⭎';
-    /// \u{2b4f}: '⭏'
-    pub const SHORT_BACKSLANTED_SOUTH_ARROW: char = '⭏';
-    /// \u{2b50}: '⭐'
-    pub const WHITE_MEDIUM_STAR: char = '⭐';
-    /// \u{2b51}: '⭑'
-    pub const BLACK_SMALL_STAR: char = '⭑';
-    /// \u{2b52}: '⭒'
-    pub const WHITE_SMALL_STAR: char = '⭒';
-    /// \u{2b53}: '⭓'
-    pub const BLACK_RIGHT_DASH_POINTING_PENTAGON: char = '⭓';
-    /// \u{2b54}: '⭔'
-    pub const WHITE_RIGHT_DASH_POINTING_PENTAGON: char = '⭔';
-    /// \u{2b55}: '⭕'
-    pub const HEAVY_LARGE_CIRCLE: char = '⭕';
-    /// \u{2b56}: '⭖'
-    pub const HEAVY_OVAL_WITH_OVAL_INSIDE: char = '⭖';
-    /// \u{2b57}: '⭗'
-    pub const HEAVY_CIRCLE_WITH_CIRCLE_INSIDE: char = '⭗';
-    /// \u{2b58}: '⭘'
-    pub const HEAVY_CIRCLE: char = '⭘';
-    /// \u{2b59}: '⭙'
-    pub const HEAVY_CIRCLED_SALTIRE: char = '⭙';
-    /// \u{2b5a}: '⭚'
-    pub const SLANTED_NORTH_ARROW_WITH_HOOKED_HEAD: char = '⭚';
-    /// \u{2b5b}: '⭛'
-    pub const BACKSLANTED_SOUTH_ARROW_WITH_HOOKED_TAIL: char = '⭛';
-    /// \u{2b5c}: '⭜'
-    pub const SLANTED_NORTH_ARROW_WITH_HORIZONTAL_TAIL: char = '⭜';
-    /// \u{2b5d}: '⭝'
-    pub const BACKSLANTED_SOUTH_ARROW_WITH_HORIZONTAL_TAIL: char = '⭝';
-    /// \u{2b5e}: '⭞'
-    pub const BENT_ARROW_POINTING_DOWNWARDS_THEN_NORTH_EAST: char = '⭞';
-    /// \u{2b5f}: '⭟'
-    pub const SHORT_BENT_ARROW_POINTING_DOWNWARDS_THEN_NORTH_EAST: char = '⭟';
-    /// \u{2b60}: '⭠'
-    pub const LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW: char = '⭠';
-    /// \u{2b61}: '⭡'
-    pub const UPWARDS_TRIANGLE_DASH_HEADED_ARROW: char = '⭡';
-    /// \u{2b62}: '⭢'
-    pub const RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW: char = '⭢';
-    /// \u{2b63}: '⭣'
-    pub const DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW: char = '⭣';
-    /// \u{2b64}: '⭤'
-    pub const LEFT_RIGHT_TRIANGLE_DASH_HEADED_ARROW: char = '⭤';
-    /// \u{2b65}: '⭥'
-    pub const UP_DOWN_TRIANGLE_DASH_HEADED_ARROW: char = '⭥';
-    /// \u{2b66}: '⭦'
-    pub const NORTH_WEST_TRIANGLE_DASH_HEADED_ARROW: char = '⭦';
-    /// \u{2b67}: '⭧'
-    pub const NORTH_EAST_TRIANGLE_DASH_HEADED_ARROW: char = '⭧';
-    /// \u{2b68}: '⭨'
-    pub const SOUTH_EAST_TRIANGLE_DASH_HEADED_ARROW: char = '⭨';
-    /// \u{2b69}: '⭩'
-    pub const SOUTH_WEST_TRIANGLE_DASH_HEADED_ARROW: char = '⭩';
-    /// \u{2b6a}: '⭪'
-    pub const LEFTWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW: char = '⭪';
-    /// \u{2b6b}: '⭫'
-    pub const UPWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW: char = '⭫';
-    /// \u{2b6c}: '⭬'
-    pub const RIGHTWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW: char = '⭬';
-    /// \u{2b6d}: '⭭'
-    pub const DOWNWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW: char = '⭭';
-    /// \u{2b6e}: '⭮'
-    pub const CLOCKWISE_TRIANGLE_DASH_HEADED_OPEN_CIRCLE_ARROW: char = '⭮';
-    /// \u{2b6f}: '⭯'
-    pub const ANTICLOCKWISE_TRIANGLE_DASH_HEADED_OPEN_CIRCLE_ARROW: char = '⭯';
-    /// \u{2b70}: '⭰'
-    pub const LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR: char = '⭰';
-    /// \u{2b71}: '⭱'
-    pub const UPWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR: char = '⭱';
-    /// \u{2b72}: '⭲'
-    pub const RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR: char = '⭲';
-    /// \u{2b73}: '⭳'
-    pub const DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR: char = '⭳';
-    /// \u{2b76}: '⭶'
-    pub const NORTH_WEST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR: char = '⭶';
-    /// \u{2b77}: '⭷'
-    pub const NORTH_EAST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR: char = '⭷';
-    /// \u{2b78}: '⭸'
-    pub const SOUTH_EAST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR: char = '⭸';
-    /// \u{2b79}: '⭹'
-    pub const SOUTH_WEST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR: char = '⭹';
-    /// \u{2b7a}: '⭺'
-    pub const LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE: char = '⭺';
-    /// \u{2b7b}: '⭻'
-    pub const UPWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE: char = '⭻';
-    /// \u{2b7c}: '⭼'
-    pub const RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE: char = '⭼';
-    /// \u{2b7d}: '⭽'
-    pub const DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE: char = '⭽';
-    /// \u{2b7e}: '⭾'
-    pub const HORIZONTAL_TAB_KEY: char = '⭾';
-    /// \u{2b7f}: '⭿'
-    pub const VERTICAL_TAB_KEY: char = '⭿';
-    /// \u{2b80}: '⮀'
-    pub const LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_OVER_RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW: char = '⮀';
-    /// \u{2b81}: '⮁'
-    pub const UPWARDS_TRIANGLE_DASH_HEADED_ARROW_LEFTWARDS_OF_DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW: char = '⮁';
-    /// \u{2b82}: '⮂'
-    pub const RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_OVER_LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW: char = '⮂';
-    /// \u{2b83}: '⮃'
-    pub const DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_LEFTWARDS_OF_UPWARDS_TRIANGLE_DASH_HEADED_ARROW: char = '⮃';
-    /// \u{2b84}: '⮄'
-    pub const LEFTWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS: char = '⮄';
-    /// \u{2b85}: '⮅'
-    pub const UPWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS: char = '⮅';
-    /// \u{2b86}: '⮆'
-    pub const RIGHTWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS: char = '⮆';
-    /// \u{2b87}: '⮇'
-    pub const DOWNWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS: char = '⮇';
-    /// \u{2b88}: '⮈'
-    pub const LEFTWARDS_BLACK_CIRCLED_WHITE_ARROW: char = '⮈';
-    /// \u{2b89}: '⮉'
-    pub const UPWARDS_BLACK_CIRCLED_WHITE_ARROW: char = '⮉';
-    /// \u{2b8a}: '⮊'
-    pub const RIGHTWARDS_BLACK_CIRCLED_WHITE_ARROW: char = '⮊';
-    /// \u{2b8b}: '⮋'
-    pub const DOWNWARDS_BLACK_CIRCLED_WHITE_ARROW: char = '⮋';
-    /// \u{2b8c}: '⮌'
-    pub const ANTICLOCKWISE_TRIANGLE_DASH_HEADED_RIGHT_U_DASH_SHAPED_ARROW: char = '⮌';
-    /// \u{2b8d}: '⮍'
-    pub const ANTICLOCKWISE_TRIANGLE_DASH_HEADED_BOTTOM_U_DASH_SHAPED_ARROW: char = '⮍';
-    /// \u{2b8e}: '⮎'
-    pub const ANTICLOCKWISE_TRIANGLE_DASH_HEADED_LEFT_U_DASH_SHAPED_ARROW: char = '⮎';
-    /// \u{2b8f}: '⮏'
-    pub const ANTICLOCKWISE_TRIANGLE_DASH_HEADED_TOP_U_DASH_SHAPED_ARROW: char = '⮏';
-    /// \u{2b90}: '⮐'
-    pub const RETURN_LEFT: char = '⮐';
-    /// \u{2b91}: '⮑'
-    pub const RETURN_RIGHT: char = '⮑';
-    /// \u{2b92}: '⮒'
-    pub const NEWLINE_LEFT: char = '⮒';
-    /// \u{2b93}: '⮓'
-    pub const NEWLINE_RIGHT: char = '⮓';
-    /// \u{2b94}: '⮔'
-    pub const FOUR_CORNER_ARROWS_CIRCLING_ANTICLOCKWISE: char = '⮔';
-    /// \u{2b95}: '⮕'
-    pub const RIGHTWARDS_BLACK_ARROW: char = '⮕';
-    /// \u{2b98}: '⮘'
-    pub const THREE_DASH_D_TOP_DASH_LIGHTED_LEFTWARDS_EQUILATERAL_ARROWHEAD: char = '⮘';
-    /// \u{2b99}: '⮙'
-    pub const THREE_DASH_D_RIGHT_DASH_LIGHTED_UPWARDS_EQUILATERAL_ARROWHEAD: char = '⮙';
-    /// \u{2b9a}: '⮚'
-    pub const THREE_DASH_D_TOP_DASH_LIGHTED_RIGHTWARDS_EQUILATERAL_ARROWHEAD: char = '⮚';
-    /// \u{2b9b}: '⮛'
-    pub const THREE_DASH_D_LEFT_DASH_LIGHTED_DOWNWARDS_EQUILATERAL_ARROWHEAD: char = '⮛';
-    /// \u{2b9c}: '⮜'
-    pub const BLACK_LEFTWARDS_EQUILATERAL_ARROWHEAD: char = '⮜';
-    /// \u{2b9d}: '⮝'
-    pub const BLACK_UPWARDS_EQUILATERAL_ARROWHEAD: char = '⮝';
-    /// \u{2b9e}: '⮞'
-    pub const BLACK_RIGHTWARDS_EQUILATERAL_ARROWHEAD: char = '⮞';
-    /// \u{2b9f}: '⮟'
-    pub const BLACK_DOWNWARDS_EQUILATERAL_ARROWHEAD: char = '⮟';
-    /// \u{2ba0}: '⮠'
-    pub const DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_LEFTWARDS: char = '⮠';
-    /// \u{2ba1}: '⮡'
-    pub const DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_RIGHTWARDS: char = '⮡';
-    /// \u{2ba2}: '⮢'
-    pub const UPWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_LEFTWARDS: char = '⮢';
-    /// \u{2ba3}: '⮣'
-    pub const UPWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_RIGHTWARDS: char = '⮣';
-    /// \u{2ba4}: '⮤'
-    pub const LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_UPWARDS: char = '⮤';
-    /// \u{2ba5}: '⮥'
-    pub const RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_UPWARDS: char = '⮥';
-    /// \u{2ba6}: '⮦'
-    pub const LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_DOWNWARDS: char = '⮦';
-    /// \u{2ba7}: '⮧'
-    pub const RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_DOWNWARDS: char = '⮧';
-    /// \u{2ba8}: '⮨'
-    pub const BLACK_CURVED_DOWNWARDS_AND_LEFTWARDS_ARROW: char = '⮨';
-    /// \u{2ba9}: '⮩'
-    pub const BLACK_CURVED_DOWNWARDS_AND_RIGHTWARDS_ARROW: char = '⮩';
-    /// \u{2baa}: '⮪'
-    pub const BLACK_CURVED_UPWARDS_AND_LEFTWARDS_ARROW: char = '⮪';
-    /// \u{2bab}: '⮫'
-    pub const BLACK_CURVED_UPWARDS_AND_RIGHTWARDS_ARROW: char = '⮫';
-    /// \u{2bac}: '⮬'
-    pub const BLACK_CURVED_LEFTWARDS_AND_UPWARDS_ARROW: char = '⮬';
-    /// \u{2bad}: '⮭'
-    pub const BLACK_CURVED_RIGHTWARDS_AND_UPWARDS_ARROW: char = '⮭';
-    /// \u{2bae}: '⮮'
-    pub const BLACK_CURVED_LEFTWARDS_AND_DOWNWARDS_ARROW: char = '⮮';
-    /// \u{2baf}: '⮯'
-    pub const BLACK_CURVED_RIGHTWARDS_AND_DOWNWARDS_ARROW: char = '⮯';
-    /// \u{2bb0}: '⮰'
-    pub const RIBBON_ARROW_DOWN_LEFT: char = '⮰';
-    /// \u{2bb1}: '⮱'
-    pub const RIBBON_ARROW_DOWN_RIGHT: char = '⮱';
-    /// \u{2bb2}: '⮲'
-    pub const RIBBON_ARROW_UP_LEFT: char = '⮲';
-    /// \u{2bb3}: '⮳'
-    pub const RIBBON_ARROW_UP_RIGHT: char = '⮳';
-    /// \u{2bb4}: '⮴'
-    pub const RIBBON_ARROW_LEFT_UP: char = '⮴';
-    /// \u{2bb5}: '⮵'
-    pub const RIBBON_ARROW_RIGHT_UP: char = '⮵';
-    /// \u{2bb6}: '⮶'
-    pub const RIBBON_ARROW_LEFT_DOWN: char = '⮶';
-    /// \u{2bb7}: '⮷'
-    pub const RIBBON_ARROW_RIGHT_DOWN: char = '⮷';
-    /// \u{2bb8}: '⮸'
-    pub const UPWARDS_WHITE_ARROW_FROM_BAR_WITH_HORIZONTAL_BAR: char = '⮸';
-    /// \u{2bb9}: '⮹'
-    pub const UP_ARROWHEAD_IN_A_RECTANGLE_BOX: char = '⮹';
-    /// \u{2bba}: '⮺'
-    pub const OVERLAPPING_WHITE_SQUARES: char = '⮺';
-    /// \u{2bbb}: '⮻'
-    pub const OVERLAPPING_WHITE_AND_BLACK_SQUARES: char = '⮻';
-    /// \u{2bbc}: '⮼'
-    pub const OVERLAPPING_BLACK_SQUARES: char = '⮼';
-    /// \u{2bbd}: '⮽'
-    pub const BALLOT_BOX_WITH_LIGHT_X: char = '⮽';
-    /// \u{2bbe}: '⮾'
-    pub const CIRCLED_X: char = '⮾';
-    /// \u{2bbf}: '⮿'
-    pub const CIRCLED_BOLD_X: char = '⮿';
-    /// \u{2bc0}: '⯀'
-    pub const BLACK_SQUARE_CENTRED: char = '⯀';
-    /// \u{2bc1}: '⯁'
-    pub const BLACK_DIAMOND_CENTRED: char = '⯁';
-    /// \u{2bc2}: '⯂'
-    pub const TURNED_BLACK_PENTAGON: char = '⯂';
-    /// \u{2bc3}: '⯃'
-    pub const HORIZONTAL_BLACK_OCTAGON: char = '⯃';
-    /// \u{2bc4}: '⯄'
-    pub const BLACK_OCTAGON: char = '⯄';
-    /// \u{2bc5}: '⯅'
-    pub const BLACK_MEDIUM_UP_DASH_POINTING_TRIANGLE_CENTRED: char = '⯅';
-    /// \u{2bc6}: '⯆'
-    pub const BLACK_MEDIUM_DOWN_DASH_POINTING_TRIANGLE_CENTRED: char = '⯆';
-    /// \u{2bc7}: '⯇'
-    pub const BLACK_MEDIUM_LEFT_DASH_POINTING_TRIANGLE_CENTRED: char = '⯇';
-    /// \u{2bc8}: '⯈'
-    pub const BLACK_MEDIUM_RIGHT_DASH_POINTING_TRIANGLE_CENTRED: char = '⯈';
-    /// \u{2bc9}: '⯉'
-    pub const NEPTUNE_FORM_TWO: char = '⯉';
-    /// \u{2bca}: '⯊'
-    pub const TOP_HALF_BLACK_CIRCLE: char = '⯊';
-    /// \u{2bcb}: '⯋'
-    pub const BOTTOM_HALF_BLACK_CIRCLE: char = '⯋';
-    /// \u{2bcc}: '⯌'
-    pub const LIGHT_FOUR_POINTED_BLACK_CUSP: char = '⯌';
-    /// \u{2bcd}: '⯍'
-    pub const ROTATED_LIGHT_FOUR_POINTED_BLACK_CUSP: char = '⯍';
-    /// \u{2bce}: '⯎'
-    pub const WHITE_FOUR_POINTED_CUSP: char = '⯎';
-    /// \u{2bcf}: '⯏'
-    pub const ROTATED_WHITE_FOUR_POINTED_CUSP: char = '⯏';
-    /// \u{2bd0}: '⯐'
-    pub const SQUARE_POSITION_INDICATOR: char = '⯐';
-    /// \u{2bd1}: '⯑'
-    pub const UNCERTAINTY_SIGN: char = '⯑';
-    /// \u{2bd2}: '⯒'
-    pub const GROUP_MARK: char = '⯒';
-    /// \u{2bd3}: '⯓'
-    pub const PLUTO_FORM_TWO: char = '⯓';
-    /// \u{2bd4}: '⯔'
-    pub const PLUTO_FORM_THREE: char = '⯔';
-    /// \u{2bd5}: '⯕'
-    pub const PLUTO_FORM_FOUR: char = '⯕';
-    /// \u{2bd6}: '⯖'
-    pub const PLUTO_FORM_FIVE: char = '⯖';
-    /// \u{2bd7}: '⯗'
-    pub const TRANSPLUTO: char = '⯗';
-    /// \u{2bd8}: '⯘'
-    pub const PROSERPINA: char = '⯘';
-    /// \u{2bd9}: '⯙'
-    pub const ASTRAEA: char = '⯙';
-    /// \u{2bda}: '⯚'
-    pub const HYGIEA: char = '⯚';
-    /// \u{2bdb}: '⯛'
-    pub const PHOLUS: char = '⯛';
-    /// \u{2bdc}: '⯜'
-    pub const NESSUS: char = '⯜';
-    /// \u{2bdd}: '⯝'
-    pub const WHITE_MOON_SELENA: char = '⯝';
-    /// \u{2bde}: '⯞'
-    pub const BLACK_DIAMOND_ON_CROSS: char = '⯞';
-    /// \u{2bdf}: '⯟'
-    pub const TRUE_LIGHT_MOON_ARTA: char = '⯟';
-    /// \u{2be0}: '⯠'
-    pub const CUPIDO: char = '⯠';
-    /// \u{2be1}: '⯡'
-    pub const HADES: char = '⯡';
-    /// \u{2be2}: '⯢'
-    pub const ZEUS: char = '⯢';
-    /// \u{2be3}: '⯣'
-    pub const KRONOS: char = '⯣';
-    /// \u{2be4}: '⯤'
-    pub const APOLLON: char = '⯤';
-    /// \u{2be5}: '⯥'
-    pub const ADMETOS: char = '⯥';
-    /// \u{2be6}: '⯦'
-    pub const VULCANUS: char = '⯦';
-    /// \u{2be7}: '⯧'
-    pub const POSEIDON: char = '⯧';
-    /// \u{2be8}: '⯨'
-    pub const LEFT_HALF_BLACK_STAR: char = '⯨';
-    /// \u{2be9}: '⯩'
-    pub const RIGHT_HALF_BLACK_STAR: char = '⯩';
-    /// \u{2bea}: '⯪'
-    pub const STAR_WITH_LEFT_HALF_BLACK: char = '⯪';
-    /// \u{2beb}: '⯫'
-    pub const STAR_WITH_RIGHT_HALF_BLACK: char = '⯫';
-    /// \u{2bec}: '⯬'
-    pub const LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS: char = '⯬';
-    /// \u{2bed}: '⯭'
-    pub const UPWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS: char = '⯭';
-    /// \u{2bee}: '⯮'
-    pub const RIGHTWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS: char = '⯮';
-    /// \u{2bef}: '⯯'
-    pub const DOWNWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS: char = '⯯';
-    /// \u{2bf0}: '⯰'
-    pub const ERIS_FORM_ONE: char = '⯰';
-    /// \u{2bf1}: '⯱'
-    pub const ERIS_FORM_TWO: char = '⯱';
-    /// \u{2bf2}: '⯲'
-    pub const SEDNA: char = '⯲';
-    /// \u{2bf3}: '⯳'
-    pub const RUSSIAN_ASTROLOGICAL_SYMBOL_VIGINTILE: char = '⯳';
-    /// \u{2bf4}: '⯴'
-    pub const RUSSIAN_ASTROLOGICAL_SYMBOL_NOVILE: char = '⯴';
-    /// \u{2bf5}: '⯵'
-    pub const RUSSIAN_ASTROLOGICAL_SYMBOL_QUINTILE: char = '⯵';
-    /// \u{2bf6}: '⯶'
-    pub const RUSSIAN_ASTROLOGICAL_SYMBOL_BINOVILE: char = '⯶';
-    /// \u{2bf7}: '⯷'
-    pub const RUSSIAN_ASTROLOGICAL_SYMBOL_SENTAGON: char = '⯷';
-    /// \u{2bf8}: '⯸'
-    pub const RUSSIAN_ASTROLOGICAL_SYMBOL_TREDECILE: char = '⯸';
-    /// \u{2bf9}: '⯹'
-    pub const EQUALS_SIGN_WITH_INFINITY_BELOW: char = '⯹';
-    /// \u{2bfa}: '⯺'
-    pub const UNITED_SYMBOL: char = '⯺';
-    /// \u{2bfb}: '⯻'
-    pub const SEPARATED_SYMBOL: char = '⯻';
-    /// \u{2bfc}: '⯼'
-    pub const DOUBLED_SYMBOL: char = '⯼';
-    /// \u{2bfd}: '⯽'
-    pub const PASSED_SYMBOL: char = '⯽';
-    /// \u{2bfe}: '⯾'
-    pub const REVERSED_RIGHT_ANGLE: char = '⯾';
-}
 
 /// An enum to represent all characters in the MiscellaneousSymbolsandArrows block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -1013,259 +508,258 @@ pub enum MiscellaneousSymbolsandArrows {
 
 impl Into<char> for MiscellaneousSymbolsandArrows {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MiscellaneousSymbolsandArrows::NorthEastWhiteArrow => NORTH_EAST_WHITE_ARROW,
-            MiscellaneousSymbolsandArrows::NorthWestWhiteArrow => NORTH_WEST_WHITE_ARROW,
-            MiscellaneousSymbolsandArrows::SouthEastWhiteArrow => SOUTH_EAST_WHITE_ARROW,
-            MiscellaneousSymbolsandArrows::SouthWestWhiteArrow => SOUTH_WEST_WHITE_ARROW,
-            MiscellaneousSymbolsandArrows::LeftRightWhiteArrow => LEFT_RIGHT_WHITE_ARROW,
-            MiscellaneousSymbolsandArrows::LeftwardsBlackArrow => LEFTWARDS_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::UpwardsBlackArrow => UPWARDS_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::DownwardsBlackArrow => DOWNWARDS_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::NorthEastBlackArrow => NORTH_EAST_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::NorthWestBlackArrow => NORTH_WEST_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::SouthEastBlackArrow => SOUTH_EAST_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::SouthWestBlackArrow => SOUTH_WEST_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::LeftRightBlackArrow => LEFT_RIGHT_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::UpDownBlackArrow => UP_DOWN_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::RightwardsArrowWithTipDownwards => RIGHTWARDS_ARROW_WITH_TIP_DOWNWARDS,
-            MiscellaneousSymbolsandArrows::RightwardsArrowWithTipUpwards => RIGHTWARDS_ARROW_WITH_TIP_UPWARDS,
-            MiscellaneousSymbolsandArrows::LeftwardsArrowWithTipDownwards => LEFTWARDS_ARROW_WITH_TIP_DOWNWARDS,
-            MiscellaneousSymbolsandArrows::LeftwardsArrowWithTipUpwards => LEFTWARDS_ARROW_WITH_TIP_UPWARDS,
-            MiscellaneousSymbolsandArrows::SquareWithTopHalfBlack => SQUARE_WITH_TOP_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::SquareWithBottomHalfBlack => SQUARE_WITH_BOTTOM_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::SquareWithUpperRightDiagonalHalfBlack => SQUARE_WITH_UPPER_RIGHT_DIAGONAL_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::SquareWithLowerLeftDiagonalHalfBlack => SQUARE_WITH_LOWER_LEFT_DIAGONAL_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::DiamondWithLeftHalfBlack => DIAMOND_WITH_LEFT_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::DiamondWithRightHalfBlack => DIAMOND_WITH_RIGHT_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::DiamondWithTopHalfBlack => DIAMOND_WITH_TOP_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::DiamondWithBottomHalfBlack => DIAMOND_WITH_BOTTOM_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::DottedSquare => DOTTED_SQUARE,
-            MiscellaneousSymbolsandArrows::BlackLargeSquare => BLACK_LARGE_SQUARE,
-            MiscellaneousSymbolsandArrows::WhiteLargeSquare => WHITE_LARGE_SQUARE,
-            MiscellaneousSymbolsandArrows::BlackVerySmallSquare => BLACK_VERY_SMALL_SQUARE,
-            MiscellaneousSymbolsandArrows::WhiteVerySmallSquare => WHITE_VERY_SMALL_SQUARE,
-            MiscellaneousSymbolsandArrows::BlackPentagon => BLACK_PENTAGON,
-            MiscellaneousSymbolsandArrows::WhitePentagon => WHITE_PENTAGON,
-            MiscellaneousSymbolsandArrows::WhiteHexagon => WHITE_HEXAGON,
-            MiscellaneousSymbolsandArrows::BlackHexagon => BLACK_HEXAGON,
-            MiscellaneousSymbolsandArrows::HorizontalBlackHexagon => HORIZONTAL_BLACK_HEXAGON,
-            MiscellaneousSymbolsandArrows::BlackLargeCircle => BLACK_LARGE_CIRCLE,
-            MiscellaneousSymbolsandArrows::BlackMediumDiamond => BLACK_MEDIUM_DIAMOND,
-            MiscellaneousSymbolsandArrows::WhiteMediumDiamond => WHITE_MEDIUM_DIAMOND,
-            MiscellaneousSymbolsandArrows::BlackMediumLozenge => BLACK_MEDIUM_LOZENGE,
-            MiscellaneousSymbolsandArrows::WhiteMediumLozenge => WHITE_MEDIUM_LOZENGE,
-            MiscellaneousSymbolsandArrows::BlackSmallDiamond => BLACK_SMALL_DIAMOND,
-            MiscellaneousSymbolsandArrows::BlackSmallLozenge => BLACK_SMALL_LOZENGE,
-            MiscellaneousSymbolsandArrows::WhiteSmallLozenge => WHITE_SMALL_LOZENGE,
-            MiscellaneousSymbolsandArrows::BlackHorizontalEllipse => BLACK_HORIZONTAL_ELLIPSE,
-            MiscellaneousSymbolsandArrows::WhiteHorizontalEllipse => WHITE_HORIZONTAL_ELLIPSE,
-            MiscellaneousSymbolsandArrows::BlackVerticalEllipse => BLACK_VERTICAL_ELLIPSE,
-            MiscellaneousSymbolsandArrows::WhiteVerticalEllipse => WHITE_VERTICAL_ELLIPSE,
-            MiscellaneousSymbolsandArrows::LeftArrowWithSmallCircle => LEFT_ARROW_WITH_SMALL_CIRCLE,
-            MiscellaneousSymbolsandArrows::ThreeLeftwardsArrows => THREE_LEFTWARDS_ARROWS,
-            MiscellaneousSymbolsandArrows::LeftArrowWithCircledPlus => LEFT_ARROW_WITH_CIRCLED_PLUS,
-            MiscellaneousSymbolsandArrows::LongLeftwardsSquiggleArrow => LONG_LEFTWARDS_SQUIGGLE_ARROW,
-            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithVerticalStroke => LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_VERTICAL_STROKE,
-            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithDoubleVerticalStroke => LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_DOUBLE_VERTICAL_STROKE,
-            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowFromBar => LEFTWARDS_TWO_DASH_HEADED_ARROW_FROM_BAR,
-            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedTripleDashArrow => LEFTWARDS_TWO_DASH_HEADED_TRIPLE_DASH_ARROW,
-            MiscellaneousSymbolsandArrows::LeftwardsArrowWithDottedStem => LEFTWARDS_ARROW_WITH_DOTTED_STEM,
-            MiscellaneousSymbolsandArrows::LeftwardsArrowWithTailWithVerticalStroke => LEFTWARDS_ARROW_WITH_TAIL_WITH_VERTICAL_STROKE,
-            MiscellaneousSymbolsandArrows::LeftwardsArrowWithTailWithDoubleVerticalStroke => LEFTWARDS_ARROW_WITH_TAIL_WITH_DOUBLE_VERTICAL_STROKE,
-            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTail => LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TAIL,
-            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTailWithVerticalStroke => LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TAIL_WITH_VERTICAL_STROKE,
-            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTailWithDoubleVerticalStroke => LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TAIL_WITH_DOUBLE_VERTICAL_STROKE,
-            MiscellaneousSymbolsandArrows::LeftwardsArrowThroughX => LEFTWARDS_ARROW_THROUGH_X,
-            MiscellaneousSymbolsandArrows::WaveArrowPointingDirectlyLeft => WAVE_ARROW_POINTING_DIRECTLY_LEFT,
-            MiscellaneousSymbolsandArrows::EqualsSignAboveLeftwardsArrow => EQUALS_SIGN_ABOVE_LEFTWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::ReverseTildeOperatorAboveLeftwardsArrow => REVERSE_TILDE_OPERATOR_ABOVE_LEFTWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::LeftwardsArrowAboveReverseAlmostEqualTo => LEFTWARDS_ARROW_ABOVE_REVERSE_ALMOST_EQUAL_TO,
-            MiscellaneousSymbolsandArrows::RightwardsArrowThroughGreaterDashThan => RIGHTWARDS_ARROW_THROUGH_GREATER_DASH_THAN,
-            MiscellaneousSymbolsandArrows::RightwardsArrowThroughSuperset => RIGHTWARDS_ARROW_THROUGH_SUPERSET,
-            MiscellaneousSymbolsandArrows::LeftwardsQuadrupleArrow => LEFTWARDS_QUADRUPLE_ARROW,
-            MiscellaneousSymbolsandArrows::RightwardsQuadrupleArrow => RIGHTWARDS_QUADRUPLE_ARROW,
-            MiscellaneousSymbolsandArrows::ReverseTildeOperatorAboveRightwardsArrow => REVERSE_TILDE_OPERATOR_ABOVE_RIGHTWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::RightwardsArrowAboveReverseAlmostEqualTo => RIGHTWARDS_ARROW_ABOVE_REVERSE_ALMOST_EQUAL_TO,
-            MiscellaneousSymbolsandArrows::TildeOperatorAboveLeftwardsArrow => TILDE_OPERATOR_ABOVE_LEFTWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::LeftwardsArrowAboveAlmostEqualTo => LEFTWARDS_ARROW_ABOVE_ALMOST_EQUAL_TO,
-            MiscellaneousSymbolsandArrows::LeftwardsArrowAboveReverseTildeOperator => LEFTWARDS_ARROW_ABOVE_REVERSE_TILDE_OPERATOR,
-            MiscellaneousSymbolsandArrows::RightwardsArrowAboveReverseTildeOperator => RIGHTWARDS_ARROW_ABOVE_REVERSE_TILDE_OPERATOR,
-            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedZigzagArrow => DOWNWARDS_TRIANGLE_DASH_HEADED_ZIGZAG_ARROW,
-            MiscellaneousSymbolsandArrows::ShortSlantedNorthArrow => SHORT_SLANTED_NORTH_ARROW,
-            MiscellaneousSymbolsandArrows::ShortBackslantedSouthArrow => SHORT_BACKSLANTED_SOUTH_ARROW,
-            MiscellaneousSymbolsandArrows::WhiteMediumStar => WHITE_MEDIUM_STAR,
-            MiscellaneousSymbolsandArrows::BlackSmallStar => BLACK_SMALL_STAR,
-            MiscellaneousSymbolsandArrows::WhiteSmallStar => WHITE_SMALL_STAR,
-            MiscellaneousSymbolsandArrows::BlackRightDashPointingPentagon => BLACK_RIGHT_DASH_POINTING_PENTAGON,
-            MiscellaneousSymbolsandArrows::WhiteRightDashPointingPentagon => WHITE_RIGHT_DASH_POINTING_PENTAGON,
-            MiscellaneousSymbolsandArrows::HeavyLargeCircle => HEAVY_LARGE_CIRCLE,
-            MiscellaneousSymbolsandArrows::HeavyOvalWithOvalInside => HEAVY_OVAL_WITH_OVAL_INSIDE,
-            MiscellaneousSymbolsandArrows::HeavyCircleWithCircleInside => HEAVY_CIRCLE_WITH_CIRCLE_INSIDE,
-            MiscellaneousSymbolsandArrows::HeavyCircle => HEAVY_CIRCLE,
-            MiscellaneousSymbolsandArrows::HeavyCircledSaltire => HEAVY_CIRCLED_SALTIRE,
-            MiscellaneousSymbolsandArrows::SlantedNorthArrowWithHookedHead => SLANTED_NORTH_ARROW_WITH_HOOKED_HEAD,
-            MiscellaneousSymbolsandArrows::BackslantedSouthArrowWithHookedTail => BACKSLANTED_SOUTH_ARROW_WITH_HOOKED_TAIL,
-            MiscellaneousSymbolsandArrows::SlantedNorthArrowWithHorizontalTail => SLANTED_NORTH_ARROW_WITH_HORIZONTAL_TAIL,
-            MiscellaneousSymbolsandArrows::BackslantedSouthArrowWithHorizontalTail => BACKSLANTED_SOUTH_ARROW_WITH_HORIZONTAL_TAIL,
-            MiscellaneousSymbolsandArrows::BentArrowPointingDownwardsThenNorthEast => BENT_ARROW_POINTING_DOWNWARDS_THEN_NORTH_EAST,
-            MiscellaneousSymbolsandArrows::ShortBentArrowPointingDownwardsThenNorthEast => SHORT_BENT_ARROW_POINTING_DOWNWARDS_THEN_NORTH_EAST,
-            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrow => LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrow => UPWARDS_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrow => RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrow => DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::LeftRightTriangleDashHeadedArrow => LEFT_RIGHT_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::UpDownTriangleDashHeadedArrow => UP_DOWN_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::NorthWestTriangleDashHeadedArrow => NORTH_WEST_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::NorthEastTriangleDashHeadedArrow => NORTH_EAST_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::SouthEastTriangleDashHeadedArrow => SOUTH_EAST_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::SouthWestTriangleDashHeadedArrow => SOUTH_WEST_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedDashedArrow => LEFTWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW,
-            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedDashedArrow => UPWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW,
-            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedDashedArrow => RIGHTWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW,
-            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedDashedArrow => DOWNWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW,
-            MiscellaneousSymbolsandArrows::ClockwiseTriangleDashHeadedOpenCircleArrow => CLOCKWISE_TRIANGLE_DASH_HEADED_OPEN_CIRCLE_ARROW,
-            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedOpenCircleArrow => ANTICLOCKWISE_TRIANGLE_DASH_HEADED_OPEN_CIRCLE_ARROW,
-            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowToBar => LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR,
-            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowToBar => UPWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR,
-            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowToBar => RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR,
-            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowToBar => DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR,
-            MiscellaneousSymbolsandArrows::NorthWestTriangleDashHeadedArrowToBar => NORTH_WEST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR,
-            MiscellaneousSymbolsandArrows::NorthEastTriangleDashHeadedArrowToBar => NORTH_EAST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR,
-            MiscellaneousSymbolsandArrows::SouthEastTriangleDashHeadedArrowToBar => SOUTH_EAST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR,
-            MiscellaneousSymbolsandArrows::SouthWestTriangleDashHeadedArrowToBar => SOUTH_WEST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR,
-            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke => LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE,
-            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke => UPWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE,
-            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke => RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE,
-            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke => DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE,
-            MiscellaneousSymbolsandArrows::HorizontalTabKey => HORIZONTAL_TAB_KEY,
-            MiscellaneousSymbolsandArrows::VerticalTabKey => VERTICAL_TAB_KEY,
-            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowOverRightwardsTriangleDashHeadedArrow => LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_OVER_RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowLeftwardsOfDownwardsTriangleDashHeadedArrow => UPWARDS_TRIANGLE_DASH_HEADED_ARROW_LEFTWARDS_OF_DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowOverLeftwardsTriangleDashHeadedArrow => RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_OVER_LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowLeftwardsOfUpwardsTriangleDashHeadedArrow => DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_LEFTWARDS_OF_UPWARDS_TRIANGLE_DASH_HEADED_ARROW,
-            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedPairedArrows => LEFTWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS,
-            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedPairedArrows => UPWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS,
-            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedPairedArrows => RIGHTWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS,
-            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedPairedArrows => DOWNWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS,
-            MiscellaneousSymbolsandArrows::LeftwardsBlackCircledWhiteArrow => LEFTWARDS_BLACK_CIRCLED_WHITE_ARROW,
-            MiscellaneousSymbolsandArrows::UpwardsBlackCircledWhiteArrow => UPWARDS_BLACK_CIRCLED_WHITE_ARROW,
-            MiscellaneousSymbolsandArrows::RightwardsBlackCircledWhiteArrow => RIGHTWARDS_BLACK_CIRCLED_WHITE_ARROW,
-            MiscellaneousSymbolsandArrows::DownwardsBlackCircledWhiteArrow => DOWNWARDS_BLACK_CIRCLED_WHITE_ARROW,
-            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedRightUDashShapedArrow => ANTICLOCKWISE_TRIANGLE_DASH_HEADED_RIGHT_U_DASH_SHAPED_ARROW,
-            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedBottomUDashShapedArrow => ANTICLOCKWISE_TRIANGLE_DASH_HEADED_BOTTOM_U_DASH_SHAPED_ARROW,
-            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedLeftUDashShapedArrow => ANTICLOCKWISE_TRIANGLE_DASH_HEADED_LEFT_U_DASH_SHAPED_ARROW,
-            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedTopUDashShapedArrow => ANTICLOCKWISE_TRIANGLE_DASH_HEADED_TOP_U_DASH_SHAPED_ARROW,
-            MiscellaneousSymbolsandArrows::ReturnLeft => RETURN_LEFT,
-            MiscellaneousSymbolsandArrows::ReturnRight => RETURN_RIGHT,
-            MiscellaneousSymbolsandArrows::NewlineLeft => NEWLINE_LEFT,
-            MiscellaneousSymbolsandArrows::NewlineRight => NEWLINE_RIGHT,
-            MiscellaneousSymbolsandArrows::FourCornerArrowsCirclingAnticlockwise => FOUR_CORNER_ARROWS_CIRCLING_ANTICLOCKWISE,
-            MiscellaneousSymbolsandArrows::RightwardsBlackArrow => RIGHTWARDS_BLACK_ARROW,
-            MiscellaneousSymbolsandArrows::ThreeDashDTopDashLightedLeftwardsEquilateralArrowhead => THREE_DASH_D_TOP_DASH_LIGHTED_LEFTWARDS_EQUILATERAL_ARROWHEAD,
-            MiscellaneousSymbolsandArrows::ThreeDashDRightDashLightedUpwardsEquilateralArrowhead => THREE_DASH_D_RIGHT_DASH_LIGHTED_UPWARDS_EQUILATERAL_ARROWHEAD,
-            MiscellaneousSymbolsandArrows::ThreeDashDTopDashLightedRightwardsEquilateralArrowhead => THREE_DASH_D_TOP_DASH_LIGHTED_RIGHTWARDS_EQUILATERAL_ARROWHEAD,
-            MiscellaneousSymbolsandArrows::ThreeDashDLeftDashLightedDownwardsEquilateralArrowhead => THREE_DASH_D_LEFT_DASH_LIGHTED_DOWNWARDS_EQUILATERAL_ARROWHEAD,
-            MiscellaneousSymbolsandArrows::BlackLeftwardsEquilateralArrowhead => BLACK_LEFTWARDS_EQUILATERAL_ARROWHEAD,
-            MiscellaneousSymbolsandArrows::BlackUpwardsEquilateralArrowhead => BLACK_UPWARDS_EQUILATERAL_ARROWHEAD,
-            MiscellaneousSymbolsandArrows::BlackRightwardsEquilateralArrowhead => BLACK_RIGHTWARDS_EQUILATERAL_ARROWHEAD,
-            MiscellaneousSymbolsandArrows::BlackDownwardsEquilateralArrowhead => BLACK_DOWNWARDS_EQUILATERAL_ARROWHEAD,
-            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithLongTipLeftwards => DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_LEFTWARDS,
-            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithLongTipRightwards => DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_RIGHTWARDS,
-            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithLongTipLeftwards => UPWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_LEFTWARDS,
-            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithLongTipRightwards => UPWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_RIGHTWARDS,
-            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithLongTipUpwards => LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_UPWARDS,
-            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithLongTipUpwards => RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_UPWARDS,
-            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithLongTipDownwards => LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_DOWNWARDS,
-            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithLongTipDownwards => RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_DOWNWARDS,
-            MiscellaneousSymbolsandArrows::BlackCurvedDownwardsAndLeftwardsArrow => BLACK_CURVED_DOWNWARDS_AND_LEFTWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::BlackCurvedDownwardsAndRightwardsArrow => BLACK_CURVED_DOWNWARDS_AND_RIGHTWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::BlackCurvedUpwardsAndLeftwardsArrow => BLACK_CURVED_UPWARDS_AND_LEFTWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::BlackCurvedUpwardsAndRightwardsArrow => BLACK_CURVED_UPWARDS_AND_RIGHTWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::BlackCurvedLeftwardsAndUpwardsArrow => BLACK_CURVED_LEFTWARDS_AND_UPWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::BlackCurvedRightwardsAndUpwardsArrow => BLACK_CURVED_RIGHTWARDS_AND_UPWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::BlackCurvedLeftwardsAndDownwardsArrow => BLACK_CURVED_LEFTWARDS_AND_DOWNWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::BlackCurvedRightwardsAndDownwardsArrow => BLACK_CURVED_RIGHTWARDS_AND_DOWNWARDS_ARROW,
-            MiscellaneousSymbolsandArrows::RibbonArrowDownLeft => RIBBON_ARROW_DOWN_LEFT,
-            MiscellaneousSymbolsandArrows::RibbonArrowDownRight => RIBBON_ARROW_DOWN_RIGHT,
-            MiscellaneousSymbolsandArrows::RibbonArrowUpLeft => RIBBON_ARROW_UP_LEFT,
-            MiscellaneousSymbolsandArrows::RibbonArrowUpRight => RIBBON_ARROW_UP_RIGHT,
-            MiscellaneousSymbolsandArrows::RibbonArrowLeftUp => RIBBON_ARROW_LEFT_UP,
-            MiscellaneousSymbolsandArrows::RibbonArrowRightUp => RIBBON_ARROW_RIGHT_UP,
-            MiscellaneousSymbolsandArrows::RibbonArrowLeftDown => RIBBON_ARROW_LEFT_DOWN,
-            MiscellaneousSymbolsandArrows::RibbonArrowRightDown => RIBBON_ARROW_RIGHT_DOWN,
-            MiscellaneousSymbolsandArrows::UpwardsWhiteArrowFromBarWithHorizontalBar => UPWARDS_WHITE_ARROW_FROM_BAR_WITH_HORIZONTAL_BAR,
-            MiscellaneousSymbolsandArrows::UpArrowheadInARectangleBox => UP_ARROWHEAD_IN_A_RECTANGLE_BOX,
-            MiscellaneousSymbolsandArrows::OverlappingWhiteSquares => OVERLAPPING_WHITE_SQUARES,
-            MiscellaneousSymbolsandArrows::OverlappingWhiteAndBlackSquares => OVERLAPPING_WHITE_AND_BLACK_SQUARES,
-            MiscellaneousSymbolsandArrows::OverlappingBlackSquares => OVERLAPPING_BLACK_SQUARES,
-            MiscellaneousSymbolsandArrows::BallotBoxWithLightX => BALLOT_BOX_WITH_LIGHT_X,
-            MiscellaneousSymbolsandArrows::CircledX => CIRCLED_X,
-            MiscellaneousSymbolsandArrows::CircledBoldX => CIRCLED_BOLD_X,
-            MiscellaneousSymbolsandArrows::BlackSquareCentred => BLACK_SQUARE_CENTRED,
-            MiscellaneousSymbolsandArrows::BlackDiamondCentred => BLACK_DIAMOND_CENTRED,
-            MiscellaneousSymbolsandArrows::TurnedBlackPentagon => TURNED_BLACK_PENTAGON,
-            MiscellaneousSymbolsandArrows::HorizontalBlackOctagon => HORIZONTAL_BLACK_OCTAGON,
-            MiscellaneousSymbolsandArrows::BlackOctagon => BLACK_OCTAGON,
-            MiscellaneousSymbolsandArrows::BlackMediumUpDashPointingTriangleCentred => BLACK_MEDIUM_UP_DASH_POINTING_TRIANGLE_CENTRED,
-            MiscellaneousSymbolsandArrows::BlackMediumDownDashPointingTriangleCentred => BLACK_MEDIUM_DOWN_DASH_POINTING_TRIANGLE_CENTRED,
-            MiscellaneousSymbolsandArrows::BlackMediumLeftDashPointingTriangleCentred => BLACK_MEDIUM_LEFT_DASH_POINTING_TRIANGLE_CENTRED,
-            MiscellaneousSymbolsandArrows::BlackMediumRightDashPointingTriangleCentred => BLACK_MEDIUM_RIGHT_DASH_POINTING_TRIANGLE_CENTRED,
-            MiscellaneousSymbolsandArrows::NeptuneFormTwo => NEPTUNE_FORM_TWO,
-            MiscellaneousSymbolsandArrows::TopHalfBlackCircle => TOP_HALF_BLACK_CIRCLE,
-            MiscellaneousSymbolsandArrows::BottomHalfBlackCircle => BOTTOM_HALF_BLACK_CIRCLE,
-            MiscellaneousSymbolsandArrows::LightFourPointedBlackCusp => LIGHT_FOUR_POINTED_BLACK_CUSP,
-            MiscellaneousSymbolsandArrows::RotatedLightFourPointedBlackCusp => ROTATED_LIGHT_FOUR_POINTED_BLACK_CUSP,
-            MiscellaneousSymbolsandArrows::WhiteFourPointedCusp => WHITE_FOUR_POINTED_CUSP,
-            MiscellaneousSymbolsandArrows::RotatedWhiteFourPointedCusp => ROTATED_WHITE_FOUR_POINTED_CUSP,
-            MiscellaneousSymbolsandArrows::SquarePositionIndicator => SQUARE_POSITION_INDICATOR,
-            MiscellaneousSymbolsandArrows::UncertaintySign => UNCERTAINTY_SIGN,
-            MiscellaneousSymbolsandArrows::GroupMark => GROUP_MARK,
-            MiscellaneousSymbolsandArrows::PlutoFormTwo => PLUTO_FORM_TWO,
-            MiscellaneousSymbolsandArrows::PlutoFormThree => PLUTO_FORM_THREE,
-            MiscellaneousSymbolsandArrows::PlutoFormFour => PLUTO_FORM_FOUR,
-            MiscellaneousSymbolsandArrows::PlutoFormFive => PLUTO_FORM_FIVE,
-            MiscellaneousSymbolsandArrows::Transpluto => TRANSPLUTO,
-            MiscellaneousSymbolsandArrows::Proserpina => PROSERPINA,
-            MiscellaneousSymbolsandArrows::Astraea => ASTRAEA,
-            MiscellaneousSymbolsandArrows::Hygiea => HYGIEA,
-            MiscellaneousSymbolsandArrows::Pholus => PHOLUS,
-            MiscellaneousSymbolsandArrows::Nessus => NESSUS,
-            MiscellaneousSymbolsandArrows::WhiteMoonSelena => WHITE_MOON_SELENA,
-            MiscellaneousSymbolsandArrows::BlackDiamondOnCross => BLACK_DIAMOND_ON_CROSS,
-            MiscellaneousSymbolsandArrows::TrueLightMoonArta => TRUE_LIGHT_MOON_ARTA,
-            MiscellaneousSymbolsandArrows::Cupido => CUPIDO,
-            MiscellaneousSymbolsandArrows::Hades => HADES,
-            MiscellaneousSymbolsandArrows::Zeus => ZEUS,
-            MiscellaneousSymbolsandArrows::Kronos => KRONOS,
-            MiscellaneousSymbolsandArrows::Apollon => APOLLON,
-            MiscellaneousSymbolsandArrows::Admetos => ADMETOS,
-            MiscellaneousSymbolsandArrows::Vulcanus => VULCANUS,
-            MiscellaneousSymbolsandArrows::Poseidon => POSEIDON,
-            MiscellaneousSymbolsandArrows::LeftHalfBlackStar => LEFT_HALF_BLACK_STAR,
-            MiscellaneousSymbolsandArrows::RightHalfBlackStar => RIGHT_HALF_BLACK_STAR,
-            MiscellaneousSymbolsandArrows::StarWithLeftHalfBlack => STAR_WITH_LEFT_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::StarWithRightHalfBlack => STAR_WITH_RIGHT_HALF_BLACK,
-            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTriangleArrowheads => LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS,
-            MiscellaneousSymbolsandArrows::UpwardsTwoDashHeadedArrowWithTriangleArrowheads => UPWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS,
-            MiscellaneousSymbolsandArrows::RightwardsTwoDashHeadedArrowWithTriangleArrowheads => RIGHTWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS,
-            MiscellaneousSymbolsandArrows::DownwardsTwoDashHeadedArrowWithTriangleArrowheads => DOWNWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS,
-            MiscellaneousSymbolsandArrows::ErisFormOne => ERIS_FORM_ONE,
-            MiscellaneousSymbolsandArrows::ErisFormTwo => ERIS_FORM_TWO,
-            MiscellaneousSymbolsandArrows::Sedna => SEDNA,
-            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolVigintile => RUSSIAN_ASTROLOGICAL_SYMBOL_VIGINTILE,
-            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolNovile => RUSSIAN_ASTROLOGICAL_SYMBOL_NOVILE,
-            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolQuintile => RUSSIAN_ASTROLOGICAL_SYMBOL_QUINTILE,
-            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolBinovile => RUSSIAN_ASTROLOGICAL_SYMBOL_BINOVILE,
-            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolSentagon => RUSSIAN_ASTROLOGICAL_SYMBOL_SENTAGON,
-            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolTredecile => RUSSIAN_ASTROLOGICAL_SYMBOL_TREDECILE,
-            MiscellaneousSymbolsandArrows::EqualsSignWithInfinityBelow => EQUALS_SIGN_WITH_INFINITY_BELOW,
-            MiscellaneousSymbolsandArrows::UnitedSymbol => UNITED_SYMBOL,
-            MiscellaneousSymbolsandArrows::SeparatedSymbol => SEPARATED_SYMBOL,
-            MiscellaneousSymbolsandArrows::DoubledSymbol => DOUBLED_SYMBOL,
-            MiscellaneousSymbolsandArrows::PassedSymbol => PASSED_SYMBOL,
-            MiscellaneousSymbolsandArrows::ReversedRightAngle => REVERSED_RIGHT_ANGLE,
+            MiscellaneousSymbolsandArrows::NorthEastWhiteArrow => '⬀',
+            MiscellaneousSymbolsandArrows::NorthWestWhiteArrow => '⬁',
+            MiscellaneousSymbolsandArrows::SouthEastWhiteArrow => '⬂',
+            MiscellaneousSymbolsandArrows::SouthWestWhiteArrow => '⬃',
+            MiscellaneousSymbolsandArrows::LeftRightWhiteArrow => '⬄',
+            MiscellaneousSymbolsandArrows::LeftwardsBlackArrow => '⬅',
+            MiscellaneousSymbolsandArrows::UpwardsBlackArrow => '⬆',
+            MiscellaneousSymbolsandArrows::DownwardsBlackArrow => '⬇',
+            MiscellaneousSymbolsandArrows::NorthEastBlackArrow => '⬈',
+            MiscellaneousSymbolsandArrows::NorthWestBlackArrow => '⬉',
+            MiscellaneousSymbolsandArrows::SouthEastBlackArrow => '⬊',
+            MiscellaneousSymbolsandArrows::SouthWestBlackArrow => '⬋',
+            MiscellaneousSymbolsandArrows::LeftRightBlackArrow => '⬌',
+            MiscellaneousSymbolsandArrows::UpDownBlackArrow => '⬍',
+            MiscellaneousSymbolsandArrows::RightwardsArrowWithTipDownwards => '⬎',
+            MiscellaneousSymbolsandArrows::RightwardsArrowWithTipUpwards => '⬏',
+            MiscellaneousSymbolsandArrows::LeftwardsArrowWithTipDownwards => '⬐',
+            MiscellaneousSymbolsandArrows::LeftwardsArrowWithTipUpwards => '⬑',
+            MiscellaneousSymbolsandArrows::SquareWithTopHalfBlack => '⬒',
+            MiscellaneousSymbolsandArrows::SquareWithBottomHalfBlack => '⬓',
+            MiscellaneousSymbolsandArrows::SquareWithUpperRightDiagonalHalfBlack => '⬔',
+            MiscellaneousSymbolsandArrows::SquareWithLowerLeftDiagonalHalfBlack => '⬕',
+            MiscellaneousSymbolsandArrows::DiamondWithLeftHalfBlack => '⬖',
+            MiscellaneousSymbolsandArrows::DiamondWithRightHalfBlack => '⬗',
+            MiscellaneousSymbolsandArrows::DiamondWithTopHalfBlack => '⬘',
+            MiscellaneousSymbolsandArrows::DiamondWithBottomHalfBlack => '⬙',
+            MiscellaneousSymbolsandArrows::DottedSquare => '⬚',
+            MiscellaneousSymbolsandArrows::BlackLargeSquare => '⬛',
+            MiscellaneousSymbolsandArrows::WhiteLargeSquare => '⬜',
+            MiscellaneousSymbolsandArrows::BlackVerySmallSquare => '⬝',
+            MiscellaneousSymbolsandArrows::WhiteVerySmallSquare => '⬞',
+            MiscellaneousSymbolsandArrows::BlackPentagon => '⬟',
+            MiscellaneousSymbolsandArrows::WhitePentagon => '⬠',
+            MiscellaneousSymbolsandArrows::WhiteHexagon => '⬡',
+            MiscellaneousSymbolsandArrows::BlackHexagon => '⬢',
+            MiscellaneousSymbolsandArrows::HorizontalBlackHexagon => '⬣',
+            MiscellaneousSymbolsandArrows::BlackLargeCircle => '⬤',
+            MiscellaneousSymbolsandArrows::BlackMediumDiamond => '⬥',
+            MiscellaneousSymbolsandArrows::WhiteMediumDiamond => '⬦',
+            MiscellaneousSymbolsandArrows::BlackMediumLozenge => '⬧',
+            MiscellaneousSymbolsandArrows::WhiteMediumLozenge => '⬨',
+            MiscellaneousSymbolsandArrows::BlackSmallDiamond => '⬩',
+            MiscellaneousSymbolsandArrows::BlackSmallLozenge => '⬪',
+            MiscellaneousSymbolsandArrows::WhiteSmallLozenge => '⬫',
+            MiscellaneousSymbolsandArrows::BlackHorizontalEllipse => '⬬',
+            MiscellaneousSymbolsandArrows::WhiteHorizontalEllipse => '⬭',
+            MiscellaneousSymbolsandArrows::BlackVerticalEllipse => '⬮',
+            MiscellaneousSymbolsandArrows::WhiteVerticalEllipse => '⬯',
+            MiscellaneousSymbolsandArrows::LeftArrowWithSmallCircle => '⬰',
+            MiscellaneousSymbolsandArrows::ThreeLeftwardsArrows => '⬱',
+            MiscellaneousSymbolsandArrows::LeftArrowWithCircledPlus => '⬲',
+            MiscellaneousSymbolsandArrows::LongLeftwardsSquiggleArrow => '⬳',
+            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithVerticalStroke => '⬴',
+            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithDoubleVerticalStroke => '⬵',
+            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowFromBar => '⬶',
+            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedTripleDashArrow => '⬷',
+            MiscellaneousSymbolsandArrows::LeftwardsArrowWithDottedStem => '⬸',
+            MiscellaneousSymbolsandArrows::LeftwardsArrowWithTailWithVerticalStroke => '⬹',
+            MiscellaneousSymbolsandArrows::LeftwardsArrowWithTailWithDoubleVerticalStroke => '⬺',
+            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTail => '⬻',
+            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTailWithVerticalStroke => '⬼',
+            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTailWithDoubleVerticalStroke => '⬽',
+            MiscellaneousSymbolsandArrows::LeftwardsArrowThroughX => '⬾',
+            MiscellaneousSymbolsandArrows::WaveArrowPointingDirectlyLeft => '⬿',
+            MiscellaneousSymbolsandArrows::EqualsSignAboveLeftwardsArrow => '⭀',
+            MiscellaneousSymbolsandArrows::ReverseTildeOperatorAboveLeftwardsArrow => '⭁',
+            MiscellaneousSymbolsandArrows::LeftwardsArrowAboveReverseAlmostEqualTo => '⭂',
+            MiscellaneousSymbolsandArrows::RightwardsArrowThroughGreaterDashThan => '⭃',
+            MiscellaneousSymbolsandArrows::RightwardsArrowThroughSuperset => '⭄',
+            MiscellaneousSymbolsandArrows::LeftwardsQuadrupleArrow => '⭅',
+            MiscellaneousSymbolsandArrows::RightwardsQuadrupleArrow => '⭆',
+            MiscellaneousSymbolsandArrows::ReverseTildeOperatorAboveRightwardsArrow => '⭇',
+            MiscellaneousSymbolsandArrows::RightwardsArrowAboveReverseAlmostEqualTo => '⭈',
+            MiscellaneousSymbolsandArrows::TildeOperatorAboveLeftwardsArrow => '⭉',
+            MiscellaneousSymbolsandArrows::LeftwardsArrowAboveAlmostEqualTo => '⭊',
+            MiscellaneousSymbolsandArrows::LeftwardsArrowAboveReverseTildeOperator => '⭋',
+            MiscellaneousSymbolsandArrows::RightwardsArrowAboveReverseTildeOperator => '⭌',
+            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedZigzagArrow => '⭍',
+            MiscellaneousSymbolsandArrows::ShortSlantedNorthArrow => '⭎',
+            MiscellaneousSymbolsandArrows::ShortBackslantedSouthArrow => '⭏',
+            MiscellaneousSymbolsandArrows::WhiteMediumStar => '⭐',
+            MiscellaneousSymbolsandArrows::BlackSmallStar => '⭑',
+            MiscellaneousSymbolsandArrows::WhiteSmallStar => '⭒',
+            MiscellaneousSymbolsandArrows::BlackRightDashPointingPentagon => '⭓',
+            MiscellaneousSymbolsandArrows::WhiteRightDashPointingPentagon => '⭔',
+            MiscellaneousSymbolsandArrows::HeavyLargeCircle => '⭕',
+            MiscellaneousSymbolsandArrows::HeavyOvalWithOvalInside => '⭖',
+            MiscellaneousSymbolsandArrows::HeavyCircleWithCircleInside => '⭗',
+            MiscellaneousSymbolsandArrows::HeavyCircle => '⭘',
+            MiscellaneousSymbolsandArrows::HeavyCircledSaltire => '⭙',
+            MiscellaneousSymbolsandArrows::SlantedNorthArrowWithHookedHead => '⭚',
+            MiscellaneousSymbolsandArrows::BackslantedSouthArrowWithHookedTail => '⭛',
+            MiscellaneousSymbolsandArrows::SlantedNorthArrowWithHorizontalTail => '⭜',
+            MiscellaneousSymbolsandArrows::BackslantedSouthArrowWithHorizontalTail => '⭝',
+            MiscellaneousSymbolsandArrows::BentArrowPointingDownwardsThenNorthEast => '⭞',
+            MiscellaneousSymbolsandArrows::ShortBentArrowPointingDownwardsThenNorthEast => '⭟',
+            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrow => '⭠',
+            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrow => '⭡',
+            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrow => '⭢',
+            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrow => '⭣',
+            MiscellaneousSymbolsandArrows::LeftRightTriangleDashHeadedArrow => '⭤',
+            MiscellaneousSymbolsandArrows::UpDownTriangleDashHeadedArrow => '⭥',
+            MiscellaneousSymbolsandArrows::NorthWestTriangleDashHeadedArrow => '⭦',
+            MiscellaneousSymbolsandArrows::NorthEastTriangleDashHeadedArrow => '⭧',
+            MiscellaneousSymbolsandArrows::SouthEastTriangleDashHeadedArrow => '⭨',
+            MiscellaneousSymbolsandArrows::SouthWestTriangleDashHeadedArrow => '⭩',
+            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedDashedArrow => '⭪',
+            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedDashedArrow => '⭫',
+            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedDashedArrow => '⭬',
+            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedDashedArrow => '⭭',
+            MiscellaneousSymbolsandArrows::ClockwiseTriangleDashHeadedOpenCircleArrow => '⭮',
+            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedOpenCircleArrow => '⭯',
+            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowToBar => '⭰',
+            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowToBar => '⭱',
+            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowToBar => '⭲',
+            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowToBar => '⭳',
+            MiscellaneousSymbolsandArrows::NorthWestTriangleDashHeadedArrowToBar => '⭶',
+            MiscellaneousSymbolsandArrows::NorthEastTriangleDashHeadedArrowToBar => '⭷',
+            MiscellaneousSymbolsandArrows::SouthEastTriangleDashHeadedArrowToBar => '⭸',
+            MiscellaneousSymbolsandArrows::SouthWestTriangleDashHeadedArrowToBar => '⭹',
+            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke => '⭺',
+            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke => '⭻',
+            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke => '⭼',
+            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke => '⭽',
+            MiscellaneousSymbolsandArrows::HorizontalTabKey => '⭾',
+            MiscellaneousSymbolsandArrows::VerticalTabKey => '⭿',
+            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowOverRightwardsTriangleDashHeadedArrow => '⮀',
+            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowLeftwardsOfDownwardsTriangleDashHeadedArrow => '⮁',
+            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowOverLeftwardsTriangleDashHeadedArrow => '⮂',
+            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowLeftwardsOfUpwardsTriangleDashHeadedArrow => '⮃',
+            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedPairedArrows => '⮄',
+            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedPairedArrows => '⮅',
+            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedPairedArrows => '⮆',
+            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedPairedArrows => '⮇',
+            MiscellaneousSymbolsandArrows::LeftwardsBlackCircledWhiteArrow => '⮈',
+            MiscellaneousSymbolsandArrows::UpwardsBlackCircledWhiteArrow => '⮉',
+            MiscellaneousSymbolsandArrows::RightwardsBlackCircledWhiteArrow => '⮊',
+            MiscellaneousSymbolsandArrows::DownwardsBlackCircledWhiteArrow => '⮋',
+            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedRightUDashShapedArrow => '⮌',
+            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedBottomUDashShapedArrow => '⮍',
+            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedLeftUDashShapedArrow => '⮎',
+            MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedTopUDashShapedArrow => '⮏',
+            MiscellaneousSymbolsandArrows::ReturnLeft => '⮐',
+            MiscellaneousSymbolsandArrows::ReturnRight => '⮑',
+            MiscellaneousSymbolsandArrows::NewlineLeft => '⮒',
+            MiscellaneousSymbolsandArrows::NewlineRight => '⮓',
+            MiscellaneousSymbolsandArrows::FourCornerArrowsCirclingAnticlockwise => '⮔',
+            MiscellaneousSymbolsandArrows::RightwardsBlackArrow => '⮕',
+            MiscellaneousSymbolsandArrows::ThreeDashDTopDashLightedLeftwardsEquilateralArrowhead => '⮘',
+            MiscellaneousSymbolsandArrows::ThreeDashDRightDashLightedUpwardsEquilateralArrowhead => '⮙',
+            MiscellaneousSymbolsandArrows::ThreeDashDTopDashLightedRightwardsEquilateralArrowhead => '⮚',
+            MiscellaneousSymbolsandArrows::ThreeDashDLeftDashLightedDownwardsEquilateralArrowhead => '⮛',
+            MiscellaneousSymbolsandArrows::BlackLeftwardsEquilateralArrowhead => '⮜',
+            MiscellaneousSymbolsandArrows::BlackUpwardsEquilateralArrowhead => '⮝',
+            MiscellaneousSymbolsandArrows::BlackRightwardsEquilateralArrowhead => '⮞',
+            MiscellaneousSymbolsandArrows::BlackDownwardsEquilateralArrowhead => '⮟',
+            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithLongTipLeftwards => '⮠',
+            MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithLongTipRightwards => '⮡',
+            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithLongTipLeftwards => '⮢',
+            MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithLongTipRightwards => '⮣',
+            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithLongTipUpwards => '⮤',
+            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithLongTipUpwards => '⮥',
+            MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithLongTipDownwards => '⮦',
+            MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithLongTipDownwards => '⮧',
+            MiscellaneousSymbolsandArrows::BlackCurvedDownwardsAndLeftwardsArrow => '⮨',
+            MiscellaneousSymbolsandArrows::BlackCurvedDownwardsAndRightwardsArrow => '⮩',
+            MiscellaneousSymbolsandArrows::BlackCurvedUpwardsAndLeftwardsArrow => '⮪',
+            MiscellaneousSymbolsandArrows::BlackCurvedUpwardsAndRightwardsArrow => '⮫',
+            MiscellaneousSymbolsandArrows::BlackCurvedLeftwardsAndUpwardsArrow => '⮬',
+            MiscellaneousSymbolsandArrows::BlackCurvedRightwardsAndUpwardsArrow => '⮭',
+            MiscellaneousSymbolsandArrows::BlackCurvedLeftwardsAndDownwardsArrow => '⮮',
+            MiscellaneousSymbolsandArrows::BlackCurvedRightwardsAndDownwardsArrow => '⮯',
+            MiscellaneousSymbolsandArrows::RibbonArrowDownLeft => '⮰',
+            MiscellaneousSymbolsandArrows::RibbonArrowDownRight => '⮱',
+            MiscellaneousSymbolsandArrows::RibbonArrowUpLeft => '⮲',
+            MiscellaneousSymbolsandArrows::RibbonArrowUpRight => '⮳',
+            MiscellaneousSymbolsandArrows::RibbonArrowLeftUp => '⮴',
+            MiscellaneousSymbolsandArrows::RibbonArrowRightUp => '⮵',
+            MiscellaneousSymbolsandArrows::RibbonArrowLeftDown => '⮶',
+            MiscellaneousSymbolsandArrows::RibbonArrowRightDown => '⮷',
+            MiscellaneousSymbolsandArrows::UpwardsWhiteArrowFromBarWithHorizontalBar => '⮸',
+            MiscellaneousSymbolsandArrows::UpArrowheadInARectangleBox => '⮹',
+            MiscellaneousSymbolsandArrows::OverlappingWhiteSquares => '⮺',
+            MiscellaneousSymbolsandArrows::OverlappingWhiteAndBlackSquares => '⮻',
+            MiscellaneousSymbolsandArrows::OverlappingBlackSquares => '⮼',
+            MiscellaneousSymbolsandArrows::BallotBoxWithLightX => '⮽',
+            MiscellaneousSymbolsandArrows::CircledX => '⮾',
+            MiscellaneousSymbolsandArrows::CircledBoldX => '⮿',
+            MiscellaneousSymbolsandArrows::BlackSquareCentred => '⯀',
+            MiscellaneousSymbolsandArrows::BlackDiamondCentred => '⯁',
+            MiscellaneousSymbolsandArrows::TurnedBlackPentagon => '⯂',
+            MiscellaneousSymbolsandArrows::HorizontalBlackOctagon => '⯃',
+            MiscellaneousSymbolsandArrows::BlackOctagon => '⯄',
+            MiscellaneousSymbolsandArrows::BlackMediumUpDashPointingTriangleCentred => '⯅',
+            MiscellaneousSymbolsandArrows::BlackMediumDownDashPointingTriangleCentred => '⯆',
+            MiscellaneousSymbolsandArrows::BlackMediumLeftDashPointingTriangleCentred => '⯇',
+            MiscellaneousSymbolsandArrows::BlackMediumRightDashPointingTriangleCentred => '⯈',
+            MiscellaneousSymbolsandArrows::NeptuneFormTwo => '⯉',
+            MiscellaneousSymbolsandArrows::TopHalfBlackCircle => '⯊',
+            MiscellaneousSymbolsandArrows::BottomHalfBlackCircle => '⯋',
+            MiscellaneousSymbolsandArrows::LightFourPointedBlackCusp => '⯌',
+            MiscellaneousSymbolsandArrows::RotatedLightFourPointedBlackCusp => '⯍',
+            MiscellaneousSymbolsandArrows::WhiteFourPointedCusp => '⯎',
+            MiscellaneousSymbolsandArrows::RotatedWhiteFourPointedCusp => '⯏',
+            MiscellaneousSymbolsandArrows::SquarePositionIndicator => '⯐',
+            MiscellaneousSymbolsandArrows::UncertaintySign => '⯑',
+            MiscellaneousSymbolsandArrows::GroupMark => '⯒',
+            MiscellaneousSymbolsandArrows::PlutoFormTwo => '⯓',
+            MiscellaneousSymbolsandArrows::PlutoFormThree => '⯔',
+            MiscellaneousSymbolsandArrows::PlutoFormFour => '⯕',
+            MiscellaneousSymbolsandArrows::PlutoFormFive => '⯖',
+            MiscellaneousSymbolsandArrows::Transpluto => '⯗',
+            MiscellaneousSymbolsandArrows::Proserpina => '⯘',
+            MiscellaneousSymbolsandArrows::Astraea => '⯙',
+            MiscellaneousSymbolsandArrows::Hygiea => '⯚',
+            MiscellaneousSymbolsandArrows::Pholus => '⯛',
+            MiscellaneousSymbolsandArrows::Nessus => '⯜',
+            MiscellaneousSymbolsandArrows::WhiteMoonSelena => '⯝',
+            MiscellaneousSymbolsandArrows::BlackDiamondOnCross => '⯞',
+            MiscellaneousSymbolsandArrows::TrueLightMoonArta => '⯟',
+            MiscellaneousSymbolsandArrows::Cupido => '⯠',
+            MiscellaneousSymbolsandArrows::Hades => '⯡',
+            MiscellaneousSymbolsandArrows::Zeus => '⯢',
+            MiscellaneousSymbolsandArrows::Kronos => '⯣',
+            MiscellaneousSymbolsandArrows::Apollon => '⯤',
+            MiscellaneousSymbolsandArrows::Admetos => '⯥',
+            MiscellaneousSymbolsandArrows::Vulcanus => '⯦',
+            MiscellaneousSymbolsandArrows::Poseidon => '⯧',
+            MiscellaneousSymbolsandArrows::LeftHalfBlackStar => '⯨',
+            MiscellaneousSymbolsandArrows::RightHalfBlackStar => '⯩',
+            MiscellaneousSymbolsandArrows::StarWithLeftHalfBlack => '⯪',
+            MiscellaneousSymbolsandArrows::StarWithRightHalfBlack => '⯫',
+            MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTriangleArrowheads => '⯬',
+            MiscellaneousSymbolsandArrows::UpwardsTwoDashHeadedArrowWithTriangleArrowheads => '⯭',
+            MiscellaneousSymbolsandArrows::RightwardsTwoDashHeadedArrowWithTriangleArrowheads => '⯮',
+            MiscellaneousSymbolsandArrows::DownwardsTwoDashHeadedArrowWithTriangleArrowheads => '⯯',
+            MiscellaneousSymbolsandArrows::ErisFormOne => '⯰',
+            MiscellaneousSymbolsandArrows::ErisFormTwo => '⯱',
+            MiscellaneousSymbolsandArrows::Sedna => '⯲',
+            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolVigintile => '⯳',
+            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolNovile => '⯴',
+            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolQuintile => '⯵',
+            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolBinovile => '⯶',
+            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolSentagon => '⯷',
+            MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolTredecile => '⯸',
+            MiscellaneousSymbolsandArrows::EqualsSignWithInfinityBelow => '⯹',
+            MiscellaneousSymbolsandArrows::UnitedSymbol => '⯺',
+            MiscellaneousSymbolsandArrows::SeparatedSymbol => '⯻',
+            MiscellaneousSymbolsandArrows::DoubledSymbol => '⯼',
+            MiscellaneousSymbolsandArrows::PassedSymbol => '⯽',
+            MiscellaneousSymbolsandArrows::ReversedRightAngle => '⯾',
         }
     }
 }
@@ -1273,259 +767,258 @@ impl Into<char> for MiscellaneousSymbolsandArrows {
 impl std::convert::TryFrom<char> for MiscellaneousSymbolsandArrows {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            NORTH_EAST_WHITE_ARROW => Ok(MiscellaneousSymbolsandArrows::NorthEastWhiteArrow),
-            NORTH_WEST_WHITE_ARROW => Ok(MiscellaneousSymbolsandArrows::NorthWestWhiteArrow),
-            SOUTH_EAST_WHITE_ARROW => Ok(MiscellaneousSymbolsandArrows::SouthEastWhiteArrow),
-            SOUTH_WEST_WHITE_ARROW => Ok(MiscellaneousSymbolsandArrows::SouthWestWhiteArrow),
-            LEFT_RIGHT_WHITE_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftRightWhiteArrow),
-            LEFTWARDS_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftwardsBlackArrow),
-            UPWARDS_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::UpwardsBlackArrow),
-            DOWNWARDS_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::DownwardsBlackArrow),
-            NORTH_EAST_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::NorthEastBlackArrow),
-            NORTH_WEST_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::NorthWestBlackArrow),
-            SOUTH_EAST_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::SouthEastBlackArrow),
-            SOUTH_WEST_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::SouthWestBlackArrow),
-            LEFT_RIGHT_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftRightBlackArrow),
-            UP_DOWN_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::UpDownBlackArrow),
-            RIGHTWARDS_ARROW_WITH_TIP_DOWNWARDS => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowWithTipDownwards),
-            RIGHTWARDS_ARROW_WITH_TIP_UPWARDS => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowWithTipUpwards),
-            LEFTWARDS_ARROW_WITH_TIP_DOWNWARDS => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithTipDownwards),
-            LEFTWARDS_ARROW_WITH_TIP_UPWARDS => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithTipUpwards),
-            SQUARE_WITH_TOP_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::SquareWithTopHalfBlack),
-            SQUARE_WITH_BOTTOM_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::SquareWithBottomHalfBlack),
-            SQUARE_WITH_UPPER_RIGHT_DIAGONAL_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::SquareWithUpperRightDiagonalHalfBlack),
-            SQUARE_WITH_LOWER_LEFT_DIAGONAL_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::SquareWithLowerLeftDiagonalHalfBlack),
-            DIAMOND_WITH_LEFT_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::DiamondWithLeftHalfBlack),
-            DIAMOND_WITH_RIGHT_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::DiamondWithRightHalfBlack),
-            DIAMOND_WITH_TOP_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::DiamondWithTopHalfBlack),
-            DIAMOND_WITH_BOTTOM_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::DiamondWithBottomHalfBlack),
-            DOTTED_SQUARE => Ok(MiscellaneousSymbolsandArrows::DottedSquare),
-            BLACK_LARGE_SQUARE => Ok(MiscellaneousSymbolsandArrows::BlackLargeSquare),
-            WHITE_LARGE_SQUARE => Ok(MiscellaneousSymbolsandArrows::WhiteLargeSquare),
-            BLACK_VERY_SMALL_SQUARE => Ok(MiscellaneousSymbolsandArrows::BlackVerySmallSquare),
-            WHITE_VERY_SMALL_SQUARE => Ok(MiscellaneousSymbolsandArrows::WhiteVerySmallSquare),
-            BLACK_PENTAGON => Ok(MiscellaneousSymbolsandArrows::BlackPentagon),
-            WHITE_PENTAGON => Ok(MiscellaneousSymbolsandArrows::WhitePentagon),
-            WHITE_HEXAGON => Ok(MiscellaneousSymbolsandArrows::WhiteHexagon),
-            BLACK_HEXAGON => Ok(MiscellaneousSymbolsandArrows::BlackHexagon),
-            HORIZONTAL_BLACK_HEXAGON => Ok(MiscellaneousSymbolsandArrows::HorizontalBlackHexagon),
-            BLACK_LARGE_CIRCLE => Ok(MiscellaneousSymbolsandArrows::BlackLargeCircle),
-            BLACK_MEDIUM_DIAMOND => Ok(MiscellaneousSymbolsandArrows::BlackMediumDiamond),
-            WHITE_MEDIUM_DIAMOND => Ok(MiscellaneousSymbolsandArrows::WhiteMediumDiamond),
-            BLACK_MEDIUM_LOZENGE => Ok(MiscellaneousSymbolsandArrows::BlackMediumLozenge),
-            WHITE_MEDIUM_LOZENGE => Ok(MiscellaneousSymbolsandArrows::WhiteMediumLozenge),
-            BLACK_SMALL_DIAMOND => Ok(MiscellaneousSymbolsandArrows::BlackSmallDiamond),
-            BLACK_SMALL_LOZENGE => Ok(MiscellaneousSymbolsandArrows::BlackSmallLozenge),
-            WHITE_SMALL_LOZENGE => Ok(MiscellaneousSymbolsandArrows::WhiteSmallLozenge),
-            BLACK_HORIZONTAL_ELLIPSE => Ok(MiscellaneousSymbolsandArrows::BlackHorizontalEllipse),
-            WHITE_HORIZONTAL_ELLIPSE => Ok(MiscellaneousSymbolsandArrows::WhiteHorizontalEllipse),
-            BLACK_VERTICAL_ELLIPSE => Ok(MiscellaneousSymbolsandArrows::BlackVerticalEllipse),
-            WHITE_VERTICAL_ELLIPSE => Ok(MiscellaneousSymbolsandArrows::WhiteVerticalEllipse),
-            LEFT_ARROW_WITH_SMALL_CIRCLE => Ok(MiscellaneousSymbolsandArrows::LeftArrowWithSmallCircle),
-            THREE_LEFTWARDS_ARROWS => Ok(MiscellaneousSymbolsandArrows::ThreeLeftwardsArrows),
-            LEFT_ARROW_WITH_CIRCLED_PLUS => Ok(MiscellaneousSymbolsandArrows::LeftArrowWithCircledPlus),
-            LONG_LEFTWARDS_SQUIGGLE_ARROW => Ok(MiscellaneousSymbolsandArrows::LongLeftwardsSquiggleArrow),
-            LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_VERTICAL_STROKE => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithVerticalStroke),
-            LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_DOUBLE_VERTICAL_STROKE => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithDoubleVerticalStroke),
-            LEFTWARDS_TWO_DASH_HEADED_ARROW_FROM_BAR => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowFromBar),
-            LEFTWARDS_TWO_DASH_HEADED_TRIPLE_DASH_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedTripleDashArrow),
-            LEFTWARDS_ARROW_WITH_DOTTED_STEM => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithDottedStem),
-            LEFTWARDS_ARROW_WITH_TAIL_WITH_VERTICAL_STROKE => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithTailWithVerticalStroke),
-            LEFTWARDS_ARROW_WITH_TAIL_WITH_DOUBLE_VERTICAL_STROKE => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithTailWithDoubleVerticalStroke),
-            LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TAIL => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTail),
-            LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TAIL_WITH_VERTICAL_STROKE => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTailWithVerticalStroke),
-            LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TAIL_WITH_DOUBLE_VERTICAL_STROKE => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTailWithDoubleVerticalStroke),
-            LEFTWARDS_ARROW_THROUGH_X => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowThroughX),
-            WAVE_ARROW_POINTING_DIRECTLY_LEFT => Ok(MiscellaneousSymbolsandArrows::WaveArrowPointingDirectlyLeft),
-            EQUALS_SIGN_ABOVE_LEFTWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::EqualsSignAboveLeftwardsArrow),
-            REVERSE_TILDE_OPERATOR_ABOVE_LEFTWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::ReverseTildeOperatorAboveLeftwardsArrow),
-            LEFTWARDS_ARROW_ABOVE_REVERSE_ALMOST_EQUAL_TO => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowAboveReverseAlmostEqualTo),
-            RIGHTWARDS_ARROW_THROUGH_GREATER_DASH_THAN => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowThroughGreaterDashThan),
-            RIGHTWARDS_ARROW_THROUGH_SUPERSET => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowThroughSuperset),
-            LEFTWARDS_QUADRUPLE_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftwardsQuadrupleArrow),
-            RIGHTWARDS_QUADRUPLE_ARROW => Ok(MiscellaneousSymbolsandArrows::RightwardsQuadrupleArrow),
-            REVERSE_TILDE_OPERATOR_ABOVE_RIGHTWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::ReverseTildeOperatorAboveRightwardsArrow),
-            RIGHTWARDS_ARROW_ABOVE_REVERSE_ALMOST_EQUAL_TO => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowAboveReverseAlmostEqualTo),
-            TILDE_OPERATOR_ABOVE_LEFTWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::TildeOperatorAboveLeftwardsArrow),
-            LEFTWARDS_ARROW_ABOVE_ALMOST_EQUAL_TO => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowAboveAlmostEqualTo),
-            LEFTWARDS_ARROW_ABOVE_REVERSE_TILDE_OPERATOR => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowAboveReverseTildeOperator),
-            RIGHTWARDS_ARROW_ABOVE_REVERSE_TILDE_OPERATOR => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowAboveReverseTildeOperator),
-            DOWNWARDS_TRIANGLE_DASH_HEADED_ZIGZAG_ARROW => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedZigzagArrow),
-            SHORT_SLANTED_NORTH_ARROW => Ok(MiscellaneousSymbolsandArrows::ShortSlantedNorthArrow),
-            SHORT_BACKSLANTED_SOUTH_ARROW => Ok(MiscellaneousSymbolsandArrows::ShortBackslantedSouthArrow),
-            WHITE_MEDIUM_STAR => Ok(MiscellaneousSymbolsandArrows::WhiteMediumStar),
-            BLACK_SMALL_STAR => Ok(MiscellaneousSymbolsandArrows::BlackSmallStar),
-            WHITE_SMALL_STAR => Ok(MiscellaneousSymbolsandArrows::WhiteSmallStar),
-            BLACK_RIGHT_DASH_POINTING_PENTAGON => Ok(MiscellaneousSymbolsandArrows::BlackRightDashPointingPentagon),
-            WHITE_RIGHT_DASH_POINTING_PENTAGON => Ok(MiscellaneousSymbolsandArrows::WhiteRightDashPointingPentagon),
-            HEAVY_LARGE_CIRCLE => Ok(MiscellaneousSymbolsandArrows::HeavyLargeCircle),
-            HEAVY_OVAL_WITH_OVAL_INSIDE => Ok(MiscellaneousSymbolsandArrows::HeavyOvalWithOvalInside),
-            HEAVY_CIRCLE_WITH_CIRCLE_INSIDE => Ok(MiscellaneousSymbolsandArrows::HeavyCircleWithCircleInside),
-            HEAVY_CIRCLE => Ok(MiscellaneousSymbolsandArrows::HeavyCircle),
-            HEAVY_CIRCLED_SALTIRE => Ok(MiscellaneousSymbolsandArrows::HeavyCircledSaltire),
-            SLANTED_NORTH_ARROW_WITH_HOOKED_HEAD => Ok(MiscellaneousSymbolsandArrows::SlantedNorthArrowWithHookedHead),
-            BACKSLANTED_SOUTH_ARROW_WITH_HOOKED_TAIL => Ok(MiscellaneousSymbolsandArrows::BackslantedSouthArrowWithHookedTail),
-            SLANTED_NORTH_ARROW_WITH_HORIZONTAL_TAIL => Ok(MiscellaneousSymbolsandArrows::SlantedNorthArrowWithHorizontalTail),
-            BACKSLANTED_SOUTH_ARROW_WITH_HORIZONTAL_TAIL => Ok(MiscellaneousSymbolsandArrows::BackslantedSouthArrowWithHorizontalTail),
-            BENT_ARROW_POINTING_DOWNWARDS_THEN_NORTH_EAST => Ok(MiscellaneousSymbolsandArrows::BentArrowPointingDownwardsThenNorthEast),
-            SHORT_BENT_ARROW_POINTING_DOWNWARDS_THEN_NORTH_EAST => Ok(MiscellaneousSymbolsandArrows::ShortBentArrowPointingDownwardsThenNorthEast),
-            LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrow),
-            UPWARDS_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrow),
-            RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrow),
-            DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrow),
-            LEFT_RIGHT_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftRightTriangleDashHeadedArrow),
-            UP_DOWN_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::UpDownTriangleDashHeadedArrow),
-            NORTH_WEST_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::NorthWestTriangleDashHeadedArrow),
-            NORTH_EAST_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::NorthEastTriangleDashHeadedArrow),
-            SOUTH_EAST_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::SouthEastTriangleDashHeadedArrow),
-            SOUTH_WEST_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::SouthWestTriangleDashHeadedArrow),
-            LEFTWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedDashedArrow),
-            UPWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedDashedArrow),
-            RIGHTWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedDashedArrow),
-            DOWNWARDS_TRIANGLE_DASH_HEADED_DASHED_ARROW => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedDashedArrow),
-            CLOCKWISE_TRIANGLE_DASH_HEADED_OPEN_CIRCLE_ARROW => Ok(MiscellaneousSymbolsandArrows::ClockwiseTriangleDashHeadedOpenCircleArrow),
-            ANTICLOCKWISE_TRIANGLE_DASH_HEADED_OPEN_CIRCLE_ARROW => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedOpenCircleArrow),
-            LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowToBar),
-            UPWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowToBar),
-            RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowToBar),
-            DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_TO_BAR => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowToBar),
-            NORTH_WEST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR => Ok(MiscellaneousSymbolsandArrows::NorthWestTriangleDashHeadedArrowToBar),
-            NORTH_EAST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR => Ok(MiscellaneousSymbolsandArrows::NorthEastTriangleDashHeadedArrowToBar),
-            SOUTH_EAST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR => Ok(MiscellaneousSymbolsandArrows::SouthEastTriangleDashHeadedArrowToBar),
-            SOUTH_WEST_TRIANGLE_DASH_HEADED_ARROW_TO_BAR => Ok(MiscellaneousSymbolsandArrows::SouthWestTriangleDashHeadedArrowToBar),
-            LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke),
-            UPWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke),
-            RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke),
-            DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_DOUBLE_HORIZONTAL_STROKE => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke),
-            HORIZONTAL_TAB_KEY => Ok(MiscellaneousSymbolsandArrows::HorizontalTabKey),
-            VERTICAL_TAB_KEY => Ok(MiscellaneousSymbolsandArrows::VerticalTabKey),
-            LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_OVER_RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowOverRightwardsTriangleDashHeadedArrow),
-            UPWARDS_TRIANGLE_DASH_HEADED_ARROW_LEFTWARDS_OF_DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowLeftwardsOfDownwardsTriangleDashHeadedArrow),
-            RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_OVER_LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowOverLeftwardsTriangleDashHeadedArrow),
-            DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_LEFTWARDS_OF_UPWARDS_TRIANGLE_DASH_HEADED_ARROW => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowLeftwardsOfUpwardsTriangleDashHeadedArrow),
-            LEFTWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedPairedArrows),
-            UPWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedPairedArrows),
-            RIGHTWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedPairedArrows),
-            DOWNWARDS_TRIANGLE_DASH_HEADED_PAIRED_ARROWS => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedPairedArrows),
-            LEFTWARDS_BLACK_CIRCLED_WHITE_ARROW => Ok(MiscellaneousSymbolsandArrows::LeftwardsBlackCircledWhiteArrow),
-            UPWARDS_BLACK_CIRCLED_WHITE_ARROW => Ok(MiscellaneousSymbolsandArrows::UpwardsBlackCircledWhiteArrow),
-            RIGHTWARDS_BLACK_CIRCLED_WHITE_ARROW => Ok(MiscellaneousSymbolsandArrows::RightwardsBlackCircledWhiteArrow),
-            DOWNWARDS_BLACK_CIRCLED_WHITE_ARROW => Ok(MiscellaneousSymbolsandArrows::DownwardsBlackCircledWhiteArrow),
-            ANTICLOCKWISE_TRIANGLE_DASH_HEADED_RIGHT_U_DASH_SHAPED_ARROW => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedRightUDashShapedArrow),
-            ANTICLOCKWISE_TRIANGLE_DASH_HEADED_BOTTOM_U_DASH_SHAPED_ARROW => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedBottomUDashShapedArrow),
-            ANTICLOCKWISE_TRIANGLE_DASH_HEADED_LEFT_U_DASH_SHAPED_ARROW => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedLeftUDashShapedArrow),
-            ANTICLOCKWISE_TRIANGLE_DASH_HEADED_TOP_U_DASH_SHAPED_ARROW => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedTopUDashShapedArrow),
-            RETURN_LEFT => Ok(MiscellaneousSymbolsandArrows::ReturnLeft),
-            RETURN_RIGHT => Ok(MiscellaneousSymbolsandArrows::ReturnRight),
-            NEWLINE_LEFT => Ok(MiscellaneousSymbolsandArrows::NewlineLeft),
-            NEWLINE_RIGHT => Ok(MiscellaneousSymbolsandArrows::NewlineRight),
-            FOUR_CORNER_ARROWS_CIRCLING_ANTICLOCKWISE => Ok(MiscellaneousSymbolsandArrows::FourCornerArrowsCirclingAnticlockwise),
-            RIGHTWARDS_BLACK_ARROW => Ok(MiscellaneousSymbolsandArrows::RightwardsBlackArrow),
-            THREE_DASH_D_TOP_DASH_LIGHTED_LEFTWARDS_EQUILATERAL_ARROWHEAD => Ok(MiscellaneousSymbolsandArrows::ThreeDashDTopDashLightedLeftwardsEquilateralArrowhead),
-            THREE_DASH_D_RIGHT_DASH_LIGHTED_UPWARDS_EQUILATERAL_ARROWHEAD => Ok(MiscellaneousSymbolsandArrows::ThreeDashDRightDashLightedUpwardsEquilateralArrowhead),
-            THREE_DASH_D_TOP_DASH_LIGHTED_RIGHTWARDS_EQUILATERAL_ARROWHEAD => Ok(MiscellaneousSymbolsandArrows::ThreeDashDTopDashLightedRightwardsEquilateralArrowhead),
-            THREE_DASH_D_LEFT_DASH_LIGHTED_DOWNWARDS_EQUILATERAL_ARROWHEAD => Ok(MiscellaneousSymbolsandArrows::ThreeDashDLeftDashLightedDownwardsEquilateralArrowhead),
-            BLACK_LEFTWARDS_EQUILATERAL_ARROWHEAD => Ok(MiscellaneousSymbolsandArrows::BlackLeftwardsEquilateralArrowhead),
-            BLACK_UPWARDS_EQUILATERAL_ARROWHEAD => Ok(MiscellaneousSymbolsandArrows::BlackUpwardsEquilateralArrowhead),
-            BLACK_RIGHTWARDS_EQUILATERAL_ARROWHEAD => Ok(MiscellaneousSymbolsandArrows::BlackRightwardsEquilateralArrowhead),
-            BLACK_DOWNWARDS_EQUILATERAL_ARROWHEAD => Ok(MiscellaneousSymbolsandArrows::BlackDownwardsEquilateralArrowhead),
-            DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_LEFTWARDS => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithLongTipLeftwards),
-            DOWNWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_RIGHTWARDS => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithLongTipRightwards),
-            UPWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_LEFTWARDS => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithLongTipLeftwards),
-            UPWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_RIGHTWARDS => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithLongTipRightwards),
-            LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_UPWARDS => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithLongTipUpwards),
-            RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_UPWARDS => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithLongTipUpwards),
-            LEFTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_DOWNWARDS => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithLongTipDownwards),
-            RIGHTWARDS_TRIANGLE_DASH_HEADED_ARROW_WITH_LONG_TIP_DOWNWARDS => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithLongTipDownwards),
-            BLACK_CURVED_DOWNWARDS_AND_LEFTWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::BlackCurvedDownwardsAndLeftwardsArrow),
-            BLACK_CURVED_DOWNWARDS_AND_RIGHTWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::BlackCurvedDownwardsAndRightwardsArrow),
-            BLACK_CURVED_UPWARDS_AND_LEFTWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::BlackCurvedUpwardsAndLeftwardsArrow),
-            BLACK_CURVED_UPWARDS_AND_RIGHTWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::BlackCurvedUpwardsAndRightwardsArrow),
-            BLACK_CURVED_LEFTWARDS_AND_UPWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::BlackCurvedLeftwardsAndUpwardsArrow),
-            BLACK_CURVED_RIGHTWARDS_AND_UPWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::BlackCurvedRightwardsAndUpwardsArrow),
-            BLACK_CURVED_LEFTWARDS_AND_DOWNWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::BlackCurvedLeftwardsAndDownwardsArrow),
-            BLACK_CURVED_RIGHTWARDS_AND_DOWNWARDS_ARROW => Ok(MiscellaneousSymbolsandArrows::BlackCurvedRightwardsAndDownwardsArrow),
-            RIBBON_ARROW_DOWN_LEFT => Ok(MiscellaneousSymbolsandArrows::RibbonArrowDownLeft),
-            RIBBON_ARROW_DOWN_RIGHT => Ok(MiscellaneousSymbolsandArrows::RibbonArrowDownRight),
-            RIBBON_ARROW_UP_LEFT => Ok(MiscellaneousSymbolsandArrows::RibbonArrowUpLeft),
-            RIBBON_ARROW_UP_RIGHT => Ok(MiscellaneousSymbolsandArrows::RibbonArrowUpRight),
-            RIBBON_ARROW_LEFT_UP => Ok(MiscellaneousSymbolsandArrows::RibbonArrowLeftUp),
-            RIBBON_ARROW_RIGHT_UP => Ok(MiscellaneousSymbolsandArrows::RibbonArrowRightUp),
-            RIBBON_ARROW_LEFT_DOWN => Ok(MiscellaneousSymbolsandArrows::RibbonArrowLeftDown),
-            RIBBON_ARROW_RIGHT_DOWN => Ok(MiscellaneousSymbolsandArrows::RibbonArrowRightDown),
-            UPWARDS_WHITE_ARROW_FROM_BAR_WITH_HORIZONTAL_BAR => Ok(MiscellaneousSymbolsandArrows::UpwardsWhiteArrowFromBarWithHorizontalBar),
-            UP_ARROWHEAD_IN_A_RECTANGLE_BOX => Ok(MiscellaneousSymbolsandArrows::UpArrowheadInARectangleBox),
-            OVERLAPPING_WHITE_SQUARES => Ok(MiscellaneousSymbolsandArrows::OverlappingWhiteSquares),
-            OVERLAPPING_WHITE_AND_BLACK_SQUARES => Ok(MiscellaneousSymbolsandArrows::OverlappingWhiteAndBlackSquares),
-            OVERLAPPING_BLACK_SQUARES => Ok(MiscellaneousSymbolsandArrows::OverlappingBlackSquares),
-            BALLOT_BOX_WITH_LIGHT_X => Ok(MiscellaneousSymbolsandArrows::BallotBoxWithLightX),
-            CIRCLED_X => Ok(MiscellaneousSymbolsandArrows::CircledX),
-            CIRCLED_BOLD_X => Ok(MiscellaneousSymbolsandArrows::CircledBoldX),
-            BLACK_SQUARE_CENTRED => Ok(MiscellaneousSymbolsandArrows::BlackSquareCentred),
-            BLACK_DIAMOND_CENTRED => Ok(MiscellaneousSymbolsandArrows::BlackDiamondCentred),
-            TURNED_BLACK_PENTAGON => Ok(MiscellaneousSymbolsandArrows::TurnedBlackPentagon),
-            HORIZONTAL_BLACK_OCTAGON => Ok(MiscellaneousSymbolsandArrows::HorizontalBlackOctagon),
-            BLACK_OCTAGON => Ok(MiscellaneousSymbolsandArrows::BlackOctagon),
-            BLACK_MEDIUM_UP_DASH_POINTING_TRIANGLE_CENTRED => Ok(MiscellaneousSymbolsandArrows::BlackMediumUpDashPointingTriangleCentred),
-            BLACK_MEDIUM_DOWN_DASH_POINTING_TRIANGLE_CENTRED => Ok(MiscellaneousSymbolsandArrows::BlackMediumDownDashPointingTriangleCentred),
-            BLACK_MEDIUM_LEFT_DASH_POINTING_TRIANGLE_CENTRED => Ok(MiscellaneousSymbolsandArrows::BlackMediumLeftDashPointingTriangleCentred),
-            BLACK_MEDIUM_RIGHT_DASH_POINTING_TRIANGLE_CENTRED => Ok(MiscellaneousSymbolsandArrows::BlackMediumRightDashPointingTriangleCentred),
-            NEPTUNE_FORM_TWO => Ok(MiscellaneousSymbolsandArrows::NeptuneFormTwo),
-            TOP_HALF_BLACK_CIRCLE => Ok(MiscellaneousSymbolsandArrows::TopHalfBlackCircle),
-            BOTTOM_HALF_BLACK_CIRCLE => Ok(MiscellaneousSymbolsandArrows::BottomHalfBlackCircle),
-            LIGHT_FOUR_POINTED_BLACK_CUSP => Ok(MiscellaneousSymbolsandArrows::LightFourPointedBlackCusp),
-            ROTATED_LIGHT_FOUR_POINTED_BLACK_CUSP => Ok(MiscellaneousSymbolsandArrows::RotatedLightFourPointedBlackCusp),
-            WHITE_FOUR_POINTED_CUSP => Ok(MiscellaneousSymbolsandArrows::WhiteFourPointedCusp),
-            ROTATED_WHITE_FOUR_POINTED_CUSP => Ok(MiscellaneousSymbolsandArrows::RotatedWhiteFourPointedCusp),
-            SQUARE_POSITION_INDICATOR => Ok(MiscellaneousSymbolsandArrows::SquarePositionIndicator),
-            UNCERTAINTY_SIGN => Ok(MiscellaneousSymbolsandArrows::UncertaintySign),
-            GROUP_MARK => Ok(MiscellaneousSymbolsandArrows::GroupMark),
-            PLUTO_FORM_TWO => Ok(MiscellaneousSymbolsandArrows::PlutoFormTwo),
-            PLUTO_FORM_THREE => Ok(MiscellaneousSymbolsandArrows::PlutoFormThree),
-            PLUTO_FORM_FOUR => Ok(MiscellaneousSymbolsandArrows::PlutoFormFour),
-            PLUTO_FORM_FIVE => Ok(MiscellaneousSymbolsandArrows::PlutoFormFive),
-            TRANSPLUTO => Ok(MiscellaneousSymbolsandArrows::Transpluto),
-            PROSERPINA => Ok(MiscellaneousSymbolsandArrows::Proserpina),
-            ASTRAEA => Ok(MiscellaneousSymbolsandArrows::Astraea),
-            HYGIEA => Ok(MiscellaneousSymbolsandArrows::Hygiea),
-            PHOLUS => Ok(MiscellaneousSymbolsandArrows::Pholus),
-            NESSUS => Ok(MiscellaneousSymbolsandArrows::Nessus),
-            WHITE_MOON_SELENA => Ok(MiscellaneousSymbolsandArrows::WhiteMoonSelena),
-            BLACK_DIAMOND_ON_CROSS => Ok(MiscellaneousSymbolsandArrows::BlackDiamondOnCross),
-            TRUE_LIGHT_MOON_ARTA => Ok(MiscellaneousSymbolsandArrows::TrueLightMoonArta),
-            CUPIDO => Ok(MiscellaneousSymbolsandArrows::Cupido),
-            HADES => Ok(MiscellaneousSymbolsandArrows::Hades),
-            ZEUS => Ok(MiscellaneousSymbolsandArrows::Zeus),
-            KRONOS => Ok(MiscellaneousSymbolsandArrows::Kronos),
-            APOLLON => Ok(MiscellaneousSymbolsandArrows::Apollon),
-            ADMETOS => Ok(MiscellaneousSymbolsandArrows::Admetos),
-            VULCANUS => Ok(MiscellaneousSymbolsandArrows::Vulcanus),
-            POSEIDON => Ok(MiscellaneousSymbolsandArrows::Poseidon),
-            LEFT_HALF_BLACK_STAR => Ok(MiscellaneousSymbolsandArrows::LeftHalfBlackStar),
-            RIGHT_HALF_BLACK_STAR => Ok(MiscellaneousSymbolsandArrows::RightHalfBlackStar),
-            STAR_WITH_LEFT_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::StarWithLeftHalfBlack),
-            STAR_WITH_RIGHT_HALF_BLACK => Ok(MiscellaneousSymbolsandArrows::StarWithRightHalfBlack),
-            LEFTWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTriangleArrowheads),
-            UPWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS => Ok(MiscellaneousSymbolsandArrows::UpwardsTwoDashHeadedArrowWithTriangleArrowheads),
-            RIGHTWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS => Ok(MiscellaneousSymbolsandArrows::RightwardsTwoDashHeadedArrowWithTriangleArrowheads),
-            DOWNWARDS_TWO_DASH_HEADED_ARROW_WITH_TRIANGLE_ARROWHEADS => Ok(MiscellaneousSymbolsandArrows::DownwardsTwoDashHeadedArrowWithTriangleArrowheads),
-            ERIS_FORM_ONE => Ok(MiscellaneousSymbolsandArrows::ErisFormOne),
-            ERIS_FORM_TWO => Ok(MiscellaneousSymbolsandArrows::ErisFormTwo),
-            SEDNA => Ok(MiscellaneousSymbolsandArrows::Sedna),
-            RUSSIAN_ASTROLOGICAL_SYMBOL_VIGINTILE => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolVigintile),
-            RUSSIAN_ASTROLOGICAL_SYMBOL_NOVILE => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolNovile),
-            RUSSIAN_ASTROLOGICAL_SYMBOL_QUINTILE => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolQuintile),
-            RUSSIAN_ASTROLOGICAL_SYMBOL_BINOVILE => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolBinovile),
-            RUSSIAN_ASTROLOGICAL_SYMBOL_SENTAGON => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolSentagon),
-            RUSSIAN_ASTROLOGICAL_SYMBOL_TREDECILE => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolTredecile),
-            EQUALS_SIGN_WITH_INFINITY_BELOW => Ok(MiscellaneousSymbolsandArrows::EqualsSignWithInfinityBelow),
-            UNITED_SYMBOL => Ok(MiscellaneousSymbolsandArrows::UnitedSymbol),
-            SEPARATED_SYMBOL => Ok(MiscellaneousSymbolsandArrows::SeparatedSymbol),
-            DOUBLED_SYMBOL => Ok(MiscellaneousSymbolsandArrows::DoubledSymbol),
-            PASSED_SYMBOL => Ok(MiscellaneousSymbolsandArrows::PassedSymbol),
-            REVERSED_RIGHT_ANGLE => Ok(MiscellaneousSymbolsandArrows::ReversedRightAngle),
+            '⬀' => Ok(MiscellaneousSymbolsandArrows::NorthEastWhiteArrow),
+            '⬁' => Ok(MiscellaneousSymbolsandArrows::NorthWestWhiteArrow),
+            '⬂' => Ok(MiscellaneousSymbolsandArrows::SouthEastWhiteArrow),
+            '⬃' => Ok(MiscellaneousSymbolsandArrows::SouthWestWhiteArrow),
+            '⬄' => Ok(MiscellaneousSymbolsandArrows::LeftRightWhiteArrow),
+            '⬅' => Ok(MiscellaneousSymbolsandArrows::LeftwardsBlackArrow),
+            '⬆' => Ok(MiscellaneousSymbolsandArrows::UpwardsBlackArrow),
+            '⬇' => Ok(MiscellaneousSymbolsandArrows::DownwardsBlackArrow),
+            '⬈' => Ok(MiscellaneousSymbolsandArrows::NorthEastBlackArrow),
+            '⬉' => Ok(MiscellaneousSymbolsandArrows::NorthWestBlackArrow),
+            '⬊' => Ok(MiscellaneousSymbolsandArrows::SouthEastBlackArrow),
+            '⬋' => Ok(MiscellaneousSymbolsandArrows::SouthWestBlackArrow),
+            '⬌' => Ok(MiscellaneousSymbolsandArrows::LeftRightBlackArrow),
+            '⬍' => Ok(MiscellaneousSymbolsandArrows::UpDownBlackArrow),
+            '⬎' => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowWithTipDownwards),
+            '⬏' => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowWithTipUpwards),
+            '⬐' => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithTipDownwards),
+            '⬑' => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithTipUpwards),
+            '⬒' => Ok(MiscellaneousSymbolsandArrows::SquareWithTopHalfBlack),
+            '⬓' => Ok(MiscellaneousSymbolsandArrows::SquareWithBottomHalfBlack),
+            '⬔' => Ok(MiscellaneousSymbolsandArrows::SquareWithUpperRightDiagonalHalfBlack),
+            '⬕' => Ok(MiscellaneousSymbolsandArrows::SquareWithLowerLeftDiagonalHalfBlack),
+            '⬖' => Ok(MiscellaneousSymbolsandArrows::DiamondWithLeftHalfBlack),
+            '⬗' => Ok(MiscellaneousSymbolsandArrows::DiamondWithRightHalfBlack),
+            '⬘' => Ok(MiscellaneousSymbolsandArrows::DiamondWithTopHalfBlack),
+            '⬙' => Ok(MiscellaneousSymbolsandArrows::DiamondWithBottomHalfBlack),
+            '⬚' => Ok(MiscellaneousSymbolsandArrows::DottedSquare),
+            '⬛' => Ok(MiscellaneousSymbolsandArrows::BlackLargeSquare),
+            '⬜' => Ok(MiscellaneousSymbolsandArrows::WhiteLargeSquare),
+            '⬝' => Ok(MiscellaneousSymbolsandArrows::BlackVerySmallSquare),
+            '⬞' => Ok(MiscellaneousSymbolsandArrows::WhiteVerySmallSquare),
+            '⬟' => Ok(MiscellaneousSymbolsandArrows::BlackPentagon),
+            '⬠' => Ok(MiscellaneousSymbolsandArrows::WhitePentagon),
+            '⬡' => Ok(MiscellaneousSymbolsandArrows::WhiteHexagon),
+            '⬢' => Ok(MiscellaneousSymbolsandArrows::BlackHexagon),
+            '⬣' => Ok(MiscellaneousSymbolsandArrows::HorizontalBlackHexagon),
+            '⬤' => Ok(MiscellaneousSymbolsandArrows::BlackLargeCircle),
+            '⬥' => Ok(MiscellaneousSymbolsandArrows::BlackMediumDiamond),
+            '⬦' => Ok(MiscellaneousSymbolsandArrows::WhiteMediumDiamond),
+            '⬧' => Ok(MiscellaneousSymbolsandArrows::BlackMediumLozenge),
+            '⬨' => Ok(MiscellaneousSymbolsandArrows::WhiteMediumLozenge),
+            '⬩' => Ok(MiscellaneousSymbolsandArrows::BlackSmallDiamond),
+            '⬪' => Ok(MiscellaneousSymbolsandArrows::BlackSmallLozenge),
+            '⬫' => Ok(MiscellaneousSymbolsandArrows::WhiteSmallLozenge),
+            '⬬' => Ok(MiscellaneousSymbolsandArrows::BlackHorizontalEllipse),
+            '⬭' => Ok(MiscellaneousSymbolsandArrows::WhiteHorizontalEllipse),
+            '⬮' => Ok(MiscellaneousSymbolsandArrows::BlackVerticalEllipse),
+            '⬯' => Ok(MiscellaneousSymbolsandArrows::WhiteVerticalEllipse),
+            '⬰' => Ok(MiscellaneousSymbolsandArrows::LeftArrowWithSmallCircle),
+            '⬱' => Ok(MiscellaneousSymbolsandArrows::ThreeLeftwardsArrows),
+            '⬲' => Ok(MiscellaneousSymbolsandArrows::LeftArrowWithCircledPlus),
+            '⬳' => Ok(MiscellaneousSymbolsandArrows::LongLeftwardsSquiggleArrow),
+            '⬴' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithVerticalStroke),
+            '⬵' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithDoubleVerticalStroke),
+            '⬶' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowFromBar),
+            '⬷' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedTripleDashArrow),
+            '⬸' => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithDottedStem),
+            '⬹' => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithTailWithVerticalStroke),
+            '⬺' => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowWithTailWithDoubleVerticalStroke),
+            '⬻' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTail),
+            '⬼' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTailWithVerticalStroke),
+            '⬽' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTailWithDoubleVerticalStroke),
+            '⬾' => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowThroughX),
+            '⬿' => Ok(MiscellaneousSymbolsandArrows::WaveArrowPointingDirectlyLeft),
+            '⭀' => Ok(MiscellaneousSymbolsandArrows::EqualsSignAboveLeftwardsArrow),
+            '⭁' => Ok(MiscellaneousSymbolsandArrows::ReverseTildeOperatorAboveLeftwardsArrow),
+            '⭂' => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowAboveReverseAlmostEqualTo),
+            '⭃' => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowThroughGreaterDashThan),
+            '⭄' => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowThroughSuperset),
+            '⭅' => Ok(MiscellaneousSymbolsandArrows::LeftwardsQuadrupleArrow),
+            '⭆' => Ok(MiscellaneousSymbolsandArrows::RightwardsQuadrupleArrow),
+            '⭇' => Ok(MiscellaneousSymbolsandArrows::ReverseTildeOperatorAboveRightwardsArrow),
+            '⭈' => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowAboveReverseAlmostEqualTo),
+            '⭉' => Ok(MiscellaneousSymbolsandArrows::TildeOperatorAboveLeftwardsArrow),
+            '⭊' => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowAboveAlmostEqualTo),
+            '⭋' => Ok(MiscellaneousSymbolsandArrows::LeftwardsArrowAboveReverseTildeOperator),
+            '⭌' => Ok(MiscellaneousSymbolsandArrows::RightwardsArrowAboveReverseTildeOperator),
+            '⭍' => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedZigzagArrow),
+            '⭎' => Ok(MiscellaneousSymbolsandArrows::ShortSlantedNorthArrow),
+            '⭏' => Ok(MiscellaneousSymbolsandArrows::ShortBackslantedSouthArrow),
+            '⭐' => Ok(MiscellaneousSymbolsandArrows::WhiteMediumStar),
+            '⭑' => Ok(MiscellaneousSymbolsandArrows::BlackSmallStar),
+            '⭒' => Ok(MiscellaneousSymbolsandArrows::WhiteSmallStar),
+            '⭓' => Ok(MiscellaneousSymbolsandArrows::BlackRightDashPointingPentagon),
+            '⭔' => Ok(MiscellaneousSymbolsandArrows::WhiteRightDashPointingPentagon),
+            '⭕' => Ok(MiscellaneousSymbolsandArrows::HeavyLargeCircle),
+            '⭖' => Ok(MiscellaneousSymbolsandArrows::HeavyOvalWithOvalInside),
+            '⭗' => Ok(MiscellaneousSymbolsandArrows::HeavyCircleWithCircleInside),
+            '⭘' => Ok(MiscellaneousSymbolsandArrows::HeavyCircle),
+            '⭙' => Ok(MiscellaneousSymbolsandArrows::HeavyCircledSaltire),
+            '⭚' => Ok(MiscellaneousSymbolsandArrows::SlantedNorthArrowWithHookedHead),
+            '⭛' => Ok(MiscellaneousSymbolsandArrows::BackslantedSouthArrowWithHookedTail),
+            '⭜' => Ok(MiscellaneousSymbolsandArrows::SlantedNorthArrowWithHorizontalTail),
+            '⭝' => Ok(MiscellaneousSymbolsandArrows::BackslantedSouthArrowWithHorizontalTail),
+            '⭞' => Ok(MiscellaneousSymbolsandArrows::BentArrowPointingDownwardsThenNorthEast),
+            '⭟' => Ok(MiscellaneousSymbolsandArrows::ShortBentArrowPointingDownwardsThenNorthEast),
+            '⭠' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrow),
+            '⭡' => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrow),
+            '⭢' => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrow),
+            '⭣' => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrow),
+            '⭤' => Ok(MiscellaneousSymbolsandArrows::LeftRightTriangleDashHeadedArrow),
+            '⭥' => Ok(MiscellaneousSymbolsandArrows::UpDownTriangleDashHeadedArrow),
+            '⭦' => Ok(MiscellaneousSymbolsandArrows::NorthWestTriangleDashHeadedArrow),
+            '⭧' => Ok(MiscellaneousSymbolsandArrows::NorthEastTriangleDashHeadedArrow),
+            '⭨' => Ok(MiscellaneousSymbolsandArrows::SouthEastTriangleDashHeadedArrow),
+            '⭩' => Ok(MiscellaneousSymbolsandArrows::SouthWestTriangleDashHeadedArrow),
+            '⭪' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedDashedArrow),
+            '⭫' => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedDashedArrow),
+            '⭬' => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedDashedArrow),
+            '⭭' => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedDashedArrow),
+            '⭮' => Ok(MiscellaneousSymbolsandArrows::ClockwiseTriangleDashHeadedOpenCircleArrow),
+            '⭯' => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedOpenCircleArrow),
+            '⭰' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowToBar),
+            '⭱' => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowToBar),
+            '⭲' => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowToBar),
+            '⭳' => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowToBar),
+            '⭶' => Ok(MiscellaneousSymbolsandArrows::NorthWestTriangleDashHeadedArrowToBar),
+            '⭷' => Ok(MiscellaneousSymbolsandArrows::NorthEastTriangleDashHeadedArrowToBar),
+            '⭸' => Ok(MiscellaneousSymbolsandArrows::SouthEastTriangleDashHeadedArrowToBar),
+            '⭹' => Ok(MiscellaneousSymbolsandArrows::SouthWestTriangleDashHeadedArrowToBar),
+            '⭺' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke),
+            '⭻' => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke),
+            '⭼' => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke),
+            '⭽' => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithDoubleHorizontalStroke),
+            '⭾' => Ok(MiscellaneousSymbolsandArrows::HorizontalTabKey),
+            '⭿' => Ok(MiscellaneousSymbolsandArrows::VerticalTabKey),
+            '⮀' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowOverRightwardsTriangleDashHeadedArrow),
+            '⮁' => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowLeftwardsOfDownwardsTriangleDashHeadedArrow),
+            '⮂' => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowOverLeftwardsTriangleDashHeadedArrow),
+            '⮃' => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowLeftwardsOfUpwardsTriangleDashHeadedArrow),
+            '⮄' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedPairedArrows),
+            '⮅' => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedPairedArrows),
+            '⮆' => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedPairedArrows),
+            '⮇' => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedPairedArrows),
+            '⮈' => Ok(MiscellaneousSymbolsandArrows::LeftwardsBlackCircledWhiteArrow),
+            '⮉' => Ok(MiscellaneousSymbolsandArrows::UpwardsBlackCircledWhiteArrow),
+            '⮊' => Ok(MiscellaneousSymbolsandArrows::RightwardsBlackCircledWhiteArrow),
+            '⮋' => Ok(MiscellaneousSymbolsandArrows::DownwardsBlackCircledWhiteArrow),
+            '⮌' => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedRightUDashShapedArrow),
+            '⮍' => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedBottomUDashShapedArrow),
+            '⮎' => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedLeftUDashShapedArrow),
+            '⮏' => Ok(MiscellaneousSymbolsandArrows::AnticlockwiseTriangleDashHeadedTopUDashShapedArrow),
+            '⮐' => Ok(MiscellaneousSymbolsandArrows::ReturnLeft),
+            '⮑' => Ok(MiscellaneousSymbolsandArrows::ReturnRight),
+            '⮒' => Ok(MiscellaneousSymbolsandArrows::NewlineLeft),
+            '⮓' => Ok(MiscellaneousSymbolsandArrows::NewlineRight),
+            '⮔' => Ok(MiscellaneousSymbolsandArrows::FourCornerArrowsCirclingAnticlockwise),
+            '⮕' => Ok(MiscellaneousSymbolsandArrows::RightwardsBlackArrow),
+            '⮘' => Ok(MiscellaneousSymbolsandArrows::ThreeDashDTopDashLightedLeftwardsEquilateralArrowhead),
+            '⮙' => Ok(MiscellaneousSymbolsandArrows::ThreeDashDRightDashLightedUpwardsEquilateralArrowhead),
+            '⮚' => Ok(MiscellaneousSymbolsandArrows::ThreeDashDTopDashLightedRightwardsEquilateralArrowhead),
+            '⮛' => Ok(MiscellaneousSymbolsandArrows::ThreeDashDLeftDashLightedDownwardsEquilateralArrowhead),
+            '⮜' => Ok(MiscellaneousSymbolsandArrows::BlackLeftwardsEquilateralArrowhead),
+            '⮝' => Ok(MiscellaneousSymbolsandArrows::BlackUpwardsEquilateralArrowhead),
+            '⮞' => Ok(MiscellaneousSymbolsandArrows::BlackRightwardsEquilateralArrowhead),
+            '⮟' => Ok(MiscellaneousSymbolsandArrows::BlackDownwardsEquilateralArrowhead),
+            '⮠' => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithLongTipLeftwards),
+            '⮡' => Ok(MiscellaneousSymbolsandArrows::DownwardsTriangleDashHeadedArrowWithLongTipRightwards),
+            '⮢' => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithLongTipLeftwards),
+            '⮣' => Ok(MiscellaneousSymbolsandArrows::UpwardsTriangleDashHeadedArrowWithLongTipRightwards),
+            '⮤' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithLongTipUpwards),
+            '⮥' => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithLongTipUpwards),
+            '⮦' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTriangleDashHeadedArrowWithLongTipDownwards),
+            '⮧' => Ok(MiscellaneousSymbolsandArrows::RightwardsTriangleDashHeadedArrowWithLongTipDownwards),
+            '⮨' => Ok(MiscellaneousSymbolsandArrows::BlackCurvedDownwardsAndLeftwardsArrow),
+            '⮩' => Ok(MiscellaneousSymbolsandArrows::BlackCurvedDownwardsAndRightwardsArrow),
+            '⮪' => Ok(MiscellaneousSymbolsandArrows::BlackCurvedUpwardsAndLeftwardsArrow),
+            '⮫' => Ok(MiscellaneousSymbolsandArrows::BlackCurvedUpwardsAndRightwardsArrow),
+            '⮬' => Ok(MiscellaneousSymbolsandArrows::BlackCurvedLeftwardsAndUpwardsArrow),
+            '⮭' => Ok(MiscellaneousSymbolsandArrows::BlackCurvedRightwardsAndUpwardsArrow),
+            '⮮' => Ok(MiscellaneousSymbolsandArrows::BlackCurvedLeftwardsAndDownwardsArrow),
+            '⮯' => Ok(MiscellaneousSymbolsandArrows::BlackCurvedRightwardsAndDownwardsArrow),
+            '⮰' => Ok(MiscellaneousSymbolsandArrows::RibbonArrowDownLeft),
+            '⮱' => Ok(MiscellaneousSymbolsandArrows::RibbonArrowDownRight),
+            '⮲' => Ok(MiscellaneousSymbolsandArrows::RibbonArrowUpLeft),
+            '⮳' => Ok(MiscellaneousSymbolsandArrows::RibbonArrowUpRight),
+            '⮴' => Ok(MiscellaneousSymbolsandArrows::RibbonArrowLeftUp),
+            '⮵' => Ok(MiscellaneousSymbolsandArrows::RibbonArrowRightUp),
+            '⮶' => Ok(MiscellaneousSymbolsandArrows::RibbonArrowLeftDown),
+            '⮷' => Ok(MiscellaneousSymbolsandArrows::RibbonArrowRightDown),
+            '⮸' => Ok(MiscellaneousSymbolsandArrows::UpwardsWhiteArrowFromBarWithHorizontalBar),
+            '⮹' => Ok(MiscellaneousSymbolsandArrows::UpArrowheadInARectangleBox),
+            '⮺' => Ok(MiscellaneousSymbolsandArrows::OverlappingWhiteSquares),
+            '⮻' => Ok(MiscellaneousSymbolsandArrows::OverlappingWhiteAndBlackSquares),
+            '⮼' => Ok(MiscellaneousSymbolsandArrows::OverlappingBlackSquares),
+            '⮽' => Ok(MiscellaneousSymbolsandArrows::BallotBoxWithLightX),
+            '⮾' => Ok(MiscellaneousSymbolsandArrows::CircledX),
+            '⮿' => Ok(MiscellaneousSymbolsandArrows::CircledBoldX),
+            '⯀' => Ok(MiscellaneousSymbolsandArrows::BlackSquareCentred),
+            '⯁' => Ok(MiscellaneousSymbolsandArrows::BlackDiamondCentred),
+            '⯂' => Ok(MiscellaneousSymbolsandArrows::TurnedBlackPentagon),
+            '⯃' => Ok(MiscellaneousSymbolsandArrows::HorizontalBlackOctagon),
+            '⯄' => Ok(MiscellaneousSymbolsandArrows::BlackOctagon),
+            '⯅' => Ok(MiscellaneousSymbolsandArrows::BlackMediumUpDashPointingTriangleCentred),
+            '⯆' => Ok(MiscellaneousSymbolsandArrows::BlackMediumDownDashPointingTriangleCentred),
+            '⯇' => Ok(MiscellaneousSymbolsandArrows::BlackMediumLeftDashPointingTriangleCentred),
+            '⯈' => Ok(MiscellaneousSymbolsandArrows::BlackMediumRightDashPointingTriangleCentred),
+            '⯉' => Ok(MiscellaneousSymbolsandArrows::NeptuneFormTwo),
+            '⯊' => Ok(MiscellaneousSymbolsandArrows::TopHalfBlackCircle),
+            '⯋' => Ok(MiscellaneousSymbolsandArrows::BottomHalfBlackCircle),
+            '⯌' => Ok(MiscellaneousSymbolsandArrows::LightFourPointedBlackCusp),
+            '⯍' => Ok(MiscellaneousSymbolsandArrows::RotatedLightFourPointedBlackCusp),
+            '⯎' => Ok(MiscellaneousSymbolsandArrows::WhiteFourPointedCusp),
+            '⯏' => Ok(MiscellaneousSymbolsandArrows::RotatedWhiteFourPointedCusp),
+            '⯐' => Ok(MiscellaneousSymbolsandArrows::SquarePositionIndicator),
+            '⯑' => Ok(MiscellaneousSymbolsandArrows::UncertaintySign),
+            '⯒' => Ok(MiscellaneousSymbolsandArrows::GroupMark),
+            '⯓' => Ok(MiscellaneousSymbolsandArrows::PlutoFormTwo),
+            '⯔' => Ok(MiscellaneousSymbolsandArrows::PlutoFormThree),
+            '⯕' => Ok(MiscellaneousSymbolsandArrows::PlutoFormFour),
+            '⯖' => Ok(MiscellaneousSymbolsandArrows::PlutoFormFive),
+            '⯗' => Ok(MiscellaneousSymbolsandArrows::Transpluto),
+            '⯘' => Ok(MiscellaneousSymbolsandArrows::Proserpina),
+            '⯙' => Ok(MiscellaneousSymbolsandArrows::Astraea),
+            '⯚' => Ok(MiscellaneousSymbolsandArrows::Hygiea),
+            '⯛' => Ok(MiscellaneousSymbolsandArrows::Pholus),
+            '⯜' => Ok(MiscellaneousSymbolsandArrows::Nessus),
+            '⯝' => Ok(MiscellaneousSymbolsandArrows::WhiteMoonSelena),
+            '⯞' => Ok(MiscellaneousSymbolsandArrows::BlackDiamondOnCross),
+            '⯟' => Ok(MiscellaneousSymbolsandArrows::TrueLightMoonArta),
+            '⯠' => Ok(MiscellaneousSymbolsandArrows::Cupido),
+            '⯡' => Ok(MiscellaneousSymbolsandArrows::Hades),
+            '⯢' => Ok(MiscellaneousSymbolsandArrows::Zeus),
+            '⯣' => Ok(MiscellaneousSymbolsandArrows::Kronos),
+            '⯤' => Ok(MiscellaneousSymbolsandArrows::Apollon),
+            '⯥' => Ok(MiscellaneousSymbolsandArrows::Admetos),
+            '⯦' => Ok(MiscellaneousSymbolsandArrows::Vulcanus),
+            '⯧' => Ok(MiscellaneousSymbolsandArrows::Poseidon),
+            '⯨' => Ok(MiscellaneousSymbolsandArrows::LeftHalfBlackStar),
+            '⯩' => Ok(MiscellaneousSymbolsandArrows::RightHalfBlackStar),
+            '⯪' => Ok(MiscellaneousSymbolsandArrows::StarWithLeftHalfBlack),
+            '⯫' => Ok(MiscellaneousSymbolsandArrows::StarWithRightHalfBlack),
+            '⯬' => Ok(MiscellaneousSymbolsandArrows::LeftwardsTwoDashHeadedArrowWithTriangleArrowheads),
+            '⯭' => Ok(MiscellaneousSymbolsandArrows::UpwardsTwoDashHeadedArrowWithTriangleArrowheads),
+            '⯮' => Ok(MiscellaneousSymbolsandArrows::RightwardsTwoDashHeadedArrowWithTriangleArrowheads),
+            '⯯' => Ok(MiscellaneousSymbolsandArrows::DownwardsTwoDashHeadedArrowWithTriangleArrowheads),
+            '⯰' => Ok(MiscellaneousSymbolsandArrows::ErisFormOne),
+            '⯱' => Ok(MiscellaneousSymbolsandArrows::ErisFormTwo),
+            '⯲' => Ok(MiscellaneousSymbolsandArrows::Sedna),
+            '⯳' => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolVigintile),
+            '⯴' => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolNovile),
+            '⯵' => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolQuintile),
+            '⯶' => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolBinovile),
+            '⯷' => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolSentagon),
+            '⯸' => Ok(MiscellaneousSymbolsandArrows::RussianAstrologicalSymbolTredecile),
+            '⯹' => Ok(MiscellaneousSymbolsandArrows::EqualsSignWithInfinityBelow),
+            '⯺' => Ok(MiscellaneousSymbolsandArrows::UnitedSymbol),
+            '⯻' => Ok(MiscellaneousSymbolsandArrows::SeparatedSymbol),
+            '⯼' => Ok(MiscellaneousSymbolsandArrows::DoubledSymbol),
+            '⯽' => Ok(MiscellaneousSymbolsandArrows::PassedSymbol),
+            '⯾' => Ok(MiscellaneousSymbolsandArrows::ReversedRightAngle),
             _ => Err(()),
         }
     }

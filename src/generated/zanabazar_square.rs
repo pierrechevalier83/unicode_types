@@ -1,150 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11a00}: '𑨀'
-    pub const LETTER_A: char = '𑨀';
-    /// \u{11a01}: '𑨁'
-    pub const VOWEL_SIGN_I: char = '𑨁';
-    /// \u{11a02}: '𑨂'
-    pub const VOWEL_SIGN_UE: char = '𑨂';
-    /// \u{11a03}: '𑨃'
-    pub const VOWEL_SIGN_U: char = '𑨃';
-    /// \u{11a04}: '𑨄'
-    pub const VOWEL_SIGN_E: char = '𑨄';
-    /// \u{11a05}: '𑨅'
-    pub const VOWEL_SIGN_OE: char = '𑨅';
-    /// \u{11a06}: '𑨆'
-    pub const VOWEL_SIGN_O: char = '𑨆';
-    /// \u{11a07}: '𑨇'
-    pub const VOWEL_SIGN_AI: char = '𑨇';
-    /// \u{11a08}: '𑨈'
-    pub const VOWEL_SIGN_AU: char = '𑨈';
-    /// \u{11a09}: '𑨉'
-    pub const VOWEL_SIGN_REVERSED_I: char = '𑨉';
-    /// \u{11a0a}: '𑨊'
-    pub const VOWEL_LENGTH_MARK: char = '𑨊';
-    /// \u{11a0b}: '𑨋'
-    pub const LETTER_KA: char = '𑨋';
-    /// \u{11a0c}: '𑨌'
-    pub const LETTER_KHA: char = '𑨌';
-    /// \u{11a0d}: '𑨍'
-    pub const LETTER_GA: char = '𑨍';
-    /// \u{11a0e}: '𑨎'
-    pub const LETTER_GHA: char = '𑨎';
-    /// \u{11a0f}: '𑨏'
-    pub const LETTER_NGA: char = '𑨏';
-    /// \u{11a10}: '𑨐'
-    pub const LETTER_CA: char = '𑨐';
-    /// \u{11a11}: '𑨑'
-    pub const LETTER_CHA: char = '𑨑';
-    /// \u{11a12}: '𑨒'
-    pub const LETTER_JA: char = '𑨒';
-    /// \u{11a13}: '𑨓'
-    pub const LETTER_NYA: char = '𑨓';
-    /// \u{11a14}: '𑨔'
-    pub const LETTER_TTA: char = '𑨔';
-    /// \u{11a15}: '𑨕'
-    pub const LETTER_TTHA: char = '𑨕';
-    /// \u{11a16}: '𑨖'
-    pub const LETTER_DDA: char = '𑨖';
-    /// \u{11a17}: '𑨗'
-    pub const LETTER_DDHA: char = '𑨗';
-    /// \u{11a18}: '𑨘'
-    pub const LETTER_NNA: char = '𑨘';
-    /// \u{11a19}: '𑨙'
-    pub const LETTER_TA: char = '𑨙';
-    /// \u{11a1a}: '𑨚'
-    pub const LETTER_THA: char = '𑨚';
-    /// \u{11a1b}: '𑨛'
-    pub const LETTER_DA: char = '𑨛';
-    /// \u{11a1c}: '𑨜'
-    pub const LETTER_DHA: char = '𑨜';
-    /// \u{11a1d}: '𑨝'
-    pub const LETTER_NA: char = '𑨝';
-    /// \u{11a1e}: '𑨞'
-    pub const LETTER_PA: char = '𑨞';
-    /// \u{11a1f}: '𑨟'
-    pub const LETTER_PHA: char = '𑨟';
-    /// \u{11a20}: '𑨠'
-    pub const LETTER_BA: char = '𑨠';
-    /// \u{11a21}: '𑨡'
-    pub const LETTER_BHA: char = '𑨡';
-    /// \u{11a22}: '𑨢'
-    pub const LETTER_MA: char = '𑨢';
-    /// \u{11a23}: '𑨣'
-    pub const LETTER_TSA: char = '𑨣';
-    /// \u{11a24}: '𑨤'
-    pub const LETTER_TSHA: char = '𑨤';
-    /// \u{11a25}: '𑨥'
-    pub const LETTER_DZA: char = '𑨥';
-    /// \u{11a26}: '𑨦'
-    pub const LETTER_DZHA: char = '𑨦';
-    /// \u{11a27}: '𑨧'
-    pub const LETTER_ZHA: char = '𑨧';
-    /// \u{11a28}: '𑨨'
-    pub const LETTER_ZA: char = '𑨨';
-    /// \u{11a29}: '𑨩'
-    pub const LETTER__DASH_A: char = '𑨩';
-    /// \u{11a2a}: '𑨪'
-    pub const LETTER_YA: char = '𑨪';
-    /// \u{11a2b}: '𑨫'
-    pub const LETTER_RA: char = '𑨫';
-    /// \u{11a2c}: '𑨬'
-    pub const LETTER_LA: char = '𑨬';
-    /// \u{11a2d}: '𑨭'
-    pub const LETTER_VA: char = '𑨭';
-    /// \u{11a2e}: '𑨮'
-    pub const LETTER_SHA: char = '𑨮';
-    /// \u{11a2f}: '𑨯'
-    pub const LETTER_SSA: char = '𑨯';
-    /// \u{11a30}: '𑨰'
-    pub const LETTER_SA: char = '𑨰';
-    /// \u{11a31}: '𑨱'
-    pub const LETTER_HA: char = '𑨱';
-    /// \u{11a32}: '𑨲'
-    pub const LETTER_KSSA: char = '𑨲';
-    /// \u{11a33}: '𑨳'
-    pub const FINAL_CONSONANT_MARK: char = '𑨳';
-    /// \u{11a34}: '𑨴'
-    pub const SIGN_VIRAMA: char = '𑨴';
-    /// \u{11a35}: '𑨵'
-    pub const SIGN_CANDRABINDU: char = '𑨵';
-    /// \u{11a36}: '𑨶'
-    pub const SIGN_CANDRABINDU_WITH_ORNAMENT: char = '𑨶';
-    /// \u{11a37}: '𑨷'
-    pub const SIGN_CANDRA_WITH_ORNAMENT: char = '𑨷';
-    /// \u{11a38}: '𑨸'
-    pub const SIGN_ANUSVARA: char = '𑨸';
-    /// \u{11a39}: '𑨹'
-    pub const SIGN_VISARGA: char = '𑨹';
-    /// \u{11a3a}: '𑨺'
-    pub const CLUSTER_DASH_INITIAL_LETTER_RA: char = '𑨺';
-    /// \u{11a3b}: '𑨻'
-    pub const CLUSTER_DASH_FINAL_LETTER_YA: char = '𑨻';
-    /// \u{11a3c}: '𑨼'
-    pub const CLUSTER_DASH_FINAL_LETTER_RA: char = '𑨼';
-    /// \u{11a3d}: '𑨽'
-    pub const CLUSTER_DASH_FINAL_LETTER_LA: char = '𑨽';
-    /// \u{11a3e}: '𑨾'
-    pub const CLUSTER_DASH_FINAL_LETTER_VA: char = '𑨾';
-    /// \u{11a3f}: '𑨿'
-    pub const INITIAL_HEAD_MARK: char = '𑨿';
-    /// \u{11a40}: '𑩀'
-    pub const CLOSING_HEAD_MARK: char = '𑩀';
-    /// \u{11a41}: '𑩁'
-    pub const MARK_TSHEG: char = '𑩁';
-    /// \u{11a42}: '𑩂'
-    pub const MARK_SHAD: char = '𑩂';
-    /// \u{11a43}: '𑩃'
-    pub const MARK_DOUBLE_SHAD: char = '𑩃';
-    /// \u{11a44}: '𑩄'
-    pub const MARK_LONG_TSHEG: char = '𑩄';
-    /// \u{11a45}: '𑩅'
-    pub const INITIAL_DOUBLE_DASH_LINED_HEAD_MARK: char = '𑩅';
-    /// \u{11a46}: '𑩆'
-    pub const CLOSING_DOUBLE_DASH_LINED_HEAD_MARK: char = '𑩆';
-    /// \u{11a47}: '𑩇'
-    pub const SUBJOINER: char = '𑩇';
-}
 
 /// An enum to represent all characters in the ZanabazarSquare block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -297,80 +150,79 @@ pub enum ZanabazarSquare {
 
 impl Into<char> for ZanabazarSquare {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            ZanabazarSquare::LetterA => LETTER_A,
-            ZanabazarSquare::VowelSignI => VOWEL_SIGN_I,
-            ZanabazarSquare::VowelSignUe => VOWEL_SIGN_UE,
-            ZanabazarSquare::VowelSignU => VOWEL_SIGN_U,
-            ZanabazarSquare::VowelSignE => VOWEL_SIGN_E,
-            ZanabazarSquare::VowelSignOe => VOWEL_SIGN_OE,
-            ZanabazarSquare::VowelSignO => VOWEL_SIGN_O,
-            ZanabazarSquare::VowelSignAi => VOWEL_SIGN_AI,
-            ZanabazarSquare::VowelSignAu => VOWEL_SIGN_AU,
-            ZanabazarSquare::VowelSignReversedI => VOWEL_SIGN_REVERSED_I,
-            ZanabazarSquare::VowelLengthMark => VOWEL_LENGTH_MARK,
-            ZanabazarSquare::LetterKa => LETTER_KA,
-            ZanabazarSquare::LetterKha => LETTER_KHA,
-            ZanabazarSquare::LetterGa => LETTER_GA,
-            ZanabazarSquare::LetterGha => LETTER_GHA,
-            ZanabazarSquare::LetterNga => LETTER_NGA,
-            ZanabazarSquare::LetterCa => LETTER_CA,
-            ZanabazarSquare::LetterCha => LETTER_CHA,
-            ZanabazarSquare::LetterJa => LETTER_JA,
-            ZanabazarSquare::LetterNya => LETTER_NYA,
-            ZanabazarSquare::LetterTta => LETTER_TTA,
-            ZanabazarSquare::LetterTtha => LETTER_TTHA,
-            ZanabazarSquare::LetterDda => LETTER_DDA,
-            ZanabazarSquare::LetterDdha => LETTER_DDHA,
-            ZanabazarSquare::LetterNna => LETTER_NNA,
-            ZanabazarSquare::LetterTa => LETTER_TA,
-            ZanabazarSquare::LetterTha => LETTER_THA,
-            ZanabazarSquare::LetterDa => LETTER_DA,
-            ZanabazarSquare::LetterDha => LETTER_DHA,
-            ZanabazarSquare::LetterNa => LETTER_NA,
-            ZanabazarSquare::LetterPa => LETTER_PA,
-            ZanabazarSquare::LetterPha => LETTER_PHA,
-            ZanabazarSquare::LetterBa => LETTER_BA,
-            ZanabazarSquare::LetterBha => LETTER_BHA,
-            ZanabazarSquare::LetterMa => LETTER_MA,
-            ZanabazarSquare::LetterTsa => LETTER_TSA,
-            ZanabazarSquare::LetterTsha => LETTER_TSHA,
-            ZanabazarSquare::LetterDza => LETTER_DZA,
-            ZanabazarSquare::LetterDzha => LETTER_DZHA,
-            ZanabazarSquare::LetterZha => LETTER_ZHA,
-            ZanabazarSquare::LetterZa => LETTER_ZA,
-            ZanabazarSquare::LetterDashA => LETTER__DASH_A,
-            ZanabazarSquare::LetterYa => LETTER_YA,
-            ZanabazarSquare::LetterRa => LETTER_RA,
-            ZanabazarSquare::LetterLa => LETTER_LA,
-            ZanabazarSquare::LetterVa => LETTER_VA,
-            ZanabazarSquare::LetterSha => LETTER_SHA,
-            ZanabazarSquare::LetterSsa => LETTER_SSA,
-            ZanabazarSquare::LetterSa => LETTER_SA,
-            ZanabazarSquare::LetterHa => LETTER_HA,
-            ZanabazarSquare::LetterKssa => LETTER_KSSA,
-            ZanabazarSquare::FinalConsonantMark => FINAL_CONSONANT_MARK,
-            ZanabazarSquare::SignVirama => SIGN_VIRAMA,
-            ZanabazarSquare::SignCandrabindu => SIGN_CANDRABINDU,
-            ZanabazarSquare::SignCandrabinduWithOrnament => SIGN_CANDRABINDU_WITH_ORNAMENT,
-            ZanabazarSquare::SignCandraWithOrnament => SIGN_CANDRA_WITH_ORNAMENT,
-            ZanabazarSquare::SignAnusvara => SIGN_ANUSVARA,
-            ZanabazarSquare::SignVisarga => SIGN_VISARGA,
-            ZanabazarSquare::ClusterDashInitialLetterRa => CLUSTER_DASH_INITIAL_LETTER_RA,
-            ZanabazarSquare::ClusterDashFinalLetterYa => CLUSTER_DASH_FINAL_LETTER_YA,
-            ZanabazarSquare::ClusterDashFinalLetterRa => CLUSTER_DASH_FINAL_LETTER_RA,
-            ZanabazarSquare::ClusterDashFinalLetterLa => CLUSTER_DASH_FINAL_LETTER_LA,
-            ZanabazarSquare::ClusterDashFinalLetterVa => CLUSTER_DASH_FINAL_LETTER_VA,
-            ZanabazarSquare::InitialHeadMark => INITIAL_HEAD_MARK,
-            ZanabazarSquare::ClosingHeadMark => CLOSING_HEAD_MARK,
-            ZanabazarSquare::MarkTsheg => MARK_TSHEG,
-            ZanabazarSquare::MarkShad => MARK_SHAD,
-            ZanabazarSquare::MarkDoubleShad => MARK_DOUBLE_SHAD,
-            ZanabazarSquare::MarkLongTsheg => MARK_LONG_TSHEG,
-            ZanabazarSquare::InitialDoubleDashLinedHeadMark => INITIAL_DOUBLE_DASH_LINED_HEAD_MARK,
-            ZanabazarSquare::ClosingDoubleDashLinedHeadMark => CLOSING_DOUBLE_DASH_LINED_HEAD_MARK,
-            ZanabazarSquare::Subjoiner => SUBJOINER,
+            ZanabazarSquare::LetterA => '𑨀',
+            ZanabazarSquare::VowelSignI => '𑨁',
+            ZanabazarSquare::VowelSignUe => '𑨂',
+            ZanabazarSquare::VowelSignU => '𑨃',
+            ZanabazarSquare::VowelSignE => '𑨄',
+            ZanabazarSquare::VowelSignOe => '𑨅',
+            ZanabazarSquare::VowelSignO => '𑨆',
+            ZanabazarSquare::VowelSignAi => '𑨇',
+            ZanabazarSquare::VowelSignAu => '𑨈',
+            ZanabazarSquare::VowelSignReversedI => '𑨉',
+            ZanabazarSquare::VowelLengthMark => '𑨊',
+            ZanabazarSquare::LetterKa => '𑨋',
+            ZanabazarSquare::LetterKha => '𑨌',
+            ZanabazarSquare::LetterGa => '𑨍',
+            ZanabazarSquare::LetterGha => '𑨎',
+            ZanabazarSquare::LetterNga => '𑨏',
+            ZanabazarSquare::LetterCa => '𑨐',
+            ZanabazarSquare::LetterCha => '𑨑',
+            ZanabazarSquare::LetterJa => '𑨒',
+            ZanabazarSquare::LetterNya => '𑨓',
+            ZanabazarSquare::LetterTta => '𑨔',
+            ZanabazarSquare::LetterTtha => '𑨕',
+            ZanabazarSquare::LetterDda => '𑨖',
+            ZanabazarSquare::LetterDdha => '𑨗',
+            ZanabazarSquare::LetterNna => '𑨘',
+            ZanabazarSquare::LetterTa => '𑨙',
+            ZanabazarSquare::LetterTha => '𑨚',
+            ZanabazarSquare::LetterDa => '𑨛',
+            ZanabazarSquare::LetterDha => '𑨜',
+            ZanabazarSquare::LetterNa => '𑨝',
+            ZanabazarSquare::LetterPa => '𑨞',
+            ZanabazarSquare::LetterPha => '𑨟',
+            ZanabazarSquare::LetterBa => '𑨠',
+            ZanabazarSquare::LetterBha => '𑨡',
+            ZanabazarSquare::LetterMa => '𑨢',
+            ZanabazarSquare::LetterTsa => '𑨣',
+            ZanabazarSquare::LetterTsha => '𑨤',
+            ZanabazarSquare::LetterDza => '𑨥',
+            ZanabazarSquare::LetterDzha => '𑨦',
+            ZanabazarSquare::LetterZha => '𑨧',
+            ZanabazarSquare::LetterZa => '𑨨',
+            ZanabazarSquare::LetterDashA => '𑨩',
+            ZanabazarSquare::LetterYa => '𑨪',
+            ZanabazarSquare::LetterRa => '𑨫',
+            ZanabazarSquare::LetterLa => '𑨬',
+            ZanabazarSquare::LetterVa => '𑨭',
+            ZanabazarSquare::LetterSha => '𑨮',
+            ZanabazarSquare::LetterSsa => '𑨯',
+            ZanabazarSquare::LetterSa => '𑨰',
+            ZanabazarSquare::LetterHa => '𑨱',
+            ZanabazarSquare::LetterKssa => '𑨲',
+            ZanabazarSquare::FinalConsonantMark => '𑨳',
+            ZanabazarSquare::SignVirama => '𑨴',
+            ZanabazarSquare::SignCandrabindu => '𑨵',
+            ZanabazarSquare::SignCandrabinduWithOrnament => '𑨶',
+            ZanabazarSquare::SignCandraWithOrnament => '𑨷',
+            ZanabazarSquare::SignAnusvara => '𑨸',
+            ZanabazarSquare::SignVisarga => '𑨹',
+            ZanabazarSquare::ClusterDashInitialLetterRa => '𑨺',
+            ZanabazarSquare::ClusterDashFinalLetterYa => '𑨻',
+            ZanabazarSquare::ClusterDashFinalLetterRa => '𑨼',
+            ZanabazarSquare::ClusterDashFinalLetterLa => '𑨽',
+            ZanabazarSquare::ClusterDashFinalLetterVa => '𑨾',
+            ZanabazarSquare::InitialHeadMark => '𑨿',
+            ZanabazarSquare::ClosingHeadMark => '𑩀',
+            ZanabazarSquare::MarkTsheg => '𑩁',
+            ZanabazarSquare::MarkShad => '𑩂',
+            ZanabazarSquare::MarkDoubleShad => '𑩃',
+            ZanabazarSquare::MarkLongTsheg => '𑩄',
+            ZanabazarSquare::InitialDoubleDashLinedHeadMark => '𑩅',
+            ZanabazarSquare::ClosingDoubleDashLinedHeadMark => '𑩆',
+            ZanabazarSquare::Subjoiner => '𑩇',
         }
     }
 }
@@ -378,80 +230,79 @@ impl Into<char> for ZanabazarSquare {
 impl std::convert::TryFrom<char> for ZanabazarSquare {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(ZanabazarSquare::LetterA),
-            VOWEL_SIGN_I => Ok(ZanabazarSquare::VowelSignI),
-            VOWEL_SIGN_UE => Ok(ZanabazarSquare::VowelSignUe),
-            VOWEL_SIGN_U => Ok(ZanabazarSquare::VowelSignU),
-            VOWEL_SIGN_E => Ok(ZanabazarSquare::VowelSignE),
-            VOWEL_SIGN_OE => Ok(ZanabazarSquare::VowelSignOe),
-            VOWEL_SIGN_O => Ok(ZanabazarSquare::VowelSignO),
-            VOWEL_SIGN_AI => Ok(ZanabazarSquare::VowelSignAi),
-            VOWEL_SIGN_AU => Ok(ZanabazarSquare::VowelSignAu),
-            VOWEL_SIGN_REVERSED_I => Ok(ZanabazarSquare::VowelSignReversedI),
-            VOWEL_LENGTH_MARK => Ok(ZanabazarSquare::VowelLengthMark),
-            LETTER_KA => Ok(ZanabazarSquare::LetterKa),
-            LETTER_KHA => Ok(ZanabazarSquare::LetterKha),
-            LETTER_GA => Ok(ZanabazarSquare::LetterGa),
-            LETTER_GHA => Ok(ZanabazarSquare::LetterGha),
-            LETTER_NGA => Ok(ZanabazarSquare::LetterNga),
-            LETTER_CA => Ok(ZanabazarSquare::LetterCa),
-            LETTER_CHA => Ok(ZanabazarSquare::LetterCha),
-            LETTER_JA => Ok(ZanabazarSquare::LetterJa),
-            LETTER_NYA => Ok(ZanabazarSquare::LetterNya),
-            LETTER_TTA => Ok(ZanabazarSquare::LetterTta),
-            LETTER_TTHA => Ok(ZanabazarSquare::LetterTtha),
-            LETTER_DDA => Ok(ZanabazarSquare::LetterDda),
-            LETTER_DDHA => Ok(ZanabazarSquare::LetterDdha),
-            LETTER_NNA => Ok(ZanabazarSquare::LetterNna),
-            LETTER_TA => Ok(ZanabazarSquare::LetterTa),
-            LETTER_THA => Ok(ZanabazarSquare::LetterTha),
-            LETTER_DA => Ok(ZanabazarSquare::LetterDa),
-            LETTER_DHA => Ok(ZanabazarSquare::LetterDha),
-            LETTER_NA => Ok(ZanabazarSquare::LetterNa),
-            LETTER_PA => Ok(ZanabazarSquare::LetterPa),
-            LETTER_PHA => Ok(ZanabazarSquare::LetterPha),
-            LETTER_BA => Ok(ZanabazarSquare::LetterBa),
-            LETTER_BHA => Ok(ZanabazarSquare::LetterBha),
-            LETTER_MA => Ok(ZanabazarSquare::LetterMa),
-            LETTER_TSA => Ok(ZanabazarSquare::LetterTsa),
-            LETTER_TSHA => Ok(ZanabazarSquare::LetterTsha),
-            LETTER_DZA => Ok(ZanabazarSquare::LetterDza),
-            LETTER_DZHA => Ok(ZanabazarSquare::LetterDzha),
-            LETTER_ZHA => Ok(ZanabazarSquare::LetterZha),
-            LETTER_ZA => Ok(ZanabazarSquare::LetterZa),
-            LETTER__DASH_A => Ok(ZanabazarSquare::LetterDashA),
-            LETTER_YA => Ok(ZanabazarSquare::LetterYa),
-            LETTER_RA => Ok(ZanabazarSquare::LetterRa),
-            LETTER_LA => Ok(ZanabazarSquare::LetterLa),
-            LETTER_VA => Ok(ZanabazarSquare::LetterVa),
-            LETTER_SHA => Ok(ZanabazarSquare::LetterSha),
-            LETTER_SSA => Ok(ZanabazarSquare::LetterSsa),
-            LETTER_SA => Ok(ZanabazarSquare::LetterSa),
-            LETTER_HA => Ok(ZanabazarSquare::LetterHa),
-            LETTER_KSSA => Ok(ZanabazarSquare::LetterKssa),
-            FINAL_CONSONANT_MARK => Ok(ZanabazarSquare::FinalConsonantMark),
-            SIGN_VIRAMA => Ok(ZanabazarSquare::SignVirama),
-            SIGN_CANDRABINDU => Ok(ZanabazarSquare::SignCandrabindu),
-            SIGN_CANDRABINDU_WITH_ORNAMENT => Ok(ZanabazarSquare::SignCandrabinduWithOrnament),
-            SIGN_CANDRA_WITH_ORNAMENT => Ok(ZanabazarSquare::SignCandraWithOrnament),
-            SIGN_ANUSVARA => Ok(ZanabazarSquare::SignAnusvara),
-            SIGN_VISARGA => Ok(ZanabazarSquare::SignVisarga),
-            CLUSTER_DASH_INITIAL_LETTER_RA => Ok(ZanabazarSquare::ClusterDashInitialLetterRa),
-            CLUSTER_DASH_FINAL_LETTER_YA => Ok(ZanabazarSquare::ClusterDashFinalLetterYa),
-            CLUSTER_DASH_FINAL_LETTER_RA => Ok(ZanabazarSquare::ClusterDashFinalLetterRa),
-            CLUSTER_DASH_FINAL_LETTER_LA => Ok(ZanabazarSquare::ClusterDashFinalLetterLa),
-            CLUSTER_DASH_FINAL_LETTER_VA => Ok(ZanabazarSquare::ClusterDashFinalLetterVa),
-            INITIAL_HEAD_MARK => Ok(ZanabazarSquare::InitialHeadMark),
-            CLOSING_HEAD_MARK => Ok(ZanabazarSquare::ClosingHeadMark),
-            MARK_TSHEG => Ok(ZanabazarSquare::MarkTsheg),
-            MARK_SHAD => Ok(ZanabazarSquare::MarkShad),
-            MARK_DOUBLE_SHAD => Ok(ZanabazarSquare::MarkDoubleShad),
-            MARK_LONG_TSHEG => Ok(ZanabazarSquare::MarkLongTsheg),
-            INITIAL_DOUBLE_DASH_LINED_HEAD_MARK => Ok(ZanabazarSquare::InitialDoubleDashLinedHeadMark),
-            CLOSING_DOUBLE_DASH_LINED_HEAD_MARK => Ok(ZanabazarSquare::ClosingDoubleDashLinedHeadMark),
-            SUBJOINER => Ok(ZanabazarSquare::Subjoiner),
+            '𑨀' => Ok(ZanabazarSquare::LetterA),
+            '𑨁' => Ok(ZanabazarSquare::VowelSignI),
+            '𑨂' => Ok(ZanabazarSquare::VowelSignUe),
+            '𑨃' => Ok(ZanabazarSquare::VowelSignU),
+            '𑨄' => Ok(ZanabazarSquare::VowelSignE),
+            '𑨅' => Ok(ZanabazarSquare::VowelSignOe),
+            '𑨆' => Ok(ZanabazarSquare::VowelSignO),
+            '𑨇' => Ok(ZanabazarSquare::VowelSignAi),
+            '𑨈' => Ok(ZanabazarSquare::VowelSignAu),
+            '𑨉' => Ok(ZanabazarSquare::VowelSignReversedI),
+            '𑨊' => Ok(ZanabazarSquare::VowelLengthMark),
+            '𑨋' => Ok(ZanabazarSquare::LetterKa),
+            '𑨌' => Ok(ZanabazarSquare::LetterKha),
+            '𑨍' => Ok(ZanabazarSquare::LetterGa),
+            '𑨎' => Ok(ZanabazarSquare::LetterGha),
+            '𑨏' => Ok(ZanabazarSquare::LetterNga),
+            '𑨐' => Ok(ZanabazarSquare::LetterCa),
+            '𑨑' => Ok(ZanabazarSquare::LetterCha),
+            '𑨒' => Ok(ZanabazarSquare::LetterJa),
+            '𑨓' => Ok(ZanabazarSquare::LetterNya),
+            '𑨔' => Ok(ZanabazarSquare::LetterTta),
+            '𑨕' => Ok(ZanabazarSquare::LetterTtha),
+            '𑨖' => Ok(ZanabazarSquare::LetterDda),
+            '𑨗' => Ok(ZanabazarSquare::LetterDdha),
+            '𑨘' => Ok(ZanabazarSquare::LetterNna),
+            '𑨙' => Ok(ZanabazarSquare::LetterTa),
+            '𑨚' => Ok(ZanabazarSquare::LetterTha),
+            '𑨛' => Ok(ZanabazarSquare::LetterDa),
+            '𑨜' => Ok(ZanabazarSquare::LetterDha),
+            '𑨝' => Ok(ZanabazarSquare::LetterNa),
+            '𑨞' => Ok(ZanabazarSquare::LetterPa),
+            '𑨟' => Ok(ZanabazarSquare::LetterPha),
+            '𑨠' => Ok(ZanabazarSquare::LetterBa),
+            '𑨡' => Ok(ZanabazarSquare::LetterBha),
+            '𑨢' => Ok(ZanabazarSquare::LetterMa),
+            '𑨣' => Ok(ZanabazarSquare::LetterTsa),
+            '𑨤' => Ok(ZanabazarSquare::LetterTsha),
+            '𑨥' => Ok(ZanabazarSquare::LetterDza),
+            '𑨦' => Ok(ZanabazarSquare::LetterDzha),
+            '𑨧' => Ok(ZanabazarSquare::LetterZha),
+            '𑨨' => Ok(ZanabazarSquare::LetterZa),
+            '𑨩' => Ok(ZanabazarSquare::LetterDashA),
+            '𑨪' => Ok(ZanabazarSquare::LetterYa),
+            '𑨫' => Ok(ZanabazarSquare::LetterRa),
+            '𑨬' => Ok(ZanabazarSquare::LetterLa),
+            '𑨭' => Ok(ZanabazarSquare::LetterVa),
+            '𑨮' => Ok(ZanabazarSquare::LetterSha),
+            '𑨯' => Ok(ZanabazarSquare::LetterSsa),
+            '𑨰' => Ok(ZanabazarSquare::LetterSa),
+            '𑨱' => Ok(ZanabazarSquare::LetterHa),
+            '𑨲' => Ok(ZanabazarSquare::LetterKssa),
+            '𑨳' => Ok(ZanabazarSquare::FinalConsonantMark),
+            '𑨴' => Ok(ZanabazarSquare::SignVirama),
+            '𑨵' => Ok(ZanabazarSquare::SignCandrabindu),
+            '𑨶' => Ok(ZanabazarSquare::SignCandrabinduWithOrnament),
+            '𑨷' => Ok(ZanabazarSquare::SignCandraWithOrnament),
+            '𑨸' => Ok(ZanabazarSquare::SignAnusvara),
+            '𑨹' => Ok(ZanabazarSquare::SignVisarga),
+            '𑨺' => Ok(ZanabazarSquare::ClusterDashInitialLetterRa),
+            '𑨻' => Ok(ZanabazarSquare::ClusterDashFinalLetterYa),
+            '𑨼' => Ok(ZanabazarSquare::ClusterDashFinalLetterRa),
+            '𑨽' => Ok(ZanabazarSquare::ClusterDashFinalLetterLa),
+            '𑨾' => Ok(ZanabazarSquare::ClusterDashFinalLetterVa),
+            '𑨿' => Ok(ZanabazarSquare::InitialHeadMark),
+            '𑩀' => Ok(ZanabazarSquare::ClosingHeadMark),
+            '𑩁' => Ok(ZanabazarSquare::MarkTsheg),
+            '𑩂' => Ok(ZanabazarSquare::MarkShad),
+            '𑩃' => Ok(ZanabazarSquare::MarkDoubleShad),
+            '𑩄' => Ok(ZanabazarSquare::MarkLongTsheg),
+            '𑩅' => Ok(ZanabazarSquare::InitialDoubleDashLinedHeadMark),
+            '𑩆' => Ok(ZanabazarSquare::ClosingDoubleDashLinedHeadMark),
+            '𑩇' => Ok(ZanabazarSquare::Subjoiner),
             _ => Err(()),
         }
     }

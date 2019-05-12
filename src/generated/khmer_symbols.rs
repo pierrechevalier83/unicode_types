@@ -1,68 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{19e0}: '᧠'
-    pub const KHMER_SYMBOL_PATHAMASAT: char = '᧠';
-    /// \u{19e1}: '᧡'
-    pub const KHMER_SYMBOL_MUOY_KOET: char = '᧡';
-    /// \u{19e2}: '᧢'
-    pub const KHMER_SYMBOL_PII_KOET: char = '᧢';
-    /// \u{19e3}: '᧣'
-    pub const KHMER_SYMBOL_BEI_KOET: char = '᧣';
-    /// \u{19e4}: '᧤'
-    pub const KHMER_SYMBOL_BUON_KOET: char = '᧤';
-    /// \u{19e5}: '᧥'
-    pub const KHMER_SYMBOL_PRAM_KOET: char = '᧥';
-    /// \u{19e6}: '᧦'
-    pub const KHMER_SYMBOL_PRAM_DASH_MUOY_KOET: char = '᧦';
-    /// \u{19e7}: '᧧'
-    pub const KHMER_SYMBOL_PRAM_DASH_PII_KOET: char = '᧧';
-    /// \u{19e8}: '᧨'
-    pub const KHMER_SYMBOL_PRAM_DASH_BEI_KOET: char = '᧨';
-    /// \u{19e9}: '᧩'
-    pub const KHMER_SYMBOL_PRAM_DASH_BUON_KOET: char = '᧩';
-    /// \u{19ea}: '᧪'
-    pub const KHMER_SYMBOL_DAP_KOET: char = '᧪';
-    /// \u{19eb}: '᧫'
-    pub const KHMER_SYMBOL_DAP_DASH_MUOY_KOET: char = '᧫';
-    /// \u{19ec}: '᧬'
-    pub const KHMER_SYMBOL_DAP_DASH_PII_KOET: char = '᧬';
-    /// \u{19ed}: '᧭'
-    pub const KHMER_SYMBOL_DAP_DASH_BEI_KOET: char = '᧭';
-    /// \u{19ee}: '᧮'
-    pub const KHMER_SYMBOL_DAP_DASH_BUON_KOET: char = '᧮';
-    /// \u{19ef}: '᧯'
-    pub const KHMER_SYMBOL_DAP_DASH_PRAM_KOET: char = '᧯';
-    /// \u{19f0}: '᧰'
-    pub const KHMER_SYMBOL_TUTEYASAT: char = '᧰';
-    /// \u{19f1}: '᧱'
-    pub const KHMER_SYMBOL_MUOY_ROC: char = '᧱';
-    /// \u{19f2}: '᧲'
-    pub const KHMER_SYMBOL_PII_ROC: char = '᧲';
-    /// \u{19f3}: '᧳'
-    pub const KHMER_SYMBOL_BEI_ROC: char = '᧳';
-    /// \u{19f4}: '᧴'
-    pub const KHMER_SYMBOL_BUON_ROC: char = '᧴';
-    /// \u{19f5}: '᧵'
-    pub const KHMER_SYMBOL_PRAM_ROC: char = '᧵';
-    /// \u{19f6}: '᧶'
-    pub const KHMER_SYMBOL_PRAM_DASH_MUOY_ROC: char = '᧶';
-    /// \u{19f7}: '᧷'
-    pub const KHMER_SYMBOL_PRAM_DASH_PII_ROC: char = '᧷';
-    /// \u{19f8}: '᧸'
-    pub const KHMER_SYMBOL_PRAM_DASH_BEI_ROC: char = '᧸';
-    /// \u{19f9}: '᧹'
-    pub const KHMER_SYMBOL_PRAM_DASH_BUON_ROC: char = '᧹';
-    /// \u{19fa}: '᧺'
-    pub const KHMER_SYMBOL_DAP_ROC: char = '᧺';
-    /// \u{19fb}: '᧻'
-    pub const KHMER_SYMBOL_DAP_DASH_MUOY_ROC: char = '᧻';
-    /// \u{19fc}: '᧼'
-    pub const KHMER_SYMBOL_DAP_DASH_PII_ROC: char = '᧼';
-    /// \u{19fd}: '᧽'
-    pub const KHMER_SYMBOL_DAP_DASH_BEI_ROC: char = '᧽';
-    /// \u{19fe}: '᧾'
-    pub const KHMER_SYMBOL_DAP_DASH_BUON_ROC: char = '᧾';
-}
 
 /// An enum to represent all characters in the KhmerSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -133,39 +68,38 @@ pub enum KhmerSymbols {
 
 impl Into<char> for KhmerSymbols {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            KhmerSymbols::KhmerSymbolPathamasat => KHMER_SYMBOL_PATHAMASAT,
-            KhmerSymbols::KhmerSymbolMuoyKoet => KHMER_SYMBOL_MUOY_KOET,
-            KhmerSymbols::KhmerSymbolPiiKoet => KHMER_SYMBOL_PII_KOET,
-            KhmerSymbols::KhmerSymbolBeiKoet => KHMER_SYMBOL_BEI_KOET,
-            KhmerSymbols::KhmerSymbolBuonKoet => KHMER_SYMBOL_BUON_KOET,
-            KhmerSymbols::KhmerSymbolPramKoet => KHMER_SYMBOL_PRAM_KOET,
-            KhmerSymbols::KhmerSymbolPramDashMuoyKoet => KHMER_SYMBOL_PRAM_DASH_MUOY_KOET,
-            KhmerSymbols::KhmerSymbolPramDashPiiKoet => KHMER_SYMBOL_PRAM_DASH_PII_KOET,
-            KhmerSymbols::KhmerSymbolPramDashBeiKoet => KHMER_SYMBOL_PRAM_DASH_BEI_KOET,
-            KhmerSymbols::KhmerSymbolPramDashBuonKoet => KHMER_SYMBOL_PRAM_DASH_BUON_KOET,
-            KhmerSymbols::KhmerSymbolDapKoet => KHMER_SYMBOL_DAP_KOET,
-            KhmerSymbols::KhmerSymbolDapDashMuoyKoet => KHMER_SYMBOL_DAP_DASH_MUOY_KOET,
-            KhmerSymbols::KhmerSymbolDapDashPiiKoet => KHMER_SYMBOL_DAP_DASH_PII_KOET,
-            KhmerSymbols::KhmerSymbolDapDashBeiKoet => KHMER_SYMBOL_DAP_DASH_BEI_KOET,
-            KhmerSymbols::KhmerSymbolDapDashBuonKoet => KHMER_SYMBOL_DAP_DASH_BUON_KOET,
-            KhmerSymbols::KhmerSymbolDapDashPramKoet => KHMER_SYMBOL_DAP_DASH_PRAM_KOET,
-            KhmerSymbols::KhmerSymbolTuteyasat => KHMER_SYMBOL_TUTEYASAT,
-            KhmerSymbols::KhmerSymbolMuoyRoc => KHMER_SYMBOL_MUOY_ROC,
-            KhmerSymbols::KhmerSymbolPiiRoc => KHMER_SYMBOL_PII_ROC,
-            KhmerSymbols::KhmerSymbolBeiRoc => KHMER_SYMBOL_BEI_ROC,
-            KhmerSymbols::KhmerSymbolBuonRoc => KHMER_SYMBOL_BUON_ROC,
-            KhmerSymbols::KhmerSymbolPramRoc => KHMER_SYMBOL_PRAM_ROC,
-            KhmerSymbols::KhmerSymbolPramDashMuoyRoc => KHMER_SYMBOL_PRAM_DASH_MUOY_ROC,
-            KhmerSymbols::KhmerSymbolPramDashPiiRoc => KHMER_SYMBOL_PRAM_DASH_PII_ROC,
-            KhmerSymbols::KhmerSymbolPramDashBeiRoc => KHMER_SYMBOL_PRAM_DASH_BEI_ROC,
-            KhmerSymbols::KhmerSymbolPramDashBuonRoc => KHMER_SYMBOL_PRAM_DASH_BUON_ROC,
-            KhmerSymbols::KhmerSymbolDapRoc => KHMER_SYMBOL_DAP_ROC,
-            KhmerSymbols::KhmerSymbolDapDashMuoyRoc => KHMER_SYMBOL_DAP_DASH_MUOY_ROC,
-            KhmerSymbols::KhmerSymbolDapDashPiiRoc => KHMER_SYMBOL_DAP_DASH_PII_ROC,
-            KhmerSymbols::KhmerSymbolDapDashBeiRoc => KHMER_SYMBOL_DAP_DASH_BEI_ROC,
-            KhmerSymbols::KhmerSymbolDapDashBuonRoc => KHMER_SYMBOL_DAP_DASH_BUON_ROC,
+            KhmerSymbols::KhmerSymbolPathamasat => '᧠',
+            KhmerSymbols::KhmerSymbolMuoyKoet => '᧡',
+            KhmerSymbols::KhmerSymbolPiiKoet => '᧢',
+            KhmerSymbols::KhmerSymbolBeiKoet => '᧣',
+            KhmerSymbols::KhmerSymbolBuonKoet => '᧤',
+            KhmerSymbols::KhmerSymbolPramKoet => '᧥',
+            KhmerSymbols::KhmerSymbolPramDashMuoyKoet => '᧦',
+            KhmerSymbols::KhmerSymbolPramDashPiiKoet => '᧧',
+            KhmerSymbols::KhmerSymbolPramDashBeiKoet => '᧨',
+            KhmerSymbols::KhmerSymbolPramDashBuonKoet => '᧩',
+            KhmerSymbols::KhmerSymbolDapKoet => '᧪',
+            KhmerSymbols::KhmerSymbolDapDashMuoyKoet => '᧫',
+            KhmerSymbols::KhmerSymbolDapDashPiiKoet => '᧬',
+            KhmerSymbols::KhmerSymbolDapDashBeiKoet => '᧭',
+            KhmerSymbols::KhmerSymbolDapDashBuonKoet => '᧮',
+            KhmerSymbols::KhmerSymbolDapDashPramKoet => '᧯',
+            KhmerSymbols::KhmerSymbolTuteyasat => '᧰',
+            KhmerSymbols::KhmerSymbolMuoyRoc => '᧱',
+            KhmerSymbols::KhmerSymbolPiiRoc => '᧲',
+            KhmerSymbols::KhmerSymbolBeiRoc => '᧳',
+            KhmerSymbols::KhmerSymbolBuonRoc => '᧴',
+            KhmerSymbols::KhmerSymbolPramRoc => '᧵',
+            KhmerSymbols::KhmerSymbolPramDashMuoyRoc => '᧶',
+            KhmerSymbols::KhmerSymbolPramDashPiiRoc => '᧷',
+            KhmerSymbols::KhmerSymbolPramDashBeiRoc => '᧸',
+            KhmerSymbols::KhmerSymbolPramDashBuonRoc => '᧹',
+            KhmerSymbols::KhmerSymbolDapRoc => '᧺',
+            KhmerSymbols::KhmerSymbolDapDashMuoyRoc => '᧻',
+            KhmerSymbols::KhmerSymbolDapDashPiiRoc => '᧼',
+            KhmerSymbols::KhmerSymbolDapDashBeiRoc => '᧽',
+            KhmerSymbols::KhmerSymbolDapDashBuonRoc => '᧾',
         }
     }
 }
@@ -173,39 +107,38 @@ impl Into<char> for KhmerSymbols {
 impl std::convert::TryFrom<char> for KhmerSymbols {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            KHMER_SYMBOL_PATHAMASAT => Ok(KhmerSymbols::KhmerSymbolPathamasat),
-            KHMER_SYMBOL_MUOY_KOET => Ok(KhmerSymbols::KhmerSymbolMuoyKoet),
-            KHMER_SYMBOL_PII_KOET => Ok(KhmerSymbols::KhmerSymbolPiiKoet),
-            KHMER_SYMBOL_BEI_KOET => Ok(KhmerSymbols::KhmerSymbolBeiKoet),
-            KHMER_SYMBOL_BUON_KOET => Ok(KhmerSymbols::KhmerSymbolBuonKoet),
-            KHMER_SYMBOL_PRAM_KOET => Ok(KhmerSymbols::KhmerSymbolPramKoet),
-            KHMER_SYMBOL_PRAM_DASH_MUOY_KOET => Ok(KhmerSymbols::KhmerSymbolPramDashMuoyKoet),
-            KHMER_SYMBOL_PRAM_DASH_PII_KOET => Ok(KhmerSymbols::KhmerSymbolPramDashPiiKoet),
-            KHMER_SYMBOL_PRAM_DASH_BEI_KOET => Ok(KhmerSymbols::KhmerSymbolPramDashBeiKoet),
-            KHMER_SYMBOL_PRAM_DASH_BUON_KOET => Ok(KhmerSymbols::KhmerSymbolPramDashBuonKoet),
-            KHMER_SYMBOL_DAP_KOET => Ok(KhmerSymbols::KhmerSymbolDapKoet),
-            KHMER_SYMBOL_DAP_DASH_MUOY_KOET => Ok(KhmerSymbols::KhmerSymbolDapDashMuoyKoet),
-            KHMER_SYMBOL_DAP_DASH_PII_KOET => Ok(KhmerSymbols::KhmerSymbolDapDashPiiKoet),
-            KHMER_SYMBOL_DAP_DASH_BEI_KOET => Ok(KhmerSymbols::KhmerSymbolDapDashBeiKoet),
-            KHMER_SYMBOL_DAP_DASH_BUON_KOET => Ok(KhmerSymbols::KhmerSymbolDapDashBuonKoet),
-            KHMER_SYMBOL_DAP_DASH_PRAM_KOET => Ok(KhmerSymbols::KhmerSymbolDapDashPramKoet),
-            KHMER_SYMBOL_TUTEYASAT => Ok(KhmerSymbols::KhmerSymbolTuteyasat),
-            KHMER_SYMBOL_MUOY_ROC => Ok(KhmerSymbols::KhmerSymbolMuoyRoc),
-            KHMER_SYMBOL_PII_ROC => Ok(KhmerSymbols::KhmerSymbolPiiRoc),
-            KHMER_SYMBOL_BEI_ROC => Ok(KhmerSymbols::KhmerSymbolBeiRoc),
-            KHMER_SYMBOL_BUON_ROC => Ok(KhmerSymbols::KhmerSymbolBuonRoc),
-            KHMER_SYMBOL_PRAM_ROC => Ok(KhmerSymbols::KhmerSymbolPramRoc),
-            KHMER_SYMBOL_PRAM_DASH_MUOY_ROC => Ok(KhmerSymbols::KhmerSymbolPramDashMuoyRoc),
-            KHMER_SYMBOL_PRAM_DASH_PII_ROC => Ok(KhmerSymbols::KhmerSymbolPramDashPiiRoc),
-            KHMER_SYMBOL_PRAM_DASH_BEI_ROC => Ok(KhmerSymbols::KhmerSymbolPramDashBeiRoc),
-            KHMER_SYMBOL_PRAM_DASH_BUON_ROC => Ok(KhmerSymbols::KhmerSymbolPramDashBuonRoc),
-            KHMER_SYMBOL_DAP_ROC => Ok(KhmerSymbols::KhmerSymbolDapRoc),
-            KHMER_SYMBOL_DAP_DASH_MUOY_ROC => Ok(KhmerSymbols::KhmerSymbolDapDashMuoyRoc),
-            KHMER_SYMBOL_DAP_DASH_PII_ROC => Ok(KhmerSymbols::KhmerSymbolDapDashPiiRoc),
-            KHMER_SYMBOL_DAP_DASH_BEI_ROC => Ok(KhmerSymbols::KhmerSymbolDapDashBeiRoc),
-            KHMER_SYMBOL_DAP_DASH_BUON_ROC => Ok(KhmerSymbols::KhmerSymbolDapDashBuonRoc),
+            '᧠' => Ok(KhmerSymbols::KhmerSymbolPathamasat),
+            '᧡' => Ok(KhmerSymbols::KhmerSymbolMuoyKoet),
+            '᧢' => Ok(KhmerSymbols::KhmerSymbolPiiKoet),
+            '᧣' => Ok(KhmerSymbols::KhmerSymbolBeiKoet),
+            '᧤' => Ok(KhmerSymbols::KhmerSymbolBuonKoet),
+            '᧥' => Ok(KhmerSymbols::KhmerSymbolPramKoet),
+            '᧦' => Ok(KhmerSymbols::KhmerSymbolPramDashMuoyKoet),
+            '᧧' => Ok(KhmerSymbols::KhmerSymbolPramDashPiiKoet),
+            '᧨' => Ok(KhmerSymbols::KhmerSymbolPramDashBeiKoet),
+            '᧩' => Ok(KhmerSymbols::KhmerSymbolPramDashBuonKoet),
+            '᧪' => Ok(KhmerSymbols::KhmerSymbolDapKoet),
+            '᧫' => Ok(KhmerSymbols::KhmerSymbolDapDashMuoyKoet),
+            '᧬' => Ok(KhmerSymbols::KhmerSymbolDapDashPiiKoet),
+            '᧭' => Ok(KhmerSymbols::KhmerSymbolDapDashBeiKoet),
+            '᧮' => Ok(KhmerSymbols::KhmerSymbolDapDashBuonKoet),
+            '᧯' => Ok(KhmerSymbols::KhmerSymbolDapDashPramKoet),
+            '᧰' => Ok(KhmerSymbols::KhmerSymbolTuteyasat),
+            '᧱' => Ok(KhmerSymbols::KhmerSymbolMuoyRoc),
+            '᧲' => Ok(KhmerSymbols::KhmerSymbolPiiRoc),
+            '᧳' => Ok(KhmerSymbols::KhmerSymbolBeiRoc),
+            '᧴' => Ok(KhmerSymbols::KhmerSymbolBuonRoc),
+            '᧵' => Ok(KhmerSymbols::KhmerSymbolPramRoc),
+            '᧶' => Ok(KhmerSymbols::KhmerSymbolPramDashMuoyRoc),
+            '᧷' => Ok(KhmerSymbols::KhmerSymbolPramDashPiiRoc),
+            '᧸' => Ok(KhmerSymbols::KhmerSymbolPramDashBeiRoc),
+            '᧹' => Ok(KhmerSymbols::KhmerSymbolPramDashBuonRoc),
+            '᧺' => Ok(KhmerSymbols::KhmerSymbolDapRoc),
+            '᧻' => Ok(KhmerSymbols::KhmerSymbolDapDashMuoyRoc),
+            '᧼' => Ok(KhmerSymbols::KhmerSymbolDapDashPiiRoc),
+            '᧽' => Ok(KhmerSymbols::KhmerSymbolDapDashBeiRoc),
+            '᧾' => Ok(KhmerSymbols::KhmerSymbolDapDashBuonRoc),
             _ => Err(()),
         }
     }

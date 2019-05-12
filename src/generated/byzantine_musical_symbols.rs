@@ -1,498 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1d000}: '𝀀'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PSILI: char = '𝀀';
-    /// \u{1d001}: '𝀁'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DASEIA: char = '𝀁';
-    /// \u{1d002}: '𝀂'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PERISPOMENI: char = '𝀂';
-    /// \u{1d003}: '𝀃'
-    pub const BYZANTINE_MUSICAL_SYMBOL_OXEIA_EKFONITIKON: char = '𝀃';
-    /// \u{1d004}: '𝀄'
-    pub const BYZANTINE_MUSICAL_SYMBOL_OXEIA_DIPLI: char = '𝀄';
-    /// \u{1d005}: '𝀅'
-    pub const BYZANTINE_MUSICAL_SYMBOL_VAREIA_EKFONITIKON: char = '𝀅';
-    /// \u{1d006}: '𝀆'
-    pub const BYZANTINE_MUSICAL_SYMBOL_VAREIA_DIPLI: char = '𝀆';
-    /// \u{1d007}: '𝀇'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KATHISTI: char = '𝀇';
-    /// \u{1d008}: '𝀈'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SYRMATIKI: char = '𝀈';
-    /// \u{1d009}: '𝀉'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PARAKLITIKI: char = '𝀉';
-    /// \u{1d00a}: '𝀊'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YPOKRISIS: char = '𝀊';
-    /// \u{1d00b}: '𝀋'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YPOKRISIS_DIPLI: char = '𝀋';
-    /// \u{1d00c}: '𝀌'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KREMASTI: char = '𝀌';
-    /// \u{1d00d}: '𝀍'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APESO_EKFONITIKON: char = '𝀍';
-    /// \u{1d00e}: '𝀎'
-    pub const BYZANTINE_MUSICAL_SYMBOL_EXO_EKFONITIKON: char = '𝀎';
-    /// \u{1d00f}: '𝀏'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TELEIA: char = '𝀏';
-    /// \u{1d010}: '𝀐'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KENTIMATA: char = '𝀐';
-    /// \u{1d011}: '𝀑'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APOSTROFOS: char = '𝀑';
-    /// \u{1d012}: '𝀒'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APOSTROFOS_DIPLI: char = '𝀒';
-    /// \u{1d013}: '𝀓'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SYNEVMA: char = '𝀓';
-    /// \u{1d014}: '𝀔'
-    pub const BYZANTINE_MUSICAL_SYMBOL_THITA: char = '𝀔';
-    /// \u{1d015}: '𝀕'
-    pub const BYZANTINE_MUSICAL_SYMBOL_OLIGON_ARCHAION: char = '𝀕';
-    /// \u{1d016}: '𝀖'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GORGON_ARCHAION: char = '𝀖';
-    /// \u{1d017}: '𝀗'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PSILON: char = '𝀗';
-    /// \u{1d018}: '𝀘'
-    pub const BYZANTINE_MUSICAL_SYMBOL_CHAMILON: char = '𝀘';
-    /// \u{1d019}: '𝀙'
-    pub const BYZANTINE_MUSICAL_SYMBOL_VATHY: char = '𝀙';
-    /// \u{1d01a}: '𝀚'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ISON_ARCHAION: char = '𝀚';
-    /// \u{1d01b}: '𝀛'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KENTIMA_ARCHAION: char = '𝀛';
-    /// \u{1d01c}: '𝀜'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_ARCHAION: char = '𝀜';
-    /// \u{1d01d}: '𝀝'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SAXIMATA: char = '𝀝';
-    /// \u{1d01e}: '𝀞'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PARICHON: char = '𝀞';
-    /// \u{1d01f}: '𝀟'
-    pub const BYZANTINE_MUSICAL_SYMBOL_STAVROS_APODEXIA: char = '𝀟';
-    /// \u{1d020}: '𝀠'
-    pub const BYZANTINE_MUSICAL_SYMBOL_OXEIAI_ARCHAION: char = '𝀠';
-    /// \u{1d021}: '𝀡'
-    pub const BYZANTINE_MUSICAL_SYMBOL_VAREIAI_ARCHAION: char = '𝀡';
-    /// \u{1d022}: '𝀢'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APODERMA_ARCHAION: char = '𝀢';
-    /// \u{1d023}: '𝀣'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APOTHEMA: char = '𝀣';
-    /// \u{1d024}: '𝀤'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KLASMA: char = '𝀤';
-    /// \u{1d025}: '𝀥'
-    pub const BYZANTINE_MUSICAL_SYMBOL_REVMA: char = '𝀥';
-    /// \u{1d026}: '𝀦'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PIASMA_ARCHAION: char = '𝀦';
-    /// \u{1d027}: '𝀧'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TINAGMA: char = '𝀧';
-    /// \u{1d028}: '𝀨'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ANATRICHISMA: char = '𝀨';
-    /// \u{1d029}: '𝀩'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SEISMA: char = '𝀩';
-    /// \u{1d02a}: '𝀪'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SYNAGMA_ARCHAION: char = '𝀪';
-    /// \u{1d02b}: '𝀫'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SYNAGMA_META_STAVROU: char = '𝀫';
-    /// \u{1d02c}: '𝀬'
-    pub const BYZANTINE_MUSICAL_SYMBOL_OYRANISMA_ARCHAION: char = '𝀬';
-    /// \u{1d02d}: '𝀭'
-    pub const BYZANTINE_MUSICAL_SYMBOL_THEMA: char = '𝀭';
-    /// \u{1d02e}: '𝀮'
-    pub const BYZANTINE_MUSICAL_SYMBOL_LEMOI: char = '𝀮';
-    /// \u{1d02f}: '𝀯'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DYO: char = '𝀯';
-    /// \u{1d030}: '𝀰'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TRIA: char = '𝀰';
-    /// \u{1d031}: '𝀱'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TESSERA: char = '𝀱';
-    /// \u{1d032}: '𝀲'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KRATIMATA: char = '𝀲';
-    /// \u{1d033}: '𝀳'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APESO_EXO_NEO: char = '𝀳';
-    /// \u{1d034}: '𝀴'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_ARCHAION: char = '𝀴';
-    /// \u{1d035}: '𝀵'
-    pub const BYZANTINE_MUSICAL_SYMBOL_IMIFTHORA: char = '𝀵';
-    /// \u{1d036}: '𝀶'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TROMIKON_ARCHAION: char = '𝀶';
-    /// \u{1d037}: '𝀷'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KATAVA_TROMIKON: char = '𝀷';
-    /// \u{1d038}: '𝀸'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PELASTON: char = '𝀸';
-    /// \u{1d039}: '𝀹'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PSIFISTON: char = '𝀹';
-    /// \u{1d03a}: '𝀺'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KONTEVMA: char = '𝀺';
-    /// \u{1d03b}: '𝀻'
-    pub const BYZANTINE_MUSICAL_SYMBOL_CHOREVMA_ARCHAION: char = '𝀻';
-    /// \u{1d03c}: '𝀼'
-    pub const BYZANTINE_MUSICAL_SYMBOL_RAPISMA: char = '𝀼';
-    /// \u{1d03d}: '𝀽'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PARAKALESMA_ARCHAION: char = '𝀽';
-    /// \u{1d03e}: '𝀾'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PARAKLITIKI_ARCHAION: char = '𝀾';
-    /// \u{1d03f}: '𝀿'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ICHADIN: char = '𝀿';
-    /// \u{1d040}: '𝁀'
-    pub const BYZANTINE_MUSICAL_SYMBOL_NANA: char = '𝁀';
-    /// \u{1d041}: '𝁁'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PETASMA: char = '𝁁';
-    /// \u{1d042}: '𝁂'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KONTEVMA_ALLO: char = '𝁂';
-    /// \u{1d043}: '𝁃'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TROMIKON_ALLO: char = '𝁃';
-    /// \u{1d044}: '𝁄'
-    pub const BYZANTINE_MUSICAL_SYMBOL_STRAGGISMATA: char = '𝁄';
-    /// \u{1d045}: '𝁅'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GRONTHISMATA: char = '𝁅';
-    /// \u{1d046}: '𝁆'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ISON_NEO: char = '𝁆';
-    /// \u{1d047}: '𝁇'
-    pub const BYZANTINE_MUSICAL_SYMBOL_OLIGON_NEO: char = '𝁇';
-    /// \u{1d048}: '𝁈'
-    pub const BYZANTINE_MUSICAL_SYMBOL_OXEIA_NEO: char = '𝁈';
-    /// \u{1d049}: '𝁉'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PETASTI: char = '𝁉';
-    /// \u{1d04a}: '𝁊'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KOUFISMA: char = '𝁊';
-    /// \u{1d04b}: '𝁋'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PETASTOKOUFISMA: char = '𝁋';
-    /// \u{1d04c}: '𝁌'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KRATIMOKOUFISMA: char = '𝁌';
-    /// \u{1d04d}: '𝁍'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PELASTON_NEO: char = '𝁍';
-    /// \u{1d04e}: '𝁎'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_NEO_ANO: char = '𝁎';
-    /// \u{1d04f}: '𝁏'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KENTIMA_NEO_ANO: char = '𝁏';
-    /// \u{1d050}: '𝁐'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YPSILI: char = '𝁐';
-    /// \u{1d051}: '𝁑'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APOSTROFOS_NEO: char = '𝁑';
-    /// \u{1d052}: '𝁒'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APOSTROFOI_SYNDESMOS_NEO: char = '𝁒';
-    /// \u{1d053}: '𝁓'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YPORROI: char = '𝁓';
-    /// \u{1d054}: '𝁔'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KRATIMOYPORROON: char = '𝁔';
-    /// \u{1d055}: '𝁕'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ELAFRON: char = '𝁕';
-    /// \u{1d056}: '𝁖'
-    pub const BYZANTINE_MUSICAL_SYMBOL_CHAMILI: char = '𝁖';
-    /// \u{1d057}: '𝁗'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MIKRON_ISON: char = '𝁗';
-    /// \u{1d058}: '𝁘'
-    pub const BYZANTINE_MUSICAL_SYMBOL_VAREIA_NEO: char = '𝁘';
-    /// \u{1d059}: '𝁙'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PIASMA_NEO: char = '𝁙';
-    /// \u{1d05a}: '𝁚'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PSIFISTON_NEO: char = '𝁚';
-    /// \u{1d05b}: '𝁛'
-    pub const BYZANTINE_MUSICAL_SYMBOL_OMALON: char = '𝁛';
-    /// \u{1d05c}: '𝁜'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ANTIKENOMA: char = '𝁜';
-    /// \u{1d05d}: '𝁝'
-    pub const BYZANTINE_MUSICAL_SYMBOL_LYGISMA: char = '𝁝';
-    /// \u{1d05e}: '𝁞'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PARAKLITIKI_NEO: char = '𝁞';
-    /// \u{1d05f}: '𝁟'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PARAKALESMA_NEO: char = '𝁟';
-    /// \u{1d060}: '𝁠'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ETERON_PARAKALESMA: char = '𝁠';
-    /// \u{1d061}: '𝁡'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KYLISMA: char = '𝁡';
-    /// \u{1d062}: '𝁢'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ANTIKENOKYLISMA: char = '𝁢';
-    /// \u{1d063}: '𝁣'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TROMIKON_NEO: char = '𝁣';
-    /// \u{1d064}: '𝁤'
-    pub const BYZANTINE_MUSICAL_SYMBOL_EKSTREPTON: char = '𝁤';
-    /// \u{1d065}: '𝁥'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SYNAGMA_NEO: char = '𝁥';
-    /// \u{1d066}: '𝁦'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SYRMA: char = '𝁦';
-    /// \u{1d067}: '𝁧'
-    pub const BYZANTINE_MUSICAL_SYMBOL_CHOREVMA_NEO: char = '𝁧';
-    /// \u{1d068}: '𝁨'
-    pub const BYZANTINE_MUSICAL_SYMBOL_EPEGERMA: char = '𝁨';
-    /// \u{1d069}: '𝁩'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SEISMA_NEO: char = '𝁩';
-    /// \u{1d06a}: '𝁪'
-    pub const BYZANTINE_MUSICAL_SYMBOL_XIRON_KLASMA: char = '𝁪';
-    /// \u{1d06b}: '𝁫'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TROMIKOPSIFISTON: char = '𝁫';
-    /// \u{1d06c}: '𝁬'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PSIFISTOLYGISMA: char = '𝁬';
-    /// \u{1d06d}: '𝁭'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TROMIKOLYGISMA: char = '𝁭';
-    /// \u{1d06e}: '𝁮'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TROMIKOPARAKALESMA: char = '𝁮';
-    /// \u{1d06f}: '𝁯'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PSIFISTOPARAKALESMA: char = '𝁯';
-    /// \u{1d070}: '𝁰'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TROMIKOSYNAGMA: char = '𝁰';
-    /// \u{1d071}: '𝁱'
-    pub const BYZANTINE_MUSICAL_SYMBOL_PSIFISTOSYNAGMA: char = '𝁱';
-    /// \u{1d072}: '𝁲'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GORGOSYNTHETON: char = '𝁲';
-    /// \u{1d073}: '𝁳'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ARGOSYNTHETON: char = '𝁳';
-    /// \u{1d074}: '𝁴'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ETERON_ARGOSYNTHETON: char = '𝁴';
-    /// \u{1d075}: '𝁵'
-    pub const BYZANTINE_MUSICAL_SYMBOL_OYRANISMA_NEO: char = '𝁵';
-    /// \u{1d076}: '𝁶'
-    pub const BYZANTINE_MUSICAL_SYMBOL_THEMATISMOS_ESO: char = '𝁶';
-    /// \u{1d077}: '𝁷'
-    pub const BYZANTINE_MUSICAL_SYMBOL_THEMATISMOS_EXO: char = '𝁷';
-    /// \u{1d078}: '𝁸'
-    pub const BYZANTINE_MUSICAL_SYMBOL_THEMA_APLOUN: char = '𝁸';
-    /// \u{1d079}: '𝁹'
-    pub const BYZANTINE_MUSICAL_SYMBOL_THES_KAI_APOTHES: char = '𝁹';
-    /// \u{1d07a}: '𝁺'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KATAVASMA: char = '𝁺';
-    /// \u{1d07b}: '𝁻'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ENDOFONON: char = '𝁻';
-    /// \u{1d07c}: '𝁼'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YFEN_KATO: char = '𝁼';
-    /// \u{1d07d}: '𝁽'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YFEN_ANO: char = '𝁽';
-    /// \u{1d07e}: '𝁾'
-    pub const BYZANTINE_MUSICAL_SYMBOL_STAVROS: char = '𝁾';
-    /// \u{1d07f}: '𝁿'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KLASMA_ANO: char = '𝁿';
-    /// \u{1d080}: '𝂀'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIPLI_ARCHAION: char = '𝂀';
-    /// \u{1d081}: '𝂁'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KRATIMA_ARCHAION: char = '𝂁';
-    /// \u{1d082}: '𝂂'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KRATIMA_ALLO: char = '𝂂';
-    /// \u{1d083}: '𝂃'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KRATIMA_NEO: char = '𝂃';
-    /// \u{1d084}: '𝂄'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APODERMA_NEO: char = '𝂄';
-    /// \u{1d085}: '𝂅'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APLI: char = '𝂅';
-    /// \u{1d086}: '𝂆'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIPLI: char = '𝂆';
-    /// \u{1d087}: '𝂇'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TRIPLI: char = '𝂇';
-    /// \u{1d088}: '𝂈'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TETRAPLI: char = '𝂈';
-    /// \u{1d089}: '𝂉'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KORONIS: char = '𝂉';
-    /// \u{1d08a}: '𝂊'
-    pub const BYZANTINE_MUSICAL_SYMBOL_LEIMMA_ENOS_CHRONOU: char = '𝂊';
-    /// \u{1d08b}: '𝂋'
-    pub const BYZANTINE_MUSICAL_SYMBOL_LEIMMA_DYO_CHRONON: char = '𝂋';
-    /// \u{1d08c}: '𝂌'
-    pub const BYZANTINE_MUSICAL_SYMBOL_LEIMMA_TRION_CHRONON: char = '𝂌';
-    /// \u{1d08d}: '𝂍'
-    pub const BYZANTINE_MUSICAL_SYMBOL_LEIMMA_TESSARON_CHRONON: char = '𝂍';
-    /// \u{1d08e}: '𝂎'
-    pub const BYZANTINE_MUSICAL_SYMBOL_LEIMMA_IMISEOS_CHRONOU: char = '𝂎';
-    /// \u{1d08f}: '𝂏'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GORGON_NEO_ANO: char = '𝂏';
-    /// \u{1d090}: '𝂐'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GORGON_PARESTIGMENON_ARISTERA: char = '𝂐';
-    /// \u{1d091}: '𝂑'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GORGON_PARESTIGMENON_DEXIA: char = '𝂑';
-    /// \u{1d092}: '𝂒'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIGORGON: char = '𝂒';
-    /// \u{1d093}: '𝂓'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIGORGON_PARESTIGMENON_ARISTERA_KATO: char = '𝂓';
-    /// \u{1d094}: '𝂔'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIGORGON_PARESTIGMENON_ARISTERA_ANO: char = '𝂔';
-    /// \u{1d095}: '𝂕'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIGORGON_PARESTIGMENON_DEXIA: char = '𝂕';
-    /// \u{1d096}: '𝂖'
-    pub const BYZANTINE_MUSICAL_SYMBOL_TRIGORGON: char = '𝂖';
-    /// \u{1d097}: '𝂗'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ARGON: char = '𝂗';
-    /// \u{1d098}: '𝂘'
-    pub const BYZANTINE_MUSICAL_SYMBOL_IMIDIARGON: char = '𝂘';
-    /// \u{1d099}: '𝂙'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIARGON: char = '𝂙';
-    /// \u{1d09a}: '𝂚'
-    pub const BYZANTINE_MUSICAL_SYMBOL_AGOGI_POLI_ARGI: char = '𝂚';
-    /// \u{1d09b}: '𝂛'
-    pub const BYZANTINE_MUSICAL_SYMBOL_AGOGI_ARGOTERI: char = '𝂛';
-    /// \u{1d09c}: '𝂜'
-    pub const BYZANTINE_MUSICAL_SYMBOL_AGOGI_ARGI: char = '𝂜';
-    /// \u{1d09d}: '𝂝'
-    pub const BYZANTINE_MUSICAL_SYMBOL_AGOGI_METRIA: char = '𝂝';
-    /// \u{1d09e}: '𝂞'
-    pub const BYZANTINE_MUSICAL_SYMBOL_AGOGI_MESI: char = '𝂞';
-    /// \u{1d09f}: '𝂟'
-    pub const BYZANTINE_MUSICAL_SYMBOL_AGOGI_GORGI: char = '𝂟';
-    /// \u{1d0a0}: '𝂠'
-    pub const BYZANTINE_MUSICAL_SYMBOL_AGOGI_GORGOTERI: char = '𝂠';
-    /// \u{1d0a1}: '𝂡'
-    pub const BYZANTINE_MUSICAL_SYMBOL_AGOGI_POLI_GORGI: char = '𝂡';
-    /// \u{1d0a2}: '𝂢'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PROTOS_ICHOS: char = '𝂢';
-    /// \u{1d0a3}: '𝂣'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_ALLI_PROTOS_ICHOS: char = '𝂣';
-    /// \u{1d0a4}: '𝂤'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_DEYTEROS_ICHOS: char = '𝂤';
-    /// \u{1d0a5}: '𝂥'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_ALLI_DEYTEROS_ICHOS: char = '𝂥';
-    /// \u{1d0a6}: '𝂦'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TRITOS_ICHOS: char = '𝂦';
-    /// \u{1d0a7}: '𝂧'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TRIFONIAS: char = '𝂧';
-    /// \u{1d0a8}: '𝂨'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TETARTOS_ICHOS: char = '𝂨';
-    /// \u{1d0a9}: '𝂩'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TETARTOS_LEGETOS_ICHOS: char = '𝂩';
-    /// \u{1d0aa}: '𝂪'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_LEGETOS_ICHOS: char = '𝂪';
-    /// \u{1d0ab}: '𝂫'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PLAGIOS_ICHOS: char = '𝂫';
-    /// \u{1d0ac}: '𝂬'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ISAKIA_TELOUS_ICHIMATOS: char = '𝂬';
-    /// \u{1d0ad}: '𝂭'
-    pub const BYZANTINE_MUSICAL_SYMBOL_APOSTROFOI_TELOUS_ICHIMATOS: char = '𝂭';
-    /// \u{1d0ae}: '𝂮'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FANEROSIS_TETRAFONIAS: char = '𝂮';
-    /// \u{1d0af}: '𝂯'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FANEROSIS_MONOFONIAS: char = '𝂯';
-    /// \u{1d0b0}: '𝂰'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FANEROSIS_DIFONIAS: char = '𝂰';
-    /// \u{1d0b1}: '𝂱'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_VARYS_ICHOS: char = '𝂱';
-    /// \u{1d0b2}: '𝂲'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PROTOVARYS_ICHOS: char = '𝂲';
-    /// \u{1d0b3}: '𝂳'
-    pub const BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PLAGIOS_TETARTOS_ICHOS: char = '𝂳';
-    /// \u{1d0b4}: '𝂴'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GORTHMIKON_N_APLOUN: char = '𝂴';
-    /// \u{1d0b5}: '𝂵'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GORTHMIKON_N_DIPLOUN: char = '𝂵';
-    /// \u{1d0b6}: '𝂶'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ENARXIS_KAI_FTHORA_VOU: char = '𝂶';
-    /// \u{1d0b7}: '𝂷'
-    pub const BYZANTINE_MUSICAL_SYMBOL_IMIFONON: char = '𝂷';
-    /// \u{1d0b8}: '𝂸'
-    pub const BYZANTINE_MUSICAL_SYMBOL_IMIFTHORON: char = '𝂸';
-    /// \u{1d0b9}: '𝂹'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_ARCHAION_DEYTEROU_ICHOU: char = '𝂹';
-    /// \u{1d0ba}: '𝂺'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_PA: char = '𝂺';
-    /// \u{1d0bb}: '𝂻'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_NANA: char = '𝂻';
-    /// \u{1d0bc}: '𝂼'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_NAOS_ICHOS: char = '𝂼';
-    /// \u{1d0bd}: '𝂽'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_DI: char = '𝂽';
-    /// \u{1d0be}: '𝂾'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_SKLIRON_DIATONON_DI: char = '𝂾';
-    /// \u{1d0bf}: '𝂿'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_KE: char = '𝂿';
-    /// \u{1d0c0}: '𝃀'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_ZO: char = '𝃀';
-    /// \u{1d0c1}: '𝃁'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_NI_KATO: char = '𝃁';
-    /// \u{1d0c2}: '𝃂'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_NI_ANO: char = '𝃂';
-    /// \u{1d0c3}: '𝃃'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_MALAKON_CHROMA_DIFONIAS: char = '𝃃';
-    /// \u{1d0c4}: '𝃄'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_MALAKON_CHROMA_MONOFONIAS: char = '𝃄';
-    /// \u{1d0c5}: '𝃅'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FHTORA_SKLIRON_CHROMA_VASIS: char = '𝃅';
-    /// \u{1d0c6}: '𝃆'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_SKLIRON_CHROMA_SYNAFI: char = '𝃆';
-    /// \u{1d0c7}: '𝃇'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_NENANO: char = '𝃇';
-    /// \u{1d0c8}: '𝃈'
-    pub const BYZANTINE_MUSICAL_SYMBOL_CHROA_ZYGOS: char = '𝃈';
-    /// \u{1d0c9}: '𝃉'
-    pub const BYZANTINE_MUSICAL_SYMBOL_CHROA_KLITON: char = '𝃉';
-    /// \u{1d0ca}: '𝃊'
-    pub const BYZANTINE_MUSICAL_SYMBOL_CHROA_SPATHI: char = '𝃊';
-    /// \u{1d0cb}: '𝃋'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_I_YFESIS_TETARTIMORION: char = '𝃋';
-    /// \u{1d0cc}: '𝃌'
-    pub const BYZANTINE_MUSICAL_SYMBOL_FTHORA_ENARMONIOS_ANTIFONIA: char = '𝃌';
-    /// \u{1d0cd}: '𝃍'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YFESIS_TRITIMORION: char = '𝃍';
-    /// \u{1d0ce}: '𝃎'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIESIS_TRITIMORION: char = '𝃎';
-    /// \u{1d0cf}: '𝃏'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIESIS_TETARTIMORION: char = '𝃏';
-    /// \u{1d0d0}: '𝃐'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIESIS_APLI_DYO_DODEKATA: char = '𝃐';
-    /// \u{1d0d1}: '𝃑'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIESIS_MONOGRAMMOS_TESSERA_DODEKATA: char = '𝃑';
-    /// \u{1d0d2}: '𝃒'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIESIS_DIGRAMMOS_EX_DODEKATA: char = '𝃒';
-    /// \u{1d0d3}: '𝃓'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIESIS_TRIGRAMMOS_OKTO_DODEKATA: char = '𝃓';
-    /// \u{1d0d4}: '𝃔'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YFESIS_APLI_DYO_DODEKATA: char = '𝃔';
-    /// \u{1d0d5}: '𝃕'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YFESIS_MONOGRAMMOS_TESSERA_DODEKATA: char = '𝃕';
-    /// \u{1d0d6}: '𝃖'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YFESIS_DIGRAMMOS_EX_DODEKATA: char = '𝃖';
-    /// \u{1d0d7}: '𝃗'
-    pub const BYZANTINE_MUSICAL_SYMBOL_YFESIS_TRIGRAMMOS_OKTO_DODEKATA: char = '𝃗';
-    /// \u{1d0d8}: '𝃘'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GENIKI_DIESIS: char = '𝃘';
-    /// \u{1d0d9}: '𝃙'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GENIKI_YFESIS: char = '𝃙';
-    /// \u{1d0da}: '𝃚'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_APLI_MIKRI: char = '𝃚';
-    /// \u{1d0db}: '𝃛'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_APLI_MEGALI: char = '𝃛';
-    /// \u{1d0dc}: '𝃜'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_DIPLI: char = '𝃜';
-    /// \u{1d0dd}: '𝃝'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_THESEOS: char = '𝃝';
-    /// \u{1d0de}: '𝃞'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS: char = '𝃞';
-    /// \u{1d0df}: '𝃟'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS_DISIMOU: char = '𝃟';
-    /// \u{1d0e0}: '𝃠'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS_TRISIMOU: char = '𝃠';
-    /// \u{1d0e1}: '𝃡'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS_TETRASIMOU: char = '𝃡';
-    /// \u{1d0e2}: '𝃢'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS: char = '𝃢';
-    /// \u{1d0e3}: '𝃣'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS_DISIMOU: char = '𝃣';
-    /// \u{1d0e4}: '𝃤'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS_TRISIMOU: char = '𝃤';
-    /// \u{1d0e5}: '𝃥'
-    pub const BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS_TETRASIMOU: char = '𝃥';
-    /// \u{1d0e6}: '𝃦'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIGRAMMA_GG: char = '𝃦';
-    /// \u{1d0e7}: '𝃧'
-    pub const BYZANTINE_MUSICAL_SYMBOL_DIFTOGGOS_OU: char = '𝃧';
-    /// \u{1d0e8}: '𝃨'
-    pub const BYZANTINE_MUSICAL_SYMBOL_STIGMA: char = '𝃨';
-    /// \u{1d0e9}: '𝃩'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_PA: char = '𝃩';
-    /// \u{1d0ea}: '𝃪'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_VOU: char = '𝃪';
-    /// \u{1d0eb}: '𝃫'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_GA: char = '𝃫';
-    /// \u{1d0ec}: '𝃬'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_DI: char = '𝃬';
-    /// \u{1d0ed}: '𝃭'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_KE: char = '𝃭';
-    /// \u{1d0ee}: '𝃮'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_ZO: char = '𝃮';
-    /// \u{1d0ef}: '𝃯'
-    pub const BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_NI: char = '𝃯';
-    /// \u{1d0f0}: '𝃰'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_NEO_MESO: char = '𝃰';
-    /// \u{1d0f1}: '𝃱'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KENTIMA_NEO_MESO: char = '𝃱';
-    /// \u{1d0f2}: '𝃲'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_NEO_KATO: char = '𝃲';
-    /// \u{1d0f3}: '𝃳'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KENTIMA_NEO_KATO: char = '𝃳';
-    /// \u{1d0f4}: '𝃴'
-    pub const BYZANTINE_MUSICAL_SYMBOL_KLASMA_KATO: char = '𝃴';
-    /// \u{1d0f5}: '𝃵'
-    pub const BYZANTINE_MUSICAL_SYMBOL_GORGON_NEO_KATO: char = '𝃵';
-}
 
 /// An enum to represent all characters in the ByzantineMusicalSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -993,254 +498,253 @@ pub enum ByzantineMusicalSymbols {
 
 impl Into<char> for ByzantineMusicalSymbols {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsili => BYZANTINE_MUSICAL_SYMBOL_PSILI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDaseia => BYZANTINE_MUSICAL_SYMBOL_DASEIA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPerispomeni => BYZANTINE_MUSICAL_SYMBOL_PERISPOMENI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaEkfonitikon => BYZANTINE_MUSICAL_SYMBOL_OXEIA_EKFONITIKON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaDipli => BYZANTINE_MUSICAL_SYMBOL_OXEIA_DIPLI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaEkfonitikon => BYZANTINE_MUSICAL_SYMBOL_VAREIA_EKFONITIKON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaDipli => BYZANTINE_MUSICAL_SYMBOL_VAREIA_DIPLI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKathisti => BYZANTINE_MUSICAL_SYMBOL_KATHISTI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSyrmatiki => BYZANTINE_MUSICAL_SYMBOL_SYRMATIKI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitiki => BYZANTINE_MUSICAL_SYMBOL_PARAKLITIKI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYpokrisis => BYZANTINE_MUSICAL_SYMBOL_YPOKRISIS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYpokrisisDipli => BYZANTINE_MUSICAL_SYMBOL_YPOKRISIS_DIPLI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKremasti => BYZANTINE_MUSICAL_SYMBOL_KREMASTI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApesoEkfonitikon => BYZANTINE_MUSICAL_SYMBOL_APESO_EKFONITIKON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolExoEkfonitikon => BYZANTINE_MUSICAL_SYMBOL_EXO_EKFONITIKON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTeleia => BYZANTINE_MUSICAL_SYMBOL_TELEIA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimata => BYZANTINE_MUSICAL_SYMBOL_KENTIMATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofos => BYZANTINE_MUSICAL_SYMBOL_APOSTROFOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofosDipli => BYZANTINE_MUSICAL_SYMBOL_APOSTROFOS_DIPLI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSynevma => BYZANTINE_MUSICAL_SYMBOL_SYNEVMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolThita => BYZANTINE_MUSICAL_SYMBOL_THITA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolOligonArchaion => BYZANTINE_MUSICAL_SYMBOL_OLIGON_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonArchaion => BYZANTINE_MUSICAL_SYMBOL_GORGON_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsilon => BYZANTINE_MUSICAL_SYMBOL_PSILON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolChamilon => BYZANTINE_MUSICAL_SYMBOL_CHAMILON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolVathy => BYZANTINE_MUSICAL_SYMBOL_VATHY,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolIsonArchaion => BYZANTINE_MUSICAL_SYMBOL_ISON_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaArchaion => BYZANTINE_MUSICAL_SYMBOL_KENTIMA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataArchaion => BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSaximata => BYZANTINE_MUSICAL_SYMBOL_SAXIMATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolParichon => BYZANTINE_MUSICAL_SYMBOL_PARICHON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolStavrosApodexia => BYZANTINE_MUSICAL_SYMBOL_STAVROS_APODEXIA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaiArchaion => BYZANTINE_MUSICAL_SYMBOL_OXEIAI_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaiArchaion => BYZANTINE_MUSICAL_SYMBOL_VAREIAI_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApodermaArchaion => BYZANTINE_MUSICAL_SYMBOL_APODERMA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApothema => BYZANTINE_MUSICAL_SYMBOL_APOTHEMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasma => BYZANTINE_MUSICAL_SYMBOL_KLASMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolRevma => BYZANTINE_MUSICAL_SYMBOL_REVMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPiasmaArchaion => BYZANTINE_MUSICAL_SYMBOL_PIASMA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTinagma => BYZANTINE_MUSICAL_SYMBOL_TINAGMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAnatrichisma => BYZANTINE_MUSICAL_SYMBOL_ANATRICHISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSeisma => BYZANTINE_MUSICAL_SYMBOL_SEISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaArchaion => BYZANTINE_MUSICAL_SYMBOL_SYNAGMA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaMetaStavrou => BYZANTINE_MUSICAL_SYMBOL_SYNAGMA_META_STAVROU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolOyranismaArchaion => BYZANTINE_MUSICAL_SYMBOL_OYRANISMA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolThema => BYZANTINE_MUSICAL_SYMBOL_THEMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolLemoi => BYZANTINE_MUSICAL_SYMBOL_LEMOI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDyo => BYZANTINE_MUSICAL_SYMBOL_DYO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTria => BYZANTINE_MUSICAL_SYMBOL_TRIA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTessera => BYZANTINE_MUSICAL_SYMBOL_TESSERA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimata => BYZANTINE_MUSICAL_SYMBOL_KRATIMATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApesoExoNeo => BYZANTINE_MUSICAL_SYMBOL_APESO_EXO_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraArchaion => BYZANTINE_MUSICAL_SYMBOL_FTHORA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolImifthora => BYZANTINE_MUSICAL_SYMBOL_IMIFTHORA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonArchaion => BYZANTINE_MUSICAL_SYMBOL_TROMIKON_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKatavaTromikon => BYZANTINE_MUSICAL_SYMBOL_KATAVA_TROMIKON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPelaston => BYZANTINE_MUSICAL_SYMBOL_PELASTON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifiston => BYZANTINE_MUSICAL_SYMBOL_PSIFISTON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKontevma => BYZANTINE_MUSICAL_SYMBOL_KONTEVMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolChorevmaArchaion => BYZANTINE_MUSICAL_SYMBOL_CHOREVMA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolRapisma => BYZANTINE_MUSICAL_SYMBOL_RAPISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolParakalesmaArchaion => BYZANTINE_MUSICAL_SYMBOL_PARAKALESMA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitikiArchaion => BYZANTINE_MUSICAL_SYMBOL_PARAKLITIKI_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolIchadin => BYZANTINE_MUSICAL_SYMBOL_ICHADIN,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolNana => BYZANTINE_MUSICAL_SYMBOL_NANA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPetasma => BYZANTINE_MUSICAL_SYMBOL_PETASMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKontevmaAllo => BYZANTINE_MUSICAL_SYMBOL_KONTEVMA_ALLO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonAllo => BYZANTINE_MUSICAL_SYMBOL_TROMIKON_ALLO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolStraggismata => BYZANTINE_MUSICAL_SYMBOL_STRAGGISMATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGronthismata => BYZANTINE_MUSICAL_SYMBOL_GRONTHISMATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolIsonNeo => BYZANTINE_MUSICAL_SYMBOL_ISON_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolOligonNeo => BYZANTINE_MUSICAL_SYMBOL_OLIGON_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaNeo => BYZANTINE_MUSICAL_SYMBOL_OXEIA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPetasti => BYZANTINE_MUSICAL_SYMBOL_PETASTI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKoufisma => BYZANTINE_MUSICAL_SYMBOL_KOUFISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPetastokoufisma => BYZANTINE_MUSICAL_SYMBOL_PETASTOKOUFISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimokoufisma => BYZANTINE_MUSICAL_SYMBOL_KRATIMOKOUFISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPelastonNeo => BYZANTINE_MUSICAL_SYMBOL_PELASTON_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoAno => BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_NEO_ANO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoAno => BYZANTINE_MUSICAL_SYMBOL_KENTIMA_NEO_ANO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYpsili => BYZANTINE_MUSICAL_SYMBOL_YPSILI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofosNeo => BYZANTINE_MUSICAL_SYMBOL_APOSTROFOS_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofoiSyndesmosNeo => BYZANTINE_MUSICAL_SYMBOL_APOSTROFOI_SYNDESMOS_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYporroi => BYZANTINE_MUSICAL_SYMBOL_YPORROI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimoyporroon => BYZANTINE_MUSICAL_SYMBOL_KRATIMOYPORROON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolElafron => BYZANTINE_MUSICAL_SYMBOL_ELAFRON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolChamili => BYZANTINE_MUSICAL_SYMBOL_CHAMILI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMikronIson => BYZANTINE_MUSICAL_SYMBOL_MIKRON_ISON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaNeo => BYZANTINE_MUSICAL_SYMBOL_VAREIA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPiasmaNeo => BYZANTINE_MUSICAL_SYMBOL_PIASMA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistonNeo => BYZANTINE_MUSICAL_SYMBOL_PSIFISTON_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolOmalon => BYZANTINE_MUSICAL_SYMBOL_OMALON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAntikenoma => BYZANTINE_MUSICAL_SYMBOL_ANTIKENOMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolLygisma => BYZANTINE_MUSICAL_SYMBOL_LYGISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitikiNeo => BYZANTINE_MUSICAL_SYMBOL_PARAKLITIKI_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolParakalesmaNeo => BYZANTINE_MUSICAL_SYMBOL_PARAKALESMA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolEteronParakalesma => BYZANTINE_MUSICAL_SYMBOL_ETERON_PARAKALESMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKylisma => BYZANTINE_MUSICAL_SYMBOL_KYLISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAntikenokylisma => BYZANTINE_MUSICAL_SYMBOL_ANTIKENOKYLISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonNeo => BYZANTINE_MUSICAL_SYMBOL_TROMIKON_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolEkstrepton => BYZANTINE_MUSICAL_SYMBOL_EKSTREPTON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaNeo => BYZANTINE_MUSICAL_SYMBOL_SYNAGMA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSyrma => BYZANTINE_MUSICAL_SYMBOL_SYRMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolChorevmaNeo => BYZANTINE_MUSICAL_SYMBOL_CHOREVMA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolEpegerma => BYZANTINE_MUSICAL_SYMBOL_EPEGERMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSeismaNeo => BYZANTINE_MUSICAL_SYMBOL_SEISMA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolXironKlasma => BYZANTINE_MUSICAL_SYMBOL_XIRON_KLASMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikopsifiston => BYZANTINE_MUSICAL_SYMBOL_TROMIKOPSIFISTON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistolygisma => BYZANTINE_MUSICAL_SYMBOL_PSIFISTOLYGISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikolygisma => BYZANTINE_MUSICAL_SYMBOL_TROMIKOLYGISMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikoparakalesma => BYZANTINE_MUSICAL_SYMBOL_TROMIKOPARAKALESMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistoparakalesma => BYZANTINE_MUSICAL_SYMBOL_PSIFISTOPARAKALESMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikosynagma => BYZANTINE_MUSICAL_SYMBOL_TROMIKOSYNAGMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistosynagma => BYZANTINE_MUSICAL_SYMBOL_PSIFISTOSYNAGMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgosyntheton => BYZANTINE_MUSICAL_SYMBOL_GORGOSYNTHETON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolArgosyntheton => BYZANTINE_MUSICAL_SYMBOL_ARGOSYNTHETON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolEteronArgosyntheton => BYZANTINE_MUSICAL_SYMBOL_ETERON_ARGOSYNTHETON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolOyranismaNeo => BYZANTINE_MUSICAL_SYMBOL_OYRANISMA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolThematismosEso => BYZANTINE_MUSICAL_SYMBOL_THEMATISMOS_ESO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolThematismosExo => BYZANTINE_MUSICAL_SYMBOL_THEMATISMOS_EXO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolThemaAploun => BYZANTINE_MUSICAL_SYMBOL_THEMA_APLOUN,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolThesKaiApothes => BYZANTINE_MUSICAL_SYMBOL_THES_KAI_APOTHES,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKatavasma => BYZANTINE_MUSICAL_SYMBOL_KATAVASMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolEndofonon => BYZANTINE_MUSICAL_SYMBOL_ENDOFONON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfenKato => BYZANTINE_MUSICAL_SYMBOL_YFEN_KATO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfenAno => BYZANTINE_MUSICAL_SYMBOL_YFEN_ANO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolStavros => BYZANTINE_MUSICAL_SYMBOL_STAVROS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasmaAno => BYZANTINE_MUSICAL_SYMBOL_KLASMA_ANO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDipliArchaion => BYZANTINE_MUSICAL_SYMBOL_DIPLI_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaArchaion => BYZANTINE_MUSICAL_SYMBOL_KRATIMA_ARCHAION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaAllo => BYZANTINE_MUSICAL_SYMBOL_KRATIMA_ALLO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaNeo => BYZANTINE_MUSICAL_SYMBOL_KRATIMA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApodermaNeo => BYZANTINE_MUSICAL_SYMBOL_APODERMA_NEO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApli => BYZANTINE_MUSICAL_SYMBOL_APLI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDipli => BYZANTINE_MUSICAL_SYMBOL_DIPLI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTripli => BYZANTINE_MUSICAL_SYMBOL_TRIPLI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTetrapli => BYZANTINE_MUSICAL_SYMBOL_TETRAPLI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKoronis => BYZANTINE_MUSICAL_SYMBOL_KORONIS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaEnosChronou => BYZANTINE_MUSICAL_SYMBOL_LEIMMA_ENOS_CHRONOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaDyoChronon => BYZANTINE_MUSICAL_SYMBOL_LEIMMA_DYO_CHRONON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaTrionChronon => BYZANTINE_MUSICAL_SYMBOL_LEIMMA_TRION_CHRONON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaTessaronChronon => BYZANTINE_MUSICAL_SYMBOL_LEIMMA_TESSARON_CHRONON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaImiseosChronou => BYZANTINE_MUSICAL_SYMBOL_LEIMMA_IMISEOS_CHRONOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonNeoAno => BYZANTINE_MUSICAL_SYMBOL_GORGON_NEO_ANO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonParestigmenonAristera => BYZANTINE_MUSICAL_SYMBOL_GORGON_PARESTIGMENON_ARISTERA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonParestigmenonDexia => BYZANTINE_MUSICAL_SYMBOL_GORGON_PARESTIGMENON_DEXIA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgon => BYZANTINE_MUSICAL_SYMBOL_DIGORGON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonAristeraKato => BYZANTINE_MUSICAL_SYMBOL_DIGORGON_PARESTIGMENON_ARISTERA_KATO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonAristeraAno => BYZANTINE_MUSICAL_SYMBOL_DIGORGON_PARESTIGMENON_ARISTERA_ANO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonDexia => BYZANTINE_MUSICAL_SYMBOL_DIGORGON_PARESTIGMENON_DEXIA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolTrigorgon => BYZANTINE_MUSICAL_SYMBOL_TRIGORGON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolArgon => BYZANTINE_MUSICAL_SYMBOL_ARGON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolImidiargon => BYZANTINE_MUSICAL_SYMBOL_IMIDIARGON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiargon => BYZANTINE_MUSICAL_SYMBOL_DIARGON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiPoliArgi => BYZANTINE_MUSICAL_SYMBOL_AGOGI_POLI_ARGI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiArgoteri => BYZANTINE_MUSICAL_SYMBOL_AGOGI_ARGOTERI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiArgi => BYZANTINE_MUSICAL_SYMBOL_AGOGI_ARGI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiMetria => BYZANTINE_MUSICAL_SYMBOL_AGOGI_METRIA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiMesi => BYZANTINE_MUSICAL_SYMBOL_AGOGI_MESI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiGorgi => BYZANTINE_MUSICAL_SYMBOL_AGOGI_GORGI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiGorgoteri => BYZANTINE_MUSICAL_SYMBOL_AGOGI_GORGOTERI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiPoliGorgi => BYZANTINE_MUSICAL_SYMBOL_AGOGI_POLI_GORGI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaProtosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PROTOS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaAlliProtosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_ALLI_PROTOS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaDeyterosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_DEYTEROS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaAlliDeyterosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_ALLI_DEYTEROS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTritosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TRITOS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTrifonias => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TRIFONIAS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTetartosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TETARTOS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTetartosLegetosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TETARTOS_LEGETOS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaLegetosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_LEGETOS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaPlagiosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PLAGIOS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolIsakiaTelousIchimatos => BYZANTINE_MUSICAL_SYMBOL_ISAKIA_TELOUS_ICHIMATOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofoiTelousIchimatos => BYZANTINE_MUSICAL_SYMBOL_APOSTROFOI_TELOUS_ICHIMATOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisTetrafonias => BYZANTINE_MUSICAL_SYMBOL_FANEROSIS_TETRAFONIAS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisMonofonias => BYZANTINE_MUSICAL_SYMBOL_FANEROSIS_MONOFONIAS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisDifonias => BYZANTINE_MUSICAL_SYMBOL_FANEROSIS_DIFONIAS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaVarysIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_VARYS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaProtovarysIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PROTOVARYS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaPlagiosTetartosIchos => BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PLAGIOS_TETARTOS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorthmikonNAploun => BYZANTINE_MUSICAL_SYMBOL_GORTHMIKON_N_APLOUN,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorthmikonNDiploun => BYZANTINE_MUSICAL_SYMBOL_GORTHMIKON_N_DIPLOUN,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolEnarxisKaiFthoraVou => BYZANTINE_MUSICAL_SYMBOL_ENARXIS_KAI_FTHORA_VOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolImifonon => BYZANTINE_MUSICAL_SYMBOL_IMIFONON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolImifthoron => BYZANTINE_MUSICAL_SYMBOL_IMIFTHORON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraArchaionDeyterouIchou => BYZANTINE_MUSICAL_SYMBOL_FTHORA_ARCHAION_DEYTEROU_ICHOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiPa => BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_PA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNana => BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_NANA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraNaosIchos => BYZANTINE_MUSICAL_SYMBOL_FTHORA_NAOS_ICHOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiDi => BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_DI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraSklironDiatononDi => BYZANTINE_MUSICAL_SYMBOL_FTHORA_SKLIRON_DIATONON_DI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiKe => BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_KE,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiZo => BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_ZO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNiKato => BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_NI_KATO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNiAno => BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_NI_ANO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraMalakonChromaDifonias => BYZANTINE_MUSICAL_SYMBOL_FTHORA_MALAKON_CHROMA_DIFONIAS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraMalakonChromaMonofonias => BYZANTINE_MUSICAL_SYMBOL_FTHORA_MALAKON_CHROMA_MONOFONIAS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFhtoraSklironChromaVasis => BYZANTINE_MUSICAL_SYMBOL_FHTORA_SKLIRON_CHROMA_VASIS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraSklironChromaSynafi => BYZANTINE_MUSICAL_SYMBOL_FTHORA_SKLIRON_CHROMA_SYNAFI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraNenano => BYZANTINE_MUSICAL_SYMBOL_FTHORA_NENANO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaZygos => BYZANTINE_MUSICAL_SYMBOL_CHROA_ZYGOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaKliton => BYZANTINE_MUSICAL_SYMBOL_CHROA_KLITON,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaSpathi => BYZANTINE_MUSICAL_SYMBOL_CHROA_SPATHI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraIYfesisTetartimorion => BYZANTINE_MUSICAL_SYMBOL_FTHORA_I_YFESIS_TETARTIMORION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraEnarmoniosAntifonia => BYZANTINE_MUSICAL_SYMBOL_FTHORA_ENARMONIOS_ANTIFONIA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisTritimorion => BYZANTINE_MUSICAL_SYMBOL_YFESIS_TRITIMORION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTritimorion => BYZANTINE_MUSICAL_SYMBOL_DIESIS_TRITIMORION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTetartimorion => BYZANTINE_MUSICAL_SYMBOL_DIESIS_TETARTIMORION,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisApliDyoDodekata => BYZANTINE_MUSICAL_SYMBOL_DIESIS_APLI_DYO_DODEKATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisMonogrammosTesseraDodekata => BYZANTINE_MUSICAL_SYMBOL_DIESIS_MONOGRAMMOS_TESSERA_DODEKATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisDigrammosExDodekata => BYZANTINE_MUSICAL_SYMBOL_DIESIS_DIGRAMMOS_EX_DODEKATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTrigrammosOktoDodekata => BYZANTINE_MUSICAL_SYMBOL_DIESIS_TRIGRAMMOS_OKTO_DODEKATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisApliDyoDodekata => BYZANTINE_MUSICAL_SYMBOL_YFESIS_APLI_DYO_DODEKATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisMonogrammosTesseraDodekata => BYZANTINE_MUSICAL_SYMBOL_YFESIS_MONOGRAMMOS_TESSERA_DODEKATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisDigrammosExDodekata => BYZANTINE_MUSICAL_SYMBOL_YFESIS_DIGRAMMOS_EX_DODEKATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisTrigrammosOktoDodekata => BYZANTINE_MUSICAL_SYMBOL_YFESIS_TRIGRAMMOS_OKTO_DODEKATA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGenikiDiesis => BYZANTINE_MUSICAL_SYMBOL_GENIKI_DIESIS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGenikiYfesis => BYZANTINE_MUSICAL_SYMBOL_GENIKI_YFESIS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliApliMikri => BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_APLI_MIKRI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliApliMegali => BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_APLI_MEGALI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliDipli => BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_DIPLI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliTheseos => BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_THESEOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseos => BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosDisimou => BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS_DISIMOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosTrisimou => BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS_TRISIMOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosTetrasimou => BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS_TETRASIMOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseos => BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosDisimou => BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS_DISIMOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosTrisimou => BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS_TRISIMOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosTetrasimou => BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS_TETRASIMOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigrammaGg => BYZANTINE_MUSICAL_SYMBOL_DIGRAMMA_GG,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiftoggosOu => BYZANTINE_MUSICAL_SYMBOL_DIFTOGGOS_OU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolStigma => BYZANTINE_MUSICAL_SYMBOL_STIGMA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoPa => BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_PA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoVou => BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_VOU,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoGa => BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_GA,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoDi => BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_DI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoKe => BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_KE,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoZo => BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_ZO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoNi => BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_NI,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoMeso => BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_NEO_MESO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoMeso => BYZANTINE_MUSICAL_SYMBOL_KENTIMA_NEO_MESO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoKato => BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_NEO_KATO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoKato => BYZANTINE_MUSICAL_SYMBOL_KENTIMA_NEO_KATO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasmaKato => BYZANTINE_MUSICAL_SYMBOL_KLASMA_KATO,
-            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonNeoKato => BYZANTINE_MUSICAL_SYMBOL_GORGON_NEO_KATO,
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsili => '𝀀',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDaseia => '𝀁',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPerispomeni => '𝀂',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaEkfonitikon => '𝀃',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaDipli => '𝀄',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaEkfonitikon => '𝀅',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaDipli => '𝀆',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKathisti => '𝀇',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSyrmatiki => '𝀈',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitiki => '𝀉',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYpokrisis => '𝀊',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYpokrisisDipli => '𝀋',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKremasti => '𝀌',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApesoEkfonitikon => '𝀍',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolExoEkfonitikon => '𝀎',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTeleia => '𝀏',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimata => '𝀐',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofos => '𝀑',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofosDipli => '𝀒',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSynevma => '𝀓',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolThita => '𝀔',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolOligonArchaion => '𝀕',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonArchaion => '𝀖',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsilon => '𝀗',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolChamilon => '𝀘',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolVathy => '𝀙',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolIsonArchaion => '𝀚',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaArchaion => '𝀛',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataArchaion => '𝀜',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSaximata => '𝀝',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolParichon => '𝀞',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolStavrosApodexia => '𝀟',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaiArchaion => '𝀠',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaiArchaion => '𝀡',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApodermaArchaion => '𝀢',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApothema => '𝀣',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasma => '𝀤',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolRevma => '𝀥',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPiasmaArchaion => '𝀦',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTinagma => '𝀧',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAnatrichisma => '𝀨',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSeisma => '𝀩',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaArchaion => '𝀪',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaMetaStavrou => '𝀫',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolOyranismaArchaion => '𝀬',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolThema => '𝀭',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolLemoi => '𝀮',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDyo => '𝀯',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTria => '𝀰',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTessera => '𝀱',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimata => '𝀲',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApesoExoNeo => '𝀳',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraArchaion => '𝀴',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolImifthora => '𝀵',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonArchaion => '𝀶',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKatavaTromikon => '𝀷',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPelaston => '𝀸',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifiston => '𝀹',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKontevma => '𝀺',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolChorevmaArchaion => '𝀻',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolRapisma => '𝀼',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolParakalesmaArchaion => '𝀽',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitikiArchaion => '𝀾',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolIchadin => '𝀿',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolNana => '𝁀',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPetasma => '𝁁',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKontevmaAllo => '𝁂',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonAllo => '𝁃',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolStraggismata => '𝁄',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGronthismata => '𝁅',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolIsonNeo => '𝁆',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolOligonNeo => '𝁇',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaNeo => '𝁈',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPetasti => '𝁉',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKoufisma => '𝁊',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPetastokoufisma => '𝁋',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimokoufisma => '𝁌',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPelastonNeo => '𝁍',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoAno => '𝁎',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoAno => '𝁏',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYpsili => '𝁐',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofosNeo => '𝁑',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofoiSyndesmosNeo => '𝁒',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYporroi => '𝁓',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimoyporroon => '𝁔',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolElafron => '𝁕',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolChamili => '𝁖',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMikronIson => '𝁗',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaNeo => '𝁘',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPiasmaNeo => '𝁙',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistonNeo => '𝁚',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolOmalon => '𝁛',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAntikenoma => '𝁜',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolLygisma => '𝁝',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitikiNeo => '𝁞',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolParakalesmaNeo => '𝁟',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolEteronParakalesma => '𝁠',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKylisma => '𝁡',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAntikenokylisma => '𝁢',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonNeo => '𝁣',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolEkstrepton => '𝁤',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaNeo => '𝁥',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSyrma => '𝁦',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolChorevmaNeo => '𝁧',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolEpegerma => '𝁨',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSeismaNeo => '𝁩',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolXironKlasma => '𝁪',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikopsifiston => '𝁫',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistolygisma => '𝁬',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikolygisma => '𝁭',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikoparakalesma => '𝁮',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistoparakalesma => '𝁯',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikosynagma => '𝁰',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistosynagma => '𝁱',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgosyntheton => '𝁲',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolArgosyntheton => '𝁳',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolEteronArgosyntheton => '𝁴',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolOyranismaNeo => '𝁵',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolThematismosEso => '𝁶',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolThematismosExo => '𝁷',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolThemaAploun => '𝁸',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolThesKaiApothes => '𝁹',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKatavasma => '𝁺',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolEndofonon => '𝁻',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfenKato => '𝁼',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfenAno => '𝁽',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolStavros => '𝁾',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasmaAno => '𝁿',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDipliArchaion => '𝂀',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaArchaion => '𝂁',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaAllo => '𝂂',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaNeo => '𝂃',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApodermaNeo => '𝂄',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApli => '𝂅',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDipli => '𝂆',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTripli => '𝂇',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTetrapli => '𝂈',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKoronis => '𝂉',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaEnosChronou => '𝂊',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaDyoChronon => '𝂋',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaTrionChronon => '𝂌',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaTessaronChronon => '𝂍',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaImiseosChronou => '𝂎',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonNeoAno => '𝂏',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonParestigmenonAristera => '𝂐',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonParestigmenonDexia => '𝂑',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgon => '𝂒',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonAristeraKato => '𝂓',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonAristeraAno => '𝂔',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonDexia => '𝂕',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolTrigorgon => '𝂖',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolArgon => '𝂗',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolImidiargon => '𝂘',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiargon => '𝂙',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiPoliArgi => '𝂚',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiArgoteri => '𝂛',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiArgi => '𝂜',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiMetria => '𝂝',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiMesi => '𝂞',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiGorgi => '𝂟',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiGorgoteri => '𝂠',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiPoliGorgi => '𝂡',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaProtosIchos => '𝂢',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaAlliProtosIchos => '𝂣',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaDeyterosIchos => '𝂤',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaAlliDeyterosIchos => '𝂥',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTritosIchos => '𝂦',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTrifonias => '𝂧',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTetartosIchos => '𝂨',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTetartosLegetosIchos => '𝂩',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaLegetosIchos => '𝂪',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaPlagiosIchos => '𝂫',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolIsakiaTelousIchimatos => '𝂬',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofoiTelousIchimatos => '𝂭',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisTetrafonias => '𝂮',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisMonofonias => '𝂯',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisDifonias => '𝂰',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaVarysIchos => '𝂱',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaProtovarysIchos => '𝂲',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaPlagiosTetartosIchos => '𝂳',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorthmikonNAploun => '𝂴',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorthmikonNDiploun => '𝂵',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolEnarxisKaiFthoraVou => '𝂶',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolImifonon => '𝂷',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolImifthoron => '𝂸',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraArchaionDeyterouIchou => '𝂹',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiPa => '𝂺',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNana => '𝂻',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraNaosIchos => '𝂼',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiDi => '𝂽',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraSklironDiatononDi => '𝂾',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiKe => '𝂿',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiZo => '𝃀',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNiKato => '𝃁',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNiAno => '𝃂',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraMalakonChromaDifonias => '𝃃',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraMalakonChromaMonofonias => '𝃄',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFhtoraSklironChromaVasis => '𝃅',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraSklironChromaSynafi => '𝃆',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraNenano => '𝃇',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaZygos => '𝃈',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaKliton => '𝃉',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaSpathi => '𝃊',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraIYfesisTetartimorion => '𝃋',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraEnarmoniosAntifonia => '𝃌',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisTritimorion => '𝃍',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTritimorion => '𝃎',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTetartimorion => '𝃏',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisApliDyoDodekata => '𝃐',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisMonogrammosTesseraDodekata => '𝃑',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisDigrammosExDodekata => '𝃒',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTrigrammosOktoDodekata => '𝃓',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisApliDyoDodekata => '𝃔',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisMonogrammosTesseraDodekata => '𝃕',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisDigrammosExDodekata => '𝃖',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisTrigrammosOktoDodekata => '𝃗',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGenikiDiesis => '𝃘',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGenikiYfesis => '𝃙',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliApliMikri => '𝃚',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliApliMegali => '𝃛',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliDipli => '𝃜',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliTheseos => '𝃝',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseos => '𝃞',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosDisimou => '𝃟',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosTrisimou => '𝃠',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosTetrasimou => '𝃡',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseos => '𝃢',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosDisimou => '𝃣',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosTrisimou => '𝃤',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosTetrasimou => '𝃥',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDigrammaGg => '𝃦',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolDiftoggosOu => '𝃧',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolStigma => '𝃨',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoPa => '𝃩',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoVou => '𝃪',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoGa => '𝃫',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoDi => '𝃬',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoKe => '𝃭',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoZo => '𝃮',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoNi => '𝃯',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoMeso => '𝃰',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoMeso => '𝃱',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoKato => '𝃲',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoKato => '𝃳',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasmaKato => '𝃴',
+            ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonNeoKato => '𝃵',
         }
     }
 }
@@ -1248,254 +752,253 @@ impl Into<char> for ByzantineMusicalSymbols {
 impl std::convert::TryFrom<char> for ByzantineMusicalSymbols {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            BYZANTINE_MUSICAL_SYMBOL_PSILI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsili),
-            BYZANTINE_MUSICAL_SYMBOL_DASEIA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDaseia),
-            BYZANTINE_MUSICAL_SYMBOL_PERISPOMENI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPerispomeni),
-            BYZANTINE_MUSICAL_SYMBOL_OXEIA_EKFONITIKON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaEkfonitikon),
-            BYZANTINE_MUSICAL_SYMBOL_OXEIA_DIPLI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaDipli),
-            BYZANTINE_MUSICAL_SYMBOL_VAREIA_EKFONITIKON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaEkfonitikon),
-            BYZANTINE_MUSICAL_SYMBOL_VAREIA_DIPLI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaDipli),
-            BYZANTINE_MUSICAL_SYMBOL_KATHISTI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKathisti),
-            BYZANTINE_MUSICAL_SYMBOL_SYRMATIKI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSyrmatiki),
-            BYZANTINE_MUSICAL_SYMBOL_PARAKLITIKI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitiki),
-            BYZANTINE_MUSICAL_SYMBOL_YPOKRISIS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYpokrisis),
-            BYZANTINE_MUSICAL_SYMBOL_YPOKRISIS_DIPLI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYpokrisisDipli),
-            BYZANTINE_MUSICAL_SYMBOL_KREMASTI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKremasti),
-            BYZANTINE_MUSICAL_SYMBOL_APESO_EKFONITIKON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApesoEkfonitikon),
-            BYZANTINE_MUSICAL_SYMBOL_EXO_EKFONITIKON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolExoEkfonitikon),
-            BYZANTINE_MUSICAL_SYMBOL_TELEIA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTeleia),
-            BYZANTINE_MUSICAL_SYMBOL_KENTIMATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimata),
-            BYZANTINE_MUSICAL_SYMBOL_APOSTROFOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofos),
-            BYZANTINE_MUSICAL_SYMBOL_APOSTROFOS_DIPLI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofosDipli),
-            BYZANTINE_MUSICAL_SYMBOL_SYNEVMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSynevma),
-            BYZANTINE_MUSICAL_SYMBOL_THITA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThita),
-            BYZANTINE_MUSICAL_SYMBOL_OLIGON_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOligonArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_GORGON_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_PSILON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsilon),
-            BYZANTINE_MUSICAL_SYMBOL_CHAMILON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChamilon),
-            BYZANTINE_MUSICAL_SYMBOL_VATHY => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVathy),
-            BYZANTINE_MUSICAL_SYMBOL_ISON_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolIsonArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_KENTIMA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_SAXIMATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSaximata),
-            BYZANTINE_MUSICAL_SYMBOL_PARICHON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParichon),
-            BYZANTINE_MUSICAL_SYMBOL_STAVROS_APODEXIA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolStavrosApodexia),
-            BYZANTINE_MUSICAL_SYMBOL_OXEIAI_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaiArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_VAREIAI_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaiArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_APODERMA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApodermaArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_APOTHEMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApothema),
-            BYZANTINE_MUSICAL_SYMBOL_KLASMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasma),
-            BYZANTINE_MUSICAL_SYMBOL_REVMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolRevma),
-            BYZANTINE_MUSICAL_SYMBOL_PIASMA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPiasmaArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_TINAGMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTinagma),
-            BYZANTINE_MUSICAL_SYMBOL_ANATRICHISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAnatrichisma),
-            BYZANTINE_MUSICAL_SYMBOL_SEISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSeisma),
-            BYZANTINE_MUSICAL_SYMBOL_SYNAGMA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_SYNAGMA_META_STAVROU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaMetaStavrou),
-            BYZANTINE_MUSICAL_SYMBOL_OYRANISMA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOyranismaArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_THEMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThema),
-            BYZANTINE_MUSICAL_SYMBOL_LEMOI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLemoi),
-            BYZANTINE_MUSICAL_SYMBOL_DYO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDyo),
-            BYZANTINE_MUSICAL_SYMBOL_TRIA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTria),
-            BYZANTINE_MUSICAL_SYMBOL_TESSERA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTessera),
-            BYZANTINE_MUSICAL_SYMBOL_KRATIMATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimata),
-            BYZANTINE_MUSICAL_SYMBOL_APESO_EXO_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApesoExoNeo),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_IMIFTHORA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolImifthora),
-            BYZANTINE_MUSICAL_SYMBOL_TROMIKON_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_KATAVA_TROMIKON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKatavaTromikon),
-            BYZANTINE_MUSICAL_SYMBOL_PELASTON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPelaston),
-            BYZANTINE_MUSICAL_SYMBOL_PSIFISTON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifiston),
-            BYZANTINE_MUSICAL_SYMBOL_KONTEVMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKontevma),
-            BYZANTINE_MUSICAL_SYMBOL_CHOREVMA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChorevmaArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_RAPISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolRapisma),
-            BYZANTINE_MUSICAL_SYMBOL_PARAKALESMA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParakalesmaArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_PARAKLITIKI_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitikiArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_ICHADIN => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolIchadin),
-            BYZANTINE_MUSICAL_SYMBOL_NANA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolNana),
-            BYZANTINE_MUSICAL_SYMBOL_PETASMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPetasma),
-            BYZANTINE_MUSICAL_SYMBOL_KONTEVMA_ALLO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKontevmaAllo),
-            BYZANTINE_MUSICAL_SYMBOL_TROMIKON_ALLO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonAllo),
-            BYZANTINE_MUSICAL_SYMBOL_STRAGGISMATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolStraggismata),
-            BYZANTINE_MUSICAL_SYMBOL_GRONTHISMATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGronthismata),
-            BYZANTINE_MUSICAL_SYMBOL_ISON_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolIsonNeo),
-            BYZANTINE_MUSICAL_SYMBOL_OLIGON_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOligonNeo),
-            BYZANTINE_MUSICAL_SYMBOL_OXEIA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_PETASTI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPetasti),
-            BYZANTINE_MUSICAL_SYMBOL_KOUFISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKoufisma),
-            BYZANTINE_MUSICAL_SYMBOL_PETASTOKOUFISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPetastokoufisma),
-            BYZANTINE_MUSICAL_SYMBOL_KRATIMOKOUFISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimokoufisma),
-            BYZANTINE_MUSICAL_SYMBOL_PELASTON_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPelastonNeo),
-            BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_NEO_ANO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoAno),
-            BYZANTINE_MUSICAL_SYMBOL_KENTIMA_NEO_ANO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoAno),
-            BYZANTINE_MUSICAL_SYMBOL_YPSILI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYpsili),
-            BYZANTINE_MUSICAL_SYMBOL_APOSTROFOS_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofosNeo),
-            BYZANTINE_MUSICAL_SYMBOL_APOSTROFOI_SYNDESMOS_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofoiSyndesmosNeo),
-            BYZANTINE_MUSICAL_SYMBOL_YPORROI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYporroi),
-            BYZANTINE_MUSICAL_SYMBOL_KRATIMOYPORROON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimoyporroon),
-            BYZANTINE_MUSICAL_SYMBOL_ELAFRON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolElafron),
-            BYZANTINE_MUSICAL_SYMBOL_CHAMILI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChamili),
-            BYZANTINE_MUSICAL_SYMBOL_MIKRON_ISON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMikronIson),
-            BYZANTINE_MUSICAL_SYMBOL_VAREIA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_PIASMA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPiasmaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_PSIFISTON_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistonNeo),
-            BYZANTINE_MUSICAL_SYMBOL_OMALON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOmalon),
-            BYZANTINE_MUSICAL_SYMBOL_ANTIKENOMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAntikenoma),
-            BYZANTINE_MUSICAL_SYMBOL_LYGISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLygisma),
-            BYZANTINE_MUSICAL_SYMBOL_PARAKLITIKI_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitikiNeo),
-            BYZANTINE_MUSICAL_SYMBOL_PARAKALESMA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParakalesmaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_ETERON_PARAKALESMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEteronParakalesma),
-            BYZANTINE_MUSICAL_SYMBOL_KYLISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKylisma),
-            BYZANTINE_MUSICAL_SYMBOL_ANTIKENOKYLISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAntikenokylisma),
-            BYZANTINE_MUSICAL_SYMBOL_TROMIKON_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonNeo),
-            BYZANTINE_MUSICAL_SYMBOL_EKSTREPTON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEkstrepton),
-            BYZANTINE_MUSICAL_SYMBOL_SYNAGMA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_SYRMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSyrma),
-            BYZANTINE_MUSICAL_SYMBOL_CHOREVMA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChorevmaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_EPEGERMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEpegerma),
-            BYZANTINE_MUSICAL_SYMBOL_SEISMA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSeismaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_XIRON_KLASMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolXironKlasma),
-            BYZANTINE_MUSICAL_SYMBOL_TROMIKOPSIFISTON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikopsifiston),
-            BYZANTINE_MUSICAL_SYMBOL_PSIFISTOLYGISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistolygisma),
-            BYZANTINE_MUSICAL_SYMBOL_TROMIKOLYGISMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikolygisma),
-            BYZANTINE_MUSICAL_SYMBOL_TROMIKOPARAKALESMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikoparakalesma),
-            BYZANTINE_MUSICAL_SYMBOL_PSIFISTOPARAKALESMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistoparakalesma),
-            BYZANTINE_MUSICAL_SYMBOL_TROMIKOSYNAGMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikosynagma),
-            BYZANTINE_MUSICAL_SYMBOL_PSIFISTOSYNAGMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistosynagma),
-            BYZANTINE_MUSICAL_SYMBOL_GORGOSYNTHETON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgosyntheton),
-            BYZANTINE_MUSICAL_SYMBOL_ARGOSYNTHETON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArgosyntheton),
-            BYZANTINE_MUSICAL_SYMBOL_ETERON_ARGOSYNTHETON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEteronArgosyntheton),
-            BYZANTINE_MUSICAL_SYMBOL_OYRANISMA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOyranismaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_THEMATISMOS_ESO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThematismosEso),
-            BYZANTINE_MUSICAL_SYMBOL_THEMATISMOS_EXO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThematismosExo),
-            BYZANTINE_MUSICAL_SYMBOL_THEMA_APLOUN => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThemaAploun),
-            BYZANTINE_MUSICAL_SYMBOL_THES_KAI_APOTHES => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThesKaiApothes),
-            BYZANTINE_MUSICAL_SYMBOL_KATAVASMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKatavasma),
-            BYZANTINE_MUSICAL_SYMBOL_ENDOFONON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEndofonon),
-            BYZANTINE_MUSICAL_SYMBOL_YFEN_KATO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfenKato),
-            BYZANTINE_MUSICAL_SYMBOL_YFEN_ANO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfenAno),
-            BYZANTINE_MUSICAL_SYMBOL_STAVROS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolStavros),
-            BYZANTINE_MUSICAL_SYMBOL_KLASMA_ANO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasmaAno),
-            BYZANTINE_MUSICAL_SYMBOL_DIPLI_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDipliArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_KRATIMA_ARCHAION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaArchaion),
-            BYZANTINE_MUSICAL_SYMBOL_KRATIMA_ALLO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaAllo),
-            BYZANTINE_MUSICAL_SYMBOL_KRATIMA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_APODERMA_NEO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApodermaNeo),
-            BYZANTINE_MUSICAL_SYMBOL_APLI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApli),
-            BYZANTINE_MUSICAL_SYMBOL_DIPLI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDipli),
-            BYZANTINE_MUSICAL_SYMBOL_TRIPLI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTripli),
-            BYZANTINE_MUSICAL_SYMBOL_TETRAPLI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTetrapli),
-            BYZANTINE_MUSICAL_SYMBOL_KORONIS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKoronis),
-            BYZANTINE_MUSICAL_SYMBOL_LEIMMA_ENOS_CHRONOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaEnosChronou),
-            BYZANTINE_MUSICAL_SYMBOL_LEIMMA_DYO_CHRONON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaDyoChronon),
-            BYZANTINE_MUSICAL_SYMBOL_LEIMMA_TRION_CHRONON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaTrionChronon),
-            BYZANTINE_MUSICAL_SYMBOL_LEIMMA_TESSARON_CHRONON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaTessaronChronon),
-            BYZANTINE_MUSICAL_SYMBOL_LEIMMA_IMISEOS_CHRONOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaImiseosChronou),
-            BYZANTINE_MUSICAL_SYMBOL_GORGON_NEO_ANO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonNeoAno),
-            BYZANTINE_MUSICAL_SYMBOL_GORGON_PARESTIGMENON_ARISTERA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonParestigmenonAristera),
-            BYZANTINE_MUSICAL_SYMBOL_GORGON_PARESTIGMENON_DEXIA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonParestigmenonDexia),
-            BYZANTINE_MUSICAL_SYMBOL_DIGORGON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgon),
-            BYZANTINE_MUSICAL_SYMBOL_DIGORGON_PARESTIGMENON_ARISTERA_KATO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonAristeraKato),
-            BYZANTINE_MUSICAL_SYMBOL_DIGORGON_PARESTIGMENON_ARISTERA_ANO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonAristeraAno),
-            BYZANTINE_MUSICAL_SYMBOL_DIGORGON_PARESTIGMENON_DEXIA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonDexia),
-            BYZANTINE_MUSICAL_SYMBOL_TRIGORGON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTrigorgon),
-            BYZANTINE_MUSICAL_SYMBOL_ARGON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArgon),
-            BYZANTINE_MUSICAL_SYMBOL_IMIDIARGON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolImidiargon),
-            BYZANTINE_MUSICAL_SYMBOL_DIARGON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiargon),
-            BYZANTINE_MUSICAL_SYMBOL_AGOGI_POLI_ARGI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiPoliArgi),
-            BYZANTINE_MUSICAL_SYMBOL_AGOGI_ARGOTERI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiArgoteri),
-            BYZANTINE_MUSICAL_SYMBOL_AGOGI_ARGI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiArgi),
-            BYZANTINE_MUSICAL_SYMBOL_AGOGI_METRIA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiMetria),
-            BYZANTINE_MUSICAL_SYMBOL_AGOGI_MESI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiMesi),
-            BYZANTINE_MUSICAL_SYMBOL_AGOGI_GORGI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiGorgi),
-            BYZANTINE_MUSICAL_SYMBOL_AGOGI_GORGOTERI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiGorgoteri),
-            BYZANTINE_MUSICAL_SYMBOL_AGOGI_POLI_GORGI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiPoliGorgi),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PROTOS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaProtosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_ALLI_PROTOS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaAlliProtosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_DEYTEROS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaDeyterosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_ALLI_DEYTEROS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaAlliDeyterosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TRITOS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTritosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TRIFONIAS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTrifonias),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TETARTOS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTetartosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_TETARTOS_LEGETOS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTetartosLegetosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_LEGETOS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaLegetosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PLAGIOS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaPlagiosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_ISAKIA_TELOUS_ICHIMATOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolIsakiaTelousIchimatos),
-            BYZANTINE_MUSICAL_SYMBOL_APOSTROFOI_TELOUS_ICHIMATOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofoiTelousIchimatos),
-            BYZANTINE_MUSICAL_SYMBOL_FANEROSIS_TETRAFONIAS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisTetrafonias),
-            BYZANTINE_MUSICAL_SYMBOL_FANEROSIS_MONOFONIAS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisMonofonias),
-            BYZANTINE_MUSICAL_SYMBOL_FANEROSIS_DIFONIAS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisDifonias),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_VARYS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaVarysIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PROTOVARYS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaProtovarysIchos),
-            BYZANTINE_MUSICAL_SYMBOL_MARTYRIA_PLAGIOS_TETARTOS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaPlagiosTetartosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_GORTHMIKON_N_APLOUN => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorthmikonNAploun),
-            BYZANTINE_MUSICAL_SYMBOL_GORTHMIKON_N_DIPLOUN => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorthmikonNDiploun),
-            BYZANTINE_MUSICAL_SYMBOL_ENARXIS_KAI_FTHORA_VOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEnarxisKaiFthoraVou),
-            BYZANTINE_MUSICAL_SYMBOL_IMIFONON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolImifonon),
-            BYZANTINE_MUSICAL_SYMBOL_IMIFTHORON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolImifthoron),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_ARCHAION_DEYTEROU_ICHOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraArchaionDeyterouIchou),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_PA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiPa),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_NANA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNana),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_NAOS_ICHOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraNaosIchos),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_DI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiDi),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_SKLIRON_DIATONON_DI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraSklironDiatononDi),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_KE => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiKe),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_ZO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiZo),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_NI_KATO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNiKato),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_DIATONIKI_NI_ANO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNiAno),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_MALAKON_CHROMA_DIFONIAS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraMalakonChromaDifonias),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_MALAKON_CHROMA_MONOFONIAS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraMalakonChromaMonofonias),
-            BYZANTINE_MUSICAL_SYMBOL_FHTORA_SKLIRON_CHROMA_VASIS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFhtoraSklironChromaVasis),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_SKLIRON_CHROMA_SYNAFI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraSklironChromaSynafi),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_NENANO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraNenano),
-            BYZANTINE_MUSICAL_SYMBOL_CHROA_ZYGOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaZygos),
-            BYZANTINE_MUSICAL_SYMBOL_CHROA_KLITON => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaKliton),
-            BYZANTINE_MUSICAL_SYMBOL_CHROA_SPATHI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaSpathi),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_I_YFESIS_TETARTIMORION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraIYfesisTetartimorion),
-            BYZANTINE_MUSICAL_SYMBOL_FTHORA_ENARMONIOS_ANTIFONIA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraEnarmoniosAntifonia),
-            BYZANTINE_MUSICAL_SYMBOL_YFESIS_TRITIMORION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisTritimorion),
-            BYZANTINE_MUSICAL_SYMBOL_DIESIS_TRITIMORION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTritimorion),
-            BYZANTINE_MUSICAL_SYMBOL_DIESIS_TETARTIMORION => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTetartimorion),
-            BYZANTINE_MUSICAL_SYMBOL_DIESIS_APLI_DYO_DODEKATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisApliDyoDodekata),
-            BYZANTINE_MUSICAL_SYMBOL_DIESIS_MONOGRAMMOS_TESSERA_DODEKATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisMonogrammosTesseraDodekata),
-            BYZANTINE_MUSICAL_SYMBOL_DIESIS_DIGRAMMOS_EX_DODEKATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisDigrammosExDodekata),
-            BYZANTINE_MUSICAL_SYMBOL_DIESIS_TRIGRAMMOS_OKTO_DODEKATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTrigrammosOktoDodekata),
-            BYZANTINE_MUSICAL_SYMBOL_YFESIS_APLI_DYO_DODEKATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisApliDyoDodekata),
-            BYZANTINE_MUSICAL_SYMBOL_YFESIS_MONOGRAMMOS_TESSERA_DODEKATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisMonogrammosTesseraDodekata),
-            BYZANTINE_MUSICAL_SYMBOL_YFESIS_DIGRAMMOS_EX_DODEKATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisDigrammosExDodekata),
-            BYZANTINE_MUSICAL_SYMBOL_YFESIS_TRIGRAMMOS_OKTO_DODEKATA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisTrigrammosOktoDodekata),
-            BYZANTINE_MUSICAL_SYMBOL_GENIKI_DIESIS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGenikiDiesis),
-            BYZANTINE_MUSICAL_SYMBOL_GENIKI_YFESIS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGenikiYfesis),
-            BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_APLI_MIKRI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliApliMikri),
-            BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_APLI_MEGALI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliApliMegali),
-            BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_DIPLI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliDipli),
-            BYZANTINE_MUSICAL_SYMBOL_DIASTOLI_THESEOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliTheseos),
-            BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseos),
-            BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS_DISIMOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosDisimou),
-            BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS_TRISIMOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosTrisimou),
-            BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_THESEOS_TETRASIMOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosTetrasimou),
-            BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseos),
-            BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS_DISIMOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosDisimou),
-            BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS_TRISIMOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosTrisimou),
-            BYZANTINE_MUSICAL_SYMBOL_SIMANSIS_ARSEOS_TETRASIMOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosTetrasimou),
-            BYZANTINE_MUSICAL_SYMBOL_DIGRAMMA_GG => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigrammaGg),
-            BYZANTINE_MUSICAL_SYMBOL_DIFTOGGOS_OU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiftoggosOu),
-            BYZANTINE_MUSICAL_SYMBOL_STIGMA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolStigma),
-            BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_PA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoPa),
-            BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_VOU => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoVou),
-            BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_GA => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoGa),
-            BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_DI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoDi),
-            BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_KE => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoKe),
-            BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_ZO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoZo),
-            BYZANTINE_MUSICAL_SYMBOL_ARKTIKO_NI => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoNi),
-            BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_NEO_MESO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoMeso),
-            BYZANTINE_MUSICAL_SYMBOL_KENTIMA_NEO_MESO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoMeso),
-            BYZANTINE_MUSICAL_SYMBOL_KENTIMATA_NEO_KATO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoKato),
-            BYZANTINE_MUSICAL_SYMBOL_KENTIMA_NEO_KATO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoKato),
-            BYZANTINE_MUSICAL_SYMBOL_KLASMA_KATO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasmaKato),
-            BYZANTINE_MUSICAL_SYMBOL_GORGON_NEO_KATO => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonNeoKato),
+            '𝀀' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsili),
+            '𝀁' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDaseia),
+            '𝀂' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPerispomeni),
+            '𝀃' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaEkfonitikon),
+            '𝀄' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaDipli),
+            '𝀅' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaEkfonitikon),
+            '𝀆' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaDipli),
+            '𝀇' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKathisti),
+            '𝀈' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSyrmatiki),
+            '𝀉' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitiki),
+            '𝀊' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYpokrisis),
+            '𝀋' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYpokrisisDipli),
+            '𝀌' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKremasti),
+            '𝀍' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApesoEkfonitikon),
+            '𝀎' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolExoEkfonitikon),
+            '𝀏' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTeleia),
+            '𝀐' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimata),
+            '𝀑' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofos),
+            '𝀒' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofosDipli),
+            '𝀓' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSynevma),
+            '𝀔' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThita),
+            '𝀕' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOligonArchaion),
+            '𝀖' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonArchaion),
+            '𝀗' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsilon),
+            '𝀘' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChamilon),
+            '𝀙' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVathy),
+            '𝀚' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolIsonArchaion),
+            '𝀛' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaArchaion),
+            '𝀜' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataArchaion),
+            '𝀝' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSaximata),
+            '𝀞' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParichon),
+            '𝀟' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolStavrosApodexia),
+            '𝀠' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaiArchaion),
+            '𝀡' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaiArchaion),
+            '𝀢' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApodermaArchaion),
+            '𝀣' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApothema),
+            '𝀤' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasma),
+            '𝀥' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolRevma),
+            '𝀦' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPiasmaArchaion),
+            '𝀧' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTinagma),
+            '𝀨' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAnatrichisma),
+            '𝀩' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSeisma),
+            '𝀪' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaArchaion),
+            '𝀫' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaMetaStavrou),
+            '𝀬' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOyranismaArchaion),
+            '𝀭' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThema),
+            '𝀮' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLemoi),
+            '𝀯' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDyo),
+            '𝀰' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTria),
+            '𝀱' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTessera),
+            '𝀲' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimata),
+            '𝀳' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApesoExoNeo),
+            '𝀴' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraArchaion),
+            '𝀵' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolImifthora),
+            '𝀶' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonArchaion),
+            '𝀷' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKatavaTromikon),
+            '𝀸' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPelaston),
+            '𝀹' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifiston),
+            '𝀺' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKontevma),
+            '𝀻' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChorevmaArchaion),
+            '𝀼' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolRapisma),
+            '𝀽' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParakalesmaArchaion),
+            '𝀾' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitikiArchaion),
+            '𝀿' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolIchadin),
+            '𝁀' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolNana),
+            '𝁁' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPetasma),
+            '𝁂' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKontevmaAllo),
+            '𝁃' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonAllo),
+            '𝁄' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolStraggismata),
+            '𝁅' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGronthismata),
+            '𝁆' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolIsonNeo),
+            '𝁇' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOligonNeo),
+            '𝁈' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOxeiaNeo),
+            '𝁉' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPetasti),
+            '𝁊' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKoufisma),
+            '𝁋' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPetastokoufisma),
+            '𝁌' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimokoufisma),
+            '𝁍' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPelastonNeo),
+            '𝁎' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoAno),
+            '𝁏' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoAno),
+            '𝁐' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYpsili),
+            '𝁑' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofosNeo),
+            '𝁒' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofoiSyndesmosNeo),
+            '𝁓' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYporroi),
+            '𝁔' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimoyporroon),
+            '𝁕' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolElafron),
+            '𝁖' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChamili),
+            '𝁗' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMikronIson),
+            '𝁘' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolVareiaNeo),
+            '𝁙' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPiasmaNeo),
+            '𝁚' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistonNeo),
+            '𝁛' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOmalon),
+            '𝁜' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAntikenoma),
+            '𝁝' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLygisma),
+            '𝁞' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParaklitikiNeo),
+            '𝁟' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolParakalesmaNeo),
+            '𝁠' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEteronParakalesma),
+            '𝁡' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKylisma),
+            '𝁢' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAntikenokylisma),
+            '𝁣' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikonNeo),
+            '𝁤' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEkstrepton),
+            '𝁥' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSynagmaNeo),
+            '𝁦' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSyrma),
+            '𝁧' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChorevmaNeo),
+            '𝁨' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEpegerma),
+            '𝁩' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSeismaNeo),
+            '𝁪' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolXironKlasma),
+            '𝁫' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikopsifiston),
+            '𝁬' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistolygisma),
+            '𝁭' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikolygisma),
+            '𝁮' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikoparakalesma),
+            '𝁯' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistoparakalesma),
+            '𝁰' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTromikosynagma),
+            '𝁱' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolPsifistosynagma),
+            '𝁲' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgosyntheton),
+            '𝁳' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArgosyntheton),
+            '𝁴' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEteronArgosyntheton),
+            '𝁵' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolOyranismaNeo),
+            '𝁶' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThematismosEso),
+            '𝁷' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThematismosExo),
+            '𝁸' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThemaAploun),
+            '𝁹' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolThesKaiApothes),
+            '𝁺' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKatavasma),
+            '𝁻' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEndofonon),
+            '𝁼' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfenKato),
+            '𝁽' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfenAno),
+            '𝁾' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolStavros),
+            '𝁿' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasmaAno),
+            '𝂀' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDipliArchaion),
+            '𝂁' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaArchaion),
+            '𝂂' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaAllo),
+            '𝂃' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKratimaNeo),
+            '𝂄' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApodermaNeo),
+            '𝂅' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApli),
+            '𝂆' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDipli),
+            '𝂇' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTripli),
+            '𝂈' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTetrapli),
+            '𝂉' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKoronis),
+            '𝂊' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaEnosChronou),
+            '𝂋' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaDyoChronon),
+            '𝂌' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaTrionChronon),
+            '𝂍' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaTessaronChronon),
+            '𝂎' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolLeimmaImiseosChronou),
+            '𝂏' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonNeoAno),
+            '𝂐' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonParestigmenonAristera),
+            '𝂑' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonParestigmenonDexia),
+            '𝂒' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgon),
+            '𝂓' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonAristeraKato),
+            '𝂔' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonAristeraAno),
+            '𝂕' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigorgonParestigmenonDexia),
+            '𝂖' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolTrigorgon),
+            '𝂗' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArgon),
+            '𝂘' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolImidiargon),
+            '𝂙' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiargon),
+            '𝂚' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiPoliArgi),
+            '𝂛' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiArgoteri),
+            '𝂜' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiArgi),
+            '𝂝' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiMetria),
+            '𝂞' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiMesi),
+            '𝂟' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiGorgi),
+            '𝂠' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiGorgoteri),
+            '𝂡' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolAgogiPoliGorgi),
+            '𝂢' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaProtosIchos),
+            '𝂣' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaAlliProtosIchos),
+            '𝂤' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaDeyterosIchos),
+            '𝂥' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaAlliDeyterosIchos),
+            '𝂦' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTritosIchos),
+            '𝂧' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTrifonias),
+            '𝂨' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTetartosIchos),
+            '𝂩' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaTetartosLegetosIchos),
+            '𝂪' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaLegetosIchos),
+            '𝂫' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaPlagiosIchos),
+            '𝂬' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolIsakiaTelousIchimatos),
+            '𝂭' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolApostrofoiTelousIchimatos),
+            '𝂮' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisTetrafonias),
+            '𝂯' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisMonofonias),
+            '𝂰' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFanerosisDifonias),
+            '𝂱' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaVarysIchos),
+            '𝂲' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaProtovarysIchos),
+            '𝂳' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolMartyriaPlagiosTetartosIchos),
+            '𝂴' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorthmikonNAploun),
+            '𝂵' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorthmikonNDiploun),
+            '𝂶' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolEnarxisKaiFthoraVou),
+            '𝂷' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolImifonon),
+            '𝂸' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolImifthoron),
+            '𝂹' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraArchaionDeyterouIchou),
+            '𝂺' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiPa),
+            '𝂻' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNana),
+            '𝂼' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraNaosIchos),
+            '𝂽' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiDi),
+            '𝂾' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraSklironDiatononDi),
+            '𝂿' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiKe),
+            '𝃀' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiZo),
+            '𝃁' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNiKato),
+            '𝃂' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraDiatonikiNiAno),
+            '𝃃' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraMalakonChromaDifonias),
+            '𝃄' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraMalakonChromaMonofonias),
+            '𝃅' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFhtoraSklironChromaVasis),
+            '𝃆' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraSklironChromaSynafi),
+            '𝃇' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraNenano),
+            '𝃈' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaZygos),
+            '𝃉' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaKliton),
+            '𝃊' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolChroaSpathi),
+            '𝃋' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraIYfesisTetartimorion),
+            '𝃌' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolFthoraEnarmoniosAntifonia),
+            '𝃍' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisTritimorion),
+            '𝃎' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTritimorion),
+            '𝃏' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTetartimorion),
+            '𝃐' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisApliDyoDodekata),
+            '𝃑' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisMonogrammosTesseraDodekata),
+            '𝃒' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisDigrammosExDodekata),
+            '𝃓' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiesisTrigrammosOktoDodekata),
+            '𝃔' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisApliDyoDodekata),
+            '𝃕' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisMonogrammosTesseraDodekata),
+            '𝃖' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisDigrammosExDodekata),
+            '𝃗' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolYfesisTrigrammosOktoDodekata),
+            '𝃘' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGenikiDiesis),
+            '𝃙' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGenikiYfesis),
+            '𝃚' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliApliMikri),
+            '𝃛' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliApliMegali),
+            '𝃜' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliDipli),
+            '𝃝' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiastoliTheseos),
+            '𝃞' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseos),
+            '𝃟' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosDisimou),
+            '𝃠' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosTrisimou),
+            '𝃡' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisTheseosTetrasimou),
+            '𝃢' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseos),
+            '𝃣' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosDisimou),
+            '𝃤' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosTrisimou),
+            '𝃥' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolSimansisArseosTetrasimou),
+            '𝃦' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDigrammaGg),
+            '𝃧' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolDiftoggosOu),
+            '𝃨' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolStigma),
+            '𝃩' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoPa),
+            '𝃪' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoVou),
+            '𝃫' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoGa),
+            '𝃬' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoDi),
+            '𝃭' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoKe),
+            '𝃮' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoZo),
+            '𝃯' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolArktikoNi),
+            '𝃰' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoMeso),
+            '𝃱' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoMeso),
+            '𝃲' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimataNeoKato),
+            '𝃳' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKentimaNeoKato),
+            '𝃴' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolKlasmaKato),
+            '𝃵' => Ok(ByzantineMusicalSymbols::ByzantineMusicalSymbolGorgonNeoKato),
             _ => Err(()),
         }
     }

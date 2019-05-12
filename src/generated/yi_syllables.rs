@@ -1,2336 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a000}: 'ꀀ'
-    pub const YI_SYLLABLE_IT: char = 'ꀀ';
-    /// \u{a001}: 'ꀁ'
-    pub const YI_SYLLABLE_IX: char = 'ꀁ';
-    /// \u{a002}: 'ꀂ'
-    pub const YI_SYLLABLE_I: char = 'ꀂ';
-    /// \u{a003}: 'ꀃ'
-    pub const YI_SYLLABLE_IP: char = 'ꀃ';
-    /// \u{a004}: 'ꀄ'
-    pub const YI_SYLLABLE_IET: char = 'ꀄ';
-    /// \u{a005}: 'ꀅ'
-    pub const YI_SYLLABLE_IEX: char = 'ꀅ';
-    /// \u{a006}: 'ꀆ'
-    pub const YI_SYLLABLE_IE: char = 'ꀆ';
-    /// \u{a007}: 'ꀇ'
-    pub const YI_SYLLABLE_IEP: char = 'ꀇ';
-    /// \u{a008}: 'ꀈ'
-    pub const YI_SYLLABLE_AT: char = 'ꀈ';
-    /// \u{a009}: 'ꀉ'
-    pub const YI_SYLLABLE_AX: char = 'ꀉ';
-    /// \u{a00a}: 'ꀊ'
-    pub const YI_SYLLABLE_A: char = 'ꀊ';
-    /// \u{a00b}: 'ꀋ'
-    pub const YI_SYLLABLE_AP: char = 'ꀋ';
-    /// \u{a00c}: 'ꀌ'
-    pub const YI_SYLLABLE_UOX: char = 'ꀌ';
-    /// \u{a00d}: 'ꀍ'
-    pub const YI_SYLLABLE_UO: char = 'ꀍ';
-    /// \u{a00e}: 'ꀎ'
-    pub const YI_SYLLABLE_UOP: char = 'ꀎ';
-    /// \u{a00f}: 'ꀏ'
-    pub const YI_SYLLABLE_OT: char = 'ꀏ';
-    /// \u{a010}: 'ꀐ'
-    pub const YI_SYLLABLE_OX: char = 'ꀐ';
-    /// \u{a011}: 'ꀑ'
-    pub const YI_SYLLABLE_O: char = 'ꀑ';
-    /// \u{a012}: 'ꀒ'
-    pub const YI_SYLLABLE_OP: char = 'ꀒ';
-    /// \u{a013}: 'ꀓ'
-    pub const YI_SYLLABLE_EX: char = 'ꀓ';
-    /// \u{a014}: 'ꀔ'
-    pub const YI_SYLLABLE_E: char = 'ꀔ';
-    /// \u{a015}: 'ꀕ'
-    pub const YI_SYLLABLE_WU: char = 'ꀕ';
-    /// \u{a016}: 'ꀖ'
-    pub const YI_SYLLABLE_BIT: char = 'ꀖ';
-    /// \u{a017}: 'ꀗ'
-    pub const YI_SYLLABLE_BIX: char = 'ꀗ';
-    /// \u{a018}: 'ꀘ'
-    pub const YI_SYLLABLE_BI: char = 'ꀘ';
-    /// \u{a019}: 'ꀙ'
-    pub const YI_SYLLABLE_BIP: char = 'ꀙ';
-    /// \u{a01a}: 'ꀚ'
-    pub const YI_SYLLABLE_BIET: char = 'ꀚ';
-    /// \u{a01b}: 'ꀛ'
-    pub const YI_SYLLABLE_BIEX: char = 'ꀛ';
-    /// \u{a01c}: 'ꀜ'
-    pub const YI_SYLLABLE_BIE: char = 'ꀜ';
-    /// \u{a01d}: 'ꀝ'
-    pub const YI_SYLLABLE_BIEP: char = 'ꀝ';
-    /// \u{a01e}: 'ꀞ'
-    pub const YI_SYLLABLE_BAT: char = 'ꀞ';
-    /// \u{a01f}: 'ꀟ'
-    pub const YI_SYLLABLE_BAX: char = 'ꀟ';
-    /// \u{a020}: 'ꀠ'
-    pub const YI_SYLLABLE_BA: char = 'ꀠ';
-    /// \u{a021}: 'ꀡ'
-    pub const YI_SYLLABLE_BAP: char = 'ꀡ';
-    /// \u{a022}: 'ꀢ'
-    pub const YI_SYLLABLE_BUOX: char = 'ꀢ';
-    /// \u{a023}: 'ꀣ'
-    pub const YI_SYLLABLE_BUO: char = 'ꀣ';
-    /// \u{a024}: 'ꀤ'
-    pub const YI_SYLLABLE_BUOP: char = 'ꀤ';
-    /// \u{a025}: 'ꀥ'
-    pub const YI_SYLLABLE_BOT: char = 'ꀥ';
-    /// \u{a026}: 'ꀦ'
-    pub const YI_SYLLABLE_BOX: char = 'ꀦ';
-    /// \u{a027}: 'ꀧ'
-    pub const YI_SYLLABLE_BO: char = 'ꀧ';
-    /// \u{a028}: 'ꀨ'
-    pub const YI_SYLLABLE_BOP: char = 'ꀨ';
-    /// \u{a029}: 'ꀩ'
-    pub const YI_SYLLABLE_BEX: char = 'ꀩ';
-    /// \u{a02a}: 'ꀪ'
-    pub const YI_SYLLABLE_BE: char = 'ꀪ';
-    /// \u{a02b}: 'ꀫ'
-    pub const YI_SYLLABLE_BEP: char = 'ꀫ';
-    /// \u{a02c}: 'ꀬ'
-    pub const YI_SYLLABLE_BUT: char = 'ꀬ';
-    /// \u{a02d}: 'ꀭ'
-    pub const YI_SYLLABLE_BUX: char = 'ꀭ';
-    /// \u{a02e}: 'ꀮ'
-    pub const YI_SYLLABLE_BU: char = 'ꀮ';
-    /// \u{a02f}: 'ꀯ'
-    pub const YI_SYLLABLE_BUP: char = 'ꀯ';
-    /// \u{a030}: 'ꀰ'
-    pub const YI_SYLLABLE_BURX: char = 'ꀰ';
-    /// \u{a031}: 'ꀱ'
-    pub const YI_SYLLABLE_BUR: char = 'ꀱ';
-    /// \u{a032}: 'ꀲ'
-    pub const YI_SYLLABLE_BYT: char = 'ꀲ';
-    /// \u{a033}: 'ꀳ'
-    pub const YI_SYLLABLE_BYX: char = 'ꀳ';
-    /// \u{a034}: 'ꀴ'
-    pub const YI_SYLLABLE_BY: char = 'ꀴ';
-    /// \u{a035}: 'ꀵ'
-    pub const YI_SYLLABLE_BYP: char = 'ꀵ';
-    /// \u{a036}: 'ꀶ'
-    pub const YI_SYLLABLE_BYRX: char = 'ꀶ';
-    /// \u{a037}: 'ꀷ'
-    pub const YI_SYLLABLE_BYR: char = 'ꀷ';
-    /// \u{a038}: 'ꀸ'
-    pub const YI_SYLLABLE_PIT: char = 'ꀸ';
-    /// \u{a039}: 'ꀹ'
-    pub const YI_SYLLABLE_PIX: char = 'ꀹ';
-    /// \u{a03a}: 'ꀺ'
-    pub const YI_SYLLABLE_PI: char = 'ꀺ';
-    /// \u{a03b}: 'ꀻ'
-    pub const YI_SYLLABLE_PIP: char = 'ꀻ';
-    /// \u{a03c}: 'ꀼ'
-    pub const YI_SYLLABLE_PIEX: char = 'ꀼ';
-    /// \u{a03d}: 'ꀽ'
-    pub const YI_SYLLABLE_PIE: char = 'ꀽ';
-    /// \u{a03e}: 'ꀾ'
-    pub const YI_SYLLABLE_PIEP: char = 'ꀾ';
-    /// \u{a03f}: 'ꀿ'
-    pub const YI_SYLLABLE_PAT: char = 'ꀿ';
-    /// \u{a040}: 'ꁀ'
-    pub const YI_SYLLABLE_PAX: char = 'ꁀ';
-    /// \u{a041}: 'ꁁ'
-    pub const YI_SYLLABLE_PA: char = 'ꁁ';
-    /// \u{a042}: 'ꁂ'
-    pub const YI_SYLLABLE_PAP: char = 'ꁂ';
-    /// \u{a043}: 'ꁃ'
-    pub const YI_SYLLABLE_PUOX: char = 'ꁃ';
-    /// \u{a044}: 'ꁄ'
-    pub const YI_SYLLABLE_PUO: char = 'ꁄ';
-    /// \u{a045}: 'ꁅ'
-    pub const YI_SYLLABLE_PUOP: char = 'ꁅ';
-    /// \u{a046}: 'ꁆ'
-    pub const YI_SYLLABLE_POT: char = 'ꁆ';
-    /// \u{a047}: 'ꁇ'
-    pub const YI_SYLLABLE_POX: char = 'ꁇ';
-    /// \u{a048}: 'ꁈ'
-    pub const YI_SYLLABLE_PO: char = 'ꁈ';
-    /// \u{a049}: 'ꁉ'
-    pub const YI_SYLLABLE_POP: char = 'ꁉ';
-    /// \u{a04a}: 'ꁊ'
-    pub const YI_SYLLABLE_PUT: char = 'ꁊ';
-    /// \u{a04b}: 'ꁋ'
-    pub const YI_SYLLABLE_PUX: char = 'ꁋ';
-    /// \u{a04c}: 'ꁌ'
-    pub const YI_SYLLABLE_PU: char = 'ꁌ';
-    /// \u{a04d}: 'ꁍ'
-    pub const YI_SYLLABLE_PUP: char = 'ꁍ';
-    /// \u{a04e}: 'ꁎ'
-    pub const YI_SYLLABLE_PURX: char = 'ꁎ';
-    /// \u{a04f}: 'ꁏ'
-    pub const YI_SYLLABLE_PUR: char = 'ꁏ';
-    /// \u{a050}: 'ꁐ'
-    pub const YI_SYLLABLE_PYT: char = 'ꁐ';
-    /// \u{a051}: 'ꁑ'
-    pub const YI_SYLLABLE_PYX: char = 'ꁑ';
-    /// \u{a052}: 'ꁒ'
-    pub const YI_SYLLABLE_PY: char = 'ꁒ';
-    /// \u{a053}: 'ꁓ'
-    pub const YI_SYLLABLE_PYP: char = 'ꁓ';
-    /// \u{a054}: 'ꁔ'
-    pub const YI_SYLLABLE_PYRX: char = 'ꁔ';
-    /// \u{a055}: 'ꁕ'
-    pub const YI_SYLLABLE_PYR: char = 'ꁕ';
-    /// \u{a056}: 'ꁖ'
-    pub const YI_SYLLABLE_BBIT: char = 'ꁖ';
-    /// \u{a057}: 'ꁗ'
-    pub const YI_SYLLABLE_BBIX: char = 'ꁗ';
-    /// \u{a058}: 'ꁘ'
-    pub const YI_SYLLABLE_BBI: char = 'ꁘ';
-    /// \u{a059}: 'ꁙ'
-    pub const YI_SYLLABLE_BBIP: char = 'ꁙ';
-    /// \u{a05a}: 'ꁚ'
-    pub const YI_SYLLABLE_BBIET: char = 'ꁚ';
-    /// \u{a05b}: 'ꁛ'
-    pub const YI_SYLLABLE_BBIEX: char = 'ꁛ';
-    /// \u{a05c}: 'ꁜ'
-    pub const YI_SYLLABLE_BBIE: char = 'ꁜ';
-    /// \u{a05d}: 'ꁝ'
-    pub const YI_SYLLABLE_BBIEP: char = 'ꁝ';
-    /// \u{a05e}: 'ꁞ'
-    pub const YI_SYLLABLE_BBAT: char = 'ꁞ';
-    /// \u{a05f}: 'ꁟ'
-    pub const YI_SYLLABLE_BBAX: char = 'ꁟ';
-    /// \u{a060}: 'ꁠ'
-    pub const YI_SYLLABLE_BBA: char = 'ꁠ';
-    /// \u{a061}: 'ꁡ'
-    pub const YI_SYLLABLE_BBAP: char = 'ꁡ';
-    /// \u{a062}: 'ꁢ'
-    pub const YI_SYLLABLE_BBUOX: char = 'ꁢ';
-    /// \u{a063}: 'ꁣ'
-    pub const YI_SYLLABLE_BBUO: char = 'ꁣ';
-    /// \u{a064}: 'ꁤ'
-    pub const YI_SYLLABLE_BBUOP: char = 'ꁤ';
-    /// \u{a065}: 'ꁥ'
-    pub const YI_SYLLABLE_BBOT: char = 'ꁥ';
-    /// \u{a066}: 'ꁦ'
-    pub const YI_SYLLABLE_BBOX: char = 'ꁦ';
-    /// \u{a067}: 'ꁧ'
-    pub const YI_SYLLABLE_BBO: char = 'ꁧ';
-    /// \u{a068}: 'ꁨ'
-    pub const YI_SYLLABLE_BBOP: char = 'ꁨ';
-    /// \u{a069}: 'ꁩ'
-    pub const YI_SYLLABLE_BBEX: char = 'ꁩ';
-    /// \u{a06a}: 'ꁪ'
-    pub const YI_SYLLABLE_BBE: char = 'ꁪ';
-    /// \u{a06b}: 'ꁫ'
-    pub const YI_SYLLABLE_BBEP: char = 'ꁫ';
-    /// \u{a06c}: 'ꁬ'
-    pub const YI_SYLLABLE_BBUT: char = 'ꁬ';
-    /// \u{a06d}: 'ꁭ'
-    pub const YI_SYLLABLE_BBUX: char = 'ꁭ';
-    /// \u{a06e}: 'ꁮ'
-    pub const YI_SYLLABLE_BBU: char = 'ꁮ';
-    /// \u{a06f}: 'ꁯ'
-    pub const YI_SYLLABLE_BBUP: char = 'ꁯ';
-    /// \u{a070}: 'ꁰ'
-    pub const YI_SYLLABLE_BBURX: char = 'ꁰ';
-    /// \u{a071}: 'ꁱ'
-    pub const YI_SYLLABLE_BBUR: char = 'ꁱ';
-    /// \u{a072}: 'ꁲ'
-    pub const YI_SYLLABLE_BBYT: char = 'ꁲ';
-    /// \u{a073}: 'ꁳ'
-    pub const YI_SYLLABLE_BBYX: char = 'ꁳ';
-    /// \u{a074}: 'ꁴ'
-    pub const YI_SYLLABLE_BBY: char = 'ꁴ';
-    /// \u{a075}: 'ꁵ'
-    pub const YI_SYLLABLE_BBYP: char = 'ꁵ';
-    /// \u{a076}: 'ꁶ'
-    pub const YI_SYLLABLE_NBIT: char = 'ꁶ';
-    /// \u{a077}: 'ꁷ'
-    pub const YI_SYLLABLE_NBIX: char = 'ꁷ';
-    /// \u{a078}: 'ꁸ'
-    pub const YI_SYLLABLE_NBI: char = 'ꁸ';
-    /// \u{a079}: 'ꁹ'
-    pub const YI_SYLLABLE_NBIP: char = 'ꁹ';
-    /// \u{a07a}: 'ꁺ'
-    pub const YI_SYLLABLE_NBIEX: char = 'ꁺ';
-    /// \u{a07b}: 'ꁻ'
-    pub const YI_SYLLABLE_NBIE: char = 'ꁻ';
-    /// \u{a07c}: 'ꁼ'
-    pub const YI_SYLLABLE_NBIEP: char = 'ꁼ';
-    /// \u{a07d}: 'ꁽ'
-    pub const YI_SYLLABLE_NBAT: char = 'ꁽ';
-    /// \u{a07e}: 'ꁾ'
-    pub const YI_SYLLABLE_NBAX: char = 'ꁾ';
-    /// \u{a07f}: 'ꁿ'
-    pub const YI_SYLLABLE_NBA: char = 'ꁿ';
-    /// \u{a080}: 'ꂀ'
-    pub const YI_SYLLABLE_NBAP: char = 'ꂀ';
-    /// \u{a081}: 'ꂁ'
-    pub const YI_SYLLABLE_NBOT: char = 'ꂁ';
-    /// \u{a082}: 'ꂂ'
-    pub const YI_SYLLABLE_NBOX: char = 'ꂂ';
-    /// \u{a083}: 'ꂃ'
-    pub const YI_SYLLABLE_NBO: char = 'ꂃ';
-    /// \u{a084}: 'ꂄ'
-    pub const YI_SYLLABLE_NBOP: char = 'ꂄ';
-    /// \u{a085}: 'ꂅ'
-    pub const YI_SYLLABLE_NBUT: char = 'ꂅ';
-    /// \u{a086}: 'ꂆ'
-    pub const YI_SYLLABLE_NBUX: char = 'ꂆ';
-    /// \u{a087}: 'ꂇ'
-    pub const YI_SYLLABLE_NBU: char = 'ꂇ';
-    /// \u{a088}: 'ꂈ'
-    pub const YI_SYLLABLE_NBUP: char = 'ꂈ';
-    /// \u{a089}: 'ꂉ'
-    pub const YI_SYLLABLE_NBURX: char = 'ꂉ';
-    /// \u{a08a}: 'ꂊ'
-    pub const YI_SYLLABLE_NBUR: char = 'ꂊ';
-    /// \u{a08b}: 'ꂋ'
-    pub const YI_SYLLABLE_NBYT: char = 'ꂋ';
-    /// \u{a08c}: 'ꂌ'
-    pub const YI_SYLLABLE_NBYX: char = 'ꂌ';
-    /// \u{a08d}: 'ꂍ'
-    pub const YI_SYLLABLE_NBY: char = 'ꂍ';
-    /// \u{a08e}: 'ꂎ'
-    pub const YI_SYLLABLE_NBYP: char = 'ꂎ';
-    /// \u{a08f}: 'ꂏ'
-    pub const YI_SYLLABLE_NBYRX: char = 'ꂏ';
-    /// \u{a090}: 'ꂐ'
-    pub const YI_SYLLABLE_NBYR: char = 'ꂐ';
-    /// \u{a091}: 'ꂑ'
-    pub const YI_SYLLABLE_HMIT: char = 'ꂑ';
-    /// \u{a092}: 'ꂒ'
-    pub const YI_SYLLABLE_HMIX: char = 'ꂒ';
-    /// \u{a093}: 'ꂓ'
-    pub const YI_SYLLABLE_HMI: char = 'ꂓ';
-    /// \u{a094}: 'ꂔ'
-    pub const YI_SYLLABLE_HMIP: char = 'ꂔ';
-    /// \u{a095}: 'ꂕ'
-    pub const YI_SYLLABLE_HMIEX: char = 'ꂕ';
-    /// \u{a096}: 'ꂖ'
-    pub const YI_SYLLABLE_HMIE: char = 'ꂖ';
-    /// \u{a097}: 'ꂗ'
-    pub const YI_SYLLABLE_HMIEP: char = 'ꂗ';
-    /// \u{a098}: 'ꂘ'
-    pub const YI_SYLLABLE_HMAT: char = 'ꂘ';
-    /// \u{a099}: 'ꂙ'
-    pub const YI_SYLLABLE_HMAX: char = 'ꂙ';
-    /// \u{a09a}: 'ꂚ'
-    pub const YI_SYLLABLE_HMA: char = 'ꂚ';
-    /// \u{a09b}: 'ꂛ'
-    pub const YI_SYLLABLE_HMAP: char = 'ꂛ';
-    /// \u{a09c}: 'ꂜ'
-    pub const YI_SYLLABLE_HMUOX: char = 'ꂜ';
-    /// \u{a09d}: 'ꂝ'
-    pub const YI_SYLLABLE_HMUO: char = 'ꂝ';
-    /// \u{a09e}: 'ꂞ'
-    pub const YI_SYLLABLE_HMUOP: char = 'ꂞ';
-    /// \u{a09f}: 'ꂟ'
-    pub const YI_SYLLABLE_HMOT: char = 'ꂟ';
-    /// \u{a0a0}: 'ꂠ'
-    pub const YI_SYLLABLE_HMOX: char = 'ꂠ';
-    /// \u{a0a1}: 'ꂡ'
-    pub const YI_SYLLABLE_HMO: char = 'ꂡ';
-    /// \u{a0a2}: 'ꂢ'
-    pub const YI_SYLLABLE_HMOP: char = 'ꂢ';
-    /// \u{a0a3}: 'ꂣ'
-    pub const YI_SYLLABLE_HMUT: char = 'ꂣ';
-    /// \u{a0a4}: 'ꂤ'
-    pub const YI_SYLLABLE_HMUX: char = 'ꂤ';
-    /// \u{a0a5}: 'ꂥ'
-    pub const YI_SYLLABLE_HMU: char = 'ꂥ';
-    /// \u{a0a6}: 'ꂦ'
-    pub const YI_SYLLABLE_HMUP: char = 'ꂦ';
-    /// \u{a0a7}: 'ꂧ'
-    pub const YI_SYLLABLE_HMURX: char = 'ꂧ';
-    /// \u{a0a8}: 'ꂨ'
-    pub const YI_SYLLABLE_HMUR: char = 'ꂨ';
-    /// \u{a0a9}: 'ꂩ'
-    pub const YI_SYLLABLE_HMYX: char = 'ꂩ';
-    /// \u{a0aa}: 'ꂪ'
-    pub const YI_SYLLABLE_HMY: char = 'ꂪ';
-    /// \u{a0ab}: 'ꂫ'
-    pub const YI_SYLLABLE_HMYP: char = 'ꂫ';
-    /// \u{a0ac}: 'ꂬ'
-    pub const YI_SYLLABLE_HMYRX: char = 'ꂬ';
-    /// \u{a0ad}: 'ꂭ'
-    pub const YI_SYLLABLE_HMYR: char = 'ꂭ';
-    /// \u{a0ae}: 'ꂮ'
-    pub const YI_SYLLABLE_MIT: char = 'ꂮ';
-    /// \u{a0af}: 'ꂯ'
-    pub const YI_SYLLABLE_MIX: char = 'ꂯ';
-    /// \u{a0b0}: 'ꂰ'
-    pub const YI_SYLLABLE_MI: char = 'ꂰ';
-    /// \u{a0b1}: 'ꂱ'
-    pub const YI_SYLLABLE_MIP: char = 'ꂱ';
-    /// \u{a0b2}: 'ꂲ'
-    pub const YI_SYLLABLE_MIEX: char = 'ꂲ';
-    /// \u{a0b3}: 'ꂳ'
-    pub const YI_SYLLABLE_MIE: char = 'ꂳ';
-    /// \u{a0b4}: 'ꂴ'
-    pub const YI_SYLLABLE_MIEP: char = 'ꂴ';
-    /// \u{a0b5}: 'ꂵ'
-    pub const YI_SYLLABLE_MAT: char = 'ꂵ';
-    /// \u{a0b6}: 'ꂶ'
-    pub const YI_SYLLABLE_MAX: char = 'ꂶ';
-    /// \u{a0b7}: 'ꂷ'
-    pub const YI_SYLLABLE_MA: char = 'ꂷ';
-    /// \u{a0b8}: 'ꂸ'
-    pub const YI_SYLLABLE_MAP: char = 'ꂸ';
-    /// \u{a0b9}: 'ꂹ'
-    pub const YI_SYLLABLE_MUOT: char = 'ꂹ';
-    /// \u{a0ba}: 'ꂺ'
-    pub const YI_SYLLABLE_MUOX: char = 'ꂺ';
-    /// \u{a0bb}: 'ꂻ'
-    pub const YI_SYLLABLE_MUO: char = 'ꂻ';
-    /// \u{a0bc}: 'ꂼ'
-    pub const YI_SYLLABLE_MUOP: char = 'ꂼ';
-    /// \u{a0bd}: 'ꂽ'
-    pub const YI_SYLLABLE_MOT: char = 'ꂽ';
-    /// \u{a0be}: 'ꂾ'
-    pub const YI_SYLLABLE_MOX: char = 'ꂾ';
-    /// \u{a0bf}: 'ꂿ'
-    pub const YI_SYLLABLE_MO: char = 'ꂿ';
-    /// \u{a0c0}: 'ꃀ'
-    pub const YI_SYLLABLE_MOP: char = 'ꃀ';
-    /// \u{a0c1}: 'ꃁ'
-    pub const YI_SYLLABLE_MEX: char = 'ꃁ';
-    /// \u{a0c2}: 'ꃂ'
-    pub const YI_SYLLABLE_ME: char = 'ꃂ';
-    /// \u{a0c3}: 'ꃃ'
-    pub const YI_SYLLABLE_MUT: char = 'ꃃ';
-    /// \u{a0c4}: 'ꃄ'
-    pub const YI_SYLLABLE_MUX: char = 'ꃄ';
-    /// \u{a0c5}: 'ꃅ'
-    pub const YI_SYLLABLE_MU: char = 'ꃅ';
-    /// \u{a0c6}: 'ꃆ'
-    pub const YI_SYLLABLE_MUP: char = 'ꃆ';
-    /// \u{a0c7}: 'ꃇ'
-    pub const YI_SYLLABLE_MURX: char = 'ꃇ';
-    /// \u{a0c8}: 'ꃈ'
-    pub const YI_SYLLABLE_MUR: char = 'ꃈ';
-    /// \u{a0c9}: 'ꃉ'
-    pub const YI_SYLLABLE_MYT: char = 'ꃉ';
-    /// \u{a0ca}: 'ꃊ'
-    pub const YI_SYLLABLE_MYX: char = 'ꃊ';
-    /// \u{a0cb}: 'ꃋ'
-    pub const YI_SYLLABLE_MY: char = 'ꃋ';
-    /// \u{a0cc}: 'ꃌ'
-    pub const YI_SYLLABLE_MYP: char = 'ꃌ';
-    /// \u{a0cd}: 'ꃍ'
-    pub const YI_SYLLABLE_FIT: char = 'ꃍ';
-    /// \u{a0ce}: 'ꃎ'
-    pub const YI_SYLLABLE_FIX: char = 'ꃎ';
-    /// \u{a0cf}: 'ꃏ'
-    pub const YI_SYLLABLE_FI: char = 'ꃏ';
-    /// \u{a0d0}: 'ꃐ'
-    pub const YI_SYLLABLE_FIP: char = 'ꃐ';
-    /// \u{a0d1}: 'ꃑ'
-    pub const YI_SYLLABLE_FAT: char = 'ꃑ';
-    /// \u{a0d2}: 'ꃒ'
-    pub const YI_SYLLABLE_FAX: char = 'ꃒ';
-    /// \u{a0d3}: 'ꃓ'
-    pub const YI_SYLLABLE_FA: char = 'ꃓ';
-    /// \u{a0d4}: 'ꃔ'
-    pub const YI_SYLLABLE_FAP: char = 'ꃔ';
-    /// \u{a0d5}: 'ꃕ'
-    pub const YI_SYLLABLE_FOX: char = 'ꃕ';
-    /// \u{a0d6}: 'ꃖ'
-    pub const YI_SYLLABLE_FO: char = 'ꃖ';
-    /// \u{a0d7}: 'ꃗ'
-    pub const YI_SYLLABLE_FOP: char = 'ꃗ';
-    /// \u{a0d8}: 'ꃘ'
-    pub const YI_SYLLABLE_FUT: char = 'ꃘ';
-    /// \u{a0d9}: 'ꃙ'
-    pub const YI_SYLLABLE_FUX: char = 'ꃙ';
-    /// \u{a0da}: 'ꃚ'
-    pub const YI_SYLLABLE_FU: char = 'ꃚ';
-    /// \u{a0db}: 'ꃛ'
-    pub const YI_SYLLABLE_FUP: char = 'ꃛ';
-    /// \u{a0dc}: 'ꃜ'
-    pub const YI_SYLLABLE_FURX: char = 'ꃜ';
-    /// \u{a0dd}: 'ꃝ'
-    pub const YI_SYLLABLE_FUR: char = 'ꃝ';
-    /// \u{a0de}: 'ꃞ'
-    pub const YI_SYLLABLE_FYT: char = 'ꃞ';
-    /// \u{a0df}: 'ꃟ'
-    pub const YI_SYLLABLE_FYX: char = 'ꃟ';
-    /// \u{a0e0}: 'ꃠ'
-    pub const YI_SYLLABLE_FY: char = 'ꃠ';
-    /// \u{a0e1}: 'ꃡ'
-    pub const YI_SYLLABLE_FYP: char = 'ꃡ';
-    /// \u{a0e2}: 'ꃢ'
-    pub const YI_SYLLABLE_VIT: char = 'ꃢ';
-    /// \u{a0e3}: 'ꃣ'
-    pub const YI_SYLLABLE_VIX: char = 'ꃣ';
-    /// \u{a0e4}: 'ꃤ'
-    pub const YI_SYLLABLE_VI: char = 'ꃤ';
-    /// \u{a0e5}: 'ꃥ'
-    pub const YI_SYLLABLE_VIP: char = 'ꃥ';
-    /// \u{a0e6}: 'ꃦ'
-    pub const YI_SYLLABLE_VIET: char = 'ꃦ';
-    /// \u{a0e7}: 'ꃧ'
-    pub const YI_SYLLABLE_VIEX: char = 'ꃧ';
-    /// \u{a0e8}: 'ꃨ'
-    pub const YI_SYLLABLE_VIE: char = 'ꃨ';
-    /// \u{a0e9}: 'ꃩ'
-    pub const YI_SYLLABLE_VIEP: char = 'ꃩ';
-    /// \u{a0ea}: 'ꃪ'
-    pub const YI_SYLLABLE_VAT: char = 'ꃪ';
-    /// \u{a0eb}: 'ꃫ'
-    pub const YI_SYLLABLE_VAX: char = 'ꃫ';
-    /// \u{a0ec}: 'ꃬ'
-    pub const YI_SYLLABLE_VA: char = 'ꃬ';
-    /// \u{a0ed}: 'ꃭ'
-    pub const YI_SYLLABLE_VAP: char = 'ꃭ';
-    /// \u{a0ee}: 'ꃮ'
-    pub const YI_SYLLABLE_VOT: char = 'ꃮ';
-    /// \u{a0ef}: 'ꃯ'
-    pub const YI_SYLLABLE_VOX: char = 'ꃯ';
-    /// \u{a0f0}: 'ꃰ'
-    pub const YI_SYLLABLE_VO: char = 'ꃰ';
-    /// \u{a0f1}: 'ꃱ'
-    pub const YI_SYLLABLE_VOP: char = 'ꃱ';
-    /// \u{a0f2}: 'ꃲ'
-    pub const YI_SYLLABLE_VEX: char = 'ꃲ';
-    /// \u{a0f3}: 'ꃳ'
-    pub const YI_SYLLABLE_VEP: char = 'ꃳ';
-    /// \u{a0f4}: 'ꃴ'
-    pub const YI_SYLLABLE_VUT: char = 'ꃴ';
-    /// \u{a0f5}: 'ꃵ'
-    pub const YI_SYLLABLE_VUX: char = 'ꃵ';
-    /// \u{a0f6}: 'ꃶ'
-    pub const YI_SYLLABLE_VU: char = 'ꃶ';
-    /// \u{a0f7}: 'ꃷ'
-    pub const YI_SYLLABLE_VUP: char = 'ꃷ';
-    /// \u{a0f8}: 'ꃸ'
-    pub const YI_SYLLABLE_VURX: char = 'ꃸ';
-    /// \u{a0f9}: 'ꃹ'
-    pub const YI_SYLLABLE_VUR: char = 'ꃹ';
-    /// \u{a0fa}: 'ꃺ'
-    pub const YI_SYLLABLE_VYT: char = 'ꃺ';
-    /// \u{a0fb}: 'ꃻ'
-    pub const YI_SYLLABLE_VYX: char = 'ꃻ';
-    /// \u{a0fc}: 'ꃼ'
-    pub const YI_SYLLABLE_VY: char = 'ꃼ';
-    /// \u{a0fd}: 'ꃽ'
-    pub const YI_SYLLABLE_VYP: char = 'ꃽ';
-    /// \u{a0fe}: 'ꃾ'
-    pub const YI_SYLLABLE_VYRX: char = 'ꃾ';
-    /// \u{a0ff}: 'ꃿ'
-    pub const YI_SYLLABLE_VYR: char = 'ꃿ';
-    /// \u{a100}: 'ꄀ'
-    pub const YI_SYLLABLE_DIT: char = 'ꄀ';
-    /// \u{a101}: 'ꄁ'
-    pub const YI_SYLLABLE_DIX: char = 'ꄁ';
-    /// \u{a102}: 'ꄂ'
-    pub const YI_SYLLABLE_DI: char = 'ꄂ';
-    /// \u{a103}: 'ꄃ'
-    pub const YI_SYLLABLE_DIP: char = 'ꄃ';
-    /// \u{a104}: 'ꄄ'
-    pub const YI_SYLLABLE_DIEX: char = 'ꄄ';
-    /// \u{a105}: 'ꄅ'
-    pub const YI_SYLLABLE_DIE: char = 'ꄅ';
-    /// \u{a106}: 'ꄆ'
-    pub const YI_SYLLABLE_DIEP: char = 'ꄆ';
-    /// \u{a107}: 'ꄇ'
-    pub const YI_SYLLABLE_DAT: char = 'ꄇ';
-    /// \u{a108}: 'ꄈ'
-    pub const YI_SYLLABLE_DAX: char = 'ꄈ';
-    /// \u{a109}: 'ꄉ'
-    pub const YI_SYLLABLE_DA: char = 'ꄉ';
-    /// \u{a10a}: 'ꄊ'
-    pub const YI_SYLLABLE_DAP: char = 'ꄊ';
-    /// \u{a10b}: 'ꄋ'
-    pub const YI_SYLLABLE_DUOX: char = 'ꄋ';
-    /// \u{a10c}: 'ꄌ'
-    pub const YI_SYLLABLE_DUO: char = 'ꄌ';
-    /// \u{a10d}: 'ꄍ'
-    pub const YI_SYLLABLE_DOT: char = 'ꄍ';
-    /// \u{a10e}: 'ꄎ'
-    pub const YI_SYLLABLE_DOX: char = 'ꄎ';
-    /// \u{a10f}: 'ꄏ'
-    pub const YI_SYLLABLE_DO: char = 'ꄏ';
-    /// \u{a110}: 'ꄐ'
-    pub const YI_SYLLABLE_DOP: char = 'ꄐ';
-    /// \u{a111}: 'ꄑ'
-    pub const YI_SYLLABLE_DEX: char = 'ꄑ';
-    /// \u{a112}: 'ꄒ'
-    pub const YI_SYLLABLE_DE: char = 'ꄒ';
-    /// \u{a113}: 'ꄓ'
-    pub const YI_SYLLABLE_DEP: char = 'ꄓ';
-    /// \u{a114}: 'ꄔ'
-    pub const YI_SYLLABLE_DUT: char = 'ꄔ';
-    /// \u{a115}: 'ꄕ'
-    pub const YI_SYLLABLE_DUX: char = 'ꄕ';
-    /// \u{a116}: 'ꄖ'
-    pub const YI_SYLLABLE_DU: char = 'ꄖ';
-    /// \u{a117}: 'ꄗ'
-    pub const YI_SYLLABLE_DUP: char = 'ꄗ';
-    /// \u{a118}: 'ꄘ'
-    pub const YI_SYLLABLE_DURX: char = 'ꄘ';
-    /// \u{a119}: 'ꄙ'
-    pub const YI_SYLLABLE_DUR: char = 'ꄙ';
-    /// \u{a11a}: 'ꄚ'
-    pub const YI_SYLLABLE_TIT: char = 'ꄚ';
-    /// \u{a11b}: 'ꄛ'
-    pub const YI_SYLLABLE_TIX: char = 'ꄛ';
-    /// \u{a11c}: 'ꄜ'
-    pub const YI_SYLLABLE_TI: char = 'ꄜ';
-    /// \u{a11d}: 'ꄝ'
-    pub const YI_SYLLABLE_TIP: char = 'ꄝ';
-    /// \u{a11e}: 'ꄞ'
-    pub const YI_SYLLABLE_TIEX: char = 'ꄞ';
-    /// \u{a11f}: 'ꄟ'
-    pub const YI_SYLLABLE_TIE: char = 'ꄟ';
-    /// \u{a120}: 'ꄠ'
-    pub const YI_SYLLABLE_TIEP: char = 'ꄠ';
-    /// \u{a121}: 'ꄡ'
-    pub const YI_SYLLABLE_TAT: char = 'ꄡ';
-    /// \u{a122}: 'ꄢ'
-    pub const YI_SYLLABLE_TAX: char = 'ꄢ';
-    /// \u{a123}: 'ꄣ'
-    pub const YI_SYLLABLE_TA: char = 'ꄣ';
-    /// \u{a124}: 'ꄤ'
-    pub const YI_SYLLABLE_TAP: char = 'ꄤ';
-    /// \u{a125}: 'ꄥ'
-    pub const YI_SYLLABLE_TUOT: char = 'ꄥ';
-    /// \u{a126}: 'ꄦ'
-    pub const YI_SYLLABLE_TUOX: char = 'ꄦ';
-    /// \u{a127}: 'ꄧ'
-    pub const YI_SYLLABLE_TUO: char = 'ꄧ';
-    /// \u{a128}: 'ꄨ'
-    pub const YI_SYLLABLE_TUOP: char = 'ꄨ';
-    /// \u{a129}: 'ꄩ'
-    pub const YI_SYLLABLE_TOT: char = 'ꄩ';
-    /// \u{a12a}: 'ꄪ'
-    pub const YI_SYLLABLE_TOX: char = 'ꄪ';
-    /// \u{a12b}: 'ꄫ'
-    pub const YI_SYLLABLE_TO: char = 'ꄫ';
-    /// \u{a12c}: 'ꄬ'
-    pub const YI_SYLLABLE_TOP: char = 'ꄬ';
-    /// \u{a12d}: 'ꄭ'
-    pub const YI_SYLLABLE_TEX: char = 'ꄭ';
-    /// \u{a12e}: 'ꄮ'
-    pub const YI_SYLLABLE_TE: char = 'ꄮ';
-    /// \u{a12f}: 'ꄯ'
-    pub const YI_SYLLABLE_TEP: char = 'ꄯ';
-    /// \u{a130}: 'ꄰ'
-    pub const YI_SYLLABLE_TUT: char = 'ꄰ';
-    /// \u{a131}: 'ꄱ'
-    pub const YI_SYLLABLE_TUX: char = 'ꄱ';
-    /// \u{a132}: 'ꄲ'
-    pub const YI_SYLLABLE_TU: char = 'ꄲ';
-    /// \u{a133}: 'ꄳ'
-    pub const YI_SYLLABLE_TUP: char = 'ꄳ';
-    /// \u{a134}: 'ꄴ'
-    pub const YI_SYLLABLE_TURX: char = 'ꄴ';
-    /// \u{a135}: 'ꄵ'
-    pub const YI_SYLLABLE_TUR: char = 'ꄵ';
-    /// \u{a136}: 'ꄶ'
-    pub const YI_SYLLABLE_DDIT: char = 'ꄶ';
-    /// \u{a137}: 'ꄷ'
-    pub const YI_SYLLABLE_DDIX: char = 'ꄷ';
-    /// \u{a138}: 'ꄸ'
-    pub const YI_SYLLABLE_DDI: char = 'ꄸ';
-    /// \u{a139}: 'ꄹ'
-    pub const YI_SYLLABLE_DDIP: char = 'ꄹ';
-    /// \u{a13a}: 'ꄺ'
-    pub const YI_SYLLABLE_DDIEX: char = 'ꄺ';
-    /// \u{a13b}: 'ꄻ'
-    pub const YI_SYLLABLE_DDIE: char = 'ꄻ';
-    /// \u{a13c}: 'ꄼ'
-    pub const YI_SYLLABLE_DDIEP: char = 'ꄼ';
-    /// \u{a13d}: 'ꄽ'
-    pub const YI_SYLLABLE_DDAT: char = 'ꄽ';
-    /// \u{a13e}: 'ꄾ'
-    pub const YI_SYLLABLE_DDAX: char = 'ꄾ';
-    /// \u{a13f}: 'ꄿ'
-    pub const YI_SYLLABLE_DDA: char = 'ꄿ';
-    /// \u{a140}: 'ꅀ'
-    pub const YI_SYLLABLE_DDAP: char = 'ꅀ';
-    /// \u{a141}: 'ꅁ'
-    pub const YI_SYLLABLE_DDUOX: char = 'ꅁ';
-    /// \u{a142}: 'ꅂ'
-    pub const YI_SYLLABLE_DDUO: char = 'ꅂ';
-    /// \u{a143}: 'ꅃ'
-    pub const YI_SYLLABLE_DDUOP: char = 'ꅃ';
-    /// \u{a144}: 'ꅄ'
-    pub const YI_SYLLABLE_DDOT: char = 'ꅄ';
-    /// \u{a145}: 'ꅅ'
-    pub const YI_SYLLABLE_DDOX: char = 'ꅅ';
-    /// \u{a146}: 'ꅆ'
-    pub const YI_SYLLABLE_DDO: char = 'ꅆ';
-    /// \u{a147}: 'ꅇ'
-    pub const YI_SYLLABLE_DDOP: char = 'ꅇ';
-    /// \u{a148}: 'ꅈ'
-    pub const YI_SYLLABLE_DDEX: char = 'ꅈ';
-    /// \u{a149}: 'ꅉ'
-    pub const YI_SYLLABLE_DDE: char = 'ꅉ';
-    /// \u{a14a}: 'ꅊ'
-    pub const YI_SYLLABLE_DDEP: char = 'ꅊ';
-    /// \u{a14b}: 'ꅋ'
-    pub const YI_SYLLABLE_DDUT: char = 'ꅋ';
-    /// \u{a14c}: 'ꅌ'
-    pub const YI_SYLLABLE_DDUX: char = 'ꅌ';
-    /// \u{a14d}: 'ꅍ'
-    pub const YI_SYLLABLE_DDU: char = 'ꅍ';
-    /// \u{a14e}: 'ꅎ'
-    pub const YI_SYLLABLE_DDUP: char = 'ꅎ';
-    /// \u{a14f}: 'ꅏ'
-    pub const YI_SYLLABLE_DDURX: char = 'ꅏ';
-    /// \u{a150}: 'ꅐ'
-    pub const YI_SYLLABLE_DDUR: char = 'ꅐ';
-    /// \u{a151}: 'ꅑ'
-    pub const YI_SYLLABLE_NDIT: char = 'ꅑ';
-    /// \u{a152}: 'ꅒ'
-    pub const YI_SYLLABLE_NDIX: char = 'ꅒ';
-    /// \u{a153}: 'ꅓ'
-    pub const YI_SYLLABLE_NDI: char = 'ꅓ';
-    /// \u{a154}: 'ꅔ'
-    pub const YI_SYLLABLE_NDIP: char = 'ꅔ';
-    /// \u{a155}: 'ꅕ'
-    pub const YI_SYLLABLE_NDIEX: char = 'ꅕ';
-    /// \u{a156}: 'ꅖ'
-    pub const YI_SYLLABLE_NDIE: char = 'ꅖ';
-    /// \u{a157}: 'ꅗ'
-    pub const YI_SYLLABLE_NDAT: char = 'ꅗ';
-    /// \u{a158}: 'ꅘ'
-    pub const YI_SYLLABLE_NDAX: char = 'ꅘ';
-    /// \u{a159}: 'ꅙ'
-    pub const YI_SYLLABLE_NDA: char = 'ꅙ';
-    /// \u{a15a}: 'ꅚ'
-    pub const YI_SYLLABLE_NDAP: char = 'ꅚ';
-    /// \u{a15b}: 'ꅛ'
-    pub const YI_SYLLABLE_NDOT: char = 'ꅛ';
-    /// \u{a15c}: 'ꅜ'
-    pub const YI_SYLLABLE_NDOX: char = 'ꅜ';
-    /// \u{a15d}: 'ꅝ'
-    pub const YI_SYLLABLE_NDO: char = 'ꅝ';
-    /// \u{a15e}: 'ꅞ'
-    pub const YI_SYLLABLE_NDOP: char = 'ꅞ';
-    /// \u{a15f}: 'ꅟ'
-    pub const YI_SYLLABLE_NDEX: char = 'ꅟ';
-    /// \u{a160}: 'ꅠ'
-    pub const YI_SYLLABLE_NDE: char = 'ꅠ';
-    /// \u{a161}: 'ꅡ'
-    pub const YI_SYLLABLE_NDEP: char = 'ꅡ';
-    /// \u{a162}: 'ꅢ'
-    pub const YI_SYLLABLE_NDUT: char = 'ꅢ';
-    /// \u{a163}: 'ꅣ'
-    pub const YI_SYLLABLE_NDUX: char = 'ꅣ';
-    /// \u{a164}: 'ꅤ'
-    pub const YI_SYLLABLE_NDU: char = 'ꅤ';
-    /// \u{a165}: 'ꅥ'
-    pub const YI_SYLLABLE_NDUP: char = 'ꅥ';
-    /// \u{a166}: 'ꅦ'
-    pub const YI_SYLLABLE_NDURX: char = 'ꅦ';
-    /// \u{a167}: 'ꅧ'
-    pub const YI_SYLLABLE_NDUR: char = 'ꅧ';
-    /// \u{a168}: 'ꅨ'
-    pub const YI_SYLLABLE_HNIT: char = 'ꅨ';
-    /// \u{a169}: 'ꅩ'
-    pub const YI_SYLLABLE_HNIX: char = 'ꅩ';
-    /// \u{a16a}: 'ꅪ'
-    pub const YI_SYLLABLE_HNI: char = 'ꅪ';
-    /// \u{a16b}: 'ꅫ'
-    pub const YI_SYLLABLE_HNIP: char = 'ꅫ';
-    /// \u{a16c}: 'ꅬ'
-    pub const YI_SYLLABLE_HNIET: char = 'ꅬ';
-    /// \u{a16d}: 'ꅭ'
-    pub const YI_SYLLABLE_HNIEX: char = 'ꅭ';
-    /// \u{a16e}: 'ꅮ'
-    pub const YI_SYLLABLE_HNIE: char = 'ꅮ';
-    /// \u{a16f}: 'ꅯ'
-    pub const YI_SYLLABLE_HNIEP: char = 'ꅯ';
-    /// \u{a170}: 'ꅰ'
-    pub const YI_SYLLABLE_HNAT: char = 'ꅰ';
-    /// \u{a171}: 'ꅱ'
-    pub const YI_SYLLABLE_HNAX: char = 'ꅱ';
-    /// \u{a172}: 'ꅲ'
-    pub const YI_SYLLABLE_HNA: char = 'ꅲ';
-    /// \u{a173}: 'ꅳ'
-    pub const YI_SYLLABLE_HNAP: char = 'ꅳ';
-    /// \u{a174}: 'ꅴ'
-    pub const YI_SYLLABLE_HNUOX: char = 'ꅴ';
-    /// \u{a175}: 'ꅵ'
-    pub const YI_SYLLABLE_HNUO: char = 'ꅵ';
-    /// \u{a176}: 'ꅶ'
-    pub const YI_SYLLABLE_HNOT: char = 'ꅶ';
-    /// \u{a177}: 'ꅷ'
-    pub const YI_SYLLABLE_HNOX: char = 'ꅷ';
-    /// \u{a178}: 'ꅸ'
-    pub const YI_SYLLABLE_HNOP: char = 'ꅸ';
-    /// \u{a179}: 'ꅹ'
-    pub const YI_SYLLABLE_HNEX: char = 'ꅹ';
-    /// \u{a17a}: 'ꅺ'
-    pub const YI_SYLLABLE_HNE: char = 'ꅺ';
-    /// \u{a17b}: 'ꅻ'
-    pub const YI_SYLLABLE_HNEP: char = 'ꅻ';
-    /// \u{a17c}: 'ꅼ'
-    pub const YI_SYLLABLE_HNUT: char = 'ꅼ';
-    /// \u{a17d}: 'ꅽ'
-    pub const YI_SYLLABLE_NIT: char = 'ꅽ';
-    /// \u{a17e}: 'ꅾ'
-    pub const YI_SYLLABLE_NIX: char = 'ꅾ';
-    /// \u{a17f}: 'ꅿ'
-    pub const YI_SYLLABLE_NI: char = 'ꅿ';
-    /// \u{a180}: 'ꆀ'
-    pub const YI_SYLLABLE_NIP: char = 'ꆀ';
-    /// \u{a181}: 'ꆁ'
-    pub const YI_SYLLABLE_NIEX: char = 'ꆁ';
-    /// \u{a182}: 'ꆂ'
-    pub const YI_SYLLABLE_NIE: char = 'ꆂ';
-    /// \u{a183}: 'ꆃ'
-    pub const YI_SYLLABLE_NIEP: char = 'ꆃ';
-    /// \u{a184}: 'ꆄ'
-    pub const YI_SYLLABLE_NAX: char = 'ꆄ';
-    /// \u{a185}: 'ꆅ'
-    pub const YI_SYLLABLE_NA: char = 'ꆅ';
-    /// \u{a186}: 'ꆆ'
-    pub const YI_SYLLABLE_NAP: char = 'ꆆ';
-    /// \u{a187}: 'ꆇ'
-    pub const YI_SYLLABLE_NUOX: char = 'ꆇ';
-    /// \u{a188}: 'ꆈ'
-    pub const YI_SYLLABLE_NUO: char = 'ꆈ';
-    /// \u{a189}: 'ꆉ'
-    pub const YI_SYLLABLE_NUOP: char = 'ꆉ';
-    /// \u{a18a}: 'ꆊ'
-    pub const YI_SYLLABLE_NOT: char = 'ꆊ';
-    /// \u{a18b}: 'ꆋ'
-    pub const YI_SYLLABLE_NOX: char = 'ꆋ';
-    /// \u{a18c}: 'ꆌ'
-    pub const YI_SYLLABLE_NO: char = 'ꆌ';
-    /// \u{a18d}: 'ꆍ'
-    pub const YI_SYLLABLE_NOP: char = 'ꆍ';
-    /// \u{a18e}: 'ꆎ'
-    pub const YI_SYLLABLE_NEX: char = 'ꆎ';
-    /// \u{a18f}: 'ꆏ'
-    pub const YI_SYLLABLE_NE: char = 'ꆏ';
-    /// \u{a190}: 'ꆐ'
-    pub const YI_SYLLABLE_NEP: char = 'ꆐ';
-    /// \u{a191}: 'ꆑ'
-    pub const YI_SYLLABLE_NUT: char = 'ꆑ';
-    /// \u{a192}: 'ꆒ'
-    pub const YI_SYLLABLE_NUX: char = 'ꆒ';
-    /// \u{a193}: 'ꆓ'
-    pub const YI_SYLLABLE_NU: char = 'ꆓ';
-    /// \u{a194}: 'ꆔ'
-    pub const YI_SYLLABLE_NUP: char = 'ꆔ';
-    /// \u{a195}: 'ꆕ'
-    pub const YI_SYLLABLE_NURX: char = 'ꆕ';
-    /// \u{a196}: 'ꆖ'
-    pub const YI_SYLLABLE_NUR: char = 'ꆖ';
-    /// \u{a197}: 'ꆗ'
-    pub const YI_SYLLABLE_HLIT: char = 'ꆗ';
-    /// \u{a198}: 'ꆘ'
-    pub const YI_SYLLABLE_HLIX: char = 'ꆘ';
-    /// \u{a199}: 'ꆙ'
-    pub const YI_SYLLABLE_HLI: char = 'ꆙ';
-    /// \u{a19a}: 'ꆚ'
-    pub const YI_SYLLABLE_HLIP: char = 'ꆚ';
-    /// \u{a19b}: 'ꆛ'
-    pub const YI_SYLLABLE_HLIEX: char = 'ꆛ';
-    /// \u{a19c}: 'ꆜ'
-    pub const YI_SYLLABLE_HLIE: char = 'ꆜ';
-    /// \u{a19d}: 'ꆝ'
-    pub const YI_SYLLABLE_HLIEP: char = 'ꆝ';
-    /// \u{a19e}: 'ꆞ'
-    pub const YI_SYLLABLE_HLAT: char = 'ꆞ';
-    /// \u{a19f}: 'ꆟ'
-    pub const YI_SYLLABLE_HLAX: char = 'ꆟ';
-    /// \u{a1a0}: 'ꆠ'
-    pub const YI_SYLLABLE_HLA: char = 'ꆠ';
-    /// \u{a1a1}: 'ꆡ'
-    pub const YI_SYLLABLE_HLAP: char = 'ꆡ';
-    /// \u{a1a2}: 'ꆢ'
-    pub const YI_SYLLABLE_HLUOX: char = 'ꆢ';
-    /// \u{a1a3}: 'ꆣ'
-    pub const YI_SYLLABLE_HLUO: char = 'ꆣ';
-    /// \u{a1a4}: 'ꆤ'
-    pub const YI_SYLLABLE_HLUOP: char = 'ꆤ';
-    /// \u{a1a5}: 'ꆥ'
-    pub const YI_SYLLABLE_HLOX: char = 'ꆥ';
-    /// \u{a1a6}: 'ꆦ'
-    pub const YI_SYLLABLE_HLO: char = 'ꆦ';
-    /// \u{a1a7}: 'ꆧ'
-    pub const YI_SYLLABLE_HLOP: char = 'ꆧ';
-    /// \u{a1a8}: 'ꆨ'
-    pub const YI_SYLLABLE_HLEX: char = 'ꆨ';
-    /// \u{a1a9}: 'ꆩ'
-    pub const YI_SYLLABLE_HLE: char = 'ꆩ';
-    /// \u{a1aa}: 'ꆪ'
-    pub const YI_SYLLABLE_HLEP: char = 'ꆪ';
-    /// \u{a1ab}: 'ꆫ'
-    pub const YI_SYLLABLE_HLUT: char = 'ꆫ';
-    /// \u{a1ac}: 'ꆬ'
-    pub const YI_SYLLABLE_HLUX: char = 'ꆬ';
-    /// \u{a1ad}: 'ꆭ'
-    pub const YI_SYLLABLE_HLU: char = 'ꆭ';
-    /// \u{a1ae}: 'ꆮ'
-    pub const YI_SYLLABLE_HLUP: char = 'ꆮ';
-    /// \u{a1af}: 'ꆯ'
-    pub const YI_SYLLABLE_HLURX: char = 'ꆯ';
-    /// \u{a1b0}: 'ꆰ'
-    pub const YI_SYLLABLE_HLUR: char = 'ꆰ';
-    /// \u{a1b1}: 'ꆱ'
-    pub const YI_SYLLABLE_HLYT: char = 'ꆱ';
-    /// \u{a1b2}: 'ꆲ'
-    pub const YI_SYLLABLE_HLYX: char = 'ꆲ';
-    /// \u{a1b3}: 'ꆳ'
-    pub const YI_SYLLABLE_HLY: char = 'ꆳ';
-    /// \u{a1b4}: 'ꆴ'
-    pub const YI_SYLLABLE_HLYP: char = 'ꆴ';
-    /// \u{a1b5}: 'ꆵ'
-    pub const YI_SYLLABLE_HLYRX: char = 'ꆵ';
-    /// \u{a1b6}: 'ꆶ'
-    pub const YI_SYLLABLE_HLYR: char = 'ꆶ';
-    /// \u{a1b7}: 'ꆷ'
-    pub const YI_SYLLABLE_LIT: char = 'ꆷ';
-    /// \u{a1b8}: 'ꆸ'
-    pub const YI_SYLLABLE_LIX: char = 'ꆸ';
-    /// \u{a1b9}: 'ꆹ'
-    pub const YI_SYLLABLE_LI: char = 'ꆹ';
-    /// \u{a1ba}: 'ꆺ'
-    pub const YI_SYLLABLE_LIP: char = 'ꆺ';
-    /// \u{a1bb}: 'ꆻ'
-    pub const YI_SYLLABLE_LIET: char = 'ꆻ';
-    /// \u{a1bc}: 'ꆼ'
-    pub const YI_SYLLABLE_LIEX: char = 'ꆼ';
-    /// \u{a1bd}: 'ꆽ'
-    pub const YI_SYLLABLE_LIE: char = 'ꆽ';
-    /// \u{a1be}: 'ꆾ'
-    pub const YI_SYLLABLE_LIEP: char = 'ꆾ';
-    /// \u{a1bf}: 'ꆿ'
-    pub const YI_SYLLABLE_LAT: char = 'ꆿ';
-    /// \u{a1c0}: 'ꇀ'
-    pub const YI_SYLLABLE_LAX: char = 'ꇀ';
-    /// \u{a1c1}: 'ꇁ'
-    pub const YI_SYLLABLE_LA: char = 'ꇁ';
-    /// \u{a1c2}: 'ꇂ'
-    pub const YI_SYLLABLE_LAP: char = 'ꇂ';
-    /// \u{a1c3}: 'ꇃ'
-    pub const YI_SYLLABLE_LUOT: char = 'ꇃ';
-    /// \u{a1c4}: 'ꇄ'
-    pub const YI_SYLLABLE_LUOX: char = 'ꇄ';
-    /// \u{a1c5}: 'ꇅ'
-    pub const YI_SYLLABLE_LUO: char = 'ꇅ';
-    /// \u{a1c6}: 'ꇆ'
-    pub const YI_SYLLABLE_LUOP: char = 'ꇆ';
-    /// \u{a1c7}: 'ꇇ'
-    pub const YI_SYLLABLE_LOT: char = 'ꇇ';
-    /// \u{a1c8}: 'ꇈ'
-    pub const YI_SYLLABLE_LOX: char = 'ꇈ';
-    /// \u{a1c9}: 'ꇉ'
-    pub const YI_SYLLABLE_LO: char = 'ꇉ';
-    /// \u{a1ca}: 'ꇊ'
-    pub const YI_SYLLABLE_LOP: char = 'ꇊ';
-    /// \u{a1cb}: 'ꇋ'
-    pub const YI_SYLLABLE_LEX: char = 'ꇋ';
-    /// \u{a1cc}: 'ꇌ'
-    pub const YI_SYLLABLE_LE: char = 'ꇌ';
-    /// \u{a1cd}: 'ꇍ'
-    pub const YI_SYLLABLE_LEP: char = 'ꇍ';
-    /// \u{a1ce}: 'ꇎ'
-    pub const YI_SYLLABLE_LUT: char = 'ꇎ';
-    /// \u{a1cf}: 'ꇏ'
-    pub const YI_SYLLABLE_LUX: char = 'ꇏ';
-    /// \u{a1d0}: 'ꇐ'
-    pub const YI_SYLLABLE_LU: char = 'ꇐ';
-    /// \u{a1d1}: 'ꇑ'
-    pub const YI_SYLLABLE_LUP: char = 'ꇑ';
-    /// \u{a1d2}: 'ꇒ'
-    pub const YI_SYLLABLE_LURX: char = 'ꇒ';
-    /// \u{a1d3}: 'ꇓ'
-    pub const YI_SYLLABLE_LUR: char = 'ꇓ';
-    /// \u{a1d4}: 'ꇔ'
-    pub const YI_SYLLABLE_LYT: char = 'ꇔ';
-    /// \u{a1d5}: 'ꇕ'
-    pub const YI_SYLLABLE_LYX: char = 'ꇕ';
-    /// \u{a1d6}: 'ꇖ'
-    pub const YI_SYLLABLE_LY: char = 'ꇖ';
-    /// \u{a1d7}: 'ꇗ'
-    pub const YI_SYLLABLE_LYP: char = 'ꇗ';
-    /// \u{a1d8}: 'ꇘ'
-    pub const YI_SYLLABLE_LYRX: char = 'ꇘ';
-    /// \u{a1d9}: 'ꇙ'
-    pub const YI_SYLLABLE_LYR: char = 'ꇙ';
-    /// \u{a1da}: 'ꇚ'
-    pub const YI_SYLLABLE_GIT: char = 'ꇚ';
-    /// \u{a1db}: 'ꇛ'
-    pub const YI_SYLLABLE_GIX: char = 'ꇛ';
-    /// \u{a1dc}: 'ꇜ'
-    pub const YI_SYLLABLE_GI: char = 'ꇜ';
-    /// \u{a1dd}: 'ꇝ'
-    pub const YI_SYLLABLE_GIP: char = 'ꇝ';
-    /// \u{a1de}: 'ꇞ'
-    pub const YI_SYLLABLE_GIET: char = 'ꇞ';
-    /// \u{a1df}: 'ꇟ'
-    pub const YI_SYLLABLE_GIEX: char = 'ꇟ';
-    /// \u{a1e0}: 'ꇠ'
-    pub const YI_SYLLABLE_GIE: char = 'ꇠ';
-    /// \u{a1e1}: 'ꇡ'
-    pub const YI_SYLLABLE_GIEP: char = 'ꇡ';
-    /// \u{a1e2}: 'ꇢ'
-    pub const YI_SYLLABLE_GAT: char = 'ꇢ';
-    /// \u{a1e3}: 'ꇣ'
-    pub const YI_SYLLABLE_GAX: char = 'ꇣ';
-    /// \u{a1e4}: 'ꇤ'
-    pub const YI_SYLLABLE_GA: char = 'ꇤ';
-    /// \u{a1e5}: 'ꇥ'
-    pub const YI_SYLLABLE_GAP: char = 'ꇥ';
-    /// \u{a1e6}: 'ꇦ'
-    pub const YI_SYLLABLE_GUOT: char = 'ꇦ';
-    /// \u{a1e7}: 'ꇧ'
-    pub const YI_SYLLABLE_GUOX: char = 'ꇧ';
-    /// \u{a1e8}: 'ꇨ'
-    pub const YI_SYLLABLE_GUO: char = 'ꇨ';
-    /// \u{a1e9}: 'ꇩ'
-    pub const YI_SYLLABLE_GUOP: char = 'ꇩ';
-    /// \u{a1ea}: 'ꇪ'
-    pub const YI_SYLLABLE_GOT: char = 'ꇪ';
-    /// \u{a1eb}: 'ꇫ'
-    pub const YI_SYLLABLE_GOX: char = 'ꇫ';
-    /// \u{a1ec}: 'ꇬ'
-    pub const YI_SYLLABLE_GO: char = 'ꇬ';
-    /// \u{a1ed}: 'ꇭ'
-    pub const YI_SYLLABLE_GOP: char = 'ꇭ';
-    /// \u{a1ee}: 'ꇮ'
-    pub const YI_SYLLABLE_GET: char = 'ꇮ';
-    /// \u{a1ef}: 'ꇯ'
-    pub const YI_SYLLABLE_GEX: char = 'ꇯ';
-    /// \u{a1f0}: 'ꇰ'
-    pub const YI_SYLLABLE_GE: char = 'ꇰ';
-    /// \u{a1f1}: 'ꇱ'
-    pub const YI_SYLLABLE_GEP: char = 'ꇱ';
-    /// \u{a1f2}: 'ꇲ'
-    pub const YI_SYLLABLE_GUT: char = 'ꇲ';
-    /// \u{a1f3}: 'ꇳ'
-    pub const YI_SYLLABLE_GUX: char = 'ꇳ';
-    /// \u{a1f4}: 'ꇴ'
-    pub const YI_SYLLABLE_GU: char = 'ꇴ';
-    /// \u{a1f5}: 'ꇵ'
-    pub const YI_SYLLABLE_GUP: char = 'ꇵ';
-    /// \u{a1f6}: 'ꇶ'
-    pub const YI_SYLLABLE_GURX: char = 'ꇶ';
-    /// \u{a1f7}: 'ꇷ'
-    pub const YI_SYLLABLE_GUR: char = 'ꇷ';
-    /// \u{a1f8}: 'ꇸ'
-    pub const YI_SYLLABLE_KIT: char = 'ꇸ';
-    /// \u{a1f9}: 'ꇹ'
-    pub const YI_SYLLABLE_KIX: char = 'ꇹ';
-    /// \u{a1fa}: 'ꇺ'
-    pub const YI_SYLLABLE_KI: char = 'ꇺ';
-    /// \u{a1fb}: 'ꇻ'
-    pub const YI_SYLLABLE_KIP: char = 'ꇻ';
-    /// \u{a1fc}: 'ꇼ'
-    pub const YI_SYLLABLE_KIEX: char = 'ꇼ';
-    /// \u{a1fd}: 'ꇽ'
-    pub const YI_SYLLABLE_KIE: char = 'ꇽ';
-    /// \u{a1fe}: 'ꇾ'
-    pub const YI_SYLLABLE_KIEP: char = 'ꇾ';
-    /// \u{a1ff}: 'ꇿ'
-    pub const YI_SYLLABLE_KAT: char = 'ꇿ';
-    /// \u{a200}: 'ꈀ'
-    pub const YI_SYLLABLE_KAX: char = 'ꈀ';
-    /// \u{a201}: 'ꈁ'
-    pub const YI_SYLLABLE_KA: char = 'ꈁ';
-    /// \u{a202}: 'ꈂ'
-    pub const YI_SYLLABLE_KAP: char = 'ꈂ';
-    /// \u{a203}: 'ꈃ'
-    pub const YI_SYLLABLE_KUOX: char = 'ꈃ';
-    /// \u{a204}: 'ꈄ'
-    pub const YI_SYLLABLE_KUO: char = 'ꈄ';
-    /// \u{a205}: 'ꈅ'
-    pub const YI_SYLLABLE_KUOP: char = 'ꈅ';
-    /// \u{a206}: 'ꈆ'
-    pub const YI_SYLLABLE_KOT: char = 'ꈆ';
-    /// \u{a207}: 'ꈇ'
-    pub const YI_SYLLABLE_KOX: char = 'ꈇ';
-    /// \u{a208}: 'ꈈ'
-    pub const YI_SYLLABLE_KO: char = 'ꈈ';
-    /// \u{a209}: 'ꈉ'
-    pub const YI_SYLLABLE_KOP: char = 'ꈉ';
-    /// \u{a20a}: 'ꈊ'
-    pub const YI_SYLLABLE_KET: char = 'ꈊ';
-    /// \u{a20b}: 'ꈋ'
-    pub const YI_SYLLABLE_KEX: char = 'ꈋ';
-    /// \u{a20c}: 'ꈌ'
-    pub const YI_SYLLABLE_KE: char = 'ꈌ';
-    /// \u{a20d}: 'ꈍ'
-    pub const YI_SYLLABLE_KEP: char = 'ꈍ';
-    /// \u{a20e}: 'ꈎ'
-    pub const YI_SYLLABLE_KUT: char = 'ꈎ';
-    /// \u{a20f}: 'ꈏ'
-    pub const YI_SYLLABLE_KUX: char = 'ꈏ';
-    /// \u{a210}: 'ꈐ'
-    pub const YI_SYLLABLE_KU: char = 'ꈐ';
-    /// \u{a211}: 'ꈑ'
-    pub const YI_SYLLABLE_KUP: char = 'ꈑ';
-    /// \u{a212}: 'ꈒ'
-    pub const YI_SYLLABLE_KURX: char = 'ꈒ';
-    /// \u{a213}: 'ꈓ'
-    pub const YI_SYLLABLE_KUR: char = 'ꈓ';
-    /// \u{a214}: 'ꈔ'
-    pub const YI_SYLLABLE_GGIT: char = 'ꈔ';
-    /// \u{a215}: 'ꈕ'
-    pub const YI_SYLLABLE_GGIX: char = 'ꈕ';
-    /// \u{a216}: 'ꈖ'
-    pub const YI_SYLLABLE_GGI: char = 'ꈖ';
-    /// \u{a217}: 'ꈗ'
-    pub const YI_SYLLABLE_GGIEX: char = 'ꈗ';
-    /// \u{a218}: 'ꈘ'
-    pub const YI_SYLLABLE_GGIE: char = 'ꈘ';
-    /// \u{a219}: 'ꈙ'
-    pub const YI_SYLLABLE_GGIEP: char = 'ꈙ';
-    /// \u{a21a}: 'ꈚ'
-    pub const YI_SYLLABLE_GGAT: char = 'ꈚ';
-    /// \u{a21b}: 'ꈛ'
-    pub const YI_SYLLABLE_GGAX: char = 'ꈛ';
-    /// \u{a21c}: 'ꈜ'
-    pub const YI_SYLLABLE_GGA: char = 'ꈜ';
-    /// \u{a21d}: 'ꈝ'
-    pub const YI_SYLLABLE_GGAP: char = 'ꈝ';
-    /// \u{a21e}: 'ꈞ'
-    pub const YI_SYLLABLE_GGUOT: char = 'ꈞ';
-    /// \u{a21f}: 'ꈟ'
-    pub const YI_SYLLABLE_GGUOX: char = 'ꈟ';
-    /// \u{a220}: 'ꈠ'
-    pub const YI_SYLLABLE_GGUO: char = 'ꈠ';
-    /// \u{a221}: 'ꈡ'
-    pub const YI_SYLLABLE_GGUOP: char = 'ꈡ';
-    /// \u{a222}: 'ꈢ'
-    pub const YI_SYLLABLE_GGOT: char = 'ꈢ';
-    /// \u{a223}: 'ꈣ'
-    pub const YI_SYLLABLE_GGOX: char = 'ꈣ';
-    /// \u{a224}: 'ꈤ'
-    pub const YI_SYLLABLE_GGO: char = 'ꈤ';
-    /// \u{a225}: 'ꈥ'
-    pub const YI_SYLLABLE_GGOP: char = 'ꈥ';
-    /// \u{a226}: 'ꈦ'
-    pub const YI_SYLLABLE_GGET: char = 'ꈦ';
-    /// \u{a227}: 'ꈧ'
-    pub const YI_SYLLABLE_GGEX: char = 'ꈧ';
-    /// \u{a228}: 'ꈨ'
-    pub const YI_SYLLABLE_GGE: char = 'ꈨ';
-    /// \u{a229}: 'ꈩ'
-    pub const YI_SYLLABLE_GGEP: char = 'ꈩ';
-    /// \u{a22a}: 'ꈪ'
-    pub const YI_SYLLABLE_GGUT: char = 'ꈪ';
-    /// \u{a22b}: 'ꈫ'
-    pub const YI_SYLLABLE_GGUX: char = 'ꈫ';
-    /// \u{a22c}: 'ꈬ'
-    pub const YI_SYLLABLE_GGU: char = 'ꈬ';
-    /// \u{a22d}: 'ꈭ'
-    pub const YI_SYLLABLE_GGUP: char = 'ꈭ';
-    /// \u{a22e}: 'ꈮ'
-    pub const YI_SYLLABLE_GGURX: char = 'ꈮ';
-    /// \u{a22f}: 'ꈯ'
-    pub const YI_SYLLABLE_GGUR: char = 'ꈯ';
-    /// \u{a230}: 'ꈰ'
-    pub const YI_SYLLABLE_MGIEX: char = 'ꈰ';
-    /// \u{a231}: 'ꈱ'
-    pub const YI_SYLLABLE_MGIE: char = 'ꈱ';
-    /// \u{a232}: 'ꈲ'
-    pub const YI_SYLLABLE_MGAT: char = 'ꈲ';
-    /// \u{a233}: 'ꈳ'
-    pub const YI_SYLLABLE_MGAX: char = 'ꈳ';
-    /// \u{a234}: 'ꈴ'
-    pub const YI_SYLLABLE_MGA: char = 'ꈴ';
-    /// \u{a235}: 'ꈵ'
-    pub const YI_SYLLABLE_MGAP: char = 'ꈵ';
-    /// \u{a236}: 'ꈶ'
-    pub const YI_SYLLABLE_MGUOX: char = 'ꈶ';
-    /// \u{a237}: 'ꈷ'
-    pub const YI_SYLLABLE_MGUO: char = 'ꈷ';
-    /// \u{a238}: 'ꈸ'
-    pub const YI_SYLLABLE_MGUOP: char = 'ꈸ';
-    /// \u{a239}: 'ꈹ'
-    pub const YI_SYLLABLE_MGOT: char = 'ꈹ';
-    /// \u{a23a}: 'ꈺ'
-    pub const YI_SYLLABLE_MGOX: char = 'ꈺ';
-    /// \u{a23b}: 'ꈻ'
-    pub const YI_SYLLABLE_MGO: char = 'ꈻ';
-    /// \u{a23c}: 'ꈼ'
-    pub const YI_SYLLABLE_MGOP: char = 'ꈼ';
-    /// \u{a23d}: 'ꈽ'
-    pub const YI_SYLLABLE_MGEX: char = 'ꈽ';
-    /// \u{a23e}: 'ꈾ'
-    pub const YI_SYLLABLE_MGE: char = 'ꈾ';
-    /// \u{a23f}: 'ꈿ'
-    pub const YI_SYLLABLE_MGEP: char = 'ꈿ';
-    /// \u{a240}: 'ꉀ'
-    pub const YI_SYLLABLE_MGUT: char = 'ꉀ';
-    /// \u{a241}: 'ꉁ'
-    pub const YI_SYLLABLE_MGUX: char = 'ꉁ';
-    /// \u{a242}: 'ꉂ'
-    pub const YI_SYLLABLE_MGU: char = 'ꉂ';
-    /// \u{a243}: 'ꉃ'
-    pub const YI_SYLLABLE_MGUP: char = 'ꉃ';
-    /// \u{a244}: 'ꉄ'
-    pub const YI_SYLLABLE_MGURX: char = 'ꉄ';
-    /// \u{a245}: 'ꉅ'
-    pub const YI_SYLLABLE_MGUR: char = 'ꉅ';
-    /// \u{a246}: 'ꉆ'
-    pub const YI_SYLLABLE_HXIT: char = 'ꉆ';
-    /// \u{a247}: 'ꉇ'
-    pub const YI_SYLLABLE_HXIX: char = 'ꉇ';
-    /// \u{a248}: 'ꉈ'
-    pub const YI_SYLLABLE_HXI: char = 'ꉈ';
-    /// \u{a249}: 'ꉉ'
-    pub const YI_SYLLABLE_HXIP: char = 'ꉉ';
-    /// \u{a24a}: 'ꉊ'
-    pub const YI_SYLLABLE_HXIET: char = 'ꉊ';
-    /// \u{a24b}: 'ꉋ'
-    pub const YI_SYLLABLE_HXIEX: char = 'ꉋ';
-    /// \u{a24c}: 'ꉌ'
-    pub const YI_SYLLABLE_HXIE: char = 'ꉌ';
-    /// \u{a24d}: 'ꉍ'
-    pub const YI_SYLLABLE_HXIEP: char = 'ꉍ';
-    /// \u{a24e}: 'ꉎ'
-    pub const YI_SYLLABLE_HXAT: char = 'ꉎ';
-    /// \u{a24f}: 'ꉏ'
-    pub const YI_SYLLABLE_HXAX: char = 'ꉏ';
-    /// \u{a250}: 'ꉐ'
-    pub const YI_SYLLABLE_HXA: char = 'ꉐ';
-    /// \u{a251}: 'ꉑ'
-    pub const YI_SYLLABLE_HXAP: char = 'ꉑ';
-    /// \u{a252}: 'ꉒ'
-    pub const YI_SYLLABLE_HXUOT: char = 'ꉒ';
-    /// \u{a253}: 'ꉓ'
-    pub const YI_SYLLABLE_HXUOX: char = 'ꉓ';
-    /// \u{a254}: 'ꉔ'
-    pub const YI_SYLLABLE_HXUO: char = 'ꉔ';
-    /// \u{a255}: 'ꉕ'
-    pub const YI_SYLLABLE_HXUOP: char = 'ꉕ';
-    /// \u{a256}: 'ꉖ'
-    pub const YI_SYLLABLE_HXOT: char = 'ꉖ';
-    /// \u{a257}: 'ꉗ'
-    pub const YI_SYLLABLE_HXOX: char = 'ꉗ';
-    /// \u{a258}: 'ꉘ'
-    pub const YI_SYLLABLE_HXO: char = 'ꉘ';
-    /// \u{a259}: 'ꉙ'
-    pub const YI_SYLLABLE_HXOP: char = 'ꉙ';
-    /// \u{a25a}: 'ꉚ'
-    pub const YI_SYLLABLE_HXEX: char = 'ꉚ';
-    /// \u{a25b}: 'ꉛ'
-    pub const YI_SYLLABLE_HXE: char = 'ꉛ';
-    /// \u{a25c}: 'ꉜ'
-    pub const YI_SYLLABLE_HXEP: char = 'ꉜ';
-    /// \u{a25d}: 'ꉝ'
-    pub const YI_SYLLABLE_NGIEX: char = 'ꉝ';
-    /// \u{a25e}: 'ꉞ'
-    pub const YI_SYLLABLE_NGIE: char = 'ꉞ';
-    /// \u{a25f}: 'ꉟ'
-    pub const YI_SYLLABLE_NGIEP: char = 'ꉟ';
-    /// \u{a260}: 'ꉠ'
-    pub const YI_SYLLABLE_NGAT: char = 'ꉠ';
-    /// \u{a261}: 'ꉡ'
-    pub const YI_SYLLABLE_NGAX: char = 'ꉡ';
-    /// \u{a262}: 'ꉢ'
-    pub const YI_SYLLABLE_NGA: char = 'ꉢ';
-    /// \u{a263}: 'ꉣ'
-    pub const YI_SYLLABLE_NGAP: char = 'ꉣ';
-    /// \u{a264}: 'ꉤ'
-    pub const YI_SYLLABLE_NGUOT: char = 'ꉤ';
-    /// \u{a265}: 'ꉥ'
-    pub const YI_SYLLABLE_NGUOX: char = 'ꉥ';
-    /// \u{a266}: 'ꉦ'
-    pub const YI_SYLLABLE_NGUO: char = 'ꉦ';
-    /// \u{a267}: 'ꉧ'
-    pub const YI_SYLLABLE_NGOT: char = 'ꉧ';
-    /// \u{a268}: 'ꉨ'
-    pub const YI_SYLLABLE_NGOX: char = 'ꉨ';
-    /// \u{a269}: 'ꉩ'
-    pub const YI_SYLLABLE_NGO: char = 'ꉩ';
-    /// \u{a26a}: 'ꉪ'
-    pub const YI_SYLLABLE_NGOP: char = 'ꉪ';
-    /// \u{a26b}: 'ꉫ'
-    pub const YI_SYLLABLE_NGEX: char = 'ꉫ';
-    /// \u{a26c}: 'ꉬ'
-    pub const YI_SYLLABLE_NGE: char = 'ꉬ';
-    /// \u{a26d}: 'ꉭ'
-    pub const YI_SYLLABLE_NGEP: char = 'ꉭ';
-    /// \u{a26e}: 'ꉮ'
-    pub const YI_SYLLABLE_HIT: char = 'ꉮ';
-    /// \u{a26f}: 'ꉯ'
-    pub const YI_SYLLABLE_HIEX: char = 'ꉯ';
-    /// \u{a270}: 'ꉰ'
-    pub const YI_SYLLABLE_HIE: char = 'ꉰ';
-    /// \u{a271}: 'ꉱ'
-    pub const YI_SYLLABLE_HAT: char = 'ꉱ';
-    /// \u{a272}: 'ꉲ'
-    pub const YI_SYLLABLE_HAX: char = 'ꉲ';
-    /// \u{a273}: 'ꉳ'
-    pub const YI_SYLLABLE_HA: char = 'ꉳ';
-    /// \u{a274}: 'ꉴ'
-    pub const YI_SYLLABLE_HAP: char = 'ꉴ';
-    /// \u{a275}: 'ꉵ'
-    pub const YI_SYLLABLE_HUOT: char = 'ꉵ';
-    /// \u{a276}: 'ꉶ'
-    pub const YI_SYLLABLE_HUOX: char = 'ꉶ';
-    /// \u{a277}: 'ꉷ'
-    pub const YI_SYLLABLE_HUO: char = 'ꉷ';
-    /// \u{a278}: 'ꉸ'
-    pub const YI_SYLLABLE_HUOP: char = 'ꉸ';
-    /// \u{a279}: 'ꉹ'
-    pub const YI_SYLLABLE_HOT: char = 'ꉹ';
-    /// \u{a27a}: 'ꉺ'
-    pub const YI_SYLLABLE_HOX: char = 'ꉺ';
-    /// \u{a27b}: 'ꉻ'
-    pub const YI_SYLLABLE_HO: char = 'ꉻ';
-    /// \u{a27c}: 'ꉼ'
-    pub const YI_SYLLABLE_HOP: char = 'ꉼ';
-    /// \u{a27d}: 'ꉽ'
-    pub const YI_SYLLABLE_HEX: char = 'ꉽ';
-    /// \u{a27e}: 'ꉾ'
-    pub const YI_SYLLABLE_HE: char = 'ꉾ';
-    /// \u{a27f}: 'ꉿ'
-    pub const YI_SYLLABLE_HEP: char = 'ꉿ';
-    /// \u{a280}: 'ꊀ'
-    pub const YI_SYLLABLE_WAT: char = 'ꊀ';
-    /// \u{a281}: 'ꊁ'
-    pub const YI_SYLLABLE_WAX: char = 'ꊁ';
-    /// \u{a282}: 'ꊂ'
-    pub const YI_SYLLABLE_WA: char = 'ꊂ';
-    /// \u{a283}: 'ꊃ'
-    pub const YI_SYLLABLE_WAP: char = 'ꊃ';
-    /// \u{a284}: 'ꊄ'
-    pub const YI_SYLLABLE_WUOX: char = 'ꊄ';
-    /// \u{a285}: 'ꊅ'
-    pub const YI_SYLLABLE_WUO: char = 'ꊅ';
-    /// \u{a286}: 'ꊆ'
-    pub const YI_SYLLABLE_WUOP: char = 'ꊆ';
-    /// \u{a287}: 'ꊇ'
-    pub const YI_SYLLABLE_WOX: char = 'ꊇ';
-    /// \u{a288}: 'ꊈ'
-    pub const YI_SYLLABLE_WO: char = 'ꊈ';
-    /// \u{a289}: 'ꊉ'
-    pub const YI_SYLLABLE_WOP: char = 'ꊉ';
-    /// \u{a28a}: 'ꊊ'
-    pub const YI_SYLLABLE_WEX: char = 'ꊊ';
-    /// \u{a28b}: 'ꊋ'
-    pub const YI_SYLLABLE_WE: char = 'ꊋ';
-    /// \u{a28c}: 'ꊌ'
-    pub const YI_SYLLABLE_WEP: char = 'ꊌ';
-    /// \u{a28d}: 'ꊍ'
-    pub const YI_SYLLABLE_ZIT: char = 'ꊍ';
-    /// \u{a28e}: 'ꊎ'
-    pub const YI_SYLLABLE_ZIX: char = 'ꊎ';
-    /// \u{a28f}: 'ꊏ'
-    pub const YI_SYLLABLE_ZI: char = 'ꊏ';
-    /// \u{a290}: 'ꊐ'
-    pub const YI_SYLLABLE_ZIP: char = 'ꊐ';
-    /// \u{a291}: 'ꊑ'
-    pub const YI_SYLLABLE_ZIEX: char = 'ꊑ';
-    /// \u{a292}: 'ꊒ'
-    pub const YI_SYLLABLE_ZIE: char = 'ꊒ';
-    /// \u{a293}: 'ꊓ'
-    pub const YI_SYLLABLE_ZIEP: char = 'ꊓ';
-    /// \u{a294}: 'ꊔ'
-    pub const YI_SYLLABLE_ZAT: char = 'ꊔ';
-    /// \u{a295}: 'ꊕ'
-    pub const YI_SYLLABLE_ZAX: char = 'ꊕ';
-    /// \u{a296}: 'ꊖ'
-    pub const YI_SYLLABLE_ZA: char = 'ꊖ';
-    /// \u{a297}: 'ꊗ'
-    pub const YI_SYLLABLE_ZAP: char = 'ꊗ';
-    /// \u{a298}: 'ꊘ'
-    pub const YI_SYLLABLE_ZUOX: char = 'ꊘ';
-    /// \u{a299}: 'ꊙ'
-    pub const YI_SYLLABLE_ZUO: char = 'ꊙ';
-    /// \u{a29a}: 'ꊚ'
-    pub const YI_SYLLABLE_ZUOP: char = 'ꊚ';
-    /// \u{a29b}: 'ꊛ'
-    pub const YI_SYLLABLE_ZOT: char = 'ꊛ';
-    /// \u{a29c}: 'ꊜ'
-    pub const YI_SYLLABLE_ZOX: char = 'ꊜ';
-    /// \u{a29d}: 'ꊝ'
-    pub const YI_SYLLABLE_ZO: char = 'ꊝ';
-    /// \u{a29e}: 'ꊞ'
-    pub const YI_SYLLABLE_ZOP: char = 'ꊞ';
-    /// \u{a29f}: 'ꊟ'
-    pub const YI_SYLLABLE_ZEX: char = 'ꊟ';
-    /// \u{a2a0}: 'ꊠ'
-    pub const YI_SYLLABLE_ZE: char = 'ꊠ';
-    /// \u{a2a1}: 'ꊡ'
-    pub const YI_SYLLABLE_ZEP: char = 'ꊡ';
-    /// \u{a2a2}: 'ꊢ'
-    pub const YI_SYLLABLE_ZUT: char = 'ꊢ';
-    /// \u{a2a3}: 'ꊣ'
-    pub const YI_SYLLABLE_ZUX: char = 'ꊣ';
-    /// \u{a2a4}: 'ꊤ'
-    pub const YI_SYLLABLE_ZU: char = 'ꊤ';
-    /// \u{a2a5}: 'ꊥ'
-    pub const YI_SYLLABLE_ZUP: char = 'ꊥ';
-    /// \u{a2a6}: 'ꊦ'
-    pub const YI_SYLLABLE_ZURX: char = 'ꊦ';
-    /// \u{a2a7}: 'ꊧ'
-    pub const YI_SYLLABLE_ZUR: char = 'ꊧ';
-    /// \u{a2a8}: 'ꊨ'
-    pub const YI_SYLLABLE_ZYT: char = 'ꊨ';
-    /// \u{a2a9}: 'ꊩ'
-    pub const YI_SYLLABLE_ZYX: char = 'ꊩ';
-    /// \u{a2aa}: 'ꊪ'
-    pub const YI_SYLLABLE_ZY: char = 'ꊪ';
-    /// \u{a2ab}: 'ꊫ'
-    pub const YI_SYLLABLE_ZYP: char = 'ꊫ';
-    /// \u{a2ac}: 'ꊬ'
-    pub const YI_SYLLABLE_ZYRX: char = 'ꊬ';
-    /// \u{a2ad}: 'ꊭ'
-    pub const YI_SYLLABLE_ZYR: char = 'ꊭ';
-    /// \u{a2ae}: 'ꊮ'
-    pub const YI_SYLLABLE_CIT: char = 'ꊮ';
-    /// \u{a2af}: 'ꊯ'
-    pub const YI_SYLLABLE_CIX: char = 'ꊯ';
-    /// \u{a2b0}: 'ꊰ'
-    pub const YI_SYLLABLE_CI: char = 'ꊰ';
-    /// \u{a2b1}: 'ꊱ'
-    pub const YI_SYLLABLE_CIP: char = 'ꊱ';
-    /// \u{a2b2}: 'ꊲ'
-    pub const YI_SYLLABLE_CIET: char = 'ꊲ';
-    /// \u{a2b3}: 'ꊳ'
-    pub const YI_SYLLABLE_CIEX: char = 'ꊳ';
-    /// \u{a2b4}: 'ꊴ'
-    pub const YI_SYLLABLE_CIE: char = 'ꊴ';
-    /// \u{a2b5}: 'ꊵ'
-    pub const YI_SYLLABLE_CIEP: char = 'ꊵ';
-    /// \u{a2b6}: 'ꊶ'
-    pub const YI_SYLLABLE_CAT: char = 'ꊶ';
-    /// \u{a2b7}: 'ꊷ'
-    pub const YI_SYLLABLE_CAX: char = 'ꊷ';
-    /// \u{a2b8}: 'ꊸ'
-    pub const YI_SYLLABLE_CA: char = 'ꊸ';
-    /// \u{a2b9}: 'ꊹ'
-    pub const YI_SYLLABLE_CAP: char = 'ꊹ';
-    /// \u{a2ba}: 'ꊺ'
-    pub const YI_SYLLABLE_CUOX: char = 'ꊺ';
-    /// \u{a2bb}: 'ꊻ'
-    pub const YI_SYLLABLE_CUO: char = 'ꊻ';
-    /// \u{a2bc}: 'ꊼ'
-    pub const YI_SYLLABLE_CUOP: char = 'ꊼ';
-    /// \u{a2bd}: 'ꊽ'
-    pub const YI_SYLLABLE_COT: char = 'ꊽ';
-    /// \u{a2be}: 'ꊾ'
-    pub const YI_SYLLABLE_COX: char = 'ꊾ';
-    /// \u{a2bf}: 'ꊿ'
-    pub const YI_SYLLABLE_CO: char = 'ꊿ';
-    /// \u{a2c0}: 'ꋀ'
-    pub const YI_SYLLABLE_COP: char = 'ꋀ';
-    /// \u{a2c1}: 'ꋁ'
-    pub const YI_SYLLABLE_CEX: char = 'ꋁ';
-    /// \u{a2c2}: 'ꋂ'
-    pub const YI_SYLLABLE_CE: char = 'ꋂ';
-    /// \u{a2c3}: 'ꋃ'
-    pub const YI_SYLLABLE_CEP: char = 'ꋃ';
-    /// \u{a2c4}: 'ꋄ'
-    pub const YI_SYLLABLE_CUT: char = 'ꋄ';
-    /// \u{a2c5}: 'ꋅ'
-    pub const YI_SYLLABLE_CUX: char = 'ꋅ';
-    /// \u{a2c6}: 'ꋆ'
-    pub const YI_SYLLABLE_CU: char = 'ꋆ';
-    /// \u{a2c7}: 'ꋇ'
-    pub const YI_SYLLABLE_CUP: char = 'ꋇ';
-    /// \u{a2c8}: 'ꋈ'
-    pub const YI_SYLLABLE_CURX: char = 'ꋈ';
-    /// \u{a2c9}: 'ꋉ'
-    pub const YI_SYLLABLE_CUR: char = 'ꋉ';
-    /// \u{a2ca}: 'ꋊ'
-    pub const YI_SYLLABLE_CYT: char = 'ꋊ';
-    /// \u{a2cb}: 'ꋋ'
-    pub const YI_SYLLABLE_CYX: char = 'ꋋ';
-    /// \u{a2cc}: 'ꋌ'
-    pub const YI_SYLLABLE_CY: char = 'ꋌ';
-    /// \u{a2cd}: 'ꋍ'
-    pub const YI_SYLLABLE_CYP: char = 'ꋍ';
-    /// \u{a2ce}: 'ꋎ'
-    pub const YI_SYLLABLE_CYRX: char = 'ꋎ';
-    /// \u{a2cf}: 'ꋏ'
-    pub const YI_SYLLABLE_CYR: char = 'ꋏ';
-    /// \u{a2d0}: 'ꋐ'
-    pub const YI_SYLLABLE_ZZIT: char = 'ꋐ';
-    /// \u{a2d1}: 'ꋑ'
-    pub const YI_SYLLABLE_ZZIX: char = 'ꋑ';
-    /// \u{a2d2}: 'ꋒ'
-    pub const YI_SYLLABLE_ZZI: char = 'ꋒ';
-    /// \u{a2d3}: 'ꋓ'
-    pub const YI_SYLLABLE_ZZIP: char = 'ꋓ';
-    /// \u{a2d4}: 'ꋔ'
-    pub const YI_SYLLABLE_ZZIET: char = 'ꋔ';
-    /// \u{a2d5}: 'ꋕ'
-    pub const YI_SYLLABLE_ZZIEX: char = 'ꋕ';
-    /// \u{a2d6}: 'ꋖ'
-    pub const YI_SYLLABLE_ZZIE: char = 'ꋖ';
-    /// \u{a2d7}: 'ꋗ'
-    pub const YI_SYLLABLE_ZZIEP: char = 'ꋗ';
-    /// \u{a2d8}: 'ꋘ'
-    pub const YI_SYLLABLE_ZZAT: char = 'ꋘ';
-    /// \u{a2d9}: 'ꋙ'
-    pub const YI_SYLLABLE_ZZAX: char = 'ꋙ';
-    /// \u{a2da}: 'ꋚ'
-    pub const YI_SYLLABLE_ZZA: char = 'ꋚ';
-    /// \u{a2db}: 'ꋛ'
-    pub const YI_SYLLABLE_ZZAP: char = 'ꋛ';
-    /// \u{a2dc}: 'ꋜ'
-    pub const YI_SYLLABLE_ZZOX: char = 'ꋜ';
-    /// \u{a2dd}: 'ꋝ'
-    pub const YI_SYLLABLE_ZZO: char = 'ꋝ';
-    /// \u{a2de}: 'ꋞ'
-    pub const YI_SYLLABLE_ZZOP: char = 'ꋞ';
-    /// \u{a2df}: 'ꋟ'
-    pub const YI_SYLLABLE_ZZEX: char = 'ꋟ';
-    /// \u{a2e0}: 'ꋠ'
-    pub const YI_SYLLABLE_ZZE: char = 'ꋠ';
-    /// \u{a2e1}: 'ꋡ'
-    pub const YI_SYLLABLE_ZZEP: char = 'ꋡ';
-    /// \u{a2e2}: 'ꋢ'
-    pub const YI_SYLLABLE_ZZUX: char = 'ꋢ';
-    /// \u{a2e3}: 'ꋣ'
-    pub const YI_SYLLABLE_ZZU: char = 'ꋣ';
-    /// \u{a2e4}: 'ꋤ'
-    pub const YI_SYLLABLE_ZZUP: char = 'ꋤ';
-    /// \u{a2e5}: 'ꋥ'
-    pub const YI_SYLLABLE_ZZURX: char = 'ꋥ';
-    /// \u{a2e6}: 'ꋦ'
-    pub const YI_SYLLABLE_ZZUR: char = 'ꋦ';
-    /// \u{a2e7}: 'ꋧ'
-    pub const YI_SYLLABLE_ZZYT: char = 'ꋧ';
-    /// \u{a2e8}: 'ꋨ'
-    pub const YI_SYLLABLE_ZZYX: char = 'ꋨ';
-    /// \u{a2e9}: 'ꋩ'
-    pub const YI_SYLLABLE_ZZY: char = 'ꋩ';
-    /// \u{a2ea}: 'ꋪ'
-    pub const YI_SYLLABLE_ZZYP: char = 'ꋪ';
-    /// \u{a2eb}: 'ꋫ'
-    pub const YI_SYLLABLE_ZZYRX: char = 'ꋫ';
-    /// \u{a2ec}: 'ꋬ'
-    pub const YI_SYLLABLE_ZZYR: char = 'ꋬ';
-    /// \u{a2ed}: 'ꋭ'
-    pub const YI_SYLLABLE_NZIT: char = 'ꋭ';
-    /// \u{a2ee}: 'ꋮ'
-    pub const YI_SYLLABLE_NZIX: char = 'ꋮ';
-    /// \u{a2ef}: 'ꋯ'
-    pub const YI_SYLLABLE_NZI: char = 'ꋯ';
-    /// \u{a2f0}: 'ꋰ'
-    pub const YI_SYLLABLE_NZIP: char = 'ꋰ';
-    /// \u{a2f1}: 'ꋱ'
-    pub const YI_SYLLABLE_NZIEX: char = 'ꋱ';
-    /// \u{a2f2}: 'ꋲ'
-    pub const YI_SYLLABLE_NZIE: char = 'ꋲ';
-    /// \u{a2f3}: 'ꋳ'
-    pub const YI_SYLLABLE_NZIEP: char = 'ꋳ';
-    /// \u{a2f4}: 'ꋴ'
-    pub const YI_SYLLABLE_NZAT: char = 'ꋴ';
-    /// \u{a2f5}: 'ꋵ'
-    pub const YI_SYLLABLE_NZAX: char = 'ꋵ';
-    /// \u{a2f6}: 'ꋶ'
-    pub const YI_SYLLABLE_NZA: char = 'ꋶ';
-    /// \u{a2f7}: 'ꋷ'
-    pub const YI_SYLLABLE_NZAP: char = 'ꋷ';
-    /// \u{a2f8}: 'ꋸ'
-    pub const YI_SYLLABLE_NZUOX: char = 'ꋸ';
-    /// \u{a2f9}: 'ꋹ'
-    pub const YI_SYLLABLE_NZUO: char = 'ꋹ';
-    /// \u{a2fa}: 'ꋺ'
-    pub const YI_SYLLABLE_NZOX: char = 'ꋺ';
-    /// \u{a2fb}: 'ꋻ'
-    pub const YI_SYLLABLE_NZOP: char = 'ꋻ';
-    /// \u{a2fc}: 'ꋼ'
-    pub const YI_SYLLABLE_NZEX: char = 'ꋼ';
-    /// \u{a2fd}: 'ꋽ'
-    pub const YI_SYLLABLE_NZE: char = 'ꋽ';
-    /// \u{a2fe}: 'ꋾ'
-    pub const YI_SYLLABLE_NZUX: char = 'ꋾ';
-    /// \u{a2ff}: 'ꋿ'
-    pub const YI_SYLLABLE_NZU: char = 'ꋿ';
-    /// \u{a300}: 'ꌀ'
-    pub const YI_SYLLABLE_NZUP: char = 'ꌀ';
-    /// \u{a301}: 'ꌁ'
-    pub const YI_SYLLABLE_NZURX: char = 'ꌁ';
-    /// \u{a302}: 'ꌂ'
-    pub const YI_SYLLABLE_NZUR: char = 'ꌂ';
-    /// \u{a303}: 'ꌃ'
-    pub const YI_SYLLABLE_NZYT: char = 'ꌃ';
-    /// \u{a304}: 'ꌄ'
-    pub const YI_SYLLABLE_NZYX: char = 'ꌄ';
-    /// \u{a305}: 'ꌅ'
-    pub const YI_SYLLABLE_NZY: char = 'ꌅ';
-    /// \u{a306}: 'ꌆ'
-    pub const YI_SYLLABLE_NZYP: char = 'ꌆ';
-    /// \u{a307}: 'ꌇ'
-    pub const YI_SYLLABLE_NZYRX: char = 'ꌇ';
-    /// \u{a308}: 'ꌈ'
-    pub const YI_SYLLABLE_NZYR: char = 'ꌈ';
-    /// \u{a309}: 'ꌉ'
-    pub const YI_SYLLABLE_SIT: char = 'ꌉ';
-    /// \u{a30a}: 'ꌊ'
-    pub const YI_SYLLABLE_SIX: char = 'ꌊ';
-    /// \u{a30b}: 'ꌋ'
-    pub const YI_SYLLABLE_SI: char = 'ꌋ';
-    /// \u{a30c}: 'ꌌ'
-    pub const YI_SYLLABLE_SIP: char = 'ꌌ';
-    /// \u{a30d}: 'ꌍ'
-    pub const YI_SYLLABLE_SIEX: char = 'ꌍ';
-    /// \u{a30e}: 'ꌎ'
-    pub const YI_SYLLABLE_SIE: char = 'ꌎ';
-    /// \u{a30f}: 'ꌏ'
-    pub const YI_SYLLABLE_SIEP: char = 'ꌏ';
-    /// \u{a310}: 'ꌐ'
-    pub const YI_SYLLABLE_SAT: char = 'ꌐ';
-    /// \u{a311}: 'ꌑ'
-    pub const YI_SYLLABLE_SAX: char = 'ꌑ';
-    /// \u{a312}: 'ꌒ'
-    pub const YI_SYLLABLE_SA: char = 'ꌒ';
-    /// \u{a313}: 'ꌓ'
-    pub const YI_SYLLABLE_SAP: char = 'ꌓ';
-    /// \u{a314}: 'ꌔ'
-    pub const YI_SYLLABLE_SUOX: char = 'ꌔ';
-    /// \u{a315}: 'ꌕ'
-    pub const YI_SYLLABLE_SUO: char = 'ꌕ';
-    /// \u{a316}: 'ꌖ'
-    pub const YI_SYLLABLE_SUOP: char = 'ꌖ';
-    /// \u{a317}: 'ꌗ'
-    pub const YI_SYLLABLE_SOT: char = 'ꌗ';
-    /// \u{a318}: 'ꌘ'
-    pub const YI_SYLLABLE_SOX: char = 'ꌘ';
-    /// \u{a319}: 'ꌙ'
-    pub const YI_SYLLABLE_SO: char = 'ꌙ';
-    /// \u{a31a}: 'ꌚ'
-    pub const YI_SYLLABLE_SOP: char = 'ꌚ';
-    /// \u{a31b}: 'ꌛ'
-    pub const YI_SYLLABLE_SEX: char = 'ꌛ';
-    /// \u{a31c}: 'ꌜ'
-    pub const YI_SYLLABLE_SE: char = 'ꌜ';
-    /// \u{a31d}: 'ꌝ'
-    pub const YI_SYLLABLE_SEP: char = 'ꌝ';
-    /// \u{a31e}: 'ꌞ'
-    pub const YI_SYLLABLE_SUT: char = 'ꌞ';
-    /// \u{a31f}: 'ꌟ'
-    pub const YI_SYLLABLE_SUX: char = 'ꌟ';
-    /// \u{a320}: 'ꌠ'
-    pub const YI_SYLLABLE_SU: char = 'ꌠ';
-    /// \u{a321}: 'ꌡ'
-    pub const YI_SYLLABLE_SUP: char = 'ꌡ';
-    /// \u{a322}: 'ꌢ'
-    pub const YI_SYLLABLE_SURX: char = 'ꌢ';
-    /// \u{a323}: 'ꌣ'
-    pub const YI_SYLLABLE_SUR: char = 'ꌣ';
-    /// \u{a324}: 'ꌤ'
-    pub const YI_SYLLABLE_SYT: char = 'ꌤ';
-    /// \u{a325}: 'ꌥ'
-    pub const YI_SYLLABLE_SYX: char = 'ꌥ';
-    /// \u{a326}: 'ꌦ'
-    pub const YI_SYLLABLE_SY: char = 'ꌦ';
-    /// \u{a327}: 'ꌧ'
-    pub const YI_SYLLABLE_SYP: char = 'ꌧ';
-    /// \u{a328}: 'ꌨ'
-    pub const YI_SYLLABLE_SYRX: char = 'ꌨ';
-    /// \u{a329}: 'ꌩ'
-    pub const YI_SYLLABLE_SYR: char = 'ꌩ';
-    /// \u{a32a}: 'ꌪ'
-    pub const YI_SYLLABLE_SSIT: char = 'ꌪ';
-    /// \u{a32b}: 'ꌫ'
-    pub const YI_SYLLABLE_SSIX: char = 'ꌫ';
-    /// \u{a32c}: 'ꌬ'
-    pub const YI_SYLLABLE_SSI: char = 'ꌬ';
-    /// \u{a32d}: 'ꌭ'
-    pub const YI_SYLLABLE_SSIP: char = 'ꌭ';
-    /// \u{a32e}: 'ꌮ'
-    pub const YI_SYLLABLE_SSIEX: char = 'ꌮ';
-    /// \u{a32f}: 'ꌯ'
-    pub const YI_SYLLABLE_SSIE: char = 'ꌯ';
-    /// \u{a330}: 'ꌰ'
-    pub const YI_SYLLABLE_SSIEP: char = 'ꌰ';
-    /// \u{a331}: 'ꌱ'
-    pub const YI_SYLLABLE_SSAT: char = 'ꌱ';
-    /// \u{a332}: 'ꌲ'
-    pub const YI_SYLLABLE_SSAX: char = 'ꌲ';
-    /// \u{a333}: 'ꌳ'
-    pub const YI_SYLLABLE_SSA: char = 'ꌳ';
-    /// \u{a334}: 'ꌴ'
-    pub const YI_SYLLABLE_SSAP: char = 'ꌴ';
-    /// \u{a335}: 'ꌵ'
-    pub const YI_SYLLABLE_SSOT: char = 'ꌵ';
-    /// \u{a336}: 'ꌶ'
-    pub const YI_SYLLABLE_SSOX: char = 'ꌶ';
-    /// \u{a337}: 'ꌷ'
-    pub const YI_SYLLABLE_SSO: char = 'ꌷ';
-    /// \u{a338}: 'ꌸ'
-    pub const YI_SYLLABLE_SSOP: char = 'ꌸ';
-    /// \u{a339}: 'ꌹ'
-    pub const YI_SYLLABLE_SSEX: char = 'ꌹ';
-    /// \u{a33a}: 'ꌺ'
-    pub const YI_SYLLABLE_SSE: char = 'ꌺ';
-    /// \u{a33b}: 'ꌻ'
-    pub const YI_SYLLABLE_SSEP: char = 'ꌻ';
-    /// \u{a33c}: 'ꌼ'
-    pub const YI_SYLLABLE_SSUT: char = 'ꌼ';
-    /// \u{a33d}: 'ꌽ'
-    pub const YI_SYLLABLE_SSUX: char = 'ꌽ';
-    /// \u{a33e}: 'ꌾ'
-    pub const YI_SYLLABLE_SSU: char = 'ꌾ';
-    /// \u{a33f}: 'ꌿ'
-    pub const YI_SYLLABLE_SSUP: char = 'ꌿ';
-    /// \u{a340}: 'ꍀ'
-    pub const YI_SYLLABLE_SSYT: char = 'ꍀ';
-    /// \u{a341}: 'ꍁ'
-    pub const YI_SYLLABLE_SSYX: char = 'ꍁ';
-    /// \u{a342}: 'ꍂ'
-    pub const YI_SYLLABLE_SSY: char = 'ꍂ';
-    /// \u{a343}: 'ꍃ'
-    pub const YI_SYLLABLE_SSYP: char = 'ꍃ';
-    /// \u{a344}: 'ꍄ'
-    pub const YI_SYLLABLE_SSYRX: char = 'ꍄ';
-    /// \u{a345}: 'ꍅ'
-    pub const YI_SYLLABLE_SSYR: char = 'ꍅ';
-    /// \u{a346}: 'ꍆ'
-    pub const YI_SYLLABLE_ZHAT: char = 'ꍆ';
-    /// \u{a347}: 'ꍇ'
-    pub const YI_SYLLABLE_ZHAX: char = 'ꍇ';
-    /// \u{a348}: 'ꍈ'
-    pub const YI_SYLLABLE_ZHA: char = 'ꍈ';
-    /// \u{a349}: 'ꍉ'
-    pub const YI_SYLLABLE_ZHAP: char = 'ꍉ';
-    /// \u{a34a}: 'ꍊ'
-    pub const YI_SYLLABLE_ZHUOX: char = 'ꍊ';
-    /// \u{a34b}: 'ꍋ'
-    pub const YI_SYLLABLE_ZHUO: char = 'ꍋ';
-    /// \u{a34c}: 'ꍌ'
-    pub const YI_SYLLABLE_ZHUOP: char = 'ꍌ';
-    /// \u{a34d}: 'ꍍ'
-    pub const YI_SYLLABLE_ZHOT: char = 'ꍍ';
-    /// \u{a34e}: 'ꍎ'
-    pub const YI_SYLLABLE_ZHOX: char = 'ꍎ';
-    /// \u{a34f}: 'ꍏ'
-    pub const YI_SYLLABLE_ZHO: char = 'ꍏ';
-    /// \u{a350}: 'ꍐ'
-    pub const YI_SYLLABLE_ZHOP: char = 'ꍐ';
-    /// \u{a351}: 'ꍑ'
-    pub const YI_SYLLABLE_ZHET: char = 'ꍑ';
-    /// \u{a352}: 'ꍒ'
-    pub const YI_SYLLABLE_ZHEX: char = 'ꍒ';
-    /// \u{a353}: 'ꍓ'
-    pub const YI_SYLLABLE_ZHE: char = 'ꍓ';
-    /// \u{a354}: 'ꍔ'
-    pub const YI_SYLLABLE_ZHEP: char = 'ꍔ';
-    /// \u{a355}: 'ꍕ'
-    pub const YI_SYLLABLE_ZHUT: char = 'ꍕ';
-    /// \u{a356}: 'ꍖ'
-    pub const YI_SYLLABLE_ZHUX: char = 'ꍖ';
-    /// \u{a357}: 'ꍗ'
-    pub const YI_SYLLABLE_ZHU: char = 'ꍗ';
-    /// \u{a358}: 'ꍘ'
-    pub const YI_SYLLABLE_ZHUP: char = 'ꍘ';
-    /// \u{a359}: 'ꍙ'
-    pub const YI_SYLLABLE_ZHURX: char = 'ꍙ';
-    /// \u{a35a}: 'ꍚ'
-    pub const YI_SYLLABLE_ZHUR: char = 'ꍚ';
-    /// \u{a35b}: 'ꍛ'
-    pub const YI_SYLLABLE_ZHYT: char = 'ꍛ';
-    /// \u{a35c}: 'ꍜ'
-    pub const YI_SYLLABLE_ZHYX: char = 'ꍜ';
-    /// \u{a35d}: 'ꍝ'
-    pub const YI_SYLLABLE_ZHY: char = 'ꍝ';
-    /// \u{a35e}: 'ꍞ'
-    pub const YI_SYLLABLE_ZHYP: char = 'ꍞ';
-    /// \u{a35f}: 'ꍟ'
-    pub const YI_SYLLABLE_ZHYRX: char = 'ꍟ';
-    /// \u{a360}: 'ꍠ'
-    pub const YI_SYLLABLE_ZHYR: char = 'ꍠ';
-    /// \u{a361}: 'ꍡ'
-    pub const YI_SYLLABLE_CHAT: char = 'ꍡ';
-    /// \u{a362}: 'ꍢ'
-    pub const YI_SYLLABLE_CHAX: char = 'ꍢ';
-    /// \u{a363}: 'ꍣ'
-    pub const YI_SYLLABLE_CHA: char = 'ꍣ';
-    /// \u{a364}: 'ꍤ'
-    pub const YI_SYLLABLE_CHAP: char = 'ꍤ';
-    /// \u{a365}: 'ꍥ'
-    pub const YI_SYLLABLE_CHUOT: char = 'ꍥ';
-    /// \u{a366}: 'ꍦ'
-    pub const YI_SYLLABLE_CHUOX: char = 'ꍦ';
-    /// \u{a367}: 'ꍧ'
-    pub const YI_SYLLABLE_CHUO: char = 'ꍧ';
-    /// \u{a368}: 'ꍨ'
-    pub const YI_SYLLABLE_CHUOP: char = 'ꍨ';
-    /// \u{a369}: 'ꍩ'
-    pub const YI_SYLLABLE_CHOT: char = 'ꍩ';
-    /// \u{a36a}: 'ꍪ'
-    pub const YI_SYLLABLE_CHOX: char = 'ꍪ';
-    /// \u{a36b}: 'ꍫ'
-    pub const YI_SYLLABLE_CHO: char = 'ꍫ';
-    /// \u{a36c}: 'ꍬ'
-    pub const YI_SYLLABLE_CHOP: char = 'ꍬ';
-    /// \u{a36d}: 'ꍭ'
-    pub const YI_SYLLABLE_CHET: char = 'ꍭ';
-    /// \u{a36e}: 'ꍮ'
-    pub const YI_SYLLABLE_CHEX: char = 'ꍮ';
-    /// \u{a36f}: 'ꍯ'
-    pub const YI_SYLLABLE_CHE: char = 'ꍯ';
-    /// \u{a370}: 'ꍰ'
-    pub const YI_SYLLABLE_CHEP: char = 'ꍰ';
-    /// \u{a371}: 'ꍱ'
-    pub const YI_SYLLABLE_CHUX: char = 'ꍱ';
-    /// \u{a372}: 'ꍲ'
-    pub const YI_SYLLABLE_CHU: char = 'ꍲ';
-    /// \u{a373}: 'ꍳ'
-    pub const YI_SYLLABLE_CHUP: char = 'ꍳ';
-    /// \u{a374}: 'ꍴ'
-    pub const YI_SYLLABLE_CHURX: char = 'ꍴ';
-    /// \u{a375}: 'ꍵ'
-    pub const YI_SYLLABLE_CHUR: char = 'ꍵ';
-    /// \u{a376}: 'ꍶ'
-    pub const YI_SYLLABLE_CHYT: char = 'ꍶ';
-    /// \u{a377}: 'ꍷ'
-    pub const YI_SYLLABLE_CHYX: char = 'ꍷ';
-    /// \u{a378}: 'ꍸ'
-    pub const YI_SYLLABLE_CHY: char = 'ꍸ';
-    /// \u{a379}: 'ꍹ'
-    pub const YI_SYLLABLE_CHYP: char = 'ꍹ';
-    /// \u{a37a}: 'ꍺ'
-    pub const YI_SYLLABLE_CHYRX: char = 'ꍺ';
-    /// \u{a37b}: 'ꍻ'
-    pub const YI_SYLLABLE_CHYR: char = 'ꍻ';
-    /// \u{a37c}: 'ꍼ'
-    pub const YI_SYLLABLE_RRAX: char = 'ꍼ';
-    /// \u{a37d}: 'ꍽ'
-    pub const YI_SYLLABLE_RRA: char = 'ꍽ';
-    /// \u{a37e}: 'ꍾ'
-    pub const YI_SYLLABLE_RRUOX: char = 'ꍾ';
-    /// \u{a37f}: 'ꍿ'
-    pub const YI_SYLLABLE_RRUO: char = 'ꍿ';
-    /// \u{a380}: 'ꎀ'
-    pub const YI_SYLLABLE_RROT: char = 'ꎀ';
-    /// \u{a381}: 'ꎁ'
-    pub const YI_SYLLABLE_RROX: char = 'ꎁ';
-    /// \u{a382}: 'ꎂ'
-    pub const YI_SYLLABLE_RRO: char = 'ꎂ';
-    /// \u{a383}: 'ꎃ'
-    pub const YI_SYLLABLE_RROP: char = 'ꎃ';
-    /// \u{a384}: 'ꎄ'
-    pub const YI_SYLLABLE_RRET: char = 'ꎄ';
-    /// \u{a385}: 'ꎅ'
-    pub const YI_SYLLABLE_RREX: char = 'ꎅ';
-    /// \u{a386}: 'ꎆ'
-    pub const YI_SYLLABLE_RRE: char = 'ꎆ';
-    /// \u{a387}: 'ꎇ'
-    pub const YI_SYLLABLE_RREP: char = 'ꎇ';
-    /// \u{a388}: 'ꎈ'
-    pub const YI_SYLLABLE_RRUT: char = 'ꎈ';
-    /// \u{a389}: 'ꎉ'
-    pub const YI_SYLLABLE_RRUX: char = 'ꎉ';
-    /// \u{a38a}: 'ꎊ'
-    pub const YI_SYLLABLE_RRU: char = 'ꎊ';
-    /// \u{a38b}: 'ꎋ'
-    pub const YI_SYLLABLE_RRUP: char = 'ꎋ';
-    /// \u{a38c}: 'ꎌ'
-    pub const YI_SYLLABLE_RRURX: char = 'ꎌ';
-    /// \u{a38d}: 'ꎍ'
-    pub const YI_SYLLABLE_RRUR: char = 'ꎍ';
-    /// \u{a38e}: 'ꎎ'
-    pub const YI_SYLLABLE_RRYT: char = 'ꎎ';
-    /// \u{a38f}: 'ꎏ'
-    pub const YI_SYLLABLE_RRYX: char = 'ꎏ';
-    /// \u{a390}: 'ꎐ'
-    pub const YI_SYLLABLE_RRY: char = 'ꎐ';
-    /// \u{a391}: 'ꎑ'
-    pub const YI_SYLLABLE_RRYP: char = 'ꎑ';
-    /// \u{a392}: 'ꎒ'
-    pub const YI_SYLLABLE_RRYRX: char = 'ꎒ';
-    /// \u{a393}: 'ꎓ'
-    pub const YI_SYLLABLE_RRYR: char = 'ꎓ';
-    /// \u{a394}: 'ꎔ'
-    pub const YI_SYLLABLE_NRAT: char = 'ꎔ';
-    /// \u{a395}: 'ꎕ'
-    pub const YI_SYLLABLE_NRAX: char = 'ꎕ';
-    /// \u{a396}: 'ꎖ'
-    pub const YI_SYLLABLE_NRA: char = 'ꎖ';
-    /// \u{a397}: 'ꎗ'
-    pub const YI_SYLLABLE_NRAP: char = 'ꎗ';
-    /// \u{a398}: 'ꎘ'
-    pub const YI_SYLLABLE_NROX: char = 'ꎘ';
-    /// \u{a399}: 'ꎙ'
-    pub const YI_SYLLABLE_NRO: char = 'ꎙ';
-    /// \u{a39a}: 'ꎚ'
-    pub const YI_SYLLABLE_NROP: char = 'ꎚ';
-    /// \u{a39b}: 'ꎛ'
-    pub const YI_SYLLABLE_NRET: char = 'ꎛ';
-    /// \u{a39c}: 'ꎜ'
-    pub const YI_SYLLABLE_NREX: char = 'ꎜ';
-    /// \u{a39d}: 'ꎝ'
-    pub const YI_SYLLABLE_NRE: char = 'ꎝ';
-    /// \u{a39e}: 'ꎞ'
-    pub const YI_SYLLABLE_NREP: char = 'ꎞ';
-    /// \u{a39f}: 'ꎟ'
-    pub const YI_SYLLABLE_NRUT: char = 'ꎟ';
-    /// \u{a3a0}: 'ꎠ'
-    pub const YI_SYLLABLE_NRUX: char = 'ꎠ';
-    /// \u{a3a1}: 'ꎡ'
-    pub const YI_SYLLABLE_NRU: char = 'ꎡ';
-    /// \u{a3a2}: 'ꎢ'
-    pub const YI_SYLLABLE_NRUP: char = 'ꎢ';
-    /// \u{a3a3}: 'ꎣ'
-    pub const YI_SYLLABLE_NRURX: char = 'ꎣ';
-    /// \u{a3a4}: 'ꎤ'
-    pub const YI_SYLLABLE_NRUR: char = 'ꎤ';
-    /// \u{a3a5}: 'ꎥ'
-    pub const YI_SYLLABLE_NRYT: char = 'ꎥ';
-    /// \u{a3a6}: 'ꎦ'
-    pub const YI_SYLLABLE_NRYX: char = 'ꎦ';
-    /// \u{a3a7}: 'ꎧ'
-    pub const YI_SYLLABLE_NRY: char = 'ꎧ';
-    /// \u{a3a8}: 'ꎨ'
-    pub const YI_SYLLABLE_NRYP: char = 'ꎨ';
-    /// \u{a3a9}: 'ꎩ'
-    pub const YI_SYLLABLE_NRYRX: char = 'ꎩ';
-    /// \u{a3aa}: 'ꎪ'
-    pub const YI_SYLLABLE_NRYR: char = 'ꎪ';
-    /// \u{a3ab}: 'ꎫ'
-    pub const YI_SYLLABLE_SHAT: char = 'ꎫ';
-    /// \u{a3ac}: 'ꎬ'
-    pub const YI_SYLLABLE_SHAX: char = 'ꎬ';
-    /// \u{a3ad}: 'ꎭ'
-    pub const YI_SYLLABLE_SHA: char = 'ꎭ';
-    /// \u{a3ae}: 'ꎮ'
-    pub const YI_SYLLABLE_SHAP: char = 'ꎮ';
-    /// \u{a3af}: 'ꎯ'
-    pub const YI_SYLLABLE_SHUOX: char = 'ꎯ';
-    /// \u{a3b0}: 'ꎰ'
-    pub const YI_SYLLABLE_SHUO: char = 'ꎰ';
-    /// \u{a3b1}: 'ꎱ'
-    pub const YI_SYLLABLE_SHUOP: char = 'ꎱ';
-    /// \u{a3b2}: 'ꎲ'
-    pub const YI_SYLLABLE_SHOT: char = 'ꎲ';
-    /// \u{a3b3}: 'ꎳ'
-    pub const YI_SYLLABLE_SHOX: char = 'ꎳ';
-    /// \u{a3b4}: 'ꎴ'
-    pub const YI_SYLLABLE_SHO: char = 'ꎴ';
-    /// \u{a3b5}: 'ꎵ'
-    pub const YI_SYLLABLE_SHOP: char = 'ꎵ';
-    /// \u{a3b6}: 'ꎶ'
-    pub const YI_SYLLABLE_SHET: char = 'ꎶ';
-    /// \u{a3b7}: 'ꎷ'
-    pub const YI_SYLLABLE_SHEX: char = 'ꎷ';
-    /// \u{a3b8}: 'ꎸ'
-    pub const YI_SYLLABLE_SHE: char = 'ꎸ';
-    /// \u{a3b9}: 'ꎹ'
-    pub const YI_SYLLABLE_SHEP: char = 'ꎹ';
-    /// \u{a3ba}: 'ꎺ'
-    pub const YI_SYLLABLE_SHUT: char = 'ꎺ';
-    /// \u{a3bb}: 'ꎻ'
-    pub const YI_SYLLABLE_SHUX: char = 'ꎻ';
-    /// \u{a3bc}: 'ꎼ'
-    pub const YI_SYLLABLE_SHU: char = 'ꎼ';
-    /// \u{a3bd}: 'ꎽ'
-    pub const YI_SYLLABLE_SHUP: char = 'ꎽ';
-    /// \u{a3be}: 'ꎾ'
-    pub const YI_SYLLABLE_SHURX: char = 'ꎾ';
-    /// \u{a3bf}: 'ꎿ'
-    pub const YI_SYLLABLE_SHUR: char = 'ꎿ';
-    /// \u{a3c0}: 'ꏀ'
-    pub const YI_SYLLABLE_SHYT: char = 'ꏀ';
-    /// \u{a3c1}: 'ꏁ'
-    pub const YI_SYLLABLE_SHYX: char = 'ꏁ';
-    /// \u{a3c2}: 'ꏂ'
-    pub const YI_SYLLABLE_SHY: char = 'ꏂ';
-    /// \u{a3c3}: 'ꏃ'
-    pub const YI_SYLLABLE_SHYP: char = 'ꏃ';
-    /// \u{a3c4}: 'ꏄ'
-    pub const YI_SYLLABLE_SHYRX: char = 'ꏄ';
-    /// \u{a3c5}: 'ꏅ'
-    pub const YI_SYLLABLE_SHYR: char = 'ꏅ';
-    /// \u{a3c6}: 'ꏆ'
-    pub const YI_SYLLABLE_RAT: char = 'ꏆ';
-    /// \u{a3c7}: 'ꏇ'
-    pub const YI_SYLLABLE_RAX: char = 'ꏇ';
-    /// \u{a3c8}: 'ꏈ'
-    pub const YI_SYLLABLE_RA: char = 'ꏈ';
-    /// \u{a3c9}: 'ꏉ'
-    pub const YI_SYLLABLE_RAP: char = 'ꏉ';
-    /// \u{a3ca}: 'ꏊ'
-    pub const YI_SYLLABLE_RUOX: char = 'ꏊ';
-    /// \u{a3cb}: 'ꏋ'
-    pub const YI_SYLLABLE_RUO: char = 'ꏋ';
-    /// \u{a3cc}: 'ꏌ'
-    pub const YI_SYLLABLE_RUOP: char = 'ꏌ';
-    /// \u{a3cd}: 'ꏍ'
-    pub const YI_SYLLABLE_ROT: char = 'ꏍ';
-    /// \u{a3ce}: 'ꏎ'
-    pub const YI_SYLLABLE_ROX: char = 'ꏎ';
-    /// \u{a3cf}: 'ꏏ'
-    pub const YI_SYLLABLE_RO: char = 'ꏏ';
-    /// \u{a3d0}: 'ꏐ'
-    pub const YI_SYLLABLE_ROP: char = 'ꏐ';
-    /// \u{a3d1}: 'ꏑ'
-    pub const YI_SYLLABLE_REX: char = 'ꏑ';
-    /// \u{a3d2}: 'ꏒ'
-    pub const YI_SYLLABLE_RE: char = 'ꏒ';
-    /// \u{a3d3}: 'ꏓ'
-    pub const YI_SYLLABLE_REP: char = 'ꏓ';
-    /// \u{a3d4}: 'ꏔ'
-    pub const YI_SYLLABLE_RUT: char = 'ꏔ';
-    /// \u{a3d5}: 'ꏕ'
-    pub const YI_SYLLABLE_RUX: char = 'ꏕ';
-    /// \u{a3d6}: 'ꏖ'
-    pub const YI_SYLLABLE_RU: char = 'ꏖ';
-    /// \u{a3d7}: 'ꏗ'
-    pub const YI_SYLLABLE_RUP: char = 'ꏗ';
-    /// \u{a3d8}: 'ꏘ'
-    pub const YI_SYLLABLE_RURX: char = 'ꏘ';
-    /// \u{a3d9}: 'ꏙ'
-    pub const YI_SYLLABLE_RUR: char = 'ꏙ';
-    /// \u{a3da}: 'ꏚ'
-    pub const YI_SYLLABLE_RYT: char = 'ꏚ';
-    /// \u{a3db}: 'ꏛ'
-    pub const YI_SYLLABLE_RYX: char = 'ꏛ';
-    /// \u{a3dc}: 'ꏜ'
-    pub const YI_SYLLABLE_RY: char = 'ꏜ';
-    /// \u{a3dd}: 'ꏝ'
-    pub const YI_SYLLABLE_RYP: char = 'ꏝ';
-    /// \u{a3de}: 'ꏞ'
-    pub const YI_SYLLABLE_RYRX: char = 'ꏞ';
-    /// \u{a3df}: 'ꏟ'
-    pub const YI_SYLLABLE_RYR: char = 'ꏟ';
-    /// \u{a3e0}: 'ꏠ'
-    pub const YI_SYLLABLE_JIT: char = 'ꏠ';
-    /// \u{a3e1}: 'ꏡ'
-    pub const YI_SYLLABLE_JIX: char = 'ꏡ';
-    /// \u{a3e2}: 'ꏢ'
-    pub const YI_SYLLABLE_JI: char = 'ꏢ';
-    /// \u{a3e3}: 'ꏣ'
-    pub const YI_SYLLABLE_JIP: char = 'ꏣ';
-    /// \u{a3e4}: 'ꏤ'
-    pub const YI_SYLLABLE_JIET: char = 'ꏤ';
-    /// \u{a3e5}: 'ꏥ'
-    pub const YI_SYLLABLE_JIEX: char = 'ꏥ';
-    /// \u{a3e6}: 'ꏦ'
-    pub const YI_SYLLABLE_JIE: char = 'ꏦ';
-    /// \u{a3e7}: 'ꏧ'
-    pub const YI_SYLLABLE_JIEP: char = 'ꏧ';
-    /// \u{a3e8}: 'ꏨ'
-    pub const YI_SYLLABLE_JUOT: char = 'ꏨ';
-    /// \u{a3e9}: 'ꏩ'
-    pub const YI_SYLLABLE_JUOX: char = 'ꏩ';
-    /// \u{a3ea}: 'ꏪ'
-    pub const YI_SYLLABLE_JUO: char = 'ꏪ';
-    /// \u{a3eb}: 'ꏫ'
-    pub const YI_SYLLABLE_JUOP: char = 'ꏫ';
-    /// \u{a3ec}: 'ꏬ'
-    pub const YI_SYLLABLE_JOT: char = 'ꏬ';
-    /// \u{a3ed}: 'ꏭ'
-    pub const YI_SYLLABLE_JOX: char = 'ꏭ';
-    /// \u{a3ee}: 'ꏮ'
-    pub const YI_SYLLABLE_JO: char = 'ꏮ';
-    /// \u{a3ef}: 'ꏯ'
-    pub const YI_SYLLABLE_JOP: char = 'ꏯ';
-    /// \u{a3f0}: 'ꏰ'
-    pub const YI_SYLLABLE_JUT: char = 'ꏰ';
-    /// \u{a3f1}: 'ꏱ'
-    pub const YI_SYLLABLE_JUX: char = 'ꏱ';
-    /// \u{a3f2}: 'ꏲ'
-    pub const YI_SYLLABLE_JU: char = 'ꏲ';
-    /// \u{a3f3}: 'ꏳ'
-    pub const YI_SYLLABLE_JUP: char = 'ꏳ';
-    /// \u{a3f4}: 'ꏴ'
-    pub const YI_SYLLABLE_JURX: char = 'ꏴ';
-    /// \u{a3f5}: 'ꏵ'
-    pub const YI_SYLLABLE_JUR: char = 'ꏵ';
-    /// \u{a3f6}: 'ꏶ'
-    pub const YI_SYLLABLE_JYT: char = 'ꏶ';
-    /// \u{a3f7}: 'ꏷ'
-    pub const YI_SYLLABLE_JYX: char = 'ꏷ';
-    /// \u{a3f8}: 'ꏸ'
-    pub const YI_SYLLABLE_JY: char = 'ꏸ';
-    /// \u{a3f9}: 'ꏹ'
-    pub const YI_SYLLABLE_JYP: char = 'ꏹ';
-    /// \u{a3fa}: 'ꏺ'
-    pub const YI_SYLLABLE_JYRX: char = 'ꏺ';
-    /// \u{a3fb}: 'ꏻ'
-    pub const YI_SYLLABLE_JYR: char = 'ꏻ';
-    /// \u{a3fc}: 'ꏼ'
-    pub const YI_SYLLABLE_QIT: char = 'ꏼ';
-    /// \u{a3fd}: 'ꏽ'
-    pub const YI_SYLLABLE_QIX: char = 'ꏽ';
-    /// \u{a3fe}: 'ꏾ'
-    pub const YI_SYLLABLE_QI: char = 'ꏾ';
-    /// \u{a3ff}: 'ꏿ'
-    pub const YI_SYLLABLE_QIP: char = 'ꏿ';
-    /// \u{a400}: 'ꐀ'
-    pub const YI_SYLLABLE_QIET: char = 'ꐀ';
-    /// \u{a401}: 'ꐁ'
-    pub const YI_SYLLABLE_QIEX: char = 'ꐁ';
-    /// \u{a402}: 'ꐂ'
-    pub const YI_SYLLABLE_QIE: char = 'ꐂ';
-    /// \u{a403}: 'ꐃ'
-    pub const YI_SYLLABLE_QIEP: char = 'ꐃ';
-    /// \u{a404}: 'ꐄ'
-    pub const YI_SYLLABLE_QUOT: char = 'ꐄ';
-    /// \u{a405}: 'ꐅ'
-    pub const YI_SYLLABLE_QUOX: char = 'ꐅ';
-    /// \u{a406}: 'ꐆ'
-    pub const YI_SYLLABLE_QUO: char = 'ꐆ';
-    /// \u{a407}: 'ꐇ'
-    pub const YI_SYLLABLE_QUOP: char = 'ꐇ';
-    /// \u{a408}: 'ꐈ'
-    pub const YI_SYLLABLE_QOT: char = 'ꐈ';
-    /// \u{a409}: 'ꐉ'
-    pub const YI_SYLLABLE_QOX: char = 'ꐉ';
-    /// \u{a40a}: 'ꐊ'
-    pub const YI_SYLLABLE_QO: char = 'ꐊ';
-    /// \u{a40b}: 'ꐋ'
-    pub const YI_SYLLABLE_QOP: char = 'ꐋ';
-    /// \u{a40c}: 'ꐌ'
-    pub const YI_SYLLABLE_QUT: char = 'ꐌ';
-    /// \u{a40d}: 'ꐍ'
-    pub const YI_SYLLABLE_QUX: char = 'ꐍ';
-    /// \u{a40e}: 'ꐎ'
-    pub const YI_SYLLABLE_QU: char = 'ꐎ';
-    /// \u{a40f}: 'ꐏ'
-    pub const YI_SYLLABLE_QUP: char = 'ꐏ';
-    /// \u{a410}: 'ꐐ'
-    pub const YI_SYLLABLE_QURX: char = 'ꐐ';
-    /// \u{a411}: 'ꐑ'
-    pub const YI_SYLLABLE_QUR: char = 'ꐑ';
-    /// \u{a412}: 'ꐒ'
-    pub const YI_SYLLABLE_QYT: char = 'ꐒ';
-    /// \u{a413}: 'ꐓ'
-    pub const YI_SYLLABLE_QYX: char = 'ꐓ';
-    /// \u{a414}: 'ꐔ'
-    pub const YI_SYLLABLE_QY: char = 'ꐔ';
-    /// \u{a415}: 'ꐕ'
-    pub const YI_SYLLABLE_QYP: char = 'ꐕ';
-    /// \u{a416}: 'ꐖ'
-    pub const YI_SYLLABLE_QYRX: char = 'ꐖ';
-    /// \u{a417}: 'ꐗ'
-    pub const YI_SYLLABLE_QYR: char = 'ꐗ';
-    /// \u{a418}: 'ꐘ'
-    pub const YI_SYLLABLE_JJIT: char = 'ꐘ';
-    /// \u{a419}: 'ꐙ'
-    pub const YI_SYLLABLE_JJIX: char = 'ꐙ';
-    /// \u{a41a}: 'ꐚ'
-    pub const YI_SYLLABLE_JJI: char = 'ꐚ';
-    /// \u{a41b}: 'ꐛ'
-    pub const YI_SYLLABLE_JJIP: char = 'ꐛ';
-    /// \u{a41c}: 'ꐜ'
-    pub const YI_SYLLABLE_JJIET: char = 'ꐜ';
-    /// \u{a41d}: 'ꐝ'
-    pub const YI_SYLLABLE_JJIEX: char = 'ꐝ';
-    /// \u{a41e}: 'ꐞ'
-    pub const YI_SYLLABLE_JJIE: char = 'ꐞ';
-    /// \u{a41f}: 'ꐟ'
-    pub const YI_SYLLABLE_JJIEP: char = 'ꐟ';
-    /// \u{a420}: 'ꐠ'
-    pub const YI_SYLLABLE_JJUOX: char = 'ꐠ';
-    /// \u{a421}: 'ꐡ'
-    pub const YI_SYLLABLE_JJUO: char = 'ꐡ';
-    /// \u{a422}: 'ꐢ'
-    pub const YI_SYLLABLE_JJUOP: char = 'ꐢ';
-    /// \u{a423}: 'ꐣ'
-    pub const YI_SYLLABLE_JJOT: char = 'ꐣ';
-    /// \u{a424}: 'ꐤ'
-    pub const YI_SYLLABLE_JJOX: char = 'ꐤ';
-    /// \u{a425}: 'ꐥ'
-    pub const YI_SYLLABLE_JJO: char = 'ꐥ';
-    /// \u{a426}: 'ꐦ'
-    pub const YI_SYLLABLE_JJOP: char = 'ꐦ';
-    /// \u{a427}: 'ꐧ'
-    pub const YI_SYLLABLE_JJUT: char = 'ꐧ';
-    /// \u{a428}: 'ꐨ'
-    pub const YI_SYLLABLE_JJUX: char = 'ꐨ';
-    /// \u{a429}: 'ꐩ'
-    pub const YI_SYLLABLE_JJU: char = 'ꐩ';
-    /// \u{a42a}: 'ꐪ'
-    pub const YI_SYLLABLE_JJUP: char = 'ꐪ';
-    /// \u{a42b}: 'ꐫ'
-    pub const YI_SYLLABLE_JJURX: char = 'ꐫ';
-    /// \u{a42c}: 'ꐬ'
-    pub const YI_SYLLABLE_JJUR: char = 'ꐬ';
-    /// \u{a42d}: 'ꐭ'
-    pub const YI_SYLLABLE_JJYT: char = 'ꐭ';
-    /// \u{a42e}: 'ꐮ'
-    pub const YI_SYLLABLE_JJYX: char = 'ꐮ';
-    /// \u{a42f}: 'ꐯ'
-    pub const YI_SYLLABLE_JJY: char = 'ꐯ';
-    /// \u{a430}: 'ꐰ'
-    pub const YI_SYLLABLE_JJYP: char = 'ꐰ';
-    /// \u{a431}: 'ꐱ'
-    pub const YI_SYLLABLE_NJIT: char = 'ꐱ';
-    /// \u{a432}: 'ꐲ'
-    pub const YI_SYLLABLE_NJIX: char = 'ꐲ';
-    /// \u{a433}: 'ꐳ'
-    pub const YI_SYLLABLE_NJI: char = 'ꐳ';
-    /// \u{a434}: 'ꐴ'
-    pub const YI_SYLLABLE_NJIP: char = 'ꐴ';
-    /// \u{a435}: 'ꐵ'
-    pub const YI_SYLLABLE_NJIET: char = 'ꐵ';
-    /// \u{a436}: 'ꐶ'
-    pub const YI_SYLLABLE_NJIEX: char = 'ꐶ';
-    /// \u{a437}: 'ꐷ'
-    pub const YI_SYLLABLE_NJIE: char = 'ꐷ';
-    /// \u{a438}: 'ꐸ'
-    pub const YI_SYLLABLE_NJIEP: char = 'ꐸ';
-    /// \u{a439}: 'ꐹ'
-    pub const YI_SYLLABLE_NJUOX: char = 'ꐹ';
-    /// \u{a43a}: 'ꐺ'
-    pub const YI_SYLLABLE_NJUO: char = 'ꐺ';
-    /// \u{a43b}: 'ꐻ'
-    pub const YI_SYLLABLE_NJOT: char = 'ꐻ';
-    /// \u{a43c}: 'ꐼ'
-    pub const YI_SYLLABLE_NJOX: char = 'ꐼ';
-    /// \u{a43d}: 'ꐽ'
-    pub const YI_SYLLABLE_NJO: char = 'ꐽ';
-    /// \u{a43e}: 'ꐾ'
-    pub const YI_SYLLABLE_NJOP: char = 'ꐾ';
-    /// \u{a43f}: 'ꐿ'
-    pub const YI_SYLLABLE_NJUX: char = 'ꐿ';
-    /// \u{a440}: 'ꑀ'
-    pub const YI_SYLLABLE_NJU: char = 'ꑀ';
-    /// \u{a441}: 'ꑁ'
-    pub const YI_SYLLABLE_NJUP: char = 'ꑁ';
-    /// \u{a442}: 'ꑂ'
-    pub const YI_SYLLABLE_NJURX: char = 'ꑂ';
-    /// \u{a443}: 'ꑃ'
-    pub const YI_SYLLABLE_NJUR: char = 'ꑃ';
-    /// \u{a444}: 'ꑄ'
-    pub const YI_SYLLABLE_NJYT: char = 'ꑄ';
-    /// \u{a445}: 'ꑅ'
-    pub const YI_SYLLABLE_NJYX: char = 'ꑅ';
-    /// \u{a446}: 'ꑆ'
-    pub const YI_SYLLABLE_NJY: char = 'ꑆ';
-    /// \u{a447}: 'ꑇ'
-    pub const YI_SYLLABLE_NJYP: char = 'ꑇ';
-    /// \u{a448}: 'ꑈ'
-    pub const YI_SYLLABLE_NJYRX: char = 'ꑈ';
-    /// \u{a449}: 'ꑉ'
-    pub const YI_SYLLABLE_NJYR: char = 'ꑉ';
-    /// \u{a44a}: 'ꑊ'
-    pub const YI_SYLLABLE_NYIT: char = 'ꑊ';
-    /// \u{a44b}: 'ꑋ'
-    pub const YI_SYLLABLE_NYIX: char = 'ꑋ';
-    /// \u{a44c}: 'ꑌ'
-    pub const YI_SYLLABLE_NYI: char = 'ꑌ';
-    /// \u{a44d}: 'ꑍ'
-    pub const YI_SYLLABLE_NYIP: char = 'ꑍ';
-    /// \u{a44e}: 'ꑎ'
-    pub const YI_SYLLABLE_NYIET: char = 'ꑎ';
-    /// \u{a44f}: 'ꑏ'
-    pub const YI_SYLLABLE_NYIEX: char = 'ꑏ';
-    /// \u{a450}: 'ꑐ'
-    pub const YI_SYLLABLE_NYIE: char = 'ꑐ';
-    /// \u{a451}: 'ꑑ'
-    pub const YI_SYLLABLE_NYIEP: char = 'ꑑ';
-    /// \u{a452}: 'ꑒ'
-    pub const YI_SYLLABLE_NYUOX: char = 'ꑒ';
-    /// \u{a453}: 'ꑓ'
-    pub const YI_SYLLABLE_NYUO: char = 'ꑓ';
-    /// \u{a454}: 'ꑔ'
-    pub const YI_SYLLABLE_NYUOP: char = 'ꑔ';
-    /// \u{a455}: 'ꑕ'
-    pub const YI_SYLLABLE_NYOT: char = 'ꑕ';
-    /// \u{a456}: 'ꑖ'
-    pub const YI_SYLLABLE_NYOX: char = 'ꑖ';
-    /// \u{a457}: 'ꑗ'
-    pub const YI_SYLLABLE_NYO: char = 'ꑗ';
-    /// \u{a458}: 'ꑘ'
-    pub const YI_SYLLABLE_NYOP: char = 'ꑘ';
-    /// \u{a459}: 'ꑙ'
-    pub const YI_SYLLABLE_NYUT: char = 'ꑙ';
-    /// \u{a45a}: 'ꑚ'
-    pub const YI_SYLLABLE_NYUX: char = 'ꑚ';
-    /// \u{a45b}: 'ꑛ'
-    pub const YI_SYLLABLE_NYU: char = 'ꑛ';
-    /// \u{a45c}: 'ꑜ'
-    pub const YI_SYLLABLE_NYUP: char = 'ꑜ';
-    /// \u{a45d}: 'ꑝ'
-    pub const YI_SYLLABLE_XIT: char = 'ꑝ';
-    /// \u{a45e}: 'ꑞ'
-    pub const YI_SYLLABLE_XIX: char = 'ꑞ';
-    /// \u{a45f}: 'ꑟ'
-    pub const YI_SYLLABLE_XI: char = 'ꑟ';
-    /// \u{a460}: 'ꑠ'
-    pub const YI_SYLLABLE_XIP: char = 'ꑠ';
-    /// \u{a461}: 'ꑡ'
-    pub const YI_SYLLABLE_XIET: char = 'ꑡ';
-    /// \u{a462}: 'ꑢ'
-    pub const YI_SYLLABLE_XIEX: char = 'ꑢ';
-    /// \u{a463}: 'ꑣ'
-    pub const YI_SYLLABLE_XIE: char = 'ꑣ';
-    /// \u{a464}: 'ꑤ'
-    pub const YI_SYLLABLE_XIEP: char = 'ꑤ';
-    /// \u{a465}: 'ꑥ'
-    pub const YI_SYLLABLE_XUOX: char = 'ꑥ';
-    /// \u{a466}: 'ꑦ'
-    pub const YI_SYLLABLE_XUO: char = 'ꑦ';
-    /// \u{a467}: 'ꑧ'
-    pub const YI_SYLLABLE_XOT: char = 'ꑧ';
-    /// \u{a468}: 'ꑨ'
-    pub const YI_SYLLABLE_XOX: char = 'ꑨ';
-    /// \u{a469}: 'ꑩ'
-    pub const YI_SYLLABLE_XO: char = 'ꑩ';
-    /// \u{a46a}: 'ꑪ'
-    pub const YI_SYLLABLE_XOP: char = 'ꑪ';
-    /// \u{a46b}: 'ꑫ'
-    pub const YI_SYLLABLE_XYT: char = 'ꑫ';
-    /// \u{a46c}: 'ꑬ'
-    pub const YI_SYLLABLE_XYX: char = 'ꑬ';
-    /// \u{a46d}: 'ꑭ'
-    pub const YI_SYLLABLE_XY: char = 'ꑭ';
-    /// \u{a46e}: 'ꑮ'
-    pub const YI_SYLLABLE_XYP: char = 'ꑮ';
-    /// \u{a46f}: 'ꑯ'
-    pub const YI_SYLLABLE_XYRX: char = 'ꑯ';
-    /// \u{a470}: 'ꑰ'
-    pub const YI_SYLLABLE_XYR: char = 'ꑰ';
-    /// \u{a471}: 'ꑱ'
-    pub const YI_SYLLABLE_YIT: char = 'ꑱ';
-    /// \u{a472}: 'ꑲ'
-    pub const YI_SYLLABLE_YIX: char = 'ꑲ';
-    /// \u{a473}: 'ꑳ'
-    pub const YI_SYLLABLE_YI: char = 'ꑳ';
-    /// \u{a474}: 'ꑴ'
-    pub const YI_SYLLABLE_YIP: char = 'ꑴ';
-    /// \u{a475}: 'ꑵ'
-    pub const YI_SYLLABLE_YIET: char = 'ꑵ';
-    /// \u{a476}: 'ꑶ'
-    pub const YI_SYLLABLE_YIEX: char = 'ꑶ';
-    /// \u{a477}: 'ꑷ'
-    pub const YI_SYLLABLE_YIE: char = 'ꑷ';
-    /// \u{a478}: 'ꑸ'
-    pub const YI_SYLLABLE_YIEP: char = 'ꑸ';
-    /// \u{a479}: 'ꑹ'
-    pub const YI_SYLLABLE_YUOT: char = 'ꑹ';
-    /// \u{a47a}: 'ꑺ'
-    pub const YI_SYLLABLE_YUOX: char = 'ꑺ';
-    /// \u{a47b}: 'ꑻ'
-    pub const YI_SYLLABLE_YUO: char = 'ꑻ';
-    /// \u{a47c}: 'ꑼ'
-    pub const YI_SYLLABLE_YUOP: char = 'ꑼ';
-    /// \u{a47d}: 'ꑽ'
-    pub const YI_SYLLABLE_YOT: char = 'ꑽ';
-    /// \u{a47e}: 'ꑾ'
-    pub const YI_SYLLABLE_YOX: char = 'ꑾ';
-    /// \u{a47f}: 'ꑿ'
-    pub const YI_SYLLABLE_YO: char = 'ꑿ';
-    /// \u{a480}: 'ꒀ'
-    pub const YI_SYLLABLE_YOP: char = 'ꒀ';
-    /// \u{a481}: 'ꒁ'
-    pub const YI_SYLLABLE_YUT: char = 'ꒁ';
-    /// \u{a482}: 'ꒂ'
-    pub const YI_SYLLABLE_YUX: char = 'ꒂ';
-    /// \u{a483}: 'ꒃ'
-    pub const YI_SYLLABLE_YU: char = 'ꒃ';
-    /// \u{a484}: 'ꒄ'
-    pub const YI_SYLLABLE_YUP: char = 'ꒄ';
-    /// \u{a485}: 'ꒅ'
-    pub const YI_SYLLABLE_YURX: char = 'ꒅ';
-    /// \u{a486}: 'ꒆ'
-    pub const YI_SYLLABLE_YUR: char = 'ꒆ';
-    /// \u{a487}: 'ꒇ'
-    pub const YI_SYLLABLE_YYT: char = 'ꒇ';
-    /// \u{a488}: 'ꒈ'
-    pub const YI_SYLLABLE_YYX: char = 'ꒈ';
-    /// \u{a489}: 'ꒉ'
-    pub const YI_SYLLABLE_YY: char = 'ꒉ';
-    /// \u{a48a}: 'ꒊ'
-    pub const YI_SYLLABLE_YYP: char = 'ꒊ';
-    /// \u{a48b}: 'ꒋ'
-    pub const YI_SYLLABLE_YYRX: char = 'ꒋ';
-    /// \u{a48c}: 'ꒌ'
-    pub const YI_SYLLABLE_YYR: char = 'ꒌ';
-}
 
 /// An enum to represent all characters in the YiSyllables block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -4669,1173 +2336,1172 @@ pub enum YiSyllables {
 
 impl Into<char> for YiSyllables {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            YiSyllables::YiSyllableIt => YI_SYLLABLE_IT,
-            YiSyllables::YiSyllableIx => YI_SYLLABLE_IX,
-            YiSyllables::YiSyllableI => YI_SYLLABLE_I,
-            YiSyllables::YiSyllableIp => YI_SYLLABLE_IP,
-            YiSyllables::YiSyllableIet => YI_SYLLABLE_IET,
-            YiSyllables::YiSyllableIex => YI_SYLLABLE_IEX,
-            YiSyllables::YiSyllableIe => YI_SYLLABLE_IE,
-            YiSyllables::YiSyllableIep => YI_SYLLABLE_IEP,
-            YiSyllables::YiSyllableAt => YI_SYLLABLE_AT,
-            YiSyllables::YiSyllableAx => YI_SYLLABLE_AX,
-            YiSyllables::YiSyllableA => YI_SYLLABLE_A,
-            YiSyllables::YiSyllableAp => YI_SYLLABLE_AP,
-            YiSyllables::YiSyllableUox => YI_SYLLABLE_UOX,
-            YiSyllables::YiSyllableUo => YI_SYLLABLE_UO,
-            YiSyllables::YiSyllableUop => YI_SYLLABLE_UOP,
-            YiSyllables::YiSyllableOt => YI_SYLLABLE_OT,
-            YiSyllables::YiSyllableOx => YI_SYLLABLE_OX,
-            YiSyllables::YiSyllableO => YI_SYLLABLE_O,
-            YiSyllables::YiSyllableOp => YI_SYLLABLE_OP,
-            YiSyllables::YiSyllableEx => YI_SYLLABLE_EX,
-            YiSyllables::YiSyllableE => YI_SYLLABLE_E,
-            YiSyllables::YiSyllableWu => YI_SYLLABLE_WU,
-            YiSyllables::YiSyllableBit => YI_SYLLABLE_BIT,
-            YiSyllables::YiSyllableBix => YI_SYLLABLE_BIX,
-            YiSyllables::YiSyllableBi => YI_SYLLABLE_BI,
-            YiSyllables::YiSyllableBip => YI_SYLLABLE_BIP,
-            YiSyllables::YiSyllableBiet => YI_SYLLABLE_BIET,
-            YiSyllables::YiSyllableBiex => YI_SYLLABLE_BIEX,
-            YiSyllables::YiSyllableBie => YI_SYLLABLE_BIE,
-            YiSyllables::YiSyllableBiep => YI_SYLLABLE_BIEP,
-            YiSyllables::YiSyllableBat => YI_SYLLABLE_BAT,
-            YiSyllables::YiSyllableBax => YI_SYLLABLE_BAX,
-            YiSyllables::YiSyllableBa => YI_SYLLABLE_BA,
-            YiSyllables::YiSyllableBap => YI_SYLLABLE_BAP,
-            YiSyllables::YiSyllableBuox => YI_SYLLABLE_BUOX,
-            YiSyllables::YiSyllableBuo => YI_SYLLABLE_BUO,
-            YiSyllables::YiSyllableBuop => YI_SYLLABLE_BUOP,
-            YiSyllables::YiSyllableBot => YI_SYLLABLE_BOT,
-            YiSyllables::YiSyllableBox => YI_SYLLABLE_BOX,
-            YiSyllables::YiSyllableBo => YI_SYLLABLE_BO,
-            YiSyllables::YiSyllableBop => YI_SYLLABLE_BOP,
-            YiSyllables::YiSyllableBex => YI_SYLLABLE_BEX,
-            YiSyllables::YiSyllableBe => YI_SYLLABLE_BE,
-            YiSyllables::YiSyllableBep => YI_SYLLABLE_BEP,
-            YiSyllables::YiSyllableBut => YI_SYLLABLE_BUT,
-            YiSyllables::YiSyllableBux => YI_SYLLABLE_BUX,
-            YiSyllables::YiSyllableBu => YI_SYLLABLE_BU,
-            YiSyllables::YiSyllableBup => YI_SYLLABLE_BUP,
-            YiSyllables::YiSyllableBurx => YI_SYLLABLE_BURX,
-            YiSyllables::YiSyllableBur => YI_SYLLABLE_BUR,
-            YiSyllables::YiSyllableByt => YI_SYLLABLE_BYT,
-            YiSyllables::YiSyllableByx => YI_SYLLABLE_BYX,
-            YiSyllables::YiSyllableBy => YI_SYLLABLE_BY,
-            YiSyllables::YiSyllableByp => YI_SYLLABLE_BYP,
-            YiSyllables::YiSyllableByrx => YI_SYLLABLE_BYRX,
-            YiSyllables::YiSyllableByr => YI_SYLLABLE_BYR,
-            YiSyllables::YiSyllablePit => YI_SYLLABLE_PIT,
-            YiSyllables::YiSyllablePix => YI_SYLLABLE_PIX,
-            YiSyllables::YiSyllablePi => YI_SYLLABLE_PI,
-            YiSyllables::YiSyllablePip => YI_SYLLABLE_PIP,
-            YiSyllables::YiSyllablePiex => YI_SYLLABLE_PIEX,
-            YiSyllables::YiSyllablePie => YI_SYLLABLE_PIE,
-            YiSyllables::YiSyllablePiep => YI_SYLLABLE_PIEP,
-            YiSyllables::YiSyllablePat => YI_SYLLABLE_PAT,
-            YiSyllables::YiSyllablePax => YI_SYLLABLE_PAX,
-            YiSyllables::YiSyllablePa => YI_SYLLABLE_PA,
-            YiSyllables::YiSyllablePap => YI_SYLLABLE_PAP,
-            YiSyllables::YiSyllablePuox => YI_SYLLABLE_PUOX,
-            YiSyllables::YiSyllablePuo => YI_SYLLABLE_PUO,
-            YiSyllables::YiSyllablePuop => YI_SYLLABLE_PUOP,
-            YiSyllables::YiSyllablePot => YI_SYLLABLE_POT,
-            YiSyllables::YiSyllablePox => YI_SYLLABLE_POX,
-            YiSyllables::YiSyllablePo => YI_SYLLABLE_PO,
-            YiSyllables::YiSyllablePop => YI_SYLLABLE_POP,
-            YiSyllables::YiSyllablePut => YI_SYLLABLE_PUT,
-            YiSyllables::YiSyllablePux => YI_SYLLABLE_PUX,
-            YiSyllables::YiSyllablePu => YI_SYLLABLE_PU,
-            YiSyllables::YiSyllablePup => YI_SYLLABLE_PUP,
-            YiSyllables::YiSyllablePurx => YI_SYLLABLE_PURX,
-            YiSyllables::YiSyllablePur => YI_SYLLABLE_PUR,
-            YiSyllables::YiSyllablePyt => YI_SYLLABLE_PYT,
-            YiSyllables::YiSyllablePyx => YI_SYLLABLE_PYX,
-            YiSyllables::YiSyllablePy => YI_SYLLABLE_PY,
-            YiSyllables::YiSyllablePyp => YI_SYLLABLE_PYP,
-            YiSyllables::YiSyllablePyrx => YI_SYLLABLE_PYRX,
-            YiSyllables::YiSyllablePyr => YI_SYLLABLE_PYR,
-            YiSyllables::YiSyllableBbit => YI_SYLLABLE_BBIT,
-            YiSyllables::YiSyllableBbix => YI_SYLLABLE_BBIX,
-            YiSyllables::YiSyllableBbi => YI_SYLLABLE_BBI,
-            YiSyllables::YiSyllableBbip => YI_SYLLABLE_BBIP,
-            YiSyllables::YiSyllableBbiet => YI_SYLLABLE_BBIET,
-            YiSyllables::YiSyllableBbiex => YI_SYLLABLE_BBIEX,
-            YiSyllables::YiSyllableBbie => YI_SYLLABLE_BBIE,
-            YiSyllables::YiSyllableBbiep => YI_SYLLABLE_BBIEP,
-            YiSyllables::YiSyllableBbat => YI_SYLLABLE_BBAT,
-            YiSyllables::YiSyllableBbax => YI_SYLLABLE_BBAX,
-            YiSyllables::YiSyllableBba => YI_SYLLABLE_BBA,
-            YiSyllables::YiSyllableBbap => YI_SYLLABLE_BBAP,
-            YiSyllables::YiSyllableBbuox => YI_SYLLABLE_BBUOX,
-            YiSyllables::YiSyllableBbuo => YI_SYLLABLE_BBUO,
-            YiSyllables::YiSyllableBbuop => YI_SYLLABLE_BBUOP,
-            YiSyllables::YiSyllableBbot => YI_SYLLABLE_BBOT,
-            YiSyllables::YiSyllableBbox => YI_SYLLABLE_BBOX,
-            YiSyllables::YiSyllableBbo => YI_SYLLABLE_BBO,
-            YiSyllables::YiSyllableBbop => YI_SYLLABLE_BBOP,
-            YiSyllables::YiSyllableBbex => YI_SYLLABLE_BBEX,
-            YiSyllables::YiSyllableBbe => YI_SYLLABLE_BBE,
-            YiSyllables::YiSyllableBbep => YI_SYLLABLE_BBEP,
-            YiSyllables::YiSyllableBbut => YI_SYLLABLE_BBUT,
-            YiSyllables::YiSyllableBbux => YI_SYLLABLE_BBUX,
-            YiSyllables::YiSyllableBbu => YI_SYLLABLE_BBU,
-            YiSyllables::YiSyllableBbup => YI_SYLLABLE_BBUP,
-            YiSyllables::YiSyllableBburx => YI_SYLLABLE_BBURX,
-            YiSyllables::YiSyllableBbur => YI_SYLLABLE_BBUR,
-            YiSyllables::YiSyllableBbyt => YI_SYLLABLE_BBYT,
-            YiSyllables::YiSyllableBbyx => YI_SYLLABLE_BBYX,
-            YiSyllables::YiSyllableBby => YI_SYLLABLE_BBY,
-            YiSyllables::YiSyllableBbyp => YI_SYLLABLE_BBYP,
-            YiSyllables::YiSyllableNbit => YI_SYLLABLE_NBIT,
-            YiSyllables::YiSyllableNbix => YI_SYLLABLE_NBIX,
-            YiSyllables::YiSyllableNbi => YI_SYLLABLE_NBI,
-            YiSyllables::YiSyllableNbip => YI_SYLLABLE_NBIP,
-            YiSyllables::YiSyllableNbiex => YI_SYLLABLE_NBIEX,
-            YiSyllables::YiSyllableNbie => YI_SYLLABLE_NBIE,
-            YiSyllables::YiSyllableNbiep => YI_SYLLABLE_NBIEP,
-            YiSyllables::YiSyllableNbat => YI_SYLLABLE_NBAT,
-            YiSyllables::YiSyllableNbax => YI_SYLLABLE_NBAX,
-            YiSyllables::YiSyllableNba => YI_SYLLABLE_NBA,
-            YiSyllables::YiSyllableNbap => YI_SYLLABLE_NBAP,
-            YiSyllables::YiSyllableNbot => YI_SYLLABLE_NBOT,
-            YiSyllables::YiSyllableNbox => YI_SYLLABLE_NBOX,
-            YiSyllables::YiSyllableNbo => YI_SYLLABLE_NBO,
-            YiSyllables::YiSyllableNbop => YI_SYLLABLE_NBOP,
-            YiSyllables::YiSyllableNbut => YI_SYLLABLE_NBUT,
-            YiSyllables::YiSyllableNbux => YI_SYLLABLE_NBUX,
-            YiSyllables::YiSyllableNbu => YI_SYLLABLE_NBU,
-            YiSyllables::YiSyllableNbup => YI_SYLLABLE_NBUP,
-            YiSyllables::YiSyllableNburx => YI_SYLLABLE_NBURX,
-            YiSyllables::YiSyllableNbur => YI_SYLLABLE_NBUR,
-            YiSyllables::YiSyllableNbyt => YI_SYLLABLE_NBYT,
-            YiSyllables::YiSyllableNbyx => YI_SYLLABLE_NBYX,
-            YiSyllables::YiSyllableNby => YI_SYLLABLE_NBY,
-            YiSyllables::YiSyllableNbyp => YI_SYLLABLE_NBYP,
-            YiSyllables::YiSyllableNbyrx => YI_SYLLABLE_NBYRX,
-            YiSyllables::YiSyllableNbyr => YI_SYLLABLE_NBYR,
-            YiSyllables::YiSyllableHmit => YI_SYLLABLE_HMIT,
-            YiSyllables::YiSyllableHmix => YI_SYLLABLE_HMIX,
-            YiSyllables::YiSyllableHmi => YI_SYLLABLE_HMI,
-            YiSyllables::YiSyllableHmip => YI_SYLLABLE_HMIP,
-            YiSyllables::YiSyllableHmiex => YI_SYLLABLE_HMIEX,
-            YiSyllables::YiSyllableHmie => YI_SYLLABLE_HMIE,
-            YiSyllables::YiSyllableHmiep => YI_SYLLABLE_HMIEP,
-            YiSyllables::YiSyllableHmat => YI_SYLLABLE_HMAT,
-            YiSyllables::YiSyllableHmax => YI_SYLLABLE_HMAX,
-            YiSyllables::YiSyllableHma => YI_SYLLABLE_HMA,
-            YiSyllables::YiSyllableHmap => YI_SYLLABLE_HMAP,
-            YiSyllables::YiSyllableHmuox => YI_SYLLABLE_HMUOX,
-            YiSyllables::YiSyllableHmuo => YI_SYLLABLE_HMUO,
-            YiSyllables::YiSyllableHmuop => YI_SYLLABLE_HMUOP,
-            YiSyllables::YiSyllableHmot => YI_SYLLABLE_HMOT,
-            YiSyllables::YiSyllableHmox => YI_SYLLABLE_HMOX,
-            YiSyllables::YiSyllableHmo => YI_SYLLABLE_HMO,
-            YiSyllables::YiSyllableHmop => YI_SYLLABLE_HMOP,
-            YiSyllables::YiSyllableHmut => YI_SYLLABLE_HMUT,
-            YiSyllables::YiSyllableHmux => YI_SYLLABLE_HMUX,
-            YiSyllables::YiSyllableHmu => YI_SYLLABLE_HMU,
-            YiSyllables::YiSyllableHmup => YI_SYLLABLE_HMUP,
-            YiSyllables::YiSyllableHmurx => YI_SYLLABLE_HMURX,
-            YiSyllables::YiSyllableHmur => YI_SYLLABLE_HMUR,
-            YiSyllables::YiSyllableHmyx => YI_SYLLABLE_HMYX,
-            YiSyllables::YiSyllableHmy => YI_SYLLABLE_HMY,
-            YiSyllables::YiSyllableHmyp => YI_SYLLABLE_HMYP,
-            YiSyllables::YiSyllableHmyrx => YI_SYLLABLE_HMYRX,
-            YiSyllables::YiSyllableHmyr => YI_SYLLABLE_HMYR,
-            YiSyllables::YiSyllableMit => YI_SYLLABLE_MIT,
-            YiSyllables::YiSyllableMix => YI_SYLLABLE_MIX,
-            YiSyllables::YiSyllableMi => YI_SYLLABLE_MI,
-            YiSyllables::YiSyllableMip => YI_SYLLABLE_MIP,
-            YiSyllables::YiSyllableMiex => YI_SYLLABLE_MIEX,
-            YiSyllables::YiSyllableMie => YI_SYLLABLE_MIE,
-            YiSyllables::YiSyllableMiep => YI_SYLLABLE_MIEP,
-            YiSyllables::YiSyllableMat => YI_SYLLABLE_MAT,
-            YiSyllables::YiSyllableMax => YI_SYLLABLE_MAX,
-            YiSyllables::YiSyllableMa => YI_SYLLABLE_MA,
-            YiSyllables::YiSyllableMap => YI_SYLLABLE_MAP,
-            YiSyllables::YiSyllableMuot => YI_SYLLABLE_MUOT,
-            YiSyllables::YiSyllableMuox => YI_SYLLABLE_MUOX,
-            YiSyllables::YiSyllableMuo => YI_SYLLABLE_MUO,
-            YiSyllables::YiSyllableMuop => YI_SYLLABLE_MUOP,
-            YiSyllables::YiSyllableMot => YI_SYLLABLE_MOT,
-            YiSyllables::YiSyllableMox => YI_SYLLABLE_MOX,
-            YiSyllables::YiSyllableMo => YI_SYLLABLE_MO,
-            YiSyllables::YiSyllableMop => YI_SYLLABLE_MOP,
-            YiSyllables::YiSyllableMex => YI_SYLLABLE_MEX,
-            YiSyllables::YiSyllableMe => YI_SYLLABLE_ME,
-            YiSyllables::YiSyllableMut => YI_SYLLABLE_MUT,
-            YiSyllables::YiSyllableMux => YI_SYLLABLE_MUX,
-            YiSyllables::YiSyllableMu => YI_SYLLABLE_MU,
-            YiSyllables::YiSyllableMup => YI_SYLLABLE_MUP,
-            YiSyllables::YiSyllableMurx => YI_SYLLABLE_MURX,
-            YiSyllables::YiSyllableMur => YI_SYLLABLE_MUR,
-            YiSyllables::YiSyllableMyt => YI_SYLLABLE_MYT,
-            YiSyllables::YiSyllableMyx => YI_SYLLABLE_MYX,
-            YiSyllables::YiSyllableMy => YI_SYLLABLE_MY,
-            YiSyllables::YiSyllableMyp => YI_SYLLABLE_MYP,
-            YiSyllables::YiSyllableFit => YI_SYLLABLE_FIT,
-            YiSyllables::YiSyllableFix => YI_SYLLABLE_FIX,
-            YiSyllables::YiSyllableFi => YI_SYLLABLE_FI,
-            YiSyllables::YiSyllableFip => YI_SYLLABLE_FIP,
-            YiSyllables::YiSyllableFat => YI_SYLLABLE_FAT,
-            YiSyllables::YiSyllableFax => YI_SYLLABLE_FAX,
-            YiSyllables::YiSyllableFa => YI_SYLLABLE_FA,
-            YiSyllables::YiSyllableFap => YI_SYLLABLE_FAP,
-            YiSyllables::YiSyllableFox => YI_SYLLABLE_FOX,
-            YiSyllables::YiSyllableFo => YI_SYLLABLE_FO,
-            YiSyllables::YiSyllableFop => YI_SYLLABLE_FOP,
-            YiSyllables::YiSyllableFut => YI_SYLLABLE_FUT,
-            YiSyllables::YiSyllableFux => YI_SYLLABLE_FUX,
-            YiSyllables::YiSyllableFu => YI_SYLLABLE_FU,
-            YiSyllables::YiSyllableFup => YI_SYLLABLE_FUP,
-            YiSyllables::YiSyllableFurx => YI_SYLLABLE_FURX,
-            YiSyllables::YiSyllableFur => YI_SYLLABLE_FUR,
-            YiSyllables::YiSyllableFyt => YI_SYLLABLE_FYT,
-            YiSyllables::YiSyllableFyx => YI_SYLLABLE_FYX,
-            YiSyllables::YiSyllableFy => YI_SYLLABLE_FY,
-            YiSyllables::YiSyllableFyp => YI_SYLLABLE_FYP,
-            YiSyllables::YiSyllableVit => YI_SYLLABLE_VIT,
-            YiSyllables::YiSyllableVix => YI_SYLLABLE_VIX,
-            YiSyllables::YiSyllableVi => YI_SYLLABLE_VI,
-            YiSyllables::YiSyllableVip => YI_SYLLABLE_VIP,
-            YiSyllables::YiSyllableViet => YI_SYLLABLE_VIET,
-            YiSyllables::YiSyllableViex => YI_SYLLABLE_VIEX,
-            YiSyllables::YiSyllableVie => YI_SYLLABLE_VIE,
-            YiSyllables::YiSyllableViep => YI_SYLLABLE_VIEP,
-            YiSyllables::YiSyllableVat => YI_SYLLABLE_VAT,
-            YiSyllables::YiSyllableVax => YI_SYLLABLE_VAX,
-            YiSyllables::YiSyllableVa => YI_SYLLABLE_VA,
-            YiSyllables::YiSyllableVap => YI_SYLLABLE_VAP,
-            YiSyllables::YiSyllableVot => YI_SYLLABLE_VOT,
-            YiSyllables::YiSyllableVox => YI_SYLLABLE_VOX,
-            YiSyllables::YiSyllableVo => YI_SYLLABLE_VO,
-            YiSyllables::YiSyllableVop => YI_SYLLABLE_VOP,
-            YiSyllables::YiSyllableVex => YI_SYLLABLE_VEX,
-            YiSyllables::YiSyllableVep => YI_SYLLABLE_VEP,
-            YiSyllables::YiSyllableVut => YI_SYLLABLE_VUT,
-            YiSyllables::YiSyllableVux => YI_SYLLABLE_VUX,
-            YiSyllables::YiSyllableVu => YI_SYLLABLE_VU,
-            YiSyllables::YiSyllableVup => YI_SYLLABLE_VUP,
-            YiSyllables::YiSyllableVurx => YI_SYLLABLE_VURX,
-            YiSyllables::YiSyllableVur => YI_SYLLABLE_VUR,
-            YiSyllables::YiSyllableVyt => YI_SYLLABLE_VYT,
-            YiSyllables::YiSyllableVyx => YI_SYLLABLE_VYX,
-            YiSyllables::YiSyllableVy => YI_SYLLABLE_VY,
-            YiSyllables::YiSyllableVyp => YI_SYLLABLE_VYP,
-            YiSyllables::YiSyllableVyrx => YI_SYLLABLE_VYRX,
-            YiSyllables::YiSyllableVyr => YI_SYLLABLE_VYR,
-            YiSyllables::YiSyllableDit => YI_SYLLABLE_DIT,
-            YiSyllables::YiSyllableDix => YI_SYLLABLE_DIX,
-            YiSyllables::YiSyllableDi => YI_SYLLABLE_DI,
-            YiSyllables::YiSyllableDip => YI_SYLLABLE_DIP,
-            YiSyllables::YiSyllableDiex => YI_SYLLABLE_DIEX,
-            YiSyllables::YiSyllableDie => YI_SYLLABLE_DIE,
-            YiSyllables::YiSyllableDiep => YI_SYLLABLE_DIEP,
-            YiSyllables::YiSyllableDat => YI_SYLLABLE_DAT,
-            YiSyllables::YiSyllableDax => YI_SYLLABLE_DAX,
-            YiSyllables::YiSyllableDa => YI_SYLLABLE_DA,
-            YiSyllables::YiSyllableDap => YI_SYLLABLE_DAP,
-            YiSyllables::YiSyllableDuox => YI_SYLLABLE_DUOX,
-            YiSyllables::YiSyllableDuo => YI_SYLLABLE_DUO,
-            YiSyllables::YiSyllableDot => YI_SYLLABLE_DOT,
-            YiSyllables::YiSyllableDox => YI_SYLLABLE_DOX,
-            YiSyllables::YiSyllableDo => YI_SYLLABLE_DO,
-            YiSyllables::YiSyllableDop => YI_SYLLABLE_DOP,
-            YiSyllables::YiSyllableDex => YI_SYLLABLE_DEX,
-            YiSyllables::YiSyllableDe => YI_SYLLABLE_DE,
-            YiSyllables::YiSyllableDep => YI_SYLLABLE_DEP,
-            YiSyllables::YiSyllableDut => YI_SYLLABLE_DUT,
-            YiSyllables::YiSyllableDux => YI_SYLLABLE_DUX,
-            YiSyllables::YiSyllableDu => YI_SYLLABLE_DU,
-            YiSyllables::YiSyllableDup => YI_SYLLABLE_DUP,
-            YiSyllables::YiSyllableDurx => YI_SYLLABLE_DURX,
-            YiSyllables::YiSyllableDur => YI_SYLLABLE_DUR,
-            YiSyllables::YiSyllableTit => YI_SYLLABLE_TIT,
-            YiSyllables::YiSyllableTix => YI_SYLLABLE_TIX,
-            YiSyllables::YiSyllableTi => YI_SYLLABLE_TI,
-            YiSyllables::YiSyllableTip => YI_SYLLABLE_TIP,
-            YiSyllables::YiSyllableTiex => YI_SYLLABLE_TIEX,
-            YiSyllables::YiSyllableTie => YI_SYLLABLE_TIE,
-            YiSyllables::YiSyllableTiep => YI_SYLLABLE_TIEP,
-            YiSyllables::YiSyllableTat => YI_SYLLABLE_TAT,
-            YiSyllables::YiSyllableTax => YI_SYLLABLE_TAX,
-            YiSyllables::YiSyllableTa => YI_SYLLABLE_TA,
-            YiSyllables::YiSyllableTap => YI_SYLLABLE_TAP,
-            YiSyllables::YiSyllableTuot => YI_SYLLABLE_TUOT,
-            YiSyllables::YiSyllableTuox => YI_SYLLABLE_TUOX,
-            YiSyllables::YiSyllableTuo => YI_SYLLABLE_TUO,
-            YiSyllables::YiSyllableTuop => YI_SYLLABLE_TUOP,
-            YiSyllables::YiSyllableTot => YI_SYLLABLE_TOT,
-            YiSyllables::YiSyllableTox => YI_SYLLABLE_TOX,
-            YiSyllables::YiSyllableTo => YI_SYLLABLE_TO,
-            YiSyllables::YiSyllableTop => YI_SYLLABLE_TOP,
-            YiSyllables::YiSyllableTex => YI_SYLLABLE_TEX,
-            YiSyllables::YiSyllableTe => YI_SYLLABLE_TE,
-            YiSyllables::YiSyllableTep => YI_SYLLABLE_TEP,
-            YiSyllables::YiSyllableTut => YI_SYLLABLE_TUT,
-            YiSyllables::YiSyllableTux => YI_SYLLABLE_TUX,
-            YiSyllables::YiSyllableTu => YI_SYLLABLE_TU,
-            YiSyllables::YiSyllableTup => YI_SYLLABLE_TUP,
-            YiSyllables::YiSyllableTurx => YI_SYLLABLE_TURX,
-            YiSyllables::YiSyllableTur => YI_SYLLABLE_TUR,
-            YiSyllables::YiSyllableDdit => YI_SYLLABLE_DDIT,
-            YiSyllables::YiSyllableDdix => YI_SYLLABLE_DDIX,
-            YiSyllables::YiSyllableDdi => YI_SYLLABLE_DDI,
-            YiSyllables::YiSyllableDdip => YI_SYLLABLE_DDIP,
-            YiSyllables::YiSyllableDdiex => YI_SYLLABLE_DDIEX,
-            YiSyllables::YiSyllableDdie => YI_SYLLABLE_DDIE,
-            YiSyllables::YiSyllableDdiep => YI_SYLLABLE_DDIEP,
-            YiSyllables::YiSyllableDdat => YI_SYLLABLE_DDAT,
-            YiSyllables::YiSyllableDdax => YI_SYLLABLE_DDAX,
-            YiSyllables::YiSyllableDda => YI_SYLLABLE_DDA,
-            YiSyllables::YiSyllableDdap => YI_SYLLABLE_DDAP,
-            YiSyllables::YiSyllableDduox => YI_SYLLABLE_DDUOX,
-            YiSyllables::YiSyllableDduo => YI_SYLLABLE_DDUO,
-            YiSyllables::YiSyllableDduop => YI_SYLLABLE_DDUOP,
-            YiSyllables::YiSyllableDdot => YI_SYLLABLE_DDOT,
-            YiSyllables::YiSyllableDdox => YI_SYLLABLE_DDOX,
-            YiSyllables::YiSyllableDdo => YI_SYLLABLE_DDO,
-            YiSyllables::YiSyllableDdop => YI_SYLLABLE_DDOP,
-            YiSyllables::YiSyllableDdex => YI_SYLLABLE_DDEX,
-            YiSyllables::YiSyllableDde => YI_SYLLABLE_DDE,
-            YiSyllables::YiSyllableDdep => YI_SYLLABLE_DDEP,
-            YiSyllables::YiSyllableDdut => YI_SYLLABLE_DDUT,
-            YiSyllables::YiSyllableDdux => YI_SYLLABLE_DDUX,
-            YiSyllables::YiSyllableDdu => YI_SYLLABLE_DDU,
-            YiSyllables::YiSyllableDdup => YI_SYLLABLE_DDUP,
-            YiSyllables::YiSyllableDdurx => YI_SYLLABLE_DDURX,
-            YiSyllables::YiSyllableDdur => YI_SYLLABLE_DDUR,
-            YiSyllables::YiSyllableNdit => YI_SYLLABLE_NDIT,
-            YiSyllables::YiSyllableNdix => YI_SYLLABLE_NDIX,
-            YiSyllables::YiSyllableNdi => YI_SYLLABLE_NDI,
-            YiSyllables::YiSyllableNdip => YI_SYLLABLE_NDIP,
-            YiSyllables::YiSyllableNdiex => YI_SYLLABLE_NDIEX,
-            YiSyllables::YiSyllableNdie => YI_SYLLABLE_NDIE,
-            YiSyllables::YiSyllableNdat => YI_SYLLABLE_NDAT,
-            YiSyllables::YiSyllableNdax => YI_SYLLABLE_NDAX,
-            YiSyllables::YiSyllableNda => YI_SYLLABLE_NDA,
-            YiSyllables::YiSyllableNdap => YI_SYLLABLE_NDAP,
-            YiSyllables::YiSyllableNdot => YI_SYLLABLE_NDOT,
-            YiSyllables::YiSyllableNdox => YI_SYLLABLE_NDOX,
-            YiSyllables::YiSyllableNdo => YI_SYLLABLE_NDO,
-            YiSyllables::YiSyllableNdop => YI_SYLLABLE_NDOP,
-            YiSyllables::YiSyllableNdex => YI_SYLLABLE_NDEX,
-            YiSyllables::YiSyllableNde => YI_SYLLABLE_NDE,
-            YiSyllables::YiSyllableNdep => YI_SYLLABLE_NDEP,
-            YiSyllables::YiSyllableNdut => YI_SYLLABLE_NDUT,
-            YiSyllables::YiSyllableNdux => YI_SYLLABLE_NDUX,
-            YiSyllables::YiSyllableNdu => YI_SYLLABLE_NDU,
-            YiSyllables::YiSyllableNdup => YI_SYLLABLE_NDUP,
-            YiSyllables::YiSyllableNdurx => YI_SYLLABLE_NDURX,
-            YiSyllables::YiSyllableNdur => YI_SYLLABLE_NDUR,
-            YiSyllables::YiSyllableHnit => YI_SYLLABLE_HNIT,
-            YiSyllables::YiSyllableHnix => YI_SYLLABLE_HNIX,
-            YiSyllables::YiSyllableHni => YI_SYLLABLE_HNI,
-            YiSyllables::YiSyllableHnip => YI_SYLLABLE_HNIP,
-            YiSyllables::YiSyllableHniet => YI_SYLLABLE_HNIET,
-            YiSyllables::YiSyllableHniex => YI_SYLLABLE_HNIEX,
-            YiSyllables::YiSyllableHnie => YI_SYLLABLE_HNIE,
-            YiSyllables::YiSyllableHniep => YI_SYLLABLE_HNIEP,
-            YiSyllables::YiSyllableHnat => YI_SYLLABLE_HNAT,
-            YiSyllables::YiSyllableHnax => YI_SYLLABLE_HNAX,
-            YiSyllables::YiSyllableHna => YI_SYLLABLE_HNA,
-            YiSyllables::YiSyllableHnap => YI_SYLLABLE_HNAP,
-            YiSyllables::YiSyllableHnuox => YI_SYLLABLE_HNUOX,
-            YiSyllables::YiSyllableHnuo => YI_SYLLABLE_HNUO,
-            YiSyllables::YiSyllableHnot => YI_SYLLABLE_HNOT,
-            YiSyllables::YiSyllableHnox => YI_SYLLABLE_HNOX,
-            YiSyllables::YiSyllableHnop => YI_SYLLABLE_HNOP,
-            YiSyllables::YiSyllableHnex => YI_SYLLABLE_HNEX,
-            YiSyllables::YiSyllableHne => YI_SYLLABLE_HNE,
-            YiSyllables::YiSyllableHnep => YI_SYLLABLE_HNEP,
-            YiSyllables::YiSyllableHnut => YI_SYLLABLE_HNUT,
-            YiSyllables::YiSyllableNit => YI_SYLLABLE_NIT,
-            YiSyllables::YiSyllableNix => YI_SYLLABLE_NIX,
-            YiSyllables::YiSyllableNi => YI_SYLLABLE_NI,
-            YiSyllables::YiSyllableNip => YI_SYLLABLE_NIP,
-            YiSyllables::YiSyllableNiex => YI_SYLLABLE_NIEX,
-            YiSyllables::YiSyllableNie => YI_SYLLABLE_NIE,
-            YiSyllables::YiSyllableNiep => YI_SYLLABLE_NIEP,
-            YiSyllables::YiSyllableNax => YI_SYLLABLE_NAX,
-            YiSyllables::YiSyllableNa => YI_SYLLABLE_NA,
-            YiSyllables::YiSyllableNap => YI_SYLLABLE_NAP,
-            YiSyllables::YiSyllableNuox => YI_SYLLABLE_NUOX,
-            YiSyllables::YiSyllableNuo => YI_SYLLABLE_NUO,
-            YiSyllables::YiSyllableNuop => YI_SYLLABLE_NUOP,
-            YiSyllables::YiSyllableNot => YI_SYLLABLE_NOT,
-            YiSyllables::YiSyllableNox => YI_SYLLABLE_NOX,
-            YiSyllables::YiSyllableNo => YI_SYLLABLE_NO,
-            YiSyllables::YiSyllableNop => YI_SYLLABLE_NOP,
-            YiSyllables::YiSyllableNex => YI_SYLLABLE_NEX,
-            YiSyllables::YiSyllableNe => YI_SYLLABLE_NE,
-            YiSyllables::YiSyllableNep => YI_SYLLABLE_NEP,
-            YiSyllables::YiSyllableNut => YI_SYLLABLE_NUT,
-            YiSyllables::YiSyllableNux => YI_SYLLABLE_NUX,
-            YiSyllables::YiSyllableNu => YI_SYLLABLE_NU,
-            YiSyllables::YiSyllableNup => YI_SYLLABLE_NUP,
-            YiSyllables::YiSyllableNurx => YI_SYLLABLE_NURX,
-            YiSyllables::YiSyllableNur => YI_SYLLABLE_NUR,
-            YiSyllables::YiSyllableHlit => YI_SYLLABLE_HLIT,
-            YiSyllables::YiSyllableHlix => YI_SYLLABLE_HLIX,
-            YiSyllables::YiSyllableHli => YI_SYLLABLE_HLI,
-            YiSyllables::YiSyllableHlip => YI_SYLLABLE_HLIP,
-            YiSyllables::YiSyllableHliex => YI_SYLLABLE_HLIEX,
-            YiSyllables::YiSyllableHlie => YI_SYLLABLE_HLIE,
-            YiSyllables::YiSyllableHliep => YI_SYLLABLE_HLIEP,
-            YiSyllables::YiSyllableHlat => YI_SYLLABLE_HLAT,
-            YiSyllables::YiSyllableHlax => YI_SYLLABLE_HLAX,
-            YiSyllables::YiSyllableHla => YI_SYLLABLE_HLA,
-            YiSyllables::YiSyllableHlap => YI_SYLLABLE_HLAP,
-            YiSyllables::YiSyllableHluox => YI_SYLLABLE_HLUOX,
-            YiSyllables::YiSyllableHluo => YI_SYLLABLE_HLUO,
-            YiSyllables::YiSyllableHluop => YI_SYLLABLE_HLUOP,
-            YiSyllables::YiSyllableHlox => YI_SYLLABLE_HLOX,
-            YiSyllables::YiSyllableHlo => YI_SYLLABLE_HLO,
-            YiSyllables::YiSyllableHlop => YI_SYLLABLE_HLOP,
-            YiSyllables::YiSyllableHlex => YI_SYLLABLE_HLEX,
-            YiSyllables::YiSyllableHle => YI_SYLLABLE_HLE,
-            YiSyllables::YiSyllableHlep => YI_SYLLABLE_HLEP,
-            YiSyllables::YiSyllableHlut => YI_SYLLABLE_HLUT,
-            YiSyllables::YiSyllableHlux => YI_SYLLABLE_HLUX,
-            YiSyllables::YiSyllableHlu => YI_SYLLABLE_HLU,
-            YiSyllables::YiSyllableHlup => YI_SYLLABLE_HLUP,
-            YiSyllables::YiSyllableHlurx => YI_SYLLABLE_HLURX,
-            YiSyllables::YiSyllableHlur => YI_SYLLABLE_HLUR,
-            YiSyllables::YiSyllableHlyt => YI_SYLLABLE_HLYT,
-            YiSyllables::YiSyllableHlyx => YI_SYLLABLE_HLYX,
-            YiSyllables::YiSyllableHly => YI_SYLLABLE_HLY,
-            YiSyllables::YiSyllableHlyp => YI_SYLLABLE_HLYP,
-            YiSyllables::YiSyllableHlyrx => YI_SYLLABLE_HLYRX,
-            YiSyllables::YiSyllableHlyr => YI_SYLLABLE_HLYR,
-            YiSyllables::YiSyllableLit => YI_SYLLABLE_LIT,
-            YiSyllables::YiSyllableLix => YI_SYLLABLE_LIX,
-            YiSyllables::YiSyllableLi => YI_SYLLABLE_LI,
-            YiSyllables::YiSyllableLip => YI_SYLLABLE_LIP,
-            YiSyllables::YiSyllableLiet => YI_SYLLABLE_LIET,
-            YiSyllables::YiSyllableLiex => YI_SYLLABLE_LIEX,
-            YiSyllables::YiSyllableLie => YI_SYLLABLE_LIE,
-            YiSyllables::YiSyllableLiep => YI_SYLLABLE_LIEP,
-            YiSyllables::YiSyllableLat => YI_SYLLABLE_LAT,
-            YiSyllables::YiSyllableLax => YI_SYLLABLE_LAX,
-            YiSyllables::YiSyllableLa => YI_SYLLABLE_LA,
-            YiSyllables::YiSyllableLap => YI_SYLLABLE_LAP,
-            YiSyllables::YiSyllableLuot => YI_SYLLABLE_LUOT,
-            YiSyllables::YiSyllableLuox => YI_SYLLABLE_LUOX,
-            YiSyllables::YiSyllableLuo => YI_SYLLABLE_LUO,
-            YiSyllables::YiSyllableLuop => YI_SYLLABLE_LUOP,
-            YiSyllables::YiSyllableLot => YI_SYLLABLE_LOT,
-            YiSyllables::YiSyllableLox => YI_SYLLABLE_LOX,
-            YiSyllables::YiSyllableLo => YI_SYLLABLE_LO,
-            YiSyllables::YiSyllableLop => YI_SYLLABLE_LOP,
-            YiSyllables::YiSyllableLex => YI_SYLLABLE_LEX,
-            YiSyllables::YiSyllableLe => YI_SYLLABLE_LE,
-            YiSyllables::YiSyllableLep => YI_SYLLABLE_LEP,
-            YiSyllables::YiSyllableLut => YI_SYLLABLE_LUT,
-            YiSyllables::YiSyllableLux => YI_SYLLABLE_LUX,
-            YiSyllables::YiSyllableLu => YI_SYLLABLE_LU,
-            YiSyllables::YiSyllableLup => YI_SYLLABLE_LUP,
-            YiSyllables::YiSyllableLurx => YI_SYLLABLE_LURX,
-            YiSyllables::YiSyllableLur => YI_SYLLABLE_LUR,
-            YiSyllables::YiSyllableLyt => YI_SYLLABLE_LYT,
-            YiSyllables::YiSyllableLyx => YI_SYLLABLE_LYX,
-            YiSyllables::YiSyllableLy => YI_SYLLABLE_LY,
-            YiSyllables::YiSyllableLyp => YI_SYLLABLE_LYP,
-            YiSyllables::YiSyllableLyrx => YI_SYLLABLE_LYRX,
-            YiSyllables::YiSyllableLyr => YI_SYLLABLE_LYR,
-            YiSyllables::YiSyllableGit => YI_SYLLABLE_GIT,
-            YiSyllables::YiSyllableGix => YI_SYLLABLE_GIX,
-            YiSyllables::YiSyllableGi => YI_SYLLABLE_GI,
-            YiSyllables::YiSyllableGip => YI_SYLLABLE_GIP,
-            YiSyllables::YiSyllableGiet => YI_SYLLABLE_GIET,
-            YiSyllables::YiSyllableGiex => YI_SYLLABLE_GIEX,
-            YiSyllables::YiSyllableGie => YI_SYLLABLE_GIE,
-            YiSyllables::YiSyllableGiep => YI_SYLLABLE_GIEP,
-            YiSyllables::YiSyllableGat => YI_SYLLABLE_GAT,
-            YiSyllables::YiSyllableGax => YI_SYLLABLE_GAX,
-            YiSyllables::YiSyllableGa => YI_SYLLABLE_GA,
-            YiSyllables::YiSyllableGap => YI_SYLLABLE_GAP,
-            YiSyllables::YiSyllableGuot => YI_SYLLABLE_GUOT,
-            YiSyllables::YiSyllableGuox => YI_SYLLABLE_GUOX,
-            YiSyllables::YiSyllableGuo => YI_SYLLABLE_GUO,
-            YiSyllables::YiSyllableGuop => YI_SYLLABLE_GUOP,
-            YiSyllables::YiSyllableGot => YI_SYLLABLE_GOT,
-            YiSyllables::YiSyllableGox => YI_SYLLABLE_GOX,
-            YiSyllables::YiSyllableGo => YI_SYLLABLE_GO,
-            YiSyllables::YiSyllableGop => YI_SYLLABLE_GOP,
-            YiSyllables::YiSyllableGet => YI_SYLLABLE_GET,
-            YiSyllables::YiSyllableGex => YI_SYLLABLE_GEX,
-            YiSyllables::YiSyllableGe => YI_SYLLABLE_GE,
-            YiSyllables::YiSyllableGep => YI_SYLLABLE_GEP,
-            YiSyllables::YiSyllableGut => YI_SYLLABLE_GUT,
-            YiSyllables::YiSyllableGux => YI_SYLLABLE_GUX,
-            YiSyllables::YiSyllableGu => YI_SYLLABLE_GU,
-            YiSyllables::YiSyllableGup => YI_SYLLABLE_GUP,
-            YiSyllables::YiSyllableGurx => YI_SYLLABLE_GURX,
-            YiSyllables::YiSyllableGur => YI_SYLLABLE_GUR,
-            YiSyllables::YiSyllableKit => YI_SYLLABLE_KIT,
-            YiSyllables::YiSyllableKix => YI_SYLLABLE_KIX,
-            YiSyllables::YiSyllableKi => YI_SYLLABLE_KI,
-            YiSyllables::YiSyllableKip => YI_SYLLABLE_KIP,
-            YiSyllables::YiSyllableKiex => YI_SYLLABLE_KIEX,
-            YiSyllables::YiSyllableKie => YI_SYLLABLE_KIE,
-            YiSyllables::YiSyllableKiep => YI_SYLLABLE_KIEP,
-            YiSyllables::YiSyllableKat => YI_SYLLABLE_KAT,
-            YiSyllables::YiSyllableKax => YI_SYLLABLE_KAX,
-            YiSyllables::YiSyllableKa => YI_SYLLABLE_KA,
-            YiSyllables::YiSyllableKap => YI_SYLLABLE_KAP,
-            YiSyllables::YiSyllableKuox => YI_SYLLABLE_KUOX,
-            YiSyllables::YiSyllableKuo => YI_SYLLABLE_KUO,
-            YiSyllables::YiSyllableKuop => YI_SYLLABLE_KUOP,
-            YiSyllables::YiSyllableKot => YI_SYLLABLE_KOT,
-            YiSyllables::YiSyllableKox => YI_SYLLABLE_KOX,
-            YiSyllables::YiSyllableKo => YI_SYLLABLE_KO,
-            YiSyllables::YiSyllableKop => YI_SYLLABLE_KOP,
-            YiSyllables::YiSyllableKet => YI_SYLLABLE_KET,
-            YiSyllables::YiSyllableKex => YI_SYLLABLE_KEX,
-            YiSyllables::YiSyllableKe => YI_SYLLABLE_KE,
-            YiSyllables::YiSyllableKep => YI_SYLLABLE_KEP,
-            YiSyllables::YiSyllableKut => YI_SYLLABLE_KUT,
-            YiSyllables::YiSyllableKux => YI_SYLLABLE_KUX,
-            YiSyllables::YiSyllableKu => YI_SYLLABLE_KU,
-            YiSyllables::YiSyllableKup => YI_SYLLABLE_KUP,
-            YiSyllables::YiSyllableKurx => YI_SYLLABLE_KURX,
-            YiSyllables::YiSyllableKur => YI_SYLLABLE_KUR,
-            YiSyllables::YiSyllableGgit => YI_SYLLABLE_GGIT,
-            YiSyllables::YiSyllableGgix => YI_SYLLABLE_GGIX,
-            YiSyllables::YiSyllableGgi => YI_SYLLABLE_GGI,
-            YiSyllables::YiSyllableGgiex => YI_SYLLABLE_GGIEX,
-            YiSyllables::YiSyllableGgie => YI_SYLLABLE_GGIE,
-            YiSyllables::YiSyllableGgiep => YI_SYLLABLE_GGIEP,
-            YiSyllables::YiSyllableGgat => YI_SYLLABLE_GGAT,
-            YiSyllables::YiSyllableGgax => YI_SYLLABLE_GGAX,
-            YiSyllables::YiSyllableGga => YI_SYLLABLE_GGA,
-            YiSyllables::YiSyllableGgap => YI_SYLLABLE_GGAP,
-            YiSyllables::YiSyllableGguot => YI_SYLLABLE_GGUOT,
-            YiSyllables::YiSyllableGguox => YI_SYLLABLE_GGUOX,
-            YiSyllables::YiSyllableGguo => YI_SYLLABLE_GGUO,
-            YiSyllables::YiSyllableGguop => YI_SYLLABLE_GGUOP,
-            YiSyllables::YiSyllableGgot => YI_SYLLABLE_GGOT,
-            YiSyllables::YiSyllableGgox => YI_SYLLABLE_GGOX,
-            YiSyllables::YiSyllableGgo => YI_SYLLABLE_GGO,
-            YiSyllables::YiSyllableGgop => YI_SYLLABLE_GGOP,
-            YiSyllables::YiSyllableGget => YI_SYLLABLE_GGET,
-            YiSyllables::YiSyllableGgex => YI_SYLLABLE_GGEX,
-            YiSyllables::YiSyllableGge => YI_SYLLABLE_GGE,
-            YiSyllables::YiSyllableGgep => YI_SYLLABLE_GGEP,
-            YiSyllables::YiSyllableGgut => YI_SYLLABLE_GGUT,
-            YiSyllables::YiSyllableGgux => YI_SYLLABLE_GGUX,
-            YiSyllables::YiSyllableGgu => YI_SYLLABLE_GGU,
-            YiSyllables::YiSyllableGgup => YI_SYLLABLE_GGUP,
-            YiSyllables::YiSyllableGgurx => YI_SYLLABLE_GGURX,
-            YiSyllables::YiSyllableGgur => YI_SYLLABLE_GGUR,
-            YiSyllables::YiSyllableMgiex => YI_SYLLABLE_MGIEX,
-            YiSyllables::YiSyllableMgie => YI_SYLLABLE_MGIE,
-            YiSyllables::YiSyllableMgat => YI_SYLLABLE_MGAT,
-            YiSyllables::YiSyllableMgax => YI_SYLLABLE_MGAX,
-            YiSyllables::YiSyllableMga => YI_SYLLABLE_MGA,
-            YiSyllables::YiSyllableMgap => YI_SYLLABLE_MGAP,
-            YiSyllables::YiSyllableMguox => YI_SYLLABLE_MGUOX,
-            YiSyllables::YiSyllableMguo => YI_SYLLABLE_MGUO,
-            YiSyllables::YiSyllableMguop => YI_SYLLABLE_MGUOP,
-            YiSyllables::YiSyllableMgot => YI_SYLLABLE_MGOT,
-            YiSyllables::YiSyllableMgox => YI_SYLLABLE_MGOX,
-            YiSyllables::YiSyllableMgo => YI_SYLLABLE_MGO,
-            YiSyllables::YiSyllableMgop => YI_SYLLABLE_MGOP,
-            YiSyllables::YiSyllableMgex => YI_SYLLABLE_MGEX,
-            YiSyllables::YiSyllableMge => YI_SYLLABLE_MGE,
-            YiSyllables::YiSyllableMgep => YI_SYLLABLE_MGEP,
-            YiSyllables::YiSyllableMgut => YI_SYLLABLE_MGUT,
-            YiSyllables::YiSyllableMgux => YI_SYLLABLE_MGUX,
-            YiSyllables::YiSyllableMgu => YI_SYLLABLE_MGU,
-            YiSyllables::YiSyllableMgup => YI_SYLLABLE_MGUP,
-            YiSyllables::YiSyllableMgurx => YI_SYLLABLE_MGURX,
-            YiSyllables::YiSyllableMgur => YI_SYLLABLE_MGUR,
-            YiSyllables::YiSyllableHxit => YI_SYLLABLE_HXIT,
-            YiSyllables::YiSyllableHxix => YI_SYLLABLE_HXIX,
-            YiSyllables::YiSyllableHxi => YI_SYLLABLE_HXI,
-            YiSyllables::YiSyllableHxip => YI_SYLLABLE_HXIP,
-            YiSyllables::YiSyllableHxiet => YI_SYLLABLE_HXIET,
-            YiSyllables::YiSyllableHxiex => YI_SYLLABLE_HXIEX,
-            YiSyllables::YiSyllableHxie => YI_SYLLABLE_HXIE,
-            YiSyllables::YiSyllableHxiep => YI_SYLLABLE_HXIEP,
-            YiSyllables::YiSyllableHxat => YI_SYLLABLE_HXAT,
-            YiSyllables::YiSyllableHxax => YI_SYLLABLE_HXAX,
-            YiSyllables::YiSyllableHxa => YI_SYLLABLE_HXA,
-            YiSyllables::YiSyllableHxap => YI_SYLLABLE_HXAP,
-            YiSyllables::YiSyllableHxuot => YI_SYLLABLE_HXUOT,
-            YiSyllables::YiSyllableHxuox => YI_SYLLABLE_HXUOX,
-            YiSyllables::YiSyllableHxuo => YI_SYLLABLE_HXUO,
-            YiSyllables::YiSyllableHxuop => YI_SYLLABLE_HXUOP,
-            YiSyllables::YiSyllableHxot => YI_SYLLABLE_HXOT,
-            YiSyllables::YiSyllableHxox => YI_SYLLABLE_HXOX,
-            YiSyllables::YiSyllableHxo => YI_SYLLABLE_HXO,
-            YiSyllables::YiSyllableHxop => YI_SYLLABLE_HXOP,
-            YiSyllables::YiSyllableHxex => YI_SYLLABLE_HXEX,
-            YiSyllables::YiSyllableHxe => YI_SYLLABLE_HXE,
-            YiSyllables::YiSyllableHxep => YI_SYLLABLE_HXEP,
-            YiSyllables::YiSyllableNgiex => YI_SYLLABLE_NGIEX,
-            YiSyllables::YiSyllableNgie => YI_SYLLABLE_NGIE,
-            YiSyllables::YiSyllableNgiep => YI_SYLLABLE_NGIEP,
-            YiSyllables::YiSyllableNgat => YI_SYLLABLE_NGAT,
-            YiSyllables::YiSyllableNgax => YI_SYLLABLE_NGAX,
-            YiSyllables::YiSyllableNga => YI_SYLLABLE_NGA,
-            YiSyllables::YiSyllableNgap => YI_SYLLABLE_NGAP,
-            YiSyllables::YiSyllableNguot => YI_SYLLABLE_NGUOT,
-            YiSyllables::YiSyllableNguox => YI_SYLLABLE_NGUOX,
-            YiSyllables::YiSyllableNguo => YI_SYLLABLE_NGUO,
-            YiSyllables::YiSyllableNgot => YI_SYLLABLE_NGOT,
-            YiSyllables::YiSyllableNgox => YI_SYLLABLE_NGOX,
-            YiSyllables::YiSyllableNgo => YI_SYLLABLE_NGO,
-            YiSyllables::YiSyllableNgop => YI_SYLLABLE_NGOP,
-            YiSyllables::YiSyllableNgex => YI_SYLLABLE_NGEX,
-            YiSyllables::YiSyllableNge => YI_SYLLABLE_NGE,
-            YiSyllables::YiSyllableNgep => YI_SYLLABLE_NGEP,
-            YiSyllables::YiSyllableHit => YI_SYLLABLE_HIT,
-            YiSyllables::YiSyllableHiex => YI_SYLLABLE_HIEX,
-            YiSyllables::YiSyllableHie => YI_SYLLABLE_HIE,
-            YiSyllables::YiSyllableHat => YI_SYLLABLE_HAT,
-            YiSyllables::YiSyllableHax => YI_SYLLABLE_HAX,
-            YiSyllables::YiSyllableHa => YI_SYLLABLE_HA,
-            YiSyllables::YiSyllableHap => YI_SYLLABLE_HAP,
-            YiSyllables::YiSyllableHuot => YI_SYLLABLE_HUOT,
-            YiSyllables::YiSyllableHuox => YI_SYLLABLE_HUOX,
-            YiSyllables::YiSyllableHuo => YI_SYLLABLE_HUO,
-            YiSyllables::YiSyllableHuop => YI_SYLLABLE_HUOP,
-            YiSyllables::YiSyllableHot => YI_SYLLABLE_HOT,
-            YiSyllables::YiSyllableHox => YI_SYLLABLE_HOX,
-            YiSyllables::YiSyllableHo => YI_SYLLABLE_HO,
-            YiSyllables::YiSyllableHop => YI_SYLLABLE_HOP,
-            YiSyllables::YiSyllableHex => YI_SYLLABLE_HEX,
-            YiSyllables::YiSyllableHe => YI_SYLLABLE_HE,
-            YiSyllables::YiSyllableHep => YI_SYLLABLE_HEP,
-            YiSyllables::YiSyllableWat => YI_SYLLABLE_WAT,
-            YiSyllables::YiSyllableWax => YI_SYLLABLE_WAX,
-            YiSyllables::YiSyllableWa => YI_SYLLABLE_WA,
-            YiSyllables::YiSyllableWap => YI_SYLLABLE_WAP,
-            YiSyllables::YiSyllableWuox => YI_SYLLABLE_WUOX,
-            YiSyllables::YiSyllableWuo => YI_SYLLABLE_WUO,
-            YiSyllables::YiSyllableWuop => YI_SYLLABLE_WUOP,
-            YiSyllables::YiSyllableWox => YI_SYLLABLE_WOX,
-            YiSyllables::YiSyllableWo => YI_SYLLABLE_WO,
-            YiSyllables::YiSyllableWop => YI_SYLLABLE_WOP,
-            YiSyllables::YiSyllableWex => YI_SYLLABLE_WEX,
-            YiSyllables::YiSyllableWe => YI_SYLLABLE_WE,
-            YiSyllables::YiSyllableWep => YI_SYLLABLE_WEP,
-            YiSyllables::YiSyllableZit => YI_SYLLABLE_ZIT,
-            YiSyllables::YiSyllableZix => YI_SYLLABLE_ZIX,
-            YiSyllables::YiSyllableZi => YI_SYLLABLE_ZI,
-            YiSyllables::YiSyllableZip => YI_SYLLABLE_ZIP,
-            YiSyllables::YiSyllableZiex => YI_SYLLABLE_ZIEX,
-            YiSyllables::YiSyllableZie => YI_SYLLABLE_ZIE,
-            YiSyllables::YiSyllableZiep => YI_SYLLABLE_ZIEP,
-            YiSyllables::YiSyllableZat => YI_SYLLABLE_ZAT,
-            YiSyllables::YiSyllableZax => YI_SYLLABLE_ZAX,
-            YiSyllables::YiSyllableZa => YI_SYLLABLE_ZA,
-            YiSyllables::YiSyllableZap => YI_SYLLABLE_ZAP,
-            YiSyllables::YiSyllableZuox => YI_SYLLABLE_ZUOX,
-            YiSyllables::YiSyllableZuo => YI_SYLLABLE_ZUO,
-            YiSyllables::YiSyllableZuop => YI_SYLLABLE_ZUOP,
-            YiSyllables::YiSyllableZot => YI_SYLLABLE_ZOT,
-            YiSyllables::YiSyllableZox => YI_SYLLABLE_ZOX,
-            YiSyllables::YiSyllableZo => YI_SYLLABLE_ZO,
-            YiSyllables::YiSyllableZop => YI_SYLLABLE_ZOP,
-            YiSyllables::YiSyllableZex => YI_SYLLABLE_ZEX,
-            YiSyllables::YiSyllableZe => YI_SYLLABLE_ZE,
-            YiSyllables::YiSyllableZep => YI_SYLLABLE_ZEP,
-            YiSyllables::YiSyllableZut => YI_SYLLABLE_ZUT,
-            YiSyllables::YiSyllableZux => YI_SYLLABLE_ZUX,
-            YiSyllables::YiSyllableZu => YI_SYLLABLE_ZU,
-            YiSyllables::YiSyllableZup => YI_SYLLABLE_ZUP,
-            YiSyllables::YiSyllableZurx => YI_SYLLABLE_ZURX,
-            YiSyllables::YiSyllableZur => YI_SYLLABLE_ZUR,
-            YiSyllables::YiSyllableZyt => YI_SYLLABLE_ZYT,
-            YiSyllables::YiSyllableZyx => YI_SYLLABLE_ZYX,
-            YiSyllables::YiSyllableZy => YI_SYLLABLE_ZY,
-            YiSyllables::YiSyllableZyp => YI_SYLLABLE_ZYP,
-            YiSyllables::YiSyllableZyrx => YI_SYLLABLE_ZYRX,
-            YiSyllables::YiSyllableZyr => YI_SYLLABLE_ZYR,
-            YiSyllables::YiSyllableCit => YI_SYLLABLE_CIT,
-            YiSyllables::YiSyllableCix => YI_SYLLABLE_CIX,
-            YiSyllables::YiSyllableCi => YI_SYLLABLE_CI,
-            YiSyllables::YiSyllableCip => YI_SYLLABLE_CIP,
-            YiSyllables::YiSyllableCiet => YI_SYLLABLE_CIET,
-            YiSyllables::YiSyllableCiex => YI_SYLLABLE_CIEX,
-            YiSyllables::YiSyllableCie => YI_SYLLABLE_CIE,
-            YiSyllables::YiSyllableCiep => YI_SYLLABLE_CIEP,
-            YiSyllables::YiSyllableCat => YI_SYLLABLE_CAT,
-            YiSyllables::YiSyllableCax => YI_SYLLABLE_CAX,
-            YiSyllables::YiSyllableCa => YI_SYLLABLE_CA,
-            YiSyllables::YiSyllableCap => YI_SYLLABLE_CAP,
-            YiSyllables::YiSyllableCuox => YI_SYLLABLE_CUOX,
-            YiSyllables::YiSyllableCuo => YI_SYLLABLE_CUO,
-            YiSyllables::YiSyllableCuop => YI_SYLLABLE_CUOP,
-            YiSyllables::YiSyllableCot => YI_SYLLABLE_COT,
-            YiSyllables::YiSyllableCox => YI_SYLLABLE_COX,
-            YiSyllables::YiSyllableCo => YI_SYLLABLE_CO,
-            YiSyllables::YiSyllableCop => YI_SYLLABLE_COP,
-            YiSyllables::YiSyllableCex => YI_SYLLABLE_CEX,
-            YiSyllables::YiSyllableCe => YI_SYLLABLE_CE,
-            YiSyllables::YiSyllableCep => YI_SYLLABLE_CEP,
-            YiSyllables::YiSyllableCut => YI_SYLLABLE_CUT,
-            YiSyllables::YiSyllableCux => YI_SYLLABLE_CUX,
-            YiSyllables::YiSyllableCu => YI_SYLLABLE_CU,
-            YiSyllables::YiSyllableCup => YI_SYLLABLE_CUP,
-            YiSyllables::YiSyllableCurx => YI_SYLLABLE_CURX,
-            YiSyllables::YiSyllableCur => YI_SYLLABLE_CUR,
-            YiSyllables::YiSyllableCyt => YI_SYLLABLE_CYT,
-            YiSyllables::YiSyllableCyx => YI_SYLLABLE_CYX,
-            YiSyllables::YiSyllableCy => YI_SYLLABLE_CY,
-            YiSyllables::YiSyllableCyp => YI_SYLLABLE_CYP,
-            YiSyllables::YiSyllableCyrx => YI_SYLLABLE_CYRX,
-            YiSyllables::YiSyllableCyr => YI_SYLLABLE_CYR,
-            YiSyllables::YiSyllableZzit => YI_SYLLABLE_ZZIT,
-            YiSyllables::YiSyllableZzix => YI_SYLLABLE_ZZIX,
-            YiSyllables::YiSyllableZzi => YI_SYLLABLE_ZZI,
-            YiSyllables::YiSyllableZzip => YI_SYLLABLE_ZZIP,
-            YiSyllables::YiSyllableZziet => YI_SYLLABLE_ZZIET,
-            YiSyllables::YiSyllableZziex => YI_SYLLABLE_ZZIEX,
-            YiSyllables::YiSyllableZzie => YI_SYLLABLE_ZZIE,
-            YiSyllables::YiSyllableZziep => YI_SYLLABLE_ZZIEP,
-            YiSyllables::YiSyllableZzat => YI_SYLLABLE_ZZAT,
-            YiSyllables::YiSyllableZzax => YI_SYLLABLE_ZZAX,
-            YiSyllables::YiSyllableZza => YI_SYLLABLE_ZZA,
-            YiSyllables::YiSyllableZzap => YI_SYLLABLE_ZZAP,
-            YiSyllables::YiSyllableZzox => YI_SYLLABLE_ZZOX,
-            YiSyllables::YiSyllableZzo => YI_SYLLABLE_ZZO,
-            YiSyllables::YiSyllableZzop => YI_SYLLABLE_ZZOP,
-            YiSyllables::YiSyllableZzex => YI_SYLLABLE_ZZEX,
-            YiSyllables::YiSyllableZze => YI_SYLLABLE_ZZE,
-            YiSyllables::YiSyllableZzep => YI_SYLLABLE_ZZEP,
-            YiSyllables::YiSyllableZzux => YI_SYLLABLE_ZZUX,
-            YiSyllables::YiSyllableZzu => YI_SYLLABLE_ZZU,
-            YiSyllables::YiSyllableZzup => YI_SYLLABLE_ZZUP,
-            YiSyllables::YiSyllableZzurx => YI_SYLLABLE_ZZURX,
-            YiSyllables::YiSyllableZzur => YI_SYLLABLE_ZZUR,
-            YiSyllables::YiSyllableZzyt => YI_SYLLABLE_ZZYT,
-            YiSyllables::YiSyllableZzyx => YI_SYLLABLE_ZZYX,
-            YiSyllables::YiSyllableZzy => YI_SYLLABLE_ZZY,
-            YiSyllables::YiSyllableZzyp => YI_SYLLABLE_ZZYP,
-            YiSyllables::YiSyllableZzyrx => YI_SYLLABLE_ZZYRX,
-            YiSyllables::YiSyllableZzyr => YI_SYLLABLE_ZZYR,
-            YiSyllables::YiSyllableNzit => YI_SYLLABLE_NZIT,
-            YiSyllables::YiSyllableNzix => YI_SYLLABLE_NZIX,
-            YiSyllables::YiSyllableNzi => YI_SYLLABLE_NZI,
-            YiSyllables::YiSyllableNzip => YI_SYLLABLE_NZIP,
-            YiSyllables::YiSyllableNziex => YI_SYLLABLE_NZIEX,
-            YiSyllables::YiSyllableNzie => YI_SYLLABLE_NZIE,
-            YiSyllables::YiSyllableNziep => YI_SYLLABLE_NZIEP,
-            YiSyllables::YiSyllableNzat => YI_SYLLABLE_NZAT,
-            YiSyllables::YiSyllableNzax => YI_SYLLABLE_NZAX,
-            YiSyllables::YiSyllableNza => YI_SYLLABLE_NZA,
-            YiSyllables::YiSyllableNzap => YI_SYLLABLE_NZAP,
-            YiSyllables::YiSyllableNzuox => YI_SYLLABLE_NZUOX,
-            YiSyllables::YiSyllableNzuo => YI_SYLLABLE_NZUO,
-            YiSyllables::YiSyllableNzox => YI_SYLLABLE_NZOX,
-            YiSyllables::YiSyllableNzop => YI_SYLLABLE_NZOP,
-            YiSyllables::YiSyllableNzex => YI_SYLLABLE_NZEX,
-            YiSyllables::YiSyllableNze => YI_SYLLABLE_NZE,
-            YiSyllables::YiSyllableNzux => YI_SYLLABLE_NZUX,
-            YiSyllables::YiSyllableNzu => YI_SYLLABLE_NZU,
-            YiSyllables::YiSyllableNzup => YI_SYLLABLE_NZUP,
-            YiSyllables::YiSyllableNzurx => YI_SYLLABLE_NZURX,
-            YiSyllables::YiSyllableNzur => YI_SYLLABLE_NZUR,
-            YiSyllables::YiSyllableNzyt => YI_SYLLABLE_NZYT,
-            YiSyllables::YiSyllableNzyx => YI_SYLLABLE_NZYX,
-            YiSyllables::YiSyllableNzy => YI_SYLLABLE_NZY,
-            YiSyllables::YiSyllableNzyp => YI_SYLLABLE_NZYP,
-            YiSyllables::YiSyllableNzyrx => YI_SYLLABLE_NZYRX,
-            YiSyllables::YiSyllableNzyr => YI_SYLLABLE_NZYR,
-            YiSyllables::YiSyllableSit => YI_SYLLABLE_SIT,
-            YiSyllables::YiSyllableSix => YI_SYLLABLE_SIX,
-            YiSyllables::YiSyllableSi => YI_SYLLABLE_SI,
-            YiSyllables::YiSyllableSip => YI_SYLLABLE_SIP,
-            YiSyllables::YiSyllableSiex => YI_SYLLABLE_SIEX,
-            YiSyllables::YiSyllableSie => YI_SYLLABLE_SIE,
-            YiSyllables::YiSyllableSiep => YI_SYLLABLE_SIEP,
-            YiSyllables::YiSyllableSat => YI_SYLLABLE_SAT,
-            YiSyllables::YiSyllableSax => YI_SYLLABLE_SAX,
-            YiSyllables::YiSyllableSa => YI_SYLLABLE_SA,
-            YiSyllables::YiSyllableSap => YI_SYLLABLE_SAP,
-            YiSyllables::YiSyllableSuox => YI_SYLLABLE_SUOX,
-            YiSyllables::YiSyllableSuo => YI_SYLLABLE_SUO,
-            YiSyllables::YiSyllableSuop => YI_SYLLABLE_SUOP,
-            YiSyllables::YiSyllableSot => YI_SYLLABLE_SOT,
-            YiSyllables::YiSyllableSox => YI_SYLLABLE_SOX,
-            YiSyllables::YiSyllableSo => YI_SYLLABLE_SO,
-            YiSyllables::YiSyllableSop => YI_SYLLABLE_SOP,
-            YiSyllables::YiSyllableSex => YI_SYLLABLE_SEX,
-            YiSyllables::YiSyllableSe => YI_SYLLABLE_SE,
-            YiSyllables::YiSyllableSep => YI_SYLLABLE_SEP,
-            YiSyllables::YiSyllableSut => YI_SYLLABLE_SUT,
-            YiSyllables::YiSyllableSux => YI_SYLLABLE_SUX,
-            YiSyllables::YiSyllableSu => YI_SYLLABLE_SU,
-            YiSyllables::YiSyllableSup => YI_SYLLABLE_SUP,
-            YiSyllables::YiSyllableSurx => YI_SYLLABLE_SURX,
-            YiSyllables::YiSyllableSur => YI_SYLLABLE_SUR,
-            YiSyllables::YiSyllableSyt => YI_SYLLABLE_SYT,
-            YiSyllables::YiSyllableSyx => YI_SYLLABLE_SYX,
-            YiSyllables::YiSyllableSy => YI_SYLLABLE_SY,
-            YiSyllables::YiSyllableSyp => YI_SYLLABLE_SYP,
-            YiSyllables::YiSyllableSyrx => YI_SYLLABLE_SYRX,
-            YiSyllables::YiSyllableSyr => YI_SYLLABLE_SYR,
-            YiSyllables::YiSyllableSsit => YI_SYLLABLE_SSIT,
-            YiSyllables::YiSyllableSsix => YI_SYLLABLE_SSIX,
-            YiSyllables::YiSyllableSsi => YI_SYLLABLE_SSI,
-            YiSyllables::YiSyllableSsip => YI_SYLLABLE_SSIP,
-            YiSyllables::YiSyllableSsiex => YI_SYLLABLE_SSIEX,
-            YiSyllables::YiSyllableSsie => YI_SYLLABLE_SSIE,
-            YiSyllables::YiSyllableSsiep => YI_SYLLABLE_SSIEP,
-            YiSyllables::YiSyllableSsat => YI_SYLLABLE_SSAT,
-            YiSyllables::YiSyllableSsax => YI_SYLLABLE_SSAX,
-            YiSyllables::YiSyllableSsa => YI_SYLLABLE_SSA,
-            YiSyllables::YiSyllableSsap => YI_SYLLABLE_SSAP,
-            YiSyllables::YiSyllableSsot => YI_SYLLABLE_SSOT,
-            YiSyllables::YiSyllableSsox => YI_SYLLABLE_SSOX,
-            YiSyllables::YiSyllableSso => YI_SYLLABLE_SSO,
-            YiSyllables::YiSyllableSsop => YI_SYLLABLE_SSOP,
-            YiSyllables::YiSyllableSsex => YI_SYLLABLE_SSEX,
-            YiSyllables::YiSyllableSse => YI_SYLLABLE_SSE,
-            YiSyllables::YiSyllableSsep => YI_SYLLABLE_SSEP,
-            YiSyllables::YiSyllableSsut => YI_SYLLABLE_SSUT,
-            YiSyllables::YiSyllableSsux => YI_SYLLABLE_SSUX,
-            YiSyllables::YiSyllableSsu => YI_SYLLABLE_SSU,
-            YiSyllables::YiSyllableSsup => YI_SYLLABLE_SSUP,
-            YiSyllables::YiSyllableSsyt => YI_SYLLABLE_SSYT,
-            YiSyllables::YiSyllableSsyx => YI_SYLLABLE_SSYX,
-            YiSyllables::YiSyllableSsy => YI_SYLLABLE_SSY,
-            YiSyllables::YiSyllableSsyp => YI_SYLLABLE_SSYP,
-            YiSyllables::YiSyllableSsyrx => YI_SYLLABLE_SSYRX,
-            YiSyllables::YiSyllableSsyr => YI_SYLLABLE_SSYR,
-            YiSyllables::YiSyllableZhat => YI_SYLLABLE_ZHAT,
-            YiSyllables::YiSyllableZhax => YI_SYLLABLE_ZHAX,
-            YiSyllables::YiSyllableZha => YI_SYLLABLE_ZHA,
-            YiSyllables::YiSyllableZhap => YI_SYLLABLE_ZHAP,
-            YiSyllables::YiSyllableZhuox => YI_SYLLABLE_ZHUOX,
-            YiSyllables::YiSyllableZhuo => YI_SYLLABLE_ZHUO,
-            YiSyllables::YiSyllableZhuop => YI_SYLLABLE_ZHUOP,
-            YiSyllables::YiSyllableZhot => YI_SYLLABLE_ZHOT,
-            YiSyllables::YiSyllableZhox => YI_SYLLABLE_ZHOX,
-            YiSyllables::YiSyllableZho => YI_SYLLABLE_ZHO,
-            YiSyllables::YiSyllableZhop => YI_SYLLABLE_ZHOP,
-            YiSyllables::YiSyllableZhet => YI_SYLLABLE_ZHET,
-            YiSyllables::YiSyllableZhex => YI_SYLLABLE_ZHEX,
-            YiSyllables::YiSyllableZhe => YI_SYLLABLE_ZHE,
-            YiSyllables::YiSyllableZhep => YI_SYLLABLE_ZHEP,
-            YiSyllables::YiSyllableZhut => YI_SYLLABLE_ZHUT,
-            YiSyllables::YiSyllableZhux => YI_SYLLABLE_ZHUX,
-            YiSyllables::YiSyllableZhu => YI_SYLLABLE_ZHU,
-            YiSyllables::YiSyllableZhup => YI_SYLLABLE_ZHUP,
-            YiSyllables::YiSyllableZhurx => YI_SYLLABLE_ZHURX,
-            YiSyllables::YiSyllableZhur => YI_SYLLABLE_ZHUR,
-            YiSyllables::YiSyllableZhyt => YI_SYLLABLE_ZHYT,
-            YiSyllables::YiSyllableZhyx => YI_SYLLABLE_ZHYX,
-            YiSyllables::YiSyllableZhy => YI_SYLLABLE_ZHY,
-            YiSyllables::YiSyllableZhyp => YI_SYLLABLE_ZHYP,
-            YiSyllables::YiSyllableZhyrx => YI_SYLLABLE_ZHYRX,
-            YiSyllables::YiSyllableZhyr => YI_SYLLABLE_ZHYR,
-            YiSyllables::YiSyllableChat => YI_SYLLABLE_CHAT,
-            YiSyllables::YiSyllableChax => YI_SYLLABLE_CHAX,
-            YiSyllables::YiSyllableCha => YI_SYLLABLE_CHA,
-            YiSyllables::YiSyllableChap => YI_SYLLABLE_CHAP,
-            YiSyllables::YiSyllableChuot => YI_SYLLABLE_CHUOT,
-            YiSyllables::YiSyllableChuox => YI_SYLLABLE_CHUOX,
-            YiSyllables::YiSyllableChuo => YI_SYLLABLE_CHUO,
-            YiSyllables::YiSyllableChuop => YI_SYLLABLE_CHUOP,
-            YiSyllables::YiSyllableChot => YI_SYLLABLE_CHOT,
-            YiSyllables::YiSyllableChox => YI_SYLLABLE_CHOX,
-            YiSyllables::YiSyllableCho => YI_SYLLABLE_CHO,
-            YiSyllables::YiSyllableChop => YI_SYLLABLE_CHOP,
-            YiSyllables::YiSyllableChet => YI_SYLLABLE_CHET,
-            YiSyllables::YiSyllableChex => YI_SYLLABLE_CHEX,
-            YiSyllables::YiSyllableChe => YI_SYLLABLE_CHE,
-            YiSyllables::YiSyllableChep => YI_SYLLABLE_CHEP,
-            YiSyllables::YiSyllableChux => YI_SYLLABLE_CHUX,
-            YiSyllables::YiSyllableChu => YI_SYLLABLE_CHU,
-            YiSyllables::YiSyllableChup => YI_SYLLABLE_CHUP,
-            YiSyllables::YiSyllableChurx => YI_SYLLABLE_CHURX,
-            YiSyllables::YiSyllableChur => YI_SYLLABLE_CHUR,
-            YiSyllables::YiSyllableChyt => YI_SYLLABLE_CHYT,
-            YiSyllables::YiSyllableChyx => YI_SYLLABLE_CHYX,
-            YiSyllables::YiSyllableChy => YI_SYLLABLE_CHY,
-            YiSyllables::YiSyllableChyp => YI_SYLLABLE_CHYP,
-            YiSyllables::YiSyllableChyrx => YI_SYLLABLE_CHYRX,
-            YiSyllables::YiSyllableChyr => YI_SYLLABLE_CHYR,
-            YiSyllables::YiSyllableRrax => YI_SYLLABLE_RRAX,
-            YiSyllables::YiSyllableRra => YI_SYLLABLE_RRA,
-            YiSyllables::YiSyllableRruox => YI_SYLLABLE_RRUOX,
-            YiSyllables::YiSyllableRruo => YI_SYLLABLE_RRUO,
-            YiSyllables::YiSyllableRrot => YI_SYLLABLE_RROT,
-            YiSyllables::YiSyllableRrox => YI_SYLLABLE_RROX,
-            YiSyllables::YiSyllableRro => YI_SYLLABLE_RRO,
-            YiSyllables::YiSyllableRrop => YI_SYLLABLE_RROP,
-            YiSyllables::YiSyllableRret => YI_SYLLABLE_RRET,
-            YiSyllables::YiSyllableRrex => YI_SYLLABLE_RREX,
-            YiSyllables::YiSyllableRre => YI_SYLLABLE_RRE,
-            YiSyllables::YiSyllableRrep => YI_SYLLABLE_RREP,
-            YiSyllables::YiSyllableRrut => YI_SYLLABLE_RRUT,
-            YiSyllables::YiSyllableRrux => YI_SYLLABLE_RRUX,
-            YiSyllables::YiSyllableRru => YI_SYLLABLE_RRU,
-            YiSyllables::YiSyllableRrup => YI_SYLLABLE_RRUP,
-            YiSyllables::YiSyllableRrurx => YI_SYLLABLE_RRURX,
-            YiSyllables::YiSyllableRrur => YI_SYLLABLE_RRUR,
-            YiSyllables::YiSyllableRryt => YI_SYLLABLE_RRYT,
-            YiSyllables::YiSyllableRryx => YI_SYLLABLE_RRYX,
-            YiSyllables::YiSyllableRry => YI_SYLLABLE_RRY,
-            YiSyllables::YiSyllableRryp => YI_SYLLABLE_RRYP,
-            YiSyllables::YiSyllableRryrx => YI_SYLLABLE_RRYRX,
-            YiSyllables::YiSyllableRryr => YI_SYLLABLE_RRYR,
-            YiSyllables::YiSyllableNrat => YI_SYLLABLE_NRAT,
-            YiSyllables::YiSyllableNrax => YI_SYLLABLE_NRAX,
-            YiSyllables::YiSyllableNra => YI_SYLLABLE_NRA,
-            YiSyllables::YiSyllableNrap => YI_SYLLABLE_NRAP,
-            YiSyllables::YiSyllableNrox => YI_SYLLABLE_NROX,
-            YiSyllables::YiSyllableNro => YI_SYLLABLE_NRO,
-            YiSyllables::YiSyllableNrop => YI_SYLLABLE_NROP,
-            YiSyllables::YiSyllableNret => YI_SYLLABLE_NRET,
-            YiSyllables::YiSyllableNrex => YI_SYLLABLE_NREX,
-            YiSyllables::YiSyllableNre => YI_SYLLABLE_NRE,
-            YiSyllables::YiSyllableNrep => YI_SYLLABLE_NREP,
-            YiSyllables::YiSyllableNrut => YI_SYLLABLE_NRUT,
-            YiSyllables::YiSyllableNrux => YI_SYLLABLE_NRUX,
-            YiSyllables::YiSyllableNru => YI_SYLLABLE_NRU,
-            YiSyllables::YiSyllableNrup => YI_SYLLABLE_NRUP,
-            YiSyllables::YiSyllableNrurx => YI_SYLLABLE_NRURX,
-            YiSyllables::YiSyllableNrur => YI_SYLLABLE_NRUR,
-            YiSyllables::YiSyllableNryt => YI_SYLLABLE_NRYT,
-            YiSyllables::YiSyllableNryx => YI_SYLLABLE_NRYX,
-            YiSyllables::YiSyllableNry => YI_SYLLABLE_NRY,
-            YiSyllables::YiSyllableNryp => YI_SYLLABLE_NRYP,
-            YiSyllables::YiSyllableNryrx => YI_SYLLABLE_NRYRX,
-            YiSyllables::YiSyllableNryr => YI_SYLLABLE_NRYR,
-            YiSyllables::YiSyllableShat => YI_SYLLABLE_SHAT,
-            YiSyllables::YiSyllableShax => YI_SYLLABLE_SHAX,
-            YiSyllables::YiSyllableSha => YI_SYLLABLE_SHA,
-            YiSyllables::YiSyllableShap => YI_SYLLABLE_SHAP,
-            YiSyllables::YiSyllableShuox => YI_SYLLABLE_SHUOX,
-            YiSyllables::YiSyllableShuo => YI_SYLLABLE_SHUO,
-            YiSyllables::YiSyllableShuop => YI_SYLLABLE_SHUOP,
-            YiSyllables::YiSyllableShot => YI_SYLLABLE_SHOT,
-            YiSyllables::YiSyllableShox => YI_SYLLABLE_SHOX,
-            YiSyllables::YiSyllableSho => YI_SYLLABLE_SHO,
-            YiSyllables::YiSyllableShop => YI_SYLLABLE_SHOP,
-            YiSyllables::YiSyllableShet => YI_SYLLABLE_SHET,
-            YiSyllables::YiSyllableShex => YI_SYLLABLE_SHEX,
-            YiSyllables::YiSyllableShe => YI_SYLLABLE_SHE,
-            YiSyllables::YiSyllableShep => YI_SYLLABLE_SHEP,
-            YiSyllables::YiSyllableShut => YI_SYLLABLE_SHUT,
-            YiSyllables::YiSyllableShux => YI_SYLLABLE_SHUX,
-            YiSyllables::YiSyllableShu => YI_SYLLABLE_SHU,
-            YiSyllables::YiSyllableShup => YI_SYLLABLE_SHUP,
-            YiSyllables::YiSyllableShurx => YI_SYLLABLE_SHURX,
-            YiSyllables::YiSyllableShur => YI_SYLLABLE_SHUR,
-            YiSyllables::YiSyllableShyt => YI_SYLLABLE_SHYT,
-            YiSyllables::YiSyllableShyx => YI_SYLLABLE_SHYX,
-            YiSyllables::YiSyllableShy => YI_SYLLABLE_SHY,
-            YiSyllables::YiSyllableShyp => YI_SYLLABLE_SHYP,
-            YiSyllables::YiSyllableShyrx => YI_SYLLABLE_SHYRX,
-            YiSyllables::YiSyllableShyr => YI_SYLLABLE_SHYR,
-            YiSyllables::YiSyllableRat => YI_SYLLABLE_RAT,
-            YiSyllables::YiSyllableRax => YI_SYLLABLE_RAX,
-            YiSyllables::YiSyllableRa => YI_SYLLABLE_RA,
-            YiSyllables::YiSyllableRap => YI_SYLLABLE_RAP,
-            YiSyllables::YiSyllableRuox => YI_SYLLABLE_RUOX,
-            YiSyllables::YiSyllableRuo => YI_SYLLABLE_RUO,
-            YiSyllables::YiSyllableRuop => YI_SYLLABLE_RUOP,
-            YiSyllables::YiSyllableRot => YI_SYLLABLE_ROT,
-            YiSyllables::YiSyllableRox => YI_SYLLABLE_ROX,
-            YiSyllables::YiSyllableRo => YI_SYLLABLE_RO,
-            YiSyllables::YiSyllableRop => YI_SYLLABLE_ROP,
-            YiSyllables::YiSyllableRex => YI_SYLLABLE_REX,
-            YiSyllables::YiSyllableRe => YI_SYLLABLE_RE,
-            YiSyllables::YiSyllableRep => YI_SYLLABLE_REP,
-            YiSyllables::YiSyllableRut => YI_SYLLABLE_RUT,
-            YiSyllables::YiSyllableRux => YI_SYLLABLE_RUX,
-            YiSyllables::YiSyllableRu => YI_SYLLABLE_RU,
-            YiSyllables::YiSyllableRup => YI_SYLLABLE_RUP,
-            YiSyllables::YiSyllableRurx => YI_SYLLABLE_RURX,
-            YiSyllables::YiSyllableRur => YI_SYLLABLE_RUR,
-            YiSyllables::YiSyllableRyt => YI_SYLLABLE_RYT,
-            YiSyllables::YiSyllableRyx => YI_SYLLABLE_RYX,
-            YiSyllables::YiSyllableRy => YI_SYLLABLE_RY,
-            YiSyllables::YiSyllableRyp => YI_SYLLABLE_RYP,
-            YiSyllables::YiSyllableRyrx => YI_SYLLABLE_RYRX,
-            YiSyllables::YiSyllableRyr => YI_SYLLABLE_RYR,
-            YiSyllables::YiSyllableJit => YI_SYLLABLE_JIT,
-            YiSyllables::YiSyllableJix => YI_SYLLABLE_JIX,
-            YiSyllables::YiSyllableJi => YI_SYLLABLE_JI,
-            YiSyllables::YiSyllableJip => YI_SYLLABLE_JIP,
-            YiSyllables::YiSyllableJiet => YI_SYLLABLE_JIET,
-            YiSyllables::YiSyllableJiex => YI_SYLLABLE_JIEX,
-            YiSyllables::YiSyllableJie => YI_SYLLABLE_JIE,
-            YiSyllables::YiSyllableJiep => YI_SYLLABLE_JIEP,
-            YiSyllables::YiSyllableJuot => YI_SYLLABLE_JUOT,
-            YiSyllables::YiSyllableJuox => YI_SYLLABLE_JUOX,
-            YiSyllables::YiSyllableJuo => YI_SYLLABLE_JUO,
-            YiSyllables::YiSyllableJuop => YI_SYLLABLE_JUOP,
-            YiSyllables::YiSyllableJot => YI_SYLLABLE_JOT,
-            YiSyllables::YiSyllableJox => YI_SYLLABLE_JOX,
-            YiSyllables::YiSyllableJo => YI_SYLLABLE_JO,
-            YiSyllables::YiSyllableJop => YI_SYLLABLE_JOP,
-            YiSyllables::YiSyllableJut => YI_SYLLABLE_JUT,
-            YiSyllables::YiSyllableJux => YI_SYLLABLE_JUX,
-            YiSyllables::YiSyllableJu => YI_SYLLABLE_JU,
-            YiSyllables::YiSyllableJup => YI_SYLLABLE_JUP,
-            YiSyllables::YiSyllableJurx => YI_SYLLABLE_JURX,
-            YiSyllables::YiSyllableJur => YI_SYLLABLE_JUR,
-            YiSyllables::YiSyllableJyt => YI_SYLLABLE_JYT,
-            YiSyllables::YiSyllableJyx => YI_SYLLABLE_JYX,
-            YiSyllables::YiSyllableJy => YI_SYLLABLE_JY,
-            YiSyllables::YiSyllableJyp => YI_SYLLABLE_JYP,
-            YiSyllables::YiSyllableJyrx => YI_SYLLABLE_JYRX,
-            YiSyllables::YiSyllableJyr => YI_SYLLABLE_JYR,
-            YiSyllables::YiSyllableQit => YI_SYLLABLE_QIT,
-            YiSyllables::YiSyllableQix => YI_SYLLABLE_QIX,
-            YiSyllables::YiSyllableQi => YI_SYLLABLE_QI,
-            YiSyllables::YiSyllableQip => YI_SYLLABLE_QIP,
-            YiSyllables::YiSyllableQiet => YI_SYLLABLE_QIET,
-            YiSyllables::YiSyllableQiex => YI_SYLLABLE_QIEX,
-            YiSyllables::YiSyllableQie => YI_SYLLABLE_QIE,
-            YiSyllables::YiSyllableQiep => YI_SYLLABLE_QIEP,
-            YiSyllables::YiSyllableQuot => YI_SYLLABLE_QUOT,
-            YiSyllables::YiSyllableQuox => YI_SYLLABLE_QUOX,
-            YiSyllables::YiSyllableQuo => YI_SYLLABLE_QUO,
-            YiSyllables::YiSyllableQuop => YI_SYLLABLE_QUOP,
-            YiSyllables::YiSyllableQot => YI_SYLLABLE_QOT,
-            YiSyllables::YiSyllableQox => YI_SYLLABLE_QOX,
-            YiSyllables::YiSyllableQo => YI_SYLLABLE_QO,
-            YiSyllables::YiSyllableQop => YI_SYLLABLE_QOP,
-            YiSyllables::YiSyllableQut => YI_SYLLABLE_QUT,
-            YiSyllables::YiSyllableQux => YI_SYLLABLE_QUX,
-            YiSyllables::YiSyllableQu => YI_SYLLABLE_QU,
-            YiSyllables::YiSyllableQup => YI_SYLLABLE_QUP,
-            YiSyllables::YiSyllableQurx => YI_SYLLABLE_QURX,
-            YiSyllables::YiSyllableQur => YI_SYLLABLE_QUR,
-            YiSyllables::YiSyllableQyt => YI_SYLLABLE_QYT,
-            YiSyllables::YiSyllableQyx => YI_SYLLABLE_QYX,
-            YiSyllables::YiSyllableQy => YI_SYLLABLE_QY,
-            YiSyllables::YiSyllableQyp => YI_SYLLABLE_QYP,
-            YiSyllables::YiSyllableQyrx => YI_SYLLABLE_QYRX,
-            YiSyllables::YiSyllableQyr => YI_SYLLABLE_QYR,
-            YiSyllables::YiSyllableJjit => YI_SYLLABLE_JJIT,
-            YiSyllables::YiSyllableJjix => YI_SYLLABLE_JJIX,
-            YiSyllables::YiSyllableJji => YI_SYLLABLE_JJI,
-            YiSyllables::YiSyllableJjip => YI_SYLLABLE_JJIP,
-            YiSyllables::YiSyllableJjiet => YI_SYLLABLE_JJIET,
-            YiSyllables::YiSyllableJjiex => YI_SYLLABLE_JJIEX,
-            YiSyllables::YiSyllableJjie => YI_SYLLABLE_JJIE,
-            YiSyllables::YiSyllableJjiep => YI_SYLLABLE_JJIEP,
-            YiSyllables::YiSyllableJjuox => YI_SYLLABLE_JJUOX,
-            YiSyllables::YiSyllableJjuo => YI_SYLLABLE_JJUO,
-            YiSyllables::YiSyllableJjuop => YI_SYLLABLE_JJUOP,
-            YiSyllables::YiSyllableJjot => YI_SYLLABLE_JJOT,
-            YiSyllables::YiSyllableJjox => YI_SYLLABLE_JJOX,
-            YiSyllables::YiSyllableJjo => YI_SYLLABLE_JJO,
-            YiSyllables::YiSyllableJjop => YI_SYLLABLE_JJOP,
-            YiSyllables::YiSyllableJjut => YI_SYLLABLE_JJUT,
-            YiSyllables::YiSyllableJjux => YI_SYLLABLE_JJUX,
-            YiSyllables::YiSyllableJju => YI_SYLLABLE_JJU,
-            YiSyllables::YiSyllableJjup => YI_SYLLABLE_JJUP,
-            YiSyllables::YiSyllableJjurx => YI_SYLLABLE_JJURX,
-            YiSyllables::YiSyllableJjur => YI_SYLLABLE_JJUR,
-            YiSyllables::YiSyllableJjyt => YI_SYLLABLE_JJYT,
-            YiSyllables::YiSyllableJjyx => YI_SYLLABLE_JJYX,
-            YiSyllables::YiSyllableJjy => YI_SYLLABLE_JJY,
-            YiSyllables::YiSyllableJjyp => YI_SYLLABLE_JJYP,
-            YiSyllables::YiSyllableNjit => YI_SYLLABLE_NJIT,
-            YiSyllables::YiSyllableNjix => YI_SYLLABLE_NJIX,
-            YiSyllables::YiSyllableNji => YI_SYLLABLE_NJI,
-            YiSyllables::YiSyllableNjip => YI_SYLLABLE_NJIP,
-            YiSyllables::YiSyllableNjiet => YI_SYLLABLE_NJIET,
-            YiSyllables::YiSyllableNjiex => YI_SYLLABLE_NJIEX,
-            YiSyllables::YiSyllableNjie => YI_SYLLABLE_NJIE,
-            YiSyllables::YiSyllableNjiep => YI_SYLLABLE_NJIEP,
-            YiSyllables::YiSyllableNjuox => YI_SYLLABLE_NJUOX,
-            YiSyllables::YiSyllableNjuo => YI_SYLLABLE_NJUO,
-            YiSyllables::YiSyllableNjot => YI_SYLLABLE_NJOT,
-            YiSyllables::YiSyllableNjox => YI_SYLLABLE_NJOX,
-            YiSyllables::YiSyllableNjo => YI_SYLLABLE_NJO,
-            YiSyllables::YiSyllableNjop => YI_SYLLABLE_NJOP,
-            YiSyllables::YiSyllableNjux => YI_SYLLABLE_NJUX,
-            YiSyllables::YiSyllableNju => YI_SYLLABLE_NJU,
-            YiSyllables::YiSyllableNjup => YI_SYLLABLE_NJUP,
-            YiSyllables::YiSyllableNjurx => YI_SYLLABLE_NJURX,
-            YiSyllables::YiSyllableNjur => YI_SYLLABLE_NJUR,
-            YiSyllables::YiSyllableNjyt => YI_SYLLABLE_NJYT,
-            YiSyllables::YiSyllableNjyx => YI_SYLLABLE_NJYX,
-            YiSyllables::YiSyllableNjy => YI_SYLLABLE_NJY,
-            YiSyllables::YiSyllableNjyp => YI_SYLLABLE_NJYP,
-            YiSyllables::YiSyllableNjyrx => YI_SYLLABLE_NJYRX,
-            YiSyllables::YiSyllableNjyr => YI_SYLLABLE_NJYR,
-            YiSyllables::YiSyllableNyit => YI_SYLLABLE_NYIT,
-            YiSyllables::YiSyllableNyix => YI_SYLLABLE_NYIX,
-            YiSyllables::YiSyllableNyi => YI_SYLLABLE_NYI,
-            YiSyllables::YiSyllableNyip => YI_SYLLABLE_NYIP,
-            YiSyllables::YiSyllableNyiet => YI_SYLLABLE_NYIET,
-            YiSyllables::YiSyllableNyiex => YI_SYLLABLE_NYIEX,
-            YiSyllables::YiSyllableNyie => YI_SYLLABLE_NYIE,
-            YiSyllables::YiSyllableNyiep => YI_SYLLABLE_NYIEP,
-            YiSyllables::YiSyllableNyuox => YI_SYLLABLE_NYUOX,
-            YiSyllables::YiSyllableNyuo => YI_SYLLABLE_NYUO,
-            YiSyllables::YiSyllableNyuop => YI_SYLLABLE_NYUOP,
-            YiSyllables::YiSyllableNyot => YI_SYLLABLE_NYOT,
-            YiSyllables::YiSyllableNyox => YI_SYLLABLE_NYOX,
-            YiSyllables::YiSyllableNyo => YI_SYLLABLE_NYO,
-            YiSyllables::YiSyllableNyop => YI_SYLLABLE_NYOP,
-            YiSyllables::YiSyllableNyut => YI_SYLLABLE_NYUT,
-            YiSyllables::YiSyllableNyux => YI_SYLLABLE_NYUX,
-            YiSyllables::YiSyllableNyu => YI_SYLLABLE_NYU,
-            YiSyllables::YiSyllableNyup => YI_SYLLABLE_NYUP,
-            YiSyllables::YiSyllableXit => YI_SYLLABLE_XIT,
-            YiSyllables::YiSyllableXix => YI_SYLLABLE_XIX,
-            YiSyllables::YiSyllableXi => YI_SYLLABLE_XI,
-            YiSyllables::YiSyllableXip => YI_SYLLABLE_XIP,
-            YiSyllables::YiSyllableXiet => YI_SYLLABLE_XIET,
-            YiSyllables::YiSyllableXiex => YI_SYLLABLE_XIEX,
-            YiSyllables::YiSyllableXie => YI_SYLLABLE_XIE,
-            YiSyllables::YiSyllableXiep => YI_SYLLABLE_XIEP,
-            YiSyllables::YiSyllableXuox => YI_SYLLABLE_XUOX,
-            YiSyllables::YiSyllableXuo => YI_SYLLABLE_XUO,
-            YiSyllables::YiSyllableXot => YI_SYLLABLE_XOT,
-            YiSyllables::YiSyllableXox => YI_SYLLABLE_XOX,
-            YiSyllables::YiSyllableXo => YI_SYLLABLE_XO,
-            YiSyllables::YiSyllableXop => YI_SYLLABLE_XOP,
-            YiSyllables::YiSyllableXyt => YI_SYLLABLE_XYT,
-            YiSyllables::YiSyllableXyx => YI_SYLLABLE_XYX,
-            YiSyllables::YiSyllableXy => YI_SYLLABLE_XY,
-            YiSyllables::YiSyllableXyp => YI_SYLLABLE_XYP,
-            YiSyllables::YiSyllableXyrx => YI_SYLLABLE_XYRX,
-            YiSyllables::YiSyllableXyr => YI_SYLLABLE_XYR,
-            YiSyllables::YiSyllableYit => YI_SYLLABLE_YIT,
-            YiSyllables::YiSyllableYix => YI_SYLLABLE_YIX,
-            YiSyllables::YiSyllableYi => YI_SYLLABLE_YI,
-            YiSyllables::YiSyllableYip => YI_SYLLABLE_YIP,
-            YiSyllables::YiSyllableYiet => YI_SYLLABLE_YIET,
-            YiSyllables::YiSyllableYiex => YI_SYLLABLE_YIEX,
-            YiSyllables::YiSyllableYie => YI_SYLLABLE_YIE,
-            YiSyllables::YiSyllableYiep => YI_SYLLABLE_YIEP,
-            YiSyllables::YiSyllableYuot => YI_SYLLABLE_YUOT,
-            YiSyllables::YiSyllableYuox => YI_SYLLABLE_YUOX,
-            YiSyllables::YiSyllableYuo => YI_SYLLABLE_YUO,
-            YiSyllables::YiSyllableYuop => YI_SYLLABLE_YUOP,
-            YiSyllables::YiSyllableYot => YI_SYLLABLE_YOT,
-            YiSyllables::YiSyllableYox => YI_SYLLABLE_YOX,
-            YiSyllables::YiSyllableYo => YI_SYLLABLE_YO,
-            YiSyllables::YiSyllableYop => YI_SYLLABLE_YOP,
-            YiSyllables::YiSyllableYut => YI_SYLLABLE_YUT,
-            YiSyllables::YiSyllableYux => YI_SYLLABLE_YUX,
-            YiSyllables::YiSyllableYu => YI_SYLLABLE_YU,
-            YiSyllables::YiSyllableYup => YI_SYLLABLE_YUP,
-            YiSyllables::YiSyllableYurx => YI_SYLLABLE_YURX,
-            YiSyllables::YiSyllableYur => YI_SYLLABLE_YUR,
-            YiSyllables::YiSyllableYyt => YI_SYLLABLE_YYT,
-            YiSyllables::YiSyllableYyx => YI_SYLLABLE_YYX,
-            YiSyllables::YiSyllableYy => YI_SYLLABLE_YY,
-            YiSyllables::YiSyllableYyp => YI_SYLLABLE_YYP,
-            YiSyllables::YiSyllableYyrx => YI_SYLLABLE_YYRX,
-            YiSyllables::YiSyllableYyr => YI_SYLLABLE_YYR,
+            YiSyllables::YiSyllableIt => 'ꀀ',
+            YiSyllables::YiSyllableIx => 'ꀁ',
+            YiSyllables::YiSyllableI => 'ꀂ',
+            YiSyllables::YiSyllableIp => 'ꀃ',
+            YiSyllables::YiSyllableIet => 'ꀄ',
+            YiSyllables::YiSyllableIex => 'ꀅ',
+            YiSyllables::YiSyllableIe => 'ꀆ',
+            YiSyllables::YiSyllableIep => 'ꀇ',
+            YiSyllables::YiSyllableAt => 'ꀈ',
+            YiSyllables::YiSyllableAx => 'ꀉ',
+            YiSyllables::YiSyllableA => 'ꀊ',
+            YiSyllables::YiSyllableAp => 'ꀋ',
+            YiSyllables::YiSyllableUox => 'ꀌ',
+            YiSyllables::YiSyllableUo => 'ꀍ',
+            YiSyllables::YiSyllableUop => 'ꀎ',
+            YiSyllables::YiSyllableOt => 'ꀏ',
+            YiSyllables::YiSyllableOx => 'ꀐ',
+            YiSyllables::YiSyllableO => 'ꀑ',
+            YiSyllables::YiSyllableOp => 'ꀒ',
+            YiSyllables::YiSyllableEx => 'ꀓ',
+            YiSyllables::YiSyllableE => 'ꀔ',
+            YiSyllables::YiSyllableWu => 'ꀕ',
+            YiSyllables::YiSyllableBit => 'ꀖ',
+            YiSyllables::YiSyllableBix => 'ꀗ',
+            YiSyllables::YiSyllableBi => 'ꀘ',
+            YiSyllables::YiSyllableBip => 'ꀙ',
+            YiSyllables::YiSyllableBiet => 'ꀚ',
+            YiSyllables::YiSyllableBiex => 'ꀛ',
+            YiSyllables::YiSyllableBie => 'ꀜ',
+            YiSyllables::YiSyllableBiep => 'ꀝ',
+            YiSyllables::YiSyllableBat => 'ꀞ',
+            YiSyllables::YiSyllableBax => 'ꀟ',
+            YiSyllables::YiSyllableBa => 'ꀠ',
+            YiSyllables::YiSyllableBap => 'ꀡ',
+            YiSyllables::YiSyllableBuox => 'ꀢ',
+            YiSyllables::YiSyllableBuo => 'ꀣ',
+            YiSyllables::YiSyllableBuop => 'ꀤ',
+            YiSyllables::YiSyllableBot => 'ꀥ',
+            YiSyllables::YiSyllableBox => 'ꀦ',
+            YiSyllables::YiSyllableBo => 'ꀧ',
+            YiSyllables::YiSyllableBop => 'ꀨ',
+            YiSyllables::YiSyllableBex => 'ꀩ',
+            YiSyllables::YiSyllableBe => 'ꀪ',
+            YiSyllables::YiSyllableBep => 'ꀫ',
+            YiSyllables::YiSyllableBut => 'ꀬ',
+            YiSyllables::YiSyllableBux => 'ꀭ',
+            YiSyllables::YiSyllableBu => 'ꀮ',
+            YiSyllables::YiSyllableBup => 'ꀯ',
+            YiSyllables::YiSyllableBurx => 'ꀰ',
+            YiSyllables::YiSyllableBur => 'ꀱ',
+            YiSyllables::YiSyllableByt => 'ꀲ',
+            YiSyllables::YiSyllableByx => 'ꀳ',
+            YiSyllables::YiSyllableBy => 'ꀴ',
+            YiSyllables::YiSyllableByp => 'ꀵ',
+            YiSyllables::YiSyllableByrx => 'ꀶ',
+            YiSyllables::YiSyllableByr => 'ꀷ',
+            YiSyllables::YiSyllablePit => 'ꀸ',
+            YiSyllables::YiSyllablePix => 'ꀹ',
+            YiSyllables::YiSyllablePi => 'ꀺ',
+            YiSyllables::YiSyllablePip => 'ꀻ',
+            YiSyllables::YiSyllablePiex => 'ꀼ',
+            YiSyllables::YiSyllablePie => 'ꀽ',
+            YiSyllables::YiSyllablePiep => 'ꀾ',
+            YiSyllables::YiSyllablePat => 'ꀿ',
+            YiSyllables::YiSyllablePax => 'ꁀ',
+            YiSyllables::YiSyllablePa => 'ꁁ',
+            YiSyllables::YiSyllablePap => 'ꁂ',
+            YiSyllables::YiSyllablePuox => 'ꁃ',
+            YiSyllables::YiSyllablePuo => 'ꁄ',
+            YiSyllables::YiSyllablePuop => 'ꁅ',
+            YiSyllables::YiSyllablePot => 'ꁆ',
+            YiSyllables::YiSyllablePox => 'ꁇ',
+            YiSyllables::YiSyllablePo => 'ꁈ',
+            YiSyllables::YiSyllablePop => 'ꁉ',
+            YiSyllables::YiSyllablePut => 'ꁊ',
+            YiSyllables::YiSyllablePux => 'ꁋ',
+            YiSyllables::YiSyllablePu => 'ꁌ',
+            YiSyllables::YiSyllablePup => 'ꁍ',
+            YiSyllables::YiSyllablePurx => 'ꁎ',
+            YiSyllables::YiSyllablePur => 'ꁏ',
+            YiSyllables::YiSyllablePyt => 'ꁐ',
+            YiSyllables::YiSyllablePyx => 'ꁑ',
+            YiSyllables::YiSyllablePy => 'ꁒ',
+            YiSyllables::YiSyllablePyp => 'ꁓ',
+            YiSyllables::YiSyllablePyrx => 'ꁔ',
+            YiSyllables::YiSyllablePyr => 'ꁕ',
+            YiSyllables::YiSyllableBbit => 'ꁖ',
+            YiSyllables::YiSyllableBbix => 'ꁗ',
+            YiSyllables::YiSyllableBbi => 'ꁘ',
+            YiSyllables::YiSyllableBbip => 'ꁙ',
+            YiSyllables::YiSyllableBbiet => 'ꁚ',
+            YiSyllables::YiSyllableBbiex => 'ꁛ',
+            YiSyllables::YiSyllableBbie => 'ꁜ',
+            YiSyllables::YiSyllableBbiep => 'ꁝ',
+            YiSyllables::YiSyllableBbat => 'ꁞ',
+            YiSyllables::YiSyllableBbax => 'ꁟ',
+            YiSyllables::YiSyllableBba => 'ꁠ',
+            YiSyllables::YiSyllableBbap => 'ꁡ',
+            YiSyllables::YiSyllableBbuox => 'ꁢ',
+            YiSyllables::YiSyllableBbuo => 'ꁣ',
+            YiSyllables::YiSyllableBbuop => 'ꁤ',
+            YiSyllables::YiSyllableBbot => 'ꁥ',
+            YiSyllables::YiSyllableBbox => 'ꁦ',
+            YiSyllables::YiSyllableBbo => 'ꁧ',
+            YiSyllables::YiSyllableBbop => 'ꁨ',
+            YiSyllables::YiSyllableBbex => 'ꁩ',
+            YiSyllables::YiSyllableBbe => 'ꁪ',
+            YiSyllables::YiSyllableBbep => 'ꁫ',
+            YiSyllables::YiSyllableBbut => 'ꁬ',
+            YiSyllables::YiSyllableBbux => 'ꁭ',
+            YiSyllables::YiSyllableBbu => 'ꁮ',
+            YiSyllables::YiSyllableBbup => 'ꁯ',
+            YiSyllables::YiSyllableBburx => 'ꁰ',
+            YiSyllables::YiSyllableBbur => 'ꁱ',
+            YiSyllables::YiSyllableBbyt => 'ꁲ',
+            YiSyllables::YiSyllableBbyx => 'ꁳ',
+            YiSyllables::YiSyllableBby => 'ꁴ',
+            YiSyllables::YiSyllableBbyp => 'ꁵ',
+            YiSyllables::YiSyllableNbit => 'ꁶ',
+            YiSyllables::YiSyllableNbix => 'ꁷ',
+            YiSyllables::YiSyllableNbi => 'ꁸ',
+            YiSyllables::YiSyllableNbip => 'ꁹ',
+            YiSyllables::YiSyllableNbiex => 'ꁺ',
+            YiSyllables::YiSyllableNbie => 'ꁻ',
+            YiSyllables::YiSyllableNbiep => 'ꁼ',
+            YiSyllables::YiSyllableNbat => 'ꁽ',
+            YiSyllables::YiSyllableNbax => 'ꁾ',
+            YiSyllables::YiSyllableNba => 'ꁿ',
+            YiSyllables::YiSyllableNbap => 'ꂀ',
+            YiSyllables::YiSyllableNbot => 'ꂁ',
+            YiSyllables::YiSyllableNbox => 'ꂂ',
+            YiSyllables::YiSyllableNbo => 'ꂃ',
+            YiSyllables::YiSyllableNbop => 'ꂄ',
+            YiSyllables::YiSyllableNbut => 'ꂅ',
+            YiSyllables::YiSyllableNbux => 'ꂆ',
+            YiSyllables::YiSyllableNbu => 'ꂇ',
+            YiSyllables::YiSyllableNbup => 'ꂈ',
+            YiSyllables::YiSyllableNburx => 'ꂉ',
+            YiSyllables::YiSyllableNbur => 'ꂊ',
+            YiSyllables::YiSyllableNbyt => 'ꂋ',
+            YiSyllables::YiSyllableNbyx => 'ꂌ',
+            YiSyllables::YiSyllableNby => 'ꂍ',
+            YiSyllables::YiSyllableNbyp => 'ꂎ',
+            YiSyllables::YiSyllableNbyrx => 'ꂏ',
+            YiSyllables::YiSyllableNbyr => 'ꂐ',
+            YiSyllables::YiSyllableHmit => 'ꂑ',
+            YiSyllables::YiSyllableHmix => 'ꂒ',
+            YiSyllables::YiSyllableHmi => 'ꂓ',
+            YiSyllables::YiSyllableHmip => 'ꂔ',
+            YiSyllables::YiSyllableHmiex => 'ꂕ',
+            YiSyllables::YiSyllableHmie => 'ꂖ',
+            YiSyllables::YiSyllableHmiep => 'ꂗ',
+            YiSyllables::YiSyllableHmat => 'ꂘ',
+            YiSyllables::YiSyllableHmax => 'ꂙ',
+            YiSyllables::YiSyllableHma => 'ꂚ',
+            YiSyllables::YiSyllableHmap => 'ꂛ',
+            YiSyllables::YiSyllableHmuox => 'ꂜ',
+            YiSyllables::YiSyllableHmuo => 'ꂝ',
+            YiSyllables::YiSyllableHmuop => 'ꂞ',
+            YiSyllables::YiSyllableHmot => 'ꂟ',
+            YiSyllables::YiSyllableHmox => 'ꂠ',
+            YiSyllables::YiSyllableHmo => 'ꂡ',
+            YiSyllables::YiSyllableHmop => 'ꂢ',
+            YiSyllables::YiSyllableHmut => 'ꂣ',
+            YiSyllables::YiSyllableHmux => 'ꂤ',
+            YiSyllables::YiSyllableHmu => 'ꂥ',
+            YiSyllables::YiSyllableHmup => 'ꂦ',
+            YiSyllables::YiSyllableHmurx => 'ꂧ',
+            YiSyllables::YiSyllableHmur => 'ꂨ',
+            YiSyllables::YiSyllableHmyx => 'ꂩ',
+            YiSyllables::YiSyllableHmy => 'ꂪ',
+            YiSyllables::YiSyllableHmyp => 'ꂫ',
+            YiSyllables::YiSyllableHmyrx => 'ꂬ',
+            YiSyllables::YiSyllableHmyr => 'ꂭ',
+            YiSyllables::YiSyllableMit => 'ꂮ',
+            YiSyllables::YiSyllableMix => 'ꂯ',
+            YiSyllables::YiSyllableMi => 'ꂰ',
+            YiSyllables::YiSyllableMip => 'ꂱ',
+            YiSyllables::YiSyllableMiex => 'ꂲ',
+            YiSyllables::YiSyllableMie => 'ꂳ',
+            YiSyllables::YiSyllableMiep => 'ꂴ',
+            YiSyllables::YiSyllableMat => 'ꂵ',
+            YiSyllables::YiSyllableMax => 'ꂶ',
+            YiSyllables::YiSyllableMa => 'ꂷ',
+            YiSyllables::YiSyllableMap => 'ꂸ',
+            YiSyllables::YiSyllableMuot => 'ꂹ',
+            YiSyllables::YiSyllableMuox => 'ꂺ',
+            YiSyllables::YiSyllableMuo => 'ꂻ',
+            YiSyllables::YiSyllableMuop => 'ꂼ',
+            YiSyllables::YiSyllableMot => 'ꂽ',
+            YiSyllables::YiSyllableMox => 'ꂾ',
+            YiSyllables::YiSyllableMo => 'ꂿ',
+            YiSyllables::YiSyllableMop => 'ꃀ',
+            YiSyllables::YiSyllableMex => 'ꃁ',
+            YiSyllables::YiSyllableMe => 'ꃂ',
+            YiSyllables::YiSyllableMut => 'ꃃ',
+            YiSyllables::YiSyllableMux => 'ꃄ',
+            YiSyllables::YiSyllableMu => 'ꃅ',
+            YiSyllables::YiSyllableMup => 'ꃆ',
+            YiSyllables::YiSyllableMurx => 'ꃇ',
+            YiSyllables::YiSyllableMur => 'ꃈ',
+            YiSyllables::YiSyllableMyt => 'ꃉ',
+            YiSyllables::YiSyllableMyx => 'ꃊ',
+            YiSyllables::YiSyllableMy => 'ꃋ',
+            YiSyllables::YiSyllableMyp => 'ꃌ',
+            YiSyllables::YiSyllableFit => 'ꃍ',
+            YiSyllables::YiSyllableFix => 'ꃎ',
+            YiSyllables::YiSyllableFi => 'ꃏ',
+            YiSyllables::YiSyllableFip => 'ꃐ',
+            YiSyllables::YiSyllableFat => 'ꃑ',
+            YiSyllables::YiSyllableFax => 'ꃒ',
+            YiSyllables::YiSyllableFa => 'ꃓ',
+            YiSyllables::YiSyllableFap => 'ꃔ',
+            YiSyllables::YiSyllableFox => 'ꃕ',
+            YiSyllables::YiSyllableFo => 'ꃖ',
+            YiSyllables::YiSyllableFop => 'ꃗ',
+            YiSyllables::YiSyllableFut => 'ꃘ',
+            YiSyllables::YiSyllableFux => 'ꃙ',
+            YiSyllables::YiSyllableFu => 'ꃚ',
+            YiSyllables::YiSyllableFup => 'ꃛ',
+            YiSyllables::YiSyllableFurx => 'ꃜ',
+            YiSyllables::YiSyllableFur => 'ꃝ',
+            YiSyllables::YiSyllableFyt => 'ꃞ',
+            YiSyllables::YiSyllableFyx => 'ꃟ',
+            YiSyllables::YiSyllableFy => 'ꃠ',
+            YiSyllables::YiSyllableFyp => 'ꃡ',
+            YiSyllables::YiSyllableVit => 'ꃢ',
+            YiSyllables::YiSyllableVix => 'ꃣ',
+            YiSyllables::YiSyllableVi => 'ꃤ',
+            YiSyllables::YiSyllableVip => 'ꃥ',
+            YiSyllables::YiSyllableViet => 'ꃦ',
+            YiSyllables::YiSyllableViex => 'ꃧ',
+            YiSyllables::YiSyllableVie => 'ꃨ',
+            YiSyllables::YiSyllableViep => 'ꃩ',
+            YiSyllables::YiSyllableVat => 'ꃪ',
+            YiSyllables::YiSyllableVax => 'ꃫ',
+            YiSyllables::YiSyllableVa => 'ꃬ',
+            YiSyllables::YiSyllableVap => 'ꃭ',
+            YiSyllables::YiSyllableVot => 'ꃮ',
+            YiSyllables::YiSyllableVox => 'ꃯ',
+            YiSyllables::YiSyllableVo => 'ꃰ',
+            YiSyllables::YiSyllableVop => 'ꃱ',
+            YiSyllables::YiSyllableVex => 'ꃲ',
+            YiSyllables::YiSyllableVep => 'ꃳ',
+            YiSyllables::YiSyllableVut => 'ꃴ',
+            YiSyllables::YiSyllableVux => 'ꃵ',
+            YiSyllables::YiSyllableVu => 'ꃶ',
+            YiSyllables::YiSyllableVup => 'ꃷ',
+            YiSyllables::YiSyllableVurx => 'ꃸ',
+            YiSyllables::YiSyllableVur => 'ꃹ',
+            YiSyllables::YiSyllableVyt => 'ꃺ',
+            YiSyllables::YiSyllableVyx => 'ꃻ',
+            YiSyllables::YiSyllableVy => 'ꃼ',
+            YiSyllables::YiSyllableVyp => 'ꃽ',
+            YiSyllables::YiSyllableVyrx => 'ꃾ',
+            YiSyllables::YiSyllableVyr => 'ꃿ',
+            YiSyllables::YiSyllableDit => 'ꄀ',
+            YiSyllables::YiSyllableDix => 'ꄁ',
+            YiSyllables::YiSyllableDi => 'ꄂ',
+            YiSyllables::YiSyllableDip => 'ꄃ',
+            YiSyllables::YiSyllableDiex => 'ꄄ',
+            YiSyllables::YiSyllableDie => 'ꄅ',
+            YiSyllables::YiSyllableDiep => 'ꄆ',
+            YiSyllables::YiSyllableDat => 'ꄇ',
+            YiSyllables::YiSyllableDax => 'ꄈ',
+            YiSyllables::YiSyllableDa => 'ꄉ',
+            YiSyllables::YiSyllableDap => 'ꄊ',
+            YiSyllables::YiSyllableDuox => 'ꄋ',
+            YiSyllables::YiSyllableDuo => 'ꄌ',
+            YiSyllables::YiSyllableDot => 'ꄍ',
+            YiSyllables::YiSyllableDox => 'ꄎ',
+            YiSyllables::YiSyllableDo => 'ꄏ',
+            YiSyllables::YiSyllableDop => 'ꄐ',
+            YiSyllables::YiSyllableDex => 'ꄑ',
+            YiSyllables::YiSyllableDe => 'ꄒ',
+            YiSyllables::YiSyllableDep => 'ꄓ',
+            YiSyllables::YiSyllableDut => 'ꄔ',
+            YiSyllables::YiSyllableDux => 'ꄕ',
+            YiSyllables::YiSyllableDu => 'ꄖ',
+            YiSyllables::YiSyllableDup => 'ꄗ',
+            YiSyllables::YiSyllableDurx => 'ꄘ',
+            YiSyllables::YiSyllableDur => 'ꄙ',
+            YiSyllables::YiSyllableTit => 'ꄚ',
+            YiSyllables::YiSyllableTix => 'ꄛ',
+            YiSyllables::YiSyllableTi => 'ꄜ',
+            YiSyllables::YiSyllableTip => 'ꄝ',
+            YiSyllables::YiSyllableTiex => 'ꄞ',
+            YiSyllables::YiSyllableTie => 'ꄟ',
+            YiSyllables::YiSyllableTiep => 'ꄠ',
+            YiSyllables::YiSyllableTat => 'ꄡ',
+            YiSyllables::YiSyllableTax => 'ꄢ',
+            YiSyllables::YiSyllableTa => 'ꄣ',
+            YiSyllables::YiSyllableTap => 'ꄤ',
+            YiSyllables::YiSyllableTuot => 'ꄥ',
+            YiSyllables::YiSyllableTuox => 'ꄦ',
+            YiSyllables::YiSyllableTuo => 'ꄧ',
+            YiSyllables::YiSyllableTuop => 'ꄨ',
+            YiSyllables::YiSyllableTot => 'ꄩ',
+            YiSyllables::YiSyllableTox => 'ꄪ',
+            YiSyllables::YiSyllableTo => 'ꄫ',
+            YiSyllables::YiSyllableTop => 'ꄬ',
+            YiSyllables::YiSyllableTex => 'ꄭ',
+            YiSyllables::YiSyllableTe => 'ꄮ',
+            YiSyllables::YiSyllableTep => 'ꄯ',
+            YiSyllables::YiSyllableTut => 'ꄰ',
+            YiSyllables::YiSyllableTux => 'ꄱ',
+            YiSyllables::YiSyllableTu => 'ꄲ',
+            YiSyllables::YiSyllableTup => 'ꄳ',
+            YiSyllables::YiSyllableTurx => 'ꄴ',
+            YiSyllables::YiSyllableTur => 'ꄵ',
+            YiSyllables::YiSyllableDdit => 'ꄶ',
+            YiSyllables::YiSyllableDdix => 'ꄷ',
+            YiSyllables::YiSyllableDdi => 'ꄸ',
+            YiSyllables::YiSyllableDdip => 'ꄹ',
+            YiSyllables::YiSyllableDdiex => 'ꄺ',
+            YiSyllables::YiSyllableDdie => 'ꄻ',
+            YiSyllables::YiSyllableDdiep => 'ꄼ',
+            YiSyllables::YiSyllableDdat => 'ꄽ',
+            YiSyllables::YiSyllableDdax => 'ꄾ',
+            YiSyllables::YiSyllableDda => 'ꄿ',
+            YiSyllables::YiSyllableDdap => 'ꅀ',
+            YiSyllables::YiSyllableDduox => 'ꅁ',
+            YiSyllables::YiSyllableDduo => 'ꅂ',
+            YiSyllables::YiSyllableDduop => 'ꅃ',
+            YiSyllables::YiSyllableDdot => 'ꅄ',
+            YiSyllables::YiSyllableDdox => 'ꅅ',
+            YiSyllables::YiSyllableDdo => 'ꅆ',
+            YiSyllables::YiSyllableDdop => 'ꅇ',
+            YiSyllables::YiSyllableDdex => 'ꅈ',
+            YiSyllables::YiSyllableDde => 'ꅉ',
+            YiSyllables::YiSyllableDdep => 'ꅊ',
+            YiSyllables::YiSyllableDdut => 'ꅋ',
+            YiSyllables::YiSyllableDdux => 'ꅌ',
+            YiSyllables::YiSyllableDdu => 'ꅍ',
+            YiSyllables::YiSyllableDdup => 'ꅎ',
+            YiSyllables::YiSyllableDdurx => 'ꅏ',
+            YiSyllables::YiSyllableDdur => 'ꅐ',
+            YiSyllables::YiSyllableNdit => 'ꅑ',
+            YiSyllables::YiSyllableNdix => 'ꅒ',
+            YiSyllables::YiSyllableNdi => 'ꅓ',
+            YiSyllables::YiSyllableNdip => 'ꅔ',
+            YiSyllables::YiSyllableNdiex => 'ꅕ',
+            YiSyllables::YiSyllableNdie => 'ꅖ',
+            YiSyllables::YiSyllableNdat => 'ꅗ',
+            YiSyllables::YiSyllableNdax => 'ꅘ',
+            YiSyllables::YiSyllableNda => 'ꅙ',
+            YiSyllables::YiSyllableNdap => 'ꅚ',
+            YiSyllables::YiSyllableNdot => 'ꅛ',
+            YiSyllables::YiSyllableNdox => 'ꅜ',
+            YiSyllables::YiSyllableNdo => 'ꅝ',
+            YiSyllables::YiSyllableNdop => 'ꅞ',
+            YiSyllables::YiSyllableNdex => 'ꅟ',
+            YiSyllables::YiSyllableNde => 'ꅠ',
+            YiSyllables::YiSyllableNdep => 'ꅡ',
+            YiSyllables::YiSyllableNdut => 'ꅢ',
+            YiSyllables::YiSyllableNdux => 'ꅣ',
+            YiSyllables::YiSyllableNdu => 'ꅤ',
+            YiSyllables::YiSyllableNdup => 'ꅥ',
+            YiSyllables::YiSyllableNdurx => 'ꅦ',
+            YiSyllables::YiSyllableNdur => 'ꅧ',
+            YiSyllables::YiSyllableHnit => 'ꅨ',
+            YiSyllables::YiSyllableHnix => 'ꅩ',
+            YiSyllables::YiSyllableHni => 'ꅪ',
+            YiSyllables::YiSyllableHnip => 'ꅫ',
+            YiSyllables::YiSyllableHniet => 'ꅬ',
+            YiSyllables::YiSyllableHniex => 'ꅭ',
+            YiSyllables::YiSyllableHnie => 'ꅮ',
+            YiSyllables::YiSyllableHniep => 'ꅯ',
+            YiSyllables::YiSyllableHnat => 'ꅰ',
+            YiSyllables::YiSyllableHnax => 'ꅱ',
+            YiSyllables::YiSyllableHna => 'ꅲ',
+            YiSyllables::YiSyllableHnap => 'ꅳ',
+            YiSyllables::YiSyllableHnuox => 'ꅴ',
+            YiSyllables::YiSyllableHnuo => 'ꅵ',
+            YiSyllables::YiSyllableHnot => 'ꅶ',
+            YiSyllables::YiSyllableHnox => 'ꅷ',
+            YiSyllables::YiSyllableHnop => 'ꅸ',
+            YiSyllables::YiSyllableHnex => 'ꅹ',
+            YiSyllables::YiSyllableHne => 'ꅺ',
+            YiSyllables::YiSyllableHnep => 'ꅻ',
+            YiSyllables::YiSyllableHnut => 'ꅼ',
+            YiSyllables::YiSyllableNit => 'ꅽ',
+            YiSyllables::YiSyllableNix => 'ꅾ',
+            YiSyllables::YiSyllableNi => 'ꅿ',
+            YiSyllables::YiSyllableNip => 'ꆀ',
+            YiSyllables::YiSyllableNiex => 'ꆁ',
+            YiSyllables::YiSyllableNie => 'ꆂ',
+            YiSyllables::YiSyllableNiep => 'ꆃ',
+            YiSyllables::YiSyllableNax => 'ꆄ',
+            YiSyllables::YiSyllableNa => 'ꆅ',
+            YiSyllables::YiSyllableNap => 'ꆆ',
+            YiSyllables::YiSyllableNuox => 'ꆇ',
+            YiSyllables::YiSyllableNuo => 'ꆈ',
+            YiSyllables::YiSyllableNuop => 'ꆉ',
+            YiSyllables::YiSyllableNot => 'ꆊ',
+            YiSyllables::YiSyllableNox => 'ꆋ',
+            YiSyllables::YiSyllableNo => 'ꆌ',
+            YiSyllables::YiSyllableNop => 'ꆍ',
+            YiSyllables::YiSyllableNex => 'ꆎ',
+            YiSyllables::YiSyllableNe => 'ꆏ',
+            YiSyllables::YiSyllableNep => 'ꆐ',
+            YiSyllables::YiSyllableNut => 'ꆑ',
+            YiSyllables::YiSyllableNux => 'ꆒ',
+            YiSyllables::YiSyllableNu => 'ꆓ',
+            YiSyllables::YiSyllableNup => 'ꆔ',
+            YiSyllables::YiSyllableNurx => 'ꆕ',
+            YiSyllables::YiSyllableNur => 'ꆖ',
+            YiSyllables::YiSyllableHlit => 'ꆗ',
+            YiSyllables::YiSyllableHlix => 'ꆘ',
+            YiSyllables::YiSyllableHli => 'ꆙ',
+            YiSyllables::YiSyllableHlip => 'ꆚ',
+            YiSyllables::YiSyllableHliex => 'ꆛ',
+            YiSyllables::YiSyllableHlie => 'ꆜ',
+            YiSyllables::YiSyllableHliep => 'ꆝ',
+            YiSyllables::YiSyllableHlat => 'ꆞ',
+            YiSyllables::YiSyllableHlax => 'ꆟ',
+            YiSyllables::YiSyllableHla => 'ꆠ',
+            YiSyllables::YiSyllableHlap => 'ꆡ',
+            YiSyllables::YiSyllableHluox => 'ꆢ',
+            YiSyllables::YiSyllableHluo => 'ꆣ',
+            YiSyllables::YiSyllableHluop => 'ꆤ',
+            YiSyllables::YiSyllableHlox => 'ꆥ',
+            YiSyllables::YiSyllableHlo => 'ꆦ',
+            YiSyllables::YiSyllableHlop => 'ꆧ',
+            YiSyllables::YiSyllableHlex => 'ꆨ',
+            YiSyllables::YiSyllableHle => 'ꆩ',
+            YiSyllables::YiSyllableHlep => 'ꆪ',
+            YiSyllables::YiSyllableHlut => 'ꆫ',
+            YiSyllables::YiSyllableHlux => 'ꆬ',
+            YiSyllables::YiSyllableHlu => 'ꆭ',
+            YiSyllables::YiSyllableHlup => 'ꆮ',
+            YiSyllables::YiSyllableHlurx => 'ꆯ',
+            YiSyllables::YiSyllableHlur => 'ꆰ',
+            YiSyllables::YiSyllableHlyt => 'ꆱ',
+            YiSyllables::YiSyllableHlyx => 'ꆲ',
+            YiSyllables::YiSyllableHly => 'ꆳ',
+            YiSyllables::YiSyllableHlyp => 'ꆴ',
+            YiSyllables::YiSyllableHlyrx => 'ꆵ',
+            YiSyllables::YiSyllableHlyr => 'ꆶ',
+            YiSyllables::YiSyllableLit => 'ꆷ',
+            YiSyllables::YiSyllableLix => 'ꆸ',
+            YiSyllables::YiSyllableLi => 'ꆹ',
+            YiSyllables::YiSyllableLip => 'ꆺ',
+            YiSyllables::YiSyllableLiet => 'ꆻ',
+            YiSyllables::YiSyllableLiex => 'ꆼ',
+            YiSyllables::YiSyllableLie => 'ꆽ',
+            YiSyllables::YiSyllableLiep => 'ꆾ',
+            YiSyllables::YiSyllableLat => 'ꆿ',
+            YiSyllables::YiSyllableLax => 'ꇀ',
+            YiSyllables::YiSyllableLa => 'ꇁ',
+            YiSyllables::YiSyllableLap => 'ꇂ',
+            YiSyllables::YiSyllableLuot => 'ꇃ',
+            YiSyllables::YiSyllableLuox => 'ꇄ',
+            YiSyllables::YiSyllableLuo => 'ꇅ',
+            YiSyllables::YiSyllableLuop => 'ꇆ',
+            YiSyllables::YiSyllableLot => 'ꇇ',
+            YiSyllables::YiSyllableLox => 'ꇈ',
+            YiSyllables::YiSyllableLo => 'ꇉ',
+            YiSyllables::YiSyllableLop => 'ꇊ',
+            YiSyllables::YiSyllableLex => 'ꇋ',
+            YiSyllables::YiSyllableLe => 'ꇌ',
+            YiSyllables::YiSyllableLep => 'ꇍ',
+            YiSyllables::YiSyllableLut => 'ꇎ',
+            YiSyllables::YiSyllableLux => 'ꇏ',
+            YiSyllables::YiSyllableLu => 'ꇐ',
+            YiSyllables::YiSyllableLup => 'ꇑ',
+            YiSyllables::YiSyllableLurx => 'ꇒ',
+            YiSyllables::YiSyllableLur => 'ꇓ',
+            YiSyllables::YiSyllableLyt => 'ꇔ',
+            YiSyllables::YiSyllableLyx => 'ꇕ',
+            YiSyllables::YiSyllableLy => 'ꇖ',
+            YiSyllables::YiSyllableLyp => 'ꇗ',
+            YiSyllables::YiSyllableLyrx => 'ꇘ',
+            YiSyllables::YiSyllableLyr => 'ꇙ',
+            YiSyllables::YiSyllableGit => 'ꇚ',
+            YiSyllables::YiSyllableGix => 'ꇛ',
+            YiSyllables::YiSyllableGi => 'ꇜ',
+            YiSyllables::YiSyllableGip => 'ꇝ',
+            YiSyllables::YiSyllableGiet => 'ꇞ',
+            YiSyllables::YiSyllableGiex => 'ꇟ',
+            YiSyllables::YiSyllableGie => 'ꇠ',
+            YiSyllables::YiSyllableGiep => 'ꇡ',
+            YiSyllables::YiSyllableGat => 'ꇢ',
+            YiSyllables::YiSyllableGax => 'ꇣ',
+            YiSyllables::YiSyllableGa => 'ꇤ',
+            YiSyllables::YiSyllableGap => 'ꇥ',
+            YiSyllables::YiSyllableGuot => 'ꇦ',
+            YiSyllables::YiSyllableGuox => 'ꇧ',
+            YiSyllables::YiSyllableGuo => 'ꇨ',
+            YiSyllables::YiSyllableGuop => 'ꇩ',
+            YiSyllables::YiSyllableGot => 'ꇪ',
+            YiSyllables::YiSyllableGox => 'ꇫ',
+            YiSyllables::YiSyllableGo => 'ꇬ',
+            YiSyllables::YiSyllableGop => 'ꇭ',
+            YiSyllables::YiSyllableGet => 'ꇮ',
+            YiSyllables::YiSyllableGex => 'ꇯ',
+            YiSyllables::YiSyllableGe => 'ꇰ',
+            YiSyllables::YiSyllableGep => 'ꇱ',
+            YiSyllables::YiSyllableGut => 'ꇲ',
+            YiSyllables::YiSyllableGux => 'ꇳ',
+            YiSyllables::YiSyllableGu => 'ꇴ',
+            YiSyllables::YiSyllableGup => 'ꇵ',
+            YiSyllables::YiSyllableGurx => 'ꇶ',
+            YiSyllables::YiSyllableGur => 'ꇷ',
+            YiSyllables::YiSyllableKit => 'ꇸ',
+            YiSyllables::YiSyllableKix => 'ꇹ',
+            YiSyllables::YiSyllableKi => 'ꇺ',
+            YiSyllables::YiSyllableKip => 'ꇻ',
+            YiSyllables::YiSyllableKiex => 'ꇼ',
+            YiSyllables::YiSyllableKie => 'ꇽ',
+            YiSyllables::YiSyllableKiep => 'ꇾ',
+            YiSyllables::YiSyllableKat => 'ꇿ',
+            YiSyllables::YiSyllableKax => 'ꈀ',
+            YiSyllables::YiSyllableKa => 'ꈁ',
+            YiSyllables::YiSyllableKap => 'ꈂ',
+            YiSyllables::YiSyllableKuox => 'ꈃ',
+            YiSyllables::YiSyllableKuo => 'ꈄ',
+            YiSyllables::YiSyllableKuop => 'ꈅ',
+            YiSyllables::YiSyllableKot => 'ꈆ',
+            YiSyllables::YiSyllableKox => 'ꈇ',
+            YiSyllables::YiSyllableKo => 'ꈈ',
+            YiSyllables::YiSyllableKop => 'ꈉ',
+            YiSyllables::YiSyllableKet => 'ꈊ',
+            YiSyllables::YiSyllableKex => 'ꈋ',
+            YiSyllables::YiSyllableKe => 'ꈌ',
+            YiSyllables::YiSyllableKep => 'ꈍ',
+            YiSyllables::YiSyllableKut => 'ꈎ',
+            YiSyllables::YiSyllableKux => 'ꈏ',
+            YiSyllables::YiSyllableKu => 'ꈐ',
+            YiSyllables::YiSyllableKup => 'ꈑ',
+            YiSyllables::YiSyllableKurx => 'ꈒ',
+            YiSyllables::YiSyllableKur => 'ꈓ',
+            YiSyllables::YiSyllableGgit => 'ꈔ',
+            YiSyllables::YiSyllableGgix => 'ꈕ',
+            YiSyllables::YiSyllableGgi => 'ꈖ',
+            YiSyllables::YiSyllableGgiex => 'ꈗ',
+            YiSyllables::YiSyllableGgie => 'ꈘ',
+            YiSyllables::YiSyllableGgiep => 'ꈙ',
+            YiSyllables::YiSyllableGgat => 'ꈚ',
+            YiSyllables::YiSyllableGgax => 'ꈛ',
+            YiSyllables::YiSyllableGga => 'ꈜ',
+            YiSyllables::YiSyllableGgap => 'ꈝ',
+            YiSyllables::YiSyllableGguot => 'ꈞ',
+            YiSyllables::YiSyllableGguox => 'ꈟ',
+            YiSyllables::YiSyllableGguo => 'ꈠ',
+            YiSyllables::YiSyllableGguop => 'ꈡ',
+            YiSyllables::YiSyllableGgot => 'ꈢ',
+            YiSyllables::YiSyllableGgox => 'ꈣ',
+            YiSyllables::YiSyllableGgo => 'ꈤ',
+            YiSyllables::YiSyllableGgop => 'ꈥ',
+            YiSyllables::YiSyllableGget => 'ꈦ',
+            YiSyllables::YiSyllableGgex => 'ꈧ',
+            YiSyllables::YiSyllableGge => 'ꈨ',
+            YiSyllables::YiSyllableGgep => 'ꈩ',
+            YiSyllables::YiSyllableGgut => 'ꈪ',
+            YiSyllables::YiSyllableGgux => 'ꈫ',
+            YiSyllables::YiSyllableGgu => 'ꈬ',
+            YiSyllables::YiSyllableGgup => 'ꈭ',
+            YiSyllables::YiSyllableGgurx => 'ꈮ',
+            YiSyllables::YiSyllableGgur => 'ꈯ',
+            YiSyllables::YiSyllableMgiex => 'ꈰ',
+            YiSyllables::YiSyllableMgie => 'ꈱ',
+            YiSyllables::YiSyllableMgat => 'ꈲ',
+            YiSyllables::YiSyllableMgax => 'ꈳ',
+            YiSyllables::YiSyllableMga => 'ꈴ',
+            YiSyllables::YiSyllableMgap => 'ꈵ',
+            YiSyllables::YiSyllableMguox => 'ꈶ',
+            YiSyllables::YiSyllableMguo => 'ꈷ',
+            YiSyllables::YiSyllableMguop => 'ꈸ',
+            YiSyllables::YiSyllableMgot => 'ꈹ',
+            YiSyllables::YiSyllableMgox => 'ꈺ',
+            YiSyllables::YiSyllableMgo => 'ꈻ',
+            YiSyllables::YiSyllableMgop => 'ꈼ',
+            YiSyllables::YiSyllableMgex => 'ꈽ',
+            YiSyllables::YiSyllableMge => 'ꈾ',
+            YiSyllables::YiSyllableMgep => 'ꈿ',
+            YiSyllables::YiSyllableMgut => 'ꉀ',
+            YiSyllables::YiSyllableMgux => 'ꉁ',
+            YiSyllables::YiSyllableMgu => 'ꉂ',
+            YiSyllables::YiSyllableMgup => 'ꉃ',
+            YiSyllables::YiSyllableMgurx => 'ꉄ',
+            YiSyllables::YiSyllableMgur => 'ꉅ',
+            YiSyllables::YiSyllableHxit => 'ꉆ',
+            YiSyllables::YiSyllableHxix => 'ꉇ',
+            YiSyllables::YiSyllableHxi => 'ꉈ',
+            YiSyllables::YiSyllableHxip => 'ꉉ',
+            YiSyllables::YiSyllableHxiet => 'ꉊ',
+            YiSyllables::YiSyllableHxiex => 'ꉋ',
+            YiSyllables::YiSyllableHxie => 'ꉌ',
+            YiSyllables::YiSyllableHxiep => 'ꉍ',
+            YiSyllables::YiSyllableHxat => 'ꉎ',
+            YiSyllables::YiSyllableHxax => 'ꉏ',
+            YiSyllables::YiSyllableHxa => 'ꉐ',
+            YiSyllables::YiSyllableHxap => 'ꉑ',
+            YiSyllables::YiSyllableHxuot => 'ꉒ',
+            YiSyllables::YiSyllableHxuox => 'ꉓ',
+            YiSyllables::YiSyllableHxuo => 'ꉔ',
+            YiSyllables::YiSyllableHxuop => 'ꉕ',
+            YiSyllables::YiSyllableHxot => 'ꉖ',
+            YiSyllables::YiSyllableHxox => 'ꉗ',
+            YiSyllables::YiSyllableHxo => 'ꉘ',
+            YiSyllables::YiSyllableHxop => 'ꉙ',
+            YiSyllables::YiSyllableHxex => 'ꉚ',
+            YiSyllables::YiSyllableHxe => 'ꉛ',
+            YiSyllables::YiSyllableHxep => 'ꉜ',
+            YiSyllables::YiSyllableNgiex => 'ꉝ',
+            YiSyllables::YiSyllableNgie => 'ꉞ',
+            YiSyllables::YiSyllableNgiep => 'ꉟ',
+            YiSyllables::YiSyllableNgat => 'ꉠ',
+            YiSyllables::YiSyllableNgax => 'ꉡ',
+            YiSyllables::YiSyllableNga => 'ꉢ',
+            YiSyllables::YiSyllableNgap => 'ꉣ',
+            YiSyllables::YiSyllableNguot => 'ꉤ',
+            YiSyllables::YiSyllableNguox => 'ꉥ',
+            YiSyllables::YiSyllableNguo => 'ꉦ',
+            YiSyllables::YiSyllableNgot => 'ꉧ',
+            YiSyllables::YiSyllableNgox => 'ꉨ',
+            YiSyllables::YiSyllableNgo => 'ꉩ',
+            YiSyllables::YiSyllableNgop => 'ꉪ',
+            YiSyllables::YiSyllableNgex => 'ꉫ',
+            YiSyllables::YiSyllableNge => 'ꉬ',
+            YiSyllables::YiSyllableNgep => 'ꉭ',
+            YiSyllables::YiSyllableHit => 'ꉮ',
+            YiSyllables::YiSyllableHiex => 'ꉯ',
+            YiSyllables::YiSyllableHie => 'ꉰ',
+            YiSyllables::YiSyllableHat => 'ꉱ',
+            YiSyllables::YiSyllableHax => 'ꉲ',
+            YiSyllables::YiSyllableHa => 'ꉳ',
+            YiSyllables::YiSyllableHap => 'ꉴ',
+            YiSyllables::YiSyllableHuot => 'ꉵ',
+            YiSyllables::YiSyllableHuox => 'ꉶ',
+            YiSyllables::YiSyllableHuo => 'ꉷ',
+            YiSyllables::YiSyllableHuop => 'ꉸ',
+            YiSyllables::YiSyllableHot => 'ꉹ',
+            YiSyllables::YiSyllableHox => 'ꉺ',
+            YiSyllables::YiSyllableHo => 'ꉻ',
+            YiSyllables::YiSyllableHop => 'ꉼ',
+            YiSyllables::YiSyllableHex => 'ꉽ',
+            YiSyllables::YiSyllableHe => 'ꉾ',
+            YiSyllables::YiSyllableHep => 'ꉿ',
+            YiSyllables::YiSyllableWat => 'ꊀ',
+            YiSyllables::YiSyllableWax => 'ꊁ',
+            YiSyllables::YiSyllableWa => 'ꊂ',
+            YiSyllables::YiSyllableWap => 'ꊃ',
+            YiSyllables::YiSyllableWuox => 'ꊄ',
+            YiSyllables::YiSyllableWuo => 'ꊅ',
+            YiSyllables::YiSyllableWuop => 'ꊆ',
+            YiSyllables::YiSyllableWox => 'ꊇ',
+            YiSyllables::YiSyllableWo => 'ꊈ',
+            YiSyllables::YiSyllableWop => 'ꊉ',
+            YiSyllables::YiSyllableWex => 'ꊊ',
+            YiSyllables::YiSyllableWe => 'ꊋ',
+            YiSyllables::YiSyllableWep => 'ꊌ',
+            YiSyllables::YiSyllableZit => 'ꊍ',
+            YiSyllables::YiSyllableZix => 'ꊎ',
+            YiSyllables::YiSyllableZi => 'ꊏ',
+            YiSyllables::YiSyllableZip => 'ꊐ',
+            YiSyllables::YiSyllableZiex => 'ꊑ',
+            YiSyllables::YiSyllableZie => 'ꊒ',
+            YiSyllables::YiSyllableZiep => 'ꊓ',
+            YiSyllables::YiSyllableZat => 'ꊔ',
+            YiSyllables::YiSyllableZax => 'ꊕ',
+            YiSyllables::YiSyllableZa => 'ꊖ',
+            YiSyllables::YiSyllableZap => 'ꊗ',
+            YiSyllables::YiSyllableZuox => 'ꊘ',
+            YiSyllables::YiSyllableZuo => 'ꊙ',
+            YiSyllables::YiSyllableZuop => 'ꊚ',
+            YiSyllables::YiSyllableZot => 'ꊛ',
+            YiSyllables::YiSyllableZox => 'ꊜ',
+            YiSyllables::YiSyllableZo => 'ꊝ',
+            YiSyllables::YiSyllableZop => 'ꊞ',
+            YiSyllables::YiSyllableZex => 'ꊟ',
+            YiSyllables::YiSyllableZe => 'ꊠ',
+            YiSyllables::YiSyllableZep => 'ꊡ',
+            YiSyllables::YiSyllableZut => 'ꊢ',
+            YiSyllables::YiSyllableZux => 'ꊣ',
+            YiSyllables::YiSyllableZu => 'ꊤ',
+            YiSyllables::YiSyllableZup => 'ꊥ',
+            YiSyllables::YiSyllableZurx => 'ꊦ',
+            YiSyllables::YiSyllableZur => 'ꊧ',
+            YiSyllables::YiSyllableZyt => 'ꊨ',
+            YiSyllables::YiSyllableZyx => 'ꊩ',
+            YiSyllables::YiSyllableZy => 'ꊪ',
+            YiSyllables::YiSyllableZyp => 'ꊫ',
+            YiSyllables::YiSyllableZyrx => 'ꊬ',
+            YiSyllables::YiSyllableZyr => 'ꊭ',
+            YiSyllables::YiSyllableCit => 'ꊮ',
+            YiSyllables::YiSyllableCix => 'ꊯ',
+            YiSyllables::YiSyllableCi => 'ꊰ',
+            YiSyllables::YiSyllableCip => 'ꊱ',
+            YiSyllables::YiSyllableCiet => 'ꊲ',
+            YiSyllables::YiSyllableCiex => 'ꊳ',
+            YiSyllables::YiSyllableCie => 'ꊴ',
+            YiSyllables::YiSyllableCiep => 'ꊵ',
+            YiSyllables::YiSyllableCat => 'ꊶ',
+            YiSyllables::YiSyllableCax => 'ꊷ',
+            YiSyllables::YiSyllableCa => 'ꊸ',
+            YiSyllables::YiSyllableCap => 'ꊹ',
+            YiSyllables::YiSyllableCuox => 'ꊺ',
+            YiSyllables::YiSyllableCuo => 'ꊻ',
+            YiSyllables::YiSyllableCuop => 'ꊼ',
+            YiSyllables::YiSyllableCot => 'ꊽ',
+            YiSyllables::YiSyllableCox => 'ꊾ',
+            YiSyllables::YiSyllableCo => 'ꊿ',
+            YiSyllables::YiSyllableCop => 'ꋀ',
+            YiSyllables::YiSyllableCex => 'ꋁ',
+            YiSyllables::YiSyllableCe => 'ꋂ',
+            YiSyllables::YiSyllableCep => 'ꋃ',
+            YiSyllables::YiSyllableCut => 'ꋄ',
+            YiSyllables::YiSyllableCux => 'ꋅ',
+            YiSyllables::YiSyllableCu => 'ꋆ',
+            YiSyllables::YiSyllableCup => 'ꋇ',
+            YiSyllables::YiSyllableCurx => 'ꋈ',
+            YiSyllables::YiSyllableCur => 'ꋉ',
+            YiSyllables::YiSyllableCyt => 'ꋊ',
+            YiSyllables::YiSyllableCyx => 'ꋋ',
+            YiSyllables::YiSyllableCy => 'ꋌ',
+            YiSyllables::YiSyllableCyp => 'ꋍ',
+            YiSyllables::YiSyllableCyrx => 'ꋎ',
+            YiSyllables::YiSyllableCyr => 'ꋏ',
+            YiSyllables::YiSyllableZzit => 'ꋐ',
+            YiSyllables::YiSyllableZzix => 'ꋑ',
+            YiSyllables::YiSyllableZzi => 'ꋒ',
+            YiSyllables::YiSyllableZzip => 'ꋓ',
+            YiSyllables::YiSyllableZziet => 'ꋔ',
+            YiSyllables::YiSyllableZziex => 'ꋕ',
+            YiSyllables::YiSyllableZzie => 'ꋖ',
+            YiSyllables::YiSyllableZziep => 'ꋗ',
+            YiSyllables::YiSyllableZzat => 'ꋘ',
+            YiSyllables::YiSyllableZzax => 'ꋙ',
+            YiSyllables::YiSyllableZza => 'ꋚ',
+            YiSyllables::YiSyllableZzap => 'ꋛ',
+            YiSyllables::YiSyllableZzox => 'ꋜ',
+            YiSyllables::YiSyllableZzo => 'ꋝ',
+            YiSyllables::YiSyllableZzop => 'ꋞ',
+            YiSyllables::YiSyllableZzex => 'ꋟ',
+            YiSyllables::YiSyllableZze => 'ꋠ',
+            YiSyllables::YiSyllableZzep => 'ꋡ',
+            YiSyllables::YiSyllableZzux => 'ꋢ',
+            YiSyllables::YiSyllableZzu => 'ꋣ',
+            YiSyllables::YiSyllableZzup => 'ꋤ',
+            YiSyllables::YiSyllableZzurx => 'ꋥ',
+            YiSyllables::YiSyllableZzur => 'ꋦ',
+            YiSyllables::YiSyllableZzyt => 'ꋧ',
+            YiSyllables::YiSyllableZzyx => 'ꋨ',
+            YiSyllables::YiSyllableZzy => 'ꋩ',
+            YiSyllables::YiSyllableZzyp => 'ꋪ',
+            YiSyllables::YiSyllableZzyrx => 'ꋫ',
+            YiSyllables::YiSyllableZzyr => 'ꋬ',
+            YiSyllables::YiSyllableNzit => 'ꋭ',
+            YiSyllables::YiSyllableNzix => 'ꋮ',
+            YiSyllables::YiSyllableNzi => 'ꋯ',
+            YiSyllables::YiSyllableNzip => 'ꋰ',
+            YiSyllables::YiSyllableNziex => 'ꋱ',
+            YiSyllables::YiSyllableNzie => 'ꋲ',
+            YiSyllables::YiSyllableNziep => 'ꋳ',
+            YiSyllables::YiSyllableNzat => 'ꋴ',
+            YiSyllables::YiSyllableNzax => 'ꋵ',
+            YiSyllables::YiSyllableNza => 'ꋶ',
+            YiSyllables::YiSyllableNzap => 'ꋷ',
+            YiSyllables::YiSyllableNzuox => 'ꋸ',
+            YiSyllables::YiSyllableNzuo => 'ꋹ',
+            YiSyllables::YiSyllableNzox => 'ꋺ',
+            YiSyllables::YiSyllableNzop => 'ꋻ',
+            YiSyllables::YiSyllableNzex => 'ꋼ',
+            YiSyllables::YiSyllableNze => 'ꋽ',
+            YiSyllables::YiSyllableNzux => 'ꋾ',
+            YiSyllables::YiSyllableNzu => 'ꋿ',
+            YiSyllables::YiSyllableNzup => 'ꌀ',
+            YiSyllables::YiSyllableNzurx => 'ꌁ',
+            YiSyllables::YiSyllableNzur => 'ꌂ',
+            YiSyllables::YiSyllableNzyt => 'ꌃ',
+            YiSyllables::YiSyllableNzyx => 'ꌄ',
+            YiSyllables::YiSyllableNzy => 'ꌅ',
+            YiSyllables::YiSyllableNzyp => 'ꌆ',
+            YiSyllables::YiSyllableNzyrx => 'ꌇ',
+            YiSyllables::YiSyllableNzyr => 'ꌈ',
+            YiSyllables::YiSyllableSit => 'ꌉ',
+            YiSyllables::YiSyllableSix => 'ꌊ',
+            YiSyllables::YiSyllableSi => 'ꌋ',
+            YiSyllables::YiSyllableSip => 'ꌌ',
+            YiSyllables::YiSyllableSiex => 'ꌍ',
+            YiSyllables::YiSyllableSie => 'ꌎ',
+            YiSyllables::YiSyllableSiep => 'ꌏ',
+            YiSyllables::YiSyllableSat => 'ꌐ',
+            YiSyllables::YiSyllableSax => 'ꌑ',
+            YiSyllables::YiSyllableSa => 'ꌒ',
+            YiSyllables::YiSyllableSap => 'ꌓ',
+            YiSyllables::YiSyllableSuox => 'ꌔ',
+            YiSyllables::YiSyllableSuo => 'ꌕ',
+            YiSyllables::YiSyllableSuop => 'ꌖ',
+            YiSyllables::YiSyllableSot => 'ꌗ',
+            YiSyllables::YiSyllableSox => 'ꌘ',
+            YiSyllables::YiSyllableSo => 'ꌙ',
+            YiSyllables::YiSyllableSop => 'ꌚ',
+            YiSyllables::YiSyllableSex => 'ꌛ',
+            YiSyllables::YiSyllableSe => 'ꌜ',
+            YiSyllables::YiSyllableSep => 'ꌝ',
+            YiSyllables::YiSyllableSut => 'ꌞ',
+            YiSyllables::YiSyllableSux => 'ꌟ',
+            YiSyllables::YiSyllableSu => 'ꌠ',
+            YiSyllables::YiSyllableSup => 'ꌡ',
+            YiSyllables::YiSyllableSurx => 'ꌢ',
+            YiSyllables::YiSyllableSur => 'ꌣ',
+            YiSyllables::YiSyllableSyt => 'ꌤ',
+            YiSyllables::YiSyllableSyx => 'ꌥ',
+            YiSyllables::YiSyllableSy => 'ꌦ',
+            YiSyllables::YiSyllableSyp => 'ꌧ',
+            YiSyllables::YiSyllableSyrx => 'ꌨ',
+            YiSyllables::YiSyllableSyr => 'ꌩ',
+            YiSyllables::YiSyllableSsit => 'ꌪ',
+            YiSyllables::YiSyllableSsix => 'ꌫ',
+            YiSyllables::YiSyllableSsi => 'ꌬ',
+            YiSyllables::YiSyllableSsip => 'ꌭ',
+            YiSyllables::YiSyllableSsiex => 'ꌮ',
+            YiSyllables::YiSyllableSsie => 'ꌯ',
+            YiSyllables::YiSyllableSsiep => 'ꌰ',
+            YiSyllables::YiSyllableSsat => 'ꌱ',
+            YiSyllables::YiSyllableSsax => 'ꌲ',
+            YiSyllables::YiSyllableSsa => 'ꌳ',
+            YiSyllables::YiSyllableSsap => 'ꌴ',
+            YiSyllables::YiSyllableSsot => 'ꌵ',
+            YiSyllables::YiSyllableSsox => 'ꌶ',
+            YiSyllables::YiSyllableSso => 'ꌷ',
+            YiSyllables::YiSyllableSsop => 'ꌸ',
+            YiSyllables::YiSyllableSsex => 'ꌹ',
+            YiSyllables::YiSyllableSse => 'ꌺ',
+            YiSyllables::YiSyllableSsep => 'ꌻ',
+            YiSyllables::YiSyllableSsut => 'ꌼ',
+            YiSyllables::YiSyllableSsux => 'ꌽ',
+            YiSyllables::YiSyllableSsu => 'ꌾ',
+            YiSyllables::YiSyllableSsup => 'ꌿ',
+            YiSyllables::YiSyllableSsyt => 'ꍀ',
+            YiSyllables::YiSyllableSsyx => 'ꍁ',
+            YiSyllables::YiSyllableSsy => 'ꍂ',
+            YiSyllables::YiSyllableSsyp => 'ꍃ',
+            YiSyllables::YiSyllableSsyrx => 'ꍄ',
+            YiSyllables::YiSyllableSsyr => 'ꍅ',
+            YiSyllables::YiSyllableZhat => 'ꍆ',
+            YiSyllables::YiSyllableZhax => 'ꍇ',
+            YiSyllables::YiSyllableZha => 'ꍈ',
+            YiSyllables::YiSyllableZhap => 'ꍉ',
+            YiSyllables::YiSyllableZhuox => 'ꍊ',
+            YiSyllables::YiSyllableZhuo => 'ꍋ',
+            YiSyllables::YiSyllableZhuop => 'ꍌ',
+            YiSyllables::YiSyllableZhot => 'ꍍ',
+            YiSyllables::YiSyllableZhox => 'ꍎ',
+            YiSyllables::YiSyllableZho => 'ꍏ',
+            YiSyllables::YiSyllableZhop => 'ꍐ',
+            YiSyllables::YiSyllableZhet => 'ꍑ',
+            YiSyllables::YiSyllableZhex => 'ꍒ',
+            YiSyllables::YiSyllableZhe => 'ꍓ',
+            YiSyllables::YiSyllableZhep => 'ꍔ',
+            YiSyllables::YiSyllableZhut => 'ꍕ',
+            YiSyllables::YiSyllableZhux => 'ꍖ',
+            YiSyllables::YiSyllableZhu => 'ꍗ',
+            YiSyllables::YiSyllableZhup => 'ꍘ',
+            YiSyllables::YiSyllableZhurx => 'ꍙ',
+            YiSyllables::YiSyllableZhur => 'ꍚ',
+            YiSyllables::YiSyllableZhyt => 'ꍛ',
+            YiSyllables::YiSyllableZhyx => 'ꍜ',
+            YiSyllables::YiSyllableZhy => 'ꍝ',
+            YiSyllables::YiSyllableZhyp => 'ꍞ',
+            YiSyllables::YiSyllableZhyrx => 'ꍟ',
+            YiSyllables::YiSyllableZhyr => 'ꍠ',
+            YiSyllables::YiSyllableChat => 'ꍡ',
+            YiSyllables::YiSyllableChax => 'ꍢ',
+            YiSyllables::YiSyllableCha => 'ꍣ',
+            YiSyllables::YiSyllableChap => 'ꍤ',
+            YiSyllables::YiSyllableChuot => 'ꍥ',
+            YiSyllables::YiSyllableChuox => 'ꍦ',
+            YiSyllables::YiSyllableChuo => 'ꍧ',
+            YiSyllables::YiSyllableChuop => 'ꍨ',
+            YiSyllables::YiSyllableChot => 'ꍩ',
+            YiSyllables::YiSyllableChox => 'ꍪ',
+            YiSyllables::YiSyllableCho => 'ꍫ',
+            YiSyllables::YiSyllableChop => 'ꍬ',
+            YiSyllables::YiSyllableChet => 'ꍭ',
+            YiSyllables::YiSyllableChex => 'ꍮ',
+            YiSyllables::YiSyllableChe => 'ꍯ',
+            YiSyllables::YiSyllableChep => 'ꍰ',
+            YiSyllables::YiSyllableChux => 'ꍱ',
+            YiSyllables::YiSyllableChu => 'ꍲ',
+            YiSyllables::YiSyllableChup => 'ꍳ',
+            YiSyllables::YiSyllableChurx => 'ꍴ',
+            YiSyllables::YiSyllableChur => 'ꍵ',
+            YiSyllables::YiSyllableChyt => 'ꍶ',
+            YiSyllables::YiSyllableChyx => 'ꍷ',
+            YiSyllables::YiSyllableChy => 'ꍸ',
+            YiSyllables::YiSyllableChyp => 'ꍹ',
+            YiSyllables::YiSyllableChyrx => 'ꍺ',
+            YiSyllables::YiSyllableChyr => 'ꍻ',
+            YiSyllables::YiSyllableRrax => 'ꍼ',
+            YiSyllables::YiSyllableRra => 'ꍽ',
+            YiSyllables::YiSyllableRruox => 'ꍾ',
+            YiSyllables::YiSyllableRruo => 'ꍿ',
+            YiSyllables::YiSyllableRrot => 'ꎀ',
+            YiSyllables::YiSyllableRrox => 'ꎁ',
+            YiSyllables::YiSyllableRro => 'ꎂ',
+            YiSyllables::YiSyllableRrop => 'ꎃ',
+            YiSyllables::YiSyllableRret => 'ꎄ',
+            YiSyllables::YiSyllableRrex => 'ꎅ',
+            YiSyllables::YiSyllableRre => 'ꎆ',
+            YiSyllables::YiSyllableRrep => 'ꎇ',
+            YiSyllables::YiSyllableRrut => 'ꎈ',
+            YiSyllables::YiSyllableRrux => 'ꎉ',
+            YiSyllables::YiSyllableRru => 'ꎊ',
+            YiSyllables::YiSyllableRrup => 'ꎋ',
+            YiSyllables::YiSyllableRrurx => 'ꎌ',
+            YiSyllables::YiSyllableRrur => 'ꎍ',
+            YiSyllables::YiSyllableRryt => 'ꎎ',
+            YiSyllables::YiSyllableRryx => 'ꎏ',
+            YiSyllables::YiSyllableRry => 'ꎐ',
+            YiSyllables::YiSyllableRryp => 'ꎑ',
+            YiSyllables::YiSyllableRryrx => 'ꎒ',
+            YiSyllables::YiSyllableRryr => 'ꎓ',
+            YiSyllables::YiSyllableNrat => 'ꎔ',
+            YiSyllables::YiSyllableNrax => 'ꎕ',
+            YiSyllables::YiSyllableNra => 'ꎖ',
+            YiSyllables::YiSyllableNrap => 'ꎗ',
+            YiSyllables::YiSyllableNrox => 'ꎘ',
+            YiSyllables::YiSyllableNro => 'ꎙ',
+            YiSyllables::YiSyllableNrop => 'ꎚ',
+            YiSyllables::YiSyllableNret => 'ꎛ',
+            YiSyllables::YiSyllableNrex => 'ꎜ',
+            YiSyllables::YiSyllableNre => 'ꎝ',
+            YiSyllables::YiSyllableNrep => 'ꎞ',
+            YiSyllables::YiSyllableNrut => 'ꎟ',
+            YiSyllables::YiSyllableNrux => 'ꎠ',
+            YiSyllables::YiSyllableNru => 'ꎡ',
+            YiSyllables::YiSyllableNrup => 'ꎢ',
+            YiSyllables::YiSyllableNrurx => 'ꎣ',
+            YiSyllables::YiSyllableNrur => 'ꎤ',
+            YiSyllables::YiSyllableNryt => 'ꎥ',
+            YiSyllables::YiSyllableNryx => 'ꎦ',
+            YiSyllables::YiSyllableNry => 'ꎧ',
+            YiSyllables::YiSyllableNryp => 'ꎨ',
+            YiSyllables::YiSyllableNryrx => 'ꎩ',
+            YiSyllables::YiSyllableNryr => 'ꎪ',
+            YiSyllables::YiSyllableShat => 'ꎫ',
+            YiSyllables::YiSyllableShax => 'ꎬ',
+            YiSyllables::YiSyllableSha => 'ꎭ',
+            YiSyllables::YiSyllableShap => 'ꎮ',
+            YiSyllables::YiSyllableShuox => 'ꎯ',
+            YiSyllables::YiSyllableShuo => 'ꎰ',
+            YiSyllables::YiSyllableShuop => 'ꎱ',
+            YiSyllables::YiSyllableShot => 'ꎲ',
+            YiSyllables::YiSyllableShox => 'ꎳ',
+            YiSyllables::YiSyllableSho => 'ꎴ',
+            YiSyllables::YiSyllableShop => 'ꎵ',
+            YiSyllables::YiSyllableShet => 'ꎶ',
+            YiSyllables::YiSyllableShex => 'ꎷ',
+            YiSyllables::YiSyllableShe => 'ꎸ',
+            YiSyllables::YiSyllableShep => 'ꎹ',
+            YiSyllables::YiSyllableShut => 'ꎺ',
+            YiSyllables::YiSyllableShux => 'ꎻ',
+            YiSyllables::YiSyllableShu => 'ꎼ',
+            YiSyllables::YiSyllableShup => 'ꎽ',
+            YiSyllables::YiSyllableShurx => 'ꎾ',
+            YiSyllables::YiSyllableShur => 'ꎿ',
+            YiSyllables::YiSyllableShyt => 'ꏀ',
+            YiSyllables::YiSyllableShyx => 'ꏁ',
+            YiSyllables::YiSyllableShy => 'ꏂ',
+            YiSyllables::YiSyllableShyp => 'ꏃ',
+            YiSyllables::YiSyllableShyrx => 'ꏄ',
+            YiSyllables::YiSyllableShyr => 'ꏅ',
+            YiSyllables::YiSyllableRat => 'ꏆ',
+            YiSyllables::YiSyllableRax => 'ꏇ',
+            YiSyllables::YiSyllableRa => 'ꏈ',
+            YiSyllables::YiSyllableRap => 'ꏉ',
+            YiSyllables::YiSyllableRuox => 'ꏊ',
+            YiSyllables::YiSyllableRuo => 'ꏋ',
+            YiSyllables::YiSyllableRuop => 'ꏌ',
+            YiSyllables::YiSyllableRot => 'ꏍ',
+            YiSyllables::YiSyllableRox => 'ꏎ',
+            YiSyllables::YiSyllableRo => 'ꏏ',
+            YiSyllables::YiSyllableRop => 'ꏐ',
+            YiSyllables::YiSyllableRex => 'ꏑ',
+            YiSyllables::YiSyllableRe => 'ꏒ',
+            YiSyllables::YiSyllableRep => 'ꏓ',
+            YiSyllables::YiSyllableRut => 'ꏔ',
+            YiSyllables::YiSyllableRux => 'ꏕ',
+            YiSyllables::YiSyllableRu => 'ꏖ',
+            YiSyllables::YiSyllableRup => 'ꏗ',
+            YiSyllables::YiSyllableRurx => 'ꏘ',
+            YiSyllables::YiSyllableRur => 'ꏙ',
+            YiSyllables::YiSyllableRyt => 'ꏚ',
+            YiSyllables::YiSyllableRyx => 'ꏛ',
+            YiSyllables::YiSyllableRy => 'ꏜ',
+            YiSyllables::YiSyllableRyp => 'ꏝ',
+            YiSyllables::YiSyllableRyrx => 'ꏞ',
+            YiSyllables::YiSyllableRyr => 'ꏟ',
+            YiSyllables::YiSyllableJit => 'ꏠ',
+            YiSyllables::YiSyllableJix => 'ꏡ',
+            YiSyllables::YiSyllableJi => 'ꏢ',
+            YiSyllables::YiSyllableJip => 'ꏣ',
+            YiSyllables::YiSyllableJiet => 'ꏤ',
+            YiSyllables::YiSyllableJiex => 'ꏥ',
+            YiSyllables::YiSyllableJie => 'ꏦ',
+            YiSyllables::YiSyllableJiep => 'ꏧ',
+            YiSyllables::YiSyllableJuot => 'ꏨ',
+            YiSyllables::YiSyllableJuox => 'ꏩ',
+            YiSyllables::YiSyllableJuo => 'ꏪ',
+            YiSyllables::YiSyllableJuop => 'ꏫ',
+            YiSyllables::YiSyllableJot => 'ꏬ',
+            YiSyllables::YiSyllableJox => 'ꏭ',
+            YiSyllables::YiSyllableJo => 'ꏮ',
+            YiSyllables::YiSyllableJop => 'ꏯ',
+            YiSyllables::YiSyllableJut => 'ꏰ',
+            YiSyllables::YiSyllableJux => 'ꏱ',
+            YiSyllables::YiSyllableJu => 'ꏲ',
+            YiSyllables::YiSyllableJup => 'ꏳ',
+            YiSyllables::YiSyllableJurx => 'ꏴ',
+            YiSyllables::YiSyllableJur => 'ꏵ',
+            YiSyllables::YiSyllableJyt => 'ꏶ',
+            YiSyllables::YiSyllableJyx => 'ꏷ',
+            YiSyllables::YiSyllableJy => 'ꏸ',
+            YiSyllables::YiSyllableJyp => 'ꏹ',
+            YiSyllables::YiSyllableJyrx => 'ꏺ',
+            YiSyllables::YiSyllableJyr => 'ꏻ',
+            YiSyllables::YiSyllableQit => 'ꏼ',
+            YiSyllables::YiSyllableQix => 'ꏽ',
+            YiSyllables::YiSyllableQi => 'ꏾ',
+            YiSyllables::YiSyllableQip => 'ꏿ',
+            YiSyllables::YiSyllableQiet => 'ꐀ',
+            YiSyllables::YiSyllableQiex => 'ꐁ',
+            YiSyllables::YiSyllableQie => 'ꐂ',
+            YiSyllables::YiSyllableQiep => 'ꐃ',
+            YiSyllables::YiSyllableQuot => 'ꐄ',
+            YiSyllables::YiSyllableQuox => 'ꐅ',
+            YiSyllables::YiSyllableQuo => 'ꐆ',
+            YiSyllables::YiSyllableQuop => 'ꐇ',
+            YiSyllables::YiSyllableQot => 'ꐈ',
+            YiSyllables::YiSyllableQox => 'ꐉ',
+            YiSyllables::YiSyllableQo => 'ꐊ',
+            YiSyllables::YiSyllableQop => 'ꐋ',
+            YiSyllables::YiSyllableQut => 'ꐌ',
+            YiSyllables::YiSyllableQux => 'ꐍ',
+            YiSyllables::YiSyllableQu => 'ꐎ',
+            YiSyllables::YiSyllableQup => 'ꐏ',
+            YiSyllables::YiSyllableQurx => 'ꐐ',
+            YiSyllables::YiSyllableQur => 'ꐑ',
+            YiSyllables::YiSyllableQyt => 'ꐒ',
+            YiSyllables::YiSyllableQyx => 'ꐓ',
+            YiSyllables::YiSyllableQy => 'ꐔ',
+            YiSyllables::YiSyllableQyp => 'ꐕ',
+            YiSyllables::YiSyllableQyrx => 'ꐖ',
+            YiSyllables::YiSyllableQyr => 'ꐗ',
+            YiSyllables::YiSyllableJjit => 'ꐘ',
+            YiSyllables::YiSyllableJjix => 'ꐙ',
+            YiSyllables::YiSyllableJji => 'ꐚ',
+            YiSyllables::YiSyllableJjip => 'ꐛ',
+            YiSyllables::YiSyllableJjiet => 'ꐜ',
+            YiSyllables::YiSyllableJjiex => 'ꐝ',
+            YiSyllables::YiSyllableJjie => 'ꐞ',
+            YiSyllables::YiSyllableJjiep => 'ꐟ',
+            YiSyllables::YiSyllableJjuox => 'ꐠ',
+            YiSyllables::YiSyllableJjuo => 'ꐡ',
+            YiSyllables::YiSyllableJjuop => 'ꐢ',
+            YiSyllables::YiSyllableJjot => 'ꐣ',
+            YiSyllables::YiSyllableJjox => 'ꐤ',
+            YiSyllables::YiSyllableJjo => 'ꐥ',
+            YiSyllables::YiSyllableJjop => 'ꐦ',
+            YiSyllables::YiSyllableJjut => 'ꐧ',
+            YiSyllables::YiSyllableJjux => 'ꐨ',
+            YiSyllables::YiSyllableJju => 'ꐩ',
+            YiSyllables::YiSyllableJjup => 'ꐪ',
+            YiSyllables::YiSyllableJjurx => 'ꐫ',
+            YiSyllables::YiSyllableJjur => 'ꐬ',
+            YiSyllables::YiSyllableJjyt => 'ꐭ',
+            YiSyllables::YiSyllableJjyx => 'ꐮ',
+            YiSyllables::YiSyllableJjy => 'ꐯ',
+            YiSyllables::YiSyllableJjyp => 'ꐰ',
+            YiSyllables::YiSyllableNjit => 'ꐱ',
+            YiSyllables::YiSyllableNjix => 'ꐲ',
+            YiSyllables::YiSyllableNji => 'ꐳ',
+            YiSyllables::YiSyllableNjip => 'ꐴ',
+            YiSyllables::YiSyllableNjiet => 'ꐵ',
+            YiSyllables::YiSyllableNjiex => 'ꐶ',
+            YiSyllables::YiSyllableNjie => 'ꐷ',
+            YiSyllables::YiSyllableNjiep => 'ꐸ',
+            YiSyllables::YiSyllableNjuox => 'ꐹ',
+            YiSyllables::YiSyllableNjuo => 'ꐺ',
+            YiSyllables::YiSyllableNjot => 'ꐻ',
+            YiSyllables::YiSyllableNjox => 'ꐼ',
+            YiSyllables::YiSyllableNjo => 'ꐽ',
+            YiSyllables::YiSyllableNjop => 'ꐾ',
+            YiSyllables::YiSyllableNjux => 'ꐿ',
+            YiSyllables::YiSyllableNju => 'ꑀ',
+            YiSyllables::YiSyllableNjup => 'ꑁ',
+            YiSyllables::YiSyllableNjurx => 'ꑂ',
+            YiSyllables::YiSyllableNjur => 'ꑃ',
+            YiSyllables::YiSyllableNjyt => 'ꑄ',
+            YiSyllables::YiSyllableNjyx => 'ꑅ',
+            YiSyllables::YiSyllableNjy => 'ꑆ',
+            YiSyllables::YiSyllableNjyp => 'ꑇ',
+            YiSyllables::YiSyllableNjyrx => 'ꑈ',
+            YiSyllables::YiSyllableNjyr => 'ꑉ',
+            YiSyllables::YiSyllableNyit => 'ꑊ',
+            YiSyllables::YiSyllableNyix => 'ꑋ',
+            YiSyllables::YiSyllableNyi => 'ꑌ',
+            YiSyllables::YiSyllableNyip => 'ꑍ',
+            YiSyllables::YiSyllableNyiet => 'ꑎ',
+            YiSyllables::YiSyllableNyiex => 'ꑏ',
+            YiSyllables::YiSyllableNyie => 'ꑐ',
+            YiSyllables::YiSyllableNyiep => 'ꑑ',
+            YiSyllables::YiSyllableNyuox => 'ꑒ',
+            YiSyllables::YiSyllableNyuo => 'ꑓ',
+            YiSyllables::YiSyllableNyuop => 'ꑔ',
+            YiSyllables::YiSyllableNyot => 'ꑕ',
+            YiSyllables::YiSyllableNyox => 'ꑖ',
+            YiSyllables::YiSyllableNyo => 'ꑗ',
+            YiSyllables::YiSyllableNyop => 'ꑘ',
+            YiSyllables::YiSyllableNyut => 'ꑙ',
+            YiSyllables::YiSyllableNyux => 'ꑚ',
+            YiSyllables::YiSyllableNyu => 'ꑛ',
+            YiSyllables::YiSyllableNyup => 'ꑜ',
+            YiSyllables::YiSyllableXit => 'ꑝ',
+            YiSyllables::YiSyllableXix => 'ꑞ',
+            YiSyllables::YiSyllableXi => 'ꑟ',
+            YiSyllables::YiSyllableXip => 'ꑠ',
+            YiSyllables::YiSyllableXiet => 'ꑡ',
+            YiSyllables::YiSyllableXiex => 'ꑢ',
+            YiSyllables::YiSyllableXie => 'ꑣ',
+            YiSyllables::YiSyllableXiep => 'ꑤ',
+            YiSyllables::YiSyllableXuox => 'ꑥ',
+            YiSyllables::YiSyllableXuo => 'ꑦ',
+            YiSyllables::YiSyllableXot => 'ꑧ',
+            YiSyllables::YiSyllableXox => 'ꑨ',
+            YiSyllables::YiSyllableXo => 'ꑩ',
+            YiSyllables::YiSyllableXop => 'ꑪ',
+            YiSyllables::YiSyllableXyt => 'ꑫ',
+            YiSyllables::YiSyllableXyx => 'ꑬ',
+            YiSyllables::YiSyllableXy => 'ꑭ',
+            YiSyllables::YiSyllableXyp => 'ꑮ',
+            YiSyllables::YiSyllableXyrx => 'ꑯ',
+            YiSyllables::YiSyllableXyr => 'ꑰ',
+            YiSyllables::YiSyllableYit => 'ꑱ',
+            YiSyllables::YiSyllableYix => 'ꑲ',
+            YiSyllables::YiSyllableYi => 'ꑳ',
+            YiSyllables::YiSyllableYip => 'ꑴ',
+            YiSyllables::YiSyllableYiet => 'ꑵ',
+            YiSyllables::YiSyllableYiex => 'ꑶ',
+            YiSyllables::YiSyllableYie => 'ꑷ',
+            YiSyllables::YiSyllableYiep => 'ꑸ',
+            YiSyllables::YiSyllableYuot => 'ꑹ',
+            YiSyllables::YiSyllableYuox => 'ꑺ',
+            YiSyllables::YiSyllableYuo => 'ꑻ',
+            YiSyllables::YiSyllableYuop => 'ꑼ',
+            YiSyllables::YiSyllableYot => 'ꑽ',
+            YiSyllables::YiSyllableYox => 'ꑾ',
+            YiSyllables::YiSyllableYo => 'ꑿ',
+            YiSyllables::YiSyllableYop => 'ꒀ',
+            YiSyllables::YiSyllableYut => 'ꒁ',
+            YiSyllables::YiSyllableYux => 'ꒂ',
+            YiSyllables::YiSyllableYu => 'ꒃ',
+            YiSyllables::YiSyllableYup => 'ꒄ',
+            YiSyllables::YiSyllableYurx => 'ꒅ',
+            YiSyllables::YiSyllableYur => 'ꒆ',
+            YiSyllables::YiSyllableYyt => 'ꒇ',
+            YiSyllables::YiSyllableYyx => 'ꒈ',
+            YiSyllables::YiSyllableYy => 'ꒉ',
+            YiSyllables::YiSyllableYyp => 'ꒊ',
+            YiSyllables::YiSyllableYyrx => 'ꒋ',
+            YiSyllables::YiSyllableYyr => 'ꒌ',
         }
     }
 }
@@ -5843,1173 +3509,1172 @@ impl Into<char> for YiSyllables {
 impl std::convert::TryFrom<char> for YiSyllables {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            YI_SYLLABLE_IT => Ok(YiSyllables::YiSyllableIt),
-            YI_SYLLABLE_IX => Ok(YiSyllables::YiSyllableIx),
-            YI_SYLLABLE_I => Ok(YiSyllables::YiSyllableI),
-            YI_SYLLABLE_IP => Ok(YiSyllables::YiSyllableIp),
-            YI_SYLLABLE_IET => Ok(YiSyllables::YiSyllableIet),
-            YI_SYLLABLE_IEX => Ok(YiSyllables::YiSyllableIex),
-            YI_SYLLABLE_IE => Ok(YiSyllables::YiSyllableIe),
-            YI_SYLLABLE_IEP => Ok(YiSyllables::YiSyllableIep),
-            YI_SYLLABLE_AT => Ok(YiSyllables::YiSyllableAt),
-            YI_SYLLABLE_AX => Ok(YiSyllables::YiSyllableAx),
-            YI_SYLLABLE_A => Ok(YiSyllables::YiSyllableA),
-            YI_SYLLABLE_AP => Ok(YiSyllables::YiSyllableAp),
-            YI_SYLLABLE_UOX => Ok(YiSyllables::YiSyllableUox),
-            YI_SYLLABLE_UO => Ok(YiSyllables::YiSyllableUo),
-            YI_SYLLABLE_UOP => Ok(YiSyllables::YiSyllableUop),
-            YI_SYLLABLE_OT => Ok(YiSyllables::YiSyllableOt),
-            YI_SYLLABLE_OX => Ok(YiSyllables::YiSyllableOx),
-            YI_SYLLABLE_O => Ok(YiSyllables::YiSyllableO),
-            YI_SYLLABLE_OP => Ok(YiSyllables::YiSyllableOp),
-            YI_SYLLABLE_EX => Ok(YiSyllables::YiSyllableEx),
-            YI_SYLLABLE_E => Ok(YiSyllables::YiSyllableE),
-            YI_SYLLABLE_WU => Ok(YiSyllables::YiSyllableWu),
-            YI_SYLLABLE_BIT => Ok(YiSyllables::YiSyllableBit),
-            YI_SYLLABLE_BIX => Ok(YiSyllables::YiSyllableBix),
-            YI_SYLLABLE_BI => Ok(YiSyllables::YiSyllableBi),
-            YI_SYLLABLE_BIP => Ok(YiSyllables::YiSyllableBip),
-            YI_SYLLABLE_BIET => Ok(YiSyllables::YiSyllableBiet),
-            YI_SYLLABLE_BIEX => Ok(YiSyllables::YiSyllableBiex),
-            YI_SYLLABLE_BIE => Ok(YiSyllables::YiSyllableBie),
-            YI_SYLLABLE_BIEP => Ok(YiSyllables::YiSyllableBiep),
-            YI_SYLLABLE_BAT => Ok(YiSyllables::YiSyllableBat),
-            YI_SYLLABLE_BAX => Ok(YiSyllables::YiSyllableBax),
-            YI_SYLLABLE_BA => Ok(YiSyllables::YiSyllableBa),
-            YI_SYLLABLE_BAP => Ok(YiSyllables::YiSyllableBap),
-            YI_SYLLABLE_BUOX => Ok(YiSyllables::YiSyllableBuox),
-            YI_SYLLABLE_BUO => Ok(YiSyllables::YiSyllableBuo),
-            YI_SYLLABLE_BUOP => Ok(YiSyllables::YiSyllableBuop),
-            YI_SYLLABLE_BOT => Ok(YiSyllables::YiSyllableBot),
-            YI_SYLLABLE_BOX => Ok(YiSyllables::YiSyllableBox),
-            YI_SYLLABLE_BO => Ok(YiSyllables::YiSyllableBo),
-            YI_SYLLABLE_BOP => Ok(YiSyllables::YiSyllableBop),
-            YI_SYLLABLE_BEX => Ok(YiSyllables::YiSyllableBex),
-            YI_SYLLABLE_BE => Ok(YiSyllables::YiSyllableBe),
-            YI_SYLLABLE_BEP => Ok(YiSyllables::YiSyllableBep),
-            YI_SYLLABLE_BUT => Ok(YiSyllables::YiSyllableBut),
-            YI_SYLLABLE_BUX => Ok(YiSyllables::YiSyllableBux),
-            YI_SYLLABLE_BU => Ok(YiSyllables::YiSyllableBu),
-            YI_SYLLABLE_BUP => Ok(YiSyllables::YiSyllableBup),
-            YI_SYLLABLE_BURX => Ok(YiSyllables::YiSyllableBurx),
-            YI_SYLLABLE_BUR => Ok(YiSyllables::YiSyllableBur),
-            YI_SYLLABLE_BYT => Ok(YiSyllables::YiSyllableByt),
-            YI_SYLLABLE_BYX => Ok(YiSyllables::YiSyllableByx),
-            YI_SYLLABLE_BY => Ok(YiSyllables::YiSyllableBy),
-            YI_SYLLABLE_BYP => Ok(YiSyllables::YiSyllableByp),
-            YI_SYLLABLE_BYRX => Ok(YiSyllables::YiSyllableByrx),
-            YI_SYLLABLE_BYR => Ok(YiSyllables::YiSyllableByr),
-            YI_SYLLABLE_PIT => Ok(YiSyllables::YiSyllablePit),
-            YI_SYLLABLE_PIX => Ok(YiSyllables::YiSyllablePix),
-            YI_SYLLABLE_PI => Ok(YiSyllables::YiSyllablePi),
-            YI_SYLLABLE_PIP => Ok(YiSyllables::YiSyllablePip),
-            YI_SYLLABLE_PIEX => Ok(YiSyllables::YiSyllablePiex),
-            YI_SYLLABLE_PIE => Ok(YiSyllables::YiSyllablePie),
-            YI_SYLLABLE_PIEP => Ok(YiSyllables::YiSyllablePiep),
-            YI_SYLLABLE_PAT => Ok(YiSyllables::YiSyllablePat),
-            YI_SYLLABLE_PAX => Ok(YiSyllables::YiSyllablePax),
-            YI_SYLLABLE_PA => Ok(YiSyllables::YiSyllablePa),
-            YI_SYLLABLE_PAP => Ok(YiSyllables::YiSyllablePap),
-            YI_SYLLABLE_PUOX => Ok(YiSyllables::YiSyllablePuox),
-            YI_SYLLABLE_PUO => Ok(YiSyllables::YiSyllablePuo),
-            YI_SYLLABLE_PUOP => Ok(YiSyllables::YiSyllablePuop),
-            YI_SYLLABLE_POT => Ok(YiSyllables::YiSyllablePot),
-            YI_SYLLABLE_POX => Ok(YiSyllables::YiSyllablePox),
-            YI_SYLLABLE_PO => Ok(YiSyllables::YiSyllablePo),
-            YI_SYLLABLE_POP => Ok(YiSyllables::YiSyllablePop),
-            YI_SYLLABLE_PUT => Ok(YiSyllables::YiSyllablePut),
-            YI_SYLLABLE_PUX => Ok(YiSyllables::YiSyllablePux),
-            YI_SYLLABLE_PU => Ok(YiSyllables::YiSyllablePu),
-            YI_SYLLABLE_PUP => Ok(YiSyllables::YiSyllablePup),
-            YI_SYLLABLE_PURX => Ok(YiSyllables::YiSyllablePurx),
-            YI_SYLLABLE_PUR => Ok(YiSyllables::YiSyllablePur),
-            YI_SYLLABLE_PYT => Ok(YiSyllables::YiSyllablePyt),
-            YI_SYLLABLE_PYX => Ok(YiSyllables::YiSyllablePyx),
-            YI_SYLLABLE_PY => Ok(YiSyllables::YiSyllablePy),
-            YI_SYLLABLE_PYP => Ok(YiSyllables::YiSyllablePyp),
-            YI_SYLLABLE_PYRX => Ok(YiSyllables::YiSyllablePyrx),
-            YI_SYLLABLE_PYR => Ok(YiSyllables::YiSyllablePyr),
-            YI_SYLLABLE_BBIT => Ok(YiSyllables::YiSyllableBbit),
-            YI_SYLLABLE_BBIX => Ok(YiSyllables::YiSyllableBbix),
-            YI_SYLLABLE_BBI => Ok(YiSyllables::YiSyllableBbi),
-            YI_SYLLABLE_BBIP => Ok(YiSyllables::YiSyllableBbip),
-            YI_SYLLABLE_BBIET => Ok(YiSyllables::YiSyllableBbiet),
-            YI_SYLLABLE_BBIEX => Ok(YiSyllables::YiSyllableBbiex),
-            YI_SYLLABLE_BBIE => Ok(YiSyllables::YiSyllableBbie),
-            YI_SYLLABLE_BBIEP => Ok(YiSyllables::YiSyllableBbiep),
-            YI_SYLLABLE_BBAT => Ok(YiSyllables::YiSyllableBbat),
-            YI_SYLLABLE_BBAX => Ok(YiSyllables::YiSyllableBbax),
-            YI_SYLLABLE_BBA => Ok(YiSyllables::YiSyllableBba),
-            YI_SYLLABLE_BBAP => Ok(YiSyllables::YiSyllableBbap),
-            YI_SYLLABLE_BBUOX => Ok(YiSyllables::YiSyllableBbuox),
-            YI_SYLLABLE_BBUO => Ok(YiSyllables::YiSyllableBbuo),
-            YI_SYLLABLE_BBUOP => Ok(YiSyllables::YiSyllableBbuop),
-            YI_SYLLABLE_BBOT => Ok(YiSyllables::YiSyllableBbot),
-            YI_SYLLABLE_BBOX => Ok(YiSyllables::YiSyllableBbox),
-            YI_SYLLABLE_BBO => Ok(YiSyllables::YiSyllableBbo),
-            YI_SYLLABLE_BBOP => Ok(YiSyllables::YiSyllableBbop),
-            YI_SYLLABLE_BBEX => Ok(YiSyllables::YiSyllableBbex),
-            YI_SYLLABLE_BBE => Ok(YiSyllables::YiSyllableBbe),
-            YI_SYLLABLE_BBEP => Ok(YiSyllables::YiSyllableBbep),
-            YI_SYLLABLE_BBUT => Ok(YiSyllables::YiSyllableBbut),
-            YI_SYLLABLE_BBUX => Ok(YiSyllables::YiSyllableBbux),
-            YI_SYLLABLE_BBU => Ok(YiSyllables::YiSyllableBbu),
-            YI_SYLLABLE_BBUP => Ok(YiSyllables::YiSyllableBbup),
-            YI_SYLLABLE_BBURX => Ok(YiSyllables::YiSyllableBburx),
-            YI_SYLLABLE_BBUR => Ok(YiSyllables::YiSyllableBbur),
-            YI_SYLLABLE_BBYT => Ok(YiSyllables::YiSyllableBbyt),
-            YI_SYLLABLE_BBYX => Ok(YiSyllables::YiSyllableBbyx),
-            YI_SYLLABLE_BBY => Ok(YiSyllables::YiSyllableBby),
-            YI_SYLLABLE_BBYP => Ok(YiSyllables::YiSyllableBbyp),
-            YI_SYLLABLE_NBIT => Ok(YiSyllables::YiSyllableNbit),
-            YI_SYLLABLE_NBIX => Ok(YiSyllables::YiSyllableNbix),
-            YI_SYLLABLE_NBI => Ok(YiSyllables::YiSyllableNbi),
-            YI_SYLLABLE_NBIP => Ok(YiSyllables::YiSyllableNbip),
-            YI_SYLLABLE_NBIEX => Ok(YiSyllables::YiSyllableNbiex),
-            YI_SYLLABLE_NBIE => Ok(YiSyllables::YiSyllableNbie),
-            YI_SYLLABLE_NBIEP => Ok(YiSyllables::YiSyllableNbiep),
-            YI_SYLLABLE_NBAT => Ok(YiSyllables::YiSyllableNbat),
-            YI_SYLLABLE_NBAX => Ok(YiSyllables::YiSyllableNbax),
-            YI_SYLLABLE_NBA => Ok(YiSyllables::YiSyllableNba),
-            YI_SYLLABLE_NBAP => Ok(YiSyllables::YiSyllableNbap),
-            YI_SYLLABLE_NBOT => Ok(YiSyllables::YiSyllableNbot),
-            YI_SYLLABLE_NBOX => Ok(YiSyllables::YiSyllableNbox),
-            YI_SYLLABLE_NBO => Ok(YiSyllables::YiSyllableNbo),
-            YI_SYLLABLE_NBOP => Ok(YiSyllables::YiSyllableNbop),
-            YI_SYLLABLE_NBUT => Ok(YiSyllables::YiSyllableNbut),
-            YI_SYLLABLE_NBUX => Ok(YiSyllables::YiSyllableNbux),
-            YI_SYLLABLE_NBU => Ok(YiSyllables::YiSyllableNbu),
-            YI_SYLLABLE_NBUP => Ok(YiSyllables::YiSyllableNbup),
-            YI_SYLLABLE_NBURX => Ok(YiSyllables::YiSyllableNburx),
-            YI_SYLLABLE_NBUR => Ok(YiSyllables::YiSyllableNbur),
-            YI_SYLLABLE_NBYT => Ok(YiSyllables::YiSyllableNbyt),
-            YI_SYLLABLE_NBYX => Ok(YiSyllables::YiSyllableNbyx),
-            YI_SYLLABLE_NBY => Ok(YiSyllables::YiSyllableNby),
-            YI_SYLLABLE_NBYP => Ok(YiSyllables::YiSyllableNbyp),
-            YI_SYLLABLE_NBYRX => Ok(YiSyllables::YiSyllableNbyrx),
-            YI_SYLLABLE_NBYR => Ok(YiSyllables::YiSyllableNbyr),
-            YI_SYLLABLE_HMIT => Ok(YiSyllables::YiSyllableHmit),
-            YI_SYLLABLE_HMIX => Ok(YiSyllables::YiSyllableHmix),
-            YI_SYLLABLE_HMI => Ok(YiSyllables::YiSyllableHmi),
-            YI_SYLLABLE_HMIP => Ok(YiSyllables::YiSyllableHmip),
-            YI_SYLLABLE_HMIEX => Ok(YiSyllables::YiSyllableHmiex),
-            YI_SYLLABLE_HMIE => Ok(YiSyllables::YiSyllableHmie),
-            YI_SYLLABLE_HMIEP => Ok(YiSyllables::YiSyllableHmiep),
-            YI_SYLLABLE_HMAT => Ok(YiSyllables::YiSyllableHmat),
-            YI_SYLLABLE_HMAX => Ok(YiSyllables::YiSyllableHmax),
-            YI_SYLLABLE_HMA => Ok(YiSyllables::YiSyllableHma),
-            YI_SYLLABLE_HMAP => Ok(YiSyllables::YiSyllableHmap),
-            YI_SYLLABLE_HMUOX => Ok(YiSyllables::YiSyllableHmuox),
-            YI_SYLLABLE_HMUO => Ok(YiSyllables::YiSyllableHmuo),
-            YI_SYLLABLE_HMUOP => Ok(YiSyllables::YiSyllableHmuop),
-            YI_SYLLABLE_HMOT => Ok(YiSyllables::YiSyllableHmot),
-            YI_SYLLABLE_HMOX => Ok(YiSyllables::YiSyllableHmox),
-            YI_SYLLABLE_HMO => Ok(YiSyllables::YiSyllableHmo),
-            YI_SYLLABLE_HMOP => Ok(YiSyllables::YiSyllableHmop),
-            YI_SYLLABLE_HMUT => Ok(YiSyllables::YiSyllableHmut),
-            YI_SYLLABLE_HMUX => Ok(YiSyllables::YiSyllableHmux),
-            YI_SYLLABLE_HMU => Ok(YiSyllables::YiSyllableHmu),
-            YI_SYLLABLE_HMUP => Ok(YiSyllables::YiSyllableHmup),
-            YI_SYLLABLE_HMURX => Ok(YiSyllables::YiSyllableHmurx),
-            YI_SYLLABLE_HMUR => Ok(YiSyllables::YiSyllableHmur),
-            YI_SYLLABLE_HMYX => Ok(YiSyllables::YiSyllableHmyx),
-            YI_SYLLABLE_HMY => Ok(YiSyllables::YiSyllableHmy),
-            YI_SYLLABLE_HMYP => Ok(YiSyllables::YiSyllableHmyp),
-            YI_SYLLABLE_HMYRX => Ok(YiSyllables::YiSyllableHmyrx),
-            YI_SYLLABLE_HMYR => Ok(YiSyllables::YiSyllableHmyr),
-            YI_SYLLABLE_MIT => Ok(YiSyllables::YiSyllableMit),
-            YI_SYLLABLE_MIX => Ok(YiSyllables::YiSyllableMix),
-            YI_SYLLABLE_MI => Ok(YiSyllables::YiSyllableMi),
-            YI_SYLLABLE_MIP => Ok(YiSyllables::YiSyllableMip),
-            YI_SYLLABLE_MIEX => Ok(YiSyllables::YiSyllableMiex),
-            YI_SYLLABLE_MIE => Ok(YiSyllables::YiSyllableMie),
-            YI_SYLLABLE_MIEP => Ok(YiSyllables::YiSyllableMiep),
-            YI_SYLLABLE_MAT => Ok(YiSyllables::YiSyllableMat),
-            YI_SYLLABLE_MAX => Ok(YiSyllables::YiSyllableMax),
-            YI_SYLLABLE_MA => Ok(YiSyllables::YiSyllableMa),
-            YI_SYLLABLE_MAP => Ok(YiSyllables::YiSyllableMap),
-            YI_SYLLABLE_MUOT => Ok(YiSyllables::YiSyllableMuot),
-            YI_SYLLABLE_MUOX => Ok(YiSyllables::YiSyllableMuox),
-            YI_SYLLABLE_MUO => Ok(YiSyllables::YiSyllableMuo),
-            YI_SYLLABLE_MUOP => Ok(YiSyllables::YiSyllableMuop),
-            YI_SYLLABLE_MOT => Ok(YiSyllables::YiSyllableMot),
-            YI_SYLLABLE_MOX => Ok(YiSyllables::YiSyllableMox),
-            YI_SYLLABLE_MO => Ok(YiSyllables::YiSyllableMo),
-            YI_SYLLABLE_MOP => Ok(YiSyllables::YiSyllableMop),
-            YI_SYLLABLE_MEX => Ok(YiSyllables::YiSyllableMex),
-            YI_SYLLABLE_ME => Ok(YiSyllables::YiSyllableMe),
-            YI_SYLLABLE_MUT => Ok(YiSyllables::YiSyllableMut),
-            YI_SYLLABLE_MUX => Ok(YiSyllables::YiSyllableMux),
-            YI_SYLLABLE_MU => Ok(YiSyllables::YiSyllableMu),
-            YI_SYLLABLE_MUP => Ok(YiSyllables::YiSyllableMup),
-            YI_SYLLABLE_MURX => Ok(YiSyllables::YiSyllableMurx),
-            YI_SYLLABLE_MUR => Ok(YiSyllables::YiSyllableMur),
-            YI_SYLLABLE_MYT => Ok(YiSyllables::YiSyllableMyt),
-            YI_SYLLABLE_MYX => Ok(YiSyllables::YiSyllableMyx),
-            YI_SYLLABLE_MY => Ok(YiSyllables::YiSyllableMy),
-            YI_SYLLABLE_MYP => Ok(YiSyllables::YiSyllableMyp),
-            YI_SYLLABLE_FIT => Ok(YiSyllables::YiSyllableFit),
-            YI_SYLLABLE_FIX => Ok(YiSyllables::YiSyllableFix),
-            YI_SYLLABLE_FI => Ok(YiSyllables::YiSyllableFi),
-            YI_SYLLABLE_FIP => Ok(YiSyllables::YiSyllableFip),
-            YI_SYLLABLE_FAT => Ok(YiSyllables::YiSyllableFat),
-            YI_SYLLABLE_FAX => Ok(YiSyllables::YiSyllableFax),
-            YI_SYLLABLE_FA => Ok(YiSyllables::YiSyllableFa),
-            YI_SYLLABLE_FAP => Ok(YiSyllables::YiSyllableFap),
-            YI_SYLLABLE_FOX => Ok(YiSyllables::YiSyllableFox),
-            YI_SYLLABLE_FO => Ok(YiSyllables::YiSyllableFo),
-            YI_SYLLABLE_FOP => Ok(YiSyllables::YiSyllableFop),
-            YI_SYLLABLE_FUT => Ok(YiSyllables::YiSyllableFut),
-            YI_SYLLABLE_FUX => Ok(YiSyllables::YiSyllableFux),
-            YI_SYLLABLE_FU => Ok(YiSyllables::YiSyllableFu),
-            YI_SYLLABLE_FUP => Ok(YiSyllables::YiSyllableFup),
-            YI_SYLLABLE_FURX => Ok(YiSyllables::YiSyllableFurx),
-            YI_SYLLABLE_FUR => Ok(YiSyllables::YiSyllableFur),
-            YI_SYLLABLE_FYT => Ok(YiSyllables::YiSyllableFyt),
-            YI_SYLLABLE_FYX => Ok(YiSyllables::YiSyllableFyx),
-            YI_SYLLABLE_FY => Ok(YiSyllables::YiSyllableFy),
-            YI_SYLLABLE_FYP => Ok(YiSyllables::YiSyllableFyp),
-            YI_SYLLABLE_VIT => Ok(YiSyllables::YiSyllableVit),
-            YI_SYLLABLE_VIX => Ok(YiSyllables::YiSyllableVix),
-            YI_SYLLABLE_VI => Ok(YiSyllables::YiSyllableVi),
-            YI_SYLLABLE_VIP => Ok(YiSyllables::YiSyllableVip),
-            YI_SYLLABLE_VIET => Ok(YiSyllables::YiSyllableViet),
-            YI_SYLLABLE_VIEX => Ok(YiSyllables::YiSyllableViex),
-            YI_SYLLABLE_VIE => Ok(YiSyllables::YiSyllableVie),
-            YI_SYLLABLE_VIEP => Ok(YiSyllables::YiSyllableViep),
-            YI_SYLLABLE_VAT => Ok(YiSyllables::YiSyllableVat),
-            YI_SYLLABLE_VAX => Ok(YiSyllables::YiSyllableVax),
-            YI_SYLLABLE_VA => Ok(YiSyllables::YiSyllableVa),
-            YI_SYLLABLE_VAP => Ok(YiSyllables::YiSyllableVap),
-            YI_SYLLABLE_VOT => Ok(YiSyllables::YiSyllableVot),
-            YI_SYLLABLE_VOX => Ok(YiSyllables::YiSyllableVox),
-            YI_SYLLABLE_VO => Ok(YiSyllables::YiSyllableVo),
-            YI_SYLLABLE_VOP => Ok(YiSyllables::YiSyllableVop),
-            YI_SYLLABLE_VEX => Ok(YiSyllables::YiSyllableVex),
-            YI_SYLLABLE_VEP => Ok(YiSyllables::YiSyllableVep),
-            YI_SYLLABLE_VUT => Ok(YiSyllables::YiSyllableVut),
-            YI_SYLLABLE_VUX => Ok(YiSyllables::YiSyllableVux),
-            YI_SYLLABLE_VU => Ok(YiSyllables::YiSyllableVu),
-            YI_SYLLABLE_VUP => Ok(YiSyllables::YiSyllableVup),
-            YI_SYLLABLE_VURX => Ok(YiSyllables::YiSyllableVurx),
-            YI_SYLLABLE_VUR => Ok(YiSyllables::YiSyllableVur),
-            YI_SYLLABLE_VYT => Ok(YiSyllables::YiSyllableVyt),
-            YI_SYLLABLE_VYX => Ok(YiSyllables::YiSyllableVyx),
-            YI_SYLLABLE_VY => Ok(YiSyllables::YiSyllableVy),
-            YI_SYLLABLE_VYP => Ok(YiSyllables::YiSyllableVyp),
-            YI_SYLLABLE_VYRX => Ok(YiSyllables::YiSyllableVyrx),
-            YI_SYLLABLE_VYR => Ok(YiSyllables::YiSyllableVyr),
-            YI_SYLLABLE_DIT => Ok(YiSyllables::YiSyllableDit),
-            YI_SYLLABLE_DIX => Ok(YiSyllables::YiSyllableDix),
-            YI_SYLLABLE_DI => Ok(YiSyllables::YiSyllableDi),
-            YI_SYLLABLE_DIP => Ok(YiSyllables::YiSyllableDip),
-            YI_SYLLABLE_DIEX => Ok(YiSyllables::YiSyllableDiex),
-            YI_SYLLABLE_DIE => Ok(YiSyllables::YiSyllableDie),
-            YI_SYLLABLE_DIEP => Ok(YiSyllables::YiSyllableDiep),
-            YI_SYLLABLE_DAT => Ok(YiSyllables::YiSyllableDat),
-            YI_SYLLABLE_DAX => Ok(YiSyllables::YiSyllableDax),
-            YI_SYLLABLE_DA => Ok(YiSyllables::YiSyllableDa),
-            YI_SYLLABLE_DAP => Ok(YiSyllables::YiSyllableDap),
-            YI_SYLLABLE_DUOX => Ok(YiSyllables::YiSyllableDuox),
-            YI_SYLLABLE_DUO => Ok(YiSyllables::YiSyllableDuo),
-            YI_SYLLABLE_DOT => Ok(YiSyllables::YiSyllableDot),
-            YI_SYLLABLE_DOX => Ok(YiSyllables::YiSyllableDox),
-            YI_SYLLABLE_DO => Ok(YiSyllables::YiSyllableDo),
-            YI_SYLLABLE_DOP => Ok(YiSyllables::YiSyllableDop),
-            YI_SYLLABLE_DEX => Ok(YiSyllables::YiSyllableDex),
-            YI_SYLLABLE_DE => Ok(YiSyllables::YiSyllableDe),
-            YI_SYLLABLE_DEP => Ok(YiSyllables::YiSyllableDep),
-            YI_SYLLABLE_DUT => Ok(YiSyllables::YiSyllableDut),
-            YI_SYLLABLE_DUX => Ok(YiSyllables::YiSyllableDux),
-            YI_SYLLABLE_DU => Ok(YiSyllables::YiSyllableDu),
-            YI_SYLLABLE_DUP => Ok(YiSyllables::YiSyllableDup),
-            YI_SYLLABLE_DURX => Ok(YiSyllables::YiSyllableDurx),
-            YI_SYLLABLE_DUR => Ok(YiSyllables::YiSyllableDur),
-            YI_SYLLABLE_TIT => Ok(YiSyllables::YiSyllableTit),
-            YI_SYLLABLE_TIX => Ok(YiSyllables::YiSyllableTix),
-            YI_SYLLABLE_TI => Ok(YiSyllables::YiSyllableTi),
-            YI_SYLLABLE_TIP => Ok(YiSyllables::YiSyllableTip),
-            YI_SYLLABLE_TIEX => Ok(YiSyllables::YiSyllableTiex),
-            YI_SYLLABLE_TIE => Ok(YiSyllables::YiSyllableTie),
-            YI_SYLLABLE_TIEP => Ok(YiSyllables::YiSyllableTiep),
-            YI_SYLLABLE_TAT => Ok(YiSyllables::YiSyllableTat),
-            YI_SYLLABLE_TAX => Ok(YiSyllables::YiSyllableTax),
-            YI_SYLLABLE_TA => Ok(YiSyllables::YiSyllableTa),
-            YI_SYLLABLE_TAP => Ok(YiSyllables::YiSyllableTap),
-            YI_SYLLABLE_TUOT => Ok(YiSyllables::YiSyllableTuot),
-            YI_SYLLABLE_TUOX => Ok(YiSyllables::YiSyllableTuox),
-            YI_SYLLABLE_TUO => Ok(YiSyllables::YiSyllableTuo),
-            YI_SYLLABLE_TUOP => Ok(YiSyllables::YiSyllableTuop),
-            YI_SYLLABLE_TOT => Ok(YiSyllables::YiSyllableTot),
-            YI_SYLLABLE_TOX => Ok(YiSyllables::YiSyllableTox),
-            YI_SYLLABLE_TO => Ok(YiSyllables::YiSyllableTo),
-            YI_SYLLABLE_TOP => Ok(YiSyllables::YiSyllableTop),
-            YI_SYLLABLE_TEX => Ok(YiSyllables::YiSyllableTex),
-            YI_SYLLABLE_TE => Ok(YiSyllables::YiSyllableTe),
-            YI_SYLLABLE_TEP => Ok(YiSyllables::YiSyllableTep),
-            YI_SYLLABLE_TUT => Ok(YiSyllables::YiSyllableTut),
-            YI_SYLLABLE_TUX => Ok(YiSyllables::YiSyllableTux),
-            YI_SYLLABLE_TU => Ok(YiSyllables::YiSyllableTu),
-            YI_SYLLABLE_TUP => Ok(YiSyllables::YiSyllableTup),
-            YI_SYLLABLE_TURX => Ok(YiSyllables::YiSyllableTurx),
-            YI_SYLLABLE_TUR => Ok(YiSyllables::YiSyllableTur),
-            YI_SYLLABLE_DDIT => Ok(YiSyllables::YiSyllableDdit),
-            YI_SYLLABLE_DDIX => Ok(YiSyllables::YiSyllableDdix),
-            YI_SYLLABLE_DDI => Ok(YiSyllables::YiSyllableDdi),
-            YI_SYLLABLE_DDIP => Ok(YiSyllables::YiSyllableDdip),
-            YI_SYLLABLE_DDIEX => Ok(YiSyllables::YiSyllableDdiex),
-            YI_SYLLABLE_DDIE => Ok(YiSyllables::YiSyllableDdie),
-            YI_SYLLABLE_DDIEP => Ok(YiSyllables::YiSyllableDdiep),
-            YI_SYLLABLE_DDAT => Ok(YiSyllables::YiSyllableDdat),
-            YI_SYLLABLE_DDAX => Ok(YiSyllables::YiSyllableDdax),
-            YI_SYLLABLE_DDA => Ok(YiSyllables::YiSyllableDda),
-            YI_SYLLABLE_DDAP => Ok(YiSyllables::YiSyllableDdap),
-            YI_SYLLABLE_DDUOX => Ok(YiSyllables::YiSyllableDduox),
-            YI_SYLLABLE_DDUO => Ok(YiSyllables::YiSyllableDduo),
-            YI_SYLLABLE_DDUOP => Ok(YiSyllables::YiSyllableDduop),
-            YI_SYLLABLE_DDOT => Ok(YiSyllables::YiSyllableDdot),
-            YI_SYLLABLE_DDOX => Ok(YiSyllables::YiSyllableDdox),
-            YI_SYLLABLE_DDO => Ok(YiSyllables::YiSyllableDdo),
-            YI_SYLLABLE_DDOP => Ok(YiSyllables::YiSyllableDdop),
-            YI_SYLLABLE_DDEX => Ok(YiSyllables::YiSyllableDdex),
-            YI_SYLLABLE_DDE => Ok(YiSyllables::YiSyllableDde),
-            YI_SYLLABLE_DDEP => Ok(YiSyllables::YiSyllableDdep),
-            YI_SYLLABLE_DDUT => Ok(YiSyllables::YiSyllableDdut),
-            YI_SYLLABLE_DDUX => Ok(YiSyllables::YiSyllableDdux),
-            YI_SYLLABLE_DDU => Ok(YiSyllables::YiSyllableDdu),
-            YI_SYLLABLE_DDUP => Ok(YiSyllables::YiSyllableDdup),
-            YI_SYLLABLE_DDURX => Ok(YiSyllables::YiSyllableDdurx),
-            YI_SYLLABLE_DDUR => Ok(YiSyllables::YiSyllableDdur),
-            YI_SYLLABLE_NDIT => Ok(YiSyllables::YiSyllableNdit),
-            YI_SYLLABLE_NDIX => Ok(YiSyllables::YiSyllableNdix),
-            YI_SYLLABLE_NDI => Ok(YiSyllables::YiSyllableNdi),
-            YI_SYLLABLE_NDIP => Ok(YiSyllables::YiSyllableNdip),
-            YI_SYLLABLE_NDIEX => Ok(YiSyllables::YiSyllableNdiex),
-            YI_SYLLABLE_NDIE => Ok(YiSyllables::YiSyllableNdie),
-            YI_SYLLABLE_NDAT => Ok(YiSyllables::YiSyllableNdat),
-            YI_SYLLABLE_NDAX => Ok(YiSyllables::YiSyllableNdax),
-            YI_SYLLABLE_NDA => Ok(YiSyllables::YiSyllableNda),
-            YI_SYLLABLE_NDAP => Ok(YiSyllables::YiSyllableNdap),
-            YI_SYLLABLE_NDOT => Ok(YiSyllables::YiSyllableNdot),
-            YI_SYLLABLE_NDOX => Ok(YiSyllables::YiSyllableNdox),
-            YI_SYLLABLE_NDO => Ok(YiSyllables::YiSyllableNdo),
-            YI_SYLLABLE_NDOP => Ok(YiSyllables::YiSyllableNdop),
-            YI_SYLLABLE_NDEX => Ok(YiSyllables::YiSyllableNdex),
-            YI_SYLLABLE_NDE => Ok(YiSyllables::YiSyllableNde),
-            YI_SYLLABLE_NDEP => Ok(YiSyllables::YiSyllableNdep),
-            YI_SYLLABLE_NDUT => Ok(YiSyllables::YiSyllableNdut),
-            YI_SYLLABLE_NDUX => Ok(YiSyllables::YiSyllableNdux),
-            YI_SYLLABLE_NDU => Ok(YiSyllables::YiSyllableNdu),
-            YI_SYLLABLE_NDUP => Ok(YiSyllables::YiSyllableNdup),
-            YI_SYLLABLE_NDURX => Ok(YiSyllables::YiSyllableNdurx),
-            YI_SYLLABLE_NDUR => Ok(YiSyllables::YiSyllableNdur),
-            YI_SYLLABLE_HNIT => Ok(YiSyllables::YiSyllableHnit),
-            YI_SYLLABLE_HNIX => Ok(YiSyllables::YiSyllableHnix),
-            YI_SYLLABLE_HNI => Ok(YiSyllables::YiSyllableHni),
-            YI_SYLLABLE_HNIP => Ok(YiSyllables::YiSyllableHnip),
-            YI_SYLLABLE_HNIET => Ok(YiSyllables::YiSyllableHniet),
-            YI_SYLLABLE_HNIEX => Ok(YiSyllables::YiSyllableHniex),
-            YI_SYLLABLE_HNIE => Ok(YiSyllables::YiSyllableHnie),
-            YI_SYLLABLE_HNIEP => Ok(YiSyllables::YiSyllableHniep),
-            YI_SYLLABLE_HNAT => Ok(YiSyllables::YiSyllableHnat),
-            YI_SYLLABLE_HNAX => Ok(YiSyllables::YiSyllableHnax),
-            YI_SYLLABLE_HNA => Ok(YiSyllables::YiSyllableHna),
-            YI_SYLLABLE_HNAP => Ok(YiSyllables::YiSyllableHnap),
-            YI_SYLLABLE_HNUOX => Ok(YiSyllables::YiSyllableHnuox),
-            YI_SYLLABLE_HNUO => Ok(YiSyllables::YiSyllableHnuo),
-            YI_SYLLABLE_HNOT => Ok(YiSyllables::YiSyllableHnot),
-            YI_SYLLABLE_HNOX => Ok(YiSyllables::YiSyllableHnox),
-            YI_SYLLABLE_HNOP => Ok(YiSyllables::YiSyllableHnop),
-            YI_SYLLABLE_HNEX => Ok(YiSyllables::YiSyllableHnex),
-            YI_SYLLABLE_HNE => Ok(YiSyllables::YiSyllableHne),
-            YI_SYLLABLE_HNEP => Ok(YiSyllables::YiSyllableHnep),
-            YI_SYLLABLE_HNUT => Ok(YiSyllables::YiSyllableHnut),
-            YI_SYLLABLE_NIT => Ok(YiSyllables::YiSyllableNit),
-            YI_SYLLABLE_NIX => Ok(YiSyllables::YiSyllableNix),
-            YI_SYLLABLE_NI => Ok(YiSyllables::YiSyllableNi),
-            YI_SYLLABLE_NIP => Ok(YiSyllables::YiSyllableNip),
-            YI_SYLLABLE_NIEX => Ok(YiSyllables::YiSyllableNiex),
-            YI_SYLLABLE_NIE => Ok(YiSyllables::YiSyllableNie),
-            YI_SYLLABLE_NIEP => Ok(YiSyllables::YiSyllableNiep),
-            YI_SYLLABLE_NAX => Ok(YiSyllables::YiSyllableNax),
-            YI_SYLLABLE_NA => Ok(YiSyllables::YiSyllableNa),
-            YI_SYLLABLE_NAP => Ok(YiSyllables::YiSyllableNap),
-            YI_SYLLABLE_NUOX => Ok(YiSyllables::YiSyllableNuox),
-            YI_SYLLABLE_NUO => Ok(YiSyllables::YiSyllableNuo),
-            YI_SYLLABLE_NUOP => Ok(YiSyllables::YiSyllableNuop),
-            YI_SYLLABLE_NOT => Ok(YiSyllables::YiSyllableNot),
-            YI_SYLLABLE_NOX => Ok(YiSyllables::YiSyllableNox),
-            YI_SYLLABLE_NO => Ok(YiSyllables::YiSyllableNo),
-            YI_SYLLABLE_NOP => Ok(YiSyllables::YiSyllableNop),
-            YI_SYLLABLE_NEX => Ok(YiSyllables::YiSyllableNex),
-            YI_SYLLABLE_NE => Ok(YiSyllables::YiSyllableNe),
-            YI_SYLLABLE_NEP => Ok(YiSyllables::YiSyllableNep),
-            YI_SYLLABLE_NUT => Ok(YiSyllables::YiSyllableNut),
-            YI_SYLLABLE_NUX => Ok(YiSyllables::YiSyllableNux),
-            YI_SYLLABLE_NU => Ok(YiSyllables::YiSyllableNu),
-            YI_SYLLABLE_NUP => Ok(YiSyllables::YiSyllableNup),
-            YI_SYLLABLE_NURX => Ok(YiSyllables::YiSyllableNurx),
-            YI_SYLLABLE_NUR => Ok(YiSyllables::YiSyllableNur),
-            YI_SYLLABLE_HLIT => Ok(YiSyllables::YiSyllableHlit),
-            YI_SYLLABLE_HLIX => Ok(YiSyllables::YiSyllableHlix),
-            YI_SYLLABLE_HLI => Ok(YiSyllables::YiSyllableHli),
-            YI_SYLLABLE_HLIP => Ok(YiSyllables::YiSyllableHlip),
-            YI_SYLLABLE_HLIEX => Ok(YiSyllables::YiSyllableHliex),
-            YI_SYLLABLE_HLIE => Ok(YiSyllables::YiSyllableHlie),
-            YI_SYLLABLE_HLIEP => Ok(YiSyllables::YiSyllableHliep),
-            YI_SYLLABLE_HLAT => Ok(YiSyllables::YiSyllableHlat),
-            YI_SYLLABLE_HLAX => Ok(YiSyllables::YiSyllableHlax),
-            YI_SYLLABLE_HLA => Ok(YiSyllables::YiSyllableHla),
-            YI_SYLLABLE_HLAP => Ok(YiSyllables::YiSyllableHlap),
-            YI_SYLLABLE_HLUOX => Ok(YiSyllables::YiSyllableHluox),
-            YI_SYLLABLE_HLUO => Ok(YiSyllables::YiSyllableHluo),
-            YI_SYLLABLE_HLUOP => Ok(YiSyllables::YiSyllableHluop),
-            YI_SYLLABLE_HLOX => Ok(YiSyllables::YiSyllableHlox),
-            YI_SYLLABLE_HLO => Ok(YiSyllables::YiSyllableHlo),
-            YI_SYLLABLE_HLOP => Ok(YiSyllables::YiSyllableHlop),
-            YI_SYLLABLE_HLEX => Ok(YiSyllables::YiSyllableHlex),
-            YI_SYLLABLE_HLE => Ok(YiSyllables::YiSyllableHle),
-            YI_SYLLABLE_HLEP => Ok(YiSyllables::YiSyllableHlep),
-            YI_SYLLABLE_HLUT => Ok(YiSyllables::YiSyllableHlut),
-            YI_SYLLABLE_HLUX => Ok(YiSyllables::YiSyllableHlux),
-            YI_SYLLABLE_HLU => Ok(YiSyllables::YiSyllableHlu),
-            YI_SYLLABLE_HLUP => Ok(YiSyllables::YiSyllableHlup),
-            YI_SYLLABLE_HLURX => Ok(YiSyllables::YiSyllableHlurx),
-            YI_SYLLABLE_HLUR => Ok(YiSyllables::YiSyllableHlur),
-            YI_SYLLABLE_HLYT => Ok(YiSyllables::YiSyllableHlyt),
-            YI_SYLLABLE_HLYX => Ok(YiSyllables::YiSyllableHlyx),
-            YI_SYLLABLE_HLY => Ok(YiSyllables::YiSyllableHly),
-            YI_SYLLABLE_HLYP => Ok(YiSyllables::YiSyllableHlyp),
-            YI_SYLLABLE_HLYRX => Ok(YiSyllables::YiSyllableHlyrx),
-            YI_SYLLABLE_HLYR => Ok(YiSyllables::YiSyllableHlyr),
-            YI_SYLLABLE_LIT => Ok(YiSyllables::YiSyllableLit),
-            YI_SYLLABLE_LIX => Ok(YiSyllables::YiSyllableLix),
-            YI_SYLLABLE_LI => Ok(YiSyllables::YiSyllableLi),
-            YI_SYLLABLE_LIP => Ok(YiSyllables::YiSyllableLip),
-            YI_SYLLABLE_LIET => Ok(YiSyllables::YiSyllableLiet),
-            YI_SYLLABLE_LIEX => Ok(YiSyllables::YiSyllableLiex),
-            YI_SYLLABLE_LIE => Ok(YiSyllables::YiSyllableLie),
-            YI_SYLLABLE_LIEP => Ok(YiSyllables::YiSyllableLiep),
-            YI_SYLLABLE_LAT => Ok(YiSyllables::YiSyllableLat),
-            YI_SYLLABLE_LAX => Ok(YiSyllables::YiSyllableLax),
-            YI_SYLLABLE_LA => Ok(YiSyllables::YiSyllableLa),
-            YI_SYLLABLE_LAP => Ok(YiSyllables::YiSyllableLap),
-            YI_SYLLABLE_LUOT => Ok(YiSyllables::YiSyllableLuot),
-            YI_SYLLABLE_LUOX => Ok(YiSyllables::YiSyllableLuox),
-            YI_SYLLABLE_LUO => Ok(YiSyllables::YiSyllableLuo),
-            YI_SYLLABLE_LUOP => Ok(YiSyllables::YiSyllableLuop),
-            YI_SYLLABLE_LOT => Ok(YiSyllables::YiSyllableLot),
-            YI_SYLLABLE_LOX => Ok(YiSyllables::YiSyllableLox),
-            YI_SYLLABLE_LO => Ok(YiSyllables::YiSyllableLo),
-            YI_SYLLABLE_LOP => Ok(YiSyllables::YiSyllableLop),
-            YI_SYLLABLE_LEX => Ok(YiSyllables::YiSyllableLex),
-            YI_SYLLABLE_LE => Ok(YiSyllables::YiSyllableLe),
-            YI_SYLLABLE_LEP => Ok(YiSyllables::YiSyllableLep),
-            YI_SYLLABLE_LUT => Ok(YiSyllables::YiSyllableLut),
-            YI_SYLLABLE_LUX => Ok(YiSyllables::YiSyllableLux),
-            YI_SYLLABLE_LU => Ok(YiSyllables::YiSyllableLu),
-            YI_SYLLABLE_LUP => Ok(YiSyllables::YiSyllableLup),
-            YI_SYLLABLE_LURX => Ok(YiSyllables::YiSyllableLurx),
-            YI_SYLLABLE_LUR => Ok(YiSyllables::YiSyllableLur),
-            YI_SYLLABLE_LYT => Ok(YiSyllables::YiSyllableLyt),
-            YI_SYLLABLE_LYX => Ok(YiSyllables::YiSyllableLyx),
-            YI_SYLLABLE_LY => Ok(YiSyllables::YiSyllableLy),
-            YI_SYLLABLE_LYP => Ok(YiSyllables::YiSyllableLyp),
-            YI_SYLLABLE_LYRX => Ok(YiSyllables::YiSyllableLyrx),
-            YI_SYLLABLE_LYR => Ok(YiSyllables::YiSyllableLyr),
-            YI_SYLLABLE_GIT => Ok(YiSyllables::YiSyllableGit),
-            YI_SYLLABLE_GIX => Ok(YiSyllables::YiSyllableGix),
-            YI_SYLLABLE_GI => Ok(YiSyllables::YiSyllableGi),
-            YI_SYLLABLE_GIP => Ok(YiSyllables::YiSyllableGip),
-            YI_SYLLABLE_GIET => Ok(YiSyllables::YiSyllableGiet),
-            YI_SYLLABLE_GIEX => Ok(YiSyllables::YiSyllableGiex),
-            YI_SYLLABLE_GIE => Ok(YiSyllables::YiSyllableGie),
-            YI_SYLLABLE_GIEP => Ok(YiSyllables::YiSyllableGiep),
-            YI_SYLLABLE_GAT => Ok(YiSyllables::YiSyllableGat),
-            YI_SYLLABLE_GAX => Ok(YiSyllables::YiSyllableGax),
-            YI_SYLLABLE_GA => Ok(YiSyllables::YiSyllableGa),
-            YI_SYLLABLE_GAP => Ok(YiSyllables::YiSyllableGap),
-            YI_SYLLABLE_GUOT => Ok(YiSyllables::YiSyllableGuot),
-            YI_SYLLABLE_GUOX => Ok(YiSyllables::YiSyllableGuox),
-            YI_SYLLABLE_GUO => Ok(YiSyllables::YiSyllableGuo),
-            YI_SYLLABLE_GUOP => Ok(YiSyllables::YiSyllableGuop),
-            YI_SYLLABLE_GOT => Ok(YiSyllables::YiSyllableGot),
-            YI_SYLLABLE_GOX => Ok(YiSyllables::YiSyllableGox),
-            YI_SYLLABLE_GO => Ok(YiSyllables::YiSyllableGo),
-            YI_SYLLABLE_GOP => Ok(YiSyllables::YiSyllableGop),
-            YI_SYLLABLE_GET => Ok(YiSyllables::YiSyllableGet),
-            YI_SYLLABLE_GEX => Ok(YiSyllables::YiSyllableGex),
-            YI_SYLLABLE_GE => Ok(YiSyllables::YiSyllableGe),
-            YI_SYLLABLE_GEP => Ok(YiSyllables::YiSyllableGep),
-            YI_SYLLABLE_GUT => Ok(YiSyllables::YiSyllableGut),
-            YI_SYLLABLE_GUX => Ok(YiSyllables::YiSyllableGux),
-            YI_SYLLABLE_GU => Ok(YiSyllables::YiSyllableGu),
-            YI_SYLLABLE_GUP => Ok(YiSyllables::YiSyllableGup),
-            YI_SYLLABLE_GURX => Ok(YiSyllables::YiSyllableGurx),
-            YI_SYLLABLE_GUR => Ok(YiSyllables::YiSyllableGur),
-            YI_SYLLABLE_KIT => Ok(YiSyllables::YiSyllableKit),
-            YI_SYLLABLE_KIX => Ok(YiSyllables::YiSyllableKix),
-            YI_SYLLABLE_KI => Ok(YiSyllables::YiSyllableKi),
-            YI_SYLLABLE_KIP => Ok(YiSyllables::YiSyllableKip),
-            YI_SYLLABLE_KIEX => Ok(YiSyllables::YiSyllableKiex),
-            YI_SYLLABLE_KIE => Ok(YiSyllables::YiSyllableKie),
-            YI_SYLLABLE_KIEP => Ok(YiSyllables::YiSyllableKiep),
-            YI_SYLLABLE_KAT => Ok(YiSyllables::YiSyllableKat),
-            YI_SYLLABLE_KAX => Ok(YiSyllables::YiSyllableKax),
-            YI_SYLLABLE_KA => Ok(YiSyllables::YiSyllableKa),
-            YI_SYLLABLE_KAP => Ok(YiSyllables::YiSyllableKap),
-            YI_SYLLABLE_KUOX => Ok(YiSyllables::YiSyllableKuox),
-            YI_SYLLABLE_KUO => Ok(YiSyllables::YiSyllableKuo),
-            YI_SYLLABLE_KUOP => Ok(YiSyllables::YiSyllableKuop),
-            YI_SYLLABLE_KOT => Ok(YiSyllables::YiSyllableKot),
-            YI_SYLLABLE_KOX => Ok(YiSyllables::YiSyllableKox),
-            YI_SYLLABLE_KO => Ok(YiSyllables::YiSyllableKo),
-            YI_SYLLABLE_KOP => Ok(YiSyllables::YiSyllableKop),
-            YI_SYLLABLE_KET => Ok(YiSyllables::YiSyllableKet),
-            YI_SYLLABLE_KEX => Ok(YiSyllables::YiSyllableKex),
-            YI_SYLLABLE_KE => Ok(YiSyllables::YiSyllableKe),
-            YI_SYLLABLE_KEP => Ok(YiSyllables::YiSyllableKep),
-            YI_SYLLABLE_KUT => Ok(YiSyllables::YiSyllableKut),
-            YI_SYLLABLE_KUX => Ok(YiSyllables::YiSyllableKux),
-            YI_SYLLABLE_KU => Ok(YiSyllables::YiSyllableKu),
-            YI_SYLLABLE_KUP => Ok(YiSyllables::YiSyllableKup),
-            YI_SYLLABLE_KURX => Ok(YiSyllables::YiSyllableKurx),
-            YI_SYLLABLE_KUR => Ok(YiSyllables::YiSyllableKur),
-            YI_SYLLABLE_GGIT => Ok(YiSyllables::YiSyllableGgit),
-            YI_SYLLABLE_GGIX => Ok(YiSyllables::YiSyllableGgix),
-            YI_SYLLABLE_GGI => Ok(YiSyllables::YiSyllableGgi),
-            YI_SYLLABLE_GGIEX => Ok(YiSyllables::YiSyllableGgiex),
-            YI_SYLLABLE_GGIE => Ok(YiSyllables::YiSyllableGgie),
-            YI_SYLLABLE_GGIEP => Ok(YiSyllables::YiSyllableGgiep),
-            YI_SYLLABLE_GGAT => Ok(YiSyllables::YiSyllableGgat),
-            YI_SYLLABLE_GGAX => Ok(YiSyllables::YiSyllableGgax),
-            YI_SYLLABLE_GGA => Ok(YiSyllables::YiSyllableGga),
-            YI_SYLLABLE_GGAP => Ok(YiSyllables::YiSyllableGgap),
-            YI_SYLLABLE_GGUOT => Ok(YiSyllables::YiSyllableGguot),
-            YI_SYLLABLE_GGUOX => Ok(YiSyllables::YiSyllableGguox),
-            YI_SYLLABLE_GGUO => Ok(YiSyllables::YiSyllableGguo),
-            YI_SYLLABLE_GGUOP => Ok(YiSyllables::YiSyllableGguop),
-            YI_SYLLABLE_GGOT => Ok(YiSyllables::YiSyllableGgot),
-            YI_SYLLABLE_GGOX => Ok(YiSyllables::YiSyllableGgox),
-            YI_SYLLABLE_GGO => Ok(YiSyllables::YiSyllableGgo),
-            YI_SYLLABLE_GGOP => Ok(YiSyllables::YiSyllableGgop),
-            YI_SYLLABLE_GGET => Ok(YiSyllables::YiSyllableGget),
-            YI_SYLLABLE_GGEX => Ok(YiSyllables::YiSyllableGgex),
-            YI_SYLLABLE_GGE => Ok(YiSyllables::YiSyllableGge),
-            YI_SYLLABLE_GGEP => Ok(YiSyllables::YiSyllableGgep),
-            YI_SYLLABLE_GGUT => Ok(YiSyllables::YiSyllableGgut),
-            YI_SYLLABLE_GGUX => Ok(YiSyllables::YiSyllableGgux),
-            YI_SYLLABLE_GGU => Ok(YiSyllables::YiSyllableGgu),
-            YI_SYLLABLE_GGUP => Ok(YiSyllables::YiSyllableGgup),
-            YI_SYLLABLE_GGURX => Ok(YiSyllables::YiSyllableGgurx),
-            YI_SYLLABLE_GGUR => Ok(YiSyllables::YiSyllableGgur),
-            YI_SYLLABLE_MGIEX => Ok(YiSyllables::YiSyllableMgiex),
-            YI_SYLLABLE_MGIE => Ok(YiSyllables::YiSyllableMgie),
-            YI_SYLLABLE_MGAT => Ok(YiSyllables::YiSyllableMgat),
-            YI_SYLLABLE_MGAX => Ok(YiSyllables::YiSyllableMgax),
-            YI_SYLLABLE_MGA => Ok(YiSyllables::YiSyllableMga),
-            YI_SYLLABLE_MGAP => Ok(YiSyllables::YiSyllableMgap),
-            YI_SYLLABLE_MGUOX => Ok(YiSyllables::YiSyllableMguox),
-            YI_SYLLABLE_MGUO => Ok(YiSyllables::YiSyllableMguo),
-            YI_SYLLABLE_MGUOP => Ok(YiSyllables::YiSyllableMguop),
-            YI_SYLLABLE_MGOT => Ok(YiSyllables::YiSyllableMgot),
-            YI_SYLLABLE_MGOX => Ok(YiSyllables::YiSyllableMgox),
-            YI_SYLLABLE_MGO => Ok(YiSyllables::YiSyllableMgo),
-            YI_SYLLABLE_MGOP => Ok(YiSyllables::YiSyllableMgop),
-            YI_SYLLABLE_MGEX => Ok(YiSyllables::YiSyllableMgex),
-            YI_SYLLABLE_MGE => Ok(YiSyllables::YiSyllableMge),
-            YI_SYLLABLE_MGEP => Ok(YiSyllables::YiSyllableMgep),
-            YI_SYLLABLE_MGUT => Ok(YiSyllables::YiSyllableMgut),
-            YI_SYLLABLE_MGUX => Ok(YiSyllables::YiSyllableMgux),
-            YI_SYLLABLE_MGU => Ok(YiSyllables::YiSyllableMgu),
-            YI_SYLLABLE_MGUP => Ok(YiSyllables::YiSyllableMgup),
-            YI_SYLLABLE_MGURX => Ok(YiSyllables::YiSyllableMgurx),
-            YI_SYLLABLE_MGUR => Ok(YiSyllables::YiSyllableMgur),
-            YI_SYLLABLE_HXIT => Ok(YiSyllables::YiSyllableHxit),
-            YI_SYLLABLE_HXIX => Ok(YiSyllables::YiSyllableHxix),
-            YI_SYLLABLE_HXI => Ok(YiSyllables::YiSyllableHxi),
-            YI_SYLLABLE_HXIP => Ok(YiSyllables::YiSyllableHxip),
-            YI_SYLLABLE_HXIET => Ok(YiSyllables::YiSyllableHxiet),
-            YI_SYLLABLE_HXIEX => Ok(YiSyllables::YiSyllableHxiex),
-            YI_SYLLABLE_HXIE => Ok(YiSyllables::YiSyllableHxie),
-            YI_SYLLABLE_HXIEP => Ok(YiSyllables::YiSyllableHxiep),
-            YI_SYLLABLE_HXAT => Ok(YiSyllables::YiSyllableHxat),
-            YI_SYLLABLE_HXAX => Ok(YiSyllables::YiSyllableHxax),
-            YI_SYLLABLE_HXA => Ok(YiSyllables::YiSyllableHxa),
-            YI_SYLLABLE_HXAP => Ok(YiSyllables::YiSyllableHxap),
-            YI_SYLLABLE_HXUOT => Ok(YiSyllables::YiSyllableHxuot),
-            YI_SYLLABLE_HXUOX => Ok(YiSyllables::YiSyllableHxuox),
-            YI_SYLLABLE_HXUO => Ok(YiSyllables::YiSyllableHxuo),
-            YI_SYLLABLE_HXUOP => Ok(YiSyllables::YiSyllableHxuop),
-            YI_SYLLABLE_HXOT => Ok(YiSyllables::YiSyllableHxot),
-            YI_SYLLABLE_HXOX => Ok(YiSyllables::YiSyllableHxox),
-            YI_SYLLABLE_HXO => Ok(YiSyllables::YiSyllableHxo),
-            YI_SYLLABLE_HXOP => Ok(YiSyllables::YiSyllableHxop),
-            YI_SYLLABLE_HXEX => Ok(YiSyllables::YiSyllableHxex),
-            YI_SYLLABLE_HXE => Ok(YiSyllables::YiSyllableHxe),
-            YI_SYLLABLE_HXEP => Ok(YiSyllables::YiSyllableHxep),
-            YI_SYLLABLE_NGIEX => Ok(YiSyllables::YiSyllableNgiex),
-            YI_SYLLABLE_NGIE => Ok(YiSyllables::YiSyllableNgie),
-            YI_SYLLABLE_NGIEP => Ok(YiSyllables::YiSyllableNgiep),
-            YI_SYLLABLE_NGAT => Ok(YiSyllables::YiSyllableNgat),
-            YI_SYLLABLE_NGAX => Ok(YiSyllables::YiSyllableNgax),
-            YI_SYLLABLE_NGA => Ok(YiSyllables::YiSyllableNga),
-            YI_SYLLABLE_NGAP => Ok(YiSyllables::YiSyllableNgap),
-            YI_SYLLABLE_NGUOT => Ok(YiSyllables::YiSyllableNguot),
-            YI_SYLLABLE_NGUOX => Ok(YiSyllables::YiSyllableNguox),
-            YI_SYLLABLE_NGUO => Ok(YiSyllables::YiSyllableNguo),
-            YI_SYLLABLE_NGOT => Ok(YiSyllables::YiSyllableNgot),
-            YI_SYLLABLE_NGOX => Ok(YiSyllables::YiSyllableNgox),
-            YI_SYLLABLE_NGO => Ok(YiSyllables::YiSyllableNgo),
-            YI_SYLLABLE_NGOP => Ok(YiSyllables::YiSyllableNgop),
-            YI_SYLLABLE_NGEX => Ok(YiSyllables::YiSyllableNgex),
-            YI_SYLLABLE_NGE => Ok(YiSyllables::YiSyllableNge),
-            YI_SYLLABLE_NGEP => Ok(YiSyllables::YiSyllableNgep),
-            YI_SYLLABLE_HIT => Ok(YiSyllables::YiSyllableHit),
-            YI_SYLLABLE_HIEX => Ok(YiSyllables::YiSyllableHiex),
-            YI_SYLLABLE_HIE => Ok(YiSyllables::YiSyllableHie),
-            YI_SYLLABLE_HAT => Ok(YiSyllables::YiSyllableHat),
-            YI_SYLLABLE_HAX => Ok(YiSyllables::YiSyllableHax),
-            YI_SYLLABLE_HA => Ok(YiSyllables::YiSyllableHa),
-            YI_SYLLABLE_HAP => Ok(YiSyllables::YiSyllableHap),
-            YI_SYLLABLE_HUOT => Ok(YiSyllables::YiSyllableHuot),
-            YI_SYLLABLE_HUOX => Ok(YiSyllables::YiSyllableHuox),
-            YI_SYLLABLE_HUO => Ok(YiSyllables::YiSyllableHuo),
-            YI_SYLLABLE_HUOP => Ok(YiSyllables::YiSyllableHuop),
-            YI_SYLLABLE_HOT => Ok(YiSyllables::YiSyllableHot),
-            YI_SYLLABLE_HOX => Ok(YiSyllables::YiSyllableHox),
-            YI_SYLLABLE_HO => Ok(YiSyllables::YiSyllableHo),
-            YI_SYLLABLE_HOP => Ok(YiSyllables::YiSyllableHop),
-            YI_SYLLABLE_HEX => Ok(YiSyllables::YiSyllableHex),
-            YI_SYLLABLE_HE => Ok(YiSyllables::YiSyllableHe),
-            YI_SYLLABLE_HEP => Ok(YiSyllables::YiSyllableHep),
-            YI_SYLLABLE_WAT => Ok(YiSyllables::YiSyllableWat),
-            YI_SYLLABLE_WAX => Ok(YiSyllables::YiSyllableWax),
-            YI_SYLLABLE_WA => Ok(YiSyllables::YiSyllableWa),
-            YI_SYLLABLE_WAP => Ok(YiSyllables::YiSyllableWap),
-            YI_SYLLABLE_WUOX => Ok(YiSyllables::YiSyllableWuox),
-            YI_SYLLABLE_WUO => Ok(YiSyllables::YiSyllableWuo),
-            YI_SYLLABLE_WUOP => Ok(YiSyllables::YiSyllableWuop),
-            YI_SYLLABLE_WOX => Ok(YiSyllables::YiSyllableWox),
-            YI_SYLLABLE_WO => Ok(YiSyllables::YiSyllableWo),
-            YI_SYLLABLE_WOP => Ok(YiSyllables::YiSyllableWop),
-            YI_SYLLABLE_WEX => Ok(YiSyllables::YiSyllableWex),
-            YI_SYLLABLE_WE => Ok(YiSyllables::YiSyllableWe),
-            YI_SYLLABLE_WEP => Ok(YiSyllables::YiSyllableWep),
-            YI_SYLLABLE_ZIT => Ok(YiSyllables::YiSyllableZit),
-            YI_SYLLABLE_ZIX => Ok(YiSyllables::YiSyllableZix),
-            YI_SYLLABLE_ZI => Ok(YiSyllables::YiSyllableZi),
-            YI_SYLLABLE_ZIP => Ok(YiSyllables::YiSyllableZip),
-            YI_SYLLABLE_ZIEX => Ok(YiSyllables::YiSyllableZiex),
-            YI_SYLLABLE_ZIE => Ok(YiSyllables::YiSyllableZie),
-            YI_SYLLABLE_ZIEP => Ok(YiSyllables::YiSyllableZiep),
-            YI_SYLLABLE_ZAT => Ok(YiSyllables::YiSyllableZat),
-            YI_SYLLABLE_ZAX => Ok(YiSyllables::YiSyllableZax),
-            YI_SYLLABLE_ZA => Ok(YiSyllables::YiSyllableZa),
-            YI_SYLLABLE_ZAP => Ok(YiSyllables::YiSyllableZap),
-            YI_SYLLABLE_ZUOX => Ok(YiSyllables::YiSyllableZuox),
-            YI_SYLLABLE_ZUO => Ok(YiSyllables::YiSyllableZuo),
-            YI_SYLLABLE_ZUOP => Ok(YiSyllables::YiSyllableZuop),
-            YI_SYLLABLE_ZOT => Ok(YiSyllables::YiSyllableZot),
-            YI_SYLLABLE_ZOX => Ok(YiSyllables::YiSyllableZox),
-            YI_SYLLABLE_ZO => Ok(YiSyllables::YiSyllableZo),
-            YI_SYLLABLE_ZOP => Ok(YiSyllables::YiSyllableZop),
-            YI_SYLLABLE_ZEX => Ok(YiSyllables::YiSyllableZex),
-            YI_SYLLABLE_ZE => Ok(YiSyllables::YiSyllableZe),
-            YI_SYLLABLE_ZEP => Ok(YiSyllables::YiSyllableZep),
-            YI_SYLLABLE_ZUT => Ok(YiSyllables::YiSyllableZut),
-            YI_SYLLABLE_ZUX => Ok(YiSyllables::YiSyllableZux),
-            YI_SYLLABLE_ZU => Ok(YiSyllables::YiSyllableZu),
-            YI_SYLLABLE_ZUP => Ok(YiSyllables::YiSyllableZup),
-            YI_SYLLABLE_ZURX => Ok(YiSyllables::YiSyllableZurx),
-            YI_SYLLABLE_ZUR => Ok(YiSyllables::YiSyllableZur),
-            YI_SYLLABLE_ZYT => Ok(YiSyllables::YiSyllableZyt),
-            YI_SYLLABLE_ZYX => Ok(YiSyllables::YiSyllableZyx),
-            YI_SYLLABLE_ZY => Ok(YiSyllables::YiSyllableZy),
-            YI_SYLLABLE_ZYP => Ok(YiSyllables::YiSyllableZyp),
-            YI_SYLLABLE_ZYRX => Ok(YiSyllables::YiSyllableZyrx),
-            YI_SYLLABLE_ZYR => Ok(YiSyllables::YiSyllableZyr),
-            YI_SYLLABLE_CIT => Ok(YiSyllables::YiSyllableCit),
-            YI_SYLLABLE_CIX => Ok(YiSyllables::YiSyllableCix),
-            YI_SYLLABLE_CI => Ok(YiSyllables::YiSyllableCi),
-            YI_SYLLABLE_CIP => Ok(YiSyllables::YiSyllableCip),
-            YI_SYLLABLE_CIET => Ok(YiSyllables::YiSyllableCiet),
-            YI_SYLLABLE_CIEX => Ok(YiSyllables::YiSyllableCiex),
-            YI_SYLLABLE_CIE => Ok(YiSyllables::YiSyllableCie),
-            YI_SYLLABLE_CIEP => Ok(YiSyllables::YiSyllableCiep),
-            YI_SYLLABLE_CAT => Ok(YiSyllables::YiSyllableCat),
-            YI_SYLLABLE_CAX => Ok(YiSyllables::YiSyllableCax),
-            YI_SYLLABLE_CA => Ok(YiSyllables::YiSyllableCa),
-            YI_SYLLABLE_CAP => Ok(YiSyllables::YiSyllableCap),
-            YI_SYLLABLE_CUOX => Ok(YiSyllables::YiSyllableCuox),
-            YI_SYLLABLE_CUO => Ok(YiSyllables::YiSyllableCuo),
-            YI_SYLLABLE_CUOP => Ok(YiSyllables::YiSyllableCuop),
-            YI_SYLLABLE_COT => Ok(YiSyllables::YiSyllableCot),
-            YI_SYLLABLE_COX => Ok(YiSyllables::YiSyllableCox),
-            YI_SYLLABLE_CO => Ok(YiSyllables::YiSyllableCo),
-            YI_SYLLABLE_COP => Ok(YiSyllables::YiSyllableCop),
-            YI_SYLLABLE_CEX => Ok(YiSyllables::YiSyllableCex),
-            YI_SYLLABLE_CE => Ok(YiSyllables::YiSyllableCe),
-            YI_SYLLABLE_CEP => Ok(YiSyllables::YiSyllableCep),
-            YI_SYLLABLE_CUT => Ok(YiSyllables::YiSyllableCut),
-            YI_SYLLABLE_CUX => Ok(YiSyllables::YiSyllableCux),
-            YI_SYLLABLE_CU => Ok(YiSyllables::YiSyllableCu),
-            YI_SYLLABLE_CUP => Ok(YiSyllables::YiSyllableCup),
-            YI_SYLLABLE_CURX => Ok(YiSyllables::YiSyllableCurx),
-            YI_SYLLABLE_CUR => Ok(YiSyllables::YiSyllableCur),
-            YI_SYLLABLE_CYT => Ok(YiSyllables::YiSyllableCyt),
-            YI_SYLLABLE_CYX => Ok(YiSyllables::YiSyllableCyx),
-            YI_SYLLABLE_CY => Ok(YiSyllables::YiSyllableCy),
-            YI_SYLLABLE_CYP => Ok(YiSyllables::YiSyllableCyp),
-            YI_SYLLABLE_CYRX => Ok(YiSyllables::YiSyllableCyrx),
-            YI_SYLLABLE_CYR => Ok(YiSyllables::YiSyllableCyr),
-            YI_SYLLABLE_ZZIT => Ok(YiSyllables::YiSyllableZzit),
-            YI_SYLLABLE_ZZIX => Ok(YiSyllables::YiSyllableZzix),
-            YI_SYLLABLE_ZZI => Ok(YiSyllables::YiSyllableZzi),
-            YI_SYLLABLE_ZZIP => Ok(YiSyllables::YiSyllableZzip),
-            YI_SYLLABLE_ZZIET => Ok(YiSyllables::YiSyllableZziet),
-            YI_SYLLABLE_ZZIEX => Ok(YiSyllables::YiSyllableZziex),
-            YI_SYLLABLE_ZZIE => Ok(YiSyllables::YiSyllableZzie),
-            YI_SYLLABLE_ZZIEP => Ok(YiSyllables::YiSyllableZziep),
-            YI_SYLLABLE_ZZAT => Ok(YiSyllables::YiSyllableZzat),
-            YI_SYLLABLE_ZZAX => Ok(YiSyllables::YiSyllableZzax),
-            YI_SYLLABLE_ZZA => Ok(YiSyllables::YiSyllableZza),
-            YI_SYLLABLE_ZZAP => Ok(YiSyllables::YiSyllableZzap),
-            YI_SYLLABLE_ZZOX => Ok(YiSyllables::YiSyllableZzox),
-            YI_SYLLABLE_ZZO => Ok(YiSyllables::YiSyllableZzo),
-            YI_SYLLABLE_ZZOP => Ok(YiSyllables::YiSyllableZzop),
-            YI_SYLLABLE_ZZEX => Ok(YiSyllables::YiSyllableZzex),
-            YI_SYLLABLE_ZZE => Ok(YiSyllables::YiSyllableZze),
-            YI_SYLLABLE_ZZEP => Ok(YiSyllables::YiSyllableZzep),
-            YI_SYLLABLE_ZZUX => Ok(YiSyllables::YiSyllableZzux),
-            YI_SYLLABLE_ZZU => Ok(YiSyllables::YiSyllableZzu),
-            YI_SYLLABLE_ZZUP => Ok(YiSyllables::YiSyllableZzup),
-            YI_SYLLABLE_ZZURX => Ok(YiSyllables::YiSyllableZzurx),
-            YI_SYLLABLE_ZZUR => Ok(YiSyllables::YiSyllableZzur),
-            YI_SYLLABLE_ZZYT => Ok(YiSyllables::YiSyllableZzyt),
-            YI_SYLLABLE_ZZYX => Ok(YiSyllables::YiSyllableZzyx),
-            YI_SYLLABLE_ZZY => Ok(YiSyllables::YiSyllableZzy),
-            YI_SYLLABLE_ZZYP => Ok(YiSyllables::YiSyllableZzyp),
-            YI_SYLLABLE_ZZYRX => Ok(YiSyllables::YiSyllableZzyrx),
-            YI_SYLLABLE_ZZYR => Ok(YiSyllables::YiSyllableZzyr),
-            YI_SYLLABLE_NZIT => Ok(YiSyllables::YiSyllableNzit),
-            YI_SYLLABLE_NZIX => Ok(YiSyllables::YiSyllableNzix),
-            YI_SYLLABLE_NZI => Ok(YiSyllables::YiSyllableNzi),
-            YI_SYLLABLE_NZIP => Ok(YiSyllables::YiSyllableNzip),
-            YI_SYLLABLE_NZIEX => Ok(YiSyllables::YiSyllableNziex),
-            YI_SYLLABLE_NZIE => Ok(YiSyllables::YiSyllableNzie),
-            YI_SYLLABLE_NZIEP => Ok(YiSyllables::YiSyllableNziep),
-            YI_SYLLABLE_NZAT => Ok(YiSyllables::YiSyllableNzat),
-            YI_SYLLABLE_NZAX => Ok(YiSyllables::YiSyllableNzax),
-            YI_SYLLABLE_NZA => Ok(YiSyllables::YiSyllableNza),
-            YI_SYLLABLE_NZAP => Ok(YiSyllables::YiSyllableNzap),
-            YI_SYLLABLE_NZUOX => Ok(YiSyllables::YiSyllableNzuox),
-            YI_SYLLABLE_NZUO => Ok(YiSyllables::YiSyllableNzuo),
-            YI_SYLLABLE_NZOX => Ok(YiSyllables::YiSyllableNzox),
-            YI_SYLLABLE_NZOP => Ok(YiSyllables::YiSyllableNzop),
-            YI_SYLLABLE_NZEX => Ok(YiSyllables::YiSyllableNzex),
-            YI_SYLLABLE_NZE => Ok(YiSyllables::YiSyllableNze),
-            YI_SYLLABLE_NZUX => Ok(YiSyllables::YiSyllableNzux),
-            YI_SYLLABLE_NZU => Ok(YiSyllables::YiSyllableNzu),
-            YI_SYLLABLE_NZUP => Ok(YiSyllables::YiSyllableNzup),
-            YI_SYLLABLE_NZURX => Ok(YiSyllables::YiSyllableNzurx),
-            YI_SYLLABLE_NZUR => Ok(YiSyllables::YiSyllableNzur),
-            YI_SYLLABLE_NZYT => Ok(YiSyllables::YiSyllableNzyt),
-            YI_SYLLABLE_NZYX => Ok(YiSyllables::YiSyllableNzyx),
-            YI_SYLLABLE_NZY => Ok(YiSyllables::YiSyllableNzy),
-            YI_SYLLABLE_NZYP => Ok(YiSyllables::YiSyllableNzyp),
-            YI_SYLLABLE_NZYRX => Ok(YiSyllables::YiSyllableNzyrx),
-            YI_SYLLABLE_NZYR => Ok(YiSyllables::YiSyllableNzyr),
-            YI_SYLLABLE_SIT => Ok(YiSyllables::YiSyllableSit),
-            YI_SYLLABLE_SIX => Ok(YiSyllables::YiSyllableSix),
-            YI_SYLLABLE_SI => Ok(YiSyllables::YiSyllableSi),
-            YI_SYLLABLE_SIP => Ok(YiSyllables::YiSyllableSip),
-            YI_SYLLABLE_SIEX => Ok(YiSyllables::YiSyllableSiex),
-            YI_SYLLABLE_SIE => Ok(YiSyllables::YiSyllableSie),
-            YI_SYLLABLE_SIEP => Ok(YiSyllables::YiSyllableSiep),
-            YI_SYLLABLE_SAT => Ok(YiSyllables::YiSyllableSat),
-            YI_SYLLABLE_SAX => Ok(YiSyllables::YiSyllableSax),
-            YI_SYLLABLE_SA => Ok(YiSyllables::YiSyllableSa),
-            YI_SYLLABLE_SAP => Ok(YiSyllables::YiSyllableSap),
-            YI_SYLLABLE_SUOX => Ok(YiSyllables::YiSyllableSuox),
-            YI_SYLLABLE_SUO => Ok(YiSyllables::YiSyllableSuo),
-            YI_SYLLABLE_SUOP => Ok(YiSyllables::YiSyllableSuop),
-            YI_SYLLABLE_SOT => Ok(YiSyllables::YiSyllableSot),
-            YI_SYLLABLE_SOX => Ok(YiSyllables::YiSyllableSox),
-            YI_SYLLABLE_SO => Ok(YiSyllables::YiSyllableSo),
-            YI_SYLLABLE_SOP => Ok(YiSyllables::YiSyllableSop),
-            YI_SYLLABLE_SEX => Ok(YiSyllables::YiSyllableSex),
-            YI_SYLLABLE_SE => Ok(YiSyllables::YiSyllableSe),
-            YI_SYLLABLE_SEP => Ok(YiSyllables::YiSyllableSep),
-            YI_SYLLABLE_SUT => Ok(YiSyllables::YiSyllableSut),
-            YI_SYLLABLE_SUX => Ok(YiSyllables::YiSyllableSux),
-            YI_SYLLABLE_SU => Ok(YiSyllables::YiSyllableSu),
-            YI_SYLLABLE_SUP => Ok(YiSyllables::YiSyllableSup),
-            YI_SYLLABLE_SURX => Ok(YiSyllables::YiSyllableSurx),
-            YI_SYLLABLE_SUR => Ok(YiSyllables::YiSyllableSur),
-            YI_SYLLABLE_SYT => Ok(YiSyllables::YiSyllableSyt),
-            YI_SYLLABLE_SYX => Ok(YiSyllables::YiSyllableSyx),
-            YI_SYLLABLE_SY => Ok(YiSyllables::YiSyllableSy),
-            YI_SYLLABLE_SYP => Ok(YiSyllables::YiSyllableSyp),
-            YI_SYLLABLE_SYRX => Ok(YiSyllables::YiSyllableSyrx),
-            YI_SYLLABLE_SYR => Ok(YiSyllables::YiSyllableSyr),
-            YI_SYLLABLE_SSIT => Ok(YiSyllables::YiSyllableSsit),
-            YI_SYLLABLE_SSIX => Ok(YiSyllables::YiSyllableSsix),
-            YI_SYLLABLE_SSI => Ok(YiSyllables::YiSyllableSsi),
-            YI_SYLLABLE_SSIP => Ok(YiSyllables::YiSyllableSsip),
-            YI_SYLLABLE_SSIEX => Ok(YiSyllables::YiSyllableSsiex),
-            YI_SYLLABLE_SSIE => Ok(YiSyllables::YiSyllableSsie),
-            YI_SYLLABLE_SSIEP => Ok(YiSyllables::YiSyllableSsiep),
-            YI_SYLLABLE_SSAT => Ok(YiSyllables::YiSyllableSsat),
-            YI_SYLLABLE_SSAX => Ok(YiSyllables::YiSyllableSsax),
-            YI_SYLLABLE_SSA => Ok(YiSyllables::YiSyllableSsa),
-            YI_SYLLABLE_SSAP => Ok(YiSyllables::YiSyllableSsap),
-            YI_SYLLABLE_SSOT => Ok(YiSyllables::YiSyllableSsot),
-            YI_SYLLABLE_SSOX => Ok(YiSyllables::YiSyllableSsox),
-            YI_SYLLABLE_SSO => Ok(YiSyllables::YiSyllableSso),
-            YI_SYLLABLE_SSOP => Ok(YiSyllables::YiSyllableSsop),
-            YI_SYLLABLE_SSEX => Ok(YiSyllables::YiSyllableSsex),
-            YI_SYLLABLE_SSE => Ok(YiSyllables::YiSyllableSse),
-            YI_SYLLABLE_SSEP => Ok(YiSyllables::YiSyllableSsep),
-            YI_SYLLABLE_SSUT => Ok(YiSyllables::YiSyllableSsut),
-            YI_SYLLABLE_SSUX => Ok(YiSyllables::YiSyllableSsux),
-            YI_SYLLABLE_SSU => Ok(YiSyllables::YiSyllableSsu),
-            YI_SYLLABLE_SSUP => Ok(YiSyllables::YiSyllableSsup),
-            YI_SYLLABLE_SSYT => Ok(YiSyllables::YiSyllableSsyt),
-            YI_SYLLABLE_SSYX => Ok(YiSyllables::YiSyllableSsyx),
-            YI_SYLLABLE_SSY => Ok(YiSyllables::YiSyllableSsy),
-            YI_SYLLABLE_SSYP => Ok(YiSyllables::YiSyllableSsyp),
-            YI_SYLLABLE_SSYRX => Ok(YiSyllables::YiSyllableSsyrx),
-            YI_SYLLABLE_SSYR => Ok(YiSyllables::YiSyllableSsyr),
-            YI_SYLLABLE_ZHAT => Ok(YiSyllables::YiSyllableZhat),
-            YI_SYLLABLE_ZHAX => Ok(YiSyllables::YiSyllableZhax),
-            YI_SYLLABLE_ZHA => Ok(YiSyllables::YiSyllableZha),
-            YI_SYLLABLE_ZHAP => Ok(YiSyllables::YiSyllableZhap),
-            YI_SYLLABLE_ZHUOX => Ok(YiSyllables::YiSyllableZhuox),
-            YI_SYLLABLE_ZHUO => Ok(YiSyllables::YiSyllableZhuo),
-            YI_SYLLABLE_ZHUOP => Ok(YiSyllables::YiSyllableZhuop),
-            YI_SYLLABLE_ZHOT => Ok(YiSyllables::YiSyllableZhot),
-            YI_SYLLABLE_ZHOX => Ok(YiSyllables::YiSyllableZhox),
-            YI_SYLLABLE_ZHO => Ok(YiSyllables::YiSyllableZho),
-            YI_SYLLABLE_ZHOP => Ok(YiSyllables::YiSyllableZhop),
-            YI_SYLLABLE_ZHET => Ok(YiSyllables::YiSyllableZhet),
-            YI_SYLLABLE_ZHEX => Ok(YiSyllables::YiSyllableZhex),
-            YI_SYLLABLE_ZHE => Ok(YiSyllables::YiSyllableZhe),
-            YI_SYLLABLE_ZHEP => Ok(YiSyllables::YiSyllableZhep),
-            YI_SYLLABLE_ZHUT => Ok(YiSyllables::YiSyllableZhut),
-            YI_SYLLABLE_ZHUX => Ok(YiSyllables::YiSyllableZhux),
-            YI_SYLLABLE_ZHU => Ok(YiSyllables::YiSyllableZhu),
-            YI_SYLLABLE_ZHUP => Ok(YiSyllables::YiSyllableZhup),
-            YI_SYLLABLE_ZHURX => Ok(YiSyllables::YiSyllableZhurx),
-            YI_SYLLABLE_ZHUR => Ok(YiSyllables::YiSyllableZhur),
-            YI_SYLLABLE_ZHYT => Ok(YiSyllables::YiSyllableZhyt),
-            YI_SYLLABLE_ZHYX => Ok(YiSyllables::YiSyllableZhyx),
-            YI_SYLLABLE_ZHY => Ok(YiSyllables::YiSyllableZhy),
-            YI_SYLLABLE_ZHYP => Ok(YiSyllables::YiSyllableZhyp),
-            YI_SYLLABLE_ZHYRX => Ok(YiSyllables::YiSyllableZhyrx),
-            YI_SYLLABLE_ZHYR => Ok(YiSyllables::YiSyllableZhyr),
-            YI_SYLLABLE_CHAT => Ok(YiSyllables::YiSyllableChat),
-            YI_SYLLABLE_CHAX => Ok(YiSyllables::YiSyllableChax),
-            YI_SYLLABLE_CHA => Ok(YiSyllables::YiSyllableCha),
-            YI_SYLLABLE_CHAP => Ok(YiSyllables::YiSyllableChap),
-            YI_SYLLABLE_CHUOT => Ok(YiSyllables::YiSyllableChuot),
-            YI_SYLLABLE_CHUOX => Ok(YiSyllables::YiSyllableChuox),
-            YI_SYLLABLE_CHUO => Ok(YiSyllables::YiSyllableChuo),
-            YI_SYLLABLE_CHUOP => Ok(YiSyllables::YiSyllableChuop),
-            YI_SYLLABLE_CHOT => Ok(YiSyllables::YiSyllableChot),
-            YI_SYLLABLE_CHOX => Ok(YiSyllables::YiSyllableChox),
-            YI_SYLLABLE_CHO => Ok(YiSyllables::YiSyllableCho),
-            YI_SYLLABLE_CHOP => Ok(YiSyllables::YiSyllableChop),
-            YI_SYLLABLE_CHET => Ok(YiSyllables::YiSyllableChet),
-            YI_SYLLABLE_CHEX => Ok(YiSyllables::YiSyllableChex),
-            YI_SYLLABLE_CHE => Ok(YiSyllables::YiSyllableChe),
-            YI_SYLLABLE_CHEP => Ok(YiSyllables::YiSyllableChep),
-            YI_SYLLABLE_CHUX => Ok(YiSyllables::YiSyllableChux),
-            YI_SYLLABLE_CHU => Ok(YiSyllables::YiSyllableChu),
-            YI_SYLLABLE_CHUP => Ok(YiSyllables::YiSyllableChup),
-            YI_SYLLABLE_CHURX => Ok(YiSyllables::YiSyllableChurx),
-            YI_SYLLABLE_CHUR => Ok(YiSyllables::YiSyllableChur),
-            YI_SYLLABLE_CHYT => Ok(YiSyllables::YiSyllableChyt),
-            YI_SYLLABLE_CHYX => Ok(YiSyllables::YiSyllableChyx),
-            YI_SYLLABLE_CHY => Ok(YiSyllables::YiSyllableChy),
-            YI_SYLLABLE_CHYP => Ok(YiSyllables::YiSyllableChyp),
-            YI_SYLLABLE_CHYRX => Ok(YiSyllables::YiSyllableChyrx),
-            YI_SYLLABLE_CHYR => Ok(YiSyllables::YiSyllableChyr),
-            YI_SYLLABLE_RRAX => Ok(YiSyllables::YiSyllableRrax),
-            YI_SYLLABLE_RRA => Ok(YiSyllables::YiSyllableRra),
-            YI_SYLLABLE_RRUOX => Ok(YiSyllables::YiSyllableRruox),
-            YI_SYLLABLE_RRUO => Ok(YiSyllables::YiSyllableRruo),
-            YI_SYLLABLE_RROT => Ok(YiSyllables::YiSyllableRrot),
-            YI_SYLLABLE_RROX => Ok(YiSyllables::YiSyllableRrox),
-            YI_SYLLABLE_RRO => Ok(YiSyllables::YiSyllableRro),
-            YI_SYLLABLE_RROP => Ok(YiSyllables::YiSyllableRrop),
-            YI_SYLLABLE_RRET => Ok(YiSyllables::YiSyllableRret),
-            YI_SYLLABLE_RREX => Ok(YiSyllables::YiSyllableRrex),
-            YI_SYLLABLE_RRE => Ok(YiSyllables::YiSyllableRre),
-            YI_SYLLABLE_RREP => Ok(YiSyllables::YiSyllableRrep),
-            YI_SYLLABLE_RRUT => Ok(YiSyllables::YiSyllableRrut),
-            YI_SYLLABLE_RRUX => Ok(YiSyllables::YiSyllableRrux),
-            YI_SYLLABLE_RRU => Ok(YiSyllables::YiSyllableRru),
-            YI_SYLLABLE_RRUP => Ok(YiSyllables::YiSyllableRrup),
-            YI_SYLLABLE_RRURX => Ok(YiSyllables::YiSyllableRrurx),
-            YI_SYLLABLE_RRUR => Ok(YiSyllables::YiSyllableRrur),
-            YI_SYLLABLE_RRYT => Ok(YiSyllables::YiSyllableRryt),
-            YI_SYLLABLE_RRYX => Ok(YiSyllables::YiSyllableRryx),
-            YI_SYLLABLE_RRY => Ok(YiSyllables::YiSyllableRry),
-            YI_SYLLABLE_RRYP => Ok(YiSyllables::YiSyllableRryp),
-            YI_SYLLABLE_RRYRX => Ok(YiSyllables::YiSyllableRryrx),
-            YI_SYLLABLE_RRYR => Ok(YiSyllables::YiSyllableRryr),
-            YI_SYLLABLE_NRAT => Ok(YiSyllables::YiSyllableNrat),
-            YI_SYLLABLE_NRAX => Ok(YiSyllables::YiSyllableNrax),
-            YI_SYLLABLE_NRA => Ok(YiSyllables::YiSyllableNra),
-            YI_SYLLABLE_NRAP => Ok(YiSyllables::YiSyllableNrap),
-            YI_SYLLABLE_NROX => Ok(YiSyllables::YiSyllableNrox),
-            YI_SYLLABLE_NRO => Ok(YiSyllables::YiSyllableNro),
-            YI_SYLLABLE_NROP => Ok(YiSyllables::YiSyllableNrop),
-            YI_SYLLABLE_NRET => Ok(YiSyllables::YiSyllableNret),
-            YI_SYLLABLE_NREX => Ok(YiSyllables::YiSyllableNrex),
-            YI_SYLLABLE_NRE => Ok(YiSyllables::YiSyllableNre),
-            YI_SYLLABLE_NREP => Ok(YiSyllables::YiSyllableNrep),
-            YI_SYLLABLE_NRUT => Ok(YiSyllables::YiSyllableNrut),
-            YI_SYLLABLE_NRUX => Ok(YiSyllables::YiSyllableNrux),
-            YI_SYLLABLE_NRU => Ok(YiSyllables::YiSyllableNru),
-            YI_SYLLABLE_NRUP => Ok(YiSyllables::YiSyllableNrup),
-            YI_SYLLABLE_NRURX => Ok(YiSyllables::YiSyllableNrurx),
-            YI_SYLLABLE_NRUR => Ok(YiSyllables::YiSyllableNrur),
-            YI_SYLLABLE_NRYT => Ok(YiSyllables::YiSyllableNryt),
-            YI_SYLLABLE_NRYX => Ok(YiSyllables::YiSyllableNryx),
-            YI_SYLLABLE_NRY => Ok(YiSyllables::YiSyllableNry),
-            YI_SYLLABLE_NRYP => Ok(YiSyllables::YiSyllableNryp),
-            YI_SYLLABLE_NRYRX => Ok(YiSyllables::YiSyllableNryrx),
-            YI_SYLLABLE_NRYR => Ok(YiSyllables::YiSyllableNryr),
-            YI_SYLLABLE_SHAT => Ok(YiSyllables::YiSyllableShat),
-            YI_SYLLABLE_SHAX => Ok(YiSyllables::YiSyllableShax),
-            YI_SYLLABLE_SHA => Ok(YiSyllables::YiSyllableSha),
-            YI_SYLLABLE_SHAP => Ok(YiSyllables::YiSyllableShap),
-            YI_SYLLABLE_SHUOX => Ok(YiSyllables::YiSyllableShuox),
-            YI_SYLLABLE_SHUO => Ok(YiSyllables::YiSyllableShuo),
-            YI_SYLLABLE_SHUOP => Ok(YiSyllables::YiSyllableShuop),
-            YI_SYLLABLE_SHOT => Ok(YiSyllables::YiSyllableShot),
-            YI_SYLLABLE_SHOX => Ok(YiSyllables::YiSyllableShox),
-            YI_SYLLABLE_SHO => Ok(YiSyllables::YiSyllableSho),
-            YI_SYLLABLE_SHOP => Ok(YiSyllables::YiSyllableShop),
-            YI_SYLLABLE_SHET => Ok(YiSyllables::YiSyllableShet),
-            YI_SYLLABLE_SHEX => Ok(YiSyllables::YiSyllableShex),
-            YI_SYLLABLE_SHE => Ok(YiSyllables::YiSyllableShe),
-            YI_SYLLABLE_SHEP => Ok(YiSyllables::YiSyllableShep),
-            YI_SYLLABLE_SHUT => Ok(YiSyllables::YiSyllableShut),
-            YI_SYLLABLE_SHUX => Ok(YiSyllables::YiSyllableShux),
-            YI_SYLLABLE_SHU => Ok(YiSyllables::YiSyllableShu),
-            YI_SYLLABLE_SHUP => Ok(YiSyllables::YiSyllableShup),
-            YI_SYLLABLE_SHURX => Ok(YiSyllables::YiSyllableShurx),
-            YI_SYLLABLE_SHUR => Ok(YiSyllables::YiSyllableShur),
-            YI_SYLLABLE_SHYT => Ok(YiSyllables::YiSyllableShyt),
-            YI_SYLLABLE_SHYX => Ok(YiSyllables::YiSyllableShyx),
-            YI_SYLLABLE_SHY => Ok(YiSyllables::YiSyllableShy),
-            YI_SYLLABLE_SHYP => Ok(YiSyllables::YiSyllableShyp),
-            YI_SYLLABLE_SHYRX => Ok(YiSyllables::YiSyllableShyrx),
-            YI_SYLLABLE_SHYR => Ok(YiSyllables::YiSyllableShyr),
-            YI_SYLLABLE_RAT => Ok(YiSyllables::YiSyllableRat),
-            YI_SYLLABLE_RAX => Ok(YiSyllables::YiSyllableRax),
-            YI_SYLLABLE_RA => Ok(YiSyllables::YiSyllableRa),
-            YI_SYLLABLE_RAP => Ok(YiSyllables::YiSyllableRap),
-            YI_SYLLABLE_RUOX => Ok(YiSyllables::YiSyllableRuox),
-            YI_SYLLABLE_RUO => Ok(YiSyllables::YiSyllableRuo),
-            YI_SYLLABLE_RUOP => Ok(YiSyllables::YiSyllableRuop),
-            YI_SYLLABLE_ROT => Ok(YiSyllables::YiSyllableRot),
-            YI_SYLLABLE_ROX => Ok(YiSyllables::YiSyllableRox),
-            YI_SYLLABLE_RO => Ok(YiSyllables::YiSyllableRo),
-            YI_SYLLABLE_ROP => Ok(YiSyllables::YiSyllableRop),
-            YI_SYLLABLE_REX => Ok(YiSyllables::YiSyllableRex),
-            YI_SYLLABLE_RE => Ok(YiSyllables::YiSyllableRe),
-            YI_SYLLABLE_REP => Ok(YiSyllables::YiSyllableRep),
-            YI_SYLLABLE_RUT => Ok(YiSyllables::YiSyllableRut),
-            YI_SYLLABLE_RUX => Ok(YiSyllables::YiSyllableRux),
-            YI_SYLLABLE_RU => Ok(YiSyllables::YiSyllableRu),
-            YI_SYLLABLE_RUP => Ok(YiSyllables::YiSyllableRup),
-            YI_SYLLABLE_RURX => Ok(YiSyllables::YiSyllableRurx),
-            YI_SYLLABLE_RUR => Ok(YiSyllables::YiSyllableRur),
-            YI_SYLLABLE_RYT => Ok(YiSyllables::YiSyllableRyt),
-            YI_SYLLABLE_RYX => Ok(YiSyllables::YiSyllableRyx),
-            YI_SYLLABLE_RY => Ok(YiSyllables::YiSyllableRy),
-            YI_SYLLABLE_RYP => Ok(YiSyllables::YiSyllableRyp),
-            YI_SYLLABLE_RYRX => Ok(YiSyllables::YiSyllableRyrx),
-            YI_SYLLABLE_RYR => Ok(YiSyllables::YiSyllableRyr),
-            YI_SYLLABLE_JIT => Ok(YiSyllables::YiSyllableJit),
-            YI_SYLLABLE_JIX => Ok(YiSyllables::YiSyllableJix),
-            YI_SYLLABLE_JI => Ok(YiSyllables::YiSyllableJi),
-            YI_SYLLABLE_JIP => Ok(YiSyllables::YiSyllableJip),
-            YI_SYLLABLE_JIET => Ok(YiSyllables::YiSyllableJiet),
-            YI_SYLLABLE_JIEX => Ok(YiSyllables::YiSyllableJiex),
-            YI_SYLLABLE_JIE => Ok(YiSyllables::YiSyllableJie),
-            YI_SYLLABLE_JIEP => Ok(YiSyllables::YiSyllableJiep),
-            YI_SYLLABLE_JUOT => Ok(YiSyllables::YiSyllableJuot),
-            YI_SYLLABLE_JUOX => Ok(YiSyllables::YiSyllableJuox),
-            YI_SYLLABLE_JUO => Ok(YiSyllables::YiSyllableJuo),
-            YI_SYLLABLE_JUOP => Ok(YiSyllables::YiSyllableJuop),
-            YI_SYLLABLE_JOT => Ok(YiSyllables::YiSyllableJot),
-            YI_SYLLABLE_JOX => Ok(YiSyllables::YiSyllableJox),
-            YI_SYLLABLE_JO => Ok(YiSyllables::YiSyllableJo),
-            YI_SYLLABLE_JOP => Ok(YiSyllables::YiSyllableJop),
-            YI_SYLLABLE_JUT => Ok(YiSyllables::YiSyllableJut),
-            YI_SYLLABLE_JUX => Ok(YiSyllables::YiSyllableJux),
-            YI_SYLLABLE_JU => Ok(YiSyllables::YiSyllableJu),
-            YI_SYLLABLE_JUP => Ok(YiSyllables::YiSyllableJup),
-            YI_SYLLABLE_JURX => Ok(YiSyllables::YiSyllableJurx),
-            YI_SYLLABLE_JUR => Ok(YiSyllables::YiSyllableJur),
-            YI_SYLLABLE_JYT => Ok(YiSyllables::YiSyllableJyt),
-            YI_SYLLABLE_JYX => Ok(YiSyllables::YiSyllableJyx),
-            YI_SYLLABLE_JY => Ok(YiSyllables::YiSyllableJy),
-            YI_SYLLABLE_JYP => Ok(YiSyllables::YiSyllableJyp),
-            YI_SYLLABLE_JYRX => Ok(YiSyllables::YiSyllableJyrx),
-            YI_SYLLABLE_JYR => Ok(YiSyllables::YiSyllableJyr),
-            YI_SYLLABLE_QIT => Ok(YiSyllables::YiSyllableQit),
-            YI_SYLLABLE_QIX => Ok(YiSyllables::YiSyllableQix),
-            YI_SYLLABLE_QI => Ok(YiSyllables::YiSyllableQi),
-            YI_SYLLABLE_QIP => Ok(YiSyllables::YiSyllableQip),
-            YI_SYLLABLE_QIET => Ok(YiSyllables::YiSyllableQiet),
-            YI_SYLLABLE_QIEX => Ok(YiSyllables::YiSyllableQiex),
-            YI_SYLLABLE_QIE => Ok(YiSyllables::YiSyllableQie),
-            YI_SYLLABLE_QIEP => Ok(YiSyllables::YiSyllableQiep),
-            YI_SYLLABLE_QUOT => Ok(YiSyllables::YiSyllableQuot),
-            YI_SYLLABLE_QUOX => Ok(YiSyllables::YiSyllableQuox),
-            YI_SYLLABLE_QUO => Ok(YiSyllables::YiSyllableQuo),
-            YI_SYLLABLE_QUOP => Ok(YiSyllables::YiSyllableQuop),
-            YI_SYLLABLE_QOT => Ok(YiSyllables::YiSyllableQot),
-            YI_SYLLABLE_QOX => Ok(YiSyllables::YiSyllableQox),
-            YI_SYLLABLE_QO => Ok(YiSyllables::YiSyllableQo),
-            YI_SYLLABLE_QOP => Ok(YiSyllables::YiSyllableQop),
-            YI_SYLLABLE_QUT => Ok(YiSyllables::YiSyllableQut),
-            YI_SYLLABLE_QUX => Ok(YiSyllables::YiSyllableQux),
-            YI_SYLLABLE_QU => Ok(YiSyllables::YiSyllableQu),
-            YI_SYLLABLE_QUP => Ok(YiSyllables::YiSyllableQup),
-            YI_SYLLABLE_QURX => Ok(YiSyllables::YiSyllableQurx),
-            YI_SYLLABLE_QUR => Ok(YiSyllables::YiSyllableQur),
-            YI_SYLLABLE_QYT => Ok(YiSyllables::YiSyllableQyt),
-            YI_SYLLABLE_QYX => Ok(YiSyllables::YiSyllableQyx),
-            YI_SYLLABLE_QY => Ok(YiSyllables::YiSyllableQy),
-            YI_SYLLABLE_QYP => Ok(YiSyllables::YiSyllableQyp),
-            YI_SYLLABLE_QYRX => Ok(YiSyllables::YiSyllableQyrx),
-            YI_SYLLABLE_QYR => Ok(YiSyllables::YiSyllableQyr),
-            YI_SYLLABLE_JJIT => Ok(YiSyllables::YiSyllableJjit),
-            YI_SYLLABLE_JJIX => Ok(YiSyllables::YiSyllableJjix),
-            YI_SYLLABLE_JJI => Ok(YiSyllables::YiSyllableJji),
-            YI_SYLLABLE_JJIP => Ok(YiSyllables::YiSyllableJjip),
-            YI_SYLLABLE_JJIET => Ok(YiSyllables::YiSyllableJjiet),
-            YI_SYLLABLE_JJIEX => Ok(YiSyllables::YiSyllableJjiex),
-            YI_SYLLABLE_JJIE => Ok(YiSyllables::YiSyllableJjie),
-            YI_SYLLABLE_JJIEP => Ok(YiSyllables::YiSyllableJjiep),
-            YI_SYLLABLE_JJUOX => Ok(YiSyllables::YiSyllableJjuox),
-            YI_SYLLABLE_JJUO => Ok(YiSyllables::YiSyllableJjuo),
-            YI_SYLLABLE_JJUOP => Ok(YiSyllables::YiSyllableJjuop),
-            YI_SYLLABLE_JJOT => Ok(YiSyllables::YiSyllableJjot),
-            YI_SYLLABLE_JJOX => Ok(YiSyllables::YiSyllableJjox),
-            YI_SYLLABLE_JJO => Ok(YiSyllables::YiSyllableJjo),
-            YI_SYLLABLE_JJOP => Ok(YiSyllables::YiSyllableJjop),
-            YI_SYLLABLE_JJUT => Ok(YiSyllables::YiSyllableJjut),
-            YI_SYLLABLE_JJUX => Ok(YiSyllables::YiSyllableJjux),
-            YI_SYLLABLE_JJU => Ok(YiSyllables::YiSyllableJju),
-            YI_SYLLABLE_JJUP => Ok(YiSyllables::YiSyllableJjup),
-            YI_SYLLABLE_JJURX => Ok(YiSyllables::YiSyllableJjurx),
-            YI_SYLLABLE_JJUR => Ok(YiSyllables::YiSyllableJjur),
-            YI_SYLLABLE_JJYT => Ok(YiSyllables::YiSyllableJjyt),
-            YI_SYLLABLE_JJYX => Ok(YiSyllables::YiSyllableJjyx),
-            YI_SYLLABLE_JJY => Ok(YiSyllables::YiSyllableJjy),
-            YI_SYLLABLE_JJYP => Ok(YiSyllables::YiSyllableJjyp),
-            YI_SYLLABLE_NJIT => Ok(YiSyllables::YiSyllableNjit),
-            YI_SYLLABLE_NJIX => Ok(YiSyllables::YiSyllableNjix),
-            YI_SYLLABLE_NJI => Ok(YiSyllables::YiSyllableNji),
-            YI_SYLLABLE_NJIP => Ok(YiSyllables::YiSyllableNjip),
-            YI_SYLLABLE_NJIET => Ok(YiSyllables::YiSyllableNjiet),
-            YI_SYLLABLE_NJIEX => Ok(YiSyllables::YiSyllableNjiex),
-            YI_SYLLABLE_NJIE => Ok(YiSyllables::YiSyllableNjie),
-            YI_SYLLABLE_NJIEP => Ok(YiSyllables::YiSyllableNjiep),
-            YI_SYLLABLE_NJUOX => Ok(YiSyllables::YiSyllableNjuox),
-            YI_SYLLABLE_NJUO => Ok(YiSyllables::YiSyllableNjuo),
-            YI_SYLLABLE_NJOT => Ok(YiSyllables::YiSyllableNjot),
-            YI_SYLLABLE_NJOX => Ok(YiSyllables::YiSyllableNjox),
-            YI_SYLLABLE_NJO => Ok(YiSyllables::YiSyllableNjo),
-            YI_SYLLABLE_NJOP => Ok(YiSyllables::YiSyllableNjop),
-            YI_SYLLABLE_NJUX => Ok(YiSyllables::YiSyllableNjux),
-            YI_SYLLABLE_NJU => Ok(YiSyllables::YiSyllableNju),
-            YI_SYLLABLE_NJUP => Ok(YiSyllables::YiSyllableNjup),
-            YI_SYLLABLE_NJURX => Ok(YiSyllables::YiSyllableNjurx),
-            YI_SYLLABLE_NJUR => Ok(YiSyllables::YiSyllableNjur),
-            YI_SYLLABLE_NJYT => Ok(YiSyllables::YiSyllableNjyt),
-            YI_SYLLABLE_NJYX => Ok(YiSyllables::YiSyllableNjyx),
-            YI_SYLLABLE_NJY => Ok(YiSyllables::YiSyllableNjy),
-            YI_SYLLABLE_NJYP => Ok(YiSyllables::YiSyllableNjyp),
-            YI_SYLLABLE_NJYRX => Ok(YiSyllables::YiSyllableNjyrx),
-            YI_SYLLABLE_NJYR => Ok(YiSyllables::YiSyllableNjyr),
-            YI_SYLLABLE_NYIT => Ok(YiSyllables::YiSyllableNyit),
-            YI_SYLLABLE_NYIX => Ok(YiSyllables::YiSyllableNyix),
-            YI_SYLLABLE_NYI => Ok(YiSyllables::YiSyllableNyi),
-            YI_SYLLABLE_NYIP => Ok(YiSyllables::YiSyllableNyip),
-            YI_SYLLABLE_NYIET => Ok(YiSyllables::YiSyllableNyiet),
-            YI_SYLLABLE_NYIEX => Ok(YiSyllables::YiSyllableNyiex),
-            YI_SYLLABLE_NYIE => Ok(YiSyllables::YiSyllableNyie),
-            YI_SYLLABLE_NYIEP => Ok(YiSyllables::YiSyllableNyiep),
-            YI_SYLLABLE_NYUOX => Ok(YiSyllables::YiSyllableNyuox),
-            YI_SYLLABLE_NYUO => Ok(YiSyllables::YiSyllableNyuo),
-            YI_SYLLABLE_NYUOP => Ok(YiSyllables::YiSyllableNyuop),
-            YI_SYLLABLE_NYOT => Ok(YiSyllables::YiSyllableNyot),
-            YI_SYLLABLE_NYOX => Ok(YiSyllables::YiSyllableNyox),
-            YI_SYLLABLE_NYO => Ok(YiSyllables::YiSyllableNyo),
-            YI_SYLLABLE_NYOP => Ok(YiSyllables::YiSyllableNyop),
-            YI_SYLLABLE_NYUT => Ok(YiSyllables::YiSyllableNyut),
-            YI_SYLLABLE_NYUX => Ok(YiSyllables::YiSyllableNyux),
-            YI_SYLLABLE_NYU => Ok(YiSyllables::YiSyllableNyu),
-            YI_SYLLABLE_NYUP => Ok(YiSyllables::YiSyllableNyup),
-            YI_SYLLABLE_XIT => Ok(YiSyllables::YiSyllableXit),
-            YI_SYLLABLE_XIX => Ok(YiSyllables::YiSyllableXix),
-            YI_SYLLABLE_XI => Ok(YiSyllables::YiSyllableXi),
-            YI_SYLLABLE_XIP => Ok(YiSyllables::YiSyllableXip),
-            YI_SYLLABLE_XIET => Ok(YiSyllables::YiSyllableXiet),
-            YI_SYLLABLE_XIEX => Ok(YiSyllables::YiSyllableXiex),
-            YI_SYLLABLE_XIE => Ok(YiSyllables::YiSyllableXie),
-            YI_SYLLABLE_XIEP => Ok(YiSyllables::YiSyllableXiep),
-            YI_SYLLABLE_XUOX => Ok(YiSyllables::YiSyllableXuox),
-            YI_SYLLABLE_XUO => Ok(YiSyllables::YiSyllableXuo),
-            YI_SYLLABLE_XOT => Ok(YiSyllables::YiSyllableXot),
-            YI_SYLLABLE_XOX => Ok(YiSyllables::YiSyllableXox),
-            YI_SYLLABLE_XO => Ok(YiSyllables::YiSyllableXo),
-            YI_SYLLABLE_XOP => Ok(YiSyllables::YiSyllableXop),
-            YI_SYLLABLE_XYT => Ok(YiSyllables::YiSyllableXyt),
-            YI_SYLLABLE_XYX => Ok(YiSyllables::YiSyllableXyx),
-            YI_SYLLABLE_XY => Ok(YiSyllables::YiSyllableXy),
-            YI_SYLLABLE_XYP => Ok(YiSyllables::YiSyllableXyp),
-            YI_SYLLABLE_XYRX => Ok(YiSyllables::YiSyllableXyrx),
-            YI_SYLLABLE_XYR => Ok(YiSyllables::YiSyllableXyr),
-            YI_SYLLABLE_YIT => Ok(YiSyllables::YiSyllableYit),
-            YI_SYLLABLE_YIX => Ok(YiSyllables::YiSyllableYix),
-            YI_SYLLABLE_YI => Ok(YiSyllables::YiSyllableYi),
-            YI_SYLLABLE_YIP => Ok(YiSyllables::YiSyllableYip),
-            YI_SYLLABLE_YIET => Ok(YiSyllables::YiSyllableYiet),
-            YI_SYLLABLE_YIEX => Ok(YiSyllables::YiSyllableYiex),
-            YI_SYLLABLE_YIE => Ok(YiSyllables::YiSyllableYie),
-            YI_SYLLABLE_YIEP => Ok(YiSyllables::YiSyllableYiep),
-            YI_SYLLABLE_YUOT => Ok(YiSyllables::YiSyllableYuot),
-            YI_SYLLABLE_YUOX => Ok(YiSyllables::YiSyllableYuox),
-            YI_SYLLABLE_YUO => Ok(YiSyllables::YiSyllableYuo),
-            YI_SYLLABLE_YUOP => Ok(YiSyllables::YiSyllableYuop),
-            YI_SYLLABLE_YOT => Ok(YiSyllables::YiSyllableYot),
-            YI_SYLLABLE_YOX => Ok(YiSyllables::YiSyllableYox),
-            YI_SYLLABLE_YO => Ok(YiSyllables::YiSyllableYo),
-            YI_SYLLABLE_YOP => Ok(YiSyllables::YiSyllableYop),
-            YI_SYLLABLE_YUT => Ok(YiSyllables::YiSyllableYut),
-            YI_SYLLABLE_YUX => Ok(YiSyllables::YiSyllableYux),
-            YI_SYLLABLE_YU => Ok(YiSyllables::YiSyllableYu),
-            YI_SYLLABLE_YUP => Ok(YiSyllables::YiSyllableYup),
-            YI_SYLLABLE_YURX => Ok(YiSyllables::YiSyllableYurx),
-            YI_SYLLABLE_YUR => Ok(YiSyllables::YiSyllableYur),
-            YI_SYLLABLE_YYT => Ok(YiSyllables::YiSyllableYyt),
-            YI_SYLLABLE_YYX => Ok(YiSyllables::YiSyllableYyx),
-            YI_SYLLABLE_YY => Ok(YiSyllables::YiSyllableYy),
-            YI_SYLLABLE_YYP => Ok(YiSyllables::YiSyllableYyp),
-            YI_SYLLABLE_YYRX => Ok(YiSyllables::YiSyllableYyrx),
-            YI_SYLLABLE_YYR => Ok(YiSyllables::YiSyllableYyr),
+            'ꀀ' => Ok(YiSyllables::YiSyllableIt),
+            'ꀁ' => Ok(YiSyllables::YiSyllableIx),
+            'ꀂ' => Ok(YiSyllables::YiSyllableI),
+            'ꀃ' => Ok(YiSyllables::YiSyllableIp),
+            'ꀄ' => Ok(YiSyllables::YiSyllableIet),
+            'ꀅ' => Ok(YiSyllables::YiSyllableIex),
+            'ꀆ' => Ok(YiSyllables::YiSyllableIe),
+            'ꀇ' => Ok(YiSyllables::YiSyllableIep),
+            'ꀈ' => Ok(YiSyllables::YiSyllableAt),
+            'ꀉ' => Ok(YiSyllables::YiSyllableAx),
+            'ꀊ' => Ok(YiSyllables::YiSyllableA),
+            'ꀋ' => Ok(YiSyllables::YiSyllableAp),
+            'ꀌ' => Ok(YiSyllables::YiSyllableUox),
+            'ꀍ' => Ok(YiSyllables::YiSyllableUo),
+            'ꀎ' => Ok(YiSyllables::YiSyllableUop),
+            'ꀏ' => Ok(YiSyllables::YiSyllableOt),
+            'ꀐ' => Ok(YiSyllables::YiSyllableOx),
+            'ꀑ' => Ok(YiSyllables::YiSyllableO),
+            'ꀒ' => Ok(YiSyllables::YiSyllableOp),
+            'ꀓ' => Ok(YiSyllables::YiSyllableEx),
+            'ꀔ' => Ok(YiSyllables::YiSyllableE),
+            'ꀕ' => Ok(YiSyllables::YiSyllableWu),
+            'ꀖ' => Ok(YiSyllables::YiSyllableBit),
+            'ꀗ' => Ok(YiSyllables::YiSyllableBix),
+            'ꀘ' => Ok(YiSyllables::YiSyllableBi),
+            'ꀙ' => Ok(YiSyllables::YiSyllableBip),
+            'ꀚ' => Ok(YiSyllables::YiSyllableBiet),
+            'ꀛ' => Ok(YiSyllables::YiSyllableBiex),
+            'ꀜ' => Ok(YiSyllables::YiSyllableBie),
+            'ꀝ' => Ok(YiSyllables::YiSyllableBiep),
+            'ꀞ' => Ok(YiSyllables::YiSyllableBat),
+            'ꀟ' => Ok(YiSyllables::YiSyllableBax),
+            'ꀠ' => Ok(YiSyllables::YiSyllableBa),
+            'ꀡ' => Ok(YiSyllables::YiSyllableBap),
+            'ꀢ' => Ok(YiSyllables::YiSyllableBuox),
+            'ꀣ' => Ok(YiSyllables::YiSyllableBuo),
+            'ꀤ' => Ok(YiSyllables::YiSyllableBuop),
+            'ꀥ' => Ok(YiSyllables::YiSyllableBot),
+            'ꀦ' => Ok(YiSyllables::YiSyllableBox),
+            'ꀧ' => Ok(YiSyllables::YiSyllableBo),
+            'ꀨ' => Ok(YiSyllables::YiSyllableBop),
+            'ꀩ' => Ok(YiSyllables::YiSyllableBex),
+            'ꀪ' => Ok(YiSyllables::YiSyllableBe),
+            'ꀫ' => Ok(YiSyllables::YiSyllableBep),
+            'ꀬ' => Ok(YiSyllables::YiSyllableBut),
+            'ꀭ' => Ok(YiSyllables::YiSyllableBux),
+            'ꀮ' => Ok(YiSyllables::YiSyllableBu),
+            'ꀯ' => Ok(YiSyllables::YiSyllableBup),
+            'ꀰ' => Ok(YiSyllables::YiSyllableBurx),
+            'ꀱ' => Ok(YiSyllables::YiSyllableBur),
+            'ꀲ' => Ok(YiSyllables::YiSyllableByt),
+            'ꀳ' => Ok(YiSyllables::YiSyllableByx),
+            'ꀴ' => Ok(YiSyllables::YiSyllableBy),
+            'ꀵ' => Ok(YiSyllables::YiSyllableByp),
+            'ꀶ' => Ok(YiSyllables::YiSyllableByrx),
+            'ꀷ' => Ok(YiSyllables::YiSyllableByr),
+            'ꀸ' => Ok(YiSyllables::YiSyllablePit),
+            'ꀹ' => Ok(YiSyllables::YiSyllablePix),
+            'ꀺ' => Ok(YiSyllables::YiSyllablePi),
+            'ꀻ' => Ok(YiSyllables::YiSyllablePip),
+            'ꀼ' => Ok(YiSyllables::YiSyllablePiex),
+            'ꀽ' => Ok(YiSyllables::YiSyllablePie),
+            'ꀾ' => Ok(YiSyllables::YiSyllablePiep),
+            'ꀿ' => Ok(YiSyllables::YiSyllablePat),
+            'ꁀ' => Ok(YiSyllables::YiSyllablePax),
+            'ꁁ' => Ok(YiSyllables::YiSyllablePa),
+            'ꁂ' => Ok(YiSyllables::YiSyllablePap),
+            'ꁃ' => Ok(YiSyllables::YiSyllablePuox),
+            'ꁄ' => Ok(YiSyllables::YiSyllablePuo),
+            'ꁅ' => Ok(YiSyllables::YiSyllablePuop),
+            'ꁆ' => Ok(YiSyllables::YiSyllablePot),
+            'ꁇ' => Ok(YiSyllables::YiSyllablePox),
+            'ꁈ' => Ok(YiSyllables::YiSyllablePo),
+            'ꁉ' => Ok(YiSyllables::YiSyllablePop),
+            'ꁊ' => Ok(YiSyllables::YiSyllablePut),
+            'ꁋ' => Ok(YiSyllables::YiSyllablePux),
+            'ꁌ' => Ok(YiSyllables::YiSyllablePu),
+            'ꁍ' => Ok(YiSyllables::YiSyllablePup),
+            'ꁎ' => Ok(YiSyllables::YiSyllablePurx),
+            'ꁏ' => Ok(YiSyllables::YiSyllablePur),
+            'ꁐ' => Ok(YiSyllables::YiSyllablePyt),
+            'ꁑ' => Ok(YiSyllables::YiSyllablePyx),
+            'ꁒ' => Ok(YiSyllables::YiSyllablePy),
+            'ꁓ' => Ok(YiSyllables::YiSyllablePyp),
+            'ꁔ' => Ok(YiSyllables::YiSyllablePyrx),
+            'ꁕ' => Ok(YiSyllables::YiSyllablePyr),
+            'ꁖ' => Ok(YiSyllables::YiSyllableBbit),
+            'ꁗ' => Ok(YiSyllables::YiSyllableBbix),
+            'ꁘ' => Ok(YiSyllables::YiSyllableBbi),
+            'ꁙ' => Ok(YiSyllables::YiSyllableBbip),
+            'ꁚ' => Ok(YiSyllables::YiSyllableBbiet),
+            'ꁛ' => Ok(YiSyllables::YiSyllableBbiex),
+            'ꁜ' => Ok(YiSyllables::YiSyllableBbie),
+            'ꁝ' => Ok(YiSyllables::YiSyllableBbiep),
+            'ꁞ' => Ok(YiSyllables::YiSyllableBbat),
+            'ꁟ' => Ok(YiSyllables::YiSyllableBbax),
+            'ꁠ' => Ok(YiSyllables::YiSyllableBba),
+            'ꁡ' => Ok(YiSyllables::YiSyllableBbap),
+            'ꁢ' => Ok(YiSyllables::YiSyllableBbuox),
+            'ꁣ' => Ok(YiSyllables::YiSyllableBbuo),
+            'ꁤ' => Ok(YiSyllables::YiSyllableBbuop),
+            'ꁥ' => Ok(YiSyllables::YiSyllableBbot),
+            'ꁦ' => Ok(YiSyllables::YiSyllableBbox),
+            'ꁧ' => Ok(YiSyllables::YiSyllableBbo),
+            'ꁨ' => Ok(YiSyllables::YiSyllableBbop),
+            'ꁩ' => Ok(YiSyllables::YiSyllableBbex),
+            'ꁪ' => Ok(YiSyllables::YiSyllableBbe),
+            'ꁫ' => Ok(YiSyllables::YiSyllableBbep),
+            'ꁬ' => Ok(YiSyllables::YiSyllableBbut),
+            'ꁭ' => Ok(YiSyllables::YiSyllableBbux),
+            'ꁮ' => Ok(YiSyllables::YiSyllableBbu),
+            'ꁯ' => Ok(YiSyllables::YiSyllableBbup),
+            'ꁰ' => Ok(YiSyllables::YiSyllableBburx),
+            'ꁱ' => Ok(YiSyllables::YiSyllableBbur),
+            'ꁲ' => Ok(YiSyllables::YiSyllableBbyt),
+            'ꁳ' => Ok(YiSyllables::YiSyllableBbyx),
+            'ꁴ' => Ok(YiSyllables::YiSyllableBby),
+            'ꁵ' => Ok(YiSyllables::YiSyllableBbyp),
+            'ꁶ' => Ok(YiSyllables::YiSyllableNbit),
+            'ꁷ' => Ok(YiSyllables::YiSyllableNbix),
+            'ꁸ' => Ok(YiSyllables::YiSyllableNbi),
+            'ꁹ' => Ok(YiSyllables::YiSyllableNbip),
+            'ꁺ' => Ok(YiSyllables::YiSyllableNbiex),
+            'ꁻ' => Ok(YiSyllables::YiSyllableNbie),
+            'ꁼ' => Ok(YiSyllables::YiSyllableNbiep),
+            'ꁽ' => Ok(YiSyllables::YiSyllableNbat),
+            'ꁾ' => Ok(YiSyllables::YiSyllableNbax),
+            'ꁿ' => Ok(YiSyllables::YiSyllableNba),
+            'ꂀ' => Ok(YiSyllables::YiSyllableNbap),
+            'ꂁ' => Ok(YiSyllables::YiSyllableNbot),
+            'ꂂ' => Ok(YiSyllables::YiSyllableNbox),
+            'ꂃ' => Ok(YiSyllables::YiSyllableNbo),
+            'ꂄ' => Ok(YiSyllables::YiSyllableNbop),
+            'ꂅ' => Ok(YiSyllables::YiSyllableNbut),
+            'ꂆ' => Ok(YiSyllables::YiSyllableNbux),
+            'ꂇ' => Ok(YiSyllables::YiSyllableNbu),
+            'ꂈ' => Ok(YiSyllables::YiSyllableNbup),
+            'ꂉ' => Ok(YiSyllables::YiSyllableNburx),
+            'ꂊ' => Ok(YiSyllables::YiSyllableNbur),
+            'ꂋ' => Ok(YiSyllables::YiSyllableNbyt),
+            'ꂌ' => Ok(YiSyllables::YiSyllableNbyx),
+            'ꂍ' => Ok(YiSyllables::YiSyllableNby),
+            'ꂎ' => Ok(YiSyllables::YiSyllableNbyp),
+            'ꂏ' => Ok(YiSyllables::YiSyllableNbyrx),
+            'ꂐ' => Ok(YiSyllables::YiSyllableNbyr),
+            'ꂑ' => Ok(YiSyllables::YiSyllableHmit),
+            'ꂒ' => Ok(YiSyllables::YiSyllableHmix),
+            'ꂓ' => Ok(YiSyllables::YiSyllableHmi),
+            'ꂔ' => Ok(YiSyllables::YiSyllableHmip),
+            'ꂕ' => Ok(YiSyllables::YiSyllableHmiex),
+            'ꂖ' => Ok(YiSyllables::YiSyllableHmie),
+            'ꂗ' => Ok(YiSyllables::YiSyllableHmiep),
+            'ꂘ' => Ok(YiSyllables::YiSyllableHmat),
+            'ꂙ' => Ok(YiSyllables::YiSyllableHmax),
+            'ꂚ' => Ok(YiSyllables::YiSyllableHma),
+            'ꂛ' => Ok(YiSyllables::YiSyllableHmap),
+            'ꂜ' => Ok(YiSyllables::YiSyllableHmuox),
+            'ꂝ' => Ok(YiSyllables::YiSyllableHmuo),
+            'ꂞ' => Ok(YiSyllables::YiSyllableHmuop),
+            'ꂟ' => Ok(YiSyllables::YiSyllableHmot),
+            'ꂠ' => Ok(YiSyllables::YiSyllableHmox),
+            'ꂡ' => Ok(YiSyllables::YiSyllableHmo),
+            'ꂢ' => Ok(YiSyllables::YiSyllableHmop),
+            'ꂣ' => Ok(YiSyllables::YiSyllableHmut),
+            'ꂤ' => Ok(YiSyllables::YiSyllableHmux),
+            'ꂥ' => Ok(YiSyllables::YiSyllableHmu),
+            'ꂦ' => Ok(YiSyllables::YiSyllableHmup),
+            'ꂧ' => Ok(YiSyllables::YiSyllableHmurx),
+            'ꂨ' => Ok(YiSyllables::YiSyllableHmur),
+            'ꂩ' => Ok(YiSyllables::YiSyllableHmyx),
+            'ꂪ' => Ok(YiSyllables::YiSyllableHmy),
+            'ꂫ' => Ok(YiSyllables::YiSyllableHmyp),
+            'ꂬ' => Ok(YiSyllables::YiSyllableHmyrx),
+            'ꂭ' => Ok(YiSyllables::YiSyllableHmyr),
+            'ꂮ' => Ok(YiSyllables::YiSyllableMit),
+            'ꂯ' => Ok(YiSyllables::YiSyllableMix),
+            'ꂰ' => Ok(YiSyllables::YiSyllableMi),
+            'ꂱ' => Ok(YiSyllables::YiSyllableMip),
+            'ꂲ' => Ok(YiSyllables::YiSyllableMiex),
+            'ꂳ' => Ok(YiSyllables::YiSyllableMie),
+            'ꂴ' => Ok(YiSyllables::YiSyllableMiep),
+            'ꂵ' => Ok(YiSyllables::YiSyllableMat),
+            'ꂶ' => Ok(YiSyllables::YiSyllableMax),
+            'ꂷ' => Ok(YiSyllables::YiSyllableMa),
+            'ꂸ' => Ok(YiSyllables::YiSyllableMap),
+            'ꂹ' => Ok(YiSyllables::YiSyllableMuot),
+            'ꂺ' => Ok(YiSyllables::YiSyllableMuox),
+            'ꂻ' => Ok(YiSyllables::YiSyllableMuo),
+            'ꂼ' => Ok(YiSyllables::YiSyllableMuop),
+            'ꂽ' => Ok(YiSyllables::YiSyllableMot),
+            'ꂾ' => Ok(YiSyllables::YiSyllableMox),
+            'ꂿ' => Ok(YiSyllables::YiSyllableMo),
+            'ꃀ' => Ok(YiSyllables::YiSyllableMop),
+            'ꃁ' => Ok(YiSyllables::YiSyllableMex),
+            'ꃂ' => Ok(YiSyllables::YiSyllableMe),
+            'ꃃ' => Ok(YiSyllables::YiSyllableMut),
+            'ꃄ' => Ok(YiSyllables::YiSyllableMux),
+            'ꃅ' => Ok(YiSyllables::YiSyllableMu),
+            'ꃆ' => Ok(YiSyllables::YiSyllableMup),
+            'ꃇ' => Ok(YiSyllables::YiSyllableMurx),
+            'ꃈ' => Ok(YiSyllables::YiSyllableMur),
+            'ꃉ' => Ok(YiSyllables::YiSyllableMyt),
+            'ꃊ' => Ok(YiSyllables::YiSyllableMyx),
+            'ꃋ' => Ok(YiSyllables::YiSyllableMy),
+            'ꃌ' => Ok(YiSyllables::YiSyllableMyp),
+            'ꃍ' => Ok(YiSyllables::YiSyllableFit),
+            'ꃎ' => Ok(YiSyllables::YiSyllableFix),
+            'ꃏ' => Ok(YiSyllables::YiSyllableFi),
+            'ꃐ' => Ok(YiSyllables::YiSyllableFip),
+            'ꃑ' => Ok(YiSyllables::YiSyllableFat),
+            'ꃒ' => Ok(YiSyllables::YiSyllableFax),
+            'ꃓ' => Ok(YiSyllables::YiSyllableFa),
+            'ꃔ' => Ok(YiSyllables::YiSyllableFap),
+            'ꃕ' => Ok(YiSyllables::YiSyllableFox),
+            'ꃖ' => Ok(YiSyllables::YiSyllableFo),
+            'ꃗ' => Ok(YiSyllables::YiSyllableFop),
+            'ꃘ' => Ok(YiSyllables::YiSyllableFut),
+            'ꃙ' => Ok(YiSyllables::YiSyllableFux),
+            'ꃚ' => Ok(YiSyllables::YiSyllableFu),
+            'ꃛ' => Ok(YiSyllables::YiSyllableFup),
+            'ꃜ' => Ok(YiSyllables::YiSyllableFurx),
+            'ꃝ' => Ok(YiSyllables::YiSyllableFur),
+            'ꃞ' => Ok(YiSyllables::YiSyllableFyt),
+            'ꃟ' => Ok(YiSyllables::YiSyllableFyx),
+            'ꃠ' => Ok(YiSyllables::YiSyllableFy),
+            'ꃡ' => Ok(YiSyllables::YiSyllableFyp),
+            'ꃢ' => Ok(YiSyllables::YiSyllableVit),
+            'ꃣ' => Ok(YiSyllables::YiSyllableVix),
+            'ꃤ' => Ok(YiSyllables::YiSyllableVi),
+            'ꃥ' => Ok(YiSyllables::YiSyllableVip),
+            'ꃦ' => Ok(YiSyllables::YiSyllableViet),
+            'ꃧ' => Ok(YiSyllables::YiSyllableViex),
+            'ꃨ' => Ok(YiSyllables::YiSyllableVie),
+            'ꃩ' => Ok(YiSyllables::YiSyllableViep),
+            'ꃪ' => Ok(YiSyllables::YiSyllableVat),
+            'ꃫ' => Ok(YiSyllables::YiSyllableVax),
+            'ꃬ' => Ok(YiSyllables::YiSyllableVa),
+            'ꃭ' => Ok(YiSyllables::YiSyllableVap),
+            'ꃮ' => Ok(YiSyllables::YiSyllableVot),
+            'ꃯ' => Ok(YiSyllables::YiSyllableVox),
+            'ꃰ' => Ok(YiSyllables::YiSyllableVo),
+            'ꃱ' => Ok(YiSyllables::YiSyllableVop),
+            'ꃲ' => Ok(YiSyllables::YiSyllableVex),
+            'ꃳ' => Ok(YiSyllables::YiSyllableVep),
+            'ꃴ' => Ok(YiSyllables::YiSyllableVut),
+            'ꃵ' => Ok(YiSyllables::YiSyllableVux),
+            'ꃶ' => Ok(YiSyllables::YiSyllableVu),
+            'ꃷ' => Ok(YiSyllables::YiSyllableVup),
+            'ꃸ' => Ok(YiSyllables::YiSyllableVurx),
+            'ꃹ' => Ok(YiSyllables::YiSyllableVur),
+            'ꃺ' => Ok(YiSyllables::YiSyllableVyt),
+            'ꃻ' => Ok(YiSyllables::YiSyllableVyx),
+            'ꃼ' => Ok(YiSyllables::YiSyllableVy),
+            'ꃽ' => Ok(YiSyllables::YiSyllableVyp),
+            'ꃾ' => Ok(YiSyllables::YiSyllableVyrx),
+            'ꃿ' => Ok(YiSyllables::YiSyllableVyr),
+            'ꄀ' => Ok(YiSyllables::YiSyllableDit),
+            'ꄁ' => Ok(YiSyllables::YiSyllableDix),
+            'ꄂ' => Ok(YiSyllables::YiSyllableDi),
+            'ꄃ' => Ok(YiSyllables::YiSyllableDip),
+            'ꄄ' => Ok(YiSyllables::YiSyllableDiex),
+            'ꄅ' => Ok(YiSyllables::YiSyllableDie),
+            'ꄆ' => Ok(YiSyllables::YiSyllableDiep),
+            'ꄇ' => Ok(YiSyllables::YiSyllableDat),
+            'ꄈ' => Ok(YiSyllables::YiSyllableDax),
+            'ꄉ' => Ok(YiSyllables::YiSyllableDa),
+            'ꄊ' => Ok(YiSyllables::YiSyllableDap),
+            'ꄋ' => Ok(YiSyllables::YiSyllableDuox),
+            'ꄌ' => Ok(YiSyllables::YiSyllableDuo),
+            'ꄍ' => Ok(YiSyllables::YiSyllableDot),
+            'ꄎ' => Ok(YiSyllables::YiSyllableDox),
+            'ꄏ' => Ok(YiSyllables::YiSyllableDo),
+            'ꄐ' => Ok(YiSyllables::YiSyllableDop),
+            'ꄑ' => Ok(YiSyllables::YiSyllableDex),
+            'ꄒ' => Ok(YiSyllables::YiSyllableDe),
+            'ꄓ' => Ok(YiSyllables::YiSyllableDep),
+            'ꄔ' => Ok(YiSyllables::YiSyllableDut),
+            'ꄕ' => Ok(YiSyllables::YiSyllableDux),
+            'ꄖ' => Ok(YiSyllables::YiSyllableDu),
+            'ꄗ' => Ok(YiSyllables::YiSyllableDup),
+            'ꄘ' => Ok(YiSyllables::YiSyllableDurx),
+            'ꄙ' => Ok(YiSyllables::YiSyllableDur),
+            'ꄚ' => Ok(YiSyllables::YiSyllableTit),
+            'ꄛ' => Ok(YiSyllables::YiSyllableTix),
+            'ꄜ' => Ok(YiSyllables::YiSyllableTi),
+            'ꄝ' => Ok(YiSyllables::YiSyllableTip),
+            'ꄞ' => Ok(YiSyllables::YiSyllableTiex),
+            'ꄟ' => Ok(YiSyllables::YiSyllableTie),
+            'ꄠ' => Ok(YiSyllables::YiSyllableTiep),
+            'ꄡ' => Ok(YiSyllables::YiSyllableTat),
+            'ꄢ' => Ok(YiSyllables::YiSyllableTax),
+            'ꄣ' => Ok(YiSyllables::YiSyllableTa),
+            'ꄤ' => Ok(YiSyllables::YiSyllableTap),
+            'ꄥ' => Ok(YiSyllables::YiSyllableTuot),
+            'ꄦ' => Ok(YiSyllables::YiSyllableTuox),
+            'ꄧ' => Ok(YiSyllables::YiSyllableTuo),
+            'ꄨ' => Ok(YiSyllables::YiSyllableTuop),
+            'ꄩ' => Ok(YiSyllables::YiSyllableTot),
+            'ꄪ' => Ok(YiSyllables::YiSyllableTox),
+            'ꄫ' => Ok(YiSyllables::YiSyllableTo),
+            'ꄬ' => Ok(YiSyllables::YiSyllableTop),
+            'ꄭ' => Ok(YiSyllables::YiSyllableTex),
+            'ꄮ' => Ok(YiSyllables::YiSyllableTe),
+            'ꄯ' => Ok(YiSyllables::YiSyllableTep),
+            'ꄰ' => Ok(YiSyllables::YiSyllableTut),
+            'ꄱ' => Ok(YiSyllables::YiSyllableTux),
+            'ꄲ' => Ok(YiSyllables::YiSyllableTu),
+            'ꄳ' => Ok(YiSyllables::YiSyllableTup),
+            'ꄴ' => Ok(YiSyllables::YiSyllableTurx),
+            'ꄵ' => Ok(YiSyllables::YiSyllableTur),
+            'ꄶ' => Ok(YiSyllables::YiSyllableDdit),
+            'ꄷ' => Ok(YiSyllables::YiSyllableDdix),
+            'ꄸ' => Ok(YiSyllables::YiSyllableDdi),
+            'ꄹ' => Ok(YiSyllables::YiSyllableDdip),
+            'ꄺ' => Ok(YiSyllables::YiSyllableDdiex),
+            'ꄻ' => Ok(YiSyllables::YiSyllableDdie),
+            'ꄼ' => Ok(YiSyllables::YiSyllableDdiep),
+            'ꄽ' => Ok(YiSyllables::YiSyllableDdat),
+            'ꄾ' => Ok(YiSyllables::YiSyllableDdax),
+            'ꄿ' => Ok(YiSyllables::YiSyllableDda),
+            'ꅀ' => Ok(YiSyllables::YiSyllableDdap),
+            'ꅁ' => Ok(YiSyllables::YiSyllableDduox),
+            'ꅂ' => Ok(YiSyllables::YiSyllableDduo),
+            'ꅃ' => Ok(YiSyllables::YiSyllableDduop),
+            'ꅄ' => Ok(YiSyllables::YiSyllableDdot),
+            'ꅅ' => Ok(YiSyllables::YiSyllableDdox),
+            'ꅆ' => Ok(YiSyllables::YiSyllableDdo),
+            'ꅇ' => Ok(YiSyllables::YiSyllableDdop),
+            'ꅈ' => Ok(YiSyllables::YiSyllableDdex),
+            'ꅉ' => Ok(YiSyllables::YiSyllableDde),
+            'ꅊ' => Ok(YiSyllables::YiSyllableDdep),
+            'ꅋ' => Ok(YiSyllables::YiSyllableDdut),
+            'ꅌ' => Ok(YiSyllables::YiSyllableDdux),
+            'ꅍ' => Ok(YiSyllables::YiSyllableDdu),
+            'ꅎ' => Ok(YiSyllables::YiSyllableDdup),
+            'ꅏ' => Ok(YiSyllables::YiSyllableDdurx),
+            'ꅐ' => Ok(YiSyllables::YiSyllableDdur),
+            'ꅑ' => Ok(YiSyllables::YiSyllableNdit),
+            'ꅒ' => Ok(YiSyllables::YiSyllableNdix),
+            'ꅓ' => Ok(YiSyllables::YiSyllableNdi),
+            'ꅔ' => Ok(YiSyllables::YiSyllableNdip),
+            'ꅕ' => Ok(YiSyllables::YiSyllableNdiex),
+            'ꅖ' => Ok(YiSyllables::YiSyllableNdie),
+            'ꅗ' => Ok(YiSyllables::YiSyllableNdat),
+            'ꅘ' => Ok(YiSyllables::YiSyllableNdax),
+            'ꅙ' => Ok(YiSyllables::YiSyllableNda),
+            'ꅚ' => Ok(YiSyllables::YiSyllableNdap),
+            'ꅛ' => Ok(YiSyllables::YiSyllableNdot),
+            'ꅜ' => Ok(YiSyllables::YiSyllableNdox),
+            'ꅝ' => Ok(YiSyllables::YiSyllableNdo),
+            'ꅞ' => Ok(YiSyllables::YiSyllableNdop),
+            'ꅟ' => Ok(YiSyllables::YiSyllableNdex),
+            'ꅠ' => Ok(YiSyllables::YiSyllableNde),
+            'ꅡ' => Ok(YiSyllables::YiSyllableNdep),
+            'ꅢ' => Ok(YiSyllables::YiSyllableNdut),
+            'ꅣ' => Ok(YiSyllables::YiSyllableNdux),
+            'ꅤ' => Ok(YiSyllables::YiSyllableNdu),
+            'ꅥ' => Ok(YiSyllables::YiSyllableNdup),
+            'ꅦ' => Ok(YiSyllables::YiSyllableNdurx),
+            'ꅧ' => Ok(YiSyllables::YiSyllableNdur),
+            'ꅨ' => Ok(YiSyllables::YiSyllableHnit),
+            'ꅩ' => Ok(YiSyllables::YiSyllableHnix),
+            'ꅪ' => Ok(YiSyllables::YiSyllableHni),
+            'ꅫ' => Ok(YiSyllables::YiSyllableHnip),
+            'ꅬ' => Ok(YiSyllables::YiSyllableHniet),
+            'ꅭ' => Ok(YiSyllables::YiSyllableHniex),
+            'ꅮ' => Ok(YiSyllables::YiSyllableHnie),
+            'ꅯ' => Ok(YiSyllables::YiSyllableHniep),
+            'ꅰ' => Ok(YiSyllables::YiSyllableHnat),
+            'ꅱ' => Ok(YiSyllables::YiSyllableHnax),
+            'ꅲ' => Ok(YiSyllables::YiSyllableHna),
+            'ꅳ' => Ok(YiSyllables::YiSyllableHnap),
+            'ꅴ' => Ok(YiSyllables::YiSyllableHnuox),
+            'ꅵ' => Ok(YiSyllables::YiSyllableHnuo),
+            'ꅶ' => Ok(YiSyllables::YiSyllableHnot),
+            'ꅷ' => Ok(YiSyllables::YiSyllableHnox),
+            'ꅸ' => Ok(YiSyllables::YiSyllableHnop),
+            'ꅹ' => Ok(YiSyllables::YiSyllableHnex),
+            'ꅺ' => Ok(YiSyllables::YiSyllableHne),
+            'ꅻ' => Ok(YiSyllables::YiSyllableHnep),
+            'ꅼ' => Ok(YiSyllables::YiSyllableHnut),
+            'ꅽ' => Ok(YiSyllables::YiSyllableNit),
+            'ꅾ' => Ok(YiSyllables::YiSyllableNix),
+            'ꅿ' => Ok(YiSyllables::YiSyllableNi),
+            'ꆀ' => Ok(YiSyllables::YiSyllableNip),
+            'ꆁ' => Ok(YiSyllables::YiSyllableNiex),
+            'ꆂ' => Ok(YiSyllables::YiSyllableNie),
+            'ꆃ' => Ok(YiSyllables::YiSyllableNiep),
+            'ꆄ' => Ok(YiSyllables::YiSyllableNax),
+            'ꆅ' => Ok(YiSyllables::YiSyllableNa),
+            'ꆆ' => Ok(YiSyllables::YiSyllableNap),
+            'ꆇ' => Ok(YiSyllables::YiSyllableNuox),
+            'ꆈ' => Ok(YiSyllables::YiSyllableNuo),
+            'ꆉ' => Ok(YiSyllables::YiSyllableNuop),
+            'ꆊ' => Ok(YiSyllables::YiSyllableNot),
+            'ꆋ' => Ok(YiSyllables::YiSyllableNox),
+            'ꆌ' => Ok(YiSyllables::YiSyllableNo),
+            'ꆍ' => Ok(YiSyllables::YiSyllableNop),
+            'ꆎ' => Ok(YiSyllables::YiSyllableNex),
+            'ꆏ' => Ok(YiSyllables::YiSyllableNe),
+            'ꆐ' => Ok(YiSyllables::YiSyllableNep),
+            'ꆑ' => Ok(YiSyllables::YiSyllableNut),
+            'ꆒ' => Ok(YiSyllables::YiSyllableNux),
+            'ꆓ' => Ok(YiSyllables::YiSyllableNu),
+            'ꆔ' => Ok(YiSyllables::YiSyllableNup),
+            'ꆕ' => Ok(YiSyllables::YiSyllableNurx),
+            'ꆖ' => Ok(YiSyllables::YiSyllableNur),
+            'ꆗ' => Ok(YiSyllables::YiSyllableHlit),
+            'ꆘ' => Ok(YiSyllables::YiSyllableHlix),
+            'ꆙ' => Ok(YiSyllables::YiSyllableHli),
+            'ꆚ' => Ok(YiSyllables::YiSyllableHlip),
+            'ꆛ' => Ok(YiSyllables::YiSyllableHliex),
+            'ꆜ' => Ok(YiSyllables::YiSyllableHlie),
+            'ꆝ' => Ok(YiSyllables::YiSyllableHliep),
+            'ꆞ' => Ok(YiSyllables::YiSyllableHlat),
+            'ꆟ' => Ok(YiSyllables::YiSyllableHlax),
+            'ꆠ' => Ok(YiSyllables::YiSyllableHla),
+            'ꆡ' => Ok(YiSyllables::YiSyllableHlap),
+            'ꆢ' => Ok(YiSyllables::YiSyllableHluox),
+            'ꆣ' => Ok(YiSyllables::YiSyllableHluo),
+            'ꆤ' => Ok(YiSyllables::YiSyllableHluop),
+            'ꆥ' => Ok(YiSyllables::YiSyllableHlox),
+            'ꆦ' => Ok(YiSyllables::YiSyllableHlo),
+            'ꆧ' => Ok(YiSyllables::YiSyllableHlop),
+            'ꆨ' => Ok(YiSyllables::YiSyllableHlex),
+            'ꆩ' => Ok(YiSyllables::YiSyllableHle),
+            'ꆪ' => Ok(YiSyllables::YiSyllableHlep),
+            'ꆫ' => Ok(YiSyllables::YiSyllableHlut),
+            'ꆬ' => Ok(YiSyllables::YiSyllableHlux),
+            'ꆭ' => Ok(YiSyllables::YiSyllableHlu),
+            'ꆮ' => Ok(YiSyllables::YiSyllableHlup),
+            'ꆯ' => Ok(YiSyllables::YiSyllableHlurx),
+            'ꆰ' => Ok(YiSyllables::YiSyllableHlur),
+            'ꆱ' => Ok(YiSyllables::YiSyllableHlyt),
+            'ꆲ' => Ok(YiSyllables::YiSyllableHlyx),
+            'ꆳ' => Ok(YiSyllables::YiSyllableHly),
+            'ꆴ' => Ok(YiSyllables::YiSyllableHlyp),
+            'ꆵ' => Ok(YiSyllables::YiSyllableHlyrx),
+            'ꆶ' => Ok(YiSyllables::YiSyllableHlyr),
+            'ꆷ' => Ok(YiSyllables::YiSyllableLit),
+            'ꆸ' => Ok(YiSyllables::YiSyllableLix),
+            'ꆹ' => Ok(YiSyllables::YiSyllableLi),
+            'ꆺ' => Ok(YiSyllables::YiSyllableLip),
+            'ꆻ' => Ok(YiSyllables::YiSyllableLiet),
+            'ꆼ' => Ok(YiSyllables::YiSyllableLiex),
+            'ꆽ' => Ok(YiSyllables::YiSyllableLie),
+            'ꆾ' => Ok(YiSyllables::YiSyllableLiep),
+            'ꆿ' => Ok(YiSyllables::YiSyllableLat),
+            'ꇀ' => Ok(YiSyllables::YiSyllableLax),
+            'ꇁ' => Ok(YiSyllables::YiSyllableLa),
+            'ꇂ' => Ok(YiSyllables::YiSyllableLap),
+            'ꇃ' => Ok(YiSyllables::YiSyllableLuot),
+            'ꇄ' => Ok(YiSyllables::YiSyllableLuox),
+            'ꇅ' => Ok(YiSyllables::YiSyllableLuo),
+            'ꇆ' => Ok(YiSyllables::YiSyllableLuop),
+            'ꇇ' => Ok(YiSyllables::YiSyllableLot),
+            'ꇈ' => Ok(YiSyllables::YiSyllableLox),
+            'ꇉ' => Ok(YiSyllables::YiSyllableLo),
+            'ꇊ' => Ok(YiSyllables::YiSyllableLop),
+            'ꇋ' => Ok(YiSyllables::YiSyllableLex),
+            'ꇌ' => Ok(YiSyllables::YiSyllableLe),
+            'ꇍ' => Ok(YiSyllables::YiSyllableLep),
+            'ꇎ' => Ok(YiSyllables::YiSyllableLut),
+            'ꇏ' => Ok(YiSyllables::YiSyllableLux),
+            'ꇐ' => Ok(YiSyllables::YiSyllableLu),
+            'ꇑ' => Ok(YiSyllables::YiSyllableLup),
+            'ꇒ' => Ok(YiSyllables::YiSyllableLurx),
+            'ꇓ' => Ok(YiSyllables::YiSyllableLur),
+            'ꇔ' => Ok(YiSyllables::YiSyllableLyt),
+            'ꇕ' => Ok(YiSyllables::YiSyllableLyx),
+            'ꇖ' => Ok(YiSyllables::YiSyllableLy),
+            'ꇗ' => Ok(YiSyllables::YiSyllableLyp),
+            'ꇘ' => Ok(YiSyllables::YiSyllableLyrx),
+            'ꇙ' => Ok(YiSyllables::YiSyllableLyr),
+            'ꇚ' => Ok(YiSyllables::YiSyllableGit),
+            'ꇛ' => Ok(YiSyllables::YiSyllableGix),
+            'ꇜ' => Ok(YiSyllables::YiSyllableGi),
+            'ꇝ' => Ok(YiSyllables::YiSyllableGip),
+            'ꇞ' => Ok(YiSyllables::YiSyllableGiet),
+            'ꇟ' => Ok(YiSyllables::YiSyllableGiex),
+            'ꇠ' => Ok(YiSyllables::YiSyllableGie),
+            'ꇡ' => Ok(YiSyllables::YiSyllableGiep),
+            'ꇢ' => Ok(YiSyllables::YiSyllableGat),
+            'ꇣ' => Ok(YiSyllables::YiSyllableGax),
+            'ꇤ' => Ok(YiSyllables::YiSyllableGa),
+            'ꇥ' => Ok(YiSyllables::YiSyllableGap),
+            'ꇦ' => Ok(YiSyllables::YiSyllableGuot),
+            'ꇧ' => Ok(YiSyllables::YiSyllableGuox),
+            'ꇨ' => Ok(YiSyllables::YiSyllableGuo),
+            'ꇩ' => Ok(YiSyllables::YiSyllableGuop),
+            'ꇪ' => Ok(YiSyllables::YiSyllableGot),
+            'ꇫ' => Ok(YiSyllables::YiSyllableGox),
+            'ꇬ' => Ok(YiSyllables::YiSyllableGo),
+            'ꇭ' => Ok(YiSyllables::YiSyllableGop),
+            'ꇮ' => Ok(YiSyllables::YiSyllableGet),
+            'ꇯ' => Ok(YiSyllables::YiSyllableGex),
+            'ꇰ' => Ok(YiSyllables::YiSyllableGe),
+            'ꇱ' => Ok(YiSyllables::YiSyllableGep),
+            'ꇲ' => Ok(YiSyllables::YiSyllableGut),
+            'ꇳ' => Ok(YiSyllables::YiSyllableGux),
+            'ꇴ' => Ok(YiSyllables::YiSyllableGu),
+            'ꇵ' => Ok(YiSyllables::YiSyllableGup),
+            'ꇶ' => Ok(YiSyllables::YiSyllableGurx),
+            'ꇷ' => Ok(YiSyllables::YiSyllableGur),
+            'ꇸ' => Ok(YiSyllables::YiSyllableKit),
+            'ꇹ' => Ok(YiSyllables::YiSyllableKix),
+            'ꇺ' => Ok(YiSyllables::YiSyllableKi),
+            'ꇻ' => Ok(YiSyllables::YiSyllableKip),
+            'ꇼ' => Ok(YiSyllables::YiSyllableKiex),
+            'ꇽ' => Ok(YiSyllables::YiSyllableKie),
+            'ꇾ' => Ok(YiSyllables::YiSyllableKiep),
+            'ꇿ' => Ok(YiSyllables::YiSyllableKat),
+            'ꈀ' => Ok(YiSyllables::YiSyllableKax),
+            'ꈁ' => Ok(YiSyllables::YiSyllableKa),
+            'ꈂ' => Ok(YiSyllables::YiSyllableKap),
+            'ꈃ' => Ok(YiSyllables::YiSyllableKuox),
+            'ꈄ' => Ok(YiSyllables::YiSyllableKuo),
+            'ꈅ' => Ok(YiSyllables::YiSyllableKuop),
+            'ꈆ' => Ok(YiSyllables::YiSyllableKot),
+            'ꈇ' => Ok(YiSyllables::YiSyllableKox),
+            'ꈈ' => Ok(YiSyllables::YiSyllableKo),
+            'ꈉ' => Ok(YiSyllables::YiSyllableKop),
+            'ꈊ' => Ok(YiSyllables::YiSyllableKet),
+            'ꈋ' => Ok(YiSyllables::YiSyllableKex),
+            'ꈌ' => Ok(YiSyllables::YiSyllableKe),
+            'ꈍ' => Ok(YiSyllables::YiSyllableKep),
+            'ꈎ' => Ok(YiSyllables::YiSyllableKut),
+            'ꈏ' => Ok(YiSyllables::YiSyllableKux),
+            'ꈐ' => Ok(YiSyllables::YiSyllableKu),
+            'ꈑ' => Ok(YiSyllables::YiSyllableKup),
+            'ꈒ' => Ok(YiSyllables::YiSyllableKurx),
+            'ꈓ' => Ok(YiSyllables::YiSyllableKur),
+            'ꈔ' => Ok(YiSyllables::YiSyllableGgit),
+            'ꈕ' => Ok(YiSyllables::YiSyllableGgix),
+            'ꈖ' => Ok(YiSyllables::YiSyllableGgi),
+            'ꈗ' => Ok(YiSyllables::YiSyllableGgiex),
+            'ꈘ' => Ok(YiSyllables::YiSyllableGgie),
+            'ꈙ' => Ok(YiSyllables::YiSyllableGgiep),
+            'ꈚ' => Ok(YiSyllables::YiSyllableGgat),
+            'ꈛ' => Ok(YiSyllables::YiSyllableGgax),
+            'ꈜ' => Ok(YiSyllables::YiSyllableGga),
+            'ꈝ' => Ok(YiSyllables::YiSyllableGgap),
+            'ꈞ' => Ok(YiSyllables::YiSyllableGguot),
+            'ꈟ' => Ok(YiSyllables::YiSyllableGguox),
+            'ꈠ' => Ok(YiSyllables::YiSyllableGguo),
+            'ꈡ' => Ok(YiSyllables::YiSyllableGguop),
+            'ꈢ' => Ok(YiSyllables::YiSyllableGgot),
+            'ꈣ' => Ok(YiSyllables::YiSyllableGgox),
+            'ꈤ' => Ok(YiSyllables::YiSyllableGgo),
+            'ꈥ' => Ok(YiSyllables::YiSyllableGgop),
+            'ꈦ' => Ok(YiSyllables::YiSyllableGget),
+            'ꈧ' => Ok(YiSyllables::YiSyllableGgex),
+            'ꈨ' => Ok(YiSyllables::YiSyllableGge),
+            'ꈩ' => Ok(YiSyllables::YiSyllableGgep),
+            'ꈪ' => Ok(YiSyllables::YiSyllableGgut),
+            'ꈫ' => Ok(YiSyllables::YiSyllableGgux),
+            'ꈬ' => Ok(YiSyllables::YiSyllableGgu),
+            'ꈭ' => Ok(YiSyllables::YiSyllableGgup),
+            'ꈮ' => Ok(YiSyllables::YiSyllableGgurx),
+            'ꈯ' => Ok(YiSyllables::YiSyllableGgur),
+            'ꈰ' => Ok(YiSyllables::YiSyllableMgiex),
+            'ꈱ' => Ok(YiSyllables::YiSyllableMgie),
+            'ꈲ' => Ok(YiSyllables::YiSyllableMgat),
+            'ꈳ' => Ok(YiSyllables::YiSyllableMgax),
+            'ꈴ' => Ok(YiSyllables::YiSyllableMga),
+            'ꈵ' => Ok(YiSyllables::YiSyllableMgap),
+            'ꈶ' => Ok(YiSyllables::YiSyllableMguox),
+            'ꈷ' => Ok(YiSyllables::YiSyllableMguo),
+            'ꈸ' => Ok(YiSyllables::YiSyllableMguop),
+            'ꈹ' => Ok(YiSyllables::YiSyllableMgot),
+            'ꈺ' => Ok(YiSyllables::YiSyllableMgox),
+            'ꈻ' => Ok(YiSyllables::YiSyllableMgo),
+            'ꈼ' => Ok(YiSyllables::YiSyllableMgop),
+            'ꈽ' => Ok(YiSyllables::YiSyllableMgex),
+            'ꈾ' => Ok(YiSyllables::YiSyllableMge),
+            'ꈿ' => Ok(YiSyllables::YiSyllableMgep),
+            'ꉀ' => Ok(YiSyllables::YiSyllableMgut),
+            'ꉁ' => Ok(YiSyllables::YiSyllableMgux),
+            'ꉂ' => Ok(YiSyllables::YiSyllableMgu),
+            'ꉃ' => Ok(YiSyllables::YiSyllableMgup),
+            'ꉄ' => Ok(YiSyllables::YiSyllableMgurx),
+            'ꉅ' => Ok(YiSyllables::YiSyllableMgur),
+            'ꉆ' => Ok(YiSyllables::YiSyllableHxit),
+            'ꉇ' => Ok(YiSyllables::YiSyllableHxix),
+            'ꉈ' => Ok(YiSyllables::YiSyllableHxi),
+            'ꉉ' => Ok(YiSyllables::YiSyllableHxip),
+            'ꉊ' => Ok(YiSyllables::YiSyllableHxiet),
+            'ꉋ' => Ok(YiSyllables::YiSyllableHxiex),
+            'ꉌ' => Ok(YiSyllables::YiSyllableHxie),
+            'ꉍ' => Ok(YiSyllables::YiSyllableHxiep),
+            'ꉎ' => Ok(YiSyllables::YiSyllableHxat),
+            'ꉏ' => Ok(YiSyllables::YiSyllableHxax),
+            'ꉐ' => Ok(YiSyllables::YiSyllableHxa),
+            'ꉑ' => Ok(YiSyllables::YiSyllableHxap),
+            'ꉒ' => Ok(YiSyllables::YiSyllableHxuot),
+            'ꉓ' => Ok(YiSyllables::YiSyllableHxuox),
+            'ꉔ' => Ok(YiSyllables::YiSyllableHxuo),
+            'ꉕ' => Ok(YiSyllables::YiSyllableHxuop),
+            'ꉖ' => Ok(YiSyllables::YiSyllableHxot),
+            'ꉗ' => Ok(YiSyllables::YiSyllableHxox),
+            'ꉘ' => Ok(YiSyllables::YiSyllableHxo),
+            'ꉙ' => Ok(YiSyllables::YiSyllableHxop),
+            'ꉚ' => Ok(YiSyllables::YiSyllableHxex),
+            'ꉛ' => Ok(YiSyllables::YiSyllableHxe),
+            'ꉜ' => Ok(YiSyllables::YiSyllableHxep),
+            'ꉝ' => Ok(YiSyllables::YiSyllableNgiex),
+            'ꉞ' => Ok(YiSyllables::YiSyllableNgie),
+            'ꉟ' => Ok(YiSyllables::YiSyllableNgiep),
+            'ꉠ' => Ok(YiSyllables::YiSyllableNgat),
+            'ꉡ' => Ok(YiSyllables::YiSyllableNgax),
+            'ꉢ' => Ok(YiSyllables::YiSyllableNga),
+            'ꉣ' => Ok(YiSyllables::YiSyllableNgap),
+            'ꉤ' => Ok(YiSyllables::YiSyllableNguot),
+            'ꉥ' => Ok(YiSyllables::YiSyllableNguox),
+            'ꉦ' => Ok(YiSyllables::YiSyllableNguo),
+            'ꉧ' => Ok(YiSyllables::YiSyllableNgot),
+            'ꉨ' => Ok(YiSyllables::YiSyllableNgox),
+            'ꉩ' => Ok(YiSyllables::YiSyllableNgo),
+            'ꉪ' => Ok(YiSyllables::YiSyllableNgop),
+            'ꉫ' => Ok(YiSyllables::YiSyllableNgex),
+            'ꉬ' => Ok(YiSyllables::YiSyllableNge),
+            'ꉭ' => Ok(YiSyllables::YiSyllableNgep),
+            'ꉮ' => Ok(YiSyllables::YiSyllableHit),
+            'ꉯ' => Ok(YiSyllables::YiSyllableHiex),
+            'ꉰ' => Ok(YiSyllables::YiSyllableHie),
+            'ꉱ' => Ok(YiSyllables::YiSyllableHat),
+            'ꉲ' => Ok(YiSyllables::YiSyllableHax),
+            'ꉳ' => Ok(YiSyllables::YiSyllableHa),
+            'ꉴ' => Ok(YiSyllables::YiSyllableHap),
+            'ꉵ' => Ok(YiSyllables::YiSyllableHuot),
+            'ꉶ' => Ok(YiSyllables::YiSyllableHuox),
+            'ꉷ' => Ok(YiSyllables::YiSyllableHuo),
+            'ꉸ' => Ok(YiSyllables::YiSyllableHuop),
+            'ꉹ' => Ok(YiSyllables::YiSyllableHot),
+            'ꉺ' => Ok(YiSyllables::YiSyllableHox),
+            'ꉻ' => Ok(YiSyllables::YiSyllableHo),
+            'ꉼ' => Ok(YiSyllables::YiSyllableHop),
+            'ꉽ' => Ok(YiSyllables::YiSyllableHex),
+            'ꉾ' => Ok(YiSyllables::YiSyllableHe),
+            'ꉿ' => Ok(YiSyllables::YiSyllableHep),
+            'ꊀ' => Ok(YiSyllables::YiSyllableWat),
+            'ꊁ' => Ok(YiSyllables::YiSyllableWax),
+            'ꊂ' => Ok(YiSyllables::YiSyllableWa),
+            'ꊃ' => Ok(YiSyllables::YiSyllableWap),
+            'ꊄ' => Ok(YiSyllables::YiSyllableWuox),
+            'ꊅ' => Ok(YiSyllables::YiSyllableWuo),
+            'ꊆ' => Ok(YiSyllables::YiSyllableWuop),
+            'ꊇ' => Ok(YiSyllables::YiSyllableWox),
+            'ꊈ' => Ok(YiSyllables::YiSyllableWo),
+            'ꊉ' => Ok(YiSyllables::YiSyllableWop),
+            'ꊊ' => Ok(YiSyllables::YiSyllableWex),
+            'ꊋ' => Ok(YiSyllables::YiSyllableWe),
+            'ꊌ' => Ok(YiSyllables::YiSyllableWep),
+            'ꊍ' => Ok(YiSyllables::YiSyllableZit),
+            'ꊎ' => Ok(YiSyllables::YiSyllableZix),
+            'ꊏ' => Ok(YiSyllables::YiSyllableZi),
+            'ꊐ' => Ok(YiSyllables::YiSyllableZip),
+            'ꊑ' => Ok(YiSyllables::YiSyllableZiex),
+            'ꊒ' => Ok(YiSyllables::YiSyllableZie),
+            'ꊓ' => Ok(YiSyllables::YiSyllableZiep),
+            'ꊔ' => Ok(YiSyllables::YiSyllableZat),
+            'ꊕ' => Ok(YiSyllables::YiSyllableZax),
+            'ꊖ' => Ok(YiSyllables::YiSyllableZa),
+            'ꊗ' => Ok(YiSyllables::YiSyllableZap),
+            'ꊘ' => Ok(YiSyllables::YiSyllableZuox),
+            'ꊙ' => Ok(YiSyllables::YiSyllableZuo),
+            'ꊚ' => Ok(YiSyllables::YiSyllableZuop),
+            'ꊛ' => Ok(YiSyllables::YiSyllableZot),
+            'ꊜ' => Ok(YiSyllables::YiSyllableZox),
+            'ꊝ' => Ok(YiSyllables::YiSyllableZo),
+            'ꊞ' => Ok(YiSyllables::YiSyllableZop),
+            'ꊟ' => Ok(YiSyllables::YiSyllableZex),
+            'ꊠ' => Ok(YiSyllables::YiSyllableZe),
+            'ꊡ' => Ok(YiSyllables::YiSyllableZep),
+            'ꊢ' => Ok(YiSyllables::YiSyllableZut),
+            'ꊣ' => Ok(YiSyllables::YiSyllableZux),
+            'ꊤ' => Ok(YiSyllables::YiSyllableZu),
+            'ꊥ' => Ok(YiSyllables::YiSyllableZup),
+            'ꊦ' => Ok(YiSyllables::YiSyllableZurx),
+            'ꊧ' => Ok(YiSyllables::YiSyllableZur),
+            'ꊨ' => Ok(YiSyllables::YiSyllableZyt),
+            'ꊩ' => Ok(YiSyllables::YiSyllableZyx),
+            'ꊪ' => Ok(YiSyllables::YiSyllableZy),
+            'ꊫ' => Ok(YiSyllables::YiSyllableZyp),
+            'ꊬ' => Ok(YiSyllables::YiSyllableZyrx),
+            'ꊭ' => Ok(YiSyllables::YiSyllableZyr),
+            'ꊮ' => Ok(YiSyllables::YiSyllableCit),
+            'ꊯ' => Ok(YiSyllables::YiSyllableCix),
+            'ꊰ' => Ok(YiSyllables::YiSyllableCi),
+            'ꊱ' => Ok(YiSyllables::YiSyllableCip),
+            'ꊲ' => Ok(YiSyllables::YiSyllableCiet),
+            'ꊳ' => Ok(YiSyllables::YiSyllableCiex),
+            'ꊴ' => Ok(YiSyllables::YiSyllableCie),
+            'ꊵ' => Ok(YiSyllables::YiSyllableCiep),
+            'ꊶ' => Ok(YiSyllables::YiSyllableCat),
+            'ꊷ' => Ok(YiSyllables::YiSyllableCax),
+            'ꊸ' => Ok(YiSyllables::YiSyllableCa),
+            'ꊹ' => Ok(YiSyllables::YiSyllableCap),
+            'ꊺ' => Ok(YiSyllables::YiSyllableCuox),
+            'ꊻ' => Ok(YiSyllables::YiSyllableCuo),
+            'ꊼ' => Ok(YiSyllables::YiSyllableCuop),
+            'ꊽ' => Ok(YiSyllables::YiSyllableCot),
+            'ꊾ' => Ok(YiSyllables::YiSyllableCox),
+            'ꊿ' => Ok(YiSyllables::YiSyllableCo),
+            'ꋀ' => Ok(YiSyllables::YiSyllableCop),
+            'ꋁ' => Ok(YiSyllables::YiSyllableCex),
+            'ꋂ' => Ok(YiSyllables::YiSyllableCe),
+            'ꋃ' => Ok(YiSyllables::YiSyllableCep),
+            'ꋄ' => Ok(YiSyllables::YiSyllableCut),
+            'ꋅ' => Ok(YiSyllables::YiSyllableCux),
+            'ꋆ' => Ok(YiSyllables::YiSyllableCu),
+            'ꋇ' => Ok(YiSyllables::YiSyllableCup),
+            'ꋈ' => Ok(YiSyllables::YiSyllableCurx),
+            'ꋉ' => Ok(YiSyllables::YiSyllableCur),
+            'ꋊ' => Ok(YiSyllables::YiSyllableCyt),
+            'ꋋ' => Ok(YiSyllables::YiSyllableCyx),
+            'ꋌ' => Ok(YiSyllables::YiSyllableCy),
+            'ꋍ' => Ok(YiSyllables::YiSyllableCyp),
+            'ꋎ' => Ok(YiSyllables::YiSyllableCyrx),
+            'ꋏ' => Ok(YiSyllables::YiSyllableCyr),
+            'ꋐ' => Ok(YiSyllables::YiSyllableZzit),
+            'ꋑ' => Ok(YiSyllables::YiSyllableZzix),
+            'ꋒ' => Ok(YiSyllables::YiSyllableZzi),
+            'ꋓ' => Ok(YiSyllables::YiSyllableZzip),
+            'ꋔ' => Ok(YiSyllables::YiSyllableZziet),
+            'ꋕ' => Ok(YiSyllables::YiSyllableZziex),
+            'ꋖ' => Ok(YiSyllables::YiSyllableZzie),
+            'ꋗ' => Ok(YiSyllables::YiSyllableZziep),
+            'ꋘ' => Ok(YiSyllables::YiSyllableZzat),
+            'ꋙ' => Ok(YiSyllables::YiSyllableZzax),
+            'ꋚ' => Ok(YiSyllables::YiSyllableZza),
+            'ꋛ' => Ok(YiSyllables::YiSyllableZzap),
+            'ꋜ' => Ok(YiSyllables::YiSyllableZzox),
+            'ꋝ' => Ok(YiSyllables::YiSyllableZzo),
+            'ꋞ' => Ok(YiSyllables::YiSyllableZzop),
+            'ꋟ' => Ok(YiSyllables::YiSyllableZzex),
+            'ꋠ' => Ok(YiSyllables::YiSyllableZze),
+            'ꋡ' => Ok(YiSyllables::YiSyllableZzep),
+            'ꋢ' => Ok(YiSyllables::YiSyllableZzux),
+            'ꋣ' => Ok(YiSyllables::YiSyllableZzu),
+            'ꋤ' => Ok(YiSyllables::YiSyllableZzup),
+            'ꋥ' => Ok(YiSyllables::YiSyllableZzurx),
+            'ꋦ' => Ok(YiSyllables::YiSyllableZzur),
+            'ꋧ' => Ok(YiSyllables::YiSyllableZzyt),
+            'ꋨ' => Ok(YiSyllables::YiSyllableZzyx),
+            'ꋩ' => Ok(YiSyllables::YiSyllableZzy),
+            'ꋪ' => Ok(YiSyllables::YiSyllableZzyp),
+            'ꋫ' => Ok(YiSyllables::YiSyllableZzyrx),
+            'ꋬ' => Ok(YiSyllables::YiSyllableZzyr),
+            'ꋭ' => Ok(YiSyllables::YiSyllableNzit),
+            'ꋮ' => Ok(YiSyllables::YiSyllableNzix),
+            'ꋯ' => Ok(YiSyllables::YiSyllableNzi),
+            'ꋰ' => Ok(YiSyllables::YiSyllableNzip),
+            'ꋱ' => Ok(YiSyllables::YiSyllableNziex),
+            'ꋲ' => Ok(YiSyllables::YiSyllableNzie),
+            'ꋳ' => Ok(YiSyllables::YiSyllableNziep),
+            'ꋴ' => Ok(YiSyllables::YiSyllableNzat),
+            'ꋵ' => Ok(YiSyllables::YiSyllableNzax),
+            'ꋶ' => Ok(YiSyllables::YiSyllableNza),
+            'ꋷ' => Ok(YiSyllables::YiSyllableNzap),
+            'ꋸ' => Ok(YiSyllables::YiSyllableNzuox),
+            'ꋹ' => Ok(YiSyllables::YiSyllableNzuo),
+            'ꋺ' => Ok(YiSyllables::YiSyllableNzox),
+            'ꋻ' => Ok(YiSyllables::YiSyllableNzop),
+            'ꋼ' => Ok(YiSyllables::YiSyllableNzex),
+            'ꋽ' => Ok(YiSyllables::YiSyllableNze),
+            'ꋾ' => Ok(YiSyllables::YiSyllableNzux),
+            'ꋿ' => Ok(YiSyllables::YiSyllableNzu),
+            'ꌀ' => Ok(YiSyllables::YiSyllableNzup),
+            'ꌁ' => Ok(YiSyllables::YiSyllableNzurx),
+            'ꌂ' => Ok(YiSyllables::YiSyllableNzur),
+            'ꌃ' => Ok(YiSyllables::YiSyllableNzyt),
+            'ꌄ' => Ok(YiSyllables::YiSyllableNzyx),
+            'ꌅ' => Ok(YiSyllables::YiSyllableNzy),
+            'ꌆ' => Ok(YiSyllables::YiSyllableNzyp),
+            'ꌇ' => Ok(YiSyllables::YiSyllableNzyrx),
+            'ꌈ' => Ok(YiSyllables::YiSyllableNzyr),
+            'ꌉ' => Ok(YiSyllables::YiSyllableSit),
+            'ꌊ' => Ok(YiSyllables::YiSyllableSix),
+            'ꌋ' => Ok(YiSyllables::YiSyllableSi),
+            'ꌌ' => Ok(YiSyllables::YiSyllableSip),
+            'ꌍ' => Ok(YiSyllables::YiSyllableSiex),
+            'ꌎ' => Ok(YiSyllables::YiSyllableSie),
+            'ꌏ' => Ok(YiSyllables::YiSyllableSiep),
+            'ꌐ' => Ok(YiSyllables::YiSyllableSat),
+            'ꌑ' => Ok(YiSyllables::YiSyllableSax),
+            'ꌒ' => Ok(YiSyllables::YiSyllableSa),
+            'ꌓ' => Ok(YiSyllables::YiSyllableSap),
+            'ꌔ' => Ok(YiSyllables::YiSyllableSuox),
+            'ꌕ' => Ok(YiSyllables::YiSyllableSuo),
+            'ꌖ' => Ok(YiSyllables::YiSyllableSuop),
+            'ꌗ' => Ok(YiSyllables::YiSyllableSot),
+            'ꌘ' => Ok(YiSyllables::YiSyllableSox),
+            'ꌙ' => Ok(YiSyllables::YiSyllableSo),
+            'ꌚ' => Ok(YiSyllables::YiSyllableSop),
+            'ꌛ' => Ok(YiSyllables::YiSyllableSex),
+            'ꌜ' => Ok(YiSyllables::YiSyllableSe),
+            'ꌝ' => Ok(YiSyllables::YiSyllableSep),
+            'ꌞ' => Ok(YiSyllables::YiSyllableSut),
+            'ꌟ' => Ok(YiSyllables::YiSyllableSux),
+            'ꌠ' => Ok(YiSyllables::YiSyllableSu),
+            'ꌡ' => Ok(YiSyllables::YiSyllableSup),
+            'ꌢ' => Ok(YiSyllables::YiSyllableSurx),
+            'ꌣ' => Ok(YiSyllables::YiSyllableSur),
+            'ꌤ' => Ok(YiSyllables::YiSyllableSyt),
+            'ꌥ' => Ok(YiSyllables::YiSyllableSyx),
+            'ꌦ' => Ok(YiSyllables::YiSyllableSy),
+            'ꌧ' => Ok(YiSyllables::YiSyllableSyp),
+            'ꌨ' => Ok(YiSyllables::YiSyllableSyrx),
+            'ꌩ' => Ok(YiSyllables::YiSyllableSyr),
+            'ꌪ' => Ok(YiSyllables::YiSyllableSsit),
+            'ꌫ' => Ok(YiSyllables::YiSyllableSsix),
+            'ꌬ' => Ok(YiSyllables::YiSyllableSsi),
+            'ꌭ' => Ok(YiSyllables::YiSyllableSsip),
+            'ꌮ' => Ok(YiSyllables::YiSyllableSsiex),
+            'ꌯ' => Ok(YiSyllables::YiSyllableSsie),
+            'ꌰ' => Ok(YiSyllables::YiSyllableSsiep),
+            'ꌱ' => Ok(YiSyllables::YiSyllableSsat),
+            'ꌲ' => Ok(YiSyllables::YiSyllableSsax),
+            'ꌳ' => Ok(YiSyllables::YiSyllableSsa),
+            'ꌴ' => Ok(YiSyllables::YiSyllableSsap),
+            'ꌵ' => Ok(YiSyllables::YiSyllableSsot),
+            'ꌶ' => Ok(YiSyllables::YiSyllableSsox),
+            'ꌷ' => Ok(YiSyllables::YiSyllableSso),
+            'ꌸ' => Ok(YiSyllables::YiSyllableSsop),
+            'ꌹ' => Ok(YiSyllables::YiSyllableSsex),
+            'ꌺ' => Ok(YiSyllables::YiSyllableSse),
+            'ꌻ' => Ok(YiSyllables::YiSyllableSsep),
+            'ꌼ' => Ok(YiSyllables::YiSyllableSsut),
+            'ꌽ' => Ok(YiSyllables::YiSyllableSsux),
+            'ꌾ' => Ok(YiSyllables::YiSyllableSsu),
+            'ꌿ' => Ok(YiSyllables::YiSyllableSsup),
+            'ꍀ' => Ok(YiSyllables::YiSyllableSsyt),
+            'ꍁ' => Ok(YiSyllables::YiSyllableSsyx),
+            'ꍂ' => Ok(YiSyllables::YiSyllableSsy),
+            'ꍃ' => Ok(YiSyllables::YiSyllableSsyp),
+            'ꍄ' => Ok(YiSyllables::YiSyllableSsyrx),
+            'ꍅ' => Ok(YiSyllables::YiSyllableSsyr),
+            'ꍆ' => Ok(YiSyllables::YiSyllableZhat),
+            'ꍇ' => Ok(YiSyllables::YiSyllableZhax),
+            'ꍈ' => Ok(YiSyllables::YiSyllableZha),
+            'ꍉ' => Ok(YiSyllables::YiSyllableZhap),
+            'ꍊ' => Ok(YiSyllables::YiSyllableZhuox),
+            'ꍋ' => Ok(YiSyllables::YiSyllableZhuo),
+            'ꍌ' => Ok(YiSyllables::YiSyllableZhuop),
+            'ꍍ' => Ok(YiSyllables::YiSyllableZhot),
+            'ꍎ' => Ok(YiSyllables::YiSyllableZhox),
+            'ꍏ' => Ok(YiSyllables::YiSyllableZho),
+            'ꍐ' => Ok(YiSyllables::YiSyllableZhop),
+            'ꍑ' => Ok(YiSyllables::YiSyllableZhet),
+            'ꍒ' => Ok(YiSyllables::YiSyllableZhex),
+            'ꍓ' => Ok(YiSyllables::YiSyllableZhe),
+            'ꍔ' => Ok(YiSyllables::YiSyllableZhep),
+            'ꍕ' => Ok(YiSyllables::YiSyllableZhut),
+            'ꍖ' => Ok(YiSyllables::YiSyllableZhux),
+            'ꍗ' => Ok(YiSyllables::YiSyllableZhu),
+            'ꍘ' => Ok(YiSyllables::YiSyllableZhup),
+            'ꍙ' => Ok(YiSyllables::YiSyllableZhurx),
+            'ꍚ' => Ok(YiSyllables::YiSyllableZhur),
+            'ꍛ' => Ok(YiSyllables::YiSyllableZhyt),
+            'ꍜ' => Ok(YiSyllables::YiSyllableZhyx),
+            'ꍝ' => Ok(YiSyllables::YiSyllableZhy),
+            'ꍞ' => Ok(YiSyllables::YiSyllableZhyp),
+            'ꍟ' => Ok(YiSyllables::YiSyllableZhyrx),
+            'ꍠ' => Ok(YiSyllables::YiSyllableZhyr),
+            'ꍡ' => Ok(YiSyllables::YiSyllableChat),
+            'ꍢ' => Ok(YiSyllables::YiSyllableChax),
+            'ꍣ' => Ok(YiSyllables::YiSyllableCha),
+            'ꍤ' => Ok(YiSyllables::YiSyllableChap),
+            'ꍥ' => Ok(YiSyllables::YiSyllableChuot),
+            'ꍦ' => Ok(YiSyllables::YiSyllableChuox),
+            'ꍧ' => Ok(YiSyllables::YiSyllableChuo),
+            'ꍨ' => Ok(YiSyllables::YiSyllableChuop),
+            'ꍩ' => Ok(YiSyllables::YiSyllableChot),
+            'ꍪ' => Ok(YiSyllables::YiSyllableChox),
+            'ꍫ' => Ok(YiSyllables::YiSyllableCho),
+            'ꍬ' => Ok(YiSyllables::YiSyllableChop),
+            'ꍭ' => Ok(YiSyllables::YiSyllableChet),
+            'ꍮ' => Ok(YiSyllables::YiSyllableChex),
+            'ꍯ' => Ok(YiSyllables::YiSyllableChe),
+            'ꍰ' => Ok(YiSyllables::YiSyllableChep),
+            'ꍱ' => Ok(YiSyllables::YiSyllableChux),
+            'ꍲ' => Ok(YiSyllables::YiSyllableChu),
+            'ꍳ' => Ok(YiSyllables::YiSyllableChup),
+            'ꍴ' => Ok(YiSyllables::YiSyllableChurx),
+            'ꍵ' => Ok(YiSyllables::YiSyllableChur),
+            'ꍶ' => Ok(YiSyllables::YiSyllableChyt),
+            'ꍷ' => Ok(YiSyllables::YiSyllableChyx),
+            'ꍸ' => Ok(YiSyllables::YiSyllableChy),
+            'ꍹ' => Ok(YiSyllables::YiSyllableChyp),
+            'ꍺ' => Ok(YiSyllables::YiSyllableChyrx),
+            'ꍻ' => Ok(YiSyllables::YiSyllableChyr),
+            'ꍼ' => Ok(YiSyllables::YiSyllableRrax),
+            'ꍽ' => Ok(YiSyllables::YiSyllableRra),
+            'ꍾ' => Ok(YiSyllables::YiSyllableRruox),
+            'ꍿ' => Ok(YiSyllables::YiSyllableRruo),
+            'ꎀ' => Ok(YiSyllables::YiSyllableRrot),
+            'ꎁ' => Ok(YiSyllables::YiSyllableRrox),
+            'ꎂ' => Ok(YiSyllables::YiSyllableRro),
+            'ꎃ' => Ok(YiSyllables::YiSyllableRrop),
+            'ꎄ' => Ok(YiSyllables::YiSyllableRret),
+            'ꎅ' => Ok(YiSyllables::YiSyllableRrex),
+            'ꎆ' => Ok(YiSyllables::YiSyllableRre),
+            'ꎇ' => Ok(YiSyllables::YiSyllableRrep),
+            'ꎈ' => Ok(YiSyllables::YiSyllableRrut),
+            'ꎉ' => Ok(YiSyllables::YiSyllableRrux),
+            'ꎊ' => Ok(YiSyllables::YiSyllableRru),
+            'ꎋ' => Ok(YiSyllables::YiSyllableRrup),
+            'ꎌ' => Ok(YiSyllables::YiSyllableRrurx),
+            'ꎍ' => Ok(YiSyllables::YiSyllableRrur),
+            'ꎎ' => Ok(YiSyllables::YiSyllableRryt),
+            'ꎏ' => Ok(YiSyllables::YiSyllableRryx),
+            'ꎐ' => Ok(YiSyllables::YiSyllableRry),
+            'ꎑ' => Ok(YiSyllables::YiSyllableRryp),
+            'ꎒ' => Ok(YiSyllables::YiSyllableRryrx),
+            'ꎓ' => Ok(YiSyllables::YiSyllableRryr),
+            'ꎔ' => Ok(YiSyllables::YiSyllableNrat),
+            'ꎕ' => Ok(YiSyllables::YiSyllableNrax),
+            'ꎖ' => Ok(YiSyllables::YiSyllableNra),
+            'ꎗ' => Ok(YiSyllables::YiSyllableNrap),
+            'ꎘ' => Ok(YiSyllables::YiSyllableNrox),
+            'ꎙ' => Ok(YiSyllables::YiSyllableNro),
+            'ꎚ' => Ok(YiSyllables::YiSyllableNrop),
+            'ꎛ' => Ok(YiSyllables::YiSyllableNret),
+            'ꎜ' => Ok(YiSyllables::YiSyllableNrex),
+            'ꎝ' => Ok(YiSyllables::YiSyllableNre),
+            'ꎞ' => Ok(YiSyllables::YiSyllableNrep),
+            'ꎟ' => Ok(YiSyllables::YiSyllableNrut),
+            'ꎠ' => Ok(YiSyllables::YiSyllableNrux),
+            'ꎡ' => Ok(YiSyllables::YiSyllableNru),
+            'ꎢ' => Ok(YiSyllables::YiSyllableNrup),
+            'ꎣ' => Ok(YiSyllables::YiSyllableNrurx),
+            'ꎤ' => Ok(YiSyllables::YiSyllableNrur),
+            'ꎥ' => Ok(YiSyllables::YiSyllableNryt),
+            'ꎦ' => Ok(YiSyllables::YiSyllableNryx),
+            'ꎧ' => Ok(YiSyllables::YiSyllableNry),
+            'ꎨ' => Ok(YiSyllables::YiSyllableNryp),
+            'ꎩ' => Ok(YiSyllables::YiSyllableNryrx),
+            'ꎪ' => Ok(YiSyllables::YiSyllableNryr),
+            'ꎫ' => Ok(YiSyllables::YiSyllableShat),
+            'ꎬ' => Ok(YiSyllables::YiSyllableShax),
+            'ꎭ' => Ok(YiSyllables::YiSyllableSha),
+            'ꎮ' => Ok(YiSyllables::YiSyllableShap),
+            'ꎯ' => Ok(YiSyllables::YiSyllableShuox),
+            'ꎰ' => Ok(YiSyllables::YiSyllableShuo),
+            'ꎱ' => Ok(YiSyllables::YiSyllableShuop),
+            'ꎲ' => Ok(YiSyllables::YiSyllableShot),
+            'ꎳ' => Ok(YiSyllables::YiSyllableShox),
+            'ꎴ' => Ok(YiSyllables::YiSyllableSho),
+            'ꎵ' => Ok(YiSyllables::YiSyllableShop),
+            'ꎶ' => Ok(YiSyllables::YiSyllableShet),
+            'ꎷ' => Ok(YiSyllables::YiSyllableShex),
+            'ꎸ' => Ok(YiSyllables::YiSyllableShe),
+            'ꎹ' => Ok(YiSyllables::YiSyllableShep),
+            'ꎺ' => Ok(YiSyllables::YiSyllableShut),
+            'ꎻ' => Ok(YiSyllables::YiSyllableShux),
+            'ꎼ' => Ok(YiSyllables::YiSyllableShu),
+            'ꎽ' => Ok(YiSyllables::YiSyllableShup),
+            'ꎾ' => Ok(YiSyllables::YiSyllableShurx),
+            'ꎿ' => Ok(YiSyllables::YiSyllableShur),
+            'ꏀ' => Ok(YiSyllables::YiSyllableShyt),
+            'ꏁ' => Ok(YiSyllables::YiSyllableShyx),
+            'ꏂ' => Ok(YiSyllables::YiSyllableShy),
+            'ꏃ' => Ok(YiSyllables::YiSyllableShyp),
+            'ꏄ' => Ok(YiSyllables::YiSyllableShyrx),
+            'ꏅ' => Ok(YiSyllables::YiSyllableShyr),
+            'ꏆ' => Ok(YiSyllables::YiSyllableRat),
+            'ꏇ' => Ok(YiSyllables::YiSyllableRax),
+            'ꏈ' => Ok(YiSyllables::YiSyllableRa),
+            'ꏉ' => Ok(YiSyllables::YiSyllableRap),
+            'ꏊ' => Ok(YiSyllables::YiSyllableRuox),
+            'ꏋ' => Ok(YiSyllables::YiSyllableRuo),
+            'ꏌ' => Ok(YiSyllables::YiSyllableRuop),
+            'ꏍ' => Ok(YiSyllables::YiSyllableRot),
+            'ꏎ' => Ok(YiSyllables::YiSyllableRox),
+            'ꏏ' => Ok(YiSyllables::YiSyllableRo),
+            'ꏐ' => Ok(YiSyllables::YiSyllableRop),
+            'ꏑ' => Ok(YiSyllables::YiSyllableRex),
+            'ꏒ' => Ok(YiSyllables::YiSyllableRe),
+            'ꏓ' => Ok(YiSyllables::YiSyllableRep),
+            'ꏔ' => Ok(YiSyllables::YiSyllableRut),
+            'ꏕ' => Ok(YiSyllables::YiSyllableRux),
+            'ꏖ' => Ok(YiSyllables::YiSyllableRu),
+            'ꏗ' => Ok(YiSyllables::YiSyllableRup),
+            'ꏘ' => Ok(YiSyllables::YiSyllableRurx),
+            'ꏙ' => Ok(YiSyllables::YiSyllableRur),
+            'ꏚ' => Ok(YiSyllables::YiSyllableRyt),
+            'ꏛ' => Ok(YiSyllables::YiSyllableRyx),
+            'ꏜ' => Ok(YiSyllables::YiSyllableRy),
+            'ꏝ' => Ok(YiSyllables::YiSyllableRyp),
+            'ꏞ' => Ok(YiSyllables::YiSyllableRyrx),
+            'ꏟ' => Ok(YiSyllables::YiSyllableRyr),
+            'ꏠ' => Ok(YiSyllables::YiSyllableJit),
+            'ꏡ' => Ok(YiSyllables::YiSyllableJix),
+            'ꏢ' => Ok(YiSyllables::YiSyllableJi),
+            'ꏣ' => Ok(YiSyllables::YiSyllableJip),
+            'ꏤ' => Ok(YiSyllables::YiSyllableJiet),
+            'ꏥ' => Ok(YiSyllables::YiSyllableJiex),
+            'ꏦ' => Ok(YiSyllables::YiSyllableJie),
+            'ꏧ' => Ok(YiSyllables::YiSyllableJiep),
+            'ꏨ' => Ok(YiSyllables::YiSyllableJuot),
+            'ꏩ' => Ok(YiSyllables::YiSyllableJuox),
+            'ꏪ' => Ok(YiSyllables::YiSyllableJuo),
+            'ꏫ' => Ok(YiSyllables::YiSyllableJuop),
+            'ꏬ' => Ok(YiSyllables::YiSyllableJot),
+            'ꏭ' => Ok(YiSyllables::YiSyllableJox),
+            'ꏮ' => Ok(YiSyllables::YiSyllableJo),
+            'ꏯ' => Ok(YiSyllables::YiSyllableJop),
+            'ꏰ' => Ok(YiSyllables::YiSyllableJut),
+            'ꏱ' => Ok(YiSyllables::YiSyllableJux),
+            'ꏲ' => Ok(YiSyllables::YiSyllableJu),
+            'ꏳ' => Ok(YiSyllables::YiSyllableJup),
+            'ꏴ' => Ok(YiSyllables::YiSyllableJurx),
+            'ꏵ' => Ok(YiSyllables::YiSyllableJur),
+            'ꏶ' => Ok(YiSyllables::YiSyllableJyt),
+            'ꏷ' => Ok(YiSyllables::YiSyllableJyx),
+            'ꏸ' => Ok(YiSyllables::YiSyllableJy),
+            'ꏹ' => Ok(YiSyllables::YiSyllableJyp),
+            'ꏺ' => Ok(YiSyllables::YiSyllableJyrx),
+            'ꏻ' => Ok(YiSyllables::YiSyllableJyr),
+            'ꏼ' => Ok(YiSyllables::YiSyllableQit),
+            'ꏽ' => Ok(YiSyllables::YiSyllableQix),
+            'ꏾ' => Ok(YiSyllables::YiSyllableQi),
+            'ꏿ' => Ok(YiSyllables::YiSyllableQip),
+            'ꐀ' => Ok(YiSyllables::YiSyllableQiet),
+            'ꐁ' => Ok(YiSyllables::YiSyllableQiex),
+            'ꐂ' => Ok(YiSyllables::YiSyllableQie),
+            'ꐃ' => Ok(YiSyllables::YiSyllableQiep),
+            'ꐄ' => Ok(YiSyllables::YiSyllableQuot),
+            'ꐅ' => Ok(YiSyllables::YiSyllableQuox),
+            'ꐆ' => Ok(YiSyllables::YiSyllableQuo),
+            'ꐇ' => Ok(YiSyllables::YiSyllableQuop),
+            'ꐈ' => Ok(YiSyllables::YiSyllableQot),
+            'ꐉ' => Ok(YiSyllables::YiSyllableQox),
+            'ꐊ' => Ok(YiSyllables::YiSyllableQo),
+            'ꐋ' => Ok(YiSyllables::YiSyllableQop),
+            'ꐌ' => Ok(YiSyllables::YiSyllableQut),
+            'ꐍ' => Ok(YiSyllables::YiSyllableQux),
+            'ꐎ' => Ok(YiSyllables::YiSyllableQu),
+            'ꐏ' => Ok(YiSyllables::YiSyllableQup),
+            'ꐐ' => Ok(YiSyllables::YiSyllableQurx),
+            'ꐑ' => Ok(YiSyllables::YiSyllableQur),
+            'ꐒ' => Ok(YiSyllables::YiSyllableQyt),
+            'ꐓ' => Ok(YiSyllables::YiSyllableQyx),
+            'ꐔ' => Ok(YiSyllables::YiSyllableQy),
+            'ꐕ' => Ok(YiSyllables::YiSyllableQyp),
+            'ꐖ' => Ok(YiSyllables::YiSyllableQyrx),
+            'ꐗ' => Ok(YiSyllables::YiSyllableQyr),
+            'ꐘ' => Ok(YiSyllables::YiSyllableJjit),
+            'ꐙ' => Ok(YiSyllables::YiSyllableJjix),
+            'ꐚ' => Ok(YiSyllables::YiSyllableJji),
+            'ꐛ' => Ok(YiSyllables::YiSyllableJjip),
+            'ꐜ' => Ok(YiSyllables::YiSyllableJjiet),
+            'ꐝ' => Ok(YiSyllables::YiSyllableJjiex),
+            'ꐞ' => Ok(YiSyllables::YiSyllableJjie),
+            'ꐟ' => Ok(YiSyllables::YiSyllableJjiep),
+            'ꐠ' => Ok(YiSyllables::YiSyllableJjuox),
+            'ꐡ' => Ok(YiSyllables::YiSyllableJjuo),
+            'ꐢ' => Ok(YiSyllables::YiSyllableJjuop),
+            'ꐣ' => Ok(YiSyllables::YiSyllableJjot),
+            'ꐤ' => Ok(YiSyllables::YiSyllableJjox),
+            'ꐥ' => Ok(YiSyllables::YiSyllableJjo),
+            'ꐦ' => Ok(YiSyllables::YiSyllableJjop),
+            'ꐧ' => Ok(YiSyllables::YiSyllableJjut),
+            'ꐨ' => Ok(YiSyllables::YiSyllableJjux),
+            'ꐩ' => Ok(YiSyllables::YiSyllableJju),
+            'ꐪ' => Ok(YiSyllables::YiSyllableJjup),
+            'ꐫ' => Ok(YiSyllables::YiSyllableJjurx),
+            'ꐬ' => Ok(YiSyllables::YiSyllableJjur),
+            'ꐭ' => Ok(YiSyllables::YiSyllableJjyt),
+            'ꐮ' => Ok(YiSyllables::YiSyllableJjyx),
+            'ꐯ' => Ok(YiSyllables::YiSyllableJjy),
+            'ꐰ' => Ok(YiSyllables::YiSyllableJjyp),
+            'ꐱ' => Ok(YiSyllables::YiSyllableNjit),
+            'ꐲ' => Ok(YiSyllables::YiSyllableNjix),
+            'ꐳ' => Ok(YiSyllables::YiSyllableNji),
+            'ꐴ' => Ok(YiSyllables::YiSyllableNjip),
+            'ꐵ' => Ok(YiSyllables::YiSyllableNjiet),
+            'ꐶ' => Ok(YiSyllables::YiSyllableNjiex),
+            'ꐷ' => Ok(YiSyllables::YiSyllableNjie),
+            'ꐸ' => Ok(YiSyllables::YiSyllableNjiep),
+            'ꐹ' => Ok(YiSyllables::YiSyllableNjuox),
+            'ꐺ' => Ok(YiSyllables::YiSyllableNjuo),
+            'ꐻ' => Ok(YiSyllables::YiSyllableNjot),
+            'ꐼ' => Ok(YiSyllables::YiSyllableNjox),
+            'ꐽ' => Ok(YiSyllables::YiSyllableNjo),
+            'ꐾ' => Ok(YiSyllables::YiSyllableNjop),
+            'ꐿ' => Ok(YiSyllables::YiSyllableNjux),
+            'ꑀ' => Ok(YiSyllables::YiSyllableNju),
+            'ꑁ' => Ok(YiSyllables::YiSyllableNjup),
+            'ꑂ' => Ok(YiSyllables::YiSyllableNjurx),
+            'ꑃ' => Ok(YiSyllables::YiSyllableNjur),
+            'ꑄ' => Ok(YiSyllables::YiSyllableNjyt),
+            'ꑅ' => Ok(YiSyllables::YiSyllableNjyx),
+            'ꑆ' => Ok(YiSyllables::YiSyllableNjy),
+            'ꑇ' => Ok(YiSyllables::YiSyllableNjyp),
+            'ꑈ' => Ok(YiSyllables::YiSyllableNjyrx),
+            'ꑉ' => Ok(YiSyllables::YiSyllableNjyr),
+            'ꑊ' => Ok(YiSyllables::YiSyllableNyit),
+            'ꑋ' => Ok(YiSyllables::YiSyllableNyix),
+            'ꑌ' => Ok(YiSyllables::YiSyllableNyi),
+            'ꑍ' => Ok(YiSyllables::YiSyllableNyip),
+            'ꑎ' => Ok(YiSyllables::YiSyllableNyiet),
+            'ꑏ' => Ok(YiSyllables::YiSyllableNyiex),
+            'ꑐ' => Ok(YiSyllables::YiSyllableNyie),
+            'ꑑ' => Ok(YiSyllables::YiSyllableNyiep),
+            'ꑒ' => Ok(YiSyllables::YiSyllableNyuox),
+            'ꑓ' => Ok(YiSyllables::YiSyllableNyuo),
+            'ꑔ' => Ok(YiSyllables::YiSyllableNyuop),
+            'ꑕ' => Ok(YiSyllables::YiSyllableNyot),
+            'ꑖ' => Ok(YiSyllables::YiSyllableNyox),
+            'ꑗ' => Ok(YiSyllables::YiSyllableNyo),
+            'ꑘ' => Ok(YiSyllables::YiSyllableNyop),
+            'ꑙ' => Ok(YiSyllables::YiSyllableNyut),
+            'ꑚ' => Ok(YiSyllables::YiSyllableNyux),
+            'ꑛ' => Ok(YiSyllables::YiSyllableNyu),
+            'ꑜ' => Ok(YiSyllables::YiSyllableNyup),
+            'ꑝ' => Ok(YiSyllables::YiSyllableXit),
+            'ꑞ' => Ok(YiSyllables::YiSyllableXix),
+            'ꑟ' => Ok(YiSyllables::YiSyllableXi),
+            'ꑠ' => Ok(YiSyllables::YiSyllableXip),
+            'ꑡ' => Ok(YiSyllables::YiSyllableXiet),
+            'ꑢ' => Ok(YiSyllables::YiSyllableXiex),
+            'ꑣ' => Ok(YiSyllables::YiSyllableXie),
+            'ꑤ' => Ok(YiSyllables::YiSyllableXiep),
+            'ꑥ' => Ok(YiSyllables::YiSyllableXuox),
+            'ꑦ' => Ok(YiSyllables::YiSyllableXuo),
+            'ꑧ' => Ok(YiSyllables::YiSyllableXot),
+            'ꑨ' => Ok(YiSyllables::YiSyllableXox),
+            'ꑩ' => Ok(YiSyllables::YiSyllableXo),
+            'ꑪ' => Ok(YiSyllables::YiSyllableXop),
+            'ꑫ' => Ok(YiSyllables::YiSyllableXyt),
+            'ꑬ' => Ok(YiSyllables::YiSyllableXyx),
+            'ꑭ' => Ok(YiSyllables::YiSyllableXy),
+            'ꑮ' => Ok(YiSyllables::YiSyllableXyp),
+            'ꑯ' => Ok(YiSyllables::YiSyllableXyrx),
+            'ꑰ' => Ok(YiSyllables::YiSyllableXyr),
+            'ꑱ' => Ok(YiSyllables::YiSyllableYit),
+            'ꑲ' => Ok(YiSyllables::YiSyllableYix),
+            'ꑳ' => Ok(YiSyllables::YiSyllableYi),
+            'ꑴ' => Ok(YiSyllables::YiSyllableYip),
+            'ꑵ' => Ok(YiSyllables::YiSyllableYiet),
+            'ꑶ' => Ok(YiSyllables::YiSyllableYiex),
+            'ꑷ' => Ok(YiSyllables::YiSyllableYie),
+            'ꑸ' => Ok(YiSyllables::YiSyllableYiep),
+            'ꑹ' => Ok(YiSyllables::YiSyllableYuot),
+            'ꑺ' => Ok(YiSyllables::YiSyllableYuox),
+            'ꑻ' => Ok(YiSyllables::YiSyllableYuo),
+            'ꑼ' => Ok(YiSyllables::YiSyllableYuop),
+            'ꑽ' => Ok(YiSyllables::YiSyllableYot),
+            'ꑾ' => Ok(YiSyllables::YiSyllableYox),
+            'ꑿ' => Ok(YiSyllables::YiSyllableYo),
+            'ꒀ' => Ok(YiSyllables::YiSyllableYop),
+            'ꒁ' => Ok(YiSyllables::YiSyllableYut),
+            'ꒂ' => Ok(YiSyllables::YiSyllableYux),
+            'ꒃ' => Ok(YiSyllables::YiSyllableYu),
+            'ꒄ' => Ok(YiSyllables::YiSyllableYup),
+            'ꒅ' => Ok(YiSyllables::YiSyllableYurx),
+            'ꒆ' => Ok(YiSyllables::YiSyllableYur),
+            'ꒇ' => Ok(YiSyllables::YiSyllableYyt),
+            'ꒈ' => Ok(YiSyllables::YiSyllableYyx),
+            'ꒉ' => Ok(YiSyllables::YiSyllableYy),
+            'ꒊ' => Ok(YiSyllables::YiSyllableYyp),
+            'ꒋ' => Ok(YiSyllables::YiSyllableYyrx),
+            'ꒌ' => Ok(YiSyllables::YiSyllableYyr),
             _ => Err(()),
         }
     }

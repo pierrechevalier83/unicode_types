@@ -1,292 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1ee00}: '𞸀'
-    pub const ARABIC_MATHEMATICAL_ALEF: char = '𞸀';
-    /// \u{1ee01}: '𞸁'
-    pub const ARABIC_MATHEMATICAL_BEH: char = '𞸁';
-    /// \u{1ee02}: '𞸂'
-    pub const ARABIC_MATHEMATICAL_JEEM: char = '𞸂';
-    /// \u{1ee03}: '𞸃'
-    pub const ARABIC_MATHEMATICAL_DAL: char = '𞸃';
-    /// \u{1ee05}: '𞸅'
-    pub const ARABIC_MATHEMATICAL_WAW: char = '𞸅';
-    /// \u{1ee06}: '𞸆'
-    pub const ARABIC_MATHEMATICAL_ZAIN: char = '𞸆';
-    /// \u{1ee07}: '𞸇'
-    pub const ARABIC_MATHEMATICAL_HAH: char = '𞸇';
-    /// \u{1ee08}: '𞸈'
-    pub const ARABIC_MATHEMATICAL_TAH: char = '𞸈';
-    /// \u{1ee09}: '𞸉'
-    pub const ARABIC_MATHEMATICAL_YEH: char = '𞸉';
-    /// \u{1ee0a}: '𞸊'
-    pub const ARABIC_MATHEMATICAL_KAF: char = '𞸊';
-    /// \u{1ee0b}: '𞸋'
-    pub const ARABIC_MATHEMATICAL_LAM: char = '𞸋';
-    /// \u{1ee0c}: '𞸌'
-    pub const ARABIC_MATHEMATICAL_MEEM: char = '𞸌';
-    /// \u{1ee0d}: '𞸍'
-    pub const ARABIC_MATHEMATICAL_NOON: char = '𞸍';
-    /// \u{1ee0e}: '𞸎'
-    pub const ARABIC_MATHEMATICAL_SEEN: char = '𞸎';
-    /// \u{1ee0f}: '𞸏'
-    pub const ARABIC_MATHEMATICAL_AIN: char = '𞸏';
-    /// \u{1ee10}: '𞸐'
-    pub const ARABIC_MATHEMATICAL_FEH: char = '𞸐';
-    /// \u{1ee11}: '𞸑'
-    pub const ARABIC_MATHEMATICAL_SAD: char = '𞸑';
-    /// \u{1ee12}: '𞸒'
-    pub const ARABIC_MATHEMATICAL_QAF: char = '𞸒';
-    /// \u{1ee13}: '𞸓'
-    pub const ARABIC_MATHEMATICAL_REH: char = '𞸓';
-    /// \u{1ee14}: '𞸔'
-    pub const ARABIC_MATHEMATICAL_SHEEN: char = '𞸔';
-    /// \u{1ee15}: '𞸕'
-    pub const ARABIC_MATHEMATICAL_TEH: char = '𞸕';
-    /// \u{1ee16}: '𞸖'
-    pub const ARABIC_MATHEMATICAL_THEH: char = '𞸖';
-    /// \u{1ee17}: '𞸗'
-    pub const ARABIC_MATHEMATICAL_KHAH: char = '𞸗';
-    /// \u{1ee18}: '𞸘'
-    pub const ARABIC_MATHEMATICAL_THAL: char = '𞸘';
-    /// \u{1ee19}: '𞸙'
-    pub const ARABIC_MATHEMATICAL_DAD: char = '𞸙';
-    /// \u{1ee1a}: '𞸚'
-    pub const ARABIC_MATHEMATICAL_ZAH: char = '𞸚';
-    /// \u{1ee1b}: '𞸛'
-    pub const ARABIC_MATHEMATICAL_GHAIN: char = '𞸛';
-    /// \u{1ee1c}: '𞸜'
-    pub const ARABIC_MATHEMATICAL_DOTLESS_BEH: char = '𞸜';
-    /// \u{1ee1d}: '𞸝'
-    pub const ARABIC_MATHEMATICAL_DOTLESS_NOON: char = '𞸝';
-    /// \u{1ee1e}: '𞸞'
-    pub const ARABIC_MATHEMATICAL_DOTLESS_FEH: char = '𞸞';
-    /// \u{1ee1f}: '𞸟'
-    pub const ARABIC_MATHEMATICAL_DOTLESS_QAF: char = '𞸟';
-    /// \u{1ee21}: '𞸡'
-    pub const ARABIC_MATHEMATICAL_INITIAL_BEH: char = '𞸡';
-    /// \u{1ee22}: '𞸢'
-    pub const ARABIC_MATHEMATICAL_INITIAL_JEEM: char = '𞸢';
-    /// \u{1ee24}: '𞸤'
-    pub const ARABIC_MATHEMATICAL_INITIAL_HEH: char = '𞸤';
-    /// \u{1ee27}: '𞸧'
-    pub const ARABIC_MATHEMATICAL_INITIAL_HAH: char = '𞸧';
-    /// \u{1ee29}: '𞸩'
-    pub const ARABIC_MATHEMATICAL_INITIAL_YEH: char = '𞸩';
-    /// \u{1ee2a}: '𞸪'
-    pub const ARABIC_MATHEMATICAL_INITIAL_KAF: char = '𞸪';
-    /// \u{1ee2b}: '𞸫'
-    pub const ARABIC_MATHEMATICAL_INITIAL_LAM: char = '𞸫';
-    /// \u{1ee2c}: '𞸬'
-    pub const ARABIC_MATHEMATICAL_INITIAL_MEEM: char = '𞸬';
-    /// \u{1ee2d}: '𞸭'
-    pub const ARABIC_MATHEMATICAL_INITIAL_NOON: char = '𞸭';
-    /// \u{1ee2e}: '𞸮'
-    pub const ARABIC_MATHEMATICAL_INITIAL_SEEN: char = '𞸮';
-    /// \u{1ee2f}: '𞸯'
-    pub const ARABIC_MATHEMATICAL_INITIAL_AIN: char = '𞸯';
-    /// \u{1ee30}: '𞸰'
-    pub const ARABIC_MATHEMATICAL_INITIAL_FEH: char = '𞸰';
-    /// \u{1ee31}: '𞸱'
-    pub const ARABIC_MATHEMATICAL_INITIAL_SAD: char = '𞸱';
-    /// \u{1ee32}: '𞸲'
-    pub const ARABIC_MATHEMATICAL_INITIAL_QAF: char = '𞸲';
-    /// \u{1ee34}: '𞸴'
-    pub const ARABIC_MATHEMATICAL_INITIAL_SHEEN: char = '𞸴';
-    /// \u{1ee35}: '𞸵'
-    pub const ARABIC_MATHEMATICAL_INITIAL_TEH: char = '𞸵';
-    /// \u{1ee36}: '𞸶'
-    pub const ARABIC_MATHEMATICAL_INITIAL_THEH: char = '𞸶';
-    /// \u{1ee37}: '𞸷'
-    pub const ARABIC_MATHEMATICAL_INITIAL_KHAH: char = '𞸷';
-    /// \u{1ee39}: '𞸹'
-    pub const ARABIC_MATHEMATICAL_INITIAL_DAD: char = '𞸹';
-    /// \u{1ee3b}: '𞸻'
-    pub const ARABIC_MATHEMATICAL_INITIAL_GHAIN: char = '𞸻';
-    /// \u{1ee42}: '𞹂'
-    pub const ARABIC_MATHEMATICAL_TAILED_JEEM: char = '𞹂';
-    /// \u{1ee47}: '𞹇'
-    pub const ARABIC_MATHEMATICAL_TAILED_HAH: char = '𞹇';
-    /// \u{1ee49}: '𞹉'
-    pub const ARABIC_MATHEMATICAL_TAILED_YEH: char = '𞹉';
-    /// \u{1ee4b}: '𞹋'
-    pub const ARABIC_MATHEMATICAL_TAILED_LAM: char = '𞹋';
-    /// \u{1ee4d}: '𞹍'
-    pub const ARABIC_MATHEMATICAL_TAILED_NOON: char = '𞹍';
-    /// \u{1ee4e}: '𞹎'
-    pub const ARABIC_MATHEMATICAL_TAILED_SEEN: char = '𞹎';
-    /// \u{1ee4f}: '𞹏'
-    pub const ARABIC_MATHEMATICAL_TAILED_AIN: char = '𞹏';
-    /// \u{1ee51}: '𞹑'
-    pub const ARABIC_MATHEMATICAL_TAILED_SAD: char = '𞹑';
-    /// \u{1ee52}: '𞹒'
-    pub const ARABIC_MATHEMATICAL_TAILED_QAF: char = '𞹒';
-    /// \u{1ee54}: '𞹔'
-    pub const ARABIC_MATHEMATICAL_TAILED_SHEEN: char = '𞹔';
-    /// \u{1ee57}: '𞹗'
-    pub const ARABIC_MATHEMATICAL_TAILED_KHAH: char = '𞹗';
-    /// \u{1ee59}: '𞹙'
-    pub const ARABIC_MATHEMATICAL_TAILED_DAD: char = '𞹙';
-    /// \u{1ee5b}: '𞹛'
-    pub const ARABIC_MATHEMATICAL_TAILED_GHAIN: char = '𞹛';
-    /// \u{1ee5d}: '𞹝'
-    pub const ARABIC_MATHEMATICAL_TAILED_DOTLESS_NOON: char = '𞹝';
-    /// \u{1ee5f}: '𞹟'
-    pub const ARABIC_MATHEMATICAL_TAILED_DOTLESS_QAF: char = '𞹟';
-    /// \u{1ee61}: '𞹡'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_BEH: char = '𞹡';
-    /// \u{1ee62}: '𞹢'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_JEEM: char = '𞹢';
-    /// \u{1ee64}: '𞹤'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_HEH: char = '𞹤';
-    /// \u{1ee67}: '𞹧'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_HAH: char = '𞹧';
-    /// \u{1ee68}: '𞹨'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_TAH: char = '𞹨';
-    /// \u{1ee69}: '𞹩'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_YEH: char = '𞹩';
-    /// \u{1ee6a}: '𞹪'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_KAF: char = '𞹪';
-    /// \u{1ee6c}: '𞹬'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_MEEM: char = '𞹬';
-    /// \u{1ee6d}: '𞹭'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_NOON: char = '𞹭';
-    /// \u{1ee6e}: '𞹮'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_SEEN: char = '𞹮';
-    /// \u{1ee6f}: '𞹯'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_AIN: char = '𞹯';
-    /// \u{1ee70}: '𞹰'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_FEH: char = '𞹰';
-    /// \u{1ee71}: '𞹱'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_SAD: char = '𞹱';
-    /// \u{1ee72}: '𞹲'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_QAF: char = '𞹲';
-    /// \u{1ee74}: '𞹴'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_SHEEN: char = '𞹴';
-    /// \u{1ee75}: '𞹵'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_TEH: char = '𞹵';
-    /// \u{1ee76}: '𞹶'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_THEH: char = '𞹶';
-    /// \u{1ee77}: '𞹷'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_KHAH: char = '𞹷';
-    /// \u{1ee79}: '𞹹'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_DAD: char = '𞹹';
-    /// \u{1ee7a}: '𞹺'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_ZAH: char = '𞹺';
-    /// \u{1ee7b}: '𞹻'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_GHAIN: char = '𞹻';
-    /// \u{1ee7c}: '𞹼'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_DOTLESS_BEH: char = '𞹼';
-    /// \u{1ee7e}: '𞹾'
-    pub const ARABIC_MATHEMATICAL_STRETCHED_DOTLESS_FEH: char = '𞹾';
-    /// \u{1ee80}: '𞺀'
-    pub const ARABIC_MATHEMATICAL_LOOPED_ALEF: char = '𞺀';
-    /// \u{1ee81}: '𞺁'
-    pub const ARABIC_MATHEMATICAL_LOOPED_BEH: char = '𞺁';
-    /// \u{1ee82}: '𞺂'
-    pub const ARABIC_MATHEMATICAL_LOOPED_JEEM: char = '𞺂';
-    /// \u{1ee83}: '𞺃'
-    pub const ARABIC_MATHEMATICAL_LOOPED_DAL: char = '𞺃';
-    /// \u{1ee84}: '𞺄'
-    pub const ARABIC_MATHEMATICAL_LOOPED_HEH: char = '𞺄';
-    /// \u{1ee85}: '𞺅'
-    pub const ARABIC_MATHEMATICAL_LOOPED_WAW: char = '𞺅';
-    /// \u{1ee86}: '𞺆'
-    pub const ARABIC_MATHEMATICAL_LOOPED_ZAIN: char = '𞺆';
-    /// \u{1ee87}: '𞺇'
-    pub const ARABIC_MATHEMATICAL_LOOPED_HAH: char = '𞺇';
-    /// \u{1ee88}: '𞺈'
-    pub const ARABIC_MATHEMATICAL_LOOPED_TAH: char = '𞺈';
-    /// \u{1ee89}: '𞺉'
-    pub const ARABIC_MATHEMATICAL_LOOPED_YEH: char = '𞺉';
-    /// \u{1ee8b}: '𞺋'
-    pub const ARABIC_MATHEMATICAL_LOOPED_LAM: char = '𞺋';
-    /// \u{1ee8c}: '𞺌'
-    pub const ARABIC_MATHEMATICAL_LOOPED_MEEM: char = '𞺌';
-    /// \u{1ee8d}: '𞺍'
-    pub const ARABIC_MATHEMATICAL_LOOPED_NOON: char = '𞺍';
-    /// \u{1ee8e}: '𞺎'
-    pub const ARABIC_MATHEMATICAL_LOOPED_SEEN: char = '𞺎';
-    /// \u{1ee8f}: '𞺏'
-    pub const ARABIC_MATHEMATICAL_LOOPED_AIN: char = '𞺏';
-    /// \u{1ee90}: '𞺐'
-    pub const ARABIC_MATHEMATICAL_LOOPED_FEH: char = '𞺐';
-    /// \u{1ee91}: '𞺑'
-    pub const ARABIC_MATHEMATICAL_LOOPED_SAD: char = '𞺑';
-    /// \u{1ee92}: '𞺒'
-    pub const ARABIC_MATHEMATICAL_LOOPED_QAF: char = '𞺒';
-    /// \u{1ee93}: '𞺓'
-    pub const ARABIC_MATHEMATICAL_LOOPED_REH: char = '𞺓';
-    /// \u{1ee94}: '𞺔'
-    pub const ARABIC_MATHEMATICAL_LOOPED_SHEEN: char = '𞺔';
-    /// \u{1ee95}: '𞺕'
-    pub const ARABIC_MATHEMATICAL_LOOPED_TEH: char = '𞺕';
-    /// \u{1ee96}: '𞺖'
-    pub const ARABIC_MATHEMATICAL_LOOPED_THEH: char = '𞺖';
-    /// \u{1ee97}: '𞺗'
-    pub const ARABIC_MATHEMATICAL_LOOPED_KHAH: char = '𞺗';
-    /// \u{1ee98}: '𞺘'
-    pub const ARABIC_MATHEMATICAL_LOOPED_THAL: char = '𞺘';
-    /// \u{1ee99}: '𞺙'
-    pub const ARABIC_MATHEMATICAL_LOOPED_DAD: char = '𞺙';
-    /// \u{1ee9a}: '𞺚'
-    pub const ARABIC_MATHEMATICAL_LOOPED_ZAH: char = '𞺚';
-    /// \u{1ee9b}: '𞺛'
-    pub const ARABIC_MATHEMATICAL_LOOPED_GHAIN: char = '𞺛';
-    /// \u{1eea1}: '𞺡'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_BEH: char = '𞺡';
-    /// \u{1eea2}: '𞺢'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_JEEM: char = '𞺢';
-    /// \u{1eea3}: '𞺣'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_DAL: char = '𞺣';
-    /// \u{1eea5}: '𞺥'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_WAW: char = '𞺥';
-    /// \u{1eea6}: '𞺦'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_ZAIN: char = '𞺦';
-    /// \u{1eea7}: '𞺧'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_HAH: char = '𞺧';
-    /// \u{1eea8}: '𞺨'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_TAH: char = '𞺨';
-    /// \u{1eea9}: '𞺩'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_YEH: char = '𞺩';
-    /// \u{1eeab}: '𞺫'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_LAM: char = '𞺫';
-    /// \u{1eeac}: '𞺬'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_MEEM: char = '𞺬';
-    /// \u{1eead}: '𞺭'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_NOON: char = '𞺭';
-    /// \u{1eeae}: '𞺮'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_SEEN: char = '𞺮';
-    /// \u{1eeaf}: '𞺯'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_AIN: char = '𞺯';
-    /// \u{1eeb0}: '𞺰'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_FEH: char = '𞺰';
-    /// \u{1eeb1}: '𞺱'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_SAD: char = '𞺱';
-    /// \u{1eeb2}: '𞺲'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_QAF: char = '𞺲';
-    /// \u{1eeb3}: '𞺳'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_REH: char = '𞺳';
-    /// \u{1eeb4}: '𞺴'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_SHEEN: char = '𞺴';
-    /// \u{1eeb5}: '𞺵'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_TEH: char = '𞺵';
-    /// \u{1eeb6}: '𞺶'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_THEH: char = '𞺶';
-    /// \u{1eeb7}: '𞺷'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_KHAH: char = '𞺷';
-    /// \u{1eeb8}: '𞺸'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_THAL: char = '𞺸';
-    /// \u{1eeb9}: '𞺹'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_DAD: char = '𞺹';
-    /// \u{1eeba}: '𞺺'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_ZAH: char = '𞺺';
-    /// \u{1eebb}: '𞺻'
-    pub const ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_GHAIN: char = '𞺻';
-    /// \u{1eef0}: '𞻰'
-    pub const ARABIC_MATHEMATICAL_OPERATOR_MEEM_WITH_HAH_WITH_TATWEEL: char = '𞻰';
-    /// \u{1eef1}: '𞻱'
-    pub const ARABIC_MATHEMATICAL_OPERATOR_HAH_WITH_DAL: char = '𞻱';
-}
 
 /// An enum to represent all characters in the ArabicMathematicalAlphabeticSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -581,151 +292,150 @@ pub enum ArabicMathematicalAlphabeticSymbols {
 
 impl Into<char> for ArabicMathematicalAlphabeticSymbols {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalAlef => ARABIC_MATHEMATICAL_ALEF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalBeh => ARABIC_MATHEMATICAL_BEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalJeem => ARABIC_MATHEMATICAL_JEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDal => ARABIC_MATHEMATICAL_DAL,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalWaw => ARABIC_MATHEMATICAL_WAW,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalZain => ARABIC_MATHEMATICAL_ZAIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalHah => ARABIC_MATHEMATICAL_HAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTah => ARABIC_MATHEMATICAL_TAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalYeh => ARABIC_MATHEMATICAL_YEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalKaf => ARABIC_MATHEMATICAL_KAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLam => ARABIC_MATHEMATICAL_LAM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalMeem => ARABIC_MATHEMATICAL_MEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalNoon => ARABIC_MATHEMATICAL_NOON,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSeen => ARABIC_MATHEMATICAL_SEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalAin => ARABIC_MATHEMATICAL_AIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalFeh => ARABIC_MATHEMATICAL_FEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSad => ARABIC_MATHEMATICAL_SAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalQaf => ARABIC_MATHEMATICAL_QAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalReh => ARABIC_MATHEMATICAL_REH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSheen => ARABIC_MATHEMATICAL_SHEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTeh => ARABIC_MATHEMATICAL_TEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTheh => ARABIC_MATHEMATICAL_THEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalKhah => ARABIC_MATHEMATICAL_KHAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalThal => ARABIC_MATHEMATICAL_THAL,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDad => ARABIC_MATHEMATICAL_DAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalZah => ARABIC_MATHEMATICAL_ZAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalGhain => ARABIC_MATHEMATICAL_GHAIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessBeh => ARABIC_MATHEMATICAL_DOTLESS_BEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessNoon => ARABIC_MATHEMATICAL_DOTLESS_NOON,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessFeh => ARABIC_MATHEMATICAL_DOTLESS_FEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessQaf => ARABIC_MATHEMATICAL_DOTLESS_QAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialBeh => ARABIC_MATHEMATICAL_INITIAL_BEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialJeem => ARABIC_MATHEMATICAL_INITIAL_JEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialHeh => ARABIC_MATHEMATICAL_INITIAL_HEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialHah => ARABIC_MATHEMATICAL_INITIAL_HAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialYeh => ARABIC_MATHEMATICAL_INITIAL_YEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialKaf => ARABIC_MATHEMATICAL_INITIAL_KAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialLam => ARABIC_MATHEMATICAL_INITIAL_LAM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialMeem => ARABIC_MATHEMATICAL_INITIAL_MEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialNoon => ARABIC_MATHEMATICAL_INITIAL_NOON,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSeen => ARABIC_MATHEMATICAL_INITIAL_SEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialAin => ARABIC_MATHEMATICAL_INITIAL_AIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialFeh => ARABIC_MATHEMATICAL_INITIAL_FEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSad => ARABIC_MATHEMATICAL_INITIAL_SAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialQaf => ARABIC_MATHEMATICAL_INITIAL_QAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSheen => ARABIC_MATHEMATICAL_INITIAL_SHEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialTeh => ARABIC_MATHEMATICAL_INITIAL_TEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialTheh => ARABIC_MATHEMATICAL_INITIAL_THEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialKhah => ARABIC_MATHEMATICAL_INITIAL_KHAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialDad => ARABIC_MATHEMATICAL_INITIAL_DAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialGhain => ARABIC_MATHEMATICAL_INITIAL_GHAIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedJeem => ARABIC_MATHEMATICAL_TAILED_JEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedHah => ARABIC_MATHEMATICAL_TAILED_HAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedYeh => ARABIC_MATHEMATICAL_TAILED_YEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedLam => ARABIC_MATHEMATICAL_TAILED_LAM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedNoon => ARABIC_MATHEMATICAL_TAILED_NOON,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSeen => ARABIC_MATHEMATICAL_TAILED_SEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedAin => ARABIC_MATHEMATICAL_TAILED_AIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSad => ARABIC_MATHEMATICAL_TAILED_SAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedQaf => ARABIC_MATHEMATICAL_TAILED_QAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSheen => ARABIC_MATHEMATICAL_TAILED_SHEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedKhah => ARABIC_MATHEMATICAL_TAILED_KHAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDad => ARABIC_MATHEMATICAL_TAILED_DAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedGhain => ARABIC_MATHEMATICAL_TAILED_GHAIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDotlessNoon => ARABIC_MATHEMATICAL_TAILED_DOTLESS_NOON,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDotlessQaf => ARABIC_MATHEMATICAL_TAILED_DOTLESS_QAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedBeh => ARABIC_MATHEMATICAL_STRETCHED_BEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedJeem => ARABIC_MATHEMATICAL_STRETCHED_JEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedHeh => ARABIC_MATHEMATICAL_STRETCHED_HEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedHah => ARABIC_MATHEMATICAL_STRETCHED_HAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTah => ARABIC_MATHEMATICAL_STRETCHED_TAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedYeh => ARABIC_MATHEMATICAL_STRETCHED_YEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedKaf => ARABIC_MATHEMATICAL_STRETCHED_KAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedMeem => ARABIC_MATHEMATICAL_STRETCHED_MEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedNoon => ARABIC_MATHEMATICAL_STRETCHED_NOON,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSeen => ARABIC_MATHEMATICAL_STRETCHED_SEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedAin => ARABIC_MATHEMATICAL_STRETCHED_AIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedFeh => ARABIC_MATHEMATICAL_STRETCHED_FEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSad => ARABIC_MATHEMATICAL_STRETCHED_SAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedQaf => ARABIC_MATHEMATICAL_STRETCHED_QAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSheen => ARABIC_MATHEMATICAL_STRETCHED_SHEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTeh => ARABIC_MATHEMATICAL_STRETCHED_TEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTheh => ARABIC_MATHEMATICAL_STRETCHED_THEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedKhah => ARABIC_MATHEMATICAL_STRETCHED_KHAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDad => ARABIC_MATHEMATICAL_STRETCHED_DAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedZah => ARABIC_MATHEMATICAL_STRETCHED_ZAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedGhain => ARABIC_MATHEMATICAL_STRETCHED_GHAIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDotlessBeh => ARABIC_MATHEMATICAL_STRETCHED_DOTLESS_BEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDotlessFeh => ARABIC_MATHEMATICAL_STRETCHED_DOTLESS_FEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedAlef => ARABIC_MATHEMATICAL_LOOPED_ALEF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedBeh => ARABIC_MATHEMATICAL_LOOPED_BEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedJeem => ARABIC_MATHEMATICAL_LOOPED_JEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedDal => ARABIC_MATHEMATICAL_LOOPED_DAL,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedHeh => ARABIC_MATHEMATICAL_LOOPED_HEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedWaw => ARABIC_MATHEMATICAL_LOOPED_WAW,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedZain => ARABIC_MATHEMATICAL_LOOPED_ZAIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedHah => ARABIC_MATHEMATICAL_LOOPED_HAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTah => ARABIC_MATHEMATICAL_LOOPED_TAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedYeh => ARABIC_MATHEMATICAL_LOOPED_YEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedLam => ARABIC_MATHEMATICAL_LOOPED_LAM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedMeem => ARABIC_MATHEMATICAL_LOOPED_MEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedNoon => ARABIC_MATHEMATICAL_LOOPED_NOON,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSeen => ARABIC_MATHEMATICAL_LOOPED_SEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedAin => ARABIC_MATHEMATICAL_LOOPED_AIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedFeh => ARABIC_MATHEMATICAL_LOOPED_FEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSad => ARABIC_MATHEMATICAL_LOOPED_SAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedQaf => ARABIC_MATHEMATICAL_LOOPED_QAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedReh => ARABIC_MATHEMATICAL_LOOPED_REH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSheen => ARABIC_MATHEMATICAL_LOOPED_SHEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTeh => ARABIC_MATHEMATICAL_LOOPED_TEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTheh => ARABIC_MATHEMATICAL_LOOPED_THEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedKhah => ARABIC_MATHEMATICAL_LOOPED_KHAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedThal => ARABIC_MATHEMATICAL_LOOPED_THAL,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedDad => ARABIC_MATHEMATICAL_LOOPED_DAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedZah => ARABIC_MATHEMATICAL_LOOPED_ZAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedGhain => ARABIC_MATHEMATICAL_LOOPED_GHAIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckBeh => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_BEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckJeem => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_JEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckDal => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_DAL,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckWaw => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_WAW,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckZain => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_ZAIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckHah => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_HAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTah => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_TAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckYeh => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_YEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckLam => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_LAM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckMeem => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_MEEM,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckNoon => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_NOON,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSeen => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_SEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckAin => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_AIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckFeh => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_FEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSad => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_SAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckQaf => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_QAF,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckReh => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_REH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSheen => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_SHEEN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTeh => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_TEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTheh => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_THEH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckKhah => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_KHAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckThal => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_THAL,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckDad => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_DAD,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckZah => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_ZAH,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckGhain => ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_GHAIN,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalOperatorMeemWithHahWithTatweel => ARABIC_MATHEMATICAL_OPERATOR_MEEM_WITH_HAH_WITH_TATWEEL,
-            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalOperatorHahWithDal => ARABIC_MATHEMATICAL_OPERATOR_HAH_WITH_DAL,
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalAlef => '𞸀',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalBeh => '𞸁',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalJeem => '𞸂',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDal => '𞸃',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalWaw => '𞸅',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalZain => '𞸆',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalHah => '𞸇',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTah => '𞸈',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalYeh => '𞸉',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalKaf => '𞸊',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLam => '𞸋',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalMeem => '𞸌',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalNoon => '𞸍',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSeen => '𞸎',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalAin => '𞸏',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalFeh => '𞸐',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSad => '𞸑',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalQaf => '𞸒',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalReh => '𞸓',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSheen => '𞸔',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTeh => '𞸕',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTheh => '𞸖',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalKhah => '𞸗',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalThal => '𞸘',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDad => '𞸙',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalZah => '𞸚',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalGhain => '𞸛',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessBeh => '𞸜',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessNoon => '𞸝',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessFeh => '𞸞',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessQaf => '𞸟',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialBeh => '𞸡',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialJeem => '𞸢',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialHeh => '𞸤',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialHah => '𞸧',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialYeh => '𞸩',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialKaf => '𞸪',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialLam => '𞸫',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialMeem => '𞸬',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialNoon => '𞸭',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSeen => '𞸮',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialAin => '𞸯',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialFeh => '𞸰',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSad => '𞸱',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialQaf => '𞸲',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSheen => '𞸴',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialTeh => '𞸵',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialTheh => '𞸶',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialKhah => '𞸷',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialDad => '𞸹',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialGhain => '𞸻',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedJeem => '𞹂',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedHah => '𞹇',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedYeh => '𞹉',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedLam => '𞹋',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedNoon => '𞹍',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSeen => '𞹎',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedAin => '𞹏',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSad => '𞹑',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedQaf => '𞹒',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSheen => '𞹔',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedKhah => '𞹗',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDad => '𞹙',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedGhain => '𞹛',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDotlessNoon => '𞹝',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDotlessQaf => '𞹟',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedBeh => '𞹡',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedJeem => '𞹢',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedHeh => '𞹤',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedHah => '𞹧',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTah => '𞹨',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedYeh => '𞹩',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedKaf => '𞹪',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedMeem => '𞹬',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedNoon => '𞹭',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSeen => '𞹮',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedAin => '𞹯',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedFeh => '𞹰',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSad => '𞹱',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedQaf => '𞹲',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSheen => '𞹴',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTeh => '𞹵',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTheh => '𞹶',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedKhah => '𞹷',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDad => '𞹹',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedZah => '𞹺',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedGhain => '𞹻',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDotlessBeh => '𞹼',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDotlessFeh => '𞹾',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedAlef => '𞺀',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedBeh => '𞺁',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedJeem => '𞺂',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedDal => '𞺃',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedHeh => '𞺄',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedWaw => '𞺅',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedZain => '𞺆',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedHah => '𞺇',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTah => '𞺈',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedYeh => '𞺉',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedLam => '𞺋',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedMeem => '𞺌',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedNoon => '𞺍',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSeen => '𞺎',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedAin => '𞺏',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedFeh => '𞺐',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSad => '𞺑',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedQaf => '𞺒',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedReh => '𞺓',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSheen => '𞺔',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTeh => '𞺕',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTheh => '𞺖',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedKhah => '𞺗',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedThal => '𞺘',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedDad => '𞺙',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedZah => '𞺚',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedGhain => '𞺛',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckBeh => '𞺡',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckJeem => '𞺢',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckDal => '𞺣',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckWaw => '𞺥',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckZain => '𞺦',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckHah => '𞺧',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTah => '𞺨',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckYeh => '𞺩',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckLam => '𞺫',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckMeem => '𞺬',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckNoon => '𞺭',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSeen => '𞺮',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckAin => '𞺯',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckFeh => '𞺰',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSad => '𞺱',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckQaf => '𞺲',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckReh => '𞺳',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSheen => '𞺴',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTeh => '𞺵',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTheh => '𞺶',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckKhah => '𞺷',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckThal => '𞺸',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckDad => '𞺹',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckZah => '𞺺',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckGhain => '𞺻',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalOperatorMeemWithHahWithTatweel => '𞻰',
+            ArabicMathematicalAlphabeticSymbols::ArabicMathematicalOperatorHahWithDal => '𞻱',
         }
     }
 }
@@ -733,151 +443,150 @@ impl Into<char> for ArabicMathematicalAlphabeticSymbols {
 impl std::convert::TryFrom<char> for ArabicMathematicalAlphabeticSymbols {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            ARABIC_MATHEMATICAL_ALEF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalAlef),
-            ARABIC_MATHEMATICAL_BEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalBeh),
-            ARABIC_MATHEMATICAL_JEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalJeem),
-            ARABIC_MATHEMATICAL_DAL => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDal),
-            ARABIC_MATHEMATICAL_WAW => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalWaw),
-            ARABIC_MATHEMATICAL_ZAIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalZain),
-            ARABIC_MATHEMATICAL_HAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalHah),
-            ARABIC_MATHEMATICAL_TAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTah),
-            ARABIC_MATHEMATICAL_YEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalYeh),
-            ARABIC_MATHEMATICAL_KAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalKaf),
-            ARABIC_MATHEMATICAL_LAM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLam),
-            ARABIC_MATHEMATICAL_MEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalMeem),
-            ARABIC_MATHEMATICAL_NOON => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalNoon),
-            ARABIC_MATHEMATICAL_SEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSeen),
-            ARABIC_MATHEMATICAL_AIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalAin),
-            ARABIC_MATHEMATICAL_FEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalFeh),
-            ARABIC_MATHEMATICAL_SAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSad),
-            ARABIC_MATHEMATICAL_QAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalQaf),
-            ARABIC_MATHEMATICAL_REH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalReh),
-            ARABIC_MATHEMATICAL_SHEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSheen),
-            ARABIC_MATHEMATICAL_TEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTeh),
-            ARABIC_MATHEMATICAL_THEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTheh),
-            ARABIC_MATHEMATICAL_KHAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalKhah),
-            ARABIC_MATHEMATICAL_THAL => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalThal),
-            ARABIC_MATHEMATICAL_DAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDad),
-            ARABIC_MATHEMATICAL_ZAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalZah),
-            ARABIC_MATHEMATICAL_GHAIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalGhain),
-            ARABIC_MATHEMATICAL_DOTLESS_BEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessBeh),
-            ARABIC_MATHEMATICAL_DOTLESS_NOON => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessNoon),
-            ARABIC_MATHEMATICAL_DOTLESS_FEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessFeh),
-            ARABIC_MATHEMATICAL_DOTLESS_QAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessQaf),
-            ARABIC_MATHEMATICAL_INITIAL_BEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialBeh),
-            ARABIC_MATHEMATICAL_INITIAL_JEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialJeem),
-            ARABIC_MATHEMATICAL_INITIAL_HEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialHeh),
-            ARABIC_MATHEMATICAL_INITIAL_HAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialHah),
-            ARABIC_MATHEMATICAL_INITIAL_YEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialYeh),
-            ARABIC_MATHEMATICAL_INITIAL_KAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialKaf),
-            ARABIC_MATHEMATICAL_INITIAL_LAM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialLam),
-            ARABIC_MATHEMATICAL_INITIAL_MEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialMeem),
-            ARABIC_MATHEMATICAL_INITIAL_NOON => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialNoon),
-            ARABIC_MATHEMATICAL_INITIAL_SEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSeen),
-            ARABIC_MATHEMATICAL_INITIAL_AIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialAin),
-            ARABIC_MATHEMATICAL_INITIAL_FEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialFeh),
-            ARABIC_MATHEMATICAL_INITIAL_SAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSad),
-            ARABIC_MATHEMATICAL_INITIAL_QAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialQaf),
-            ARABIC_MATHEMATICAL_INITIAL_SHEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSheen),
-            ARABIC_MATHEMATICAL_INITIAL_TEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialTeh),
-            ARABIC_MATHEMATICAL_INITIAL_THEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialTheh),
-            ARABIC_MATHEMATICAL_INITIAL_KHAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialKhah),
-            ARABIC_MATHEMATICAL_INITIAL_DAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialDad),
-            ARABIC_MATHEMATICAL_INITIAL_GHAIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialGhain),
-            ARABIC_MATHEMATICAL_TAILED_JEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedJeem),
-            ARABIC_MATHEMATICAL_TAILED_HAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedHah),
-            ARABIC_MATHEMATICAL_TAILED_YEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedYeh),
-            ARABIC_MATHEMATICAL_TAILED_LAM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedLam),
-            ARABIC_MATHEMATICAL_TAILED_NOON => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedNoon),
-            ARABIC_MATHEMATICAL_TAILED_SEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSeen),
-            ARABIC_MATHEMATICAL_TAILED_AIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedAin),
-            ARABIC_MATHEMATICAL_TAILED_SAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSad),
-            ARABIC_MATHEMATICAL_TAILED_QAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedQaf),
-            ARABIC_MATHEMATICAL_TAILED_SHEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSheen),
-            ARABIC_MATHEMATICAL_TAILED_KHAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedKhah),
-            ARABIC_MATHEMATICAL_TAILED_DAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDad),
-            ARABIC_MATHEMATICAL_TAILED_GHAIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedGhain),
-            ARABIC_MATHEMATICAL_TAILED_DOTLESS_NOON => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDotlessNoon),
-            ARABIC_MATHEMATICAL_TAILED_DOTLESS_QAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDotlessQaf),
-            ARABIC_MATHEMATICAL_STRETCHED_BEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedBeh),
-            ARABIC_MATHEMATICAL_STRETCHED_JEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedJeem),
-            ARABIC_MATHEMATICAL_STRETCHED_HEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedHeh),
-            ARABIC_MATHEMATICAL_STRETCHED_HAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedHah),
-            ARABIC_MATHEMATICAL_STRETCHED_TAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTah),
-            ARABIC_MATHEMATICAL_STRETCHED_YEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedYeh),
-            ARABIC_MATHEMATICAL_STRETCHED_KAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedKaf),
-            ARABIC_MATHEMATICAL_STRETCHED_MEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedMeem),
-            ARABIC_MATHEMATICAL_STRETCHED_NOON => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedNoon),
-            ARABIC_MATHEMATICAL_STRETCHED_SEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSeen),
-            ARABIC_MATHEMATICAL_STRETCHED_AIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedAin),
-            ARABIC_MATHEMATICAL_STRETCHED_FEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedFeh),
-            ARABIC_MATHEMATICAL_STRETCHED_SAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSad),
-            ARABIC_MATHEMATICAL_STRETCHED_QAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedQaf),
-            ARABIC_MATHEMATICAL_STRETCHED_SHEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSheen),
-            ARABIC_MATHEMATICAL_STRETCHED_TEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTeh),
-            ARABIC_MATHEMATICAL_STRETCHED_THEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTheh),
-            ARABIC_MATHEMATICAL_STRETCHED_KHAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedKhah),
-            ARABIC_MATHEMATICAL_STRETCHED_DAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDad),
-            ARABIC_MATHEMATICAL_STRETCHED_ZAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedZah),
-            ARABIC_MATHEMATICAL_STRETCHED_GHAIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedGhain),
-            ARABIC_MATHEMATICAL_STRETCHED_DOTLESS_BEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDotlessBeh),
-            ARABIC_MATHEMATICAL_STRETCHED_DOTLESS_FEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDotlessFeh),
-            ARABIC_MATHEMATICAL_LOOPED_ALEF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedAlef),
-            ARABIC_MATHEMATICAL_LOOPED_BEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedBeh),
-            ARABIC_MATHEMATICAL_LOOPED_JEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedJeem),
-            ARABIC_MATHEMATICAL_LOOPED_DAL => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedDal),
-            ARABIC_MATHEMATICAL_LOOPED_HEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedHeh),
-            ARABIC_MATHEMATICAL_LOOPED_WAW => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedWaw),
-            ARABIC_MATHEMATICAL_LOOPED_ZAIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedZain),
-            ARABIC_MATHEMATICAL_LOOPED_HAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedHah),
-            ARABIC_MATHEMATICAL_LOOPED_TAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTah),
-            ARABIC_MATHEMATICAL_LOOPED_YEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedYeh),
-            ARABIC_MATHEMATICAL_LOOPED_LAM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedLam),
-            ARABIC_MATHEMATICAL_LOOPED_MEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedMeem),
-            ARABIC_MATHEMATICAL_LOOPED_NOON => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedNoon),
-            ARABIC_MATHEMATICAL_LOOPED_SEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSeen),
-            ARABIC_MATHEMATICAL_LOOPED_AIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedAin),
-            ARABIC_MATHEMATICAL_LOOPED_FEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedFeh),
-            ARABIC_MATHEMATICAL_LOOPED_SAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSad),
-            ARABIC_MATHEMATICAL_LOOPED_QAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedQaf),
-            ARABIC_MATHEMATICAL_LOOPED_REH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedReh),
-            ARABIC_MATHEMATICAL_LOOPED_SHEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSheen),
-            ARABIC_MATHEMATICAL_LOOPED_TEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTeh),
-            ARABIC_MATHEMATICAL_LOOPED_THEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTheh),
-            ARABIC_MATHEMATICAL_LOOPED_KHAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedKhah),
-            ARABIC_MATHEMATICAL_LOOPED_THAL => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedThal),
-            ARABIC_MATHEMATICAL_LOOPED_DAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedDad),
-            ARABIC_MATHEMATICAL_LOOPED_ZAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedZah),
-            ARABIC_MATHEMATICAL_LOOPED_GHAIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedGhain),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_BEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckBeh),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_JEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckJeem),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_DAL => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckDal),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_WAW => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckWaw),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_ZAIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckZain),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_HAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckHah),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_TAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTah),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_YEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckYeh),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_LAM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckLam),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_MEEM => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckMeem),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_NOON => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckNoon),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_SEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSeen),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_AIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckAin),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_FEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckFeh),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_SAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSad),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_QAF => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckQaf),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_REH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckReh),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_SHEEN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSheen),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_TEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTeh),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_THEH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTheh),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_KHAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckKhah),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_THAL => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckThal),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_DAD => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckDad),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_ZAH => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckZah),
-            ARABIC_MATHEMATICAL_DOUBLE_DASH_STRUCK_GHAIN => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckGhain),
-            ARABIC_MATHEMATICAL_OPERATOR_MEEM_WITH_HAH_WITH_TATWEEL => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalOperatorMeemWithHahWithTatweel),
-            ARABIC_MATHEMATICAL_OPERATOR_HAH_WITH_DAL => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalOperatorHahWithDal),
+            '𞸀' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalAlef),
+            '𞸁' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalBeh),
+            '𞸂' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalJeem),
+            '𞸃' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDal),
+            '𞸅' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalWaw),
+            '𞸆' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalZain),
+            '𞸇' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalHah),
+            '𞸈' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTah),
+            '𞸉' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalYeh),
+            '𞸊' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalKaf),
+            '𞸋' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLam),
+            '𞸌' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalMeem),
+            '𞸍' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalNoon),
+            '𞸎' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSeen),
+            '𞸏' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalAin),
+            '𞸐' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalFeh),
+            '𞸑' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSad),
+            '𞸒' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalQaf),
+            '𞸓' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalReh),
+            '𞸔' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalSheen),
+            '𞸕' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTeh),
+            '𞸖' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTheh),
+            '𞸗' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalKhah),
+            '𞸘' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalThal),
+            '𞸙' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDad),
+            '𞸚' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalZah),
+            '𞸛' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalGhain),
+            '𞸜' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessBeh),
+            '𞸝' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessNoon),
+            '𞸞' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessFeh),
+            '𞸟' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDotlessQaf),
+            '𞸡' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialBeh),
+            '𞸢' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialJeem),
+            '𞸤' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialHeh),
+            '𞸧' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialHah),
+            '𞸩' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialYeh),
+            '𞸪' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialKaf),
+            '𞸫' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialLam),
+            '𞸬' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialMeem),
+            '𞸭' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialNoon),
+            '𞸮' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSeen),
+            '𞸯' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialAin),
+            '𞸰' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialFeh),
+            '𞸱' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSad),
+            '𞸲' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialQaf),
+            '𞸴' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialSheen),
+            '𞸵' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialTeh),
+            '𞸶' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialTheh),
+            '𞸷' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialKhah),
+            '𞸹' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialDad),
+            '𞸻' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalInitialGhain),
+            '𞹂' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedJeem),
+            '𞹇' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedHah),
+            '𞹉' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedYeh),
+            '𞹋' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedLam),
+            '𞹍' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedNoon),
+            '𞹎' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSeen),
+            '𞹏' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedAin),
+            '𞹑' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSad),
+            '𞹒' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedQaf),
+            '𞹔' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedSheen),
+            '𞹗' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedKhah),
+            '𞹙' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDad),
+            '𞹛' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedGhain),
+            '𞹝' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDotlessNoon),
+            '𞹟' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalTailedDotlessQaf),
+            '𞹡' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedBeh),
+            '𞹢' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedJeem),
+            '𞹤' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedHeh),
+            '𞹧' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedHah),
+            '𞹨' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTah),
+            '𞹩' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedYeh),
+            '𞹪' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedKaf),
+            '𞹬' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedMeem),
+            '𞹭' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedNoon),
+            '𞹮' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSeen),
+            '𞹯' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedAin),
+            '𞹰' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedFeh),
+            '𞹱' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSad),
+            '𞹲' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedQaf),
+            '𞹴' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedSheen),
+            '𞹵' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTeh),
+            '𞹶' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedTheh),
+            '𞹷' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedKhah),
+            '𞹹' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDad),
+            '𞹺' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedZah),
+            '𞹻' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedGhain),
+            '𞹼' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDotlessBeh),
+            '𞹾' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalStretchedDotlessFeh),
+            '𞺀' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedAlef),
+            '𞺁' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedBeh),
+            '𞺂' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedJeem),
+            '𞺃' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedDal),
+            '𞺄' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedHeh),
+            '𞺅' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedWaw),
+            '𞺆' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedZain),
+            '𞺇' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedHah),
+            '𞺈' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTah),
+            '𞺉' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedYeh),
+            '𞺋' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedLam),
+            '𞺌' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedMeem),
+            '𞺍' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedNoon),
+            '𞺎' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSeen),
+            '𞺏' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedAin),
+            '𞺐' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedFeh),
+            '𞺑' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSad),
+            '𞺒' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedQaf),
+            '𞺓' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedReh),
+            '𞺔' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedSheen),
+            '𞺕' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTeh),
+            '𞺖' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedTheh),
+            '𞺗' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedKhah),
+            '𞺘' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedThal),
+            '𞺙' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedDad),
+            '𞺚' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedZah),
+            '𞺛' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalLoopedGhain),
+            '𞺡' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckBeh),
+            '𞺢' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckJeem),
+            '𞺣' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckDal),
+            '𞺥' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckWaw),
+            '𞺦' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckZain),
+            '𞺧' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckHah),
+            '𞺨' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTah),
+            '𞺩' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckYeh),
+            '𞺫' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckLam),
+            '𞺬' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckMeem),
+            '𞺭' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckNoon),
+            '𞺮' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSeen),
+            '𞺯' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckAin),
+            '𞺰' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckFeh),
+            '𞺱' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSad),
+            '𞺲' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckQaf),
+            '𞺳' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckReh),
+            '𞺴' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckSheen),
+            '𞺵' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTeh),
+            '𞺶' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckTheh),
+            '𞺷' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckKhah),
+            '𞺸' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckThal),
+            '𞺹' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckDad),
+            '𞺺' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckZah),
+            '𞺻' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalDoubleDashStruckGhain),
+            '𞻰' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalOperatorMeemWithHahWithTatweel),
+            '𞻱' => Ok(ArabicMathematicalAlphabeticSymbols::ArabicMathematicalOperatorHahWithDal),
             _ => Err(()),
         }
     }

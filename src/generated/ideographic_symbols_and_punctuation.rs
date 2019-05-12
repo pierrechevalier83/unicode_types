@@ -1,14 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{16fe0}: '𖿠'
-    pub const TANGUT_ITERATION_MARK: char = '𖿠';
-    /// \u{16fe1}: '𖿡'
-    pub const NUSHU_ITERATION_MARK: char = '𖿡';
-    /// \u{16fe2}: '𖿢'
-    pub const OLD_CHINESE_HOOK_MARK: char = '𖿢';
-    /// \u{16fe3}: '𖿣'
-    pub const OLD_CHINESE_ITERATION_MARK: char = '𖿣';
-}
 
 /// An enum to represent all characters in the IdeographicSymbolsandPunctuation block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -25,12 +14,11 @@ pub enum IdeographicSymbolsandPunctuation {
 
 impl Into<char> for IdeographicSymbolsandPunctuation {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            IdeographicSymbolsandPunctuation::TangutIterationMark => TANGUT_ITERATION_MARK,
-            IdeographicSymbolsandPunctuation::NushuIterationMark => NUSHU_ITERATION_MARK,
-            IdeographicSymbolsandPunctuation::OldChineseHookMark => OLD_CHINESE_HOOK_MARK,
-            IdeographicSymbolsandPunctuation::OldChineseIterationMark => OLD_CHINESE_ITERATION_MARK,
+            IdeographicSymbolsandPunctuation::TangutIterationMark => '𖿠',
+            IdeographicSymbolsandPunctuation::NushuIterationMark => '𖿡',
+            IdeographicSymbolsandPunctuation::OldChineseHookMark => '𖿢',
+            IdeographicSymbolsandPunctuation::OldChineseIterationMark => '𖿣',
         }
     }
 }
@@ -38,12 +26,11 @@ impl Into<char> for IdeographicSymbolsandPunctuation {
 impl std::convert::TryFrom<char> for IdeographicSymbolsandPunctuation {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            TANGUT_ITERATION_MARK => Ok(IdeographicSymbolsandPunctuation::TangutIterationMark),
-            NUSHU_ITERATION_MARK => Ok(IdeographicSymbolsandPunctuation::NushuIterationMark),
-            OLD_CHINESE_HOOK_MARK => Ok(IdeographicSymbolsandPunctuation::OldChineseHookMark),
-            OLD_CHINESE_ITERATION_MARK => Ok(IdeographicSymbolsandPunctuation::OldChineseIterationMark),
+            '𖿠' => Ok(IdeographicSymbolsandPunctuation::TangutIterationMark),
+            '𖿡' => Ok(IdeographicSymbolsandPunctuation::NushuIterationMark),
+            '𖿢' => Ok(IdeographicSymbolsandPunctuation::OldChineseHookMark),
+            '𖿣' => Ok(IdeographicSymbolsandPunctuation::OldChineseIterationMark),
             _ => Err(()),
         }
     }

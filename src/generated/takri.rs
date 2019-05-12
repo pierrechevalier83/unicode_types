@@ -1,140 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11680}: '𑚀'
-    pub const LETTER_A: char = '𑚀';
-    /// \u{11681}: '𑚁'
-    pub const LETTER_AA: char = '𑚁';
-    /// \u{11682}: '𑚂'
-    pub const LETTER_I: char = '𑚂';
-    /// \u{11683}: '𑚃'
-    pub const LETTER_II: char = '𑚃';
-    /// \u{11684}: '𑚄'
-    pub const LETTER_U: char = '𑚄';
-    /// \u{11685}: '𑚅'
-    pub const LETTER_UU: char = '𑚅';
-    /// \u{11686}: '𑚆'
-    pub const LETTER_E: char = '𑚆';
-    /// \u{11687}: '𑚇'
-    pub const LETTER_AI: char = '𑚇';
-    /// \u{11688}: '𑚈'
-    pub const LETTER_O: char = '𑚈';
-    /// \u{11689}: '𑚉'
-    pub const LETTER_AU: char = '𑚉';
-    /// \u{1168a}: '𑚊'
-    pub const LETTER_KA: char = '𑚊';
-    /// \u{1168b}: '𑚋'
-    pub const LETTER_KHA: char = '𑚋';
-    /// \u{1168c}: '𑚌'
-    pub const LETTER_GA: char = '𑚌';
-    /// \u{1168d}: '𑚍'
-    pub const LETTER_GHA: char = '𑚍';
-    /// \u{1168e}: '𑚎'
-    pub const LETTER_NGA: char = '𑚎';
-    /// \u{1168f}: '𑚏'
-    pub const LETTER_CA: char = '𑚏';
-    /// \u{11690}: '𑚐'
-    pub const LETTER_CHA: char = '𑚐';
-    /// \u{11691}: '𑚑'
-    pub const LETTER_JA: char = '𑚑';
-    /// \u{11692}: '𑚒'
-    pub const LETTER_JHA: char = '𑚒';
-    /// \u{11693}: '𑚓'
-    pub const LETTER_NYA: char = '𑚓';
-    /// \u{11694}: '𑚔'
-    pub const LETTER_TTA: char = '𑚔';
-    /// \u{11695}: '𑚕'
-    pub const LETTER_TTHA: char = '𑚕';
-    /// \u{11696}: '𑚖'
-    pub const LETTER_DDA: char = '𑚖';
-    /// \u{11697}: '𑚗'
-    pub const LETTER_DDHA: char = '𑚗';
-    /// \u{11698}: '𑚘'
-    pub const LETTER_NNA: char = '𑚘';
-    /// \u{11699}: '𑚙'
-    pub const LETTER_TA: char = '𑚙';
-    /// \u{1169a}: '𑚚'
-    pub const LETTER_THA: char = '𑚚';
-    /// \u{1169b}: '𑚛'
-    pub const LETTER_DA: char = '𑚛';
-    /// \u{1169c}: '𑚜'
-    pub const LETTER_DHA: char = '𑚜';
-    /// \u{1169d}: '𑚝'
-    pub const LETTER_NA: char = '𑚝';
-    /// \u{1169e}: '𑚞'
-    pub const LETTER_PA: char = '𑚞';
-    /// \u{1169f}: '𑚟'
-    pub const LETTER_PHA: char = '𑚟';
-    /// \u{116a0}: '𑚠'
-    pub const LETTER_BA: char = '𑚠';
-    /// \u{116a1}: '𑚡'
-    pub const LETTER_BHA: char = '𑚡';
-    /// \u{116a2}: '𑚢'
-    pub const LETTER_MA: char = '𑚢';
-    /// \u{116a3}: '𑚣'
-    pub const LETTER_YA: char = '𑚣';
-    /// \u{116a4}: '𑚤'
-    pub const LETTER_RA: char = '𑚤';
-    /// \u{116a5}: '𑚥'
-    pub const LETTER_LA: char = '𑚥';
-    /// \u{116a6}: '𑚦'
-    pub const LETTER_VA: char = '𑚦';
-    /// \u{116a7}: '𑚧'
-    pub const LETTER_SHA: char = '𑚧';
-    /// \u{116a8}: '𑚨'
-    pub const LETTER_SA: char = '𑚨';
-    /// \u{116a9}: '𑚩'
-    pub const LETTER_HA: char = '𑚩';
-    /// \u{116aa}: '𑚪'
-    pub const LETTER_RRA: char = '𑚪';
-    /// \u{116ab}: '𑚫'
-    pub const SIGN_ANUSVARA: char = '𑚫';
-    /// \u{116ac}: '𑚬'
-    pub const SIGN_VISARGA: char = '𑚬';
-    /// \u{116ad}: '𑚭'
-    pub const VOWEL_SIGN_AA: char = '𑚭';
-    /// \u{116ae}: '𑚮'
-    pub const VOWEL_SIGN_I: char = '𑚮';
-    /// \u{116af}: '𑚯'
-    pub const VOWEL_SIGN_II: char = '𑚯';
-    /// \u{116b0}: '𑚰'
-    pub const VOWEL_SIGN_U: char = '𑚰';
-    /// \u{116b1}: '𑚱'
-    pub const VOWEL_SIGN_UU: char = '𑚱';
-    /// \u{116b2}: '𑚲'
-    pub const VOWEL_SIGN_E: char = '𑚲';
-    /// \u{116b3}: '𑚳'
-    pub const VOWEL_SIGN_AI: char = '𑚳';
-    /// \u{116b4}: '𑚴'
-    pub const VOWEL_SIGN_O: char = '𑚴';
-    /// \u{116b5}: '𑚵'
-    pub const VOWEL_SIGN_AU: char = '𑚵';
-    /// \u{116b6}: '𑚶'
-    pub const SIGN_VIRAMA: char = '𑚶';
-    /// \u{116b7}: '𑚷'
-    pub const SIGN_NUKTA: char = '𑚷';
-    /// \u{116b8}: '𑚸'
-    pub const LETTER_ARCHAIC_KHA: char = '𑚸';
-    /// \u{116c0}: '𑛀'
-    pub const DIGIT_ZERO: char = '𑛀';
-    /// \u{116c1}: '𑛁'
-    pub const DIGIT_ONE: char = '𑛁';
-    /// \u{116c2}: '𑛂'
-    pub const DIGIT_TWO: char = '𑛂';
-    /// \u{116c3}: '𑛃'
-    pub const DIGIT_THREE: char = '𑛃';
-    /// \u{116c4}: '𑛄'
-    pub const DIGIT_FOUR: char = '𑛄';
-    /// \u{116c5}: '𑛅'
-    pub const DIGIT_FIVE: char = '𑛅';
-    /// \u{116c6}: '𑛆'
-    pub const DIGIT_SIX: char = '𑛆';
-    /// \u{116c7}: '𑛇'
-    pub const DIGIT_SEVEN: char = '𑛇';
-    /// \u{116c8}: '𑛈'
-    pub const DIGIT_EIGHT: char = '𑛈';
-    /// \u{116c9}: '𑛉'
-    pub const DIGIT_NINE: char = '𑛉';
-}
 
 /// An enum to represent all characters in the Takri block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -277,75 +140,74 @@ pub enum Takri {
 
 impl Into<char> for Takri {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Takri::LetterA => LETTER_A,
-            Takri::LetterAa => LETTER_AA,
-            Takri::LetterI => LETTER_I,
-            Takri::LetterIi => LETTER_II,
-            Takri::LetterU => LETTER_U,
-            Takri::LetterUu => LETTER_UU,
-            Takri::LetterE => LETTER_E,
-            Takri::LetterAi => LETTER_AI,
-            Takri::LetterO => LETTER_O,
-            Takri::LetterAu => LETTER_AU,
-            Takri::LetterKa => LETTER_KA,
-            Takri::LetterKha => LETTER_KHA,
-            Takri::LetterGa => LETTER_GA,
-            Takri::LetterGha => LETTER_GHA,
-            Takri::LetterNga => LETTER_NGA,
-            Takri::LetterCa => LETTER_CA,
-            Takri::LetterCha => LETTER_CHA,
-            Takri::LetterJa => LETTER_JA,
-            Takri::LetterJha => LETTER_JHA,
-            Takri::LetterNya => LETTER_NYA,
-            Takri::LetterTta => LETTER_TTA,
-            Takri::LetterTtha => LETTER_TTHA,
-            Takri::LetterDda => LETTER_DDA,
-            Takri::LetterDdha => LETTER_DDHA,
-            Takri::LetterNna => LETTER_NNA,
-            Takri::LetterTa => LETTER_TA,
-            Takri::LetterTha => LETTER_THA,
-            Takri::LetterDa => LETTER_DA,
-            Takri::LetterDha => LETTER_DHA,
-            Takri::LetterNa => LETTER_NA,
-            Takri::LetterPa => LETTER_PA,
-            Takri::LetterPha => LETTER_PHA,
-            Takri::LetterBa => LETTER_BA,
-            Takri::LetterBha => LETTER_BHA,
-            Takri::LetterMa => LETTER_MA,
-            Takri::LetterYa => LETTER_YA,
-            Takri::LetterRa => LETTER_RA,
-            Takri::LetterLa => LETTER_LA,
-            Takri::LetterVa => LETTER_VA,
-            Takri::LetterSha => LETTER_SHA,
-            Takri::LetterSa => LETTER_SA,
-            Takri::LetterHa => LETTER_HA,
-            Takri::LetterRra => LETTER_RRA,
-            Takri::SignAnusvara => SIGN_ANUSVARA,
-            Takri::SignVisarga => SIGN_VISARGA,
-            Takri::VowelSignAa => VOWEL_SIGN_AA,
-            Takri::VowelSignI => VOWEL_SIGN_I,
-            Takri::VowelSignIi => VOWEL_SIGN_II,
-            Takri::VowelSignU => VOWEL_SIGN_U,
-            Takri::VowelSignUu => VOWEL_SIGN_UU,
-            Takri::VowelSignE => VOWEL_SIGN_E,
-            Takri::VowelSignAi => VOWEL_SIGN_AI,
-            Takri::VowelSignO => VOWEL_SIGN_O,
-            Takri::VowelSignAu => VOWEL_SIGN_AU,
-            Takri::SignVirama => SIGN_VIRAMA,
-            Takri::SignNukta => SIGN_NUKTA,
-            Takri::LetterArchaicKha => LETTER_ARCHAIC_KHA,
-            Takri::DigitZero => DIGIT_ZERO,
-            Takri::DigitOne => DIGIT_ONE,
-            Takri::DigitTwo => DIGIT_TWO,
-            Takri::DigitThree => DIGIT_THREE,
-            Takri::DigitFour => DIGIT_FOUR,
-            Takri::DigitFive => DIGIT_FIVE,
-            Takri::DigitSix => DIGIT_SIX,
-            Takri::DigitSeven => DIGIT_SEVEN,
-            Takri::DigitEight => DIGIT_EIGHT,
-            Takri::DigitNine => DIGIT_NINE,
+            Takri::LetterA => '𑚀',
+            Takri::LetterAa => '𑚁',
+            Takri::LetterI => '𑚂',
+            Takri::LetterIi => '𑚃',
+            Takri::LetterU => '𑚄',
+            Takri::LetterUu => '𑚅',
+            Takri::LetterE => '𑚆',
+            Takri::LetterAi => '𑚇',
+            Takri::LetterO => '𑚈',
+            Takri::LetterAu => '𑚉',
+            Takri::LetterKa => '𑚊',
+            Takri::LetterKha => '𑚋',
+            Takri::LetterGa => '𑚌',
+            Takri::LetterGha => '𑚍',
+            Takri::LetterNga => '𑚎',
+            Takri::LetterCa => '𑚏',
+            Takri::LetterCha => '𑚐',
+            Takri::LetterJa => '𑚑',
+            Takri::LetterJha => '𑚒',
+            Takri::LetterNya => '𑚓',
+            Takri::LetterTta => '𑚔',
+            Takri::LetterTtha => '𑚕',
+            Takri::LetterDda => '𑚖',
+            Takri::LetterDdha => '𑚗',
+            Takri::LetterNna => '𑚘',
+            Takri::LetterTa => '𑚙',
+            Takri::LetterTha => '𑚚',
+            Takri::LetterDa => '𑚛',
+            Takri::LetterDha => '𑚜',
+            Takri::LetterNa => '𑚝',
+            Takri::LetterPa => '𑚞',
+            Takri::LetterPha => '𑚟',
+            Takri::LetterBa => '𑚠',
+            Takri::LetterBha => '𑚡',
+            Takri::LetterMa => '𑚢',
+            Takri::LetterYa => '𑚣',
+            Takri::LetterRa => '𑚤',
+            Takri::LetterLa => '𑚥',
+            Takri::LetterVa => '𑚦',
+            Takri::LetterSha => '𑚧',
+            Takri::LetterSa => '𑚨',
+            Takri::LetterHa => '𑚩',
+            Takri::LetterRra => '𑚪',
+            Takri::SignAnusvara => '𑚫',
+            Takri::SignVisarga => '𑚬',
+            Takri::VowelSignAa => '𑚭',
+            Takri::VowelSignI => '𑚮',
+            Takri::VowelSignIi => '𑚯',
+            Takri::VowelSignU => '𑚰',
+            Takri::VowelSignUu => '𑚱',
+            Takri::VowelSignE => '𑚲',
+            Takri::VowelSignAi => '𑚳',
+            Takri::VowelSignO => '𑚴',
+            Takri::VowelSignAu => '𑚵',
+            Takri::SignVirama => '𑚶',
+            Takri::SignNukta => '𑚷',
+            Takri::LetterArchaicKha => '𑚸',
+            Takri::DigitZero => '𑛀',
+            Takri::DigitOne => '𑛁',
+            Takri::DigitTwo => '𑛂',
+            Takri::DigitThree => '𑛃',
+            Takri::DigitFour => '𑛄',
+            Takri::DigitFive => '𑛅',
+            Takri::DigitSix => '𑛆',
+            Takri::DigitSeven => '𑛇',
+            Takri::DigitEight => '𑛈',
+            Takri::DigitNine => '𑛉',
         }
     }
 }
@@ -353,75 +215,74 @@ impl Into<char> for Takri {
 impl std::convert::TryFrom<char> for Takri {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Takri::LetterA),
-            LETTER_AA => Ok(Takri::LetterAa),
-            LETTER_I => Ok(Takri::LetterI),
-            LETTER_II => Ok(Takri::LetterIi),
-            LETTER_U => Ok(Takri::LetterU),
-            LETTER_UU => Ok(Takri::LetterUu),
-            LETTER_E => Ok(Takri::LetterE),
-            LETTER_AI => Ok(Takri::LetterAi),
-            LETTER_O => Ok(Takri::LetterO),
-            LETTER_AU => Ok(Takri::LetterAu),
-            LETTER_KA => Ok(Takri::LetterKa),
-            LETTER_KHA => Ok(Takri::LetterKha),
-            LETTER_GA => Ok(Takri::LetterGa),
-            LETTER_GHA => Ok(Takri::LetterGha),
-            LETTER_NGA => Ok(Takri::LetterNga),
-            LETTER_CA => Ok(Takri::LetterCa),
-            LETTER_CHA => Ok(Takri::LetterCha),
-            LETTER_JA => Ok(Takri::LetterJa),
-            LETTER_JHA => Ok(Takri::LetterJha),
-            LETTER_NYA => Ok(Takri::LetterNya),
-            LETTER_TTA => Ok(Takri::LetterTta),
-            LETTER_TTHA => Ok(Takri::LetterTtha),
-            LETTER_DDA => Ok(Takri::LetterDda),
-            LETTER_DDHA => Ok(Takri::LetterDdha),
-            LETTER_NNA => Ok(Takri::LetterNna),
-            LETTER_TA => Ok(Takri::LetterTa),
-            LETTER_THA => Ok(Takri::LetterTha),
-            LETTER_DA => Ok(Takri::LetterDa),
-            LETTER_DHA => Ok(Takri::LetterDha),
-            LETTER_NA => Ok(Takri::LetterNa),
-            LETTER_PA => Ok(Takri::LetterPa),
-            LETTER_PHA => Ok(Takri::LetterPha),
-            LETTER_BA => Ok(Takri::LetterBa),
-            LETTER_BHA => Ok(Takri::LetterBha),
-            LETTER_MA => Ok(Takri::LetterMa),
-            LETTER_YA => Ok(Takri::LetterYa),
-            LETTER_RA => Ok(Takri::LetterRa),
-            LETTER_LA => Ok(Takri::LetterLa),
-            LETTER_VA => Ok(Takri::LetterVa),
-            LETTER_SHA => Ok(Takri::LetterSha),
-            LETTER_SA => Ok(Takri::LetterSa),
-            LETTER_HA => Ok(Takri::LetterHa),
-            LETTER_RRA => Ok(Takri::LetterRra),
-            SIGN_ANUSVARA => Ok(Takri::SignAnusvara),
-            SIGN_VISARGA => Ok(Takri::SignVisarga),
-            VOWEL_SIGN_AA => Ok(Takri::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Takri::VowelSignI),
-            VOWEL_SIGN_II => Ok(Takri::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Takri::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Takri::VowelSignUu),
-            VOWEL_SIGN_E => Ok(Takri::VowelSignE),
-            VOWEL_SIGN_AI => Ok(Takri::VowelSignAi),
-            VOWEL_SIGN_O => Ok(Takri::VowelSignO),
-            VOWEL_SIGN_AU => Ok(Takri::VowelSignAu),
-            SIGN_VIRAMA => Ok(Takri::SignVirama),
-            SIGN_NUKTA => Ok(Takri::SignNukta),
-            LETTER_ARCHAIC_KHA => Ok(Takri::LetterArchaicKha),
-            DIGIT_ZERO => Ok(Takri::DigitZero),
-            DIGIT_ONE => Ok(Takri::DigitOne),
-            DIGIT_TWO => Ok(Takri::DigitTwo),
-            DIGIT_THREE => Ok(Takri::DigitThree),
-            DIGIT_FOUR => Ok(Takri::DigitFour),
-            DIGIT_FIVE => Ok(Takri::DigitFive),
-            DIGIT_SIX => Ok(Takri::DigitSix),
-            DIGIT_SEVEN => Ok(Takri::DigitSeven),
-            DIGIT_EIGHT => Ok(Takri::DigitEight),
-            DIGIT_NINE => Ok(Takri::DigitNine),
+            '𑚀' => Ok(Takri::LetterA),
+            '𑚁' => Ok(Takri::LetterAa),
+            '𑚂' => Ok(Takri::LetterI),
+            '𑚃' => Ok(Takri::LetterIi),
+            '𑚄' => Ok(Takri::LetterU),
+            '𑚅' => Ok(Takri::LetterUu),
+            '𑚆' => Ok(Takri::LetterE),
+            '𑚇' => Ok(Takri::LetterAi),
+            '𑚈' => Ok(Takri::LetterO),
+            '𑚉' => Ok(Takri::LetterAu),
+            '𑚊' => Ok(Takri::LetterKa),
+            '𑚋' => Ok(Takri::LetterKha),
+            '𑚌' => Ok(Takri::LetterGa),
+            '𑚍' => Ok(Takri::LetterGha),
+            '𑚎' => Ok(Takri::LetterNga),
+            '𑚏' => Ok(Takri::LetterCa),
+            '𑚐' => Ok(Takri::LetterCha),
+            '𑚑' => Ok(Takri::LetterJa),
+            '𑚒' => Ok(Takri::LetterJha),
+            '𑚓' => Ok(Takri::LetterNya),
+            '𑚔' => Ok(Takri::LetterTta),
+            '𑚕' => Ok(Takri::LetterTtha),
+            '𑚖' => Ok(Takri::LetterDda),
+            '𑚗' => Ok(Takri::LetterDdha),
+            '𑚘' => Ok(Takri::LetterNna),
+            '𑚙' => Ok(Takri::LetterTa),
+            '𑚚' => Ok(Takri::LetterTha),
+            '𑚛' => Ok(Takri::LetterDa),
+            '𑚜' => Ok(Takri::LetterDha),
+            '𑚝' => Ok(Takri::LetterNa),
+            '𑚞' => Ok(Takri::LetterPa),
+            '𑚟' => Ok(Takri::LetterPha),
+            '𑚠' => Ok(Takri::LetterBa),
+            '𑚡' => Ok(Takri::LetterBha),
+            '𑚢' => Ok(Takri::LetterMa),
+            '𑚣' => Ok(Takri::LetterYa),
+            '𑚤' => Ok(Takri::LetterRa),
+            '𑚥' => Ok(Takri::LetterLa),
+            '𑚦' => Ok(Takri::LetterVa),
+            '𑚧' => Ok(Takri::LetterSha),
+            '𑚨' => Ok(Takri::LetterSa),
+            '𑚩' => Ok(Takri::LetterHa),
+            '𑚪' => Ok(Takri::LetterRra),
+            '𑚫' => Ok(Takri::SignAnusvara),
+            '𑚬' => Ok(Takri::SignVisarga),
+            '𑚭' => Ok(Takri::VowelSignAa),
+            '𑚮' => Ok(Takri::VowelSignI),
+            '𑚯' => Ok(Takri::VowelSignIi),
+            '𑚰' => Ok(Takri::VowelSignU),
+            '𑚱' => Ok(Takri::VowelSignUu),
+            '𑚲' => Ok(Takri::VowelSignE),
+            '𑚳' => Ok(Takri::VowelSignAi),
+            '𑚴' => Ok(Takri::VowelSignO),
+            '𑚵' => Ok(Takri::VowelSignAu),
+            '𑚶' => Ok(Takri::SignVirama),
+            '𑚷' => Ok(Takri::SignNukta),
+            '𑚸' => Ok(Takri::LetterArchaicKha),
+            '𑛀' => Ok(Takri::DigitZero),
+            '𑛁' => Ok(Takri::DigitOne),
+            '𑛂' => Ok(Takri::DigitTwo),
+            '𑛃' => Ok(Takri::DigitThree),
+            '𑛄' => Ok(Takri::DigitFour),
+            '𑛅' => Ok(Takri::DigitFive),
+            '𑛆' => Ok(Takri::DigitSix),
+            '𑛇' => Ok(Takri::DigitSeven),
+            '𑛈' => Ok(Takri::DigitEight),
+            '𑛉' => Ok(Takri::DigitNine),
             _ => Err(()),
         }
     }

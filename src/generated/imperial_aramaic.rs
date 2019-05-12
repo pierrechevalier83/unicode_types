@@ -1,66 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10840}: '𐡀'
-    pub const LETTER_ALEPH: char = '𐡀';
-    /// \u{10841}: '𐡁'
-    pub const LETTER_BETH: char = '𐡁';
-    /// \u{10842}: '𐡂'
-    pub const LETTER_GIMEL: char = '𐡂';
-    /// \u{10843}: '𐡃'
-    pub const LETTER_DALETH: char = '𐡃';
-    /// \u{10844}: '𐡄'
-    pub const LETTER_HE: char = '𐡄';
-    /// \u{10845}: '𐡅'
-    pub const LETTER_WAW: char = '𐡅';
-    /// \u{10846}: '𐡆'
-    pub const LETTER_ZAYIN: char = '𐡆';
-    /// \u{10847}: '𐡇'
-    pub const LETTER_HETH: char = '𐡇';
-    /// \u{10848}: '𐡈'
-    pub const LETTER_TETH: char = '𐡈';
-    /// \u{10849}: '𐡉'
-    pub const LETTER_YODH: char = '𐡉';
-    /// \u{1084a}: '𐡊'
-    pub const LETTER_KAPH: char = '𐡊';
-    /// \u{1084b}: '𐡋'
-    pub const LETTER_LAMEDH: char = '𐡋';
-    /// \u{1084c}: '𐡌'
-    pub const LETTER_MEM: char = '𐡌';
-    /// \u{1084d}: '𐡍'
-    pub const LETTER_NUN: char = '𐡍';
-    /// \u{1084e}: '𐡎'
-    pub const LETTER_SAMEKH: char = '𐡎';
-    /// \u{1084f}: '𐡏'
-    pub const LETTER_AYIN: char = '𐡏';
-    /// \u{10850}: '𐡐'
-    pub const LETTER_PE: char = '𐡐';
-    /// \u{10851}: '𐡑'
-    pub const LETTER_SADHE: char = '𐡑';
-    /// \u{10852}: '𐡒'
-    pub const LETTER_QOPH: char = '𐡒';
-    /// \u{10853}: '𐡓'
-    pub const LETTER_RESH: char = '𐡓';
-    /// \u{10854}: '𐡔'
-    pub const LETTER_SHIN: char = '𐡔';
-    /// \u{10855}: '𐡕'
-    pub const LETTER_TAW: char = '𐡕';
-    /// \u{10857}: '𐡗'
-    pub const SECTION_SIGN: char = '𐡗';
-    /// \u{10858}: '𐡘'
-    pub const NUMBER_ONE: char = '𐡘';
-    /// \u{10859}: '𐡙'
-    pub const NUMBER_TWO: char = '𐡙';
-    /// \u{1085a}: '𐡚'
-    pub const NUMBER_THREE: char = '𐡚';
-    /// \u{1085b}: '𐡛'
-    pub const NUMBER_TEN: char = '𐡛';
-    /// \u{1085c}: '𐡜'
-    pub const NUMBER_TWENTY: char = '𐡜';
-    /// \u{1085d}: '𐡝'
-    pub const NUMBER_ONE_HUNDRED: char = '𐡝';
-    /// \u{1085e}: '𐡞'
-    pub const NUMBER_ONE_THOUSAND: char = '𐡞';
-}
 
 /// An enum to represent all characters in the ImperialAramaic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -129,38 +66,37 @@ pub enum ImperialAramaic {
 
 impl Into<char> for ImperialAramaic {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            ImperialAramaic::LetterAleph => LETTER_ALEPH,
-            ImperialAramaic::LetterBeth => LETTER_BETH,
-            ImperialAramaic::LetterGimel => LETTER_GIMEL,
-            ImperialAramaic::LetterDaleth => LETTER_DALETH,
-            ImperialAramaic::LetterHe => LETTER_HE,
-            ImperialAramaic::LetterWaw => LETTER_WAW,
-            ImperialAramaic::LetterZayin => LETTER_ZAYIN,
-            ImperialAramaic::LetterHeth => LETTER_HETH,
-            ImperialAramaic::LetterTeth => LETTER_TETH,
-            ImperialAramaic::LetterYodh => LETTER_YODH,
-            ImperialAramaic::LetterKaph => LETTER_KAPH,
-            ImperialAramaic::LetterLamedh => LETTER_LAMEDH,
-            ImperialAramaic::LetterMem => LETTER_MEM,
-            ImperialAramaic::LetterNun => LETTER_NUN,
-            ImperialAramaic::LetterSamekh => LETTER_SAMEKH,
-            ImperialAramaic::LetterAyin => LETTER_AYIN,
-            ImperialAramaic::LetterPe => LETTER_PE,
-            ImperialAramaic::LetterSadhe => LETTER_SADHE,
-            ImperialAramaic::LetterQoph => LETTER_QOPH,
-            ImperialAramaic::LetterResh => LETTER_RESH,
-            ImperialAramaic::LetterShin => LETTER_SHIN,
-            ImperialAramaic::LetterTaw => LETTER_TAW,
-            ImperialAramaic::SectionSign => SECTION_SIGN,
-            ImperialAramaic::NumberOne => NUMBER_ONE,
-            ImperialAramaic::NumberTwo => NUMBER_TWO,
-            ImperialAramaic::NumberThree => NUMBER_THREE,
-            ImperialAramaic::NumberTen => NUMBER_TEN,
-            ImperialAramaic::NumberTwenty => NUMBER_TWENTY,
-            ImperialAramaic::NumberOneHundred => NUMBER_ONE_HUNDRED,
-            ImperialAramaic::NumberOneThousand => NUMBER_ONE_THOUSAND,
+            ImperialAramaic::LetterAleph => '𐡀',
+            ImperialAramaic::LetterBeth => '𐡁',
+            ImperialAramaic::LetterGimel => '𐡂',
+            ImperialAramaic::LetterDaleth => '𐡃',
+            ImperialAramaic::LetterHe => '𐡄',
+            ImperialAramaic::LetterWaw => '𐡅',
+            ImperialAramaic::LetterZayin => '𐡆',
+            ImperialAramaic::LetterHeth => '𐡇',
+            ImperialAramaic::LetterTeth => '𐡈',
+            ImperialAramaic::LetterYodh => '𐡉',
+            ImperialAramaic::LetterKaph => '𐡊',
+            ImperialAramaic::LetterLamedh => '𐡋',
+            ImperialAramaic::LetterMem => '𐡌',
+            ImperialAramaic::LetterNun => '𐡍',
+            ImperialAramaic::LetterSamekh => '𐡎',
+            ImperialAramaic::LetterAyin => '𐡏',
+            ImperialAramaic::LetterPe => '𐡐',
+            ImperialAramaic::LetterSadhe => '𐡑',
+            ImperialAramaic::LetterQoph => '𐡒',
+            ImperialAramaic::LetterResh => '𐡓',
+            ImperialAramaic::LetterShin => '𐡔',
+            ImperialAramaic::LetterTaw => '𐡕',
+            ImperialAramaic::SectionSign => '𐡗',
+            ImperialAramaic::NumberOne => '𐡘',
+            ImperialAramaic::NumberTwo => '𐡙',
+            ImperialAramaic::NumberThree => '𐡚',
+            ImperialAramaic::NumberTen => '𐡛',
+            ImperialAramaic::NumberTwenty => '𐡜',
+            ImperialAramaic::NumberOneHundred => '𐡝',
+            ImperialAramaic::NumberOneThousand => '𐡞',
         }
     }
 }
@@ -168,38 +104,37 @@ impl Into<char> for ImperialAramaic {
 impl std::convert::TryFrom<char> for ImperialAramaic {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_ALEPH => Ok(ImperialAramaic::LetterAleph),
-            LETTER_BETH => Ok(ImperialAramaic::LetterBeth),
-            LETTER_GIMEL => Ok(ImperialAramaic::LetterGimel),
-            LETTER_DALETH => Ok(ImperialAramaic::LetterDaleth),
-            LETTER_HE => Ok(ImperialAramaic::LetterHe),
-            LETTER_WAW => Ok(ImperialAramaic::LetterWaw),
-            LETTER_ZAYIN => Ok(ImperialAramaic::LetterZayin),
-            LETTER_HETH => Ok(ImperialAramaic::LetterHeth),
-            LETTER_TETH => Ok(ImperialAramaic::LetterTeth),
-            LETTER_YODH => Ok(ImperialAramaic::LetterYodh),
-            LETTER_KAPH => Ok(ImperialAramaic::LetterKaph),
-            LETTER_LAMEDH => Ok(ImperialAramaic::LetterLamedh),
-            LETTER_MEM => Ok(ImperialAramaic::LetterMem),
-            LETTER_NUN => Ok(ImperialAramaic::LetterNun),
-            LETTER_SAMEKH => Ok(ImperialAramaic::LetterSamekh),
-            LETTER_AYIN => Ok(ImperialAramaic::LetterAyin),
-            LETTER_PE => Ok(ImperialAramaic::LetterPe),
-            LETTER_SADHE => Ok(ImperialAramaic::LetterSadhe),
-            LETTER_QOPH => Ok(ImperialAramaic::LetterQoph),
-            LETTER_RESH => Ok(ImperialAramaic::LetterResh),
-            LETTER_SHIN => Ok(ImperialAramaic::LetterShin),
-            LETTER_TAW => Ok(ImperialAramaic::LetterTaw),
-            SECTION_SIGN => Ok(ImperialAramaic::SectionSign),
-            NUMBER_ONE => Ok(ImperialAramaic::NumberOne),
-            NUMBER_TWO => Ok(ImperialAramaic::NumberTwo),
-            NUMBER_THREE => Ok(ImperialAramaic::NumberThree),
-            NUMBER_TEN => Ok(ImperialAramaic::NumberTen),
-            NUMBER_TWENTY => Ok(ImperialAramaic::NumberTwenty),
-            NUMBER_ONE_HUNDRED => Ok(ImperialAramaic::NumberOneHundred),
-            NUMBER_ONE_THOUSAND => Ok(ImperialAramaic::NumberOneThousand),
+            '𐡀' => Ok(ImperialAramaic::LetterAleph),
+            '𐡁' => Ok(ImperialAramaic::LetterBeth),
+            '𐡂' => Ok(ImperialAramaic::LetterGimel),
+            '𐡃' => Ok(ImperialAramaic::LetterDaleth),
+            '𐡄' => Ok(ImperialAramaic::LetterHe),
+            '𐡅' => Ok(ImperialAramaic::LetterWaw),
+            '𐡆' => Ok(ImperialAramaic::LetterZayin),
+            '𐡇' => Ok(ImperialAramaic::LetterHeth),
+            '𐡈' => Ok(ImperialAramaic::LetterTeth),
+            '𐡉' => Ok(ImperialAramaic::LetterYodh),
+            '𐡊' => Ok(ImperialAramaic::LetterKaph),
+            '𐡋' => Ok(ImperialAramaic::LetterLamedh),
+            '𐡌' => Ok(ImperialAramaic::LetterMem),
+            '𐡍' => Ok(ImperialAramaic::LetterNun),
+            '𐡎' => Ok(ImperialAramaic::LetterSamekh),
+            '𐡏' => Ok(ImperialAramaic::LetterAyin),
+            '𐡐' => Ok(ImperialAramaic::LetterPe),
+            '𐡑' => Ok(ImperialAramaic::LetterSadhe),
+            '𐡒' => Ok(ImperialAramaic::LetterQoph),
+            '𐡓' => Ok(ImperialAramaic::LetterResh),
+            '𐡔' => Ok(ImperialAramaic::LetterShin),
+            '𐡕' => Ok(ImperialAramaic::LetterTaw),
+            '𐡗' => Ok(ImperialAramaic::SectionSign),
+            '𐡘' => Ok(ImperialAramaic::NumberOne),
+            '𐡙' => Ok(ImperialAramaic::NumberTwo),
+            '𐡚' => Ok(ImperialAramaic::NumberThree),
+            '𐡛' => Ok(ImperialAramaic::NumberTen),
+            '𐡜' => Ok(ImperialAramaic::NumberTwenty),
+            '𐡝' => Ok(ImperialAramaic::NumberOneHundred),
+            '𐡞' => Ok(ImperialAramaic::NumberOneThousand),
             _ => Err(()),
         }
     }

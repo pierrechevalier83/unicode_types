@@ -1,10 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{100000}: '􀀀'
-    pub const PLANE_16_PRIVATE_USE_FIRST: char = '􀀀';
-    /// \u{10fffd}: '􏿽'
-    pub const PLANE_16_PRIVATE_USE_LAST: char = '􏿽';
-}
 
 /// An enum to represent all characters in the SupplementaryPrivateUseAreaB block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -17,10 +10,9 @@ pub enum SupplementaryPrivateUseAreaB {
 
 impl Into<char> for SupplementaryPrivateUseAreaB {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SupplementaryPrivateUseAreaB::Plane16PrivateUseFirst => PLANE_16_PRIVATE_USE_FIRST,
-            SupplementaryPrivateUseAreaB::Plane16PrivateUseLast => PLANE_16_PRIVATE_USE_LAST,
+            SupplementaryPrivateUseAreaB::Plane16PrivateUseFirst => '􀀀',
+            SupplementaryPrivateUseAreaB::Plane16PrivateUseLast => '􏿽',
         }
     }
 }
@@ -28,10 +20,9 @@ impl Into<char> for SupplementaryPrivateUseAreaB {
 impl std::convert::TryFrom<char> for SupplementaryPrivateUseAreaB {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            PLANE_16_PRIVATE_USE_FIRST => Ok(SupplementaryPrivateUseAreaB::Plane16PrivateUseFirst),
-            PLANE_16_PRIVATE_USE_LAST => Ok(SupplementaryPrivateUseAreaB::Plane16PrivateUseLast),
+            '􀀀' => Ok(SupplementaryPrivateUseAreaB::Plane16PrivateUseFirst),
+            '􏿽' => Ok(SupplementaryPrivateUseAreaB::Plane16PrivateUseLast),
             _ => Err(()),
         }
     }

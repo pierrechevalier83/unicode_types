@@ -1,164 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10140}: '𐅀'
-    pub const GREEK_ACROPHONIC_ATTIC_ONE_QUARTER: char = '𐅀';
-    /// \u{10141}: '𐅁'
-    pub const GREEK_ACROPHONIC_ATTIC_ONE_HALF: char = '𐅁';
-    /// \u{10142}: '𐅂'
-    pub const GREEK_ACROPHONIC_ATTIC_ONE_DRACHMA: char = '𐅂';
-    /// \u{10143}: '𐅃'
-    pub const GREEK_ACROPHONIC_ATTIC_FIVE: char = '𐅃';
-    /// \u{10144}: '𐅄'
-    pub const GREEK_ACROPHONIC_ATTIC_FIFTY: char = '𐅄';
-    /// \u{10145}: '𐅅'
-    pub const GREEK_ACROPHONIC_ATTIC_FIVE_HUNDRED: char = '𐅅';
-    /// \u{10146}: '𐅆'
-    pub const GREEK_ACROPHONIC_ATTIC_FIVE_THOUSAND: char = '𐅆';
-    /// \u{10147}: '𐅇'
-    pub const GREEK_ACROPHONIC_ATTIC_FIFTY_THOUSAND: char = '𐅇';
-    /// \u{10148}: '𐅈'
-    pub const GREEK_ACROPHONIC_ATTIC_FIVE_TALENTS: char = '𐅈';
-    /// \u{10149}: '𐅉'
-    pub const GREEK_ACROPHONIC_ATTIC_TEN_TALENTS: char = '𐅉';
-    /// \u{1014a}: '𐅊'
-    pub const GREEK_ACROPHONIC_ATTIC_FIFTY_TALENTS: char = '𐅊';
-    /// \u{1014b}: '𐅋'
-    pub const GREEK_ACROPHONIC_ATTIC_ONE_HUNDRED_TALENTS: char = '𐅋';
-    /// \u{1014c}: '𐅌'
-    pub const GREEK_ACROPHONIC_ATTIC_FIVE_HUNDRED_TALENTS: char = '𐅌';
-    /// \u{1014d}: '𐅍'
-    pub const GREEK_ACROPHONIC_ATTIC_ONE_THOUSAND_TALENTS: char = '𐅍';
-    /// \u{1014e}: '𐅎'
-    pub const GREEK_ACROPHONIC_ATTIC_FIVE_THOUSAND_TALENTS: char = '𐅎';
-    /// \u{1014f}: '𐅏'
-    pub const GREEK_ACROPHONIC_ATTIC_FIVE_STATERS: char = '𐅏';
-    /// \u{10150}: '𐅐'
-    pub const GREEK_ACROPHONIC_ATTIC_TEN_STATERS: char = '𐅐';
-    /// \u{10151}: '𐅑'
-    pub const GREEK_ACROPHONIC_ATTIC_FIFTY_STATERS: char = '𐅑';
-    /// \u{10152}: '𐅒'
-    pub const GREEK_ACROPHONIC_ATTIC_ONE_HUNDRED_STATERS: char = '𐅒';
-    /// \u{10153}: '𐅓'
-    pub const GREEK_ACROPHONIC_ATTIC_FIVE_HUNDRED_STATERS: char = '𐅓';
-    /// \u{10154}: '𐅔'
-    pub const GREEK_ACROPHONIC_ATTIC_ONE_THOUSAND_STATERS: char = '𐅔';
-    /// \u{10155}: '𐅕'
-    pub const GREEK_ACROPHONIC_ATTIC_TEN_THOUSAND_STATERS: char = '𐅕';
-    /// \u{10156}: '𐅖'
-    pub const GREEK_ACROPHONIC_ATTIC_FIFTY_THOUSAND_STATERS: char = '𐅖';
-    /// \u{10157}: '𐅗'
-    pub const GREEK_ACROPHONIC_ATTIC_TEN_MNAS: char = '𐅗';
-    /// \u{10158}: '𐅘'
-    pub const GREEK_ACROPHONIC_HERAEUM_ONE_PLETHRON: char = '𐅘';
-    /// \u{10159}: '𐅙'
-    pub const GREEK_ACROPHONIC_THESPIAN_ONE: char = '𐅙';
-    /// \u{1015a}: '𐅚'
-    pub const GREEK_ACROPHONIC_HERMIONIAN_ONE: char = '𐅚';
-    /// \u{1015b}: '𐅛'
-    pub const GREEK_ACROPHONIC_EPIDAUREAN_TWO: char = '𐅛';
-    /// \u{1015c}: '𐅜'
-    pub const GREEK_ACROPHONIC_THESPIAN_TWO: char = '𐅜';
-    /// \u{1015d}: '𐅝'
-    pub const GREEK_ACROPHONIC_CYRENAIC_TWO_DRACHMAS: char = '𐅝';
-    /// \u{1015e}: '𐅞'
-    pub const GREEK_ACROPHONIC_EPIDAUREAN_TWO_DRACHMAS: char = '𐅞';
-    /// \u{1015f}: '𐅟'
-    pub const GREEK_ACROPHONIC_TROEZENIAN_FIVE: char = '𐅟';
-    /// \u{10160}: '𐅠'
-    pub const GREEK_ACROPHONIC_TROEZENIAN_TEN: char = '𐅠';
-    /// \u{10161}: '𐅡'
-    pub const GREEK_ACROPHONIC_TROEZENIAN_TEN_ALTERNATE_FORM: char = '𐅡';
-    /// \u{10162}: '𐅢'
-    pub const GREEK_ACROPHONIC_HERMIONIAN_TEN: char = '𐅢';
-    /// \u{10163}: '𐅣'
-    pub const GREEK_ACROPHONIC_MESSENIAN_TEN: char = '𐅣';
-    /// \u{10164}: '𐅤'
-    pub const GREEK_ACROPHONIC_THESPIAN_TEN: char = '𐅤';
-    /// \u{10165}: '𐅥'
-    pub const GREEK_ACROPHONIC_THESPIAN_THIRTY: char = '𐅥';
-    /// \u{10166}: '𐅦'
-    pub const GREEK_ACROPHONIC_TROEZENIAN_FIFTY: char = '𐅦';
-    /// \u{10167}: '𐅧'
-    pub const GREEK_ACROPHONIC_TROEZENIAN_FIFTY_ALTERNATE_FORM: char = '𐅧';
-    /// \u{10168}: '𐅨'
-    pub const GREEK_ACROPHONIC_HERMIONIAN_FIFTY: char = '𐅨';
-    /// \u{10169}: '𐅩'
-    pub const GREEK_ACROPHONIC_THESPIAN_FIFTY: char = '𐅩';
-    /// \u{1016a}: '𐅪'
-    pub const GREEK_ACROPHONIC_THESPIAN_ONE_HUNDRED: char = '𐅪';
-    /// \u{1016b}: '𐅫'
-    pub const GREEK_ACROPHONIC_THESPIAN_THREE_HUNDRED: char = '𐅫';
-    /// \u{1016c}: '𐅬'
-    pub const GREEK_ACROPHONIC_EPIDAUREAN_FIVE_HUNDRED: char = '𐅬';
-    /// \u{1016d}: '𐅭'
-    pub const GREEK_ACROPHONIC_TROEZENIAN_FIVE_HUNDRED: char = '𐅭';
-    /// \u{1016e}: '𐅮'
-    pub const GREEK_ACROPHONIC_THESPIAN_FIVE_HUNDRED: char = '𐅮';
-    /// \u{1016f}: '𐅯'
-    pub const GREEK_ACROPHONIC_CARYSTIAN_FIVE_HUNDRED: char = '𐅯';
-    /// \u{10170}: '𐅰'
-    pub const GREEK_ACROPHONIC_NAXIAN_FIVE_HUNDRED: char = '𐅰';
-    /// \u{10171}: '𐅱'
-    pub const GREEK_ACROPHONIC_THESPIAN_ONE_THOUSAND: char = '𐅱';
-    /// \u{10172}: '𐅲'
-    pub const GREEK_ACROPHONIC_THESPIAN_FIVE_THOUSAND: char = '𐅲';
-    /// \u{10173}: '𐅳'
-    pub const GREEK_ACROPHONIC_DELPHIC_FIVE_MNAS: char = '𐅳';
-    /// \u{10174}: '𐅴'
-    pub const GREEK_ACROPHONIC_STRATIAN_FIFTY_MNAS: char = '𐅴';
-    /// \u{10175}: '𐅵'
-    pub const GREEK_ONE_HALF_SIGN: char = '𐅵';
-    /// \u{10176}: '𐅶'
-    pub const GREEK_ONE_HALF_SIGN_ALTERNATE_FORM: char = '𐅶';
-    /// \u{10177}: '𐅷'
-    pub const GREEK_TWO_THIRDS_SIGN: char = '𐅷';
-    /// \u{10178}: '𐅸'
-    pub const GREEK_THREE_QUARTERS_SIGN: char = '𐅸';
-    /// \u{10179}: '𐅹'
-    pub const GREEK_YEAR_SIGN: char = '𐅹';
-    /// \u{1017a}: '𐅺'
-    pub const GREEK_TALENT_SIGN: char = '𐅺';
-    /// \u{1017b}: '𐅻'
-    pub const GREEK_DRACHMA_SIGN: char = '𐅻';
-    /// \u{1017c}: '𐅼'
-    pub const GREEK_OBOL_SIGN: char = '𐅼';
-    /// \u{1017d}: '𐅽'
-    pub const GREEK_TWO_OBOLS_SIGN: char = '𐅽';
-    /// \u{1017e}: '𐅾'
-    pub const GREEK_THREE_OBOLS_SIGN: char = '𐅾';
-    /// \u{1017f}: '𐅿'
-    pub const GREEK_FOUR_OBOLS_SIGN: char = '𐅿';
-    /// \u{10180}: '𐆀'
-    pub const GREEK_FIVE_OBOLS_SIGN: char = '𐆀';
-    /// \u{10181}: '𐆁'
-    pub const GREEK_METRETES_SIGN: char = '𐆁';
-    /// \u{10182}: '𐆂'
-    pub const GREEK_KYATHOS_BASE_SIGN: char = '𐆂';
-    /// \u{10183}: '𐆃'
-    pub const GREEK_LITRA_SIGN: char = '𐆃';
-    /// \u{10184}: '𐆄'
-    pub const GREEK_OUNKIA_SIGN: char = '𐆄';
-    /// \u{10185}: '𐆅'
-    pub const GREEK_XESTES_SIGN: char = '𐆅';
-    /// \u{10186}: '𐆆'
-    pub const GREEK_ARTABE_SIGN: char = '𐆆';
-    /// \u{10187}: '𐆇'
-    pub const GREEK_AROURA_SIGN: char = '𐆇';
-    /// \u{10188}: '𐆈'
-    pub const GREEK_GRAMMA_SIGN: char = '𐆈';
-    /// \u{10189}: '𐆉'
-    pub const GREEK_TRYBLION_BASE_SIGN: char = '𐆉';
-    /// \u{1018a}: '𐆊'
-    pub const GREEK_ZERO_SIGN: char = '𐆊';
-    /// \u{1018b}: '𐆋'
-    pub const GREEK_ONE_QUARTER_SIGN: char = '𐆋';
-    /// \u{1018c}: '𐆌'
-    pub const GREEK_SINUSOID_SIGN: char = '𐆌';
-    /// \u{1018d}: '𐆍'
-    pub const GREEK_INDICTION_SIGN: char = '𐆍';
-    /// \u{1018e}: '𐆎'
-    pub const NOMISMA_SIGN: char = '𐆎';
-}
 
 /// An enum to represent all characters in the AncientGreekNumbers block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -325,87 +164,86 @@ pub enum AncientGreekNumbers {
 
 impl Into<char> for AncientGreekNumbers {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            AncientGreekNumbers::GreekAcrophonicAtticOneQuarter => GREEK_ACROPHONIC_ATTIC_ONE_QUARTER,
-            AncientGreekNumbers::GreekAcrophonicAtticOneHalf => GREEK_ACROPHONIC_ATTIC_ONE_HALF,
-            AncientGreekNumbers::GreekAcrophonicAtticOneDrachma => GREEK_ACROPHONIC_ATTIC_ONE_DRACHMA,
-            AncientGreekNumbers::GreekAcrophonicAtticFive => GREEK_ACROPHONIC_ATTIC_FIVE,
-            AncientGreekNumbers::GreekAcrophonicAtticFifty => GREEK_ACROPHONIC_ATTIC_FIFTY,
-            AncientGreekNumbers::GreekAcrophonicAtticFiveHundred => GREEK_ACROPHONIC_ATTIC_FIVE_HUNDRED,
-            AncientGreekNumbers::GreekAcrophonicAtticFiveThousand => GREEK_ACROPHONIC_ATTIC_FIVE_THOUSAND,
-            AncientGreekNumbers::GreekAcrophonicAtticFiftyThousand => GREEK_ACROPHONIC_ATTIC_FIFTY_THOUSAND,
-            AncientGreekNumbers::GreekAcrophonicAtticFiveTalents => GREEK_ACROPHONIC_ATTIC_FIVE_TALENTS,
-            AncientGreekNumbers::GreekAcrophonicAtticTenTalents => GREEK_ACROPHONIC_ATTIC_TEN_TALENTS,
-            AncientGreekNumbers::GreekAcrophonicAtticFiftyTalents => GREEK_ACROPHONIC_ATTIC_FIFTY_TALENTS,
-            AncientGreekNumbers::GreekAcrophonicAtticOneHundredTalents => GREEK_ACROPHONIC_ATTIC_ONE_HUNDRED_TALENTS,
-            AncientGreekNumbers::GreekAcrophonicAtticFiveHundredTalents => GREEK_ACROPHONIC_ATTIC_FIVE_HUNDRED_TALENTS,
-            AncientGreekNumbers::GreekAcrophonicAtticOneThousandTalents => GREEK_ACROPHONIC_ATTIC_ONE_THOUSAND_TALENTS,
-            AncientGreekNumbers::GreekAcrophonicAtticFiveThousandTalents => GREEK_ACROPHONIC_ATTIC_FIVE_THOUSAND_TALENTS,
-            AncientGreekNumbers::GreekAcrophonicAtticFiveStaters => GREEK_ACROPHONIC_ATTIC_FIVE_STATERS,
-            AncientGreekNumbers::GreekAcrophonicAtticTenStaters => GREEK_ACROPHONIC_ATTIC_TEN_STATERS,
-            AncientGreekNumbers::GreekAcrophonicAtticFiftyStaters => GREEK_ACROPHONIC_ATTIC_FIFTY_STATERS,
-            AncientGreekNumbers::GreekAcrophonicAtticOneHundredStaters => GREEK_ACROPHONIC_ATTIC_ONE_HUNDRED_STATERS,
-            AncientGreekNumbers::GreekAcrophonicAtticFiveHundredStaters => GREEK_ACROPHONIC_ATTIC_FIVE_HUNDRED_STATERS,
-            AncientGreekNumbers::GreekAcrophonicAtticOneThousandStaters => GREEK_ACROPHONIC_ATTIC_ONE_THOUSAND_STATERS,
-            AncientGreekNumbers::GreekAcrophonicAtticTenThousandStaters => GREEK_ACROPHONIC_ATTIC_TEN_THOUSAND_STATERS,
-            AncientGreekNumbers::GreekAcrophonicAtticFiftyThousandStaters => GREEK_ACROPHONIC_ATTIC_FIFTY_THOUSAND_STATERS,
-            AncientGreekNumbers::GreekAcrophonicAtticTenMnas => GREEK_ACROPHONIC_ATTIC_TEN_MNAS,
-            AncientGreekNumbers::GreekAcrophonicHeraeumOnePlethron => GREEK_ACROPHONIC_HERAEUM_ONE_PLETHRON,
-            AncientGreekNumbers::GreekAcrophonicThespianOne => GREEK_ACROPHONIC_THESPIAN_ONE,
-            AncientGreekNumbers::GreekAcrophonicHermionianOne => GREEK_ACROPHONIC_HERMIONIAN_ONE,
-            AncientGreekNumbers::GreekAcrophonicEpidaureanTwo => GREEK_ACROPHONIC_EPIDAUREAN_TWO,
-            AncientGreekNumbers::GreekAcrophonicThespianTwo => GREEK_ACROPHONIC_THESPIAN_TWO,
-            AncientGreekNumbers::GreekAcrophonicCyrenaicTwoDrachmas => GREEK_ACROPHONIC_CYRENAIC_TWO_DRACHMAS,
-            AncientGreekNumbers::GreekAcrophonicEpidaureanTwoDrachmas => GREEK_ACROPHONIC_EPIDAUREAN_TWO_DRACHMAS,
-            AncientGreekNumbers::GreekAcrophonicTroezenianFive => GREEK_ACROPHONIC_TROEZENIAN_FIVE,
-            AncientGreekNumbers::GreekAcrophonicTroezenianTen => GREEK_ACROPHONIC_TROEZENIAN_TEN,
-            AncientGreekNumbers::GreekAcrophonicTroezenianTenAlternateForm => GREEK_ACROPHONIC_TROEZENIAN_TEN_ALTERNATE_FORM,
-            AncientGreekNumbers::GreekAcrophonicHermionianTen => GREEK_ACROPHONIC_HERMIONIAN_TEN,
-            AncientGreekNumbers::GreekAcrophonicMessenianTen => GREEK_ACROPHONIC_MESSENIAN_TEN,
-            AncientGreekNumbers::GreekAcrophonicThespianTen => GREEK_ACROPHONIC_THESPIAN_TEN,
-            AncientGreekNumbers::GreekAcrophonicThespianThirty => GREEK_ACROPHONIC_THESPIAN_THIRTY,
-            AncientGreekNumbers::GreekAcrophonicTroezenianFifty => GREEK_ACROPHONIC_TROEZENIAN_FIFTY,
-            AncientGreekNumbers::GreekAcrophonicTroezenianFiftyAlternateForm => GREEK_ACROPHONIC_TROEZENIAN_FIFTY_ALTERNATE_FORM,
-            AncientGreekNumbers::GreekAcrophonicHermionianFifty => GREEK_ACROPHONIC_HERMIONIAN_FIFTY,
-            AncientGreekNumbers::GreekAcrophonicThespianFifty => GREEK_ACROPHONIC_THESPIAN_FIFTY,
-            AncientGreekNumbers::GreekAcrophonicThespianOneHundred => GREEK_ACROPHONIC_THESPIAN_ONE_HUNDRED,
-            AncientGreekNumbers::GreekAcrophonicThespianThreeHundred => GREEK_ACROPHONIC_THESPIAN_THREE_HUNDRED,
-            AncientGreekNumbers::GreekAcrophonicEpidaureanFiveHundred => GREEK_ACROPHONIC_EPIDAUREAN_FIVE_HUNDRED,
-            AncientGreekNumbers::GreekAcrophonicTroezenianFiveHundred => GREEK_ACROPHONIC_TROEZENIAN_FIVE_HUNDRED,
-            AncientGreekNumbers::GreekAcrophonicThespianFiveHundred => GREEK_ACROPHONIC_THESPIAN_FIVE_HUNDRED,
-            AncientGreekNumbers::GreekAcrophonicCarystianFiveHundred => GREEK_ACROPHONIC_CARYSTIAN_FIVE_HUNDRED,
-            AncientGreekNumbers::GreekAcrophonicNaxianFiveHundred => GREEK_ACROPHONIC_NAXIAN_FIVE_HUNDRED,
-            AncientGreekNumbers::GreekAcrophonicThespianOneThousand => GREEK_ACROPHONIC_THESPIAN_ONE_THOUSAND,
-            AncientGreekNumbers::GreekAcrophonicThespianFiveThousand => GREEK_ACROPHONIC_THESPIAN_FIVE_THOUSAND,
-            AncientGreekNumbers::GreekAcrophonicDelphicFiveMnas => GREEK_ACROPHONIC_DELPHIC_FIVE_MNAS,
-            AncientGreekNumbers::GreekAcrophonicStratianFiftyMnas => GREEK_ACROPHONIC_STRATIAN_FIFTY_MNAS,
-            AncientGreekNumbers::GreekOneHalfSign => GREEK_ONE_HALF_SIGN,
-            AncientGreekNumbers::GreekOneHalfSignAlternateForm => GREEK_ONE_HALF_SIGN_ALTERNATE_FORM,
-            AncientGreekNumbers::GreekTwoThirdsSign => GREEK_TWO_THIRDS_SIGN,
-            AncientGreekNumbers::GreekThreeQuartersSign => GREEK_THREE_QUARTERS_SIGN,
-            AncientGreekNumbers::GreekYearSign => GREEK_YEAR_SIGN,
-            AncientGreekNumbers::GreekTalentSign => GREEK_TALENT_SIGN,
-            AncientGreekNumbers::GreekDrachmaSign => GREEK_DRACHMA_SIGN,
-            AncientGreekNumbers::GreekObolSign => GREEK_OBOL_SIGN,
-            AncientGreekNumbers::GreekTwoObolsSign => GREEK_TWO_OBOLS_SIGN,
-            AncientGreekNumbers::GreekThreeObolsSign => GREEK_THREE_OBOLS_SIGN,
-            AncientGreekNumbers::GreekFourObolsSign => GREEK_FOUR_OBOLS_SIGN,
-            AncientGreekNumbers::GreekFiveObolsSign => GREEK_FIVE_OBOLS_SIGN,
-            AncientGreekNumbers::GreekMetretesSign => GREEK_METRETES_SIGN,
-            AncientGreekNumbers::GreekKyathosBaseSign => GREEK_KYATHOS_BASE_SIGN,
-            AncientGreekNumbers::GreekLitraSign => GREEK_LITRA_SIGN,
-            AncientGreekNumbers::GreekOunkiaSign => GREEK_OUNKIA_SIGN,
-            AncientGreekNumbers::GreekXestesSign => GREEK_XESTES_SIGN,
-            AncientGreekNumbers::GreekArtabeSign => GREEK_ARTABE_SIGN,
-            AncientGreekNumbers::GreekArouraSign => GREEK_AROURA_SIGN,
-            AncientGreekNumbers::GreekGrammaSign => GREEK_GRAMMA_SIGN,
-            AncientGreekNumbers::GreekTryblionBaseSign => GREEK_TRYBLION_BASE_SIGN,
-            AncientGreekNumbers::GreekZeroSign => GREEK_ZERO_SIGN,
-            AncientGreekNumbers::GreekOneQuarterSign => GREEK_ONE_QUARTER_SIGN,
-            AncientGreekNumbers::GreekSinusoidSign => GREEK_SINUSOID_SIGN,
-            AncientGreekNumbers::GreekIndictionSign => GREEK_INDICTION_SIGN,
-            AncientGreekNumbers::NomismaSign => NOMISMA_SIGN,
+            AncientGreekNumbers::GreekAcrophonicAtticOneQuarter => '𐅀',
+            AncientGreekNumbers::GreekAcrophonicAtticOneHalf => '𐅁',
+            AncientGreekNumbers::GreekAcrophonicAtticOneDrachma => '𐅂',
+            AncientGreekNumbers::GreekAcrophonicAtticFive => '𐅃',
+            AncientGreekNumbers::GreekAcrophonicAtticFifty => '𐅄',
+            AncientGreekNumbers::GreekAcrophonicAtticFiveHundred => '𐅅',
+            AncientGreekNumbers::GreekAcrophonicAtticFiveThousand => '𐅆',
+            AncientGreekNumbers::GreekAcrophonicAtticFiftyThousand => '𐅇',
+            AncientGreekNumbers::GreekAcrophonicAtticFiveTalents => '𐅈',
+            AncientGreekNumbers::GreekAcrophonicAtticTenTalents => '𐅉',
+            AncientGreekNumbers::GreekAcrophonicAtticFiftyTalents => '𐅊',
+            AncientGreekNumbers::GreekAcrophonicAtticOneHundredTalents => '𐅋',
+            AncientGreekNumbers::GreekAcrophonicAtticFiveHundredTalents => '𐅌',
+            AncientGreekNumbers::GreekAcrophonicAtticOneThousandTalents => '𐅍',
+            AncientGreekNumbers::GreekAcrophonicAtticFiveThousandTalents => '𐅎',
+            AncientGreekNumbers::GreekAcrophonicAtticFiveStaters => '𐅏',
+            AncientGreekNumbers::GreekAcrophonicAtticTenStaters => '𐅐',
+            AncientGreekNumbers::GreekAcrophonicAtticFiftyStaters => '𐅑',
+            AncientGreekNumbers::GreekAcrophonicAtticOneHundredStaters => '𐅒',
+            AncientGreekNumbers::GreekAcrophonicAtticFiveHundredStaters => '𐅓',
+            AncientGreekNumbers::GreekAcrophonicAtticOneThousandStaters => '𐅔',
+            AncientGreekNumbers::GreekAcrophonicAtticTenThousandStaters => '𐅕',
+            AncientGreekNumbers::GreekAcrophonicAtticFiftyThousandStaters => '𐅖',
+            AncientGreekNumbers::GreekAcrophonicAtticTenMnas => '𐅗',
+            AncientGreekNumbers::GreekAcrophonicHeraeumOnePlethron => '𐅘',
+            AncientGreekNumbers::GreekAcrophonicThespianOne => '𐅙',
+            AncientGreekNumbers::GreekAcrophonicHermionianOne => '𐅚',
+            AncientGreekNumbers::GreekAcrophonicEpidaureanTwo => '𐅛',
+            AncientGreekNumbers::GreekAcrophonicThespianTwo => '𐅜',
+            AncientGreekNumbers::GreekAcrophonicCyrenaicTwoDrachmas => '𐅝',
+            AncientGreekNumbers::GreekAcrophonicEpidaureanTwoDrachmas => '𐅞',
+            AncientGreekNumbers::GreekAcrophonicTroezenianFive => '𐅟',
+            AncientGreekNumbers::GreekAcrophonicTroezenianTen => '𐅠',
+            AncientGreekNumbers::GreekAcrophonicTroezenianTenAlternateForm => '𐅡',
+            AncientGreekNumbers::GreekAcrophonicHermionianTen => '𐅢',
+            AncientGreekNumbers::GreekAcrophonicMessenianTen => '𐅣',
+            AncientGreekNumbers::GreekAcrophonicThespianTen => '𐅤',
+            AncientGreekNumbers::GreekAcrophonicThespianThirty => '𐅥',
+            AncientGreekNumbers::GreekAcrophonicTroezenianFifty => '𐅦',
+            AncientGreekNumbers::GreekAcrophonicTroezenianFiftyAlternateForm => '𐅧',
+            AncientGreekNumbers::GreekAcrophonicHermionianFifty => '𐅨',
+            AncientGreekNumbers::GreekAcrophonicThespianFifty => '𐅩',
+            AncientGreekNumbers::GreekAcrophonicThespianOneHundred => '𐅪',
+            AncientGreekNumbers::GreekAcrophonicThespianThreeHundred => '𐅫',
+            AncientGreekNumbers::GreekAcrophonicEpidaureanFiveHundred => '𐅬',
+            AncientGreekNumbers::GreekAcrophonicTroezenianFiveHundred => '𐅭',
+            AncientGreekNumbers::GreekAcrophonicThespianFiveHundred => '𐅮',
+            AncientGreekNumbers::GreekAcrophonicCarystianFiveHundred => '𐅯',
+            AncientGreekNumbers::GreekAcrophonicNaxianFiveHundred => '𐅰',
+            AncientGreekNumbers::GreekAcrophonicThespianOneThousand => '𐅱',
+            AncientGreekNumbers::GreekAcrophonicThespianFiveThousand => '𐅲',
+            AncientGreekNumbers::GreekAcrophonicDelphicFiveMnas => '𐅳',
+            AncientGreekNumbers::GreekAcrophonicStratianFiftyMnas => '𐅴',
+            AncientGreekNumbers::GreekOneHalfSign => '𐅵',
+            AncientGreekNumbers::GreekOneHalfSignAlternateForm => '𐅶',
+            AncientGreekNumbers::GreekTwoThirdsSign => '𐅷',
+            AncientGreekNumbers::GreekThreeQuartersSign => '𐅸',
+            AncientGreekNumbers::GreekYearSign => '𐅹',
+            AncientGreekNumbers::GreekTalentSign => '𐅺',
+            AncientGreekNumbers::GreekDrachmaSign => '𐅻',
+            AncientGreekNumbers::GreekObolSign => '𐅼',
+            AncientGreekNumbers::GreekTwoObolsSign => '𐅽',
+            AncientGreekNumbers::GreekThreeObolsSign => '𐅾',
+            AncientGreekNumbers::GreekFourObolsSign => '𐅿',
+            AncientGreekNumbers::GreekFiveObolsSign => '𐆀',
+            AncientGreekNumbers::GreekMetretesSign => '𐆁',
+            AncientGreekNumbers::GreekKyathosBaseSign => '𐆂',
+            AncientGreekNumbers::GreekLitraSign => '𐆃',
+            AncientGreekNumbers::GreekOunkiaSign => '𐆄',
+            AncientGreekNumbers::GreekXestesSign => '𐆅',
+            AncientGreekNumbers::GreekArtabeSign => '𐆆',
+            AncientGreekNumbers::GreekArouraSign => '𐆇',
+            AncientGreekNumbers::GreekGrammaSign => '𐆈',
+            AncientGreekNumbers::GreekTryblionBaseSign => '𐆉',
+            AncientGreekNumbers::GreekZeroSign => '𐆊',
+            AncientGreekNumbers::GreekOneQuarterSign => '𐆋',
+            AncientGreekNumbers::GreekSinusoidSign => '𐆌',
+            AncientGreekNumbers::GreekIndictionSign => '𐆍',
+            AncientGreekNumbers::NomismaSign => '𐆎',
         }
     }
 }
@@ -413,87 +251,86 @@ impl Into<char> for AncientGreekNumbers {
 impl std::convert::TryFrom<char> for AncientGreekNumbers {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            GREEK_ACROPHONIC_ATTIC_ONE_QUARTER => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneQuarter),
-            GREEK_ACROPHONIC_ATTIC_ONE_HALF => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneHalf),
-            GREEK_ACROPHONIC_ATTIC_ONE_DRACHMA => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneDrachma),
-            GREEK_ACROPHONIC_ATTIC_FIVE => Ok(AncientGreekNumbers::GreekAcrophonicAtticFive),
-            GREEK_ACROPHONIC_ATTIC_FIFTY => Ok(AncientGreekNumbers::GreekAcrophonicAtticFifty),
-            GREEK_ACROPHONIC_ATTIC_FIVE_HUNDRED => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveHundred),
-            GREEK_ACROPHONIC_ATTIC_FIVE_THOUSAND => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveThousand),
-            GREEK_ACROPHONIC_ATTIC_FIFTY_THOUSAND => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiftyThousand),
-            GREEK_ACROPHONIC_ATTIC_FIVE_TALENTS => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveTalents),
-            GREEK_ACROPHONIC_ATTIC_TEN_TALENTS => Ok(AncientGreekNumbers::GreekAcrophonicAtticTenTalents),
-            GREEK_ACROPHONIC_ATTIC_FIFTY_TALENTS => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiftyTalents),
-            GREEK_ACROPHONIC_ATTIC_ONE_HUNDRED_TALENTS => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneHundredTalents),
-            GREEK_ACROPHONIC_ATTIC_FIVE_HUNDRED_TALENTS => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveHundredTalents),
-            GREEK_ACROPHONIC_ATTIC_ONE_THOUSAND_TALENTS => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneThousandTalents),
-            GREEK_ACROPHONIC_ATTIC_FIVE_THOUSAND_TALENTS => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveThousandTalents),
-            GREEK_ACROPHONIC_ATTIC_FIVE_STATERS => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveStaters),
-            GREEK_ACROPHONIC_ATTIC_TEN_STATERS => Ok(AncientGreekNumbers::GreekAcrophonicAtticTenStaters),
-            GREEK_ACROPHONIC_ATTIC_FIFTY_STATERS => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiftyStaters),
-            GREEK_ACROPHONIC_ATTIC_ONE_HUNDRED_STATERS => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneHundredStaters),
-            GREEK_ACROPHONIC_ATTIC_FIVE_HUNDRED_STATERS => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveHundredStaters),
-            GREEK_ACROPHONIC_ATTIC_ONE_THOUSAND_STATERS => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneThousandStaters),
-            GREEK_ACROPHONIC_ATTIC_TEN_THOUSAND_STATERS => Ok(AncientGreekNumbers::GreekAcrophonicAtticTenThousandStaters),
-            GREEK_ACROPHONIC_ATTIC_FIFTY_THOUSAND_STATERS => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiftyThousandStaters),
-            GREEK_ACROPHONIC_ATTIC_TEN_MNAS => Ok(AncientGreekNumbers::GreekAcrophonicAtticTenMnas),
-            GREEK_ACROPHONIC_HERAEUM_ONE_PLETHRON => Ok(AncientGreekNumbers::GreekAcrophonicHeraeumOnePlethron),
-            GREEK_ACROPHONIC_THESPIAN_ONE => Ok(AncientGreekNumbers::GreekAcrophonicThespianOne),
-            GREEK_ACROPHONIC_HERMIONIAN_ONE => Ok(AncientGreekNumbers::GreekAcrophonicHermionianOne),
-            GREEK_ACROPHONIC_EPIDAUREAN_TWO => Ok(AncientGreekNumbers::GreekAcrophonicEpidaureanTwo),
-            GREEK_ACROPHONIC_THESPIAN_TWO => Ok(AncientGreekNumbers::GreekAcrophonicThespianTwo),
-            GREEK_ACROPHONIC_CYRENAIC_TWO_DRACHMAS => Ok(AncientGreekNumbers::GreekAcrophonicCyrenaicTwoDrachmas),
-            GREEK_ACROPHONIC_EPIDAUREAN_TWO_DRACHMAS => Ok(AncientGreekNumbers::GreekAcrophonicEpidaureanTwoDrachmas),
-            GREEK_ACROPHONIC_TROEZENIAN_FIVE => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianFive),
-            GREEK_ACROPHONIC_TROEZENIAN_TEN => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianTen),
-            GREEK_ACROPHONIC_TROEZENIAN_TEN_ALTERNATE_FORM => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianTenAlternateForm),
-            GREEK_ACROPHONIC_HERMIONIAN_TEN => Ok(AncientGreekNumbers::GreekAcrophonicHermionianTen),
-            GREEK_ACROPHONIC_MESSENIAN_TEN => Ok(AncientGreekNumbers::GreekAcrophonicMessenianTen),
-            GREEK_ACROPHONIC_THESPIAN_TEN => Ok(AncientGreekNumbers::GreekAcrophonicThespianTen),
-            GREEK_ACROPHONIC_THESPIAN_THIRTY => Ok(AncientGreekNumbers::GreekAcrophonicThespianThirty),
-            GREEK_ACROPHONIC_TROEZENIAN_FIFTY => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianFifty),
-            GREEK_ACROPHONIC_TROEZENIAN_FIFTY_ALTERNATE_FORM => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianFiftyAlternateForm),
-            GREEK_ACROPHONIC_HERMIONIAN_FIFTY => Ok(AncientGreekNumbers::GreekAcrophonicHermionianFifty),
-            GREEK_ACROPHONIC_THESPIAN_FIFTY => Ok(AncientGreekNumbers::GreekAcrophonicThespianFifty),
-            GREEK_ACROPHONIC_THESPIAN_ONE_HUNDRED => Ok(AncientGreekNumbers::GreekAcrophonicThespianOneHundred),
-            GREEK_ACROPHONIC_THESPIAN_THREE_HUNDRED => Ok(AncientGreekNumbers::GreekAcrophonicThespianThreeHundred),
-            GREEK_ACROPHONIC_EPIDAUREAN_FIVE_HUNDRED => Ok(AncientGreekNumbers::GreekAcrophonicEpidaureanFiveHundred),
-            GREEK_ACROPHONIC_TROEZENIAN_FIVE_HUNDRED => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianFiveHundred),
-            GREEK_ACROPHONIC_THESPIAN_FIVE_HUNDRED => Ok(AncientGreekNumbers::GreekAcrophonicThespianFiveHundred),
-            GREEK_ACROPHONIC_CARYSTIAN_FIVE_HUNDRED => Ok(AncientGreekNumbers::GreekAcrophonicCarystianFiveHundred),
-            GREEK_ACROPHONIC_NAXIAN_FIVE_HUNDRED => Ok(AncientGreekNumbers::GreekAcrophonicNaxianFiveHundred),
-            GREEK_ACROPHONIC_THESPIAN_ONE_THOUSAND => Ok(AncientGreekNumbers::GreekAcrophonicThespianOneThousand),
-            GREEK_ACROPHONIC_THESPIAN_FIVE_THOUSAND => Ok(AncientGreekNumbers::GreekAcrophonicThespianFiveThousand),
-            GREEK_ACROPHONIC_DELPHIC_FIVE_MNAS => Ok(AncientGreekNumbers::GreekAcrophonicDelphicFiveMnas),
-            GREEK_ACROPHONIC_STRATIAN_FIFTY_MNAS => Ok(AncientGreekNumbers::GreekAcrophonicStratianFiftyMnas),
-            GREEK_ONE_HALF_SIGN => Ok(AncientGreekNumbers::GreekOneHalfSign),
-            GREEK_ONE_HALF_SIGN_ALTERNATE_FORM => Ok(AncientGreekNumbers::GreekOneHalfSignAlternateForm),
-            GREEK_TWO_THIRDS_SIGN => Ok(AncientGreekNumbers::GreekTwoThirdsSign),
-            GREEK_THREE_QUARTERS_SIGN => Ok(AncientGreekNumbers::GreekThreeQuartersSign),
-            GREEK_YEAR_SIGN => Ok(AncientGreekNumbers::GreekYearSign),
-            GREEK_TALENT_SIGN => Ok(AncientGreekNumbers::GreekTalentSign),
-            GREEK_DRACHMA_SIGN => Ok(AncientGreekNumbers::GreekDrachmaSign),
-            GREEK_OBOL_SIGN => Ok(AncientGreekNumbers::GreekObolSign),
-            GREEK_TWO_OBOLS_SIGN => Ok(AncientGreekNumbers::GreekTwoObolsSign),
-            GREEK_THREE_OBOLS_SIGN => Ok(AncientGreekNumbers::GreekThreeObolsSign),
-            GREEK_FOUR_OBOLS_SIGN => Ok(AncientGreekNumbers::GreekFourObolsSign),
-            GREEK_FIVE_OBOLS_SIGN => Ok(AncientGreekNumbers::GreekFiveObolsSign),
-            GREEK_METRETES_SIGN => Ok(AncientGreekNumbers::GreekMetretesSign),
-            GREEK_KYATHOS_BASE_SIGN => Ok(AncientGreekNumbers::GreekKyathosBaseSign),
-            GREEK_LITRA_SIGN => Ok(AncientGreekNumbers::GreekLitraSign),
-            GREEK_OUNKIA_SIGN => Ok(AncientGreekNumbers::GreekOunkiaSign),
-            GREEK_XESTES_SIGN => Ok(AncientGreekNumbers::GreekXestesSign),
-            GREEK_ARTABE_SIGN => Ok(AncientGreekNumbers::GreekArtabeSign),
-            GREEK_AROURA_SIGN => Ok(AncientGreekNumbers::GreekArouraSign),
-            GREEK_GRAMMA_SIGN => Ok(AncientGreekNumbers::GreekGrammaSign),
-            GREEK_TRYBLION_BASE_SIGN => Ok(AncientGreekNumbers::GreekTryblionBaseSign),
-            GREEK_ZERO_SIGN => Ok(AncientGreekNumbers::GreekZeroSign),
-            GREEK_ONE_QUARTER_SIGN => Ok(AncientGreekNumbers::GreekOneQuarterSign),
-            GREEK_SINUSOID_SIGN => Ok(AncientGreekNumbers::GreekSinusoidSign),
-            GREEK_INDICTION_SIGN => Ok(AncientGreekNumbers::GreekIndictionSign),
-            NOMISMA_SIGN => Ok(AncientGreekNumbers::NomismaSign),
+            '𐅀' => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneQuarter),
+            '𐅁' => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneHalf),
+            '𐅂' => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneDrachma),
+            '𐅃' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFive),
+            '𐅄' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFifty),
+            '𐅅' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveHundred),
+            '𐅆' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveThousand),
+            '𐅇' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiftyThousand),
+            '𐅈' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveTalents),
+            '𐅉' => Ok(AncientGreekNumbers::GreekAcrophonicAtticTenTalents),
+            '𐅊' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiftyTalents),
+            '𐅋' => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneHundredTalents),
+            '𐅌' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveHundredTalents),
+            '𐅍' => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneThousandTalents),
+            '𐅎' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveThousandTalents),
+            '𐅏' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveStaters),
+            '𐅐' => Ok(AncientGreekNumbers::GreekAcrophonicAtticTenStaters),
+            '𐅑' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiftyStaters),
+            '𐅒' => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneHundredStaters),
+            '𐅓' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiveHundredStaters),
+            '𐅔' => Ok(AncientGreekNumbers::GreekAcrophonicAtticOneThousandStaters),
+            '𐅕' => Ok(AncientGreekNumbers::GreekAcrophonicAtticTenThousandStaters),
+            '𐅖' => Ok(AncientGreekNumbers::GreekAcrophonicAtticFiftyThousandStaters),
+            '𐅗' => Ok(AncientGreekNumbers::GreekAcrophonicAtticTenMnas),
+            '𐅘' => Ok(AncientGreekNumbers::GreekAcrophonicHeraeumOnePlethron),
+            '𐅙' => Ok(AncientGreekNumbers::GreekAcrophonicThespianOne),
+            '𐅚' => Ok(AncientGreekNumbers::GreekAcrophonicHermionianOne),
+            '𐅛' => Ok(AncientGreekNumbers::GreekAcrophonicEpidaureanTwo),
+            '𐅜' => Ok(AncientGreekNumbers::GreekAcrophonicThespianTwo),
+            '𐅝' => Ok(AncientGreekNumbers::GreekAcrophonicCyrenaicTwoDrachmas),
+            '𐅞' => Ok(AncientGreekNumbers::GreekAcrophonicEpidaureanTwoDrachmas),
+            '𐅟' => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianFive),
+            '𐅠' => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianTen),
+            '𐅡' => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianTenAlternateForm),
+            '𐅢' => Ok(AncientGreekNumbers::GreekAcrophonicHermionianTen),
+            '𐅣' => Ok(AncientGreekNumbers::GreekAcrophonicMessenianTen),
+            '𐅤' => Ok(AncientGreekNumbers::GreekAcrophonicThespianTen),
+            '𐅥' => Ok(AncientGreekNumbers::GreekAcrophonicThespianThirty),
+            '𐅦' => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianFifty),
+            '𐅧' => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianFiftyAlternateForm),
+            '𐅨' => Ok(AncientGreekNumbers::GreekAcrophonicHermionianFifty),
+            '𐅩' => Ok(AncientGreekNumbers::GreekAcrophonicThespianFifty),
+            '𐅪' => Ok(AncientGreekNumbers::GreekAcrophonicThespianOneHundred),
+            '𐅫' => Ok(AncientGreekNumbers::GreekAcrophonicThespianThreeHundred),
+            '𐅬' => Ok(AncientGreekNumbers::GreekAcrophonicEpidaureanFiveHundred),
+            '𐅭' => Ok(AncientGreekNumbers::GreekAcrophonicTroezenianFiveHundred),
+            '𐅮' => Ok(AncientGreekNumbers::GreekAcrophonicThespianFiveHundred),
+            '𐅯' => Ok(AncientGreekNumbers::GreekAcrophonicCarystianFiveHundred),
+            '𐅰' => Ok(AncientGreekNumbers::GreekAcrophonicNaxianFiveHundred),
+            '𐅱' => Ok(AncientGreekNumbers::GreekAcrophonicThespianOneThousand),
+            '𐅲' => Ok(AncientGreekNumbers::GreekAcrophonicThespianFiveThousand),
+            '𐅳' => Ok(AncientGreekNumbers::GreekAcrophonicDelphicFiveMnas),
+            '𐅴' => Ok(AncientGreekNumbers::GreekAcrophonicStratianFiftyMnas),
+            '𐅵' => Ok(AncientGreekNumbers::GreekOneHalfSign),
+            '𐅶' => Ok(AncientGreekNumbers::GreekOneHalfSignAlternateForm),
+            '𐅷' => Ok(AncientGreekNumbers::GreekTwoThirdsSign),
+            '𐅸' => Ok(AncientGreekNumbers::GreekThreeQuartersSign),
+            '𐅹' => Ok(AncientGreekNumbers::GreekYearSign),
+            '𐅺' => Ok(AncientGreekNumbers::GreekTalentSign),
+            '𐅻' => Ok(AncientGreekNumbers::GreekDrachmaSign),
+            '𐅼' => Ok(AncientGreekNumbers::GreekObolSign),
+            '𐅽' => Ok(AncientGreekNumbers::GreekTwoObolsSign),
+            '𐅾' => Ok(AncientGreekNumbers::GreekThreeObolsSign),
+            '𐅿' => Ok(AncientGreekNumbers::GreekFourObolsSign),
+            '𐆀' => Ok(AncientGreekNumbers::GreekFiveObolsSign),
+            '𐆁' => Ok(AncientGreekNumbers::GreekMetretesSign),
+            '𐆂' => Ok(AncientGreekNumbers::GreekKyathosBaseSign),
+            '𐆃' => Ok(AncientGreekNumbers::GreekLitraSign),
+            '𐆄' => Ok(AncientGreekNumbers::GreekOunkiaSign),
+            '𐆅' => Ok(AncientGreekNumbers::GreekXestesSign),
+            '𐆆' => Ok(AncientGreekNumbers::GreekArtabeSign),
+            '𐆇' => Ok(AncientGreekNumbers::GreekArouraSign),
+            '𐆈' => Ok(AncientGreekNumbers::GreekGrammaSign),
+            '𐆉' => Ok(AncientGreekNumbers::GreekTryblionBaseSign),
+            '𐆊' => Ok(AncientGreekNumbers::GreekZeroSign),
+            '𐆋' => Ok(AncientGreekNumbers::GreekOneQuarterSign),
+            '𐆌' => Ok(AncientGreekNumbers::GreekSinusoidSign),
+            '𐆍' => Ok(AncientGreekNumbers::GreekIndictionSign),
+            '𐆎' => Ok(AncientGreekNumbers::NomismaSign),
             _ => Err(()),
         }
     }

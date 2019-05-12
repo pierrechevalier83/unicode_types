@@ -1,222 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11000}: '𑀀'
-    pub const SIGN_CANDRABINDU: char = '𑀀';
-    /// \u{11001}: '𑀁'
-    pub const SIGN_ANUSVARA: char = '𑀁';
-    /// \u{11002}: '𑀂'
-    pub const SIGN_VISARGA: char = '𑀂';
-    /// \u{11003}: '𑀃'
-    pub const SIGN_JIHVAMULIYA: char = '𑀃';
-    /// \u{11004}: '𑀄'
-    pub const SIGN_UPADHMANIYA: char = '𑀄';
-    /// \u{11005}: '𑀅'
-    pub const LETTER_A: char = '𑀅';
-    /// \u{11006}: '𑀆'
-    pub const LETTER_AA: char = '𑀆';
-    /// \u{11007}: '𑀇'
-    pub const LETTER_I: char = '𑀇';
-    /// \u{11008}: '𑀈'
-    pub const LETTER_II: char = '𑀈';
-    /// \u{11009}: '𑀉'
-    pub const LETTER_U: char = '𑀉';
-    /// \u{1100a}: '𑀊'
-    pub const LETTER_UU: char = '𑀊';
-    /// \u{1100b}: '𑀋'
-    pub const LETTER_VOCALIC_R: char = '𑀋';
-    /// \u{1100c}: '𑀌'
-    pub const LETTER_VOCALIC_RR: char = '𑀌';
-    /// \u{1100d}: '𑀍'
-    pub const LETTER_VOCALIC_L: char = '𑀍';
-    /// \u{1100e}: '𑀎'
-    pub const LETTER_VOCALIC_LL: char = '𑀎';
-    /// \u{1100f}: '𑀏'
-    pub const LETTER_E: char = '𑀏';
-    /// \u{11010}: '𑀐'
-    pub const LETTER_AI: char = '𑀐';
-    /// \u{11011}: '𑀑'
-    pub const LETTER_O: char = '𑀑';
-    /// \u{11012}: '𑀒'
-    pub const LETTER_AU: char = '𑀒';
-    /// \u{11013}: '𑀓'
-    pub const LETTER_KA: char = '𑀓';
-    /// \u{11014}: '𑀔'
-    pub const LETTER_KHA: char = '𑀔';
-    /// \u{11015}: '𑀕'
-    pub const LETTER_GA: char = '𑀕';
-    /// \u{11016}: '𑀖'
-    pub const LETTER_GHA: char = '𑀖';
-    /// \u{11017}: '𑀗'
-    pub const LETTER_NGA: char = '𑀗';
-    /// \u{11018}: '𑀘'
-    pub const LETTER_CA: char = '𑀘';
-    /// \u{11019}: '𑀙'
-    pub const LETTER_CHA: char = '𑀙';
-    /// \u{1101a}: '𑀚'
-    pub const LETTER_JA: char = '𑀚';
-    /// \u{1101b}: '𑀛'
-    pub const LETTER_JHA: char = '𑀛';
-    /// \u{1101c}: '𑀜'
-    pub const LETTER_NYA: char = '𑀜';
-    /// \u{1101d}: '𑀝'
-    pub const LETTER_TTA: char = '𑀝';
-    /// \u{1101e}: '𑀞'
-    pub const LETTER_TTHA: char = '𑀞';
-    /// \u{1101f}: '𑀟'
-    pub const LETTER_DDA: char = '𑀟';
-    /// \u{11020}: '𑀠'
-    pub const LETTER_DDHA: char = '𑀠';
-    /// \u{11021}: '𑀡'
-    pub const LETTER_NNA: char = '𑀡';
-    /// \u{11022}: '𑀢'
-    pub const LETTER_TA: char = '𑀢';
-    /// \u{11023}: '𑀣'
-    pub const LETTER_THA: char = '𑀣';
-    /// \u{11024}: '𑀤'
-    pub const LETTER_DA: char = '𑀤';
-    /// \u{11025}: '𑀥'
-    pub const LETTER_DHA: char = '𑀥';
-    /// \u{11026}: '𑀦'
-    pub const LETTER_NA: char = '𑀦';
-    /// \u{11027}: '𑀧'
-    pub const LETTER_PA: char = '𑀧';
-    /// \u{11028}: '𑀨'
-    pub const LETTER_PHA: char = '𑀨';
-    /// \u{11029}: '𑀩'
-    pub const LETTER_BA: char = '𑀩';
-    /// \u{1102a}: '𑀪'
-    pub const LETTER_BHA: char = '𑀪';
-    /// \u{1102b}: '𑀫'
-    pub const LETTER_MA: char = '𑀫';
-    /// \u{1102c}: '𑀬'
-    pub const LETTER_YA: char = '𑀬';
-    /// \u{1102d}: '𑀭'
-    pub const LETTER_RA: char = '𑀭';
-    /// \u{1102e}: '𑀮'
-    pub const LETTER_LA: char = '𑀮';
-    /// \u{1102f}: '𑀯'
-    pub const LETTER_VA: char = '𑀯';
-    /// \u{11030}: '𑀰'
-    pub const LETTER_SHA: char = '𑀰';
-    /// \u{11031}: '𑀱'
-    pub const LETTER_SSA: char = '𑀱';
-    /// \u{11032}: '𑀲'
-    pub const LETTER_SA: char = '𑀲';
-    /// \u{11033}: '𑀳'
-    pub const LETTER_HA: char = '𑀳';
-    /// \u{11034}: '𑀴'
-    pub const LETTER_LLA: char = '𑀴';
-    /// \u{11035}: '𑀵'
-    pub const LETTER_OLD_TAMIL_LLLA: char = '𑀵';
-    /// \u{11036}: '𑀶'
-    pub const LETTER_OLD_TAMIL_RRA: char = '𑀶';
-    /// \u{11037}: '𑀷'
-    pub const LETTER_OLD_TAMIL_NNNA: char = '𑀷';
-    /// \u{11038}: '𑀸'
-    pub const VOWEL_SIGN_AA: char = '𑀸';
-    /// \u{11039}: '𑀹'
-    pub const VOWEL_SIGN_BHATTIPROLU_AA: char = '𑀹';
-    /// \u{1103a}: '𑀺'
-    pub const VOWEL_SIGN_I: char = '𑀺';
-    /// \u{1103b}: '𑀻'
-    pub const VOWEL_SIGN_II: char = '𑀻';
-    /// \u{1103c}: '𑀼'
-    pub const VOWEL_SIGN_U: char = '𑀼';
-    /// \u{1103d}: '𑀽'
-    pub const VOWEL_SIGN_UU: char = '𑀽';
-    /// \u{1103e}: '𑀾'
-    pub const VOWEL_SIGN_VOCALIC_R: char = '𑀾';
-    /// \u{1103f}: '𑀿'
-    pub const VOWEL_SIGN_VOCALIC_RR: char = '𑀿';
-    /// \u{11040}: '𑁀'
-    pub const VOWEL_SIGN_VOCALIC_L: char = '𑁀';
-    /// \u{11041}: '𑁁'
-    pub const VOWEL_SIGN_VOCALIC_LL: char = '𑁁';
-    /// \u{11042}: '𑁂'
-    pub const VOWEL_SIGN_E: char = '𑁂';
-    /// \u{11043}: '𑁃'
-    pub const VOWEL_SIGN_AI: char = '𑁃';
-    /// \u{11044}: '𑁄'
-    pub const VOWEL_SIGN_O: char = '𑁄';
-    /// \u{11045}: '𑁅'
-    pub const VOWEL_SIGN_AU: char = '𑁅';
-    /// \u{11046}: '𑁆'
-    pub const VIRAMA: char = '𑁆';
-    /// \u{11047}: '𑁇'
-    pub const DANDA: char = '𑁇';
-    /// \u{11048}: '𑁈'
-    pub const DOUBLE_DANDA: char = '𑁈';
-    /// \u{11049}: '𑁉'
-    pub const PUNCTUATION_DOT: char = '𑁉';
-    /// \u{1104a}: '𑁊'
-    pub const PUNCTUATION_DOUBLE_DOT: char = '𑁊';
-    /// \u{1104b}: '𑁋'
-    pub const PUNCTUATION_LINE: char = '𑁋';
-    /// \u{1104c}: '𑁌'
-    pub const PUNCTUATION_CRESCENT_BAR: char = '𑁌';
-    /// \u{1104d}: '𑁍'
-    pub const PUNCTUATION_LOTUS: char = '𑁍';
-    /// \u{11052}: '𑁒'
-    pub const NUMBER_ONE: char = '𑁒';
-    /// \u{11053}: '𑁓'
-    pub const NUMBER_TWO: char = '𑁓';
-    /// \u{11054}: '𑁔'
-    pub const NUMBER_THREE: char = '𑁔';
-    /// \u{11055}: '𑁕'
-    pub const NUMBER_FOUR: char = '𑁕';
-    /// \u{11056}: '𑁖'
-    pub const NUMBER_FIVE: char = '𑁖';
-    /// \u{11057}: '𑁗'
-    pub const NUMBER_SIX: char = '𑁗';
-    /// \u{11058}: '𑁘'
-    pub const NUMBER_SEVEN: char = '𑁘';
-    /// \u{11059}: '𑁙'
-    pub const NUMBER_EIGHT: char = '𑁙';
-    /// \u{1105a}: '𑁚'
-    pub const NUMBER_NINE: char = '𑁚';
-    /// \u{1105b}: '𑁛'
-    pub const NUMBER_TEN: char = '𑁛';
-    /// \u{1105c}: '𑁜'
-    pub const NUMBER_TWENTY: char = '𑁜';
-    /// \u{1105d}: '𑁝'
-    pub const NUMBER_THIRTY: char = '𑁝';
-    /// \u{1105e}: '𑁞'
-    pub const NUMBER_FORTY: char = '𑁞';
-    /// \u{1105f}: '𑁟'
-    pub const NUMBER_FIFTY: char = '𑁟';
-    /// \u{11060}: '𑁠'
-    pub const NUMBER_SIXTY: char = '𑁠';
-    /// \u{11061}: '𑁡'
-    pub const NUMBER_SEVENTY: char = '𑁡';
-    /// \u{11062}: '𑁢'
-    pub const NUMBER_EIGHTY: char = '𑁢';
-    /// \u{11063}: '𑁣'
-    pub const NUMBER_NINETY: char = '𑁣';
-    /// \u{11064}: '𑁤'
-    pub const NUMBER_ONE_HUNDRED: char = '𑁤';
-    /// \u{11065}: '𑁥'
-    pub const NUMBER_ONE_THOUSAND: char = '𑁥';
-    /// \u{11066}: '𑁦'
-    pub const DIGIT_ZERO: char = '𑁦';
-    /// \u{11067}: '𑁧'
-    pub const DIGIT_ONE: char = '𑁧';
-    /// \u{11068}: '𑁨'
-    pub const DIGIT_TWO: char = '𑁨';
-    /// \u{11069}: '𑁩'
-    pub const DIGIT_THREE: char = '𑁩';
-    /// \u{1106a}: '𑁪'
-    pub const DIGIT_FOUR: char = '𑁪';
-    /// \u{1106b}: '𑁫'
-    pub const DIGIT_FIVE: char = '𑁫';
-    /// \u{1106c}: '𑁬'
-    pub const DIGIT_SIX: char = '𑁬';
-    /// \u{1106d}: '𑁭'
-    pub const DIGIT_SEVEN: char = '𑁭';
-    /// \u{1106e}: '𑁮'
-    pub const DIGIT_EIGHT: char = '𑁮';
-    /// \u{1106f}: '𑁯'
-    pub const DIGIT_NINE: char = '𑁯';
-}
 
 /// An enum to represent all characters in the Brahmi block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -441,116 +222,115 @@ pub enum Brahmi {
 
 impl Into<char> for Brahmi {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Brahmi::SignCandrabindu => SIGN_CANDRABINDU,
-            Brahmi::SignAnusvara => SIGN_ANUSVARA,
-            Brahmi::SignVisarga => SIGN_VISARGA,
-            Brahmi::SignJihvamuliya => SIGN_JIHVAMULIYA,
-            Brahmi::SignUpadhmaniya => SIGN_UPADHMANIYA,
-            Brahmi::LetterA => LETTER_A,
-            Brahmi::LetterAa => LETTER_AA,
-            Brahmi::LetterI => LETTER_I,
-            Brahmi::LetterIi => LETTER_II,
-            Brahmi::LetterU => LETTER_U,
-            Brahmi::LetterUu => LETTER_UU,
-            Brahmi::LetterVocalicR => LETTER_VOCALIC_R,
-            Brahmi::LetterVocalicRr => LETTER_VOCALIC_RR,
-            Brahmi::LetterVocalicL => LETTER_VOCALIC_L,
-            Brahmi::LetterVocalicLl => LETTER_VOCALIC_LL,
-            Brahmi::LetterE => LETTER_E,
-            Brahmi::LetterAi => LETTER_AI,
-            Brahmi::LetterO => LETTER_O,
-            Brahmi::LetterAu => LETTER_AU,
-            Brahmi::LetterKa => LETTER_KA,
-            Brahmi::LetterKha => LETTER_KHA,
-            Brahmi::LetterGa => LETTER_GA,
-            Brahmi::LetterGha => LETTER_GHA,
-            Brahmi::LetterNga => LETTER_NGA,
-            Brahmi::LetterCa => LETTER_CA,
-            Brahmi::LetterCha => LETTER_CHA,
-            Brahmi::LetterJa => LETTER_JA,
-            Brahmi::LetterJha => LETTER_JHA,
-            Brahmi::LetterNya => LETTER_NYA,
-            Brahmi::LetterTta => LETTER_TTA,
-            Brahmi::LetterTtha => LETTER_TTHA,
-            Brahmi::LetterDda => LETTER_DDA,
-            Brahmi::LetterDdha => LETTER_DDHA,
-            Brahmi::LetterNna => LETTER_NNA,
-            Brahmi::LetterTa => LETTER_TA,
-            Brahmi::LetterTha => LETTER_THA,
-            Brahmi::LetterDa => LETTER_DA,
-            Brahmi::LetterDha => LETTER_DHA,
-            Brahmi::LetterNa => LETTER_NA,
-            Brahmi::LetterPa => LETTER_PA,
-            Brahmi::LetterPha => LETTER_PHA,
-            Brahmi::LetterBa => LETTER_BA,
-            Brahmi::LetterBha => LETTER_BHA,
-            Brahmi::LetterMa => LETTER_MA,
-            Brahmi::LetterYa => LETTER_YA,
-            Brahmi::LetterRa => LETTER_RA,
-            Brahmi::LetterLa => LETTER_LA,
-            Brahmi::LetterVa => LETTER_VA,
-            Brahmi::LetterSha => LETTER_SHA,
-            Brahmi::LetterSsa => LETTER_SSA,
-            Brahmi::LetterSa => LETTER_SA,
-            Brahmi::LetterHa => LETTER_HA,
-            Brahmi::LetterLla => LETTER_LLA,
-            Brahmi::LetterOldTamilLlla => LETTER_OLD_TAMIL_LLLA,
-            Brahmi::LetterOldTamilRra => LETTER_OLD_TAMIL_RRA,
-            Brahmi::LetterOldTamilNnna => LETTER_OLD_TAMIL_NNNA,
-            Brahmi::VowelSignAa => VOWEL_SIGN_AA,
-            Brahmi::VowelSignBhattiproluAa => VOWEL_SIGN_BHATTIPROLU_AA,
-            Brahmi::VowelSignI => VOWEL_SIGN_I,
-            Brahmi::VowelSignIi => VOWEL_SIGN_II,
-            Brahmi::VowelSignU => VOWEL_SIGN_U,
-            Brahmi::VowelSignUu => VOWEL_SIGN_UU,
-            Brahmi::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            Brahmi::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
-            Brahmi::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
-            Brahmi::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
-            Brahmi::VowelSignE => VOWEL_SIGN_E,
-            Brahmi::VowelSignAi => VOWEL_SIGN_AI,
-            Brahmi::VowelSignO => VOWEL_SIGN_O,
-            Brahmi::VowelSignAu => VOWEL_SIGN_AU,
-            Brahmi::Virama => VIRAMA,
-            Brahmi::Danda => DANDA,
-            Brahmi::DoubleDanda => DOUBLE_DANDA,
-            Brahmi::PunctuationDot => PUNCTUATION_DOT,
-            Brahmi::PunctuationDoubleDot => PUNCTUATION_DOUBLE_DOT,
-            Brahmi::PunctuationLine => PUNCTUATION_LINE,
-            Brahmi::PunctuationCrescentBar => PUNCTUATION_CRESCENT_BAR,
-            Brahmi::PunctuationLotus => PUNCTUATION_LOTUS,
-            Brahmi::NumberOne => NUMBER_ONE,
-            Brahmi::NumberTwo => NUMBER_TWO,
-            Brahmi::NumberThree => NUMBER_THREE,
-            Brahmi::NumberFour => NUMBER_FOUR,
-            Brahmi::NumberFive => NUMBER_FIVE,
-            Brahmi::NumberSix => NUMBER_SIX,
-            Brahmi::NumberSeven => NUMBER_SEVEN,
-            Brahmi::NumberEight => NUMBER_EIGHT,
-            Brahmi::NumberNine => NUMBER_NINE,
-            Brahmi::NumberTen => NUMBER_TEN,
-            Brahmi::NumberTwenty => NUMBER_TWENTY,
-            Brahmi::NumberThirty => NUMBER_THIRTY,
-            Brahmi::NumberForty => NUMBER_FORTY,
-            Brahmi::NumberFifty => NUMBER_FIFTY,
-            Brahmi::NumberSixty => NUMBER_SIXTY,
-            Brahmi::NumberSeventy => NUMBER_SEVENTY,
-            Brahmi::NumberEighty => NUMBER_EIGHTY,
-            Brahmi::NumberNinety => NUMBER_NINETY,
-            Brahmi::NumberOneHundred => NUMBER_ONE_HUNDRED,
-            Brahmi::NumberOneThousand => NUMBER_ONE_THOUSAND,
-            Brahmi::DigitZero => DIGIT_ZERO,
-            Brahmi::DigitOne => DIGIT_ONE,
-            Brahmi::DigitTwo => DIGIT_TWO,
-            Brahmi::DigitThree => DIGIT_THREE,
-            Brahmi::DigitFour => DIGIT_FOUR,
-            Brahmi::DigitFive => DIGIT_FIVE,
-            Brahmi::DigitSix => DIGIT_SIX,
-            Brahmi::DigitSeven => DIGIT_SEVEN,
-            Brahmi::DigitEight => DIGIT_EIGHT,
-            Brahmi::DigitNine => DIGIT_NINE,
+            Brahmi::SignCandrabindu => '𑀀',
+            Brahmi::SignAnusvara => '𑀁',
+            Brahmi::SignVisarga => '𑀂',
+            Brahmi::SignJihvamuliya => '𑀃',
+            Brahmi::SignUpadhmaniya => '𑀄',
+            Brahmi::LetterA => '𑀅',
+            Brahmi::LetterAa => '𑀆',
+            Brahmi::LetterI => '𑀇',
+            Brahmi::LetterIi => '𑀈',
+            Brahmi::LetterU => '𑀉',
+            Brahmi::LetterUu => '𑀊',
+            Brahmi::LetterVocalicR => '𑀋',
+            Brahmi::LetterVocalicRr => '𑀌',
+            Brahmi::LetterVocalicL => '𑀍',
+            Brahmi::LetterVocalicLl => '𑀎',
+            Brahmi::LetterE => '𑀏',
+            Brahmi::LetterAi => '𑀐',
+            Brahmi::LetterO => '𑀑',
+            Brahmi::LetterAu => '𑀒',
+            Brahmi::LetterKa => '𑀓',
+            Brahmi::LetterKha => '𑀔',
+            Brahmi::LetterGa => '𑀕',
+            Brahmi::LetterGha => '𑀖',
+            Brahmi::LetterNga => '𑀗',
+            Brahmi::LetterCa => '𑀘',
+            Brahmi::LetterCha => '𑀙',
+            Brahmi::LetterJa => '𑀚',
+            Brahmi::LetterJha => '𑀛',
+            Brahmi::LetterNya => '𑀜',
+            Brahmi::LetterTta => '𑀝',
+            Brahmi::LetterTtha => '𑀞',
+            Brahmi::LetterDda => '𑀟',
+            Brahmi::LetterDdha => '𑀠',
+            Brahmi::LetterNna => '𑀡',
+            Brahmi::LetterTa => '𑀢',
+            Brahmi::LetterTha => '𑀣',
+            Brahmi::LetterDa => '𑀤',
+            Brahmi::LetterDha => '𑀥',
+            Brahmi::LetterNa => '𑀦',
+            Brahmi::LetterPa => '𑀧',
+            Brahmi::LetterPha => '𑀨',
+            Brahmi::LetterBa => '𑀩',
+            Brahmi::LetterBha => '𑀪',
+            Brahmi::LetterMa => '𑀫',
+            Brahmi::LetterYa => '𑀬',
+            Brahmi::LetterRa => '𑀭',
+            Brahmi::LetterLa => '𑀮',
+            Brahmi::LetterVa => '𑀯',
+            Brahmi::LetterSha => '𑀰',
+            Brahmi::LetterSsa => '𑀱',
+            Brahmi::LetterSa => '𑀲',
+            Brahmi::LetterHa => '𑀳',
+            Brahmi::LetterLla => '𑀴',
+            Brahmi::LetterOldTamilLlla => '𑀵',
+            Brahmi::LetterOldTamilRra => '𑀶',
+            Brahmi::LetterOldTamilNnna => '𑀷',
+            Brahmi::VowelSignAa => '𑀸',
+            Brahmi::VowelSignBhattiproluAa => '𑀹',
+            Brahmi::VowelSignI => '𑀺',
+            Brahmi::VowelSignIi => '𑀻',
+            Brahmi::VowelSignU => '𑀼',
+            Brahmi::VowelSignUu => '𑀽',
+            Brahmi::VowelSignVocalicR => '𑀾',
+            Brahmi::VowelSignVocalicRr => '𑀿',
+            Brahmi::VowelSignVocalicL => '𑁀',
+            Brahmi::VowelSignVocalicLl => '𑁁',
+            Brahmi::VowelSignE => '𑁂',
+            Brahmi::VowelSignAi => '𑁃',
+            Brahmi::VowelSignO => '𑁄',
+            Brahmi::VowelSignAu => '𑁅',
+            Brahmi::Virama => '𑁆',
+            Brahmi::Danda => '𑁇',
+            Brahmi::DoubleDanda => '𑁈',
+            Brahmi::PunctuationDot => '𑁉',
+            Brahmi::PunctuationDoubleDot => '𑁊',
+            Brahmi::PunctuationLine => '𑁋',
+            Brahmi::PunctuationCrescentBar => '𑁌',
+            Brahmi::PunctuationLotus => '𑁍',
+            Brahmi::NumberOne => '𑁒',
+            Brahmi::NumberTwo => '𑁓',
+            Brahmi::NumberThree => '𑁔',
+            Brahmi::NumberFour => '𑁕',
+            Brahmi::NumberFive => '𑁖',
+            Brahmi::NumberSix => '𑁗',
+            Brahmi::NumberSeven => '𑁘',
+            Brahmi::NumberEight => '𑁙',
+            Brahmi::NumberNine => '𑁚',
+            Brahmi::NumberTen => '𑁛',
+            Brahmi::NumberTwenty => '𑁜',
+            Brahmi::NumberThirty => '𑁝',
+            Brahmi::NumberForty => '𑁞',
+            Brahmi::NumberFifty => '𑁟',
+            Brahmi::NumberSixty => '𑁠',
+            Brahmi::NumberSeventy => '𑁡',
+            Brahmi::NumberEighty => '𑁢',
+            Brahmi::NumberNinety => '𑁣',
+            Brahmi::NumberOneHundred => '𑁤',
+            Brahmi::NumberOneThousand => '𑁥',
+            Brahmi::DigitZero => '𑁦',
+            Brahmi::DigitOne => '𑁧',
+            Brahmi::DigitTwo => '𑁨',
+            Brahmi::DigitThree => '𑁩',
+            Brahmi::DigitFour => '𑁪',
+            Brahmi::DigitFive => '𑁫',
+            Brahmi::DigitSix => '𑁬',
+            Brahmi::DigitSeven => '𑁭',
+            Brahmi::DigitEight => '𑁮',
+            Brahmi::DigitNine => '𑁯',
         }
     }
 }
@@ -558,116 +338,115 @@ impl Into<char> for Brahmi {
 impl std::convert::TryFrom<char> for Brahmi {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_CANDRABINDU => Ok(Brahmi::SignCandrabindu),
-            SIGN_ANUSVARA => Ok(Brahmi::SignAnusvara),
-            SIGN_VISARGA => Ok(Brahmi::SignVisarga),
-            SIGN_JIHVAMULIYA => Ok(Brahmi::SignJihvamuliya),
-            SIGN_UPADHMANIYA => Ok(Brahmi::SignUpadhmaniya),
-            LETTER_A => Ok(Brahmi::LetterA),
-            LETTER_AA => Ok(Brahmi::LetterAa),
-            LETTER_I => Ok(Brahmi::LetterI),
-            LETTER_II => Ok(Brahmi::LetterIi),
-            LETTER_U => Ok(Brahmi::LetterU),
-            LETTER_UU => Ok(Brahmi::LetterUu),
-            LETTER_VOCALIC_R => Ok(Brahmi::LetterVocalicR),
-            LETTER_VOCALIC_RR => Ok(Brahmi::LetterVocalicRr),
-            LETTER_VOCALIC_L => Ok(Brahmi::LetterVocalicL),
-            LETTER_VOCALIC_LL => Ok(Brahmi::LetterVocalicLl),
-            LETTER_E => Ok(Brahmi::LetterE),
-            LETTER_AI => Ok(Brahmi::LetterAi),
-            LETTER_O => Ok(Brahmi::LetterO),
-            LETTER_AU => Ok(Brahmi::LetterAu),
-            LETTER_KA => Ok(Brahmi::LetterKa),
-            LETTER_KHA => Ok(Brahmi::LetterKha),
-            LETTER_GA => Ok(Brahmi::LetterGa),
-            LETTER_GHA => Ok(Brahmi::LetterGha),
-            LETTER_NGA => Ok(Brahmi::LetterNga),
-            LETTER_CA => Ok(Brahmi::LetterCa),
-            LETTER_CHA => Ok(Brahmi::LetterCha),
-            LETTER_JA => Ok(Brahmi::LetterJa),
-            LETTER_JHA => Ok(Brahmi::LetterJha),
-            LETTER_NYA => Ok(Brahmi::LetterNya),
-            LETTER_TTA => Ok(Brahmi::LetterTta),
-            LETTER_TTHA => Ok(Brahmi::LetterTtha),
-            LETTER_DDA => Ok(Brahmi::LetterDda),
-            LETTER_DDHA => Ok(Brahmi::LetterDdha),
-            LETTER_NNA => Ok(Brahmi::LetterNna),
-            LETTER_TA => Ok(Brahmi::LetterTa),
-            LETTER_THA => Ok(Brahmi::LetterTha),
-            LETTER_DA => Ok(Brahmi::LetterDa),
-            LETTER_DHA => Ok(Brahmi::LetterDha),
-            LETTER_NA => Ok(Brahmi::LetterNa),
-            LETTER_PA => Ok(Brahmi::LetterPa),
-            LETTER_PHA => Ok(Brahmi::LetterPha),
-            LETTER_BA => Ok(Brahmi::LetterBa),
-            LETTER_BHA => Ok(Brahmi::LetterBha),
-            LETTER_MA => Ok(Brahmi::LetterMa),
-            LETTER_YA => Ok(Brahmi::LetterYa),
-            LETTER_RA => Ok(Brahmi::LetterRa),
-            LETTER_LA => Ok(Brahmi::LetterLa),
-            LETTER_VA => Ok(Brahmi::LetterVa),
-            LETTER_SHA => Ok(Brahmi::LetterSha),
-            LETTER_SSA => Ok(Brahmi::LetterSsa),
-            LETTER_SA => Ok(Brahmi::LetterSa),
-            LETTER_HA => Ok(Brahmi::LetterHa),
-            LETTER_LLA => Ok(Brahmi::LetterLla),
-            LETTER_OLD_TAMIL_LLLA => Ok(Brahmi::LetterOldTamilLlla),
-            LETTER_OLD_TAMIL_RRA => Ok(Brahmi::LetterOldTamilRra),
-            LETTER_OLD_TAMIL_NNNA => Ok(Brahmi::LetterOldTamilNnna),
-            VOWEL_SIGN_AA => Ok(Brahmi::VowelSignAa),
-            VOWEL_SIGN_BHATTIPROLU_AA => Ok(Brahmi::VowelSignBhattiproluAa),
-            VOWEL_SIGN_I => Ok(Brahmi::VowelSignI),
-            VOWEL_SIGN_II => Ok(Brahmi::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Brahmi::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Brahmi::VowelSignUu),
-            VOWEL_SIGN_VOCALIC_R => Ok(Brahmi::VowelSignVocalicR),
-            VOWEL_SIGN_VOCALIC_RR => Ok(Brahmi::VowelSignVocalicRr),
-            VOWEL_SIGN_VOCALIC_L => Ok(Brahmi::VowelSignVocalicL),
-            VOWEL_SIGN_VOCALIC_LL => Ok(Brahmi::VowelSignVocalicLl),
-            VOWEL_SIGN_E => Ok(Brahmi::VowelSignE),
-            VOWEL_SIGN_AI => Ok(Brahmi::VowelSignAi),
-            VOWEL_SIGN_O => Ok(Brahmi::VowelSignO),
-            VOWEL_SIGN_AU => Ok(Brahmi::VowelSignAu),
-            VIRAMA => Ok(Brahmi::Virama),
-            DANDA => Ok(Brahmi::Danda),
-            DOUBLE_DANDA => Ok(Brahmi::DoubleDanda),
-            PUNCTUATION_DOT => Ok(Brahmi::PunctuationDot),
-            PUNCTUATION_DOUBLE_DOT => Ok(Brahmi::PunctuationDoubleDot),
-            PUNCTUATION_LINE => Ok(Brahmi::PunctuationLine),
-            PUNCTUATION_CRESCENT_BAR => Ok(Brahmi::PunctuationCrescentBar),
-            PUNCTUATION_LOTUS => Ok(Brahmi::PunctuationLotus),
-            NUMBER_ONE => Ok(Brahmi::NumberOne),
-            NUMBER_TWO => Ok(Brahmi::NumberTwo),
-            NUMBER_THREE => Ok(Brahmi::NumberThree),
-            NUMBER_FOUR => Ok(Brahmi::NumberFour),
-            NUMBER_FIVE => Ok(Brahmi::NumberFive),
-            NUMBER_SIX => Ok(Brahmi::NumberSix),
-            NUMBER_SEVEN => Ok(Brahmi::NumberSeven),
-            NUMBER_EIGHT => Ok(Brahmi::NumberEight),
-            NUMBER_NINE => Ok(Brahmi::NumberNine),
-            NUMBER_TEN => Ok(Brahmi::NumberTen),
-            NUMBER_TWENTY => Ok(Brahmi::NumberTwenty),
-            NUMBER_THIRTY => Ok(Brahmi::NumberThirty),
-            NUMBER_FORTY => Ok(Brahmi::NumberForty),
-            NUMBER_FIFTY => Ok(Brahmi::NumberFifty),
-            NUMBER_SIXTY => Ok(Brahmi::NumberSixty),
-            NUMBER_SEVENTY => Ok(Brahmi::NumberSeventy),
-            NUMBER_EIGHTY => Ok(Brahmi::NumberEighty),
-            NUMBER_NINETY => Ok(Brahmi::NumberNinety),
-            NUMBER_ONE_HUNDRED => Ok(Brahmi::NumberOneHundred),
-            NUMBER_ONE_THOUSAND => Ok(Brahmi::NumberOneThousand),
-            DIGIT_ZERO => Ok(Brahmi::DigitZero),
-            DIGIT_ONE => Ok(Brahmi::DigitOne),
-            DIGIT_TWO => Ok(Brahmi::DigitTwo),
-            DIGIT_THREE => Ok(Brahmi::DigitThree),
-            DIGIT_FOUR => Ok(Brahmi::DigitFour),
-            DIGIT_FIVE => Ok(Brahmi::DigitFive),
-            DIGIT_SIX => Ok(Brahmi::DigitSix),
-            DIGIT_SEVEN => Ok(Brahmi::DigitSeven),
-            DIGIT_EIGHT => Ok(Brahmi::DigitEight),
-            DIGIT_NINE => Ok(Brahmi::DigitNine),
+            '𑀀' => Ok(Brahmi::SignCandrabindu),
+            '𑀁' => Ok(Brahmi::SignAnusvara),
+            '𑀂' => Ok(Brahmi::SignVisarga),
+            '𑀃' => Ok(Brahmi::SignJihvamuliya),
+            '𑀄' => Ok(Brahmi::SignUpadhmaniya),
+            '𑀅' => Ok(Brahmi::LetterA),
+            '𑀆' => Ok(Brahmi::LetterAa),
+            '𑀇' => Ok(Brahmi::LetterI),
+            '𑀈' => Ok(Brahmi::LetterIi),
+            '𑀉' => Ok(Brahmi::LetterU),
+            '𑀊' => Ok(Brahmi::LetterUu),
+            '𑀋' => Ok(Brahmi::LetterVocalicR),
+            '𑀌' => Ok(Brahmi::LetterVocalicRr),
+            '𑀍' => Ok(Brahmi::LetterVocalicL),
+            '𑀎' => Ok(Brahmi::LetterVocalicLl),
+            '𑀏' => Ok(Brahmi::LetterE),
+            '𑀐' => Ok(Brahmi::LetterAi),
+            '𑀑' => Ok(Brahmi::LetterO),
+            '𑀒' => Ok(Brahmi::LetterAu),
+            '𑀓' => Ok(Brahmi::LetterKa),
+            '𑀔' => Ok(Brahmi::LetterKha),
+            '𑀕' => Ok(Brahmi::LetterGa),
+            '𑀖' => Ok(Brahmi::LetterGha),
+            '𑀗' => Ok(Brahmi::LetterNga),
+            '𑀘' => Ok(Brahmi::LetterCa),
+            '𑀙' => Ok(Brahmi::LetterCha),
+            '𑀚' => Ok(Brahmi::LetterJa),
+            '𑀛' => Ok(Brahmi::LetterJha),
+            '𑀜' => Ok(Brahmi::LetterNya),
+            '𑀝' => Ok(Brahmi::LetterTta),
+            '𑀞' => Ok(Brahmi::LetterTtha),
+            '𑀟' => Ok(Brahmi::LetterDda),
+            '𑀠' => Ok(Brahmi::LetterDdha),
+            '𑀡' => Ok(Brahmi::LetterNna),
+            '𑀢' => Ok(Brahmi::LetterTa),
+            '𑀣' => Ok(Brahmi::LetterTha),
+            '𑀤' => Ok(Brahmi::LetterDa),
+            '𑀥' => Ok(Brahmi::LetterDha),
+            '𑀦' => Ok(Brahmi::LetterNa),
+            '𑀧' => Ok(Brahmi::LetterPa),
+            '𑀨' => Ok(Brahmi::LetterPha),
+            '𑀩' => Ok(Brahmi::LetterBa),
+            '𑀪' => Ok(Brahmi::LetterBha),
+            '𑀫' => Ok(Brahmi::LetterMa),
+            '𑀬' => Ok(Brahmi::LetterYa),
+            '𑀭' => Ok(Brahmi::LetterRa),
+            '𑀮' => Ok(Brahmi::LetterLa),
+            '𑀯' => Ok(Brahmi::LetterVa),
+            '𑀰' => Ok(Brahmi::LetterSha),
+            '𑀱' => Ok(Brahmi::LetterSsa),
+            '𑀲' => Ok(Brahmi::LetterSa),
+            '𑀳' => Ok(Brahmi::LetterHa),
+            '𑀴' => Ok(Brahmi::LetterLla),
+            '𑀵' => Ok(Brahmi::LetterOldTamilLlla),
+            '𑀶' => Ok(Brahmi::LetterOldTamilRra),
+            '𑀷' => Ok(Brahmi::LetterOldTamilNnna),
+            '𑀸' => Ok(Brahmi::VowelSignAa),
+            '𑀹' => Ok(Brahmi::VowelSignBhattiproluAa),
+            '𑀺' => Ok(Brahmi::VowelSignI),
+            '𑀻' => Ok(Brahmi::VowelSignIi),
+            '𑀼' => Ok(Brahmi::VowelSignU),
+            '𑀽' => Ok(Brahmi::VowelSignUu),
+            '𑀾' => Ok(Brahmi::VowelSignVocalicR),
+            '𑀿' => Ok(Brahmi::VowelSignVocalicRr),
+            '𑁀' => Ok(Brahmi::VowelSignVocalicL),
+            '𑁁' => Ok(Brahmi::VowelSignVocalicLl),
+            '𑁂' => Ok(Brahmi::VowelSignE),
+            '𑁃' => Ok(Brahmi::VowelSignAi),
+            '𑁄' => Ok(Brahmi::VowelSignO),
+            '𑁅' => Ok(Brahmi::VowelSignAu),
+            '𑁆' => Ok(Brahmi::Virama),
+            '𑁇' => Ok(Brahmi::Danda),
+            '𑁈' => Ok(Brahmi::DoubleDanda),
+            '𑁉' => Ok(Brahmi::PunctuationDot),
+            '𑁊' => Ok(Brahmi::PunctuationDoubleDot),
+            '𑁋' => Ok(Brahmi::PunctuationLine),
+            '𑁌' => Ok(Brahmi::PunctuationCrescentBar),
+            '𑁍' => Ok(Brahmi::PunctuationLotus),
+            '𑁒' => Ok(Brahmi::NumberOne),
+            '𑁓' => Ok(Brahmi::NumberTwo),
+            '𑁔' => Ok(Brahmi::NumberThree),
+            '𑁕' => Ok(Brahmi::NumberFour),
+            '𑁖' => Ok(Brahmi::NumberFive),
+            '𑁗' => Ok(Brahmi::NumberSix),
+            '𑁘' => Ok(Brahmi::NumberSeven),
+            '𑁙' => Ok(Brahmi::NumberEight),
+            '𑁚' => Ok(Brahmi::NumberNine),
+            '𑁛' => Ok(Brahmi::NumberTen),
+            '𑁜' => Ok(Brahmi::NumberTwenty),
+            '𑁝' => Ok(Brahmi::NumberThirty),
+            '𑁞' => Ok(Brahmi::NumberForty),
+            '𑁟' => Ok(Brahmi::NumberFifty),
+            '𑁠' => Ok(Brahmi::NumberSixty),
+            '𑁡' => Ok(Brahmi::NumberSeventy),
+            '𑁢' => Ok(Brahmi::NumberEighty),
+            '𑁣' => Ok(Brahmi::NumberNinety),
+            '𑁤' => Ok(Brahmi::NumberOneHundred),
+            '𑁥' => Ok(Brahmi::NumberOneThousand),
+            '𑁦' => Ok(Brahmi::DigitZero),
+            '𑁧' => Ok(Brahmi::DigitOne),
+            '𑁨' => Ok(Brahmi::DigitTwo),
+            '𑁩' => Ok(Brahmi::DigitThree),
+            '𑁪' => Ok(Brahmi::DigitFour),
+            '𑁫' => Ok(Brahmi::DigitFive),
+            '𑁬' => Ok(Brahmi::DigitSix),
+            '𑁭' => Ok(Brahmi::DigitSeven),
+            '𑁮' => Ok(Brahmi::DigitEight),
+            '𑁯' => Ok(Brahmi::DigitNine),
             _ => Err(()),
         }
     }

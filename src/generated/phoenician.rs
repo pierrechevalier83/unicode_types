@@ -1,62 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10900}: '𐤀'
-    pub const LETTER_ALF: char = '𐤀';
-    /// \u{10901}: '𐤁'
-    pub const LETTER_BET: char = '𐤁';
-    /// \u{10902}: '𐤂'
-    pub const LETTER_GAML: char = '𐤂';
-    /// \u{10903}: '𐤃'
-    pub const LETTER_DELT: char = '𐤃';
-    /// \u{10904}: '𐤄'
-    pub const LETTER_HE: char = '𐤄';
-    /// \u{10905}: '𐤅'
-    pub const LETTER_WAU: char = '𐤅';
-    /// \u{10906}: '𐤆'
-    pub const LETTER_ZAI: char = '𐤆';
-    /// \u{10907}: '𐤇'
-    pub const LETTER_HET: char = '𐤇';
-    /// \u{10908}: '𐤈'
-    pub const LETTER_TET: char = '𐤈';
-    /// \u{10909}: '𐤉'
-    pub const LETTER_YOD: char = '𐤉';
-    /// \u{1090a}: '𐤊'
-    pub const LETTER_KAF: char = '𐤊';
-    /// \u{1090b}: '𐤋'
-    pub const LETTER_LAMD: char = '𐤋';
-    /// \u{1090c}: '𐤌'
-    pub const LETTER_MEM: char = '𐤌';
-    /// \u{1090d}: '𐤍'
-    pub const LETTER_NUN: char = '𐤍';
-    /// \u{1090e}: '𐤎'
-    pub const LETTER_SEMK: char = '𐤎';
-    /// \u{1090f}: '𐤏'
-    pub const LETTER_AIN: char = '𐤏';
-    /// \u{10910}: '𐤐'
-    pub const LETTER_PE: char = '𐤐';
-    /// \u{10911}: '𐤑'
-    pub const LETTER_SADE: char = '𐤑';
-    /// \u{10912}: '𐤒'
-    pub const LETTER_QOF: char = '𐤒';
-    /// \u{10913}: '𐤓'
-    pub const LETTER_ROSH: char = '𐤓';
-    /// \u{10914}: '𐤔'
-    pub const LETTER_SHIN: char = '𐤔';
-    /// \u{10915}: '𐤕'
-    pub const LETTER_TAU: char = '𐤕';
-    /// \u{10916}: '𐤖'
-    pub const NUMBER_ONE: char = '𐤖';
-    /// \u{10917}: '𐤗'
-    pub const NUMBER_TEN: char = '𐤗';
-    /// \u{10918}: '𐤘'
-    pub const NUMBER_TWENTY: char = '𐤘';
-    /// \u{10919}: '𐤙'
-    pub const NUMBER_ONE_HUNDRED: char = '𐤙';
-    /// \u{1091a}: '𐤚'
-    pub const NUMBER_TWO: char = '𐤚';
-    /// \u{1091b}: '𐤛'
-    pub const NUMBER_THREE: char = '𐤛';
-}
 
 /// An enum to represent all characters in the Phoenician block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -121,36 +62,35 @@ pub enum Phoenician {
 
 impl Into<char> for Phoenician {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Phoenician::LetterAlf => LETTER_ALF,
-            Phoenician::LetterBet => LETTER_BET,
-            Phoenician::LetterGaml => LETTER_GAML,
-            Phoenician::LetterDelt => LETTER_DELT,
-            Phoenician::LetterHe => LETTER_HE,
-            Phoenician::LetterWau => LETTER_WAU,
-            Phoenician::LetterZai => LETTER_ZAI,
-            Phoenician::LetterHet => LETTER_HET,
-            Phoenician::LetterTet => LETTER_TET,
-            Phoenician::LetterYod => LETTER_YOD,
-            Phoenician::LetterKaf => LETTER_KAF,
-            Phoenician::LetterLamd => LETTER_LAMD,
-            Phoenician::LetterMem => LETTER_MEM,
-            Phoenician::LetterNun => LETTER_NUN,
-            Phoenician::LetterSemk => LETTER_SEMK,
-            Phoenician::LetterAin => LETTER_AIN,
-            Phoenician::LetterPe => LETTER_PE,
-            Phoenician::LetterSade => LETTER_SADE,
-            Phoenician::LetterQof => LETTER_QOF,
-            Phoenician::LetterRosh => LETTER_ROSH,
-            Phoenician::LetterShin => LETTER_SHIN,
-            Phoenician::LetterTau => LETTER_TAU,
-            Phoenician::NumberOne => NUMBER_ONE,
-            Phoenician::NumberTen => NUMBER_TEN,
-            Phoenician::NumberTwenty => NUMBER_TWENTY,
-            Phoenician::NumberOneHundred => NUMBER_ONE_HUNDRED,
-            Phoenician::NumberTwo => NUMBER_TWO,
-            Phoenician::NumberThree => NUMBER_THREE,
+            Phoenician::LetterAlf => '𐤀',
+            Phoenician::LetterBet => '𐤁',
+            Phoenician::LetterGaml => '𐤂',
+            Phoenician::LetterDelt => '𐤃',
+            Phoenician::LetterHe => '𐤄',
+            Phoenician::LetterWau => '𐤅',
+            Phoenician::LetterZai => '𐤆',
+            Phoenician::LetterHet => '𐤇',
+            Phoenician::LetterTet => '𐤈',
+            Phoenician::LetterYod => '𐤉',
+            Phoenician::LetterKaf => '𐤊',
+            Phoenician::LetterLamd => '𐤋',
+            Phoenician::LetterMem => '𐤌',
+            Phoenician::LetterNun => '𐤍',
+            Phoenician::LetterSemk => '𐤎',
+            Phoenician::LetterAin => '𐤏',
+            Phoenician::LetterPe => '𐤐',
+            Phoenician::LetterSade => '𐤑',
+            Phoenician::LetterQof => '𐤒',
+            Phoenician::LetterRosh => '𐤓',
+            Phoenician::LetterShin => '𐤔',
+            Phoenician::LetterTau => '𐤕',
+            Phoenician::NumberOne => '𐤖',
+            Phoenician::NumberTen => '𐤗',
+            Phoenician::NumberTwenty => '𐤘',
+            Phoenician::NumberOneHundred => '𐤙',
+            Phoenician::NumberTwo => '𐤚',
+            Phoenician::NumberThree => '𐤛',
         }
     }
 }
@@ -158,36 +98,35 @@ impl Into<char> for Phoenician {
 impl std::convert::TryFrom<char> for Phoenician {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_ALF => Ok(Phoenician::LetterAlf),
-            LETTER_BET => Ok(Phoenician::LetterBet),
-            LETTER_GAML => Ok(Phoenician::LetterGaml),
-            LETTER_DELT => Ok(Phoenician::LetterDelt),
-            LETTER_HE => Ok(Phoenician::LetterHe),
-            LETTER_WAU => Ok(Phoenician::LetterWau),
-            LETTER_ZAI => Ok(Phoenician::LetterZai),
-            LETTER_HET => Ok(Phoenician::LetterHet),
-            LETTER_TET => Ok(Phoenician::LetterTet),
-            LETTER_YOD => Ok(Phoenician::LetterYod),
-            LETTER_KAF => Ok(Phoenician::LetterKaf),
-            LETTER_LAMD => Ok(Phoenician::LetterLamd),
-            LETTER_MEM => Ok(Phoenician::LetterMem),
-            LETTER_NUN => Ok(Phoenician::LetterNun),
-            LETTER_SEMK => Ok(Phoenician::LetterSemk),
-            LETTER_AIN => Ok(Phoenician::LetterAin),
-            LETTER_PE => Ok(Phoenician::LetterPe),
-            LETTER_SADE => Ok(Phoenician::LetterSade),
-            LETTER_QOF => Ok(Phoenician::LetterQof),
-            LETTER_ROSH => Ok(Phoenician::LetterRosh),
-            LETTER_SHIN => Ok(Phoenician::LetterShin),
-            LETTER_TAU => Ok(Phoenician::LetterTau),
-            NUMBER_ONE => Ok(Phoenician::NumberOne),
-            NUMBER_TEN => Ok(Phoenician::NumberTen),
-            NUMBER_TWENTY => Ok(Phoenician::NumberTwenty),
-            NUMBER_ONE_HUNDRED => Ok(Phoenician::NumberOneHundred),
-            NUMBER_TWO => Ok(Phoenician::NumberTwo),
-            NUMBER_THREE => Ok(Phoenician::NumberThree),
+            '𐤀' => Ok(Phoenician::LetterAlf),
+            '𐤁' => Ok(Phoenician::LetterBet),
+            '𐤂' => Ok(Phoenician::LetterGaml),
+            '𐤃' => Ok(Phoenician::LetterDelt),
+            '𐤄' => Ok(Phoenician::LetterHe),
+            '𐤅' => Ok(Phoenician::LetterWau),
+            '𐤆' => Ok(Phoenician::LetterZai),
+            '𐤇' => Ok(Phoenician::LetterHet),
+            '𐤈' => Ok(Phoenician::LetterTet),
+            '𐤉' => Ok(Phoenician::LetterYod),
+            '𐤊' => Ok(Phoenician::LetterKaf),
+            '𐤋' => Ok(Phoenician::LetterLamd),
+            '𐤌' => Ok(Phoenician::LetterMem),
+            '𐤍' => Ok(Phoenician::LetterNun),
+            '𐤎' => Ok(Phoenician::LetterSemk),
+            '𐤏' => Ok(Phoenician::LetterAin),
+            '𐤐' => Ok(Phoenician::LetterPe),
+            '𐤑' => Ok(Phoenician::LetterSade),
+            '𐤒' => Ok(Phoenician::LetterQof),
+            '𐤓' => Ok(Phoenician::LetterRosh),
+            '𐤔' => Ok(Phoenician::LetterShin),
+            '𐤕' => Ok(Phoenician::LetterTau),
+            '𐤖' => Ok(Phoenician::NumberOne),
+            '𐤗' => Ok(Phoenician::NumberTen),
+            '𐤘' => Ok(Phoenician::NumberTwenty),
+            '𐤙' => Ok(Phoenician::NumberOneHundred),
+            '𐤚' => Ok(Phoenician::NumberTwo),
+            '𐤛' => Ok(Phoenician::NumberThree),
             _ => Err(()),
         }
     }

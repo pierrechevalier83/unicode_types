@@ -1,120 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{fb00}: 'ﬀ'
-    pub const LATIN_SMALL_LIGATURE_FF: char = 'ﬀ';
-    /// \u{fb01}: 'ﬁ'
-    pub const LATIN_SMALL_LIGATURE_FI: char = 'ﬁ';
-    /// \u{fb02}: 'ﬂ'
-    pub const LATIN_SMALL_LIGATURE_FL: char = 'ﬂ';
-    /// \u{fb03}: 'ﬃ'
-    pub const LATIN_SMALL_LIGATURE_FFI: char = 'ﬃ';
-    /// \u{fb04}: 'ﬄ'
-    pub const LATIN_SMALL_LIGATURE_FFL: char = 'ﬄ';
-    /// \u{fb05}: 'ﬅ'
-    pub const LATIN_SMALL_LIGATURE_LONG_S_T: char = 'ﬅ';
-    /// \u{fb06}: 'ﬆ'
-    pub const LATIN_SMALL_LIGATURE_ST: char = 'ﬆ';
-    /// \u{fb13}: 'ﬓ'
-    pub const ARMENIAN_SMALL_LIGATURE_MEN_NOW: char = 'ﬓ';
-    /// \u{fb14}: 'ﬔ'
-    pub const ARMENIAN_SMALL_LIGATURE_MEN_ECH: char = 'ﬔ';
-    /// \u{fb15}: 'ﬕ'
-    pub const ARMENIAN_SMALL_LIGATURE_MEN_INI: char = 'ﬕ';
-    /// \u{fb16}: 'ﬖ'
-    pub const ARMENIAN_SMALL_LIGATURE_VEW_NOW: char = 'ﬖ';
-    /// \u{fb17}: 'ﬗ'
-    pub const ARMENIAN_SMALL_LIGATURE_MEN_XEH: char = 'ﬗ';
-    /// \u{fb1d}: 'יִ'
-    pub const HEBREW_LETTER_YOD_WITH_HIRIQ: char = 'יִ';
-    /// \u{fb1e}: 'ﬞ'
-    pub const HEBREW_POINT_JUDEO_DASH_SPANISH_VARIKA: char = 'ﬞ';
-    /// \u{fb1f}: 'ײַ'
-    pub const HEBREW_LIGATURE_YIDDISH_YOD_YOD_PATAH: char = 'ײַ';
-    /// \u{fb20}: 'ﬠ'
-    pub const HEBREW_LETTER_ALTERNATIVE_AYIN: char = 'ﬠ';
-    /// \u{fb21}: 'ﬡ'
-    pub const HEBREW_LETTER_WIDE_ALEF: char = 'ﬡ';
-    /// \u{fb22}: 'ﬢ'
-    pub const HEBREW_LETTER_WIDE_DALET: char = 'ﬢ';
-    /// \u{fb23}: 'ﬣ'
-    pub const HEBREW_LETTER_WIDE_HE: char = 'ﬣ';
-    /// \u{fb24}: 'ﬤ'
-    pub const HEBREW_LETTER_WIDE_KAF: char = 'ﬤ';
-    /// \u{fb25}: 'ﬥ'
-    pub const HEBREW_LETTER_WIDE_LAMED: char = 'ﬥ';
-    /// \u{fb26}: 'ﬦ'
-    pub const HEBREW_LETTER_WIDE_FINAL_MEM: char = 'ﬦ';
-    /// \u{fb27}: 'ﬧ'
-    pub const HEBREW_LETTER_WIDE_RESH: char = 'ﬧ';
-    /// \u{fb28}: 'ﬨ'
-    pub const HEBREW_LETTER_WIDE_TAV: char = 'ﬨ';
-    /// \u{fb29}: '﬩'
-    pub const HEBREW_LETTER_ALTERNATIVE_PLUS_SIGN: char = '﬩';
-    /// \u{fb2a}: 'שׁ'
-    pub const HEBREW_LETTER_SHIN_WITH_SHIN_DOT: char = 'שׁ';
-    /// \u{fb2b}: 'שׂ'
-    pub const HEBREW_LETTER_SHIN_WITH_SIN_DOT: char = 'שׂ';
-    /// \u{fb2c}: 'שּׁ'
-    pub const HEBREW_LETTER_SHIN_WITH_DAGESH_AND_SHIN_DOT: char = 'שּׁ';
-    /// \u{fb2d}: 'שּׂ'
-    pub const HEBREW_LETTER_SHIN_WITH_DAGESH_AND_SIN_DOT: char = 'שּׂ';
-    /// \u{fb2e}: 'אַ'
-    pub const HEBREW_LETTER_ALEF_WITH_PATAH: char = 'אַ';
-    /// \u{fb2f}: 'אָ'
-    pub const HEBREW_LETTER_ALEF_WITH_QAMATS: char = 'אָ';
-    /// \u{fb30}: 'אּ'
-    pub const HEBREW_LETTER_ALEF_WITH_MAPIQ: char = 'אּ';
-    /// \u{fb31}: 'בּ'
-    pub const HEBREW_LETTER_BET_WITH_DAGESH: char = 'בּ';
-    /// \u{fb32}: 'גּ'
-    pub const HEBREW_LETTER_GIMEL_WITH_DAGESH: char = 'גּ';
-    /// \u{fb33}: 'דּ'
-    pub const HEBREW_LETTER_DALET_WITH_DAGESH: char = 'דּ';
-    /// \u{fb34}: 'הּ'
-    pub const HEBREW_LETTER_HE_WITH_MAPIQ: char = 'הּ';
-    /// \u{fb35}: 'וּ'
-    pub const HEBREW_LETTER_VAV_WITH_DAGESH: char = 'וּ';
-    /// \u{fb36}: 'זּ'
-    pub const HEBREW_LETTER_ZAYIN_WITH_DAGESH: char = 'זּ';
-    /// \u{fb38}: 'טּ'
-    pub const HEBREW_LETTER_TET_WITH_DAGESH: char = 'טּ';
-    /// \u{fb39}: 'יּ'
-    pub const HEBREW_LETTER_YOD_WITH_DAGESH: char = 'יּ';
-    /// \u{fb3a}: 'ךּ'
-    pub const HEBREW_LETTER_FINAL_KAF_WITH_DAGESH: char = 'ךּ';
-    /// \u{fb3b}: 'כּ'
-    pub const HEBREW_LETTER_KAF_WITH_DAGESH: char = 'כּ';
-    /// \u{fb3c}: 'לּ'
-    pub const HEBREW_LETTER_LAMED_WITH_DAGESH: char = 'לּ';
-    /// \u{fb3e}: 'מּ'
-    pub const HEBREW_LETTER_MEM_WITH_DAGESH: char = 'מּ';
-    /// \u{fb40}: 'נּ'
-    pub const HEBREW_LETTER_NUN_WITH_DAGESH: char = 'נּ';
-    /// \u{fb41}: 'סּ'
-    pub const HEBREW_LETTER_SAMEKH_WITH_DAGESH: char = 'סּ';
-    /// \u{fb43}: 'ףּ'
-    pub const HEBREW_LETTER_FINAL_PE_WITH_DAGESH: char = 'ףּ';
-    /// \u{fb44}: 'פּ'
-    pub const HEBREW_LETTER_PE_WITH_DAGESH: char = 'פּ';
-    /// \u{fb46}: 'צּ'
-    pub const HEBREW_LETTER_TSADI_WITH_DAGESH: char = 'צּ';
-    /// \u{fb47}: 'קּ'
-    pub const HEBREW_LETTER_QOF_WITH_DAGESH: char = 'קּ';
-    /// \u{fb48}: 'רּ'
-    pub const HEBREW_LETTER_RESH_WITH_DAGESH: char = 'רּ';
-    /// \u{fb49}: 'שּ'
-    pub const HEBREW_LETTER_SHIN_WITH_DAGESH: char = 'שּ';
-    /// \u{fb4a}: 'תּ'
-    pub const HEBREW_LETTER_TAV_WITH_DAGESH: char = 'תּ';
-    /// \u{fb4b}: 'וֹ'
-    pub const HEBREW_LETTER_VAV_WITH_HOLAM: char = 'וֹ';
-    /// \u{fb4c}: 'בֿ'
-    pub const HEBREW_LETTER_BET_WITH_RAFE: char = 'בֿ';
-    /// \u{fb4d}: 'כֿ'
-    pub const HEBREW_LETTER_KAF_WITH_RAFE: char = 'כֿ';
-    /// \u{fb4e}: 'פֿ'
-    pub const HEBREW_LETTER_PE_WITH_RAFE: char = 'פֿ';
-}
 
 /// An enum to represent all characters in the AlphabeticPresentationForms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -237,65 +120,64 @@ pub enum AlphabeticPresentationForms {
 
 impl Into<char> for AlphabeticPresentationForms {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            AlphabeticPresentationForms::LatinSmallLigatureFf => LATIN_SMALL_LIGATURE_FF,
-            AlphabeticPresentationForms::LatinSmallLigatureFi => LATIN_SMALL_LIGATURE_FI,
-            AlphabeticPresentationForms::LatinSmallLigatureFl => LATIN_SMALL_LIGATURE_FL,
-            AlphabeticPresentationForms::LatinSmallLigatureFfi => LATIN_SMALL_LIGATURE_FFI,
-            AlphabeticPresentationForms::LatinSmallLigatureFfl => LATIN_SMALL_LIGATURE_FFL,
-            AlphabeticPresentationForms::LatinSmallLigatureLongST => LATIN_SMALL_LIGATURE_LONG_S_T,
-            AlphabeticPresentationForms::LatinSmallLigatureSt => LATIN_SMALL_LIGATURE_ST,
-            AlphabeticPresentationForms::ArmenianSmallLigatureMenNow => ARMENIAN_SMALL_LIGATURE_MEN_NOW,
-            AlphabeticPresentationForms::ArmenianSmallLigatureMenEch => ARMENIAN_SMALL_LIGATURE_MEN_ECH,
-            AlphabeticPresentationForms::ArmenianSmallLigatureMenIni => ARMENIAN_SMALL_LIGATURE_MEN_INI,
-            AlphabeticPresentationForms::ArmenianSmallLigatureVewNow => ARMENIAN_SMALL_LIGATURE_VEW_NOW,
-            AlphabeticPresentationForms::ArmenianSmallLigatureMenXeh => ARMENIAN_SMALL_LIGATURE_MEN_XEH,
-            AlphabeticPresentationForms::HebrewLetterYodWithHiriq => HEBREW_LETTER_YOD_WITH_HIRIQ,
-            AlphabeticPresentationForms::HebrewPointJudeoDashSpanishVarika => HEBREW_POINT_JUDEO_DASH_SPANISH_VARIKA,
-            AlphabeticPresentationForms::HebrewLigatureYiddishYodYodPatah => HEBREW_LIGATURE_YIDDISH_YOD_YOD_PATAH,
-            AlphabeticPresentationForms::HebrewLetterAlternativeAyin => HEBREW_LETTER_ALTERNATIVE_AYIN,
-            AlphabeticPresentationForms::HebrewLetterWideAlef => HEBREW_LETTER_WIDE_ALEF,
-            AlphabeticPresentationForms::HebrewLetterWideDalet => HEBREW_LETTER_WIDE_DALET,
-            AlphabeticPresentationForms::HebrewLetterWideHe => HEBREW_LETTER_WIDE_HE,
-            AlphabeticPresentationForms::HebrewLetterWideKaf => HEBREW_LETTER_WIDE_KAF,
-            AlphabeticPresentationForms::HebrewLetterWideLamed => HEBREW_LETTER_WIDE_LAMED,
-            AlphabeticPresentationForms::HebrewLetterWideFinalMem => HEBREW_LETTER_WIDE_FINAL_MEM,
-            AlphabeticPresentationForms::HebrewLetterWideResh => HEBREW_LETTER_WIDE_RESH,
-            AlphabeticPresentationForms::HebrewLetterWideTav => HEBREW_LETTER_WIDE_TAV,
-            AlphabeticPresentationForms::HebrewLetterAlternativePlusSign => HEBREW_LETTER_ALTERNATIVE_PLUS_SIGN,
-            AlphabeticPresentationForms::HebrewLetterShinWithShinDot => HEBREW_LETTER_SHIN_WITH_SHIN_DOT,
-            AlphabeticPresentationForms::HebrewLetterShinWithSinDot => HEBREW_LETTER_SHIN_WITH_SIN_DOT,
-            AlphabeticPresentationForms::HebrewLetterShinWithDageshAndShinDot => HEBREW_LETTER_SHIN_WITH_DAGESH_AND_SHIN_DOT,
-            AlphabeticPresentationForms::HebrewLetterShinWithDageshAndSinDot => HEBREW_LETTER_SHIN_WITH_DAGESH_AND_SIN_DOT,
-            AlphabeticPresentationForms::HebrewLetterAlefWithPatah => HEBREW_LETTER_ALEF_WITH_PATAH,
-            AlphabeticPresentationForms::HebrewLetterAlefWithQamats => HEBREW_LETTER_ALEF_WITH_QAMATS,
-            AlphabeticPresentationForms::HebrewLetterAlefWithMapiq => HEBREW_LETTER_ALEF_WITH_MAPIQ,
-            AlphabeticPresentationForms::HebrewLetterBetWithDagesh => HEBREW_LETTER_BET_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterGimelWithDagesh => HEBREW_LETTER_GIMEL_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterDaletWithDagesh => HEBREW_LETTER_DALET_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterHeWithMapiq => HEBREW_LETTER_HE_WITH_MAPIQ,
-            AlphabeticPresentationForms::HebrewLetterVavWithDagesh => HEBREW_LETTER_VAV_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterZayinWithDagesh => HEBREW_LETTER_ZAYIN_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterTetWithDagesh => HEBREW_LETTER_TET_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterYodWithDagesh => HEBREW_LETTER_YOD_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterFinalKafWithDagesh => HEBREW_LETTER_FINAL_KAF_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterKafWithDagesh => HEBREW_LETTER_KAF_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterLamedWithDagesh => HEBREW_LETTER_LAMED_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterMemWithDagesh => HEBREW_LETTER_MEM_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterNunWithDagesh => HEBREW_LETTER_NUN_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterSamekhWithDagesh => HEBREW_LETTER_SAMEKH_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterFinalPeWithDagesh => HEBREW_LETTER_FINAL_PE_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterPeWithDagesh => HEBREW_LETTER_PE_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterTsadiWithDagesh => HEBREW_LETTER_TSADI_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterQofWithDagesh => HEBREW_LETTER_QOF_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterReshWithDagesh => HEBREW_LETTER_RESH_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterShinWithDagesh => HEBREW_LETTER_SHIN_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterTavWithDagesh => HEBREW_LETTER_TAV_WITH_DAGESH,
-            AlphabeticPresentationForms::HebrewLetterVavWithHolam => HEBREW_LETTER_VAV_WITH_HOLAM,
-            AlphabeticPresentationForms::HebrewLetterBetWithRafe => HEBREW_LETTER_BET_WITH_RAFE,
-            AlphabeticPresentationForms::HebrewLetterKafWithRafe => HEBREW_LETTER_KAF_WITH_RAFE,
-            AlphabeticPresentationForms::HebrewLetterPeWithRafe => HEBREW_LETTER_PE_WITH_RAFE,
+            AlphabeticPresentationForms::LatinSmallLigatureFf => 'ﬀ',
+            AlphabeticPresentationForms::LatinSmallLigatureFi => 'ﬁ',
+            AlphabeticPresentationForms::LatinSmallLigatureFl => 'ﬂ',
+            AlphabeticPresentationForms::LatinSmallLigatureFfi => 'ﬃ',
+            AlphabeticPresentationForms::LatinSmallLigatureFfl => 'ﬄ',
+            AlphabeticPresentationForms::LatinSmallLigatureLongST => 'ﬅ',
+            AlphabeticPresentationForms::LatinSmallLigatureSt => 'ﬆ',
+            AlphabeticPresentationForms::ArmenianSmallLigatureMenNow => 'ﬓ',
+            AlphabeticPresentationForms::ArmenianSmallLigatureMenEch => 'ﬔ',
+            AlphabeticPresentationForms::ArmenianSmallLigatureMenIni => 'ﬕ',
+            AlphabeticPresentationForms::ArmenianSmallLigatureVewNow => 'ﬖ',
+            AlphabeticPresentationForms::ArmenianSmallLigatureMenXeh => 'ﬗ',
+            AlphabeticPresentationForms::HebrewLetterYodWithHiriq => 'יִ',
+            AlphabeticPresentationForms::HebrewPointJudeoDashSpanishVarika => 'ﬞ',
+            AlphabeticPresentationForms::HebrewLigatureYiddishYodYodPatah => 'ײַ',
+            AlphabeticPresentationForms::HebrewLetterAlternativeAyin => 'ﬠ',
+            AlphabeticPresentationForms::HebrewLetterWideAlef => 'ﬡ',
+            AlphabeticPresentationForms::HebrewLetterWideDalet => 'ﬢ',
+            AlphabeticPresentationForms::HebrewLetterWideHe => 'ﬣ',
+            AlphabeticPresentationForms::HebrewLetterWideKaf => 'ﬤ',
+            AlphabeticPresentationForms::HebrewLetterWideLamed => 'ﬥ',
+            AlphabeticPresentationForms::HebrewLetterWideFinalMem => 'ﬦ',
+            AlphabeticPresentationForms::HebrewLetterWideResh => 'ﬧ',
+            AlphabeticPresentationForms::HebrewLetterWideTav => 'ﬨ',
+            AlphabeticPresentationForms::HebrewLetterAlternativePlusSign => '﬩',
+            AlphabeticPresentationForms::HebrewLetterShinWithShinDot => 'שׁ',
+            AlphabeticPresentationForms::HebrewLetterShinWithSinDot => 'שׂ',
+            AlphabeticPresentationForms::HebrewLetterShinWithDageshAndShinDot => 'שּׁ',
+            AlphabeticPresentationForms::HebrewLetterShinWithDageshAndSinDot => 'שּׂ',
+            AlphabeticPresentationForms::HebrewLetterAlefWithPatah => 'אַ',
+            AlphabeticPresentationForms::HebrewLetterAlefWithQamats => 'אָ',
+            AlphabeticPresentationForms::HebrewLetterAlefWithMapiq => 'אּ',
+            AlphabeticPresentationForms::HebrewLetterBetWithDagesh => 'בּ',
+            AlphabeticPresentationForms::HebrewLetterGimelWithDagesh => 'גּ',
+            AlphabeticPresentationForms::HebrewLetterDaletWithDagesh => 'דּ',
+            AlphabeticPresentationForms::HebrewLetterHeWithMapiq => 'הּ',
+            AlphabeticPresentationForms::HebrewLetterVavWithDagesh => 'וּ',
+            AlphabeticPresentationForms::HebrewLetterZayinWithDagesh => 'זּ',
+            AlphabeticPresentationForms::HebrewLetterTetWithDagesh => 'טּ',
+            AlphabeticPresentationForms::HebrewLetterYodWithDagesh => 'יּ',
+            AlphabeticPresentationForms::HebrewLetterFinalKafWithDagesh => 'ךּ',
+            AlphabeticPresentationForms::HebrewLetterKafWithDagesh => 'כּ',
+            AlphabeticPresentationForms::HebrewLetterLamedWithDagesh => 'לּ',
+            AlphabeticPresentationForms::HebrewLetterMemWithDagesh => 'מּ',
+            AlphabeticPresentationForms::HebrewLetterNunWithDagesh => 'נּ',
+            AlphabeticPresentationForms::HebrewLetterSamekhWithDagesh => 'סּ',
+            AlphabeticPresentationForms::HebrewLetterFinalPeWithDagesh => 'ףּ',
+            AlphabeticPresentationForms::HebrewLetterPeWithDagesh => 'פּ',
+            AlphabeticPresentationForms::HebrewLetterTsadiWithDagesh => 'צּ',
+            AlphabeticPresentationForms::HebrewLetterQofWithDagesh => 'קּ',
+            AlphabeticPresentationForms::HebrewLetterReshWithDagesh => 'רּ',
+            AlphabeticPresentationForms::HebrewLetterShinWithDagesh => 'שּ',
+            AlphabeticPresentationForms::HebrewLetterTavWithDagesh => 'תּ',
+            AlphabeticPresentationForms::HebrewLetterVavWithHolam => 'וֹ',
+            AlphabeticPresentationForms::HebrewLetterBetWithRafe => 'בֿ',
+            AlphabeticPresentationForms::HebrewLetterKafWithRafe => 'כֿ',
+            AlphabeticPresentationForms::HebrewLetterPeWithRafe => 'פֿ',
         }
     }
 }
@@ -303,65 +185,64 @@ impl Into<char> for AlphabeticPresentationForms {
 impl std::convert::TryFrom<char> for AlphabeticPresentationForms {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LATIN_SMALL_LIGATURE_FF => Ok(AlphabeticPresentationForms::LatinSmallLigatureFf),
-            LATIN_SMALL_LIGATURE_FI => Ok(AlphabeticPresentationForms::LatinSmallLigatureFi),
-            LATIN_SMALL_LIGATURE_FL => Ok(AlphabeticPresentationForms::LatinSmallLigatureFl),
-            LATIN_SMALL_LIGATURE_FFI => Ok(AlphabeticPresentationForms::LatinSmallLigatureFfi),
-            LATIN_SMALL_LIGATURE_FFL => Ok(AlphabeticPresentationForms::LatinSmallLigatureFfl),
-            LATIN_SMALL_LIGATURE_LONG_S_T => Ok(AlphabeticPresentationForms::LatinSmallLigatureLongST),
-            LATIN_SMALL_LIGATURE_ST => Ok(AlphabeticPresentationForms::LatinSmallLigatureSt),
-            ARMENIAN_SMALL_LIGATURE_MEN_NOW => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureMenNow),
-            ARMENIAN_SMALL_LIGATURE_MEN_ECH => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureMenEch),
-            ARMENIAN_SMALL_LIGATURE_MEN_INI => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureMenIni),
-            ARMENIAN_SMALL_LIGATURE_VEW_NOW => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureVewNow),
-            ARMENIAN_SMALL_LIGATURE_MEN_XEH => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureMenXeh),
-            HEBREW_LETTER_YOD_WITH_HIRIQ => Ok(AlphabeticPresentationForms::HebrewLetterYodWithHiriq),
-            HEBREW_POINT_JUDEO_DASH_SPANISH_VARIKA => Ok(AlphabeticPresentationForms::HebrewPointJudeoDashSpanishVarika),
-            HEBREW_LIGATURE_YIDDISH_YOD_YOD_PATAH => Ok(AlphabeticPresentationForms::HebrewLigatureYiddishYodYodPatah),
-            HEBREW_LETTER_ALTERNATIVE_AYIN => Ok(AlphabeticPresentationForms::HebrewLetterAlternativeAyin),
-            HEBREW_LETTER_WIDE_ALEF => Ok(AlphabeticPresentationForms::HebrewLetterWideAlef),
-            HEBREW_LETTER_WIDE_DALET => Ok(AlphabeticPresentationForms::HebrewLetterWideDalet),
-            HEBREW_LETTER_WIDE_HE => Ok(AlphabeticPresentationForms::HebrewLetterWideHe),
-            HEBREW_LETTER_WIDE_KAF => Ok(AlphabeticPresentationForms::HebrewLetterWideKaf),
-            HEBREW_LETTER_WIDE_LAMED => Ok(AlphabeticPresentationForms::HebrewLetterWideLamed),
-            HEBREW_LETTER_WIDE_FINAL_MEM => Ok(AlphabeticPresentationForms::HebrewLetterWideFinalMem),
-            HEBREW_LETTER_WIDE_RESH => Ok(AlphabeticPresentationForms::HebrewLetterWideResh),
-            HEBREW_LETTER_WIDE_TAV => Ok(AlphabeticPresentationForms::HebrewLetterWideTav),
-            HEBREW_LETTER_ALTERNATIVE_PLUS_SIGN => Ok(AlphabeticPresentationForms::HebrewLetterAlternativePlusSign),
-            HEBREW_LETTER_SHIN_WITH_SHIN_DOT => Ok(AlphabeticPresentationForms::HebrewLetterShinWithShinDot),
-            HEBREW_LETTER_SHIN_WITH_SIN_DOT => Ok(AlphabeticPresentationForms::HebrewLetterShinWithSinDot),
-            HEBREW_LETTER_SHIN_WITH_DAGESH_AND_SHIN_DOT => Ok(AlphabeticPresentationForms::HebrewLetterShinWithDageshAndShinDot),
-            HEBREW_LETTER_SHIN_WITH_DAGESH_AND_SIN_DOT => Ok(AlphabeticPresentationForms::HebrewLetterShinWithDageshAndSinDot),
-            HEBREW_LETTER_ALEF_WITH_PATAH => Ok(AlphabeticPresentationForms::HebrewLetterAlefWithPatah),
-            HEBREW_LETTER_ALEF_WITH_QAMATS => Ok(AlphabeticPresentationForms::HebrewLetterAlefWithQamats),
-            HEBREW_LETTER_ALEF_WITH_MAPIQ => Ok(AlphabeticPresentationForms::HebrewLetterAlefWithMapiq),
-            HEBREW_LETTER_BET_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterBetWithDagesh),
-            HEBREW_LETTER_GIMEL_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterGimelWithDagesh),
-            HEBREW_LETTER_DALET_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterDaletWithDagesh),
-            HEBREW_LETTER_HE_WITH_MAPIQ => Ok(AlphabeticPresentationForms::HebrewLetterHeWithMapiq),
-            HEBREW_LETTER_VAV_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterVavWithDagesh),
-            HEBREW_LETTER_ZAYIN_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterZayinWithDagesh),
-            HEBREW_LETTER_TET_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterTetWithDagesh),
-            HEBREW_LETTER_YOD_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterYodWithDagesh),
-            HEBREW_LETTER_FINAL_KAF_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterFinalKafWithDagesh),
-            HEBREW_LETTER_KAF_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterKafWithDagesh),
-            HEBREW_LETTER_LAMED_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterLamedWithDagesh),
-            HEBREW_LETTER_MEM_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterMemWithDagesh),
-            HEBREW_LETTER_NUN_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterNunWithDagesh),
-            HEBREW_LETTER_SAMEKH_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterSamekhWithDagesh),
-            HEBREW_LETTER_FINAL_PE_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterFinalPeWithDagesh),
-            HEBREW_LETTER_PE_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterPeWithDagesh),
-            HEBREW_LETTER_TSADI_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterTsadiWithDagesh),
-            HEBREW_LETTER_QOF_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterQofWithDagesh),
-            HEBREW_LETTER_RESH_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterReshWithDagesh),
-            HEBREW_LETTER_SHIN_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterShinWithDagesh),
-            HEBREW_LETTER_TAV_WITH_DAGESH => Ok(AlphabeticPresentationForms::HebrewLetterTavWithDagesh),
-            HEBREW_LETTER_VAV_WITH_HOLAM => Ok(AlphabeticPresentationForms::HebrewLetterVavWithHolam),
-            HEBREW_LETTER_BET_WITH_RAFE => Ok(AlphabeticPresentationForms::HebrewLetterBetWithRafe),
-            HEBREW_LETTER_KAF_WITH_RAFE => Ok(AlphabeticPresentationForms::HebrewLetterKafWithRafe),
-            HEBREW_LETTER_PE_WITH_RAFE => Ok(AlphabeticPresentationForms::HebrewLetterPeWithRafe),
+            'ﬀ' => Ok(AlphabeticPresentationForms::LatinSmallLigatureFf),
+            'ﬁ' => Ok(AlphabeticPresentationForms::LatinSmallLigatureFi),
+            'ﬂ' => Ok(AlphabeticPresentationForms::LatinSmallLigatureFl),
+            'ﬃ' => Ok(AlphabeticPresentationForms::LatinSmallLigatureFfi),
+            'ﬄ' => Ok(AlphabeticPresentationForms::LatinSmallLigatureFfl),
+            'ﬅ' => Ok(AlphabeticPresentationForms::LatinSmallLigatureLongST),
+            'ﬆ' => Ok(AlphabeticPresentationForms::LatinSmallLigatureSt),
+            'ﬓ' => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureMenNow),
+            'ﬔ' => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureMenEch),
+            'ﬕ' => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureMenIni),
+            'ﬖ' => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureVewNow),
+            'ﬗ' => Ok(AlphabeticPresentationForms::ArmenianSmallLigatureMenXeh),
+            'יִ' => Ok(AlphabeticPresentationForms::HebrewLetterYodWithHiriq),
+            'ﬞ' => Ok(AlphabeticPresentationForms::HebrewPointJudeoDashSpanishVarika),
+            'ײַ' => Ok(AlphabeticPresentationForms::HebrewLigatureYiddishYodYodPatah),
+            'ﬠ' => Ok(AlphabeticPresentationForms::HebrewLetterAlternativeAyin),
+            'ﬡ' => Ok(AlphabeticPresentationForms::HebrewLetterWideAlef),
+            'ﬢ' => Ok(AlphabeticPresentationForms::HebrewLetterWideDalet),
+            'ﬣ' => Ok(AlphabeticPresentationForms::HebrewLetterWideHe),
+            'ﬤ' => Ok(AlphabeticPresentationForms::HebrewLetterWideKaf),
+            'ﬥ' => Ok(AlphabeticPresentationForms::HebrewLetterWideLamed),
+            'ﬦ' => Ok(AlphabeticPresentationForms::HebrewLetterWideFinalMem),
+            'ﬧ' => Ok(AlphabeticPresentationForms::HebrewLetterWideResh),
+            'ﬨ' => Ok(AlphabeticPresentationForms::HebrewLetterWideTav),
+            '﬩' => Ok(AlphabeticPresentationForms::HebrewLetterAlternativePlusSign),
+            'שׁ' => Ok(AlphabeticPresentationForms::HebrewLetterShinWithShinDot),
+            'שׂ' => Ok(AlphabeticPresentationForms::HebrewLetterShinWithSinDot),
+            'שּׁ' => Ok(AlphabeticPresentationForms::HebrewLetterShinWithDageshAndShinDot),
+            'שּׂ' => Ok(AlphabeticPresentationForms::HebrewLetterShinWithDageshAndSinDot),
+            'אַ' => Ok(AlphabeticPresentationForms::HebrewLetterAlefWithPatah),
+            'אָ' => Ok(AlphabeticPresentationForms::HebrewLetterAlefWithQamats),
+            'אּ' => Ok(AlphabeticPresentationForms::HebrewLetterAlefWithMapiq),
+            'בּ' => Ok(AlphabeticPresentationForms::HebrewLetterBetWithDagesh),
+            'גּ' => Ok(AlphabeticPresentationForms::HebrewLetterGimelWithDagesh),
+            'דּ' => Ok(AlphabeticPresentationForms::HebrewLetterDaletWithDagesh),
+            'הּ' => Ok(AlphabeticPresentationForms::HebrewLetterHeWithMapiq),
+            'וּ' => Ok(AlphabeticPresentationForms::HebrewLetterVavWithDagesh),
+            'זּ' => Ok(AlphabeticPresentationForms::HebrewLetterZayinWithDagesh),
+            'טּ' => Ok(AlphabeticPresentationForms::HebrewLetterTetWithDagesh),
+            'יּ' => Ok(AlphabeticPresentationForms::HebrewLetterYodWithDagesh),
+            'ךּ' => Ok(AlphabeticPresentationForms::HebrewLetterFinalKafWithDagesh),
+            'כּ' => Ok(AlphabeticPresentationForms::HebrewLetterKafWithDagesh),
+            'לּ' => Ok(AlphabeticPresentationForms::HebrewLetterLamedWithDagesh),
+            'מּ' => Ok(AlphabeticPresentationForms::HebrewLetterMemWithDagesh),
+            'נּ' => Ok(AlphabeticPresentationForms::HebrewLetterNunWithDagesh),
+            'סּ' => Ok(AlphabeticPresentationForms::HebrewLetterSamekhWithDagesh),
+            'ףּ' => Ok(AlphabeticPresentationForms::HebrewLetterFinalPeWithDagesh),
+            'פּ' => Ok(AlphabeticPresentationForms::HebrewLetterPeWithDagesh),
+            'צּ' => Ok(AlphabeticPresentationForms::HebrewLetterTsadiWithDagesh),
+            'קּ' => Ok(AlphabeticPresentationForms::HebrewLetterQofWithDagesh),
+            'רּ' => Ok(AlphabeticPresentationForms::HebrewLetterReshWithDagesh),
+            'שּ' => Ok(AlphabeticPresentationForms::HebrewLetterShinWithDagesh),
+            'תּ' => Ok(AlphabeticPresentationForms::HebrewLetterTavWithDagesh),
+            'וֹ' => Ok(AlphabeticPresentationForms::HebrewLetterVavWithHolam),
+            'בֿ' => Ok(AlphabeticPresentationForms::HebrewLetterBetWithRafe),
+            'כֿ' => Ok(AlphabeticPresentationForms::HebrewLetterKafWithRafe),
+            'פֿ' => Ok(AlphabeticPresentationForms::HebrewLetterPeWithRafe),
             _ => Err(()),
         }
     }

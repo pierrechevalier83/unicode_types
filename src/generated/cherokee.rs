@@ -1,190 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{13a0}: 'Ꭰ'
-    pub const LETTER_A: char = 'Ꭰ';
-    /// \u{13a1}: 'Ꭱ'
-    pub const LETTER_E: char = 'Ꭱ';
-    /// \u{13a2}: 'Ꭲ'
-    pub const LETTER_I: char = 'Ꭲ';
-    /// \u{13a3}: 'Ꭳ'
-    pub const LETTER_O: char = 'Ꭳ';
-    /// \u{13a4}: 'Ꭴ'
-    pub const LETTER_U: char = 'Ꭴ';
-    /// \u{13a5}: 'Ꭵ'
-    pub const LETTER_V: char = 'Ꭵ';
-    /// \u{13a6}: 'Ꭶ'
-    pub const LETTER_GA: char = 'Ꭶ';
-    /// \u{13a7}: 'Ꭷ'
-    pub const LETTER_KA: char = 'Ꭷ';
-    /// \u{13a8}: 'Ꭸ'
-    pub const LETTER_GE: char = 'Ꭸ';
-    /// \u{13a9}: 'Ꭹ'
-    pub const LETTER_GI: char = 'Ꭹ';
-    /// \u{13aa}: 'Ꭺ'
-    pub const LETTER_GO: char = 'Ꭺ';
-    /// \u{13ab}: 'Ꭻ'
-    pub const LETTER_GU: char = 'Ꭻ';
-    /// \u{13ac}: 'Ꭼ'
-    pub const LETTER_GV: char = 'Ꭼ';
-    /// \u{13ad}: 'Ꭽ'
-    pub const LETTER_HA: char = 'Ꭽ';
-    /// \u{13ae}: 'Ꭾ'
-    pub const LETTER_HE: char = 'Ꭾ';
-    /// \u{13af}: 'Ꭿ'
-    pub const LETTER_HI: char = 'Ꭿ';
-    /// \u{13b0}: 'Ꮀ'
-    pub const LETTER_HO: char = 'Ꮀ';
-    /// \u{13b1}: 'Ꮁ'
-    pub const LETTER_HU: char = 'Ꮁ';
-    /// \u{13b2}: 'Ꮂ'
-    pub const LETTER_HV: char = 'Ꮂ';
-    /// \u{13b3}: 'Ꮃ'
-    pub const LETTER_LA: char = 'Ꮃ';
-    /// \u{13b4}: 'Ꮄ'
-    pub const LETTER_LE: char = 'Ꮄ';
-    /// \u{13b5}: 'Ꮅ'
-    pub const LETTER_LI: char = 'Ꮅ';
-    /// \u{13b6}: 'Ꮆ'
-    pub const LETTER_LO: char = 'Ꮆ';
-    /// \u{13b7}: 'Ꮇ'
-    pub const LETTER_LU: char = 'Ꮇ';
-    /// \u{13b8}: 'Ꮈ'
-    pub const LETTER_LV: char = 'Ꮈ';
-    /// \u{13b9}: 'Ꮉ'
-    pub const LETTER_MA: char = 'Ꮉ';
-    /// \u{13ba}: 'Ꮊ'
-    pub const LETTER_ME: char = 'Ꮊ';
-    /// \u{13bb}: 'Ꮋ'
-    pub const LETTER_MI: char = 'Ꮋ';
-    /// \u{13bc}: 'Ꮌ'
-    pub const LETTER_MO: char = 'Ꮌ';
-    /// \u{13bd}: 'Ꮍ'
-    pub const LETTER_MU: char = 'Ꮍ';
-    /// \u{13be}: 'Ꮎ'
-    pub const LETTER_NA: char = 'Ꮎ';
-    /// \u{13bf}: 'Ꮏ'
-    pub const LETTER_HNA: char = 'Ꮏ';
-    /// \u{13c0}: 'Ꮐ'
-    pub const LETTER_NAH: char = 'Ꮐ';
-    /// \u{13c1}: 'Ꮑ'
-    pub const LETTER_NE: char = 'Ꮑ';
-    /// \u{13c2}: 'Ꮒ'
-    pub const LETTER_NI: char = 'Ꮒ';
-    /// \u{13c3}: 'Ꮓ'
-    pub const LETTER_NO: char = 'Ꮓ';
-    /// \u{13c4}: 'Ꮔ'
-    pub const LETTER_NU: char = 'Ꮔ';
-    /// \u{13c5}: 'Ꮕ'
-    pub const LETTER_NV: char = 'Ꮕ';
-    /// \u{13c6}: 'Ꮖ'
-    pub const LETTER_QUA: char = 'Ꮖ';
-    /// \u{13c7}: 'Ꮗ'
-    pub const LETTER_QUE: char = 'Ꮗ';
-    /// \u{13c8}: 'Ꮘ'
-    pub const LETTER_QUI: char = 'Ꮘ';
-    /// \u{13c9}: 'Ꮙ'
-    pub const LETTER_QUO: char = 'Ꮙ';
-    /// \u{13ca}: 'Ꮚ'
-    pub const LETTER_QUU: char = 'Ꮚ';
-    /// \u{13cb}: 'Ꮛ'
-    pub const LETTER_QUV: char = 'Ꮛ';
-    /// \u{13cc}: 'Ꮜ'
-    pub const LETTER_SA: char = 'Ꮜ';
-    /// \u{13cd}: 'Ꮝ'
-    pub const LETTER_S: char = 'Ꮝ';
-    /// \u{13ce}: 'Ꮞ'
-    pub const LETTER_SE: char = 'Ꮞ';
-    /// \u{13cf}: 'Ꮟ'
-    pub const LETTER_SI: char = 'Ꮟ';
-    /// \u{13d0}: 'Ꮠ'
-    pub const LETTER_SO: char = 'Ꮠ';
-    /// \u{13d1}: 'Ꮡ'
-    pub const LETTER_SU: char = 'Ꮡ';
-    /// \u{13d2}: 'Ꮢ'
-    pub const LETTER_SV: char = 'Ꮢ';
-    /// \u{13d3}: 'Ꮣ'
-    pub const LETTER_DA: char = 'Ꮣ';
-    /// \u{13d4}: 'Ꮤ'
-    pub const LETTER_TA: char = 'Ꮤ';
-    /// \u{13d5}: 'Ꮥ'
-    pub const LETTER_DE: char = 'Ꮥ';
-    /// \u{13d6}: 'Ꮦ'
-    pub const LETTER_TE: char = 'Ꮦ';
-    /// \u{13d7}: 'Ꮧ'
-    pub const LETTER_DI: char = 'Ꮧ';
-    /// \u{13d8}: 'Ꮨ'
-    pub const LETTER_TI: char = 'Ꮨ';
-    /// \u{13d9}: 'Ꮩ'
-    pub const LETTER_DO: char = 'Ꮩ';
-    /// \u{13da}: 'Ꮪ'
-    pub const LETTER_DU: char = 'Ꮪ';
-    /// \u{13db}: 'Ꮫ'
-    pub const LETTER_DV: char = 'Ꮫ';
-    /// \u{13dc}: 'Ꮬ'
-    pub const LETTER_DLA: char = 'Ꮬ';
-    /// \u{13dd}: 'Ꮭ'
-    pub const LETTER_TLA: char = 'Ꮭ';
-    /// \u{13de}: 'Ꮮ'
-    pub const LETTER_TLE: char = 'Ꮮ';
-    /// \u{13df}: 'Ꮯ'
-    pub const LETTER_TLI: char = 'Ꮯ';
-    /// \u{13e0}: 'Ꮰ'
-    pub const LETTER_TLO: char = 'Ꮰ';
-    /// \u{13e1}: 'Ꮱ'
-    pub const LETTER_TLU: char = 'Ꮱ';
-    /// \u{13e2}: 'Ꮲ'
-    pub const LETTER_TLV: char = 'Ꮲ';
-    /// \u{13e3}: 'Ꮳ'
-    pub const LETTER_TSA: char = 'Ꮳ';
-    /// \u{13e4}: 'Ꮴ'
-    pub const LETTER_TSE: char = 'Ꮴ';
-    /// \u{13e5}: 'Ꮵ'
-    pub const LETTER_TSI: char = 'Ꮵ';
-    /// \u{13e6}: 'Ꮶ'
-    pub const LETTER_TSO: char = 'Ꮶ';
-    /// \u{13e7}: 'Ꮷ'
-    pub const LETTER_TSU: char = 'Ꮷ';
-    /// \u{13e8}: 'Ꮸ'
-    pub const LETTER_TSV: char = 'Ꮸ';
-    /// \u{13e9}: 'Ꮹ'
-    pub const LETTER_WA: char = 'Ꮹ';
-    /// \u{13ea}: 'Ꮺ'
-    pub const LETTER_WE: char = 'Ꮺ';
-    /// \u{13eb}: 'Ꮻ'
-    pub const LETTER_WI: char = 'Ꮻ';
-    /// \u{13ec}: 'Ꮼ'
-    pub const LETTER_WO: char = 'Ꮼ';
-    /// \u{13ed}: 'Ꮽ'
-    pub const LETTER_WU: char = 'Ꮽ';
-    /// \u{13ee}: 'Ꮾ'
-    pub const LETTER_WV: char = 'Ꮾ';
-    /// \u{13ef}: 'Ꮿ'
-    pub const LETTER_YA: char = 'Ꮿ';
-    /// \u{13f0}: 'Ᏸ'
-    pub const LETTER_YE: char = 'Ᏸ';
-    /// \u{13f1}: 'Ᏹ'
-    pub const LETTER_YI: char = 'Ᏹ';
-    /// \u{13f2}: 'Ᏺ'
-    pub const LETTER_YO: char = 'Ᏺ';
-    /// \u{13f3}: 'Ᏻ'
-    pub const LETTER_YU: char = 'Ᏻ';
-    /// \u{13f4}: 'Ᏼ'
-    pub const LETTER_YV: char = 'Ᏼ';
-    /// \u{13f5}: 'Ᏽ'
-    pub const LETTER_MV: char = 'Ᏽ';
-    /// \u{13f8}: 'ᏸ'
-    pub const SMALL_LETTER_YE: char = 'ᏸ';
-    /// \u{13f9}: 'ᏹ'
-    pub const SMALL_LETTER_YI: char = 'ᏹ';
-    /// \u{13fa}: 'ᏺ'
-    pub const SMALL_LETTER_YO: char = 'ᏺ';
-    /// \u{13fb}: 'ᏻ'
-    pub const SMALL_LETTER_YU: char = 'ᏻ';
-    /// \u{13fc}: 'ᏼ'
-    pub const SMALL_LETTER_YV: char = 'ᏼ';
-    /// \u{13fd}: 'ᏽ'
-    pub const SMALL_LETTER_MV: char = 'ᏽ';
-}
 
 /// An enum to represent all characters in the Cherokee block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -377,100 +190,99 @@ pub enum Cherokee {
 
 impl Into<char> for Cherokee {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Cherokee::LetterA => LETTER_A,
-            Cherokee::LetterE => LETTER_E,
-            Cherokee::LetterI => LETTER_I,
-            Cherokee::LetterO => LETTER_O,
-            Cherokee::LetterU => LETTER_U,
-            Cherokee::LetterV => LETTER_V,
-            Cherokee::LetterGa => LETTER_GA,
-            Cherokee::LetterKa => LETTER_KA,
-            Cherokee::LetterGe => LETTER_GE,
-            Cherokee::LetterGi => LETTER_GI,
-            Cherokee::LetterGo => LETTER_GO,
-            Cherokee::LetterGu => LETTER_GU,
-            Cherokee::LetterGv => LETTER_GV,
-            Cherokee::LetterHa => LETTER_HA,
-            Cherokee::LetterHe => LETTER_HE,
-            Cherokee::LetterHi => LETTER_HI,
-            Cherokee::LetterHo => LETTER_HO,
-            Cherokee::LetterHu => LETTER_HU,
-            Cherokee::LetterHv => LETTER_HV,
-            Cherokee::LetterLa => LETTER_LA,
-            Cherokee::LetterLe => LETTER_LE,
-            Cherokee::LetterLi => LETTER_LI,
-            Cherokee::LetterLo => LETTER_LO,
-            Cherokee::LetterLu => LETTER_LU,
-            Cherokee::LetterLv => LETTER_LV,
-            Cherokee::LetterMa => LETTER_MA,
-            Cherokee::LetterMe => LETTER_ME,
-            Cherokee::LetterMi => LETTER_MI,
-            Cherokee::LetterMo => LETTER_MO,
-            Cherokee::LetterMu => LETTER_MU,
-            Cherokee::LetterNa => LETTER_NA,
-            Cherokee::LetterHna => LETTER_HNA,
-            Cherokee::LetterNah => LETTER_NAH,
-            Cherokee::LetterNe => LETTER_NE,
-            Cherokee::LetterNi => LETTER_NI,
-            Cherokee::LetterNo => LETTER_NO,
-            Cherokee::LetterNu => LETTER_NU,
-            Cherokee::LetterNv => LETTER_NV,
-            Cherokee::LetterQua => LETTER_QUA,
-            Cherokee::LetterQue => LETTER_QUE,
-            Cherokee::LetterQui => LETTER_QUI,
-            Cherokee::LetterQuo => LETTER_QUO,
-            Cherokee::LetterQuu => LETTER_QUU,
-            Cherokee::LetterQuv => LETTER_QUV,
-            Cherokee::LetterSa => LETTER_SA,
-            Cherokee::LetterS => LETTER_S,
-            Cherokee::LetterSe => LETTER_SE,
-            Cherokee::LetterSi => LETTER_SI,
-            Cherokee::LetterSo => LETTER_SO,
-            Cherokee::LetterSu => LETTER_SU,
-            Cherokee::LetterSv => LETTER_SV,
-            Cherokee::LetterDa => LETTER_DA,
-            Cherokee::LetterTa => LETTER_TA,
-            Cherokee::LetterDe => LETTER_DE,
-            Cherokee::LetterTe => LETTER_TE,
-            Cherokee::LetterDi => LETTER_DI,
-            Cherokee::LetterTi => LETTER_TI,
-            Cherokee::LetterDo => LETTER_DO,
-            Cherokee::LetterDu => LETTER_DU,
-            Cherokee::LetterDv => LETTER_DV,
-            Cherokee::LetterDla => LETTER_DLA,
-            Cherokee::LetterTla => LETTER_TLA,
-            Cherokee::LetterTle => LETTER_TLE,
-            Cherokee::LetterTli => LETTER_TLI,
-            Cherokee::LetterTlo => LETTER_TLO,
-            Cherokee::LetterTlu => LETTER_TLU,
-            Cherokee::LetterTlv => LETTER_TLV,
-            Cherokee::LetterTsa => LETTER_TSA,
-            Cherokee::LetterTse => LETTER_TSE,
-            Cherokee::LetterTsi => LETTER_TSI,
-            Cherokee::LetterTso => LETTER_TSO,
-            Cherokee::LetterTsu => LETTER_TSU,
-            Cherokee::LetterTsv => LETTER_TSV,
-            Cherokee::LetterWa => LETTER_WA,
-            Cherokee::LetterWe => LETTER_WE,
-            Cherokee::LetterWi => LETTER_WI,
-            Cherokee::LetterWo => LETTER_WO,
-            Cherokee::LetterWu => LETTER_WU,
-            Cherokee::LetterWv => LETTER_WV,
-            Cherokee::LetterYa => LETTER_YA,
-            Cherokee::LetterYe => LETTER_YE,
-            Cherokee::LetterYi => LETTER_YI,
-            Cherokee::LetterYo => LETTER_YO,
-            Cherokee::LetterYu => LETTER_YU,
-            Cherokee::LetterYv => LETTER_YV,
-            Cherokee::LetterMv => LETTER_MV,
-            Cherokee::SmallLetterYe => SMALL_LETTER_YE,
-            Cherokee::SmallLetterYi => SMALL_LETTER_YI,
-            Cherokee::SmallLetterYo => SMALL_LETTER_YO,
-            Cherokee::SmallLetterYu => SMALL_LETTER_YU,
-            Cherokee::SmallLetterYv => SMALL_LETTER_YV,
-            Cherokee::SmallLetterMv => SMALL_LETTER_MV,
+            Cherokee::LetterA => 'Ꭰ',
+            Cherokee::LetterE => 'Ꭱ',
+            Cherokee::LetterI => 'Ꭲ',
+            Cherokee::LetterO => 'Ꭳ',
+            Cherokee::LetterU => 'Ꭴ',
+            Cherokee::LetterV => 'Ꭵ',
+            Cherokee::LetterGa => 'Ꭶ',
+            Cherokee::LetterKa => 'Ꭷ',
+            Cherokee::LetterGe => 'Ꭸ',
+            Cherokee::LetterGi => 'Ꭹ',
+            Cherokee::LetterGo => 'Ꭺ',
+            Cherokee::LetterGu => 'Ꭻ',
+            Cherokee::LetterGv => 'Ꭼ',
+            Cherokee::LetterHa => 'Ꭽ',
+            Cherokee::LetterHe => 'Ꭾ',
+            Cherokee::LetterHi => 'Ꭿ',
+            Cherokee::LetterHo => 'Ꮀ',
+            Cherokee::LetterHu => 'Ꮁ',
+            Cherokee::LetterHv => 'Ꮂ',
+            Cherokee::LetterLa => 'Ꮃ',
+            Cherokee::LetterLe => 'Ꮄ',
+            Cherokee::LetterLi => 'Ꮅ',
+            Cherokee::LetterLo => 'Ꮆ',
+            Cherokee::LetterLu => 'Ꮇ',
+            Cherokee::LetterLv => 'Ꮈ',
+            Cherokee::LetterMa => 'Ꮉ',
+            Cherokee::LetterMe => 'Ꮊ',
+            Cherokee::LetterMi => 'Ꮋ',
+            Cherokee::LetterMo => 'Ꮌ',
+            Cherokee::LetterMu => 'Ꮍ',
+            Cherokee::LetterNa => 'Ꮎ',
+            Cherokee::LetterHna => 'Ꮏ',
+            Cherokee::LetterNah => 'Ꮐ',
+            Cherokee::LetterNe => 'Ꮑ',
+            Cherokee::LetterNi => 'Ꮒ',
+            Cherokee::LetterNo => 'Ꮓ',
+            Cherokee::LetterNu => 'Ꮔ',
+            Cherokee::LetterNv => 'Ꮕ',
+            Cherokee::LetterQua => 'Ꮖ',
+            Cherokee::LetterQue => 'Ꮗ',
+            Cherokee::LetterQui => 'Ꮘ',
+            Cherokee::LetterQuo => 'Ꮙ',
+            Cherokee::LetterQuu => 'Ꮚ',
+            Cherokee::LetterQuv => 'Ꮛ',
+            Cherokee::LetterSa => 'Ꮜ',
+            Cherokee::LetterS => 'Ꮝ',
+            Cherokee::LetterSe => 'Ꮞ',
+            Cherokee::LetterSi => 'Ꮟ',
+            Cherokee::LetterSo => 'Ꮠ',
+            Cherokee::LetterSu => 'Ꮡ',
+            Cherokee::LetterSv => 'Ꮢ',
+            Cherokee::LetterDa => 'Ꮣ',
+            Cherokee::LetterTa => 'Ꮤ',
+            Cherokee::LetterDe => 'Ꮥ',
+            Cherokee::LetterTe => 'Ꮦ',
+            Cherokee::LetterDi => 'Ꮧ',
+            Cherokee::LetterTi => 'Ꮨ',
+            Cherokee::LetterDo => 'Ꮩ',
+            Cherokee::LetterDu => 'Ꮪ',
+            Cherokee::LetterDv => 'Ꮫ',
+            Cherokee::LetterDla => 'Ꮬ',
+            Cherokee::LetterTla => 'Ꮭ',
+            Cherokee::LetterTle => 'Ꮮ',
+            Cherokee::LetterTli => 'Ꮯ',
+            Cherokee::LetterTlo => 'Ꮰ',
+            Cherokee::LetterTlu => 'Ꮱ',
+            Cherokee::LetterTlv => 'Ꮲ',
+            Cherokee::LetterTsa => 'Ꮳ',
+            Cherokee::LetterTse => 'Ꮴ',
+            Cherokee::LetterTsi => 'Ꮵ',
+            Cherokee::LetterTso => 'Ꮶ',
+            Cherokee::LetterTsu => 'Ꮷ',
+            Cherokee::LetterTsv => 'Ꮸ',
+            Cherokee::LetterWa => 'Ꮹ',
+            Cherokee::LetterWe => 'Ꮺ',
+            Cherokee::LetterWi => 'Ꮻ',
+            Cherokee::LetterWo => 'Ꮼ',
+            Cherokee::LetterWu => 'Ꮽ',
+            Cherokee::LetterWv => 'Ꮾ',
+            Cherokee::LetterYa => 'Ꮿ',
+            Cherokee::LetterYe => 'Ᏸ',
+            Cherokee::LetterYi => 'Ᏹ',
+            Cherokee::LetterYo => 'Ᏺ',
+            Cherokee::LetterYu => 'Ᏻ',
+            Cherokee::LetterYv => 'Ᏼ',
+            Cherokee::LetterMv => 'Ᏽ',
+            Cherokee::SmallLetterYe => 'ᏸ',
+            Cherokee::SmallLetterYi => 'ᏹ',
+            Cherokee::SmallLetterYo => 'ᏺ',
+            Cherokee::SmallLetterYu => 'ᏻ',
+            Cherokee::SmallLetterYv => 'ᏼ',
+            Cherokee::SmallLetterMv => 'ᏽ',
         }
     }
 }
@@ -478,100 +290,99 @@ impl Into<char> for Cherokee {
 impl std::convert::TryFrom<char> for Cherokee {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Cherokee::LetterA),
-            LETTER_E => Ok(Cherokee::LetterE),
-            LETTER_I => Ok(Cherokee::LetterI),
-            LETTER_O => Ok(Cherokee::LetterO),
-            LETTER_U => Ok(Cherokee::LetterU),
-            LETTER_V => Ok(Cherokee::LetterV),
-            LETTER_GA => Ok(Cherokee::LetterGa),
-            LETTER_KA => Ok(Cherokee::LetterKa),
-            LETTER_GE => Ok(Cherokee::LetterGe),
-            LETTER_GI => Ok(Cherokee::LetterGi),
-            LETTER_GO => Ok(Cherokee::LetterGo),
-            LETTER_GU => Ok(Cherokee::LetterGu),
-            LETTER_GV => Ok(Cherokee::LetterGv),
-            LETTER_HA => Ok(Cherokee::LetterHa),
-            LETTER_HE => Ok(Cherokee::LetterHe),
-            LETTER_HI => Ok(Cherokee::LetterHi),
-            LETTER_HO => Ok(Cherokee::LetterHo),
-            LETTER_HU => Ok(Cherokee::LetterHu),
-            LETTER_HV => Ok(Cherokee::LetterHv),
-            LETTER_LA => Ok(Cherokee::LetterLa),
-            LETTER_LE => Ok(Cherokee::LetterLe),
-            LETTER_LI => Ok(Cherokee::LetterLi),
-            LETTER_LO => Ok(Cherokee::LetterLo),
-            LETTER_LU => Ok(Cherokee::LetterLu),
-            LETTER_LV => Ok(Cherokee::LetterLv),
-            LETTER_MA => Ok(Cherokee::LetterMa),
-            LETTER_ME => Ok(Cherokee::LetterMe),
-            LETTER_MI => Ok(Cherokee::LetterMi),
-            LETTER_MO => Ok(Cherokee::LetterMo),
-            LETTER_MU => Ok(Cherokee::LetterMu),
-            LETTER_NA => Ok(Cherokee::LetterNa),
-            LETTER_HNA => Ok(Cherokee::LetterHna),
-            LETTER_NAH => Ok(Cherokee::LetterNah),
-            LETTER_NE => Ok(Cherokee::LetterNe),
-            LETTER_NI => Ok(Cherokee::LetterNi),
-            LETTER_NO => Ok(Cherokee::LetterNo),
-            LETTER_NU => Ok(Cherokee::LetterNu),
-            LETTER_NV => Ok(Cherokee::LetterNv),
-            LETTER_QUA => Ok(Cherokee::LetterQua),
-            LETTER_QUE => Ok(Cherokee::LetterQue),
-            LETTER_QUI => Ok(Cherokee::LetterQui),
-            LETTER_QUO => Ok(Cherokee::LetterQuo),
-            LETTER_QUU => Ok(Cherokee::LetterQuu),
-            LETTER_QUV => Ok(Cherokee::LetterQuv),
-            LETTER_SA => Ok(Cherokee::LetterSa),
-            LETTER_S => Ok(Cherokee::LetterS),
-            LETTER_SE => Ok(Cherokee::LetterSe),
-            LETTER_SI => Ok(Cherokee::LetterSi),
-            LETTER_SO => Ok(Cherokee::LetterSo),
-            LETTER_SU => Ok(Cherokee::LetterSu),
-            LETTER_SV => Ok(Cherokee::LetterSv),
-            LETTER_DA => Ok(Cherokee::LetterDa),
-            LETTER_TA => Ok(Cherokee::LetterTa),
-            LETTER_DE => Ok(Cherokee::LetterDe),
-            LETTER_TE => Ok(Cherokee::LetterTe),
-            LETTER_DI => Ok(Cherokee::LetterDi),
-            LETTER_TI => Ok(Cherokee::LetterTi),
-            LETTER_DO => Ok(Cherokee::LetterDo),
-            LETTER_DU => Ok(Cherokee::LetterDu),
-            LETTER_DV => Ok(Cherokee::LetterDv),
-            LETTER_DLA => Ok(Cherokee::LetterDla),
-            LETTER_TLA => Ok(Cherokee::LetterTla),
-            LETTER_TLE => Ok(Cherokee::LetterTle),
-            LETTER_TLI => Ok(Cherokee::LetterTli),
-            LETTER_TLO => Ok(Cherokee::LetterTlo),
-            LETTER_TLU => Ok(Cherokee::LetterTlu),
-            LETTER_TLV => Ok(Cherokee::LetterTlv),
-            LETTER_TSA => Ok(Cherokee::LetterTsa),
-            LETTER_TSE => Ok(Cherokee::LetterTse),
-            LETTER_TSI => Ok(Cherokee::LetterTsi),
-            LETTER_TSO => Ok(Cherokee::LetterTso),
-            LETTER_TSU => Ok(Cherokee::LetterTsu),
-            LETTER_TSV => Ok(Cherokee::LetterTsv),
-            LETTER_WA => Ok(Cherokee::LetterWa),
-            LETTER_WE => Ok(Cherokee::LetterWe),
-            LETTER_WI => Ok(Cherokee::LetterWi),
-            LETTER_WO => Ok(Cherokee::LetterWo),
-            LETTER_WU => Ok(Cherokee::LetterWu),
-            LETTER_WV => Ok(Cherokee::LetterWv),
-            LETTER_YA => Ok(Cherokee::LetterYa),
-            LETTER_YE => Ok(Cherokee::LetterYe),
-            LETTER_YI => Ok(Cherokee::LetterYi),
-            LETTER_YO => Ok(Cherokee::LetterYo),
-            LETTER_YU => Ok(Cherokee::LetterYu),
-            LETTER_YV => Ok(Cherokee::LetterYv),
-            LETTER_MV => Ok(Cherokee::LetterMv),
-            SMALL_LETTER_YE => Ok(Cherokee::SmallLetterYe),
-            SMALL_LETTER_YI => Ok(Cherokee::SmallLetterYi),
-            SMALL_LETTER_YO => Ok(Cherokee::SmallLetterYo),
-            SMALL_LETTER_YU => Ok(Cherokee::SmallLetterYu),
-            SMALL_LETTER_YV => Ok(Cherokee::SmallLetterYv),
-            SMALL_LETTER_MV => Ok(Cherokee::SmallLetterMv),
+            'Ꭰ' => Ok(Cherokee::LetterA),
+            'Ꭱ' => Ok(Cherokee::LetterE),
+            'Ꭲ' => Ok(Cherokee::LetterI),
+            'Ꭳ' => Ok(Cherokee::LetterO),
+            'Ꭴ' => Ok(Cherokee::LetterU),
+            'Ꭵ' => Ok(Cherokee::LetterV),
+            'Ꭶ' => Ok(Cherokee::LetterGa),
+            'Ꭷ' => Ok(Cherokee::LetterKa),
+            'Ꭸ' => Ok(Cherokee::LetterGe),
+            'Ꭹ' => Ok(Cherokee::LetterGi),
+            'Ꭺ' => Ok(Cherokee::LetterGo),
+            'Ꭻ' => Ok(Cherokee::LetterGu),
+            'Ꭼ' => Ok(Cherokee::LetterGv),
+            'Ꭽ' => Ok(Cherokee::LetterHa),
+            'Ꭾ' => Ok(Cherokee::LetterHe),
+            'Ꭿ' => Ok(Cherokee::LetterHi),
+            'Ꮀ' => Ok(Cherokee::LetterHo),
+            'Ꮁ' => Ok(Cherokee::LetterHu),
+            'Ꮂ' => Ok(Cherokee::LetterHv),
+            'Ꮃ' => Ok(Cherokee::LetterLa),
+            'Ꮄ' => Ok(Cherokee::LetterLe),
+            'Ꮅ' => Ok(Cherokee::LetterLi),
+            'Ꮆ' => Ok(Cherokee::LetterLo),
+            'Ꮇ' => Ok(Cherokee::LetterLu),
+            'Ꮈ' => Ok(Cherokee::LetterLv),
+            'Ꮉ' => Ok(Cherokee::LetterMa),
+            'Ꮊ' => Ok(Cherokee::LetterMe),
+            'Ꮋ' => Ok(Cherokee::LetterMi),
+            'Ꮌ' => Ok(Cherokee::LetterMo),
+            'Ꮍ' => Ok(Cherokee::LetterMu),
+            'Ꮎ' => Ok(Cherokee::LetterNa),
+            'Ꮏ' => Ok(Cherokee::LetterHna),
+            'Ꮐ' => Ok(Cherokee::LetterNah),
+            'Ꮑ' => Ok(Cherokee::LetterNe),
+            'Ꮒ' => Ok(Cherokee::LetterNi),
+            'Ꮓ' => Ok(Cherokee::LetterNo),
+            'Ꮔ' => Ok(Cherokee::LetterNu),
+            'Ꮕ' => Ok(Cherokee::LetterNv),
+            'Ꮖ' => Ok(Cherokee::LetterQua),
+            'Ꮗ' => Ok(Cherokee::LetterQue),
+            'Ꮘ' => Ok(Cherokee::LetterQui),
+            'Ꮙ' => Ok(Cherokee::LetterQuo),
+            'Ꮚ' => Ok(Cherokee::LetterQuu),
+            'Ꮛ' => Ok(Cherokee::LetterQuv),
+            'Ꮜ' => Ok(Cherokee::LetterSa),
+            'Ꮝ' => Ok(Cherokee::LetterS),
+            'Ꮞ' => Ok(Cherokee::LetterSe),
+            'Ꮟ' => Ok(Cherokee::LetterSi),
+            'Ꮠ' => Ok(Cherokee::LetterSo),
+            'Ꮡ' => Ok(Cherokee::LetterSu),
+            'Ꮢ' => Ok(Cherokee::LetterSv),
+            'Ꮣ' => Ok(Cherokee::LetterDa),
+            'Ꮤ' => Ok(Cherokee::LetterTa),
+            'Ꮥ' => Ok(Cherokee::LetterDe),
+            'Ꮦ' => Ok(Cherokee::LetterTe),
+            'Ꮧ' => Ok(Cherokee::LetterDi),
+            'Ꮨ' => Ok(Cherokee::LetterTi),
+            'Ꮩ' => Ok(Cherokee::LetterDo),
+            'Ꮪ' => Ok(Cherokee::LetterDu),
+            'Ꮫ' => Ok(Cherokee::LetterDv),
+            'Ꮬ' => Ok(Cherokee::LetterDla),
+            'Ꮭ' => Ok(Cherokee::LetterTla),
+            'Ꮮ' => Ok(Cherokee::LetterTle),
+            'Ꮯ' => Ok(Cherokee::LetterTli),
+            'Ꮰ' => Ok(Cherokee::LetterTlo),
+            'Ꮱ' => Ok(Cherokee::LetterTlu),
+            'Ꮲ' => Ok(Cherokee::LetterTlv),
+            'Ꮳ' => Ok(Cherokee::LetterTsa),
+            'Ꮴ' => Ok(Cherokee::LetterTse),
+            'Ꮵ' => Ok(Cherokee::LetterTsi),
+            'Ꮶ' => Ok(Cherokee::LetterTso),
+            'Ꮷ' => Ok(Cherokee::LetterTsu),
+            'Ꮸ' => Ok(Cherokee::LetterTsv),
+            'Ꮹ' => Ok(Cherokee::LetterWa),
+            'Ꮺ' => Ok(Cherokee::LetterWe),
+            'Ꮻ' => Ok(Cherokee::LetterWi),
+            'Ꮼ' => Ok(Cherokee::LetterWo),
+            'Ꮽ' => Ok(Cherokee::LetterWu),
+            'Ꮾ' => Ok(Cherokee::LetterWv),
+            'Ꮿ' => Ok(Cherokee::LetterYa),
+            'Ᏸ' => Ok(Cherokee::LetterYe),
+            'Ᏹ' => Ok(Cherokee::LetterYi),
+            'Ᏺ' => Ok(Cherokee::LetterYo),
+            'Ᏻ' => Ok(Cherokee::LetterYu),
+            'Ᏼ' => Ok(Cherokee::LetterYv),
+            'Ᏽ' => Ok(Cherokee::LetterMv),
+            'ᏸ' => Ok(Cherokee::SmallLetterYe),
+            'ᏹ' => Ok(Cherokee::SmallLetterYi),
+            'ᏺ' => Ok(Cherokee::SmallLetterYo),
+            'ᏻ' => Ok(Cherokee::SmallLetterYu),
+            'ᏼ' => Ok(Cherokee::SmallLetterYv),
+            'ᏽ' => Ok(Cherokee::SmallLetterMv),
             _ => Err(()),
         }
     }

@@ -1,228 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{300}: '̀'
-    pub const COMBINING_GRAVE_ACCENT: char = '̀';
-    /// \u{301}: '́'
-    pub const COMBINING_ACUTE_ACCENT: char = '́';
-    /// \u{302}: '̂'
-    pub const COMBINING_CIRCUMFLEX_ACCENT: char = '̂';
-    /// \u{303}: '̃'
-    pub const COMBINING_TILDE: char = '̃';
-    /// \u{304}: '̄'
-    pub const COMBINING_MACRON: char = '̄';
-    /// \u{305}: '̅'
-    pub const COMBINING_OVERLINE: char = '̅';
-    /// \u{306}: '̆'
-    pub const COMBINING_BREVE: char = '̆';
-    /// \u{307}: '̇'
-    pub const COMBINING_DOT_ABOVE: char = '̇';
-    /// \u{308}: '̈'
-    pub const COMBINING_DIAERESIS: char = '̈';
-    /// \u{309}: '̉'
-    pub const COMBINING_HOOK_ABOVE: char = '̉';
-    /// \u{30a}: '̊'
-    pub const COMBINING_RING_ABOVE: char = '̊';
-    /// \u{30b}: '̋'
-    pub const COMBINING_DOUBLE_ACUTE_ACCENT: char = '̋';
-    /// \u{30c}: '̌'
-    pub const COMBINING_CARON: char = '̌';
-    /// \u{30d}: '̍'
-    pub const COMBINING_VERTICAL_LINE_ABOVE: char = '̍';
-    /// \u{30e}: '̎'
-    pub const COMBINING_DOUBLE_VERTICAL_LINE_ABOVE: char = '̎';
-    /// \u{30f}: '̏'
-    pub const COMBINING_DOUBLE_GRAVE_ACCENT: char = '̏';
-    /// \u{310}: '̐'
-    pub const COMBINING_CANDRABINDU: char = '̐';
-    /// \u{311}: '̑'
-    pub const COMBINING_INVERTED_BREVE: char = '̑';
-    /// \u{312}: '̒'
-    pub const COMBINING_TURNED_COMMA_ABOVE: char = '̒';
-    /// \u{313}: '̓'
-    pub const COMBINING_COMMA_ABOVE: char = '̓';
-    /// \u{314}: '̔'
-    pub const COMBINING_REVERSED_COMMA_ABOVE: char = '̔';
-    /// \u{315}: '̕'
-    pub const COMBINING_COMMA_ABOVE_RIGHT: char = '̕';
-    /// \u{316}: '̖'
-    pub const COMBINING_GRAVE_ACCENT_BELOW: char = '̖';
-    /// \u{317}: '̗'
-    pub const COMBINING_ACUTE_ACCENT_BELOW: char = '̗';
-    /// \u{318}: '̘'
-    pub const COMBINING_LEFT_TACK_BELOW: char = '̘';
-    /// \u{319}: '̙'
-    pub const COMBINING_RIGHT_TACK_BELOW: char = '̙';
-    /// \u{31a}: '̚'
-    pub const COMBINING_LEFT_ANGLE_ABOVE: char = '̚';
-    /// \u{31b}: '̛'
-    pub const COMBINING_HORN: char = '̛';
-    /// \u{31c}: '̜'
-    pub const COMBINING_LEFT_HALF_RING_BELOW: char = '̜';
-    /// \u{31d}: '̝'
-    pub const COMBINING_UP_TACK_BELOW: char = '̝';
-    /// \u{31e}: '̞'
-    pub const COMBINING_DOWN_TACK_BELOW: char = '̞';
-    /// \u{31f}: '̟'
-    pub const COMBINING_PLUS_SIGN_BELOW: char = '̟';
-    /// \u{320}: '̠'
-    pub const COMBINING_MINUS_SIGN_BELOW: char = '̠';
-    /// \u{321}: '̡'
-    pub const COMBINING_PALATALIZED_HOOK_BELOW: char = '̡';
-    /// \u{322}: '̢'
-    pub const COMBINING_RETROFLEX_HOOK_BELOW: char = '̢';
-    /// \u{323}: '̣'
-    pub const COMBINING_DOT_BELOW: char = '̣';
-    /// \u{324}: '̤'
-    pub const COMBINING_DIAERESIS_BELOW: char = '̤';
-    /// \u{325}: '̥'
-    pub const COMBINING_RING_BELOW: char = '̥';
-    /// \u{326}: '̦'
-    pub const COMBINING_COMMA_BELOW: char = '̦';
-    /// \u{327}: '̧'
-    pub const COMBINING_CEDILLA: char = '̧';
-    /// \u{328}: '̨'
-    pub const COMBINING_OGONEK: char = '̨';
-    /// \u{329}: '̩'
-    pub const COMBINING_VERTICAL_LINE_BELOW: char = '̩';
-    /// \u{32a}: '̪'
-    pub const COMBINING_BRIDGE_BELOW: char = '̪';
-    /// \u{32b}: '̫'
-    pub const COMBINING_INVERTED_DOUBLE_ARCH_BELOW: char = '̫';
-    /// \u{32c}: '̬'
-    pub const COMBINING_CARON_BELOW: char = '̬';
-    /// \u{32d}: '̭'
-    pub const COMBINING_CIRCUMFLEX_ACCENT_BELOW: char = '̭';
-    /// \u{32e}: '̮'
-    pub const COMBINING_BREVE_BELOW: char = '̮';
-    /// \u{32f}: '̯'
-    pub const COMBINING_INVERTED_BREVE_BELOW: char = '̯';
-    /// \u{330}: '̰'
-    pub const COMBINING_TILDE_BELOW: char = '̰';
-    /// \u{331}: '̱'
-    pub const COMBINING_MACRON_BELOW: char = '̱';
-    /// \u{332}: '̲'
-    pub const COMBINING_LOW_LINE: char = '̲';
-    /// \u{333}: '̳'
-    pub const COMBINING_DOUBLE_LOW_LINE: char = '̳';
-    /// \u{334}: '̴'
-    pub const COMBINING_TILDE_OVERLAY: char = '̴';
-    /// \u{335}: '̵'
-    pub const COMBINING_SHORT_STROKE_OVERLAY: char = '̵';
-    /// \u{336}: '̶'
-    pub const COMBINING_LONG_STROKE_OVERLAY: char = '̶';
-    /// \u{337}: '̷'
-    pub const COMBINING_SHORT_SOLIDUS_OVERLAY: char = '̷';
-    /// \u{338}: '̸'
-    pub const COMBINING_LONG_SOLIDUS_OVERLAY: char = '̸';
-    /// \u{339}: '̹'
-    pub const COMBINING_RIGHT_HALF_RING_BELOW: char = '̹';
-    /// \u{33a}: '̺'
-    pub const COMBINING_INVERTED_BRIDGE_BELOW: char = '̺';
-    /// \u{33b}: '̻'
-    pub const COMBINING_SQUARE_BELOW: char = '̻';
-    /// \u{33c}: '̼'
-    pub const COMBINING_SEAGULL_BELOW: char = '̼';
-    /// \u{33d}: '̽'
-    pub const COMBINING_X_ABOVE: char = '̽';
-    /// \u{33e}: '̾'
-    pub const COMBINING_VERTICAL_TILDE: char = '̾';
-    /// \u{33f}: '̿'
-    pub const COMBINING_DOUBLE_OVERLINE: char = '̿';
-    /// \u{340}: '̀'
-    pub const COMBINING_GRAVE_TONE_MARK: char = '̀';
-    /// \u{341}: '́'
-    pub const COMBINING_ACUTE_TONE_MARK: char = '́';
-    /// \u{342}: '͂'
-    pub const COMBINING_GREEK_PERISPOMENI: char = '͂';
-    /// \u{343}: '̓'
-    pub const COMBINING_GREEK_KORONIS: char = '̓';
-    /// \u{344}: '̈́'
-    pub const COMBINING_GREEK_DIALYTIKA_TONOS: char = '̈́';
-    /// \u{345}: 'ͅ'
-    pub const COMBINING_GREEK_YPOGEGRAMMENI: char = 'ͅ';
-    /// \u{346}: '͆'
-    pub const COMBINING_BRIDGE_ABOVE: char = '͆';
-    /// \u{347}: '͇'
-    pub const COMBINING_EQUALS_SIGN_BELOW: char = '͇';
-    /// \u{348}: '͈'
-    pub const COMBINING_DOUBLE_VERTICAL_LINE_BELOW: char = '͈';
-    /// \u{349}: '͉'
-    pub const COMBINING_LEFT_ANGLE_BELOW: char = '͉';
-    /// \u{34a}: '͊'
-    pub const COMBINING_NOT_TILDE_ABOVE: char = '͊';
-    /// \u{34b}: '͋'
-    pub const COMBINING_HOMOTHETIC_ABOVE: char = '͋';
-    /// \u{34c}: '͌'
-    pub const COMBINING_ALMOST_EQUAL_TO_ABOVE: char = '͌';
-    /// \u{34d}: '͍'
-    pub const COMBINING_LEFT_RIGHT_ARROW_BELOW: char = '͍';
-    /// \u{34e}: '͎'
-    pub const COMBINING_UPWARDS_ARROW_BELOW: char = '͎';
-    /// \u{34f}: '͏'
-    pub const COMBINING_GRAPHEME_JOINER: char = '͏';
-    /// \u{350}: '͐'
-    pub const COMBINING_RIGHT_ARROWHEAD_ABOVE: char = '͐';
-    /// \u{351}: '͑'
-    pub const COMBINING_LEFT_HALF_RING_ABOVE: char = '͑';
-    /// \u{352}: '͒'
-    pub const COMBINING_FERMATA: char = '͒';
-    /// \u{353}: '͓'
-    pub const COMBINING_X_BELOW: char = '͓';
-    /// \u{354}: '͔'
-    pub const COMBINING_LEFT_ARROWHEAD_BELOW: char = '͔';
-    /// \u{355}: '͕'
-    pub const COMBINING_RIGHT_ARROWHEAD_BELOW: char = '͕';
-    /// \u{356}: '͖'
-    pub const COMBINING_RIGHT_ARROWHEAD_AND_UP_ARROWHEAD_BELOW: char = '͖';
-    /// \u{357}: '͗'
-    pub const COMBINING_RIGHT_HALF_RING_ABOVE: char = '͗';
-    /// \u{358}: '͘'
-    pub const COMBINING_DOT_ABOVE_RIGHT: char = '͘';
-    /// \u{359}: '͙'
-    pub const COMBINING_ASTERISK_BELOW: char = '͙';
-    /// \u{35a}: '͚'
-    pub const COMBINING_DOUBLE_RING_BELOW: char = '͚';
-    /// \u{35b}: '͛'
-    pub const COMBINING_ZIGZAG_ABOVE: char = '͛';
-    /// \u{35c}: '͜'
-    pub const COMBINING_DOUBLE_BREVE_BELOW: char = '͜';
-    /// \u{35d}: '͝'
-    pub const COMBINING_DOUBLE_BREVE: char = '͝';
-    /// \u{35e}: '͞'
-    pub const COMBINING_DOUBLE_MACRON: char = '͞';
-    /// \u{35f}: '͟'
-    pub const COMBINING_DOUBLE_MACRON_BELOW: char = '͟';
-    /// \u{360}: '͠'
-    pub const COMBINING_DOUBLE_TILDE: char = '͠';
-    /// \u{361}: '͡'
-    pub const COMBINING_DOUBLE_INVERTED_BREVE: char = '͡';
-    /// \u{362}: '͢'
-    pub const COMBINING_DOUBLE_RIGHTWARDS_ARROW_BELOW: char = '͢';
-    /// \u{363}: 'ͣ'
-    pub const COMBINING_LATIN_SMALL_LETTER_A: char = 'ͣ';
-    /// \u{364}: 'ͤ'
-    pub const COMBINING_LATIN_SMALL_LETTER_E: char = 'ͤ';
-    /// \u{365}: 'ͥ'
-    pub const COMBINING_LATIN_SMALL_LETTER_I: char = 'ͥ';
-    /// \u{366}: 'ͦ'
-    pub const COMBINING_LATIN_SMALL_LETTER_O: char = 'ͦ';
-    /// \u{367}: 'ͧ'
-    pub const COMBINING_LATIN_SMALL_LETTER_U: char = 'ͧ';
-    /// \u{368}: 'ͨ'
-    pub const COMBINING_LATIN_SMALL_LETTER_C: char = 'ͨ';
-    /// \u{369}: 'ͩ'
-    pub const COMBINING_LATIN_SMALL_LETTER_D: char = 'ͩ';
-    /// \u{36a}: 'ͪ'
-    pub const COMBINING_LATIN_SMALL_LETTER_H: char = 'ͪ';
-    /// \u{36b}: 'ͫ'
-    pub const COMBINING_LATIN_SMALL_LETTER_M: char = 'ͫ';
-    /// \u{36c}: 'ͬ'
-    pub const COMBINING_LATIN_SMALL_LETTER_R: char = 'ͬ';
-    /// \u{36d}: 'ͭ'
-    pub const COMBINING_LATIN_SMALL_LETTER_T: char = 'ͭ';
-    /// \u{36e}: 'ͮ'
-    pub const COMBINING_LATIN_SMALL_LETTER_V: char = 'ͮ';
-}
 
 /// An enum to represent all characters in the CombiningDiacriticalMarks block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -453,119 +228,118 @@ pub enum CombiningDiacriticalMarks {
 
 impl Into<char> for CombiningDiacriticalMarks {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CombiningDiacriticalMarks::CombiningGraveAccent => COMBINING_GRAVE_ACCENT,
-            CombiningDiacriticalMarks::CombiningAcuteAccent => COMBINING_ACUTE_ACCENT,
-            CombiningDiacriticalMarks::CombiningCircumflexAccent => COMBINING_CIRCUMFLEX_ACCENT,
-            CombiningDiacriticalMarks::CombiningTilde => COMBINING_TILDE,
-            CombiningDiacriticalMarks::CombiningMacron => COMBINING_MACRON,
-            CombiningDiacriticalMarks::CombiningOverline => COMBINING_OVERLINE,
-            CombiningDiacriticalMarks::CombiningBreve => COMBINING_BREVE,
-            CombiningDiacriticalMarks::CombiningDotAbove => COMBINING_DOT_ABOVE,
-            CombiningDiacriticalMarks::CombiningDiaeresis => COMBINING_DIAERESIS,
-            CombiningDiacriticalMarks::CombiningHookAbove => COMBINING_HOOK_ABOVE,
-            CombiningDiacriticalMarks::CombiningRingAbove => COMBINING_RING_ABOVE,
-            CombiningDiacriticalMarks::CombiningDoubleAcuteAccent => COMBINING_DOUBLE_ACUTE_ACCENT,
-            CombiningDiacriticalMarks::CombiningCaron => COMBINING_CARON,
-            CombiningDiacriticalMarks::CombiningVerticalLineAbove => COMBINING_VERTICAL_LINE_ABOVE,
-            CombiningDiacriticalMarks::CombiningDoubleVerticalLineAbove => COMBINING_DOUBLE_VERTICAL_LINE_ABOVE,
-            CombiningDiacriticalMarks::CombiningDoubleGraveAccent => COMBINING_DOUBLE_GRAVE_ACCENT,
-            CombiningDiacriticalMarks::CombiningCandrabindu => COMBINING_CANDRABINDU,
-            CombiningDiacriticalMarks::CombiningInvertedBreve => COMBINING_INVERTED_BREVE,
-            CombiningDiacriticalMarks::CombiningTurnedCommaAbove => COMBINING_TURNED_COMMA_ABOVE,
-            CombiningDiacriticalMarks::CombiningCommaAbove => COMBINING_COMMA_ABOVE,
-            CombiningDiacriticalMarks::CombiningReversedCommaAbove => COMBINING_REVERSED_COMMA_ABOVE,
-            CombiningDiacriticalMarks::CombiningCommaAboveRight => COMBINING_COMMA_ABOVE_RIGHT,
-            CombiningDiacriticalMarks::CombiningGraveAccentBelow => COMBINING_GRAVE_ACCENT_BELOW,
-            CombiningDiacriticalMarks::CombiningAcuteAccentBelow => COMBINING_ACUTE_ACCENT_BELOW,
-            CombiningDiacriticalMarks::CombiningLeftTackBelow => COMBINING_LEFT_TACK_BELOW,
-            CombiningDiacriticalMarks::CombiningRightTackBelow => COMBINING_RIGHT_TACK_BELOW,
-            CombiningDiacriticalMarks::CombiningLeftAngleAbove => COMBINING_LEFT_ANGLE_ABOVE,
-            CombiningDiacriticalMarks::CombiningHorn => COMBINING_HORN,
-            CombiningDiacriticalMarks::CombiningLeftHalfRingBelow => COMBINING_LEFT_HALF_RING_BELOW,
-            CombiningDiacriticalMarks::CombiningUpTackBelow => COMBINING_UP_TACK_BELOW,
-            CombiningDiacriticalMarks::CombiningDownTackBelow => COMBINING_DOWN_TACK_BELOW,
-            CombiningDiacriticalMarks::CombiningPlusSignBelow => COMBINING_PLUS_SIGN_BELOW,
-            CombiningDiacriticalMarks::CombiningMinusSignBelow => COMBINING_MINUS_SIGN_BELOW,
-            CombiningDiacriticalMarks::CombiningPalatalizedHookBelow => COMBINING_PALATALIZED_HOOK_BELOW,
-            CombiningDiacriticalMarks::CombiningRetroflexHookBelow => COMBINING_RETROFLEX_HOOK_BELOW,
-            CombiningDiacriticalMarks::CombiningDotBelow => COMBINING_DOT_BELOW,
-            CombiningDiacriticalMarks::CombiningDiaeresisBelow => COMBINING_DIAERESIS_BELOW,
-            CombiningDiacriticalMarks::CombiningRingBelow => COMBINING_RING_BELOW,
-            CombiningDiacriticalMarks::CombiningCommaBelow => COMBINING_COMMA_BELOW,
-            CombiningDiacriticalMarks::CombiningCedilla => COMBINING_CEDILLA,
-            CombiningDiacriticalMarks::CombiningOgonek => COMBINING_OGONEK,
-            CombiningDiacriticalMarks::CombiningVerticalLineBelow => COMBINING_VERTICAL_LINE_BELOW,
-            CombiningDiacriticalMarks::CombiningBridgeBelow => COMBINING_BRIDGE_BELOW,
-            CombiningDiacriticalMarks::CombiningInvertedDoubleArchBelow => COMBINING_INVERTED_DOUBLE_ARCH_BELOW,
-            CombiningDiacriticalMarks::CombiningCaronBelow => COMBINING_CARON_BELOW,
-            CombiningDiacriticalMarks::CombiningCircumflexAccentBelow => COMBINING_CIRCUMFLEX_ACCENT_BELOW,
-            CombiningDiacriticalMarks::CombiningBreveBelow => COMBINING_BREVE_BELOW,
-            CombiningDiacriticalMarks::CombiningInvertedBreveBelow => COMBINING_INVERTED_BREVE_BELOW,
-            CombiningDiacriticalMarks::CombiningTildeBelow => COMBINING_TILDE_BELOW,
-            CombiningDiacriticalMarks::CombiningMacronBelow => COMBINING_MACRON_BELOW,
-            CombiningDiacriticalMarks::CombiningLowLine => COMBINING_LOW_LINE,
-            CombiningDiacriticalMarks::CombiningDoubleLowLine => COMBINING_DOUBLE_LOW_LINE,
-            CombiningDiacriticalMarks::CombiningTildeOverlay => COMBINING_TILDE_OVERLAY,
-            CombiningDiacriticalMarks::CombiningShortStrokeOverlay => COMBINING_SHORT_STROKE_OVERLAY,
-            CombiningDiacriticalMarks::CombiningLongStrokeOverlay => COMBINING_LONG_STROKE_OVERLAY,
-            CombiningDiacriticalMarks::CombiningShortSolidusOverlay => COMBINING_SHORT_SOLIDUS_OVERLAY,
-            CombiningDiacriticalMarks::CombiningLongSolidusOverlay => COMBINING_LONG_SOLIDUS_OVERLAY,
-            CombiningDiacriticalMarks::CombiningRightHalfRingBelow => COMBINING_RIGHT_HALF_RING_BELOW,
-            CombiningDiacriticalMarks::CombiningInvertedBridgeBelow => COMBINING_INVERTED_BRIDGE_BELOW,
-            CombiningDiacriticalMarks::CombiningSquareBelow => COMBINING_SQUARE_BELOW,
-            CombiningDiacriticalMarks::CombiningSeagullBelow => COMBINING_SEAGULL_BELOW,
-            CombiningDiacriticalMarks::CombiningXAbove => COMBINING_X_ABOVE,
-            CombiningDiacriticalMarks::CombiningVerticalTilde => COMBINING_VERTICAL_TILDE,
-            CombiningDiacriticalMarks::CombiningDoubleOverline => COMBINING_DOUBLE_OVERLINE,
-            CombiningDiacriticalMarks::CombiningGraveToneMark => COMBINING_GRAVE_TONE_MARK,
-            CombiningDiacriticalMarks::CombiningAcuteToneMark => COMBINING_ACUTE_TONE_MARK,
-            CombiningDiacriticalMarks::CombiningGreekPerispomeni => COMBINING_GREEK_PERISPOMENI,
-            CombiningDiacriticalMarks::CombiningGreekKoronis => COMBINING_GREEK_KORONIS,
-            CombiningDiacriticalMarks::CombiningGreekDialytikaTonos => COMBINING_GREEK_DIALYTIKA_TONOS,
-            CombiningDiacriticalMarks::CombiningGreekYpogegrammeni => COMBINING_GREEK_YPOGEGRAMMENI,
-            CombiningDiacriticalMarks::CombiningBridgeAbove => COMBINING_BRIDGE_ABOVE,
-            CombiningDiacriticalMarks::CombiningEqualsSignBelow => COMBINING_EQUALS_SIGN_BELOW,
-            CombiningDiacriticalMarks::CombiningDoubleVerticalLineBelow => COMBINING_DOUBLE_VERTICAL_LINE_BELOW,
-            CombiningDiacriticalMarks::CombiningLeftAngleBelow => COMBINING_LEFT_ANGLE_BELOW,
-            CombiningDiacriticalMarks::CombiningNotTildeAbove => COMBINING_NOT_TILDE_ABOVE,
-            CombiningDiacriticalMarks::CombiningHomotheticAbove => COMBINING_HOMOTHETIC_ABOVE,
-            CombiningDiacriticalMarks::CombiningAlmostEqualToAbove => COMBINING_ALMOST_EQUAL_TO_ABOVE,
-            CombiningDiacriticalMarks::CombiningLeftRightArrowBelow => COMBINING_LEFT_RIGHT_ARROW_BELOW,
-            CombiningDiacriticalMarks::CombiningUpwardsArrowBelow => COMBINING_UPWARDS_ARROW_BELOW,
-            CombiningDiacriticalMarks::CombiningGraphemeJoiner => COMBINING_GRAPHEME_JOINER,
-            CombiningDiacriticalMarks::CombiningRightArrowheadAbove => COMBINING_RIGHT_ARROWHEAD_ABOVE,
-            CombiningDiacriticalMarks::CombiningLeftHalfRingAbove => COMBINING_LEFT_HALF_RING_ABOVE,
-            CombiningDiacriticalMarks::CombiningFermata => COMBINING_FERMATA,
-            CombiningDiacriticalMarks::CombiningXBelow => COMBINING_X_BELOW,
-            CombiningDiacriticalMarks::CombiningLeftArrowheadBelow => COMBINING_LEFT_ARROWHEAD_BELOW,
-            CombiningDiacriticalMarks::CombiningRightArrowheadBelow => COMBINING_RIGHT_ARROWHEAD_BELOW,
-            CombiningDiacriticalMarks::CombiningRightArrowheadAndUpArrowheadBelow => COMBINING_RIGHT_ARROWHEAD_AND_UP_ARROWHEAD_BELOW,
-            CombiningDiacriticalMarks::CombiningRightHalfRingAbove => COMBINING_RIGHT_HALF_RING_ABOVE,
-            CombiningDiacriticalMarks::CombiningDotAboveRight => COMBINING_DOT_ABOVE_RIGHT,
-            CombiningDiacriticalMarks::CombiningAsteriskBelow => COMBINING_ASTERISK_BELOW,
-            CombiningDiacriticalMarks::CombiningDoubleRingBelow => COMBINING_DOUBLE_RING_BELOW,
-            CombiningDiacriticalMarks::CombiningZigzagAbove => COMBINING_ZIGZAG_ABOVE,
-            CombiningDiacriticalMarks::CombiningDoubleBreveBelow => COMBINING_DOUBLE_BREVE_BELOW,
-            CombiningDiacriticalMarks::CombiningDoubleBreve => COMBINING_DOUBLE_BREVE,
-            CombiningDiacriticalMarks::CombiningDoubleMacron => COMBINING_DOUBLE_MACRON,
-            CombiningDiacriticalMarks::CombiningDoubleMacronBelow => COMBINING_DOUBLE_MACRON_BELOW,
-            CombiningDiacriticalMarks::CombiningDoubleTilde => COMBINING_DOUBLE_TILDE,
-            CombiningDiacriticalMarks::CombiningDoubleInvertedBreve => COMBINING_DOUBLE_INVERTED_BREVE,
-            CombiningDiacriticalMarks::CombiningDoubleRightwardsArrowBelow => COMBINING_DOUBLE_RIGHTWARDS_ARROW_BELOW,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterA => COMBINING_LATIN_SMALL_LETTER_A,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterE => COMBINING_LATIN_SMALL_LETTER_E,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterI => COMBINING_LATIN_SMALL_LETTER_I,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterO => COMBINING_LATIN_SMALL_LETTER_O,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterU => COMBINING_LATIN_SMALL_LETTER_U,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterC => COMBINING_LATIN_SMALL_LETTER_C,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterD => COMBINING_LATIN_SMALL_LETTER_D,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterH => COMBINING_LATIN_SMALL_LETTER_H,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterM => COMBINING_LATIN_SMALL_LETTER_M,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterR => COMBINING_LATIN_SMALL_LETTER_R,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterT => COMBINING_LATIN_SMALL_LETTER_T,
-            CombiningDiacriticalMarks::CombiningLatinSmallLetterV => COMBINING_LATIN_SMALL_LETTER_V,
+            CombiningDiacriticalMarks::CombiningGraveAccent => '̀',
+            CombiningDiacriticalMarks::CombiningAcuteAccent => '́',
+            CombiningDiacriticalMarks::CombiningCircumflexAccent => '̂',
+            CombiningDiacriticalMarks::CombiningTilde => '̃',
+            CombiningDiacriticalMarks::CombiningMacron => '̄',
+            CombiningDiacriticalMarks::CombiningOverline => '̅',
+            CombiningDiacriticalMarks::CombiningBreve => '̆',
+            CombiningDiacriticalMarks::CombiningDotAbove => '̇',
+            CombiningDiacriticalMarks::CombiningDiaeresis => '̈',
+            CombiningDiacriticalMarks::CombiningHookAbove => '̉',
+            CombiningDiacriticalMarks::CombiningRingAbove => '̊',
+            CombiningDiacriticalMarks::CombiningDoubleAcuteAccent => '̋',
+            CombiningDiacriticalMarks::CombiningCaron => '̌',
+            CombiningDiacriticalMarks::CombiningVerticalLineAbove => '̍',
+            CombiningDiacriticalMarks::CombiningDoubleVerticalLineAbove => '̎',
+            CombiningDiacriticalMarks::CombiningDoubleGraveAccent => '̏',
+            CombiningDiacriticalMarks::CombiningCandrabindu => '̐',
+            CombiningDiacriticalMarks::CombiningInvertedBreve => '̑',
+            CombiningDiacriticalMarks::CombiningTurnedCommaAbove => '̒',
+            CombiningDiacriticalMarks::CombiningCommaAbove => '̓',
+            CombiningDiacriticalMarks::CombiningReversedCommaAbove => '̔',
+            CombiningDiacriticalMarks::CombiningCommaAboveRight => '̕',
+            CombiningDiacriticalMarks::CombiningGraveAccentBelow => '̖',
+            CombiningDiacriticalMarks::CombiningAcuteAccentBelow => '̗',
+            CombiningDiacriticalMarks::CombiningLeftTackBelow => '̘',
+            CombiningDiacriticalMarks::CombiningRightTackBelow => '̙',
+            CombiningDiacriticalMarks::CombiningLeftAngleAbove => '̚',
+            CombiningDiacriticalMarks::CombiningHorn => '̛',
+            CombiningDiacriticalMarks::CombiningLeftHalfRingBelow => '̜',
+            CombiningDiacriticalMarks::CombiningUpTackBelow => '̝',
+            CombiningDiacriticalMarks::CombiningDownTackBelow => '̞',
+            CombiningDiacriticalMarks::CombiningPlusSignBelow => '̟',
+            CombiningDiacriticalMarks::CombiningMinusSignBelow => '̠',
+            CombiningDiacriticalMarks::CombiningPalatalizedHookBelow => '̡',
+            CombiningDiacriticalMarks::CombiningRetroflexHookBelow => '̢',
+            CombiningDiacriticalMarks::CombiningDotBelow => '̣',
+            CombiningDiacriticalMarks::CombiningDiaeresisBelow => '̤',
+            CombiningDiacriticalMarks::CombiningRingBelow => '̥',
+            CombiningDiacriticalMarks::CombiningCommaBelow => '̦',
+            CombiningDiacriticalMarks::CombiningCedilla => '̧',
+            CombiningDiacriticalMarks::CombiningOgonek => '̨',
+            CombiningDiacriticalMarks::CombiningVerticalLineBelow => '̩',
+            CombiningDiacriticalMarks::CombiningBridgeBelow => '̪',
+            CombiningDiacriticalMarks::CombiningInvertedDoubleArchBelow => '̫',
+            CombiningDiacriticalMarks::CombiningCaronBelow => '̬',
+            CombiningDiacriticalMarks::CombiningCircumflexAccentBelow => '̭',
+            CombiningDiacriticalMarks::CombiningBreveBelow => '̮',
+            CombiningDiacriticalMarks::CombiningInvertedBreveBelow => '̯',
+            CombiningDiacriticalMarks::CombiningTildeBelow => '̰',
+            CombiningDiacriticalMarks::CombiningMacronBelow => '̱',
+            CombiningDiacriticalMarks::CombiningLowLine => '̲',
+            CombiningDiacriticalMarks::CombiningDoubleLowLine => '̳',
+            CombiningDiacriticalMarks::CombiningTildeOverlay => '̴',
+            CombiningDiacriticalMarks::CombiningShortStrokeOverlay => '̵',
+            CombiningDiacriticalMarks::CombiningLongStrokeOverlay => '̶',
+            CombiningDiacriticalMarks::CombiningShortSolidusOverlay => '̷',
+            CombiningDiacriticalMarks::CombiningLongSolidusOverlay => '̸',
+            CombiningDiacriticalMarks::CombiningRightHalfRingBelow => '̹',
+            CombiningDiacriticalMarks::CombiningInvertedBridgeBelow => '̺',
+            CombiningDiacriticalMarks::CombiningSquareBelow => '̻',
+            CombiningDiacriticalMarks::CombiningSeagullBelow => '̼',
+            CombiningDiacriticalMarks::CombiningXAbove => '̽',
+            CombiningDiacriticalMarks::CombiningVerticalTilde => '̾',
+            CombiningDiacriticalMarks::CombiningDoubleOverline => '̿',
+            CombiningDiacriticalMarks::CombiningGraveToneMark => '̀',
+            CombiningDiacriticalMarks::CombiningAcuteToneMark => '́',
+            CombiningDiacriticalMarks::CombiningGreekPerispomeni => '͂',
+            CombiningDiacriticalMarks::CombiningGreekKoronis => '̓',
+            CombiningDiacriticalMarks::CombiningGreekDialytikaTonos => '̈́',
+            CombiningDiacriticalMarks::CombiningGreekYpogegrammeni => 'ͅ',
+            CombiningDiacriticalMarks::CombiningBridgeAbove => '͆',
+            CombiningDiacriticalMarks::CombiningEqualsSignBelow => '͇',
+            CombiningDiacriticalMarks::CombiningDoubleVerticalLineBelow => '͈',
+            CombiningDiacriticalMarks::CombiningLeftAngleBelow => '͉',
+            CombiningDiacriticalMarks::CombiningNotTildeAbove => '͊',
+            CombiningDiacriticalMarks::CombiningHomotheticAbove => '͋',
+            CombiningDiacriticalMarks::CombiningAlmostEqualToAbove => '͌',
+            CombiningDiacriticalMarks::CombiningLeftRightArrowBelow => '͍',
+            CombiningDiacriticalMarks::CombiningUpwardsArrowBelow => '͎',
+            CombiningDiacriticalMarks::CombiningGraphemeJoiner => '͏',
+            CombiningDiacriticalMarks::CombiningRightArrowheadAbove => '͐',
+            CombiningDiacriticalMarks::CombiningLeftHalfRingAbove => '͑',
+            CombiningDiacriticalMarks::CombiningFermata => '͒',
+            CombiningDiacriticalMarks::CombiningXBelow => '͓',
+            CombiningDiacriticalMarks::CombiningLeftArrowheadBelow => '͔',
+            CombiningDiacriticalMarks::CombiningRightArrowheadBelow => '͕',
+            CombiningDiacriticalMarks::CombiningRightArrowheadAndUpArrowheadBelow => '͖',
+            CombiningDiacriticalMarks::CombiningRightHalfRingAbove => '͗',
+            CombiningDiacriticalMarks::CombiningDotAboveRight => '͘',
+            CombiningDiacriticalMarks::CombiningAsteriskBelow => '͙',
+            CombiningDiacriticalMarks::CombiningDoubleRingBelow => '͚',
+            CombiningDiacriticalMarks::CombiningZigzagAbove => '͛',
+            CombiningDiacriticalMarks::CombiningDoubleBreveBelow => '͜',
+            CombiningDiacriticalMarks::CombiningDoubleBreve => '͝',
+            CombiningDiacriticalMarks::CombiningDoubleMacron => '͞',
+            CombiningDiacriticalMarks::CombiningDoubleMacronBelow => '͟',
+            CombiningDiacriticalMarks::CombiningDoubleTilde => '͠',
+            CombiningDiacriticalMarks::CombiningDoubleInvertedBreve => '͡',
+            CombiningDiacriticalMarks::CombiningDoubleRightwardsArrowBelow => '͢',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterA => 'ͣ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterE => 'ͤ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterI => 'ͥ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterO => 'ͦ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterU => 'ͧ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterC => 'ͨ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterD => 'ͩ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterH => 'ͪ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterM => 'ͫ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterR => 'ͬ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterT => 'ͭ',
+            CombiningDiacriticalMarks::CombiningLatinSmallLetterV => 'ͮ',
         }
     }
 }
@@ -573,119 +347,118 @@ impl Into<char> for CombiningDiacriticalMarks {
 impl std::convert::TryFrom<char> for CombiningDiacriticalMarks {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            COMBINING_GRAVE_ACCENT => Ok(CombiningDiacriticalMarks::CombiningGraveAccent),
-            COMBINING_ACUTE_ACCENT => Ok(CombiningDiacriticalMarks::CombiningAcuteAccent),
-            COMBINING_CIRCUMFLEX_ACCENT => Ok(CombiningDiacriticalMarks::CombiningCircumflexAccent),
-            COMBINING_TILDE => Ok(CombiningDiacriticalMarks::CombiningTilde),
-            COMBINING_MACRON => Ok(CombiningDiacriticalMarks::CombiningMacron),
-            COMBINING_OVERLINE => Ok(CombiningDiacriticalMarks::CombiningOverline),
-            COMBINING_BREVE => Ok(CombiningDiacriticalMarks::CombiningBreve),
-            COMBINING_DOT_ABOVE => Ok(CombiningDiacriticalMarks::CombiningDotAbove),
-            COMBINING_DIAERESIS => Ok(CombiningDiacriticalMarks::CombiningDiaeresis),
-            COMBINING_HOOK_ABOVE => Ok(CombiningDiacriticalMarks::CombiningHookAbove),
-            COMBINING_RING_ABOVE => Ok(CombiningDiacriticalMarks::CombiningRingAbove),
-            COMBINING_DOUBLE_ACUTE_ACCENT => Ok(CombiningDiacriticalMarks::CombiningDoubleAcuteAccent),
-            COMBINING_CARON => Ok(CombiningDiacriticalMarks::CombiningCaron),
-            COMBINING_VERTICAL_LINE_ABOVE => Ok(CombiningDiacriticalMarks::CombiningVerticalLineAbove),
-            COMBINING_DOUBLE_VERTICAL_LINE_ABOVE => Ok(CombiningDiacriticalMarks::CombiningDoubleVerticalLineAbove),
-            COMBINING_DOUBLE_GRAVE_ACCENT => Ok(CombiningDiacriticalMarks::CombiningDoubleGraveAccent),
-            COMBINING_CANDRABINDU => Ok(CombiningDiacriticalMarks::CombiningCandrabindu),
-            COMBINING_INVERTED_BREVE => Ok(CombiningDiacriticalMarks::CombiningInvertedBreve),
-            COMBINING_TURNED_COMMA_ABOVE => Ok(CombiningDiacriticalMarks::CombiningTurnedCommaAbove),
-            COMBINING_COMMA_ABOVE => Ok(CombiningDiacriticalMarks::CombiningCommaAbove),
-            COMBINING_REVERSED_COMMA_ABOVE => Ok(CombiningDiacriticalMarks::CombiningReversedCommaAbove),
-            COMBINING_COMMA_ABOVE_RIGHT => Ok(CombiningDiacriticalMarks::CombiningCommaAboveRight),
-            COMBINING_GRAVE_ACCENT_BELOW => Ok(CombiningDiacriticalMarks::CombiningGraveAccentBelow),
-            COMBINING_ACUTE_ACCENT_BELOW => Ok(CombiningDiacriticalMarks::CombiningAcuteAccentBelow),
-            COMBINING_LEFT_TACK_BELOW => Ok(CombiningDiacriticalMarks::CombiningLeftTackBelow),
-            COMBINING_RIGHT_TACK_BELOW => Ok(CombiningDiacriticalMarks::CombiningRightTackBelow),
-            COMBINING_LEFT_ANGLE_ABOVE => Ok(CombiningDiacriticalMarks::CombiningLeftAngleAbove),
-            COMBINING_HORN => Ok(CombiningDiacriticalMarks::CombiningHorn),
-            COMBINING_LEFT_HALF_RING_BELOW => Ok(CombiningDiacriticalMarks::CombiningLeftHalfRingBelow),
-            COMBINING_UP_TACK_BELOW => Ok(CombiningDiacriticalMarks::CombiningUpTackBelow),
-            COMBINING_DOWN_TACK_BELOW => Ok(CombiningDiacriticalMarks::CombiningDownTackBelow),
-            COMBINING_PLUS_SIGN_BELOW => Ok(CombiningDiacriticalMarks::CombiningPlusSignBelow),
-            COMBINING_MINUS_SIGN_BELOW => Ok(CombiningDiacriticalMarks::CombiningMinusSignBelow),
-            COMBINING_PALATALIZED_HOOK_BELOW => Ok(CombiningDiacriticalMarks::CombiningPalatalizedHookBelow),
-            COMBINING_RETROFLEX_HOOK_BELOW => Ok(CombiningDiacriticalMarks::CombiningRetroflexHookBelow),
-            COMBINING_DOT_BELOW => Ok(CombiningDiacriticalMarks::CombiningDotBelow),
-            COMBINING_DIAERESIS_BELOW => Ok(CombiningDiacriticalMarks::CombiningDiaeresisBelow),
-            COMBINING_RING_BELOW => Ok(CombiningDiacriticalMarks::CombiningRingBelow),
-            COMBINING_COMMA_BELOW => Ok(CombiningDiacriticalMarks::CombiningCommaBelow),
-            COMBINING_CEDILLA => Ok(CombiningDiacriticalMarks::CombiningCedilla),
-            COMBINING_OGONEK => Ok(CombiningDiacriticalMarks::CombiningOgonek),
-            COMBINING_VERTICAL_LINE_BELOW => Ok(CombiningDiacriticalMarks::CombiningVerticalLineBelow),
-            COMBINING_BRIDGE_BELOW => Ok(CombiningDiacriticalMarks::CombiningBridgeBelow),
-            COMBINING_INVERTED_DOUBLE_ARCH_BELOW => Ok(CombiningDiacriticalMarks::CombiningInvertedDoubleArchBelow),
-            COMBINING_CARON_BELOW => Ok(CombiningDiacriticalMarks::CombiningCaronBelow),
-            COMBINING_CIRCUMFLEX_ACCENT_BELOW => Ok(CombiningDiacriticalMarks::CombiningCircumflexAccentBelow),
-            COMBINING_BREVE_BELOW => Ok(CombiningDiacriticalMarks::CombiningBreveBelow),
-            COMBINING_INVERTED_BREVE_BELOW => Ok(CombiningDiacriticalMarks::CombiningInvertedBreveBelow),
-            COMBINING_TILDE_BELOW => Ok(CombiningDiacriticalMarks::CombiningTildeBelow),
-            COMBINING_MACRON_BELOW => Ok(CombiningDiacriticalMarks::CombiningMacronBelow),
-            COMBINING_LOW_LINE => Ok(CombiningDiacriticalMarks::CombiningLowLine),
-            COMBINING_DOUBLE_LOW_LINE => Ok(CombiningDiacriticalMarks::CombiningDoubleLowLine),
-            COMBINING_TILDE_OVERLAY => Ok(CombiningDiacriticalMarks::CombiningTildeOverlay),
-            COMBINING_SHORT_STROKE_OVERLAY => Ok(CombiningDiacriticalMarks::CombiningShortStrokeOverlay),
-            COMBINING_LONG_STROKE_OVERLAY => Ok(CombiningDiacriticalMarks::CombiningLongStrokeOverlay),
-            COMBINING_SHORT_SOLIDUS_OVERLAY => Ok(CombiningDiacriticalMarks::CombiningShortSolidusOverlay),
-            COMBINING_LONG_SOLIDUS_OVERLAY => Ok(CombiningDiacriticalMarks::CombiningLongSolidusOverlay),
-            COMBINING_RIGHT_HALF_RING_BELOW => Ok(CombiningDiacriticalMarks::CombiningRightHalfRingBelow),
-            COMBINING_INVERTED_BRIDGE_BELOW => Ok(CombiningDiacriticalMarks::CombiningInvertedBridgeBelow),
-            COMBINING_SQUARE_BELOW => Ok(CombiningDiacriticalMarks::CombiningSquareBelow),
-            COMBINING_SEAGULL_BELOW => Ok(CombiningDiacriticalMarks::CombiningSeagullBelow),
-            COMBINING_X_ABOVE => Ok(CombiningDiacriticalMarks::CombiningXAbove),
-            COMBINING_VERTICAL_TILDE => Ok(CombiningDiacriticalMarks::CombiningVerticalTilde),
-            COMBINING_DOUBLE_OVERLINE => Ok(CombiningDiacriticalMarks::CombiningDoubleOverline),
-            COMBINING_GRAVE_TONE_MARK => Ok(CombiningDiacriticalMarks::CombiningGraveToneMark),
-            COMBINING_ACUTE_TONE_MARK => Ok(CombiningDiacriticalMarks::CombiningAcuteToneMark),
-            COMBINING_GREEK_PERISPOMENI => Ok(CombiningDiacriticalMarks::CombiningGreekPerispomeni),
-            COMBINING_GREEK_KORONIS => Ok(CombiningDiacriticalMarks::CombiningGreekKoronis),
-            COMBINING_GREEK_DIALYTIKA_TONOS => Ok(CombiningDiacriticalMarks::CombiningGreekDialytikaTonos),
-            COMBINING_GREEK_YPOGEGRAMMENI => Ok(CombiningDiacriticalMarks::CombiningGreekYpogegrammeni),
-            COMBINING_BRIDGE_ABOVE => Ok(CombiningDiacriticalMarks::CombiningBridgeAbove),
-            COMBINING_EQUALS_SIGN_BELOW => Ok(CombiningDiacriticalMarks::CombiningEqualsSignBelow),
-            COMBINING_DOUBLE_VERTICAL_LINE_BELOW => Ok(CombiningDiacriticalMarks::CombiningDoubleVerticalLineBelow),
-            COMBINING_LEFT_ANGLE_BELOW => Ok(CombiningDiacriticalMarks::CombiningLeftAngleBelow),
-            COMBINING_NOT_TILDE_ABOVE => Ok(CombiningDiacriticalMarks::CombiningNotTildeAbove),
-            COMBINING_HOMOTHETIC_ABOVE => Ok(CombiningDiacriticalMarks::CombiningHomotheticAbove),
-            COMBINING_ALMOST_EQUAL_TO_ABOVE => Ok(CombiningDiacriticalMarks::CombiningAlmostEqualToAbove),
-            COMBINING_LEFT_RIGHT_ARROW_BELOW => Ok(CombiningDiacriticalMarks::CombiningLeftRightArrowBelow),
-            COMBINING_UPWARDS_ARROW_BELOW => Ok(CombiningDiacriticalMarks::CombiningUpwardsArrowBelow),
-            COMBINING_GRAPHEME_JOINER => Ok(CombiningDiacriticalMarks::CombiningGraphemeJoiner),
-            COMBINING_RIGHT_ARROWHEAD_ABOVE => Ok(CombiningDiacriticalMarks::CombiningRightArrowheadAbove),
-            COMBINING_LEFT_HALF_RING_ABOVE => Ok(CombiningDiacriticalMarks::CombiningLeftHalfRingAbove),
-            COMBINING_FERMATA => Ok(CombiningDiacriticalMarks::CombiningFermata),
-            COMBINING_X_BELOW => Ok(CombiningDiacriticalMarks::CombiningXBelow),
-            COMBINING_LEFT_ARROWHEAD_BELOW => Ok(CombiningDiacriticalMarks::CombiningLeftArrowheadBelow),
-            COMBINING_RIGHT_ARROWHEAD_BELOW => Ok(CombiningDiacriticalMarks::CombiningRightArrowheadBelow),
-            COMBINING_RIGHT_ARROWHEAD_AND_UP_ARROWHEAD_BELOW => Ok(CombiningDiacriticalMarks::CombiningRightArrowheadAndUpArrowheadBelow),
-            COMBINING_RIGHT_HALF_RING_ABOVE => Ok(CombiningDiacriticalMarks::CombiningRightHalfRingAbove),
-            COMBINING_DOT_ABOVE_RIGHT => Ok(CombiningDiacriticalMarks::CombiningDotAboveRight),
-            COMBINING_ASTERISK_BELOW => Ok(CombiningDiacriticalMarks::CombiningAsteriskBelow),
-            COMBINING_DOUBLE_RING_BELOW => Ok(CombiningDiacriticalMarks::CombiningDoubleRingBelow),
-            COMBINING_ZIGZAG_ABOVE => Ok(CombiningDiacriticalMarks::CombiningZigzagAbove),
-            COMBINING_DOUBLE_BREVE_BELOW => Ok(CombiningDiacriticalMarks::CombiningDoubleBreveBelow),
-            COMBINING_DOUBLE_BREVE => Ok(CombiningDiacriticalMarks::CombiningDoubleBreve),
-            COMBINING_DOUBLE_MACRON => Ok(CombiningDiacriticalMarks::CombiningDoubleMacron),
-            COMBINING_DOUBLE_MACRON_BELOW => Ok(CombiningDiacriticalMarks::CombiningDoubleMacronBelow),
-            COMBINING_DOUBLE_TILDE => Ok(CombiningDiacriticalMarks::CombiningDoubleTilde),
-            COMBINING_DOUBLE_INVERTED_BREVE => Ok(CombiningDiacriticalMarks::CombiningDoubleInvertedBreve),
-            COMBINING_DOUBLE_RIGHTWARDS_ARROW_BELOW => Ok(CombiningDiacriticalMarks::CombiningDoubleRightwardsArrowBelow),
-            COMBINING_LATIN_SMALL_LETTER_A => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterA),
-            COMBINING_LATIN_SMALL_LETTER_E => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterE),
-            COMBINING_LATIN_SMALL_LETTER_I => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterI),
-            COMBINING_LATIN_SMALL_LETTER_O => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterO),
-            COMBINING_LATIN_SMALL_LETTER_U => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterU),
-            COMBINING_LATIN_SMALL_LETTER_C => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterC),
-            COMBINING_LATIN_SMALL_LETTER_D => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterD),
-            COMBINING_LATIN_SMALL_LETTER_H => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterH),
-            COMBINING_LATIN_SMALL_LETTER_M => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterM),
-            COMBINING_LATIN_SMALL_LETTER_R => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterR),
-            COMBINING_LATIN_SMALL_LETTER_T => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterT),
-            COMBINING_LATIN_SMALL_LETTER_V => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterV),
+            '̀' => Ok(CombiningDiacriticalMarks::CombiningGraveAccent),
+            '́' => Ok(CombiningDiacriticalMarks::CombiningAcuteAccent),
+            '̂' => Ok(CombiningDiacriticalMarks::CombiningCircumflexAccent),
+            '̃' => Ok(CombiningDiacriticalMarks::CombiningTilde),
+            '̄' => Ok(CombiningDiacriticalMarks::CombiningMacron),
+            '̅' => Ok(CombiningDiacriticalMarks::CombiningOverline),
+            '̆' => Ok(CombiningDiacriticalMarks::CombiningBreve),
+            '̇' => Ok(CombiningDiacriticalMarks::CombiningDotAbove),
+            '̈' => Ok(CombiningDiacriticalMarks::CombiningDiaeresis),
+            '̉' => Ok(CombiningDiacriticalMarks::CombiningHookAbove),
+            '̊' => Ok(CombiningDiacriticalMarks::CombiningRingAbove),
+            '̋' => Ok(CombiningDiacriticalMarks::CombiningDoubleAcuteAccent),
+            '̌' => Ok(CombiningDiacriticalMarks::CombiningCaron),
+            '̍' => Ok(CombiningDiacriticalMarks::CombiningVerticalLineAbove),
+            '̎' => Ok(CombiningDiacriticalMarks::CombiningDoubleVerticalLineAbove),
+            '̏' => Ok(CombiningDiacriticalMarks::CombiningDoubleGraveAccent),
+            '̐' => Ok(CombiningDiacriticalMarks::CombiningCandrabindu),
+            '̑' => Ok(CombiningDiacriticalMarks::CombiningInvertedBreve),
+            '̒' => Ok(CombiningDiacriticalMarks::CombiningTurnedCommaAbove),
+            '̓' => Ok(CombiningDiacriticalMarks::CombiningCommaAbove),
+            '̔' => Ok(CombiningDiacriticalMarks::CombiningReversedCommaAbove),
+            '̕' => Ok(CombiningDiacriticalMarks::CombiningCommaAboveRight),
+            '̖' => Ok(CombiningDiacriticalMarks::CombiningGraveAccentBelow),
+            '̗' => Ok(CombiningDiacriticalMarks::CombiningAcuteAccentBelow),
+            '̘' => Ok(CombiningDiacriticalMarks::CombiningLeftTackBelow),
+            '̙' => Ok(CombiningDiacriticalMarks::CombiningRightTackBelow),
+            '̚' => Ok(CombiningDiacriticalMarks::CombiningLeftAngleAbove),
+            '̛' => Ok(CombiningDiacriticalMarks::CombiningHorn),
+            '̜' => Ok(CombiningDiacriticalMarks::CombiningLeftHalfRingBelow),
+            '̝' => Ok(CombiningDiacriticalMarks::CombiningUpTackBelow),
+            '̞' => Ok(CombiningDiacriticalMarks::CombiningDownTackBelow),
+            '̟' => Ok(CombiningDiacriticalMarks::CombiningPlusSignBelow),
+            '̠' => Ok(CombiningDiacriticalMarks::CombiningMinusSignBelow),
+            '̡' => Ok(CombiningDiacriticalMarks::CombiningPalatalizedHookBelow),
+            '̢' => Ok(CombiningDiacriticalMarks::CombiningRetroflexHookBelow),
+            '̣' => Ok(CombiningDiacriticalMarks::CombiningDotBelow),
+            '̤' => Ok(CombiningDiacriticalMarks::CombiningDiaeresisBelow),
+            '̥' => Ok(CombiningDiacriticalMarks::CombiningRingBelow),
+            '̦' => Ok(CombiningDiacriticalMarks::CombiningCommaBelow),
+            '̧' => Ok(CombiningDiacriticalMarks::CombiningCedilla),
+            '̨' => Ok(CombiningDiacriticalMarks::CombiningOgonek),
+            '̩' => Ok(CombiningDiacriticalMarks::CombiningVerticalLineBelow),
+            '̪' => Ok(CombiningDiacriticalMarks::CombiningBridgeBelow),
+            '̫' => Ok(CombiningDiacriticalMarks::CombiningInvertedDoubleArchBelow),
+            '̬' => Ok(CombiningDiacriticalMarks::CombiningCaronBelow),
+            '̭' => Ok(CombiningDiacriticalMarks::CombiningCircumflexAccentBelow),
+            '̮' => Ok(CombiningDiacriticalMarks::CombiningBreveBelow),
+            '̯' => Ok(CombiningDiacriticalMarks::CombiningInvertedBreveBelow),
+            '̰' => Ok(CombiningDiacriticalMarks::CombiningTildeBelow),
+            '̱' => Ok(CombiningDiacriticalMarks::CombiningMacronBelow),
+            '̲' => Ok(CombiningDiacriticalMarks::CombiningLowLine),
+            '̳' => Ok(CombiningDiacriticalMarks::CombiningDoubleLowLine),
+            '̴' => Ok(CombiningDiacriticalMarks::CombiningTildeOverlay),
+            '̵' => Ok(CombiningDiacriticalMarks::CombiningShortStrokeOverlay),
+            '̶' => Ok(CombiningDiacriticalMarks::CombiningLongStrokeOverlay),
+            '̷' => Ok(CombiningDiacriticalMarks::CombiningShortSolidusOverlay),
+            '̸' => Ok(CombiningDiacriticalMarks::CombiningLongSolidusOverlay),
+            '̹' => Ok(CombiningDiacriticalMarks::CombiningRightHalfRingBelow),
+            '̺' => Ok(CombiningDiacriticalMarks::CombiningInvertedBridgeBelow),
+            '̻' => Ok(CombiningDiacriticalMarks::CombiningSquareBelow),
+            '̼' => Ok(CombiningDiacriticalMarks::CombiningSeagullBelow),
+            '̽' => Ok(CombiningDiacriticalMarks::CombiningXAbove),
+            '̾' => Ok(CombiningDiacriticalMarks::CombiningVerticalTilde),
+            '̿' => Ok(CombiningDiacriticalMarks::CombiningDoubleOverline),
+            '̀' => Ok(CombiningDiacriticalMarks::CombiningGraveToneMark),
+            '́' => Ok(CombiningDiacriticalMarks::CombiningAcuteToneMark),
+            '͂' => Ok(CombiningDiacriticalMarks::CombiningGreekPerispomeni),
+            '̓' => Ok(CombiningDiacriticalMarks::CombiningGreekKoronis),
+            '̈́' => Ok(CombiningDiacriticalMarks::CombiningGreekDialytikaTonos),
+            'ͅ' => Ok(CombiningDiacriticalMarks::CombiningGreekYpogegrammeni),
+            '͆' => Ok(CombiningDiacriticalMarks::CombiningBridgeAbove),
+            '͇' => Ok(CombiningDiacriticalMarks::CombiningEqualsSignBelow),
+            '͈' => Ok(CombiningDiacriticalMarks::CombiningDoubleVerticalLineBelow),
+            '͉' => Ok(CombiningDiacriticalMarks::CombiningLeftAngleBelow),
+            '͊' => Ok(CombiningDiacriticalMarks::CombiningNotTildeAbove),
+            '͋' => Ok(CombiningDiacriticalMarks::CombiningHomotheticAbove),
+            '͌' => Ok(CombiningDiacriticalMarks::CombiningAlmostEqualToAbove),
+            '͍' => Ok(CombiningDiacriticalMarks::CombiningLeftRightArrowBelow),
+            '͎' => Ok(CombiningDiacriticalMarks::CombiningUpwardsArrowBelow),
+            '͏' => Ok(CombiningDiacriticalMarks::CombiningGraphemeJoiner),
+            '͐' => Ok(CombiningDiacriticalMarks::CombiningRightArrowheadAbove),
+            '͑' => Ok(CombiningDiacriticalMarks::CombiningLeftHalfRingAbove),
+            '͒' => Ok(CombiningDiacriticalMarks::CombiningFermata),
+            '͓' => Ok(CombiningDiacriticalMarks::CombiningXBelow),
+            '͔' => Ok(CombiningDiacriticalMarks::CombiningLeftArrowheadBelow),
+            '͕' => Ok(CombiningDiacriticalMarks::CombiningRightArrowheadBelow),
+            '͖' => Ok(CombiningDiacriticalMarks::CombiningRightArrowheadAndUpArrowheadBelow),
+            '͗' => Ok(CombiningDiacriticalMarks::CombiningRightHalfRingAbove),
+            '͘' => Ok(CombiningDiacriticalMarks::CombiningDotAboveRight),
+            '͙' => Ok(CombiningDiacriticalMarks::CombiningAsteriskBelow),
+            '͚' => Ok(CombiningDiacriticalMarks::CombiningDoubleRingBelow),
+            '͛' => Ok(CombiningDiacriticalMarks::CombiningZigzagAbove),
+            '͜' => Ok(CombiningDiacriticalMarks::CombiningDoubleBreveBelow),
+            '͝' => Ok(CombiningDiacriticalMarks::CombiningDoubleBreve),
+            '͞' => Ok(CombiningDiacriticalMarks::CombiningDoubleMacron),
+            '͟' => Ok(CombiningDiacriticalMarks::CombiningDoubleMacronBelow),
+            '͠' => Ok(CombiningDiacriticalMarks::CombiningDoubleTilde),
+            '͡' => Ok(CombiningDiacriticalMarks::CombiningDoubleInvertedBreve),
+            '͢' => Ok(CombiningDiacriticalMarks::CombiningDoubleRightwardsArrowBelow),
+            'ͣ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterA),
+            'ͤ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterE),
+            'ͥ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterI),
+            'ͦ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterO),
+            'ͧ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterU),
+            'ͨ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterC),
+            'ͩ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterD),
+            'ͪ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterH),
+            'ͫ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterM),
+            'ͬ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterR),
+            'ͭ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterT),
+            'ͮ' => Ok(CombiningDiacriticalMarks::CombiningLatinSmallLetterV),
             _ => Err(()),
         }
     }

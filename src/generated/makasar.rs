@@ -1,56 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11ee0}: '𑻠'
-    pub const LETTER_KA: char = '𑻠';
-    /// \u{11ee1}: '𑻡'
-    pub const LETTER_GA: char = '𑻡';
-    /// \u{11ee2}: '𑻢'
-    pub const LETTER_NGA: char = '𑻢';
-    /// \u{11ee3}: '𑻣'
-    pub const LETTER_PA: char = '𑻣';
-    /// \u{11ee4}: '𑻤'
-    pub const LETTER_BA: char = '𑻤';
-    /// \u{11ee5}: '𑻥'
-    pub const LETTER_MA: char = '𑻥';
-    /// \u{11ee6}: '𑻦'
-    pub const LETTER_TA: char = '𑻦';
-    /// \u{11ee7}: '𑻧'
-    pub const LETTER_DA: char = '𑻧';
-    /// \u{11ee8}: '𑻨'
-    pub const LETTER_NA: char = '𑻨';
-    /// \u{11ee9}: '𑻩'
-    pub const LETTER_CA: char = '𑻩';
-    /// \u{11eea}: '𑻪'
-    pub const LETTER_JA: char = '𑻪';
-    /// \u{11eeb}: '𑻫'
-    pub const LETTER_NYA: char = '𑻫';
-    /// \u{11eec}: '𑻬'
-    pub const LETTER_YA: char = '𑻬';
-    /// \u{11eed}: '𑻭'
-    pub const LETTER_RA: char = '𑻭';
-    /// \u{11eee}: '𑻮'
-    pub const LETTER_LA: char = '𑻮';
-    /// \u{11eef}: '𑻯'
-    pub const LETTER_VA: char = '𑻯';
-    /// \u{11ef0}: '𑻰'
-    pub const LETTER_SA: char = '𑻰';
-    /// \u{11ef1}: '𑻱'
-    pub const LETTER_A: char = '𑻱';
-    /// \u{11ef2}: '𑻲'
-    pub const ANGKA: char = '𑻲';
-    /// \u{11ef3}: '𑻳'
-    pub const VOWEL_SIGN_I: char = '𑻳';
-    /// \u{11ef4}: '𑻴'
-    pub const VOWEL_SIGN_U: char = '𑻴';
-    /// \u{11ef5}: '𑻵'
-    pub const VOWEL_SIGN_E: char = '𑻵';
-    /// \u{11ef6}: '𑻶'
-    pub const VOWEL_SIGN_O: char = '𑻶';
-    /// \u{11ef7}: '𑻷'
-    pub const PASSIMBANG: char = '𑻷';
-    /// \u{11ef8}: '𑻸'
-    pub const END_OF_SECTION: char = '𑻸';
-}
 
 /// An enum to represent all characters in the Makasar block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -109,33 +56,32 @@ pub enum Makasar {
 
 impl Into<char> for Makasar {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Makasar::LetterKa => LETTER_KA,
-            Makasar::LetterGa => LETTER_GA,
-            Makasar::LetterNga => LETTER_NGA,
-            Makasar::LetterPa => LETTER_PA,
-            Makasar::LetterBa => LETTER_BA,
-            Makasar::LetterMa => LETTER_MA,
-            Makasar::LetterTa => LETTER_TA,
-            Makasar::LetterDa => LETTER_DA,
-            Makasar::LetterNa => LETTER_NA,
-            Makasar::LetterCa => LETTER_CA,
-            Makasar::LetterJa => LETTER_JA,
-            Makasar::LetterNya => LETTER_NYA,
-            Makasar::LetterYa => LETTER_YA,
-            Makasar::LetterRa => LETTER_RA,
-            Makasar::LetterLa => LETTER_LA,
-            Makasar::LetterVa => LETTER_VA,
-            Makasar::LetterSa => LETTER_SA,
-            Makasar::LetterA => LETTER_A,
-            Makasar::Angka => ANGKA,
-            Makasar::VowelSignI => VOWEL_SIGN_I,
-            Makasar::VowelSignU => VOWEL_SIGN_U,
-            Makasar::VowelSignE => VOWEL_SIGN_E,
-            Makasar::VowelSignO => VOWEL_SIGN_O,
-            Makasar::Passimbang => PASSIMBANG,
-            Makasar::EndOfSection => END_OF_SECTION,
+            Makasar::LetterKa => '𑻠',
+            Makasar::LetterGa => '𑻡',
+            Makasar::LetterNga => '𑻢',
+            Makasar::LetterPa => '𑻣',
+            Makasar::LetterBa => '𑻤',
+            Makasar::LetterMa => '𑻥',
+            Makasar::LetterTa => '𑻦',
+            Makasar::LetterDa => '𑻧',
+            Makasar::LetterNa => '𑻨',
+            Makasar::LetterCa => '𑻩',
+            Makasar::LetterJa => '𑻪',
+            Makasar::LetterNya => '𑻫',
+            Makasar::LetterYa => '𑻬',
+            Makasar::LetterRa => '𑻭',
+            Makasar::LetterLa => '𑻮',
+            Makasar::LetterVa => '𑻯',
+            Makasar::LetterSa => '𑻰',
+            Makasar::LetterA => '𑻱',
+            Makasar::Angka => '𑻲',
+            Makasar::VowelSignI => '𑻳',
+            Makasar::VowelSignU => '𑻴',
+            Makasar::VowelSignE => '𑻵',
+            Makasar::VowelSignO => '𑻶',
+            Makasar::Passimbang => '𑻷',
+            Makasar::EndOfSection => '𑻸',
         }
     }
 }
@@ -143,33 +89,32 @@ impl Into<char> for Makasar {
 impl std::convert::TryFrom<char> for Makasar {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_KA => Ok(Makasar::LetterKa),
-            LETTER_GA => Ok(Makasar::LetterGa),
-            LETTER_NGA => Ok(Makasar::LetterNga),
-            LETTER_PA => Ok(Makasar::LetterPa),
-            LETTER_BA => Ok(Makasar::LetterBa),
-            LETTER_MA => Ok(Makasar::LetterMa),
-            LETTER_TA => Ok(Makasar::LetterTa),
-            LETTER_DA => Ok(Makasar::LetterDa),
-            LETTER_NA => Ok(Makasar::LetterNa),
-            LETTER_CA => Ok(Makasar::LetterCa),
-            LETTER_JA => Ok(Makasar::LetterJa),
-            LETTER_NYA => Ok(Makasar::LetterNya),
-            LETTER_YA => Ok(Makasar::LetterYa),
-            LETTER_RA => Ok(Makasar::LetterRa),
-            LETTER_LA => Ok(Makasar::LetterLa),
-            LETTER_VA => Ok(Makasar::LetterVa),
-            LETTER_SA => Ok(Makasar::LetterSa),
-            LETTER_A => Ok(Makasar::LetterA),
-            ANGKA => Ok(Makasar::Angka),
-            VOWEL_SIGN_I => Ok(Makasar::VowelSignI),
-            VOWEL_SIGN_U => Ok(Makasar::VowelSignU),
-            VOWEL_SIGN_E => Ok(Makasar::VowelSignE),
-            VOWEL_SIGN_O => Ok(Makasar::VowelSignO),
-            PASSIMBANG => Ok(Makasar::Passimbang),
-            END_OF_SECTION => Ok(Makasar::EndOfSection),
+            '𑻠' => Ok(Makasar::LetterKa),
+            '𑻡' => Ok(Makasar::LetterGa),
+            '𑻢' => Ok(Makasar::LetterNga),
+            '𑻣' => Ok(Makasar::LetterPa),
+            '𑻤' => Ok(Makasar::LetterBa),
+            '𑻥' => Ok(Makasar::LetterMa),
+            '𑻦' => Ok(Makasar::LetterTa),
+            '𑻧' => Ok(Makasar::LetterDa),
+            '𑻨' => Ok(Makasar::LetterNa),
+            '𑻩' => Ok(Makasar::LetterCa),
+            '𑻪' => Ok(Makasar::LetterJa),
+            '𑻫' => Ok(Makasar::LetterNya),
+            '𑻬' => Ok(Makasar::LetterYa),
+            '𑻭' => Ok(Makasar::LetterRa),
+            '𑻮' => Ok(Makasar::LetterLa),
+            '𑻯' => Ok(Makasar::LetterVa),
+            '𑻰' => Ok(Makasar::LetterSa),
+            '𑻱' => Ok(Makasar::LetterA),
+            '𑻲' => Ok(Makasar::Angka),
+            '𑻳' => Ok(Makasar::VowelSignI),
+            '𑻴' => Ok(Makasar::VowelSignU),
+            '𑻵' => Ok(Makasar::VowelSignE),
+            '𑻶' => Ok(Makasar::VowelSignO),
+            '𑻷' => Ok(Makasar::Passimbang),
+            '𑻸' => Ok(Makasar::EndOfSection),
             _ => Err(()),
         }
     }

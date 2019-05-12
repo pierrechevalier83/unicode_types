@@ -1,32 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11660}: '𑙠'
-    pub const MONGOLIAN_BIRGA_WITH_ORNAMENT: char = '𑙠';
-    /// \u{11661}: '𑙡'
-    pub const MONGOLIAN_ROTATED_BIRGA: char = '𑙡';
-    /// \u{11662}: '𑙢'
-    pub const MONGOLIAN_DOUBLE_BIRGA_WITH_ORNAMENT: char = '𑙢';
-    /// \u{11663}: '𑙣'
-    pub const MONGOLIAN_TRIPLE_BIRGA_WITH_ORNAMENT: char = '𑙣';
-    /// \u{11664}: '𑙤'
-    pub const MONGOLIAN_BIRGA_WITH_DOUBLE_ORNAMENT: char = '𑙤';
-    /// \u{11665}: '𑙥'
-    pub const MONGOLIAN_ROTATED_BIRGA_WITH_ORNAMENT: char = '𑙥';
-    /// \u{11666}: '𑙦'
-    pub const MONGOLIAN_ROTATED_BIRGA_WITH_DOUBLE_ORNAMENT: char = '𑙦';
-    /// \u{11667}: '𑙧'
-    pub const MONGOLIAN_INVERTED_BIRGA: char = '𑙧';
-    /// \u{11668}: '𑙨'
-    pub const MONGOLIAN_INVERTED_BIRGA_WITH_DOUBLE_ORNAMENT: char = '𑙨';
-    /// \u{11669}: '𑙩'
-    pub const MONGOLIAN_SWIRL_BIRGA: char = '𑙩';
-    /// \u{1166a}: '𑙪'
-    pub const MONGOLIAN_SWIRL_BIRGA_WITH_ORNAMENT: char = '𑙪';
-    /// \u{1166b}: '𑙫'
-    pub const MONGOLIAN_SWIRL_BIRGA_WITH_DOUBLE_ORNAMENT: char = '𑙫';
-    /// \u{1166c}: '𑙬'
-    pub const MONGOLIAN_TURNED_SWIRL_BIRGA_WITH_DOUBLE_ORNAMENT: char = '𑙬';
-}
 
 /// An enum to represent all characters in the MongolianSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -61,21 +32,20 @@ pub enum MongolianSupplement {
 
 impl Into<char> for MongolianSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MongolianSupplement::MongolianBirgaWithOrnament => MONGOLIAN_BIRGA_WITH_ORNAMENT,
-            MongolianSupplement::MongolianRotatedBirga => MONGOLIAN_ROTATED_BIRGA,
-            MongolianSupplement::MongolianDoubleBirgaWithOrnament => MONGOLIAN_DOUBLE_BIRGA_WITH_ORNAMENT,
-            MongolianSupplement::MongolianTripleBirgaWithOrnament => MONGOLIAN_TRIPLE_BIRGA_WITH_ORNAMENT,
-            MongolianSupplement::MongolianBirgaWithDoubleOrnament => MONGOLIAN_BIRGA_WITH_DOUBLE_ORNAMENT,
-            MongolianSupplement::MongolianRotatedBirgaWithOrnament => MONGOLIAN_ROTATED_BIRGA_WITH_ORNAMENT,
-            MongolianSupplement::MongolianRotatedBirgaWithDoubleOrnament => MONGOLIAN_ROTATED_BIRGA_WITH_DOUBLE_ORNAMENT,
-            MongolianSupplement::MongolianInvertedBirga => MONGOLIAN_INVERTED_BIRGA,
-            MongolianSupplement::MongolianInvertedBirgaWithDoubleOrnament => MONGOLIAN_INVERTED_BIRGA_WITH_DOUBLE_ORNAMENT,
-            MongolianSupplement::MongolianSwirlBirga => MONGOLIAN_SWIRL_BIRGA,
-            MongolianSupplement::MongolianSwirlBirgaWithOrnament => MONGOLIAN_SWIRL_BIRGA_WITH_ORNAMENT,
-            MongolianSupplement::MongolianSwirlBirgaWithDoubleOrnament => MONGOLIAN_SWIRL_BIRGA_WITH_DOUBLE_ORNAMENT,
-            MongolianSupplement::MongolianTurnedSwirlBirgaWithDoubleOrnament => MONGOLIAN_TURNED_SWIRL_BIRGA_WITH_DOUBLE_ORNAMENT,
+            MongolianSupplement::MongolianBirgaWithOrnament => '𑙠',
+            MongolianSupplement::MongolianRotatedBirga => '𑙡',
+            MongolianSupplement::MongolianDoubleBirgaWithOrnament => '𑙢',
+            MongolianSupplement::MongolianTripleBirgaWithOrnament => '𑙣',
+            MongolianSupplement::MongolianBirgaWithDoubleOrnament => '𑙤',
+            MongolianSupplement::MongolianRotatedBirgaWithOrnament => '𑙥',
+            MongolianSupplement::MongolianRotatedBirgaWithDoubleOrnament => '𑙦',
+            MongolianSupplement::MongolianInvertedBirga => '𑙧',
+            MongolianSupplement::MongolianInvertedBirgaWithDoubleOrnament => '𑙨',
+            MongolianSupplement::MongolianSwirlBirga => '𑙩',
+            MongolianSupplement::MongolianSwirlBirgaWithOrnament => '𑙪',
+            MongolianSupplement::MongolianSwirlBirgaWithDoubleOrnament => '𑙫',
+            MongolianSupplement::MongolianTurnedSwirlBirgaWithDoubleOrnament => '𑙬',
         }
     }
 }
@@ -83,21 +53,20 @@ impl Into<char> for MongolianSupplement {
 impl std::convert::TryFrom<char> for MongolianSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            MONGOLIAN_BIRGA_WITH_ORNAMENT => Ok(MongolianSupplement::MongolianBirgaWithOrnament),
-            MONGOLIAN_ROTATED_BIRGA => Ok(MongolianSupplement::MongolianRotatedBirga),
-            MONGOLIAN_DOUBLE_BIRGA_WITH_ORNAMENT => Ok(MongolianSupplement::MongolianDoubleBirgaWithOrnament),
-            MONGOLIAN_TRIPLE_BIRGA_WITH_ORNAMENT => Ok(MongolianSupplement::MongolianTripleBirgaWithOrnament),
-            MONGOLIAN_BIRGA_WITH_DOUBLE_ORNAMENT => Ok(MongolianSupplement::MongolianBirgaWithDoubleOrnament),
-            MONGOLIAN_ROTATED_BIRGA_WITH_ORNAMENT => Ok(MongolianSupplement::MongolianRotatedBirgaWithOrnament),
-            MONGOLIAN_ROTATED_BIRGA_WITH_DOUBLE_ORNAMENT => Ok(MongolianSupplement::MongolianRotatedBirgaWithDoubleOrnament),
-            MONGOLIAN_INVERTED_BIRGA => Ok(MongolianSupplement::MongolianInvertedBirga),
-            MONGOLIAN_INVERTED_BIRGA_WITH_DOUBLE_ORNAMENT => Ok(MongolianSupplement::MongolianInvertedBirgaWithDoubleOrnament),
-            MONGOLIAN_SWIRL_BIRGA => Ok(MongolianSupplement::MongolianSwirlBirga),
-            MONGOLIAN_SWIRL_BIRGA_WITH_ORNAMENT => Ok(MongolianSupplement::MongolianSwirlBirgaWithOrnament),
-            MONGOLIAN_SWIRL_BIRGA_WITH_DOUBLE_ORNAMENT => Ok(MongolianSupplement::MongolianSwirlBirgaWithDoubleOrnament),
-            MONGOLIAN_TURNED_SWIRL_BIRGA_WITH_DOUBLE_ORNAMENT => Ok(MongolianSupplement::MongolianTurnedSwirlBirgaWithDoubleOrnament),
+            '𑙠' => Ok(MongolianSupplement::MongolianBirgaWithOrnament),
+            '𑙡' => Ok(MongolianSupplement::MongolianRotatedBirga),
+            '𑙢' => Ok(MongolianSupplement::MongolianDoubleBirgaWithOrnament),
+            '𑙣' => Ok(MongolianSupplement::MongolianTripleBirgaWithOrnament),
+            '𑙤' => Ok(MongolianSupplement::MongolianBirgaWithDoubleOrnament),
+            '𑙥' => Ok(MongolianSupplement::MongolianRotatedBirgaWithOrnament),
+            '𑙦' => Ok(MongolianSupplement::MongolianRotatedBirgaWithDoubleOrnament),
+            '𑙧' => Ok(MongolianSupplement::MongolianInvertedBirga),
+            '𑙨' => Ok(MongolianSupplement::MongolianInvertedBirgaWithDoubleOrnament),
+            '𑙩' => Ok(MongolianSupplement::MongolianSwirlBirga),
+            '𑙪' => Ok(MongolianSupplement::MongolianSwirlBirgaWithOrnament),
+            '𑙫' => Ok(MongolianSupplement::MongolianSwirlBirgaWithDoubleOrnament),
+            '𑙬' => Ok(MongolianSupplement::MongolianTurnedSwirlBirgaWithDoubleOrnament),
             _ => Err(()),
         }
     }

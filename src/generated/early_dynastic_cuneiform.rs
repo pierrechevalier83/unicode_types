@@ -1,398 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{12480}: '𒒀'
-    pub const CUNEIFORM_SIGN_AB_TIMES_NUN_TENU: char = '𒒀';
-    /// \u{12481}: '𒒁'
-    pub const CUNEIFORM_SIGN_AB_TIMES_SHU2: char = '𒒁';
-    /// \u{12482}: '𒒂'
-    pub const CUNEIFORM_SIGN_AD_TIMES_ESH2: char = '𒒂';
-    /// \u{12483}: '𒒃'
-    pub const CUNEIFORM_SIGN_BAD_TIMES_DISH_TENU: char = '𒒃';
-    /// \u{12484}: '𒒄'
-    pub const CUNEIFORM_SIGN_BAHAR2_TIMES_AB2: char = '𒒄';
-    /// \u{12485}: '𒒅'
-    pub const CUNEIFORM_SIGN_BAHAR2_TIMES_NI: char = '𒒅';
-    /// \u{12486}: '𒒆'
-    pub const CUNEIFORM_SIGN_BAHAR2_TIMES_ZA: char = '𒒆';
-    /// \u{12487}: '𒒇'
-    pub const CUNEIFORM_SIGN_BU_OVER_BU_TIMES_NA2: char = '𒒇';
-    /// \u{12488}: '𒒈'
-    pub const CUNEIFORM_SIGN_DA_TIMES_TAK4: char = '𒒈';
-    /// \u{12489}: '𒒉'
-    pub const CUNEIFORM_SIGN_DAG_TIMES_KUR: char = '𒒉';
-    /// \u{1248a}: '𒒊'
-    pub const CUNEIFORM_SIGN_DIM_TIMES_IGI: char = '𒒊';
-    /// \u{1248b}: '𒒋'
-    pub const CUNEIFORM_SIGN_DIM_TIMES_U_U_U: char = '𒒋';
-    /// \u{1248c}: '𒒌'
-    pub const CUNEIFORM_SIGN_DIM2_TIMES_UD: char = '𒒌';
-    /// \u{1248d}: '𒒍'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_ANSHE: char = '𒒍';
-    /// \u{1248e}: '𒒎'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_ASH: char = '𒒎';
-    /// \u{1248f}: '𒒏'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_ASH_AT_LEFT: char = '𒒏';
-    /// \u{12490}: '𒒐'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_DIN: char = '𒒐';
-    /// \u{12491}: '𒒑'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_DUN: char = '𒒑';
-    /// \u{12492}: '𒒒'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_ERIN2: char = '𒒒';
-    /// \u{12493}: '𒒓'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_GA: char = '𒒓';
-    /// \u{12494}: '𒒔'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_GI: char = '𒒔';
-    /// \u{12495}: '𒒕'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_GIR2_GUNU: char = '𒒕';
-    /// \u{12496}: '𒒖'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_GISH: char = '𒒖';
-    /// \u{12497}: '𒒗'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_HA: char = '𒒗';
-    /// \u{12498}: '𒒘'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_HI: char = '𒒘';
-    /// \u{12499}: '𒒙'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_IGI_GUNU: char = '𒒙';
-    /// \u{1249a}: '𒒚'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_KASKAL: char = '𒒚';
-    /// \u{1249b}: '𒒛'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_KUR: char = '𒒛';
-    /// \u{1249c}: '𒒜'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_KUSHU2: char = '𒒜';
-    /// \u{1249d}: '𒒝'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_KUSHU2_PLUS_KASKAL: char = '𒒝';
-    /// \u{1249e}: '𒒞'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_LAK_DASH_020: char = '𒒞';
-    /// \u{1249f}: '𒒟'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_LAM: char = '𒒟';
-    /// \u{124a0}: '𒒠'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_LAM_TIMES_KUR: char = '𒒠';
-    /// \u{124a1}: '𒒡'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_LUH_PLUS_GISH: char = '𒒡';
-    /// \u{124a2}: '𒒢'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_MASH: char = '𒒢';
-    /// \u{124a3}: '𒒣'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_MES: char = '𒒣';
-    /// \u{124a4}: '𒒤'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_MI: char = '𒒤';
-    /// \u{124a5}: '𒒥'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_NI: char = '𒒥';
-    /// \u{124a6}: '𒒦'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_PI: char = '𒒦';
-    /// \u{124a7}: '𒒧'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_SHE: char = '𒒧';
-    /// \u{124a8}: '𒒨'
-    pub const CUNEIFORM_SIGN_DUG_TIMES_SI_GUNU: char = '𒒨';
-    /// \u{124a9}: '𒒩'
-    pub const CUNEIFORM_SIGN_E2_TIMES_KUR: char = '𒒩';
-    /// \u{124aa}: '𒒪'
-    pub const CUNEIFORM_SIGN_E2_TIMES_PAP: char = '𒒪';
-    /// \u{124ab}: '𒒫'
-    pub const CUNEIFORM_SIGN_ERIN2_X: char = '𒒫';
-    /// \u{124ac}: '𒒬'
-    pub const CUNEIFORM_SIGN_ESH2_CROSSING_ESH2: char = '𒒬';
-    /// \u{124ad}: '𒒭'
-    pub const CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_ASH: char = '𒒭';
-    /// \u{124ae}: '𒒮'
-    pub const CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_HI: char = '𒒮';
-    /// \u{124af}: '𒒯'
-    pub const CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_IGI_GUNU: char = '𒒯';
-    /// \u{124b0}: '𒒰'
-    pub const CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_LA: char = '𒒰';
-    /// \u{124b1}: '𒒱'
-    pub const CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_LAL: char = '𒒱';
-    /// \u{124b2}: '𒒲'
-    pub const CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_ME: char = '𒒲';
-    /// \u{124b3}: '𒒳'
-    pub const CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_MES: char = '𒒳';
-    /// \u{124b4}: '𒒴'
-    pub const CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_SU: char = '𒒴';
-    /// \u{124b5}: '𒒵'
-    pub const CUNEIFORM_SIGN_EZEN_TIMES_SU: char = '𒒵';
-    /// \u{124b6}: '𒒶'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_BAHAR2: char = '𒒶';
-    /// \u{124b7}: '𒒷'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_DIM_GUNU: char = '𒒷';
-    /// \u{124b8}: '𒒸'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_DUG_TIMES_IGI_GUNU: char = '𒒸';
-    /// \u{124b9}: '𒒹'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_DUG_TIMES_KASKAL: char = '𒒹';
-    /// \u{124ba}: '𒒺'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_EREN: char = '𒒺';
-    /// \u{124bb}: '𒒻'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_GA: char = '𒒻';
-    /// \u{124bc}: '𒒼'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_GAR_PLUS_DI: char = '𒒼';
-    /// \u{124bd}: '𒒽'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_GAR_PLUS_NE: char = '𒒽';
-    /// \u{124be}: '𒒾'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_HA_PLUS_A: char = '𒒾';
-    /// \u{124bf}: '𒒿'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_KUSHU2_PLUS_KASKAL: char = '𒒿';
-    /// \u{124c0}: '𒓀'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_LAM: char = '𒓀';
-    /// \u{124c1}: '𒓁'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_LAM_TIMES_KUR: char = '𒓁';
-    /// \u{124c2}: '𒓂'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_LUH: char = '𒓂';
-    /// \u{124c3}: '𒓃'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_MUSH: char = '𒓃';
-    /// \u{124c4}: '𒓄'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_NE: char = '𒓄';
-    /// \u{124c5}: '𒓅'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_NE_PLUS_E2: char = '𒓅';
-    /// \u{124c6}: '𒓆'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_NE_PLUS_GI: char = '𒓆';
-    /// \u{124c7}: '𒓇'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_SHIM: char = '𒓇';
-    /// \u{124c8}: '𒓈'
-    pub const CUNEIFORM_SIGN_GA2_TIMES_ZIZ2: char = '𒓈';
-    /// \u{124c9}: '𒓉'
-    pub const CUNEIFORM_SIGN_GABA_ROTATED_NINETY_DEGREES: char = '𒓉';
-    /// \u{124ca}: '𒓊'
-    pub const CUNEIFORM_SIGN_GESHTIN_TIMES_U: char = '𒓊';
-    /// \u{124cb}: '𒓋'
-    pub const CUNEIFORM_SIGN_GISH_TIMES_GISH_CROSSING_GISH: char = '𒓋';
-    /// \u{124cc}: '𒓌'
-    pub const CUNEIFORM_SIGN_GU2_TIMES_IGI_GUNU: char = '𒓌';
-    /// \u{124cd}: '𒓍'
-    pub const CUNEIFORM_SIGN_GUD_PLUS_GISH_TIMES_TAK4: char = '𒓍';
-    /// \u{124ce}: '𒓎'
-    pub const CUNEIFORM_SIGN_HA_TENU_GUNU: char = '𒓎';
-    /// \u{124cf}: '𒓏'
-    pub const CUNEIFORM_SIGN_HI_TIMES_ASH_OVER_HI_TIMES_ASH: char = '𒓏';
-    /// \u{124d0}: '𒓐'
-    pub const CUNEIFORM_SIGN_KA_TIMES_BU: char = '𒓐';
-    /// \u{124d1}: '𒓑'
-    pub const CUNEIFORM_SIGN_KA_TIMES_KA: char = '𒓑';
-    /// \u{124d2}: '𒓒'
-    pub const CUNEIFORM_SIGN_KA_TIMES_U_U_U: char = '𒓒';
-    /// \u{124d3}: '𒓓'
-    pub const CUNEIFORM_SIGN_KA_TIMES_UR: char = '𒓓';
-    /// \u{124d4}: '𒓔'
-    pub const CUNEIFORM_SIGN_LAGAB_TIMES_ZU_OVER_ZU: char = '𒓔';
-    /// \u{124d5}: '𒓕'
-    pub const CUNEIFORM_SIGN_LAK_DASH_003: char = '𒓕';
-    /// \u{124d6}: '𒓖'
-    pub const CUNEIFORM_SIGN_LAK_DASH_021: char = '𒓖';
-    /// \u{124d7}: '𒓗'
-    pub const CUNEIFORM_SIGN_LAK_DASH_025: char = '𒓗';
-    /// \u{124d8}: '𒓘'
-    pub const CUNEIFORM_SIGN_LAK_DASH_030: char = '𒓘';
-    /// \u{124d9}: '𒓙'
-    pub const CUNEIFORM_SIGN_LAK_DASH_050: char = '𒓙';
-    /// \u{124da}: '𒓚'
-    pub const CUNEIFORM_SIGN_LAK_DASH_051: char = '𒓚';
-    /// \u{124db}: '𒓛'
-    pub const CUNEIFORM_SIGN_LAK_DASH_062: char = '𒓛';
-    /// \u{124dc}: '𒓜'
-    pub const CUNEIFORM_SIGN_LAK_DASH_079_OVER_LAK_DASH_079_GUNU: char = '𒓜';
-    /// \u{124dd}: '𒓝'
-    pub const CUNEIFORM_SIGN_LAK_DASH_080: char = '𒓝';
-    /// \u{124de}: '𒓞'
-    pub const CUNEIFORM_SIGN_LAK_DASH_081_OVER_LAK_DASH_081: char = '𒓞';
-    /// \u{124df}: '𒓟'
-    pub const CUNEIFORM_SIGN_LAK_DASH_092: char = '𒓟';
-    /// \u{124e0}: '𒓠'
-    pub const CUNEIFORM_SIGN_LAK_DASH_130: char = '𒓠';
-    /// \u{124e1}: '𒓡'
-    pub const CUNEIFORM_SIGN_LAK_DASH_142: char = '𒓡';
-    /// \u{124e2}: '𒓢'
-    pub const CUNEIFORM_SIGN_LAK_DASH_210: char = '𒓢';
-    /// \u{124e3}: '𒓣'
-    pub const CUNEIFORM_SIGN_LAK_DASH_219: char = '𒓣';
-    /// \u{124e4}: '𒓤'
-    pub const CUNEIFORM_SIGN_LAK_DASH_220: char = '𒓤';
-    /// \u{124e5}: '𒓥'
-    pub const CUNEIFORM_SIGN_LAK_DASH_225: char = '𒓥';
-    /// \u{124e6}: '𒓦'
-    pub const CUNEIFORM_SIGN_LAK_DASH_228: char = '𒓦';
-    /// \u{124e7}: '𒓧'
-    pub const CUNEIFORM_SIGN_LAK_DASH_238: char = '𒓧';
-    /// \u{124e8}: '𒓨'
-    pub const CUNEIFORM_SIGN_LAK_DASH_265: char = '𒓨';
-    /// \u{124e9}: '𒓩'
-    pub const CUNEIFORM_SIGN_LAK_DASH_266: char = '𒓩';
-    /// \u{124ea}: '𒓪'
-    pub const CUNEIFORM_SIGN_LAK_DASH_343: char = '𒓪';
-    /// \u{124eb}: '𒓫'
-    pub const CUNEIFORM_SIGN_LAK_DASH_347: char = '𒓫';
-    /// \u{124ec}: '𒓬'
-    pub const CUNEIFORM_SIGN_LAK_DASH_348: char = '𒓬';
-    /// \u{124ed}: '𒓭'
-    pub const CUNEIFORM_SIGN_LAK_DASH_383: char = '𒓭';
-    /// \u{124ee}: '𒓮'
-    pub const CUNEIFORM_SIGN_LAK_DASH_384: char = '𒓮';
-    /// \u{124ef}: '𒓯'
-    pub const CUNEIFORM_SIGN_LAK_DASH_390: char = '𒓯';
-    /// \u{124f0}: '𒓰'
-    pub const CUNEIFORM_SIGN_LAK_DASH_441: char = '𒓰';
-    /// \u{124f1}: '𒓱'
-    pub const CUNEIFORM_SIGN_LAK_DASH_449: char = '𒓱';
-    /// \u{124f2}: '𒓲'
-    pub const CUNEIFORM_SIGN_LAK_DASH_449_TIMES_GU: char = '𒓲';
-    /// \u{124f3}: '𒓳'
-    pub const CUNEIFORM_SIGN_LAK_DASH_449_TIMES_IGI: char = '𒓳';
-    /// \u{124f4}: '𒓴'
-    pub const CUNEIFORM_SIGN_LAK_DASH_449_TIMES_PAP_PLUS_LU3: char = '𒓴';
-    /// \u{124f5}: '𒓵'
-    pub const CUNEIFORM_SIGN_LAK_DASH_449_TIMES_PAP_PLUS_PAP_PLUS_LU3: char = '𒓵';
-    /// \u{124f6}: '𒓶'
-    pub const CUNEIFORM_SIGN_LAK_DASH_449_TIMES_U2_PLUS_BA: char = '𒓶';
-    /// \u{124f7}: '𒓷'
-    pub const CUNEIFORM_SIGN_LAK_DASH_450: char = '𒓷';
-    /// \u{124f8}: '𒓸'
-    pub const CUNEIFORM_SIGN_LAK_DASH_457: char = '𒓸';
-    /// \u{124f9}: '𒓹'
-    pub const CUNEIFORM_SIGN_LAK_DASH_470: char = '𒓹';
-    /// \u{124fa}: '𒓺'
-    pub const CUNEIFORM_SIGN_LAK_DASH_483: char = '𒓺';
-    /// \u{124fb}: '𒓻'
-    pub const CUNEIFORM_SIGN_LAK_DASH_490: char = '𒓻';
-    /// \u{124fc}: '𒓼'
-    pub const CUNEIFORM_SIGN_LAK_DASH_492: char = '𒓼';
-    /// \u{124fd}: '𒓽'
-    pub const CUNEIFORM_SIGN_LAK_DASH_493: char = '𒓽';
-    /// \u{124fe}: '𒓾'
-    pub const CUNEIFORM_SIGN_LAK_DASH_495: char = '𒓾';
-    /// \u{124ff}: '𒓿'
-    pub const CUNEIFORM_SIGN_LAK_DASH_550: char = '𒓿';
-    /// \u{12500}: '𒔀'
-    pub const CUNEIFORM_SIGN_LAK_DASH_608: char = '𒔀';
-    /// \u{12501}: '𒔁'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617: char = '𒔁';
-    /// \u{12502}: '𒔂'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_ASH: char = '𒔂';
-    /// \u{12503}: '𒔃'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_BAD: char = '𒔃';
-    /// \u{12504}: '𒔄'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_DUN3_GUNU_GUNU: char = '𒔄';
-    /// \u{12505}: '𒔅'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_KU3: char = '𒔅';
-    /// \u{12506}: '𒔆'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_LA: char = '𒔆';
-    /// \u{12507}: '𒔇'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_TAR: char = '𒔇';
-    /// \u{12508}: '𒔈'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_TE: char = '𒔈';
-    /// \u{12509}: '𒔉'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_U2: char = '𒔉';
-    /// \u{1250a}: '𒔊'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_UD: char = '𒔊';
-    /// \u{1250b}: '𒔋'
-    pub const CUNEIFORM_SIGN_LAK_DASH_617_TIMES_URUDA: char = '𒔋';
-    /// \u{1250c}: '𒔌'
-    pub const CUNEIFORM_SIGN_LAK_DASH_636: char = '𒔌';
-    /// \u{1250d}: '𒔍'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648: char = '𒔍';
-    /// \u{1250e}: '𒔎'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648_TIMES_DUB: char = '𒔎';
-    /// \u{1250f}: '𒔏'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648_TIMES_GA: char = '𒔏';
-    /// \u{12510}: '𒔐'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648_TIMES_IGI: char = '𒔐';
-    /// \u{12511}: '𒔑'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648_TIMES_IGI_GUNU: char = '𒔑';
-    /// \u{12512}: '𒔒'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648_TIMES_NI: char = '𒔒';
-    /// \u{12513}: '𒔓'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648_TIMES_PAP_PLUS_PAP_PLUS_LU3: char = '𒔓';
-    /// \u{12514}: '𒔔'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648_TIMES_SHESH_PLUS_KI: char = '𒔔';
-    /// \u{12515}: '𒔕'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648_TIMES_UD: char = '𒔕';
-    /// \u{12516}: '𒔖'
-    pub const CUNEIFORM_SIGN_LAK_DASH_648_TIMES_URUDA: char = '𒔖';
-    /// \u{12517}: '𒔗'
-    pub const CUNEIFORM_SIGN_LAK_DASH_724: char = '𒔗';
-    /// \u{12518}: '𒔘'
-    pub const CUNEIFORM_SIGN_LAK_DASH_749: char = '𒔘';
-    /// \u{12519}: '𒔙'
-    pub const CUNEIFORM_SIGN_LU2_GUNU_TIMES_ASH: char = '𒔙';
-    /// \u{1251a}: '𒔚'
-    pub const CUNEIFORM_SIGN_LU2_TIMES_DISH: char = '𒔚';
-    /// \u{1251b}: '𒔛'
-    pub const CUNEIFORM_SIGN_LU2_TIMES_HAL: char = '𒔛';
-    /// \u{1251c}: '𒔜'
-    pub const CUNEIFORM_SIGN_LU2_TIMES_PAP: char = '𒔜';
-    /// \u{1251d}: '𒔝'
-    pub const CUNEIFORM_SIGN_LU2_TIMES_PAP_PLUS_PAP_PLUS_LU3: char = '𒔝';
-    /// \u{1251e}: '𒔞'
-    pub const CUNEIFORM_SIGN_LU2_TIMES_TAK4: char = '𒔞';
-    /// \u{1251f}: '𒔟'
-    pub const CUNEIFORM_SIGN_MI_PLUS_ZA7: char = '𒔟';
-    /// \u{12520}: '𒔠'
-    pub const CUNEIFORM_SIGN_MUSH_OVER_MUSH_TIMES_GA: char = '𒔠';
-    /// \u{12521}: '𒔡'
-    pub const CUNEIFORM_SIGN_MUSH_OVER_MUSH_TIMES_KAK: char = '𒔡';
-    /// \u{12522}: '𒔢'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_DIM_GUNU: char = '𒔢';
-    /// \u{12523}: '𒔣'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_GISH: char = '𒔣';
-    /// \u{12524}: '𒔤'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_GUL: char = '𒔤';
-    /// \u{12525}: '𒔥'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_HI: char = '𒔥';
-    /// \u{12526}: '𒔦'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_KESH2: char = '𒔦';
-    /// \u{12527}: '𒔧'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_LAK_DASH_050: char = '𒔧';
-    /// \u{12528}: '𒔨'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_MASH: char = '𒔨';
-    /// \u{12529}: '𒔩'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_PAP_PLUS_PAP: char = '𒔩';
-    /// \u{1252a}: '𒔪'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_U: char = '𒔪';
-    /// \u{1252b}: '𒔫'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_U_PLUS_U: char = '𒔫';
-    /// \u{1252c}: '𒔬'
-    pub const CUNEIFORM_SIGN_NINDA2_TIMES_URUDA: char = '𒔬';
-    /// \u{1252d}: '𒔭'
-    pub const CUNEIFORM_SIGN_SAG_GUNU_TIMES_HA: char = '𒔭';
-    /// \u{1252e}: '𒔮'
-    pub const CUNEIFORM_SIGN_SAG_TIMES_EN: char = '𒔮';
-    /// \u{1252f}: '𒔯'
-    pub const CUNEIFORM_SIGN_SAG_TIMES_SHE_AT_LEFT: char = '𒔯';
-    /// \u{12530}: '𒔰'
-    pub const CUNEIFORM_SIGN_SAG_TIMES_TAK4: char = '𒔰';
-    /// \u{12531}: '𒔱'
-    pub const CUNEIFORM_SIGN_SHA6_TENU: char = '𒔱';
-    /// \u{12532}: '𒔲'
-    pub const CUNEIFORM_SIGN_SHE_OVER_SHE: char = '𒔲';
-    /// \u{12533}: '𒔳'
-    pub const CUNEIFORM_SIGN_SHE_PLUS_HUB2: char = '𒔳';
-    /// \u{12534}: '𒔴'
-    pub const CUNEIFORM_SIGN_SHE_PLUS_NAM2: char = '𒔴';
-    /// \u{12535}: '𒔵'
-    pub const CUNEIFORM_SIGN_SHE_PLUS_SAR: char = '𒔵';
-    /// \u{12536}: '𒔶'
-    pub const CUNEIFORM_SIGN_SHU2_PLUS_DUG_TIMES_NI: char = '𒔶';
-    /// \u{12537}: '𒔷'
-    pub const CUNEIFORM_SIGN_SHU2_PLUS_E2_TIMES_AN: char = '𒔷';
-    /// \u{12538}: '𒔸'
-    pub const CUNEIFORM_SIGN_SI_TIMES_TAK4: char = '𒔸';
-    /// \u{12539}: '𒔹'
-    pub const CUNEIFORM_SIGN_TAK4_PLUS_SAG: char = '𒔹';
-    /// \u{1253a}: '𒔺'
-    pub const CUNEIFORM_SIGN_TUM_TIMES_GAN2_TENU: char = '𒔺';
-    /// \u{1253b}: '𒔻'
-    pub const CUNEIFORM_SIGN_TUM_TIMES_THREE_DISH: char = '𒔻';
-    /// \u{1253c}: '𒔼'
-    pub const CUNEIFORM_SIGN_UR2_INVERTED: char = '𒔼';
-    /// \u{1253d}: '𒔽'
-    pub const CUNEIFORM_SIGN_UR2_TIMES_UD: char = '𒔽';
-    /// \u{1253e}: '𒔾'
-    pub const CUNEIFORM_SIGN_URU_TIMES_DARA3: char = '𒔾';
-    /// \u{1253f}: '𒔿'
-    pub const CUNEIFORM_SIGN_URU_TIMES_LAK_DASH_668: char = '𒔿';
-    /// \u{12540}: '𒕀'
-    pub const CUNEIFORM_SIGN_URU_TIMES_LU3: char = '𒕀';
-    /// \u{12541}: '𒕁'
-    pub const CUNEIFORM_SIGN_ZA7: char = '𒕁';
-    /// \u{12542}: '𒕂'
-    pub const CUNEIFORM_SIGN_ZU_OVER_ZU_PLUS_SAR: char = '𒕂';
-    /// \u{12543}: '𒕃'
-    pub const CUNEIFORM_SIGN_ZU5_TIMES_THREE_DISH_TENU: char = '𒕃';
-}
 
 /// An enum to represent all characters in the EarlyDynasticCuneiform block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -793,204 +398,203 @@ pub enum EarlyDynasticCuneiform {
 
 impl Into<char> for EarlyDynasticCuneiform {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            EarlyDynasticCuneiform::CuneiformSignAbTimesNunTenu => CUNEIFORM_SIGN_AB_TIMES_NUN_TENU,
-            EarlyDynasticCuneiform::CuneiformSignAbTimesShu2 => CUNEIFORM_SIGN_AB_TIMES_SHU2,
-            EarlyDynasticCuneiform::CuneiformSignAdTimesEsh2 => CUNEIFORM_SIGN_AD_TIMES_ESH2,
-            EarlyDynasticCuneiform::CuneiformSignBadTimesDishTenu => CUNEIFORM_SIGN_BAD_TIMES_DISH_TENU,
-            EarlyDynasticCuneiform::CuneiformSignBahar2TimesAb2 => CUNEIFORM_SIGN_BAHAR2_TIMES_AB2,
-            EarlyDynasticCuneiform::CuneiformSignBahar2TimesNi => CUNEIFORM_SIGN_BAHAR2_TIMES_NI,
-            EarlyDynasticCuneiform::CuneiformSignBahar2TimesZa => CUNEIFORM_SIGN_BAHAR2_TIMES_ZA,
-            EarlyDynasticCuneiform::CuneiformSignBuOverBuTimesNa2 => CUNEIFORM_SIGN_BU_OVER_BU_TIMES_NA2,
-            EarlyDynasticCuneiform::CuneiformSignDaTimesTak4 => CUNEIFORM_SIGN_DA_TIMES_TAK4,
-            EarlyDynasticCuneiform::CuneiformSignDagTimesKur => CUNEIFORM_SIGN_DAG_TIMES_KUR,
-            EarlyDynasticCuneiform::CuneiformSignDimTimesIgi => CUNEIFORM_SIGN_DIM_TIMES_IGI,
-            EarlyDynasticCuneiform::CuneiformSignDimTimesUUU => CUNEIFORM_SIGN_DIM_TIMES_U_U_U,
-            EarlyDynasticCuneiform::CuneiformSignDim2TimesUd => CUNEIFORM_SIGN_DIM2_TIMES_UD,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesAnshe => CUNEIFORM_SIGN_DUG_TIMES_ANSHE,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesAsh => CUNEIFORM_SIGN_DUG_TIMES_ASH,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesAshAtLeft => CUNEIFORM_SIGN_DUG_TIMES_ASH_AT_LEFT,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesDin => CUNEIFORM_SIGN_DUG_TIMES_DIN,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesDun => CUNEIFORM_SIGN_DUG_TIMES_DUN,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesErin2 => CUNEIFORM_SIGN_DUG_TIMES_ERIN2,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesGa => CUNEIFORM_SIGN_DUG_TIMES_GA,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesGi => CUNEIFORM_SIGN_DUG_TIMES_GI,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesGir2Gunu => CUNEIFORM_SIGN_DUG_TIMES_GIR2_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesGish => CUNEIFORM_SIGN_DUG_TIMES_GISH,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesHa => CUNEIFORM_SIGN_DUG_TIMES_HA,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesHi => CUNEIFORM_SIGN_DUG_TIMES_HI,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesIgiGunu => CUNEIFORM_SIGN_DUG_TIMES_IGI_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesKaskal => CUNEIFORM_SIGN_DUG_TIMES_KASKAL,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesKur => CUNEIFORM_SIGN_DUG_TIMES_KUR,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesKushu2 => CUNEIFORM_SIGN_DUG_TIMES_KUSHU2,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesKushu2PlusKaskal => CUNEIFORM_SIGN_DUG_TIMES_KUSHU2_PLUS_KASKAL,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesLakDash020 => CUNEIFORM_SIGN_DUG_TIMES_LAK_DASH_020,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesLam => CUNEIFORM_SIGN_DUG_TIMES_LAM,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesLamTimesKur => CUNEIFORM_SIGN_DUG_TIMES_LAM_TIMES_KUR,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesLuhPlusGish => CUNEIFORM_SIGN_DUG_TIMES_LUH_PLUS_GISH,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesMash => CUNEIFORM_SIGN_DUG_TIMES_MASH,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesMes => CUNEIFORM_SIGN_DUG_TIMES_MES,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesMi => CUNEIFORM_SIGN_DUG_TIMES_MI,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesNi => CUNEIFORM_SIGN_DUG_TIMES_NI,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesPi => CUNEIFORM_SIGN_DUG_TIMES_PI,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesShe => CUNEIFORM_SIGN_DUG_TIMES_SHE,
-            EarlyDynasticCuneiform::CuneiformSignDugTimesSiGunu => CUNEIFORM_SIGN_DUG_TIMES_SI_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignE2TimesKur => CUNEIFORM_SIGN_E2_TIMES_KUR,
-            EarlyDynasticCuneiform::CuneiformSignE2TimesPap => CUNEIFORM_SIGN_E2_TIMES_PAP,
-            EarlyDynasticCuneiform::CuneiformSignErin2X => CUNEIFORM_SIGN_ERIN2_X,
-            EarlyDynasticCuneiform::CuneiformSignEsh2CrossingEsh2 => CUNEIFORM_SIGN_ESH2_CROSSING_ESH2,
-            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesAsh => CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_ASH,
-            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesHi => CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_HI,
-            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesIgiGunu => CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_IGI_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesLa => CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_LA,
-            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesLal => CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_LAL,
-            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesMe => CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_ME,
-            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesMes => CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_MES,
-            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesSu => CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_SU,
-            EarlyDynasticCuneiform::CuneiformSignEzenTimesSu => CUNEIFORM_SIGN_EZEN_TIMES_SU,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesBahar2 => CUNEIFORM_SIGN_GA2_TIMES_BAHAR2,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesDimGunu => CUNEIFORM_SIGN_GA2_TIMES_DIM_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesDugTimesIgiGunu => CUNEIFORM_SIGN_GA2_TIMES_DUG_TIMES_IGI_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesDugTimesKaskal => CUNEIFORM_SIGN_GA2_TIMES_DUG_TIMES_KASKAL,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesEren => CUNEIFORM_SIGN_GA2_TIMES_EREN,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesGa => CUNEIFORM_SIGN_GA2_TIMES_GA,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesGarPlusDi => CUNEIFORM_SIGN_GA2_TIMES_GAR_PLUS_DI,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesGarPlusNe => CUNEIFORM_SIGN_GA2_TIMES_GAR_PLUS_NE,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesHaPlusA => CUNEIFORM_SIGN_GA2_TIMES_HA_PLUS_A,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesKushu2PlusKaskal => CUNEIFORM_SIGN_GA2_TIMES_KUSHU2_PLUS_KASKAL,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesLam => CUNEIFORM_SIGN_GA2_TIMES_LAM,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesLamTimesKur => CUNEIFORM_SIGN_GA2_TIMES_LAM_TIMES_KUR,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesLuh => CUNEIFORM_SIGN_GA2_TIMES_LUH,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesMush => CUNEIFORM_SIGN_GA2_TIMES_MUSH,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesNe => CUNEIFORM_SIGN_GA2_TIMES_NE,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesNePlusE2 => CUNEIFORM_SIGN_GA2_TIMES_NE_PLUS_E2,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesNePlusGi => CUNEIFORM_SIGN_GA2_TIMES_NE_PLUS_GI,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesShim => CUNEIFORM_SIGN_GA2_TIMES_SHIM,
-            EarlyDynasticCuneiform::CuneiformSignGa2TimesZiz2 => CUNEIFORM_SIGN_GA2_TIMES_ZIZ2,
-            EarlyDynasticCuneiform::CuneiformSignGabaRotatedNinetyDegrees => CUNEIFORM_SIGN_GABA_ROTATED_NINETY_DEGREES,
-            EarlyDynasticCuneiform::CuneiformSignGeshtinTimesU => CUNEIFORM_SIGN_GESHTIN_TIMES_U,
-            EarlyDynasticCuneiform::CuneiformSignGishTimesGishCrossingGish => CUNEIFORM_SIGN_GISH_TIMES_GISH_CROSSING_GISH,
-            EarlyDynasticCuneiform::CuneiformSignGu2TimesIgiGunu => CUNEIFORM_SIGN_GU2_TIMES_IGI_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignGudPlusGishTimesTak4 => CUNEIFORM_SIGN_GUD_PLUS_GISH_TIMES_TAK4,
-            EarlyDynasticCuneiform::CuneiformSignHaTenuGunu => CUNEIFORM_SIGN_HA_TENU_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignHiTimesAshOverHiTimesAsh => CUNEIFORM_SIGN_HI_TIMES_ASH_OVER_HI_TIMES_ASH,
-            EarlyDynasticCuneiform::CuneiformSignKaTimesBu => CUNEIFORM_SIGN_KA_TIMES_BU,
-            EarlyDynasticCuneiform::CuneiformSignKaTimesKa => CUNEIFORM_SIGN_KA_TIMES_KA,
-            EarlyDynasticCuneiform::CuneiformSignKaTimesUUU => CUNEIFORM_SIGN_KA_TIMES_U_U_U,
-            EarlyDynasticCuneiform::CuneiformSignKaTimesUr => CUNEIFORM_SIGN_KA_TIMES_UR,
-            EarlyDynasticCuneiform::CuneiformSignLagabTimesZuOverZu => CUNEIFORM_SIGN_LAGAB_TIMES_ZU_OVER_ZU,
-            EarlyDynasticCuneiform::CuneiformSignLakDash003 => CUNEIFORM_SIGN_LAK_DASH_003,
-            EarlyDynasticCuneiform::CuneiformSignLakDash021 => CUNEIFORM_SIGN_LAK_DASH_021,
-            EarlyDynasticCuneiform::CuneiformSignLakDash025 => CUNEIFORM_SIGN_LAK_DASH_025,
-            EarlyDynasticCuneiform::CuneiformSignLakDash030 => CUNEIFORM_SIGN_LAK_DASH_030,
-            EarlyDynasticCuneiform::CuneiformSignLakDash050 => CUNEIFORM_SIGN_LAK_DASH_050,
-            EarlyDynasticCuneiform::CuneiformSignLakDash051 => CUNEIFORM_SIGN_LAK_DASH_051,
-            EarlyDynasticCuneiform::CuneiformSignLakDash062 => CUNEIFORM_SIGN_LAK_DASH_062,
-            EarlyDynasticCuneiform::CuneiformSignLakDash079OverLakDash079Gunu => CUNEIFORM_SIGN_LAK_DASH_079_OVER_LAK_DASH_079_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignLakDash080 => CUNEIFORM_SIGN_LAK_DASH_080,
-            EarlyDynasticCuneiform::CuneiformSignLakDash081OverLakDash081 => CUNEIFORM_SIGN_LAK_DASH_081_OVER_LAK_DASH_081,
-            EarlyDynasticCuneiform::CuneiformSignLakDash092 => CUNEIFORM_SIGN_LAK_DASH_092,
-            EarlyDynasticCuneiform::CuneiformSignLakDash130 => CUNEIFORM_SIGN_LAK_DASH_130,
-            EarlyDynasticCuneiform::CuneiformSignLakDash142 => CUNEIFORM_SIGN_LAK_DASH_142,
-            EarlyDynasticCuneiform::CuneiformSignLakDash210 => CUNEIFORM_SIGN_LAK_DASH_210,
-            EarlyDynasticCuneiform::CuneiformSignLakDash219 => CUNEIFORM_SIGN_LAK_DASH_219,
-            EarlyDynasticCuneiform::CuneiformSignLakDash220 => CUNEIFORM_SIGN_LAK_DASH_220,
-            EarlyDynasticCuneiform::CuneiformSignLakDash225 => CUNEIFORM_SIGN_LAK_DASH_225,
-            EarlyDynasticCuneiform::CuneiformSignLakDash228 => CUNEIFORM_SIGN_LAK_DASH_228,
-            EarlyDynasticCuneiform::CuneiformSignLakDash238 => CUNEIFORM_SIGN_LAK_DASH_238,
-            EarlyDynasticCuneiform::CuneiformSignLakDash265 => CUNEIFORM_SIGN_LAK_DASH_265,
-            EarlyDynasticCuneiform::CuneiformSignLakDash266 => CUNEIFORM_SIGN_LAK_DASH_266,
-            EarlyDynasticCuneiform::CuneiformSignLakDash343 => CUNEIFORM_SIGN_LAK_DASH_343,
-            EarlyDynasticCuneiform::CuneiformSignLakDash347 => CUNEIFORM_SIGN_LAK_DASH_347,
-            EarlyDynasticCuneiform::CuneiformSignLakDash348 => CUNEIFORM_SIGN_LAK_DASH_348,
-            EarlyDynasticCuneiform::CuneiformSignLakDash383 => CUNEIFORM_SIGN_LAK_DASH_383,
-            EarlyDynasticCuneiform::CuneiformSignLakDash384 => CUNEIFORM_SIGN_LAK_DASH_384,
-            EarlyDynasticCuneiform::CuneiformSignLakDash390 => CUNEIFORM_SIGN_LAK_DASH_390,
-            EarlyDynasticCuneiform::CuneiformSignLakDash441 => CUNEIFORM_SIGN_LAK_DASH_441,
-            EarlyDynasticCuneiform::CuneiformSignLakDash449 => CUNEIFORM_SIGN_LAK_DASH_449,
-            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesGu => CUNEIFORM_SIGN_LAK_DASH_449_TIMES_GU,
-            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesIgi => CUNEIFORM_SIGN_LAK_DASH_449_TIMES_IGI,
-            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesPapPlusLu3 => CUNEIFORM_SIGN_LAK_DASH_449_TIMES_PAP_PLUS_LU3,
-            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesPapPlusPapPlusLu3 => CUNEIFORM_SIGN_LAK_DASH_449_TIMES_PAP_PLUS_PAP_PLUS_LU3,
-            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesU2PlusBa => CUNEIFORM_SIGN_LAK_DASH_449_TIMES_U2_PLUS_BA,
-            EarlyDynasticCuneiform::CuneiformSignLakDash450 => CUNEIFORM_SIGN_LAK_DASH_450,
-            EarlyDynasticCuneiform::CuneiformSignLakDash457 => CUNEIFORM_SIGN_LAK_DASH_457,
-            EarlyDynasticCuneiform::CuneiformSignLakDash470 => CUNEIFORM_SIGN_LAK_DASH_470,
-            EarlyDynasticCuneiform::CuneiformSignLakDash483 => CUNEIFORM_SIGN_LAK_DASH_483,
-            EarlyDynasticCuneiform::CuneiformSignLakDash490 => CUNEIFORM_SIGN_LAK_DASH_490,
-            EarlyDynasticCuneiform::CuneiformSignLakDash492 => CUNEIFORM_SIGN_LAK_DASH_492,
-            EarlyDynasticCuneiform::CuneiformSignLakDash493 => CUNEIFORM_SIGN_LAK_DASH_493,
-            EarlyDynasticCuneiform::CuneiformSignLakDash495 => CUNEIFORM_SIGN_LAK_DASH_495,
-            EarlyDynasticCuneiform::CuneiformSignLakDash550 => CUNEIFORM_SIGN_LAK_DASH_550,
-            EarlyDynasticCuneiform::CuneiformSignLakDash608 => CUNEIFORM_SIGN_LAK_DASH_608,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617 => CUNEIFORM_SIGN_LAK_DASH_617,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesAsh => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_ASH,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesBad => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_BAD,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesDun3GunuGunu => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_DUN3_GUNU_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesKu3 => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_KU3,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesLa => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_LA,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesTar => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_TAR,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesTe => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_TE,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesU2 => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_U2,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesUd => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_UD,
-            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesUruda => CUNEIFORM_SIGN_LAK_DASH_617_TIMES_URUDA,
-            EarlyDynasticCuneiform::CuneiformSignLakDash636 => CUNEIFORM_SIGN_LAK_DASH_636,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648 => CUNEIFORM_SIGN_LAK_DASH_648,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesDub => CUNEIFORM_SIGN_LAK_DASH_648_TIMES_DUB,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesGa => CUNEIFORM_SIGN_LAK_DASH_648_TIMES_GA,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesIgi => CUNEIFORM_SIGN_LAK_DASH_648_TIMES_IGI,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesIgiGunu => CUNEIFORM_SIGN_LAK_DASH_648_TIMES_IGI_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesNi => CUNEIFORM_SIGN_LAK_DASH_648_TIMES_NI,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesPapPlusPapPlusLu3 => CUNEIFORM_SIGN_LAK_DASH_648_TIMES_PAP_PLUS_PAP_PLUS_LU3,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesSheshPlusKi => CUNEIFORM_SIGN_LAK_DASH_648_TIMES_SHESH_PLUS_KI,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesUd => CUNEIFORM_SIGN_LAK_DASH_648_TIMES_UD,
-            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesUruda => CUNEIFORM_SIGN_LAK_DASH_648_TIMES_URUDA,
-            EarlyDynasticCuneiform::CuneiformSignLakDash724 => CUNEIFORM_SIGN_LAK_DASH_724,
-            EarlyDynasticCuneiform::CuneiformSignLakDash749 => CUNEIFORM_SIGN_LAK_DASH_749,
-            EarlyDynasticCuneiform::CuneiformSignLu2GunuTimesAsh => CUNEIFORM_SIGN_LU2_GUNU_TIMES_ASH,
-            EarlyDynasticCuneiform::CuneiformSignLu2TimesDish => CUNEIFORM_SIGN_LU2_TIMES_DISH,
-            EarlyDynasticCuneiform::CuneiformSignLu2TimesHal => CUNEIFORM_SIGN_LU2_TIMES_HAL,
-            EarlyDynasticCuneiform::CuneiformSignLu2TimesPap => CUNEIFORM_SIGN_LU2_TIMES_PAP,
-            EarlyDynasticCuneiform::CuneiformSignLu2TimesPapPlusPapPlusLu3 => CUNEIFORM_SIGN_LU2_TIMES_PAP_PLUS_PAP_PLUS_LU3,
-            EarlyDynasticCuneiform::CuneiformSignLu2TimesTak4 => CUNEIFORM_SIGN_LU2_TIMES_TAK4,
-            EarlyDynasticCuneiform::CuneiformSignMiPlusZa7 => CUNEIFORM_SIGN_MI_PLUS_ZA7,
-            EarlyDynasticCuneiform::CuneiformSignMushOverMushTimesGa => CUNEIFORM_SIGN_MUSH_OVER_MUSH_TIMES_GA,
-            EarlyDynasticCuneiform::CuneiformSignMushOverMushTimesKak => CUNEIFORM_SIGN_MUSH_OVER_MUSH_TIMES_KAK,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesDimGunu => CUNEIFORM_SIGN_NINDA2_TIMES_DIM_GUNU,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesGish => CUNEIFORM_SIGN_NINDA2_TIMES_GISH,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesGul => CUNEIFORM_SIGN_NINDA2_TIMES_GUL,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesHi => CUNEIFORM_SIGN_NINDA2_TIMES_HI,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesKesh2 => CUNEIFORM_SIGN_NINDA2_TIMES_KESH2,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesLakDash050 => CUNEIFORM_SIGN_NINDA2_TIMES_LAK_DASH_050,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesMash => CUNEIFORM_SIGN_NINDA2_TIMES_MASH,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesPapPlusPap => CUNEIFORM_SIGN_NINDA2_TIMES_PAP_PLUS_PAP,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesU => CUNEIFORM_SIGN_NINDA2_TIMES_U,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesUPlusU => CUNEIFORM_SIGN_NINDA2_TIMES_U_PLUS_U,
-            EarlyDynasticCuneiform::CuneiformSignNinda2TimesUruda => CUNEIFORM_SIGN_NINDA2_TIMES_URUDA,
-            EarlyDynasticCuneiform::CuneiformSignSagGunuTimesHa => CUNEIFORM_SIGN_SAG_GUNU_TIMES_HA,
-            EarlyDynasticCuneiform::CuneiformSignSagTimesEn => CUNEIFORM_SIGN_SAG_TIMES_EN,
-            EarlyDynasticCuneiform::CuneiformSignSagTimesSheAtLeft => CUNEIFORM_SIGN_SAG_TIMES_SHE_AT_LEFT,
-            EarlyDynasticCuneiform::CuneiformSignSagTimesTak4 => CUNEIFORM_SIGN_SAG_TIMES_TAK4,
-            EarlyDynasticCuneiform::CuneiformSignSha6Tenu => CUNEIFORM_SIGN_SHA6_TENU,
-            EarlyDynasticCuneiform::CuneiformSignSheOverShe => CUNEIFORM_SIGN_SHE_OVER_SHE,
-            EarlyDynasticCuneiform::CuneiformSignShePlusHub2 => CUNEIFORM_SIGN_SHE_PLUS_HUB2,
-            EarlyDynasticCuneiform::CuneiformSignShePlusNam2 => CUNEIFORM_SIGN_SHE_PLUS_NAM2,
-            EarlyDynasticCuneiform::CuneiformSignShePlusSar => CUNEIFORM_SIGN_SHE_PLUS_SAR,
-            EarlyDynasticCuneiform::CuneiformSignShu2PlusDugTimesNi => CUNEIFORM_SIGN_SHU2_PLUS_DUG_TIMES_NI,
-            EarlyDynasticCuneiform::CuneiformSignShu2PlusE2TimesAn => CUNEIFORM_SIGN_SHU2_PLUS_E2_TIMES_AN,
-            EarlyDynasticCuneiform::CuneiformSignSiTimesTak4 => CUNEIFORM_SIGN_SI_TIMES_TAK4,
-            EarlyDynasticCuneiform::CuneiformSignTak4PlusSag => CUNEIFORM_SIGN_TAK4_PLUS_SAG,
-            EarlyDynasticCuneiform::CuneiformSignTumTimesGan2Tenu => CUNEIFORM_SIGN_TUM_TIMES_GAN2_TENU,
-            EarlyDynasticCuneiform::CuneiformSignTumTimesThreeDish => CUNEIFORM_SIGN_TUM_TIMES_THREE_DISH,
-            EarlyDynasticCuneiform::CuneiformSignUr2Inverted => CUNEIFORM_SIGN_UR2_INVERTED,
-            EarlyDynasticCuneiform::CuneiformSignUr2TimesUd => CUNEIFORM_SIGN_UR2_TIMES_UD,
-            EarlyDynasticCuneiform::CuneiformSignUruTimesDara3 => CUNEIFORM_SIGN_URU_TIMES_DARA3,
-            EarlyDynasticCuneiform::CuneiformSignUruTimesLakDash668 => CUNEIFORM_SIGN_URU_TIMES_LAK_DASH_668,
-            EarlyDynasticCuneiform::CuneiformSignUruTimesLu3 => CUNEIFORM_SIGN_URU_TIMES_LU3,
-            EarlyDynasticCuneiform::CuneiformSignZa7 => CUNEIFORM_SIGN_ZA7,
-            EarlyDynasticCuneiform::CuneiformSignZuOverZuPlusSar => CUNEIFORM_SIGN_ZU_OVER_ZU_PLUS_SAR,
-            EarlyDynasticCuneiform::CuneiformSignZu5TimesThreeDishTenu => CUNEIFORM_SIGN_ZU5_TIMES_THREE_DISH_TENU,
+            EarlyDynasticCuneiform::CuneiformSignAbTimesNunTenu => '𒒀',
+            EarlyDynasticCuneiform::CuneiformSignAbTimesShu2 => '𒒁',
+            EarlyDynasticCuneiform::CuneiformSignAdTimesEsh2 => '𒒂',
+            EarlyDynasticCuneiform::CuneiformSignBadTimesDishTenu => '𒒃',
+            EarlyDynasticCuneiform::CuneiformSignBahar2TimesAb2 => '𒒄',
+            EarlyDynasticCuneiform::CuneiformSignBahar2TimesNi => '𒒅',
+            EarlyDynasticCuneiform::CuneiformSignBahar2TimesZa => '𒒆',
+            EarlyDynasticCuneiform::CuneiformSignBuOverBuTimesNa2 => '𒒇',
+            EarlyDynasticCuneiform::CuneiformSignDaTimesTak4 => '𒒈',
+            EarlyDynasticCuneiform::CuneiformSignDagTimesKur => '𒒉',
+            EarlyDynasticCuneiform::CuneiformSignDimTimesIgi => '𒒊',
+            EarlyDynasticCuneiform::CuneiformSignDimTimesUUU => '𒒋',
+            EarlyDynasticCuneiform::CuneiformSignDim2TimesUd => '𒒌',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesAnshe => '𒒍',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesAsh => '𒒎',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesAshAtLeft => '𒒏',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesDin => '𒒐',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesDun => '𒒑',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesErin2 => '𒒒',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesGa => '𒒓',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesGi => '𒒔',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesGir2Gunu => '𒒕',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesGish => '𒒖',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesHa => '𒒗',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesHi => '𒒘',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesIgiGunu => '𒒙',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesKaskal => '𒒚',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesKur => '𒒛',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesKushu2 => '𒒜',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesKushu2PlusKaskal => '𒒝',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesLakDash020 => '𒒞',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesLam => '𒒟',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesLamTimesKur => '𒒠',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesLuhPlusGish => '𒒡',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesMash => '𒒢',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesMes => '𒒣',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesMi => '𒒤',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesNi => '𒒥',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesPi => '𒒦',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesShe => '𒒧',
+            EarlyDynasticCuneiform::CuneiformSignDugTimesSiGunu => '𒒨',
+            EarlyDynasticCuneiform::CuneiformSignE2TimesKur => '𒒩',
+            EarlyDynasticCuneiform::CuneiformSignE2TimesPap => '𒒪',
+            EarlyDynasticCuneiform::CuneiformSignErin2X => '𒒫',
+            EarlyDynasticCuneiform::CuneiformSignEsh2CrossingEsh2 => '𒒬',
+            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesAsh => '𒒭',
+            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesHi => '𒒮',
+            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesIgiGunu => '𒒯',
+            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesLa => '𒒰',
+            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesLal => '𒒱',
+            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesMe => '𒒲',
+            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesMes => '𒒳',
+            EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesSu => '𒒴',
+            EarlyDynasticCuneiform::CuneiformSignEzenTimesSu => '𒒵',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesBahar2 => '𒒶',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesDimGunu => '𒒷',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesDugTimesIgiGunu => '𒒸',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesDugTimesKaskal => '𒒹',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesEren => '𒒺',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesGa => '𒒻',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesGarPlusDi => '𒒼',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesGarPlusNe => '𒒽',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesHaPlusA => '𒒾',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesKushu2PlusKaskal => '𒒿',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesLam => '𒓀',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesLamTimesKur => '𒓁',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesLuh => '𒓂',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesMush => '𒓃',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesNe => '𒓄',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesNePlusE2 => '𒓅',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesNePlusGi => '𒓆',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesShim => '𒓇',
+            EarlyDynasticCuneiform::CuneiformSignGa2TimesZiz2 => '𒓈',
+            EarlyDynasticCuneiform::CuneiformSignGabaRotatedNinetyDegrees => '𒓉',
+            EarlyDynasticCuneiform::CuneiformSignGeshtinTimesU => '𒓊',
+            EarlyDynasticCuneiform::CuneiformSignGishTimesGishCrossingGish => '𒓋',
+            EarlyDynasticCuneiform::CuneiformSignGu2TimesIgiGunu => '𒓌',
+            EarlyDynasticCuneiform::CuneiformSignGudPlusGishTimesTak4 => '𒓍',
+            EarlyDynasticCuneiform::CuneiformSignHaTenuGunu => '𒓎',
+            EarlyDynasticCuneiform::CuneiformSignHiTimesAshOverHiTimesAsh => '𒓏',
+            EarlyDynasticCuneiform::CuneiformSignKaTimesBu => '𒓐',
+            EarlyDynasticCuneiform::CuneiformSignKaTimesKa => '𒓑',
+            EarlyDynasticCuneiform::CuneiformSignKaTimesUUU => '𒓒',
+            EarlyDynasticCuneiform::CuneiformSignKaTimesUr => '𒓓',
+            EarlyDynasticCuneiform::CuneiformSignLagabTimesZuOverZu => '𒓔',
+            EarlyDynasticCuneiform::CuneiformSignLakDash003 => '𒓕',
+            EarlyDynasticCuneiform::CuneiformSignLakDash021 => '𒓖',
+            EarlyDynasticCuneiform::CuneiformSignLakDash025 => '𒓗',
+            EarlyDynasticCuneiform::CuneiformSignLakDash030 => '𒓘',
+            EarlyDynasticCuneiform::CuneiformSignLakDash050 => '𒓙',
+            EarlyDynasticCuneiform::CuneiformSignLakDash051 => '𒓚',
+            EarlyDynasticCuneiform::CuneiformSignLakDash062 => '𒓛',
+            EarlyDynasticCuneiform::CuneiformSignLakDash079OverLakDash079Gunu => '𒓜',
+            EarlyDynasticCuneiform::CuneiformSignLakDash080 => '𒓝',
+            EarlyDynasticCuneiform::CuneiformSignLakDash081OverLakDash081 => '𒓞',
+            EarlyDynasticCuneiform::CuneiformSignLakDash092 => '𒓟',
+            EarlyDynasticCuneiform::CuneiformSignLakDash130 => '𒓠',
+            EarlyDynasticCuneiform::CuneiformSignLakDash142 => '𒓡',
+            EarlyDynasticCuneiform::CuneiformSignLakDash210 => '𒓢',
+            EarlyDynasticCuneiform::CuneiformSignLakDash219 => '𒓣',
+            EarlyDynasticCuneiform::CuneiformSignLakDash220 => '𒓤',
+            EarlyDynasticCuneiform::CuneiformSignLakDash225 => '𒓥',
+            EarlyDynasticCuneiform::CuneiformSignLakDash228 => '𒓦',
+            EarlyDynasticCuneiform::CuneiformSignLakDash238 => '𒓧',
+            EarlyDynasticCuneiform::CuneiformSignLakDash265 => '𒓨',
+            EarlyDynasticCuneiform::CuneiformSignLakDash266 => '𒓩',
+            EarlyDynasticCuneiform::CuneiformSignLakDash343 => '𒓪',
+            EarlyDynasticCuneiform::CuneiformSignLakDash347 => '𒓫',
+            EarlyDynasticCuneiform::CuneiformSignLakDash348 => '𒓬',
+            EarlyDynasticCuneiform::CuneiformSignLakDash383 => '𒓭',
+            EarlyDynasticCuneiform::CuneiformSignLakDash384 => '𒓮',
+            EarlyDynasticCuneiform::CuneiformSignLakDash390 => '𒓯',
+            EarlyDynasticCuneiform::CuneiformSignLakDash441 => '𒓰',
+            EarlyDynasticCuneiform::CuneiformSignLakDash449 => '𒓱',
+            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesGu => '𒓲',
+            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesIgi => '𒓳',
+            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesPapPlusLu3 => '𒓴',
+            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesPapPlusPapPlusLu3 => '𒓵',
+            EarlyDynasticCuneiform::CuneiformSignLakDash449TimesU2PlusBa => '𒓶',
+            EarlyDynasticCuneiform::CuneiformSignLakDash450 => '𒓷',
+            EarlyDynasticCuneiform::CuneiformSignLakDash457 => '𒓸',
+            EarlyDynasticCuneiform::CuneiformSignLakDash470 => '𒓹',
+            EarlyDynasticCuneiform::CuneiformSignLakDash483 => '𒓺',
+            EarlyDynasticCuneiform::CuneiformSignLakDash490 => '𒓻',
+            EarlyDynasticCuneiform::CuneiformSignLakDash492 => '𒓼',
+            EarlyDynasticCuneiform::CuneiformSignLakDash493 => '𒓽',
+            EarlyDynasticCuneiform::CuneiformSignLakDash495 => '𒓾',
+            EarlyDynasticCuneiform::CuneiformSignLakDash550 => '𒓿',
+            EarlyDynasticCuneiform::CuneiformSignLakDash608 => '𒔀',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617 => '𒔁',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesAsh => '𒔂',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesBad => '𒔃',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesDun3GunuGunu => '𒔄',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesKu3 => '𒔅',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesLa => '𒔆',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesTar => '𒔇',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesTe => '𒔈',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesU2 => '𒔉',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesUd => '𒔊',
+            EarlyDynasticCuneiform::CuneiformSignLakDash617TimesUruda => '𒔋',
+            EarlyDynasticCuneiform::CuneiformSignLakDash636 => '𒔌',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648 => '𒔍',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesDub => '𒔎',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesGa => '𒔏',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesIgi => '𒔐',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesIgiGunu => '𒔑',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesNi => '𒔒',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesPapPlusPapPlusLu3 => '𒔓',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesSheshPlusKi => '𒔔',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesUd => '𒔕',
+            EarlyDynasticCuneiform::CuneiformSignLakDash648TimesUruda => '𒔖',
+            EarlyDynasticCuneiform::CuneiformSignLakDash724 => '𒔗',
+            EarlyDynasticCuneiform::CuneiformSignLakDash749 => '𒔘',
+            EarlyDynasticCuneiform::CuneiformSignLu2GunuTimesAsh => '𒔙',
+            EarlyDynasticCuneiform::CuneiformSignLu2TimesDish => '𒔚',
+            EarlyDynasticCuneiform::CuneiformSignLu2TimesHal => '𒔛',
+            EarlyDynasticCuneiform::CuneiformSignLu2TimesPap => '𒔜',
+            EarlyDynasticCuneiform::CuneiformSignLu2TimesPapPlusPapPlusLu3 => '𒔝',
+            EarlyDynasticCuneiform::CuneiformSignLu2TimesTak4 => '𒔞',
+            EarlyDynasticCuneiform::CuneiformSignMiPlusZa7 => '𒔟',
+            EarlyDynasticCuneiform::CuneiformSignMushOverMushTimesGa => '𒔠',
+            EarlyDynasticCuneiform::CuneiformSignMushOverMushTimesKak => '𒔡',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesDimGunu => '𒔢',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesGish => '𒔣',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesGul => '𒔤',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesHi => '𒔥',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesKesh2 => '𒔦',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesLakDash050 => '𒔧',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesMash => '𒔨',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesPapPlusPap => '𒔩',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesU => '𒔪',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesUPlusU => '𒔫',
+            EarlyDynasticCuneiform::CuneiformSignNinda2TimesUruda => '𒔬',
+            EarlyDynasticCuneiform::CuneiformSignSagGunuTimesHa => '𒔭',
+            EarlyDynasticCuneiform::CuneiformSignSagTimesEn => '𒔮',
+            EarlyDynasticCuneiform::CuneiformSignSagTimesSheAtLeft => '𒔯',
+            EarlyDynasticCuneiform::CuneiformSignSagTimesTak4 => '𒔰',
+            EarlyDynasticCuneiform::CuneiformSignSha6Tenu => '𒔱',
+            EarlyDynasticCuneiform::CuneiformSignSheOverShe => '𒔲',
+            EarlyDynasticCuneiform::CuneiformSignShePlusHub2 => '𒔳',
+            EarlyDynasticCuneiform::CuneiformSignShePlusNam2 => '𒔴',
+            EarlyDynasticCuneiform::CuneiformSignShePlusSar => '𒔵',
+            EarlyDynasticCuneiform::CuneiformSignShu2PlusDugTimesNi => '𒔶',
+            EarlyDynasticCuneiform::CuneiformSignShu2PlusE2TimesAn => '𒔷',
+            EarlyDynasticCuneiform::CuneiformSignSiTimesTak4 => '𒔸',
+            EarlyDynasticCuneiform::CuneiformSignTak4PlusSag => '𒔹',
+            EarlyDynasticCuneiform::CuneiformSignTumTimesGan2Tenu => '𒔺',
+            EarlyDynasticCuneiform::CuneiformSignTumTimesThreeDish => '𒔻',
+            EarlyDynasticCuneiform::CuneiformSignUr2Inverted => '𒔼',
+            EarlyDynasticCuneiform::CuneiformSignUr2TimesUd => '𒔽',
+            EarlyDynasticCuneiform::CuneiformSignUruTimesDara3 => '𒔾',
+            EarlyDynasticCuneiform::CuneiformSignUruTimesLakDash668 => '𒔿',
+            EarlyDynasticCuneiform::CuneiformSignUruTimesLu3 => '𒕀',
+            EarlyDynasticCuneiform::CuneiformSignZa7 => '𒕁',
+            EarlyDynasticCuneiform::CuneiformSignZuOverZuPlusSar => '𒕂',
+            EarlyDynasticCuneiform::CuneiformSignZu5TimesThreeDishTenu => '𒕃',
         }
     }
 }
@@ -998,204 +602,203 @@ impl Into<char> for EarlyDynasticCuneiform {
 impl std::convert::TryFrom<char> for EarlyDynasticCuneiform {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CUNEIFORM_SIGN_AB_TIMES_NUN_TENU => Ok(EarlyDynasticCuneiform::CuneiformSignAbTimesNunTenu),
-            CUNEIFORM_SIGN_AB_TIMES_SHU2 => Ok(EarlyDynasticCuneiform::CuneiformSignAbTimesShu2),
-            CUNEIFORM_SIGN_AD_TIMES_ESH2 => Ok(EarlyDynasticCuneiform::CuneiformSignAdTimesEsh2),
-            CUNEIFORM_SIGN_BAD_TIMES_DISH_TENU => Ok(EarlyDynasticCuneiform::CuneiformSignBadTimesDishTenu),
-            CUNEIFORM_SIGN_BAHAR2_TIMES_AB2 => Ok(EarlyDynasticCuneiform::CuneiformSignBahar2TimesAb2),
-            CUNEIFORM_SIGN_BAHAR2_TIMES_NI => Ok(EarlyDynasticCuneiform::CuneiformSignBahar2TimesNi),
-            CUNEIFORM_SIGN_BAHAR2_TIMES_ZA => Ok(EarlyDynasticCuneiform::CuneiformSignBahar2TimesZa),
-            CUNEIFORM_SIGN_BU_OVER_BU_TIMES_NA2 => Ok(EarlyDynasticCuneiform::CuneiformSignBuOverBuTimesNa2),
-            CUNEIFORM_SIGN_DA_TIMES_TAK4 => Ok(EarlyDynasticCuneiform::CuneiformSignDaTimesTak4),
-            CUNEIFORM_SIGN_DAG_TIMES_KUR => Ok(EarlyDynasticCuneiform::CuneiformSignDagTimesKur),
-            CUNEIFORM_SIGN_DIM_TIMES_IGI => Ok(EarlyDynasticCuneiform::CuneiformSignDimTimesIgi),
-            CUNEIFORM_SIGN_DIM_TIMES_U_U_U => Ok(EarlyDynasticCuneiform::CuneiformSignDimTimesUUU),
-            CUNEIFORM_SIGN_DIM2_TIMES_UD => Ok(EarlyDynasticCuneiform::CuneiformSignDim2TimesUd),
-            CUNEIFORM_SIGN_DUG_TIMES_ANSHE => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesAnshe),
-            CUNEIFORM_SIGN_DUG_TIMES_ASH => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesAsh),
-            CUNEIFORM_SIGN_DUG_TIMES_ASH_AT_LEFT => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesAshAtLeft),
-            CUNEIFORM_SIGN_DUG_TIMES_DIN => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesDin),
-            CUNEIFORM_SIGN_DUG_TIMES_DUN => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesDun),
-            CUNEIFORM_SIGN_DUG_TIMES_ERIN2 => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesErin2),
-            CUNEIFORM_SIGN_DUG_TIMES_GA => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesGa),
-            CUNEIFORM_SIGN_DUG_TIMES_GI => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesGi),
-            CUNEIFORM_SIGN_DUG_TIMES_GIR2_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesGir2Gunu),
-            CUNEIFORM_SIGN_DUG_TIMES_GISH => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesGish),
-            CUNEIFORM_SIGN_DUG_TIMES_HA => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesHa),
-            CUNEIFORM_SIGN_DUG_TIMES_HI => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesHi),
-            CUNEIFORM_SIGN_DUG_TIMES_IGI_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesIgiGunu),
-            CUNEIFORM_SIGN_DUG_TIMES_KASKAL => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesKaskal),
-            CUNEIFORM_SIGN_DUG_TIMES_KUR => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesKur),
-            CUNEIFORM_SIGN_DUG_TIMES_KUSHU2 => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesKushu2),
-            CUNEIFORM_SIGN_DUG_TIMES_KUSHU2_PLUS_KASKAL => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesKushu2PlusKaskal),
-            CUNEIFORM_SIGN_DUG_TIMES_LAK_DASH_020 => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesLakDash020),
-            CUNEIFORM_SIGN_DUG_TIMES_LAM => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesLam),
-            CUNEIFORM_SIGN_DUG_TIMES_LAM_TIMES_KUR => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesLamTimesKur),
-            CUNEIFORM_SIGN_DUG_TIMES_LUH_PLUS_GISH => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesLuhPlusGish),
-            CUNEIFORM_SIGN_DUG_TIMES_MASH => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesMash),
-            CUNEIFORM_SIGN_DUG_TIMES_MES => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesMes),
-            CUNEIFORM_SIGN_DUG_TIMES_MI => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesMi),
-            CUNEIFORM_SIGN_DUG_TIMES_NI => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesNi),
-            CUNEIFORM_SIGN_DUG_TIMES_PI => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesPi),
-            CUNEIFORM_SIGN_DUG_TIMES_SHE => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesShe),
-            CUNEIFORM_SIGN_DUG_TIMES_SI_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesSiGunu),
-            CUNEIFORM_SIGN_E2_TIMES_KUR => Ok(EarlyDynasticCuneiform::CuneiformSignE2TimesKur),
-            CUNEIFORM_SIGN_E2_TIMES_PAP => Ok(EarlyDynasticCuneiform::CuneiformSignE2TimesPap),
-            CUNEIFORM_SIGN_ERIN2_X => Ok(EarlyDynasticCuneiform::CuneiformSignErin2X),
-            CUNEIFORM_SIGN_ESH2_CROSSING_ESH2 => Ok(EarlyDynasticCuneiform::CuneiformSignEsh2CrossingEsh2),
-            CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_ASH => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesAsh),
-            CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_HI => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesHi),
-            CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_IGI_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesIgiGunu),
-            CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_LA => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesLa),
-            CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_LAL => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesLal),
-            CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_ME => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesMe),
-            CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_MES => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesMes),
-            CUNEIFORM_SIGN_EZEN_SHESHIG_TIMES_SU => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesSu),
-            CUNEIFORM_SIGN_EZEN_TIMES_SU => Ok(EarlyDynasticCuneiform::CuneiformSignEzenTimesSu),
-            CUNEIFORM_SIGN_GA2_TIMES_BAHAR2 => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesBahar2),
-            CUNEIFORM_SIGN_GA2_TIMES_DIM_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesDimGunu),
-            CUNEIFORM_SIGN_GA2_TIMES_DUG_TIMES_IGI_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesDugTimesIgiGunu),
-            CUNEIFORM_SIGN_GA2_TIMES_DUG_TIMES_KASKAL => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesDugTimesKaskal),
-            CUNEIFORM_SIGN_GA2_TIMES_EREN => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesEren),
-            CUNEIFORM_SIGN_GA2_TIMES_GA => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesGa),
-            CUNEIFORM_SIGN_GA2_TIMES_GAR_PLUS_DI => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesGarPlusDi),
-            CUNEIFORM_SIGN_GA2_TIMES_GAR_PLUS_NE => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesGarPlusNe),
-            CUNEIFORM_SIGN_GA2_TIMES_HA_PLUS_A => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesHaPlusA),
-            CUNEIFORM_SIGN_GA2_TIMES_KUSHU2_PLUS_KASKAL => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesKushu2PlusKaskal),
-            CUNEIFORM_SIGN_GA2_TIMES_LAM => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesLam),
-            CUNEIFORM_SIGN_GA2_TIMES_LAM_TIMES_KUR => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesLamTimesKur),
-            CUNEIFORM_SIGN_GA2_TIMES_LUH => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesLuh),
-            CUNEIFORM_SIGN_GA2_TIMES_MUSH => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesMush),
-            CUNEIFORM_SIGN_GA2_TIMES_NE => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesNe),
-            CUNEIFORM_SIGN_GA2_TIMES_NE_PLUS_E2 => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesNePlusE2),
-            CUNEIFORM_SIGN_GA2_TIMES_NE_PLUS_GI => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesNePlusGi),
-            CUNEIFORM_SIGN_GA2_TIMES_SHIM => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesShim),
-            CUNEIFORM_SIGN_GA2_TIMES_ZIZ2 => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesZiz2),
-            CUNEIFORM_SIGN_GABA_ROTATED_NINETY_DEGREES => Ok(EarlyDynasticCuneiform::CuneiformSignGabaRotatedNinetyDegrees),
-            CUNEIFORM_SIGN_GESHTIN_TIMES_U => Ok(EarlyDynasticCuneiform::CuneiformSignGeshtinTimesU),
-            CUNEIFORM_SIGN_GISH_TIMES_GISH_CROSSING_GISH => Ok(EarlyDynasticCuneiform::CuneiformSignGishTimesGishCrossingGish),
-            CUNEIFORM_SIGN_GU2_TIMES_IGI_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignGu2TimesIgiGunu),
-            CUNEIFORM_SIGN_GUD_PLUS_GISH_TIMES_TAK4 => Ok(EarlyDynasticCuneiform::CuneiformSignGudPlusGishTimesTak4),
-            CUNEIFORM_SIGN_HA_TENU_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignHaTenuGunu),
-            CUNEIFORM_SIGN_HI_TIMES_ASH_OVER_HI_TIMES_ASH => Ok(EarlyDynasticCuneiform::CuneiformSignHiTimesAshOverHiTimesAsh),
-            CUNEIFORM_SIGN_KA_TIMES_BU => Ok(EarlyDynasticCuneiform::CuneiformSignKaTimesBu),
-            CUNEIFORM_SIGN_KA_TIMES_KA => Ok(EarlyDynasticCuneiform::CuneiformSignKaTimesKa),
-            CUNEIFORM_SIGN_KA_TIMES_U_U_U => Ok(EarlyDynasticCuneiform::CuneiformSignKaTimesUUU),
-            CUNEIFORM_SIGN_KA_TIMES_UR => Ok(EarlyDynasticCuneiform::CuneiformSignKaTimesUr),
-            CUNEIFORM_SIGN_LAGAB_TIMES_ZU_OVER_ZU => Ok(EarlyDynasticCuneiform::CuneiformSignLagabTimesZuOverZu),
-            CUNEIFORM_SIGN_LAK_DASH_003 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash003),
-            CUNEIFORM_SIGN_LAK_DASH_021 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash021),
-            CUNEIFORM_SIGN_LAK_DASH_025 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash025),
-            CUNEIFORM_SIGN_LAK_DASH_030 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash030),
-            CUNEIFORM_SIGN_LAK_DASH_050 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash050),
-            CUNEIFORM_SIGN_LAK_DASH_051 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash051),
-            CUNEIFORM_SIGN_LAK_DASH_062 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash062),
-            CUNEIFORM_SIGN_LAK_DASH_079_OVER_LAK_DASH_079_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash079OverLakDash079Gunu),
-            CUNEIFORM_SIGN_LAK_DASH_080 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash080),
-            CUNEIFORM_SIGN_LAK_DASH_081_OVER_LAK_DASH_081 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash081OverLakDash081),
-            CUNEIFORM_SIGN_LAK_DASH_092 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash092),
-            CUNEIFORM_SIGN_LAK_DASH_130 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash130),
-            CUNEIFORM_SIGN_LAK_DASH_142 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash142),
-            CUNEIFORM_SIGN_LAK_DASH_210 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash210),
-            CUNEIFORM_SIGN_LAK_DASH_219 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash219),
-            CUNEIFORM_SIGN_LAK_DASH_220 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash220),
-            CUNEIFORM_SIGN_LAK_DASH_225 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash225),
-            CUNEIFORM_SIGN_LAK_DASH_228 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash228),
-            CUNEIFORM_SIGN_LAK_DASH_238 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash238),
-            CUNEIFORM_SIGN_LAK_DASH_265 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash265),
-            CUNEIFORM_SIGN_LAK_DASH_266 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash266),
-            CUNEIFORM_SIGN_LAK_DASH_343 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash343),
-            CUNEIFORM_SIGN_LAK_DASH_347 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash347),
-            CUNEIFORM_SIGN_LAK_DASH_348 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash348),
-            CUNEIFORM_SIGN_LAK_DASH_383 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash383),
-            CUNEIFORM_SIGN_LAK_DASH_384 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash384),
-            CUNEIFORM_SIGN_LAK_DASH_390 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash390),
-            CUNEIFORM_SIGN_LAK_DASH_441 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash441),
-            CUNEIFORM_SIGN_LAK_DASH_449 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449),
-            CUNEIFORM_SIGN_LAK_DASH_449_TIMES_GU => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesGu),
-            CUNEIFORM_SIGN_LAK_DASH_449_TIMES_IGI => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesIgi),
-            CUNEIFORM_SIGN_LAK_DASH_449_TIMES_PAP_PLUS_LU3 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesPapPlusLu3),
-            CUNEIFORM_SIGN_LAK_DASH_449_TIMES_PAP_PLUS_PAP_PLUS_LU3 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesPapPlusPapPlusLu3),
-            CUNEIFORM_SIGN_LAK_DASH_449_TIMES_U2_PLUS_BA => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesU2PlusBa),
-            CUNEIFORM_SIGN_LAK_DASH_450 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash450),
-            CUNEIFORM_SIGN_LAK_DASH_457 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash457),
-            CUNEIFORM_SIGN_LAK_DASH_470 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash470),
-            CUNEIFORM_SIGN_LAK_DASH_483 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash483),
-            CUNEIFORM_SIGN_LAK_DASH_490 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash490),
-            CUNEIFORM_SIGN_LAK_DASH_492 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash492),
-            CUNEIFORM_SIGN_LAK_DASH_493 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash493),
-            CUNEIFORM_SIGN_LAK_DASH_495 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash495),
-            CUNEIFORM_SIGN_LAK_DASH_550 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash550),
-            CUNEIFORM_SIGN_LAK_DASH_608 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash608),
-            CUNEIFORM_SIGN_LAK_DASH_617 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_ASH => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesAsh),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_BAD => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesBad),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_DUN3_GUNU_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesDun3GunuGunu),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_KU3 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesKu3),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_LA => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesLa),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_TAR => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesTar),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_TE => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesTe),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_U2 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesU2),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_UD => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesUd),
-            CUNEIFORM_SIGN_LAK_DASH_617_TIMES_URUDA => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesUruda),
-            CUNEIFORM_SIGN_LAK_DASH_636 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash636),
-            CUNEIFORM_SIGN_LAK_DASH_648 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648),
-            CUNEIFORM_SIGN_LAK_DASH_648_TIMES_DUB => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesDub),
-            CUNEIFORM_SIGN_LAK_DASH_648_TIMES_GA => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesGa),
-            CUNEIFORM_SIGN_LAK_DASH_648_TIMES_IGI => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesIgi),
-            CUNEIFORM_SIGN_LAK_DASH_648_TIMES_IGI_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesIgiGunu),
-            CUNEIFORM_SIGN_LAK_DASH_648_TIMES_NI => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesNi),
-            CUNEIFORM_SIGN_LAK_DASH_648_TIMES_PAP_PLUS_PAP_PLUS_LU3 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesPapPlusPapPlusLu3),
-            CUNEIFORM_SIGN_LAK_DASH_648_TIMES_SHESH_PLUS_KI => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesSheshPlusKi),
-            CUNEIFORM_SIGN_LAK_DASH_648_TIMES_UD => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesUd),
-            CUNEIFORM_SIGN_LAK_DASH_648_TIMES_URUDA => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesUruda),
-            CUNEIFORM_SIGN_LAK_DASH_724 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash724),
-            CUNEIFORM_SIGN_LAK_DASH_749 => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash749),
-            CUNEIFORM_SIGN_LU2_GUNU_TIMES_ASH => Ok(EarlyDynasticCuneiform::CuneiformSignLu2GunuTimesAsh),
-            CUNEIFORM_SIGN_LU2_TIMES_DISH => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesDish),
-            CUNEIFORM_SIGN_LU2_TIMES_HAL => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesHal),
-            CUNEIFORM_SIGN_LU2_TIMES_PAP => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesPap),
-            CUNEIFORM_SIGN_LU2_TIMES_PAP_PLUS_PAP_PLUS_LU3 => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesPapPlusPapPlusLu3),
-            CUNEIFORM_SIGN_LU2_TIMES_TAK4 => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesTak4),
-            CUNEIFORM_SIGN_MI_PLUS_ZA7 => Ok(EarlyDynasticCuneiform::CuneiformSignMiPlusZa7),
-            CUNEIFORM_SIGN_MUSH_OVER_MUSH_TIMES_GA => Ok(EarlyDynasticCuneiform::CuneiformSignMushOverMushTimesGa),
-            CUNEIFORM_SIGN_MUSH_OVER_MUSH_TIMES_KAK => Ok(EarlyDynasticCuneiform::CuneiformSignMushOverMushTimesKak),
-            CUNEIFORM_SIGN_NINDA2_TIMES_DIM_GUNU => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesDimGunu),
-            CUNEIFORM_SIGN_NINDA2_TIMES_GISH => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesGish),
-            CUNEIFORM_SIGN_NINDA2_TIMES_GUL => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesGul),
-            CUNEIFORM_SIGN_NINDA2_TIMES_HI => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesHi),
-            CUNEIFORM_SIGN_NINDA2_TIMES_KESH2 => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesKesh2),
-            CUNEIFORM_SIGN_NINDA2_TIMES_LAK_DASH_050 => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesLakDash050),
-            CUNEIFORM_SIGN_NINDA2_TIMES_MASH => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesMash),
-            CUNEIFORM_SIGN_NINDA2_TIMES_PAP_PLUS_PAP => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesPapPlusPap),
-            CUNEIFORM_SIGN_NINDA2_TIMES_U => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesU),
-            CUNEIFORM_SIGN_NINDA2_TIMES_U_PLUS_U => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesUPlusU),
-            CUNEIFORM_SIGN_NINDA2_TIMES_URUDA => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesUruda),
-            CUNEIFORM_SIGN_SAG_GUNU_TIMES_HA => Ok(EarlyDynasticCuneiform::CuneiformSignSagGunuTimesHa),
-            CUNEIFORM_SIGN_SAG_TIMES_EN => Ok(EarlyDynasticCuneiform::CuneiformSignSagTimesEn),
-            CUNEIFORM_SIGN_SAG_TIMES_SHE_AT_LEFT => Ok(EarlyDynasticCuneiform::CuneiformSignSagTimesSheAtLeft),
-            CUNEIFORM_SIGN_SAG_TIMES_TAK4 => Ok(EarlyDynasticCuneiform::CuneiformSignSagTimesTak4),
-            CUNEIFORM_SIGN_SHA6_TENU => Ok(EarlyDynasticCuneiform::CuneiformSignSha6Tenu),
-            CUNEIFORM_SIGN_SHE_OVER_SHE => Ok(EarlyDynasticCuneiform::CuneiformSignSheOverShe),
-            CUNEIFORM_SIGN_SHE_PLUS_HUB2 => Ok(EarlyDynasticCuneiform::CuneiformSignShePlusHub2),
-            CUNEIFORM_SIGN_SHE_PLUS_NAM2 => Ok(EarlyDynasticCuneiform::CuneiformSignShePlusNam2),
-            CUNEIFORM_SIGN_SHE_PLUS_SAR => Ok(EarlyDynasticCuneiform::CuneiformSignShePlusSar),
-            CUNEIFORM_SIGN_SHU2_PLUS_DUG_TIMES_NI => Ok(EarlyDynasticCuneiform::CuneiformSignShu2PlusDugTimesNi),
-            CUNEIFORM_SIGN_SHU2_PLUS_E2_TIMES_AN => Ok(EarlyDynasticCuneiform::CuneiformSignShu2PlusE2TimesAn),
-            CUNEIFORM_SIGN_SI_TIMES_TAK4 => Ok(EarlyDynasticCuneiform::CuneiformSignSiTimesTak4),
-            CUNEIFORM_SIGN_TAK4_PLUS_SAG => Ok(EarlyDynasticCuneiform::CuneiformSignTak4PlusSag),
-            CUNEIFORM_SIGN_TUM_TIMES_GAN2_TENU => Ok(EarlyDynasticCuneiform::CuneiformSignTumTimesGan2Tenu),
-            CUNEIFORM_SIGN_TUM_TIMES_THREE_DISH => Ok(EarlyDynasticCuneiform::CuneiformSignTumTimesThreeDish),
-            CUNEIFORM_SIGN_UR2_INVERTED => Ok(EarlyDynasticCuneiform::CuneiformSignUr2Inverted),
-            CUNEIFORM_SIGN_UR2_TIMES_UD => Ok(EarlyDynasticCuneiform::CuneiformSignUr2TimesUd),
-            CUNEIFORM_SIGN_URU_TIMES_DARA3 => Ok(EarlyDynasticCuneiform::CuneiformSignUruTimesDara3),
-            CUNEIFORM_SIGN_URU_TIMES_LAK_DASH_668 => Ok(EarlyDynasticCuneiform::CuneiformSignUruTimesLakDash668),
-            CUNEIFORM_SIGN_URU_TIMES_LU3 => Ok(EarlyDynasticCuneiform::CuneiformSignUruTimesLu3),
-            CUNEIFORM_SIGN_ZA7 => Ok(EarlyDynasticCuneiform::CuneiformSignZa7),
-            CUNEIFORM_SIGN_ZU_OVER_ZU_PLUS_SAR => Ok(EarlyDynasticCuneiform::CuneiformSignZuOverZuPlusSar),
-            CUNEIFORM_SIGN_ZU5_TIMES_THREE_DISH_TENU => Ok(EarlyDynasticCuneiform::CuneiformSignZu5TimesThreeDishTenu),
+            '𒒀' => Ok(EarlyDynasticCuneiform::CuneiformSignAbTimesNunTenu),
+            '𒒁' => Ok(EarlyDynasticCuneiform::CuneiformSignAbTimesShu2),
+            '𒒂' => Ok(EarlyDynasticCuneiform::CuneiformSignAdTimesEsh2),
+            '𒒃' => Ok(EarlyDynasticCuneiform::CuneiformSignBadTimesDishTenu),
+            '𒒄' => Ok(EarlyDynasticCuneiform::CuneiformSignBahar2TimesAb2),
+            '𒒅' => Ok(EarlyDynasticCuneiform::CuneiformSignBahar2TimesNi),
+            '𒒆' => Ok(EarlyDynasticCuneiform::CuneiformSignBahar2TimesZa),
+            '𒒇' => Ok(EarlyDynasticCuneiform::CuneiformSignBuOverBuTimesNa2),
+            '𒒈' => Ok(EarlyDynasticCuneiform::CuneiformSignDaTimesTak4),
+            '𒒉' => Ok(EarlyDynasticCuneiform::CuneiformSignDagTimesKur),
+            '𒒊' => Ok(EarlyDynasticCuneiform::CuneiformSignDimTimesIgi),
+            '𒒋' => Ok(EarlyDynasticCuneiform::CuneiformSignDimTimesUUU),
+            '𒒌' => Ok(EarlyDynasticCuneiform::CuneiformSignDim2TimesUd),
+            '𒒍' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesAnshe),
+            '𒒎' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesAsh),
+            '𒒏' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesAshAtLeft),
+            '𒒐' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesDin),
+            '𒒑' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesDun),
+            '𒒒' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesErin2),
+            '𒒓' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesGa),
+            '𒒔' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesGi),
+            '𒒕' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesGir2Gunu),
+            '𒒖' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesGish),
+            '𒒗' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesHa),
+            '𒒘' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesHi),
+            '𒒙' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesIgiGunu),
+            '𒒚' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesKaskal),
+            '𒒛' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesKur),
+            '𒒜' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesKushu2),
+            '𒒝' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesKushu2PlusKaskal),
+            '𒒞' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesLakDash020),
+            '𒒟' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesLam),
+            '𒒠' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesLamTimesKur),
+            '𒒡' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesLuhPlusGish),
+            '𒒢' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesMash),
+            '𒒣' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesMes),
+            '𒒤' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesMi),
+            '𒒥' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesNi),
+            '𒒦' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesPi),
+            '𒒧' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesShe),
+            '𒒨' => Ok(EarlyDynasticCuneiform::CuneiformSignDugTimesSiGunu),
+            '𒒩' => Ok(EarlyDynasticCuneiform::CuneiformSignE2TimesKur),
+            '𒒪' => Ok(EarlyDynasticCuneiform::CuneiformSignE2TimesPap),
+            '𒒫' => Ok(EarlyDynasticCuneiform::CuneiformSignErin2X),
+            '𒒬' => Ok(EarlyDynasticCuneiform::CuneiformSignEsh2CrossingEsh2),
+            '𒒭' => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesAsh),
+            '𒒮' => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesHi),
+            '𒒯' => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesIgiGunu),
+            '𒒰' => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesLa),
+            '𒒱' => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesLal),
+            '𒒲' => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesMe),
+            '𒒳' => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesMes),
+            '𒒴' => Ok(EarlyDynasticCuneiform::CuneiformSignEzenSheshigTimesSu),
+            '𒒵' => Ok(EarlyDynasticCuneiform::CuneiformSignEzenTimesSu),
+            '𒒶' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesBahar2),
+            '𒒷' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesDimGunu),
+            '𒒸' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesDugTimesIgiGunu),
+            '𒒹' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesDugTimesKaskal),
+            '𒒺' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesEren),
+            '𒒻' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesGa),
+            '𒒼' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesGarPlusDi),
+            '𒒽' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesGarPlusNe),
+            '𒒾' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesHaPlusA),
+            '𒒿' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesKushu2PlusKaskal),
+            '𒓀' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesLam),
+            '𒓁' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesLamTimesKur),
+            '𒓂' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesLuh),
+            '𒓃' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesMush),
+            '𒓄' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesNe),
+            '𒓅' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesNePlusE2),
+            '𒓆' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesNePlusGi),
+            '𒓇' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesShim),
+            '𒓈' => Ok(EarlyDynasticCuneiform::CuneiformSignGa2TimesZiz2),
+            '𒓉' => Ok(EarlyDynasticCuneiform::CuneiformSignGabaRotatedNinetyDegrees),
+            '𒓊' => Ok(EarlyDynasticCuneiform::CuneiformSignGeshtinTimesU),
+            '𒓋' => Ok(EarlyDynasticCuneiform::CuneiformSignGishTimesGishCrossingGish),
+            '𒓌' => Ok(EarlyDynasticCuneiform::CuneiformSignGu2TimesIgiGunu),
+            '𒓍' => Ok(EarlyDynasticCuneiform::CuneiformSignGudPlusGishTimesTak4),
+            '𒓎' => Ok(EarlyDynasticCuneiform::CuneiformSignHaTenuGunu),
+            '𒓏' => Ok(EarlyDynasticCuneiform::CuneiformSignHiTimesAshOverHiTimesAsh),
+            '𒓐' => Ok(EarlyDynasticCuneiform::CuneiformSignKaTimesBu),
+            '𒓑' => Ok(EarlyDynasticCuneiform::CuneiformSignKaTimesKa),
+            '𒓒' => Ok(EarlyDynasticCuneiform::CuneiformSignKaTimesUUU),
+            '𒓓' => Ok(EarlyDynasticCuneiform::CuneiformSignKaTimesUr),
+            '𒓔' => Ok(EarlyDynasticCuneiform::CuneiformSignLagabTimesZuOverZu),
+            '𒓕' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash003),
+            '𒓖' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash021),
+            '𒓗' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash025),
+            '𒓘' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash030),
+            '𒓙' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash050),
+            '𒓚' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash051),
+            '𒓛' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash062),
+            '𒓜' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash079OverLakDash079Gunu),
+            '𒓝' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash080),
+            '𒓞' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash081OverLakDash081),
+            '𒓟' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash092),
+            '𒓠' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash130),
+            '𒓡' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash142),
+            '𒓢' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash210),
+            '𒓣' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash219),
+            '𒓤' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash220),
+            '𒓥' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash225),
+            '𒓦' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash228),
+            '𒓧' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash238),
+            '𒓨' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash265),
+            '𒓩' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash266),
+            '𒓪' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash343),
+            '𒓫' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash347),
+            '𒓬' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash348),
+            '𒓭' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash383),
+            '𒓮' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash384),
+            '𒓯' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash390),
+            '𒓰' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash441),
+            '𒓱' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449),
+            '𒓲' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesGu),
+            '𒓳' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesIgi),
+            '𒓴' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesPapPlusLu3),
+            '𒓵' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesPapPlusPapPlusLu3),
+            '𒓶' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash449TimesU2PlusBa),
+            '𒓷' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash450),
+            '𒓸' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash457),
+            '𒓹' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash470),
+            '𒓺' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash483),
+            '𒓻' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash490),
+            '𒓼' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash492),
+            '𒓽' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash493),
+            '𒓾' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash495),
+            '𒓿' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash550),
+            '𒔀' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash608),
+            '𒔁' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617),
+            '𒔂' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesAsh),
+            '𒔃' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesBad),
+            '𒔄' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesDun3GunuGunu),
+            '𒔅' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesKu3),
+            '𒔆' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesLa),
+            '𒔇' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesTar),
+            '𒔈' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesTe),
+            '𒔉' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesU2),
+            '𒔊' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesUd),
+            '𒔋' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash617TimesUruda),
+            '𒔌' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash636),
+            '𒔍' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648),
+            '𒔎' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesDub),
+            '𒔏' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesGa),
+            '𒔐' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesIgi),
+            '𒔑' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesIgiGunu),
+            '𒔒' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesNi),
+            '𒔓' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesPapPlusPapPlusLu3),
+            '𒔔' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesSheshPlusKi),
+            '𒔕' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesUd),
+            '𒔖' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash648TimesUruda),
+            '𒔗' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash724),
+            '𒔘' => Ok(EarlyDynasticCuneiform::CuneiformSignLakDash749),
+            '𒔙' => Ok(EarlyDynasticCuneiform::CuneiformSignLu2GunuTimesAsh),
+            '𒔚' => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesDish),
+            '𒔛' => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesHal),
+            '𒔜' => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesPap),
+            '𒔝' => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesPapPlusPapPlusLu3),
+            '𒔞' => Ok(EarlyDynasticCuneiform::CuneiformSignLu2TimesTak4),
+            '𒔟' => Ok(EarlyDynasticCuneiform::CuneiformSignMiPlusZa7),
+            '𒔠' => Ok(EarlyDynasticCuneiform::CuneiformSignMushOverMushTimesGa),
+            '𒔡' => Ok(EarlyDynasticCuneiform::CuneiformSignMushOverMushTimesKak),
+            '𒔢' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesDimGunu),
+            '𒔣' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesGish),
+            '𒔤' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesGul),
+            '𒔥' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesHi),
+            '𒔦' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesKesh2),
+            '𒔧' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesLakDash050),
+            '𒔨' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesMash),
+            '𒔩' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesPapPlusPap),
+            '𒔪' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesU),
+            '𒔫' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesUPlusU),
+            '𒔬' => Ok(EarlyDynasticCuneiform::CuneiformSignNinda2TimesUruda),
+            '𒔭' => Ok(EarlyDynasticCuneiform::CuneiformSignSagGunuTimesHa),
+            '𒔮' => Ok(EarlyDynasticCuneiform::CuneiformSignSagTimesEn),
+            '𒔯' => Ok(EarlyDynasticCuneiform::CuneiformSignSagTimesSheAtLeft),
+            '𒔰' => Ok(EarlyDynasticCuneiform::CuneiformSignSagTimesTak4),
+            '𒔱' => Ok(EarlyDynasticCuneiform::CuneiformSignSha6Tenu),
+            '𒔲' => Ok(EarlyDynasticCuneiform::CuneiformSignSheOverShe),
+            '𒔳' => Ok(EarlyDynasticCuneiform::CuneiformSignShePlusHub2),
+            '𒔴' => Ok(EarlyDynasticCuneiform::CuneiformSignShePlusNam2),
+            '𒔵' => Ok(EarlyDynasticCuneiform::CuneiformSignShePlusSar),
+            '𒔶' => Ok(EarlyDynasticCuneiform::CuneiformSignShu2PlusDugTimesNi),
+            '𒔷' => Ok(EarlyDynasticCuneiform::CuneiformSignShu2PlusE2TimesAn),
+            '𒔸' => Ok(EarlyDynasticCuneiform::CuneiformSignSiTimesTak4),
+            '𒔹' => Ok(EarlyDynasticCuneiform::CuneiformSignTak4PlusSag),
+            '𒔺' => Ok(EarlyDynasticCuneiform::CuneiformSignTumTimesGan2Tenu),
+            '𒔻' => Ok(EarlyDynasticCuneiform::CuneiformSignTumTimesThreeDish),
+            '𒔼' => Ok(EarlyDynasticCuneiform::CuneiformSignUr2Inverted),
+            '𒔽' => Ok(EarlyDynasticCuneiform::CuneiformSignUr2TimesUd),
+            '𒔾' => Ok(EarlyDynasticCuneiform::CuneiformSignUruTimesDara3),
+            '𒔿' => Ok(EarlyDynasticCuneiform::CuneiformSignUruTimesLakDash668),
+            '𒕀' => Ok(EarlyDynasticCuneiform::CuneiformSignUruTimesLu3),
+            '𒕁' => Ok(EarlyDynasticCuneiform::CuneiformSignZa7),
+            '𒕂' => Ok(EarlyDynasticCuneiform::CuneiformSignZuOverZuPlusSar),
+            '𒕃' => Ok(EarlyDynasticCuneiform::CuneiformSignZu5TimesThreeDishTenu),
             _ => Err(()),
         }
     }

@@ -1,68 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{aa60}: 'ꩠ'
-    pub const MYANMAR_LETTER_KHAMTI_GA: char = 'ꩠ';
-    /// \u{aa61}: 'ꩡ'
-    pub const MYANMAR_LETTER_KHAMTI_CA: char = 'ꩡ';
-    /// \u{aa62}: 'ꩢ'
-    pub const MYANMAR_LETTER_KHAMTI_CHA: char = 'ꩢ';
-    /// \u{aa63}: 'ꩣ'
-    pub const MYANMAR_LETTER_KHAMTI_JA: char = 'ꩣ';
-    /// \u{aa64}: 'ꩤ'
-    pub const MYANMAR_LETTER_KHAMTI_JHA: char = 'ꩤ';
-    /// \u{aa65}: 'ꩥ'
-    pub const MYANMAR_LETTER_KHAMTI_NYA: char = 'ꩥ';
-    /// \u{aa66}: 'ꩦ'
-    pub const MYANMAR_LETTER_KHAMTI_TTA: char = 'ꩦ';
-    /// \u{aa67}: 'ꩧ'
-    pub const MYANMAR_LETTER_KHAMTI_TTHA: char = 'ꩧ';
-    /// \u{aa68}: 'ꩨ'
-    pub const MYANMAR_LETTER_KHAMTI_DDA: char = 'ꩨ';
-    /// \u{aa69}: 'ꩩ'
-    pub const MYANMAR_LETTER_KHAMTI_DDHA: char = 'ꩩ';
-    /// \u{aa6a}: 'ꩪ'
-    pub const MYANMAR_LETTER_KHAMTI_DHA: char = 'ꩪ';
-    /// \u{aa6b}: 'ꩫ'
-    pub const MYANMAR_LETTER_KHAMTI_NA: char = 'ꩫ';
-    /// \u{aa6c}: 'ꩬ'
-    pub const MYANMAR_LETTER_KHAMTI_SA: char = 'ꩬ';
-    /// \u{aa6d}: 'ꩭ'
-    pub const MYANMAR_LETTER_KHAMTI_HA: char = 'ꩭ';
-    /// \u{aa6e}: 'ꩮ'
-    pub const MYANMAR_LETTER_KHAMTI_HHA: char = 'ꩮ';
-    /// \u{aa6f}: 'ꩯ'
-    pub const MYANMAR_LETTER_KHAMTI_FA: char = 'ꩯ';
-    /// \u{aa70}: 'ꩰ'
-    pub const MYANMAR_MODIFIER_LETTER_KHAMTI_REDUPLICATION: char = 'ꩰ';
-    /// \u{aa71}: 'ꩱ'
-    pub const MYANMAR_LETTER_KHAMTI_XA: char = 'ꩱ';
-    /// \u{aa72}: 'ꩲ'
-    pub const MYANMAR_LETTER_KHAMTI_ZA: char = 'ꩲ';
-    /// \u{aa73}: 'ꩳ'
-    pub const MYANMAR_LETTER_KHAMTI_RA: char = 'ꩳ';
-    /// \u{aa74}: 'ꩴ'
-    pub const MYANMAR_LOGOGRAM_KHAMTI_OAY: char = 'ꩴ';
-    /// \u{aa75}: 'ꩵ'
-    pub const MYANMAR_LOGOGRAM_KHAMTI_QN: char = 'ꩵ';
-    /// \u{aa76}: 'ꩶ'
-    pub const MYANMAR_LOGOGRAM_KHAMTI_HM: char = 'ꩶ';
-    /// \u{aa77}: '꩷'
-    pub const MYANMAR_SYMBOL_AITON_EXCLAMATION: char = '꩷';
-    /// \u{aa78}: '꩸'
-    pub const MYANMAR_SYMBOL_AITON_ONE: char = '꩸';
-    /// \u{aa79}: '꩹'
-    pub const MYANMAR_SYMBOL_AITON_TWO: char = '꩹';
-    /// \u{aa7a}: 'ꩺ'
-    pub const MYANMAR_LETTER_AITON_RA: char = 'ꩺ';
-    /// \u{aa7b}: 'ꩻ'
-    pub const MYANMAR_SIGN_PAO_KAREN_TONE: char = 'ꩻ';
-    /// \u{aa7c}: 'ꩼ'
-    pub const MYANMAR_SIGN_TAI_LAING_TONE_DASH_2: char = 'ꩼ';
-    /// \u{aa7d}: 'ꩽ'
-    pub const MYANMAR_SIGN_TAI_LAING_TONE_DASH_5: char = 'ꩽ';
-    /// \u{aa7e}: 'ꩾ'
-    pub const MYANMAR_LETTER_SHWE_PALAUNG_CHA: char = 'ꩾ';
-}
 
 /// An enum to represent all characters in the MyanmarExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -133,39 +68,38 @@ pub enum MyanmarExtendedA {
 
 impl Into<char> for MyanmarExtendedA {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MyanmarExtendedA::MyanmarLetterKhamtiGa => MYANMAR_LETTER_KHAMTI_GA,
-            MyanmarExtendedA::MyanmarLetterKhamtiCa => MYANMAR_LETTER_KHAMTI_CA,
-            MyanmarExtendedA::MyanmarLetterKhamtiCha => MYANMAR_LETTER_KHAMTI_CHA,
-            MyanmarExtendedA::MyanmarLetterKhamtiJa => MYANMAR_LETTER_KHAMTI_JA,
-            MyanmarExtendedA::MyanmarLetterKhamtiJha => MYANMAR_LETTER_KHAMTI_JHA,
-            MyanmarExtendedA::MyanmarLetterKhamtiNya => MYANMAR_LETTER_KHAMTI_NYA,
-            MyanmarExtendedA::MyanmarLetterKhamtiTta => MYANMAR_LETTER_KHAMTI_TTA,
-            MyanmarExtendedA::MyanmarLetterKhamtiTtha => MYANMAR_LETTER_KHAMTI_TTHA,
-            MyanmarExtendedA::MyanmarLetterKhamtiDda => MYANMAR_LETTER_KHAMTI_DDA,
-            MyanmarExtendedA::MyanmarLetterKhamtiDdha => MYANMAR_LETTER_KHAMTI_DDHA,
-            MyanmarExtendedA::MyanmarLetterKhamtiDha => MYANMAR_LETTER_KHAMTI_DHA,
-            MyanmarExtendedA::MyanmarLetterKhamtiNa => MYANMAR_LETTER_KHAMTI_NA,
-            MyanmarExtendedA::MyanmarLetterKhamtiSa => MYANMAR_LETTER_KHAMTI_SA,
-            MyanmarExtendedA::MyanmarLetterKhamtiHa => MYANMAR_LETTER_KHAMTI_HA,
-            MyanmarExtendedA::MyanmarLetterKhamtiHha => MYANMAR_LETTER_KHAMTI_HHA,
-            MyanmarExtendedA::MyanmarLetterKhamtiFa => MYANMAR_LETTER_KHAMTI_FA,
-            MyanmarExtendedA::MyanmarModifierLetterKhamtiReduplication => MYANMAR_MODIFIER_LETTER_KHAMTI_REDUPLICATION,
-            MyanmarExtendedA::MyanmarLetterKhamtiXa => MYANMAR_LETTER_KHAMTI_XA,
-            MyanmarExtendedA::MyanmarLetterKhamtiZa => MYANMAR_LETTER_KHAMTI_ZA,
-            MyanmarExtendedA::MyanmarLetterKhamtiRa => MYANMAR_LETTER_KHAMTI_RA,
-            MyanmarExtendedA::MyanmarLogogramKhamtiOay => MYANMAR_LOGOGRAM_KHAMTI_OAY,
-            MyanmarExtendedA::MyanmarLogogramKhamtiQn => MYANMAR_LOGOGRAM_KHAMTI_QN,
-            MyanmarExtendedA::MyanmarLogogramKhamtiHm => MYANMAR_LOGOGRAM_KHAMTI_HM,
-            MyanmarExtendedA::MyanmarSymbolAitonExclamation => MYANMAR_SYMBOL_AITON_EXCLAMATION,
-            MyanmarExtendedA::MyanmarSymbolAitonOne => MYANMAR_SYMBOL_AITON_ONE,
-            MyanmarExtendedA::MyanmarSymbolAitonTwo => MYANMAR_SYMBOL_AITON_TWO,
-            MyanmarExtendedA::MyanmarLetterAitonRa => MYANMAR_LETTER_AITON_RA,
-            MyanmarExtendedA::MyanmarSignPaoKarenTone => MYANMAR_SIGN_PAO_KAREN_TONE,
-            MyanmarExtendedA::MyanmarSignTaiLaingToneDash2 => MYANMAR_SIGN_TAI_LAING_TONE_DASH_2,
-            MyanmarExtendedA::MyanmarSignTaiLaingToneDash5 => MYANMAR_SIGN_TAI_LAING_TONE_DASH_5,
-            MyanmarExtendedA::MyanmarLetterShwePalaungCha => MYANMAR_LETTER_SHWE_PALAUNG_CHA,
+            MyanmarExtendedA::MyanmarLetterKhamtiGa => 'ꩠ',
+            MyanmarExtendedA::MyanmarLetterKhamtiCa => 'ꩡ',
+            MyanmarExtendedA::MyanmarLetterKhamtiCha => 'ꩢ',
+            MyanmarExtendedA::MyanmarLetterKhamtiJa => 'ꩣ',
+            MyanmarExtendedA::MyanmarLetterKhamtiJha => 'ꩤ',
+            MyanmarExtendedA::MyanmarLetterKhamtiNya => 'ꩥ',
+            MyanmarExtendedA::MyanmarLetterKhamtiTta => 'ꩦ',
+            MyanmarExtendedA::MyanmarLetterKhamtiTtha => 'ꩧ',
+            MyanmarExtendedA::MyanmarLetterKhamtiDda => 'ꩨ',
+            MyanmarExtendedA::MyanmarLetterKhamtiDdha => 'ꩩ',
+            MyanmarExtendedA::MyanmarLetterKhamtiDha => 'ꩪ',
+            MyanmarExtendedA::MyanmarLetterKhamtiNa => 'ꩫ',
+            MyanmarExtendedA::MyanmarLetterKhamtiSa => 'ꩬ',
+            MyanmarExtendedA::MyanmarLetterKhamtiHa => 'ꩭ',
+            MyanmarExtendedA::MyanmarLetterKhamtiHha => 'ꩮ',
+            MyanmarExtendedA::MyanmarLetterKhamtiFa => 'ꩯ',
+            MyanmarExtendedA::MyanmarModifierLetterKhamtiReduplication => 'ꩰ',
+            MyanmarExtendedA::MyanmarLetterKhamtiXa => 'ꩱ',
+            MyanmarExtendedA::MyanmarLetterKhamtiZa => 'ꩲ',
+            MyanmarExtendedA::MyanmarLetterKhamtiRa => 'ꩳ',
+            MyanmarExtendedA::MyanmarLogogramKhamtiOay => 'ꩴ',
+            MyanmarExtendedA::MyanmarLogogramKhamtiQn => 'ꩵ',
+            MyanmarExtendedA::MyanmarLogogramKhamtiHm => 'ꩶ',
+            MyanmarExtendedA::MyanmarSymbolAitonExclamation => '꩷',
+            MyanmarExtendedA::MyanmarSymbolAitonOne => '꩸',
+            MyanmarExtendedA::MyanmarSymbolAitonTwo => '꩹',
+            MyanmarExtendedA::MyanmarLetterAitonRa => 'ꩺ',
+            MyanmarExtendedA::MyanmarSignPaoKarenTone => 'ꩻ',
+            MyanmarExtendedA::MyanmarSignTaiLaingToneDash2 => 'ꩼ',
+            MyanmarExtendedA::MyanmarSignTaiLaingToneDash5 => 'ꩽ',
+            MyanmarExtendedA::MyanmarLetterShwePalaungCha => 'ꩾ',
         }
     }
 }
@@ -173,39 +107,38 @@ impl Into<char> for MyanmarExtendedA {
 impl std::convert::TryFrom<char> for MyanmarExtendedA {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            MYANMAR_LETTER_KHAMTI_GA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiGa),
-            MYANMAR_LETTER_KHAMTI_CA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiCa),
-            MYANMAR_LETTER_KHAMTI_CHA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiCha),
-            MYANMAR_LETTER_KHAMTI_JA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiJa),
-            MYANMAR_LETTER_KHAMTI_JHA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiJha),
-            MYANMAR_LETTER_KHAMTI_NYA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiNya),
-            MYANMAR_LETTER_KHAMTI_TTA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiTta),
-            MYANMAR_LETTER_KHAMTI_TTHA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiTtha),
-            MYANMAR_LETTER_KHAMTI_DDA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiDda),
-            MYANMAR_LETTER_KHAMTI_DDHA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiDdha),
-            MYANMAR_LETTER_KHAMTI_DHA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiDha),
-            MYANMAR_LETTER_KHAMTI_NA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiNa),
-            MYANMAR_LETTER_KHAMTI_SA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiSa),
-            MYANMAR_LETTER_KHAMTI_HA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiHa),
-            MYANMAR_LETTER_KHAMTI_HHA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiHha),
-            MYANMAR_LETTER_KHAMTI_FA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiFa),
-            MYANMAR_MODIFIER_LETTER_KHAMTI_REDUPLICATION => Ok(MyanmarExtendedA::MyanmarModifierLetterKhamtiReduplication),
-            MYANMAR_LETTER_KHAMTI_XA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiXa),
-            MYANMAR_LETTER_KHAMTI_ZA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiZa),
-            MYANMAR_LETTER_KHAMTI_RA => Ok(MyanmarExtendedA::MyanmarLetterKhamtiRa),
-            MYANMAR_LOGOGRAM_KHAMTI_OAY => Ok(MyanmarExtendedA::MyanmarLogogramKhamtiOay),
-            MYANMAR_LOGOGRAM_KHAMTI_QN => Ok(MyanmarExtendedA::MyanmarLogogramKhamtiQn),
-            MYANMAR_LOGOGRAM_KHAMTI_HM => Ok(MyanmarExtendedA::MyanmarLogogramKhamtiHm),
-            MYANMAR_SYMBOL_AITON_EXCLAMATION => Ok(MyanmarExtendedA::MyanmarSymbolAitonExclamation),
-            MYANMAR_SYMBOL_AITON_ONE => Ok(MyanmarExtendedA::MyanmarSymbolAitonOne),
-            MYANMAR_SYMBOL_AITON_TWO => Ok(MyanmarExtendedA::MyanmarSymbolAitonTwo),
-            MYANMAR_LETTER_AITON_RA => Ok(MyanmarExtendedA::MyanmarLetterAitonRa),
-            MYANMAR_SIGN_PAO_KAREN_TONE => Ok(MyanmarExtendedA::MyanmarSignPaoKarenTone),
-            MYANMAR_SIGN_TAI_LAING_TONE_DASH_2 => Ok(MyanmarExtendedA::MyanmarSignTaiLaingToneDash2),
-            MYANMAR_SIGN_TAI_LAING_TONE_DASH_5 => Ok(MyanmarExtendedA::MyanmarSignTaiLaingToneDash5),
-            MYANMAR_LETTER_SHWE_PALAUNG_CHA => Ok(MyanmarExtendedA::MyanmarLetterShwePalaungCha),
+            'ꩠ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiGa),
+            'ꩡ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiCa),
+            'ꩢ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiCha),
+            'ꩣ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiJa),
+            'ꩤ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiJha),
+            'ꩥ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiNya),
+            'ꩦ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiTta),
+            'ꩧ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiTtha),
+            'ꩨ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiDda),
+            'ꩩ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiDdha),
+            'ꩪ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiDha),
+            'ꩫ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiNa),
+            'ꩬ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiSa),
+            'ꩭ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiHa),
+            'ꩮ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiHha),
+            'ꩯ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiFa),
+            'ꩰ' => Ok(MyanmarExtendedA::MyanmarModifierLetterKhamtiReduplication),
+            'ꩱ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiXa),
+            'ꩲ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiZa),
+            'ꩳ' => Ok(MyanmarExtendedA::MyanmarLetterKhamtiRa),
+            'ꩴ' => Ok(MyanmarExtendedA::MyanmarLogogramKhamtiOay),
+            'ꩵ' => Ok(MyanmarExtendedA::MyanmarLogogramKhamtiQn),
+            'ꩶ' => Ok(MyanmarExtendedA::MyanmarLogogramKhamtiHm),
+            '꩷' => Ok(MyanmarExtendedA::MyanmarSymbolAitonExclamation),
+            '꩸' => Ok(MyanmarExtendedA::MyanmarSymbolAitonOne),
+            '꩹' => Ok(MyanmarExtendedA::MyanmarSymbolAitonTwo),
+            'ꩺ' => Ok(MyanmarExtendedA::MyanmarLetterAitonRa),
+            'ꩻ' => Ok(MyanmarExtendedA::MyanmarSignPaoKarenTone),
+            'ꩼ' => Ok(MyanmarExtendedA::MyanmarSignTaiLaingToneDash2),
+            'ꩽ' => Ok(MyanmarExtendedA::MyanmarSignTaiLaingToneDash5),
+            'ꩾ' => Ok(MyanmarExtendedA::MyanmarLetterShwePalaungCha),
             _ => Err(()),
         }
     }

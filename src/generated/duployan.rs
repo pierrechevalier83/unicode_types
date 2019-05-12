@@ -1,290 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1bc00}: '𛰀'
-    pub const LETTER_H: char = '𛰀';
-    /// \u{1bc01}: '𛰁'
-    pub const LETTER_X: char = '𛰁';
-    /// \u{1bc02}: '𛰂'
-    pub const LETTER_P: char = '𛰂';
-    /// \u{1bc03}: '𛰃'
-    pub const LETTER_T: char = '𛰃';
-    /// \u{1bc04}: '𛰄'
-    pub const LETTER_F: char = '𛰄';
-    /// \u{1bc05}: '𛰅'
-    pub const LETTER_K: char = '𛰅';
-    /// \u{1bc06}: '𛰆'
-    pub const LETTER_L: char = '𛰆';
-    /// \u{1bc07}: '𛰇'
-    pub const LETTER_B: char = '𛰇';
-    /// \u{1bc08}: '𛰈'
-    pub const LETTER_D: char = '𛰈';
-    /// \u{1bc09}: '𛰉'
-    pub const LETTER_V: char = '𛰉';
-    /// \u{1bc0a}: '𛰊'
-    pub const LETTER_G: char = '𛰊';
-    /// \u{1bc0b}: '𛰋'
-    pub const LETTER_R: char = '𛰋';
-    /// \u{1bc0c}: '𛰌'
-    pub const LETTER_P_N: char = '𛰌';
-    /// \u{1bc0d}: '𛰍'
-    pub const LETTER_D_S: char = '𛰍';
-    /// \u{1bc0e}: '𛰎'
-    pub const LETTER_F_N: char = '𛰎';
-    /// \u{1bc0f}: '𛰏'
-    pub const LETTER_K_M: char = '𛰏';
-    /// \u{1bc10}: '𛰐'
-    pub const LETTER_R_S: char = '𛰐';
-    /// \u{1bc11}: '𛰑'
-    pub const LETTER_TH: char = '𛰑';
-    /// \u{1bc12}: '𛰒'
-    pub const LETTER_SLOAN_DH: char = '𛰒';
-    /// \u{1bc13}: '𛰓'
-    pub const LETTER_DH: char = '𛰓';
-    /// \u{1bc14}: '𛰔'
-    pub const LETTER_KK: char = '𛰔';
-    /// \u{1bc15}: '𛰕'
-    pub const LETTER_SLOAN_J: char = '𛰕';
-    /// \u{1bc16}: '𛰖'
-    pub const LETTER_HL: char = '𛰖';
-    /// \u{1bc17}: '𛰗'
-    pub const LETTER_LH: char = '𛰗';
-    /// \u{1bc18}: '𛰘'
-    pub const LETTER_RH: char = '𛰘';
-    /// \u{1bc19}: '𛰙'
-    pub const LETTER_M: char = '𛰙';
-    /// \u{1bc1a}: '𛰚'
-    pub const LETTER_N: char = '𛰚';
-    /// \u{1bc1b}: '𛰛'
-    pub const LETTER_J: char = '𛰛';
-    /// \u{1bc1c}: '𛰜'
-    pub const LETTER_S: char = '𛰜';
-    /// \u{1bc1d}: '𛰝'
-    pub const LETTER_M_N: char = '𛰝';
-    /// \u{1bc1e}: '𛰞'
-    pub const LETTER_N_M: char = '𛰞';
-    /// \u{1bc1f}: '𛰟'
-    pub const LETTER_J_M: char = '𛰟';
-    /// \u{1bc20}: '𛰠'
-    pub const LETTER_S_J: char = '𛰠';
-    /// \u{1bc21}: '𛰡'
-    pub const LETTER_M_WITH_DOT: char = '𛰡';
-    /// \u{1bc22}: '𛰢'
-    pub const LETTER_N_WITH_DOT: char = '𛰢';
-    /// \u{1bc23}: '𛰣'
-    pub const LETTER_J_WITH_DOT: char = '𛰣';
-    /// \u{1bc24}: '𛰤'
-    pub const LETTER_J_WITH_DOTS_INSIDE_AND_ABOVE: char = '𛰤';
-    /// \u{1bc25}: '𛰥'
-    pub const LETTER_S_WITH_DOT: char = '𛰥';
-    /// \u{1bc26}: '𛰦'
-    pub const LETTER_S_WITH_DOT_BELOW: char = '𛰦';
-    /// \u{1bc27}: '𛰧'
-    pub const LETTER_M_S: char = '𛰧';
-    /// \u{1bc28}: '𛰨'
-    pub const LETTER_N_S: char = '𛰨';
-    /// \u{1bc29}: '𛰩'
-    pub const LETTER_J_S: char = '𛰩';
-    /// \u{1bc2a}: '𛰪'
-    pub const LETTER_S_S: char = '𛰪';
-    /// \u{1bc2b}: '𛰫'
-    pub const LETTER_M_N_S: char = '𛰫';
-    /// \u{1bc2c}: '𛰬'
-    pub const LETTER_N_M_S: char = '𛰬';
-    /// \u{1bc2d}: '𛰭'
-    pub const LETTER_J_M_S: char = '𛰭';
-    /// \u{1bc2e}: '𛰮'
-    pub const LETTER_S_J_S: char = '𛰮';
-    /// \u{1bc2f}: '𛰯'
-    pub const LETTER_J_S_WITH_DOT: char = '𛰯';
-    /// \u{1bc30}: '𛰰'
-    pub const LETTER_J_N: char = '𛰰';
-    /// \u{1bc31}: '𛰱'
-    pub const LETTER_J_N_S: char = '𛰱';
-    /// \u{1bc32}: '𛰲'
-    pub const LETTER_S_T: char = '𛰲';
-    /// \u{1bc33}: '𛰳'
-    pub const LETTER_S_T_R: char = '𛰳';
-    /// \u{1bc34}: '𛰴'
-    pub const LETTER_S_P: char = '𛰴';
-    /// \u{1bc35}: '𛰵'
-    pub const LETTER_S_P_R: char = '𛰵';
-    /// \u{1bc36}: '𛰶'
-    pub const LETTER_T_S: char = '𛰶';
-    /// \u{1bc37}: '𛰷'
-    pub const LETTER_T_R_S: char = '𛰷';
-    /// \u{1bc38}: '𛰸'
-    pub const LETTER_W: char = '𛰸';
-    /// \u{1bc39}: '𛰹'
-    pub const LETTER_WH: char = '𛰹';
-    /// \u{1bc3a}: '𛰺'
-    pub const LETTER_W_R: char = '𛰺';
-    /// \u{1bc3b}: '𛰻'
-    pub const LETTER_S_N: char = '𛰻';
-    /// \u{1bc3c}: '𛰼'
-    pub const LETTER_S_M: char = '𛰼';
-    /// \u{1bc3d}: '𛰽'
-    pub const LETTER_K_R_S: char = '𛰽';
-    /// \u{1bc3e}: '𛰾'
-    pub const LETTER_G_R_S: char = '𛰾';
-    /// \u{1bc3f}: '𛰿'
-    pub const LETTER_S_K: char = '𛰿';
-    /// \u{1bc40}: '𛱀'
-    pub const LETTER_S_K_R: char = '𛱀';
-    /// \u{1bc41}: '𛱁'
-    pub const LETTER_A: char = '𛱁';
-    /// \u{1bc42}: '𛱂'
-    pub const LETTER_SLOAN_OW: char = '𛱂';
-    /// \u{1bc43}: '𛱃'
-    pub const LETTER_OA: char = '𛱃';
-    /// \u{1bc44}: '𛱄'
-    pub const LETTER_O: char = '𛱄';
-    /// \u{1bc45}: '𛱅'
-    pub const LETTER_AOU: char = '𛱅';
-    /// \u{1bc46}: '𛱆'
-    pub const LETTER_I: char = '𛱆';
-    /// \u{1bc47}: '𛱇'
-    pub const LETTER_E: char = '𛱇';
-    /// \u{1bc48}: '𛱈'
-    pub const LETTER_IE: char = '𛱈';
-    /// \u{1bc49}: '𛱉'
-    pub const LETTER_SHORT_I: char = '𛱉';
-    /// \u{1bc4a}: '𛱊'
-    pub const LETTER_UI: char = '𛱊';
-    /// \u{1bc4b}: '𛱋'
-    pub const LETTER_EE: char = '𛱋';
-    /// \u{1bc4c}: '𛱌'
-    pub const LETTER_SLOAN_EH: char = '𛱌';
-    /// \u{1bc4d}: '𛱍'
-    pub const LETTER_ROMANIAN_I: char = '𛱍';
-    /// \u{1bc4e}: '𛱎'
-    pub const LETTER_SLOAN_EE: char = '𛱎';
-    /// \u{1bc4f}: '𛱏'
-    pub const LETTER_LONG_I: char = '𛱏';
-    /// \u{1bc50}: '𛱐'
-    pub const LETTER_YE: char = '𛱐';
-    /// \u{1bc51}: '𛱑'
-    pub const LETTER_U: char = '𛱑';
-    /// \u{1bc52}: '𛱒'
-    pub const LETTER_EU: char = '𛱒';
-    /// \u{1bc53}: '𛱓'
-    pub const LETTER_XW: char = '𛱓';
-    /// \u{1bc54}: '𛱔'
-    pub const LETTER_U_N: char = '𛱔';
-    /// \u{1bc55}: '𛱕'
-    pub const LETTER_LONG_U: char = '𛱕';
-    /// \u{1bc56}: '𛱖'
-    pub const LETTER_ROMANIAN_U: char = '𛱖';
-    /// \u{1bc57}: '𛱗'
-    pub const LETTER_UH: char = '𛱗';
-    /// \u{1bc58}: '𛱘'
-    pub const LETTER_SLOAN_U: char = '𛱘';
-    /// \u{1bc59}: '𛱙'
-    pub const LETTER_OOH: char = '𛱙';
-    /// \u{1bc5a}: '𛱚'
-    pub const LETTER_OW: char = '𛱚';
-    /// \u{1bc5b}: '𛱛'
-    pub const LETTER_OU: char = '𛱛';
-    /// \u{1bc5c}: '𛱜'
-    pub const LETTER_WA: char = '𛱜';
-    /// \u{1bc5d}: '𛱝'
-    pub const LETTER_WO: char = '𛱝';
-    /// \u{1bc5e}: '𛱞'
-    pub const LETTER_WI: char = '𛱞';
-    /// \u{1bc5f}: '𛱟'
-    pub const LETTER_WEI: char = '𛱟';
-    /// \u{1bc60}: '𛱠'
-    pub const LETTER_WOW: char = '𛱠';
-    /// \u{1bc61}: '𛱡'
-    pub const LETTER_NASAL_U: char = '𛱡';
-    /// \u{1bc62}: '𛱢'
-    pub const LETTER_NASAL_O: char = '𛱢';
-    /// \u{1bc63}: '𛱣'
-    pub const LETTER_NASAL_I: char = '𛱣';
-    /// \u{1bc64}: '𛱤'
-    pub const LETTER_NASAL_A: char = '𛱤';
-    /// \u{1bc65}: '𛱥'
-    pub const LETTER_PERNIN_AN: char = '𛱥';
-    /// \u{1bc66}: '𛱦'
-    pub const LETTER_PERNIN_AM: char = '𛱦';
-    /// \u{1bc67}: '𛱧'
-    pub const LETTER_SLOAN_EN: char = '𛱧';
-    /// \u{1bc68}: '𛱨'
-    pub const LETTER_SLOAN_AN: char = '𛱨';
-    /// \u{1bc69}: '𛱩'
-    pub const LETTER_SLOAN_ON: char = '𛱩';
-    /// \u{1bc6a}: '𛱪'
-    pub const LETTER_VOCALIC_M: char = '𛱪';
-    /// \u{1bc70}: '𛱰'
-    pub const AFFIX_LEFT_HORIZONTAL_SECANT: char = '𛱰';
-    /// \u{1bc71}: '𛱱'
-    pub const AFFIX_MID_HORIZONTAL_SECANT: char = '𛱱';
-    /// \u{1bc72}: '𛱲'
-    pub const AFFIX_RIGHT_HORIZONTAL_SECANT: char = '𛱲';
-    /// \u{1bc73}: '𛱳'
-    pub const AFFIX_LOW_VERTICAL_SECANT: char = '𛱳';
-    /// \u{1bc74}: '𛱴'
-    pub const AFFIX_MID_VERTICAL_SECANT: char = '𛱴';
-    /// \u{1bc75}: '𛱵'
-    pub const AFFIX_HIGH_VERTICAL_SECANT: char = '𛱵';
-    /// \u{1bc76}: '𛱶'
-    pub const AFFIX_ATTACHED_SECANT: char = '𛱶';
-    /// \u{1bc77}: '𛱷'
-    pub const AFFIX_ATTACHED_LEFT_DASH_TO_DASH_RIGHT_SECANT: char = '𛱷';
-    /// \u{1bc78}: '𛱸'
-    pub const AFFIX_ATTACHED_TANGENT: char = '𛱸';
-    /// \u{1bc79}: '𛱹'
-    pub const AFFIX_ATTACHED_TAIL: char = '𛱹';
-    /// \u{1bc7a}: '𛱺'
-    pub const AFFIX_ATTACHED_E_HOOK: char = '𛱺';
-    /// \u{1bc7b}: '𛱻'
-    pub const AFFIX_ATTACHED_I_HOOK: char = '𛱻';
-    /// \u{1bc7c}: '𛱼'
-    pub const AFFIX_ATTACHED_TANGENT_HOOK: char = '𛱼';
-    /// \u{1bc80}: '𛲀'
-    pub const AFFIX_HIGH_ACUTE: char = '𛲀';
-    /// \u{1bc81}: '𛲁'
-    pub const AFFIX_HIGH_TIGHT_ACUTE: char = '𛲁';
-    /// \u{1bc82}: '𛲂'
-    pub const AFFIX_HIGH_GRAVE: char = '𛲂';
-    /// \u{1bc83}: '𛲃'
-    pub const AFFIX_HIGH_LONG_GRAVE: char = '𛲃';
-    /// \u{1bc84}: '𛲄'
-    pub const AFFIX_HIGH_DOT: char = '𛲄';
-    /// \u{1bc85}: '𛲅'
-    pub const AFFIX_HIGH_CIRCLE: char = '𛲅';
-    /// \u{1bc86}: '𛲆'
-    pub const AFFIX_HIGH_LINE: char = '𛲆';
-    /// \u{1bc87}: '𛲇'
-    pub const AFFIX_HIGH_WAVE: char = '𛲇';
-    /// \u{1bc88}: '𛲈'
-    pub const AFFIX_HIGH_VERTICAL: char = '𛲈';
-    /// \u{1bc90}: '𛲐'
-    pub const AFFIX_LOW_ACUTE: char = '𛲐';
-    /// \u{1bc91}: '𛲑'
-    pub const AFFIX_LOW_TIGHT_ACUTE: char = '𛲑';
-    /// \u{1bc92}: '𛲒'
-    pub const AFFIX_LOW_GRAVE: char = '𛲒';
-    /// \u{1bc93}: '𛲓'
-    pub const AFFIX_LOW_LONG_GRAVE: char = '𛲓';
-    /// \u{1bc94}: '𛲔'
-    pub const AFFIX_LOW_DOT: char = '𛲔';
-    /// \u{1bc95}: '𛲕'
-    pub const AFFIX_LOW_CIRCLE: char = '𛲕';
-    /// \u{1bc96}: '𛲖'
-    pub const AFFIX_LOW_LINE: char = '𛲖';
-    /// \u{1bc97}: '𛲗'
-    pub const AFFIX_LOW_WAVE: char = '𛲗';
-    /// \u{1bc98}: '𛲘'
-    pub const AFFIX_LOW_VERTICAL: char = '𛲘';
-    /// \u{1bc99}: '𛲙'
-    pub const AFFIX_LOW_ARROW: char = '𛲙';
-    /// \u{1bc9c}: '𛲜'
-    pub const SIGN_O_WITH_CROSS: char = '𛲜';
-    /// \u{1bc9d}: '𛲝'
-    pub const THICK_LETTER_SELECTOR: char = '𛲝';
-    /// \u{1bc9e}: '𛲞'
-    pub const DOUBLE_MARK: char = '𛲞';
-}
 
 /// An enum to represent all characters in the Duployan block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -577,150 +290,149 @@ pub enum Duployan {
 
 impl Into<char> for Duployan {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Duployan::LetterH => LETTER_H,
-            Duployan::LetterX => LETTER_X,
-            Duployan::LetterP => LETTER_P,
-            Duployan::LetterT => LETTER_T,
-            Duployan::LetterF => LETTER_F,
-            Duployan::LetterK => LETTER_K,
-            Duployan::LetterL => LETTER_L,
-            Duployan::LetterB => LETTER_B,
-            Duployan::LetterD => LETTER_D,
-            Duployan::LetterV => LETTER_V,
-            Duployan::LetterG => LETTER_G,
-            Duployan::LetterR => LETTER_R,
-            Duployan::LetterPN => LETTER_P_N,
-            Duployan::LetterDS => LETTER_D_S,
-            Duployan::LetterFN => LETTER_F_N,
-            Duployan::LetterKM => LETTER_K_M,
-            Duployan::LetterRS => LETTER_R_S,
-            Duployan::LetterTh => LETTER_TH,
-            Duployan::LetterSloanDh => LETTER_SLOAN_DH,
-            Duployan::LetterDh => LETTER_DH,
-            Duployan::LetterKk => LETTER_KK,
-            Duployan::LetterSloanJ => LETTER_SLOAN_J,
-            Duployan::LetterHl => LETTER_HL,
-            Duployan::LetterLh => LETTER_LH,
-            Duployan::LetterRh => LETTER_RH,
-            Duployan::LetterM => LETTER_M,
-            Duployan::LetterN => LETTER_N,
-            Duployan::LetterJ => LETTER_J,
-            Duployan::LetterS => LETTER_S,
-            Duployan::LetterMN => LETTER_M_N,
-            Duployan::LetterNM => LETTER_N_M,
-            Duployan::LetterJM => LETTER_J_M,
-            Duployan::LetterSJ => LETTER_S_J,
-            Duployan::LetterMWithDot => LETTER_M_WITH_DOT,
-            Duployan::LetterNWithDot => LETTER_N_WITH_DOT,
-            Duployan::LetterJWithDot => LETTER_J_WITH_DOT,
-            Duployan::LetterJWithDotsInsideAndAbove => LETTER_J_WITH_DOTS_INSIDE_AND_ABOVE,
-            Duployan::LetterSWithDot => LETTER_S_WITH_DOT,
-            Duployan::LetterSWithDotBelow => LETTER_S_WITH_DOT_BELOW,
-            Duployan::LetterMS => LETTER_M_S,
-            Duployan::LetterNS => LETTER_N_S,
-            Duployan::LetterJS => LETTER_J_S,
-            Duployan::LetterSS => LETTER_S_S,
-            Duployan::LetterMNS => LETTER_M_N_S,
-            Duployan::LetterNMS => LETTER_N_M_S,
-            Duployan::LetterJMS => LETTER_J_M_S,
-            Duployan::LetterSJS => LETTER_S_J_S,
-            Duployan::LetterJSWithDot => LETTER_J_S_WITH_DOT,
-            Duployan::LetterJN => LETTER_J_N,
-            Duployan::LetterJNS => LETTER_J_N_S,
-            Duployan::LetterST => LETTER_S_T,
-            Duployan::LetterSTR => LETTER_S_T_R,
-            Duployan::LetterSP => LETTER_S_P,
-            Duployan::LetterSPR => LETTER_S_P_R,
-            Duployan::LetterTS => LETTER_T_S,
-            Duployan::LetterTRS => LETTER_T_R_S,
-            Duployan::LetterW => LETTER_W,
-            Duployan::LetterWh => LETTER_WH,
-            Duployan::LetterWR => LETTER_W_R,
-            Duployan::LetterSN => LETTER_S_N,
-            Duployan::LetterSM => LETTER_S_M,
-            Duployan::LetterKRS => LETTER_K_R_S,
-            Duployan::LetterGRS => LETTER_G_R_S,
-            Duployan::LetterSK => LETTER_S_K,
-            Duployan::LetterSKR => LETTER_S_K_R,
-            Duployan::LetterA => LETTER_A,
-            Duployan::LetterSloanOw => LETTER_SLOAN_OW,
-            Duployan::LetterOa => LETTER_OA,
-            Duployan::LetterO => LETTER_O,
-            Duployan::LetterAou => LETTER_AOU,
-            Duployan::LetterI => LETTER_I,
-            Duployan::LetterE => LETTER_E,
-            Duployan::LetterIe => LETTER_IE,
-            Duployan::LetterShortI => LETTER_SHORT_I,
-            Duployan::LetterUi => LETTER_UI,
-            Duployan::LetterEe => LETTER_EE,
-            Duployan::LetterSloanEh => LETTER_SLOAN_EH,
-            Duployan::LetterRomanianI => LETTER_ROMANIAN_I,
-            Duployan::LetterSloanEe => LETTER_SLOAN_EE,
-            Duployan::LetterLongI => LETTER_LONG_I,
-            Duployan::LetterYe => LETTER_YE,
-            Duployan::LetterU => LETTER_U,
-            Duployan::LetterEu => LETTER_EU,
-            Duployan::LetterXw => LETTER_XW,
-            Duployan::LetterUN => LETTER_U_N,
-            Duployan::LetterLongU => LETTER_LONG_U,
-            Duployan::LetterRomanianU => LETTER_ROMANIAN_U,
-            Duployan::LetterUh => LETTER_UH,
-            Duployan::LetterSloanU => LETTER_SLOAN_U,
-            Duployan::LetterOoh => LETTER_OOH,
-            Duployan::LetterOw => LETTER_OW,
-            Duployan::LetterOu => LETTER_OU,
-            Duployan::LetterWa => LETTER_WA,
-            Duployan::LetterWo => LETTER_WO,
-            Duployan::LetterWi => LETTER_WI,
-            Duployan::LetterWei => LETTER_WEI,
-            Duployan::LetterWow => LETTER_WOW,
-            Duployan::LetterNasalU => LETTER_NASAL_U,
-            Duployan::LetterNasalO => LETTER_NASAL_O,
-            Duployan::LetterNasalI => LETTER_NASAL_I,
-            Duployan::LetterNasalA => LETTER_NASAL_A,
-            Duployan::LetterPerninAn => LETTER_PERNIN_AN,
-            Duployan::LetterPerninAm => LETTER_PERNIN_AM,
-            Duployan::LetterSloanEn => LETTER_SLOAN_EN,
-            Duployan::LetterSloanAn => LETTER_SLOAN_AN,
-            Duployan::LetterSloanOn => LETTER_SLOAN_ON,
-            Duployan::LetterVocalicM => LETTER_VOCALIC_M,
-            Duployan::AffixLeftHorizontalSecant => AFFIX_LEFT_HORIZONTAL_SECANT,
-            Duployan::AffixMidHorizontalSecant => AFFIX_MID_HORIZONTAL_SECANT,
-            Duployan::AffixRightHorizontalSecant => AFFIX_RIGHT_HORIZONTAL_SECANT,
-            Duployan::AffixLowVerticalSecant => AFFIX_LOW_VERTICAL_SECANT,
-            Duployan::AffixMidVerticalSecant => AFFIX_MID_VERTICAL_SECANT,
-            Duployan::AffixHighVerticalSecant => AFFIX_HIGH_VERTICAL_SECANT,
-            Duployan::AffixAttachedSecant => AFFIX_ATTACHED_SECANT,
-            Duployan::AffixAttachedLeftDashToDashRightSecant => AFFIX_ATTACHED_LEFT_DASH_TO_DASH_RIGHT_SECANT,
-            Duployan::AffixAttachedTangent => AFFIX_ATTACHED_TANGENT,
-            Duployan::AffixAttachedTail => AFFIX_ATTACHED_TAIL,
-            Duployan::AffixAttachedEHook => AFFIX_ATTACHED_E_HOOK,
-            Duployan::AffixAttachedIHook => AFFIX_ATTACHED_I_HOOK,
-            Duployan::AffixAttachedTangentHook => AFFIX_ATTACHED_TANGENT_HOOK,
-            Duployan::AffixHighAcute => AFFIX_HIGH_ACUTE,
-            Duployan::AffixHighTightAcute => AFFIX_HIGH_TIGHT_ACUTE,
-            Duployan::AffixHighGrave => AFFIX_HIGH_GRAVE,
-            Duployan::AffixHighLongGrave => AFFIX_HIGH_LONG_GRAVE,
-            Duployan::AffixHighDot => AFFIX_HIGH_DOT,
-            Duployan::AffixHighCircle => AFFIX_HIGH_CIRCLE,
-            Duployan::AffixHighLine => AFFIX_HIGH_LINE,
-            Duployan::AffixHighWave => AFFIX_HIGH_WAVE,
-            Duployan::AffixHighVertical => AFFIX_HIGH_VERTICAL,
-            Duployan::AffixLowAcute => AFFIX_LOW_ACUTE,
-            Duployan::AffixLowTightAcute => AFFIX_LOW_TIGHT_ACUTE,
-            Duployan::AffixLowGrave => AFFIX_LOW_GRAVE,
-            Duployan::AffixLowLongGrave => AFFIX_LOW_LONG_GRAVE,
-            Duployan::AffixLowDot => AFFIX_LOW_DOT,
-            Duployan::AffixLowCircle => AFFIX_LOW_CIRCLE,
-            Duployan::AffixLowLine => AFFIX_LOW_LINE,
-            Duployan::AffixLowWave => AFFIX_LOW_WAVE,
-            Duployan::AffixLowVertical => AFFIX_LOW_VERTICAL,
-            Duployan::AffixLowArrow => AFFIX_LOW_ARROW,
-            Duployan::SignOWithCross => SIGN_O_WITH_CROSS,
-            Duployan::ThickLetterSelector => THICK_LETTER_SELECTOR,
-            Duployan::DoubleMark => DOUBLE_MARK,
+            Duployan::LetterH => '𛰀',
+            Duployan::LetterX => '𛰁',
+            Duployan::LetterP => '𛰂',
+            Duployan::LetterT => '𛰃',
+            Duployan::LetterF => '𛰄',
+            Duployan::LetterK => '𛰅',
+            Duployan::LetterL => '𛰆',
+            Duployan::LetterB => '𛰇',
+            Duployan::LetterD => '𛰈',
+            Duployan::LetterV => '𛰉',
+            Duployan::LetterG => '𛰊',
+            Duployan::LetterR => '𛰋',
+            Duployan::LetterPN => '𛰌',
+            Duployan::LetterDS => '𛰍',
+            Duployan::LetterFN => '𛰎',
+            Duployan::LetterKM => '𛰏',
+            Duployan::LetterRS => '𛰐',
+            Duployan::LetterTh => '𛰑',
+            Duployan::LetterSloanDh => '𛰒',
+            Duployan::LetterDh => '𛰓',
+            Duployan::LetterKk => '𛰔',
+            Duployan::LetterSloanJ => '𛰕',
+            Duployan::LetterHl => '𛰖',
+            Duployan::LetterLh => '𛰗',
+            Duployan::LetterRh => '𛰘',
+            Duployan::LetterM => '𛰙',
+            Duployan::LetterN => '𛰚',
+            Duployan::LetterJ => '𛰛',
+            Duployan::LetterS => '𛰜',
+            Duployan::LetterMN => '𛰝',
+            Duployan::LetterNM => '𛰞',
+            Duployan::LetterJM => '𛰟',
+            Duployan::LetterSJ => '𛰠',
+            Duployan::LetterMWithDot => '𛰡',
+            Duployan::LetterNWithDot => '𛰢',
+            Duployan::LetterJWithDot => '𛰣',
+            Duployan::LetterJWithDotsInsideAndAbove => '𛰤',
+            Duployan::LetterSWithDot => '𛰥',
+            Duployan::LetterSWithDotBelow => '𛰦',
+            Duployan::LetterMS => '𛰧',
+            Duployan::LetterNS => '𛰨',
+            Duployan::LetterJS => '𛰩',
+            Duployan::LetterSS => '𛰪',
+            Duployan::LetterMNS => '𛰫',
+            Duployan::LetterNMS => '𛰬',
+            Duployan::LetterJMS => '𛰭',
+            Duployan::LetterSJS => '𛰮',
+            Duployan::LetterJSWithDot => '𛰯',
+            Duployan::LetterJN => '𛰰',
+            Duployan::LetterJNS => '𛰱',
+            Duployan::LetterST => '𛰲',
+            Duployan::LetterSTR => '𛰳',
+            Duployan::LetterSP => '𛰴',
+            Duployan::LetterSPR => '𛰵',
+            Duployan::LetterTS => '𛰶',
+            Duployan::LetterTRS => '𛰷',
+            Duployan::LetterW => '𛰸',
+            Duployan::LetterWh => '𛰹',
+            Duployan::LetterWR => '𛰺',
+            Duployan::LetterSN => '𛰻',
+            Duployan::LetterSM => '𛰼',
+            Duployan::LetterKRS => '𛰽',
+            Duployan::LetterGRS => '𛰾',
+            Duployan::LetterSK => '𛰿',
+            Duployan::LetterSKR => '𛱀',
+            Duployan::LetterA => '𛱁',
+            Duployan::LetterSloanOw => '𛱂',
+            Duployan::LetterOa => '𛱃',
+            Duployan::LetterO => '𛱄',
+            Duployan::LetterAou => '𛱅',
+            Duployan::LetterI => '𛱆',
+            Duployan::LetterE => '𛱇',
+            Duployan::LetterIe => '𛱈',
+            Duployan::LetterShortI => '𛱉',
+            Duployan::LetterUi => '𛱊',
+            Duployan::LetterEe => '𛱋',
+            Duployan::LetterSloanEh => '𛱌',
+            Duployan::LetterRomanianI => '𛱍',
+            Duployan::LetterSloanEe => '𛱎',
+            Duployan::LetterLongI => '𛱏',
+            Duployan::LetterYe => '𛱐',
+            Duployan::LetterU => '𛱑',
+            Duployan::LetterEu => '𛱒',
+            Duployan::LetterXw => '𛱓',
+            Duployan::LetterUN => '𛱔',
+            Duployan::LetterLongU => '𛱕',
+            Duployan::LetterRomanianU => '𛱖',
+            Duployan::LetterUh => '𛱗',
+            Duployan::LetterSloanU => '𛱘',
+            Duployan::LetterOoh => '𛱙',
+            Duployan::LetterOw => '𛱚',
+            Duployan::LetterOu => '𛱛',
+            Duployan::LetterWa => '𛱜',
+            Duployan::LetterWo => '𛱝',
+            Duployan::LetterWi => '𛱞',
+            Duployan::LetterWei => '𛱟',
+            Duployan::LetterWow => '𛱠',
+            Duployan::LetterNasalU => '𛱡',
+            Duployan::LetterNasalO => '𛱢',
+            Duployan::LetterNasalI => '𛱣',
+            Duployan::LetterNasalA => '𛱤',
+            Duployan::LetterPerninAn => '𛱥',
+            Duployan::LetterPerninAm => '𛱦',
+            Duployan::LetterSloanEn => '𛱧',
+            Duployan::LetterSloanAn => '𛱨',
+            Duployan::LetterSloanOn => '𛱩',
+            Duployan::LetterVocalicM => '𛱪',
+            Duployan::AffixLeftHorizontalSecant => '𛱰',
+            Duployan::AffixMidHorizontalSecant => '𛱱',
+            Duployan::AffixRightHorizontalSecant => '𛱲',
+            Duployan::AffixLowVerticalSecant => '𛱳',
+            Duployan::AffixMidVerticalSecant => '𛱴',
+            Duployan::AffixHighVerticalSecant => '𛱵',
+            Duployan::AffixAttachedSecant => '𛱶',
+            Duployan::AffixAttachedLeftDashToDashRightSecant => '𛱷',
+            Duployan::AffixAttachedTangent => '𛱸',
+            Duployan::AffixAttachedTail => '𛱹',
+            Duployan::AffixAttachedEHook => '𛱺',
+            Duployan::AffixAttachedIHook => '𛱻',
+            Duployan::AffixAttachedTangentHook => '𛱼',
+            Duployan::AffixHighAcute => '𛲀',
+            Duployan::AffixHighTightAcute => '𛲁',
+            Duployan::AffixHighGrave => '𛲂',
+            Duployan::AffixHighLongGrave => '𛲃',
+            Duployan::AffixHighDot => '𛲄',
+            Duployan::AffixHighCircle => '𛲅',
+            Duployan::AffixHighLine => '𛲆',
+            Duployan::AffixHighWave => '𛲇',
+            Duployan::AffixHighVertical => '𛲈',
+            Duployan::AffixLowAcute => '𛲐',
+            Duployan::AffixLowTightAcute => '𛲑',
+            Duployan::AffixLowGrave => '𛲒',
+            Duployan::AffixLowLongGrave => '𛲓',
+            Duployan::AffixLowDot => '𛲔',
+            Duployan::AffixLowCircle => '𛲕',
+            Duployan::AffixLowLine => '𛲖',
+            Duployan::AffixLowWave => '𛲗',
+            Duployan::AffixLowVertical => '𛲘',
+            Duployan::AffixLowArrow => '𛲙',
+            Duployan::SignOWithCross => '𛲜',
+            Duployan::ThickLetterSelector => '𛲝',
+            Duployan::DoubleMark => '𛲞',
         }
     }
 }
@@ -728,150 +440,149 @@ impl Into<char> for Duployan {
 impl std::convert::TryFrom<char> for Duployan {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_H => Ok(Duployan::LetterH),
-            LETTER_X => Ok(Duployan::LetterX),
-            LETTER_P => Ok(Duployan::LetterP),
-            LETTER_T => Ok(Duployan::LetterT),
-            LETTER_F => Ok(Duployan::LetterF),
-            LETTER_K => Ok(Duployan::LetterK),
-            LETTER_L => Ok(Duployan::LetterL),
-            LETTER_B => Ok(Duployan::LetterB),
-            LETTER_D => Ok(Duployan::LetterD),
-            LETTER_V => Ok(Duployan::LetterV),
-            LETTER_G => Ok(Duployan::LetterG),
-            LETTER_R => Ok(Duployan::LetterR),
-            LETTER_P_N => Ok(Duployan::LetterPN),
-            LETTER_D_S => Ok(Duployan::LetterDS),
-            LETTER_F_N => Ok(Duployan::LetterFN),
-            LETTER_K_M => Ok(Duployan::LetterKM),
-            LETTER_R_S => Ok(Duployan::LetterRS),
-            LETTER_TH => Ok(Duployan::LetterTh),
-            LETTER_SLOAN_DH => Ok(Duployan::LetterSloanDh),
-            LETTER_DH => Ok(Duployan::LetterDh),
-            LETTER_KK => Ok(Duployan::LetterKk),
-            LETTER_SLOAN_J => Ok(Duployan::LetterSloanJ),
-            LETTER_HL => Ok(Duployan::LetterHl),
-            LETTER_LH => Ok(Duployan::LetterLh),
-            LETTER_RH => Ok(Duployan::LetterRh),
-            LETTER_M => Ok(Duployan::LetterM),
-            LETTER_N => Ok(Duployan::LetterN),
-            LETTER_J => Ok(Duployan::LetterJ),
-            LETTER_S => Ok(Duployan::LetterS),
-            LETTER_M_N => Ok(Duployan::LetterMN),
-            LETTER_N_M => Ok(Duployan::LetterNM),
-            LETTER_J_M => Ok(Duployan::LetterJM),
-            LETTER_S_J => Ok(Duployan::LetterSJ),
-            LETTER_M_WITH_DOT => Ok(Duployan::LetterMWithDot),
-            LETTER_N_WITH_DOT => Ok(Duployan::LetterNWithDot),
-            LETTER_J_WITH_DOT => Ok(Duployan::LetterJWithDot),
-            LETTER_J_WITH_DOTS_INSIDE_AND_ABOVE => Ok(Duployan::LetterJWithDotsInsideAndAbove),
-            LETTER_S_WITH_DOT => Ok(Duployan::LetterSWithDot),
-            LETTER_S_WITH_DOT_BELOW => Ok(Duployan::LetterSWithDotBelow),
-            LETTER_M_S => Ok(Duployan::LetterMS),
-            LETTER_N_S => Ok(Duployan::LetterNS),
-            LETTER_J_S => Ok(Duployan::LetterJS),
-            LETTER_S_S => Ok(Duployan::LetterSS),
-            LETTER_M_N_S => Ok(Duployan::LetterMNS),
-            LETTER_N_M_S => Ok(Duployan::LetterNMS),
-            LETTER_J_M_S => Ok(Duployan::LetterJMS),
-            LETTER_S_J_S => Ok(Duployan::LetterSJS),
-            LETTER_J_S_WITH_DOT => Ok(Duployan::LetterJSWithDot),
-            LETTER_J_N => Ok(Duployan::LetterJN),
-            LETTER_J_N_S => Ok(Duployan::LetterJNS),
-            LETTER_S_T => Ok(Duployan::LetterST),
-            LETTER_S_T_R => Ok(Duployan::LetterSTR),
-            LETTER_S_P => Ok(Duployan::LetterSP),
-            LETTER_S_P_R => Ok(Duployan::LetterSPR),
-            LETTER_T_S => Ok(Duployan::LetterTS),
-            LETTER_T_R_S => Ok(Duployan::LetterTRS),
-            LETTER_W => Ok(Duployan::LetterW),
-            LETTER_WH => Ok(Duployan::LetterWh),
-            LETTER_W_R => Ok(Duployan::LetterWR),
-            LETTER_S_N => Ok(Duployan::LetterSN),
-            LETTER_S_M => Ok(Duployan::LetterSM),
-            LETTER_K_R_S => Ok(Duployan::LetterKRS),
-            LETTER_G_R_S => Ok(Duployan::LetterGRS),
-            LETTER_S_K => Ok(Duployan::LetterSK),
-            LETTER_S_K_R => Ok(Duployan::LetterSKR),
-            LETTER_A => Ok(Duployan::LetterA),
-            LETTER_SLOAN_OW => Ok(Duployan::LetterSloanOw),
-            LETTER_OA => Ok(Duployan::LetterOa),
-            LETTER_O => Ok(Duployan::LetterO),
-            LETTER_AOU => Ok(Duployan::LetterAou),
-            LETTER_I => Ok(Duployan::LetterI),
-            LETTER_E => Ok(Duployan::LetterE),
-            LETTER_IE => Ok(Duployan::LetterIe),
-            LETTER_SHORT_I => Ok(Duployan::LetterShortI),
-            LETTER_UI => Ok(Duployan::LetterUi),
-            LETTER_EE => Ok(Duployan::LetterEe),
-            LETTER_SLOAN_EH => Ok(Duployan::LetterSloanEh),
-            LETTER_ROMANIAN_I => Ok(Duployan::LetterRomanianI),
-            LETTER_SLOAN_EE => Ok(Duployan::LetterSloanEe),
-            LETTER_LONG_I => Ok(Duployan::LetterLongI),
-            LETTER_YE => Ok(Duployan::LetterYe),
-            LETTER_U => Ok(Duployan::LetterU),
-            LETTER_EU => Ok(Duployan::LetterEu),
-            LETTER_XW => Ok(Duployan::LetterXw),
-            LETTER_U_N => Ok(Duployan::LetterUN),
-            LETTER_LONG_U => Ok(Duployan::LetterLongU),
-            LETTER_ROMANIAN_U => Ok(Duployan::LetterRomanianU),
-            LETTER_UH => Ok(Duployan::LetterUh),
-            LETTER_SLOAN_U => Ok(Duployan::LetterSloanU),
-            LETTER_OOH => Ok(Duployan::LetterOoh),
-            LETTER_OW => Ok(Duployan::LetterOw),
-            LETTER_OU => Ok(Duployan::LetterOu),
-            LETTER_WA => Ok(Duployan::LetterWa),
-            LETTER_WO => Ok(Duployan::LetterWo),
-            LETTER_WI => Ok(Duployan::LetterWi),
-            LETTER_WEI => Ok(Duployan::LetterWei),
-            LETTER_WOW => Ok(Duployan::LetterWow),
-            LETTER_NASAL_U => Ok(Duployan::LetterNasalU),
-            LETTER_NASAL_O => Ok(Duployan::LetterNasalO),
-            LETTER_NASAL_I => Ok(Duployan::LetterNasalI),
-            LETTER_NASAL_A => Ok(Duployan::LetterNasalA),
-            LETTER_PERNIN_AN => Ok(Duployan::LetterPerninAn),
-            LETTER_PERNIN_AM => Ok(Duployan::LetterPerninAm),
-            LETTER_SLOAN_EN => Ok(Duployan::LetterSloanEn),
-            LETTER_SLOAN_AN => Ok(Duployan::LetterSloanAn),
-            LETTER_SLOAN_ON => Ok(Duployan::LetterSloanOn),
-            LETTER_VOCALIC_M => Ok(Duployan::LetterVocalicM),
-            AFFIX_LEFT_HORIZONTAL_SECANT => Ok(Duployan::AffixLeftHorizontalSecant),
-            AFFIX_MID_HORIZONTAL_SECANT => Ok(Duployan::AffixMidHorizontalSecant),
-            AFFIX_RIGHT_HORIZONTAL_SECANT => Ok(Duployan::AffixRightHorizontalSecant),
-            AFFIX_LOW_VERTICAL_SECANT => Ok(Duployan::AffixLowVerticalSecant),
-            AFFIX_MID_VERTICAL_SECANT => Ok(Duployan::AffixMidVerticalSecant),
-            AFFIX_HIGH_VERTICAL_SECANT => Ok(Duployan::AffixHighVerticalSecant),
-            AFFIX_ATTACHED_SECANT => Ok(Duployan::AffixAttachedSecant),
-            AFFIX_ATTACHED_LEFT_DASH_TO_DASH_RIGHT_SECANT => Ok(Duployan::AffixAttachedLeftDashToDashRightSecant),
-            AFFIX_ATTACHED_TANGENT => Ok(Duployan::AffixAttachedTangent),
-            AFFIX_ATTACHED_TAIL => Ok(Duployan::AffixAttachedTail),
-            AFFIX_ATTACHED_E_HOOK => Ok(Duployan::AffixAttachedEHook),
-            AFFIX_ATTACHED_I_HOOK => Ok(Duployan::AffixAttachedIHook),
-            AFFIX_ATTACHED_TANGENT_HOOK => Ok(Duployan::AffixAttachedTangentHook),
-            AFFIX_HIGH_ACUTE => Ok(Duployan::AffixHighAcute),
-            AFFIX_HIGH_TIGHT_ACUTE => Ok(Duployan::AffixHighTightAcute),
-            AFFIX_HIGH_GRAVE => Ok(Duployan::AffixHighGrave),
-            AFFIX_HIGH_LONG_GRAVE => Ok(Duployan::AffixHighLongGrave),
-            AFFIX_HIGH_DOT => Ok(Duployan::AffixHighDot),
-            AFFIX_HIGH_CIRCLE => Ok(Duployan::AffixHighCircle),
-            AFFIX_HIGH_LINE => Ok(Duployan::AffixHighLine),
-            AFFIX_HIGH_WAVE => Ok(Duployan::AffixHighWave),
-            AFFIX_HIGH_VERTICAL => Ok(Duployan::AffixHighVertical),
-            AFFIX_LOW_ACUTE => Ok(Duployan::AffixLowAcute),
-            AFFIX_LOW_TIGHT_ACUTE => Ok(Duployan::AffixLowTightAcute),
-            AFFIX_LOW_GRAVE => Ok(Duployan::AffixLowGrave),
-            AFFIX_LOW_LONG_GRAVE => Ok(Duployan::AffixLowLongGrave),
-            AFFIX_LOW_DOT => Ok(Duployan::AffixLowDot),
-            AFFIX_LOW_CIRCLE => Ok(Duployan::AffixLowCircle),
-            AFFIX_LOW_LINE => Ok(Duployan::AffixLowLine),
-            AFFIX_LOW_WAVE => Ok(Duployan::AffixLowWave),
-            AFFIX_LOW_VERTICAL => Ok(Duployan::AffixLowVertical),
-            AFFIX_LOW_ARROW => Ok(Duployan::AffixLowArrow),
-            SIGN_O_WITH_CROSS => Ok(Duployan::SignOWithCross),
-            THICK_LETTER_SELECTOR => Ok(Duployan::ThickLetterSelector),
-            DOUBLE_MARK => Ok(Duployan::DoubleMark),
+            '𛰀' => Ok(Duployan::LetterH),
+            '𛰁' => Ok(Duployan::LetterX),
+            '𛰂' => Ok(Duployan::LetterP),
+            '𛰃' => Ok(Duployan::LetterT),
+            '𛰄' => Ok(Duployan::LetterF),
+            '𛰅' => Ok(Duployan::LetterK),
+            '𛰆' => Ok(Duployan::LetterL),
+            '𛰇' => Ok(Duployan::LetterB),
+            '𛰈' => Ok(Duployan::LetterD),
+            '𛰉' => Ok(Duployan::LetterV),
+            '𛰊' => Ok(Duployan::LetterG),
+            '𛰋' => Ok(Duployan::LetterR),
+            '𛰌' => Ok(Duployan::LetterPN),
+            '𛰍' => Ok(Duployan::LetterDS),
+            '𛰎' => Ok(Duployan::LetterFN),
+            '𛰏' => Ok(Duployan::LetterKM),
+            '𛰐' => Ok(Duployan::LetterRS),
+            '𛰑' => Ok(Duployan::LetterTh),
+            '𛰒' => Ok(Duployan::LetterSloanDh),
+            '𛰓' => Ok(Duployan::LetterDh),
+            '𛰔' => Ok(Duployan::LetterKk),
+            '𛰕' => Ok(Duployan::LetterSloanJ),
+            '𛰖' => Ok(Duployan::LetterHl),
+            '𛰗' => Ok(Duployan::LetterLh),
+            '𛰘' => Ok(Duployan::LetterRh),
+            '𛰙' => Ok(Duployan::LetterM),
+            '𛰚' => Ok(Duployan::LetterN),
+            '𛰛' => Ok(Duployan::LetterJ),
+            '𛰜' => Ok(Duployan::LetterS),
+            '𛰝' => Ok(Duployan::LetterMN),
+            '𛰞' => Ok(Duployan::LetterNM),
+            '𛰟' => Ok(Duployan::LetterJM),
+            '𛰠' => Ok(Duployan::LetterSJ),
+            '𛰡' => Ok(Duployan::LetterMWithDot),
+            '𛰢' => Ok(Duployan::LetterNWithDot),
+            '𛰣' => Ok(Duployan::LetterJWithDot),
+            '𛰤' => Ok(Duployan::LetterJWithDotsInsideAndAbove),
+            '𛰥' => Ok(Duployan::LetterSWithDot),
+            '𛰦' => Ok(Duployan::LetterSWithDotBelow),
+            '𛰧' => Ok(Duployan::LetterMS),
+            '𛰨' => Ok(Duployan::LetterNS),
+            '𛰩' => Ok(Duployan::LetterJS),
+            '𛰪' => Ok(Duployan::LetterSS),
+            '𛰫' => Ok(Duployan::LetterMNS),
+            '𛰬' => Ok(Duployan::LetterNMS),
+            '𛰭' => Ok(Duployan::LetterJMS),
+            '𛰮' => Ok(Duployan::LetterSJS),
+            '𛰯' => Ok(Duployan::LetterJSWithDot),
+            '𛰰' => Ok(Duployan::LetterJN),
+            '𛰱' => Ok(Duployan::LetterJNS),
+            '𛰲' => Ok(Duployan::LetterST),
+            '𛰳' => Ok(Duployan::LetterSTR),
+            '𛰴' => Ok(Duployan::LetterSP),
+            '𛰵' => Ok(Duployan::LetterSPR),
+            '𛰶' => Ok(Duployan::LetterTS),
+            '𛰷' => Ok(Duployan::LetterTRS),
+            '𛰸' => Ok(Duployan::LetterW),
+            '𛰹' => Ok(Duployan::LetterWh),
+            '𛰺' => Ok(Duployan::LetterWR),
+            '𛰻' => Ok(Duployan::LetterSN),
+            '𛰼' => Ok(Duployan::LetterSM),
+            '𛰽' => Ok(Duployan::LetterKRS),
+            '𛰾' => Ok(Duployan::LetterGRS),
+            '𛰿' => Ok(Duployan::LetterSK),
+            '𛱀' => Ok(Duployan::LetterSKR),
+            '𛱁' => Ok(Duployan::LetterA),
+            '𛱂' => Ok(Duployan::LetterSloanOw),
+            '𛱃' => Ok(Duployan::LetterOa),
+            '𛱄' => Ok(Duployan::LetterO),
+            '𛱅' => Ok(Duployan::LetterAou),
+            '𛱆' => Ok(Duployan::LetterI),
+            '𛱇' => Ok(Duployan::LetterE),
+            '𛱈' => Ok(Duployan::LetterIe),
+            '𛱉' => Ok(Duployan::LetterShortI),
+            '𛱊' => Ok(Duployan::LetterUi),
+            '𛱋' => Ok(Duployan::LetterEe),
+            '𛱌' => Ok(Duployan::LetterSloanEh),
+            '𛱍' => Ok(Duployan::LetterRomanianI),
+            '𛱎' => Ok(Duployan::LetterSloanEe),
+            '𛱏' => Ok(Duployan::LetterLongI),
+            '𛱐' => Ok(Duployan::LetterYe),
+            '𛱑' => Ok(Duployan::LetterU),
+            '𛱒' => Ok(Duployan::LetterEu),
+            '𛱓' => Ok(Duployan::LetterXw),
+            '𛱔' => Ok(Duployan::LetterUN),
+            '𛱕' => Ok(Duployan::LetterLongU),
+            '𛱖' => Ok(Duployan::LetterRomanianU),
+            '𛱗' => Ok(Duployan::LetterUh),
+            '𛱘' => Ok(Duployan::LetterSloanU),
+            '𛱙' => Ok(Duployan::LetterOoh),
+            '𛱚' => Ok(Duployan::LetterOw),
+            '𛱛' => Ok(Duployan::LetterOu),
+            '𛱜' => Ok(Duployan::LetterWa),
+            '𛱝' => Ok(Duployan::LetterWo),
+            '𛱞' => Ok(Duployan::LetterWi),
+            '𛱟' => Ok(Duployan::LetterWei),
+            '𛱠' => Ok(Duployan::LetterWow),
+            '𛱡' => Ok(Duployan::LetterNasalU),
+            '𛱢' => Ok(Duployan::LetterNasalO),
+            '𛱣' => Ok(Duployan::LetterNasalI),
+            '𛱤' => Ok(Duployan::LetterNasalA),
+            '𛱥' => Ok(Duployan::LetterPerninAn),
+            '𛱦' => Ok(Duployan::LetterPerninAm),
+            '𛱧' => Ok(Duployan::LetterSloanEn),
+            '𛱨' => Ok(Duployan::LetterSloanAn),
+            '𛱩' => Ok(Duployan::LetterSloanOn),
+            '𛱪' => Ok(Duployan::LetterVocalicM),
+            '𛱰' => Ok(Duployan::AffixLeftHorizontalSecant),
+            '𛱱' => Ok(Duployan::AffixMidHorizontalSecant),
+            '𛱲' => Ok(Duployan::AffixRightHorizontalSecant),
+            '𛱳' => Ok(Duployan::AffixLowVerticalSecant),
+            '𛱴' => Ok(Duployan::AffixMidVerticalSecant),
+            '𛱵' => Ok(Duployan::AffixHighVerticalSecant),
+            '𛱶' => Ok(Duployan::AffixAttachedSecant),
+            '𛱷' => Ok(Duployan::AffixAttachedLeftDashToDashRightSecant),
+            '𛱸' => Ok(Duployan::AffixAttachedTangent),
+            '𛱹' => Ok(Duployan::AffixAttachedTail),
+            '𛱺' => Ok(Duployan::AffixAttachedEHook),
+            '𛱻' => Ok(Duployan::AffixAttachedIHook),
+            '𛱼' => Ok(Duployan::AffixAttachedTangentHook),
+            '𛲀' => Ok(Duployan::AffixHighAcute),
+            '𛲁' => Ok(Duployan::AffixHighTightAcute),
+            '𛲂' => Ok(Duployan::AffixHighGrave),
+            '𛲃' => Ok(Duployan::AffixHighLongGrave),
+            '𛲄' => Ok(Duployan::AffixHighDot),
+            '𛲅' => Ok(Duployan::AffixHighCircle),
+            '𛲆' => Ok(Duployan::AffixHighLine),
+            '𛲇' => Ok(Duployan::AffixHighWave),
+            '𛲈' => Ok(Duployan::AffixHighVertical),
+            '𛲐' => Ok(Duployan::AffixLowAcute),
+            '𛲑' => Ok(Duployan::AffixLowTightAcute),
+            '𛲒' => Ok(Duployan::AffixLowGrave),
+            '𛲓' => Ok(Duployan::AffixLowLongGrave),
+            '𛲔' => Ok(Duployan::AffixLowDot),
+            '𛲕' => Ok(Duployan::AffixLowCircle),
+            '𛲖' => Ok(Duployan::AffixLowLine),
+            '𛲗' => Ok(Duployan::AffixLowWave),
+            '𛲘' => Ok(Duployan::AffixLowVertical),
+            '𛲙' => Ok(Duployan::AffixLowArrow),
+            '𛲜' => Ok(Duployan::SignOWithCross),
+            '𛲝' => Ok(Duployan::ThickLetterSelector),
+            '𛲞' => Ok(Duployan::DoubleMark),
             _ => Err(()),
         }
     }

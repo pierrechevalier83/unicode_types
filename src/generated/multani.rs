@@ -1,82 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11280}: '𑊀'
-    pub const LETTER_A: char = '𑊀';
-    /// \u{11281}: '𑊁'
-    pub const LETTER_I: char = '𑊁';
-    /// \u{11282}: '𑊂'
-    pub const LETTER_U: char = '𑊂';
-    /// \u{11283}: '𑊃'
-    pub const LETTER_E: char = '𑊃';
-    /// \u{11284}: '𑊄'
-    pub const LETTER_KA: char = '𑊄';
-    /// \u{11285}: '𑊅'
-    pub const LETTER_KHA: char = '𑊅';
-    /// \u{11286}: '𑊆'
-    pub const LETTER_GA: char = '𑊆';
-    /// \u{11288}: '𑊈'
-    pub const LETTER_GHA: char = '𑊈';
-    /// \u{1128a}: '𑊊'
-    pub const LETTER_CA: char = '𑊊';
-    /// \u{1128b}: '𑊋'
-    pub const LETTER_CHA: char = '𑊋';
-    /// \u{1128c}: '𑊌'
-    pub const LETTER_JA: char = '𑊌';
-    /// \u{1128d}: '𑊍'
-    pub const LETTER_JJA: char = '𑊍';
-    /// \u{1128f}: '𑊏'
-    pub const LETTER_NYA: char = '𑊏';
-    /// \u{11290}: '𑊐'
-    pub const LETTER_TTA: char = '𑊐';
-    /// \u{11291}: '𑊑'
-    pub const LETTER_TTHA: char = '𑊑';
-    /// \u{11292}: '𑊒'
-    pub const LETTER_DDA: char = '𑊒';
-    /// \u{11293}: '𑊓'
-    pub const LETTER_DDDA: char = '𑊓';
-    /// \u{11294}: '𑊔'
-    pub const LETTER_DDHA: char = '𑊔';
-    /// \u{11295}: '𑊕'
-    pub const LETTER_NNA: char = '𑊕';
-    /// \u{11296}: '𑊖'
-    pub const LETTER_TA: char = '𑊖';
-    /// \u{11297}: '𑊗'
-    pub const LETTER_THA: char = '𑊗';
-    /// \u{11298}: '𑊘'
-    pub const LETTER_DA: char = '𑊘';
-    /// \u{11299}: '𑊙'
-    pub const LETTER_DHA: char = '𑊙';
-    /// \u{1129a}: '𑊚'
-    pub const LETTER_NA: char = '𑊚';
-    /// \u{1129b}: '𑊛'
-    pub const LETTER_PA: char = '𑊛';
-    /// \u{1129c}: '𑊜'
-    pub const LETTER_PHA: char = '𑊜';
-    /// \u{1129d}: '𑊝'
-    pub const LETTER_BA: char = '𑊝';
-    /// \u{1129f}: '𑊟'
-    pub const LETTER_BHA: char = '𑊟';
-    /// \u{112a0}: '𑊠'
-    pub const LETTER_MA: char = '𑊠';
-    /// \u{112a1}: '𑊡'
-    pub const LETTER_YA: char = '𑊡';
-    /// \u{112a2}: '𑊢'
-    pub const LETTER_RA: char = '𑊢';
-    /// \u{112a3}: '𑊣'
-    pub const LETTER_LA: char = '𑊣';
-    /// \u{112a4}: '𑊤'
-    pub const LETTER_VA: char = '𑊤';
-    /// \u{112a5}: '𑊥'
-    pub const LETTER_SA: char = '𑊥';
-    /// \u{112a6}: '𑊦'
-    pub const LETTER_HA: char = '𑊦';
-    /// \u{112a7}: '𑊧'
-    pub const LETTER_RRA: char = '𑊧';
-    /// \u{112a8}: '𑊨'
-    pub const LETTER_RHA: char = '𑊨';
-    /// \u{112a9}: '𑊩'
-    pub const SECTION_MARK: char = '𑊩';
-}
 
 /// An enum to represent all characters in the Multani block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -161,46 +82,45 @@ pub enum Multani {
 
 impl Into<char> for Multani {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Multani::LetterA => LETTER_A,
-            Multani::LetterI => LETTER_I,
-            Multani::LetterU => LETTER_U,
-            Multani::LetterE => LETTER_E,
-            Multani::LetterKa => LETTER_KA,
-            Multani::LetterKha => LETTER_KHA,
-            Multani::LetterGa => LETTER_GA,
-            Multani::LetterGha => LETTER_GHA,
-            Multani::LetterCa => LETTER_CA,
-            Multani::LetterCha => LETTER_CHA,
-            Multani::LetterJa => LETTER_JA,
-            Multani::LetterJja => LETTER_JJA,
-            Multani::LetterNya => LETTER_NYA,
-            Multani::LetterTta => LETTER_TTA,
-            Multani::LetterTtha => LETTER_TTHA,
-            Multani::LetterDda => LETTER_DDA,
-            Multani::LetterDdda => LETTER_DDDA,
-            Multani::LetterDdha => LETTER_DDHA,
-            Multani::LetterNna => LETTER_NNA,
-            Multani::LetterTa => LETTER_TA,
-            Multani::LetterTha => LETTER_THA,
-            Multani::LetterDa => LETTER_DA,
-            Multani::LetterDha => LETTER_DHA,
-            Multani::LetterNa => LETTER_NA,
-            Multani::LetterPa => LETTER_PA,
-            Multani::LetterPha => LETTER_PHA,
-            Multani::LetterBa => LETTER_BA,
-            Multani::LetterBha => LETTER_BHA,
-            Multani::LetterMa => LETTER_MA,
-            Multani::LetterYa => LETTER_YA,
-            Multani::LetterRa => LETTER_RA,
-            Multani::LetterLa => LETTER_LA,
-            Multani::LetterVa => LETTER_VA,
-            Multani::LetterSa => LETTER_SA,
-            Multani::LetterHa => LETTER_HA,
-            Multani::LetterRra => LETTER_RRA,
-            Multani::LetterRha => LETTER_RHA,
-            Multani::SectionMark => SECTION_MARK,
+            Multani::LetterA => '𑊀',
+            Multani::LetterI => '𑊁',
+            Multani::LetterU => '𑊂',
+            Multani::LetterE => '𑊃',
+            Multani::LetterKa => '𑊄',
+            Multani::LetterKha => '𑊅',
+            Multani::LetterGa => '𑊆',
+            Multani::LetterGha => '𑊈',
+            Multani::LetterCa => '𑊊',
+            Multani::LetterCha => '𑊋',
+            Multani::LetterJa => '𑊌',
+            Multani::LetterJja => '𑊍',
+            Multani::LetterNya => '𑊏',
+            Multani::LetterTta => '𑊐',
+            Multani::LetterTtha => '𑊑',
+            Multani::LetterDda => '𑊒',
+            Multani::LetterDdda => '𑊓',
+            Multani::LetterDdha => '𑊔',
+            Multani::LetterNna => '𑊕',
+            Multani::LetterTa => '𑊖',
+            Multani::LetterTha => '𑊗',
+            Multani::LetterDa => '𑊘',
+            Multani::LetterDha => '𑊙',
+            Multani::LetterNa => '𑊚',
+            Multani::LetterPa => '𑊛',
+            Multani::LetterPha => '𑊜',
+            Multani::LetterBa => '𑊝',
+            Multani::LetterBha => '𑊟',
+            Multani::LetterMa => '𑊠',
+            Multani::LetterYa => '𑊡',
+            Multani::LetterRa => '𑊢',
+            Multani::LetterLa => '𑊣',
+            Multani::LetterVa => '𑊤',
+            Multani::LetterSa => '𑊥',
+            Multani::LetterHa => '𑊦',
+            Multani::LetterRra => '𑊧',
+            Multani::LetterRha => '𑊨',
+            Multani::SectionMark => '𑊩',
         }
     }
 }
@@ -208,46 +128,45 @@ impl Into<char> for Multani {
 impl std::convert::TryFrom<char> for Multani {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Multani::LetterA),
-            LETTER_I => Ok(Multani::LetterI),
-            LETTER_U => Ok(Multani::LetterU),
-            LETTER_E => Ok(Multani::LetterE),
-            LETTER_KA => Ok(Multani::LetterKa),
-            LETTER_KHA => Ok(Multani::LetterKha),
-            LETTER_GA => Ok(Multani::LetterGa),
-            LETTER_GHA => Ok(Multani::LetterGha),
-            LETTER_CA => Ok(Multani::LetterCa),
-            LETTER_CHA => Ok(Multani::LetterCha),
-            LETTER_JA => Ok(Multani::LetterJa),
-            LETTER_JJA => Ok(Multani::LetterJja),
-            LETTER_NYA => Ok(Multani::LetterNya),
-            LETTER_TTA => Ok(Multani::LetterTta),
-            LETTER_TTHA => Ok(Multani::LetterTtha),
-            LETTER_DDA => Ok(Multani::LetterDda),
-            LETTER_DDDA => Ok(Multani::LetterDdda),
-            LETTER_DDHA => Ok(Multani::LetterDdha),
-            LETTER_NNA => Ok(Multani::LetterNna),
-            LETTER_TA => Ok(Multani::LetterTa),
-            LETTER_THA => Ok(Multani::LetterTha),
-            LETTER_DA => Ok(Multani::LetterDa),
-            LETTER_DHA => Ok(Multani::LetterDha),
-            LETTER_NA => Ok(Multani::LetterNa),
-            LETTER_PA => Ok(Multani::LetterPa),
-            LETTER_PHA => Ok(Multani::LetterPha),
-            LETTER_BA => Ok(Multani::LetterBa),
-            LETTER_BHA => Ok(Multani::LetterBha),
-            LETTER_MA => Ok(Multani::LetterMa),
-            LETTER_YA => Ok(Multani::LetterYa),
-            LETTER_RA => Ok(Multani::LetterRa),
-            LETTER_LA => Ok(Multani::LetterLa),
-            LETTER_VA => Ok(Multani::LetterVa),
-            LETTER_SA => Ok(Multani::LetterSa),
-            LETTER_HA => Ok(Multani::LetterHa),
-            LETTER_RRA => Ok(Multani::LetterRra),
-            LETTER_RHA => Ok(Multani::LetterRha),
-            SECTION_MARK => Ok(Multani::SectionMark),
+            '𑊀' => Ok(Multani::LetterA),
+            '𑊁' => Ok(Multani::LetterI),
+            '𑊂' => Ok(Multani::LetterU),
+            '𑊃' => Ok(Multani::LetterE),
+            '𑊄' => Ok(Multani::LetterKa),
+            '𑊅' => Ok(Multani::LetterKha),
+            '𑊆' => Ok(Multani::LetterGa),
+            '𑊈' => Ok(Multani::LetterGha),
+            '𑊊' => Ok(Multani::LetterCa),
+            '𑊋' => Ok(Multani::LetterCha),
+            '𑊌' => Ok(Multani::LetterJa),
+            '𑊍' => Ok(Multani::LetterJja),
+            '𑊏' => Ok(Multani::LetterNya),
+            '𑊐' => Ok(Multani::LetterTta),
+            '𑊑' => Ok(Multani::LetterTtha),
+            '𑊒' => Ok(Multani::LetterDda),
+            '𑊓' => Ok(Multani::LetterDdda),
+            '𑊔' => Ok(Multani::LetterDdha),
+            '𑊕' => Ok(Multani::LetterNna),
+            '𑊖' => Ok(Multani::LetterTa),
+            '𑊗' => Ok(Multani::LetterTha),
+            '𑊘' => Ok(Multani::LetterDa),
+            '𑊙' => Ok(Multani::LetterDha),
+            '𑊚' => Ok(Multani::LetterNa),
+            '𑊛' => Ok(Multani::LetterPa),
+            '𑊜' => Ok(Multani::LetterPha),
+            '𑊝' => Ok(Multani::LetterBa),
+            '𑊟' => Ok(Multani::LetterBha),
+            '𑊠' => Ok(Multani::LetterMa),
+            '𑊡' => Ok(Multani::LetterYa),
+            '𑊢' => Ok(Multani::LetterRa),
+            '𑊣' => Ok(Multani::LetterLa),
+            '𑊤' => Ok(Multani::LetterVa),
+            '𑊥' => Ok(Multani::LetterSa),
+            '𑊦' => Ok(Multani::LetterHa),
+            '𑊧' => Ok(Multani::LetterRra),
+            '𑊨' => Ok(Multani::LetterRha),
+            '𑊩' => Ok(Multani::SectionMark),
             _ => Err(()),
         }
     }

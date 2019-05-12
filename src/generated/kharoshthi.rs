@@ -1,142 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10a00}: '𐨀'
-    pub const LETTER_A: char = '𐨀';
-    /// \u{10a01}: '𐨁'
-    pub const VOWEL_SIGN_I: char = '𐨁';
-    /// \u{10a02}: '𐨂'
-    pub const VOWEL_SIGN_U: char = '𐨂';
-    /// \u{10a03}: '𐨃'
-    pub const VOWEL_SIGN_VOCALIC_R: char = '𐨃';
-    /// \u{10a05}: '𐨅'
-    pub const VOWEL_SIGN_E: char = '𐨅';
-    /// \u{10a06}: '𐨆'
-    pub const VOWEL_SIGN_O: char = '𐨆';
-    /// \u{10a0c}: '𐨌'
-    pub const VOWEL_LENGTH_MARK: char = '𐨌';
-    /// \u{10a0d}: '𐨍'
-    pub const SIGN_DOUBLE_RING_BELOW: char = '𐨍';
-    /// \u{10a0e}: '𐨎'
-    pub const SIGN_ANUSVARA: char = '𐨎';
-    /// \u{10a0f}: '𐨏'
-    pub const SIGN_VISARGA: char = '𐨏';
-    /// \u{10a10}: '𐨐'
-    pub const LETTER_KA: char = '𐨐';
-    /// \u{10a11}: '𐨑'
-    pub const LETTER_KHA: char = '𐨑';
-    /// \u{10a12}: '𐨒'
-    pub const LETTER_GA: char = '𐨒';
-    /// \u{10a13}: '𐨓'
-    pub const LETTER_GHA: char = '𐨓';
-    /// \u{10a15}: '𐨕'
-    pub const LETTER_CA: char = '𐨕';
-    /// \u{10a16}: '𐨖'
-    pub const LETTER_CHA: char = '𐨖';
-    /// \u{10a17}: '𐨗'
-    pub const LETTER_JA: char = '𐨗';
-    /// \u{10a19}: '𐨙'
-    pub const LETTER_NYA: char = '𐨙';
-    /// \u{10a1a}: '𐨚'
-    pub const LETTER_TTA: char = '𐨚';
-    /// \u{10a1b}: '𐨛'
-    pub const LETTER_TTHA: char = '𐨛';
-    /// \u{10a1c}: '𐨜'
-    pub const LETTER_DDA: char = '𐨜';
-    /// \u{10a1d}: '𐨝'
-    pub const LETTER_DDHA: char = '𐨝';
-    /// \u{10a1e}: '𐨞'
-    pub const LETTER_NNA: char = '𐨞';
-    /// \u{10a1f}: '𐨟'
-    pub const LETTER_TA: char = '𐨟';
-    /// \u{10a20}: '𐨠'
-    pub const LETTER_THA: char = '𐨠';
-    /// \u{10a21}: '𐨡'
-    pub const LETTER_DA: char = '𐨡';
-    /// \u{10a22}: '𐨢'
-    pub const LETTER_DHA: char = '𐨢';
-    /// \u{10a23}: '𐨣'
-    pub const LETTER_NA: char = '𐨣';
-    /// \u{10a24}: '𐨤'
-    pub const LETTER_PA: char = '𐨤';
-    /// \u{10a25}: '𐨥'
-    pub const LETTER_PHA: char = '𐨥';
-    /// \u{10a26}: '𐨦'
-    pub const LETTER_BA: char = '𐨦';
-    /// \u{10a27}: '𐨧'
-    pub const LETTER_BHA: char = '𐨧';
-    /// \u{10a28}: '𐨨'
-    pub const LETTER_MA: char = '𐨨';
-    /// \u{10a29}: '𐨩'
-    pub const LETTER_YA: char = '𐨩';
-    /// \u{10a2a}: '𐨪'
-    pub const LETTER_RA: char = '𐨪';
-    /// \u{10a2b}: '𐨫'
-    pub const LETTER_LA: char = '𐨫';
-    /// \u{10a2c}: '𐨬'
-    pub const LETTER_VA: char = '𐨬';
-    /// \u{10a2d}: '𐨭'
-    pub const LETTER_SHA: char = '𐨭';
-    /// \u{10a2e}: '𐨮'
-    pub const LETTER_SSA: char = '𐨮';
-    /// \u{10a2f}: '𐨯'
-    pub const LETTER_SA: char = '𐨯';
-    /// \u{10a30}: '𐨰'
-    pub const LETTER_ZA: char = '𐨰';
-    /// \u{10a31}: '𐨱'
-    pub const LETTER_HA: char = '𐨱';
-    /// \u{10a32}: '𐨲'
-    pub const LETTER_KKA: char = '𐨲';
-    /// \u{10a33}: '𐨳'
-    pub const LETTER_TTTHA: char = '𐨳';
-    /// \u{10a34}: '𐨴'
-    pub const LETTER_TTTA: char = '𐨴';
-    /// \u{10a35}: '𐨵'
-    pub const LETTER_VHA: char = '𐨵';
-    /// \u{10a38}: '𐨸'
-    pub const SIGN_BAR_ABOVE: char = '𐨸';
-    /// \u{10a39}: '𐨹'
-    pub const SIGN_CAUDA: char = '𐨹';
-    /// \u{10a3a}: '𐨺'
-    pub const SIGN_DOT_BELOW: char = '𐨺';
-    /// \u{10a3f}: '𐨿'
-    pub const VIRAMA: char = '𐨿';
-    /// \u{10a40}: '𐩀'
-    pub const DIGIT_ONE: char = '𐩀';
-    /// \u{10a41}: '𐩁'
-    pub const DIGIT_TWO: char = '𐩁';
-    /// \u{10a42}: '𐩂'
-    pub const DIGIT_THREE: char = '𐩂';
-    /// \u{10a43}: '𐩃'
-    pub const DIGIT_FOUR: char = '𐩃';
-    /// \u{10a44}: '𐩄'
-    pub const NUMBER_TEN: char = '𐩄';
-    /// \u{10a45}: '𐩅'
-    pub const NUMBER_TWENTY: char = '𐩅';
-    /// \u{10a46}: '𐩆'
-    pub const NUMBER_ONE_HUNDRED: char = '𐩆';
-    /// \u{10a47}: '𐩇'
-    pub const NUMBER_ONE_THOUSAND: char = '𐩇';
-    /// \u{10a48}: '𐩈'
-    pub const FRACTION_ONE_HALF: char = '𐩈';
-    /// \u{10a50}: '𐩐'
-    pub const PUNCTUATION_DOT: char = '𐩐';
-    /// \u{10a51}: '𐩑'
-    pub const PUNCTUATION_SMALL_CIRCLE: char = '𐩑';
-    /// \u{10a52}: '𐩒'
-    pub const PUNCTUATION_CIRCLE: char = '𐩒';
-    /// \u{10a53}: '𐩓'
-    pub const PUNCTUATION_CRESCENT_BAR: char = '𐩓';
-    /// \u{10a54}: '𐩔'
-    pub const PUNCTUATION_MANGALAM: char = '𐩔';
-    /// \u{10a55}: '𐩕'
-    pub const PUNCTUATION_LOTUS: char = '𐩕';
-    /// \u{10a56}: '𐩖'
-    pub const PUNCTUATION_DANDA: char = '𐩖';
-    /// \u{10a57}: '𐩗'
-    pub const PUNCTUATION_DOUBLE_DANDA: char = '𐩗';
-    /// \u{10a58}: '𐩘'
-    pub const PUNCTUATION_LINES: char = '𐩘';
-}
 
 /// An enum to represent all characters in the Kharoshthi block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -281,76 +142,75 @@ pub enum Kharoshthi {
 
 impl Into<char> for Kharoshthi {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Kharoshthi::LetterA => LETTER_A,
-            Kharoshthi::VowelSignI => VOWEL_SIGN_I,
-            Kharoshthi::VowelSignU => VOWEL_SIGN_U,
-            Kharoshthi::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            Kharoshthi::VowelSignE => VOWEL_SIGN_E,
-            Kharoshthi::VowelSignO => VOWEL_SIGN_O,
-            Kharoshthi::VowelLengthMark => VOWEL_LENGTH_MARK,
-            Kharoshthi::SignDoubleRingBelow => SIGN_DOUBLE_RING_BELOW,
-            Kharoshthi::SignAnusvara => SIGN_ANUSVARA,
-            Kharoshthi::SignVisarga => SIGN_VISARGA,
-            Kharoshthi::LetterKa => LETTER_KA,
-            Kharoshthi::LetterKha => LETTER_KHA,
-            Kharoshthi::LetterGa => LETTER_GA,
-            Kharoshthi::LetterGha => LETTER_GHA,
-            Kharoshthi::LetterCa => LETTER_CA,
-            Kharoshthi::LetterCha => LETTER_CHA,
-            Kharoshthi::LetterJa => LETTER_JA,
-            Kharoshthi::LetterNya => LETTER_NYA,
-            Kharoshthi::LetterTta => LETTER_TTA,
-            Kharoshthi::LetterTtha => LETTER_TTHA,
-            Kharoshthi::LetterDda => LETTER_DDA,
-            Kharoshthi::LetterDdha => LETTER_DDHA,
-            Kharoshthi::LetterNna => LETTER_NNA,
-            Kharoshthi::LetterTa => LETTER_TA,
-            Kharoshthi::LetterTha => LETTER_THA,
-            Kharoshthi::LetterDa => LETTER_DA,
-            Kharoshthi::LetterDha => LETTER_DHA,
-            Kharoshthi::LetterNa => LETTER_NA,
-            Kharoshthi::LetterPa => LETTER_PA,
-            Kharoshthi::LetterPha => LETTER_PHA,
-            Kharoshthi::LetterBa => LETTER_BA,
-            Kharoshthi::LetterBha => LETTER_BHA,
-            Kharoshthi::LetterMa => LETTER_MA,
-            Kharoshthi::LetterYa => LETTER_YA,
-            Kharoshthi::LetterRa => LETTER_RA,
-            Kharoshthi::LetterLa => LETTER_LA,
-            Kharoshthi::LetterVa => LETTER_VA,
-            Kharoshthi::LetterSha => LETTER_SHA,
-            Kharoshthi::LetterSsa => LETTER_SSA,
-            Kharoshthi::LetterSa => LETTER_SA,
-            Kharoshthi::LetterZa => LETTER_ZA,
-            Kharoshthi::LetterHa => LETTER_HA,
-            Kharoshthi::LetterKka => LETTER_KKA,
-            Kharoshthi::LetterTttha => LETTER_TTTHA,
-            Kharoshthi::LetterTtta => LETTER_TTTA,
-            Kharoshthi::LetterVha => LETTER_VHA,
-            Kharoshthi::SignBarAbove => SIGN_BAR_ABOVE,
-            Kharoshthi::SignCauda => SIGN_CAUDA,
-            Kharoshthi::SignDotBelow => SIGN_DOT_BELOW,
-            Kharoshthi::Virama => VIRAMA,
-            Kharoshthi::DigitOne => DIGIT_ONE,
-            Kharoshthi::DigitTwo => DIGIT_TWO,
-            Kharoshthi::DigitThree => DIGIT_THREE,
-            Kharoshthi::DigitFour => DIGIT_FOUR,
-            Kharoshthi::NumberTen => NUMBER_TEN,
-            Kharoshthi::NumberTwenty => NUMBER_TWENTY,
-            Kharoshthi::NumberOneHundred => NUMBER_ONE_HUNDRED,
-            Kharoshthi::NumberOneThousand => NUMBER_ONE_THOUSAND,
-            Kharoshthi::FractionOneHalf => FRACTION_ONE_HALF,
-            Kharoshthi::PunctuationDot => PUNCTUATION_DOT,
-            Kharoshthi::PunctuationSmallCircle => PUNCTUATION_SMALL_CIRCLE,
-            Kharoshthi::PunctuationCircle => PUNCTUATION_CIRCLE,
-            Kharoshthi::PunctuationCrescentBar => PUNCTUATION_CRESCENT_BAR,
-            Kharoshthi::PunctuationMangalam => PUNCTUATION_MANGALAM,
-            Kharoshthi::PunctuationLotus => PUNCTUATION_LOTUS,
-            Kharoshthi::PunctuationDanda => PUNCTUATION_DANDA,
-            Kharoshthi::PunctuationDoubleDanda => PUNCTUATION_DOUBLE_DANDA,
-            Kharoshthi::PunctuationLines => PUNCTUATION_LINES,
+            Kharoshthi::LetterA => '𐨀',
+            Kharoshthi::VowelSignI => '𐨁',
+            Kharoshthi::VowelSignU => '𐨂',
+            Kharoshthi::VowelSignVocalicR => '𐨃',
+            Kharoshthi::VowelSignE => '𐨅',
+            Kharoshthi::VowelSignO => '𐨆',
+            Kharoshthi::VowelLengthMark => '𐨌',
+            Kharoshthi::SignDoubleRingBelow => '𐨍',
+            Kharoshthi::SignAnusvara => '𐨎',
+            Kharoshthi::SignVisarga => '𐨏',
+            Kharoshthi::LetterKa => '𐨐',
+            Kharoshthi::LetterKha => '𐨑',
+            Kharoshthi::LetterGa => '𐨒',
+            Kharoshthi::LetterGha => '𐨓',
+            Kharoshthi::LetterCa => '𐨕',
+            Kharoshthi::LetterCha => '𐨖',
+            Kharoshthi::LetterJa => '𐨗',
+            Kharoshthi::LetterNya => '𐨙',
+            Kharoshthi::LetterTta => '𐨚',
+            Kharoshthi::LetterTtha => '𐨛',
+            Kharoshthi::LetterDda => '𐨜',
+            Kharoshthi::LetterDdha => '𐨝',
+            Kharoshthi::LetterNna => '𐨞',
+            Kharoshthi::LetterTa => '𐨟',
+            Kharoshthi::LetterTha => '𐨠',
+            Kharoshthi::LetterDa => '𐨡',
+            Kharoshthi::LetterDha => '𐨢',
+            Kharoshthi::LetterNa => '𐨣',
+            Kharoshthi::LetterPa => '𐨤',
+            Kharoshthi::LetterPha => '𐨥',
+            Kharoshthi::LetterBa => '𐨦',
+            Kharoshthi::LetterBha => '𐨧',
+            Kharoshthi::LetterMa => '𐨨',
+            Kharoshthi::LetterYa => '𐨩',
+            Kharoshthi::LetterRa => '𐨪',
+            Kharoshthi::LetterLa => '𐨫',
+            Kharoshthi::LetterVa => '𐨬',
+            Kharoshthi::LetterSha => '𐨭',
+            Kharoshthi::LetterSsa => '𐨮',
+            Kharoshthi::LetterSa => '𐨯',
+            Kharoshthi::LetterZa => '𐨰',
+            Kharoshthi::LetterHa => '𐨱',
+            Kharoshthi::LetterKka => '𐨲',
+            Kharoshthi::LetterTttha => '𐨳',
+            Kharoshthi::LetterTtta => '𐨴',
+            Kharoshthi::LetterVha => '𐨵',
+            Kharoshthi::SignBarAbove => '𐨸',
+            Kharoshthi::SignCauda => '𐨹',
+            Kharoshthi::SignDotBelow => '𐨺',
+            Kharoshthi::Virama => '𐨿',
+            Kharoshthi::DigitOne => '𐩀',
+            Kharoshthi::DigitTwo => '𐩁',
+            Kharoshthi::DigitThree => '𐩂',
+            Kharoshthi::DigitFour => '𐩃',
+            Kharoshthi::NumberTen => '𐩄',
+            Kharoshthi::NumberTwenty => '𐩅',
+            Kharoshthi::NumberOneHundred => '𐩆',
+            Kharoshthi::NumberOneThousand => '𐩇',
+            Kharoshthi::FractionOneHalf => '𐩈',
+            Kharoshthi::PunctuationDot => '𐩐',
+            Kharoshthi::PunctuationSmallCircle => '𐩑',
+            Kharoshthi::PunctuationCircle => '𐩒',
+            Kharoshthi::PunctuationCrescentBar => '𐩓',
+            Kharoshthi::PunctuationMangalam => '𐩔',
+            Kharoshthi::PunctuationLotus => '𐩕',
+            Kharoshthi::PunctuationDanda => '𐩖',
+            Kharoshthi::PunctuationDoubleDanda => '𐩗',
+            Kharoshthi::PunctuationLines => '𐩘',
         }
     }
 }
@@ -358,76 +218,75 @@ impl Into<char> for Kharoshthi {
 impl std::convert::TryFrom<char> for Kharoshthi {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Kharoshthi::LetterA),
-            VOWEL_SIGN_I => Ok(Kharoshthi::VowelSignI),
-            VOWEL_SIGN_U => Ok(Kharoshthi::VowelSignU),
-            VOWEL_SIGN_VOCALIC_R => Ok(Kharoshthi::VowelSignVocalicR),
-            VOWEL_SIGN_E => Ok(Kharoshthi::VowelSignE),
-            VOWEL_SIGN_O => Ok(Kharoshthi::VowelSignO),
-            VOWEL_LENGTH_MARK => Ok(Kharoshthi::VowelLengthMark),
-            SIGN_DOUBLE_RING_BELOW => Ok(Kharoshthi::SignDoubleRingBelow),
-            SIGN_ANUSVARA => Ok(Kharoshthi::SignAnusvara),
-            SIGN_VISARGA => Ok(Kharoshthi::SignVisarga),
-            LETTER_KA => Ok(Kharoshthi::LetterKa),
-            LETTER_KHA => Ok(Kharoshthi::LetterKha),
-            LETTER_GA => Ok(Kharoshthi::LetterGa),
-            LETTER_GHA => Ok(Kharoshthi::LetterGha),
-            LETTER_CA => Ok(Kharoshthi::LetterCa),
-            LETTER_CHA => Ok(Kharoshthi::LetterCha),
-            LETTER_JA => Ok(Kharoshthi::LetterJa),
-            LETTER_NYA => Ok(Kharoshthi::LetterNya),
-            LETTER_TTA => Ok(Kharoshthi::LetterTta),
-            LETTER_TTHA => Ok(Kharoshthi::LetterTtha),
-            LETTER_DDA => Ok(Kharoshthi::LetterDda),
-            LETTER_DDHA => Ok(Kharoshthi::LetterDdha),
-            LETTER_NNA => Ok(Kharoshthi::LetterNna),
-            LETTER_TA => Ok(Kharoshthi::LetterTa),
-            LETTER_THA => Ok(Kharoshthi::LetterTha),
-            LETTER_DA => Ok(Kharoshthi::LetterDa),
-            LETTER_DHA => Ok(Kharoshthi::LetterDha),
-            LETTER_NA => Ok(Kharoshthi::LetterNa),
-            LETTER_PA => Ok(Kharoshthi::LetterPa),
-            LETTER_PHA => Ok(Kharoshthi::LetterPha),
-            LETTER_BA => Ok(Kharoshthi::LetterBa),
-            LETTER_BHA => Ok(Kharoshthi::LetterBha),
-            LETTER_MA => Ok(Kharoshthi::LetterMa),
-            LETTER_YA => Ok(Kharoshthi::LetterYa),
-            LETTER_RA => Ok(Kharoshthi::LetterRa),
-            LETTER_LA => Ok(Kharoshthi::LetterLa),
-            LETTER_VA => Ok(Kharoshthi::LetterVa),
-            LETTER_SHA => Ok(Kharoshthi::LetterSha),
-            LETTER_SSA => Ok(Kharoshthi::LetterSsa),
-            LETTER_SA => Ok(Kharoshthi::LetterSa),
-            LETTER_ZA => Ok(Kharoshthi::LetterZa),
-            LETTER_HA => Ok(Kharoshthi::LetterHa),
-            LETTER_KKA => Ok(Kharoshthi::LetterKka),
-            LETTER_TTTHA => Ok(Kharoshthi::LetterTttha),
-            LETTER_TTTA => Ok(Kharoshthi::LetterTtta),
-            LETTER_VHA => Ok(Kharoshthi::LetterVha),
-            SIGN_BAR_ABOVE => Ok(Kharoshthi::SignBarAbove),
-            SIGN_CAUDA => Ok(Kharoshthi::SignCauda),
-            SIGN_DOT_BELOW => Ok(Kharoshthi::SignDotBelow),
-            VIRAMA => Ok(Kharoshthi::Virama),
-            DIGIT_ONE => Ok(Kharoshthi::DigitOne),
-            DIGIT_TWO => Ok(Kharoshthi::DigitTwo),
-            DIGIT_THREE => Ok(Kharoshthi::DigitThree),
-            DIGIT_FOUR => Ok(Kharoshthi::DigitFour),
-            NUMBER_TEN => Ok(Kharoshthi::NumberTen),
-            NUMBER_TWENTY => Ok(Kharoshthi::NumberTwenty),
-            NUMBER_ONE_HUNDRED => Ok(Kharoshthi::NumberOneHundred),
-            NUMBER_ONE_THOUSAND => Ok(Kharoshthi::NumberOneThousand),
-            FRACTION_ONE_HALF => Ok(Kharoshthi::FractionOneHalf),
-            PUNCTUATION_DOT => Ok(Kharoshthi::PunctuationDot),
-            PUNCTUATION_SMALL_CIRCLE => Ok(Kharoshthi::PunctuationSmallCircle),
-            PUNCTUATION_CIRCLE => Ok(Kharoshthi::PunctuationCircle),
-            PUNCTUATION_CRESCENT_BAR => Ok(Kharoshthi::PunctuationCrescentBar),
-            PUNCTUATION_MANGALAM => Ok(Kharoshthi::PunctuationMangalam),
-            PUNCTUATION_LOTUS => Ok(Kharoshthi::PunctuationLotus),
-            PUNCTUATION_DANDA => Ok(Kharoshthi::PunctuationDanda),
-            PUNCTUATION_DOUBLE_DANDA => Ok(Kharoshthi::PunctuationDoubleDanda),
-            PUNCTUATION_LINES => Ok(Kharoshthi::PunctuationLines),
+            '𐨀' => Ok(Kharoshthi::LetterA),
+            '𐨁' => Ok(Kharoshthi::VowelSignI),
+            '𐨂' => Ok(Kharoshthi::VowelSignU),
+            '𐨃' => Ok(Kharoshthi::VowelSignVocalicR),
+            '𐨅' => Ok(Kharoshthi::VowelSignE),
+            '𐨆' => Ok(Kharoshthi::VowelSignO),
+            '𐨌' => Ok(Kharoshthi::VowelLengthMark),
+            '𐨍' => Ok(Kharoshthi::SignDoubleRingBelow),
+            '𐨎' => Ok(Kharoshthi::SignAnusvara),
+            '𐨏' => Ok(Kharoshthi::SignVisarga),
+            '𐨐' => Ok(Kharoshthi::LetterKa),
+            '𐨑' => Ok(Kharoshthi::LetterKha),
+            '𐨒' => Ok(Kharoshthi::LetterGa),
+            '𐨓' => Ok(Kharoshthi::LetterGha),
+            '𐨕' => Ok(Kharoshthi::LetterCa),
+            '𐨖' => Ok(Kharoshthi::LetterCha),
+            '𐨗' => Ok(Kharoshthi::LetterJa),
+            '𐨙' => Ok(Kharoshthi::LetterNya),
+            '𐨚' => Ok(Kharoshthi::LetterTta),
+            '𐨛' => Ok(Kharoshthi::LetterTtha),
+            '𐨜' => Ok(Kharoshthi::LetterDda),
+            '𐨝' => Ok(Kharoshthi::LetterDdha),
+            '𐨞' => Ok(Kharoshthi::LetterNna),
+            '𐨟' => Ok(Kharoshthi::LetterTa),
+            '𐨠' => Ok(Kharoshthi::LetterTha),
+            '𐨡' => Ok(Kharoshthi::LetterDa),
+            '𐨢' => Ok(Kharoshthi::LetterDha),
+            '𐨣' => Ok(Kharoshthi::LetterNa),
+            '𐨤' => Ok(Kharoshthi::LetterPa),
+            '𐨥' => Ok(Kharoshthi::LetterPha),
+            '𐨦' => Ok(Kharoshthi::LetterBa),
+            '𐨧' => Ok(Kharoshthi::LetterBha),
+            '𐨨' => Ok(Kharoshthi::LetterMa),
+            '𐨩' => Ok(Kharoshthi::LetterYa),
+            '𐨪' => Ok(Kharoshthi::LetterRa),
+            '𐨫' => Ok(Kharoshthi::LetterLa),
+            '𐨬' => Ok(Kharoshthi::LetterVa),
+            '𐨭' => Ok(Kharoshthi::LetterSha),
+            '𐨮' => Ok(Kharoshthi::LetterSsa),
+            '𐨯' => Ok(Kharoshthi::LetterSa),
+            '𐨰' => Ok(Kharoshthi::LetterZa),
+            '𐨱' => Ok(Kharoshthi::LetterHa),
+            '𐨲' => Ok(Kharoshthi::LetterKka),
+            '𐨳' => Ok(Kharoshthi::LetterTttha),
+            '𐨴' => Ok(Kharoshthi::LetterTtta),
+            '𐨵' => Ok(Kharoshthi::LetterVha),
+            '𐨸' => Ok(Kharoshthi::SignBarAbove),
+            '𐨹' => Ok(Kharoshthi::SignCauda),
+            '𐨺' => Ok(Kharoshthi::SignDotBelow),
+            '𐨿' => Ok(Kharoshthi::Virama),
+            '𐩀' => Ok(Kharoshthi::DigitOne),
+            '𐩁' => Ok(Kharoshthi::DigitTwo),
+            '𐩂' => Ok(Kharoshthi::DigitThree),
+            '𐩃' => Ok(Kharoshthi::DigitFour),
+            '𐩄' => Ok(Kharoshthi::NumberTen),
+            '𐩅' => Ok(Kharoshthi::NumberTwenty),
+            '𐩆' => Ok(Kharoshthi::NumberOneHundred),
+            '𐩇' => Ok(Kharoshthi::NumberOneThousand),
+            '𐩈' => Ok(Kharoshthi::FractionOneHalf),
+            '𐩐' => Ok(Kharoshthi::PunctuationDot),
+            '𐩑' => Ok(Kharoshthi::PunctuationSmallCircle),
+            '𐩒' => Ok(Kharoshthi::PunctuationCircle),
+            '𐩓' => Ok(Kharoshthi::PunctuationCrescentBar),
+            '𐩔' => Ok(Kharoshthi::PunctuationMangalam),
+            '𐩕' => Ok(Kharoshthi::PunctuationLotus),
+            '𐩖' => Ok(Kharoshthi::PunctuationDanda),
+            '𐩗' => Ok(Kharoshthi::PunctuationDoubleDanda),
+            '𐩘' => Ok(Kharoshthi::PunctuationLines),
             _ => Err(()),
         }
     }

@@ -1,86 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2d00}: 'ⴀ'
-    pub const GEORGIAN_SMALL_LETTER_AN: char = 'ⴀ';
-    /// \u{2d01}: 'ⴁ'
-    pub const GEORGIAN_SMALL_LETTER_BAN: char = 'ⴁ';
-    /// \u{2d02}: 'ⴂ'
-    pub const GEORGIAN_SMALL_LETTER_GAN: char = 'ⴂ';
-    /// \u{2d03}: 'ⴃ'
-    pub const GEORGIAN_SMALL_LETTER_DON: char = 'ⴃ';
-    /// \u{2d04}: 'ⴄ'
-    pub const GEORGIAN_SMALL_LETTER_EN: char = 'ⴄ';
-    /// \u{2d05}: 'ⴅ'
-    pub const GEORGIAN_SMALL_LETTER_VIN: char = 'ⴅ';
-    /// \u{2d06}: 'ⴆ'
-    pub const GEORGIAN_SMALL_LETTER_ZEN: char = 'ⴆ';
-    /// \u{2d07}: 'ⴇ'
-    pub const GEORGIAN_SMALL_LETTER_TAN: char = 'ⴇ';
-    /// \u{2d08}: 'ⴈ'
-    pub const GEORGIAN_SMALL_LETTER_IN: char = 'ⴈ';
-    /// \u{2d09}: 'ⴉ'
-    pub const GEORGIAN_SMALL_LETTER_KAN: char = 'ⴉ';
-    /// \u{2d0a}: 'ⴊ'
-    pub const GEORGIAN_SMALL_LETTER_LAS: char = 'ⴊ';
-    /// \u{2d0b}: 'ⴋ'
-    pub const GEORGIAN_SMALL_LETTER_MAN: char = 'ⴋ';
-    /// \u{2d0c}: 'ⴌ'
-    pub const GEORGIAN_SMALL_LETTER_NAR: char = 'ⴌ';
-    /// \u{2d0d}: 'ⴍ'
-    pub const GEORGIAN_SMALL_LETTER_ON: char = 'ⴍ';
-    /// \u{2d0e}: 'ⴎ'
-    pub const GEORGIAN_SMALL_LETTER_PAR: char = 'ⴎ';
-    /// \u{2d0f}: 'ⴏ'
-    pub const GEORGIAN_SMALL_LETTER_ZHAR: char = 'ⴏ';
-    /// \u{2d10}: 'ⴐ'
-    pub const GEORGIAN_SMALL_LETTER_RAE: char = 'ⴐ';
-    /// \u{2d11}: 'ⴑ'
-    pub const GEORGIAN_SMALL_LETTER_SAN: char = 'ⴑ';
-    /// \u{2d12}: 'ⴒ'
-    pub const GEORGIAN_SMALL_LETTER_TAR: char = 'ⴒ';
-    /// \u{2d13}: 'ⴓ'
-    pub const GEORGIAN_SMALL_LETTER_UN: char = 'ⴓ';
-    /// \u{2d14}: 'ⴔ'
-    pub const GEORGIAN_SMALL_LETTER_PHAR: char = 'ⴔ';
-    /// \u{2d15}: 'ⴕ'
-    pub const GEORGIAN_SMALL_LETTER_KHAR: char = 'ⴕ';
-    /// \u{2d16}: 'ⴖ'
-    pub const GEORGIAN_SMALL_LETTER_GHAN: char = 'ⴖ';
-    /// \u{2d17}: 'ⴗ'
-    pub const GEORGIAN_SMALL_LETTER_QAR: char = 'ⴗ';
-    /// \u{2d18}: 'ⴘ'
-    pub const GEORGIAN_SMALL_LETTER_SHIN: char = 'ⴘ';
-    /// \u{2d19}: 'ⴙ'
-    pub const GEORGIAN_SMALL_LETTER_CHIN: char = 'ⴙ';
-    /// \u{2d1a}: 'ⴚ'
-    pub const GEORGIAN_SMALL_LETTER_CAN: char = 'ⴚ';
-    /// \u{2d1b}: 'ⴛ'
-    pub const GEORGIAN_SMALL_LETTER_JIL: char = 'ⴛ';
-    /// \u{2d1c}: 'ⴜ'
-    pub const GEORGIAN_SMALL_LETTER_CIL: char = 'ⴜ';
-    /// \u{2d1d}: 'ⴝ'
-    pub const GEORGIAN_SMALL_LETTER_CHAR: char = 'ⴝ';
-    /// \u{2d1e}: 'ⴞ'
-    pub const GEORGIAN_SMALL_LETTER_XAN: char = 'ⴞ';
-    /// \u{2d1f}: 'ⴟ'
-    pub const GEORGIAN_SMALL_LETTER_JHAN: char = 'ⴟ';
-    /// \u{2d20}: 'ⴠ'
-    pub const GEORGIAN_SMALL_LETTER_HAE: char = 'ⴠ';
-    /// \u{2d21}: 'ⴡ'
-    pub const GEORGIAN_SMALL_LETTER_HE: char = 'ⴡ';
-    /// \u{2d22}: 'ⴢ'
-    pub const GEORGIAN_SMALL_LETTER_HIE: char = 'ⴢ';
-    /// \u{2d23}: 'ⴣ'
-    pub const GEORGIAN_SMALL_LETTER_WE: char = 'ⴣ';
-    /// \u{2d24}: 'ⴤ'
-    pub const GEORGIAN_SMALL_LETTER_HAR: char = 'ⴤ';
-    /// \u{2d25}: 'ⴥ'
-    pub const GEORGIAN_SMALL_LETTER_HOE: char = 'ⴥ';
-    /// \u{2d27}: 'ⴧ'
-    pub const GEORGIAN_SMALL_LETTER_YN: char = 'ⴧ';
-    /// \u{2d2d}: 'ⴭ'
-    pub const GEORGIAN_SMALL_LETTER_AEN: char = 'ⴭ';
-}
 
 /// An enum to represent all characters in the GeorgianSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -169,48 +86,47 @@ pub enum GeorgianSupplement {
 
 impl Into<char> for GeorgianSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            GeorgianSupplement::GeorgianSmallLetterAn => GEORGIAN_SMALL_LETTER_AN,
-            GeorgianSupplement::GeorgianSmallLetterBan => GEORGIAN_SMALL_LETTER_BAN,
-            GeorgianSupplement::GeorgianSmallLetterGan => GEORGIAN_SMALL_LETTER_GAN,
-            GeorgianSupplement::GeorgianSmallLetterDon => GEORGIAN_SMALL_LETTER_DON,
-            GeorgianSupplement::GeorgianSmallLetterEn => GEORGIAN_SMALL_LETTER_EN,
-            GeorgianSupplement::GeorgianSmallLetterVin => GEORGIAN_SMALL_LETTER_VIN,
-            GeorgianSupplement::GeorgianSmallLetterZen => GEORGIAN_SMALL_LETTER_ZEN,
-            GeorgianSupplement::GeorgianSmallLetterTan => GEORGIAN_SMALL_LETTER_TAN,
-            GeorgianSupplement::GeorgianSmallLetterIn => GEORGIAN_SMALL_LETTER_IN,
-            GeorgianSupplement::GeorgianSmallLetterKan => GEORGIAN_SMALL_LETTER_KAN,
-            GeorgianSupplement::GeorgianSmallLetterLas => GEORGIAN_SMALL_LETTER_LAS,
-            GeorgianSupplement::GeorgianSmallLetterMan => GEORGIAN_SMALL_LETTER_MAN,
-            GeorgianSupplement::GeorgianSmallLetterNar => GEORGIAN_SMALL_LETTER_NAR,
-            GeorgianSupplement::GeorgianSmallLetterOn => GEORGIAN_SMALL_LETTER_ON,
-            GeorgianSupplement::GeorgianSmallLetterPar => GEORGIAN_SMALL_LETTER_PAR,
-            GeorgianSupplement::GeorgianSmallLetterZhar => GEORGIAN_SMALL_LETTER_ZHAR,
-            GeorgianSupplement::GeorgianSmallLetterRae => GEORGIAN_SMALL_LETTER_RAE,
-            GeorgianSupplement::GeorgianSmallLetterSan => GEORGIAN_SMALL_LETTER_SAN,
-            GeorgianSupplement::GeorgianSmallLetterTar => GEORGIAN_SMALL_LETTER_TAR,
-            GeorgianSupplement::GeorgianSmallLetterUn => GEORGIAN_SMALL_LETTER_UN,
-            GeorgianSupplement::GeorgianSmallLetterPhar => GEORGIAN_SMALL_LETTER_PHAR,
-            GeorgianSupplement::GeorgianSmallLetterKhar => GEORGIAN_SMALL_LETTER_KHAR,
-            GeorgianSupplement::GeorgianSmallLetterGhan => GEORGIAN_SMALL_LETTER_GHAN,
-            GeorgianSupplement::GeorgianSmallLetterQar => GEORGIAN_SMALL_LETTER_QAR,
-            GeorgianSupplement::GeorgianSmallLetterShin => GEORGIAN_SMALL_LETTER_SHIN,
-            GeorgianSupplement::GeorgianSmallLetterChin => GEORGIAN_SMALL_LETTER_CHIN,
-            GeorgianSupplement::GeorgianSmallLetterCan => GEORGIAN_SMALL_LETTER_CAN,
-            GeorgianSupplement::GeorgianSmallLetterJil => GEORGIAN_SMALL_LETTER_JIL,
-            GeorgianSupplement::GeorgianSmallLetterCil => GEORGIAN_SMALL_LETTER_CIL,
-            GeorgianSupplement::GeorgianSmallLetterChar => GEORGIAN_SMALL_LETTER_CHAR,
-            GeorgianSupplement::GeorgianSmallLetterXan => GEORGIAN_SMALL_LETTER_XAN,
-            GeorgianSupplement::GeorgianSmallLetterJhan => GEORGIAN_SMALL_LETTER_JHAN,
-            GeorgianSupplement::GeorgianSmallLetterHae => GEORGIAN_SMALL_LETTER_HAE,
-            GeorgianSupplement::GeorgianSmallLetterHe => GEORGIAN_SMALL_LETTER_HE,
-            GeorgianSupplement::GeorgianSmallLetterHie => GEORGIAN_SMALL_LETTER_HIE,
-            GeorgianSupplement::GeorgianSmallLetterWe => GEORGIAN_SMALL_LETTER_WE,
-            GeorgianSupplement::GeorgianSmallLetterHar => GEORGIAN_SMALL_LETTER_HAR,
-            GeorgianSupplement::GeorgianSmallLetterHoe => GEORGIAN_SMALL_LETTER_HOE,
-            GeorgianSupplement::GeorgianSmallLetterYn => GEORGIAN_SMALL_LETTER_YN,
-            GeorgianSupplement::GeorgianSmallLetterAen => GEORGIAN_SMALL_LETTER_AEN,
+            GeorgianSupplement::GeorgianSmallLetterAn => 'ⴀ',
+            GeorgianSupplement::GeorgianSmallLetterBan => 'ⴁ',
+            GeorgianSupplement::GeorgianSmallLetterGan => 'ⴂ',
+            GeorgianSupplement::GeorgianSmallLetterDon => 'ⴃ',
+            GeorgianSupplement::GeorgianSmallLetterEn => 'ⴄ',
+            GeorgianSupplement::GeorgianSmallLetterVin => 'ⴅ',
+            GeorgianSupplement::GeorgianSmallLetterZen => 'ⴆ',
+            GeorgianSupplement::GeorgianSmallLetterTan => 'ⴇ',
+            GeorgianSupplement::GeorgianSmallLetterIn => 'ⴈ',
+            GeorgianSupplement::GeorgianSmallLetterKan => 'ⴉ',
+            GeorgianSupplement::GeorgianSmallLetterLas => 'ⴊ',
+            GeorgianSupplement::GeorgianSmallLetterMan => 'ⴋ',
+            GeorgianSupplement::GeorgianSmallLetterNar => 'ⴌ',
+            GeorgianSupplement::GeorgianSmallLetterOn => 'ⴍ',
+            GeorgianSupplement::GeorgianSmallLetterPar => 'ⴎ',
+            GeorgianSupplement::GeorgianSmallLetterZhar => 'ⴏ',
+            GeorgianSupplement::GeorgianSmallLetterRae => 'ⴐ',
+            GeorgianSupplement::GeorgianSmallLetterSan => 'ⴑ',
+            GeorgianSupplement::GeorgianSmallLetterTar => 'ⴒ',
+            GeorgianSupplement::GeorgianSmallLetterUn => 'ⴓ',
+            GeorgianSupplement::GeorgianSmallLetterPhar => 'ⴔ',
+            GeorgianSupplement::GeorgianSmallLetterKhar => 'ⴕ',
+            GeorgianSupplement::GeorgianSmallLetterGhan => 'ⴖ',
+            GeorgianSupplement::GeorgianSmallLetterQar => 'ⴗ',
+            GeorgianSupplement::GeorgianSmallLetterShin => 'ⴘ',
+            GeorgianSupplement::GeorgianSmallLetterChin => 'ⴙ',
+            GeorgianSupplement::GeorgianSmallLetterCan => 'ⴚ',
+            GeorgianSupplement::GeorgianSmallLetterJil => 'ⴛ',
+            GeorgianSupplement::GeorgianSmallLetterCil => 'ⴜ',
+            GeorgianSupplement::GeorgianSmallLetterChar => 'ⴝ',
+            GeorgianSupplement::GeorgianSmallLetterXan => 'ⴞ',
+            GeorgianSupplement::GeorgianSmallLetterJhan => 'ⴟ',
+            GeorgianSupplement::GeorgianSmallLetterHae => 'ⴠ',
+            GeorgianSupplement::GeorgianSmallLetterHe => 'ⴡ',
+            GeorgianSupplement::GeorgianSmallLetterHie => 'ⴢ',
+            GeorgianSupplement::GeorgianSmallLetterWe => 'ⴣ',
+            GeorgianSupplement::GeorgianSmallLetterHar => 'ⴤ',
+            GeorgianSupplement::GeorgianSmallLetterHoe => 'ⴥ',
+            GeorgianSupplement::GeorgianSmallLetterYn => 'ⴧ',
+            GeorgianSupplement::GeorgianSmallLetterAen => 'ⴭ',
         }
     }
 }
@@ -218,48 +134,47 @@ impl Into<char> for GeorgianSupplement {
 impl std::convert::TryFrom<char> for GeorgianSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            GEORGIAN_SMALL_LETTER_AN => Ok(GeorgianSupplement::GeorgianSmallLetterAn),
-            GEORGIAN_SMALL_LETTER_BAN => Ok(GeorgianSupplement::GeorgianSmallLetterBan),
-            GEORGIAN_SMALL_LETTER_GAN => Ok(GeorgianSupplement::GeorgianSmallLetterGan),
-            GEORGIAN_SMALL_LETTER_DON => Ok(GeorgianSupplement::GeorgianSmallLetterDon),
-            GEORGIAN_SMALL_LETTER_EN => Ok(GeorgianSupplement::GeorgianSmallLetterEn),
-            GEORGIAN_SMALL_LETTER_VIN => Ok(GeorgianSupplement::GeorgianSmallLetterVin),
-            GEORGIAN_SMALL_LETTER_ZEN => Ok(GeorgianSupplement::GeorgianSmallLetterZen),
-            GEORGIAN_SMALL_LETTER_TAN => Ok(GeorgianSupplement::GeorgianSmallLetterTan),
-            GEORGIAN_SMALL_LETTER_IN => Ok(GeorgianSupplement::GeorgianSmallLetterIn),
-            GEORGIAN_SMALL_LETTER_KAN => Ok(GeorgianSupplement::GeorgianSmallLetterKan),
-            GEORGIAN_SMALL_LETTER_LAS => Ok(GeorgianSupplement::GeorgianSmallLetterLas),
-            GEORGIAN_SMALL_LETTER_MAN => Ok(GeorgianSupplement::GeorgianSmallLetterMan),
-            GEORGIAN_SMALL_LETTER_NAR => Ok(GeorgianSupplement::GeorgianSmallLetterNar),
-            GEORGIAN_SMALL_LETTER_ON => Ok(GeorgianSupplement::GeorgianSmallLetterOn),
-            GEORGIAN_SMALL_LETTER_PAR => Ok(GeorgianSupplement::GeorgianSmallLetterPar),
-            GEORGIAN_SMALL_LETTER_ZHAR => Ok(GeorgianSupplement::GeorgianSmallLetterZhar),
-            GEORGIAN_SMALL_LETTER_RAE => Ok(GeorgianSupplement::GeorgianSmallLetterRae),
-            GEORGIAN_SMALL_LETTER_SAN => Ok(GeorgianSupplement::GeorgianSmallLetterSan),
-            GEORGIAN_SMALL_LETTER_TAR => Ok(GeorgianSupplement::GeorgianSmallLetterTar),
-            GEORGIAN_SMALL_LETTER_UN => Ok(GeorgianSupplement::GeorgianSmallLetterUn),
-            GEORGIAN_SMALL_LETTER_PHAR => Ok(GeorgianSupplement::GeorgianSmallLetterPhar),
-            GEORGIAN_SMALL_LETTER_KHAR => Ok(GeorgianSupplement::GeorgianSmallLetterKhar),
-            GEORGIAN_SMALL_LETTER_GHAN => Ok(GeorgianSupplement::GeorgianSmallLetterGhan),
-            GEORGIAN_SMALL_LETTER_QAR => Ok(GeorgianSupplement::GeorgianSmallLetterQar),
-            GEORGIAN_SMALL_LETTER_SHIN => Ok(GeorgianSupplement::GeorgianSmallLetterShin),
-            GEORGIAN_SMALL_LETTER_CHIN => Ok(GeorgianSupplement::GeorgianSmallLetterChin),
-            GEORGIAN_SMALL_LETTER_CAN => Ok(GeorgianSupplement::GeorgianSmallLetterCan),
-            GEORGIAN_SMALL_LETTER_JIL => Ok(GeorgianSupplement::GeorgianSmallLetterJil),
-            GEORGIAN_SMALL_LETTER_CIL => Ok(GeorgianSupplement::GeorgianSmallLetterCil),
-            GEORGIAN_SMALL_LETTER_CHAR => Ok(GeorgianSupplement::GeorgianSmallLetterChar),
-            GEORGIAN_SMALL_LETTER_XAN => Ok(GeorgianSupplement::GeorgianSmallLetterXan),
-            GEORGIAN_SMALL_LETTER_JHAN => Ok(GeorgianSupplement::GeorgianSmallLetterJhan),
-            GEORGIAN_SMALL_LETTER_HAE => Ok(GeorgianSupplement::GeorgianSmallLetterHae),
-            GEORGIAN_SMALL_LETTER_HE => Ok(GeorgianSupplement::GeorgianSmallLetterHe),
-            GEORGIAN_SMALL_LETTER_HIE => Ok(GeorgianSupplement::GeorgianSmallLetterHie),
-            GEORGIAN_SMALL_LETTER_WE => Ok(GeorgianSupplement::GeorgianSmallLetterWe),
-            GEORGIAN_SMALL_LETTER_HAR => Ok(GeorgianSupplement::GeorgianSmallLetterHar),
-            GEORGIAN_SMALL_LETTER_HOE => Ok(GeorgianSupplement::GeorgianSmallLetterHoe),
-            GEORGIAN_SMALL_LETTER_YN => Ok(GeorgianSupplement::GeorgianSmallLetterYn),
-            GEORGIAN_SMALL_LETTER_AEN => Ok(GeorgianSupplement::GeorgianSmallLetterAen),
+            'ⴀ' => Ok(GeorgianSupplement::GeorgianSmallLetterAn),
+            'ⴁ' => Ok(GeorgianSupplement::GeorgianSmallLetterBan),
+            'ⴂ' => Ok(GeorgianSupplement::GeorgianSmallLetterGan),
+            'ⴃ' => Ok(GeorgianSupplement::GeorgianSmallLetterDon),
+            'ⴄ' => Ok(GeorgianSupplement::GeorgianSmallLetterEn),
+            'ⴅ' => Ok(GeorgianSupplement::GeorgianSmallLetterVin),
+            'ⴆ' => Ok(GeorgianSupplement::GeorgianSmallLetterZen),
+            'ⴇ' => Ok(GeorgianSupplement::GeorgianSmallLetterTan),
+            'ⴈ' => Ok(GeorgianSupplement::GeorgianSmallLetterIn),
+            'ⴉ' => Ok(GeorgianSupplement::GeorgianSmallLetterKan),
+            'ⴊ' => Ok(GeorgianSupplement::GeorgianSmallLetterLas),
+            'ⴋ' => Ok(GeorgianSupplement::GeorgianSmallLetterMan),
+            'ⴌ' => Ok(GeorgianSupplement::GeorgianSmallLetterNar),
+            'ⴍ' => Ok(GeorgianSupplement::GeorgianSmallLetterOn),
+            'ⴎ' => Ok(GeorgianSupplement::GeorgianSmallLetterPar),
+            'ⴏ' => Ok(GeorgianSupplement::GeorgianSmallLetterZhar),
+            'ⴐ' => Ok(GeorgianSupplement::GeorgianSmallLetterRae),
+            'ⴑ' => Ok(GeorgianSupplement::GeorgianSmallLetterSan),
+            'ⴒ' => Ok(GeorgianSupplement::GeorgianSmallLetterTar),
+            'ⴓ' => Ok(GeorgianSupplement::GeorgianSmallLetterUn),
+            'ⴔ' => Ok(GeorgianSupplement::GeorgianSmallLetterPhar),
+            'ⴕ' => Ok(GeorgianSupplement::GeorgianSmallLetterKhar),
+            'ⴖ' => Ok(GeorgianSupplement::GeorgianSmallLetterGhan),
+            'ⴗ' => Ok(GeorgianSupplement::GeorgianSmallLetterQar),
+            'ⴘ' => Ok(GeorgianSupplement::GeorgianSmallLetterShin),
+            'ⴙ' => Ok(GeorgianSupplement::GeorgianSmallLetterChin),
+            'ⴚ' => Ok(GeorgianSupplement::GeorgianSmallLetterCan),
+            'ⴛ' => Ok(GeorgianSupplement::GeorgianSmallLetterJil),
+            'ⴜ' => Ok(GeorgianSupplement::GeorgianSmallLetterCil),
+            'ⴝ' => Ok(GeorgianSupplement::GeorgianSmallLetterChar),
+            'ⴞ' => Ok(GeorgianSupplement::GeorgianSmallLetterXan),
+            'ⴟ' => Ok(GeorgianSupplement::GeorgianSmallLetterJhan),
+            'ⴠ' => Ok(GeorgianSupplement::GeorgianSmallLetterHae),
+            'ⴡ' => Ok(GeorgianSupplement::GeorgianSmallLetterHe),
+            'ⴢ' => Ok(GeorgianSupplement::GeorgianSmallLetterHie),
+            'ⴣ' => Ok(GeorgianSupplement::GeorgianSmallLetterWe),
+            'ⴤ' => Ok(GeorgianSupplement::GeorgianSmallLetterHar),
+            'ⴥ' => Ok(GeorgianSupplement::GeorgianSmallLetterHoe),
+            'ⴧ' => Ok(GeorgianSupplement::GeorgianSmallLetterYn),
+            'ⴭ' => Ok(GeorgianSupplement::GeorgianSmallLetterAen),
             _ => Err(()),
         }
     }

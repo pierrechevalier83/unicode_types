@@ -1,142 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11c70}: '𑱰'
-    pub const HEAD_MARK: char = '𑱰';
-    /// \u{11c71}: '𑱱'
-    pub const MARK_SHAD: char = '𑱱';
-    /// \u{11c72}: '𑱲'
-    pub const LETTER_KA: char = '𑱲';
-    /// \u{11c73}: '𑱳'
-    pub const LETTER_KHA: char = '𑱳';
-    /// \u{11c74}: '𑱴'
-    pub const LETTER_GA: char = '𑱴';
-    /// \u{11c75}: '𑱵'
-    pub const LETTER_NGA: char = '𑱵';
-    /// \u{11c76}: '𑱶'
-    pub const LETTER_CA: char = '𑱶';
-    /// \u{11c77}: '𑱷'
-    pub const LETTER_CHA: char = '𑱷';
-    /// \u{11c78}: '𑱸'
-    pub const LETTER_JA: char = '𑱸';
-    /// \u{11c79}: '𑱹'
-    pub const LETTER_NYA: char = '𑱹';
-    /// \u{11c7a}: '𑱺'
-    pub const LETTER_TA: char = '𑱺';
-    /// \u{11c7b}: '𑱻'
-    pub const LETTER_THA: char = '𑱻';
-    /// \u{11c7c}: '𑱼'
-    pub const LETTER_DA: char = '𑱼';
-    /// \u{11c7d}: '𑱽'
-    pub const LETTER_NA: char = '𑱽';
-    /// \u{11c7e}: '𑱾'
-    pub const LETTER_PA: char = '𑱾';
-    /// \u{11c7f}: '𑱿'
-    pub const LETTER_PHA: char = '𑱿';
-    /// \u{11c80}: '𑲀'
-    pub const LETTER_BA: char = '𑲀';
-    /// \u{11c81}: '𑲁'
-    pub const LETTER_MA: char = '𑲁';
-    /// \u{11c82}: '𑲂'
-    pub const LETTER_TSA: char = '𑲂';
-    /// \u{11c83}: '𑲃'
-    pub const LETTER_TSHA: char = '𑲃';
-    /// \u{11c84}: '𑲄'
-    pub const LETTER_DZA: char = '𑲄';
-    /// \u{11c85}: '𑲅'
-    pub const LETTER_WA: char = '𑲅';
-    /// \u{11c86}: '𑲆'
-    pub const LETTER_ZHA: char = '𑲆';
-    /// \u{11c87}: '𑲇'
-    pub const LETTER_ZA: char = '𑲇';
-    /// \u{11c88}: '𑲈'
-    pub const LETTER__DASH_A: char = '𑲈';
-    /// \u{11c89}: '𑲉'
-    pub const LETTER_YA: char = '𑲉';
-    /// \u{11c8a}: '𑲊'
-    pub const LETTER_RA: char = '𑲊';
-    /// \u{11c8b}: '𑲋'
-    pub const LETTER_LA: char = '𑲋';
-    /// \u{11c8c}: '𑲌'
-    pub const LETTER_SHA: char = '𑲌';
-    /// \u{11c8d}: '𑲍'
-    pub const LETTER_SA: char = '𑲍';
-    /// \u{11c8e}: '𑲎'
-    pub const LETTER_HA: char = '𑲎';
-    /// \u{11c8f}: '𑲏'
-    pub const LETTER_A: char = '𑲏';
-    /// \u{11c92}: '𑲒'
-    pub const SUBJOINED_LETTER_KA: char = '𑲒';
-    /// \u{11c93}: '𑲓'
-    pub const SUBJOINED_LETTER_KHA: char = '𑲓';
-    /// \u{11c94}: '𑲔'
-    pub const SUBJOINED_LETTER_GA: char = '𑲔';
-    /// \u{11c95}: '𑲕'
-    pub const SUBJOINED_LETTER_NGA: char = '𑲕';
-    /// \u{11c96}: '𑲖'
-    pub const SUBJOINED_LETTER_CA: char = '𑲖';
-    /// \u{11c97}: '𑲗'
-    pub const SUBJOINED_LETTER_CHA: char = '𑲗';
-    /// \u{11c98}: '𑲘'
-    pub const SUBJOINED_LETTER_JA: char = '𑲘';
-    /// \u{11c99}: '𑲙'
-    pub const SUBJOINED_LETTER_NYA: char = '𑲙';
-    /// \u{11c9a}: '𑲚'
-    pub const SUBJOINED_LETTER_TA: char = '𑲚';
-    /// \u{11c9b}: '𑲛'
-    pub const SUBJOINED_LETTER_THA: char = '𑲛';
-    /// \u{11c9c}: '𑲜'
-    pub const SUBJOINED_LETTER_DA: char = '𑲜';
-    /// \u{11c9d}: '𑲝'
-    pub const SUBJOINED_LETTER_NA: char = '𑲝';
-    /// \u{11c9e}: '𑲞'
-    pub const SUBJOINED_LETTER_PA: char = '𑲞';
-    /// \u{11c9f}: '𑲟'
-    pub const SUBJOINED_LETTER_PHA: char = '𑲟';
-    /// \u{11ca0}: '𑲠'
-    pub const SUBJOINED_LETTER_BA: char = '𑲠';
-    /// \u{11ca1}: '𑲡'
-    pub const SUBJOINED_LETTER_MA: char = '𑲡';
-    /// \u{11ca2}: '𑲢'
-    pub const SUBJOINED_LETTER_TSA: char = '𑲢';
-    /// \u{11ca3}: '𑲣'
-    pub const SUBJOINED_LETTER_TSHA: char = '𑲣';
-    /// \u{11ca4}: '𑲤'
-    pub const SUBJOINED_LETTER_DZA: char = '𑲤';
-    /// \u{11ca5}: '𑲥'
-    pub const SUBJOINED_LETTER_WA: char = '𑲥';
-    /// \u{11ca6}: '𑲦'
-    pub const SUBJOINED_LETTER_ZHA: char = '𑲦';
-    /// \u{11ca7}: '𑲧'
-    pub const SUBJOINED_LETTER_ZA: char = '𑲧';
-    /// \u{11ca9}: '𑲩'
-    pub const SUBJOINED_LETTER_YA: char = '𑲩';
-    /// \u{11caa}: '𑲪'
-    pub const SUBJOINED_LETTER_RA: char = '𑲪';
-    /// \u{11cab}: '𑲫'
-    pub const SUBJOINED_LETTER_LA: char = '𑲫';
-    /// \u{11cac}: '𑲬'
-    pub const SUBJOINED_LETTER_SHA: char = '𑲬';
-    /// \u{11cad}: '𑲭'
-    pub const SUBJOINED_LETTER_SA: char = '𑲭';
-    /// \u{11cae}: '𑲮'
-    pub const SUBJOINED_LETTER_HA: char = '𑲮';
-    /// \u{11caf}: '𑲯'
-    pub const SUBJOINED_LETTER_A: char = '𑲯';
-    /// \u{11cb0}: '𑲰'
-    pub const VOWEL_SIGN_AA: char = '𑲰';
-    /// \u{11cb1}: '𑲱'
-    pub const VOWEL_SIGN_I: char = '𑲱';
-    /// \u{11cb2}: '𑲲'
-    pub const VOWEL_SIGN_U: char = '𑲲';
-    /// \u{11cb3}: '𑲳'
-    pub const VOWEL_SIGN_E: char = '𑲳';
-    /// \u{11cb4}: '𑲴'
-    pub const VOWEL_SIGN_O: char = '𑲴';
-    /// \u{11cb5}: '𑲵'
-    pub const SIGN_ANUSVARA: char = '𑲵';
-    /// \u{11cb6}: '𑲶'
-    pub const SIGN_CANDRABINDU: char = '𑲶';
-}
 
 /// An enum to represent all characters in the Marchen block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -281,76 +142,75 @@ pub enum Marchen {
 
 impl Into<char> for Marchen {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Marchen::HeadMark => HEAD_MARK,
-            Marchen::MarkShad => MARK_SHAD,
-            Marchen::LetterKa => LETTER_KA,
-            Marchen::LetterKha => LETTER_KHA,
-            Marchen::LetterGa => LETTER_GA,
-            Marchen::LetterNga => LETTER_NGA,
-            Marchen::LetterCa => LETTER_CA,
-            Marchen::LetterCha => LETTER_CHA,
-            Marchen::LetterJa => LETTER_JA,
-            Marchen::LetterNya => LETTER_NYA,
-            Marchen::LetterTa => LETTER_TA,
-            Marchen::LetterTha => LETTER_THA,
-            Marchen::LetterDa => LETTER_DA,
-            Marchen::LetterNa => LETTER_NA,
-            Marchen::LetterPa => LETTER_PA,
-            Marchen::LetterPha => LETTER_PHA,
-            Marchen::LetterBa => LETTER_BA,
-            Marchen::LetterMa => LETTER_MA,
-            Marchen::LetterTsa => LETTER_TSA,
-            Marchen::LetterTsha => LETTER_TSHA,
-            Marchen::LetterDza => LETTER_DZA,
-            Marchen::LetterWa => LETTER_WA,
-            Marchen::LetterZha => LETTER_ZHA,
-            Marchen::LetterZa => LETTER_ZA,
-            Marchen::LetterDashA => LETTER__DASH_A,
-            Marchen::LetterYa => LETTER_YA,
-            Marchen::LetterRa => LETTER_RA,
-            Marchen::LetterLa => LETTER_LA,
-            Marchen::LetterSha => LETTER_SHA,
-            Marchen::LetterSa => LETTER_SA,
-            Marchen::LetterHa => LETTER_HA,
-            Marchen::LetterA => LETTER_A,
-            Marchen::SubjoinedLetterKa => SUBJOINED_LETTER_KA,
-            Marchen::SubjoinedLetterKha => SUBJOINED_LETTER_KHA,
-            Marchen::SubjoinedLetterGa => SUBJOINED_LETTER_GA,
-            Marchen::SubjoinedLetterNga => SUBJOINED_LETTER_NGA,
-            Marchen::SubjoinedLetterCa => SUBJOINED_LETTER_CA,
-            Marchen::SubjoinedLetterCha => SUBJOINED_LETTER_CHA,
-            Marchen::SubjoinedLetterJa => SUBJOINED_LETTER_JA,
-            Marchen::SubjoinedLetterNya => SUBJOINED_LETTER_NYA,
-            Marchen::SubjoinedLetterTa => SUBJOINED_LETTER_TA,
-            Marchen::SubjoinedLetterTha => SUBJOINED_LETTER_THA,
-            Marchen::SubjoinedLetterDa => SUBJOINED_LETTER_DA,
-            Marchen::SubjoinedLetterNa => SUBJOINED_LETTER_NA,
-            Marchen::SubjoinedLetterPa => SUBJOINED_LETTER_PA,
-            Marchen::SubjoinedLetterPha => SUBJOINED_LETTER_PHA,
-            Marchen::SubjoinedLetterBa => SUBJOINED_LETTER_BA,
-            Marchen::SubjoinedLetterMa => SUBJOINED_LETTER_MA,
-            Marchen::SubjoinedLetterTsa => SUBJOINED_LETTER_TSA,
-            Marchen::SubjoinedLetterTsha => SUBJOINED_LETTER_TSHA,
-            Marchen::SubjoinedLetterDza => SUBJOINED_LETTER_DZA,
-            Marchen::SubjoinedLetterWa => SUBJOINED_LETTER_WA,
-            Marchen::SubjoinedLetterZha => SUBJOINED_LETTER_ZHA,
-            Marchen::SubjoinedLetterZa => SUBJOINED_LETTER_ZA,
-            Marchen::SubjoinedLetterYa => SUBJOINED_LETTER_YA,
-            Marchen::SubjoinedLetterRa => SUBJOINED_LETTER_RA,
-            Marchen::SubjoinedLetterLa => SUBJOINED_LETTER_LA,
-            Marchen::SubjoinedLetterSha => SUBJOINED_LETTER_SHA,
-            Marchen::SubjoinedLetterSa => SUBJOINED_LETTER_SA,
-            Marchen::SubjoinedLetterHa => SUBJOINED_LETTER_HA,
-            Marchen::SubjoinedLetterA => SUBJOINED_LETTER_A,
-            Marchen::VowelSignAa => VOWEL_SIGN_AA,
-            Marchen::VowelSignI => VOWEL_SIGN_I,
-            Marchen::VowelSignU => VOWEL_SIGN_U,
-            Marchen::VowelSignE => VOWEL_SIGN_E,
-            Marchen::VowelSignO => VOWEL_SIGN_O,
-            Marchen::SignAnusvara => SIGN_ANUSVARA,
-            Marchen::SignCandrabindu => SIGN_CANDRABINDU,
+            Marchen::HeadMark => '𑱰',
+            Marchen::MarkShad => '𑱱',
+            Marchen::LetterKa => '𑱲',
+            Marchen::LetterKha => '𑱳',
+            Marchen::LetterGa => '𑱴',
+            Marchen::LetterNga => '𑱵',
+            Marchen::LetterCa => '𑱶',
+            Marchen::LetterCha => '𑱷',
+            Marchen::LetterJa => '𑱸',
+            Marchen::LetterNya => '𑱹',
+            Marchen::LetterTa => '𑱺',
+            Marchen::LetterTha => '𑱻',
+            Marchen::LetterDa => '𑱼',
+            Marchen::LetterNa => '𑱽',
+            Marchen::LetterPa => '𑱾',
+            Marchen::LetterPha => '𑱿',
+            Marchen::LetterBa => '𑲀',
+            Marchen::LetterMa => '𑲁',
+            Marchen::LetterTsa => '𑲂',
+            Marchen::LetterTsha => '𑲃',
+            Marchen::LetterDza => '𑲄',
+            Marchen::LetterWa => '𑲅',
+            Marchen::LetterZha => '𑲆',
+            Marchen::LetterZa => '𑲇',
+            Marchen::LetterDashA => '𑲈',
+            Marchen::LetterYa => '𑲉',
+            Marchen::LetterRa => '𑲊',
+            Marchen::LetterLa => '𑲋',
+            Marchen::LetterSha => '𑲌',
+            Marchen::LetterSa => '𑲍',
+            Marchen::LetterHa => '𑲎',
+            Marchen::LetterA => '𑲏',
+            Marchen::SubjoinedLetterKa => '𑲒',
+            Marchen::SubjoinedLetterKha => '𑲓',
+            Marchen::SubjoinedLetterGa => '𑲔',
+            Marchen::SubjoinedLetterNga => '𑲕',
+            Marchen::SubjoinedLetterCa => '𑲖',
+            Marchen::SubjoinedLetterCha => '𑲗',
+            Marchen::SubjoinedLetterJa => '𑲘',
+            Marchen::SubjoinedLetterNya => '𑲙',
+            Marchen::SubjoinedLetterTa => '𑲚',
+            Marchen::SubjoinedLetterTha => '𑲛',
+            Marchen::SubjoinedLetterDa => '𑲜',
+            Marchen::SubjoinedLetterNa => '𑲝',
+            Marchen::SubjoinedLetterPa => '𑲞',
+            Marchen::SubjoinedLetterPha => '𑲟',
+            Marchen::SubjoinedLetterBa => '𑲠',
+            Marchen::SubjoinedLetterMa => '𑲡',
+            Marchen::SubjoinedLetterTsa => '𑲢',
+            Marchen::SubjoinedLetterTsha => '𑲣',
+            Marchen::SubjoinedLetterDza => '𑲤',
+            Marchen::SubjoinedLetterWa => '𑲥',
+            Marchen::SubjoinedLetterZha => '𑲦',
+            Marchen::SubjoinedLetterZa => '𑲧',
+            Marchen::SubjoinedLetterYa => '𑲩',
+            Marchen::SubjoinedLetterRa => '𑲪',
+            Marchen::SubjoinedLetterLa => '𑲫',
+            Marchen::SubjoinedLetterSha => '𑲬',
+            Marchen::SubjoinedLetterSa => '𑲭',
+            Marchen::SubjoinedLetterHa => '𑲮',
+            Marchen::SubjoinedLetterA => '𑲯',
+            Marchen::VowelSignAa => '𑲰',
+            Marchen::VowelSignI => '𑲱',
+            Marchen::VowelSignU => '𑲲',
+            Marchen::VowelSignE => '𑲳',
+            Marchen::VowelSignO => '𑲴',
+            Marchen::SignAnusvara => '𑲵',
+            Marchen::SignCandrabindu => '𑲶',
         }
     }
 }
@@ -358,76 +218,75 @@ impl Into<char> for Marchen {
 impl std::convert::TryFrom<char> for Marchen {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            HEAD_MARK => Ok(Marchen::HeadMark),
-            MARK_SHAD => Ok(Marchen::MarkShad),
-            LETTER_KA => Ok(Marchen::LetterKa),
-            LETTER_KHA => Ok(Marchen::LetterKha),
-            LETTER_GA => Ok(Marchen::LetterGa),
-            LETTER_NGA => Ok(Marchen::LetterNga),
-            LETTER_CA => Ok(Marchen::LetterCa),
-            LETTER_CHA => Ok(Marchen::LetterCha),
-            LETTER_JA => Ok(Marchen::LetterJa),
-            LETTER_NYA => Ok(Marchen::LetterNya),
-            LETTER_TA => Ok(Marchen::LetterTa),
-            LETTER_THA => Ok(Marchen::LetterTha),
-            LETTER_DA => Ok(Marchen::LetterDa),
-            LETTER_NA => Ok(Marchen::LetterNa),
-            LETTER_PA => Ok(Marchen::LetterPa),
-            LETTER_PHA => Ok(Marchen::LetterPha),
-            LETTER_BA => Ok(Marchen::LetterBa),
-            LETTER_MA => Ok(Marchen::LetterMa),
-            LETTER_TSA => Ok(Marchen::LetterTsa),
-            LETTER_TSHA => Ok(Marchen::LetterTsha),
-            LETTER_DZA => Ok(Marchen::LetterDza),
-            LETTER_WA => Ok(Marchen::LetterWa),
-            LETTER_ZHA => Ok(Marchen::LetterZha),
-            LETTER_ZA => Ok(Marchen::LetterZa),
-            LETTER__DASH_A => Ok(Marchen::LetterDashA),
-            LETTER_YA => Ok(Marchen::LetterYa),
-            LETTER_RA => Ok(Marchen::LetterRa),
-            LETTER_LA => Ok(Marchen::LetterLa),
-            LETTER_SHA => Ok(Marchen::LetterSha),
-            LETTER_SA => Ok(Marchen::LetterSa),
-            LETTER_HA => Ok(Marchen::LetterHa),
-            LETTER_A => Ok(Marchen::LetterA),
-            SUBJOINED_LETTER_KA => Ok(Marchen::SubjoinedLetterKa),
-            SUBJOINED_LETTER_KHA => Ok(Marchen::SubjoinedLetterKha),
-            SUBJOINED_LETTER_GA => Ok(Marchen::SubjoinedLetterGa),
-            SUBJOINED_LETTER_NGA => Ok(Marchen::SubjoinedLetterNga),
-            SUBJOINED_LETTER_CA => Ok(Marchen::SubjoinedLetterCa),
-            SUBJOINED_LETTER_CHA => Ok(Marchen::SubjoinedLetterCha),
-            SUBJOINED_LETTER_JA => Ok(Marchen::SubjoinedLetterJa),
-            SUBJOINED_LETTER_NYA => Ok(Marchen::SubjoinedLetterNya),
-            SUBJOINED_LETTER_TA => Ok(Marchen::SubjoinedLetterTa),
-            SUBJOINED_LETTER_THA => Ok(Marchen::SubjoinedLetterTha),
-            SUBJOINED_LETTER_DA => Ok(Marchen::SubjoinedLetterDa),
-            SUBJOINED_LETTER_NA => Ok(Marchen::SubjoinedLetterNa),
-            SUBJOINED_LETTER_PA => Ok(Marchen::SubjoinedLetterPa),
-            SUBJOINED_LETTER_PHA => Ok(Marchen::SubjoinedLetterPha),
-            SUBJOINED_LETTER_BA => Ok(Marchen::SubjoinedLetterBa),
-            SUBJOINED_LETTER_MA => Ok(Marchen::SubjoinedLetterMa),
-            SUBJOINED_LETTER_TSA => Ok(Marchen::SubjoinedLetterTsa),
-            SUBJOINED_LETTER_TSHA => Ok(Marchen::SubjoinedLetterTsha),
-            SUBJOINED_LETTER_DZA => Ok(Marchen::SubjoinedLetterDza),
-            SUBJOINED_LETTER_WA => Ok(Marchen::SubjoinedLetterWa),
-            SUBJOINED_LETTER_ZHA => Ok(Marchen::SubjoinedLetterZha),
-            SUBJOINED_LETTER_ZA => Ok(Marchen::SubjoinedLetterZa),
-            SUBJOINED_LETTER_YA => Ok(Marchen::SubjoinedLetterYa),
-            SUBJOINED_LETTER_RA => Ok(Marchen::SubjoinedLetterRa),
-            SUBJOINED_LETTER_LA => Ok(Marchen::SubjoinedLetterLa),
-            SUBJOINED_LETTER_SHA => Ok(Marchen::SubjoinedLetterSha),
-            SUBJOINED_LETTER_SA => Ok(Marchen::SubjoinedLetterSa),
-            SUBJOINED_LETTER_HA => Ok(Marchen::SubjoinedLetterHa),
-            SUBJOINED_LETTER_A => Ok(Marchen::SubjoinedLetterA),
-            VOWEL_SIGN_AA => Ok(Marchen::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Marchen::VowelSignI),
-            VOWEL_SIGN_U => Ok(Marchen::VowelSignU),
-            VOWEL_SIGN_E => Ok(Marchen::VowelSignE),
-            VOWEL_SIGN_O => Ok(Marchen::VowelSignO),
-            SIGN_ANUSVARA => Ok(Marchen::SignAnusvara),
-            SIGN_CANDRABINDU => Ok(Marchen::SignCandrabindu),
+            '𑱰' => Ok(Marchen::HeadMark),
+            '𑱱' => Ok(Marchen::MarkShad),
+            '𑱲' => Ok(Marchen::LetterKa),
+            '𑱳' => Ok(Marchen::LetterKha),
+            '𑱴' => Ok(Marchen::LetterGa),
+            '𑱵' => Ok(Marchen::LetterNga),
+            '𑱶' => Ok(Marchen::LetterCa),
+            '𑱷' => Ok(Marchen::LetterCha),
+            '𑱸' => Ok(Marchen::LetterJa),
+            '𑱹' => Ok(Marchen::LetterNya),
+            '𑱺' => Ok(Marchen::LetterTa),
+            '𑱻' => Ok(Marchen::LetterTha),
+            '𑱼' => Ok(Marchen::LetterDa),
+            '𑱽' => Ok(Marchen::LetterNa),
+            '𑱾' => Ok(Marchen::LetterPa),
+            '𑱿' => Ok(Marchen::LetterPha),
+            '𑲀' => Ok(Marchen::LetterBa),
+            '𑲁' => Ok(Marchen::LetterMa),
+            '𑲂' => Ok(Marchen::LetterTsa),
+            '𑲃' => Ok(Marchen::LetterTsha),
+            '𑲄' => Ok(Marchen::LetterDza),
+            '𑲅' => Ok(Marchen::LetterWa),
+            '𑲆' => Ok(Marchen::LetterZha),
+            '𑲇' => Ok(Marchen::LetterZa),
+            '𑲈' => Ok(Marchen::LetterDashA),
+            '𑲉' => Ok(Marchen::LetterYa),
+            '𑲊' => Ok(Marchen::LetterRa),
+            '𑲋' => Ok(Marchen::LetterLa),
+            '𑲌' => Ok(Marchen::LetterSha),
+            '𑲍' => Ok(Marchen::LetterSa),
+            '𑲎' => Ok(Marchen::LetterHa),
+            '𑲏' => Ok(Marchen::LetterA),
+            '𑲒' => Ok(Marchen::SubjoinedLetterKa),
+            '𑲓' => Ok(Marchen::SubjoinedLetterKha),
+            '𑲔' => Ok(Marchen::SubjoinedLetterGa),
+            '𑲕' => Ok(Marchen::SubjoinedLetterNga),
+            '𑲖' => Ok(Marchen::SubjoinedLetterCa),
+            '𑲗' => Ok(Marchen::SubjoinedLetterCha),
+            '𑲘' => Ok(Marchen::SubjoinedLetterJa),
+            '𑲙' => Ok(Marchen::SubjoinedLetterNya),
+            '𑲚' => Ok(Marchen::SubjoinedLetterTa),
+            '𑲛' => Ok(Marchen::SubjoinedLetterTha),
+            '𑲜' => Ok(Marchen::SubjoinedLetterDa),
+            '𑲝' => Ok(Marchen::SubjoinedLetterNa),
+            '𑲞' => Ok(Marchen::SubjoinedLetterPa),
+            '𑲟' => Ok(Marchen::SubjoinedLetterPha),
+            '𑲠' => Ok(Marchen::SubjoinedLetterBa),
+            '𑲡' => Ok(Marchen::SubjoinedLetterMa),
+            '𑲢' => Ok(Marchen::SubjoinedLetterTsa),
+            '𑲣' => Ok(Marchen::SubjoinedLetterTsha),
+            '𑲤' => Ok(Marchen::SubjoinedLetterDza),
+            '𑲥' => Ok(Marchen::SubjoinedLetterWa),
+            '𑲦' => Ok(Marchen::SubjoinedLetterZha),
+            '𑲧' => Ok(Marchen::SubjoinedLetterZa),
+            '𑲩' => Ok(Marchen::SubjoinedLetterYa),
+            '𑲪' => Ok(Marchen::SubjoinedLetterRa),
+            '𑲫' => Ok(Marchen::SubjoinedLetterLa),
+            '𑲬' => Ok(Marchen::SubjoinedLetterSha),
+            '𑲭' => Ok(Marchen::SubjoinedLetterSa),
+            '𑲮' => Ok(Marchen::SubjoinedLetterHa),
+            '𑲯' => Ok(Marchen::SubjoinedLetterA),
+            '𑲰' => Ok(Marchen::VowelSignAa),
+            '𑲱' => Ok(Marchen::VowelSignI),
+            '𑲲' => Ok(Marchen::VowelSignU),
+            '𑲳' => Ok(Marchen::VowelSignE),
+            '𑲴' => Ok(Marchen::VowelSignO),
+            '𑲵' => Ok(Marchen::SignAnusvara),
+            '𑲶' => Ok(Marchen::SignCandrabindu),
             _ => Err(()),
         }
     }

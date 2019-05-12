@@ -1,56 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1d360}: '𝍠'
-    pub const COUNTING_ROD_UNIT_DIGIT_ONE: char = '𝍠';
-    /// \u{1d361}: '𝍡'
-    pub const COUNTING_ROD_UNIT_DIGIT_TWO: char = '𝍡';
-    /// \u{1d362}: '𝍢'
-    pub const COUNTING_ROD_UNIT_DIGIT_THREE: char = '𝍢';
-    /// \u{1d363}: '𝍣'
-    pub const COUNTING_ROD_UNIT_DIGIT_FOUR: char = '𝍣';
-    /// \u{1d364}: '𝍤'
-    pub const COUNTING_ROD_UNIT_DIGIT_FIVE: char = '𝍤';
-    /// \u{1d365}: '𝍥'
-    pub const COUNTING_ROD_UNIT_DIGIT_SIX: char = '𝍥';
-    /// \u{1d366}: '𝍦'
-    pub const COUNTING_ROD_UNIT_DIGIT_SEVEN: char = '𝍦';
-    /// \u{1d367}: '𝍧'
-    pub const COUNTING_ROD_UNIT_DIGIT_EIGHT: char = '𝍧';
-    /// \u{1d368}: '𝍨'
-    pub const COUNTING_ROD_UNIT_DIGIT_NINE: char = '𝍨';
-    /// \u{1d369}: '𝍩'
-    pub const COUNTING_ROD_TENS_DIGIT_ONE: char = '𝍩';
-    /// \u{1d36a}: '𝍪'
-    pub const COUNTING_ROD_TENS_DIGIT_TWO: char = '𝍪';
-    /// \u{1d36b}: '𝍫'
-    pub const COUNTING_ROD_TENS_DIGIT_THREE: char = '𝍫';
-    /// \u{1d36c}: '𝍬'
-    pub const COUNTING_ROD_TENS_DIGIT_FOUR: char = '𝍬';
-    /// \u{1d36d}: '𝍭'
-    pub const COUNTING_ROD_TENS_DIGIT_FIVE: char = '𝍭';
-    /// \u{1d36e}: '𝍮'
-    pub const COUNTING_ROD_TENS_DIGIT_SIX: char = '𝍮';
-    /// \u{1d36f}: '𝍯'
-    pub const COUNTING_ROD_TENS_DIGIT_SEVEN: char = '𝍯';
-    /// \u{1d370}: '𝍰'
-    pub const COUNTING_ROD_TENS_DIGIT_EIGHT: char = '𝍰';
-    /// \u{1d371}: '𝍱'
-    pub const COUNTING_ROD_TENS_DIGIT_NINE: char = '𝍱';
-    /// \u{1d372}: '𝍲'
-    pub const IDEOGRAPHIC_TALLY_MARK_ONE: char = '𝍲';
-    /// \u{1d373}: '𝍳'
-    pub const IDEOGRAPHIC_TALLY_MARK_TWO: char = '𝍳';
-    /// \u{1d374}: '𝍴'
-    pub const IDEOGRAPHIC_TALLY_MARK_THREE: char = '𝍴';
-    /// \u{1d375}: '𝍵'
-    pub const IDEOGRAPHIC_TALLY_MARK_FOUR: char = '𝍵';
-    /// \u{1d376}: '𝍶'
-    pub const IDEOGRAPHIC_TALLY_MARK_FIVE: char = '𝍶';
-    /// \u{1d377}: '𝍷'
-    pub const TALLY_MARK_ONE: char = '𝍷';
-    /// \u{1d378}: '𝍸'
-    pub const TALLY_MARK_FIVE: char = '𝍸';
-}
 
 /// An enum to represent all characters in the CountingRodNumerals block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -109,33 +56,32 @@ pub enum CountingRodNumerals {
 
 impl Into<char> for CountingRodNumerals {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CountingRodNumerals::CountingRodUnitDigitOne => COUNTING_ROD_UNIT_DIGIT_ONE,
-            CountingRodNumerals::CountingRodUnitDigitTwo => COUNTING_ROD_UNIT_DIGIT_TWO,
-            CountingRodNumerals::CountingRodUnitDigitThree => COUNTING_ROD_UNIT_DIGIT_THREE,
-            CountingRodNumerals::CountingRodUnitDigitFour => COUNTING_ROD_UNIT_DIGIT_FOUR,
-            CountingRodNumerals::CountingRodUnitDigitFive => COUNTING_ROD_UNIT_DIGIT_FIVE,
-            CountingRodNumerals::CountingRodUnitDigitSix => COUNTING_ROD_UNIT_DIGIT_SIX,
-            CountingRodNumerals::CountingRodUnitDigitSeven => COUNTING_ROD_UNIT_DIGIT_SEVEN,
-            CountingRodNumerals::CountingRodUnitDigitEight => COUNTING_ROD_UNIT_DIGIT_EIGHT,
-            CountingRodNumerals::CountingRodUnitDigitNine => COUNTING_ROD_UNIT_DIGIT_NINE,
-            CountingRodNumerals::CountingRodTensDigitOne => COUNTING_ROD_TENS_DIGIT_ONE,
-            CountingRodNumerals::CountingRodTensDigitTwo => COUNTING_ROD_TENS_DIGIT_TWO,
-            CountingRodNumerals::CountingRodTensDigitThree => COUNTING_ROD_TENS_DIGIT_THREE,
-            CountingRodNumerals::CountingRodTensDigitFour => COUNTING_ROD_TENS_DIGIT_FOUR,
-            CountingRodNumerals::CountingRodTensDigitFive => COUNTING_ROD_TENS_DIGIT_FIVE,
-            CountingRodNumerals::CountingRodTensDigitSix => COUNTING_ROD_TENS_DIGIT_SIX,
-            CountingRodNumerals::CountingRodTensDigitSeven => COUNTING_ROD_TENS_DIGIT_SEVEN,
-            CountingRodNumerals::CountingRodTensDigitEight => COUNTING_ROD_TENS_DIGIT_EIGHT,
-            CountingRodNumerals::CountingRodTensDigitNine => COUNTING_ROD_TENS_DIGIT_NINE,
-            CountingRodNumerals::IdeographicTallyMarkOne => IDEOGRAPHIC_TALLY_MARK_ONE,
-            CountingRodNumerals::IdeographicTallyMarkTwo => IDEOGRAPHIC_TALLY_MARK_TWO,
-            CountingRodNumerals::IdeographicTallyMarkThree => IDEOGRAPHIC_TALLY_MARK_THREE,
-            CountingRodNumerals::IdeographicTallyMarkFour => IDEOGRAPHIC_TALLY_MARK_FOUR,
-            CountingRodNumerals::IdeographicTallyMarkFive => IDEOGRAPHIC_TALLY_MARK_FIVE,
-            CountingRodNumerals::TallyMarkOne => TALLY_MARK_ONE,
-            CountingRodNumerals::TallyMarkFive => TALLY_MARK_FIVE,
+            CountingRodNumerals::CountingRodUnitDigitOne => '𝍠',
+            CountingRodNumerals::CountingRodUnitDigitTwo => '𝍡',
+            CountingRodNumerals::CountingRodUnitDigitThree => '𝍢',
+            CountingRodNumerals::CountingRodUnitDigitFour => '𝍣',
+            CountingRodNumerals::CountingRodUnitDigitFive => '𝍤',
+            CountingRodNumerals::CountingRodUnitDigitSix => '𝍥',
+            CountingRodNumerals::CountingRodUnitDigitSeven => '𝍦',
+            CountingRodNumerals::CountingRodUnitDigitEight => '𝍧',
+            CountingRodNumerals::CountingRodUnitDigitNine => '𝍨',
+            CountingRodNumerals::CountingRodTensDigitOne => '𝍩',
+            CountingRodNumerals::CountingRodTensDigitTwo => '𝍪',
+            CountingRodNumerals::CountingRodTensDigitThree => '𝍫',
+            CountingRodNumerals::CountingRodTensDigitFour => '𝍬',
+            CountingRodNumerals::CountingRodTensDigitFive => '𝍭',
+            CountingRodNumerals::CountingRodTensDigitSix => '𝍮',
+            CountingRodNumerals::CountingRodTensDigitSeven => '𝍯',
+            CountingRodNumerals::CountingRodTensDigitEight => '𝍰',
+            CountingRodNumerals::CountingRodTensDigitNine => '𝍱',
+            CountingRodNumerals::IdeographicTallyMarkOne => '𝍲',
+            CountingRodNumerals::IdeographicTallyMarkTwo => '𝍳',
+            CountingRodNumerals::IdeographicTallyMarkThree => '𝍴',
+            CountingRodNumerals::IdeographicTallyMarkFour => '𝍵',
+            CountingRodNumerals::IdeographicTallyMarkFive => '𝍶',
+            CountingRodNumerals::TallyMarkOne => '𝍷',
+            CountingRodNumerals::TallyMarkFive => '𝍸',
         }
     }
 }
@@ -143,33 +89,32 @@ impl Into<char> for CountingRodNumerals {
 impl std::convert::TryFrom<char> for CountingRodNumerals {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            COUNTING_ROD_UNIT_DIGIT_ONE => Ok(CountingRodNumerals::CountingRodUnitDigitOne),
-            COUNTING_ROD_UNIT_DIGIT_TWO => Ok(CountingRodNumerals::CountingRodUnitDigitTwo),
-            COUNTING_ROD_UNIT_DIGIT_THREE => Ok(CountingRodNumerals::CountingRodUnitDigitThree),
-            COUNTING_ROD_UNIT_DIGIT_FOUR => Ok(CountingRodNumerals::CountingRodUnitDigitFour),
-            COUNTING_ROD_UNIT_DIGIT_FIVE => Ok(CountingRodNumerals::CountingRodUnitDigitFive),
-            COUNTING_ROD_UNIT_DIGIT_SIX => Ok(CountingRodNumerals::CountingRodUnitDigitSix),
-            COUNTING_ROD_UNIT_DIGIT_SEVEN => Ok(CountingRodNumerals::CountingRodUnitDigitSeven),
-            COUNTING_ROD_UNIT_DIGIT_EIGHT => Ok(CountingRodNumerals::CountingRodUnitDigitEight),
-            COUNTING_ROD_UNIT_DIGIT_NINE => Ok(CountingRodNumerals::CountingRodUnitDigitNine),
-            COUNTING_ROD_TENS_DIGIT_ONE => Ok(CountingRodNumerals::CountingRodTensDigitOne),
-            COUNTING_ROD_TENS_DIGIT_TWO => Ok(CountingRodNumerals::CountingRodTensDigitTwo),
-            COUNTING_ROD_TENS_DIGIT_THREE => Ok(CountingRodNumerals::CountingRodTensDigitThree),
-            COUNTING_ROD_TENS_DIGIT_FOUR => Ok(CountingRodNumerals::CountingRodTensDigitFour),
-            COUNTING_ROD_TENS_DIGIT_FIVE => Ok(CountingRodNumerals::CountingRodTensDigitFive),
-            COUNTING_ROD_TENS_DIGIT_SIX => Ok(CountingRodNumerals::CountingRodTensDigitSix),
-            COUNTING_ROD_TENS_DIGIT_SEVEN => Ok(CountingRodNumerals::CountingRodTensDigitSeven),
-            COUNTING_ROD_TENS_DIGIT_EIGHT => Ok(CountingRodNumerals::CountingRodTensDigitEight),
-            COUNTING_ROD_TENS_DIGIT_NINE => Ok(CountingRodNumerals::CountingRodTensDigitNine),
-            IDEOGRAPHIC_TALLY_MARK_ONE => Ok(CountingRodNumerals::IdeographicTallyMarkOne),
-            IDEOGRAPHIC_TALLY_MARK_TWO => Ok(CountingRodNumerals::IdeographicTallyMarkTwo),
-            IDEOGRAPHIC_TALLY_MARK_THREE => Ok(CountingRodNumerals::IdeographicTallyMarkThree),
-            IDEOGRAPHIC_TALLY_MARK_FOUR => Ok(CountingRodNumerals::IdeographicTallyMarkFour),
-            IDEOGRAPHIC_TALLY_MARK_FIVE => Ok(CountingRodNumerals::IdeographicTallyMarkFive),
-            TALLY_MARK_ONE => Ok(CountingRodNumerals::TallyMarkOne),
-            TALLY_MARK_FIVE => Ok(CountingRodNumerals::TallyMarkFive),
+            '𝍠' => Ok(CountingRodNumerals::CountingRodUnitDigitOne),
+            '𝍡' => Ok(CountingRodNumerals::CountingRodUnitDigitTwo),
+            '𝍢' => Ok(CountingRodNumerals::CountingRodUnitDigitThree),
+            '𝍣' => Ok(CountingRodNumerals::CountingRodUnitDigitFour),
+            '𝍤' => Ok(CountingRodNumerals::CountingRodUnitDigitFive),
+            '𝍥' => Ok(CountingRodNumerals::CountingRodUnitDigitSix),
+            '𝍦' => Ok(CountingRodNumerals::CountingRodUnitDigitSeven),
+            '𝍧' => Ok(CountingRodNumerals::CountingRodUnitDigitEight),
+            '𝍨' => Ok(CountingRodNumerals::CountingRodUnitDigitNine),
+            '𝍩' => Ok(CountingRodNumerals::CountingRodTensDigitOne),
+            '𝍪' => Ok(CountingRodNumerals::CountingRodTensDigitTwo),
+            '𝍫' => Ok(CountingRodNumerals::CountingRodTensDigitThree),
+            '𝍬' => Ok(CountingRodNumerals::CountingRodTensDigitFour),
+            '𝍭' => Ok(CountingRodNumerals::CountingRodTensDigitFive),
+            '𝍮' => Ok(CountingRodNumerals::CountingRodTensDigitSix),
+            '𝍯' => Ok(CountingRodNumerals::CountingRodTensDigitSeven),
+            '𝍰' => Ok(CountingRodNumerals::CountingRodTensDigitEight),
+            '𝍱' => Ok(CountingRodNumerals::CountingRodTensDigitNine),
+            '𝍲' => Ok(CountingRodNumerals::IdeographicTallyMarkOne),
+            '𝍳' => Ok(CountingRodNumerals::IdeographicTallyMarkTwo),
+            '𝍴' => Ok(CountingRodNumerals::IdeographicTallyMarkThree),
+            '𝍵' => Ok(CountingRodNumerals::IdeographicTallyMarkFour),
+            '𝍶' => Ok(CountingRodNumerals::IdeographicTallyMarkFive),
+            '𝍷' => Ok(CountingRodNumerals::TallyMarkOne),
+            '𝍸' => Ok(CountingRodNumerals::TallyMarkFive),
             _ => Err(()),
         }
     }

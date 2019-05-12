@@ -1,36 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{31f0}: 'ㇰ'
-    pub const KATAKANA_LETTER_SMALL_KU: char = 'ㇰ';
-    /// \u{31f1}: 'ㇱ'
-    pub const KATAKANA_LETTER_SMALL_SI: char = 'ㇱ';
-    /// \u{31f2}: 'ㇲ'
-    pub const KATAKANA_LETTER_SMALL_SU: char = 'ㇲ';
-    /// \u{31f3}: 'ㇳ'
-    pub const KATAKANA_LETTER_SMALL_TO: char = 'ㇳ';
-    /// \u{31f4}: 'ㇴ'
-    pub const KATAKANA_LETTER_SMALL_NU: char = 'ㇴ';
-    /// \u{31f5}: 'ㇵ'
-    pub const KATAKANA_LETTER_SMALL_HA: char = 'ㇵ';
-    /// \u{31f6}: 'ㇶ'
-    pub const KATAKANA_LETTER_SMALL_HI: char = 'ㇶ';
-    /// \u{31f7}: 'ㇷ'
-    pub const KATAKANA_LETTER_SMALL_HU: char = 'ㇷ';
-    /// \u{31f8}: 'ㇸ'
-    pub const KATAKANA_LETTER_SMALL_HE: char = 'ㇸ';
-    /// \u{31f9}: 'ㇹ'
-    pub const KATAKANA_LETTER_SMALL_HO: char = 'ㇹ';
-    /// \u{31fa}: 'ㇺ'
-    pub const KATAKANA_LETTER_SMALL_MU: char = 'ㇺ';
-    /// \u{31fb}: 'ㇻ'
-    pub const KATAKANA_LETTER_SMALL_RA: char = 'ㇻ';
-    /// \u{31fc}: 'ㇼ'
-    pub const KATAKANA_LETTER_SMALL_RI: char = 'ㇼ';
-    /// \u{31fd}: 'ㇽ'
-    pub const KATAKANA_LETTER_SMALL_RU: char = 'ㇽ';
-    /// \u{31fe}: 'ㇾ'
-    pub const KATAKANA_LETTER_SMALL_RE: char = 'ㇾ';
-}
 
 /// An enum to represent all characters in the KatakanaPhoneticExtensions block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -69,23 +36,22 @@ pub enum KatakanaPhoneticExtensions {
 
 impl Into<char> for KatakanaPhoneticExtensions {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            KatakanaPhoneticExtensions::KatakanaLetterSmallKu => KATAKANA_LETTER_SMALL_KU,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallSi => KATAKANA_LETTER_SMALL_SI,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallSu => KATAKANA_LETTER_SMALL_SU,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallTo => KATAKANA_LETTER_SMALL_TO,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallNu => KATAKANA_LETTER_SMALL_NU,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHa => KATAKANA_LETTER_SMALL_HA,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHi => KATAKANA_LETTER_SMALL_HI,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHu => KATAKANA_LETTER_SMALL_HU,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHe => KATAKANA_LETTER_SMALL_HE,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHo => KATAKANA_LETTER_SMALL_HO,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallMu => KATAKANA_LETTER_SMALL_MU,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallRa => KATAKANA_LETTER_SMALL_RA,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallRi => KATAKANA_LETTER_SMALL_RI,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallRu => KATAKANA_LETTER_SMALL_RU,
-            KatakanaPhoneticExtensions::KatakanaLetterSmallRe => KATAKANA_LETTER_SMALL_RE,
+            KatakanaPhoneticExtensions::KatakanaLetterSmallKu => 'ㇰ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallSi => 'ㇱ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallSu => 'ㇲ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallTo => 'ㇳ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallNu => 'ㇴ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallHa => 'ㇵ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallHi => 'ㇶ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallHu => 'ㇷ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallHe => 'ㇸ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallHo => 'ㇹ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallMu => 'ㇺ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallRa => 'ㇻ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallRi => 'ㇼ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallRu => 'ㇽ',
+            KatakanaPhoneticExtensions::KatakanaLetterSmallRe => 'ㇾ',
         }
     }
 }
@@ -93,23 +59,22 @@ impl Into<char> for KatakanaPhoneticExtensions {
 impl std::convert::TryFrom<char> for KatakanaPhoneticExtensions {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            KATAKANA_LETTER_SMALL_KU => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallKu),
-            KATAKANA_LETTER_SMALL_SI => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallSi),
-            KATAKANA_LETTER_SMALL_SU => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallSu),
-            KATAKANA_LETTER_SMALL_TO => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallTo),
-            KATAKANA_LETTER_SMALL_NU => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallNu),
-            KATAKANA_LETTER_SMALL_HA => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHa),
-            KATAKANA_LETTER_SMALL_HI => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHi),
-            KATAKANA_LETTER_SMALL_HU => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHu),
-            KATAKANA_LETTER_SMALL_HE => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHe),
-            KATAKANA_LETTER_SMALL_HO => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHo),
-            KATAKANA_LETTER_SMALL_MU => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallMu),
-            KATAKANA_LETTER_SMALL_RA => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallRa),
-            KATAKANA_LETTER_SMALL_RI => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallRi),
-            KATAKANA_LETTER_SMALL_RU => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallRu),
-            KATAKANA_LETTER_SMALL_RE => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallRe),
+            'ㇰ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallKu),
+            'ㇱ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallSi),
+            'ㇲ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallSu),
+            'ㇳ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallTo),
+            'ㇴ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallNu),
+            'ㇵ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHa),
+            'ㇶ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHi),
+            'ㇷ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHu),
+            'ㇸ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHe),
+            'ㇹ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallHo),
+            'ㇺ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallMu),
+            'ㇻ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallRa),
+            'ㇼ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallRi),
+            'ㇽ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallRu),
+            'ㇾ' => Ok(KatakanaPhoneticExtensions::KatakanaLetterSmallRe),
             _ => Err(()),
         }
     }

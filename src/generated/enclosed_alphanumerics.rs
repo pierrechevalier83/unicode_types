@@ -1,324 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2460}: '①'
-    pub const CIRCLED_DIGIT_ONE: char = '①';
-    /// \u{2461}: '②'
-    pub const CIRCLED_DIGIT_TWO: char = '②';
-    /// \u{2462}: '③'
-    pub const CIRCLED_DIGIT_THREE: char = '③';
-    /// \u{2463}: '④'
-    pub const CIRCLED_DIGIT_FOUR: char = '④';
-    /// \u{2464}: '⑤'
-    pub const CIRCLED_DIGIT_FIVE: char = '⑤';
-    /// \u{2465}: '⑥'
-    pub const CIRCLED_DIGIT_SIX: char = '⑥';
-    /// \u{2466}: '⑦'
-    pub const CIRCLED_DIGIT_SEVEN: char = '⑦';
-    /// \u{2467}: '⑧'
-    pub const CIRCLED_DIGIT_EIGHT: char = '⑧';
-    /// \u{2468}: '⑨'
-    pub const CIRCLED_DIGIT_NINE: char = '⑨';
-    /// \u{2469}: '⑩'
-    pub const CIRCLED_NUMBER_TEN: char = '⑩';
-    /// \u{246a}: '⑪'
-    pub const CIRCLED_NUMBER_ELEVEN: char = '⑪';
-    /// \u{246b}: '⑫'
-    pub const CIRCLED_NUMBER_TWELVE: char = '⑫';
-    /// \u{246c}: '⑬'
-    pub const CIRCLED_NUMBER_THIRTEEN: char = '⑬';
-    /// \u{246d}: '⑭'
-    pub const CIRCLED_NUMBER_FOURTEEN: char = '⑭';
-    /// \u{246e}: '⑮'
-    pub const CIRCLED_NUMBER_FIFTEEN: char = '⑮';
-    /// \u{246f}: '⑯'
-    pub const CIRCLED_NUMBER_SIXTEEN: char = '⑯';
-    /// \u{2470}: '⑰'
-    pub const CIRCLED_NUMBER_SEVENTEEN: char = '⑰';
-    /// \u{2471}: '⑱'
-    pub const CIRCLED_NUMBER_EIGHTEEN: char = '⑱';
-    /// \u{2472}: '⑲'
-    pub const CIRCLED_NUMBER_NINETEEN: char = '⑲';
-    /// \u{2473}: '⑳'
-    pub const CIRCLED_NUMBER_TWENTY: char = '⑳';
-    /// \u{2474}: '⑴'
-    pub const PARENTHESIZED_DIGIT_ONE: char = '⑴';
-    /// \u{2475}: '⑵'
-    pub const PARENTHESIZED_DIGIT_TWO: char = '⑵';
-    /// \u{2476}: '⑶'
-    pub const PARENTHESIZED_DIGIT_THREE: char = '⑶';
-    /// \u{2477}: '⑷'
-    pub const PARENTHESIZED_DIGIT_FOUR: char = '⑷';
-    /// \u{2478}: '⑸'
-    pub const PARENTHESIZED_DIGIT_FIVE: char = '⑸';
-    /// \u{2479}: '⑹'
-    pub const PARENTHESIZED_DIGIT_SIX: char = '⑹';
-    /// \u{247a}: '⑺'
-    pub const PARENTHESIZED_DIGIT_SEVEN: char = '⑺';
-    /// \u{247b}: '⑻'
-    pub const PARENTHESIZED_DIGIT_EIGHT: char = '⑻';
-    /// \u{247c}: '⑼'
-    pub const PARENTHESIZED_DIGIT_NINE: char = '⑼';
-    /// \u{247d}: '⑽'
-    pub const PARENTHESIZED_NUMBER_TEN: char = '⑽';
-    /// \u{247e}: '⑾'
-    pub const PARENTHESIZED_NUMBER_ELEVEN: char = '⑾';
-    /// \u{247f}: '⑿'
-    pub const PARENTHESIZED_NUMBER_TWELVE: char = '⑿';
-    /// \u{2480}: '⒀'
-    pub const PARENTHESIZED_NUMBER_THIRTEEN: char = '⒀';
-    /// \u{2481}: '⒁'
-    pub const PARENTHESIZED_NUMBER_FOURTEEN: char = '⒁';
-    /// \u{2482}: '⒂'
-    pub const PARENTHESIZED_NUMBER_FIFTEEN: char = '⒂';
-    /// \u{2483}: '⒃'
-    pub const PARENTHESIZED_NUMBER_SIXTEEN: char = '⒃';
-    /// \u{2484}: '⒄'
-    pub const PARENTHESIZED_NUMBER_SEVENTEEN: char = '⒄';
-    /// \u{2485}: '⒅'
-    pub const PARENTHESIZED_NUMBER_EIGHTEEN: char = '⒅';
-    /// \u{2486}: '⒆'
-    pub const PARENTHESIZED_NUMBER_NINETEEN: char = '⒆';
-    /// \u{2487}: '⒇'
-    pub const PARENTHESIZED_NUMBER_TWENTY: char = '⒇';
-    /// \u{2488}: '⒈'
-    pub const DIGIT_ONE_FULL_STOP: char = '⒈';
-    /// \u{2489}: '⒉'
-    pub const DIGIT_TWO_FULL_STOP: char = '⒉';
-    /// \u{248a}: '⒊'
-    pub const DIGIT_THREE_FULL_STOP: char = '⒊';
-    /// \u{248b}: '⒋'
-    pub const DIGIT_FOUR_FULL_STOP: char = '⒋';
-    /// \u{248c}: '⒌'
-    pub const DIGIT_FIVE_FULL_STOP: char = '⒌';
-    /// \u{248d}: '⒍'
-    pub const DIGIT_SIX_FULL_STOP: char = '⒍';
-    /// \u{248e}: '⒎'
-    pub const DIGIT_SEVEN_FULL_STOP: char = '⒎';
-    /// \u{248f}: '⒏'
-    pub const DIGIT_EIGHT_FULL_STOP: char = '⒏';
-    /// \u{2490}: '⒐'
-    pub const DIGIT_NINE_FULL_STOP: char = '⒐';
-    /// \u{2491}: '⒑'
-    pub const NUMBER_TEN_FULL_STOP: char = '⒑';
-    /// \u{2492}: '⒒'
-    pub const NUMBER_ELEVEN_FULL_STOP: char = '⒒';
-    /// \u{2493}: '⒓'
-    pub const NUMBER_TWELVE_FULL_STOP: char = '⒓';
-    /// \u{2494}: '⒔'
-    pub const NUMBER_THIRTEEN_FULL_STOP: char = '⒔';
-    /// \u{2495}: '⒕'
-    pub const NUMBER_FOURTEEN_FULL_STOP: char = '⒕';
-    /// \u{2496}: '⒖'
-    pub const NUMBER_FIFTEEN_FULL_STOP: char = '⒖';
-    /// \u{2497}: '⒗'
-    pub const NUMBER_SIXTEEN_FULL_STOP: char = '⒗';
-    /// \u{2498}: '⒘'
-    pub const NUMBER_SEVENTEEN_FULL_STOP: char = '⒘';
-    /// \u{2499}: '⒙'
-    pub const NUMBER_EIGHTEEN_FULL_STOP: char = '⒙';
-    /// \u{249a}: '⒚'
-    pub const NUMBER_NINETEEN_FULL_STOP: char = '⒚';
-    /// \u{249b}: '⒛'
-    pub const NUMBER_TWENTY_FULL_STOP: char = '⒛';
-    /// \u{249c}: '⒜'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_A: char = '⒜';
-    /// \u{249d}: '⒝'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_B: char = '⒝';
-    /// \u{249e}: '⒞'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_C: char = '⒞';
-    /// \u{249f}: '⒟'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_D: char = '⒟';
-    /// \u{24a0}: '⒠'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_E: char = '⒠';
-    /// \u{24a1}: '⒡'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_F: char = '⒡';
-    /// \u{24a2}: '⒢'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_G: char = '⒢';
-    /// \u{24a3}: '⒣'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_H: char = '⒣';
-    /// \u{24a4}: '⒤'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_I: char = '⒤';
-    /// \u{24a5}: '⒥'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_J: char = '⒥';
-    /// \u{24a6}: '⒦'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_K: char = '⒦';
-    /// \u{24a7}: '⒧'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_L: char = '⒧';
-    /// \u{24a8}: '⒨'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_M: char = '⒨';
-    /// \u{24a9}: '⒩'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_N: char = '⒩';
-    /// \u{24aa}: '⒪'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_O: char = '⒪';
-    /// \u{24ab}: '⒫'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_P: char = '⒫';
-    /// \u{24ac}: '⒬'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_Q: char = '⒬';
-    /// \u{24ad}: '⒭'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_R: char = '⒭';
-    /// \u{24ae}: '⒮'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_S: char = '⒮';
-    /// \u{24af}: '⒯'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_T: char = '⒯';
-    /// \u{24b0}: '⒰'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_U: char = '⒰';
-    /// \u{24b1}: '⒱'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_V: char = '⒱';
-    /// \u{24b2}: '⒲'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_W: char = '⒲';
-    /// \u{24b3}: '⒳'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_X: char = '⒳';
-    /// \u{24b4}: '⒴'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_Y: char = '⒴';
-    /// \u{24b5}: '⒵'
-    pub const PARENTHESIZED_LATIN_SMALL_LETTER_Z: char = '⒵';
-    /// \u{24b6}: 'Ⓐ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_A: char = 'Ⓐ';
-    /// \u{24b7}: 'Ⓑ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_B: char = 'Ⓑ';
-    /// \u{24b8}: 'Ⓒ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_C: char = 'Ⓒ';
-    /// \u{24b9}: 'Ⓓ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_D: char = 'Ⓓ';
-    /// \u{24ba}: 'Ⓔ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_E: char = 'Ⓔ';
-    /// \u{24bb}: 'Ⓕ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_F: char = 'Ⓕ';
-    /// \u{24bc}: 'Ⓖ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_G: char = 'Ⓖ';
-    /// \u{24bd}: 'Ⓗ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_H: char = 'Ⓗ';
-    /// \u{24be}: 'Ⓘ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_I: char = 'Ⓘ';
-    /// \u{24bf}: 'Ⓙ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_J: char = 'Ⓙ';
-    /// \u{24c0}: 'Ⓚ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_K: char = 'Ⓚ';
-    /// \u{24c1}: 'Ⓛ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_L: char = 'Ⓛ';
-    /// \u{24c2}: 'Ⓜ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_M: char = 'Ⓜ';
-    /// \u{24c3}: 'Ⓝ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_N: char = 'Ⓝ';
-    /// \u{24c4}: 'Ⓞ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_O: char = 'Ⓞ';
-    /// \u{24c5}: 'Ⓟ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_P: char = 'Ⓟ';
-    /// \u{24c6}: 'Ⓠ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_Q: char = 'Ⓠ';
-    /// \u{24c7}: 'Ⓡ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_R: char = 'Ⓡ';
-    /// \u{24c8}: 'Ⓢ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_S: char = 'Ⓢ';
-    /// \u{24c9}: 'Ⓣ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_T: char = 'Ⓣ';
-    /// \u{24ca}: 'Ⓤ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_U: char = 'Ⓤ';
-    /// \u{24cb}: 'Ⓥ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_V: char = 'Ⓥ';
-    /// \u{24cc}: 'Ⓦ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_W: char = 'Ⓦ';
-    /// \u{24cd}: 'Ⓧ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_X: char = 'Ⓧ';
-    /// \u{24ce}: 'Ⓨ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_Y: char = 'Ⓨ';
-    /// \u{24cf}: 'Ⓩ'
-    pub const CIRCLED_LATIN_CAPITAL_LETTER_Z: char = 'Ⓩ';
-    /// \u{24d0}: 'ⓐ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_A: char = 'ⓐ';
-    /// \u{24d1}: 'ⓑ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_B: char = 'ⓑ';
-    /// \u{24d2}: 'ⓒ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_C: char = 'ⓒ';
-    /// \u{24d3}: 'ⓓ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_D: char = 'ⓓ';
-    /// \u{24d4}: 'ⓔ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_E: char = 'ⓔ';
-    /// \u{24d5}: 'ⓕ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_F: char = 'ⓕ';
-    /// \u{24d6}: 'ⓖ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_G: char = 'ⓖ';
-    /// \u{24d7}: 'ⓗ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_H: char = 'ⓗ';
-    /// \u{24d8}: 'ⓘ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_I: char = 'ⓘ';
-    /// \u{24d9}: 'ⓙ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_J: char = 'ⓙ';
-    /// \u{24da}: 'ⓚ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_K: char = 'ⓚ';
-    /// \u{24db}: 'ⓛ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_L: char = 'ⓛ';
-    /// \u{24dc}: 'ⓜ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_M: char = 'ⓜ';
-    /// \u{24dd}: 'ⓝ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_N: char = 'ⓝ';
-    /// \u{24de}: 'ⓞ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_O: char = 'ⓞ';
-    /// \u{24df}: 'ⓟ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_P: char = 'ⓟ';
-    /// \u{24e0}: 'ⓠ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_Q: char = 'ⓠ';
-    /// \u{24e1}: 'ⓡ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_R: char = 'ⓡ';
-    /// \u{24e2}: 'ⓢ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_S: char = 'ⓢ';
-    /// \u{24e3}: 'ⓣ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_T: char = 'ⓣ';
-    /// \u{24e4}: 'ⓤ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_U: char = 'ⓤ';
-    /// \u{24e5}: 'ⓥ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_V: char = 'ⓥ';
-    /// \u{24e6}: 'ⓦ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_W: char = 'ⓦ';
-    /// \u{24e7}: 'ⓧ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_X: char = 'ⓧ';
-    /// \u{24e8}: 'ⓨ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_Y: char = 'ⓨ';
-    /// \u{24e9}: 'ⓩ'
-    pub const CIRCLED_LATIN_SMALL_LETTER_Z: char = 'ⓩ';
-    /// \u{24ea}: '⓪'
-    pub const CIRCLED_DIGIT_ZERO: char = '⓪';
-    /// \u{24eb}: '⓫'
-    pub const NEGATIVE_CIRCLED_NUMBER_ELEVEN: char = '⓫';
-    /// \u{24ec}: '⓬'
-    pub const NEGATIVE_CIRCLED_NUMBER_TWELVE: char = '⓬';
-    /// \u{24ed}: '⓭'
-    pub const NEGATIVE_CIRCLED_NUMBER_THIRTEEN: char = '⓭';
-    /// \u{24ee}: '⓮'
-    pub const NEGATIVE_CIRCLED_NUMBER_FOURTEEN: char = '⓮';
-    /// \u{24ef}: '⓯'
-    pub const NEGATIVE_CIRCLED_NUMBER_FIFTEEN: char = '⓯';
-    /// \u{24f0}: '⓰'
-    pub const NEGATIVE_CIRCLED_NUMBER_SIXTEEN: char = '⓰';
-    /// \u{24f1}: '⓱'
-    pub const NEGATIVE_CIRCLED_NUMBER_SEVENTEEN: char = '⓱';
-    /// \u{24f2}: '⓲'
-    pub const NEGATIVE_CIRCLED_NUMBER_EIGHTEEN: char = '⓲';
-    /// \u{24f3}: '⓳'
-    pub const NEGATIVE_CIRCLED_NUMBER_NINETEEN: char = '⓳';
-    /// \u{24f4}: '⓴'
-    pub const NEGATIVE_CIRCLED_NUMBER_TWENTY: char = '⓴';
-    /// \u{24f5}: '⓵'
-    pub const DOUBLE_CIRCLED_DIGIT_ONE: char = '⓵';
-    /// \u{24f6}: '⓶'
-    pub const DOUBLE_CIRCLED_DIGIT_TWO: char = '⓶';
-    /// \u{24f7}: '⓷'
-    pub const DOUBLE_CIRCLED_DIGIT_THREE: char = '⓷';
-    /// \u{24f8}: '⓸'
-    pub const DOUBLE_CIRCLED_DIGIT_FOUR: char = '⓸';
-    /// \u{24f9}: '⓹'
-    pub const DOUBLE_CIRCLED_DIGIT_FIVE: char = '⓹';
-    /// \u{24fa}: '⓺'
-    pub const DOUBLE_CIRCLED_DIGIT_SIX: char = '⓺';
-    /// \u{24fb}: '⓻'
-    pub const DOUBLE_CIRCLED_DIGIT_SEVEN: char = '⓻';
-    /// \u{24fc}: '⓼'
-    pub const DOUBLE_CIRCLED_DIGIT_EIGHT: char = '⓼';
-    /// \u{24fd}: '⓽'
-    pub const DOUBLE_CIRCLED_DIGIT_NINE: char = '⓽';
-    /// \u{24fe}: '⓾'
-    pub const DOUBLE_CIRCLED_NUMBER_TEN: char = '⓾';
-}
 
 /// An enum to represent all characters in the EnclosedAlphanumerics block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -645,167 +324,166 @@ pub enum EnclosedAlphanumerics {
 
 impl Into<char> for EnclosedAlphanumerics {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            EnclosedAlphanumerics::CircledDigitOne => CIRCLED_DIGIT_ONE,
-            EnclosedAlphanumerics::CircledDigitTwo => CIRCLED_DIGIT_TWO,
-            EnclosedAlphanumerics::CircledDigitThree => CIRCLED_DIGIT_THREE,
-            EnclosedAlphanumerics::CircledDigitFour => CIRCLED_DIGIT_FOUR,
-            EnclosedAlphanumerics::CircledDigitFive => CIRCLED_DIGIT_FIVE,
-            EnclosedAlphanumerics::CircledDigitSix => CIRCLED_DIGIT_SIX,
-            EnclosedAlphanumerics::CircledDigitSeven => CIRCLED_DIGIT_SEVEN,
-            EnclosedAlphanumerics::CircledDigitEight => CIRCLED_DIGIT_EIGHT,
-            EnclosedAlphanumerics::CircledDigitNine => CIRCLED_DIGIT_NINE,
-            EnclosedAlphanumerics::CircledNumberTen => CIRCLED_NUMBER_TEN,
-            EnclosedAlphanumerics::CircledNumberEleven => CIRCLED_NUMBER_ELEVEN,
-            EnclosedAlphanumerics::CircledNumberTwelve => CIRCLED_NUMBER_TWELVE,
-            EnclosedAlphanumerics::CircledNumberThirteen => CIRCLED_NUMBER_THIRTEEN,
-            EnclosedAlphanumerics::CircledNumberFourteen => CIRCLED_NUMBER_FOURTEEN,
-            EnclosedAlphanumerics::CircledNumberFifteen => CIRCLED_NUMBER_FIFTEEN,
-            EnclosedAlphanumerics::CircledNumberSixteen => CIRCLED_NUMBER_SIXTEEN,
-            EnclosedAlphanumerics::CircledNumberSeventeen => CIRCLED_NUMBER_SEVENTEEN,
-            EnclosedAlphanumerics::CircledNumberEighteen => CIRCLED_NUMBER_EIGHTEEN,
-            EnclosedAlphanumerics::CircledNumberNineteen => CIRCLED_NUMBER_NINETEEN,
-            EnclosedAlphanumerics::CircledNumberTwenty => CIRCLED_NUMBER_TWENTY,
-            EnclosedAlphanumerics::ParenthesizedDigitOne => PARENTHESIZED_DIGIT_ONE,
-            EnclosedAlphanumerics::ParenthesizedDigitTwo => PARENTHESIZED_DIGIT_TWO,
-            EnclosedAlphanumerics::ParenthesizedDigitThree => PARENTHESIZED_DIGIT_THREE,
-            EnclosedAlphanumerics::ParenthesizedDigitFour => PARENTHESIZED_DIGIT_FOUR,
-            EnclosedAlphanumerics::ParenthesizedDigitFive => PARENTHESIZED_DIGIT_FIVE,
-            EnclosedAlphanumerics::ParenthesizedDigitSix => PARENTHESIZED_DIGIT_SIX,
-            EnclosedAlphanumerics::ParenthesizedDigitSeven => PARENTHESIZED_DIGIT_SEVEN,
-            EnclosedAlphanumerics::ParenthesizedDigitEight => PARENTHESIZED_DIGIT_EIGHT,
-            EnclosedAlphanumerics::ParenthesizedDigitNine => PARENTHESIZED_DIGIT_NINE,
-            EnclosedAlphanumerics::ParenthesizedNumberTen => PARENTHESIZED_NUMBER_TEN,
-            EnclosedAlphanumerics::ParenthesizedNumberEleven => PARENTHESIZED_NUMBER_ELEVEN,
-            EnclosedAlphanumerics::ParenthesizedNumberTwelve => PARENTHESIZED_NUMBER_TWELVE,
-            EnclosedAlphanumerics::ParenthesizedNumberThirteen => PARENTHESIZED_NUMBER_THIRTEEN,
-            EnclosedAlphanumerics::ParenthesizedNumberFourteen => PARENTHESIZED_NUMBER_FOURTEEN,
-            EnclosedAlphanumerics::ParenthesizedNumberFifteen => PARENTHESIZED_NUMBER_FIFTEEN,
-            EnclosedAlphanumerics::ParenthesizedNumberSixteen => PARENTHESIZED_NUMBER_SIXTEEN,
-            EnclosedAlphanumerics::ParenthesizedNumberSeventeen => PARENTHESIZED_NUMBER_SEVENTEEN,
-            EnclosedAlphanumerics::ParenthesizedNumberEighteen => PARENTHESIZED_NUMBER_EIGHTEEN,
-            EnclosedAlphanumerics::ParenthesizedNumberNineteen => PARENTHESIZED_NUMBER_NINETEEN,
-            EnclosedAlphanumerics::ParenthesizedNumberTwenty => PARENTHESIZED_NUMBER_TWENTY,
-            EnclosedAlphanumerics::DigitOneFullStop => DIGIT_ONE_FULL_STOP,
-            EnclosedAlphanumerics::DigitTwoFullStop => DIGIT_TWO_FULL_STOP,
-            EnclosedAlphanumerics::DigitThreeFullStop => DIGIT_THREE_FULL_STOP,
-            EnclosedAlphanumerics::DigitFourFullStop => DIGIT_FOUR_FULL_STOP,
-            EnclosedAlphanumerics::DigitFiveFullStop => DIGIT_FIVE_FULL_STOP,
-            EnclosedAlphanumerics::DigitSixFullStop => DIGIT_SIX_FULL_STOP,
-            EnclosedAlphanumerics::DigitSevenFullStop => DIGIT_SEVEN_FULL_STOP,
-            EnclosedAlphanumerics::DigitEightFullStop => DIGIT_EIGHT_FULL_STOP,
-            EnclosedAlphanumerics::DigitNineFullStop => DIGIT_NINE_FULL_STOP,
-            EnclosedAlphanumerics::NumberTenFullStop => NUMBER_TEN_FULL_STOP,
-            EnclosedAlphanumerics::NumberElevenFullStop => NUMBER_ELEVEN_FULL_STOP,
-            EnclosedAlphanumerics::NumberTwelveFullStop => NUMBER_TWELVE_FULL_STOP,
-            EnclosedAlphanumerics::NumberThirteenFullStop => NUMBER_THIRTEEN_FULL_STOP,
-            EnclosedAlphanumerics::NumberFourteenFullStop => NUMBER_FOURTEEN_FULL_STOP,
-            EnclosedAlphanumerics::NumberFifteenFullStop => NUMBER_FIFTEEN_FULL_STOP,
-            EnclosedAlphanumerics::NumberSixteenFullStop => NUMBER_SIXTEEN_FULL_STOP,
-            EnclosedAlphanumerics::NumberSeventeenFullStop => NUMBER_SEVENTEEN_FULL_STOP,
-            EnclosedAlphanumerics::NumberEighteenFullStop => NUMBER_EIGHTEEN_FULL_STOP,
-            EnclosedAlphanumerics::NumberNineteenFullStop => NUMBER_NINETEEN_FULL_STOP,
-            EnclosedAlphanumerics::NumberTwentyFullStop => NUMBER_TWENTY_FULL_STOP,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterA => PARENTHESIZED_LATIN_SMALL_LETTER_A,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterB => PARENTHESIZED_LATIN_SMALL_LETTER_B,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterC => PARENTHESIZED_LATIN_SMALL_LETTER_C,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterD => PARENTHESIZED_LATIN_SMALL_LETTER_D,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterE => PARENTHESIZED_LATIN_SMALL_LETTER_E,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterF => PARENTHESIZED_LATIN_SMALL_LETTER_F,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterG => PARENTHESIZED_LATIN_SMALL_LETTER_G,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterH => PARENTHESIZED_LATIN_SMALL_LETTER_H,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterI => PARENTHESIZED_LATIN_SMALL_LETTER_I,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterJ => PARENTHESIZED_LATIN_SMALL_LETTER_J,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterK => PARENTHESIZED_LATIN_SMALL_LETTER_K,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterL => PARENTHESIZED_LATIN_SMALL_LETTER_L,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterM => PARENTHESIZED_LATIN_SMALL_LETTER_M,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterN => PARENTHESIZED_LATIN_SMALL_LETTER_N,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterO => PARENTHESIZED_LATIN_SMALL_LETTER_O,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterP => PARENTHESIZED_LATIN_SMALL_LETTER_P,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterQ => PARENTHESIZED_LATIN_SMALL_LETTER_Q,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterR => PARENTHESIZED_LATIN_SMALL_LETTER_R,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterS => PARENTHESIZED_LATIN_SMALL_LETTER_S,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterT => PARENTHESIZED_LATIN_SMALL_LETTER_T,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterU => PARENTHESIZED_LATIN_SMALL_LETTER_U,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterV => PARENTHESIZED_LATIN_SMALL_LETTER_V,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterW => PARENTHESIZED_LATIN_SMALL_LETTER_W,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterX => PARENTHESIZED_LATIN_SMALL_LETTER_X,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterY => PARENTHESIZED_LATIN_SMALL_LETTER_Y,
-            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterZ => PARENTHESIZED_LATIN_SMALL_LETTER_Z,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterA => CIRCLED_LATIN_CAPITAL_LETTER_A,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterB => CIRCLED_LATIN_CAPITAL_LETTER_B,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterC => CIRCLED_LATIN_CAPITAL_LETTER_C,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterD => CIRCLED_LATIN_CAPITAL_LETTER_D,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterE => CIRCLED_LATIN_CAPITAL_LETTER_E,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterF => CIRCLED_LATIN_CAPITAL_LETTER_F,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterG => CIRCLED_LATIN_CAPITAL_LETTER_G,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterH => CIRCLED_LATIN_CAPITAL_LETTER_H,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterI => CIRCLED_LATIN_CAPITAL_LETTER_I,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterJ => CIRCLED_LATIN_CAPITAL_LETTER_J,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterK => CIRCLED_LATIN_CAPITAL_LETTER_K,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterL => CIRCLED_LATIN_CAPITAL_LETTER_L,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterM => CIRCLED_LATIN_CAPITAL_LETTER_M,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterN => CIRCLED_LATIN_CAPITAL_LETTER_N,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterO => CIRCLED_LATIN_CAPITAL_LETTER_O,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterP => CIRCLED_LATIN_CAPITAL_LETTER_P,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterQ => CIRCLED_LATIN_CAPITAL_LETTER_Q,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterR => CIRCLED_LATIN_CAPITAL_LETTER_R,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterS => CIRCLED_LATIN_CAPITAL_LETTER_S,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterT => CIRCLED_LATIN_CAPITAL_LETTER_T,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterU => CIRCLED_LATIN_CAPITAL_LETTER_U,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterV => CIRCLED_LATIN_CAPITAL_LETTER_V,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterW => CIRCLED_LATIN_CAPITAL_LETTER_W,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterX => CIRCLED_LATIN_CAPITAL_LETTER_X,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterY => CIRCLED_LATIN_CAPITAL_LETTER_Y,
-            EnclosedAlphanumerics::CircledLatinCapitalLetterZ => CIRCLED_LATIN_CAPITAL_LETTER_Z,
-            EnclosedAlphanumerics::CircledLatinSmallLetterA => CIRCLED_LATIN_SMALL_LETTER_A,
-            EnclosedAlphanumerics::CircledLatinSmallLetterB => CIRCLED_LATIN_SMALL_LETTER_B,
-            EnclosedAlphanumerics::CircledLatinSmallLetterC => CIRCLED_LATIN_SMALL_LETTER_C,
-            EnclosedAlphanumerics::CircledLatinSmallLetterD => CIRCLED_LATIN_SMALL_LETTER_D,
-            EnclosedAlphanumerics::CircledLatinSmallLetterE => CIRCLED_LATIN_SMALL_LETTER_E,
-            EnclosedAlphanumerics::CircledLatinSmallLetterF => CIRCLED_LATIN_SMALL_LETTER_F,
-            EnclosedAlphanumerics::CircledLatinSmallLetterG => CIRCLED_LATIN_SMALL_LETTER_G,
-            EnclosedAlphanumerics::CircledLatinSmallLetterH => CIRCLED_LATIN_SMALL_LETTER_H,
-            EnclosedAlphanumerics::CircledLatinSmallLetterI => CIRCLED_LATIN_SMALL_LETTER_I,
-            EnclosedAlphanumerics::CircledLatinSmallLetterJ => CIRCLED_LATIN_SMALL_LETTER_J,
-            EnclosedAlphanumerics::CircledLatinSmallLetterK => CIRCLED_LATIN_SMALL_LETTER_K,
-            EnclosedAlphanumerics::CircledLatinSmallLetterL => CIRCLED_LATIN_SMALL_LETTER_L,
-            EnclosedAlphanumerics::CircledLatinSmallLetterM => CIRCLED_LATIN_SMALL_LETTER_M,
-            EnclosedAlphanumerics::CircledLatinSmallLetterN => CIRCLED_LATIN_SMALL_LETTER_N,
-            EnclosedAlphanumerics::CircledLatinSmallLetterO => CIRCLED_LATIN_SMALL_LETTER_O,
-            EnclosedAlphanumerics::CircledLatinSmallLetterP => CIRCLED_LATIN_SMALL_LETTER_P,
-            EnclosedAlphanumerics::CircledLatinSmallLetterQ => CIRCLED_LATIN_SMALL_LETTER_Q,
-            EnclosedAlphanumerics::CircledLatinSmallLetterR => CIRCLED_LATIN_SMALL_LETTER_R,
-            EnclosedAlphanumerics::CircledLatinSmallLetterS => CIRCLED_LATIN_SMALL_LETTER_S,
-            EnclosedAlphanumerics::CircledLatinSmallLetterT => CIRCLED_LATIN_SMALL_LETTER_T,
-            EnclosedAlphanumerics::CircledLatinSmallLetterU => CIRCLED_LATIN_SMALL_LETTER_U,
-            EnclosedAlphanumerics::CircledLatinSmallLetterV => CIRCLED_LATIN_SMALL_LETTER_V,
-            EnclosedAlphanumerics::CircledLatinSmallLetterW => CIRCLED_LATIN_SMALL_LETTER_W,
-            EnclosedAlphanumerics::CircledLatinSmallLetterX => CIRCLED_LATIN_SMALL_LETTER_X,
-            EnclosedAlphanumerics::CircledLatinSmallLetterY => CIRCLED_LATIN_SMALL_LETTER_Y,
-            EnclosedAlphanumerics::CircledLatinSmallLetterZ => CIRCLED_LATIN_SMALL_LETTER_Z,
-            EnclosedAlphanumerics::CircledDigitZero => CIRCLED_DIGIT_ZERO,
-            EnclosedAlphanumerics::NegativeCircledNumberEleven => NEGATIVE_CIRCLED_NUMBER_ELEVEN,
-            EnclosedAlphanumerics::NegativeCircledNumberTwelve => NEGATIVE_CIRCLED_NUMBER_TWELVE,
-            EnclosedAlphanumerics::NegativeCircledNumberThirteen => NEGATIVE_CIRCLED_NUMBER_THIRTEEN,
-            EnclosedAlphanumerics::NegativeCircledNumberFourteen => NEGATIVE_CIRCLED_NUMBER_FOURTEEN,
-            EnclosedAlphanumerics::NegativeCircledNumberFifteen => NEGATIVE_CIRCLED_NUMBER_FIFTEEN,
-            EnclosedAlphanumerics::NegativeCircledNumberSixteen => NEGATIVE_CIRCLED_NUMBER_SIXTEEN,
-            EnclosedAlphanumerics::NegativeCircledNumberSeventeen => NEGATIVE_CIRCLED_NUMBER_SEVENTEEN,
-            EnclosedAlphanumerics::NegativeCircledNumberEighteen => NEGATIVE_CIRCLED_NUMBER_EIGHTEEN,
-            EnclosedAlphanumerics::NegativeCircledNumberNineteen => NEGATIVE_CIRCLED_NUMBER_NINETEEN,
-            EnclosedAlphanumerics::NegativeCircledNumberTwenty => NEGATIVE_CIRCLED_NUMBER_TWENTY,
-            EnclosedAlphanumerics::DoubleCircledDigitOne => DOUBLE_CIRCLED_DIGIT_ONE,
-            EnclosedAlphanumerics::DoubleCircledDigitTwo => DOUBLE_CIRCLED_DIGIT_TWO,
-            EnclosedAlphanumerics::DoubleCircledDigitThree => DOUBLE_CIRCLED_DIGIT_THREE,
-            EnclosedAlphanumerics::DoubleCircledDigitFour => DOUBLE_CIRCLED_DIGIT_FOUR,
-            EnclosedAlphanumerics::DoubleCircledDigitFive => DOUBLE_CIRCLED_DIGIT_FIVE,
-            EnclosedAlphanumerics::DoubleCircledDigitSix => DOUBLE_CIRCLED_DIGIT_SIX,
-            EnclosedAlphanumerics::DoubleCircledDigitSeven => DOUBLE_CIRCLED_DIGIT_SEVEN,
-            EnclosedAlphanumerics::DoubleCircledDigitEight => DOUBLE_CIRCLED_DIGIT_EIGHT,
-            EnclosedAlphanumerics::DoubleCircledDigitNine => DOUBLE_CIRCLED_DIGIT_NINE,
-            EnclosedAlphanumerics::DoubleCircledNumberTen => DOUBLE_CIRCLED_NUMBER_TEN,
+            EnclosedAlphanumerics::CircledDigitOne => '①',
+            EnclosedAlphanumerics::CircledDigitTwo => '②',
+            EnclosedAlphanumerics::CircledDigitThree => '③',
+            EnclosedAlphanumerics::CircledDigitFour => '④',
+            EnclosedAlphanumerics::CircledDigitFive => '⑤',
+            EnclosedAlphanumerics::CircledDigitSix => '⑥',
+            EnclosedAlphanumerics::CircledDigitSeven => '⑦',
+            EnclosedAlphanumerics::CircledDigitEight => '⑧',
+            EnclosedAlphanumerics::CircledDigitNine => '⑨',
+            EnclosedAlphanumerics::CircledNumberTen => '⑩',
+            EnclosedAlphanumerics::CircledNumberEleven => '⑪',
+            EnclosedAlphanumerics::CircledNumberTwelve => '⑫',
+            EnclosedAlphanumerics::CircledNumberThirteen => '⑬',
+            EnclosedAlphanumerics::CircledNumberFourteen => '⑭',
+            EnclosedAlphanumerics::CircledNumberFifteen => '⑮',
+            EnclosedAlphanumerics::CircledNumberSixteen => '⑯',
+            EnclosedAlphanumerics::CircledNumberSeventeen => '⑰',
+            EnclosedAlphanumerics::CircledNumberEighteen => '⑱',
+            EnclosedAlphanumerics::CircledNumberNineteen => '⑲',
+            EnclosedAlphanumerics::CircledNumberTwenty => '⑳',
+            EnclosedAlphanumerics::ParenthesizedDigitOne => '⑴',
+            EnclosedAlphanumerics::ParenthesizedDigitTwo => '⑵',
+            EnclosedAlphanumerics::ParenthesizedDigitThree => '⑶',
+            EnclosedAlphanumerics::ParenthesizedDigitFour => '⑷',
+            EnclosedAlphanumerics::ParenthesizedDigitFive => '⑸',
+            EnclosedAlphanumerics::ParenthesizedDigitSix => '⑹',
+            EnclosedAlphanumerics::ParenthesizedDigitSeven => '⑺',
+            EnclosedAlphanumerics::ParenthesizedDigitEight => '⑻',
+            EnclosedAlphanumerics::ParenthesizedDigitNine => '⑼',
+            EnclosedAlphanumerics::ParenthesizedNumberTen => '⑽',
+            EnclosedAlphanumerics::ParenthesizedNumberEleven => '⑾',
+            EnclosedAlphanumerics::ParenthesizedNumberTwelve => '⑿',
+            EnclosedAlphanumerics::ParenthesizedNumberThirteen => '⒀',
+            EnclosedAlphanumerics::ParenthesizedNumberFourteen => '⒁',
+            EnclosedAlphanumerics::ParenthesizedNumberFifteen => '⒂',
+            EnclosedAlphanumerics::ParenthesizedNumberSixteen => '⒃',
+            EnclosedAlphanumerics::ParenthesizedNumberSeventeen => '⒄',
+            EnclosedAlphanumerics::ParenthesizedNumberEighteen => '⒅',
+            EnclosedAlphanumerics::ParenthesizedNumberNineteen => '⒆',
+            EnclosedAlphanumerics::ParenthesizedNumberTwenty => '⒇',
+            EnclosedAlphanumerics::DigitOneFullStop => '⒈',
+            EnclosedAlphanumerics::DigitTwoFullStop => '⒉',
+            EnclosedAlphanumerics::DigitThreeFullStop => '⒊',
+            EnclosedAlphanumerics::DigitFourFullStop => '⒋',
+            EnclosedAlphanumerics::DigitFiveFullStop => '⒌',
+            EnclosedAlphanumerics::DigitSixFullStop => '⒍',
+            EnclosedAlphanumerics::DigitSevenFullStop => '⒎',
+            EnclosedAlphanumerics::DigitEightFullStop => '⒏',
+            EnclosedAlphanumerics::DigitNineFullStop => '⒐',
+            EnclosedAlphanumerics::NumberTenFullStop => '⒑',
+            EnclosedAlphanumerics::NumberElevenFullStop => '⒒',
+            EnclosedAlphanumerics::NumberTwelveFullStop => '⒓',
+            EnclosedAlphanumerics::NumberThirteenFullStop => '⒔',
+            EnclosedAlphanumerics::NumberFourteenFullStop => '⒕',
+            EnclosedAlphanumerics::NumberFifteenFullStop => '⒖',
+            EnclosedAlphanumerics::NumberSixteenFullStop => '⒗',
+            EnclosedAlphanumerics::NumberSeventeenFullStop => '⒘',
+            EnclosedAlphanumerics::NumberEighteenFullStop => '⒙',
+            EnclosedAlphanumerics::NumberNineteenFullStop => '⒚',
+            EnclosedAlphanumerics::NumberTwentyFullStop => '⒛',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterA => '⒜',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterB => '⒝',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterC => '⒞',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterD => '⒟',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterE => '⒠',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterF => '⒡',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterG => '⒢',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterH => '⒣',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterI => '⒤',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterJ => '⒥',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterK => '⒦',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterL => '⒧',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterM => '⒨',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterN => '⒩',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterO => '⒪',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterP => '⒫',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterQ => '⒬',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterR => '⒭',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterS => '⒮',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterT => '⒯',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterU => '⒰',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterV => '⒱',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterW => '⒲',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterX => '⒳',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterY => '⒴',
+            EnclosedAlphanumerics::ParenthesizedLatinSmallLetterZ => '⒵',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterA => 'Ⓐ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterB => 'Ⓑ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterC => 'Ⓒ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterD => 'Ⓓ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterE => 'Ⓔ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterF => 'Ⓕ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterG => 'Ⓖ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterH => 'Ⓗ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterI => 'Ⓘ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterJ => 'Ⓙ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterK => 'Ⓚ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterL => 'Ⓛ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterM => 'Ⓜ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterN => 'Ⓝ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterO => 'Ⓞ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterP => 'Ⓟ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterQ => 'Ⓠ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterR => 'Ⓡ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterS => 'Ⓢ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterT => 'Ⓣ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterU => 'Ⓤ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterV => 'Ⓥ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterW => 'Ⓦ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterX => 'Ⓧ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterY => 'Ⓨ',
+            EnclosedAlphanumerics::CircledLatinCapitalLetterZ => 'Ⓩ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterA => 'ⓐ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterB => 'ⓑ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterC => 'ⓒ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterD => 'ⓓ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterE => 'ⓔ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterF => 'ⓕ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterG => 'ⓖ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterH => 'ⓗ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterI => 'ⓘ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterJ => 'ⓙ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterK => 'ⓚ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterL => 'ⓛ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterM => 'ⓜ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterN => 'ⓝ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterO => 'ⓞ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterP => 'ⓟ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterQ => 'ⓠ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterR => 'ⓡ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterS => 'ⓢ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterT => 'ⓣ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterU => 'ⓤ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterV => 'ⓥ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterW => 'ⓦ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterX => 'ⓧ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterY => 'ⓨ',
+            EnclosedAlphanumerics::CircledLatinSmallLetterZ => 'ⓩ',
+            EnclosedAlphanumerics::CircledDigitZero => '⓪',
+            EnclosedAlphanumerics::NegativeCircledNumberEleven => '⓫',
+            EnclosedAlphanumerics::NegativeCircledNumberTwelve => '⓬',
+            EnclosedAlphanumerics::NegativeCircledNumberThirteen => '⓭',
+            EnclosedAlphanumerics::NegativeCircledNumberFourteen => '⓮',
+            EnclosedAlphanumerics::NegativeCircledNumberFifteen => '⓯',
+            EnclosedAlphanumerics::NegativeCircledNumberSixteen => '⓰',
+            EnclosedAlphanumerics::NegativeCircledNumberSeventeen => '⓱',
+            EnclosedAlphanumerics::NegativeCircledNumberEighteen => '⓲',
+            EnclosedAlphanumerics::NegativeCircledNumberNineteen => '⓳',
+            EnclosedAlphanumerics::NegativeCircledNumberTwenty => '⓴',
+            EnclosedAlphanumerics::DoubleCircledDigitOne => '⓵',
+            EnclosedAlphanumerics::DoubleCircledDigitTwo => '⓶',
+            EnclosedAlphanumerics::DoubleCircledDigitThree => '⓷',
+            EnclosedAlphanumerics::DoubleCircledDigitFour => '⓸',
+            EnclosedAlphanumerics::DoubleCircledDigitFive => '⓹',
+            EnclosedAlphanumerics::DoubleCircledDigitSix => '⓺',
+            EnclosedAlphanumerics::DoubleCircledDigitSeven => '⓻',
+            EnclosedAlphanumerics::DoubleCircledDigitEight => '⓼',
+            EnclosedAlphanumerics::DoubleCircledDigitNine => '⓽',
+            EnclosedAlphanumerics::DoubleCircledNumberTen => '⓾',
         }
     }
 }
@@ -813,167 +491,166 @@ impl Into<char> for EnclosedAlphanumerics {
 impl std::convert::TryFrom<char> for EnclosedAlphanumerics {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CIRCLED_DIGIT_ONE => Ok(EnclosedAlphanumerics::CircledDigitOne),
-            CIRCLED_DIGIT_TWO => Ok(EnclosedAlphanumerics::CircledDigitTwo),
-            CIRCLED_DIGIT_THREE => Ok(EnclosedAlphanumerics::CircledDigitThree),
-            CIRCLED_DIGIT_FOUR => Ok(EnclosedAlphanumerics::CircledDigitFour),
-            CIRCLED_DIGIT_FIVE => Ok(EnclosedAlphanumerics::CircledDigitFive),
-            CIRCLED_DIGIT_SIX => Ok(EnclosedAlphanumerics::CircledDigitSix),
-            CIRCLED_DIGIT_SEVEN => Ok(EnclosedAlphanumerics::CircledDigitSeven),
-            CIRCLED_DIGIT_EIGHT => Ok(EnclosedAlphanumerics::CircledDigitEight),
-            CIRCLED_DIGIT_NINE => Ok(EnclosedAlphanumerics::CircledDigitNine),
-            CIRCLED_NUMBER_TEN => Ok(EnclosedAlphanumerics::CircledNumberTen),
-            CIRCLED_NUMBER_ELEVEN => Ok(EnclosedAlphanumerics::CircledNumberEleven),
-            CIRCLED_NUMBER_TWELVE => Ok(EnclosedAlphanumerics::CircledNumberTwelve),
-            CIRCLED_NUMBER_THIRTEEN => Ok(EnclosedAlphanumerics::CircledNumberThirteen),
-            CIRCLED_NUMBER_FOURTEEN => Ok(EnclosedAlphanumerics::CircledNumberFourteen),
-            CIRCLED_NUMBER_FIFTEEN => Ok(EnclosedAlphanumerics::CircledNumberFifteen),
-            CIRCLED_NUMBER_SIXTEEN => Ok(EnclosedAlphanumerics::CircledNumberSixteen),
-            CIRCLED_NUMBER_SEVENTEEN => Ok(EnclosedAlphanumerics::CircledNumberSeventeen),
-            CIRCLED_NUMBER_EIGHTEEN => Ok(EnclosedAlphanumerics::CircledNumberEighteen),
-            CIRCLED_NUMBER_NINETEEN => Ok(EnclosedAlphanumerics::CircledNumberNineteen),
-            CIRCLED_NUMBER_TWENTY => Ok(EnclosedAlphanumerics::CircledNumberTwenty),
-            PARENTHESIZED_DIGIT_ONE => Ok(EnclosedAlphanumerics::ParenthesizedDigitOne),
-            PARENTHESIZED_DIGIT_TWO => Ok(EnclosedAlphanumerics::ParenthesizedDigitTwo),
-            PARENTHESIZED_DIGIT_THREE => Ok(EnclosedAlphanumerics::ParenthesizedDigitThree),
-            PARENTHESIZED_DIGIT_FOUR => Ok(EnclosedAlphanumerics::ParenthesizedDigitFour),
-            PARENTHESIZED_DIGIT_FIVE => Ok(EnclosedAlphanumerics::ParenthesizedDigitFive),
-            PARENTHESIZED_DIGIT_SIX => Ok(EnclosedAlphanumerics::ParenthesizedDigitSix),
-            PARENTHESIZED_DIGIT_SEVEN => Ok(EnclosedAlphanumerics::ParenthesizedDigitSeven),
-            PARENTHESIZED_DIGIT_EIGHT => Ok(EnclosedAlphanumerics::ParenthesizedDigitEight),
-            PARENTHESIZED_DIGIT_NINE => Ok(EnclosedAlphanumerics::ParenthesizedDigitNine),
-            PARENTHESIZED_NUMBER_TEN => Ok(EnclosedAlphanumerics::ParenthesizedNumberTen),
-            PARENTHESIZED_NUMBER_ELEVEN => Ok(EnclosedAlphanumerics::ParenthesizedNumberEleven),
-            PARENTHESIZED_NUMBER_TWELVE => Ok(EnclosedAlphanumerics::ParenthesizedNumberTwelve),
-            PARENTHESIZED_NUMBER_THIRTEEN => Ok(EnclosedAlphanumerics::ParenthesizedNumberThirteen),
-            PARENTHESIZED_NUMBER_FOURTEEN => Ok(EnclosedAlphanumerics::ParenthesizedNumberFourteen),
-            PARENTHESIZED_NUMBER_FIFTEEN => Ok(EnclosedAlphanumerics::ParenthesizedNumberFifteen),
-            PARENTHESIZED_NUMBER_SIXTEEN => Ok(EnclosedAlphanumerics::ParenthesizedNumberSixteen),
-            PARENTHESIZED_NUMBER_SEVENTEEN => Ok(EnclosedAlphanumerics::ParenthesizedNumberSeventeen),
-            PARENTHESIZED_NUMBER_EIGHTEEN => Ok(EnclosedAlphanumerics::ParenthesizedNumberEighteen),
-            PARENTHESIZED_NUMBER_NINETEEN => Ok(EnclosedAlphanumerics::ParenthesizedNumberNineteen),
-            PARENTHESIZED_NUMBER_TWENTY => Ok(EnclosedAlphanumerics::ParenthesizedNumberTwenty),
-            DIGIT_ONE_FULL_STOP => Ok(EnclosedAlphanumerics::DigitOneFullStop),
-            DIGIT_TWO_FULL_STOP => Ok(EnclosedAlphanumerics::DigitTwoFullStop),
-            DIGIT_THREE_FULL_STOP => Ok(EnclosedAlphanumerics::DigitThreeFullStop),
-            DIGIT_FOUR_FULL_STOP => Ok(EnclosedAlphanumerics::DigitFourFullStop),
-            DIGIT_FIVE_FULL_STOP => Ok(EnclosedAlphanumerics::DigitFiveFullStop),
-            DIGIT_SIX_FULL_STOP => Ok(EnclosedAlphanumerics::DigitSixFullStop),
-            DIGIT_SEVEN_FULL_STOP => Ok(EnclosedAlphanumerics::DigitSevenFullStop),
-            DIGIT_EIGHT_FULL_STOP => Ok(EnclosedAlphanumerics::DigitEightFullStop),
-            DIGIT_NINE_FULL_STOP => Ok(EnclosedAlphanumerics::DigitNineFullStop),
-            NUMBER_TEN_FULL_STOP => Ok(EnclosedAlphanumerics::NumberTenFullStop),
-            NUMBER_ELEVEN_FULL_STOP => Ok(EnclosedAlphanumerics::NumberElevenFullStop),
-            NUMBER_TWELVE_FULL_STOP => Ok(EnclosedAlphanumerics::NumberTwelveFullStop),
-            NUMBER_THIRTEEN_FULL_STOP => Ok(EnclosedAlphanumerics::NumberThirteenFullStop),
-            NUMBER_FOURTEEN_FULL_STOP => Ok(EnclosedAlphanumerics::NumberFourteenFullStop),
-            NUMBER_FIFTEEN_FULL_STOP => Ok(EnclosedAlphanumerics::NumberFifteenFullStop),
-            NUMBER_SIXTEEN_FULL_STOP => Ok(EnclosedAlphanumerics::NumberSixteenFullStop),
-            NUMBER_SEVENTEEN_FULL_STOP => Ok(EnclosedAlphanumerics::NumberSeventeenFullStop),
-            NUMBER_EIGHTEEN_FULL_STOP => Ok(EnclosedAlphanumerics::NumberEighteenFullStop),
-            NUMBER_NINETEEN_FULL_STOP => Ok(EnclosedAlphanumerics::NumberNineteenFullStop),
-            NUMBER_TWENTY_FULL_STOP => Ok(EnclosedAlphanumerics::NumberTwentyFullStop),
-            PARENTHESIZED_LATIN_SMALL_LETTER_A => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterA),
-            PARENTHESIZED_LATIN_SMALL_LETTER_B => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterB),
-            PARENTHESIZED_LATIN_SMALL_LETTER_C => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterC),
-            PARENTHESIZED_LATIN_SMALL_LETTER_D => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterD),
-            PARENTHESIZED_LATIN_SMALL_LETTER_E => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterE),
-            PARENTHESIZED_LATIN_SMALL_LETTER_F => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterF),
-            PARENTHESIZED_LATIN_SMALL_LETTER_G => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterG),
-            PARENTHESIZED_LATIN_SMALL_LETTER_H => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterH),
-            PARENTHESIZED_LATIN_SMALL_LETTER_I => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterI),
-            PARENTHESIZED_LATIN_SMALL_LETTER_J => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterJ),
-            PARENTHESIZED_LATIN_SMALL_LETTER_K => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterK),
-            PARENTHESIZED_LATIN_SMALL_LETTER_L => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterL),
-            PARENTHESIZED_LATIN_SMALL_LETTER_M => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterM),
-            PARENTHESIZED_LATIN_SMALL_LETTER_N => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterN),
-            PARENTHESIZED_LATIN_SMALL_LETTER_O => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterO),
-            PARENTHESIZED_LATIN_SMALL_LETTER_P => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterP),
-            PARENTHESIZED_LATIN_SMALL_LETTER_Q => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterQ),
-            PARENTHESIZED_LATIN_SMALL_LETTER_R => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterR),
-            PARENTHESIZED_LATIN_SMALL_LETTER_S => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterS),
-            PARENTHESIZED_LATIN_SMALL_LETTER_T => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterT),
-            PARENTHESIZED_LATIN_SMALL_LETTER_U => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterU),
-            PARENTHESIZED_LATIN_SMALL_LETTER_V => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterV),
-            PARENTHESIZED_LATIN_SMALL_LETTER_W => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterW),
-            PARENTHESIZED_LATIN_SMALL_LETTER_X => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterX),
-            PARENTHESIZED_LATIN_SMALL_LETTER_Y => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterY),
-            PARENTHESIZED_LATIN_SMALL_LETTER_Z => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterZ),
-            CIRCLED_LATIN_CAPITAL_LETTER_A => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterA),
-            CIRCLED_LATIN_CAPITAL_LETTER_B => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterB),
-            CIRCLED_LATIN_CAPITAL_LETTER_C => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterC),
-            CIRCLED_LATIN_CAPITAL_LETTER_D => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterD),
-            CIRCLED_LATIN_CAPITAL_LETTER_E => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterE),
-            CIRCLED_LATIN_CAPITAL_LETTER_F => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterF),
-            CIRCLED_LATIN_CAPITAL_LETTER_G => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterG),
-            CIRCLED_LATIN_CAPITAL_LETTER_H => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterH),
-            CIRCLED_LATIN_CAPITAL_LETTER_I => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterI),
-            CIRCLED_LATIN_CAPITAL_LETTER_J => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterJ),
-            CIRCLED_LATIN_CAPITAL_LETTER_K => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterK),
-            CIRCLED_LATIN_CAPITAL_LETTER_L => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterL),
-            CIRCLED_LATIN_CAPITAL_LETTER_M => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterM),
-            CIRCLED_LATIN_CAPITAL_LETTER_N => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterN),
-            CIRCLED_LATIN_CAPITAL_LETTER_O => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterO),
-            CIRCLED_LATIN_CAPITAL_LETTER_P => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterP),
-            CIRCLED_LATIN_CAPITAL_LETTER_Q => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterQ),
-            CIRCLED_LATIN_CAPITAL_LETTER_R => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterR),
-            CIRCLED_LATIN_CAPITAL_LETTER_S => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterS),
-            CIRCLED_LATIN_CAPITAL_LETTER_T => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterT),
-            CIRCLED_LATIN_CAPITAL_LETTER_U => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterU),
-            CIRCLED_LATIN_CAPITAL_LETTER_V => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterV),
-            CIRCLED_LATIN_CAPITAL_LETTER_W => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterW),
-            CIRCLED_LATIN_CAPITAL_LETTER_X => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterX),
-            CIRCLED_LATIN_CAPITAL_LETTER_Y => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterY),
-            CIRCLED_LATIN_CAPITAL_LETTER_Z => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterZ),
-            CIRCLED_LATIN_SMALL_LETTER_A => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterA),
-            CIRCLED_LATIN_SMALL_LETTER_B => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterB),
-            CIRCLED_LATIN_SMALL_LETTER_C => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterC),
-            CIRCLED_LATIN_SMALL_LETTER_D => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterD),
-            CIRCLED_LATIN_SMALL_LETTER_E => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterE),
-            CIRCLED_LATIN_SMALL_LETTER_F => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterF),
-            CIRCLED_LATIN_SMALL_LETTER_G => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterG),
-            CIRCLED_LATIN_SMALL_LETTER_H => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterH),
-            CIRCLED_LATIN_SMALL_LETTER_I => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterI),
-            CIRCLED_LATIN_SMALL_LETTER_J => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterJ),
-            CIRCLED_LATIN_SMALL_LETTER_K => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterK),
-            CIRCLED_LATIN_SMALL_LETTER_L => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterL),
-            CIRCLED_LATIN_SMALL_LETTER_M => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterM),
-            CIRCLED_LATIN_SMALL_LETTER_N => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterN),
-            CIRCLED_LATIN_SMALL_LETTER_O => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterO),
-            CIRCLED_LATIN_SMALL_LETTER_P => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterP),
-            CIRCLED_LATIN_SMALL_LETTER_Q => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterQ),
-            CIRCLED_LATIN_SMALL_LETTER_R => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterR),
-            CIRCLED_LATIN_SMALL_LETTER_S => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterS),
-            CIRCLED_LATIN_SMALL_LETTER_T => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterT),
-            CIRCLED_LATIN_SMALL_LETTER_U => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterU),
-            CIRCLED_LATIN_SMALL_LETTER_V => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterV),
-            CIRCLED_LATIN_SMALL_LETTER_W => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterW),
-            CIRCLED_LATIN_SMALL_LETTER_X => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterX),
-            CIRCLED_LATIN_SMALL_LETTER_Y => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterY),
-            CIRCLED_LATIN_SMALL_LETTER_Z => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterZ),
-            CIRCLED_DIGIT_ZERO => Ok(EnclosedAlphanumerics::CircledDigitZero),
-            NEGATIVE_CIRCLED_NUMBER_ELEVEN => Ok(EnclosedAlphanumerics::NegativeCircledNumberEleven),
-            NEGATIVE_CIRCLED_NUMBER_TWELVE => Ok(EnclosedAlphanumerics::NegativeCircledNumberTwelve),
-            NEGATIVE_CIRCLED_NUMBER_THIRTEEN => Ok(EnclosedAlphanumerics::NegativeCircledNumberThirteen),
-            NEGATIVE_CIRCLED_NUMBER_FOURTEEN => Ok(EnclosedAlphanumerics::NegativeCircledNumberFourteen),
-            NEGATIVE_CIRCLED_NUMBER_FIFTEEN => Ok(EnclosedAlphanumerics::NegativeCircledNumberFifteen),
-            NEGATIVE_CIRCLED_NUMBER_SIXTEEN => Ok(EnclosedAlphanumerics::NegativeCircledNumberSixteen),
-            NEGATIVE_CIRCLED_NUMBER_SEVENTEEN => Ok(EnclosedAlphanumerics::NegativeCircledNumberSeventeen),
-            NEGATIVE_CIRCLED_NUMBER_EIGHTEEN => Ok(EnclosedAlphanumerics::NegativeCircledNumberEighteen),
-            NEGATIVE_CIRCLED_NUMBER_NINETEEN => Ok(EnclosedAlphanumerics::NegativeCircledNumberNineteen),
-            NEGATIVE_CIRCLED_NUMBER_TWENTY => Ok(EnclosedAlphanumerics::NegativeCircledNumberTwenty),
-            DOUBLE_CIRCLED_DIGIT_ONE => Ok(EnclosedAlphanumerics::DoubleCircledDigitOne),
-            DOUBLE_CIRCLED_DIGIT_TWO => Ok(EnclosedAlphanumerics::DoubleCircledDigitTwo),
-            DOUBLE_CIRCLED_DIGIT_THREE => Ok(EnclosedAlphanumerics::DoubleCircledDigitThree),
-            DOUBLE_CIRCLED_DIGIT_FOUR => Ok(EnclosedAlphanumerics::DoubleCircledDigitFour),
-            DOUBLE_CIRCLED_DIGIT_FIVE => Ok(EnclosedAlphanumerics::DoubleCircledDigitFive),
-            DOUBLE_CIRCLED_DIGIT_SIX => Ok(EnclosedAlphanumerics::DoubleCircledDigitSix),
-            DOUBLE_CIRCLED_DIGIT_SEVEN => Ok(EnclosedAlphanumerics::DoubleCircledDigitSeven),
-            DOUBLE_CIRCLED_DIGIT_EIGHT => Ok(EnclosedAlphanumerics::DoubleCircledDigitEight),
-            DOUBLE_CIRCLED_DIGIT_NINE => Ok(EnclosedAlphanumerics::DoubleCircledDigitNine),
-            DOUBLE_CIRCLED_NUMBER_TEN => Ok(EnclosedAlphanumerics::DoubleCircledNumberTen),
+            '①' => Ok(EnclosedAlphanumerics::CircledDigitOne),
+            '②' => Ok(EnclosedAlphanumerics::CircledDigitTwo),
+            '③' => Ok(EnclosedAlphanumerics::CircledDigitThree),
+            '④' => Ok(EnclosedAlphanumerics::CircledDigitFour),
+            '⑤' => Ok(EnclosedAlphanumerics::CircledDigitFive),
+            '⑥' => Ok(EnclosedAlphanumerics::CircledDigitSix),
+            '⑦' => Ok(EnclosedAlphanumerics::CircledDigitSeven),
+            '⑧' => Ok(EnclosedAlphanumerics::CircledDigitEight),
+            '⑨' => Ok(EnclosedAlphanumerics::CircledDigitNine),
+            '⑩' => Ok(EnclosedAlphanumerics::CircledNumberTen),
+            '⑪' => Ok(EnclosedAlphanumerics::CircledNumberEleven),
+            '⑫' => Ok(EnclosedAlphanumerics::CircledNumberTwelve),
+            '⑬' => Ok(EnclosedAlphanumerics::CircledNumberThirteen),
+            '⑭' => Ok(EnclosedAlphanumerics::CircledNumberFourteen),
+            '⑮' => Ok(EnclosedAlphanumerics::CircledNumberFifteen),
+            '⑯' => Ok(EnclosedAlphanumerics::CircledNumberSixteen),
+            '⑰' => Ok(EnclosedAlphanumerics::CircledNumberSeventeen),
+            '⑱' => Ok(EnclosedAlphanumerics::CircledNumberEighteen),
+            '⑲' => Ok(EnclosedAlphanumerics::CircledNumberNineteen),
+            '⑳' => Ok(EnclosedAlphanumerics::CircledNumberTwenty),
+            '⑴' => Ok(EnclosedAlphanumerics::ParenthesizedDigitOne),
+            '⑵' => Ok(EnclosedAlphanumerics::ParenthesizedDigitTwo),
+            '⑶' => Ok(EnclosedAlphanumerics::ParenthesizedDigitThree),
+            '⑷' => Ok(EnclosedAlphanumerics::ParenthesizedDigitFour),
+            '⑸' => Ok(EnclosedAlphanumerics::ParenthesizedDigitFive),
+            '⑹' => Ok(EnclosedAlphanumerics::ParenthesizedDigitSix),
+            '⑺' => Ok(EnclosedAlphanumerics::ParenthesizedDigitSeven),
+            '⑻' => Ok(EnclosedAlphanumerics::ParenthesizedDigitEight),
+            '⑼' => Ok(EnclosedAlphanumerics::ParenthesizedDigitNine),
+            '⑽' => Ok(EnclosedAlphanumerics::ParenthesizedNumberTen),
+            '⑾' => Ok(EnclosedAlphanumerics::ParenthesizedNumberEleven),
+            '⑿' => Ok(EnclosedAlphanumerics::ParenthesizedNumberTwelve),
+            '⒀' => Ok(EnclosedAlphanumerics::ParenthesizedNumberThirteen),
+            '⒁' => Ok(EnclosedAlphanumerics::ParenthesizedNumberFourteen),
+            '⒂' => Ok(EnclosedAlphanumerics::ParenthesizedNumberFifteen),
+            '⒃' => Ok(EnclosedAlphanumerics::ParenthesizedNumberSixteen),
+            '⒄' => Ok(EnclosedAlphanumerics::ParenthesizedNumberSeventeen),
+            '⒅' => Ok(EnclosedAlphanumerics::ParenthesizedNumberEighteen),
+            '⒆' => Ok(EnclosedAlphanumerics::ParenthesizedNumberNineteen),
+            '⒇' => Ok(EnclosedAlphanumerics::ParenthesizedNumberTwenty),
+            '⒈' => Ok(EnclosedAlphanumerics::DigitOneFullStop),
+            '⒉' => Ok(EnclosedAlphanumerics::DigitTwoFullStop),
+            '⒊' => Ok(EnclosedAlphanumerics::DigitThreeFullStop),
+            '⒋' => Ok(EnclosedAlphanumerics::DigitFourFullStop),
+            '⒌' => Ok(EnclosedAlphanumerics::DigitFiveFullStop),
+            '⒍' => Ok(EnclosedAlphanumerics::DigitSixFullStop),
+            '⒎' => Ok(EnclosedAlphanumerics::DigitSevenFullStop),
+            '⒏' => Ok(EnclosedAlphanumerics::DigitEightFullStop),
+            '⒐' => Ok(EnclosedAlphanumerics::DigitNineFullStop),
+            '⒑' => Ok(EnclosedAlphanumerics::NumberTenFullStop),
+            '⒒' => Ok(EnclosedAlphanumerics::NumberElevenFullStop),
+            '⒓' => Ok(EnclosedAlphanumerics::NumberTwelveFullStop),
+            '⒔' => Ok(EnclosedAlphanumerics::NumberThirteenFullStop),
+            '⒕' => Ok(EnclosedAlphanumerics::NumberFourteenFullStop),
+            '⒖' => Ok(EnclosedAlphanumerics::NumberFifteenFullStop),
+            '⒗' => Ok(EnclosedAlphanumerics::NumberSixteenFullStop),
+            '⒘' => Ok(EnclosedAlphanumerics::NumberSeventeenFullStop),
+            '⒙' => Ok(EnclosedAlphanumerics::NumberEighteenFullStop),
+            '⒚' => Ok(EnclosedAlphanumerics::NumberNineteenFullStop),
+            '⒛' => Ok(EnclosedAlphanumerics::NumberTwentyFullStop),
+            '⒜' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterA),
+            '⒝' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterB),
+            '⒞' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterC),
+            '⒟' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterD),
+            '⒠' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterE),
+            '⒡' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterF),
+            '⒢' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterG),
+            '⒣' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterH),
+            '⒤' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterI),
+            '⒥' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterJ),
+            '⒦' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterK),
+            '⒧' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterL),
+            '⒨' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterM),
+            '⒩' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterN),
+            '⒪' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterO),
+            '⒫' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterP),
+            '⒬' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterQ),
+            '⒭' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterR),
+            '⒮' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterS),
+            '⒯' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterT),
+            '⒰' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterU),
+            '⒱' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterV),
+            '⒲' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterW),
+            '⒳' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterX),
+            '⒴' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterY),
+            '⒵' => Ok(EnclosedAlphanumerics::ParenthesizedLatinSmallLetterZ),
+            'Ⓐ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterA),
+            'Ⓑ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterB),
+            'Ⓒ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterC),
+            'Ⓓ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterD),
+            'Ⓔ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterE),
+            'Ⓕ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterF),
+            'Ⓖ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterG),
+            'Ⓗ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterH),
+            'Ⓘ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterI),
+            'Ⓙ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterJ),
+            'Ⓚ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterK),
+            'Ⓛ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterL),
+            'Ⓜ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterM),
+            'Ⓝ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterN),
+            'Ⓞ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterO),
+            'Ⓟ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterP),
+            'Ⓠ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterQ),
+            'Ⓡ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterR),
+            'Ⓢ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterS),
+            'Ⓣ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterT),
+            'Ⓤ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterU),
+            'Ⓥ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterV),
+            'Ⓦ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterW),
+            'Ⓧ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterX),
+            'Ⓨ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterY),
+            'Ⓩ' => Ok(EnclosedAlphanumerics::CircledLatinCapitalLetterZ),
+            'ⓐ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterA),
+            'ⓑ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterB),
+            'ⓒ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterC),
+            'ⓓ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterD),
+            'ⓔ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterE),
+            'ⓕ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterF),
+            'ⓖ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterG),
+            'ⓗ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterH),
+            'ⓘ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterI),
+            'ⓙ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterJ),
+            'ⓚ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterK),
+            'ⓛ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterL),
+            'ⓜ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterM),
+            'ⓝ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterN),
+            'ⓞ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterO),
+            'ⓟ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterP),
+            'ⓠ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterQ),
+            'ⓡ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterR),
+            'ⓢ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterS),
+            'ⓣ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterT),
+            'ⓤ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterU),
+            'ⓥ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterV),
+            'ⓦ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterW),
+            'ⓧ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterX),
+            'ⓨ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterY),
+            'ⓩ' => Ok(EnclosedAlphanumerics::CircledLatinSmallLetterZ),
+            '⓪' => Ok(EnclosedAlphanumerics::CircledDigitZero),
+            '⓫' => Ok(EnclosedAlphanumerics::NegativeCircledNumberEleven),
+            '⓬' => Ok(EnclosedAlphanumerics::NegativeCircledNumberTwelve),
+            '⓭' => Ok(EnclosedAlphanumerics::NegativeCircledNumberThirteen),
+            '⓮' => Ok(EnclosedAlphanumerics::NegativeCircledNumberFourteen),
+            '⓯' => Ok(EnclosedAlphanumerics::NegativeCircledNumberFifteen),
+            '⓰' => Ok(EnclosedAlphanumerics::NegativeCircledNumberSixteen),
+            '⓱' => Ok(EnclosedAlphanumerics::NegativeCircledNumberSeventeen),
+            '⓲' => Ok(EnclosedAlphanumerics::NegativeCircledNumberEighteen),
+            '⓳' => Ok(EnclosedAlphanumerics::NegativeCircledNumberNineteen),
+            '⓴' => Ok(EnclosedAlphanumerics::NegativeCircledNumberTwenty),
+            '⓵' => Ok(EnclosedAlphanumerics::DoubleCircledDigitOne),
+            '⓶' => Ok(EnclosedAlphanumerics::DoubleCircledDigitTwo),
+            '⓷' => Ok(EnclosedAlphanumerics::DoubleCircledDigitThree),
+            '⓸' => Ok(EnclosedAlphanumerics::DoubleCircledDigitFour),
+            '⓹' => Ok(EnclosedAlphanumerics::DoubleCircledDigitFive),
+            '⓺' => Ok(EnclosedAlphanumerics::DoubleCircledDigitSix),
+            '⓻' => Ok(EnclosedAlphanumerics::DoubleCircledDigitSeven),
+            '⓼' => Ok(EnclosedAlphanumerics::DoubleCircledDigitEight),
+            '⓽' => Ok(EnclosedAlphanumerics::DoubleCircledDigitNine),
+            '⓾' => Ok(EnclosedAlphanumerics::DoubleCircledNumberTen),
             _ => Err(()),
         }
     }

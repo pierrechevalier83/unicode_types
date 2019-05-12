@@ -1,1090 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2f800}: '丽'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F800: char = '丽';
-    /// \u{2f801}: '丸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F801: char = '丸';
-    /// \u{2f802}: '乁'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F802: char = '乁';
-    /// \u{2f803}: '𠄢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F803: char = '𠄢';
-    /// \u{2f804}: '你'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F804: char = '你';
-    /// \u{2f805}: '侮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F805: char = '侮';
-    /// \u{2f806}: '侻'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F806: char = '侻';
-    /// \u{2f807}: '倂'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F807: char = '倂';
-    /// \u{2f808}: '偺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F808: char = '偺';
-    /// \u{2f809}: '備'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F809: char = '備';
-    /// \u{2f80a}: '僧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80A: char = '僧';
-    /// \u{2f80b}: '像'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80B: char = '像';
-    /// \u{2f80c}: '㒞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80C: char = '㒞';
-    /// \u{2f80d}: '𠘺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80D: char = '𠘺';
-    /// \u{2f80e}: '免'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80E: char = '免';
-    /// \u{2f80f}: '兔'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80F: char = '兔';
-    /// \u{2f810}: '兤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F810: char = '兤';
-    /// \u{2f811}: '具'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F811: char = '具';
-    /// \u{2f812}: '𠔜'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F812: char = '𠔜';
-    /// \u{2f813}: '㒹'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F813: char = '㒹';
-    /// \u{2f814}: '內'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F814: char = '內';
-    /// \u{2f815}: '再'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F815: char = '再';
-    /// \u{2f816}: '𠕋'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F816: char = '𠕋';
-    /// \u{2f817}: '冗'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F817: char = '冗';
-    /// \u{2f818}: '冤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F818: char = '冤';
-    /// \u{2f819}: '仌'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F819: char = '仌';
-    /// \u{2f81a}: '冬'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81A: char = '冬';
-    /// \u{2f81b}: '况'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81B: char = '况';
-    /// \u{2f81c}: '𩇟'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81C: char = '𩇟';
-    /// \u{2f81d}: '凵'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81D: char = '凵';
-    /// \u{2f81e}: '刃'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81E: char = '刃';
-    /// \u{2f81f}: '㓟'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81F: char = '㓟';
-    /// \u{2f820}: '刻'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F820: char = '刻';
-    /// \u{2f821}: '剆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F821: char = '剆';
-    /// \u{2f822}: '割'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F822: char = '割';
-    /// \u{2f823}: '剷'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F823: char = '剷';
-    /// \u{2f824}: '㔕'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F824: char = '㔕';
-    /// \u{2f825}: '勇'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F825: char = '勇';
-    /// \u{2f826}: '勉'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F826: char = '勉';
-    /// \u{2f827}: '勤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F827: char = '勤';
-    /// \u{2f828}: '勺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F828: char = '勺';
-    /// \u{2f829}: '包'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F829: char = '包';
-    /// \u{2f82a}: '匆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82A: char = '匆';
-    /// \u{2f82b}: '北'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82B: char = '北';
-    /// \u{2f82c}: '卉'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82C: char = '卉';
-    /// \u{2f82d}: '卑'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82D: char = '卑';
-    /// \u{2f82e}: '博'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82E: char = '博';
-    /// \u{2f82f}: '即'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82F: char = '即';
-    /// \u{2f830}: '卽'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F830: char = '卽';
-    /// \u{2f831}: '卿'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F831: char = '卿';
-    /// \u{2f832}: '卿'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F832: char = '卿';
-    /// \u{2f833}: '卿'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F833: char = '卿';
-    /// \u{2f834}: '𠨬'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F834: char = '𠨬';
-    /// \u{2f835}: '灰'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F835: char = '灰';
-    /// \u{2f836}: '及'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F836: char = '及';
-    /// \u{2f837}: '叟'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F837: char = '叟';
-    /// \u{2f838}: '𠭣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F838: char = '𠭣';
-    /// \u{2f839}: '叫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F839: char = '叫';
-    /// \u{2f83a}: '叱'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83A: char = '叱';
-    /// \u{2f83b}: '吆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83B: char = '吆';
-    /// \u{2f83c}: '咞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83C: char = '咞';
-    /// \u{2f83d}: '吸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83D: char = '吸';
-    /// \u{2f83e}: '呈'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83E: char = '呈';
-    /// \u{2f83f}: '周'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83F: char = '周';
-    /// \u{2f840}: '咢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F840: char = '咢';
-    /// \u{2f841}: '哶'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F841: char = '哶';
-    /// \u{2f842}: '唐'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F842: char = '唐';
-    /// \u{2f843}: '啓'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F843: char = '啓';
-    /// \u{2f844}: '啣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F844: char = '啣';
-    /// \u{2f845}: '善'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F845: char = '善';
-    /// \u{2f846}: '善'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F846: char = '善';
-    /// \u{2f847}: '喙'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F847: char = '喙';
-    /// \u{2f848}: '喫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F848: char = '喫';
-    /// \u{2f849}: '喳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F849: char = '喳';
-    /// \u{2f84a}: '嗂'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84A: char = '嗂';
-    /// \u{2f84b}: '圖'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84B: char = '圖';
-    /// \u{2f84c}: '嘆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84C: char = '嘆';
-    /// \u{2f84d}: '圗'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84D: char = '圗';
-    /// \u{2f84e}: '噑'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84E: char = '噑';
-    /// \u{2f84f}: '噴'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84F: char = '噴';
-    /// \u{2f850}: '切'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F850: char = '切';
-    /// \u{2f851}: '壮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F851: char = '壮';
-    /// \u{2f852}: '城'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F852: char = '城';
-    /// \u{2f853}: '埴'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F853: char = '埴';
-    /// \u{2f854}: '堍'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F854: char = '堍';
-    /// \u{2f855}: '型'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F855: char = '型';
-    /// \u{2f856}: '堲'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F856: char = '堲';
-    /// \u{2f857}: '報'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F857: char = '報';
-    /// \u{2f858}: '墬'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F858: char = '墬';
-    /// \u{2f859}: '𡓤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F859: char = '𡓤';
-    /// \u{2f85a}: '売'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85A: char = '売';
-    /// \u{2f85b}: '壷'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85B: char = '壷';
-    /// \u{2f85c}: '夆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85C: char = '夆';
-    /// \u{2f85d}: '多'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85D: char = '多';
-    /// \u{2f85e}: '夢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85E: char = '夢';
-    /// \u{2f85f}: '奢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85F: char = '奢';
-    /// \u{2f860}: '𡚨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F860: char = '𡚨';
-    /// \u{2f861}: '𡛪'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F861: char = '𡛪';
-    /// \u{2f862}: '姬'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F862: char = '姬';
-    /// \u{2f863}: '娛'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F863: char = '娛';
-    /// \u{2f864}: '娧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F864: char = '娧';
-    /// \u{2f865}: '姘'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F865: char = '姘';
-    /// \u{2f866}: '婦'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F866: char = '婦';
-    /// \u{2f867}: '㛮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F867: char = '㛮';
-    /// \u{2f868}: '㛼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F868: char = '㛼';
-    /// \u{2f869}: '嬈'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F869: char = '嬈';
-    /// \u{2f86a}: '嬾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86A: char = '嬾';
-    /// \u{2f86b}: '嬾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86B: char = '嬾';
-    /// \u{2f86c}: '𡧈'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86C: char = '𡧈';
-    /// \u{2f86d}: '寃'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86D: char = '寃';
-    /// \u{2f86e}: '寘'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86E: char = '寘';
-    /// \u{2f86f}: '寧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86F: char = '寧';
-    /// \u{2f870}: '寳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F870: char = '寳';
-    /// \u{2f871}: '𡬘'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F871: char = '𡬘';
-    /// \u{2f872}: '寿'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F872: char = '寿';
-    /// \u{2f873}: '将'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F873: char = '将';
-    /// \u{2f874}: '当'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F874: char = '当';
-    /// \u{2f875}: '尢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F875: char = '尢';
-    /// \u{2f876}: '㞁'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F876: char = '㞁';
-    /// \u{2f877}: '屠'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F877: char = '屠';
-    /// \u{2f878}: '屮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F878: char = '屮';
-    /// \u{2f879}: '峀'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F879: char = '峀';
-    /// \u{2f87a}: '岍'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87A: char = '岍';
-    /// \u{2f87b}: '𡷤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87B: char = '𡷤';
-    /// \u{2f87c}: '嵃'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87C: char = '嵃';
-    /// \u{2f87d}: '𡷦'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87D: char = '𡷦';
-    /// \u{2f87e}: '嵮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87E: char = '嵮';
-    /// \u{2f87f}: '嵫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87F: char = '嵫';
-    /// \u{2f880}: '嵼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F880: char = '嵼';
-    /// \u{2f881}: '巡'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F881: char = '巡';
-    /// \u{2f882}: '巢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F882: char = '巢';
-    /// \u{2f883}: '㠯'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F883: char = '㠯';
-    /// \u{2f884}: '巽'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F884: char = '巽';
-    /// \u{2f885}: '帨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F885: char = '帨';
-    /// \u{2f886}: '帽'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F886: char = '帽';
-    /// \u{2f887}: '幩'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F887: char = '幩';
-    /// \u{2f888}: '㡢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F888: char = '㡢';
-    /// \u{2f889}: '𢆃'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F889: char = '𢆃';
-    /// \u{2f88a}: '㡼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88A: char = '㡼';
-    /// \u{2f88b}: '庰'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88B: char = '庰';
-    /// \u{2f88c}: '庳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88C: char = '庳';
-    /// \u{2f88d}: '庶'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88D: char = '庶';
-    /// \u{2f88e}: '廊'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88E: char = '廊';
-    /// \u{2f88f}: '𪎒'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88F: char = '𪎒';
-    /// \u{2f890}: '廾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F890: char = '廾';
-    /// \u{2f891}: '𢌱'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F891: char = '𢌱';
-    /// \u{2f892}: '𢌱'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F892: char = '𢌱';
-    /// \u{2f893}: '舁'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F893: char = '舁';
-    /// \u{2f894}: '弢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F894: char = '弢';
-    /// \u{2f895}: '弢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F895: char = '弢';
-    /// \u{2f896}: '㣇'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F896: char = '㣇';
-    /// \u{2f897}: '𣊸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F897: char = '𣊸';
-    /// \u{2f898}: '𦇚'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F898: char = '𦇚';
-    /// \u{2f899}: '形'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F899: char = '形';
-    /// \u{2f89a}: '彫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89A: char = '彫';
-    /// \u{2f89b}: '㣣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89B: char = '㣣';
-    /// \u{2f89c}: '徚'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89C: char = '徚';
-    /// \u{2f89d}: '忍'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89D: char = '忍';
-    /// \u{2f89e}: '志'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89E: char = '志';
-    /// \u{2f89f}: '忹'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89F: char = '忹';
-    /// \u{2f8a0}: '悁'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A0: char = '悁';
-    /// \u{2f8a1}: '㤺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A1: char = '㤺';
-    /// \u{2f8a2}: '㤜'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A2: char = '㤜';
-    /// \u{2f8a3}: '悔'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A3: char = '悔';
-    /// \u{2f8a4}: '𢛔'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A4: char = '𢛔';
-    /// \u{2f8a5}: '惇'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A5: char = '惇';
-    /// \u{2f8a6}: '慈'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A6: char = '慈';
-    /// \u{2f8a7}: '慌'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A7: char = '慌';
-    /// \u{2f8a8}: '慎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A8: char = '慎';
-    /// \u{2f8a9}: '慌'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A9: char = '慌';
-    /// \u{2f8aa}: '慺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AA: char = '慺';
-    /// \u{2f8ab}: '憎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AB: char = '憎';
-    /// \u{2f8ac}: '憲'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AC: char = '憲';
-    /// \u{2f8ad}: '憤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AD: char = '憤';
-    /// \u{2f8ae}: '憯'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AE: char = '憯';
-    /// \u{2f8af}: '懞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AF: char = '懞';
-    /// \u{2f8b0}: '懲'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B0: char = '懲';
-    /// \u{2f8b1}: '懶'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B1: char = '懶';
-    /// \u{2f8b2}: '成'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B2: char = '成';
-    /// \u{2f8b3}: '戛'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B3: char = '戛';
-    /// \u{2f8b4}: '扝'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B4: char = '扝';
-    /// \u{2f8b5}: '抱'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B5: char = '抱';
-    /// \u{2f8b6}: '拔'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B6: char = '拔';
-    /// \u{2f8b7}: '捐'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B7: char = '捐';
-    /// \u{2f8b8}: '𢬌'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B8: char = '𢬌';
-    /// \u{2f8b9}: '挽'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B9: char = '挽';
-    /// \u{2f8ba}: '拼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BA: char = '拼';
-    /// \u{2f8bb}: '捨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BB: char = '捨';
-    /// \u{2f8bc}: '掃'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BC: char = '掃';
-    /// \u{2f8bd}: '揤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BD: char = '揤';
-    /// \u{2f8be}: '𢯱'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BE: char = '𢯱';
-    /// \u{2f8bf}: '搢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BF: char = '搢';
-    /// \u{2f8c0}: '揅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C0: char = '揅';
-    /// \u{2f8c1}: '掩'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C1: char = '掩';
-    /// \u{2f8c2}: '㨮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C2: char = '㨮';
-    /// \u{2f8c3}: '摩'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C3: char = '摩';
-    /// \u{2f8c4}: '摾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C4: char = '摾';
-    /// \u{2f8c5}: '撝'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C5: char = '撝';
-    /// \u{2f8c6}: '摷'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C6: char = '摷';
-    /// \u{2f8c7}: '㩬'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C7: char = '㩬';
-    /// \u{2f8c8}: '敏'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C8: char = '敏';
-    /// \u{2f8c9}: '敬'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C9: char = '敬';
-    /// \u{2f8ca}: '𣀊'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CA: char = '𣀊';
-    /// \u{2f8cb}: '旣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CB: char = '旣';
-    /// \u{2f8cc}: '書'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CC: char = '書';
-    /// \u{2f8cd}: '晉'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CD: char = '晉';
-    /// \u{2f8ce}: '㬙'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CE: char = '㬙';
-    /// \u{2f8cf}: '暑'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CF: char = '暑';
-    /// \u{2f8d0}: '㬈'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D0: char = '㬈';
-    /// \u{2f8d1}: '㫤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D1: char = '㫤';
-    /// \u{2f8d2}: '冒'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D2: char = '冒';
-    /// \u{2f8d3}: '冕'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D3: char = '冕';
-    /// \u{2f8d4}: '最'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D4: char = '最';
-    /// \u{2f8d5}: '暜'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D5: char = '暜';
-    /// \u{2f8d6}: '肭'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D6: char = '肭';
-    /// \u{2f8d7}: '䏙'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D7: char = '䏙';
-    /// \u{2f8d8}: '朗'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D8: char = '朗';
-    /// \u{2f8d9}: '望'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D9: char = '望';
-    /// \u{2f8da}: '朡'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DA: char = '朡';
-    /// \u{2f8db}: '杞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DB: char = '杞';
-    /// \u{2f8dc}: '杓'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DC: char = '杓';
-    /// \u{2f8dd}: '𣏃'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DD: char = '𣏃';
-    /// \u{2f8de}: '㭉'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DE: char = '㭉';
-    /// \u{2f8df}: '柺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DF: char = '柺';
-    /// \u{2f8e0}: '枅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E0: char = '枅';
-    /// \u{2f8e1}: '桒'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E1: char = '桒';
-    /// \u{2f8e2}: '梅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E2: char = '梅';
-    /// \u{2f8e3}: '𣑭'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E3: char = '𣑭';
-    /// \u{2f8e4}: '梎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E4: char = '梎';
-    /// \u{2f8e5}: '栟'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E5: char = '栟';
-    /// \u{2f8e6}: '椔'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E6: char = '椔';
-    /// \u{2f8e7}: '㮝'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E7: char = '㮝';
-    /// \u{2f8e8}: '楂'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E8: char = '楂';
-    /// \u{2f8e9}: '榣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E9: char = '榣';
-    /// \u{2f8ea}: '槪'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EA: char = '槪';
-    /// \u{2f8eb}: '檨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EB: char = '檨';
-    /// \u{2f8ec}: '𣚣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EC: char = '𣚣';
-    /// \u{2f8ed}: '櫛'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8ED: char = '櫛';
-    /// \u{2f8ee}: '㰘'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EE: char = '㰘';
-    /// \u{2f8ef}: '次'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EF: char = '次';
-    /// \u{2f8f0}: '𣢧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F0: char = '𣢧';
-    /// \u{2f8f1}: '歔'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F1: char = '歔';
-    /// \u{2f8f2}: '㱎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F2: char = '㱎';
-    /// \u{2f8f3}: '歲'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F3: char = '歲';
-    /// \u{2f8f4}: '殟'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F4: char = '殟';
-    /// \u{2f8f5}: '殺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F5: char = '殺';
-    /// \u{2f8f6}: '殻'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F6: char = '殻';
-    /// \u{2f8f7}: '𣪍'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F7: char = '𣪍';
-    /// \u{2f8f8}: '𡴋'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F8: char = '𡴋';
-    /// \u{2f8f9}: '𣫺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F9: char = '𣫺';
-    /// \u{2f8fa}: '汎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FA: char = '汎';
-    /// \u{2f8fb}: '𣲼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FB: char = '𣲼';
-    /// \u{2f8fc}: '沿'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FC: char = '沿';
-    /// \u{2f8fd}: '泍'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FD: char = '泍';
-    /// \u{2f8fe}: '汧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FE: char = '汧';
-    /// \u{2f8ff}: '洖'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FF: char = '洖';
-    /// \u{2f900}: '派'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F900: char = '派';
-    /// \u{2f901}: '海'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F901: char = '海';
-    /// \u{2f902}: '流'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F902: char = '流';
-    /// \u{2f903}: '浩'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F903: char = '浩';
-    /// \u{2f904}: '浸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F904: char = '浸';
-    /// \u{2f905}: '涅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F905: char = '涅';
-    /// \u{2f906}: '𣴞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F906: char = '𣴞';
-    /// \u{2f907}: '洴'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F907: char = '洴';
-    /// \u{2f908}: '港'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F908: char = '港';
-    /// \u{2f909}: '湮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F909: char = '湮';
-    /// \u{2f90a}: '㴳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90A: char = '㴳';
-    /// \u{2f90b}: '滋'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90B: char = '滋';
-    /// \u{2f90c}: '滇'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90C: char = '滇';
-    /// \u{2f90d}: '𣻑'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90D: char = '𣻑';
-    /// \u{2f90e}: '淹'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90E: char = '淹';
-    /// \u{2f90f}: '潮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90F: char = '潮';
-    /// \u{2f910}: '𣽞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F910: char = '𣽞';
-    /// \u{2f911}: '𣾎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F911: char = '𣾎';
-    /// \u{2f912}: '濆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F912: char = '濆';
-    /// \u{2f913}: '瀹'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F913: char = '瀹';
-    /// \u{2f914}: '瀞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F914: char = '瀞';
-    /// \u{2f915}: '瀛'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F915: char = '瀛';
-    /// \u{2f916}: '㶖'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F916: char = '㶖';
-    /// \u{2f917}: '灊'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F917: char = '灊';
-    /// \u{2f918}: '災'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F918: char = '災';
-    /// \u{2f919}: '灷'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F919: char = '灷';
-    /// \u{2f91a}: '炭'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91A: char = '炭';
-    /// \u{2f91b}: '𠔥'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91B: char = '𠔥';
-    /// \u{2f91c}: '煅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91C: char = '煅';
-    /// \u{2f91d}: '𤉣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91D: char = '𤉣';
-    /// \u{2f91e}: '熜'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91E: char = '熜';
-    /// \u{2f91f}: '𤎫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91F: char = '𤎫';
-    /// \u{2f920}: '爨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F920: char = '爨';
-    /// \u{2f921}: '爵'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F921: char = '爵';
-    /// \u{2f922}: '牐'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F922: char = '牐';
-    /// \u{2f923}: '𤘈'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F923: char = '𤘈';
-    /// \u{2f924}: '犀'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F924: char = '犀';
-    /// \u{2f925}: '犕'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F925: char = '犕';
-    /// \u{2f926}: '𤜵'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F926: char = '𤜵';
-    /// \u{2f927}: '𤠔'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F927: char = '𤠔';
-    /// \u{2f928}: '獺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F928: char = '獺';
-    /// \u{2f929}: '王'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F929: char = '王';
-    /// \u{2f92a}: '㺬'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92A: char = '㺬';
-    /// \u{2f92b}: '玥'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92B: char = '玥';
-    /// \u{2f92c}: '㺸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92C: char = '㺸';
-    /// \u{2f92d}: '㺸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92D: char = '㺸';
-    /// \u{2f92e}: '瑇'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92E: char = '瑇';
-    /// \u{2f92f}: '瑜'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92F: char = '瑜';
-    /// \u{2f930}: '瑱'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F930: char = '瑱';
-    /// \u{2f931}: '璅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F931: char = '璅';
-    /// \u{2f932}: '瓊'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F932: char = '瓊';
-    /// \u{2f933}: '㼛'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F933: char = '㼛';
-    /// \u{2f934}: '甤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F934: char = '甤';
-    /// \u{2f935}: '𤰶'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F935: char = '𤰶';
-    /// \u{2f936}: '甾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F936: char = '甾';
-    /// \u{2f937}: '𤲒'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F937: char = '𤲒';
-    /// \u{2f938}: '異'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F938: char = '異';
-    /// \u{2f939}: '𢆟'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F939: char = '𢆟';
-    /// \u{2f93a}: '瘐'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93A: char = '瘐';
-    /// \u{2f93b}: '𤾡'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93B: char = '𤾡';
-    /// \u{2f93c}: '𤾸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93C: char = '𤾸';
-    /// \u{2f93d}: '𥁄'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93D: char = '𥁄';
-    /// \u{2f93e}: '㿼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93E: char = '㿼';
-    /// \u{2f93f}: '䀈'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93F: char = '䀈';
-    /// \u{2f940}: '直'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F940: char = '直';
-    /// \u{2f941}: '𥃳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F941: char = '𥃳';
-    /// \u{2f942}: '𥃲'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F942: char = '𥃲';
-    /// \u{2f943}: '𥄙'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F943: char = '𥄙';
-    /// \u{2f944}: '𥄳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F944: char = '𥄳';
-    /// \u{2f945}: '眞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F945: char = '眞';
-    /// \u{2f946}: '真'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F946: char = '真';
-    /// \u{2f947}: '真'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F947: char = '真';
-    /// \u{2f948}: '睊'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F948: char = '睊';
-    /// \u{2f949}: '䀹'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F949: char = '䀹';
-    /// \u{2f94a}: '瞋'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94A: char = '瞋';
-    /// \u{2f94b}: '䁆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94B: char = '䁆';
-    /// \u{2f94c}: '䂖'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94C: char = '䂖';
-    /// \u{2f94d}: '𥐝'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94D: char = '𥐝';
-    /// \u{2f94e}: '硎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94E: char = '硎';
-    /// \u{2f94f}: '碌'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94F: char = '碌';
-    /// \u{2f950}: '磌'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F950: char = '磌';
-    /// \u{2f951}: '䃣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F951: char = '䃣';
-    /// \u{2f952}: '𥘦'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F952: char = '𥘦';
-    /// \u{2f953}: '祖'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F953: char = '祖';
-    /// \u{2f954}: '𥚚'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F954: char = '𥚚';
-    /// \u{2f955}: '𥛅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F955: char = '𥛅';
-    /// \u{2f956}: '福'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F956: char = '福';
-    /// \u{2f957}: '秫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F957: char = '秫';
-    /// \u{2f958}: '䄯'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F958: char = '䄯';
-    /// \u{2f959}: '穀'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F959: char = '穀';
-    /// \u{2f95a}: '穊'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95A: char = '穊';
-    /// \u{2f95b}: '穏'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95B: char = '穏';
-    /// \u{2f95c}: '𥥼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95C: char = '𥥼';
-    /// \u{2f95d}: '𥪧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95D: char = '𥪧';
-    /// \u{2f95e}: '𥪧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95E: char = '𥪧';
-    /// \u{2f95f}: '竮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95F: char = '竮';
-    /// \u{2f960}: '䈂'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F960: char = '䈂';
-    /// \u{2f961}: '𥮫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F961: char = '𥮫';
-    /// \u{2f962}: '篆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F962: char = '篆';
-    /// \u{2f963}: '築'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F963: char = '築';
-    /// \u{2f964}: '䈧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F964: char = '䈧';
-    /// \u{2f965}: '𥲀'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F965: char = '𥲀';
-    /// \u{2f966}: '糒'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F966: char = '糒';
-    /// \u{2f967}: '䊠'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F967: char = '䊠';
-    /// \u{2f968}: '糨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F968: char = '糨';
-    /// \u{2f969}: '糣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F969: char = '糣';
-    /// \u{2f96a}: '紀'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96A: char = '紀';
-    /// \u{2f96b}: '𥾆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96B: char = '𥾆';
-    /// \u{2f96c}: '絣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96C: char = '絣';
-    /// \u{2f96d}: '䌁'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96D: char = '䌁';
-    /// \u{2f96e}: '緇'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96E: char = '緇';
-    /// \u{2f96f}: '縂'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96F: char = '縂';
-    /// \u{2f970}: '繅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F970: char = '繅';
-    /// \u{2f971}: '䌴'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F971: char = '䌴';
-    /// \u{2f972}: '𦈨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F972: char = '𦈨';
-    /// \u{2f973}: '𦉇'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F973: char = '𦉇';
-    /// \u{2f974}: '䍙'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F974: char = '䍙';
-    /// \u{2f975}: '𦋙'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F975: char = '𦋙';
-    /// \u{2f976}: '罺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F976: char = '罺';
-    /// \u{2f977}: '𦌾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F977: char = '𦌾';
-    /// \u{2f978}: '羕'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F978: char = '羕';
-    /// \u{2f979}: '翺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F979: char = '翺';
-    /// \u{2f97a}: '者'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97A: char = '者';
-    /// \u{2f97b}: '𦓚'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97B: char = '𦓚';
-    /// \u{2f97c}: '𦔣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97C: char = '𦔣';
-    /// \u{2f97d}: '聠'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97D: char = '聠';
-    /// \u{2f97e}: '𦖨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97E: char = '𦖨';
-    /// \u{2f97f}: '聰'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97F: char = '聰';
-    /// \u{2f980}: '𣍟'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F980: char = '𣍟';
-    /// \u{2f981}: '䏕'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F981: char = '䏕';
-    /// \u{2f982}: '育'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F982: char = '育';
-    /// \u{2f983}: '脃'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F983: char = '脃';
-    /// \u{2f984}: '䐋'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F984: char = '䐋';
-    /// \u{2f985}: '脾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F985: char = '脾';
-    /// \u{2f986}: '媵'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F986: char = '媵';
-    /// \u{2f987}: '𦞧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F987: char = '𦞧';
-    /// \u{2f988}: '𦞵'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F988: char = '𦞵';
-    /// \u{2f989}: '𣎓'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F989: char = '𣎓';
-    /// \u{2f98a}: '𣎜'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98A: char = '𣎜';
-    /// \u{2f98b}: '舁'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98B: char = '舁';
-    /// \u{2f98c}: '舄'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98C: char = '舄';
-    /// \u{2f98d}: '辞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98D: char = '辞';
-    /// \u{2f98e}: '䑫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98E: char = '䑫';
-    /// \u{2f98f}: '芑'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98F: char = '芑';
-    /// \u{2f990}: '芋'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F990: char = '芋';
-    /// \u{2f991}: '芝'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F991: char = '芝';
-    /// \u{2f992}: '劳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F992: char = '劳';
-    /// \u{2f993}: '花'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F993: char = '花';
-    /// \u{2f994}: '芳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F994: char = '芳';
-    /// \u{2f995}: '芽'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F995: char = '芽';
-    /// \u{2f996}: '苦'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F996: char = '苦';
-    /// \u{2f997}: '𦬼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F997: char = '𦬼';
-    /// \u{2f998}: '若'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F998: char = '若';
-    /// \u{2f999}: '茝'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F999: char = '茝';
-    /// \u{2f99a}: '荣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99A: char = '荣';
-    /// \u{2f99b}: '莭'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99B: char = '莭';
-    /// \u{2f99c}: '茣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99C: char = '茣';
-    /// \u{2f99d}: '莽'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99D: char = '莽';
-    /// \u{2f99e}: '菧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99E: char = '菧';
-    /// \u{2f99f}: '著'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99F: char = '著';
-    /// \u{2f9a0}: '荓'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A0: char = '荓';
-    /// \u{2f9a1}: '菊'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A1: char = '菊';
-    /// \u{2f9a2}: '菌'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A2: char = '菌';
-    /// \u{2f9a3}: '菜'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A3: char = '菜';
-    /// \u{2f9a4}: '𦰶'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A4: char = '𦰶';
-    /// \u{2f9a5}: '𦵫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A5: char = '𦵫';
-    /// \u{2f9a6}: '𦳕'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A6: char = '𦳕';
-    /// \u{2f9a7}: '䔫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A7: char = '䔫';
-    /// \u{2f9a8}: '蓱'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A8: char = '蓱';
-    /// \u{2f9a9}: '蓳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A9: char = '蓳';
-    /// \u{2f9aa}: '蔖'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AA: char = '蔖';
-    /// \u{2f9ab}: '𧏊'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AB: char = '𧏊';
-    /// \u{2f9ac}: '蕤'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AC: char = '蕤';
-    /// \u{2f9ad}: '𦼬'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AD: char = '𦼬';
-    /// \u{2f9ae}: '䕝'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AE: char = '䕝';
-    /// \u{2f9af}: '䕡'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AF: char = '䕡';
-    /// \u{2f9b0}: '𦾱'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B0: char = '𦾱';
-    /// \u{2f9b1}: '𧃒'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B1: char = '𧃒';
-    /// \u{2f9b2}: '䕫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B2: char = '䕫';
-    /// \u{2f9b3}: '虐'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B3: char = '虐';
-    /// \u{2f9b4}: '虜'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B4: char = '虜';
-    /// \u{2f9b5}: '虧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B5: char = '虧';
-    /// \u{2f9b6}: '虩'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B6: char = '虩';
-    /// \u{2f9b7}: '蚩'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B7: char = '蚩';
-    /// \u{2f9b8}: '蚈'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B8: char = '蚈';
-    /// \u{2f9b9}: '蜎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B9: char = '蜎';
-    /// \u{2f9ba}: '蛢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BA: char = '蛢';
-    /// \u{2f9bb}: '蝹'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BB: char = '蝹';
-    /// \u{2f9bc}: '蜨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BC: char = '蜨';
-    /// \u{2f9bd}: '蝫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BD: char = '蝫';
-    /// \u{2f9be}: '螆'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BE: char = '螆';
-    /// \u{2f9bf}: '䗗'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BF: char = '䗗';
-    /// \u{2f9c0}: '蟡'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C0: char = '蟡';
-    /// \u{2f9c1}: '蠁'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C1: char = '蠁';
-    /// \u{2f9c2}: '䗹'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C2: char = '䗹';
-    /// \u{2f9c3}: '衠'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C3: char = '衠';
-    /// \u{2f9c4}: '衣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C4: char = '衣';
-    /// \u{2f9c5}: '𧙧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C5: char = '𧙧';
-    /// \u{2f9c6}: '裗'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C6: char = '裗';
-    /// \u{2f9c7}: '裞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C7: char = '裞';
-    /// \u{2f9c8}: '䘵'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C8: char = '䘵';
-    /// \u{2f9c9}: '裺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C9: char = '裺';
-    /// \u{2f9ca}: '㒻'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CA: char = '㒻';
-    /// \u{2f9cb}: '𧢮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CB: char = '𧢮';
-    /// \u{2f9cc}: '𧥦'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CC: char = '𧥦';
-    /// \u{2f9cd}: '䚾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CD: char = '䚾';
-    /// \u{2f9ce}: '䛇'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CE: char = '䛇';
-    /// \u{2f9cf}: '誠'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CF: char = '誠';
-    /// \u{2f9d0}: '諭'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D0: char = '諭';
-    /// \u{2f9d1}: '變'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D1: char = '變';
-    /// \u{2f9d2}: '豕'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D2: char = '豕';
-    /// \u{2f9d3}: '𧲨'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D3: char = '𧲨';
-    /// \u{2f9d4}: '貫'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D4: char = '貫';
-    /// \u{2f9d5}: '賁'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D5: char = '賁';
-    /// \u{2f9d6}: '贛'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D6: char = '贛';
-    /// \u{2f9d7}: '起'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D7: char = '起';
-    /// \u{2f9d8}: '𧼯'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D8: char = '𧼯';
-    /// \u{2f9d9}: '𠠄'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D9: char = '𠠄';
-    /// \u{2f9da}: '跋'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DA: char = '跋';
-    /// \u{2f9db}: '趼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DB: char = '趼';
-    /// \u{2f9dc}: '跰'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DC: char = '跰';
-    /// \u{2f9dd}: '𠣞'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DD: char = '𠣞';
-    /// \u{2f9de}: '軔'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DE: char = '軔';
-    /// \u{2f9df}: '輸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DF: char = '輸';
-    /// \u{2f9e0}: '𨗒'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E0: char = '𨗒';
-    /// \u{2f9e1}: '𨗭'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E1: char = '𨗭';
-    /// \u{2f9e2}: '邔'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E2: char = '邔';
-    /// \u{2f9e3}: '郱'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E3: char = '郱';
-    /// \u{2f9e4}: '鄑'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E4: char = '鄑';
-    /// \u{2f9e5}: '𨜮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E5: char = '𨜮';
-    /// \u{2f9e6}: '鄛'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E6: char = '鄛';
-    /// \u{2f9e7}: '鈸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E7: char = '鈸';
-    /// \u{2f9e8}: '鋗'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E8: char = '鋗';
-    /// \u{2f9e9}: '鋘'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E9: char = '鋘';
-    /// \u{2f9ea}: '鉼'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EA: char = '鉼';
-    /// \u{2f9eb}: '鏹'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EB: char = '鏹';
-    /// \u{2f9ec}: '鐕'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EC: char = '鐕';
-    /// \u{2f9ed}: '𨯺'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9ED: char = '𨯺';
-    /// \u{2f9ee}: '開'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EE: char = '開';
-    /// \u{2f9ef}: '䦕'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EF: char = '䦕';
-    /// \u{2f9f0}: '閷'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F0: char = '閷';
-    /// \u{2f9f1}: '𨵷'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F1: char = '𨵷';
-    /// \u{2f9f2}: '䧦'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F2: char = '䧦';
-    /// \u{2f9f3}: '雃'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F3: char = '雃';
-    /// \u{2f9f4}: '嶲'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F4: char = '嶲';
-    /// \u{2f9f5}: '霣'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F5: char = '霣';
-    /// \u{2f9f6}: '𩅅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F6: char = '𩅅';
-    /// \u{2f9f7}: '𩈚'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F7: char = '𩈚';
-    /// \u{2f9f8}: '䩮'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F8: char = '䩮';
-    /// \u{2f9f9}: '䩶'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F9: char = '䩶';
-    /// \u{2f9fa}: '韠'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FA: char = '韠';
-    /// \u{2f9fb}: '𩐊'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FB: char = '𩐊';
-    /// \u{2f9fc}: '䪲'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FC: char = '䪲';
-    /// \u{2f9fd}: '𩒖'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FD: char = '𩒖';
-    /// \u{2f9fe}: '頋'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FE: char = '頋';
-    /// \u{2f9ff}: '頋'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FF: char = '頋';
-    /// \u{2fa00}: '頩'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA00: char = '頩';
-    /// \u{2fa01}: '𩖶'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA01: char = '𩖶';
-    /// \u{2fa02}: '飢'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA02: char = '飢';
-    /// \u{2fa03}: '䬳'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA03: char = '䬳';
-    /// \u{2fa04}: '餩'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA04: char = '餩';
-    /// \u{2fa05}: '馧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA05: char = '馧';
-    /// \u{2fa06}: '駂'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA06: char = '駂';
-    /// \u{2fa07}: '駾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA07: char = '駾';
-    /// \u{2fa08}: '䯎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA08: char = '䯎';
-    /// \u{2fa09}: '𩬰'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA09: char = '𩬰';
-    /// \u{2fa0a}: '鬒'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0A: char = '鬒';
-    /// \u{2fa0b}: '鱀'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0B: char = '鱀';
-    /// \u{2fa0c}: '鳽'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0C: char = '鳽';
-    /// \u{2fa0d}: '䳎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0D: char = '䳎';
-    /// \u{2fa0e}: '䳭'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0E: char = '䳭';
-    /// \u{2fa0f}: '鵧'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0F: char = '鵧';
-    /// \u{2fa10}: '𪃎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA10: char = '𪃎';
-    /// \u{2fa11}: '䳸'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA11: char = '䳸';
-    /// \u{2fa12}: '𪄅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA12: char = '𪄅';
-    /// \u{2fa13}: '𪈎'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA13: char = '𪈎';
-    /// \u{2fa14}: '𪊑'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA14: char = '𪊑';
-    /// \u{2fa15}: '麻'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA15: char = '麻';
-    /// \u{2fa16}: '䵖'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA16: char = '䵖';
-    /// \u{2fa17}: '黹'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA17: char = '黹';
-    /// \u{2fa18}: '黾'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA18: char = '黾';
-    /// \u{2fa19}: '鼅'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA19: char = '鼅';
-    /// \u{2fa1a}: '鼏'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1A: char = '鼏';
-    /// \u{2fa1b}: '鼖'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1B: char = '鼖';
-    /// \u{2fa1c}: '鼻'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1C: char = '鼻';
-    /// \u{2fa1d}: '𪘀'
-    pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1D: char = '𪘀';
-}
 
 /// An enum to represent all characters in the CJKCompatibilityIdeographsSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -2177,550 +1090,549 @@ pub enum CJKCompatibilityIdeographsSupplement {
 
 impl Into<char> for CJKCompatibilityIdeographsSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f800 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F800,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f801 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F801,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f802 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F802,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f803 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F803,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f804 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F804,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f805 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F805,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f806 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F806,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f807 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F807,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f808 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F808,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f809 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F809,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f810 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F810,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f811 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F811,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f812 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F812,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f813 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F813,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f814 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F814,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f815 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F815,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f816 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F816,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f817 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F817,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f818 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F818,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f819 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F819,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f820 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F820,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f821 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F821,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f822 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F822,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f823 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F823,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f824 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F824,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f825 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F825,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f826 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F826,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f827 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F827,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f828 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F828,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f829 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F829,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f830 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F830,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f831 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F831,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f832 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F832,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f833 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F833,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f834 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F834,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f835 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F835,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f836 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F836,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f837 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F837,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f838 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F838,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f839 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F839,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f840 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F840,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f841 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F841,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f842 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F842,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f843 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F843,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f844 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F844,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f845 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F845,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f846 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F846,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f847 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F847,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f848 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F848,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f849 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F849,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f850 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F850,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f851 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F851,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f852 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F852,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f853 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F853,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f854 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F854,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f855 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F855,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f856 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F856,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f857 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F857,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f858 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F858,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f859 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F859,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f860 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F860,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f861 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F861,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f862 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F862,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f863 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F863,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f864 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F864,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f865 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F865,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f866 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F866,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f867 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F867,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f868 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F868,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f869 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F869,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f870 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F870,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f871 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F871,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f872 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F872,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f873 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F873,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f874 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F874,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f875 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F875,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f876 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F876,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f877 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F877,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f878 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F878,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f879 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F879,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f880 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F880,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f881 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F881,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f882 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F882,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f883 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F883,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f884 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F884,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f885 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F885,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f886 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F886,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f887 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F887,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f888 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F888,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f889 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F889,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f890 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F890,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f891 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F891,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f892 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F892,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f893 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F893,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f894 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F894,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f895 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F895,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f896 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F896,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f897 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F897,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f898 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F898,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f899 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F899,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8aa => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ab => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ac => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ad => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ae => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8af => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ba => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bb => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bc => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bd => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8be => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bf => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ca => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cb => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cc => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cd => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ce => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cf => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8da => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8db => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8dc => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8dd => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8de => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8df => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ea => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8eb => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ec => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ed => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8ED,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ee => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ef => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fa => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fb => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fc => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fd => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fe => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ff => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f900 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F900,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f901 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F901,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f902 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F902,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f903 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F903,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f904 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F904,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f905 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F905,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f906 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F906,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f907 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F907,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f908 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F908,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f909 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F909,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f910 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F910,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f911 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F911,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f912 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F912,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f913 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F913,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f914 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F914,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f915 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F915,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f916 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F916,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f917 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F917,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f918 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F918,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f919 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F919,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f920 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F920,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f921 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F921,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f922 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F922,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f923 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F923,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f924 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F924,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f925 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F925,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f926 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F926,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f927 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F927,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f928 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F928,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f929 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F929,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f930 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F930,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f931 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F931,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f932 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F932,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f933 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F933,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f934 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F934,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f935 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F935,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f936 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F936,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f937 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F937,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f938 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F938,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f939 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F939,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f940 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F940,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f941 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F941,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f942 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F942,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f943 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F943,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f944 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F944,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f945 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F945,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f946 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F946,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f947 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F947,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f948 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F948,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f949 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F949,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f950 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F950,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f951 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F951,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f952 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F952,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f953 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F953,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f954 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F954,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f955 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F955,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f956 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F956,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f957 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F957,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f958 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F958,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f959 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F959,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f960 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F960,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f961 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F961,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f962 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F962,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f963 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F963,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f964 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F964,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f965 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F965,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f966 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F966,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f967 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F967,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f968 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F968,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f969 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F969,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f970 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F970,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f971 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F971,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f972 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F972,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f973 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F973,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f974 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F974,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f975 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F975,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f976 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F976,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f977 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F977,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f978 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F978,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f979 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F979,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f980 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F980,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f981 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F981,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f982 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F982,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f983 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F983,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f984 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F984,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f985 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F985,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f986 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F986,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f987 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F987,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f988 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F988,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f989 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F989,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f990 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F990,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f991 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F991,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f992 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F992,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f993 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F993,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f994 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F994,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f995 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F995,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f996 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F996,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f997 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F997,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f998 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F998,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f999 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F999,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9aa => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ab => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ac => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ad => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ae => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9af => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ba => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bb => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bc => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bd => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9be => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bf => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ca => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cb => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cc => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cd => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ce => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cf => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9da => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9db => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9dc => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9dd => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9de => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9df => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ea => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9eb => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ec => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ed => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9ED,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ee => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ef => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f0 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F0,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f1 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F1,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f2 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F2,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f3 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F3,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f4 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F4,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f5 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F5,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f6 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F6,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f7 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F7,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f8 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F8,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f9 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F9,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fa => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FA,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fb => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FB,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fc => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FC,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fd => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FD,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fe => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FE,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ff => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FF,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa00 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA00,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa01 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA01,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa02 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA02,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa03 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA03,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa04 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA04,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa05 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA05,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa06 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA06,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa07 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA07,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa08 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA08,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa09 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA09,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0D,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0e => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0E,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0f => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0F,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa10 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA10,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa11 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA11,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa12 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA12,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa13 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA13,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa14 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA14,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa15 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA15,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa16 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA16,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa17 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA17,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa18 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA18,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa19 => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA19,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1a => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1A,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1b => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1B,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1c => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1C,
-            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1d => CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1D,
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f800 => '丽',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f801 => '丸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f802 => '乁',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f803 => '𠄢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f804 => '你',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f805 => '侮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f806 => '侻',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f807 => '倂',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f808 => '偺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f809 => '備',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80a => '僧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80b => '像',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80c => '㒞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80d => '𠘺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80e => '免',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80f => '兔',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f810 => '兤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f811 => '具',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f812 => '𠔜',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f813 => '㒹',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f814 => '內',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f815 => '再',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f816 => '𠕋',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f817 => '冗',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f818 => '冤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f819 => '仌',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81a => '冬',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81b => '况',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81c => '𩇟',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81d => '凵',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81e => '刃',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81f => '㓟',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f820 => '刻',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f821 => '剆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f822 => '割',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f823 => '剷',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f824 => '㔕',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f825 => '勇',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f826 => '勉',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f827 => '勤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f828 => '勺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f829 => '包',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82a => '匆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82b => '北',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82c => '卉',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82d => '卑',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82e => '博',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82f => '即',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f830 => '卽',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f831 => '卿',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f832 => '卿',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f833 => '卿',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f834 => '𠨬',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f835 => '灰',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f836 => '及',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f837 => '叟',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f838 => '𠭣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f839 => '叫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83a => '叱',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83b => '吆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83c => '咞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83d => '吸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83e => '呈',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83f => '周',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f840 => '咢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f841 => '哶',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f842 => '唐',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f843 => '啓',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f844 => '啣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f845 => '善',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f846 => '善',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f847 => '喙',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f848 => '喫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f849 => '喳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84a => '嗂',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84b => '圖',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84c => '嘆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84d => '圗',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84e => '噑',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84f => '噴',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f850 => '切',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f851 => '壮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f852 => '城',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f853 => '埴',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f854 => '堍',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f855 => '型',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f856 => '堲',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f857 => '報',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f858 => '墬',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f859 => '𡓤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85a => '売',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85b => '壷',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85c => '夆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85d => '多',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85e => '夢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85f => '奢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f860 => '𡚨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f861 => '𡛪',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f862 => '姬',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f863 => '娛',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f864 => '娧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f865 => '姘',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f866 => '婦',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f867 => '㛮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f868 => '㛼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f869 => '嬈',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86a => '嬾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86b => '嬾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86c => '𡧈',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86d => '寃',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86e => '寘',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86f => '寧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f870 => '寳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f871 => '𡬘',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f872 => '寿',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f873 => '将',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f874 => '当',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f875 => '尢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f876 => '㞁',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f877 => '屠',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f878 => '屮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f879 => '峀',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87a => '岍',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87b => '𡷤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87c => '嵃',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87d => '𡷦',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87e => '嵮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87f => '嵫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f880 => '嵼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f881 => '巡',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f882 => '巢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f883 => '㠯',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f884 => '巽',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f885 => '帨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f886 => '帽',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f887 => '幩',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f888 => '㡢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f889 => '𢆃',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88a => '㡼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88b => '庰',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88c => '庳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88d => '庶',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88e => '廊',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88f => '𪎒',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f890 => '廾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f891 => '𢌱',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f892 => '𢌱',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f893 => '舁',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f894 => '弢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f895 => '弢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f896 => '㣇',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f897 => '𣊸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f898 => '𦇚',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f899 => '形',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89a => '彫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89b => '㣣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89c => '徚',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89d => '忍',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89e => '志',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89f => '忹',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a0 => '悁',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a1 => '㤺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a2 => '㤜',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a3 => '悔',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a4 => '𢛔',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a5 => '惇',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a6 => '慈',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a7 => '慌',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a8 => '慎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a9 => '慌',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8aa => '慺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ab => '憎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ac => '憲',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ad => '憤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ae => '憯',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8af => '懞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b0 => '懲',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b1 => '懶',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b2 => '成',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b3 => '戛',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b4 => '扝',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b5 => '抱',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b6 => '拔',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b7 => '捐',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b8 => '𢬌',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b9 => '挽',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ba => '拼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bb => '捨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bc => '掃',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bd => '揤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8be => '𢯱',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bf => '搢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c0 => '揅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c1 => '掩',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c2 => '㨮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c3 => '摩',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c4 => '摾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c5 => '撝',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c6 => '摷',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c7 => '㩬',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c8 => '敏',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c9 => '敬',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ca => '𣀊',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cb => '旣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cc => '書',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cd => '晉',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ce => '㬙',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cf => '暑',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d0 => '㬈',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d1 => '㫤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d2 => '冒',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d3 => '冕',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d4 => '最',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d5 => '暜',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d6 => '肭',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d7 => '䏙',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d8 => '朗',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d9 => '望',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8da => '朡',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8db => '杞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8dc => '杓',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8dd => '𣏃',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8de => '㭉',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8df => '柺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e0 => '枅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e1 => '桒',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e2 => '梅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e3 => '𣑭',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e4 => '梎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e5 => '栟',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e6 => '椔',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e7 => '㮝',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e8 => '楂',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e9 => '榣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ea => '槪',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8eb => '檨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ec => '𣚣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ed => '櫛',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ee => '㰘',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ef => '次',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f0 => '𣢧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f1 => '歔',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f2 => '㱎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f3 => '歲',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f4 => '殟',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f5 => '殺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f6 => '殻',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f7 => '𣪍',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f8 => '𡴋',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f9 => '𣫺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fa => '汎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fb => '𣲼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fc => '沿',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fd => '泍',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fe => '汧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ff => '洖',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f900 => '派',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f901 => '海',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f902 => '流',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f903 => '浩',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f904 => '浸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f905 => '涅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f906 => '𣴞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f907 => '洴',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f908 => '港',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f909 => '湮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90a => '㴳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90b => '滋',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90c => '滇',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90d => '𣻑',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90e => '淹',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90f => '潮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f910 => '𣽞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f911 => '𣾎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f912 => '濆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f913 => '瀹',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f914 => '瀞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f915 => '瀛',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f916 => '㶖',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f917 => '灊',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f918 => '災',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f919 => '灷',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91a => '炭',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91b => '𠔥',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91c => '煅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91d => '𤉣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91e => '熜',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91f => '𤎫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f920 => '爨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f921 => '爵',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f922 => '牐',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f923 => '𤘈',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f924 => '犀',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f925 => '犕',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f926 => '𤜵',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f927 => '𤠔',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f928 => '獺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f929 => '王',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92a => '㺬',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92b => '玥',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92c => '㺸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92d => '㺸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92e => '瑇',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92f => '瑜',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f930 => '瑱',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f931 => '璅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f932 => '瓊',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f933 => '㼛',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f934 => '甤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f935 => '𤰶',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f936 => '甾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f937 => '𤲒',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f938 => '異',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f939 => '𢆟',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93a => '瘐',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93b => '𤾡',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93c => '𤾸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93d => '𥁄',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93e => '㿼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93f => '䀈',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f940 => '直',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f941 => '𥃳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f942 => '𥃲',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f943 => '𥄙',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f944 => '𥄳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f945 => '眞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f946 => '真',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f947 => '真',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f948 => '睊',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f949 => '䀹',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94a => '瞋',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94b => '䁆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94c => '䂖',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94d => '𥐝',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94e => '硎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94f => '碌',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f950 => '磌',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f951 => '䃣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f952 => '𥘦',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f953 => '祖',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f954 => '𥚚',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f955 => '𥛅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f956 => '福',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f957 => '秫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f958 => '䄯',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f959 => '穀',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95a => '穊',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95b => '穏',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95c => '𥥼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95d => '𥪧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95e => '𥪧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95f => '竮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f960 => '䈂',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f961 => '𥮫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f962 => '篆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f963 => '築',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f964 => '䈧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f965 => '𥲀',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f966 => '糒',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f967 => '䊠',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f968 => '糨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f969 => '糣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96a => '紀',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96b => '𥾆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96c => '絣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96d => '䌁',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96e => '緇',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96f => '縂',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f970 => '繅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f971 => '䌴',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f972 => '𦈨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f973 => '𦉇',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f974 => '䍙',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f975 => '𦋙',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f976 => '罺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f977 => '𦌾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f978 => '羕',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f979 => '翺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97a => '者',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97b => '𦓚',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97c => '𦔣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97d => '聠',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97e => '𦖨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97f => '聰',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f980 => '𣍟',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f981 => '䏕',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f982 => '育',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f983 => '脃',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f984 => '䐋',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f985 => '脾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f986 => '媵',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f987 => '𦞧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f988 => '𦞵',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f989 => '𣎓',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98a => '𣎜',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98b => '舁',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98c => '舄',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98d => '辞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98e => '䑫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98f => '芑',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f990 => '芋',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f991 => '芝',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f992 => '劳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f993 => '花',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f994 => '芳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f995 => '芽',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f996 => '苦',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f997 => '𦬼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f998 => '若',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f999 => '茝',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99a => '荣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99b => '莭',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99c => '茣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99d => '莽',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99e => '菧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99f => '著',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a0 => '荓',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a1 => '菊',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a2 => '菌',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a3 => '菜',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a4 => '𦰶',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a5 => '𦵫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a6 => '𦳕',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a7 => '䔫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a8 => '蓱',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a9 => '蓳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9aa => '蔖',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ab => '𧏊',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ac => '蕤',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ad => '𦼬',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ae => '䕝',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9af => '䕡',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b0 => '𦾱',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b1 => '𧃒',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b2 => '䕫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b3 => '虐',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b4 => '虜',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b5 => '虧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b6 => '虩',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b7 => '蚩',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b8 => '蚈',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b9 => '蜎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ba => '蛢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bb => '蝹',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bc => '蜨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bd => '蝫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9be => '螆',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bf => '䗗',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c0 => '蟡',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c1 => '蠁',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c2 => '䗹',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c3 => '衠',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c4 => '衣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c5 => '𧙧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c6 => '裗',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c7 => '裞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c8 => '䘵',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c9 => '裺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ca => '㒻',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cb => '𧢮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cc => '𧥦',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cd => '䚾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ce => '䛇',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cf => '誠',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d0 => '諭',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d1 => '變',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d2 => '豕',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d3 => '𧲨',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d4 => '貫',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d5 => '賁',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d6 => '贛',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d7 => '起',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d8 => '𧼯',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d9 => '𠠄',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9da => '跋',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9db => '趼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9dc => '跰',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9dd => '𠣞',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9de => '軔',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9df => '輸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e0 => '𨗒',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e1 => '𨗭',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e2 => '邔',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e3 => '郱',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e4 => '鄑',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e5 => '𨜮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e6 => '鄛',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e7 => '鈸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e8 => '鋗',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e9 => '鋘',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ea => '鉼',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9eb => '鏹',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ec => '鐕',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ed => '𨯺',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ee => '開',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ef => '䦕',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f0 => '閷',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f1 => '𨵷',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f2 => '䧦',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f3 => '雃',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f4 => '嶲',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f5 => '霣',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f6 => '𩅅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f7 => '𩈚',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f8 => '䩮',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f9 => '䩶',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fa => '韠',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fb => '𩐊',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fc => '䪲',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fd => '𩒖',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fe => '頋',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ff => '頋',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa00 => '頩',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa01 => '𩖶',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa02 => '飢',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa03 => '䬳',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa04 => '餩',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa05 => '馧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa06 => '駂',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa07 => '駾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa08 => '䯎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa09 => '𩬰',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0a => '鬒',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0b => '鱀',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0c => '鳽',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0d => '䳎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0e => '䳭',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0f => '鵧',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa10 => '𪃎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa11 => '䳸',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa12 => '𪄅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa13 => '𪈎',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa14 => '𪊑',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa15 => '麻',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa16 => '䵖',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa17 => '黹',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa18 => '黾',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa19 => '鼅',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1a => '鼏',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1b => '鼖',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1c => '鼻',
+            CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1d => '𪘀',
         }
     }
 }
@@ -2728,550 +1640,549 @@ impl Into<char> for CJKCompatibilityIdeographsSupplement {
 impl std::convert::TryFrom<char> for CJKCompatibilityIdeographsSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F800 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f800),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F801 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f801),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F802 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f802),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F803 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f803),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F804 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f804),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F805 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f805),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F806 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f806),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F807 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f807),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F808 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f808),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F809 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f809),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F80F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F810 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f810),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F811 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f811),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F812 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f812),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F813 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f813),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F814 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f814),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F815 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f815),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F816 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f816),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F817 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f817),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F818 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f818),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F819 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f819),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F81F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F820 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f820),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F821 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f821),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F822 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f822),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F823 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f823),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F824 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f824),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F825 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f825),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F826 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f826),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F827 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f827),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F828 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f828),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F829 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f829),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F82F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F830 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f830),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F831 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f831),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F832 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f832),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F833 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f833),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F834 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f834),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F835 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f835),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F836 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f836),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F837 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f837),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F838 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f838),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F839 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f839),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F83F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F840 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f840),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F841 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f841),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F842 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f842),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F843 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f843),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F844 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f844),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F845 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f845),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F846 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f846),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F847 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f847),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F848 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f848),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F849 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f849),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F84F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F850 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f850),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F851 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f851),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F852 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f852),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F853 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f853),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F854 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f854),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F855 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f855),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F856 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f856),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F857 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f857),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F858 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f858),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F859 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f859),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F85F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F860 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f860),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F861 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f861),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F862 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f862),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F863 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f863),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F864 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f864),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F865 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f865),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F866 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f866),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F867 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f867),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F868 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f868),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F869 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f869),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F86F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F870 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f870),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F871 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f871),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F872 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f872),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F873 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f873),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F874 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f874),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F875 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f875),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F876 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f876),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F877 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f877),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F878 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f878),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F879 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f879),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F87F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F880 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f880),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F881 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f881),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F882 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f882),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F883 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f883),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F884 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f884),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F885 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f885),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F886 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f886),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F887 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f887),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F888 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f888),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F889 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f889),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F88F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F890 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f890),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F891 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f891),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F892 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f892),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F893 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f893),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F894 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f894),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F895 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f895),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F896 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f896),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F897 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f897),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F898 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f898),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F899 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f899),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F89F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8A9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8aa),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ab),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ac),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ad),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ae),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8AF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8af),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8B9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ba),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bb),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bc),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bd),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8be),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8BF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bf),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8C9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ca),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cb),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cc),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cd),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ce),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8CF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cf),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8D9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8da),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8db),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8dc),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8dd),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8de),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8DF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8df),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8E9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ea),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8eb),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ec),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8ED => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ed),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ee),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8EF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ef),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8F9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fa),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fb),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fc),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fd),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fe),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F8FF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ff),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F900 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f900),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F901 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f901),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F902 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f902),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F903 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f903),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F904 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f904),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F905 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f905),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F906 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f906),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F907 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f907),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F908 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f908),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F909 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f909),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F90F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F910 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f910),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F911 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f911),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F912 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f912),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F913 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f913),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F914 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f914),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F915 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f915),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F916 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f916),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F917 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f917),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F918 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f918),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F919 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f919),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F91F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F920 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f920),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F921 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f921),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F922 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f922),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F923 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f923),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F924 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f924),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F925 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f925),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F926 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f926),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F927 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f927),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F928 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f928),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F929 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f929),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F92F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F930 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f930),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F931 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f931),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F932 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f932),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F933 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f933),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F934 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f934),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F935 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f935),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F936 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f936),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F937 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f937),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F938 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f938),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F939 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f939),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F93F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F940 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f940),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F941 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f941),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F942 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f942),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F943 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f943),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F944 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f944),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F945 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f945),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F946 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f946),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F947 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f947),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F948 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f948),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F949 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f949),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F94F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F950 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f950),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F951 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f951),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F952 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f952),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F953 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f953),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F954 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f954),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F955 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f955),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F956 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f956),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F957 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f957),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F958 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f958),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F959 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f959),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F95F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F960 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f960),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F961 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f961),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F962 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f962),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F963 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f963),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F964 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f964),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F965 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f965),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F966 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f966),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F967 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f967),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F968 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f968),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F969 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f969),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F96F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F970 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f970),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F971 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f971),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F972 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f972),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F973 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f973),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F974 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f974),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F975 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f975),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F976 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f976),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F977 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f977),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F978 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f978),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F979 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f979),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F97F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F980 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f980),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F981 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f981),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F982 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f982),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F983 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f983),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F984 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f984),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F985 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f985),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F986 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f986),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F987 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f987),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F988 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f988),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F989 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f989),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F98F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F990 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f990),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F991 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f991),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F992 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f992),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F993 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f993),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F994 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f994),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F995 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f995),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F996 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f996),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F997 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f997),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F998 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f998),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F999 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f999),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F99F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9A9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9aa),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ab),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ac),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ad),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ae),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9AF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9af),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9B9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ba),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bb),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bc),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bd),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9be),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9BF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bf),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9C9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ca),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cb),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cc),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cd),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ce),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9CF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cf),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9D9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9da),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9db),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9dc),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9dd),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9de),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9DF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9df),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9E9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ea),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9eb),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ec),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9ED => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ed),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ee),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9EF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ef),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F0 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f0),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F1 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f1),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F2 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f2),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F3 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f3),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F4 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f4),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F5 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f5),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F6 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f6),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F7 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f7),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F8 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f8),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9F9 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f9),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FA => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fa),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FB => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fb),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FC => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fc),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FD => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fd),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FE => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fe),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F9FF => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ff),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA00 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa00),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA01 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa01),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA02 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa02),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA03 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa03),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA04 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa04),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA05 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa05),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA06 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa06),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA07 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa07),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA08 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa08),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA09 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa09),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0d),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0E => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0e),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA0F => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0f),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA10 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa10),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA11 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa11),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA12 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa12),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA13 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa13),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA14 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa14),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA15 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa15),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA16 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa16),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA17 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa17),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA18 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa18),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA19 => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa19),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1A => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1a),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1B => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1b),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1C => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1c),
-            CJK_COMPATIBILITY_IDEOGRAPH_DASH_2FA1D => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1d),
+            '丽' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f800),
+            '丸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f801),
+            '乁' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f802),
+            '𠄢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f803),
+            '你' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f804),
+            '侮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f805),
+            '侻' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f806),
+            '倂' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f807),
+            '偺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f808),
+            '備' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f809),
+            '僧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80a),
+            '像' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80b),
+            '㒞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80c),
+            '𠘺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80d),
+            '免' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80e),
+            '兔' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f80f),
+            '兤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f810),
+            '具' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f811),
+            '𠔜' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f812),
+            '㒹' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f813),
+            '內' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f814),
+            '再' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f815),
+            '𠕋' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f816),
+            '冗' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f817),
+            '冤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f818),
+            '仌' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f819),
+            '冬' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81a),
+            '况' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81b),
+            '𩇟' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81c),
+            '凵' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81d),
+            '刃' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81e),
+            '㓟' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f81f),
+            '刻' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f820),
+            '剆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f821),
+            '割' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f822),
+            '剷' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f823),
+            '㔕' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f824),
+            '勇' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f825),
+            '勉' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f826),
+            '勤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f827),
+            '勺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f828),
+            '包' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f829),
+            '匆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82a),
+            '北' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82b),
+            '卉' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82c),
+            '卑' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82d),
+            '博' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82e),
+            '即' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f82f),
+            '卽' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f830),
+            '卿' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f831),
+            '卿' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f832),
+            '卿' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f833),
+            '𠨬' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f834),
+            '灰' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f835),
+            '及' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f836),
+            '叟' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f837),
+            '𠭣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f838),
+            '叫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f839),
+            '叱' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83a),
+            '吆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83b),
+            '咞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83c),
+            '吸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83d),
+            '呈' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83e),
+            '周' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f83f),
+            '咢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f840),
+            '哶' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f841),
+            '唐' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f842),
+            '啓' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f843),
+            '啣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f844),
+            '善' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f845),
+            '善' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f846),
+            '喙' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f847),
+            '喫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f848),
+            '喳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f849),
+            '嗂' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84a),
+            '圖' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84b),
+            '嘆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84c),
+            '圗' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84d),
+            '噑' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84e),
+            '噴' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f84f),
+            '切' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f850),
+            '壮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f851),
+            '城' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f852),
+            '埴' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f853),
+            '堍' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f854),
+            '型' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f855),
+            '堲' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f856),
+            '報' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f857),
+            '墬' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f858),
+            '𡓤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f859),
+            '売' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85a),
+            '壷' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85b),
+            '夆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85c),
+            '多' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85d),
+            '夢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85e),
+            '奢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f85f),
+            '𡚨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f860),
+            '𡛪' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f861),
+            '姬' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f862),
+            '娛' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f863),
+            '娧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f864),
+            '姘' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f865),
+            '婦' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f866),
+            '㛮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f867),
+            '㛼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f868),
+            '嬈' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f869),
+            '嬾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86a),
+            '嬾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86b),
+            '𡧈' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86c),
+            '寃' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86d),
+            '寘' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86e),
+            '寧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f86f),
+            '寳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f870),
+            '𡬘' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f871),
+            '寿' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f872),
+            '将' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f873),
+            '当' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f874),
+            '尢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f875),
+            '㞁' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f876),
+            '屠' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f877),
+            '屮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f878),
+            '峀' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f879),
+            '岍' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87a),
+            '𡷤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87b),
+            '嵃' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87c),
+            '𡷦' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87d),
+            '嵮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87e),
+            '嵫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f87f),
+            '嵼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f880),
+            '巡' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f881),
+            '巢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f882),
+            '㠯' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f883),
+            '巽' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f884),
+            '帨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f885),
+            '帽' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f886),
+            '幩' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f887),
+            '㡢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f888),
+            '𢆃' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f889),
+            '㡼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88a),
+            '庰' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88b),
+            '庳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88c),
+            '庶' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88d),
+            '廊' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88e),
+            '𪎒' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f88f),
+            '廾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f890),
+            '𢌱' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f891),
+            '𢌱' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f892),
+            '舁' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f893),
+            '弢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f894),
+            '弢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f895),
+            '㣇' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f896),
+            '𣊸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f897),
+            '𦇚' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f898),
+            '形' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f899),
+            '彫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89a),
+            '㣣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89b),
+            '徚' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89c),
+            '忍' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89d),
+            '志' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89e),
+            '忹' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f89f),
+            '悁' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a0),
+            '㤺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a1),
+            '㤜' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a2),
+            '悔' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a3),
+            '𢛔' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a4),
+            '惇' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a5),
+            '慈' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a6),
+            '慌' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a7),
+            '慎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a8),
+            '慌' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8a9),
+            '慺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8aa),
+            '憎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ab),
+            '憲' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ac),
+            '憤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ad),
+            '憯' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ae),
+            '懞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8af),
+            '懲' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b0),
+            '懶' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b1),
+            '成' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b2),
+            '戛' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b3),
+            '扝' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b4),
+            '抱' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b5),
+            '拔' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b6),
+            '捐' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b7),
+            '𢬌' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b8),
+            '挽' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8b9),
+            '拼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ba),
+            '捨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bb),
+            '掃' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bc),
+            '揤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bd),
+            '𢯱' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8be),
+            '搢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8bf),
+            '揅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c0),
+            '掩' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c1),
+            '㨮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c2),
+            '摩' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c3),
+            '摾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c4),
+            '撝' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c5),
+            '摷' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c6),
+            '㩬' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c7),
+            '敏' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c8),
+            '敬' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8c9),
+            '𣀊' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ca),
+            '旣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cb),
+            '書' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cc),
+            '晉' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cd),
+            '㬙' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ce),
+            '暑' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8cf),
+            '㬈' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d0),
+            '㫤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d1),
+            '冒' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d2),
+            '冕' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d3),
+            '最' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d4),
+            '暜' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d5),
+            '肭' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d6),
+            '䏙' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d7),
+            '朗' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d8),
+            '望' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8d9),
+            '朡' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8da),
+            '杞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8db),
+            '杓' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8dc),
+            '𣏃' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8dd),
+            '㭉' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8de),
+            '柺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8df),
+            '枅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e0),
+            '桒' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e1),
+            '梅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e2),
+            '𣑭' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e3),
+            '梎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e4),
+            '栟' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e5),
+            '椔' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e6),
+            '㮝' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e7),
+            '楂' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e8),
+            '榣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8e9),
+            '槪' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ea),
+            '檨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8eb),
+            '𣚣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ec),
+            '櫛' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ed),
+            '㰘' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ee),
+            '次' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ef),
+            '𣢧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f0),
+            '歔' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f1),
+            '㱎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f2),
+            '歲' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f3),
+            '殟' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f4),
+            '殺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f5),
+            '殻' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f6),
+            '𣪍' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f7),
+            '𡴋' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f8),
+            '𣫺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8f9),
+            '汎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fa),
+            '𣲼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fb),
+            '沿' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fc),
+            '泍' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fd),
+            '汧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8fe),
+            '洖' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f8ff),
+            '派' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f900),
+            '海' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f901),
+            '流' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f902),
+            '浩' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f903),
+            '浸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f904),
+            '涅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f905),
+            '𣴞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f906),
+            '洴' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f907),
+            '港' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f908),
+            '湮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f909),
+            '㴳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90a),
+            '滋' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90b),
+            '滇' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90c),
+            '𣻑' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90d),
+            '淹' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90e),
+            '潮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f90f),
+            '𣽞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f910),
+            '𣾎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f911),
+            '濆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f912),
+            '瀹' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f913),
+            '瀞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f914),
+            '瀛' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f915),
+            '㶖' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f916),
+            '灊' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f917),
+            '災' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f918),
+            '灷' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f919),
+            '炭' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91a),
+            '𠔥' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91b),
+            '煅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91c),
+            '𤉣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91d),
+            '熜' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91e),
+            '𤎫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f91f),
+            '爨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f920),
+            '爵' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f921),
+            '牐' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f922),
+            '𤘈' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f923),
+            '犀' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f924),
+            '犕' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f925),
+            '𤜵' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f926),
+            '𤠔' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f927),
+            '獺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f928),
+            '王' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f929),
+            '㺬' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92a),
+            '玥' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92b),
+            '㺸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92c),
+            '㺸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92d),
+            '瑇' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92e),
+            '瑜' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f92f),
+            '瑱' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f930),
+            '璅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f931),
+            '瓊' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f932),
+            '㼛' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f933),
+            '甤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f934),
+            '𤰶' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f935),
+            '甾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f936),
+            '𤲒' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f937),
+            '異' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f938),
+            '𢆟' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f939),
+            '瘐' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93a),
+            '𤾡' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93b),
+            '𤾸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93c),
+            '𥁄' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93d),
+            '㿼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93e),
+            '䀈' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f93f),
+            '直' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f940),
+            '𥃳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f941),
+            '𥃲' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f942),
+            '𥄙' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f943),
+            '𥄳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f944),
+            '眞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f945),
+            '真' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f946),
+            '真' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f947),
+            '睊' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f948),
+            '䀹' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f949),
+            '瞋' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94a),
+            '䁆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94b),
+            '䂖' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94c),
+            '𥐝' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94d),
+            '硎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94e),
+            '碌' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f94f),
+            '磌' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f950),
+            '䃣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f951),
+            '𥘦' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f952),
+            '祖' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f953),
+            '𥚚' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f954),
+            '𥛅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f955),
+            '福' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f956),
+            '秫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f957),
+            '䄯' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f958),
+            '穀' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f959),
+            '穊' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95a),
+            '穏' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95b),
+            '𥥼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95c),
+            '𥪧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95d),
+            '𥪧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95e),
+            '竮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f95f),
+            '䈂' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f960),
+            '𥮫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f961),
+            '篆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f962),
+            '築' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f963),
+            '䈧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f964),
+            '𥲀' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f965),
+            '糒' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f966),
+            '䊠' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f967),
+            '糨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f968),
+            '糣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f969),
+            '紀' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96a),
+            '𥾆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96b),
+            '絣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96c),
+            '䌁' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96d),
+            '緇' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96e),
+            '縂' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f96f),
+            '繅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f970),
+            '䌴' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f971),
+            '𦈨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f972),
+            '𦉇' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f973),
+            '䍙' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f974),
+            '𦋙' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f975),
+            '罺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f976),
+            '𦌾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f977),
+            '羕' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f978),
+            '翺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f979),
+            '者' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97a),
+            '𦓚' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97b),
+            '𦔣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97c),
+            '聠' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97d),
+            '𦖨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97e),
+            '聰' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f97f),
+            '𣍟' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f980),
+            '䏕' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f981),
+            '育' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f982),
+            '脃' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f983),
+            '䐋' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f984),
+            '脾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f985),
+            '媵' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f986),
+            '𦞧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f987),
+            '𦞵' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f988),
+            '𣎓' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f989),
+            '𣎜' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98a),
+            '舁' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98b),
+            '舄' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98c),
+            '辞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98d),
+            '䑫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98e),
+            '芑' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f98f),
+            '芋' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f990),
+            '芝' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f991),
+            '劳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f992),
+            '花' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f993),
+            '芳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f994),
+            '芽' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f995),
+            '苦' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f996),
+            '𦬼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f997),
+            '若' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f998),
+            '茝' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f999),
+            '荣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99a),
+            '莭' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99b),
+            '茣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99c),
+            '莽' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99d),
+            '菧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99e),
+            '著' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f99f),
+            '荓' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a0),
+            '菊' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a1),
+            '菌' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a2),
+            '菜' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a3),
+            '𦰶' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a4),
+            '𦵫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a5),
+            '𦳕' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a6),
+            '䔫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a7),
+            '蓱' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a8),
+            '蓳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9a9),
+            '蔖' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9aa),
+            '𧏊' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ab),
+            '蕤' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ac),
+            '𦼬' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ad),
+            '䕝' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ae),
+            '䕡' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9af),
+            '𦾱' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b0),
+            '𧃒' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b1),
+            '䕫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b2),
+            '虐' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b3),
+            '虜' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b4),
+            '虧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b5),
+            '虩' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b6),
+            '蚩' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b7),
+            '蚈' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b8),
+            '蜎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9b9),
+            '蛢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ba),
+            '蝹' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bb),
+            '蜨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bc),
+            '蝫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bd),
+            '螆' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9be),
+            '䗗' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9bf),
+            '蟡' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c0),
+            '蠁' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c1),
+            '䗹' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c2),
+            '衠' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c3),
+            '衣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c4),
+            '𧙧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c5),
+            '裗' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c6),
+            '裞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c7),
+            '䘵' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c8),
+            '裺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9c9),
+            '㒻' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ca),
+            '𧢮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cb),
+            '𧥦' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cc),
+            '䚾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cd),
+            '䛇' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ce),
+            '誠' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9cf),
+            '諭' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d0),
+            '變' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d1),
+            '豕' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d2),
+            '𧲨' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d3),
+            '貫' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d4),
+            '賁' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d5),
+            '贛' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d6),
+            '起' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d7),
+            '𧼯' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d8),
+            '𠠄' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9d9),
+            '跋' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9da),
+            '趼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9db),
+            '跰' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9dc),
+            '𠣞' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9dd),
+            '軔' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9de),
+            '輸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9df),
+            '𨗒' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e0),
+            '𨗭' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e1),
+            '邔' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e2),
+            '郱' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e3),
+            '鄑' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e4),
+            '𨜮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e5),
+            '鄛' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e6),
+            '鈸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e7),
+            '鋗' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e8),
+            '鋘' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9e9),
+            '鉼' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ea),
+            '鏹' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9eb),
+            '鐕' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ec),
+            '𨯺' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ed),
+            '開' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ee),
+            '䦕' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ef),
+            '閷' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f0),
+            '𨵷' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f1),
+            '䧦' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f2),
+            '雃' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f3),
+            '嶲' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f4),
+            '霣' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f5),
+            '𩅅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f6),
+            '𩈚' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f7),
+            '䩮' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f8),
+            '䩶' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9f9),
+            '韠' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fa),
+            '𩐊' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fb),
+            '䪲' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fc),
+            '𩒖' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fd),
+            '頋' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9fe),
+            '頋' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f9ff),
+            '頩' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa00),
+            '𩖶' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa01),
+            '飢' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa02),
+            '䬳' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa03),
+            '餩' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa04),
+            '馧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa05),
+            '駂' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa06),
+            '駾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa07),
+            '䯎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa08),
+            '𩬰' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa09),
+            '鬒' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0a),
+            '鱀' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0b),
+            '鳽' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0c),
+            '䳎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0d),
+            '䳭' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0e),
+            '鵧' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa0f),
+            '𪃎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa10),
+            '䳸' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa11),
+            '𪄅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa12),
+            '𪈎' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa13),
+            '𪊑' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa14),
+            '麻' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa15),
+            '䵖' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa16),
+            '黹' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa17),
+            '黾' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa18),
+            '鼅' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa19),
+            '鼏' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1a),
+            '鼖' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1b),
+            '鼻' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1c),
+            '𪘀' => Ok(CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2fa1d),
             _ => Err(()),
         }
     }

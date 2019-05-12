@@ -1,36 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{3190}: '㆐'
-    pub const IDEOGRAPHIC_ANNOTATION_LINKING_MARK: char = '㆐';
-    /// \u{3191}: '㆑'
-    pub const IDEOGRAPHIC_ANNOTATION_REVERSE_MARK: char = '㆑';
-    /// \u{3192}: '㆒'
-    pub const IDEOGRAPHIC_ANNOTATION_ONE_MARK: char = '㆒';
-    /// \u{3193}: '㆓'
-    pub const IDEOGRAPHIC_ANNOTATION_TWO_MARK: char = '㆓';
-    /// \u{3194}: '㆔'
-    pub const IDEOGRAPHIC_ANNOTATION_THREE_MARK: char = '㆔';
-    /// \u{3195}: '㆕'
-    pub const IDEOGRAPHIC_ANNOTATION_FOUR_MARK: char = '㆕';
-    /// \u{3196}: '㆖'
-    pub const IDEOGRAPHIC_ANNOTATION_TOP_MARK: char = '㆖';
-    /// \u{3197}: '㆗'
-    pub const IDEOGRAPHIC_ANNOTATION_MIDDLE_MARK: char = '㆗';
-    /// \u{3198}: '㆘'
-    pub const IDEOGRAPHIC_ANNOTATION_BOTTOM_MARK: char = '㆘';
-    /// \u{3199}: '㆙'
-    pub const IDEOGRAPHIC_ANNOTATION_FIRST_MARK: char = '㆙';
-    /// \u{319a}: '㆚'
-    pub const IDEOGRAPHIC_ANNOTATION_SECOND_MARK: char = '㆚';
-    /// \u{319b}: '㆛'
-    pub const IDEOGRAPHIC_ANNOTATION_THIRD_MARK: char = '㆛';
-    /// \u{319c}: '㆜'
-    pub const IDEOGRAPHIC_ANNOTATION_FOURTH_MARK: char = '㆜';
-    /// \u{319d}: '㆝'
-    pub const IDEOGRAPHIC_ANNOTATION_HEAVEN_MARK: char = '㆝';
-    /// \u{319e}: '㆞'
-    pub const IDEOGRAPHIC_ANNOTATION_EARTH_MARK: char = '㆞';
-}
 
 /// An enum to represent all characters in the Kanbun block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -69,23 +36,22 @@ pub enum Kanbun {
 
 impl Into<char> for Kanbun {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Kanbun::IdeographicAnnotationLinkingMark => IDEOGRAPHIC_ANNOTATION_LINKING_MARK,
-            Kanbun::IdeographicAnnotationReverseMark => IDEOGRAPHIC_ANNOTATION_REVERSE_MARK,
-            Kanbun::IdeographicAnnotationOneMark => IDEOGRAPHIC_ANNOTATION_ONE_MARK,
-            Kanbun::IdeographicAnnotationTwoMark => IDEOGRAPHIC_ANNOTATION_TWO_MARK,
-            Kanbun::IdeographicAnnotationThreeMark => IDEOGRAPHIC_ANNOTATION_THREE_MARK,
-            Kanbun::IdeographicAnnotationFourMark => IDEOGRAPHIC_ANNOTATION_FOUR_MARK,
-            Kanbun::IdeographicAnnotationTopMark => IDEOGRAPHIC_ANNOTATION_TOP_MARK,
-            Kanbun::IdeographicAnnotationMiddleMark => IDEOGRAPHIC_ANNOTATION_MIDDLE_MARK,
-            Kanbun::IdeographicAnnotationBottomMark => IDEOGRAPHIC_ANNOTATION_BOTTOM_MARK,
-            Kanbun::IdeographicAnnotationFirstMark => IDEOGRAPHIC_ANNOTATION_FIRST_MARK,
-            Kanbun::IdeographicAnnotationSecondMark => IDEOGRAPHIC_ANNOTATION_SECOND_MARK,
-            Kanbun::IdeographicAnnotationThirdMark => IDEOGRAPHIC_ANNOTATION_THIRD_MARK,
-            Kanbun::IdeographicAnnotationFourthMark => IDEOGRAPHIC_ANNOTATION_FOURTH_MARK,
-            Kanbun::IdeographicAnnotationHeavenMark => IDEOGRAPHIC_ANNOTATION_HEAVEN_MARK,
-            Kanbun::IdeographicAnnotationEarthMark => IDEOGRAPHIC_ANNOTATION_EARTH_MARK,
+            Kanbun::IdeographicAnnotationLinkingMark => '㆐',
+            Kanbun::IdeographicAnnotationReverseMark => '㆑',
+            Kanbun::IdeographicAnnotationOneMark => '㆒',
+            Kanbun::IdeographicAnnotationTwoMark => '㆓',
+            Kanbun::IdeographicAnnotationThreeMark => '㆔',
+            Kanbun::IdeographicAnnotationFourMark => '㆕',
+            Kanbun::IdeographicAnnotationTopMark => '㆖',
+            Kanbun::IdeographicAnnotationMiddleMark => '㆗',
+            Kanbun::IdeographicAnnotationBottomMark => '㆘',
+            Kanbun::IdeographicAnnotationFirstMark => '㆙',
+            Kanbun::IdeographicAnnotationSecondMark => '㆚',
+            Kanbun::IdeographicAnnotationThirdMark => '㆛',
+            Kanbun::IdeographicAnnotationFourthMark => '㆜',
+            Kanbun::IdeographicAnnotationHeavenMark => '㆝',
+            Kanbun::IdeographicAnnotationEarthMark => '㆞',
         }
     }
 }
@@ -93,23 +59,22 @@ impl Into<char> for Kanbun {
 impl std::convert::TryFrom<char> for Kanbun {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            IDEOGRAPHIC_ANNOTATION_LINKING_MARK => Ok(Kanbun::IdeographicAnnotationLinkingMark),
-            IDEOGRAPHIC_ANNOTATION_REVERSE_MARK => Ok(Kanbun::IdeographicAnnotationReverseMark),
-            IDEOGRAPHIC_ANNOTATION_ONE_MARK => Ok(Kanbun::IdeographicAnnotationOneMark),
-            IDEOGRAPHIC_ANNOTATION_TWO_MARK => Ok(Kanbun::IdeographicAnnotationTwoMark),
-            IDEOGRAPHIC_ANNOTATION_THREE_MARK => Ok(Kanbun::IdeographicAnnotationThreeMark),
-            IDEOGRAPHIC_ANNOTATION_FOUR_MARK => Ok(Kanbun::IdeographicAnnotationFourMark),
-            IDEOGRAPHIC_ANNOTATION_TOP_MARK => Ok(Kanbun::IdeographicAnnotationTopMark),
-            IDEOGRAPHIC_ANNOTATION_MIDDLE_MARK => Ok(Kanbun::IdeographicAnnotationMiddleMark),
-            IDEOGRAPHIC_ANNOTATION_BOTTOM_MARK => Ok(Kanbun::IdeographicAnnotationBottomMark),
-            IDEOGRAPHIC_ANNOTATION_FIRST_MARK => Ok(Kanbun::IdeographicAnnotationFirstMark),
-            IDEOGRAPHIC_ANNOTATION_SECOND_MARK => Ok(Kanbun::IdeographicAnnotationSecondMark),
-            IDEOGRAPHIC_ANNOTATION_THIRD_MARK => Ok(Kanbun::IdeographicAnnotationThirdMark),
-            IDEOGRAPHIC_ANNOTATION_FOURTH_MARK => Ok(Kanbun::IdeographicAnnotationFourthMark),
-            IDEOGRAPHIC_ANNOTATION_HEAVEN_MARK => Ok(Kanbun::IdeographicAnnotationHeavenMark),
-            IDEOGRAPHIC_ANNOTATION_EARTH_MARK => Ok(Kanbun::IdeographicAnnotationEarthMark),
+            '㆐' => Ok(Kanbun::IdeographicAnnotationLinkingMark),
+            '㆑' => Ok(Kanbun::IdeographicAnnotationReverseMark),
+            '㆒' => Ok(Kanbun::IdeographicAnnotationOneMark),
+            '㆓' => Ok(Kanbun::IdeographicAnnotationTwoMark),
+            '㆔' => Ok(Kanbun::IdeographicAnnotationThreeMark),
+            '㆕' => Ok(Kanbun::IdeographicAnnotationFourMark),
+            '㆖' => Ok(Kanbun::IdeographicAnnotationTopMark),
+            '㆗' => Ok(Kanbun::IdeographicAnnotationMiddleMark),
+            '㆘' => Ok(Kanbun::IdeographicAnnotationBottomMark),
+            '㆙' => Ok(Kanbun::IdeographicAnnotationFirstMark),
+            '㆚' => Ok(Kanbun::IdeographicAnnotationSecondMark),
+            '㆛' => Ok(Kanbun::IdeographicAnnotationThirdMark),
+            '㆜' => Ok(Kanbun::IdeographicAnnotationFourthMark),
+            '㆝' => Ok(Kanbun::IdeographicAnnotationHeavenMark),
+            '㆞' => Ok(Kanbun::IdeographicAnnotationEarthMark),
             _ => Err(()),
         }
     }

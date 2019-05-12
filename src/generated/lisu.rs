@@ -1,100 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a4d0}: 'ꓐ'
-    pub const LETTER_BA: char = 'ꓐ';
-    /// \u{a4d1}: 'ꓑ'
-    pub const LETTER_PA: char = 'ꓑ';
-    /// \u{a4d2}: 'ꓒ'
-    pub const LETTER_PHA: char = 'ꓒ';
-    /// \u{a4d3}: 'ꓓ'
-    pub const LETTER_DA: char = 'ꓓ';
-    /// \u{a4d4}: 'ꓔ'
-    pub const LETTER_TA: char = 'ꓔ';
-    /// \u{a4d5}: 'ꓕ'
-    pub const LETTER_THA: char = 'ꓕ';
-    /// \u{a4d6}: 'ꓖ'
-    pub const LETTER_GA: char = 'ꓖ';
-    /// \u{a4d7}: 'ꓗ'
-    pub const LETTER_KA: char = 'ꓗ';
-    /// \u{a4d8}: 'ꓘ'
-    pub const LETTER_KHA: char = 'ꓘ';
-    /// \u{a4d9}: 'ꓙ'
-    pub const LETTER_JA: char = 'ꓙ';
-    /// \u{a4da}: 'ꓚ'
-    pub const LETTER_CA: char = 'ꓚ';
-    /// \u{a4db}: 'ꓛ'
-    pub const LETTER_CHA: char = 'ꓛ';
-    /// \u{a4dc}: 'ꓜ'
-    pub const LETTER_DZA: char = 'ꓜ';
-    /// \u{a4dd}: 'ꓝ'
-    pub const LETTER_TSA: char = 'ꓝ';
-    /// \u{a4de}: 'ꓞ'
-    pub const LETTER_TSHA: char = 'ꓞ';
-    /// \u{a4df}: 'ꓟ'
-    pub const LETTER_MA: char = 'ꓟ';
-    /// \u{a4e0}: 'ꓠ'
-    pub const LETTER_NA: char = 'ꓠ';
-    /// \u{a4e1}: 'ꓡ'
-    pub const LETTER_LA: char = 'ꓡ';
-    /// \u{a4e2}: 'ꓢ'
-    pub const LETTER_SA: char = 'ꓢ';
-    /// \u{a4e3}: 'ꓣ'
-    pub const LETTER_ZHA: char = 'ꓣ';
-    /// \u{a4e4}: 'ꓤ'
-    pub const LETTER_ZA: char = 'ꓤ';
-    /// \u{a4e5}: 'ꓥ'
-    pub const LETTER_NGA: char = 'ꓥ';
-    /// \u{a4e6}: 'ꓦ'
-    pub const LETTER_HA: char = 'ꓦ';
-    /// \u{a4e7}: 'ꓧ'
-    pub const LETTER_XA: char = 'ꓧ';
-    /// \u{a4e8}: 'ꓨ'
-    pub const LETTER_HHA: char = 'ꓨ';
-    /// \u{a4e9}: 'ꓩ'
-    pub const LETTER_FA: char = 'ꓩ';
-    /// \u{a4ea}: 'ꓪ'
-    pub const LETTER_WA: char = 'ꓪ';
-    /// \u{a4eb}: 'ꓫ'
-    pub const LETTER_SHA: char = 'ꓫ';
-    /// \u{a4ec}: 'ꓬ'
-    pub const LETTER_YA: char = 'ꓬ';
-    /// \u{a4ed}: 'ꓭ'
-    pub const LETTER_GHA: char = 'ꓭ';
-    /// \u{a4ee}: 'ꓮ'
-    pub const LETTER_A: char = 'ꓮ';
-    /// \u{a4ef}: 'ꓯ'
-    pub const LETTER_AE: char = 'ꓯ';
-    /// \u{a4f0}: 'ꓰ'
-    pub const LETTER_E: char = 'ꓰ';
-    /// \u{a4f1}: 'ꓱ'
-    pub const LETTER_EU: char = 'ꓱ';
-    /// \u{a4f2}: 'ꓲ'
-    pub const LETTER_I: char = 'ꓲ';
-    /// \u{a4f3}: 'ꓳ'
-    pub const LETTER_O: char = 'ꓳ';
-    /// \u{a4f4}: 'ꓴ'
-    pub const LETTER_U: char = 'ꓴ';
-    /// \u{a4f5}: 'ꓵ'
-    pub const LETTER_UE: char = 'ꓵ';
-    /// \u{a4f6}: 'ꓶ'
-    pub const LETTER_UH: char = 'ꓶ';
-    /// \u{a4f7}: 'ꓷ'
-    pub const LETTER_OE: char = 'ꓷ';
-    /// \u{a4f8}: 'ꓸ'
-    pub const LETTER_TONE_MYA_TI: char = 'ꓸ';
-    /// \u{a4f9}: 'ꓹ'
-    pub const LETTER_TONE_NA_PO: char = 'ꓹ';
-    /// \u{a4fa}: 'ꓺ'
-    pub const LETTER_TONE_MYA_CYA: char = 'ꓺ';
-    /// \u{a4fb}: 'ꓻ'
-    pub const LETTER_TONE_MYA_BO: char = 'ꓻ';
-    /// \u{a4fc}: 'ꓼ'
-    pub const LETTER_TONE_MYA_NA: char = 'ꓼ';
-    /// \u{a4fd}: 'ꓽ'
-    pub const LETTER_TONE_MYA_JEU: char = 'ꓽ';
-    /// \u{a4fe}: '꓾'
-    pub const PUNCTUATION_COMMA: char = '꓾';
-}
 
 /// An enum to represent all characters in the Lisu block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -197,55 +100,54 @@ pub enum Lisu {
 
 impl Into<char> for Lisu {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Lisu::LetterBa => LETTER_BA,
-            Lisu::LetterPa => LETTER_PA,
-            Lisu::LetterPha => LETTER_PHA,
-            Lisu::LetterDa => LETTER_DA,
-            Lisu::LetterTa => LETTER_TA,
-            Lisu::LetterTha => LETTER_THA,
-            Lisu::LetterGa => LETTER_GA,
-            Lisu::LetterKa => LETTER_KA,
-            Lisu::LetterKha => LETTER_KHA,
-            Lisu::LetterJa => LETTER_JA,
-            Lisu::LetterCa => LETTER_CA,
-            Lisu::LetterCha => LETTER_CHA,
-            Lisu::LetterDza => LETTER_DZA,
-            Lisu::LetterTsa => LETTER_TSA,
-            Lisu::LetterTsha => LETTER_TSHA,
-            Lisu::LetterMa => LETTER_MA,
-            Lisu::LetterNa => LETTER_NA,
-            Lisu::LetterLa => LETTER_LA,
-            Lisu::LetterSa => LETTER_SA,
-            Lisu::LetterZha => LETTER_ZHA,
-            Lisu::LetterZa => LETTER_ZA,
-            Lisu::LetterNga => LETTER_NGA,
-            Lisu::LetterHa => LETTER_HA,
-            Lisu::LetterXa => LETTER_XA,
-            Lisu::LetterHha => LETTER_HHA,
-            Lisu::LetterFa => LETTER_FA,
-            Lisu::LetterWa => LETTER_WA,
-            Lisu::LetterSha => LETTER_SHA,
-            Lisu::LetterYa => LETTER_YA,
-            Lisu::LetterGha => LETTER_GHA,
-            Lisu::LetterA => LETTER_A,
-            Lisu::LetterAe => LETTER_AE,
-            Lisu::LetterE => LETTER_E,
-            Lisu::LetterEu => LETTER_EU,
-            Lisu::LetterI => LETTER_I,
-            Lisu::LetterO => LETTER_O,
-            Lisu::LetterU => LETTER_U,
-            Lisu::LetterUe => LETTER_UE,
-            Lisu::LetterUh => LETTER_UH,
-            Lisu::LetterOe => LETTER_OE,
-            Lisu::LetterToneMyaTi => LETTER_TONE_MYA_TI,
-            Lisu::LetterToneNaPo => LETTER_TONE_NA_PO,
-            Lisu::LetterToneMyaCya => LETTER_TONE_MYA_CYA,
-            Lisu::LetterToneMyaBo => LETTER_TONE_MYA_BO,
-            Lisu::LetterToneMyaNa => LETTER_TONE_MYA_NA,
-            Lisu::LetterToneMyaJeu => LETTER_TONE_MYA_JEU,
-            Lisu::PunctuationComma => PUNCTUATION_COMMA,
+            Lisu::LetterBa => 'ꓐ',
+            Lisu::LetterPa => 'ꓑ',
+            Lisu::LetterPha => 'ꓒ',
+            Lisu::LetterDa => 'ꓓ',
+            Lisu::LetterTa => 'ꓔ',
+            Lisu::LetterTha => 'ꓕ',
+            Lisu::LetterGa => 'ꓖ',
+            Lisu::LetterKa => 'ꓗ',
+            Lisu::LetterKha => 'ꓘ',
+            Lisu::LetterJa => 'ꓙ',
+            Lisu::LetterCa => 'ꓚ',
+            Lisu::LetterCha => 'ꓛ',
+            Lisu::LetterDza => 'ꓜ',
+            Lisu::LetterTsa => 'ꓝ',
+            Lisu::LetterTsha => 'ꓞ',
+            Lisu::LetterMa => 'ꓟ',
+            Lisu::LetterNa => 'ꓠ',
+            Lisu::LetterLa => 'ꓡ',
+            Lisu::LetterSa => 'ꓢ',
+            Lisu::LetterZha => 'ꓣ',
+            Lisu::LetterZa => 'ꓤ',
+            Lisu::LetterNga => 'ꓥ',
+            Lisu::LetterHa => 'ꓦ',
+            Lisu::LetterXa => 'ꓧ',
+            Lisu::LetterHha => 'ꓨ',
+            Lisu::LetterFa => 'ꓩ',
+            Lisu::LetterWa => 'ꓪ',
+            Lisu::LetterSha => 'ꓫ',
+            Lisu::LetterYa => 'ꓬ',
+            Lisu::LetterGha => 'ꓭ',
+            Lisu::LetterA => 'ꓮ',
+            Lisu::LetterAe => 'ꓯ',
+            Lisu::LetterE => 'ꓰ',
+            Lisu::LetterEu => 'ꓱ',
+            Lisu::LetterI => 'ꓲ',
+            Lisu::LetterO => 'ꓳ',
+            Lisu::LetterU => 'ꓴ',
+            Lisu::LetterUe => 'ꓵ',
+            Lisu::LetterUh => 'ꓶ',
+            Lisu::LetterOe => 'ꓷ',
+            Lisu::LetterToneMyaTi => 'ꓸ',
+            Lisu::LetterToneNaPo => 'ꓹ',
+            Lisu::LetterToneMyaCya => 'ꓺ',
+            Lisu::LetterToneMyaBo => 'ꓻ',
+            Lisu::LetterToneMyaNa => 'ꓼ',
+            Lisu::LetterToneMyaJeu => 'ꓽ',
+            Lisu::PunctuationComma => '꓾',
         }
     }
 }
@@ -253,55 +155,54 @@ impl Into<char> for Lisu {
 impl std::convert::TryFrom<char> for Lisu {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_BA => Ok(Lisu::LetterBa),
-            LETTER_PA => Ok(Lisu::LetterPa),
-            LETTER_PHA => Ok(Lisu::LetterPha),
-            LETTER_DA => Ok(Lisu::LetterDa),
-            LETTER_TA => Ok(Lisu::LetterTa),
-            LETTER_THA => Ok(Lisu::LetterTha),
-            LETTER_GA => Ok(Lisu::LetterGa),
-            LETTER_KA => Ok(Lisu::LetterKa),
-            LETTER_KHA => Ok(Lisu::LetterKha),
-            LETTER_JA => Ok(Lisu::LetterJa),
-            LETTER_CA => Ok(Lisu::LetterCa),
-            LETTER_CHA => Ok(Lisu::LetterCha),
-            LETTER_DZA => Ok(Lisu::LetterDza),
-            LETTER_TSA => Ok(Lisu::LetterTsa),
-            LETTER_TSHA => Ok(Lisu::LetterTsha),
-            LETTER_MA => Ok(Lisu::LetterMa),
-            LETTER_NA => Ok(Lisu::LetterNa),
-            LETTER_LA => Ok(Lisu::LetterLa),
-            LETTER_SA => Ok(Lisu::LetterSa),
-            LETTER_ZHA => Ok(Lisu::LetterZha),
-            LETTER_ZA => Ok(Lisu::LetterZa),
-            LETTER_NGA => Ok(Lisu::LetterNga),
-            LETTER_HA => Ok(Lisu::LetterHa),
-            LETTER_XA => Ok(Lisu::LetterXa),
-            LETTER_HHA => Ok(Lisu::LetterHha),
-            LETTER_FA => Ok(Lisu::LetterFa),
-            LETTER_WA => Ok(Lisu::LetterWa),
-            LETTER_SHA => Ok(Lisu::LetterSha),
-            LETTER_YA => Ok(Lisu::LetterYa),
-            LETTER_GHA => Ok(Lisu::LetterGha),
-            LETTER_A => Ok(Lisu::LetterA),
-            LETTER_AE => Ok(Lisu::LetterAe),
-            LETTER_E => Ok(Lisu::LetterE),
-            LETTER_EU => Ok(Lisu::LetterEu),
-            LETTER_I => Ok(Lisu::LetterI),
-            LETTER_O => Ok(Lisu::LetterO),
-            LETTER_U => Ok(Lisu::LetterU),
-            LETTER_UE => Ok(Lisu::LetterUe),
-            LETTER_UH => Ok(Lisu::LetterUh),
-            LETTER_OE => Ok(Lisu::LetterOe),
-            LETTER_TONE_MYA_TI => Ok(Lisu::LetterToneMyaTi),
-            LETTER_TONE_NA_PO => Ok(Lisu::LetterToneNaPo),
-            LETTER_TONE_MYA_CYA => Ok(Lisu::LetterToneMyaCya),
-            LETTER_TONE_MYA_BO => Ok(Lisu::LetterToneMyaBo),
-            LETTER_TONE_MYA_NA => Ok(Lisu::LetterToneMyaNa),
-            LETTER_TONE_MYA_JEU => Ok(Lisu::LetterToneMyaJeu),
-            PUNCTUATION_COMMA => Ok(Lisu::PunctuationComma),
+            'ꓐ' => Ok(Lisu::LetterBa),
+            'ꓑ' => Ok(Lisu::LetterPa),
+            'ꓒ' => Ok(Lisu::LetterPha),
+            'ꓓ' => Ok(Lisu::LetterDa),
+            'ꓔ' => Ok(Lisu::LetterTa),
+            'ꓕ' => Ok(Lisu::LetterTha),
+            'ꓖ' => Ok(Lisu::LetterGa),
+            'ꓗ' => Ok(Lisu::LetterKa),
+            'ꓘ' => Ok(Lisu::LetterKha),
+            'ꓙ' => Ok(Lisu::LetterJa),
+            'ꓚ' => Ok(Lisu::LetterCa),
+            'ꓛ' => Ok(Lisu::LetterCha),
+            'ꓜ' => Ok(Lisu::LetterDza),
+            'ꓝ' => Ok(Lisu::LetterTsa),
+            'ꓞ' => Ok(Lisu::LetterTsha),
+            'ꓟ' => Ok(Lisu::LetterMa),
+            'ꓠ' => Ok(Lisu::LetterNa),
+            'ꓡ' => Ok(Lisu::LetterLa),
+            'ꓢ' => Ok(Lisu::LetterSa),
+            'ꓣ' => Ok(Lisu::LetterZha),
+            'ꓤ' => Ok(Lisu::LetterZa),
+            'ꓥ' => Ok(Lisu::LetterNga),
+            'ꓦ' => Ok(Lisu::LetterHa),
+            'ꓧ' => Ok(Lisu::LetterXa),
+            'ꓨ' => Ok(Lisu::LetterHha),
+            'ꓩ' => Ok(Lisu::LetterFa),
+            'ꓪ' => Ok(Lisu::LetterWa),
+            'ꓫ' => Ok(Lisu::LetterSha),
+            'ꓬ' => Ok(Lisu::LetterYa),
+            'ꓭ' => Ok(Lisu::LetterGha),
+            'ꓮ' => Ok(Lisu::LetterA),
+            'ꓯ' => Ok(Lisu::LetterAe),
+            'ꓰ' => Ok(Lisu::LetterE),
+            'ꓱ' => Ok(Lisu::LetterEu),
+            'ꓲ' => Ok(Lisu::LetterI),
+            'ꓳ' => Ok(Lisu::LetterO),
+            'ꓴ' => Ok(Lisu::LetterU),
+            'ꓵ' => Ok(Lisu::LetterUe),
+            'ꓶ' => Ok(Lisu::LetterUh),
+            'ꓷ' => Ok(Lisu::LetterOe),
+            'ꓸ' => Ok(Lisu::LetterToneMyaTi),
+            'ꓹ' => Ok(Lisu::LetterToneNaPo),
+            'ꓺ' => Ok(Lisu::LetterToneMyaCya),
+            'ꓻ' => Ok(Lisu::LetterToneMyaBo),
+            'ꓼ' => Ok(Lisu::LetterToneMyaNa),
+            'ꓽ' => Ok(Lisu::LetterToneMyaJeu),
+            '꓾' => Ok(Lisu::PunctuationComma),
             _ => Err(()),
         }
     }

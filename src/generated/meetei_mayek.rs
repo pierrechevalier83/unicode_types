@@ -1,118 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{abc0}: 'ꯀ'
-    pub const LETTER_KOK: char = 'ꯀ';
-    /// \u{abc1}: 'ꯁ'
-    pub const LETTER_SAM: char = 'ꯁ';
-    /// \u{abc2}: 'ꯂ'
-    pub const LETTER_LAI: char = 'ꯂ';
-    /// \u{abc3}: 'ꯃ'
-    pub const LETTER_MIT: char = 'ꯃ';
-    /// \u{abc4}: 'ꯄ'
-    pub const LETTER_PA: char = 'ꯄ';
-    /// \u{abc5}: 'ꯅ'
-    pub const LETTER_NA: char = 'ꯅ';
-    /// \u{abc6}: 'ꯆ'
-    pub const LETTER_CHIL: char = 'ꯆ';
-    /// \u{abc7}: 'ꯇ'
-    pub const LETTER_TIL: char = 'ꯇ';
-    /// \u{abc8}: 'ꯈ'
-    pub const LETTER_KHOU: char = 'ꯈ';
-    /// \u{abc9}: 'ꯉ'
-    pub const LETTER_NGOU: char = 'ꯉ';
-    /// \u{abca}: 'ꯊ'
-    pub const LETTER_THOU: char = 'ꯊ';
-    /// \u{abcb}: 'ꯋ'
-    pub const LETTER_WAI: char = 'ꯋ';
-    /// \u{abcc}: 'ꯌ'
-    pub const LETTER_YANG: char = 'ꯌ';
-    /// \u{abcd}: 'ꯍ'
-    pub const LETTER_HUK: char = 'ꯍ';
-    /// \u{abce}: 'ꯎ'
-    pub const LETTER_UN: char = 'ꯎ';
-    /// \u{abcf}: 'ꯏ'
-    pub const LETTER_I: char = 'ꯏ';
-    /// \u{abd0}: 'ꯐ'
-    pub const LETTER_PHAM: char = 'ꯐ';
-    /// \u{abd1}: 'ꯑ'
-    pub const LETTER_ATIYA: char = 'ꯑ';
-    /// \u{abd2}: 'ꯒ'
-    pub const LETTER_GOK: char = 'ꯒ';
-    /// \u{abd3}: 'ꯓ'
-    pub const LETTER_JHAM: char = 'ꯓ';
-    /// \u{abd4}: 'ꯔ'
-    pub const LETTER_RAI: char = 'ꯔ';
-    /// \u{abd5}: 'ꯕ'
-    pub const LETTER_BA: char = 'ꯕ';
-    /// \u{abd6}: 'ꯖ'
-    pub const LETTER_JIL: char = 'ꯖ';
-    /// \u{abd7}: 'ꯗ'
-    pub const LETTER_DIL: char = 'ꯗ';
-    /// \u{abd8}: 'ꯘ'
-    pub const LETTER_GHOU: char = 'ꯘ';
-    /// \u{abd9}: 'ꯙ'
-    pub const LETTER_DHOU: char = 'ꯙ';
-    /// \u{abda}: 'ꯚ'
-    pub const LETTER_BHAM: char = 'ꯚ';
-    /// \u{abdb}: 'ꯛ'
-    pub const LETTER_KOK_LONSUM: char = 'ꯛ';
-    /// \u{abdc}: 'ꯜ'
-    pub const LETTER_LAI_LONSUM: char = 'ꯜ';
-    /// \u{abdd}: 'ꯝ'
-    pub const LETTER_MIT_LONSUM: char = 'ꯝ';
-    /// \u{abde}: 'ꯞ'
-    pub const LETTER_PA_LONSUM: char = 'ꯞ';
-    /// \u{abdf}: 'ꯟ'
-    pub const LETTER_NA_LONSUM: char = 'ꯟ';
-    /// \u{abe0}: 'ꯠ'
-    pub const LETTER_TIL_LONSUM: char = 'ꯠ';
-    /// \u{abe1}: 'ꯡ'
-    pub const LETTER_NGOU_LONSUM: char = 'ꯡ';
-    /// \u{abe2}: 'ꯢ'
-    pub const LETTER_I_LONSUM: char = 'ꯢ';
-    /// \u{abe3}: 'ꯣ'
-    pub const VOWEL_SIGN_ONAP: char = 'ꯣ';
-    /// \u{abe4}: 'ꯤ'
-    pub const VOWEL_SIGN_INAP: char = 'ꯤ';
-    /// \u{abe5}: 'ꯥ'
-    pub const VOWEL_SIGN_ANAP: char = 'ꯥ';
-    /// \u{abe6}: 'ꯦ'
-    pub const VOWEL_SIGN_YENAP: char = 'ꯦ';
-    /// \u{abe7}: 'ꯧ'
-    pub const VOWEL_SIGN_SOUNAP: char = 'ꯧ';
-    /// \u{abe8}: 'ꯨ'
-    pub const VOWEL_SIGN_UNAP: char = 'ꯨ';
-    /// \u{abe9}: 'ꯩ'
-    pub const VOWEL_SIGN_CHEINAP: char = 'ꯩ';
-    /// \u{abea}: 'ꯪ'
-    pub const VOWEL_SIGN_NUNG: char = 'ꯪ';
-    /// \u{abeb}: '꯫'
-    pub const CHEIKHEI: char = '꯫';
-    /// \u{abec}: '꯬'
-    pub const LUM_IYEK: char = '꯬';
-    /// \u{abed}: '꯭'
-    pub const APUN_IYEK: char = '꯭';
-    /// \u{abf0}: '꯰'
-    pub const DIGIT_ZERO: char = '꯰';
-    /// \u{abf1}: '꯱'
-    pub const DIGIT_ONE: char = '꯱';
-    /// \u{abf2}: '꯲'
-    pub const DIGIT_TWO: char = '꯲';
-    /// \u{abf3}: '꯳'
-    pub const DIGIT_THREE: char = '꯳';
-    /// \u{abf4}: '꯴'
-    pub const DIGIT_FOUR: char = '꯴';
-    /// \u{abf5}: '꯵'
-    pub const DIGIT_FIVE: char = '꯵';
-    /// \u{abf6}: '꯶'
-    pub const DIGIT_SIX: char = '꯶';
-    /// \u{abf7}: '꯷'
-    pub const DIGIT_SEVEN: char = '꯷';
-    /// \u{abf8}: '꯸'
-    pub const DIGIT_EIGHT: char = '꯸';
-    /// \u{abf9}: '꯹'
-    pub const DIGIT_NINE: char = '꯹';
-}
 
 /// An enum to represent all characters in the MeeteiMayek block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -233,64 +118,63 @@ pub enum MeeteiMayek {
 
 impl Into<char> for MeeteiMayek {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MeeteiMayek::LetterKok => LETTER_KOK,
-            MeeteiMayek::LetterSam => LETTER_SAM,
-            MeeteiMayek::LetterLai => LETTER_LAI,
-            MeeteiMayek::LetterMit => LETTER_MIT,
-            MeeteiMayek::LetterPa => LETTER_PA,
-            MeeteiMayek::LetterNa => LETTER_NA,
-            MeeteiMayek::LetterChil => LETTER_CHIL,
-            MeeteiMayek::LetterTil => LETTER_TIL,
-            MeeteiMayek::LetterKhou => LETTER_KHOU,
-            MeeteiMayek::LetterNgou => LETTER_NGOU,
-            MeeteiMayek::LetterThou => LETTER_THOU,
-            MeeteiMayek::LetterWai => LETTER_WAI,
-            MeeteiMayek::LetterYang => LETTER_YANG,
-            MeeteiMayek::LetterHuk => LETTER_HUK,
-            MeeteiMayek::LetterUn => LETTER_UN,
-            MeeteiMayek::LetterI => LETTER_I,
-            MeeteiMayek::LetterPham => LETTER_PHAM,
-            MeeteiMayek::LetterAtiya => LETTER_ATIYA,
-            MeeteiMayek::LetterGok => LETTER_GOK,
-            MeeteiMayek::LetterJham => LETTER_JHAM,
-            MeeteiMayek::LetterRai => LETTER_RAI,
-            MeeteiMayek::LetterBa => LETTER_BA,
-            MeeteiMayek::LetterJil => LETTER_JIL,
-            MeeteiMayek::LetterDil => LETTER_DIL,
-            MeeteiMayek::LetterGhou => LETTER_GHOU,
-            MeeteiMayek::LetterDhou => LETTER_DHOU,
-            MeeteiMayek::LetterBham => LETTER_BHAM,
-            MeeteiMayek::LetterKokLonsum => LETTER_KOK_LONSUM,
-            MeeteiMayek::LetterLaiLonsum => LETTER_LAI_LONSUM,
-            MeeteiMayek::LetterMitLonsum => LETTER_MIT_LONSUM,
-            MeeteiMayek::LetterPaLonsum => LETTER_PA_LONSUM,
-            MeeteiMayek::LetterNaLonsum => LETTER_NA_LONSUM,
-            MeeteiMayek::LetterTilLonsum => LETTER_TIL_LONSUM,
-            MeeteiMayek::LetterNgouLonsum => LETTER_NGOU_LONSUM,
-            MeeteiMayek::LetterILonsum => LETTER_I_LONSUM,
-            MeeteiMayek::VowelSignOnap => VOWEL_SIGN_ONAP,
-            MeeteiMayek::VowelSignInap => VOWEL_SIGN_INAP,
-            MeeteiMayek::VowelSignAnap => VOWEL_SIGN_ANAP,
-            MeeteiMayek::VowelSignYenap => VOWEL_SIGN_YENAP,
-            MeeteiMayek::VowelSignSounap => VOWEL_SIGN_SOUNAP,
-            MeeteiMayek::VowelSignUnap => VOWEL_SIGN_UNAP,
-            MeeteiMayek::VowelSignCheinap => VOWEL_SIGN_CHEINAP,
-            MeeteiMayek::VowelSignNung => VOWEL_SIGN_NUNG,
-            MeeteiMayek::Cheikhei => CHEIKHEI,
-            MeeteiMayek::LumIyek => LUM_IYEK,
-            MeeteiMayek::ApunIyek => APUN_IYEK,
-            MeeteiMayek::DigitZero => DIGIT_ZERO,
-            MeeteiMayek::DigitOne => DIGIT_ONE,
-            MeeteiMayek::DigitTwo => DIGIT_TWO,
-            MeeteiMayek::DigitThree => DIGIT_THREE,
-            MeeteiMayek::DigitFour => DIGIT_FOUR,
-            MeeteiMayek::DigitFive => DIGIT_FIVE,
-            MeeteiMayek::DigitSix => DIGIT_SIX,
-            MeeteiMayek::DigitSeven => DIGIT_SEVEN,
-            MeeteiMayek::DigitEight => DIGIT_EIGHT,
-            MeeteiMayek::DigitNine => DIGIT_NINE,
+            MeeteiMayek::LetterKok => 'ꯀ',
+            MeeteiMayek::LetterSam => 'ꯁ',
+            MeeteiMayek::LetterLai => 'ꯂ',
+            MeeteiMayek::LetterMit => 'ꯃ',
+            MeeteiMayek::LetterPa => 'ꯄ',
+            MeeteiMayek::LetterNa => 'ꯅ',
+            MeeteiMayek::LetterChil => 'ꯆ',
+            MeeteiMayek::LetterTil => 'ꯇ',
+            MeeteiMayek::LetterKhou => 'ꯈ',
+            MeeteiMayek::LetterNgou => 'ꯉ',
+            MeeteiMayek::LetterThou => 'ꯊ',
+            MeeteiMayek::LetterWai => 'ꯋ',
+            MeeteiMayek::LetterYang => 'ꯌ',
+            MeeteiMayek::LetterHuk => 'ꯍ',
+            MeeteiMayek::LetterUn => 'ꯎ',
+            MeeteiMayek::LetterI => 'ꯏ',
+            MeeteiMayek::LetterPham => 'ꯐ',
+            MeeteiMayek::LetterAtiya => 'ꯑ',
+            MeeteiMayek::LetterGok => 'ꯒ',
+            MeeteiMayek::LetterJham => 'ꯓ',
+            MeeteiMayek::LetterRai => 'ꯔ',
+            MeeteiMayek::LetterBa => 'ꯕ',
+            MeeteiMayek::LetterJil => 'ꯖ',
+            MeeteiMayek::LetterDil => 'ꯗ',
+            MeeteiMayek::LetterGhou => 'ꯘ',
+            MeeteiMayek::LetterDhou => 'ꯙ',
+            MeeteiMayek::LetterBham => 'ꯚ',
+            MeeteiMayek::LetterKokLonsum => 'ꯛ',
+            MeeteiMayek::LetterLaiLonsum => 'ꯜ',
+            MeeteiMayek::LetterMitLonsum => 'ꯝ',
+            MeeteiMayek::LetterPaLonsum => 'ꯞ',
+            MeeteiMayek::LetterNaLonsum => 'ꯟ',
+            MeeteiMayek::LetterTilLonsum => 'ꯠ',
+            MeeteiMayek::LetterNgouLonsum => 'ꯡ',
+            MeeteiMayek::LetterILonsum => 'ꯢ',
+            MeeteiMayek::VowelSignOnap => 'ꯣ',
+            MeeteiMayek::VowelSignInap => 'ꯤ',
+            MeeteiMayek::VowelSignAnap => 'ꯥ',
+            MeeteiMayek::VowelSignYenap => 'ꯦ',
+            MeeteiMayek::VowelSignSounap => 'ꯧ',
+            MeeteiMayek::VowelSignUnap => 'ꯨ',
+            MeeteiMayek::VowelSignCheinap => 'ꯩ',
+            MeeteiMayek::VowelSignNung => 'ꯪ',
+            MeeteiMayek::Cheikhei => '꯫',
+            MeeteiMayek::LumIyek => '꯬',
+            MeeteiMayek::ApunIyek => '꯭',
+            MeeteiMayek::DigitZero => '꯰',
+            MeeteiMayek::DigitOne => '꯱',
+            MeeteiMayek::DigitTwo => '꯲',
+            MeeteiMayek::DigitThree => '꯳',
+            MeeteiMayek::DigitFour => '꯴',
+            MeeteiMayek::DigitFive => '꯵',
+            MeeteiMayek::DigitSix => '꯶',
+            MeeteiMayek::DigitSeven => '꯷',
+            MeeteiMayek::DigitEight => '꯸',
+            MeeteiMayek::DigitNine => '꯹',
         }
     }
 }
@@ -298,64 +182,63 @@ impl Into<char> for MeeteiMayek {
 impl std::convert::TryFrom<char> for MeeteiMayek {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_KOK => Ok(MeeteiMayek::LetterKok),
-            LETTER_SAM => Ok(MeeteiMayek::LetterSam),
-            LETTER_LAI => Ok(MeeteiMayek::LetterLai),
-            LETTER_MIT => Ok(MeeteiMayek::LetterMit),
-            LETTER_PA => Ok(MeeteiMayek::LetterPa),
-            LETTER_NA => Ok(MeeteiMayek::LetterNa),
-            LETTER_CHIL => Ok(MeeteiMayek::LetterChil),
-            LETTER_TIL => Ok(MeeteiMayek::LetterTil),
-            LETTER_KHOU => Ok(MeeteiMayek::LetterKhou),
-            LETTER_NGOU => Ok(MeeteiMayek::LetterNgou),
-            LETTER_THOU => Ok(MeeteiMayek::LetterThou),
-            LETTER_WAI => Ok(MeeteiMayek::LetterWai),
-            LETTER_YANG => Ok(MeeteiMayek::LetterYang),
-            LETTER_HUK => Ok(MeeteiMayek::LetterHuk),
-            LETTER_UN => Ok(MeeteiMayek::LetterUn),
-            LETTER_I => Ok(MeeteiMayek::LetterI),
-            LETTER_PHAM => Ok(MeeteiMayek::LetterPham),
-            LETTER_ATIYA => Ok(MeeteiMayek::LetterAtiya),
-            LETTER_GOK => Ok(MeeteiMayek::LetterGok),
-            LETTER_JHAM => Ok(MeeteiMayek::LetterJham),
-            LETTER_RAI => Ok(MeeteiMayek::LetterRai),
-            LETTER_BA => Ok(MeeteiMayek::LetterBa),
-            LETTER_JIL => Ok(MeeteiMayek::LetterJil),
-            LETTER_DIL => Ok(MeeteiMayek::LetterDil),
-            LETTER_GHOU => Ok(MeeteiMayek::LetterGhou),
-            LETTER_DHOU => Ok(MeeteiMayek::LetterDhou),
-            LETTER_BHAM => Ok(MeeteiMayek::LetterBham),
-            LETTER_KOK_LONSUM => Ok(MeeteiMayek::LetterKokLonsum),
-            LETTER_LAI_LONSUM => Ok(MeeteiMayek::LetterLaiLonsum),
-            LETTER_MIT_LONSUM => Ok(MeeteiMayek::LetterMitLonsum),
-            LETTER_PA_LONSUM => Ok(MeeteiMayek::LetterPaLonsum),
-            LETTER_NA_LONSUM => Ok(MeeteiMayek::LetterNaLonsum),
-            LETTER_TIL_LONSUM => Ok(MeeteiMayek::LetterTilLonsum),
-            LETTER_NGOU_LONSUM => Ok(MeeteiMayek::LetterNgouLonsum),
-            LETTER_I_LONSUM => Ok(MeeteiMayek::LetterILonsum),
-            VOWEL_SIGN_ONAP => Ok(MeeteiMayek::VowelSignOnap),
-            VOWEL_SIGN_INAP => Ok(MeeteiMayek::VowelSignInap),
-            VOWEL_SIGN_ANAP => Ok(MeeteiMayek::VowelSignAnap),
-            VOWEL_SIGN_YENAP => Ok(MeeteiMayek::VowelSignYenap),
-            VOWEL_SIGN_SOUNAP => Ok(MeeteiMayek::VowelSignSounap),
-            VOWEL_SIGN_UNAP => Ok(MeeteiMayek::VowelSignUnap),
-            VOWEL_SIGN_CHEINAP => Ok(MeeteiMayek::VowelSignCheinap),
-            VOWEL_SIGN_NUNG => Ok(MeeteiMayek::VowelSignNung),
-            CHEIKHEI => Ok(MeeteiMayek::Cheikhei),
-            LUM_IYEK => Ok(MeeteiMayek::LumIyek),
-            APUN_IYEK => Ok(MeeteiMayek::ApunIyek),
-            DIGIT_ZERO => Ok(MeeteiMayek::DigitZero),
-            DIGIT_ONE => Ok(MeeteiMayek::DigitOne),
-            DIGIT_TWO => Ok(MeeteiMayek::DigitTwo),
-            DIGIT_THREE => Ok(MeeteiMayek::DigitThree),
-            DIGIT_FOUR => Ok(MeeteiMayek::DigitFour),
-            DIGIT_FIVE => Ok(MeeteiMayek::DigitFive),
-            DIGIT_SIX => Ok(MeeteiMayek::DigitSix),
-            DIGIT_SEVEN => Ok(MeeteiMayek::DigitSeven),
-            DIGIT_EIGHT => Ok(MeeteiMayek::DigitEight),
-            DIGIT_NINE => Ok(MeeteiMayek::DigitNine),
+            'ꯀ' => Ok(MeeteiMayek::LetterKok),
+            'ꯁ' => Ok(MeeteiMayek::LetterSam),
+            'ꯂ' => Ok(MeeteiMayek::LetterLai),
+            'ꯃ' => Ok(MeeteiMayek::LetterMit),
+            'ꯄ' => Ok(MeeteiMayek::LetterPa),
+            'ꯅ' => Ok(MeeteiMayek::LetterNa),
+            'ꯆ' => Ok(MeeteiMayek::LetterChil),
+            'ꯇ' => Ok(MeeteiMayek::LetterTil),
+            'ꯈ' => Ok(MeeteiMayek::LetterKhou),
+            'ꯉ' => Ok(MeeteiMayek::LetterNgou),
+            'ꯊ' => Ok(MeeteiMayek::LetterThou),
+            'ꯋ' => Ok(MeeteiMayek::LetterWai),
+            'ꯌ' => Ok(MeeteiMayek::LetterYang),
+            'ꯍ' => Ok(MeeteiMayek::LetterHuk),
+            'ꯎ' => Ok(MeeteiMayek::LetterUn),
+            'ꯏ' => Ok(MeeteiMayek::LetterI),
+            'ꯐ' => Ok(MeeteiMayek::LetterPham),
+            'ꯑ' => Ok(MeeteiMayek::LetterAtiya),
+            'ꯒ' => Ok(MeeteiMayek::LetterGok),
+            'ꯓ' => Ok(MeeteiMayek::LetterJham),
+            'ꯔ' => Ok(MeeteiMayek::LetterRai),
+            'ꯕ' => Ok(MeeteiMayek::LetterBa),
+            'ꯖ' => Ok(MeeteiMayek::LetterJil),
+            'ꯗ' => Ok(MeeteiMayek::LetterDil),
+            'ꯘ' => Ok(MeeteiMayek::LetterGhou),
+            'ꯙ' => Ok(MeeteiMayek::LetterDhou),
+            'ꯚ' => Ok(MeeteiMayek::LetterBham),
+            'ꯛ' => Ok(MeeteiMayek::LetterKokLonsum),
+            'ꯜ' => Ok(MeeteiMayek::LetterLaiLonsum),
+            'ꯝ' => Ok(MeeteiMayek::LetterMitLonsum),
+            'ꯞ' => Ok(MeeteiMayek::LetterPaLonsum),
+            'ꯟ' => Ok(MeeteiMayek::LetterNaLonsum),
+            'ꯠ' => Ok(MeeteiMayek::LetterTilLonsum),
+            'ꯡ' => Ok(MeeteiMayek::LetterNgouLonsum),
+            'ꯢ' => Ok(MeeteiMayek::LetterILonsum),
+            'ꯣ' => Ok(MeeteiMayek::VowelSignOnap),
+            'ꯤ' => Ok(MeeteiMayek::VowelSignInap),
+            'ꯥ' => Ok(MeeteiMayek::VowelSignAnap),
+            'ꯦ' => Ok(MeeteiMayek::VowelSignYenap),
+            'ꯧ' => Ok(MeeteiMayek::VowelSignSounap),
+            'ꯨ' => Ok(MeeteiMayek::VowelSignUnap),
+            'ꯩ' => Ok(MeeteiMayek::VowelSignCheinap),
+            'ꯪ' => Ok(MeeteiMayek::VowelSignNung),
+            '꯫' => Ok(MeeteiMayek::Cheikhei),
+            '꯬' => Ok(MeeteiMayek::LumIyek),
+            '꯭' => Ok(MeeteiMayek::ApunIyek),
+            '꯰' => Ok(MeeteiMayek::DigitZero),
+            '꯱' => Ok(MeeteiMayek::DigitOne),
+            '꯲' => Ok(MeeteiMayek::DigitTwo),
+            '꯳' => Ok(MeeteiMayek::DigitThree),
+            '꯴' => Ok(MeeteiMayek::DigitFour),
+            '꯵' => Ok(MeeteiMayek::DigitFive),
+            '꯶' => Ok(MeeteiMayek::DigitSix),
+            '꯷' => Ok(MeeteiMayek::DigitSeven),
+            '꯸' => Ok(MeeteiMayek::DigitEight),
+            '꯹' => Ok(MeeteiMayek::DigitNine),
             _ => Err(()),
         }
     }

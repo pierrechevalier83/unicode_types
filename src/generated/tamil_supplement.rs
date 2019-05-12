@@ -1,106 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11fc0}: '𑿀'
-    pub const TAMIL_FRACTION_ONE_THREE_DASH_HUNDRED_DASH_AND_DASH_TWENTIETH: char = '𑿀';
-    /// \u{11fc1}: '𑿁'
-    pub const TAMIL_FRACTION_ONE_ONE_DASH_HUNDRED_DASH_AND_DASH_SIXTIETH: char = '𑿁';
-    /// \u{11fc2}: '𑿂'
-    pub const TAMIL_FRACTION_ONE_EIGHTIETH: char = '𑿂';
-    /// \u{11fc3}: '𑿃'
-    pub const TAMIL_FRACTION_ONE_SIXTY_DASH_FOURTH: char = '𑿃';
-    /// \u{11fc4}: '𑿄'
-    pub const TAMIL_FRACTION_ONE_FORTIETH: char = '𑿄';
-    /// \u{11fc5}: '𑿅'
-    pub const TAMIL_FRACTION_ONE_THIRTY_DASH_SECOND: char = '𑿅';
-    /// \u{11fc6}: '𑿆'
-    pub const TAMIL_FRACTION_THREE_EIGHTIETHS: char = '𑿆';
-    /// \u{11fc7}: '𑿇'
-    pub const TAMIL_FRACTION_THREE_SIXTY_DASH_FOURTHS: char = '𑿇';
-    /// \u{11fc8}: '𑿈'
-    pub const TAMIL_FRACTION_ONE_TWENTIETH: char = '𑿈';
-    /// \u{11fc9}: '𑿉'
-    pub const TAMIL_FRACTION_ONE_SIXTEENTH_DASH_1: char = '𑿉';
-    /// \u{11fca}: '𑿊'
-    pub const TAMIL_FRACTION_ONE_SIXTEENTH_DASH_2: char = '𑿊';
-    /// \u{11fcb}: '𑿋'
-    pub const TAMIL_FRACTION_ONE_TENTH: char = '𑿋';
-    /// \u{11fcc}: '𑿌'
-    pub const TAMIL_FRACTION_ONE_EIGHTH: char = '𑿌';
-    /// \u{11fcd}: '𑿍'
-    pub const TAMIL_FRACTION_THREE_TWENTIETHS: char = '𑿍';
-    /// \u{11fce}: '𑿎'
-    pub const TAMIL_FRACTION_THREE_SIXTEENTHS: char = '𑿎';
-    /// \u{11fcf}: '𑿏'
-    pub const TAMIL_FRACTION_ONE_FIFTH: char = '𑿏';
-    /// \u{11fd0}: '𑿐'
-    pub const TAMIL_FRACTION_ONE_QUARTER: char = '𑿐';
-    /// \u{11fd1}: '𑿑'
-    pub const TAMIL_FRACTION_ONE_HALF_DASH_1: char = '𑿑';
-    /// \u{11fd2}: '𑿒'
-    pub const TAMIL_FRACTION_ONE_HALF_DASH_2: char = '𑿒';
-    /// \u{11fd3}: '𑿓'
-    pub const TAMIL_FRACTION_THREE_QUARTERS: char = '𑿓';
-    /// \u{11fd4}: '𑿔'
-    pub const TAMIL_FRACTION_DOWNSCALING_FACTOR_KIIZH: char = '𑿔';
-    /// \u{11fd5}: '𑿕'
-    pub const TAMIL_SIGN_NEL: char = '𑿕';
-    /// \u{11fd6}: '𑿖'
-    pub const TAMIL_SIGN_CEVITU: char = '𑿖';
-    /// \u{11fd7}: '𑿗'
-    pub const TAMIL_SIGN_AAZHAAKKU: char = '𑿗';
-    /// \u{11fd8}: '𑿘'
-    pub const TAMIL_SIGN_UZHAKKU: char = '𑿘';
-    /// \u{11fd9}: '𑿙'
-    pub const TAMIL_SIGN_MUUVUZHAKKU: char = '𑿙';
-    /// \u{11fda}: '𑿚'
-    pub const TAMIL_SIGN_KURUNI: char = '𑿚';
-    /// \u{11fdb}: '𑿛'
-    pub const TAMIL_SIGN_PATHAKKU: char = '𑿛';
-    /// \u{11fdc}: '𑿜'
-    pub const TAMIL_SIGN_MUKKURUNI: char = '𑿜';
-    /// \u{11fdd}: '𑿝'
-    pub const TAMIL_SIGN_KAACU: char = '𑿝';
-    /// \u{11fde}: '𑿞'
-    pub const TAMIL_SIGN_PANAM: char = '𑿞';
-    /// \u{11fdf}: '𑿟'
-    pub const TAMIL_SIGN_PON: char = '𑿟';
-    /// \u{11fe0}: '𑿠'
-    pub const TAMIL_SIGN_VARAAKAN: char = '𑿠';
-    /// \u{11fe1}: '𑿡'
-    pub const TAMIL_SIGN_PAARAM: char = '𑿡';
-    /// \u{11fe2}: '𑿢'
-    pub const TAMIL_SIGN_KUZHI: char = '𑿢';
-    /// \u{11fe3}: '𑿣'
-    pub const TAMIL_SIGN_VELI: char = '𑿣';
-    /// \u{11fe4}: '𑿤'
-    pub const TAMIL_WET_CULTIVATION_SIGN: char = '𑿤';
-    /// \u{11fe5}: '𑿥'
-    pub const TAMIL_DRY_CULTIVATION_SIGN: char = '𑿥';
-    /// \u{11fe6}: '𑿦'
-    pub const TAMIL_LAND_SIGN: char = '𑿦';
-    /// \u{11fe7}: '𑿧'
-    pub const TAMIL_SALT_PAN_SIGN: char = '𑿧';
-    /// \u{11fe8}: '𑿨'
-    pub const TAMIL_TRADITIONAL_CREDIT_SIGN: char = '𑿨';
-    /// \u{11fe9}: '𑿩'
-    pub const TAMIL_TRADITIONAL_NUMBER_SIGN: char = '𑿩';
-    /// \u{11fea}: '𑿪'
-    pub const TAMIL_CURRENT_SIGN: char = '𑿪';
-    /// \u{11feb}: '𑿫'
-    pub const TAMIL_AND_ODD_SIGN: char = '𑿫';
-    /// \u{11fec}: '𑿬'
-    pub const TAMIL_SPENT_SIGN: char = '𑿬';
-    /// \u{11fed}: '𑿭'
-    pub const TAMIL_TOTAL_SIGN: char = '𑿭';
-    /// \u{11fee}: '𑿮'
-    pub const TAMIL_IN_POSSESSION_SIGN: char = '𑿮';
-    /// \u{11fef}: '𑿯'
-    pub const TAMIL_STARTING_FROM_SIGN: char = '𑿯';
-    /// \u{11ff0}: '𑿰'
-    pub const TAMIL_SIGN_MUTHALIYA: char = '𑿰';
-    /// \u{11ff1}: '𑿱'
-    pub const TAMIL_SIGN_VAKAIYARAA: char = '𑿱';
-}
 
 /// An enum to represent all characters in the TamilSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -209,58 +106,57 @@ pub enum TamilSupplement {
 
 impl Into<char> for TamilSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            TamilSupplement::TamilFractionOneThreeDashHundredDashAndDashTwentieth => TAMIL_FRACTION_ONE_THREE_DASH_HUNDRED_DASH_AND_DASH_TWENTIETH,
-            TamilSupplement::TamilFractionOneOneDashHundredDashAndDashSixtieth => TAMIL_FRACTION_ONE_ONE_DASH_HUNDRED_DASH_AND_DASH_SIXTIETH,
-            TamilSupplement::TamilFractionOneEightieth => TAMIL_FRACTION_ONE_EIGHTIETH,
-            TamilSupplement::TamilFractionOneSixtyDashFourth => TAMIL_FRACTION_ONE_SIXTY_DASH_FOURTH,
-            TamilSupplement::TamilFractionOneFortieth => TAMIL_FRACTION_ONE_FORTIETH,
-            TamilSupplement::TamilFractionOneThirtyDashSecond => TAMIL_FRACTION_ONE_THIRTY_DASH_SECOND,
-            TamilSupplement::TamilFractionThreeEightieths => TAMIL_FRACTION_THREE_EIGHTIETHS,
-            TamilSupplement::TamilFractionThreeSixtyDashFourths => TAMIL_FRACTION_THREE_SIXTY_DASH_FOURTHS,
-            TamilSupplement::TamilFractionOneTwentieth => TAMIL_FRACTION_ONE_TWENTIETH,
-            TamilSupplement::TamilFractionOneSixteenthDash1 => TAMIL_FRACTION_ONE_SIXTEENTH_DASH_1,
-            TamilSupplement::TamilFractionOneSixteenthDash2 => TAMIL_FRACTION_ONE_SIXTEENTH_DASH_2,
-            TamilSupplement::TamilFractionOneTenth => TAMIL_FRACTION_ONE_TENTH,
-            TamilSupplement::TamilFractionOneEighth => TAMIL_FRACTION_ONE_EIGHTH,
-            TamilSupplement::TamilFractionThreeTwentieths => TAMIL_FRACTION_THREE_TWENTIETHS,
-            TamilSupplement::TamilFractionThreeSixteenths => TAMIL_FRACTION_THREE_SIXTEENTHS,
-            TamilSupplement::TamilFractionOneFifth => TAMIL_FRACTION_ONE_FIFTH,
-            TamilSupplement::TamilFractionOneQuarter => TAMIL_FRACTION_ONE_QUARTER,
-            TamilSupplement::TamilFractionOneHalfDash1 => TAMIL_FRACTION_ONE_HALF_DASH_1,
-            TamilSupplement::TamilFractionOneHalfDash2 => TAMIL_FRACTION_ONE_HALF_DASH_2,
-            TamilSupplement::TamilFractionThreeQuarters => TAMIL_FRACTION_THREE_QUARTERS,
-            TamilSupplement::TamilFractionDownscalingFactorKiizh => TAMIL_FRACTION_DOWNSCALING_FACTOR_KIIZH,
-            TamilSupplement::TamilSignNel => TAMIL_SIGN_NEL,
-            TamilSupplement::TamilSignCevitu => TAMIL_SIGN_CEVITU,
-            TamilSupplement::TamilSignAazhaakku => TAMIL_SIGN_AAZHAAKKU,
-            TamilSupplement::TamilSignUzhakku => TAMIL_SIGN_UZHAKKU,
-            TamilSupplement::TamilSignMuuvuzhakku => TAMIL_SIGN_MUUVUZHAKKU,
-            TamilSupplement::TamilSignKuruni => TAMIL_SIGN_KURUNI,
-            TamilSupplement::TamilSignPathakku => TAMIL_SIGN_PATHAKKU,
-            TamilSupplement::TamilSignMukkuruni => TAMIL_SIGN_MUKKURUNI,
-            TamilSupplement::TamilSignKaacu => TAMIL_SIGN_KAACU,
-            TamilSupplement::TamilSignPanam => TAMIL_SIGN_PANAM,
-            TamilSupplement::TamilSignPon => TAMIL_SIGN_PON,
-            TamilSupplement::TamilSignVaraakan => TAMIL_SIGN_VARAAKAN,
-            TamilSupplement::TamilSignPaaram => TAMIL_SIGN_PAARAM,
-            TamilSupplement::TamilSignKuzhi => TAMIL_SIGN_KUZHI,
-            TamilSupplement::TamilSignVeli => TAMIL_SIGN_VELI,
-            TamilSupplement::TamilWetCultivationSign => TAMIL_WET_CULTIVATION_SIGN,
-            TamilSupplement::TamilDryCultivationSign => TAMIL_DRY_CULTIVATION_SIGN,
-            TamilSupplement::TamilLandSign => TAMIL_LAND_SIGN,
-            TamilSupplement::TamilSaltPanSign => TAMIL_SALT_PAN_SIGN,
-            TamilSupplement::TamilTraditionalCreditSign => TAMIL_TRADITIONAL_CREDIT_SIGN,
-            TamilSupplement::TamilTraditionalNumberSign => TAMIL_TRADITIONAL_NUMBER_SIGN,
-            TamilSupplement::TamilCurrentSign => TAMIL_CURRENT_SIGN,
-            TamilSupplement::TamilAndOddSign => TAMIL_AND_ODD_SIGN,
-            TamilSupplement::TamilSpentSign => TAMIL_SPENT_SIGN,
-            TamilSupplement::TamilTotalSign => TAMIL_TOTAL_SIGN,
-            TamilSupplement::TamilInPossessionSign => TAMIL_IN_POSSESSION_SIGN,
-            TamilSupplement::TamilStartingFromSign => TAMIL_STARTING_FROM_SIGN,
-            TamilSupplement::TamilSignMuthaliya => TAMIL_SIGN_MUTHALIYA,
-            TamilSupplement::TamilSignVakaiyaraa => TAMIL_SIGN_VAKAIYARAA,
+            TamilSupplement::TamilFractionOneThreeDashHundredDashAndDashTwentieth => '𑿀',
+            TamilSupplement::TamilFractionOneOneDashHundredDashAndDashSixtieth => '𑿁',
+            TamilSupplement::TamilFractionOneEightieth => '𑿂',
+            TamilSupplement::TamilFractionOneSixtyDashFourth => '𑿃',
+            TamilSupplement::TamilFractionOneFortieth => '𑿄',
+            TamilSupplement::TamilFractionOneThirtyDashSecond => '𑿅',
+            TamilSupplement::TamilFractionThreeEightieths => '𑿆',
+            TamilSupplement::TamilFractionThreeSixtyDashFourths => '𑿇',
+            TamilSupplement::TamilFractionOneTwentieth => '𑿈',
+            TamilSupplement::TamilFractionOneSixteenthDash1 => '𑿉',
+            TamilSupplement::TamilFractionOneSixteenthDash2 => '𑿊',
+            TamilSupplement::TamilFractionOneTenth => '𑿋',
+            TamilSupplement::TamilFractionOneEighth => '𑿌',
+            TamilSupplement::TamilFractionThreeTwentieths => '𑿍',
+            TamilSupplement::TamilFractionThreeSixteenths => '𑿎',
+            TamilSupplement::TamilFractionOneFifth => '𑿏',
+            TamilSupplement::TamilFractionOneQuarter => '𑿐',
+            TamilSupplement::TamilFractionOneHalfDash1 => '𑿑',
+            TamilSupplement::TamilFractionOneHalfDash2 => '𑿒',
+            TamilSupplement::TamilFractionThreeQuarters => '𑿓',
+            TamilSupplement::TamilFractionDownscalingFactorKiizh => '𑿔',
+            TamilSupplement::TamilSignNel => '𑿕',
+            TamilSupplement::TamilSignCevitu => '𑿖',
+            TamilSupplement::TamilSignAazhaakku => '𑿗',
+            TamilSupplement::TamilSignUzhakku => '𑿘',
+            TamilSupplement::TamilSignMuuvuzhakku => '𑿙',
+            TamilSupplement::TamilSignKuruni => '𑿚',
+            TamilSupplement::TamilSignPathakku => '𑿛',
+            TamilSupplement::TamilSignMukkuruni => '𑿜',
+            TamilSupplement::TamilSignKaacu => '𑿝',
+            TamilSupplement::TamilSignPanam => '𑿞',
+            TamilSupplement::TamilSignPon => '𑿟',
+            TamilSupplement::TamilSignVaraakan => '𑿠',
+            TamilSupplement::TamilSignPaaram => '𑿡',
+            TamilSupplement::TamilSignKuzhi => '𑿢',
+            TamilSupplement::TamilSignVeli => '𑿣',
+            TamilSupplement::TamilWetCultivationSign => '𑿤',
+            TamilSupplement::TamilDryCultivationSign => '𑿥',
+            TamilSupplement::TamilLandSign => '𑿦',
+            TamilSupplement::TamilSaltPanSign => '𑿧',
+            TamilSupplement::TamilTraditionalCreditSign => '𑿨',
+            TamilSupplement::TamilTraditionalNumberSign => '𑿩',
+            TamilSupplement::TamilCurrentSign => '𑿪',
+            TamilSupplement::TamilAndOddSign => '𑿫',
+            TamilSupplement::TamilSpentSign => '𑿬',
+            TamilSupplement::TamilTotalSign => '𑿭',
+            TamilSupplement::TamilInPossessionSign => '𑿮',
+            TamilSupplement::TamilStartingFromSign => '𑿯',
+            TamilSupplement::TamilSignMuthaliya => '𑿰',
+            TamilSupplement::TamilSignVakaiyaraa => '𑿱',
         }
     }
 }
@@ -268,58 +164,57 @@ impl Into<char> for TamilSupplement {
 impl std::convert::TryFrom<char> for TamilSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            TAMIL_FRACTION_ONE_THREE_DASH_HUNDRED_DASH_AND_DASH_TWENTIETH => Ok(TamilSupplement::TamilFractionOneThreeDashHundredDashAndDashTwentieth),
-            TAMIL_FRACTION_ONE_ONE_DASH_HUNDRED_DASH_AND_DASH_SIXTIETH => Ok(TamilSupplement::TamilFractionOneOneDashHundredDashAndDashSixtieth),
-            TAMIL_FRACTION_ONE_EIGHTIETH => Ok(TamilSupplement::TamilFractionOneEightieth),
-            TAMIL_FRACTION_ONE_SIXTY_DASH_FOURTH => Ok(TamilSupplement::TamilFractionOneSixtyDashFourth),
-            TAMIL_FRACTION_ONE_FORTIETH => Ok(TamilSupplement::TamilFractionOneFortieth),
-            TAMIL_FRACTION_ONE_THIRTY_DASH_SECOND => Ok(TamilSupplement::TamilFractionOneThirtyDashSecond),
-            TAMIL_FRACTION_THREE_EIGHTIETHS => Ok(TamilSupplement::TamilFractionThreeEightieths),
-            TAMIL_FRACTION_THREE_SIXTY_DASH_FOURTHS => Ok(TamilSupplement::TamilFractionThreeSixtyDashFourths),
-            TAMIL_FRACTION_ONE_TWENTIETH => Ok(TamilSupplement::TamilFractionOneTwentieth),
-            TAMIL_FRACTION_ONE_SIXTEENTH_DASH_1 => Ok(TamilSupplement::TamilFractionOneSixteenthDash1),
-            TAMIL_FRACTION_ONE_SIXTEENTH_DASH_2 => Ok(TamilSupplement::TamilFractionOneSixteenthDash2),
-            TAMIL_FRACTION_ONE_TENTH => Ok(TamilSupplement::TamilFractionOneTenth),
-            TAMIL_FRACTION_ONE_EIGHTH => Ok(TamilSupplement::TamilFractionOneEighth),
-            TAMIL_FRACTION_THREE_TWENTIETHS => Ok(TamilSupplement::TamilFractionThreeTwentieths),
-            TAMIL_FRACTION_THREE_SIXTEENTHS => Ok(TamilSupplement::TamilFractionThreeSixteenths),
-            TAMIL_FRACTION_ONE_FIFTH => Ok(TamilSupplement::TamilFractionOneFifth),
-            TAMIL_FRACTION_ONE_QUARTER => Ok(TamilSupplement::TamilFractionOneQuarter),
-            TAMIL_FRACTION_ONE_HALF_DASH_1 => Ok(TamilSupplement::TamilFractionOneHalfDash1),
-            TAMIL_FRACTION_ONE_HALF_DASH_2 => Ok(TamilSupplement::TamilFractionOneHalfDash2),
-            TAMIL_FRACTION_THREE_QUARTERS => Ok(TamilSupplement::TamilFractionThreeQuarters),
-            TAMIL_FRACTION_DOWNSCALING_FACTOR_KIIZH => Ok(TamilSupplement::TamilFractionDownscalingFactorKiizh),
-            TAMIL_SIGN_NEL => Ok(TamilSupplement::TamilSignNel),
-            TAMIL_SIGN_CEVITU => Ok(TamilSupplement::TamilSignCevitu),
-            TAMIL_SIGN_AAZHAAKKU => Ok(TamilSupplement::TamilSignAazhaakku),
-            TAMIL_SIGN_UZHAKKU => Ok(TamilSupplement::TamilSignUzhakku),
-            TAMIL_SIGN_MUUVUZHAKKU => Ok(TamilSupplement::TamilSignMuuvuzhakku),
-            TAMIL_SIGN_KURUNI => Ok(TamilSupplement::TamilSignKuruni),
-            TAMIL_SIGN_PATHAKKU => Ok(TamilSupplement::TamilSignPathakku),
-            TAMIL_SIGN_MUKKURUNI => Ok(TamilSupplement::TamilSignMukkuruni),
-            TAMIL_SIGN_KAACU => Ok(TamilSupplement::TamilSignKaacu),
-            TAMIL_SIGN_PANAM => Ok(TamilSupplement::TamilSignPanam),
-            TAMIL_SIGN_PON => Ok(TamilSupplement::TamilSignPon),
-            TAMIL_SIGN_VARAAKAN => Ok(TamilSupplement::TamilSignVaraakan),
-            TAMIL_SIGN_PAARAM => Ok(TamilSupplement::TamilSignPaaram),
-            TAMIL_SIGN_KUZHI => Ok(TamilSupplement::TamilSignKuzhi),
-            TAMIL_SIGN_VELI => Ok(TamilSupplement::TamilSignVeli),
-            TAMIL_WET_CULTIVATION_SIGN => Ok(TamilSupplement::TamilWetCultivationSign),
-            TAMIL_DRY_CULTIVATION_SIGN => Ok(TamilSupplement::TamilDryCultivationSign),
-            TAMIL_LAND_SIGN => Ok(TamilSupplement::TamilLandSign),
-            TAMIL_SALT_PAN_SIGN => Ok(TamilSupplement::TamilSaltPanSign),
-            TAMIL_TRADITIONAL_CREDIT_SIGN => Ok(TamilSupplement::TamilTraditionalCreditSign),
-            TAMIL_TRADITIONAL_NUMBER_SIGN => Ok(TamilSupplement::TamilTraditionalNumberSign),
-            TAMIL_CURRENT_SIGN => Ok(TamilSupplement::TamilCurrentSign),
-            TAMIL_AND_ODD_SIGN => Ok(TamilSupplement::TamilAndOddSign),
-            TAMIL_SPENT_SIGN => Ok(TamilSupplement::TamilSpentSign),
-            TAMIL_TOTAL_SIGN => Ok(TamilSupplement::TamilTotalSign),
-            TAMIL_IN_POSSESSION_SIGN => Ok(TamilSupplement::TamilInPossessionSign),
-            TAMIL_STARTING_FROM_SIGN => Ok(TamilSupplement::TamilStartingFromSign),
-            TAMIL_SIGN_MUTHALIYA => Ok(TamilSupplement::TamilSignMuthaliya),
-            TAMIL_SIGN_VAKAIYARAA => Ok(TamilSupplement::TamilSignVakaiyaraa),
+            '𑿀' => Ok(TamilSupplement::TamilFractionOneThreeDashHundredDashAndDashTwentieth),
+            '𑿁' => Ok(TamilSupplement::TamilFractionOneOneDashHundredDashAndDashSixtieth),
+            '𑿂' => Ok(TamilSupplement::TamilFractionOneEightieth),
+            '𑿃' => Ok(TamilSupplement::TamilFractionOneSixtyDashFourth),
+            '𑿄' => Ok(TamilSupplement::TamilFractionOneFortieth),
+            '𑿅' => Ok(TamilSupplement::TamilFractionOneThirtyDashSecond),
+            '𑿆' => Ok(TamilSupplement::TamilFractionThreeEightieths),
+            '𑿇' => Ok(TamilSupplement::TamilFractionThreeSixtyDashFourths),
+            '𑿈' => Ok(TamilSupplement::TamilFractionOneTwentieth),
+            '𑿉' => Ok(TamilSupplement::TamilFractionOneSixteenthDash1),
+            '𑿊' => Ok(TamilSupplement::TamilFractionOneSixteenthDash2),
+            '𑿋' => Ok(TamilSupplement::TamilFractionOneTenth),
+            '𑿌' => Ok(TamilSupplement::TamilFractionOneEighth),
+            '𑿍' => Ok(TamilSupplement::TamilFractionThreeTwentieths),
+            '𑿎' => Ok(TamilSupplement::TamilFractionThreeSixteenths),
+            '𑿏' => Ok(TamilSupplement::TamilFractionOneFifth),
+            '𑿐' => Ok(TamilSupplement::TamilFractionOneQuarter),
+            '𑿑' => Ok(TamilSupplement::TamilFractionOneHalfDash1),
+            '𑿒' => Ok(TamilSupplement::TamilFractionOneHalfDash2),
+            '𑿓' => Ok(TamilSupplement::TamilFractionThreeQuarters),
+            '𑿔' => Ok(TamilSupplement::TamilFractionDownscalingFactorKiizh),
+            '𑿕' => Ok(TamilSupplement::TamilSignNel),
+            '𑿖' => Ok(TamilSupplement::TamilSignCevitu),
+            '𑿗' => Ok(TamilSupplement::TamilSignAazhaakku),
+            '𑿘' => Ok(TamilSupplement::TamilSignUzhakku),
+            '𑿙' => Ok(TamilSupplement::TamilSignMuuvuzhakku),
+            '𑿚' => Ok(TamilSupplement::TamilSignKuruni),
+            '𑿛' => Ok(TamilSupplement::TamilSignPathakku),
+            '𑿜' => Ok(TamilSupplement::TamilSignMukkuruni),
+            '𑿝' => Ok(TamilSupplement::TamilSignKaacu),
+            '𑿞' => Ok(TamilSupplement::TamilSignPanam),
+            '𑿟' => Ok(TamilSupplement::TamilSignPon),
+            '𑿠' => Ok(TamilSupplement::TamilSignVaraakan),
+            '𑿡' => Ok(TamilSupplement::TamilSignPaaram),
+            '𑿢' => Ok(TamilSupplement::TamilSignKuzhi),
+            '𑿣' => Ok(TamilSupplement::TamilSignVeli),
+            '𑿤' => Ok(TamilSupplement::TamilWetCultivationSign),
+            '𑿥' => Ok(TamilSupplement::TamilDryCultivationSign),
+            '𑿦' => Ok(TamilSupplement::TamilLandSign),
+            '𑿧' => Ok(TamilSupplement::TamilSaltPanSign),
+            '𑿨' => Ok(TamilSupplement::TamilTraditionalCreditSign),
+            '𑿩' => Ok(TamilSupplement::TamilTraditionalNumberSign),
+            '𑿪' => Ok(TamilSupplement::TamilCurrentSign),
+            '𑿫' => Ok(TamilSupplement::TamilAndOddSign),
+            '𑿬' => Ok(TamilSupplement::TamilSpentSign),
+            '𑿭' => Ok(TamilSupplement::TamilTotalSign),
+            '𑿮' => Ok(TamilSupplement::TamilInPossessionSign),
+            '𑿯' => Ok(TamilSupplement::TamilStartingFromSign),
+            '𑿰' => Ok(TamilSupplement::TamilSignMuthaliya),
+            '𑿱' => Ok(TamilSupplement::TamilSignVakaiyaraa),
             _ => Err(()),
         }
     }

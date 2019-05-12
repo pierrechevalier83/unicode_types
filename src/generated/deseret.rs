@@ -1,164 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10400}: '𐐀'
-    pub const CAPITAL_LETTER_LONG_I: char = '𐐀';
-    /// \u{10401}: '𐐁'
-    pub const CAPITAL_LETTER_LONG_E: char = '𐐁';
-    /// \u{10402}: '𐐂'
-    pub const CAPITAL_LETTER_LONG_A: char = '𐐂';
-    /// \u{10403}: '𐐃'
-    pub const CAPITAL_LETTER_LONG_AH: char = '𐐃';
-    /// \u{10404}: '𐐄'
-    pub const CAPITAL_LETTER_LONG_O: char = '𐐄';
-    /// \u{10405}: '𐐅'
-    pub const CAPITAL_LETTER_LONG_OO: char = '𐐅';
-    /// \u{10406}: '𐐆'
-    pub const CAPITAL_LETTER_SHORT_I: char = '𐐆';
-    /// \u{10407}: '𐐇'
-    pub const CAPITAL_LETTER_SHORT_E: char = '𐐇';
-    /// \u{10408}: '𐐈'
-    pub const CAPITAL_LETTER_SHORT_A: char = '𐐈';
-    /// \u{10409}: '𐐉'
-    pub const CAPITAL_LETTER_SHORT_AH: char = '𐐉';
-    /// \u{1040a}: '𐐊'
-    pub const CAPITAL_LETTER_SHORT_O: char = '𐐊';
-    /// \u{1040b}: '𐐋'
-    pub const CAPITAL_LETTER_SHORT_OO: char = '𐐋';
-    /// \u{1040c}: '𐐌'
-    pub const CAPITAL_LETTER_AY: char = '𐐌';
-    /// \u{1040d}: '𐐍'
-    pub const CAPITAL_LETTER_OW: char = '𐐍';
-    /// \u{1040e}: '𐐎'
-    pub const CAPITAL_LETTER_WU: char = '𐐎';
-    /// \u{1040f}: '𐐏'
-    pub const CAPITAL_LETTER_YEE: char = '𐐏';
-    /// \u{10410}: '𐐐'
-    pub const CAPITAL_LETTER_H: char = '𐐐';
-    /// \u{10411}: '𐐑'
-    pub const CAPITAL_LETTER_PEE: char = '𐐑';
-    /// \u{10412}: '𐐒'
-    pub const CAPITAL_LETTER_BEE: char = '𐐒';
-    /// \u{10413}: '𐐓'
-    pub const CAPITAL_LETTER_TEE: char = '𐐓';
-    /// \u{10414}: '𐐔'
-    pub const CAPITAL_LETTER_DEE: char = '𐐔';
-    /// \u{10415}: '𐐕'
-    pub const CAPITAL_LETTER_CHEE: char = '𐐕';
-    /// \u{10416}: '𐐖'
-    pub const CAPITAL_LETTER_JEE: char = '𐐖';
-    /// \u{10417}: '𐐗'
-    pub const CAPITAL_LETTER_KAY: char = '𐐗';
-    /// \u{10418}: '𐐘'
-    pub const CAPITAL_LETTER_GAY: char = '𐐘';
-    /// \u{10419}: '𐐙'
-    pub const CAPITAL_LETTER_EF: char = '𐐙';
-    /// \u{1041a}: '𐐚'
-    pub const CAPITAL_LETTER_VEE: char = '𐐚';
-    /// \u{1041b}: '𐐛'
-    pub const CAPITAL_LETTER_ETH: char = '𐐛';
-    /// \u{1041c}: '𐐜'
-    pub const CAPITAL_LETTER_THEE: char = '𐐜';
-    /// \u{1041d}: '𐐝'
-    pub const CAPITAL_LETTER_ES: char = '𐐝';
-    /// \u{1041e}: '𐐞'
-    pub const CAPITAL_LETTER_ZEE: char = '𐐞';
-    /// \u{1041f}: '𐐟'
-    pub const CAPITAL_LETTER_ESH: char = '𐐟';
-    /// \u{10420}: '𐐠'
-    pub const CAPITAL_LETTER_ZHEE: char = '𐐠';
-    /// \u{10421}: '𐐡'
-    pub const CAPITAL_LETTER_ER: char = '𐐡';
-    /// \u{10422}: '𐐢'
-    pub const CAPITAL_LETTER_EL: char = '𐐢';
-    /// \u{10423}: '𐐣'
-    pub const CAPITAL_LETTER_EM: char = '𐐣';
-    /// \u{10424}: '𐐤'
-    pub const CAPITAL_LETTER_EN: char = '𐐤';
-    /// \u{10425}: '𐐥'
-    pub const CAPITAL_LETTER_ENG: char = '𐐥';
-    /// \u{10426}: '𐐦'
-    pub const CAPITAL_LETTER_OI: char = '𐐦';
-    /// \u{10427}: '𐐧'
-    pub const CAPITAL_LETTER_EW: char = '𐐧';
-    /// \u{10428}: '𐐨'
-    pub const SMALL_LETTER_LONG_I: char = '𐐨';
-    /// \u{10429}: '𐐩'
-    pub const SMALL_LETTER_LONG_E: char = '𐐩';
-    /// \u{1042a}: '𐐪'
-    pub const SMALL_LETTER_LONG_A: char = '𐐪';
-    /// \u{1042b}: '𐐫'
-    pub const SMALL_LETTER_LONG_AH: char = '𐐫';
-    /// \u{1042c}: '𐐬'
-    pub const SMALL_LETTER_LONG_O: char = '𐐬';
-    /// \u{1042d}: '𐐭'
-    pub const SMALL_LETTER_LONG_OO: char = '𐐭';
-    /// \u{1042e}: '𐐮'
-    pub const SMALL_LETTER_SHORT_I: char = '𐐮';
-    /// \u{1042f}: '𐐯'
-    pub const SMALL_LETTER_SHORT_E: char = '𐐯';
-    /// \u{10430}: '𐐰'
-    pub const SMALL_LETTER_SHORT_A: char = '𐐰';
-    /// \u{10431}: '𐐱'
-    pub const SMALL_LETTER_SHORT_AH: char = '𐐱';
-    /// \u{10432}: '𐐲'
-    pub const SMALL_LETTER_SHORT_O: char = '𐐲';
-    /// \u{10433}: '𐐳'
-    pub const SMALL_LETTER_SHORT_OO: char = '𐐳';
-    /// \u{10434}: '𐐴'
-    pub const SMALL_LETTER_AY: char = '𐐴';
-    /// \u{10435}: '𐐵'
-    pub const SMALL_LETTER_OW: char = '𐐵';
-    /// \u{10436}: '𐐶'
-    pub const SMALL_LETTER_WU: char = '𐐶';
-    /// \u{10437}: '𐐷'
-    pub const SMALL_LETTER_YEE: char = '𐐷';
-    /// \u{10438}: '𐐸'
-    pub const SMALL_LETTER_H: char = '𐐸';
-    /// \u{10439}: '𐐹'
-    pub const SMALL_LETTER_PEE: char = '𐐹';
-    /// \u{1043a}: '𐐺'
-    pub const SMALL_LETTER_BEE: char = '𐐺';
-    /// \u{1043b}: '𐐻'
-    pub const SMALL_LETTER_TEE: char = '𐐻';
-    /// \u{1043c}: '𐐼'
-    pub const SMALL_LETTER_DEE: char = '𐐼';
-    /// \u{1043d}: '𐐽'
-    pub const SMALL_LETTER_CHEE: char = '𐐽';
-    /// \u{1043e}: '𐐾'
-    pub const SMALL_LETTER_JEE: char = '𐐾';
-    /// \u{1043f}: '𐐿'
-    pub const SMALL_LETTER_KAY: char = '𐐿';
-    /// \u{10440}: '𐑀'
-    pub const SMALL_LETTER_GAY: char = '𐑀';
-    /// \u{10441}: '𐑁'
-    pub const SMALL_LETTER_EF: char = '𐑁';
-    /// \u{10442}: '𐑂'
-    pub const SMALL_LETTER_VEE: char = '𐑂';
-    /// \u{10443}: '𐑃'
-    pub const SMALL_LETTER_ETH: char = '𐑃';
-    /// \u{10444}: '𐑄'
-    pub const SMALL_LETTER_THEE: char = '𐑄';
-    /// \u{10445}: '𐑅'
-    pub const SMALL_LETTER_ES: char = '𐑅';
-    /// \u{10446}: '𐑆'
-    pub const SMALL_LETTER_ZEE: char = '𐑆';
-    /// \u{10447}: '𐑇'
-    pub const SMALL_LETTER_ESH: char = '𐑇';
-    /// \u{10448}: '𐑈'
-    pub const SMALL_LETTER_ZHEE: char = '𐑈';
-    /// \u{10449}: '𐑉'
-    pub const SMALL_LETTER_ER: char = '𐑉';
-    /// \u{1044a}: '𐑊'
-    pub const SMALL_LETTER_EL: char = '𐑊';
-    /// \u{1044b}: '𐑋'
-    pub const SMALL_LETTER_EM: char = '𐑋';
-    /// \u{1044c}: '𐑌'
-    pub const SMALL_LETTER_EN: char = '𐑌';
-    /// \u{1044d}: '𐑍'
-    pub const SMALL_LETTER_ENG: char = '𐑍';
-    /// \u{1044e}: '𐑎'
-    pub const SMALL_LETTER_OI: char = '𐑎';
-}
 
 /// An enum to represent all characters in the Deseret block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -325,87 +164,86 @@ pub enum Deseret {
 
 impl Into<char> for Deseret {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Deseret::CapitalLetterLongI => CAPITAL_LETTER_LONG_I,
-            Deseret::CapitalLetterLongE => CAPITAL_LETTER_LONG_E,
-            Deseret::CapitalLetterLongA => CAPITAL_LETTER_LONG_A,
-            Deseret::CapitalLetterLongAh => CAPITAL_LETTER_LONG_AH,
-            Deseret::CapitalLetterLongO => CAPITAL_LETTER_LONG_O,
-            Deseret::CapitalLetterLongOo => CAPITAL_LETTER_LONG_OO,
-            Deseret::CapitalLetterShortI => CAPITAL_LETTER_SHORT_I,
-            Deseret::CapitalLetterShortE => CAPITAL_LETTER_SHORT_E,
-            Deseret::CapitalLetterShortA => CAPITAL_LETTER_SHORT_A,
-            Deseret::CapitalLetterShortAh => CAPITAL_LETTER_SHORT_AH,
-            Deseret::CapitalLetterShortO => CAPITAL_LETTER_SHORT_O,
-            Deseret::CapitalLetterShortOo => CAPITAL_LETTER_SHORT_OO,
-            Deseret::CapitalLetterAy => CAPITAL_LETTER_AY,
-            Deseret::CapitalLetterOw => CAPITAL_LETTER_OW,
-            Deseret::CapitalLetterWu => CAPITAL_LETTER_WU,
-            Deseret::CapitalLetterYee => CAPITAL_LETTER_YEE,
-            Deseret::CapitalLetterH => CAPITAL_LETTER_H,
-            Deseret::CapitalLetterPee => CAPITAL_LETTER_PEE,
-            Deseret::CapitalLetterBee => CAPITAL_LETTER_BEE,
-            Deseret::CapitalLetterTee => CAPITAL_LETTER_TEE,
-            Deseret::CapitalLetterDee => CAPITAL_LETTER_DEE,
-            Deseret::CapitalLetterChee => CAPITAL_LETTER_CHEE,
-            Deseret::CapitalLetterJee => CAPITAL_LETTER_JEE,
-            Deseret::CapitalLetterKay => CAPITAL_LETTER_KAY,
-            Deseret::CapitalLetterGay => CAPITAL_LETTER_GAY,
-            Deseret::CapitalLetterEf => CAPITAL_LETTER_EF,
-            Deseret::CapitalLetterVee => CAPITAL_LETTER_VEE,
-            Deseret::CapitalLetterEth => CAPITAL_LETTER_ETH,
-            Deseret::CapitalLetterThee => CAPITAL_LETTER_THEE,
-            Deseret::CapitalLetterEs => CAPITAL_LETTER_ES,
-            Deseret::CapitalLetterZee => CAPITAL_LETTER_ZEE,
-            Deseret::CapitalLetterEsh => CAPITAL_LETTER_ESH,
-            Deseret::CapitalLetterZhee => CAPITAL_LETTER_ZHEE,
-            Deseret::CapitalLetterEr => CAPITAL_LETTER_ER,
-            Deseret::CapitalLetterEl => CAPITAL_LETTER_EL,
-            Deseret::CapitalLetterEm => CAPITAL_LETTER_EM,
-            Deseret::CapitalLetterEn => CAPITAL_LETTER_EN,
-            Deseret::CapitalLetterEng => CAPITAL_LETTER_ENG,
-            Deseret::CapitalLetterOi => CAPITAL_LETTER_OI,
-            Deseret::CapitalLetterEw => CAPITAL_LETTER_EW,
-            Deseret::SmallLetterLongI => SMALL_LETTER_LONG_I,
-            Deseret::SmallLetterLongE => SMALL_LETTER_LONG_E,
-            Deseret::SmallLetterLongA => SMALL_LETTER_LONG_A,
-            Deseret::SmallLetterLongAh => SMALL_LETTER_LONG_AH,
-            Deseret::SmallLetterLongO => SMALL_LETTER_LONG_O,
-            Deseret::SmallLetterLongOo => SMALL_LETTER_LONG_OO,
-            Deseret::SmallLetterShortI => SMALL_LETTER_SHORT_I,
-            Deseret::SmallLetterShortE => SMALL_LETTER_SHORT_E,
-            Deseret::SmallLetterShortA => SMALL_LETTER_SHORT_A,
-            Deseret::SmallLetterShortAh => SMALL_LETTER_SHORT_AH,
-            Deseret::SmallLetterShortO => SMALL_LETTER_SHORT_O,
-            Deseret::SmallLetterShortOo => SMALL_LETTER_SHORT_OO,
-            Deseret::SmallLetterAy => SMALL_LETTER_AY,
-            Deseret::SmallLetterOw => SMALL_LETTER_OW,
-            Deseret::SmallLetterWu => SMALL_LETTER_WU,
-            Deseret::SmallLetterYee => SMALL_LETTER_YEE,
-            Deseret::SmallLetterH => SMALL_LETTER_H,
-            Deseret::SmallLetterPee => SMALL_LETTER_PEE,
-            Deseret::SmallLetterBee => SMALL_LETTER_BEE,
-            Deseret::SmallLetterTee => SMALL_LETTER_TEE,
-            Deseret::SmallLetterDee => SMALL_LETTER_DEE,
-            Deseret::SmallLetterChee => SMALL_LETTER_CHEE,
-            Deseret::SmallLetterJee => SMALL_LETTER_JEE,
-            Deseret::SmallLetterKay => SMALL_LETTER_KAY,
-            Deseret::SmallLetterGay => SMALL_LETTER_GAY,
-            Deseret::SmallLetterEf => SMALL_LETTER_EF,
-            Deseret::SmallLetterVee => SMALL_LETTER_VEE,
-            Deseret::SmallLetterEth => SMALL_LETTER_ETH,
-            Deseret::SmallLetterThee => SMALL_LETTER_THEE,
-            Deseret::SmallLetterEs => SMALL_LETTER_ES,
-            Deseret::SmallLetterZee => SMALL_LETTER_ZEE,
-            Deseret::SmallLetterEsh => SMALL_LETTER_ESH,
-            Deseret::SmallLetterZhee => SMALL_LETTER_ZHEE,
-            Deseret::SmallLetterEr => SMALL_LETTER_ER,
-            Deseret::SmallLetterEl => SMALL_LETTER_EL,
-            Deseret::SmallLetterEm => SMALL_LETTER_EM,
-            Deseret::SmallLetterEn => SMALL_LETTER_EN,
-            Deseret::SmallLetterEng => SMALL_LETTER_ENG,
-            Deseret::SmallLetterOi => SMALL_LETTER_OI,
+            Deseret::CapitalLetterLongI => '𐐀',
+            Deseret::CapitalLetterLongE => '𐐁',
+            Deseret::CapitalLetterLongA => '𐐂',
+            Deseret::CapitalLetterLongAh => '𐐃',
+            Deseret::CapitalLetterLongO => '𐐄',
+            Deseret::CapitalLetterLongOo => '𐐅',
+            Deseret::CapitalLetterShortI => '𐐆',
+            Deseret::CapitalLetterShortE => '𐐇',
+            Deseret::CapitalLetterShortA => '𐐈',
+            Deseret::CapitalLetterShortAh => '𐐉',
+            Deseret::CapitalLetterShortO => '𐐊',
+            Deseret::CapitalLetterShortOo => '𐐋',
+            Deseret::CapitalLetterAy => '𐐌',
+            Deseret::CapitalLetterOw => '𐐍',
+            Deseret::CapitalLetterWu => '𐐎',
+            Deseret::CapitalLetterYee => '𐐏',
+            Deseret::CapitalLetterH => '𐐐',
+            Deseret::CapitalLetterPee => '𐐑',
+            Deseret::CapitalLetterBee => '𐐒',
+            Deseret::CapitalLetterTee => '𐐓',
+            Deseret::CapitalLetterDee => '𐐔',
+            Deseret::CapitalLetterChee => '𐐕',
+            Deseret::CapitalLetterJee => '𐐖',
+            Deseret::CapitalLetterKay => '𐐗',
+            Deseret::CapitalLetterGay => '𐐘',
+            Deseret::CapitalLetterEf => '𐐙',
+            Deseret::CapitalLetterVee => '𐐚',
+            Deseret::CapitalLetterEth => '𐐛',
+            Deseret::CapitalLetterThee => '𐐜',
+            Deseret::CapitalLetterEs => '𐐝',
+            Deseret::CapitalLetterZee => '𐐞',
+            Deseret::CapitalLetterEsh => '𐐟',
+            Deseret::CapitalLetterZhee => '𐐠',
+            Deseret::CapitalLetterEr => '𐐡',
+            Deseret::CapitalLetterEl => '𐐢',
+            Deseret::CapitalLetterEm => '𐐣',
+            Deseret::CapitalLetterEn => '𐐤',
+            Deseret::CapitalLetterEng => '𐐥',
+            Deseret::CapitalLetterOi => '𐐦',
+            Deseret::CapitalLetterEw => '𐐧',
+            Deseret::SmallLetterLongI => '𐐨',
+            Deseret::SmallLetterLongE => '𐐩',
+            Deseret::SmallLetterLongA => '𐐪',
+            Deseret::SmallLetterLongAh => '𐐫',
+            Deseret::SmallLetterLongO => '𐐬',
+            Deseret::SmallLetterLongOo => '𐐭',
+            Deseret::SmallLetterShortI => '𐐮',
+            Deseret::SmallLetterShortE => '𐐯',
+            Deseret::SmallLetterShortA => '𐐰',
+            Deseret::SmallLetterShortAh => '𐐱',
+            Deseret::SmallLetterShortO => '𐐲',
+            Deseret::SmallLetterShortOo => '𐐳',
+            Deseret::SmallLetterAy => '𐐴',
+            Deseret::SmallLetterOw => '𐐵',
+            Deseret::SmallLetterWu => '𐐶',
+            Deseret::SmallLetterYee => '𐐷',
+            Deseret::SmallLetterH => '𐐸',
+            Deseret::SmallLetterPee => '𐐹',
+            Deseret::SmallLetterBee => '𐐺',
+            Deseret::SmallLetterTee => '𐐻',
+            Deseret::SmallLetterDee => '𐐼',
+            Deseret::SmallLetterChee => '𐐽',
+            Deseret::SmallLetterJee => '𐐾',
+            Deseret::SmallLetterKay => '𐐿',
+            Deseret::SmallLetterGay => '𐑀',
+            Deseret::SmallLetterEf => '𐑁',
+            Deseret::SmallLetterVee => '𐑂',
+            Deseret::SmallLetterEth => '𐑃',
+            Deseret::SmallLetterThee => '𐑄',
+            Deseret::SmallLetterEs => '𐑅',
+            Deseret::SmallLetterZee => '𐑆',
+            Deseret::SmallLetterEsh => '𐑇',
+            Deseret::SmallLetterZhee => '𐑈',
+            Deseret::SmallLetterEr => '𐑉',
+            Deseret::SmallLetterEl => '𐑊',
+            Deseret::SmallLetterEm => '𐑋',
+            Deseret::SmallLetterEn => '𐑌',
+            Deseret::SmallLetterEng => '𐑍',
+            Deseret::SmallLetterOi => '𐑎',
         }
     }
 }
@@ -413,87 +251,86 @@ impl Into<char> for Deseret {
 impl std::convert::TryFrom<char> for Deseret {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CAPITAL_LETTER_LONG_I => Ok(Deseret::CapitalLetterLongI),
-            CAPITAL_LETTER_LONG_E => Ok(Deseret::CapitalLetterLongE),
-            CAPITAL_LETTER_LONG_A => Ok(Deseret::CapitalLetterLongA),
-            CAPITAL_LETTER_LONG_AH => Ok(Deseret::CapitalLetterLongAh),
-            CAPITAL_LETTER_LONG_O => Ok(Deseret::CapitalLetterLongO),
-            CAPITAL_LETTER_LONG_OO => Ok(Deseret::CapitalLetterLongOo),
-            CAPITAL_LETTER_SHORT_I => Ok(Deseret::CapitalLetterShortI),
-            CAPITAL_LETTER_SHORT_E => Ok(Deseret::CapitalLetterShortE),
-            CAPITAL_LETTER_SHORT_A => Ok(Deseret::CapitalLetterShortA),
-            CAPITAL_LETTER_SHORT_AH => Ok(Deseret::CapitalLetterShortAh),
-            CAPITAL_LETTER_SHORT_O => Ok(Deseret::CapitalLetterShortO),
-            CAPITAL_LETTER_SHORT_OO => Ok(Deseret::CapitalLetterShortOo),
-            CAPITAL_LETTER_AY => Ok(Deseret::CapitalLetterAy),
-            CAPITAL_LETTER_OW => Ok(Deseret::CapitalLetterOw),
-            CAPITAL_LETTER_WU => Ok(Deseret::CapitalLetterWu),
-            CAPITAL_LETTER_YEE => Ok(Deseret::CapitalLetterYee),
-            CAPITAL_LETTER_H => Ok(Deseret::CapitalLetterH),
-            CAPITAL_LETTER_PEE => Ok(Deseret::CapitalLetterPee),
-            CAPITAL_LETTER_BEE => Ok(Deseret::CapitalLetterBee),
-            CAPITAL_LETTER_TEE => Ok(Deseret::CapitalLetterTee),
-            CAPITAL_LETTER_DEE => Ok(Deseret::CapitalLetterDee),
-            CAPITAL_LETTER_CHEE => Ok(Deseret::CapitalLetterChee),
-            CAPITAL_LETTER_JEE => Ok(Deseret::CapitalLetterJee),
-            CAPITAL_LETTER_KAY => Ok(Deseret::CapitalLetterKay),
-            CAPITAL_LETTER_GAY => Ok(Deseret::CapitalLetterGay),
-            CAPITAL_LETTER_EF => Ok(Deseret::CapitalLetterEf),
-            CAPITAL_LETTER_VEE => Ok(Deseret::CapitalLetterVee),
-            CAPITAL_LETTER_ETH => Ok(Deseret::CapitalLetterEth),
-            CAPITAL_LETTER_THEE => Ok(Deseret::CapitalLetterThee),
-            CAPITAL_LETTER_ES => Ok(Deseret::CapitalLetterEs),
-            CAPITAL_LETTER_ZEE => Ok(Deseret::CapitalLetterZee),
-            CAPITAL_LETTER_ESH => Ok(Deseret::CapitalLetterEsh),
-            CAPITAL_LETTER_ZHEE => Ok(Deseret::CapitalLetterZhee),
-            CAPITAL_LETTER_ER => Ok(Deseret::CapitalLetterEr),
-            CAPITAL_LETTER_EL => Ok(Deseret::CapitalLetterEl),
-            CAPITAL_LETTER_EM => Ok(Deseret::CapitalLetterEm),
-            CAPITAL_LETTER_EN => Ok(Deseret::CapitalLetterEn),
-            CAPITAL_LETTER_ENG => Ok(Deseret::CapitalLetterEng),
-            CAPITAL_LETTER_OI => Ok(Deseret::CapitalLetterOi),
-            CAPITAL_LETTER_EW => Ok(Deseret::CapitalLetterEw),
-            SMALL_LETTER_LONG_I => Ok(Deseret::SmallLetterLongI),
-            SMALL_LETTER_LONG_E => Ok(Deseret::SmallLetterLongE),
-            SMALL_LETTER_LONG_A => Ok(Deseret::SmallLetterLongA),
-            SMALL_LETTER_LONG_AH => Ok(Deseret::SmallLetterLongAh),
-            SMALL_LETTER_LONG_O => Ok(Deseret::SmallLetterLongO),
-            SMALL_LETTER_LONG_OO => Ok(Deseret::SmallLetterLongOo),
-            SMALL_LETTER_SHORT_I => Ok(Deseret::SmallLetterShortI),
-            SMALL_LETTER_SHORT_E => Ok(Deseret::SmallLetterShortE),
-            SMALL_LETTER_SHORT_A => Ok(Deseret::SmallLetterShortA),
-            SMALL_LETTER_SHORT_AH => Ok(Deseret::SmallLetterShortAh),
-            SMALL_LETTER_SHORT_O => Ok(Deseret::SmallLetterShortO),
-            SMALL_LETTER_SHORT_OO => Ok(Deseret::SmallLetterShortOo),
-            SMALL_LETTER_AY => Ok(Deseret::SmallLetterAy),
-            SMALL_LETTER_OW => Ok(Deseret::SmallLetterOw),
-            SMALL_LETTER_WU => Ok(Deseret::SmallLetterWu),
-            SMALL_LETTER_YEE => Ok(Deseret::SmallLetterYee),
-            SMALL_LETTER_H => Ok(Deseret::SmallLetterH),
-            SMALL_LETTER_PEE => Ok(Deseret::SmallLetterPee),
-            SMALL_LETTER_BEE => Ok(Deseret::SmallLetterBee),
-            SMALL_LETTER_TEE => Ok(Deseret::SmallLetterTee),
-            SMALL_LETTER_DEE => Ok(Deseret::SmallLetterDee),
-            SMALL_LETTER_CHEE => Ok(Deseret::SmallLetterChee),
-            SMALL_LETTER_JEE => Ok(Deseret::SmallLetterJee),
-            SMALL_LETTER_KAY => Ok(Deseret::SmallLetterKay),
-            SMALL_LETTER_GAY => Ok(Deseret::SmallLetterGay),
-            SMALL_LETTER_EF => Ok(Deseret::SmallLetterEf),
-            SMALL_LETTER_VEE => Ok(Deseret::SmallLetterVee),
-            SMALL_LETTER_ETH => Ok(Deseret::SmallLetterEth),
-            SMALL_LETTER_THEE => Ok(Deseret::SmallLetterThee),
-            SMALL_LETTER_ES => Ok(Deseret::SmallLetterEs),
-            SMALL_LETTER_ZEE => Ok(Deseret::SmallLetterZee),
-            SMALL_LETTER_ESH => Ok(Deseret::SmallLetterEsh),
-            SMALL_LETTER_ZHEE => Ok(Deseret::SmallLetterZhee),
-            SMALL_LETTER_ER => Ok(Deseret::SmallLetterEr),
-            SMALL_LETTER_EL => Ok(Deseret::SmallLetterEl),
-            SMALL_LETTER_EM => Ok(Deseret::SmallLetterEm),
-            SMALL_LETTER_EN => Ok(Deseret::SmallLetterEn),
-            SMALL_LETTER_ENG => Ok(Deseret::SmallLetterEng),
-            SMALL_LETTER_OI => Ok(Deseret::SmallLetterOi),
+            '𐐀' => Ok(Deseret::CapitalLetterLongI),
+            '𐐁' => Ok(Deseret::CapitalLetterLongE),
+            '𐐂' => Ok(Deseret::CapitalLetterLongA),
+            '𐐃' => Ok(Deseret::CapitalLetterLongAh),
+            '𐐄' => Ok(Deseret::CapitalLetterLongO),
+            '𐐅' => Ok(Deseret::CapitalLetterLongOo),
+            '𐐆' => Ok(Deseret::CapitalLetterShortI),
+            '𐐇' => Ok(Deseret::CapitalLetterShortE),
+            '𐐈' => Ok(Deseret::CapitalLetterShortA),
+            '𐐉' => Ok(Deseret::CapitalLetterShortAh),
+            '𐐊' => Ok(Deseret::CapitalLetterShortO),
+            '𐐋' => Ok(Deseret::CapitalLetterShortOo),
+            '𐐌' => Ok(Deseret::CapitalLetterAy),
+            '𐐍' => Ok(Deseret::CapitalLetterOw),
+            '𐐎' => Ok(Deseret::CapitalLetterWu),
+            '𐐏' => Ok(Deseret::CapitalLetterYee),
+            '𐐐' => Ok(Deseret::CapitalLetterH),
+            '𐐑' => Ok(Deseret::CapitalLetterPee),
+            '𐐒' => Ok(Deseret::CapitalLetterBee),
+            '𐐓' => Ok(Deseret::CapitalLetterTee),
+            '𐐔' => Ok(Deseret::CapitalLetterDee),
+            '𐐕' => Ok(Deseret::CapitalLetterChee),
+            '𐐖' => Ok(Deseret::CapitalLetterJee),
+            '𐐗' => Ok(Deseret::CapitalLetterKay),
+            '𐐘' => Ok(Deseret::CapitalLetterGay),
+            '𐐙' => Ok(Deseret::CapitalLetterEf),
+            '𐐚' => Ok(Deseret::CapitalLetterVee),
+            '𐐛' => Ok(Deseret::CapitalLetterEth),
+            '𐐜' => Ok(Deseret::CapitalLetterThee),
+            '𐐝' => Ok(Deseret::CapitalLetterEs),
+            '𐐞' => Ok(Deseret::CapitalLetterZee),
+            '𐐟' => Ok(Deseret::CapitalLetterEsh),
+            '𐐠' => Ok(Deseret::CapitalLetterZhee),
+            '𐐡' => Ok(Deseret::CapitalLetterEr),
+            '𐐢' => Ok(Deseret::CapitalLetterEl),
+            '𐐣' => Ok(Deseret::CapitalLetterEm),
+            '𐐤' => Ok(Deseret::CapitalLetterEn),
+            '𐐥' => Ok(Deseret::CapitalLetterEng),
+            '𐐦' => Ok(Deseret::CapitalLetterOi),
+            '𐐧' => Ok(Deseret::CapitalLetterEw),
+            '𐐨' => Ok(Deseret::SmallLetterLongI),
+            '𐐩' => Ok(Deseret::SmallLetterLongE),
+            '𐐪' => Ok(Deseret::SmallLetterLongA),
+            '𐐫' => Ok(Deseret::SmallLetterLongAh),
+            '𐐬' => Ok(Deseret::SmallLetterLongO),
+            '𐐭' => Ok(Deseret::SmallLetterLongOo),
+            '𐐮' => Ok(Deseret::SmallLetterShortI),
+            '𐐯' => Ok(Deseret::SmallLetterShortE),
+            '𐐰' => Ok(Deseret::SmallLetterShortA),
+            '𐐱' => Ok(Deseret::SmallLetterShortAh),
+            '𐐲' => Ok(Deseret::SmallLetterShortO),
+            '𐐳' => Ok(Deseret::SmallLetterShortOo),
+            '𐐴' => Ok(Deseret::SmallLetterAy),
+            '𐐵' => Ok(Deseret::SmallLetterOw),
+            '𐐶' => Ok(Deseret::SmallLetterWu),
+            '𐐷' => Ok(Deseret::SmallLetterYee),
+            '𐐸' => Ok(Deseret::SmallLetterH),
+            '𐐹' => Ok(Deseret::SmallLetterPee),
+            '𐐺' => Ok(Deseret::SmallLetterBee),
+            '𐐻' => Ok(Deseret::SmallLetterTee),
+            '𐐼' => Ok(Deseret::SmallLetterDee),
+            '𐐽' => Ok(Deseret::SmallLetterChee),
+            '𐐾' => Ok(Deseret::SmallLetterJee),
+            '𐐿' => Ok(Deseret::SmallLetterKay),
+            '𐑀' => Ok(Deseret::SmallLetterGay),
+            '𐑁' => Ok(Deseret::SmallLetterEf),
+            '𐑂' => Ok(Deseret::SmallLetterVee),
+            '𐑃' => Ok(Deseret::SmallLetterEth),
+            '𐑄' => Ok(Deseret::SmallLetterThee),
+            '𐑅' => Ok(Deseret::SmallLetterEs),
+            '𐑆' => Ok(Deseret::SmallLetterZee),
+            '𐑇' => Ok(Deseret::SmallLetterEsh),
+            '𐑈' => Ok(Deseret::SmallLetterZhee),
+            '𐑉' => Ok(Deseret::SmallLetterEr),
+            '𐑊' => Ok(Deseret::SmallLetterEl),
+            '𐑋' => Ok(Deseret::SmallLetterEm),
+            '𐑌' => Ok(Deseret::SmallLetterEn),
+            '𐑍' => Ok(Deseret::SmallLetterEng),
+            '𐑎' => Ok(Deseret::SmallLetterOi),
             _ => Err(()),
         }
     }

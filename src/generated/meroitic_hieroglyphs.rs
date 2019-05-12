@@ -1,68 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{10980}: '𐦀'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_A: char = '𐦀';
-    /// \u{10981}: '𐦁'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_E: char = '𐦁';
-    /// \u{10982}: '𐦂'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_I: char = '𐦂';
-    /// \u{10983}: '𐦃'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_O: char = '𐦃';
-    /// \u{10984}: '𐦄'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_YA: char = '𐦄';
-    /// \u{10985}: '𐦅'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_WA: char = '𐦅';
-    /// \u{10986}: '𐦆'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_BA: char = '𐦆';
-    /// \u{10987}: '𐦇'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_BA_DASH_2: char = '𐦇';
-    /// \u{10988}: '𐦈'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_PA: char = '𐦈';
-    /// \u{10989}: '𐦉'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_MA: char = '𐦉';
-    /// \u{1098a}: '𐦊'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_NA: char = '𐦊';
-    /// \u{1098b}: '𐦋'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_NA_DASH_2: char = '𐦋';
-    /// \u{1098c}: '𐦌'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_NE: char = '𐦌';
-    /// \u{1098d}: '𐦍'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_NE_DASH_2: char = '𐦍';
-    /// \u{1098e}: '𐦎'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_RA: char = '𐦎';
-    /// \u{1098f}: '𐦏'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_RA_DASH_2: char = '𐦏';
-    /// \u{10990}: '𐦐'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_LA: char = '𐦐';
-    /// \u{10991}: '𐦑'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_KHA: char = '𐦑';
-    /// \u{10992}: '𐦒'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_HHA: char = '𐦒';
-    /// \u{10993}: '𐦓'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_SA: char = '𐦓';
-    /// \u{10994}: '𐦔'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_SA_DASH_2: char = '𐦔';
-    /// \u{10995}: '𐦕'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_SE: char = '𐦕';
-    /// \u{10996}: '𐦖'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_KA: char = '𐦖';
-    /// \u{10997}: '𐦗'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_QA: char = '𐦗';
-    /// \u{10998}: '𐦘'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_TA: char = '𐦘';
-    /// \u{10999}: '𐦙'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_TA_DASH_2: char = '𐦙';
-    /// \u{1099a}: '𐦚'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_TE: char = '𐦚';
-    /// \u{1099b}: '𐦛'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_TE_DASH_2: char = '𐦛';
-    /// \u{1099c}: '𐦜'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_TO: char = '𐦜';
-    /// \u{1099d}: '𐦝'
-    pub const MEROITIC_HIEROGLYPHIC_LETTER_DA: char = '𐦝';
-    /// \u{1099e}: '𐦞'
-    pub const MEROITIC_HIEROGLYPHIC_SYMBOL_VIDJ: char = '𐦞';
-}
 
 /// An enum to represent all characters in the MeroiticHieroglyphs block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -133,39 +68,38 @@ pub enum MeroiticHieroglyphs {
 
 impl Into<char> for MeroiticHieroglyphs {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterA => MEROITIC_HIEROGLYPHIC_LETTER_A,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterE => MEROITIC_HIEROGLYPHIC_LETTER_E,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterI => MEROITIC_HIEROGLYPHIC_LETTER_I,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterO => MEROITIC_HIEROGLYPHIC_LETTER_O,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterYa => MEROITIC_HIEROGLYPHIC_LETTER_YA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterWa => MEROITIC_HIEROGLYPHIC_LETTER_WA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterBa => MEROITIC_HIEROGLYPHIC_LETTER_BA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterBaDash2 => MEROITIC_HIEROGLYPHIC_LETTER_BA_DASH_2,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterPa => MEROITIC_HIEROGLYPHIC_LETTER_PA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterMa => MEROITIC_HIEROGLYPHIC_LETTER_MA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNa => MEROITIC_HIEROGLYPHIC_LETTER_NA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNaDash2 => MEROITIC_HIEROGLYPHIC_LETTER_NA_DASH_2,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNe => MEROITIC_HIEROGLYPHIC_LETTER_NE,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNeDash2 => MEROITIC_HIEROGLYPHIC_LETTER_NE_DASH_2,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterRa => MEROITIC_HIEROGLYPHIC_LETTER_RA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterRaDash2 => MEROITIC_HIEROGLYPHIC_LETTER_RA_DASH_2,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterLa => MEROITIC_HIEROGLYPHIC_LETTER_LA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterKha => MEROITIC_HIEROGLYPHIC_LETTER_KHA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterHha => MEROITIC_HIEROGLYPHIC_LETTER_HHA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterSa => MEROITIC_HIEROGLYPHIC_LETTER_SA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterSaDash2 => MEROITIC_HIEROGLYPHIC_LETTER_SA_DASH_2,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterSe => MEROITIC_HIEROGLYPHIC_LETTER_SE,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterKa => MEROITIC_HIEROGLYPHIC_LETTER_KA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterQa => MEROITIC_HIEROGLYPHIC_LETTER_QA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTa => MEROITIC_HIEROGLYPHIC_LETTER_TA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTaDash2 => MEROITIC_HIEROGLYPHIC_LETTER_TA_DASH_2,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTe => MEROITIC_HIEROGLYPHIC_LETTER_TE,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTeDash2 => MEROITIC_HIEROGLYPHIC_LETTER_TE_DASH_2,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTo => MEROITIC_HIEROGLYPHIC_LETTER_TO,
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterDa => MEROITIC_HIEROGLYPHIC_LETTER_DA,
-            MeroiticHieroglyphs::MeroiticHieroglyphicSymbolVidj => MEROITIC_HIEROGLYPHIC_SYMBOL_VIDJ,
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterA => '𐦀',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterE => '𐦁',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterI => '𐦂',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterO => '𐦃',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterYa => '𐦄',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterWa => '𐦅',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterBa => '𐦆',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterBaDash2 => '𐦇',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterPa => '𐦈',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterMa => '𐦉',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNa => '𐦊',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNaDash2 => '𐦋',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNe => '𐦌',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNeDash2 => '𐦍',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterRa => '𐦎',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterRaDash2 => '𐦏',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterLa => '𐦐',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterKha => '𐦑',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterHha => '𐦒',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterSa => '𐦓',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterSaDash2 => '𐦔',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterSe => '𐦕',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterKa => '𐦖',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterQa => '𐦗',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTa => '𐦘',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTaDash2 => '𐦙',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTe => '𐦚',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTeDash2 => '𐦛',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTo => '𐦜',
+            MeroiticHieroglyphs::MeroiticHieroglyphicLetterDa => '𐦝',
+            MeroiticHieroglyphs::MeroiticHieroglyphicSymbolVidj => '𐦞',
         }
     }
 }
@@ -173,39 +107,38 @@ impl Into<char> for MeroiticHieroglyphs {
 impl std::convert::TryFrom<char> for MeroiticHieroglyphs {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            MEROITIC_HIEROGLYPHIC_LETTER_A => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterA),
-            MEROITIC_HIEROGLYPHIC_LETTER_E => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterE),
-            MEROITIC_HIEROGLYPHIC_LETTER_I => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterI),
-            MEROITIC_HIEROGLYPHIC_LETTER_O => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterO),
-            MEROITIC_HIEROGLYPHIC_LETTER_YA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterYa),
-            MEROITIC_HIEROGLYPHIC_LETTER_WA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterWa),
-            MEROITIC_HIEROGLYPHIC_LETTER_BA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterBa),
-            MEROITIC_HIEROGLYPHIC_LETTER_BA_DASH_2 => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterBaDash2),
-            MEROITIC_HIEROGLYPHIC_LETTER_PA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterPa),
-            MEROITIC_HIEROGLYPHIC_LETTER_MA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterMa),
-            MEROITIC_HIEROGLYPHIC_LETTER_NA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterNa),
-            MEROITIC_HIEROGLYPHIC_LETTER_NA_DASH_2 => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterNaDash2),
-            MEROITIC_HIEROGLYPHIC_LETTER_NE => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterNe),
-            MEROITIC_HIEROGLYPHIC_LETTER_NE_DASH_2 => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterNeDash2),
-            MEROITIC_HIEROGLYPHIC_LETTER_RA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterRa),
-            MEROITIC_HIEROGLYPHIC_LETTER_RA_DASH_2 => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterRaDash2),
-            MEROITIC_HIEROGLYPHIC_LETTER_LA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterLa),
-            MEROITIC_HIEROGLYPHIC_LETTER_KHA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterKha),
-            MEROITIC_HIEROGLYPHIC_LETTER_HHA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterHha),
-            MEROITIC_HIEROGLYPHIC_LETTER_SA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterSa),
-            MEROITIC_HIEROGLYPHIC_LETTER_SA_DASH_2 => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterSaDash2),
-            MEROITIC_HIEROGLYPHIC_LETTER_SE => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterSe),
-            MEROITIC_HIEROGLYPHIC_LETTER_KA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterKa),
-            MEROITIC_HIEROGLYPHIC_LETTER_QA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterQa),
-            MEROITIC_HIEROGLYPHIC_LETTER_TA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTa),
-            MEROITIC_HIEROGLYPHIC_LETTER_TA_DASH_2 => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTaDash2),
-            MEROITIC_HIEROGLYPHIC_LETTER_TE => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTe),
-            MEROITIC_HIEROGLYPHIC_LETTER_TE_DASH_2 => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTeDash2),
-            MEROITIC_HIEROGLYPHIC_LETTER_TO => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTo),
-            MEROITIC_HIEROGLYPHIC_LETTER_DA => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterDa),
-            MEROITIC_HIEROGLYPHIC_SYMBOL_VIDJ => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicSymbolVidj),
+            '𐦀' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterA),
+            '𐦁' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterE),
+            '𐦂' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterI),
+            '𐦃' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterO),
+            '𐦄' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterYa),
+            '𐦅' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterWa),
+            '𐦆' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterBa),
+            '𐦇' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterBaDash2),
+            '𐦈' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterPa),
+            '𐦉' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterMa),
+            '𐦊' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterNa),
+            '𐦋' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterNaDash2),
+            '𐦌' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterNe),
+            '𐦍' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterNeDash2),
+            '𐦎' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterRa),
+            '𐦏' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterRaDash2),
+            '𐦐' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterLa),
+            '𐦑' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterKha),
+            '𐦒' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterHha),
+            '𐦓' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterSa),
+            '𐦔' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterSaDash2),
+            '𐦕' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterSe),
+            '𐦖' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterKa),
+            '𐦗' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterQa),
+            '𐦘' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTa),
+            '𐦙' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTaDash2),
+            '𐦚' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTe),
+            '𐦛' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTeDash2),
+            '𐦜' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterTo),
+            '𐦝' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicLetterDa),
+            '𐦞' => Ok(MeroiticHieroglyphs::MeroiticHieroglyphicSymbolVidj),
             _ => Err(()),
         }
     }

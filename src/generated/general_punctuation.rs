@@ -1,226 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2000}: ' '
-    pub const EN_QUAD: char = ' ';
-    /// \u{2001}: ' '
-    pub const EM_QUAD: char = ' ';
-    /// \u{2002}: ' '
-    pub const EN_SPACE: char = ' ';
-    /// \u{2003}: ' '
-    pub const EM_SPACE: char = ' ';
-    /// \u{2004}: ' '
-    pub const THREE_DASH_PER_DASH_EM_SPACE: char = ' ';
-    /// \u{2005}: ' '
-    pub const FOUR_DASH_PER_DASH_EM_SPACE: char = ' ';
-    /// \u{2006}: ' '
-    pub const SIX_DASH_PER_DASH_EM_SPACE: char = ' ';
-    /// \u{2007}: ' '
-    pub const FIGURE_SPACE: char = ' ';
-    /// \u{2008}: ' '
-    pub const PUNCTUATION_SPACE: char = ' ';
-    /// \u{2009}: ' '
-    pub const THIN_SPACE: char = ' ';
-    /// \u{200a}: ' '
-    pub const HAIR_SPACE: char = ' ';
-    /// \u{200b}: '​'
-    pub const ZERO_WIDTH_SPACE: char = '​';
-    /// \u{200c}: '‌'
-    pub const ZERO_WIDTH_NON_DASH_JOINER: char = '‌';
-    /// \u{200d}: '‍'
-    pub const ZERO_WIDTH_JOINER: char = '‍';
-    /// \u{200e}: '‎'
-    pub const LEFT_DASH_TO_DASH_RIGHT_MARK: char = '‎';
-    /// \u{200f}: '‏'
-    pub const RIGHT_DASH_TO_DASH_LEFT_MARK: char = '‏';
-    /// \u{2010}: '‐'
-    pub const HYPHEN: char = '‐';
-    /// \u{2011}: '‑'
-    pub const NON_DASH_BREAKING_HYPHEN: char = '‑';
-    /// \u{2012}: '‒'
-    pub const FIGURE_DASH: char = '‒';
-    /// \u{2013}: '–'
-    pub const EN_DASH: char = '–';
-    /// \u{2014}: '—'
-    pub const EM_DASH: char = '—';
-    /// \u{2015}: '―'
-    pub const HORIZONTAL_BAR: char = '―';
-    /// \u{2016}: '‖'
-    pub const DOUBLE_VERTICAL_LINE: char = '‖';
-    /// \u{2017}: '‗'
-    pub const DOUBLE_LOW_LINE: char = '‗';
-    /// \u{2018}: '‘'
-    pub const LEFT_SINGLE_QUOTATION_MARK: char = '‘';
-    /// \u{2019}: '’'
-    pub const RIGHT_SINGLE_QUOTATION_MARK: char = '’';
-    /// \u{201a}: '‚'
-    pub const SINGLE_LOW_DASH_9_QUOTATION_MARK: char = '‚';
-    /// \u{201b}: '‛'
-    pub const SINGLE_HIGH_DASH_REVERSED_DASH_9_QUOTATION_MARK: char = '‛';
-    /// \u{201c}: '“'
-    pub const LEFT_DOUBLE_QUOTATION_MARK: char = '“';
-    /// \u{201d}: '”'
-    pub const RIGHT_DOUBLE_QUOTATION_MARK: char = '”';
-    /// \u{201e}: '„'
-    pub const DOUBLE_LOW_DASH_9_QUOTATION_MARK: char = '„';
-    /// \u{201f}: '‟'
-    pub const DOUBLE_HIGH_DASH_REVERSED_DASH_9_QUOTATION_MARK: char = '‟';
-    /// \u{2020}: '†'
-    pub const DAGGER: char = '†';
-    /// \u{2021}: '‡'
-    pub const DOUBLE_DAGGER: char = '‡';
-    /// \u{2022}: '•'
-    pub const BULLET: char = '•';
-    /// \u{2023}: '‣'
-    pub const TRIANGULAR_BULLET: char = '‣';
-    /// \u{2024}: '․'
-    pub const ONE_DOT_LEADER: char = '․';
-    /// \u{2025}: '‥'
-    pub const TWO_DOT_LEADER: char = '‥';
-    /// \u{2026}: '…'
-    pub const HORIZONTAL_ELLIPSIS: char = '…';
-    /// \u{2027}: '‧'
-    pub const HYPHENATION_POINT: char = '‧';
-    /// \u{2028}: ' '
-    pub const LINE_SEPARATOR: char = ' ';
-    /// \u{2029}: ' '
-    pub const PARAGRAPH_SEPARATOR: char = ' ';
-    /// \u{202a}: '‪'
-    pub const LEFT_DASH_TO_DASH_RIGHT_EMBEDDING: char = '‪';
-    /// \u{202b}: '‫'
-    pub const RIGHT_DASH_TO_DASH_LEFT_EMBEDDING: char = '‫';
-    /// \u{202c}: '‬'
-    pub const POP_DIRECTIONAL_FORMATTING: char = '‬';
-    /// \u{202d}: '‭'
-    pub const LEFT_DASH_TO_DASH_RIGHT_OVERRIDE: char = '‭';
-    /// \u{202e}: '‮'
-    pub const RIGHT_DASH_TO_DASH_LEFT_OVERRIDE: char = '‮';
-    /// \u{202f}: ' '
-    pub const NARROW_NO_DASH_BREAK_SPACE: char = ' ';
-    /// \u{2030}: '‰'
-    pub const PER_MILLE_SIGN: char = '‰';
-    /// \u{2031}: '‱'
-    pub const PER_TEN_THOUSAND_SIGN: char = '‱';
-    /// \u{2032}: '′'
-    pub const PRIME: char = '′';
-    /// \u{2033}: '″'
-    pub const DOUBLE_PRIME: char = '″';
-    /// \u{2034}: '‴'
-    pub const TRIPLE_PRIME: char = '‴';
-    /// \u{2035}: '‵'
-    pub const REVERSED_PRIME: char = '‵';
-    /// \u{2036}: '‶'
-    pub const REVERSED_DOUBLE_PRIME: char = '‶';
-    /// \u{2037}: '‷'
-    pub const REVERSED_TRIPLE_PRIME: char = '‷';
-    /// \u{2038}: '‸'
-    pub const CARET: char = '‸';
-    /// \u{2039}: '‹'
-    pub const SINGLE_LEFT_DASH_POINTING_ANGLE_QUOTATION_MARK: char = '‹';
-    /// \u{203a}: '›'
-    pub const SINGLE_RIGHT_DASH_POINTING_ANGLE_QUOTATION_MARK: char = '›';
-    /// \u{203b}: '※'
-    pub const REFERENCE_MARK: char = '※';
-    /// \u{203c}: '‼'
-    pub const DOUBLE_EXCLAMATION_MARK: char = '‼';
-    /// \u{203d}: '‽'
-    pub const INTERROBANG: char = '‽';
-    /// \u{203e}: '‾'
-    pub const OVERLINE: char = '‾';
-    /// \u{203f}: '‿'
-    pub const UNDERTIE: char = '‿';
-    /// \u{2040}: '⁀'
-    pub const CHARACTER_TIE: char = '⁀';
-    /// \u{2041}: '⁁'
-    pub const CARET_INSERTION_POINT: char = '⁁';
-    /// \u{2042}: '⁂'
-    pub const ASTERISM: char = '⁂';
-    /// \u{2043}: '⁃'
-    pub const HYPHEN_BULLET: char = '⁃';
-    /// \u{2044}: '⁄'
-    pub const FRACTION_SLASH: char = '⁄';
-    /// \u{2045}: '⁅'
-    pub const LEFT_SQUARE_BRACKET_WITH_QUILL: char = '⁅';
-    /// \u{2046}: '⁆'
-    pub const RIGHT_SQUARE_BRACKET_WITH_QUILL: char = '⁆';
-    /// \u{2047}: '⁇'
-    pub const DOUBLE_QUESTION_MARK: char = '⁇';
-    /// \u{2048}: '⁈'
-    pub const QUESTION_EXCLAMATION_MARK: char = '⁈';
-    /// \u{2049}: '⁉'
-    pub const EXCLAMATION_QUESTION_MARK: char = '⁉';
-    /// \u{204a}: '⁊'
-    pub const TIRONIAN_SIGN_ET: char = '⁊';
-    /// \u{204b}: '⁋'
-    pub const REVERSED_PILCROW_SIGN: char = '⁋';
-    /// \u{204c}: '⁌'
-    pub const BLACK_LEFTWARDS_BULLET: char = '⁌';
-    /// \u{204d}: '⁍'
-    pub const BLACK_RIGHTWARDS_BULLET: char = '⁍';
-    /// \u{204e}: '⁎'
-    pub const LOW_ASTERISK: char = '⁎';
-    /// \u{204f}: '⁏'
-    pub const REVERSED_SEMICOLON: char = '⁏';
-    /// \u{2050}: '⁐'
-    pub const CLOSE_UP: char = '⁐';
-    /// \u{2051}: '⁑'
-    pub const TWO_ASTERISKS_ALIGNED_VERTICALLY: char = '⁑';
-    /// \u{2052}: '⁒'
-    pub const COMMERCIAL_MINUS_SIGN: char = '⁒';
-    /// \u{2053}: '⁓'
-    pub const SWUNG_DASH: char = '⁓';
-    /// \u{2054}: '⁔'
-    pub const INVERTED_UNDERTIE: char = '⁔';
-    /// \u{2055}: '⁕'
-    pub const FLOWER_PUNCTUATION_MARK: char = '⁕';
-    /// \u{2056}: '⁖'
-    pub const THREE_DOT_PUNCTUATION: char = '⁖';
-    /// \u{2057}: '⁗'
-    pub const QUADRUPLE_PRIME: char = '⁗';
-    /// \u{2058}: '⁘'
-    pub const FOUR_DOT_PUNCTUATION: char = '⁘';
-    /// \u{2059}: '⁙'
-    pub const FIVE_DOT_PUNCTUATION: char = '⁙';
-    /// \u{205a}: '⁚'
-    pub const TWO_DOT_PUNCTUATION: char = '⁚';
-    /// \u{205b}: '⁛'
-    pub const FOUR_DOT_MARK: char = '⁛';
-    /// \u{205c}: '⁜'
-    pub const DOTTED_CROSS: char = '⁜';
-    /// \u{205d}: '⁝'
-    pub const TRICOLON: char = '⁝';
-    /// \u{205e}: '⁞'
-    pub const VERTICAL_FOUR_DOTS: char = '⁞';
-    /// \u{205f}: ' '
-    pub const MEDIUM_MATHEMATICAL_SPACE: char = ' ';
-    /// \u{2060}: '⁠'
-    pub const WORD_JOINER: char = '⁠';
-    /// \u{2061}: '⁡'
-    pub const FUNCTION_APPLICATION: char = '⁡';
-    /// \u{2062}: '⁢'
-    pub const INVISIBLE_TIMES: char = '⁢';
-    /// \u{2063}: '⁣'
-    pub const INVISIBLE_SEPARATOR: char = '⁣';
-    /// \u{2064}: '⁤'
-    pub const INVISIBLE_PLUS: char = '⁤';
-    /// \u{2066}: '⁦'
-    pub const LEFT_DASH_TO_DASH_RIGHT_ISOLATE: char = '⁦';
-    /// \u{2067}: '⁧'
-    pub const RIGHT_DASH_TO_DASH_LEFT_ISOLATE: char = '⁧';
-    /// \u{2068}: '⁨'
-    pub const FIRST_STRONG_ISOLATE: char = '⁨';
-    /// \u{2069}: '⁩'
-    pub const POP_DIRECTIONAL_ISOLATE: char = '⁩';
-    /// \u{206a}: '⁪'
-    pub const INHIBIT_SYMMETRIC_SWAPPING: char = '⁪';
-    /// \u{206b}: '⁫'
-    pub const ACTIVATE_SYMMETRIC_SWAPPING: char = '⁫';
-    /// \u{206c}: '⁬'
-    pub const INHIBIT_ARABIC_FORM_SHAPING: char = '⁬';
-    /// \u{206d}: '⁭'
-    pub const ACTIVATE_ARABIC_FORM_SHAPING: char = '⁭';
-    /// \u{206e}: '⁮'
-    pub const NATIONAL_DIGIT_SHAPES: char = '⁮';
-}
 
 /// An enum to represent all characters in the GeneralPunctuation block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -449,118 +226,117 @@ pub enum GeneralPunctuation {
 
 impl Into<char> for GeneralPunctuation {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            GeneralPunctuation::EnQuad => EN_QUAD,
-            GeneralPunctuation::EmQuad => EM_QUAD,
-            GeneralPunctuation::EnSpace => EN_SPACE,
-            GeneralPunctuation::EmSpace => EM_SPACE,
-            GeneralPunctuation::ThreeDashPerDashEmSpace => THREE_DASH_PER_DASH_EM_SPACE,
-            GeneralPunctuation::FourDashPerDashEmSpace => FOUR_DASH_PER_DASH_EM_SPACE,
-            GeneralPunctuation::SixDashPerDashEmSpace => SIX_DASH_PER_DASH_EM_SPACE,
-            GeneralPunctuation::FigureSpace => FIGURE_SPACE,
-            GeneralPunctuation::PunctuationSpace => PUNCTUATION_SPACE,
-            GeneralPunctuation::ThinSpace => THIN_SPACE,
-            GeneralPunctuation::HairSpace => HAIR_SPACE,
-            GeneralPunctuation::ZeroWidthSpace => ZERO_WIDTH_SPACE,
-            GeneralPunctuation::ZeroWidthNonDashJoiner => ZERO_WIDTH_NON_DASH_JOINER,
-            GeneralPunctuation::ZeroWidthJoiner => ZERO_WIDTH_JOINER,
-            GeneralPunctuation::LeftDashToDashRightMark => LEFT_DASH_TO_DASH_RIGHT_MARK,
-            GeneralPunctuation::RightDashToDashLeftMark => RIGHT_DASH_TO_DASH_LEFT_MARK,
-            GeneralPunctuation::Hyphen => HYPHEN,
-            GeneralPunctuation::NonDashBreakingHyphen => NON_DASH_BREAKING_HYPHEN,
-            GeneralPunctuation::FigureDash => FIGURE_DASH,
-            GeneralPunctuation::EnDash => EN_DASH,
-            GeneralPunctuation::EmDash => EM_DASH,
-            GeneralPunctuation::HorizontalBar => HORIZONTAL_BAR,
-            GeneralPunctuation::DoubleVerticalLine => DOUBLE_VERTICAL_LINE,
-            GeneralPunctuation::DoubleLowLine => DOUBLE_LOW_LINE,
-            GeneralPunctuation::LeftSingleQuotationMark => LEFT_SINGLE_QUOTATION_MARK,
-            GeneralPunctuation::RightSingleQuotationMark => RIGHT_SINGLE_QUOTATION_MARK,
-            GeneralPunctuation::SingleLowDash9QuotationMark => SINGLE_LOW_DASH_9_QUOTATION_MARK,
-            GeneralPunctuation::SingleHighDashReversedDash9QuotationMark => SINGLE_HIGH_DASH_REVERSED_DASH_9_QUOTATION_MARK,
-            GeneralPunctuation::LeftDoubleQuotationMark => LEFT_DOUBLE_QUOTATION_MARK,
-            GeneralPunctuation::RightDoubleQuotationMark => RIGHT_DOUBLE_QUOTATION_MARK,
-            GeneralPunctuation::DoubleLowDash9QuotationMark => DOUBLE_LOW_DASH_9_QUOTATION_MARK,
-            GeneralPunctuation::DoubleHighDashReversedDash9QuotationMark => DOUBLE_HIGH_DASH_REVERSED_DASH_9_QUOTATION_MARK,
-            GeneralPunctuation::Dagger => DAGGER,
-            GeneralPunctuation::DoubleDagger => DOUBLE_DAGGER,
-            GeneralPunctuation::Bullet => BULLET,
-            GeneralPunctuation::TriangularBullet => TRIANGULAR_BULLET,
-            GeneralPunctuation::OneDotLeader => ONE_DOT_LEADER,
-            GeneralPunctuation::TwoDotLeader => TWO_DOT_LEADER,
-            GeneralPunctuation::HorizontalEllipsis => HORIZONTAL_ELLIPSIS,
-            GeneralPunctuation::HyphenationPoint => HYPHENATION_POINT,
-            GeneralPunctuation::LineSeparator => LINE_SEPARATOR,
-            GeneralPunctuation::ParagraphSeparator => PARAGRAPH_SEPARATOR,
-            GeneralPunctuation::LeftDashToDashRightEmbedding => LEFT_DASH_TO_DASH_RIGHT_EMBEDDING,
-            GeneralPunctuation::RightDashToDashLeftEmbedding => RIGHT_DASH_TO_DASH_LEFT_EMBEDDING,
-            GeneralPunctuation::PopDirectionalFormatting => POP_DIRECTIONAL_FORMATTING,
-            GeneralPunctuation::LeftDashToDashRightOverride => LEFT_DASH_TO_DASH_RIGHT_OVERRIDE,
-            GeneralPunctuation::RightDashToDashLeftOverride => RIGHT_DASH_TO_DASH_LEFT_OVERRIDE,
-            GeneralPunctuation::NarrowNoDashBreakSpace => NARROW_NO_DASH_BREAK_SPACE,
-            GeneralPunctuation::PerMilleSign => PER_MILLE_SIGN,
-            GeneralPunctuation::PerTenThousandSign => PER_TEN_THOUSAND_SIGN,
-            GeneralPunctuation::Prime => PRIME,
-            GeneralPunctuation::DoublePrime => DOUBLE_PRIME,
-            GeneralPunctuation::TriplePrime => TRIPLE_PRIME,
-            GeneralPunctuation::ReversedPrime => REVERSED_PRIME,
-            GeneralPunctuation::ReversedDoublePrime => REVERSED_DOUBLE_PRIME,
-            GeneralPunctuation::ReversedTriplePrime => REVERSED_TRIPLE_PRIME,
-            GeneralPunctuation::Caret => CARET,
-            GeneralPunctuation::SingleLeftDashPointingAngleQuotationMark => SINGLE_LEFT_DASH_POINTING_ANGLE_QUOTATION_MARK,
-            GeneralPunctuation::SingleRightDashPointingAngleQuotationMark => SINGLE_RIGHT_DASH_POINTING_ANGLE_QUOTATION_MARK,
-            GeneralPunctuation::ReferenceMark => REFERENCE_MARK,
-            GeneralPunctuation::DoubleExclamationMark => DOUBLE_EXCLAMATION_MARK,
-            GeneralPunctuation::Interrobang => INTERROBANG,
-            GeneralPunctuation::Overline => OVERLINE,
-            GeneralPunctuation::Undertie => UNDERTIE,
-            GeneralPunctuation::CharacterTie => CHARACTER_TIE,
-            GeneralPunctuation::CaretInsertionPoint => CARET_INSERTION_POINT,
-            GeneralPunctuation::Asterism => ASTERISM,
-            GeneralPunctuation::HyphenBullet => HYPHEN_BULLET,
-            GeneralPunctuation::FractionSlash => FRACTION_SLASH,
-            GeneralPunctuation::LeftSquareBracketWithQuill => LEFT_SQUARE_BRACKET_WITH_QUILL,
-            GeneralPunctuation::RightSquareBracketWithQuill => RIGHT_SQUARE_BRACKET_WITH_QUILL,
-            GeneralPunctuation::DoubleQuestionMark => DOUBLE_QUESTION_MARK,
-            GeneralPunctuation::QuestionExclamationMark => QUESTION_EXCLAMATION_MARK,
-            GeneralPunctuation::ExclamationQuestionMark => EXCLAMATION_QUESTION_MARK,
-            GeneralPunctuation::TironianSignEt => TIRONIAN_SIGN_ET,
-            GeneralPunctuation::ReversedPilcrowSign => REVERSED_PILCROW_SIGN,
-            GeneralPunctuation::BlackLeftwardsBullet => BLACK_LEFTWARDS_BULLET,
-            GeneralPunctuation::BlackRightwardsBullet => BLACK_RIGHTWARDS_BULLET,
-            GeneralPunctuation::LowAsterisk => LOW_ASTERISK,
-            GeneralPunctuation::ReversedSemicolon => REVERSED_SEMICOLON,
-            GeneralPunctuation::CloseUp => CLOSE_UP,
-            GeneralPunctuation::TwoAsterisksAlignedVertically => TWO_ASTERISKS_ALIGNED_VERTICALLY,
-            GeneralPunctuation::CommercialMinusSign => COMMERCIAL_MINUS_SIGN,
-            GeneralPunctuation::SwungDash => SWUNG_DASH,
-            GeneralPunctuation::InvertedUndertie => INVERTED_UNDERTIE,
-            GeneralPunctuation::FlowerPunctuationMark => FLOWER_PUNCTUATION_MARK,
-            GeneralPunctuation::ThreeDotPunctuation => THREE_DOT_PUNCTUATION,
-            GeneralPunctuation::QuadruplePrime => QUADRUPLE_PRIME,
-            GeneralPunctuation::FourDotPunctuation => FOUR_DOT_PUNCTUATION,
-            GeneralPunctuation::FiveDotPunctuation => FIVE_DOT_PUNCTUATION,
-            GeneralPunctuation::TwoDotPunctuation => TWO_DOT_PUNCTUATION,
-            GeneralPunctuation::FourDotMark => FOUR_DOT_MARK,
-            GeneralPunctuation::DottedCross => DOTTED_CROSS,
-            GeneralPunctuation::Tricolon => TRICOLON,
-            GeneralPunctuation::VerticalFourDots => VERTICAL_FOUR_DOTS,
-            GeneralPunctuation::MediumMathematicalSpace => MEDIUM_MATHEMATICAL_SPACE,
-            GeneralPunctuation::WordJoiner => WORD_JOINER,
-            GeneralPunctuation::FunctionApplication => FUNCTION_APPLICATION,
-            GeneralPunctuation::InvisibleTimes => INVISIBLE_TIMES,
-            GeneralPunctuation::InvisibleSeparator => INVISIBLE_SEPARATOR,
-            GeneralPunctuation::InvisiblePlus => INVISIBLE_PLUS,
-            GeneralPunctuation::LeftDashToDashRightIsolate => LEFT_DASH_TO_DASH_RIGHT_ISOLATE,
-            GeneralPunctuation::RightDashToDashLeftIsolate => RIGHT_DASH_TO_DASH_LEFT_ISOLATE,
-            GeneralPunctuation::FirstStrongIsolate => FIRST_STRONG_ISOLATE,
-            GeneralPunctuation::PopDirectionalIsolate => POP_DIRECTIONAL_ISOLATE,
-            GeneralPunctuation::InhibitSymmetricSwapping => INHIBIT_SYMMETRIC_SWAPPING,
-            GeneralPunctuation::ActivateSymmetricSwapping => ACTIVATE_SYMMETRIC_SWAPPING,
-            GeneralPunctuation::InhibitArabicFormShaping => INHIBIT_ARABIC_FORM_SHAPING,
-            GeneralPunctuation::ActivateArabicFormShaping => ACTIVATE_ARABIC_FORM_SHAPING,
-            GeneralPunctuation::NationalDigitShapes => NATIONAL_DIGIT_SHAPES,
+            GeneralPunctuation::EnQuad => ' ',
+            GeneralPunctuation::EmQuad => ' ',
+            GeneralPunctuation::EnSpace => ' ',
+            GeneralPunctuation::EmSpace => ' ',
+            GeneralPunctuation::ThreeDashPerDashEmSpace => ' ',
+            GeneralPunctuation::FourDashPerDashEmSpace => ' ',
+            GeneralPunctuation::SixDashPerDashEmSpace => ' ',
+            GeneralPunctuation::FigureSpace => ' ',
+            GeneralPunctuation::PunctuationSpace => ' ',
+            GeneralPunctuation::ThinSpace => ' ',
+            GeneralPunctuation::HairSpace => ' ',
+            GeneralPunctuation::ZeroWidthSpace => '​',
+            GeneralPunctuation::ZeroWidthNonDashJoiner => '‌',
+            GeneralPunctuation::ZeroWidthJoiner => '‍',
+            GeneralPunctuation::LeftDashToDashRightMark => '‎',
+            GeneralPunctuation::RightDashToDashLeftMark => '‏',
+            GeneralPunctuation::Hyphen => '‐',
+            GeneralPunctuation::NonDashBreakingHyphen => '‑',
+            GeneralPunctuation::FigureDash => '‒',
+            GeneralPunctuation::EnDash => '–',
+            GeneralPunctuation::EmDash => '—',
+            GeneralPunctuation::HorizontalBar => '―',
+            GeneralPunctuation::DoubleVerticalLine => '‖',
+            GeneralPunctuation::DoubleLowLine => '‗',
+            GeneralPunctuation::LeftSingleQuotationMark => '‘',
+            GeneralPunctuation::RightSingleQuotationMark => '’',
+            GeneralPunctuation::SingleLowDash9QuotationMark => '‚',
+            GeneralPunctuation::SingleHighDashReversedDash9QuotationMark => '‛',
+            GeneralPunctuation::LeftDoubleQuotationMark => '“',
+            GeneralPunctuation::RightDoubleQuotationMark => '”',
+            GeneralPunctuation::DoubleLowDash9QuotationMark => '„',
+            GeneralPunctuation::DoubleHighDashReversedDash9QuotationMark => '‟',
+            GeneralPunctuation::Dagger => '†',
+            GeneralPunctuation::DoubleDagger => '‡',
+            GeneralPunctuation::Bullet => '•',
+            GeneralPunctuation::TriangularBullet => '‣',
+            GeneralPunctuation::OneDotLeader => '․',
+            GeneralPunctuation::TwoDotLeader => '‥',
+            GeneralPunctuation::HorizontalEllipsis => '…',
+            GeneralPunctuation::HyphenationPoint => '‧',
+            GeneralPunctuation::LineSeparator => ' ',
+            GeneralPunctuation::ParagraphSeparator => ' ',
+            GeneralPunctuation::LeftDashToDashRightEmbedding => '‪',
+            GeneralPunctuation::RightDashToDashLeftEmbedding => '‫',
+            GeneralPunctuation::PopDirectionalFormatting => '‬',
+            GeneralPunctuation::LeftDashToDashRightOverride => '‭',
+            GeneralPunctuation::RightDashToDashLeftOverride => '‮',
+            GeneralPunctuation::NarrowNoDashBreakSpace => ' ',
+            GeneralPunctuation::PerMilleSign => '‰',
+            GeneralPunctuation::PerTenThousandSign => '‱',
+            GeneralPunctuation::Prime => '′',
+            GeneralPunctuation::DoublePrime => '″',
+            GeneralPunctuation::TriplePrime => '‴',
+            GeneralPunctuation::ReversedPrime => '‵',
+            GeneralPunctuation::ReversedDoublePrime => '‶',
+            GeneralPunctuation::ReversedTriplePrime => '‷',
+            GeneralPunctuation::Caret => '‸',
+            GeneralPunctuation::SingleLeftDashPointingAngleQuotationMark => '‹',
+            GeneralPunctuation::SingleRightDashPointingAngleQuotationMark => '›',
+            GeneralPunctuation::ReferenceMark => '※',
+            GeneralPunctuation::DoubleExclamationMark => '‼',
+            GeneralPunctuation::Interrobang => '‽',
+            GeneralPunctuation::Overline => '‾',
+            GeneralPunctuation::Undertie => '‿',
+            GeneralPunctuation::CharacterTie => '⁀',
+            GeneralPunctuation::CaretInsertionPoint => '⁁',
+            GeneralPunctuation::Asterism => '⁂',
+            GeneralPunctuation::HyphenBullet => '⁃',
+            GeneralPunctuation::FractionSlash => '⁄',
+            GeneralPunctuation::LeftSquareBracketWithQuill => '⁅',
+            GeneralPunctuation::RightSquareBracketWithQuill => '⁆',
+            GeneralPunctuation::DoubleQuestionMark => '⁇',
+            GeneralPunctuation::QuestionExclamationMark => '⁈',
+            GeneralPunctuation::ExclamationQuestionMark => '⁉',
+            GeneralPunctuation::TironianSignEt => '⁊',
+            GeneralPunctuation::ReversedPilcrowSign => '⁋',
+            GeneralPunctuation::BlackLeftwardsBullet => '⁌',
+            GeneralPunctuation::BlackRightwardsBullet => '⁍',
+            GeneralPunctuation::LowAsterisk => '⁎',
+            GeneralPunctuation::ReversedSemicolon => '⁏',
+            GeneralPunctuation::CloseUp => '⁐',
+            GeneralPunctuation::TwoAsterisksAlignedVertically => '⁑',
+            GeneralPunctuation::CommercialMinusSign => '⁒',
+            GeneralPunctuation::SwungDash => '⁓',
+            GeneralPunctuation::InvertedUndertie => '⁔',
+            GeneralPunctuation::FlowerPunctuationMark => '⁕',
+            GeneralPunctuation::ThreeDotPunctuation => '⁖',
+            GeneralPunctuation::QuadruplePrime => '⁗',
+            GeneralPunctuation::FourDotPunctuation => '⁘',
+            GeneralPunctuation::FiveDotPunctuation => '⁙',
+            GeneralPunctuation::TwoDotPunctuation => '⁚',
+            GeneralPunctuation::FourDotMark => '⁛',
+            GeneralPunctuation::DottedCross => '⁜',
+            GeneralPunctuation::Tricolon => '⁝',
+            GeneralPunctuation::VerticalFourDots => '⁞',
+            GeneralPunctuation::MediumMathematicalSpace => ' ',
+            GeneralPunctuation::WordJoiner => '⁠',
+            GeneralPunctuation::FunctionApplication => '⁡',
+            GeneralPunctuation::InvisibleTimes => '⁢',
+            GeneralPunctuation::InvisibleSeparator => '⁣',
+            GeneralPunctuation::InvisiblePlus => '⁤',
+            GeneralPunctuation::LeftDashToDashRightIsolate => '⁦',
+            GeneralPunctuation::RightDashToDashLeftIsolate => '⁧',
+            GeneralPunctuation::FirstStrongIsolate => '⁨',
+            GeneralPunctuation::PopDirectionalIsolate => '⁩',
+            GeneralPunctuation::InhibitSymmetricSwapping => '⁪',
+            GeneralPunctuation::ActivateSymmetricSwapping => '⁫',
+            GeneralPunctuation::InhibitArabicFormShaping => '⁬',
+            GeneralPunctuation::ActivateArabicFormShaping => '⁭',
+            GeneralPunctuation::NationalDigitShapes => '⁮',
         }
     }
 }
@@ -568,118 +344,117 @@ impl Into<char> for GeneralPunctuation {
 impl std::convert::TryFrom<char> for GeneralPunctuation {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            EN_QUAD => Ok(GeneralPunctuation::EnQuad),
-            EM_QUAD => Ok(GeneralPunctuation::EmQuad),
-            EN_SPACE => Ok(GeneralPunctuation::EnSpace),
-            EM_SPACE => Ok(GeneralPunctuation::EmSpace),
-            THREE_DASH_PER_DASH_EM_SPACE => Ok(GeneralPunctuation::ThreeDashPerDashEmSpace),
-            FOUR_DASH_PER_DASH_EM_SPACE => Ok(GeneralPunctuation::FourDashPerDashEmSpace),
-            SIX_DASH_PER_DASH_EM_SPACE => Ok(GeneralPunctuation::SixDashPerDashEmSpace),
-            FIGURE_SPACE => Ok(GeneralPunctuation::FigureSpace),
-            PUNCTUATION_SPACE => Ok(GeneralPunctuation::PunctuationSpace),
-            THIN_SPACE => Ok(GeneralPunctuation::ThinSpace),
-            HAIR_SPACE => Ok(GeneralPunctuation::HairSpace),
-            ZERO_WIDTH_SPACE => Ok(GeneralPunctuation::ZeroWidthSpace),
-            ZERO_WIDTH_NON_DASH_JOINER => Ok(GeneralPunctuation::ZeroWidthNonDashJoiner),
-            ZERO_WIDTH_JOINER => Ok(GeneralPunctuation::ZeroWidthJoiner),
-            LEFT_DASH_TO_DASH_RIGHT_MARK => Ok(GeneralPunctuation::LeftDashToDashRightMark),
-            RIGHT_DASH_TO_DASH_LEFT_MARK => Ok(GeneralPunctuation::RightDashToDashLeftMark),
-            HYPHEN => Ok(GeneralPunctuation::Hyphen),
-            NON_DASH_BREAKING_HYPHEN => Ok(GeneralPunctuation::NonDashBreakingHyphen),
-            FIGURE_DASH => Ok(GeneralPunctuation::FigureDash),
-            EN_DASH => Ok(GeneralPunctuation::EnDash),
-            EM_DASH => Ok(GeneralPunctuation::EmDash),
-            HORIZONTAL_BAR => Ok(GeneralPunctuation::HorizontalBar),
-            DOUBLE_VERTICAL_LINE => Ok(GeneralPunctuation::DoubleVerticalLine),
-            DOUBLE_LOW_LINE => Ok(GeneralPunctuation::DoubleLowLine),
-            LEFT_SINGLE_QUOTATION_MARK => Ok(GeneralPunctuation::LeftSingleQuotationMark),
-            RIGHT_SINGLE_QUOTATION_MARK => Ok(GeneralPunctuation::RightSingleQuotationMark),
-            SINGLE_LOW_DASH_9_QUOTATION_MARK => Ok(GeneralPunctuation::SingleLowDash9QuotationMark),
-            SINGLE_HIGH_DASH_REVERSED_DASH_9_QUOTATION_MARK => Ok(GeneralPunctuation::SingleHighDashReversedDash9QuotationMark),
-            LEFT_DOUBLE_QUOTATION_MARK => Ok(GeneralPunctuation::LeftDoubleQuotationMark),
-            RIGHT_DOUBLE_QUOTATION_MARK => Ok(GeneralPunctuation::RightDoubleQuotationMark),
-            DOUBLE_LOW_DASH_9_QUOTATION_MARK => Ok(GeneralPunctuation::DoubleLowDash9QuotationMark),
-            DOUBLE_HIGH_DASH_REVERSED_DASH_9_QUOTATION_MARK => Ok(GeneralPunctuation::DoubleHighDashReversedDash9QuotationMark),
-            DAGGER => Ok(GeneralPunctuation::Dagger),
-            DOUBLE_DAGGER => Ok(GeneralPunctuation::DoubleDagger),
-            BULLET => Ok(GeneralPunctuation::Bullet),
-            TRIANGULAR_BULLET => Ok(GeneralPunctuation::TriangularBullet),
-            ONE_DOT_LEADER => Ok(GeneralPunctuation::OneDotLeader),
-            TWO_DOT_LEADER => Ok(GeneralPunctuation::TwoDotLeader),
-            HORIZONTAL_ELLIPSIS => Ok(GeneralPunctuation::HorizontalEllipsis),
-            HYPHENATION_POINT => Ok(GeneralPunctuation::HyphenationPoint),
-            LINE_SEPARATOR => Ok(GeneralPunctuation::LineSeparator),
-            PARAGRAPH_SEPARATOR => Ok(GeneralPunctuation::ParagraphSeparator),
-            LEFT_DASH_TO_DASH_RIGHT_EMBEDDING => Ok(GeneralPunctuation::LeftDashToDashRightEmbedding),
-            RIGHT_DASH_TO_DASH_LEFT_EMBEDDING => Ok(GeneralPunctuation::RightDashToDashLeftEmbedding),
-            POP_DIRECTIONAL_FORMATTING => Ok(GeneralPunctuation::PopDirectionalFormatting),
-            LEFT_DASH_TO_DASH_RIGHT_OVERRIDE => Ok(GeneralPunctuation::LeftDashToDashRightOverride),
-            RIGHT_DASH_TO_DASH_LEFT_OVERRIDE => Ok(GeneralPunctuation::RightDashToDashLeftOverride),
-            NARROW_NO_DASH_BREAK_SPACE => Ok(GeneralPunctuation::NarrowNoDashBreakSpace),
-            PER_MILLE_SIGN => Ok(GeneralPunctuation::PerMilleSign),
-            PER_TEN_THOUSAND_SIGN => Ok(GeneralPunctuation::PerTenThousandSign),
-            PRIME => Ok(GeneralPunctuation::Prime),
-            DOUBLE_PRIME => Ok(GeneralPunctuation::DoublePrime),
-            TRIPLE_PRIME => Ok(GeneralPunctuation::TriplePrime),
-            REVERSED_PRIME => Ok(GeneralPunctuation::ReversedPrime),
-            REVERSED_DOUBLE_PRIME => Ok(GeneralPunctuation::ReversedDoublePrime),
-            REVERSED_TRIPLE_PRIME => Ok(GeneralPunctuation::ReversedTriplePrime),
-            CARET => Ok(GeneralPunctuation::Caret),
-            SINGLE_LEFT_DASH_POINTING_ANGLE_QUOTATION_MARK => Ok(GeneralPunctuation::SingleLeftDashPointingAngleQuotationMark),
-            SINGLE_RIGHT_DASH_POINTING_ANGLE_QUOTATION_MARK => Ok(GeneralPunctuation::SingleRightDashPointingAngleQuotationMark),
-            REFERENCE_MARK => Ok(GeneralPunctuation::ReferenceMark),
-            DOUBLE_EXCLAMATION_MARK => Ok(GeneralPunctuation::DoubleExclamationMark),
-            INTERROBANG => Ok(GeneralPunctuation::Interrobang),
-            OVERLINE => Ok(GeneralPunctuation::Overline),
-            UNDERTIE => Ok(GeneralPunctuation::Undertie),
-            CHARACTER_TIE => Ok(GeneralPunctuation::CharacterTie),
-            CARET_INSERTION_POINT => Ok(GeneralPunctuation::CaretInsertionPoint),
-            ASTERISM => Ok(GeneralPunctuation::Asterism),
-            HYPHEN_BULLET => Ok(GeneralPunctuation::HyphenBullet),
-            FRACTION_SLASH => Ok(GeneralPunctuation::FractionSlash),
-            LEFT_SQUARE_BRACKET_WITH_QUILL => Ok(GeneralPunctuation::LeftSquareBracketWithQuill),
-            RIGHT_SQUARE_BRACKET_WITH_QUILL => Ok(GeneralPunctuation::RightSquareBracketWithQuill),
-            DOUBLE_QUESTION_MARK => Ok(GeneralPunctuation::DoubleQuestionMark),
-            QUESTION_EXCLAMATION_MARK => Ok(GeneralPunctuation::QuestionExclamationMark),
-            EXCLAMATION_QUESTION_MARK => Ok(GeneralPunctuation::ExclamationQuestionMark),
-            TIRONIAN_SIGN_ET => Ok(GeneralPunctuation::TironianSignEt),
-            REVERSED_PILCROW_SIGN => Ok(GeneralPunctuation::ReversedPilcrowSign),
-            BLACK_LEFTWARDS_BULLET => Ok(GeneralPunctuation::BlackLeftwardsBullet),
-            BLACK_RIGHTWARDS_BULLET => Ok(GeneralPunctuation::BlackRightwardsBullet),
-            LOW_ASTERISK => Ok(GeneralPunctuation::LowAsterisk),
-            REVERSED_SEMICOLON => Ok(GeneralPunctuation::ReversedSemicolon),
-            CLOSE_UP => Ok(GeneralPunctuation::CloseUp),
-            TWO_ASTERISKS_ALIGNED_VERTICALLY => Ok(GeneralPunctuation::TwoAsterisksAlignedVertically),
-            COMMERCIAL_MINUS_SIGN => Ok(GeneralPunctuation::CommercialMinusSign),
-            SWUNG_DASH => Ok(GeneralPunctuation::SwungDash),
-            INVERTED_UNDERTIE => Ok(GeneralPunctuation::InvertedUndertie),
-            FLOWER_PUNCTUATION_MARK => Ok(GeneralPunctuation::FlowerPunctuationMark),
-            THREE_DOT_PUNCTUATION => Ok(GeneralPunctuation::ThreeDotPunctuation),
-            QUADRUPLE_PRIME => Ok(GeneralPunctuation::QuadruplePrime),
-            FOUR_DOT_PUNCTUATION => Ok(GeneralPunctuation::FourDotPunctuation),
-            FIVE_DOT_PUNCTUATION => Ok(GeneralPunctuation::FiveDotPunctuation),
-            TWO_DOT_PUNCTUATION => Ok(GeneralPunctuation::TwoDotPunctuation),
-            FOUR_DOT_MARK => Ok(GeneralPunctuation::FourDotMark),
-            DOTTED_CROSS => Ok(GeneralPunctuation::DottedCross),
-            TRICOLON => Ok(GeneralPunctuation::Tricolon),
-            VERTICAL_FOUR_DOTS => Ok(GeneralPunctuation::VerticalFourDots),
-            MEDIUM_MATHEMATICAL_SPACE => Ok(GeneralPunctuation::MediumMathematicalSpace),
-            WORD_JOINER => Ok(GeneralPunctuation::WordJoiner),
-            FUNCTION_APPLICATION => Ok(GeneralPunctuation::FunctionApplication),
-            INVISIBLE_TIMES => Ok(GeneralPunctuation::InvisibleTimes),
-            INVISIBLE_SEPARATOR => Ok(GeneralPunctuation::InvisibleSeparator),
-            INVISIBLE_PLUS => Ok(GeneralPunctuation::InvisiblePlus),
-            LEFT_DASH_TO_DASH_RIGHT_ISOLATE => Ok(GeneralPunctuation::LeftDashToDashRightIsolate),
-            RIGHT_DASH_TO_DASH_LEFT_ISOLATE => Ok(GeneralPunctuation::RightDashToDashLeftIsolate),
-            FIRST_STRONG_ISOLATE => Ok(GeneralPunctuation::FirstStrongIsolate),
-            POP_DIRECTIONAL_ISOLATE => Ok(GeneralPunctuation::PopDirectionalIsolate),
-            INHIBIT_SYMMETRIC_SWAPPING => Ok(GeneralPunctuation::InhibitSymmetricSwapping),
-            ACTIVATE_SYMMETRIC_SWAPPING => Ok(GeneralPunctuation::ActivateSymmetricSwapping),
-            INHIBIT_ARABIC_FORM_SHAPING => Ok(GeneralPunctuation::InhibitArabicFormShaping),
-            ACTIVATE_ARABIC_FORM_SHAPING => Ok(GeneralPunctuation::ActivateArabicFormShaping),
-            NATIONAL_DIGIT_SHAPES => Ok(GeneralPunctuation::NationalDigitShapes),
+            ' ' => Ok(GeneralPunctuation::EnQuad),
+            ' ' => Ok(GeneralPunctuation::EmQuad),
+            ' ' => Ok(GeneralPunctuation::EnSpace),
+            ' ' => Ok(GeneralPunctuation::EmSpace),
+            ' ' => Ok(GeneralPunctuation::ThreeDashPerDashEmSpace),
+            ' ' => Ok(GeneralPunctuation::FourDashPerDashEmSpace),
+            ' ' => Ok(GeneralPunctuation::SixDashPerDashEmSpace),
+            ' ' => Ok(GeneralPunctuation::FigureSpace),
+            ' ' => Ok(GeneralPunctuation::PunctuationSpace),
+            ' ' => Ok(GeneralPunctuation::ThinSpace),
+            ' ' => Ok(GeneralPunctuation::HairSpace),
+            '​' => Ok(GeneralPunctuation::ZeroWidthSpace),
+            '‌' => Ok(GeneralPunctuation::ZeroWidthNonDashJoiner),
+            '‍' => Ok(GeneralPunctuation::ZeroWidthJoiner),
+            '‎' => Ok(GeneralPunctuation::LeftDashToDashRightMark),
+            '‏' => Ok(GeneralPunctuation::RightDashToDashLeftMark),
+            '‐' => Ok(GeneralPunctuation::Hyphen),
+            '‑' => Ok(GeneralPunctuation::NonDashBreakingHyphen),
+            '‒' => Ok(GeneralPunctuation::FigureDash),
+            '–' => Ok(GeneralPunctuation::EnDash),
+            '—' => Ok(GeneralPunctuation::EmDash),
+            '―' => Ok(GeneralPunctuation::HorizontalBar),
+            '‖' => Ok(GeneralPunctuation::DoubleVerticalLine),
+            '‗' => Ok(GeneralPunctuation::DoubleLowLine),
+            '‘' => Ok(GeneralPunctuation::LeftSingleQuotationMark),
+            '’' => Ok(GeneralPunctuation::RightSingleQuotationMark),
+            '‚' => Ok(GeneralPunctuation::SingleLowDash9QuotationMark),
+            '‛' => Ok(GeneralPunctuation::SingleHighDashReversedDash9QuotationMark),
+            '“' => Ok(GeneralPunctuation::LeftDoubleQuotationMark),
+            '”' => Ok(GeneralPunctuation::RightDoubleQuotationMark),
+            '„' => Ok(GeneralPunctuation::DoubleLowDash9QuotationMark),
+            '‟' => Ok(GeneralPunctuation::DoubleHighDashReversedDash9QuotationMark),
+            '†' => Ok(GeneralPunctuation::Dagger),
+            '‡' => Ok(GeneralPunctuation::DoubleDagger),
+            '•' => Ok(GeneralPunctuation::Bullet),
+            '‣' => Ok(GeneralPunctuation::TriangularBullet),
+            '․' => Ok(GeneralPunctuation::OneDotLeader),
+            '‥' => Ok(GeneralPunctuation::TwoDotLeader),
+            '…' => Ok(GeneralPunctuation::HorizontalEllipsis),
+            '‧' => Ok(GeneralPunctuation::HyphenationPoint),
+            ' ' => Ok(GeneralPunctuation::LineSeparator),
+            ' ' => Ok(GeneralPunctuation::ParagraphSeparator),
+            '‪' => Ok(GeneralPunctuation::LeftDashToDashRightEmbedding),
+            '‫' => Ok(GeneralPunctuation::RightDashToDashLeftEmbedding),
+            '‬' => Ok(GeneralPunctuation::PopDirectionalFormatting),
+            '‭' => Ok(GeneralPunctuation::LeftDashToDashRightOverride),
+            '‮' => Ok(GeneralPunctuation::RightDashToDashLeftOverride),
+            ' ' => Ok(GeneralPunctuation::NarrowNoDashBreakSpace),
+            '‰' => Ok(GeneralPunctuation::PerMilleSign),
+            '‱' => Ok(GeneralPunctuation::PerTenThousandSign),
+            '′' => Ok(GeneralPunctuation::Prime),
+            '″' => Ok(GeneralPunctuation::DoublePrime),
+            '‴' => Ok(GeneralPunctuation::TriplePrime),
+            '‵' => Ok(GeneralPunctuation::ReversedPrime),
+            '‶' => Ok(GeneralPunctuation::ReversedDoublePrime),
+            '‷' => Ok(GeneralPunctuation::ReversedTriplePrime),
+            '‸' => Ok(GeneralPunctuation::Caret),
+            '‹' => Ok(GeneralPunctuation::SingleLeftDashPointingAngleQuotationMark),
+            '›' => Ok(GeneralPunctuation::SingleRightDashPointingAngleQuotationMark),
+            '※' => Ok(GeneralPunctuation::ReferenceMark),
+            '‼' => Ok(GeneralPunctuation::DoubleExclamationMark),
+            '‽' => Ok(GeneralPunctuation::Interrobang),
+            '‾' => Ok(GeneralPunctuation::Overline),
+            '‿' => Ok(GeneralPunctuation::Undertie),
+            '⁀' => Ok(GeneralPunctuation::CharacterTie),
+            '⁁' => Ok(GeneralPunctuation::CaretInsertionPoint),
+            '⁂' => Ok(GeneralPunctuation::Asterism),
+            '⁃' => Ok(GeneralPunctuation::HyphenBullet),
+            '⁄' => Ok(GeneralPunctuation::FractionSlash),
+            '⁅' => Ok(GeneralPunctuation::LeftSquareBracketWithQuill),
+            '⁆' => Ok(GeneralPunctuation::RightSquareBracketWithQuill),
+            '⁇' => Ok(GeneralPunctuation::DoubleQuestionMark),
+            '⁈' => Ok(GeneralPunctuation::QuestionExclamationMark),
+            '⁉' => Ok(GeneralPunctuation::ExclamationQuestionMark),
+            '⁊' => Ok(GeneralPunctuation::TironianSignEt),
+            '⁋' => Ok(GeneralPunctuation::ReversedPilcrowSign),
+            '⁌' => Ok(GeneralPunctuation::BlackLeftwardsBullet),
+            '⁍' => Ok(GeneralPunctuation::BlackRightwardsBullet),
+            '⁎' => Ok(GeneralPunctuation::LowAsterisk),
+            '⁏' => Ok(GeneralPunctuation::ReversedSemicolon),
+            '⁐' => Ok(GeneralPunctuation::CloseUp),
+            '⁑' => Ok(GeneralPunctuation::TwoAsterisksAlignedVertically),
+            '⁒' => Ok(GeneralPunctuation::CommercialMinusSign),
+            '⁓' => Ok(GeneralPunctuation::SwungDash),
+            '⁔' => Ok(GeneralPunctuation::InvertedUndertie),
+            '⁕' => Ok(GeneralPunctuation::FlowerPunctuationMark),
+            '⁖' => Ok(GeneralPunctuation::ThreeDotPunctuation),
+            '⁗' => Ok(GeneralPunctuation::QuadruplePrime),
+            '⁘' => Ok(GeneralPunctuation::FourDotPunctuation),
+            '⁙' => Ok(GeneralPunctuation::FiveDotPunctuation),
+            '⁚' => Ok(GeneralPunctuation::TwoDotPunctuation),
+            '⁛' => Ok(GeneralPunctuation::FourDotMark),
+            '⁜' => Ok(GeneralPunctuation::DottedCross),
+            '⁝' => Ok(GeneralPunctuation::Tricolon),
+            '⁞' => Ok(GeneralPunctuation::VerticalFourDots),
+            ' ' => Ok(GeneralPunctuation::MediumMathematicalSpace),
+            '⁠' => Ok(GeneralPunctuation::WordJoiner),
+            '⁡' => Ok(GeneralPunctuation::FunctionApplication),
+            '⁢' => Ok(GeneralPunctuation::InvisibleTimes),
+            '⁣' => Ok(GeneralPunctuation::InvisibleSeparator),
+            '⁤' => Ok(GeneralPunctuation::InvisiblePlus),
+            '⁦' => Ok(GeneralPunctuation::LeftDashToDashRightIsolate),
+            '⁧' => Ok(GeneralPunctuation::RightDashToDashLeftIsolate),
+            '⁨' => Ok(GeneralPunctuation::FirstStrongIsolate),
+            '⁩' => Ok(GeneralPunctuation::PopDirectionalIsolate),
+            '⁪' => Ok(GeneralPunctuation::InhibitSymmetricSwapping),
+            '⁫' => Ok(GeneralPunctuation::ActivateSymmetricSwapping),
+            '⁬' => Ok(GeneralPunctuation::InhibitArabicFormShaping),
+            '⁭' => Ok(GeneralPunctuation::ActivateArabicFormShaping),
+            '⁮' => Ok(GeneralPunctuation::NationalDigitShapes),
             _ => Err(()),
         }
     }

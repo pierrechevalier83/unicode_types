@@ -1,1284 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1400}: '᐀'
-    pub const CANADIAN_SYLLABICS_HYPHEN: char = '᐀';
-    /// \u{1401}: 'ᐁ'
-    pub const CANADIAN_SYLLABICS_E: char = 'ᐁ';
-    /// \u{1402}: 'ᐂ'
-    pub const CANADIAN_SYLLABICS_AAI: char = 'ᐂ';
-    /// \u{1403}: 'ᐃ'
-    pub const CANADIAN_SYLLABICS_I: char = 'ᐃ';
-    /// \u{1404}: 'ᐄ'
-    pub const CANADIAN_SYLLABICS_II: char = 'ᐄ';
-    /// \u{1405}: 'ᐅ'
-    pub const CANADIAN_SYLLABICS_O: char = 'ᐅ';
-    /// \u{1406}: 'ᐆ'
-    pub const CANADIAN_SYLLABICS_OO: char = 'ᐆ';
-    /// \u{1407}: 'ᐇ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_OO: char = 'ᐇ';
-    /// \u{1408}: 'ᐈ'
-    pub const CANADIAN_SYLLABICS_CARRIER_EE: char = 'ᐈ';
-    /// \u{1409}: 'ᐉ'
-    pub const CANADIAN_SYLLABICS_CARRIER_I: char = 'ᐉ';
-    /// \u{140a}: 'ᐊ'
-    pub const CANADIAN_SYLLABICS_A: char = 'ᐊ';
-    /// \u{140b}: 'ᐋ'
-    pub const CANADIAN_SYLLABICS_AA: char = 'ᐋ';
-    /// \u{140c}: 'ᐌ'
-    pub const CANADIAN_SYLLABICS_WE: char = 'ᐌ';
-    /// \u{140d}: 'ᐍ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_WE: char = 'ᐍ';
-    /// \u{140e}: 'ᐎ'
-    pub const CANADIAN_SYLLABICS_WI: char = 'ᐎ';
-    /// \u{140f}: 'ᐏ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_WI: char = 'ᐏ';
-    /// \u{1410}: 'ᐐ'
-    pub const CANADIAN_SYLLABICS_WII: char = 'ᐐ';
-    /// \u{1411}: 'ᐑ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_WII: char = 'ᐑ';
-    /// \u{1412}: 'ᐒ'
-    pub const CANADIAN_SYLLABICS_WO: char = 'ᐒ';
-    /// \u{1413}: 'ᐓ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_WO: char = 'ᐓ';
-    /// \u{1414}: 'ᐔ'
-    pub const CANADIAN_SYLLABICS_WOO: char = 'ᐔ';
-    /// \u{1415}: 'ᐕ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_WOO: char = 'ᐕ';
-    /// \u{1416}: 'ᐖ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_WOO: char = 'ᐖ';
-    /// \u{1417}: 'ᐗ'
-    pub const CANADIAN_SYLLABICS_WA: char = 'ᐗ';
-    /// \u{1418}: 'ᐘ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_WA: char = 'ᐘ';
-    /// \u{1419}: 'ᐙ'
-    pub const CANADIAN_SYLLABICS_WAA: char = 'ᐙ';
-    /// \u{141a}: 'ᐚ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_WAA: char = 'ᐚ';
-    /// \u{141b}: 'ᐛ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_WAA: char = 'ᐛ';
-    /// \u{141c}: 'ᐜ'
-    pub const CANADIAN_SYLLABICS_AI: char = 'ᐜ';
-    /// \u{141d}: 'ᐝ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_W: char = 'ᐝ';
-    /// \u{141e}: 'ᐞ'
-    pub const CANADIAN_SYLLABICS_GLOTTAL_STOP: char = 'ᐞ';
-    /// \u{141f}: 'ᐟ'
-    pub const CANADIAN_SYLLABICS_FINAL_ACUTE: char = 'ᐟ';
-    /// \u{1420}: 'ᐠ'
-    pub const CANADIAN_SYLLABICS_FINAL_GRAVE: char = 'ᐠ';
-    /// \u{1421}: 'ᐡ'
-    pub const CANADIAN_SYLLABICS_FINAL_BOTTOM_HALF_RING: char = 'ᐡ';
-    /// \u{1422}: 'ᐢ'
-    pub const CANADIAN_SYLLABICS_FINAL_TOP_HALF_RING: char = 'ᐢ';
-    /// \u{1423}: 'ᐣ'
-    pub const CANADIAN_SYLLABICS_FINAL_RIGHT_HALF_RING: char = 'ᐣ';
-    /// \u{1424}: 'ᐤ'
-    pub const CANADIAN_SYLLABICS_FINAL_RING: char = 'ᐤ';
-    /// \u{1425}: 'ᐥ'
-    pub const CANADIAN_SYLLABICS_FINAL_DOUBLE_ACUTE: char = 'ᐥ';
-    /// \u{1426}: 'ᐦ'
-    pub const CANADIAN_SYLLABICS_FINAL_DOUBLE_SHORT_VERTICAL_STROKES: char = 'ᐦ';
-    /// \u{1427}: 'ᐧ'
-    pub const CANADIAN_SYLLABICS_FINAL_MIDDLE_DOT: char = 'ᐧ';
-    /// \u{1428}: 'ᐨ'
-    pub const CANADIAN_SYLLABICS_FINAL_SHORT_HORIZONTAL_STROKE: char = 'ᐨ';
-    /// \u{1429}: 'ᐩ'
-    pub const CANADIAN_SYLLABICS_FINAL_PLUS: char = 'ᐩ';
-    /// \u{142a}: 'ᐪ'
-    pub const CANADIAN_SYLLABICS_FINAL_DOWN_TACK: char = 'ᐪ';
-    /// \u{142b}: 'ᐫ'
-    pub const CANADIAN_SYLLABICS_EN: char = 'ᐫ';
-    /// \u{142c}: 'ᐬ'
-    pub const CANADIAN_SYLLABICS_IN: char = 'ᐬ';
-    /// \u{142d}: 'ᐭ'
-    pub const CANADIAN_SYLLABICS_ON: char = 'ᐭ';
-    /// \u{142e}: 'ᐮ'
-    pub const CANADIAN_SYLLABICS_AN: char = 'ᐮ';
-    /// \u{142f}: 'ᐯ'
-    pub const CANADIAN_SYLLABICS_PE: char = 'ᐯ';
-    /// \u{1430}: 'ᐰ'
-    pub const CANADIAN_SYLLABICS_PAAI: char = 'ᐰ';
-    /// \u{1431}: 'ᐱ'
-    pub const CANADIAN_SYLLABICS_PI: char = 'ᐱ';
-    /// \u{1432}: 'ᐲ'
-    pub const CANADIAN_SYLLABICS_PII: char = 'ᐲ';
-    /// \u{1433}: 'ᐳ'
-    pub const CANADIAN_SYLLABICS_PO: char = 'ᐳ';
-    /// \u{1434}: 'ᐴ'
-    pub const CANADIAN_SYLLABICS_POO: char = 'ᐴ';
-    /// \u{1435}: 'ᐵ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_POO: char = 'ᐵ';
-    /// \u{1436}: 'ᐶ'
-    pub const CANADIAN_SYLLABICS_CARRIER_HEE: char = 'ᐶ';
-    /// \u{1437}: 'ᐷ'
-    pub const CANADIAN_SYLLABICS_CARRIER_HI: char = 'ᐷ';
-    /// \u{1438}: 'ᐸ'
-    pub const CANADIAN_SYLLABICS_PA: char = 'ᐸ';
-    /// \u{1439}: 'ᐹ'
-    pub const CANADIAN_SYLLABICS_PAA: char = 'ᐹ';
-    /// \u{143a}: 'ᐺ'
-    pub const CANADIAN_SYLLABICS_PWE: char = 'ᐺ';
-    /// \u{143b}: 'ᐻ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_PWE: char = 'ᐻ';
-    /// \u{143c}: 'ᐼ'
-    pub const CANADIAN_SYLLABICS_PWI: char = 'ᐼ';
-    /// \u{143d}: 'ᐽ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_PWI: char = 'ᐽ';
-    /// \u{143e}: 'ᐾ'
-    pub const CANADIAN_SYLLABICS_PWII: char = 'ᐾ';
-    /// \u{143f}: 'ᐿ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_PWII: char = 'ᐿ';
-    /// \u{1440}: 'ᑀ'
-    pub const CANADIAN_SYLLABICS_PWO: char = 'ᑀ';
-    /// \u{1441}: 'ᑁ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_PWO: char = 'ᑁ';
-    /// \u{1442}: 'ᑂ'
-    pub const CANADIAN_SYLLABICS_PWOO: char = 'ᑂ';
-    /// \u{1443}: 'ᑃ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_PWOO: char = 'ᑃ';
-    /// \u{1444}: 'ᑄ'
-    pub const CANADIAN_SYLLABICS_PWA: char = 'ᑄ';
-    /// \u{1445}: 'ᑅ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_PWA: char = 'ᑅ';
-    /// \u{1446}: 'ᑆ'
-    pub const CANADIAN_SYLLABICS_PWAA: char = 'ᑆ';
-    /// \u{1447}: 'ᑇ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_PWAA: char = 'ᑇ';
-    /// \u{1448}: 'ᑈ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_PWAA: char = 'ᑈ';
-    /// \u{1449}: 'ᑉ'
-    pub const CANADIAN_SYLLABICS_P: char = 'ᑉ';
-    /// \u{144a}: 'ᑊ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_P: char = 'ᑊ';
-    /// \u{144b}: 'ᑋ'
-    pub const CANADIAN_SYLLABICS_CARRIER_H: char = 'ᑋ';
-    /// \u{144c}: 'ᑌ'
-    pub const CANADIAN_SYLLABICS_TE: char = 'ᑌ';
-    /// \u{144d}: 'ᑍ'
-    pub const CANADIAN_SYLLABICS_TAAI: char = 'ᑍ';
-    /// \u{144e}: 'ᑎ'
-    pub const CANADIAN_SYLLABICS_TI: char = 'ᑎ';
-    /// \u{144f}: 'ᑏ'
-    pub const CANADIAN_SYLLABICS_TII: char = 'ᑏ';
-    /// \u{1450}: 'ᑐ'
-    pub const CANADIAN_SYLLABICS_TO: char = 'ᑐ';
-    /// \u{1451}: 'ᑑ'
-    pub const CANADIAN_SYLLABICS_TOO: char = 'ᑑ';
-    /// \u{1452}: 'ᑒ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_TOO: char = 'ᑒ';
-    /// \u{1453}: 'ᑓ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DEE: char = 'ᑓ';
-    /// \u{1454}: 'ᑔ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DI: char = 'ᑔ';
-    /// \u{1455}: 'ᑕ'
-    pub const CANADIAN_SYLLABICS_TA: char = 'ᑕ';
-    /// \u{1456}: 'ᑖ'
-    pub const CANADIAN_SYLLABICS_TAA: char = 'ᑖ';
-    /// \u{1457}: 'ᑗ'
-    pub const CANADIAN_SYLLABICS_TWE: char = 'ᑗ';
-    /// \u{1458}: 'ᑘ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_TWE: char = 'ᑘ';
-    /// \u{1459}: 'ᑙ'
-    pub const CANADIAN_SYLLABICS_TWI: char = 'ᑙ';
-    /// \u{145a}: 'ᑚ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_TWI: char = 'ᑚ';
-    /// \u{145b}: 'ᑛ'
-    pub const CANADIAN_SYLLABICS_TWII: char = 'ᑛ';
-    /// \u{145c}: 'ᑜ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_TWII: char = 'ᑜ';
-    /// \u{145d}: 'ᑝ'
-    pub const CANADIAN_SYLLABICS_TWO: char = 'ᑝ';
-    /// \u{145e}: 'ᑞ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_TWO: char = 'ᑞ';
-    /// \u{145f}: 'ᑟ'
-    pub const CANADIAN_SYLLABICS_TWOO: char = 'ᑟ';
-    /// \u{1460}: 'ᑠ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_TWOO: char = 'ᑠ';
-    /// \u{1461}: 'ᑡ'
-    pub const CANADIAN_SYLLABICS_TWA: char = 'ᑡ';
-    /// \u{1462}: 'ᑢ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_TWA: char = 'ᑢ';
-    /// \u{1463}: 'ᑣ'
-    pub const CANADIAN_SYLLABICS_TWAA: char = 'ᑣ';
-    /// \u{1464}: 'ᑤ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_TWAA: char = 'ᑤ';
-    /// \u{1465}: 'ᑥ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_TWAA: char = 'ᑥ';
-    /// \u{1466}: 'ᑦ'
-    pub const CANADIAN_SYLLABICS_T: char = 'ᑦ';
-    /// \u{1467}: 'ᑧ'
-    pub const CANADIAN_SYLLABICS_TTE: char = 'ᑧ';
-    /// \u{1468}: 'ᑨ'
-    pub const CANADIAN_SYLLABICS_TTI: char = 'ᑨ';
-    /// \u{1469}: 'ᑩ'
-    pub const CANADIAN_SYLLABICS_TTO: char = 'ᑩ';
-    /// \u{146a}: 'ᑪ'
-    pub const CANADIAN_SYLLABICS_TTA: char = 'ᑪ';
-    /// \u{146b}: 'ᑫ'
-    pub const CANADIAN_SYLLABICS_KE: char = 'ᑫ';
-    /// \u{146c}: 'ᑬ'
-    pub const CANADIAN_SYLLABICS_KAAI: char = 'ᑬ';
-    /// \u{146d}: 'ᑭ'
-    pub const CANADIAN_SYLLABICS_KI: char = 'ᑭ';
-    /// \u{146e}: 'ᑮ'
-    pub const CANADIAN_SYLLABICS_KII: char = 'ᑮ';
-    /// \u{146f}: 'ᑯ'
-    pub const CANADIAN_SYLLABICS_KO: char = 'ᑯ';
-    /// \u{1470}: 'ᑰ'
-    pub const CANADIAN_SYLLABICS_KOO: char = 'ᑰ';
-    /// \u{1471}: 'ᑱ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_KOO: char = 'ᑱ';
-    /// \u{1472}: 'ᑲ'
-    pub const CANADIAN_SYLLABICS_KA: char = 'ᑲ';
-    /// \u{1473}: 'ᑳ'
-    pub const CANADIAN_SYLLABICS_KAA: char = 'ᑳ';
-    /// \u{1474}: 'ᑴ'
-    pub const CANADIAN_SYLLABICS_KWE: char = 'ᑴ';
-    /// \u{1475}: 'ᑵ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_KWE: char = 'ᑵ';
-    /// \u{1476}: 'ᑶ'
-    pub const CANADIAN_SYLLABICS_KWI: char = 'ᑶ';
-    /// \u{1477}: 'ᑷ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_KWI: char = 'ᑷ';
-    /// \u{1478}: 'ᑸ'
-    pub const CANADIAN_SYLLABICS_KWII: char = 'ᑸ';
-    /// \u{1479}: 'ᑹ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_KWII: char = 'ᑹ';
-    /// \u{147a}: 'ᑺ'
-    pub const CANADIAN_SYLLABICS_KWO: char = 'ᑺ';
-    /// \u{147b}: 'ᑻ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_KWO: char = 'ᑻ';
-    /// \u{147c}: 'ᑼ'
-    pub const CANADIAN_SYLLABICS_KWOO: char = 'ᑼ';
-    /// \u{147d}: 'ᑽ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_KWOO: char = 'ᑽ';
-    /// \u{147e}: 'ᑾ'
-    pub const CANADIAN_SYLLABICS_KWA: char = 'ᑾ';
-    /// \u{147f}: 'ᑿ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_KWA: char = 'ᑿ';
-    /// \u{1480}: 'ᒀ'
-    pub const CANADIAN_SYLLABICS_KWAA: char = 'ᒀ';
-    /// \u{1481}: 'ᒁ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_KWAA: char = 'ᒁ';
-    /// \u{1482}: 'ᒂ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_KWAA: char = 'ᒂ';
-    /// \u{1483}: 'ᒃ'
-    pub const CANADIAN_SYLLABICS_K: char = 'ᒃ';
-    /// \u{1484}: 'ᒄ'
-    pub const CANADIAN_SYLLABICS_KW: char = 'ᒄ';
-    /// \u{1485}: 'ᒅ'
-    pub const CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KEH: char = 'ᒅ';
-    /// \u{1486}: 'ᒆ'
-    pub const CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KIH: char = 'ᒆ';
-    /// \u{1487}: 'ᒇ'
-    pub const CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KOH: char = 'ᒇ';
-    /// \u{1488}: 'ᒈ'
-    pub const CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KAH: char = 'ᒈ';
-    /// \u{1489}: 'ᒉ'
-    pub const CANADIAN_SYLLABICS_CE: char = 'ᒉ';
-    /// \u{148a}: 'ᒊ'
-    pub const CANADIAN_SYLLABICS_CAAI: char = 'ᒊ';
-    /// \u{148b}: 'ᒋ'
-    pub const CANADIAN_SYLLABICS_CI: char = 'ᒋ';
-    /// \u{148c}: 'ᒌ'
-    pub const CANADIAN_SYLLABICS_CII: char = 'ᒌ';
-    /// \u{148d}: 'ᒍ'
-    pub const CANADIAN_SYLLABICS_CO: char = 'ᒍ';
-    /// \u{148e}: 'ᒎ'
-    pub const CANADIAN_SYLLABICS_COO: char = 'ᒎ';
-    /// \u{148f}: 'ᒏ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_COO: char = 'ᒏ';
-    /// \u{1490}: 'ᒐ'
-    pub const CANADIAN_SYLLABICS_CA: char = 'ᒐ';
-    /// \u{1491}: 'ᒑ'
-    pub const CANADIAN_SYLLABICS_CAA: char = 'ᒑ';
-    /// \u{1492}: 'ᒒ'
-    pub const CANADIAN_SYLLABICS_CWE: char = 'ᒒ';
-    /// \u{1493}: 'ᒓ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_CWE: char = 'ᒓ';
-    /// \u{1494}: 'ᒔ'
-    pub const CANADIAN_SYLLABICS_CWI: char = 'ᒔ';
-    /// \u{1495}: 'ᒕ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_CWI: char = 'ᒕ';
-    /// \u{1496}: 'ᒖ'
-    pub const CANADIAN_SYLLABICS_CWII: char = 'ᒖ';
-    /// \u{1497}: 'ᒗ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_CWII: char = 'ᒗ';
-    /// \u{1498}: 'ᒘ'
-    pub const CANADIAN_SYLLABICS_CWO: char = 'ᒘ';
-    /// \u{1499}: 'ᒙ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_CWO: char = 'ᒙ';
-    /// \u{149a}: 'ᒚ'
-    pub const CANADIAN_SYLLABICS_CWOO: char = 'ᒚ';
-    /// \u{149b}: 'ᒛ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_CWOO: char = 'ᒛ';
-    /// \u{149c}: 'ᒜ'
-    pub const CANADIAN_SYLLABICS_CWA: char = 'ᒜ';
-    /// \u{149d}: 'ᒝ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_CWA: char = 'ᒝ';
-    /// \u{149e}: 'ᒞ'
-    pub const CANADIAN_SYLLABICS_CWAA: char = 'ᒞ';
-    /// \u{149f}: 'ᒟ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_CWAA: char = 'ᒟ';
-    /// \u{14a0}: 'ᒠ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_CWAA: char = 'ᒠ';
-    /// \u{14a1}: 'ᒡ'
-    pub const CANADIAN_SYLLABICS_C: char = 'ᒡ';
-    /// \u{14a2}: 'ᒢ'
-    pub const CANADIAN_SYLLABICS_SAYISI_TH: char = 'ᒢ';
-    /// \u{14a3}: 'ᒣ'
-    pub const CANADIAN_SYLLABICS_ME: char = 'ᒣ';
-    /// \u{14a4}: 'ᒤ'
-    pub const CANADIAN_SYLLABICS_MAAI: char = 'ᒤ';
-    /// \u{14a5}: 'ᒥ'
-    pub const CANADIAN_SYLLABICS_MI: char = 'ᒥ';
-    /// \u{14a6}: 'ᒦ'
-    pub const CANADIAN_SYLLABICS_MII: char = 'ᒦ';
-    /// \u{14a7}: 'ᒧ'
-    pub const CANADIAN_SYLLABICS_MO: char = 'ᒧ';
-    /// \u{14a8}: 'ᒨ'
-    pub const CANADIAN_SYLLABICS_MOO: char = 'ᒨ';
-    /// \u{14a9}: 'ᒩ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_MOO: char = 'ᒩ';
-    /// \u{14aa}: 'ᒪ'
-    pub const CANADIAN_SYLLABICS_MA: char = 'ᒪ';
-    /// \u{14ab}: 'ᒫ'
-    pub const CANADIAN_SYLLABICS_MAA: char = 'ᒫ';
-    /// \u{14ac}: 'ᒬ'
-    pub const CANADIAN_SYLLABICS_MWE: char = 'ᒬ';
-    /// \u{14ad}: 'ᒭ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_MWE: char = 'ᒭ';
-    /// \u{14ae}: 'ᒮ'
-    pub const CANADIAN_SYLLABICS_MWI: char = 'ᒮ';
-    /// \u{14af}: 'ᒯ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_MWI: char = 'ᒯ';
-    /// \u{14b0}: 'ᒰ'
-    pub const CANADIAN_SYLLABICS_MWII: char = 'ᒰ';
-    /// \u{14b1}: 'ᒱ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_MWII: char = 'ᒱ';
-    /// \u{14b2}: 'ᒲ'
-    pub const CANADIAN_SYLLABICS_MWO: char = 'ᒲ';
-    /// \u{14b3}: 'ᒳ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_MWO: char = 'ᒳ';
-    /// \u{14b4}: 'ᒴ'
-    pub const CANADIAN_SYLLABICS_MWOO: char = 'ᒴ';
-    /// \u{14b5}: 'ᒵ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_MWOO: char = 'ᒵ';
-    /// \u{14b6}: 'ᒶ'
-    pub const CANADIAN_SYLLABICS_MWA: char = 'ᒶ';
-    /// \u{14b7}: 'ᒷ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_MWA: char = 'ᒷ';
-    /// \u{14b8}: 'ᒸ'
-    pub const CANADIAN_SYLLABICS_MWAA: char = 'ᒸ';
-    /// \u{14b9}: 'ᒹ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_MWAA: char = 'ᒹ';
-    /// \u{14ba}: 'ᒺ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_MWAA: char = 'ᒺ';
-    /// \u{14bb}: 'ᒻ'
-    pub const CANADIAN_SYLLABICS_M: char = 'ᒻ';
-    /// \u{14bc}: 'ᒼ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_M: char = 'ᒼ';
-    /// \u{14bd}: 'ᒽ'
-    pub const CANADIAN_SYLLABICS_MH: char = 'ᒽ';
-    /// \u{14be}: 'ᒾ'
-    pub const CANADIAN_SYLLABICS_ATHAPASCAN_M: char = 'ᒾ';
-    /// \u{14bf}: 'ᒿ'
-    pub const CANADIAN_SYLLABICS_SAYISI_M: char = 'ᒿ';
-    /// \u{14c0}: 'ᓀ'
-    pub const CANADIAN_SYLLABICS_NE: char = 'ᓀ';
-    /// \u{14c1}: 'ᓁ'
-    pub const CANADIAN_SYLLABICS_NAAI: char = 'ᓁ';
-    /// \u{14c2}: 'ᓂ'
-    pub const CANADIAN_SYLLABICS_NI: char = 'ᓂ';
-    /// \u{14c3}: 'ᓃ'
-    pub const CANADIAN_SYLLABICS_NII: char = 'ᓃ';
-    /// \u{14c4}: 'ᓄ'
-    pub const CANADIAN_SYLLABICS_NO: char = 'ᓄ';
-    /// \u{14c5}: 'ᓅ'
-    pub const CANADIAN_SYLLABICS_NOO: char = 'ᓅ';
-    /// \u{14c6}: 'ᓆ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_NOO: char = 'ᓆ';
-    /// \u{14c7}: 'ᓇ'
-    pub const CANADIAN_SYLLABICS_NA: char = 'ᓇ';
-    /// \u{14c8}: 'ᓈ'
-    pub const CANADIAN_SYLLABICS_NAA: char = 'ᓈ';
-    /// \u{14c9}: 'ᓉ'
-    pub const CANADIAN_SYLLABICS_NWE: char = 'ᓉ';
-    /// \u{14ca}: 'ᓊ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_NWE: char = 'ᓊ';
-    /// \u{14cb}: 'ᓋ'
-    pub const CANADIAN_SYLLABICS_NWA: char = 'ᓋ';
-    /// \u{14cc}: 'ᓌ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_NWA: char = 'ᓌ';
-    /// \u{14cd}: 'ᓍ'
-    pub const CANADIAN_SYLLABICS_NWAA: char = 'ᓍ';
-    /// \u{14ce}: 'ᓎ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_NWAA: char = 'ᓎ';
-    /// \u{14cf}: 'ᓏ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_NWAA: char = 'ᓏ';
-    /// \u{14d0}: 'ᓐ'
-    pub const CANADIAN_SYLLABICS_N: char = 'ᓐ';
-    /// \u{14d1}: 'ᓑ'
-    pub const CANADIAN_SYLLABICS_CARRIER_NG: char = 'ᓑ';
-    /// \u{14d2}: 'ᓒ'
-    pub const CANADIAN_SYLLABICS_NH: char = 'ᓒ';
-    /// \u{14d3}: 'ᓓ'
-    pub const CANADIAN_SYLLABICS_LE: char = 'ᓓ';
-    /// \u{14d4}: 'ᓔ'
-    pub const CANADIAN_SYLLABICS_LAAI: char = 'ᓔ';
-    /// \u{14d5}: 'ᓕ'
-    pub const CANADIAN_SYLLABICS_LI: char = 'ᓕ';
-    /// \u{14d6}: 'ᓖ'
-    pub const CANADIAN_SYLLABICS_LII: char = 'ᓖ';
-    /// \u{14d7}: 'ᓗ'
-    pub const CANADIAN_SYLLABICS_LO: char = 'ᓗ';
-    /// \u{14d8}: 'ᓘ'
-    pub const CANADIAN_SYLLABICS_LOO: char = 'ᓘ';
-    /// \u{14d9}: 'ᓙ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_LOO: char = 'ᓙ';
-    /// \u{14da}: 'ᓚ'
-    pub const CANADIAN_SYLLABICS_LA: char = 'ᓚ';
-    /// \u{14db}: 'ᓛ'
-    pub const CANADIAN_SYLLABICS_LAA: char = 'ᓛ';
-    /// \u{14dc}: 'ᓜ'
-    pub const CANADIAN_SYLLABICS_LWE: char = 'ᓜ';
-    /// \u{14dd}: 'ᓝ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LWE: char = 'ᓝ';
-    /// \u{14de}: 'ᓞ'
-    pub const CANADIAN_SYLLABICS_LWI: char = 'ᓞ';
-    /// \u{14df}: 'ᓟ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LWI: char = 'ᓟ';
-    /// \u{14e0}: 'ᓠ'
-    pub const CANADIAN_SYLLABICS_LWII: char = 'ᓠ';
-    /// \u{14e1}: 'ᓡ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LWII: char = 'ᓡ';
-    /// \u{14e2}: 'ᓢ'
-    pub const CANADIAN_SYLLABICS_LWO: char = 'ᓢ';
-    /// \u{14e3}: 'ᓣ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LWO: char = 'ᓣ';
-    /// \u{14e4}: 'ᓤ'
-    pub const CANADIAN_SYLLABICS_LWOO: char = 'ᓤ';
-    /// \u{14e5}: 'ᓥ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LWOO: char = 'ᓥ';
-    /// \u{14e6}: 'ᓦ'
-    pub const CANADIAN_SYLLABICS_LWA: char = 'ᓦ';
-    /// \u{14e7}: 'ᓧ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LWA: char = 'ᓧ';
-    /// \u{14e8}: 'ᓨ'
-    pub const CANADIAN_SYLLABICS_LWAA: char = 'ᓨ';
-    /// \u{14e9}: 'ᓩ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LWAA: char = 'ᓩ';
-    /// \u{14ea}: 'ᓪ'
-    pub const CANADIAN_SYLLABICS_L: char = 'ᓪ';
-    /// \u{14eb}: 'ᓫ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_L: char = 'ᓫ';
-    /// \u{14ec}: 'ᓬ'
-    pub const CANADIAN_SYLLABICS_MEDIAL_L: char = 'ᓬ';
-    /// \u{14ed}: 'ᓭ'
-    pub const CANADIAN_SYLLABICS_SE: char = 'ᓭ';
-    /// \u{14ee}: 'ᓮ'
-    pub const CANADIAN_SYLLABICS_SAAI: char = 'ᓮ';
-    /// \u{14ef}: 'ᓯ'
-    pub const CANADIAN_SYLLABICS_SI: char = 'ᓯ';
-    /// \u{14f0}: 'ᓰ'
-    pub const CANADIAN_SYLLABICS_SII: char = 'ᓰ';
-    /// \u{14f1}: 'ᓱ'
-    pub const CANADIAN_SYLLABICS_SO: char = 'ᓱ';
-    /// \u{14f2}: 'ᓲ'
-    pub const CANADIAN_SYLLABICS_SOO: char = 'ᓲ';
-    /// \u{14f3}: 'ᓳ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_SOO: char = 'ᓳ';
-    /// \u{14f4}: 'ᓴ'
-    pub const CANADIAN_SYLLABICS_SA: char = 'ᓴ';
-    /// \u{14f5}: 'ᓵ'
-    pub const CANADIAN_SYLLABICS_SAA: char = 'ᓵ';
-    /// \u{14f6}: 'ᓶ'
-    pub const CANADIAN_SYLLABICS_SWE: char = 'ᓶ';
-    /// \u{14f7}: 'ᓷ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SWE: char = 'ᓷ';
-    /// \u{14f8}: 'ᓸ'
-    pub const CANADIAN_SYLLABICS_SWI: char = 'ᓸ';
-    /// \u{14f9}: 'ᓹ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SWI: char = 'ᓹ';
-    /// \u{14fa}: 'ᓺ'
-    pub const CANADIAN_SYLLABICS_SWII: char = 'ᓺ';
-    /// \u{14fb}: 'ᓻ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SWII: char = 'ᓻ';
-    /// \u{14fc}: 'ᓼ'
-    pub const CANADIAN_SYLLABICS_SWO: char = 'ᓼ';
-    /// \u{14fd}: 'ᓽ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SWO: char = 'ᓽ';
-    /// \u{14fe}: 'ᓾ'
-    pub const CANADIAN_SYLLABICS_SWOO: char = 'ᓾ';
-    /// \u{14ff}: 'ᓿ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SWOO: char = 'ᓿ';
-    /// \u{1500}: 'ᔀ'
-    pub const CANADIAN_SYLLABICS_SWA: char = 'ᔀ';
-    /// \u{1501}: 'ᔁ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SWA: char = 'ᔁ';
-    /// \u{1502}: 'ᔂ'
-    pub const CANADIAN_SYLLABICS_SWAA: char = 'ᔂ';
-    /// \u{1503}: 'ᔃ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SWAA: char = 'ᔃ';
-    /// \u{1504}: 'ᔄ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_SWAA: char = 'ᔄ';
-    /// \u{1505}: 'ᔅ'
-    pub const CANADIAN_SYLLABICS_S: char = 'ᔅ';
-    /// \u{1506}: 'ᔆ'
-    pub const CANADIAN_SYLLABICS_ATHAPASCAN_S: char = 'ᔆ';
-    /// \u{1507}: 'ᔇ'
-    pub const CANADIAN_SYLLABICS_SW: char = 'ᔇ';
-    /// \u{1508}: 'ᔈ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_S: char = 'ᔈ';
-    /// \u{1509}: 'ᔉ'
-    pub const CANADIAN_SYLLABICS_MOOSE_DASH_CREE_SK: char = 'ᔉ';
-    /// \u{150a}: 'ᔊ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_SKW: char = 'ᔊ';
-    /// \u{150b}: 'ᔋ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_S_DASH_W: char = 'ᔋ';
-    /// \u{150c}: 'ᔌ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_SPWA: char = 'ᔌ';
-    /// \u{150d}: 'ᔍ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_STWA: char = 'ᔍ';
-    /// \u{150e}: 'ᔎ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_SKWA: char = 'ᔎ';
-    /// \u{150f}: 'ᔏ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_SCWA: char = 'ᔏ';
-    /// \u{1510}: 'ᔐ'
-    pub const CANADIAN_SYLLABICS_SHE: char = 'ᔐ';
-    /// \u{1511}: 'ᔑ'
-    pub const CANADIAN_SYLLABICS_SHI: char = 'ᔑ';
-    /// \u{1512}: 'ᔒ'
-    pub const CANADIAN_SYLLABICS_SHII: char = 'ᔒ';
-    /// \u{1513}: 'ᔓ'
-    pub const CANADIAN_SYLLABICS_SHO: char = 'ᔓ';
-    /// \u{1514}: 'ᔔ'
-    pub const CANADIAN_SYLLABICS_SHOO: char = 'ᔔ';
-    /// \u{1515}: 'ᔕ'
-    pub const CANADIAN_SYLLABICS_SHA: char = 'ᔕ';
-    /// \u{1516}: 'ᔖ'
-    pub const CANADIAN_SYLLABICS_SHAA: char = 'ᔖ';
-    /// \u{1517}: 'ᔗ'
-    pub const CANADIAN_SYLLABICS_SHWE: char = 'ᔗ';
-    /// \u{1518}: 'ᔘ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWE: char = 'ᔘ';
-    /// \u{1519}: 'ᔙ'
-    pub const CANADIAN_SYLLABICS_SHWI: char = 'ᔙ';
-    /// \u{151a}: 'ᔚ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWI: char = 'ᔚ';
-    /// \u{151b}: 'ᔛ'
-    pub const CANADIAN_SYLLABICS_SHWII: char = 'ᔛ';
-    /// \u{151c}: 'ᔜ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWII: char = 'ᔜ';
-    /// \u{151d}: 'ᔝ'
-    pub const CANADIAN_SYLLABICS_SHWO: char = 'ᔝ';
-    /// \u{151e}: 'ᔞ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWO: char = 'ᔞ';
-    /// \u{151f}: 'ᔟ'
-    pub const CANADIAN_SYLLABICS_SHWOO: char = 'ᔟ';
-    /// \u{1520}: 'ᔠ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWOO: char = 'ᔠ';
-    /// \u{1521}: 'ᔡ'
-    pub const CANADIAN_SYLLABICS_SHWA: char = 'ᔡ';
-    /// \u{1522}: 'ᔢ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWA: char = 'ᔢ';
-    /// \u{1523}: 'ᔣ'
-    pub const CANADIAN_SYLLABICS_SHWAA: char = 'ᔣ';
-    /// \u{1524}: 'ᔤ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWAA: char = 'ᔤ';
-    /// \u{1525}: 'ᔥ'
-    pub const CANADIAN_SYLLABICS_SH: char = 'ᔥ';
-    /// \u{1526}: 'ᔦ'
-    pub const CANADIAN_SYLLABICS_YE: char = 'ᔦ';
-    /// \u{1527}: 'ᔧ'
-    pub const CANADIAN_SYLLABICS_YAAI: char = 'ᔧ';
-    /// \u{1528}: 'ᔨ'
-    pub const CANADIAN_SYLLABICS_YI: char = 'ᔨ';
-    /// \u{1529}: 'ᔩ'
-    pub const CANADIAN_SYLLABICS_YII: char = 'ᔩ';
-    /// \u{152a}: 'ᔪ'
-    pub const CANADIAN_SYLLABICS_YO: char = 'ᔪ';
-    /// \u{152b}: 'ᔫ'
-    pub const CANADIAN_SYLLABICS_YOO: char = 'ᔫ';
-    /// \u{152c}: 'ᔬ'
-    pub const CANADIAN_SYLLABICS_Y_DASH_CREE_YOO: char = 'ᔬ';
-    /// \u{152d}: 'ᔭ'
-    pub const CANADIAN_SYLLABICS_YA: char = 'ᔭ';
-    /// \u{152e}: 'ᔮ'
-    pub const CANADIAN_SYLLABICS_YAA: char = 'ᔮ';
-    /// \u{152f}: 'ᔯ'
-    pub const CANADIAN_SYLLABICS_YWE: char = 'ᔯ';
-    /// \u{1530}: 'ᔰ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_YWE: char = 'ᔰ';
-    /// \u{1531}: 'ᔱ'
-    pub const CANADIAN_SYLLABICS_YWI: char = 'ᔱ';
-    /// \u{1532}: 'ᔲ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_YWI: char = 'ᔲ';
-    /// \u{1533}: 'ᔳ'
-    pub const CANADIAN_SYLLABICS_YWII: char = 'ᔳ';
-    /// \u{1534}: 'ᔴ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_YWII: char = 'ᔴ';
-    /// \u{1535}: 'ᔵ'
-    pub const CANADIAN_SYLLABICS_YWO: char = 'ᔵ';
-    /// \u{1536}: 'ᔶ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_YWO: char = 'ᔶ';
-    /// \u{1537}: 'ᔷ'
-    pub const CANADIAN_SYLLABICS_YWOO: char = 'ᔷ';
-    /// \u{1538}: 'ᔸ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_YWOO: char = 'ᔸ';
-    /// \u{1539}: 'ᔹ'
-    pub const CANADIAN_SYLLABICS_YWA: char = 'ᔹ';
-    /// \u{153a}: 'ᔺ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_YWA: char = 'ᔺ';
-    /// \u{153b}: 'ᔻ'
-    pub const CANADIAN_SYLLABICS_YWAA: char = 'ᔻ';
-    /// \u{153c}: 'ᔼ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_YWAA: char = 'ᔼ';
-    /// \u{153d}: 'ᔽ'
-    pub const CANADIAN_SYLLABICS_NASKAPI_YWAA: char = 'ᔽ';
-    /// \u{153e}: 'ᔾ'
-    pub const CANADIAN_SYLLABICS_Y: char = 'ᔾ';
-    /// \u{153f}: 'ᔿ'
-    pub const CANADIAN_SYLLABICS_BIBLE_DASH_CREE_Y: char = 'ᔿ';
-    /// \u{1540}: 'ᕀ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_Y: char = 'ᕀ';
-    /// \u{1541}: 'ᕁ'
-    pub const CANADIAN_SYLLABICS_SAYISI_YI: char = 'ᕁ';
-    /// \u{1542}: 'ᕂ'
-    pub const CANADIAN_SYLLABICS_RE: char = 'ᕂ';
-    /// \u{1543}: 'ᕃ'
-    pub const CANADIAN_SYLLABICS_R_DASH_CREE_RE: char = 'ᕃ';
-    /// \u{1544}: 'ᕄ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LE: char = 'ᕄ';
-    /// \u{1545}: 'ᕅ'
-    pub const CANADIAN_SYLLABICS_RAAI: char = 'ᕅ';
-    /// \u{1546}: 'ᕆ'
-    pub const CANADIAN_SYLLABICS_RI: char = 'ᕆ';
-    /// \u{1547}: 'ᕇ'
-    pub const CANADIAN_SYLLABICS_RII: char = 'ᕇ';
-    /// \u{1548}: 'ᕈ'
-    pub const CANADIAN_SYLLABICS_RO: char = 'ᕈ';
-    /// \u{1549}: 'ᕉ'
-    pub const CANADIAN_SYLLABICS_ROO: char = 'ᕉ';
-    /// \u{154a}: 'ᕊ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LO: char = 'ᕊ';
-    /// \u{154b}: 'ᕋ'
-    pub const CANADIAN_SYLLABICS_RA: char = 'ᕋ';
-    /// \u{154c}: 'ᕌ'
-    pub const CANADIAN_SYLLABICS_RAA: char = 'ᕌ';
-    /// \u{154d}: 'ᕍ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_LA: char = 'ᕍ';
-    /// \u{154e}: 'ᕎ'
-    pub const CANADIAN_SYLLABICS_RWAA: char = 'ᕎ';
-    /// \u{154f}: 'ᕏ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_RWAA: char = 'ᕏ';
-    /// \u{1550}: 'ᕐ'
-    pub const CANADIAN_SYLLABICS_R: char = 'ᕐ';
-    /// \u{1551}: 'ᕑ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_R: char = 'ᕑ';
-    /// \u{1552}: 'ᕒ'
-    pub const CANADIAN_SYLLABICS_MEDIAL_R: char = 'ᕒ';
-    /// \u{1553}: 'ᕓ'
-    pub const CANADIAN_SYLLABICS_FE: char = 'ᕓ';
-    /// \u{1554}: 'ᕔ'
-    pub const CANADIAN_SYLLABICS_FAAI: char = 'ᕔ';
-    /// \u{1555}: 'ᕕ'
-    pub const CANADIAN_SYLLABICS_FI: char = 'ᕕ';
-    /// \u{1556}: 'ᕖ'
-    pub const CANADIAN_SYLLABICS_FII: char = 'ᕖ';
-    /// \u{1557}: 'ᕗ'
-    pub const CANADIAN_SYLLABICS_FO: char = 'ᕗ';
-    /// \u{1558}: 'ᕘ'
-    pub const CANADIAN_SYLLABICS_FOO: char = 'ᕘ';
-    /// \u{1559}: 'ᕙ'
-    pub const CANADIAN_SYLLABICS_FA: char = 'ᕙ';
-    /// \u{155a}: 'ᕚ'
-    pub const CANADIAN_SYLLABICS_FAA: char = 'ᕚ';
-    /// \u{155b}: 'ᕛ'
-    pub const CANADIAN_SYLLABICS_FWAA: char = 'ᕛ';
-    /// \u{155c}: 'ᕜ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_FWAA: char = 'ᕜ';
-    /// \u{155d}: 'ᕝ'
-    pub const CANADIAN_SYLLABICS_F: char = 'ᕝ';
-    /// \u{155e}: 'ᕞ'
-    pub const CANADIAN_SYLLABICS_THE: char = 'ᕞ';
-    /// \u{155f}: 'ᕟ'
-    pub const CANADIAN_SYLLABICS_N_DASH_CREE_THE: char = 'ᕟ';
-    /// \u{1560}: 'ᕠ'
-    pub const CANADIAN_SYLLABICS_THI: char = 'ᕠ';
-    /// \u{1561}: 'ᕡ'
-    pub const CANADIAN_SYLLABICS_N_DASH_CREE_THI: char = 'ᕡ';
-    /// \u{1562}: 'ᕢ'
-    pub const CANADIAN_SYLLABICS_THII: char = 'ᕢ';
-    /// \u{1563}: 'ᕣ'
-    pub const CANADIAN_SYLLABICS_N_DASH_CREE_THII: char = 'ᕣ';
-    /// \u{1564}: 'ᕤ'
-    pub const CANADIAN_SYLLABICS_THO: char = 'ᕤ';
-    /// \u{1565}: 'ᕥ'
-    pub const CANADIAN_SYLLABICS_THOO: char = 'ᕥ';
-    /// \u{1566}: 'ᕦ'
-    pub const CANADIAN_SYLLABICS_THA: char = 'ᕦ';
-    /// \u{1567}: 'ᕧ'
-    pub const CANADIAN_SYLLABICS_THAA: char = 'ᕧ';
-    /// \u{1568}: 'ᕨ'
-    pub const CANADIAN_SYLLABICS_THWAA: char = 'ᕨ';
-    /// \u{1569}: 'ᕩ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_THWAA: char = 'ᕩ';
-    /// \u{156a}: 'ᕪ'
-    pub const CANADIAN_SYLLABICS_TH: char = 'ᕪ';
-    /// \u{156b}: 'ᕫ'
-    pub const CANADIAN_SYLLABICS_TTHE: char = 'ᕫ';
-    /// \u{156c}: 'ᕬ'
-    pub const CANADIAN_SYLLABICS_TTHI: char = 'ᕬ';
-    /// \u{156d}: 'ᕭ'
-    pub const CANADIAN_SYLLABICS_TTHO: char = 'ᕭ';
-    /// \u{156e}: 'ᕮ'
-    pub const CANADIAN_SYLLABICS_TTHA: char = 'ᕮ';
-    /// \u{156f}: 'ᕯ'
-    pub const CANADIAN_SYLLABICS_TTH: char = 'ᕯ';
-    /// \u{1570}: 'ᕰ'
-    pub const CANADIAN_SYLLABICS_TYE: char = 'ᕰ';
-    /// \u{1571}: 'ᕱ'
-    pub const CANADIAN_SYLLABICS_TYI: char = 'ᕱ';
-    /// \u{1572}: 'ᕲ'
-    pub const CANADIAN_SYLLABICS_TYO: char = 'ᕲ';
-    /// \u{1573}: 'ᕳ'
-    pub const CANADIAN_SYLLABICS_TYA: char = 'ᕳ';
-    /// \u{1574}: 'ᕴ'
-    pub const CANADIAN_SYLLABICS_NUNAVIK_HE: char = 'ᕴ';
-    /// \u{1575}: 'ᕵ'
-    pub const CANADIAN_SYLLABICS_NUNAVIK_HI: char = 'ᕵ';
-    /// \u{1576}: 'ᕶ'
-    pub const CANADIAN_SYLLABICS_NUNAVIK_HII: char = 'ᕶ';
-    /// \u{1577}: 'ᕷ'
-    pub const CANADIAN_SYLLABICS_NUNAVIK_HO: char = 'ᕷ';
-    /// \u{1578}: 'ᕸ'
-    pub const CANADIAN_SYLLABICS_NUNAVIK_HOO: char = 'ᕸ';
-    /// \u{1579}: 'ᕹ'
-    pub const CANADIAN_SYLLABICS_NUNAVIK_HA: char = 'ᕹ';
-    /// \u{157a}: 'ᕺ'
-    pub const CANADIAN_SYLLABICS_NUNAVIK_HAA: char = 'ᕺ';
-    /// \u{157b}: 'ᕻ'
-    pub const CANADIAN_SYLLABICS_NUNAVIK_H: char = 'ᕻ';
-    /// \u{157c}: 'ᕼ'
-    pub const CANADIAN_SYLLABICS_NUNAVUT_H: char = 'ᕼ';
-    /// \u{157d}: 'ᕽ'
-    pub const CANADIAN_SYLLABICS_HK: char = 'ᕽ';
-    /// \u{157e}: 'ᕾ'
-    pub const CANADIAN_SYLLABICS_QAAI: char = 'ᕾ';
-    /// \u{157f}: 'ᕿ'
-    pub const CANADIAN_SYLLABICS_QI: char = 'ᕿ';
-    /// \u{1580}: 'ᖀ'
-    pub const CANADIAN_SYLLABICS_QII: char = 'ᖀ';
-    /// \u{1581}: 'ᖁ'
-    pub const CANADIAN_SYLLABICS_QO: char = 'ᖁ';
-    /// \u{1582}: 'ᖂ'
-    pub const CANADIAN_SYLLABICS_QOO: char = 'ᖂ';
-    /// \u{1583}: 'ᖃ'
-    pub const CANADIAN_SYLLABICS_QA: char = 'ᖃ';
-    /// \u{1584}: 'ᖄ'
-    pub const CANADIAN_SYLLABICS_QAA: char = 'ᖄ';
-    /// \u{1585}: 'ᖅ'
-    pub const CANADIAN_SYLLABICS_Q: char = 'ᖅ';
-    /// \u{1586}: 'ᖆ'
-    pub const CANADIAN_SYLLABICS_TLHE: char = 'ᖆ';
-    /// \u{1587}: 'ᖇ'
-    pub const CANADIAN_SYLLABICS_TLHI: char = 'ᖇ';
-    /// \u{1588}: 'ᖈ'
-    pub const CANADIAN_SYLLABICS_TLHO: char = 'ᖈ';
-    /// \u{1589}: 'ᖉ'
-    pub const CANADIAN_SYLLABICS_TLHA: char = 'ᖉ';
-    /// \u{158a}: 'ᖊ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_RE: char = 'ᖊ';
-    /// \u{158b}: 'ᖋ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_RI: char = 'ᖋ';
-    /// \u{158c}: 'ᖌ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_RO: char = 'ᖌ';
-    /// \u{158d}: 'ᖍ'
-    pub const CANADIAN_SYLLABICS_WEST_DASH_CREE_RA: char = 'ᖍ';
-    /// \u{158e}: 'ᖎ'
-    pub const CANADIAN_SYLLABICS_NGAAI: char = 'ᖎ';
-    /// \u{158f}: 'ᖏ'
-    pub const CANADIAN_SYLLABICS_NGI: char = 'ᖏ';
-    /// \u{1590}: 'ᖐ'
-    pub const CANADIAN_SYLLABICS_NGII: char = 'ᖐ';
-    /// \u{1591}: 'ᖑ'
-    pub const CANADIAN_SYLLABICS_NGO: char = 'ᖑ';
-    /// \u{1592}: 'ᖒ'
-    pub const CANADIAN_SYLLABICS_NGOO: char = 'ᖒ';
-    /// \u{1593}: 'ᖓ'
-    pub const CANADIAN_SYLLABICS_NGA: char = 'ᖓ';
-    /// \u{1594}: 'ᖔ'
-    pub const CANADIAN_SYLLABICS_NGAA: char = 'ᖔ';
-    /// \u{1595}: 'ᖕ'
-    pub const CANADIAN_SYLLABICS_NG: char = 'ᖕ';
-    /// \u{1596}: 'ᖖ'
-    pub const CANADIAN_SYLLABICS_NNG: char = 'ᖖ';
-    /// \u{1597}: 'ᖗ'
-    pub const CANADIAN_SYLLABICS_SAYISI_SHE: char = 'ᖗ';
-    /// \u{1598}: 'ᖘ'
-    pub const CANADIAN_SYLLABICS_SAYISI_SHI: char = 'ᖘ';
-    /// \u{1599}: 'ᖙ'
-    pub const CANADIAN_SYLLABICS_SAYISI_SHO: char = 'ᖙ';
-    /// \u{159a}: 'ᖚ'
-    pub const CANADIAN_SYLLABICS_SAYISI_SHA: char = 'ᖚ';
-    /// \u{159b}: 'ᖛ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THE: char = 'ᖛ';
-    /// \u{159c}: 'ᖜ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THI: char = 'ᖜ';
-    /// \u{159d}: 'ᖝ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THO: char = 'ᖝ';
-    /// \u{159e}: 'ᖞ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THA: char = 'ᖞ';
-    /// \u{159f}: 'ᖟ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_TH: char = 'ᖟ';
-    /// \u{15a0}: 'ᖠ'
-    pub const CANADIAN_SYLLABICS_LHI: char = 'ᖠ';
-    /// \u{15a1}: 'ᖡ'
-    pub const CANADIAN_SYLLABICS_LHII: char = 'ᖡ';
-    /// \u{15a2}: 'ᖢ'
-    pub const CANADIAN_SYLLABICS_LHO: char = 'ᖢ';
-    /// \u{15a3}: 'ᖣ'
-    pub const CANADIAN_SYLLABICS_LHOO: char = 'ᖣ';
-    /// \u{15a4}: 'ᖤ'
-    pub const CANADIAN_SYLLABICS_LHA: char = 'ᖤ';
-    /// \u{15a5}: 'ᖥ'
-    pub const CANADIAN_SYLLABICS_LHAA: char = 'ᖥ';
-    /// \u{15a6}: 'ᖦ'
-    pub const CANADIAN_SYLLABICS_LH: char = 'ᖦ';
-    /// \u{15a7}: 'ᖧ'
-    pub const CANADIAN_SYLLABICS_TH_DASH_CREE_THE: char = 'ᖧ';
-    /// \u{15a8}: 'ᖨ'
-    pub const CANADIAN_SYLLABICS_TH_DASH_CREE_THI: char = 'ᖨ';
-    /// \u{15a9}: 'ᖩ'
-    pub const CANADIAN_SYLLABICS_TH_DASH_CREE_THII: char = 'ᖩ';
-    /// \u{15aa}: 'ᖪ'
-    pub const CANADIAN_SYLLABICS_TH_DASH_CREE_THO: char = 'ᖪ';
-    /// \u{15ab}: 'ᖫ'
-    pub const CANADIAN_SYLLABICS_TH_DASH_CREE_THOO: char = 'ᖫ';
-    /// \u{15ac}: 'ᖬ'
-    pub const CANADIAN_SYLLABICS_TH_DASH_CREE_THA: char = 'ᖬ';
-    /// \u{15ad}: 'ᖭ'
-    pub const CANADIAN_SYLLABICS_TH_DASH_CREE_THAA: char = 'ᖭ';
-    /// \u{15ae}: 'ᖮ'
-    pub const CANADIAN_SYLLABICS_TH_DASH_CREE_TH: char = 'ᖮ';
-    /// \u{15af}: 'ᖯ'
-    pub const CANADIAN_SYLLABICS_AIVILIK_B: char = 'ᖯ';
-    /// \u{15b0}: 'ᖰ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_E: char = 'ᖰ';
-    /// \u{15b1}: 'ᖱ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_I: char = 'ᖱ';
-    /// \u{15b2}: 'ᖲ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_O: char = 'ᖲ';
-    /// \u{15b3}: 'ᖳ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_A: char = 'ᖳ';
-    /// \u{15b4}: 'ᖴ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_WE: char = 'ᖴ';
-    /// \u{15b5}: 'ᖵ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_WI: char = 'ᖵ';
-    /// \u{15b6}: 'ᖶ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_WO: char = 'ᖶ';
-    /// \u{15b7}: 'ᖷ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_WA: char = 'ᖷ';
-    /// \u{15b8}: 'ᖸ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_NE: char = 'ᖸ';
-    /// \u{15b9}: 'ᖹ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_NI: char = 'ᖹ';
-    /// \u{15ba}: 'ᖺ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_NO: char = 'ᖺ';
-    /// \u{15bb}: 'ᖻ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_NA: char = 'ᖻ';
-    /// \u{15bc}: 'ᖼ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_KE: char = 'ᖼ';
-    /// \u{15bd}: 'ᖽ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_KI: char = 'ᖽ';
-    /// \u{15be}: 'ᖾ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_KO: char = 'ᖾ';
-    /// \u{15bf}: 'ᖿ'
-    pub const CANADIAN_SYLLABICS_BLACKFOOT_KA: char = 'ᖿ';
-    /// \u{15c0}: 'ᗀ'
-    pub const CANADIAN_SYLLABICS_SAYISI_HE: char = 'ᗀ';
-    /// \u{15c1}: 'ᗁ'
-    pub const CANADIAN_SYLLABICS_SAYISI_HI: char = 'ᗁ';
-    /// \u{15c2}: 'ᗂ'
-    pub const CANADIAN_SYLLABICS_SAYISI_HO: char = 'ᗂ';
-    /// \u{15c3}: 'ᗃ'
-    pub const CANADIAN_SYLLABICS_SAYISI_HA: char = 'ᗃ';
-    /// \u{15c4}: 'ᗄ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GHU: char = 'ᗄ';
-    /// \u{15c5}: 'ᗅ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GHO: char = 'ᗅ';
-    /// \u{15c6}: 'ᗆ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GHE: char = 'ᗆ';
-    /// \u{15c7}: 'ᗇ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GHEE: char = 'ᗇ';
-    /// \u{15c8}: 'ᗈ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GHI: char = 'ᗈ';
-    /// \u{15c9}: 'ᗉ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GHA: char = 'ᗉ';
-    /// \u{15ca}: 'ᗊ'
-    pub const CANADIAN_SYLLABICS_CARRIER_RU: char = 'ᗊ';
-    /// \u{15cb}: 'ᗋ'
-    pub const CANADIAN_SYLLABICS_CARRIER_RO: char = 'ᗋ';
-    /// \u{15cc}: 'ᗌ'
-    pub const CANADIAN_SYLLABICS_CARRIER_RE: char = 'ᗌ';
-    /// \u{15cd}: 'ᗍ'
-    pub const CANADIAN_SYLLABICS_CARRIER_REE: char = 'ᗍ';
-    /// \u{15ce}: 'ᗎ'
-    pub const CANADIAN_SYLLABICS_CARRIER_RI: char = 'ᗎ';
-    /// \u{15cf}: 'ᗏ'
-    pub const CANADIAN_SYLLABICS_CARRIER_RA: char = 'ᗏ';
-    /// \u{15d0}: 'ᗐ'
-    pub const CANADIAN_SYLLABICS_CARRIER_WU: char = 'ᗐ';
-    /// \u{15d1}: 'ᗑ'
-    pub const CANADIAN_SYLLABICS_CARRIER_WO: char = 'ᗑ';
-    /// \u{15d2}: 'ᗒ'
-    pub const CANADIAN_SYLLABICS_CARRIER_WE: char = 'ᗒ';
-    /// \u{15d3}: 'ᗓ'
-    pub const CANADIAN_SYLLABICS_CARRIER_WEE: char = 'ᗓ';
-    /// \u{15d4}: 'ᗔ'
-    pub const CANADIAN_SYLLABICS_CARRIER_WI: char = 'ᗔ';
-    /// \u{15d5}: 'ᗕ'
-    pub const CANADIAN_SYLLABICS_CARRIER_WA: char = 'ᗕ';
-    /// \u{15d6}: 'ᗖ'
-    pub const CANADIAN_SYLLABICS_CARRIER_HWU: char = 'ᗖ';
-    /// \u{15d7}: 'ᗗ'
-    pub const CANADIAN_SYLLABICS_CARRIER_HWO: char = 'ᗗ';
-    /// \u{15d8}: 'ᗘ'
-    pub const CANADIAN_SYLLABICS_CARRIER_HWE: char = 'ᗘ';
-    /// \u{15d9}: 'ᗙ'
-    pub const CANADIAN_SYLLABICS_CARRIER_HWEE: char = 'ᗙ';
-    /// \u{15da}: 'ᗚ'
-    pub const CANADIAN_SYLLABICS_CARRIER_HWI: char = 'ᗚ';
-    /// \u{15db}: 'ᗛ'
-    pub const CANADIAN_SYLLABICS_CARRIER_HWA: char = 'ᗛ';
-    /// \u{15dc}: 'ᗜ'
-    pub const CANADIAN_SYLLABICS_CARRIER_THU: char = 'ᗜ';
-    /// \u{15dd}: 'ᗝ'
-    pub const CANADIAN_SYLLABICS_CARRIER_THO: char = 'ᗝ';
-    /// \u{15de}: 'ᗞ'
-    pub const CANADIAN_SYLLABICS_CARRIER_THE: char = 'ᗞ';
-    /// \u{15df}: 'ᗟ'
-    pub const CANADIAN_SYLLABICS_CARRIER_THEE: char = 'ᗟ';
-    /// \u{15e0}: 'ᗠ'
-    pub const CANADIAN_SYLLABICS_CARRIER_THI: char = 'ᗠ';
-    /// \u{15e1}: 'ᗡ'
-    pub const CANADIAN_SYLLABICS_CARRIER_THA: char = 'ᗡ';
-    /// \u{15e2}: 'ᗢ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTU: char = 'ᗢ';
-    /// \u{15e3}: 'ᗣ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTO: char = 'ᗣ';
-    /// \u{15e4}: 'ᗤ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTE: char = 'ᗤ';
-    /// \u{15e5}: 'ᗥ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTEE: char = 'ᗥ';
-    /// \u{15e6}: 'ᗦ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTI: char = 'ᗦ';
-    /// \u{15e7}: 'ᗧ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTA: char = 'ᗧ';
-    /// \u{15e8}: 'ᗨ'
-    pub const CANADIAN_SYLLABICS_CARRIER_PU: char = 'ᗨ';
-    /// \u{15e9}: 'ᗩ'
-    pub const CANADIAN_SYLLABICS_CARRIER_PO: char = 'ᗩ';
-    /// \u{15ea}: 'ᗪ'
-    pub const CANADIAN_SYLLABICS_CARRIER_PE: char = 'ᗪ';
-    /// \u{15eb}: 'ᗫ'
-    pub const CANADIAN_SYLLABICS_CARRIER_PEE: char = 'ᗫ';
-    /// \u{15ec}: 'ᗬ'
-    pub const CANADIAN_SYLLABICS_CARRIER_PI: char = 'ᗬ';
-    /// \u{15ed}: 'ᗭ'
-    pub const CANADIAN_SYLLABICS_CARRIER_PA: char = 'ᗭ';
-    /// \u{15ee}: 'ᗮ'
-    pub const CANADIAN_SYLLABICS_CARRIER_P: char = 'ᗮ';
-    /// \u{15ef}: 'ᗯ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GU: char = 'ᗯ';
-    /// \u{15f0}: 'ᗰ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GO: char = 'ᗰ';
-    /// \u{15f1}: 'ᗱ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GE: char = 'ᗱ';
-    /// \u{15f2}: 'ᗲ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GEE: char = 'ᗲ';
-    /// \u{15f3}: 'ᗳ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GI: char = 'ᗳ';
-    /// \u{15f4}: 'ᗴ'
-    pub const CANADIAN_SYLLABICS_CARRIER_GA: char = 'ᗴ';
-    /// \u{15f5}: 'ᗵ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KHU: char = 'ᗵ';
-    /// \u{15f6}: 'ᗶ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KHO: char = 'ᗶ';
-    /// \u{15f7}: 'ᗷ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KHE: char = 'ᗷ';
-    /// \u{15f8}: 'ᗸ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KHEE: char = 'ᗸ';
-    /// \u{15f9}: 'ᗹ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KHI: char = 'ᗹ';
-    /// \u{15fa}: 'ᗺ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KHA: char = 'ᗺ';
-    /// \u{15fb}: 'ᗻ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KKU: char = 'ᗻ';
-    /// \u{15fc}: 'ᗼ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KKO: char = 'ᗼ';
-    /// \u{15fd}: 'ᗽ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KKE: char = 'ᗽ';
-    /// \u{15fe}: 'ᗾ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KKEE: char = 'ᗾ';
-    /// \u{15ff}: 'ᗿ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KKI: char = 'ᗿ';
-    /// \u{1600}: 'ᘀ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KKA: char = 'ᘀ';
-    /// \u{1601}: 'ᘁ'
-    pub const CANADIAN_SYLLABICS_CARRIER_KK: char = 'ᘁ';
-    /// \u{1602}: 'ᘂ'
-    pub const CANADIAN_SYLLABICS_CARRIER_NU: char = 'ᘂ';
-    /// \u{1603}: 'ᘃ'
-    pub const CANADIAN_SYLLABICS_CARRIER_NO: char = 'ᘃ';
-    /// \u{1604}: 'ᘄ'
-    pub const CANADIAN_SYLLABICS_CARRIER_NE: char = 'ᘄ';
-    /// \u{1605}: 'ᘅ'
-    pub const CANADIAN_SYLLABICS_CARRIER_NEE: char = 'ᘅ';
-    /// \u{1606}: 'ᘆ'
-    pub const CANADIAN_SYLLABICS_CARRIER_NI: char = 'ᘆ';
-    /// \u{1607}: 'ᘇ'
-    pub const CANADIAN_SYLLABICS_CARRIER_NA: char = 'ᘇ';
-    /// \u{1608}: 'ᘈ'
-    pub const CANADIAN_SYLLABICS_CARRIER_MU: char = 'ᘈ';
-    /// \u{1609}: 'ᘉ'
-    pub const CANADIAN_SYLLABICS_CARRIER_MO: char = 'ᘉ';
-    /// \u{160a}: 'ᘊ'
-    pub const CANADIAN_SYLLABICS_CARRIER_ME: char = 'ᘊ';
-    /// \u{160b}: 'ᘋ'
-    pub const CANADIAN_SYLLABICS_CARRIER_MEE: char = 'ᘋ';
-    /// \u{160c}: 'ᘌ'
-    pub const CANADIAN_SYLLABICS_CARRIER_MI: char = 'ᘌ';
-    /// \u{160d}: 'ᘍ'
-    pub const CANADIAN_SYLLABICS_CARRIER_MA: char = 'ᘍ';
-    /// \u{160e}: 'ᘎ'
-    pub const CANADIAN_SYLLABICS_CARRIER_YU: char = 'ᘎ';
-    /// \u{160f}: 'ᘏ'
-    pub const CANADIAN_SYLLABICS_CARRIER_YO: char = 'ᘏ';
-    /// \u{1610}: 'ᘐ'
-    pub const CANADIAN_SYLLABICS_CARRIER_YE: char = 'ᘐ';
-    /// \u{1611}: 'ᘑ'
-    pub const CANADIAN_SYLLABICS_CARRIER_YEE: char = 'ᘑ';
-    /// \u{1612}: 'ᘒ'
-    pub const CANADIAN_SYLLABICS_CARRIER_YI: char = 'ᘒ';
-    /// \u{1613}: 'ᘓ'
-    pub const CANADIAN_SYLLABICS_CARRIER_YA: char = 'ᘓ';
-    /// \u{1614}: 'ᘔ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JU: char = 'ᘔ';
-    /// \u{1615}: 'ᘕ'
-    pub const CANADIAN_SYLLABICS_SAYISI_JU: char = 'ᘕ';
-    /// \u{1616}: 'ᘖ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JO: char = 'ᘖ';
-    /// \u{1617}: 'ᘗ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JE: char = 'ᘗ';
-    /// \u{1618}: 'ᘘ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JEE: char = 'ᘘ';
-    /// \u{1619}: 'ᘙ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JI: char = 'ᘙ';
-    /// \u{161a}: 'ᘚ'
-    pub const CANADIAN_SYLLABICS_SAYISI_JI: char = 'ᘚ';
-    /// \u{161b}: 'ᘛ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JA: char = 'ᘛ';
-    /// \u{161c}: 'ᘜ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JJU: char = 'ᘜ';
-    /// \u{161d}: 'ᘝ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JJO: char = 'ᘝ';
-    /// \u{161e}: 'ᘞ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JJE: char = 'ᘞ';
-    /// \u{161f}: 'ᘟ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JJEE: char = 'ᘟ';
-    /// \u{1620}: 'ᘠ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JJI: char = 'ᘠ';
-    /// \u{1621}: 'ᘡ'
-    pub const CANADIAN_SYLLABICS_CARRIER_JJA: char = 'ᘡ';
-    /// \u{1622}: 'ᘢ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LU: char = 'ᘢ';
-    /// \u{1623}: 'ᘣ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LO: char = 'ᘣ';
-    /// \u{1624}: 'ᘤ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LE: char = 'ᘤ';
-    /// \u{1625}: 'ᘥ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LEE: char = 'ᘥ';
-    /// \u{1626}: 'ᘦ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LI: char = 'ᘦ';
-    /// \u{1627}: 'ᘧ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LA: char = 'ᘧ';
-    /// \u{1628}: 'ᘨ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DLU: char = 'ᘨ';
-    /// \u{1629}: 'ᘩ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DLO: char = 'ᘩ';
-    /// \u{162a}: 'ᘪ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DLE: char = 'ᘪ';
-    /// \u{162b}: 'ᘫ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DLEE: char = 'ᘫ';
-    /// \u{162c}: 'ᘬ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DLI: char = 'ᘬ';
-    /// \u{162d}: 'ᘭ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DLA: char = 'ᘭ';
-    /// \u{162e}: 'ᘮ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LHU: char = 'ᘮ';
-    /// \u{162f}: 'ᘯ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LHO: char = 'ᘯ';
-    /// \u{1630}: 'ᘰ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LHE: char = 'ᘰ';
-    /// \u{1631}: 'ᘱ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LHEE: char = 'ᘱ';
-    /// \u{1632}: 'ᘲ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LHI: char = 'ᘲ';
-    /// \u{1633}: 'ᘳ'
-    pub const CANADIAN_SYLLABICS_CARRIER_LHA: char = 'ᘳ';
-    /// \u{1634}: 'ᘴ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLHU: char = 'ᘴ';
-    /// \u{1635}: 'ᘵ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLHO: char = 'ᘵ';
-    /// \u{1636}: 'ᘶ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLHE: char = 'ᘶ';
-    /// \u{1637}: 'ᘷ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLHEE: char = 'ᘷ';
-    /// \u{1638}: 'ᘸ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLHI: char = 'ᘸ';
-    /// \u{1639}: 'ᘹ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLHA: char = 'ᘹ';
-    /// \u{163a}: 'ᘺ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLU: char = 'ᘺ';
-    /// \u{163b}: 'ᘻ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLO: char = 'ᘻ';
-    /// \u{163c}: 'ᘼ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLE: char = 'ᘼ';
-    /// \u{163d}: 'ᘽ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLEE: char = 'ᘽ';
-    /// \u{163e}: 'ᘾ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLI: char = 'ᘾ';
-    /// \u{163f}: 'ᘿ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TLA: char = 'ᘿ';
-    /// \u{1640}: 'ᙀ'
-    pub const CANADIAN_SYLLABICS_CARRIER_ZU: char = 'ᙀ';
-    /// \u{1641}: 'ᙁ'
-    pub const CANADIAN_SYLLABICS_CARRIER_ZO: char = 'ᙁ';
-    /// \u{1642}: 'ᙂ'
-    pub const CANADIAN_SYLLABICS_CARRIER_ZE: char = 'ᙂ';
-    /// \u{1643}: 'ᙃ'
-    pub const CANADIAN_SYLLABICS_CARRIER_ZEE: char = 'ᙃ';
-    /// \u{1644}: 'ᙄ'
-    pub const CANADIAN_SYLLABICS_CARRIER_ZI: char = 'ᙄ';
-    /// \u{1645}: 'ᙅ'
-    pub const CANADIAN_SYLLABICS_CARRIER_ZA: char = 'ᙅ';
-    /// \u{1646}: 'ᙆ'
-    pub const CANADIAN_SYLLABICS_CARRIER_Z: char = 'ᙆ';
-    /// \u{1647}: 'ᙇ'
-    pub const CANADIAN_SYLLABICS_CARRIER_INITIAL_Z: char = 'ᙇ';
-    /// \u{1648}: 'ᙈ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DZU: char = 'ᙈ';
-    /// \u{1649}: 'ᙉ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DZO: char = 'ᙉ';
-    /// \u{164a}: 'ᙊ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DZE: char = 'ᙊ';
-    /// \u{164b}: 'ᙋ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DZEE: char = 'ᙋ';
-    /// \u{164c}: 'ᙌ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DZI: char = 'ᙌ';
-    /// \u{164d}: 'ᙍ'
-    pub const CANADIAN_SYLLABICS_CARRIER_DZA: char = 'ᙍ';
-    /// \u{164e}: 'ᙎ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SU: char = 'ᙎ';
-    /// \u{164f}: 'ᙏ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SO: char = 'ᙏ';
-    /// \u{1650}: 'ᙐ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SE: char = 'ᙐ';
-    /// \u{1651}: 'ᙑ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SEE: char = 'ᙑ';
-    /// \u{1652}: 'ᙒ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SI: char = 'ᙒ';
-    /// \u{1653}: 'ᙓ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SA: char = 'ᙓ';
-    /// \u{1654}: 'ᙔ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SHU: char = 'ᙔ';
-    /// \u{1655}: 'ᙕ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SHO: char = 'ᙕ';
-    /// \u{1656}: 'ᙖ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SHE: char = 'ᙖ';
-    /// \u{1657}: 'ᙗ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SHEE: char = 'ᙗ';
-    /// \u{1658}: 'ᙘ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SHI: char = 'ᙘ';
-    /// \u{1659}: 'ᙙ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SHA: char = 'ᙙ';
-    /// \u{165a}: 'ᙚ'
-    pub const CANADIAN_SYLLABICS_CARRIER_SH: char = 'ᙚ';
-    /// \u{165b}: 'ᙛ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TSU: char = 'ᙛ';
-    /// \u{165c}: 'ᙜ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TSO: char = 'ᙜ';
-    /// \u{165d}: 'ᙝ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TSE: char = 'ᙝ';
-    /// \u{165e}: 'ᙞ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TSEE: char = 'ᙞ';
-    /// \u{165f}: 'ᙟ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TSI: char = 'ᙟ';
-    /// \u{1660}: 'ᙠ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TSA: char = 'ᙠ';
-    /// \u{1661}: 'ᙡ'
-    pub const CANADIAN_SYLLABICS_CARRIER_CHU: char = 'ᙡ';
-    /// \u{1662}: 'ᙢ'
-    pub const CANADIAN_SYLLABICS_CARRIER_CHO: char = 'ᙢ';
-    /// \u{1663}: 'ᙣ'
-    pub const CANADIAN_SYLLABICS_CARRIER_CHE: char = 'ᙣ';
-    /// \u{1664}: 'ᙤ'
-    pub const CANADIAN_SYLLABICS_CARRIER_CHEE: char = 'ᙤ';
-    /// \u{1665}: 'ᙥ'
-    pub const CANADIAN_SYLLABICS_CARRIER_CHI: char = 'ᙥ';
-    /// \u{1666}: 'ᙦ'
-    pub const CANADIAN_SYLLABICS_CARRIER_CHA: char = 'ᙦ';
-    /// \u{1667}: 'ᙧ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTSU: char = 'ᙧ';
-    /// \u{1668}: 'ᙨ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTSO: char = 'ᙨ';
-    /// \u{1669}: 'ᙩ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTSE: char = 'ᙩ';
-    /// \u{166a}: 'ᙪ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTSEE: char = 'ᙪ';
-    /// \u{166b}: 'ᙫ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTSI: char = 'ᙫ';
-    /// \u{166c}: 'ᙬ'
-    pub const CANADIAN_SYLLABICS_CARRIER_TTSA: char = 'ᙬ';
-    /// \u{166d}: '᙭'
-    pub const CANADIAN_SYLLABICS_CHI_SIGN: char = '᙭';
-    /// \u{166e}: '᙮'
-    pub const CANADIAN_SYLLABICS_FULL_STOP: char = '᙮';
-    /// \u{166f}: 'ᙯ'
-    pub const CANADIAN_SYLLABICS_QAI: char = 'ᙯ';
-    /// \u{1670}: 'ᙰ'
-    pub const CANADIAN_SYLLABICS_NGAI: char = 'ᙰ';
-    /// \u{1671}: 'ᙱ'
-    pub const CANADIAN_SYLLABICS_NNGI: char = 'ᙱ';
-    /// \u{1672}: 'ᙲ'
-    pub const CANADIAN_SYLLABICS_NNGII: char = 'ᙲ';
-    /// \u{1673}: 'ᙳ'
-    pub const CANADIAN_SYLLABICS_NNGO: char = 'ᙳ';
-    /// \u{1674}: 'ᙴ'
-    pub const CANADIAN_SYLLABICS_NNGOO: char = 'ᙴ';
-    /// \u{1675}: 'ᙵ'
-    pub const CANADIAN_SYLLABICS_NNGA: char = 'ᙵ';
-    /// \u{1676}: 'ᙶ'
-    pub const CANADIAN_SYLLABICS_NNGAA: char = 'ᙶ';
-    /// \u{1677}: 'ᙷ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWEE: char = 'ᙷ';
-    /// \u{1678}: 'ᙸ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWI: char = 'ᙸ';
-    /// \u{1679}: 'ᙹ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWII: char = 'ᙹ';
-    /// \u{167a}: 'ᙺ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWO: char = 'ᙺ';
-    /// \u{167b}: 'ᙻ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWOO: char = 'ᙻ';
-    /// \u{167c}: 'ᙼ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWA: char = 'ᙼ';
-    /// \u{167d}: 'ᙽ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWAA: char = 'ᙽ';
-    /// \u{167e}: 'ᙾ'
-    pub const CANADIAN_SYLLABICS_WOODS_DASH_CREE_FINAL_TH: char = 'ᙾ';
-}
 
 /// An enum to represent all characters in the UnifiedCanadianAboriginalSyllabics block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -2565,647 +1284,646 @@ pub enum UnifiedCanadianAboriginalSyllabics {
 
 impl Into<char> for UnifiedCanadianAboriginalSyllabics {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsHyphen => CANADIAN_SYLLABICS_HYPHEN,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsE => CANADIAN_SYLLABICS_E,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAai => CANADIAN_SYLLABICS_AAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsI => CANADIAN_SYLLABICS_I,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsIi => CANADIAN_SYLLABICS_II,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsO => CANADIAN_SYLLABICS_O,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsOo => CANADIAN_SYLLABICS_OO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeOo => CANADIAN_SYLLABICS_Y_DASH_CREE_OO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierEe => CANADIAN_SYLLABICS_CARRIER_EE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierI => CANADIAN_SYLLABICS_CARRIER_I,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsA => CANADIAN_SYLLABICS_A,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAa => CANADIAN_SYLLABICS_AA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWe => CANADIAN_SYLLABICS_WE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWe => CANADIAN_SYLLABICS_WEST_DASH_CREE_WE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWi => CANADIAN_SYLLABICS_WI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWi => CANADIAN_SYLLABICS_WEST_DASH_CREE_WI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWii => CANADIAN_SYLLABICS_WII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWii => CANADIAN_SYLLABICS_WEST_DASH_CREE_WII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWo => CANADIAN_SYLLABICS_WO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWo => CANADIAN_SYLLABICS_WEST_DASH_CREE_WO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoo => CANADIAN_SYLLABICS_WOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_WOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiWoo => CANADIAN_SYLLABICS_NASKAPI_WOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWa => CANADIAN_SYLLABICS_WA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWa => CANADIAN_SYLLABICS_WEST_DASH_CREE_WA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWaa => CANADIAN_SYLLABICS_WAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_WAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiWaa => CANADIAN_SYLLABICS_NASKAPI_WAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAi => CANADIAN_SYLLABICS_AI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeW => CANADIAN_SYLLABICS_Y_DASH_CREE_W,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsGlottalStop => CANADIAN_SYLLABICS_GLOTTAL_STOP,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalAcute => CANADIAN_SYLLABICS_FINAL_ACUTE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalGrave => CANADIAN_SYLLABICS_FINAL_GRAVE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalBottomHalfRing => CANADIAN_SYLLABICS_FINAL_BOTTOM_HALF_RING,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalTopHalfRing => CANADIAN_SYLLABICS_FINAL_TOP_HALF_RING,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalRightHalfRing => CANADIAN_SYLLABICS_FINAL_RIGHT_HALF_RING,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalRing => CANADIAN_SYLLABICS_FINAL_RING,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDoubleAcute => CANADIAN_SYLLABICS_FINAL_DOUBLE_ACUTE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDoubleShortVerticalStrokes => CANADIAN_SYLLABICS_FINAL_DOUBLE_SHORT_VERTICAL_STROKES,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalMiddleDot => CANADIAN_SYLLABICS_FINAL_MIDDLE_DOT,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalShortHorizontalStroke => CANADIAN_SYLLABICS_FINAL_SHORT_HORIZONTAL_STROKE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalPlus => CANADIAN_SYLLABICS_FINAL_PLUS,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDownTack => CANADIAN_SYLLABICS_FINAL_DOWN_TACK,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsEn => CANADIAN_SYLLABICS_EN,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsIn => CANADIAN_SYLLABICS_IN,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsOn => CANADIAN_SYLLABICS_ON,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAn => CANADIAN_SYLLABICS_AN,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPe => CANADIAN_SYLLABICS_PE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPaai => CANADIAN_SYLLABICS_PAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPi => CANADIAN_SYLLABICS_PI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPii => CANADIAN_SYLLABICS_PII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPo => CANADIAN_SYLLABICS_PO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPoo => CANADIAN_SYLLABICS_POO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreePoo => CANADIAN_SYLLABICS_Y_DASH_CREE_POO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHee => CANADIAN_SYLLABICS_CARRIER_HEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHi => CANADIAN_SYLLABICS_CARRIER_HI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPa => CANADIAN_SYLLABICS_PA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPaa => CANADIAN_SYLLABICS_PAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwe => CANADIAN_SYLLABICS_PWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_PWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwi => CANADIAN_SYLLABICS_PWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwi => CANADIAN_SYLLABICS_WEST_DASH_CREE_PWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwii => CANADIAN_SYLLABICS_PWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwii => CANADIAN_SYLLABICS_WEST_DASH_CREE_PWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwo => CANADIAN_SYLLABICS_PWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwo => CANADIAN_SYLLABICS_WEST_DASH_CREE_PWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwoo => CANADIAN_SYLLABICS_PWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_PWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwa => CANADIAN_SYLLABICS_PWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_PWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwaa => CANADIAN_SYLLABICS_PWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_PWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreePwaa => CANADIAN_SYLLABICS_Y_DASH_CREE_PWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsP => CANADIAN_SYLLABICS_P,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeP => CANADIAN_SYLLABICS_WEST_DASH_CREE_P,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierH => CANADIAN_SYLLABICS_CARRIER_H,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTe => CANADIAN_SYLLABICS_TE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTaai => CANADIAN_SYLLABICS_TAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTi => CANADIAN_SYLLABICS_TI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTii => CANADIAN_SYLLABICS_TII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTo => CANADIAN_SYLLABICS_TO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsToo => CANADIAN_SYLLABICS_TOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeToo => CANADIAN_SYLLABICS_Y_DASH_CREE_TOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDee => CANADIAN_SYLLABICS_CARRIER_DEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDi => CANADIAN_SYLLABICS_CARRIER_DI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTa => CANADIAN_SYLLABICS_TA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTaa => CANADIAN_SYLLABICS_TAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwe => CANADIAN_SYLLABICS_TWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_TWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwi => CANADIAN_SYLLABICS_TWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwi => CANADIAN_SYLLABICS_WEST_DASH_CREE_TWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwii => CANADIAN_SYLLABICS_TWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwii => CANADIAN_SYLLABICS_WEST_DASH_CREE_TWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwo => CANADIAN_SYLLABICS_TWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwo => CANADIAN_SYLLABICS_WEST_DASH_CREE_TWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwoo => CANADIAN_SYLLABICS_TWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_TWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwa => CANADIAN_SYLLABICS_TWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_TWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwaa => CANADIAN_SYLLABICS_TWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_TWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiTwaa => CANADIAN_SYLLABICS_NASKAPI_TWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsT => CANADIAN_SYLLABICS_T,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTte => CANADIAN_SYLLABICS_TTE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTti => CANADIAN_SYLLABICS_TTI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTto => CANADIAN_SYLLABICS_TTO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTta => CANADIAN_SYLLABICS_TTA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKe => CANADIAN_SYLLABICS_KE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKaai => CANADIAN_SYLLABICS_KAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKi => CANADIAN_SYLLABICS_KI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKii => CANADIAN_SYLLABICS_KII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKo => CANADIAN_SYLLABICS_KO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKoo => CANADIAN_SYLLABICS_KOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeKoo => CANADIAN_SYLLABICS_Y_DASH_CREE_KOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKa => CANADIAN_SYLLABICS_KA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKaa => CANADIAN_SYLLABICS_KAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwe => CANADIAN_SYLLABICS_KWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_KWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwi => CANADIAN_SYLLABICS_KWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwi => CANADIAN_SYLLABICS_WEST_DASH_CREE_KWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwii => CANADIAN_SYLLABICS_KWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwii => CANADIAN_SYLLABICS_WEST_DASH_CREE_KWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwo => CANADIAN_SYLLABICS_KWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwo => CANADIAN_SYLLABICS_WEST_DASH_CREE_KWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwoo => CANADIAN_SYLLABICS_KWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_KWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwa => CANADIAN_SYLLABICS_KWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_KWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwaa => CANADIAN_SYLLABICS_KWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_KWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiKwaa => CANADIAN_SYLLABICS_NASKAPI_KWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsK => CANADIAN_SYLLABICS_K,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKw => CANADIAN_SYLLABICS_KW,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKeh => CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KEH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKih => CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KIH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKoh => CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KOH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKah => CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KAH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCe => CANADIAN_SYLLABICS_CE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCaai => CANADIAN_SYLLABICS_CAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCi => CANADIAN_SYLLABICS_CI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCii => CANADIAN_SYLLABICS_CII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCo => CANADIAN_SYLLABICS_CO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCoo => CANADIAN_SYLLABICS_COO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeCoo => CANADIAN_SYLLABICS_Y_DASH_CREE_COO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCa => CANADIAN_SYLLABICS_CA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCaa => CANADIAN_SYLLABICS_CAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwe => CANADIAN_SYLLABICS_CWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_CWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwi => CANADIAN_SYLLABICS_CWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwi => CANADIAN_SYLLABICS_WEST_DASH_CREE_CWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwii => CANADIAN_SYLLABICS_CWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwii => CANADIAN_SYLLABICS_WEST_DASH_CREE_CWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwo => CANADIAN_SYLLABICS_CWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwo => CANADIAN_SYLLABICS_WEST_DASH_CREE_CWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwoo => CANADIAN_SYLLABICS_CWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_CWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwa => CANADIAN_SYLLABICS_CWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_CWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwaa => CANADIAN_SYLLABICS_CWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_CWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiCwaa => CANADIAN_SYLLABICS_NASKAPI_CWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsC => CANADIAN_SYLLABICS_C,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiTh => CANADIAN_SYLLABICS_SAYISI_TH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMe => CANADIAN_SYLLABICS_ME,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMaai => CANADIAN_SYLLABICS_MAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMi => CANADIAN_SYLLABICS_MI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMii => CANADIAN_SYLLABICS_MII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMo => CANADIAN_SYLLABICS_MO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMoo => CANADIAN_SYLLABICS_MOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeMoo => CANADIAN_SYLLABICS_Y_DASH_CREE_MOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMa => CANADIAN_SYLLABICS_MA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMaa => CANADIAN_SYLLABICS_MAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwe => CANADIAN_SYLLABICS_MWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_MWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwi => CANADIAN_SYLLABICS_MWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwi => CANADIAN_SYLLABICS_WEST_DASH_CREE_MWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwii => CANADIAN_SYLLABICS_MWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwii => CANADIAN_SYLLABICS_WEST_DASH_CREE_MWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwo => CANADIAN_SYLLABICS_MWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwo => CANADIAN_SYLLABICS_WEST_DASH_CREE_MWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwoo => CANADIAN_SYLLABICS_MWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_MWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwa => CANADIAN_SYLLABICS_MWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_MWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwaa => CANADIAN_SYLLABICS_MWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_MWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiMwaa => CANADIAN_SYLLABICS_NASKAPI_MWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsM => CANADIAN_SYLLABICS_M,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeM => CANADIAN_SYLLABICS_WEST_DASH_CREE_M,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMh => CANADIAN_SYLLABICS_MH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAthapascanM => CANADIAN_SYLLABICS_ATHAPASCAN_M,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiM => CANADIAN_SYLLABICS_SAYISI_M,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNe => CANADIAN_SYLLABICS_NE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaai => CANADIAN_SYLLABICS_NAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNi => CANADIAN_SYLLABICS_NI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNii => CANADIAN_SYLLABICS_NII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNo => CANADIAN_SYLLABICS_NO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNoo => CANADIAN_SYLLABICS_NOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeNoo => CANADIAN_SYLLABICS_Y_DASH_CREE_NOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNa => CANADIAN_SYLLABICS_NA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaa => CANADIAN_SYLLABICS_NAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwe => CANADIAN_SYLLABICS_NWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_NWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwa => CANADIAN_SYLLABICS_NWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_NWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwaa => CANADIAN_SYLLABICS_NWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_NWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiNwaa => CANADIAN_SYLLABICS_NASKAPI_NWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsN => CANADIAN_SYLLABICS_N,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNg => CANADIAN_SYLLABICS_CARRIER_NG,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNh => CANADIAN_SYLLABICS_NH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLe => CANADIAN_SYLLABICS_LE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLaai => CANADIAN_SYLLABICS_LAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLi => CANADIAN_SYLLABICS_LI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLii => CANADIAN_SYLLABICS_LII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLo => CANADIAN_SYLLABICS_LO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLoo => CANADIAN_SYLLABICS_LOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeLoo => CANADIAN_SYLLABICS_Y_DASH_CREE_LOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLa => CANADIAN_SYLLABICS_LA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLaa => CANADIAN_SYLLABICS_LAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwe => CANADIAN_SYLLABICS_LWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_LWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwi => CANADIAN_SYLLABICS_LWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwi => CANADIAN_SYLLABICS_WEST_DASH_CREE_LWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwii => CANADIAN_SYLLABICS_LWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwii => CANADIAN_SYLLABICS_WEST_DASH_CREE_LWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwo => CANADIAN_SYLLABICS_LWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwo => CANADIAN_SYLLABICS_WEST_DASH_CREE_LWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwoo => CANADIAN_SYLLABICS_LWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_LWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwa => CANADIAN_SYLLABICS_LWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_LWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwaa => CANADIAN_SYLLABICS_LWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_LWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsL => CANADIAN_SYLLABICS_L,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeL => CANADIAN_SYLLABICS_WEST_DASH_CREE_L,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMedialL => CANADIAN_SYLLABICS_MEDIAL_L,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSe => CANADIAN_SYLLABICS_SE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSaai => CANADIAN_SYLLABICS_SAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSi => CANADIAN_SYLLABICS_SI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSii => CANADIAN_SYLLABICS_SII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSo => CANADIAN_SYLLABICS_SO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSoo => CANADIAN_SYLLABICS_SOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeSoo => CANADIAN_SYLLABICS_Y_DASH_CREE_SOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSa => CANADIAN_SYLLABICS_SA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSaa => CANADIAN_SYLLABICS_SAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwe => CANADIAN_SYLLABICS_SWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_SWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwi => CANADIAN_SYLLABICS_SWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwi => CANADIAN_SYLLABICS_WEST_DASH_CREE_SWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwii => CANADIAN_SYLLABICS_SWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwii => CANADIAN_SYLLABICS_WEST_DASH_CREE_SWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwo => CANADIAN_SYLLABICS_SWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwo => CANADIAN_SYLLABICS_WEST_DASH_CREE_SWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwoo => CANADIAN_SYLLABICS_SWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_SWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwa => CANADIAN_SYLLABICS_SWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_SWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwaa => CANADIAN_SYLLABICS_SWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_SWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSwaa => CANADIAN_SYLLABICS_NASKAPI_SWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsS => CANADIAN_SYLLABICS_S,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAthapascanS => CANADIAN_SYLLABICS_ATHAPASCAN_S,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSw => CANADIAN_SYLLABICS_SW,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootS => CANADIAN_SYLLABICS_BLACKFOOT_S,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMooseDashCreeSk => CANADIAN_SYLLABICS_MOOSE_DASH_CREE_SK,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSkw => CANADIAN_SYLLABICS_NASKAPI_SKW,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSDashW => CANADIAN_SYLLABICS_NASKAPI_S_DASH_W,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSpwa => CANADIAN_SYLLABICS_NASKAPI_SPWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiStwa => CANADIAN_SYLLABICS_NASKAPI_STWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSkwa => CANADIAN_SYLLABICS_NASKAPI_SKWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiScwa => CANADIAN_SYLLABICS_NASKAPI_SCWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShe => CANADIAN_SYLLABICS_SHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShi => CANADIAN_SYLLABICS_SHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShii => CANADIAN_SYLLABICS_SHII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSho => CANADIAN_SYLLABICS_SHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShoo => CANADIAN_SYLLABICS_SHOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSha => CANADIAN_SYLLABICS_SHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShaa => CANADIAN_SYLLABICS_SHAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwe => CANADIAN_SYLLABICS_SHWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwi => CANADIAN_SYLLABICS_SHWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwi => CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwii => CANADIAN_SYLLABICS_SHWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwii => CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwo => CANADIAN_SYLLABICS_SHWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwo => CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwoo => CANADIAN_SYLLABICS_SHWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwa => CANADIAN_SYLLABICS_SHWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwaa => CANADIAN_SYLLABICS_SHWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSh => CANADIAN_SYLLABICS_SH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYe => CANADIAN_SYLLABICS_YE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYaai => CANADIAN_SYLLABICS_YAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYi => CANADIAN_SYLLABICS_YI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYii => CANADIAN_SYLLABICS_YII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYo => CANADIAN_SYLLABICS_YO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYoo => CANADIAN_SYLLABICS_YOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeYoo => CANADIAN_SYLLABICS_Y_DASH_CREE_YOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYa => CANADIAN_SYLLABICS_YA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYaa => CANADIAN_SYLLABICS_YAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwe => CANADIAN_SYLLABICS_YWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwe => CANADIAN_SYLLABICS_WEST_DASH_CREE_YWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwi => CANADIAN_SYLLABICS_YWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwi => CANADIAN_SYLLABICS_WEST_DASH_CREE_YWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwii => CANADIAN_SYLLABICS_YWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwii => CANADIAN_SYLLABICS_WEST_DASH_CREE_YWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwo => CANADIAN_SYLLABICS_YWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwo => CANADIAN_SYLLABICS_WEST_DASH_CREE_YWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwoo => CANADIAN_SYLLABICS_YWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwoo => CANADIAN_SYLLABICS_WEST_DASH_CREE_YWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwa => CANADIAN_SYLLABICS_YWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwa => CANADIAN_SYLLABICS_WEST_DASH_CREE_YWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwaa => CANADIAN_SYLLABICS_YWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_YWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiYwaa => CANADIAN_SYLLABICS_NASKAPI_YWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsY => CANADIAN_SYLLABICS_Y,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBibleDashCreeY => CANADIAN_SYLLABICS_BIBLE_DASH_CREE_Y,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeY => CANADIAN_SYLLABICS_WEST_DASH_CREE_Y,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiYi => CANADIAN_SYLLABICS_SAYISI_YI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRe => CANADIAN_SYLLABICS_RE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRDashCreeRe => CANADIAN_SYLLABICS_R_DASH_CREE_RE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLe => CANADIAN_SYLLABICS_WEST_DASH_CREE_LE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRaai => CANADIAN_SYLLABICS_RAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRi => CANADIAN_SYLLABICS_RI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRii => CANADIAN_SYLLABICS_RII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRo => CANADIAN_SYLLABICS_RO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRoo => CANADIAN_SYLLABICS_ROO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLo => CANADIAN_SYLLABICS_WEST_DASH_CREE_LO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRa => CANADIAN_SYLLABICS_RA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRaa => CANADIAN_SYLLABICS_RAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLa => CANADIAN_SYLLABICS_WEST_DASH_CREE_LA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRwaa => CANADIAN_SYLLABICS_RWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_RWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsR => CANADIAN_SYLLABICS_R,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeR => CANADIAN_SYLLABICS_WEST_DASH_CREE_R,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMedialR => CANADIAN_SYLLABICS_MEDIAL_R,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFe => CANADIAN_SYLLABICS_FE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFaai => CANADIAN_SYLLABICS_FAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFi => CANADIAN_SYLLABICS_FI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFii => CANADIAN_SYLLABICS_FII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFo => CANADIAN_SYLLABICS_FO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFoo => CANADIAN_SYLLABICS_FOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFa => CANADIAN_SYLLABICS_FA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFaa => CANADIAN_SYLLABICS_FAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFwaa => CANADIAN_SYLLABICS_FWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeFwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_FWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsF => CANADIAN_SYLLABICS_F,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThe => CANADIAN_SYLLABICS_THE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThe => CANADIAN_SYLLABICS_N_DASH_CREE_THE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThi => CANADIAN_SYLLABICS_THI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThi => CANADIAN_SYLLABICS_N_DASH_CREE_THI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThii => CANADIAN_SYLLABICS_THII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThii => CANADIAN_SYLLABICS_N_DASH_CREE_THII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTho => CANADIAN_SYLLABICS_THO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThoo => CANADIAN_SYLLABICS_THOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTha => CANADIAN_SYLLABICS_THA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThaa => CANADIAN_SYLLABICS_THAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThwaa => CANADIAN_SYLLABICS_THWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeThwaa => CANADIAN_SYLLABICS_WEST_DASH_CREE_THWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTh => CANADIAN_SYLLABICS_TH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTthe => CANADIAN_SYLLABICS_TTHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTthi => CANADIAN_SYLLABICS_TTHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTtho => CANADIAN_SYLLABICS_TTHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTtha => CANADIAN_SYLLABICS_TTHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTth => CANADIAN_SYLLABICS_TTH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTye => CANADIAN_SYLLABICS_TYE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTyi => CANADIAN_SYLLABICS_TYI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTyo => CANADIAN_SYLLABICS_TYO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTya => CANADIAN_SYLLABICS_TYA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHe => CANADIAN_SYLLABICS_NUNAVIK_HE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHi => CANADIAN_SYLLABICS_NUNAVIK_HI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHii => CANADIAN_SYLLABICS_NUNAVIK_HII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHo => CANADIAN_SYLLABICS_NUNAVIK_HO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHoo => CANADIAN_SYLLABICS_NUNAVIK_HOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHa => CANADIAN_SYLLABICS_NUNAVIK_HA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHaa => CANADIAN_SYLLABICS_NUNAVIK_HAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikH => CANADIAN_SYLLABICS_NUNAVIK_H,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavutH => CANADIAN_SYLLABICS_NUNAVUT_H,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsHk => CANADIAN_SYLLABICS_HK,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQaai => CANADIAN_SYLLABICS_QAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQi => CANADIAN_SYLLABICS_QI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQii => CANADIAN_SYLLABICS_QII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQo => CANADIAN_SYLLABICS_QO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQoo => CANADIAN_SYLLABICS_QOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQa => CANADIAN_SYLLABICS_QA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQaa => CANADIAN_SYLLABICS_QAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQ => CANADIAN_SYLLABICS_Q,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlhe => CANADIAN_SYLLABICS_TLHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlhi => CANADIAN_SYLLABICS_TLHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlho => CANADIAN_SYLLABICS_TLHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlha => CANADIAN_SYLLABICS_TLHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRe => CANADIAN_SYLLABICS_WEST_DASH_CREE_RE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRi => CANADIAN_SYLLABICS_WEST_DASH_CREE_RI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRo => CANADIAN_SYLLABICS_WEST_DASH_CREE_RO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRa => CANADIAN_SYLLABICS_WEST_DASH_CREE_RA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgaai => CANADIAN_SYLLABICS_NGAAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgi => CANADIAN_SYLLABICS_NGI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgii => CANADIAN_SYLLABICS_NGII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgo => CANADIAN_SYLLABICS_NGO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgoo => CANADIAN_SYLLABICS_NGOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNga => CANADIAN_SYLLABICS_NGA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgaa => CANADIAN_SYLLABICS_NGAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNg => CANADIAN_SYLLABICS_NG,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNng => CANADIAN_SYLLABICS_NNG,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiShe => CANADIAN_SYLLABICS_SAYISI_SHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiShi => CANADIAN_SYLLABICS_SAYISI_SHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiSho => CANADIAN_SYLLABICS_SAYISI_SHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiSha => CANADIAN_SYLLABICS_SAYISI_SHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThe => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThi => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTho => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTha => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTh => CANADIAN_SYLLABICS_WOODS_DASH_CREE_TH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhi => CANADIAN_SYLLABICS_LHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhii => CANADIAN_SYLLABICS_LHII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLho => CANADIAN_SYLLABICS_LHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhoo => CANADIAN_SYLLABICS_LHOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLha => CANADIAN_SYLLABICS_LHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhaa => CANADIAN_SYLLABICS_LHAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLh => CANADIAN_SYLLABICS_LH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThe => CANADIAN_SYLLABICS_TH_DASH_CREE_THE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThi => CANADIAN_SYLLABICS_TH_DASH_CREE_THI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThii => CANADIAN_SYLLABICS_TH_DASH_CREE_THII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTho => CANADIAN_SYLLABICS_TH_DASH_CREE_THO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThoo => CANADIAN_SYLLABICS_TH_DASH_CREE_THOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTha => CANADIAN_SYLLABICS_TH_DASH_CREE_THA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThaa => CANADIAN_SYLLABICS_TH_DASH_CREE_THAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTh => CANADIAN_SYLLABICS_TH_DASH_CREE_TH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAivilikB => CANADIAN_SYLLABICS_AIVILIK_B,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootE => CANADIAN_SYLLABICS_BLACKFOOT_E,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootI => CANADIAN_SYLLABICS_BLACKFOOT_I,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootO => CANADIAN_SYLLABICS_BLACKFOOT_O,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootA => CANADIAN_SYLLABICS_BLACKFOOT_A,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWe => CANADIAN_SYLLABICS_BLACKFOOT_WE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWi => CANADIAN_SYLLABICS_BLACKFOOT_WI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWo => CANADIAN_SYLLABICS_BLACKFOOT_WO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWa => CANADIAN_SYLLABICS_BLACKFOOT_WA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNe => CANADIAN_SYLLABICS_BLACKFOOT_NE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNi => CANADIAN_SYLLABICS_BLACKFOOT_NI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNo => CANADIAN_SYLLABICS_BLACKFOOT_NO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNa => CANADIAN_SYLLABICS_BLACKFOOT_NA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKe => CANADIAN_SYLLABICS_BLACKFOOT_KE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKi => CANADIAN_SYLLABICS_BLACKFOOT_KI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKo => CANADIAN_SYLLABICS_BLACKFOOT_KO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKa => CANADIAN_SYLLABICS_BLACKFOOT_KA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHe => CANADIAN_SYLLABICS_SAYISI_HE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHi => CANADIAN_SYLLABICS_SAYISI_HI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHo => CANADIAN_SYLLABICS_SAYISI_HO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHa => CANADIAN_SYLLABICS_SAYISI_HA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhu => CANADIAN_SYLLABICS_CARRIER_GHU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGho => CANADIAN_SYLLABICS_CARRIER_GHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhe => CANADIAN_SYLLABICS_CARRIER_GHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhee => CANADIAN_SYLLABICS_CARRIER_GHEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhi => CANADIAN_SYLLABICS_CARRIER_GHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGha => CANADIAN_SYLLABICS_CARRIER_GHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRu => CANADIAN_SYLLABICS_CARRIER_RU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRo => CANADIAN_SYLLABICS_CARRIER_RO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRe => CANADIAN_SYLLABICS_CARRIER_RE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRee => CANADIAN_SYLLABICS_CARRIER_REE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRi => CANADIAN_SYLLABICS_CARRIER_RI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRa => CANADIAN_SYLLABICS_CARRIER_RA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWu => CANADIAN_SYLLABICS_CARRIER_WU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWo => CANADIAN_SYLLABICS_CARRIER_WO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWe => CANADIAN_SYLLABICS_CARRIER_WE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWee => CANADIAN_SYLLABICS_CARRIER_WEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWi => CANADIAN_SYLLABICS_CARRIER_WI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWa => CANADIAN_SYLLABICS_CARRIER_WA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwu => CANADIAN_SYLLABICS_CARRIER_HWU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwo => CANADIAN_SYLLABICS_CARRIER_HWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwe => CANADIAN_SYLLABICS_CARRIER_HWE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwee => CANADIAN_SYLLABICS_CARRIER_HWEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwi => CANADIAN_SYLLABICS_CARRIER_HWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwa => CANADIAN_SYLLABICS_CARRIER_HWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThu => CANADIAN_SYLLABICS_CARRIER_THU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTho => CANADIAN_SYLLABICS_CARRIER_THO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThe => CANADIAN_SYLLABICS_CARRIER_THE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThee => CANADIAN_SYLLABICS_CARRIER_THEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThi => CANADIAN_SYLLABICS_CARRIER_THI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTha => CANADIAN_SYLLABICS_CARRIER_THA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtu => CANADIAN_SYLLABICS_CARRIER_TTU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTto => CANADIAN_SYLLABICS_CARRIER_TTO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTte => CANADIAN_SYLLABICS_CARRIER_TTE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtee => CANADIAN_SYLLABICS_CARRIER_TTEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTti => CANADIAN_SYLLABICS_CARRIER_TTI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTta => CANADIAN_SYLLABICS_CARRIER_TTA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPu => CANADIAN_SYLLABICS_CARRIER_PU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPo => CANADIAN_SYLLABICS_CARRIER_PO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPe => CANADIAN_SYLLABICS_CARRIER_PE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPee => CANADIAN_SYLLABICS_CARRIER_PEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPi => CANADIAN_SYLLABICS_CARRIER_PI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPa => CANADIAN_SYLLABICS_CARRIER_PA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierP => CANADIAN_SYLLABICS_CARRIER_P,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGu => CANADIAN_SYLLABICS_CARRIER_GU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGo => CANADIAN_SYLLABICS_CARRIER_GO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGe => CANADIAN_SYLLABICS_CARRIER_GE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGee => CANADIAN_SYLLABICS_CARRIER_GEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGi => CANADIAN_SYLLABICS_CARRIER_GI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGa => CANADIAN_SYLLABICS_CARRIER_GA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhu => CANADIAN_SYLLABICS_CARRIER_KHU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKho => CANADIAN_SYLLABICS_CARRIER_KHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhe => CANADIAN_SYLLABICS_CARRIER_KHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhee => CANADIAN_SYLLABICS_CARRIER_KHEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhi => CANADIAN_SYLLABICS_CARRIER_KHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKha => CANADIAN_SYLLABICS_CARRIER_KHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKku => CANADIAN_SYLLABICS_CARRIER_KKU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKko => CANADIAN_SYLLABICS_CARRIER_KKO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKke => CANADIAN_SYLLABICS_CARRIER_KKE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKkee => CANADIAN_SYLLABICS_CARRIER_KKEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKki => CANADIAN_SYLLABICS_CARRIER_KKI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKka => CANADIAN_SYLLABICS_CARRIER_KKA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKk => CANADIAN_SYLLABICS_CARRIER_KK,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNu => CANADIAN_SYLLABICS_CARRIER_NU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNo => CANADIAN_SYLLABICS_CARRIER_NO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNe => CANADIAN_SYLLABICS_CARRIER_NE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNee => CANADIAN_SYLLABICS_CARRIER_NEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNi => CANADIAN_SYLLABICS_CARRIER_NI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNa => CANADIAN_SYLLABICS_CARRIER_NA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMu => CANADIAN_SYLLABICS_CARRIER_MU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMo => CANADIAN_SYLLABICS_CARRIER_MO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMe => CANADIAN_SYLLABICS_CARRIER_ME,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMee => CANADIAN_SYLLABICS_CARRIER_MEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMi => CANADIAN_SYLLABICS_CARRIER_MI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMa => CANADIAN_SYLLABICS_CARRIER_MA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYu => CANADIAN_SYLLABICS_CARRIER_YU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYo => CANADIAN_SYLLABICS_CARRIER_YO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYe => CANADIAN_SYLLABICS_CARRIER_YE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYee => CANADIAN_SYLLABICS_CARRIER_YEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYi => CANADIAN_SYLLABICS_CARRIER_YI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYa => CANADIAN_SYLLABICS_CARRIER_YA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJu => CANADIAN_SYLLABICS_CARRIER_JU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiJu => CANADIAN_SYLLABICS_SAYISI_JU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJo => CANADIAN_SYLLABICS_CARRIER_JO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJe => CANADIAN_SYLLABICS_CARRIER_JE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJee => CANADIAN_SYLLABICS_CARRIER_JEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJi => CANADIAN_SYLLABICS_CARRIER_JI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiJi => CANADIAN_SYLLABICS_SAYISI_JI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJa => CANADIAN_SYLLABICS_CARRIER_JA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJju => CANADIAN_SYLLABICS_CARRIER_JJU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJjo => CANADIAN_SYLLABICS_CARRIER_JJO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJje => CANADIAN_SYLLABICS_CARRIER_JJE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJjee => CANADIAN_SYLLABICS_CARRIER_JJEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJji => CANADIAN_SYLLABICS_CARRIER_JJI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJja => CANADIAN_SYLLABICS_CARRIER_JJA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLu => CANADIAN_SYLLABICS_CARRIER_LU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLo => CANADIAN_SYLLABICS_CARRIER_LO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLe => CANADIAN_SYLLABICS_CARRIER_LE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLee => CANADIAN_SYLLABICS_CARRIER_LEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLi => CANADIAN_SYLLABICS_CARRIER_LI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLa => CANADIAN_SYLLABICS_CARRIER_LA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlu => CANADIAN_SYLLABICS_CARRIER_DLU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlo => CANADIAN_SYLLABICS_CARRIER_DLO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDle => CANADIAN_SYLLABICS_CARRIER_DLE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlee => CANADIAN_SYLLABICS_CARRIER_DLEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDli => CANADIAN_SYLLABICS_CARRIER_DLI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDla => CANADIAN_SYLLABICS_CARRIER_DLA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhu => CANADIAN_SYLLABICS_CARRIER_LHU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLho => CANADIAN_SYLLABICS_CARRIER_LHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhe => CANADIAN_SYLLABICS_CARRIER_LHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhee => CANADIAN_SYLLABICS_CARRIER_LHEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhi => CANADIAN_SYLLABICS_CARRIER_LHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLha => CANADIAN_SYLLABICS_CARRIER_LHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhu => CANADIAN_SYLLABICS_CARRIER_TLHU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlho => CANADIAN_SYLLABICS_CARRIER_TLHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhe => CANADIAN_SYLLABICS_CARRIER_TLHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhee => CANADIAN_SYLLABICS_CARRIER_TLHEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhi => CANADIAN_SYLLABICS_CARRIER_TLHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlha => CANADIAN_SYLLABICS_CARRIER_TLHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlu => CANADIAN_SYLLABICS_CARRIER_TLU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlo => CANADIAN_SYLLABICS_CARRIER_TLO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTle => CANADIAN_SYLLABICS_CARRIER_TLE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlee => CANADIAN_SYLLABICS_CARRIER_TLEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTli => CANADIAN_SYLLABICS_CARRIER_TLI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTla => CANADIAN_SYLLABICS_CARRIER_TLA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZu => CANADIAN_SYLLABICS_CARRIER_ZU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZo => CANADIAN_SYLLABICS_CARRIER_ZO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZe => CANADIAN_SYLLABICS_CARRIER_ZE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZee => CANADIAN_SYLLABICS_CARRIER_ZEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZi => CANADIAN_SYLLABICS_CARRIER_ZI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZa => CANADIAN_SYLLABICS_CARRIER_ZA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZ => CANADIAN_SYLLABICS_CARRIER_Z,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierInitialZ => CANADIAN_SYLLABICS_CARRIER_INITIAL_Z,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzu => CANADIAN_SYLLABICS_CARRIER_DZU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzo => CANADIAN_SYLLABICS_CARRIER_DZO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDze => CANADIAN_SYLLABICS_CARRIER_DZE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzee => CANADIAN_SYLLABICS_CARRIER_DZEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzi => CANADIAN_SYLLABICS_CARRIER_DZI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDza => CANADIAN_SYLLABICS_CARRIER_DZA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSu => CANADIAN_SYLLABICS_CARRIER_SU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSo => CANADIAN_SYLLABICS_CARRIER_SO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSe => CANADIAN_SYLLABICS_CARRIER_SE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSee => CANADIAN_SYLLABICS_CARRIER_SEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSi => CANADIAN_SYLLABICS_CARRIER_SI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSa => CANADIAN_SYLLABICS_CARRIER_SA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShu => CANADIAN_SYLLABICS_CARRIER_SHU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSho => CANADIAN_SYLLABICS_CARRIER_SHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShe => CANADIAN_SYLLABICS_CARRIER_SHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShee => CANADIAN_SYLLABICS_CARRIER_SHEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShi => CANADIAN_SYLLABICS_CARRIER_SHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSha => CANADIAN_SYLLABICS_CARRIER_SHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSh => CANADIAN_SYLLABICS_CARRIER_SH,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsu => CANADIAN_SYLLABICS_CARRIER_TSU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTso => CANADIAN_SYLLABICS_CARRIER_TSO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTse => CANADIAN_SYLLABICS_CARRIER_TSE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsee => CANADIAN_SYLLABICS_CARRIER_TSEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsi => CANADIAN_SYLLABICS_CARRIER_TSI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsa => CANADIAN_SYLLABICS_CARRIER_TSA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChu => CANADIAN_SYLLABICS_CARRIER_CHU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierCho => CANADIAN_SYLLABICS_CARRIER_CHO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChe => CANADIAN_SYLLABICS_CARRIER_CHE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChee => CANADIAN_SYLLABICS_CARRIER_CHEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChi => CANADIAN_SYLLABICS_CARRIER_CHI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierCha => CANADIAN_SYLLABICS_CARRIER_CHA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsu => CANADIAN_SYLLABICS_CARRIER_TTSU,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtso => CANADIAN_SYLLABICS_CARRIER_TTSO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtse => CANADIAN_SYLLABICS_CARRIER_TTSE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsee => CANADIAN_SYLLABICS_CARRIER_TTSEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsi => CANADIAN_SYLLABICS_CARRIER_TTSI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsa => CANADIAN_SYLLABICS_CARRIER_TTSA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsChiSign => CANADIAN_SYLLABICS_CHI_SIGN,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFullStop => CANADIAN_SYLLABICS_FULL_STOP,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQai => CANADIAN_SYLLABICS_QAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgai => CANADIAN_SYLLABICS_NGAI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngi => CANADIAN_SYLLABICS_NNGI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngii => CANADIAN_SYLLABICS_NNGII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngo => CANADIAN_SYLLABICS_NNGO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngoo => CANADIAN_SYLLABICS_NNGOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNnga => CANADIAN_SYLLABICS_NNGA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngaa => CANADIAN_SYLLABICS_NNGAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwee => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWEE,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwi => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWI,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwii => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWII,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwo => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwoo => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWOO,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwa => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwaa => CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWAA,
-            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeFinalTh => CANADIAN_SYLLABICS_WOODS_DASH_CREE_FINAL_TH,
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsHyphen => '᐀',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsE => 'ᐁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAai => 'ᐂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsI => 'ᐃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsIi => 'ᐄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsO => 'ᐅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsOo => 'ᐆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeOo => 'ᐇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierEe => 'ᐈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierI => 'ᐉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsA => 'ᐊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAa => 'ᐋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWe => 'ᐌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWe => 'ᐍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWi => 'ᐎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWi => 'ᐏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWii => 'ᐐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWii => 'ᐑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWo => 'ᐒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWo => 'ᐓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoo => 'ᐔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWoo => 'ᐕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiWoo => 'ᐖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWa => 'ᐗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWa => 'ᐘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWaa => 'ᐙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWaa => 'ᐚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiWaa => 'ᐛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAi => 'ᐜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeW => 'ᐝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsGlottalStop => 'ᐞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalAcute => 'ᐟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalGrave => 'ᐠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalBottomHalfRing => 'ᐡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalTopHalfRing => 'ᐢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalRightHalfRing => 'ᐣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalRing => 'ᐤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDoubleAcute => 'ᐥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDoubleShortVerticalStrokes => 'ᐦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalMiddleDot => 'ᐧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalShortHorizontalStroke => 'ᐨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalPlus => 'ᐩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDownTack => 'ᐪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsEn => 'ᐫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsIn => 'ᐬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsOn => 'ᐭ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAn => 'ᐮ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPe => 'ᐯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPaai => 'ᐰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPi => 'ᐱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPii => 'ᐲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPo => 'ᐳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPoo => 'ᐴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreePoo => 'ᐵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHee => 'ᐶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHi => 'ᐷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPa => 'ᐸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPaa => 'ᐹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwe => 'ᐺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwe => 'ᐻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwi => 'ᐼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwi => 'ᐽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwii => 'ᐾ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwii => 'ᐿ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwo => 'ᑀ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwo => 'ᑁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwoo => 'ᑂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwoo => 'ᑃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwa => 'ᑄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwa => 'ᑅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwaa => 'ᑆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwaa => 'ᑇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreePwaa => 'ᑈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsP => 'ᑉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeP => 'ᑊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierH => 'ᑋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTe => 'ᑌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTaai => 'ᑍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTi => 'ᑎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTii => 'ᑏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTo => 'ᑐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsToo => 'ᑑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeToo => 'ᑒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDee => 'ᑓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDi => 'ᑔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTa => 'ᑕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTaa => 'ᑖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwe => 'ᑗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwe => 'ᑘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwi => 'ᑙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwi => 'ᑚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwii => 'ᑛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwii => 'ᑜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwo => 'ᑝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwo => 'ᑞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwoo => 'ᑟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwoo => 'ᑠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwa => 'ᑡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwa => 'ᑢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwaa => 'ᑣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwaa => 'ᑤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiTwaa => 'ᑥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsT => 'ᑦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTte => 'ᑧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTti => 'ᑨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTto => 'ᑩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTta => 'ᑪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKe => 'ᑫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKaai => 'ᑬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKi => 'ᑭ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKii => 'ᑮ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKo => 'ᑯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKoo => 'ᑰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeKoo => 'ᑱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKa => 'ᑲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKaa => 'ᑳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwe => 'ᑴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwe => 'ᑵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwi => 'ᑶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwi => 'ᑷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwii => 'ᑸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwii => 'ᑹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwo => 'ᑺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwo => 'ᑻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwoo => 'ᑼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwoo => 'ᑽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwa => 'ᑾ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwa => 'ᑿ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwaa => 'ᒀ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwaa => 'ᒁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiKwaa => 'ᒂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsK => 'ᒃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKw => 'ᒄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKeh => 'ᒅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKih => 'ᒆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKoh => 'ᒇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKah => 'ᒈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCe => 'ᒉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCaai => 'ᒊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCi => 'ᒋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCii => 'ᒌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCo => 'ᒍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCoo => 'ᒎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeCoo => 'ᒏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCa => 'ᒐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCaa => 'ᒑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwe => 'ᒒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwe => 'ᒓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwi => 'ᒔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwi => 'ᒕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwii => 'ᒖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwii => 'ᒗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwo => 'ᒘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwo => 'ᒙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwoo => 'ᒚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwoo => 'ᒛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwa => 'ᒜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwa => 'ᒝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwaa => 'ᒞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwaa => 'ᒟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiCwaa => 'ᒠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsC => 'ᒡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiTh => 'ᒢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMe => 'ᒣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMaai => 'ᒤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMi => 'ᒥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMii => 'ᒦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMo => 'ᒧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMoo => 'ᒨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeMoo => 'ᒩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMa => 'ᒪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMaa => 'ᒫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwe => 'ᒬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwe => 'ᒭ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwi => 'ᒮ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwi => 'ᒯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwii => 'ᒰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwii => 'ᒱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwo => 'ᒲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwo => 'ᒳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwoo => 'ᒴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwoo => 'ᒵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwa => 'ᒶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwa => 'ᒷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwaa => 'ᒸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwaa => 'ᒹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiMwaa => 'ᒺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsM => 'ᒻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeM => 'ᒼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMh => 'ᒽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAthapascanM => 'ᒾ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiM => 'ᒿ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNe => 'ᓀ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaai => 'ᓁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNi => 'ᓂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNii => 'ᓃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNo => 'ᓄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNoo => 'ᓅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeNoo => 'ᓆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNa => 'ᓇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaa => 'ᓈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwe => 'ᓉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwe => 'ᓊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwa => 'ᓋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwa => 'ᓌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwaa => 'ᓍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwaa => 'ᓎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiNwaa => 'ᓏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsN => 'ᓐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNg => 'ᓑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNh => 'ᓒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLe => 'ᓓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLaai => 'ᓔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLi => 'ᓕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLii => 'ᓖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLo => 'ᓗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLoo => 'ᓘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeLoo => 'ᓙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLa => 'ᓚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLaa => 'ᓛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwe => 'ᓜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwe => 'ᓝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwi => 'ᓞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwi => 'ᓟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwii => 'ᓠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwii => 'ᓡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwo => 'ᓢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwo => 'ᓣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwoo => 'ᓤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwoo => 'ᓥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwa => 'ᓦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwa => 'ᓧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwaa => 'ᓨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwaa => 'ᓩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsL => 'ᓪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeL => 'ᓫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMedialL => 'ᓬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSe => 'ᓭ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSaai => 'ᓮ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSi => 'ᓯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSii => 'ᓰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSo => 'ᓱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSoo => 'ᓲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeSoo => 'ᓳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSa => 'ᓴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSaa => 'ᓵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwe => 'ᓶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwe => 'ᓷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwi => 'ᓸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwi => 'ᓹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwii => 'ᓺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwii => 'ᓻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwo => 'ᓼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwo => 'ᓽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwoo => 'ᓾ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwoo => 'ᓿ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwa => 'ᔀ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwa => 'ᔁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwaa => 'ᔂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwaa => 'ᔃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSwaa => 'ᔄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsS => 'ᔅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAthapascanS => 'ᔆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSw => 'ᔇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootS => 'ᔈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMooseDashCreeSk => 'ᔉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSkw => 'ᔊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSDashW => 'ᔋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSpwa => 'ᔌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiStwa => 'ᔍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSkwa => 'ᔎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiScwa => 'ᔏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShe => 'ᔐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShi => 'ᔑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShii => 'ᔒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSho => 'ᔓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShoo => 'ᔔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSha => 'ᔕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShaa => 'ᔖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwe => 'ᔗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwe => 'ᔘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwi => 'ᔙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwi => 'ᔚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwii => 'ᔛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwii => 'ᔜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwo => 'ᔝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwo => 'ᔞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwoo => 'ᔟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwoo => 'ᔠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwa => 'ᔡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwa => 'ᔢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwaa => 'ᔣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwaa => 'ᔤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSh => 'ᔥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYe => 'ᔦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYaai => 'ᔧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYi => 'ᔨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYii => 'ᔩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYo => 'ᔪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYoo => 'ᔫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeYoo => 'ᔬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYa => 'ᔭ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYaa => 'ᔮ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwe => 'ᔯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwe => 'ᔰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwi => 'ᔱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwi => 'ᔲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwii => 'ᔳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwii => 'ᔴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwo => 'ᔵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwo => 'ᔶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwoo => 'ᔷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwoo => 'ᔸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwa => 'ᔹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwa => 'ᔺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwaa => 'ᔻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwaa => 'ᔼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiYwaa => 'ᔽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsY => 'ᔾ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBibleDashCreeY => 'ᔿ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeY => 'ᕀ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiYi => 'ᕁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRe => 'ᕂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRDashCreeRe => 'ᕃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLe => 'ᕄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRaai => 'ᕅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRi => 'ᕆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRii => 'ᕇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRo => 'ᕈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRoo => 'ᕉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLo => 'ᕊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRa => 'ᕋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRaa => 'ᕌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLa => 'ᕍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRwaa => 'ᕎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRwaa => 'ᕏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsR => 'ᕐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeR => 'ᕑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMedialR => 'ᕒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFe => 'ᕓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFaai => 'ᕔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFi => 'ᕕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFii => 'ᕖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFo => 'ᕗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFoo => 'ᕘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFa => 'ᕙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFaa => 'ᕚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFwaa => 'ᕛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeFwaa => 'ᕜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsF => 'ᕝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThe => 'ᕞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThe => 'ᕟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThi => 'ᕠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThi => 'ᕡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThii => 'ᕢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThii => 'ᕣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTho => 'ᕤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThoo => 'ᕥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTha => 'ᕦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThaa => 'ᕧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThwaa => 'ᕨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeThwaa => 'ᕩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTh => 'ᕪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTthe => 'ᕫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTthi => 'ᕬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTtho => 'ᕭ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTtha => 'ᕮ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTth => 'ᕯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTye => 'ᕰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTyi => 'ᕱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTyo => 'ᕲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTya => 'ᕳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHe => 'ᕴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHi => 'ᕵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHii => 'ᕶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHo => 'ᕷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHoo => 'ᕸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHa => 'ᕹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHaa => 'ᕺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikH => 'ᕻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavutH => 'ᕼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsHk => 'ᕽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQaai => 'ᕾ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQi => 'ᕿ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQii => 'ᖀ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQo => 'ᖁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQoo => 'ᖂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQa => 'ᖃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQaa => 'ᖄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQ => 'ᖅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlhe => 'ᖆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlhi => 'ᖇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlho => 'ᖈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlha => 'ᖉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRe => 'ᖊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRi => 'ᖋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRo => 'ᖌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRa => 'ᖍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgaai => 'ᖎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgi => 'ᖏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgii => 'ᖐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgo => 'ᖑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgoo => 'ᖒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNga => 'ᖓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgaa => 'ᖔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNg => 'ᖕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNng => 'ᖖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiShe => 'ᖗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiShi => 'ᖘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiSho => 'ᖙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiSha => 'ᖚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThe => 'ᖛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThi => 'ᖜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTho => 'ᖝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTha => 'ᖞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTh => 'ᖟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhi => 'ᖠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhii => 'ᖡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLho => 'ᖢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhoo => 'ᖣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLha => 'ᖤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhaa => 'ᖥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLh => 'ᖦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThe => 'ᖧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThi => 'ᖨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThii => 'ᖩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTho => 'ᖪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThoo => 'ᖫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTha => 'ᖬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThaa => 'ᖭ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTh => 'ᖮ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAivilikB => 'ᖯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootE => 'ᖰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootI => 'ᖱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootO => 'ᖲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootA => 'ᖳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWe => 'ᖴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWi => 'ᖵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWo => 'ᖶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWa => 'ᖷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNe => 'ᖸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNi => 'ᖹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNo => 'ᖺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNa => 'ᖻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKe => 'ᖼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKi => 'ᖽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKo => 'ᖾ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKa => 'ᖿ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHe => 'ᗀ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHi => 'ᗁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHo => 'ᗂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHa => 'ᗃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhu => 'ᗄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGho => 'ᗅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhe => 'ᗆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhee => 'ᗇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhi => 'ᗈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGha => 'ᗉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRu => 'ᗊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRo => 'ᗋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRe => 'ᗌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRee => 'ᗍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRi => 'ᗎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRa => 'ᗏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWu => 'ᗐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWo => 'ᗑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWe => 'ᗒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWee => 'ᗓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWi => 'ᗔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWa => 'ᗕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwu => 'ᗖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwo => 'ᗗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwe => 'ᗘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwee => 'ᗙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwi => 'ᗚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwa => 'ᗛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThu => 'ᗜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTho => 'ᗝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThe => 'ᗞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThee => 'ᗟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThi => 'ᗠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTha => 'ᗡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtu => 'ᗢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTto => 'ᗣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTte => 'ᗤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtee => 'ᗥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTti => 'ᗦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTta => 'ᗧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPu => 'ᗨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPo => 'ᗩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPe => 'ᗪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPee => 'ᗫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPi => 'ᗬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPa => 'ᗭ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierP => 'ᗮ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGu => 'ᗯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGo => 'ᗰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGe => 'ᗱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGee => 'ᗲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGi => 'ᗳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGa => 'ᗴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhu => 'ᗵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKho => 'ᗶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhe => 'ᗷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhee => 'ᗸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhi => 'ᗹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKha => 'ᗺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKku => 'ᗻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKko => 'ᗼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKke => 'ᗽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKkee => 'ᗾ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKki => 'ᗿ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKka => 'ᘀ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKk => 'ᘁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNu => 'ᘂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNo => 'ᘃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNe => 'ᘄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNee => 'ᘅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNi => 'ᘆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNa => 'ᘇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMu => 'ᘈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMo => 'ᘉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMe => 'ᘊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMee => 'ᘋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMi => 'ᘌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMa => 'ᘍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYu => 'ᘎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYo => 'ᘏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYe => 'ᘐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYee => 'ᘑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYi => 'ᘒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYa => 'ᘓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJu => 'ᘔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiJu => 'ᘕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJo => 'ᘖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJe => 'ᘗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJee => 'ᘘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJi => 'ᘙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiJi => 'ᘚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJa => 'ᘛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJju => 'ᘜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJjo => 'ᘝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJje => 'ᘞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJjee => 'ᘟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJji => 'ᘠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJja => 'ᘡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLu => 'ᘢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLo => 'ᘣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLe => 'ᘤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLee => 'ᘥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLi => 'ᘦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLa => 'ᘧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlu => 'ᘨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlo => 'ᘩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDle => 'ᘪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlee => 'ᘫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDli => 'ᘬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDla => 'ᘭ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhu => 'ᘮ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLho => 'ᘯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhe => 'ᘰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhee => 'ᘱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhi => 'ᘲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLha => 'ᘳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhu => 'ᘴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlho => 'ᘵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhe => 'ᘶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhee => 'ᘷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhi => 'ᘸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlha => 'ᘹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlu => 'ᘺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlo => 'ᘻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTle => 'ᘼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlee => 'ᘽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTli => 'ᘾ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTla => 'ᘿ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZu => 'ᙀ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZo => 'ᙁ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZe => 'ᙂ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZee => 'ᙃ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZi => 'ᙄ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZa => 'ᙅ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZ => 'ᙆ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierInitialZ => 'ᙇ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzu => 'ᙈ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzo => 'ᙉ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDze => 'ᙊ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzee => 'ᙋ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzi => 'ᙌ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDza => 'ᙍ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSu => 'ᙎ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSo => 'ᙏ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSe => 'ᙐ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSee => 'ᙑ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSi => 'ᙒ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSa => 'ᙓ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShu => 'ᙔ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSho => 'ᙕ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShe => 'ᙖ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShee => 'ᙗ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShi => 'ᙘ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSha => 'ᙙ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSh => 'ᙚ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsu => 'ᙛ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTso => 'ᙜ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTse => 'ᙝ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsee => 'ᙞ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsi => 'ᙟ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsa => 'ᙠ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChu => 'ᙡ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierCho => 'ᙢ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChe => 'ᙣ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChee => 'ᙤ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChi => 'ᙥ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierCha => 'ᙦ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsu => 'ᙧ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtso => 'ᙨ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtse => 'ᙩ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsee => 'ᙪ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsi => 'ᙫ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsa => 'ᙬ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsChiSign => '᙭',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFullStop => '᙮',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQai => 'ᙯ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgai => 'ᙰ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngi => 'ᙱ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngii => 'ᙲ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngo => 'ᙳ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngoo => 'ᙴ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNnga => 'ᙵ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngaa => 'ᙶ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwee => 'ᙷ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwi => 'ᙸ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwii => 'ᙹ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwo => 'ᙺ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwoo => 'ᙻ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwa => 'ᙼ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwaa => 'ᙽ',
+            UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeFinalTh => 'ᙾ',
         }
     }
 }
@@ -3213,647 +1931,646 @@ impl Into<char> for UnifiedCanadianAboriginalSyllabics {
 impl std::convert::TryFrom<char> for UnifiedCanadianAboriginalSyllabics {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CANADIAN_SYLLABICS_HYPHEN => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsHyphen),
-            CANADIAN_SYLLABICS_E => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsE),
-            CANADIAN_SYLLABICS_AAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAai),
-            CANADIAN_SYLLABICS_I => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsI),
-            CANADIAN_SYLLABICS_II => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsIi),
-            CANADIAN_SYLLABICS_O => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsO),
-            CANADIAN_SYLLABICS_OO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsOo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_OO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeOo),
-            CANADIAN_SYLLABICS_CARRIER_EE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierEe),
-            CANADIAN_SYLLABICS_CARRIER_I => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierI),
-            CANADIAN_SYLLABICS_A => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsA),
-            CANADIAN_SYLLABICS_AA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAa),
-            CANADIAN_SYLLABICS_WE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_WE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWe),
-            CANADIAN_SYLLABICS_WI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_WI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWi),
-            CANADIAN_SYLLABICS_WII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_WII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWii),
-            CANADIAN_SYLLABICS_WO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_WO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWo),
-            CANADIAN_SYLLABICS_WOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_WOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWoo),
-            CANADIAN_SYLLABICS_NASKAPI_WOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiWoo),
-            CANADIAN_SYLLABICS_WA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_WA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWa),
-            CANADIAN_SYLLABICS_WAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_WAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWaa),
-            CANADIAN_SYLLABICS_NASKAPI_WAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiWaa),
-            CANADIAN_SYLLABICS_AI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAi),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_W => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeW),
-            CANADIAN_SYLLABICS_GLOTTAL_STOP => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsGlottalStop),
-            CANADIAN_SYLLABICS_FINAL_ACUTE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalAcute),
-            CANADIAN_SYLLABICS_FINAL_GRAVE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalGrave),
-            CANADIAN_SYLLABICS_FINAL_BOTTOM_HALF_RING => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalBottomHalfRing),
-            CANADIAN_SYLLABICS_FINAL_TOP_HALF_RING => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalTopHalfRing),
-            CANADIAN_SYLLABICS_FINAL_RIGHT_HALF_RING => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalRightHalfRing),
-            CANADIAN_SYLLABICS_FINAL_RING => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalRing),
-            CANADIAN_SYLLABICS_FINAL_DOUBLE_ACUTE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDoubleAcute),
-            CANADIAN_SYLLABICS_FINAL_DOUBLE_SHORT_VERTICAL_STROKES => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDoubleShortVerticalStrokes),
-            CANADIAN_SYLLABICS_FINAL_MIDDLE_DOT => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalMiddleDot),
-            CANADIAN_SYLLABICS_FINAL_SHORT_HORIZONTAL_STROKE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalShortHorizontalStroke),
-            CANADIAN_SYLLABICS_FINAL_PLUS => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalPlus),
-            CANADIAN_SYLLABICS_FINAL_DOWN_TACK => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDownTack),
-            CANADIAN_SYLLABICS_EN => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsEn),
-            CANADIAN_SYLLABICS_IN => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsIn),
-            CANADIAN_SYLLABICS_ON => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsOn),
-            CANADIAN_SYLLABICS_AN => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAn),
-            CANADIAN_SYLLABICS_PE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPe),
-            CANADIAN_SYLLABICS_PAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPaai),
-            CANADIAN_SYLLABICS_PI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPi),
-            CANADIAN_SYLLABICS_PII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPii),
-            CANADIAN_SYLLABICS_PO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPo),
-            CANADIAN_SYLLABICS_POO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPoo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_POO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreePoo),
-            CANADIAN_SYLLABICS_CARRIER_HEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHee),
-            CANADIAN_SYLLABICS_CARRIER_HI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHi),
-            CANADIAN_SYLLABICS_PA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPa),
-            CANADIAN_SYLLABICS_PAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPaa),
-            CANADIAN_SYLLABICS_PWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_PWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwe),
-            CANADIAN_SYLLABICS_PWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_PWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwi),
-            CANADIAN_SYLLABICS_PWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_PWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwii),
-            CANADIAN_SYLLABICS_PWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_PWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwo),
-            CANADIAN_SYLLABICS_PWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_PWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwoo),
-            CANADIAN_SYLLABICS_PWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_PWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwa),
-            CANADIAN_SYLLABICS_PWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_PWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwaa),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_PWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreePwaa),
-            CANADIAN_SYLLABICS_P => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsP),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_P => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeP),
-            CANADIAN_SYLLABICS_CARRIER_H => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierH),
-            CANADIAN_SYLLABICS_TE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTe),
-            CANADIAN_SYLLABICS_TAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTaai),
-            CANADIAN_SYLLABICS_TI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTi),
-            CANADIAN_SYLLABICS_TII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTii),
-            CANADIAN_SYLLABICS_TO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTo),
-            CANADIAN_SYLLABICS_TOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsToo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_TOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeToo),
-            CANADIAN_SYLLABICS_CARRIER_DEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDee),
-            CANADIAN_SYLLABICS_CARRIER_DI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDi),
-            CANADIAN_SYLLABICS_TA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTa),
-            CANADIAN_SYLLABICS_TAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTaa),
-            CANADIAN_SYLLABICS_TWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_TWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwe),
-            CANADIAN_SYLLABICS_TWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_TWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwi),
-            CANADIAN_SYLLABICS_TWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_TWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwii),
-            CANADIAN_SYLLABICS_TWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_TWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwo),
-            CANADIAN_SYLLABICS_TWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_TWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwoo),
-            CANADIAN_SYLLABICS_TWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_TWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwa),
-            CANADIAN_SYLLABICS_TWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_TWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwaa),
-            CANADIAN_SYLLABICS_NASKAPI_TWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiTwaa),
-            CANADIAN_SYLLABICS_T => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsT),
-            CANADIAN_SYLLABICS_TTE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTte),
-            CANADIAN_SYLLABICS_TTI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTti),
-            CANADIAN_SYLLABICS_TTO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTto),
-            CANADIAN_SYLLABICS_TTA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTta),
-            CANADIAN_SYLLABICS_KE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKe),
-            CANADIAN_SYLLABICS_KAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKaai),
-            CANADIAN_SYLLABICS_KI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKi),
-            CANADIAN_SYLLABICS_KII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKii),
-            CANADIAN_SYLLABICS_KO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKo),
-            CANADIAN_SYLLABICS_KOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKoo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_KOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeKoo),
-            CANADIAN_SYLLABICS_KA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKa),
-            CANADIAN_SYLLABICS_KAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKaa),
-            CANADIAN_SYLLABICS_KWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_KWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwe),
-            CANADIAN_SYLLABICS_KWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_KWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwi),
-            CANADIAN_SYLLABICS_KWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_KWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwii),
-            CANADIAN_SYLLABICS_KWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_KWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwo),
-            CANADIAN_SYLLABICS_KWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_KWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwoo),
-            CANADIAN_SYLLABICS_KWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_KWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwa),
-            CANADIAN_SYLLABICS_KWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_KWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwaa),
-            CANADIAN_SYLLABICS_NASKAPI_KWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiKwaa),
-            CANADIAN_SYLLABICS_K => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsK),
-            CANADIAN_SYLLABICS_KW => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKw),
-            CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KEH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKeh),
-            CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KIH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKih),
-            CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KOH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKoh),
-            CANADIAN_SYLLABICS_SOUTH_DASH_SLAVEY_KAH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKah),
-            CANADIAN_SYLLABICS_CE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCe),
-            CANADIAN_SYLLABICS_CAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCaai),
-            CANADIAN_SYLLABICS_CI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCi),
-            CANADIAN_SYLLABICS_CII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCii),
-            CANADIAN_SYLLABICS_CO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCo),
-            CANADIAN_SYLLABICS_COO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCoo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_COO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeCoo),
-            CANADIAN_SYLLABICS_CA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCa),
-            CANADIAN_SYLLABICS_CAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCaa),
-            CANADIAN_SYLLABICS_CWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_CWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwe),
-            CANADIAN_SYLLABICS_CWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_CWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwi),
-            CANADIAN_SYLLABICS_CWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_CWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwii),
-            CANADIAN_SYLLABICS_CWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_CWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwo),
-            CANADIAN_SYLLABICS_CWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_CWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwoo),
-            CANADIAN_SYLLABICS_CWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_CWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwa),
-            CANADIAN_SYLLABICS_CWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_CWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwaa),
-            CANADIAN_SYLLABICS_NASKAPI_CWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiCwaa),
-            CANADIAN_SYLLABICS_C => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsC),
-            CANADIAN_SYLLABICS_SAYISI_TH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiTh),
-            CANADIAN_SYLLABICS_ME => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMe),
-            CANADIAN_SYLLABICS_MAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMaai),
-            CANADIAN_SYLLABICS_MI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMi),
-            CANADIAN_SYLLABICS_MII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMii),
-            CANADIAN_SYLLABICS_MO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMo),
-            CANADIAN_SYLLABICS_MOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMoo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_MOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeMoo),
-            CANADIAN_SYLLABICS_MA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMa),
-            CANADIAN_SYLLABICS_MAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMaa),
-            CANADIAN_SYLLABICS_MWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_MWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwe),
-            CANADIAN_SYLLABICS_MWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_MWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwi),
-            CANADIAN_SYLLABICS_MWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_MWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwii),
-            CANADIAN_SYLLABICS_MWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_MWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwo),
-            CANADIAN_SYLLABICS_MWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_MWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwoo),
-            CANADIAN_SYLLABICS_MWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_MWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwa),
-            CANADIAN_SYLLABICS_MWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_MWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwaa),
-            CANADIAN_SYLLABICS_NASKAPI_MWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiMwaa),
-            CANADIAN_SYLLABICS_M => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsM),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_M => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeM),
-            CANADIAN_SYLLABICS_MH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMh),
-            CANADIAN_SYLLABICS_ATHAPASCAN_M => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAthapascanM),
-            CANADIAN_SYLLABICS_SAYISI_M => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiM),
-            CANADIAN_SYLLABICS_NE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNe),
-            CANADIAN_SYLLABICS_NAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaai),
-            CANADIAN_SYLLABICS_NI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNi),
-            CANADIAN_SYLLABICS_NII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNii),
-            CANADIAN_SYLLABICS_NO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNo),
-            CANADIAN_SYLLABICS_NOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNoo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_NOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeNoo),
-            CANADIAN_SYLLABICS_NA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNa),
-            CANADIAN_SYLLABICS_NAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaa),
-            CANADIAN_SYLLABICS_NWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_NWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwe),
-            CANADIAN_SYLLABICS_NWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_NWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwa),
-            CANADIAN_SYLLABICS_NWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_NWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwaa),
-            CANADIAN_SYLLABICS_NASKAPI_NWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiNwaa),
-            CANADIAN_SYLLABICS_N => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsN),
-            CANADIAN_SYLLABICS_CARRIER_NG => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNg),
-            CANADIAN_SYLLABICS_NH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNh),
-            CANADIAN_SYLLABICS_LE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLe),
-            CANADIAN_SYLLABICS_LAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLaai),
-            CANADIAN_SYLLABICS_LI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLi),
-            CANADIAN_SYLLABICS_LII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLii),
-            CANADIAN_SYLLABICS_LO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLo),
-            CANADIAN_SYLLABICS_LOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLoo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_LOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeLoo),
-            CANADIAN_SYLLABICS_LA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLa),
-            CANADIAN_SYLLABICS_LAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLaa),
-            CANADIAN_SYLLABICS_LWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwe),
-            CANADIAN_SYLLABICS_LWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwi),
-            CANADIAN_SYLLABICS_LWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwii),
-            CANADIAN_SYLLABICS_LWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwo),
-            CANADIAN_SYLLABICS_LWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwoo),
-            CANADIAN_SYLLABICS_LWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwa),
-            CANADIAN_SYLLABICS_LWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwaa),
-            CANADIAN_SYLLABICS_L => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsL),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_L => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeL),
-            CANADIAN_SYLLABICS_MEDIAL_L => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMedialL),
-            CANADIAN_SYLLABICS_SE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSe),
-            CANADIAN_SYLLABICS_SAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSaai),
-            CANADIAN_SYLLABICS_SI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSi),
-            CANADIAN_SYLLABICS_SII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSii),
-            CANADIAN_SYLLABICS_SO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSo),
-            CANADIAN_SYLLABICS_SOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSoo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_SOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeSoo),
-            CANADIAN_SYLLABICS_SA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSa),
-            CANADIAN_SYLLABICS_SAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSaa),
-            CANADIAN_SYLLABICS_SWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwe),
-            CANADIAN_SYLLABICS_SWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwi),
-            CANADIAN_SYLLABICS_SWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwii),
-            CANADIAN_SYLLABICS_SWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwo),
-            CANADIAN_SYLLABICS_SWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwoo),
-            CANADIAN_SYLLABICS_SWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwa),
-            CANADIAN_SYLLABICS_SWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwaa),
-            CANADIAN_SYLLABICS_NASKAPI_SWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSwaa),
-            CANADIAN_SYLLABICS_S => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsS),
-            CANADIAN_SYLLABICS_ATHAPASCAN_S => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAthapascanS),
-            CANADIAN_SYLLABICS_SW => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSw),
-            CANADIAN_SYLLABICS_BLACKFOOT_S => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootS),
-            CANADIAN_SYLLABICS_MOOSE_DASH_CREE_SK => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMooseDashCreeSk),
-            CANADIAN_SYLLABICS_NASKAPI_SKW => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSkw),
-            CANADIAN_SYLLABICS_NASKAPI_S_DASH_W => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSDashW),
-            CANADIAN_SYLLABICS_NASKAPI_SPWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSpwa),
-            CANADIAN_SYLLABICS_NASKAPI_STWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiStwa),
-            CANADIAN_SYLLABICS_NASKAPI_SKWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSkwa),
-            CANADIAN_SYLLABICS_NASKAPI_SCWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiScwa),
-            CANADIAN_SYLLABICS_SHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShe),
-            CANADIAN_SYLLABICS_SHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShi),
-            CANADIAN_SYLLABICS_SHII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShii),
-            CANADIAN_SYLLABICS_SHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSho),
-            CANADIAN_SYLLABICS_SHOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShoo),
-            CANADIAN_SYLLABICS_SHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSha),
-            CANADIAN_SYLLABICS_SHAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShaa),
-            CANADIAN_SYLLABICS_SHWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwe),
-            CANADIAN_SYLLABICS_SHWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwi),
-            CANADIAN_SYLLABICS_SHWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwii),
-            CANADIAN_SYLLABICS_SHWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwo),
-            CANADIAN_SYLLABICS_SHWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwoo),
-            CANADIAN_SYLLABICS_SHWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwa),
-            CANADIAN_SYLLABICS_SHWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_SHWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwaa),
-            CANADIAN_SYLLABICS_SH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSh),
-            CANADIAN_SYLLABICS_YE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYe),
-            CANADIAN_SYLLABICS_YAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYaai),
-            CANADIAN_SYLLABICS_YI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYi),
-            CANADIAN_SYLLABICS_YII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYii),
-            CANADIAN_SYLLABICS_YO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYo),
-            CANADIAN_SYLLABICS_YOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYoo),
-            CANADIAN_SYLLABICS_Y_DASH_CREE_YOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeYoo),
-            CANADIAN_SYLLABICS_YA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYa),
-            CANADIAN_SYLLABICS_YAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYaa),
-            CANADIAN_SYLLABICS_YWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_YWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwe),
-            CANADIAN_SYLLABICS_YWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_YWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwi),
-            CANADIAN_SYLLABICS_YWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwii),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_YWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwii),
-            CANADIAN_SYLLABICS_YWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_YWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwo),
-            CANADIAN_SYLLABICS_YWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_YWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwoo),
-            CANADIAN_SYLLABICS_YWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_YWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwa),
-            CANADIAN_SYLLABICS_YWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_YWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwaa),
-            CANADIAN_SYLLABICS_NASKAPI_YWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiYwaa),
-            CANADIAN_SYLLABICS_Y => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsY),
-            CANADIAN_SYLLABICS_BIBLE_DASH_CREE_Y => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBibleDashCreeY),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_Y => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeY),
-            CANADIAN_SYLLABICS_SAYISI_YI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiYi),
-            CANADIAN_SYLLABICS_RE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRe),
-            CANADIAN_SYLLABICS_R_DASH_CREE_RE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRDashCreeRe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLe),
-            CANADIAN_SYLLABICS_RAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRaai),
-            CANADIAN_SYLLABICS_RI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRi),
-            CANADIAN_SYLLABICS_RII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRii),
-            CANADIAN_SYLLABICS_RO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRo),
-            CANADIAN_SYLLABICS_ROO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRoo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLo),
-            CANADIAN_SYLLABICS_RA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRa),
-            CANADIAN_SYLLABICS_RAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_LA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLa),
-            CANADIAN_SYLLABICS_RWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_RWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRwaa),
-            CANADIAN_SYLLABICS_R => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsR),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_R => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeR),
-            CANADIAN_SYLLABICS_MEDIAL_R => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMedialR),
-            CANADIAN_SYLLABICS_FE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFe),
-            CANADIAN_SYLLABICS_FAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFaai),
-            CANADIAN_SYLLABICS_FI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFi),
-            CANADIAN_SYLLABICS_FII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFii),
-            CANADIAN_SYLLABICS_FO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFo),
-            CANADIAN_SYLLABICS_FOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFoo),
-            CANADIAN_SYLLABICS_FA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFa),
-            CANADIAN_SYLLABICS_FAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFaa),
-            CANADIAN_SYLLABICS_FWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_FWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeFwaa),
-            CANADIAN_SYLLABICS_F => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsF),
-            CANADIAN_SYLLABICS_THE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThe),
-            CANADIAN_SYLLABICS_N_DASH_CREE_THE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThe),
-            CANADIAN_SYLLABICS_THI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThi),
-            CANADIAN_SYLLABICS_N_DASH_CREE_THI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThi),
-            CANADIAN_SYLLABICS_THII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThii),
-            CANADIAN_SYLLABICS_N_DASH_CREE_THII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThii),
-            CANADIAN_SYLLABICS_THO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTho),
-            CANADIAN_SYLLABICS_THOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThoo),
-            CANADIAN_SYLLABICS_THA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTha),
-            CANADIAN_SYLLABICS_THAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThaa),
-            CANADIAN_SYLLABICS_THWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThwaa),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_THWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeThwaa),
-            CANADIAN_SYLLABICS_TH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTh),
-            CANADIAN_SYLLABICS_TTHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTthe),
-            CANADIAN_SYLLABICS_TTHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTthi),
-            CANADIAN_SYLLABICS_TTHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTtho),
-            CANADIAN_SYLLABICS_TTHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTtha),
-            CANADIAN_SYLLABICS_TTH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTth),
-            CANADIAN_SYLLABICS_TYE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTye),
-            CANADIAN_SYLLABICS_TYI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTyi),
-            CANADIAN_SYLLABICS_TYO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTyo),
-            CANADIAN_SYLLABICS_TYA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTya),
-            CANADIAN_SYLLABICS_NUNAVIK_HE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHe),
-            CANADIAN_SYLLABICS_NUNAVIK_HI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHi),
-            CANADIAN_SYLLABICS_NUNAVIK_HII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHii),
-            CANADIAN_SYLLABICS_NUNAVIK_HO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHo),
-            CANADIAN_SYLLABICS_NUNAVIK_HOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHoo),
-            CANADIAN_SYLLABICS_NUNAVIK_HA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHa),
-            CANADIAN_SYLLABICS_NUNAVIK_HAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHaa),
-            CANADIAN_SYLLABICS_NUNAVIK_H => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikH),
-            CANADIAN_SYLLABICS_NUNAVUT_H => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavutH),
-            CANADIAN_SYLLABICS_HK => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsHk),
-            CANADIAN_SYLLABICS_QAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQaai),
-            CANADIAN_SYLLABICS_QI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQi),
-            CANADIAN_SYLLABICS_QII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQii),
-            CANADIAN_SYLLABICS_QO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQo),
-            CANADIAN_SYLLABICS_QOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQoo),
-            CANADIAN_SYLLABICS_QA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQa),
-            CANADIAN_SYLLABICS_QAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQaa),
-            CANADIAN_SYLLABICS_Q => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQ),
-            CANADIAN_SYLLABICS_TLHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlhe),
-            CANADIAN_SYLLABICS_TLHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlhi),
-            CANADIAN_SYLLABICS_TLHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlho),
-            CANADIAN_SYLLABICS_TLHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlha),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_RE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRe),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_RI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRi),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_RO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRo),
-            CANADIAN_SYLLABICS_WEST_DASH_CREE_RA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRa),
-            CANADIAN_SYLLABICS_NGAAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgaai),
-            CANADIAN_SYLLABICS_NGI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgi),
-            CANADIAN_SYLLABICS_NGII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgii),
-            CANADIAN_SYLLABICS_NGO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgo),
-            CANADIAN_SYLLABICS_NGOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgoo),
-            CANADIAN_SYLLABICS_NGA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNga),
-            CANADIAN_SYLLABICS_NGAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgaa),
-            CANADIAN_SYLLABICS_NG => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNg),
-            CANADIAN_SYLLABICS_NNG => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNng),
-            CANADIAN_SYLLABICS_SAYISI_SHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiShe),
-            CANADIAN_SYLLABICS_SAYISI_SHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiShi),
-            CANADIAN_SYLLABICS_SAYISI_SHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiSho),
-            CANADIAN_SYLLABICS_SAYISI_SHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiSha),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThe),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThi),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTho),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTha),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_TH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTh),
-            CANADIAN_SYLLABICS_LHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhi),
-            CANADIAN_SYLLABICS_LHII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhii),
-            CANADIAN_SYLLABICS_LHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLho),
-            CANADIAN_SYLLABICS_LHOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhoo),
-            CANADIAN_SYLLABICS_LHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLha),
-            CANADIAN_SYLLABICS_LHAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhaa),
-            CANADIAN_SYLLABICS_LH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLh),
-            CANADIAN_SYLLABICS_TH_DASH_CREE_THE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThe),
-            CANADIAN_SYLLABICS_TH_DASH_CREE_THI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThi),
-            CANADIAN_SYLLABICS_TH_DASH_CREE_THII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThii),
-            CANADIAN_SYLLABICS_TH_DASH_CREE_THO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTho),
-            CANADIAN_SYLLABICS_TH_DASH_CREE_THOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThoo),
-            CANADIAN_SYLLABICS_TH_DASH_CREE_THA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTha),
-            CANADIAN_SYLLABICS_TH_DASH_CREE_THAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThaa),
-            CANADIAN_SYLLABICS_TH_DASH_CREE_TH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTh),
-            CANADIAN_SYLLABICS_AIVILIK_B => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAivilikB),
-            CANADIAN_SYLLABICS_BLACKFOOT_E => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootE),
-            CANADIAN_SYLLABICS_BLACKFOOT_I => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootI),
-            CANADIAN_SYLLABICS_BLACKFOOT_O => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootO),
-            CANADIAN_SYLLABICS_BLACKFOOT_A => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootA),
-            CANADIAN_SYLLABICS_BLACKFOOT_WE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWe),
-            CANADIAN_SYLLABICS_BLACKFOOT_WI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWi),
-            CANADIAN_SYLLABICS_BLACKFOOT_WO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWo),
-            CANADIAN_SYLLABICS_BLACKFOOT_WA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWa),
-            CANADIAN_SYLLABICS_BLACKFOOT_NE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNe),
-            CANADIAN_SYLLABICS_BLACKFOOT_NI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNi),
-            CANADIAN_SYLLABICS_BLACKFOOT_NO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNo),
-            CANADIAN_SYLLABICS_BLACKFOOT_NA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNa),
-            CANADIAN_SYLLABICS_BLACKFOOT_KE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKe),
-            CANADIAN_SYLLABICS_BLACKFOOT_KI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKi),
-            CANADIAN_SYLLABICS_BLACKFOOT_KO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKo),
-            CANADIAN_SYLLABICS_BLACKFOOT_KA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKa),
-            CANADIAN_SYLLABICS_SAYISI_HE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHe),
-            CANADIAN_SYLLABICS_SAYISI_HI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHi),
-            CANADIAN_SYLLABICS_SAYISI_HO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHo),
-            CANADIAN_SYLLABICS_SAYISI_HA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHa),
-            CANADIAN_SYLLABICS_CARRIER_GHU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhu),
-            CANADIAN_SYLLABICS_CARRIER_GHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGho),
-            CANADIAN_SYLLABICS_CARRIER_GHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhe),
-            CANADIAN_SYLLABICS_CARRIER_GHEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhee),
-            CANADIAN_SYLLABICS_CARRIER_GHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhi),
-            CANADIAN_SYLLABICS_CARRIER_GHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGha),
-            CANADIAN_SYLLABICS_CARRIER_RU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRu),
-            CANADIAN_SYLLABICS_CARRIER_RO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRo),
-            CANADIAN_SYLLABICS_CARRIER_RE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRe),
-            CANADIAN_SYLLABICS_CARRIER_REE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRee),
-            CANADIAN_SYLLABICS_CARRIER_RI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRi),
-            CANADIAN_SYLLABICS_CARRIER_RA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRa),
-            CANADIAN_SYLLABICS_CARRIER_WU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWu),
-            CANADIAN_SYLLABICS_CARRIER_WO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWo),
-            CANADIAN_SYLLABICS_CARRIER_WE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWe),
-            CANADIAN_SYLLABICS_CARRIER_WEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWee),
-            CANADIAN_SYLLABICS_CARRIER_WI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWi),
-            CANADIAN_SYLLABICS_CARRIER_WA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWa),
-            CANADIAN_SYLLABICS_CARRIER_HWU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwu),
-            CANADIAN_SYLLABICS_CARRIER_HWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwo),
-            CANADIAN_SYLLABICS_CARRIER_HWE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwe),
-            CANADIAN_SYLLABICS_CARRIER_HWEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwee),
-            CANADIAN_SYLLABICS_CARRIER_HWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwi),
-            CANADIAN_SYLLABICS_CARRIER_HWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwa),
-            CANADIAN_SYLLABICS_CARRIER_THU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThu),
-            CANADIAN_SYLLABICS_CARRIER_THO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTho),
-            CANADIAN_SYLLABICS_CARRIER_THE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThe),
-            CANADIAN_SYLLABICS_CARRIER_THEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThee),
-            CANADIAN_SYLLABICS_CARRIER_THI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThi),
-            CANADIAN_SYLLABICS_CARRIER_THA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTha),
-            CANADIAN_SYLLABICS_CARRIER_TTU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtu),
-            CANADIAN_SYLLABICS_CARRIER_TTO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTto),
-            CANADIAN_SYLLABICS_CARRIER_TTE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTte),
-            CANADIAN_SYLLABICS_CARRIER_TTEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtee),
-            CANADIAN_SYLLABICS_CARRIER_TTI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTti),
-            CANADIAN_SYLLABICS_CARRIER_TTA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTta),
-            CANADIAN_SYLLABICS_CARRIER_PU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPu),
-            CANADIAN_SYLLABICS_CARRIER_PO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPo),
-            CANADIAN_SYLLABICS_CARRIER_PE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPe),
-            CANADIAN_SYLLABICS_CARRIER_PEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPee),
-            CANADIAN_SYLLABICS_CARRIER_PI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPi),
-            CANADIAN_SYLLABICS_CARRIER_PA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPa),
-            CANADIAN_SYLLABICS_CARRIER_P => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierP),
-            CANADIAN_SYLLABICS_CARRIER_GU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGu),
-            CANADIAN_SYLLABICS_CARRIER_GO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGo),
-            CANADIAN_SYLLABICS_CARRIER_GE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGe),
-            CANADIAN_SYLLABICS_CARRIER_GEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGee),
-            CANADIAN_SYLLABICS_CARRIER_GI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGi),
-            CANADIAN_SYLLABICS_CARRIER_GA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGa),
-            CANADIAN_SYLLABICS_CARRIER_KHU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhu),
-            CANADIAN_SYLLABICS_CARRIER_KHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKho),
-            CANADIAN_SYLLABICS_CARRIER_KHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhe),
-            CANADIAN_SYLLABICS_CARRIER_KHEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhee),
-            CANADIAN_SYLLABICS_CARRIER_KHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhi),
-            CANADIAN_SYLLABICS_CARRIER_KHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKha),
-            CANADIAN_SYLLABICS_CARRIER_KKU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKku),
-            CANADIAN_SYLLABICS_CARRIER_KKO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKko),
-            CANADIAN_SYLLABICS_CARRIER_KKE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKke),
-            CANADIAN_SYLLABICS_CARRIER_KKEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKkee),
-            CANADIAN_SYLLABICS_CARRIER_KKI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKki),
-            CANADIAN_SYLLABICS_CARRIER_KKA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKka),
-            CANADIAN_SYLLABICS_CARRIER_KK => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKk),
-            CANADIAN_SYLLABICS_CARRIER_NU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNu),
-            CANADIAN_SYLLABICS_CARRIER_NO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNo),
-            CANADIAN_SYLLABICS_CARRIER_NE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNe),
-            CANADIAN_SYLLABICS_CARRIER_NEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNee),
-            CANADIAN_SYLLABICS_CARRIER_NI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNi),
-            CANADIAN_SYLLABICS_CARRIER_NA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNa),
-            CANADIAN_SYLLABICS_CARRIER_MU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMu),
-            CANADIAN_SYLLABICS_CARRIER_MO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMo),
-            CANADIAN_SYLLABICS_CARRIER_ME => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMe),
-            CANADIAN_SYLLABICS_CARRIER_MEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMee),
-            CANADIAN_SYLLABICS_CARRIER_MI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMi),
-            CANADIAN_SYLLABICS_CARRIER_MA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMa),
-            CANADIAN_SYLLABICS_CARRIER_YU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYu),
-            CANADIAN_SYLLABICS_CARRIER_YO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYo),
-            CANADIAN_SYLLABICS_CARRIER_YE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYe),
-            CANADIAN_SYLLABICS_CARRIER_YEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYee),
-            CANADIAN_SYLLABICS_CARRIER_YI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYi),
-            CANADIAN_SYLLABICS_CARRIER_YA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYa),
-            CANADIAN_SYLLABICS_CARRIER_JU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJu),
-            CANADIAN_SYLLABICS_SAYISI_JU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiJu),
-            CANADIAN_SYLLABICS_CARRIER_JO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJo),
-            CANADIAN_SYLLABICS_CARRIER_JE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJe),
-            CANADIAN_SYLLABICS_CARRIER_JEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJee),
-            CANADIAN_SYLLABICS_CARRIER_JI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJi),
-            CANADIAN_SYLLABICS_SAYISI_JI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiJi),
-            CANADIAN_SYLLABICS_CARRIER_JA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJa),
-            CANADIAN_SYLLABICS_CARRIER_JJU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJju),
-            CANADIAN_SYLLABICS_CARRIER_JJO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJjo),
-            CANADIAN_SYLLABICS_CARRIER_JJE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJje),
-            CANADIAN_SYLLABICS_CARRIER_JJEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJjee),
-            CANADIAN_SYLLABICS_CARRIER_JJI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJji),
-            CANADIAN_SYLLABICS_CARRIER_JJA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJja),
-            CANADIAN_SYLLABICS_CARRIER_LU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLu),
-            CANADIAN_SYLLABICS_CARRIER_LO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLo),
-            CANADIAN_SYLLABICS_CARRIER_LE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLe),
-            CANADIAN_SYLLABICS_CARRIER_LEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLee),
-            CANADIAN_SYLLABICS_CARRIER_LI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLi),
-            CANADIAN_SYLLABICS_CARRIER_LA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLa),
-            CANADIAN_SYLLABICS_CARRIER_DLU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlu),
-            CANADIAN_SYLLABICS_CARRIER_DLO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlo),
-            CANADIAN_SYLLABICS_CARRIER_DLE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDle),
-            CANADIAN_SYLLABICS_CARRIER_DLEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlee),
-            CANADIAN_SYLLABICS_CARRIER_DLI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDli),
-            CANADIAN_SYLLABICS_CARRIER_DLA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDla),
-            CANADIAN_SYLLABICS_CARRIER_LHU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhu),
-            CANADIAN_SYLLABICS_CARRIER_LHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLho),
-            CANADIAN_SYLLABICS_CARRIER_LHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhe),
-            CANADIAN_SYLLABICS_CARRIER_LHEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhee),
-            CANADIAN_SYLLABICS_CARRIER_LHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhi),
-            CANADIAN_SYLLABICS_CARRIER_LHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLha),
-            CANADIAN_SYLLABICS_CARRIER_TLHU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhu),
-            CANADIAN_SYLLABICS_CARRIER_TLHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlho),
-            CANADIAN_SYLLABICS_CARRIER_TLHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhe),
-            CANADIAN_SYLLABICS_CARRIER_TLHEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhee),
-            CANADIAN_SYLLABICS_CARRIER_TLHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhi),
-            CANADIAN_SYLLABICS_CARRIER_TLHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlha),
-            CANADIAN_SYLLABICS_CARRIER_TLU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlu),
-            CANADIAN_SYLLABICS_CARRIER_TLO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlo),
-            CANADIAN_SYLLABICS_CARRIER_TLE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTle),
-            CANADIAN_SYLLABICS_CARRIER_TLEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlee),
-            CANADIAN_SYLLABICS_CARRIER_TLI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTli),
-            CANADIAN_SYLLABICS_CARRIER_TLA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTla),
-            CANADIAN_SYLLABICS_CARRIER_ZU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZu),
-            CANADIAN_SYLLABICS_CARRIER_ZO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZo),
-            CANADIAN_SYLLABICS_CARRIER_ZE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZe),
-            CANADIAN_SYLLABICS_CARRIER_ZEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZee),
-            CANADIAN_SYLLABICS_CARRIER_ZI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZi),
-            CANADIAN_SYLLABICS_CARRIER_ZA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZa),
-            CANADIAN_SYLLABICS_CARRIER_Z => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZ),
-            CANADIAN_SYLLABICS_CARRIER_INITIAL_Z => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierInitialZ),
-            CANADIAN_SYLLABICS_CARRIER_DZU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzu),
-            CANADIAN_SYLLABICS_CARRIER_DZO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzo),
-            CANADIAN_SYLLABICS_CARRIER_DZE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDze),
-            CANADIAN_SYLLABICS_CARRIER_DZEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzee),
-            CANADIAN_SYLLABICS_CARRIER_DZI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzi),
-            CANADIAN_SYLLABICS_CARRIER_DZA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDza),
-            CANADIAN_SYLLABICS_CARRIER_SU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSu),
-            CANADIAN_SYLLABICS_CARRIER_SO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSo),
-            CANADIAN_SYLLABICS_CARRIER_SE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSe),
-            CANADIAN_SYLLABICS_CARRIER_SEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSee),
-            CANADIAN_SYLLABICS_CARRIER_SI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSi),
-            CANADIAN_SYLLABICS_CARRIER_SA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSa),
-            CANADIAN_SYLLABICS_CARRIER_SHU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShu),
-            CANADIAN_SYLLABICS_CARRIER_SHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSho),
-            CANADIAN_SYLLABICS_CARRIER_SHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShe),
-            CANADIAN_SYLLABICS_CARRIER_SHEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShee),
-            CANADIAN_SYLLABICS_CARRIER_SHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShi),
-            CANADIAN_SYLLABICS_CARRIER_SHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSha),
-            CANADIAN_SYLLABICS_CARRIER_SH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSh),
-            CANADIAN_SYLLABICS_CARRIER_TSU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsu),
-            CANADIAN_SYLLABICS_CARRIER_TSO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTso),
-            CANADIAN_SYLLABICS_CARRIER_TSE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTse),
-            CANADIAN_SYLLABICS_CARRIER_TSEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsee),
-            CANADIAN_SYLLABICS_CARRIER_TSI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsi),
-            CANADIAN_SYLLABICS_CARRIER_TSA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsa),
-            CANADIAN_SYLLABICS_CARRIER_CHU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChu),
-            CANADIAN_SYLLABICS_CARRIER_CHO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierCho),
-            CANADIAN_SYLLABICS_CARRIER_CHE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChe),
-            CANADIAN_SYLLABICS_CARRIER_CHEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChee),
-            CANADIAN_SYLLABICS_CARRIER_CHI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChi),
-            CANADIAN_SYLLABICS_CARRIER_CHA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierCha),
-            CANADIAN_SYLLABICS_CARRIER_TTSU => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsu),
-            CANADIAN_SYLLABICS_CARRIER_TTSO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtso),
-            CANADIAN_SYLLABICS_CARRIER_TTSE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtse),
-            CANADIAN_SYLLABICS_CARRIER_TTSEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsee),
-            CANADIAN_SYLLABICS_CARRIER_TTSI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsi),
-            CANADIAN_SYLLABICS_CARRIER_TTSA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsa),
-            CANADIAN_SYLLABICS_CHI_SIGN => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsChiSign),
-            CANADIAN_SYLLABICS_FULL_STOP => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFullStop),
-            CANADIAN_SYLLABICS_QAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQai),
-            CANADIAN_SYLLABICS_NGAI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgai),
-            CANADIAN_SYLLABICS_NNGI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngi),
-            CANADIAN_SYLLABICS_NNGII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngii),
-            CANADIAN_SYLLABICS_NNGO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngo),
-            CANADIAN_SYLLABICS_NNGOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngoo),
-            CANADIAN_SYLLABICS_NNGA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNnga),
-            CANADIAN_SYLLABICS_NNGAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngaa),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWEE => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwee),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWI => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwi),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWII => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwii),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwo),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWOO => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwoo),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwa),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_THWAA => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwaa),
-            CANADIAN_SYLLABICS_WOODS_DASH_CREE_FINAL_TH => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeFinalTh),
+            '᐀' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsHyphen),
+            'ᐁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsE),
+            'ᐂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAai),
+            'ᐃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsI),
+            'ᐄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsIi),
+            'ᐅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsO),
+            'ᐆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsOo),
+            'ᐇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeOo),
+            'ᐈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierEe),
+            'ᐉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierI),
+            'ᐊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsA),
+            'ᐋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAa),
+            'ᐌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWe),
+            'ᐍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWe),
+            'ᐎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWi),
+            'ᐏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWi),
+            'ᐐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWii),
+            'ᐑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWii),
+            'ᐒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWo),
+            'ᐓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWo),
+            'ᐔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoo),
+            'ᐕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWoo),
+            'ᐖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiWoo),
+            'ᐗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWa),
+            'ᐘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWa),
+            'ᐙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWaa),
+            'ᐚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeWaa),
+            'ᐛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiWaa),
+            'ᐜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAi),
+            'ᐝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeW),
+            'ᐞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsGlottalStop),
+            'ᐟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalAcute),
+            'ᐠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalGrave),
+            'ᐡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalBottomHalfRing),
+            'ᐢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalTopHalfRing),
+            'ᐣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalRightHalfRing),
+            'ᐤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalRing),
+            'ᐥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDoubleAcute),
+            'ᐦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDoubleShortVerticalStrokes),
+            'ᐧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalMiddleDot),
+            'ᐨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalShortHorizontalStroke),
+            'ᐩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalPlus),
+            'ᐪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFinalDownTack),
+            'ᐫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsEn),
+            'ᐬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsIn),
+            'ᐭ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsOn),
+            'ᐮ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAn),
+            'ᐯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPe),
+            'ᐰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPaai),
+            'ᐱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPi),
+            'ᐲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPii),
+            'ᐳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPo),
+            'ᐴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPoo),
+            'ᐵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreePoo),
+            'ᐶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHee),
+            'ᐷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHi),
+            'ᐸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPa),
+            'ᐹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPaa),
+            'ᐺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwe),
+            'ᐻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwe),
+            'ᐼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwi),
+            'ᐽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwi),
+            'ᐾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwii),
+            'ᐿ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwii),
+            'ᑀ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwo),
+            'ᑁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwo),
+            'ᑂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwoo),
+            'ᑃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwoo),
+            'ᑄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwa),
+            'ᑅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwa),
+            'ᑆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsPwaa),
+            'ᑇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreePwaa),
+            'ᑈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreePwaa),
+            'ᑉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsP),
+            'ᑊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeP),
+            'ᑋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierH),
+            'ᑌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTe),
+            'ᑍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTaai),
+            'ᑎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTi),
+            'ᑏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTii),
+            'ᑐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTo),
+            'ᑑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsToo),
+            'ᑒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeToo),
+            'ᑓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDee),
+            'ᑔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDi),
+            'ᑕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTa),
+            'ᑖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTaa),
+            'ᑗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwe),
+            'ᑘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwe),
+            'ᑙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwi),
+            'ᑚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwi),
+            'ᑛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwii),
+            'ᑜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwii),
+            'ᑝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwo),
+            'ᑞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwo),
+            'ᑟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwoo),
+            'ᑠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwoo),
+            'ᑡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwa),
+            'ᑢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwa),
+            'ᑣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTwaa),
+            'ᑤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeTwaa),
+            'ᑥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiTwaa),
+            'ᑦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsT),
+            'ᑧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTte),
+            'ᑨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTti),
+            'ᑩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTto),
+            'ᑪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTta),
+            'ᑫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKe),
+            'ᑬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKaai),
+            'ᑭ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKi),
+            'ᑮ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKii),
+            'ᑯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKo),
+            'ᑰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKoo),
+            'ᑱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeKoo),
+            'ᑲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKa),
+            'ᑳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKaa),
+            'ᑴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwe),
+            'ᑵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwe),
+            'ᑶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwi),
+            'ᑷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwi),
+            'ᑸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwii),
+            'ᑹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwii),
+            'ᑺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwo),
+            'ᑻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwo),
+            'ᑼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwoo),
+            'ᑽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwoo),
+            'ᑾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwa),
+            'ᑿ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwa),
+            'ᒀ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKwaa),
+            'ᒁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeKwaa),
+            'ᒂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiKwaa),
+            'ᒃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsK),
+            'ᒄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsKw),
+            'ᒅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKeh),
+            'ᒆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKih),
+            'ᒇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKoh),
+            'ᒈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSouthDashSlaveyKah),
+            'ᒉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCe),
+            'ᒊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCaai),
+            'ᒋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCi),
+            'ᒌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCii),
+            'ᒍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCo),
+            'ᒎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCoo),
+            'ᒏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeCoo),
+            'ᒐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCa),
+            'ᒑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCaa),
+            'ᒒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwe),
+            'ᒓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwe),
+            'ᒔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwi),
+            'ᒕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwi),
+            'ᒖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwii),
+            'ᒗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwii),
+            'ᒘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwo),
+            'ᒙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwo),
+            'ᒚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwoo),
+            'ᒛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwoo),
+            'ᒜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwa),
+            'ᒝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwa),
+            'ᒞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCwaa),
+            'ᒟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeCwaa),
+            'ᒠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiCwaa),
+            'ᒡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsC),
+            'ᒢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiTh),
+            'ᒣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMe),
+            'ᒤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMaai),
+            'ᒥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMi),
+            'ᒦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMii),
+            'ᒧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMo),
+            'ᒨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMoo),
+            'ᒩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeMoo),
+            'ᒪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMa),
+            'ᒫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMaa),
+            'ᒬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwe),
+            'ᒭ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwe),
+            'ᒮ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwi),
+            'ᒯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwi),
+            'ᒰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwii),
+            'ᒱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwii),
+            'ᒲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwo),
+            'ᒳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwo),
+            'ᒴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwoo),
+            'ᒵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwoo),
+            'ᒶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwa),
+            'ᒷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwa),
+            'ᒸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMwaa),
+            'ᒹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeMwaa),
+            'ᒺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiMwaa),
+            'ᒻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsM),
+            'ᒼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeM),
+            'ᒽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMh),
+            'ᒾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAthapascanM),
+            'ᒿ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiM),
+            'ᓀ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNe),
+            'ᓁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaai),
+            'ᓂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNi),
+            'ᓃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNii),
+            'ᓄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNo),
+            'ᓅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNoo),
+            'ᓆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeNoo),
+            'ᓇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNa),
+            'ᓈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaa),
+            'ᓉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwe),
+            'ᓊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwe),
+            'ᓋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwa),
+            'ᓌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwa),
+            'ᓍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNwaa),
+            'ᓎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeNwaa),
+            'ᓏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiNwaa),
+            'ᓐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsN),
+            'ᓑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNg),
+            'ᓒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNh),
+            'ᓓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLe),
+            'ᓔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLaai),
+            'ᓕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLi),
+            'ᓖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLii),
+            'ᓗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLo),
+            'ᓘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLoo),
+            'ᓙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeLoo),
+            'ᓚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLa),
+            'ᓛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLaa),
+            'ᓜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwe),
+            'ᓝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwe),
+            'ᓞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwi),
+            'ᓟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwi),
+            'ᓠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwii),
+            'ᓡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwii),
+            'ᓢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwo),
+            'ᓣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwo),
+            'ᓤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwoo),
+            'ᓥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwoo),
+            'ᓦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwa),
+            'ᓧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwa),
+            'ᓨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLwaa),
+            'ᓩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLwaa),
+            'ᓪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsL),
+            'ᓫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeL),
+            'ᓬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMedialL),
+            'ᓭ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSe),
+            'ᓮ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSaai),
+            'ᓯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSi),
+            'ᓰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSii),
+            'ᓱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSo),
+            'ᓲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSoo),
+            'ᓳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeSoo),
+            'ᓴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSa),
+            'ᓵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSaa),
+            'ᓶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwe),
+            'ᓷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwe),
+            'ᓸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwi),
+            'ᓹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwi),
+            'ᓺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwii),
+            'ᓻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwii),
+            'ᓼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwo),
+            'ᓽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwo),
+            'ᓾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwoo),
+            'ᓿ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwoo),
+            'ᔀ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwa),
+            'ᔁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwa),
+            'ᔂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSwaa),
+            'ᔃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeSwaa),
+            'ᔄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSwaa),
+            'ᔅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsS),
+            'ᔆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAthapascanS),
+            'ᔇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSw),
+            'ᔈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootS),
+            'ᔉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMooseDashCreeSk),
+            'ᔊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSkw),
+            'ᔋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSDashW),
+            'ᔌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSpwa),
+            'ᔍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiStwa),
+            'ᔎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiSkwa),
+            'ᔏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiScwa),
+            'ᔐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShe),
+            'ᔑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShi),
+            'ᔒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShii),
+            'ᔓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSho),
+            'ᔔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShoo),
+            'ᔕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSha),
+            'ᔖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShaa),
+            'ᔗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwe),
+            'ᔘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwe),
+            'ᔙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwi),
+            'ᔚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwi),
+            'ᔛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwii),
+            'ᔜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwii),
+            'ᔝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwo),
+            'ᔞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwo),
+            'ᔟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwoo),
+            'ᔠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwoo),
+            'ᔡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwa),
+            'ᔢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwa),
+            'ᔣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsShwaa),
+            'ᔤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeShwaa),
+            'ᔥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSh),
+            'ᔦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYe),
+            'ᔧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYaai),
+            'ᔨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYi),
+            'ᔩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYii),
+            'ᔪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYo),
+            'ᔫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYoo),
+            'ᔬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYDashCreeYoo),
+            'ᔭ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYa),
+            'ᔮ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYaa),
+            'ᔯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwe),
+            'ᔰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwe),
+            'ᔱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwi),
+            'ᔲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwi),
+            'ᔳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwii),
+            'ᔴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwii),
+            'ᔵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwo),
+            'ᔶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwo),
+            'ᔷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwoo),
+            'ᔸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwoo),
+            'ᔹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwa),
+            'ᔺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwa),
+            'ᔻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsYwaa),
+            'ᔼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeYwaa),
+            'ᔽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNaskapiYwaa),
+            'ᔾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsY),
+            'ᔿ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBibleDashCreeY),
+            'ᕀ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeY),
+            'ᕁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiYi),
+            'ᕂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRe),
+            'ᕃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRDashCreeRe),
+            'ᕄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLe),
+            'ᕅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRaai),
+            'ᕆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRi),
+            'ᕇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRii),
+            'ᕈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRo),
+            'ᕉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRoo),
+            'ᕊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLo),
+            'ᕋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRa),
+            'ᕌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRaa),
+            'ᕍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeLa),
+            'ᕎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsRwaa),
+            'ᕏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRwaa),
+            'ᕐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsR),
+            'ᕑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeR),
+            'ᕒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsMedialR),
+            'ᕓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFe),
+            'ᕔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFaai),
+            'ᕕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFi),
+            'ᕖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFii),
+            'ᕗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFo),
+            'ᕘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFoo),
+            'ᕙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFa),
+            'ᕚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFaa),
+            'ᕛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFwaa),
+            'ᕜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeFwaa),
+            'ᕝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsF),
+            'ᕞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThe),
+            'ᕟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThe),
+            'ᕠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThi),
+            'ᕡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThi),
+            'ᕢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThii),
+            'ᕣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNDashCreeThii),
+            'ᕤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTho),
+            'ᕥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThoo),
+            'ᕦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTha),
+            'ᕧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThaa),
+            'ᕨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThwaa),
+            'ᕩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeThwaa),
+            'ᕪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTh),
+            'ᕫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTthe),
+            'ᕬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTthi),
+            'ᕭ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTtho),
+            'ᕮ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTtha),
+            'ᕯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTth),
+            'ᕰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTye),
+            'ᕱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTyi),
+            'ᕲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTyo),
+            'ᕳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTya),
+            'ᕴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHe),
+            'ᕵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHi),
+            'ᕶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHii),
+            'ᕷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHo),
+            'ᕸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHoo),
+            'ᕹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHa),
+            'ᕺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikHaa),
+            'ᕻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavikH),
+            'ᕼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNunavutH),
+            'ᕽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsHk),
+            'ᕾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQaai),
+            'ᕿ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQi),
+            'ᖀ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQii),
+            'ᖁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQo),
+            'ᖂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQoo),
+            'ᖃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQa),
+            'ᖄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQaa),
+            'ᖅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQ),
+            'ᖆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlhe),
+            'ᖇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlhi),
+            'ᖈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlho),
+            'ᖉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsTlha),
+            'ᖊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRe),
+            'ᖋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRi),
+            'ᖌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRo),
+            'ᖍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWestDashCreeRa),
+            'ᖎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgaai),
+            'ᖏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgi),
+            'ᖐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgii),
+            'ᖑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgo),
+            'ᖒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgoo),
+            'ᖓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNga),
+            'ᖔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgaa),
+            'ᖕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNg),
+            'ᖖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNng),
+            'ᖗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiShe),
+            'ᖘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiShi),
+            'ᖙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiSho),
+            'ᖚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiSha),
+            'ᖛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThe),
+            'ᖜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThi),
+            'ᖝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTho),
+            'ᖞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTha),
+            'ᖟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeTh),
+            'ᖠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhi),
+            'ᖡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhii),
+            'ᖢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLho),
+            'ᖣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhoo),
+            'ᖤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLha),
+            'ᖥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLhaa),
+            'ᖦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsLh),
+            'ᖧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThe),
+            'ᖨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThi),
+            'ᖩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThii),
+            'ᖪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTho),
+            'ᖫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThoo),
+            'ᖬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTha),
+            'ᖭ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeThaa),
+            'ᖮ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsThDashCreeTh),
+            'ᖯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsAivilikB),
+            'ᖰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootE),
+            'ᖱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootI),
+            'ᖲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootO),
+            'ᖳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootA),
+            'ᖴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWe),
+            'ᖵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWi),
+            'ᖶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWo),
+            'ᖷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootWa),
+            'ᖸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNe),
+            'ᖹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNi),
+            'ᖺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNo),
+            'ᖻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootNa),
+            'ᖼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKe),
+            'ᖽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKi),
+            'ᖾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKo),
+            'ᖿ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsBlackfootKa),
+            'ᗀ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHe),
+            'ᗁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHi),
+            'ᗂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHo),
+            'ᗃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiHa),
+            'ᗄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhu),
+            'ᗅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGho),
+            'ᗆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhe),
+            'ᗇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhee),
+            'ᗈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGhi),
+            'ᗉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGha),
+            'ᗊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRu),
+            'ᗋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRo),
+            'ᗌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRe),
+            'ᗍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRee),
+            'ᗎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRi),
+            'ᗏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierRa),
+            'ᗐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWu),
+            'ᗑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWo),
+            'ᗒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWe),
+            'ᗓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWee),
+            'ᗔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWi),
+            'ᗕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierWa),
+            'ᗖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwu),
+            'ᗗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwo),
+            'ᗘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwe),
+            'ᗙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwee),
+            'ᗚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwi),
+            'ᗛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierHwa),
+            'ᗜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThu),
+            'ᗝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTho),
+            'ᗞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThe),
+            'ᗟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThee),
+            'ᗠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierThi),
+            'ᗡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTha),
+            'ᗢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtu),
+            'ᗣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTto),
+            'ᗤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTte),
+            'ᗥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtee),
+            'ᗦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTti),
+            'ᗧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTta),
+            'ᗨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPu),
+            'ᗩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPo),
+            'ᗪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPe),
+            'ᗫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPee),
+            'ᗬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPi),
+            'ᗭ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierPa),
+            'ᗮ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierP),
+            'ᗯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGu),
+            'ᗰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGo),
+            'ᗱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGe),
+            'ᗲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGee),
+            'ᗳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGi),
+            'ᗴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierGa),
+            'ᗵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhu),
+            'ᗶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKho),
+            'ᗷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhe),
+            'ᗸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhee),
+            'ᗹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKhi),
+            'ᗺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKha),
+            'ᗻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKku),
+            'ᗼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKko),
+            'ᗽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKke),
+            'ᗾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKkee),
+            'ᗿ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKki),
+            'ᘀ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKka),
+            'ᘁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierKk),
+            'ᘂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNu),
+            'ᘃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNo),
+            'ᘄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNe),
+            'ᘅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNee),
+            'ᘆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNi),
+            'ᘇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierNa),
+            'ᘈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMu),
+            'ᘉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMo),
+            'ᘊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMe),
+            'ᘋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMee),
+            'ᘌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMi),
+            'ᘍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierMa),
+            'ᘎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYu),
+            'ᘏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYo),
+            'ᘐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYe),
+            'ᘑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYee),
+            'ᘒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYi),
+            'ᘓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierYa),
+            'ᘔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJu),
+            'ᘕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiJu),
+            'ᘖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJo),
+            'ᘗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJe),
+            'ᘘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJee),
+            'ᘙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJi),
+            'ᘚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsSayisiJi),
+            'ᘛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJa),
+            'ᘜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJju),
+            'ᘝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJjo),
+            'ᘞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJje),
+            'ᘟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJjee),
+            'ᘠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJji),
+            'ᘡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierJja),
+            'ᘢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLu),
+            'ᘣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLo),
+            'ᘤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLe),
+            'ᘥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLee),
+            'ᘦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLi),
+            'ᘧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLa),
+            'ᘨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlu),
+            'ᘩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlo),
+            'ᘪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDle),
+            'ᘫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDlee),
+            'ᘬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDli),
+            'ᘭ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDla),
+            'ᘮ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhu),
+            'ᘯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLho),
+            'ᘰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhe),
+            'ᘱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhee),
+            'ᘲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLhi),
+            'ᘳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierLha),
+            'ᘴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhu),
+            'ᘵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlho),
+            'ᘶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhe),
+            'ᘷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhee),
+            'ᘸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlhi),
+            'ᘹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlha),
+            'ᘺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlu),
+            'ᘻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlo),
+            'ᘼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTle),
+            'ᘽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTlee),
+            'ᘾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTli),
+            'ᘿ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTla),
+            'ᙀ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZu),
+            'ᙁ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZo),
+            'ᙂ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZe),
+            'ᙃ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZee),
+            'ᙄ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZi),
+            'ᙅ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZa),
+            'ᙆ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierZ),
+            'ᙇ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierInitialZ),
+            'ᙈ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzu),
+            'ᙉ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzo),
+            'ᙊ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDze),
+            'ᙋ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzee),
+            'ᙌ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDzi),
+            'ᙍ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierDza),
+            'ᙎ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSu),
+            'ᙏ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSo),
+            'ᙐ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSe),
+            'ᙑ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSee),
+            'ᙒ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSi),
+            'ᙓ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSa),
+            'ᙔ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShu),
+            'ᙕ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSho),
+            'ᙖ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShe),
+            'ᙗ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShee),
+            'ᙘ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierShi),
+            'ᙙ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSha),
+            'ᙚ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierSh),
+            'ᙛ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsu),
+            'ᙜ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTso),
+            'ᙝ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTse),
+            'ᙞ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsee),
+            'ᙟ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsi),
+            'ᙠ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTsa),
+            'ᙡ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChu),
+            'ᙢ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierCho),
+            'ᙣ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChe),
+            'ᙤ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChee),
+            'ᙥ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierChi),
+            'ᙦ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierCha),
+            'ᙧ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsu),
+            'ᙨ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtso),
+            'ᙩ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtse),
+            'ᙪ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsee),
+            'ᙫ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsi),
+            'ᙬ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsCarrierTtsa),
+            '᙭' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsChiSign),
+            '᙮' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsFullStop),
+            'ᙯ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsQai),
+            'ᙰ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNgai),
+            'ᙱ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngi),
+            'ᙲ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngii),
+            'ᙳ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngo),
+            'ᙴ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngoo),
+            'ᙵ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNnga),
+            'ᙶ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsNngaa),
+            'ᙷ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwee),
+            'ᙸ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwi),
+            'ᙹ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwii),
+            'ᙺ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwo),
+            'ᙻ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwoo),
+            'ᙼ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwa),
+            'ᙽ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeThwaa),
+            'ᙾ' => Ok(UnifiedCanadianAboriginalSyllabics::CanadianSyllabicsWoodsDashCreeFinalTh),
             _ => Err(()),
         }
     }

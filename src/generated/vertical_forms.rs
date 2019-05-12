@@ -1,26 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{fe10}: '︐'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_COMMA: char = '︐';
-    /// \u{fe11}: '︑'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_IDEOGRAPHIC_COMMA: char = '︑';
-    /// \u{fe12}: '︒'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_IDEOGRAPHIC_FULL_STOP: char = '︒';
-    /// \u{fe13}: '︓'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_COLON: char = '︓';
-    /// \u{fe14}: '︔'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_SEMICOLON: char = '︔';
-    /// \u{fe15}: '︕'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_EXCLAMATION_MARK: char = '︕';
-    /// \u{fe16}: '︖'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_QUESTION_MARK: char = '︖';
-    /// \u{fe17}: '︗'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_LEFT_WHITE_LENTICULAR_BRACKET: char = '︗';
-    /// \u{fe18}: '︘'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_RIGHT_WHITE_LENTICULAR_BRAKCET: char = '︘';
-    /// \u{fe19}: '︙'
-    pub const PRESENTATION_FORM_FOR_VERTICAL_HORIZONTAL_ELLIPSIS: char = '︙';
-}
 
 /// An enum to represent all characters in the VerticalForms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -49,18 +26,17 @@ pub enum VerticalForms {
 
 impl Into<char> for VerticalForms {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            VerticalForms::PresentationFormForVerticalComma => PRESENTATION_FORM_FOR_VERTICAL_COMMA,
-            VerticalForms::PresentationFormForVerticalIdeographicComma => PRESENTATION_FORM_FOR_VERTICAL_IDEOGRAPHIC_COMMA,
-            VerticalForms::PresentationFormForVerticalIdeographicFullStop => PRESENTATION_FORM_FOR_VERTICAL_IDEOGRAPHIC_FULL_STOP,
-            VerticalForms::PresentationFormForVerticalColon => PRESENTATION_FORM_FOR_VERTICAL_COLON,
-            VerticalForms::PresentationFormForVerticalSemicolon => PRESENTATION_FORM_FOR_VERTICAL_SEMICOLON,
-            VerticalForms::PresentationFormForVerticalExclamationMark => PRESENTATION_FORM_FOR_VERTICAL_EXCLAMATION_MARK,
-            VerticalForms::PresentationFormForVerticalQuestionMark => PRESENTATION_FORM_FOR_VERTICAL_QUESTION_MARK,
-            VerticalForms::PresentationFormForVerticalLeftWhiteLenticularBracket => PRESENTATION_FORM_FOR_VERTICAL_LEFT_WHITE_LENTICULAR_BRACKET,
-            VerticalForms::PresentationFormForVerticalRightWhiteLenticularBrakcet => PRESENTATION_FORM_FOR_VERTICAL_RIGHT_WHITE_LENTICULAR_BRAKCET,
-            VerticalForms::PresentationFormForVerticalHorizontalEllipsis => PRESENTATION_FORM_FOR_VERTICAL_HORIZONTAL_ELLIPSIS,
+            VerticalForms::PresentationFormForVerticalComma => '︐',
+            VerticalForms::PresentationFormForVerticalIdeographicComma => '︑',
+            VerticalForms::PresentationFormForVerticalIdeographicFullStop => '︒',
+            VerticalForms::PresentationFormForVerticalColon => '︓',
+            VerticalForms::PresentationFormForVerticalSemicolon => '︔',
+            VerticalForms::PresentationFormForVerticalExclamationMark => '︕',
+            VerticalForms::PresentationFormForVerticalQuestionMark => '︖',
+            VerticalForms::PresentationFormForVerticalLeftWhiteLenticularBracket => '︗',
+            VerticalForms::PresentationFormForVerticalRightWhiteLenticularBrakcet => '︘',
+            VerticalForms::PresentationFormForVerticalHorizontalEllipsis => '︙',
         }
     }
 }
@@ -68,18 +44,17 @@ impl Into<char> for VerticalForms {
 impl std::convert::TryFrom<char> for VerticalForms {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            PRESENTATION_FORM_FOR_VERTICAL_COMMA => Ok(VerticalForms::PresentationFormForVerticalComma),
-            PRESENTATION_FORM_FOR_VERTICAL_IDEOGRAPHIC_COMMA => Ok(VerticalForms::PresentationFormForVerticalIdeographicComma),
-            PRESENTATION_FORM_FOR_VERTICAL_IDEOGRAPHIC_FULL_STOP => Ok(VerticalForms::PresentationFormForVerticalIdeographicFullStop),
-            PRESENTATION_FORM_FOR_VERTICAL_COLON => Ok(VerticalForms::PresentationFormForVerticalColon),
-            PRESENTATION_FORM_FOR_VERTICAL_SEMICOLON => Ok(VerticalForms::PresentationFormForVerticalSemicolon),
-            PRESENTATION_FORM_FOR_VERTICAL_EXCLAMATION_MARK => Ok(VerticalForms::PresentationFormForVerticalExclamationMark),
-            PRESENTATION_FORM_FOR_VERTICAL_QUESTION_MARK => Ok(VerticalForms::PresentationFormForVerticalQuestionMark),
-            PRESENTATION_FORM_FOR_VERTICAL_LEFT_WHITE_LENTICULAR_BRACKET => Ok(VerticalForms::PresentationFormForVerticalLeftWhiteLenticularBracket),
-            PRESENTATION_FORM_FOR_VERTICAL_RIGHT_WHITE_LENTICULAR_BRAKCET => Ok(VerticalForms::PresentationFormForVerticalRightWhiteLenticularBrakcet),
-            PRESENTATION_FORM_FOR_VERTICAL_HORIZONTAL_ELLIPSIS => Ok(VerticalForms::PresentationFormForVerticalHorizontalEllipsis),
+            '︐' => Ok(VerticalForms::PresentationFormForVerticalComma),
+            '︑' => Ok(VerticalForms::PresentationFormForVerticalIdeographicComma),
+            '︒' => Ok(VerticalForms::PresentationFormForVerticalIdeographicFullStop),
+            '︓' => Ok(VerticalForms::PresentationFormForVerticalColon),
+            '︔' => Ok(VerticalForms::PresentationFormForVerticalSemicolon),
+            '︕' => Ok(VerticalForms::PresentationFormForVerticalExclamationMark),
+            '︖' => Ok(VerticalForms::PresentationFormForVerticalQuestionMark),
+            '︗' => Ok(VerticalForms::PresentationFormForVerticalLeftWhiteLenticularBracket),
+            '︘' => Ok(VerticalForms::PresentationFormForVerticalRightWhiteLenticularBrakcet),
+            '︙' => Ok(VerticalForms::PresentationFormForVerticalHorizontalEllipsis),
             _ => Err(()),
         }
     }

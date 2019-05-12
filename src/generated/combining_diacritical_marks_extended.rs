@@ -1,36 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1ab0}: '᪰'
-    pub const COMBINING_DOUBLED_CIRCUMFLEX_ACCENT: char = '᪰';
-    /// \u{1ab1}: '᪱'
-    pub const COMBINING_DIAERESIS_DASH_RING: char = '᪱';
-    /// \u{1ab2}: '᪲'
-    pub const COMBINING_INFINITY: char = '᪲';
-    /// \u{1ab3}: '᪳'
-    pub const COMBINING_DOWNWARDS_ARROW: char = '᪳';
-    /// \u{1ab4}: '᪴'
-    pub const COMBINING_TRIPLE_DOT: char = '᪴';
-    /// \u{1ab5}: '᪵'
-    pub const COMBINING_X_DASH_X_BELOW: char = '᪵';
-    /// \u{1ab6}: '᪶'
-    pub const COMBINING_WIGGLY_LINE_BELOW: char = '᪶';
-    /// \u{1ab7}: '᪷'
-    pub const COMBINING_OPEN_MARK_BELOW: char = '᪷';
-    /// \u{1ab8}: '᪸'
-    pub const COMBINING_DOUBLE_OPEN_MARK_BELOW: char = '᪸';
-    /// \u{1ab9}: '᪹'
-    pub const COMBINING_LIGHT_CENTRALIZATION_STROKE_BELOW: char = '᪹';
-    /// \u{1aba}: '᪺'
-    pub const COMBINING_STRONG_CENTRALIZATION_STROKE_BELOW: char = '᪺';
-    /// \u{1abb}: '᪻'
-    pub const COMBINING_PARENTHESES_ABOVE: char = '᪻';
-    /// \u{1abc}: '᪼'
-    pub const COMBINING_DOUBLE_PARENTHESES_ABOVE: char = '᪼';
-    /// \u{1abd}: '᪽'
-    pub const COMBINING_PARENTHESES_BELOW: char = '᪽';
-    /// \u{1abe}: '᪾'
-    pub const COMBINING_PARENTHESES_OVERLAY: char = '᪾';
-}
 
 /// An enum to represent all characters in the CombiningDiacriticalMarksExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -69,23 +36,22 @@ pub enum CombiningDiacriticalMarksExtended {
 
 impl Into<char> for CombiningDiacriticalMarksExtended {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CombiningDiacriticalMarksExtended::CombiningDoubledCircumflexAccent => COMBINING_DOUBLED_CIRCUMFLEX_ACCENT,
-            CombiningDiacriticalMarksExtended::CombiningDiaeresisDashRing => COMBINING_DIAERESIS_DASH_RING,
-            CombiningDiacriticalMarksExtended::CombiningInfinity => COMBINING_INFINITY,
-            CombiningDiacriticalMarksExtended::CombiningDownwardsArrow => COMBINING_DOWNWARDS_ARROW,
-            CombiningDiacriticalMarksExtended::CombiningTripleDot => COMBINING_TRIPLE_DOT,
-            CombiningDiacriticalMarksExtended::CombiningXDashXBelow => COMBINING_X_DASH_X_BELOW,
-            CombiningDiacriticalMarksExtended::CombiningWigglyLineBelow => COMBINING_WIGGLY_LINE_BELOW,
-            CombiningDiacriticalMarksExtended::CombiningOpenMarkBelow => COMBINING_OPEN_MARK_BELOW,
-            CombiningDiacriticalMarksExtended::CombiningDoubleOpenMarkBelow => COMBINING_DOUBLE_OPEN_MARK_BELOW,
-            CombiningDiacriticalMarksExtended::CombiningLightCentralizationStrokeBelow => COMBINING_LIGHT_CENTRALIZATION_STROKE_BELOW,
-            CombiningDiacriticalMarksExtended::CombiningStrongCentralizationStrokeBelow => COMBINING_STRONG_CENTRALIZATION_STROKE_BELOW,
-            CombiningDiacriticalMarksExtended::CombiningParenthesesAbove => COMBINING_PARENTHESES_ABOVE,
-            CombiningDiacriticalMarksExtended::CombiningDoubleParenthesesAbove => COMBINING_DOUBLE_PARENTHESES_ABOVE,
-            CombiningDiacriticalMarksExtended::CombiningParenthesesBelow => COMBINING_PARENTHESES_BELOW,
-            CombiningDiacriticalMarksExtended::CombiningParenthesesOverlay => COMBINING_PARENTHESES_OVERLAY,
+            CombiningDiacriticalMarksExtended::CombiningDoubledCircumflexAccent => '᪰',
+            CombiningDiacriticalMarksExtended::CombiningDiaeresisDashRing => '᪱',
+            CombiningDiacriticalMarksExtended::CombiningInfinity => '᪲',
+            CombiningDiacriticalMarksExtended::CombiningDownwardsArrow => '᪳',
+            CombiningDiacriticalMarksExtended::CombiningTripleDot => '᪴',
+            CombiningDiacriticalMarksExtended::CombiningXDashXBelow => '᪵',
+            CombiningDiacriticalMarksExtended::CombiningWigglyLineBelow => '᪶',
+            CombiningDiacriticalMarksExtended::CombiningOpenMarkBelow => '᪷',
+            CombiningDiacriticalMarksExtended::CombiningDoubleOpenMarkBelow => '᪸',
+            CombiningDiacriticalMarksExtended::CombiningLightCentralizationStrokeBelow => '᪹',
+            CombiningDiacriticalMarksExtended::CombiningStrongCentralizationStrokeBelow => '᪺',
+            CombiningDiacriticalMarksExtended::CombiningParenthesesAbove => '᪻',
+            CombiningDiacriticalMarksExtended::CombiningDoubleParenthesesAbove => '᪼',
+            CombiningDiacriticalMarksExtended::CombiningParenthesesBelow => '᪽',
+            CombiningDiacriticalMarksExtended::CombiningParenthesesOverlay => '᪾',
         }
     }
 }
@@ -93,23 +59,22 @@ impl Into<char> for CombiningDiacriticalMarksExtended {
 impl std::convert::TryFrom<char> for CombiningDiacriticalMarksExtended {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            COMBINING_DOUBLED_CIRCUMFLEX_ACCENT => Ok(CombiningDiacriticalMarksExtended::CombiningDoubledCircumflexAccent),
-            COMBINING_DIAERESIS_DASH_RING => Ok(CombiningDiacriticalMarksExtended::CombiningDiaeresisDashRing),
-            COMBINING_INFINITY => Ok(CombiningDiacriticalMarksExtended::CombiningInfinity),
-            COMBINING_DOWNWARDS_ARROW => Ok(CombiningDiacriticalMarksExtended::CombiningDownwardsArrow),
-            COMBINING_TRIPLE_DOT => Ok(CombiningDiacriticalMarksExtended::CombiningTripleDot),
-            COMBINING_X_DASH_X_BELOW => Ok(CombiningDiacriticalMarksExtended::CombiningXDashXBelow),
-            COMBINING_WIGGLY_LINE_BELOW => Ok(CombiningDiacriticalMarksExtended::CombiningWigglyLineBelow),
-            COMBINING_OPEN_MARK_BELOW => Ok(CombiningDiacriticalMarksExtended::CombiningOpenMarkBelow),
-            COMBINING_DOUBLE_OPEN_MARK_BELOW => Ok(CombiningDiacriticalMarksExtended::CombiningDoubleOpenMarkBelow),
-            COMBINING_LIGHT_CENTRALIZATION_STROKE_BELOW => Ok(CombiningDiacriticalMarksExtended::CombiningLightCentralizationStrokeBelow),
-            COMBINING_STRONG_CENTRALIZATION_STROKE_BELOW => Ok(CombiningDiacriticalMarksExtended::CombiningStrongCentralizationStrokeBelow),
-            COMBINING_PARENTHESES_ABOVE => Ok(CombiningDiacriticalMarksExtended::CombiningParenthesesAbove),
-            COMBINING_DOUBLE_PARENTHESES_ABOVE => Ok(CombiningDiacriticalMarksExtended::CombiningDoubleParenthesesAbove),
-            COMBINING_PARENTHESES_BELOW => Ok(CombiningDiacriticalMarksExtended::CombiningParenthesesBelow),
-            COMBINING_PARENTHESES_OVERLAY => Ok(CombiningDiacriticalMarksExtended::CombiningParenthesesOverlay),
+            '᪰' => Ok(CombiningDiacriticalMarksExtended::CombiningDoubledCircumflexAccent),
+            '᪱' => Ok(CombiningDiacriticalMarksExtended::CombiningDiaeresisDashRing),
+            '᪲' => Ok(CombiningDiacriticalMarksExtended::CombiningInfinity),
+            '᪳' => Ok(CombiningDiacriticalMarksExtended::CombiningDownwardsArrow),
+            '᪴' => Ok(CombiningDiacriticalMarksExtended::CombiningTripleDot),
+            '᪵' => Ok(CombiningDiacriticalMarksExtended::CombiningXDashXBelow),
+            '᪶' => Ok(CombiningDiacriticalMarksExtended::CombiningWigglyLineBelow),
+            '᪷' => Ok(CombiningDiacriticalMarksExtended::CombiningOpenMarkBelow),
+            '᪸' => Ok(CombiningDiacriticalMarksExtended::CombiningDoubleOpenMarkBelow),
+            '᪹' => Ok(CombiningDiacriticalMarksExtended::CombiningLightCentralizationStrokeBelow),
+            '᪺' => Ok(CombiningDiacriticalMarksExtended::CombiningStrongCentralizationStrokeBelow),
+            '᪻' => Ok(CombiningDiacriticalMarksExtended::CombiningParenthesesAbove),
+            '᪼' => Ok(CombiningDiacriticalMarksExtended::CombiningDoubleParenthesesAbove),
+            '᪽' => Ok(CombiningDiacriticalMarksExtended::CombiningParenthesesBelow),
+            '᪾' => Ok(CombiningDiacriticalMarksExtended::CombiningParenthesesOverlay),
             _ => Err(()),
         }
     }

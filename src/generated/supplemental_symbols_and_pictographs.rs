@@ -1,492 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1f900}: '🤀'
-    pub const CIRCLED_CROSS_FORMEE_WITH_FOUR_DOTS: char = '🤀';
-    /// \u{1f901}: '🤁'
-    pub const CIRCLED_CROSS_FORMEE_WITH_TWO_DOTS: char = '🤁';
-    /// \u{1f902}: '🤂'
-    pub const CIRCLED_CROSS_FORMEE: char = '🤂';
-    /// \u{1f903}: '🤃'
-    pub const LEFT_HALF_CIRCLE_WITH_FOUR_DOTS: char = '🤃';
-    /// \u{1f904}: '🤄'
-    pub const LEFT_HALF_CIRCLE_WITH_THREE_DOTS: char = '🤄';
-    /// \u{1f905}: '🤅'
-    pub const LEFT_HALF_CIRCLE_WITH_TWO_DOTS: char = '🤅';
-    /// \u{1f906}: '🤆'
-    pub const LEFT_HALF_CIRCLE_WITH_DOT: char = '🤆';
-    /// \u{1f907}: '🤇'
-    pub const LEFT_HALF_CIRCLE: char = '🤇';
-    /// \u{1f908}: '🤈'
-    pub const DOWNWARD_FACING_HOOK: char = '🤈';
-    /// \u{1f909}: '🤉'
-    pub const DOWNWARD_FACING_NOTCHED_HOOK: char = '🤉';
-    /// \u{1f90a}: '🤊'
-    pub const DOWNWARD_FACING_HOOK_WITH_DOT: char = '🤊';
-    /// \u{1f90b}: '🤋'
-    pub const DOWNWARD_FACING_NOTCHED_HOOK_WITH_DOT: char = '🤋';
-    /// \u{1f90d}: '🤍'
-    pub const WHITE_HEART: char = '🤍';
-    /// \u{1f90e}: '🤎'
-    pub const BROWN_HEART: char = '🤎';
-    /// \u{1f90f}: '🤏'
-    pub const PINCHING_HAND: char = '🤏';
-    /// \u{1f910}: '🤐'
-    pub const ZIPPER_DASH_MOUTH_FACE: char = '🤐';
-    /// \u{1f911}: '🤑'
-    pub const MONEY_DASH_MOUTH_FACE: char = '🤑';
-    /// \u{1f912}: '🤒'
-    pub const FACE_WITH_THERMOMETER: char = '🤒';
-    /// \u{1f913}: '🤓'
-    pub const NERD_FACE: char = '🤓';
-    /// \u{1f914}: '🤔'
-    pub const THINKING_FACE: char = '🤔';
-    /// \u{1f915}: '🤕'
-    pub const FACE_WITH_HEAD_DASH_BANDAGE: char = '🤕';
-    /// \u{1f916}: '🤖'
-    pub const ROBOT_FACE: char = '🤖';
-    /// \u{1f917}: '🤗'
-    pub const HUGGING_FACE: char = '🤗';
-    /// \u{1f918}: '🤘'
-    pub const SIGN_OF_THE_HORNS: char = '🤘';
-    /// \u{1f919}: '🤙'
-    pub const CALL_ME_HAND: char = '🤙';
-    /// \u{1f91a}: '🤚'
-    pub const RAISED_BACK_OF_HAND: char = '🤚';
-    /// \u{1f91b}: '🤛'
-    pub const LEFT_DASH_FACING_FIST: char = '🤛';
-    /// \u{1f91c}: '🤜'
-    pub const RIGHT_DASH_FACING_FIST: char = '🤜';
-    /// \u{1f91d}: '🤝'
-    pub const HANDSHAKE: char = '🤝';
-    /// \u{1f91e}: '🤞'
-    pub const HAND_WITH_INDEX_AND_MIDDLE_FINGERS_CROSSED: char = '🤞';
-    /// \u{1f91f}: '🤟'
-    pub const I_LOVE_YOU_HAND_SIGN: char = '🤟';
-    /// \u{1f920}: '🤠'
-    pub const FACE_WITH_COWBOY_HAT: char = '🤠';
-    /// \u{1f921}: '🤡'
-    pub const CLOWN_FACE: char = '🤡';
-    /// \u{1f922}: '🤢'
-    pub const NAUSEATED_FACE: char = '🤢';
-    /// \u{1f923}: '🤣'
-    pub const ROLLING_ON_THE_FLOOR_LAUGHING: char = '🤣';
-    /// \u{1f924}: '🤤'
-    pub const DROOLING_FACE: char = '🤤';
-    /// \u{1f925}: '🤥'
-    pub const LYING_FACE: char = '🤥';
-    /// \u{1f926}: '🤦'
-    pub const FACE_PALM: char = '🤦';
-    /// \u{1f927}: '🤧'
-    pub const SNEEZING_FACE: char = '🤧';
-    /// \u{1f928}: '🤨'
-    pub const FACE_WITH_ONE_EYEBROW_RAISED: char = '🤨';
-    /// \u{1f929}: '🤩'
-    pub const GRINNING_FACE_WITH_STAR_EYES: char = '🤩';
-    /// \u{1f92a}: '🤪'
-    pub const GRINNING_FACE_WITH_ONE_LARGE_AND_ONE_SMALL_EYE: char = '🤪';
-    /// \u{1f92b}: '🤫'
-    pub const FACE_WITH_FINGER_COVERING_CLOSED_LIPS: char = '🤫';
-    /// \u{1f92c}: '🤬'
-    pub const SERIOUS_FACE_WITH_SYMBOLS_COVERING_MOUTH: char = '🤬';
-    /// \u{1f92d}: '🤭'
-    pub const SMILING_FACE_WITH_SMILING_EYES_AND_HAND_COVERING_MOUTH: char = '🤭';
-    /// \u{1f92e}: '🤮'
-    pub const FACE_WITH_OPEN_MOUTH_VOMITING: char = '🤮';
-    /// \u{1f92f}: '🤯'
-    pub const SHOCKED_FACE_WITH_EXPLODING_HEAD: char = '🤯';
-    /// \u{1f930}: '🤰'
-    pub const PREGNANT_WOMAN: char = '🤰';
-    /// \u{1f931}: '🤱'
-    pub const BREAST_DASH_FEEDING: char = '🤱';
-    /// \u{1f932}: '🤲'
-    pub const PALMS_UP_TOGETHER: char = '🤲';
-    /// \u{1f933}: '🤳'
-    pub const SELFIE: char = '🤳';
-    /// \u{1f934}: '🤴'
-    pub const PRINCE: char = '🤴';
-    /// \u{1f935}: '🤵'
-    pub const MAN_IN_TUXEDO: char = '🤵';
-    /// \u{1f936}: '🤶'
-    pub const MOTHER_CHRISTMAS: char = '🤶';
-    /// \u{1f937}: '🤷'
-    pub const SHRUG: char = '🤷';
-    /// \u{1f938}: '🤸'
-    pub const PERSON_DOING_CARTWHEEL: char = '🤸';
-    /// \u{1f939}: '🤹'
-    pub const JUGGLING: char = '🤹';
-    /// \u{1f93a}: '🤺'
-    pub const FENCER: char = '🤺';
-    /// \u{1f93b}: '🤻'
-    pub const MODERN_PENTATHLON: char = '🤻';
-    /// \u{1f93c}: '🤼'
-    pub const WRESTLERS: char = '🤼';
-    /// \u{1f93d}: '🤽'
-    pub const WATER_POLO: char = '🤽';
-    /// \u{1f93e}: '🤾'
-    pub const HANDBALL: char = '🤾';
-    /// \u{1f93f}: '🤿'
-    pub const DIVING_MASK: char = '🤿';
-    /// \u{1f940}: '🥀'
-    pub const WILTED_FLOWER: char = '🥀';
-    /// \u{1f941}: '🥁'
-    pub const DRUM_WITH_DRUMSTICKS: char = '🥁';
-    /// \u{1f942}: '🥂'
-    pub const CLINKING_GLASSES: char = '🥂';
-    /// \u{1f943}: '🥃'
-    pub const TUMBLER_GLASS: char = '🥃';
-    /// \u{1f944}: '🥄'
-    pub const SPOON: char = '🥄';
-    /// \u{1f945}: '🥅'
-    pub const GOAL_NET: char = '🥅';
-    /// \u{1f946}: '🥆'
-    pub const RIFLE: char = '🥆';
-    /// \u{1f947}: '🥇'
-    pub const FIRST_PLACE_MEDAL: char = '🥇';
-    /// \u{1f948}: '🥈'
-    pub const SECOND_PLACE_MEDAL: char = '🥈';
-    /// \u{1f949}: '🥉'
-    pub const THIRD_PLACE_MEDAL: char = '🥉';
-    /// \u{1f94a}: '🥊'
-    pub const BOXING_GLOVE: char = '🥊';
-    /// \u{1f94b}: '🥋'
-    pub const MARTIAL_ARTS_UNIFORM: char = '🥋';
-    /// \u{1f94c}: '🥌'
-    pub const CURLING_STONE: char = '🥌';
-    /// \u{1f94d}: '🥍'
-    pub const LACROSSE_STICK_AND_BALL: char = '🥍';
-    /// \u{1f94e}: '🥎'
-    pub const SOFTBALL: char = '🥎';
-    /// \u{1f94f}: '🥏'
-    pub const FLYING_DISC: char = '🥏';
-    /// \u{1f950}: '🥐'
-    pub const CROISSANT: char = '🥐';
-    /// \u{1f951}: '🥑'
-    pub const AVOCADO: char = '🥑';
-    /// \u{1f952}: '🥒'
-    pub const CUCUMBER: char = '🥒';
-    /// \u{1f953}: '🥓'
-    pub const BACON: char = '🥓';
-    /// \u{1f954}: '🥔'
-    pub const POTATO: char = '🥔';
-    /// \u{1f955}: '🥕'
-    pub const CARROT: char = '🥕';
-    /// \u{1f956}: '🥖'
-    pub const BAGUETTE_BREAD: char = '🥖';
-    /// \u{1f957}: '🥗'
-    pub const GREEN_SALAD: char = '🥗';
-    /// \u{1f958}: '🥘'
-    pub const SHALLOW_PAN_OF_FOOD: char = '🥘';
-    /// \u{1f959}: '🥙'
-    pub const STUFFED_FLATBREAD: char = '🥙';
-    /// \u{1f95a}: '🥚'
-    pub const EGG: char = '🥚';
-    /// \u{1f95b}: '🥛'
-    pub const GLASS_OF_MILK: char = '🥛';
-    /// \u{1f95c}: '🥜'
-    pub const PEANUTS: char = '🥜';
-    /// \u{1f95d}: '🥝'
-    pub const KIWIFRUIT: char = '🥝';
-    /// \u{1f95e}: '🥞'
-    pub const PANCAKES: char = '🥞';
-    /// \u{1f95f}: '🥟'
-    pub const DUMPLING: char = '🥟';
-    /// \u{1f960}: '🥠'
-    pub const FORTUNE_COOKIE: char = '🥠';
-    /// \u{1f961}: '🥡'
-    pub const TAKEOUT_BOX: char = '🥡';
-    /// \u{1f962}: '🥢'
-    pub const CHOPSTICKS: char = '🥢';
-    /// \u{1f963}: '🥣'
-    pub const BOWL_WITH_SPOON: char = '🥣';
-    /// \u{1f964}: '🥤'
-    pub const CUP_WITH_STRAW: char = '🥤';
-    /// \u{1f965}: '🥥'
-    pub const COCONUT: char = '🥥';
-    /// \u{1f966}: '🥦'
-    pub const BROCCOLI: char = '🥦';
-    /// \u{1f967}: '🥧'
-    pub const PIE: char = '🥧';
-    /// \u{1f968}: '🥨'
-    pub const PRETZEL: char = '🥨';
-    /// \u{1f969}: '🥩'
-    pub const CUT_OF_MEAT: char = '🥩';
-    /// \u{1f96a}: '🥪'
-    pub const SANDWICH: char = '🥪';
-    /// \u{1f96b}: '🥫'
-    pub const CANNED_FOOD: char = '🥫';
-    /// \u{1f96c}: '🥬'
-    pub const LEAFY_GREEN: char = '🥬';
-    /// \u{1f96d}: '🥭'
-    pub const MANGO: char = '🥭';
-    /// \u{1f96e}: '🥮'
-    pub const MOON_CAKE: char = '🥮';
-    /// \u{1f96f}: '🥯'
-    pub const BAGEL: char = '🥯';
-    /// \u{1f970}: '🥰'
-    pub const SMILING_FACE_WITH_SMILING_EYES_AND_THREE_HEARTS: char = '🥰';
-    /// \u{1f971}: '🥱'
-    pub const YAWNING_FACE: char = '🥱';
-    /// \u{1f973}: '🥳'
-    pub const FACE_WITH_PARTY_HORN_AND_PARTY_HAT: char = '🥳';
-    /// \u{1f974}: '🥴'
-    pub const FACE_WITH_UNEVEN_EYES_AND_WAVY_MOUTH: char = '🥴';
-    /// \u{1f975}: '🥵'
-    pub const OVERHEATED_FACE: char = '🥵';
-    /// \u{1f976}: '🥶'
-    pub const FREEZING_FACE: char = '🥶';
-    /// \u{1f97a}: '🥺'
-    pub const FACE_WITH_PLEADING_EYES: char = '🥺';
-    /// \u{1f97b}: '🥻'
-    pub const SARI: char = '🥻';
-    /// \u{1f97c}: '🥼'
-    pub const LAB_COAT: char = '🥼';
-    /// \u{1f97d}: '🥽'
-    pub const GOGGLES: char = '🥽';
-    /// \u{1f97e}: '🥾'
-    pub const HIKING_BOOT: char = '🥾';
-    /// \u{1f97f}: '🥿'
-    pub const FLAT_SHOE: char = '🥿';
-    /// \u{1f980}: '🦀'
-    pub const CRAB: char = '🦀';
-    /// \u{1f981}: '🦁'
-    pub const LION_FACE: char = '🦁';
-    /// \u{1f982}: '🦂'
-    pub const SCORPION: char = '🦂';
-    /// \u{1f983}: '🦃'
-    pub const TURKEY: char = '🦃';
-    /// \u{1f984}: '🦄'
-    pub const UNICORN_FACE: char = '🦄';
-    /// \u{1f985}: '🦅'
-    pub const EAGLE: char = '🦅';
-    /// \u{1f986}: '🦆'
-    pub const DUCK: char = '🦆';
-    /// \u{1f987}: '🦇'
-    pub const BAT: char = '🦇';
-    /// \u{1f988}: '🦈'
-    pub const SHARK: char = '🦈';
-    /// \u{1f989}: '🦉'
-    pub const OWL: char = '🦉';
-    /// \u{1f98a}: '🦊'
-    pub const FOX_FACE: char = '🦊';
-    /// \u{1f98b}: '🦋'
-    pub const BUTTERFLY: char = '🦋';
-    /// \u{1f98c}: '🦌'
-    pub const DEER: char = '🦌';
-    /// \u{1f98d}: '🦍'
-    pub const GORILLA: char = '🦍';
-    /// \u{1f98e}: '🦎'
-    pub const LIZARD: char = '🦎';
-    /// \u{1f98f}: '🦏'
-    pub const RHINOCEROS: char = '🦏';
-    /// \u{1f990}: '🦐'
-    pub const SHRIMP: char = '🦐';
-    /// \u{1f991}: '🦑'
-    pub const SQUID: char = '🦑';
-    /// \u{1f992}: '🦒'
-    pub const GIRAFFE_FACE: char = '🦒';
-    /// \u{1f993}: '🦓'
-    pub const ZEBRA_FACE: char = '🦓';
-    /// \u{1f994}: '🦔'
-    pub const HEDGEHOG: char = '🦔';
-    /// \u{1f995}: '🦕'
-    pub const SAUROPOD: char = '🦕';
-    /// \u{1f996}: '🦖'
-    pub const T_DASH_REX: char = '🦖';
-    /// \u{1f997}: '🦗'
-    pub const CRICKET: char = '🦗';
-    /// \u{1f998}: '🦘'
-    pub const KANGAROO: char = '🦘';
-    /// \u{1f999}: '🦙'
-    pub const LLAMA: char = '🦙';
-    /// \u{1f99a}: '🦚'
-    pub const PEACOCK: char = '🦚';
-    /// \u{1f99b}: '🦛'
-    pub const HIPPOPOTAMUS: char = '🦛';
-    /// \u{1f99c}: '🦜'
-    pub const PARROT: char = '🦜';
-    /// \u{1f99d}: '🦝'
-    pub const RACCOON: char = '🦝';
-    /// \u{1f99e}: '🦞'
-    pub const LOBSTER: char = '🦞';
-    /// \u{1f99f}: '🦟'
-    pub const MOSQUITO: char = '🦟';
-    /// \u{1f9a0}: '🦠'
-    pub const MICROBE: char = '🦠';
-    /// \u{1f9a1}: '🦡'
-    pub const BADGER: char = '🦡';
-    /// \u{1f9a2}: '🦢'
-    pub const SWAN: char = '🦢';
-    /// \u{1f9a5}: '🦥'
-    pub const SLOTH: char = '🦥';
-    /// \u{1f9a6}: '🦦'
-    pub const OTTER: char = '🦦';
-    /// \u{1f9a7}: '🦧'
-    pub const ORANGUTAN: char = '🦧';
-    /// \u{1f9a8}: '🦨'
-    pub const SKUNK: char = '🦨';
-    /// \u{1f9a9}: '🦩'
-    pub const FLAMINGO: char = '🦩';
-    /// \u{1f9aa}: '🦪'
-    pub const OYSTER: char = '🦪';
-    /// \u{1f9ae}: '🦮'
-    pub const GUIDE_DOG: char = '🦮';
-    /// \u{1f9af}: '🦯'
-    pub const PROBING_CANE: char = '🦯';
-    /// \u{1f9b0}: '🦰'
-    pub const EMOJI_COMPONENT_RED_HAIR: char = '🦰';
-    /// \u{1f9b1}: '🦱'
-    pub const EMOJI_COMPONENT_CURLY_HAIR: char = '🦱';
-    /// \u{1f9b2}: '🦲'
-    pub const EMOJI_COMPONENT_BALD: char = '🦲';
-    /// \u{1f9b3}: '🦳'
-    pub const EMOJI_COMPONENT_WHITE_HAIR: char = '🦳';
-    /// \u{1f9b4}: '🦴'
-    pub const BONE: char = '🦴';
-    /// \u{1f9b5}: '🦵'
-    pub const LEG: char = '🦵';
-    /// \u{1f9b6}: '🦶'
-    pub const FOOT: char = '🦶';
-    /// \u{1f9b7}: '🦷'
-    pub const TOOTH: char = '🦷';
-    /// \u{1f9b8}: '🦸'
-    pub const SUPERHERO: char = '🦸';
-    /// \u{1f9b9}: '🦹'
-    pub const SUPERVILLAIN: char = '🦹';
-    /// \u{1f9ba}: '🦺'
-    pub const SAFETY_VEST: char = '🦺';
-    /// \u{1f9bb}: '🦻'
-    pub const EAR_WITH_HEARING_AID: char = '🦻';
-    /// \u{1f9bc}: '🦼'
-    pub const MOTORIZED_WHEELCHAIR: char = '🦼';
-    /// \u{1f9bd}: '🦽'
-    pub const MANUAL_WHEELCHAIR: char = '🦽';
-    /// \u{1f9be}: '🦾'
-    pub const MECHANICAL_ARM: char = '🦾';
-    /// \u{1f9bf}: '🦿'
-    pub const MECHANICAL_LEG: char = '🦿';
-    /// \u{1f9c0}: '🧀'
-    pub const CHEESE_WEDGE: char = '🧀';
-    /// \u{1f9c1}: '🧁'
-    pub const CUPCAKE: char = '🧁';
-    /// \u{1f9c2}: '🧂'
-    pub const SALT_SHAKER: char = '🧂';
-    /// \u{1f9c3}: '🧃'
-    pub const BEVERAGE_BOX: char = '🧃';
-    /// \u{1f9c4}: '🧄'
-    pub const GARLIC: char = '🧄';
-    /// \u{1f9c5}: '🧅'
-    pub const ONION: char = '🧅';
-    /// \u{1f9c6}: '🧆'
-    pub const FALAFEL: char = '🧆';
-    /// \u{1f9c7}: '🧇'
-    pub const WAFFLE: char = '🧇';
-    /// \u{1f9c8}: '🧈'
-    pub const BUTTER: char = '🧈';
-    /// \u{1f9c9}: '🧉'
-    pub const MATE_DRINK: char = '🧉';
-    /// \u{1f9ca}: '🧊'
-    pub const ICE_CUBE: char = '🧊';
-    /// \u{1f9cd}: '🧍'
-    pub const STANDING_PERSON: char = '🧍';
-    /// \u{1f9ce}: '🧎'
-    pub const KNEELING_PERSON: char = '🧎';
-    /// \u{1f9cf}: '🧏'
-    pub const DEAF_PERSON: char = '🧏';
-    /// \u{1f9d0}: '🧐'
-    pub const FACE_WITH_MONOCLE: char = '🧐';
-    /// \u{1f9d1}: '🧑'
-    pub const ADULT: char = '🧑';
-    /// \u{1f9d2}: '🧒'
-    pub const CHILD: char = '🧒';
-    /// \u{1f9d3}: '🧓'
-    pub const OLDER_ADULT: char = '🧓';
-    /// \u{1f9d4}: '🧔'
-    pub const BEARDED_PERSON: char = '🧔';
-    /// \u{1f9d5}: '🧕'
-    pub const PERSON_WITH_HEADSCARF: char = '🧕';
-    /// \u{1f9d6}: '🧖'
-    pub const PERSON_IN_STEAMY_ROOM: char = '🧖';
-    /// \u{1f9d7}: '🧗'
-    pub const PERSON_CLIMBING: char = '🧗';
-    /// \u{1f9d8}: '🧘'
-    pub const PERSON_IN_LOTUS_POSITION: char = '🧘';
-    /// \u{1f9d9}: '🧙'
-    pub const MAGE: char = '🧙';
-    /// \u{1f9da}: '🧚'
-    pub const FAIRY: char = '🧚';
-    /// \u{1f9db}: '🧛'
-    pub const VAMPIRE: char = '🧛';
-    /// \u{1f9dc}: '🧜'
-    pub const MERPERSON: char = '🧜';
-    /// \u{1f9dd}: '🧝'
-    pub const ELF: char = '🧝';
-    /// \u{1f9de}: '🧞'
-    pub const GENIE: char = '🧞';
-    /// \u{1f9df}: '🧟'
-    pub const ZOMBIE: char = '🧟';
-    /// \u{1f9e0}: '🧠'
-    pub const BRAIN: char = '🧠';
-    /// \u{1f9e1}: '🧡'
-    pub const ORANGE_HEART: char = '🧡';
-    /// \u{1f9e2}: '🧢'
-    pub const BILLED_CAP: char = '🧢';
-    /// \u{1f9e3}: '🧣'
-    pub const SCARF: char = '🧣';
-    /// \u{1f9e4}: '🧤'
-    pub const GLOVES: char = '🧤';
-    /// \u{1f9e5}: '🧥'
-    pub const COAT: char = '🧥';
-    /// \u{1f9e6}: '🧦'
-    pub const SOCKS: char = '🧦';
-    /// \u{1f9e7}: '🧧'
-    pub const RED_GIFT_ENVELOPE: char = '🧧';
-    /// \u{1f9e8}: '🧨'
-    pub const FIRECRACKER: char = '🧨';
-    /// \u{1f9e9}: '🧩'
-    pub const JIGSAW_PUZZLE_PIECE: char = '🧩';
-    /// \u{1f9ea}: '🧪'
-    pub const TEST_TUBE: char = '🧪';
-    /// \u{1f9eb}: '🧫'
-    pub const PETRI_DISH: char = '🧫';
-    /// \u{1f9ec}: '🧬'
-    pub const DNA_DOUBLE_HELIX: char = '🧬';
-    /// \u{1f9ed}: '🧭'
-    pub const COMPASS: char = '🧭';
-    /// \u{1f9ee}: '🧮'
-    pub const ABACUS: char = '🧮';
-    /// \u{1f9ef}: '🧯'
-    pub const FIRE_EXTINGUISHER: char = '🧯';
-    /// \u{1f9f0}: '🧰'
-    pub const TOOLBOX: char = '🧰';
-    /// \u{1f9f1}: '🧱'
-    pub const BRICK: char = '🧱';
-    /// \u{1f9f2}: '🧲'
-    pub const MAGNET: char = '🧲';
-    /// \u{1f9f3}: '🧳'
-    pub const LUGGAGE: char = '🧳';
-    /// \u{1f9f4}: '🧴'
-    pub const LOTION_BOTTLE: char = '🧴';
-    /// \u{1f9f5}: '🧵'
-    pub const SPOOL_OF_THREAD: char = '🧵';
-    /// \u{1f9f6}: '🧶'
-    pub const BALL_OF_YARN: char = '🧶';
-    /// \u{1f9f7}: '🧷'
-    pub const SAFETY_PIN: char = '🧷';
-    /// \u{1f9f8}: '🧸'
-    pub const TEDDY_BEAR: char = '🧸';
-    /// \u{1f9f9}: '🧹'
-    pub const BROOM: char = '🧹';
-    /// \u{1f9fa}: '🧺'
-    pub const BASKET: char = '🧺';
-    /// \u{1f9fb}: '🧻'
-    pub const ROLL_OF_PAPER: char = '🧻';
-    /// \u{1f9fc}: '🧼'
-    pub const BAR_OF_SOAP: char = '🧼';
-    /// \u{1f9fd}: '🧽'
-    pub const SPONGE: char = '🧽';
-    /// \u{1f9fe}: '🧾'
-    pub const RECEIPT: char = '🧾';
-}
 
 /// An enum to represent all characters in the SupplementalSymbolsandPictographs block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -981,251 +492,250 @@ pub enum SupplementalSymbolsandPictographs {
 
 impl Into<char> for SupplementalSymbolsandPictographs {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SupplementalSymbolsandPictographs::CircledCrossFormeeWithFourDots => CIRCLED_CROSS_FORMEE_WITH_FOUR_DOTS,
-            SupplementalSymbolsandPictographs::CircledCrossFormeeWithTwoDots => CIRCLED_CROSS_FORMEE_WITH_TWO_DOTS,
-            SupplementalSymbolsandPictographs::CircledCrossFormee => CIRCLED_CROSS_FORMEE,
-            SupplementalSymbolsandPictographs::LeftHalfCircleWithFourDots => LEFT_HALF_CIRCLE_WITH_FOUR_DOTS,
-            SupplementalSymbolsandPictographs::LeftHalfCircleWithThreeDots => LEFT_HALF_CIRCLE_WITH_THREE_DOTS,
-            SupplementalSymbolsandPictographs::LeftHalfCircleWithTwoDots => LEFT_HALF_CIRCLE_WITH_TWO_DOTS,
-            SupplementalSymbolsandPictographs::LeftHalfCircleWithDot => LEFT_HALF_CIRCLE_WITH_DOT,
-            SupplementalSymbolsandPictographs::LeftHalfCircle => LEFT_HALF_CIRCLE,
-            SupplementalSymbolsandPictographs::DownwardFacingHook => DOWNWARD_FACING_HOOK,
-            SupplementalSymbolsandPictographs::DownwardFacingNotchedHook => DOWNWARD_FACING_NOTCHED_HOOK,
-            SupplementalSymbolsandPictographs::DownwardFacingHookWithDot => DOWNWARD_FACING_HOOK_WITH_DOT,
-            SupplementalSymbolsandPictographs::DownwardFacingNotchedHookWithDot => DOWNWARD_FACING_NOTCHED_HOOK_WITH_DOT,
-            SupplementalSymbolsandPictographs::WhiteHeart => WHITE_HEART,
-            SupplementalSymbolsandPictographs::BrownHeart => BROWN_HEART,
-            SupplementalSymbolsandPictographs::PinchingHand => PINCHING_HAND,
-            SupplementalSymbolsandPictographs::ZipperDashMouthFace => ZIPPER_DASH_MOUTH_FACE,
-            SupplementalSymbolsandPictographs::MoneyDashMouthFace => MONEY_DASH_MOUTH_FACE,
-            SupplementalSymbolsandPictographs::FaceWithThermometer => FACE_WITH_THERMOMETER,
-            SupplementalSymbolsandPictographs::NerdFace => NERD_FACE,
-            SupplementalSymbolsandPictographs::ThinkingFace => THINKING_FACE,
-            SupplementalSymbolsandPictographs::FaceWithHeadDashBandage => FACE_WITH_HEAD_DASH_BANDAGE,
-            SupplementalSymbolsandPictographs::RobotFace => ROBOT_FACE,
-            SupplementalSymbolsandPictographs::HuggingFace => HUGGING_FACE,
-            SupplementalSymbolsandPictographs::SignOfTheHorns => SIGN_OF_THE_HORNS,
-            SupplementalSymbolsandPictographs::CallMeHand => CALL_ME_HAND,
-            SupplementalSymbolsandPictographs::RaisedBackOfHand => RAISED_BACK_OF_HAND,
-            SupplementalSymbolsandPictographs::LeftDashFacingFist => LEFT_DASH_FACING_FIST,
-            SupplementalSymbolsandPictographs::RightDashFacingFist => RIGHT_DASH_FACING_FIST,
-            SupplementalSymbolsandPictographs::Handshake => HANDSHAKE,
-            SupplementalSymbolsandPictographs::HandWithIndexAndMiddleFingersCrossed => HAND_WITH_INDEX_AND_MIDDLE_FINGERS_CROSSED,
-            SupplementalSymbolsandPictographs::ILoveYouHandSign => I_LOVE_YOU_HAND_SIGN,
-            SupplementalSymbolsandPictographs::FaceWithCowboyHat => FACE_WITH_COWBOY_HAT,
-            SupplementalSymbolsandPictographs::ClownFace => CLOWN_FACE,
-            SupplementalSymbolsandPictographs::NauseatedFace => NAUSEATED_FACE,
-            SupplementalSymbolsandPictographs::RollingOnTheFloorLaughing => ROLLING_ON_THE_FLOOR_LAUGHING,
-            SupplementalSymbolsandPictographs::DroolingFace => DROOLING_FACE,
-            SupplementalSymbolsandPictographs::LyingFace => LYING_FACE,
-            SupplementalSymbolsandPictographs::FacePalm => FACE_PALM,
-            SupplementalSymbolsandPictographs::SneezingFace => SNEEZING_FACE,
-            SupplementalSymbolsandPictographs::FaceWithOneEyebrowRaised => FACE_WITH_ONE_EYEBROW_RAISED,
-            SupplementalSymbolsandPictographs::GrinningFaceWithStarEyes => GRINNING_FACE_WITH_STAR_EYES,
-            SupplementalSymbolsandPictographs::GrinningFaceWithOneLargeAndOneSmallEye => GRINNING_FACE_WITH_ONE_LARGE_AND_ONE_SMALL_EYE,
-            SupplementalSymbolsandPictographs::FaceWithFingerCoveringClosedLips => FACE_WITH_FINGER_COVERING_CLOSED_LIPS,
-            SupplementalSymbolsandPictographs::SeriousFaceWithSymbolsCoveringMouth => SERIOUS_FACE_WITH_SYMBOLS_COVERING_MOUTH,
-            SupplementalSymbolsandPictographs::SmilingFaceWithSmilingEyesAndHandCoveringMouth => SMILING_FACE_WITH_SMILING_EYES_AND_HAND_COVERING_MOUTH,
-            SupplementalSymbolsandPictographs::FaceWithOpenMouthVomiting => FACE_WITH_OPEN_MOUTH_VOMITING,
-            SupplementalSymbolsandPictographs::ShockedFaceWithExplodingHead => SHOCKED_FACE_WITH_EXPLODING_HEAD,
-            SupplementalSymbolsandPictographs::PregnantWoman => PREGNANT_WOMAN,
-            SupplementalSymbolsandPictographs::BreastDashFeeding => BREAST_DASH_FEEDING,
-            SupplementalSymbolsandPictographs::PalmsUpTogether => PALMS_UP_TOGETHER,
-            SupplementalSymbolsandPictographs::Selfie => SELFIE,
-            SupplementalSymbolsandPictographs::Prince => PRINCE,
-            SupplementalSymbolsandPictographs::ManInTuxedo => MAN_IN_TUXEDO,
-            SupplementalSymbolsandPictographs::MotherChristmas => MOTHER_CHRISTMAS,
-            SupplementalSymbolsandPictographs::Shrug => SHRUG,
-            SupplementalSymbolsandPictographs::PersonDoingCartwheel => PERSON_DOING_CARTWHEEL,
-            SupplementalSymbolsandPictographs::Juggling => JUGGLING,
-            SupplementalSymbolsandPictographs::Fencer => FENCER,
-            SupplementalSymbolsandPictographs::ModernPentathlon => MODERN_PENTATHLON,
-            SupplementalSymbolsandPictographs::Wrestlers => WRESTLERS,
-            SupplementalSymbolsandPictographs::WaterPolo => WATER_POLO,
-            SupplementalSymbolsandPictographs::Handball => HANDBALL,
-            SupplementalSymbolsandPictographs::DivingMask => DIVING_MASK,
-            SupplementalSymbolsandPictographs::WiltedFlower => WILTED_FLOWER,
-            SupplementalSymbolsandPictographs::DrumWithDrumsticks => DRUM_WITH_DRUMSTICKS,
-            SupplementalSymbolsandPictographs::ClinkingGlasses => CLINKING_GLASSES,
-            SupplementalSymbolsandPictographs::TumblerGlass => TUMBLER_GLASS,
-            SupplementalSymbolsandPictographs::Spoon => SPOON,
-            SupplementalSymbolsandPictographs::GoalNet => GOAL_NET,
-            SupplementalSymbolsandPictographs::Rifle => RIFLE,
-            SupplementalSymbolsandPictographs::FirstPlaceMedal => FIRST_PLACE_MEDAL,
-            SupplementalSymbolsandPictographs::SecondPlaceMedal => SECOND_PLACE_MEDAL,
-            SupplementalSymbolsandPictographs::ThirdPlaceMedal => THIRD_PLACE_MEDAL,
-            SupplementalSymbolsandPictographs::BoxingGlove => BOXING_GLOVE,
-            SupplementalSymbolsandPictographs::MartialArtsUniform => MARTIAL_ARTS_UNIFORM,
-            SupplementalSymbolsandPictographs::CurlingStone => CURLING_STONE,
-            SupplementalSymbolsandPictographs::LacrosseStickAndBall => LACROSSE_STICK_AND_BALL,
-            SupplementalSymbolsandPictographs::Softball => SOFTBALL,
-            SupplementalSymbolsandPictographs::FlyingDisc => FLYING_DISC,
-            SupplementalSymbolsandPictographs::Croissant => CROISSANT,
-            SupplementalSymbolsandPictographs::Avocado => AVOCADO,
-            SupplementalSymbolsandPictographs::Cucumber => CUCUMBER,
-            SupplementalSymbolsandPictographs::Bacon => BACON,
-            SupplementalSymbolsandPictographs::Potato => POTATO,
-            SupplementalSymbolsandPictographs::Carrot => CARROT,
-            SupplementalSymbolsandPictographs::BaguetteBread => BAGUETTE_BREAD,
-            SupplementalSymbolsandPictographs::GreenSalad => GREEN_SALAD,
-            SupplementalSymbolsandPictographs::ShallowPanOfFood => SHALLOW_PAN_OF_FOOD,
-            SupplementalSymbolsandPictographs::StuffedFlatbread => STUFFED_FLATBREAD,
-            SupplementalSymbolsandPictographs::Egg => EGG,
-            SupplementalSymbolsandPictographs::GlassOfMilk => GLASS_OF_MILK,
-            SupplementalSymbolsandPictographs::Peanuts => PEANUTS,
-            SupplementalSymbolsandPictographs::Kiwifruit => KIWIFRUIT,
-            SupplementalSymbolsandPictographs::Pancakes => PANCAKES,
-            SupplementalSymbolsandPictographs::Dumpling => DUMPLING,
-            SupplementalSymbolsandPictographs::FortuneCookie => FORTUNE_COOKIE,
-            SupplementalSymbolsandPictographs::TakeoutBox => TAKEOUT_BOX,
-            SupplementalSymbolsandPictographs::Chopsticks => CHOPSTICKS,
-            SupplementalSymbolsandPictographs::BowlWithSpoon => BOWL_WITH_SPOON,
-            SupplementalSymbolsandPictographs::CupWithStraw => CUP_WITH_STRAW,
-            SupplementalSymbolsandPictographs::Coconut => COCONUT,
-            SupplementalSymbolsandPictographs::Broccoli => BROCCOLI,
-            SupplementalSymbolsandPictographs::Pie => PIE,
-            SupplementalSymbolsandPictographs::Pretzel => PRETZEL,
-            SupplementalSymbolsandPictographs::CutOfMeat => CUT_OF_MEAT,
-            SupplementalSymbolsandPictographs::Sandwich => SANDWICH,
-            SupplementalSymbolsandPictographs::CannedFood => CANNED_FOOD,
-            SupplementalSymbolsandPictographs::LeafyGreen => LEAFY_GREEN,
-            SupplementalSymbolsandPictographs::Mango => MANGO,
-            SupplementalSymbolsandPictographs::MoonCake => MOON_CAKE,
-            SupplementalSymbolsandPictographs::Bagel => BAGEL,
-            SupplementalSymbolsandPictographs::SmilingFaceWithSmilingEyesAndThreeHearts => SMILING_FACE_WITH_SMILING_EYES_AND_THREE_HEARTS,
-            SupplementalSymbolsandPictographs::YawningFace => YAWNING_FACE,
-            SupplementalSymbolsandPictographs::FaceWithPartyHornAndPartyHat => FACE_WITH_PARTY_HORN_AND_PARTY_HAT,
-            SupplementalSymbolsandPictographs::FaceWithUnevenEyesAndWavyMouth => FACE_WITH_UNEVEN_EYES_AND_WAVY_MOUTH,
-            SupplementalSymbolsandPictographs::OverheatedFace => OVERHEATED_FACE,
-            SupplementalSymbolsandPictographs::FreezingFace => FREEZING_FACE,
-            SupplementalSymbolsandPictographs::FaceWithPleadingEyes => FACE_WITH_PLEADING_EYES,
-            SupplementalSymbolsandPictographs::Sari => SARI,
-            SupplementalSymbolsandPictographs::LabCoat => LAB_COAT,
-            SupplementalSymbolsandPictographs::Goggles => GOGGLES,
-            SupplementalSymbolsandPictographs::HikingBoot => HIKING_BOOT,
-            SupplementalSymbolsandPictographs::FlatShoe => FLAT_SHOE,
-            SupplementalSymbolsandPictographs::Crab => CRAB,
-            SupplementalSymbolsandPictographs::LionFace => LION_FACE,
-            SupplementalSymbolsandPictographs::Scorpion => SCORPION,
-            SupplementalSymbolsandPictographs::Turkey => TURKEY,
-            SupplementalSymbolsandPictographs::UnicornFace => UNICORN_FACE,
-            SupplementalSymbolsandPictographs::Eagle => EAGLE,
-            SupplementalSymbolsandPictographs::Duck => DUCK,
-            SupplementalSymbolsandPictographs::Bat => BAT,
-            SupplementalSymbolsandPictographs::Shark => SHARK,
-            SupplementalSymbolsandPictographs::Owl => OWL,
-            SupplementalSymbolsandPictographs::FoxFace => FOX_FACE,
-            SupplementalSymbolsandPictographs::Butterfly => BUTTERFLY,
-            SupplementalSymbolsandPictographs::Deer => DEER,
-            SupplementalSymbolsandPictographs::Gorilla => GORILLA,
-            SupplementalSymbolsandPictographs::Lizard => LIZARD,
-            SupplementalSymbolsandPictographs::Rhinoceros => RHINOCEROS,
-            SupplementalSymbolsandPictographs::Shrimp => SHRIMP,
-            SupplementalSymbolsandPictographs::Squid => SQUID,
-            SupplementalSymbolsandPictographs::GiraffeFace => GIRAFFE_FACE,
-            SupplementalSymbolsandPictographs::ZebraFace => ZEBRA_FACE,
-            SupplementalSymbolsandPictographs::Hedgehog => HEDGEHOG,
-            SupplementalSymbolsandPictographs::Sauropod => SAUROPOD,
-            SupplementalSymbolsandPictographs::TDashRex => T_DASH_REX,
-            SupplementalSymbolsandPictographs::Cricket => CRICKET,
-            SupplementalSymbolsandPictographs::Kangaroo => KANGAROO,
-            SupplementalSymbolsandPictographs::Llama => LLAMA,
-            SupplementalSymbolsandPictographs::Peacock => PEACOCK,
-            SupplementalSymbolsandPictographs::Hippopotamus => HIPPOPOTAMUS,
-            SupplementalSymbolsandPictographs::Parrot => PARROT,
-            SupplementalSymbolsandPictographs::Raccoon => RACCOON,
-            SupplementalSymbolsandPictographs::Lobster => LOBSTER,
-            SupplementalSymbolsandPictographs::Mosquito => MOSQUITO,
-            SupplementalSymbolsandPictographs::Microbe => MICROBE,
-            SupplementalSymbolsandPictographs::Badger => BADGER,
-            SupplementalSymbolsandPictographs::Swan => SWAN,
-            SupplementalSymbolsandPictographs::Sloth => SLOTH,
-            SupplementalSymbolsandPictographs::Otter => OTTER,
-            SupplementalSymbolsandPictographs::Orangutan => ORANGUTAN,
-            SupplementalSymbolsandPictographs::Skunk => SKUNK,
-            SupplementalSymbolsandPictographs::Flamingo => FLAMINGO,
-            SupplementalSymbolsandPictographs::Oyster => OYSTER,
-            SupplementalSymbolsandPictographs::GuideDog => GUIDE_DOG,
-            SupplementalSymbolsandPictographs::ProbingCane => PROBING_CANE,
-            SupplementalSymbolsandPictographs::EmojiComponentRedHair => EMOJI_COMPONENT_RED_HAIR,
-            SupplementalSymbolsandPictographs::EmojiComponentCurlyHair => EMOJI_COMPONENT_CURLY_HAIR,
-            SupplementalSymbolsandPictographs::EmojiComponentBald => EMOJI_COMPONENT_BALD,
-            SupplementalSymbolsandPictographs::EmojiComponentWhiteHair => EMOJI_COMPONENT_WHITE_HAIR,
-            SupplementalSymbolsandPictographs::Bone => BONE,
-            SupplementalSymbolsandPictographs::Leg => LEG,
-            SupplementalSymbolsandPictographs::Foot => FOOT,
-            SupplementalSymbolsandPictographs::Tooth => TOOTH,
-            SupplementalSymbolsandPictographs::Superhero => SUPERHERO,
-            SupplementalSymbolsandPictographs::Supervillain => SUPERVILLAIN,
-            SupplementalSymbolsandPictographs::SafetyVest => SAFETY_VEST,
-            SupplementalSymbolsandPictographs::EarWithHearingAid => EAR_WITH_HEARING_AID,
-            SupplementalSymbolsandPictographs::MotorizedWheelchair => MOTORIZED_WHEELCHAIR,
-            SupplementalSymbolsandPictographs::ManualWheelchair => MANUAL_WHEELCHAIR,
-            SupplementalSymbolsandPictographs::MechanicalArm => MECHANICAL_ARM,
-            SupplementalSymbolsandPictographs::MechanicalLeg => MECHANICAL_LEG,
-            SupplementalSymbolsandPictographs::CheeseWedge => CHEESE_WEDGE,
-            SupplementalSymbolsandPictographs::Cupcake => CUPCAKE,
-            SupplementalSymbolsandPictographs::SaltShaker => SALT_SHAKER,
-            SupplementalSymbolsandPictographs::BeverageBox => BEVERAGE_BOX,
-            SupplementalSymbolsandPictographs::Garlic => GARLIC,
-            SupplementalSymbolsandPictographs::Onion => ONION,
-            SupplementalSymbolsandPictographs::Falafel => FALAFEL,
-            SupplementalSymbolsandPictographs::Waffle => WAFFLE,
-            SupplementalSymbolsandPictographs::Butter => BUTTER,
-            SupplementalSymbolsandPictographs::MateDrink => MATE_DRINK,
-            SupplementalSymbolsandPictographs::IceCube => ICE_CUBE,
-            SupplementalSymbolsandPictographs::StandingPerson => STANDING_PERSON,
-            SupplementalSymbolsandPictographs::KneelingPerson => KNEELING_PERSON,
-            SupplementalSymbolsandPictographs::DeafPerson => DEAF_PERSON,
-            SupplementalSymbolsandPictographs::FaceWithMonocle => FACE_WITH_MONOCLE,
-            SupplementalSymbolsandPictographs::Adult => ADULT,
-            SupplementalSymbolsandPictographs::Child => CHILD,
-            SupplementalSymbolsandPictographs::OlderAdult => OLDER_ADULT,
-            SupplementalSymbolsandPictographs::BeardedPerson => BEARDED_PERSON,
-            SupplementalSymbolsandPictographs::PersonWithHeadscarf => PERSON_WITH_HEADSCARF,
-            SupplementalSymbolsandPictographs::PersonInSteamyRoom => PERSON_IN_STEAMY_ROOM,
-            SupplementalSymbolsandPictographs::PersonClimbing => PERSON_CLIMBING,
-            SupplementalSymbolsandPictographs::PersonInLotusPosition => PERSON_IN_LOTUS_POSITION,
-            SupplementalSymbolsandPictographs::Mage => MAGE,
-            SupplementalSymbolsandPictographs::Fairy => FAIRY,
-            SupplementalSymbolsandPictographs::Vampire => VAMPIRE,
-            SupplementalSymbolsandPictographs::Merperson => MERPERSON,
-            SupplementalSymbolsandPictographs::Elf => ELF,
-            SupplementalSymbolsandPictographs::Genie => GENIE,
-            SupplementalSymbolsandPictographs::Zombie => ZOMBIE,
-            SupplementalSymbolsandPictographs::Brain => BRAIN,
-            SupplementalSymbolsandPictographs::OrangeHeart => ORANGE_HEART,
-            SupplementalSymbolsandPictographs::BilledCap => BILLED_CAP,
-            SupplementalSymbolsandPictographs::Scarf => SCARF,
-            SupplementalSymbolsandPictographs::Gloves => GLOVES,
-            SupplementalSymbolsandPictographs::Coat => COAT,
-            SupplementalSymbolsandPictographs::Socks => SOCKS,
-            SupplementalSymbolsandPictographs::RedGiftEnvelope => RED_GIFT_ENVELOPE,
-            SupplementalSymbolsandPictographs::Firecracker => FIRECRACKER,
-            SupplementalSymbolsandPictographs::JigsawPuzzlePiece => JIGSAW_PUZZLE_PIECE,
-            SupplementalSymbolsandPictographs::TestTube => TEST_TUBE,
-            SupplementalSymbolsandPictographs::PetriDish => PETRI_DISH,
-            SupplementalSymbolsandPictographs::DnaDoubleHelix => DNA_DOUBLE_HELIX,
-            SupplementalSymbolsandPictographs::Compass => COMPASS,
-            SupplementalSymbolsandPictographs::Abacus => ABACUS,
-            SupplementalSymbolsandPictographs::FireExtinguisher => FIRE_EXTINGUISHER,
-            SupplementalSymbolsandPictographs::Toolbox => TOOLBOX,
-            SupplementalSymbolsandPictographs::Brick => BRICK,
-            SupplementalSymbolsandPictographs::Magnet => MAGNET,
-            SupplementalSymbolsandPictographs::Luggage => LUGGAGE,
-            SupplementalSymbolsandPictographs::LotionBottle => LOTION_BOTTLE,
-            SupplementalSymbolsandPictographs::SpoolOfThread => SPOOL_OF_THREAD,
-            SupplementalSymbolsandPictographs::BallOfYarn => BALL_OF_YARN,
-            SupplementalSymbolsandPictographs::SafetyPin => SAFETY_PIN,
-            SupplementalSymbolsandPictographs::TeddyBear => TEDDY_BEAR,
-            SupplementalSymbolsandPictographs::Broom => BROOM,
-            SupplementalSymbolsandPictographs::Basket => BASKET,
-            SupplementalSymbolsandPictographs::RollOfPaper => ROLL_OF_PAPER,
-            SupplementalSymbolsandPictographs::BarOfSoap => BAR_OF_SOAP,
-            SupplementalSymbolsandPictographs::Sponge => SPONGE,
-            SupplementalSymbolsandPictographs::Receipt => RECEIPT,
+            SupplementalSymbolsandPictographs::CircledCrossFormeeWithFourDots => '🤀',
+            SupplementalSymbolsandPictographs::CircledCrossFormeeWithTwoDots => '🤁',
+            SupplementalSymbolsandPictographs::CircledCrossFormee => '🤂',
+            SupplementalSymbolsandPictographs::LeftHalfCircleWithFourDots => '🤃',
+            SupplementalSymbolsandPictographs::LeftHalfCircleWithThreeDots => '🤄',
+            SupplementalSymbolsandPictographs::LeftHalfCircleWithTwoDots => '🤅',
+            SupplementalSymbolsandPictographs::LeftHalfCircleWithDot => '🤆',
+            SupplementalSymbolsandPictographs::LeftHalfCircle => '🤇',
+            SupplementalSymbolsandPictographs::DownwardFacingHook => '🤈',
+            SupplementalSymbolsandPictographs::DownwardFacingNotchedHook => '🤉',
+            SupplementalSymbolsandPictographs::DownwardFacingHookWithDot => '🤊',
+            SupplementalSymbolsandPictographs::DownwardFacingNotchedHookWithDot => '🤋',
+            SupplementalSymbolsandPictographs::WhiteHeart => '🤍',
+            SupplementalSymbolsandPictographs::BrownHeart => '🤎',
+            SupplementalSymbolsandPictographs::PinchingHand => '🤏',
+            SupplementalSymbolsandPictographs::ZipperDashMouthFace => '🤐',
+            SupplementalSymbolsandPictographs::MoneyDashMouthFace => '🤑',
+            SupplementalSymbolsandPictographs::FaceWithThermometer => '🤒',
+            SupplementalSymbolsandPictographs::NerdFace => '🤓',
+            SupplementalSymbolsandPictographs::ThinkingFace => '🤔',
+            SupplementalSymbolsandPictographs::FaceWithHeadDashBandage => '🤕',
+            SupplementalSymbolsandPictographs::RobotFace => '🤖',
+            SupplementalSymbolsandPictographs::HuggingFace => '🤗',
+            SupplementalSymbolsandPictographs::SignOfTheHorns => '🤘',
+            SupplementalSymbolsandPictographs::CallMeHand => '🤙',
+            SupplementalSymbolsandPictographs::RaisedBackOfHand => '🤚',
+            SupplementalSymbolsandPictographs::LeftDashFacingFist => '🤛',
+            SupplementalSymbolsandPictographs::RightDashFacingFist => '🤜',
+            SupplementalSymbolsandPictographs::Handshake => '🤝',
+            SupplementalSymbolsandPictographs::HandWithIndexAndMiddleFingersCrossed => '🤞',
+            SupplementalSymbolsandPictographs::ILoveYouHandSign => '🤟',
+            SupplementalSymbolsandPictographs::FaceWithCowboyHat => '🤠',
+            SupplementalSymbolsandPictographs::ClownFace => '🤡',
+            SupplementalSymbolsandPictographs::NauseatedFace => '🤢',
+            SupplementalSymbolsandPictographs::RollingOnTheFloorLaughing => '🤣',
+            SupplementalSymbolsandPictographs::DroolingFace => '🤤',
+            SupplementalSymbolsandPictographs::LyingFace => '🤥',
+            SupplementalSymbolsandPictographs::FacePalm => '🤦',
+            SupplementalSymbolsandPictographs::SneezingFace => '🤧',
+            SupplementalSymbolsandPictographs::FaceWithOneEyebrowRaised => '🤨',
+            SupplementalSymbolsandPictographs::GrinningFaceWithStarEyes => '🤩',
+            SupplementalSymbolsandPictographs::GrinningFaceWithOneLargeAndOneSmallEye => '🤪',
+            SupplementalSymbolsandPictographs::FaceWithFingerCoveringClosedLips => '🤫',
+            SupplementalSymbolsandPictographs::SeriousFaceWithSymbolsCoveringMouth => '🤬',
+            SupplementalSymbolsandPictographs::SmilingFaceWithSmilingEyesAndHandCoveringMouth => '🤭',
+            SupplementalSymbolsandPictographs::FaceWithOpenMouthVomiting => '🤮',
+            SupplementalSymbolsandPictographs::ShockedFaceWithExplodingHead => '🤯',
+            SupplementalSymbolsandPictographs::PregnantWoman => '🤰',
+            SupplementalSymbolsandPictographs::BreastDashFeeding => '🤱',
+            SupplementalSymbolsandPictographs::PalmsUpTogether => '🤲',
+            SupplementalSymbolsandPictographs::Selfie => '🤳',
+            SupplementalSymbolsandPictographs::Prince => '🤴',
+            SupplementalSymbolsandPictographs::ManInTuxedo => '🤵',
+            SupplementalSymbolsandPictographs::MotherChristmas => '🤶',
+            SupplementalSymbolsandPictographs::Shrug => '🤷',
+            SupplementalSymbolsandPictographs::PersonDoingCartwheel => '🤸',
+            SupplementalSymbolsandPictographs::Juggling => '🤹',
+            SupplementalSymbolsandPictographs::Fencer => '🤺',
+            SupplementalSymbolsandPictographs::ModernPentathlon => '🤻',
+            SupplementalSymbolsandPictographs::Wrestlers => '🤼',
+            SupplementalSymbolsandPictographs::WaterPolo => '🤽',
+            SupplementalSymbolsandPictographs::Handball => '🤾',
+            SupplementalSymbolsandPictographs::DivingMask => '🤿',
+            SupplementalSymbolsandPictographs::WiltedFlower => '🥀',
+            SupplementalSymbolsandPictographs::DrumWithDrumsticks => '🥁',
+            SupplementalSymbolsandPictographs::ClinkingGlasses => '🥂',
+            SupplementalSymbolsandPictographs::TumblerGlass => '🥃',
+            SupplementalSymbolsandPictographs::Spoon => '🥄',
+            SupplementalSymbolsandPictographs::GoalNet => '🥅',
+            SupplementalSymbolsandPictographs::Rifle => '🥆',
+            SupplementalSymbolsandPictographs::FirstPlaceMedal => '🥇',
+            SupplementalSymbolsandPictographs::SecondPlaceMedal => '🥈',
+            SupplementalSymbolsandPictographs::ThirdPlaceMedal => '🥉',
+            SupplementalSymbolsandPictographs::BoxingGlove => '🥊',
+            SupplementalSymbolsandPictographs::MartialArtsUniform => '🥋',
+            SupplementalSymbolsandPictographs::CurlingStone => '🥌',
+            SupplementalSymbolsandPictographs::LacrosseStickAndBall => '🥍',
+            SupplementalSymbolsandPictographs::Softball => '🥎',
+            SupplementalSymbolsandPictographs::FlyingDisc => '🥏',
+            SupplementalSymbolsandPictographs::Croissant => '🥐',
+            SupplementalSymbolsandPictographs::Avocado => '🥑',
+            SupplementalSymbolsandPictographs::Cucumber => '🥒',
+            SupplementalSymbolsandPictographs::Bacon => '🥓',
+            SupplementalSymbolsandPictographs::Potato => '🥔',
+            SupplementalSymbolsandPictographs::Carrot => '🥕',
+            SupplementalSymbolsandPictographs::BaguetteBread => '🥖',
+            SupplementalSymbolsandPictographs::GreenSalad => '🥗',
+            SupplementalSymbolsandPictographs::ShallowPanOfFood => '🥘',
+            SupplementalSymbolsandPictographs::StuffedFlatbread => '🥙',
+            SupplementalSymbolsandPictographs::Egg => '🥚',
+            SupplementalSymbolsandPictographs::GlassOfMilk => '🥛',
+            SupplementalSymbolsandPictographs::Peanuts => '🥜',
+            SupplementalSymbolsandPictographs::Kiwifruit => '🥝',
+            SupplementalSymbolsandPictographs::Pancakes => '🥞',
+            SupplementalSymbolsandPictographs::Dumpling => '🥟',
+            SupplementalSymbolsandPictographs::FortuneCookie => '🥠',
+            SupplementalSymbolsandPictographs::TakeoutBox => '🥡',
+            SupplementalSymbolsandPictographs::Chopsticks => '🥢',
+            SupplementalSymbolsandPictographs::BowlWithSpoon => '🥣',
+            SupplementalSymbolsandPictographs::CupWithStraw => '🥤',
+            SupplementalSymbolsandPictographs::Coconut => '🥥',
+            SupplementalSymbolsandPictographs::Broccoli => '🥦',
+            SupplementalSymbolsandPictographs::Pie => '🥧',
+            SupplementalSymbolsandPictographs::Pretzel => '🥨',
+            SupplementalSymbolsandPictographs::CutOfMeat => '🥩',
+            SupplementalSymbolsandPictographs::Sandwich => '🥪',
+            SupplementalSymbolsandPictographs::CannedFood => '🥫',
+            SupplementalSymbolsandPictographs::LeafyGreen => '🥬',
+            SupplementalSymbolsandPictographs::Mango => '🥭',
+            SupplementalSymbolsandPictographs::MoonCake => '🥮',
+            SupplementalSymbolsandPictographs::Bagel => '🥯',
+            SupplementalSymbolsandPictographs::SmilingFaceWithSmilingEyesAndThreeHearts => '🥰',
+            SupplementalSymbolsandPictographs::YawningFace => '🥱',
+            SupplementalSymbolsandPictographs::FaceWithPartyHornAndPartyHat => '🥳',
+            SupplementalSymbolsandPictographs::FaceWithUnevenEyesAndWavyMouth => '🥴',
+            SupplementalSymbolsandPictographs::OverheatedFace => '🥵',
+            SupplementalSymbolsandPictographs::FreezingFace => '🥶',
+            SupplementalSymbolsandPictographs::FaceWithPleadingEyes => '🥺',
+            SupplementalSymbolsandPictographs::Sari => '🥻',
+            SupplementalSymbolsandPictographs::LabCoat => '🥼',
+            SupplementalSymbolsandPictographs::Goggles => '🥽',
+            SupplementalSymbolsandPictographs::HikingBoot => '🥾',
+            SupplementalSymbolsandPictographs::FlatShoe => '🥿',
+            SupplementalSymbolsandPictographs::Crab => '🦀',
+            SupplementalSymbolsandPictographs::LionFace => '🦁',
+            SupplementalSymbolsandPictographs::Scorpion => '🦂',
+            SupplementalSymbolsandPictographs::Turkey => '🦃',
+            SupplementalSymbolsandPictographs::UnicornFace => '🦄',
+            SupplementalSymbolsandPictographs::Eagle => '🦅',
+            SupplementalSymbolsandPictographs::Duck => '🦆',
+            SupplementalSymbolsandPictographs::Bat => '🦇',
+            SupplementalSymbolsandPictographs::Shark => '🦈',
+            SupplementalSymbolsandPictographs::Owl => '🦉',
+            SupplementalSymbolsandPictographs::FoxFace => '🦊',
+            SupplementalSymbolsandPictographs::Butterfly => '🦋',
+            SupplementalSymbolsandPictographs::Deer => '🦌',
+            SupplementalSymbolsandPictographs::Gorilla => '🦍',
+            SupplementalSymbolsandPictographs::Lizard => '🦎',
+            SupplementalSymbolsandPictographs::Rhinoceros => '🦏',
+            SupplementalSymbolsandPictographs::Shrimp => '🦐',
+            SupplementalSymbolsandPictographs::Squid => '🦑',
+            SupplementalSymbolsandPictographs::GiraffeFace => '🦒',
+            SupplementalSymbolsandPictographs::ZebraFace => '🦓',
+            SupplementalSymbolsandPictographs::Hedgehog => '🦔',
+            SupplementalSymbolsandPictographs::Sauropod => '🦕',
+            SupplementalSymbolsandPictographs::TDashRex => '🦖',
+            SupplementalSymbolsandPictographs::Cricket => '🦗',
+            SupplementalSymbolsandPictographs::Kangaroo => '🦘',
+            SupplementalSymbolsandPictographs::Llama => '🦙',
+            SupplementalSymbolsandPictographs::Peacock => '🦚',
+            SupplementalSymbolsandPictographs::Hippopotamus => '🦛',
+            SupplementalSymbolsandPictographs::Parrot => '🦜',
+            SupplementalSymbolsandPictographs::Raccoon => '🦝',
+            SupplementalSymbolsandPictographs::Lobster => '🦞',
+            SupplementalSymbolsandPictographs::Mosquito => '🦟',
+            SupplementalSymbolsandPictographs::Microbe => '🦠',
+            SupplementalSymbolsandPictographs::Badger => '🦡',
+            SupplementalSymbolsandPictographs::Swan => '🦢',
+            SupplementalSymbolsandPictographs::Sloth => '🦥',
+            SupplementalSymbolsandPictographs::Otter => '🦦',
+            SupplementalSymbolsandPictographs::Orangutan => '🦧',
+            SupplementalSymbolsandPictographs::Skunk => '🦨',
+            SupplementalSymbolsandPictographs::Flamingo => '🦩',
+            SupplementalSymbolsandPictographs::Oyster => '🦪',
+            SupplementalSymbolsandPictographs::GuideDog => '🦮',
+            SupplementalSymbolsandPictographs::ProbingCane => '🦯',
+            SupplementalSymbolsandPictographs::EmojiComponentRedHair => '🦰',
+            SupplementalSymbolsandPictographs::EmojiComponentCurlyHair => '🦱',
+            SupplementalSymbolsandPictographs::EmojiComponentBald => '🦲',
+            SupplementalSymbolsandPictographs::EmojiComponentWhiteHair => '🦳',
+            SupplementalSymbolsandPictographs::Bone => '🦴',
+            SupplementalSymbolsandPictographs::Leg => '🦵',
+            SupplementalSymbolsandPictographs::Foot => '🦶',
+            SupplementalSymbolsandPictographs::Tooth => '🦷',
+            SupplementalSymbolsandPictographs::Superhero => '🦸',
+            SupplementalSymbolsandPictographs::Supervillain => '🦹',
+            SupplementalSymbolsandPictographs::SafetyVest => '🦺',
+            SupplementalSymbolsandPictographs::EarWithHearingAid => '🦻',
+            SupplementalSymbolsandPictographs::MotorizedWheelchair => '🦼',
+            SupplementalSymbolsandPictographs::ManualWheelchair => '🦽',
+            SupplementalSymbolsandPictographs::MechanicalArm => '🦾',
+            SupplementalSymbolsandPictographs::MechanicalLeg => '🦿',
+            SupplementalSymbolsandPictographs::CheeseWedge => '🧀',
+            SupplementalSymbolsandPictographs::Cupcake => '🧁',
+            SupplementalSymbolsandPictographs::SaltShaker => '🧂',
+            SupplementalSymbolsandPictographs::BeverageBox => '🧃',
+            SupplementalSymbolsandPictographs::Garlic => '🧄',
+            SupplementalSymbolsandPictographs::Onion => '🧅',
+            SupplementalSymbolsandPictographs::Falafel => '🧆',
+            SupplementalSymbolsandPictographs::Waffle => '🧇',
+            SupplementalSymbolsandPictographs::Butter => '🧈',
+            SupplementalSymbolsandPictographs::MateDrink => '🧉',
+            SupplementalSymbolsandPictographs::IceCube => '🧊',
+            SupplementalSymbolsandPictographs::StandingPerson => '🧍',
+            SupplementalSymbolsandPictographs::KneelingPerson => '🧎',
+            SupplementalSymbolsandPictographs::DeafPerson => '🧏',
+            SupplementalSymbolsandPictographs::FaceWithMonocle => '🧐',
+            SupplementalSymbolsandPictographs::Adult => '🧑',
+            SupplementalSymbolsandPictographs::Child => '🧒',
+            SupplementalSymbolsandPictographs::OlderAdult => '🧓',
+            SupplementalSymbolsandPictographs::BeardedPerson => '🧔',
+            SupplementalSymbolsandPictographs::PersonWithHeadscarf => '🧕',
+            SupplementalSymbolsandPictographs::PersonInSteamyRoom => '🧖',
+            SupplementalSymbolsandPictographs::PersonClimbing => '🧗',
+            SupplementalSymbolsandPictographs::PersonInLotusPosition => '🧘',
+            SupplementalSymbolsandPictographs::Mage => '🧙',
+            SupplementalSymbolsandPictographs::Fairy => '🧚',
+            SupplementalSymbolsandPictographs::Vampire => '🧛',
+            SupplementalSymbolsandPictographs::Merperson => '🧜',
+            SupplementalSymbolsandPictographs::Elf => '🧝',
+            SupplementalSymbolsandPictographs::Genie => '🧞',
+            SupplementalSymbolsandPictographs::Zombie => '🧟',
+            SupplementalSymbolsandPictographs::Brain => '🧠',
+            SupplementalSymbolsandPictographs::OrangeHeart => '🧡',
+            SupplementalSymbolsandPictographs::BilledCap => '🧢',
+            SupplementalSymbolsandPictographs::Scarf => '🧣',
+            SupplementalSymbolsandPictographs::Gloves => '🧤',
+            SupplementalSymbolsandPictographs::Coat => '🧥',
+            SupplementalSymbolsandPictographs::Socks => '🧦',
+            SupplementalSymbolsandPictographs::RedGiftEnvelope => '🧧',
+            SupplementalSymbolsandPictographs::Firecracker => '🧨',
+            SupplementalSymbolsandPictographs::JigsawPuzzlePiece => '🧩',
+            SupplementalSymbolsandPictographs::TestTube => '🧪',
+            SupplementalSymbolsandPictographs::PetriDish => '🧫',
+            SupplementalSymbolsandPictographs::DnaDoubleHelix => '🧬',
+            SupplementalSymbolsandPictographs::Compass => '🧭',
+            SupplementalSymbolsandPictographs::Abacus => '🧮',
+            SupplementalSymbolsandPictographs::FireExtinguisher => '🧯',
+            SupplementalSymbolsandPictographs::Toolbox => '🧰',
+            SupplementalSymbolsandPictographs::Brick => '🧱',
+            SupplementalSymbolsandPictographs::Magnet => '🧲',
+            SupplementalSymbolsandPictographs::Luggage => '🧳',
+            SupplementalSymbolsandPictographs::LotionBottle => '🧴',
+            SupplementalSymbolsandPictographs::SpoolOfThread => '🧵',
+            SupplementalSymbolsandPictographs::BallOfYarn => '🧶',
+            SupplementalSymbolsandPictographs::SafetyPin => '🧷',
+            SupplementalSymbolsandPictographs::TeddyBear => '🧸',
+            SupplementalSymbolsandPictographs::Broom => '🧹',
+            SupplementalSymbolsandPictographs::Basket => '🧺',
+            SupplementalSymbolsandPictographs::RollOfPaper => '🧻',
+            SupplementalSymbolsandPictographs::BarOfSoap => '🧼',
+            SupplementalSymbolsandPictographs::Sponge => '🧽',
+            SupplementalSymbolsandPictographs::Receipt => '🧾',
         }
     }
 }
@@ -1233,251 +743,250 @@ impl Into<char> for SupplementalSymbolsandPictographs {
 impl std::convert::TryFrom<char> for SupplementalSymbolsandPictographs {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CIRCLED_CROSS_FORMEE_WITH_FOUR_DOTS => Ok(SupplementalSymbolsandPictographs::CircledCrossFormeeWithFourDots),
-            CIRCLED_CROSS_FORMEE_WITH_TWO_DOTS => Ok(SupplementalSymbolsandPictographs::CircledCrossFormeeWithTwoDots),
-            CIRCLED_CROSS_FORMEE => Ok(SupplementalSymbolsandPictographs::CircledCrossFormee),
-            LEFT_HALF_CIRCLE_WITH_FOUR_DOTS => Ok(SupplementalSymbolsandPictographs::LeftHalfCircleWithFourDots),
-            LEFT_HALF_CIRCLE_WITH_THREE_DOTS => Ok(SupplementalSymbolsandPictographs::LeftHalfCircleWithThreeDots),
-            LEFT_HALF_CIRCLE_WITH_TWO_DOTS => Ok(SupplementalSymbolsandPictographs::LeftHalfCircleWithTwoDots),
-            LEFT_HALF_CIRCLE_WITH_DOT => Ok(SupplementalSymbolsandPictographs::LeftHalfCircleWithDot),
-            LEFT_HALF_CIRCLE => Ok(SupplementalSymbolsandPictographs::LeftHalfCircle),
-            DOWNWARD_FACING_HOOK => Ok(SupplementalSymbolsandPictographs::DownwardFacingHook),
-            DOWNWARD_FACING_NOTCHED_HOOK => Ok(SupplementalSymbolsandPictographs::DownwardFacingNotchedHook),
-            DOWNWARD_FACING_HOOK_WITH_DOT => Ok(SupplementalSymbolsandPictographs::DownwardFacingHookWithDot),
-            DOWNWARD_FACING_NOTCHED_HOOK_WITH_DOT => Ok(SupplementalSymbolsandPictographs::DownwardFacingNotchedHookWithDot),
-            WHITE_HEART => Ok(SupplementalSymbolsandPictographs::WhiteHeart),
-            BROWN_HEART => Ok(SupplementalSymbolsandPictographs::BrownHeart),
-            PINCHING_HAND => Ok(SupplementalSymbolsandPictographs::PinchingHand),
-            ZIPPER_DASH_MOUTH_FACE => Ok(SupplementalSymbolsandPictographs::ZipperDashMouthFace),
-            MONEY_DASH_MOUTH_FACE => Ok(SupplementalSymbolsandPictographs::MoneyDashMouthFace),
-            FACE_WITH_THERMOMETER => Ok(SupplementalSymbolsandPictographs::FaceWithThermometer),
-            NERD_FACE => Ok(SupplementalSymbolsandPictographs::NerdFace),
-            THINKING_FACE => Ok(SupplementalSymbolsandPictographs::ThinkingFace),
-            FACE_WITH_HEAD_DASH_BANDAGE => Ok(SupplementalSymbolsandPictographs::FaceWithHeadDashBandage),
-            ROBOT_FACE => Ok(SupplementalSymbolsandPictographs::RobotFace),
-            HUGGING_FACE => Ok(SupplementalSymbolsandPictographs::HuggingFace),
-            SIGN_OF_THE_HORNS => Ok(SupplementalSymbolsandPictographs::SignOfTheHorns),
-            CALL_ME_HAND => Ok(SupplementalSymbolsandPictographs::CallMeHand),
-            RAISED_BACK_OF_HAND => Ok(SupplementalSymbolsandPictographs::RaisedBackOfHand),
-            LEFT_DASH_FACING_FIST => Ok(SupplementalSymbolsandPictographs::LeftDashFacingFist),
-            RIGHT_DASH_FACING_FIST => Ok(SupplementalSymbolsandPictographs::RightDashFacingFist),
-            HANDSHAKE => Ok(SupplementalSymbolsandPictographs::Handshake),
-            HAND_WITH_INDEX_AND_MIDDLE_FINGERS_CROSSED => Ok(SupplementalSymbolsandPictographs::HandWithIndexAndMiddleFingersCrossed),
-            I_LOVE_YOU_HAND_SIGN => Ok(SupplementalSymbolsandPictographs::ILoveYouHandSign),
-            FACE_WITH_COWBOY_HAT => Ok(SupplementalSymbolsandPictographs::FaceWithCowboyHat),
-            CLOWN_FACE => Ok(SupplementalSymbolsandPictographs::ClownFace),
-            NAUSEATED_FACE => Ok(SupplementalSymbolsandPictographs::NauseatedFace),
-            ROLLING_ON_THE_FLOOR_LAUGHING => Ok(SupplementalSymbolsandPictographs::RollingOnTheFloorLaughing),
-            DROOLING_FACE => Ok(SupplementalSymbolsandPictographs::DroolingFace),
-            LYING_FACE => Ok(SupplementalSymbolsandPictographs::LyingFace),
-            FACE_PALM => Ok(SupplementalSymbolsandPictographs::FacePalm),
-            SNEEZING_FACE => Ok(SupplementalSymbolsandPictographs::SneezingFace),
-            FACE_WITH_ONE_EYEBROW_RAISED => Ok(SupplementalSymbolsandPictographs::FaceWithOneEyebrowRaised),
-            GRINNING_FACE_WITH_STAR_EYES => Ok(SupplementalSymbolsandPictographs::GrinningFaceWithStarEyes),
-            GRINNING_FACE_WITH_ONE_LARGE_AND_ONE_SMALL_EYE => Ok(SupplementalSymbolsandPictographs::GrinningFaceWithOneLargeAndOneSmallEye),
-            FACE_WITH_FINGER_COVERING_CLOSED_LIPS => Ok(SupplementalSymbolsandPictographs::FaceWithFingerCoveringClosedLips),
-            SERIOUS_FACE_WITH_SYMBOLS_COVERING_MOUTH => Ok(SupplementalSymbolsandPictographs::SeriousFaceWithSymbolsCoveringMouth),
-            SMILING_FACE_WITH_SMILING_EYES_AND_HAND_COVERING_MOUTH => Ok(SupplementalSymbolsandPictographs::SmilingFaceWithSmilingEyesAndHandCoveringMouth),
-            FACE_WITH_OPEN_MOUTH_VOMITING => Ok(SupplementalSymbolsandPictographs::FaceWithOpenMouthVomiting),
-            SHOCKED_FACE_WITH_EXPLODING_HEAD => Ok(SupplementalSymbolsandPictographs::ShockedFaceWithExplodingHead),
-            PREGNANT_WOMAN => Ok(SupplementalSymbolsandPictographs::PregnantWoman),
-            BREAST_DASH_FEEDING => Ok(SupplementalSymbolsandPictographs::BreastDashFeeding),
-            PALMS_UP_TOGETHER => Ok(SupplementalSymbolsandPictographs::PalmsUpTogether),
-            SELFIE => Ok(SupplementalSymbolsandPictographs::Selfie),
-            PRINCE => Ok(SupplementalSymbolsandPictographs::Prince),
-            MAN_IN_TUXEDO => Ok(SupplementalSymbolsandPictographs::ManInTuxedo),
-            MOTHER_CHRISTMAS => Ok(SupplementalSymbolsandPictographs::MotherChristmas),
-            SHRUG => Ok(SupplementalSymbolsandPictographs::Shrug),
-            PERSON_DOING_CARTWHEEL => Ok(SupplementalSymbolsandPictographs::PersonDoingCartwheel),
-            JUGGLING => Ok(SupplementalSymbolsandPictographs::Juggling),
-            FENCER => Ok(SupplementalSymbolsandPictographs::Fencer),
-            MODERN_PENTATHLON => Ok(SupplementalSymbolsandPictographs::ModernPentathlon),
-            WRESTLERS => Ok(SupplementalSymbolsandPictographs::Wrestlers),
-            WATER_POLO => Ok(SupplementalSymbolsandPictographs::WaterPolo),
-            HANDBALL => Ok(SupplementalSymbolsandPictographs::Handball),
-            DIVING_MASK => Ok(SupplementalSymbolsandPictographs::DivingMask),
-            WILTED_FLOWER => Ok(SupplementalSymbolsandPictographs::WiltedFlower),
-            DRUM_WITH_DRUMSTICKS => Ok(SupplementalSymbolsandPictographs::DrumWithDrumsticks),
-            CLINKING_GLASSES => Ok(SupplementalSymbolsandPictographs::ClinkingGlasses),
-            TUMBLER_GLASS => Ok(SupplementalSymbolsandPictographs::TumblerGlass),
-            SPOON => Ok(SupplementalSymbolsandPictographs::Spoon),
-            GOAL_NET => Ok(SupplementalSymbolsandPictographs::GoalNet),
-            RIFLE => Ok(SupplementalSymbolsandPictographs::Rifle),
-            FIRST_PLACE_MEDAL => Ok(SupplementalSymbolsandPictographs::FirstPlaceMedal),
-            SECOND_PLACE_MEDAL => Ok(SupplementalSymbolsandPictographs::SecondPlaceMedal),
-            THIRD_PLACE_MEDAL => Ok(SupplementalSymbolsandPictographs::ThirdPlaceMedal),
-            BOXING_GLOVE => Ok(SupplementalSymbolsandPictographs::BoxingGlove),
-            MARTIAL_ARTS_UNIFORM => Ok(SupplementalSymbolsandPictographs::MartialArtsUniform),
-            CURLING_STONE => Ok(SupplementalSymbolsandPictographs::CurlingStone),
-            LACROSSE_STICK_AND_BALL => Ok(SupplementalSymbolsandPictographs::LacrosseStickAndBall),
-            SOFTBALL => Ok(SupplementalSymbolsandPictographs::Softball),
-            FLYING_DISC => Ok(SupplementalSymbolsandPictographs::FlyingDisc),
-            CROISSANT => Ok(SupplementalSymbolsandPictographs::Croissant),
-            AVOCADO => Ok(SupplementalSymbolsandPictographs::Avocado),
-            CUCUMBER => Ok(SupplementalSymbolsandPictographs::Cucumber),
-            BACON => Ok(SupplementalSymbolsandPictographs::Bacon),
-            POTATO => Ok(SupplementalSymbolsandPictographs::Potato),
-            CARROT => Ok(SupplementalSymbolsandPictographs::Carrot),
-            BAGUETTE_BREAD => Ok(SupplementalSymbolsandPictographs::BaguetteBread),
-            GREEN_SALAD => Ok(SupplementalSymbolsandPictographs::GreenSalad),
-            SHALLOW_PAN_OF_FOOD => Ok(SupplementalSymbolsandPictographs::ShallowPanOfFood),
-            STUFFED_FLATBREAD => Ok(SupplementalSymbolsandPictographs::StuffedFlatbread),
-            EGG => Ok(SupplementalSymbolsandPictographs::Egg),
-            GLASS_OF_MILK => Ok(SupplementalSymbolsandPictographs::GlassOfMilk),
-            PEANUTS => Ok(SupplementalSymbolsandPictographs::Peanuts),
-            KIWIFRUIT => Ok(SupplementalSymbolsandPictographs::Kiwifruit),
-            PANCAKES => Ok(SupplementalSymbolsandPictographs::Pancakes),
-            DUMPLING => Ok(SupplementalSymbolsandPictographs::Dumpling),
-            FORTUNE_COOKIE => Ok(SupplementalSymbolsandPictographs::FortuneCookie),
-            TAKEOUT_BOX => Ok(SupplementalSymbolsandPictographs::TakeoutBox),
-            CHOPSTICKS => Ok(SupplementalSymbolsandPictographs::Chopsticks),
-            BOWL_WITH_SPOON => Ok(SupplementalSymbolsandPictographs::BowlWithSpoon),
-            CUP_WITH_STRAW => Ok(SupplementalSymbolsandPictographs::CupWithStraw),
-            COCONUT => Ok(SupplementalSymbolsandPictographs::Coconut),
-            BROCCOLI => Ok(SupplementalSymbolsandPictographs::Broccoli),
-            PIE => Ok(SupplementalSymbolsandPictographs::Pie),
-            PRETZEL => Ok(SupplementalSymbolsandPictographs::Pretzel),
-            CUT_OF_MEAT => Ok(SupplementalSymbolsandPictographs::CutOfMeat),
-            SANDWICH => Ok(SupplementalSymbolsandPictographs::Sandwich),
-            CANNED_FOOD => Ok(SupplementalSymbolsandPictographs::CannedFood),
-            LEAFY_GREEN => Ok(SupplementalSymbolsandPictographs::LeafyGreen),
-            MANGO => Ok(SupplementalSymbolsandPictographs::Mango),
-            MOON_CAKE => Ok(SupplementalSymbolsandPictographs::MoonCake),
-            BAGEL => Ok(SupplementalSymbolsandPictographs::Bagel),
-            SMILING_FACE_WITH_SMILING_EYES_AND_THREE_HEARTS => Ok(SupplementalSymbolsandPictographs::SmilingFaceWithSmilingEyesAndThreeHearts),
-            YAWNING_FACE => Ok(SupplementalSymbolsandPictographs::YawningFace),
-            FACE_WITH_PARTY_HORN_AND_PARTY_HAT => Ok(SupplementalSymbolsandPictographs::FaceWithPartyHornAndPartyHat),
-            FACE_WITH_UNEVEN_EYES_AND_WAVY_MOUTH => Ok(SupplementalSymbolsandPictographs::FaceWithUnevenEyesAndWavyMouth),
-            OVERHEATED_FACE => Ok(SupplementalSymbolsandPictographs::OverheatedFace),
-            FREEZING_FACE => Ok(SupplementalSymbolsandPictographs::FreezingFace),
-            FACE_WITH_PLEADING_EYES => Ok(SupplementalSymbolsandPictographs::FaceWithPleadingEyes),
-            SARI => Ok(SupplementalSymbolsandPictographs::Sari),
-            LAB_COAT => Ok(SupplementalSymbolsandPictographs::LabCoat),
-            GOGGLES => Ok(SupplementalSymbolsandPictographs::Goggles),
-            HIKING_BOOT => Ok(SupplementalSymbolsandPictographs::HikingBoot),
-            FLAT_SHOE => Ok(SupplementalSymbolsandPictographs::FlatShoe),
-            CRAB => Ok(SupplementalSymbolsandPictographs::Crab),
-            LION_FACE => Ok(SupplementalSymbolsandPictographs::LionFace),
-            SCORPION => Ok(SupplementalSymbolsandPictographs::Scorpion),
-            TURKEY => Ok(SupplementalSymbolsandPictographs::Turkey),
-            UNICORN_FACE => Ok(SupplementalSymbolsandPictographs::UnicornFace),
-            EAGLE => Ok(SupplementalSymbolsandPictographs::Eagle),
-            DUCK => Ok(SupplementalSymbolsandPictographs::Duck),
-            BAT => Ok(SupplementalSymbolsandPictographs::Bat),
-            SHARK => Ok(SupplementalSymbolsandPictographs::Shark),
-            OWL => Ok(SupplementalSymbolsandPictographs::Owl),
-            FOX_FACE => Ok(SupplementalSymbolsandPictographs::FoxFace),
-            BUTTERFLY => Ok(SupplementalSymbolsandPictographs::Butterfly),
-            DEER => Ok(SupplementalSymbolsandPictographs::Deer),
-            GORILLA => Ok(SupplementalSymbolsandPictographs::Gorilla),
-            LIZARD => Ok(SupplementalSymbolsandPictographs::Lizard),
-            RHINOCEROS => Ok(SupplementalSymbolsandPictographs::Rhinoceros),
-            SHRIMP => Ok(SupplementalSymbolsandPictographs::Shrimp),
-            SQUID => Ok(SupplementalSymbolsandPictographs::Squid),
-            GIRAFFE_FACE => Ok(SupplementalSymbolsandPictographs::GiraffeFace),
-            ZEBRA_FACE => Ok(SupplementalSymbolsandPictographs::ZebraFace),
-            HEDGEHOG => Ok(SupplementalSymbolsandPictographs::Hedgehog),
-            SAUROPOD => Ok(SupplementalSymbolsandPictographs::Sauropod),
-            T_DASH_REX => Ok(SupplementalSymbolsandPictographs::TDashRex),
-            CRICKET => Ok(SupplementalSymbolsandPictographs::Cricket),
-            KANGAROO => Ok(SupplementalSymbolsandPictographs::Kangaroo),
-            LLAMA => Ok(SupplementalSymbolsandPictographs::Llama),
-            PEACOCK => Ok(SupplementalSymbolsandPictographs::Peacock),
-            HIPPOPOTAMUS => Ok(SupplementalSymbolsandPictographs::Hippopotamus),
-            PARROT => Ok(SupplementalSymbolsandPictographs::Parrot),
-            RACCOON => Ok(SupplementalSymbolsandPictographs::Raccoon),
-            LOBSTER => Ok(SupplementalSymbolsandPictographs::Lobster),
-            MOSQUITO => Ok(SupplementalSymbolsandPictographs::Mosquito),
-            MICROBE => Ok(SupplementalSymbolsandPictographs::Microbe),
-            BADGER => Ok(SupplementalSymbolsandPictographs::Badger),
-            SWAN => Ok(SupplementalSymbolsandPictographs::Swan),
-            SLOTH => Ok(SupplementalSymbolsandPictographs::Sloth),
-            OTTER => Ok(SupplementalSymbolsandPictographs::Otter),
-            ORANGUTAN => Ok(SupplementalSymbolsandPictographs::Orangutan),
-            SKUNK => Ok(SupplementalSymbolsandPictographs::Skunk),
-            FLAMINGO => Ok(SupplementalSymbolsandPictographs::Flamingo),
-            OYSTER => Ok(SupplementalSymbolsandPictographs::Oyster),
-            GUIDE_DOG => Ok(SupplementalSymbolsandPictographs::GuideDog),
-            PROBING_CANE => Ok(SupplementalSymbolsandPictographs::ProbingCane),
-            EMOJI_COMPONENT_RED_HAIR => Ok(SupplementalSymbolsandPictographs::EmojiComponentRedHair),
-            EMOJI_COMPONENT_CURLY_HAIR => Ok(SupplementalSymbolsandPictographs::EmojiComponentCurlyHair),
-            EMOJI_COMPONENT_BALD => Ok(SupplementalSymbolsandPictographs::EmojiComponentBald),
-            EMOJI_COMPONENT_WHITE_HAIR => Ok(SupplementalSymbolsandPictographs::EmojiComponentWhiteHair),
-            BONE => Ok(SupplementalSymbolsandPictographs::Bone),
-            LEG => Ok(SupplementalSymbolsandPictographs::Leg),
-            FOOT => Ok(SupplementalSymbolsandPictographs::Foot),
-            TOOTH => Ok(SupplementalSymbolsandPictographs::Tooth),
-            SUPERHERO => Ok(SupplementalSymbolsandPictographs::Superhero),
-            SUPERVILLAIN => Ok(SupplementalSymbolsandPictographs::Supervillain),
-            SAFETY_VEST => Ok(SupplementalSymbolsandPictographs::SafetyVest),
-            EAR_WITH_HEARING_AID => Ok(SupplementalSymbolsandPictographs::EarWithHearingAid),
-            MOTORIZED_WHEELCHAIR => Ok(SupplementalSymbolsandPictographs::MotorizedWheelchair),
-            MANUAL_WHEELCHAIR => Ok(SupplementalSymbolsandPictographs::ManualWheelchair),
-            MECHANICAL_ARM => Ok(SupplementalSymbolsandPictographs::MechanicalArm),
-            MECHANICAL_LEG => Ok(SupplementalSymbolsandPictographs::MechanicalLeg),
-            CHEESE_WEDGE => Ok(SupplementalSymbolsandPictographs::CheeseWedge),
-            CUPCAKE => Ok(SupplementalSymbolsandPictographs::Cupcake),
-            SALT_SHAKER => Ok(SupplementalSymbolsandPictographs::SaltShaker),
-            BEVERAGE_BOX => Ok(SupplementalSymbolsandPictographs::BeverageBox),
-            GARLIC => Ok(SupplementalSymbolsandPictographs::Garlic),
-            ONION => Ok(SupplementalSymbolsandPictographs::Onion),
-            FALAFEL => Ok(SupplementalSymbolsandPictographs::Falafel),
-            WAFFLE => Ok(SupplementalSymbolsandPictographs::Waffle),
-            BUTTER => Ok(SupplementalSymbolsandPictographs::Butter),
-            MATE_DRINK => Ok(SupplementalSymbolsandPictographs::MateDrink),
-            ICE_CUBE => Ok(SupplementalSymbolsandPictographs::IceCube),
-            STANDING_PERSON => Ok(SupplementalSymbolsandPictographs::StandingPerson),
-            KNEELING_PERSON => Ok(SupplementalSymbolsandPictographs::KneelingPerson),
-            DEAF_PERSON => Ok(SupplementalSymbolsandPictographs::DeafPerson),
-            FACE_WITH_MONOCLE => Ok(SupplementalSymbolsandPictographs::FaceWithMonocle),
-            ADULT => Ok(SupplementalSymbolsandPictographs::Adult),
-            CHILD => Ok(SupplementalSymbolsandPictographs::Child),
-            OLDER_ADULT => Ok(SupplementalSymbolsandPictographs::OlderAdult),
-            BEARDED_PERSON => Ok(SupplementalSymbolsandPictographs::BeardedPerson),
-            PERSON_WITH_HEADSCARF => Ok(SupplementalSymbolsandPictographs::PersonWithHeadscarf),
-            PERSON_IN_STEAMY_ROOM => Ok(SupplementalSymbolsandPictographs::PersonInSteamyRoom),
-            PERSON_CLIMBING => Ok(SupplementalSymbolsandPictographs::PersonClimbing),
-            PERSON_IN_LOTUS_POSITION => Ok(SupplementalSymbolsandPictographs::PersonInLotusPosition),
-            MAGE => Ok(SupplementalSymbolsandPictographs::Mage),
-            FAIRY => Ok(SupplementalSymbolsandPictographs::Fairy),
-            VAMPIRE => Ok(SupplementalSymbolsandPictographs::Vampire),
-            MERPERSON => Ok(SupplementalSymbolsandPictographs::Merperson),
-            ELF => Ok(SupplementalSymbolsandPictographs::Elf),
-            GENIE => Ok(SupplementalSymbolsandPictographs::Genie),
-            ZOMBIE => Ok(SupplementalSymbolsandPictographs::Zombie),
-            BRAIN => Ok(SupplementalSymbolsandPictographs::Brain),
-            ORANGE_HEART => Ok(SupplementalSymbolsandPictographs::OrangeHeart),
-            BILLED_CAP => Ok(SupplementalSymbolsandPictographs::BilledCap),
-            SCARF => Ok(SupplementalSymbolsandPictographs::Scarf),
-            GLOVES => Ok(SupplementalSymbolsandPictographs::Gloves),
-            COAT => Ok(SupplementalSymbolsandPictographs::Coat),
-            SOCKS => Ok(SupplementalSymbolsandPictographs::Socks),
-            RED_GIFT_ENVELOPE => Ok(SupplementalSymbolsandPictographs::RedGiftEnvelope),
-            FIRECRACKER => Ok(SupplementalSymbolsandPictographs::Firecracker),
-            JIGSAW_PUZZLE_PIECE => Ok(SupplementalSymbolsandPictographs::JigsawPuzzlePiece),
-            TEST_TUBE => Ok(SupplementalSymbolsandPictographs::TestTube),
-            PETRI_DISH => Ok(SupplementalSymbolsandPictographs::PetriDish),
-            DNA_DOUBLE_HELIX => Ok(SupplementalSymbolsandPictographs::DnaDoubleHelix),
-            COMPASS => Ok(SupplementalSymbolsandPictographs::Compass),
-            ABACUS => Ok(SupplementalSymbolsandPictographs::Abacus),
-            FIRE_EXTINGUISHER => Ok(SupplementalSymbolsandPictographs::FireExtinguisher),
-            TOOLBOX => Ok(SupplementalSymbolsandPictographs::Toolbox),
-            BRICK => Ok(SupplementalSymbolsandPictographs::Brick),
-            MAGNET => Ok(SupplementalSymbolsandPictographs::Magnet),
-            LUGGAGE => Ok(SupplementalSymbolsandPictographs::Luggage),
-            LOTION_BOTTLE => Ok(SupplementalSymbolsandPictographs::LotionBottle),
-            SPOOL_OF_THREAD => Ok(SupplementalSymbolsandPictographs::SpoolOfThread),
-            BALL_OF_YARN => Ok(SupplementalSymbolsandPictographs::BallOfYarn),
-            SAFETY_PIN => Ok(SupplementalSymbolsandPictographs::SafetyPin),
-            TEDDY_BEAR => Ok(SupplementalSymbolsandPictographs::TeddyBear),
-            BROOM => Ok(SupplementalSymbolsandPictographs::Broom),
-            BASKET => Ok(SupplementalSymbolsandPictographs::Basket),
-            ROLL_OF_PAPER => Ok(SupplementalSymbolsandPictographs::RollOfPaper),
-            BAR_OF_SOAP => Ok(SupplementalSymbolsandPictographs::BarOfSoap),
-            SPONGE => Ok(SupplementalSymbolsandPictographs::Sponge),
-            RECEIPT => Ok(SupplementalSymbolsandPictographs::Receipt),
+            '🤀' => Ok(SupplementalSymbolsandPictographs::CircledCrossFormeeWithFourDots),
+            '🤁' => Ok(SupplementalSymbolsandPictographs::CircledCrossFormeeWithTwoDots),
+            '🤂' => Ok(SupplementalSymbolsandPictographs::CircledCrossFormee),
+            '🤃' => Ok(SupplementalSymbolsandPictographs::LeftHalfCircleWithFourDots),
+            '🤄' => Ok(SupplementalSymbolsandPictographs::LeftHalfCircleWithThreeDots),
+            '🤅' => Ok(SupplementalSymbolsandPictographs::LeftHalfCircleWithTwoDots),
+            '🤆' => Ok(SupplementalSymbolsandPictographs::LeftHalfCircleWithDot),
+            '🤇' => Ok(SupplementalSymbolsandPictographs::LeftHalfCircle),
+            '🤈' => Ok(SupplementalSymbolsandPictographs::DownwardFacingHook),
+            '🤉' => Ok(SupplementalSymbolsandPictographs::DownwardFacingNotchedHook),
+            '🤊' => Ok(SupplementalSymbolsandPictographs::DownwardFacingHookWithDot),
+            '🤋' => Ok(SupplementalSymbolsandPictographs::DownwardFacingNotchedHookWithDot),
+            '🤍' => Ok(SupplementalSymbolsandPictographs::WhiteHeart),
+            '🤎' => Ok(SupplementalSymbolsandPictographs::BrownHeart),
+            '🤏' => Ok(SupplementalSymbolsandPictographs::PinchingHand),
+            '🤐' => Ok(SupplementalSymbolsandPictographs::ZipperDashMouthFace),
+            '🤑' => Ok(SupplementalSymbolsandPictographs::MoneyDashMouthFace),
+            '🤒' => Ok(SupplementalSymbolsandPictographs::FaceWithThermometer),
+            '🤓' => Ok(SupplementalSymbolsandPictographs::NerdFace),
+            '🤔' => Ok(SupplementalSymbolsandPictographs::ThinkingFace),
+            '🤕' => Ok(SupplementalSymbolsandPictographs::FaceWithHeadDashBandage),
+            '🤖' => Ok(SupplementalSymbolsandPictographs::RobotFace),
+            '🤗' => Ok(SupplementalSymbolsandPictographs::HuggingFace),
+            '🤘' => Ok(SupplementalSymbolsandPictographs::SignOfTheHorns),
+            '🤙' => Ok(SupplementalSymbolsandPictographs::CallMeHand),
+            '🤚' => Ok(SupplementalSymbolsandPictographs::RaisedBackOfHand),
+            '🤛' => Ok(SupplementalSymbolsandPictographs::LeftDashFacingFist),
+            '🤜' => Ok(SupplementalSymbolsandPictographs::RightDashFacingFist),
+            '🤝' => Ok(SupplementalSymbolsandPictographs::Handshake),
+            '🤞' => Ok(SupplementalSymbolsandPictographs::HandWithIndexAndMiddleFingersCrossed),
+            '🤟' => Ok(SupplementalSymbolsandPictographs::ILoveYouHandSign),
+            '🤠' => Ok(SupplementalSymbolsandPictographs::FaceWithCowboyHat),
+            '🤡' => Ok(SupplementalSymbolsandPictographs::ClownFace),
+            '🤢' => Ok(SupplementalSymbolsandPictographs::NauseatedFace),
+            '🤣' => Ok(SupplementalSymbolsandPictographs::RollingOnTheFloorLaughing),
+            '🤤' => Ok(SupplementalSymbolsandPictographs::DroolingFace),
+            '🤥' => Ok(SupplementalSymbolsandPictographs::LyingFace),
+            '🤦' => Ok(SupplementalSymbolsandPictographs::FacePalm),
+            '🤧' => Ok(SupplementalSymbolsandPictographs::SneezingFace),
+            '🤨' => Ok(SupplementalSymbolsandPictographs::FaceWithOneEyebrowRaised),
+            '🤩' => Ok(SupplementalSymbolsandPictographs::GrinningFaceWithStarEyes),
+            '🤪' => Ok(SupplementalSymbolsandPictographs::GrinningFaceWithOneLargeAndOneSmallEye),
+            '🤫' => Ok(SupplementalSymbolsandPictographs::FaceWithFingerCoveringClosedLips),
+            '🤬' => Ok(SupplementalSymbolsandPictographs::SeriousFaceWithSymbolsCoveringMouth),
+            '🤭' => Ok(SupplementalSymbolsandPictographs::SmilingFaceWithSmilingEyesAndHandCoveringMouth),
+            '🤮' => Ok(SupplementalSymbolsandPictographs::FaceWithOpenMouthVomiting),
+            '🤯' => Ok(SupplementalSymbolsandPictographs::ShockedFaceWithExplodingHead),
+            '🤰' => Ok(SupplementalSymbolsandPictographs::PregnantWoman),
+            '🤱' => Ok(SupplementalSymbolsandPictographs::BreastDashFeeding),
+            '🤲' => Ok(SupplementalSymbolsandPictographs::PalmsUpTogether),
+            '🤳' => Ok(SupplementalSymbolsandPictographs::Selfie),
+            '🤴' => Ok(SupplementalSymbolsandPictographs::Prince),
+            '🤵' => Ok(SupplementalSymbolsandPictographs::ManInTuxedo),
+            '🤶' => Ok(SupplementalSymbolsandPictographs::MotherChristmas),
+            '🤷' => Ok(SupplementalSymbolsandPictographs::Shrug),
+            '🤸' => Ok(SupplementalSymbolsandPictographs::PersonDoingCartwheel),
+            '🤹' => Ok(SupplementalSymbolsandPictographs::Juggling),
+            '🤺' => Ok(SupplementalSymbolsandPictographs::Fencer),
+            '🤻' => Ok(SupplementalSymbolsandPictographs::ModernPentathlon),
+            '🤼' => Ok(SupplementalSymbolsandPictographs::Wrestlers),
+            '🤽' => Ok(SupplementalSymbolsandPictographs::WaterPolo),
+            '🤾' => Ok(SupplementalSymbolsandPictographs::Handball),
+            '🤿' => Ok(SupplementalSymbolsandPictographs::DivingMask),
+            '🥀' => Ok(SupplementalSymbolsandPictographs::WiltedFlower),
+            '🥁' => Ok(SupplementalSymbolsandPictographs::DrumWithDrumsticks),
+            '🥂' => Ok(SupplementalSymbolsandPictographs::ClinkingGlasses),
+            '🥃' => Ok(SupplementalSymbolsandPictographs::TumblerGlass),
+            '🥄' => Ok(SupplementalSymbolsandPictographs::Spoon),
+            '🥅' => Ok(SupplementalSymbolsandPictographs::GoalNet),
+            '🥆' => Ok(SupplementalSymbolsandPictographs::Rifle),
+            '🥇' => Ok(SupplementalSymbolsandPictographs::FirstPlaceMedal),
+            '🥈' => Ok(SupplementalSymbolsandPictographs::SecondPlaceMedal),
+            '🥉' => Ok(SupplementalSymbolsandPictographs::ThirdPlaceMedal),
+            '🥊' => Ok(SupplementalSymbolsandPictographs::BoxingGlove),
+            '🥋' => Ok(SupplementalSymbolsandPictographs::MartialArtsUniform),
+            '🥌' => Ok(SupplementalSymbolsandPictographs::CurlingStone),
+            '🥍' => Ok(SupplementalSymbolsandPictographs::LacrosseStickAndBall),
+            '🥎' => Ok(SupplementalSymbolsandPictographs::Softball),
+            '🥏' => Ok(SupplementalSymbolsandPictographs::FlyingDisc),
+            '🥐' => Ok(SupplementalSymbolsandPictographs::Croissant),
+            '🥑' => Ok(SupplementalSymbolsandPictographs::Avocado),
+            '🥒' => Ok(SupplementalSymbolsandPictographs::Cucumber),
+            '🥓' => Ok(SupplementalSymbolsandPictographs::Bacon),
+            '🥔' => Ok(SupplementalSymbolsandPictographs::Potato),
+            '🥕' => Ok(SupplementalSymbolsandPictographs::Carrot),
+            '🥖' => Ok(SupplementalSymbolsandPictographs::BaguetteBread),
+            '🥗' => Ok(SupplementalSymbolsandPictographs::GreenSalad),
+            '🥘' => Ok(SupplementalSymbolsandPictographs::ShallowPanOfFood),
+            '🥙' => Ok(SupplementalSymbolsandPictographs::StuffedFlatbread),
+            '🥚' => Ok(SupplementalSymbolsandPictographs::Egg),
+            '🥛' => Ok(SupplementalSymbolsandPictographs::GlassOfMilk),
+            '🥜' => Ok(SupplementalSymbolsandPictographs::Peanuts),
+            '🥝' => Ok(SupplementalSymbolsandPictographs::Kiwifruit),
+            '🥞' => Ok(SupplementalSymbolsandPictographs::Pancakes),
+            '🥟' => Ok(SupplementalSymbolsandPictographs::Dumpling),
+            '🥠' => Ok(SupplementalSymbolsandPictographs::FortuneCookie),
+            '🥡' => Ok(SupplementalSymbolsandPictographs::TakeoutBox),
+            '🥢' => Ok(SupplementalSymbolsandPictographs::Chopsticks),
+            '🥣' => Ok(SupplementalSymbolsandPictographs::BowlWithSpoon),
+            '🥤' => Ok(SupplementalSymbolsandPictographs::CupWithStraw),
+            '🥥' => Ok(SupplementalSymbolsandPictographs::Coconut),
+            '🥦' => Ok(SupplementalSymbolsandPictographs::Broccoli),
+            '🥧' => Ok(SupplementalSymbolsandPictographs::Pie),
+            '🥨' => Ok(SupplementalSymbolsandPictographs::Pretzel),
+            '🥩' => Ok(SupplementalSymbolsandPictographs::CutOfMeat),
+            '🥪' => Ok(SupplementalSymbolsandPictographs::Sandwich),
+            '🥫' => Ok(SupplementalSymbolsandPictographs::CannedFood),
+            '🥬' => Ok(SupplementalSymbolsandPictographs::LeafyGreen),
+            '🥭' => Ok(SupplementalSymbolsandPictographs::Mango),
+            '🥮' => Ok(SupplementalSymbolsandPictographs::MoonCake),
+            '🥯' => Ok(SupplementalSymbolsandPictographs::Bagel),
+            '🥰' => Ok(SupplementalSymbolsandPictographs::SmilingFaceWithSmilingEyesAndThreeHearts),
+            '🥱' => Ok(SupplementalSymbolsandPictographs::YawningFace),
+            '🥳' => Ok(SupplementalSymbolsandPictographs::FaceWithPartyHornAndPartyHat),
+            '🥴' => Ok(SupplementalSymbolsandPictographs::FaceWithUnevenEyesAndWavyMouth),
+            '🥵' => Ok(SupplementalSymbolsandPictographs::OverheatedFace),
+            '🥶' => Ok(SupplementalSymbolsandPictographs::FreezingFace),
+            '🥺' => Ok(SupplementalSymbolsandPictographs::FaceWithPleadingEyes),
+            '🥻' => Ok(SupplementalSymbolsandPictographs::Sari),
+            '🥼' => Ok(SupplementalSymbolsandPictographs::LabCoat),
+            '🥽' => Ok(SupplementalSymbolsandPictographs::Goggles),
+            '🥾' => Ok(SupplementalSymbolsandPictographs::HikingBoot),
+            '🥿' => Ok(SupplementalSymbolsandPictographs::FlatShoe),
+            '🦀' => Ok(SupplementalSymbolsandPictographs::Crab),
+            '🦁' => Ok(SupplementalSymbolsandPictographs::LionFace),
+            '🦂' => Ok(SupplementalSymbolsandPictographs::Scorpion),
+            '🦃' => Ok(SupplementalSymbolsandPictographs::Turkey),
+            '🦄' => Ok(SupplementalSymbolsandPictographs::UnicornFace),
+            '🦅' => Ok(SupplementalSymbolsandPictographs::Eagle),
+            '🦆' => Ok(SupplementalSymbolsandPictographs::Duck),
+            '🦇' => Ok(SupplementalSymbolsandPictographs::Bat),
+            '🦈' => Ok(SupplementalSymbolsandPictographs::Shark),
+            '🦉' => Ok(SupplementalSymbolsandPictographs::Owl),
+            '🦊' => Ok(SupplementalSymbolsandPictographs::FoxFace),
+            '🦋' => Ok(SupplementalSymbolsandPictographs::Butterfly),
+            '🦌' => Ok(SupplementalSymbolsandPictographs::Deer),
+            '🦍' => Ok(SupplementalSymbolsandPictographs::Gorilla),
+            '🦎' => Ok(SupplementalSymbolsandPictographs::Lizard),
+            '🦏' => Ok(SupplementalSymbolsandPictographs::Rhinoceros),
+            '🦐' => Ok(SupplementalSymbolsandPictographs::Shrimp),
+            '🦑' => Ok(SupplementalSymbolsandPictographs::Squid),
+            '🦒' => Ok(SupplementalSymbolsandPictographs::GiraffeFace),
+            '🦓' => Ok(SupplementalSymbolsandPictographs::ZebraFace),
+            '🦔' => Ok(SupplementalSymbolsandPictographs::Hedgehog),
+            '🦕' => Ok(SupplementalSymbolsandPictographs::Sauropod),
+            '🦖' => Ok(SupplementalSymbolsandPictographs::TDashRex),
+            '🦗' => Ok(SupplementalSymbolsandPictographs::Cricket),
+            '🦘' => Ok(SupplementalSymbolsandPictographs::Kangaroo),
+            '🦙' => Ok(SupplementalSymbolsandPictographs::Llama),
+            '🦚' => Ok(SupplementalSymbolsandPictographs::Peacock),
+            '🦛' => Ok(SupplementalSymbolsandPictographs::Hippopotamus),
+            '🦜' => Ok(SupplementalSymbolsandPictographs::Parrot),
+            '🦝' => Ok(SupplementalSymbolsandPictographs::Raccoon),
+            '🦞' => Ok(SupplementalSymbolsandPictographs::Lobster),
+            '🦟' => Ok(SupplementalSymbolsandPictographs::Mosquito),
+            '🦠' => Ok(SupplementalSymbolsandPictographs::Microbe),
+            '🦡' => Ok(SupplementalSymbolsandPictographs::Badger),
+            '🦢' => Ok(SupplementalSymbolsandPictographs::Swan),
+            '🦥' => Ok(SupplementalSymbolsandPictographs::Sloth),
+            '🦦' => Ok(SupplementalSymbolsandPictographs::Otter),
+            '🦧' => Ok(SupplementalSymbolsandPictographs::Orangutan),
+            '🦨' => Ok(SupplementalSymbolsandPictographs::Skunk),
+            '🦩' => Ok(SupplementalSymbolsandPictographs::Flamingo),
+            '🦪' => Ok(SupplementalSymbolsandPictographs::Oyster),
+            '🦮' => Ok(SupplementalSymbolsandPictographs::GuideDog),
+            '🦯' => Ok(SupplementalSymbolsandPictographs::ProbingCane),
+            '🦰' => Ok(SupplementalSymbolsandPictographs::EmojiComponentRedHair),
+            '🦱' => Ok(SupplementalSymbolsandPictographs::EmojiComponentCurlyHair),
+            '🦲' => Ok(SupplementalSymbolsandPictographs::EmojiComponentBald),
+            '🦳' => Ok(SupplementalSymbolsandPictographs::EmojiComponentWhiteHair),
+            '🦴' => Ok(SupplementalSymbolsandPictographs::Bone),
+            '🦵' => Ok(SupplementalSymbolsandPictographs::Leg),
+            '🦶' => Ok(SupplementalSymbolsandPictographs::Foot),
+            '🦷' => Ok(SupplementalSymbolsandPictographs::Tooth),
+            '🦸' => Ok(SupplementalSymbolsandPictographs::Superhero),
+            '🦹' => Ok(SupplementalSymbolsandPictographs::Supervillain),
+            '🦺' => Ok(SupplementalSymbolsandPictographs::SafetyVest),
+            '🦻' => Ok(SupplementalSymbolsandPictographs::EarWithHearingAid),
+            '🦼' => Ok(SupplementalSymbolsandPictographs::MotorizedWheelchair),
+            '🦽' => Ok(SupplementalSymbolsandPictographs::ManualWheelchair),
+            '🦾' => Ok(SupplementalSymbolsandPictographs::MechanicalArm),
+            '🦿' => Ok(SupplementalSymbolsandPictographs::MechanicalLeg),
+            '🧀' => Ok(SupplementalSymbolsandPictographs::CheeseWedge),
+            '🧁' => Ok(SupplementalSymbolsandPictographs::Cupcake),
+            '🧂' => Ok(SupplementalSymbolsandPictographs::SaltShaker),
+            '🧃' => Ok(SupplementalSymbolsandPictographs::BeverageBox),
+            '🧄' => Ok(SupplementalSymbolsandPictographs::Garlic),
+            '🧅' => Ok(SupplementalSymbolsandPictographs::Onion),
+            '🧆' => Ok(SupplementalSymbolsandPictographs::Falafel),
+            '🧇' => Ok(SupplementalSymbolsandPictographs::Waffle),
+            '🧈' => Ok(SupplementalSymbolsandPictographs::Butter),
+            '🧉' => Ok(SupplementalSymbolsandPictographs::MateDrink),
+            '🧊' => Ok(SupplementalSymbolsandPictographs::IceCube),
+            '🧍' => Ok(SupplementalSymbolsandPictographs::StandingPerson),
+            '🧎' => Ok(SupplementalSymbolsandPictographs::KneelingPerson),
+            '🧏' => Ok(SupplementalSymbolsandPictographs::DeafPerson),
+            '🧐' => Ok(SupplementalSymbolsandPictographs::FaceWithMonocle),
+            '🧑' => Ok(SupplementalSymbolsandPictographs::Adult),
+            '🧒' => Ok(SupplementalSymbolsandPictographs::Child),
+            '🧓' => Ok(SupplementalSymbolsandPictographs::OlderAdult),
+            '🧔' => Ok(SupplementalSymbolsandPictographs::BeardedPerson),
+            '🧕' => Ok(SupplementalSymbolsandPictographs::PersonWithHeadscarf),
+            '🧖' => Ok(SupplementalSymbolsandPictographs::PersonInSteamyRoom),
+            '🧗' => Ok(SupplementalSymbolsandPictographs::PersonClimbing),
+            '🧘' => Ok(SupplementalSymbolsandPictographs::PersonInLotusPosition),
+            '🧙' => Ok(SupplementalSymbolsandPictographs::Mage),
+            '🧚' => Ok(SupplementalSymbolsandPictographs::Fairy),
+            '🧛' => Ok(SupplementalSymbolsandPictographs::Vampire),
+            '🧜' => Ok(SupplementalSymbolsandPictographs::Merperson),
+            '🧝' => Ok(SupplementalSymbolsandPictographs::Elf),
+            '🧞' => Ok(SupplementalSymbolsandPictographs::Genie),
+            '🧟' => Ok(SupplementalSymbolsandPictographs::Zombie),
+            '🧠' => Ok(SupplementalSymbolsandPictographs::Brain),
+            '🧡' => Ok(SupplementalSymbolsandPictographs::OrangeHeart),
+            '🧢' => Ok(SupplementalSymbolsandPictographs::BilledCap),
+            '🧣' => Ok(SupplementalSymbolsandPictographs::Scarf),
+            '🧤' => Ok(SupplementalSymbolsandPictographs::Gloves),
+            '🧥' => Ok(SupplementalSymbolsandPictographs::Coat),
+            '🧦' => Ok(SupplementalSymbolsandPictographs::Socks),
+            '🧧' => Ok(SupplementalSymbolsandPictographs::RedGiftEnvelope),
+            '🧨' => Ok(SupplementalSymbolsandPictographs::Firecracker),
+            '🧩' => Ok(SupplementalSymbolsandPictographs::JigsawPuzzlePiece),
+            '🧪' => Ok(SupplementalSymbolsandPictographs::TestTube),
+            '🧫' => Ok(SupplementalSymbolsandPictographs::PetriDish),
+            '🧬' => Ok(SupplementalSymbolsandPictographs::DnaDoubleHelix),
+            '🧭' => Ok(SupplementalSymbolsandPictographs::Compass),
+            '🧮' => Ok(SupplementalSymbolsandPictographs::Abacus),
+            '🧯' => Ok(SupplementalSymbolsandPictographs::FireExtinguisher),
+            '🧰' => Ok(SupplementalSymbolsandPictographs::Toolbox),
+            '🧱' => Ok(SupplementalSymbolsandPictographs::Brick),
+            '🧲' => Ok(SupplementalSymbolsandPictographs::Magnet),
+            '🧳' => Ok(SupplementalSymbolsandPictographs::Luggage),
+            '🧴' => Ok(SupplementalSymbolsandPictographs::LotionBottle),
+            '🧵' => Ok(SupplementalSymbolsandPictographs::SpoolOfThread),
+            '🧶' => Ok(SupplementalSymbolsandPictographs::BallOfYarn),
+            '🧷' => Ok(SupplementalSymbolsandPictographs::SafetyPin),
+            '🧸' => Ok(SupplementalSymbolsandPictographs::TeddyBear),
+            '🧹' => Ok(SupplementalSymbolsandPictographs::Broom),
+            '🧺' => Ok(SupplementalSymbolsandPictographs::Basket),
+            '🧻' => Ok(SupplementalSymbolsandPictographs::RollOfPaper),
+            '🧼' => Ok(SupplementalSymbolsandPictographs::BarOfSoap),
+            '🧽' => Ok(SupplementalSymbolsandPictographs::Sponge),
+            '🧾' => Ok(SupplementalSymbolsandPictographs::Receipt),
             _ => Err(()),
         }
     }

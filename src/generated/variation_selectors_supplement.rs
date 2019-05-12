@@ -1,484 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{e0100}: '󠄀'
-    pub const VARIATION_SELECTOR_DASH_17: char = '󠄀';
-    /// \u{e0101}: '󠄁'
-    pub const VARIATION_SELECTOR_DASH_18: char = '󠄁';
-    /// \u{e0102}: '󠄂'
-    pub const VARIATION_SELECTOR_DASH_19: char = '󠄂';
-    /// \u{e0103}: '󠄃'
-    pub const VARIATION_SELECTOR_DASH_20: char = '󠄃';
-    /// \u{e0104}: '󠄄'
-    pub const VARIATION_SELECTOR_DASH_21: char = '󠄄';
-    /// \u{e0105}: '󠄅'
-    pub const VARIATION_SELECTOR_DASH_22: char = '󠄅';
-    /// \u{e0106}: '󠄆'
-    pub const VARIATION_SELECTOR_DASH_23: char = '󠄆';
-    /// \u{e0107}: '󠄇'
-    pub const VARIATION_SELECTOR_DASH_24: char = '󠄇';
-    /// \u{e0108}: '󠄈'
-    pub const VARIATION_SELECTOR_DASH_25: char = '󠄈';
-    /// \u{e0109}: '󠄉'
-    pub const VARIATION_SELECTOR_DASH_26: char = '󠄉';
-    /// \u{e010a}: '󠄊'
-    pub const VARIATION_SELECTOR_DASH_27: char = '󠄊';
-    /// \u{e010b}: '󠄋'
-    pub const VARIATION_SELECTOR_DASH_28: char = '󠄋';
-    /// \u{e010c}: '󠄌'
-    pub const VARIATION_SELECTOR_DASH_29: char = '󠄌';
-    /// \u{e010d}: '󠄍'
-    pub const VARIATION_SELECTOR_DASH_30: char = '󠄍';
-    /// \u{e010e}: '󠄎'
-    pub const VARIATION_SELECTOR_DASH_31: char = '󠄎';
-    /// \u{e010f}: '󠄏'
-    pub const VARIATION_SELECTOR_DASH_32: char = '󠄏';
-    /// \u{e0110}: '󠄐'
-    pub const VARIATION_SELECTOR_DASH_33: char = '󠄐';
-    /// \u{e0111}: '󠄑'
-    pub const VARIATION_SELECTOR_DASH_34: char = '󠄑';
-    /// \u{e0112}: '󠄒'
-    pub const VARIATION_SELECTOR_DASH_35: char = '󠄒';
-    /// \u{e0113}: '󠄓'
-    pub const VARIATION_SELECTOR_DASH_36: char = '󠄓';
-    /// \u{e0114}: '󠄔'
-    pub const VARIATION_SELECTOR_DASH_37: char = '󠄔';
-    /// \u{e0115}: '󠄕'
-    pub const VARIATION_SELECTOR_DASH_38: char = '󠄕';
-    /// \u{e0116}: '󠄖'
-    pub const VARIATION_SELECTOR_DASH_39: char = '󠄖';
-    /// \u{e0117}: '󠄗'
-    pub const VARIATION_SELECTOR_DASH_40: char = '󠄗';
-    /// \u{e0118}: '󠄘'
-    pub const VARIATION_SELECTOR_DASH_41: char = '󠄘';
-    /// \u{e0119}: '󠄙'
-    pub const VARIATION_SELECTOR_DASH_42: char = '󠄙';
-    /// \u{e011a}: '󠄚'
-    pub const VARIATION_SELECTOR_DASH_43: char = '󠄚';
-    /// \u{e011b}: '󠄛'
-    pub const VARIATION_SELECTOR_DASH_44: char = '󠄛';
-    /// \u{e011c}: '󠄜'
-    pub const VARIATION_SELECTOR_DASH_45: char = '󠄜';
-    /// \u{e011d}: '󠄝'
-    pub const VARIATION_SELECTOR_DASH_46: char = '󠄝';
-    /// \u{e011e}: '󠄞'
-    pub const VARIATION_SELECTOR_DASH_47: char = '󠄞';
-    /// \u{e011f}: '󠄟'
-    pub const VARIATION_SELECTOR_DASH_48: char = '󠄟';
-    /// \u{e0120}: '󠄠'
-    pub const VARIATION_SELECTOR_DASH_49: char = '󠄠';
-    /// \u{e0121}: '󠄡'
-    pub const VARIATION_SELECTOR_DASH_50: char = '󠄡';
-    /// \u{e0122}: '󠄢'
-    pub const VARIATION_SELECTOR_DASH_51: char = '󠄢';
-    /// \u{e0123}: '󠄣'
-    pub const VARIATION_SELECTOR_DASH_52: char = '󠄣';
-    /// \u{e0124}: '󠄤'
-    pub const VARIATION_SELECTOR_DASH_53: char = '󠄤';
-    /// \u{e0125}: '󠄥'
-    pub const VARIATION_SELECTOR_DASH_54: char = '󠄥';
-    /// \u{e0126}: '󠄦'
-    pub const VARIATION_SELECTOR_DASH_55: char = '󠄦';
-    /// \u{e0127}: '󠄧'
-    pub const VARIATION_SELECTOR_DASH_56: char = '󠄧';
-    /// \u{e0128}: '󠄨'
-    pub const VARIATION_SELECTOR_DASH_57: char = '󠄨';
-    /// \u{e0129}: '󠄩'
-    pub const VARIATION_SELECTOR_DASH_58: char = '󠄩';
-    /// \u{e012a}: '󠄪'
-    pub const VARIATION_SELECTOR_DASH_59: char = '󠄪';
-    /// \u{e012b}: '󠄫'
-    pub const VARIATION_SELECTOR_DASH_60: char = '󠄫';
-    /// \u{e012c}: '󠄬'
-    pub const VARIATION_SELECTOR_DASH_61: char = '󠄬';
-    /// \u{e012d}: '󠄭'
-    pub const VARIATION_SELECTOR_DASH_62: char = '󠄭';
-    /// \u{e012e}: '󠄮'
-    pub const VARIATION_SELECTOR_DASH_63: char = '󠄮';
-    /// \u{e012f}: '󠄯'
-    pub const VARIATION_SELECTOR_DASH_64: char = '󠄯';
-    /// \u{e0130}: '󠄰'
-    pub const VARIATION_SELECTOR_DASH_65: char = '󠄰';
-    /// \u{e0131}: '󠄱'
-    pub const VARIATION_SELECTOR_DASH_66: char = '󠄱';
-    /// \u{e0132}: '󠄲'
-    pub const VARIATION_SELECTOR_DASH_67: char = '󠄲';
-    /// \u{e0133}: '󠄳'
-    pub const VARIATION_SELECTOR_DASH_68: char = '󠄳';
-    /// \u{e0134}: '󠄴'
-    pub const VARIATION_SELECTOR_DASH_69: char = '󠄴';
-    /// \u{e0135}: '󠄵'
-    pub const VARIATION_SELECTOR_DASH_70: char = '󠄵';
-    /// \u{e0136}: '󠄶'
-    pub const VARIATION_SELECTOR_DASH_71: char = '󠄶';
-    /// \u{e0137}: '󠄷'
-    pub const VARIATION_SELECTOR_DASH_72: char = '󠄷';
-    /// \u{e0138}: '󠄸'
-    pub const VARIATION_SELECTOR_DASH_73: char = '󠄸';
-    /// \u{e0139}: '󠄹'
-    pub const VARIATION_SELECTOR_DASH_74: char = '󠄹';
-    /// \u{e013a}: '󠄺'
-    pub const VARIATION_SELECTOR_DASH_75: char = '󠄺';
-    /// \u{e013b}: '󠄻'
-    pub const VARIATION_SELECTOR_DASH_76: char = '󠄻';
-    /// \u{e013c}: '󠄼'
-    pub const VARIATION_SELECTOR_DASH_77: char = '󠄼';
-    /// \u{e013d}: '󠄽'
-    pub const VARIATION_SELECTOR_DASH_78: char = '󠄽';
-    /// \u{e013e}: '󠄾'
-    pub const VARIATION_SELECTOR_DASH_79: char = '󠄾';
-    /// \u{e013f}: '󠄿'
-    pub const VARIATION_SELECTOR_DASH_80: char = '󠄿';
-    /// \u{e0140}: '󠅀'
-    pub const VARIATION_SELECTOR_DASH_81: char = '󠅀';
-    /// \u{e0141}: '󠅁'
-    pub const VARIATION_SELECTOR_DASH_82: char = '󠅁';
-    /// \u{e0142}: '󠅂'
-    pub const VARIATION_SELECTOR_DASH_83: char = '󠅂';
-    /// \u{e0143}: '󠅃'
-    pub const VARIATION_SELECTOR_DASH_84: char = '󠅃';
-    /// \u{e0144}: '󠅄'
-    pub const VARIATION_SELECTOR_DASH_85: char = '󠅄';
-    /// \u{e0145}: '󠅅'
-    pub const VARIATION_SELECTOR_DASH_86: char = '󠅅';
-    /// \u{e0146}: '󠅆'
-    pub const VARIATION_SELECTOR_DASH_87: char = '󠅆';
-    /// \u{e0147}: '󠅇'
-    pub const VARIATION_SELECTOR_DASH_88: char = '󠅇';
-    /// \u{e0148}: '󠅈'
-    pub const VARIATION_SELECTOR_DASH_89: char = '󠅈';
-    /// \u{e0149}: '󠅉'
-    pub const VARIATION_SELECTOR_DASH_90: char = '󠅉';
-    /// \u{e014a}: '󠅊'
-    pub const VARIATION_SELECTOR_DASH_91: char = '󠅊';
-    /// \u{e014b}: '󠅋'
-    pub const VARIATION_SELECTOR_DASH_92: char = '󠅋';
-    /// \u{e014c}: '󠅌'
-    pub const VARIATION_SELECTOR_DASH_93: char = '󠅌';
-    /// \u{e014d}: '󠅍'
-    pub const VARIATION_SELECTOR_DASH_94: char = '󠅍';
-    /// \u{e014e}: '󠅎'
-    pub const VARIATION_SELECTOR_DASH_95: char = '󠅎';
-    /// \u{e014f}: '󠅏'
-    pub const VARIATION_SELECTOR_DASH_96: char = '󠅏';
-    /// \u{e0150}: '󠅐'
-    pub const VARIATION_SELECTOR_DASH_97: char = '󠅐';
-    /// \u{e0151}: '󠅑'
-    pub const VARIATION_SELECTOR_DASH_98: char = '󠅑';
-    /// \u{e0152}: '󠅒'
-    pub const VARIATION_SELECTOR_DASH_99: char = '󠅒';
-    /// \u{e0153}: '󠅓'
-    pub const VARIATION_SELECTOR_DASH_100: char = '󠅓';
-    /// \u{e0154}: '󠅔'
-    pub const VARIATION_SELECTOR_DASH_101: char = '󠅔';
-    /// \u{e0155}: '󠅕'
-    pub const VARIATION_SELECTOR_DASH_102: char = '󠅕';
-    /// \u{e0156}: '󠅖'
-    pub const VARIATION_SELECTOR_DASH_103: char = '󠅖';
-    /// \u{e0157}: '󠅗'
-    pub const VARIATION_SELECTOR_DASH_104: char = '󠅗';
-    /// \u{e0158}: '󠅘'
-    pub const VARIATION_SELECTOR_DASH_105: char = '󠅘';
-    /// \u{e0159}: '󠅙'
-    pub const VARIATION_SELECTOR_DASH_106: char = '󠅙';
-    /// \u{e015a}: '󠅚'
-    pub const VARIATION_SELECTOR_DASH_107: char = '󠅚';
-    /// \u{e015b}: '󠅛'
-    pub const VARIATION_SELECTOR_DASH_108: char = '󠅛';
-    /// \u{e015c}: '󠅜'
-    pub const VARIATION_SELECTOR_DASH_109: char = '󠅜';
-    /// \u{e015d}: '󠅝'
-    pub const VARIATION_SELECTOR_DASH_110: char = '󠅝';
-    /// \u{e015e}: '󠅞'
-    pub const VARIATION_SELECTOR_DASH_111: char = '󠅞';
-    /// \u{e015f}: '󠅟'
-    pub const VARIATION_SELECTOR_DASH_112: char = '󠅟';
-    /// \u{e0160}: '󠅠'
-    pub const VARIATION_SELECTOR_DASH_113: char = '󠅠';
-    /// \u{e0161}: '󠅡'
-    pub const VARIATION_SELECTOR_DASH_114: char = '󠅡';
-    /// \u{e0162}: '󠅢'
-    pub const VARIATION_SELECTOR_DASH_115: char = '󠅢';
-    /// \u{e0163}: '󠅣'
-    pub const VARIATION_SELECTOR_DASH_116: char = '󠅣';
-    /// \u{e0164}: '󠅤'
-    pub const VARIATION_SELECTOR_DASH_117: char = '󠅤';
-    /// \u{e0165}: '󠅥'
-    pub const VARIATION_SELECTOR_DASH_118: char = '󠅥';
-    /// \u{e0166}: '󠅦'
-    pub const VARIATION_SELECTOR_DASH_119: char = '󠅦';
-    /// \u{e0167}: '󠅧'
-    pub const VARIATION_SELECTOR_DASH_120: char = '󠅧';
-    /// \u{e0168}: '󠅨'
-    pub const VARIATION_SELECTOR_DASH_121: char = '󠅨';
-    /// \u{e0169}: '󠅩'
-    pub const VARIATION_SELECTOR_DASH_122: char = '󠅩';
-    /// \u{e016a}: '󠅪'
-    pub const VARIATION_SELECTOR_DASH_123: char = '󠅪';
-    /// \u{e016b}: '󠅫'
-    pub const VARIATION_SELECTOR_DASH_124: char = '󠅫';
-    /// \u{e016c}: '󠅬'
-    pub const VARIATION_SELECTOR_DASH_125: char = '󠅬';
-    /// \u{e016d}: '󠅭'
-    pub const VARIATION_SELECTOR_DASH_126: char = '󠅭';
-    /// \u{e016e}: '󠅮'
-    pub const VARIATION_SELECTOR_DASH_127: char = '󠅮';
-    /// \u{e016f}: '󠅯'
-    pub const VARIATION_SELECTOR_DASH_128: char = '󠅯';
-    /// \u{e0170}: '󠅰'
-    pub const VARIATION_SELECTOR_DASH_129: char = '󠅰';
-    /// \u{e0171}: '󠅱'
-    pub const VARIATION_SELECTOR_DASH_130: char = '󠅱';
-    /// \u{e0172}: '󠅲'
-    pub const VARIATION_SELECTOR_DASH_131: char = '󠅲';
-    /// \u{e0173}: '󠅳'
-    pub const VARIATION_SELECTOR_DASH_132: char = '󠅳';
-    /// \u{e0174}: '󠅴'
-    pub const VARIATION_SELECTOR_DASH_133: char = '󠅴';
-    /// \u{e0175}: '󠅵'
-    pub const VARIATION_SELECTOR_DASH_134: char = '󠅵';
-    /// \u{e0176}: '󠅶'
-    pub const VARIATION_SELECTOR_DASH_135: char = '󠅶';
-    /// \u{e0177}: '󠅷'
-    pub const VARIATION_SELECTOR_DASH_136: char = '󠅷';
-    /// \u{e0178}: '󠅸'
-    pub const VARIATION_SELECTOR_DASH_137: char = '󠅸';
-    /// \u{e0179}: '󠅹'
-    pub const VARIATION_SELECTOR_DASH_138: char = '󠅹';
-    /// \u{e017a}: '󠅺'
-    pub const VARIATION_SELECTOR_DASH_139: char = '󠅺';
-    /// \u{e017b}: '󠅻'
-    pub const VARIATION_SELECTOR_DASH_140: char = '󠅻';
-    /// \u{e017c}: '󠅼'
-    pub const VARIATION_SELECTOR_DASH_141: char = '󠅼';
-    /// \u{e017d}: '󠅽'
-    pub const VARIATION_SELECTOR_DASH_142: char = '󠅽';
-    /// \u{e017e}: '󠅾'
-    pub const VARIATION_SELECTOR_DASH_143: char = '󠅾';
-    /// \u{e017f}: '󠅿'
-    pub const VARIATION_SELECTOR_DASH_144: char = '󠅿';
-    /// \u{e0180}: '󠆀'
-    pub const VARIATION_SELECTOR_DASH_145: char = '󠆀';
-    /// \u{e0181}: '󠆁'
-    pub const VARIATION_SELECTOR_DASH_146: char = '󠆁';
-    /// \u{e0182}: '󠆂'
-    pub const VARIATION_SELECTOR_DASH_147: char = '󠆂';
-    /// \u{e0183}: '󠆃'
-    pub const VARIATION_SELECTOR_DASH_148: char = '󠆃';
-    /// \u{e0184}: '󠆄'
-    pub const VARIATION_SELECTOR_DASH_149: char = '󠆄';
-    /// \u{e0185}: '󠆅'
-    pub const VARIATION_SELECTOR_DASH_150: char = '󠆅';
-    /// \u{e0186}: '󠆆'
-    pub const VARIATION_SELECTOR_DASH_151: char = '󠆆';
-    /// \u{e0187}: '󠆇'
-    pub const VARIATION_SELECTOR_DASH_152: char = '󠆇';
-    /// \u{e0188}: '󠆈'
-    pub const VARIATION_SELECTOR_DASH_153: char = '󠆈';
-    /// \u{e0189}: '󠆉'
-    pub const VARIATION_SELECTOR_DASH_154: char = '󠆉';
-    /// \u{e018a}: '󠆊'
-    pub const VARIATION_SELECTOR_DASH_155: char = '󠆊';
-    /// \u{e018b}: '󠆋'
-    pub const VARIATION_SELECTOR_DASH_156: char = '󠆋';
-    /// \u{e018c}: '󠆌'
-    pub const VARIATION_SELECTOR_DASH_157: char = '󠆌';
-    /// \u{e018d}: '󠆍'
-    pub const VARIATION_SELECTOR_DASH_158: char = '󠆍';
-    /// \u{e018e}: '󠆎'
-    pub const VARIATION_SELECTOR_DASH_159: char = '󠆎';
-    /// \u{e018f}: '󠆏'
-    pub const VARIATION_SELECTOR_DASH_160: char = '󠆏';
-    /// \u{e0190}: '󠆐'
-    pub const VARIATION_SELECTOR_DASH_161: char = '󠆐';
-    /// \u{e0191}: '󠆑'
-    pub const VARIATION_SELECTOR_DASH_162: char = '󠆑';
-    /// \u{e0192}: '󠆒'
-    pub const VARIATION_SELECTOR_DASH_163: char = '󠆒';
-    /// \u{e0193}: '󠆓'
-    pub const VARIATION_SELECTOR_DASH_164: char = '󠆓';
-    /// \u{e0194}: '󠆔'
-    pub const VARIATION_SELECTOR_DASH_165: char = '󠆔';
-    /// \u{e0195}: '󠆕'
-    pub const VARIATION_SELECTOR_DASH_166: char = '󠆕';
-    /// \u{e0196}: '󠆖'
-    pub const VARIATION_SELECTOR_DASH_167: char = '󠆖';
-    /// \u{e0197}: '󠆗'
-    pub const VARIATION_SELECTOR_DASH_168: char = '󠆗';
-    /// \u{e0198}: '󠆘'
-    pub const VARIATION_SELECTOR_DASH_169: char = '󠆘';
-    /// \u{e0199}: '󠆙'
-    pub const VARIATION_SELECTOR_DASH_170: char = '󠆙';
-    /// \u{e019a}: '󠆚'
-    pub const VARIATION_SELECTOR_DASH_171: char = '󠆚';
-    /// \u{e019b}: '󠆛'
-    pub const VARIATION_SELECTOR_DASH_172: char = '󠆛';
-    /// \u{e019c}: '󠆜'
-    pub const VARIATION_SELECTOR_DASH_173: char = '󠆜';
-    /// \u{e019d}: '󠆝'
-    pub const VARIATION_SELECTOR_DASH_174: char = '󠆝';
-    /// \u{e019e}: '󠆞'
-    pub const VARIATION_SELECTOR_DASH_175: char = '󠆞';
-    /// \u{e019f}: '󠆟'
-    pub const VARIATION_SELECTOR_DASH_176: char = '󠆟';
-    /// \u{e01a0}: '󠆠'
-    pub const VARIATION_SELECTOR_DASH_177: char = '󠆠';
-    /// \u{e01a1}: '󠆡'
-    pub const VARIATION_SELECTOR_DASH_178: char = '󠆡';
-    /// \u{e01a2}: '󠆢'
-    pub const VARIATION_SELECTOR_DASH_179: char = '󠆢';
-    /// \u{e01a3}: '󠆣'
-    pub const VARIATION_SELECTOR_DASH_180: char = '󠆣';
-    /// \u{e01a4}: '󠆤'
-    pub const VARIATION_SELECTOR_DASH_181: char = '󠆤';
-    /// \u{e01a5}: '󠆥'
-    pub const VARIATION_SELECTOR_DASH_182: char = '󠆥';
-    /// \u{e01a6}: '󠆦'
-    pub const VARIATION_SELECTOR_DASH_183: char = '󠆦';
-    /// \u{e01a7}: '󠆧'
-    pub const VARIATION_SELECTOR_DASH_184: char = '󠆧';
-    /// \u{e01a8}: '󠆨'
-    pub const VARIATION_SELECTOR_DASH_185: char = '󠆨';
-    /// \u{e01a9}: '󠆩'
-    pub const VARIATION_SELECTOR_DASH_186: char = '󠆩';
-    /// \u{e01aa}: '󠆪'
-    pub const VARIATION_SELECTOR_DASH_187: char = '󠆪';
-    /// \u{e01ab}: '󠆫'
-    pub const VARIATION_SELECTOR_DASH_188: char = '󠆫';
-    /// \u{e01ac}: '󠆬'
-    pub const VARIATION_SELECTOR_DASH_189: char = '󠆬';
-    /// \u{e01ad}: '󠆭'
-    pub const VARIATION_SELECTOR_DASH_190: char = '󠆭';
-    /// \u{e01ae}: '󠆮'
-    pub const VARIATION_SELECTOR_DASH_191: char = '󠆮';
-    /// \u{e01af}: '󠆯'
-    pub const VARIATION_SELECTOR_DASH_192: char = '󠆯';
-    /// \u{e01b0}: '󠆰'
-    pub const VARIATION_SELECTOR_DASH_193: char = '󠆰';
-    /// \u{e01b1}: '󠆱'
-    pub const VARIATION_SELECTOR_DASH_194: char = '󠆱';
-    /// \u{e01b2}: '󠆲'
-    pub const VARIATION_SELECTOR_DASH_195: char = '󠆲';
-    /// \u{e01b3}: '󠆳'
-    pub const VARIATION_SELECTOR_DASH_196: char = '󠆳';
-    /// \u{e01b4}: '󠆴'
-    pub const VARIATION_SELECTOR_DASH_197: char = '󠆴';
-    /// \u{e01b5}: '󠆵'
-    pub const VARIATION_SELECTOR_DASH_198: char = '󠆵';
-    /// \u{e01b6}: '󠆶'
-    pub const VARIATION_SELECTOR_DASH_199: char = '󠆶';
-    /// \u{e01b7}: '󠆷'
-    pub const VARIATION_SELECTOR_DASH_200: char = '󠆷';
-    /// \u{e01b8}: '󠆸'
-    pub const VARIATION_SELECTOR_DASH_201: char = '󠆸';
-    /// \u{e01b9}: '󠆹'
-    pub const VARIATION_SELECTOR_DASH_202: char = '󠆹';
-    /// \u{e01ba}: '󠆺'
-    pub const VARIATION_SELECTOR_DASH_203: char = '󠆺';
-    /// \u{e01bb}: '󠆻'
-    pub const VARIATION_SELECTOR_DASH_204: char = '󠆻';
-    /// \u{e01bc}: '󠆼'
-    pub const VARIATION_SELECTOR_DASH_205: char = '󠆼';
-    /// \u{e01bd}: '󠆽'
-    pub const VARIATION_SELECTOR_DASH_206: char = '󠆽';
-    /// \u{e01be}: '󠆾'
-    pub const VARIATION_SELECTOR_DASH_207: char = '󠆾';
-    /// \u{e01bf}: '󠆿'
-    pub const VARIATION_SELECTOR_DASH_208: char = '󠆿';
-    /// \u{e01c0}: '󠇀'
-    pub const VARIATION_SELECTOR_DASH_209: char = '󠇀';
-    /// \u{e01c1}: '󠇁'
-    pub const VARIATION_SELECTOR_DASH_210: char = '󠇁';
-    /// \u{e01c2}: '󠇂'
-    pub const VARIATION_SELECTOR_DASH_211: char = '󠇂';
-    /// \u{e01c3}: '󠇃'
-    pub const VARIATION_SELECTOR_DASH_212: char = '󠇃';
-    /// \u{e01c4}: '󠇄'
-    pub const VARIATION_SELECTOR_DASH_213: char = '󠇄';
-    /// \u{e01c5}: '󠇅'
-    pub const VARIATION_SELECTOR_DASH_214: char = '󠇅';
-    /// \u{e01c6}: '󠇆'
-    pub const VARIATION_SELECTOR_DASH_215: char = '󠇆';
-    /// \u{e01c7}: '󠇇'
-    pub const VARIATION_SELECTOR_DASH_216: char = '󠇇';
-    /// \u{e01c8}: '󠇈'
-    pub const VARIATION_SELECTOR_DASH_217: char = '󠇈';
-    /// \u{e01c9}: '󠇉'
-    pub const VARIATION_SELECTOR_DASH_218: char = '󠇉';
-    /// \u{e01ca}: '󠇊'
-    pub const VARIATION_SELECTOR_DASH_219: char = '󠇊';
-    /// \u{e01cb}: '󠇋'
-    pub const VARIATION_SELECTOR_DASH_220: char = '󠇋';
-    /// \u{e01cc}: '󠇌'
-    pub const VARIATION_SELECTOR_DASH_221: char = '󠇌';
-    /// \u{e01cd}: '󠇍'
-    pub const VARIATION_SELECTOR_DASH_222: char = '󠇍';
-    /// \u{e01ce}: '󠇎'
-    pub const VARIATION_SELECTOR_DASH_223: char = '󠇎';
-    /// \u{e01cf}: '󠇏'
-    pub const VARIATION_SELECTOR_DASH_224: char = '󠇏';
-    /// \u{e01d0}: '󠇐'
-    pub const VARIATION_SELECTOR_DASH_225: char = '󠇐';
-    /// \u{e01d1}: '󠇑'
-    pub const VARIATION_SELECTOR_DASH_226: char = '󠇑';
-    /// \u{e01d2}: '󠇒'
-    pub const VARIATION_SELECTOR_DASH_227: char = '󠇒';
-    /// \u{e01d3}: '󠇓'
-    pub const VARIATION_SELECTOR_DASH_228: char = '󠇓';
-    /// \u{e01d4}: '󠇔'
-    pub const VARIATION_SELECTOR_DASH_229: char = '󠇔';
-    /// \u{e01d5}: '󠇕'
-    pub const VARIATION_SELECTOR_DASH_230: char = '󠇕';
-    /// \u{e01d6}: '󠇖'
-    pub const VARIATION_SELECTOR_DASH_231: char = '󠇖';
-    /// \u{e01d7}: '󠇗'
-    pub const VARIATION_SELECTOR_DASH_232: char = '󠇗';
-    /// \u{e01d8}: '󠇘'
-    pub const VARIATION_SELECTOR_DASH_233: char = '󠇘';
-    /// \u{e01d9}: '󠇙'
-    pub const VARIATION_SELECTOR_DASH_234: char = '󠇙';
-    /// \u{e01da}: '󠇚'
-    pub const VARIATION_SELECTOR_DASH_235: char = '󠇚';
-    /// \u{e01db}: '󠇛'
-    pub const VARIATION_SELECTOR_DASH_236: char = '󠇛';
-    /// \u{e01dc}: '󠇜'
-    pub const VARIATION_SELECTOR_DASH_237: char = '󠇜';
-    /// \u{e01dd}: '󠇝'
-    pub const VARIATION_SELECTOR_DASH_238: char = '󠇝';
-    /// \u{e01de}: '󠇞'
-    pub const VARIATION_SELECTOR_DASH_239: char = '󠇞';
-    /// \u{e01df}: '󠇟'
-    pub const VARIATION_SELECTOR_DASH_240: char = '󠇟';
-    /// \u{e01e0}: '󠇠'
-    pub const VARIATION_SELECTOR_DASH_241: char = '󠇠';
-    /// \u{e01e1}: '󠇡'
-    pub const VARIATION_SELECTOR_DASH_242: char = '󠇡';
-    /// \u{e01e2}: '󠇢'
-    pub const VARIATION_SELECTOR_DASH_243: char = '󠇢';
-    /// \u{e01e3}: '󠇣'
-    pub const VARIATION_SELECTOR_DASH_244: char = '󠇣';
-    /// \u{e01e4}: '󠇤'
-    pub const VARIATION_SELECTOR_DASH_245: char = '󠇤';
-    /// \u{e01e5}: '󠇥'
-    pub const VARIATION_SELECTOR_DASH_246: char = '󠇥';
-    /// \u{e01e6}: '󠇦'
-    pub const VARIATION_SELECTOR_DASH_247: char = '󠇦';
-    /// \u{e01e7}: '󠇧'
-    pub const VARIATION_SELECTOR_DASH_248: char = '󠇧';
-    /// \u{e01e8}: '󠇨'
-    pub const VARIATION_SELECTOR_DASH_249: char = '󠇨';
-    /// \u{e01e9}: '󠇩'
-    pub const VARIATION_SELECTOR_DASH_250: char = '󠇩';
-    /// \u{e01ea}: '󠇪'
-    pub const VARIATION_SELECTOR_DASH_251: char = '󠇪';
-    /// \u{e01eb}: '󠇫'
-    pub const VARIATION_SELECTOR_DASH_252: char = '󠇫';
-    /// \u{e01ec}: '󠇬'
-    pub const VARIATION_SELECTOR_DASH_253: char = '󠇬';
-    /// \u{e01ed}: '󠇭'
-    pub const VARIATION_SELECTOR_DASH_254: char = '󠇭';
-    /// \u{e01ee}: '󠇮'
-    pub const VARIATION_SELECTOR_DASH_255: char = '󠇮';
-}
 
 /// An enum to represent all characters in the VariationSelectorsSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -965,247 +484,246 @@ pub enum VariationSelectorsSupplement {
 
 impl Into<char> for VariationSelectorsSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            VariationSelectorsSupplement::VariationSelectorDash17 => VARIATION_SELECTOR_DASH_17,
-            VariationSelectorsSupplement::VariationSelectorDash18 => VARIATION_SELECTOR_DASH_18,
-            VariationSelectorsSupplement::VariationSelectorDash19 => VARIATION_SELECTOR_DASH_19,
-            VariationSelectorsSupplement::VariationSelectorDash20 => VARIATION_SELECTOR_DASH_20,
-            VariationSelectorsSupplement::VariationSelectorDash21 => VARIATION_SELECTOR_DASH_21,
-            VariationSelectorsSupplement::VariationSelectorDash22 => VARIATION_SELECTOR_DASH_22,
-            VariationSelectorsSupplement::VariationSelectorDash23 => VARIATION_SELECTOR_DASH_23,
-            VariationSelectorsSupplement::VariationSelectorDash24 => VARIATION_SELECTOR_DASH_24,
-            VariationSelectorsSupplement::VariationSelectorDash25 => VARIATION_SELECTOR_DASH_25,
-            VariationSelectorsSupplement::VariationSelectorDash26 => VARIATION_SELECTOR_DASH_26,
-            VariationSelectorsSupplement::VariationSelectorDash27 => VARIATION_SELECTOR_DASH_27,
-            VariationSelectorsSupplement::VariationSelectorDash28 => VARIATION_SELECTOR_DASH_28,
-            VariationSelectorsSupplement::VariationSelectorDash29 => VARIATION_SELECTOR_DASH_29,
-            VariationSelectorsSupplement::VariationSelectorDash30 => VARIATION_SELECTOR_DASH_30,
-            VariationSelectorsSupplement::VariationSelectorDash31 => VARIATION_SELECTOR_DASH_31,
-            VariationSelectorsSupplement::VariationSelectorDash32 => VARIATION_SELECTOR_DASH_32,
-            VariationSelectorsSupplement::VariationSelectorDash33 => VARIATION_SELECTOR_DASH_33,
-            VariationSelectorsSupplement::VariationSelectorDash34 => VARIATION_SELECTOR_DASH_34,
-            VariationSelectorsSupplement::VariationSelectorDash35 => VARIATION_SELECTOR_DASH_35,
-            VariationSelectorsSupplement::VariationSelectorDash36 => VARIATION_SELECTOR_DASH_36,
-            VariationSelectorsSupplement::VariationSelectorDash37 => VARIATION_SELECTOR_DASH_37,
-            VariationSelectorsSupplement::VariationSelectorDash38 => VARIATION_SELECTOR_DASH_38,
-            VariationSelectorsSupplement::VariationSelectorDash39 => VARIATION_SELECTOR_DASH_39,
-            VariationSelectorsSupplement::VariationSelectorDash40 => VARIATION_SELECTOR_DASH_40,
-            VariationSelectorsSupplement::VariationSelectorDash41 => VARIATION_SELECTOR_DASH_41,
-            VariationSelectorsSupplement::VariationSelectorDash42 => VARIATION_SELECTOR_DASH_42,
-            VariationSelectorsSupplement::VariationSelectorDash43 => VARIATION_SELECTOR_DASH_43,
-            VariationSelectorsSupplement::VariationSelectorDash44 => VARIATION_SELECTOR_DASH_44,
-            VariationSelectorsSupplement::VariationSelectorDash45 => VARIATION_SELECTOR_DASH_45,
-            VariationSelectorsSupplement::VariationSelectorDash46 => VARIATION_SELECTOR_DASH_46,
-            VariationSelectorsSupplement::VariationSelectorDash47 => VARIATION_SELECTOR_DASH_47,
-            VariationSelectorsSupplement::VariationSelectorDash48 => VARIATION_SELECTOR_DASH_48,
-            VariationSelectorsSupplement::VariationSelectorDash49 => VARIATION_SELECTOR_DASH_49,
-            VariationSelectorsSupplement::VariationSelectorDash50 => VARIATION_SELECTOR_DASH_50,
-            VariationSelectorsSupplement::VariationSelectorDash51 => VARIATION_SELECTOR_DASH_51,
-            VariationSelectorsSupplement::VariationSelectorDash52 => VARIATION_SELECTOR_DASH_52,
-            VariationSelectorsSupplement::VariationSelectorDash53 => VARIATION_SELECTOR_DASH_53,
-            VariationSelectorsSupplement::VariationSelectorDash54 => VARIATION_SELECTOR_DASH_54,
-            VariationSelectorsSupplement::VariationSelectorDash55 => VARIATION_SELECTOR_DASH_55,
-            VariationSelectorsSupplement::VariationSelectorDash56 => VARIATION_SELECTOR_DASH_56,
-            VariationSelectorsSupplement::VariationSelectorDash57 => VARIATION_SELECTOR_DASH_57,
-            VariationSelectorsSupplement::VariationSelectorDash58 => VARIATION_SELECTOR_DASH_58,
-            VariationSelectorsSupplement::VariationSelectorDash59 => VARIATION_SELECTOR_DASH_59,
-            VariationSelectorsSupplement::VariationSelectorDash60 => VARIATION_SELECTOR_DASH_60,
-            VariationSelectorsSupplement::VariationSelectorDash61 => VARIATION_SELECTOR_DASH_61,
-            VariationSelectorsSupplement::VariationSelectorDash62 => VARIATION_SELECTOR_DASH_62,
-            VariationSelectorsSupplement::VariationSelectorDash63 => VARIATION_SELECTOR_DASH_63,
-            VariationSelectorsSupplement::VariationSelectorDash64 => VARIATION_SELECTOR_DASH_64,
-            VariationSelectorsSupplement::VariationSelectorDash65 => VARIATION_SELECTOR_DASH_65,
-            VariationSelectorsSupplement::VariationSelectorDash66 => VARIATION_SELECTOR_DASH_66,
-            VariationSelectorsSupplement::VariationSelectorDash67 => VARIATION_SELECTOR_DASH_67,
-            VariationSelectorsSupplement::VariationSelectorDash68 => VARIATION_SELECTOR_DASH_68,
-            VariationSelectorsSupplement::VariationSelectorDash69 => VARIATION_SELECTOR_DASH_69,
-            VariationSelectorsSupplement::VariationSelectorDash70 => VARIATION_SELECTOR_DASH_70,
-            VariationSelectorsSupplement::VariationSelectorDash71 => VARIATION_SELECTOR_DASH_71,
-            VariationSelectorsSupplement::VariationSelectorDash72 => VARIATION_SELECTOR_DASH_72,
-            VariationSelectorsSupplement::VariationSelectorDash73 => VARIATION_SELECTOR_DASH_73,
-            VariationSelectorsSupplement::VariationSelectorDash74 => VARIATION_SELECTOR_DASH_74,
-            VariationSelectorsSupplement::VariationSelectorDash75 => VARIATION_SELECTOR_DASH_75,
-            VariationSelectorsSupplement::VariationSelectorDash76 => VARIATION_SELECTOR_DASH_76,
-            VariationSelectorsSupplement::VariationSelectorDash77 => VARIATION_SELECTOR_DASH_77,
-            VariationSelectorsSupplement::VariationSelectorDash78 => VARIATION_SELECTOR_DASH_78,
-            VariationSelectorsSupplement::VariationSelectorDash79 => VARIATION_SELECTOR_DASH_79,
-            VariationSelectorsSupplement::VariationSelectorDash80 => VARIATION_SELECTOR_DASH_80,
-            VariationSelectorsSupplement::VariationSelectorDash81 => VARIATION_SELECTOR_DASH_81,
-            VariationSelectorsSupplement::VariationSelectorDash82 => VARIATION_SELECTOR_DASH_82,
-            VariationSelectorsSupplement::VariationSelectorDash83 => VARIATION_SELECTOR_DASH_83,
-            VariationSelectorsSupplement::VariationSelectorDash84 => VARIATION_SELECTOR_DASH_84,
-            VariationSelectorsSupplement::VariationSelectorDash85 => VARIATION_SELECTOR_DASH_85,
-            VariationSelectorsSupplement::VariationSelectorDash86 => VARIATION_SELECTOR_DASH_86,
-            VariationSelectorsSupplement::VariationSelectorDash87 => VARIATION_SELECTOR_DASH_87,
-            VariationSelectorsSupplement::VariationSelectorDash88 => VARIATION_SELECTOR_DASH_88,
-            VariationSelectorsSupplement::VariationSelectorDash89 => VARIATION_SELECTOR_DASH_89,
-            VariationSelectorsSupplement::VariationSelectorDash90 => VARIATION_SELECTOR_DASH_90,
-            VariationSelectorsSupplement::VariationSelectorDash91 => VARIATION_SELECTOR_DASH_91,
-            VariationSelectorsSupplement::VariationSelectorDash92 => VARIATION_SELECTOR_DASH_92,
-            VariationSelectorsSupplement::VariationSelectorDash93 => VARIATION_SELECTOR_DASH_93,
-            VariationSelectorsSupplement::VariationSelectorDash94 => VARIATION_SELECTOR_DASH_94,
-            VariationSelectorsSupplement::VariationSelectorDash95 => VARIATION_SELECTOR_DASH_95,
-            VariationSelectorsSupplement::VariationSelectorDash96 => VARIATION_SELECTOR_DASH_96,
-            VariationSelectorsSupplement::VariationSelectorDash97 => VARIATION_SELECTOR_DASH_97,
-            VariationSelectorsSupplement::VariationSelectorDash98 => VARIATION_SELECTOR_DASH_98,
-            VariationSelectorsSupplement::VariationSelectorDash99 => VARIATION_SELECTOR_DASH_99,
-            VariationSelectorsSupplement::VariationSelectorDash100 => VARIATION_SELECTOR_DASH_100,
-            VariationSelectorsSupplement::VariationSelectorDash101 => VARIATION_SELECTOR_DASH_101,
-            VariationSelectorsSupplement::VariationSelectorDash102 => VARIATION_SELECTOR_DASH_102,
-            VariationSelectorsSupplement::VariationSelectorDash103 => VARIATION_SELECTOR_DASH_103,
-            VariationSelectorsSupplement::VariationSelectorDash104 => VARIATION_SELECTOR_DASH_104,
-            VariationSelectorsSupplement::VariationSelectorDash105 => VARIATION_SELECTOR_DASH_105,
-            VariationSelectorsSupplement::VariationSelectorDash106 => VARIATION_SELECTOR_DASH_106,
-            VariationSelectorsSupplement::VariationSelectorDash107 => VARIATION_SELECTOR_DASH_107,
-            VariationSelectorsSupplement::VariationSelectorDash108 => VARIATION_SELECTOR_DASH_108,
-            VariationSelectorsSupplement::VariationSelectorDash109 => VARIATION_SELECTOR_DASH_109,
-            VariationSelectorsSupplement::VariationSelectorDash110 => VARIATION_SELECTOR_DASH_110,
-            VariationSelectorsSupplement::VariationSelectorDash111 => VARIATION_SELECTOR_DASH_111,
-            VariationSelectorsSupplement::VariationSelectorDash112 => VARIATION_SELECTOR_DASH_112,
-            VariationSelectorsSupplement::VariationSelectorDash113 => VARIATION_SELECTOR_DASH_113,
-            VariationSelectorsSupplement::VariationSelectorDash114 => VARIATION_SELECTOR_DASH_114,
-            VariationSelectorsSupplement::VariationSelectorDash115 => VARIATION_SELECTOR_DASH_115,
-            VariationSelectorsSupplement::VariationSelectorDash116 => VARIATION_SELECTOR_DASH_116,
-            VariationSelectorsSupplement::VariationSelectorDash117 => VARIATION_SELECTOR_DASH_117,
-            VariationSelectorsSupplement::VariationSelectorDash118 => VARIATION_SELECTOR_DASH_118,
-            VariationSelectorsSupplement::VariationSelectorDash119 => VARIATION_SELECTOR_DASH_119,
-            VariationSelectorsSupplement::VariationSelectorDash120 => VARIATION_SELECTOR_DASH_120,
-            VariationSelectorsSupplement::VariationSelectorDash121 => VARIATION_SELECTOR_DASH_121,
-            VariationSelectorsSupplement::VariationSelectorDash122 => VARIATION_SELECTOR_DASH_122,
-            VariationSelectorsSupplement::VariationSelectorDash123 => VARIATION_SELECTOR_DASH_123,
-            VariationSelectorsSupplement::VariationSelectorDash124 => VARIATION_SELECTOR_DASH_124,
-            VariationSelectorsSupplement::VariationSelectorDash125 => VARIATION_SELECTOR_DASH_125,
-            VariationSelectorsSupplement::VariationSelectorDash126 => VARIATION_SELECTOR_DASH_126,
-            VariationSelectorsSupplement::VariationSelectorDash127 => VARIATION_SELECTOR_DASH_127,
-            VariationSelectorsSupplement::VariationSelectorDash128 => VARIATION_SELECTOR_DASH_128,
-            VariationSelectorsSupplement::VariationSelectorDash129 => VARIATION_SELECTOR_DASH_129,
-            VariationSelectorsSupplement::VariationSelectorDash130 => VARIATION_SELECTOR_DASH_130,
-            VariationSelectorsSupplement::VariationSelectorDash131 => VARIATION_SELECTOR_DASH_131,
-            VariationSelectorsSupplement::VariationSelectorDash132 => VARIATION_SELECTOR_DASH_132,
-            VariationSelectorsSupplement::VariationSelectorDash133 => VARIATION_SELECTOR_DASH_133,
-            VariationSelectorsSupplement::VariationSelectorDash134 => VARIATION_SELECTOR_DASH_134,
-            VariationSelectorsSupplement::VariationSelectorDash135 => VARIATION_SELECTOR_DASH_135,
-            VariationSelectorsSupplement::VariationSelectorDash136 => VARIATION_SELECTOR_DASH_136,
-            VariationSelectorsSupplement::VariationSelectorDash137 => VARIATION_SELECTOR_DASH_137,
-            VariationSelectorsSupplement::VariationSelectorDash138 => VARIATION_SELECTOR_DASH_138,
-            VariationSelectorsSupplement::VariationSelectorDash139 => VARIATION_SELECTOR_DASH_139,
-            VariationSelectorsSupplement::VariationSelectorDash140 => VARIATION_SELECTOR_DASH_140,
-            VariationSelectorsSupplement::VariationSelectorDash141 => VARIATION_SELECTOR_DASH_141,
-            VariationSelectorsSupplement::VariationSelectorDash142 => VARIATION_SELECTOR_DASH_142,
-            VariationSelectorsSupplement::VariationSelectorDash143 => VARIATION_SELECTOR_DASH_143,
-            VariationSelectorsSupplement::VariationSelectorDash144 => VARIATION_SELECTOR_DASH_144,
-            VariationSelectorsSupplement::VariationSelectorDash145 => VARIATION_SELECTOR_DASH_145,
-            VariationSelectorsSupplement::VariationSelectorDash146 => VARIATION_SELECTOR_DASH_146,
-            VariationSelectorsSupplement::VariationSelectorDash147 => VARIATION_SELECTOR_DASH_147,
-            VariationSelectorsSupplement::VariationSelectorDash148 => VARIATION_SELECTOR_DASH_148,
-            VariationSelectorsSupplement::VariationSelectorDash149 => VARIATION_SELECTOR_DASH_149,
-            VariationSelectorsSupplement::VariationSelectorDash150 => VARIATION_SELECTOR_DASH_150,
-            VariationSelectorsSupplement::VariationSelectorDash151 => VARIATION_SELECTOR_DASH_151,
-            VariationSelectorsSupplement::VariationSelectorDash152 => VARIATION_SELECTOR_DASH_152,
-            VariationSelectorsSupplement::VariationSelectorDash153 => VARIATION_SELECTOR_DASH_153,
-            VariationSelectorsSupplement::VariationSelectorDash154 => VARIATION_SELECTOR_DASH_154,
-            VariationSelectorsSupplement::VariationSelectorDash155 => VARIATION_SELECTOR_DASH_155,
-            VariationSelectorsSupplement::VariationSelectorDash156 => VARIATION_SELECTOR_DASH_156,
-            VariationSelectorsSupplement::VariationSelectorDash157 => VARIATION_SELECTOR_DASH_157,
-            VariationSelectorsSupplement::VariationSelectorDash158 => VARIATION_SELECTOR_DASH_158,
-            VariationSelectorsSupplement::VariationSelectorDash159 => VARIATION_SELECTOR_DASH_159,
-            VariationSelectorsSupplement::VariationSelectorDash160 => VARIATION_SELECTOR_DASH_160,
-            VariationSelectorsSupplement::VariationSelectorDash161 => VARIATION_SELECTOR_DASH_161,
-            VariationSelectorsSupplement::VariationSelectorDash162 => VARIATION_SELECTOR_DASH_162,
-            VariationSelectorsSupplement::VariationSelectorDash163 => VARIATION_SELECTOR_DASH_163,
-            VariationSelectorsSupplement::VariationSelectorDash164 => VARIATION_SELECTOR_DASH_164,
-            VariationSelectorsSupplement::VariationSelectorDash165 => VARIATION_SELECTOR_DASH_165,
-            VariationSelectorsSupplement::VariationSelectorDash166 => VARIATION_SELECTOR_DASH_166,
-            VariationSelectorsSupplement::VariationSelectorDash167 => VARIATION_SELECTOR_DASH_167,
-            VariationSelectorsSupplement::VariationSelectorDash168 => VARIATION_SELECTOR_DASH_168,
-            VariationSelectorsSupplement::VariationSelectorDash169 => VARIATION_SELECTOR_DASH_169,
-            VariationSelectorsSupplement::VariationSelectorDash170 => VARIATION_SELECTOR_DASH_170,
-            VariationSelectorsSupplement::VariationSelectorDash171 => VARIATION_SELECTOR_DASH_171,
-            VariationSelectorsSupplement::VariationSelectorDash172 => VARIATION_SELECTOR_DASH_172,
-            VariationSelectorsSupplement::VariationSelectorDash173 => VARIATION_SELECTOR_DASH_173,
-            VariationSelectorsSupplement::VariationSelectorDash174 => VARIATION_SELECTOR_DASH_174,
-            VariationSelectorsSupplement::VariationSelectorDash175 => VARIATION_SELECTOR_DASH_175,
-            VariationSelectorsSupplement::VariationSelectorDash176 => VARIATION_SELECTOR_DASH_176,
-            VariationSelectorsSupplement::VariationSelectorDash177 => VARIATION_SELECTOR_DASH_177,
-            VariationSelectorsSupplement::VariationSelectorDash178 => VARIATION_SELECTOR_DASH_178,
-            VariationSelectorsSupplement::VariationSelectorDash179 => VARIATION_SELECTOR_DASH_179,
-            VariationSelectorsSupplement::VariationSelectorDash180 => VARIATION_SELECTOR_DASH_180,
-            VariationSelectorsSupplement::VariationSelectorDash181 => VARIATION_SELECTOR_DASH_181,
-            VariationSelectorsSupplement::VariationSelectorDash182 => VARIATION_SELECTOR_DASH_182,
-            VariationSelectorsSupplement::VariationSelectorDash183 => VARIATION_SELECTOR_DASH_183,
-            VariationSelectorsSupplement::VariationSelectorDash184 => VARIATION_SELECTOR_DASH_184,
-            VariationSelectorsSupplement::VariationSelectorDash185 => VARIATION_SELECTOR_DASH_185,
-            VariationSelectorsSupplement::VariationSelectorDash186 => VARIATION_SELECTOR_DASH_186,
-            VariationSelectorsSupplement::VariationSelectorDash187 => VARIATION_SELECTOR_DASH_187,
-            VariationSelectorsSupplement::VariationSelectorDash188 => VARIATION_SELECTOR_DASH_188,
-            VariationSelectorsSupplement::VariationSelectorDash189 => VARIATION_SELECTOR_DASH_189,
-            VariationSelectorsSupplement::VariationSelectorDash190 => VARIATION_SELECTOR_DASH_190,
-            VariationSelectorsSupplement::VariationSelectorDash191 => VARIATION_SELECTOR_DASH_191,
-            VariationSelectorsSupplement::VariationSelectorDash192 => VARIATION_SELECTOR_DASH_192,
-            VariationSelectorsSupplement::VariationSelectorDash193 => VARIATION_SELECTOR_DASH_193,
-            VariationSelectorsSupplement::VariationSelectorDash194 => VARIATION_SELECTOR_DASH_194,
-            VariationSelectorsSupplement::VariationSelectorDash195 => VARIATION_SELECTOR_DASH_195,
-            VariationSelectorsSupplement::VariationSelectorDash196 => VARIATION_SELECTOR_DASH_196,
-            VariationSelectorsSupplement::VariationSelectorDash197 => VARIATION_SELECTOR_DASH_197,
-            VariationSelectorsSupplement::VariationSelectorDash198 => VARIATION_SELECTOR_DASH_198,
-            VariationSelectorsSupplement::VariationSelectorDash199 => VARIATION_SELECTOR_DASH_199,
-            VariationSelectorsSupplement::VariationSelectorDash200 => VARIATION_SELECTOR_DASH_200,
-            VariationSelectorsSupplement::VariationSelectorDash201 => VARIATION_SELECTOR_DASH_201,
-            VariationSelectorsSupplement::VariationSelectorDash202 => VARIATION_SELECTOR_DASH_202,
-            VariationSelectorsSupplement::VariationSelectorDash203 => VARIATION_SELECTOR_DASH_203,
-            VariationSelectorsSupplement::VariationSelectorDash204 => VARIATION_SELECTOR_DASH_204,
-            VariationSelectorsSupplement::VariationSelectorDash205 => VARIATION_SELECTOR_DASH_205,
-            VariationSelectorsSupplement::VariationSelectorDash206 => VARIATION_SELECTOR_DASH_206,
-            VariationSelectorsSupplement::VariationSelectorDash207 => VARIATION_SELECTOR_DASH_207,
-            VariationSelectorsSupplement::VariationSelectorDash208 => VARIATION_SELECTOR_DASH_208,
-            VariationSelectorsSupplement::VariationSelectorDash209 => VARIATION_SELECTOR_DASH_209,
-            VariationSelectorsSupplement::VariationSelectorDash210 => VARIATION_SELECTOR_DASH_210,
-            VariationSelectorsSupplement::VariationSelectorDash211 => VARIATION_SELECTOR_DASH_211,
-            VariationSelectorsSupplement::VariationSelectorDash212 => VARIATION_SELECTOR_DASH_212,
-            VariationSelectorsSupplement::VariationSelectorDash213 => VARIATION_SELECTOR_DASH_213,
-            VariationSelectorsSupplement::VariationSelectorDash214 => VARIATION_SELECTOR_DASH_214,
-            VariationSelectorsSupplement::VariationSelectorDash215 => VARIATION_SELECTOR_DASH_215,
-            VariationSelectorsSupplement::VariationSelectorDash216 => VARIATION_SELECTOR_DASH_216,
-            VariationSelectorsSupplement::VariationSelectorDash217 => VARIATION_SELECTOR_DASH_217,
-            VariationSelectorsSupplement::VariationSelectorDash218 => VARIATION_SELECTOR_DASH_218,
-            VariationSelectorsSupplement::VariationSelectorDash219 => VARIATION_SELECTOR_DASH_219,
-            VariationSelectorsSupplement::VariationSelectorDash220 => VARIATION_SELECTOR_DASH_220,
-            VariationSelectorsSupplement::VariationSelectorDash221 => VARIATION_SELECTOR_DASH_221,
-            VariationSelectorsSupplement::VariationSelectorDash222 => VARIATION_SELECTOR_DASH_222,
-            VariationSelectorsSupplement::VariationSelectorDash223 => VARIATION_SELECTOR_DASH_223,
-            VariationSelectorsSupplement::VariationSelectorDash224 => VARIATION_SELECTOR_DASH_224,
-            VariationSelectorsSupplement::VariationSelectorDash225 => VARIATION_SELECTOR_DASH_225,
-            VariationSelectorsSupplement::VariationSelectorDash226 => VARIATION_SELECTOR_DASH_226,
-            VariationSelectorsSupplement::VariationSelectorDash227 => VARIATION_SELECTOR_DASH_227,
-            VariationSelectorsSupplement::VariationSelectorDash228 => VARIATION_SELECTOR_DASH_228,
-            VariationSelectorsSupplement::VariationSelectorDash229 => VARIATION_SELECTOR_DASH_229,
-            VariationSelectorsSupplement::VariationSelectorDash230 => VARIATION_SELECTOR_DASH_230,
-            VariationSelectorsSupplement::VariationSelectorDash231 => VARIATION_SELECTOR_DASH_231,
-            VariationSelectorsSupplement::VariationSelectorDash232 => VARIATION_SELECTOR_DASH_232,
-            VariationSelectorsSupplement::VariationSelectorDash233 => VARIATION_SELECTOR_DASH_233,
-            VariationSelectorsSupplement::VariationSelectorDash234 => VARIATION_SELECTOR_DASH_234,
-            VariationSelectorsSupplement::VariationSelectorDash235 => VARIATION_SELECTOR_DASH_235,
-            VariationSelectorsSupplement::VariationSelectorDash236 => VARIATION_SELECTOR_DASH_236,
-            VariationSelectorsSupplement::VariationSelectorDash237 => VARIATION_SELECTOR_DASH_237,
-            VariationSelectorsSupplement::VariationSelectorDash238 => VARIATION_SELECTOR_DASH_238,
-            VariationSelectorsSupplement::VariationSelectorDash239 => VARIATION_SELECTOR_DASH_239,
-            VariationSelectorsSupplement::VariationSelectorDash240 => VARIATION_SELECTOR_DASH_240,
-            VariationSelectorsSupplement::VariationSelectorDash241 => VARIATION_SELECTOR_DASH_241,
-            VariationSelectorsSupplement::VariationSelectorDash242 => VARIATION_SELECTOR_DASH_242,
-            VariationSelectorsSupplement::VariationSelectorDash243 => VARIATION_SELECTOR_DASH_243,
-            VariationSelectorsSupplement::VariationSelectorDash244 => VARIATION_SELECTOR_DASH_244,
-            VariationSelectorsSupplement::VariationSelectorDash245 => VARIATION_SELECTOR_DASH_245,
-            VariationSelectorsSupplement::VariationSelectorDash246 => VARIATION_SELECTOR_DASH_246,
-            VariationSelectorsSupplement::VariationSelectorDash247 => VARIATION_SELECTOR_DASH_247,
-            VariationSelectorsSupplement::VariationSelectorDash248 => VARIATION_SELECTOR_DASH_248,
-            VariationSelectorsSupplement::VariationSelectorDash249 => VARIATION_SELECTOR_DASH_249,
-            VariationSelectorsSupplement::VariationSelectorDash250 => VARIATION_SELECTOR_DASH_250,
-            VariationSelectorsSupplement::VariationSelectorDash251 => VARIATION_SELECTOR_DASH_251,
-            VariationSelectorsSupplement::VariationSelectorDash252 => VARIATION_SELECTOR_DASH_252,
-            VariationSelectorsSupplement::VariationSelectorDash253 => VARIATION_SELECTOR_DASH_253,
-            VariationSelectorsSupplement::VariationSelectorDash254 => VARIATION_SELECTOR_DASH_254,
-            VariationSelectorsSupplement::VariationSelectorDash255 => VARIATION_SELECTOR_DASH_255,
+            VariationSelectorsSupplement::VariationSelectorDash17 => '󠄀',
+            VariationSelectorsSupplement::VariationSelectorDash18 => '󠄁',
+            VariationSelectorsSupplement::VariationSelectorDash19 => '󠄂',
+            VariationSelectorsSupplement::VariationSelectorDash20 => '󠄃',
+            VariationSelectorsSupplement::VariationSelectorDash21 => '󠄄',
+            VariationSelectorsSupplement::VariationSelectorDash22 => '󠄅',
+            VariationSelectorsSupplement::VariationSelectorDash23 => '󠄆',
+            VariationSelectorsSupplement::VariationSelectorDash24 => '󠄇',
+            VariationSelectorsSupplement::VariationSelectorDash25 => '󠄈',
+            VariationSelectorsSupplement::VariationSelectorDash26 => '󠄉',
+            VariationSelectorsSupplement::VariationSelectorDash27 => '󠄊',
+            VariationSelectorsSupplement::VariationSelectorDash28 => '󠄋',
+            VariationSelectorsSupplement::VariationSelectorDash29 => '󠄌',
+            VariationSelectorsSupplement::VariationSelectorDash30 => '󠄍',
+            VariationSelectorsSupplement::VariationSelectorDash31 => '󠄎',
+            VariationSelectorsSupplement::VariationSelectorDash32 => '󠄏',
+            VariationSelectorsSupplement::VariationSelectorDash33 => '󠄐',
+            VariationSelectorsSupplement::VariationSelectorDash34 => '󠄑',
+            VariationSelectorsSupplement::VariationSelectorDash35 => '󠄒',
+            VariationSelectorsSupplement::VariationSelectorDash36 => '󠄓',
+            VariationSelectorsSupplement::VariationSelectorDash37 => '󠄔',
+            VariationSelectorsSupplement::VariationSelectorDash38 => '󠄕',
+            VariationSelectorsSupplement::VariationSelectorDash39 => '󠄖',
+            VariationSelectorsSupplement::VariationSelectorDash40 => '󠄗',
+            VariationSelectorsSupplement::VariationSelectorDash41 => '󠄘',
+            VariationSelectorsSupplement::VariationSelectorDash42 => '󠄙',
+            VariationSelectorsSupplement::VariationSelectorDash43 => '󠄚',
+            VariationSelectorsSupplement::VariationSelectorDash44 => '󠄛',
+            VariationSelectorsSupplement::VariationSelectorDash45 => '󠄜',
+            VariationSelectorsSupplement::VariationSelectorDash46 => '󠄝',
+            VariationSelectorsSupplement::VariationSelectorDash47 => '󠄞',
+            VariationSelectorsSupplement::VariationSelectorDash48 => '󠄟',
+            VariationSelectorsSupplement::VariationSelectorDash49 => '󠄠',
+            VariationSelectorsSupplement::VariationSelectorDash50 => '󠄡',
+            VariationSelectorsSupplement::VariationSelectorDash51 => '󠄢',
+            VariationSelectorsSupplement::VariationSelectorDash52 => '󠄣',
+            VariationSelectorsSupplement::VariationSelectorDash53 => '󠄤',
+            VariationSelectorsSupplement::VariationSelectorDash54 => '󠄥',
+            VariationSelectorsSupplement::VariationSelectorDash55 => '󠄦',
+            VariationSelectorsSupplement::VariationSelectorDash56 => '󠄧',
+            VariationSelectorsSupplement::VariationSelectorDash57 => '󠄨',
+            VariationSelectorsSupplement::VariationSelectorDash58 => '󠄩',
+            VariationSelectorsSupplement::VariationSelectorDash59 => '󠄪',
+            VariationSelectorsSupplement::VariationSelectorDash60 => '󠄫',
+            VariationSelectorsSupplement::VariationSelectorDash61 => '󠄬',
+            VariationSelectorsSupplement::VariationSelectorDash62 => '󠄭',
+            VariationSelectorsSupplement::VariationSelectorDash63 => '󠄮',
+            VariationSelectorsSupplement::VariationSelectorDash64 => '󠄯',
+            VariationSelectorsSupplement::VariationSelectorDash65 => '󠄰',
+            VariationSelectorsSupplement::VariationSelectorDash66 => '󠄱',
+            VariationSelectorsSupplement::VariationSelectorDash67 => '󠄲',
+            VariationSelectorsSupplement::VariationSelectorDash68 => '󠄳',
+            VariationSelectorsSupplement::VariationSelectorDash69 => '󠄴',
+            VariationSelectorsSupplement::VariationSelectorDash70 => '󠄵',
+            VariationSelectorsSupplement::VariationSelectorDash71 => '󠄶',
+            VariationSelectorsSupplement::VariationSelectorDash72 => '󠄷',
+            VariationSelectorsSupplement::VariationSelectorDash73 => '󠄸',
+            VariationSelectorsSupplement::VariationSelectorDash74 => '󠄹',
+            VariationSelectorsSupplement::VariationSelectorDash75 => '󠄺',
+            VariationSelectorsSupplement::VariationSelectorDash76 => '󠄻',
+            VariationSelectorsSupplement::VariationSelectorDash77 => '󠄼',
+            VariationSelectorsSupplement::VariationSelectorDash78 => '󠄽',
+            VariationSelectorsSupplement::VariationSelectorDash79 => '󠄾',
+            VariationSelectorsSupplement::VariationSelectorDash80 => '󠄿',
+            VariationSelectorsSupplement::VariationSelectorDash81 => '󠅀',
+            VariationSelectorsSupplement::VariationSelectorDash82 => '󠅁',
+            VariationSelectorsSupplement::VariationSelectorDash83 => '󠅂',
+            VariationSelectorsSupplement::VariationSelectorDash84 => '󠅃',
+            VariationSelectorsSupplement::VariationSelectorDash85 => '󠅄',
+            VariationSelectorsSupplement::VariationSelectorDash86 => '󠅅',
+            VariationSelectorsSupplement::VariationSelectorDash87 => '󠅆',
+            VariationSelectorsSupplement::VariationSelectorDash88 => '󠅇',
+            VariationSelectorsSupplement::VariationSelectorDash89 => '󠅈',
+            VariationSelectorsSupplement::VariationSelectorDash90 => '󠅉',
+            VariationSelectorsSupplement::VariationSelectorDash91 => '󠅊',
+            VariationSelectorsSupplement::VariationSelectorDash92 => '󠅋',
+            VariationSelectorsSupplement::VariationSelectorDash93 => '󠅌',
+            VariationSelectorsSupplement::VariationSelectorDash94 => '󠅍',
+            VariationSelectorsSupplement::VariationSelectorDash95 => '󠅎',
+            VariationSelectorsSupplement::VariationSelectorDash96 => '󠅏',
+            VariationSelectorsSupplement::VariationSelectorDash97 => '󠅐',
+            VariationSelectorsSupplement::VariationSelectorDash98 => '󠅑',
+            VariationSelectorsSupplement::VariationSelectorDash99 => '󠅒',
+            VariationSelectorsSupplement::VariationSelectorDash100 => '󠅓',
+            VariationSelectorsSupplement::VariationSelectorDash101 => '󠅔',
+            VariationSelectorsSupplement::VariationSelectorDash102 => '󠅕',
+            VariationSelectorsSupplement::VariationSelectorDash103 => '󠅖',
+            VariationSelectorsSupplement::VariationSelectorDash104 => '󠅗',
+            VariationSelectorsSupplement::VariationSelectorDash105 => '󠅘',
+            VariationSelectorsSupplement::VariationSelectorDash106 => '󠅙',
+            VariationSelectorsSupplement::VariationSelectorDash107 => '󠅚',
+            VariationSelectorsSupplement::VariationSelectorDash108 => '󠅛',
+            VariationSelectorsSupplement::VariationSelectorDash109 => '󠅜',
+            VariationSelectorsSupplement::VariationSelectorDash110 => '󠅝',
+            VariationSelectorsSupplement::VariationSelectorDash111 => '󠅞',
+            VariationSelectorsSupplement::VariationSelectorDash112 => '󠅟',
+            VariationSelectorsSupplement::VariationSelectorDash113 => '󠅠',
+            VariationSelectorsSupplement::VariationSelectorDash114 => '󠅡',
+            VariationSelectorsSupplement::VariationSelectorDash115 => '󠅢',
+            VariationSelectorsSupplement::VariationSelectorDash116 => '󠅣',
+            VariationSelectorsSupplement::VariationSelectorDash117 => '󠅤',
+            VariationSelectorsSupplement::VariationSelectorDash118 => '󠅥',
+            VariationSelectorsSupplement::VariationSelectorDash119 => '󠅦',
+            VariationSelectorsSupplement::VariationSelectorDash120 => '󠅧',
+            VariationSelectorsSupplement::VariationSelectorDash121 => '󠅨',
+            VariationSelectorsSupplement::VariationSelectorDash122 => '󠅩',
+            VariationSelectorsSupplement::VariationSelectorDash123 => '󠅪',
+            VariationSelectorsSupplement::VariationSelectorDash124 => '󠅫',
+            VariationSelectorsSupplement::VariationSelectorDash125 => '󠅬',
+            VariationSelectorsSupplement::VariationSelectorDash126 => '󠅭',
+            VariationSelectorsSupplement::VariationSelectorDash127 => '󠅮',
+            VariationSelectorsSupplement::VariationSelectorDash128 => '󠅯',
+            VariationSelectorsSupplement::VariationSelectorDash129 => '󠅰',
+            VariationSelectorsSupplement::VariationSelectorDash130 => '󠅱',
+            VariationSelectorsSupplement::VariationSelectorDash131 => '󠅲',
+            VariationSelectorsSupplement::VariationSelectorDash132 => '󠅳',
+            VariationSelectorsSupplement::VariationSelectorDash133 => '󠅴',
+            VariationSelectorsSupplement::VariationSelectorDash134 => '󠅵',
+            VariationSelectorsSupplement::VariationSelectorDash135 => '󠅶',
+            VariationSelectorsSupplement::VariationSelectorDash136 => '󠅷',
+            VariationSelectorsSupplement::VariationSelectorDash137 => '󠅸',
+            VariationSelectorsSupplement::VariationSelectorDash138 => '󠅹',
+            VariationSelectorsSupplement::VariationSelectorDash139 => '󠅺',
+            VariationSelectorsSupplement::VariationSelectorDash140 => '󠅻',
+            VariationSelectorsSupplement::VariationSelectorDash141 => '󠅼',
+            VariationSelectorsSupplement::VariationSelectorDash142 => '󠅽',
+            VariationSelectorsSupplement::VariationSelectorDash143 => '󠅾',
+            VariationSelectorsSupplement::VariationSelectorDash144 => '󠅿',
+            VariationSelectorsSupplement::VariationSelectorDash145 => '󠆀',
+            VariationSelectorsSupplement::VariationSelectorDash146 => '󠆁',
+            VariationSelectorsSupplement::VariationSelectorDash147 => '󠆂',
+            VariationSelectorsSupplement::VariationSelectorDash148 => '󠆃',
+            VariationSelectorsSupplement::VariationSelectorDash149 => '󠆄',
+            VariationSelectorsSupplement::VariationSelectorDash150 => '󠆅',
+            VariationSelectorsSupplement::VariationSelectorDash151 => '󠆆',
+            VariationSelectorsSupplement::VariationSelectorDash152 => '󠆇',
+            VariationSelectorsSupplement::VariationSelectorDash153 => '󠆈',
+            VariationSelectorsSupplement::VariationSelectorDash154 => '󠆉',
+            VariationSelectorsSupplement::VariationSelectorDash155 => '󠆊',
+            VariationSelectorsSupplement::VariationSelectorDash156 => '󠆋',
+            VariationSelectorsSupplement::VariationSelectorDash157 => '󠆌',
+            VariationSelectorsSupplement::VariationSelectorDash158 => '󠆍',
+            VariationSelectorsSupplement::VariationSelectorDash159 => '󠆎',
+            VariationSelectorsSupplement::VariationSelectorDash160 => '󠆏',
+            VariationSelectorsSupplement::VariationSelectorDash161 => '󠆐',
+            VariationSelectorsSupplement::VariationSelectorDash162 => '󠆑',
+            VariationSelectorsSupplement::VariationSelectorDash163 => '󠆒',
+            VariationSelectorsSupplement::VariationSelectorDash164 => '󠆓',
+            VariationSelectorsSupplement::VariationSelectorDash165 => '󠆔',
+            VariationSelectorsSupplement::VariationSelectorDash166 => '󠆕',
+            VariationSelectorsSupplement::VariationSelectorDash167 => '󠆖',
+            VariationSelectorsSupplement::VariationSelectorDash168 => '󠆗',
+            VariationSelectorsSupplement::VariationSelectorDash169 => '󠆘',
+            VariationSelectorsSupplement::VariationSelectorDash170 => '󠆙',
+            VariationSelectorsSupplement::VariationSelectorDash171 => '󠆚',
+            VariationSelectorsSupplement::VariationSelectorDash172 => '󠆛',
+            VariationSelectorsSupplement::VariationSelectorDash173 => '󠆜',
+            VariationSelectorsSupplement::VariationSelectorDash174 => '󠆝',
+            VariationSelectorsSupplement::VariationSelectorDash175 => '󠆞',
+            VariationSelectorsSupplement::VariationSelectorDash176 => '󠆟',
+            VariationSelectorsSupplement::VariationSelectorDash177 => '󠆠',
+            VariationSelectorsSupplement::VariationSelectorDash178 => '󠆡',
+            VariationSelectorsSupplement::VariationSelectorDash179 => '󠆢',
+            VariationSelectorsSupplement::VariationSelectorDash180 => '󠆣',
+            VariationSelectorsSupplement::VariationSelectorDash181 => '󠆤',
+            VariationSelectorsSupplement::VariationSelectorDash182 => '󠆥',
+            VariationSelectorsSupplement::VariationSelectorDash183 => '󠆦',
+            VariationSelectorsSupplement::VariationSelectorDash184 => '󠆧',
+            VariationSelectorsSupplement::VariationSelectorDash185 => '󠆨',
+            VariationSelectorsSupplement::VariationSelectorDash186 => '󠆩',
+            VariationSelectorsSupplement::VariationSelectorDash187 => '󠆪',
+            VariationSelectorsSupplement::VariationSelectorDash188 => '󠆫',
+            VariationSelectorsSupplement::VariationSelectorDash189 => '󠆬',
+            VariationSelectorsSupplement::VariationSelectorDash190 => '󠆭',
+            VariationSelectorsSupplement::VariationSelectorDash191 => '󠆮',
+            VariationSelectorsSupplement::VariationSelectorDash192 => '󠆯',
+            VariationSelectorsSupplement::VariationSelectorDash193 => '󠆰',
+            VariationSelectorsSupplement::VariationSelectorDash194 => '󠆱',
+            VariationSelectorsSupplement::VariationSelectorDash195 => '󠆲',
+            VariationSelectorsSupplement::VariationSelectorDash196 => '󠆳',
+            VariationSelectorsSupplement::VariationSelectorDash197 => '󠆴',
+            VariationSelectorsSupplement::VariationSelectorDash198 => '󠆵',
+            VariationSelectorsSupplement::VariationSelectorDash199 => '󠆶',
+            VariationSelectorsSupplement::VariationSelectorDash200 => '󠆷',
+            VariationSelectorsSupplement::VariationSelectorDash201 => '󠆸',
+            VariationSelectorsSupplement::VariationSelectorDash202 => '󠆹',
+            VariationSelectorsSupplement::VariationSelectorDash203 => '󠆺',
+            VariationSelectorsSupplement::VariationSelectorDash204 => '󠆻',
+            VariationSelectorsSupplement::VariationSelectorDash205 => '󠆼',
+            VariationSelectorsSupplement::VariationSelectorDash206 => '󠆽',
+            VariationSelectorsSupplement::VariationSelectorDash207 => '󠆾',
+            VariationSelectorsSupplement::VariationSelectorDash208 => '󠆿',
+            VariationSelectorsSupplement::VariationSelectorDash209 => '󠇀',
+            VariationSelectorsSupplement::VariationSelectorDash210 => '󠇁',
+            VariationSelectorsSupplement::VariationSelectorDash211 => '󠇂',
+            VariationSelectorsSupplement::VariationSelectorDash212 => '󠇃',
+            VariationSelectorsSupplement::VariationSelectorDash213 => '󠇄',
+            VariationSelectorsSupplement::VariationSelectorDash214 => '󠇅',
+            VariationSelectorsSupplement::VariationSelectorDash215 => '󠇆',
+            VariationSelectorsSupplement::VariationSelectorDash216 => '󠇇',
+            VariationSelectorsSupplement::VariationSelectorDash217 => '󠇈',
+            VariationSelectorsSupplement::VariationSelectorDash218 => '󠇉',
+            VariationSelectorsSupplement::VariationSelectorDash219 => '󠇊',
+            VariationSelectorsSupplement::VariationSelectorDash220 => '󠇋',
+            VariationSelectorsSupplement::VariationSelectorDash221 => '󠇌',
+            VariationSelectorsSupplement::VariationSelectorDash222 => '󠇍',
+            VariationSelectorsSupplement::VariationSelectorDash223 => '󠇎',
+            VariationSelectorsSupplement::VariationSelectorDash224 => '󠇏',
+            VariationSelectorsSupplement::VariationSelectorDash225 => '󠇐',
+            VariationSelectorsSupplement::VariationSelectorDash226 => '󠇑',
+            VariationSelectorsSupplement::VariationSelectorDash227 => '󠇒',
+            VariationSelectorsSupplement::VariationSelectorDash228 => '󠇓',
+            VariationSelectorsSupplement::VariationSelectorDash229 => '󠇔',
+            VariationSelectorsSupplement::VariationSelectorDash230 => '󠇕',
+            VariationSelectorsSupplement::VariationSelectorDash231 => '󠇖',
+            VariationSelectorsSupplement::VariationSelectorDash232 => '󠇗',
+            VariationSelectorsSupplement::VariationSelectorDash233 => '󠇘',
+            VariationSelectorsSupplement::VariationSelectorDash234 => '󠇙',
+            VariationSelectorsSupplement::VariationSelectorDash235 => '󠇚',
+            VariationSelectorsSupplement::VariationSelectorDash236 => '󠇛',
+            VariationSelectorsSupplement::VariationSelectorDash237 => '󠇜',
+            VariationSelectorsSupplement::VariationSelectorDash238 => '󠇝',
+            VariationSelectorsSupplement::VariationSelectorDash239 => '󠇞',
+            VariationSelectorsSupplement::VariationSelectorDash240 => '󠇟',
+            VariationSelectorsSupplement::VariationSelectorDash241 => '󠇠',
+            VariationSelectorsSupplement::VariationSelectorDash242 => '󠇡',
+            VariationSelectorsSupplement::VariationSelectorDash243 => '󠇢',
+            VariationSelectorsSupplement::VariationSelectorDash244 => '󠇣',
+            VariationSelectorsSupplement::VariationSelectorDash245 => '󠇤',
+            VariationSelectorsSupplement::VariationSelectorDash246 => '󠇥',
+            VariationSelectorsSupplement::VariationSelectorDash247 => '󠇦',
+            VariationSelectorsSupplement::VariationSelectorDash248 => '󠇧',
+            VariationSelectorsSupplement::VariationSelectorDash249 => '󠇨',
+            VariationSelectorsSupplement::VariationSelectorDash250 => '󠇩',
+            VariationSelectorsSupplement::VariationSelectorDash251 => '󠇪',
+            VariationSelectorsSupplement::VariationSelectorDash252 => '󠇫',
+            VariationSelectorsSupplement::VariationSelectorDash253 => '󠇬',
+            VariationSelectorsSupplement::VariationSelectorDash254 => '󠇭',
+            VariationSelectorsSupplement::VariationSelectorDash255 => '󠇮',
         }
     }
 }
@@ -1213,247 +731,246 @@ impl Into<char> for VariationSelectorsSupplement {
 impl std::convert::TryFrom<char> for VariationSelectorsSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            VARIATION_SELECTOR_DASH_17 => Ok(VariationSelectorsSupplement::VariationSelectorDash17),
-            VARIATION_SELECTOR_DASH_18 => Ok(VariationSelectorsSupplement::VariationSelectorDash18),
-            VARIATION_SELECTOR_DASH_19 => Ok(VariationSelectorsSupplement::VariationSelectorDash19),
-            VARIATION_SELECTOR_DASH_20 => Ok(VariationSelectorsSupplement::VariationSelectorDash20),
-            VARIATION_SELECTOR_DASH_21 => Ok(VariationSelectorsSupplement::VariationSelectorDash21),
-            VARIATION_SELECTOR_DASH_22 => Ok(VariationSelectorsSupplement::VariationSelectorDash22),
-            VARIATION_SELECTOR_DASH_23 => Ok(VariationSelectorsSupplement::VariationSelectorDash23),
-            VARIATION_SELECTOR_DASH_24 => Ok(VariationSelectorsSupplement::VariationSelectorDash24),
-            VARIATION_SELECTOR_DASH_25 => Ok(VariationSelectorsSupplement::VariationSelectorDash25),
-            VARIATION_SELECTOR_DASH_26 => Ok(VariationSelectorsSupplement::VariationSelectorDash26),
-            VARIATION_SELECTOR_DASH_27 => Ok(VariationSelectorsSupplement::VariationSelectorDash27),
-            VARIATION_SELECTOR_DASH_28 => Ok(VariationSelectorsSupplement::VariationSelectorDash28),
-            VARIATION_SELECTOR_DASH_29 => Ok(VariationSelectorsSupplement::VariationSelectorDash29),
-            VARIATION_SELECTOR_DASH_30 => Ok(VariationSelectorsSupplement::VariationSelectorDash30),
-            VARIATION_SELECTOR_DASH_31 => Ok(VariationSelectorsSupplement::VariationSelectorDash31),
-            VARIATION_SELECTOR_DASH_32 => Ok(VariationSelectorsSupplement::VariationSelectorDash32),
-            VARIATION_SELECTOR_DASH_33 => Ok(VariationSelectorsSupplement::VariationSelectorDash33),
-            VARIATION_SELECTOR_DASH_34 => Ok(VariationSelectorsSupplement::VariationSelectorDash34),
-            VARIATION_SELECTOR_DASH_35 => Ok(VariationSelectorsSupplement::VariationSelectorDash35),
-            VARIATION_SELECTOR_DASH_36 => Ok(VariationSelectorsSupplement::VariationSelectorDash36),
-            VARIATION_SELECTOR_DASH_37 => Ok(VariationSelectorsSupplement::VariationSelectorDash37),
-            VARIATION_SELECTOR_DASH_38 => Ok(VariationSelectorsSupplement::VariationSelectorDash38),
-            VARIATION_SELECTOR_DASH_39 => Ok(VariationSelectorsSupplement::VariationSelectorDash39),
-            VARIATION_SELECTOR_DASH_40 => Ok(VariationSelectorsSupplement::VariationSelectorDash40),
-            VARIATION_SELECTOR_DASH_41 => Ok(VariationSelectorsSupplement::VariationSelectorDash41),
-            VARIATION_SELECTOR_DASH_42 => Ok(VariationSelectorsSupplement::VariationSelectorDash42),
-            VARIATION_SELECTOR_DASH_43 => Ok(VariationSelectorsSupplement::VariationSelectorDash43),
-            VARIATION_SELECTOR_DASH_44 => Ok(VariationSelectorsSupplement::VariationSelectorDash44),
-            VARIATION_SELECTOR_DASH_45 => Ok(VariationSelectorsSupplement::VariationSelectorDash45),
-            VARIATION_SELECTOR_DASH_46 => Ok(VariationSelectorsSupplement::VariationSelectorDash46),
-            VARIATION_SELECTOR_DASH_47 => Ok(VariationSelectorsSupplement::VariationSelectorDash47),
-            VARIATION_SELECTOR_DASH_48 => Ok(VariationSelectorsSupplement::VariationSelectorDash48),
-            VARIATION_SELECTOR_DASH_49 => Ok(VariationSelectorsSupplement::VariationSelectorDash49),
-            VARIATION_SELECTOR_DASH_50 => Ok(VariationSelectorsSupplement::VariationSelectorDash50),
-            VARIATION_SELECTOR_DASH_51 => Ok(VariationSelectorsSupplement::VariationSelectorDash51),
-            VARIATION_SELECTOR_DASH_52 => Ok(VariationSelectorsSupplement::VariationSelectorDash52),
-            VARIATION_SELECTOR_DASH_53 => Ok(VariationSelectorsSupplement::VariationSelectorDash53),
-            VARIATION_SELECTOR_DASH_54 => Ok(VariationSelectorsSupplement::VariationSelectorDash54),
-            VARIATION_SELECTOR_DASH_55 => Ok(VariationSelectorsSupplement::VariationSelectorDash55),
-            VARIATION_SELECTOR_DASH_56 => Ok(VariationSelectorsSupplement::VariationSelectorDash56),
-            VARIATION_SELECTOR_DASH_57 => Ok(VariationSelectorsSupplement::VariationSelectorDash57),
-            VARIATION_SELECTOR_DASH_58 => Ok(VariationSelectorsSupplement::VariationSelectorDash58),
-            VARIATION_SELECTOR_DASH_59 => Ok(VariationSelectorsSupplement::VariationSelectorDash59),
-            VARIATION_SELECTOR_DASH_60 => Ok(VariationSelectorsSupplement::VariationSelectorDash60),
-            VARIATION_SELECTOR_DASH_61 => Ok(VariationSelectorsSupplement::VariationSelectorDash61),
-            VARIATION_SELECTOR_DASH_62 => Ok(VariationSelectorsSupplement::VariationSelectorDash62),
-            VARIATION_SELECTOR_DASH_63 => Ok(VariationSelectorsSupplement::VariationSelectorDash63),
-            VARIATION_SELECTOR_DASH_64 => Ok(VariationSelectorsSupplement::VariationSelectorDash64),
-            VARIATION_SELECTOR_DASH_65 => Ok(VariationSelectorsSupplement::VariationSelectorDash65),
-            VARIATION_SELECTOR_DASH_66 => Ok(VariationSelectorsSupplement::VariationSelectorDash66),
-            VARIATION_SELECTOR_DASH_67 => Ok(VariationSelectorsSupplement::VariationSelectorDash67),
-            VARIATION_SELECTOR_DASH_68 => Ok(VariationSelectorsSupplement::VariationSelectorDash68),
-            VARIATION_SELECTOR_DASH_69 => Ok(VariationSelectorsSupplement::VariationSelectorDash69),
-            VARIATION_SELECTOR_DASH_70 => Ok(VariationSelectorsSupplement::VariationSelectorDash70),
-            VARIATION_SELECTOR_DASH_71 => Ok(VariationSelectorsSupplement::VariationSelectorDash71),
-            VARIATION_SELECTOR_DASH_72 => Ok(VariationSelectorsSupplement::VariationSelectorDash72),
-            VARIATION_SELECTOR_DASH_73 => Ok(VariationSelectorsSupplement::VariationSelectorDash73),
-            VARIATION_SELECTOR_DASH_74 => Ok(VariationSelectorsSupplement::VariationSelectorDash74),
-            VARIATION_SELECTOR_DASH_75 => Ok(VariationSelectorsSupplement::VariationSelectorDash75),
-            VARIATION_SELECTOR_DASH_76 => Ok(VariationSelectorsSupplement::VariationSelectorDash76),
-            VARIATION_SELECTOR_DASH_77 => Ok(VariationSelectorsSupplement::VariationSelectorDash77),
-            VARIATION_SELECTOR_DASH_78 => Ok(VariationSelectorsSupplement::VariationSelectorDash78),
-            VARIATION_SELECTOR_DASH_79 => Ok(VariationSelectorsSupplement::VariationSelectorDash79),
-            VARIATION_SELECTOR_DASH_80 => Ok(VariationSelectorsSupplement::VariationSelectorDash80),
-            VARIATION_SELECTOR_DASH_81 => Ok(VariationSelectorsSupplement::VariationSelectorDash81),
-            VARIATION_SELECTOR_DASH_82 => Ok(VariationSelectorsSupplement::VariationSelectorDash82),
-            VARIATION_SELECTOR_DASH_83 => Ok(VariationSelectorsSupplement::VariationSelectorDash83),
-            VARIATION_SELECTOR_DASH_84 => Ok(VariationSelectorsSupplement::VariationSelectorDash84),
-            VARIATION_SELECTOR_DASH_85 => Ok(VariationSelectorsSupplement::VariationSelectorDash85),
-            VARIATION_SELECTOR_DASH_86 => Ok(VariationSelectorsSupplement::VariationSelectorDash86),
-            VARIATION_SELECTOR_DASH_87 => Ok(VariationSelectorsSupplement::VariationSelectorDash87),
-            VARIATION_SELECTOR_DASH_88 => Ok(VariationSelectorsSupplement::VariationSelectorDash88),
-            VARIATION_SELECTOR_DASH_89 => Ok(VariationSelectorsSupplement::VariationSelectorDash89),
-            VARIATION_SELECTOR_DASH_90 => Ok(VariationSelectorsSupplement::VariationSelectorDash90),
-            VARIATION_SELECTOR_DASH_91 => Ok(VariationSelectorsSupplement::VariationSelectorDash91),
-            VARIATION_SELECTOR_DASH_92 => Ok(VariationSelectorsSupplement::VariationSelectorDash92),
-            VARIATION_SELECTOR_DASH_93 => Ok(VariationSelectorsSupplement::VariationSelectorDash93),
-            VARIATION_SELECTOR_DASH_94 => Ok(VariationSelectorsSupplement::VariationSelectorDash94),
-            VARIATION_SELECTOR_DASH_95 => Ok(VariationSelectorsSupplement::VariationSelectorDash95),
-            VARIATION_SELECTOR_DASH_96 => Ok(VariationSelectorsSupplement::VariationSelectorDash96),
-            VARIATION_SELECTOR_DASH_97 => Ok(VariationSelectorsSupplement::VariationSelectorDash97),
-            VARIATION_SELECTOR_DASH_98 => Ok(VariationSelectorsSupplement::VariationSelectorDash98),
-            VARIATION_SELECTOR_DASH_99 => Ok(VariationSelectorsSupplement::VariationSelectorDash99),
-            VARIATION_SELECTOR_DASH_100 => Ok(VariationSelectorsSupplement::VariationSelectorDash100),
-            VARIATION_SELECTOR_DASH_101 => Ok(VariationSelectorsSupplement::VariationSelectorDash101),
-            VARIATION_SELECTOR_DASH_102 => Ok(VariationSelectorsSupplement::VariationSelectorDash102),
-            VARIATION_SELECTOR_DASH_103 => Ok(VariationSelectorsSupplement::VariationSelectorDash103),
-            VARIATION_SELECTOR_DASH_104 => Ok(VariationSelectorsSupplement::VariationSelectorDash104),
-            VARIATION_SELECTOR_DASH_105 => Ok(VariationSelectorsSupplement::VariationSelectorDash105),
-            VARIATION_SELECTOR_DASH_106 => Ok(VariationSelectorsSupplement::VariationSelectorDash106),
-            VARIATION_SELECTOR_DASH_107 => Ok(VariationSelectorsSupplement::VariationSelectorDash107),
-            VARIATION_SELECTOR_DASH_108 => Ok(VariationSelectorsSupplement::VariationSelectorDash108),
-            VARIATION_SELECTOR_DASH_109 => Ok(VariationSelectorsSupplement::VariationSelectorDash109),
-            VARIATION_SELECTOR_DASH_110 => Ok(VariationSelectorsSupplement::VariationSelectorDash110),
-            VARIATION_SELECTOR_DASH_111 => Ok(VariationSelectorsSupplement::VariationSelectorDash111),
-            VARIATION_SELECTOR_DASH_112 => Ok(VariationSelectorsSupplement::VariationSelectorDash112),
-            VARIATION_SELECTOR_DASH_113 => Ok(VariationSelectorsSupplement::VariationSelectorDash113),
-            VARIATION_SELECTOR_DASH_114 => Ok(VariationSelectorsSupplement::VariationSelectorDash114),
-            VARIATION_SELECTOR_DASH_115 => Ok(VariationSelectorsSupplement::VariationSelectorDash115),
-            VARIATION_SELECTOR_DASH_116 => Ok(VariationSelectorsSupplement::VariationSelectorDash116),
-            VARIATION_SELECTOR_DASH_117 => Ok(VariationSelectorsSupplement::VariationSelectorDash117),
-            VARIATION_SELECTOR_DASH_118 => Ok(VariationSelectorsSupplement::VariationSelectorDash118),
-            VARIATION_SELECTOR_DASH_119 => Ok(VariationSelectorsSupplement::VariationSelectorDash119),
-            VARIATION_SELECTOR_DASH_120 => Ok(VariationSelectorsSupplement::VariationSelectorDash120),
-            VARIATION_SELECTOR_DASH_121 => Ok(VariationSelectorsSupplement::VariationSelectorDash121),
-            VARIATION_SELECTOR_DASH_122 => Ok(VariationSelectorsSupplement::VariationSelectorDash122),
-            VARIATION_SELECTOR_DASH_123 => Ok(VariationSelectorsSupplement::VariationSelectorDash123),
-            VARIATION_SELECTOR_DASH_124 => Ok(VariationSelectorsSupplement::VariationSelectorDash124),
-            VARIATION_SELECTOR_DASH_125 => Ok(VariationSelectorsSupplement::VariationSelectorDash125),
-            VARIATION_SELECTOR_DASH_126 => Ok(VariationSelectorsSupplement::VariationSelectorDash126),
-            VARIATION_SELECTOR_DASH_127 => Ok(VariationSelectorsSupplement::VariationSelectorDash127),
-            VARIATION_SELECTOR_DASH_128 => Ok(VariationSelectorsSupplement::VariationSelectorDash128),
-            VARIATION_SELECTOR_DASH_129 => Ok(VariationSelectorsSupplement::VariationSelectorDash129),
-            VARIATION_SELECTOR_DASH_130 => Ok(VariationSelectorsSupplement::VariationSelectorDash130),
-            VARIATION_SELECTOR_DASH_131 => Ok(VariationSelectorsSupplement::VariationSelectorDash131),
-            VARIATION_SELECTOR_DASH_132 => Ok(VariationSelectorsSupplement::VariationSelectorDash132),
-            VARIATION_SELECTOR_DASH_133 => Ok(VariationSelectorsSupplement::VariationSelectorDash133),
-            VARIATION_SELECTOR_DASH_134 => Ok(VariationSelectorsSupplement::VariationSelectorDash134),
-            VARIATION_SELECTOR_DASH_135 => Ok(VariationSelectorsSupplement::VariationSelectorDash135),
-            VARIATION_SELECTOR_DASH_136 => Ok(VariationSelectorsSupplement::VariationSelectorDash136),
-            VARIATION_SELECTOR_DASH_137 => Ok(VariationSelectorsSupplement::VariationSelectorDash137),
-            VARIATION_SELECTOR_DASH_138 => Ok(VariationSelectorsSupplement::VariationSelectorDash138),
-            VARIATION_SELECTOR_DASH_139 => Ok(VariationSelectorsSupplement::VariationSelectorDash139),
-            VARIATION_SELECTOR_DASH_140 => Ok(VariationSelectorsSupplement::VariationSelectorDash140),
-            VARIATION_SELECTOR_DASH_141 => Ok(VariationSelectorsSupplement::VariationSelectorDash141),
-            VARIATION_SELECTOR_DASH_142 => Ok(VariationSelectorsSupplement::VariationSelectorDash142),
-            VARIATION_SELECTOR_DASH_143 => Ok(VariationSelectorsSupplement::VariationSelectorDash143),
-            VARIATION_SELECTOR_DASH_144 => Ok(VariationSelectorsSupplement::VariationSelectorDash144),
-            VARIATION_SELECTOR_DASH_145 => Ok(VariationSelectorsSupplement::VariationSelectorDash145),
-            VARIATION_SELECTOR_DASH_146 => Ok(VariationSelectorsSupplement::VariationSelectorDash146),
-            VARIATION_SELECTOR_DASH_147 => Ok(VariationSelectorsSupplement::VariationSelectorDash147),
-            VARIATION_SELECTOR_DASH_148 => Ok(VariationSelectorsSupplement::VariationSelectorDash148),
-            VARIATION_SELECTOR_DASH_149 => Ok(VariationSelectorsSupplement::VariationSelectorDash149),
-            VARIATION_SELECTOR_DASH_150 => Ok(VariationSelectorsSupplement::VariationSelectorDash150),
-            VARIATION_SELECTOR_DASH_151 => Ok(VariationSelectorsSupplement::VariationSelectorDash151),
-            VARIATION_SELECTOR_DASH_152 => Ok(VariationSelectorsSupplement::VariationSelectorDash152),
-            VARIATION_SELECTOR_DASH_153 => Ok(VariationSelectorsSupplement::VariationSelectorDash153),
-            VARIATION_SELECTOR_DASH_154 => Ok(VariationSelectorsSupplement::VariationSelectorDash154),
-            VARIATION_SELECTOR_DASH_155 => Ok(VariationSelectorsSupplement::VariationSelectorDash155),
-            VARIATION_SELECTOR_DASH_156 => Ok(VariationSelectorsSupplement::VariationSelectorDash156),
-            VARIATION_SELECTOR_DASH_157 => Ok(VariationSelectorsSupplement::VariationSelectorDash157),
-            VARIATION_SELECTOR_DASH_158 => Ok(VariationSelectorsSupplement::VariationSelectorDash158),
-            VARIATION_SELECTOR_DASH_159 => Ok(VariationSelectorsSupplement::VariationSelectorDash159),
-            VARIATION_SELECTOR_DASH_160 => Ok(VariationSelectorsSupplement::VariationSelectorDash160),
-            VARIATION_SELECTOR_DASH_161 => Ok(VariationSelectorsSupplement::VariationSelectorDash161),
-            VARIATION_SELECTOR_DASH_162 => Ok(VariationSelectorsSupplement::VariationSelectorDash162),
-            VARIATION_SELECTOR_DASH_163 => Ok(VariationSelectorsSupplement::VariationSelectorDash163),
-            VARIATION_SELECTOR_DASH_164 => Ok(VariationSelectorsSupplement::VariationSelectorDash164),
-            VARIATION_SELECTOR_DASH_165 => Ok(VariationSelectorsSupplement::VariationSelectorDash165),
-            VARIATION_SELECTOR_DASH_166 => Ok(VariationSelectorsSupplement::VariationSelectorDash166),
-            VARIATION_SELECTOR_DASH_167 => Ok(VariationSelectorsSupplement::VariationSelectorDash167),
-            VARIATION_SELECTOR_DASH_168 => Ok(VariationSelectorsSupplement::VariationSelectorDash168),
-            VARIATION_SELECTOR_DASH_169 => Ok(VariationSelectorsSupplement::VariationSelectorDash169),
-            VARIATION_SELECTOR_DASH_170 => Ok(VariationSelectorsSupplement::VariationSelectorDash170),
-            VARIATION_SELECTOR_DASH_171 => Ok(VariationSelectorsSupplement::VariationSelectorDash171),
-            VARIATION_SELECTOR_DASH_172 => Ok(VariationSelectorsSupplement::VariationSelectorDash172),
-            VARIATION_SELECTOR_DASH_173 => Ok(VariationSelectorsSupplement::VariationSelectorDash173),
-            VARIATION_SELECTOR_DASH_174 => Ok(VariationSelectorsSupplement::VariationSelectorDash174),
-            VARIATION_SELECTOR_DASH_175 => Ok(VariationSelectorsSupplement::VariationSelectorDash175),
-            VARIATION_SELECTOR_DASH_176 => Ok(VariationSelectorsSupplement::VariationSelectorDash176),
-            VARIATION_SELECTOR_DASH_177 => Ok(VariationSelectorsSupplement::VariationSelectorDash177),
-            VARIATION_SELECTOR_DASH_178 => Ok(VariationSelectorsSupplement::VariationSelectorDash178),
-            VARIATION_SELECTOR_DASH_179 => Ok(VariationSelectorsSupplement::VariationSelectorDash179),
-            VARIATION_SELECTOR_DASH_180 => Ok(VariationSelectorsSupplement::VariationSelectorDash180),
-            VARIATION_SELECTOR_DASH_181 => Ok(VariationSelectorsSupplement::VariationSelectorDash181),
-            VARIATION_SELECTOR_DASH_182 => Ok(VariationSelectorsSupplement::VariationSelectorDash182),
-            VARIATION_SELECTOR_DASH_183 => Ok(VariationSelectorsSupplement::VariationSelectorDash183),
-            VARIATION_SELECTOR_DASH_184 => Ok(VariationSelectorsSupplement::VariationSelectorDash184),
-            VARIATION_SELECTOR_DASH_185 => Ok(VariationSelectorsSupplement::VariationSelectorDash185),
-            VARIATION_SELECTOR_DASH_186 => Ok(VariationSelectorsSupplement::VariationSelectorDash186),
-            VARIATION_SELECTOR_DASH_187 => Ok(VariationSelectorsSupplement::VariationSelectorDash187),
-            VARIATION_SELECTOR_DASH_188 => Ok(VariationSelectorsSupplement::VariationSelectorDash188),
-            VARIATION_SELECTOR_DASH_189 => Ok(VariationSelectorsSupplement::VariationSelectorDash189),
-            VARIATION_SELECTOR_DASH_190 => Ok(VariationSelectorsSupplement::VariationSelectorDash190),
-            VARIATION_SELECTOR_DASH_191 => Ok(VariationSelectorsSupplement::VariationSelectorDash191),
-            VARIATION_SELECTOR_DASH_192 => Ok(VariationSelectorsSupplement::VariationSelectorDash192),
-            VARIATION_SELECTOR_DASH_193 => Ok(VariationSelectorsSupplement::VariationSelectorDash193),
-            VARIATION_SELECTOR_DASH_194 => Ok(VariationSelectorsSupplement::VariationSelectorDash194),
-            VARIATION_SELECTOR_DASH_195 => Ok(VariationSelectorsSupplement::VariationSelectorDash195),
-            VARIATION_SELECTOR_DASH_196 => Ok(VariationSelectorsSupplement::VariationSelectorDash196),
-            VARIATION_SELECTOR_DASH_197 => Ok(VariationSelectorsSupplement::VariationSelectorDash197),
-            VARIATION_SELECTOR_DASH_198 => Ok(VariationSelectorsSupplement::VariationSelectorDash198),
-            VARIATION_SELECTOR_DASH_199 => Ok(VariationSelectorsSupplement::VariationSelectorDash199),
-            VARIATION_SELECTOR_DASH_200 => Ok(VariationSelectorsSupplement::VariationSelectorDash200),
-            VARIATION_SELECTOR_DASH_201 => Ok(VariationSelectorsSupplement::VariationSelectorDash201),
-            VARIATION_SELECTOR_DASH_202 => Ok(VariationSelectorsSupplement::VariationSelectorDash202),
-            VARIATION_SELECTOR_DASH_203 => Ok(VariationSelectorsSupplement::VariationSelectorDash203),
-            VARIATION_SELECTOR_DASH_204 => Ok(VariationSelectorsSupplement::VariationSelectorDash204),
-            VARIATION_SELECTOR_DASH_205 => Ok(VariationSelectorsSupplement::VariationSelectorDash205),
-            VARIATION_SELECTOR_DASH_206 => Ok(VariationSelectorsSupplement::VariationSelectorDash206),
-            VARIATION_SELECTOR_DASH_207 => Ok(VariationSelectorsSupplement::VariationSelectorDash207),
-            VARIATION_SELECTOR_DASH_208 => Ok(VariationSelectorsSupplement::VariationSelectorDash208),
-            VARIATION_SELECTOR_DASH_209 => Ok(VariationSelectorsSupplement::VariationSelectorDash209),
-            VARIATION_SELECTOR_DASH_210 => Ok(VariationSelectorsSupplement::VariationSelectorDash210),
-            VARIATION_SELECTOR_DASH_211 => Ok(VariationSelectorsSupplement::VariationSelectorDash211),
-            VARIATION_SELECTOR_DASH_212 => Ok(VariationSelectorsSupplement::VariationSelectorDash212),
-            VARIATION_SELECTOR_DASH_213 => Ok(VariationSelectorsSupplement::VariationSelectorDash213),
-            VARIATION_SELECTOR_DASH_214 => Ok(VariationSelectorsSupplement::VariationSelectorDash214),
-            VARIATION_SELECTOR_DASH_215 => Ok(VariationSelectorsSupplement::VariationSelectorDash215),
-            VARIATION_SELECTOR_DASH_216 => Ok(VariationSelectorsSupplement::VariationSelectorDash216),
-            VARIATION_SELECTOR_DASH_217 => Ok(VariationSelectorsSupplement::VariationSelectorDash217),
-            VARIATION_SELECTOR_DASH_218 => Ok(VariationSelectorsSupplement::VariationSelectorDash218),
-            VARIATION_SELECTOR_DASH_219 => Ok(VariationSelectorsSupplement::VariationSelectorDash219),
-            VARIATION_SELECTOR_DASH_220 => Ok(VariationSelectorsSupplement::VariationSelectorDash220),
-            VARIATION_SELECTOR_DASH_221 => Ok(VariationSelectorsSupplement::VariationSelectorDash221),
-            VARIATION_SELECTOR_DASH_222 => Ok(VariationSelectorsSupplement::VariationSelectorDash222),
-            VARIATION_SELECTOR_DASH_223 => Ok(VariationSelectorsSupplement::VariationSelectorDash223),
-            VARIATION_SELECTOR_DASH_224 => Ok(VariationSelectorsSupplement::VariationSelectorDash224),
-            VARIATION_SELECTOR_DASH_225 => Ok(VariationSelectorsSupplement::VariationSelectorDash225),
-            VARIATION_SELECTOR_DASH_226 => Ok(VariationSelectorsSupplement::VariationSelectorDash226),
-            VARIATION_SELECTOR_DASH_227 => Ok(VariationSelectorsSupplement::VariationSelectorDash227),
-            VARIATION_SELECTOR_DASH_228 => Ok(VariationSelectorsSupplement::VariationSelectorDash228),
-            VARIATION_SELECTOR_DASH_229 => Ok(VariationSelectorsSupplement::VariationSelectorDash229),
-            VARIATION_SELECTOR_DASH_230 => Ok(VariationSelectorsSupplement::VariationSelectorDash230),
-            VARIATION_SELECTOR_DASH_231 => Ok(VariationSelectorsSupplement::VariationSelectorDash231),
-            VARIATION_SELECTOR_DASH_232 => Ok(VariationSelectorsSupplement::VariationSelectorDash232),
-            VARIATION_SELECTOR_DASH_233 => Ok(VariationSelectorsSupplement::VariationSelectorDash233),
-            VARIATION_SELECTOR_DASH_234 => Ok(VariationSelectorsSupplement::VariationSelectorDash234),
-            VARIATION_SELECTOR_DASH_235 => Ok(VariationSelectorsSupplement::VariationSelectorDash235),
-            VARIATION_SELECTOR_DASH_236 => Ok(VariationSelectorsSupplement::VariationSelectorDash236),
-            VARIATION_SELECTOR_DASH_237 => Ok(VariationSelectorsSupplement::VariationSelectorDash237),
-            VARIATION_SELECTOR_DASH_238 => Ok(VariationSelectorsSupplement::VariationSelectorDash238),
-            VARIATION_SELECTOR_DASH_239 => Ok(VariationSelectorsSupplement::VariationSelectorDash239),
-            VARIATION_SELECTOR_DASH_240 => Ok(VariationSelectorsSupplement::VariationSelectorDash240),
-            VARIATION_SELECTOR_DASH_241 => Ok(VariationSelectorsSupplement::VariationSelectorDash241),
-            VARIATION_SELECTOR_DASH_242 => Ok(VariationSelectorsSupplement::VariationSelectorDash242),
-            VARIATION_SELECTOR_DASH_243 => Ok(VariationSelectorsSupplement::VariationSelectorDash243),
-            VARIATION_SELECTOR_DASH_244 => Ok(VariationSelectorsSupplement::VariationSelectorDash244),
-            VARIATION_SELECTOR_DASH_245 => Ok(VariationSelectorsSupplement::VariationSelectorDash245),
-            VARIATION_SELECTOR_DASH_246 => Ok(VariationSelectorsSupplement::VariationSelectorDash246),
-            VARIATION_SELECTOR_DASH_247 => Ok(VariationSelectorsSupplement::VariationSelectorDash247),
-            VARIATION_SELECTOR_DASH_248 => Ok(VariationSelectorsSupplement::VariationSelectorDash248),
-            VARIATION_SELECTOR_DASH_249 => Ok(VariationSelectorsSupplement::VariationSelectorDash249),
-            VARIATION_SELECTOR_DASH_250 => Ok(VariationSelectorsSupplement::VariationSelectorDash250),
-            VARIATION_SELECTOR_DASH_251 => Ok(VariationSelectorsSupplement::VariationSelectorDash251),
-            VARIATION_SELECTOR_DASH_252 => Ok(VariationSelectorsSupplement::VariationSelectorDash252),
-            VARIATION_SELECTOR_DASH_253 => Ok(VariationSelectorsSupplement::VariationSelectorDash253),
-            VARIATION_SELECTOR_DASH_254 => Ok(VariationSelectorsSupplement::VariationSelectorDash254),
-            VARIATION_SELECTOR_DASH_255 => Ok(VariationSelectorsSupplement::VariationSelectorDash255),
+            '󠄀' => Ok(VariationSelectorsSupplement::VariationSelectorDash17),
+            '󠄁' => Ok(VariationSelectorsSupplement::VariationSelectorDash18),
+            '󠄂' => Ok(VariationSelectorsSupplement::VariationSelectorDash19),
+            '󠄃' => Ok(VariationSelectorsSupplement::VariationSelectorDash20),
+            '󠄄' => Ok(VariationSelectorsSupplement::VariationSelectorDash21),
+            '󠄅' => Ok(VariationSelectorsSupplement::VariationSelectorDash22),
+            '󠄆' => Ok(VariationSelectorsSupplement::VariationSelectorDash23),
+            '󠄇' => Ok(VariationSelectorsSupplement::VariationSelectorDash24),
+            '󠄈' => Ok(VariationSelectorsSupplement::VariationSelectorDash25),
+            '󠄉' => Ok(VariationSelectorsSupplement::VariationSelectorDash26),
+            '󠄊' => Ok(VariationSelectorsSupplement::VariationSelectorDash27),
+            '󠄋' => Ok(VariationSelectorsSupplement::VariationSelectorDash28),
+            '󠄌' => Ok(VariationSelectorsSupplement::VariationSelectorDash29),
+            '󠄍' => Ok(VariationSelectorsSupplement::VariationSelectorDash30),
+            '󠄎' => Ok(VariationSelectorsSupplement::VariationSelectorDash31),
+            '󠄏' => Ok(VariationSelectorsSupplement::VariationSelectorDash32),
+            '󠄐' => Ok(VariationSelectorsSupplement::VariationSelectorDash33),
+            '󠄑' => Ok(VariationSelectorsSupplement::VariationSelectorDash34),
+            '󠄒' => Ok(VariationSelectorsSupplement::VariationSelectorDash35),
+            '󠄓' => Ok(VariationSelectorsSupplement::VariationSelectorDash36),
+            '󠄔' => Ok(VariationSelectorsSupplement::VariationSelectorDash37),
+            '󠄕' => Ok(VariationSelectorsSupplement::VariationSelectorDash38),
+            '󠄖' => Ok(VariationSelectorsSupplement::VariationSelectorDash39),
+            '󠄗' => Ok(VariationSelectorsSupplement::VariationSelectorDash40),
+            '󠄘' => Ok(VariationSelectorsSupplement::VariationSelectorDash41),
+            '󠄙' => Ok(VariationSelectorsSupplement::VariationSelectorDash42),
+            '󠄚' => Ok(VariationSelectorsSupplement::VariationSelectorDash43),
+            '󠄛' => Ok(VariationSelectorsSupplement::VariationSelectorDash44),
+            '󠄜' => Ok(VariationSelectorsSupplement::VariationSelectorDash45),
+            '󠄝' => Ok(VariationSelectorsSupplement::VariationSelectorDash46),
+            '󠄞' => Ok(VariationSelectorsSupplement::VariationSelectorDash47),
+            '󠄟' => Ok(VariationSelectorsSupplement::VariationSelectorDash48),
+            '󠄠' => Ok(VariationSelectorsSupplement::VariationSelectorDash49),
+            '󠄡' => Ok(VariationSelectorsSupplement::VariationSelectorDash50),
+            '󠄢' => Ok(VariationSelectorsSupplement::VariationSelectorDash51),
+            '󠄣' => Ok(VariationSelectorsSupplement::VariationSelectorDash52),
+            '󠄤' => Ok(VariationSelectorsSupplement::VariationSelectorDash53),
+            '󠄥' => Ok(VariationSelectorsSupplement::VariationSelectorDash54),
+            '󠄦' => Ok(VariationSelectorsSupplement::VariationSelectorDash55),
+            '󠄧' => Ok(VariationSelectorsSupplement::VariationSelectorDash56),
+            '󠄨' => Ok(VariationSelectorsSupplement::VariationSelectorDash57),
+            '󠄩' => Ok(VariationSelectorsSupplement::VariationSelectorDash58),
+            '󠄪' => Ok(VariationSelectorsSupplement::VariationSelectorDash59),
+            '󠄫' => Ok(VariationSelectorsSupplement::VariationSelectorDash60),
+            '󠄬' => Ok(VariationSelectorsSupplement::VariationSelectorDash61),
+            '󠄭' => Ok(VariationSelectorsSupplement::VariationSelectorDash62),
+            '󠄮' => Ok(VariationSelectorsSupplement::VariationSelectorDash63),
+            '󠄯' => Ok(VariationSelectorsSupplement::VariationSelectorDash64),
+            '󠄰' => Ok(VariationSelectorsSupplement::VariationSelectorDash65),
+            '󠄱' => Ok(VariationSelectorsSupplement::VariationSelectorDash66),
+            '󠄲' => Ok(VariationSelectorsSupplement::VariationSelectorDash67),
+            '󠄳' => Ok(VariationSelectorsSupplement::VariationSelectorDash68),
+            '󠄴' => Ok(VariationSelectorsSupplement::VariationSelectorDash69),
+            '󠄵' => Ok(VariationSelectorsSupplement::VariationSelectorDash70),
+            '󠄶' => Ok(VariationSelectorsSupplement::VariationSelectorDash71),
+            '󠄷' => Ok(VariationSelectorsSupplement::VariationSelectorDash72),
+            '󠄸' => Ok(VariationSelectorsSupplement::VariationSelectorDash73),
+            '󠄹' => Ok(VariationSelectorsSupplement::VariationSelectorDash74),
+            '󠄺' => Ok(VariationSelectorsSupplement::VariationSelectorDash75),
+            '󠄻' => Ok(VariationSelectorsSupplement::VariationSelectorDash76),
+            '󠄼' => Ok(VariationSelectorsSupplement::VariationSelectorDash77),
+            '󠄽' => Ok(VariationSelectorsSupplement::VariationSelectorDash78),
+            '󠄾' => Ok(VariationSelectorsSupplement::VariationSelectorDash79),
+            '󠄿' => Ok(VariationSelectorsSupplement::VariationSelectorDash80),
+            '󠅀' => Ok(VariationSelectorsSupplement::VariationSelectorDash81),
+            '󠅁' => Ok(VariationSelectorsSupplement::VariationSelectorDash82),
+            '󠅂' => Ok(VariationSelectorsSupplement::VariationSelectorDash83),
+            '󠅃' => Ok(VariationSelectorsSupplement::VariationSelectorDash84),
+            '󠅄' => Ok(VariationSelectorsSupplement::VariationSelectorDash85),
+            '󠅅' => Ok(VariationSelectorsSupplement::VariationSelectorDash86),
+            '󠅆' => Ok(VariationSelectorsSupplement::VariationSelectorDash87),
+            '󠅇' => Ok(VariationSelectorsSupplement::VariationSelectorDash88),
+            '󠅈' => Ok(VariationSelectorsSupplement::VariationSelectorDash89),
+            '󠅉' => Ok(VariationSelectorsSupplement::VariationSelectorDash90),
+            '󠅊' => Ok(VariationSelectorsSupplement::VariationSelectorDash91),
+            '󠅋' => Ok(VariationSelectorsSupplement::VariationSelectorDash92),
+            '󠅌' => Ok(VariationSelectorsSupplement::VariationSelectorDash93),
+            '󠅍' => Ok(VariationSelectorsSupplement::VariationSelectorDash94),
+            '󠅎' => Ok(VariationSelectorsSupplement::VariationSelectorDash95),
+            '󠅏' => Ok(VariationSelectorsSupplement::VariationSelectorDash96),
+            '󠅐' => Ok(VariationSelectorsSupplement::VariationSelectorDash97),
+            '󠅑' => Ok(VariationSelectorsSupplement::VariationSelectorDash98),
+            '󠅒' => Ok(VariationSelectorsSupplement::VariationSelectorDash99),
+            '󠅓' => Ok(VariationSelectorsSupplement::VariationSelectorDash100),
+            '󠅔' => Ok(VariationSelectorsSupplement::VariationSelectorDash101),
+            '󠅕' => Ok(VariationSelectorsSupplement::VariationSelectorDash102),
+            '󠅖' => Ok(VariationSelectorsSupplement::VariationSelectorDash103),
+            '󠅗' => Ok(VariationSelectorsSupplement::VariationSelectorDash104),
+            '󠅘' => Ok(VariationSelectorsSupplement::VariationSelectorDash105),
+            '󠅙' => Ok(VariationSelectorsSupplement::VariationSelectorDash106),
+            '󠅚' => Ok(VariationSelectorsSupplement::VariationSelectorDash107),
+            '󠅛' => Ok(VariationSelectorsSupplement::VariationSelectorDash108),
+            '󠅜' => Ok(VariationSelectorsSupplement::VariationSelectorDash109),
+            '󠅝' => Ok(VariationSelectorsSupplement::VariationSelectorDash110),
+            '󠅞' => Ok(VariationSelectorsSupplement::VariationSelectorDash111),
+            '󠅟' => Ok(VariationSelectorsSupplement::VariationSelectorDash112),
+            '󠅠' => Ok(VariationSelectorsSupplement::VariationSelectorDash113),
+            '󠅡' => Ok(VariationSelectorsSupplement::VariationSelectorDash114),
+            '󠅢' => Ok(VariationSelectorsSupplement::VariationSelectorDash115),
+            '󠅣' => Ok(VariationSelectorsSupplement::VariationSelectorDash116),
+            '󠅤' => Ok(VariationSelectorsSupplement::VariationSelectorDash117),
+            '󠅥' => Ok(VariationSelectorsSupplement::VariationSelectorDash118),
+            '󠅦' => Ok(VariationSelectorsSupplement::VariationSelectorDash119),
+            '󠅧' => Ok(VariationSelectorsSupplement::VariationSelectorDash120),
+            '󠅨' => Ok(VariationSelectorsSupplement::VariationSelectorDash121),
+            '󠅩' => Ok(VariationSelectorsSupplement::VariationSelectorDash122),
+            '󠅪' => Ok(VariationSelectorsSupplement::VariationSelectorDash123),
+            '󠅫' => Ok(VariationSelectorsSupplement::VariationSelectorDash124),
+            '󠅬' => Ok(VariationSelectorsSupplement::VariationSelectorDash125),
+            '󠅭' => Ok(VariationSelectorsSupplement::VariationSelectorDash126),
+            '󠅮' => Ok(VariationSelectorsSupplement::VariationSelectorDash127),
+            '󠅯' => Ok(VariationSelectorsSupplement::VariationSelectorDash128),
+            '󠅰' => Ok(VariationSelectorsSupplement::VariationSelectorDash129),
+            '󠅱' => Ok(VariationSelectorsSupplement::VariationSelectorDash130),
+            '󠅲' => Ok(VariationSelectorsSupplement::VariationSelectorDash131),
+            '󠅳' => Ok(VariationSelectorsSupplement::VariationSelectorDash132),
+            '󠅴' => Ok(VariationSelectorsSupplement::VariationSelectorDash133),
+            '󠅵' => Ok(VariationSelectorsSupplement::VariationSelectorDash134),
+            '󠅶' => Ok(VariationSelectorsSupplement::VariationSelectorDash135),
+            '󠅷' => Ok(VariationSelectorsSupplement::VariationSelectorDash136),
+            '󠅸' => Ok(VariationSelectorsSupplement::VariationSelectorDash137),
+            '󠅹' => Ok(VariationSelectorsSupplement::VariationSelectorDash138),
+            '󠅺' => Ok(VariationSelectorsSupplement::VariationSelectorDash139),
+            '󠅻' => Ok(VariationSelectorsSupplement::VariationSelectorDash140),
+            '󠅼' => Ok(VariationSelectorsSupplement::VariationSelectorDash141),
+            '󠅽' => Ok(VariationSelectorsSupplement::VariationSelectorDash142),
+            '󠅾' => Ok(VariationSelectorsSupplement::VariationSelectorDash143),
+            '󠅿' => Ok(VariationSelectorsSupplement::VariationSelectorDash144),
+            '󠆀' => Ok(VariationSelectorsSupplement::VariationSelectorDash145),
+            '󠆁' => Ok(VariationSelectorsSupplement::VariationSelectorDash146),
+            '󠆂' => Ok(VariationSelectorsSupplement::VariationSelectorDash147),
+            '󠆃' => Ok(VariationSelectorsSupplement::VariationSelectorDash148),
+            '󠆄' => Ok(VariationSelectorsSupplement::VariationSelectorDash149),
+            '󠆅' => Ok(VariationSelectorsSupplement::VariationSelectorDash150),
+            '󠆆' => Ok(VariationSelectorsSupplement::VariationSelectorDash151),
+            '󠆇' => Ok(VariationSelectorsSupplement::VariationSelectorDash152),
+            '󠆈' => Ok(VariationSelectorsSupplement::VariationSelectorDash153),
+            '󠆉' => Ok(VariationSelectorsSupplement::VariationSelectorDash154),
+            '󠆊' => Ok(VariationSelectorsSupplement::VariationSelectorDash155),
+            '󠆋' => Ok(VariationSelectorsSupplement::VariationSelectorDash156),
+            '󠆌' => Ok(VariationSelectorsSupplement::VariationSelectorDash157),
+            '󠆍' => Ok(VariationSelectorsSupplement::VariationSelectorDash158),
+            '󠆎' => Ok(VariationSelectorsSupplement::VariationSelectorDash159),
+            '󠆏' => Ok(VariationSelectorsSupplement::VariationSelectorDash160),
+            '󠆐' => Ok(VariationSelectorsSupplement::VariationSelectorDash161),
+            '󠆑' => Ok(VariationSelectorsSupplement::VariationSelectorDash162),
+            '󠆒' => Ok(VariationSelectorsSupplement::VariationSelectorDash163),
+            '󠆓' => Ok(VariationSelectorsSupplement::VariationSelectorDash164),
+            '󠆔' => Ok(VariationSelectorsSupplement::VariationSelectorDash165),
+            '󠆕' => Ok(VariationSelectorsSupplement::VariationSelectorDash166),
+            '󠆖' => Ok(VariationSelectorsSupplement::VariationSelectorDash167),
+            '󠆗' => Ok(VariationSelectorsSupplement::VariationSelectorDash168),
+            '󠆘' => Ok(VariationSelectorsSupplement::VariationSelectorDash169),
+            '󠆙' => Ok(VariationSelectorsSupplement::VariationSelectorDash170),
+            '󠆚' => Ok(VariationSelectorsSupplement::VariationSelectorDash171),
+            '󠆛' => Ok(VariationSelectorsSupplement::VariationSelectorDash172),
+            '󠆜' => Ok(VariationSelectorsSupplement::VariationSelectorDash173),
+            '󠆝' => Ok(VariationSelectorsSupplement::VariationSelectorDash174),
+            '󠆞' => Ok(VariationSelectorsSupplement::VariationSelectorDash175),
+            '󠆟' => Ok(VariationSelectorsSupplement::VariationSelectorDash176),
+            '󠆠' => Ok(VariationSelectorsSupplement::VariationSelectorDash177),
+            '󠆡' => Ok(VariationSelectorsSupplement::VariationSelectorDash178),
+            '󠆢' => Ok(VariationSelectorsSupplement::VariationSelectorDash179),
+            '󠆣' => Ok(VariationSelectorsSupplement::VariationSelectorDash180),
+            '󠆤' => Ok(VariationSelectorsSupplement::VariationSelectorDash181),
+            '󠆥' => Ok(VariationSelectorsSupplement::VariationSelectorDash182),
+            '󠆦' => Ok(VariationSelectorsSupplement::VariationSelectorDash183),
+            '󠆧' => Ok(VariationSelectorsSupplement::VariationSelectorDash184),
+            '󠆨' => Ok(VariationSelectorsSupplement::VariationSelectorDash185),
+            '󠆩' => Ok(VariationSelectorsSupplement::VariationSelectorDash186),
+            '󠆪' => Ok(VariationSelectorsSupplement::VariationSelectorDash187),
+            '󠆫' => Ok(VariationSelectorsSupplement::VariationSelectorDash188),
+            '󠆬' => Ok(VariationSelectorsSupplement::VariationSelectorDash189),
+            '󠆭' => Ok(VariationSelectorsSupplement::VariationSelectorDash190),
+            '󠆮' => Ok(VariationSelectorsSupplement::VariationSelectorDash191),
+            '󠆯' => Ok(VariationSelectorsSupplement::VariationSelectorDash192),
+            '󠆰' => Ok(VariationSelectorsSupplement::VariationSelectorDash193),
+            '󠆱' => Ok(VariationSelectorsSupplement::VariationSelectorDash194),
+            '󠆲' => Ok(VariationSelectorsSupplement::VariationSelectorDash195),
+            '󠆳' => Ok(VariationSelectorsSupplement::VariationSelectorDash196),
+            '󠆴' => Ok(VariationSelectorsSupplement::VariationSelectorDash197),
+            '󠆵' => Ok(VariationSelectorsSupplement::VariationSelectorDash198),
+            '󠆶' => Ok(VariationSelectorsSupplement::VariationSelectorDash199),
+            '󠆷' => Ok(VariationSelectorsSupplement::VariationSelectorDash200),
+            '󠆸' => Ok(VariationSelectorsSupplement::VariationSelectorDash201),
+            '󠆹' => Ok(VariationSelectorsSupplement::VariationSelectorDash202),
+            '󠆺' => Ok(VariationSelectorsSupplement::VariationSelectorDash203),
+            '󠆻' => Ok(VariationSelectorsSupplement::VariationSelectorDash204),
+            '󠆼' => Ok(VariationSelectorsSupplement::VariationSelectorDash205),
+            '󠆽' => Ok(VariationSelectorsSupplement::VariationSelectorDash206),
+            '󠆾' => Ok(VariationSelectorsSupplement::VariationSelectorDash207),
+            '󠆿' => Ok(VariationSelectorsSupplement::VariationSelectorDash208),
+            '󠇀' => Ok(VariationSelectorsSupplement::VariationSelectorDash209),
+            '󠇁' => Ok(VariationSelectorsSupplement::VariationSelectorDash210),
+            '󠇂' => Ok(VariationSelectorsSupplement::VariationSelectorDash211),
+            '󠇃' => Ok(VariationSelectorsSupplement::VariationSelectorDash212),
+            '󠇄' => Ok(VariationSelectorsSupplement::VariationSelectorDash213),
+            '󠇅' => Ok(VariationSelectorsSupplement::VariationSelectorDash214),
+            '󠇆' => Ok(VariationSelectorsSupplement::VariationSelectorDash215),
+            '󠇇' => Ok(VariationSelectorsSupplement::VariationSelectorDash216),
+            '󠇈' => Ok(VariationSelectorsSupplement::VariationSelectorDash217),
+            '󠇉' => Ok(VariationSelectorsSupplement::VariationSelectorDash218),
+            '󠇊' => Ok(VariationSelectorsSupplement::VariationSelectorDash219),
+            '󠇋' => Ok(VariationSelectorsSupplement::VariationSelectorDash220),
+            '󠇌' => Ok(VariationSelectorsSupplement::VariationSelectorDash221),
+            '󠇍' => Ok(VariationSelectorsSupplement::VariationSelectorDash222),
+            '󠇎' => Ok(VariationSelectorsSupplement::VariationSelectorDash223),
+            '󠇏' => Ok(VariationSelectorsSupplement::VariationSelectorDash224),
+            '󠇐' => Ok(VariationSelectorsSupplement::VariationSelectorDash225),
+            '󠇑' => Ok(VariationSelectorsSupplement::VariationSelectorDash226),
+            '󠇒' => Ok(VariationSelectorsSupplement::VariationSelectorDash227),
+            '󠇓' => Ok(VariationSelectorsSupplement::VariationSelectorDash228),
+            '󠇔' => Ok(VariationSelectorsSupplement::VariationSelectorDash229),
+            '󠇕' => Ok(VariationSelectorsSupplement::VariationSelectorDash230),
+            '󠇖' => Ok(VariationSelectorsSupplement::VariationSelectorDash231),
+            '󠇗' => Ok(VariationSelectorsSupplement::VariationSelectorDash232),
+            '󠇘' => Ok(VariationSelectorsSupplement::VariationSelectorDash233),
+            '󠇙' => Ok(VariationSelectorsSupplement::VariationSelectorDash234),
+            '󠇚' => Ok(VariationSelectorsSupplement::VariationSelectorDash235),
+            '󠇛' => Ok(VariationSelectorsSupplement::VariationSelectorDash236),
+            '󠇜' => Ok(VariationSelectorsSupplement::VariationSelectorDash237),
+            '󠇝' => Ok(VariationSelectorsSupplement::VariationSelectorDash238),
+            '󠇞' => Ok(VariationSelectorsSupplement::VariationSelectorDash239),
+            '󠇟' => Ok(VariationSelectorsSupplement::VariationSelectorDash240),
+            '󠇠' => Ok(VariationSelectorsSupplement::VariationSelectorDash241),
+            '󠇡' => Ok(VariationSelectorsSupplement::VariationSelectorDash242),
+            '󠇢' => Ok(VariationSelectorsSupplement::VariationSelectorDash243),
+            '󠇣' => Ok(VariationSelectorsSupplement::VariationSelectorDash244),
+            '󠇤' => Ok(VariationSelectorsSupplement::VariationSelectorDash245),
+            '󠇥' => Ok(VariationSelectorsSupplement::VariationSelectorDash246),
+            '󠇦' => Ok(VariationSelectorsSupplement::VariationSelectorDash247),
+            '󠇧' => Ok(VariationSelectorsSupplement::VariationSelectorDash248),
+            '󠇨' => Ok(VariationSelectorsSupplement::VariationSelectorDash249),
+            '󠇩' => Ok(VariationSelectorsSupplement::VariationSelectorDash250),
+            '󠇪' => Ok(VariationSelectorsSupplement::VariationSelectorDash251),
+            '󠇫' => Ok(VariationSelectorsSupplement::VariationSelectorDash252),
+            '󠇬' => Ok(VariationSelectorsSupplement::VariationSelectorDash253),
+            '󠇭' => Ok(VariationSelectorsSupplement::VariationSelectorDash254),
+            '󠇮' => Ok(VariationSelectorsSupplement::VariationSelectorDash255),
             _ => Err(()),
         }
     }

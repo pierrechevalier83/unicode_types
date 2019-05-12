@@ -1,172 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{118a0}: '𑢠'
-    pub const CAPITAL_LETTER_NGAA: char = '𑢠';
-    /// \u{118a1}: '𑢡'
-    pub const CAPITAL_LETTER_A: char = '𑢡';
-    /// \u{118a2}: '𑢢'
-    pub const CAPITAL_LETTER_WI: char = '𑢢';
-    /// \u{118a3}: '𑢣'
-    pub const CAPITAL_LETTER_YU: char = '𑢣';
-    /// \u{118a4}: '𑢤'
-    pub const CAPITAL_LETTER_YA: char = '𑢤';
-    /// \u{118a5}: '𑢥'
-    pub const CAPITAL_LETTER_YO: char = '𑢥';
-    /// \u{118a6}: '𑢦'
-    pub const CAPITAL_LETTER_II: char = '𑢦';
-    /// \u{118a7}: '𑢧'
-    pub const CAPITAL_LETTER_UU: char = '𑢧';
-    /// \u{118a8}: '𑢨'
-    pub const CAPITAL_LETTER_E: char = '𑢨';
-    /// \u{118a9}: '𑢩'
-    pub const CAPITAL_LETTER_O: char = '𑢩';
-    /// \u{118aa}: '𑢪'
-    pub const CAPITAL_LETTER_ANG: char = '𑢪';
-    /// \u{118ab}: '𑢫'
-    pub const CAPITAL_LETTER_GA: char = '𑢫';
-    /// \u{118ac}: '𑢬'
-    pub const CAPITAL_LETTER_KO: char = '𑢬';
-    /// \u{118ad}: '𑢭'
-    pub const CAPITAL_LETTER_ENY: char = '𑢭';
-    /// \u{118ae}: '𑢮'
-    pub const CAPITAL_LETTER_YUJ: char = '𑢮';
-    /// \u{118af}: '𑢯'
-    pub const CAPITAL_LETTER_UC: char = '𑢯';
-    /// \u{118b0}: '𑢰'
-    pub const CAPITAL_LETTER_ENN: char = '𑢰';
-    /// \u{118b1}: '𑢱'
-    pub const CAPITAL_LETTER_ODD: char = '𑢱';
-    /// \u{118b2}: '𑢲'
-    pub const CAPITAL_LETTER_TTE: char = '𑢲';
-    /// \u{118b3}: '𑢳'
-    pub const CAPITAL_LETTER_NUNG: char = '𑢳';
-    /// \u{118b4}: '𑢴'
-    pub const CAPITAL_LETTER_DA: char = '𑢴';
-    /// \u{118b5}: '𑢵'
-    pub const CAPITAL_LETTER_AT: char = '𑢵';
-    /// \u{118b6}: '𑢶'
-    pub const CAPITAL_LETTER_AM: char = '𑢶';
-    /// \u{118b7}: '𑢷'
-    pub const CAPITAL_LETTER_BU: char = '𑢷';
-    /// \u{118b8}: '𑢸'
-    pub const CAPITAL_LETTER_PU: char = '𑢸';
-    /// \u{118b9}: '𑢹'
-    pub const CAPITAL_LETTER_HIYO: char = '𑢹';
-    /// \u{118ba}: '𑢺'
-    pub const CAPITAL_LETTER_HOLO: char = '𑢺';
-    /// \u{118bb}: '𑢻'
-    pub const CAPITAL_LETTER_HORR: char = '𑢻';
-    /// \u{118bc}: '𑢼'
-    pub const CAPITAL_LETTER_HAR: char = '𑢼';
-    /// \u{118bd}: '𑢽'
-    pub const CAPITAL_LETTER_SSUU: char = '𑢽';
-    /// \u{118be}: '𑢾'
-    pub const CAPITAL_LETTER_SII: char = '𑢾';
-    /// \u{118bf}: '𑢿'
-    pub const CAPITAL_LETTER_VIYO: char = '𑢿';
-    /// \u{118c0}: '𑣀'
-    pub const SMALL_LETTER_NGAA: char = '𑣀';
-    /// \u{118c1}: '𑣁'
-    pub const SMALL_LETTER_A: char = '𑣁';
-    /// \u{118c2}: '𑣂'
-    pub const SMALL_LETTER_WI: char = '𑣂';
-    /// \u{118c3}: '𑣃'
-    pub const SMALL_LETTER_YU: char = '𑣃';
-    /// \u{118c4}: '𑣄'
-    pub const SMALL_LETTER_YA: char = '𑣄';
-    /// \u{118c5}: '𑣅'
-    pub const SMALL_LETTER_YO: char = '𑣅';
-    /// \u{118c6}: '𑣆'
-    pub const SMALL_LETTER_II: char = '𑣆';
-    /// \u{118c7}: '𑣇'
-    pub const SMALL_LETTER_UU: char = '𑣇';
-    /// \u{118c8}: '𑣈'
-    pub const SMALL_LETTER_E: char = '𑣈';
-    /// \u{118c9}: '𑣉'
-    pub const SMALL_LETTER_O: char = '𑣉';
-    /// \u{118ca}: '𑣊'
-    pub const SMALL_LETTER_ANG: char = '𑣊';
-    /// \u{118cb}: '𑣋'
-    pub const SMALL_LETTER_GA: char = '𑣋';
-    /// \u{118cc}: '𑣌'
-    pub const SMALL_LETTER_KO: char = '𑣌';
-    /// \u{118cd}: '𑣍'
-    pub const SMALL_LETTER_ENY: char = '𑣍';
-    /// \u{118ce}: '𑣎'
-    pub const SMALL_LETTER_YUJ: char = '𑣎';
-    /// \u{118cf}: '𑣏'
-    pub const SMALL_LETTER_UC: char = '𑣏';
-    /// \u{118d0}: '𑣐'
-    pub const SMALL_LETTER_ENN: char = '𑣐';
-    /// \u{118d1}: '𑣑'
-    pub const SMALL_LETTER_ODD: char = '𑣑';
-    /// \u{118d2}: '𑣒'
-    pub const SMALL_LETTER_TTE: char = '𑣒';
-    /// \u{118d3}: '𑣓'
-    pub const SMALL_LETTER_NUNG: char = '𑣓';
-    /// \u{118d4}: '𑣔'
-    pub const SMALL_LETTER_DA: char = '𑣔';
-    /// \u{118d5}: '𑣕'
-    pub const SMALL_LETTER_AT: char = '𑣕';
-    /// \u{118d6}: '𑣖'
-    pub const SMALL_LETTER_AM: char = '𑣖';
-    /// \u{118d7}: '𑣗'
-    pub const SMALL_LETTER_BU: char = '𑣗';
-    /// \u{118d8}: '𑣘'
-    pub const SMALL_LETTER_PU: char = '𑣘';
-    /// \u{118d9}: '𑣙'
-    pub const SMALL_LETTER_HIYO: char = '𑣙';
-    /// \u{118da}: '𑣚'
-    pub const SMALL_LETTER_HOLO: char = '𑣚';
-    /// \u{118db}: '𑣛'
-    pub const SMALL_LETTER_HORR: char = '𑣛';
-    /// \u{118dc}: '𑣜'
-    pub const SMALL_LETTER_HAR: char = '𑣜';
-    /// \u{118dd}: '𑣝'
-    pub const SMALL_LETTER_SSUU: char = '𑣝';
-    /// \u{118de}: '𑣞'
-    pub const SMALL_LETTER_SII: char = '𑣞';
-    /// \u{118df}: '𑣟'
-    pub const SMALL_LETTER_VIYO: char = '𑣟';
-    /// \u{118e0}: '𑣠'
-    pub const DIGIT_ZERO: char = '𑣠';
-    /// \u{118e1}: '𑣡'
-    pub const DIGIT_ONE: char = '𑣡';
-    /// \u{118e2}: '𑣢'
-    pub const DIGIT_TWO: char = '𑣢';
-    /// \u{118e3}: '𑣣'
-    pub const DIGIT_THREE: char = '𑣣';
-    /// \u{118e4}: '𑣤'
-    pub const DIGIT_FOUR: char = '𑣤';
-    /// \u{118e5}: '𑣥'
-    pub const DIGIT_FIVE: char = '𑣥';
-    /// \u{118e6}: '𑣦'
-    pub const DIGIT_SIX: char = '𑣦';
-    /// \u{118e7}: '𑣧'
-    pub const DIGIT_SEVEN: char = '𑣧';
-    /// \u{118e8}: '𑣨'
-    pub const DIGIT_EIGHT: char = '𑣨';
-    /// \u{118e9}: '𑣩'
-    pub const DIGIT_NINE: char = '𑣩';
-    /// \u{118ea}: '𑣪'
-    pub const NUMBER_TEN: char = '𑣪';
-    /// \u{118eb}: '𑣫'
-    pub const NUMBER_TWENTY: char = '𑣫';
-    /// \u{118ec}: '𑣬'
-    pub const NUMBER_THIRTY: char = '𑣬';
-    /// \u{118ed}: '𑣭'
-    pub const NUMBER_FORTY: char = '𑣭';
-    /// \u{118ee}: '𑣮'
-    pub const NUMBER_FIFTY: char = '𑣮';
-    /// \u{118ef}: '𑣯'
-    pub const NUMBER_SIXTY: char = '𑣯';
-    /// \u{118f0}: '𑣰'
-    pub const NUMBER_SEVENTY: char = '𑣰';
-    /// \u{118f1}: '𑣱'
-    pub const NUMBER_EIGHTY: char = '𑣱';
-    /// \u{118f2}: '𑣲'
-    pub const NUMBER_NINETY: char = '𑣲';
-}
 
 /// An enum to represent all characters in the WarangCiti block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -341,91 +172,90 @@ pub enum WarangCiti {
 
 impl Into<char> for WarangCiti {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            WarangCiti::CapitalLetterNgaa => CAPITAL_LETTER_NGAA,
-            WarangCiti::CapitalLetterA => CAPITAL_LETTER_A,
-            WarangCiti::CapitalLetterWi => CAPITAL_LETTER_WI,
-            WarangCiti::CapitalLetterYu => CAPITAL_LETTER_YU,
-            WarangCiti::CapitalLetterYa => CAPITAL_LETTER_YA,
-            WarangCiti::CapitalLetterYo => CAPITAL_LETTER_YO,
-            WarangCiti::CapitalLetterIi => CAPITAL_LETTER_II,
-            WarangCiti::CapitalLetterUu => CAPITAL_LETTER_UU,
-            WarangCiti::CapitalLetterE => CAPITAL_LETTER_E,
-            WarangCiti::CapitalLetterO => CAPITAL_LETTER_O,
-            WarangCiti::CapitalLetterAng => CAPITAL_LETTER_ANG,
-            WarangCiti::CapitalLetterGa => CAPITAL_LETTER_GA,
-            WarangCiti::CapitalLetterKo => CAPITAL_LETTER_KO,
-            WarangCiti::CapitalLetterEny => CAPITAL_LETTER_ENY,
-            WarangCiti::CapitalLetterYuj => CAPITAL_LETTER_YUJ,
-            WarangCiti::CapitalLetterUc => CAPITAL_LETTER_UC,
-            WarangCiti::CapitalLetterEnn => CAPITAL_LETTER_ENN,
-            WarangCiti::CapitalLetterOdd => CAPITAL_LETTER_ODD,
-            WarangCiti::CapitalLetterTte => CAPITAL_LETTER_TTE,
-            WarangCiti::CapitalLetterNung => CAPITAL_LETTER_NUNG,
-            WarangCiti::CapitalLetterDa => CAPITAL_LETTER_DA,
-            WarangCiti::CapitalLetterAt => CAPITAL_LETTER_AT,
-            WarangCiti::CapitalLetterAm => CAPITAL_LETTER_AM,
-            WarangCiti::CapitalLetterBu => CAPITAL_LETTER_BU,
-            WarangCiti::CapitalLetterPu => CAPITAL_LETTER_PU,
-            WarangCiti::CapitalLetterHiyo => CAPITAL_LETTER_HIYO,
-            WarangCiti::CapitalLetterHolo => CAPITAL_LETTER_HOLO,
-            WarangCiti::CapitalLetterHorr => CAPITAL_LETTER_HORR,
-            WarangCiti::CapitalLetterHar => CAPITAL_LETTER_HAR,
-            WarangCiti::CapitalLetterSsuu => CAPITAL_LETTER_SSUU,
-            WarangCiti::CapitalLetterSii => CAPITAL_LETTER_SII,
-            WarangCiti::CapitalLetterViyo => CAPITAL_LETTER_VIYO,
-            WarangCiti::SmallLetterNgaa => SMALL_LETTER_NGAA,
-            WarangCiti::SmallLetterA => SMALL_LETTER_A,
-            WarangCiti::SmallLetterWi => SMALL_LETTER_WI,
-            WarangCiti::SmallLetterYu => SMALL_LETTER_YU,
-            WarangCiti::SmallLetterYa => SMALL_LETTER_YA,
-            WarangCiti::SmallLetterYo => SMALL_LETTER_YO,
-            WarangCiti::SmallLetterIi => SMALL_LETTER_II,
-            WarangCiti::SmallLetterUu => SMALL_LETTER_UU,
-            WarangCiti::SmallLetterE => SMALL_LETTER_E,
-            WarangCiti::SmallLetterO => SMALL_LETTER_O,
-            WarangCiti::SmallLetterAng => SMALL_LETTER_ANG,
-            WarangCiti::SmallLetterGa => SMALL_LETTER_GA,
-            WarangCiti::SmallLetterKo => SMALL_LETTER_KO,
-            WarangCiti::SmallLetterEny => SMALL_LETTER_ENY,
-            WarangCiti::SmallLetterYuj => SMALL_LETTER_YUJ,
-            WarangCiti::SmallLetterUc => SMALL_LETTER_UC,
-            WarangCiti::SmallLetterEnn => SMALL_LETTER_ENN,
-            WarangCiti::SmallLetterOdd => SMALL_LETTER_ODD,
-            WarangCiti::SmallLetterTte => SMALL_LETTER_TTE,
-            WarangCiti::SmallLetterNung => SMALL_LETTER_NUNG,
-            WarangCiti::SmallLetterDa => SMALL_LETTER_DA,
-            WarangCiti::SmallLetterAt => SMALL_LETTER_AT,
-            WarangCiti::SmallLetterAm => SMALL_LETTER_AM,
-            WarangCiti::SmallLetterBu => SMALL_LETTER_BU,
-            WarangCiti::SmallLetterPu => SMALL_LETTER_PU,
-            WarangCiti::SmallLetterHiyo => SMALL_LETTER_HIYO,
-            WarangCiti::SmallLetterHolo => SMALL_LETTER_HOLO,
-            WarangCiti::SmallLetterHorr => SMALL_LETTER_HORR,
-            WarangCiti::SmallLetterHar => SMALL_LETTER_HAR,
-            WarangCiti::SmallLetterSsuu => SMALL_LETTER_SSUU,
-            WarangCiti::SmallLetterSii => SMALL_LETTER_SII,
-            WarangCiti::SmallLetterViyo => SMALL_LETTER_VIYO,
-            WarangCiti::DigitZero => DIGIT_ZERO,
-            WarangCiti::DigitOne => DIGIT_ONE,
-            WarangCiti::DigitTwo => DIGIT_TWO,
-            WarangCiti::DigitThree => DIGIT_THREE,
-            WarangCiti::DigitFour => DIGIT_FOUR,
-            WarangCiti::DigitFive => DIGIT_FIVE,
-            WarangCiti::DigitSix => DIGIT_SIX,
-            WarangCiti::DigitSeven => DIGIT_SEVEN,
-            WarangCiti::DigitEight => DIGIT_EIGHT,
-            WarangCiti::DigitNine => DIGIT_NINE,
-            WarangCiti::NumberTen => NUMBER_TEN,
-            WarangCiti::NumberTwenty => NUMBER_TWENTY,
-            WarangCiti::NumberThirty => NUMBER_THIRTY,
-            WarangCiti::NumberForty => NUMBER_FORTY,
-            WarangCiti::NumberFifty => NUMBER_FIFTY,
-            WarangCiti::NumberSixty => NUMBER_SIXTY,
-            WarangCiti::NumberSeventy => NUMBER_SEVENTY,
-            WarangCiti::NumberEighty => NUMBER_EIGHTY,
-            WarangCiti::NumberNinety => NUMBER_NINETY,
+            WarangCiti::CapitalLetterNgaa => '𑢠',
+            WarangCiti::CapitalLetterA => '𑢡',
+            WarangCiti::CapitalLetterWi => '𑢢',
+            WarangCiti::CapitalLetterYu => '𑢣',
+            WarangCiti::CapitalLetterYa => '𑢤',
+            WarangCiti::CapitalLetterYo => '𑢥',
+            WarangCiti::CapitalLetterIi => '𑢦',
+            WarangCiti::CapitalLetterUu => '𑢧',
+            WarangCiti::CapitalLetterE => '𑢨',
+            WarangCiti::CapitalLetterO => '𑢩',
+            WarangCiti::CapitalLetterAng => '𑢪',
+            WarangCiti::CapitalLetterGa => '𑢫',
+            WarangCiti::CapitalLetterKo => '𑢬',
+            WarangCiti::CapitalLetterEny => '𑢭',
+            WarangCiti::CapitalLetterYuj => '𑢮',
+            WarangCiti::CapitalLetterUc => '𑢯',
+            WarangCiti::CapitalLetterEnn => '𑢰',
+            WarangCiti::CapitalLetterOdd => '𑢱',
+            WarangCiti::CapitalLetterTte => '𑢲',
+            WarangCiti::CapitalLetterNung => '𑢳',
+            WarangCiti::CapitalLetterDa => '𑢴',
+            WarangCiti::CapitalLetterAt => '𑢵',
+            WarangCiti::CapitalLetterAm => '𑢶',
+            WarangCiti::CapitalLetterBu => '𑢷',
+            WarangCiti::CapitalLetterPu => '𑢸',
+            WarangCiti::CapitalLetterHiyo => '𑢹',
+            WarangCiti::CapitalLetterHolo => '𑢺',
+            WarangCiti::CapitalLetterHorr => '𑢻',
+            WarangCiti::CapitalLetterHar => '𑢼',
+            WarangCiti::CapitalLetterSsuu => '𑢽',
+            WarangCiti::CapitalLetterSii => '𑢾',
+            WarangCiti::CapitalLetterViyo => '𑢿',
+            WarangCiti::SmallLetterNgaa => '𑣀',
+            WarangCiti::SmallLetterA => '𑣁',
+            WarangCiti::SmallLetterWi => '𑣂',
+            WarangCiti::SmallLetterYu => '𑣃',
+            WarangCiti::SmallLetterYa => '𑣄',
+            WarangCiti::SmallLetterYo => '𑣅',
+            WarangCiti::SmallLetterIi => '𑣆',
+            WarangCiti::SmallLetterUu => '𑣇',
+            WarangCiti::SmallLetterE => '𑣈',
+            WarangCiti::SmallLetterO => '𑣉',
+            WarangCiti::SmallLetterAng => '𑣊',
+            WarangCiti::SmallLetterGa => '𑣋',
+            WarangCiti::SmallLetterKo => '𑣌',
+            WarangCiti::SmallLetterEny => '𑣍',
+            WarangCiti::SmallLetterYuj => '𑣎',
+            WarangCiti::SmallLetterUc => '𑣏',
+            WarangCiti::SmallLetterEnn => '𑣐',
+            WarangCiti::SmallLetterOdd => '𑣑',
+            WarangCiti::SmallLetterTte => '𑣒',
+            WarangCiti::SmallLetterNung => '𑣓',
+            WarangCiti::SmallLetterDa => '𑣔',
+            WarangCiti::SmallLetterAt => '𑣕',
+            WarangCiti::SmallLetterAm => '𑣖',
+            WarangCiti::SmallLetterBu => '𑣗',
+            WarangCiti::SmallLetterPu => '𑣘',
+            WarangCiti::SmallLetterHiyo => '𑣙',
+            WarangCiti::SmallLetterHolo => '𑣚',
+            WarangCiti::SmallLetterHorr => '𑣛',
+            WarangCiti::SmallLetterHar => '𑣜',
+            WarangCiti::SmallLetterSsuu => '𑣝',
+            WarangCiti::SmallLetterSii => '𑣞',
+            WarangCiti::SmallLetterViyo => '𑣟',
+            WarangCiti::DigitZero => '𑣠',
+            WarangCiti::DigitOne => '𑣡',
+            WarangCiti::DigitTwo => '𑣢',
+            WarangCiti::DigitThree => '𑣣',
+            WarangCiti::DigitFour => '𑣤',
+            WarangCiti::DigitFive => '𑣥',
+            WarangCiti::DigitSix => '𑣦',
+            WarangCiti::DigitSeven => '𑣧',
+            WarangCiti::DigitEight => '𑣨',
+            WarangCiti::DigitNine => '𑣩',
+            WarangCiti::NumberTen => '𑣪',
+            WarangCiti::NumberTwenty => '𑣫',
+            WarangCiti::NumberThirty => '𑣬',
+            WarangCiti::NumberForty => '𑣭',
+            WarangCiti::NumberFifty => '𑣮',
+            WarangCiti::NumberSixty => '𑣯',
+            WarangCiti::NumberSeventy => '𑣰',
+            WarangCiti::NumberEighty => '𑣱',
+            WarangCiti::NumberNinety => '𑣲',
         }
     }
 }
@@ -433,91 +263,90 @@ impl Into<char> for WarangCiti {
 impl std::convert::TryFrom<char> for WarangCiti {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CAPITAL_LETTER_NGAA => Ok(WarangCiti::CapitalLetterNgaa),
-            CAPITAL_LETTER_A => Ok(WarangCiti::CapitalLetterA),
-            CAPITAL_LETTER_WI => Ok(WarangCiti::CapitalLetterWi),
-            CAPITAL_LETTER_YU => Ok(WarangCiti::CapitalLetterYu),
-            CAPITAL_LETTER_YA => Ok(WarangCiti::CapitalLetterYa),
-            CAPITAL_LETTER_YO => Ok(WarangCiti::CapitalLetterYo),
-            CAPITAL_LETTER_II => Ok(WarangCiti::CapitalLetterIi),
-            CAPITAL_LETTER_UU => Ok(WarangCiti::CapitalLetterUu),
-            CAPITAL_LETTER_E => Ok(WarangCiti::CapitalLetterE),
-            CAPITAL_LETTER_O => Ok(WarangCiti::CapitalLetterO),
-            CAPITAL_LETTER_ANG => Ok(WarangCiti::CapitalLetterAng),
-            CAPITAL_LETTER_GA => Ok(WarangCiti::CapitalLetterGa),
-            CAPITAL_LETTER_KO => Ok(WarangCiti::CapitalLetterKo),
-            CAPITAL_LETTER_ENY => Ok(WarangCiti::CapitalLetterEny),
-            CAPITAL_LETTER_YUJ => Ok(WarangCiti::CapitalLetterYuj),
-            CAPITAL_LETTER_UC => Ok(WarangCiti::CapitalLetterUc),
-            CAPITAL_LETTER_ENN => Ok(WarangCiti::CapitalLetterEnn),
-            CAPITAL_LETTER_ODD => Ok(WarangCiti::CapitalLetterOdd),
-            CAPITAL_LETTER_TTE => Ok(WarangCiti::CapitalLetterTte),
-            CAPITAL_LETTER_NUNG => Ok(WarangCiti::CapitalLetterNung),
-            CAPITAL_LETTER_DA => Ok(WarangCiti::CapitalLetterDa),
-            CAPITAL_LETTER_AT => Ok(WarangCiti::CapitalLetterAt),
-            CAPITAL_LETTER_AM => Ok(WarangCiti::CapitalLetterAm),
-            CAPITAL_LETTER_BU => Ok(WarangCiti::CapitalLetterBu),
-            CAPITAL_LETTER_PU => Ok(WarangCiti::CapitalLetterPu),
-            CAPITAL_LETTER_HIYO => Ok(WarangCiti::CapitalLetterHiyo),
-            CAPITAL_LETTER_HOLO => Ok(WarangCiti::CapitalLetterHolo),
-            CAPITAL_LETTER_HORR => Ok(WarangCiti::CapitalLetterHorr),
-            CAPITAL_LETTER_HAR => Ok(WarangCiti::CapitalLetterHar),
-            CAPITAL_LETTER_SSUU => Ok(WarangCiti::CapitalLetterSsuu),
-            CAPITAL_LETTER_SII => Ok(WarangCiti::CapitalLetterSii),
-            CAPITAL_LETTER_VIYO => Ok(WarangCiti::CapitalLetterViyo),
-            SMALL_LETTER_NGAA => Ok(WarangCiti::SmallLetterNgaa),
-            SMALL_LETTER_A => Ok(WarangCiti::SmallLetterA),
-            SMALL_LETTER_WI => Ok(WarangCiti::SmallLetterWi),
-            SMALL_LETTER_YU => Ok(WarangCiti::SmallLetterYu),
-            SMALL_LETTER_YA => Ok(WarangCiti::SmallLetterYa),
-            SMALL_LETTER_YO => Ok(WarangCiti::SmallLetterYo),
-            SMALL_LETTER_II => Ok(WarangCiti::SmallLetterIi),
-            SMALL_LETTER_UU => Ok(WarangCiti::SmallLetterUu),
-            SMALL_LETTER_E => Ok(WarangCiti::SmallLetterE),
-            SMALL_LETTER_O => Ok(WarangCiti::SmallLetterO),
-            SMALL_LETTER_ANG => Ok(WarangCiti::SmallLetterAng),
-            SMALL_LETTER_GA => Ok(WarangCiti::SmallLetterGa),
-            SMALL_LETTER_KO => Ok(WarangCiti::SmallLetterKo),
-            SMALL_LETTER_ENY => Ok(WarangCiti::SmallLetterEny),
-            SMALL_LETTER_YUJ => Ok(WarangCiti::SmallLetterYuj),
-            SMALL_LETTER_UC => Ok(WarangCiti::SmallLetterUc),
-            SMALL_LETTER_ENN => Ok(WarangCiti::SmallLetterEnn),
-            SMALL_LETTER_ODD => Ok(WarangCiti::SmallLetterOdd),
-            SMALL_LETTER_TTE => Ok(WarangCiti::SmallLetterTte),
-            SMALL_LETTER_NUNG => Ok(WarangCiti::SmallLetterNung),
-            SMALL_LETTER_DA => Ok(WarangCiti::SmallLetterDa),
-            SMALL_LETTER_AT => Ok(WarangCiti::SmallLetterAt),
-            SMALL_LETTER_AM => Ok(WarangCiti::SmallLetterAm),
-            SMALL_LETTER_BU => Ok(WarangCiti::SmallLetterBu),
-            SMALL_LETTER_PU => Ok(WarangCiti::SmallLetterPu),
-            SMALL_LETTER_HIYO => Ok(WarangCiti::SmallLetterHiyo),
-            SMALL_LETTER_HOLO => Ok(WarangCiti::SmallLetterHolo),
-            SMALL_LETTER_HORR => Ok(WarangCiti::SmallLetterHorr),
-            SMALL_LETTER_HAR => Ok(WarangCiti::SmallLetterHar),
-            SMALL_LETTER_SSUU => Ok(WarangCiti::SmallLetterSsuu),
-            SMALL_LETTER_SII => Ok(WarangCiti::SmallLetterSii),
-            SMALL_LETTER_VIYO => Ok(WarangCiti::SmallLetterViyo),
-            DIGIT_ZERO => Ok(WarangCiti::DigitZero),
-            DIGIT_ONE => Ok(WarangCiti::DigitOne),
-            DIGIT_TWO => Ok(WarangCiti::DigitTwo),
-            DIGIT_THREE => Ok(WarangCiti::DigitThree),
-            DIGIT_FOUR => Ok(WarangCiti::DigitFour),
-            DIGIT_FIVE => Ok(WarangCiti::DigitFive),
-            DIGIT_SIX => Ok(WarangCiti::DigitSix),
-            DIGIT_SEVEN => Ok(WarangCiti::DigitSeven),
-            DIGIT_EIGHT => Ok(WarangCiti::DigitEight),
-            DIGIT_NINE => Ok(WarangCiti::DigitNine),
-            NUMBER_TEN => Ok(WarangCiti::NumberTen),
-            NUMBER_TWENTY => Ok(WarangCiti::NumberTwenty),
-            NUMBER_THIRTY => Ok(WarangCiti::NumberThirty),
-            NUMBER_FORTY => Ok(WarangCiti::NumberForty),
-            NUMBER_FIFTY => Ok(WarangCiti::NumberFifty),
-            NUMBER_SIXTY => Ok(WarangCiti::NumberSixty),
-            NUMBER_SEVENTY => Ok(WarangCiti::NumberSeventy),
-            NUMBER_EIGHTY => Ok(WarangCiti::NumberEighty),
-            NUMBER_NINETY => Ok(WarangCiti::NumberNinety),
+            '𑢠' => Ok(WarangCiti::CapitalLetterNgaa),
+            '𑢡' => Ok(WarangCiti::CapitalLetterA),
+            '𑢢' => Ok(WarangCiti::CapitalLetterWi),
+            '𑢣' => Ok(WarangCiti::CapitalLetterYu),
+            '𑢤' => Ok(WarangCiti::CapitalLetterYa),
+            '𑢥' => Ok(WarangCiti::CapitalLetterYo),
+            '𑢦' => Ok(WarangCiti::CapitalLetterIi),
+            '𑢧' => Ok(WarangCiti::CapitalLetterUu),
+            '𑢨' => Ok(WarangCiti::CapitalLetterE),
+            '𑢩' => Ok(WarangCiti::CapitalLetterO),
+            '𑢪' => Ok(WarangCiti::CapitalLetterAng),
+            '𑢫' => Ok(WarangCiti::CapitalLetterGa),
+            '𑢬' => Ok(WarangCiti::CapitalLetterKo),
+            '𑢭' => Ok(WarangCiti::CapitalLetterEny),
+            '𑢮' => Ok(WarangCiti::CapitalLetterYuj),
+            '𑢯' => Ok(WarangCiti::CapitalLetterUc),
+            '𑢰' => Ok(WarangCiti::CapitalLetterEnn),
+            '𑢱' => Ok(WarangCiti::CapitalLetterOdd),
+            '𑢲' => Ok(WarangCiti::CapitalLetterTte),
+            '𑢳' => Ok(WarangCiti::CapitalLetterNung),
+            '𑢴' => Ok(WarangCiti::CapitalLetterDa),
+            '𑢵' => Ok(WarangCiti::CapitalLetterAt),
+            '𑢶' => Ok(WarangCiti::CapitalLetterAm),
+            '𑢷' => Ok(WarangCiti::CapitalLetterBu),
+            '𑢸' => Ok(WarangCiti::CapitalLetterPu),
+            '𑢹' => Ok(WarangCiti::CapitalLetterHiyo),
+            '𑢺' => Ok(WarangCiti::CapitalLetterHolo),
+            '𑢻' => Ok(WarangCiti::CapitalLetterHorr),
+            '𑢼' => Ok(WarangCiti::CapitalLetterHar),
+            '𑢽' => Ok(WarangCiti::CapitalLetterSsuu),
+            '𑢾' => Ok(WarangCiti::CapitalLetterSii),
+            '𑢿' => Ok(WarangCiti::CapitalLetterViyo),
+            '𑣀' => Ok(WarangCiti::SmallLetterNgaa),
+            '𑣁' => Ok(WarangCiti::SmallLetterA),
+            '𑣂' => Ok(WarangCiti::SmallLetterWi),
+            '𑣃' => Ok(WarangCiti::SmallLetterYu),
+            '𑣄' => Ok(WarangCiti::SmallLetterYa),
+            '𑣅' => Ok(WarangCiti::SmallLetterYo),
+            '𑣆' => Ok(WarangCiti::SmallLetterIi),
+            '𑣇' => Ok(WarangCiti::SmallLetterUu),
+            '𑣈' => Ok(WarangCiti::SmallLetterE),
+            '𑣉' => Ok(WarangCiti::SmallLetterO),
+            '𑣊' => Ok(WarangCiti::SmallLetterAng),
+            '𑣋' => Ok(WarangCiti::SmallLetterGa),
+            '𑣌' => Ok(WarangCiti::SmallLetterKo),
+            '𑣍' => Ok(WarangCiti::SmallLetterEny),
+            '𑣎' => Ok(WarangCiti::SmallLetterYuj),
+            '𑣏' => Ok(WarangCiti::SmallLetterUc),
+            '𑣐' => Ok(WarangCiti::SmallLetterEnn),
+            '𑣑' => Ok(WarangCiti::SmallLetterOdd),
+            '𑣒' => Ok(WarangCiti::SmallLetterTte),
+            '𑣓' => Ok(WarangCiti::SmallLetterNung),
+            '𑣔' => Ok(WarangCiti::SmallLetterDa),
+            '𑣕' => Ok(WarangCiti::SmallLetterAt),
+            '𑣖' => Ok(WarangCiti::SmallLetterAm),
+            '𑣗' => Ok(WarangCiti::SmallLetterBu),
+            '𑣘' => Ok(WarangCiti::SmallLetterPu),
+            '𑣙' => Ok(WarangCiti::SmallLetterHiyo),
+            '𑣚' => Ok(WarangCiti::SmallLetterHolo),
+            '𑣛' => Ok(WarangCiti::SmallLetterHorr),
+            '𑣜' => Ok(WarangCiti::SmallLetterHar),
+            '𑣝' => Ok(WarangCiti::SmallLetterSsuu),
+            '𑣞' => Ok(WarangCiti::SmallLetterSii),
+            '𑣟' => Ok(WarangCiti::SmallLetterViyo),
+            '𑣠' => Ok(WarangCiti::DigitZero),
+            '𑣡' => Ok(WarangCiti::DigitOne),
+            '𑣢' => Ok(WarangCiti::DigitTwo),
+            '𑣣' => Ok(WarangCiti::DigitThree),
+            '𑣤' => Ok(WarangCiti::DigitFour),
+            '𑣥' => Ok(WarangCiti::DigitFive),
+            '𑣦' => Ok(WarangCiti::DigitSix),
+            '𑣧' => Ok(WarangCiti::DigitSeven),
+            '𑣨' => Ok(WarangCiti::DigitEight),
+            '𑣩' => Ok(WarangCiti::DigitNine),
+            '𑣪' => Ok(WarangCiti::NumberTen),
+            '𑣫' => Ok(WarangCiti::NumberTwenty),
+            '𑣬' => Ok(WarangCiti::NumberThirty),
+            '𑣭' => Ok(WarangCiti::NumberForty),
+            '𑣮' => Ok(WarangCiti::NumberFifty),
+            '𑣯' => Ok(WarangCiti::NumberSixty),
+            '𑣰' => Ok(WarangCiti::NumberSeventy),
+            '𑣱' => Ok(WarangCiti::NumberEighty),
+            '𑣲' => Ok(WarangCiti::NumberNinety),
             _ => Err(()),
         }
     }

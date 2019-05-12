@@ -1,24 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1c80}: 'ᲀ'
-    pub const CYRILLIC_SMALL_LETTER_ROUNDED_VE: char = 'ᲀ';
-    /// \u{1c81}: 'ᲁ'
-    pub const CYRILLIC_SMALL_LETTER_LONG_DASH_LEGGED_DE: char = 'ᲁ';
-    /// \u{1c82}: 'ᲂ'
-    pub const CYRILLIC_SMALL_LETTER_NARROW_O: char = 'ᲂ';
-    /// \u{1c83}: 'ᲃ'
-    pub const CYRILLIC_SMALL_LETTER_WIDE_ES: char = 'ᲃ';
-    /// \u{1c84}: 'ᲄ'
-    pub const CYRILLIC_SMALL_LETTER_TALL_TE: char = 'ᲄ';
-    /// \u{1c85}: 'ᲅ'
-    pub const CYRILLIC_SMALL_LETTER_THREE_DASH_LEGGED_TE: char = 'ᲅ';
-    /// \u{1c86}: 'ᲆ'
-    pub const CYRILLIC_SMALL_LETTER_TALL_HARD_SIGN: char = 'ᲆ';
-    /// \u{1c87}: 'ᲇ'
-    pub const CYRILLIC_SMALL_LETTER_TALL_YAT: char = 'ᲇ';
-    /// \u{1c88}: 'ᲈ'
-    pub const CYRILLIC_SMALL_LETTER_UNBLENDED_UK: char = 'ᲈ';
-}
 
 /// An enum to represent all characters in the CyrillicExtendedC block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -45,17 +24,16 @@ pub enum CyrillicExtendedC {
 
 impl Into<char> for CyrillicExtendedC {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CyrillicExtendedC::CyrillicSmallLetterRoundedVe => CYRILLIC_SMALL_LETTER_ROUNDED_VE,
-            CyrillicExtendedC::CyrillicSmallLetterLongDashLeggedDe => CYRILLIC_SMALL_LETTER_LONG_DASH_LEGGED_DE,
-            CyrillicExtendedC::CyrillicSmallLetterNarrowO => CYRILLIC_SMALL_LETTER_NARROW_O,
-            CyrillicExtendedC::CyrillicSmallLetterWideEs => CYRILLIC_SMALL_LETTER_WIDE_ES,
-            CyrillicExtendedC::CyrillicSmallLetterTallTe => CYRILLIC_SMALL_LETTER_TALL_TE,
-            CyrillicExtendedC::CyrillicSmallLetterThreeDashLeggedTe => CYRILLIC_SMALL_LETTER_THREE_DASH_LEGGED_TE,
-            CyrillicExtendedC::CyrillicSmallLetterTallHardSign => CYRILLIC_SMALL_LETTER_TALL_HARD_SIGN,
-            CyrillicExtendedC::CyrillicSmallLetterTallYat => CYRILLIC_SMALL_LETTER_TALL_YAT,
-            CyrillicExtendedC::CyrillicSmallLetterUnblendedUk => CYRILLIC_SMALL_LETTER_UNBLENDED_UK,
+            CyrillicExtendedC::CyrillicSmallLetterRoundedVe => 'ᲀ',
+            CyrillicExtendedC::CyrillicSmallLetterLongDashLeggedDe => 'ᲁ',
+            CyrillicExtendedC::CyrillicSmallLetterNarrowO => 'ᲂ',
+            CyrillicExtendedC::CyrillicSmallLetterWideEs => 'ᲃ',
+            CyrillicExtendedC::CyrillicSmallLetterTallTe => 'ᲄ',
+            CyrillicExtendedC::CyrillicSmallLetterThreeDashLeggedTe => 'ᲅ',
+            CyrillicExtendedC::CyrillicSmallLetterTallHardSign => 'ᲆ',
+            CyrillicExtendedC::CyrillicSmallLetterTallYat => 'ᲇ',
+            CyrillicExtendedC::CyrillicSmallLetterUnblendedUk => 'ᲈ',
         }
     }
 }
@@ -63,17 +41,16 @@ impl Into<char> for CyrillicExtendedC {
 impl std::convert::TryFrom<char> for CyrillicExtendedC {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CYRILLIC_SMALL_LETTER_ROUNDED_VE => Ok(CyrillicExtendedC::CyrillicSmallLetterRoundedVe),
-            CYRILLIC_SMALL_LETTER_LONG_DASH_LEGGED_DE => Ok(CyrillicExtendedC::CyrillicSmallLetterLongDashLeggedDe),
-            CYRILLIC_SMALL_LETTER_NARROW_O => Ok(CyrillicExtendedC::CyrillicSmallLetterNarrowO),
-            CYRILLIC_SMALL_LETTER_WIDE_ES => Ok(CyrillicExtendedC::CyrillicSmallLetterWideEs),
-            CYRILLIC_SMALL_LETTER_TALL_TE => Ok(CyrillicExtendedC::CyrillicSmallLetterTallTe),
-            CYRILLIC_SMALL_LETTER_THREE_DASH_LEGGED_TE => Ok(CyrillicExtendedC::CyrillicSmallLetterThreeDashLeggedTe),
-            CYRILLIC_SMALL_LETTER_TALL_HARD_SIGN => Ok(CyrillicExtendedC::CyrillicSmallLetterTallHardSign),
-            CYRILLIC_SMALL_LETTER_TALL_YAT => Ok(CyrillicExtendedC::CyrillicSmallLetterTallYat),
-            CYRILLIC_SMALL_LETTER_UNBLENDED_UK => Ok(CyrillicExtendedC::CyrillicSmallLetterUnblendedUk),
+            'ᲀ' => Ok(CyrillicExtendedC::CyrillicSmallLetterRoundedVe),
+            'ᲁ' => Ok(CyrillicExtendedC::CyrillicSmallLetterLongDashLeggedDe),
+            'ᲂ' => Ok(CyrillicExtendedC::CyrillicSmallLetterNarrowO),
+            'ᲃ' => Ok(CyrillicExtendedC::CyrillicSmallLetterWideEs),
+            'ᲄ' => Ok(CyrillicExtendedC::CyrillicSmallLetterTallTe),
+            'ᲅ' => Ok(CyrillicExtendedC::CyrillicSmallLetterThreeDashLeggedTe),
+            'ᲆ' => Ok(CyrillicExtendedC::CyrillicSmallLetterTallHardSign),
+            'ᲇ' => Ok(CyrillicExtendedC::CyrillicSmallLetterTallYat),
+            'ᲈ' => Ok(CyrillicExtendedC::CyrillicSmallLetterUnblendedUk),
             _ => Err(()),
         }
     }

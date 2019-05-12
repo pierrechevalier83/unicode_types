@@ -1,58 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{fe50}: '﹐'
-    pub const SMALL_COMMA: char = '﹐';
-    /// \u{fe51}: '﹑'
-    pub const SMALL_IDEOGRAPHIC_COMMA: char = '﹑';
-    /// \u{fe52}: '﹒'
-    pub const SMALL_FULL_STOP: char = '﹒';
-    /// \u{fe54}: '﹔'
-    pub const SMALL_SEMICOLON: char = '﹔';
-    /// \u{fe55}: '﹕'
-    pub const SMALL_COLON: char = '﹕';
-    /// \u{fe56}: '﹖'
-    pub const SMALL_QUESTION_MARK: char = '﹖';
-    /// \u{fe57}: '﹗'
-    pub const SMALL_EXCLAMATION_MARK: char = '﹗';
-    /// \u{fe58}: '﹘'
-    pub const SMALL_EM_DASH: char = '﹘';
-    /// \u{fe59}: '﹙'
-    pub const SMALL_LEFT_PARENTHESIS: char = '﹙';
-    /// \u{fe5a}: '﹚'
-    pub const SMALL_RIGHT_PARENTHESIS: char = '﹚';
-    /// \u{fe5b}: '﹛'
-    pub const SMALL_LEFT_CURLY_BRACKET: char = '﹛';
-    /// \u{fe5c}: '﹜'
-    pub const SMALL_RIGHT_CURLY_BRACKET: char = '﹜';
-    /// \u{fe5d}: '﹝'
-    pub const SMALL_LEFT_TORTOISE_SHELL_BRACKET: char = '﹝';
-    /// \u{fe5e}: '﹞'
-    pub const SMALL_RIGHT_TORTOISE_SHELL_BRACKET: char = '﹞';
-    /// \u{fe5f}: '﹟'
-    pub const SMALL_NUMBER_SIGN: char = '﹟';
-    /// \u{fe60}: '﹠'
-    pub const SMALL_AMPERSAND: char = '﹠';
-    /// \u{fe61}: '﹡'
-    pub const SMALL_ASTERISK: char = '﹡';
-    /// \u{fe62}: '﹢'
-    pub const SMALL_PLUS_SIGN: char = '﹢';
-    /// \u{fe63}: '﹣'
-    pub const SMALL_HYPHEN_DASH_MINUS: char = '﹣';
-    /// \u{fe64}: '﹤'
-    pub const SMALL_LESS_DASH_THAN_SIGN: char = '﹤';
-    /// \u{fe65}: '﹥'
-    pub const SMALL_GREATER_DASH_THAN_SIGN: char = '﹥';
-    /// \u{fe66}: '﹦'
-    pub const SMALL_EQUALS_SIGN: char = '﹦';
-    /// \u{fe68}: '﹨'
-    pub const SMALL_REVERSE_SOLIDUS: char = '﹨';
-    /// \u{fe69}: '﹩'
-    pub const SMALL_DOLLAR_SIGN: char = '﹩';
-    /// \u{fe6a}: '﹪'
-    pub const SMALL_PERCENT_SIGN: char = '﹪';
-    /// \u{fe6b}: '﹫'
-    pub const SMALL_COMMERCIAL_AT: char = '﹫';
-}
 
 /// An enum to represent all characters in the SmallFormVariants block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -113,34 +58,33 @@ pub enum SmallFormVariants {
 
 impl Into<char> for SmallFormVariants {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SmallFormVariants::SmallComma => SMALL_COMMA,
-            SmallFormVariants::SmallIdeographicComma => SMALL_IDEOGRAPHIC_COMMA,
-            SmallFormVariants::SmallFullStop => SMALL_FULL_STOP,
-            SmallFormVariants::SmallSemicolon => SMALL_SEMICOLON,
-            SmallFormVariants::SmallColon => SMALL_COLON,
-            SmallFormVariants::SmallQuestionMark => SMALL_QUESTION_MARK,
-            SmallFormVariants::SmallExclamationMark => SMALL_EXCLAMATION_MARK,
-            SmallFormVariants::SmallEmDash => SMALL_EM_DASH,
-            SmallFormVariants::SmallLeftParenthesis => SMALL_LEFT_PARENTHESIS,
-            SmallFormVariants::SmallRightParenthesis => SMALL_RIGHT_PARENTHESIS,
-            SmallFormVariants::SmallLeftCurlyBracket => SMALL_LEFT_CURLY_BRACKET,
-            SmallFormVariants::SmallRightCurlyBracket => SMALL_RIGHT_CURLY_BRACKET,
-            SmallFormVariants::SmallLeftTortoiseShellBracket => SMALL_LEFT_TORTOISE_SHELL_BRACKET,
-            SmallFormVariants::SmallRightTortoiseShellBracket => SMALL_RIGHT_TORTOISE_SHELL_BRACKET,
-            SmallFormVariants::SmallNumberSign => SMALL_NUMBER_SIGN,
-            SmallFormVariants::SmallAmpersand => SMALL_AMPERSAND,
-            SmallFormVariants::SmallAsterisk => SMALL_ASTERISK,
-            SmallFormVariants::SmallPlusSign => SMALL_PLUS_SIGN,
-            SmallFormVariants::SmallHyphenDashMinus => SMALL_HYPHEN_DASH_MINUS,
-            SmallFormVariants::SmallLessDashThanSign => SMALL_LESS_DASH_THAN_SIGN,
-            SmallFormVariants::SmallGreaterDashThanSign => SMALL_GREATER_DASH_THAN_SIGN,
-            SmallFormVariants::SmallEqualsSign => SMALL_EQUALS_SIGN,
-            SmallFormVariants::SmallReverseSolidus => SMALL_REVERSE_SOLIDUS,
-            SmallFormVariants::SmallDollarSign => SMALL_DOLLAR_SIGN,
-            SmallFormVariants::SmallPercentSign => SMALL_PERCENT_SIGN,
-            SmallFormVariants::SmallCommercialAt => SMALL_COMMERCIAL_AT,
+            SmallFormVariants::SmallComma => '﹐',
+            SmallFormVariants::SmallIdeographicComma => '﹑',
+            SmallFormVariants::SmallFullStop => '﹒',
+            SmallFormVariants::SmallSemicolon => '﹔',
+            SmallFormVariants::SmallColon => '﹕',
+            SmallFormVariants::SmallQuestionMark => '﹖',
+            SmallFormVariants::SmallExclamationMark => '﹗',
+            SmallFormVariants::SmallEmDash => '﹘',
+            SmallFormVariants::SmallLeftParenthesis => '﹙',
+            SmallFormVariants::SmallRightParenthesis => '﹚',
+            SmallFormVariants::SmallLeftCurlyBracket => '﹛',
+            SmallFormVariants::SmallRightCurlyBracket => '﹜',
+            SmallFormVariants::SmallLeftTortoiseShellBracket => '﹝',
+            SmallFormVariants::SmallRightTortoiseShellBracket => '﹞',
+            SmallFormVariants::SmallNumberSign => '﹟',
+            SmallFormVariants::SmallAmpersand => '﹠',
+            SmallFormVariants::SmallAsterisk => '﹡',
+            SmallFormVariants::SmallPlusSign => '﹢',
+            SmallFormVariants::SmallHyphenDashMinus => '﹣',
+            SmallFormVariants::SmallLessDashThanSign => '﹤',
+            SmallFormVariants::SmallGreaterDashThanSign => '﹥',
+            SmallFormVariants::SmallEqualsSign => '﹦',
+            SmallFormVariants::SmallReverseSolidus => '﹨',
+            SmallFormVariants::SmallDollarSign => '﹩',
+            SmallFormVariants::SmallPercentSign => '﹪',
+            SmallFormVariants::SmallCommercialAt => '﹫',
         }
     }
 }
@@ -148,34 +92,33 @@ impl Into<char> for SmallFormVariants {
 impl std::convert::TryFrom<char> for SmallFormVariants {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SMALL_COMMA => Ok(SmallFormVariants::SmallComma),
-            SMALL_IDEOGRAPHIC_COMMA => Ok(SmallFormVariants::SmallIdeographicComma),
-            SMALL_FULL_STOP => Ok(SmallFormVariants::SmallFullStop),
-            SMALL_SEMICOLON => Ok(SmallFormVariants::SmallSemicolon),
-            SMALL_COLON => Ok(SmallFormVariants::SmallColon),
-            SMALL_QUESTION_MARK => Ok(SmallFormVariants::SmallQuestionMark),
-            SMALL_EXCLAMATION_MARK => Ok(SmallFormVariants::SmallExclamationMark),
-            SMALL_EM_DASH => Ok(SmallFormVariants::SmallEmDash),
-            SMALL_LEFT_PARENTHESIS => Ok(SmallFormVariants::SmallLeftParenthesis),
-            SMALL_RIGHT_PARENTHESIS => Ok(SmallFormVariants::SmallRightParenthesis),
-            SMALL_LEFT_CURLY_BRACKET => Ok(SmallFormVariants::SmallLeftCurlyBracket),
-            SMALL_RIGHT_CURLY_BRACKET => Ok(SmallFormVariants::SmallRightCurlyBracket),
-            SMALL_LEFT_TORTOISE_SHELL_BRACKET => Ok(SmallFormVariants::SmallLeftTortoiseShellBracket),
-            SMALL_RIGHT_TORTOISE_SHELL_BRACKET => Ok(SmallFormVariants::SmallRightTortoiseShellBracket),
-            SMALL_NUMBER_SIGN => Ok(SmallFormVariants::SmallNumberSign),
-            SMALL_AMPERSAND => Ok(SmallFormVariants::SmallAmpersand),
-            SMALL_ASTERISK => Ok(SmallFormVariants::SmallAsterisk),
-            SMALL_PLUS_SIGN => Ok(SmallFormVariants::SmallPlusSign),
-            SMALL_HYPHEN_DASH_MINUS => Ok(SmallFormVariants::SmallHyphenDashMinus),
-            SMALL_LESS_DASH_THAN_SIGN => Ok(SmallFormVariants::SmallLessDashThanSign),
-            SMALL_GREATER_DASH_THAN_SIGN => Ok(SmallFormVariants::SmallGreaterDashThanSign),
-            SMALL_EQUALS_SIGN => Ok(SmallFormVariants::SmallEqualsSign),
-            SMALL_REVERSE_SOLIDUS => Ok(SmallFormVariants::SmallReverseSolidus),
-            SMALL_DOLLAR_SIGN => Ok(SmallFormVariants::SmallDollarSign),
-            SMALL_PERCENT_SIGN => Ok(SmallFormVariants::SmallPercentSign),
-            SMALL_COMMERCIAL_AT => Ok(SmallFormVariants::SmallCommercialAt),
+            '﹐' => Ok(SmallFormVariants::SmallComma),
+            '﹑' => Ok(SmallFormVariants::SmallIdeographicComma),
+            '﹒' => Ok(SmallFormVariants::SmallFullStop),
+            '﹔' => Ok(SmallFormVariants::SmallSemicolon),
+            '﹕' => Ok(SmallFormVariants::SmallColon),
+            '﹖' => Ok(SmallFormVariants::SmallQuestionMark),
+            '﹗' => Ok(SmallFormVariants::SmallExclamationMark),
+            '﹘' => Ok(SmallFormVariants::SmallEmDash),
+            '﹙' => Ok(SmallFormVariants::SmallLeftParenthesis),
+            '﹚' => Ok(SmallFormVariants::SmallRightParenthesis),
+            '﹛' => Ok(SmallFormVariants::SmallLeftCurlyBracket),
+            '﹜' => Ok(SmallFormVariants::SmallRightCurlyBracket),
+            '﹝' => Ok(SmallFormVariants::SmallLeftTortoiseShellBracket),
+            '﹞' => Ok(SmallFormVariants::SmallRightTortoiseShellBracket),
+            '﹟' => Ok(SmallFormVariants::SmallNumberSign),
+            '﹠' => Ok(SmallFormVariants::SmallAmpersand),
+            '﹡' => Ok(SmallFormVariants::SmallAsterisk),
+            '﹢' => Ok(SmallFormVariants::SmallPlusSign),
+            '﹣' => Ok(SmallFormVariants::SmallHyphenDashMinus),
+            '﹤' => Ok(SmallFormVariants::SmallLessDashThanSign),
+            '﹥' => Ok(SmallFormVariants::SmallGreaterDashThanSign),
+            '﹦' => Ok(SmallFormVariants::SmallEqualsSign),
+            '﹨' => Ok(SmallFormVariants::SmallReverseSolidus),
+            '﹩' => Ok(SmallFormVariants::SmallDollarSign),
+            '﹪' => Ok(SmallFormVariants::SmallPercentSign),
+            '﹫' => Ok(SmallFormVariants::SmallCommercialAt),
             _ => Err(()),
         }
     }

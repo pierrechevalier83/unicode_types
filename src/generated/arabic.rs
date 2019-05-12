@@ -1,514 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{600}: '؀'
-    pub const NUMBER_SIGN: char = '؀';
-    /// \u{601}: '؁'
-    pub const SIGN_SANAH: char = '؁';
-    /// \u{602}: '؂'
-    pub const FOOTNOTE_MARKER: char = '؂';
-    /// \u{603}: '؃'
-    pub const SIGN_SAFHA: char = '؃';
-    /// \u{604}: '؄'
-    pub const SIGN_SAMVAT: char = '؄';
-    /// \u{605}: '؅'
-    pub const NUMBER_MARK_ABOVE: char = '؅';
-    /// \u{606}: '؆'
-    pub const DASH_INDIC_CUBE_ROOT: char = '؆';
-    /// \u{607}: '؇'
-    pub const DASH_INDIC_FOURTH_ROOT: char = '؇';
-    /// \u{608}: '؈'
-    pub const RAY: char = '؈';
-    /// \u{609}: '؉'
-    pub const DASH_INDIC_PER_MILLE_SIGN: char = '؉';
-    /// \u{60a}: '؊'
-    pub const DASH_INDIC_PER_TEN_THOUSAND_SIGN: char = '؊';
-    /// \u{60b}: '؋'
-    pub const AFGHANI_SIGN: char = '؋';
-    /// \u{60c}: '،'
-    pub const COMMA: char = '،';
-    /// \u{60d}: '؍'
-    pub const DATE_SEPARATOR: char = '؍';
-    /// \u{60e}: '؎'
-    pub const POETIC_VERSE_SIGN: char = '؎';
-    /// \u{60f}: '؏'
-    pub const SIGN_MISRA: char = '؏';
-    /// \u{610}: 'ؐ'
-    pub const SIGN_SALLALLAHOU_ALAYHE_WASSALLAM: char = 'ؐ';
-    /// \u{611}: 'ؑ'
-    pub const SIGN_ALAYHE_ASSALLAM: char = 'ؑ';
-    /// \u{612}: 'ؒ'
-    pub const SIGN_RAHMATULLAH_ALAYHE: char = 'ؒ';
-    /// \u{613}: 'ؓ'
-    pub const SIGN_RADI_ALLAHOU_ANHU: char = 'ؓ';
-    /// \u{614}: 'ؔ'
-    pub const SIGN_TAKHALLUS: char = 'ؔ';
-    /// \u{615}: 'ؕ'
-    pub const SMALL_HIGH_TAH: char = 'ؕ';
-    /// \u{616}: 'ؖ'
-    pub const SMALL_HIGH_LIGATURE_ALEF_WITH_LAM_WITH_YEH: char = 'ؖ';
-    /// \u{617}: 'ؗ'
-    pub const SMALL_HIGH_ZAIN: char = 'ؗ';
-    /// \u{618}: 'ؘ'
-    pub const SMALL_FATHA: char = 'ؘ';
-    /// \u{619}: 'ؙ'
-    pub const SMALL_DAMMA: char = 'ؙ';
-    /// \u{61a}: 'ؚ'
-    pub const SMALL_KASRA: char = 'ؚ';
-    /// \u{61b}: '؛'
-    pub const SEMICOLON: char = '؛';
-    /// \u{61c}: '؜'
-    pub const LETTER_MARK: char = '؜';
-    /// \u{61e}: '؞'
-    pub const TRIPLE_DOT_PUNCTUATION_MARK: char = '؞';
-    /// \u{61f}: '؟'
-    pub const QUESTION_MARK: char = '؟';
-    /// \u{620}: 'ؠ'
-    pub const LETTER_KASHMIRI_YEH: char = 'ؠ';
-    /// \u{621}: 'ء'
-    pub const LETTER_HAMZA: char = 'ء';
-    /// \u{622}: 'آ'
-    pub const LETTER_ALEF_WITH_MADDA_ABOVE: char = 'آ';
-    /// \u{623}: 'أ'
-    pub const LETTER_ALEF_WITH_HAMZA_ABOVE: char = 'أ';
-    /// \u{624}: 'ؤ'
-    pub const LETTER_WAW_WITH_HAMZA_ABOVE: char = 'ؤ';
-    /// \u{625}: 'إ'
-    pub const LETTER_ALEF_WITH_HAMZA_BELOW: char = 'إ';
-    /// \u{626}: 'ئ'
-    pub const LETTER_YEH_WITH_HAMZA_ABOVE: char = 'ئ';
-    /// \u{627}: 'ا'
-    pub const LETTER_ALEF: char = 'ا';
-    /// \u{628}: 'ب'
-    pub const LETTER_BEH: char = 'ب';
-    /// \u{629}: 'ة'
-    pub const LETTER_TEH_MARBUTA: char = 'ة';
-    /// \u{62a}: 'ت'
-    pub const LETTER_TEH: char = 'ت';
-    /// \u{62b}: 'ث'
-    pub const LETTER_THEH: char = 'ث';
-    /// \u{62c}: 'ج'
-    pub const LETTER_JEEM: char = 'ج';
-    /// \u{62d}: 'ح'
-    pub const LETTER_HAH: char = 'ح';
-    /// \u{62e}: 'خ'
-    pub const LETTER_KHAH: char = 'خ';
-    /// \u{62f}: 'د'
-    pub const LETTER_DAL: char = 'د';
-    /// \u{630}: 'ذ'
-    pub const LETTER_THAL: char = 'ذ';
-    /// \u{631}: 'ر'
-    pub const LETTER_REH: char = 'ر';
-    /// \u{632}: 'ز'
-    pub const LETTER_ZAIN: char = 'ز';
-    /// \u{633}: 'س'
-    pub const LETTER_SEEN: char = 'س';
-    /// \u{634}: 'ش'
-    pub const LETTER_SHEEN: char = 'ش';
-    /// \u{635}: 'ص'
-    pub const LETTER_SAD: char = 'ص';
-    /// \u{636}: 'ض'
-    pub const LETTER_DAD: char = 'ض';
-    /// \u{637}: 'ط'
-    pub const LETTER_TAH: char = 'ط';
-    /// \u{638}: 'ظ'
-    pub const LETTER_ZAH: char = 'ظ';
-    /// \u{639}: 'ع'
-    pub const LETTER_AIN: char = 'ع';
-    /// \u{63a}: 'غ'
-    pub const LETTER_GHAIN: char = 'غ';
-    /// \u{63b}: 'ػ'
-    pub const LETTER_KEHEH_WITH_TWO_DOTS_ABOVE: char = 'ػ';
-    /// \u{63c}: 'ؼ'
-    pub const LETTER_KEHEH_WITH_THREE_DOTS_BELOW: char = 'ؼ';
-    /// \u{63d}: 'ؽ'
-    pub const LETTER_FARSI_YEH_WITH_INVERTED_V: char = 'ؽ';
-    /// \u{63e}: 'ؾ'
-    pub const LETTER_FARSI_YEH_WITH_TWO_DOTS_ABOVE: char = 'ؾ';
-    /// \u{63f}: 'ؿ'
-    pub const LETTER_FARSI_YEH_WITH_THREE_DOTS_ABOVE: char = 'ؿ';
-    /// \u{640}: 'ـ'
-    pub const TATWEEL: char = 'ـ';
-    /// \u{641}: 'ف'
-    pub const LETTER_FEH: char = 'ف';
-    /// \u{642}: 'ق'
-    pub const LETTER_QAF: char = 'ق';
-    /// \u{643}: 'ك'
-    pub const LETTER_KAF: char = 'ك';
-    /// \u{644}: 'ل'
-    pub const LETTER_LAM: char = 'ل';
-    /// \u{645}: 'م'
-    pub const LETTER_MEEM: char = 'م';
-    /// \u{646}: 'ن'
-    pub const LETTER_NOON: char = 'ن';
-    /// \u{647}: 'ه'
-    pub const LETTER_HEH: char = 'ه';
-    /// \u{648}: 'و'
-    pub const LETTER_WAW: char = 'و';
-    /// \u{649}: 'ى'
-    pub const LETTER_ALEF_MAKSURA: char = 'ى';
-    /// \u{64a}: 'ي'
-    pub const LETTER_YEH: char = 'ي';
-    /// \u{64b}: 'ً'
-    pub const FATHATAN: char = 'ً';
-    /// \u{64c}: 'ٌ'
-    pub const DAMMATAN: char = 'ٌ';
-    /// \u{64d}: 'ٍ'
-    pub const KASRATAN: char = 'ٍ';
-    /// \u{64e}: 'َ'
-    pub const FATHA: char = 'َ';
-    /// \u{64f}: 'ُ'
-    pub const DAMMA: char = 'ُ';
-    /// \u{650}: 'ِ'
-    pub const KASRA: char = 'ِ';
-    /// \u{651}: 'ّ'
-    pub const SHADDA: char = 'ّ';
-    /// \u{652}: 'ْ'
-    pub const SUKUN: char = 'ْ';
-    /// \u{653}: 'ٓ'
-    pub const MADDAH_ABOVE: char = 'ٓ';
-    /// \u{654}: 'ٔ'
-    pub const HAMZA_ABOVE: char = 'ٔ';
-    /// \u{655}: 'ٕ'
-    pub const HAMZA_BELOW: char = 'ٕ';
-    /// \u{656}: 'ٖ'
-    pub const SUBSCRIPT_ALEF: char = 'ٖ';
-    /// \u{657}: 'ٗ'
-    pub const INVERTED_DAMMA: char = 'ٗ';
-    /// \u{658}: '٘'
-    pub const MARK_NOON_GHUNNA: char = '٘';
-    /// \u{659}: 'ٙ'
-    pub const ZWARAKAY: char = 'ٙ';
-    /// \u{65a}: 'ٚ'
-    pub const VOWEL_SIGN_SMALL_V_ABOVE: char = 'ٚ';
-    /// \u{65b}: 'ٛ'
-    pub const VOWEL_SIGN_INVERTED_SMALL_V_ABOVE: char = 'ٛ';
-    /// \u{65c}: 'ٜ'
-    pub const VOWEL_SIGN_DOT_BELOW: char = 'ٜ';
-    /// \u{65d}: 'ٝ'
-    pub const REVERSED_DAMMA: char = 'ٝ';
-    /// \u{65e}: 'ٞ'
-    pub const FATHA_WITH_TWO_DOTS: char = 'ٞ';
-    /// \u{65f}: 'ٟ'
-    pub const WAVY_HAMZA_BELOW: char = 'ٟ';
-    /// \u{660}: '٠'
-    pub const DASH_INDIC_DIGIT_ZERO: char = '٠';
-    /// \u{661}: '١'
-    pub const DASH_INDIC_DIGIT_ONE: char = '١';
-    /// \u{662}: '٢'
-    pub const DASH_INDIC_DIGIT_TWO: char = '٢';
-    /// \u{663}: '٣'
-    pub const DASH_INDIC_DIGIT_THREE: char = '٣';
-    /// \u{664}: '٤'
-    pub const DASH_INDIC_DIGIT_FOUR: char = '٤';
-    /// \u{665}: '٥'
-    pub const DASH_INDIC_DIGIT_FIVE: char = '٥';
-    /// \u{666}: '٦'
-    pub const DASH_INDIC_DIGIT_SIX: char = '٦';
-    /// \u{667}: '٧'
-    pub const DASH_INDIC_DIGIT_SEVEN: char = '٧';
-    /// \u{668}: '٨'
-    pub const DASH_INDIC_DIGIT_EIGHT: char = '٨';
-    /// \u{669}: '٩'
-    pub const DASH_INDIC_DIGIT_NINE: char = '٩';
-    /// \u{66a}: '٪'
-    pub const PERCENT_SIGN: char = '٪';
-    /// \u{66b}: '٫'
-    pub const DECIMAL_SEPARATOR: char = '٫';
-    /// \u{66c}: '٬'
-    pub const THOUSANDS_SEPARATOR: char = '٬';
-    /// \u{66d}: '٭'
-    pub const FIVE_POINTED_STAR: char = '٭';
-    /// \u{66e}: 'ٮ'
-    pub const LETTER_DOTLESS_BEH: char = 'ٮ';
-    /// \u{66f}: 'ٯ'
-    pub const LETTER_DOTLESS_QAF: char = 'ٯ';
-    /// \u{670}: 'ٰ'
-    pub const LETTER_SUPERSCRIPT_ALEF: char = 'ٰ';
-    /// \u{671}: 'ٱ'
-    pub const LETTER_ALEF_WASLA: char = 'ٱ';
-    /// \u{672}: 'ٲ'
-    pub const LETTER_ALEF_WITH_WAVY_HAMZA_ABOVE: char = 'ٲ';
-    /// \u{673}: 'ٳ'
-    pub const LETTER_ALEF_WITH_WAVY_HAMZA_BELOW: char = 'ٳ';
-    /// \u{674}: 'ٴ'
-    pub const LETTER_HIGH_HAMZA: char = 'ٴ';
-    /// \u{675}: 'ٵ'
-    pub const LETTER_HIGH_HAMZA_ALEF: char = 'ٵ';
-    /// \u{676}: 'ٶ'
-    pub const LETTER_HIGH_HAMZA_WAW: char = 'ٶ';
-    /// \u{677}: 'ٷ'
-    pub const LETTER_U_WITH_HAMZA_ABOVE: char = 'ٷ';
-    /// \u{678}: 'ٸ'
-    pub const LETTER_HIGH_HAMZA_YEH: char = 'ٸ';
-    /// \u{679}: 'ٹ'
-    pub const LETTER_TTEH: char = 'ٹ';
-    /// \u{67a}: 'ٺ'
-    pub const LETTER_TTEHEH: char = 'ٺ';
-    /// \u{67b}: 'ٻ'
-    pub const LETTER_BEEH: char = 'ٻ';
-    /// \u{67c}: 'ټ'
-    pub const LETTER_TEH_WITH_RING: char = 'ټ';
-    /// \u{67d}: 'ٽ'
-    pub const LETTER_TEH_WITH_THREE_DOTS_ABOVE_DOWNWARDS: char = 'ٽ';
-    /// \u{67e}: 'پ'
-    pub const LETTER_PEH: char = 'پ';
-    /// \u{67f}: 'ٿ'
-    pub const LETTER_TEHEH: char = 'ٿ';
-    /// \u{680}: 'ڀ'
-    pub const LETTER_BEHEH: char = 'ڀ';
-    /// \u{681}: 'ځ'
-    pub const LETTER_HAH_WITH_HAMZA_ABOVE: char = 'ځ';
-    /// \u{682}: 'ڂ'
-    pub const LETTER_HAH_WITH_TWO_DOTS_VERTICAL_ABOVE: char = 'ڂ';
-    /// \u{683}: 'ڃ'
-    pub const LETTER_NYEH: char = 'ڃ';
-    /// \u{684}: 'ڄ'
-    pub const LETTER_DYEH: char = 'ڄ';
-    /// \u{685}: 'څ'
-    pub const LETTER_HAH_WITH_THREE_DOTS_ABOVE: char = 'څ';
-    /// \u{686}: 'چ'
-    pub const LETTER_TCHEH: char = 'چ';
-    /// \u{687}: 'ڇ'
-    pub const LETTER_TCHEHEH: char = 'ڇ';
-    /// \u{688}: 'ڈ'
-    pub const LETTER_DDAL: char = 'ڈ';
-    /// \u{689}: 'ډ'
-    pub const LETTER_DAL_WITH_RING: char = 'ډ';
-    /// \u{68a}: 'ڊ'
-    pub const LETTER_DAL_WITH_DOT_BELOW: char = 'ڊ';
-    /// \u{68b}: 'ڋ'
-    pub const LETTER_DAL_WITH_DOT_BELOW_AND_SMALL_TAH: char = 'ڋ';
-    /// \u{68c}: 'ڌ'
-    pub const LETTER_DAHAL: char = 'ڌ';
-    /// \u{68d}: 'ڍ'
-    pub const LETTER_DDAHAL: char = 'ڍ';
-    /// \u{68e}: 'ڎ'
-    pub const LETTER_DUL: char = 'ڎ';
-    /// \u{68f}: 'ڏ'
-    pub const LETTER_DAL_WITH_THREE_DOTS_ABOVE_DOWNWARDS: char = 'ڏ';
-    /// \u{690}: 'ڐ'
-    pub const LETTER_DAL_WITH_FOUR_DOTS_ABOVE: char = 'ڐ';
-    /// \u{691}: 'ڑ'
-    pub const LETTER_RREH: char = 'ڑ';
-    /// \u{692}: 'ڒ'
-    pub const LETTER_REH_WITH_SMALL_V: char = 'ڒ';
-    /// \u{693}: 'ړ'
-    pub const LETTER_REH_WITH_RING: char = 'ړ';
-    /// \u{694}: 'ڔ'
-    pub const LETTER_REH_WITH_DOT_BELOW: char = 'ڔ';
-    /// \u{695}: 'ڕ'
-    pub const LETTER_REH_WITH_SMALL_V_BELOW: char = 'ڕ';
-    /// \u{696}: 'ږ'
-    pub const LETTER_REH_WITH_DOT_BELOW_AND_DOT_ABOVE: char = 'ږ';
-    /// \u{697}: 'ڗ'
-    pub const LETTER_REH_WITH_TWO_DOTS_ABOVE: char = 'ڗ';
-    /// \u{698}: 'ژ'
-    pub const LETTER_JEH: char = 'ژ';
-    /// \u{699}: 'ڙ'
-    pub const LETTER_REH_WITH_FOUR_DOTS_ABOVE: char = 'ڙ';
-    /// \u{69a}: 'ښ'
-    pub const LETTER_SEEN_WITH_DOT_BELOW_AND_DOT_ABOVE: char = 'ښ';
-    /// \u{69b}: 'ڛ'
-    pub const LETTER_SEEN_WITH_THREE_DOTS_BELOW: char = 'ڛ';
-    /// \u{69c}: 'ڜ'
-    pub const LETTER_SEEN_WITH_THREE_DOTS_BELOW_AND_THREE_DOTS_ABOVE: char = 'ڜ';
-    /// \u{69d}: 'ڝ'
-    pub const LETTER_SAD_WITH_TWO_DOTS_BELOW: char = 'ڝ';
-    /// \u{69e}: 'ڞ'
-    pub const LETTER_SAD_WITH_THREE_DOTS_ABOVE: char = 'ڞ';
-    /// \u{69f}: 'ڟ'
-    pub const LETTER_TAH_WITH_THREE_DOTS_ABOVE: char = 'ڟ';
-    /// \u{6a0}: 'ڠ'
-    pub const LETTER_AIN_WITH_THREE_DOTS_ABOVE: char = 'ڠ';
-    /// \u{6a1}: 'ڡ'
-    pub const LETTER_DOTLESS_FEH: char = 'ڡ';
-    /// \u{6a2}: 'ڢ'
-    pub const LETTER_FEH_WITH_DOT_MOVED_BELOW: char = 'ڢ';
-    /// \u{6a3}: 'ڣ'
-    pub const LETTER_FEH_WITH_DOT_BELOW: char = 'ڣ';
-    /// \u{6a4}: 'ڤ'
-    pub const LETTER_VEH: char = 'ڤ';
-    /// \u{6a5}: 'ڥ'
-    pub const LETTER_FEH_WITH_THREE_DOTS_BELOW: char = 'ڥ';
-    /// \u{6a6}: 'ڦ'
-    pub const LETTER_PEHEH: char = 'ڦ';
-    /// \u{6a7}: 'ڧ'
-    pub const LETTER_QAF_WITH_DOT_ABOVE: char = 'ڧ';
-    /// \u{6a8}: 'ڨ'
-    pub const LETTER_QAF_WITH_THREE_DOTS_ABOVE: char = 'ڨ';
-    /// \u{6a9}: 'ک'
-    pub const LETTER_KEHEH: char = 'ک';
-    /// \u{6aa}: 'ڪ'
-    pub const LETTER_SWASH_KAF: char = 'ڪ';
-    /// \u{6ab}: 'ګ'
-    pub const LETTER_KAF_WITH_RING: char = 'ګ';
-    /// \u{6ac}: 'ڬ'
-    pub const LETTER_KAF_WITH_DOT_ABOVE: char = 'ڬ';
-    /// \u{6ad}: 'ڭ'
-    pub const LETTER_NG: char = 'ڭ';
-    /// \u{6ae}: 'ڮ'
-    pub const LETTER_KAF_WITH_THREE_DOTS_BELOW: char = 'ڮ';
-    /// \u{6af}: 'گ'
-    pub const LETTER_GAF: char = 'گ';
-    /// \u{6b0}: 'ڰ'
-    pub const LETTER_GAF_WITH_RING: char = 'ڰ';
-    /// \u{6b1}: 'ڱ'
-    pub const LETTER_NGOEH: char = 'ڱ';
-    /// \u{6b2}: 'ڲ'
-    pub const LETTER_GAF_WITH_TWO_DOTS_BELOW: char = 'ڲ';
-    /// \u{6b3}: 'ڳ'
-    pub const LETTER_GUEH: char = 'ڳ';
-    /// \u{6b4}: 'ڴ'
-    pub const LETTER_GAF_WITH_THREE_DOTS_ABOVE: char = 'ڴ';
-    /// \u{6b5}: 'ڵ'
-    pub const LETTER_LAM_WITH_SMALL_V: char = 'ڵ';
-    /// \u{6b6}: 'ڶ'
-    pub const LETTER_LAM_WITH_DOT_ABOVE: char = 'ڶ';
-    /// \u{6b7}: 'ڷ'
-    pub const LETTER_LAM_WITH_THREE_DOTS_ABOVE: char = 'ڷ';
-    /// \u{6b8}: 'ڸ'
-    pub const LETTER_LAM_WITH_THREE_DOTS_BELOW: char = 'ڸ';
-    /// \u{6b9}: 'ڹ'
-    pub const LETTER_NOON_WITH_DOT_BELOW: char = 'ڹ';
-    /// \u{6ba}: 'ں'
-    pub const LETTER_NOON_GHUNNA: char = 'ں';
-    /// \u{6bb}: 'ڻ'
-    pub const LETTER_RNOON: char = 'ڻ';
-    /// \u{6bc}: 'ڼ'
-    pub const LETTER_NOON_WITH_RING: char = 'ڼ';
-    /// \u{6bd}: 'ڽ'
-    pub const LETTER_NOON_WITH_THREE_DOTS_ABOVE: char = 'ڽ';
-    /// \u{6be}: 'ھ'
-    pub const LETTER_HEH_DOACHASHMEE: char = 'ھ';
-    /// \u{6bf}: 'ڿ'
-    pub const LETTER_TCHEH_WITH_DOT_ABOVE: char = 'ڿ';
-    /// \u{6c0}: 'ۀ'
-    pub const LETTER_HEH_WITH_YEH_ABOVE: char = 'ۀ';
-    /// \u{6c1}: 'ہ'
-    pub const LETTER_HEH_GOAL: char = 'ہ';
-    /// \u{6c2}: 'ۂ'
-    pub const LETTER_HEH_GOAL_WITH_HAMZA_ABOVE: char = 'ۂ';
-    /// \u{6c3}: 'ۃ'
-    pub const LETTER_TEH_MARBUTA_GOAL: char = 'ۃ';
-    /// \u{6c4}: 'ۄ'
-    pub const LETTER_WAW_WITH_RING: char = 'ۄ';
-    /// \u{6c5}: 'ۅ'
-    pub const LETTER_KIRGHIZ_OE: char = 'ۅ';
-    /// \u{6c6}: 'ۆ'
-    pub const LETTER_OE: char = 'ۆ';
-    /// \u{6c7}: 'ۇ'
-    pub const LETTER_U: char = 'ۇ';
-    /// \u{6c8}: 'ۈ'
-    pub const LETTER_YU: char = 'ۈ';
-    /// \u{6c9}: 'ۉ'
-    pub const LETTER_KIRGHIZ_YU: char = 'ۉ';
-    /// \u{6ca}: 'ۊ'
-    pub const LETTER_WAW_WITH_TWO_DOTS_ABOVE: char = 'ۊ';
-    /// \u{6cb}: 'ۋ'
-    pub const LETTER_VE: char = 'ۋ';
-    /// \u{6cc}: 'ی'
-    pub const LETTER_FARSI_YEH: char = 'ی';
-    /// \u{6cd}: 'ۍ'
-    pub const LETTER_YEH_WITH_TAIL: char = 'ۍ';
-    /// \u{6ce}: 'ێ'
-    pub const LETTER_YEH_WITH_SMALL_V: char = 'ێ';
-    /// \u{6cf}: 'ۏ'
-    pub const LETTER_WAW_WITH_DOT_ABOVE: char = 'ۏ';
-    /// \u{6d0}: 'ې'
-    pub const LETTER_E: char = 'ې';
-    /// \u{6d1}: 'ۑ'
-    pub const LETTER_YEH_WITH_THREE_DOTS_BELOW: char = 'ۑ';
-    /// \u{6d2}: 'ے'
-    pub const LETTER_YEH_BARREE: char = 'ے';
-    /// \u{6d3}: 'ۓ'
-    pub const LETTER_YEH_BARREE_WITH_HAMZA_ABOVE: char = 'ۓ';
-    /// \u{6d4}: '۔'
-    pub const FULL_STOP: char = '۔';
-    /// \u{6d5}: 'ە'
-    pub const LETTER_AE: char = 'ە';
-    /// \u{6d6}: 'ۖ'
-    pub const SMALL_HIGH_LIGATURE_SAD_WITH_LAM_WITH_ALEF_MAKSURA: char = 'ۖ';
-    /// \u{6d7}: 'ۗ'
-    pub const SMALL_HIGH_LIGATURE_QAF_WITH_LAM_WITH_ALEF_MAKSURA: char = 'ۗ';
-    /// \u{6d8}: 'ۘ'
-    pub const SMALL_HIGH_MEEM_INITIAL_FORM: char = 'ۘ';
-    /// \u{6d9}: 'ۙ'
-    pub const SMALL_HIGH_LAM_ALEF: char = 'ۙ';
-    /// \u{6da}: 'ۚ'
-    pub const SMALL_HIGH_JEEM: char = 'ۚ';
-    /// \u{6db}: 'ۛ'
-    pub const SMALL_HIGH_THREE_DOTS: char = 'ۛ';
-    /// \u{6dc}: 'ۜ'
-    pub const SMALL_HIGH_SEEN: char = 'ۜ';
-    /// \u{6dd}: '۝'
-    pub const END_OF_AYAH: char = '۝';
-    /// \u{6de}: '۞'
-    pub const START_OF_RUB_EL_HIZB: char = '۞';
-    /// \u{6df}: '۟'
-    pub const SMALL_HIGH_ROUNDED_ZERO: char = '۟';
-    /// \u{6e0}: '۠'
-    pub const SMALL_HIGH_UPRIGHT_RECTANGULAR_ZERO: char = '۠';
-    /// \u{6e1}: 'ۡ'
-    pub const SMALL_HIGH_DOTLESS_HEAD_OF_KHAH: char = 'ۡ';
-    /// \u{6e2}: 'ۢ'
-    pub const SMALL_HIGH_MEEM_ISOLATED_FORM: char = 'ۢ';
-    /// \u{6e3}: 'ۣ'
-    pub const SMALL_LOW_SEEN: char = 'ۣ';
-    /// \u{6e4}: 'ۤ'
-    pub const SMALL_HIGH_MADDA: char = 'ۤ';
-    /// \u{6e5}: 'ۥ'
-    pub const SMALL_WAW: char = 'ۥ';
-    /// \u{6e6}: 'ۦ'
-    pub const SMALL_YEH: char = 'ۦ';
-    /// \u{6e7}: 'ۧ'
-    pub const SMALL_HIGH_YEH: char = 'ۧ';
-    /// \u{6e8}: 'ۨ'
-    pub const SMALL_HIGH_NOON: char = 'ۨ';
-    /// \u{6e9}: '۩'
-    pub const PLACE_OF_SAJDAH: char = '۩';
-    /// \u{6ea}: '۪'
-    pub const EMPTY_CENTRE_LOW_STOP: char = '۪';
-    /// \u{6eb}: '۫'
-    pub const EMPTY_CENTRE_HIGH_STOP: char = '۫';
-    /// \u{6ec}: '۬'
-    pub const ROUNDED_HIGH_STOP_WITH_FILLED_CENTRE: char = '۬';
-    /// \u{6ed}: 'ۭ'
-    pub const SMALL_LOW_MEEM: char = 'ۭ';
-    /// \u{6ee}: 'ۮ'
-    pub const LETTER_DAL_WITH_INVERTED_V: char = 'ۮ';
-    /// \u{6ef}: 'ۯ'
-    pub const LETTER_REH_WITH_INVERTED_V: char = 'ۯ';
-    /// \u{6f0}: '۰'
-    pub const EXTENDED_DASH_INDIC_DIGIT_ZERO: char = '۰';
-    /// \u{6f1}: '۱'
-    pub const EXTENDED_DASH_INDIC_DIGIT_ONE: char = '۱';
-    /// \u{6f2}: '۲'
-    pub const EXTENDED_DASH_INDIC_DIGIT_TWO: char = '۲';
-    /// \u{6f3}: '۳'
-    pub const EXTENDED_DASH_INDIC_DIGIT_THREE: char = '۳';
-    /// \u{6f4}: '۴'
-    pub const EXTENDED_DASH_INDIC_DIGIT_FOUR: char = '۴';
-    /// \u{6f5}: '۵'
-    pub const EXTENDED_DASH_INDIC_DIGIT_FIVE: char = '۵';
-    /// \u{6f6}: '۶'
-    pub const EXTENDED_DASH_INDIC_DIGIT_SIX: char = '۶';
-    /// \u{6f7}: '۷'
-    pub const EXTENDED_DASH_INDIC_DIGIT_SEVEN: char = '۷';
-    /// \u{6f8}: '۸'
-    pub const EXTENDED_DASH_INDIC_DIGIT_EIGHT: char = '۸';
-    /// \u{6f9}: '۹'
-    pub const EXTENDED_DASH_INDIC_DIGIT_NINE: char = '۹';
-    /// \u{6fa}: 'ۺ'
-    pub const LETTER_SHEEN_WITH_DOT_BELOW: char = 'ۺ';
-    /// \u{6fb}: 'ۻ'
-    pub const LETTER_DAD_WITH_DOT_BELOW: char = 'ۻ';
-    /// \u{6fc}: 'ۼ'
-    pub const LETTER_GHAIN_WITH_DOT_BELOW: char = 'ۼ';
-    /// \u{6fd}: '۽'
-    pub const SIGN_SINDHI_AMPERSAND: char = '۽';
-    /// \u{6fe}: '۾'
-    pub const SIGN_SINDHI_POSTPOSITION_MEN: char = '۾';
-}
 
 /// An enum to represent all characters in the Arabic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -1025,262 +514,261 @@ pub enum Arabic {
 
 impl Into<char> for Arabic {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Arabic::NumberSign => NUMBER_SIGN,
-            Arabic::SignSanah => SIGN_SANAH,
-            Arabic::FootnoteMarker => FOOTNOTE_MARKER,
-            Arabic::SignSafha => SIGN_SAFHA,
-            Arabic::SignSamvat => SIGN_SAMVAT,
-            Arabic::NumberMarkAbove => NUMBER_MARK_ABOVE,
-            Arabic::DashIndicCubeRoot => DASH_INDIC_CUBE_ROOT,
-            Arabic::DashIndicFourthRoot => DASH_INDIC_FOURTH_ROOT,
-            Arabic::Ray => RAY,
-            Arabic::DashIndicPerMilleSign => DASH_INDIC_PER_MILLE_SIGN,
-            Arabic::DashIndicPerTenThousandSign => DASH_INDIC_PER_TEN_THOUSAND_SIGN,
-            Arabic::AfghaniSign => AFGHANI_SIGN,
-            Arabic::Comma => COMMA,
-            Arabic::DateSeparator => DATE_SEPARATOR,
-            Arabic::PoeticVerseSign => POETIC_VERSE_SIGN,
-            Arabic::SignMisra => SIGN_MISRA,
-            Arabic::SignSallallahouAlayheWassallam => SIGN_SALLALLAHOU_ALAYHE_WASSALLAM,
-            Arabic::SignAlayheAssallam => SIGN_ALAYHE_ASSALLAM,
-            Arabic::SignRahmatullahAlayhe => SIGN_RAHMATULLAH_ALAYHE,
-            Arabic::SignRadiAllahouAnhu => SIGN_RADI_ALLAHOU_ANHU,
-            Arabic::SignTakhallus => SIGN_TAKHALLUS,
-            Arabic::SmallHighTah => SMALL_HIGH_TAH,
-            Arabic::SmallHighLigatureAlefWithLamWithYeh => SMALL_HIGH_LIGATURE_ALEF_WITH_LAM_WITH_YEH,
-            Arabic::SmallHighZain => SMALL_HIGH_ZAIN,
-            Arabic::SmallFatha => SMALL_FATHA,
-            Arabic::SmallDamma => SMALL_DAMMA,
-            Arabic::SmallKasra => SMALL_KASRA,
-            Arabic::Semicolon => SEMICOLON,
-            Arabic::LetterMark => LETTER_MARK,
-            Arabic::TripleDotPunctuationMark => TRIPLE_DOT_PUNCTUATION_MARK,
-            Arabic::QuestionMark => QUESTION_MARK,
-            Arabic::LetterKashmiriYeh => LETTER_KASHMIRI_YEH,
-            Arabic::LetterHamza => LETTER_HAMZA,
-            Arabic::LetterAlefWithMaddaAbove => LETTER_ALEF_WITH_MADDA_ABOVE,
-            Arabic::LetterAlefWithHamzaAbove => LETTER_ALEF_WITH_HAMZA_ABOVE,
-            Arabic::LetterWawWithHamzaAbove => LETTER_WAW_WITH_HAMZA_ABOVE,
-            Arabic::LetterAlefWithHamzaBelow => LETTER_ALEF_WITH_HAMZA_BELOW,
-            Arabic::LetterYehWithHamzaAbove => LETTER_YEH_WITH_HAMZA_ABOVE,
-            Arabic::LetterAlef => LETTER_ALEF,
-            Arabic::LetterBeh => LETTER_BEH,
-            Arabic::LetterTehMarbuta => LETTER_TEH_MARBUTA,
-            Arabic::LetterTeh => LETTER_TEH,
-            Arabic::LetterTheh => LETTER_THEH,
-            Arabic::LetterJeem => LETTER_JEEM,
-            Arabic::LetterHah => LETTER_HAH,
-            Arabic::LetterKhah => LETTER_KHAH,
-            Arabic::LetterDal => LETTER_DAL,
-            Arabic::LetterThal => LETTER_THAL,
-            Arabic::LetterReh => LETTER_REH,
-            Arabic::LetterZain => LETTER_ZAIN,
-            Arabic::LetterSeen => LETTER_SEEN,
-            Arabic::LetterSheen => LETTER_SHEEN,
-            Arabic::LetterSad => LETTER_SAD,
-            Arabic::LetterDad => LETTER_DAD,
-            Arabic::LetterTah => LETTER_TAH,
-            Arabic::LetterZah => LETTER_ZAH,
-            Arabic::LetterAin => LETTER_AIN,
-            Arabic::LetterGhain => LETTER_GHAIN,
-            Arabic::LetterKehehWithTwoDotsAbove => LETTER_KEHEH_WITH_TWO_DOTS_ABOVE,
-            Arabic::LetterKehehWithThreeDotsBelow => LETTER_KEHEH_WITH_THREE_DOTS_BELOW,
-            Arabic::LetterFarsiYehWithInvertedV => LETTER_FARSI_YEH_WITH_INVERTED_V,
-            Arabic::LetterFarsiYehWithTwoDotsAbove => LETTER_FARSI_YEH_WITH_TWO_DOTS_ABOVE,
-            Arabic::LetterFarsiYehWithThreeDotsAbove => LETTER_FARSI_YEH_WITH_THREE_DOTS_ABOVE,
-            Arabic::Tatweel => TATWEEL,
-            Arabic::LetterFeh => LETTER_FEH,
-            Arabic::LetterQaf => LETTER_QAF,
-            Arabic::LetterKaf => LETTER_KAF,
-            Arabic::LetterLam => LETTER_LAM,
-            Arabic::LetterMeem => LETTER_MEEM,
-            Arabic::LetterNoon => LETTER_NOON,
-            Arabic::LetterHeh => LETTER_HEH,
-            Arabic::LetterWaw => LETTER_WAW,
-            Arabic::LetterAlefMaksura => LETTER_ALEF_MAKSURA,
-            Arabic::LetterYeh => LETTER_YEH,
-            Arabic::Fathatan => FATHATAN,
-            Arabic::Dammatan => DAMMATAN,
-            Arabic::Kasratan => KASRATAN,
-            Arabic::Fatha => FATHA,
-            Arabic::Damma => DAMMA,
-            Arabic::Kasra => KASRA,
-            Arabic::Shadda => SHADDA,
-            Arabic::Sukun => SUKUN,
-            Arabic::MaddahAbove => MADDAH_ABOVE,
-            Arabic::HamzaAbove => HAMZA_ABOVE,
-            Arabic::HamzaBelow => HAMZA_BELOW,
-            Arabic::SubscriptAlef => SUBSCRIPT_ALEF,
-            Arabic::InvertedDamma => INVERTED_DAMMA,
-            Arabic::MarkNoonGhunna => MARK_NOON_GHUNNA,
-            Arabic::Zwarakay => ZWARAKAY,
-            Arabic::VowelSignSmallVAbove => VOWEL_SIGN_SMALL_V_ABOVE,
-            Arabic::VowelSignInvertedSmallVAbove => VOWEL_SIGN_INVERTED_SMALL_V_ABOVE,
-            Arabic::VowelSignDotBelow => VOWEL_SIGN_DOT_BELOW,
-            Arabic::ReversedDamma => REVERSED_DAMMA,
-            Arabic::FathaWithTwoDots => FATHA_WITH_TWO_DOTS,
-            Arabic::WavyHamzaBelow => WAVY_HAMZA_BELOW,
-            Arabic::DashIndicDigitZero => DASH_INDIC_DIGIT_ZERO,
-            Arabic::DashIndicDigitOne => DASH_INDIC_DIGIT_ONE,
-            Arabic::DashIndicDigitTwo => DASH_INDIC_DIGIT_TWO,
-            Arabic::DashIndicDigitThree => DASH_INDIC_DIGIT_THREE,
-            Arabic::DashIndicDigitFour => DASH_INDIC_DIGIT_FOUR,
-            Arabic::DashIndicDigitFive => DASH_INDIC_DIGIT_FIVE,
-            Arabic::DashIndicDigitSix => DASH_INDIC_DIGIT_SIX,
-            Arabic::DashIndicDigitSeven => DASH_INDIC_DIGIT_SEVEN,
-            Arabic::DashIndicDigitEight => DASH_INDIC_DIGIT_EIGHT,
-            Arabic::DashIndicDigitNine => DASH_INDIC_DIGIT_NINE,
-            Arabic::PercentSign => PERCENT_SIGN,
-            Arabic::DecimalSeparator => DECIMAL_SEPARATOR,
-            Arabic::ThousandsSeparator => THOUSANDS_SEPARATOR,
-            Arabic::FivePointedStar => FIVE_POINTED_STAR,
-            Arabic::LetterDotlessBeh => LETTER_DOTLESS_BEH,
-            Arabic::LetterDotlessQaf => LETTER_DOTLESS_QAF,
-            Arabic::LetterSuperscriptAlef => LETTER_SUPERSCRIPT_ALEF,
-            Arabic::LetterAlefWasla => LETTER_ALEF_WASLA,
-            Arabic::LetterAlefWithWavyHamzaAbove => LETTER_ALEF_WITH_WAVY_HAMZA_ABOVE,
-            Arabic::LetterAlefWithWavyHamzaBelow => LETTER_ALEF_WITH_WAVY_HAMZA_BELOW,
-            Arabic::LetterHighHamza => LETTER_HIGH_HAMZA,
-            Arabic::LetterHighHamzaAlef => LETTER_HIGH_HAMZA_ALEF,
-            Arabic::LetterHighHamzaWaw => LETTER_HIGH_HAMZA_WAW,
-            Arabic::LetterUWithHamzaAbove => LETTER_U_WITH_HAMZA_ABOVE,
-            Arabic::LetterHighHamzaYeh => LETTER_HIGH_HAMZA_YEH,
-            Arabic::LetterTteh => LETTER_TTEH,
-            Arabic::LetterTteheh => LETTER_TTEHEH,
-            Arabic::LetterBeeh => LETTER_BEEH,
-            Arabic::LetterTehWithRing => LETTER_TEH_WITH_RING,
-            Arabic::LetterTehWithThreeDotsAboveDownwards => LETTER_TEH_WITH_THREE_DOTS_ABOVE_DOWNWARDS,
-            Arabic::LetterPeh => LETTER_PEH,
-            Arabic::LetterTeheh => LETTER_TEHEH,
-            Arabic::LetterBeheh => LETTER_BEHEH,
-            Arabic::LetterHahWithHamzaAbove => LETTER_HAH_WITH_HAMZA_ABOVE,
-            Arabic::LetterHahWithTwoDotsVerticalAbove => LETTER_HAH_WITH_TWO_DOTS_VERTICAL_ABOVE,
-            Arabic::LetterNyeh => LETTER_NYEH,
-            Arabic::LetterDyeh => LETTER_DYEH,
-            Arabic::LetterHahWithThreeDotsAbove => LETTER_HAH_WITH_THREE_DOTS_ABOVE,
-            Arabic::LetterTcheh => LETTER_TCHEH,
-            Arabic::LetterTcheheh => LETTER_TCHEHEH,
-            Arabic::LetterDdal => LETTER_DDAL,
-            Arabic::LetterDalWithRing => LETTER_DAL_WITH_RING,
-            Arabic::LetterDalWithDotBelow => LETTER_DAL_WITH_DOT_BELOW,
-            Arabic::LetterDalWithDotBelowAndSmallTah => LETTER_DAL_WITH_DOT_BELOW_AND_SMALL_TAH,
-            Arabic::LetterDahal => LETTER_DAHAL,
-            Arabic::LetterDdahal => LETTER_DDAHAL,
-            Arabic::LetterDul => LETTER_DUL,
-            Arabic::LetterDalWithThreeDotsAboveDownwards => LETTER_DAL_WITH_THREE_DOTS_ABOVE_DOWNWARDS,
-            Arabic::LetterDalWithFourDotsAbove => LETTER_DAL_WITH_FOUR_DOTS_ABOVE,
-            Arabic::LetterRreh => LETTER_RREH,
-            Arabic::LetterRehWithSmallV => LETTER_REH_WITH_SMALL_V,
-            Arabic::LetterRehWithRing => LETTER_REH_WITH_RING,
-            Arabic::LetterRehWithDotBelow => LETTER_REH_WITH_DOT_BELOW,
-            Arabic::LetterRehWithSmallVBelow => LETTER_REH_WITH_SMALL_V_BELOW,
-            Arabic::LetterRehWithDotBelowAndDotAbove => LETTER_REH_WITH_DOT_BELOW_AND_DOT_ABOVE,
-            Arabic::LetterRehWithTwoDotsAbove => LETTER_REH_WITH_TWO_DOTS_ABOVE,
-            Arabic::LetterJeh => LETTER_JEH,
-            Arabic::LetterRehWithFourDotsAbove => LETTER_REH_WITH_FOUR_DOTS_ABOVE,
-            Arabic::LetterSeenWithDotBelowAndDotAbove => LETTER_SEEN_WITH_DOT_BELOW_AND_DOT_ABOVE,
-            Arabic::LetterSeenWithThreeDotsBelow => LETTER_SEEN_WITH_THREE_DOTS_BELOW,
-            Arabic::LetterSeenWithThreeDotsBelowAndThreeDotsAbove => LETTER_SEEN_WITH_THREE_DOTS_BELOW_AND_THREE_DOTS_ABOVE,
-            Arabic::LetterSadWithTwoDotsBelow => LETTER_SAD_WITH_TWO_DOTS_BELOW,
-            Arabic::LetterSadWithThreeDotsAbove => LETTER_SAD_WITH_THREE_DOTS_ABOVE,
-            Arabic::LetterTahWithThreeDotsAbove => LETTER_TAH_WITH_THREE_DOTS_ABOVE,
-            Arabic::LetterAinWithThreeDotsAbove => LETTER_AIN_WITH_THREE_DOTS_ABOVE,
-            Arabic::LetterDotlessFeh => LETTER_DOTLESS_FEH,
-            Arabic::LetterFehWithDotMovedBelow => LETTER_FEH_WITH_DOT_MOVED_BELOW,
-            Arabic::LetterFehWithDotBelow => LETTER_FEH_WITH_DOT_BELOW,
-            Arabic::LetterVeh => LETTER_VEH,
-            Arabic::LetterFehWithThreeDotsBelow => LETTER_FEH_WITH_THREE_DOTS_BELOW,
-            Arabic::LetterPeheh => LETTER_PEHEH,
-            Arabic::LetterQafWithDotAbove => LETTER_QAF_WITH_DOT_ABOVE,
-            Arabic::LetterQafWithThreeDotsAbove => LETTER_QAF_WITH_THREE_DOTS_ABOVE,
-            Arabic::LetterKeheh => LETTER_KEHEH,
-            Arabic::LetterSwashKaf => LETTER_SWASH_KAF,
-            Arabic::LetterKafWithRing => LETTER_KAF_WITH_RING,
-            Arabic::LetterKafWithDotAbove => LETTER_KAF_WITH_DOT_ABOVE,
-            Arabic::LetterNg => LETTER_NG,
-            Arabic::LetterKafWithThreeDotsBelow => LETTER_KAF_WITH_THREE_DOTS_BELOW,
-            Arabic::LetterGaf => LETTER_GAF,
-            Arabic::LetterGafWithRing => LETTER_GAF_WITH_RING,
-            Arabic::LetterNgoeh => LETTER_NGOEH,
-            Arabic::LetterGafWithTwoDotsBelow => LETTER_GAF_WITH_TWO_DOTS_BELOW,
-            Arabic::LetterGueh => LETTER_GUEH,
-            Arabic::LetterGafWithThreeDotsAbove => LETTER_GAF_WITH_THREE_DOTS_ABOVE,
-            Arabic::LetterLamWithSmallV => LETTER_LAM_WITH_SMALL_V,
-            Arabic::LetterLamWithDotAbove => LETTER_LAM_WITH_DOT_ABOVE,
-            Arabic::LetterLamWithThreeDotsAbove => LETTER_LAM_WITH_THREE_DOTS_ABOVE,
-            Arabic::LetterLamWithThreeDotsBelow => LETTER_LAM_WITH_THREE_DOTS_BELOW,
-            Arabic::LetterNoonWithDotBelow => LETTER_NOON_WITH_DOT_BELOW,
-            Arabic::LetterNoonGhunna => LETTER_NOON_GHUNNA,
-            Arabic::LetterRnoon => LETTER_RNOON,
-            Arabic::LetterNoonWithRing => LETTER_NOON_WITH_RING,
-            Arabic::LetterNoonWithThreeDotsAbove => LETTER_NOON_WITH_THREE_DOTS_ABOVE,
-            Arabic::LetterHehDoachashmee => LETTER_HEH_DOACHASHMEE,
-            Arabic::LetterTchehWithDotAbove => LETTER_TCHEH_WITH_DOT_ABOVE,
-            Arabic::LetterHehWithYehAbove => LETTER_HEH_WITH_YEH_ABOVE,
-            Arabic::LetterHehGoal => LETTER_HEH_GOAL,
-            Arabic::LetterHehGoalWithHamzaAbove => LETTER_HEH_GOAL_WITH_HAMZA_ABOVE,
-            Arabic::LetterTehMarbutaGoal => LETTER_TEH_MARBUTA_GOAL,
-            Arabic::LetterWawWithRing => LETTER_WAW_WITH_RING,
-            Arabic::LetterKirghizOe => LETTER_KIRGHIZ_OE,
-            Arabic::LetterOe => LETTER_OE,
-            Arabic::LetterU => LETTER_U,
-            Arabic::LetterYu => LETTER_YU,
-            Arabic::LetterKirghizYu => LETTER_KIRGHIZ_YU,
-            Arabic::LetterWawWithTwoDotsAbove => LETTER_WAW_WITH_TWO_DOTS_ABOVE,
-            Arabic::LetterVe => LETTER_VE,
-            Arabic::LetterFarsiYeh => LETTER_FARSI_YEH,
-            Arabic::LetterYehWithTail => LETTER_YEH_WITH_TAIL,
-            Arabic::LetterYehWithSmallV => LETTER_YEH_WITH_SMALL_V,
-            Arabic::LetterWawWithDotAbove => LETTER_WAW_WITH_DOT_ABOVE,
-            Arabic::LetterE => LETTER_E,
-            Arabic::LetterYehWithThreeDotsBelow => LETTER_YEH_WITH_THREE_DOTS_BELOW,
-            Arabic::LetterYehBarree => LETTER_YEH_BARREE,
-            Arabic::LetterYehBarreeWithHamzaAbove => LETTER_YEH_BARREE_WITH_HAMZA_ABOVE,
-            Arabic::FullStop => FULL_STOP,
-            Arabic::LetterAe => LETTER_AE,
-            Arabic::SmallHighLigatureSadWithLamWithAlefMaksura => SMALL_HIGH_LIGATURE_SAD_WITH_LAM_WITH_ALEF_MAKSURA,
-            Arabic::SmallHighLigatureQafWithLamWithAlefMaksura => SMALL_HIGH_LIGATURE_QAF_WITH_LAM_WITH_ALEF_MAKSURA,
-            Arabic::SmallHighMeemInitialForm => SMALL_HIGH_MEEM_INITIAL_FORM,
-            Arabic::SmallHighLamAlef => SMALL_HIGH_LAM_ALEF,
-            Arabic::SmallHighJeem => SMALL_HIGH_JEEM,
-            Arabic::SmallHighThreeDots => SMALL_HIGH_THREE_DOTS,
-            Arabic::SmallHighSeen => SMALL_HIGH_SEEN,
-            Arabic::EndOfAyah => END_OF_AYAH,
-            Arabic::StartOfRubElHizb => START_OF_RUB_EL_HIZB,
-            Arabic::SmallHighRoundedZero => SMALL_HIGH_ROUNDED_ZERO,
-            Arabic::SmallHighUprightRectangularZero => SMALL_HIGH_UPRIGHT_RECTANGULAR_ZERO,
-            Arabic::SmallHighDotlessHeadOfKhah => SMALL_HIGH_DOTLESS_HEAD_OF_KHAH,
-            Arabic::SmallHighMeemIsolatedForm => SMALL_HIGH_MEEM_ISOLATED_FORM,
-            Arabic::SmallLowSeen => SMALL_LOW_SEEN,
-            Arabic::SmallHighMadda => SMALL_HIGH_MADDA,
-            Arabic::SmallWaw => SMALL_WAW,
-            Arabic::SmallYeh => SMALL_YEH,
-            Arabic::SmallHighYeh => SMALL_HIGH_YEH,
-            Arabic::SmallHighNoon => SMALL_HIGH_NOON,
-            Arabic::PlaceOfSajdah => PLACE_OF_SAJDAH,
-            Arabic::EmptyCentreLowStop => EMPTY_CENTRE_LOW_STOP,
-            Arabic::EmptyCentreHighStop => EMPTY_CENTRE_HIGH_STOP,
-            Arabic::RoundedHighStopWithFilledCentre => ROUNDED_HIGH_STOP_WITH_FILLED_CENTRE,
-            Arabic::SmallLowMeem => SMALL_LOW_MEEM,
-            Arabic::LetterDalWithInvertedV => LETTER_DAL_WITH_INVERTED_V,
-            Arabic::LetterRehWithInvertedV => LETTER_REH_WITH_INVERTED_V,
-            Arabic::ExtendedDashIndicDigitZero => EXTENDED_DASH_INDIC_DIGIT_ZERO,
-            Arabic::ExtendedDashIndicDigitOne => EXTENDED_DASH_INDIC_DIGIT_ONE,
-            Arabic::ExtendedDashIndicDigitTwo => EXTENDED_DASH_INDIC_DIGIT_TWO,
-            Arabic::ExtendedDashIndicDigitThree => EXTENDED_DASH_INDIC_DIGIT_THREE,
-            Arabic::ExtendedDashIndicDigitFour => EXTENDED_DASH_INDIC_DIGIT_FOUR,
-            Arabic::ExtendedDashIndicDigitFive => EXTENDED_DASH_INDIC_DIGIT_FIVE,
-            Arabic::ExtendedDashIndicDigitSix => EXTENDED_DASH_INDIC_DIGIT_SIX,
-            Arabic::ExtendedDashIndicDigitSeven => EXTENDED_DASH_INDIC_DIGIT_SEVEN,
-            Arabic::ExtendedDashIndicDigitEight => EXTENDED_DASH_INDIC_DIGIT_EIGHT,
-            Arabic::ExtendedDashIndicDigitNine => EXTENDED_DASH_INDIC_DIGIT_NINE,
-            Arabic::LetterSheenWithDotBelow => LETTER_SHEEN_WITH_DOT_BELOW,
-            Arabic::LetterDadWithDotBelow => LETTER_DAD_WITH_DOT_BELOW,
-            Arabic::LetterGhainWithDotBelow => LETTER_GHAIN_WITH_DOT_BELOW,
-            Arabic::SignSindhiAmpersand => SIGN_SINDHI_AMPERSAND,
-            Arabic::SignSindhiPostpositionMen => SIGN_SINDHI_POSTPOSITION_MEN,
+            Arabic::NumberSign => '؀',
+            Arabic::SignSanah => '؁',
+            Arabic::FootnoteMarker => '؂',
+            Arabic::SignSafha => '؃',
+            Arabic::SignSamvat => '؄',
+            Arabic::NumberMarkAbove => '؅',
+            Arabic::DashIndicCubeRoot => '؆',
+            Arabic::DashIndicFourthRoot => '؇',
+            Arabic::Ray => '؈',
+            Arabic::DashIndicPerMilleSign => '؉',
+            Arabic::DashIndicPerTenThousandSign => '؊',
+            Arabic::AfghaniSign => '؋',
+            Arabic::Comma => '،',
+            Arabic::DateSeparator => '؍',
+            Arabic::PoeticVerseSign => '؎',
+            Arabic::SignMisra => '؏',
+            Arabic::SignSallallahouAlayheWassallam => 'ؐ',
+            Arabic::SignAlayheAssallam => 'ؑ',
+            Arabic::SignRahmatullahAlayhe => 'ؒ',
+            Arabic::SignRadiAllahouAnhu => 'ؓ',
+            Arabic::SignTakhallus => 'ؔ',
+            Arabic::SmallHighTah => 'ؕ',
+            Arabic::SmallHighLigatureAlefWithLamWithYeh => 'ؖ',
+            Arabic::SmallHighZain => 'ؗ',
+            Arabic::SmallFatha => 'ؘ',
+            Arabic::SmallDamma => 'ؙ',
+            Arabic::SmallKasra => 'ؚ',
+            Arabic::Semicolon => '؛',
+            Arabic::LetterMark => '؜',
+            Arabic::TripleDotPunctuationMark => '؞',
+            Arabic::QuestionMark => '؟',
+            Arabic::LetterKashmiriYeh => 'ؠ',
+            Arabic::LetterHamza => 'ء',
+            Arabic::LetterAlefWithMaddaAbove => 'آ',
+            Arabic::LetterAlefWithHamzaAbove => 'أ',
+            Arabic::LetterWawWithHamzaAbove => 'ؤ',
+            Arabic::LetterAlefWithHamzaBelow => 'إ',
+            Arabic::LetterYehWithHamzaAbove => 'ئ',
+            Arabic::LetterAlef => 'ا',
+            Arabic::LetterBeh => 'ب',
+            Arabic::LetterTehMarbuta => 'ة',
+            Arabic::LetterTeh => 'ت',
+            Arabic::LetterTheh => 'ث',
+            Arabic::LetterJeem => 'ج',
+            Arabic::LetterHah => 'ح',
+            Arabic::LetterKhah => 'خ',
+            Arabic::LetterDal => 'د',
+            Arabic::LetterThal => 'ذ',
+            Arabic::LetterReh => 'ر',
+            Arabic::LetterZain => 'ز',
+            Arabic::LetterSeen => 'س',
+            Arabic::LetterSheen => 'ش',
+            Arabic::LetterSad => 'ص',
+            Arabic::LetterDad => 'ض',
+            Arabic::LetterTah => 'ط',
+            Arabic::LetterZah => 'ظ',
+            Arabic::LetterAin => 'ع',
+            Arabic::LetterGhain => 'غ',
+            Arabic::LetterKehehWithTwoDotsAbove => 'ػ',
+            Arabic::LetterKehehWithThreeDotsBelow => 'ؼ',
+            Arabic::LetterFarsiYehWithInvertedV => 'ؽ',
+            Arabic::LetterFarsiYehWithTwoDotsAbove => 'ؾ',
+            Arabic::LetterFarsiYehWithThreeDotsAbove => 'ؿ',
+            Arabic::Tatweel => 'ـ',
+            Arabic::LetterFeh => 'ف',
+            Arabic::LetterQaf => 'ق',
+            Arabic::LetterKaf => 'ك',
+            Arabic::LetterLam => 'ل',
+            Arabic::LetterMeem => 'م',
+            Arabic::LetterNoon => 'ن',
+            Arabic::LetterHeh => 'ه',
+            Arabic::LetterWaw => 'و',
+            Arabic::LetterAlefMaksura => 'ى',
+            Arabic::LetterYeh => 'ي',
+            Arabic::Fathatan => 'ً',
+            Arabic::Dammatan => 'ٌ',
+            Arabic::Kasratan => 'ٍ',
+            Arabic::Fatha => 'َ',
+            Arabic::Damma => 'ُ',
+            Arabic::Kasra => 'ِ',
+            Arabic::Shadda => 'ّ',
+            Arabic::Sukun => 'ْ',
+            Arabic::MaddahAbove => 'ٓ',
+            Arabic::HamzaAbove => 'ٔ',
+            Arabic::HamzaBelow => 'ٕ',
+            Arabic::SubscriptAlef => 'ٖ',
+            Arabic::InvertedDamma => 'ٗ',
+            Arabic::MarkNoonGhunna => '٘',
+            Arabic::Zwarakay => 'ٙ',
+            Arabic::VowelSignSmallVAbove => 'ٚ',
+            Arabic::VowelSignInvertedSmallVAbove => 'ٛ',
+            Arabic::VowelSignDotBelow => 'ٜ',
+            Arabic::ReversedDamma => 'ٝ',
+            Arabic::FathaWithTwoDots => 'ٞ',
+            Arabic::WavyHamzaBelow => 'ٟ',
+            Arabic::DashIndicDigitZero => '٠',
+            Arabic::DashIndicDigitOne => '١',
+            Arabic::DashIndicDigitTwo => '٢',
+            Arabic::DashIndicDigitThree => '٣',
+            Arabic::DashIndicDigitFour => '٤',
+            Arabic::DashIndicDigitFive => '٥',
+            Arabic::DashIndicDigitSix => '٦',
+            Arabic::DashIndicDigitSeven => '٧',
+            Arabic::DashIndicDigitEight => '٨',
+            Arabic::DashIndicDigitNine => '٩',
+            Arabic::PercentSign => '٪',
+            Arabic::DecimalSeparator => '٫',
+            Arabic::ThousandsSeparator => '٬',
+            Arabic::FivePointedStar => '٭',
+            Arabic::LetterDotlessBeh => 'ٮ',
+            Arabic::LetterDotlessQaf => 'ٯ',
+            Arabic::LetterSuperscriptAlef => 'ٰ',
+            Arabic::LetterAlefWasla => 'ٱ',
+            Arabic::LetterAlefWithWavyHamzaAbove => 'ٲ',
+            Arabic::LetterAlefWithWavyHamzaBelow => 'ٳ',
+            Arabic::LetterHighHamza => 'ٴ',
+            Arabic::LetterHighHamzaAlef => 'ٵ',
+            Arabic::LetterHighHamzaWaw => 'ٶ',
+            Arabic::LetterUWithHamzaAbove => 'ٷ',
+            Arabic::LetterHighHamzaYeh => 'ٸ',
+            Arabic::LetterTteh => 'ٹ',
+            Arabic::LetterTteheh => 'ٺ',
+            Arabic::LetterBeeh => 'ٻ',
+            Arabic::LetterTehWithRing => 'ټ',
+            Arabic::LetterTehWithThreeDotsAboveDownwards => 'ٽ',
+            Arabic::LetterPeh => 'پ',
+            Arabic::LetterTeheh => 'ٿ',
+            Arabic::LetterBeheh => 'ڀ',
+            Arabic::LetterHahWithHamzaAbove => 'ځ',
+            Arabic::LetterHahWithTwoDotsVerticalAbove => 'ڂ',
+            Arabic::LetterNyeh => 'ڃ',
+            Arabic::LetterDyeh => 'ڄ',
+            Arabic::LetterHahWithThreeDotsAbove => 'څ',
+            Arabic::LetterTcheh => 'چ',
+            Arabic::LetterTcheheh => 'ڇ',
+            Arabic::LetterDdal => 'ڈ',
+            Arabic::LetterDalWithRing => 'ډ',
+            Arabic::LetterDalWithDotBelow => 'ڊ',
+            Arabic::LetterDalWithDotBelowAndSmallTah => 'ڋ',
+            Arabic::LetterDahal => 'ڌ',
+            Arabic::LetterDdahal => 'ڍ',
+            Arabic::LetterDul => 'ڎ',
+            Arabic::LetterDalWithThreeDotsAboveDownwards => 'ڏ',
+            Arabic::LetterDalWithFourDotsAbove => 'ڐ',
+            Arabic::LetterRreh => 'ڑ',
+            Arabic::LetterRehWithSmallV => 'ڒ',
+            Arabic::LetterRehWithRing => 'ړ',
+            Arabic::LetterRehWithDotBelow => 'ڔ',
+            Arabic::LetterRehWithSmallVBelow => 'ڕ',
+            Arabic::LetterRehWithDotBelowAndDotAbove => 'ږ',
+            Arabic::LetterRehWithTwoDotsAbove => 'ڗ',
+            Arabic::LetterJeh => 'ژ',
+            Arabic::LetterRehWithFourDotsAbove => 'ڙ',
+            Arabic::LetterSeenWithDotBelowAndDotAbove => 'ښ',
+            Arabic::LetterSeenWithThreeDotsBelow => 'ڛ',
+            Arabic::LetterSeenWithThreeDotsBelowAndThreeDotsAbove => 'ڜ',
+            Arabic::LetterSadWithTwoDotsBelow => 'ڝ',
+            Arabic::LetterSadWithThreeDotsAbove => 'ڞ',
+            Arabic::LetterTahWithThreeDotsAbove => 'ڟ',
+            Arabic::LetterAinWithThreeDotsAbove => 'ڠ',
+            Arabic::LetterDotlessFeh => 'ڡ',
+            Arabic::LetterFehWithDotMovedBelow => 'ڢ',
+            Arabic::LetterFehWithDotBelow => 'ڣ',
+            Arabic::LetterVeh => 'ڤ',
+            Arabic::LetterFehWithThreeDotsBelow => 'ڥ',
+            Arabic::LetterPeheh => 'ڦ',
+            Arabic::LetterQafWithDotAbove => 'ڧ',
+            Arabic::LetterQafWithThreeDotsAbove => 'ڨ',
+            Arabic::LetterKeheh => 'ک',
+            Arabic::LetterSwashKaf => 'ڪ',
+            Arabic::LetterKafWithRing => 'ګ',
+            Arabic::LetterKafWithDotAbove => 'ڬ',
+            Arabic::LetterNg => 'ڭ',
+            Arabic::LetterKafWithThreeDotsBelow => 'ڮ',
+            Arabic::LetterGaf => 'گ',
+            Arabic::LetterGafWithRing => 'ڰ',
+            Arabic::LetterNgoeh => 'ڱ',
+            Arabic::LetterGafWithTwoDotsBelow => 'ڲ',
+            Arabic::LetterGueh => 'ڳ',
+            Arabic::LetterGafWithThreeDotsAbove => 'ڴ',
+            Arabic::LetterLamWithSmallV => 'ڵ',
+            Arabic::LetterLamWithDotAbove => 'ڶ',
+            Arabic::LetterLamWithThreeDotsAbove => 'ڷ',
+            Arabic::LetterLamWithThreeDotsBelow => 'ڸ',
+            Arabic::LetterNoonWithDotBelow => 'ڹ',
+            Arabic::LetterNoonGhunna => 'ں',
+            Arabic::LetterRnoon => 'ڻ',
+            Arabic::LetterNoonWithRing => 'ڼ',
+            Arabic::LetterNoonWithThreeDotsAbove => 'ڽ',
+            Arabic::LetterHehDoachashmee => 'ھ',
+            Arabic::LetterTchehWithDotAbove => 'ڿ',
+            Arabic::LetterHehWithYehAbove => 'ۀ',
+            Arabic::LetterHehGoal => 'ہ',
+            Arabic::LetterHehGoalWithHamzaAbove => 'ۂ',
+            Arabic::LetterTehMarbutaGoal => 'ۃ',
+            Arabic::LetterWawWithRing => 'ۄ',
+            Arabic::LetterKirghizOe => 'ۅ',
+            Arabic::LetterOe => 'ۆ',
+            Arabic::LetterU => 'ۇ',
+            Arabic::LetterYu => 'ۈ',
+            Arabic::LetterKirghizYu => 'ۉ',
+            Arabic::LetterWawWithTwoDotsAbove => 'ۊ',
+            Arabic::LetterVe => 'ۋ',
+            Arabic::LetterFarsiYeh => 'ی',
+            Arabic::LetterYehWithTail => 'ۍ',
+            Arabic::LetterYehWithSmallV => 'ێ',
+            Arabic::LetterWawWithDotAbove => 'ۏ',
+            Arabic::LetterE => 'ې',
+            Arabic::LetterYehWithThreeDotsBelow => 'ۑ',
+            Arabic::LetterYehBarree => 'ے',
+            Arabic::LetterYehBarreeWithHamzaAbove => 'ۓ',
+            Arabic::FullStop => '۔',
+            Arabic::LetterAe => 'ە',
+            Arabic::SmallHighLigatureSadWithLamWithAlefMaksura => 'ۖ',
+            Arabic::SmallHighLigatureQafWithLamWithAlefMaksura => 'ۗ',
+            Arabic::SmallHighMeemInitialForm => 'ۘ',
+            Arabic::SmallHighLamAlef => 'ۙ',
+            Arabic::SmallHighJeem => 'ۚ',
+            Arabic::SmallHighThreeDots => 'ۛ',
+            Arabic::SmallHighSeen => 'ۜ',
+            Arabic::EndOfAyah => '۝',
+            Arabic::StartOfRubElHizb => '۞',
+            Arabic::SmallHighRoundedZero => '۟',
+            Arabic::SmallHighUprightRectangularZero => '۠',
+            Arabic::SmallHighDotlessHeadOfKhah => 'ۡ',
+            Arabic::SmallHighMeemIsolatedForm => 'ۢ',
+            Arabic::SmallLowSeen => 'ۣ',
+            Arabic::SmallHighMadda => 'ۤ',
+            Arabic::SmallWaw => 'ۥ',
+            Arabic::SmallYeh => 'ۦ',
+            Arabic::SmallHighYeh => 'ۧ',
+            Arabic::SmallHighNoon => 'ۨ',
+            Arabic::PlaceOfSajdah => '۩',
+            Arabic::EmptyCentreLowStop => '۪',
+            Arabic::EmptyCentreHighStop => '۫',
+            Arabic::RoundedHighStopWithFilledCentre => '۬',
+            Arabic::SmallLowMeem => 'ۭ',
+            Arabic::LetterDalWithInvertedV => 'ۮ',
+            Arabic::LetterRehWithInvertedV => 'ۯ',
+            Arabic::ExtendedDashIndicDigitZero => '۰',
+            Arabic::ExtendedDashIndicDigitOne => '۱',
+            Arabic::ExtendedDashIndicDigitTwo => '۲',
+            Arabic::ExtendedDashIndicDigitThree => '۳',
+            Arabic::ExtendedDashIndicDigitFour => '۴',
+            Arabic::ExtendedDashIndicDigitFive => '۵',
+            Arabic::ExtendedDashIndicDigitSix => '۶',
+            Arabic::ExtendedDashIndicDigitSeven => '۷',
+            Arabic::ExtendedDashIndicDigitEight => '۸',
+            Arabic::ExtendedDashIndicDigitNine => '۹',
+            Arabic::LetterSheenWithDotBelow => 'ۺ',
+            Arabic::LetterDadWithDotBelow => 'ۻ',
+            Arabic::LetterGhainWithDotBelow => 'ۼ',
+            Arabic::SignSindhiAmpersand => '۽',
+            Arabic::SignSindhiPostpositionMen => '۾',
         }
     }
 }
@@ -1288,262 +776,261 @@ impl Into<char> for Arabic {
 impl std::convert::TryFrom<char> for Arabic {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            NUMBER_SIGN => Ok(Arabic::NumberSign),
-            SIGN_SANAH => Ok(Arabic::SignSanah),
-            FOOTNOTE_MARKER => Ok(Arabic::FootnoteMarker),
-            SIGN_SAFHA => Ok(Arabic::SignSafha),
-            SIGN_SAMVAT => Ok(Arabic::SignSamvat),
-            NUMBER_MARK_ABOVE => Ok(Arabic::NumberMarkAbove),
-            DASH_INDIC_CUBE_ROOT => Ok(Arabic::DashIndicCubeRoot),
-            DASH_INDIC_FOURTH_ROOT => Ok(Arabic::DashIndicFourthRoot),
-            RAY => Ok(Arabic::Ray),
-            DASH_INDIC_PER_MILLE_SIGN => Ok(Arabic::DashIndicPerMilleSign),
-            DASH_INDIC_PER_TEN_THOUSAND_SIGN => Ok(Arabic::DashIndicPerTenThousandSign),
-            AFGHANI_SIGN => Ok(Arabic::AfghaniSign),
-            COMMA => Ok(Arabic::Comma),
-            DATE_SEPARATOR => Ok(Arabic::DateSeparator),
-            POETIC_VERSE_SIGN => Ok(Arabic::PoeticVerseSign),
-            SIGN_MISRA => Ok(Arabic::SignMisra),
-            SIGN_SALLALLAHOU_ALAYHE_WASSALLAM => Ok(Arabic::SignSallallahouAlayheWassallam),
-            SIGN_ALAYHE_ASSALLAM => Ok(Arabic::SignAlayheAssallam),
-            SIGN_RAHMATULLAH_ALAYHE => Ok(Arabic::SignRahmatullahAlayhe),
-            SIGN_RADI_ALLAHOU_ANHU => Ok(Arabic::SignRadiAllahouAnhu),
-            SIGN_TAKHALLUS => Ok(Arabic::SignTakhallus),
-            SMALL_HIGH_TAH => Ok(Arabic::SmallHighTah),
-            SMALL_HIGH_LIGATURE_ALEF_WITH_LAM_WITH_YEH => Ok(Arabic::SmallHighLigatureAlefWithLamWithYeh),
-            SMALL_HIGH_ZAIN => Ok(Arabic::SmallHighZain),
-            SMALL_FATHA => Ok(Arabic::SmallFatha),
-            SMALL_DAMMA => Ok(Arabic::SmallDamma),
-            SMALL_KASRA => Ok(Arabic::SmallKasra),
-            SEMICOLON => Ok(Arabic::Semicolon),
-            LETTER_MARK => Ok(Arabic::LetterMark),
-            TRIPLE_DOT_PUNCTUATION_MARK => Ok(Arabic::TripleDotPunctuationMark),
-            QUESTION_MARK => Ok(Arabic::QuestionMark),
-            LETTER_KASHMIRI_YEH => Ok(Arabic::LetterKashmiriYeh),
-            LETTER_HAMZA => Ok(Arabic::LetterHamza),
-            LETTER_ALEF_WITH_MADDA_ABOVE => Ok(Arabic::LetterAlefWithMaddaAbove),
-            LETTER_ALEF_WITH_HAMZA_ABOVE => Ok(Arabic::LetterAlefWithHamzaAbove),
-            LETTER_WAW_WITH_HAMZA_ABOVE => Ok(Arabic::LetterWawWithHamzaAbove),
-            LETTER_ALEF_WITH_HAMZA_BELOW => Ok(Arabic::LetterAlefWithHamzaBelow),
-            LETTER_YEH_WITH_HAMZA_ABOVE => Ok(Arabic::LetterYehWithHamzaAbove),
-            LETTER_ALEF => Ok(Arabic::LetterAlef),
-            LETTER_BEH => Ok(Arabic::LetterBeh),
-            LETTER_TEH_MARBUTA => Ok(Arabic::LetterTehMarbuta),
-            LETTER_TEH => Ok(Arabic::LetterTeh),
-            LETTER_THEH => Ok(Arabic::LetterTheh),
-            LETTER_JEEM => Ok(Arabic::LetterJeem),
-            LETTER_HAH => Ok(Arabic::LetterHah),
-            LETTER_KHAH => Ok(Arabic::LetterKhah),
-            LETTER_DAL => Ok(Arabic::LetterDal),
-            LETTER_THAL => Ok(Arabic::LetterThal),
-            LETTER_REH => Ok(Arabic::LetterReh),
-            LETTER_ZAIN => Ok(Arabic::LetterZain),
-            LETTER_SEEN => Ok(Arabic::LetterSeen),
-            LETTER_SHEEN => Ok(Arabic::LetterSheen),
-            LETTER_SAD => Ok(Arabic::LetterSad),
-            LETTER_DAD => Ok(Arabic::LetterDad),
-            LETTER_TAH => Ok(Arabic::LetterTah),
-            LETTER_ZAH => Ok(Arabic::LetterZah),
-            LETTER_AIN => Ok(Arabic::LetterAin),
-            LETTER_GHAIN => Ok(Arabic::LetterGhain),
-            LETTER_KEHEH_WITH_TWO_DOTS_ABOVE => Ok(Arabic::LetterKehehWithTwoDotsAbove),
-            LETTER_KEHEH_WITH_THREE_DOTS_BELOW => Ok(Arabic::LetterKehehWithThreeDotsBelow),
-            LETTER_FARSI_YEH_WITH_INVERTED_V => Ok(Arabic::LetterFarsiYehWithInvertedV),
-            LETTER_FARSI_YEH_WITH_TWO_DOTS_ABOVE => Ok(Arabic::LetterFarsiYehWithTwoDotsAbove),
-            LETTER_FARSI_YEH_WITH_THREE_DOTS_ABOVE => Ok(Arabic::LetterFarsiYehWithThreeDotsAbove),
-            TATWEEL => Ok(Arabic::Tatweel),
-            LETTER_FEH => Ok(Arabic::LetterFeh),
-            LETTER_QAF => Ok(Arabic::LetterQaf),
-            LETTER_KAF => Ok(Arabic::LetterKaf),
-            LETTER_LAM => Ok(Arabic::LetterLam),
-            LETTER_MEEM => Ok(Arabic::LetterMeem),
-            LETTER_NOON => Ok(Arabic::LetterNoon),
-            LETTER_HEH => Ok(Arabic::LetterHeh),
-            LETTER_WAW => Ok(Arabic::LetterWaw),
-            LETTER_ALEF_MAKSURA => Ok(Arabic::LetterAlefMaksura),
-            LETTER_YEH => Ok(Arabic::LetterYeh),
-            FATHATAN => Ok(Arabic::Fathatan),
-            DAMMATAN => Ok(Arabic::Dammatan),
-            KASRATAN => Ok(Arabic::Kasratan),
-            FATHA => Ok(Arabic::Fatha),
-            DAMMA => Ok(Arabic::Damma),
-            KASRA => Ok(Arabic::Kasra),
-            SHADDA => Ok(Arabic::Shadda),
-            SUKUN => Ok(Arabic::Sukun),
-            MADDAH_ABOVE => Ok(Arabic::MaddahAbove),
-            HAMZA_ABOVE => Ok(Arabic::HamzaAbove),
-            HAMZA_BELOW => Ok(Arabic::HamzaBelow),
-            SUBSCRIPT_ALEF => Ok(Arabic::SubscriptAlef),
-            INVERTED_DAMMA => Ok(Arabic::InvertedDamma),
-            MARK_NOON_GHUNNA => Ok(Arabic::MarkNoonGhunna),
-            ZWARAKAY => Ok(Arabic::Zwarakay),
-            VOWEL_SIGN_SMALL_V_ABOVE => Ok(Arabic::VowelSignSmallVAbove),
-            VOWEL_SIGN_INVERTED_SMALL_V_ABOVE => Ok(Arabic::VowelSignInvertedSmallVAbove),
-            VOWEL_SIGN_DOT_BELOW => Ok(Arabic::VowelSignDotBelow),
-            REVERSED_DAMMA => Ok(Arabic::ReversedDamma),
-            FATHA_WITH_TWO_DOTS => Ok(Arabic::FathaWithTwoDots),
-            WAVY_HAMZA_BELOW => Ok(Arabic::WavyHamzaBelow),
-            DASH_INDIC_DIGIT_ZERO => Ok(Arabic::DashIndicDigitZero),
-            DASH_INDIC_DIGIT_ONE => Ok(Arabic::DashIndicDigitOne),
-            DASH_INDIC_DIGIT_TWO => Ok(Arabic::DashIndicDigitTwo),
-            DASH_INDIC_DIGIT_THREE => Ok(Arabic::DashIndicDigitThree),
-            DASH_INDIC_DIGIT_FOUR => Ok(Arabic::DashIndicDigitFour),
-            DASH_INDIC_DIGIT_FIVE => Ok(Arabic::DashIndicDigitFive),
-            DASH_INDIC_DIGIT_SIX => Ok(Arabic::DashIndicDigitSix),
-            DASH_INDIC_DIGIT_SEVEN => Ok(Arabic::DashIndicDigitSeven),
-            DASH_INDIC_DIGIT_EIGHT => Ok(Arabic::DashIndicDigitEight),
-            DASH_INDIC_DIGIT_NINE => Ok(Arabic::DashIndicDigitNine),
-            PERCENT_SIGN => Ok(Arabic::PercentSign),
-            DECIMAL_SEPARATOR => Ok(Arabic::DecimalSeparator),
-            THOUSANDS_SEPARATOR => Ok(Arabic::ThousandsSeparator),
-            FIVE_POINTED_STAR => Ok(Arabic::FivePointedStar),
-            LETTER_DOTLESS_BEH => Ok(Arabic::LetterDotlessBeh),
-            LETTER_DOTLESS_QAF => Ok(Arabic::LetterDotlessQaf),
-            LETTER_SUPERSCRIPT_ALEF => Ok(Arabic::LetterSuperscriptAlef),
-            LETTER_ALEF_WASLA => Ok(Arabic::LetterAlefWasla),
-            LETTER_ALEF_WITH_WAVY_HAMZA_ABOVE => Ok(Arabic::LetterAlefWithWavyHamzaAbove),
-            LETTER_ALEF_WITH_WAVY_HAMZA_BELOW => Ok(Arabic::LetterAlefWithWavyHamzaBelow),
-            LETTER_HIGH_HAMZA => Ok(Arabic::LetterHighHamza),
-            LETTER_HIGH_HAMZA_ALEF => Ok(Arabic::LetterHighHamzaAlef),
-            LETTER_HIGH_HAMZA_WAW => Ok(Arabic::LetterHighHamzaWaw),
-            LETTER_U_WITH_HAMZA_ABOVE => Ok(Arabic::LetterUWithHamzaAbove),
-            LETTER_HIGH_HAMZA_YEH => Ok(Arabic::LetterHighHamzaYeh),
-            LETTER_TTEH => Ok(Arabic::LetterTteh),
-            LETTER_TTEHEH => Ok(Arabic::LetterTteheh),
-            LETTER_BEEH => Ok(Arabic::LetterBeeh),
-            LETTER_TEH_WITH_RING => Ok(Arabic::LetterTehWithRing),
-            LETTER_TEH_WITH_THREE_DOTS_ABOVE_DOWNWARDS => Ok(Arabic::LetterTehWithThreeDotsAboveDownwards),
-            LETTER_PEH => Ok(Arabic::LetterPeh),
-            LETTER_TEHEH => Ok(Arabic::LetterTeheh),
-            LETTER_BEHEH => Ok(Arabic::LetterBeheh),
-            LETTER_HAH_WITH_HAMZA_ABOVE => Ok(Arabic::LetterHahWithHamzaAbove),
-            LETTER_HAH_WITH_TWO_DOTS_VERTICAL_ABOVE => Ok(Arabic::LetterHahWithTwoDotsVerticalAbove),
-            LETTER_NYEH => Ok(Arabic::LetterNyeh),
-            LETTER_DYEH => Ok(Arabic::LetterDyeh),
-            LETTER_HAH_WITH_THREE_DOTS_ABOVE => Ok(Arabic::LetterHahWithThreeDotsAbove),
-            LETTER_TCHEH => Ok(Arabic::LetterTcheh),
-            LETTER_TCHEHEH => Ok(Arabic::LetterTcheheh),
-            LETTER_DDAL => Ok(Arabic::LetterDdal),
-            LETTER_DAL_WITH_RING => Ok(Arabic::LetterDalWithRing),
-            LETTER_DAL_WITH_DOT_BELOW => Ok(Arabic::LetterDalWithDotBelow),
-            LETTER_DAL_WITH_DOT_BELOW_AND_SMALL_TAH => Ok(Arabic::LetterDalWithDotBelowAndSmallTah),
-            LETTER_DAHAL => Ok(Arabic::LetterDahal),
-            LETTER_DDAHAL => Ok(Arabic::LetterDdahal),
-            LETTER_DUL => Ok(Arabic::LetterDul),
-            LETTER_DAL_WITH_THREE_DOTS_ABOVE_DOWNWARDS => Ok(Arabic::LetterDalWithThreeDotsAboveDownwards),
-            LETTER_DAL_WITH_FOUR_DOTS_ABOVE => Ok(Arabic::LetterDalWithFourDotsAbove),
-            LETTER_RREH => Ok(Arabic::LetterRreh),
-            LETTER_REH_WITH_SMALL_V => Ok(Arabic::LetterRehWithSmallV),
-            LETTER_REH_WITH_RING => Ok(Arabic::LetterRehWithRing),
-            LETTER_REH_WITH_DOT_BELOW => Ok(Arabic::LetterRehWithDotBelow),
-            LETTER_REH_WITH_SMALL_V_BELOW => Ok(Arabic::LetterRehWithSmallVBelow),
-            LETTER_REH_WITH_DOT_BELOW_AND_DOT_ABOVE => Ok(Arabic::LetterRehWithDotBelowAndDotAbove),
-            LETTER_REH_WITH_TWO_DOTS_ABOVE => Ok(Arabic::LetterRehWithTwoDotsAbove),
-            LETTER_JEH => Ok(Arabic::LetterJeh),
-            LETTER_REH_WITH_FOUR_DOTS_ABOVE => Ok(Arabic::LetterRehWithFourDotsAbove),
-            LETTER_SEEN_WITH_DOT_BELOW_AND_DOT_ABOVE => Ok(Arabic::LetterSeenWithDotBelowAndDotAbove),
-            LETTER_SEEN_WITH_THREE_DOTS_BELOW => Ok(Arabic::LetterSeenWithThreeDotsBelow),
-            LETTER_SEEN_WITH_THREE_DOTS_BELOW_AND_THREE_DOTS_ABOVE => Ok(Arabic::LetterSeenWithThreeDotsBelowAndThreeDotsAbove),
-            LETTER_SAD_WITH_TWO_DOTS_BELOW => Ok(Arabic::LetterSadWithTwoDotsBelow),
-            LETTER_SAD_WITH_THREE_DOTS_ABOVE => Ok(Arabic::LetterSadWithThreeDotsAbove),
-            LETTER_TAH_WITH_THREE_DOTS_ABOVE => Ok(Arabic::LetterTahWithThreeDotsAbove),
-            LETTER_AIN_WITH_THREE_DOTS_ABOVE => Ok(Arabic::LetterAinWithThreeDotsAbove),
-            LETTER_DOTLESS_FEH => Ok(Arabic::LetterDotlessFeh),
-            LETTER_FEH_WITH_DOT_MOVED_BELOW => Ok(Arabic::LetterFehWithDotMovedBelow),
-            LETTER_FEH_WITH_DOT_BELOW => Ok(Arabic::LetterFehWithDotBelow),
-            LETTER_VEH => Ok(Arabic::LetterVeh),
-            LETTER_FEH_WITH_THREE_DOTS_BELOW => Ok(Arabic::LetterFehWithThreeDotsBelow),
-            LETTER_PEHEH => Ok(Arabic::LetterPeheh),
-            LETTER_QAF_WITH_DOT_ABOVE => Ok(Arabic::LetterQafWithDotAbove),
-            LETTER_QAF_WITH_THREE_DOTS_ABOVE => Ok(Arabic::LetterQafWithThreeDotsAbove),
-            LETTER_KEHEH => Ok(Arabic::LetterKeheh),
-            LETTER_SWASH_KAF => Ok(Arabic::LetterSwashKaf),
-            LETTER_KAF_WITH_RING => Ok(Arabic::LetterKafWithRing),
-            LETTER_KAF_WITH_DOT_ABOVE => Ok(Arabic::LetterKafWithDotAbove),
-            LETTER_NG => Ok(Arabic::LetterNg),
-            LETTER_KAF_WITH_THREE_DOTS_BELOW => Ok(Arabic::LetterKafWithThreeDotsBelow),
-            LETTER_GAF => Ok(Arabic::LetterGaf),
-            LETTER_GAF_WITH_RING => Ok(Arabic::LetterGafWithRing),
-            LETTER_NGOEH => Ok(Arabic::LetterNgoeh),
-            LETTER_GAF_WITH_TWO_DOTS_BELOW => Ok(Arabic::LetterGafWithTwoDotsBelow),
-            LETTER_GUEH => Ok(Arabic::LetterGueh),
-            LETTER_GAF_WITH_THREE_DOTS_ABOVE => Ok(Arabic::LetterGafWithThreeDotsAbove),
-            LETTER_LAM_WITH_SMALL_V => Ok(Arabic::LetterLamWithSmallV),
-            LETTER_LAM_WITH_DOT_ABOVE => Ok(Arabic::LetterLamWithDotAbove),
-            LETTER_LAM_WITH_THREE_DOTS_ABOVE => Ok(Arabic::LetterLamWithThreeDotsAbove),
-            LETTER_LAM_WITH_THREE_DOTS_BELOW => Ok(Arabic::LetterLamWithThreeDotsBelow),
-            LETTER_NOON_WITH_DOT_BELOW => Ok(Arabic::LetterNoonWithDotBelow),
-            LETTER_NOON_GHUNNA => Ok(Arabic::LetterNoonGhunna),
-            LETTER_RNOON => Ok(Arabic::LetterRnoon),
-            LETTER_NOON_WITH_RING => Ok(Arabic::LetterNoonWithRing),
-            LETTER_NOON_WITH_THREE_DOTS_ABOVE => Ok(Arabic::LetterNoonWithThreeDotsAbove),
-            LETTER_HEH_DOACHASHMEE => Ok(Arabic::LetterHehDoachashmee),
-            LETTER_TCHEH_WITH_DOT_ABOVE => Ok(Arabic::LetterTchehWithDotAbove),
-            LETTER_HEH_WITH_YEH_ABOVE => Ok(Arabic::LetterHehWithYehAbove),
-            LETTER_HEH_GOAL => Ok(Arabic::LetterHehGoal),
-            LETTER_HEH_GOAL_WITH_HAMZA_ABOVE => Ok(Arabic::LetterHehGoalWithHamzaAbove),
-            LETTER_TEH_MARBUTA_GOAL => Ok(Arabic::LetterTehMarbutaGoal),
-            LETTER_WAW_WITH_RING => Ok(Arabic::LetterWawWithRing),
-            LETTER_KIRGHIZ_OE => Ok(Arabic::LetterKirghizOe),
-            LETTER_OE => Ok(Arabic::LetterOe),
-            LETTER_U => Ok(Arabic::LetterU),
-            LETTER_YU => Ok(Arabic::LetterYu),
-            LETTER_KIRGHIZ_YU => Ok(Arabic::LetterKirghizYu),
-            LETTER_WAW_WITH_TWO_DOTS_ABOVE => Ok(Arabic::LetterWawWithTwoDotsAbove),
-            LETTER_VE => Ok(Arabic::LetterVe),
-            LETTER_FARSI_YEH => Ok(Arabic::LetterFarsiYeh),
-            LETTER_YEH_WITH_TAIL => Ok(Arabic::LetterYehWithTail),
-            LETTER_YEH_WITH_SMALL_V => Ok(Arabic::LetterYehWithSmallV),
-            LETTER_WAW_WITH_DOT_ABOVE => Ok(Arabic::LetterWawWithDotAbove),
-            LETTER_E => Ok(Arabic::LetterE),
-            LETTER_YEH_WITH_THREE_DOTS_BELOW => Ok(Arabic::LetterYehWithThreeDotsBelow),
-            LETTER_YEH_BARREE => Ok(Arabic::LetterYehBarree),
-            LETTER_YEH_BARREE_WITH_HAMZA_ABOVE => Ok(Arabic::LetterYehBarreeWithHamzaAbove),
-            FULL_STOP => Ok(Arabic::FullStop),
-            LETTER_AE => Ok(Arabic::LetterAe),
-            SMALL_HIGH_LIGATURE_SAD_WITH_LAM_WITH_ALEF_MAKSURA => Ok(Arabic::SmallHighLigatureSadWithLamWithAlefMaksura),
-            SMALL_HIGH_LIGATURE_QAF_WITH_LAM_WITH_ALEF_MAKSURA => Ok(Arabic::SmallHighLigatureQafWithLamWithAlefMaksura),
-            SMALL_HIGH_MEEM_INITIAL_FORM => Ok(Arabic::SmallHighMeemInitialForm),
-            SMALL_HIGH_LAM_ALEF => Ok(Arabic::SmallHighLamAlef),
-            SMALL_HIGH_JEEM => Ok(Arabic::SmallHighJeem),
-            SMALL_HIGH_THREE_DOTS => Ok(Arabic::SmallHighThreeDots),
-            SMALL_HIGH_SEEN => Ok(Arabic::SmallHighSeen),
-            END_OF_AYAH => Ok(Arabic::EndOfAyah),
-            START_OF_RUB_EL_HIZB => Ok(Arabic::StartOfRubElHizb),
-            SMALL_HIGH_ROUNDED_ZERO => Ok(Arabic::SmallHighRoundedZero),
-            SMALL_HIGH_UPRIGHT_RECTANGULAR_ZERO => Ok(Arabic::SmallHighUprightRectangularZero),
-            SMALL_HIGH_DOTLESS_HEAD_OF_KHAH => Ok(Arabic::SmallHighDotlessHeadOfKhah),
-            SMALL_HIGH_MEEM_ISOLATED_FORM => Ok(Arabic::SmallHighMeemIsolatedForm),
-            SMALL_LOW_SEEN => Ok(Arabic::SmallLowSeen),
-            SMALL_HIGH_MADDA => Ok(Arabic::SmallHighMadda),
-            SMALL_WAW => Ok(Arabic::SmallWaw),
-            SMALL_YEH => Ok(Arabic::SmallYeh),
-            SMALL_HIGH_YEH => Ok(Arabic::SmallHighYeh),
-            SMALL_HIGH_NOON => Ok(Arabic::SmallHighNoon),
-            PLACE_OF_SAJDAH => Ok(Arabic::PlaceOfSajdah),
-            EMPTY_CENTRE_LOW_STOP => Ok(Arabic::EmptyCentreLowStop),
-            EMPTY_CENTRE_HIGH_STOP => Ok(Arabic::EmptyCentreHighStop),
-            ROUNDED_HIGH_STOP_WITH_FILLED_CENTRE => Ok(Arabic::RoundedHighStopWithFilledCentre),
-            SMALL_LOW_MEEM => Ok(Arabic::SmallLowMeem),
-            LETTER_DAL_WITH_INVERTED_V => Ok(Arabic::LetterDalWithInvertedV),
-            LETTER_REH_WITH_INVERTED_V => Ok(Arabic::LetterRehWithInvertedV),
-            EXTENDED_DASH_INDIC_DIGIT_ZERO => Ok(Arabic::ExtendedDashIndicDigitZero),
-            EXTENDED_DASH_INDIC_DIGIT_ONE => Ok(Arabic::ExtendedDashIndicDigitOne),
-            EXTENDED_DASH_INDIC_DIGIT_TWO => Ok(Arabic::ExtendedDashIndicDigitTwo),
-            EXTENDED_DASH_INDIC_DIGIT_THREE => Ok(Arabic::ExtendedDashIndicDigitThree),
-            EXTENDED_DASH_INDIC_DIGIT_FOUR => Ok(Arabic::ExtendedDashIndicDigitFour),
-            EXTENDED_DASH_INDIC_DIGIT_FIVE => Ok(Arabic::ExtendedDashIndicDigitFive),
-            EXTENDED_DASH_INDIC_DIGIT_SIX => Ok(Arabic::ExtendedDashIndicDigitSix),
-            EXTENDED_DASH_INDIC_DIGIT_SEVEN => Ok(Arabic::ExtendedDashIndicDigitSeven),
-            EXTENDED_DASH_INDIC_DIGIT_EIGHT => Ok(Arabic::ExtendedDashIndicDigitEight),
-            EXTENDED_DASH_INDIC_DIGIT_NINE => Ok(Arabic::ExtendedDashIndicDigitNine),
-            LETTER_SHEEN_WITH_DOT_BELOW => Ok(Arabic::LetterSheenWithDotBelow),
-            LETTER_DAD_WITH_DOT_BELOW => Ok(Arabic::LetterDadWithDotBelow),
-            LETTER_GHAIN_WITH_DOT_BELOW => Ok(Arabic::LetterGhainWithDotBelow),
-            SIGN_SINDHI_AMPERSAND => Ok(Arabic::SignSindhiAmpersand),
-            SIGN_SINDHI_POSTPOSITION_MEN => Ok(Arabic::SignSindhiPostpositionMen),
+            '؀' => Ok(Arabic::NumberSign),
+            '؁' => Ok(Arabic::SignSanah),
+            '؂' => Ok(Arabic::FootnoteMarker),
+            '؃' => Ok(Arabic::SignSafha),
+            '؄' => Ok(Arabic::SignSamvat),
+            '؅' => Ok(Arabic::NumberMarkAbove),
+            '؆' => Ok(Arabic::DashIndicCubeRoot),
+            '؇' => Ok(Arabic::DashIndicFourthRoot),
+            '؈' => Ok(Arabic::Ray),
+            '؉' => Ok(Arabic::DashIndicPerMilleSign),
+            '؊' => Ok(Arabic::DashIndicPerTenThousandSign),
+            '؋' => Ok(Arabic::AfghaniSign),
+            '،' => Ok(Arabic::Comma),
+            '؍' => Ok(Arabic::DateSeparator),
+            '؎' => Ok(Arabic::PoeticVerseSign),
+            '؏' => Ok(Arabic::SignMisra),
+            'ؐ' => Ok(Arabic::SignSallallahouAlayheWassallam),
+            'ؑ' => Ok(Arabic::SignAlayheAssallam),
+            'ؒ' => Ok(Arabic::SignRahmatullahAlayhe),
+            'ؓ' => Ok(Arabic::SignRadiAllahouAnhu),
+            'ؔ' => Ok(Arabic::SignTakhallus),
+            'ؕ' => Ok(Arabic::SmallHighTah),
+            'ؖ' => Ok(Arabic::SmallHighLigatureAlefWithLamWithYeh),
+            'ؗ' => Ok(Arabic::SmallHighZain),
+            'ؘ' => Ok(Arabic::SmallFatha),
+            'ؙ' => Ok(Arabic::SmallDamma),
+            'ؚ' => Ok(Arabic::SmallKasra),
+            '؛' => Ok(Arabic::Semicolon),
+            '؜' => Ok(Arabic::LetterMark),
+            '؞' => Ok(Arabic::TripleDotPunctuationMark),
+            '؟' => Ok(Arabic::QuestionMark),
+            'ؠ' => Ok(Arabic::LetterKashmiriYeh),
+            'ء' => Ok(Arabic::LetterHamza),
+            'آ' => Ok(Arabic::LetterAlefWithMaddaAbove),
+            'أ' => Ok(Arabic::LetterAlefWithHamzaAbove),
+            'ؤ' => Ok(Arabic::LetterWawWithHamzaAbove),
+            'إ' => Ok(Arabic::LetterAlefWithHamzaBelow),
+            'ئ' => Ok(Arabic::LetterYehWithHamzaAbove),
+            'ا' => Ok(Arabic::LetterAlef),
+            'ب' => Ok(Arabic::LetterBeh),
+            'ة' => Ok(Arabic::LetterTehMarbuta),
+            'ت' => Ok(Arabic::LetterTeh),
+            'ث' => Ok(Arabic::LetterTheh),
+            'ج' => Ok(Arabic::LetterJeem),
+            'ح' => Ok(Arabic::LetterHah),
+            'خ' => Ok(Arabic::LetterKhah),
+            'د' => Ok(Arabic::LetterDal),
+            'ذ' => Ok(Arabic::LetterThal),
+            'ر' => Ok(Arabic::LetterReh),
+            'ز' => Ok(Arabic::LetterZain),
+            'س' => Ok(Arabic::LetterSeen),
+            'ش' => Ok(Arabic::LetterSheen),
+            'ص' => Ok(Arabic::LetterSad),
+            'ض' => Ok(Arabic::LetterDad),
+            'ط' => Ok(Arabic::LetterTah),
+            'ظ' => Ok(Arabic::LetterZah),
+            'ع' => Ok(Arabic::LetterAin),
+            'غ' => Ok(Arabic::LetterGhain),
+            'ػ' => Ok(Arabic::LetterKehehWithTwoDotsAbove),
+            'ؼ' => Ok(Arabic::LetterKehehWithThreeDotsBelow),
+            'ؽ' => Ok(Arabic::LetterFarsiYehWithInvertedV),
+            'ؾ' => Ok(Arabic::LetterFarsiYehWithTwoDotsAbove),
+            'ؿ' => Ok(Arabic::LetterFarsiYehWithThreeDotsAbove),
+            'ـ' => Ok(Arabic::Tatweel),
+            'ف' => Ok(Arabic::LetterFeh),
+            'ق' => Ok(Arabic::LetterQaf),
+            'ك' => Ok(Arabic::LetterKaf),
+            'ل' => Ok(Arabic::LetterLam),
+            'م' => Ok(Arabic::LetterMeem),
+            'ن' => Ok(Arabic::LetterNoon),
+            'ه' => Ok(Arabic::LetterHeh),
+            'و' => Ok(Arabic::LetterWaw),
+            'ى' => Ok(Arabic::LetterAlefMaksura),
+            'ي' => Ok(Arabic::LetterYeh),
+            'ً' => Ok(Arabic::Fathatan),
+            'ٌ' => Ok(Arabic::Dammatan),
+            'ٍ' => Ok(Arabic::Kasratan),
+            'َ' => Ok(Arabic::Fatha),
+            'ُ' => Ok(Arabic::Damma),
+            'ِ' => Ok(Arabic::Kasra),
+            'ّ' => Ok(Arabic::Shadda),
+            'ْ' => Ok(Arabic::Sukun),
+            'ٓ' => Ok(Arabic::MaddahAbove),
+            'ٔ' => Ok(Arabic::HamzaAbove),
+            'ٕ' => Ok(Arabic::HamzaBelow),
+            'ٖ' => Ok(Arabic::SubscriptAlef),
+            'ٗ' => Ok(Arabic::InvertedDamma),
+            '٘' => Ok(Arabic::MarkNoonGhunna),
+            'ٙ' => Ok(Arabic::Zwarakay),
+            'ٚ' => Ok(Arabic::VowelSignSmallVAbove),
+            'ٛ' => Ok(Arabic::VowelSignInvertedSmallVAbove),
+            'ٜ' => Ok(Arabic::VowelSignDotBelow),
+            'ٝ' => Ok(Arabic::ReversedDamma),
+            'ٞ' => Ok(Arabic::FathaWithTwoDots),
+            'ٟ' => Ok(Arabic::WavyHamzaBelow),
+            '٠' => Ok(Arabic::DashIndicDigitZero),
+            '١' => Ok(Arabic::DashIndicDigitOne),
+            '٢' => Ok(Arabic::DashIndicDigitTwo),
+            '٣' => Ok(Arabic::DashIndicDigitThree),
+            '٤' => Ok(Arabic::DashIndicDigitFour),
+            '٥' => Ok(Arabic::DashIndicDigitFive),
+            '٦' => Ok(Arabic::DashIndicDigitSix),
+            '٧' => Ok(Arabic::DashIndicDigitSeven),
+            '٨' => Ok(Arabic::DashIndicDigitEight),
+            '٩' => Ok(Arabic::DashIndicDigitNine),
+            '٪' => Ok(Arabic::PercentSign),
+            '٫' => Ok(Arabic::DecimalSeparator),
+            '٬' => Ok(Arabic::ThousandsSeparator),
+            '٭' => Ok(Arabic::FivePointedStar),
+            'ٮ' => Ok(Arabic::LetterDotlessBeh),
+            'ٯ' => Ok(Arabic::LetterDotlessQaf),
+            'ٰ' => Ok(Arabic::LetterSuperscriptAlef),
+            'ٱ' => Ok(Arabic::LetterAlefWasla),
+            'ٲ' => Ok(Arabic::LetterAlefWithWavyHamzaAbove),
+            'ٳ' => Ok(Arabic::LetterAlefWithWavyHamzaBelow),
+            'ٴ' => Ok(Arabic::LetterHighHamza),
+            'ٵ' => Ok(Arabic::LetterHighHamzaAlef),
+            'ٶ' => Ok(Arabic::LetterHighHamzaWaw),
+            'ٷ' => Ok(Arabic::LetterUWithHamzaAbove),
+            'ٸ' => Ok(Arabic::LetterHighHamzaYeh),
+            'ٹ' => Ok(Arabic::LetterTteh),
+            'ٺ' => Ok(Arabic::LetterTteheh),
+            'ٻ' => Ok(Arabic::LetterBeeh),
+            'ټ' => Ok(Arabic::LetterTehWithRing),
+            'ٽ' => Ok(Arabic::LetterTehWithThreeDotsAboveDownwards),
+            'پ' => Ok(Arabic::LetterPeh),
+            'ٿ' => Ok(Arabic::LetterTeheh),
+            'ڀ' => Ok(Arabic::LetterBeheh),
+            'ځ' => Ok(Arabic::LetterHahWithHamzaAbove),
+            'ڂ' => Ok(Arabic::LetterHahWithTwoDotsVerticalAbove),
+            'ڃ' => Ok(Arabic::LetterNyeh),
+            'ڄ' => Ok(Arabic::LetterDyeh),
+            'څ' => Ok(Arabic::LetterHahWithThreeDotsAbove),
+            'چ' => Ok(Arabic::LetterTcheh),
+            'ڇ' => Ok(Arabic::LetterTcheheh),
+            'ڈ' => Ok(Arabic::LetterDdal),
+            'ډ' => Ok(Arabic::LetterDalWithRing),
+            'ڊ' => Ok(Arabic::LetterDalWithDotBelow),
+            'ڋ' => Ok(Arabic::LetterDalWithDotBelowAndSmallTah),
+            'ڌ' => Ok(Arabic::LetterDahal),
+            'ڍ' => Ok(Arabic::LetterDdahal),
+            'ڎ' => Ok(Arabic::LetterDul),
+            'ڏ' => Ok(Arabic::LetterDalWithThreeDotsAboveDownwards),
+            'ڐ' => Ok(Arabic::LetterDalWithFourDotsAbove),
+            'ڑ' => Ok(Arabic::LetterRreh),
+            'ڒ' => Ok(Arabic::LetterRehWithSmallV),
+            'ړ' => Ok(Arabic::LetterRehWithRing),
+            'ڔ' => Ok(Arabic::LetterRehWithDotBelow),
+            'ڕ' => Ok(Arabic::LetterRehWithSmallVBelow),
+            'ږ' => Ok(Arabic::LetterRehWithDotBelowAndDotAbove),
+            'ڗ' => Ok(Arabic::LetterRehWithTwoDotsAbove),
+            'ژ' => Ok(Arabic::LetterJeh),
+            'ڙ' => Ok(Arabic::LetterRehWithFourDotsAbove),
+            'ښ' => Ok(Arabic::LetterSeenWithDotBelowAndDotAbove),
+            'ڛ' => Ok(Arabic::LetterSeenWithThreeDotsBelow),
+            'ڜ' => Ok(Arabic::LetterSeenWithThreeDotsBelowAndThreeDotsAbove),
+            'ڝ' => Ok(Arabic::LetterSadWithTwoDotsBelow),
+            'ڞ' => Ok(Arabic::LetterSadWithThreeDotsAbove),
+            'ڟ' => Ok(Arabic::LetterTahWithThreeDotsAbove),
+            'ڠ' => Ok(Arabic::LetterAinWithThreeDotsAbove),
+            'ڡ' => Ok(Arabic::LetterDotlessFeh),
+            'ڢ' => Ok(Arabic::LetterFehWithDotMovedBelow),
+            'ڣ' => Ok(Arabic::LetterFehWithDotBelow),
+            'ڤ' => Ok(Arabic::LetterVeh),
+            'ڥ' => Ok(Arabic::LetterFehWithThreeDotsBelow),
+            'ڦ' => Ok(Arabic::LetterPeheh),
+            'ڧ' => Ok(Arabic::LetterQafWithDotAbove),
+            'ڨ' => Ok(Arabic::LetterQafWithThreeDotsAbove),
+            'ک' => Ok(Arabic::LetterKeheh),
+            'ڪ' => Ok(Arabic::LetterSwashKaf),
+            'ګ' => Ok(Arabic::LetterKafWithRing),
+            'ڬ' => Ok(Arabic::LetterKafWithDotAbove),
+            'ڭ' => Ok(Arabic::LetterNg),
+            'ڮ' => Ok(Arabic::LetterKafWithThreeDotsBelow),
+            'گ' => Ok(Arabic::LetterGaf),
+            'ڰ' => Ok(Arabic::LetterGafWithRing),
+            'ڱ' => Ok(Arabic::LetterNgoeh),
+            'ڲ' => Ok(Arabic::LetterGafWithTwoDotsBelow),
+            'ڳ' => Ok(Arabic::LetterGueh),
+            'ڴ' => Ok(Arabic::LetterGafWithThreeDotsAbove),
+            'ڵ' => Ok(Arabic::LetterLamWithSmallV),
+            'ڶ' => Ok(Arabic::LetterLamWithDotAbove),
+            'ڷ' => Ok(Arabic::LetterLamWithThreeDotsAbove),
+            'ڸ' => Ok(Arabic::LetterLamWithThreeDotsBelow),
+            'ڹ' => Ok(Arabic::LetterNoonWithDotBelow),
+            'ں' => Ok(Arabic::LetterNoonGhunna),
+            'ڻ' => Ok(Arabic::LetterRnoon),
+            'ڼ' => Ok(Arabic::LetterNoonWithRing),
+            'ڽ' => Ok(Arabic::LetterNoonWithThreeDotsAbove),
+            'ھ' => Ok(Arabic::LetterHehDoachashmee),
+            'ڿ' => Ok(Arabic::LetterTchehWithDotAbove),
+            'ۀ' => Ok(Arabic::LetterHehWithYehAbove),
+            'ہ' => Ok(Arabic::LetterHehGoal),
+            'ۂ' => Ok(Arabic::LetterHehGoalWithHamzaAbove),
+            'ۃ' => Ok(Arabic::LetterTehMarbutaGoal),
+            'ۄ' => Ok(Arabic::LetterWawWithRing),
+            'ۅ' => Ok(Arabic::LetterKirghizOe),
+            'ۆ' => Ok(Arabic::LetterOe),
+            'ۇ' => Ok(Arabic::LetterU),
+            'ۈ' => Ok(Arabic::LetterYu),
+            'ۉ' => Ok(Arabic::LetterKirghizYu),
+            'ۊ' => Ok(Arabic::LetterWawWithTwoDotsAbove),
+            'ۋ' => Ok(Arabic::LetterVe),
+            'ی' => Ok(Arabic::LetterFarsiYeh),
+            'ۍ' => Ok(Arabic::LetterYehWithTail),
+            'ێ' => Ok(Arabic::LetterYehWithSmallV),
+            'ۏ' => Ok(Arabic::LetterWawWithDotAbove),
+            'ې' => Ok(Arabic::LetterE),
+            'ۑ' => Ok(Arabic::LetterYehWithThreeDotsBelow),
+            'ے' => Ok(Arabic::LetterYehBarree),
+            'ۓ' => Ok(Arabic::LetterYehBarreeWithHamzaAbove),
+            '۔' => Ok(Arabic::FullStop),
+            'ە' => Ok(Arabic::LetterAe),
+            'ۖ' => Ok(Arabic::SmallHighLigatureSadWithLamWithAlefMaksura),
+            'ۗ' => Ok(Arabic::SmallHighLigatureQafWithLamWithAlefMaksura),
+            'ۘ' => Ok(Arabic::SmallHighMeemInitialForm),
+            'ۙ' => Ok(Arabic::SmallHighLamAlef),
+            'ۚ' => Ok(Arabic::SmallHighJeem),
+            'ۛ' => Ok(Arabic::SmallHighThreeDots),
+            'ۜ' => Ok(Arabic::SmallHighSeen),
+            '۝' => Ok(Arabic::EndOfAyah),
+            '۞' => Ok(Arabic::StartOfRubElHizb),
+            '۟' => Ok(Arabic::SmallHighRoundedZero),
+            '۠' => Ok(Arabic::SmallHighUprightRectangularZero),
+            'ۡ' => Ok(Arabic::SmallHighDotlessHeadOfKhah),
+            'ۢ' => Ok(Arabic::SmallHighMeemIsolatedForm),
+            'ۣ' => Ok(Arabic::SmallLowSeen),
+            'ۤ' => Ok(Arabic::SmallHighMadda),
+            'ۥ' => Ok(Arabic::SmallWaw),
+            'ۦ' => Ok(Arabic::SmallYeh),
+            'ۧ' => Ok(Arabic::SmallHighYeh),
+            'ۨ' => Ok(Arabic::SmallHighNoon),
+            '۩' => Ok(Arabic::PlaceOfSajdah),
+            '۪' => Ok(Arabic::EmptyCentreLowStop),
+            '۫' => Ok(Arabic::EmptyCentreHighStop),
+            '۬' => Ok(Arabic::RoundedHighStopWithFilledCentre),
+            'ۭ' => Ok(Arabic::SmallLowMeem),
+            'ۮ' => Ok(Arabic::LetterDalWithInvertedV),
+            'ۯ' => Ok(Arabic::LetterRehWithInvertedV),
+            '۰' => Ok(Arabic::ExtendedDashIndicDigitZero),
+            '۱' => Ok(Arabic::ExtendedDashIndicDigitOne),
+            '۲' => Ok(Arabic::ExtendedDashIndicDigitTwo),
+            '۳' => Ok(Arabic::ExtendedDashIndicDigitThree),
+            '۴' => Ok(Arabic::ExtendedDashIndicDigitFour),
+            '۵' => Ok(Arabic::ExtendedDashIndicDigitFive),
+            '۶' => Ok(Arabic::ExtendedDashIndicDigitSix),
+            '۷' => Ok(Arabic::ExtendedDashIndicDigitSeven),
+            '۸' => Ok(Arabic::ExtendedDashIndicDigitEight),
+            '۹' => Ok(Arabic::ExtendedDashIndicDigitNine),
+            'ۺ' => Ok(Arabic::LetterSheenWithDotBelow),
+            'ۻ' => Ok(Arabic::LetterDadWithDotBelow),
+            'ۼ' => Ok(Arabic::LetterGhainWithDotBelow),
+            '۽' => Ok(Arabic::SignSindhiAmpersand),
+            '۾' => Ok(Arabic::SignSindhiPostpositionMen),
             _ => Err(()),
         }
     }

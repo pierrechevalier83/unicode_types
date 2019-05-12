@@ -1,200 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11c00}: '𑰀'
-    pub const LETTER_A: char = '𑰀';
-    /// \u{11c01}: '𑰁'
-    pub const LETTER_AA: char = '𑰁';
-    /// \u{11c02}: '𑰂'
-    pub const LETTER_I: char = '𑰂';
-    /// \u{11c03}: '𑰃'
-    pub const LETTER_II: char = '𑰃';
-    /// \u{11c04}: '𑰄'
-    pub const LETTER_U: char = '𑰄';
-    /// \u{11c05}: '𑰅'
-    pub const LETTER_UU: char = '𑰅';
-    /// \u{11c06}: '𑰆'
-    pub const LETTER_VOCALIC_R: char = '𑰆';
-    /// \u{11c07}: '𑰇'
-    pub const LETTER_VOCALIC_RR: char = '𑰇';
-    /// \u{11c08}: '𑰈'
-    pub const LETTER_VOCALIC_L: char = '𑰈';
-    /// \u{11c0a}: '𑰊'
-    pub const LETTER_E: char = '𑰊';
-    /// \u{11c0b}: '𑰋'
-    pub const LETTER_AI: char = '𑰋';
-    /// \u{11c0c}: '𑰌'
-    pub const LETTER_O: char = '𑰌';
-    /// \u{11c0d}: '𑰍'
-    pub const LETTER_AU: char = '𑰍';
-    /// \u{11c0e}: '𑰎'
-    pub const LETTER_KA: char = '𑰎';
-    /// \u{11c0f}: '𑰏'
-    pub const LETTER_KHA: char = '𑰏';
-    /// \u{11c10}: '𑰐'
-    pub const LETTER_GA: char = '𑰐';
-    /// \u{11c11}: '𑰑'
-    pub const LETTER_GHA: char = '𑰑';
-    /// \u{11c12}: '𑰒'
-    pub const LETTER_NGA: char = '𑰒';
-    /// \u{11c13}: '𑰓'
-    pub const LETTER_CA: char = '𑰓';
-    /// \u{11c14}: '𑰔'
-    pub const LETTER_CHA: char = '𑰔';
-    /// \u{11c15}: '𑰕'
-    pub const LETTER_JA: char = '𑰕';
-    /// \u{11c16}: '𑰖'
-    pub const LETTER_JHA: char = '𑰖';
-    /// \u{11c17}: '𑰗'
-    pub const LETTER_NYA: char = '𑰗';
-    /// \u{11c18}: '𑰘'
-    pub const LETTER_TTA: char = '𑰘';
-    /// \u{11c19}: '𑰙'
-    pub const LETTER_TTHA: char = '𑰙';
-    /// \u{11c1a}: '𑰚'
-    pub const LETTER_DDA: char = '𑰚';
-    /// \u{11c1b}: '𑰛'
-    pub const LETTER_DDHA: char = '𑰛';
-    /// \u{11c1c}: '𑰜'
-    pub const LETTER_NNA: char = '𑰜';
-    /// \u{11c1d}: '𑰝'
-    pub const LETTER_TA: char = '𑰝';
-    /// \u{11c1e}: '𑰞'
-    pub const LETTER_THA: char = '𑰞';
-    /// \u{11c1f}: '𑰟'
-    pub const LETTER_DA: char = '𑰟';
-    /// \u{11c20}: '𑰠'
-    pub const LETTER_DHA: char = '𑰠';
-    /// \u{11c21}: '𑰡'
-    pub const LETTER_NA: char = '𑰡';
-    /// \u{11c22}: '𑰢'
-    pub const LETTER_PA: char = '𑰢';
-    /// \u{11c23}: '𑰣'
-    pub const LETTER_PHA: char = '𑰣';
-    /// \u{11c24}: '𑰤'
-    pub const LETTER_BA: char = '𑰤';
-    /// \u{11c25}: '𑰥'
-    pub const LETTER_BHA: char = '𑰥';
-    /// \u{11c26}: '𑰦'
-    pub const LETTER_MA: char = '𑰦';
-    /// \u{11c27}: '𑰧'
-    pub const LETTER_YA: char = '𑰧';
-    /// \u{11c28}: '𑰨'
-    pub const LETTER_RA: char = '𑰨';
-    /// \u{11c29}: '𑰩'
-    pub const LETTER_LA: char = '𑰩';
-    /// \u{11c2a}: '𑰪'
-    pub const LETTER_VA: char = '𑰪';
-    /// \u{11c2b}: '𑰫'
-    pub const LETTER_SHA: char = '𑰫';
-    /// \u{11c2c}: '𑰬'
-    pub const LETTER_SSA: char = '𑰬';
-    /// \u{11c2d}: '𑰭'
-    pub const LETTER_SA: char = '𑰭';
-    /// \u{11c2e}: '𑰮'
-    pub const LETTER_HA: char = '𑰮';
-    /// \u{11c2f}: '𑰯'
-    pub const VOWEL_SIGN_AA: char = '𑰯';
-    /// \u{11c30}: '𑰰'
-    pub const VOWEL_SIGN_I: char = '𑰰';
-    /// \u{11c31}: '𑰱'
-    pub const VOWEL_SIGN_II: char = '𑰱';
-    /// \u{11c32}: '𑰲'
-    pub const VOWEL_SIGN_U: char = '𑰲';
-    /// \u{11c33}: '𑰳'
-    pub const VOWEL_SIGN_UU: char = '𑰳';
-    /// \u{11c34}: '𑰴'
-    pub const VOWEL_SIGN_VOCALIC_R: char = '𑰴';
-    /// \u{11c35}: '𑰵'
-    pub const VOWEL_SIGN_VOCALIC_RR: char = '𑰵';
-    /// \u{11c36}: '𑰶'
-    pub const VOWEL_SIGN_VOCALIC_L: char = '𑰶';
-    /// \u{11c38}: '𑰸'
-    pub const VOWEL_SIGN_E: char = '𑰸';
-    /// \u{11c39}: '𑰹'
-    pub const VOWEL_SIGN_AI: char = '𑰹';
-    /// \u{11c3a}: '𑰺'
-    pub const VOWEL_SIGN_O: char = '𑰺';
-    /// \u{11c3b}: '𑰻'
-    pub const VOWEL_SIGN_AU: char = '𑰻';
-    /// \u{11c3c}: '𑰼'
-    pub const SIGN_CANDRABINDU: char = '𑰼';
-    /// \u{11c3d}: '𑰽'
-    pub const SIGN_ANUSVARA: char = '𑰽';
-    /// \u{11c3e}: '𑰾'
-    pub const SIGN_VISARGA: char = '𑰾';
-    /// \u{11c3f}: '𑰿'
-    pub const SIGN_VIRAMA: char = '𑰿';
-    /// \u{11c40}: '𑱀'
-    pub const SIGN_AVAGRAHA: char = '𑱀';
-    /// \u{11c41}: '𑱁'
-    pub const DANDA: char = '𑱁';
-    /// \u{11c42}: '𑱂'
-    pub const DOUBLE_DANDA: char = '𑱂';
-    /// \u{11c43}: '𑱃'
-    pub const WORD_SEPARATOR: char = '𑱃';
-    /// \u{11c44}: '𑱄'
-    pub const GAP_FILLER_DASH_1: char = '𑱄';
-    /// \u{11c45}: '𑱅'
-    pub const GAP_FILLER_DASH_2: char = '𑱅';
-    /// \u{11c50}: '𑱐'
-    pub const DIGIT_ZERO: char = '𑱐';
-    /// \u{11c51}: '𑱑'
-    pub const DIGIT_ONE: char = '𑱑';
-    /// \u{11c52}: '𑱒'
-    pub const DIGIT_TWO: char = '𑱒';
-    /// \u{11c53}: '𑱓'
-    pub const DIGIT_THREE: char = '𑱓';
-    /// \u{11c54}: '𑱔'
-    pub const DIGIT_FOUR: char = '𑱔';
-    /// \u{11c55}: '𑱕'
-    pub const DIGIT_FIVE: char = '𑱕';
-    /// \u{11c56}: '𑱖'
-    pub const DIGIT_SIX: char = '𑱖';
-    /// \u{11c57}: '𑱗'
-    pub const DIGIT_SEVEN: char = '𑱗';
-    /// \u{11c58}: '𑱘'
-    pub const DIGIT_EIGHT: char = '𑱘';
-    /// \u{11c59}: '𑱙'
-    pub const DIGIT_NINE: char = '𑱙';
-    /// \u{11c5a}: '𑱚'
-    pub const NUMBER_ONE: char = '𑱚';
-    /// \u{11c5b}: '𑱛'
-    pub const NUMBER_TWO: char = '𑱛';
-    /// \u{11c5c}: '𑱜'
-    pub const NUMBER_THREE: char = '𑱜';
-    /// \u{11c5d}: '𑱝'
-    pub const NUMBER_FOUR: char = '𑱝';
-    /// \u{11c5e}: '𑱞'
-    pub const NUMBER_FIVE: char = '𑱞';
-    /// \u{11c5f}: '𑱟'
-    pub const NUMBER_SIX: char = '𑱟';
-    /// \u{11c60}: '𑱠'
-    pub const NUMBER_SEVEN: char = '𑱠';
-    /// \u{11c61}: '𑱡'
-    pub const NUMBER_EIGHT: char = '𑱡';
-    /// \u{11c62}: '𑱢'
-    pub const NUMBER_NINE: char = '𑱢';
-    /// \u{11c63}: '𑱣'
-    pub const NUMBER_TEN: char = '𑱣';
-    /// \u{11c64}: '𑱤'
-    pub const NUMBER_TWENTY: char = '𑱤';
-    /// \u{11c65}: '𑱥'
-    pub const NUMBER_THIRTY: char = '𑱥';
-    /// \u{11c66}: '𑱦'
-    pub const NUMBER_FORTY: char = '𑱦';
-    /// \u{11c67}: '𑱧'
-    pub const NUMBER_FIFTY: char = '𑱧';
-    /// \u{11c68}: '𑱨'
-    pub const NUMBER_SIXTY: char = '𑱨';
-    /// \u{11c69}: '𑱩'
-    pub const NUMBER_SEVENTY: char = '𑱩';
-    /// \u{11c6a}: '𑱪'
-    pub const NUMBER_EIGHTY: char = '𑱪';
-    /// \u{11c6b}: '𑱫'
-    pub const NUMBER_NINETY: char = '𑱫';
-    /// \u{11c6c}: '𑱬'
-    pub const HUNDREDS_UNIT_MARK: char = '𑱬';
-}
 
 /// An enum to represent all characters in the Bhaiksuki block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -397,105 +200,104 @@ pub enum Bhaiksuki {
 
 impl Into<char> for Bhaiksuki {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Bhaiksuki::LetterA => LETTER_A,
-            Bhaiksuki::LetterAa => LETTER_AA,
-            Bhaiksuki::LetterI => LETTER_I,
-            Bhaiksuki::LetterIi => LETTER_II,
-            Bhaiksuki::LetterU => LETTER_U,
-            Bhaiksuki::LetterUu => LETTER_UU,
-            Bhaiksuki::LetterVocalicR => LETTER_VOCALIC_R,
-            Bhaiksuki::LetterVocalicRr => LETTER_VOCALIC_RR,
-            Bhaiksuki::LetterVocalicL => LETTER_VOCALIC_L,
-            Bhaiksuki::LetterE => LETTER_E,
-            Bhaiksuki::LetterAi => LETTER_AI,
-            Bhaiksuki::LetterO => LETTER_O,
-            Bhaiksuki::LetterAu => LETTER_AU,
-            Bhaiksuki::LetterKa => LETTER_KA,
-            Bhaiksuki::LetterKha => LETTER_KHA,
-            Bhaiksuki::LetterGa => LETTER_GA,
-            Bhaiksuki::LetterGha => LETTER_GHA,
-            Bhaiksuki::LetterNga => LETTER_NGA,
-            Bhaiksuki::LetterCa => LETTER_CA,
-            Bhaiksuki::LetterCha => LETTER_CHA,
-            Bhaiksuki::LetterJa => LETTER_JA,
-            Bhaiksuki::LetterJha => LETTER_JHA,
-            Bhaiksuki::LetterNya => LETTER_NYA,
-            Bhaiksuki::LetterTta => LETTER_TTA,
-            Bhaiksuki::LetterTtha => LETTER_TTHA,
-            Bhaiksuki::LetterDda => LETTER_DDA,
-            Bhaiksuki::LetterDdha => LETTER_DDHA,
-            Bhaiksuki::LetterNna => LETTER_NNA,
-            Bhaiksuki::LetterTa => LETTER_TA,
-            Bhaiksuki::LetterTha => LETTER_THA,
-            Bhaiksuki::LetterDa => LETTER_DA,
-            Bhaiksuki::LetterDha => LETTER_DHA,
-            Bhaiksuki::LetterNa => LETTER_NA,
-            Bhaiksuki::LetterPa => LETTER_PA,
-            Bhaiksuki::LetterPha => LETTER_PHA,
-            Bhaiksuki::LetterBa => LETTER_BA,
-            Bhaiksuki::LetterBha => LETTER_BHA,
-            Bhaiksuki::LetterMa => LETTER_MA,
-            Bhaiksuki::LetterYa => LETTER_YA,
-            Bhaiksuki::LetterRa => LETTER_RA,
-            Bhaiksuki::LetterLa => LETTER_LA,
-            Bhaiksuki::LetterVa => LETTER_VA,
-            Bhaiksuki::LetterSha => LETTER_SHA,
-            Bhaiksuki::LetterSsa => LETTER_SSA,
-            Bhaiksuki::LetterSa => LETTER_SA,
-            Bhaiksuki::LetterHa => LETTER_HA,
-            Bhaiksuki::VowelSignAa => VOWEL_SIGN_AA,
-            Bhaiksuki::VowelSignI => VOWEL_SIGN_I,
-            Bhaiksuki::VowelSignIi => VOWEL_SIGN_II,
-            Bhaiksuki::VowelSignU => VOWEL_SIGN_U,
-            Bhaiksuki::VowelSignUu => VOWEL_SIGN_UU,
-            Bhaiksuki::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            Bhaiksuki::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
-            Bhaiksuki::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
-            Bhaiksuki::VowelSignE => VOWEL_SIGN_E,
-            Bhaiksuki::VowelSignAi => VOWEL_SIGN_AI,
-            Bhaiksuki::VowelSignO => VOWEL_SIGN_O,
-            Bhaiksuki::VowelSignAu => VOWEL_SIGN_AU,
-            Bhaiksuki::SignCandrabindu => SIGN_CANDRABINDU,
-            Bhaiksuki::SignAnusvara => SIGN_ANUSVARA,
-            Bhaiksuki::SignVisarga => SIGN_VISARGA,
-            Bhaiksuki::SignVirama => SIGN_VIRAMA,
-            Bhaiksuki::SignAvagraha => SIGN_AVAGRAHA,
-            Bhaiksuki::Danda => DANDA,
-            Bhaiksuki::DoubleDanda => DOUBLE_DANDA,
-            Bhaiksuki::WordSeparator => WORD_SEPARATOR,
-            Bhaiksuki::GapFillerDash1 => GAP_FILLER_DASH_1,
-            Bhaiksuki::GapFillerDash2 => GAP_FILLER_DASH_2,
-            Bhaiksuki::DigitZero => DIGIT_ZERO,
-            Bhaiksuki::DigitOne => DIGIT_ONE,
-            Bhaiksuki::DigitTwo => DIGIT_TWO,
-            Bhaiksuki::DigitThree => DIGIT_THREE,
-            Bhaiksuki::DigitFour => DIGIT_FOUR,
-            Bhaiksuki::DigitFive => DIGIT_FIVE,
-            Bhaiksuki::DigitSix => DIGIT_SIX,
-            Bhaiksuki::DigitSeven => DIGIT_SEVEN,
-            Bhaiksuki::DigitEight => DIGIT_EIGHT,
-            Bhaiksuki::DigitNine => DIGIT_NINE,
-            Bhaiksuki::NumberOne => NUMBER_ONE,
-            Bhaiksuki::NumberTwo => NUMBER_TWO,
-            Bhaiksuki::NumberThree => NUMBER_THREE,
-            Bhaiksuki::NumberFour => NUMBER_FOUR,
-            Bhaiksuki::NumberFive => NUMBER_FIVE,
-            Bhaiksuki::NumberSix => NUMBER_SIX,
-            Bhaiksuki::NumberSeven => NUMBER_SEVEN,
-            Bhaiksuki::NumberEight => NUMBER_EIGHT,
-            Bhaiksuki::NumberNine => NUMBER_NINE,
-            Bhaiksuki::NumberTen => NUMBER_TEN,
-            Bhaiksuki::NumberTwenty => NUMBER_TWENTY,
-            Bhaiksuki::NumberThirty => NUMBER_THIRTY,
-            Bhaiksuki::NumberForty => NUMBER_FORTY,
-            Bhaiksuki::NumberFifty => NUMBER_FIFTY,
-            Bhaiksuki::NumberSixty => NUMBER_SIXTY,
-            Bhaiksuki::NumberSeventy => NUMBER_SEVENTY,
-            Bhaiksuki::NumberEighty => NUMBER_EIGHTY,
-            Bhaiksuki::NumberNinety => NUMBER_NINETY,
-            Bhaiksuki::HundredsUnitMark => HUNDREDS_UNIT_MARK,
+            Bhaiksuki::LetterA => '𑰀',
+            Bhaiksuki::LetterAa => '𑰁',
+            Bhaiksuki::LetterI => '𑰂',
+            Bhaiksuki::LetterIi => '𑰃',
+            Bhaiksuki::LetterU => '𑰄',
+            Bhaiksuki::LetterUu => '𑰅',
+            Bhaiksuki::LetterVocalicR => '𑰆',
+            Bhaiksuki::LetterVocalicRr => '𑰇',
+            Bhaiksuki::LetterVocalicL => '𑰈',
+            Bhaiksuki::LetterE => '𑰊',
+            Bhaiksuki::LetterAi => '𑰋',
+            Bhaiksuki::LetterO => '𑰌',
+            Bhaiksuki::LetterAu => '𑰍',
+            Bhaiksuki::LetterKa => '𑰎',
+            Bhaiksuki::LetterKha => '𑰏',
+            Bhaiksuki::LetterGa => '𑰐',
+            Bhaiksuki::LetterGha => '𑰑',
+            Bhaiksuki::LetterNga => '𑰒',
+            Bhaiksuki::LetterCa => '𑰓',
+            Bhaiksuki::LetterCha => '𑰔',
+            Bhaiksuki::LetterJa => '𑰕',
+            Bhaiksuki::LetterJha => '𑰖',
+            Bhaiksuki::LetterNya => '𑰗',
+            Bhaiksuki::LetterTta => '𑰘',
+            Bhaiksuki::LetterTtha => '𑰙',
+            Bhaiksuki::LetterDda => '𑰚',
+            Bhaiksuki::LetterDdha => '𑰛',
+            Bhaiksuki::LetterNna => '𑰜',
+            Bhaiksuki::LetterTa => '𑰝',
+            Bhaiksuki::LetterTha => '𑰞',
+            Bhaiksuki::LetterDa => '𑰟',
+            Bhaiksuki::LetterDha => '𑰠',
+            Bhaiksuki::LetterNa => '𑰡',
+            Bhaiksuki::LetterPa => '𑰢',
+            Bhaiksuki::LetterPha => '𑰣',
+            Bhaiksuki::LetterBa => '𑰤',
+            Bhaiksuki::LetterBha => '𑰥',
+            Bhaiksuki::LetterMa => '𑰦',
+            Bhaiksuki::LetterYa => '𑰧',
+            Bhaiksuki::LetterRa => '𑰨',
+            Bhaiksuki::LetterLa => '𑰩',
+            Bhaiksuki::LetterVa => '𑰪',
+            Bhaiksuki::LetterSha => '𑰫',
+            Bhaiksuki::LetterSsa => '𑰬',
+            Bhaiksuki::LetterSa => '𑰭',
+            Bhaiksuki::LetterHa => '𑰮',
+            Bhaiksuki::VowelSignAa => '𑰯',
+            Bhaiksuki::VowelSignI => '𑰰',
+            Bhaiksuki::VowelSignIi => '𑰱',
+            Bhaiksuki::VowelSignU => '𑰲',
+            Bhaiksuki::VowelSignUu => '𑰳',
+            Bhaiksuki::VowelSignVocalicR => '𑰴',
+            Bhaiksuki::VowelSignVocalicRr => '𑰵',
+            Bhaiksuki::VowelSignVocalicL => '𑰶',
+            Bhaiksuki::VowelSignE => '𑰸',
+            Bhaiksuki::VowelSignAi => '𑰹',
+            Bhaiksuki::VowelSignO => '𑰺',
+            Bhaiksuki::VowelSignAu => '𑰻',
+            Bhaiksuki::SignCandrabindu => '𑰼',
+            Bhaiksuki::SignAnusvara => '𑰽',
+            Bhaiksuki::SignVisarga => '𑰾',
+            Bhaiksuki::SignVirama => '𑰿',
+            Bhaiksuki::SignAvagraha => '𑱀',
+            Bhaiksuki::Danda => '𑱁',
+            Bhaiksuki::DoubleDanda => '𑱂',
+            Bhaiksuki::WordSeparator => '𑱃',
+            Bhaiksuki::GapFillerDash1 => '𑱄',
+            Bhaiksuki::GapFillerDash2 => '𑱅',
+            Bhaiksuki::DigitZero => '𑱐',
+            Bhaiksuki::DigitOne => '𑱑',
+            Bhaiksuki::DigitTwo => '𑱒',
+            Bhaiksuki::DigitThree => '𑱓',
+            Bhaiksuki::DigitFour => '𑱔',
+            Bhaiksuki::DigitFive => '𑱕',
+            Bhaiksuki::DigitSix => '𑱖',
+            Bhaiksuki::DigitSeven => '𑱗',
+            Bhaiksuki::DigitEight => '𑱘',
+            Bhaiksuki::DigitNine => '𑱙',
+            Bhaiksuki::NumberOne => '𑱚',
+            Bhaiksuki::NumberTwo => '𑱛',
+            Bhaiksuki::NumberThree => '𑱜',
+            Bhaiksuki::NumberFour => '𑱝',
+            Bhaiksuki::NumberFive => '𑱞',
+            Bhaiksuki::NumberSix => '𑱟',
+            Bhaiksuki::NumberSeven => '𑱠',
+            Bhaiksuki::NumberEight => '𑱡',
+            Bhaiksuki::NumberNine => '𑱢',
+            Bhaiksuki::NumberTen => '𑱣',
+            Bhaiksuki::NumberTwenty => '𑱤',
+            Bhaiksuki::NumberThirty => '𑱥',
+            Bhaiksuki::NumberForty => '𑱦',
+            Bhaiksuki::NumberFifty => '𑱧',
+            Bhaiksuki::NumberSixty => '𑱨',
+            Bhaiksuki::NumberSeventy => '𑱩',
+            Bhaiksuki::NumberEighty => '𑱪',
+            Bhaiksuki::NumberNinety => '𑱫',
+            Bhaiksuki::HundredsUnitMark => '𑱬',
         }
     }
 }
@@ -503,105 +305,104 @@ impl Into<char> for Bhaiksuki {
 impl std::convert::TryFrom<char> for Bhaiksuki {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_A => Ok(Bhaiksuki::LetterA),
-            LETTER_AA => Ok(Bhaiksuki::LetterAa),
-            LETTER_I => Ok(Bhaiksuki::LetterI),
-            LETTER_II => Ok(Bhaiksuki::LetterIi),
-            LETTER_U => Ok(Bhaiksuki::LetterU),
-            LETTER_UU => Ok(Bhaiksuki::LetterUu),
-            LETTER_VOCALIC_R => Ok(Bhaiksuki::LetterVocalicR),
-            LETTER_VOCALIC_RR => Ok(Bhaiksuki::LetterVocalicRr),
-            LETTER_VOCALIC_L => Ok(Bhaiksuki::LetterVocalicL),
-            LETTER_E => Ok(Bhaiksuki::LetterE),
-            LETTER_AI => Ok(Bhaiksuki::LetterAi),
-            LETTER_O => Ok(Bhaiksuki::LetterO),
-            LETTER_AU => Ok(Bhaiksuki::LetterAu),
-            LETTER_KA => Ok(Bhaiksuki::LetterKa),
-            LETTER_KHA => Ok(Bhaiksuki::LetterKha),
-            LETTER_GA => Ok(Bhaiksuki::LetterGa),
-            LETTER_GHA => Ok(Bhaiksuki::LetterGha),
-            LETTER_NGA => Ok(Bhaiksuki::LetterNga),
-            LETTER_CA => Ok(Bhaiksuki::LetterCa),
-            LETTER_CHA => Ok(Bhaiksuki::LetterCha),
-            LETTER_JA => Ok(Bhaiksuki::LetterJa),
-            LETTER_JHA => Ok(Bhaiksuki::LetterJha),
-            LETTER_NYA => Ok(Bhaiksuki::LetterNya),
-            LETTER_TTA => Ok(Bhaiksuki::LetterTta),
-            LETTER_TTHA => Ok(Bhaiksuki::LetterTtha),
-            LETTER_DDA => Ok(Bhaiksuki::LetterDda),
-            LETTER_DDHA => Ok(Bhaiksuki::LetterDdha),
-            LETTER_NNA => Ok(Bhaiksuki::LetterNna),
-            LETTER_TA => Ok(Bhaiksuki::LetterTa),
-            LETTER_THA => Ok(Bhaiksuki::LetterTha),
-            LETTER_DA => Ok(Bhaiksuki::LetterDa),
-            LETTER_DHA => Ok(Bhaiksuki::LetterDha),
-            LETTER_NA => Ok(Bhaiksuki::LetterNa),
-            LETTER_PA => Ok(Bhaiksuki::LetterPa),
-            LETTER_PHA => Ok(Bhaiksuki::LetterPha),
-            LETTER_BA => Ok(Bhaiksuki::LetterBa),
-            LETTER_BHA => Ok(Bhaiksuki::LetterBha),
-            LETTER_MA => Ok(Bhaiksuki::LetterMa),
-            LETTER_YA => Ok(Bhaiksuki::LetterYa),
-            LETTER_RA => Ok(Bhaiksuki::LetterRa),
-            LETTER_LA => Ok(Bhaiksuki::LetterLa),
-            LETTER_VA => Ok(Bhaiksuki::LetterVa),
-            LETTER_SHA => Ok(Bhaiksuki::LetterSha),
-            LETTER_SSA => Ok(Bhaiksuki::LetterSsa),
-            LETTER_SA => Ok(Bhaiksuki::LetterSa),
-            LETTER_HA => Ok(Bhaiksuki::LetterHa),
-            VOWEL_SIGN_AA => Ok(Bhaiksuki::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Bhaiksuki::VowelSignI),
-            VOWEL_SIGN_II => Ok(Bhaiksuki::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Bhaiksuki::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Bhaiksuki::VowelSignUu),
-            VOWEL_SIGN_VOCALIC_R => Ok(Bhaiksuki::VowelSignVocalicR),
-            VOWEL_SIGN_VOCALIC_RR => Ok(Bhaiksuki::VowelSignVocalicRr),
-            VOWEL_SIGN_VOCALIC_L => Ok(Bhaiksuki::VowelSignVocalicL),
-            VOWEL_SIGN_E => Ok(Bhaiksuki::VowelSignE),
-            VOWEL_SIGN_AI => Ok(Bhaiksuki::VowelSignAi),
-            VOWEL_SIGN_O => Ok(Bhaiksuki::VowelSignO),
-            VOWEL_SIGN_AU => Ok(Bhaiksuki::VowelSignAu),
-            SIGN_CANDRABINDU => Ok(Bhaiksuki::SignCandrabindu),
-            SIGN_ANUSVARA => Ok(Bhaiksuki::SignAnusvara),
-            SIGN_VISARGA => Ok(Bhaiksuki::SignVisarga),
-            SIGN_VIRAMA => Ok(Bhaiksuki::SignVirama),
-            SIGN_AVAGRAHA => Ok(Bhaiksuki::SignAvagraha),
-            DANDA => Ok(Bhaiksuki::Danda),
-            DOUBLE_DANDA => Ok(Bhaiksuki::DoubleDanda),
-            WORD_SEPARATOR => Ok(Bhaiksuki::WordSeparator),
-            GAP_FILLER_DASH_1 => Ok(Bhaiksuki::GapFillerDash1),
-            GAP_FILLER_DASH_2 => Ok(Bhaiksuki::GapFillerDash2),
-            DIGIT_ZERO => Ok(Bhaiksuki::DigitZero),
-            DIGIT_ONE => Ok(Bhaiksuki::DigitOne),
-            DIGIT_TWO => Ok(Bhaiksuki::DigitTwo),
-            DIGIT_THREE => Ok(Bhaiksuki::DigitThree),
-            DIGIT_FOUR => Ok(Bhaiksuki::DigitFour),
-            DIGIT_FIVE => Ok(Bhaiksuki::DigitFive),
-            DIGIT_SIX => Ok(Bhaiksuki::DigitSix),
-            DIGIT_SEVEN => Ok(Bhaiksuki::DigitSeven),
-            DIGIT_EIGHT => Ok(Bhaiksuki::DigitEight),
-            DIGIT_NINE => Ok(Bhaiksuki::DigitNine),
-            NUMBER_ONE => Ok(Bhaiksuki::NumberOne),
-            NUMBER_TWO => Ok(Bhaiksuki::NumberTwo),
-            NUMBER_THREE => Ok(Bhaiksuki::NumberThree),
-            NUMBER_FOUR => Ok(Bhaiksuki::NumberFour),
-            NUMBER_FIVE => Ok(Bhaiksuki::NumberFive),
-            NUMBER_SIX => Ok(Bhaiksuki::NumberSix),
-            NUMBER_SEVEN => Ok(Bhaiksuki::NumberSeven),
-            NUMBER_EIGHT => Ok(Bhaiksuki::NumberEight),
-            NUMBER_NINE => Ok(Bhaiksuki::NumberNine),
-            NUMBER_TEN => Ok(Bhaiksuki::NumberTen),
-            NUMBER_TWENTY => Ok(Bhaiksuki::NumberTwenty),
-            NUMBER_THIRTY => Ok(Bhaiksuki::NumberThirty),
-            NUMBER_FORTY => Ok(Bhaiksuki::NumberForty),
-            NUMBER_FIFTY => Ok(Bhaiksuki::NumberFifty),
-            NUMBER_SIXTY => Ok(Bhaiksuki::NumberSixty),
-            NUMBER_SEVENTY => Ok(Bhaiksuki::NumberSeventy),
-            NUMBER_EIGHTY => Ok(Bhaiksuki::NumberEighty),
-            NUMBER_NINETY => Ok(Bhaiksuki::NumberNinety),
-            HUNDREDS_UNIT_MARK => Ok(Bhaiksuki::HundredsUnitMark),
+            '𑰀' => Ok(Bhaiksuki::LetterA),
+            '𑰁' => Ok(Bhaiksuki::LetterAa),
+            '𑰂' => Ok(Bhaiksuki::LetterI),
+            '𑰃' => Ok(Bhaiksuki::LetterIi),
+            '𑰄' => Ok(Bhaiksuki::LetterU),
+            '𑰅' => Ok(Bhaiksuki::LetterUu),
+            '𑰆' => Ok(Bhaiksuki::LetterVocalicR),
+            '𑰇' => Ok(Bhaiksuki::LetterVocalicRr),
+            '𑰈' => Ok(Bhaiksuki::LetterVocalicL),
+            '𑰊' => Ok(Bhaiksuki::LetterE),
+            '𑰋' => Ok(Bhaiksuki::LetterAi),
+            '𑰌' => Ok(Bhaiksuki::LetterO),
+            '𑰍' => Ok(Bhaiksuki::LetterAu),
+            '𑰎' => Ok(Bhaiksuki::LetterKa),
+            '𑰏' => Ok(Bhaiksuki::LetterKha),
+            '𑰐' => Ok(Bhaiksuki::LetterGa),
+            '𑰑' => Ok(Bhaiksuki::LetterGha),
+            '𑰒' => Ok(Bhaiksuki::LetterNga),
+            '𑰓' => Ok(Bhaiksuki::LetterCa),
+            '𑰔' => Ok(Bhaiksuki::LetterCha),
+            '𑰕' => Ok(Bhaiksuki::LetterJa),
+            '𑰖' => Ok(Bhaiksuki::LetterJha),
+            '𑰗' => Ok(Bhaiksuki::LetterNya),
+            '𑰘' => Ok(Bhaiksuki::LetterTta),
+            '𑰙' => Ok(Bhaiksuki::LetterTtha),
+            '𑰚' => Ok(Bhaiksuki::LetterDda),
+            '𑰛' => Ok(Bhaiksuki::LetterDdha),
+            '𑰜' => Ok(Bhaiksuki::LetterNna),
+            '𑰝' => Ok(Bhaiksuki::LetterTa),
+            '𑰞' => Ok(Bhaiksuki::LetterTha),
+            '𑰟' => Ok(Bhaiksuki::LetterDa),
+            '𑰠' => Ok(Bhaiksuki::LetterDha),
+            '𑰡' => Ok(Bhaiksuki::LetterNa),
+            '𑰢' => Ok(Bhaiksuki::LetterPa),
+            '𑰣' => Ok(Bhaiksuki::LetterPha),
+            '𑰤' => Ok(Bhaiksuki::LetterBa),
+            '𑰥' => Ok(Bhaiksuki::LetterBha),
+            '𑰦' => Ok(Bhaiksuki::LetterMa),
+            '𑰧' => Ok(Bhaiksuki::LetterYa),
+            '𑰨' => Ok(Bhaiksuki::LetterRa),
+            '𑰩' => Ok(Bhaiksuki::LetterLa),
+            '𑰪' => Ok(Bhaiksuki::LetterVa),
+            '𑰫' => Ok(Bhaiksuki::LetterSha),
+            '𑰬' => Ok(Bhaiksuki::LetterSsa),
+            '𑰭' => Ok(Bhaiksuki::LetterSa),
+            '𑰮' => Ok(Bhaiksuki::LetterHa),
+            '𑰯' => Ok(Bhaiksuki::VowelSignAa),
+            '𑰰' => Ok(Bhaiksuki::VowelSignI),
+            '𑰱' => Ok(Bhaiksuki::VowelSignIi),
+            '𑰲' => Ok(Bhaiksuki::VowelSignU),
+            '𑰳' => Ok(Bhaiksuki::VowelSignUu),
+            '𑰴' => Ok(Bhaiksuki::VowelSignVocalicR),
+            '𑰵' => Ok(Bhaiksuki::VowelSignVocalicRr),
+            '𑰶' => Ok(Bhaiksuki::VowelSignVocalicL),
+            '𑰸' => Ok(Bhaiksuki::VowelSignE),
+            '𑰹' => Ok(Bhaiksuki::VowelSignAi),
+            '𑰺' => Ok(Bhaiksuki::VowelSignO),
+            '𑰻' => Ok(Bhaiksuki::VowelSignAu),
+            '𑰼' => Ok(Bhaiksuki::SignCandrabindu),
+            '𑰽' => Ok(Bhaiksuki::SignAnusvara),
+            '𑰾' => Ok(Bhaiksuki::SignVisarga),
+            '𑰿' => Ok(Bhaiksuki::SignVirama),
+            '𑱀' => Ok(Bhaiksuki::SignAvagraha),
+            '𑱁' => Ok(Bhaiksuki::Danda),
+            '𑱂' => Ok(Bhaiksuki::DoubleDanda),
+            '𑱃' => Ok(Bhaiksuki::WordSeparator),
+            '𑱄' => Ok(Bhaiksuki::GapFillerDash1),
+            '𑱅' => Ok(Bhaiksuki::GapFillerDash2),
+            '𑱐' => Ok(Bhaiksuki::DigitZero),
+            '𑱑' => Ok(Bhaiksuki::DigitOne),
+            '𑱒' => Ok(Bhaiksuki::DigitTwo),
+            '𑱓' => Ok(Bhaiksuki::DigitThree),
+            '𑱔' => Ok(Bhaiksuki::DigitFour),
+            '𑱕' => Ok(Bhaiksuki::DigitFive),
+            '𑱖' => Ok(Bhaiksuki::DigitSix),
+            '𑱗' => Ok(Bhaiksuki::DigitSeven),
+            '𑱘' => Ok(Bhaiksuki::DigitEight),
+            '𑱙' => Ok(Bhaiksuki::DigitNine),
+            '𑱚' => Ok(Bhaiksuki::NumberOne),
+            '𑱛' => Ok(Bhaiksuki::NumberTwo),
+            '𑱜' => Ok(Bhaiksuki::NumberThree),
+            '𑱝' => Ok(Bhaiksuki::NumberFour),
+            '𑱞' => Ok(Bhaiksuki::NumberFive),
+            '𑱟' => Ok(Bhaiksuki::NumberSix),
+            '𑱠' => Ok(Bhaiksuki::NumberSeven),
+            '𑱡' => Ok(Bhaiksuki::NumberEight),
+            '𑱢' => Ok(Bhaiksuki::NumberNine),
+            '𑱣' => Ok(Bhaiksuki::NumberTen),
+            '𑱤' => Ok(Bhaiksuki::NumberTwenty),
+            '𑱥' => Ok(Bhaiksuki::NumberThirty),
+            '𑱦' => Ok(Bhaiksuki::NumberForty),
+            '𑱧' => Ok(Bhaiksuki::NumberFifty),
+            '𑱨' => Ok(Bhaiksuki::NumberSixty),
+            '𑱩' => Ok(Bhaiksuki::NumberSeventy),
+            '𑱪' => Ok(Bhaiksuki::NumberEighty),
+            '𑱫' => Ok(Bhaiksuki::NumberNinety),
+            '𑱬' => Ok(Bhaiksuki::HundredsUnitMark),
             _ => Err(()),
         }
     }

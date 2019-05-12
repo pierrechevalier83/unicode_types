@@ -1,100 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{a900}: '꤀'
-    pub const DIGIT_ZERO: char = '꤀';
-    /// \u{a901}: '꤁'
-    pub const DIGIT_ONE: char = '꤁';
-    /// \u{a902}: '꤂'
-    pub const DIGIT_TWO: char = '꤂';
-    /// \u{a903}: '꤃'
-    pub const DIGIT_THREE: char = '꤃';
-    /// \u{a904}: '꤄'
-    pub const DIGIT_FOUR: char = '꤄';
-    /// \u{a905}: '꤅'
-    pub const DIGIT_FIVE: char = '꤅';
-    /// \u{a906}: '꤆'
-    pub const DIGIT_SIX: char = '꤆';
-    /// \u{a907}: '꤇'
-    pub const DIGIT_SEVEN: char = '꤇';
-    /// \u{a908}: '꤈'
-    pub const DIGIT_EIGHT: char = '꤈';
-    /// \u{a909}: '꤉'
-    pub const DIGIT_NINE: char = '꤉';
-    /// \u{a90a}: 'ꤊ'
-    pub const LETTER_KA: char = 'ꤊ';
-    /// \u{a90b}: 'ꤋ'
-    pub const LETTER_KHA: char = 'ꤋ';
-    /// \u{a90c}: 'ꤌ'
-    pub const LETTER_GA: char = 'ꤌ';
-    /// \u{a90d}: 'ꤍ'
-    pub const LETTER_NGA: char = 'ꤍ';
-    /// \u{a90e}: 'ꤎ'
-    pub const LETTER_SA: char = 'ꤎ';
-    /// \u{a90f}: 'ꤏ'
-    pub const LETTER_SHA: char = 'ꤏ';
-    /// \u{a910}: 'ꤐ'
-    pub const LETTER_ZA: char = 'ꤐ';
-    /// \u{a911}: 'ꤑ'
-    pub const LETTER_NYA: char = 'ꤑ';
-    /// \u{a912}: 'ꤒ'
-    pub const LETTER_TA: char = 'ꤒ';
-    /// \u{a913}: 'ꤓ'
-    pub const LETTER_HTA: char = 'ꤓ';
-    /// \u{a914}: 'ꤔ'
-    pub const LETTER_NA: char = 'ꤔ';
-    /// \u{a915}: 'ꤕ'
-    pub const LETTER_PA: char = 'ꤕ';
-    /// \u{a916}: 'ꤖ'
-    pub const LETTER_PHA: char = 'ꤖ';
-    /// \u{a917}: 'ꤗ'
-    pub const LETTER_MA: char = 'ꤗ';
-    /// \u{a918}: 'ꤘ'
-    pub const LETTER_DA: char = 'ꤘ';
-    /// \u{a919}: 'ꤙ'
-    pub const LETTER_BA: char = 'ꤙ';
-    /// \u{a91a}: 'ꤚ'
-    pub const LETTER_RA: char = 'ꤚ';
-    /// \u{a91b}: 'ꤛ'
-    pub const LETTER_YA: char = 'ꤛ';
-    /// \u{a91c}: 'ꤜ'
-    pub const LETTER_LA: char = 'ꤜ';
-    /// \u{a91d}: 'ꤝ'
-    pub const LETTER_WA: char = 'ꤝ';
-    /// \u{a91e}: 'ꤞ'
-    pub const LETTER_THA: char = 'ꤞ';
-    /// \u{a91f}: 'ꤟ'
-    pub const LETTER_HA: char = 'ꤟ';
-    /// \u{a920}: 'ꤠ'
-    pub const LETTER_VA: char = 'ꤠ';
-    /// \u{a921}: 'ꤡ'
-    pub const LETTER_CA: char = 'ꤡ';
-    /// \u{a922}: 'ꤢ'
-    pub const LETTER_A: char = 'ꤢ';
-    /// \u{a923}: 'ꤣ'
-    pub const LETTER_OE: char = 'ꤣ';
-    /// \u{a924}: 'ꤤ'
-    pub const LETTER_I: char = 'ꤤ';
-    /// \u{a925}: 'ꤥ'
-    pub const LETTER_OO: char = 'ꤥ';
-    /// \u{a926}: 'ꤦ'
-    pub const VOWEL_UE: char = 'ꤦ';
-    /// \u{a927}: 'ꤧ'
-    pub const VOWEL_E: char = 'ꤧ';
-    /// \u{a928}: 'ꤨ'
-    pub const VOWEL_U: char = 'ꤨ';
-    /// \u{a929}: 'ꤩ'
-    pub const VOWEL_EE: char = 'ꤩ';
-    /// \u{a92a}: 'ꤪ'
-    pub const VOWEL_O: char = 'ꤪ';
-    /// \u{a92b}: '꤫'
-    pub const TONE_PLOPHU: char = '꤫';
-    /// \u{a92c}: '꤬'
-    pub const TONE_CALYA: char = '꤬';
-    /// \u{a92d}: '꤭'
-    pub const TONE_CALYA_PLOPHU: char = '꤭';
-    /// \u{a92e}: '꤮'
-    pub const SIGN_CWI: char = '꤮';
-}
 
 /// An enum to represent all characters in the KayahLi block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -197,55 +100,54 @@ pub enum KayahLi {
 
 impl Into<char> for KayahLi {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            KayahLi::DigitZero => DIGIT_ZERO,
-            KayahLi::DigitOne => DIGIT_ONE,
-            KayahLi::DigitTwo => DIGIT_TWO,
-            KayahLi::DigitThree => DIGIT_THREE,
-            KayahLi::DigitFour => DIGIT_FOUR,
-            KayahLi::DigitFive => DIGIT_FIVE,
-            KayahLi::DigitSix => DIGIT_SIX,
-            KayahLi::DigitSeven => DIGIT_SEVEN,
-            KayahLi::DigitEight => DIGIT_EIGHT,
-            KayahLi::DigitNine => DIGIT_NINE,
-            KayahLi::LetterKa => LETTER_KA,
-            KayahLi::LetterKha => LETTER_KHA,
-            KayahLi::LetterGa => LETTER_GA,
-            KayahLi::LetterNga => LETTER_NGA,
-            KayahLi::LetterSa => LETTER_SA,
-            KayahLi::LetterSha => LETTER_SHA,
-            KayahLi::LetterZa => LETTER_ZA,
-            KayahLi::LetterNya => LETTER_NYA,
-            KayahLi::LetterTa => LETTER_TA,
-            KayahLi::LetterHta => LETTER_HTA,
-            KayahLi::LetterNa => LETTER_NA,
-            KayahLi::LetterPa => LETTER_PA,
-            KayahLi::LetterPha => LETTER_PHA,
-            KayahLi::LetterMa => LETTER_MA,
-            KayahLi::LetterDa => LETTER_DA,
-            KayahLi::LetterBa => LETTER_BA,
-            KayahLi::LetterRa => LETTER_RA,
-            KayahLi::LetterYa => LETTER_YA,
-            KayahLi::LetterLa => LETTER_LA,
-            KayahLi::LetterWa => LETTER_WA,
-            KayahLi::LetterTha => LETTER_THA,
-            KayahLi::LetterHa => LETTER_HA,
-            KayahLi::LetterVa => LETTER_VA,
-            KayahLi::LetterCa => LETTER_CA,
-            KayahLi::LetterA => LETTER_A,
-            KayahLi::LetterOe => LETTER_OE,
-            KayahLi::LetterI => LETTER_I,
-            KayahLi::LetterOo => LETTER_OO,
-            KayahLi::VowelUe => VOWEL_UE,
-            KayahLi::VowelE => VOWEL_E,
-            KayahLi::VowelU => VOWEL_U,
-            KayahLi::VowelEe => VOWEL_EE,
-            KayahLi::VowelO => VOWEL_O,
-            KayahLi::TonePlophu => TONE_PLOPHU,
-            KayahLi::ToneCalya => TONE_CALYA,
-            KayahLi::ToneCalyaPlophu => TONE_CALYA_PLOPHU,
-            KayahLi::SignCwi => SIGN_CWI,
+            KayahLi::DigitZero => '꤀',
+            KayahLi::DigitOne => '꤁',
+            KayahLi::DigitTwo => '꤂',
+            KayahLi::DigitThree => '꤃',
+            KayahLi::DigitFour => '꤄',
+            KayahLi::DigitFive => '꤅',
+            KayahLi::DigitSix => '꤆',
+            KayahLi::DigitSeven => '꤇',
+            KayahLi::DigitEight => '꤈',
+            KayahLi::DigitNine => '꤉',
+            KayahLi::LetterKa => 'ꤊ',
+            KayahLi::LetterKha => 'ꤋ',
+            KayahLi::LetterGa => 'ꤌ',
+            KayahLi::LetterNga => 'ꤍ',
+            KayahLi::LetterSa => 'ꤎ',
+            KayahLi::LetterSha => 'ꤏ',
+            KayahLi::LetterZa => 'ꤐ',
+            KayahLi::LetterNya => 'ꤑ',
+            KayahLi::LetterTa => 'ꤒ',
+            KayahLi::LetterHta => 'ꤓ',
+            KayahLi::LetterNa => 'ꤔ',
+            KayahLi::LetterPa => 'ꤕ',
+            KayahLi::LetterPha => 'ꤖ',
+            KayahLi::LetterMa => 'ꤗ',
+            KayahLi::LetterDa => 'ꤘ',
+            KayahLi::LetterBa => 'ꤙ',
+            KayahLi::LetterRa => 'ꤚ',
+            KayahLi::LetterYa => 'ꤛ',
+            KayahLi::LetterLa => 'ꤜ',
+            KayahLi::LetterWa => 'ꤝ',
+            KayahLi::LetterTha => 'ꤞ',
+            KayahLi::LetterHa => 'ꤟ',
+            KayahLi::LetterVa => 'ꤠ',
+            KayahLi::LetterCa => 'ꤡ',
+            KayahLi::LetterA => 'ꤢ',
+            KayahLi::LetterOe => 'ꤣ',
+            KayahLi::LetterI => 'ꤤ',
+            KayahLi::LetterOo => 'ꤥ',
+            KayahLi::VowelUe => 'ꤦ',
+            KayahLi::VowelE => 'ꤧ',
+            KayahLi::VowelU => 'ꤨ',
+            KayahLi::VowelEe => 'ꤩ',
+            KayahLi::VowelO => 'ꤪ',
+            KayahLi::TonePlophu => '꤫',
+            KayahLi::ToneCalya => '꤬',
+            KayahLi::ToneCalyaPlophu => '꤭',
+            KayahLi::SignCwi => '꤮',
         }
     }
 }
@@ -253,55 +155,54 @@ impl Into<char> for KayahLi {
 impl std::convert::TryFrom<char> for KayahLi {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            DIGIT_ZERO => Ok(KayahLi::DigitZero),
-            DIGIT_ONE => Ok(KayahLi::DigitOne),
-            DIGIT_TWO => Ok(KayahLi::DigitTwo),
-            DIGIT_THREE => Ok(KayahLi::DigitThree),
-            DIGIT_FOUR => Ok(KayahLi::DigitFour),
-            DIGIT_FIVE => Ok(KayahLi::DigitFive),
-            DIGIT_SIX => Ok(KayahLi::DigitSix),
-            DIGIT_SEVEN => Ok(KayahLi::DigitSeven),
-            DIGIT_EIGHT => Ok(KayahLi::DigitEight),
-            DIGIT_NINE => Ok(KayahLi::DigitNine),
-            LETTER_KA => Ok(KayahLi::LetterKa),
-            LETTER_KHA => Ok(KayahLi::LetterKha),
-            LETTER_GA => Ok(KayahLi::LetterGa),
-            LETTER_NGA => Ok(KayahLi::LetterNga),
-            LETTER_SA => Ok(KayahLi::LetterSa),
-            LETTER_SHA => Ok(KayahLi::LetterSha),
-            LETTER_ZA => Ok(KayahLi::LetterZa),
-            LETTER_NYA => Ok(KayahLi::LetterNya),
-            LETTER_TA => Ok(KayahLi::LetterTa),
-            LETTER_HTA => Ok(KayahLi::LetterHta),
-            LETTER_NA => Ok(KayahLi::LetterNa),
-            LETTER_PA => Ok(KayahLi::LetterPa),
-            LETTER_PHA => Ok(KayahLi::LetterPha),
-            LETTER_MA => Ok(KayahLi::LetterMa),
-            LETTER_DA => Ok(KayahLi::LetterDa),
-            LETTER_BA => Ok(KayahLi::LetterBa),
-            LETTER_RA => Ok(KayahLi::LetterRa),
-            LETTER_YA => Ok(KayahLi::LetterYa),
-            LETTER_LA => Ok(KayahLi::LetterLa),
-            LETTER_WA => Ok(KayahLi::LetterWa),
-            LETTER_THA => Ok(KayahLi::LetterTha),
-            LETTER_HA => Ok(KayahLi::LetterHa),
-            LETTER_VA => Ok(KayahLi::LetterVa),
-            LETTER_CA => Ok(KayahLi::LetterCa),
-            LETTER_A => Ok(KayahLi::LetterA),
-            LETTER_OE => Ok(KayahLi::LetterOe),
-            LETTER_I => Ok(KayahLi::LetterI),
-            LETTER_OO => Ok(KayahLi::LetterOo),
-            VOWEL_UE => Ok(KayahLi::VowelUe),
-            VOWEL_E => Ok(KayahLi::VowelE),
-            VOWEL_U => Ok(KayahLi::VowelU),
-            VOWEL_EE => Ok(KayahLi::VowelEe),
-            VOWEL_O => Ok(KayahLi::VowelO),
-            TONE_PLOPHU => Ok(KayahLi::TonePlophu),
-            TONE_CALYA => Ok(KayahLi::ToneCalya),
-            TONE_CALYA_PLOPHU => Ok(KayahLi::ToneCalyaPlophu),
-            SIGN_CWI => Ok(KayahLi::SignCwi),
+            '꤀' => Ok(KayahLi::DigitZero),
+            '꤁' => Ok(KayahLi::DigitOne),
+            '꤂' => Ok(KayahLi::DigitTwo),
+            '꤃' => Ok(KayahLi::DigitThree),
+            '꤄' => Ok(KayahLi::DigitFour),
+            '꤅' => Ok(KayahLi::DigitFive),
+            '꤆' => Ok(KayahLi::DigitSix),
+            '꤇' => Ok(KayahLi::DigitSeven),
+            '꤈' => Ok(KayahLi::DigitEight),
+            '꤉' => Ok(KayahLi::DigitNine),
+            'ꤊ' => Ok(KayahLi::LetterKa),
+            'ꤋ' => Ok(KayahLi::LetterKha),
+            'ꤌ' => Ok(KayahLi::LetterGa),
+            'ꤍ' => Ok(KayahLi::LetterNga),
+            'ꤎ' => Ok(KayahLi::LetterSa),
+            'ꤏ' => Ok(KayahLi::LetterSha),
+            'ꤐ' => Ok(KayahLi::LetterZa),
+            'ꤑ' => Ok(KayahLi::LetterNya),
+            'ꤒ' => Ok(KayahLi::LetterTa),
+            'ꤓ' => Ok(KayahLi::LetterHta),
+            'ꤔ' => Ok(KayahLi::LetterNa),
+            'ꤕ' => Ok(KayahLi::LetterPa),
+            'ꤖ' => Ok(KayahLi::LetterPha),
+            'ꤗ' => Ok(KayahLi::LetterMa),
+            'ꤘ' => Ok(KayahLi::LetterDa),
+            'ꤙ' => Ok(KayahLi::LetterBa),
+            'ꤚ' => Ok(KayahLi::LetterRa),
+            'ꤛ' => Ok(KayahLi::LetterYa),
+            'ꤜ' => Ok(KayahLi::LetterLa),
+            'ꤝ' => Ok(KayahLi::LetterWa),
+            'ꤞ' => Ok(KayahLi::LetterTha),
+            'ꤟ' => Ok(KayahLi::LetterHa),
+            'ꤠ' => Ok(KayahLi::LetterVa),
+            'ꤡ' => Ok(KayahLi::LetterCa),
+            'ꤢ' => Ok(KayahLi::LetterA),
+            'ꤣ' => Ok(KayahLi::LetterOe),
+            'ꤤ' => Ok(KayahLi::LetterI),
+            'ꤥ' => Ok(KayahLi::LetterOo),
+            'ꤦ' => Ok(KayahLi::VowelUe),
+            'ꤧ' => Ok(KayahLi::VowelE),
+            'ꤨ' => Ok(KayahLi::VowelU),
+            'ꤩ' => Ok(KayahLi::VowelEe),
+            'ꤪ' => Ok(KayahLi::VowelO),
+            '꤫' => Ok(KayahLi::TonePlophu),
+            '꤬' => Ok(KayahLi::ToneCalya),
+            '꤭' => Ok(KayahLi::ToneCalyaPlophu),
+            '꤮' => Ok(KayahLi::SignCwi),
             _ => Err(()),
         }
     }

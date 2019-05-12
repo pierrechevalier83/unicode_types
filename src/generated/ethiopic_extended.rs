@@ -1,164 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2d80}: 'ⶀ'
-    pub const ETHIOPIC_SYLLABLE_LOA: char = 'ⶀ';
-    /// \u{2d81}: 'ⶁ'
-    pub const ETHIOPIC_SYLLABLE_MOA: char = 'ⶁ';
-    /// \u{2d82}: 'ⶂ'
-    pub const ETHIOPIC_SYLLABLE_ROA: char = 'ⶂ';
-    /// \u{2d83}: 'ⶃ'
-    pub const ETHIOPIC_SYLLABLE_SOA: char = 'ⶃ';
-    /// \u{2d84}: 'ⶄ'
-    pub const ETHIOPIC_SYLLABLE_SHOA: char = 'ⶄ';
-    /// \u{2d85}: 'ⶅ'
-    pub const ETHIOPIC_SYLLABLE_BOA: char = 'ⶅ';
-    /// \u{2d86}: 'ⶆ'
-    pub const ETHIOPIC_SYLLABLE_TOA: char = 'ⶆ';
-    /// \u{2d87}: 'ⶇ'
-    pub const ETHIOPIC_SYLLABLE_COA: char = 'ⶇ';
-    /// \u{2d88}: 'ⶈ'
-    pub const ETHIOPIC_SYLLABLE_NOA: char = 'ⶈ';
-    /// \u{2d89}: 'ⶉ'
-    pub const ETHIOPIC_SYLLABLE_NYOA: char = 'ⶉ';
-    /// \u{2d8a}: 'ⶊ'
-    pub const ETHIOPIC_SYLLABLE_GLOTTAL_OA: char = 'ⶊ';
-    /// \u{2d8b}: 'ⶋ'
-    pub const ETHIOPIC_SYLLABLE_ZOA: char = 'ⶋ';
-    /// \u{2d8c}: 'ⶌ'
-    pub const ETHIOPIC_SYLLABLE_DOA: char = 'ⶌ';
-    /// \u{2d8d}: 'ⶍ'
-    pub const ETHIOPIC_SYLLABLE_DDOA: char = 'ⶍ';
-    /// \u{2d8e}: 'ⶎ'
-    pub const ETHIOPIC_SYLLABLE_JOA: char = 'ⶎ';
-    /// \u{2d8f}: 'ⶏ'
-    pub const ETHIOPIC_SYLLABLE_THOA: char = 'ⶏ';
-    /// \u{2d90}: 'ⶐ'
-    pub const ETHIOPIC_SYLLABLE_CHOA: char = 'ⶐ';
-    /// \u{2d91}: 'ⶑ'
-    pub const ETHIOPIC_SYLLABLE_PHOA: char = 'ⶑ';
-    /// \u{2d92}: 'ⶒ'
-    pub const ETHIOPIC_SYLLABLE_POA: char = 'ⶒ';
-    /// \u{2d93}: 'ⶓ'
-    pub const ETHIOPIC_SYLLABLE_GGWA: char = 'ⶓ';
-    /// \u{2d94}: 'ⶔ'
-    pub const ETHIOPIC_SYLLABLE_GGWI: char = 'ⶔ';
-    /// \u{2d95}: 'ⶕ'
-    pub const ETHIOPIC_SYLLABLE_GGWEE: char = 'ⶕ';
-    /// \u{2d96}: 'ⶖ'
-    pub const ETHIOPIC_SYLLABLE_GGWE: char = 'ⶖ';
-    /// \u{2da0}: 'ⶠ'
-    pub const ETHIOPIC_SYLLABLE_SSA: char = 'ⶠ';
-    /// \u{2da1}: 'ⶡ'
-    pub const ETHIOPIC_SYLLABLE_SSU: char = 'ⶡ';
-    /// \u{2da2}: 'ⶢ'
-    pub const ETHIOPIC_SYLLABLE_SSI: char = 'ⶢ';
-    /// \u{2da3}: 'ⶣ'
-    pub const ETHIOPIC_SYLLABLE_SSAA: char = 'ⶣ';
-    /// \u{2da4}: 'ⶤ'
-    pub const ETHIOPIC_SYLLABLE_SSEE: char = 'ⶤ';
-    /// \u{2da5}: 'ⶥ'
-    pub const ETHIOPIC_SYLLABLE_SSE: char = 'ⶥ';
-    /// \u{2da6}: 'ⶦ'
-    pub const ETHIOPIC_SYLLABLE_SSO: char = 'ⶦ';
-    /// \u{2da8}: 'ⶨ'
-    pub const ETHIOPIC_SYLLABLE_CCA: char = 'ⶨ';
-    /// \u{2da9}: 'ⶩ'
-    pub const ETHIOPIC_SYLLABLE_CCU: char = 'ⶩ';
-    /// \u{2daa}: 'ⶪ'
-    pub const ETHIOPIC_SYLLABLE_CCI: char = 'ⶪ';
-    /// \u{2dab}: 'ⶫ'
-    pub const ETHIOPIC_SYLLABLE_CCAA: char = 'ⶫ';
-    /// \u{2dac}: 'ⶬ'
-    pub const ETHIOPIC_SYLLABLE_CCEE: char = 'ⶬ';
-    /// \u{2dad}: 'ⶭ'
-    pub const ETHIOPIC_SYLLABLE_CCE: char = 'ⶭ';
-    /// \u{2dae}: 'ⶮ'
-    pub const ETHIOPIC_SYLLABLE_CCO: char = 'ⶮ';
-    /// \u{2db0}: 'ⶰ'
-    pub const ETHIOPIC_SYLLABLE_ZZA: char = 'ⶰ';
-    /// \u{2db1}: 'ⶱ'
-    pub const ETHIOPIC_SYLLABLE_ZZU: char = 'ⶱ';
-    /// \u{2db2}: 'ⶲ'
-    pub const ETHIOPIC_SYLLABLE_ZZI: char = 'ⶲ';
-    /// \u{2db3}: 'ⶳ'
-    pub const ETHIOPIC_SYLLABLE_ZZAA: char = 'ⶳ';
-    /// \u{2db4}: 'ⶴ'
-    pub const ETHIOPIC_SYLLABLE_ZZEE: char = 'ⶴ';
-    /// \u{2db5}: 'ⶵ'
-    pub const ETHIOPIC_SYLLABLE_ZZE: char = 'ⶵ';
-    /// \u{2db6}: 'ⶶ'
-    pub const ETHIOPIC_SYLLABLE_ZZO: char = 'ⶶ';
-    /// \u{2db8}: 'ⶸ'
-    pub const ETHIOPIC_SYLLABLE_CCHA: char = 'ⶸ';
-    /// \u{2db9}: 'ⶹ'
-    pub const ETHIOPIC_SYLLABLE_CCHU: char = 'ⶹ';
-    /// \u{2dba}: 'ⶺ'
-    pub const ETHIOPIC_SYLLABLE_CCHI: char = 'ⶺ';
-    /// \u{2dbb}: 'ⶻ'
-    pub const ETHIOPIC_SYLLABLE_CCHAA: char = 'ⶻ';
-    /// \u{2dbc}: 'ⶼ'
-    pub const ETHIOPIC_SYLLABLE_CCHEE: char = 'ⶼ';
-    /// \u{2dbd}: 'ⶽ'
-    pub const ETHIOPIC_SYLLABLE_CCHE: char = 'ⶽ';
-    /// \u{2dbe}: 'ⶾ'
-    pub const ETHIOPIC_SYLLABLE_CCHO: char = 'ⶾ';
-    /// \u{2dc0}: 'ⷀ'
-    pub const ETHIOPIC_SYLLABLE_QYA: char = 'ⷀ';
-    /// \u{2dc1}: 'ⷁ'
-    pub const ETHIOPIC_SYLLABLE_QYU: char = 'ⷁ';
-    /// \u{2dc2}: 'ⷂ'
-    pub const ETHIOPIC_SYLLABLE_QYI: char = 'ⷂ';
-    /// \u{2dc3}: 'ⷃ'
-    pub const ETHIOPIC_SYLLABLE_QYAA: char = 'ⷃ';
-    /// \u{2dc4}: 'ⷄ'
-    pub const ETHIOPIC_SYLLABLE_QYEE: char = 'ⷄ';
-    /// \u{2dc5}: 'ⷅ'
-    pub const ETHIOPIC_SYLLABLE_QYE: char = 'ⷅ';
-    /// \u{2dc6}: 'ⷆ'
-    pub const ETHIOPIC_SYLLABLE_QYO: char = 'ⷆ';
-    /// \u{2dc8}: 'ⷈ'
-    pub const ETHIOPIC_SYLLABLE_KYA: char = 'ⷈ';
-    /// \u{2dc9}: 'ⷉ'
-    pub const ETHIOPIC_SYLLABLE_KYU: char = 'ⷉ';
-    /// \u{2dca}: 'ⷊ'
-    pub const ETHIOPIC_SYLLABLE_KYI: char = 'ⷊ';
-    /// \u{2dcb}: 'ⷋ'
-    pub const ETHIOPIC_SYLLABLE_KYAA: char = 'ⷋ';
-    /// \u{2dcc}: 'ⷌ'
-    pub const ETHIOPIC_SYLLABLE_KYEE: char = 'ⷌ';
-    /// \u{2dcd}: 'ⷍ'
-    pub const ETHIOPIC_SYLLABLE_KYE: char = 'ⷍ';
-    /// \u{2dce}: 'ⷎ'
-    pub const ETHIOPIC_SYLLABLE_KYO: char = 'ⷎ';
-    /// \u{2dd0}: 'ⷐ'
-    pub const ETHIOPIC_SYLLABLE_XYA: char = 'ⷐ';
-    /// \u{2dd1}: 'ⷑ'
-    pub const ETHIOPIC_SYLLABLE_XYU: char = 'ⷑ';
-    /// \u{2dd2}: 'ⷒ'
-    pub const ETHIOPIC_SYLLABLE_XYI: char = 'ⷒ';
-    /// \u{2dd3}: 'ⷓ'
-    pub const ETHIOPIC_SYLLABLE_XYAA: char = 'ⷓ';
-    /// \u{2dd4}: 'ⷔ'
-    pub const ETHIOPIC_SYLLABLE_XYEE: char = 'ⷔ';
-    /// \u{2dd5}: 'ⷕ'
-    pub const ETHIOPIC_SYLLABLE_XYE: char = 'ⷕ';
-    /// \u{2dd6}: 'ⷖ'
-    pub const ETHIOPIC_SYLLABLE_XYO: char = 'ⷖ';
-    /// \u{2dd8}: 'ⷘ'
-    pub const ETHIOPIC_SYLLABLE_GYA: char = 'ⷘ';
-    /// \u{2dd9}: 'ⷙ'
-    pub const ETHIOPIC_SYLLABLE_GYU: char = 'ⷙ';
-    /// \u{2dda}: 'ⷚ'
-    pub const ETHIOPIC_SYLLABLE_GYI: char = 'ⷚ';
-    /// \u{2ddb}: 'ⷛ'
-    pub const ETHIOPIC_SYLLABLE_GYAA: char = 'ⷛ';
-    /// \u{2ddc}: 'ⷜ'
-    pub const ETHIOPIC_SYLLABLE_GYEE: char = 'ⷜ';
-    /// \u{2ddd}: 'ⷝ'
-    pub const ETHIOPIC_SYLLABLE_GYE: char = 'ⷝ';
-    /// \u{2dde}: 'ⷞ'
-    pub const ETHIOPIC_SYLLABLE_GYO: char = 'ⷞ';
-}
 
 /// An enum to represent all characters in the EthiopicExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -325,87 +164,86 @@ pub enum EthiopicExtended {
 
 impl Into<char> for EthiopicExtended {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            EthiopicExtended::EthiopicSyllableLoa => ETHIOPIC_SYLLABLE_LOA,
-            EthiopicExtended::EthiopicSyllableMoa => ETHIOPIC_SYLLABLE_MOA,
-            EthiopicExtended::EthiopicSyllableRoa => ETHIOPIC_SYLLABLE_ROA,
-            EthiopicExtended::EthiopicSyllableSoa => ETHIOPIC_SYLLABLE_SOA,
-            EthiopicExtended::EthiopicSyllableShoa => ETHIOPIC_SYLLABLE_SHOA,
-            EthiopicExtended::EthiopicSyllableBoa => ETHIOPIC_SYLLABLE_BOA,
-            EthiopicExtended::EthiopicSyllableToa => ETHIOPIC_SYLLABLE_TOA,
-            EthiopicExtended::EthiopicSyllableCoa => ETHIOPIC_SYLLABLE_COA,
-            EthiopicExtended::EthiopicSyllableNoa => ETHIOPIC_SYLLABLE_NOA,
-            EthiopicExtended::EthiopicSyllableNyoa => ETHIOPIC_SYLLABLE_NYOA,
-            EthiopicExtended::EthiopicSyllableGlottalOa => ETHIOPIC_SYLLABLE_GLOTTAL_OA,
-            EthiopicExtended::EthiopicSyllableZoa => ETHIOPIC_SYLLABLE_ZOA,
-            EthiopicExtended::EthiopicSyllableDoa => ETHIOPIC_SYLLABLE_DOA,
-            EthiopicExtended::EthiopicSyllableDdoa => ETHIOPIC_SYLLABLE_DDOA,
-            EthiopicExtended::EthiopicSyllableJoa => ETHIOPIC_SYLLABLE_JOA,
-            EthiopicExtended::EthiopicSyllableThoa => ETHIOPIC_SYLLABLE_THOA,
-            EthiopicExtended::EthiopicSyllableChoa => ETHIOPIC_SYLLABLE_CHOA,
-            EthiopicExtended::EthiopicSyllablePhoa => ETHIOPIC_SYLLABLE_PHOA,
-            EthiopicExtended::EthiopicSyllablePoa => ETHIOPIC_SYLLABLE_POA,
-            EthiopicExtended::EthiopicSyllableGgwa => ETHIOPIC_SYLLABLE_GGWA,
-            EthiopicExtended::EthiopicSyllableGgwi => ETHIOPIC_SYLLABLE_GGWI,
-            EthiopicExtended::EthiopicSyllableGgwee => ETHIOPIC_SYLLABLE_GGWEE,
-            EthiopicExtended::EthiopicSyllableGgwe => ETHIOPIC_SYLLABLE_GGWE,
-            EthiopicExtended::EthiopicSyllableSsa => ETHIOPIC_SYLLABLE_SSA,
-            EthiopicExtended::EthiopicSyllableSsu => ETHIOPIC_SYLLABLE_SSU,
-            EthiopicExtended::EthiopicSyllableSsi => ETHIOPIC_SYLLABLE_SSI,
-            EthiopicExtended::EthiopicSyllableSsaa => ETHIOPIC_SYLLABLE_SSAA,
-            EthiopicExtended::EthiopicSyllableSsee => ETHIOPIC_SYLLABLE_SSEE,
-            EthiopicExtended::EthiopicSyllableSse => ETHIOPIC_SYLLABLE_SSE,
-            EthiopicExtended::EthiopicSyllableSso => ETHIOPIC_SYLLABLE_SSO,
-            EthiopicExtended::EthiopicSyllableCca => ETHIOPIC_SYLLABLE_CCA,
-            EthiopicExtended::EthiopicSyllableCcu => ETHIOPIC_SYLLABLE_CCU,
-            EthiopicExtended::EthiopicSyllableCci => ETHIOPIC_SYLLABLE_CCI,
-            EthiopicExtended::EthiopicSyllableCcaa => ETHIOPIC_SYLLABLE_CCAA,
-            EthiopicExtended::EthiopicSyllableCcee => ETHIOPIC_SYLLABLE_CCEE,
-            EthiopicExtended::EthiopicSyllableCce => ETHIOPIC_SYLLABLE_CCE,
-            EthiopicExtended::EthiopicSyllableCco => ETHIOPIC_SYLLABLE_CCO,
-            EthiopicExtended::EthiopicSyllableZza => ETHIOPIC_SYLLABLE_ZZA,
-            EthiopicExtended::EthiopicSyllableZzu => ETHIOPIC_SYLLABLE_ZZU,
-            EthiopicExtended::EthiopicSyllableZzi => ETHIOPIC_SYLLABLE_ZZI,
-            EthiopicExtended::EthiopicSyllableZzaa => ETHIOPIC_SYLLABLE_ZZAA,
-            EthiopicExtended::EthiopicSyllableZzee => ETHIOPIC_SYLLABLE_ZZEE,
-            EthiopicExtended::EthiopicSyllableZze => ETHIOPIC_SYLLABLE_ZZE,
-            EthiopicExtended::EthiopicSyllableZzo => ETHIOPIC_SYLLABLE_ZZO,
-            EthiopicExtended::EthiopicSyllableCcha => ETHIOPIC_SYLLABLE_CCHA,
-            EthiopicExtended::EthiopicSyllableCchu => ETHIOPIC_SYLLABLE_CCHU,
-            EthiopicExtended::EthiopicSyllableCchi => ETHIOPIC_SYLLABLE_CCHI,
-            EthiopicExtended::EthiopicSyllableCchaa => ETHIOPIC_SYLLABLE_CCHAA,
-            EthiopicExtended::EthiopicSyllableCchee => ETHIOPIC_SYLLABLE_CCHEE,
-            EthiopicExtended::EthiopicSyllableCche => ETHIOPIC_SYLLABLE_CCHE,
-            EthiopicExtended::EthiopicSyllableCcho => ETHIOPIC_SYLLABLE_CCHO,
-            EthiopicExtended::EthiopicSyllableQya => ETHIOPIC_SYLLABLE_QYA,
-            EthiopicExtended::EthiopicSyllableQyu => ETHIOPIC_SYLLABLE_QYU,
-            EthiopicExtended::EthiopicSyllableQyi => ETHIOPIC_SYLLABLE_QYI,
-            EthiopicExtended::EthiopicSyllableQyaa => ETHIOPIC_SYLLABLE_QYAA,
-            EthiopicExtended::EthiopicSyllableQyee => ETHIOPIC_SYLLABLE_QYEE,
-            EthiopicExtended::EthiopicSyllableQye => ETHIOPIC_SYLLABLE_QYE,
-            EthiopicExtended::EthiopicSyllableQyo => ETHIOPIC_SYLLABLE_QYO,
-            EthiopicExtended::EthiopicSyllableKya => ETHIOPIC_SYLLABLE_KYA,
-            EthiopicExtended::EthiopicSyllableKyu => ETHIOPIC_SYLLABLE_KYU,
-            EthiopicExtended::EthiopicSyllableKyi => ETHIOPIC_SYLLABLE_KYI,
-            EthiopicExtended::EthiopicSyllableKyaa => ETHIOPIC_SYLLABLE_KYAA,
-            EthiopicExtended::EthiopicSyllableKyee => ETHIOPIC_SYLLABLE_KYEE,
-            EthiopicExtended::EthiopicSyllableKye => ETHIOPIC_SYLLABLE_KYE,
-            EthiopicExtended::EthiopicSyllableKyo => ETHIOPIC_SYLLABLE_KYO,
-            EthiopicExtended::EthiopicSyllableXya => ETHIOPIC_SYLLABLE_XYA,
-            EthiopicExtended::EthiopicSyllableXyu => ETHIOPIC_SYLLABLE_XYU,
-            EthiopicExtended::EthiopicSyllableXyi => ETHIOPIC_SYLLABLE_XYI,
-            EthiopicExtended::EthiopicSyllableXyaa => ETHIOPIC_SYLLABLE_XYAA,
-            EthiopicExtended::EthiopicSyllableXyee => ETHIOPIC_SYLLABLE_XYEE,
-            EthiopicExtended::EthiopicSyllableXye => ETHIOPIC_SYLLABLE_XYE,
-            EthiopicExtended::EthiopicSyllableXyo => ETHIOPIC_SYLLABLE_XYO,
-            EthiopicExtended::EthiopicSyllableGya => ETHIOPIC_SYLLABLE_GYA,
-            EthiopicExtended::EthiopicSyllableGyu => ETHIOPIC_SYLLABLE_GYU,
-            EthiopicExtended::EthiopicSyllableGyi => ETHIOPIC_SYLLABLE_GYI,
-            EthiopicExtended::EthiopicSyllableGyaa => ETHIOPIC_SYLLABLE_GYAA,
-            EthiopicExtended::EthiopicSyllableGyee => ETHIOPIC_SYLLABLE_GYEE,
-            EthiopicExtended::EthiopicSyllableGye => ETHIOPIC_SYLLABLE_GYE,
-            EthiopicExtended::EthiopicSyllableGyo => ETHIOPIC_SYLLABLE_GYO,
+            EthiopicExtended::EthiopicSyllableLoa => 'ⶀ',
+            EthiopicExtended::EthiopicSyllableMoa => 'ⶁ',
+            EthiopicExtended::EthiopicSyllableRoa => 'ⶂ',
+            EthiopicExtended::EthiopicSyllableSoa => 'ⶃ',
+            EthiopicExtended::EthiopicSyllableShoa => 'ⶄ',
+            EthiopicExtended::EthiopicSyllableBoa => 'ⶅ',
+            EthiopicExtended::EthiopicSyllableToa => 'ⶆ',
+            EthiopicExtended::EthiopicSyllableCoa => 'ⶇ',
+            EthiopicExtended::EthiopicSyllableNoa => 'ⶈ',
+            EthiopicExtended::EthiopicSyllableNyoa => 'ⶉ',
+            EthiopicExtended::EthiopicSyllableGlottalOa => 'ⶊ',
+            EthiopicExtended::EthiopicSyllableZoa => 'ⶋ',
+            EthiopicExtended::EthiopicSyllableDoa => 'ⶌ',
+            EthiopicExtended::EthiopicSyllableDdoa => 'ⶍ',
+            EthiopicExtended::EthiopicSyllableJoa => 'ⶎ',
+            EthiopicExtended::EthiopicSyllableThoa => 'ⶏ',
+            EthiopicExtended::EthiopicSyllableChoa => 'ⶐ',
+            EthiopicExtended::EthiopicSyllablePhoa => 'ⶑ',
+            EthiopicExtended::EthiopicSyllablePoa => 'ⶒ',
+            EthiopicExtended::EthiopicSyllableGgwa => 'ⶓ',
+            EthiopicExtended::EthiopicSyllableGgwi => 'ⶔ',
+            EthiopicExtended::EthiopicSyllableGgwee => 'ⶕ',
+            EthiopicExtended::EthiopicSyllableGgwe => 'ⶖ',
+            EthiopicExtended::EthiopicSyllableSsa => 'ⶠ',
+            EthiopicExtended::EthiopicSyllableSsu => 'ⶡ',
+            EthiopicExtended::EthiopicSyllableSsi => 'ⶢ',
+            EthiopicExtended::EthiopicSyllableSsaa => 'ⶣ',
+            EthiopicExtended::EthiopicSyllableSsee => 'ⶤ',
+            EthiopicExtended::EthiopicSyllableSse => 'ⶥ',
+            EthiopicExtended::EthiopicSyllableSso => 'ⶦ',
+            EthiopicExtended::EthiopicSyllableCca => 'ⶨ',
+            EthiopicExtended::EthiopicSyllableCcu => 'ⶩ',
+            EthiopicExtended::EthiopicSyllableCci => 'ⶪ',
+            EthiopicExtended::EthiopicSyllableCcaa => 'ⶫ',
+            EthiopicExtended::EthiopicSyllableCcee => 'ⶬ',
+            EthiopicExtended::EthiopicSyllableCce => 'ⶭ',
+            EthiopicExtended::EthiopicSyllableCco => 'ⶮ',
+            EthiopicExtended::EthiopicSyllableZza => 'ⶰ',
+            EthiopicExtended::EthiopicSyllableZzu => 'ⶱ',
+            EthiopicExtended::EthiopicSyllableZzi => 'ⶲ',
+            EthiopicExtended::EthiopicSyllableZzaa => 'ⶳ',
+            EthiopicExtended::EthiopicSyllableZzee => 'ⶴ',
+            EthiopicExtended::EthiopicSyllableZze => 'ⶵ',
+            EthiopicExtended::EthiopicSyllableZzo => 'ⶶ',
+            EthiopicExtended::EthiopicSyllableCcha => 'ⶸ',
+            EthiopicExtended::EthiopicSyllableCchu => 'ⶹ',
+            EthiopicExtended::EthiopicSyllableCchi => 'ⶺ',
+            EthiopicExtended::EthiopicSyllableCchaa => 'ⶻ',
+            EthiopicExtended::EthiopicSyllableCchee => 'ⶼ',
+            EthiopicExtended::EthiopicSyllableCche => 'ⶽ',
+            EthiopicExtended::EthiopicSyllableCcho => 'ⶾ',
+            EthiopicExtended::EthiopicSyllableQya => 'ⷀ',
+            EthiopicExtended::EthiopicSyllableQyu => 'ⷁ',
+            EthiopicExtended::EthiopicSyllableQyi => 'ⷂ',
+            EthiopicExtended::EthiopicSyllableQyaa => 'ⷃ',
+            EthiopicExtended::EthiopicSyllableQyee => 'ⷄ',
+            EthiopicExtended::EthiopicSyllableQye => 'ⷅ',
+            EthiopicExtended::EthiopicSyllableQyo => 'ⷆ',
+            EthiopicExtended::EthiopicSyllableKya => 'ⷈ',
+            EthiopicExtended::EthiopicSyllableKyu => 'ⷉ',
+            EthiopicExtended::EthiopicSyllableKyi => 'ⷊ',
+            EthiopicExtended::EthiopicSyllableKyaa => 'ⷋ',
+            EthiopicExtended::EthiopicSyllableKyee => 'ⷌ',
+            EthiopicExtended::EthiopicSyllableKye => 'ⷍ',
+            EthiopicExtended::EthiopicSyllableKyo => 'ⷎ',
+            EthiopicExtended::EthiopicSyllableXya => 'ⷐ',
+            EthiopicExtended::EthiopicSyllableXyu => 'ⷑ',
+            EthiopicExtended::EthiopicSyllableXyi => 'ⷒ',
+            EthiopicExtended::EthiopicSyllableXyaa => 'ⷓ',
+            EthiopicExtended::EthiopicSyllableXyee => 'ⷔ',
+            EthiopicExtended::EthiopicSyllableXye => 'ⷕ',
+            EthiopicExtended::EthiopicSyllableXyo => 'ⷖ',
+            EthiopicExtended::EthiopicSyllableGya => 'ⷘ',
+            EthiopicExtended::EthiopicSyllableGyu => 'ⷙ',
+            EthiopicExtended::EthiopicSyllableGyi => 'ⷚ',
+            EthiopicExtended::EthiopicSyllableGyaa => 'ⷛ',
+            EthiopicExtended::EthiopicSyllableGyee => 'ⷜ',
+            EthiopicExtended::EthiopicSyllableGye => 'ⷝ',
+            EthiopicExtended::EthiopicSyllableGyo => 'ⷞ',
         }
     }
 }
@@ -413,87 +251,86 @@ impl Into<char> for EthiopicExtended {
 impl std::convert::TryFrom<char> for EthiopicExtended {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            ETHIOPIC_SYLLABLE_LOA => Ok(EthiopicExtended::EthiopicSyllableLoa),
-            ETHIOPIC_SYLLABLE_MOA => Ok(EthiopicExtended::EthiopicSyllableMoa),
-            ETHIOPIC_SYLLABLE_ROA => Ok(EthiopicExtended::EthiopicSyllableRoa),
-            ETHIOPIC_SYLLABLE_SOA => Ok(EthiopicExtended::EthiopicSyllableSoa),
-            ETHIOPIC_SYLLABLE_SHOA => Ok(EthiopicExtended::EthiopicSyllableShoa),
-            ETHIOPIC_SYLLABLE_BOA => Ok(EthiopicExtended::EthiopicSyllableBoa),
-            ETHIOPIC_SYLLABLE_TOA => Ok(EthiopicExtended::EthiopicSyllableToa),
-            ETHIOPIC_SYLLABLE_COA => Ok(EthiopicExtended::EthiopicSyllableCoa),
-            ETHIOPIC_SYLLABLE_NOA => Ok(EthiopicExtended::EthiopicSyllableNoa),
-            ETHIOPIC_SYLLABLE_NYOA => Ok(EthiopicExtended::EthiopicSyllableNyoa),
-            ETHIOPIC_SYLLABLE_GLOTTAL_OA => Ok(EthiopicExtended::EthiopicSyllableGlottalOa),
-            ETHIOPIC_SYLLABLE_ZOA => Ok(EthiopicExtended::EthiopicSyllableZoa),
-            ETHIOPIC_SYLLABLE_DOA => Ok(EthiopicExtended::EthiopicSyllableDoa),
-            ETHIOPIC_SYLLABLE_DDOA => Ok(EthiopicExtended::EthiopicSyllableDdoa),
-            ETHIOPIC_SYLLABLE_JOA => Ok(EthiopicExtended::EthiopicSyllableJoa),
-            ETHIOPIC_SYLLABLE_THOA => Ok(EthiopicExtended::EthiopicSyllableThoa),
-            ETHIOPIC_SYLLABLE_CHOA => Ok(EthiopicExtended::EthiopicSyllableChoa),
-            ETHIOPIC_SYLLABLE_PHOA => Ok(EthiopicExtended::EthiopicSyllablePhoa),
-            ETHIOPIC_SYLLABLE_POA => Ok(EthiopicExtended::EthiopicSyllablePoa),
-            ETHIOPIC_SYLLABLE_GGWA => Ok(EthiopicExtended::EthiopicSyllableGgwa),
-            ETHIOPIC_SYLLABLE_GGWI => Ok(EthiopicExtended::EthiopicSyllableGgwi),
-            ETHIOPIC_SYLLABLE_GGWEE => Ok(EthiopicExtended::EthiopicSyllableGgwee),
-            ETHIOPIC_SYLLABLE_GGWE => Ok(EthiopicExtended::EthiopicSyllableGgwe),
-            ETHIOPIC_SYLLABLE_SSA => Ok(EthiopicExtended::EthiopicSyllableSsa),
-            ETHIOPIC_SYLLABLE_SSU => Ok(EthiopicExtended::EthiopicSyllableSsu),
-            ETHIOPIC_SYLLABLE_SSI => Ok(EthiopicExtended::EthiopicSyllableSsi),
-            ETHIOPIC_SYLLABLE_SSAA => Ok(EthiopicExtended::EthiopicSyllableSsaa),
-            ETHIOPIC_SYLLABLE_SSEE => Ok(EthiopicExtended::EthiopicSyllableSsee),
-            ETHIOPIC_SYLLABLE_SSE => Ok(EthiopicExtended::EthiopicSyllableSse),
-            ETHIOPIC_SYLLABLE_SSO => Ok(EthiopicExtended::EthiopicSyllableSso),
-            ETHIOPIC_SYLLABLE_CCA => Ok(EthiopicExtended::EthiopicSyllableCca),
-            ETHIOPIC_SYLLABLE_CCU => Ok(EthiopicExtended::EthiopicSyllableCcu),
-            ETHIOPIC_SYLLABLE_CCI => Ok(EthiopicExtended::EthiopicSyllableCci),
-            ETHIOPIC_SYLLABLE_CCAA => Ok(EthiopicExtended::EthiopicSyllableCcaa),
-            ETHIOPIC_SYLLABLE_CCEE => Ok(EthiopicExtended::EthiopicSyllableCcee),
-            ETHIOPIC_SYLLABLE_CCE => Ok(EthiopicExtended::EthiopicSyllableCce),
-            ETHIOPIC_SYLLABLE_CCO => Ok(EthiopicExtended::EthiopicSyllableCco),
-            ETHIOPIC_SYLLABLE_ZZA => Ok(EthiopicExtended::EthiopicSyllableZza),
-            ETHIOPIC_SYLLABLE_ZZU => Ok(EthiopicExtended::EthiopicSyllableZzu),
-            ETHIOPIC_SYLLABLE_ZZI => Ok(EthiopicExtended::EthiopicSyllableZzi),
-            ETHIOPIC_SYLLABLE_ZZAA => Ok(EthiopicExtended::EthiopicSyllableZzaa),
-            ETHIOPIC_SYLLABLE_ZZEE => Ok(EthiopicExtended::EthiopicSyllableZzee),
-            ETHIOPIC_SYLLABLE_ZZE => Ok(EthiopicExtended::EthiopicSyllableZze),
-            ETHIOPIC_SYLLABLE_ZZO => Ok(EthiopicExtended::EthiopicSyllableZzo),
-            ETHIOPIC_SYLLABLE_CCHA => Ok(EthiopicExtended::EthiopicSyllableCcha),
-            ETHIOPIC_SYLLABLE_CCHU => Ok(EthiopicExtended::EthiopicSyllableCchu),
-            ETHIOPIC_SYLLABLE_CCHI => Ok(EthiopicExtended::EthiopicSyllableCchi),
-            ETHIOPIC_SYLLABLE_CCHAA => Ok(EthiopicExtended::EthiopicSyllableCchaa),
-            ETHIOPIC_SYLLABLE_CCHEE => Ok(EthiopicExtended::EthiopicSyllableCchee),
-            ETHIOPIC_SYLLABLE_CCHE => Ok(EthiopicExtended::EthiopicSyllableCche),
-            ETHIOPIC_SYLLABLE_CCHO => Ok(EthiopicExtended::EthiopicSyllableCcho),
-            ETHIOPIC_SYLLABLE_QYA => Ok(EthiopicExtended::EthiopicSyllableQya),
-            ETHIOPIC_SYLLABLE_QYU => Ok(EthiopicExtended::EthiopicSyllableQyu),
-            ETHIOPIC_SYLLABLE_QYI => Ok(EthiopicExtended::EthiopicSyllableQyi),
-            ETHIOPIC_SYLLABLE_QYAA => Ok(EthiopicExtended::EthiopicSyllableQyaa),
-            ETHIOPIC_SYLLABLE_QYEE => Ok(EthiopicExtended::EthiopicSyllableQyee),
-            ETHIOPIC_SYLLABLE_QYE => Ok(EthiopicExtended::EthiopicSyllableQye),
-            ETHIOPIC_SYLLABLE_QYO => Ok(EthiopicExtended::EthiopicSyllableQyo),
-            ETHIOPIC_SYLLABLE_KYA => Ok(EthiopicExtended::EthiopicSyllableKya),
-            ETHIOPIC_SYLLABLE_KYU => Ok(EthiopicExtended::EthiopicSyllableKyu),
-            ETHIOPIC_SYLLABLE_KYI => Ok(EthiopicExtended::EthiopicSyllableKyi),
-            ETHIOPIC_SYLLABLE_KYAA => Ok(EthiopicExtended::EthiopicSyllableKyaa),
-            ETHIOPIC_SYLLABLE_KYEE => Ok(EthiopicExtended::EthiopicSyllableKyee),
-            ETHIOPIC_SYLLABLE_KYE => Ok(EthiopicExtended::EthiopicSyllableKye),
-            ETHIOPIC_SYLLABLE_KYO => Ok(EthiopicExtended::EthiopicSyllableKyo),
-            ETHIOPIC_SYLLABLE_XYA => Ok(EthiopicExtended::EthiopicSyllableXya),
-            ETHIOPIC_SYLLABLE_XYU => Ok(EthiopicExtended::EthiopicSyllableXyu),
-            ETHIOPIC_SYLLABLE_XYI => Ok(EthiopicExtended::EthiopicSyllableXyi),
-            ETHIOPIC_SYLLABLE_XYAA => Ok(EthiopicExtended::EthiopicSyllableXyaa),
-            ETHIOPIC_SYLLABLE_XYEE => Ok(EthiopicExtended::EthiopicSyllableXyee),
-            ETHIOPIC_SYLLABLE_XYE => Ok(EthiopicExtended::EthiopicSyllableXye),
-            ETHIOPIC_SYLLABLE_XYO => Ok(EthiopicExtended::EthiopicSyllableXyo),
-            ETHIOPIC_SYLLABLE_GYA => Ok(EthiopicExtended::EthiopicSyllableGya),
-            ETHIOPIC_SYLLABLE_GYU => Ok(EthiopicExtended::EthiopicSyllableGyu),
-            ETHIOPIC_SYLLABLE_GYI => Ok(EthiopicExtended::EthiopicSyllableGyi),
-            ETHIOPIC_SYLLABLE_GYAA => Ok(EthiopicExtended::EthiopicSyllableGyaa),
-            ETHIOPIC_SYLLABLE_GYEE => Ok(EthiopicExtended::EthiopicSyllableGyee),
-            ETHIOPIC_SYLLABLE_GYE => Ok(EthiopicExtended::EthiopicSyllableGye),
-            ETHIOPIC_SYLLABLE_GYO => Ok(EthiopicExtended::EthiopicSyllableGyo),
+            'ⶀ' => Ok(EthiopicExtended::EthiopicSyllableLoa),
+            'ⶁ' => Ok(EthiopicExtended::EthiopicSyllableMoa),
+            'ⶂ' => Ok(EthiopicExtended::EthiopicSyllableRoa),
+            'ⶃ' => Ok(EthiopicExtended::EthiopicSyllableSoa),
+            'ⶄ' => Ok(EthiopicExtended::EthiopicSyllableShoa),
+            'ⶅ' => Ok(EthiopicExtended::EthiopicSyllableBoa),
+            'ⶆ' => Ok(EthiopicExtended::EthiopicSyllableToa),
+            'ⶇ' => Ok(EthiopicExtended::EthiopicSyllableCoa),
+            'ⶈ' => Ok(EthiopicExtended::EthiopicSyllableNoa),
+            'ⶉ' => Ok(EthiopicExtended::EthiopicSyllableNyoa),
+            'ⶊ' => Ok(EthiopicExtended::EthiopicSyllableGlottalOa),
+            'ⶋ' => Ok(EthiopicExtended::EthiopicSyllableZoa),
+            'ⶌ' => Ok(EthiopicExtended::EthiopicSyllableDoa),
+            'ⶍ' => Ok(EthiopicExtended::EthiopicSyllableDdoa),
+            'ⶎ' => Ok(EthiopicExtended::EthiopicSyllableJoa),
+            'ⶏ' => Ok(EthiopicExtended::EthiopicSyllableThoa),
+            'ⶐ' => Ok(EthiopicExtended::EthiopicSyllableChoa),
+            'ⶑ' => Ok(EthiopicExtended::EthiopicSyllablePhoa),
+            'ⶒ' => Ok(EthiopicExtended::EthiopicSyllablePoa),
+            'ⶓ' => Ok(EthiopicExtended::EthiopicSyllableGgwa),
+            'ⶔ' => Ok(EthiopicExtended::EthiopicSyllableGgwi),
+            'ⶕ' => Ok(EthiopicExtended::EthiopicSyllableGgwee),
+            'ⶖ' => Ok(EthiopicExtended::EthiopicSyllableGgwe),
+            'ⶠ' => Ok(EthiopicExtended::EthiopicSyllableSsa),
+            'ⶡ' => Ok(EthiopicExtended::EthiopicSyllableSsu),
+            'ⶢ' => Ok(EthiopicExtended::EthiopicSyllableSsi),
+            'ⶣ' => Ok(EthiopicExtended::EthiopicSyllableSsaa),
+            'ⶤ' => Ok(EthiopicExtended::EthiopicSyllableSsee),
+            'ⶥ' => Ok(EthiopicExtended::EthiopicSyllableSse),
+            'ⶦ' => Ok(EthiopicExtended::EthiopicSyllableSso),
+            'ⶨ' => Ok(EthiopicExtended::EthiopicSyllableCca),
+            'ⶩ' => Ok(EthiopicExtended::EthiopicSyllableCcu),
+            'ⶪ' => Ok(EthiopicExtended::EthiopicSyllableCci),
+            'ⶫ' => Ok(EthiopicExtended::EthiopicSyllableCcaa),
+            'ⶬ' => Ok(EthiopicExtended::EthiopicSyllableCcee),
+            'ⶭ' => Ok(EthiopicExtended::EthiopicSyllableCce),
+            'ⶮ' => Ok(EthiopicExtended::EthiopicSyllableCco),
+            'ⶰ' => Ok(EthiopicExtended::EthiopicSyllableZza),
+            'ⶱ' => Ok(EthiopicExtended::EthiopicSyllableZzu),
+            'ⶲ' => Ok(EthiopicExtended::EthiopicSyllableZzi),
+            'ⶳ' => Ok(EthiopicExtended::EthiopicSyllableZzaa),
+            'ⶴ' => Ok(EthiopicExtended::EthiopicSyllableZzee),
+            'ⶵ' => Ok(EthiopicExtended::EthiopicSyllableZze),
+            'ⶶ' => Ok(EthiopicExtended::EthiopicSyllableZzo),
+            'ⶸ' => Ok(EthiopicExtended::EthiopicSyllableCcha),
+            'ⶹ' => Ok(EthiopicExtended::EthiopicSyllableCchu),
+            'ⶺ' => Ok(EthiopicExtended::EthiopicSyllableCchi),
+            'ⶻ' => Ok(EthiopicExtended::EthiopicSyllableCchaa),
+            'ⶼ' => Ok(EthiopicExtended::EthiopicSyllableCchee),
+            'ⶽ' => Ok(EthiopicExtended::EthiopicSyllableCche),
+            'ⶾ' => Ok(EthiopicExtended::EthiopicSyllableCcho),
+            'ⷀ' => Ok(EthiopicExtended::EthiopicSyllableQya),
+            'ⷁ' => Ok(EthiopicExtended::EthiopicSyllableQyu),
+            'ⷂ' => Ok(EthiopicExtended::EthiopicSyllableQyi),
+            'ⷃ' => Ok(EthiopicExtended::EthiopicSyllableQyaa),
+            'ⷄ' => Ok(EthiopicExtended::EthiopicSyllableQyee),
+            'ⷅ' => Ok(EthiopicExtended::EthiopicSyllableQye),
+            'ⷆ' => Ok(EthiopicExtended::EthiopicSyllableQyo),
+            'ⷈ' => Ok(EthiopicExtended::EthiopicSyllableKya),
+            'ⷉ' => Ok(EthiopicExtended::EthiopicSyllableKyu),
+            'ⷊ' => Ok(EthiopicExtended::EthiopicSyllableKyi),
+            'ⷋ' => Ok(EthiopicExtended::EthiopicSyllableKyaa),
+            'ⷌ' => Ok(EthiopicExtended::EthiopicSyllableKyee),
+            'ⷍ' => Ok(EthiopicExtended::EthiopicSyllableKye),
+            'ⷎ' => Ok(EthiopicExtended::EthiopicSyllableKyo),
+            'ⷐ' => Ok(EthiopicExtended::EthiopicSyllableXya),
+            'ⷑ' => Ok(EthiopicExtended::EthiopicSyllableXyu),
+            'ⷒ' => Ok(EthiopicExtended::EthiopicSyllableXyi),
+            'ⷓ' => Ok(EthiopicExtended::EthiopicSyllableXyaa),
+            'ⷔ' => Ok(EthiopicExtended::EthiopicSyllableXyee),
+            'ⷕ' => Ok(EthiopicExtended::EthiopicSyllableXye),
+            'ⷖ' => Ok(EthiopicExtended::EthiopicSyllableXyo),
+            'ⷘ' => Ok(EthiopicExtended::EthiopicSyllableGya),
+            'ⷙ' => Ok(EthiopicExtended::EthiopicSyllableGyu),
+            'ⷚ' => Ok(EthiopicExtended::EthiopicSyllableGyi),
+            'ⷛ' => Ok(EthiopicExtended::EthiopicSyllableGyaa),
+            'ⷜ' => Ok(EthiopicExtended::EthiopicSyllableGyee),
+            'ⷝ' => Ok(EthiopicExtended::EthiopicSyllableGye),
+            'ⷞ' => Ok(EthiopicExtended::EthiopicSyllableGyo),
             _ => Err(()),
         }
     }

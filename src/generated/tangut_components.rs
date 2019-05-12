@@ -1,1516 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{18800}: '𘠀'
-    pub const TANGUT_COMPONENT_DASH_001: char = '𘠀';
-    /// \u{18801}: '𘠁'
-    pub const TANGUT_COMPONENT_DASH_002: char = '𘠁';
-    /// \u{18802}: '𘠂'
-    pub const TANGUT_COMPONENT_DASH_003: char = '𘠂';
-    /// \u{18803}: '𘠃'
-    pub const TANGUT_COMPONENT_DASH_004: char = '𘠃';
-    /// \u{18804}: '𘠄'
-    pub const TANGUT_COMPONENT_DASH_005: char = '𘠄';
-    /// \u{18805}: '𘠅'
-    pub const TANGUT_COMPONENT_DASH_006: char = '𘠅';
-    /// \u{18806}: '𘠆'
-    pub const TANGUT_COMPONENT_DASH_007: char = '𘠆';
-    /// \u{18807}: '𘠇'
-    pub const TANGUT_COMPONENT_DASH_008: char = '𘠇';
-    /// \u{18808}: '𘠈'
-    pub const TANGUT_COMPONENT_DASH_009: char = '𘠈';
-    /// \u{18809}: '𘠉'
-    pub const TANGUT_COMPONENT_DASH_010: char = '𘠉';
-    /// \u{1880a}: '𘠊'
-    pub const TANGUT_COMPONENT_DASH_011: char = '𘠊';
-    /// \u{1880b}: '𘠋'
-    pub const TANGUT_COMPONENT_DASH_012: char = '𘠋';
-    /// \u{1880c}: '𘠌'
-    pub const TANGUT_COMPONENT_DASH_013: char = '𘠌';
-    /// \u{1880d}: '𘠍'
-    pub const TANGUT_COMPONENT_DASH_014: char = '𘠍';
-    /// \u{1880e}: '𘠎'
-    pub const TANGUT_COMPONENT_DASH_015: char = '𘠎';
-    /// \u{1880f}: '𘠏'
-    pub const TANGUT_COMPONENT_DASH_016: char = '𘠏';
-    /// \u{18810}: '𘠐'
-    pub const TANGUT_COMPONENT_DASH_017: char = '𘠐';
-    /// \u{18811}: '𘠑'
-    pub const TANGUT_COMPONENT_DASH_018: char = '𘠑';
-    /// \u{18812}: '𘠒'
-    pub const TANGUT_COMPONENT_DASH_019: char = '𘠒';
-    /// \u{18813}: '𘠓'
-    pub const TANGUT_COMPONENT_DASH_020: char = '𘠓';
-    /// \u{18814}: '𘠔'
-    pub const TANGUT_COMPONENT_DASH_021: char = '𘠔';
-    /// \u{18815}: '𘠕'
-    pub const TANGUT_COMPONENT_DASH_022: char = '𘠕';
-    /// \u{18816}: '𘠖'
-    pub const TANGUT_COMPONENT_DASH_023: char = '𘠖';
-    /// \u{18817}: '𘠗'
-    pub const TANGUT_COMPONENT_DASH_024: char = '𘠗';
-    /// \u{18818}: '𘠘'
-    pub const TANGUT_COMPONENT_DASH_025: char = '𘠘';
-    /// \u{18819}: '𘠙'
-    pub const TANGUT_COMPONENT_DASH_026: char = '𘠙';
-    /// \u{1881a}: '𘠚'
-    pub const TANGUT_COMPONENT_DASH_027: char = '𘠚';
-    /// \u{1881b}: '𘠛'
-    pub const TANGUT_COMPONENT_DASH_028: char = '𘠛';
-    /// \u{1881c}: '𘠜'
-    pub const TANGUT_COMPONENT_DASH_029: char = '𘠜';
-    /// \u{1881d}: '𘠝'
-    pub const TANGUT_COMPONENT_DASH_030: char = '𘠝';
-    /// \u{1881e}: '𘠞'
-    pub const TANGUT_COMPONENT_DASH_031: char = '𘠞';
-    /// \u{1881f}: '𘠟'
-    pub const TANGUT_COMPONENT_DASH_032: char = '𘠟';
-    /// \u{18820}: '𘠠'
-    pub const TANGUT_COMPONENT_DASH_033: char = '𘠠';
-    /// \u{18821}: '𘠡'
-    pub const TANGUT_COMPONENT_DASH_034: char = '𘠡';
-    /// \u{18822}: '𘠢'
-    pub const TANGUT_COMPONENT_DASH_035: char = '𘠢';
-    /// \u{18823}: '𘠣'
-    pub const TANGUT_COMPONENT_DASH_036: char = '𘠣';
-    /// \u{18824}: '𘠤'
-    pub const TANGUT_COMPONENT_DASH_037: char = '𘠤';
-    /// \u{18825}: '𘠥'
-    pub const TANGUT_COMPONENT_DASH_038: char = '𘠥';
-    /// \u{18826}: '𘠦'
-    pub const TANGUT_COMPONENT_DASH_039: char = '𘠦';
-    /// \u{18827}: '𘠧'
-    pub const TANGUT_COMPONENT_DASH_040: char = '𘠧';
-    /// \u{18828}: '𘠨'
-    pub const TANGUT_COMPONENT_DASH_041: char = '𘠨';
-    /// \u{18829}: '𘠩'
-    pub const TANGUT_COMPONENT_DASH_042: char = '𘠩';
-    /// \u{1882a}: '𘠪'
-    pub const TANGUT_COMPONENT_DASH_043: char = '𘠪';
-    /// \u{1882b}: '𘠫'
-    pub const TANGUT_COMPONENT_DASH_044: char = '𘠫';
-    /// \u{1882c}: '𘠬'
-    pub const TANGUT_COMPONENT_DASH_045: char = '𘠬';
-    /// \u{1882d}: '𘠭'
-    pub const TANGUT_COMPONENT_DASH_046: char = '𘠭';
-    /// \u{1882e}: '𘠮'
-    pub const TANGUT_COMPONENT_DASH_047: char = '𘠮';
-    /// \u{1882f}: '𘠯'
-    pub const TANGUT_COMPONENT_DASH_048: char = '𘠯';
-    /// \u{18830}: '𘠰'
-    pub const TANGUT_COMPONENT_DASH_049: char = '𘠰';
-    /// \u{18831}: '𘠱'
-    pub const TANGUT_COMPONENT_DASH_050: char = '𘠱';
-    /// \u{18832}: '𘠲'
-    pub const TANGUT_COMPONENT_DASH_051: char = '𘠲';
-    /// \u{18833}: '𘠳'
-    pub const TANGUT_COMPONENT_DASH_052: char = '𘠳';
-    /// \u{18834}: '𘠴'
-    pub const TANGUT_COMPONENT_DASH_053: char = '𘠴';
-    /// \u{18835}: '𘠵'
-    pub const TANGUT_COMPONENT_DASH_054: char = '𘠵';
-    /// \u{18836}: '𘠶'
-    pub const TANGUT_COMPONENT_DASH_055: char = '𘠶';
-    /// \u{18837}: '𘠷'
-    pub const TANGUT_COMPONENT_DASH_056: char = '𘠷';
-    /// \u{18838}: '𘠸'
-    pub const TANGUT_COMPONENT_DASH_057: char = '𘠸';
-    /// \u{18839}: '𘠹'
-    pub const TANGUT_COMPONENT_DASH_058: char = '𘠹';
-    /// \u{1883a}: '𘠺'
-    pub const TANGUT_COMPONENT_DASH_059: char = '𘠺';
-    /// \u{1883b}: '𘠻'
-    pub const TANGUT_COMPONENT_DASH_060: char = '𘠻';
-    /// \u{1883c}: '𘠼'
-    pub const TANGUT_COMPONENT_DASH_061: char = '𘠼';
-    /// \u{1883d}: '𘠽'
-    pub const TANGUT_COMPONENT_DASH_062: char = '𘠽';
-    /// \u{1883e}: '𘠾'
-    pub const TANGUT_COMPONENT_DASH_063: char = '𘠾';
-    /// \u{1883f}: '𘠿'
-    pub const TANGUT_COMPONENT_DASH_064: char = '𘠿';
-    /// \u{18840}: '𘡀'
-    pub const TANGUT_COMPONENT_DASH_065: char = '𘡀';
-    /// \u{18841}: '𘡁'
-    pub const TANGUT_COMPONENT_DASH_066: char = '𘡁';
-    /// \u{18842}: '𘡂'
-    pub const TANGUT_COMPONENT_DASH_067: char = '𘡂';
-    /// \u{18843}: '𘡃'
-    pub const TANGUT_COMPONENT_DASH_068: char = '𘡃';
-    /// \u{18844}: '𘡄'
-    pub const TANGUT_COMPONENT_DASH_069: char = '𘡄';
-    /// \u{18845}: '𘡅'
-    pub const TANGUT_COMPONENT_DASH_070: char = '𘡅';
-    /// \u{18846}: '𘡆'
-    pub const TANGUT_COMPONENT_DASH_071: char = '𘡆';
-    /// \u{18847}: '𘡇'
-    pub const TANGUT_COMPONENT_DASH_072: char = '𘡇';
-    /// \u{18848}: '𘡈'
-    pub const TANGUT_COMPONENT_DASH_073: char = '𘡈';
-    /// \u{18849}: '𘡉'
-    pub const TANGUT_COMPONENT_DASH_074: char = '𘡉';
-    /// \u{1884a}: '𘡊'
-    pub const TANGUT_COMPONENT_DASH_075: char = '𘡊';
-    /// \u{1884b}: '𘡋'
-    pub const TANGUT_COMPONENT_DASH_076: char = '𘡋';
-    /// \u{1884c}: '𘡌'
-    pub const TANGUT_COMPONENT_DASH_077: char = '𘡌';
-    /// \u{1884d}: '𘡍'
-    pub const TANGUT_COMPONENT_DASH_078: char = '𘡍';
-    /// \u{1884e}: '𘡎'
-    pub const TANGUT_COMPONENT_DASH_079: char = '𘡎';
-    /// \u{1884f}: '𘡏'
-    pub const TANGUT_COMPONENT_DASH_080: char = '𘡏';
-    /// \u{18850}: '𘡐'
-    pub const TANGUT_COMPONENT_DASH_081: char = '𘡐';
-    /// \u{18851}: '𘡑'
-    pub const TANGUT_COMPONENT_DASH_082: char = '𘡑';
-    /// \u{18852}: '𘡒'
-    pub const TANGUT_COMPONENT_DASH_083: char = '𘡒';
-    /// \u{18853}: '𘡓'
-    pub const TANGUT_COMPONENT_DASH_084: char = '𘡓';
-    /// \u{18854}: '𘡔'
-    pub const TANGUT_COMPONENT_DASH_085: char = '𘡔';
-    /// \u{18855}: '𘡕'
-    pub const TANGUT_COMPONENT_DASH_086: char = '𘡕';
-    /// \u{18856}: '𘡖'
-    pub const TANGUT_COMPONENT_DASH_087: char = '𘡖';
-    /// \u{18857}: '𘡗'
-    pub const TANGUT_COMPONENT_DASH_088: char = '𘡗';
-    /// \u{18858}: '𘡘'
-    pub const TANGUT_COMPONENT_DASH_089: char = '𘡘';
-    /// \u{18859}: '𘡙'
-    pub const TANGUT_COMPONENT_DASH_090: char = '𘡙';
-    /// \u{1885a}: '𘡚'
-    pub const TANGUT_COMPONENT_DASH_091: char = '𘡚';
-    /// \u{1885b}: '𘡛'
-    pub const TANGUT_COMPONENT_DASH_092: char = '𘡛';
-    /// \u{1885c}: '𘡜'
-    pub const TANGUT_COMPONENT_DASH_093: char = '𘡜';
-    /// \u{1885d}: '𘡝'
-    pub const TANGUT_COMPONENT_DASH_094: char = '𘡝';
-    /// \u{1885e}: '𘡞'
-    pub const TANGUT_COMPONENT_DASH_095: char = '𘡞';
-    /// \u{1885f}: '𘡟'
-    pub const TANGUT_COMPONENT_DASH_096: char = '𘡟';
-    /// \u{18860}: '𘡠'
-    pub const TANGUT_COMPONENT_DASH_097: char = '𘡠';
-    /// \u{18861}: '𘡡'
-    pub const TANGUT_COMPONENT_DASH_098: char = '𘡡';
-    /// \u{18862}: '𘡢'
-    pub const TANGUT_COMPONENT_DASH_099: char = '𘡢';
-    /// \u{18863}: '𘡣'
-    pub const TANGUT_COMPONENT_DASH_100: char = '𘡣';
-    /// \u{18864}: '𘡤'
-    pub const TANGUT_COMPONENT_DASH_101: char = '𘡤';
-    /// \u{18865}: '𘡥'
-    pub const TANGUT_COMPONENT_DASH_102: char = '𘡥';
-    /// \u{18866}: '𘡦'
-    pub const TANGUT_COMPONENT_DASH_103: char = '𘡦';
-    /// \u{18867}: '𘡧'
-    pub const TANGUT_COMPONENT_DASH_104: char = '𘡧';
-    /// \u{18868}: '𘡨'
-    pub const TANGUT_COMPONENT_DASH_105: char = '𘡨';
-    /// \u{18869}: '𘡩'
-    pub const TANGUT_COMPONENT_DASH_106: char = '𘡩';
-    /// \u{1886a}: '𘡪'
-    pub const TANGUT_COMPONENT_DASH_107: char = '𘡪';
-    /// \u{1886b}: '𘡫'
-    pub const TANGUT_COMPONENT_DASH_108: char = '𘡫';
-    /// \u{1886c}: '𘡬'
-    pub const TANGUT_COMPONENT_DASH_109: char = '𘡬';
-    /// \u{1886d}: '𘡭'
-    pub const TANGUT_COMPONENT_DASH_110: char = '𘡭';
-    /// \u{1886e}: '𘡮'
-    pub const TANGUT_COMPONENT_DASH_111: char = '𘡮';
-    /// \u{1886f}: '𘡯'
-    pub const TANGUT_COMPONENT_DASH_112: char = '𘡯';
-    /// \u{18870}: '𘡰'
-    pub const TANGUT_COMPONENT_DASH_113: char = '𘡰';
-    /// \u{18871}: '𘡱'
-    pub const TANGUT_COMPONENT_DASH_114: char = '𘡱';
-    /// \u{18872}: '𘡲'
-    pub const TANGUT_COMPONENT_DASH_115: char = '𘡲';
-    /// \u{18873}: '𘡳'
-    pub const TANGUT_COMPONENT_DASH_116: char = '𘡳';
-    /// \u{18874}: '𘡴'
-    pub const TANGUT_COMPONENT_DASH_117: char = '𘡴';
-    /// \u{18875}: '𘡵'
-    pub const TANGUT_COMPONENT_DASH_118: char = '𘡵';
-    /// \u{18876}: '𘡶'
-    pub const TANGUT_COMPONENT_DASH_119: char = '𘡶';
-    /// \u{18877}: '𘡷'
-    pub const TANGUT_COMPONENT_DASH_120: char = '𘡷';
-    /// \u{18878}: '𘡸'
-    pub const TANGUT_COMPONENT_DASH_121: char = '𘡸';
-    /// \u{18879}: '𘡹'
-    pub const TANGUT_COMPONENT_DASH_122: char = '𘡹';
-    /// \u{1887a}: '𘡺'
-    pub const TANGUT_COMPONENT_DASH_123: char = '𘡺';
-    /// \u{1887b}: '𘡻'
-    pub const TANGUT_COMPONENT_DASH_124: char = '𘡻';
-    /// \u{1887c}: '𘡼'
-    pub const TANGUT_COMPONENT_DASH_125: char = '𘡼';
-    /// \u{1887d}: '𘡽'
-    pub const TANGUT_COMPONENT_DASH_126: char = '𘡽';
-    /// \u{1887e}: '𘡾'
-    pub const TANGUT_COMPONENT_DASH_127: char = '𘡾';
-    /// \u{1887f}: '𘡿'
-    pub const TANGUT_COMPONENT_DASH_128: char = '𘡿';
-    /// \u{18880}: '𘢀'
-    pub const TANGUT_COMPONENT_DASH_129: char = '𘢀';
-    /// \u{18881}: '𘢁'
-    pub const TANGUT_COMPONENT_DASH_130: char = '𘢁';
-    /// \u{18882}: '𘢂'
-    pub const TANGUT_COMPONENT_DASH_131: char = '𘢂';
-    /// \u{18883}: '𘢃'
-    pub const TANGUT_COMPONENT_DASH_132: char = '𘢃';
-    /// \u{18884}: '𘢄'
-    pub const TANGUT_COMPONENT_DASH_133: char = '𘢄';
-    /// \u{18885}: '𘢅'
-    pub const TANGUT_COMPONENT_DASH_134: char = '𘢅';
-    /// \u{18886}: '𘢆'
-    pub const TANGUT_COMPONENT_DASH_135: char = '𘢆';
-    /// \u{18887}: '𘢇'
-    pub const TANGUT_COMPONENT_DASH_136: char = '𘢇';
-    /// \u{18888}: '𘢈'
-    pub const TANGUT_COMPONENT_DASH_137: char = '𘢈';
-    /// \u{18889}: '𘢉'
-    pub const TANGUT_COMPONENT_DASH_138: char = '𘢉';
-    /// \u{1888a}: '𘢊'
-    pub const TANGUT_COMPONENT_DASH_139: char = '𘢊';
-    /// \u{1888b}: '𘢋'
-    pub const TANGUT_COMPONENT_DASH_140: char = '𘢋';
-    /// \u{1888c}: '𘢌'
-    pub const TANGUT_COMPONENT_DASH_141: char = '𘢌';
-    /// \u{1888d}: '𘢍'
-    pub const TANGUT_COMPONENT_DASH_142: char = '𘢍';
-    /// \u{1888e}: '𘢎'
-    pub const TANGUT_COMPONENT_DASH_143: char = '𘢎';
-    /// \u{1888f}: '𘢏'
-    pub const TANGUT_COMPONENT_DASH_144: char = '𘢏';
-    /// \u{18890}: '𘢐'
-    pub const TANGUT_COMPONENT_DASH_145: char = '𘢐';
-    /// \u{18891}: '𘢑'
-    pub const TANGUT_COMPONENT_DASH_146: char = '𘢑';
-    /// \u{18892}: '𘢒'
-    pub const TANGUT_COMPONENT_DASH_147: char = '𘢒';
-    /// \u{18893}: '𘢓'
-    pub const TANGUT_COMPONENT_DASH_148: char = '𘢓';
-    /// \u{18894}: '𘢔'
-    pub const TANGUT_COMPONENT_DASH_149: char = '𘢔';
-    /// \u{18895}: '𘢕'
-    pub const TANGUT_COMPONENT_DASH_150: char = '𘢕';
-    /// \u{18896}: '𘢖'
-    pub const TANGUT_COMPONENT_DASH_151: char = '𘢖';
-    /// \u{18897}: '𘢗'
-    pub const TANGUT_COMPONENT_DASH_152: char = '𘢗';
-    /// \u{18898}: '𘢘'
-    pub const TANGUT_COMPONENT_DASH_153: char = '𘢘';
-    /// \u{18899}: '𘢙'
-    pub const TANGUT_COMPONENT_DASH_154: char = '𘢙';
-    /// \u{1889a}: '𘢚'
-    pub const TANGUT_COMPONENT_DASH_155: char = '𘢚';
-    /// \u{1889b}: '𘢛'
-    pub const TANGUT_COMPONENT_DASH_156: char = '𘢛';
-    /// \u{1889c}: '𘢜'
-    pub const TANGUT_COMPONENT_DASH_157: char = '𘢜';
-    /// \u{1889d}: '𘢝'
-    pub const TANGUT_COMPONENT_DASH_158: char = '𘢝';
-    /// \u{1889e}: '𘢞'
-    pub const TANGUT_COMPONENT_DASH_159: char = '𘢞';
-    /// \u{1889f}: '𘢟'
-    pub const TANGUT_COMPONENT_DASH_160: char = '𘢟';
-    /// \u{188a0}: '𘢠'
-    pub const TANGUT_COMPONENT_DASH_161: char = '𘢠';
-    /// \u{188a1}: '𘢡'
-    pub const TANGUT_COMPONENT_DASH_162: char = '𘢡';
-    /// \u{188a2}: '𘢢'
-    pub const TANGUT_COMPONENT_DASH_163: char = '𘢢';
-    /// \u{188a3}: '𘢣'
-    pub const TANGUT_COMPONENT_DASH_164: char = '𘢣';
-    /// \u{188a4}: '𘢤'
-    pub const TANGUT_COMPONENT_DASH_165: char = '𘢤';
-    /// \u{188a5}: '𘢥'
-    pub const TANGUT_COMPONENT_DASH_166: char = '𘢥';
-    /// \u{188a6}: '𘢦'
-    pub const TANGUT_COMPONENT_DASH_167: char = '𘢦';
-    /// \u{188a7}: '𘢧'
-    pub const TANGUT_COMPONENT_DASH_168: char = '𘢧';
-    /// \u{188a8}: '𘢨'
-    pub const TANGUT_COMPONENT_DASH_169: char = '𘢨';
-    /// \u{188a9}: '𘢩'
-    pub const TANGUT_COMPONENT_DASH_170: char = '𘢩';
-    /// \u{188aa}: '𘢪'
-    pub const TANGUT_COMPONENT_DASH_171: char = '𘢪';
-    /// \u{188ab}: '𘢫'
-    pub const TANGUT_COMPONENT_DASH_172: char = '𘢫';
-    /// \u{188ac}: '𘢬'
-    pub const TANGUT_COMPONENT_DASH_173: char = '𘢬';
-    /// \u{188ad}: '𘢭'
-    pub const TANGUT_COMPONENT_DASH_174: char = '𘢭';
-    /// \u{188ae}: '𘢮'
-    pub const TANGUT_COMPONENT_DASH_175: char = '𘢮';
-    /// \u{188af}: '𘢯'
-    pub const TANGUT_COMPONENT_DASH_176: char = '𘢯';
-    /// \u{188b0}: '𘢰'
-    pub const TANGUT_COMPONENT_DASH_177: char = '𘢰';
-    /// \u{188b1}: '𘢱'
-    pub const TANGUT_COMPONENT_DASH_178: char = '𘢱';
-    /// \u{188b2}: '𘢲'
-    pub const TANGUT_COMPONENT_DASH_179: char = '𘢲';
-    /// \u{188b3}: '𘢳'
-    pub const TANGUT_COMPONENT_DASH_180: char = '𘢳';
-    /// \u{188b4}: '𘢴'
-    pub const TANGUT_COMPONENT_DASH_181: char = '𘢴';
-    /// \u{188b5}: '𘢵'
-    pub const TANGUT_COMPONENT_DASH_182: char = '𘢵';
-    /// \u{188b6}: '𘢶'
-    pub const TANGUT_COMPONENT_DASH_183: char = '𘢶';
-    /// \u{188b7}: '𘢷'
-    pub const TANGUT_COMPONENT_DASH_184: char = '𘢷';
-    /// \u{188b8}: '𘢸'
-    pub const TANGUT_COMPONENT_DASH_185: char = '𘢸';
-    /// \u{188b9}: '𘢹'
-    pub const TANGUT_COMPONENT_DASH_186: char = '𘢹';
-    /// \u{188ba}: '𘢺'
-    pub const TANGUT_COMPONENT_DASH_187: char = '𘢺';
-    /// \u{188bb}: '𘢻'
-    pub const TANGUT_COMPONENT_DASH_188: char = '𘢻';
-    /// \u{188bc}: '𘢼'
-    pub const TANGUT_COMPONENT_DASH_189: char = '𘢼';
-    /// \u{188bd}: '𘢽'
-    pub const TANGUT_COMPONENT_DASH_190: char = '𘢽';
-    /// \u{188be}: '𘢾'
-    pub const TANGUT_COMPONENT_DASH_191: char = '𘢾';
-    /// \u{188bf}: '𘢿'
-    pub const TANGUT_COMPONENT_DASH_192: char = '𘢿';
-    /// \u{188c0}: '𘣀'
-    pub const TANGUT_COMPONENT_DASH_193: char = '𘣀';
-    /// \u{188c1}: '𘣁'
-    pub const TANGUT_COMPONENT_DASH_194: char = '𘣁';
-    /// \u{188c2}: '𘣂'
-    pub const TANGUT_COMPONENT_DASH_195: char = '𘣂';
-    /// \u{188c3}: '𘣃'
-    pub const TANGUT_COMPONENT_DASH_196: char = '𘣃';
-    /// \u{188c4}: '𘣄'
-    pub const TANGUT_COMPONENT_DASH_197: char = '𘣄';
-    /// \u{188c5}: '𘣅'
-    pub const TANGUT_COMPONENT_DASH_198: char = '𘣅';
-    /// \u{188c6}: '𘣆'
-    pub const TANGUT_COMPONENT_DASH_199: char = '𘣆';
-    /// \u{188c7}: '𘣇'
-    pub const TANGUT_COMPONENT_DASH_200: char = '𘣇';
-    /// \u{188c8}: '𘣈'
-    pub const TANGUT_COMPONENT_DASH_201: char = '𘣈';
-    /// \u{188c9}: '𘣉'
-    pub const TANGUT_COMPONENT_DASH_202: char = '𘣉';
-    /// \u{188ca}: '𘣊'
-    pub const TANGUT_COMPONENT_DASH_203: char = '𘣊';
-    /// \u{188cb}: '𘣋'
-    pub const TANGUT_COMPONENT_DASH_204: char = '𘣋';
-    /// \u{188cc}: '𘣌'
-    pub const TANGUT_COMPONENT_DASH_205: char = '𘣌';
-    /// \u{188cd}: '𘣍'
-    pub const TANGUT_COMPONENT_DASH_206: char = '𘣍';
-    /// \u{188ce}: '𘣎'
-    pub const TANGUT_COMPONENT_DASH_207: char = '𘣎';
-    /// \u{188cf}: '𘣏'
-    pub const TANGUT_COMPONENT_DASH_208: char = '𘣏';
-    /// \u{188d0}: '𘣐'
-    pub const TANGUT_COMPONENT_DASH_209: char = '𘣐';
-    /// \u{188d1}: '𘣑'
-    pub const TANGUT_COMPONENT_DASH_210: char = '𘣑';
-    /// \u{188d2}: '𘣒'
-    pub const TANGUT_COMPONENT_DASH_211: char = '𘣒';
-    /// \u{188d3}: '𘣓'
-    pub const TANGUT_COMPONENT_DASH_212: char = '𘣓';
-    /// \u{188d4}: '𘣔'
-    pub const TANGUT_COMPONENT_DASH_213: char = '𘣔';
-    /// \u{188d5}: '𘣕'
-    pub const TANGUT_COMPONENT_DASH_214: char = '𘣕';
-    /// \u{188d6}: '𘣖'
-    pub const TANGUT_COMPONENT_DASH_215: char = '𘣖';
-    /// \u{188d7}: '𘣗'
-    pub const TANGUT_COMPONENT_DASH_216: char = '𘣗';
-    /// \u{188d8}: '𘣘'
-    pub const TANGUT_COMPONENT_DASH_217: char = '𘣘';
-    /// \u{188d9}: '𘣙'
-    pub const TANGUT_COMPONENT_DASH_218: char = '𘣙';
-    /// \u{188da}: '𘣚'
-    pub const TANGUT_COMPONENT_DASH_219: char = '𘣚';
-    /// \u{188db}: '𘣛'
-    pub const TANGUT_COMPONENT_DASH_220: char = '𘣛';
-    /// \u{188dc}: '𘣜'
-    pub const TANGUT_COMPONENT_DASH_221: char = '𘣜';
-    /// \u{188dd}: '𘣝'
-    pub const TANGUT_COMPONENT_DASH_222: char = '𘣝';
-    /// \u{188de}: '𘣞'
-    pub const TANGUT_COMPONENT_DASH_223: char = '𘣞';
-    /// \u{188df}: '𘣟'
-    pub const TANGUT_COMPONENT_DASH_224: char = '𘣟';
-    /// \u{188e0}: '𘣠'
-    pub const TANGUT_COMPONENT_DASH_225: char = '𘣠';
-    /// \u{188e1}: '𘣡'
-    pub const TANGUT_COMPONENT_DASH_226: char = '𘣡';
-    /// \u{188e2}: '𘣢'
-    pub const TANGUT_COMPONENT_DASH_227: char = '𘣢';
-    /// \u{188e3}: '𘣣'
-    pub const TANGUT_COMPONENT_DASH_228: char = '𘣣';
-    /// \u{188e4}: '𘣤'
-    pub const TANGUT_COMPONENT_DASH_229: char = '𘣤';
-    /// \u{188e5}: '𘣥'
-    pub const TANGUT_COMPONENT_DASH_230: char = '𘣥';
-    /// \u{188e6}: '𘣦'
-    pub const TANGUT_COMPONENT_DASH_231: char = '𘣦';
-    /// \u{188e7}: '𘣧'
-    pub const TANGUT_COMPONENT_DASH_232: char = '𘣧';
-    /// \u{188e8}: '𘣨'
-    pub const TANGUT_COMPONENT_DASH_233: char = '𘣨';
-    /// \u{188e9}: '𘣩'
-    pub const TANGUT_COMPONENT_DASH_234: char = '𘣩';
-    /// \u{188ea}: '𘣪'
-    pub const TANGUT_COMPONENT_DASH_235: char = '𘣪';
-    /// \u{188eb}: '𘣫'
-    pub const TANGUT_COMPONENT_DASH_236: char = '𘣫';
-    /// \u{188ec}: '𘣬'
-    pub const TANGUT_COMPONENT_DASH_237: char = '𘣬';
-    /// \u{188ed}: '𘣭'
-    pub const TANGUT_COMPONENT_DASH_238: char = '𘣭';
-    /// \u{188ee}: '𘣮'
-    pub const TANGUT_COMPONENT_DASH_239: char = '𘣮';
-    /// \u{188ef}: '𘣯'
-    pub const TANGUT_COMPONENT_DASH_240: char = '𘣯';
-    /// \u{188f0}: '𘣰'
-    pub const TANGUT_COMPONENT_DASH_241: char = '𘣰';
-    /// \u{188f1}: '𘣱'
-    pub const TANGUT_COMPONENT_DASH_242: char = '𘣱';
-    /// \u{188f2}: '𘣲'
-    pub const TANGUT_COMPONENT_DASH_243: char = '𘣲';
-    /// \u{188f3}: '𘣳'
-    pub const TANGUT_COMPONENT_DASH_244: char = '𘣳';
-    /// \u{188f4}: '𘣴'
-    pub const TANGUT_COMPONENT_DASH_245: char = '𘣴';
-    /// \u{188f5}: '𘣵'
-    pub const TANGUT_COMPONENT_DASH_246: char = '𘣵';
-    /// \u{188f6}: '𘣶'
-    pub const TANGUT_COMPONENT_DASH_247: char = '𘣶';
-    /// \u{188f7}: '𘣷'
-    pub const TANGUT_COMPONENT_DASH_248: char = '𘣷';
-    /// \u{188f8}: '𘣸'
-    pub const TANGUT_COMPONENT_DASH_249: char = '𘣸';
-    /// \u{188f9}: '𘣹'
-    pub const TANGUT_COMPONENT_DASH_250: char = '𘣹';
-    /// \u{188fa}: '𘣺'
-    pub const TANGUT_COMPONENT_DASH_251: char = '𘣺';
-    /// \u{188fb}: '𘣻'
-    pub const TANGUT_COMPONENT_DASH_252: char = '𘣻';
-    /// \u{188fc}: '𘣼'
-    pub const TANGUT_COMPONENT_DASH_253: char = '𘣼';
-    /// \u{188fd}: '𘣽'
-    pub const TANGUT_COMPONENT_DASH_254: char = '𘣽';
-    /// \u{188fe}: '𘣾'
-    pub const TANGUT_COMPONENT_DASH_255: char = '𘣾';
-    /// \u{188ff}: '𘣿'
-    pub const TANGUT_COMPONENT_DASH_256: char = '𘣿';
-    /// \u{18900}: '𘤀'
-    pub const TANGUT_COMPONENT_DASH_257: char = '𘤀';
-    /// \u{18901}: '𘤁'
-    pub const TANGUT_COMPONENT_DASH_258: char = '𘤁';
-    /// \u{18902}: '𘤂'
-    pub const TANGUT_COMPONENT_DASH_259: char = '𘤂';
-    /// \u{18903}: '𘤃'
-    pub const TANGUT_COMPONENT_DASH_260: char = '𘤃';
-    /// \u{18904}: '𘤄'
-    pub const TANGUT_COMPONENT_DASH_261: char = '𘤄';
-    /// \u{18905}: '𘤅'
-    pub const TANGUT_COMPONENT_DASH_262: char = '𘤅';
-    /// \u{18906}: '𘤆'
-    pub const TANGUT_COMPONENT_DASH_263: char = '𘤆';
-    /// \u{18907}: '𘤇'
-    pub const TANGUT_COMPONENT_DASH_264: char = '𘤇';
-    /// \u{18908}: '𘤈'
-    pub const TANGUT_COMPONENT_DASH_265: char = '𘤈';
-    /// \u{18909}: '𘤉'
-    pub const TANGUT_COMPONENT_DASH_266: char = '𘤉';
-    /// \u{1890a}: '𘤊'
-    pub const TANGUT_COMPONENT_DASH_267: char = '𘤊';
-    /// \u{1890b}: '𘤋'
-    pub const TANGUT_COMPONENT_DASH_268: char = '𘤋';
-    /// \u{1890c}: '𘤌'
-    pub const TANGUT_COMPONENT_DASH_269: char = '𘤌';
-    /// \u{1890d}: '𘤍'
-    pub const TANGUT_COMPONENT_DASH_270: char = '𘤍';
-    /// \u{1890e}: '𘤎'
-    pub const TANGUT_COMPONENT_DASH_271: char = '𘤎';
-    /// \u{1890f}: '𘤏'
-    pub const TANGUT_COMPONENT_DASH_272: char = '𘤏';
-    /// \u{18910}: '𘤐'
-    pub const TANGUT_COMPONENT_DASH_273: char = '𘤐';
-    /// \u{18911}: '𘤑'
-    pub const TANGUT_COMPONENT_DASH_274: char = '𘤑';
-    /// \u{18912}: '𘤒'
-    pub const TANGUT_COMPONENT_DASH_275: char = '𘤒';
-    /// \u{18913}: '𘤓'
-    pub const TANGUT_COMPONENT_DASH_276: char = '𘤓';
-    /// \u{18914}: '𘤔'
-    pub const TANGUT_COMPONENT_DASH_277: char = '𘤔';
-    /// \u{18915}: '𘤕'
-    pub const TANGUT_COMPONENT_DASH_278: char = '𘤕';
-    /// \u{18916}: '𘤖'
-    pub const TANGUT_COMPONENT_DASH_279: char = '𘤖';
-    /// \u{18917}: '𘤗'
-    pub const TANGUT_COMPONENT_DASH_280: char = '𘤗';
-    /// \u{18918}: '𘤘'
-    pub const TANGUT_COMPONENT_DASH_281: char = '𘤘';
-    /// \u{18919}: '𘤙'
-    pub const TANGUT_COMPONENT_DASH_282: char = '𘤙';
-    /// \u{1891a}: '𘤚'
-    pub const TANGUT_COMPONENT_DASH_283: char = '𘤚';
-    /// \u{1891b}: '𘤛'
-    pub const TANGUT_COMPONENT_DASH_284: char = '𘤛';
-    /// \u{1891c}: '𘤜'
-    pub const TANGUT_COMPONENT_DASH_285: char = '𘤜';
-    /// \u{1891d}: '𘤝'
-    pub const TANGUT_COMPONENT_DASH_286: char = '𘤝';
-    /// \u{1891e}: '𘤞'
-    pub const TANGUT_COMPONENT_DASH_287: char = '𘤞';
-    /// \u{1891f}: '𘤟'
-    pub const TANGUT_COMPONENT_DASH_288: char = '𘤟';
-    /// \u{18920}: '𘤠'
-    pub const TANGUT_COMPONENT_DASH_289: char = '𘤠';
-    /// \u{18921}: '𘤡'
-    pub const TANGUT_COMPONENT_DASH_290: char = '𘤡';
-    /// \u{18922}: '𘤢'
-    pub const TANGUT_COMPONENT_DASH_291: char = '𘤢';
-    /// \u{18923}: '𘤣'
-    pub const TANGUT_COMPONENT_DASH_292: char = '𘤣';
-    /// \u{18924}: '𘤤'
-    pub const TANGUT_COMPONENT_DASH_293: char = '𘤤';
-    /// \u{18925}: '𘤥'
-    pub const TANGUT_COMPONENT_DASH_294: char = '𘤥';
-    /// \u{18926}: '𘤦'
-    pub const TANGUT_COMPONENT_DASH_295: char = '𘤦';
-    /// \u{18927}: '𘤧'
-    pub const TANGUT_COMPONENT_DASH_296: char = '𘤧';
-    /// \u{18928}: '𘤨'
-    pub const TANGUT_COMPONENT_DASH_297: char = '𘤨';
-    /// \u{18929}: '𘤩'
-    pub const TANGUT_COMPONENT_DASH_298: char = '𘤩';
-    /// \u{1892a}: '𘤪'
-    pub const TANGUT_COMPONENT_DASH_299: char = '𘤪';
-    /// \u{1892b}: '𘤫'
-    pub const TANGUT_COMPONENT_DASH_300: char = '𘤫';
-    /// \u{1892c}: '𘤬'
-    pub const TANGUT_COMPONENT_DASH_301: char = '𘤬';
-    /// \u{1892d}: '𘤭'
-    pub const TANGUT_COMPONENT_DASH_302: char = '𘤭';
-    /// \u{1892e}: '𘤮'
-    pub const TANGUT_COMPONENT_DASH_303: char = '𘤮';
-    /// \u{1892f}: '𘤯'
-    pub const TANGUT_COMPONENT_DASH_304: char = '𘤯';
-    /// \u{18930}: '𘤰'
-    pub const TANGUT_COMPONENT_DASH_305: char = '𘤰';
-    /// \u{18931}: '𘤱'
-    pub const TANGUT_COMPONENT_DASH_306: char = '𘤱';
-    /// \u{18932}: '𘤲'
-    pub const TANGUT_COMPONENT_DASH_307: char = '𘤲';
-    /// \u{18933}: '𘤳'
-    pub const TANGUT_COMPONENT_DASH_308: char = '𘤳';
-    /// \u{18934}: '𘤴'
-    pub const TANGUT_COMPONENT_DASH_309: char = '𘤴';
-    /// \u{18935}: '𘤵'
-    pub const TANGUT_COMPONENT_DASH_310: char = '𘤵';
-    /// \u{18936}: '𘤶'
-    pub const TANGUT_COMPONENT_DASH_311: char = '𘤶';
-    /// \u{18937}: '𘤷'
-    pub const TANGUT_COMPONENT_DASH_312: char = '𘤷';
-    /// \u{18938}: '𘤸'
-    pub const TANGUT_COMPONENT_DASH_313: char = '𘤸';
-    /// \u{18939}: '𘤹'
-    pub const TANGUT_COMPONENT_DASH_314: char = '𘤹';
-    /// \u{1893a}: '𘤺'
-    pub const TANGUT_COMPONENT_DASH_315: char = '𘤺';
-    /// \u{1893b}: '𘤻'
-    pub const TANGUT_COMPONENT_DASH_316: char = '𘤻';
-    /// \u{1893c}: '𘤼'
-    pub const TANGUT_COMPONENT_DASH_317: char = '𘤼';
-    /// \u{1893d}: '𘤽'
-    pub const TANGUT_COMPONENT_DASH_318: char = '𘤽';
-    /// \u{1893e}: '𘤾'
-    pub const TANGUT_COMPONENT_DASH_319: char = '𘤾';
-    /// \u{1893f}: '𘤿'
-    pub const TANGUT_COMPONENT_DASH_320: char = '𘤿';
-    /// \u{18940}: '𘥀'
-    pub const TANGUT_COMPONENT_DASH_321: char = '𘥀';
-    /// \u{18941}: '𘥁'
-    pub const TANGUT_COMPONENT_DASH_322: char = '𘥁';
-    /// \u{18942}: '𘥂'
-    pub const TANGUT_COMPONENT_DASH_323: char = '𘥂';
-    /// \u{18943}: '𘥃'
-    pub const TANGUT_COMPONENT_DASH_324: char = '𘥃';
-    /// \u{18944}: '𘥄'
-    pub const TANGUT_COMPONENT_DASH_325: char = '𘥄';
-    /// \u{18945}: '𘥅'
-    pub const TANGUT_COMPONENT_DASH_326: char = '𘥅';
-    /// \u{18946}: '𘥆'
-    pub const TANGUT_COMPONENT_DASH_327: char = '𘥆';
-    /// \u{18947}: '𘥇'
-    pub const TANGUT_COMPONENT_DASH_328: char = '𘥇';
-    /// \u{18948}: '𘥈'
-    pub const TANGUT_COMPONENT_DASH_329: char = '𘥈';
-    /// \u{18949}: '𘥉'
-    pub const TANGUT_COMPONENT_DASH_330: char = '𘥉';
-    /// \u{1894a}: '𘥊'
-    pub const TANGUT_COMPONENT_DASH_331: char = '𘥊';
-    /// \u{1894b}: '𘥋'
-    pub const TANGUT_COMPONENT_DASH_332: char = '𘥋';
-    /// \u{1894c}: '𘥌'
-    pub const TANGUT_COMPONENT_DASH_333: char = '𘥌';
-    /// \u{1894d}: '𘥍'
-    pub const TANGUT_COMPONENT_DASH_334: char = '𘥍';
-    /// \u{1894e}: '𘥎'
-    pub const TANGUT_COMPONENT_DASH_335: char = '𘥎';
-    /// \u{1894f}: '𘥏'
-    pub const TANGUT_COMPONENT_DASH_336: char = '𘥏';
-    /// \u{18950}: '𘥐'
-    pub const TANGUT_COMPONENT_DASH_337: char = '𘥐';
-    /// \u{18951}: '𘥑'
-    pub const TANGUT_COMPONENT_DASH_338: char = '𘥑';
-    /// \u{18952}: '𘥒'
-    pub const TANGUT_COMPONENT_DASH_339: char = '𘥒';
-    /// \u{18953}: '𘥓'
-    pub const TANGUT_COMPONENT_DASH_340: char = '𘥓';
-    /// \u{18954}: '𘥔'
-    pub const TANGUT_COMPONENT_DASH_341: char = '𘥔';
-    /// \u{18955}: '𘥕'
-    pub const TANGUT_COMPONENT_DASH_342: char = '𘥕';
-    /// \u{18956}: '𘥖'
-    pub const TANGUT_COMPONENT_DASH_343: char = '𘥖';
-    /// \u{18957}: '𘥗'
-    pub const TANGUT_COMPONENT_DASH_344: char = '𘥗';
-    /// \u{18958}: '𘥘'
-    pub const TANGUT_COMPONENT_DASH_345: char = '𘥘';
-    /// \u{18959}: '𘥙'
-    pub const TANGUT_COMPONENT_DASH_346: char = '𘥙';
-    /// \u{1895a}: '𘥚'
-    pub const TANGUT_COMPONENT_DASH_347: char = '𘥚';
-    /// \u{1895b}: '𘥛'
-    pub const TANGUT_COMPONENT_DASH_348: char = '𘥛';
-    /// \u{1895c}: '𘥜'
-    pub const TANGUT_COMPONENT_DASH_349: char = '𘥜';
-    /// \u{1895d}: '𘥝'
-    pub const TANGUT_COMPONENT_DASH_350: char = '𘥝';
-    /// \u{1895e}: '𘥞'
-    pub const TANGUT_COMPONENT_DASH_351: char = '𘥞';
-    /// \u{1895f}: '𘥟'
-    pub const TANGUT_COMPONENT_DASH_352: char = '𘥟';
-    /// \u{18960}: '𘥠'
-    pub const TANGUT_COMPONENT_DASH_353: char = '𘥠';
-    /// \u{18961}: '𘥡'
-    pub const TANGUT_COMPONENT_DASH_354: char = '𘥡';
-    /// \u{18962}: '𘥢'
-    pub const TANGUT_COMPONENT_DASH_355: char = '𘥢';
-    /// \u{18963}: '𘥣'
-    pub const TANGUT_COMPONENT_DASH_356: char = '𘥣';
-    /// \u{18964}: '𘥤'
-    pub const TANGUT_COMPONENT_DASH_357: char = '𘥤';
-    /// \u{18965}: '𘥥'
-    pub const TANGUT_COMPONENT_DASH_358: char = '𘥥';
-    /// \u{18966}: '𘥦'
-    pub const TANGUT_COMPONENT_DASH_359: char = '𘥦';
-    /// \u{18967}: '𘥧'
-    pub const TANGUT_COMPONENT_DASH_360: char = '𘥧';
-    /// \u{18968}: '𘥨'
-    pub const TANGUT_COMPONENT_DASH_361: char = '𘥨';
-    /// \u{18969}: '𘥩'
-    pub const TANGUT_COMPONENT_DASH_362: char = '𘥩';
-    /// \u{1896a}: '𘥪'
-    pub const TANGUT_COMPONENT_DASH_363: char = '𘥪';
-    /// \u{1896b}: '𘥫'
-    pub const TANGUT_COMPONENT_DASH_364: char = '𘥫';
-    /// \u{1896c}: '𘥬'
-    pub const TANGUT_COMPONENT_DASH_365: char = '𘥬';
-    /// \u{1896d}: '𘥭'
-    pub const TANGUT_COMPONENT_DASH_366: char = '𘥭';
-    /// \u{1896e}: '𘥮'
-    pub const TANGUT_COMPONENT_DASH_367: char = '𘥮';
-    /// \u{1896f}: '𘥯'
-    pub const TANGUT_COMPONENT_DASH_368: char = '𘥯';
-    /// \u{18970}: '𘥰'
-    pub const TANGUT_COMPONENT_DASH_369: char = '𘥰';
-    /// \u{18971}: '𘥱'
-    pub const TANGUT_COMPONENT_DASH_370: char = '𘥱';
-    /// \u{18972}: '𘥲'
-    pub const TANGUT_COMPONENT_DASH_371: char = '𘥲';
-    /// \u{18973}: '𘥳'
-    pub const TANGUT_COMPONENT_DASH_372: char = '𘥳';
-    /// \u{18974}: '𘥴'
-    pub const TANGUT_COMPONENT_DASH_373: char = '𘥴';
-    /// \u{18975}: '𘥵'
-    pub const TANGUT_COMPONENT_DASH_374: char = '𘥵';
-    /// \u{18976}: '𘥶'
-    pub const TANGUT_COMPONENT_DASH_375: char = '𘥶';
-    /// \u{18977}: '𘥷'
-    pub const TANGUT_COMPONENT_DASH_376: char = '𘥷';
-    /// \u{18978}: '𘥸'
-    pub const TANGUT_COMPONENT_DASH_377: char = '𘥸';
-    /// \u{18979}: '𘥹'
-    pub const TANGUT_COMPONENT_DASH_378: char = '𘥹';
-    /// \u{1897a}: '𘥺'
-    pub const TANGUT_COMPONENT_DASH_379: char = '𘥺';
-    /// \u{1897b}: '𘥻'
-    pub const TANGUT_COMPONENT_DASH_380: char = '𘥻';
-    /// \u{1897c}: '𘥼'
-    pub const TANGUT_COMPONENT_DASH_381: char = '𘥼';
-    /// \u{1897d}: '𘥽'
-    pub const TANGUT_COMPONENT_DASH_382: char = '𘥽';
-    /// \u{1897e}: '𘥾'
-    pub const TANGUT_COMPONENT_DASH_383: char = '𘥾';
-    /// \u{1897f}: '𘥿'
-    pub const TANGUT_COMPONENT_DASH_384: char = '𘥿';
-    /// \u{18980}: '𘦀'
-    pub const TANGUT_COMPONENT_DASH_385: char = '𘦀';
-    /// \u{18981}: '𘦁'
-    pub const TANGUT_COMPONENT_DASH_386: char = '𘦁';
-    /// \u{18982}: '𘦂'
-    pub const TANGUT_COMPONENT_DASH_387: char = '𘦂';
-    /// \u{18983}: '𘦃'
-    pub const TANGUT_COMPONENT_DASH_388: char = '𘦃';
-    /// \u{18984}: '𘦄'
-    pub const TANGUT_COMPONENT_DASH_389: char = '𘦄';
-    /// \u{18985}: '𘦅'
-    pub const TANGUT_COMPONENT_DASH_390: char = '𘦅';
-    /// \u{18986}: '𘦆'
-    pub const TANGUT_COMPONENT_DASH_391: char = '𘦆';
-    /// \u{18987}: '𘦇'
-    pub const TANGUT_COMPONENT_DASH_392: char = '𘦇';
-    /// \u{18988}: '𘦈'
-    pub const TANGUT_COMPONENT_DASH_393: char = '𘦈';
-    /// \u{18989}: '𘦉'
-    pub const TANGUT_COMPONENT_DASH_394: char = '𘦉';
-    /// \u{1898a}: '𘦊'
-    pub const TANGUT_COMPONENT_DASH_395: char = '𘦊';
-    /// \u{1898b}: '𘦋'
-    pub const TANGUT_COMPONENT_DASH_396: char = '𘦋';
-    /// \u{1898c}: '𘦌'
-    pub const TANGUT_COMPONENT_DASH_397: char = '𘦌';
-    /// \u{1898d}: '𘦍'
-    pub const TANGUT_COMPONENT_DASH_398: char = '𘦍';
-    /// \u{1898e}: '𘦎'
-    pub const TANGUT_COMPONENT_DASH_399: char = '𘦎';
-    /// \u{1898f}: '𘦏'
-    pub const TANGUT_COMPONENT_DASH_400: char = '𘦏';
-    /// \u{18990}: '𘦐'
-    pub const TANGUT_COMPONENT_DASH_401: char = '𘦐';
-    /// \u{18991}: '𘦑'
-    pub const TANGUT_COMPONENT_DASH_402: char = '𘦑';
-    /// \u{18992}: '𘦒'
-    pub const TANGUT_COMPONENT_DASH_403: char = '𘦒';
-    /// \u{18993}: '𘦓'
-    pub const TANGUT_COMPONENT_DASH_404: char = '𘦓';
-    /// \u{18994}: '𘦔'
-    pub const TANGUT_COMPONENT_DASH_405: char = '𘦔';
-    /// \u{18995}: '𘦕'
-    pub const TANGUT_COMPONENT_DASH_406: char = '𘦕';
-    /// \u{18996}: '𘦖'
-    pub const TANGUT_COMPONENT_DASH_407: char = '𘦖';
-    /// \u{18997}: '𘦗'
-    pub const TANGUT_COMPONENT_DASH_408: char = '𘦗';
-    /// \u{18998}: '𘦘'
-    pub const TANGUT_COMPONENT_DASH_409: char = '𘦘';
-    /// \u{18999}: '𘦙'
-    pub const TANGUT_COMPONENT_DASH_410: char = '𘦙';
-    /// \u{1899a}: '𘦚'
-    pub const TANGUT_COMPONENT_DASH_411: char = '𘦚';
-    /// \u{1899b}: '𘦛'
-    pub const TANGUT_COMPONENT_DASH_412: char = '𘦛';
-    /// \u{1899c}: '𘦜'
-    pub const TANGUT_COMPONENT_DASH_413: char = '𘦜';
-    /// \u{1899d}: '𘦝'
-    pub const TANGUT_COMPONENT_DASH_414: char = '𘦝';
-    /// \u{1899e}: '𘦞'
-    pub const TANGUT_COMPONENT_DASH_415: char = '𘦞';
-    /// \u{1899f}: '𘦟'
-    pub const TANGUT_COMPONENT_DASH_416: char = '𘦟';
-    /// \u{189a0}: '𘦠'
-    pub const TANGUT_COMPONENT_DASH_417: char = '𘦠';
-    /// \u{189a1}: '𘦡'
-    pub const TANGUT_COMPONENT_DASH_418: char = '𘦡';
-    /// \u{189a2}: '𘦢'
-    pub const TANGUT_COMPONENT_DASH_419: char = '𘦢';
-    /// \u{189a3}: '𘦣'
-    pub const TANGUT_COMPONENT_DASH_420: char = '𘦣';
-    /// \u{189a4}: '𘦤'
-    pub const TANGUT_COMPONENT_DASH_421: char = '𘦤';
-    /// \u{189a5}: '𘦥'
-    pub const TANGUT_COMPONENT_DASH_422: char = '𘦥';
-    /// \u{189a6}: '𘦦'
-    pub const TANGUT_COMPONENT_DASH_423: char = '𘦦';
-    /// \u{189a7}: '𘦧'
-    pub const TANGUT_COMPONENT_DASH_424: char = '𘦧';
-    /// \u{189a8}: '𘦨'
-    pub const TANGUT_COMPONENT_DASH_425: char = '𘦨';
-    /// \u{189a9}: '𘦩'
-    pub const TANGUT_COMPONENT_DASH_426: char = '𘦩';
-    /// \u{189aa}: '𘦪'
-    pub const TANGUT_COMPONENT_DASH_427: char = '𘦪';
-    /// \u{189ab}: '𘦫'
-    pub const TANGUT_COMPONENT_DASH_428: char = '𘦫';
-    /// \u{189ac}: '𘦬'
-    pub const TANGUT_COMPONENT_DASH_429: char = '𘦬';
-    /// \u{189ad}: '𘦭'
-    pub const TANGUT_COMPONENT_DASH_430: char = '𘦭';
-    /// \u{189ae}: '𘦮'
-    pub const TANGUT_COMPONENT_DASH_431: char = '𘦮';
-    /// \u{189af}: '𘦯'
-    pub const TANGUT_COMPONENT_DASH_432: char = '𘦯';
-    /// \u{189b0}: '𘦰'
-    pub const TANGUT_COMPONENT_DASH_433: char = '𘦰';
-    /// \u{189b1}: '𘦱'
-    pub const TANGUT_COMPONENT_DASH_434: char = '𘦱';
-    /// \u{189b2}: '𘦲'
-    pub const TANGUT_COMPONENT_DASH_435: char = '𘦲';
-    /// \u{189b3}: '𘦳'
-    pub const TANGUT_COMPONENT_DASH_436: char = '𘦳';
-    /// \u{189b4}: '𘦴'
-    pub const TANGUT_COMPONENT_DASH_437: char = '𘦴';
-    /// \u{189b5}: '𘦵'
-    pub const TANGUT_COMPONENT_DASH_438: char = '𘦵';
-    /// \u{189b6}: '𘦶'
-    pub const TANGUT_COMPONENT_DASH_439: char = '𘦶';
-    /// \u{189b7}: '𘦷'
-    pub const TANGUT_COMPONENT_DASH_440: char = '𘦷';
-    /// \u{189b8}: '𘦸'
-    pub const TANGUT_COMPONENT_DASH_441: char = '𘦸';
-    /// \u{189b9}: '𘦹'
-    pub const TANGUT_COMPONENT_DASH_442: char = '𘦹';
-    /// \u{189ba}: '𘦺'
-    pub const TANGUT_COMPONENT_DASH_443: char = '𘦺';
-    /// \u{189bb}: '𘦻'
-    pub const TANGUT_COMPONENT_DASH_444: char = '𘦻';
-    /// \u{189bc}: '𘦼'
-    pub const TANGUT_COMPONENT_DASH_445: char = '𘦼';
-    /// \u{189bd}: '𘦽'
-    pub const TANGUT_COMPONENT_DASH_446: char = '𘦽';
-    /// \u{189be}: '𘦾'
-    pub const TANGUT_COMPONENT_DASH_447: char = '𘦾';
-    /// \u{189bf}: '𘦿'
-    pub const TANGUT_COMPONENT_DASH_448: char = '𘦿';
-    /// \u{189c0}: '𘧀'
-    pub const TANGUT_COMPONENT_DASH_449: char = '𘧀';
-    /// \u{189c1}: '𘧁'
-    pub const TANGUT_COMPONENT_DASH_450: char = '𘧁';
-    /// \u{189c2}: '𘧂'
-    pub const TANGUT_COMPONENT_DASH_451: char = '𘧂';
-    /// \u{189c3}: '𘧃'
-    pub const TANGUT_COMPONENT_DASH_452: char = '𘧃';
-    /// \u{189c4}: '𘧄'
-    pub const TANGUT_COMPONENT_DASH_453: char = '𘧄';
-    /// \u{189c5}: '𘧅'
-    pub const TANGUT_COMPONENT_DASH_454: char = '𘧅';
-    /// \u{189c6}: '𘧆'
-    pub const TANGUT_COMPONENT_DASH_455: char = '𘧆';
-    /// \u{189c7}: '𘧇'
-    pub const TANGUT_COMPONENT_DASH_456: char = '𘧇';
-    /// \u{189c8}: '𘧈'
-    pub const TANGUT_COMPONENT_DASH_457: char = '𘧈';
-    /// \u{189c9}: '𘧉'
-    pub const TANGUT_COMPONENT_DASH_458: char = '𘧉';
-    /// \u{189ca}: '𘧊'
-    pub const TANGUT_COMPONENT_DASH_459: char = '𘧊';
-    /// \u{189cb}: '𘧋'
-    pub const TANGUT_COMPONENT_DASH_460: char = '𘧋';
-    /// \u{189cc}: '𘧌'
-    pub const TANGUT_COMPONENT_DASH_461: char = '𘧌';
-    /// \u{189cd}: '𘧍'
-    pub const TANGUT_COMPONENT_DASH_462: char = '𘧍';
-    /// \u{189ce}: '𘧎'
-    pub const TANGUT_COMPONENT_DASH_463: char = '𘧎';
-    /// \u{189cf}: '𘧏'
-    pub const TANGUT_COMPONENT_DASH_464: char = '𘧏';
-    /// \u{189d0}: '𘧐'
-    pub const TANGUT_COMPONENT_DASH_465: char = '𘧐';
-    /// \u{189d1}: '𘧑'
-    pub const TANGUT_COMPONENT_DASH_466: char = '𘧑';
-    /// \u{189d2}: '𘧒'
-    pub const TANGUT_COMPONENT_DASH_467: char = '𘧒';
-    /// \u{189d3}: '𘧓'
-    pub const TANGUT_COMPONENT_DASH_468: char = '𘧓';
-    /// \u{189d4}: '𘧔'
-    pub const TANGUT_COMPONENT_DASH_469: char = '𘧔';
-    /// \u{189d5}: '𘧕'
-    pub const TANGUT_COMPONENT_DASH_470: char = '𘧕';
-    /// \u{189d6}: '𘧖'
-    pub const TANGUT_COMPONENT_DASH_471: char = '𘧖';
-    /// \u{189d7}: '𘧗'
-    pub const TANGUT_COMPONENT_DASH_472: char = '𘧗';
-    /// \u{189d8}: '𘧘'
-    pub const TANGUT_COMPONENT_DASH_473: char = '𘧘';
-    /// \u{189d9}: '𘧙'
-    pub const TANGUT_COMPONENT_DASH_474: char = '𘧙';
-    /// \u{189da}: '𘧚'
-    pub const TANGUT_COMPONENT_DASH_475: char = '𘧚';
-    /// \u{189db}: '𘧛'
-    pub const TANGUT_COMPONENT_DASH_476: char = '𘧛';
-    /// \u{189dc}: '𘧜'
-    pub const TANGUT_COMPONENT_DASH_477: char = '𘧜';
-    /// \u{189dd}: '𘧝'
-    pub const TANGUT_COMPONENT_DASH_478: char = '𘧝';
-    /// \u{189de}: '𘧞'
-    pub const TANGUT_COMPONENT_DASH_479: char = '𘧞';
-    /// \u{189df}: '𘧟'
-    pub const TANGUT_COMPONENT_DASH_480: char = '𘧟';
-    /// \u{189e0}: '𘧠'
-    pub const TANGUT_COMPONENT_DASH_481: char = '𘧠';
-    /// \u{189e1}: '𘧡'
-    pub const TANGUT_COMPONENT_DASH_482: char = '𘧡';
-    /// \u{189e2}: '𘧢'
-    pub const TANGUT_COMPONENT_DASH_483: char = '𘧢';
-    /// \u{189e3}: '𘧣'
-    pub const TANGUT_COMPONENT_DASH_484: char = '𘧣';
-    /// \u{189e4}: '𘧤'
-    pub const TANGUT_COMPONENT_DASH_485: char = '𘧤';
-    /// \u{189e5}: '𘧥'
-    pub const TANGUT_COMPONENT_DASH_486: char = '𘧥';
-    /// \u{189e6}: '𘧦'
-    pub const TANGUT_COMPONENT_DASH_487: char = '𘧦';
-    /// \u{189e7}: '𘧧'
-    pub const TANGUT_COMPONENT_DASH_488: char = '𘧧';
-    /// \u{189e8}: '𘧨'
-    pub const TANGUT_COMPONENT_DASH_489: char = '𘧨';
-    /// \u{189e9}: '𘧩'
-    pub const TANGUT_COMPONENT_DASH_490: char = '𘧩';
-    /// \u{189ea}: '𘧪'
-    pub const TANGUT_COMPONENT_DASH_491: char = '𘧪';
-    /// \u{189eb}: '𘧫'
-    pub const TANGUT_COMPONENT_DASH_492: char = '𘧫';
-    /// \u{189ec}: '𘧬'
-    pub const TANGUT_COMPONENT_DASH_493: char = '𘧬';
-    /// \u{189ed}: '𘧭'
-    pub const TANGUT_COMPONENT_DASH_494: char = '𘧭';
-    /// \u{189ee}: '𘧮'
-    pub const TANGUT_COMPONENT_DASH_495: char = '𘧮';
-    /// \u{189ef}: '𘧯'
-    pub const TANGUT_COMPONENT_DASH_496: char = '𘧯';
-    /// \u{189f0}: '𘧰'
-    pub const TANGUT_COMPONENT_DASH_497: char = '𘧰';
-    /// \u{189f1}: '𘧱'
-    pub const TANGUT_COMPONENT_DASH_498: char = '𘧱';
-    /// \u{189f2}: '𘧲'
-    pub const TANGUT_COMPONENT_DASH_499: char = '𘧲';
-    /// \u{189f3}: '𘧳'
-    pub const TANGUT_COMPONENT_DASH_500: char = '𘧳';
-    /// \u{189f4}: '𘧴'
-    pub const TANGUT_COMPONENT_DASH_501: char = '𘧴';
-    /// \u{189f5}: '𘧵'
-    pub const TANGUT_COMPONENT_DASH_502: char = '𘧵';
-    /// \u{189f6}: '𘧶'
-    pub const TANGUT_COMPONENT_DASH_503: char = '𘧶';
-    /// \u{189f7}: '𘧷'
-    pub const TANGUT_COMPONENT_DASH_504: char = '𘧷';
-    /// \u{189f8}: '𘧸'
-    pub const TANGUT_COMPONENT_DASH_505: char = '𘧸';
-    /// \u{189f9}: '𘧹'
-    pub const TANGUT_COMPONENT_DASH_506: char = '𘧹';
-    /// \u{189fa}: '𘧺'
-    pub const TANGUT_COMPONENT_DASH_507: char = '𘧺';
-    /// \u{189fb}: '𘧻'
-    pub const TANGUT_COMPONENT_DASH_508: char = '𘧻';
-    /// \u{189fc}: '𘧼'
-    pub const TANGUT_COMPONENT_DASH_509: char = '𘧼';
-    /// \u{189fd}: '𘧽'
-    pub const TANGUT_COMPONENT_DASH_510: char = '𘧽';
-    /// \u{189fe}: '𘧾'
-    pub const TANGUT_COMPONENT_DASH_511: char = '𘧾';
-    /// \u{189ff}: '𘧿'
-    pub const TANGUT_COMPONENT_DASH_512: char = '𘧿';
-    /// \u{18a00}: '𘨀'
-    pub const TANGUT_COMPONENT_DASH_513: char = '𘨀';
-    /// \u{18a01}: '𘨁'
-    pub const TANGUT_COMPONENT_DASH_514: char = '𘨁';
-    /// \u{18a02}: '𘨂'
-    pub const TANGUT_COMPONENT_DASH_515: char = '𘨂';
-    /// \u{18a03}: '𘨃'
-    pub const TANGUT_COMPONENT_DASH_516: char = '𘨃';
-    /// \u{18a04}: '𘨄'
-    pub const TANGUT_COMPONENT_DASH_517: char = '𘨄';
-    /// \u{18a05}: '𘨅'
-    pub const TANGUT_COMPONENT_DASH_518: char = '𘨅';
-    /// \u{18a06}: '𘨆'
-    pub const TANGUT_COMPONENT_DASH_519: char = '𘨆';
-    /// \u{18a07}: '𘨇'
-    pub const TANGUT_COMPONENT_DASH_520: char = '𘨇';
-    /// \u{18a08}: '𘨈'
-    pub const TANGUT_COMPONENT_DASH_521: char = '𘨈';
-    /// \u{18a09}: '𘨉'
-    pub const TANGUT_COMPONENT_DASH_522: char = '𘨉';
-    /// \u{18a0a}: '𘨊'
-    pub const TANGUT_COMPONENT_DASH_523: char = '𘨊';
-    /// \u{18a0b}: '𘨋'
-    pub const TANGUT_COMPONENT_DASH_524: char = '𘨋';
-    /// \u{18a0c}: '𘨌'
-    pub const TANGUT_COMPONENT_DASH_525: char = '𘨌';
-    /// \u{18a0d}: '𘨍'
-    pub const TANGUT_COMPONENT_DASH_526: char = '𘨍';
-    /// \u{18a0e}: '𘨎'
-    pub const TANGUT_COMPONENT_DASH_527: char = '𘨎';
-    /// \u{18a0f}: '𘨏'
-    pub const TANGUT_COMPONENT_DASH_528: char = '𘨏';
-    /// \u{18a10}: '𘨐'
-    pub const TANGUT_COMPONENT_DASH_529: char = '𘨐';
-    /// \u{18a11}: '𘨑'
-    pub const TANGUT_COMPONENT_DASH_530: char = '𘨑';
-    /// \u{18a12}: '𘨒'
-    pub const TANGUT_COMPONENT_DASH_531: char = '𘨒';
-    /// \u{18a13}: '𘨓'
-    pub const TANGUT_COMPONENT_DASH_532: char = '𘨓';
-    /// \u{18a14}: '𘨔'
-    pub const TANGUT_COMPONENT_DASH_533: char = '𘨔';
-    /// \u{18a15}: '𘨕'
-    pub const TANGUT_COMPONENT_DASH_534: char = '𘨕';
-    /// \u{18a16}: '𘨖'
-    pub const TANGUT_COMPONENT_DASH_535: char = '𘨖';
-    /// \u{18a17}: '𘨗'
-    pub const TANGUT_COMPONENT_DASH_536: char = '𘨗';
-    /// \u{18a18}: '𘨘'
-    pub const TANGUT_COMPONENT_DASH_537: char = '𘨘';
-    /// \u{18a19}: '𘨙'
-    pub const TANGUT_COMPONENT_DASH_538: char = '𘨙';
-    /// \u{18a1a}: '𘨚'
-    pub const TANGUT_COMPONENT_DASH_539: char = '𘨚';
-    /// \u{18a1b}: '𘨛'
-    pub const TANGUT_COMPONENT_DASH_540: char = '𘨛';
-    /// \u{18a1c}: '𘨜'
-    pub const TANGUT_COMPONENT_DASH_541: char = '𘨜';
-    /// \u{18a1d}: '𘨝'
-    pub const TANGUT_COMPONENT_DASH_542: char = '𘨝';
-    /// \u{18a1e}: '𘨞'
-    pub const TANGUT_COMPONENT_DASH_543: char = '𘨞';
-    /// \u{18a1f}: '𘨟'
-    pub const TANGUT_COMPONENT_DASH_544: char = '𘨟';
-    /// \u{18a20}: '𘨠'
-    pub const TANGUT_COMPONENT_DASH_545: char = '𘨠';
-    /// \u{18a21}: '𘨡'
-    pub const TANGUT_COMPONENT_DASH_546: char = '𘨡';
-    /// \u{18a22}: '𘨢'
-    pub const TANGUT_COMPONENT_DASH_547: char = '𘨢';
-    /// \u{18a23}: '𘨣'
-    pub const TANGUT_COMPONENT_DASH_548: char = '𘨣';
-    /// \u{18a24}: '𘨤'
-    pub const TANGUT_COMPONENT_DASH_549: char = '𘨤';
-    /// \u{18a25}: '𘨥'
-    pub const TANGUT_COMPONENT_DASH_550: char = '𘨥';
-    /// \u{18a26}: '𘨦'
-    pub const TANGUT_COMPONENT_DASH_551: char = '𘨦';
-    /// \u{18a27}: '𘨧'
-    pub const TANGUT_COMPONENT_DASH_552: char = '𘨧';
-    /// \u{18a28}: '𘨨'
-    pub const TANGUT_COMPONENT_DASH_553: char = '𘨨';
-    /// \u{18a29}: '𘨩'
-    pub const TANGUT_COMPONENT_DASH_554: char = '𘨩';
-    /// \u{18a2a}: '𘨪'
-    pub const TANGUT_COMPONENT_DASH_555: char = '𘨪';
-    /// \u{18a2b}: '𘨫'
-    pub const TANGUT_COMPONENT_DASH_556: char = '𘨫';
-    /// \u{18a2c}: '𘨬'
-    pub const TANGUT_COMPONENT_DASH_557: char = '𘨬';
-    /// \u{18a2d}: '𘨭'
-    pub const TANGUT_COMPONENT_DASH_558: char = '𘨭';
-    /// \u{18a2e}: '𘨮'
-    pub const TANGUT_COMPONENT_DASH_559: char = '𘨮';
-    /// \u{18a2f}: '𘨯'
-    pub const TANGUT_COMPONENT_DASH_560: char = '𘨯';
-    /// \u{18a30}: '𘨰'
-    pub const TANGUT_COMPONENT_DASH_561: char = '𘨰';
-    /// \u{18a31}: '𘨱'
-    pub const TANGUT_COMPONENT_DASH_562: char = '𘨱';
-    /// \u{18a32}: '𘨲'
-    pub const TANGUT_COMPONENT_DASH_563: char = '𘨲';
-    /// \u{18a33}: '𘨳'
-    pub const TANGUT_COMPONENT_DASH_564: char = '𘨳';
-    /// \u{18a34}: '𘨴'
-    pub const TANGUT_COMPONENT_DASH_565: char = '𘨴';
-    /// \u{18a35}: '𘨵'
-    pub const TANGUT_COMPONENT_DASH_566: char = '𘨵';
-    /// \u{18a36}: '𘨶'
-    pub const TANGUT_COMPONENT_DASH_567: char = '𘨶';
-    /// \u{18a37}: '𘨷'
-    pub const TANGUT_COMPONENT_DASH_568: char = '𘨷';
-    /// \u{18a38}: '𘨸'
-    pub const TANGUT_COMPONENT_DASH_569: char = '𘨸';
-    /// \u{18a39}: '𘨹'
-    pub const TANGUT_COMPONENT_DASH_570: char = '𘨹';
-    /// \u{18a3a}: '𘨺'
-    pub const TANGUT_COMPONENT_DASH_571: char = '𘨺';
-    /// \u{18a3b}: '𘨻'
-    pub const TANGUT_COMPONENT_DASH_572: char = '𘨻';
-    /// \u{18a3c}: '𘨼'
-    pub const TANGUT_COMPONENT_DASH_573: char = '𘨼';
-    /// \u{18a3d}: '𘨽'
-    pub const TANGUT_COMPONENT_DASH_574: char = '𘨽';
-    /// \u{18a3e}: '𘨾'
-    pub const TANGUT_COMPONENT_DASH_575: char = '𘨾';
-    /// \u{18a3f}: '𘨿'
-    pub const TANGUT_COMPONENT_DASH_576: char = '𘨿';
-    /// \u{18a40}: '𘩀'
-    pub const TANGUT_COMPONENT_DASH_577: char = '𘩀';
-    /// \u{18a41}: '𘩁'
-    pub const TANGUT_COMPONENT_DASH_578: char = '𘩁';
-    /// \u{18a42}: '𘩂'
-    pub const TANGUT_COMPONENT_DASH_579: char = '𘩂';
-    /// \u{18a43}: '𘩃'
-    pub const TANGUT_COMPONENT_DASH_580: char = '𘩃';
-    /// \u{18a44}: '𘩄'
-    pub const TANGUT_COMPONENT_DASH_581: char = '𘩄';
-    /// \u{18a45}: '𘩅'
-    pub const TANGUT_COMPONENT_DASH_582: char = '𘩅';
-    /// \u{18a46}: '𘩆'
-    pub const TANGUT_COMPONENT_DASH_583: char = '𘩆';
-    /// \u{18a47}: '𘩇'
-    pub const TANGUT_COMPONENT_DASH_584: char = '𘩇';
-    /// \u{18a48}: '𘩈'
-    pub const TANGUT_COMPONENT_DASH_585: char = '𘩈';
-    /// \u{18a49}: '𘩉'
-    pub const TANGUT_COMPONENT_DASH_586: char = '𘩉';
-    /// \u{18a4a}: '𘩊'
-    pub const TANGUT_COMPONENT_DASH_587: char = '𘩊';
-    /// \u{18a4b}: '𘩋'
-    pub const TANGUT_COMPONENT_DASH_588: char = '𘩋';
-    /// \u{18a4c}: '𘩌'
-    pub const TANGUT_COMPONENT_DASH_589: char = '𘩌';
-    /// \u{18a4d}: '𘩍'
-    pub const TANGUT_COMPONENT_DASH_590: char = '𘩍';
-    /// \u{18a4e}: '𘩎'
-    pub const TANGUT_COMPONENT_DASH_591: char = '𘩎';
-    /// \u{18a4f}: '𘩏'
-    pub const TANGUT_COMPONENT_DASH_592: char = '𘩏';
-    /// \u{18a50}: '𘩐'
-    pub const TANGUT_COMPONENT_DASH_593: char = '𘩐';
-    /// \u{18a51}: '𘩑'
-    pub const TANGUT_COMPONENT_DASH_594: char = '𘩑';
-    /// \u{18a52}: '𘩒'
-    pub const TANGUT_COMPONENT_DASH_595: char = '𘩒';
-    /// \u{18a53}: '𘩓'
-    pub const TANGUT_COMPONENT_DASH_596: char = '𘩓';
-    /// \u{18a54}: '𘩔'
-    pub const TANGUT_COMPONENT_DASH_597: char = '𘩔';
-    /// \u{18a55}: '𘩕'
-    pub const TANGUT_COMPONENT_DASH_598: char = '𘩕';
-    /// \u{18a56}: '𘩖'
-    pub const TANGUT_COMPONENT_DASH_599: char = '𘩖';
-    /// \u{18a57}: '𘩗'
-    pub const TANGUT_COMPONENT_DASH_600: char = '𘩗';
-    /// \u{18a58}: '𘩘'
-    pub const TANGUT_COMPONENT_DASH_601: char = '𘩘';
-    /// \u{18a59}: '𘩙'
-    pub const TANGUT_COMPONENT_DASH_602: char = '𘩙';
-    /// \u{18a5a}: '𘩚'
-    pub const TANGUT_COMPONENT_DASH_603: char = '𘩚';
-    /// \u{18a5b}: '𘩛'
-    pub const TANGUT_COMPONENT_DASH_604: char = '𘩛';
-    /// \u{18a5c}: '𘩜'
-    pub const TANGUT_COMPONENT_DASH_605: char = '𘩜';
-    /// \u{18a5d}: '𘩝'
-    pub const TANGUT_COMPONENT_DASH_606: char = '𘩝';
-    /// \u{18a5e}: '𘩞'
-    pub const TANGUT_COMPONENT_DASH_607: char = '𘩞';
-    /// \u{18a5f}: '𘩟'
-    pub const TANGUT_COMPONENT_DASH_608: char = '𘩟';
-    /// \u{18a60}: '𘩠'
-    pub const TANGUT_COMPONENT_DASH_609: char = '𘩠';
-    /// \u{18a61}: '𘩡'
-    pub const TANGUT_COMPONENT_DASH_610: char = '𘩡';
-    /// \u{18a62}: '𘩢'
-    pub const TANGUT_COMPONENT_DASH_611: char = '𘩢';
-    /// \u{18a63}: '𘩣'
-    pub const TANGUT_COMPONENT_DASH_612: char = '𘩣';
-    /// \u{18a64}: '𘩤'
-    pub const TANGUT_COMPONENT_DASH_613: char = '𘩤';
-    /// \u{18a65}: '𘩥'
-    pub const TANGUT_COMPONENT_DASH_614: char = '𘩥';
-    /// \u{18a66}: '𘩦'
-    pub const TANGUT_COMPONENT_DASH_615: char = '𘩦';
-    /// \u{18a67}: '𘩧'
-    pub const TANGUT_COMPONENT_DASH_616: char = '𘩧';
-    /// \u{18a68}: '𘩨'
-    pub const TANGUT_COMPONENT_DASH_617: char = '𘩨';
-    /// \u{18a69}: '𘩩'
-    pub const TANGUT_COMPONENT_DASH_618: char = '𘩩';
-    /// \u{18a6a}: '𘩪'
-    pub const TANGUT_COMPONENT_DASH_619: char = '𘩪';
-    /// \u{18a6b}: '𘩫'
-    pub const TANGUT_COMPONENT_DASH_620: char = '𘩫';
-    /// \u{18a6c}: '𘩬'
-    pub const TANGUT_COMPONENT_DASH_621: char = '𘩬';
-    /// \u{18a6d}: '𘩭'
-    pub const TANGUT_COMPONENT_DASH_622: char = '𘩭';
-    /// \u{18a6e}: '𘩮'
-    pub const TANGUT_COMPONENT_DASH_623: char = '𘩮';
-    /// \u{18a6f}: '𘩯'
-    pub const TANGUT_COMPONENT_DASH_624: char = '𘩯';
-    /// \u{18a70}: '𘩰'
-    pub const TANGUT_COMPONENT_DASH_625: char = '𘩰';
-    /// \u{18a71}: '𘩱'
-    pub const TANGUT_COMPONENT_DASH_626: char = '𘩱';
-    /// \u{18a72}: '𘩲'
-    pub const TANGUT_COMPONENT_DASH_627: char = '𘩲';
-    /// \u{18a73}: '𘩳'
-    pub const TANGUT_COMPONENT_DASH_628: char = '𘩳';
-    /// \u{18a74}: '𘩴'
-    pub const TANGUT_COMPONENT_DASH_629: char = '𘩴';
-    /// \u{18a75}: '𘩵'
-    pub const TANGUT_COMPONENT_DASH_630: char = '𘩵';
-    /// \u{18a76}: '𘩶'
-    pub const TANGUT_COMPONENT_DASH_631: char = '𘩶';
-    /// \u{18a77}: '𘩷'
-    pub const TANGUT_COMPONENT_DASH_632: char = '𘩷';
-    /// \u{18a78}: '𘩸'
-    pub const TANGUT_COMPONENT_DASH_633: char = '𘩸';
-    /// \u{18a79}: '𘩹'
-    pub const TANGUT_COMPONENT_DASH_634: char = '𘩹';
-    /// \u{18a7a}: '𘩺'
-    pub const TANGUT_COMPONENT_DASH_635: char = '𘩺';
-    /// \u{18a7b}: '𘩻'
-    pub const TANGUT_COMPONENT_DASH_636: char = '𘩻';
-    /// \u{18a7c}: '𘩼'
-    pub const TANGUT_COMPONENT_DASH_637: char = '𘩼';
-    /// \u{18a7d}: '𘩽'
-    pub const TANGUT_COMPONENT_DASH_638: char = '𘩽';
-    /// \u{18a7e}: '𘩾'
-    pub const TANGUT_COMPONENT_DASH_639: char = '𘩾';
-    /// \u{18a7f}: '𘩿'
-    pub const TANGUT_COMPONENT_DASH_640: char = '𘩿';
-    /// \u{18a80}: '𘪀'
-    pub const TANGUT_COMPONENT_DASH_641: char = '𘪀';
-    /// \u{18a81}: '𘪁'
-    pub const TANGUT_COMPONENT_DASH_642: char = '𘪁';
-    /// \u{18a82}: '𘪂'
-    pub const TANGUT_COMPONENT_DASH_643: char = '𘪂';
-    /// \u{18a83}: '𘪃'
-    pub const TANGUT_COMPONENT_DASH_644: char = '𘪃';
-    /// \u{18a84}: '𘪄'
-    pub const TANGUT_COMPONENT_DASH_645: char = '𘪄';
-    /// \u{18a85}: '𘪅'
-    pub const TANGUT_COMPONENT_DASH_646: char = '𘪅';
-    /// \u{18a86}: '𘪆'
-    pub const TANGUT_COMPONENT_DASH_647: char = '𘪆';
-    /// \u{18a87}: '𘪇'
-    pub const TANGUT_COMPONENT_DASH_648: char = '𘪇';
-    /// \u{18a88}: '𘪈'
-    pub const TANGUT_COMPONENT_DASH_649: char = '𘪈';
-    /// \u{18a89}: '𘪉'
-    pub const TANGUT_COMPONENT_DASH_650: char = '𘪉';
-    /// \u{18a8a}: '𘪊'
-    pub const TANGUT_COMPONENT_DASH_651: char = '𘪊';
-    /// \u{18a8b}: '𘪋'
-    pub const TANGUT_COMPONENT_DASH_652: char = '𘪋';
-    /// \u{18a8c}: '𘪌'
-    pub const TANGUT_COMPONENT_DASH_653: char = '𘪌';
-    /// \u{18a8d}: '𘪍'
-    pub const TANGUT_COMPONENT_DASH_654: char = '𘪍';
-    /// \u{18a8e}: '𘪎'
-    pub const TANGUT_COMPONENT_DASH_655: char = '𘪎';
-    /// \u{18a8f}: '𘪏'
-    pub const TANGUT_COMPONENT_DASH_656: char = '𘪏';
-    /// \u{18a90}: '𘪐'
-    pub const TANGUT_COMPONENT_DASH_657: char = '𘪐';
-    /// \u{18a91}: '𘪑'
-    pub const TANGUT_COMPONENT_DASH_658: char = '𘪑';
-    /// \u{18a92}: '𘪒'
-    pub const TANGUT_COMPONENT_DASH_659: char = '𘪒';
-    /// \u{18a93}: '𘪓'
-    pub const TANGUT_COMPONENT_DASH_660: char = '𘪓';
-    /// \u{18a94}: '𘪔'
-    pub const TANGUT_COMPONENT_DASH_661: char = '𘪔';
-    /// \u{18a95}: '𘪕'
-    pub const TANGUT_COMPONENT_DASH_662: char = '𘪕';
-    /// \u{18a96}: '𘪖'
-    pub const TANGUT_COMPONENT_DASH_663: char = '𘪖';
-    /// \u{18a97}: '𘪗'
-    pub const TANGUT_COMPONENT_DASH_664: char = '𘪗';
-    /// \u{18a98}: '𘪘'
-    pub const TANGUT_COMPONENT_DASH_665: char = '𘪘';
-    /// \u{18a99}: '𘪙'
-    pub const TANGUT_COMPONENT_DASH_666: char = '𘪙';
-    /// \u{18a9a}: '𘪚'
-    pub const TANGUT_COMPONENT_DASH_667: char = '𘪚';
-    /// \u{18a9b}: '𘪛'
-    pub const TANGUT_COMPONENT_DASH_668: char = '𘪛';
-    /// \u{18a9c}: '𘪜'
-    pub const TANGUT_COMPONENT_DASH_669: char = '𘪜';
-    /// \u{18a9d}: '𘪝'
-    pub const TANGUT_COMPONENT_DASH_670: char = '𘪝';
-    /// \u{18a9e}: '𘪞'
-    pub const TANGUT_COMPONENT_DASH_671: char = '𘪞';
-    /// \u{18a9f}: '𘪟'
-    pub const TANGUT_COMPONENT_DASH_672: char = '𘪟';
-    /// \u{18aa0}: '𘪠'
-    pub const TANGUT_COMPONENT_DASH_673: char = '𘪠';
-    /// \u{18aa1}: '𘪡'
-    pub const TANGUT_COMPONENT_DASH_674: char = '𘪡';
-    /// \u{18aa2}: '𘪢'
-    pub const TANGUT_COMPONENT_DASH_675: char = '𘪢';
-    /// \u{18aa3}: '𘪣'
-    pub const TANGUT_COMPONENT_DASH_676: char = '𘪣';
-    /// \u{18aa4}: '𘪤'
-    pub const TANGUT_COMPONENT_DASH_677: char = '𘪤';
-    /// \u{18aa5}: '𘪥'
-    pub const TANGUT_COMPONENT_DASH_678: char = '𘪥';
-    /// \u{18aa6}: '𘪦'
-    pub const TANGUT_COMPONENT_DASH_679: char = '𘪦';
-    /// \u{18aa7}: '𘪧'
-    pub const TANGUT_COMPONENT_DASH_680: char = '𘪧';
-    /// \u{18aa8}: '𘪨'
-    pub const TANGUT_COMPONENT_DASH_681: char = '𘪨';
-    /// \u{18aa9}: '𘪩'
-    pub const TANGUT_COMPONENT_DASH_682: char = '𘪩';
-    /// \u{18aaa}: '𘪪'
-    pub const TANGUT_COMPONENT_DASH_683: char = '𘪪';
-    /// \u{18aab}: '𘪫'
-    pub const TANGUT_COMPONENT_DASH_684: char = '𘪫';
-    /// \u{18aac}: '𘪬'
-    pub const TANGUT_COMPONENT_DASH_685: char = '𘪬';
-    /// \u{18aad}: '𘪭'
-    pub const TANGUT_COMPONENT_DASH_686: char = '𘪭';
-    /// \u{18aae}: '𘪮'
-    pub const TANGUT_COMPONENT_DASH_687: char = '𘪮';
-    /// \u{18aaf}: '𘪯'
-    pub const TANGUT_COMPONENT_DASH_688: char = '𘪯';
-    /// \u{18ab0}: '𘪰'
-    pub const TANGUT_COMPONENT_DASH_689: char = '𘪰';
-    /// \u{18ab1}: '𘪱'
-    pub const TANGUT_COMPONENT_DASH_690: char = '𘪱';
-    /// \u{18ab2}: '𘪲'
-    pub const TANGUT_COMPONENT_DASH_691: char = '𘪲';
-    /// \u{18ab3}: '𘪳'
-    pub const TANGUT_COMPONENT_DASH_692: char = '𘪳';
-    /// \u{18ab4}: '𘪴'
-    pub const TANGUT_COMPONENT_DASH_693: char = '𘪴';
-    /// \u{18ab5}: '𘪵'
-    pub const TANGUT_COMPONENT_DASH_694: char = '𘪵';
-    /// \u{18ab6}: '𘪶'
-    pub const TANGUT_COMPONENT_DASH_695: char = '𘪶';
-    /// \u{18ab7}: '𘪷'
-    pub const TANGUT_COMPONENT_DASH_696: char = '𘪷';
-    /// \u{18ab8}: '𘪸'
-    pub const TANGUT_COMPONENT_DASH_697: char = '𘪸';
-    /// \u{18ab9}: '𘪹'
-    pub const TANGUT_COMPONENT_DASH_698: char = '𘪹';
-    /// \u{18aba}: '𘪺'
-    pub const TANGUT_COMPONENT_DASH_699: char = '𘪺';
-    /// \u{18abb}: '𘪻'
-    pub const TANGUT_COMPONENT_DASH_700: char = '𘪻';
-    /// \u{18abc}: '𘪼'
-    pub const TANGUT_COMPONENT_DASH_701: char = '𘪼';
-    /// \u{18abd}: '𘪽'
-    pub const TANGUT_COMPONENT_DASH_702: char = '𘪽';
-    /// \u{18abe}: '𘪾'
-    pub const TANGUT_COMPONENT_DASH_703: char = '𘪾';
-    /// \u{18abf}: '𘪿'
-    pub const TANGUT_COMPONENT_DASH_704: char = '𘪿';
-    /// \u{18ac0}: '𘫀'
-    pub const TANGUT_COMPONENT_DASH_705: char = '𘫀';
-    /// \u{18ac1}: '𘫁'
-    pub const TANGUT_COMPONENT_DASH_706: char = '𘫁';
-    /// \u{18ac2}: '𘫂'
-    pub const TANGUT_COMPONENT_DASH_707: char = '𘫂';
-    /// \u{18ac3}: '𘫃'
-    pub const TANGUT_COMPONENT_DASH_708: char = '𘫃';
-    /// \u{18ac4}: '𘫄'
-    pub const TANGUT_COMPONENT_DASH_709: char = '𘫄';
-    /// \u{18ac5}: '𘫅'
-    pub const TANGUT_COMPONENT_DASH_710: char = '𘫅';
-    /// \u{18ac6}: '𘫆'
-    pub const TANGUT_COMPONENT_DASH_711: char = '𘫆';
-    /// \u{18ac7}: '𘫇'
-    pub const TANGUT_COMPONENT_DASH_712: char = '𘫇';
-    /// \u{18ac8}: '𘫈'
-    pub const TANGUT_COMPONENT_DASH_713: char = '𘫈';
-    /// \u{18ac9}: '𘫉'
-    pub const TANGUT_COMPONENT_DASH_714: char = '𘫉';
-    /// \u{18aca}: '𘫊'
-    pub const TANGUT_COMPONENT_DASH_715: char = '𘫊';
-    /// \u{18acb}: '𘫋'
-    pub const TANGUT_COMPONENT_DASH_716: char = '𘫋';
-    /// \u{18acc}: '𘫌'
-    pub const TANGUT_COMPONENT_DASH_717: char = '𘫌';
-    /// \u{18acd}: '𘫍'
-    pub const TANGUT_COMPONENT_DASH_718: char = '𘫍';
-    /// \u{18ace}: '𘫎'
-    pub const TANGUT_COMPONENT_DASH_719: char = '𘫎';
-    /// \u{18acf}: '𘫏'
-    pub const TANGUT_COMPONENT_DASH_720: char = '𘫏';
-    /// \u{18ad0}: '𘫐'
-    pub const TANGUT_COMPONENT_DASH_721: char = '𘫐';
-    /// \u{18ad1}: '𘫑'
-    pub const TANGUT_COMPONENT_DASH_722: char = '𘫑';
-    /// \u{18ad2}: '𘫒'
-    pub const TANGUT_COMPONENT_DASH_723: char = '𘫒';
-    /// \u{18ad3}: '𘫓'
-    pub const TANGUT_COMPONENT_DASH_724: char = '𘫓';
-    /// \u{18ad4}: '𘫔'
-    pub const TANGUT_COMPONENT_DASH_725: char = '𘫔';
-    /// \u{18ad5}: '𘫕'
-    pub const TANGUT_COMPONENT_DASH_726: char = '𘫕';
-    /// \u{18ad6}: '𘫖'
-    pub const TANGUT_COMPONENT_DASH_727: char = '𘫖';
-    /// \u{18ad7}: '𘫗'
-    pub const TANGUT_COMPONENT_DASH_728: char = '𘫗';
-    /// \u{18ad8}: '𘫘'
-    pub const TANGUT_COMPONENT_DASH_729: char = '𘫘';
-    /// \u{18ad9}: '𘫙'
-    pub const TANGUT_COMPONENT_DASH_730: char = '𘫙';
-    /// \u{18ada}: '𘫚'
-    pub const TANGUT_COMPONENT_DASH_731: char = '𘫚';
-    /// \u{18adb}: '𘫛'
-    pub const TANGUT_COMPONENT_DASH_732: char = '𘫛';
-    /// \u{18adc}: '𘫜'
-    pub const TANGUT_COMPONENT_DASH_733: char = '𘫜';
-    /// \u{18add}: '𘫝'
-    pub const TANGUT_COMPONENT_DASH_734: char = '𘫝';
-    /// \u{18ade}: '𘫞'
-    pub const TANGUT_COMPONENT_DASH_735: char = '𘫞';
-    /// \u{18adf}: '𘫟'
-    pub const TANGUT_COMPONENT_DASH_736: char = '𘫟';
-    /// \u{18ae0}: '𘫠'
-    pub const TANGUT_COMPONENT_DASH_737: char = '𘫠';
-    /// \u{18ae1}: '𘫡'
-    pub const TANGUT_COMPONENT_DASH_738: char = '𘫡';
-    /// \u{18ae2}: '𘫢'
-    pub const TANGUT_COMPONENT_DASH_739: char = '𘫢';
-    /// \u{18ae3}: '𘫣'
-    pub const TANGUT_COMPONENT_DASH_740: char = '𘫣';
-    /// \u{18ae4}: '𘫤'
-    pub const TANGUT_COMPONENT_DASH_741: char = '𘫤';
-    /// \u{18ae5}: '𘫥'
-    pub const TANGUT_COMPONENT_DASH_742: char = '𘫥';
-    /// \u{18ae6}: '𘫦'
-    pub const TANGUT_COMPONENT_DASH_743: char = '𘫦';
-    /// \u{18ae7}: '𘫧'
-    pub const TANGUT_COMPONENT_DASH_744: char = '𘫧';
-    /// \u{18ae8}: '𘫨'
-    pub const TANGUT_COMPONENT_DASH_745: char = '𘫨';
-    /// \u{18ae9}: '𘫩'
-    pub const TANGUT_COMPONENT_DASH_746: char = '𘫩';
-    /// \u{18aea}: '𘫪'
-    pub const TANGUT_COMPONENT_DASH_747: char = '𘫪';
-    /// \u{18aeb}: '𘫫'
-    pub const TANGUT_COMPONENT_DASH_748: char = '𘫫';
-    /// \u{18aec}: '𘫬'
-    pub const TANGUT_COMPONENT_DASH_749: char = '𘫬';
-    /// \u{18aed}: '𘫭'
-    pub const TANGUT_COMPONENT_DASH_750: char = '𘫭';
-    /// \u{18aee}: '𘫮'
-    pub const TANGUT_COMPONENT_DASH_751: char = '𘫮';
-    /// \u{18aef}: '𘫯'
-    pub const TANGUT_COMPONENT_DASH_752: char = '𘫯';
-    /// \u{18af0}: '𘫰'
-    pub const TANGUT_COMPONENT_DASH_753: char = '𘫰';
-    /// \u{18af1}: '𘫱'
-    pub const TANGUT_COMPONENT_DASH_754: char = '𘫱';
-    /// \u{18af2}: '𘫲'
-    pub const TANGUT_COMPONENT_DASH_755: char = '𘫲';
-}
 
 /// An enum to represent all characters in the TangutComponents block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -3029,763 +1516,762 @@ pub enum TangutComponents {
 
 impl Into<char> for TangutComponents {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            TangutComponents::TangutComponentDash001 => TANGUT_COMPONENT_DASH_001,
-            TangutComponents::TangutComponentDash002 => TANGUT_COMPONENT_DASH_002,
-            TangutComponents::TangutComponentDash003 => TANGUT_COMPONENT_DASH_003,
-            TangutComponents::TangutComponentDash004 => TANGUT_COMPONENT_DASH_004,
-            TangutComponents::TangutComponentDash005 => TANGUT_COMPONENT_DASH_005,
-            TangutComponents::TangutComponentDash006 => TANGUT_COMPONENT_DASH_006,
-            TangutComponents::TangutComponentDash007 => TANGUT_COMPONENT_DASH_007,
-            TangutComponents::TangutComponentDash008 => TANGUT_COMPONENT_DASH_008,
-            TangutComponents::TangutComponentDash009 => TANGUT_COMPONENT_DASH_009,
-            TangutComponents::TangutComponentDash010 => TANGUT_COMPONENT_DASH_010,
-            TangutComponents::TangutComponentDash011 => TANGUT_COMPONENT_DASH_011,
-            TangutComponents::TangutComponentDash012 => TANGUT_COMPONENT_DASH_012,
-            TangutComponents::TangutComponentDash013 => TANGUT_COMPONENT_DASH_013,
-            TangutComponents::TangutComponentDash014 => TANGUT_COMPONENT_DASH_014,
-            TangutComponents::TangutComponentDash015 => TANGUT_COMPONENT_DASH_015,
-            TangutComponents::TangutComponentDash016 => TANGUT_COMPONENT_DASH_016,
-            TangutComponents::TangutComponentDash017 => TANGUT_COMPONENT_DASH_017,
-            TangutComponents::TangutComponentDash018 => TANGUT_COMPONENT_DASH_018,
-            TangutComponents::TangutComponentDash019 => TANGUT_COMPONENT_DASH_019,
-            TangutComponents::TangutComponentDash020 => TANGUT_COMPONENT_DASH_020,
-            TangutComponents::TangutComponentDash021 => TANGUT_COMPONENT_DASH_021,
-            TangutComponents::TangutComponentDash022 => TANGUT_COMPONENT_DASH_022,
-            TangutComponents::TangutComponentDash023 => TANGUT_COMPONENT_DASH_023,
-            TangutComponents::TangutComponentDash024 => TANGUT_COMPONENT_DASH_024,
-            TangutComponents::TangutComponentDash025 => TANGUT_COMPONENT_DASH_025,
-            TangutComponents::TangutComponentDash026 => TANGUT_COMPONENT_DASH_026,
-            TangutComponents::TangutComponentDash027 => TANGUT_COMPONENT_DASH_027,
-            TangutComponents::TangutComponentDash028 => TANGUT_COMPONENT_DASH_028,
-            TangutComponents::TangutComponentDash029 => TANGUT_COMPONENT_DASH_029,
-            TangutComponents::TangutComponentDash030 => TANGUT_COMPONENT_DASH_030,
-            TangutComponents::TangutComponentDash031 => TANGUT_COMPONENT_DASH_031,
-            TangutComponents::TangutComponentDash032 => TANGUT_COMPONENT_DASH_032,
-            TangutComponents::TangutComponentDash033 => TANGUT_COMPONENT_DASH_033,
-            TangutComponents::TangutComponentDash034 => TANGUT_COMPONENT_DASH_034,
-            TangutComponents::TangutComponentDash035 => TANGUT_COMPONENT_DASH_035,
-            TangutComponents::TangutComponentDash036 => TANGUT_COMPONENT_DASH_036,
-            TangutComponents::TangutComponentDash037 => TANGUT_COMPONENT_DASH_037,
-            TangutComponents::TangutComponentDash038 => TANGUT_COMPONENT_DASH_038,
-            TangutComponents::TangutComponentDash039 => TANGUT_COMPONENT_DASH_039,
-            TangutComponents::TangutComponentDash040 => TANGUT_COMPONENT_DASH_040,
-            TangutComponents::TangutComponentDash041 => TANGUT_COMPONENT_DASH_041,
-            TangutComponents::TangutComponentDash042 => TANGUT_COMPONENT_DASH_042,
-            TangutComponents::TangutComponentDash043 => TANGUT_COMPONENT_DASH_043,
-            TangutComponents::TangutComponentDash044 => TANGUT_COMPONENT_DASH_044,
-            TangutComponents::TangutComponentDash045 => TANGUT_COMPONENT_DASH_045,
-            TangutComponents::TangutComponentDash046 => TANGUT_COMPONENT_DASH_046,
-            TangutComponents::TangutComponentDash047 => TANGUT_COMPONENT_DASH_047,
-            TangutComponents::TangutComponentDash048 => TANGUT_COMPONENT_DASH_048,
-            TangutComponents::TangutComponentDash049 => TANGUT_COMPONENT_DASH_049,
-            TangutComponents::TangutComponentDash050 => TANGUT_COMPONENT_DASH_050,
-            TangutComponents::TangutComponentDash051 => TANGUT_COMPONENT_DASH_051,
-            TangutComponents::TangutComponentDash052 => TANGUT_COMPONENT_DASH_052,
-            TangutComponents::TangutComponentDash053 => TANGUT_COMPONENT_DASH_053,
-            TangutComponents::TangutComponentDash054 => TANGUT_COMPONENT_DASH_054,
-            TangutComponents::TangutComponentDash055 => TANGUT_COMPONENT_DASH_055,
-            TangutComponents::TangutComponentDash056 => TANGUT_COMPONENT_DASH_056,
-            TangutComponents::TangutComponentDash057 => TANGUT_COMPONENT_DASH_057,
-            TangutComponents::TangutComponentDash058 => TANGUT_COMPONENT_DASH_058,
-            TangutComponents::TangutComponentDash059 => TANGUT_COMPONENT_DASH_059,
-            TangutComponents::TangutComponentDash060 => TANGUT_COMPONENT_DASH_060,
-            TangutComponents::TangutComponentDash061 => TANGUT_COMPONENT_DASH_061,
-            TangutComponents::TangutComponentDash062 => TANGUT_COMPONENT_DASH_062,
-            TangutComponents::TangutComponentDash063 => TANGUT_COMPONENT_DASH_063,
-            TangutComponents::TangutComponentDash064 => TANGUT_COMPONENT_DASH_064,
-            TangutComponents::TangutComponentDash065 => TANGUT_COMPONENT_DASH_065,
-            TangutComponents::TangutComponentDash066 => TANGUT_COMPONENT_DASH_066,
-            TangutComponents::TangutComponentDash067 => TANGUT_COMPONENT_DASH_067,
-            TangutComponents::TangutComponentDash068 => TANGUT_COMPONENT_DASH_068,
-            TangutComponents::TangutComponentDash069 => TANGUT_COMPONENT_DASH_069,
-            TangutComponents::TangutComponentDash070 => TANGUT_COMPONENT_DASH_070,
-            TangutComponents::TangutComponentDash071 => TANGUT_COMPONENT_DASH_071,
-            TangutComponents::TangutComponentDash072 => TANGUT_COMPONENT_DASH_072,
-            TangutComponents::TangutComponentDash073 => TANGUT_COMPONENT_DASH_073,
-            TangutComponents::TangutComponentDash074 => TANGUT_COMPONENT_DASH_074,
-            TangutComponents::TangutComponentDash075 => TANGUT_COMPONENT_DASH_075,
-            TangutComponents::TangutComponentDash076 => TANGUT_COMPONENT_DASH_076,
-            TangutComponents::TangutComponentDash077 => TANGUT_COMPONENT_DASH_077,
-            TangutComponents::TangutComponentDash078 => TANGUT_COMPONENT_DASH_078,
-            TangutComponents::TangutComponentDash079 => TANGUT_COMPONENT_DASH_079,
-            TangutComponents::TangutComponentDash080 => TANGUT_COMPONENT_DASH_080,
-            TangutComponents::TangutComponentDash081 => TANGUT_COMPONENT_DASH_081,
-            TangutComponents::TangutComponentDash082 => TANGUT_COMPONENT_DASH_082,
-            TangutComponents::TangutComponentDash083 => TANGUT_COMPONENT_DASH_083,
-            TangutComponents::TangutComponentDash084 => TANGUT_COMPONENT_DASH_084,
-            TangutComponents::TangutComponentDash085 => TANGUT_COMPONENT_DASH_085,
-            TangutComponents::TangutComponentDash086 => TANGUT_COMPONENT_DASH_086,
-            TangutComponents::TangutComponentDash087 => TANGUT_COMPONENT_DASH_087,
-            TangutComponents::TangutComponentDash088 => TANGUT_COMPONENT_DASH_088,
-            TangutComponents::TangutComponentDash089 => TANGUT_COMPONENT_DASH_089,
-            TangutComponents::TangutComponentDash090 => TANGUT_COMPONENT_DASH_090,
-            TangutComponents::TangutComponentDash091 => TANGUT_COMPONENT_DASH_091,
-            TangutComponents::TangutComponentDash092 => TANGUT_COMPONENT_DASH_092,
-            TangutComponents::TangutComponentDash093 => TANGUT_COMPONENT_DASH_093,
-            TangutComponents::TangutComponentDash094 => TANGUT_COMPONENT_DASH_094,
-            TangutComponents::TangutComponentDash095 => TANGUT_COMPONENT_DASH_095,
-            TangutComponents::TangutComponentDash096 => TANGUT_COMPONENT_DASH_096,
-            TangutComponents::TangutComponentDash097 => TANGUT_COMPONENT_DASH_097,
-            TangutComponents::TangutComponentDash098 => TANGUT_COMPONENT_DASH_098,
-            TangutComponents::TangutComponentDash099 => TANGUT_COMPONENT_DASH_099,
-            TangutComponents::TangutComponentDash100 => TANGUT_COMPONENT_DASH_100,
-            TangutComponents::TangutComponentDash101 => TANGUT_COMPONENT_DASH_101,
-            TangutComponents::TangutComponentDash102 => TANGUT_COMPONENT_DASH_102,
-            TangutComponents::TangutComponentDash103 => TANGUT_COMPONENT_DASH_103,
-            TangutComponents::TangutComponentDash104 => TANGUT_COMPONENT_DASH_104,
-            TangutComponents::TangutComponentDash105 => TANGUT_COMPONENT_DASH_105,
-            TangutComponents::TangutComponentDash106 => TANGUT_COMPONENT_DASH_106,
-            TangutComponents::TangutComponentDash107 => TANGUT_COMPONENT_DASH_107,
-            TangutComponents::TangutComponentDash108 => TANGUT_COMPONENT_DASH_108,
-            TangutComponents::TangutComponentDash109 => TANGUT_COMPONENT_DASH_109,
-            TangutComponents::TangutComponentDash110 => TANGUT_COMPONENT_DASH_110,
-            TangutComponents::TangutComponentDash111 => TANGUT_COMPONENT_DASH_111,
-            TangutComponents::TangutComponentDash112 => TANGUT_COMPONENT_DASH_112,
-            TangutComponents::TangutComponentDash113 => TANGUT_COMPONENT_DASH_113,
-            TangutComponents::TangutComponentDash114 => TANGUT_COMPONENT_DASH_114,
-            TangutComponents::TangutComponentDash115 => TANGUT_COMPONENT_DASH_115,
-            TangutComponents::TangutComponentDash116 => TANGUT_COMPONENT_DASH_116,
-            TangutComponents::TangutComponentDash117 => TANGUT_COMPONENT_DASH_117,
-            TangutComponents::TangutComponentDash118 => TANGUT_COMPONENT_DASH_118,
-            TangutComponents::TangutComponentDash119 => TANGUT_COMPONENT_DASH_119,
-            TangutComponents::TangutComponentDash120 => TANGUT_COMPONENT_DASH_120,
-            TangutComponents::TangutComponentDash121 => TANGUT_COMPONENT_DASH_121,
-            TangutComponents::TangutComponentDash122 => TANGUT_COMPONENT_DASH_122,
-            TangutComponents::TangutComponentDash123 => TANGUT_COMPONENT_DASH_123,
-            TangutComponents::TangutComponentDash124 => TANGUT_COMPONENT_DASH_124,
-            TangutComponents::TangutComponentDash125 => TANGUT_COMPONENT_DASH_125,
-            TangutComponents::TangutComponentDash126 => TANGUT_COMPONENT_DASH_126,
-            TangutComponents::TangutComponentDash127 => TANGUT_COMPONENT_DASH_127,
-            TangutComponents::TangutComponentDash128 => TANGUT_COMPONENT_DASH_128,
-            TangutComponents::TangutComponentDash129 => TANGUT_COMPONENT_DASH_129,
-            TangutComponents::TangutComponentDash130 => TANGUT_COMPONENT_DASH_130,
-            TangutComponents::TangutComponentDash131 => TANGUT_COMPONENT_DASH_131,
-            TangutComponents::TangutComponentDash132 => TANGUT_COMPONENT_DASH_132,
-            TangutComponents::TangutComponentDash133 => TANGUT_COMPONENT_DASH_133,
-            TangutComponents::TangutComponentDash134 => TANGUT_COMPONENT_DASH_134,
-            TangutComponents::TangutComponentDash135 => TANGUT_COMPONENT_DASH_135,
-            TangutComponents::TangutComponentDash136 => TANGUT_COMPONENT_DASH_136,
-            TangutComponents::TangutComponentDash137 => TANGUT_COMPONENT_DASH_137,
-            TangutComponents::TangutComponentDash138 => TANGUT_COMPONENT_DASH_138,
-            TangutComponents::TangutComponentDash139 => TANGUT_COMPONENT_DASH_139,
-            TangutComponents::TangutComponentDash140 => TANGUT_COMPONENT_DASH_140,
-            TangutComponents::TangutComponentDash141 => TANGUT_COMPONENT_DASH_141,
-            TangutComponents::TangutComponentDash142 => TANGUT_COMPONENT_DASH_142,
-            TangutComponents::TangutComponentDash143 => TANGUT_COMPONENT_DASH_143,
-            TangutComponents::TangutComponentDash144 => TANGUT_COMPONENT_DASH_144,
-            TangutComponents::TangutComponentDash145 => TANGUT_COMPONENT_DASH_145,
-            TangutComponents::TangutComponentDash146 => TANGUT_COMPONENT_DASH_146,
-            TangutComponents::TangutComponentDash147 => TANGUT_COMPONENT_DASH_147,
-            TangutComponents::TangutComponentDash148 => TANGUT_COMPONENT_DASH_148,
-            TangutComponents::TangutComponentDash149 => TANGUT_COMPONENT_DASH_149,
-            TangutComponents::TangutComponentDash150 => TANGUT_COMPONENT_DASH_150,
-            TangutComponents::TangutComponentDash151 => TANGUT_COMPONENT_DASH_151,
-            TangutComponents::TangutComponentDash152 => TANGUT_COMPONENT_DASH_152,
-            TangutComponents::TangutComponentDash153 => TANGUT_COMPONENT_DASH_153,
-            TangutComponents::TangutComponentDash154 => TANGUT_COMPONENT_DASH_154,
-            TangutComponents::TangutComponentDash155 => TANGUT_COMPONENT_DASH_155,
-            TangutComponents::TangutComponentDash156 => TANGUT_COMPONENT_DASH_156,
-            TangutComponents::TangutComponentDash157 => TANGUT_COMPONENT_DASH_157,
-            TangutComponents::TangutComponentDash158 => TANGUT_COMPONENT_DASH_158,
-            TangutComponents::TangutComponentDash159 => TANGUT_COMPONENT_DASH_159,
-            TangutComponents::TangutComponentDash160 => TANGUT_COMPONENT_DASH_160,
-            TangutComponents::TangutComponentDash161 => TANGUT_COMPONENT_DASH_161,
-            TangutComponents::TangutComponentDash162 => TANGUT_COMPONENT_DASH_162,
-            TangutComponents::TangutComponentDash163 => TANGUT_COMPONENT_DASH_163,
-            TangutComponents::TangutComponentDash164 => TANGUT_COMPONENT_DASH_164,
-            TangutComponents::TangutComponentDash165 => TANGUT_COMPONENT_DASH_165,
-            TangutComponents::TangutComponentDash166 => TANGUT_COMPONENT_DASH_166,
-            TangutComponents::TangutComponentDash167 => TANGUT_COMPONENT_DASH_167,
-            TangutComponents::TangutComponentDash168 => TANGUT_COMPONENT_DASH_168,
-            TangutComponents::TangutComponentDash169 => TANGUT_COMPONENT_DASH_169,
-            TangutComponents::TangutComponentDash170 => TANGUT_COMPONENT_DASH_170,
-            TangutComponents::TangutComponentDash171 => TANGUT_COMPONENT_DASH_171,
-            TangutComponents::TangutComponentDash172 => TANGUT_COMPONENT_DASH_172,
-            TangutComponents::TangutComponentDash173 => TANGUT_COMPONENT_DASH_173,
-            TangutComponents::TangutComponentDash174 => TANGUT_COMPONENT_DASH_174,
-            TangutComponents::TangutComponentDash175 => TANGUT_COMPONENT_DASH_175,
-            TangutComponents::TangutComponentDash176 => TANGUT_COMPONENT_DASH_176,
-            TangutComponents::TangutComponentDash177 => TANGUT_COMPONENT_DASH_177,
-            TangutComponents::TangutComponentDash178 => TANGUT_COMPONENT_DASH_178,
-            TangutComponents::TangutComponentDash179 => TANGUT_COMPONENT_DASH_179,
-            TangutComponents::TangutComponentDash180 => TANGUT_COMPONENT_DASH_180,
-            TangutComponents::TangutComponentDash181 => TANGUT_COMPONENT_DASH_181,
-            TangutComponents::TangutComponentDash182 => TANGUT_COMPONENT_DASH_182,
-            TangutComponents::TangutComponentDash183 => TANGUT_COMPONENT_DASH_183,
-            TangutComponents::TangutComponentDash184 => TANGUT_COMPONENT_DASH_184,
-            TangutComponents::TangutComponentDash185 => TANGUT_COMPONENT_DASH_185,
-            TangutComponents::TangutComponentDash186 => TANGUT_COMPONENT_DASH_186,
-            TangutComponents::TangutComponentDash187 => TANGUT_COMPONENT_DASH_187,
-            TangutComponents::TangutComponentDash188 => TANGUT_COMPONENT_DASH_188,
-            TangutComponents::TangutComponentDash189 => TANGUT_COMPONENT_DASH_189,
-            TangutComponents::TangutComponentDash190 => TANGUT_COMPONENT_DASH_190,
-            TangutComponents::TangutComponentDash191 => TANGUT_COMPONENT_DASH_191,
-            TangutComponents::TangutComponentDash192 => TANGUT_COMPONENT_DASH_192,
-            TangutComponents::TangutComponentDash193 => TANGUT_COMPONENT_DASH_193,
-            TangutComponents::TangutComponentDash194 => TANGUT_COMPONENT_DASH_194,
-            TangutComponents::TangutComponentDash195 => TANGUT_COMPONENT_DASH_195,
-            TangutComponents::TangutComponentDash196 => TANGUT_COMPONENT_DASH_196,
-            TangutComponents::TangutComponentDash197 => TANGUT_COMPONENT_DASH_197,
-            TangutComponents::TangutComponentDash198 => TANGUT_COMPONENT_DASH_198,
-            TangutComponents::TangutComponentDash199 => TANGUT_COMPONENT_DASH_199,
-            TangutComponents::TangutComponentDash200 => TANGUT_COMPONENT_DASH_200,
-            TangutComponents::TangutComponentDash201 => TANGUT_COMPONENT_DASH_201,
-            TangutComponents::TangutComponentDash202 => TANGUT_COMPONENT_DASH_202,
-            TangutComponents::TangutComponentDash203 => TANGUT_COMPONENT_DASH_203,
-            TangutComponents::TangutComponentDash204 => TANGUT_COMPONENT_DASH_204,
-            TangutComponents::TangutComponentDash205 => TANGUT_COMPONENT_DASH_205,
-            TangutComponents::TangutComponentDash206 => TANGUT_COMPONENT_DASH_206,
-            TangutComponents::TangutComponentDash207 => TANGUT_COMPONENT_DASH_207,
-            TangutComponents::TangutComponentDash208 => TANGUT_COMPONENT_DASH_208,
-            TangutComponents::TangutComponentDash209 => TANGUT_COMPONENT_DASH_209,
-            TangutComponents::TangutComponentDash210 => TANGUT_COMPONENT_DASH_210,
-            TangutComponents::TangutComponentDash211 => TANGUT_COMPONENT_DASH_211,
-            TangutComponents::TangutComponentDash212 => TANGUT_COMPONENT_DASH_212,
-            TangutComponents::TangutComponentDash213 => TANGUT_COMPONENT_DASH_213,
-            TangutComponents::TangutComponentDash214 => TANGUT_COMPONENT_DASH_214,
-            TangutComponents::TangutComponentDash215 => TANGUT_COMPONENT_DASH_215,
-            TangutComponents::TangutComponentDash216 => TANGUT_COMPONENT_DASH_216,
-            TangutComponents::TangutComponentDash217 => TANGUT_COMPONENT_DASH_217,
-            TangutComponents::TangutComponentDash218 => TANGUT_COMPONENT_DASH_218,
-            TangutComponents::TangutComponentDash219 => TANGUT_COMPONENT_DASH_219,
-            TangutComponents::TangutComponentDash220 => TANGUT_COMPONENT_DASH_220,
-            TangutComponents::TangutComponentDash221 => TANGUT_COMPONENT_DASH_221,
-            TangutComponents::TangutComponentDash222 => TANGUT_COMPONENT_DASH_222,
-            TangutComponents::TangutComponentDash223 => TANGUT_COMPONENT_DASH_223,
-            TangutComponents::TangutComponentDash224 => TANGUT_COMPONENT_DASH_224,
-            TangutComponents::TangutComponentDash225 => TANGUT_COMPONENT_DASH_225,
-            TangutComponents::TangutComponentDash226 => TANGUT_COMPONENT_DASH_226,
-            TangutComponents::TangutComponentDash227 => TANGUT_COMPONENT_DASH_227,
-            TangutComponents::TangutComponentDash228 => TANGUT_COMPONENT_DASH_228,
-            TangutComponents::TangutComponentDash229 => TANGUT_COMPONENT_DASH_229,
-            TangutComponents::TangutComponentDash230 => TANGUT_COMPONENT_DASH_230,
-            TangutComponents::TangutComponentDash231 => TANGUT_COMPONENT_DASH_231,
-            TangutComponents::TangutComponentDash232 => TANGUT_COMPONENT_DASH_232,
-            TangutComponents::TangutComponentDash233 => TANGUT_COMPONENT_DASH_233,
-            TangutComponents::TangutComponentDash234 => TANGUT_COMPONENT_DASH_234,
-            TangutComponents::TangutComponentDash235 => TANGUT_COMPONENT_DASH_235,
-            TangutComponents::TangutComponentDash236 => TANGUT_COMPONENT_DASH_236,
-            TangutComponents::TangutComponentDash237 => TANGUT_COMPONENT_DASH_237,
-            TangutComponents::TangutComponentDash238 => TANGUT_COMPONENT_DASH_238,
-            TangutComponents::TangutComponentDash239 => TANGUT_COMPONENT_DASH_239,
-            TangutComponents::TangutComponentDash240 => TANGUT_COMPONENT_DASH_240,
-            TangutComponents::TangutComponentDash241 => TANGUT_COMPONENT_DASH_241,
-            TangutComponents::TangutComponentDash242 => TANGUT_COMPONENT_DASH_242,
-            TangutComponents::TangutComponentDash243 => TANGUT_COMPONENT_DASH_243,
-            TangutComponents::TangutComponentDash244 => TANGUT_COMPONENT_DASH_244,
-            TangutComponents::TangutComponentDash245 => TANGUT_COMPONENT_DASH_245,
-            TangutComponents::TangutComponentDash246 => TANGUT_COMPONENT_DASH_246,
-            TangutComponents::TangutComponentDash247 => TANGUT_COMPONENT_DASH_247,
-            TangutComponents::TangutComponentDash248 => TANGUT_COMPONENT_DASH_248,
-            TangutComponents::TangutComponentDash249 => TANGUT_COMPONENT_DASH_249,
-            TangutComponents::TangutComponentDash250 => TANGUT_COMPONENT_DASH_250,
-            TangutComponents::TangutComponentDash251 => TANGUT_COMPONENT_DASH_251,
-            TangutComponents::TangutComponentDash252 => TANGUT_COMPONENT_DASH_252,
-            TangutComponents::TangutComponentDash253 => TANGUT_COMPONENT_DASH_253,
-            TangutComponents::TangutComponentDash254 => TANGUT_COMPONENT_DASH_254,
-            TangutComponents::TangutComponentDash255 => TANGUT_COMPONENT_DASH_255,
-            TangutComponents::TangutComponentDash256 => TANGUT_COMPONENT_DASH_256,
-            TangutComponents::TangutComponentDash257 => TANGUT_COMPONENT_DASH_257,
-            TangutComponents::TangutComponentDash258 => TANGUT_COMPONENT_DASH_258,
-            TangutComponents::TangutComponentDash259 => TANGUT_COMPONENT_DASH_259,
-            TangutComponents::TangutComponentDash260 => TANGUT_COMPONENT_DASH_260,
-            TangutComponents::TangutComponentDash261 => TANGUT_COMPONENT_DASH_261,
-            TangutComponents::TangutComponentDash262 => TANGUT_COMPONENT_DASH_262,
-            TangutComponents::TangutComponentDash263 => TANGUT_COMPONENT_DASH_263,
-            TangutComponents::TangutComponentDash264 => TANGUT_COMPONENT_DASH_264,
-            TangutComponents::TangutComponentDash265 => TANGUT_COMPONENT_DASH_265,
-            TangutComponents::TangutComponentDash266 => TANGUT_COMPONENT_DASH_266,
-            TangutComponents::TangutComponentDash267 => TANGUT_COMPONENT_DASH_267,
-            TangutComponents::TangutComponentDash268 => TANGUT_COMPONENT_DASH_268,
-            TangutComponents::TangutComponentDash269 => TANGUT_COMPONENT_DASH_269,
-            TangutComponents::TangutComponentDash270 => TANGUT_COMPONENT_DASH_270,
-            TangutComponents::TangutComponentDash271 => TANGUT_COMPONENT_DASH_271,
-            TangutComponents::TangutComponentDash272 => TANGUT_COMPONENT_DASH_272,
-            TangutComponents::TangutComponentDash273 => TANGUT_COMPONENT_DASH_273,
-            TangutComponents::TangutComponentDash274 => TANGUT_COMPONENT_DASH_274,
-            TangutComponents::TangutComponentDash275 => TANGUT_COMPONENT_DASH_275,
-            TangutComponents::TangutComponentDash276 => TANGUT_COMPONENT_DASH_276,
-            TangutComponents::TangutComponentDash277 => TANGUT_COMPONENT_DASH_277,
-            TangutComponents::TangutComponentDash278 => TANGUT_COMPONENT_DASH_278,
-            TangutComponents::TangutComponentDash279 => TANGUT_COMPONENT_DASH_279,
-            TangutComponents::TangutComponentDash280 => TANGUT_COMPONENT_DASH_280,
-            TangutComponents::TangutComponentDash281 => TANGUT_COMPONENT_DASH_281,
-            TangutComponents::TangutComponentDash282 => TANGUT_COMPONENT_DASH_282,
-            TangutComponents::TangutComponentDash283 => TANGUT_COMPONENT_DASH_283,
-            TangutComponents::TangutComponentDash284 => TANGUT_COMPONENT_DASH_284,
-            TangutComponents::TangutComponentDash285 => TANGUT_COMPONENT_DASH_285,
-            TangutComponents::TangutComponentDash286 => TANGUT_COMPONENT_DASH_286,
-            TangutComponents::TangutComponentDash287 => TANGUT_COMPONENT_DASH_287,
-            TangutComponents::TangutComponentDash288 => TANGUT_COMPONENT_DASH_288,
-            TangutComponents::TangutComponentDash289 => TANGUT_COMPONENT_DASH_289,
-            TangutComponents::TangutComponentDash290 => TANGUT_COMPONENT_DASH_290,
-            TangutComponents::TangutComponentDash291 => TANGUT_COMPONENT_DASH_291,
-            TangutComponents::TangutComponentDash292 => TANGUT_COMPONENT_DASH_292,
-            TangutComponents::TangutComponentDash293 => TANGUT_COMPONENT_DASH_293,
-            TangutComponents::TangutComponentDash294 => TANGUT_COMPONENT_DASH_294,
-            TangutComponents::TangutComponentDash295 => TANGUT_COMPONENT_DASH_295,
-            TangutComponents::TangutComponentDash296 => TANGUT_COMPONENT_DASH_296,
-            TangutComponents::TangutComponentDash297 => TANGUT_COMPONENT_DASH_297,
-            TangutComponents::TangutComponentDash298 => TANGUT_COMPONENT_DASH_298,
-            TangutComponents::TangutComponentDash299 => TANGUT_COMPONENT_DASH_299,
-            TangutComponents::TangutComponentDash300 => TANGUT_COMPONENT_DASH_300,
-            TangutComponents::TangutComponentDash301 => TANGUT_COMPONENT_DASH_301,
-            TangutComponents::TangutComponentDash302 => TANGUT_COMPONENT_DASH_302,
-            TangutComponents::TangutComponentDash303 => TANGUT_COMPONENT_DASH_303,
-            TangutComponents::TangutComponentDash304 => TANGUT_COMPONENT_DASH_304,
-            TangutComponents::TangutComponentDash305 => TANGUT_COMPONENT_DASH_305,
-            TangutComponents::TangutComponentDash306 => TANGUT_COMPONENT_DASH_306,
-            TangutComponents::TangutComponentDash307 => TANGUT_COMPONENT_DASH_307,
-            TangutComponents::TangutComponentDash308 => TANGUT_COMPONENT_DASH_308,
-            TangutComponents::TangutComponentDash309 => TANGUT_COMPONENT_DASH_309,
-            TangutComponents::TangutComponentDash310 => TANGUT_COMPONENT_DASH_310,
-            TangutComponents::TangutComponentDash311 => TANGUT_COMPONENT_DASH_311,
-            TangutComponents::TangutComponentDash312 => TANGUT_COMPONENT_DASH_312,
-            TangutComponents::TangutComponentDash313 => TANGUT_COMPONENT_DASH_313,
-            TangutComponents::TangutComponentDash314 => TANGUT_COMPONENT_DASH_314,
-            TangutComponents::TangutComponentDash315 => TANGUT_COMPONENT_DASH_315,
-            TangutComponents::TangutComponentDash316 => TANGUT_COMPONENT_DASH_316,
-            TangutComponents::TangutComponentDash317 => TANGUT_COMPONENT_DASH_317,
-            TangutComponents::TangutComponentDash318 => TANGUT_COMPONENT_DASH_318,
-            TangutComponents::TangutComponentDash319 => TANGUT_COMPONENT_DASH_319,
-            TangutComponents::TangutComponentDash320 => TANGUT_COMPONENT_DASH_320,
-            TangutComponents::TangutComponentDash321 => TANGUT_COMPONENT_DASH_321,
-            TangutComponents::TangutComponentDash322 => TANGUT_COMPONENT_DASH_322,
-            TangutComponents::TangutComponentDash323 => TANGUT_COMPONENT_DASH_323,
-            TangutComponents::TangutComponentDash324 => TANGUT_COMPONENT_DASH_324,
-            TangutComponents::TangutComponentDash325 => TANGUT_COMPONENT_DASH_325,
-            TangutComponents::TangutComponentDash326 => TANGUT_COMPONENT_DASH_326,
-            TangutComponents::TangutComponentDash327 => TANGUT_COMPONENT_DASH_327,
-            TangutComponents::TangutComponentDash328 => TANGUT_COMPONENT_DASH_328,
-            TangutComponents::TangutComponentDash329 => TANGUT_COMPONENT_DASH_329,
-            TangutComponents::TangutComponentDash330 => TANGUT_COMPONENT_DASH_330,
-            TangutComponents::TangutComponentDash331 => TANGUT_COMPONENT_DASH_331,
-            TangutComponents::TangutComponentDash332 => TANGUT_COMPONENT_DASH_332,
-            TangutComponents::TangutComponentDash333 => TANGUT_COMPONENT_DASH_333,
-            TangutComponents::TangutComponentDash334 => TANGUT_COMPONENT_DASH_334,
-            TangutComponents::TangutComponentDash335 => TANGUT_COMPONENT_DASH_335,
-            TangutComponents::TangutComponentDash336 => TANGUT_COMPONENT_DASH_336,
-            TangutComponents::TangutComponentDash337 => TANGUT_COMPONENT_DASH_337,
-            TangutComponents::TangutComponentDash338 => TANGUT_COMPONENT_DASH_338,
-            TangutComponents::TangutComponentDash339 => TANGUT_COMPONENT_DASH_339,
-            TangutComponents::TangutComponentDash340 => TANGUT_COMPONENT_DASH_340,
-            TangutComponents::TangutComponentDash341 => TANGUT_COMPONENT_DASH_341,
-            TangutComponents::TangutComponentDash342 => TANGUT_COMPONENT_DASH_342,
-            TangutComponents::TangutComponentDash343 => TANGUT_COMPONENT_DASH_343,
-            TangutComponents::TangutComponentDash344 => TANGUT_COMPONENT_DASH_344,
-            TangutComponents::TangutComponentDash345 => TANGUT_COMPONENT_DASH_345,
-            TangutComponents::TangutComponentDash346 => TANGUT_COMPONENT_DASH_346,
-            TangutComponents::TangutComponentDash347 => TANGUT_COMPONENT_DASH_347,
-            TangutComponents::TangutComponentDash348 => TANGUT_COMPONENT_DASH_348,
-            TangutComponents::TangutComponentDash349 => TANGUT_COMPONENT_DASH_349,
-            TangutComponents::TangutComponentDash350 => TANGUT_COMPONENT_DASH_350,
-            TangutComponents::TangutComponentDash351 => TANGUT_COMPONENT_DASH_351,
-            TangutComponents::TangutComponentDash352 => TANGUT_COMPONENT_DASH_352,
-            TangutComponents::TangutComponentDash353 => TANGUT_COMPONENT_DASH_353,
-            TangutComponents::TangutComponentDash354 => TANGUT_COMPONENT_DASH_354,
-            TangutComponents::TangutComponentDash355 => TANGUT_COMPONENT_DASH_355,
-            TangutComponents::TangutComponentDash356 => TANGUT_COMPONENT_DASH_356,
-            TangutComponents::TangutComponentDash357 => TANGUT_COMPONENT_DASH_357,
-            TangutComponents::TangutComponentDash358 => TANGUT_COMPONENT_DASH_358,
-            TangutComponents::TangutComponentDash359 => TANGUT_COMPONENT_DASH_359,
-            TangutComponents::TangutComponentDash360 => TANGUT_COMPONENT_DASH_360,
-            TangutComponents::TangutComponentDash361 => TANGUT_COMPONENT_DASH_361,
-            TangutComponents::TangutComponentDash362 => TANGUT_COMPONENT_DASH_362,
-            TangutComponents::TangutComponentDash363 => TANGUT_COMPONENT_DASH_363,
-            TangutComponents::TangutComponentDash364 => TANGUT_COMPONENT_DASH_364,
-            TangutComponents::TangutComponentDash365 => TANGUT_COMPONENT_DASH_365,
-            TangutComponents::TangutComponentDash366 => TANGUT_COMPONENT_DASH_366,
-            TangutComponents::TangutComponentDash367 => TANGUT_COMPONENT_DASH_367,
-            TangutComponents::TangutComponentDash368 => TANGUT_COMPONENT_DASH_368,
-            TangutComponents::TangutComponentDash369 => TANGUT_COMPONENT_DASH_369,
-            TangutComponents::TangutComponentDash370 => TANGUT_COMPONENT_DASH_370,
-            TangutComponents::TangutComponentDash371 => TANGUT_COMPONENT_DASH_371,
-            TangutComponents::TangutComponentDash372 => TANGUT_COMPONENT_DASH_372,
-            TangutComponents::TangutComponentDash373 => TANGUT_COMPONENT_DASH_373,
-            TangutComponents::TangutComponentDash374 => TANGUT_COMPONENT_DASH_374,
-            TangutComponents::TangutComponentDash375 => TANGUT_COMPONENT_DASH_375,
-            TangutComponents::TangutComponentDash376 => TANGUT_COMPONENT_DASH_376,
-            TangutComponents::TangutComponentDash377 => TANGUT_COMPONENT_DASH_377,
-            TangutComponents::TangutComponentDash378 => TANGUT_COMPONENT_DASH_378,
-            TangutComponents::TangutComponentDash379 => TANGUT_COMPONENT_DASH_379,
-            TangutComponents::TangutComponentDash380 => TANGUT_COMPONENT_DASH_380,
-            TangutComponents::TangutComponentDash381 => TANGUT_COMPONENT_DASH_381,
-            TangutComponents::TangutComponentDash382 => TANGUT_COMPONENT_DASH_382,
-            TangutComponents::TangutComponentDash383 => TANGUT_COMPONENT_DASH_383,
-            TangutComponents::TangutComponentDash384 => TANGUT_COMPONENT_DASH_384,
-            TangutComponents::TangutComponentDash385 => TANGUT_COMPONENT_DASH_385,
-            TangutComponents::TangutComponentDash386 => TANGUT_COMPONENT_DASH_386,
-            TangutComponents::TangutComponentDash387 => TANGUT_COMPONENT_DASH_387,
-            TangutComponents::TangutComponentDash388 => TANGUT_COMPONENT_DASH_388,
-            TangutComponents::TangutComponentDash389 => TANGUT_COMPONENT_DASH_389,
-            TangutComponents::TangutComponentDash390 => TANGUT_COMPONENT_DASH_390,
-            TangutComponents::TangutComponentDash391 => TANGUT_COMPONENT_DASH_391,
-            TangutComponents::TangutComponentDash392 => TANGUT_COMPONENT_DASH_392,
-            TangutComponents::TangutComponentDash393 => TANGUT_COMPONENT_DASH_393,
-            TangutComponents::TangutComponentDash394 => TANGUT_COMPONENT_DASH_394,
-            TangutComponents::TangutComponentDash395 => TANGUT_COMPONENT_DASH_395,
-            TangutComponents::TangutComponentDash396 => TANGUT_COMPONENT_DASH_396,
-            TangutComponents::TangutComponentDash397 => TANGUT_COMPONENT_DASH_397,
-            TangutComponents::TangutComponentDash398 => TANGUT_COMPONENT_DASH_398,
-            TangutComponents::TangutComponentDash399 => TANGUT_COMPONENT_DASH_399,
-            TangutComponents::TangutComponentDash400 => TANGUT_COMPONENT_DASH_400,
-            TangutComponents::TangutComponentDash401 => TANGUT_COMPONENT_DASH_401,
-            TangutComponents::TangutComponentDash402 => TANGUT_COMPONENT_DASH_402,
-            TangutComponents::TangutComponentDash403 => TANGUT_COMPONENT_DASH_403,
-            TangutComponents::TangutComponentDash404 => TANGUT_COMPONENT_DASH_404,
-            TangutComponents::TangutComponentDash405 => TANGUT_COMPONENT_DASH_405,
-            TangutComponents::TangutComponentDash406 => TANGUT_COMPONENT_DASH_406,
-            TangutComponents::TangutComponentDash407 => TANGUT_COMPONENT_DASH_407,
-            TangutComponents::TangutComponentDash408 => TANGUT_COMPONENT_DASH_408,
-            TangutComponents::TangutComponentDash409 => TANGUT_COMPONENT_DASH_409,
-            TangutComponents::TangutComponentDash410 => TANGUT_COMPONENT_DASH_410,
-            TangutComponents::TangutComponentDash411 => TANGUT_COMPONENT_DASH_411,
-            TangutComponents::TangutComponentDash412 => TANGUT_COMPONENT_DASH_412,
-            TangutComponents::TangutComponentDash413 => TANGUT_COMPONENT_DASH_413,
-            TangutComponents::TangutComponentDash414 => TANGUT_COMPONENT_DASH_414,
-            TangutComponents::TangutComponentDash415 => TANGUT_COMPONENT_DASH_415,
-            TangutComponents::TangutComponentDash416 => TANGUT_COMPONENT_DASH_416,
-            TangutComponents::TangutComponentDash417 => TANGUT_COMPONENT_DASH_417,
-            TangutComponents::TangutComponentDash418 => TANGUT_COMPONENT_DASH_418,
-            TangutComponents::TangutComponentDash419 => TANGUT_COMPONENT_DASH_419,
-            TangutComponents::TangutComponentDash420 => TANGUT_COMPONENT_DASH_420,
-            TangutComponents::TangutComponentDash421 => TANGUT_COMPONENT_DASH_421,
-            TangutComponents::TangutComponentDash422 => TANGUT_COMPONENT_DASH_422,
-            TangutComponents::TangutComponentDash423 => TANGUT_COMPONENT_DASH_423,
-            TangutComponents::TangutComponentDash424 => TANGUT_COMPONENT_DASH_424,
-            TangutComponents::TangutComponentDash425 => TANGUT_COMPONENT_DASH_425,
-            TangutComponents::TangutComponentDash426 => TANGUT_COMPONENT_DASH_426,
-            TangutComponents::TangutComponentDash427 => TANGUT_COMPONENT_DASH_427,
-            TangutComponents::TangutComponentDash428 => TANGUT_COMPONENT_DASH_428,
-            TangutComponents::TangutComponentDash429 => TANGUT_COMPONENT_DASH_429,
-            TangutComponents::TangutComponentDash430 => TANGUT_COMPONENT_DASH_430,
-            TangutComponents::TangutComponentDash431 => TANGUT_COMPONENT_DASH_431,
-            TangutComponents::TangutComponentDash432 => TANGUT_COMPONENT_DASH_432,
-            TangutComponents::TangutComponentDash433 => TANGUT_COMPONENT_DASH_433,
-            TangutComponents::TangutComponentDash434 => TANGUT_COMPONENT_DASH_434,
-            TangutComponents::TangutComponentDash435 => TANGUT_COMPONENT_DASH_435,
-            TangutComponents::TangutComponentDash436 => TANGUT_COMPONENT_DASH_436,
-            TangutComponents::TangutComponentDash437 => TANGUT_COMPONENT_DASH_437,
-            TangutComponents::TangutComponentDash438 => TANGUT_COMPONENT_DASH_438,
-            TangutComponents::TangutComponentDash439 => TANGUT_COMPONENT_DASH_439,
-            TangutComponents::TangutComponentDash440 => TANGUT_COMPONENT_DASH_440,
-            TangutComponents::TangutComponentDash441 => TANGUT_COMPONENT_DASH_441,
-            TangutComponents::TangutComponentDash442 => TANGUT_COMPONENT_DASH_442,
-            TangutComponents::TangutComponentDash443 => TANGUT_COMPONENT_DASH_443,
-            TangutComponents::TangutComponentDash444 => TANGUT_COMPONENT_DASH_444,
-            TangutComponents::TangutComponentDash445 => TANGUT_COMPONENT_DASH_445,
-            TangutComponents::TangutComponentDash446 => TANGUT_COMPONENT_DASH_446,
-            TangutComponents::TangutComponentDash447 => TANGUT_COMPONENT_DASH_447,
-            TangutComponents::TangutComponentDash448 => TANGUT_COMPONENT_DASH_448,
-            TangutComponents::TangutComponentDash449 => TANGUT_COMPONENT_DASH_449,
-            TangutComponents::TangutComponentDash450 => TANGUT_COMPONENT_DASH_450,
-            TangutComponents::TangutComponentDash451 => TANGUT_COMPONENT_DASH_451,
-            TangutComponents::TangutComponentDash452 => TANGUT_COMPONENT_DASH_452,
-            TangutComponents::TangutComponentDash453 => TANGUT_COMPONENT_DASH_453,
-            TangutComponents::TangutComponentDash454 => TANGUT_COMPONENT_DASH_454,
-            TangutComponents::TangutComponentDash455 => TANGUT_COMPONENT_DASH_455,
-            TangutComponents::TangutComponentDash456 => TANGUT_COMPONENT_DASH_456,
-            TangutComponents::TangutComponentDash457 => TANGUT_COMPONENT_DASH_457,
-            TangutComponents::TangutComponentDash458 => TANGUT_COMPONENT_DASH_458,
-            TangutComponents::TangutComponentDash459 => TANGUT_COMPONENT_DASH_459,
-            TangutComponents::TangutComponentDash460 => TANGUT_COMPONENT_DASH_460,
-            TangutComponents::TangutComponentDash461 => TANGUT_COMPONENT_DASH_461,
-            TangutComponents::TangutComponentDash462 => TANGUT_COMPONENT_DASH_462,
-            TangutComponents::TangutComponentDash463 => TANGUT_COMPONENT_DASH_463,
-            TangutComponents::TangutComponentDash464 => TANGUT_COMPONENT_DASH_464,
-            TangutComponents::TangutComponentDash465 => TANGUT_COMPONENT_DASH_465,
-            TangutComponents::TangutComponentDash466 => TANGUT_COMPONENT_DASH_466,
-            TangutComponents::TangutComponentDash467 => TANGUT_COMPONENT_DASH_467,
-            TangutComponents::TangutComponentDash468 => TANGUT_COMPONENT_DASH_468,
-            TangutComponents::TangutComponentDash469 => TANGUT_COMPONENT_DASH_469,
-            TangutComponents::TangutComponentDash470 => TANGUT_COMPONENT_DASH_470,
-            TangutComponents::TangutComponentDash471 => TANGUT_COMPONENT_DASH_471,
-            TangutComponents::TangutComponentDash472 => TANGUT_COMPONENT_DASH_472,
-            TangutComponents::TangutComponentDash473 => TANGUT_COMPONENT_DASH_473,
-            TangutComponents::TangutComponentDash474 => TANGUT_COMPONENT_DASH_474,
-            TangutComponents::TangutComponentDash475 => TANGUT_COMPONENT_DASH_475,
-            TangutComponents::TangutComponentDash476 => TANGUT_COMPONENT_DASH_476,
-            TangutComponents::TangutComponentDash477 => TANGUT_COMPONENT_DASH_477,
-            TangutComponents::TangutComponentDash478 => TANGUT_COMPONENT_DASH_478,
-            TangutComponents::TangutComponentDash479 => TANGUT_COMPONENT_DASH_479,
-            TangutComponents::TangutComponentDash480 => TANGUT_COMPONENT_DASH_480,
-            TangutComponents::TangutComponentDash481 => TANGUT_COMPONENT_DASH_481,
-            TangutComponents::TangutComponentDash482 => TANGUT_COMPONENT_DASH_482,
-            TangutComponents::TangutComponentDash483 => TANGUT_COMPONENT_DASH_483,
-            TangutComponents::TangutComponentDash484 => TANGUT_COMPONENT_DASH_484,
-            TangutComponents::TangutComponentDash485 => TANGUT_COMPONENT_DASH_485,
-            TangutComponents::TangutComponentDash486 => TANGUT_COMPONENT_DASH_486,
-            TangutComponents::TangutComponentDash487 => TANGUT_COMPONENT_DASH_487,
-            TangutComponents::TangutComponentDash488 => TANGUT_COMPONENT_DASH_488,
-            TangutComponents::TangutComponentDash489 => TANGUT_COMPONENT_DASH_489,
-            TangutComponents::TangutComponentDash490 => TANGUT_COMPONENT_DASH_490,
-            TangutComponents::TangutComponentDash491 => TANGUT_COMPONENT_DASH_491,
-            TangutComponents::TangutComponentDash492 => TANGUT_COMPONENT_DASH_492,
-            TangutComponents::TangutComponentDash493 => TANGUT_COMPONENT_DASH_493,
-            TangutComponents::TangutComponentDash494 => TANGUT_COMPONENT_DASH_494,
-            TangutComponents::TangutComponentDash495 => TANGUT_COMPONENT_DASH_495,
-            TangutComponents::TangutComponentDash496 => TANGUT_COMPONENT_DASH_496,
-            TangutComponents::TangutComponentDash497 => TANGUT_COMPONENT_DASH_497,
-            TangutComponents::TangutComponentDash498 => TANGUT_COMPONENT_DASH_498,
-            TangutComponents::TangutComponentDash499 => TANGUT_COMPONENT_DASH_499,
-            TangutComponents::TangutComponentDash500 => TANGUT_COMPONENT_DASH_500,
-            TangutComponents::TangutComponentDash501 => TANGUT_COMPONENT_DASH_501,
-            TangutComponents::TangutComponentDash502 => TANGUT_COMPONENT_DASH_502,
-            TangutComponents::TangutComponentDash503 => TANGUT_COMPONENT_DASH_503,
-            TangutComponents::TangutComponentDash504 => TANGUT_COMPONENT_DASH_504,
-            TangutComponents::TangutComponentDash505 => TANGUT_COMPONENT_DASH_505,
-            TangutComponents::TangutComponentDash506 => TANGUT_COMPONENT_DASH_506,
-            TangutComponents::TangutComponentDash507 => TANGUT_COMPONENT_DASH_507,
-            TangutComponents::TangutComponentDash508 => TANGUT_COMPONENT_DASH_508,
-            TangutComponents::TangutComponentDash509 => TANGUT_COMPONENT_DASH_509,
-            TangutComponents::TangutComponentDash510 => TANGUT_COMPONENT_DASH_510,
-            TangutComponents::TangutComponentDash511 => TANGUT_COMPONENT_DASH_511,
-            TangutComponents::TangutComponentDash512 => TANGUT_COMPONENT_DASH_512,
-            TangutComponents::TangutComponentDash513 => TANGUT_COMPONENT_DASH_513,
-            TangutComponents::TangutComponentDash514 => TANGUT_COMPONENT_DASH_514,
-            TangutComponents::TangutComponentDash515 => TANGUT_COMPONENT_DASH_515,
-            TangutComponents::TangutComponentDash516 => TANGUT_COMPONENT_DASH_516,
-            TangutComponents::TangutComponentDash517 => TANGUT_COMPONENT_DASH_517,
-            TangutComponents::TangutComponentDash518 => TANGUT_COMPONENT_DASH_518,
-            TangutComponents::TangutComponentDash519 => TANGUT_COMPONENT_DASH_519,
-            TangutComponents::TangutComponentDash520 => TANGUT_COMPONENT_DASH_520,
-            TangutComponents::TangutComponentDash521 => TANGUT_COMPONENT_DASH_521,
-            TangutComponents::TangutComponentDash522 => TANGUT_COMPONENT_DASH_522,
-            TangutComponents::TangutComponentDash523 => TANGUT_COMPONENT_DASH_523,
-            TangutComponents::TangutComponentDash524 => TANGUT_COMPONENT_DASH_524,
-            TangutComponents::TangutComponentDash525 => TANGUT_COMPONENT_DASH_525,
-            TangutComponents::TangutComponentDash526 => TANGUT_COMPONENT_DASH_526,
-            TangutComponents::TangutComponentDash527 => TANGUT_COMPONENT_DASH_527,
-            TangutComponents::TangutComponentDash528 => TANGUT_COMPONENT_DASH_528,
-            TangutComponents::TangutComponentDash529 => TANGUT_COMPONENT_DASH_529,
-            TangutComponents::TangutComponentDash530 => TANGUT_COMPONENT_DASH_530,
-            TangutComponents::TangutComponentDash531 => TANGUT_COMPONENT_DASH_531,
-            TangutComponents::TangutComponentDash532 => TANGUT_COMPONENT_DASH_532,
-            TangutComponents::TangutComponentDash533 => TANGUT_COMPONENT_DASH_533,
-            TangutComponents::TangutComponentDash534 => TANGUT_COMPONENT_DASH_534,
-            TangutComponents::TangutComponentDash535 => TANGUT_COMPONENT_DASH_535,
-            TangutComponents::TangutComponentDash536 => TANGUT_COMPONENT_DASH_536,
-            TangutComponents::TangutComponentDash537 => TANGUT_COMPONENT_DASH_537,
-            TangutComponents::TangutComponentDash538 => TANGUT_COMPONENT_DASH_538,
-            TangutComponents::TangutComponentDash539 => TANGUT_COMPONENT_DASH_539,
-            TangutComponents::TangutComponentDash540 => TANGUT_COMPONENT_DASH_540,
-            TangutComponents::TangutComponentDash541 => TANGUT_COMPONENT_DASH_541,
-            TangutComponents::TangutComponentDash542 => TANGUT_COMPONENT_DASH_542,
-            TangutComponents::TangutComponentDash543 => TANGUT_COMPONENT_DASH_543,
-            TangutComponents::TangutComponentDash544 => TANGUT_COMPONENT_DASH_544,
-            TangutComponents::TangutComponentDash545 => TANGUT_COMPONENT_DASH_545,
-            TangutComponents::TangutComponentDash546 => TANGUT_COMPONENT_DASH_546,
-            TangutComponents::TangutComponentDash547 => TANGUT_COMPONENT_DASH_547,
-            TangutComponents::TangutComponentDash548 => TANGUT_COMPONENT_DASH_548,
-            TangutComponents::TangutComponentDash549 => TANGUT_COMPONENT_DASH_549,
-            TangutComponents::TangutComponentDash550 => TANGUT_COMPONENT_DASH_550,
-            TangutComponents::TangutComponentDash551 => TANGUT_COMPONENT_DASH_551,
-            TangutComponents::TangutComponentDash552 => TANGUT_COMPONENT_DASH_552,
-            TangutComponents::TangutComponentDash553 => TANGUT_COMPONENT_DASH_553,
-            TangutComponents::TangutComponentDash554 => TANGUT_COMPONENT_DASH_554,
-            TangutComponents::TangutComponentDash555 => TANGUT_COMPONENT_DASH_555,
-            TangutComponents::TangutComponentDash556 => TANGUT_COMPONENT_DASH_556,
-            TangutComponents::TangutComponentDash557 => TANGUT_COMPONENT_DASH_557,
-            TangutComponents::TangutComponentDash558 => TANGUT_COMPONENT_DASH_558,
-            TangutComponents::TangutComponentDash559 => TANGUT_COMPONENT_DASH_559,
-            TangutComponents::TangutComponentDash560 => TANGUT_COMPONENT_DASH_560,
-            TangutComponents::TangutComponentDash561 => TANGUT_COMPONENT_DASH_561,
-            TangutComponents::TangutComponentDash562 => TANGUT_COMPONENT_DASH_562,
-            TangutComponents::TangutComponentDash563 => TANGUT_COMPONENT_DASH_563,
-            TangutComponents::TangutComponentDash564 => TANGUT_COMPONENT_DASH_564,
-            TangutComponents::TangutComponentDash565 => TANGUT_COMPONENT_DASH_565,
-            TangutComponents::TangutComponentDash566 => TANGUT_COMPONENT_DASH_566,
-            TangutComponents::TangutComponentDash567 => TANGUT_COMPONENT_DASH_567,
-            TangutComponents::TangutComponentDash568 => TANGUT_COMPONENT_DASH_568,
-            TangutComponents::TangutComponentDash569 => TANGUT_COMPONENT_DASH_569,
-            TangutComponents::TangutComponentDash570 => TANGUT_COMPONENT_DASH_570,
-            TangutComponents::TangutComponentDash571 => TANGUT_COMPONENT_DASH_571,
-            TangutComponents::TangutComponentDash572 => TANGUT_COMPONENT_DASH_572,
-            TangutComponents::TangutComponentDash573 => TANGUT_COMPONENT_DASH_573,
-            TangutComponents::TangutComponentDash574 => TANGUT_COMPONENT_DASH_574,
-            TangutComponents::TangutComponentDash575 => TANGUT_COMPONENT_DASH_575,
-            TangutComponents::TangutComponentDash576 => TANGUT_COMPONENT_DASH_576,
-            TangutComponents::TangutComponentDash577 => TANGUT_COMPONENT_DASH_577,
-            TangutComponents::TangutComponentDash578 => TANGUT_COMPONENT_DASH_578,
-            TangutComponents::TangutComponentDash579 => TANGUT_COMPONENT_DASH_579,
-            TangutComponents::TangutComponentDash580 => TANGUT_COMPONENT_DASH_580,
-            TangutComponents::TangutComponentDash581 => TANGUT_COMPONENT_DASH_581,
-            TangutComponents::TangutComponentDash582 => TANGUT_COMPONENT_DASH_582,
-            TangutComponents::TangutComponentDash583 => TANGUT_COMPONENT_DASH_583,
-            TangutComponents::TangutComponentDash584 => TANGUT_COMPONENT_DASH_584,
-            TangutComponents::TangutComponentDash585 => TANGUT_COMPONENT_DASH_585,
-            TangutComponents::TangutComponentDash586 => TANGUT_COMPONENT_DASH_586,
-            TangutComponents::TangutComponentDash587 => TANGUT_COMPONENT_DASH_587,
-            TangutComponents::TangutComponentDash588 => TANGUT_COMPONENT_DASH_588,
-            TangutComponents::TangutComponentDash589 => TANGUT_COMPONENT_DASH_589,
-            TangutComponents::TangutComponentDash590 => TANGUT_COMPONENT_DASH_590,
-            TangutComponents::TangutComponentDash591 => TANGUT_COMPONENT_DASH_591,
-            TangutComponents::TangutComponentDash592 => TANGUT_COMPONENT_DASH_592,
-            TangutComponents::TangutComponentDash593 => TANGUT_COMPONENT_DASH_593,
-            TangutComponents::TangutComponentDash594 => TANGUT_COMPONENT_DASH_594,
-            TangutComponents::TangutComponentDash595 => TANGUT_COMPONENT_DASH_595,
-            TangutComponents::TangutComponentDash596 => TANGUT_COMPONENT_DASH_596,
-            TangutComponents::TangutComponentDash597 => TANGUT_COMPONENT_DASH_597,
-            TangutComponents::TangutComponentDash598 => TANGUT_COMPONENT_DASH_598,
-            TangutComponents::TangutComponentDash599 => TANGUT_COMPONENT_DASH_599,
-            TangutComponents::TangutComponentDash600 => TANGUT_COMPONENT_DASH_600,
-            TangutComponents::TangutComponentDash601 => TANGUT_COMPONENT_DASH_601,
-            TangutComponents::TangutComponentDash602 => TANGUT_COMPONENT_DASH_602,
-            TangutComponents::TangutComponentDash603 => TANGUT_COMPONENT_DASH_603,
-            TangutComponents::TangutComponentDash604 => TANGUT_COMPONENT_DASH_604,
-            TangutComponents::TangutComponentDash605 => TANGUT_COMPONENT_DASH_605,
-            TangutComponents::TangutComponentDash606 => TANGUT_COMPONENT_DASH_606,
-            TangutComponents::TangutComponentDash607 => TANGUT_COMPONENT_DASH_607,
-            TangutComponents::TangutComponentDash608 => TANGUT_COMPONENT_DASH_608,
-            TangutComponents::TangutComponentDash609 => TANGUT_COMPONENT_DASH_609,
-            TangutComponents::TangutComponentDash610 => TANGUT_COMPONENT_DASH_610,
-            TangutComponents::TangutComponentDash611 => TANGUT_COMPONENT_DASH_611,
-            TangutComponents::TangutComponentDash612 => TANGUT_COMPONENT_DASH_612,
-            TangutComponents::TangutComponentDash613 => TANGUT_COMPONENT_DASH_613,
-            TangutComponents::TangutComponentDash614 => TANGUT_COMPONENT_DASH_614,
-            TangutComponents::TangutComponentDash615 => TANGUT_COMPONENT_DASH_615,
-            TangutComponents::TangutComponentDash616 => TANGUT_COMPONENT_DASH_616,
-            TangutComponents::TangutComponentDash617 => TANGUT_COMPONENT_DASH_617,
-            TangutComponents::TangutComponentDash618 => TANGUT_COMPONENT_DASH_618,
-            TangutComponents::TangutComponentDash619 => TANGUT_COMPONENT_DASH_619,
-            TangutComponents::TangutComponentDash620 => TANGUT_COMPONENT_DASH_620,
-            TangutComponents::TangutComponentDash621 => TANGUT_COMPONENT_DASH_621,
-            TangutComponents::TangutComponentDash622 => TANGUT_COMPONENT_DASH_622,
-            TangutComponents::TangutComponentDash623 => TANGUT_COMPONENT_DASH_623,
-            TangutComponents::TangutComponentDash624 => TANGUT_COMPONENT_DASH_624,
-            TangutComponents::TangutComponentDash625 => TANGUT_COMPONENT_DASH_625,
-            TangutComponents::TangutComponentDash626 => TANGUT_COMPONENT_DASH_626,
-            TangutComponents::TangutComponentDash627 => TANGUT_COMPONENT_DASH_627,
-            TangutComponents::TangutComponentDash628 => TANGUT_COMPONENT_DASH_628,
-            TangutComponents::TangutComponentDash629 => TANGUT_COMPONENT_DASH_629,
-            TangutComponents::TangutComponentDash630 => TANGUT_COMPONENT_DASH_630,
-            TangutComponents::TangutComponentDash631 => TANGUT_COMPONENT_DASH_631,
-            TangutComponents::TangutComponentDash632 => TANGUT_COMPONENT_DASH_632,
-            TangutComponents::TangutComponentDash633 => TANGUT_COMPONENT_DASH_633,
-            TangutComponents::TangutComponentDash634 => TANGUT_COMPONENT_DASH_634,
-            TangutComponents::TangutComponentDash635 => TANGUT_COMPONENT_DASH_635,
-            TangutComponents::TangutComponentDash636 => TANGUT_COMPONENT_DASH_636,
-            TangutComponents::TangutComponentDash637 => TANGUT_COMPONENT_DASH_637,
-            TangutComponents::TangutComponentDash638 => TANGUT_COMPONENT_DASH_638,
-            TangutComponents::TangutComponentDash639 => TANGUT_COMPONENT_DASH_639,
-            TangutComponents::TangutComponentDash640 => TANGUT_COMPONENT_DASH_640,
-            TangutComponents::TangutComponentDash641 => TANGUT_COMPONENT_DASH_641,
-            TangutComponents::TangutComponentDash642 => TANGUT_COMPONENT_DASH_642,
-            TangutComponents::TangutComponentDash643 => TANGUT_COMPONENT_DASH_643,
-            TangutComponents::TangutComponentDash644 => TANGUT_COMPONENT_DASH_644,
-            TangutComponents::TangutComponentDash645 => TANGUT_COMPONENT_DASH_645,
-            TangutComponents::TangutComponentDash646 => TANGUT_COMPONENT_DASH_646,
-            TangutComponents::TangutComponentDash647 => TANGUT_COMPONENT_DASH_647,
-            TangutComponents::TangutComponentDash648 => TANGUT_COMPONENT_DASH_648,
-            TangutComponents::TangutComponentDash649 => TANGUT_COMPONENT_DASH_649,
-            TangutComponents::TangutComponentDash650 => TANGUT_COMPONENT_DASH_650,
-            TangutComponents::TangutComponentDash651 => TANGUT_COMPONENT_DASH_651,
-            TangutComponents::TangutComponentDash652 => TANGUT_COMPONENT_DASH_652,
-            TangutComponents::TangutComponentDash653 => TANGUT_COMPONENT_DASH_653,
-            TangutComponents::TangutComponentDash654 => TANGUT_COMPONENT_DASH_654,
-            TangutComponents::TangutComponentDash655 => TANGUT_COMPONENT_DASH_655,
-            TangutComponents::TangutComponentDash656 => TANGUT_COMPONENT_DASH_656,
-            TangutComponents::TangutComponentDash657 => TANGUT_COMPONENT_DASH_657,
-            TangutComponents::TangutComponentDash658 => TANGUT_COMPONENT_DASH_658,
-            TangutComponents::TangutComponentDash659 => TANGUT_COMPONENT_DASH_659,
-            TangutComponents::TangutComponentDash660 => TANGUT_COMPONENT_DASH_660,
-            TangutComponents::TangutComponentDash661 => TANGUT_COMPONENT_DASH_661,
-            TangutComponents::TangutComponentDash662 => TANGUT_COMPONENT_DASH_662,
-            TangutComponents::TangutComponentDash663 => TANGUT_COMPONENT_DASH_663,
-            TangutComponents::TangutComponentDash664 => TANGUT_COMPONENT_DASH_664,
-            TangutComponents::TangutComponentDash665 => TANGUT_COMPONENT_DASH_665,
-            TangutComponents::TangutComponentDash666 => TANGUT_COMPONENT_DASH_666,
-            TangutComponents::TangutComponentDash667 => TANGUT_COMPONENT_DASH_667,
-            TangutComponents::TangutComponentDash668 => TANGUT_COMPONENT_DASH_668,
-            TangutComponents::TangutComponentDash669 => TANGUT_COMPONENT_DASH_669,
-            TangutComponents::TangutComponentDash670 => TANGUT_COMPONENT_DASH_670,
-            TangutComponents::TangutComponentDash671 => TANGUT_COMPONENT_DASH_671,
-            TangutComponents::TangutComponentDash672 => TANGUT_COMPONENT_DASH_672,
-            TangutComponents::TangutComponentDash673 => TANGUT_COMPONENT_DASH_673,
-            TangutComponents::TangutComponentDash674 => TANGUT_COMPONENT_DASH_674,
-            TangutComponents::TangutComponentDash675 => TANGUT_COMPONENT_DASH_675,
-            TangutComponents::TangutComponentDash676 => TANGUT_COMPONENT_DASH_676,
-            TangutComponents::TangutComponentDash677 => TANGUT_COMPONENT_DASH_677,
-            TangutComponents::TangutComponentDash678 => TANGUT_COMPONENT_DASH_678,
-            TangutComponents::TangutComponentDash679 => TANGUT_COMPONENT_DASH_679,
-            TangutComponents::TangutComponentDash680 => TANGUT_COMPONENT_DASH_680,
-            TangutComponents::TangutComponentDash681 => TANGUT_COMPONENT_DASH_681,
-            TangutComponents::TangutComponentDash682 => TANGUT_COMPONENT_DASH_682,
-            TangutComponents::TangutComponentDash683 => TANGUT_COMPONENT_DASH_683,
-            TangutComponents::TangutComponentDash684 => TANGUT_COMPONENT_DASH_684,
-            TangutComponents::TangutComponentDash685 => TANGUT_COMPONENT_DASH_685,
-            TangutComponents::TangutComponentDash686 => TANGUT_COMPONENT_DASH_686,
-            TangutComponents::TangutComponentDash687 => TANGUT_COMPONENT_DASH_687,
-            TangutComponents::TangutComponentDash688 => TANGUT_COMPONENT_DASH_688,
-            TangutComponents::TangutComponentDash689 => TANGUT_COMPONENT_DASH_689,
-            TangutComponents::TangutComponentDash690 => TANGUT_COMPONENT_DASH_690,
-            TangutComponents::TangutComponentDash691 => TANGUT_COMPONENT_DASH_691,
-            TangutComponents::TangutComponentDash692 => TANGUT_COMPONENT_DASH_692,
-            TangutComponents::TangutComponentDash693 => TANGUT_COMPONENT_DASH_693,
-            TangutComponents::TangutComponentDash694 => TANGUT_COMPONENT_DASH_694,
-            TangutComponents::TangutComponentDash695 => TANGUT_COMPONENT_DASH_695,
-            TangutComponents::TangutComponentDash696 => TANGUT_COMPONENT_DASH_696,
-            TangutComponents::TangutComponentDash697 => TANGUT_COMPONENT_DASH_697,
-            TangutComponents::TangutComponentDash698 => TANGUT_COMPONENT_DASH_698,
-            TangutComponents::TangutComponentDash699 => TANGUT_COMPONENT_DASH_699,
-            TangutComponents::TangutComponentDash700 => TANGUT_COMPONENT_DASH_700,
-            TangutComponents::TangutComponentDash701 => TANGUT_COMPONENT_DASH_701,
-            TangutComponents::TangutComponentDash702 => TANGUT_COMPONENT_DASH_702,
-            TangutComponents::TangutComponentDash703 => TANGUT_COMPONENT_DASH_703,
-            TangutComponents::TangutComponentDash704 => TANGUT_COMPONENT_DASH_704,
-            TangutComponents::TangutComponentDash705 => TANGUT_COMPONENT_DASH_705,
-            TangutComponents::TangutComponentDash706 => TANGUT_COMPONENT_DASH_706,
-            TangutComponents::TangutComponentDash707 => TANGUT_COMPONENT_DASH_707,
-            TangutComponents::TangutComponentDash708 => TANGUT_COMPONENT_DASH_708,
-            TangutComponents::TangutComponentDash709 => TANGUT_COMPONENT_DASH_709,
-            TangutComponents::TangutComponentDash710 => TANGUT_COMPONENT_DASH_710,
-            TangutComponents::TangutComponentDash711 => TANGUT_COMPONENT_DASH_711,
-            TangutComponents::TangutComponentDash712 => TANGUT_COMPONENT_DASH_712,
-            TangutComponents::TangutComponentDash713 => TANGUT_COMPONENT_DASH_713,
-            TangutComponents::TangutComponentDash714 => TANGUT_COMPONENT_DASH_714,
-            TangutComponents::TangutComponentDash715 => TANGUT_COMPONENT_DASH_715,
-            TangutComponents::TangutComponentDash716 => TANGUT_COMPONENT_DASH_716,
-            TangutComponents::TangutComponentDash717 => TANGUT_COMPONENT_DASH_717,
-            TangutComponents::TangutComponentDash718 => TANGUT_COMPONENT_DASH_718,
-            TangutComponents::TangutComponentDash719 => TANGUT_COMPONENT_DASH_719,
-            TangutComponents::TangutComponentDash720 => TANGUT_COMPONENT_DASH_720,
-            TangutComponents::TangutComponentDash721 => TANGUT_COMPONENT_DASH_721,
-            TangutComponents::TangutComponentDash722 => TANGUT_COMPONENT_DASH_722,
-            TangutComponents::TangutComponentDash723 => TANGUT_COMPONENT_DASH_723,
-            TangutComponents::TangutComponentDash724 => TANGUT_COMPONENT_DASH_724,
-            TangutComponents::TangutComponentDash725 => TANGUT_COMPONENT_DASH_725,
-            TangutComponents::TangutComponentDash726 => TANGUT_COMPONENT_DASH_726,
-            TangutComponents::TangutComponentDash727 => TANGUT_COMPONENT_DASH_727,
-            TangutComponents::TangutComponentDash728 => TANGUT_COMPONENT_DASH_728,
-            TangutComponents::TangutComponentDash729 => TANGUT_COMPONENT_DASH_729,
-            TangutComponents::TangutComponentDash730 => TANGUT_COMPONENT_DASH_730,
-            TangutComponents::TangutComponentDash731 => TANGUT_COMPONENT_DASH_731,
-            TangutComponents::TangutComponentDash732 => TANGUT_COMPONENT_DASH_732,
-            TangutComponents::TangutComponentDash733 => TANGUT_COMPONENT_DASH_733,
-            TangutComponents::TangutComponentDash734 => TANGUT_COMPONENT_DASH_734,
-            TangutComponents::TangutComponentDash735 => TANGUT_COMPONENT_DASH_735,
-            TangutComponents::TangutComponentDash736 => TANGUT_COMPONENT_DASH_736,
-            TangutComponents::TangutComponentDash737 => TANGUT_COMPONENT_DASH_737,
-            TangutComponents::TangutComponentDash738 => TANGUT_COMPONENT_DASH_738,
-            TangutComponents::TangutComponentDash739 => TANGUT_COMPONENT_DASH_739,
-            TangutComponents::TangutComponentDash740 => TANGUT_COMPONENT_DASH_740,
-            TangutComponents::TangutComponentDash741 => TANGUT_COMPONENT_DASH_741,
-            TangutComponents::TangutComponentDash742 => TANGUT_COMPONENT_DASH_742,
-            TangutComponents::TangutComponentDash743 => TANGUT_COMPONENT_DASH_743,
-            TangutComponents::TangutComponentDash744 => TANGUT_COMPONENT_DASH_744,
-            TangutComponents::TangutComponentDash745 => TANGUT_COMPONENT_DASH_745,
-            TangutComponents::TangutComponentDash746 => TANGUT_COMPONENT_DASH_746,
-            TangutComponents::TangutComponentDash747 => TANGUT_COMPONENT_DASH_747,
-            TangutComponents::TangutComponentDash748 => TANGUT_COMPONENT_DASH_748,
-            TangutComponents::TangutComponentDash749 => TANGUT_COMPONENT_DASH_749,
-            TangutComponents::TangutComponentDash750 => TANGUT_COMPONENT_DASH_750,
-            TangutComponents::TangutComponentDash751 => TANGUT_COMPONENT_DASH_751,
-            TangutComponents::TangutComponentDash752 => TANGUT_COMPONENT_DASH_752,
-            TangutComponents::TangutComponentDash753 => TANGUT_COMPONENT_DASH_753,
-            TangutComponents::TangutComponentDash754 => TANGUT_COMPONENT_DASH_754,
-            TangutComponents::TangutComponentDash755 => TANGUT_COMPONENT_DASH_755,
+            TangutComponents::TangutComponentDash001 => '𘠀',
+            TangutComponents::TangutComponentDash002 => '𘠁',
+            TangutComponents::TangutComponentDash003 => '𘠂',
+            TangutComponents::TangutComponentDash004 => '𘠃',
+            TangutComponents::TangutComponentDash005 => '𘠄',
+            TangutComponents::TangutComponentDash006 => '𘠅',
+            TangutComponents::TangutComponentDash007 => '𘠆',
+            TangutComponents::TangutComponentDash008 => '𘠇',
+            TangutComponents::TangutComponentDash009 => '𘠈',
+            TangutComponents::TangutComponentDash010 => '𘠉',
+            TangutComponents::TangutComponentDash011 => '𘠊',
+            TangutComponents::TangutComponentDash012 => '𘠋',
+            TangutComponents::TangutComponentDash013 => '𘠌',
+            TangutComponents::TangutComponentDash014 => '𘠍',
+            TangutComponents::TangutComponentDash015 => '𘠎',
+            TangutComponents::TangutComponentDash016 => '𘠏',
+            TangutComponents::TangutComponentDash017 => '𘠐',
+            TangutComponents::TangutComponentDash018 => '𘠑',
+            TangutComponents::TangutComponentDash019 => '𘠒',
+            TangutComponents::TangutComponentDash020 => '𘠓',
+            TangutComponents::TangutComponentDash021 => '𘠔',
+            TangutComponents::TangutComponentDash022 => '𘠕',
+            TangutComponents::TangutComponentDash023 => '𘠖',
+            TangutComponents::TangutComponentDash024 => '𘠗',
+            TangutComponents::TangutComponentDash025 => '𘠘',
+            TangutComponents::TangutComponentDash026 => '𘠙',
+            TangutComponents::TangutComponentDash027 => '𘠚',
+            TangutComponents::TangutComponentDash028 => '𘠛',
+            TangutComponents::TangutComponentDash029 => '𘠜',
+            TangutComponents::TangutComponentDash030 => '𘠝',
+            TangutComponents::TangutComponentDash031 => '𘠞',
+            TangutComponents::TangutComponentDash032 => '𘠟',
+            TangutComponents::TangutComponentDash033 => '𘠠',
+            TangutComponents::TangutComponentDash034 => '𘠡',
+            TangutComponents::TangutComponentDash035 => '𘠢',
+            TangutComponents::TangutComponentDash036 => '𘠣',
+            TangutComponents::TangutComponentDash037 => '𘠤',
+            TangutComponents::TangutComponentDash038 => '𘠥',
+            TangutComponents::TangutComponentDash039 => '𘠦',
+            TangutComponents::TangutComponentDash040 => '𘠧',
+            TangutComponents::TangutComponentDash041 => '𘠨',
+            TangutComponents::TangutComponentDash042 => '𘠩',
+            TangutComponents::TangutComponentDash043 => '𘠪',
+            TangutComponents::TangutComponentDash044 => '𘠫',
+            TangutComponents::TangutComponentDash045 => '𘠬',
+            TangutComponents::TangutComponentDash046 => '𘠭',
+            TangutComponents::TangutComponentDash047 => '𘠮',
+            TangutComponents::TangutComponentDash048 => '𘠯',
+            TangutComponents::TangutComponentDash049 => '𘠰',
+            TangutComponents::TangutComponentDash050 => '𘠱',
+            TangutComponents::TangutComponentDash051 => '𘠲',
+            TangutComponents::TangutComponentDash052 => '𘠳',
+            TangutComponents::TangutComponentDash053 => '𘠴',
+            TangutComponents::TangutComponentDash054 => '𘠵',
+            TangutComponents::TangutComponentDash055 => '𘠶',
+            TangutComponents::TangutComponentDash056 => '𘠷',
+            TangutComponents::TangutComponentDash057 => '𘠸',
+            TangutComponents::TangutComponentDash058 => '𘠹',
+            TangutComponents::TangutComponentDash059 => '𘠺',
+            TangutComponents::TangutComponentDash060 => '𘠻',
+            TangutComponents::TangutComponentDash061 => '𘠼',
+            TangutComponents::TangutComponentDash062 => '𘠽',
+            TangutComponents::TangutComponentDash063 => '𘠾',
+            TangutComponents::TangutComponentDash064 => '𘠿',
+            TangutComponents::TangutComponentDash065 => '𘡀',
+            TangutComponents::TangutComponentDash066 => '𘡁',
+            TangutComponents::TangutComponentDash067 => '𘡂',
+            TangutComponents::TangutComponentDash068 => '𘡃',
+            TangutComponents::TangutComponentDash069 => '𘡄',
+            TangutComponents::TangutComponentDash070 => '𘡅',
+            TangutComponents::TangutComponentDash071 => '𘡆',
+            TangutComponents::TangutComponentDash072 => '𘡇',
+            TangutComponents::TangutComponentDash073 => '𘡈',
+            TangutComponents::TangutComponentDash074 => '𘡉',
+            TangutComponents::TangutComponentDash075 => '𘡊',
+            TangutComponents::TangutComponentDash076 => '𘡋',
+            TangutComponents::TangutComponentDash077 => '𘡌',
+            TangutComponents::TangutComponentDash078 => '𘡍',
+            TangutComponents::TangutComponentDash079 => '𘡎',
+            TangutComponents::TangutComponentDash080 => '𘡏',
+            TangutComponents::TangutComponentDash081 => '𘡐',
+            TangutComponents::TangutComponentDash082 => '𘡑',
+            TangutComponents::TangutComponentDash083 => '𘡒',
+            TangutComponents::TangutComponentDash084 => '𘡓',
+            TangutComponents::TangutComponentDash085 => '𘡔',
+            TangutComponents::TangutComponentDash086 => '𘡕',
+            TangutComponents::TangutComponentDash087 => '𘡖',
+            TangutComponents::TangutComponentDash088 => '𘡗',
+            TangutComponents::TangutComponentDash089 => '𘡘',
+            TangutComponents::TangutComponentDash090 => '𘡙',
+            TangutComponents::TangutComponentDash091 => '𘡚',
+            TangutComponents::TangutComponentDash092 => '𘡛',
+            TangutComponents::TangutComponentDash093 => '𘡜',
+            TangutComponents::TangutComponentDash094 => '𘡝',
+            TangutComponents::TangutComponentDash095 => '𘡞',
+            TangutComponents::TangutComponentDash096 => '𘡟',
+            TangutComponents::TangutComponentDash097 => '𘡠',
+            TangutComponents::TangutComponentDash098 => '𘡡',
+            TangutComponents::TangutComponentDash099 => '𘡢',
+            TangutComponents::TangutComponentDash100 => '𘡣',
+            TangutComponents::TangutComponentDash101 => '𘡤',
+            TangutComponents::TangutComponentDash102 => '𘡥',
+            TangutComponents::TangutComponentDash103 => '𘡦',
+            TangutComponents::TangutComponentDash104 => '𘡧',
+            TangutComponents::TangutComponentDash105 => '𘡨',
+            TangutComponents::TangutComponentDash106 => '𘡩',
+            TangutComponents::TangutComponentDash107 => '𘡪',
+            TangutComponents::TangutComponentDash108 => '𘡫',
+            TangutComponents::TangutComponentDash109 => '𘡬',
+            TangutComponents::TangutComponentDash110 => '𘡭',
+            TangutComponents::TangutComponentDash111 => '𘡮',
+            TangutComponents::TangutComponentDash112 => '𘡯',
+            TangutComponents::TangutComponentDash113 => '𘡰',
+            TangutComponents::TangutComponentDash114 => '𘡱',
+            TangutComponents::TangutComponentDash115 => '𘡲',
+            TangutComponents::TangutComponentDash116 => '𘡳',
+            TangutComponents::TangutComponentDash117 => '𘡴',
+            TangutComponents::TangutComponentDash118 => '𘡵',
+            TangutComponents::TangutComponentDash119 => '𘡶',
+            TangutComponents::TangutComponentDash120 => '𘡷',
+            TangutComponents::TangutComponentDash121 => '𘡸',
+            TangutComponents::TangutComponentDash122 => '𘡹',
+            TangutComponents::TangutComponentDash123 => '𘡺',
+            TangutComponents::TangutComponentDash124 => '𘡻',
+            TangutComponents::TangutComponentDash125 => '𘡼',
+            TangutComponents::TangutComponentDash126 => '𘡽',
+            TangutComponents::TangutComponentDash127 => '𘡾',
+            TangutComponents::TangutComponentDash128 => '𘡿',
+            TangutComponents::TangutComponentDash129 => '𘢀',
+            TangutComponents::TangutComponentDash130 => '𘢁',
+            TangutComponents::TangutComponentDash131 => '𘢂',
+            TangutComponents::TangutComponentDash132 => '𘢃',
+            TangutComponents::TangutComponentDash133 => '𘢄',
+            TangutComponents::TangutComponentDash134 => '𘢅',
+            TangutComponents::TangutComponentDash135 => '𘢆',
+            TangutComponents::TangutComponentDash136 => '𘢇',
+            TangutComponents::TangutComponentDash137 => '𘢈',
+            TangutComponents::TangutComponentDash138 => '𘢉',
+            TangutComponents::TangutComponentDash139 => '𘢊',
+            TangutComponents::TangutComponentDash140 => '𘢋',
+            TangutComponents::TangutComponentDash141 => '𘢌',
+            TangutComponents::TangutComponentDash142 => '𘢍',
+            TangutComponents::TangutComponentDash143 => '𘢎',
+            TangutComponents::TangutComponentDash144 => '𘢏',
+            TangutComponents::TangutComponentDash145 => '𘢐',
+            TangutComponents::TangutComponentDash146 => '𘢑',
+            TangutComponents::TangutComponentDash147 => '𘢒',
+            TangutComponents::TangutComponentDash148 => '𘢓',
+            TangutComponents::TangutComponentDash149 => '𘢔',
+            TangutComponents::TangutComponentDash150 => '𘢕',
+            TangutComponents::TangutComponentDash151 => '𘢖',
+            TangutComponents::TangutComponentDash152 => '𘢗',
+            TangutComponents::TangutComponentDash153 => '𘢘',
+            TangutComponents::TangutComponentDash154 => '𘢙',
+            TangutComponents::TangutComponentDash155 => '𘢚',
+            TangutComponents::TangutComponentDash156 => '𘢛',
+            TangutComponents::TangutComponentDash157 => '𘢜',
+            TangutComponents::TangutComponentDash158 => '𘢝',
+            TangutComponents::TangutComponentDash159 => '𘢞',
+            TangutComponents::TangutComponentDash160 => '𘢟',
+            TangutComponents::TangutComponentDash161 => '𘢠',
+            TangutComponents::TangutComponentDash162 => '𘢡',
+            TangutComponents::TangutComponentDash163 => '𘢢',
+            TangutComponents::TangutComponentDash164 => '𘢣',
+            TangutComponents::TangutComponentDash165 => '𘢤',
+            TangutComponents::TangutComponentDash166 => '𘢥',
+            TangutComponents::TangutComponentDash167 => '𘢦',
+            TangutComponents::TangutComponentDash168 => '𘢧',
+            TangutComponents::TangutComponentDash169 => '𘢨',
+            TangutComponents::TangutComponentDash170 => '𘢩',
+            TangutComponents::TangutComponentDash171 => '𘢪',
+            TangutComponents::TangutComponentDash172 => '𘢫',
+            TangutComponents::TangutComponentDash173 => '𘢬',
+            TangutComponents::TangutComponentDash174 => '𘢭',
+            TangutComponents::TangutComponentDash175 => '𘢮',
+            TangutComponents::TangutComponentDash176 => '𘢯',
+            TangutComponents::TangutComponentDash177 => '𘢰',
+            TangutComponents::TangutComponentDash178 => '𘢱',
+            TangutComponents::TangutComponentDash179 => '𘢲',
+            TangutComponents::TangutComponentDash180 => '𘢳',
+            TangutComponents::TangutComponentDash181 => '𘢴',
+            TangutComponents::TangutComponentDash182 => '𘢵',
+            TangutComponents::TangutComponentDash183 => '𘢶',
+            TangutComponents::TangutComponentDash184 => '𘢷',
+            TangutComponents::TangutComponentDash185 => '𘢸',
+            TangutComponents::TangutComponentDash186 => '𘢹',
+            TangutComponents::TangutComponentDash187 => '𘢺',
+            TangutComponents::TangutComponentDash188 => '𘢻',
+            TangutComponents::TangutComponentDash189 => '𘢼',
+            TangutComponents::TangutComponentDash190 => '𘢽',
+            TangutComponents::TangutComponentDash191 => '𘢾',
+            TangutComponents::TangutComponentDash192 => '𘢿',
+            TangutComponents::TangutComponentDash193 => '𘣀',
+            TangutComponents::TangutComponentDash194 => '𘣁',
+            TangutComponents::TangutComponentDash195 => '𘣂',
+            TangutComponents::TangutComponentDash196 => '𘣃',
+            TangutComponents::TangutComponentDash197 => '𘣄',
+            TangutComponents::TangutComponentDash198 => '𘣅',
+            TangutComponents::TangutComponentDash199 => '𘣆',
+            TangutComponents::TangutComponentDash200 => '𘣇',
+            TangutComponents::TangutComponentDash201 => '𘣈',
+            TangutComponents::TangutComponentDash202 => '𘣉',
+            TangutComponents::TangutComponentDash203 => '𘣊',
+            TangutComponents::TangutComponentDash204 => '𘣋',
+            TangutComponents::TangutComponentDash205 => '𘣌',
+            TangutComponents::TangutComponentDash206 => '𘣍',
+            TangutComponents::TangutComponentDash207 => '𘣎',
+            TangutComponents::TangutComponentDash208 => '𘣏',
+            TangutComponents::TangutComponentDash209 => '𘣐',
+            TangutComponents::TangutComponentDash210 => '𘣑',
+            TangutComponents::TangutComponentDash211 => '𘣒',
+            TangutComponents::TangutComponentDash212 => '𘣓',
+            TangutComponents::TangutComponentDash213 => '𘣔',
+            TangutComponents::TangutComponentDash214 => '𘣕',
+            TangutComponents::TangutComponentDash215 => '𘣖',
+            TangutComponents::TangutComponentDash216 => '𘣗',
+            TangutComponents::TangutComponentDash217 => '𘣘',
+            TangutComponents::TangutComponentDash218 => '𘣙',
+            TangutComponents::TangutComponentDash219 => '𘣚',
+            TangutComponents::TangutComponentDash220 => '𘣛',
+            TangutComponents::TangutComponentDash221 => '𘣜',
+            TangutComponents::TangutComponentDash222 => '𘣝',
+            TangutComponents::TangutComponentDash223 => '𘣞',
+            TangutComponents::TangutComponentDash224 => '𘣟',
+            TangutComponents::TangutComponentDash225 => '𘣠',
+            TangutComponents::TangutComponentDash226 => '𘣡',
+            TangutComponents::TangutComponentDash227 => '𘣢',
+            TangutComponents::TangutComponentDash228 => '𘣣',
+            TangutComponents::TangutComponentDash229 => '𘣤',
+            TangutComponents::TangutComponentDash230 => '𘣥',
+            TangutComponents::TangutComponentDash231 => '𘣦',
+            TangutComponents::TangutComponentDash232 => '𘣧',
+            TangutComponents::TangutComponentDash233 => '𘣨',
+            TangutComponents::TangutComponentDash234 => '𘣩',
+            TangutComponents::TangutComponentDash235 => '𘣪',
+            TangutComponents::TangutComponentDash236 => '𘣫',
+            TangutComponents::TangutComponentDash237 => '𘣬',
+            TangutComponents::TangutComponentDash238 => '𘣭',
+            TangutComponents::TangutComponentDash239 => '𘣮',
+            TangutComponents::TangutComponentDash240 => '𘣯',
+            TangutComponents::TangutComponentDash241 => '𘣰',
+            TangutComponents::TangutComponentDash242 => '𘣱',
+            TangutComponents::TangutComponentDash243 => '𘣲',
+            TangutComponents::TangutComponentDash244 => '𘣳',
+            TangutComponents::TangutComponentDash245 => '𘣴',
+            TangutComponents::TangutComponentDash246 => '𘣵',
+            TangutComponents::TangutComponentDash247 => '𘣶',
+            TangutComponents::TangutComponentDash248 => '𘣷',
+            TangutComponents::TangutComponentDash249 => '𘣸',
+            TangutComponents::TangutComponentDash250 => '𘣹',
+            TangutComponents::TangutComponentDash251 => '𘣺',
+            TangutComponents::TangutComponentDash252 => '𘣻',
+            TangutComponents::TangutComponentDash253 => '𘣼',
+            TangutComponents::TangutComponentDash254 => '𘣽',
+            TangutComponents::TangutComponentDash255 => '𘣾',
+            TangutComponents::TangutComponentDash256 => '𘣿',
+            TangutComponents::TangutComponentDash257 => '𘤀',
+            TangutComponents::TangutComponentDash258 => '𘤁',
+            TangutComponents::TangutComponentDash259 => '𘤂',
+            TangutComponents::TangutComponentDash260 => '𘤃',
+            TangutComponents::TangutComponentDash261 => '𘤄',
+            TangutComponents::TangutComponentDash262 => '𘤅',
+            TangutComponents::TangutComponentDash263 => '𘤆',
+            TangutComponents::TangutComponentDash264 => '𘤇',
+            TangutComponents::TangutComponentDash265 => '𘤈',
+            TangutComponents::TangutComponentDash266 => '𘤉',
+            TangutComponents::TangutComponentDash267 => '𘤊',
+            TangutComponents::TangutComponentDash268 => '𘤋',
+            TangutComponents::TangutComponentDash269 => '𘤌',
+            TangutComponents::TangutComponentDash270 => '𘤍',
+            TangutComponents::TangutComponentDash271 => '𘤎',
+            TangutComponents::TangutComponentDash272 => '𘤏',
+            TangutComponents::TangutComponentDash273 => '𘤐',
+            TangutComponents::TangutComponentDash274 => '𘤑',
+            TangutComponents::TangutComponentDash275 => '𘤒',
+            TangutComponents::TangutComponentDash276 => '𘤓',
+            TangutComponents::TangutComponentDash277 => '𘤔',
+            TangutComponents::TangutComponentDash278 => '𘤕',
+            TangutComponents::TangutComponentDash279 => '𘤖',
+            TangutComponents::TangutComponentDash280 => '𘤗',
+            TangutComponents::TangutComponentDash281 => '𘤘',
+            TangutComponents::TangutComponentDash282 => '𘤙',
+            TangutComponents::TangutComponentDash283 => '𘤚',
+            TangutComponents::TangutComponentDash284 => '𘤛',
+            TangutComponents::TangutComponentDash285 => '𘤜',
+            TangutComponents::TangutComponentDash286 => '𘤝',
+            TangutComponents::TangutComponentDash287 => '𘤞',
+            TangutComponents::TangutComponentDash288 => '𘤟',
+            TangutComponents::TangutComponentDash289 => '𘤠',
+            TangutComponents::TangutComponentDash290 => '𘤡',
+            TangutComponents::TangutComponentDash291 => '𘤢',
+            TangutComponents::TangutComponentDash292 => '𘤣',
+            TangutComponents::TangutComponentDash293 => '𘤤',
+            TangutComponents::TangutComponentDash294 => '𘤥',
+            TangutComponents::TangutComponentDash295 => '𘤦',
+            TangutComponents::TangutComponentDash296 => '𘤧',
+            TangutComponents::TangutComponentDash297 => '𘤨',
+            TangutComponents::TangutComponentDash298 => '𘤩',
+            TangutComponents::TangutComponentDash299 => '𘤪',
+            TangutComponents::TangutComponentDash300 => '𘤫',
+            TangutComponents::TangutComponentDash301 => '𘤬',
+            TangutComponents::TangutComponentDash302 => '𘤭',
+            TangutComponents::TangutComponentDash303 => '𘤮',
+            TangutComponents::TangutComponentDash304 => '𘤯',
+            TangutComponents::TangutComponentDash305 => '𘤰',
+            TangutComponents::TangutComponentDash306 => '𘤱',
+            TangutComponents::TangutComponentDash307 => '𘤲',
+            TangutComponents::TangutComponentDash308 => '𘤳',
+            TangutComponents::TangutComponentDash309 => '𘤴',
+            TangutComponents::TangutComponentDash310 => '𘤵',
+            TangutComponents::TangutComponentDash311 => '𘤶',
+            TangutComponents::TangutComponentDash312 => '𘤷',
+            TangutComponents::TangutComponentDash313 => '𘤸',
+            TangutComponents::TangutComponentDash314 => '𘤹',
+            TangutComponents::TangutComponentDash315 => '𘤺',
+            TangutComponents::TangutComponentDash316 => '𘤻',
+            TangutComponents::TangutComponentDash317 => '𘤼',
+            TangutComponents::TangutComponentDash318 => '𘤽',
+            TangutComponents::TangutComponentDash319 => '𘤾',
+            TangutComponents::TangutComponentDash320 => '𘤿',
+            TangutComponents::TangutComponentDash321 => '𘥀',
+            TangutComponents::TangutComponentDash322 => '𘥁',
+            TangutComponents::TangutComponentDash323 => '𘥂',
+            TangutComponents::TangutComponentDash324 => '𘥃',
+            TangutComponents::TangutComponentDash325 => '𘥄',
+            TangutComponents::TangutComponentDash326 => '𘥅',
+            TangutComponents::TangutComponentDash327 => '𘥆',
+            TangutComponents::TangutComponentDash328 => '𘥇',
+            TangutComponents::TangutComponentDash329 => '𘥈',
+            TangutComponents::TangutComponentDash330 => '𘥉',
+            TangutComponents::TangutComponentDash331 => '𘥊',
+            TangutComponents::TangutComponentDash332 => '𘥋',
+            TangutComponents::TangutComponentDash333 => '𘥌',
+            TangutComponents::TangutComponentDash334 => '𘥍',
+            TangutComponents::TangutComponentDash335 => '𘥎',
+            TangutComponents::TangutComponentDash336 => '𘥏',
+            TangutComponents::TangutComponentDash337 => '𘥐',
+            TangutComponents::TangutComponentDash338 => '𘥑',
+            TangutComponents::TangutComponentDash339 => '𘥒',
+            TangutComponents::TangutComponentDash340 => '𘥓',
+            TangutComponents::TangutComponentDash341 => '𘥔',
+            TangutComponents::TangutComponentDash342 => '𘥕',
+            TangutComponents::TangutComponentDash343 => '𘥖',
+            TangutComponents::TangutComponentDash344 => '𘥗',
+            TangutComponents::TangutComponentDash345 => '𘥘',
+            TangutComponents::TangutComponentDash346 => '𘥙',
+            TangutComponents::TangutComponentDash347 => '𘥚',
+            TangutComponents::TangutComponentDash348 => '𘥛',
+            TangutComponents::TangutComponentDash349 => '𘥜',
+            TangutComponents::TangutComponentDash350 => '𘥝',
+            TangutComponents::TangutComponentDash351 => '𘥞',
+            TangutComponents::TangutComponentDash352 => '𘥟',
+            TangutComponents::TangutComponentDash353 => '𘥠',
+            TangutComponents::TangutComponentDash354 => '𘥡',
+            TangutComponents::TangutComponentDash355 => '𘥢',
+            TangutComponents::TangutComponentDash356 => '𘥣',
+            TangutComponents::TangutComponentDash357 => '𘥤',
+            TangutComponents::TangutComponentDash358 => '𘥥',
+            TangutComponents::TangutComponentDash359 => '𘥦',
+            TangutComponents::TangutComponentDash360 => '𘥧',
+            TangutComponents::TangutComponentDash361 => '𘥨',
+            TangutComponents::TangutComponentDash362 => '𘥩',
+            TangutComponents::TangutComponentDash363 => '𘥪',
+            TangutComponents::TangutComponentDash364 => '𘥫',
+            TangutComponents::TangutComponentDash365 => '𘥬',
+            TangutComponents::TangutComponentDash366 => '𘥭',
+            TangutComponents::TangutComponentDash367 => '𘥮',
+            TangutComponents::TangutComponentDash368 => '𘥯',
+            TangutComponents::TangutComponentDash369 => '𘥰',
+            TangutComponents::TangutComponentDash370 => '𘥱',
+            TangutComponents::TangutComponentDash371 => '𘥲',
+            TangutComponents::TangutComponentDash372 => '𘥳',
+            TangutComponents::TangutComponentDash373 => '𘥴',
+            TangutComponents::TangutComponentDash374 => '𘥵',
+            TangutComponents::TangutComponentDash375 => '𘥶',
+            TangutComponents::TangutComponentDash376 => '𘥷',
+            TangutComponents::TangutComponentDash377 => '𘥸',
+            TangutComponents::TangutComponentDash378 => '𘥹',
+            TangutComponents::TangutComponentDash379 => '𘥺',
+            TangutComponents::TangutComponentDash380 => '𘥻',
+            TangutComponents::TangutComponentDash381 => '𘥼',
+            TangutComponents::TangutComponentDash382 => '𘥽',
+            TangutComponents::TangutComponentDash383 => '𘥾',
+            TangutComponents::TangutComponentDash384 => '𘥿',
+            TangutComponents::TangutComponentDash385 => '𘦀',
+            TangutComponents::TangutComponentDash386 => '𘦁',
+            TangutComponents::TangutComponentDash387 => '𘦂',
+            TangutComponents::TangutComponentDash388 => '𘦃',
+            TangutComponents::TangutComponentDash389 => '𘦄',
+            TangutComponents::TangutComponentDash390 => '𘦅',
+            TangutComponents::TangutComponentDash391 => '𘦆',
+            TangutComponents::TangutComponentDash392 => '𘦇',
+            TangutComponents::TangutComponentDash393 => '𘦈',
+            TangutComponents::TangutComponentDash394 => '𘦉',
+            TangutComponents::TangutComponentDash395 => '𘦊',
+            TangutComponents::TangutComponentDash396 => '𘦋',
+            TangutComponents::TangutComponentDash397 => '𘦌',
+            TangutComponents::TangutComponentDash398 => '𘦍',
+            TangutComponents::TangutComponentDash399 => '𘦎',
+            TangutComponents::TangutComponentDash400 => '𘦏',
+            TangutComponents::TangutComponentDash401 => '𘦐',
+            TangutComponents::TangutComponentDash402 => '𘦑',
+            TangutComponents::TangutComponentDash403 => '𘦒',
+            TangutComponents::TangutComponentDash404 => '𘦓',
+            TangutComponents::TangutComponentDash405 => '𘦔',
+            TangutComponents::TangutComponentDash406 => '𘦕',
+            TangutComponents::TangutComponentDash407 => '𘦖',
+            TangutComponents::TangutComponentDash408 => '𘦗',
+            TangutComponents::TangutComponentDash409 => '𘦘',
+            TangutComponents::TangutComponentDash410 => '𘦙',
+            TangutComponents::TangutComponentDash411 => '𘦚',
+            TangutComponents::TangutComponentDash412 => '𘦛',
+            TangutComponents::TangutComponentDash413 => '𘦜',
+            TangutComponents::TangutComponentDash414 => '𘦝',
+            TangutComponents::TangutComponentDash415 => '𘦞',
+            TangutComponents::TangutComponentDash416 => '𘦟',
+            TangutComponents::TangutComponentDash417 => '𘦠',
+            TangutComponents::TangutComponentDash418 => '𘦡',
+            TangutComponents::TangutComponentDash419 => '𘦢',
+            TangutComponents::TangutComponentDash420 => '𘦣',
+            TangutComponents::TangutComponentDash421 => '𘦤',
+            TangutComponents::TangutComponentDash422 => '𘦥',
+            TangutComponents::TangutComponentDash423 => '𘦦',
+            TangutComponents::TangutComponentDash424 => '𘦧',
+            TangutComponents::TangutComponentDash425 => '𘦨',
+            TangutComponents::TangutComponentDash426 => '𘦩',
+            TangutComponents::TangutComponentDash427 => '𘦪',
+            TangutComponents::TangutComponentDash428 => '𘦫',
+            TangutComponents::TangutComponentDash429 => '𘦬',
+            TangutComponents::TangutComponentDash430 => '𘦭',
+            TangutComponents::TangutComponentDash431 => '𘦮',
+            TangutComponents::TangutComponentDash432 => '𘦯',
+            TangutComponents::TangutComponentDash433 => '𘦰',
+            TangutComponents::TangutComponentDash434 => '𘦱',
+            TangutComponents::TangutComponentDash435 => '𘦲',
+            TangutComponents::TangutComponentDash436 => '𘦳',
+            TangutComponents::TangutComponentDash437 => '𘦴',
+            TangutComponents::TangutComponentDash438 => '𘦵',
+            TangutComponents::TangutComponentDash439 => '𘦶',
+            TangutComponents::TangutComponentDash440 => '𘦷',
+            TangutComponents::TangutComponentDash441 => '𘦸',
+            TangutComponents::TangutComponentDash442 => '𘦹',
+            TangutComponents::TangutComponentDash443 => '𘦺',
+            TangutComponents::TangutComponentDash444 => '𘦻',
+            TangutComponents::TangutComponentDash445 => '𘦼',
+            TangutComponents::TangutComponentDash446 => '𘦽',
+            TangutComponents::TangutComponentDash447 => '𘦾',
+            TangutComponents::TangutComponentDash448 => '𘦿',
+            TangutComponents::TangutComponentDash449 => '𘧀',
+            TangutComponents::TangutComponentDash450 => '𘧁',
+            TangutComponents::TangutComponentDash451 => '𘧂',
+            TangutComponents::TangutComponentDash452 => '𘧃',
+            TangutComponents::TangutComponentDash453 => '𘧄',
+            TangutComponents::TangutComponentDash454 => '𘧅',
+            TangutComponents::TangutComponentDash455 => '𘧆',
+            TangutComponents::TangutComponentDash456 => '𘧇',
+            TangutComponents::TangutComponentDash457 => '𘧈',
+            TangutComponents::TangutComponentDash458 => '𘧉',
+            TangutComponents::TangutComponentDash459 => '𘧊',
+            TangutComponents::TangutComponentDash460 => '𘧋',
+            TangutComponents::TangutComponentDash461 => '𘧌',
+            TangutComponents::TangutComponentDash462 => '𘧍',
+            TangutComponents::TangutComponentDash463 => '𘧎',
+            TangutComponents::TangutComponentDash464 => '𘧏',
+            TangutComponents::TangutComponentDash465 => '𘧐',
+            TangutComponents::TangutComponentDash466 => '𘧑',
+            TangutComponents::TangutComponentDash467 => '𘧒',
+            TangutComponents::TangutComponentDash468 => '𘧓',
+            TangutComponents::TangutComponentDash469 => '𘧔',
+            TangutComponents::TangutComponentDash470 => '𘧕',
+            TangutComponents::TangutComponentDash471 => '𘧖',
+            TangutComponents::TangutComponentDash472 => '𘧗',
+            TangutComponents::TangutComponentDash473 => '𘧘',
+            TangutComponents::TangutComponentDash474 => '𘧙',
+            TangutComponents::TangutComponentDash475 => '𘧚',
+            TangutComponents::TangutComponentDash476 => '𘧛',
+            TangutComponents::TangutComponentDash477 => '𘧜',
+            TangutComponents::TangutComponentDash478 => '𘧝',
+            TangutComponents::TangutComponentDash479 => '𘧞',
+            TangutComponents::TangutComponentDash480 => '𘧟',
+            TangutComponents::TangutComponentDash481 => '𘧠',
+            TangutComponents::TangutComponentDash482 => '𘧡',
+            TangutComponents::TangutComponentDash483 => '𘧢',
+            TangutComponents::TangutComponentDash484 => '𘧣',
+            TangutComponents::TangutComponentDash485 => '𘧤',
+            TangutComponents::TangutComponentDash486 => '𘧥',
+            TangutComponents::TangutComponentDash487 => '𘧦',
+            TangutComponents::TangutComponentDash488 => '𘧧',
+            TangutComponents::TangutComponentDash489 => '𘧨',
+            TangutComponents::TangutComponentDash490 => '𘧩',
+            TangutComponents::TangutComponentDash491 => '𘧪',
+            TangutComponents::TangutComponentDash492 => '𘧫',
+            TangutComponents::TangutComponentDash493 => '𘧬',
+            TangutComponents::TangutComponentDash494 => '𘧭',
+            TangutComponents::TangutComponentDash495 => '𘧮',
+            TangutComponents::TangutComponentDash496 => '𘧯',
+            TangutComponents::TangutComponentDash497 => '𘧰',
+            TangutComponents::TangutComponentDash498 => '𘧱',
+            TangutComponents::TangutComponentDash499 => '𘧲',
+            TangutComponents::TangutComponentDash500 => '𘧳',
+            TangutComponents::TangutComponentDash501 => '𘧴',
+            TangutComponents::TangutComponentDash502 => '𘧵',
+            TangutComponents::TangutComponentDash503 => '𘧶',
+            TangutComponents::TangutComponentDash504 => '𘧷',
+            TangutComponents::TangutComponentDash505 => '𘧸',
+            TangutComponents::TangutComponentDash506 => '𘧹',
+            TangutComponents::TangutComponentDash507 => '𘧺',
+            TangutComponents::TangutComponentDash508 => '𘧻',
+            TangutComponents::TangutComponentDash509 => '𘧼',
+            TangutComponents::TangutComponentDash510 => '𘧽',
+            TangutComponents::TangutComponentDash511 => '𘧾',
+            TangutComponents::TangutComponentDash512 => '𘧿',
+            TangutComponents::TangutComponentDash513 => '𘨀',
+            TangutComponents::TangutComponentDash514 => '𘨁',
+            TangutComponents::TangutComponentDash515 => '𘨂',
+            TangutComponents::TangutComponentDash516 => '𘨃',
+            TangutComponents::TangutComponentDash517 => '𘨄',
+            TangutComponents::TangutComponentDash518 => '𘨅',
+            TangutComponents::TangutComponentDash519 => '𘨆',
+            TangutComponents::TangutComponentDash520 => '𘨇',
+            TangutComponents::TangutComponentDash521 => '𘨈',
+            TangutComponents::TangutComponentDash522 => '𘨉',
+            TangutComponents::TangutComponentDash523 => '𘨊',
+            TangutComponents::TangutComponentDash524 => '𘨋',
+            TangutComponents::TangutComponentDash525 => '𘨌',
+            TangutComponents::TangutComponentDash526 => '𘨍',
+            TangutComponents::TangutComponentDash527 => '𘨎',
+            TangutComponents::TangutComponentDash528 => '𘨏',
+            TangutComponents::TangutComponentDash529 => '𘨐',
+            TangutComponents::TangutComponentDash530 => '𘨑',
+            TangutComponents::TangutComponentDash531 => '𘨒',
+            TangutComponents::TangutComponentDash532 => '𘨓',
+            TangutComponents::TangutComponentDash533 => '𘨔',
+            TangutComponents::TangutComponentDash534 => '𘨕',
+            TangutComponents::TangutComponentDash535 => '𘨖',
+            TangutComponents::TangutComponentDash536 => '𘨗',
+            TangutComponents::TangutComponentDash537 => '𘨘',
+            TangutComponents::TangutComponentDash538 => '𘨙',
+            TangutComponents::TangutComponentDash539 => '𘨚',
+            TangutComponents::TangutComponentDash540 => '𘨛',
+            TangutComponents::TangutComponentDash541 => '𘨜',
+            TangutComponents::TangutComponentDash542 => '𘨝',
+            TangutComponents::TangutComponentDash543 => '𘨞',
+            TangutComponents::TangutComponentDash544 => '𘨟',
+            TangutComponents::TangutComponentDash545 => '𘨠',
+            TangutComponents::TangutComponentDash546 => '𘨡',
+            TangutComponents::TangutComponentDash547 => '𘨢',
+            TangutComponents::TangutComponentDash548 => '𘨣',
+            TangutComponents::TangutComponentDash549 => '𘨤',
+            TangutComponents::TangutComponentDash550 => '𘨥',
+            TangutComponents::TangutComponentDash551 => '𘨦',
+            TangutComponents::TangutComponentDash552 => '𘨧',
+            TangutComponents::TangutComponentDash553 => '𘨨',
+            TangutComponents::TangutComponentDash554 => '𘨩',
+            TangutComponents::TangutComponentDash555 => '𘨪',
+            TangutComponents::TangutComponentDash556 => '𘨫',
+            TangutComponents::TangutComponentDash557 => '𘨬',
+            TangutComponents::TangutComponentDash558 => '𘨭',
+            TangutComponents::TangutComponentDash559 => '𘨮',
+            TangutComponents::TangutComponentDash560 => '𘨯',
+            TangutComponents::TangutComponentDash561 => '𘨰',
+            TangutComponents::TangutComponentDash562 => '𘨱',
+            TangutComponents::TangutComponentDash563 => '𘨲',
+            TangutComponents::TangutComponentDash564 => '𘨳',
+            TangutComponents::TangutComponentDash565 => '𘨴',
+            TangutComponents::TangutComponentDash566 => '𘨵',
+            TangutComponents::TangutComponentDash567 => '𘨶',
+            TangutComponents::TangutComponentDash568 => '𘨷',
+            TangutComponents::TangutComponentDash569 => '𘨸',
+            TangutComponents::TangutComponentDash570 => '𘨹',
+            TangutComponents::TangutComponentDash571 => '𘨺',
+            TangutComponents::TangutComponentDash572 => '𘨻',
+            TangutComponents::TangutComponentDash573 => '𘨼',
+            TangutComponents::TangutComponentDash574 => '𘨽',
+            TangutComponents::TangutComponentDash575 => '𘨾',
+            TangutComponents::TangutComponentDash576 => '𘨿',
+            TangutComponents::TangutComponentDash577 => '𘩀',
+            TangutComponents::TangutComponentDash578 => '𘩁',
+            TangutComponents::TangutComponentDash579 => '𘩂',
+            TangutComponents::TangutComponentDash580 => '𘩃',
+            TangutComponents::TangutComponentDash581 => '𘩄',
+            TangutComponents::TangutComponentDash582 => '𘩅',
+            TangutComponents::TangutComponentDash583 => '𘩆',
+            TangutComponents::TangutComponentDash584 => '𘩇',
+            TangutComponents::TangutComponentDash585 => '𘩈',
+            TangutComponents::TangutComponentDash586 => '𘩉',
+            TangutComponents::TangutComponentDash587 => '𘩊',
+            TangutComponents::TangutComponentDash588 => '𘩋',
+            TangutComponents::TangutComponentDash589 => '𘩌',
+            TangutComponents::TangutComponentDash590 => '𘩍',
+            TangutComponents::TangutComponentDash591 => '𘩎',
+            TangutComponents::TangutComponentDash592 => '𘩏',
+            TangutComponents::TangutComponentDash593 => '𘩐',
+            TangutComponents::TangutComponentDash594 => '𘩑',
+            TangutComponents::TangutComponentDash595 => '𘩒',
+            TangutComponents::TangutComponentDash596 => '𘩓',
+            TangutComponents::TangutComponentDash597 => '𘩔',
+            TangutComponents::TangutComponentDash598 => '𘩕',
+            TangutComponents::TangutComponentDash599 => '𘩖',
+            TangutComponents::TangutComponentDash600 => '𘩗',
+            TangutComponents::TangutComponentDash601 => '𘩘',
+            TangutComponents::TangutComponentDash602 => '𘩙',
+            TangutComponents::TangutComponentDash603 => '𘩚',
+            TangutComponents::TangutComponentDash604 => '𘩛',
+            TangutComponents::TangutComponentDash605 => '𘩜',
+            TangutComponents::TangutComponentDash606 => '𘩝',
+            TangutComponents::TangutComponentDash607 => '𘩞',
+            TangutComponents::TangutComponentDash608 => '𘩟',
+            TangutComponents::TangutComponentDash609 => '𘩠',
+            TangutComponents::TangutComponentDash610 => '𘩡',
+            TangutComponents::TangutComponentDash611 => '𘩢',
+            TangutComponents::TangutComponentDash612 => '𘩣',
+            TangutComponents::TangutComponentDash613 => '𘩤',
+            TangutComponents::TangutComponentDash614 => '𘩥',
+            TangutComponents::TangutComponentDash615 => '𘩦',
+            TangutComponents::TangutComponentDash616 => '𘩧',
+            TangutComponents::TangutComponentDash617 => '𘩨',
+            TangutComponents::TangutComponentDash618 => '𘩩',
+            TangutComponents::TangutComponentDash619 => '𘩪',
+            TangutComponents::TangutComponentDash620 => '𘩫',
+            TangutComponents::TangutComponentDash621 => '𘩬',
+            TangutComponents::TangutComponentDash622 => '𘩭',
+            TangutComponents::TangutComponentDash623 => '𘩮',
+            TangutComponents::TangutComponentDash624 => '𘩯',
+            TangutComponents::TangutComponentDash625 => '𘩰',
+            TangutComponents::TangutComponentDash626 => '𘩱',
+            TangutComponents::TangutComponentDash627 => '𘩲',
+            TangutComponents::TangutComponentDash628 => '𘩳',
+            TangutComponents::TangutComponentDash629 => '𘩴',
+            TangutComponents::TangutComponentDash630 => '𘩵',
+            TangutComponents::TangutComponentDash631 => '𘩶',
+            TangutComponents::TangutComponentDash632 => '𘩷',
+            TangutComponents::TangutComponentDash633 => '𘩸',
+            TangutComponents::TangutComponentDash634 => '𘩹',
+            TangutComponents::TangutComponentDash635 => '𘩺',
+            TangutComponents::TangutComponentDash636 => '𘩻',
+            TangutComponents::TangutComponentDash637 => '𘩼',
+            TangutComponents::TangutComponentDash638 => '𘩽',
+            TangutComponents::TangutComponentDash639 => '𘩾',
+            TangutComponents::TangutComponentDash640 => '𘩿',
+            TangutComponents::TangutComponentDash641 => '𘪀',
+            TangutComponents::TangutComponentDash642 => '𘪁',
+            TangutComponents::TangutComponentDash643 => '𘪂',
+            TangutComponents::TangutComponentDash644 => '𘪃',
+            TangutComponents::TangutComponentDash645 => '𘪄',
+            TangutComponents::TangutComponentDash646 => '𘪅',
+            TangutComponents::TangutComponentDash647 => '𘪆',
+            TangutComponents::TangutComponentDash648 => '𘪇',
+            TangutComponents::TangutComponentDash649 => '𘪈',
+            TangutComponents::TangutComponentDash650 => '𘪉',
+            TangutComponents::TangutComponentDash651 => '𘪊',
+            TangutComponents::TangutComponentDash652 => '𘪋',
+            TangutComponents::TangutComponentDash653 => '𘪌',
+            TangutComponents::TangutComponentDash654 => '𘪍',
+            TangutComponents::TangutComponentDash655 => '𘪎',
+            TangutComponents::TangutComponentDash656 => '𘪏',
+            TangutComponents::TangutComponentDash657 => '𘪐',
+            TangutComponents::TangutComponentDash658 => '𘪑',
+            TangutComponents::TangutComponentDash659 => '𘪒',
+            TangutComponents::TangutComponentDash660 => '𘪓',
+            TangutComponents::TangutComponentDash661 => '𘪔',
+            TangutComponents::TangutComponentDash662 => '𘪕',
+            TangutComponents::TangutComponentDash663 => '𘪖',
+            TangutComponents::TangutComponentDash664 => '𘪗',
+            TangutComponents::TangutComponentDash665 => '𘪘',
+            TangutComponents::TangutComponentDash666 => '𘪙',
+            TangutComponents::TangutComponentDash667 => '𘪚',
+            TangutComponents::TangutComponentDash668 => '𘪛',
+            TangutComponents::TangutComponentDash669 => '𘪜',
+            TangutComponents::TangutComponentDash670 => '𘪝',
+            TangutComponents::TangutComponentDash671 => '𘪞',
+            TangutComponents::TangutComponentDash672 => '𘪟',
+            TangutComponents::TangutComponentDash673 => '𘪠',
+            TangutComponents::TangutComponentDash674 => '𘪡',
+            TangutComponents::TangutComponentDash675 => '𘪢',
+            TangutComponents::TangutComponentDash676 => '𘪣',
+            TangutComponents::TangutComponentDash677 => '𘪤',
+            TangutComponents::TangutComponentDash678 => '𘪥',
+            TangutComponents::TangutComponentDash679 => '𘪦',
+            TangutComponents::TangutComponentDash680 => '𘪧',
+            TangutComponents::TangutComponentDash681 => '𘪨',
+            TangutComponents::TangutComponentDash682 => '𘪩',
+            TangutComponents::TangutComponentDash683 => '𘪪',
+            TangutComponents::TangutComponentDash684 => '𘪫',
+            TangutComponents::TangutComponentDash685 => '𘪬',
+            TangutComponents::TangutComponentDash686 => '𘪭',
+            TangutComponents::TangutComponentDash687 => '𘪮',
+            TangutComponents::TangutComponentDash688 => '𘪯',
+            TangutComponents::TangutComponentDash689 => '𘪰',
+            TangutComponents::TangutComponentDash690 => '𘪱',
+            TangutComponents::TangutComponentDash691 => '𘪲',
+            TangutComponents::TangutComponentDash692 => '𘪳',
+            TangutComponents::TangutComponentDash693 => '𘪴',
+            TangutComponents::TangutComponentDash694 => '𘪵',
+            TangutComponents::TangutComponentDash695 => '𘪶',
+            TangutComponents::TangutComponentDash696 => '𘪷',
+            TangutComponents::TangutComponentDash697 => '𘪸',
+            TangutComponents::TangutComponentDash698 => '𘪹',
+            TangutComponents::TangutComponentDash699 => '𘪺',
+            TangutComponents::TangutComponentDash700 => '𘪻',
+            TangutComponents::TangutComponentDash701 => '𘪼',
+            TangutComponents::TangutComponentDash702 => '𘪽',
+            TangutComponents::TangutComponentDash703 => '𘪾',
+            TangutComponents::TangutComponentDash704 => '𘪿',
+            TangutComponents::TangutComponentDash705 => '𘫀',
+            TangutComponents::TangutComponentDash706 => '𘫁',
+            TangutComponents::TangutComponentDash707 => '𘫂',
+            TangutComponents::TangutComponentDash708 => '𘫃',
+            TangutComponents::TangutComponentDash709 => '𘫄',
+            TangutComponents::TangutComponentDash710 => '𘫅',
+            TangutComponents::TangutComponentDash711 => '𘫆',
+            TangutComponents::TangutComponentDash712 => '𘫇',
+            TangutComponents::TangutComponentDash713 => '𘫈',
+            TangutComponents::TangutComponentDash714 => '𘫉',
+            TangutComponents::TangutComponentDash715 => '𘫊',
+            TangutComponents::TangutComponentDash716 => '𘫋',
+            TangutComponents::TangutComponentDash717 => '𘫌',
+            TangutComponents::TangutComponentDash718 => '𘫍',
+            TangutComponents::TangutComponentDash719 => '𘫎',
+            TangutComponents::TangutComponentDash720 => '𘫏',
+            TangutComponents::TangutComponentDash721 => '𘫐',
+            TangutComponents::TangutComponentDash722 => '𘫑',
+            TangutComponents::TangutComponentDash723 => '𘫒',
+            TangutComponents::TangutComponentDash724 => '𘫓',
+            TangutComponents::TangutComponentDash725 => '𘫔',
+            TangutComponents::TangutComponentDash726 => '𘫕',
+            TangutComponents::TangutComponentDash727 => '𘫖',
+            TangutComponents::TangutComponentDash728 => '𘫗',
+            TangutComponents::TangutComponentDash729 => '𘫘',
+            TangutComponents::TangutComponentDash730 => '𘫙',
+            TangutComponents::TangutComponentDash731 => '𘫚',
+            TangutComponents::TangutComponentDash732 => '𘫛',
+            TangutComponents::TangutComponentDash733 => '𘫜',
+            TangutComponents::TangutComponentDash734 => '𘫝',
+            TangutComponents::TangutComponentDash735 => '𘫞',
+            TangutComponents::TangutComponentDash736 => '𘫟',
+            TangutComponents::TangutComponentDash737 => '𘫠',
+            TangutComponents::TangutComponentDash738 => '𘫡',
+            TangutComponents::TangutComponentDash739 => '𘫢',
+            TangutComponents::TangutComponentDash740 => '𘫣',
+            TangutComponents::TangutComponentDash741 => '𘫤',
+            TangutComponents::TangutComponentDash742 => '𘫥',
+            TangutComponents::TangutComponentDash743 => '𘫦',
+            TangutComponents::TangutComponentDash744 => '𘫧',
+            TangutComponents::TangutComponentDash745 => '𘫨',
+            TangutComponents::TangutComponentDash746 => '𘫩',
+            TangutComponents::TangutComponentDash747 => '𘫪',
+            TangutComponents::TangutComponentDash748 => '𘫫',
+            TangutComponents::TangutComponentDash749 => '𘫬',
+            TangutComponents::TangutComponentDash750 => '𘫭',
+            TangutComponents::TangutComponentDash751 => '𘫮',
+            TangutComponents::TangutComponentDash752 => '𘫯',
+            TangutComponents::TangutComponentDash753 => '𘫰',
+            TangutComponents::TangutComponentDash754 => '𘫱',
+            TangutComponents::TangutComponentDash755 => '𘫲',
         }
     }
 }
@@ -3793,763 +2279,762 @@ impl Into<char> for TangutComponents {
 impl std::convert::TryFrom<char> for TangutComponents {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            TANGUT_COMPONENT_DASH_001 => Ok(TangutComponents::TangutComponentDash001),
-            TANGUT_COMPONENT_DASH_002 => Ok(TangutComponents::TangutComponentDash002),
-            TANGUT_COMPONENT_DASH_003 => Ok(TangutComponents::TangutComponentDash003),
-            TANGUT_COMPONENT_DASH_004 => Ok(TangutComponents::TangutComponentDash004),
-            TANGUT_COMPONENT_DASH_005 => Ok(TangutComponents::TangutComponentDash005),
-            TANGUT_COMPONENT_DASH_006 => Ok(TangutComponents::TangutComponentDash006),
-            TANGUT_COMPONENT_DASH_007 => Ok(TangutComponents::TangutComponentDash007),
-            TANGUT_COMPONENT_DASH_008 => Ok(TangutComponents::TangutComponentDash008),
-            TANGUT_COMPONENT_DASH_009 => Ok(TangutComponents::TangutComponentDash009),
-            TANGUT_COMPONENT_DASH_010 => Ok(TangutComponents::TangutComponentDash010),
-            TANGUT_COMPONENT_DASH_011 => Ok(TangutComponents::TangutComponentDash011),
-            TANGUT_COMPONENT_DASH_012 => Ok(TangutComponents::TangutComponentDash012),
-            TANGUT_COMPONENT_DASH_013 => Ok(TangutComponents::TangutComponentDash013),
-            TANGUT_COMPONENT_DASH_014 => Ok(TangutComponents::TangutComponentDash014),
-            TANGUT_COMPONENT_DASH_015 => Ok(TangutComponents::TangutComponentDash015),
-            TANGUT_COMPONENT_DASH_016 => Ok(TangutComponents::TangutComponentDash016),
-            TANGUT_COMPONENT_DASH_017 => Ok(TangutComponents::TangutComponentDash017),
-            TANGUT_COMPONENT_DASH_018 => Ok(TangutComponents::TangutComponentDash018),
-            TANGUT_COMPONENT_DASH_019 => Ok(TangutComponents::TangutComponentDash019),
-            TANGUT_COMPONENT_DASH_020 => Ok(TangutComponents::TangutComponentDash020),
-            TANGUT_COMPONENT_DASH_021 => Ok(TangutComponents::TangutComponentDash021),
-            TANGUT_COMPONENT_DASH_022 => Ok(TangutComponents::TangutComponentDash022),
-            TANGUT_COMPONENT_DASH_023 => Ok(TangutComponents::TangutComponentDash023),
-            TANGUT_COMPONENT_DASH_024 => Ok(TangutComponents::TangutComponentDash024),
-            TANGUT_COMPONENT_DASH_025 => Ok(TangutComponents::TangutComponentDash025),
-            TANGUT_COMPONENT_DASH_026 => Ok(TangutComponents::TangutComponentDash026),
-            TANGUT_COMPONENT_DASH_027 => Ok(TangutComponents::TangutComponentDash027),
-            TANGUT_COMPONENT_DASH_028 => Ok(TangutComponents::TangutComponentDash028),
-            TANGUT_COMPONENT_DASH_029 => Ok(TangutComponents::TangutComponentDash029),
-            TANGUT_COMPONENT_DASH_030 => Ok(TangutComponents::TangutComponentDash030),
-            TANGUT_COMPONENT_DASH_031 => Ok(TangutComponents::TangutComponentDash031),
-            TANGUT_COMPONENT_DASH_032 => Ok(TangutComponents::TangutComponentDash032),
-            TANGUT_COMPONENT_DASH_033 => Ok(TangutComponents::TangutComponentDash033),
-            TANGUT_COMPONENT_DASH_034 => Ok(TangutComponents::TangutComponentDash034),
-            TANGUT_COMPONENT_DASH_035 => Ok(TangutComponents::TangutComponentDash035),
-            TANGUT_COMPONENT_DASH_036 => Ok(TangutComponents::TangutComponentDash036),
-            TANGUT_COMPONENT_DASH_037 => Ok(TangutComponents::TangutComponentDash037),
-            TANGUT_COMPONENT_DASH_038 => Ok(TangutComponents::TangutComponentDash038),
-            TANGUT_COMPONENT_DASH_039 => Ok(TangutComponents::TangutComponentDash039),
-            TANGUT_COMPONENT_DASH_040 => Ok(TangutComponents::TangutComponentDash040),
-            TANGUT_COMPONENT_DASH_041 => Ok(TangutComponents::TangutComponentDash041),
-            TANGUT_COMPONENT_DASH_042 => Ok(TangutComponents::TangutComponentDash042),
-            TANGUT_COMPONENT_DASH_043 => Ok(TangutComponents::TangutComponentDash043),
-            TANGUT_COMPONENT_DASH_044 => Ok(TangutComponents::TangutComponentDash044),
-            TANGUT_COMPONENT_DASH_045 => Ok(TangutComponents::TangutComponentDash045),
-            TANGUT_COMPONENT_DASH_046 => Ok(TangutComponents::TangutComponentDash046),
-            TANGUT_COMPONENT_DASH_047 => Ok(TangutComponents::TangutComponentDash047),
-            TANGUT_COMPONENT_DASH_048 => Ok(TangutComponents::TangutComponentDash048),
-            TANGUT_COMPONENT_DASH_049 => Ok(TangutComponents::TangutComponentDash049),
-            TANGUT_COMPONENT_DASH_050 => Ok(TangutComponents::TangutComponentDash050),
-            TANGUT_COMPONENT_DASH_051 => Ok(TangutComponents::TangutComponentDash051),
-            TANGUT_COMPONENT_DASH_052 => Ok(TangutComponents::TangutComponentDash052),
-            TANGUT_COMPONENT_DASH_053 => Ok(TangutComponents::TangutComponentDash053),
-            TANGUT_COMPONENT_DASH_054 => Ok(TangutComponents::TangutComponentDash054),
-            TANGUT_COMPONENT_DASH_055 => Ok(TangutComponents::TangutComponentDash055),
-            TANGUT_COMPONENT_DASH_056 => Ok(TangutComponents::TangutComponentDash056),
-            TANGUT_COMPONENT_DASH_057 => Ok(TangutComponents::TangutComponentDash057),
-            TANGUT_COMPONENT_DASH_058 => Ok(TangutComponents::TangutComponentDash058),
-            TANGUT_COMPONENT_DASH_059 => Ok(TangutComponents::TangutComponentDash059),
-            TANGUT_COMPONENT_DASH_060 => Ok(TangutComponents::TangutComponentDash060),
-            TANGUT_COMPONENT_DASH_061 => Ok(TangutComponents::TangutComponentDash061),
-            TANGUT_COMPONENT_DASH_062 => Ok(TangutComponents::TangutComponentDash062),
-            TANGUT_COMPONENT_DASH_063 => Ok(TangutComponents::TangutComponentDash063),
-            TANGUT_COMPONENT_DASH_064 => Ok(TangutComponents::TangutComponentDash064),
-            TANGUT_COMPONENT_DASH_065 => Ok(TangutComponents::TangutComponentDash065),
-            TANGUT_COMPONENT_DASH_066 => Ok(TangutComponents::TangutComponentDash066),
-            TANGUT_COMPONENT_DASH_067 => Ok(TangutComponents::TangutComponentDash067),
-            TANGUT_COMPONENT_DASH_068 => Ok(TangutComponents::TangutComponentDash068),
-            TANGUT_COMPONENT_DASH_069 => Ok(TangutComponents::TangutComponentDash069),
-            TANGUT_COMPONENT_DASH_070 => Ok(TangutComponents::TangutComponentDash070),
-            TANGUT_COMPONENT_DASH_071 => Ok(TangutComponents::TangutComponentDash071),
-            TANGUT_COMPONENT_DASH_072 => Ok(TangutComponents::TangutComponentDash072),
-            TANGUT_COMPONENT_DASH_073 => Ok(TangutComponents::TangutComponentDash073),
-            TANGUT_COMPONENT_DASH_074 => Ok(TangutComponents::TangutComponentDash074),
-            TANGUT_COMPONENT_DASH_075 => Ok(TangutComponents::TangutComponentDash075),
-            TANGUT_COMPONENT_DASH_076 => Ok(TangutComponents::TangutComponentDash076),
-            TANGUT_COMPONENT_DASH_077 => Ok(TangutComponents::TangutComponentDash077),
-            TANGUT_COMPONENT_DASH_078 => Ok(TangutComponents::TangutComponentDash078),
-            TANGUT_COMPONENT_DASH_079 => Ok(TangutComponents::TangutComponentDash079),
-            TANGUT_COMPONENT_DASH_080 => Ok(TangutComponents::TangutComponentDash080),
-            TANGUT_COMPONENT_DASH_081 => Ok(TangutComponents::TangutComponentDash081),
-            TANGUT_COMPONENT_DASH_082 => Ok(TangutComponents::TangutComponentDash082),
-            TANGUT_COMPONENT_DASH_083 => Ok(TangutComponents::TangutComponentDash083),
-            TANGUT_COMPONENT_DASH_084 => Ok(TangutComponents::TangutComponentDash084),
-            TANGUT_COMPONENT_DASH_085 => Ok(TangutComponents::TangutComponentDash085),
-            TANGUT_COMPONENT_DASH_086 => Ok(TangutComponents::TangutComponentDash086),
-            TANGUT_COMPONENT_DASH_087 => Ok(TangutComponents::TangutComponentDash087),
-            TANGUT_COMPONENT_DASH_088 => Ok(TangutComponents::TangutComponentDash088),
-            TANGUT_COMPONENT_DASH_089 => Ok(TangutComponents::TangutComponentDash089),
-            TANGUT_COMPONENT_DASH_090 => Ok(TangutComponents::TangutComponentDash090),
-            TANGUT_COMPONENT_DASH_091 => Ok(TangutComponents::TangutComponentDash091),
-            TANGUT_COMPONENT_DASH_092 => Ok(TangutComponents::TangutComponentDash092),
-            TANGUT_COMPONENT_DASH_093 => Ok(TangutComponents::TangutComponentDash093),
-            TANGUT_COMPONENT_DASH_094 => Ok(TangutComponents::TangutComponentDash094),
-            TANGUT_COMPONENT_DASH_095 => Ok(TangutComponents::TangutComponentDash095),
-            TANGUT_COMPONENT_DASH_096 => Ok(TangutComponents::TangutComponentDash096),
-            TANGUT_COMPONENT_DASH_097 => Ok(TangutComponents::TangutComponentDash097),
-            TANGUT_COMPONENT_DASH_098 => Ok(TangutComponents::TangutComponentDash098),
-            TANGUT_COMPONENT_DASH_099 => Ok(TangutComponents::TangutComponentDash099),
-            TANGUT_COMPONENT_DASH_100 => Ok(TangutComponents::TangutComponentDash100),
-            TANGUT_COMPONENT_DASH_101 => Ok(TangutComponents::TangutComponentDash101),
-            TANGUT_COMPONENT_DASH_102 => Ok(TangutComponents::TangutComponentDash102),
-            TANGUT_COMPONENT_DASH_103 => Ok(TangutComponents::TangutComponentDash103),
-            TANGUT_COMPONENT_DASH_104 => Ok(TangutComponents::TangutComponentDash104),
-            TANGUT_COMPONENT_DASH_105 => Ok(TangutComponents::TangutComponentDash105),
-            TANGUT_COMPONENT_DASH_106 => Ok(TangutComponents::TangutComponentDash106),
-            TANGUT_COMPONENT_DASH_107 => Ok(TangutComponents::TangutComponentDash107),
-            TANGUT_COMPONENT_DASH_108 => Ok(TangutComponents::TangutComponentDash108),
-            TANGUT_COMPONENT_DASH_109 => Ok(TangutComponents::TangutComponentDash109),
-            TANGUT_COMPONENT_DASH_110 => Ok(TangutComponents::TangutComponentDash110),
-            TANGUT_COMPONENT_DASH_111 => Ok(TangutComponents::TangutComponentDash111),
-            TANGUT_COMPONENT_DASH_112 => Ok(TangutComponents::TangutComponentDash112),
-            TANGUT_COMPONENT_DASH_113 => Ok(TangutComponents::TangutComponentDash113),
-            TANGUT_COMPONENT_DASH_114 => Ok(TangutComponents::TangutComponentDash114),
-            TANGUT_COMPONENT_DASH_115 => Ok(TangutComponents::TangutComponentDash115),
-            TANGUT_COMPONENT_DASH_116 => Ok(TangutComponents::TangutComponentDash116),
-            TANGUT_COMPONENT_DASH_117 => Ok(TangutComponents::TangutComponentDash117),
-            TANGUT_COMPONENT_DASH_118 => Ok(TangutComponents::TangutComponentDash118),
-            TANGUT_COMPONENT_DASH_119 => Ok(TangutComponents::TangutComponentDash119),
-            TANGUT_COMPONENT_DASH_120 => Ok(TangutComponents::TangutComponentDash120),
-            TANGUT_COMPONENT_DASH_121 => Ok(TangutComponents::TangutComponentDash121),
-            TANGUT_COMPONENT_DASH_122 => Ok(TangutComponents::TangutComponentDash122),
-            TANGUT_COMPONENT_DASH_123 => Ok(TangutComponents::TangutComponentDash123),
-            TANGUT_COMPONENT_DASH_124 => Ok(TangutComponents::TangutComponentDash124),
-            TANGUT_COMPONENT_DASH_125 => Ok(TangutComponents::TangutComponentDash125),
-            TANGUT_COMPONENT_DASH_126 => Ok(TangutComponents::TangutComponentDash126),
-            TANGUT_COMPONENT_DASH_127 => Ok(TangutComponents::TangutComponentDash127),
-            TANGUT_COMPONENT_DASH_128 => Ok(TangutComponents::TangutComponentDash128),
-            TANGUT_COMPONENT_DASH_129 => Ok(TangutComponents::TangutComponentDash129),
-            TANGUT_COMPONENT_DASH_130 => Ok(TangutComponents::TangutComponentDash130),
-            TANGUT_COMPONENT_DASH_131 => Ok(TangutComponents::TangutComponentDash131),
-            TANGUT_COMPONENT_DASH_132 => Ok(TangutComponents::TangutComponentDash132),
-            TANGUT_COMPONENT_DASH_133 => Ok(TangutComponents::TangutComponentDash133),
-            TANGUT_COMPONENT_DASH_134 => Ok(TangutComponents::TangutComponentDash134),
-            TANGUT_COMPONENT_DASH_135 => Ok(TangutComponents::TangutComponentDash135),
-            TANGUT_COMPONENT_DASH_136 => Ok(TangutComponents::TangutComponentDash136),
-            TANGUT_COMPONENT_DASH_137 => Ok(TangutComponents::TangutComponentDash137),
-            TANGUT_COMPONENT_DASH_138 => Ok(TangutComponents::TangutComponentDash138),
-            TANGUT_COMPONENT_DASH_139 => Ok(TangutComponents::TangutComponentDash139),
-            TANGUT_COMPONENT_DASH_140 => Ok(TangutComponents::TangutComponentDash140),
-            TANGUT_COMPONENT_DASH_141 => Ok(TangutComponents::TangutComponentDash141),
-            TANGUT_COMPONENT_DASH_142 => Ok(TangutComponents::TangutComponentDash142),
-            TANGUT_COMPONENT_DASH_143 => Ok(TangutComponents::TangutComponentDash143),
-            TANGUT_COMPONENT_DASH_144 => Ok(TangutComponents::TangutComponentDash144),
-            TANGUT_COMPONENT_DASH_145 => Ok(TangutComponents::TangutComponentDash145),
-            TANGUT_COMPONENT_DASH_146 => Ok(TangutComponents::TangutComponentDash146),
-            TANGUT_COMPONENT_DASH_147 => Ok(TangutComponents::TangutComponentDash147),
-            TANGUT_COMPONENT_DASH_148 => Ok(TangutComponents::TangutComponentDash148),
-            TANGUT_COMPONENT_DASH_149 => Ok(TangutComponents::TangutComponentDash149),
-            TANGUT_COMPONENT_DASH_150 => Ok(TangutComponents::TangutComponentDash150),
-            TANGUT_COMPONENT_DASH_151 => Ok(TangutComponents::TangutComponentDash151),
-            TANGUT_COMPONENT_DASH_152 => Ok(TangutComponents::TangutComponentDash152),
-            TANGUT_COMPONENT_DASH_153 => Ok(TangutComponents::TangutComponentDash153),
-            TANGUT_COMPONENT_DASH_154 => Ok(TangutComponents::TangutComponentDash154),
-            TANGUT_COMPONENT_DASH_155 => Ok(TangutComponents::TangutComponentDash155),
-            TANGUT_COMPONENT_DASH_156 => Ok(TangutComponents::TangutComponentDash156),
-            TANGUT_COMPONENT_DASH_157 => Ok(TangutComponents::TangutComponentDash157),
-            TANGUT_COMPONENT_DASH_158 => Ok(TangutComponents::TangutComponentDash158),
-            TANGUT_COMPONENT_DASH_159 => Ok(TangutComponents::TangutComponentDash159),
-            TANGUT_COMPONENT_DASH_160 => Ok(TangutComponents::TangutComponentDash160),
-            TANGUT_COMPONENT_DASH_161 => Ok(TangutComponents::TangutComponentDash161),
-            TANGUT_COMPONENT_DASH_162 => Ok(TangutComponents::TangutComponentDash162),
-            TANGUT_COMPONENT_DASH_163 => Ok(TangutComponents::TangutComponentDash163),
-            TANGUT_COMPONENT_DASH_164 => Ok(TangutComponents::TangutComponentDash164),
-            TANGUT_COMPONENT_DASH_165 => Ok(TangutComponents::TangutComponentDash165),
-            TANGUT_COMPONENT_DASH_166 => Ok(TangutComponents::TangutComponentDash166),
-            TANGUT_COMPONENT_DASH_167 => Ok(TangutComponents::TangutComponentDash167),
-            TANGUT_COMPONENT_DASH_168 => Ok(TangutComponents::TangutComponentDash168),
-            TANGUT_COMPONENT_DASH_169 => Ok(TangutComponents::TangutComponentDash169),
-            TANGUT_COMPONENT_DASH_170 => Ok(TangutComponents::TangutComponentDash170),
-            TANGUT_COMPONENT_DASH_171 => Ok(TangutComponents::TangutComponentDash171),
-            TANGUT_COMPONENT_DASH_172 => Ok(TangutComponents::TangutComponentDash172),
-            TANGUT_COMPONENT_DASH_173 => Ok(TangutComponents::TangutComponentDash173),
-            TANGUT_COMPONENT_DASH_174 => Ok(TangutComponents::TangutComponentDash174),
-            TANGUT_COMPONENT_DASH_175 => Ok(TangutComponents::TangutComponentDash175),
-            TANGUT_COMPONENT_DASH_176 => Ok(TangutComponents::TangutComponentDash176),
-            TANGUT_COMPONENT_DASH_177 => Ok(TangutComponents::TangutComponentDash177),
-            TANGUT_COMPONENT_DASH_178 => Ok(TangutComponents::TangutComponentDash178),
-            TANGUT_COMPONENT_DASH_179 => Ok(TangutComponents::TangutComponentDash179),
-            TANGUT_COMPONENT_DASH_180 => Ok(TangutComponents::TangutComponentDash180),
-            TANGUT_COMPONENT_DASH_181 => Ok(TangutComponents::TangutComponentDash181),
-            TANGUT_COMPONENT_DASH_182 => Ok(TangutComponents::TangutComponentDash182),
-            TANGUT_COMPONENT_DASH_183 => Ok(TangutComponents::TangutComponentDash183),
-            TANGUT_COMPONENT_DASH_184 => Ok(TangutComponents::TangutComponentDash184),
-            TANGUT_COMPONENT_DASH_185 => Ok(TangutComponents::TangutComponentDash185),
-            TANGUT_COMPONENT_DASH_186 => Ok(TangutComponents::TangutComponentDash186),
-            TANGUT_COMPONENT_DASH_187 => Ok(TangutComponents::TangutComponentDash187),
-            TANGUT_COMPONENT_DASH_188 => Ok(TangutComponents::TangutComponentDash188),
-            TANGUT_COMPONENT_DASH_189 => Ok(TangutComponents::TangutComponentDash189),
-            TANGUT_COMPONENT_DASH_190 => Ok(TangutComponents::TangutComponentDash190),
-            TANGUT_COMPONENT_DASH_191 => Ok(TangutComponents::TangutComponentDash191),
-            TANGUT_COMPONENT_DASH_192 => Ok(TangutComponents::TangutComponentDash192),
-            TANGUT_COMPONENT_DASH_193 => Ok(TangutComponents::TangutComponentDash193),
-            TANGUT_COMPONENT_DASH_194 => Ok(TangutComponents::TangutComponentDash194),
-            TANGUT_COMPONENT_DASH_195 => Ok(TangutComponents::TangutComponentDash195),
-            TANGUT_COMPONENT_DASH_196 => Ok(TangutComponents::TangutComponentDash196),
-            TANGUT_COMPONENT_DASH_197 => Ok(TangutComponents::TangutComponentDash197),
-            TANGUT_COMPONENT_DASH_198 => Ok(TangutComponents::TangutComponentDash198),
-            TANGUT_COMPONENT_DASH_199 => Ok(TangutComponents::TangutComponentDash199),
-            TANGUT_COMPONENT_DASH_200 => Ok(TangutComponents::TangutComponentDash200),
-            TANGUT_COMPONENT_DASH_201 => Ok(TangutComponents::TangutComponentDash201),
-            TANGUT_COMPONENT_DASH_202 => Ok(TangutComponents::TangutComponentDash202),
-            TANGUT_COMPONENT_DASH_203 => Ok(TangutComponents::TangutComponentDash203),
-            TANGUT_COMPONENT_DASH_204 => Ok(TangutComponents::TangutComponentDash204),
-            TANGUT_COMPONENT_DASH_205 => Ok(TangutComponents::TangutComponentDash205),
-            TANGUT_COMPONENT_DASH_206 => Ok(TangutComponents::TangutComponentDash206),
-            TANGUT_COMPONENT_DASH_207 => Ok(TangutComponents::TangutComponentDash207),
-            TANGUT_COMPONENT_DASH_208 => Ok(TangutComponents::TangutComponentDash208),
-            TANGUT_COMPONENT_DASH_209 => Ok(TangutComponents::TangutComponentDash209),
-            TANGUT_COMPONENT_DASH_210 => Ok(TangutComponents::TangutComponentDash210),
-            TANGUT_COMPONENT_DASH_211 => Ok(TangutComponents::TangutComponentDash211),
-            TANGUT_COMPONENT_DASH_212 => Ok(TangutComponents::TangutComponentDash212),
-            TANGUT_COMPONENT_DASH_213 => Ok(TangutComponents::TangutComponentDash213),
-            TANGUT_COMPONENT_DASH_214 => Ok(TangutComponents::TangutComponentDash214),
-            TANGUT_COMPONENT_DASH_215 => Ok(TangutComponents::TangutComponentDash215),
-            TANGUT_COMPONENT_DASH_216 => Ok(TangutComponents::TangutComponentDash216),
-            TANGUT_COMPONENT_DASH_217 => Ok(TangutComponents::TangutComponentDash217),
-            TANGUT_COMPONENT_DASH_218 => Ok(TangutComponents::TangutComponentDash218),
-            TANGUT_COMPONENT_DASH_219 => Ok(TangutComponents::TangutComponentDash219),
-            TANGUT_COMPONENT_DASH_220 => Ok(TangutComponents::TangutComponentDash220),
-            TANGUT_COMPONENT_DASH_221 => Ok(TangutComponents::TangutComponentDash221),
-            TANGUT_COMPONENT_DASH_222 => Ok(TangutComponents::TangutComponentDash222),
-            TANGUT_COMPONENT_DASH_223 => Ok(TangutComponents::TangutComponentDash223),
-            TANGUT_COMPONENT_DASH_224 => Ok(TangutComponents::TangutComponentDash224),
-            TANGUT_COMPONENT_DASH_225 => Ok(TangutComponents::TangutComponentDash225),
-            TANGUT_COMPONENT_DASH_226 => Ok(TangutComponents::TangutComponentDash226),
-            TANGUT_COMPONENT_DASH_227 => Ok(TangutComponents::TangutComponentDash227),
-            TANGUT_COMPONENT_DASH_228 => Ok(TangutComponents::TangutComponentDash228),
-            TANGUT_COMPONENT_DASH_229 => Ok(TangutComponents::TangutComponentDash229),
-            TANGUT_COMPONENT_DASH_230 => Ok(TangutComponents::TangutComponentDash230),
-            TANGUT_COMPONENT_DASH_231 => Ok(TangutComponents::TangutComponentDash231),
-            TANGUT_COMPONENT_DASH_232 => Ok(TangutComponents::TangutComponentDash232),
-            TANGUT_COMPONENT_DASH_233 => Ok(TangutComponents::TangutComponentDash233),
-            TANGUT_COMPONENT_DASH_234 => Ok(TangutComponents::TangutComponentDash234),
-            TANGUT_COMPONENT_DASH_235 => Ok(TangutComponents::TangutComponentDash235),
-            TANGUT_COMPONENT_DASH_236 => Ok(TangutComponents::TangutComponentDash236),
-            TANGUT_COMPONENT_DASH_237 => Ok(TangutComponents::TangutComponentDash237),
-            TANGUT_COMPONENT_DASH_238 => Ok(TangutComponents::TangutComponentDash238),
-            TANGUT_COMPONENT_DASH_239 => Ok(TangutComponents::TangutComponentDash239),
-            TANGUT_COMPONENT_DASH_240 => Ok(TangutComponents::TangutComponentDash240),
-            TANGUT_COMPONENT_DASH_241 => Ok(TangutComponents::TangutComponentDash241),
-            TANGUT_COMPONENT_DASH_242 => Ok(TangutComponents::TangutComponentDash242),
-            TANGUT_COMPONENT_DASH_243 => Ok(TangutComponents::TangutComponentDash243),
-            TANGUT_COMPONENT_DASH_244 => Ok(TangutComponents::TangutComponentDash244),
-            TANGUT_COMPONENT_DASH_245 => Ok(TangutComponents::TangutComponentDash245),
-            TANGUT_COMPONENT_DASH_246 => Ok(TangutComponents::TangutComponentDash246),
-            TANGUT_COMPONENT_DASH_247 => Ok(TangutComponents::TangutComponentDash247),
-            TANGUT_COMPONENT_DASH_248 => Ok(TangutComponents::TangutComponentDash248),
-            TANGUT_COMPONENT_DASH_249 => Ok(TangutComponents::TangutComponentDash249),
-            TANGUT_COMPONENT_DASH_250 => Ok(TangutComponents::TangutComponentDash250),
-            TANGUT_COMPONENT_DASH_251 => Ok(TangutComponents::TangutComponentDash251),
-            TANGUT_COMPONENT_DASH_252 => Ok(TangutComponents::TangutComponentDash252),
-            TANGUT_COMPONENT_DASH_253 => Ok(TangutComponents::TangutComponentDash253),
-            TANGUT_COMPONENT_DASH_254 => Ok(TangutComponents::TangutComponentDash254),
-            TANGUT_COMPONENT_DASH_255 => Ok(TangutComponents::TangutComponentDash255),
-            TANGUT_COMPONENT_DASH_256 => Ok(TangutComponents::TangutComponentDash256),
-            TANGUT_COMPONENT_DASH_257 => Ok(TangutComponents::TangutComponentDash257),
-            TANGUT_COMPONENT_DASH_258 => Ok(TangutComponents::TangutComponentDash258),
-            TANGUT_COMPONENT_DASH_259 => Ok(TangutComponents::TangutComponentDash259),
-            TANGUT_COMPONENT_DASH_260 => Ok(TangutComponents::TangutComponentDash260),
-            TANGUT_COMPONENT_DASH_261 => Ok(TangutComponents::TangutComponentDash261),
-            TANGUT_COMPONENT_DASH_262 => Ok(TangutComponents::TangutComponentDash262),
-            TANGUT_COMPONENT_DASH_263 => Ok(TangutComponents::TangutComponentDash263),
-            TANGUT_COMPONENT_DASH_264 => Ok(TangutComponents::TangutComponentDash264),
-            TANGUT_COMPONENT_DASH_265 => Ok(TangutComponents::TangutComponentDash265),
-            TANGUT_COMPONENT_DASH_266 => Ok(TangutComponents::TangutComponentDash266),
-            TANGUT_COMPONENT_DASH_267 => Ok(TangutComponents::TangutComponentDash267),
-            TANGUT_COMPONENT_DASH_268 => Ok(TangutComponents::TangutComponentDash268),
-            TANGUT_COMPONENT_DASH_269 => Ok(TangutComponents::TangutComponentDash269),
-            TANGUT_COMPONENT_DASH_270 => Ok(TangutComponents::TangutComponentDash270),
-            TANGUT_COMPONENT_DASH_271 => Ok(TangutComponents::TangutComponentDash271),
-            TANGUT_COMPONENT_DASH_272 => Ok(TangutComponents::TangutComponentDash272),
-            TANGUT_COMPONENT_DASH_273 => Ok(TangutComponents::TangutComponentDash273),
-            TANGUT_COMPONENT_DASH_274 => Ok(TangutComponents::TangutComponentDash274),
-            TANGUT_COMPONENT_DASH_275 => Ok(TangutComponents::TangutComponentDash275),
-            TANGUT_COMPONENT_DASH_276 => Ok(TangutComponents::TangutComponentDash276),
-            TANGUT_COMPONENT_DASH_277 => Ok(TangutComponents::TangutComponentDash277),
-            TANGUT_COMPONENT_DASH_278 => Ok(TangutComponents::TangutComponentDash278),
-            TANGUT_COMPONENT_DASH_279 => Ok(TangutComponents::TangutComponentDash279),
-            TANGUT_COMPONENT_DASH_280 => Ok(TangutComponents::TangutComponentDash280),
-            TANGUT_COMPONENT_DASH_281 => Ok(TangutComponents::TangutComponentDash281),
-            TANGUT_COMPONENT_DASH_282 => Ok(TangutComponents::TangutComponentDash282),
-            TANGUT_COMPONENT_DASH_283 => Ok(TangutComponents::TangutComponentDash283),
-            TANGUT_COMPONENT_DASH_284 => Ok(TangutComponents::TangutComponentDash284),
-            TANGUT_COMPONENT_DASH_285 => Ok(TangutComponents::TangutComponentDash285),
-            TANGUT_COMPONENT_DASH_286 => Ok(TangutComponents::TangutComponentDash286),
-            TANGUT_COMPONENT_DASH_287 => Ok(TangutComponents::TangutComponentDash287),
-            TANGUT_COMPONENT_DASH_288 => Ok(TangutComponents::TangutComponentDash288),
-            TANGUT_COMPONENT_DASH_289 => Ok(TangutComponents::TangutComponentDash289),
-            TANGUT_COMPONENT_DASH_290 => Ok(TangutComponents::TangutComponentDash290),
-            TANGUT_COMPONENT_DASH_291 => Ok(TangutComponents::TangutComponentDash291),
-            TANGUT_COMPONENT_DASH_292 => Ok(TangutComponents::TangutComponentDash292),
-            TANGUT_COMPONENT_DASH_293 => Ok(TangutComponents::TangutComponentDash293),
-            TANGUT_COMPONENT_DASH_294 => Ok(TangutComponents::TangutComponentDash294),
-            TANGUT_COMPONENT_DASH_295 => Ok(TangutComponents::TangutComponentDash295),
-            TANGUT_COMPONENT_DASH_296 => Ok(TangutComponents::TangutComponentDash296),
-            TANGUT_COMPONENT_DASH_297 => Ok(TangutComponents::TangutComponentDash297),
-            TANGUT_COMPONENT_DASH_298 => Ok(TangutComponents::TangutComponentDash298),
-            TANGUT_COMPONENT_DASH_299 => Ok(TangutComponents::TangutComponentDash299),
-            TANGUT_COMPONENT_DASH_300 => Ok(TangutComponents::TangutComponentDash300),
-            TANGUT_COMPONENT_DASH_301 => Ok(TangutComponents::TangutComponentDash301),
-            TANGUT_COMPONENT_DASH_302 => Ok(TangutComponents::TangutComponentDash302),
-            TANGUT_COMPONENT_DASH_303 => Ok(TangutComponents::TangutComponentDash303),
-            TANGUT_COMPONENT_DASH_304 => Ok(TangutComponents::TangutComponentDash304),
-            TANGUT_COMPONENT_DASH_305 => Ok(TangutComponents::TangutComponentDash305),
-            TANGUT_COMPONENT_DASH_306 => Ok(TangutComponents::TangutComponentDash306),
-            TANGUT_COMPONENT_DASH_307 => Ok(TangutComponents::TangutComponentDash307),
-            TANGUT_COMPONENT_DASH_308 => Ok(TangutComponents::TangutComponentDash308),
-            TANGUT_COMPONENT_DASH_309 => Ok(TangutComponents::TangutComponentDash309),
-            TANGUT_COMPONENT_DASH_310 => Ok(TangutComponents::TangutComponentDash310),
-            TANGUT_COMPONENT_DASH_311 => Ok(TangutComponents::TangutComponentDash311),
-            TANGUT_COMPONENT_DASH_312 => Ok(TangutComponents::TangutComponentDash312),
-            TANGUT_COMPONENT_DASH_313 => Ok(TangutComponents::TangutComponentDash313),
-            TANGUT_COMPONENT_DASH_314 => Ok(TangutComponents::TangutComponentDash314),
-            TANGUT_COMPONENT_DASH_315 => Ok(TangutComponents::TangutComponentDash315),
-            TANGUT_COMPONENT_DASH_316 => Ok(TangutComponents::TangutComponentDash316),
-            TANGUT_COMPONENT_DASH_317 => Ok(TangutComponents::TangutComponentDash317),
-            TANGUT_COMPONENT_DASH_318 => Ok(TangutComponents::TangutComponentDash318),
-            TANGUT_COMPONENT_DASH_319 => Ok(TangutComponents::TangutComponentDash319),
-            TANGUT_COMPONENT_DASH_320 => Ok(TangutComponents::TangutComponentDash320),
-            TANGUT_COMPONENT_DASH_321 => Ok(TangutComponents::TangutComponentDash321),
-            TANGUT_COMPONENT_DASH_322 => Ok(TangutComponents::TangutComponentDash322),
-            TANGUT_COMPONENT_DASH_323 => Ok(TangutComponents::TangutComponentDash323),
-            TANGUT_COMPONENT_DASH_324 => Ok(TangutComponents::TangutComponentDash324),
-            TANGUT_COMPONENT_DASH_325 => Ok(TangutComponents::TangutComponentDash325),
-            TANGUT_COMPONENT_DASH_326 => Ok(TangutComponents::TangutComponentDash326),
-            TANGUT_COMPONENT_DASH_327 => Ok(TangutComponents::TangutComponentDash327),
-            TANGUT_COMPONENT_DASH_328 => Ok(TangutComponents::TangutComponentDash328),
-            TANGUT_COMPONENT_DASH_329 => Ok(TangutComponents::TangutComponentDash329),
-            TANGUT_COMPONENT_DASH_330 => Ok(TangutComponents::TangutComponentDash330),
-            TANGUT_COMPONENT_DASH_331 => Ok(TangutComponents::TangutComponentDash331),
-            TANGUT_COMPONENT_DASH_332 => Ok(TangutComponents::TangutComponentDash332),
-            TANGUT_COMPONENT_DASH_333 => Ok(TangutComponents::TangutComponentDash333),
-            TANGUT_COMPONENT_DASH_334 => Ok(TangutComponents::TangutComponentDash334),
-            TANGUT_COMPONENT_DASH_335 => Ok(TangutComponents::TangutComponentDash335),
-            TANGUT_COMPONENT_DASH_336 => Ok(TangutComponents::TangutComponentDash336),
-            TANGUT_COMPONENT_DASH_337 => Ok(TangutComponents::TangutComponentDash337),
-            TANGUT_COMPONENT_DASH_338 => Ok(TangutComponents::TangutComponentDash338),
-            TANGUT_COMPONENT_DASH_339 => Ok(TangutComponents::TangutComponentDash339),
-            TANGUT_COMPONENT_DASH_340 => Ok(TangutComponents::TangutComponentDash340),
-            TANGUT_COMPONENT_DASH_341 => Ok(TangutComponents::TangutComponentDash341),
-            TANGUT_COMPONENT_DASH_342 => Ok(TangutComponents::TangutComponentDash342),
-            TANGUT_COMPONENT_DASH_343 => Ok(TangutComponents::TangutComponentDash343),
-            TANGUT_COMPONENT_DASH_344 => Ok(TangutComponents::TangutComponentDash344),
-            TANGUT_COMPONENT_DASH_345 => Ok(TangutComponents::TangutComponentDash345),
-            TANGUT_COMPONENT_DASH_346 => Ok(TangutComponents::TangutComponentDash346),
-            TANGUT_COMPONENT_DASH_347 => Ok(TangutComponents::TangutComponentDash347),
-            TANGUT_COMPONENT_DASH_348 => Ok(TangutComponents::TangutComponentDash348),
-            TANGUT_COMPONENT_DASH_349 => Ok(TangutComponents::TangutComponentDash349),
-            TANGUT_COMPONENT_DASH_350 => Ok(TangutComponents::TangutComponentDash350),
-            TANGUT_COMPONENT_DASH_351 => Ok(TangutComponents::TangutComponentDash351),
-            TANGUT_COMPONENT_DASH_352 => Ok(TangutComponents::TangutComponentDash352),
-            TANGUT_COMPONENT_DASH_353 => Ok(TangutComponents::TangutComponentDash353),
-            TANGUT_COMPONENT_DASH_354 => Ok(TangutComponents::TangutComponentDash354),
-            TANGUT_COMPONENT_DASH_355 => Ok(TangutComponents::TangutComponentDash355),
-            TANGUT_COMPONENT_DASH_356 => Ok(TangutComponents::TangutComponentDash356),
-            TANGUT_COMPONENT_DASH_357 => Ok(TangutComponents::TangutComponentDash357),
-            TANGUT_COMPONENT_DASH_358 => Ok(TangutComponents::TangutComponentDash358),
-            TANGUT_COMPONENT_DASH_359 => Ok(TangutComponents::TangutComponentDash359),
-            TANGUT_COMPONENT_DASH_360 => Ok(TangutComponents::TangutComponentDash360),
-            TANGUT_COMPONENT_DASH_361 => Ok(TangutComponents::TangutComponentDash361),
-            TANGUT_COMPONENT_DASH_362 => Ok(TangutComponents::TangutComponentDash362),
-            TANGUT_COMPONENT_DASH_363 => Ok(TangutComponents::TangutComponentDash363),
-            TANGUT_COMPONENT_DASH_364 => Ok(TangutComponents::TangutComponentDash364),
-            TANGUT_COMPONENT_DASH_365 => Ok(TangutComponents::TangutComponentDash365),
-            TANGUT_COMPONENT_DASH_366 => Ok(TangutComponents::TangutComponentDash366),
-            TANGUT_COMPONENT_DASH_367 => Ok(TangutComponents::TangutComponentDash367),
-            TANGUT_COMPONENT_DASH_368 => Ok(TangutComponents::TangutComponentDash368),
-            TANGUT_COMPONENT_DASH_369 => Ok(TangutComponents::TangutComponentDash369),
-            TANGUT_COMPONENT_DASH_370 => Ok(TangutComponents::TangutComponentDash370),
-            TANGUT_COMPONENT_DASH_371 => Ok(TangutComponents::TangutComponentDash371),
-            TANGUT_COMPONENT_DASH_372 => Ok(TangutComponents::TangutComponentDash372),
-            TANGUT_COMPONENT_DASH_373 => Ok(TangutComponents::TangutComponentDash373),
-            TANGUT_COMPONENT_DASH_374 => Ok(TangutComponents::TangutComponentDash374),
-            TANGUT_COMPONENT_DASH_375 => Ok(TangutComponents::TangutComponentDash375),
-            TANGUT_COMPONENT_DASH_376 => Ok(TangutComponents::TangutComponentDash376),
-            TANGUT_COMPONENT_DASH_377 => Ok(TangutComponents::TangutComponentDash377),
-            TANGUT_COMPONENT_DASH_378 => Ok(TangutComponents::TangutComponentDash378),
-            TANGUT_COMPONENT_DASH_379 => Ok(TangutComponents::TangutComponentDash379),
-            TANGUT_COMPONENT_DASH_380 => Ok(TangutComponents::TangutComponentDash380),
-            TANGUT_COMPONENT_DASH_381 => Ok(TangutComponents::TangutComponentDash381),
-            TANGUT_COMPONENT_DASH_382 => Ok(TangutComponents::TangutComponentDash382),
-            TANGUT_COMPONENT_DASH_383 => Ok(TangutComponents::TangutComponentDash383),
-            TANGUT_COMPONENT_DASH_384 => Ok(TangutComponents::TangutComponentDash384),
-            TANGUT_COMPONENT_DASH_385 => Ok(TangutComponents::TangutComponentDash385),
-            TANGUT_COMPONENT_DASH_386 => Ok(TangutComponents::TangutComponentDash386),
-            TANGUT_COMPONENT_DASH_387 => Ok(TangutComponents::TangutComponentDash387),
-            TANGUT_COMPONENT_DASH_388 => Ok(TangutComponents::TangutComponentDash388),
-            TANGUT_COMPONENT_DASH_389 => Ok(TangutComponents::TangutComponentDash389),
-            TANGUT_COMPONENT_DASH_390 => Ok(TangutComponents::TangutComponentDash390),
-            TANGUT_COMPONENT_DASH_391 => Ok(TangutComponents::TangutComponentDash391),
-            TANGUT_COMPONENT_DASH_392 => Ok(TangutComponents::TangutComponentDash392),
-            TANGUT_COMPONENT_DASH_393 => Ok(TangutComponents::TangutComponentDash393),
-            TANGUT_COMPONENT_DASH_394 => Ok(TangutComponents::TangutComponentDash394),
-            TANGUT_COMPONENT_DASH_395 => Ok(TangutComponents::TangutComponentDash395),
-            TANGUT_COMPONENT_DASH_396 => Ok(TangutComponents::TangutComponentDash396),
-            TANGUT_COMPONENT_DASH_397 => Ok(TangutComponents::TangutComponentDash397),
-            TANGUT_COMPONENT_DASH_398 => Ok(TangutComponents::TangutComponentDash398),
-            TANGUT_COMPONENT_DASH_399 => Ok(TangutComponents::TangutComponentDash399),
-            TANGUT_COMPONENT_DASH_400 => Ok(TangutComponents::TangutComponentDash400),
-            TANGUT_COMPONENT_DASH_401 => Ok(TangutComponents::TangutComponentDash401),
-            TANGUT_COMPONENT_DASH_402 => Ok(TangutComponents::TangutComponentDash402),
-            TANGUT_COMPONENT_DASH_403 => Ok(TangutComponents::TangutComponentDash403),
-            TANGUT_COMPONENT_DASH_404 => Ok(TangutComponents::TangutComponentDash404),
-            TANGUT_COMPONENT_DASH_405 => Ok(TangutComponents::TangutComponentDash405),
-            TANGUT_COMPONENT_DASH_406 => Ok(TangutComponents::TangutComponentDash406),
-            TANGUT_COMPONENT_DASH_407 => Ok(TangutComponents::TangutComponentDash407),
-            TANGUT_COMPONENT_DASH_408 => Ok(TangutComponents::TangutComponentDash408),
-            TANGUT_COMPONENT_DASH_409 => Ok(TangutComponents::TangutComponentDash409),
-            TANGUT_COMPONENT_DASH_410 => Ok(TangutComponents::TangutComponentDash410),
-            TANGUT_COMPONENT_DASH_411 => Ok(TangutComponents::TangutComponentDash411),
-            TANGUT_COMPONENT_DASH_412 => Ok(TangutComponents::TangutComponentDash412),
-            TANGUT_COMPONENT_DASH_413 => Ok(TangutComponents::TangutComponentDash413),
-            TANGUT_COMPONENT_DASH_414 => Ok(TangutComponents::TangutComponentDash414),
-            TANGUT_COMPONENT_DASH_415 => Ok(TangutComponents::TangutComponentDash415),
-            TANGUT_COMPONENT_DASH_416 => Ok(TangutComponents::TangutComponentDash416),
-            TANGUT_COMPONENT_DASH_417 => Ok(TangutComponents::TangutComponentDash417),
-            TANGUT_COMPONENT_DASH_418 => Ok(TangutComponents::TangutComponentDash418),
-            TANGUT_COMPONENT_DASH_419 => Ok(TangutComponents::TangutComponentDash419),
-            TANGUT_COMPONENT_DASH_420 => Ok(TangutComponents::TangutComponentDash420),
-            TANGUT_COMPONENT_DASH_421 => Ok(TangutComponents::TangutComponentDash421),
-            TANGUT_COMPONENT_DASH_422 => Ok(TangutComponents::TangutComponentDash422),
-            TANGUT_COMPONENT_DASH_423 => Ok(TangutComponents::TangutComponentDash423),
-            TANGUT_COMPONENT_DASH_424 => Ok(TangutComponents::TangutComponentDash424),
-            TANGUT_COMPONENT_DASH_425 => Ok(TangutComponents::TangutComponentDash425),
-            TANGUT_COMPONENT_DASH_426 => Ok(TangutComponents::TangutComponentDash426),
-            TANGUT_COMPONENT_DASH_427 => Ok(TangutComponents::TangutComponentDash427),
-            TANGUT_COMPONENT_DASH_428 => Ok(TangutComponents::TangutComponentDash428),
-            TANGUT_COMPONENT_DASH_429 => Ok(TangutComponents::TangutComponentDash429),
-            TANGUT_COMPONENT_DASH_430 => Ok(TangutComponents::TangutComponentDash430),
-            TANGUT_COMPONENT_DASH_431 => Ok(TangutComponents::TangutComponentDash431),
-            TANGUT_COMPONENT_DASH_432 => Ok(TangutComponents::TangutComponentDash432),
-            TANGUT_COMPONENT_DASH_433 => Ok(TangutComponents::TangutComponentDash433),
-            TANGUT_COMPONENT_DASH_434 => Ok(TangutComponents::TangutComponentDash434),
-            TANGUT_COMPONENT_DASH_435 => Ok(TangutComponents::TangutComponentDash435),
-            TANGUT_COMPONENT_DASH_436 => Ok(TangutComponents::TangutComponentDash436),
-            TANGUT_COMPONENT_DASH_437 => Ok(TangutComponents::TangutComponentDash437),
-            TANGUT_COMPONENT_DASH_438 => Ok(TangutComponents::TangutComponentDash438),
-            TANGUT_COMPONENT_DASH_439 => Ok(TangutComponents::TangutComponentDash439),
-            TANGUT_COMPONENT_DASH_440 => Ok(TangutComponents::TangutComponentDash440),
-            TANGUT_COMPONENT_DASH_441 => Ok(TangutComponents::TangutComponentDash441),
-            TANGUT_COMPONENT_DASH_442 => Ok(TangutComponents::TangutComponentDash442),
-            TANGUT_COMPONENT_DASH_443 => Ok(TangutComponents::TangutComponentDash443),
-            TANGUT_COMPONENT_DASH_444 => Ok(TangutComponents::TangutComponentDash444),
-            TANGUT_COMPONENT_DASH_445 => Ok(TangutComponents::TangutComponentDash445),
-            TANGUT_COMPONENT_DASH_446 => Ok(TangutComponents::TangutComponentDash446),
-            TANGUT_COMPONENT_DASH_447 => Ok(TangutComponents::TangutComponentDash447),
-            TANGUT_COMPONENT_DASH_448 => Ok(TangutComponents::TangutComponentDash448),
-            TANGUT_COMPONENT_DASH_449 => Ok(TangutComponents::TangutComponentDash449),
-            TANGUT_COMPONENT_DASH_450 => Ok(TangutComponents::TangutComponentDash450),
-            TANGUT_COMPONENT_DASH_451 => Ok(TangutComponents::TangutComponentDash451),
-            TANGUT_COMPONENT_DASH_452 => Ok(TangutComponents::TangutComponentDash452),
-            TANGUT_COMPONENT_DASH_453 => Ok(TangutComponents::TangutComponentDash453),
-            TANGUT_COMPONENT_DASH_454 => Ok(TangutComponents::TangutComponentDash454),
-            TANGUT_COMPONENT_DASH_455 => Ok(TangutComponents::TangutComponentDash455),
-            TANGUT_COMPONENT_DASH_456 => Ok(TangutComponents::TangutComponentDash456),
-            TANGUT_COMPONENT_DASH_457 => Ok(TangutComponents::TangutComponentDash457),
-            TANGUT_COMPONENT_DASH_458 => Ok(TangutComponents::TangutComponentDash458),
-            TANGUT_COMPONENT_DASH_459 => Ok(TangutComponents::TangutComponentDash459),
-            TANGUT_COMPONENT_DASH_460 => Ok(TangutComponents::TangutComponentDash460),
-            TANGUT_COMPONENT_DASH_461 => Ok(TangutComponents::TangutComponentDash461),
-            TANGUT_COMPONENT_DASH_462 => Ok(TangutComponents::TangutComponentDash462),
-            TANGUT_COMPONENT_DASH_463 => Ok(TangutComponents::TangutComponentDash463),
-            TANGUT_COMPONENT_DASH_464 => Ok(TangutComponents::TangutComponentDash464),
-            TANGUT_COMPONENT_DASH_465 => Ok(TangutComponents::TangutComponentDash465),
-            TANGUT_COMPONENT_DASH_466 => Ok(TangutComponents::TangutComponentDash466),
-            TANGUT_COMPONENT_DASH_467 => Ok(TangutComponents::TangutComponentDash467),
-            TANGUT_COMPONENT_DASH_468 => Ok(TangutComponents::TangutComponentDash468),
-            TANGUT_COMPONENT_DASH_469 => Ok(TangutComponents::TangutComponentDash469),
-            TANGUT_COMPONENT_DASH_470 => Ok(TangutComponents::TangutComponentDash470),
-            TANGUT_COMPONENT_DASH_471 => Ok(TangutComponents::TangutComponentDash471),
-            TANGUT_COMPONENT_DASH_472 => Ok(TangutComponents::TangutComponentDash472),
-            TANGUT_COMPONENT_DASH_473 => Ok(TangutComponents::TangutComponentDash473),
-            TANGUT_COMPONENT_DASH_474 => Ok(TangutComponents::TangutComponentDash474),
-            TANGUT_COMPONENT_DASH_475 => Ok(TangutComponents::TangutComponentDash475),
-            TANGUT_COMPONENT_DASH_476 => Ok(TangutComponents::TangutComponentDash476),
-            TANGUT_COMPONENT_DASH_477 => Ok(TangutComponents::TangutComponentDash477),
-            TANGUT_COMPONENT_DASH_478 => Ok(TangutComponents::TangutComponentDash478),
-            TANGUT_COMPONENT_DASH_479 => Ok(TangutComponents::TangutComponentDash479),
-            TANGUT_COMPONENT_DASH_480 => Ok(TangutComponents::TangutComponentDash480),
-            TANGUT_COMPONENT_DASH_481 => Ok(TangutComponents::TangutComponentDash481),
-            TANGUT_COMPONENT_DASH_482 => Ok(TangutComponents::TangutComponentDash482),
-            TANGUT_COMPONENT_DASH_483 => Ok(TangutComponents::TangutComponentDash483),
-            TANGUT_COMPONENT_DASH_484 => Ok(TangutComponents::TangutComponentDash484),
-            TANGUT_COMPONENT_DASH_485 => Ok(TangutComponents::TangutComponentDash485),
-            TANGUT_COMPONENT_DASH_486 => Ok(TangutComponents::TangutComponentDash486),
-            TANGUT_COMPONENT_DASH_487 => Ok(TangutComponents::TangutComponentDash487),
-            TANGUT_COMPONENT_DASH_488 => Ok(TangutComponents::TangutComponentDash488),
-            TANGUT_COMPONENT_DASH_489 => Ok(TangutComponents::TangutComponentDash489),
-            TANGUT_COMPONENT_DASH_490 => Ok(TangutComponents::TangutComponentDash490),
-            TANGUT_COMPONENT_DASH_491 => Ok(TangutComponents::TangutComponentDash491),
-            TANGUT_COMPONENT_DASH_492 => Ok(TangutComponents::TangutComponentDash492),
-            TANGUT_COMPONENT_DASH_493 => Ok(TangutComponents::TangutComponentDash493),
-            TANGUT_COMPONENT_DASH_494 => Ok(TangutComponents::TangutComponentDash494),
-            TANGUT_COMPONENT_DASH_495 => Ok(TangutComponents::TangutComponentDash495),
-            TANGUT_COMPONENT_DASH_496 => Ok(TangutComponents::TangutComponentDash496),
-            TANGUT_COMPONENT_DASH_497 => Ok(TangutComponents::TangutComponentDash497),
-            TANGUT_COMPONENT_DASH_498 => Ok(TangutComponents::TangutComponentDash498),
-            TANGUT_COMPONENT_DASH_499 => Ok(TangutComponents::TangutComponentDash499),
-            TANGUT_COMPONENT_DASH_500 => Ok(TangutComponents::TangutComponentDash500),
-            TANGUT_COMPONENT_DASH_501 => Ok(TangutComponents::TangutComponentDash501),
-            TANGUT_COMPONENT_DASH_502 => Ok(TangutComponents::TangutComponentDash502),
-            TANGUT_COMPONENT_DASH_503 => Ok(TangutComponents::TangutComponentDash503),
-            TANGUT_COMPONENT_DASH_504 => Ok(TangutComponents::TangutComponentDash504),
-            TANGUT_COMPONENT_DASH_505 => Ok(TangutComponents::TangutComponentDash505),
-            TANGUT_COMPONENT_DASH_506 => Ok(TangutComponents::TangutComponentDash506),
-            TANGUT_COMPONENT_DASH_507 => Ok(TangutComponents::TangutComponentDash507),
-            TANGUT_COMPONENT_DASH_508 => Ok(TangutComponents::TangutComponentDash508),
-            TANGUT_COMPONENT_DASH_509 => Ok(TangutComponents::TangutComponentDash509),
-            TANGUT_COMPONENT_DASH_510 => Ok(TangutComponents::TangutComponentDash510),
-            TANGUT_COMPONENT_DASH_511 => Ok(TangutComponents::TangutComponentDash511),
-            TANGUT_COMPONENT_DASH_512 => Ok(TangutComponents::TangutComponentDash512),
-            TANGUT_COMPONENT_DASH_513 => Ok(TangutComponents::TangutComponentDash513),
-            TANGUT_COMPONENT_DASH_514 => Ok(TangutComponents::TangutComponentDash514),
-            TANGUT_COMPONENT_DASH_515 => Ok(TangutComponents::TangutComponentDash515),
-            TANGUT_COMPONENT_DASH_516 => Ok(TangutComponents::TangutComponentDash516),
-            TANGUT_COMPONENT_DASH_517 => Ok(TangutComponents::TangutComponentDash517),
-            TANGUT_COMPONENT_DASH_518 => Ok(TangutComponents::TangutComponentDash518),
-            TANGUT_COMPONENT_DASH_519 => Ok(TangutComponents::TangutComponentDash519),
-            TANGUT_COMPONENT_DASH_520 => Ok(TangutComponents::TangutComponentDash520),
-            TANGUT_COMPONENT_DASH_521 => Ok(TangutComponents::TangutComponentDash521),
-            TANGUT_COMPONENT_DASH_522 => Ok(TangutComponents::TangutComponentDash522),
-            TANGUT_COMPONENT_DASH_523 => Ok(TangutComponents::TangutComponentDash523),
-            TANGUT_COMPONENT_DASH_524 => Ok(TangutComponents::TangutComponentDash524),
-            TANGUT_COMPONENT_DASH_525 => Ok(TangutComponents::TangutComponentDash525),
-            TANGUT_COMPONENT_DASH_526 => Ok(TangutComponents::TangutComponentDash526),
-            TANGUT_COMPONENT_DASH_527 => Ok(TangutComponents::TangutComponentDash527),
-            TANGUT_COMPONENT_DASH_528 => Ok(TangutComponents::TangutComponentDash528),
-            TANGUT_COMPONENT_DASH_529 => Ok(TangutComponents::TangutComponentDash529),
-            TANGUT_COMPONENT_DASH_530 => Ok(TangutComponents::TangutComponentDash530),
-            TANGUT_COMPONENT_DASH_531 => Ok(TangutComponents::TangutComponentDash531),
-            TANGUT_COMPONENT_DASH_532 => Ok(TangutComponents::TangutComponentDash532),
-            TANGUT_COMPONENT_DASH_533 => Ok(TangutComponents::TangutComponentDash533),
-            TANGUT_COMPONENT_DASH_534 => Ok(TangutComponents::TangutComponentDash534),
-            TANGUT_COMPONENT_DASH_535 => Ok(TangutComponents::TangutComponentDash535),
-            TANGUT_COMPONENT_DASH_536 => Ok(TangutComponents::TangutComponentDash536),
-            TANGUT_COMPONENT_DASH_537 => Ok(TangutComponents::TangutComponentDash537),
-            TANGUT_COMPONENT_DASH_538 => Ok(TangutComponents::TangutComponentDash538),
-            TANGUT_COMPONENT_DASH_539 => Ok(TangutComponents::TangutComponentDash539),
-            TANGUT_COMPONENT_DASH_540 => Ok(TangutComponents::TangutComponentDash540),
-            TANGUT_COMPONENT_DASH_541 => Ok(TangutComponents::TangutComponentDash541),
-            TANGUT_COMPONENT_DASH_542 => Ok(TangutComponents::TangutComponentDash542),
-            TANGUT_COMPONENT_DASH_543 => Ok(TangutComponents::TangutComponentDash543),
-            TANGUT_COMPONENT_DASH_544 => Ok(TangutComponents::TangutComponentDash544),
-            TANGUT_COMPONENT_DASH_545 => Ok(TangutComponents::TangutComponentDash545),
-            TANGUT_COMPONENT_DASH_546 => Ok(TangutComponents::TangutComponentDash546),
-            TANGUT_COMPONENT_DASH_547 => Ok(TangutComponents::TangutComponentDash547),
-            TANGUT_COMPONENT_DASH_548 => Ok(TangutComponents::TangutComponentDash548),
-            TANGUT_COMPONENT_DASH_549 => Ok(TangutComponents::TangutComponentDash549),
-            TANGUT_COMPONENT_DASH_550 => Ok(TangutComponents::TangutComponentDash550),
-            TANGUT_COMPONENT_DASH_551 => Ok(TangutComponents::TangutComponentDash551),
-            TANGUT_COMPONENT_DASH_552 => Ok(TangutComponents::TangutComponentDash552),
-            TANGUT_COMPONENT_DASH_553 => Ok(TangutComponents::TangutComponentDash553),
-            TANGUT_COMPONENT_DASH_554 => Ok(TangutComponents::TangutComponentDash554),
-            TANGUT_COMPONENT_DASH_555 => Ok(TangutComponents::TangutComponentDash555),
-            TANGUT_COMPONENT_DASH_556 => Ok(TangutComponents::TangutComponentDash556),
-            TANGUT_COMPONENT_DASH_557 => Ok(TangutComponents::TangutComponentDash557),
-            TANGUT_COMPONENT_DASH_558 => Ok(TangutComponents::TangutComponentDash558),
-            TANGUT_COMPONENT_DASH_559 => Ok(TangutComponents::TangutComponentDash559),
-            TANGUT_COMPONENT_DASH_560 => Ok(TangutComponents::TangutComponentDash560),
-            TANGUT_COMPONENT_DASH_561 => Ok(TangutComponents::TangutComponentDash561),
-            TANGUT_COMPONENT_DASH_562 => Ok(TangutComponents::TangutComponentDash562),
-            TANGUT_COMPONENT_DASH_563 => Ok(TangutComponents::TangutComponentDash563),
-            TANGUT_COMPONENT_DASH_564 => Ok(TangutComponents::TangutComponentDash564),
-            TANGUT_COMPONENT_DASH_565 => Ok(TangutComponents::TangutComponentDash565),
-            TANGUT_COMPONENT_DASH_566 => Ok(TangutComponents::TangutComponentDash566),
-            TANGUT_COMPONENT_DASH_567 => Ok(TangutComponents::TangutComponentDash567),
-            TANGUT_COMPONENT_DASH_568 => Ok(TangutComponents::TangutComponentDash568),
-            TANGUT_COMPONENT_DASH_569 => Ok(TangutComponents::TangutComponentDash569),
-            TANGUT_COMPONENT_DASH_570 => Ok(TangutComponents::TangutComponentDash570),
-            TANGUT_COMPONENT_DASH_571 => Ok(TangutComponents::TangutComponentDash571),
-            TANGUT_COMPONENT_DASH_572 => Ok(TangutComponents::TangutComponentDash572),
-            TANGUT_COMPONENT_DASH_573 => Ok(TangutComponents::TangutComponentDash573),
-            TANGUT_COMPONENT_DASH_574 => Ok(TangutComponents::TangutComponentDash574),
-            TANGUT_COMPONENT_DASH_575 => Ok(TangutComponents::TangutComponentDash575),
-            TANGUT_COMPONENT_DASH_576 => Ok(TangutComponents::TangutComponentDash576),
-            TANGUT_COMPONENT_DASH_577 => Ok(TangutComponents::TangutComponentDash577),
-            TANGUT_COMPONENT_DASH_578 => Ok(TangutComponents::TangutComponentDash578),
-            TANGUT_COMPONENT_DASH_579 => Ok(TangutComponents::TangutComponentDash579),
-            TANGUT_COMPONENT_DASH_580 => Ok(TangutComponents::TangutComponentDash580),
-            TANGUT_COMPONENT_DASH_581 => Ok(TangutComponents::TangutComponentDash581),
-            TANGUT_COMPONENT_DASH_582 => Ok(TangutComponents::TangutComponentDash582),
-            TANGUT_COMPONENT_DASH_583 => Ok(TangutComponents::TangutComponentDash583),
-            TANGUT_COMPONENT_DASH_584 => Ok(TangutComponents::TangutComponentDash584),
-            TANGUT_COMPONENT_DASH_585 => Ok(TangutComponents::TangutComponentDash585),
-            TANGUT_COMPONENT_DASH_586 => Ok(TangutComponents::TangutComponentDash586),
-            TANGUT_COMPONENT_DASH_587 => Ok(TangutComponents::TangutComponentDash587),
-            TANGUT_COMPONENT_DASH_588 => Ok(TangutComponents::TangutComponentDash588),
-            TANGUT_COMPONENT_DASH_589 => Ok(TangutComponents::TangutComponentDash589),
-            TANGUT_COMPONENT_DASH_590 => Ok(TangutComponents::TangutComponentDash590),
-            TANGUT_COMPONENT_DASH_591 => Ok(TangutComponents::TangutComponentDash591),
-            TANGUT_COMPONENT_DASH_592 => Ok(TangutComponents::TangutComponentDash592),
-            TANGUT_COMPONENT_DASH_593 => Ok(TangutComponents::TangutComponentDash593),
-            TANGUT_COMPONENT_DASH_594 => Ok(TangutComponents::TangutComponentDash594),
-            TANGUT_COMPONENT_DASH_595 => Ok(TangutComponents::TangutComponentDash595),
-            TANGUT_COMPONENT_DASH_596 => Ok(TangutComponents::TangutComponentDash596),
-            TANGUT_COMPONENT_DASH_597 => Ok(TangutComponents::TangutComponentDash597),
-            TANGUT_COMPONENT_DASH_598 => Ok(TangutComponents::TangutComponentDash598),
-            TANGUT_COMPONENT_DASH_599 => Ok(TangutComponents::TangutComponentDash599),
-            TANGUT_COMPONENT_DASH_600 => Ok(TangutComponents::TangutComponentDash600),
-            TANGUT_COMPONENT_DASH_601 => Ok(TangutComponents::TangutComponentDash601),
-            TANGUT_COMPONENT_DASH_602 => Ok(TangutComponents::TangutComponentDash602),
-            TANGUT_COMPONENT_DASH_603 => Ok(TangutComponents::TangutComponentDash603),
-            TANGUT_COMPONENT_DASH_604 => Ok(TangutComponents::TangutComponentDash604),
-            TANGUT_COMPONENT_DASH_605 => Ok(TangutComponents::TangutComponentDash605),
-            TANGUT_COMPONENT_DASH_606 => Ok(TangutComponents::TangutComponentDash606),
-            TANGUT_COMPONENT_DASH_607 => Ok(TangutComponents::TangutComponentDash607),
-            TANGUT_COMPONENT_DASH_608 => Ok(TangutComponents::TangutComponentDash608),
-            TANGUT_COMPONENT_DASH_609 => Ok(TangutComponents::TangutComponentDash609),
-            TANGUT_COMPONENT_DASH_610 => Ok(TangutComponents::TangutComponentDash610),
-            TANGUT_COMPONENT_DASH_611 => Ok(TangutComponents::TangutComponentDash611),
-            TANGUT_COMPONENT_DASH_612 => Ok(TangutComponents::TangutComponentDash612),
-            TANGUT_COMPONENT_DASH_613 => Ok(TangutComponents::TangutComponentDash613),
-            TANGUT_COMPONENT_DASH_614 => Ok(TangutComponents::TangutComponentDash614),
-            TANGUT_COMPONENT_DASH_615 => Ok(TangutComponents::TangutComponentDash615),
-            TANGUT_COMPONENT_DASH_616 => Ok(TangutComponents::TangutComponentDash616),
-            TANGUT_COMPONENT_DASH_617 => Ok(TangutComponents::TangutComponentDash617),
-            TANGUT_COMPONENT_DASH_618 => Ok(TangutComponents::TangutComponentDash618),
-            TANGUT_COMPONENT_DASH_619 => Ok(TangutComponents::TangutComponentDash619),
-            TANGUT_COMPONENT_DASH_620 => Ok(TangutComponents::TangutComponentDash620),
-            TANGUT_COMPONENT_DASH_621 => Ok(TangutComponents::TangutComponentDash621),
-            TANGUT_COMPONENT_DASH_622 => Ok(TangutComponents::TangutComponentDash622),
-            TANGUT_COMPONENT_DASH_623 => Ok(TangutComponents::TangutComponentDash623),
-            TANGUT_COMPONENT_DASH_624 => Ok(TangutComponents::TangutComponentDash624),
-            TANGUT_COMPONENT_DASH_625 => Ok(TangutComponents::TangutComponentDash625),
-            TANGUT_COMPONENT_DASH_626 => Ok(TangutComponents::TangutComponentDash626),
-            TANGUT_COMPONENT_DASH_627 => Ok(TangutComponents::TangutComponentDash627),
-            TANGUT_COMPONENT_DASH_628 => Ok(TangutComponents::TangutComponentDash628),
-            TANGUT_COMPONENT_DASH_629 => Ok(TangutComponents::TangutComponentDash629),
-            TANGUT_COMPONENT_DASH_630 => Ok(TangutComponents::TangutComponentDash630),
-            TANGUT_COMPONENT_DASH_631 => Ok(TangutComponents::TangutComponentDash631),
-            TANGUT_COMPONENT_DASH_632 => Ok(TangutComponents::TangutComponentDash632),
-            TANGUT_COMPONENT_DASH_633 => Ok(TangutComponents::TangutComponentDash633),
-            TANGUT_COMPONENT_DASH_634 => Ok(TangutComponents::TangutComponentDash634),
-            TANGUT_COMPONENT_DASH_635 => Ok(TangutComponents::TangutComponentDash635),
-            TANGUT_COMPONENT_DASH_636 => Ok(TangutComponents::TangutComponentDash636),
-            TANGUT_COMPONENT_DASH_637 => Ok(TangutComponents::TangutComponentDash637),
-            TANGUT_COMPONENT_DASH_638 => Ok(TangutComponents::TangutComponentDash638),
-            TANGUT_COMPONENT_DASH_639 => Ok(TangutComponents::TangutComponentDash639),
-            TANGUT_COMPONENT_DASH_640 => Ok(TangutComponents::TangutComponentDash640),
-            TANGUT_COMPONENT_DASH_641 => Ok(TangutComponents::TangutComponentDash641),
-            TANGUT_COMPONENT_DASH_642 => Ok(TangutComponents::TangutComponentDash642),
-            TANGUT_COMPONENT_DASH_643 => Ok(TangutComponents::TangutComponentDash643),
-            TANGUT_COMPONENT_DASH_644 => Ok(TangutComponents::TangutComponentDash644),
-            TANGUT_COMPONENT_DASH_645 => Ok(TangutComponents::TangutComponentDash645),
-            TANGUT_COMPONENT_DASH_646 => Ok(TangutComponents::TangutComponentDash646),
-            TANGUT_COMPONENT_DASH_647 => Ok(TangutComponents::TangutComponentDash647),
-            TANGUT_COMPONENT_DASH_648 => Ok(TangutComponents::TangutComponentDash648),
-            TANGUT_COMPONENT_DASH_649 => Ok(TangutComponents::TangutComponentDash649),
-            TANGUT_COMPONENT_DASH_650 => Ok(TangutComponents::TangutComponentDash650),
-            TANGUT_COMPONENT_DASH_651 => Ok(TangutComponents::TangutComponentDash651),
-            TANGUT_COMPONENT_DASH_652 => Ok(TangutComponents::TangutComponentDash652),
-            TANGUT_COMPONENT_DASH_653 => Ok(TangutComponents::TangutComponentDash653),
-            TANGUT_COMPONENT_DASH_654 => Ok(TangutComponents::TangutComponentDash654),
-            TANGUT_COMPONENT_DASH_655 => Ok(TangutComponents::TangutComponentDash655),
-            TANGUT_COMPONENT_DASH_656 => Ok(TangutComponents::TangutComponentDash656),
-            TANGUT_COMPONENT_DASH_657 => Ok(TangutComponents::TangutComponentDash657),
-            TANGUT_COMPONENT_DASH_658 => Ok(TangutComponents::TangutComponentDash658),
-            TANGUT_COMPONENT_DASH_659 => Ok(TangutComponents::TangutComponentDash659),
-            TANGUT_COMPONENT_DASH_660 => Ok(TangutComponents::TangutComponentDash660),
-            TANGUT_COMPONENT_DASH_661 => Ok(TangutComponents::TangutComponentDash661),
-            TANGUT_COMPONENT_DASH_662 => Ok(TangutComponents::TangutComponentDash662),
-            TANGUT_COMPONENT_DASH_663 => Ok(TangutComponents::TangutComponentDash663),
-            TANGUT_COMPONENT_DASH_664 => Ok(TangutComponents::TangutComponentDash664),
-            TANGUT_COMPONENT_DASH_665 => Ok(TangutComponents::TangutComponentDash665),
-            TANGUT_COMPONENT_DASH_666 => Ok(TangutComponents::TangutComponentDash666),
-            TANGUT_COMPONENT_DASH_667 => Ok(TangutComponents::TangutComponentDash667),
-            TANGUT_COMPONENT_DASH_668 => Ok(TangutComponents::TangutComponentDash668),
-            TANGUT_COMPONENT_DASH_669 => Ok(TangutComponents::TangutComponentDash669),
-            TANGUT_COMPONENT_DASH_670 => Ok(TangutComponents::TangutComponentDash670),
-            TANGUT_COMPONENT_DASH_671 => Ok(TangutComponents::TangutComponentDash671),
-            TANGUT_COMPONENT_DASH_672 => Ok(TangutComponents::TangutComponentDash672),
-            TANGUT_COMPONENT_DASH_673 => Ok(TangutComponents::TangutComponentDash673),
-            TANGUT_COMPONENT_DASH_674 => Ok(TangutComponents::TangutComponentDash674),
-            TANGUT_COMPONENT_DASH_675 => Ok(TangutComponents::TangutComponentDash675),
-            TANGUT_COMPONENT_DASH_676 => Ok(TangutComponents::TangutComponentDash676),
-            TANGUT_COMPONENT_DASH_677 => Ok(TangutComponents::TangutComponentDash677),
-            TANGUT_COMPONENT_DASH_678 => Ok(TangutComponents::TangutComponentDash678),
-            TANGUT_COMPONENT_DASH_679 => Ok(TangutComponents::TangutComponentDash679),
-            TANGUT_COMPONENT_DASH_680 => Ok(TangutComponents::TangutComponentDash680),
-            TANGUT_COMPONENT_DASH_681 => Ok(TangutComponents::TangutComponentDash681),
-            TANGUT_COMPONENT_DASH_682 => Ok(TangutComponents::TangutComponentDash682),
-            TANGUT_COMPONENT_DASH_683 => Ok(TangutComponents::TangutComponentDash683),
-            TANGUT_COMPONENT_DASH_684 => Ok(TangutComponents::TangutComponentDash684),
-            TANGUT_COMPONENT_DASH_685 => Ok(TangutComponents::TangutComponentDash685),
-            TANGUT_COMPONENT_DASH_686 => Ok(TangutComponents::TangutComponentDash686),
-            TANGUT_COMPONENT_DASH_687 => Ok(TangutComponents::TangutComponentDash687),
-            TANGUT_COMPONENT_DASH_688 => Ok(TangutComponents::TangutComponentDash688),
-            TANGUT_COMPONENT_DASH_689 => Ok(TangutComponents::TangutComponentDash689),
-            TANGUT_COMPONENT_DASH_690 => Ok(TangutComponents::TangutComponentDash690),
-            TANGUT_COMPONENT_DASH_691 => Ok(TangutComponents::TangutComponentDash691),
-            TANGUT_COMPONENT_DASH_692 => Ok(TangutComponents::TangutComponentDash692),
-            TANGUT_COMPONENT_DASH_693 => Ok(TangutComponents::TangutComponentDash693),
-            TANGUT_COMPONENT_DASH_694 => Ok(TangutComponents::TangutComponentDash694),
-            TANGUT_COMPONENT_DASH_695 => Ok(TangutComponents::TangutComponentDash695),
-            TANGUT_COMPONENT_DASH_696 => Ok(TangutComponents::TangutComponentDash696),
-            TANGUT_COMPONENT_DASH_697 => Ok(TangutComponents::TangutComponentDash697),
-            TANGUT_COMPONENT_DASH_698 => Ok(TangutComponents::TangutComponentDash698),
-            TANGUT_COMPONENT_DASH_699 => Ok(TangutComponents::TangutComponentDash699),
-            TANGUT_COMPONENT_DASH_700 => Ok(TangutComponents::TangutComponentDash700),
-            TANGUT_COMPONENT_DASH_701 => Ok(TangutComponents::TangutComponentDash701),
-            TANGUT_COMPONENT_DASH_702 => Ok(TangutComponents::TangutComponentDash702),
-            TANGUT_COMPONENT_DASH_703 => Ok(TangutComponents::TangutComponentDash703),
-            TANGUT_COMPONENT_DASH_704 => Ok(TangutComponents::TangutComponentDash704),
-            TANGUT_COMPONENT_DASH_705 => Ok(TangutComponents::TangutComponentDash705),
-            TANGUT_COMPONENT_DASH_706 => Ok(TangutComponents::TangutComponentDash706),
-            TANGUT_COMPONENT_DASH_707 => Ok(TangutComponents::TangutComponentDash707),
-            TANGUT_COMPONENT_DASH_708 => Ok(TangutComponents::TangutComponentDash708),
-            TANGUT_COMPONENT_DASH_709 => Ok(TangutComponents::TangutComponentDash709),
-            TANGUT_COMPONENT_DASH_710 => Ok(TangutComponents::TangutComponentDash710),
-            TANGUT_COMPONENT_DASH_711 => Ok(TangutComponents::TangutComponentDash711),
-            TANGUT_COMPONENT_DASH_712 => Ok(TangutComponents::TangutComponentDash712),
-            TANGUT_COMPONENT_DASH_713 => Ok(TangutComponents::TangutComponentDash713),
-            TANGUT_COMPONENT_DASH_714 => Ok(TangutComponents::TangutComponentDash714),
-            TANGUT_COMPONENT_DASH_715 => Ok(TangutComponents::TangutComponentDash715),
-            TANGUT_COMPONENT_DASH_716 => Ok(TangutComponents::TangutComponentDash716),
-            TANGUT_COMPONENT_DASH_717 => Ok(TangutComponents::TangutComponentDash717),
-            TANGUT_COMPONENT_DASH_718 => Ok(TangutComponents::TangutComponentDash718),
-            TANGUT_COMPONENT_DASH_719 => Ok(TangutComponents::TangutComponentDash719),
-            TANGUT_COMPONENT_DASH_720 => Ok(TangutComponents::TangutComponentDash720),
-            TANGUT_COMPONENT_DASH_721 => Ok(TangutComponents::TangutComponentDash721),
-            TANGUT_COMPONENT_DASH_722 => Ok(TangutComponents::TangutComponentDash722),
-            TANGUT_COMPONENT_DASH_723 => Ok(TangutComponents::TangutComponentDash723),
-            TANGUT_COMPONENT_DASH_724 => Ok(TangutComponents::TangutComponentDash724),
-            TANGUT_COMPONENT_DASH_725 => Ok(TangutComponents::TangutComponentDash725),
-            TANGUT_COMPONENT_DASH_726 => Ok(TangutComponents::TangutComponentDash726),
-            TANGUT_COMPONENT_DASH_727 => Ok(TangutComponents::TangutComponentDash727),
-            TANGUT_COMPONENT_DASH_728 => Ok(TangutComponents::TangutComponentDash728),
-            TANGUT_COMPONENT_DASH_729 => Ok(TangutComponents::TangutComponentDash729),
-            TANGUT_COMPONENT_DASH_730 => Ok(TangutComponents::TangutComponentDash730),
-            TANGUT_COMPONENT_DASH_731 => Ok(TangutComponents::TangutComponentDash731),
-            TANGUT_COMPONENT_DASH_732 => Ok(TangutComponents::TangutComponentDash732),
-            TANGUT_COMPONENT_DASH_733 => Ok(TangutComponents::TangutComponentDash733),
-            TANGUT_COMPONENT_DASH_734 => Ok(TangutComponents::TangutComponentDash734),
-            TANGUT_COMPONENT_DASH_735 => Ok(TangutComponents::TangutComponentDash735),
-            TANGUT_COMPONENT_DASH_736 => Ok(TangutComponents::TangutComponentDash736),
-            TANGUT_COMPONENT_DASH_737 => Ok(TangutComponents::TangutComponentDash737),
-            TANGUT_COMPONENT_DASH_738 => Ok(TangutComponents::TangutComponentDash738),
-            TANGUT_COMPONENT_DASH_739 => Ok(TangutComponents::TangutComponentDash739),
-            TANGUT_COMPONENT_DASH_740 => Ok(TangutComponents::TangutComponentDash740),
-            TANGUT_COMPONENT_DASH_741 => Ok(TangutComponents::TangutComponentDash741),
-            TANGUT_COMPONENT_DASH_742 => Ok(TangutComponents::TangutComponentDash742),
-            TANGUT_COMPONENT_DASH_743 => Ok(TangutComponents::TangutComponentDash743),
-            TANGUT_COMPONENT_DASH_744 => Ok(TangutComponents::TangutComponentDash744),
-            TANGUT_COMPONENT_DASH_745 => Ok(TangutComponents::TangutComponentDash745),
-            TANGUT_COMPONENT_DASH_746 => Ok(TangutComponents::TangutComponentDash746),
-            TANGUT_COMPONENT_DASH_747 => Ok(TangutComponents::TangutComponentDash747),
-            TANGUT_COMPONENT_DASH_748 => Ok(TangutComponents::TangutComponentDash748),
-            TANGUT_COMPONENT_DASH_749 => Ok(TangutComponents::TangutComponentDash749),
-            TANGUT_COMPONENT_DASH_750 => Ok(TangutComponents::TangutComponentDash750),
-            TANGUT_COMPONENT_DASH_751 => Ok(TangutComponents::TangutComponentDash751),
-            TANGUT_COMPONENT_DASH_752 => Ok(TangutComponents::TangutComponentDash752),
-            TANGUT_COMPONENT_DASH_753 => Ok(TangutComponents::TangutComponentDash753),
-            TANGUT_COMPONENT_DASH_754 => Ok(TangutComponents::TangutComponentDash754),
-            TANGUT_COMPONENT_DASH_755 => Ok(TangutComponents::TangutComponentDash755),
+            '𘠀' => Ok(TangutComponents::TangutComponentDash001),
+            '𘠁' => Ok(TangutComponents::TangutComponentDash002),
+            '𘠂' => Ok(TangutComponents::TangutComponentDash003),
+            '𘠃' => Ok(TangutComponents::TangutComponentDash004),
+            '𘠄' => Ok(TangutComponents::TangutComponentDash005),
+            '𘠅' => Ok(TangutComponents::TangutComponentDash006),
+            '𘠆' => Ok(TangutComponents::TangutComponentDash007),
+            '𘠇' => Ok(TangutComponents::TangutComponentDash008),
+            '𘠈' => Ok(TangutComponents::TangutComponentDash009),
+            '𘠉' => Ok(TangutComponents::TangutComponentDash010),
+            '𘠊' => Ok(TangutComponents::TangutComponentDash011),
+            '𘠋' => Ok(TangutComponents::TangutComponentDash012),
+            '𘠌' => Ok(TangutComponents::TangutComponentDash013),
+            '𘠍' => Ok(TangutComponents::TangutComponentDash014),
+            '𘠎' => Ok(TangutComponents::TangutComponentDash015),
+            '𘠏' => Ok(TangutComponents::TangutComponentDash016),
+            '𘠐' => Ok(TangutComponents::TangutComponentDash017),
+            '𘠑' => Ok(TangutComponents::TangutComponentDash018),
+            '𘠒' => Ok(TangutComponents::TangutComponentDash019),
+            '𘠓' => Ok(TangutComponents::TangutComponentDash020),
+            '𘠔' => Ok(TangutComponents::TangutComponentDash021),
+            '𘠕' => Ok(TangutComponents::TangutComponentDash022),
+            '𘠖' => Ok(TangutComponents::TangutComponentDash023),
+            '𘠗' => Ok(TangutComponents::TangutComponentDash024),
+            '𘠘' => Ok(TangutComponents::TangutComponentDash025),
+            '𘠙' => Ok(TangutComponents::TangutComponentDash026),
+            '𘠚' => Ok(TangutComponents::TangutComponentDash027),
+            '𘠛' => Ok(TangutComponents::TangutComponentDash028),
+            '𘠜' => Ok(TangutComponents::TangutComponentDash029),
+            '𘠝' => Ok(TangutComponents::TangutComponentDash030),
+            '𘠞' => Ok(TangutComponents::TangutComponentDash031),
+            '𘠟' => Ok(TangutComponents::TangutComponentDash032),
+            '𘠠' => Ok(TangutComponents::TangutComponentDash033),
+            '𘠡' => Ok(TangutComponents::TangutComponentDash034),
+            '𘠢' => Ok(TangutComponents::TangutComponentDash035),
+            '𘠣' => Ok(TangutComponents::TangutComponentDash036),
+            '𘠤' => Ok(TangutComponents::TangutComponentDash037),
+            '𘠥' => Ok(TangutComponents::TangutComponentDash038),
+            '𘠦' => Ok(TangutComponents::TangutComponentDash039),
+            '𘠧' => Ok(TangutComponents::TangutComponentDash040),
+            '𘠨' => Ok(TangutComponents::TangutComponentDash041),
+            '𘠩' => Ok(TangutComponents::TangutComponentDash042),
+            '𘠪' => Ok(TangutComponents::TangutComponentDash043),
+            '𘠫' => Ok(TangutComponents::TangutComponentDash044),
+            '𘠬' => Ok(TangutComponents::TangutComponentDash045),
+            '𘠭' => Ok(TangutComponents::TangutComponentDash046),
+            '𘠮' => Ok(TangutComponents::TangutComponentDash047),
+            '𘠯' => Ok(TangutComponents::TangutComponentDash048),
+            '𘠰' => Ok(TangutComponents::TangutComponentDash049),
+            '𘠱' => Ok(TangutComponents::TangutComponentDash050),
+            '𘠲' => Ok(TangutComponents::TangutComponentDash051),
+            '𘠳' => Ok(TangutComponents::TangutComponentDash052),
+            '𘠴' => Ok(TangutComponents::TangutComponentDash053),
+            '𘠵' => Ok(TangutComponents::TangutComponentDash054),
+            '𘠶' => Ok(TangutComponents::TangutComponentDash055),
+            '𘠷' => Ok(TangutComponents::TangutComponentDash056),
+            '𘠸' => Ok(TangutComponents::TangutComponentDash057),
+            '𘠹' => Ok(TangutComponents::TangutComponentDash058),
+            '𘠺' => Ok(TangutComponents::TangutComponentDash059),
+            '𘠻' => Ok(TangutComponents::TangutComponentDash060),
+            '𘠼' => Ok(TangutComponents::TangutComponentDash061),
+            '𘠽' => Ok(TangutComponents::TangutComponentDash062),
+            '𘠾' => Ok(TangutComponents::TangutComponentDash063),
+            '𘠿' => Ok(TangutComponents::TangutComponentDash064),
+            '𘡀' => Ok(TangutComponents::TangutComponentDash065),
+            '𘡁' => Ok(TangutComponents::TangutComponentDash066),
+            '𘡂' => Ok(TangutComponents::TangutComponentDash067),
+            '𘡃' => Ok(TangutComponents::TangutComponentDash068),
+            '𘡄' => Ok(TangutComponents::TangutComponentDash069),
+            '𘡅' => Ok(TangutComponents::TangutComponentDash070),
+            '𘡆' => Ok(TangutComponents::TangutComponentDash071),
+            '𘡇' => Ok(TangutComponents::TangutComponentDash072),
+            '𘡈' => Ok(TangutComponents::TangutComponentDash073),
+            '𘡉' => Ok(TangutComponents::TangutComponentDash074),
+            '𘡊' => Ok(TangutComponents::TangutComponentDash075),
+            '𘡋' => Ok(TangutComponents::TangutComponentDash076),
+            '𘡌' => Ok(TangutComponents::TangutComponentDash077),
+            '𘡍' => Ok(TangutComponents::TangutComponentDash078),
+            '𘡎' => Ok(TangutComponents::TangutComponentDash079),
+            '𘡏' => Ok(TangutComponents::TangutComponentDash080),
+            '𘡐' => Ok(TangutComponents::TangutComponentDash081),
+            '𘡑' => Ok(TangutComponents::TangutComponentDash082),
+            '𘡒' => Ok(TangutComponents::TangutComponentDash083),
+            '𘡓' => Ok(TangutComponents::TangutComponentDash084),
+            '𘡔' => Ok(TangutComponents::TangutComponentDash085),
+            '𘡕' => Ok(TangutComponents::TangutComponentDash086),
+            '𘡖' => Ok(TangutComponents::TangutComponentDash087),
+            '𘡗' => Ok(TangutComponents::TangutComponentDash088),
+            '𘡘' => Ok(TangutComponents::TangutComponentDash089),
+            '𘡙' => Ok(TangutComponents::TangutComponentDash090),
+            '𘡚' => Ok(TangutComponents::TangutComponentDash091),
+            '𘡛' => Ok(TangutComponents::TangutComponentDash092),
+            '𘡜' => Ok(TangutComponents::TangutComponentDash093),
+            '𘡝' => Ok(TangutComponents::TangutComponentDash094),
+            '𘡞' => Ok(TangutComponents::TangutComponentDash095),
+            '𘡟' => Ok(TangutComponents::TangutComponentDash096),
+            '𘡠' => Ok(TangutComponents::TangutComponentDash097),
+            '𘡡' => Ok(TangutComponents::TangutComponentDash098),
+            '𘡢' => Ok(TangutComponents::TangutComponentDash099),
+            '𘡣' => Ok(TangutComponents::TangutComponentDash100),
+            '𘡤' => Ok(TangutComponents::TangutComponentDash101),
+            '𘡥' => Ok(TangutComponents::TangutComponentDash102),
+            '𘡦' => Ok(TangutComponents::TangutComponentDash103),
+            '𘡧' => Ok(TangutComponents::TangutComponentDash104),
+            '𘡨' => Ok(TangutComponents::TangutComponentDash105),
+            '𘡩' => Ok(TangutComponents::TangutComponentDash106),
+            '𘡪' => Ok(TangutComponents::TangutComponentDash107),
+            '𘡫' => Ok(TangutComponents::TangutComponentDash108),
+            '𘡬' => Ok(TangutComponents::TangutComponentDash109),
+            '𘡭' => Ok(TangutComponents::TangutComponentDash110),
+            '𘡮' => Ok(TangutComponents::TangutComponentDash111),
+            '𘡯' => Ok(TangutComponents::TangutComponentDash112),
+            '𘡰' => Ok(TangutComponents::TangutComponentDash113),
+            '𘡱' => Ok(TangutComponents::TangutComponentDash114),
+            '𘡲' => Ok(TangutComponents::TangutComponentDash115),
+            '𘡳' => Ok(TangutComponents::TangutComponentDash116),
+            '𘡴' => Ok(TangutComponents::TangutComponentDash117),
+            '𘡵' => Ok(TangutComponents::TangutComponentDash118),
+            '𘡶' => Ok(TangutComponents::TangutComponentDash119),
+            '𘡷' => Ok(TangutComponents::TangutComponentDash120),
+            '𘡸' => Ok(TangutComponents::TangutComponentDash121),
+            '𘡹' => Ok(TangutComponents::TangutComponentDash122),
+            '𘡺' => Ok(TangutComponents::TangutComponentDash123),
+            '𘡻' => Ok(TangutComponents::TangutComponentDash124),
+            '𘡼' => Ok(TangutComponents::TangutComponentDash125),
+            '𘡽' => Ok(TangutComponents::TangutComponentDash126),
+            '𘡾' => Ok(TangutComponents::TangutComponentDash127),
+            '𘡿' => Ok(TangutComponents::TangutComponentDash128),
+            '𘢀' => Ok(TangutComponents::TangutComponentDash129),
+            '𘢁' => Ok(TangutComponents::TangutComponentDash130),
+            '𘢂' => Ok(TangutComponents::TangutComponentDash131),
+            '𘢃' => Ok(TangutComponents::TangutComponentDash132),
+            '𘢄' => Ok(TangutComponents::TangutComponentDash133),
+            '𘢅' => Ok(TangutComponents::TangutComponentDash134),
+            '𘢆' => Ok(TangutComponents::TangutComponentDash135),
+            '𘢇' => Ok(TangutComponents::TangutComponentDash136),
+            '𘢈' => Ok(TangutComponents::TangutComponentDash137),
+            '𘢉' => Ok(TangutComponents::TangutComponentDash138),
+            '𘢊' => Ok(TangutComponents::TangutComponentDash139),
+            '𘢋' => Ok(TangutComponents::TangutComponentDash140),
+            '𘢌' => Ok(TangutComponents::TangutComponentDash141),
+            '𘢍' => Ok(TangutComponents::TangutComponentDash142),
+            '𘢎' => Ok(TangutComponents::TangutComponentDash143),
+            '𘢏' => Ok(TangutComponents::TangutComponentDash144),
+            '𘢐' => Ok(TangutComponents::TangutComponentDash145),
+            '𘢑' => Ok(TangutComponents::TangutComponentDash146),
+            '𘢒' => Ok(TangutComponents::TangutComponentDash147),
+            '𘢓' => Ok(TangutComponents::TangutComponentDash148),
+            '𘢔' => Ok(TangutComponents::TangutComponentDash149),
+            '𘢕' => Ok(TangutComponents::TangutComponentDash150),
+            '𘢖' => Ok(TangutComponents::TangutComponentDash151),
+            '𘢗' => Ok(TangutComponents::TangutComponentDash152),
+            '𘢘' => Ok(TangutComponents::TangutComponentDash153),
+            '𘢙' => Ok(TangutComponents::TangutComponentDash154),
+            '𘢚' => Ok(TangutComponents::TangutComponentDash155),
+            '𘢛' => Ok(TangutComponents::TangutComponentDash156),
+            '𘢜' => Ok(TangutComponents::TangutComponentDash157),
+            '𘢝' => Ok(TangutComponents::TangutComponentDash158),
+            '𘢞' => Ok(TangutComponents::TangutComponentDash159),
+            '𘢟' => Ok(TangutComponents::TangutComponentDash160),
+            '𘢠' => Ok(TangutComponents::TangutComponentDash161),
+            '𘢡' => Ok(TangutComponents::TangutComponentDash162),
+            '𘢢' => Ok(TangutComponents::TangutComponentDash163),
+            '𘢣' => Ok(TangutComponents::TangutComponentDash164),
+            '𘢤' => Ok(TangutComponents::TangutComponentDash165),
+            '𘢥' => Ok(TangutComponents::TangutComponentDash166),
+            '𘢦' => Ok(TangutComponents::TangutComponentDash167),
+            '𘢧' => Ok(TangutComponents::TangutComponentDash168),
+            '𘢨' => Ok(TangutComponents::TangutComponentDash169),
+            '𘢩' => Ok(TangutComponents::TangutComponentDash170),
+            '𘢪' => Ok(TangutComponents::TangutComponentDash171),
+            '𘢫' => Ok(TangutComponents::TangutComponentDash172),
+            '𘢬' => Ok(TangutComponents::TangutComponentDash173),
+            '𘢭' => Ok(TangutComponents::TangutComponentDash174),
+            '𘢮' => Ok(TangutComponents::TangutComponentDash175),
+            '𘢯' => Ok(TangutComponents::TangutComponentDash176),
+            '𘢰' => Ok(TangutComponents::TangutComponentDash177),
+            '𘢱' => Ok(TangutComponents::TangutComponentDash178),
+            '𘢲' => Ok(TangutComponents::TangutComponentDash179),
+            '𘢳' => Ok(TangutComponents::TangutComponentDash180),
+            '𘢴' => Ok(TangutComponents::TangutComponentDash181),
+            '𘢵' => Ok(TangutComponents::TangutComponentDash182),
+            '𘢶' => Ok(TangutComponents::TangutComponentDash183),
+            '𘢷' => Ok(TangutComponents::TangutComponentDash184),
+            '𘢸' => Ok(TangutComponents::TangutComponentDash185),
+            '𘢹' => Ok(TangutComponents::TangutComponentDash186),
+            '𘢺' => Ok(TangutComponents::TangutComponentDash187),
+            '𘢻' => Ok(TangutComponents::TangutComponentDash188),
+            '𘢼' => Ok(TangutComponents::TangutComponentDash189),
+            '𘢽' => Ok(TangutComponents::TangutComponentDash190),
+            '𘢾' => Ok(TangutComponents::TangutComponentDash191),
+            '𘢿' => Ok(TangutComponents::TangutComponentDash192),
+            '𘣀' => Ok(TangutComponents::TangutComponentDash193),
+            '𘣁' => Ok(TangutComponents::TangutComponentDash194),
+            '𘣂' => Ok(TangutComponents::TangutComponentDash195),
+            '𘣃' => Ok(TangutComponents::TangutComponentDash196),
+            '𘣄' => Ok(TangutComponents::TangutComponentDash197),
+            '𘣅' => Ok(TangutComponents::TangutComponentDash198),
+            '𘣆' => Ok(TangutComponents::TangutComponentDash199),
+            '𘣇' => Ok(TangutComponents::TangutComponentDash200),
+            '𘣈' => Ok(TangutComponents::TangutComponentDash201),
+            '𘣉' => Ok(TangutComponents::TangutComponentDash202),
+            '𘣊' => Ok(TangutComponents::TangutComponentDash203),
+            '𘣋' => Ok(TangutComponents::TangutComponentDash204),
+            '𘣌' => Ok(TangutComponents::TangutComponentDash205),
+            '𘣍' => Ok(TangutComponents::TangutComponentDash206),
+            '𘣎' => Ok(TangutComponents::TangutComponentDash207),
+            '𘣏' => Ok(TangutComponents::TangutComponentDash208),
+            '𘣐' => Ok(TangutComponents::TangutComponentDash209),
+            '𘣑' => Ok(TangutComponents::TangutComponentDash210),
+            '𘣒' => Ok(TangutComponents::TangutComponentDash211),
+            '𘣓' => Ok(TangutComponents::TangutComponentDash212),
+            '𘣔' => Ok(TangutComponents::TangutComponentDash213),
+            '𘣕' => Ok(TangutComponents::TangutComponentDash214),
+            '𘣖' => Ok(TangutComponents::TangutComponentDash215),
+            '𘣗' => Ok(TangutComponents::TangutComponentDash216),
+            '𘣘' => Ok(TangutComponents::TangutComponentDash217),
+            '𘣙' => Ok(TangutComponents::TangutComponentDash218),
+            '𘣚' => Ok(TangutComponents::TangutComponentDash219),
+            '𘣛' => Ok(TangutComponents::TangutComponentDash220),
+            '𘣜' => Ok(TangutComponents::TangutComponentDash221),
+            '𘣝' => Ok(TangutComponents::TangutComponentDash222),
+            '𘣞' => Ok(TangutComponents::TangutComponentDash223),
+            '𘣟' => Ok(TangutComponents::TangutComponentDash224),
+            '𘣠' => Ok(TangutComponents::TangutComponentDash225),
+            '𘣡' => Ok(TangutComponents::TangutComponentDash226),
+            '𘣢' => Ok(TangutComponents::TangutComponentDash227),
+            '𘣣' => Ok(TangutComponents::TangutComponentDash228),
+            '𘣤' => Ok(TangutComponents::TangutComponentDash229),
+            '𘣥' => Ok(TangutComponents::TangutComponentDash230),
+            '𘣦' => Ok(TangutComponents::TangutComponentDash231),
+            '𘣧' => Ok(TangutComponents::TangutComponentDash232),
+            '𘣨' => Ok(TangutComponents::TangutComponentDash233),
+            '𘣩' => Ok(TangutComponents::TangutComponentDash234),
+            '𘣪' => Ok(TangutComponents::TangutComponentDash235),
+            '𘣫' => Ok(TangutComponents::TangutComponentDash236),
+            '𘣬' => Ok(TangutComponents::TangutComponentDash237),
+            '𘣭' => Ok(TangutComponents::TangutComponentDash238),
+            '𘣮' => Ok(TangutComponents::TangutComponentDash239),
+            '𘣯' => Ok(TangutComponents::TangutComponentDash240),
+            '𘣰' => Ok(TangutComponents::TangutComponentDash241),
+            '𘣱' => Ok(TangutComponents::TangutComponentDash242),
+            '𘣲' => Ok(TangutComponents::TangutComponentDash243),
+            '𘣳' => Ok(TangutComponents::TangutComponentDash244),
+            '𘣴' => Ok(TangutComponents::TangutComponentDash245),
+            '𘣵' => Ok(TangutComponents::TangutComponentDash246),
+            '𘣶' => Ok(TangutComponents::TangutComponentDash247),
+            '𘣷' => Ok(TangutComponents::TangutComponentDash248),
+            '𘣸' => Ok(TangutComponents::TangutComponentDash249),
+            '𘣹' => Ok(TangutComponents::TangutComponentDash250),
+            '𘣺' => Ok(TangutComponents::TangutComponentDash251),
+            '𘣻' => Ok(TangutComponents::TangutComponentDash252),
+            '𘣼' => Ok(TangutComponents::TangutComponentDash253),
+            '𘣽' => Ok(TangutComponents::TangutComponentDash254),
+            '𘣾' => Ok(TangutComponents::TangutComponentDash255),
+            '𘣿' => Ok(TangutComponents::TangutComponentDash256),
+            '𘤀' => Ok(TangutComponents::TangutComponentDash257),
+            '𘤁' => Ok(TangutComponents::TangutComponentDash258),
+            '𘤂' => Ok(TangutComponents::TangutComponentDash259),
+            '𘤃' => Ok(TangutComponents::TangutComponentDash260),
+            '𘤄' => Ok(TangutComponents::TangutComponentDash261),
+            '𘤅' => Ok(TangutComponents::TangutComponentDash262),
+            '𘤆' => Ok(TangutComponents::TangutComponentDash263),
+            '𘤇' => Ok(TangutComponents::TangutComponentDash264),
+            '𘤈' => Ok(TangutComponents::TangutComponentDash265),
+            '𘤉' => Ok(TangutComponents::TangutComponentDash266),
+            '𘤊' => Ok(TangutComponents::TangutComponentDash267),
+            '𘤋' => Ok(TangutComponents::TangutComponentDash268),
+            '𘤌' => Ok(TangutComponents::TangutComponentDash269),
+            '𘤍' => Ok(TangutComponents::TangutComponentDash270),
+            '𘤎' => Ok(TangutComponents::TangutComponentDash271),
+            '𘤏' => Ok(TangutComponents::TangutComponentDash272),
+            '𘤐' => Ok(TangutComponents::TangutComponentDash273),
+            '𘤑' => Ok(TangutComponents::TangutComponentDash274),
+            '𘤒' => Ok(TangutComponents::TangutComponentDash275),
+            '𘤓' => Ok(TangutComponents::TangutComponentDash276),
+            '𘤔' => Ok(TangutComponents::TangutComponentDash277),
+            '𘤕' => Ok(TangutComponents::TangutComponentDash278),
+            '𘤖' => Ok(TangutComponents::TangutComponentDash279),
+            '𘤗' => Ok(TangutComponents::TangutComponentDash280),
+            '𘤘' => Ok(TangutComponents::TangutComponentDash281),
+            '𘤙' => Ok(TangutComponents::TangutComponentDash282),
+            '𘤚' => Ok(TangutComponents::TangutComponentDash283),
+            '𘤛' => Ok(TangutComponents::TangutComponentDash284),
+            '𘤜' => Ok(TangutComponents::TangutComponentDash285),
+            '𘤝' => Ok(TangutComponents::TangutComponentDash286),
+            '𘤞' => Ok(TangutComponents::TangutComponentDash287),
+            '𘤟' => Ok(TangutComponents::TangutComponentDash288),
+            '𘤠' => Ok(TangutComponents::TangutComponentDash289),
+            '𘤡' => Ok(TangutComponents::TangutComponentDash290),
+            '𘤢' => Ok(TangutComponents::TangutComponentDash291),
+            '𘤣' => Ok(TangutComponents::TangutComponentDash292),
+            '𘤤' => Ok(TangutComponents::TangutComponentDash293),
+            '𘤥' => Ok(TangutComponents::TangutComponentDash294),
+            '𘤦' => Ok(TangutComponents::TangutComponentDash295),
+            '𘤧' => Ok(TangutComponents::TangutComponentDash296),
+            '𘤨' => Ok(TangutComponents::TangutComponentDash297),
+            '𘤩' => Ok(TangutComponents::TangutComponentDash298),
+            '𘤪' => Ok(TangutComponents::TangutComponentDash299),
+            '𘤫' => Ok(TangutComponents::TangutComponentDash300),
+            '𘤬' => Ok(TangutComponents::TangutComponentDash301),
+            '𘤭' => Ok(TangutComponents::TangutComponentDash302),
+            '𘤮' => Ok(TangutComponents::TangutComponentDash303),
+            '𘤯' => Ok(TangutComponents::TangutComponentDash304),
+            '𘤰' => Ok(TangutComponents::TangutComponentDash305),
+            '𘤱' => Ok(TangutComponents::TangutComponentDash306),
+            '𘤲' => Ok(TangutComponents::TangutComponentDash307),
+            '𘤳' => Ok(TangutComponents::TangutComponentDash308),
+            '𘤴' => Ok(TangutComponents::TangutComponentDash309),
+            '𘤵' => Ok(TangutComponents::TangutComponentDash310),
+            '𘤶' => Ok(TangutComponents::TangutComponentDash311),
+            '𘤷' => Ok(TangutComponents::TangutComponentDash312),
+            '𘤸' => Ok(TangutComponents::TangutComponentDash313),
+            '𘤹' => Ok(TangutComponents::TangutComponentDash314),
+            '𘤺' => Ok(TangutComponents::TangutComponentDash315),
+            '𘤻' => Ok(TangutComponents::TangutComponentDash316),
+            '𘤼' => Ok(TangutComponents::TangutComponentDash317),
+            '𘤽' => Ok(TangutComponents::TangutComponentDash318),
+            '𘤾' => Ok(TangutComponents::TangutComponentDash319),
+            '𘤿' => Ok(TangutComponents::TangutComponentDash320),
+            '𘥀' => Ok(TangutComponents::TangutComponentDash321),
+            '𘥁' => Ok(TangutComponents::TangutComponentDash322),
+            '𘥂' => Ok(TangutComponents::TangutComponentDash323),
+            '𘥃' => Ok(TangutComponents::TangutComponentDash324),
+            '𘥄' => Ok(TangutComponents::TangutComponentDash325),
+            '𘥅' => Ok(TangutComponents::TangutComponentDash326),
+            '𘥆' => Ok(TangutComponents::TangutComponentDash327),
+            '𘥇' => Ok(TangutComponents::TangutComponentDash328),
+            '𘥈' => Ok(TangutComponents::TangutComponentDash329),
+            '𘥉' => Ok(TangutComponents::TangutComponentDash330),
+            '𘥊' => Ok(TangutComponents::TangutComponentDash331),
+            '𘥋' => Ok(TangutComponents::TangutComponentDash332),
+            '𘥌' => Ok(TangutComponents::TangutComponentDash333),
+            '𘥍' => Ok(TangutComponents::TangutComponentDash334),
+            '𘥎' => Ok(TangutComponents::TangutComponentDash335),
+            '𘥏' => Ok(TangutComponents::TangutComponentDash336),
+            '𘥐' => Ok(TangutComponents::TangutComponentDash337),
+            '𘥑' => Ok(TangutComponents::TangutComponentDash338),
+            '𘥒' => Ok(TangutComponents::TangutComponentDash339),
+            '𘥓' => Ok(TangutComponents::TangutComponentDash340),
+            '𘥔' => Ok(TangutComponents::TangutComponentDash341),
+            '𘥕' => Ok(TangutComponents::TangutComponentDash342),
+            '𘥖' => Ok(TangutComponents::TangutComponentDash343),
+            '𘥗' => Ok(TangutComponents::TangutComponentDash344),
+            '𘥘' => Ok(TangutComponents::TangutComponentDash345),
+            '𘥙' => Ok(TangutComponents::TangutComponentDash346),
+            '𘥚' => Ok(TangutComponents::TangutComponentDash347),
+            '𘥛' => Ok(TangutComponents::TangutComponentDash348),
+            '𘥜' => Ok(TangutComponents::TangutComponentDash349),
+            '𘥝' => Ok(TangutComponents::TangutComponentDash350),
+            '𘥞' => Ok(TangutComponents::TangutComponentDash351),
+            '𘥟' => Ok(TangutComponents::TangutComponentDash352),
+            '𘥠' => Ok(TangutComponents::TangutComponentDash353),
+            '𘥡' => Ok(TangutComponents::TangutComponentDash354),
+            '𘥢' => Ok(TangutComponents::TangutComponentDash355),
+            '𘥣' => Ok(TangutComponents::TangutComponentDash356),
+            '𘥤' => Ok(TangutComponents::TangutComponentDash357),
+            '𘥥' => Ok(TangutComponents::TangutComponentDash358),
+            '𘥦' => Ok(TangutComponents::TangutComponentDash359),
+            '𘥧' => Ok(TangutComponents::TangutComponentDash360),
+            '𘥨' => Ok(TangutComponents::TangutComponentDash361),
+            '𘥩' => Ok(TangutComponents::TangutComponentDash362),
+            '𘥪' => Ok(TangutComponents::TangutComponentDash363),
+            '𘥫' => Ok(TangutComponents::TangutComponentDash364),
+            '𘥬' => Ok(TangutComponents::TangutComponentDash365),
+            '𘥭' => Ok(TangutComponents::TangutComponentDash366),
+            '𘥮' => Ok(TangutComponents::TangutComponentDash367),
+            '𘥯' => Ok(TangutComponents::TangutComponentDash368),
+            '𘥰' => Ok(TangutComponents::TangutComponentDash369),
+            '𘥱' => Ok(TangutComponents::TangutComponentDash370),
+            '𘥲' => Ok(TangutComponents::TangutComponentDash371),
+            '𘥳' => Ok(TangutComponents::TangutComponentDash372),
+            '𘥴' => Ok(TangutComponents::TangutComponentDash373),
+            '𘥵' => Ok(TangutComponents::TangutComponentDash374),
+            '𘥶' => Ok(TangutComponents::TangutComponentDash375),
+            '𘥷' => Ok(TangutComponents::TangutComponentDash376),
+            '𘥸' => Ok(TangutComponents::TangutComponentDash377),
+            '𘥹' => Ok(TangutComponents::TangutComponentDash378),
+            '𘥺' => Ok(TangutComponents::TangutComponentDash379),
+            '𘥻' => Ok(TangutComponents::TangutComponentDash380),
+            '𘥼' => Ok(TangutComponents::TangutComponentDash381),
+            '𘥽' => Ok(TangutComponents::TangutComponentDash382),
+            '𘥾' => Ok(TangutComponents::TangutComponentDash383),
+            '𘥿' => Ok(TangutComponents::TangutComponentDash384),
+            '𘦀' => Ok(TangutComponents::TangutComponentDash385),
+            '𘦁' => Ok(TangutComponents::TangutComponentDash386),
+            '𘦂' => Ok(TangutComponents::TangutComponentDash387),
+            '𘦃' => Ok(TangutComponents::TangutComponentDash388),
+            '𘦄' => Ok(TangutComponents::TangutComponentDash389),
+            '𘦅' => Ok(TangutComponents::TangutComponentDash390),
+            '𘦆' => Ok(TangutComponents::TangutComponentDash391),
+            '𘦇' => Ok(TangutComponents::TangutComponentDash392),
+            '𘦈' => Ok(TangutComponents::TangutComponentDash393),
+            '𘦉' => Ok(TangutComponents::TangutComponentDash394),
+            '𘦊' => Ok(TangutComponents::TangutComponentDash395),
+            '𘦋' => Ok(TangutComponents::TangutComponentDash396),
+            '𘦌' => Ok(TangutComponents::TangutComponentDash397),
+            '𘦍' => Ok(TangutComponents::TangutComponentDash398),
+            '𘦎' => Ok(TangutComponents::TangutComponentDash399),
+            '𘦏' => Ok(TangutComponents::TangutComponentDash400),
+            '𘦐' => Ok(TangutComponents::TangutComponentDash401),
+            '𘦑' => Ok(TangutComponents::TangutComponentDash402),
+            '𘦒' => Ok(TangutComponents::TangutComponentDash403),
+            '𘦓' => Ok(TangutComponents::TangutComponentDash404),
+            '𘦔' => Ok(TangutComponents::TangutComponentDash405),
+            '𘦕' => Ok(TangutComponents::TangutComponentDash406),
+            '𘦖' => Ok(TangutComponents::TangutComponentDash407),
+            '𘦗' => Ok(TangutComponents::TangutComponentDash408),
+            '𘦘' => Ok(TangutComponents::TangutComponentDash409),
+            '𘦙' => Ok(TangutComponents::TangutComponentDash410),
+            '𘦚' => Ok(TangutComponents::TangutComponentDash411),
+            '𘦛' => Ok(TangutComponents::TangutComponentDash412),
+            '𘦜' => Ok(TangutComponents::TangutComponentDash413),
+            '𘦝' => Ok(TangutComponents::TangutComponentDash414),
+            '𘦞' => Ok(TangutComponents::TangutComponentDash415),
+            '𘦟' => Ok(TangutComponents::TangutComponentDash416),
+            '𘦠' => Ok(TangutComponents::TangutComponentDash417),
+            '𘦡' => Ok(TangutComponents::TangutComponentDash418),
+            '𘦢' => Ok(TangutComponents::TangutComponentDash419),
+            '𘦣' => Ok(TangutComponents::TangutComponentDash420),
+            '𘦤' => Ok(TangutComponents::TangutComponentDash421),
+            '𘦥' => Ok(TangutComponents::TangutComponentDash422),
+            '𘦦' => Ok(TangutComponents::TangutComponentDash423),
+            '𘦧' => Ok(TangutComponents::TangutComponentDash424),
+            '𘦨' => Ok(TangutComponents::TangutComponentDash425),
+            '𘦩' => Ok(TangutComponents::TangutComponentDash426),
+            '𘦪' => Ok(TangutComponents::TangutComponentDash427),
+            '𘦫' => Ok(TangutComponents::TangutComponentDash428),
+            '𘦬' => Ok(TangutComponents::TangutComponentDash429),
+            '𘦭' => Ok(TangutComponents::TangutComponentDash430),
+            '𘦮' => Ok(TangutComponents::TangutComponentDash431),
+            '𘦯' => Ok(TangutComponents::TangutComponentDash432),
+            '𘦰' => Ok(TangutComponents::TangutComponentDash433),
+            '𘦱' => Ok(TangutComponents::TangutComponentDash434),
+            '𘦲' => Ok(TangutComponents::TangutComponentDash435),
+            '𘦳' => Ok(TangutComponents::TangutComponentDash436),
+            '𘦴' => Ok(TangutComponents::TangutComponentDash437),
+            '𘦵' => Ok(TangutComponents::TangutComponentDash438),
+            '𘦶' => Ok(TangutComponents::TangutComponentDash439),
+            '𘦷' => Ok(TangutComponents::TangutComponentDash440),
+            '𘦸' => Ok(TangutComponents::TangutComponentDash441),
+            '𘦹' => Ok(TangutComponents::TangutComponentDash442),
+            '𘦺' => Ok(TangutComponents::TangutComponentDash443),
+            '𘦻' => Ok(TangutComponents::TangutComponentDash444),
+            '𘦼' => Ok(TangutComponents::TangutComponentDash445),
+            '𘦽' => Ok(TangutComponents::TangutComponentDash446),
+            '𘦾' => Ok(TangutComponents::TangutComponentDash447),
+            '𘦿' => Ok(TangutComponents::TangutComponentDash448),
+            '𘧀' => Ok(TangutComponents::TangutComponentDash449),
+            '𘧁' => Ok(TangutComponents::TangutComponentDash450),
+            '𘧂' => Ok(TangutComponents::TangutComponentDash451),
+            '𘧃' => Ok(TangutComponents::TangutComponentDash452),
+            '𘧄' => Ok(TangutComponents::TangutComponentDash453),
+            '𘧅' => Ok(TangutComponents::TangutComponentDash454),
+            '𘧆' => Ok(TangutComponents::TangutComponentDash455),
+            '𘧇' => Ok(TangutComponents::TangutComponentDash456),
+            '𘧈' => Ok(TangutComponents::TangutComponentDash457),
+            '𘧉' => Ok(TangutComponents::TangutComponentDash458),
+            '𘧊' => Ok(TangutComponents::TangutComponentDash459),
+            '𘧋' => Ok(TangutComponents::TangutComponentDash460),
+            '𘧌' => Ok(TangutComponents::TangutComponentDash461),
+            '𘧍' => Ok(TangutComponents::TangutComponentDash462),
+            '𘧎' => Ok(TangutComponents::TangutComponentDash463),
+            '𘧏' => Ok(TangutComponents::TangutComponentDash464),
+            '𘧐' => Ok(TangutComponents::TangutComponentDash465),
+            '𘧑' => Ok(TangutComponents::TangutComponentDash466),
+            '𘧒' => Ok(TangutComponents::TangutComponentDash467),
+            '𘧓' => Ok(TangutComponents::TangutComponentDash468),
+            '𘧔' => Ok(TangutComponents::TangutComponentDash469),
+            '𘧕' => Ok(TangutComponents::TangutComponentDash470),
+            '𘧖' => Ok(TangutComponents::TangutComponentDash471),
+            '𘧗' => Ok(TangutComponents::TangutComponentDash472),
+            '𘧘' => Ok(TangutComponents::TangutComponentDash473),
+            '𘧙' => Ok(TangutComponents::TangutComponentDash474),
+            '𘧚' => Ok(TangutComponents::TangutComponentDash475),
+            '𘧛' => Ok(TangutComponents::TangutComponentDash476),
+            '𘧜' => Ok(TangutComponents::TangutComponentDash477),
+            '𘧝' => Ok(TangutComponents::TangutComponentDash478),
+            '𘧞' => Ok(TangutComponents::TangutComponentDash479),
+            '𘧟' => Ok(TangutComponents::TangutComponentDash480),
+            '𘧠' => Ok(TangutComponents::TangutComponentDash481),
+            '𘧡' => Ok(TangutComponents::TangutComponentDash482),
+            '𘧢' => Ok(TangutComponents::TangutComponentDash483),
+            '𘧣' => Ok(TangutComponents::TangutComponentDash484),
+            '𘧤' => Ok(TangutComponents::TangutComponentDash485),
+            '𘧥' => Ok(TangutComponents::TangutComponentDash486),
+            '𘧦' => Ok(TangutComponents::TangutComponentDash487),
+            '𘧧' => Ok(TangutComponents::TangutComponentDash488),
+            '𘧨' => Ok(TangutComponents::TangutComponentDash489),
+            '𘧩' => Ok(TangutComponents::TangutComponentDash490),
+            '𘧪' => Ok(TangutComponents::TangutComponentDash491),
+            '𘧫' => Ok(TangutComponents::TangutComponentDash492),
+            '𘧬' => Ok(TangutComponents::TangutComponentDash493),
+            '𘧭' => Ok(TangutComponents::TangutComponentDash494),
+            '𘧮' => Ok(TangutComponents::TangutComponentDash495),
+            '𘧯' => Ok(TangutComponents::TangutComponentDash496),
+            '𘧰' => Ok(TangutComponents::TangutComponentDash497),
+            '𘧱' => Ok(TangutComponents::TangutComponentDash498),
+            '𘧲' => Ok(TangutComponents::TangutComponentDash499),
+            '𘧳' => Ok(TangutComponents::TangutComponentDash500),
+            '𘧴' => Ok(TangutComponents::TangutComponentDash501),
+            '𘧵' => Ok(TangutComponents::TangutComponentDash502),
+            '𘧶' => Ok(TangutComponents::TangutComponentDash503),
+            '𘧷' => Ok(TangutComponents::TangutComponentDash504),
+            '𘧸' => Ok(TangutComponents::TangutComponentDash505),
+            '𘧹' => Ok(TangutComponents::TangutComponentDash506),
+            '𘧺' => Ok(TangutComponents::TangutComponentDash507),
+            '𘧻' => Ok(TangutComponents::TangutComponentDash508),
+            '𘧼' => Ok(TangutComponents::TangutComponentDash509),
+            '𘧽' => Ok(TangutComponents::TangutComponentDash510),
+            '𘧾' => Ok(TangutComponents::TangutComponentDash511),
+            '𘧿' => Ok(TangutComponents::TangutComponentDash512),
+            '𘨀' => Ok(TangutComponents::TangutComponentDash513),
+            '𘨁' => Ok(TangutComponents::TangutComponentDash514),
+            '𘨂' => Ok(TangutComponents::TangutComponentDash515),
+            '𘨃' => Ok(TangutComponents::TangutComponentDash516),
+            '𘨄' => Ok(TangutComponents::TangutComponentDash517),
+            '𘨅' => Ok(TangutComponents::TangutComponentDash518),
+            '𘨆' => Ok(TangutComponents::TangutComponentDash519),
+            '𘨇' => Ok(TangutComponents::TangutComponentDash520),
+            '𘨈' => Ok(TangutComponents::TangutComponentDash521),
+            '𘨉' => Ok(TangutComponents::TangutComponentDash522),
+            '𘨊' => Ok(TangutComponents::TangutComponentDash523),
+            '𘨋' => Ok(TangutComponents::TangutComponentDash524),
+            '𘨌' => Ok(TangutComponents::TangutComponentDash525),
+            '𘨍' => Ok(TangutComponents::TangutComponentDash526),
+            '𘨎' => Ok(TangutComponents::TangutComponentDash527),
+            '𘨏' => Ok(TangutComponents::TangutComponentDash528),
+            '𘨐' => Ok(TangutComponents::TangutComponentDash529),
+            '𘨑' => Ok(TangutComponents::TangutComponentDash530),
+            '𘨒' => Ok(TangutComponents::TangutComponentDash531),
+            '𘨓' => Ok(TangutComponents::TangutComponentDash532),
+            '𘨔' => Ok(TangutComponents::TangutComponentDash533),
+            '𘨕' => Ok(TangutComponents::TangutComponentDash534),
+            '𘨖' => Ok(TangutComponents::TangutComponentDash535),
+            '𘨗' => Ok(TangutComponents::TangutComponentDash536),
+            '𘨘' => Ok(TangutComponents::TangutComponentDash537),
+            '𘨙' => Ok(TangutComponents::TangutComponentDash538),
+            '𘨚' => Ok(TangutComponents::TangutComponentDash539),
+            '𘨛' => Ok(TangutComponents::TangutComponentDash540),
+            '𘨜' => Ok(TangutComponents::TangutComponentDash541),
+            '𘨝' => Ok(TangutComponents::TangutComponentDash542),
+            '𘨞' => Ok(TangutComponents::TangutComponentDash543),
+            '𘨟' => Ok(TangutComponents::TangutComponentDash544),
+            '𘨠' => Ok(TangutComponents::TangutComponentDash545),
+            '𘨡' => Ok(TangutComponents::TangutComponentDash546),
+            '𘨢' => Ok(TangutComponents::TangutComponentDash547),
+            '𘨣' => Ok(TangutComponents::TangutComponentDash548),
+            '𘨤' => Ok(TangutComponents::TangutComponentDash549),
+            '𘨥' => Ok(TangutComponents::TangutComponentDash550),
+            '𘨦' => Ok(TangutComponents::TangutComponentDash551),
+            '𘨧' => Ok(TangutComponents::TangutComponentDash552),
+            '𘨨' => Ok(TangutComponents::TangutComponentDash553),
+            '𘨩' => Ok(TangutComponents::TangutComponentDash554),
+            '𘨪' => Ok(TangutComponents::TangutComponentDash555),
+            '𘨫' => Ok(TangutComponents::TangutComponentDash556),
+            '𘨬' => Ok(TangutComponents::TangutComponentDash557),
+            '𘨭' => Ok(TangutComponents::TangutComponentDash558),
+            '𘨮' => Ok(TangutComponents::TangutComponentDash559),
+            '𘨯' => Ok(TangutComponents::TangutComponentDash560),
+            '𘨰' => Ok(TangutComponents::TangutComponentDash561),
+            '𘨱' => Ok(TangutComponents::TangutComponentDash562),
+            '𘨲' => Ok(TangutComponents::TangutComponentDash563),
+            '𘨳' => Ok(TangutComponents::TangutComponentDash564),
+            '𘨴' => Ok(TangutComponents::TangutComponentDash565),
+            '𘨵' => Ok(TangutComponents::TangutComponentDash566),
+            '𘨶' => Ok(TangutComponents::TangutComponentDash567),
+            '𘨷' => Ok(TangutComponents::TangutComponentDash568),
+            '𘨸' => Ok(TangutComponents::TangutComponentDash569),
+            '𘨹' => Ok(TangutComponents::TangutComponentDash570),
+            '𘨺' => Ok(TangutComponents::TangutComponentDash571),
+            '𘨻' => Ok(TangutComponents::TangutComponentDash572),
+            '𘨼' => Ok(TangutComponents::TangutComponentDash573),
+            '𘨽' => Ok(TangutComponents::TangutComponentDash574),
+            '𘨾' => Ok(TangutComponents::TangutComponentDash575),
+            '𘨿' => Ok(TangutComponents::TangutComponentDash576),
+            '𘩀' => Ok(TangutComponents::TangutComponentDash577),
+            '𘩁' => Ok(TangutComponents::TangutComponentDash578),
+            '𘩂' => Ok(TangutComponents::TangutComponentDash579),
+            '𘩃' => Ok(TangutComponents::TangutComponentDash580),
+            '𘩄' => Ok(TangutComponents::TangutComponentDash581),
+            '𘩅' => Ok(TangutComponents::TangutComponentDash582),
+            '𘩆' => Ok(TangutComponents::TangutComponentDash583),
+            '𘩇' => Ok(TangutComponents::TangutComponentDash584),
+            '𘩈' => Ok(TangutComponents::TangutComponentDash585),
+            '𘩉' => Ok(TangutComponents::TangutComponentDash586),
+            '𘩊' => Ok(TangutComponents::TangutComponentDash587),
+            '𘩋' => Ok(TangutComponents::TangutComponentDash588),
+            '𘩌' => Ok(TangutComponents::TangutComponentDash589),
+            '𘩍' => Ok(TangutComponents::TangutComponentDash590),
+            '𘩎' => Ok(TangutComponents::TangutComponentDash591),
+            '𘩏' => Ok(TangutComponents::TangutComponentDash592),
+            '𘩐' => Ok(TangutComponents::TangutComponentDash593),
+            '𘩑' => Ok(TangutComponents::TangutComponentDash594),
+            '𘩒' => Ok(TangutComponents::TangutComponentDash595),
+            '𘩓' => Ok(TangutComponents::TangutComponentDash596),
+            '𘩔' => Ok(TangutComponents::TangutComponentDash597),
+            '𘩕' => Ok(TangutComponents::TangutComponentDash598),
+            '𘩖' => Ok(TangutComponents::TangutComponentDash599),
+            '𘩗' => Ok(TangutComponents::TangutComponentDash600),
+            '𘩘' => Ok(TangutComponents::TangutComponentDash601),
+            '𘩙' => Ok(TangutComponents::TangutComponentDash602),
+            '𘩚' => Ok(TangutComponents::TangutComponentDash603),
+            '𘩛' => Ok(TangutComponents::TangutComponentDash604),
+            '𘩜' => Ok(TangutComponents::TangutComponentDash605),
+            '𘩝' => Ok(TangutComponents::TangutComponentDash606),
+            '𘩞' => Ok(TangutComponents::TangutComponentDash607),
+            '𘩟' => Ok(TangutComponents::TangutComponentDash608),
+            '𘩠' => Ok(TangutComponents::TangutComponentDash609),
+            '𘩡' => Ok(TangutComponents::TangutComponentDash610),
+            '𘩢' => Ok(TangutComponents::TangutComponentDash611),
+            '𘩣' => Ok(TangutComponents::TangutComponentDash612),
+            '𘩤' => Ok(TangutComponents::TangutComponentDash613),
+            '𘩥' => Ok(TangutComponents::TangutComponentDash614),
+            '𘩦' => Ok(TangutComponents::TangutComponentDash615),
+            '𘩧' => Ok(TangutComponents::TangutComponentDash616),
+            '𘩨' => Ok(TangutComponents::TangutComponentDash617),
+            '𘩩' => Ok(TangutComponents::TangutComponentDash618),
+            '𘩪' => Ok(TangutComponents::TangutComponentDash619),
+            '𘩫' => Ok(TangutComponents::TangutComponentDash620),
+            '𘩬' => Ok(TangutComponents::TangutComponentDash621),
+            '𘩭' => Ok(TangutComponents::TangutComponentDash622),
+            '𘩮' => Ok(TangutComponents::TangutComponentDash623),
+            '𘩯' => Ok(TangutComponents::TangutComponentDash624),
+            '𘩰' => Ok(TangutComponents::TangutComponentDash625),
+            '𘩱' => Ok(TangutComponents::TangutComponentDash626),
+            '𘩲' => Ok(TangutComponents::TangutComponentDash627),
+            '𘩳' => Ok(TangutComponents::TangutComponentDash628),
+            '𘩴' => Ok(TangutComponents::TangutComponentDash629),
+            '𘩵' => Ok(TangutComponents::TangutComponentDash630),
+            '𘩶' => Ok(TangutComponents::TangutComponentDash631),
+            '𘩷' => Ok(TangutComponents::TangutComponentDash632),
+            '𘩸' => Ok(TangutComponents::TangutComponentDash633),
+            '𘩹' => Ok(TangutComponents::TangutComponentDash634),
+            '𘩺' => Ok(TangutComponents::TangutComponentDash635),
+            '𘩻' => Ok(TangutComponents::TangutComponentDash636),
+            '𘩼' => Ok(TangutComponents::TangutComponentDash637),
+            '𘩽' => Ok(TangutComponents::TangutComponentDash638),
+            '𘩾' => Ok(TangutComponents::TangutComponentDash639),
+            '𘩿' => Ok(TangutComponents::TangutComponentDash640),
+            '𘪀' => Ok(TangutComponents::TangutComponentDash641),
+            '𘪁' => Ok(TangutComponents::TangutComponentDash642),
+            '𘪂' => Ok(TangutComponents::TangutComponentDash643),
+            '𘪃' => Ok(TangutComponents::TangutComponentDash644),
+            '𘪄' => Ok(TangutComponents::TangutComponentDash645),
+            '𘪅' => Ok(TangutComponents::TangutComponentDash646),
+            '𘪆' => Ok(TangutComponents::TangutComponentDash647),
+            '𘪇' => Ok(TangutComponents::TangutComponentDash648),
+            '𘪈' => Ok(TangutComponents::TangutComponentDash649),
+            '𘪉' => Ok(TangutComponents::TangutComponentDash650),
+            '𘪊' => Ok(TangutComponents::TangutComponentDash651),
+            '𘪋' => Ok(TangutComponents::TangutComponentDash652),
+            '𘪌' => Ok(TangutComponents::TangutComponentDash653),
+            '𘪍' => Ok(TangutComponents::TangutComponentDash654),
+            '𘪎' => Ok(TangutComponents::TangutComponentDash655),
+            '𘪏' => Ok(TangutComponents::TangutComponentDash656),
+            '𘪐' => Ok(TangutComponents::TangutComponentDash657),
+            '𘪑' => Ok(TangutComponents::TangutComponentDash658),
+            '𘪒' => Ok(TangutComponents::TangutComponentDash659),
+            '𘪓' => Ok(TangutComponents::TangutComponentDash660),
+            '𘪔' => Ok(TangutComponents::TangutComponentDash661),
+            '𘪕' => Ok(TangutComponents::TangutComponentDash662),
+            '𘪖' => Ok(TangutComponents::TangutComponentDash663),
+            '𘪗' => Ok(TangutComponents::TangutComponentDash664),
+            '𘪘' => Ok(TangutComponents::TangutComponentDash665),
+            '𘪙' => Ok(TangutComponents::TangutComponentDash666),
+            '𘪚' => Ok(TangutComponents::TangutComponentDash667),
+            '𘪛' => Ok(TangutComponents::TangutComponentDash668),
+            '𘪜' => Ok(TangutComponents::TangutComponentDash669),
+            '𘪝' => Ok(TangutComponents::TangutComponentDash670),
+            '𘪞' => Ok(TangutComponents::TangutComponentDash671),
+            '𘪟' => Ok(TangutComponents::TangutComponentDash672),
+            '𘪠' => Ok(TangutComponents::TangutComponentDash673),
+            '𘪡' => Ok(TangutComponents::TangutComponentDash674),
+            '𘪢' => Ok(TangutComponents::TangutComponentDash675),
+            '𘪣' => Ok(TangutComponents::TangutComponentDash676),
+            '𘪤' => Ok(TangutComponents::TangutComponentDash677),
+            '𘪥' => Ok(TangutComponents::TangutComponentDash678),
+            '𘪦' => Ok(TangutComponents::TangutComponentDash679),
+            '𘪧' => Ok(TangutComponents::TangutComponentDash680),
+            '𘪨' => Ok(TangutComponents::TangutComponentDash681),
+            '𘪩' => Ok(TangutComponents::TangutComponentDash682),
+            '𘪪' => Ok(TangutComponents::TangutComponentDash683),
+            '𘪫' => Ok(TangutComponents::TangutComponentDash684),
+            '𘪬' => Ok(TangutComponents::TangutComponentDash685),
+            '𘪭' => Ok(TangutComponents::TangutComponentDash686),
+            '𘪮' => Ok(TangutComponents::TangutComponentDash687),
+            '𘪯' => Ok(TangutComponents::TangutComponentDash688),
+            '𘪰' => Ok(TangutComponents::TangutComponentDash689),
+            '𘪱' => Ok(TangutComponents::TangutComponentDash690),
+            '𘪲' => Ok(TangutComponents::TangutComponentDash691),
+            '𘪳' => Ok(TangutComponents::TangutComponentDash692),
+            '𘪴' => Ok(TangutComponents::TangutComponentDash693),
+            '𘪵' => Ok(TangutComponents::TangutComponentDash694),
+            '𘪶' => Ok(TangutComponents::TangutComponentDash695),
+            '𘪷' => Ok(TangutComponents::TangutComponentDash696),
+            '𘪸' => Ok(TangutComponents::TangutComponentDash697),
+            '𘪹' => Ok(TangutComponents::TangutComponentDash698),
+            '𘪺' => Ok(TangutComponents::TangutComponentDash699),
+            '𘪻' => Ok(TangutComponents::TangutComponentDash700),
+            '𘪼' => Ok(TangutComponents::TangutComponentDash701),
+            '𘪽' => Ok(TangutComponents::TangutComponentDash702),
+            '𘪾' => Ok(TangutComponents::TangutComponentDash703),
+            '𘪿' => Ok(TangutComponents::TangutComponentDash704),
+            '𘫀' => Ok(TangutComponents::TangutComponentDash705),
+            '𘫁' => Ok(TangutComponents::TangutComponentDash706),
+            '𘫂' => Ok(TangutComponents::TangutComponentDash707),
+            '𘫃' => Ok(TangutComponents::TangutComponentDash708),
+            '𘫄' => Ok(TangutComponents::TangutComponentDash709),
+            '𘫅' => Ok(TangutComponents::TangutComponentDash710),
+            '𘫆' => Ok(TangutComponents::TangutComponentDash711),
+            '𘫇' => Ok(TangutComponents::TangutComponentDash712),
+            '𘫈' => Ok(TangutComponents::TangutComponentDash713),
+            '𘫉' => Ok(TangutComponents::TangutComponentDash714),
+            '𘫊' => Ok(TangutComponents::TangutComponentDash715),
+            '𘫋' => Ok(TangutComponents::TangutComponentDash716),
+            '𘫌' => Ok(TangutComponents::TangutComponentDash717),
+            '𘫍' => Ok(TangutComponents::TangutComponentDash718),
+            '𘫎' => Ok(TangutComponents::TangutComponentDash719),
+            '𘫏' => Ok(TangutComponents::TangutComponentDash720),
+            '𘫐' => Ok(TangutComponents::TangutComponentDash721),
+            '𘫑' => Ok(TangutComponents::TangutComponentDash722),
+            '𘫒' => Ok(TangutComponents::TangutComponentDash723),
+            '𘫓' => Ok(TangutComponents::TangutComponentDash724),
+            '𘫔' => Ok(TangutComponents::TangutComponentDash725),
+            '𘫕' => Ok(TangutComponents::TangutComponentDash726),
+            '𘫖' => Ok(TangutComponents::TangutComponentDash727),
+            '𘫗' => Ok(TangutComponents::TangutComponentDash728),
+            '𘫘' => Ok(TangutComponents::TangutComponentDash729),
+            '𘫙' => Ok(TangutComponents::TangutComponentDash730),
+            '𘫚' => Ok(TangutComponents::TangutComponentDash731),
+            '𘫛' => Ok(TangutComponents::TangutComponentDash732),
+            '𘫜' => Ok(TangutComponents::TangutComponentDash733),
+            '𘫝' => Ok(TangutComponents::TangutComponentDash734),
+            '𘫞' => Ok(TangutComponents::TangutComponentDash735),
+            '𘫟' => Ok(TangutComponents::TangutComponentDash736),
+            '𘫠' => Ok(TangutComponents::TangutComponentDash737),
+            '𘫡' => Ok(TangutComponents::TangutComponentDash738),
+            '𘫢' => Ok(TangutComponents::TangutComponentDash739),
+            '𘫣' => Ok(TangutComponents::TangutComponentDash740),
+            '𘫤' => Ok(TangutComponents::TangutComponentDash741),
+            '𘫥' => Ok(TangutComponents::TangutComponentDash742),
+            '𘫦' => Ok(TangutComponents::TangutComponentDash743),
+            '𘫧' => Ok(TangutComponents::TangutComponentDash744),
+            '𘫨' => Ok(TangutComponents::TangutComponentDash745),
+            '𘫩' => Ok(TangutComponents::TangutComponentDash746),
+            '𘫪' => Ok(TangutComponents::TangutComponentDash747),
+            '𘫫' => Ok(TangutComponents::TangutComponentDash748),
+            '𘫬' => Ok(TangutComponents::TangutComponentDash749),
+            '𘫭' => Ok(TangutComponents::TangutComponentDash750),
+            '𘫮' => Ok(TangutComponents::TangutComponentDash751),
+            '𘫯' => Ok(TangutComponents::TangutComponentDash752),
+            '𘫰' => Ok(TangutComponents::TangutComponentDash753),
+            '𘫱' => Ok(TangutComponents::TangutComponentDash754),
+            '𘫲' => Ok(TangutComponents::TangutComponentDash755),
             _ => Err(()),
         }
     }

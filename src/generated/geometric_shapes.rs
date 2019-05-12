@@ -1,196 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{25a0}: '■'
-    pub const BLACK_SQUARE: char = '■';
-    /// \u{25a1}: '□'
-    pub const WHITE_SQUARE: char = '□';
-    /// \u{25a2}: '▢'
-    pub const WHITE_SQUARE_WITH_ROUNDED_CORNERS: char = '▢';
-    /// \u{25a3}: '▣'
-    pub const WHITE_SQUARE_CONTAINING_BLACK_SMALL_SQUARE: char = '▣';
-    /// \u{25a4}: '▤'
-    pub const SQUARE_WITH_HORIZONTAL_FILL: char = '▤';
-    /// \u{25a5}: '▥'
-    pub const SQUARE_WITH_VERTICAL_FILL: char = '▥';
-    /// \u{25a6}: '▦'
-    pub const SQUARE_WITH_ORTHOGONAL_CROSSHATCH_FILL: char = '▦';
-    /// \u{25a7}: '▧'
-    pub const SQUARE_WITH_UPPER_LEFT_TO_LOWER_RIGHT_FILL: char = '▧';
-    /// \u{25a8}: '▨'
-    pub const SQUARE_WITH_UPPER_RIGHT_TO_LOWER_LEFT_FILL: char = '▨';
-    /// \u{25a9}: '▩'
-    pub const SQUARE_WITH_DIAGONAL_CROSSHATCH_FILL: char = '▩';
-    /// \u{25aa}: '▪'
-    pub const BLACK_SMALL_SQUARE: char = '▪';
-    /// \u{25ab}: '▫'
-    pub const WHITE_SMALL_SQUARE: char = '▫';
-    /// \u{25ac}: '▬'
-    pub const BLACK_RECTANGLE: char = '▬';
-    /// \u{25ad}: '▭'
-    pub const WHITE_RECTANGLE: char = '▭';
-    /// \u{25ae}: '▮'
-    pub const BLACK_VERTICAL_RECTANGLE: char = '▮';
-    /// \u{25af}: '▯'
-    pub const WHITE_VERTICAL_RECTANGLE: char = '▯';
-    /// \u{25b0}: '▰'
-    pub const BLACK_PARALLELOGRAM: char = '▰';
-    /// \u{25b1}: '▱'
-    pub const WHITE_PARALLELOGRAM: char = '▱';
-    /// \u{25b2}: '▲'
-    pub const BLACK_UP_DASH_POINTING_TRIANGLE: char = '▲';
-    /// \u{25b3}: '△'
-    pub const WHITE_UP_DASH_POINTING_TRIANGLE: char = '△';
-    /// \u{25b4}: '▴'
-    pub const BLACK_UP_DASH_POINTING_SMALL_TRIANGLE: char = '▴';
-    /// \u{25b5}: '▵'
-    pub const WHITE_UP_DASH_POINTING_SMALL_TRIANGLE: char = '▵';
-    /// \u{25b6}: '▶'
-    pub const BLACK_RIGHT_DASH_POINTING_TRIANGLE: char = '▶';
-    /// \u{25b7}: '▷'
-    pub const WHITE_RIGHT_DASH_POINTING_TRIANGLE: char = '▷';
-    /// \u{25b8}: '▸'
-    pub const BLACK_RIGHT_DASH_POINTING_SMALL_TRIANGLE: char = '▸';
-    /// \u{25b9}: '▹'
-    pub const WHITE_RIGHT_DASH_POINTING_SMALL_TRIANGLE: char = '▹';
-    /// \u{25ba}: '►'
-    pub const BLACK_RIGHT_DASH_POINTING_POINTER: char = '►';
-    /// \u{25bb}: '▻'
-    pub const WHITE_RIGHT_DASH_POINTING_POINTER: char = '▻';
-    /// \u{25bc}: '▼'
-    pub const BLACK_DOWN_DASH_POINTING_TRIANGLE: char = '▼';
-    /// \u{25bd}: '▽'
-    pub const WHITE_DOWN_DASH_POINTING_TRIANGLE: char = '▽';
-    /// \u{25be}: '▾'
-    pub const BLACK_DOWN_DASH_POINTING_SMALL_TRIANGLE: char = '▾';
-    /// \u{25bf}: '▿'
-    pub const WHITE_DOWN_DASH_POINTING_SMALL_TRIANGLE: char = '▿';
-    /// \u{25c0}: '◀'
-    pub const BLACK_LEFT_DASH_POINTING_TRIANGLE: char = '◀';
-    /// \u{25c1}: '◁'
-    pub const WHITE_LEFT_DASH_POINTING_TRIANGLE: char = '◁';
-    /// \u{25c2}: '◂'
-    pub const BLACK_LEFT_DASH_POINTING_SMALL_TRIANGLE: char = '◂';
-    /// \u{25c3}: '◃'
-    pub const WHITE_LEFT_DASH_POINTING_SMALL_TRIANGLE: char = '◃';
-    /// \u{25c4}: '◄'
-    pub const BLACK_LEFT_DASH_POINTING_POINTER: char = '◄';
-    /// \u{25c5}: '◅'
-    pub const WHITE_LEFT_DASH_POINTING_POINTER: char = '◅';
-    /// \u{25c6}: '◆'
-    pub const BLACK_DIAMOND: char = '◆';
-    /// \u{25c7}: '◇'
-    pub const WHITE_DIAMOND: char = '◇';
-    /// \u{25c8}: '◈'
-    pub const WHITE_DIAMOND_CONTAINING_BLACK_SMALL_DIAMOND: char = '◈';
-    /// \u{25c9}: '◉'
-    pub const FISHEYE: char = '◉';
-    /// \u{25ca}: '◊'
-    pub const LOZENGE: char = '◊';
-    /// \u{25cb}: '○'
-    pub const WHITE_CIRCLE: char = '○';
-    /// \u{25cc}: '◌'
-    pub const DOTTED_CIRCLE: char = '◌';
-    /// \u{25cd}: '◍'
-    pub const CIRCLE_WITH_VERTICAL_FILL: char = '◍';
-    /// \u{25ce}: '◎'
-    pub const BULLSEYE: char = '◎';
-    /// \u{25cf}: '●'
-    pub const BLACK_CIRCLE: char = '●';
-    /// \u{25d0}: '◐'
-    pub const CIRCLE_WITH_LEFT_HALF_BLACK: char = '◐';
-    /// \u{25d1}: '◑'
-    pub const CIRCLE_WITH_RIGHT_HALF_BLACK: char = '◑';
-    /// \u{25d2}: '◒'
-    pub const CIRCLE_WITH_LOWER_HALF_BLACK: char = '◒';
-    /// \u{25d3}: '◓'
-    pub const CIRCLE_WITH_UPPER_HALF_BLACK: char = '◓';
-    /// \u{25d4}: '◔'
-    pub const CIRCLE_WITH_UPPER_RIGHT_QUADRANT_BLACK: char = '◔';
-    /// \u{25d5}: '◕'
-    pub const CIRCLE_WITH_ALL_BUT_UPPER_LEFT_QUADRANT_BLACK: char = '◕';
-    /// \u{25d6}: '◖'
-    pub const LEFT_HALF_BLACK_CIRCLE: char = '◖';
-    /// \u{25d7}: '◗'
-    pub const RIGHT_HALF_BLACK_CIRCLE: char = '◗';
-    /// \u{25d8}: '◘'
-    pub const INVERSE_BULLET: char = '◘';
-    /// \u{25d9}: '◙'
-    pub const INVERSE_WHITE_CIRCLE: char = '◙';
-    /// \u{25da}: '◚'
-    pub const UPPER_HALF_INVERSE_WHITE_CIRCLE: char = '◚';
-    /// \u{25db}: '◛'
-    pub const LOWER_HALF_INVERSE_WHITE_CIRCLE: char = '◛';
-    /// \u{25dc}: '◜'
-    pub const UPPER_LEFT_QUADRANT_CIRCULAR_ARC: char = '◜';
-    /// \u{25dd}: '◝'
-    pub const UPPER_RIGHT_QUADRANT_CIRCULAR_ARC: char = '◝';
-    /// \u{25de}: '◞'
-    pub const LOWER_RIGHT_QUADRANT_CIRCULAR_ARC: char = '◞';
-    /// \u{25df}: '◟'
-    pub const LOWER_LEFT_QUADRANT_CIRCULAR_ARC: char = '◟';
-    /// \u{25e0}: '◠'
-    pub const UPPER_HALF_CIRCLE: char = '◠';
-    /// \u{25e1}: '◡'
-    pub const LOWER_HALF_CIRCLE: char = '◡';
-    /// \u{25e2}: '◢'
-    pub const BLACK_LOWER_RIGHT_TRIANGLE: char = '◢';
-    /// \u{25e3}: '◣'
-    pub const BLACK_LOWER_LEFT_TRIANGLE: char = '◣';
-    /// \u{25e4}: '◤'
-    pub const BLACK_UPPER_LEFT_TRIANGLE: char = '◤';
-    /// \u{25e5}: '◥'
-    pub const BLACK_UPPER_RIGHT_TRIANGLE: char = '◥';
-    /// \u{25e6}: '◦'
-    pub const WHITE_BULLET: char = '◦';
-    /// \u{25e7}: '◧'
-    pub const SQUARE_WITH_LEFT_HALF_BLACK: char = '◧';
-    /// \u{25e8}: '◨'
-    pub const SQUARE_WITH_RIGHT_HALF_BLACK: char = '◨';
-    /// \u{25e9}: '◩'
-    pub const SQUARE_WITH_UPPER_LEFT_DIAGONAL_HALF_BLACK: char = '◩';
-    /// \u{25ea}: '◪'
-    pub const SQUARE_WITH_LOWER_RIGHT_DIAGONAL_HALF_BLACK: char = '◪';
-    /// \u{25eb}: '◫'
-    pub const WHITE_SQUARE_WITH_VERTICAL_BISECTING_LINE: char = '◫';
-    /// \u{25ec}: '◬'
-    pub const WHITE_UP_DASH_POINTING_TRIANGLE_WITH_DOT: char = '◬';
-    /// \u{25ed}: '◭'
-    pub const UP_DASH_POINTING_TRIANGLE_WITH_LEFT_HALF_BLACK: char = '◭';
-    /// \u{25ee}: '◮'
-    pub const UP_DASH_POINTING_TRIANGLE_WITH_RIGHT_HALF_BLACK: char = '◮';
-    /// \u{25ef}: '◯'
-    pub const LARGE_CIRCLE: char = '◯';
-    /// \u{25f0}: '◰'
-    pub const WHITE_SQUARE_WITH_UPPER_LEFT_QUADRANT: char = '◰';
-    /// \u{25f1}: '◱'
-    pub const WHITE_SQUARE_WITH_LOWER_LEFT_QUADRANT: char = '◱';
-    /// \u{25f2}: '◲'
-    pub const WHITE_SQUARE_WITH_LOWER_RIGHT_QUADRANT: char = '◲';
-    /// \u{25f3}: '◳'
-    pub const WHITE_SQUARE_WITH_UPPER_RIGHT_QUADRANT: char = '◳';
-    /// \u{25f4}: '◴'
-    pub const WHITE_CIRCLE_WITH_UPPER_LEFT_QUADRANT: char = '◴';
-    /// \u{25f5}: '◵'
-    pub const WHITE_CIRCLE_WITH_LOWER_LEFT_QUADRANT: char = '◵';
-    /// \u{25f6}: '◶'
-    pub const WHITE_CIRCLE_WITH_LOWER_RIGHT_QUADRANT: char = '◶';
-    /// \u{25f7}: '◷'
-    pub const WHITE_CIRCLE_WITH_UPPER_RIGHT_QUADRANT: char = '◷';
-    /// \u{25f8}: '◸'
-    pub const UPPER_LEFT_TRIANGLE: char = '◸';
-    /// \u{25f9}: '◹'
-    pub const UPPER_RIGHT_TRIANGLE: char = '◹';
-    /// \u{25fa}: '◺'
-    pub const LOWER_LEFT_TRIANGLE: char = '◺';
-    /// \u{25fb}: '◻'
-    pub const WHITE_MEDIUM_SQUARE: char = '◻';
-    /// \u{25fc}: '◼'
-    pub const BLACK_MEDIUM_SQUARE: char = '◼';
-    /// \u{25fd}: '◽'
-    pub const WHITE_MEDIUM_SMALL_SQUARE: char = '◽';
-    /// \u{25fe}: '◾'
-    pub const BLACK_MEDIUM_SMALL_SQUARE: char = '◾';
-}
 
 /// An enum to represent all characters in the GeometricShapes block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -389,103 +196,102 @@ pub enum GeometricShapes {
 
 impl Into<char> for GeometricShapes {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            GeometricShapes::BlackSquare => BLACK_SQUARE,
-            GeometricShapes::WhiteSquare => WHITE_SQUARE,
-            GeometricShapes::WhiteSquareWithRoundedCorners => WHITE_SQUARE_WITH_ROUNDED_CORNERS,
-            GeometricShapes::WhiteSquareContainingBlackSmallSquare => WHITE_SQUARE_CONTAINING_BLACK_SMALL_SQUARE,
-            GeometricShapes::SquareWithHorizontalFill => SQUARE_WITH_HORIZONTAL_FILL,
-            GeometricShapes::SquareWithVerticalFill => SQUARE_WITH_VERTICAL_FILL,
-            GeometricShapes::SquareWithOrthogonalCrosshatchFill => SQUARE_WITH_ORTHOGONAL_CROSSHATCH_FILL,
-            GeometricShapes::SquareWithUpperLeftToLowerRightFill => SQUARE_WITH_UPPER_LEFT_TO_LOWER_RIGHT_FILL,
-            GeometricShapes::SquareWithUpperRightToLowerLeftFill => SQUARE_WITH_UPPER_RIGHT_TO_LOWER_LEFT_FILL,
-            GeometricShapes::SquareWithDiagonalCrosshatchFill => SQUARE_WITH_DIAGONAL_CROSSHATCH_FILL,
-            GeometricShapes::BlackSmallSquare => BLACK_SMALL_SQUARE,
-            GeometricShapes::WhiteSmallSquare => WHITE_SMALL_SQUARE,
-            GeometricShapes::BlackRectangle => BLACK_RECTANGLE,
-            GeometricShapes::WhiteRectangle => WHITE_RECTANGLE,
-            GeometricShapes::BlackVerticalRectangle => BLACK_VERTICAL_RECTANGLE,
-            GeometricShapes::WhiteVerticalRectangle => WHITE_VERTICAL_RECTANGLE,
-            GeometricShapes::BlackParallelogram => BLACK_PARALLELOGRAM,
-            GeometricShapes::WhiteParallelogram => WHITE_PARALLELOGRAM,
-            GeometricShapes::BlackUpDashPointingTriangle => BLACK_UP_DASH_POINTING_TRIANGLE,
-            GeometricShapes::WhiteUpDashPointingTriangle => WHITE_UP_DASH_POINTING_TRIANGLE,
-            GeometricShapes::BlackUpDashPointingSmallTriangle => BLACK_UP_DASH_POINTING_SMALL_TRIANGLE,
-            GeometricShapes::WhiteUpDashPointingSmallTriangle => WHITE_UP_DASH_POINTING_SMALL_TRIANGLE,
-            GeometricShapes::BlackRightDashPointingTriangle => BLACK_RIGHT_DASH_POINTING_TRIANGLE,
-            GeometricShapes::WhiteRightDashPointingTriangle => WHITE_RIGHT_DASH_POINTING_TRIANGLE,
-            GeometricShapes::BlackRightDashPointingSmallTriangle => BLACK_RIGHT_DASH_POINTING_SMALL_TRIANGLE,
-            GeometricShapes::WhiteRightDashPointingSmallTriangle => WHITE_RIGHT_DASH_POINTING_SMALL_TRIANGLE,
-            GeometricShapes::BlackRightDashPointingPointer => BLACK_RIGHT_DASH_POINTING_POINTER,
-            GeometricShapes::WhiteRightDashPointingPointer => WHITE_RIGHT_DASH_POINTING_POINTER,
-            GeometricShapes::BlackDownDashPointingTriangle => BLACK_DOWN_DASH_POINTING_TRIANGLE,
-            GeometricShapes::WhiteDownDashPointingTriangle => WHITE_DOWN_DASH_POINTING_TRIANGLE,
-            GeometricShapes::BlackDownDashPointingSmallTriangle => BLACK_DOWN_DASH_POINTING_SMALL_TRIANGLE,
-            GeometricShapes::WhiteDownDashPointingSmallTriangle => WHITE_DOWN_DASH_POINTING_SMALL_TRIANGLE,
-            GeometricShapes::BlackLeftDashPointingTriangle => BLACK_LEFT_DASH_POINTING_TRIANGLE,
-            GeometricShapes::WhiteLeftDashPointingTriangle => WHITE_LEFT_DASH_POINTING_TRIANGLE,
-            GeometricShapes::BlackLeftDashPointingSmallTriangle => BLACK_LEFT_DASH_POINTING_SMALL_TRIANGLE,
-            GeometricShapes::WhiteLeftDashPointingSmallTriangle => WHITE_LEFT_DASH_POINTING_SMALL_TRIANGLE,
-            GeometricShapes::BlackLeftDashPointingPointer => BLACK_LEFT_DASH_POINTING_POINTER,
-            GeometricShapes::WhiteLeftDashPointingPointer => WHITE_LEFT_DASH_POINTING_POINTER,
-            GeometricShapes::BlackDiamond => BLACK_DIAMOND,
-            GeometricShapes::WhiteDiamond => WHITE_DIAMOND,
-            GeometricShapes::WhiteDiamondContainingBlackSmallDiamond => WHITE_DIAMOND_CONTAINING_BLACK_SMALL_DIAMOND,
-            GeometricShapes::Fisheye => FISHEYE,
-            GeometricShapes::Lozenge => LOZENGE,
-            GeometricShapes::WhiteCircle => WHITE_CIRCLE,
-            GeometricShapes::DottedCircle => DOTTED_CIRCLE,
-            GeometricShapes::CircleWithVerticalFill => CIRCLE_WITH_VERTICAL_FILL,
-            GeometricShapes::Bullseye => BULLSEYE,
-            GeometricShapes::BlackCircle => BLACK_CIRCLE,
-            GeometricShapes::CircleWithLeftHalfBlack => CIRCLE_WITH_LEFT_HALF_BLACK,
-            GeometricShapes::CircleWithRightHalfBlack => CIRCLE_WITH_RIGHT_HALF_BLACK,
-            GeometricShapes::CircleWithLowerHalfBlack => CIRCLE_WITH_LOWER_HALF_BLACK,
-            GeometricShapes::CircleWithUpperHalfBlack => CIRCLE_WITH_UPPER_HALF_BLACK,
-            GeometricShapes::CircleWithUpperRightQuadrantBlack => CIRCLE_WITH_UPPER_RIGHT_QUADRANT_BLACK,
-            GeometricShapes::CircleWithAllButUpperLeftQuadrantBlack => CIRCLE_WITH_ALL_BUT_UPPER_LEFT_QUADRANT_BLACK,
-            GeometricShapes::LeftHalfBlackCircle => LEFT_HALF_BLACK_CIRCLE,
-            GeometricShapes::RightHalfBlackCircle => RIGHT_HALF_BLACK_CIRCLE,
-            GeometricShapes::InverseBullet => INVERSE_BULLET,
-            GeometricShapes::InverseWhiteCircle => INVERSE_WHITE_CIRCLE,
-            GeometricShapes::UpperHalfInverseWhiteCircle => UPPER_HALF_INVERSE_WHITE_CIRCLE,
-            GeometricShapes::LowerHalfInverseWhiteCircle => LOWER_HALF_INVERSE_WHITE_CIRCLE,
-            GeometricShapes::UpperLeftQuadrantCircularArc => UPPER_LEFT_QUADRANT_CIRCULAR_ARC,
-            GeometricShapes::UpperRightQuadrantCircularArc => UPPER_RIGHT_QUADRANT_CIRCULAR_ARC,
-            GeometricShapes::LowerRightQuadrantCircularArc => LOWER_RIGHT_QUADRANT_CIRCULAR_ARC,
-            GeometricShapes::LowerLeftQuadrantCircularArc => LOWER_LEFT_QUADRANT_CIRCULAR_ARC,
-            GeometricShapes::UpperHalfCircle => UPPER_HALF_CIRCLE,
-            GeometricShapes::LowerHalfCircle => LOWER_HALF_CIRCLE,
-            GeometricShapes::BlackLowerRightTriangle => BLACK_LOWER_RIGHT_TRIANGLE,
-            GeometricShapes::BlackLowerLeftTriangle => BLACK_LOWER_LEFT_TRIANGLE,
-            GeometricShapes::BlackUpperLeftTriangle => BLACK_UPPER_LEFT_TRIANGLE,
-            GeometricShapes::BlackUpperRightTriangle => BLACK_UPPER_RIGHT_TRIANGLE,
-            GeometricShapes::WhiteBullet => WHITE_BULLET,
-            GeometricShapes::SquareWithLeftHalfBlack => SQUARE_WITH_LEFT_HALF_BLACK,
-            GeometricShapes::SquareWithRightHalfBlack => SQUARE_WITH_RIGHT_HALF_BLACK,
-            GeometricShapes::SquareWithUpperLeftDiagonalHalfBlack => SQUARE_WITH_UPPER_LEFT_DIAGONAL_HALF_BLACK,
-            GeometricShapes::SquareWithLowerRightDiagonalHalfBlack => SQUARE_WITH_LOWER_RIGHT_DIAGONAL_HALF_BLACK,
-            GeometricShapes::WhiteSquareWithVerticalBisectingLine => WHITE_SQUARE_WITH_VERTICAL_BISECTING_LINE,
-            GeometricShapes::WhiteUpDashPointingTriangleWithDot => WHITE_UP_DASH_POINTING_TRIANGLE_WITH_DOT,
-            GeometricShapes::UpDashPointingTriangleWithLeftHalfBlack => UP_DASH_POINTING_TRIANGLE_WITH_LEFT_HALF_BLACK,
-            GeometricShapes::UpDashPointingTriangleWithRightHalfBlack => UP_DASH_POINTING_TRIANGLE_WITH_RIGHT_HALF_BLACK,
-            GeometricShapes::LargeCircle => LARGE_CIRCLE,
-            GeometricShapes::WhiteSquareWithUpperLeftQuadrant => WHITE_SQUARE_WITH_UPPER_LEFT_QUADRANT,
-            GeometricShapes::WhiteSquareWithLowerLeftQuadrant => WHITE_SQUARE_WITH_LOWER_LEFT_QUADRANT,
-            GeometricShapes::WhiteSquareWithLowerRightQuadrant => WHITE_SQUARE_WITH_LOWER_RIGHT_QUADRANT,
-            GeometricShapes::WhiteSquareWithUpperRightQuadrant => WHITE_SQUARE_WITH_UPPER_RIGHT_QUADRANT,
-            GeometricShapes::WhiteCircleWithUpperLeftQuadrant => WHITE_CIRCLE_WITH_UPPER_LEFT_QUADRANT,
-            GeometricShapes::WhiteCircleWithLowerLeftQuadrant => WHITE_CIRCLE_WITH_LOWER_LEFT_QUADRANT,
-            GeometricShapes::WhiteCircleWithLowerRightQuadrant => WHITE_CIRCLE_WITH_LOWER_RIGHT_QUADRANT,
-            GeometricShapes::WhiteCircleWithUpperRightQuadrant => WHITE_CIRCLE_WITH_UPPER_RIGHT_QUADRANT,
-            GeometricShapes::UpperLeftTriangle => UPPER_LEFT_TRIANGLE,
-            GeometricShapes::UpperRightTriangle => UPPER_RIGHT_TRIANGLE,
-            GeometricShapes::LowerLeftTriangle => LOWER_LEFT_TRIANGLE,
-            GeometricShapes::WhiteMediumSquare => WHITE_MEDIUM_SQUARE,
-            GeometricShapes::BlackMediumSquare => BLACK_MEDIUM_SQUARE,
-            GeometricShapes::WhiteMediumSmallSquare => WHITE_MEDIUM_SMALL_SQUARE,
-            GeometricShapes::BlackMediumSmallSquare => BLACK_MEDIUM_SMALL_SQUARE,
+            GeometricShapes::BlackSquare => '■',
+            GeometricShapes::WhiteSquare => '□',
+            GeometricShapes::WhiteSquareWithRoundedCorners => '▢',
+            GeometricShapes::WhiteSquareContainingBlackSmallSquare => '▣',
+            GeometricShapes::SquareWithHorizontalFill => '▤',
+            GeometricShapes::SquareWithVerticalFill => '▥',
+            GeometricShapes::SquareWithOrthogonalCrosshatchFill => '▦',
+            GeometricShapes::SquareWithUpperLeftToLowerRightFill => '▧',
+            GeometricShapes::SquareWithUpperRightToLowerLeftFill => '▨',
+            GeometricShapes::SquareWithDiagonalCrosshatchFill => '▩',
+            GeometricShapes::BlackSmallSquare => '▪',
+            GeometricShapes::WhiteSmallSquare => '▫',
+            GeometricShapes::BlackRectangle => '▬',
+            GeometricShapes::WhiteRectangle => '▭',
+            GeometricShapes::BlackVerticalRectangle => '▮',
+            GeometricShapes::WhiteVerticalRectangle => '▯',
+            GeometricShapes::BlackParallelogram => '▰',
+            GeometricShapes::WhiteParallelogram => '▱',
+            GeometricShapes::BlackUpDashPointingTriangle => '▲',
+            GeometricShapes::WhiteUpDashPointingTriangle => '△',
+            GeometricShapes::BlackUpDashPointingSmallTriangle => '▴',
+            GeometricShapes::WhiteUpDashPointingSmallTriangle => '▵',
+            GeometricShapes::BlackRightDashPointingTriangle => '▶',
+            GeometricShapes::WhiteRightDashPointingTriangle => '▷',
+            GeometricShapes::BlackRightDashPointingSmallTriangle => '▸',
+            GeometricShapes::WhiteRightDashPointingSmallTriangle => '▹',
+            GeometricShapes::BlackRightDashPointingPointer => '►',
+            GeometricShapes::WhiteRightDashPointingPointer => '▻',
+            GeometricShapes::BlackDownDashPointingTriangle => '▼',
+            GeometricShapes::WhiteDownDashPointingTriangle => '▽',
+            GeometricShapes::BlackDownDashPointingSmallTriangle => '▾',
+            GeometricShapes::WhiteDownDashPointingSmallTriangle => '▿',
+            GeometricShapes::BlackLeftDashPointingTriangle => '◀',
+            GeometricShapes::WhiteLeftDashPointingTriangle => '◁',
+            GeometricShapes::BlackLeftDashPointingSmallTriangle => '◂',
+            GeometricShapes::WhiteLeftDashPointingSmallTriangle => '◃',
+            GeometricShapes::BlackLeftDashPointingPointer => '◄',
+            GeometricShapes::WhiteLeftDashPointingPointer => '◅',
+            GeometricShapes::BlackDiamond => '◆',
+            GeometricShapes::WhiteDiamond => '◇',
+            GeometricShapes::WhiteDiamondContainingBlackSmallDiamond => '◈',
+            GeometricShapes::Fisheye => '◉',
+            GeometricShapes::Lozenge => '◊',
+            GeometricShapes::WhiteCircle => '○',
+            GeometricShapes::DottedCircle => '◌',
+            GeometricShapes::CircleWithVerticalFill => '◍',
+            GeometricShapes::Bullseye => '◎',
+            GeometricShapes::BlackCircle => '●',
+            GeometricShapes::CircleWithLeftHalfBlack => '◐',
+            GeometricShapes::CircleWithRightHalfBlack => '◑',
+            GeometricShapes::CircleWithLowerHalfBlack => '◒',
+            GeometricShapes::CircleWithUpperHalfBlack => '◓',
+            GeometricShapes::CircleWithUpperRightQuadrantBlack => '◔',
+            GeometricShapes::CircleWithAllButUpperLeftQuadrantBlack => '◕',
+            GeometricShapes::LeftHalfBlackCircle => '◖',
+            GeometricShapes::RightHalfBlackCircle => '◗',
+            GeometricShapes::InverseBullet => '◘',
+            GeometricShapes::InverseWhiteCircle => '◙',
+            GeometricShapes::UpperHalfInverseWhiteCircle => '◚',
+            GeometricShapes::LowerHalfInverseWhiteCircle => '◛',
+            GeometricShapes::UpperLeftQuadrantCircularArc => '◜',
+            GeometricShapes::UpperRightQuadrantCircularArc => '◝',
+            GeometricShapes::LowerRightQuadrantCircularArc => '◞',
+            GeometricShapes::LowerLeftQuadrantCircularArc => '◟',
+            GeometricShapes::UpperHalfCircle => '◠',
+            GeometricShapes::LowerHalfCircle => '◡',
+            GeometricShapes::BlackLowerRightTriangle => '◢',
+            GeometricShapes::BlackLowerLeftTriangle => '◣',
+            GeometricShapes::BlackUpperLeftTriangle => '◤',
+            GeometricShapes::BlackUpperRightTriangle => '◥',
+            GeometricShapes::WhiteBullet => '◦',
+            GeometricShapes::SquareWithLeftHalfBlack => '◧',
+            GeometricShapes::SquareWithRightHalfBlack => '◨',
+            GeometricShapes::SquareWithUpperLeftDiagonalHalfBlack => '◩',
+            GeometricShapes::SquareWithLowerRightDiagonalHalfBlack => '◪',
+            GeometricShapes::WhiteSquareWithVerticalBisectingLine => '◫',
+            GeometricShapes::WhiteUpDashPointingTriangleWithDot => '◬',
+            GeometricShapes::UpDashPointingTriangleWithLeftHalfBlack => '◭',
+            GeometricShapes::UpDashPointingTriangleWithRightHalfBlack => '◮',
+            GeometricShapes::LargeCircle => '◯',
+            GeometricShapes::WhiteSquareWithUpperLeftQuadrant => '◰',
+            GeometricShapes::WhiteSquareWithLowerLeftQuadrant => '◱',
+            GeometricShapes::WhiteSquareWithLowerRightQuadrant => '◲',
+            GeometricShapes::WhiteSquareWithUpperRightQuadrant => '◳',
+            GeometricShapes::WhiteCircleWithUpperLeftQuadrant => '◴',
+            GeometricShapes::WhiteCircleWithLowerLeftQuadrant => '◵',
+            GeometricShapes::WhiteCircleWithLowerRightQuadrant => '◶',
+            GeometricShapes::WhiteCircleWithUpperRightQuadrant => '◷',
+            GeometricShapes::UpperLeftTriangle => '◸',
+            GeometricShapes::UpperRightTriangle => '◹',
+            GeometricShapes::LowerLeftTriangle => '◺',
+            GeometricShapes::WhiteMediumSquare => '◻',
+            GeometricShapes::BlackMediumSquare => '◼',
+            GeometricShapes::WhiteMediumSmallSquare => '◽',
+            GeometricShapes::BlackMediumSmallSquare => '◾',
         }
     }
 }
@@ -493,103 +299,102 @@ impl Into<char> for GeometricShapes {
 impl std::convert::TryFrom<char> for GeometricShapes {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            BLACK_SQUARE => Ok(GeometricShapes::BlackSquare),
-            WHITE_SQUARE => Ok(GeometricShapes::WhiteSquare),
-            WHITE_SQUARE_WITH_ROUNDED_CORNERS => Ok(GeometricShapes::WhiteSquareWithRoundedCorners),
-            WHITE_SQUARE_CONTAINING_BLACK_SMALL_SQUARE => Ok(GeometricShapes::WhiteSquareContainingBlackSmallSquare),
-            SQUARE_WITH_HORIZONTAL_FILL => Ok(GeometricShapes::SquareWithHorizontalFill),
-            SQUARE_WITH_VERTICAL_FILL => Ok(GeometricShapes::SquareWithVerticalFill),
-            SQUARE_WITH_ORTHOGONAL_CROSSHATCH_FILL => Ok(GeometricShapes::SquareWithOrthogonalCrosshatchFill),
-            SQUARE_WITH_UPPER_LEFT_TO_LOWER_RIGHT_FILL => Ok(GeometricShapes::SquareWithUpperLeftToLowerRightFill),
-            SQUARE_WITH_UPPER_RIGHT_TO_LOWER_LEFT_FILL => Ok(GeometricShapes::SquareWithUpperRightToLowerLeftFill),
-            SQUARE_WITH_DIAGONAL_CROSSHATCH_FILL => Ok(GeometricShapes::SquareWithDiagonalCrosshatchFill),
-            BLACK_SMALL_SQUARE => Ok(GeometricShapes::BlackSmallSquare),
-            WHITE_SMALL_SQUARE => Ok(GeometricShapes::WhiteSmallSquare),
-            BLACK_RECTANGLE => Ok(GeometricShapes::BlackRectangle),
-            WHITE_RECTANGLE => Ok(GeometricShapes::WhiteRectangle),
-            BLACK_VERTICAL_RECTANGLE => Ok(GeometricShapes::BlackVerticalRectangle),
-            WHITE_VERTICAL_RECTANGLE => Ok(GeometricShapes::WhiteVerticalRectangle),
-            BLACK_PARALLELOGRAM => Ok(GeometricShapes::BlackParallelogram),
-            WHITE_PARALLELOGRAM => Ok(GeometricShapes::WhiteParallelogram),
-            BLACK_UP_DASH_POINTING_TRIANGLE => Ok(GeometricShapes::BlackUpDashPointingTriangle),
-            WHITE_UP_DASH_POINTING_TRIANGLE => Ok(GeometricShapes::WhiteUpDashPointingTriangle),
-            BLACK_UP_DASH_POINTING_SMALL_TRIANGLE => Ok(GeometricShapes::BlackUpDashPointingSmallTriangle),
-            WHITE_UP_DASH_POINTING_SMALL_TRIANGLE => Ok(GeometricShapes::WhiteUpDashPointingSmallTriangle),
-            BLACK_RIGHT_DASH_POINTING_TRIANGLE => Ok(GeometricShapes::BlackRightDashPointingTriangle),
-            WHITE_RIGHT_DASH_POINTING_TRIANGLE => Ok(GeometricShapes::WhiteRightDashPointingTriangle),
-            BLACK_RIGHT_DASH_POINTING_SMALL_TRIANGLE => Ok(GeometricShapes::BlackRightDashPointingSmallTriangle),
-            WHITE_RIGHT_DASH_POINTING_SMALL_TRIANGLE => Ok(GeometricShapes::WhiteRightDashPointingSmallTriangle),
-            BLACK_RIGHT_DASH_POINTING_POINTER => Ok(GeometricShapes::BlackRightDashPointingPointer),
-            WHITE_RIGHT_DASH_POINTING_POINTER => Ok(GeometricShapes::WhiteRightDashPointingPointer),
-            BLACK_DOWN_DASH_POINTING_TRIANGLE => Ok(GeometricShapes::BlackDownDashPointingTriangle),
-            WHITE_DOWN_DASH_POINTING_TRIANGLE => Ok(GeometricShapes::WhiteDownDashPointingTriangle),
-            BLACK_DOWN_DASH_POINTING_SMALL_TRIANGLE => Ok(GeometricShapes::BlackDownDashPointingSmallTriangle),
-            WHITE_DOWN_DASH_POINTING_SMALL_TRIANGLE => Ok(GeometricShapes::WhiteDownDashPointingSmallTriangle),
-            BLACK_LEFT_DASH_POINTING_TRIANGLE => Ok(GeometricShapes::BlackLeftDashPointingTriangle),
-            WHITE_LEFT_DASH_POINTING_TRIANGLE => Ok(GeometricShapes::WhiteLeftDashPointingTriangle),
-            BLACK_LEFT_DASH_POINTING_SMALL_TRIANGLE => Ok(GeometricShapes::BlackLeftDashPointingSmallTriangle),
-            WHITE_LEFT_DASH_POINTING_SMALL_TRIANGLE => Ok(GeometricShapes::WhiteLeftDashPointingSmallTriangle),
-            BLACK_LEFT_DASH_POINTING_POINTER => Ok(GeometricShapes::BlackLeftDashPointingPointer),
-            WHITE_LEFT_DASH_POINTING_POINTER => Ok(GeometricShapes::WhiteLeftDashPointingPointer),
-            BLACK_DIAMOND => Ok(GeometricShapes::BlackDiamond),
-            WHITE_DIAMOND => Ok(GeometricShapes::WhiteDiamond),
-            WHITE_DIAMOND_CONTAINING_BLACK_SMALL_DIAMOND => Ok(GeometricShapes::WhiteDiamondContainingBlackSmallDiamond),
-            FISHEYE => Ok(GeometricShapes::Fisheye),
-            LOZENGE => Ok(GeometricShapes::Lozenge),
-            WHITE_CIRCLE => Ok(GeometricShapes::WhiteCircle),
-            DOTTED_CIRCLE => Ok(GeometricShapes::DottedCircle),
-            CIRCLE_WITH_VERTICAL_FILL => Ok(GeometricShapes::CircleWithVerticalFill),
-            BULLSEYE => Ok(GeometricShapes::Bullseye),
-            BLACK_CIRCLE => Ok(GeometricShapes::BlackCircle),
-            CIRCLE_WITH_LEFT_HALF_BLACK => Ok(GeometricShapes::CircleWithLeftHalfBlack),
-            CIRCLE_WITH_RIGHT_HALF_BLACK => Ok(GeometricShapes::CircleWithRightHalfBlack),
-            CIRCLE_WITH_LOWER_HALF_BLACK => Ok(GeometricShapes::CircleWithLowerHalfBlack),
-            CIRCLE_WITH_UPPER_HALF_BLACK => Ok(GeometricShapes::CircleWithUpperHalfBlack),
-            CIRCLE_WITH_UPPER_RIGHT_QUADRANT_BLACK => Ok(GeometricShapes::CircleWithUpperRightQuadrantBlack),
-            CIRCLE_WITH_ALL_BUT_UPPER_LEFT_QUADRANT_BLACK => Ok(GeometricShapes::CircleWithAllButUpperLeftQuadrantBlack),
-            LEFT_HALF_BLACK_CIRCLE => Ok(GeometricShapes::LeftHalfBlackCircle),
-            RIGHT_HALF_BLACK_CIRCLE => Ok(GeometricShapes::RightHalfBlackCircle),
-            INVERSE_BULLET => Ok(GeometricShapes::InverseBullet),
-            INVERSE_WHITE_CIRCLE => Ok(GeometricShapes::InverseWhiteCircle),
-            UPPER_HALF_INVERSE_WHITE_CIRCLE => Ok(GeometricShapes::UpperHalfInverseWhiteCircle),
-            LOWER_HALF_INVERSE_WHITE_CIRCLE => Ok(GeometricShapes::LowerHalfInverseWhiteCircle),
-            UPPER_LEFT_QUADRANT_CIRCULAR_ARC => Ok(GeometricShapes::UpperLeftQuadrantCircularArc),
-            UPPER_RIGHT_QUADRANT_CIRCULAR_ARC => Ok(GeometricShapes::UpperRightQuadrantCircularArc),
-            LOWER_RIGHT_QUADRANT_CIRCULAR_ARC => Ok(GeometricShapes::LowerRightQuadrantCircularArc),
-            LOWER_LEFT_QUADRANT_CIRCULAR_ARC => Ok(GeometricShapes::LowerLeftQuadrantCircularArc),
-            UPPER_HALF_CIRCLE => Ok(GeometricShapes::UpperHalfCircle),
-            LOWER_HALF_CIRCLE => Ok(GeometricShapes::LowerHalfCircle),
-            BLACK_LOWER_RIGHT_TRIANGLE => Ok(GeometricShapes::BlackLowerRightTriangle),
-            BLACK_LOWER_LEFT_TRIANGLE => Ok(GeometricShapes::BlackLowerLeftTriangle),
-            BLACK_UPPER_LEFT_TRIANGLE => Ok(GeometricShapes::BlackUpperLeftTriangle),
-            BLACK_UPPER_RIGHT_TRIANGLE => Ok(GeometricShapes::BlackUpperRightTriangle),
-            WHITE_BULLET => Ok(GeometricShapes::WhiteBullet),
-            SQUARE_WITH_LEFT_HALF_BLACK => Ok(GeometricShapes::SquareWithLeftHalfBlack),
-            SQUARE_WITH_RIGHT_HALF_BLACK => Ok(GeometricShapes::SquareWithRightHalfBlack),
-            SQUARE_WITH_UPPER_LEFT_DIAGONAL_HALF_BLACK => Ok(GeometricShapes::SquareWithUpperLeftDiagonalHalfBlack),
-            SQUARE_WITH_LOWER_RIGHT_DIAGONAL_HALF_BLACK => Ok(GeometricShapes::SquareWithLowerRightDiagonalHalfBlack),
-            WHITE_SQUARE_WITH_VERTICAL_BISECTING_LINE => Ok(GeometricShapes::WhiteSquareWithVerticalBisectingLine),
-            WHITE_UP_DASH_POINTING_TRIANGLE_WITH_DOT => Ok(GeometricShapes::WhiteUpDashPointingTriangleWithDot),
-            UP_DASH_POINTING_TRIANGLE_WITH_LEFT_HALF_BLACK => Ok(GeometricShapes::UpDashPointingTriangleWithLeftHalfBlack),
-            UP_DASH_POINTING_TRIANGLE_WITH_RIGHT_HALF_BLACK => Ok(GeometricShapes::UpDashPointingTriangleWithRightHalfBlack),
-            LARGE_CIRCLE => Ok(GeometricShapes::LargeCircle),
-            WHITE_SQUARE_WITH_UPPER_LEFT_QUADRANT => Ok(GeometricShapes::WhiteSquareWithUpperLeftQuadrant),
-            WHITE_SQUARE_WITH_LOWER_LEFT_QUADRANT => Ok(GeometricShapes::WhiteSquareWithLowerLeftQuadrant),
-            WHITE_SQUARE_WITH_LOWER_RIGHT_QUADRANT => Ok(GeometricShapes::WhiteSquareWithLowerRightQuadrant),
-            WHITE_SQUARE_WITH_UPPER_RIGHT_QUADRANT => Ok(GeometricShapes::WhiteSquareWithUpperRightQuadrant),
-            WHITE_CIRCLE_WITH_UPPER_LEFT_QUADRANT => Ok(GeometricShapes::WhiteCircleWithUpperLeftQuadrant),
-            WHITE_CIRCLE_WITH_LOWER_LEFT_QUADRANT => Ok(GeometricShapes::WhiteCircleWithLowerLeftQuadrant),
-            WHITE_CIRCLE_WITH_LOWER_RIGHT_QUADRANT => Ok(GeometricShapes::WhiteCircleWithLowerRightQuadrant),
-            WHITE_CIRCLE_WITH_UPPER_RIGHT_QUADRANT => Ok(GeometricShapes::WhiteCircleWithUpperRightQuadrant),
-            UPPER_LEFT_TRIANGLE => Ok(GeometricShapes::UpperLeftTriangle),
-            UPPER_RIGHT_TRIANGLE => Ok(GeometricShapes::UpperRightTriangle),
-            LOWER_LEFT_TRIANGLE => Ok(GeometricShapes::LowerLeftTriangle),
-            WHITE_MEDIUM_SQUARE => Ok(GeometricShapes::WhiteMediumSquare),
-            BLACK_MEDIUM_SQUARE => Ok(GeometricShapes::BlackMediumSquare),
-            WHITE_MEDIUM_SMALL_SQUARE => Ok(GeometricShapes::WhiteMediumSmallSquare),
-            BLACK_MEDIUM_SMALL_SQUARE => Ok(GeometricShapes::BlackMediumSmallSquare),
+            '■' => Ok(GeometricShapes::BlackSquare),
+            '□' => Ok(GeometricShapes::WhiteSquare),
+            '▢' => Ok(GeometricShapes::WhiteSquareWithRoundedCorners),
+            '▣' => Ok(GeometricShapes::WhiteSquareContainingBlackSmallSquare),
+            '▤' => Ok(GeometricShapes::SquareWithHorizontalFill),
+            '▥' => Ok(GeometricShapes::SquareWithVerticalFill),
+            '▦' => Ok(GeometricShapes::SquareWithOrthogonalCrosshatchFill),
+            '▧' => Ok(GeometricShapes::SquareWithUpperLeftToLowerRightFill),
+            '▨' => Ok(GeometricShapes::SquareWithUpperRightToLowerLeftFill),
+            '▩' => Ok(GeometricShapes::SquareWithDiagonalCrosshatchFill),
+            '▪' => Ok(GeometricShapes::BlackSmallSquare),
+            '▫' => Ok(GeometricShapes::WhiteSmallSquare),
+            '▬' => Ok(GeometricShapes::BlackRectangle),
+            '▭' => Ok(GeometricShapes::WhiteRectangle),
+            '▮' => Ok(GeometricShapes::BlackVerticalRectangle),
+            '▯' => Ok(GeometricShapes::WhiteVerticalRectangle),
+            '▰' => Ok(GeometricShapes::BlackParallelogram),
+            '▱' => Ok(GeometricShapes::WhiteParallelogram),
+            '▲' => Ok(GeometricShapes::BlackUpDashPointingTriangle),
+            '△' => Ok(GeometricShapes::WhiteUpDashPointingTriangle),
+            '▴' => Ok(GeometricShapes::BlackUpDashPointingSmallTriangle),
+            '▵' => Ok(GeometricShapes::WhiteUpDashPointingSmallTriangle),
+            '▶' => Ok(GeometricShapes::BlackRightDashPointingTriangle),
+            '▷' => Ok(GeometricShapes::WhiteRightDashPointingTriangle),
+            '▸' => Ok(GeometricShapes::BlackRightDashPointingSmallTriangle),
+            '▹' => Ok(GeometricShapes::WhiteRightDashPointingSmallTriangle),
+            '►' => Ok(GeometricShapes::BlackRightDashPointingPointer),
+            '▻' => Ok(GeometricShapes::WhiteRightDashPointingPointer),
+            '▼' => Ok(GeometricShapes::BlackDownDashPointingTriangle),
+            '▽' => Ok(GeometricShapes::WhiteDownDashPointingTriangle),
+            '▾' => Ok(GeometricShapes::BlackDownDashPointingSmallTriangle),
+            '▿' => Ok(GeometricShapes::WhiteDownDashPointingSmallTriangle),
+            '◀' => Ok(GeometricShapes::BlackLeftDashPointingTriangle),
+            '◁' => Ok(GeometricShapes::WhiteLeftDashPointingTriangle),
+            '◂' => Ok(GeometricShapes::BlackLeftDashPointingSmallTriangle),
+            '◃' => Ok(GeometricShapes::WhiteLeftDashPointingSmallTriangle),
+            '◄' => Ok(GeometricShapes::BlackLeftDashPointingPointer),
+            '◅' => Ok(GeometricShapes::WhiteLeftDashPointingPointer),
+            '◆' => Ok(GeometricShapes::BlackDiamond),
+            '◇' => Ok(GeometricShapes::WhiteDiamond),
+            '◈' => Ok(GeometricShapes::WhiteDiamondContainingBlackSmallDiamond),
+            '◉' => Ok(GeometricShapes::Fisheye),
+            '◊' => Ok(GeometricShapes::Lozenge),
+            '○' => Ok(GeometricShapes::WhiteCircle),
+            '◌' => Ok(GeometricShapes::DottedCircle),
+            '◍' => Ok(GeometricShapes::CircleWithVerticalFill),
+            '◎' => Ok(GeometricShapes::Bullseye),
+            '●' => Ok(GeometricShapes::BlackCircle),
+            '◐' => Ok(GeometricShapes::CircleWithLeftHalfBlack),
+            '◑' => Ok(GeometricShapes::CircleWithRightHalfBlack),
+            '◒' => Ok(GeometricShapes::CircleWithLowerHalfBlack),
+            '◓' => Ok(GeometricShapes::CircleWithUpperHalfBlack),
+            '◔' => Ok(GeometricShapes::CircleWithUpperRightQuadrantBlack),
+            '◕' => Ok(GeometricShapes::CircleWithAllButUpperLeftQuadrantBlack),
+            '◖' => Ok(GeometricShapes::LeftHalfBlackCircle),
+            '◗' => Ok(GeometricShapes::RightHalfBlackCircle),
+            '◘' => Ok(GeometricShapes::InverseBullet),
+            '◙' => Ok(GeometricShapes::InverseWhiteCircle),
+            '◚' => Ok(GeometricShapes::UpperHalfInverseWhiteCircle),
+            '◛' => Ok(GeometricShapes::LowerHalfInverseWhiteCircle),
+            '◜' => Ok(GeometricShapes::UpperLeftQuadrantCircularArc),
+            '◝' => Ok(GeometricShapes::UpperRightQuadrantCircularArc),
+            '◞' => Ok(GeometricShapes::LowerRightQuadrantCircularArc),
+            '◟' => Ok(GeometricShapes::LowerLeftQuadrantCircularArc),
+            '◠' => Ok(GeometricShapes::UpperHalfCircle),
+            '◡' => Ok(GeometricShapes::LowerHalfCircle),
+            '◢' => Ok(GeometricShapes::BlackLowerRightTriangle),
+            '◣' => Ok(GeometricShapes::BlackLowerLeftTriangle),
+            '◤' => Ok(GeometricShapes::BlackUpperLeftTriangle),
+            '◥' => Ok(GeometricShapes::BlackUpperRightTriangle),
+            '◦' => Ok(GeometricShapes::WhiteBullet),
+            '◧' => Ok(GeometricShapes::SquareWithLeftHalfBlack),
+            '◨' => Ok(GeometricShapes::SquareWithRightHalfBlack),
+            '◩' => Ok(GeometricShapes::SquareWithUpperLeftDiagonalHalfBlack),
+            '◪' => Ok(GeometricShapes::SquareWithLowerRightDiagonalHalfBlack),
+            '◫' => Ok(GeometricShapes::WhiteSquareWithVerticalBisectingLine),
+            '◬' => Ok(GeometricShapes::WhiteUpDashPointingTriangleWithDot),
+            '◭' => Ok(GeometricShapes::UpDashPointingTriangleWithLeftHalfBlack),
+            '◮' => Ok(GeometricShapes::UpDashPointingTriangleWithRightHalfBlack),
+            '◯' => Ok(GeometricShapes::LargeCircle),
+            '◰' => Ok(GeometricShapes::WhiteSquareWithUpperLeftQuadrant),
+            '◱' => Ok(GeometricShapes::WhiteSquareWithLowerLeftQuadrant),
+            '◲' => Ok(GeometricShapes::WhiteSquareWithLowerRightQuadrant),
+            '◳' => Ok(GeometricShapes::WhiteSquareWithUpperRightQuadrant),
+            '◴' => Ok(GeometricShapes::WhiteCircleWithUpperLeftQuadrant),
+            '◵' => Ok(GeometricShapes::WhiteCircleWithLowerLeftQuadrant),
+            '◶' => Ok(GeometricShapes::WhiteCircleWithLowerRightQuadrant),
+            '◷' => Ok(GeometricShapes::WhiteCircleWithUpperRightQuadrant),
+            '◸' => Ok(GeometricShapes::UpperLeftTriangle),
+            '◹' => Ok(GeometricShapes::UpperRightTriangle),
+            '◺' => Ok(GeometricShapes::LowerLeftTriangle),
+            '◻' => Ok(GeometricShapes::WhiteMediumSquare),
+            '◼' => Ok(GeometricShapes::BlackMediumSquare),
+            '◽' => Ok(GeometricShapes::WhiteMediumSmallSquare),
+            '◾' => Ok(GeometricShapes::BlackMediumSmallSquare),
             _ => Err(()),
         }
     }

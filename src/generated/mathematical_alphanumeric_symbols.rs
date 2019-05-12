@@ -1,1996 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1d400}: '𝐀'
-    pub const MATHEMATICAL_BOLD_CAPITAL_A: char = '𝐀';
-    /// \u{1d401}: '𝐁'
-    pub const MATHEMATICAL_BOLD_CAPITAL_B: char = '𝐁';
-    /// \u{1d402}: '𝐂'
-    pub const MATHEMATICAL_BOLD_CAPITAL_C: char = '𝐂';
-    /// \u{1d403}: '𝐃'
-    pub const MATHEMATICAL_BOLD_CAPITAL_D: char = '𝐃';
-    /// \u{1d404}: '𝐄'
-    pub const MATHEMATICAL_BOLD_CAPITAL_E: char = '𝐄';
-    /// \u{1d405}: '𝐅'
-    pub const MATHEMATICAL_BOLD_CAPITAL_F: char = '𝐅';
-    /// \u{1d406}: '𝐆'
-    pub const MATHEMATICAL_BOLD_CAPITAL_G: char = '𝐆';
-    /// \u{1d407}: '𝐇'
-    pub const MATHEMATICAL_BOLD_CAPITAL_H: char = '𝐇';
-    /// \u{1d408}: '𝐈'
-    pub const MATHEMATICAL_BOLD_CAPITAL_I: char = '𝐈';
-    /// \u{1d409}: '𝐉'
-    pub const MATHEMATICAL_BOLD_CAPITAL_J: char = '𝐉';
-    /// \u{1d40a}: '𝐊'
-    pub const MATHEMATICAL_BOLD_CAPITAL_K: char = '𝐊';
-    /// \u{1d40b}: '𝐋'
-    pub const MATHEMATICAL_BOLD_CAPITAL_L: char = '𝐋';
-    /// \u{1d40c}: '𝐌'
-    pub const MATHEMATICAL_BOLD_CAPITAL_M: char = '𝐌';
-    /// \u{1d40d}: '𝐍'
-    pub const MATHEMATICAL_BOLD_CAPITAL_N: char = '𝐍';
-    /// \u{1d40e}: '𝐎'
-    pub const MATHEMATICAL_BOLD_CAPITAL_O: char = '𝐎';
-    /// \u{1d40f}: '𝐏'
-    pub const MATHEMATICAL_BOLD_CAPITAL_P: char = '𝐏';
-    /// \u{1d410}: '𝐐'
-    pub const MATHEMATICAL_BOLD_CAPITAL_Q: char = '𝐐';
-    /// \u{1d411}: '𝐑'
-    pub const MATHEMATICAL_BOLD_CAPITAL_R: char = '𝐑';
-    /// \u{1d412}: '𝐒'
-    pub const MATHEMATICAL_BOLD_CAPITAL_S: char = '𝐒';
-    /// \u{1d413}: '𝐓'
-    pub const MATHEMATICAL_BOLD_CAPITAL_T: char = '𝐓';
-    /// \u{1d414}: '𝐔'
-    pub const MATHEMATICAL_BOLD_CAPITAL_U: char = '𝐔';
-    /// \u{1d415}: '𝐕'
-    pub const MATHEMATICAL_BOLD_CAPITAL_V: char = '𝐕';
-    /// \u{1d416}: '𝐖'
-    pub const MATHEMATICAL_BOLD_CAPITAL_W: char = '𝐖';
-    /// \u{1d417}: '𝐗'
-    pub const MATHEMATICAL_BOLD_CAPITAL_X: char = '𝐗';
-    /// \u{1d418}: '𝐘'
-    pub const MATHEMATICAL_BOLD_CAPITAL_Y: char = '𝐘';
-    /// \u{1d419}: '𝐙'
-    pub const MATHEMATICAL_BOLD_CAPITAL_Z: char = '𝐙';
-    /// \u{1d41a}: '𝐚'
-    pub const MATHEMATICAL_BOLD_SMALL_A: char = '𝐚';
-    /// \u{1d41b}: '𝐛'
-    pub const MATHEMATICAL_BOLD_SMALL_B: char = '𝐛';
-    /// \u{1d41c}: '𝐜'
-    pub const MATHEMATICAL_BOLD_SMALL_C: char = '𝐜';
-    /// \u{1d41d}: '𝐝'
-    pub const MATHEMATICAL_BOLD_SMALL_D: char = '𝐝';
-    /// \u{1d41e}: '𝐞'
-    pub const MATHEMATICAL_BOLD_SMALL_E: char = '𝐞';
-    /// \u{1d41f}: '𝐟'
-    pub const MATHEMATICAL_BOLD_SMALL_F: char = '𝐟';
-    /// \u{1d420}: '𝐠'
-    pub const MATHEMATICAL_BOLD_SMALL_G: char = '𝐠';
-    /// \u{1d421}: '𝐡'
-    pub const MATHEMATICAL_BOLD_SMALL_H: char = '𝐡';
-    /// \u{1d422}: '𝐢'
-    pub const MATHEMATICAL_BOLD_SMALL_I: char = '𝐢';
-    /// \u{1d423}: '𝐣'
-    pub const MATHEMATICAL_BOLD_SMALL_J: char = '𝐣';
-    /// \u{1d424}: '𝐤'
-    pub const MATHEMATICAL_BOLD_SMALL_K: char = '𝐤';
-    /// \u{1d425}: '𝐥'
-    pub const MATHEMATICAL_BOLD_SMALL_L: char = '𝐥';
-    /// \u{1d426}: '𝐦'
-    pub const MATHEMATICAL_BOLD_SMALL_M: char = '𝐦';
-    /// \u{1d427}: '𝐧'
-    pub const MATHEMATICAL_BOLD_SMALL_N: char = '𝐧';
-    /// \u{1d428}: '𝐨'
-    pub const MATHEMATICAL_BOLD_SMALL_O: char = '𝐨';
-    /// \u{1d429}: '𝐩'
-    pub const MATHEMATICAL_BOLD_SMALL_P: char = '𝐩';
-    /// \u{1d42a}: '𝐪'
-    pub const MATHEMATICAL_BOLD_SMALL_Q: char = '𝐪';
-    /// \u{1d42b}: '𝐫'
-    pub const MATHEMATICAL_BOLD_SMALL_R: char = '𝐫';
-    /// \u{1d42c}: '𝐬'
-    pub const MATHEMATICAL_BOLD_SMALL_S: char = '𝐬';
-    /// \u{1d42d}: '𝐭'
-    pub const MATHEMATICAL_BOLD_SMALL_T: char = '𝐭';
-    /// \u{1d42e}: '𝐮'
-    pub const MATHEMATICAL_BOLD_SMALL_U: char = '𝐮';
-    /// \u{1d42f}: '𝐯'
-    pub const MATHEMATICAL_BOLD_SMALL_V: char = '𝐯';
-    /// \u{1d430}: '𝐰'
-    pub const MATHEMATICAL_BOLD_SMALL_W: char = '𝐰';
-    /// \u{1d431}: '𝐱'
-    pub const MATHEMATICAL_BOLD_SMALL_X: char = '𝐱';
-    /// \u{1d432}: '𝐲'
-    pub const MATHEMATICAL_BOLD_SMALL_Y: char = '𝐲';
-    /// \u{1d433}: '𝐳'
-    pub const MATHEMATICAL_BOLD_SMALL_Z: char = '𝐳';
-    /// \u{1d434}: '𝐴'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_A: char = '𝐴';
-    /// \u{1d435}: '𝐵'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_B: char = '𝐵';
-    /// \u{1d436}: '𝐶'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_C: char = '𝐶';
-    /// \u{1d437}: '𝐷'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_D: char = '𝐷';
-    /// \u{1d438}: '𝐸'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_E: char = '𝐸';
-    /// \u{1d439}: '𝐹'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_F: char = '𝐹';
-    /// \u{1d43a}: '𝐺'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_G: char = '𝐺';
-    /// \u{1d43b}: '𝐻'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_H: char = '𝐻';
-    /// \u{1d43c}: '𝐼'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_I: char = '𝐼';
-    /// \u{1d43d}: '𝐽'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_J: char = '𝐽';
-    /// \u{1d43e}: '𝐾'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_K: char = '𝐾';
-    /// \u{1d43f}: '𝐿'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_L: char = '𝐿';
-    /// \u{1d440}: '𝑀'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_M: char = '𝑀';
-    /// \u{1d441}: '𝑁'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_N: char = '𝑁';
-    /// \u{1d442}: '𝑂'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_O: char = '𝑂';
-    /// \u{1d443}: '𝑃'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_P: char = '𝑃';
-    /// \u{1d444}: '𝑄'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_Q: char = '𝑄';
-    /// \u{1d445}: '𝑅'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_R: char = '𝑅';
-    /// \u{1d446}: '𝑆'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_S: char = '𝑆';
-    /// \u{1d447}: '𝑇'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_T: char = '𝑇';
-    /// \u{1d448}: '𝑈'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_U: char = '𝑈';
-    /// \u{1d449}: '𝑉'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_V: char = '𝑉';
-    /// \u{1d44a}: '𝑊'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_W: char = '𝑊';
-    /// \u{1d44b}: '𝑋'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_X: char = '𝑋';
-    /// \u{1d44c}: '𝑌'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_Y: char = '𝑌';
-    /// \u{1d44d}: '𝑍'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_Z: char = '𝑍';
-    /// \u{1d44e}: '𝑎'
-    pub const MATHEMATICAL_ITALIC_SMALL_A: char = '𝑎';
-    /// \u{1d44f}: '𝑏'
-    pub const MATHEMATICAL_ITALIC_SMALL_B: char = '𝑏';
-    /// \u{1d450}: '𝑐'
-    pub const MATHEMATICAL_ITALIC_SMALL_C: char = '𝑐';
-    /// \u{1d451}: '𝑑'
-    pub const MATHEMATICAL_ITALIC_SMALL_D: char = '𝑑';
-    /// \u{1d452}: '𝑒'
-    pub const MATHEMATICAL_ITALIC_SMALL_E: char = '𝑒';
-    /// \u{1d453}: '𝑓'
-    pub const MATHEMATICAL_ITALIC_SMALL_F: char = '𝑓';
-    /// \u{1d454}: '𝑔'
-    pub const MATHEMATICAL_ITALIC_SMALL_G: char = '𝑔';
-    /// \u{1d456}: '𝑖'
-    pub const MATHEMATICAL_ITALIC_SMALL_I: char = '𝑖';
-    /// \u{1d457}: '𝑗'
-    pub const MATHEMATICAL_ITALIC_SMALL_J: char = '𝑗';
-    /// \u{1d458}: '𝑘'
-    pub const MATHEMATICAL_ITALIC_SMALL_K: char = '𝑘';
-    /// \u{1d459}: '𝑙'
-    pub const MATHEMATICAL_ITALIC_SMALL_L: char = '𝑙';
-    /// \u{1d45a}: '𝑚'
-    pub const MATHEMATICAL_ITALIC_SMALL_M: char = '𝑚';
-    /// \u{1d45b}: '𝑛'
-    pub const MATHEMATICAL_ITALIC_SMALL_N: char = '𝑛';
-    /// \u{1d45c}: '𝑜'
-    pub const MATHEMATICAL_ITALIC_SMALL_O: char = '𝑜';
-    /// \u{1d45d}: '𝑝'
-    pub const MATHEMATICAL_ITALIC_SMALL_P: char = '𝑝';
-    /// \u{1d45e}: '𝑞'
-    pub const MATHEMATICAL_ITALIC_SMALL_Q: char = '𝑞';
-    /// \u{1d45f}: '𝑟'
-    pub const MATHEMATICAL_ITALIC_SMALL_R: char = '𝑟';
-    /// \u{1d460}: '𝑠'
-    pub const MATHEMATICAL_ITALIC_SMALL_S: char = '𝑠';
-    /// \u{1d461}: '𝑡'
-    pub const MATHEMATICAL_ITALIC_SMALL_T: char = '𝑡';
-    /// \u{1d462}: '𝑢'
-    pub const MATHEMATICAL_ITALIC_SMALL_U: char = '𝑢';
-    /// \u{1d463}: '𝑣'
-    pub const MATHEMATICAL_ITALIC_SMALL_V: char = '𝑣';
-    /// \u{1d464}: '𝑤'
-    pub const MATHEMATICAL_ITALIC_SMALL_W: char = '𝑤';
-    /// \u{1d465}: '𝑥'
-    pub const MATHEMATICAL_ITALIC_SMALL_X: char = '𝑥';
-    /// \u{1d466}: '𝑦'
-    pub const MATHEMATICAL_ITALIC_SMALL_Y: char = '𝑦';
-    /// \u{1d467}: '𝑧'
-    pub const MATHEMATICAL_ITALIC_SMALL_Z: char = '𝑧';
-    /// \u{1d468}: '𝑨'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_A: char = '𝑨';
-    /// \u{1d469}: '𝑩'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_B: char = '𝑩';
-    /// \u{1d46a}: '𝑪'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_C: char = '𝑪';
-    /// \u{1d46b}: '𝑫'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_D: char = '𝑫';
-    /// \u{1d46c}: '𝑬'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_E: char = '𝑬';
-    /// \u{1d46d}: '𝑭'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_F: char = '𝑭';
-    /// \u{1d46e}: '𝑮'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_G: char = '𝑮';
-    /// \u{1d46f}: '𝑯'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_H: char = '𝑯';
-    /// \u{1d470}: '𝑰'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_I: char = '𝑰';
-    /// \u{1d471}: '𝑱'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_J: char = '𝑱';
-    /// \u{1d472}: '𝑲'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_K: char = '𝑲';
-    /// \u{1d473}: '𝑳'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_L: char = '𝑳';
-    /// \u{1d474}: '𝑴'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_M: char = '𝑴';
-    /// \u{1d475}: '𝑵'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_N: char = '𝑵';
-    /// \u{1d476}: '𝑶'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_O: char = '𝑶';
-    /// \u{1d477}: '𝑷'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_P: char = '𝑷';
-    /// \u{1d478}: '𝑸'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_Q: char = '𝑸';
-    /// \u{1d479}: '𝑹'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_R: char = '𝑹';
-    /// \u{1d47a}: '𝑺'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_S: char = '𝑺';
-    /// \u{1d47b}: '𝑻'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_T: char = '𝑻';
-    /// \u{1d47c}: '𝑼'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_U: char = '𝑼';
-    /// \u{1d47d}: '𝑽'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_V: char = '𝑽';
-    /// \u{1d47e}: '𝑾'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_W: char = '𝑾';
-    /// \u{1d47f}: '𝑿'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_X: char = '𝑿';
-    /// \u{1d480}: '𝒀'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_Y: char = '𝒀';
-    /// \u{1d481}: '𝒁'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_Z: char = '𝒁';
-    /// \u{1d482}: '𝒂'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_A: char = '𝒂';
-    /// \u{1d483}: '𝒃'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_B: char = '𝒃';
-    /// \u{1d484}: '𝒄'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_C: char = '𝒄';
-    /// \u{1d485}: '𝒅'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_D: char = '𝒅';
-    /// \u{1d486}: '𝒆'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_E: char = '𝒆';
-    /// \u{1d487}: '𝒇'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_F: char = '𝒇';
-    /// \u{1d488}: '𝒈'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_G: char = '𝒈';
-    /// \u{1d489}: '𝒉'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_H: char = '𝒉';
-    /// \u{1d48a}: '𝒊'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_I: char = '𝒊';
-    /// \u{1d48b}: '𝒋'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_J: char = '𝒋';
-    /// \u{1d48c}: '𝒌'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_K: char = '𝒌';
-    /// \u{1d48d}: '𝒍'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_L: char = '𝒍';
-    /// \u{1d48e}: '𝒎'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_M: char = '𝒎';
-    /// \u{1d48f}: '𝒏'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_N: char = '𝒏';
-    /// \u{1d490}: '𝒐'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_O: char = '𝒐';
-    /// \u{1d491}: '𝒑'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_P: char = '𝒑';
-    /// \u{1d492}: '𝒒'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_Q: char = '𝒒';
-    /// \u{1d493}: '𝒓'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_R: char = '𝒓';
-    /// \u{1d494}: '𝒔'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_S: char = '𝒔';
-    /// \u{1d495}: '𝒕'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_T: char = '𝒕';
-    /// \u{1d496}: '𝒖'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_U: char = '𝒖';
-    /// \u{1d497}: '𝒗'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_V: char = '𝒗';
-    /// \u{1d498}: '𝒘'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_W: char = '𝒘';
-    /// \u{1d499}: '𝒙'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_X: char = '𝒙';
-    /// \u{1d49a}: '𝒚'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_Y: char = '𝒚';
-    /// \u{1d49b}: '𝒛'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_Z: char = '𝒛';
-    /// \u{1d49c}: '𝒜'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_A: char = '𝒜';
-    /// \u{1d49e}: '𝒞'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_C: char = '𝒞';
-    /// \u{1d49f}: '𝒟'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_D: char = '𝒟';
-    /// \u{1d4a2}: '𝒢'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_G: char = '𝒢';
-    /// \u{1d4a5}: '𝒥'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_J: char = '𝒥';
-    /// \u{1d4a6}: '𝒦'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_K: char = '𝒦';
-    /// \u{1d4a9}: '𝒩'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_N: char = '𝒩';
-    /// \u{1d4aa}: '𝒪'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_O: char = '𝒪';
-    /// \u{1d4ab}: '𝒫'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_P: char = '𝒫';
-    /// \u{1d4ac}: '𝒬'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_Q: char = '𝒬';
-    /// \u{1d4ae}: '𝒮'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_S: char = '𝒮';
-    /// \u{1d4af}: '𝒯'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_T: char = '𝒯';
-    /// \u{1d4b0}: '𝒰'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_U: char = '𝒰';
-    /// \u{1d4b1}: '𝒱'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_V: char = '𝒱';
-    /// \u{1d4b2}: '𝒲'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_W: char = '𝒲';
-    /// \u{1d4b3}: '𝒳'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_X: char = '𝒳';
-    /// \u{1d4b4}: '𝒴'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_Y: char = '𝒴';
-    /// \u{1d4b5}: '𝒵'
-    pub const MATHEMATICAL_SCRIPT_CAPITAL_Z: char = '𝒵';
-    /// \u{1d4b6}: '𝒶'
-    pub const MATHEMATICAL_SCRIPT_SMALL_A: char = '𝒶';
-    /// \u{1d4b7}: '𝒷'
-    pub const MATHEMATICAL_SCRIPT_SMALL_B: char = '𝒷';
-    /// \u{1d4b8}: '𝒸'
-    pub const MATHEMATICAL_SCRIPT_SMALL_C: char = '𝒸';
-    /// \u{1d4b9}: '𝒹'
-    pub const MATHEMATICAL_SCRIPT_SMALL_D: char = '𝒹';
-    /// \u{1d4bb}: '𝒻'
-    pub const MATHEMATICAL_SCRIPT_SMALL_F: char = '𝒻';
-    /// \u{1d4bd}: '𝒽'
-    pub const MATHEMATICAL_SCRIPT_SMALL_H: char = '𝒽';
-    /// \u{1d4be}: '𝒾'
-    pub const MATHEMATICAL_SCRIPT_SMALL_I: char = '𝒾';
-    /// \u{1d4bf}: '𝒿'
-    pub const MATHEMATICAL_SCRIPT_SMALL_J: char = '𝒿';
-    /// \u{1d4c0}: '𝓀'
-    pub const MATHEMATICAL_SCRIPT_SMALL_K: char = '𝓀';
-    /// \u{1d4c1}: '𝓁'
-    pub const MATHEMATICAL_SCRIPT_SMALL_L: char = '𝓁';
-    /// \u{1d4c2}: '𝓂'
-    pub const MATHEMATICAL_SCRIPT_SMALL_M: char = '𝓂';
-    /// \u{1d4c3}: '𝓃'
-    pub const MATHEMATICAL_SCRIPT_SMALL_N: char = '𝓃';
-    /// \u{1d4c5}: '𝓅'
-    pub const MATHEMATICAL_SCRIPT_SMALL_P: char = '𝓅';
-    /// \u{1d4c6}: '𝓆'
-    pub const MATHEMATICAL_SCRIPT_SMALL_Q: char = '𝓆';
-    /// \u{1d4c7}: '𝓇'
-    pub const MATHEMATICAL_SCRIPT_SMALL_R: char = '𝓇';
-    /// \u{1d4c8}: '𝓈'
-    pub const MATHEMATICAL_SCRIPT_SMALL_S: char = '𝓈';
-    /// \u{1d4c9}: '𝓉'
-    pub const MATHEMATICAL_SCRIPT_SMALL_T: char = '𝓉';
-    /// \u{1d4ca}: '𝓊'
-    pub const MATHEMATICAL_SCRIPT_SMALL_U: char = '𝓊';
-    /// \u{1d4cb}: '𝓋'
-    pub const MATHEMATICAL_SCRIPT_SMALL_V: char = '𝓋';
-    /// \u{1d4cc}: '𝓌'
-    pub const MATHEMATICAL_SCRIPT_SMALL_W: char = '𝓌';
-    /// \u{1d4cd}: '𝓍'
-    pub const MATHEMATICAL_SCRIPT_SMALL_X: char = '𝓍';
-    /// \u{1d4ce}: '𝓎'
-    pub const MATHEMATICAL_SCRIPT_SMALL_Y: char = '𝓎';
-    /// \u{1d4cf}: '𝓏'
-    pub const MATHEMATICAL_SCRIPT_SMALL_Z: char = '𝓏';
-    /// \u{1d4d0}: '𝓐'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_A: char = '𝓐';
-    /// \u{1d4d1}: '𝓑'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_B: char = '𝓑';
-    /// \u{1d4d2}: '𝓒'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_C: char = '𝓒';
-    /// \u{1d4d3}: '𝓓'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_D: char = '𝓓';
-    /// \u{1d4d4}: '𝓔'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_E: char = '𝓔';
-    /// \u{1d4d5}: '𝓕'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_F: char = '𝓕';
-    /// \u{1d4d6}: '𝓖'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_G: char = '𝓖';
-    /// \u{1d4d7}: '𝓗'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_H: char = '𝓗';
-    /// \u{1d4d8}: '𝓘'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_I: char = '𝓘';
-    /// \u{1d4d9}: '𝓙'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_J: char = '𝓙';
-    /// \u{1d4da}: '𝓚'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_K: char = '𝓚';
-    /// \u{1d4db}: '𝓛'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_L: char = '𝓛';
-    /// \u{1d4dc}: '𝓜'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_M: char = '𝓜';
-    /// \u{1d4dd}: '𝓝'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_N: char = '𝓝';
-    /// \u{1d4de}: '𝓞'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_O: char = '𝓞';
-    /// \u{1d4df}: '𝓟'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_P: char = '𝓟';
-    /// \u{1d4e0}: '𝓠'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_Q: char = '𝓠';
-    /// \u{1d4e1}: '𝓡'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_R: char = '𝓡';
-    /// \u{1d4e2}: '𝓢'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_S: char = '𝓢';
-    /// \u{1d4e3}: '𝓣'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_T: char = '𝓣';
-    /// \u{1d4e4}: '𝓤'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_U: char = '𝓤';
-    /// \u{1d4e5}: '𝓥'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_V: char = '𝓥';
-    /// \u{1d4e6}: '𝓦'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_W: char = '𝓦';
-    /// \u{1d4e7}: '𝓧'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_X: char = '𝓧';
-    /// \u{1d4e8}: '𝓨'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_Y: char = '𝓨';
-    /// \u{1d4e9}: '𝓩'
-    pub const MATHEMATICAL_BOLD_SCRIPT_CAPITAL_Z: char = '𝓩';
-    /// \u{1d4ea}: '𝓪'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_A: char = '𝓪';
-    /// \u{1d4eb}: '𝓫'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_B: char = '𝓫';
-    /// \u{1d4ec}: '𝓬'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_C: char = '𝓬';
-    /// \u{1d4ed}: '𝓭'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_D: char = '𝓭';
-    /// \u{1d4ee}: '𝓮'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_E: char = '𝓮';
-    /// \u{1d4ef}: '𝓯'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_F: char = '𝓯';
-    /// \u{1d4f0}: '𝓰'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_G: char = '𝓰';
-    /// \u{1d4f1}: '𝓱'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_H: char = '𝓱';
-    /// \u{1d4f2}: '𝓲'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_I: char = '𝓲';
-    /// \u{1d4f3}: '𝓳'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_J: char = '𝓳';
-    /// \u{1d4f4}: '𝓴'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_K: char = '𝓴';
-    /// \u{1d4f5}: '𝓵'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_L: char = '𝓵';
-    /// \u{1d4f6}: '𝓶'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_M: char = '𝓶';
-    /// \u{1d4f7}: '𝓷'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_N: char = '𝓷';
-    /// \u{1d4f8}: '𝓸'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_O: char = '𝓸';
-    /// \u{1d4f9}: '𝓹'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_P: char = '𝓹';
-    /// \u{1d4fa}: '𝓺'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_Q: char = '𝓺';
-    /// \u{1d4fb}: '𝓻'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_R: char = '𝓻';
-    /// \u{1d4fc}: '𝓼'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_S: char = '𝓼';
-    /// \u{1d4fd}: '𝓽'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_T: char = '𝓽';
-    /// \u{1d4fe}: '𝓾'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_U: char = '𝓾';
-    /// \u{1d4ff}: '𝓿'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_V: char = '𝓿';
-    /// \u{1d500}: '𝔀'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_W: char = '𝔀';
-    /// \u{1d501}: '𝔁'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_X: char = '𝔁';
-    /// \u{1d502}: '𝔂'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_Y: char = '𝔂';
-    /// \u{1d503}: '𝔃'
-    pub const MATHEMATICAL_BOLD_SCRIPT_SMALL_Z: char = '𝔃';
-    /// \u{1d504}: '𝔄'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_A: char = '𝔄';
-    /// \u{1d505}: '𝔅'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_B: char = '𝔅';
-    /// \u{1d507}: '𝔇'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_D: char = '𝔇';
-    /// \u{1d508}: '𝔈'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_E: char = '𝔈';
-    /// \u{1d509}: '𝔉'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_F: char = '𝔉';
-    /// \u{1d50a}: '𝔊'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_G: char = '𝔊';
-    /// \u{1d50d}: '𝔍'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_J: char = '𝔍';
-    /// \u{1d50e}: '𝔎'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_K: char = '𝔎';
-    /// \u{1d50f}: '𝔏'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_L: char = '𝔏';
-    /// \u{1d510}: '𝔐'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_M: char = '𝔐';
-    /// \u{1d511}: '𝔑'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_N: char = '𝔑';
-    /// \u{1d512}: '𝔒'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_O: char = '𝔒';
-    /// \u{1d513}: '𝔓'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_P: char = '𝔓';
-    /// \u{1d514}: '𝔔'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_Q: char = '𝔔';
-    /// \u{1d516}: '𝔖'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_S: char = '𝔖';
-    /// \u{1d517}: '𝔗'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_T: char = '𝔗';
-    /// \u{1d518}: '𝔘'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_U: char = '𝔘';
-    /// \u{1d519}: '𝔙'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_V: char = '𝔙';
-    /// \u{1d51a}: '𝔚'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_W: char = '𝔚';
-    /// \u{1d51b}: '𝔛'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_X: char = '𝔛';
-    /// \u{1d51c}: '𝔜'
-    pub const MATHEMATICAL_FRAKTUR_CAPITAL_Y: char = '𝔜';
-    /// \u{1d51e}: '𝔞'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_A: char = '𝔞';
-    /// \u{1d51f}: '𝔟'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_B: char = '𝔟';
-    /// \u{1d520}: '𝔠'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_C: char = '𝔠';
-    /// \u{1d521}: '𝔡'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_D: char = '𝔡';
-    /// \u{1d522}: '𝔢'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_E: char = '𝔢';
-    /// \u{1d523}: '𝔣'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_F: char = '𝔣';
-    /// \u{1d524}: '𝔤'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_G: char = '𝔤';
-    /// \u{1d525}: '𝔥'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_H: char = '𝔥';
-    /// \u{1d526}: '𝔦'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_I: char = '𝔦';
-    /// \u{1d527}: '𝔧'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_J: char = '𝔧';
-    /// \u{1d528}: '𝔨'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_K: char = '𝔨';
-    /// \u{1d529}: '𝔩'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_L: char = '𝔩';
-    /// \u{1d52a}: '𝔪'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_M: char = '𝔪';
-    /// \u{1d52b}: '𝔫'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_N: char = '𝔫';
-    /// \u{1d52c}: '𝔬'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_O: char = '𝔬';
-    /// \u{1d52d}: '𝔭'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_P: char = '𝔭';
-    /// \u{1d52e}: '𝔮'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_Q: char = '𝔮';
-    /// \u{1d52f}: '𝔯'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_R: char = '𝔯';
-    /// \u{1d530}: '𝔰'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_S: char = '𝔰';
-    /// \u{1d531}: '𝔱'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_T: char = '𝔱';
-    /// \u{1d532}: '𝔲'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_U: char = '𝔲';
-    /// \u{1d533}: '𝔳'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_V: char = '𝔳';
-    /// \u{1d534}: '𝔴'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_W: char = '𝔴';
-    /// \u{1d535}: '𝔵'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_X: char = '𝔵';
-    /// \u{1d536}: '𝔶'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_Y: char = '𝔶';
-    /// \u{1d537}: '𝔷'
-    pub const MATHEMATICAL_FRAKTUR_SMALL_Z: char = '𝔷';
-    /// \u{1d538}: '𝔸'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_A: char = '𝔸';
-    /// \u{1d539}: '𝔹'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_B: char = '𝔹';
-    /// \u{1d53b}: '𝔻'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_D: char = '𝔻';
-    /// \u{1d53c}: '𝔼'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_E: char = '𝔼';
-    /// \u{1d53d}: '𝔽'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_F: char = '𝔽';
-    /// \u{1d53e}: '𝔾'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_G: char = '𝔾';
-    /// \u{1d540}: '𝕀'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_I: char = '𝕀';
-    /// \u{1d541}: '𝕁'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_J: char = '𝕁';
-    /// \u{1d542}: '𝕂'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_K: char = '𝕂';
-    /// \u{1d543}: '𝕃'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_L: char = '𝕃';
-    /// \u{1d544}: '𝕄'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_M: char = '𝕄';
-    /// \u{1d546}: '𝕆'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_O: char = '𝕆';
-    /// \u{1d54a}: '𝕊'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_S: char = '𝕊';
-    /// \u{1d54b}: '𝕋'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_T: char = '𝕋';
-    /// \u{1d54c}: '𝕌'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_U: char = '𝕌';
-    /// \u{1d54d}: '𝕍'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_V: char = '𝕍';
-    /// \u{1d54e}: '𝕎'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_W: char = '𝕎';
-    /// \u{1d54f}: '𝕏'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_X: char = '𝕏';
-    /// \u{1d550}: '𝕐'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_Y: char = '𝕐';
-    /// \u{1d552}: '𝕒'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_A: char = '𝕒';
-    /// \u{1d553}: '𝕓'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_B: char = '𝕓';
-    /// \u{1d554}: '𝕔'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_C: char = '𝕔';
-    /// \u{1d555}: '𝕕'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_D: char = '𝕕';
-    /// \u{1d556}: '𝕖'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_E: char = '𝕖';
-    /// \u{1d557}: '𝕗'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_F: char = '𝕗';
-    /// \u{1d558}: '𝕘'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_G: char = '𝕘';
-    /// \u{1d559}: '𝕙'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_H: char = '𝕙';
-    /// \u{1d55a}: '𝕚'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_I: char = '𝕚';
-    /// \u{1d55b}: '𝕛'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_J: char = '𝕛';
-    /// \u{1d55c}: '𝕜'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_K: char = '𝕜';
-    /// \u{1d55d}: '𝕝'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_L: char = '𝕝';
-    /// \u{1d55e}: '𝕞'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_M: char = '𝕞';
-    /// \u{1d55f}: '𝕟'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_N: char = '𝕟';
-    /// \u{1d560}: '𝕠'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_O: char = '𝕠';
-    /// \u{1d561}: '𝕡'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_P: char = '𝕡';
-    /// \u{1d562}: '𝕢'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_Q: char = '𝕢';
-    /// \u{1d563}: '𝕣'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_R: char = '𝕣';
-    /// \u{1d564}: '𝕤'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_S: char = '𝕤';
-    /// \u{1d565}: '𝕥'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_T: char = '𝕥';
-    /// \u{1d566}: '𝕦'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_U: char = '𝕦';
-    /// \u{1d567}: '𝕧'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_V: char = '𝕧';
-    /// \u{1d568}: '𝕨'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_W: char = '𝕨';
-    /// \u{1d569}: '𝕩'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_X: char = '𝕩';
-    /// \u{1d56a}: '𝕪'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_Y: char = '𝕪';
-    /// \u{1d56b}: '𝕫'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_Z: char = '𝕫';
-    /// \u{1d56c}: '𝕬'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_A: char = '𝕬';
-    /// \u{1d56d}: '𝕭'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_B: char = '𝕭';
-    /// \u{1d56e}: '𝕮'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_C: char = '𝕮';
-    /// \u{1d56f}: '𝕯'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_D: char = '𝕯';
-    /// \u{1d570}: '𝕰'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_E: char = '𝕰';
-    /// \u{1d571}: '𝕱'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_F: char = '𝕱';
-    /// \u{1d572}: '𝕲'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_G: char = '𝕲';
-    /// \u{1d573}: '𝕳'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_H: char = '𝕳';
-    /// \u{1d574}: '𝕴'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_I: char = '𝕴';
-    /// \u{1d575}: '𝕵'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_J: char = '𝕵';
-    /// \u{1d576}: '𝕶'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_K: char = '𝕶';
-    /// \u{1d577}: '𝕷'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_L: char = '𝕷';
-    /// \u{1d578}: '𝕸'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_M: char = '𝕸';
-    /// \u{1d579}: '𝕹'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_N: char = '𝕹';
-    /// \u{1d57a}: '𝕺'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_O: char = '𝕺';
-    /// \u{1d57b}: '𝕻'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_P: char = '𝕻';
-    /// \u{1d57c}: '𝕼'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_Q: char = '𝕼';
-    /// \u{1d57d}: '𝕽'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_R: char = '𝕽';
-    /// \u{1d57e}: '𝕾'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_S: char = '𝕾';
-    /// \u{1d57f}: '𝕿'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_T: char = '𝕿';
-    /// \u{1d580}: '𝖀'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_U: char = '𝖀';
-    /// \u{1d581}: '𝖁'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_V: char = '𝖁';
-    /// \u{1d582}: '𝖂'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_W: char = '𝖂';
-    /// \u{1d583}: '𝖃'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_X: char = '𝖃';
-    /// \u{1d584}: '𝖄'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_Y: char = '𝖄';
-    /// \u{1d585}: '𝖅'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_Z: char = '𝖅';
-    /// \u{1d586}: '𝖆'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_A: char = '𝖆';
-    /// \u{1d587}: '𝖇'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_B: char = '𝖇';
-    /// \u{1d588}: '𝖈'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_C: char = '𝖈';
-    /// \u{1d589}: '𝖉'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_D: char = '𝖉';
-    /// \u{1d58a}: '𝖊'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_E: char = '𝖊';
-    /// \u{1d58b}: '𝖋'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_F: char = '𝖋';
-    /// \u{1d58c}: '𝖌'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_G: char = '𝖌';
-    /// \u{1d58d}: '𝖍'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_H: char = '𝖍';
-    /// \u{1d58e}: '𝖎'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_I: char = '𝖎';
-    /// \u{1d58f}: '𝖏'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_J: char = '𝖏';
-    /// \u{1d590}: '𝖐'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_K: char = '𝖐';
-    /// \u{1d591}: '𝖑'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_L: char = '𝖑';
-    /// \u{1d592}: '𝖒'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_M: char = '𝖒';
-    /// \u{1d593}: '𝖓'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_N: char = '𝖓';
-    /// \u{1d594}: '𝖔'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_O: char = '𝖔';
-    /// \u{1d595}: '𝖕'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_P: char = '𝖕';
-    /// \u{1d596}: '𝖖'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_Q: char = '𝖖';
-    /// \u{1d597}: '𝖗'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_R: char = '𝖗';
-    /// \u{1d598}: '𝖘'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_S: char = '𝖘';
-    /// \u{1d599}: '𝖙'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_T: char = '𝖙';
-    /// \u{1d59a}: '𝖚'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_U: char = '𝖚';
-    /// \u{1d59b}: '𝖛'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_V: char = '𝖛';
-    /// \u{1d59c}: '𝖜'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_W: char = '𝖜';
-    /// \u{1d59d}: '𝖝'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_X: char = '𝖝';
-    /// \u{1d59e}: '𝖞'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_Y: char = '𝖞';
-    /// \u{1d59f}: '𝖟'
-    pub const MATHEMATICAL_BOLD_FRAKTUR_SMALL_Z: char = '𝖟';
-    /// \u{1d5a0}: '𝖠'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_A: char = '𝖠';
-    /// \u{1d5a1}: '𝖡'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_B: char = '𝖡';
-    /// \u{1d5a2}: '𝖢'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_C: char = '𝖢';
-    /// \u{1d5a3}: '𝖣'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_D: char = '𝖣';
-    /// \u{1d5a4}: '𝖤'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_E: char = '𝖤';
-    /// \u{1d5a5}: '𝖥'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_F: char = '𝖥';
-    /// \u{1d5a6}: '𝖦'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_G: char = '𝖦';
-    /// \u{1d5a7}: '𝖧'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_H: char = '𝖧';
-    /// \u{1d5a8}: '𝖨'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_I: char = '𝖨';
-    /// \u{1d5a9}: '𝖩'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_J: char = '𝖩';
-    /// \u{1d5aa}: '𝖪'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_K: char = '𝖪';
-    /// \u{1d5ab}: '𝖫'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_L: char = '𝖫';
-    /// \u{1d5ac}: '𝖬'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_M: char = '𝖬';
-    /// \u{1d5ad}: '𝖭'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_N: char = '𝖭';
-    /// \u{1d5ae}: '𝖮'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_O: char = '𝖮';
-    /// \u{1d5af}: '𝖯'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_P: char = '𝖯';
-    /// \u{1d5b0}: '𝖰'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_Q: char = '𝖰';
-    /// \u{1d5b1}: '𝖱'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_R: char = '𝖱';
-    /// \u{1d5b2}: '𝖲'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_S: char = '𝖲';
-    /// \u{1d5b3}: '𝖳'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_T: char = '𝖳';
-    /// \u{1d5b4}: '𝖴'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_U: char = '𝖴';
-    /// \u{1d5b5}: '𝖵'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_V: char = '𝖵';
-    /// \u{1d5b6}: '𝖶'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_W: char = '𝖶';
-    /// \u{1d5b7}: '𝖷'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_X: char = '𝖷';
-    /// \u{1d5b8}: '𝖸'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_Y: char = '𝖸';
-    /// \u{1d5b9}: '𝖹'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_Z: char = '𝖹';
-    /// \u{1d5ba}: '𝖺'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_A: char = '𝖺';
-    /// \u{1d5bb}: '𝖻'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_B: char = '𝖻';
-    /// \u{1d5bc}: '𝖼'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_C: char = '𝖼';
-    /// \u{1d5bd}: '𝖽'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_D: char = '𝖽';
-    /// \u{1d5be}: '𝖾'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_E: char = '𝖾';
-    /// \u{1d5bf}: '𝖿'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_F: char = '𝖿';
-    /// \u{1d5c0}: '𝗀'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_G: char = '𝗀';
-    /// \u{1d5c1}: '𝗁'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_H: char = '𝗁';
-    /// \u{1d5c2}: '𝗂'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_I: char = '𝗂';
-    /// \u{1d5c3}: '𝗃'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_J: char = '𝗃';
-    /// \u{1d5c4}: '𝗄'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_K: char = '𝗄';
-    /// \u{1d5c5}: '𝗅'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_L: char = '𝗅';
-    /// \u{1d5c6}: '𝗆'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_M: char = '𝗆';
-    /// \u{1d5c7}: '𝗇'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_N: char = '𝗇';
-    /// \u{1d5c8}: '𝗈'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_O: char = '𝗈';
-    /// \u{1d5c9}: '𝗉'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_P: char = '𝗉';
-    /// \u{1d5ca}: '𝗊'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_Q: char = '𝗊';
-    /// \u{1d5cb}: '𝗋'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_R: char = '𝗋';
-    /// \u{1d5cc}: '𝗌'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_S: char = '𝗌';
-    /// \u{1d5cd}: '𝗍'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_T: char = '𝗍';
-    /// \u{1d5ce}: '𝗎'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_U: char = '𝗎';
-    /// \u{1d5cf}: '𝗏'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_V: char = '𝗏';
-    /// \u{1d5d0}: '𝗐'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_W: char = '𝗐';
-    /// \u{1d5d1}: '𝗑'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_X: char = '𝗑';
-    /// \u{1d5d2}: '𝗒'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_Y: char = '𝗒';
-    /// \u{1d5d3}: '𝗓'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_SMALL_Z: char = '𝗓';
-    /// \u{1d5d4}: '𝗔'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_A: char = '𝗔';
-    /// \u{1d5d5}: '𝗕'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_B: char = '𝗕';
-    /// \u{1d5d6}: '𝗖'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_C: char = '𝗖';
-    /// \u{1d5d7}: '𝗗'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_D: char = '𝗗';
-    /// \u{1d5d8}: '𝗘'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_E: char = '𝗘';
-    /// \u{1d5d9}: '𝗙'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_F: char = '𝗙';
-    /// \u{1d5da}: '𝗚'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_G: char = '𝗚';
-    /// \u{1d5db}: '𝗛'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_H: char = '𝗛';
-    /// \u{1d5dc}: '𝗜'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_I: char = '𝗜';
-    /// \u{1d5dd}: '𝗝'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_J: char = '𝗝';
-    /// \u{1d5de}: '𝗞'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_K: char = '𝗞';
-    /// \u{1d5df}: '𝗟'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_L: char = '𝗟';
-    /// \u{1d5e0}: '𝗠'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_M: char = '𝗠';
-    /// \u{1d5e1}: '𝗡'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_N: char = '𝗡';
-    /// \u{1d5e2}: '𝗢'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_O: char = '𝗢';
-    /// \u{1d5e3}: '𝗣'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_P: char = '𝗣';
-    /// \u{1d5e4}: '𝗤'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_Q: char = '𝗤';
-    /// \u{1d5e5}: '𝗥'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_R: char = '𝗥';
-    /// \u{1d5e6}: '𝗦'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_S: char = '𝗦';
-    /// \u{1d5e7}: '𝗧'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_T: char = '𝗧';
-    /// \u{1d5e8}: '𝗨'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_U: char = '𝗨';
-    /// \u{1d5e9}: '𝗩'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_V: char = '𝗩';
-    /// \u{1d5ea}: '𝗪'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_W: char = '𝗪';
-    /// \u{1d5eb}: '𝗫'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_X: char = '𝗫';
-    /// \u{1d5ec}: '𝗬'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_Y: char = '𝗬';
-    /// \u{1d5ed}: '𝗭'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_Z: char = '𝗭';
-    /// \u{1d5ee}: '𝗮'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_A: char = '𝗮';
-    /// \u{1d5ef}: '𝗯'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_B: char = '𝗯';
-    /// \u{1d5f0}: '𝗰'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_C: char = '𝗰';
-    /// \u{1d5f1}: '𝗱'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_D: char = '𝗱';
-    /// \u{1d5f2}: '𝗲'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_E: char = '𝗲';
-    /// \u{1d5f3}: '𝗳'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_F: char = '𝗳';
-    /// \u{1d5f4}: '𝗴'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_G: char = '𝗴';
-    /// \u{1d5f5}: '𝗵'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_H: char = '𝗵';
-    /// \u{1d5f6}: '𝗶'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_I: char = '𝗶';
-    /// \u{1d5f7}: '𝗷'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_J: char = '𝗷';
-    /// \u{1d5f8}: '𝗸'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_K: char = '𝗸';
-    /// \u{1d5f9}: '𝗹'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_L: char = '𝗹';
-    /// \u{1d5fa}: '𝗺'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_M: char = '𝗺';
-    /// \u{1d5fb}: '𝗻'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_N: char = '𝗻';
-    /// \u{1d5fc}: '𝗼'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_O: char = '𝗼';
-    /// \u{1d5fd}: '𝗽'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_P: char = '𝗽';
-    /// \u{1d5fe}: '𝗾'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_Q: char = '𝗾';
-    /// \u{1d5ff}: '𝗿'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_R: char = '𝗿';
-    /// \u{1d600}: '𝘀'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_S: char = '𝘀';
-    /// \u{1d601}: '𝘁'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_T: char = '𝘁';
-    /// \u{1d602}: '𝘂'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_U: char = '𝘂';
-    /// \u{1d603}: '𝘃'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_V: char = '𝘃';
-    /// \u{1d604}: '𝘄'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_W: char = '𝘄';
-    /// \u{1d605}: '𝘅'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_X: char = '𝘅';
-    /// \u{1d606}: '𝘆'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_Y: char = '𝘆';
-    /// \u{1d607}: '𝘇'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_Z: char = '𝘇';
-    /// \u{1d608}: '𝘈'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_A: char = '𝘈';
-    /// \u{1d609}: '𝘉'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_B: char = '𝘉';
-    /// \u{1d60a}: '𝘊'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_C: char = '𝘊';
-    /// \u{1d60b}: '𝘋'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_D: char = '𝘋';
-    /// \u{1d60c}: '𝘌'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_E: char = '𝘌';
-    /// \u{1d60d}: '𝘍'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_F: char = '𝘍';
-    /// \u{1d60e}: '𝘎'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_G: char = '𝘎';
-    /// \u{1d60f}: '𝘏'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_H: char = '𝘏';
-    /// \u{1d610}: '𝘐'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_I: char = '𝘐';
-    /// \u{1d611}: '𝘑'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_J: char = '𝘑';
-    /// \u{1d612}: '𝘒'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_K: char = '𝘒';
-    /// \u{1d613}: '𝘓'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_L: char = '𝘓';
-    /// \u{1d614}: '𝘔'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_M: char = '𝘔';
-    /// \u{1d615}: '𝘕'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_N: char = '𝘕';
-    /// \u{1d616}: '𝘖'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_O: char = '𝘖';
-    /// \u{1d617}: '𝘗'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_P: char = '𝘗';
-    /// \u{1d618}: '𝘘'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_Q: char = '𝘘';
-    /// \u{1d619}: '𝘙'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_R: char = '𝘙';
-    /// \u{1d61a}: '𝘚'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_S: char = '𝘚';
-    /// \u{1d61b}: '𝘛'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_T: char = '𝘛';
-    /// \u{1d61c}: '𝘜'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_U: char = '𝘜';
-    /// \u{1d61d}: '𝘝'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_V: char = '𝘝';
-    /// \u{1d61e}: '𝘞'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_W: char = '𝘞';
-    /// \u{1d61f}: '𝘟'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_X: char = '𝘟';
-    /// \u{1d620}: '𝘠'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_Y: char = '𝘠';
-    /// \u{1d621}: '𝘡'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_Z: char = '𝘡';
-    /// \u{1d622}: '𝘢'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_A: char = '𝘢';
-    /// \u{1d623}: '𝘣'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_B: char = '𝘣';
-    /// \u{1d624}: '𝘤'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_C: char = '𝘤';
-    /// \u{1d625}: '𝘥'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_D: char = '𝘥';
-    /// \u{1d626}: '𝘦'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_E: char = '𝘦';
-    /// \u{1d627}: '𝘧'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_F: char = '𝘧';
-    /// \u{1d628}: '𝘨'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_G: char = '𝘨';
-    /// \u{1d629}: '𝘩'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_H: char = '𝘩';
-    /// \u{1d62a}: '𝘪'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_I: char = '𝘪';
-    /// \u{1d62b}: '𝘫'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_J: char = '𝘫';
-    /// \u{1d62c}: '𝘬'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_K: char = '𝘬';
-    /// \u{1d62d}: '𝘭'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_L: char = '𝘭';
-    /// \u{1d62e}: '𝘮'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_M: char = '𝘮';
-    /// \u{1d62f}: '𝘯'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_N: char = '𝘯';
-    /// \u{1d630}: '𝘰'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_O: char = '𝘰';
-    /// \u{1d631}: '𝘱'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_P: char = '𝘱';
-    /// \u{1d632}: '𝘲'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_Q: char = '𝘲';
-    /// \u{1d633}: '𝘳'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_R: char = '𝘳';
-    /// \u{1d634}: '𝘴'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_S: char = '𝘴';
-    /// \u{1d635}: '𝘵'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_T: char = '𝘵';
-    /// \u{1d636}: '𝘶'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_U: char = '𝘶';
-    /// \u{1d637}: '𝘷'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_V: char = '𝘷';
-    /// \u{1d638}: '𝘸'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_W: char = '𝘸';
-    /// \u{1d639}: '𝘹'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_X: char = '𝘹';
-    /// \u{1d63a}: '𝘺'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_Y: char = '𝘺';
-    /// \u{1d63b}: '𝘻'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_Z: char = '𝘻';
-    /// \u{1d63c}: '𝘼'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_A: char = '𝘼';
-    /// \u{1d63d}: '𝘽'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_B: char = '𝘽';
-    /// \u{1d63e}: '𝘾'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_C: char = '𝘾';
-    /// \u{1d63f}: '𝘿'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_D: char = '𝘿';
-    /// \u{1d640}: '𝙀'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_E: char = '𝙀';
-    /// \u{1d641}: '𝙁'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_F: char = '𝙁';
-    /// \u{1d642}: '𝙂'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_G: char = '𝙂';
-    /// \u{1d643}: '𝙃'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_H: char = '𝙃';
-    /// \u{1d644}: '𝙄'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_I: char = '𝙄';
-    /// \u{1d645}: '𝙅'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_J: char = '𝙅';
-    /// \u{1d646}: '𝙆'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_K: char = '𝙆';
-    /// \u{1d647}: '𝙇'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_L: char = '𝙇';
-    /// \u{1d648}: '𝙈'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_M: char = '𝙈';
-    /// \u{1d649}: '𝙉'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_N: char = '𝙉';
-    /// \u{1d64a}: '𝙊'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_O: char = '𝙊';
-    /// \u{1d64b}: '𝙋'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_P: char = '𝙋';
-    /// \u{1d64c}: '𝙌'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_Q: char = '𝙌';
-    /// \u{1d64d}: '𝙍'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_R: char = '𝙍';
-    /// \u{1d64e}: '𝙎'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_S: char = '𝙎';
-    /// \u{1d64f}: '𝙏'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_T: char = '𝙏';
-    /// \u{1d650}: '𝙐'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_U: char = '𝙐';
-    /// \u{1d651}: '𝙑'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_V: char = '𝙑';
-    /// \u{1d652}: '𝙒'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_W: char = '𝙒';
-    /// \u{1d653}: '𝙓'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_X: char = '𝙓';
-    /// \u{1d654}: '𝙔'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_Y: char = '𝙔';
-    /// \u{1d655}: '𝙕'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_Z: char = '𝙕';
-    /// \u{1d656}: '𝙖'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_A: char = '𝙖';
-    /// \u{1d657}: '𝙗'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_B: char = '𝙗';
-    /// \u{1d658}: '𝙘'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_C: char = '𝙘';
-    /// \u{1d659}: '𝙙'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_D: char = '𝙙';
-    /// \u{1d65a}: '𝙚'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_E: char = '𝙚';
-    /// \u{1d65b}: '𝙛'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_F: char = '𝙛';
-    /// \u{1d65c}: '𝙜'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_G: char = '𝙜';
-    /// \u{1d65d}: '𝙝'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_H: char = '𝙝';
-    /// \u{1d65e}: '𝙞'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_I: char = '𝙞';
-    /// \u{1d65f}: '𝙟'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_J: char = '𝙟';
-    /// \u{1d660}: '𝙠'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_K: char = '𝙠';
-    /// \u{1d661}: '𝙡'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_L: char = '𝙡';
-    /// \u{1d662}: '𝙢'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_M: char = '𝙢';
-    /// \u{1d663}: '𝙣'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_N: char = '𝙣';
-    /// \u{1d664}: '𝙤'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_O: char = '𝙤';
-    /// \u{1d665}: '𝙥'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_P: char = '𝙥';
-    /// \u{1d666}: '𝙦'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_Q: char = '𝙦';
-    /// \u{1d667}: '𝙧'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_R: char = '𝙧';
-    /// \u{1d668}: '𝙨'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_S: char = '𝙨';
-    /// \u{1d669}: '𝙩'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_T: char = '𝙩';
-    /// \u{1d66a}: '𝙪'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_U: char = '𝙪';
-    /// \u{1d66b}: '𝙫'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_V: char = '𝙫';
-    /// \u{1d66c}: '𝙬'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_W: char = '𝙬';
-    /// \u{1d66d}: '𝙭'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_X: char = '𝙭';
-    /// \u{1d66e}: '𝙮'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_Y: char = '𝙮';
-    /// \u{1d66f}: '𝙯'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_Z: char = '𝙯';
-    /// \u{1d670}: '𝙰'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_A: char = '𝙰';
-    /// \u{1d671}: '𝙱'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_B: char = '𝙱';
-    /// \u{1d672}: '𝙲'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_C: char = '𝙲';
-    /// \u{1d673}: '𝙳'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_D: char = '𝙳';
-    /// \u{1d674}: '𝙴'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_E: char = '𝙴';
-    /// \u{1d675}: '𝙵'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_F: char = '𝙵';
-    /// \u{1d676}: '𝙶'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_G: char = '𝙶';
-    /// \u{1d677}: '𝙷'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_H: char = '𝙷';
-    /// \u{1d678}: '𝙸'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_I: char = '𝙸';
-    /// \u{1d679}: '𝙹'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_J: char = '𝙹';
-    /// \u{1d67a}: '𝙺'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_K: char = '𝙺';
-    /// \u{1d67b}: '𝙻'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_L: char = '𝙻';
-    /// \u{1d67c}: '𝙼'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_M: char = '𝙼';
-    /// \u{1d67d}: '𝙽'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_N: char = '𝙽';
-    /// \u{1d67e}: '𝙾'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_O: char = '𝙾';
-    /// \u{1d67f}: '𝙿'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_P: char = '𝙿';
-    /// \u{1d680}: '𝚀'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_Q: char = '𝚀';
-    /// \u{1d681}: '𝚁'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_R: char = '𝚁';
-    /// \u{1d682}: '𝚂'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_S: char = '𝚂';
-    /// \u{1d683}: '𝚃'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_T: char = '𝚃';
-    /// \u{1d684}: '𝚄'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_U: char = '𝚄';
-    /// \u{1d685}: '𝚅'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_V: char = '𝚅';
-    /// \u{1d686}: '𝚆'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_W: char = '𝚆';
-    /// \u{1d687}: '𝚇'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_X: char = '𝚇';
-    /// \u{1d688}: '𝚈'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_Y: char = '𝚈';
-    /// \u{1d689}: '𝚉'
-    pub const MATHEMATICAL_MONOSPACE_CAPITAL_Z: char = '𝚉';
-    /// \u{1d68a}: '𝚊'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_A: char = '𝚊';
-    /// \u{1d68b}: '𝚋'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_B: char = '𝚋';
-    /// \u{1d68c}: '𝚌'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_C: char = '𝚌';
-    /// \u{1d68d}: '𝚍'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_D: char = '𝚍';
-    /// \u{1d68e}: '𝚎'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_E: char = '𝚎';
-    /// \u{1d68f}: '𝚏'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_F: char = '𝚏';
-    /// \u{1d690}: '𝚐'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_G: char = '𝚐';
-    /// \u{1d691}: '𝚑'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_H: char = '𝚑';
-    /// \u{1d692}: '𝚒'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_I: char = '𝚒';
-    /// \u{1d693}: '𝚓'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_J: char = '𝚓';
-    /// \u{1d694}: '𝚔'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_K: char = '𝚔';
-    /// \u{1d695}: '𝚕'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_L: char = '𝚕';
-    /// \u{1d696}: '𝚖'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_M: char = '𝚖';
-    /// \u{1d697}: '𝚗'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_N: char = '𝚗';
-    /// \u{1d698}: '𝚘'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_O: char = '𝚘';
-    /// \u{1d699}: '𝚙'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_P: char = '𝚙';
-    /// \u{1d69a}: '𝚚'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_Q: char = '𝚚';
-    /// \u{1d69b}: '𝚛'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_R: char = '𝚛';
-    /// \u{1d69c}: '𝚜'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_S: char = '𝚜';
-    /// \u{1d69d}: '𝚝'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_T: char = '𝚝';
-    /// \u{1d69e}: '𝚞'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_U: char = '𝚞';
-    /// \u{1d69f}: '𝚟'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_V: char = '𝚟';
-    /// \u{1d6a0}: '𝚠'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_W: char = '𝚠';
-    /// \u{1d6a1}: '𝚡'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_X: char = '𝚡';
-    /// \u{1d6a2}: '𝚢'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_Y: char = '𝚢';
-    /// \u{1d6a3}: '𝚣'
-    pub const MATHEMATICAL_MONOSPACE_SMALL_Z: char = '𝚣';
-    /// \u{1d6a4}: '𝚤'
-    pub const MATHEMATICAL_ITALIC_SMALL_DOTLESS_I: char = '𝚤';
-    /// \u{1d6a5}: '𝚥'
-    pub const MATHEMATICAL_ITALIC_SMALL_DOTLESS_J: char = '𝚥';
-    /// \u{1d6a8}: '𝚨'
-    pub const MATHEMATICAL_BOLD_CAPITAL_ALPHA: char = '𝚨';
-    /// \u{1d6a9}: '𝚩'
-    pub const MATHEMATICAL_BOLD_CAPITAL_BETA: char = '𝚩';
-    /// \u{1d6aa}: '𝚪'
-    pub const MATHEMATICAL_BOLD_CAPITAL_GAMMA: char = '𝚪';
-    /// \u{1d6ab}: '𝚫'
-    pub const MATHEMATICAL_BOLD_CAPITAL_DELTA: char = '𝚫';
-    /// \u{1d6ac}: '𝚬'
-    pub const MATHEMATICAL_BOLD_CAPITAL_EPSILON: char = '𝚬';
-    /// \u{1d6ad}: '𝚭'
-    pub const MATHEMATICAL_BOLD_CAPITAL_ZETA: char = '𝚭';
-    /// \u{1d6ae}: '𝚮'
-    pub const MATHEMATICAL_BOLD_CAPITAL_ETA: char = '𝚮';
-    /// \u{1d6af}: '𝚯'
-    pub const MATHEMATICAL_BOLD_CAPITAL_THETA: char = '𝚯';
-    /// \u{1d6b0}: '𝚰'
-    pub const MATHEMATICAL_BOLD_CAPITAL_IOTA: char = '𝚰';
-    /// \u{1d6b1}: '𝚱'
-    pub const MATHEMATICAL_BOLD_CAPITAL_KAPPA: char = '𝚱';
-    /// \u{1d6b2}: '𝚲'
-    pub const MATHEMATICAL_BOLD_CAPITAL_LAMDA: char = '𝚲';
-    /// \u{1d6b3}: '𝚳'
-    pub const MATHEMATICAL_BOLD_CAPITAL_MU: char = '𝚳';
-    /// \u{1d6b4}: '𝚴'
-    pub const MATHEMATICAL_BOLD_CAPITAL_NU: char = '𝚴';
-    /// \u{1d6b5}: '𝚵'
-    pub const MATHEMATICAL_BOLD_CAPITAL_XI: char = '𝚵';
-    /// \u{1d6b6}: '𝚶'
-    pub const MATHEMATICAL_BOLD_CAPITAL_OMICRON: char = '𝚶';
-    /// \u{1d6b7}: '𝚷'
-    pub const MATHEMATICAL_BOLD_CAPITAL_PI: char = '𝚷';
-    /// \u{1d6b8}: '𝚸'
-    pub const MATHEMATICAL_BOLD_CAPITAL_RHO: char = '𝚸';
-    /// \u{1d6b9}: '𝚹'
-    pub const MATHEMATICAL_BOLD_CAPITAL_THETA_SYMBOL: char = '𝚹';
-    /// \u{1d6ba}: '𝚺'
-    pub const MATHEMATICAL_BOLD_CAPITAL_SIGMA: char = '𝚺';
-    /// \u{1d6bb}: '𝚻'
-    pub const MATHEMATICAL_BOLD_CAPITAL_TAU: char = '𝚻';
-    /// \u{1d6bc}: '𝚼'
-    pub const MATHEMATICAL_BOLD_CAPITAL_UPSILON: char = '𝚼';
-    /// \u{1d6bd}: '𝚽'
-    pub const MATHEMATICAL_BOLD_CAPITAL_PHI: char = '𝚽';
-    /// \u{1d6be}: '𝚾'
-    pub const MATHEMATICAL_BOLD_CAPITAL_CHI: char = '𝚾';
-    /// \u{1d6bf}: '𝚿'
-    pub const MATHEMATICAL_BOLD_CAPITAL_PSI: char = '𝚿';
-    /// \u{1d6c0}: '𝛀'
-    pub const MATHEMATICAL_BOLD_CAPITAL_OMEGA: char = '𝛀';
-    /// \u{1d6c1}: '𝛁'
-    pub const MATHEMATICAL_BOLD_NABLA: char = '𝛁';
-    /// \u{1d6c2}: '𝛂'
-    pub const MATHEMATICAL_BOLD_SMALL_ALPHA: char = '𝛂';
-    /// \u{1d6c3}: '𝛃'
-    pub const MATHEMATICAL_BOLD_SMALL_BETA: char = '𝛃';
-    /// \u{1d6c4}: '𝛄'
-    pub const MATHEMATICAL_BOLD_SMALL_GAMMA: char = '𝛄';
-    /// \u{1d6c5}: '𝛅'
-    pub const MATHEMATICAL_BOLD_SMALL_DELTA: char = '𝛅';
-    /// \u{1d6c6}: '𝛆'
-    pub const MATHEMATICAL_BOLD_SMALL_EPSILON: char = '𝛆';
-    /// \u{1d6c7}: '𝛇'
-    pub const MATHEMATICAL_BOLD_SMALL_ZETA: char = '𝛇';
-    /// \u{1d6c8}: '𝛈'
-    pub const MATHEMATICAL_BOLD_SMALL_ETA: char = '𝛈';
-    /// \u{1d6c9}: '𝛉'
-    pub const MATHEMATICAL_BOLD_SMALL_THETA: char = '𝛉';
-    /// \u{1d6ca}: '𝛊'
-    pub const MATHEMATICAL_BOLD_SMALL_IOTA: char = '𝛊';
-    /// \u{1d6cb}: '𝛋'
-    pub const MATHEMATICAL_BOLD_SMALL_KAPPA: char = '𝛋';
-    /// \u{1d6cc}: '𝛌'
-    pub const MATHEMATICAL_BOLD_SMALL_LAMDA: char = '𝛌';
-    /// \u{1d6cd}: '𝛍'
-    pub const MATHEMATICAL_BOLD_SMALL_MU: char = '𝛍';
-    /// \u{1d6ce}: '𝛎'
-    pub const MATHEMATICAL_BOLD_SMALL_NU: char = '𝛎';
-    /// \u{1d6cf}: '𝛏'
-    pub const MATHEMATICAL_BOLD_SMALL_XI: char = '𝛏';
-    /// \u{1d6d0}: '𝛐'
-    pub const MATHEMATICAL_BOLD_SMALL_OMICRON: char = '𝛐';
-    /// \u{1d6d1}: '𝛑'
-    pub const MATHEMATICAL_BOLD_SMALL_PI: char = '𝛑';
-    /// \u{1d6d2}: '𝛒'
-    pub const MATHEMATICAL_BOLD_SMALL_RHO: char = '𝛒';
-    /// \u{1d6d3}: '𝛓'
-    pub const MATHEMATICAL_BOLD_SMALL_FINAL_SIGMA: char = '𝛓';
-    /// \u{1d6d4}: '𝛔'
-    pub const MATHEMATICAL_BOLD_SMALL_SIGMA: char = '𝛔';
-    /// \u{1d6d5}: '𝛕'
-    pub const MATHEMATICAL_BOLD_SMALL_TAU: char = '𝛕';
-    /// \u{1d6d6}: '𝛖'
-    pub const MATHEMATICAL_BOLD_SMALL_UPSILON: char = '𝛖';
-    /// \u{1d6d7}: '𝛗'
-    pub const MATHEMATICAL_BOLD_SMALL_PHI: char = '𝛗';
-    /// \u{1d6d8}: '𝛘'
-    pub const MATHEMATICAL_BOLD_SMALL_CHI: char = '𝛘';
-    /// \u{1d6d9}: '𝛙'
-    pub const MATHEMATICAL_BOLD_SMALL_PSI: char = '𝛙';
-    /// \u{1d6da}: '𝛚'
-    pub const MATHEMATICAL_BOLD_SMALL_OMEGA: char = '𝛚';
-    /// \u{1d6db}: '𝛛'
-    pub const MATHEMATICAL_BOLD_PARTIAL_DIFFERENTIAL: char = '𝛛';
-    /// \u{1d6dc}: '𝛜'
-    pub const MATHEMATICAL_BOLD_EPSILON_SYMBOL: char = '𝛜';
-    /// \u{1d6dd}: '𝛝'
-    pub const MATHEMATICAL_BOLD_THETA_SYMBOL: char = '𝛝';
-    /// \u{1d6de}: '𝛞'
-    pub const MATHEMATICAL_BOLD_KAPPA_SYMBOL: char = '𝛞';
-    /// \u{1d6df}: '𝛟'
-    pub const MATHEMATICAL_BOLD_PHI_SYMBOL: char = '𝛟';
-    /// \u{1d6e0}: '𝛠'
-    pub const MATHEMATICAL_BOLD_RHO_SYMBOL: char = '𝛠';
-    /// \u{1d6e1}: '𝛡'
-    pub const MATHEMATICAL_BOLD_PI_SYMBOL: char = '𝛡';
-    /// \u{1d6e2}: '𝛢'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_ALPHA: char = '𝛢';
-    /// \u{1d6e3}: '𝛣'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_BETA: char = '𝛣';
-    /// \u{1d6e4}: '𝛤'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_GAMMA: char = '𝛤';
-    /// \u{1d6e5}: '𝛥'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_DELTA: char = '𝛥';
-    /// \u{1d6e6}: '𝛦'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_EPSILON: char = '𝛦';
-    /// \u{1d6e7}: '𝛧'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_ZETA: char = '𝛧';
-    /// \u{1d6e8}: '𝛨'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_ETA: char = '𝛨';
-    /// \u{1d6e9}: '𝛩'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_THETA: char = '𝛩';
-    /// \u{1d6ea}: '𝛪'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_IOTA: char = '𝛪';
-    /// \u{1d6eb}: '𝛫'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_KAPPA: char = '𝛫';
-    /// \u{1d6ec}: '𝛬'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_LAMDA: char = '𝛬';
-    /// \u{1d6ed}: '𝛭'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_MU: char = '𝛭';
-    /// \u{1d6ee}: '𝛮'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_NU: char = '𝛮';
-    /// \u{1d6ef}: '𝛯'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_XI: char = '𝛯';
-    /// \u{1d6f0}: '𝛰'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_OMICRON: char = '𝛰';
-    /// \u{1d6f1}: '𝛱'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_PI: char = '𝛱';
-    /// \u{1d6f2}: '𝛲'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_RHO: char = '𝛲';
-    /// \u{1d6f3}: '𝛳'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_THETA_SYMBOL: char = '𝛳';
-    /// \u{1d6f4}: '𝛴'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_SIGMA: char = '𝛴';
-    /// \u{1d6f5}: '𝛵'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_TAU: char = '𝛵';
-    /// \u{1d6f6}: '𝛶'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_UPSILON: char = '𝛶';
-    /// \u{1d6f7}: '𝛷'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_PHI: char = '𝛷';
-    /// \u{1d6f8}: '𝛸'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_CHI: char = '𝛸';
-    /// \u{1d6f9}: '𝛹'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_PSI: char = '𝛹';
-    /// \u{1d6fa}: '𝛺'
-    pub const MATHEMATICAL_ITALIC_CAPITAL_OMEGA: char = '𝛺';
-    /// \u{1d6fb}: '𝛻'
-    pub const MATHEMATICAL_ITALIC_NABLA: char = '𝛻';
-    /// \u{1d6fc}: '𝛼'
-    pub const MATHEMATICAL_ITALIC_SMALL_ALPHA: char = '𝛼';
-    /// \u{1d6fd}: '𝛽'
-    pub const MATHEMATICAL_ITALIC_SMALL_BETA: char = '𝛽';
-    /// \u{1d6fe}: '𝛾'
-    pub const MATHEMATICAL_ITALIC_SMALL_GAMMA: char = '𝛾';
-    /// \u{1d6ff}: '𝛿'
-    pub const MATHEMATICAL_ITALIC_SMALL_DELTA: char = '𝛿';
-    /// \u{1d700}: '𝜀'
-    pub const MATHEMATICAL_ITALIC_SMALL_EPSILON: char = '𝜀';
-    /// \u{1d701}: '𝜁'
-    pub const MATHEMATICAL_ITALIC_SMALL_ZETA: char = '𝜁';
-    /// \u{1d702}: '𝜂'
-    pub const MATHEMATICAL_ITALIC_SMALL_ETA: char = '𝜂';
-    /// \u{1d703}: '𝜃'
-    pub const MATHEMATICAL_ITALIC_SMALL_THETA: char = '𝜃';
-    /// \u{1d704}: '𝜄'
-    pub const MATHEMATICAL_ITALIC_SMALL_IOTA: char = '𝜄';
-    /// \u{1d705}: '𝜅'
-    pub const MATHEMATICAL_ITALIC_SMALL_KAPPA: char = '𝜅';
-    /// \u{1d706}: '𝜆'
-    pub const MATHEMATICAL_ITALIC_SMALL_LAMDA: char = '𝜆';
-    /// \u{1d707}: '𝜇'
-    pub const MATHEMATICAL_ITALIC_SMALL_MU: char = '𝜇';
-    /// \u{1d708}: '𝜈'
-    pub const MATHEMATICAL_ITALIC_SMALL_NU: char = '𝜈';
-    /// \u{1d709}: '𝜉'
-    pub const MATHEMATICAL_ITALIC_SMALL_XI: char = '𝜉';
-    /// \u{1d70a}: '𝜊'
-    pub const MATHEMATICAL_ITALIC_SMALL_OMICRON: char = '𝜊';
-    /// \u{1d70b}: '𝜋'
-    pub const MATHEMATICAL_ITALIC_SMALL_PI: char = '𝜋';
-    /// \u{1d70c}: '𝜌'
-    pub const MATHEMATICAL_ITALIC_SMALL_RHO: char = '𝜌';
-    /// \u{1d70d}: '𝜍'
-    pub const MATHEMATICAL_ITALIC_SMALL_FINAL_SIGMA: char = '𝜍';
-    /// \u{1d70e}: '𝜎'
-    pub const MATHEMATICAL_ITALIC_SMALL_SIGMA: char = '𝜎';
-    /// \u{1d70f}: '𝜏'
-    pub const MATHEMATICAL_ITALIC_SMALL_TAU: char = '𝜏';
-    /// \u{1d710}: '𝜐'
-    pub const MATHEMATICAL_ITALIC_SMALL_UPSILON: char = '𝜐';
-    /// \u{1d711}: '𝜑'
-    pub const MATHEMATICAL_ITALIC_SMALL_PHI: char = '𝜑';
-    /// \u{1d712}: '𝜒'
-    pub const MATHEMATICAL_ITALIC_SMALL_CHI: char = '𝜒';
-    /// \u{1d713}: '𝜓'
-    pub const MATHEMATICAL_ITALIC_SMALL_PSI: char = '𝜓';
-    /// \u{1d714}: '𝜔'
-    pub const MATHEMATICAL_ITALIC_SMALL_OMEGA: char = '𝜔';
-    /// \u{1d715}: '𝜕'
-    pub const MATHEMATICAL_ITALIC_PARTIAL_DIFFERENTIAL: char = '𝜕';
-    /// \u{1d716}: '𝜖'
-    pub const MATHEMATICAL_ITALIC_EPSILON_SYMBOL: char = '𝜖';
-    /// \u{1d717}: '𝜗'
-    pub const MATHEMATICAL_ITALIC_THETA_SYMBOL: char = '𝜗';
-    /// \u{1d718}: '𝜘'
-    pub const MATHEMATICAL_ITALIC_KAPPA_SYMBOL: char = '𝜘';
-    /// \u{1d719}: '𝜙'
-    pub const MATHEMATICAL_ITALIC_PHI_SYMBOL: char = '𝜙';
-    /// \u{1d71a}: '𝜚'
-    pub const MATHEMATICAL_ITALIC_RHO_SYMBOL: char = '𝜚';
-    /// \u{1d71b}: '𝜛'
-    pub const MATHEMATICAL_ITALIC_PI_SYMBOL: char = '𝜛';
-    /// \u{1d71c}: '𝜜'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_ALPHA: char = '𝜜';
-    /// \u{1d71d}: '𝜝'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_BETA: char = '𝜝';
-    /// \u{1d71e}: '𝜞'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_GAMMA: char = '𝜞';
-    /// \u{1d71f}: '𝜟'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_DELTA: char = '𝜟';
-    /// \u{1d720}: '𝜠'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_EPSILON: char = '𝜠';
-    /// \u{1d721}: '𝜡'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_ZETA: char = '𝜡';
-    /// \u{1d722}: '𝜢'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_ETA: char = '𝜢';
-    /// \u{1d723}: '𝜣'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_THETA: char = '𝜣';
-    /// \u{1d724}: '𝜤'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_IOTA: char = '𝜤';
-    /// \u{1d725}: '𝜥'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_KAPPA: char = '𝜥';
-    /// \u{1d726}: '𝜦'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_LAMDA: char = '𝜦';
-    /// \u{1d727}: '𝜧'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_MU: char = '𝜧';
-    /// \u{1d728}: '𝜨'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_NU: char = '𝜨';
-    /// \u{1d729}: '𝜩'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_XI: char = '𝜩';
-    /// \u{1d72a}: '𝜪'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_OMICRON: char = '𝜪';
-    /// \u{1d72b}: '𝜫'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_PI: char = '𝜫';
-    /// \u{1d72c}: '𝜬'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_RHO: char = '𝜬';
-    /// \u{1d72d}: '𝜭'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_THETA_SYMBOL: char = '𝜭';
-    /// \u{1d72e}: '𝜮'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_SIGMA: char = '𝜮';
-    /// \u{1d72f}: '𝜯'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_TAU: char = '𝜯';
-    /// \u{1d730}: '𝜰'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_UPSILON: char = '𝜰';
-    /// \u{1d731}: '𝜱'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_PHI: char = '𝜱';
-    /// \u{1d732}: '𝜲'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_CHI: char = '𝜲';
-    /// \u{1d733}: '𝜳'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_PSI: char = '𝜳';
-    /// \u{1d734}: '𝜴'
-    pub const MATHEMATICAL_BOLD_ITALIC_CAPITAL_OMEGA: char = '𝜴';
-    /// \u{1d735}: '𝜵'
-    pub const MATHEMATICAL_BOLD_ITALIC_NABLA: char = '𝜵';
-    /// \u{1d736}: '𝜶'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_ALPHA: char = '𝜶';
-    /// \u{1d737}: '𝜷'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_BETA: char = '𝜷';
-    /// \u{1d738}: '𝜸'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_GAMMA: char = '𝜸';
-    /// \u{1d739}: '𝜹'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_DELTA: char = '𝜹';
-    /// \u{1d73a}: '𝜺'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_EPSILON: char = '𝜺';
-    /// \u{1d73b}: '𝜻'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_ZETA: char = '𝜻';
-    /// \u{1d73c}: '𝜼'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_ETA: char = '𝜼';
-    /// \u{1d73d}: '𝜽'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_THETA: char = '𝜽';
-    /// \u{1d73e}: '𝜾'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_IOTA: char = '𝜾';
-    /// \u{1d73f}: '𝜿'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_KAPPA: char = '𝜿';
-    /// \u{1d740}: '𝝀'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_LAMDA: char = '𝝀';
-    /// \u{1d741}: '𝝁'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_MU: char = '𝝁';
-    /// \u{1d742}: '𝝂'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_NU: char = '𝝂';
-    /// \u{1d743}: '𝝃'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_XI: char = '𝝃';
-    /// \u{1d744}: '𝝄'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_OMICRON: char = '𝝄';
-    /// \u{1d745}: '𝝅'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_PI: char = '𝝅';
-    /// \u{1d746}: '𝝆'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_RHO: char = '𝝆';
-    /// \u{1d747}: '𝝇'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_FINAL_SIGMA: char = '𝝇';
-    /// \u{1d748}: '𝝈'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_SIGMA: char = '𝝈';
-    /// \u{1d749}: '𝝉'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_TAU: char = '𝝉';
-    /// \u{1d74a}: '𝝊'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_UPSILON: char = '𝝊';
-    /// \u{1d74b}: '𝝋'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_PHI: char = '𝝋';
-    /// \u{1d74c}: '𝝌'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_CHI: char = '𝝌';
-    /// \u{1d74d}: '𝝍'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_PSI: char = '𝝍';
-    /// \u{1d74e}: '𝝎'
-    pub const MATHEMATICAL_BOLD_ITALIC_SMALL_OMEGA: char = '𝝎';
-    /// \u{1d74f}: '𝝏'
-    pub const MATHEMATICAL_BOLD_ITALIC_PARTIAL_DIFFERENTIAL: char = '𝝏';
-    /// \u{1d750}: '𝝐'
-    pub const MATHEMATICAL_BOLD_ITALIC_EPSILON_SYMBOL: char = '𝝐';
-    /// \u{1d751}: '𝝑'
-    pub const MATHEMATICAL_BOLD_ITALIC_THETA_SYMBOL: char = '𝝑';
-    /// \u{1d752}: '𝝒'
-    pub const MATHEMATICAL_BOLD_ITALIC_KAPPA_SYMBOL: char = '𝝒';
-    /// \u{1d753}: '𝝓'
-    pub const MATHEMATICAL_BOLD_ITALIC_PHI_SYMBOL: char = '𝝓';
-    /// \u{1d754}: '𝝔'
-    pub const MATHEMATICAL_BOLD_ITALIC_RHO_SYMBOL: char = '𝝔';
-    /// \u{1d755}: '𝝕'
-    pub const MATHEMATICAL_BOLD_ITALIC_PI_SYMBOL: char = '𝝕';
-    /// \u{1d756}: '𝝖'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_ALPHA: char = '𝝖';
-    /// \u{1d757}: '𝝗'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_BETA: char = '𝝗';
-    /// \u{1d758}: '𝝘'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_GAMMA: char = '𝝘';
-    /// \u{1d759}: '𝝙'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_DELTA: char = '𝝙';
-    /// \u{1d75a}: '𝝚'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_EPSILON: char = '𝝚';
-    /// \u{1d75b}: '𝝛'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_ZETA: char = '𝝛';
-    /// \u{1d75c}: '𝝜'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_ETA: char = '𝝜';
-    /// \u{1d75d}: '𝝝'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_THETA: char = '𝝝';
-    /// \u{1d75e}: '𝝞'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_IOTA: char = '𝝞';
-    /// \u{1d75f}: '𝝟'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_KAPPA: char = '𝝟';
-    /// \u{1d760}: '𝝠'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_LAMDA: char = '𝝠';
-    /// \u{1d761}: '𝝡'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_MU: char = '𝝡';
-    /// \u{1d762}: '𝝢'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_NU: char = '𝝢';
-    /// \u{1d763}: '𝝣'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_XI: char = '𝝣';
-    /// \u{1d764}: '𝝤'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_OMICRON: char = '𝝤';
-    /// \u{1d765}: '𝝥'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_PI: char = '𝝥';
-    /// \u{1d766}: '𝝦'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_RHO: char = '𝝦';
-    /// \u{1d767}: '𝝧'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_THETA_SYMBOL: char = '𝝧';
-    /// \u{1d768}: '𝝨'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_SIGMA: char = '𝝨';
-    /// \u{1d769}: '𝝩'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_TAU: char = '𝝩';
-    /// \u{1d76a}: '𝝪'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_UPSILON: char = '𝝪';
-    /// \u{1d76b}: '𝝫'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_PHI: char = '𝝫';
-    /// \u{1d76c}: '𝝬'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_CHI: char = '𝝬';
-    /// \u{1d76d}: '𝝭'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_PSI: char = '𝝭';
-    /// \u{1d76e}: '𝝮'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_OMEGA: char = '𝝮';
-    /// \u{1d76f}: '𝝯'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_NABLA: char = '𝝯';
-    /// \u{1d770}: '𝝰'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_ALPHA: char = '𝝰';
-    /// \u{1d771}: '𝝱'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_BETA: char = '𝝱';
-    /// \u{1d772}: '𝝲'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_GAMMA: char = '𝝲';
-    /// \u{1d773}: '𝝳'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_DELTA: char = '𝝳';
-    /// \u{1d774}: '𝝴'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_EPSILON: char = '𝝴';
-    /// \u{1d775}: '𝝵'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_ZETA: char = '𝝵';
-    /// \u{1d776}: '𝝶'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_ETA: char = '𝝶';
-    /// \u{1d777}: '𝝷'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_THETA: char = '𝝷';
-    /// \u{1d778}: '𝝸'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_IOTA: char = '𝝸';
-    /// \u{1d779}: '𝝹'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_KAPPA: char = '𝝹';
-    /// \u{1d77a}: '𝝺'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_LAMDA: char = '𝝺';
-    /// \u{1d77b}: '𝝻'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_MU: char = '𝝻';
-    /// \u{1d77c}: '𝝼'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_NU: char = '𝝼';
-    /// \u{1d77d}: '𝝽'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_XI: char = '𝝽';
-    /// \u{1d77e}: '𝝾'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_OMICRON: char = '𝝾';
-    /// \u{1d77f}: '𝝿'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_PI: char = '𝝿';
-    /// \u{1d780}: '𝞀'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_RHO: char = '𝞀';
-    /// \u{1d781}: '𝞁'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_FINAL_SIGMA: char = '𝞁';
-    /// \u{1d782}: '𝞂'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_SIGMA: char = '𝞂';
-    /// \u{1d783}: '𝞃'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_TAU: char = '𝞃';
-    /// \u{1d784}: '𝞄'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_UPSILON: char = '𝞄';
-    /// \u{1d785}: '𝞅'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_PHI: char = '𝞅';
-    /// \u{1d786}: '𝞆'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_CHI: char = '𝞆';
-    /// \u{1d787}: '𝞇'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_PSI: char = '𝞇';
-    /// \u{1d788}: '𝞈'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_OMEGA: char = '𝞈';
-    /// \u{1d789}: '𝞉'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_PARTIAL_DIFFERENTIAL: char = '𝞉';
-    /// \u{1d78a}: '𝞊'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_EPSILON_SYMBOL: char = '𝞊';
-    /// \u{1d78b}: '𝞋'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_THETA_SYMBOL: char = '𝞋';
-    /// \u{1d78c}: '𝞌'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_KAPPA_SYMBOL: char = '𝞌';
-    /// \u{1d78d}: '𝞍'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_PHI_SYMBOL: char = '𝞍';
-    /// \u{1d78e}: '𝞎'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_RHO_SYMBOL: char = '𝞎';
-    /// \u{1d78f}: '𝞏'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_PI_SYMBOL: char = '𝞏';
-    /// \u{1d790}: '𝞐'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_ALPHA: char = '𝞐';
-    /// \u{1d791}: '𝞑'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_BETA: char = '𝞑';
-    /// \u{1d792}: '𝞒'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_GAMMA: char = '𝞒';
-    /// \u{1d793}: '𝞓'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_DELTA: char = '𝞓';
-    /// \u{1d794}: '𝞔'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_EPSILON: char = '𝞔';
-    /// \u{1d795}: '𝞕'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_ZETA: char = '𝞕';
-    /// \u{1d796}: '𝞖'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_ETA: char = '𝞖';
-    /// \u{1d797}: '𝞗'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_THETA: char = '𝞗';
-    /// \u{1d798}: '𝞘'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_IOTA: char = '𝞘';
-    /// \u{1d799}: '𝞙'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_KAPPA: char = '𝞙';
-    /// \u{1d79a}: '𝞚'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_LAMDA: char = '𝞚';
-    /// \u{1d79b}: '𝞛'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_MU: char = '𝞛';
-    /// \u{1d79c}: '𝞜'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_NU: char = '𝞜';
-    /// \u{1d79d}: '𝞝'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_XI: char = '𝞝';
-    /// \u{1d79e}: '𝞞'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_OMICRON: char = '𝞞';
-    /// \u{1d79f}: '𝞟'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_PI: char = '𝞟';
-    /// \u{1d7a0}: '𝞠'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_RHO: char = '𝞠';
-    /// \u{1d7a1}: '𝞡'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_THETA_SYMBOL: char = '𝞡';
-    /// \u{1d7a2}: '𝞢'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_SIGMA: char = '𝞢';
-    /// \u{1d7a3}: '𝞣'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_TAU: char = '𝞣';
-    /// \u{1d7a4}: '𝞤'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_UPSILON: char = '𝞤';
-    /// \u{1d7a5}: '𝞥'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_PHI: char = '𝞥';
-    /// \u{1d7a6}: '𝞦'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_CHI: char = '𝞦';
-    /// \u{1d7a7}: '𝞧'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_PSI: char = '𝞧';
-    /// \u{1d7a8}: '𝞨'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_OMEGA: char = '𝞨';
-    /// \u{1d7a9}: '𝞩'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_NABLA: char = '𝞩';
-    /// \u{1d7aa}: '𝞪'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_ALPHA: char = '𝞪';
-    /// \u{1d7ab}: '𝞫'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_BETA: char = '𝞫';
-    /// \u{1d7ac}: '𝞬'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_GAMMA: char = '𝞬';
-    /// \u{1d7ad}: '𝞭'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_DELTA: char = '𝞭';
-    /// \u{1d7ae}: '𝞮'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_EPSILON: char = '𝞮';
-    /// \u{1d7af}: '𝞯'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_ZETA: char = '𝞯';
-    /// \u{1d7b0}: '𝞰'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_ETA: char = '𝞰';
-    /// \u{1d7b1}: '𝞱'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_THETA: char = '𝞱';
-    /// \u{1d7b2}: '𝞲'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_IOTA: char = '𝞲';
-    /// \u{1d7b3}: '𝞳'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_KAPPA: char = '𝞳';
-    /// \u{1d7b4}: '𝞴'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_LAMDA: char = '𝞴';
-    /// \u{1d7b5}: '𝞵'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_MU: char = '𝞵';
-    /// \u{1d7b6}: '𝞶'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_NU: char = '𝞶';
-    /// \u{1d7b7}: '𝞷'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_XI: char = '𝞷';
-    /// \u{1d7b8}: '𝞸'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_OMICRON: char = '𝞸';
-    /// \u{1d7b9}: '𝞹'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_PI: char = '𝞹';
-    /// \u{1d7ba}: '𝞺'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_RHO: char = '𝞺';
-    /// \u{1d7bb}: '𝞻'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_FINAL_SIGMA: char = '𝞻';
-    /// \u{1d7bc}: '𝞼'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_SIGMA: char = '𝞼';
-    /// \u{1d7bd}: '𝞽'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_TAU: char = '𝞽';
-    /// \u{1d7be}: '𝞾'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_UPSILON: char = '𝞾';
-    /// \u{1d7bf}: '𝞿'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_PHI: char = '𝞿';
-    /// \u{1d7c0}: '𝟀'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_CHI: char = '𝟀';
-    /// \u{1d7c1}: '𝟁'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_PSI: char = '𝟁';
-    /// \u{1d7c2}: '𝟂'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_OMEGA: char = '𝟂';
-    /// \u{1d7c3}: '𝟃'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_PARTIAL_DIFFERENTIAL: char = '𝟃';
-    /// \u{1d7c4}: '𝟄'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_EPSILON_SYMBOL: char = '𝟄';
-    /// \u{1d7c5}: '𝟅'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_THETA_SYMBOL: char = '𝟅';
-    /// \u{1d7c6}: '𝟆'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_KAPPA_SYMBOL: char = '𝟆';
-    /// \u{1d7c7}: '𝟇'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_PHI_SYMBOL: char = '𝟇';
-    /// \u{1d7c8}: '𝟈'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_RHO_SYMBOL: char = '𝟈';
-    /// \u{1d7c9}: '𝟉'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_PI_SYMBOL: char = '𝟉';
-    /// \u{1d7ca}: '𝟊'
-    pub const MATHEMATICAL_BOLD_CAPITAL_DIGAMMA: char = '𝟊';
-    /// \u{1d7cb}: '𝟋'
-    pub const MATHEMATICAL_BOLD_SMALL_DIGAMMA: char = '𝟋';
-    /// \u{1d7ce}: '𝟎'
-    pub const MATHEMATICAL_BOLD_DIGIT_ZERO: char = '𝟎';
-    /// \u{1d7cf}: '𝟏'
-    pub const MATHEMATICAL_BOLD_DIGIT_ONE: char = '𝟏';
-    /// \u{1d7d0}: '𝟐'
-    pub const MATHEMATICAL_BOLD_DIGIT_TWO: char = '𝟐';
-    /// \u{1d7d1}: '𝟑'
-    pub const MATHEMATICAL_BOLD_DIGIT_THREE: char = '𝟑';
-    /// \u{1d7d2}: '𝟒'
-    pub const MATHEMATICAL_BOLD_DIGIT_FOUR: char = '𝟒';
-    /// \u{1d7d3}: '𝟓'
-    pub const MATHEMATICAL_BOLD_DIGIT_FIVE: char = '𝟓';
-    /// \u{1d7d4}: '𝟔'
-    pub const MATHEMATICAL_BOLD_DIGIT_SIX: char = '𝟔';
-    /// \u{1d7d5}: '𝟕'
-    pub const MATHEMATICAL_BOLD_DIGIT_SEVEN: char = '𝟕';
-    /// \u{1d7d6}: '𝟖'
-    pub const MATHEMATICAL_BOLD_DIGIT_EIGHT: char = '𝟖';
-    /// \u{1d7d7}: '𝟗'
-    pub const MATHEMATICAL_BOLD_DIGIT_NINE: char = '𝟗';
-    /// \u{1d7d8}: '𝟘'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_ZERO: char = '𝟘';
-    /// \u{1d7d9}: '𝟙'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_ONE: char = '𝟙';
-    /// \u{1d7da}: '𝟚'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_TWO: char = '𝟚';
-    /// \u{1d7db}: '𝟛'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_THREE: char = '𝟛';
-    /// \u{1d7dc}: '𝟜'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_FOUR: char = '𝟜';
-    /// \u{1d7dd}: '𝟝'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_FIVE: char = '𝟝';
-    /// \u{1d7de}: '𝟞'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_SIX: char = '𝟞';
-    /// \u{1d7df}: '𝟟'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_SEVEN: char = '𝟟';
-    /// \u{1d7e0}: '𝟠'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_EIGHT: char = '𝟠';
-    /// \u{1d7e1}: '𝟡'
-    pub const MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_NINE: char = '𝟡';
-    /// \u{1d7e2}: '𝟢'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_ZERO: char = '𝟢';
-    /// \u{1d7e3}: '𝟣'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_ONE: char = '𝟣';
-    /// \u{1d7e4}: '𝟤'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_TWO: char = '𝟤';
-    /// \u{1d7e5}: '𝟥'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_THREE: char = '𝟥';
-    /// \u{1d7e6}: '𝟦'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_FOUR: char = '𝟦';
-    /// \u{1d7e7}: '𝟧'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_FIVE: char = '𝟧';
-    /// \u{1d7e8}: '𝟨'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_SIX: char = '𝟨';
-    /// \u{1d7e9}: '𝟩'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_SEVEN: char = '𝟩';
-    /// \u{1d7ea}: '𝟪'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_EIGHT: char = '𝟪';
-    /// \u{1d7eb}: '𝟫'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_DIGIT_NINE: char = '𝟫';
-    /// \u{1d7ec}: '𝟬'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_ZERO: char = '𝟬';
-    /// \u{1d7ed}: '𝟭'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_ONE: char = '𝟭';
-    /// \u{1d7ee}: '𝟮'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_TWO: char = '𝟮';
-    /// \u{1d7ef}: '𝟯'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_THREE: char = '𝟯';
-    /// \u{1d7f0}: '𝟰'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_FOUR: char = '𝟰';
-    /// \u{1d7f1}: '𝟱'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_FIVE: char = '𝟱';
-    /// \u{1d7f2}: '𝟲'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_SIX: char = '𝟲';
-    /// \u{1d7f3}: '𝟳'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_SEVEN: char = '𝟳';
-    /// \u{1d7f4}: '𝟴'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_EIGHT: char = '𝟴';
-    /// \u{1d7f5}: '𝟵'
-    pub const MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_NINE: char = '𝟵';
-    /// \u{1d7f6}: '𝟶'
-    pub const MATHEMATICAL_MONOSPACE_DIGIT_ZERO: char = '𝟶';
-    /// \u{1d7f7}: '𝟷'
-    pub const MATHEMATICAL_MONOSPACE_DIGIT_ONE: char = '𝟷';
-    /// \u{1d7f8}: '𝟸'
-    pub const MATHEMATICAL_MONOSPACE_DIGIT_TWO: char = '𝟸';
-    /// \u{1d7f9}: '𝟹'
-    pub const MATHEMATICAL_MONOSPACE_DIGIT_THREE: char = '𝟹';
-    /// \u{1d7fa}: '𝟺'
-    pub const MATHEMATICAL_MONOSPACE_DIGIT_FOUR: char = '𝟺';
-    /// \u{1d7fb}: '𝟻'
-    pub const MATHEMATICAL_MONOSPACE_DIGIT_FIVE: char = '𝟻';
-    /// \u{1d7fc}: '𝟼'
-    pub const MATHEMATICAL_MONOSPACE_DIGIT_SIX: char = '𝟼';
-    /// \u{1d7fd}: '𝟽'
-    pub const MATHEMATICAL_MONOSPACE_DIGIT_SEVEN: char = '𝟽';
-    /// \u{1d7fe}: '𝟾'
-    pub const MATHEMATICAL_MONOSPACE_DIGIT_EIGHT: char = '𝟾';
-}
 
 /// An enum to represent all characters in the MathematicalAlphanumericSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -3989,1003 +1996,1002 @@ pub enum MathematicalAlphanumericSymbols {
 
 impl Into<char> for MathematicalAlphanumericSymbols {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalA => MATHEMATICAL_BOLD_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalB => MATHEMATICAL_BOLD_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalC => MATHEMATICAL_BOLD_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalD => MATHEMATICAL_BOLD_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalE => MATHEMATICAL_BOLD_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalF => MATHEMATICAL_BOLD_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalG => MATHEMATICAL_BOLD_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalH => MATHEMATICAL_BOLD_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalI => MATHEMATICAL_BOLD_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalJ => MATHEMATICAL_BOLD_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalK => MATHEMATICAL_BOLD_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalL => MATHEMATICAL_BOLD_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalM => MATHEMATICAL_BOLD_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalN => MATHEMATICAL_BOLD_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalO => MATHEMATICAL_BOLD_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalP => MATHEMATICAL_BOLD_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalQ => MATHEMATICAL_BOLD_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalR => MATHEMATICAL_BOLD_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalS => MATHEMATICAL_BOLD_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalT => MATHEMATICAL_BOLD_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalU => MATHEMATICAL_BOLD_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalV => MATHEMATICAL_BOLD_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalW => MATHEMATICAL_BOLD_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalX => MATHEMATICAL_BOLD_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalY => MATHEMATICAL_BOLD_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalZ => MATHEMATICAL_BOLD_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallA => MATHEMATICAL_BOLD_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallB => MATHEMATICAL_BOLD_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallC => MATHEMATICAL_BOLD_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallD => MATHEMATICAL_BOLD_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallE => MATHEMATICAL_BOLD_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallF => MATHEMATICAL_BOLD_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallG => MATHEMATICAL_BOLD_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallH => MATHEMATICAL_BOLD_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallI => MATHEMATICAL_BOLD_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallJ => MATHEMATICAL_BOLD_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallK => MATHEMATICAL_BOLD_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallL => MATHEMATICAL_BOLD_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallM => MATHEMATICAL_BOLD_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallN => MATHEMATICAL_BOLD_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallO => MATHEMATICAL_BOLD_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallP => MATHEMATICAL_BOLD_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallQ => MATHEMATICAL_BOLD_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallR => MATHEMATICAL_BOLD_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallS => MATHEMATICAL_BOLD_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallT => MATHEMATICAL_BOLD_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallU => MATHEMATICAL_BOLD_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallV => MATHEMATICAL_BOLD_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallW => MATHEMATICAL_BOLD_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallX => MATHEMATICAL_BOLD_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallY => MATHEMATICAL_BOLD_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallZ => MATHEMATICAL_BOLD_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalA => MATHEMATICAL_ITALIC_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalB => MATHEMATICAL_ITALIC_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalC => MATHEMATICAL_ITALIC_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalD => MATHEMATICAL_ITALIC_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalE => MATHEMATICAL_ITALIC_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalF => MATHEMATICAL_ITALIC_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalG => MATHEMATICAL_ITALIC_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalH => MATHEMATICAL_ITALIC_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalI => MATHEMATICAL_ITALIC_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalJ => MATHEMATICAL_ITALIC_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalK => MATHEMATICAL_ITALIC_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalL => MATHEMATICAL_ITALIC_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalM => MATHEMATICAL_ITALIC_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalN => MATHEMATICAL_ITALIC_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalO => MATHEMATICAL_ITALIC_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalP => MATHEMATICAL_ITALIC_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalQ => MATHEMATICAL_ITALIC_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalR => MATHEMATICAL_ITALIC_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalS => MATHEMATICAL_ITALIC_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalT => MATHEMATICAL_ITALIC_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalU => MATHEMATICAL_ITALIC_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalV => MATHEMATICAL_ITALIC_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalW => MATHEMATICAL_ITALIC_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalX => MATHEMATICAL_ITALIC_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalY => MATHEMATICAL_ITALIC_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalZ => MATHEMATICAL_ITALIC_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallA => MATHEMATICAL_ITALIC_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallB => MATHEMATICAL_ITALIC_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallC => MATHEMATICAL_ITALIC_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallD => MATHEMATICAL_ITALIC_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallE => MATHEMATICAL_ITALIC_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallF => MATHEMATICAL_ITALIC_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallG => MATHEMATICAL_ITALIC_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallI => MATHEMATICAL_ITALIC_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallJ => MATHEMATICAL_ITALIC_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallK => MATHEMATICAL_ITALIC_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallL => MATHEMATICAL_ITALIC_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallM => MATHEMATICAL_ITALIC_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallN => MATHEMATICAL_ITALIC_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallO => MATHEMATICAL_ITALIC_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallP => MATHEMATICAL_ITALIC_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallQ => MATHEMATICAL_ITALIC_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallR => MATHEMATICAL_ITALIC_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallS => MATHEMATICAL_ITALIC_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallT => MATHEMATICAL_ITALIC_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallU => MATHEMATICAL_ITALIC_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallV => MATHEMATICAL_ITALIC_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallW => MATHEMATICAL_ITALIC_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallX => MATHEMATICAL_ITALIC_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallY => MATHEMATICAL_ITALIC_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallZ => MATHEMATICAL_ITALIC_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalA => MATHEMATICAL_BOLD_ITALIC_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalB => MATHEMATICAL_BOLD_ITALIC_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalC => MATHEMATICAL_BOLD_ITALIC_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalD => MATHEMATICAL_BOLD_ITALIC_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalE => MATHEMATICAL_BOLD_ITALIC_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalF => MATHEMATICAL_BOLD_ITALIC_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalG => MATHEMATICAL_BOLD_ITALIC_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalH => MATHEMATICAL_BOLD_ITALIC_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalI => MATHEMATICAL_BOLD_ITALIC_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalJ => MATHEMATICAL_BOLD_ITALIC_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalK => MATHEMATICAL_BOLD_ITALIC_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalL => MATHEMATICAL_BOLD_ITALIC_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalM => MATHEMATICAL_BOLD_ITALIC_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalN => MATHEMATICAL_BOLD_ITALIC_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalO => MATHEMATICAL_BOLD_ITALIC_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalP => MATHEMATICAL_BOLD_ITALIC_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalQ => MATHEMATICAL_BOLD_ITALIC_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalR => MATHEMATICAL_BOLD_ITALIC_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalS => MATHEMATICAL_BOLD_ITALIC_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalT => MATHEMATICAL_BOLD_ITALIC_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalU => MATHEMATICAL_BOLD_ITALIC_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalV => MATHEMATICAL_BOLD_ITALIC_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalW => MATHEMATICAL_BOLD_ITALIC_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalX => MATHEMATICAL_BOLD_ITALIC_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalY => MATHEMATICAL_BOLD_ITALIC_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalZ => MATHEMATICAL_BOLD_ITALIC_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallA => MATHEMATICAL_BOLD_ITALIC_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallB => MATHEMATICAL_BOLD_ITALIC_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallC => MATHEMATICAL_BOLD_ITALIC_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallD => MATHEMATICAL_BOLD_ITALIC_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallE => MATHEMATICAL_BOLD_ITALIC_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallF => MATHEMATICAL_BOLD_ITALIC_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallG => MATHEMATICAL_BOLD_ITALIC_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallH => MATHEMATICAL_BOLD_ITALIC_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallI => MATHEMATICAL_BOLD_ITALIC_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallJ => MATHEMATICAL_BOLD_ITALIC_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallK => MATHEMATICAL_BOLD_ITALIC_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallL => MATHEMATICAL_BOLD_ITALIC_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallM => MATHEMATICAL_BOLD_ITALIC_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallN => MATHEMATICAL_BOLD_ITALIC_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallO => MATHEMATICAL_BOLD_ITALIC_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallP => MATHEMATICAL_BOLD_ITALIC_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallQ => MATHEMATICAL_BOLD_ITALIC_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallR => MATHEMATICAL_BOLD_ITALIC_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallS => MATHEMATICAL_BOLD_ITALIC_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallT => MATHEMATICAL_BOLD_ITALIC_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallU => MATHEMATICAL_BOLD_ITALIC_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallV => MATHEMATICAL_BOLD_ITALIC_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallW => MATHEMATICAL_BOLD_ITALIC_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallX => MATHEMATICAL_BOLD_ITALIC_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallY => MATHEMATICAL_BOLD_ITALIC_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallZ => MATHEMATICAL_BOLD_ITALIC_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalA => MATHEMATICAL_SCRIPT_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalC => MATHEMATICAL_SCRIPT_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalD => MATHEMATICAL_SCRIPT_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalG => MATHEMATICAL_SCRIPT_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalJ => MATHEMATICAL_SCRIPT_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalK => MATHEMATICAL_SCRIPT_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalN => MATHEMATICAL_SCRIPT_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalO => MATHEMATICAL_SCRIPT_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalP => MATHEMATICAL_SCRIPT_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalQ => MATHEMATICAL_SCRIPT_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalS => MATHEMATICAL_SCRIPT_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalT => MATHEMATICAL_SCRIPT_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalU => MATHEMATICAL_SCRIPT_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalV => MATHEMATICAL_SCRIPT_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalW => MATHEMATICAL_SCRIPT_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalX => MATHEMATICAL_SCRIPT_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalY => MATHEMATICAL_SCRIPT_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalScriptCapitalZ => MATHEMATICAL_SCRIPT_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallA => MATHEMATICAL_SCRIPT_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallB => MATHEMATICAL_SCRIPT_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallC => MATHEMATICAL_SCRIPT_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallD => MATHEMATICAL_SCRIPT_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallF => MATHEMATICAL_SCRIPT_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallH => MATHEMATICAL_SCRIPT_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallI => MATHEMATICAL_SCRIPT_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallJ => MATHEMATICAL_SCRIPT_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallK => MATHEMATICAL_SCRIPT_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallL => MATHEMATICAL_SCRIPT_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallM => MATHEMATICAL_SCRIPT_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallN => MATHEMATICAL_SCRIPT_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallP => MATHEMATICAL_SCRIPT_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallQ => MATHEMATICAL_SCRIPT_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallR => MATHEMATICAL_SCRIPT_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallS => MATHEMATICAL_SCRIPT_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallT => MATHEMATICAL_SCRIPT_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallU => MATHEMATICAL_SCRIPT_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallV => MATHEMATICAL_SCRIPT_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallW => MATHEMATICAL_SCRIPT_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallX => MATHEMATICAL_SCRIPT_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallY => MATHEMATICAL_SCRIPT_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalScriptSmallZ => MATHEMATICAL_SCRIPT_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalA => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalB => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalC => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalD => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalE => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalF => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalG => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalH => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalI => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalJ => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalK => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalL => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalM => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalN => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalO => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalP => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalQ => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalR => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalS => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalT => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalU => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalV => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalW => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalX => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalY => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalZ => MATHEMATICAL_BOLD_SCRIPT_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallA => MATHEMATICAL_BOLD_SCRIPT_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallB => MATHEMATICAL_BOLD_SCRIPT_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallC => MATHEMATICAL_BOLD_SCRIPT_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallD => MATHEMATICAL_BOLD_SCRIPT_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallE => MATHEMATICAL_BOLD_SCRIPT_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallF => MATHEMATICAL_BOLD_SCRIPT_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallG => MATHEMATICAL_BOLD_SCRIPT_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallH => MATHEMATICAL_BOLD_SCRIPT_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallI => MATHEMATICAL_BOLD_SCRIPT_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallJ => MATHEMATICAL_BOLD_SCRIPT_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallK => MATHEMATICAL_BOLD_SCRIPT_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallL => MATHEMATICAL_BOLD_SCRIPT_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallM => MATHEMATICAL_BOLD_SCRIPT_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallN => MATHEMATICAL_BOLD_SCRIPT_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallO => MATHEMATICAL_BOLD_SCRIPT_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallP => MATHEMATICAL_BOLD_SCRIPT_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallQ => MATHEMATICAL_BOLD_SCRIPT_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallR => MATHEMATICAL_BOLD_SCRIPT_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallS => MATHEMATICAL_BOLD_SCRIPT_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallT => MATHEMATICAL_BOLD_SCRIPT_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallU => MATHEMATICAL_BOLD_SCRIPT_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallV => MATHEMATICAL_BOLD_SCRIPT_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallW => MATHEMATICAL_BOLD_SCRIPT_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallX => MATHEMATICAL_BOLD_SCRIPT_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallY => MATHEMATICAL_BOLD_SCRIPT_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallZ => MATHEMATICAL_BOLD_SCRIPT_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalA => MATHEMATICAL_FRAKTUR_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalB => MATHEMATICAL_FRAKTUR_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalD => MATHEMATICAL_FRAKTUR_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalE => MATHEMATICAL_FRAKTUR_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalF => MATHEMATICAL_FRAKTUR_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalG => MATHEMATICAL_FRAKTUR_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalJ => MATHEMATICAL_FRAKTUR_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalK => MATHEMATICAL_FRAKTUR_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalL => MATHEMATICAL_FRAKTUR_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalM => MATHEMATICAL_FRAKTUR_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalN => MATHEMATICAL_FRAKTUR_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalO => MATHEMATICAL_FRAKTUR_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalP => MATHEMATICAL_FRAKTUR_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalQ => MATHEMATICAL_FRAKTUR_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalS => MATHEMATICAL_FRAKTUR_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalT => MATHEMATICAL_FRAKTUR_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalU => MATHEMATICAL_FRAKTUR_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalV => MATHEMATICAL_FRAKTUR_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalW => MATHEMATICAL_FRAKTUR_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalX => MATHEMATICAL_FRAKTUR_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalY => MATHEMATICAL_FRAKTUR_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallA => MATHEMATICAL_FRAKTUR_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallB => MATHEMATICAL_FRAKTUR_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallC => MATHEMATICAL_FRAKTUR_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallD => MATHEMATICAL_FRAKTUR_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallE => MATHEMATICAL_FRAKTUR_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallF => MATHEMATICAL_FRAKTUR_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallG => MATHEMATICAL_FRAKTUR_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallH => MATHEMATICAL_FRAKTUR_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallI => MATHEMATICAL_FRAKTUR_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallJ => MATHEMATICAL_FRAKTUR_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallK => MATHEMATICAL_FRAKTUR_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallL => MATHEMATICAL_FRAKTUR_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallM => MATHEMATICAL_FRAKTUR_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallN => MATHEMATICAL_FRAKTUR_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallO => MATHEMATICAL_FRAKTUR_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallP => MATHEMATICAL_FRAKTUR_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallQ => MATHEMATICAL_FRAKTUR_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallR => MATHEMATICAL_FRAKTUR_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallS => MATHEMATICAL_FRAKTUR_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallT => MATHEMATICAL_FRAKTUR_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallU => MATHEMATICAL_FRAKTUR_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallV => MATHEMATICAL_FRAKTUR_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallW => MATHEMATICAL_FRAKTUR_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallX => MATHEMATICAL_FRAKTUR_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallY => MATHEMATICAL_FRAKTUR_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalFrakturSmallZ => MATHEMATICAL_FRAKTUR_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalA => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalB => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalD => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalE => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalF => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalG => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalI => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalJ => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalK => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalL => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalM => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalO => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalS => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalT => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalU => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalV => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalW => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalX => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalY => MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallA => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallB => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallC => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallD => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallE => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallF => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallG => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallH => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallI => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallJ => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallK => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallL => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallM => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallN => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallO => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallP => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallQ => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallR => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallS => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallT => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallU => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallV => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallW => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallX => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallY => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallZ => MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalA => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalB => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalC => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalD => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalE => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalF => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalG => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalH => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalI => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalJ => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalK => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalL => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalM => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalN => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalO => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalP => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalQ => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalR => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalS => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalT => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalU => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalV => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalW => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalX => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalY => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalZ => MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallA => MATHEMATICAL_BOLD_FRAKTUR_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallB => MATHEMATICAL_BOLD_FRAKTUR_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallC => MATHEMATICAL_BOLD_FRAKTUR_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallD => MATHEMATICAL_BOLD_FRAKTUR_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallE => MATHEMATICAL_BOLD_FRAKTUR_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallF => MATHEMATICAL_BOLD_FRAKTUR_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallG => MATHEMATICAL_BOLD_FRAKTUR_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallH => MATHEMATICAL_BOLD_FRAKTUR_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallI => MATHEMATICAL_BOLD_FRAKTUR_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallJ => MATHEMATICAL_BOLD_FRAKTUR_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallK => MATHEMATICAL_BOLD_FRAKTUR_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallL => MATHEMATICAL_BOLD_FRAKTUR_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallM => MATHEMATICAL_BOLD_FRAKTUR_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallN => MATHEMATICAL_BOLD_FRAKTUR_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallO => MATHEMATICAL_BOLD_FRAKTUR_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallP => MATHEMATICAL_BOLD_FRAKTUR_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallQ => MATHEMATICAL_BOLD_FRAKTUR_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallR => MATHEMATICAL_BOLD_FRAKTUR_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallS => MATHEMATICAL_BOLD_FRAKTUR_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallT => MATHEMATICAL_BOLD_FRAKTUR_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallU => MATHEMATICAL_BOLD_FRAKTUR_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallV => MATHEMATICAL_BOLD_FRAKTUR_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallW => MATHEMATICAL_BOLD_FRAKTUR_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallX => MATHEMATICAL_BOLD_FRAKTUR_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallY => MATHEMATICAL_BOLD_FRAKTUR_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallZ => MATHEMATICAL_BOLD_FRAKTUR_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalA => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalB => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalC => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalD => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalE => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalF => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalG => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalH => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalI => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalJ => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalK => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalL => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalM => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalN => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalO => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalP => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalQ => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalR => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalS => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalT => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalU => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalV => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalW => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalX => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalY => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalZ => MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallA => MATHEMATICAL_SANS_DASH_SERIF_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallB => MATHEMATICAL_SANS_DASH_SERIF_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallC => MATHEMATICAL_SANS_DASH_SERIF_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallD => MATHEMATICAL_SANS_DASH_SERIF_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallE => MATHEMATICAL_SANS_DASH_SERIF_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallF => MATHEMATICAL_SANS_DASH_SERIF_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallG => MATHEMATICAL_SANS_DASH_SERIF_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallH => MATHEMATICAL_SANS_DASH_SERIF_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallI => MATHEMATICAL_SANS_DASH_SERIF_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallJ => MATHEMATICAL_SANS_DASH_SERIF_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallK => MATHEMATICAL_SANS_DASH_SERIF_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallL => MATHEMATICAL_SANS_DASH_SERIF_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallM => MATHEMATICAL_SANS_DASH_SERIF_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallN => MATHEMATICAL_SANS_DASH_SERIF_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallO => MATHEMATICAL_SANS_DASH_SERIF_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallP => MATHEMATICAL_SANS_DASH_SERIF_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallQ => MATHEMATICAL_SANS_DASH_SERIF_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallR => MATHEMATICAL_SANS_DASH_SERIF_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallS => MATHEMATICAL_SANS_DASH_SERIF_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallT => MATHEMATICAL_SANS_DASH_SERIF_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallU => MATHEMATICAL_SANS_DASH_SERIF_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallV => MATHEMATICAL_SANS_DASH_SERIF_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallW => MATHEMATICAL_SANS_DASH_SERIF_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallX => MATHEMATICAL_SANS_DASH_SERIF_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallY => MATHEMATICAL_SANS_DASH_SERIF_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallZ => MATHEMATICAL_SANS_DASH_SERIF_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalA => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalB => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalC => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalD => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalE => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalF => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalG => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalH => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalI => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalJ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalK => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalL => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalM => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalN => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalO => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalP => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalQ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalR => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalS => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalT => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalU => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalV => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalW => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalX => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalY => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalZ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallA => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallB => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallC => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallD => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallE => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallF => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallG => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallH => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallI => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallJ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallK => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallL => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallM => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallN => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallO => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallP => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallQ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallR => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallS => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallT => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallU => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallV => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallW => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallX => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallY => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallZ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalA => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalB => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalC => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalD => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalE => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalF => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalG => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalH => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalI => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalJ => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalK => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalL => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalM => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalN => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalO => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalP => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalQ => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalR => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalS => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalT => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalU => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalV => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalW => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalX => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalY => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalZ => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallA => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallB => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallC => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallD => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallE => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallF => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallG => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallH => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallI => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallJ => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallK => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallL => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallM => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallN => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallO => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallP => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallQ => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallR => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallS => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallT => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallU => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallV => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallW => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallX => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallY => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallZ => MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalA => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalB => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalC => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalD => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalE => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalF => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalG => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalH => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalI => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalJ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalK => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalL => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalM => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalN => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalO => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalP => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalQ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalR => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalS => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalT => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalU => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalV => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalW => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalX => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalY => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalZ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallA => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallB => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallC => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallD => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallE => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallF => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallG => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallH => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallI => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallJ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallK => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallL => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallM => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallN => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallO => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallP => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallQ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallR => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallS => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallT => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallU => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallV => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallW => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallX => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallY => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallZ => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalA => MATHEMATICAL_MONOSPACE_CAPITAL_A,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalB => MATHEMATICAL_MONOSPACE_CAPITAL_B,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalC => MATHEMATICAL_MONOSPACE_CAPITAL_C,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalD => MATHEMATICAL_MONOSPACE_CAPITAL_D,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalE => MATHEMATICAL_MONOSPACE_CAPITAL_E,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalF => MATHEMATICAL_MONOSPACE_CAPITAL_F,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalG => MATHEMATICAL_MONOSPACE_CAPITAL_G,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalH => MATHEMATICAL_MONOSPACE_CAPITAL_H,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalI => MATHEMATICAL_MONOSPACE_CAPITAL_I,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalJ => MATHEMATICAL_MONOSPACE_CAPITAL_J,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalK => MATHEMATICAL_MONOSPACE_CAPITAL_K,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalL => MATHEMATICAL_MONOSPACE_CAPITAL_L,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalM => MATHEMATICAL_MONOSPACE_CAPITAL_M,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalN => MATHEMATICAL_MONOSPACE_CAPITAL_N,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalO => MATHEMATICAL_MONOSPACE_CAPITAL_O,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalP => MATHEMATICAL_MONOSPACE_CAPITAL_P,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalQ => MATHEMATICAL_MONOSPACE_CAPITAL_Q,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalR => MATHEMATICAL_MONOSPACE_CAPITAL_R,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalS => MATHEMATICAL_MONOSPACE_CAPITAL_S,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalT => MATHEMATICAL_MONOSPACE_CAPITAL_T,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalU => MATHEMATICAL_MONOSPACE_CAPITAL_U,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalV => MATHEMATICAL_MONOSPACE_CAPITAL_V,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalW => MATHEMATICAL_MONOSPACE_CAPITAL_W,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalX => MATHEMATICAL_MONOSPACE_CAPITAL_X,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalY => MATHEMATICAL_MONOSPACE_CAPITAL_Y,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalZ => MATHEMATICAL_MONOSPACE_CAPITAL_Z,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallA => MATHEMATICAL_MONOSPACE_SMALL_A,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallB => MATHEMATICAL_MONOSPACE_SMALL_B,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallC => MATHEMATICAL_MONOSPACE_SMALL_C,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallD => MATHEMATICAL_MONOSPACE_SMALL_D,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallE => MATHEMATICAL_MONOSPACE_SMALL_E,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallF => MATHEMATICAL_MONOSPACE_SMALL_F,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallG => MATHEMATICAL_MONOSPACE_SMALL_G,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallH => MATHEMATICAL_MONOSPACE_SMALL_H,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallI => MATHEMATICAL_MONOSPACE_SMALL_I,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallJ => MATHEMATICAL_MONOSPACE_SMALL_J,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallK => MATHEMATICAL_MONOSPACE_SMALL_K,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallL => MATHEMATICAL_MONOSPACE_SMALL_L,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallM => MATHEMATICAL_MONOSPACE_SMALL_M,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallN => MATHEMATICAL_MONOSPACE_SMALL_N,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallO => MATHEMATICAL_MONOSPACE_SMALL_O,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallP => MATHEMATICAL_MONOSPACE_SMALL_P,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallQ => MATHEMATICAL_MONOSPACE_SMALL_Q,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallR => MATHEMATICAL_MONOSPACE_SMALL_R,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallS => MATHEMATICAL_MONOSPACE_SMALL_S,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallT => MATHEMATICAL_MONOSPACE_SMALL_T,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallU => MATHEMATICAL_MONOSPACE_SMALL_U,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallV => MATHEMATICAL_MONOSPACE_SMALL_V,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallW => MATHEMATICAL_MONOSPACE_SMALL_W,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallX => MATHEMATICAL_MONOSPACE_SMALL_X,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallY => MATHEMATICAL_MONOSPACE_SMALL_Y,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallZ => MATHEMATICAL_MONOSPACE_SMALL_Z,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallDotlessI => MATHEMATICAL_ITALIC_SMALL_DOTLESS_I,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallDotlessJ => MATHEMATICAL_ITALIC_SMALL_DOTLESS_J,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalAlpha => MATHEMATICAL_BOLD_CAPITAL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalBeta => MATHEMATICAL_BOLD_CAPITAL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalGamma => MATHEMATICAL_BOLD_CAPITAL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalDelta => MATHEMATICAL_BOLD_CAPITAL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalEpsilon => MATHEMATICAL_BOLD_CAPITAL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalZeta => MATHEMATICAL_BOLD_CAPITAL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalEta => MATHEMATICAL_BOLD_CAPITAL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalTheta => MATHEMATICAL_BOLD_CAPITAL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalIota => MATHEMATICAL_BOLD_CAPITAL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalKappa => MATHEMATICAL_BOLD_CAPITAL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalLamda => MATHEMATICAL_BOLD_CAPITAL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalMu => MATHEMATICAL_BOLD_CAPITAL_MU,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalNu => MATHEMATICAL_BOLD_CAPITAL_NU,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalXi => MATHEMATICAL_BOLD_CAPITAL_XI,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalOmicron => MATHEMATICAL_BOLD_CAPITAL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalPi => MATHEMATICAL_BOLD_CAPITAL_PI,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalRho => MATHEMATICAL_BOLD_CAPITAL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalThetaSymbol => MATHEMATICAL_BOLD_CAPITAL_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalSigma => MATHEMATICAL_BOLD_CAPITAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalTau => MATHEMATICAL_BOLD_CAPITAL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalUpsilon => MATHEMATICAL_BOLD_CAPITAL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalPhi => MATHEMATICAL_BOLD_CAPITAL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalChi => MATHEMATICAL_BOLD_CAPITAL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalPsi => MATHEMATICAL_BOLD_CAPITAL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalOmega => MATHEMATICAL_BOLD_CAPITAL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalBoldNabla => MATHEMATICAL_BOLD_NABLA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallAlpha => MATHEMATICAL_BOLD_SMALL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallBeta => MATHEMATICAL_BOLD_SMALL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallGamma => MATHEMATICAL_BOLD_SMALL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallDelta => MATHEMATICAL_BOLD_SMALL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallEpsilon => MATHEMATICAL_BOLD_SMALL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallZeta => MATHEMATICAL_BOLD_SMALL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallEta => MATHEMATICAL_BOLD_SMALL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallTheta => MATHEMATICAL_BOLD_SMALL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallIota => MATHEMATICAL_BOLD_SMALL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallKappa => MATHEMATICAL_BOLD_SMALL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallLamda => MATHEMATICAL_BOLD_SMALL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallMu => MATHEMATICAL_BOLD_SMALL_MU,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallNu => MATHEMATICAL_BOLD_SMALL_NU,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallXi => MATHEMATICAL_BOLD_SMALL_XI,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallOmicron => MATHEMATICAL_BOLD_SMALL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallPi => MATHEMATICAL_BOLD_SMALL_PI,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallRho => MATHEMATICAL_BOLD_SMALL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallFinalSigma => MATHEMATICAL_BOLD_SMALL_FINAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallSigma => MATHEMATICAL_BOLD_SMALL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallTau => MATHEMATICAL_BOLD_SMALL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallUpsilon => MATHEMATICAL_BOLD_SMALL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallPhi => MATHEMATICAL_BOLD_SMALL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallChi => MATHEMATICAL_BOLD_SMALL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallPsi => MATHEMATICAL_BOLD_SMALL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallOmega => MATHEMATICAL_BOLD_SMALL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalBoldPartialDifferential => MATHEMATICAL_BOLD_PARTIAL_DIFFERENTIAL,
-            MathematicalAlphanumericSymbols::MathematicalBoldEpsilonSymbol => MATHEMATICAL_BOLD_EPSILON_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldThetaSymbol => MATHEMATICAL_BOLD_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldKappaSymbol => MATHEMATICAL_BOLD_KAPPA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldPhiSymbol => MATHEMATICAL_BOLD_PHI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldRhoSymbol => MATHEMATICAL_BOLD_RHO_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldPiSymbol => MATHEMATICAL_BOLD_PI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalAlpha => MATHEMATICAL_ITALIC_CAPITAL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalBeta => MATHEMATICAL_ITALIC_CAPITAL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalGamma => MATHEMATICAL_ITALIC_CAPITAL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalDelta => MATHEMATICAL_ITALIC_CAPITAL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalEpsilon => MATHEMATICAL_ITALIC_CAPITAL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalZeta => MATHEMATICAL_ITALIC_CAPITAL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalEta => MATHEMATICAL_ITALIC_CAPITAL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalTheta => MATHEMATICAL_ITALIC_CAPITAL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalIota => MATHEMATICAL_ITALIC_CAPITAL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalKappa => MATHEMATICAL_ITALIC_CAPITAL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalLamda => MATHEMATICAL_ITALIC_CAPITAL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalMu => MATHEMATICAL_ITALIC_CAPITAL_MU,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalNu => MATHEMATICAL_ITALIC_CAPITAL_NU,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalXi => MATHEMATICAL_ITALIC_CAPITAL_XI,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalOmicron => MATHEMATICAL_ITALIC_CAPITAL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalPi => MATHEMATICAL_ITALIC_CAPITAL_PI,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalRho => MATHEMATICAL_ITALIC_CAPITAL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalThetaSymbol => MATHEMATICAL_ITALIC_CAPITAL_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalSigma => MATHEMATICAL_ITALIC_CAPITAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalTau => MATHEMATICAL_ITALIC_CAPITAL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalUpsilon => MATHEMATICAL_ITALIC_CAPITAL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalPhi => MATHEMATICAL_ITALIC_CAPITAL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalChi => MATHEMATICAL_ITALIC_CAPITAL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalPsi => MATHEMATICAL_ITALIC_CAPITAL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalItalicCapitalOmega => MATHEMATICAL_ITALIC_CAPITAL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalItalicNabla => MATHEMATICAL_ITALIC_NABLA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallAlpha => MATHEMATICAL_ITALIC_SMALL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallBeta => MATHEMATICAL_ITALIC_SMALL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallGamma => MATHEMATICAL_ITALIC_SMALL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallDelta => MATHEMATICAL_ITALIC_SMALL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallEpsilon => MATHEMATICAL_ITALIC_SMALL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallZeta => MATHEMATICAL_ITALIC_SMALL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallEta => MATHEMATICAL_ITALIC_SMALL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallTheta => MATHEMATICAL_ITALIC_SMALL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallIota => MATHEMATICAL_ITALIC_SMALL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallKappa => MATHEMATICAL_ITALIC_SMALL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallLamda => MATHEMATICAL_ITALIC_SMALL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallMu => MATHEMATICAL_ITALIC_SMALL_MU,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallNu => MATHEMATICAL_ITALIC_SMALL_NU,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallXi => MATHEMATICAL_ITALIC_SMALL_XI,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallOmicron => MATHEMATICAL_ITALIC_SMALL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallPi => MATHEMATICAL_ITALIC_SMALL_PI,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallRho => MATHEMATICAL_ITALIC_SMALL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallFinalSigma => MATHEMATICAL_ITALIC_SMALL_FINAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallSigma => MATHEMATICAL_ITALIC_SMALL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallTau => MATHEMATICAL_ITALIC_SMALL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallUpsilon => MATHEMATICAL_ITALIC_SMALL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallPhi => MATHEMATICAL_ITALIC_SMALL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallChi => MATHEMATICAL_ITALIC_SMALL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallPsi => MATHEMATICAL_ITALIC_SMALL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalItalicSmallOmega => MATHEMATICAL_ITALIC_SMALL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalItalicPartialDifferential => MATHEMATICAL_ITALIC_PARTIAL_DIFFERENTIAL,
-            MathematicalAlphanumericSymbols::MathematicalItalicEpsilonSymbol => MATHEMATICAL_ITALIC_EPSILON_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalItalicThetaSymbol => MATHEMATICAL_ITALIC_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalItalicKappaSymbol => MATHEMATICAL_ITALIC_KAPPA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalItalicPhiSymbol => MATHEMATICAL_ITALIC_PHI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalItalicRhoSymbol => MATHEMATICAL_ITALIC_RHO_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalItalicPiSymbol => MATHEMATICAL_ITALIC_PI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalAlpha => MATHEMATICAL_BOLD_ITALIC_CAPITAL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalBeta => MATHEMATICAL_BOLD_ITALIC_CAPITAL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalGamma => MATHEMATICAL_BOLD_ITALIC_CAPITAL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalDelta => MATHEMATICAL_BOLD_ITALIC_CAPITAL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalEpsilon => MATHEMATICAL_BOLD_ITALIC_CAPITAL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalZeta => MATHEMATICAL_BOLD_ITALIC_CAPITAL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalEta => MATHEMATICAL_BOLD_ITALIC_CAPITAL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalTheta => MATHEMATICAL_BOLD_ITALIC_CAPITAL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalIota => MATHEMATICAL_BOLD_ITALIC_CAPITAL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalKappa => MATHEMATICAL_BOLD_ITALIC_CAPITAL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalLamda => MATHEMATICAL_BOLD_ITALIC_CAPITAL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalMu => MATHEMATICAL_BOLD_ITALIC_CAPITAL_MU,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalNu => MATHEMATICAL_BOLD_ITALIC_CAPITAL_NU,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalXi => MATHEMATICAL_BOLD_ITALIC_CAPITAL_XI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalOmicron => MATHEMATICAL_BOLD_ITALIC_CAPITAL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPi => MATHEMATICAL_BOLD_ITALIC_CAPITAL_PI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalRho => MATHEMATICAL_BOLD_ITALIC_CAPITAL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalThetaSymbol => MATHEMATICAL_BOLD_ITALIC_CAPITAL_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalSigma => MATHEMATICAL_BOLD_ITALIC_CAPITAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalTau => MATHEMATICAL_BOLD_ITALIC_CAPITAL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalUpsilon => MATHEMATICAL_BOLD_ITALIC_CAPITAL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPhi => MATHEMATICAL_BOLD_ITALIC_CAPITAL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalChi => MATHEMATICAL_BOLD_ITALIC_CAPITAL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPsi => MATHEMATICAL_BOLD_ITALIC_CAPITAL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalOmega => MATHEMATICAL_BOLD_ITALIC_CAPITAL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicNabla => MATHEMATICAL_BOLD_ITALIC_NABLA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallAlpha => MATHEMATICAL_BOLD_ITALIC_SMALL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallBeta => MATHEMATICAL_BOLD_ITALIC_SMALL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallGamma => MATHEMATICAL_BOLD_ITALIC_SMALL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallDelta => MATHEMATICAL_BOLD_ITALIC_SMALL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallEpsilon => MATHEMATICAL_BOLD_ITALIC_SMALL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallZeta => MATHEMATICAL_BOLD_ITALIC_SMALL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallEta => MATHEMATICAL_BOLD_ITALIC_SMALL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallTheta => MATHEMATICAL_BOLD_ITALIC_SMALL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallIota => MATHEMATICAL_BOLD_ITALIC_SMALL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallKappa => MATHEMATICAL_BOLD_ITALIC_SMALL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallLamda => MATHEMATICAL_BOLD_ITALIC_SMALL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallMu => MATHEMATICAL_BOLD_ITALIC_SMALL_MU,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallNu => MATHEMATICAL_BOLD_ITALIC_SMALL_NU,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallXi => MATHEMATICAL_BOLD_ITALIC_SMALL_XI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallOmicron => MATHEMATICAL_BOLD_ITALIC_SMALL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPi => MATHEMATICAL_BOLD_ITALIC_SMALL_PI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallRho => MATHEMATICAL_BOLD_ITALIC_SMALL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallFinalSigma => MATHEMATICAL_BOLD_ITALIC_SMALL_FINAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallSigma => MATHEMATICAL_BOLD_ITALIC_SMALL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallTau => MATHEMATICAL_BOLD_ITALIC_SMALL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallUpsilon => MATHEMATICAL_BOLD_ITALIC_SMALL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPhi => MATHEMATICAL_BOLD_ITALIC_SMALL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallChi => MATHEMATICAL_BOLD_ITALIC_SMALL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPsi => MATHEMATICAL_BOLD_ITALIC_SMALL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallOmega => MATHEMATICAL_BOLD_ITALIC_SMALL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicPartialDifferential => MATHEMATICAL_BOLD_ITALIC_PARTIAL_DIFFERENTIAL,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicEpsilonSymbol => MATHEMATICAL_BOLD_ITALIC_EPSILON_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicThetaSymbol => MATHEMATICAL_BOLD_ITALIC_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicKappaSymbol => MATHEMATICAL_BOLD_ITALIC_KAPPA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicPhiSymbol => MATHEMATICAL_BOLD_ITALIC_PHI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicRhoSymbol => MATHEMATICAL_BOLD_ITALIC_RHO_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldItalicPiSymbol => MATHEMATICAL_BOLD_ITALIC_PI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalAlpha => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalBeta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalGamma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalDelta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalEpsilon => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalZeta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalEta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalTheta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalIota => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalKappa => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalLamda => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalMu => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_MU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalNu => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_NU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalXi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_XI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalOmicron => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_PI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalRho => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalThetaSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalSigma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalTau => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalUpsilon => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPhi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalChi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPsi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalOmega => MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldNabla => MATHEMATICAL_SANS_DASH_SERIF_BOLD_NABLA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallAlpha => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallBeta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallGamma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallDelta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallEpsilon => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallZeta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallEta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallTheta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallIota => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallKappa => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallLamda => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallMu => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_MU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallNu => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_NU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallXi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_XI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallOmicron => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_PI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallRho => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallFinalSigma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_FINAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallSigma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallTau => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallUpsilon => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPhi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallChi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPsi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallOmega => MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPartialDifferential => MATHEMATICAL_SANS_DASH_SERIF_BOLD_PARTIAL_DIFFERENTIAL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldEpsilonSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_EPSILON_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldThetaSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldKappaSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_KAPPA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPhiSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_PHI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldRhoSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_RHO_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPiSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_PI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalAlpha => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalBeta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalGamma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalDelta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalEpsilon => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalZeta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalEta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalTheta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalIota => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalKappa => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalLamda => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalMu => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_MU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalNu => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_NU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalXi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_XI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalOmicron => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_PI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalRho => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalThetaSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalSigma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalTau => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalUpsilon => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPhi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalChi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPsi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalOmega => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicNabla => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_NABLA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallAlpha => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_ALPHA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallBeta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_BETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallGamma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_GAMMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallDelta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_DELTA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallEpsilon => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_EPSILON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallZeta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_ZETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallEta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_ETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallTheta => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_THETA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallIota => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_IOTA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallKappa => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_KAPPA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallLamda => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_LAMDA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallMu => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_MU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallNu => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_NU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallXi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_XI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallOmicron => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_OMICRON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_PI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallRho => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_RHO,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallFinalSigma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_FINAL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallSigma => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_SIGMA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallTau => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_TAU,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallUpsilon => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_UPSILON,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPhi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_PHI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallChi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_CHI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPsi => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_PSI,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallOmega => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_OMEGA,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPartialDifferential => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_PARTIAL_DIFFERENTIAL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicEpsilonSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_EPSILON_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicThetaSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_THETA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicKappaSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_KAPPA_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPhiSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_PHI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicRhoSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_RHO_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPiSymbol => MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_PI_SYMBOL,
-            MathematicalAlphanumericSymbols::MathematicalBoldCapitalDigamma => MATHEMATICAL_BOLD_CAPITAL_DIGAMMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldSmallDigamma => MATHEMATICAL_BOLD_SMALL_DIGAMMA,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitZero => MATHEMATICAL_BOLD_DIGIT_ZERO,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitOne => MATHEMATICAL_BOLD_DIGIT_ONE,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitTwo => MATHEMATICAL_BOLD_DIGIT_TWO,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitThree => MATHEMATICAL_BOLD_DIGIT_THREE,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitFour => MATHEMATICAL_BOLD_DIGIT_FOUR,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitFive => MATHEMATICAL_BOLD_DIGIT_FIVE,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitSix => MATHEMATICAL_BOLD_DIGIT_SIX,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitSeven => MATHEMATICAL_BOLD_DIGIT_SEVEN,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitEight => MATHEMATICAL_BOLD_DIGIT_EIGHT,
-            MathematicalAlphanumericSymbols::MathematicalBoldDigitNine => MATHEMATICAL_BOLD_DIGIT_NINE,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitZero => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_ZERO,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitOne => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_ONE,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitTwo => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_TWO,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitThree => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_THREE,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitFour => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_FOUR,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitFive => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_FIVE,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitSix => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_SIX,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitSeven => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_SEVEN,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitEight => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_EIGHT,
-            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitNine => MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_NINE,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitZero => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_ZERO,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitOne => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_ONE,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitTwo => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_TWO,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitThree => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_THREE,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitFour => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_FOUR,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitFive => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_FIVE,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitSix => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_SIX,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitSeven => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_SEVEN,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitEight => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_EIGHT,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitNine => MATHEMATICAL_SANS_DASH_SERIF_DIGIT_NINE,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitZero => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_ZERO,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitOne => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_ONE,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitTwo => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_TWO,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitThree => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_THREE,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitFour => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_FOUR,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitFive => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_FIVE,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitSix => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_SIX,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitSeven => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_SEVEN,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitEight => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_EIGHT,
-            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitNine => MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_NINE,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitZero => MATHEMATICAL_MONOSPACE_DIGIT_ZERO,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitOne => MATHEMATICAL_MONOSPACE_DIGIT_ONE,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitTwo => MATHEMATICAL_MONOSPACE_DIGIT_TWO,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitThree => MATHEMATICAL_MONOSPACE_DIGIT_THREE,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitFour => MATHEMATICAL_MONOSPACE_DIGIT_FOUR,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitFive => MATHEMATICAL_MONOSPACE_DIGIT_FIVE,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitSix => MATHEMATICAL_MONOSPACE_DIGIT_SIX,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitSeven => MATHEMATICAL_MONOSPACE_DIGIT_SEVEN,
-            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitEight => MATHEMATICAL_MONOSPACE_DIGIT_EIGHT,
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalA => '𝐀',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalB => '𝐁',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalC => '𝐂',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalD => '𝐃',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalE => '𝐄',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalF => '𝐅',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalG => '𝐆',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalH => '𝐇',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalI => '𝐈',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalJ => '𝐉',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalK => '𝐊',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalL => '𝐋',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalM => '𝐌',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalN => '𝐍',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalO => '𝐎',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalP => '𝐏',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalQ => '𝐐',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalR => '𝐑',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalS => '𝐒',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalT => '𝐓',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalU => '𝐔',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalV => '𝐕',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalW => '𝐖',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalX => '𝐗',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalY => '𝐘',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalZ => '𝐙',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallA => '𝐚',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallB => '𝐛',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallC => '𝐜',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallD => '𝐝',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallE => '𝐞',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallF => '𝐟',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallG => '𝐠',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallH => '𝐡',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallI => '𝐢',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallJ => '𝐣',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallK => '𝐤',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallL => '𝐥',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallM => '𝐦',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallN => '𝐧',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallO => '𝐨',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallP => '𝐩',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallQ => '𝐪',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallR => '𝐫',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallS => '𝐬',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallT => '𝐭',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallU => '𝐮',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallV => '𝐯',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallW => '𝐰',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallX => '𝐱',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallY => '𝐲',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallZ => '𝐳',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalA => '𝐴',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalB => '𝐵',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalC => '𝐶',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalD => '𝐷',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalE => '𝐸',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalF => '𝐹',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalG => '𝐺',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalH => '𝐻',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalI => '𝐼',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalJ => '𝐽',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalK => '𝐾',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalL => '𝐿',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalM => '𝑀',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalN => '𝑁',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalO => '𝑂',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalP => '𝑃',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalQ => '𝑄',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalR => '𝑅',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalS => '𝑆',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalT => '𝑇',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalU => '𝑈',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalV => '𝑉',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalW => '𝑊',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalX => '𝑋',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalY => '𝑌',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalZ => '𝑍',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallA => '𝑎',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallB => '𝑏',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallC => '𝑐',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallD => '𝑑',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallE => '𝑒',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallF => '𝑓',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallG => '𝑔',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallI => '𝑖',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallJ => '𝑗',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallK => '𝑘',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallL => '𝑙',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallM => '𝑚',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallN => '𝑛',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallO => '𝑜',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallP => '𝑝',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallQ => '𝑞',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallR => '𝑟',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallS => '𝑠',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallT => '𝑡',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallU => '𝑢',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallV => '𝑣',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallW => '𝑤',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallX => '𝑥',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallY => '𝑦',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallZ => '𝑧',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalA => '𝑨',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalB => '𝑩',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalC => '𝑪',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalD => '𝑫',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalE => '𝑬',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalF => '𝑭',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalG => '𝑮',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalH => '𝑯',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalI => '𝑰',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalJ => '𝑱',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalK => '𝑲',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalL => '𝑳',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalM => '𝑴',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalN => '𝑵',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalO => '𝑶',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalP => '𝑷',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalQ => '𝑸',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalR => '𝑹',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalS => '𝑺',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalT => '𝑻',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalU => '𝑼',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalV => '𝑽',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalW => '𝑾',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalX => '𝑿',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalY => '𝒀',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalZ => '𝒁',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallA => '𝒂',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallB => '𝒃',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallC => '𝒄',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallD => '𝒅',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallE => '𝒆',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallF => '𝒇',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallG => '𝒈',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallH => '𝒉',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallI => '𝒊',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallJ => '𝒋',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallK => '𝒌',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallL => '𝒍',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallM => '𝒎',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallN => '𝒏',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallO => '𝒐',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallP => '𝒑',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallQ => '𝒒',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallR => '𝒓',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallS => '𝒔',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallT => '𝒕',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallU => '𝒖',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallV => '𝒗',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallW => '𝒘',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallX => '𝒙',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallY => '𝒚',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallZ => '𝒛',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalA => '𝒜',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalC => '𝒞',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalD => '𝒟',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalG => '𝒢',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalJ => '𝒥',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalK => '𝒦',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalN => '𝒩',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalO => '𝒪',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalP => '𝒫',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalQ => '𝒬',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalS => '𝒮',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalT => '𝒯',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalU => '𝒰',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalV => '𝒱',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalW => '𝒲',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalX => '𝒳',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalY => '𝒴',
+            MathematicalAlphanumericSymbols::MathematicalScriptCapitalZ => '𝒵',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallA => '𝒶',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallB => '𝒷',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallC => '𝒸',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallD => '𝒹',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallF => '𝒻',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallH => '𝒽',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallI => '𝒾',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallJ => '𝒿',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallK => '𝓀',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallL => '𝓁',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallM => '𝓂',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallN => '𝓃',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallP => '𝓅',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallQ => '𝓆',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallR => '𝓇',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallS => '𝓈',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallT => '𝓉',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallU => '𝓊',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallV => '𝓋',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallW => '𝓌',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallX => '𝓍',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallY => '𝓎',
+            MathematicalAlphanumericSymbols::MathematicalScriptSmallZ => '𝓏',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalA => '𝓐',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalB => '𝓑',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalC => '𝓒',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalD => '𝓓',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalE => '𝓔',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalF => '𝓕',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalG => '𝓖',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalH => '𝓗',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalI => '𝓘',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalJ => '𝓙',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalK => '𝓚',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalL => '𝓛',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalM => '𝓜',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalN => '𝓝',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalO => '𝓞',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalP => '𝓟',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalQ => '𝓠',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalR => '𝓡',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalS => '𝓢',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalT => '𝓣',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalU => '𝓤',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalV => '𝓥',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalW => '𝓦',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalX => '𝓧',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalY => '𝓨',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalZ => '𝓩',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallA => '𝓪',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallB => '𝓫',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallC => '𝓬',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallD => '𝓭',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallE => '𝓮',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallF => '𝓯',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallG => '𝓰',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallH => '𝓱',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallI => '𝓲',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallJ => '𝓳',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallK => '𝓴',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallL => '𝓵',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallM => '𝓶',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallN => '𝓷',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallO => '𝓸',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallP => '𝓹',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallQ => '𝓺',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallR => '𝓻',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallS => '𝓼',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallT => '𝓽',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallU => '𝓾',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallV => '𝓿',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallW => '𝔀',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallX => '𝔁',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallY => '𝔂',
+            MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallZ => '𝔃',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalA => '𝔄',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalB => '𝔅',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalD => '𝔇',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalE => '𝔈',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalF => '𝔉',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalG => '𝔊',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalJ => '𝔍',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalK => '𝔎',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalL => '𝔏',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalM => '𝔐',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalN => '𝔑',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalO => '𝔒',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalP => '𝔓',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalQ => '𝔔',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalS => '𝔖',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalT => '𝔗',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalU => '𝔘',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalV => '𝔙',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalW => '𝔚',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalX => '𝔛',
+            MathematicalAlphanumericSymbols::MathematicalFrakturCapitalY => '𝔜',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallA => '𝔞',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallB => '𝔟',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallC => '𝔠',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallD => '𝔡',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallE => '𝔢',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallF => '𝔣',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallG => '𝔤',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallH => '𝔥',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallI => '𝔦',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallJ => '𝔧',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallK => '𝔨',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallL => '𝔩',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallM => '𝔪',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallN => '𝔫',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallO => '𝔬',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallP => '𝔭',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallQ => '𝔮',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallR => '𝔯',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallS => '𝔰',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallT => '𝔱',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallU => '𝔲',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallV => '𝔳',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallW => '𝔴',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallX => '𝔵',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallY => '𝔶',
+            MathematicalAlphanumericSymbols::MathematicalFrakturSmallZ => '𝔷',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalA => '𝔸',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalB => '𝔹',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalD => '𝔻',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalE => '𝔼',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalF => '𝔽',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalG => '𝔾',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalI => '𝕀',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalJ => '𝕁',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalK => '𝕂',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalL => '𝕃',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalM => '𝕄',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalO => '𝕆',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalS => '𝕊',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalT => '𝕋',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalU => '𝕌',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalV => '𝕍',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalW => '𝕎',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalX => '𝕏',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalY => '𝕐',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallA => '𝕒',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallB => '𝕓',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallC => '𝕔',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallD => '𝕕',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallE => '𝕖',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallF => '𝕗',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallG => '𝕘',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallH => '𝕙',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallI => '𝕚',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallJ => '𝕛',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallK => '𝕜',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallL => '𝕝',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallM => '𝕞',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallN => '𝕟',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallO => '𝕠',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallP => '𝕡',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallQ => '𝕢',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallR => '𝕣',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallS => '𝕤',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallT => '𝕥',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallU => '𝕦',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallV => '𝕧',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallW => '𝕨',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallX => '𝕩',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallY => '𝕪',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallZ => '𝕫',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalA => '𝕬',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalB => '𝕭',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalC => '𝕮',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalD => '𝕯',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalE => '𝕰',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalF => '𝕱',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalG => '𝕲',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalH => '𝕳',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalI => '𝕴',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalJ => '𝕵',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalK => '𝕶',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalL => '𝕷',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalM => '𝕸',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalN => '𝕹',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalO => '𝕺',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalP => '𝕻',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalQ => '𝕼',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalR => '𝕽',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalS => '𝕾',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalT => '𝕿',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalU => '𝖀',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalV => '𝖁',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalW => '𝖂',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalX => '𝖃',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalY => '𝖄',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalZ => '𝖅',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallA => '𝖆',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallB => '𝖇',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallC => '𝖈',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallD => '𝖉',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallE => '𝖊',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallF => '𝖋',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallG => '𝖌',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallH => '𝖍',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallI => '𝖎',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallJ => '𝖏',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallK => '𝖐',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallL => '𝖑',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallM => '𝖒',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallN => '𝖓',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallO => '𝖔',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallP => '𝖕',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallQ => '𝖖',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallR => '𝖗',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallS => '𝖘',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallT => '𝖙',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallU => '𝖚',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallV => '𝖛',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallW => '𝖜',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallX => '𝖝',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallY => '𝖞',
+            MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallZ => '𝖟',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalA => '𝖠',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalB => '𝖡',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalC => '𝖢',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalD => '𝖣',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalE => '𝖤',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalF => '𝖥',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalG => '𝖦',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalH => '𝖧',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalI => '𝖨',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalJ => '𝖩',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalK => '𝖪',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalL => '𝖫',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalM => '𝖬',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalN => '𝖭',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalO => '𝖮',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalP => '𝖯',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalQ => '𝖰',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalR => '𝖱',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalS => '𝖲',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalT => '𝖳',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalU => '𝖴',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalV => '𝖵',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalW => '𝖶',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalX => '𝖷',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalY => '𝖸',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalZ => '𝖹',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallA => '𝖺',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallB => '𝖻',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallC => '𝖼',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallD => '𝖽',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallE => '𝖾',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallF => '𝖿',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallG => '𝗀',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallH => '𝗁',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallI => '𝗂',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallJ => '𝗃',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallK => '𝗄',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallL => '𝗅',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallM => '𝗆',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallN => '𝗇',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallO => '𝗈',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallP => '𝗉',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallQ => '𝗊',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallR => '𝗋',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallS => '𝗌',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallT => '𝗍',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallU => '𝗎',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallV => '𝗏',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallW => '𝗐',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallX => '𝗑',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallY => '𝗒',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallZ => '𝗓',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalA => '𝗔',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalB => '𝗕',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalC => '𝗖',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalD => '𝗗',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalE => '𝗘',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalF => '𝗙',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalG => '𝗚',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalH => '𝗛',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalI => '𝗜',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalJ => '𝗝',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalK => '𝗞',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalL => '𝗟',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalM => '𝗠',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalN => '𝗡',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalO => '𝗢',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalP => '𝗣',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalQ => '𝗤',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalR => '𝗥',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalS => '𝗦',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalT => '𝗧',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalU => '𝗨',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalV => '𝗩',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalW => '𝗪',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalX => '𝗫',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalY => '𝗬',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalZ => '𝗭',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallA => '𝗮',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallB => '𝗯',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallC => '𝗰',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallD => '𝗱',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallE => '𝗲',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallF => '𝗳',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallG => '𝗴',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallH => '𝗵',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallI => '𝗶',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallJ => '𝗷',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallK => '𝗸',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallL => '𝗹',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallM => '𝗺',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallN => '𝗻',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallO => '𝗼',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallP => '𝗽',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallQ => '𝗾',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallR => '𝗿',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallS => '𝘀',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallT => '𝘁',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallU => '𝘂',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallV => '𝘃',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallW => '𝘄',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallX => '𝘅',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallY => '𝘆',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallZ => '𝘇',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalA => '𝘈',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalB => '𝘉',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalC => '𝘊',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalD => '𝘋',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalE => '𝘌',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalF => '𝘍',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalG => '𝘎',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalH => '𝘏',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalI => '𝘐',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalJ => '𝘑',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalK => '𝘒',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalL => '𝘓',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalM => '𝘔',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalN => '𝘕',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalO => '𝘖',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalP => '𝘗',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalQ => '𝘘',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalR => '𝘙',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalS => '𝘚',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalT => '𝘛',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalU => '𝘜',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalV => '𝘝',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalW => '𝘞',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalX => '𝘟',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalY => '𝘠',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalZ => '𝘡',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallA => '𝘢',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallB => '𝘣',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallC => '𝘤',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallD => '𝘥',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallE => '𝘦',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallF => '𝘧',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallG => '𝘨',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallH => '𝘩',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallI => '𝘪',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallJ => '𝘫',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallK => '𝘬',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallL => '𝘭',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallM => '𝘮',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallN => '𝘯',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallO => '𝘰',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallP => '𝘱',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallQ => '𝘲',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallR => '𝘳',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallS => '𝘴',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallT => '𝘵',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallU => '𝘶',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallV => '𝘷',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallW => '𝘸',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallX => '𝘹',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallY => '𝘺',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallZ => '𝘻',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalA => '𝘼',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalB => '𝘽',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalC => '𝘾',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalD => '𝘿',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalE => '𝙀',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalF => '𝙁',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalG => '𝙂',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalH => '𝙃',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalI => '𝙄',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalJ => '𝙅',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalK => '𝙆',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalL => '𝙇',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalM => '𝙈',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalN => '𝙉',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalO => '𝙊',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalP => '𝙋',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalQ => '𝙌',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalR => '𝙍',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalS => '𝙎',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalT => '𝙏',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalU => '𝙐',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalV => '𝙑',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalW => '𝙒',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalX => '𝙓',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalY => '𝙔',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalZ => '𝙕',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallA => '𝙖',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallB => '𝙗',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallC => '𝙘',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallD => '𝙙',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallE => '𝙚',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallF => '𝙛',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallG => '𝙜',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallH => '𝙝',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallI => '𝙞',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallJ => '𝙟',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallK => '𝙠',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallL => '𝙡',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallM => '𝙢',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallN => '𝙣',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallO => '𝙤',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallP => '𝙥',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallQ => '𝙦',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallR => '𝙧',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallS => '𝙨',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallT => '𝙩',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallU => '𝙪',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallV => '𝙫',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallW => '𝙬',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallX => '𝙭',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallY => '𝙮',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallZ => '𝙯',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalA => '𝙰',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalB => '𝙱',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalC => '𝙲',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalD => '𝙳',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalE => '𝙴',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalF => '𝙵',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalG => '𝙶',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalH => '𝙷',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalI => '𝙸',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalJ => '𝙹',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalK => '𝙺',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalL => '𝙻',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalM => '𝙼',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalN => '𝙽',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalO => '𝙾',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalP => '𝙿',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalQ => '𝚀',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalR => '𝚁',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalS => '𝚂',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalT => '𝚃',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalU => '𝚄',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalV => '𝚅',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalW => '𝚆',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalX => '𝚇',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalY => '𝚈',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalZ => '𝚉',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallA => '𝚊',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallB => '𝚋',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallC => '𝚌',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallD => '𝚍',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallE => '𝚎',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallF => '𝚏',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallG => '𝚐',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallH => '𝚑',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallI => '𝚒',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallJ => '𝚓',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallK => '𝚔',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallL => '𝚕',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallM => '𝚖',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallN => '𝚗',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallO => '𝚘',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallP => '𝚙',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallQ => '𝚚',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallR => '𝚛',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallS => '𝚜',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallT => '𝚝',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallU => '𝚞',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallV => '𝚟',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallW => '𝚠',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallX => '𝚡',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallY => '𝚢',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceSmallZ => '𝚣',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallDotlessI => '𝚤',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallDotlessJ => '𝚥',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalAlpha => '𝚨',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalBeta => '𝚩',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalGamma => '𝚪',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalDelta => '𝚫',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalEpsilon => '𝚬',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalZeta => '𝚭',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalEta => '𝚮',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalTheta => '𝚯',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalIota => '𝚰',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalKappa => '𝚱',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalLamda => '𝚲',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalMu => '𝚳',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalNu => '𝚴',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalXi => '𝚵',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalOmicron => '𝚶',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalPi => '𝚷',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalRho => '𝚸',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalThetaSymbol => '𝚹',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalSigma => '𝚺',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalTau => '𝚻',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalUpsilon => '𝚼',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalPhi => '𝚽',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalChi => '𝚾',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalPsi => '𝚿',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalOmega => '𝛀',
+            MathematicalAlphanumericSymbols::MathematicalBoldNabla => '𝛁',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallAlpha => '𝛂',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallBeta => '𝛃',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallGamma => '𝛄',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallDelta => '𝛅',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallEpsilon => '𝛆',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallZeta => '𝛇',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallEta => '𝛈',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallTheta => '𝛉',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallIota => '𝛊',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallKappa => '𝛋',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallLamda => '𝛌',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallMu => '𝛍',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallNu => '𝛎',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallXi => '𝛏',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallOmicron => '𝛐',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallPi => '𝛑',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallRho => '𝛒',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallFinalSigma => '𝛓',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallSigma => '𝛔',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallTau => '𝛕',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallUpsilon => '𝛖',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallPhi => '𝛗',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallChi => '𝛘',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallPsi => '𝛙',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallOmega => '𝛚',
+            MathematicalAlphanumericSymbols::MathematicalBoldPartialDifferential => '𝛛',
+            MathematicalAlphanumericSymbols::MathematicalBoldEpsilonSymbol => '𝛜',
+            MathematicalAlphanumericSymbols::MathematicalBoldThetaSymbol => '𝛝',
+            MathematicalAlphanumericSymbols::MathematicalBoldKappaSymbol => '𝛞',
+            MathematicalAlphanumericSymbols::MathematicalBoldPhiSymbol => '𝛟',
+            MathematicalAlphanumericSymbols::MathematicalBoldRhoSymbol => '𝛠',
+            MathematicalAlphanumericSymbols::MathematicalBoldPiSymbol => '𝛡',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalAlpha => '𝛢',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalBeta => '𝛣',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalGamma => '𝛤',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalDelta => '𝛥',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalEpsilon => '𝛦',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalZeta => '𝛧',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalEta => '𝛨',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalTheta => '𝛩',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalIota => '𝛪',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalKappa => '𝛫',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalLamda => '𝛬',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalMu => '𝛭',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalNu => '𝛮',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalXi => '𝛯',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalOmicron => '𝛰',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalPi => '𝛱',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalRho => '𝛲',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalThetaSymbol => '𝛳',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalSigma => '𝛴',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalTau => '𝛵',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalUpsilon => '𝛶',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalPhi => '𝛷',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalChi => '𝛸',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalPsi => '𝛹',
+            MathematicalAlphanumericSymbols::MathematicalItalicCapitalOmega => '𝛺',
+            MathematicalAlphanumericSymbols::MathematicalItalicNabla => '𝛻',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallAlpha => '𝛼',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallBeta => '𝛽',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallGamma => '𝛾',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallDelta => '𝛿',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallEpsilon => '𝜀',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallZeta => '𝜁',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallEta => '𝜂',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallTheta => '𝜃',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallIota => '𝜄',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallKappa => '𝜅',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallLamda => '𝜆',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallMu => '𝜇',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallNu => '𝜈',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallXi => '𝜉',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallOmicron => '𝜊',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallPi => '𝜋',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallRho => '𝜌',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallFinalSigma => '𝜍',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallSigma => '𝜎',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallTau => '𝜏',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallUpsilon => '𝜐',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallPhi => '𝜑',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallChi => '𝜒',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallPsi => '𝜓',
+            MathematicalAlphanumericSymbols::MathematicalItalicSmallOmega => '𝜔',
+            MathematicalAlphanumericSymbols::MathematicalItalicPartialDifferential => '𝜕',
+            MathematicalAlphanumericSymbols::MathematicalItalicEpsilonSymbol => '𝜖',
+            MathematicalAlphanumericSymbols::MathematicalItalicThetaSymbol => '𝜗',
+            MathematicalAlphanumericSymbols::MathematicalItalicKappaSymbol => '𝜘',
+            MathematicalAlphanumericSymbols::MathematicalItalicPhiSymbol => '𝜙',
+            MathematicalAlphanumericSymbols::MathematicalItalicRhoSymbol => '𝜚',
+            MathematicalAlphanumericSymbols::MathematicalItalicPiSymbol => '𝜛',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalAlpha => '𝜜',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalBeta => '𝜝',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalGamma => '𝜞',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalDelta => '𝜟',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalEpsilon => '𝜠',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalZeta => '𝜡',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalEta => '𝜢',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalTheta => '𝜣',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalIota => '𝜤',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalKappa => '𝜥',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalLamda => '𝜦',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalMu => '𝜧',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalNu => '𝜨',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalXi => '𝜩',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalOmicron => '𝜪',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPi => '𝜫',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalRho => '𝜬',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalThetaSymbol => '𝜭',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalSigma => '𝜮',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalTau => '𝜯',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalUpsilon => '𝜰',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPhi => '𝜱',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalChi => '𝜲',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPsi => '𝜳',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalOmega => '𝜴',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicNabla => '𝜵',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallAlpha => '𝜶',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallBeta => '𝜷',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallGamma => '𝜸',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallDelta => '𝜹',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallEpsilon => '𝜺',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallZeta => '𝜻',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallEta => '𝜼',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallTheta => '𝜽',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallIota => '𝜾',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallKappa => '𝜿',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallLamda => '𝝀',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallMu => '𝝁',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallNu => '𝝂',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallXi => '𝝃',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallOmicron => '𝝄',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPi => '𝝅',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallRho => '𝝆',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallFinalSigma => '𝝇',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallSigma => '𝝈',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallTau => '𝝉',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallUpsilon => '𝝊',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPhi => '𝝋',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallChi => '𝝌',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPsi => '𝝍',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallOmega => '𝝎',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicPartialDifferential => '𝝏',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicEpsilonSymbol => '𝝐',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicThetaSymbol => '𝝑',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicKappaSymbol => '𝝒',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicPhiSymbol => '𝝓',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicRhoSymbol => '𝝔',
+            MathematicalAlphanumericSymbols::MathematicalBoldItalicPiSymbol => '𝝕',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalAlpha => '𝝖',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalBeta => '𝝗',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalGamma => '𝝘',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalDelta => '𝝙',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalEpsilon => '𝝚',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalZeta => '𝝛',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalEta => '𝝜',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalTheta => '𝝝',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalIota => '𝝞',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalKappa => '𝝟',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalLamda => '𝝠',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalMu => '𝝡',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalNu => '𝝢',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalXi => '𝝣',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalOmicron => '𝝤',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPi => '𝝥',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalRho => '𝝦',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalThetaSymbol => '𝝧',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalSigma => '𝝨',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalTau => '𝝩',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalUpsilon => '𝝪',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPhi => '𝝫',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalChi => '𝝬',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPsi => '𝝭',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalOmega => '𝝮',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldNabla => '𝝯',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallAlpha => '𝝰',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallBeta => '𝝱',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallGamma => '𝝲',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallDelta => '𝝳',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallEpsilon => '𝝴',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallZeta => '𝝵',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallEta => '𝝶',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallTheta => '𝝷',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallIota => '𝝸',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallKappa => '𝝹',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallLamda => '𝝺',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallMu => '𝝻',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallNu => '𝝼',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallXi => '𝝽',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallOmicron => '𝝾',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPi => '𝝿',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallRho => '𝞀',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallFinalSigma => '𝞁',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallSigma => '𝞂',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallTau => '𝞃',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallUpsilon => '𝞄',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPhi => '𝞅',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallChi => '𝞆',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPsi => '𝞇',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallOmega => '𝞈',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPartialDifferential => '𝞉',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldEpsilonSymbol => '𝞊',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldThetaSymbol => '𝞋',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldKappaSymbol => '𝞌',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPhiSymbol => '𝞍',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldRhoSymbol => '𝞎',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPiSymbol => '𝞏',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalAlpha => '𝞐',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalBeta => '𝞑',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalGamma => '𝞒',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalDelta => '𝞓',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalEpsilon => '𝞔',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalZeta => '𝞕',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalEta => '𝞖',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalTheta => '𝞗',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalIota => '𝞘',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalKappa => '𝞙',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalLamda => '𝞚',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalMu => '𝞛',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalNu => '𝞜',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalXi => '𝞝',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalOmicron => '𝞞',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPi => '𝞟',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalRho => '𝞠',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalThetaSymbol => '𝞡',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalSigma => '𝞢',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalTau => '𝞣',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalUpsilon => '𝞤',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPhi => '𝞥',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalChi => '𝞦',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPsi => '𝞧',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalOmega => '𝞨',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicNabla => '𝞩',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallAlpha => '𝞪',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallBeta => '𝞫',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallGamma => '𝞬',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallDelta => '𝞭',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallEpsilon => '𝞮',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallZeta => '𝞯',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallEta => '𝞰',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallTheta => '𝞱',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallIota => '𝞲',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallKappa => '𝞳',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallLamda => '𝞴',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallMu => '𝞵',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallNu => '𝞶',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallXi => '𝞷',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallOmicron => '𝞸',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPi => '𝞹',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallRho => '𝞺',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallFinalSigma => '𝞻',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallSigma => '𝞼',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallTau => '𝞽',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallUpsilon => '𝞾',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPhi => '𝞿',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallChi => '𝟀',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPsi => '𝟁',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallOmega => '𝟂',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPartialDifferential => '𝟃',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicEpsilonSymbol => '𝟄',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicThetaSymbol => '𝟅',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicKappaSymbol => '𝟆',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPhiSymbol => '𝟇',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicRhoSymbol => '𝟈',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPiSymbol => '𝟉',
+            MathematicalAlphanumericSymbols::MathematicalBoldCapitalDigamma => '𝟊',
+            MathematicalAlphanumericSymbols::MathematicalBoldSmallDigamma => '𝟋',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitZero => '𝟎',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitOne => '𝟏',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitTwo => '𝟐',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitThree => '𝟑',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitFour => '𝟒',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitFive => '𝟓',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitSix => '𝟔',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitSeven => '𝟕',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitEight => '𝟖',
+            MathematicalAlphanumericSymbols::MathematicalBoldDigitNine => '𝟗',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitZero => '𝟘',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitOne => '𝟙',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitTwo => '𝟚',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitThree => '𝟛',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitFour => '𝟜',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitFive => '𝟝',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitSix => '𝟞',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitSeven => '𝟟',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitEight => '𝟠',
+            MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitNine => '𝟡',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitZero => '𝟢',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitOne => '𝟣',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitTwo => '𝟤',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitThree => '𝟥',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitFour => '𝟦',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitFive => '𝟧',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitSix => '𝟨',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitSeven => '𝟩',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitEight => '𝟪',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitNine => '𝟫',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitZero => '𝟬',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitOne => '𝟭',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitTwo => '𝟮',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitThree => '𝟯',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitFour => '𝟰',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitFive => '𝟱',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitSix => '𝟲',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitSeven => '𝟳',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitEight => '𝟴',
+            MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitNine => '𝟵',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitZero => '𝟶',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitOne => '𝟷',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitTwo => '𝟸',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitThree => '𝟹',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitFour => '𝟺',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitFive => '𝟻',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitSix => '𝟼',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitSeven => '𝟽',
+            MathematicalAlphanumericSymbols::MathematicalMonospaceDigitEight => '𝟾',
         }
     }
 }
@@ -4993,1003 +2999,1002 @@ impl Into<char> for MathematicalAlphanumericSymbols {
 impl std::convert::TryFrom<char> for MathematicalAlphanumericSymbols {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            MATHEMATICAL_BOLD_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalA),
-            MATHEMATICAL_BOLD_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalB),
-            MATHEMATICAL_BOLD_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalC),
-            MATHEMATICAL_BOLD_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalD),
-            MATHEMATICAL_BOLD_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalE),
-            MATHEMATICAL_BOLD_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalF),
-            MATHEMATICAL_BOLD_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalG),
-            MATHEMATICAL_BOLD_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalH),
-            MATHEMATICAL_BOLD_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalI),
-            MATHEMATICAL_BOLD_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalJ),
-            MATHEMATICAL_BOLD_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalK),
-            MATHEMATICAL_BOLD_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalL),
-            MATHEMATICAL_BOLD_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalM),
-            MATHEMATICAL_BOLD_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalN),
-            MATHEMATICAL_BOLD_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalO),
-            MATHEMATICAL_BOLD_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalP),
-            MATHEMATICAL_BOLD_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalQ),
-            MATHEMATICAL_BOLD_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalR),
-            MATHEMATICAL_BOLD_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalS),
-            MATHEMATICAL_BOLD_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalT),
-            MATHEMATICAL_BOLD_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalU),
-            MATHEMATICAL_BOLD_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalV),
-            MATHEMATICAL_BOLD_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalW),
-            MATHEMATICAL_BOLD_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalX),
-            MATHEMATICAL_BOLD_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalY),
-            MATHEMATICAL_BOLD_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalZ),
-            MATHEMATICAL_BOLD_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallA),
-            MATHEMATICAL_BOLD_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallB),
-            MATHEMATICAL_BOLD_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallC),
-            MATHEMATICAL_BOLD_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallD),
-            MATHEMATICAL_BOLD_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallE),
-            MATHEMATICAL_BOLD_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallF),
-            MATHEMATICAL_BOLD_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallG),
-            MATHEMATICAL_BOLD_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallH),
-            MATHEMATICAL_BOLD_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallI),
-            MATHEMATICAL_BOLD_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallJ),
-            MATHEMATICAL_BOLD_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallK),
-            MATHEMATICAL_BOLD_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallL),
-            MATHEMATICAL_BOLD_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallM),
-            MATHEMATICAL_BOLD_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallN),
-            MATHEMATICAL_BOLD_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallO),
-            MATHEMATICAL_BOLD_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallP),
-            MATHEMATICAL_BOLD_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallQ),
-            MATHEMATICAL_BOLD_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallR),
-            MATHEMATICAL_BOLD_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallS),
-            MATHEMATICAL_BOLD_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallT),
-            MATHEMATICAL_BOLD_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallU),
-            MATHEMATICAL_BOLD_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallV),
-            MATHEMATICAL_BOLD_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallW),
-            MATHEMATICAL_BOLD_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallX),
-            MATHEMATICAL_BOLD_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallY),
-            MATHEMATICAL_BOLD_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallZ),
-            MATHEMATICAL_ITALIC_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalA),
-            MATHEMATICAL_ITALIC_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalB),
-            MATHEMATICAL_ITALIC_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalC),
-            MATHEMATICAL_ITALIC_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalD),
-            MATHEMATICAL_ITALIC_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalE),
-            MATHEMATICAL_ITALIC_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalF),
-            MATHEMATICAL_ITALIC_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalG),
-            MATHEMATICAL_ITALIC_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalH),
-            MATHEMATICAL_ITALIC_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalI),
-            MATHEMATICAL_ITALIC_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalJ),
-            MATHEMATICAL_ITALIC_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalK),
-            MATHEMATICAL_ITALIC_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalL),
-            MATHEMATICAL_ITALIC_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalM),
-            MATHEMATICAL_ITALIC_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalN),
-            MATHEMATICAL_ITALIC_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalO),
-            MATHEMATICAL_ITALIC_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalP),
-            MATHEMATICAL_ITALIC_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalQ),
-            MATHEMATICAL_ITALIC_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalR),
-            MATHEMATICAL_ITALIC_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalS),
-            MATHEMATICAL_ITALIC_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalT),
-            MATHEMATICAL_ITALIC_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalU),
-            MATHEMATICAL_ITALIC_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalV),
-            MATHEMATICAL_ITALIC_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalW),
-            MATHEMATICAL_ITALIC_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalX),
-            MATHEMATICAL_ITALIC_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalY),
-            MATHEMATICAL_ITALIC_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalZ),
-            MATHEMATICAL_ITALIC_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallA),
-            MATHEMATICAL_ITALIC_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallB),
-            MATHEMATICAL_ITALIC_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallC),
-            MATHEMATICAL_ITALIC_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallD),
-            MATHEMATICAL_ITALIC_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallE),
-            MATHEMATICAL_ITALIC_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallF),
-            MATHEMATICAL_ITALIC_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallG),
-            MATHEMATICAL_ITALIC_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallI),
-            MATHEMATICAL_ITALIC_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallJ),
-            MATHEMATICAL_ITALIC_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallK),
-            MATHEMATICAL_ITALIC_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallL),
-            MATHEMATICAL_ITALIC_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallM),
-            MATHEMATICAL_ITALIC_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallN),
-            MATHEMATICAL_ITALIC_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallO),
-            MATHEMATICAL_ITALIC_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallP),
-            MATHEMATICAL_ITALIC_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallQ),
-            MATHEMATICAL_ITALIC_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallR),
-            MATHEMATICAL_ITALIC_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallS),
-            MATHEMATICAL_ITALIC_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallT),
-            MATHEMATICAL_ITALIC_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallU),
-            MATHEMATICAL_ITALIC_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallV),
-            MATHEMATICAL_ITALIC_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallW),
-            MATHEMATICAL_ITALIC_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallX),
-            MATHEMATICAL_ITALIC_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallY),
-            MATHEMATICAL_ITALIC_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallZ),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalA),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalB),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalC),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalD),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalE),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalF),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalG),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalH),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalI),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalJ),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalK),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalL),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalM),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalN),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalO),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalP),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalQ),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalR),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalS),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalT),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalU),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalV),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalW),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalX),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalY),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalZ),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallA),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallB),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallC),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallD),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallE),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallF),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallG),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallH),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallI),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallJ),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallK),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallL),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallM),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallN),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallO),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallP),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallQ),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallR),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallS),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallT),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallU),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallV),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallW),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallX),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallY),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallZ),
-            MATHEMATICAL_SCRIPT_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalA),
-            MATHEMATICAL_SCRIPT_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalC),
-            MATHEMATICAL_SCRIPT_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalD),
-            MATHEMATICAL_SCRIPT_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalG),
-            MATHEMATICAL_SCRIPT_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalJ),
-            MATHEMATICAL_SCRIPT_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalK),
-            MATHEMATICAL_SCRIPT_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalN),
-            MATHEMATICAL_SCRIPT_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalO),
-            MATHEMATICAL_SCRIPT_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalP),
-            MATHEMATICAL_SCRIPT_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalQ),
-            MATHEMATICAL_SCRIPT_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalS),
-            MATHEMATICAL_SCRIPT_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalT),
-            MATHEMATICAL_SCRIPT_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalU),
-            MATHEMATICAL_SCRIPT_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalV),
-            MATHEMATICAL_SCRIPT_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalW),
-            MATHEMATICAL_SCRIPT_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalX),
-            MATHEMATICAL_SCRIPT_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalY),
-            MATHEMATICAL_SCRIPT_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalZ),
-            MATHEMATICAL_SCRIPT_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallA),
-            MATHEMATICAL_SCRIPT_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallB),
-            MATHEMATICAL_SCRIPT_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallC),
-            MATHEMATICAL_SCRIPT_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallD),
-            MATHEMATICAL_SCRIPT_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallF),
-            MATHEMATICAL_SCRIPT_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallH),
-            MATHEMATICAL_SCRIPT_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallI),
-            MATHEMATICAL_SCRIPT_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallJ),
-            MATHEMATICAL_SCRIPT_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallK),
-            MATHEMATICAL_SCRIPT_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallL),
-            MATHEMATICAL_SCRIPT_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallM),
-            MATHEMATICAL_SCRIPT_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallN),
-            MATHEMATICAL_SCRIPT_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallP),
-            MATHEMATICAL_SCRIPT_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallQ),
-            MATHEMATICAL_SCRIPT_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallR),
-            MATHEMATICAL_SCRIPT_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallS),
-            MATHEMATICAL_SCRIPT_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallT),
-            MATHEMATICAL_SCRIPT_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallU),
-            MATHEMATICAL_SCRIPT_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallV),
-            MATHEMATICAL_SCRIPT_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallW),
-            MATHEMATICAL_SCRIPT_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallX),
-            MATHEMATICAL_SCRIPT_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallY),
-            MATHEMATICAL_SCRIPT_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallZ),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalA),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalB),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalC),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalD),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalE),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalF),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalG),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalH),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalI),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalJ),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalK),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalL),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalM),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalN),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalO),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalP),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalQ),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalR),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalS),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalT),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalU),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalV),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalW),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalX),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalY),
-            MATHEMATICAL_BOLD_SCRIPT_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalZ),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallA),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallB),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallC),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallD),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallE),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallF),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallG),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallH),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallI),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallJ),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallK),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallL),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallM),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallN),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallO),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallP),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallQ),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallR),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallS),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallT),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallU),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallV),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallW),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallX),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallY),
-            MATHEMATICAL_BOLD_SCRIPT_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallZ),
-            MATHEMATICAL_FRAKTUR_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalA),
-            MATHEMATICAL_FRAKTUR_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalB),
-            MATHEMATICAL_FRAKTUR_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalD),
-            MATHEMATICAL_FRAKTUR_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalE),
-            MATHEMATICAL_FRAKTUR_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalF),
-            MATHEMATICAL_FRAKTUR_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalG),
-            MATHEMATICAL_FRAKTUR_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalJ),
-            MATHEMATICAL_FRAKTUR_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalK),
-            MATHEMATICAL_FRAKTUR_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalL),
-            MATHEMATICAL_FRAKTUR_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalM),
-            MATHEMATICAL_FRAKTUR_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalN),
-            MATHEMATICAL_FRAKTUR_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalO),
-            MATHEMATICAL_FRAKTUR_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalP),
-            MATHEMATICAL_FRAKTUR_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalQ),
-            MATHEMATICAL_FRAKTUR_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalS),
-            MATHEMATICAL_FRAKTUR_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalT),
-            MATHEMATICAL_FRAKTUR_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalU),
-            MATHEMATICAL_FRAKTUR_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalV),
-            MATHEMATICAL_FRAKTUR_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalW),
-            MATHEMATICAL_FRAKTUR_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalX),
-            MATHEMATICAL_FRAKTUR_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalY),
-            MATHEMATICAL_FRAKTUR_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallA),
-            MATHEMATICAL_FRAKTUR_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallB),
-            MATHEMATICAL_FRAKTUR_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallC),
-            MATHEMATICAL_FRAKTUR_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallD),
-            MATHEMATICAL_FRAKTUR_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallE),
-            MATHEMATICAL_FRAKTUR_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallF),
-            MATHEMATICAL_FRAKTUR_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallG),
-            MATHEMATICAL_FRAKTUR_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallH),
-            MATHEMATICAL_FRAKTUR_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallI),
-            MATHEMATICAL_FRAKTUR_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallJ),
-            MATHEMATICAL_FRAKTUR_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallK),
-            MATHEMATICAL_FRAKTUR_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallL),
-            MATHEMATICAL_FRAKTUR_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallM),
-            MATHEMATICAL_FRAKTUR_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallN),
-            MATHEMATICAL_FRAKTUR_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallO),
-            MATHEMATICAL_FRAKTUR_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallP),
-            MATHEMATICAL_FRAKTUR_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallQ),
-            MATHEMATICAL_FRAKTUR_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallR),
-            MATHEMATICAL_FRAKTUR_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallS),
-            MATHEMATICAL_FRAKTUR_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallT),
-            MATHEMATICAL_FRAKTUR_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallU),
-            MATHEMATICAL_FRAKTUR_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallV),
-            MATHEMATICAL_FRAKTUR_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallW),
-            MATHEMATICAL_FRAKTUR_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallX),
-            MATHEMATICAL_FRAKTUR_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallY),
-            MATHEMATICAL_FRAKTUR_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallZ),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalA),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalB),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalD),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalE),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalF),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalG),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalI),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalJ),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalK),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalL),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalM),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalO),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalS),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalT),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalU),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalV),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalW),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalX),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalY),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallA),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallB),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallC),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallD),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallE),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallF),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallG),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallH),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallI),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallJ),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallK),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallL),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallM),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallN),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallO),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallP),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallQ),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallR),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallS),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallT),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallU),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallV),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallW),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallX),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallY),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallZ),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalA),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalB),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalC),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalD),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalE),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalF),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalG),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalH),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalI),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalJ),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalK),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalL),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalM),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalN),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalO),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalP),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalQ),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalR),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalS),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalT),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalU),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalV),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalW),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalX),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalY),
-            MATHEMATICAL_BOLD_FRAKTUR_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalZ),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallA),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallB),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallC),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallD),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallE),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallF),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallG),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallH),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallI),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallJ),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallK),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallL),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallM),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallN),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallO),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallP),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallQ),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallR),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallS),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallT),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallU),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallV),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallW),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallX),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallY),
-            MATHEMATICAL_BOLD_FRAKTUR_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallZ),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalA),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalB),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalC),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalD),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalE),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalF),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalG),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalH),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalI),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalJ),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalK),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalL),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalM),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalN),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalO),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalP),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalQ),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalR),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalS),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalT),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalU),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalV),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalW),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalX),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalY),
-            MATHEMATICAL_SANS_DASH_SERIF_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalZ),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallA),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallB),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallC),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallD),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallE),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallF),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallG),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallH),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallI),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallJ),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallK),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallL),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallM),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallN),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallO),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallP),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallQ),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallR),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallS),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallT),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallU),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallV),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallW),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallX),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallY),
-            MATHEMATICAL_SANS_DASH_SERIF_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallZ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalA),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalB),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalC),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalD),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalE),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalF),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalG),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalH),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalI),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalJ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalK),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalL),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalM),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalN),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalO),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalP),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalQ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalR),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalS),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalT),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalU),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalV),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalW),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalX),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalY),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalZ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallA),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallB),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallC),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallD),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallE),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallF),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallG),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallH),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallI),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallJ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallK),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallL),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallM),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallN),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallO),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallP),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallQ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallR),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallS),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallT),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallU),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallV),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallW),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallX),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallY),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallZ),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalA),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalB),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalC),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalD),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalE),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalF),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalG),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalH),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalI),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalJ),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalK),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalL),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalM),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalN),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalO),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalP),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalQ),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalR),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalS),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalT),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalU),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalV),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalW),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalX),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalY),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalZ),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallA),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallB),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallC),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallD),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallE),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallF),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallG),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallH),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallI),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallJ),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallK),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallL),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallM),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallN),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallO),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallP),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallQ),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallR),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallS),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallT),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallU),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallV),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallW),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallX),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallY),
-            MATHEMATICAL_SANS_DASH_SERIF_ITALIC_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallZ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalA),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalB),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalC),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalD),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalE),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalF),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalG),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalH),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalI),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalJ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalK),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalL),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalM),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalN),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalO),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalP),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalQ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalR),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalS),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalT),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalU),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalV),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalW),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalX),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalY),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalZ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallA),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallB),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallC),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallD),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallE),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallF),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallG),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallH),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallI),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallJ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallK),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallL),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallM),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallN),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallO),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallP),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallQ),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallR),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallS),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallT),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallU),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallV),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallW),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallX),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallY),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallZ),
-            MATHEMATICAL_MONOSPACE_CAPITAL_A => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalA),
-            MATHEMATICAL_MONOSPACE_CAPITAL_B => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalB),
-            MATHEMATICAL_MONOSPACE_CAPITAL_C => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalC),
-            MATHEMATICAL_MONOSPACE_CAPITAL_D => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalD),
-            MATHEMATICAL_MONOSPACE_CAPITAL_E => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalE),
-            MATHEMATICAL_MONOSPACE_CAPITAL_F => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalF),
-            MATHEMATICAL_MONOSPACE_CAPITAL_G => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalG),
-            MATHEMATICAL_MONOSPACE_CAPITAL_H => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalH),
-            MATHEMATICAL_MONOSPACE_CAPITAL_I => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalI),
-            MATHEMATICAL_MONOSPACE_CAPITAL_J => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalJ),
-            MATHEMATICAL_MONOSPACE_CAPITAL_K => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalK),
-            MATHEMATICAL_MONOSPACE_CAPITAL_L => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalL),
-            MATHEMATICAL_MONOSPACE_CAPITAL_M => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalM),
-            MATHEMATICAL_MONOSPACE_CAPITAL_N => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalN),
-            MATHEMATICAL_MONOSPACE_CAPITAL_O => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalO),
-            MATHEMATICAL_MONOSPACE_CAPITAL_P => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalP),
-            MATHEMATICAL_MONOSPACE_CAPITAL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalQ),
-            MATHEMATICAL_MONOSPACE_CAPITAL_R => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalR),
-            MATHEMATICAL_MONOSPACE_CAPITAL_S => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalS),
-            MATHEMATICAL_MONOSPACE_CAPITAL_T => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalT),
-            MATHEMATICAL_MONOSPACE_CAPITAL_U => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalU),
-            MATHEMATICAL_MONOSPACE_CAPITAL_V => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalV),
-            MATHEMATICAL_MONOSPACE_CAPITAL_W => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalW),
-            MATHEMATICAL_MONOSPACE_CAPITAL_X => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalX),
-            MATHEMATICAL_MONOSPACE_CAPITAL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalY),
-            MATHEMATICAL_MONOSPACE_CAPITAL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalZ),
-            MATHEMATICAL_MONOSPACE_SMALL_A => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallA),
-            MATHEMATICAL_MONOSPACE_SMALL_B => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallB),
-            MATHEMATICAL_MONOSPACE_SMALL_C => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallC),
-            MATHEMATICAL_MONOSPACE_SMALL_D => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallD),
-            MATHEMATICAL_MONOSPACE_SMALL_E => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallE),
-            MATHEMATICAL_MONOSPACE_SMALL_F => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallF),
-            MATHEMATICAL_MONOSPACE_SMALL_G => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallG),
-            MATHEMATICAL_MONOSPACE_SMALL_H => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallH),
-            MATHEMATICAL_MONOSPACE_SMALL_I => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallI),
-            MATHEMATICAL_MONOSPACE_SMALL_J => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallJ),
-            MATHEMATICAL_MONOSPACE_SMALL_K => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallK),
-            MATHEMATICAL_MONOSPACE_SMALL_L => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallL),
-            MATHEMATICAL_MONOSPACE_SMALL_M => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallM),
-            MATHEMATICAL_MONOSPACE_SMALL_N => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallN),
-            MATHEMATICAL_MONOSPACE_SMALL_O => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallO),
-            MATHEMATICAL_MONOSPACE_SMALL_P => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallP),
-            MATHEMATICAL_MONOSPACE_SMALL_Q => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallQ),
-            MATHEMATICAL_MONOSPACE_SMALL_R => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallR),
-            MATHEMATICAL_MONOSPACE_SMALL_S => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallS),
-            MATHEMATICAL_MONOSPACE_SMALL_T => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallT),
-            MATHEMATICAL_MONOSPACE_SMALL_U => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallU),
-            MATHEMATICAL_MONOSPACE_SMALL_V => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallV),
-            MATHEMATICAL_MONOSPACE_SMALL_W => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallW),
-            MATHEMATICAL_MONOSPACE_SMALL_X => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallX),
-            MATHEMATICAL_MONOSPACE_SMALL_Y => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallY),
-            MATHEMATICAL_MONOSPACE_SMALL_Z => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallZ),
-            MATHEMATICAL_ITALIC_SMALL_DOTLESS_I => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallDotlessI),
-            MATHEMATICAL_ITALIC_SMALL_DOTLESS_J => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallDotlessJ),
-            MATHEMATICAL_BOLD_CAPITAL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalAlpha),
-            MATHEMATICAL_BOLD_CAPITAL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalBeta),
-            MATHEMATICAL_BOLD_CAPITAL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalGamma),
-            MATHEMATICAL_BOLD_CAPITAL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalDelta),
-            MATHEMATICAL_BOLD_CAPITAL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalEpsilon),
-            MATHEMATICAL_BOLD_CAPITAL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalZeta),
-            MATHEMATICAL_BOLD_CAPITAL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalEta),
-            MATHEMATICAL_BOLD_CAPITAL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalTheta),
-            MATHEMATICAL_BOLD_CAPITAL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalIota),
-            MATHEMATICAL_BOLD_CAPITAL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalKappa),
-            MATHEMATICAL_BOLD_CAPITAL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalLamda),
-            MATHEMATICAL_BOLD_CAPITAL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalMu),
-            MATHEMATICAL_BOLD_CAPITAL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalNu),
-            MATHEMATICAL_BOLD_CAPITAL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalXi),
-            MATHEMATICAL_BOLD_CAPITAL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalOmicron),
-            MATHEMATICAL_BOLD_CAPITAL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalPi),
-            MATHEMATICAL_BOLD_CAPITAL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalRho),
-            MATHEMATICAL_BOLD_CAPITAL_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalThetaSymbol),
-            MATHEMATICAL_BOLD_CAPITAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalSigma),
-            MATHEMATICAL_BOLD_CAPITAL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalTau),
-            MATHEMATICAL_BOLD_CAPITAL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalUpsilon),
-            MATHEMATICAL_BOLD_CAPITAL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalPhi),
-            MATHEMATICAL_BOLD_CAPITAL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalChi),
-            MATHEMATICAL_BOLD_CAPITAL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalPsi),
-            MATHEMATICAL_BOLD_CAPITAL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalOmega),
-            MATHEMATICAL_BOLD_NABLA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldNabla),
-            MATHEMATICAL_BOLD_SMALL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallAlpha),
-            MATHEMATICAL_BOLD_SMALL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallBeta),
-            MATHEMATICAL_BOLD_SMALL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallGamma),
-            MATHEMATICAL_BOLD_SMALL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallDelta),
-            MATHEMATICAL_BOLD_SMALL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallEpsilon),
-            MATHEMATICAL_BOLD_SMALL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallZeta),
-            MATHEMATICAL_BOLD_SMALL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallEta),
-            MATHEMATICAL_BOLD_SMALL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallTheta),
-            MATHEMATICAL_BOLD_SMALL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallIota),
-            MATHEMATICAL_BOLD_SMALL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallKappa),
-            MATHEMATICAL_BOLD_SMALL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallLamda),
-            MATHEMATICAL_BOLD_SMALL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallMu),
-            MATHEMATICAL_BOLD_SMALL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallNu),
-            MATHEMATICAL_BOLD_SMALL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallXi),
-            MATHEMATICAL_BOLD_SMALL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallOmicron),
-            MATHEMATICAL_BOLD_SMALL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallPi),
-            MATHEMATICAL_BOLD_SMALL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallRho),
-            MATHEMATICAL_BOLD_SMALL_FINAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallFinalSigma),
-            MATHEMATICAL_BOLD_SMALL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallSigma),
-            MATHEMATICAL_BOLD_SMALL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallTau),
-            MATHEMATICAL_BOLD_SMALL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallUpsilon),
-            MATHEMATICAL_BOLD_SMALL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallPhi),
-            MATHEMATICAL_BOLD_SMALL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallChi),
-            MATHEMATICAL_BOLD_SMALL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallPsi),
-            MATHEMATICAL_BOLD_SMALL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallOmega),
-            MATHEMATICAL_BOLD_PARTIAL_DIFFERENTIAL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldPartialDifferential),
-            MATHEMATICAL_BOLD_EPSILON_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldEpsilonSymbol),
-            MATHEMATICAL_BOLD_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldThetaSymbol),
-            MATHEMATICAL_BOLD_KAPPA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldKappaSymbol),
-            MATHEMATICAL_BOLD_PHI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldPhiSymbol),
-            MATHEMATICAL_BOLD_RHO_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldRhoSymbol),
-            MATHEMATICAL_BOLD_PI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldPiSymbol),
-            MATHEMATICAL_ITALIC_CAPITAL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalAlpha),
-            MATHEMATICAL_ITALIC_CAPITAL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalBeta),
-            MATHEMATICAL_ITALIC_CAPITAL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalGamma),
-            MATHEMATICAL_ITALIC_CAPITAL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalDelta),
-            MATHEMATICAL_ITALIC_CAPITAL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalEpsilon),
-            MATHEMATICAL_ITALIC_CAPITAL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalZeta),
-            MATHEMATICAL_ITALIC_CAPITAL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalEta),
-            MATHEMATICAL_ITALIC_CAPITAL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalTheta),
-            MATHEMATICAL_ITALIC_CAPITAL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalIota),
-            MATHEMATICAL_ITALIC_CAPITAL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalKappa),
-            MATHEMATICAL_ITALIC_CAPITAL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalLamda),
-            MATHEMATICAL_ITALIC_CAPITAL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalMu),
-            MATHEMATICAL_ITALIC_CAPITAL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalNu),
-            MATHEMATICAL_ITALIC_CAPITAL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalXi),
-            MATHEMATICAL_ITALIC_CAPITAL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalOmicron),
-            MATHEMATICAL_ITALIC_CAPITAL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalPi),
-            MATHEMATICAL_ITALIC_CAPITAL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalRho),
-            MATHEMATICAL_ITALIC_CAPITAL_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalThetaSymbol),
-            MATHEMATICAL_ITALIC_CAPITAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalSigma),
-            MATHEMATICAL_ITALIC_CAPITAL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalTau),
-            MATHEMATICAL_ITALIC_CAPITAL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalUpsilon),
-            MATHEMATICAL_ITALIC_CAPITAL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalPhi),
-            MATHEMATICAL_ITALIC_CAPITAL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalChi),
-            MATHEMATICAL_ITALIC_CAPITAL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalPsi),
-            MATHEMATICAL_ITALIC_CAPITAL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalOmega),
-            MATHEMATICAL_ITALIC_NABLA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicNabla),
-            MATHEMATICAL_ITALIC_SMALL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallAlpha),
-            MATHEMATICAL_ITALIC_SMALL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallBeta),
-            MATHEMATICAL_ITALIC_SMALL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallGamma),
-            MATHEMATICAL_ITALIC_SMALL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallDelta),
-            MATHEMATICAL_ITALIC_SMALL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallEpsilon),
-            MATHEMATICAL_ITALIC_SMALL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallZeta),
-            MATHEMATICAL_ITALIC_SMALL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallEta),
-            MATHEMATICAL_ITALIC_SMALL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallTheta),
-            MATHEMATICAL_ITALIC_SMALL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallIota),
-            MATHEMATICAL_ITALIC_SMALL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallKappa),
-            MATHEMATICAL_ITALIC_SMALL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallLamda),
-            MATHEMATICAL_ITALIC_SMALL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallMu),
-            MATHEMATICAL_ITALIC_SMALL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallNu),
-            MATHEMATICAL_ITALIC_SMALL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallXi),
-            MATHEMATICAL_ITALIC_SMALL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallOmicron),
-            MATHEMATICAL_ITALIC_SMALL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallPi),
-            MATHEMATICAL_ITALIC_SMALL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallRho),
-            MATHEMATICAL_ITALIC_SMALL_FINAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallFinalSigma),
-            MATHEMATICAL_ITALIC_SMALL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallSigma),
-            MATHEMATICAL_ITALIC_SMALL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallTau),
-            MATHEMATICAL_ITALIC_SMALL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallUpsilon),
-            MATHEMATICAL_ITALIC_SMALL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallPhi),
-            MATHEMATICAL_ITALIC_SMALL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallChi),
-            MATHEMATICAL_ITALIC_SMALL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallPsi),
-            MATHEMATICAL_ITALIC_SMALL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallOmega),
-            MATHEMATICAL_ITALIC_PARTIAL_DIFFERENTIAL => Ok(MathematicalAlphanumericSymbols::MathematicalItalicPartialDifferential),
-            MATHEMATICAL_ITALIC_EPSILON_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalItalicEpsilonSymbol),
-            MATHEMATICAL_ITALIC_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalItalicThetaSymbol),
-            MATHEMATICAL_ITALIC_KAPPA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalItalicKappaSymbol),
-            MATHEMATICAL_ITALIC_PHI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalItalicPhiSymbol),
-            MATHEMATICAL_ITALIC_RHO_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalItalicRhoSymbol),
-            MATHEMATICAL_ITALIC_PI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalItalicPiSymbol),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalAlpha),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalBeta),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalGamma),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalDelta),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalEpsilon),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalZeta),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalEta),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalTheta),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalIota),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalKappa),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalLamda),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalMu),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalNu),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalXi),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalOmicron),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPi),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalRho),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalThetaSymbol),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalSigma),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalTau),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalUpsilon),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPhi),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalChi),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPsi),
-            MATHEMATICAL_BOLD_ITALIC_CAPITAL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalOmega),
-            MATHEMATICAL_BOLD_ITALIC_NABLA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicNabla),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallAlpha),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallBeta),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallGamma),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallDelta),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallEpsilon),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallZeta),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallEta),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallTheta),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallIota),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallKappa),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallLamda),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallMu),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallNu),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallXi),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallOmicron),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPi),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallRho),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_FINAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallFinalSigma),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallSigma),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallTau),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallUpsilon),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPhi),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallChi),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPsi),
-            MATHEMATICAL_BOLD_ITALIC_SMALL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallOmega),
-            MATHEMATICAL_BOLD_ITALIC_PARTIAL_DIFFERENTIAL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicPartialDifferential),
-            MATHEMATICAL_BOLD_ITALIC_EPSILON_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicEpsilonSymbol),
-            MATHEMATICAL_BOLD_ITALIC_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicThetaSymbol),
-            MATHEMATICAL_BOLD_ITALIC_KAPPA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicKappaSymbol),
-            MATHEMATICAL_BOLD_ITALIC_PHI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicPhiSymbol),
-            MATHEMATICAL_BOLD_ITALIC_RHO_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicRhoSymbol),
-            MATHEMATICAL_BOLD_ITALIC_PI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicPiSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalAlpha),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalBeta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalGamma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalDelta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalEpsilon),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalZeta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalEta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalTheta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalIota),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalKappa),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalLamda),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalMu),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalNu),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalXi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalOmicron),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalRho),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalThetaSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalSigma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalTau),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalUpsilon),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPhi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalChi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPsi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_CAPITAL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalOmega),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_NABLA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldNabla),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallAlpha),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallBeta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallGamma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallDelta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallEpsilon),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallZeta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallEta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallTheta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallIota),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallKappa),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallLamda),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallMu),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallNu),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallXi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallOmicron),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallRho),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_FINAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallFinalSigma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallSigma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallTau),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallUpsilon),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPhi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallChi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPsi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_SMALL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallOmega),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_PARTIAL_DIFFERENTIAL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPartialDifferential),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_EPSILON_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldEpsilonSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldThetaSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_KAPPA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldKappaSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_PHI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPhiSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_RHO_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldRhoSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_PI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPiSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalAlpha),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalBeta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalGamma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalDelta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalEpsilon),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalZeta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalEta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalTheta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalIota),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalKappa),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalLamda),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalMu),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalNu),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalXi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalOmicron),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalRho),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalThetaSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalSigma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalTau),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalUpsilon),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPhi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalChi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPsi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_CAPITAL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalOmega),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_NABLA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicNabla),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_ALPHA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallAlpha),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_BETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallBeta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_GAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallGamma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_DELTA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallDelta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_EPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallEpsilon),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_ZETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallZeta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_ETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallEta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_THETA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallTheta),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_IOTA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallIota),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_KAPPA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallKappa),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_LAMDA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallLamda),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_MU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallMu),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_NU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallNu),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_XI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallXi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_OMICRON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallOmicron),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_PI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_RHO => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallRho),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_FINAL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallFinalSigma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_SIGMA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallSigma),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_TAU => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallTau),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_UPSILON => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallUpsilon),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_PHI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPhi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_CHI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallChi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_PSI => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPsi),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_SMALL_OMEGA => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallOmega),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_PARTIAL_DIFFERENTIAL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPartialDifferential),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_EPSILON_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicEpsilonSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_THETA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicThetaSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_KAPPA_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicKappaSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_PHI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPhiSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_RHO_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicRhoSymbol),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_ITALIC_PI_SYMBOL => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPiSymbol),
-            MATHEMATICAL_BOLD_CAPITAL_DIGAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalDigamma),
-            MATHEMATICAL_BOLD_SMALL_DIGAMMA => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallDigamma),
-            MATHEMATICAL_BOLD_DIGIT_ZERO => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitZero),
-            MATHEMATICAL_BOLD_DIGIT_ONE => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitOne),
-            MATHEMATICAL_BOLD_DIGIT_TWO => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitTwo),
-            MATHEMATICAL_BOLD_DIGIT_THREE => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitThree),
-            MATHEMATICAL_BOLD_DIGIT_FOUR => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitFour),
-            MATHEMATICAL_BOLD_DIGIT_FIVE => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitFive),
-            MATHEMATICAL_BOLD_DIGIT_SIX => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitSix),
-            MATHEMATICAL_BOLD_DIGIT_SEVEN => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitSeven),
-            MATHEMATICAL_BOLD_DIGIT_EIGHT => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitEight),
-            MATHEMATICAL_BOLD_DIGIT_NINE => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitNine),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_ZERO => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitZero),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_ONE => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitOne),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_TWO => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitTwo),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_THREE => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitThree),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_FOUR => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitFour),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_FIVE => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitFive),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_SIX => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitSix),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_SEVEN => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitSeven),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_EIGHT => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitEight),
-            MATHEMATICAL_DOUBLE_DASH_STRUCK_DIGIT_NINE => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitNine),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_ZERO => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitZero),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_ONE => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitOne),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_TWO => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitTwo),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_THREE => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitThree),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_FOUR => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitFour),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_FIVE => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitFive),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_SIX => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitSix),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_SEVEN => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitSeven),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_EIGHT => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitEight),
-            MATHEMATICAL_SANS_DASH_SERIF_DIGIT_NINE => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitNine),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_ZERO => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitZero),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_ONE => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitOne),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_TWO => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitTwo),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_THREE => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitThree),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_FOUR => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitFour),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_FIVE => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitFive),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_SIX => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitSix),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_SEVEN => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitSeven),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_EIGHT => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitEight),
-            MATHEMATICAL_SANS_DASH_SERIF_BOLD_DIGIT_NINE => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitNine),
-            MATHEMATICAL_MONOSPACE_DIGIT_ZERO => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitZero),
-            MATHEMATICAL_MONOSPACE_DIGIT_ONE => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitOne),
-            MATHEMATICAL_MONOSPACE_DIGIT_TWO => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitTwo),
-            MATHEMATICAL_MONOSPACE_DIGIT_THREE => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitThree),
-            MATHEMATICAL_MONOSPACE_DIGIT_FOUR => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitFour),
-            MATHEMATICAL_MONOSPACE_DIGIT_FIVE => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitFive),
-            MATHEMATICAL_MONOSPACE_DIGIT_SIX => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitSix),
-            MATHEMATICAL_MONOSPACE_DIGIT_SEVEN => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitSeven),
-            MATHEMATICAL_MONOSPACE_DIGIT_EIGHT => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitEight),
+            '𝐀' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalA),
+            '𝐁' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalB),
+            '𝐂' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalC),
+            '𝐃' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalD),
+            '𝐄' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalE),
+            '𝐅' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalF),
+            '𝐆' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalG),
+            '𝐇' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalH),
+            '𝐈' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalI),
+            '𝐉' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalJ),
+            '𝐊' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalK),
+            '𝐋' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalL),
+            '𝐌' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalM),
+            '𝐍' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalN),
+            '𝐎' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalO),
+            '𝐏' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalP),
+            '𝐐' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalQ),
+            '𝐑' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalR),
+            '𝐒' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalS),
+            '𝐓' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalT),
+            '𝐔' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalU),
+            '𝐕' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalV),
+            '𝐖' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalW),
+            '𝐗' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalX),
+            '𝐘' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalY),
+            '𝐙' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalZ),
+            '𝐚' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallA),
+            '𝐛' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallB),
+            '𝐜' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallC),
+            '𝐝' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallD),
+            '𝐞' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallE),
+            '𝐟' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallF),
+            '𝐠' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallG),
+            '𝐡' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallH),
+            '𝐢' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallI),
+            '𝐣' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallJ),
+            '𝐤' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallK),
+            '𝐥' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallL),
+            '𝐦' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallM),
+            '𝐧' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallN),
+            '𝐨' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallO),
+            '𝐩' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallP),
+            '𝐪' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallQ),
+            '𝐫' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallR),
+            '𝐬' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallS),
+            '𝐭' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallT),
+            '𝐮' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallU),
+            '𝐯' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallV),
+            '𝐰' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallW),
+            '𝐱' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallX),
+            '𝐲' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallY),
+            '𝐳' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallZ),
+            '𝐴' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalA),
+            '𝐵' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalB),
+            '𝐶' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalC),
+            '𝐷' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalD),
+            '𝐸' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalE),
+            '𝐹' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalF),
+            '𝐺' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalG),
+            '𝐻' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalH),
+            '𝐼' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalI),
+            '𝐽' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalJ),
+            '𝐾' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalK),
+            '𝐿' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalL),
+            '𝑀' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalM),
+            '𝑁' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalN),
+            '𝑂' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalO),
+            '𝑃' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalP),
+            '𝑄' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalQ),
+            '𝑅' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalR),
+            '𝑆' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalS),
+            '𝑇' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalT),
+            '𝑈' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalU),
+            '𝑉' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalV),
+            '𝑊' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalW),
+            '𝑋' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalX),
+            '𝑌' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalY),
+            '𝑍' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalZ),
+            '𝑎' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallA),
+            '𝑏' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallB),
+            '𝑐' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallC),
+            '𝑑' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallD),
+            '𝑒' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallE),
+            '𝑓' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallF),
+            '𝑔' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallG),
+            '𝑖' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallI),
+            '𝑗' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallJ),
+            '𝑘' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallK),
+            '𝑙' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallL),
+            '𝑚' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallM),
+            '𝑛' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallN),
+            '𝑜' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallO),
+            '𝑝' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallP),
+            '𝑞' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallQ),
+            '𝑟' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallR),
+            '𝑠' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallS),
+            '𝑡' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallT),
+            '𝑢' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallU),
+            '𝑣' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallV),
+            '𝑤' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallW),
+            '𝑥' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallX),
+            '𝑦' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallY),
+            '𝑧' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallZ),
+            '𝑨' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalA),
+            '𝑩' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalB),
+            '𝑪' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalC),
+            '𝑫' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalD),
+            '𝑬' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalE),
+            '𝑭' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalF),
+            '𝑮' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalG),
+            '𝑯' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalH),
+            '𝑰' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalI),
+            '𝑱' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalJ),
+            '𝑲' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalK),
+            '𝑳' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalL),
+            '𝑴' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalM),
+            '𝑵' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalN),
+            '𝑶' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalO),
+            '𝑷' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalP),
+            '𝑸' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalQ),
+            '𝑹' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalR),
+            '𝑺' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalS),
+            '𝑻' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalT),
+            '𝑼' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalU),
+            '𝑽' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalV),
+            '𝑾' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalW),
+            '𝑿' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalX),
+            '𝒀' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalY),
+            '𝒁' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalZ),
+            '𝒂' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallA),
+            '𝒃' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallB),
+            '𝒄' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallC),
+            '𝒅' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallD),
+            '𝒆' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallE),
+            '𝒇' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallF),
+            '𝒈' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallG),
+            '𝒉' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallH),
+            '𝒊' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallI),
+            '𝒋' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallJ),
+            '𝒌' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallK),
+            '𝒍' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallL),
+            '𝒎' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallM),
+            '𝒏' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallN),
+            '𝒐' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallO),
+            '𝒑' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallP),
+            '𝒒' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallQ),
+            '𝒓' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallR),
+            '𝒔' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallS),
+            '𝒕' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallT),
+            '𝒖' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallU),
+            '𝒗' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallV),
+            '𝒘' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallW),
+            '𝒙' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallX),
+            '𝒚' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallY),
+            '𝒛' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallZ),
+            '𝒜' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalA),
+            '𝒞' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalC),
+            '𝒟' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalD),
+            '𝒢' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalG),
+            '𝒥' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalJ),
+            '𝒦' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalK),
+            '𝒩' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalN),
+            '𝒪' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalO),
+            '𝒫' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalP),
+            '𝒬' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalQ),
+            '𝒮' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalS),
+            '𝒯' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalT),
+            '𝒰' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalU),
+            '𝒱' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalV),
+            '𝒲' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalW),
+            '𝒳' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalX),
+            '𝒴' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalY),
+            '𝒵' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptCapitalZ),
+            '𝒶' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallA),
+            '𝒷' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallB),
+            '𝒸' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallC),
+            '𝒹' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallD),
+            '𝒻' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallF),
+            '𝒽' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallH),
+            '𝒾' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallI),
+            '𝒿' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallJ),
+            '𝓀' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallK),
+            '𝓁' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallL),
+            '𝓂' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallM),
+            '𝓃' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallN),
+            '𝓅' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallP),
+            '𝓆' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallQ),
+            '𝓇' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallR),
+            '𝓈' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallS),
+            '𝓉' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallT),
+            '𝓊' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallU),
+            '𝓋' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallV),
+            '𝓌' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallW),
+            '𝓍' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallX),
+            '𝓎' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallY),
+            '𝓏' => Ok(MathematicalAlphanumericSymbols::MathematicalScriptSmallZ),
+            '𝓐' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalA),
+            '𝓑' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalB),
+            '𝓒' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalC),
+            '𝓓' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalD),
+            '𝓔' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalE),
+            '𝓕' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalF),
+            '𝓖' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalG),
+            '𝓗' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalH),
+            '𝓘' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalI),
+            '𝓙' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalJ),
+            '𝓚' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalK),
+            '𝓛' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalL),
+            '𝓜' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalM),
+            '𝓝' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalN),
+            '𝓞' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalO),
+            '𝓟' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalP),
+            '𝓠' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalQ),
+            '𝓡' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalR),
+            '𝓢' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalS),
+            '𝓣' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalT),
+            '𝓤' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalU),
+            '𝓥' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalV),
+            '𝓦' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalW),
+            '𝓧' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalX),
+            '𝓨' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalY),
+            '𝓩' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptCapitalZ),
+            '𝓪' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallA),
+            '𝓫' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallB),
+            '𝓬' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallC),
+            '𝓭' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallD),
+            '𝓮' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallE),
+            '𝓯' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallF),
+            '𝓰' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallG),
+            '𝓱' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallH),
+            '𝓲' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallI),
+            '𝓳' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallJ),
+            '𝓴' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallK),
+            '𝓵' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallL),
+            '𝓶' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallM),
+            '𝓷' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallN),
+            '𝓸' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallO),
+            '𝓹' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallP),
+            '𝓺' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallQ),
+            '𝓻' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallR),
+            '𝓼' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallS),
+            '𝓽' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallT),
+            '𝓾' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallU),
+            '𝓿' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallV),
+            '𝔀' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallW),
+            '𝔁' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallX),
+            '𝔂' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallY),
+            '𝔃' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldScriptSmallZ),
+            '𝔄' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalA),
+            '𝔅' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalB),
+            '𝔇' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalD),
+            '𝔈' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalE),
+            '𝔉' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalF),
+            '𝔊' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalG),
+            '𝔍' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalJ),
+            '𝔎' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalK),
+            '𝔏' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalL),
+            '𝔐' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalM),
+            '𝔑' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalN),
+            '𝔒' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalO),
+            '𝔓' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalP),
+            '𝔔' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalQ),
+            '𝔖' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalS),
+            '𝔗' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalT),
+            '𝔘' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalU),
+            '𝔙' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalV),
+            '𝔚' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalW),
+            '𝔛' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalX),
+            '𝔜' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturCapitalY),
+            '𝔞' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallA),
+            '𝔟' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallB),
+            '𝔠' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallC),
+            '𝔡' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallD),
+            '𝔢' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallE),
+            '𝔣' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallF),
+            '𝔤' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallG),
+            '𝔥' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallH),
+            '𝔦' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallI),
+            '𝔧' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallJ),
+            '𝔨' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallK),
+            '𝔩' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallL),
+            '𝔪' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallM),
+            '𝔫' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallN),
+            '𝔬' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallO),
+            '𝔭' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallP),
+            '𝔮' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallQ),
+            '𝔯' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallR),
+            '𝔰' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallS),
+            '𝔱' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallT),
+            '𝔲' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallU),
+            '𝔳' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallV),
+            '𝔴' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallW),
+            '𝔵' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallX),
+            '𝔶' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallY),
+            '𝔷' => Ok(MathematicalAlphanumericSymbols::MathematicalFrakturSmallZ),
+            '𝔸' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalA),
+            '𝔹' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalB),
+            '𝔻' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalD),
+            '𝔼' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalE),
+            '𝔽' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalF),
+            '𝔾' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalG),
+            '𝕀' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalI),
+            '𝕁' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalJ),
+            '𝕂' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalK),
+            '𝕃' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalL),
+            '𝕄' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalM),
+            '𝕆' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalO),
+            '𝕊' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalS),
+            '𝕋' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalT),
+            '𝕌' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalU),
+            '𝕍' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalV),
+            '𝕎' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalW),
+            '𝕏' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalX),
+            '𝕐' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckCapitalY),
+            '𝕒' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallA),
+            '𝕓' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallB),
+            '𝕔' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallC),
+            '𝕕' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallD),
+            '𝕖' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallE),
+            '𝕗' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallF),
+            '𝕘' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallG),
+            '𝕙' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallH),
+            '𝕚' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallI),
+            '𝕛' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallJ),
+            '𝕜' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallK),
+            '𝕝' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallL),
+            '𝕞' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallM),
+            '𝕟' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallN),
+            '𝕠' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallO),
+            '𝕡' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallP),
+            '𝕢' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallQ),
+            '𝕣' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallR),
+            '𝕤' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallS),
+            '𝕥' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallT),
+            '𝕦' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallU),
+            '𝕧' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallV),
+            '𝕨' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallW),
+            '𝕩' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallX),
+            '𝕪' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallY),
+            '𝕫' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckSmallZ),
+            '𝕬' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalA),
+            '𝕭' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalB),
+            '𝕮' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalC),
+            '𝕯' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalD),
+            '𝕰' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalE),
+            '𝕱' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalF),
+            '𝕲' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalG),
+            '𝕳' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalH),
+            '𝕴' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalI),
+            '𝕵' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalJ),
+            '𝕶' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalK),
+            '𝕷' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalL),
+            '𝕸' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalM),
+            '𝕹' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalN),
+            '𝕺' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalO),
+            '𝕻' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalP),
+            '𝕼' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalQ),
+            '𝕽' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalR),
+            '𝕾' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalS),
+            '𝕿' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalT),
+            '𝖀' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalU),
+            '𝖁' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalV),
+            '𝖂' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalW),
+            '𝖃' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalX),
+            '𝖄' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalY),
+            '𝖅' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturCapitalZ),
+            '𝖆' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallA),
+            '𝖇' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallB),
+            '𝖈' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallC),
+            '𝖉' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallD),
+            '𝖊' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallE),
+            '𝖋' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallF),
+            '𝖌' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallG),
+            '𝖍' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallH),
+            '𝖎' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallI),
+            '𝖏' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallJ),
+            '𝖐' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallK),
+            '𝖑' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallL),
+            '𝖒' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallM),
+            '𝖓' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallN),
+            '𝖔' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallO),
+            '𝖕' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallP),
+            '𝖖' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallQ),
+            '𝖗' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallR),
+            '𝖘' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallS),
+            '𝖙' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallT),
+            '𝖚' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallU),
+            '𝖛' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallV),
+            '𝖜' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallW),
+            '𝖝' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallX),
+            '𝖞' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallY),
+            '𝖟' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldFrakturSmallZ),
+            '𝖠' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalA),
+            '𝖡' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalB),
+            '𝖢' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalC),
+            '𝖣' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalD),
+            '𝖤' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalE),
+            '𝖥' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalF),
+            '𝖦' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalG),
+            '𝖧' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalH),
+            '𝖨' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalI),
+            '𝖩' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalJ),
+            '𝖪' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalK),
+            '𝖫' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalL),
+            '𝖬' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalM),
+            '𝖭' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalN),
+            '𝖮' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalO),
+            '𝖯' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalP),
+            '𝖰' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalQ),
+            '𝖱' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalR),
+            '𝖲' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalS),
+            '𝖳' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalT),
+            '𝖴' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalU),
+            '𝖵' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalV),
+            '𝖶' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalW),
+            '𝖷' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalX),
+            '𝖸' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalY),
+            '𝖹' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifCapitalZ),
+            '𝖺' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallA),
+            '𝖻' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallB),
+            '𝖼' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallC),
+            '𝖽' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallD),
+            '𝖾' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallE),
+            '𝖿' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallF),
+            '𝗀' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallG),
+            '𝗁' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallH),
+            '𝗂' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallI),
+            '𝗃' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallJ),
+            '𝗄' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallK),
+            '𝗅' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallL),
+            '𝗆' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallM),
+            '𝗇' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallN),
+            '𝗈' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallO),
+            '𝗉' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallP),
+            '𝗊' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallQ),
+            '𝗋' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallR),
+            '𝗌' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallS),
+            '𝗍' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallT),
+            '𝗎' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallU),
+            '𝗏' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallV),
+            '𝗐' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallW),
+            '𝗑' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallX),
+            '𝗒' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallY),
+            '𝗓' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifSmallZ),
+            '𝗔' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalA),
+            '𝗕' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalB),
+            '𝗖' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalC),
+            '𝗗' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalD),
+            '𝗘' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalE),
+            '𝗙' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalF),
+            '𝗚' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalG),
+            '𝗛' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalH),
+            '𝗜' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalI),
+            '𝗝' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalJ),
+            '𝗞' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalK),
+            '𝗟' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalL),
+            '𝗠' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalM),
+            '𝗡' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalN),
+            '𝗢' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalO),
+            '𝗣' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalP),
+            '𝗤' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalQ),
+            '𝗥' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalR),
+            '𝗦' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalS),
+            '𝗧' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalT),
+            '𝗨' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalU),
+            '𝗩' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalV),
+            '𝗪' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalW),
+            '𝗫' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalX),
+            '𝗬' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalY),
+            '𝗭' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalZ),
+            '𝗮' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallA),
+            '𝗯' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallB),
+            '𝗰' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallC),
+            '𝗱' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallD),
+            '𝗲' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallE),
+            '𝗳' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallF),
+            '𝗴' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallG),
+            '𝗵' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallH),
+            '𝗶' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallI),
+            '𝗷' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallJ),
+            '𝗸' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallK),
+            '𝗹' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallL),
+            '𝗺' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallM),
+            '𝗻' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallN),
+            '𝗼' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallO),
+            '𝗽' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallP),
+            '𝗾' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallQ),
+            '𝗿' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallR),
+            '𝘀' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallS),
+            '𝘁' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallT),
+            '𝘂' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallU),
+            '𝘃' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallV),
+            '𝘄' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallW),
+            '𝘅' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallX),
+            '𝘆' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallY),
+            '𝘇' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallZ),
+            '𝘈' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalA),
+            '𝘉' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalB),
+            '𝘊' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalC),
+            '𝘋' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalD),
+            '𝘌' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalE),
+            '𝘍' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalF),
+            '𝘎' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalG),
+            '𝘏' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalH),
+            '𝘐' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalI),
+            '𝘑' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalJ),
+            '𝘒' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalK),
+            '𝘓' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalL),
+            '𝘔' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalM),
+            '𝘕' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalN),
+            '𝘖' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalO),
+            '𝘗' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalP),
+            '𝘘' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalQ),
+            '𝘙' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalR),
+            '𝘚' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalS),
+            '𝘛' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalT),
+            '𝘜' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalU),
+            '𝘝' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalV),
+            '𝘞' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalW),
+            '𝘟' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalX),
+            '𝘠' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalY),
+            '𝘡' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicCapitalZ),
+            '𝘢' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallA),
+            '𝘣' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallB),
+            '𝘤' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallC),
+            '𝘥' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallD),
+            '𝘦' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallE),
+            '𝘧' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallF),
+            '𝘨' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallG),
+            '𝘩' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallH),
+            '𝘪' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallI),
+            '𝘫' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallJ),
+            '𝘬' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallK),
+            '𝘭' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallL),
+            '𝘮' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallM),
+            '𝘯' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallN),
+            '𝘰' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallO),
+            '𝘱' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallP),
+            '𝘲' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallQ),
+            '𝘳' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallR),
+            '𝘴' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallS),
+            '𝘵' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallT),
+            '𝘶' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallU),
+            '𝘷' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallV),
+            '𝘸' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallW),
+            '𝘹' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallX),
+            '𝘺' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallY),
+            '𝘻' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifItalicSmallZ),
+            '𝘼' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalA),
+            '𝘽' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalB),
+            '𝘾' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalC),
+            '𝘿' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalD),
+            '𝙀' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalE),
+            '𝙁' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalF),
+            '𝙂' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalG),
+            '𝙃' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalH),
+            '𝙄' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalI),
+            '𝙅' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalJ),
+            '𝙆' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalK),
+            '𝙇' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalL),
+            '𝙈' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalM),
+            '𝙉' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalN),
+            '𝙊' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalO),
+            '𝙋' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalP),
+            '𝙌' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalQ),
+            '𝙍' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalR),
+            '𝙎' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalS),
+            '𝙏' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalT),
+            '𝙐' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalU),
+            '𝙑' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalV),
+            '𝙒' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalW),
+            '𝙓' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalX),
+            '𝙔' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalY),
+            '𝙕' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalZ),
+            '𝙖' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallA),
+            '𝙗' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallB),
+            '𝙘' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallC),
+            '𝙙' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallD),
+            '𝙚' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallE),
+            '𝙛' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallF),
+            '𝙜' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallG),
+            '𝙝' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallH),
+            '𝙞' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallI),
+            '𝙟' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallJ),
+            '𝙠' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallK),
+            '𝙡' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallL),
+            '𝙢' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallM),
+            '𝙣' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallN),
+            '𝙤' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallO),
+            '𝙥' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallP),
+            '𝙦' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallQ),
+            '𝙧' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallR),
+            '𝙨' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallS),
+            '𝙩' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallT),
+            '𝙪' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallU),
+            '𝙫' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallV),
+            '𝙬' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallW),
+            '𝙭' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallX),
+            '𝙮' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallY),
+            '𝙯' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallZ),
+            '𝙰' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalA),
+            '𝙱' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalB),
+            '𝙲' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalC),
+            '𝙳' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalD),
+            '𝙴' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalE),
+            '𝙵' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalF),
+            '𝙶' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalG),
+            '𝙷' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalH),
+            '𝙸' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalI),
+            '𝙹' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalJ),
+            '𝙺' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalK),
+            '𝙻' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalL),
+            '𝙼' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalM),
+            '𝙽' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalN),
+            '𝙾' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalO),
+            '𝙿' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalP),
+            '𝚀' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalQ),
+            '𝚁' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalR),
+            '𝚂' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalS),
+            '𝚃' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalT),
+            '𝚄' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalU),
+            '𝚅' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalV),
+            '𝚆' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalW),
+            '𝚇' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalX),
+            '𝚈' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalY),
+            '𝚉' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceCapitalZ),
+            '𝚊' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallA),
+            '𝚋' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallB),
+            '𝚌' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallC),
+            '𝚍' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallD),
+            '𝚎' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallE),
+            '𝚏' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallF),
+            '𝚐' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallG),
+            '𝚑' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallH),
+            '𝚒' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallI),
+            '𝚓' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallJ),
+            '𝚔' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallK),
+            '𝚕' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallL),
+            '𝚖' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallM),
+            '𝚗' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallN),
+            '𝚘' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallO),
+            '𝚙' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallP),
+            '𝚚' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallQ),
+            '𝚛' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallR),
+            '𝚜' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallS),
+            '𝚝' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallT),
+            '𝚞' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallU),
+            '𝚟' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallV),
+            '𝚠' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallW),
+            '𝚡' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallX),
+            '𝚢' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallY),
+            '𝚣' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceSmallZ),
+            '𝚤' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallDotlessI),
+            '𝚥' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallDotlessJ),
+            '𝚨' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalAlpha),
+            '𝚩' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalBeta),
+            '𝚪' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalGamma),
+            '𝚫' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalDelta),
+            '𝚬' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalEpsilon),
+            '𝚭' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalZeta),
+            '𝚮' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalEta),
+            '𝚯' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalTheta),
+            '𝚰' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalIota),
+            '𝚱' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalKappa),
+            '𝚲' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalLamda),
+            '𝚳' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalMu),
+            '𝚴' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalNu),
+            '𝚵' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalXi),
+            '𝚶' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalOmicron),
+            '𝚷' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalPi),
+            '𝚸' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalRho),
+            '𝚹' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalThetaSymbol),
+            '𝚺' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalSigma),
+            '𝚻' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalTau),
+            '𝚼' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalUpsilon),
+            '𝚽' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalPhi),
+            '𝚾' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalChi),
+            '𝚿' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalPsi),
+            '𝛀' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalOmega),
+            '𝛁' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldNabla),
+            '𝛂' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallAlpha),
+            '𝛃' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallBeta),
+            '𝛄' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallGamma),
+            '𝛅' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallDelta),
+            '𝛆' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallEpsilon),
+            '𝛇' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallZeta),
+            '𝛈' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallEta),
+            '𝛉' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallTheta),
+            '𝛊' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallIota),
+            '𝛋' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallKappa),
+            '𝛌' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallLamda),
+            '𝛍' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallMu),
+            '𝛎' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallNu),
+            '𝛏' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallXi),
+            '𝛐' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallOmicron),
+            '𝛑' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallPi),
+            '𝛒' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallRho),
+            '𝛓' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallFinalSigma),
+            '𝛔' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallSigma),
+            '𝛕' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallTau),
+            '𝛖' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallUpsilon),
+            '𝛗' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallPhi),
+            '𝛘' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallChi),
+            '𝛙' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallPsi),
+            '𝛚' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallOmega),
+            '𝛛' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldPartialDifferential),
+            '𝛜' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldEpsilonSymbol),
+            '𝛝' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldThetaSymbol),
+            '𝛞' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldKappaSymbol),
+            '𝛟' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldPhiSymbol),
+            '𝛠' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldRhoSymbol),
+            '𝛡' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldPiSymbol),
+            '𝛢' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalAlpha),
+            '𝛣' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalBeta),
+            '𝛤' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalGamma),
+            '𝛥' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalDelta),
+            '𝛦' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalEpsilon),
+            '𝛧' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalZeta),
+            '𝛨' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalEta),
+            '𝛩' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalTheta),
+            '𝛪' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalIota),
+            '𝛫' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalKappa),
+            '𝛬' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalLamda),
+            '𝛭' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalMu),
+            '𝛮' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalNu),
+            '𝛯' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalXi),
+            '𝛰' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalOmicron),
+            '𝛱' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalPi),
+            '𝛲' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalRho),
+            '𝛳' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalThetaSymbol),
+            '𝛴' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalSigma),
+            '𝛵' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalTau),
+            '𝛶' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalUpsilon),
+            '𝛷' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalPhi),
+            '𝛸' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalChi),
+            '𝛹' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalPsi),
+            '𝛺' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicCapitalOmega),
+            '𝛻' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicNabla),
+            '𝛼' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallAlpha),
+            '𝛽' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallBeta),
+            '𝛾' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallGamma),
+            '𝛿' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallDelta),
+            '𝜀' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallEpsilon),
+            '𝜁' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallZeta),
+            '𝜂' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallEta),
+            '𝜃' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallTheta),
+            '𝜄' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallIota),
+            '𝜅' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallKappa),
+            '𝜆' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallLamda),
+            '𝜇' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallMu),
+            '𝜈' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallNu),
+            '𝜉' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallXi),
+            '𝜊' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallOmicron),
+            '𝜋' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallPi),
+            '𝜌' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallRho),
+            '𝜍' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallFinalSigma),
+            '𝜎' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallSigma),
+            '𝜏' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallTau),
+            '𝜐' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallUpsilon),
+            '𝜑' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallPhi),
+            '𝜒' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallChi),
+            '𝜓' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallPsi),
+            '𝜔' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicSmallOmega),
+            '𝜕' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicPartialDifferential),
+            '𝜖' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicEpsilonSymbol),
+            '𝜗' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicThetaSymbol),
+            '𝜘' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicKappaSymbol),
+            '𝜙' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicPhiSymbol),
+            '𝜚' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicRhoSymbol),
+            '𝜛' => Ok(MathematicalAlphanumericSymbols::MathematicalItalicPiSymbol),
+            '𝜜' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalAlpha),
+            '𝜝' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalBeta),
+            '𝜞' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalGamma),
+            '𝜟' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalDelta),
+            '𝜠' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalEpsilon),
+            '𝜡' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalZeta),
+            '𝜢' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalEta),
+            '𝜣' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalTheta),
+            '𝜤' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalIota),
+            '𝜥' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalKappa),
+            '𝜦' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalLamda),
+            '𝜧' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalMu),
+            '𝜨' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalNu),
+            '𝜩' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalXi),
+            '𝜪' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalOmicron),
+            '𝜫' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPi),
+            '𝜬' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalRho),
+            '𝜭' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalThetaSymbol),
+            '𝜮' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalSigma),
+            '𝜯' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalTau),
+            '𝜰' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalUpsilon),
+            '𝜱' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPhi),
+            '𝜲' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalChi),
+            '𝜳' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalPsi),
+            '𝜴' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicCapitalOmega),
+            '𝜵' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicNabla),
+            '𝜶' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallAlpha),
+            '𝜷' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallBeta),
+            '𝜸' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallGamma),
+            '𝜹' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallDelta),
+            '𝜺' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallEpsilon),
+            '𝜻' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallZeta),
+            '𝜼' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallEta),
+            '𝜽' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallTheta),
+            '𝜾' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallIota),
+            '𝜿' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallKappa),
+            '𝝀' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallLamda),
+            '𝝁' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallMu),
+            '𝝂' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallNu),
+            '𝝃' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallXi),
+            '𝝄' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallOmicron),
+            '𝝅' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPi),
+            '𝝆' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallRho),
+            '𝝇' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallFinalSigma),
+            '𝝈' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallSigma),
+            '𝝉' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallTau),
+            '𝝊' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallUpsilon),
+            '𝝋' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPhi),
+            '𝝌' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallChi),
+            '𝝍' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallPsi),
+            '𝝎' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicSmallOmega),
+            '𝝏' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicPartialDifferential),
+            '𝝐' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicEpsilonSymbol),
+            '𝝑' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicThetaSymbol),
+            '𝝒' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicKappaSymbol),
+            '𝝓' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicPhiSymbol),
+            '𝝔' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicRhoSymbol),
+            '𝝕' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldItalicPiSymbol),
+            '𝝖' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalAlpha),
+            '𝝗' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalBeta),
+            '𝝘' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalGamma),
+            '𝝙' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalDelta),
+            '𝝚' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalEpsilon),
+            '𝝛' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalZeta),
+            '𝝜' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalEta),
+            '𝝝' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalTheta),
+            '𝝞' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalIota),
+            '𝝟' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalKappa),
+            '𝝠' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalLamda),
+            '𝝡' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalMu),
+            '𝝢' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalNu),
+            '𝝣' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalXi),
+            '𝝤' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalOmicron),
+            '𝝥' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPi),
+            '𝝦' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalRho),
+            '𝝧' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalThetaSymbol),
+            '𝝨' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalSigma),
+            '𝝩' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalTau),
+            '𝝪' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalUpsilon),
+            '𝝫' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPhi),
+            '𝝬' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalChi),
+            '𝝭' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalPsi),
+            '𝝮' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldCapitalOmega),
+            '𝝯' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldNabla),
+            '𝝰' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallAlpha),
+            '𝝱' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallBeta),
+            '𝝲' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallGamma),
+            '𝝳' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallDelta),
+            '𝝴' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallEpsilon),
+            '𝝵' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallZeta),
+            '𝝶' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallEta),
+            '𝝷' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallTheta),
+            '𝝸' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallIota),
+            '𝝹' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallKappa),
+            '𝝺' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallLamda),
+            '𝝻' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallMu),
+            '𝝼' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallNu),
+            '𝝽' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallXi),
+            '𝝾' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallOmicron),
+            '𝝿' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPi),
+            '𝞀' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallRho),
+            '𝞁' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallFinalSigma),
+            '𝞂' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallSigma),
+            '𝞃' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallTau),
+            '𝞄' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallUpsilon),
+            '𝞅' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPhi),
+            '𝞆' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallChi),
+            '𝞇' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallPsi),
+            '𝞈' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldSmallOmega),
+            '𝞉' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPartialDifferential),
+            '𝞊' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldEpsilonSymbol),
+            '𝞋' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldThetaSymbol),
+            '𝞌' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldKappaSymbol),
+            '𝞍' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPhiSymbol),
+            '𝞎' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldRhoSymbol),
+            '𝞏' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldPiSymbol),
+            '𝞐' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalAlpha),
+            '𝞑' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalBeta),
+            '𝞒' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalGamma),
+            '𝞓' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalDelta),
+            '𝞔' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalEpsilon),
+            '𝞕' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalZeta),
+            '𝞖' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalEta),
+            '𝞗' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalTheta),
+            '𝞘' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalIota),
+            '𝞙' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalKappa),
+            '𝞚' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalLamda),
+            '𝞛' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalMu),
+            '𝞜' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalNu),
+            '𝞝' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalXi),
+            '𝞞' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalOmicron),
+            '𝞟' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPi),
+            '𝞠' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalRho),
+            '𝞡' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalThetaSymbol),
+            '𝞢' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalSigma),
+            '𝞣' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalTau),
+            '𝞤' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalUpsilon),
+            '𝞥' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPhi),
+            '𝞦' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalChi),
+            '𝞧' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalPsi),
+            '𝞨' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicCapitalOmega),
+            '𝞩' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicNabla),
+            '𝞪' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallAlpha),
+            '𝞫' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallBeta),
+            '𝞬' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallGamma),
+            '𝞭' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallDelta),
+            '𝞮' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallEpsilon),
+            '𝞯' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallZeta),
+            '𝞰' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallEta),
+            '𝞱' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallTheta),
+            '𝞲' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallIota),
+            '𝞳' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallKappa),
+            '𝞴' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallLamda),
+            '𝞵' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallMu),
+            '𝞶' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallNu),
+            '𝞷' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallXi),
+            '𝞸' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallOmicron),
+            '𝞹' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPi),
+            '𝞺' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallRho),
+            '𝞻' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallFinalSigma),
+            '𝞼' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallSigma),
+            '𝞽' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallTau),
+            '𝞾' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallUpsilon),
+            '𝞿' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPhi),
+            '𝟀' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallChi),
+            '𝟁' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallPsi),
+            '𝟂' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicSmallOmega),
+            '𝟃' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPartialDifferential),
+            '𝟄' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicEpsilonSymbol),
+            '𝟅' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicThetaSymbol),
+            '𝟆' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicKappaSymbol),
+            '𝟇' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPhiSymbol),
+            '𝟈' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicRhoSymbol),
+            '𝟉' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldItalicPiSymbol),
+            '𝟊' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldCapitalDigamma),
+            '𝟋' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldSmallDigamma),
+            '𝟎' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitZero),
+            '𝟏' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitOne),
+            '𝟐' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitTwo),
+            '𝟑' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitThree),
+            '𝟒' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitFour),
+            '𝟓' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitFive),
+            '𝟔' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitSix),
+            '𝟕' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitSeven),
+            '𝟖' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitEight),
+            '𝟗' => Ok(MathematicalAlphanumericSymbols::MathematicalBoldDigitNine),
+            '𝟘' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitZero),
+            '𝟙' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitOne),
+            '𝟚' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitTwo),
+            '𝟛' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitThree),
+            '𝟜' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitFour),
+            '𝟝' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitFive),
+            '𝟞' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitSix),
+            '𝟟' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitSeven),
+            '𝟠' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitEight),
+            '𝟡' => Ok(MathematicalAlphanumericSymbols::MathematicalDoubleDashStruckDigitNine),
+            '𝟢' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitZero),
+            '𝟣' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitOne),
+            '𝟤' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitTwo),
+            '𝟥' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitThree),
+            '𝟦' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitFour),
+            '𝟧' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitFive),
+            '𝟨' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitSix),
+            '𝟩' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitSeven),
+            '𝟪' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitEight),
+            '𝟫' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifDigitNine),
+            '𝟬' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitZero),
+            '𝟭' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitOne),
+            '𝟮' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitTwo),
+            '𝟯' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitThree),
+            '𝟰' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitFour),
+            '𝟱' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitFive),
+            '𝟲' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitSix),
+            '𝟳' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitSeven),
+            '𝟴' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitEight),
+            '𝟵' => Ok(MathematicalAlphanumericSymbols::MathematicalSansDashSerifBoldDigitNine),
+            '𝟶' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitZero),
+            '𝟷' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitOne),
+            '𝟸' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitTwo),
+            '𝟹' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitThree),
+            '𝟺' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitFour),
+            '𝟻' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitFive),
+            '𝟼' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitSix),
+            '𝟽' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitSeven),
+            '𝟾' => Ok(MathematicalAlphanumericSymbols::MathematicalMonospaceDigitEight),
             _ => Err(()),
         }
     }

@@ -1,10 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{20000}: '𠀀'
-    pub const CJK_IDEOGRAPH_EXTENSION_B_FIRST: char = '𠀀';
-    /// \u{2a6d6}: '𪛖'
-    pub const CJK_IDEOGRAPH_EXTENSION_B_LAST: char = '𪛖';
-}
 
 /// An enum to represent all characters in the CJKUnifiedIdeographsExtensionB block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -17,10 +10,9 @@ pub enum CJKUnifiedIdeographsExtensionB {
 
 impl Into<char> for CJKUnifiedIdeographsExtensionB {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CJKUnifiedIdeographsExtensionB::CjkIdeographExtensionBFirst => CJK_IDEOGRAPH_EXTENSION_B_FIRST,
-            CJKUnifiedIdeographsExtensionB::CjkIdeographExtensionBLast => CJK_IDEOGRAPH_EXTENSION_B_LAST,
+            CJKUnifiedIdeographsExtensionB::CjkIdeographExtensionBFirst => '𠀀',
+            CJKUnifiedIdeographsExtensionB::CjkIdeographExtensionBLast => '𪛖',
         }
     }
 }
@@ -28,10 +20,9 @@ impl Into<char> for CJKUnifiedIdeographsExtensionB {
 impl std::convert::TryFrom<char> for CJKUnifiedIdeographsExtensionB {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CJK_IDEOGRAPH_EXTENSION_B_FIRST => Ok(CJKUnifiedIdeographsExtensionB::CjkIdeographExtensionBFirst),
-            CJK_IDEOGRAPH_EXTENSION_B_LAST => Ok(CJKUnifiedIdeographsExtensionB::CjkIdeographExtensionBLast),
+            '𠀀' => Ok(CJKUnifiedIdeographsExtensionB::CjkIdeographExtensionBFirst),
+            '𪛖' => Ok(CJKUnifiedIdeographsExtensionB::CjkIdeographExtensionBLast),
             _ => Err(()),
         }
     }

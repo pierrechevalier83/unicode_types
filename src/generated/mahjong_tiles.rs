@@ -1,94 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1f000}: '🀀'
-    pub const MAHJONG_TILE_EAST_WIND: char = '🀀';
-    /// \u{1f001}: '🀁'
-    pub const MAHJONG_TILE_SOUTH_WIND: char = '🀁';
-    /// \u{1f002}: '🀂'
-    pub const MAHJONG_TILE_WEST_WIND: char = '🀂';
-    /// \u{1f003}: '🀃'
-    pub const MAHJONG_TILE_NORTH_WIND: char = '🀃';
-    /// \u{1f004}: '🀄'
-    pub const MAHJONG_TILE_RED_DRAGON: char = '🀄';
-    /// \u{1f005}: '🀅'
-    pub const MAHJONG_TILE_GREEN_DRAGON: char = '🀅';
-    /// \u{1f006}: '🀆'
-    pub const MAHJONG_TILE_WHITE_DRAGON: char = '🀆';
-    /// \u{1f007}: '🀇'
-    pub const MAHJONG_TILE_ONE_OF_CHARACTERS: char = '🀇';
-    /// \u{1f008}: '🀈'
-    pub const MAHJONG_TILE_TWO_OF_CHARACTERS: char = '🀈';
-    /// \u{1f009}: '🀉'
-    pub const MAHJONG_TILE_THREE_OF_CHARACTERS: char = '🀉';
-    /// \u{1f00a}: '🀊'
-    pub const MAHJONG_TILE_FOUR_OF_CHARACTERS: char = '🀊';
-    /// \u{1f00b}: '🀋'
-    pub const MAHJONG_TILE_FIVE_OF_CHARACTERS: char = '🀋';
-    /// \u{1f00c}: '🀌'
-    pub const MAHJONG_TILE_SIX_OF_CHARACTERS: char = '🀌';
-    /// \u{1f00d}: '🀍'
-    pub const MAHJONG_TILE_SEVEN_OF_CHARACTERS: char = '🀍';
-    /// \u{1f00e}: '🀎'
-    pub const MAHJONG_TILE_EIGHT_OF_CHARACTERS: char = '🀎';
-    /// \u{1f00f}: '🀏'
-    pub const MAHJONG_TILE_NINE_OF_CHARACTERS: char = '🀏';
-    /// \u{1f010}: '🀐'
-    pub const MAHJONG_TILE_ONE_OF_BAMBOOS: char = '🀐';
-    /// \u{1f011}: '🀑'
-    pub const MAHJONG_TILE_TWO_OF_BAMBOOS: char = '🀑';
-    /// \u{1f012}: '🀒'
-    pub const MAHJONG_TILE_THREE_OF_BAMBOOS: char = '🀒';
-    /// \u{1f013}: '🀓'
-    pub const MAHJONG_TILE_FOUR_OF_BAMBOOS: char = '🀓';
-    /// \u{1f014}: '🀔'
-    pub const MAHJONG_TILE_FIVE_OF_BAMBOOS: char = '🀔';
-    /// \u{1f015}: '🀕'
-    pub const MAHJONG_TILE_SIX_OF_BAMBOOS: char = '🀕';
-    /// \u{1f016}: '🀖'
-    pub const MAHJONG_TILE_SEVEN_OF_BAMBOOS: char = '🀖';
-    /// \u{1f017}: '🀗'
-    pub const MAHJONG_TILE_EIGHT_OF_BAMBOOS: char = '🀗';
-    /// \u{1f018}: '🀘'
-    pub const MAHJONG_TILE_NINE_OF_BAMBOOS: char = '🀘';
-    /// \u{1f019}: '🀙'
-    pub const MAHJONG_TILE_ONE_OF_CIRCLES: char = '🀙';
-    /// \u{1f01a}: '🀚'
-    pub const MAHJONG_TILE_TWO_OF_CIRCLES: char = '🀚';
-    /// \u{1f01b}: '🀛'
-    pub const MAHJONG_TILE_THREE_OF_CIRCLES: char = '🀛';
-    /// \u{1f01c}: '🀜'
-    pub const MAHJONG_TILE_FOUR_OF_CIRCLES: char = '🀜';
-    /// \u{1f01d}: '🀝'
-    pub const MAHJONG_TILE_FIVE_OF_CIRCLES: char = '🀝';
-    /// \u{1f01e}: '🀞'
-    pub const MAHJONG_TILE_SIX_OF_CIRCLES: char = '🀞';
-    /// \u{1f01f}: '🀟'
-    pub const MAHJONG_TILE_SEVEN_OF_CIRCLES: char = '🀟';
-    /// \u{1f020}: '🀠'
-    pub const MAHJONG_TILE_EIGHT_OF_CIRCLES: char = '🀠';
-    /// \u{1f021}: '🀡'
-    pub const MAHJONG_TILE_NINE_OF_CIRCLES: char = '🀡';
-    /// \u{1f022}: '🀢'
-    pub const MAHJONG_TILE_PLUM: char = '🀢';
-    /// \u{1f023}: '🀣'
-    pub const MAHJONG_TILE_ORCHID: char = '🀣';
-    /// \u{1f024}: '🀤'
-    pub const MAHJONG_TILE_BAMBOO: char = '🀤';
-    /// \u{1f025}: '🀥'
-    pub const MAHJONG_TILE_CHRYSANTHEMUM: char = '🀥';
-    /// \u{1f026}: '🀦'
-    pub const MAHJONG_TILE_SPRING: char = '🀦';
-    /// \u{1f027}: '🀧'
-    pub const MAHJONG_TILE_SUMMER: char = '🀧';
-    /// \u{1f028}: '🀨'
-    pub const MAHJONG_TILE_AUTUMN: char = '🀨';
-    /// \u{1f029}: '🀩'
-    pub const MAHJONG_TILE_WINTER: char = '🀩';
-    /// \u{1f02a}: '🀪'
-    pub const MAHJONG_TILE_JOKER: char = '🀪';
-    /// \u{1f02b}: '🀫'
-    pub const MAHJONG_TILE_BACK: char = '🀫';
-}
 
 /// An enum to represent all characters in the MahjongTiles block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -185,52 +94,51 @@ pub enum MahjongTiles {
 
 impl Into<char> for MahjongTiles {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            MahjongTiles::MahjongTileEastWind => MAHJONG_TILE_EAST_WIND,
-            MahjongTiles::MahjongTileSouthWind => MAHJONG_TILE_SOUTH_WIND,
-            MahjongTiles::MahjongTileWestWind => MAHJONG_TILE_WEST_WIND,
-            MahjongTiles::MahjongTileNorthWind => MAHJONG_TILE_NORTH_WIND,
-            MahjongTiles::MahjongTileRedDragon => MAHJONG_TILE_RED_DRAGON,
-            MahjongTiles::MahjongTileGreenDragon => MAHJONG_TILE_GREEN_DRAGON,
-            MahjongTiles::MahjongTileWhiteDragon => MAHJONG_TILE_WHITE_DRAGON,
-            MahjongTiles::MahjongTileOneOfCharacters => MAHJONG_TILE_ONE_OF_CHARACTERS,
-            MahjongTiles::MahjongTileTwoOfCharacters => MAHJONG_TILE_TWO_OF_CHARACTERS,
-            MahjongTiles::MahjongTileThreeOfCharacters => MAHJONG_TILE_THREE_OF_CHARACTERS,
-            MahjongTiles::MahjongTileFourOfCharacters => MAHJONG_TILE_FOUR_OF_CHARACTERS,
-            MahjongTiles::MahjongTileFiveOfCharacters => MAHJONG_TILE_FIVE_OF_CHARACTERS,
-            MahjongTiles::MahjongTileSixOfCharacters => MAHJONG_TILE_SIX_OF_CHARACTERS,
-            MahjongTiles::MahjongTileSevenOfCharacters => MAHJONG_TILE_SEVEN_OF_CHARACTERS,
-            MahjongTiles::MahjongTileEightOfCharacters => MAHJONG_TILE_EIGHT_OF_CHARACTERS,
-            MahjongTiles::MahjongTileNineOfCharacters => MAHJONG_TILE_NINE_OF_CHARACTERS,
-            MahjongTiles::MahjongTileOneOfBamboos => MAHJONG_TILE_ONE_OF_BAMBOOS,
-            MahjongTiles::MahjongTileTwoOfBamboos => MAHJONG_TILE_TWO_OF_BAMBOOS,
-            MahjongTiles::MahjongTileThreeOfBamboos => MAHJONG_TILE_THREE_OF_BAMBOOS,
-            MahjongTiles::MahjongTileFourOfBamboos => MAHJONG_TILE_FOUR_OF_BAMBOOS,
-            MahjongTiles::MahjongTileFiveOfBamboos => MAHJONG_TILE_FIVE_OF_BAMBOOS,
-            MahjongTiles::MahjongTileSixOfBamboos => MAHJONG_TILE_SIX_OF_BAMBOOS,
-            MahjongTiles::MahjongTileSevenOfBamboos => MAHJONG_TILE_SEVEN_OF_BAMBOOS,
-            MahjongTiles::MahjongTileEightOfBamboos => MAHJONG_TILE_EIGHT_OF_BAMBOOS,
-            MahjongTiles::MahjongTileNineOfBamboos => MAHJONG_TILE_NINE_OF_BAMBOOS,
-            MahjongTiles::MahjongTileOneOfCircles => MAHJONG_TILE_ONE_OF_CIRCLES,
-            MahjongTiles::MahjongTileTwoOfCircles => MAHJONG_TILE_TWO_OF_CIRCLES,
-            MahjongTiles::MahjongTileThreeOfCircles => MAHJONG_TILE_THREE_OF_CIRCLES,
-            MahjongTiles::MahjongTileFourOfCircles => MAHJONG_TILE_FOUR_OF_CIRCLES,
-            MahjongTiles::MahjongTileFiveOfCircles => MAHJONG_TILE_FIVE_OF_CIRCLES,
-            MahjongTiles::MahjongTileSixOfCircles => MAHJONG_TILE_SIX_OF_CIRCLES,
-            MahjongTiles::MahjongTileSevenOfCircles => MAHJONG_TILE_SEVEN_OF_CIRCLES,
-            MahjongTiles::MahjongTileEightOfCircles => MAHJONG_TILE_EIGHT_OF_CIRCLES,
-            MahjongTiles::MahjongTileNineOfCircles => MAHJONG_TILE_NINE_OF_CIRCLES,
-            MahjongTiles::MahjongTilePlum => MAHJONG_TILE_PLUM,
-            MahjongTiles::MahjongTileOrchid => MAHJONG_TILE_ORCHID,
-            MahjongTiles::MahjongTileBamboo => MAHJONG_TILE_BAMBOO,
-            MahjongTiles::MahjongTileChrysanthemum => MAHJONG_TILE_CHRYSANTHEMUM,
-            MahjongTiles::MahjongTileSpring => MAHJONG_TILE_SPRING,
-            MahjongTiles::MahjongTileSummer => MAHJONG_TILE_SUMMER,
-            MahjongTiles::MahjongTileAutumn => MAHJONG_TILE_AUTUMN,
-            MahjongTiles::MahjongTileWinter => MAHJONG_TILE_WINTER,
-            MahjongTiles::MahjongTileJoker => MAHJONG_TILE_JOKER,
-            MahjongTiles::MahjongTileBack => MAHJONG_TILE_BACK,
+            MahjongTiles::MahjongTileEastWind => '🀀',
+            MahjongTiles::MahjongTileSouthWind => '🀁',
+            MahjongTiles::MahjongTileWestWind => '🀂',
+            MahjongTiles::MahjongTileNorthWind => '🀃',
+            MahjongTiles::MahjongTileRedDragon => '🀄',
+            MahjongTiles::MahjongTileGreenDragon => '🀅',
+            MahjongTiles::MahjongTileWhiteDragon => '🀆',
+            MahjongTiles::MahjongTileOneOfCharacters => '🀇',
+            MahjongTiles::MahjongTileTwoOfCharacters => '🀈',
+            MahjongTiles::MahjongTileThreeOfCharacters => '🀉',
+            MahjongTiles::MahjongTileFourOfCharacters => '🀊',
+            MahjongTiles::MahjongTileFiveOfCharacters => '🀋',
+            MahjongTiles::MahjongTileSixOfCharacters => '🀌',
+            MahjongTiles::MahjongTileSevenOfCharacters => '🀍',
+            MahjongTiles::MahjongTileEightOfCharacters => '🀎',
+            MahjongTiles::MahjongTileNineOfCharacters => '🀏',
+            MahjongTiles::MahjongTileOneOfBamboos => '🀐',
+            MahjongTiles::MahjongTileTwoOfBamboos => '🀑',
+            MahjongTiles::MahjongTileThreeOfBamboos => '🀒',
+            MahjongTiles::MahjongTileFourOfBamboos => '🀓',
+            MahjongTiles::MahjongTileFiveOfBamboos => '🀔',
+            MahjongTiles::MahjongTileSixOfBamboos => '🀕',
+            MahjongTiles::MahjongTileSevenOfBamboos => '🀖',
+            MahjongTiles::MahjongTileEightOfBamboos => '🀗',
+            MahjongTiles::MahjongTileNineOfBamboos => '🀘',
+            MahjongTiles::MahjongTileOneOfCircles => '🀙',
+            MahjongTiles::MahjongTileTwoOfCircles => '🀚',
+            MahjongTiles::MahjongTileThreeOfCircles => '🀛',
+            MahjongTiles::MahjongTileFourOfCircles => '🀜',
+            MahjongTiles::MahjongTileFiveOfCircles => '🀝',
+            MahjongTiles::MahjongTileSixOfCircles => '🀞',
+            MahjongTiles::MahjongTileSevenOfCircles => '🀟',
+            MahjongTiles::MahjongTileEightOfCircles => '🀠',
+            MahjongTiles::MahjongTileNineOfCircles => '🀡',
+            MahjongTiles::MahjongTilePlum => '🀢',
+            MahjongTiles::MahjongTileOrchid => '🀣',
+            MahjongTiles::MahjongTileBamboo => '🀤',
+            MahjongTiles::MahjongTileChrysanthemum => '🀥',
+            MahjongTiles::MahjongTileSpring => '🀦',
+            MahjongTiles::MahjongTileSummer => '🀧',
+            MahjongTiles::MahjongTileAutumn => '🀨',
+            MahjongTiles::MahjongTileWinter => '🀩',
+            MahjongTiles::MahjongTileJoker => '🀪',
+            MahjongTiles::MahjongTileBack => '🀫',
         }
     }
 }
@@ -238,52 +146,51 @@ impl Into<char> for MahjongTiles {
 impl std::convert::TryFrom<char> for MahjongTiles {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            MAHJONG_TILE_EAST_WIND => Ok(MahjongTiles::MahjongTileEastWind),
-            MAHJONG_TILE_SOUTH_WIND => Ok(MahjongTiles::MahjongTileSouthWind),
-            MAHJONG_TILE_WEST_WIND => Ok(MahjongTiles::MahjongTileWestWind),
-            MAHJONG_TILE_NORTH_WIND => Ok(MahjongTiles::MahjongTileNorthWind),
-            MAHJONG_TILE_RED_DRAGON => Ok(MahjongTiles::MahjongTileRedDragon),
-            MAHJONG_TILE_GREEN_DRAGON => Ok(MahjongTiles::MahjongTileGreenDragon),
-            MAHJONG_TILE_WHITE_DRAGON => Ok(MahjongTiles::MahjongTileWhiteDragon),
-            MAHJONG_TILE_ONE_OF_CHARACTERS => Ok(MahjongTiles::MahjongTileOneOfCharacters),
-            MAHJONG_TILE_TWO_OF_CHARACTERS => Ok(MahjongTiles::MahjongTileTwoOfCharacters),
-            MAHJONG_TILE_THREE_OF_CHARACTERS => Ok(MahjongTiles::MahjongTileThreeOfCharacters),
-            MAHJONG_TILE_FOUR_OF_CHARACTERS => Ok(MahjongTiles::MahjongTileFourOfCharacters),
-            MAHJONG_TILE_FIVE_OF_CHARACTERS => Ok(MahjongTiles::MahjongTileFiveOfCharacters),
-            MAHJONG_TILE_SIX_OF_CHARACTERS => Ok(MahjongTiles::MahjongTileSixOfCharacters),
-            MAHJONG_TILE_SEVEN_OF_CHARACTERS => Ok(MahjongTiles::MahjongTileSevenOfCharacters),
-            MAHJONG_TILE_EIGHT_OF_CHARACTERS => Ok(MahjongTiles::MahjongTileEightOfCharacters),
-            MAHJONG_TILE_NINE_OF_CHARACTERS => Ok(MahjongTiles::MahjongTileNineOfCharacters),
-            MAHJONG_TILE_ONE_OF_BAMBOOS => Ok(MahjongTiles::MahjongTileOneOfBamboos),
-            MAHJONG_TILE_TWO_OF_BAMBOOS => Ok(MahjongTiles::MahjongTileTwoOfBamboos),
-            MAHJONG_TILE_THREE_OF_BAMBOOS => Ok(MahjongTiles::MahjongTileThreeOfBamboos),
-            MAHJONG_TILE_FOUR_OF_BAMBOOS => Ok(MahjongTiles::MahjongTileFourOfBamboos),
-            MAHJONG_TILE_FIVE_OF_BAMBOOS => Ok(MahjongTiles::MahjongTileFiveOfBamboos),
-            MAHJONG_TILE_SIX_OF_BAMBOOS => Ok(MahjongTiles::MahjongTileSixOfBamboos),
-            MAHJONG_TILE_SEVEN_OF_BAMBOOS => Ok(MahjongTiles::MahjongTileSevenOfBamboos),
-            MAHJONG_TILE_EIGHT_OF_BAMBOOS => Ok(MahjongTiles::MahjongTileEightOfBamboos),
-            MAHJONG_TILE_NINE_OF_BAMBOOS => Ok(MahjongTiles::MahjongTileNineOfBamboos),
-            MAHJONG_TILE_ONE_OF_CIRCLES => Ok(MahjongTiles::MahjongTileOneOfCircles),
-            MAHJONG_TILE_TWO_OF_CIRCLES => Ok(MahjongTiles::MahjongTileTwoOfCircles),
-            MAHJONG_TILE_THREE_OF_CIRCLES => Ok(MahjongTiles::MahjongTileThreeOfCircles),
-            MAHJONG_TILE_FOUR_OF_CIRCLES => Ok(MahjongTiles::MahjongTileFourOfCircles),
-            MAHJONG_TILE_FIVE_OF_CIRCLES => Ok(MahjongTiles::MahjongTileFiveOfCircles),
-            MAHJONG_TILE_SIX_OF_CIRCLES => Ok(MahjongTiles::MahjongTileSixOfCircles),
-            MAHJONG_TILE_SEVEN_OF_CIRCLES => Ok(MahjongTiles::MahjongTileSevenOfCircles),
-            MAHJONG_TILE_EIGHT_OF_CIRCLES => Ok(MahjongTiles::MahjongTileEightOfCircles),
-            MAHJONG_TILE_NINE_OF_CIRCLES => Ok(MahjongTiles::MahjongTileNineOfCircles),
-            MAHJONG_TILE_PLUM => Ok(MahjongTiles::MahjongTilePlum),
-            MAHJONG_TILE_ORCHID => Ok(MahjongTiles::MahjongTileOrchid),
-            MAHJONG_TILE_BAMBOO => Ok(MahjongTiles::MahjongTileBamboo),
-            MAHJONG_TILE_CHRYSANTHEMUM => Ok(MahjongTiles::MahjongTileChrysanthemum),
-            MAHJONG_TILE_SPRING => Ok(MahjongTiles::MahjongTileSpring),
-            MAHJONG_TILE_SUMMER => Ok(MahjongTiles::MahjongTileSummer),
-            MAHJONG_TILE_AUTUMN => Ok(MahjongTiles::MahjongTileAutumn),
-            MAHJONG_TILE_WINTER => Ok(MahjongTiles::MahjongTileWinter),
-            MAHJONG_TILE_JOKER => Ok(MahjongTiles::MahjongTileJoker),
-            MAHJONG_TILE_BACK => Ok(MahjongTiles::MahjongTileBack),
+            '🀀' => Ok(MahjongTiles::MahjongTileEastWind),
+            '🀁' => Ok(MahjongTiles::MahjongTileSouthWind),
+            '🀂' => Ok(MahjongTiles::MahjongTileWestWind),
+            '🀃' => Ok(MahjongTiles::MahjongTileNorthWind),
+            '🀄' => Ok(MahjongTiles::MahjongTileRedDragon),
+            '🀅' => Ok(MahjongTiles::MahjongTileGreenDragon),
+            '🀆' => Ok(MahjongTiles::MahjongTileWhiteDragon),
+            '🀇' => Ok(MahjongTiles::MahjongTileOneOfCharacters),
+            '🀈' => Ok(MahjongTiles::MahjongTileTwoOfCharacters),
+            '🀉' => Ok(MahjongTiles::MahjongTileThreeOfCharacters),
+            '🀊' => Ok(MahjongTiles::MahjongTileFourOfCharacters),
+            '🀋' => Ok(MahjongTiles::MahjongTileFiveOfCharacters),
+            '🀌' => Ok(MahjongTiles::MahjongTileSixOfCharacters),
+            '🀍' => Ok(MahjongTiles::MahjongTileSevenOfCharacters),
+            '🀎' => Ok(MahjongTiles::MahjongTileEightOfCharacters),
+            '🀏' => Ok(MahjongTiles::MahjongTileNineOfCharacters),
+            '🀐' => Ok(MahjongTiles::MahjongTileOneOfBamboos),
+            '🀑' => Ok(MahjongTiles::MahjongTileTwoOfBamboos),
+            '🀒' => Ok(MahjongTiles::MahjongTileThreeOfBamboos),
+            '🀓' => Ok(MahjongTiles::MahjongTileFourOfBamboos),
+            '🀔' => Ok(MahjongTiles::MahjongTileFiveOfBamboos),
+            '🀕' => Ok(MahjongTiles::MahjongTileSixOfBamboos),
+            '🀖' => Ok(MahjongTiles::MahjongTileSevenOfBamboos),
+            '🀗' => Ok(MahjongTiles::MahjongTileEightOfBamboos),
+            '🀘' => Ok(MahjongTiles::MahjongTileNineOfBamboos),
+            '🀙' => Ok(MahjongTiles::MahjongTileOneOfCircles),
+            '🀚' => Ok(MahjongTiles::MahjongTileTwoOfCircles),
+            '🀛' => Ok(MahjongTiles::MahjongTileThreeOfCircles),
+            '🀜' => Ok(MahjongTiles::MahjongTileFourOfCircles),
+            '🀝' => Ok(MahjongTiles::MahjongTileFiveOfCircles),
+            '🀞' => Ok(MahjongTiles::MahjongTileSixOfCircles),
+            '🀟' => Ok(MahjongTiles::MahjongTileSevenOfCircles),
+            '🀠' => Ok(MahjongTiles::MahjongTileEightOfCircles),
+            '🀡' => Ok(MahjongTiles::MahjongTileNineOfCircles),
+            '🀢' => Ok(MahjongTiles::MahjongTilePlum),
+            '🀣' => Ok(MahjongTiles::MahjongTileOrchid),
+            '🀤' => Ok(MahjongTiles::MahjongTileBamboo),
+            '🀥' => Ok(MahjongTiles::MahjongTileChrysanthemum),
+            '🀦' => Ok(MahjongTiles::MahjongTileSpring),
+            '🀧' => Ok(MahjongTiles::MahjongTileSummer),
+            '🀨' => Ok(MahjongTiles::MahjongTileAutumn),
+            '🀩' => Ok(MahjongTiles::MahjongTileWinter),
+            '🀪' => Ok(MahjongTiles::MahjongTileJoker),
+            '🀫' => Ok(MahjongTiles::MahjongTileBack),
             _ => Err(()),
         }
     }

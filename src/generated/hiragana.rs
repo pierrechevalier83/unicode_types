@@ -1,190 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{3041}: 'ぁ'
-    pub const LETTER_SMALL_A: char = 'ぁ';
-    /// \u{3042}: 'あ'
-    pub const LETTER_A: char = 'あ';
-    /// \u{3043}: 'ぃ'
-    pub const LETTER_SMALL_I: char = 'ぃ';
-    /// \u{3044}: 'い'
-    pub const LETTER_I: char = 'い';
-    /// \u{3045}: 'ぅ'
-    pub const LETTER_SMALL_U: char = 'ぅ';
-    /// \u{3046}: 'う'
-    pub const LETTER_U: char = 'う';
-    /// \u{3047}: 'ぇ'
-    pub const LETTER_SMALL_E: char = 'ぇ';
-    /// \u{3048}: 'え'
-    pub const LETTER_E: char = 'え';
-    /// \u{3049}: 'ぉ'
-    pub const LETTER_SMALL_O: char = 'ぉ';
-    /// \u{304a}: 'お'
-    pub const LETTER_O: char = 'お';
-    /// \u{304b}: 'か'
-    pub const LETTER_KA: char = 'か';
-    /// \u{304c}: 'が'
-    pub const LETTER_GA: char = 'が';
-    /// \u{304d}: 'き'
-    pub const LETTER_KI: char = 'き';
-    /// \u{304e}: 'ぎ'
-    pub const LETTER_GI: char = 'ぎ';
-    /// \u{304f}: 'く'
-    pub const LETTER_KU: char = 'く';
-    /// \u{3050}: 'ぐ'
-    pub const LETTER_GU: char = 'ぐ';
-    /// \u{3051}: 'け'
-    pub const LETTER_KE: char = 'け';
-    /// \u{3052}: 'げ'
-    pub const LETTER_GE: char = 'げ';
-    /// \u{3053}: 'こ'
-    pub const LETTER_KO: char = 'こ';
-    /// \u{3054}: 'ご'
-    pub const LETTER_GO: char = 'ご';
-    /// \u{3055}: 'さ'
-    pub const LETTER_SA: char = 'さ';
-    /// \u{3056}: 'ざ'
-    pub const LETTER_ZA: char = 'ざ';
-    /// \u{3057}: 'し'
-    pub const LETTER_SI: char = 'し';
-    /// \u{3058}: 'じ'
-    pub const LETTER_ZI: char = 'じ';
-    /// \u{3059}: 'す'
-    pub const LETTER_SU: char = 'す';
-    /// \u{305a}: 'ず'
-    pub const LETTER_ZU: char = 'ず';
-    /// \u{305b}: 'せ'
-    pub const LETTER_SE: char = 'せ';
-    /// \u{305c}: 'ぜ'
-    pub const LETTER_ZE: char = 'ぜ';
-    /// \u{305d}: 'そ'
-    pub const LETTER_SO: char = 'そ';
-    /// \u{305e}: 'ぞ'
-    pub const LETTER_ZO: char = 'ぞ';
-    /// \u{305f}: 'た'
-    pub const LETTER_TA: char = 'た';
-    /// \u{3060}: 'だ'
-    pub const LETTER_DA: char = 'だ';
-    /// \u{3061}: 'ち'
-    pub const LETTER_TI: char = 'ち';
-    /// \u{3062}: 'ぢ'
-    pub const LETTER_DI: char = 'ぢ';
-    /// \u{3063}: 'っ'
-    pub const LETTER_SMALL_TU: char = 'っ';
-    /// \u{3064}: 'つ'
-    pub const LETTER_TU: char = 'つ';
-    /// \u{3065}: 'づ'
-    pub const LETTER_DU: char = 'づ';
-    /// \u{3066}: 'て'
-    pub const LETTER_TE: char = 'て';
-    /// \u{3067}: 'で'
-    pub const LETTER_DE: char = 'で';
-    /// \u{3068}: 'と'
-    pub const LETTER_TO: char = 'と';
-    /// \u{3069}: 'ど'
-    pub const LETTER_DO: char = 'ど';
-    /// \u{306a}: 'な'
-    pub const LETTER_NA: char = 'な';
-    /// \u{306b}: 'に'
-    pub const LETTER_NI: char = 'に';
-    /// \u{306c}: 'ぬ'
-    pub const LETTER_NU: char = 'ぬ';
-    /// \u{306d}: 'ね'
-    pub const LETTER_NE: char = 'ね';
-    /// \u{306e}: 'の'
-    pub const LETTER_NO: char = 'の';
-    /// \u{306f}: 'は'
-    pub const LETTER_HA: char = 'は';
-    /// \u{3070}: 'ば'
-    pub const LETTER_BA: char = 'ば';
-    /// \u{3071}: 'ぱ'
-    pub const LETTER_PA: char = 'ぱ';
-    /// \u{3072}: 'ひ'
-    pub const LETTER_HI: char = 'ひ';
-    /// \u{3073}: 'び'
-    pub const LETTER_BI: char = 'び';
-    /// \u{3074}: 'ぴ'
-    pub const LETTER_PI: char = 'ぴ';
-    /// \u{3075}: 'ふ'
-    pub const LETTER_HU: char = 'ふ';
-    /// \u{3076}: 'ぶ'
-    pub const LETTER_BU: char = 'ぶ';
-    /// \u{3077}: 'ぷ'
-    pub const LETTER_PU: char = 'ぷ';
-    /// \u{3078}: 'へ'
-    pub const LETTER_HE: char = 'へ';
-    /// \u{3079}: 'べ'
-    pub const LETTER_BE: char = 'べ';
-    /// \u{307a}: 'ぺ'
-    pub const LETTER_PE: char = 'ぺ';
-    /// \u{307b}: 'ほ'
-    pub const LETTER_HO: char = 'ほ';
-    /// \u{307c}: 'ぼ'
-    pub const LETTER_BO: char = 'ぼ';
-    /// \u{307d}: 'ぽ'
-    pub const LETTER_PO: char = 'ぽ';
-    /// \u{307e}: 'ま'
-    pub const LETTER_MA: char = 'ま';
-    /// \u{307f}: 'み'
-    pub const LETTER_MI: char = 'み';
-    /// \u{3080}: 'む'
-    pub const LETTER_MU: char = 'む';
-    /// \u{3081}: 'め'
-    pub const LETTER_ME: char = 'め';
-    /// \u{3082}: 'も'
-    pub const LETTER_MO: char = 'も';
-    /// \u{3083}: 'ゃ'
-    pub const LETTER_SMALL_YA: char = 'ゃ';
-    /// \u{3084}: 'や'
-    pub const LETTER_YA: char = 'や';
-    /// \u{3085}: 'ゅ'
-    pub const LETTER_SMALL_YU: char = 'ゅ';
-    /// \u{3086}: 'ゆ'
-    pub const LETTER_YU: char = 'ゆ';
-    /// \u{3087}: 'ょ'
-    pub const LETTER_SMALL_YO: char = 'ょ';
-    /// \u{3088}: 'よ'
-    pub const LETTER_YO: char = 'よ';
-    /// \u{3089}: 'ら'
-    pub const LETTER_RA: char = 'ら';
-    /// \u{308a}: 'り'
-    pub const LETTER_RI: char = 'り';
-    /// \u{308b}: 'る'
-    pub const LETTER_RU: char = 'る';
-    /// \u{308c}: 'れ'
-    pub const LETTER_RE: char = 'れ';
-    /// \u{308d}: 'ろ'
-    pub const LETTER_RO: char = 'ろ';
-    /// \u{308e}: 'ゎ'
-    pub const LETTER_SMALL_WA: char = 'ゎ';
-    /// \u{308f}: 'わ'
-    pub const LETTER_WA: char = 'わ';
-    /// \u{3090}: 'ゐ'
-    pub const LETTER_WI: char = 'ゐ';
-    /// \u{3091}: 'ゑ'
-    pub const LETTER_WE: char = 'ゑ';
-    /// \u{3092}: 'を'
-    pub const LETTER_WO: char = 'を';
-    /// \u{3093}: 'ん'
-    pub const LETTER_N: char = 'ん';
-    /// \u{3094}: 'ゔ'
-    pub const LETTER_VU: char = 'ゔ';
-    /// \u{3095}: 'ゕ'
-    pub const LETTER_SMALL_KA: char = 'ゕ';
-    /// \u{3096}: 'ゖ'
-    pub const LETTER_SMALL_KE: char = 'ゖ';
-    /// \u{3099}: '゙'
-    pub const COMBINING_KATAKANA_DASH_VOICED_SOUND_MARK: char = '゙';
-    /// \u{309a}: '゚'
-    pub const COMBINING_KATAKANA_DASH_SEMI_DASH_VOICED_SOUND_MARK: char = '゚';
-    /// \u{309b}: '゛'
-    pub const KATAKANA_DASH_VOICED_SOUND_MARK: char = '゛';
-    /// \u{309c}: '゜'
-    pub const KATAKANA_DASH_SEMI_DASH_VOICED_SOUND_MARK: char = '゜';
-    /// \u{309d}: 'ゝ'
-    pub const ITERATION_MARK: char = 'ゝ';
-    /// \u{309e}: 'ゞ'
-    pub const VOICED_ITERATION_MARK: char = 'ゞ';
-}
 
 /// An enum to represent all characters in the Hiragana block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -377,100 +190,99 @@ pub enum Hiragana {
 
 impl Into<char> for Hiragana {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Hiragana::LetterSmallA => LETTER_SMALL_A,
-            Hiragana::LetterA => LETTER_A,
-            Hiragana::LetterSmallI => LETTER_SMALL_I,
-            Hiragana::LetterI => LETTER_I,
-            Hiragana::LetterSmallU => LETTER_SMALL_U,
-            Hiragana::LetterU => LETTER_U,
-            Hiragana::LetterSmallE => LETTER_SMALL_E,
-            Hiragana::LetterE => LETTER_E,
-            Hiragana::LetterSmallO => LETTER_SMALL_O,
-            Hiragana::LetterO => LETTER_O,
-            Hiragana::LetterKa => LETTER_KA,
-            Hiragana::LetterGa => LETTER_GA,
-            Hiragana::LetterKi => LETTER_KI,
-            Hiragana::LetterGi => LETTER_GI,
-            Hiragana::LetterKu => LETTER_KU,
-            Hiragana::LetterGu => LETTER_GU,
-            Hiragana::LetterKe => LETTER_KE,
-            Hiragana::LetterGe => LETTER_GE,
-            Hiragana::LetterKo => LETTER_KO,
-            Hiragana::LetterGo => LETTER_GO,
-            Hiragana::LetterSa => LETTER_SA,
-            Hiragana::LetterZa => LETTER_ZA,
-            Hiragana::LetterSi => LETTER_SI,
-            Hiragana::LetterZi => LETTER_ZI,
-            Hiragana::LetterSu => LETTER_SU,
-            Hiragana::LetterZu => LETTER_ZU,
-            Hiragana::LetterSe => LETTER_SE,
-            Hiragana::LetterZe => LETTER_ZE,
-            Hiragana::LetterSo => LETTER_SO,
-            Hiragana::LetterZo => LETTER_ZO,
-            Hiragana::LetterTa => LETTER_TA,
-            Hiragana::LetterDa => LETTER_DA,
-            Hiragana::LetterTi => LETTER_TI,
-            Hiragana::LetterDi => LETTER_DI,
-            Hiragana::LetterSmallTu => LETTER_SMALL_TU,
-            Hiragana::LetterTu => LETTER_TU,
-            Hiragana::LetterDu => LETTER_DU,
-            Hiragana::LetterTe => LETTER_TE,
-            Hiragana::LetterDe => LETTER_DE,
-            Hiragana::LetterTo => LETTER_TO,
-            Hiragana::LetterDo => LETTER_DO,
-            Hiragana::LetterNa => LETTER_NA,
-            Hiragana::LetterNi => LETTER_NI,
-            Hiragana::LetterNu => LETTER_NU,
-            Hiragana::LetterNe => LETTER_NE,
-            Hiragana::LetterNo => LETTER_NO,
-            Hiragana::LetterHa => LETTER_HA,
-            Hiragana::LetterBa => LETTER_BA,
-            Hiragana::LetterPa => LETTER_PA,
-            Hiragana::LetterHi => LETTER_HI,
-            Hiragana::LetterBi => LETTER_BI,
-            Hiragana::LetterPi => LETTER_PI,
-            Hiragana::LetterHu => LETTER_HU,
-            Hiragana::LetterBu => LETTER_BU,
-            Hiragana::LetterPu => LETTER_PU,
-            Hiragana::LetterHe => LETTER_HE,
-            Hiragana::LetterBe => LETTER_BE,
-            Hiragana::LetterPe => LETTER_PE,
-            Hiragana::LetterHo => LETTER_HO,
-            Hiragana::LetterBo => LETTER_BO,
-            Hiragana::LetterPo => LETTER_PO,
-            Hiragana::LetterMa => LETTER_MA,
-            Hiragana::LetterMi => LETTER_MI,
-            Hiragana::LetterMu => LETTER_MU,
-            Hiragana::LetterMe => LETTER_ME,
-            Hiragana::LetterMo => LETTER_MO,
-            Hiragana::LetterSmallYa => LETTER_SMALL_YA,
-            Hiragana::LetterYa => LETTER_YA,
-            Hiragana::LetterSmallYu => LETTER_SMALL_YU,
-            Hiragana::LetterYu => LETTER_YU,
-            Hiragana::LetterSmallYo => LETTER_SMALL_YO,
-            Hiragana::LetterYo => LETTER_YO,
-            Hiragana::LetterRa => LETTER_RA,
-            Hiragana::LetterRi => LETTER_RI,
-            Hiragana::LetterRu => LETTER_RU,
-            Hiragana::LetterRe => LETTER_RE,
-            Hiragana::LetterRo => LETTER_RO,
-            Hiragana::LetterSmallWa => LETTER_SMALL_WA,
-            Hiragana::LetterWa => LETTER_WA,
-            Hiragana::LetterWi => LETTER_WI,
-            Hiragana::LetterWe => LETTER_WE,
-            Hiragana::LetterWo => LETTER_WO,
-            Hiragana::LetterN => LETTER_N,
-            Hiragana::LetterVu => LETTER_VU,
-            Hiragana::LetterSmallKa => LETTER_SMALL_KA,
-            Hiragana::LetterSmallKe => LETTER_SMALL_KE,
-            Hiragana::CombiningKatakanaDashVoicedSoundMark => COMBINING_KATAKANA_DASH_VOICED_SOUND_MARK,
-            Hiragana::CombiningKatakanaDashSemiDashVoicedSoundMark => COMBINING_KATAKANA_DASH_SEMI_DASH_VOICED_SOUND_MARK,
-            Hiragana::KatakanaDashVoicedSoundMark => KATAKANA_DASH_VOICED_SOUND_MARK,
-            Hiragana::KatakanaDashSemiDashVoicedSoundMark => KATAKANA_DASH_SEMI_DASH_VOICED_SOUND_MARK,
-            Hiragana::IterationMark => ITERATION_MARK,
-            Hiragana::VoicedIterationMark => VOICED_ITERATION_MARK,
+            Hiragana::LetterSmallA => 'ぁ',
+            Hiragana::LetterA => 'あ',
+            Hiragana::LetterSmallI => 'ぃ',
+            Hiragana::LetterI => 'い',
+            Hiragana::LetterSmallU => 'ぅ',
+            Hiragana::LetterU => 'う',
+            Hiragana::LetterSmallE => 'ぇ',
+            Hiragana::LetterE => 'え',
+            Hiragana::LetterSmallO => 'ぉ',
+            Hiragana::LetterO => 'お',
+            Hiragana::LetterKa => 'か',
+            Hiragana::LetterGa => 'が',
+            Hiragana::LetterKi => 'き',
+            Hiragana::LetterGi => 'ぎ',
+            Hiragana::LetterKu => 'く',
+            Hiragana::LetterGu => 'ぐ',
+            Hiragana::LetterKe => 'け',
+            Hiragana::LetterGe => 'げ',
+            Hiragana::LetterKo => 'こ',
+            Hiragana::LetterGo => 'ご',
+            Hiragana::LetterSa => 'さ',
+            Hiragana::LetterZa => 'ざ',
+            Hiragana::LetterSi => 'し',
+            Hiragana::LetterZi => 'じ',
+            Hiragana::LetterSu => 'す',
+            Hiragana::LetterZu => 'ず',
+            Hiragana::LetterSe => 'せ',
+            Hiragana::LetterZe => 'ぜ',
+            Hiragana::LetterSo => 'そ',
+            Hiragana::LetterZo => 'ぞ',
+            Hiragana::LetterTa => 'た',
+            Hiragana::LetterDa => 'だ',
+            Hiragana::LetterTi => 'ち',
+            Hiragana::LetterDi => 'ぢ',
+            Hiragana::LetterSmallTu => 'っ',
+            Hiragana::LetterTu => 'つ',
+            Hiragana::LetterDu => 'づ',
+            Hiragana::LetterTe => 'て',
+            Hiragana::LetterDe => 'で',
+            Hiragana::LetterTo => 'と',
+            Hiragana::LetterDo => 'ど',
+            Hiragana::LetterNa => 'な',
+            Hiragana::LetterNi => 'に',
+            Hiragana::LetterNu => 'ぬ',
+            Hiragana::LetterNe => 'ね',
+            Hiragana::LetterNo => 'の',
+            Hiragana::LetterHa => 'は',
+            Hiragana::LetterBa => 'ば',
+            Hiragana::LetterPa => 'ぱ',
+            Hiragana::LetterHi => 'ひ',
+            Hiragana::LetterBi => 'び',
+            Hiragana::LetterPi => 'ぴ',
+            Hiragana::LetterHu => 'ふ',
+            Hiragana::LetterBu => 'ぶ',
+            Hiragana::LetterPu => 'ぷ',
+            Hiragana::LetterHe => 'へ',
+            Hiragana::LetterBe => 'べ',
+            Hiragana::LetterPe => 'ぺ',
+            Hiragana::LetterHo => 'ほ',
+            Hiragana::LetterBo => 'ぼ',
+            Hiragana::LetterPo => 'ぽ',
+            Hiragana::LetterMa => 'ま',
+            Hiragana::LetterMi => 'み',
+            Hiragana::LetterMu => 'む',
+            Hiragana::LetterMe => 'め',
+            Hiragana::LetterMo => 'も',
+            Hiragana::LetterSmallYa => 'ゃ',
+            Hiragana::LetterYa => 'や',
+            Hiragana::LetterSmallYu => 'ゅ',
+            Hiragana::LetterYu => 'ゆ',
+            Hiragana::LetterSmallYo => 'ょ',
+            Hiragana::LetterYo => 'よ',
+            Hiragana::LetterRa => 'ら',
+            Hiragana::LetterRi => 'り',
+            Hiragana::LetterRu => 'る',
+            Hiragana::LetterRe => 'れ',
+            Hiragana::LetterRo => 'ろ',
+            Hiragana::LetterSmallWa => 'ゎ',
+            Hiragana::LetterWa => 'わ',
+            Hiragana::LetterWi => 'ゐ',
+            Hiragana::LetterWe => 'ゑ',
+            Hiragana::LetterWo => 'を',
+            Hiragana::LetterN => 'ん',
+            Hiragana::LetterVu => 'ゔ',
+            Hiragana::LetterSmallKa => 'ゕ',
+            Hiragana::LetterSmallKe => 'ゖ',
+            Hiragana::CombiningKatakanaDashVoicedSoundMark => '゙',
+            Hiragana::CombiningKatakanaDashSemiDashVoicedSoundMark => '゚',
+            Hiragana::KatakanaDashVoicedSoundMark => '゛',
+            Hiragana::KatakanaDashSemiDashVoicedSoundMark => '゜',
+            Hiragana::IterationMark => 'ゝ',
+            Hiragana::VoicedIterationMark => 'ゞ',
         }
     }
 }
@@ -478,100 +290,99 @@ impl Into<char> for Hiragana {
 impl std::convert::TryFrom<char> for Hiragana {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_SMALL_A => Ok(Hiragana::LetterSmallA),
-            LETTER_A => Ok(Hiragana::LetterA),
-            LETTER_SMALL_I => Ok(Hiragana::LetterSmallI),
-            LETTER_I => Ok(Hiragana::LetterI),
-            LETTER_SMALL_U => Ok(Hiragana::LetterSmallU),
-            LETTER_U => Ok(Hiragana::LetterU),
-            LETTER_SMALL_E => Ok(Hiragana::LetterSmallE),
-            LETTER_E => Ok(Hiragana::LetterE),
-            LETTER_SMALL_O => Ok(Hiragana::LetterSmallO),
-            LETTER_O => Ok(Hiragana::LetterO),
-            LETTER_KA => Ok(Hiragana::LetterKa),
-            LETTER_GA => Ok(Hiragana::LetterGa),
-            LETTER_KI => Ok(Hiragana::LetterKi),
-            LETTER_GI => Ok(Hiragana::LetterGi),
-            LETTER_KU => Ok(Hiragana::LetterKu),
-            LETTER_GU => Ok(Hiragana::LetterGu),
-            LETTER_KE => Ok(Hiragana::LetterKe),
-            LETTER_GE => Ok(Hiragana::LetterGe),
-            LETTER_KO => Ok(Hiragana::LetterKo),
-            LETTER_GO => Ok(Hiragana::LetterGo),
-            LETTER_SA => Ok(Hiragana::LetterSa),
-            LETTER_ZA => Ok(Hiragana::LetterZa),
-            LETTER_SI => Ok(Hiragana::LetterSi),
-            LETTER_ZI => Ok(Hiragana::LetterZi),
-            LETTER_SU => Ok(Hiragana::LetterSu),
-            LETTER_ZU => Ok(Hiragana::LetterZu),
-            LETTER_SE => Ok(Hiragana::LetterSe),
-            LETTER_ZE => Ok(Hiragana::LetterZe),
-            LETTER_SO => Ok(Hiragana::LetterSo),
-            LETTER_ZO => Ok(Hiragana::LetterZo),
-            LETTER_TA => Ok(Hiragana::LetterTa),
-            LETTER_DA => Ok(Hiragana::LetterDa),
-            LETTER_TI => Ok(Hiragana::LetterTi),
-            LETTER_DI => Ok(Hiragana::LetterDi),
-            LETTER_SMALL_TU => Ok(Hiragana::LetterSmallTu),
-            LETTER_TU => Ok(Hiragana::LetterTu),
-            LETTER_DU => Ok(Hiragana::LetterDu),
-            LETTER_TE => Ok(Hiragana::LetterTe),
-            LETTER_DE => Ok(Hiragana::LetterDe),
-            LETTER_TO => Ok(Hiragana::LetterTo),
-            LETTER_DO => Ok(Hiragana::LetterDo),
-            LETTER_NA => Ok(Hiragana::LetterNa),
-            LETTER_NI => Ok(Hiragana::LetterNi),
-            LETTER_NU => Ok(Hiragana::LetterNu),
-            LETTER_NE => Ok(Hiragana::LetterNe),
-            LETTER_NO => Ok(Hiragana::LetterNo),
-            LETTER_HA => Ok(Hiragana::LetterHa),
-            LETTER_BA => Ok(Hiragana::LetterBa),
-            LETTER_PA => Ok(Hiragana::LetterPa),
-            LETTER_HI => Ok(Hiragana::LetterHi),
-            LETTER_BI => Ok(Hiragana::LetterBi),
-            LETTER_PI => Ok(Hiragana::LetterPi),
-            LETTER_HU => Ok(Hiragana::LetterHu),
-            LETTER_BU => Ok(Hiragana::LetterBu),
-            LETTER_PU => Ok(Hiragana::LetterPu),
-            LETTER_HE => Ok(Hiragana::LetterHe),
-            LETTER_BE => Ok(Hiragana::LetterBe),
-            LETTER_PE => Ok(Hiragana::LetterPe),
-            LETTER_HO => Ok(Hiragana::LetterHo),
-            LETTER_BO => Ok(Hiragana::LetterBo),
-            LETTER_PO => Ok(Hiragana::LetterPo),
-            LETTER_MA => Ok(Hiragana::LetterMa),
-            LETTER_MI => Ok(Hiragana::LetterMi),
-            LETTER_MU => Ok(Hiragana::LetterMu),
-            LETTER_ME => Ok(Hiragana::LetterMe),
-            LETTER_MO => Ok(Hiragana::LetterMo),
-            LETTER_SMALL_YA => Ok(Hiragana::LetterSmallYa),
-            LETTER_YA => Ok(Hiragana::LetterYa),
-            LETTER_SMALL_YU => Ok(Hiragana::LetterSmallYu),
-            LETTER_YU => Ok(Hiragana::LetterYu),
-            LETTER_SMALL_YO => Ok(Hiragana::LetterSmallYo),
-            LETTER_YO => Ok(Hiragana::LetterYo),
-            LETTER_RA => Ok(Hiragana::LetterRa),
-            LETTER_RI => Ok(Hiragana::LetterRi),
-            LETTER_RU => Ok(Hiragana::LetterRu),
-            LETTER_RE => Ok(Hiragana::LetterRe),
-            LETTER_RO => Ok(Hiragana::LetterRo),
-            LETTER_SMALL_WA => Ok(Hiragana::LetterSmallWa),
-            LETTER_WA => Ok(Hiragana::LetterWa),
-            LETTER_WI => Ok(Hiragana::LetterWi),
-            LETTER_WE => Ok(Hiragana::LetterWe),
-            LETTER_WO => Ok(Hiragana::LetterWo),
-            LETTER_N => Ok(Hiragana::LetterN),
-            LETTER_VU => Ok(Hiragana::LetterVu),
-            LETTER_SMALL_KA => Ok(Hiragana::LetterSmallKa),
-            LETTER_SMALL_KE => Ok(Hiragana::LetterSmallKe),
-            COMBINING_KATAKANA_DASH_VOICED_SOUND_MARK => Ok(Hiragana::CombiningKatakanaDashVoicedSoundMark),
-            COMBINING_KATAKANA_DASH_SEMI_DASH_VOICED_SOUND_MARK => Ok(Hiragana::CombiningKatakanaDashSemiDashVoicedSoundMark),
-            KATAKANA_DASH_VOICED_SOUND_MARK => Ok(Hiragana::KatakanaDashVoicedSoundMark),
-            KATAKANA_DASH_SEMI_DASH_VOICED_SOUND_MARK => Ok(Hiragana::KatakanaDashSemiDashVoicedSoundMark),
-            ITERATION_MARK => Ok(Hiragana::IterationMark),
-            VOICED_ITERATION_MARK => Ok(Hiragana::VoicedIterationMark),
+            'ぁ' => Ok(Hiragana::LetterSmallA),
+            'あ' => Ok(Hiragana::LetterA),
+            'ぃ' => Ok(Hiragana::LetterSmallI),
+            'い' => Ok(Hiragana::LetterI),
+            'ぅ' => Ok(Hiragana::LetterSmallU),
+            'う' => Ok(Hiragana::LetterU),
+            'ぇ' => Ok(Hiragana::LetterSmallE),
+            'え' => Ok(Hiragana::LetterE),
+            'ぉ' => Ok(Hiragana::LetterSmallO),
+            'お' => Ok(Hiragana::LetterO),
+            'か' => Ok(Hiragana::LetterKa),
+            'が' => Ok(Hiragana::LetterGa),
+            'き' => Ok(Hiragana::LetterKi),
+            'ぎ' => Ok(Hiragana::LetterGi),
+            'く' => Ok(Hiragana::LetterKu),
+            'ぐ' => Ok(Hiragana::LetterGu),
+            'け' => Ok(Hiragana::LetterKe),
+            'げ' => Ok(Hiragana::LetterGe),
+            'こ' => Ok(Hiragana::LetterKo),
+            'ご' => Ok(Hiragana::LetterGo),
+            'さ' => Ok(Hiragana::LetterSa),
+            'ざ' => Ok(Hiragana::LetterZa),
+            'し' => Ok(Hiragana::LetterSi),
+            'じ' => Ok(Hiragana::LetterZi),
+            'す' => Ok(Hiragana::LetterSu),
+            'ず' => Ok(Hiragana::LetterZu),
+            'せ' => Ok(Hiragana::LetterSe),
+            'ぜ' => Ok(Hiragana::LetterZe),
+            'そ' => Ok(Hiragana::LetterSo),
+            'ぞ' => Ok(Hiragana::LetterZo),
+            'た' => Ok(Hiragana::LetterTa),
+            'だ' => Ok(Hiragana::LetterDa),
+            'ち' => Ok(Hiragana::LetterTi),
+            'ぢ' => Ok(Hiragana::LetterDi),
+            'っ' => Ok(Hiragana::LetterSmallTu),
+            'つ' => Ok(Hiragana::LetterTu),
+            'づ' => Ok(Hiragana::LetterDu),
+            'て' => Ok(Hiragana::LetterTe),
+            'で' => Ok(Hiragana::LetterDe),
+            'と' => Ok(Hiragana::LetterTo),
+            'ど' => Ok(Hiragana::LetterDo),
+            'な' => Ok(Hiragana::LetterNa),
+            'に' => Ok(Hiragana::LetterNi),
+            'ぬ' => Ok(Hiragana::LetterNu),
+            'ね' => Ok(Hiragana::LetterNe),
+            'の' => Ok(Hiragana::LetterNo),
+            'は' => Ok(Hiragana::LetterHa),
+            'ば' => Ok(Hiragana::LetterBa),
+            'ぱ' => Ok(Hiragana::LetterPa),
+            'ひ' => Ok(Hiragana::LetterHi),
+            'び' => Ok(Hiragana::LetterBi),
+            'ぴ' => Ok(Hiragana::LetterPi),
+            'ふ' => Ok(Hiragana::LetterHu),
+            'ぶ' => Ok(Hiragana::LetterBu),
+            'ぷ' => Ok(Hiragana::LetterPu),
+            'へ' => Ok(Hiragana::LetterHe),
+            'べ' => Ok(Hiragana::LetterBe),
+            'ぺ' => Ok(Hiragana::LetterPe),
+            'ほ' => Ok(Hiragana::LetterHo),
+            'ぼ' => Ok(Hiragana::LetterBo),
+            'ぽ' => Ok(Hiragana::LetterPo),
+            'ま' => Ok(Hiragana::LetterMa),
+            'み' => Ok(Hiragana::LetterMi),
+            'む' => Ok(Hiragana::LetterMu),
+            'め' => Ok(Hiragana::LetterMe),
+            'も' => Ok(Hiragana::LetterMo),
+            'ゃ' => Ok(Hiragana::LetterSmallYa),
+            'や' => Ok(Hiragana::LetterYa),
+            'ゅ' => Ok(Hiragana::LetterSmallYu),
+            'ゆ' => Ok(Hiragana::LetterYu),
+            'ょ' => Ok(Hiragana::LetterSmallYo),
+            'よ' => Ok(Hiragana::LetterYo),
+            'ら' => Ok(Hiragana::LetterRa),
+            'り' => Ok(Hiragana::LetterRi),
+            'る' => Ok(Hiragana::LetterRu),
+            'れ' => Ok(Hiragana::LetterRe),
+            'ろ' => Ok(Hiragana::LetterRo),
+            'ゎ' => Ok(Hiragana::LetterSmallWa),
+            'わ' => Ok(Hiragana::LetterWa),
+            'ゐ' => Ok(Hiragana::LetterWi),
+            'ゑ' => Ok(Hiragana::LetterWe),
+            'を' => Ok(Hiragana::LetterWo),
+            'ん' => Ok(Hiragana::LetterN),
+            'ゔ' => Ok(Hiragana::LetterVu),
+            'ゕ' => Ok(Hiragana::LetterSmallKa),
+            'ゖ' => Ok(Hiragana::LetterSmallKe),
+            '゙' => Ok(Hiragana::CombiningKatakanaDashVoicedSoundMark),
+            '゚' => Ok(Hiragana::CombiningKatakanaDashSemiDashVoicedSoundMark),
+            '゛' => Ok(Hiragana::KatakanaDashVoicedSoundMark),
+            '゜' => Ok(Hiragana::KatakanaDashSemiDashVoicedSoundMark),
+            'ゝ' => Ok(Hiragana::IterationMark),
+            'ゞ' => Ok(Hiragana::VoicedIterationMark),
             _ => Err(()),
         }
     }

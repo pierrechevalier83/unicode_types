@@ -1,516 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1100}: 'ᄀ'
-    pub const HANGUL_CHOSEONG_KIYEOK: char = 'ᄀ';
-    /// \u{1101}: 'ᄁ'
-    pub const HANGUL_CHOSEONG_SSANGKIYEOK: char = 'ᄁ';
-    /// \u{1102}: 'ᄂ'
-    pub const HANGUL_CHOSEONG_NIEUN: char = 'ᄂ';
-    /// \u{1103}: 'ᄃ'
-    pub const HANGUL_CHOSEONG_TIKEUT: char = 'ᄃ';
-    /// \u{1104}: 'ᄄ'
-    pub const HANGUL_CHOSEONG_SSANGTIKEUT: char = 'ᄄ';
-    /// \u{1105}: 'ᄅ'
-    pub const HANGUL_CHOSEONG_RIEUL: char = 'ᄅ';
-    /// \u{1106}: 'ᄆ'
-    pub const HANGUL_CHOSEONG_MIEUM: char = 'ᄆ';
-    /// \u{1107}: 'ᄇ'
-    pub const HANGUL_CHOSEONG_PIEUP: char = 'ᄇ';
-    /// \u{1108}: 'ᄈ'
-    pub const HANGUL_CHOSEONG_SSANGPIEUP: char = 'ᄈ';
-    /// \u{1109}: 'ᄉ'
-    pub const HANGUL_CHOSEONG_SIOS: char = 'ᄉ';
-    /// \u{110a}: 'ᄊ'
-    pub const HANGUL_CHOSEONG_SSANGSIOS: char = 'ᄊ';
-    /// \u{110b}: 'ᄋ'
-    pub const HANGUL_CHOSEONG_IEUNG: char = 'ᄋ';
-    /// \u{110c}: 'ᄌ'
-    pub const HANGUL_CHOSEONG_CIEUC: char = 'ᄌ';
-    /// \u{110d}: 'ᄍ'
-    pub const HANGUL_CHOSEONG_SSANGCIEUC: char = 'ᄍ';
-    /// \u{110e}: 'ᄎ'
-    pub const HANGUL_CHOSEONG_CHIEUCH: char = 'ᄎ';
-    /// \u{110f}: 'ᄏ'
-    pub const HANGUL_CHOSEONG_KHIEUKH: char = 'ᄏ';
-    /// \u{1110}: 'ᄐ'
-    pub const HANGUL_CHOSEONG_THIEUTH: char = 'ᄐ';
-    /// \u{1111}: 'ᄑ'
-    pub const HANGUL_CHOSEONG_PHIEUPH: char = 'ᄑ';
-    /// \u{1112}: 'ᄒ'
-    pub const HANGUL_CHOSEONG_HIEUH: char = 'ᄒ';
-    /// \u{1113}: 'ᄓ'
-    pub const HANGUL_CHOSEONG_NIEUN_DASH_KIYEOK: char = 'ᄓ';
-    /// \u{1114}: 'ᄔ'
-    pub const HANGUL_CHOSEONG_SSANGNIEUN: char = 'ᄔ';
-    /// \u{1115}: 'ᄕ'
-    pub const HANGUL_CHOSEONG_NIEUN_DASH_TIKEUT: char = 'ᄕ';
-    /// \u{1116}: 'ᄖ'
-    pub const HANGUL_CHOSEONG_NIEUN_DASH_PIEUP: char = 'ᄖ';
-    /// \u{1117}: 'ᄗ'
-    pub const HANGUL_CHOSEONG_TIKEUT_DASH_KIYEOK: char = 'ᄗ';
-    /// \u{1118}: 'ᄘ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_NIEUN: char = 'ᄘ';
-    /// \u{1119}: 'ᄙ'
-    pub const HANGUL_CHOSEONG_SSANGRIEUL: char = 'ᄙ';
-    /// \u{111a}: 'ᄚ'
-    pub const HANGUL_CHOSEONG_RIEUL_DASH_HIEUH: char = 'ᄚ';
-    /// \u{111b}: 'ᄛ'
-    pub const HANGUL_CHOSEONG_KAPYEOUNRIEUL: char = 'ᄛ';
-    /// \u{111c}: 'ᄜ'
-    pub const HANGUL_CHOSEONG_MIEUM_DASH_PIEUP: char = 'ᄜ';
-    /// \u{111d}: 'ᄝ'
-    pub const HANGUL_CHOSEONG_KAPYEOUNMIEUM: char = 'ᄝ';
-    /// \u{111e}: 'ᄞ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_KIYEOK: char = 'ᄞ';
-    /// \u{111f}: 'ᄟ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_NIEUN: char = 'ᄟ';
-    /// \u{1120}: 'ᄠ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_TIKEUT: char = 'ᄠ';
-    /// \u{1121}: 'ᄡ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_SIOS: char = 'ᄡ';
-    /// \u{1122}: 'ᄢ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_KIYEOK: char = 'ᄢ';
-    /// \u{1123}: 'ᄣ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_TIKEUT: char = 'ᄣ';
-    /// \u{1124}: 'ᄤ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_PIEUP: char = 'ᄤ';
-    /// \u{1125}: 'ᄥ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_SSANGSIOS: char = 'ᄥ';
-    /// \u{1126}: 'ᄦ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_CIEUC: char = 'ᄦ';
-    /// \u{1127}: 'ᄧ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_CIEUC: char = 'ᄧ';
-    /// \u{1128}: 'ᄨ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_CHIEUCH: char = 'ᄨ';
-    /// \u{1129}: 'ᄩ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_THIEUTH: char = 'ᄩ';
-    /// \u{112a}: 'ᄪ'
-    pub const HANGUL_CHOSEONG_PIEUP_DASH_PHIEUPH: char = 'ᄪ';
-    /// \u{112b}: 'ᄫ'
-    pub const HANGUL_CHOSEONG_KAPYEOUNPIEUP: char = 'ᄫ';
-    /// \u{112c}: 'ᄬ'
-    pub const HANGUL_CHOSEONG_KAPYEOUNSSANGPIEUP: char = 'ᄬ';
-    /// \u{112d}: 'ᄭ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_KIYEOK: char = 'ᄭ';
-    /// \u{112e}: 'ᄮ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_NIEUN: char = 'ᄮ';
-    /// \u{112f}: 'ᄯ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_TIKEUT: char = 'ᄯ';
-    /// \u{1130}: 'ᄰ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_RIEUL: char = 'ᄰ';
-    /// \u{1131}: 'ᄱ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_MIEUM: char = 'ᄱ';
-    /// \u{1132}: 'ᄲ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_PIEUP: char = 'ᄲ';
-    /// \u{1133}: 'ᄳ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_PIEUP_DASH_KIYEOK: char = 'ᄳ';
-    /// \u{1134}: 'ᄴ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_SSANGSIOS: char = 'ᄴ';
-    /// \u{1135}: 'ᄵ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_IEUNG: char = 'ᄵ';
-    /// \u{1136}: 'ᄶ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_CIEUC: char = 'ᄶ';
-    /// \u{1137}: 'ᄷ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_CHIEUCH: char = 'ᄷ';
-    /// \u{1138}: 'ᄸ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_KHIEUKH: char = 'ᄸ';
-    /// \u{1139}: 'ᄹ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_THIEUTH: char = 'ᄹ';
-    /// \u{113a}: 'ᄺ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_PHIEUPH: char = 'ᄺ';
-    /// \u{113b}: 'ᄻ'
-    pub const HANGUL_CHOSEONG_SIOS_DASH_HIEUH: char = 'ᄻ';
-    /// \u{113c}: 'ᄼ'
-    pub const HANGUL_CHOSEONG_CHITUEUMSIOS: char = 'ᄼ';
-    /// \u{113d}: 'ᄽ'
-    pub const HANGUL_CHOSEONG_CHITUEUMSSANGSIOS: char = 'ᄽ';
-    /// \u{113e}: 'ᄾ'
-    pub const HANGUL_CHOSEONG_CEONGCHIEUMSIOS: char = 'ᄾ';
-    /// \u{113f}: 'ᄿ'
-    pub const HANGUL_CHOSEONG_CEONGCHIEUMSSANGSIOS: char = 'ᄿ';
-    /// \u{1140}: 'ᅀ'
-    pub const HANGUL_CHOSEONG_PANSIOS: char = 'ᅀ';
-    /// \u{1141}: 'ᅁ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_KIYEOK: char = 'ᅁ';
-    /// \u{1142}: 'ᅂ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_TIKEUT: char = 'ᅂ';
-    /// \u{1143}: 'ᅃ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_MIEUM: char = 'ᅃ';
-    /// \u{1144}: 'ᅄ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_PIEUP: char = 'ᅄ';
-    /// \u{1145}: 'ᅅ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_SIOS: char = 'ᅅ';
-    /// \u{1146}: 'ᅆ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_PANSIOS: char = 'ᅆ';
-    /// \u{1147}: 'ᅇ'
-    pub const HANGUL_CHOSEONG_SSANGIEUNG: char = 'ᅇ';
-    /// \u{1148}: 'ᅈ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_CIEUC: char = 'ᅈ';
-    /// \u{1149}: 'ᅉ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_CHIEUCH: char = 'ᅉ';
-    /// \u{114a}: 'ᅊ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_THIEUTH: char = 'ᅊ';
-    /// \u{114b}: 'ᅋ'
-    pub const HANGUL_CHOSEONG_IEUNG_DASH_PHIEUPH: char = 'ᅋ';
-    /// \u{114c}: 'ᅌ'
-    pub const HANGUL_CHOSEONG_YESIEUNG: char = 'ᅌ';
-    /// \u{114d}: 'ᅍ'
-    pub const HANGUL_CHOSEONG_CIEUC_DASH_IEUNG: char = 'ᅍ';
-    /// \u{114e}: 'ᅎ'
-    pub const HANGUL_CHOSEONG_CHITUEUMCIEUC: char = 'ᅎ';
-    /// \u{114f}: 'ᅏ'
-    pub const HANGUL_CHOSEONG_CHITUEUMSSANGCIEUC: char = 'ᅏ';
-    /// \u{1150}: 'ᅐ'
-    pub const HANGUL_CHOSEONG_CEONGCHIEUMCIEUC: char = 'ᅐ';
-    /// \u{1151}: 'ᅑ'
-    pub const HANGUL_CHOSEONG_CEONGCHIEUMSSANGCIEUC: char = 'ᅑ';
-    /// \u{1152}: 'ᅒ'
-    pub const HANGUL_CHOSEONG_CHIEUCH_DASH_KHIEUKH: char = 'ᅒ';
-    /// \u{1153}: 'ᅓ'
-    pub const HANGUL_CHOSEONG_CHIEUCH_DASH_HIEUH: char = 'ᅓ';
-    /// \u{1154}: 'ᅔ'
-    pub const HANGUL_CHOSEONG_CHITUEUMCHIEUCH: char = 'ᅔ';
-    /// \u{1155}: 'ᅕ'
-    pub const HANGUL_CHOSEONG_CEONGCHIEUMCHIEUCH: char = 'ᅕ';
-    /// \u{1156}: 'ᅖ'
-    pub const HANGUL_CHOSEONG_PHIEUPH_DASH_PIEUP: char = 'ᅖ';
-    /// \u{1157}: 'ᅗ'
-    pub const HANGUL_CHOSEONG_KAPYEOUNPHIEUPH: char = 'ᅗ';
-    /// \u{1158}: 'ᅘ'
-    pub const HANGUL_CHOSEONG_SSANGHIEUH: char = 'ᅘ';
-    /// \u{1159}: 'ᅙ'
-    pub const HANGUL_CHOSEONG_YEORINHIEUH: char = 'ᅙ';
-    /// \u{115a}: 'ᅚ'
-    pub const HANGUL_CHOSEONG_KIYEOK_DASH_TIKEUT: char = 'ᅚ';
-    /// \u{115b}: 'ᅛ'
-    pub const HANGUL_CHOSEONG_NIEUN_DASH_SIOS: char = 'ᅛ';
-    /// \u{115c}: 'ᅜ'
-    pub const HANGUL_CHOSEONG_NIEUN_DASH_CIEUC: char = 'ᅜ';
-    /// \u{115d}: 'ᅝ'
-    pub const HANGUL_CHOSEONG_NIEUN_DASH_HIEUH: char = 'ᅝ';
-    /// \u{115e}: 'ᅞ'
-    pub const HANGUL_CHOSEONG_TIKEUT_DASH_RIEUL: char = 'ᅞ';
-    /// \u{115f}: 'ᅟ'
-    pub const HANGUL_CHOSEONG_FILLER: char = 'ᅟ';
-    /// \u{1160}: 'ᅠ'
-    pub const HANGUL_JUNGSEONG_FILLER: char = 'ᅠ';
-    /// \u{1161}: 'ᅡ'
-    pub const HANGUL_JUNGSEONG_A: char = 'ᅡ';
-    /// \u{1162}: 'ᅢ'
-    pub const HANGUL_JUNGSEONG_AE: char = 'ᅢ';
-    /// \u{1163}: 'ᅣ'
-    pub const HANGUL_JUNGSEONG_YA: char = 'ᅣ';
-    /// \u{1164}: 'ᅤ'
-    pub const HANGUL_JUNGSEONG_YAE: char = 'ᅤ';
-    /// \u{1165}: 'ᅥ'
-    pub const HANGUL_JUNGSEONG_EO: char = 'ᅥ';
-    /// \u{1166}: 'ᅦ'
-    pub const HANGUL_JUNGSEONG_E: char = 'ᅦ';
-    /// \u{1167}: 'ᅧ'
-    pub const HANGUL_JUNGSEONG_YEO: char = 'ᅧ';
-    /// \u{1168}: 'ᅨ'
-    pub const HANGUL_JUNGSEONG_YE: char = 'ᅨ';
-    /// \u{1169}: 'ᅩ'
-    pub const HANGUL_JUNGSEONG_O: char = 'ᅩ';
-    /// \u{116a}: 'ᅪ'
-    pub const HANGUL_JUNGSEONG_WA: char = 'ᅪ';
-    /// \u{116b}: 'ᅫ'
-    pub const HANGUL_JUNGSEONG_WAE: char = 'ᅫ';
-    /// \u{116c}: 'ᅬ'
-    pub const HANGUL_JUNGSEONG_OE: char = 'ᅬ';
-    /// \u{116d}: 'ᅭ'
-    pub const HANGUL_JUNGSEONG_YO: char = 'ᅭ';
-    /// \u{116e}: 'ᅮ'
-    pub const HANGUL_JUNGSEONG_U: char = 'ᅮ';
-    /// \u{116f}: 'ᅯ'
-    pub const HANGUL_JUNGSEONG_WEO: char = 'ᅯ';
-    /// \u{1170}: 'ᅰ'
-    pub const HANGUL_JUNGSEONG_WE: char = 'ᅰ';
-    /// \u{1171}: 'ᅱ'
-    pub const HANGUL_JUNGSEONG_WI: char = 'ᅱ';
-    /// \u{1172}: 'ᅲ'
-    pub const HANGUL_JUNGSEONG_YU: char = 'ᅲ';
-    /// \u{1173}: 'ᅳ'
-    pub const HANGUL_JUNGSEONG_EU: char = 'ᅳ';
-    /// \u{1174}: 'ᅴ'
-    pub const HANGUL_JUNGSEONG_YI: char = 'ᅴ';
-    /// \u{1175}: 'ᅵ'
-    pub const HANGUL_JUNGSEONG_I: char = 'ᅵ';
-    /// \u{1176}: 'ᅶ'
-    pub const HANGUL_JUNGSEONG_A_DASH_O: char = 'ᅶ';
-    /// \u{1177}: 'ᅷ'
-    pub const HANGUL_JUNGSEONG_A_DASH_U: char = 'ᅷ';
-    /// \u{1178}: 'ᅸ'
-    pub const HANGUL_JUNGSEONG_YA_DASH_O: char = 'ᅸ';
-    /// \u{1179}: 'ᅹ'
-    pub const HANGUL_JUNGSEONG_YA_DASH_YO: char = 'ᅹ';
-    /// \u{117a}: 'ᅺ'
-    pub const HANGUL_JUNGSEONG_EO_DASH_O: char = 'ᅺ';
-    /// \u{117b}: 'ᅻ'
-    pub const HANGUL_JUNGSEONG_EO_DASH_U: char = 'ᅻ';
-    /// \u{117c}: 'ᅼ'
-    pub const HANGUL_JUNGSEONG_EO_DASH_EU: char = 'ᅼ';
-    /// \u{117d}: 'ᅽ'
-    pub const HANGUL_JUNGSEONG_YEO_DASH_O: char = 'ᅽ';
-    /// \u{117e}: 'ᅾ'
-    pub const HANGUL_JUNGSEONG_YEO_DASH_U: char = 'ᅾ';
-    /// \u{117f}: 'ᅿ'
-    pub const HANGUL_JUNGSEONG_O_DASH_EO: char = 'ᅿ';
-    /// \u{1180}: 'ᆀ'
-    pub const HANGUL_JUNGSEONG_O_DASH_E: char = 'ᆀ';
-    /// \u{1181}: 'ᆁ'
-    pub const HANGUL_JUNGSEONG_O_DASH_YE: char = 'ᆁ';
-    /// \u{1182}: 'ᆂ'
-    pub const HANGUL_JUNGSEONG_O_DASH_O: char = 'ᆂ';
-    /// \u{1183}: 'ᆃ'
-    pub const HANGUL_JUNGSEONG_O_DASH_U: char = 'ᆃ';
-    /// \u{1184}: 'ᆄ'
-    pub const HANGUL_JUNGSEONG_YO_DASH_YA: char = 'ᆄ';
-    /// \u{1185}: 'ᆅ'
-    pub const HANGUL_JUNGSEONG_YO_DASH_YAE: char = 'ᆅ';
-    /// \u{1186}: 'ᆆ'
-    pub const HANGUL_JUNGSEONG_YO_DASH_YEO: char = 'ᆆ';
-    /// \u{1187}: 'ᆇ'
-    pub const HANGUL_JUNGSEONG_YO_DASH_O: char = 'ᆇ';
-    /// \u{1188}: 'ᆈ'
-    pub const HANGUL_JUNGSEONG_YO_DASH_I: char = 'ᆈ';
-    /// \u{1189}: 'ᆉ'
-    pub const HANGUL_JUNGSEONG_U_DASH_A: char = 'ᆉ';
-    /// \u{118a}: 'ᆊ'
-    pub const HANGUL_JUNGSEONG_U_DASH_AE: char = 'ᆊ';
-    /// \u{118b}: 'ᆋ'
-    pub const HANGUL_JUNGSEONG_U_DASH_EO_DASH_EU: char = 'ᆋ';
-    /// \u{118c}: 'ᆌ'
-    pub const HANGUL_JUNGSEONG_U_DASH_YE: char = 'ᆌ';
-    /// \u{118d}: 'ᆍ'
-    pub const HANGUL_JUNGSEONG_U_DASH_U: char = 'ᆍ';
-    /// \u{118e}: 'ᆎ'
-    pub const HANGUL_JUNGSEONG_YU_DASH_A: char = 'ᆎ';
-    /// \u{118f}: 'ᆏ'
-    pub const HANGUL_JUNGSEONG_YU_DASH_EO: char = 'ᆏ';
-    /// \u{1190}: 'ᆐ'
-    pub const HANGUL_JUNGSEONG_YU_DASH_E: char = 'ᆐ';
-    /// \u{1191}: 'ᆑ'
-    pub const HANGUL_JUNGSEONG_YU_DASH_YEO: char = 'ᆑ';
-    /// \u{1192}: 'ᆒ'
-    pub const HANGUL_JUNGSEONG_YU_DASH_YE: char = 'ᆒ';
-    /// \u{1193}: 'ᆓ'
-    pub const HANGUL_JUNGSEONG_YU_DASH_U: char = 'ᆓ';
-    /// \u{1194}: 'ᆔ'
-    pub const HANGUL_JUNGSEONG_YU_DASH_I: char = 'ᆔ';
-    /// \u{1195}: 'ᆕ'
-    pub const HANGUL_JUNGSEONG_EU_DASH_U: char = 'ᆕ';
-    /// \u{1196}: 'ᆖ'
-    pub const HANGUL_JUNGSEONG_EU_DASH_EU: char = 'ᆖ';
-    /// \u{1197}: 'ᆗ'
-    pub const HANGUL_JUNGSEONG_YI_DASH_U: char = 'ᆗ';
-    /// \u{1198}: 'ᆘ'
-    pub const HANGUL_JUNGSEONG_I_DASH_A: char = 'ᆘ';
-    /// \u{1199}: 'ᆙ'
-    pub const HANGUL_JUNGSEONG_I_DASH_YA: char = 'ᆙ';
-    /// \u{119a}: 'ᆚ'
-    pub const HANGUL_JUNGSEONG_I_DASH_O: char = 'ᆚ';
-    /// \u{119b}: 'ᆛ'
-    pub const HANGUL_JUNGSEONG_I_DASH_U: char = 'ᆛ';
-    /// \u{119c}: 'ᆜ'
-    pub const HANGUL_JUNGSEONG_I_DASH_EU: char = 'ᆜ';
-    /// \u{119d}: 'ᆝ'
-    pub const HANGUL_JUNGSEONG_I_DASH_ARAEA: char = 'ᆝ';
-    /// \u{119e}: 'ᆞ'
-    pub const HANGUL_JUNGSEONG_ARAEA: char = 'ᆞ';
-    /// \u{119f}: 'ᆟ'
-    pub const HANGUL_JUNGSEONG_ARAEA_DASH_EO: char = 'ᆟ';
-    /// \u{11a0}: 'ᆠ'
-    pub const HANGUL_JUNGSEONG_ARAEA_DASH_U: char = 'ᆠ';
-    /// \u{11a1}: 'ᆡ'
-    pub const HANGUL_JUNGSEONG_ARAEA_DASH_I: char = 'ᆡ';
-    /// \u{11a2}: 'ᆢ'
-    pub const HANGUL_JUNGSEONG_SSANGARAEA: char = 'ᆢ';
-    /// \u{11a3}: 'ᆣ'
-    pub const HANGUL_JUNGSEONG_A_DASH_EU: char = 'ᆣ';
-    /// \u{11a4}: 'ᆤ'
-    pub const HANGUL_JUNGSEONG_YA_DASH_U: char = 'ᆤ';
-    /// \u{11a5}: 'ᆥ'
-    pub const HANGUL_JUNGSEONG_YEO_DASH_YA: char = 'ᆥ';
-    /// \u{11a6}: 'ᆦ'
-    pub const HANGUL_JUNGSEONG_O_DASH_YA: char = 'ᆦ';
-    /// \u{11a7}: 'ᆧ'
-    pub const HANGUL_JUNGSEONG_O_DASH_YAE: char = 'ᆧ';
-    /// \u{11a8}: 'ᆨ'
-    pub const HANGUL_JONGSEONG_KIYEOK: char = 'ᆨ';
-    /// \u{11a9}: 'ᆩ'
-    pub const HANGUL_JONGSEONG_SSANGKIYEOK: char = 'ᆩ';
-    /// \u{11aa}: 'ᆪ'
-    pub const HANGUL_JONGSEONG_KIYEOK_DASH_SIOS: char = 'ᆪ';
-    /// \u{11ab}: 'ᆫ'
-    pub const HANGUL_JONGSEONG_NIEUN: char = 'ᆫ';
-    /// \u{11ac}: 'ᆬ'
-    pub const HANGUL_JONGSEONG_NIEUN_DASH_CIEUC: char = 'ᆬ';
-    /// \u{11ad}: 'ᆭ'
-    pub const HANGUL_JONGSEONG_NIEUN_DASH_HIEUH: char = 'ᆭ';
-    /// \u{11ae}: 'ᆮ'
-    pub const HANGUL_JONGSEONG_TIKEUT: char = 'ᆮ';
-    /// \u{11af}: 'ᆯ'
-    pub const HANGUL_JONGSEONG_RIEUL: char = 'ᆯ';
-    /// \u{11b0}: 'ᆰ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_KIYEOK: char = 'ᆰ';
-    /// \u{11b1}: 'ᆱ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_MIEUM: char = 'ᆱ';
-    /// \u{11b2}: 'ᆲ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_PIEUP: char = 'ᆲ';
-    /// \u{11b3}: 'ᆳ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_SIOS: char = 'ᆳ';
-    /// \u{11b4}: 'ᆴ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_THIEUTH: char = 'ᆴ';
-    /// \u{11b5}: 'ᆵ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_PHIEUPH: char = 'ᆵ';
-    /// \u{11b6}: 'ᆶ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_HIEUH: char = 'ᆶ';
-    /// \u{11b7}: 'ᆷ'
-    pub const HANGUL_JONGSEONG_MIEUM: char = 'ᆷ';
-    /// \u{11b8}: 'ᆸ'
-    pub const HANGUL_JONGSEONG_PIEUP: char = 'ᆸ';
-    /// \u{11b9}: 'ᆹ'
-    pub const HANGUL_JONGSEONG_PIEUP_DASH_SIOS: char = 'ᆹ';
-    /// \u{11ba}: 'ᆺ'
-    pub const HANGUL_JONGSEONG_SIOS: char = 'ᆺ';
-    /// \u{11bb}: 'ᆻ'
-    pub const HANGUL_JONGSEONG_SSANGSIOS: char = 'ᆻ';
-    /// \u{11bc}: 'ᆼ'
-    pub const HANGUL_JONGSEONG_IEUNG: char = 'ᆼ';
-    /// \u{11bd}: 'ᆽ'
-    pub const HANGUL_JONGSEONG_CIEUC: char = 'ᆽ';
-    /// \u{11be}: 'ᆾ'
-    pub const HANGUL_JONGSEONG_CHIEUCH: char = 'ᆾ';
-    /// \u{11bf}: 'ᆿ'
-    pub const HANGUL_JONGSEONG_KHIEUKH: char = 'ᆿ';
-    /// \u{11c0}: 'ᇀ'
-    pub const HANGUL_JONGSEONG_THIEUTH: char = 'ᇀ';
-    /// \u{11c1}: 'ᇁ'
-    pub const HANGUL_JONGSEONG_PHIEUPH: char = 'ᇁ';
-    /// \u{11c2}: 'ᇂ'
-    pub const HANGUL_JONGSEONG_HIEUH: char = 'ᇂ';
-    /// \u{11c3}: 'ᇃ'
-    pub const HANGUL_JONGSEONG_KIYEOK_DASH_RIEUL: char = 'ᇃ';
-    /// \u{11c4}: 'ᇄ'
-    pub const HANGUL_JONGSEONG_KIYEOK_DASH_SIOS_DASH_KIYEOK: char = 'ᇄ';
-    /// \u{11c5}: 'ᇅ'
-    pub const HANGUL_JONGSEONG_NIEUN_DASH_KIYEOK: char = 'ᇅ';
-    /// \u{11c6}: 'ᇆ'
-    pub const HANGUL_JONGSEONG_NIEUN_DASH_TIKEUT: char = 'ᇆ';
-    /// \u{11c7}: 'ᇇ'
-    pub const HANGUL_JONGSEONG_NIEUN_DASH_SIOS: char = 'ᇇ';
-    /// \u{11c8}: 'ᇈ'
-    pub const HANGUL_JONGSEONG_NIEUN_DASH_PANSIOS: char = 'ᇈ';
-    /// \u{11c9}: 'ᇉ'
-    pub const HANGUL_JONGSEONG_NIEUN_DASH_THIEUTH: char = 'ᇉ';
-    /// \u{11ca}: 'ᇊ'
-    pub const HANGUL_JONGSEONG_TIKEUT_DASH_KIYEOK: char = 'ᇊ';
-    /// \u{11cb}: 'ᇋ'
-    pub const HANGUL_JONGSEONG_TIKEUT_DASH_RIEUL: char = 'ᇋ';
-    /// \u{11cc}: 'ᇌ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_KIYEOK_DASH_SIOS: char = 'ᇌ';
-    /// \u{11cd}: 'ᇍ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_NIEUN: char = 'ᇍ';
-    /// \u{11ce}: 'ᇎ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_TIKEUT: char = 'ᇎ';
-    /// \u{11cf}: 'ᇏ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_TIKEUT_DASH_HIEUH: char = 'ᇏ';
-    /// \u{11d0}: 'ᇐ'
-    pub const HANGUL_JONGSEONG_SSANGRIEUL: char = 'ᇐ';
-    /// \u{11d1}: 'ᇑ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_MIEUM_DASH_KIYEOK: char = 'ᇑ';
-    /// \u{11d2}: 'ᇒ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_MIEUM_DASH_SIOS: char = 'ᇒ';
-    /// \u{11d3}: 'ᇓ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_PIEUP_DASH_SIOS: char = 'ᇓ';
-    /// \u{11d4}: 'ᇔ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_PIEUP_DASH_HIEUH: char = 'ᇔ';
-    /// \u{11d5}: 'ᇕ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_KAPYEOUNPIEUP: char = 'ᇕ';
-    /// \u{11d6}: 'ᇖ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_SSANGSIOS: char = 'ᇖ';
-    /// \u{11d7}: 'ᇗ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_PANSIOS: char = 'ᇗ';
-    /// \u{11d8}: 'ᇘ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_KHIEUKH: char = 'ᇘ';
-    /// \u{11d9}: 'ᇙ'
-    pub const HANGUL_JONGSEONG_RIEUL_DASH_YEORINHIEUH: char = 'ᇙ';
-    /// \u{11da}: 'ᇚ'
-    pub const HANGUL_JONGSEONG_MIEUM_DASH_KIYEOK: char = 'ᇚ';
-    /// \u{11db}: 'ᇛ'
-    pub const HANGUL_JONGSEONG_MIEUM_DASH_RIEUL: char = 'ᇛ';
-    /// \u{11dc}: 'ᇜ'
-    pub const HANGUL_JONGSEONG_MIEUM_DASH_PIEUP: char = 'ᇜ';
-    /// \u{11dd}: 'ᇝ'
-    pub const HANGUL_JONGSEONG_MIEUM_DASH_SIOS: char = 'ᇝ';
-    /// \u{11de}: 'ᇞ'
-    pub const HANGUL_JONGSEONG_MIEUM_DASH_SSANGSIOS: char = 'ᇞ';
-    /// \u{11df}: 'ᇟ'
-    pub const HANGUL_JONGSEONG_MIEUM_DASH_PANSIOS: char = 'ᇟ';
-    /// \u{11e0}: 'ᇠ'
-    pub const HANGUL_JONGSEONG_MIEUM_DASH_CHIEUCH: char = 'ᇠ';
-    /// \u{11e1}: 'ᇡ'
-    pub const HANGUL_JONGSEONG_MIEUM_DASH_HIEUH: char = 'ᇡ';
-    /// \u{11e2}: 'ᇢ'
-    pub const HANGUL_JONGSEONG_KAPYEOUNMIEUM: char = 'ᇢ';
-    /// \u{11e3}: 'ᇣ'
-    pub const HANGUL_JONGSEONG_PIEUP_DASH_RIEUL: char = 'ᇣ';
-    /// \u{11e4}: 'ᇤ'
-    pub const HANGUL_JONGSEONG_PIEUP_DASH_PHIEUPH: char = 'ᇤ';
-    /// \u{11e5}: 'ᇥ'
-    pub const HANGUL_JONGSEONG_PIEUP_DASH_HIEUH: char = 'ᇥ';
-    /// \u{11e6}: 'ᇦ'
-    pub const HANGUL_JONGSEONG_KAPYEOUNPIEUP: char = 'ᇦ';
-    /// \u{11e7}: 'ᇧ'
-    pub const HANGUL_JONGSEONG_SIOS_DASH_KIYEOK: char = 'ᇧ';
-    /// \u{11e8}: 'ᇨ'
-    pub const HANGUL_JONGSEONG_SIOS_DASH_TIKEUT: char = 'ᇨ';
-    /// \u{11e9}: 'ᇩ'
-    pub const HANGUL_JONGSEONG_SIOS_DASH_RIEUL: char = 'ᇩ';
-    /// \u{11ea}: 'ᇪ'
-    pub const HANGUL_JONGSEONG_SIOS_DASH_PIEUP: char = 'ᇪ';
-    /// \u{11eb}: 'ᇫ'
-    pub const HANGUL_JONGSEONG_PANSIOS: char = 'ᇫ';
-    /// \u{11ec}: 'ᇬ'
-    pub const HANGUL_JONGSEONG_IEUNG_DASH_KIYEOK: char = 'ᇬ';
-    /// \u{11ed}: 'ᇭ'
-    pub const HANGUL_JONGSEONG_IEUNG_DASH_SSANGKIYEOK: char = 'ᇭ';
-    /// \u{11ee}: 'ᇮ'
-    pub const HANGUL_JONGSEONG_SSANGIEUNG: char = 'ᇮ';
-    /// \u{11ef}: 'ᇯ'
-    pub const HANGUL_JONGSEONG_IEUNG_DASH_KHIEUKH: char = 'ᇯ';
-    /// \u{11f0}: 'ᇰ'
-    pub const HANGUL_JONGSEONG_YESIEUNG: char = 'ᇰ';
-    /// \u{11f1}: 'ᇱ'
-    pub const HANGUL_JONGSEONG_YESIEUNG_DASH_SIOS: char = 'ᇱ';
-    /// \u{11f2}: 'ᇲ'
-    pub const HANGUL_JONGSEONG_YESIEUNG_DASH_PANSIOS: char = 'ᇲ';
-    /// \u{11f3}: 'ᇳ'
-    pub const HANGUL_JONGSEONG_PHIEUPH_DASH_PIEUP: char = 'ᇳ';
-    /// \u{11f4}: 'ᇴ'
-    pub const HANGUL_JONGSEONG_KAPYEOUNPHIEUPH: char = 'ᇴ';
-    /// \u{11f5}: 'ᇵ'
-    pub const HANGUL_JONGSEONG_HIEUH_DASH_NIEUN: char = 'ᇵ';
-    /// \u{11f6}: 'ᇶ'
-    pub const HANGUL_JONGSEONG_HIEUH_DASH_RIEUL: char = 'ᇶ';
-    /// \u{11f7}: 'ᇷ'
-    pub const HANGUL_JONGSEONG_HIEUH_DASH_MIEUM: char = 'ᇷ';
-    /// \u{11f8}: 'ᇸ'
-    pub const HANGUL_JONGSEONG_HIEUH_DASH_PIEUP: char = 'ᇸ';
-    /// \u{11f9}: 'ᇹ'
-    pub const HANGUL_JONGSEONG_YEORINHIEUH: char = 'ᇹ';
-    /// \u{11fa}: 'ᇺ'
-    pub const HANGUL_JONGSEONG_KIYEOK_DASH_NIEUN: char = 'ᇺ';
-    /// \u{11fb}: 'ᇻ'
-    pub const HANGUL_JONGSEONG_KIYEOK_DASH_PIEUP: char = 'ᇻ';
-    /// \u{11fc}: 'ᇼ'
-    pub const HANGUL_JONGSEONG_KIYEOK_DASH_CHIEUCH: char = 'ᇼ';
-    /// \u{11fd}: 'ᇽ'
-    pub const HANGUL_JONGSEONG_KIYEOK_DASH_KHIEUKH: char = 'ᇽ';
-    /// \u{11fe}: 'ᇾ'
-    pub const HANGUL_JONGSEONG_KIYEOK_DASH_HIEUH: char = 'ᇾ';
-}
 
 /// An enum to represent all characters in the HangulJamo block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -1029,263 +516,262 @@ pub enum HangulJamo {
 
 impl Into<char> for HangulJamo {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            HangulJamo::HangulChoseongKiyeok => HANGUL_CHOSEONG_KIYEOK,
-            HangulJamo::HangulChoseongSsangkiyeok => HANGUL_CHOSEONG_SSANGKIYEOK,
-            HangulJamo::HangulChoseongNieun => HANGUL_CHOSEONG_NIEUN,
-            HangulJamo::HangulChoseongTikeut => HANGUL_CHOSEONG_TIKEUT,
-            HangulJamo::HangulChoseongSsangtikeut => HANGUL_CHOSEONG_SSANGTIKEUT,
-            HangulJamo::HangulChoseongRieul => HANGUL_CHOSEONG_RIEUL,
-            HangulJamo::HangulChoseongMieum => HANGUL_CHOSEONG_MIEUM,
-            HangulJamo::HangulChoseongPieup => HANGUL_CHOSEONG_PIEUP,
-            HangulJamo::HangulChoseongSsangpieup => HANGUL_CHOSEONG_SSANGPIEUP,
-            HangulJamo::HangulChoseongSios => HANGUL_CHOSEONG_SIOS,
-            HangulJamo::HangulChoseongSsangsios => HANGUL_CHOSEONG_SSANGSIOS,
-            HangulJamo::HangulChoseongIeung => HANGUL_CHOSEONG_IEUNG,
-            HangulJamo::HangulChoseongCieuc => HANGUL_CHOSEONG_CIEUC,
-            HangulJamo::HangulChoseongSsangcieuc => HANGUL_CHOSEONG_SSANGCIEUC,
-            HangulJamo::HangulChoseongChieuch => HANGUL_CHOSEONG_CHIEUCH,
-            HangulJamo::HangulChoseongKhieukh => HANGUL_CHOSEONG_KHIEUKH,
-            HangulJamo::HangulChoseongThieuth => HANGUL_CHOSEONG_THIEUTH,
-            HangulJamo::HangulChoseongPhieuph => HANGUL_CHOSEONG_PHIEUPH,
-            HangulJamo::HangulChoseongHieuh => HANGUL_CHOSEONG_HIEUH,
-            HangulJamo::HangulChoseongNieunDashKiyeok => HANGUL_CHOSEONG_NIEUN_DASH_KIYEOK,
-            HangulJamo::HangulChoseongSsangnieun => HANGUL_CHOSEONG_SSANGNIEUN,
-            HangulJamo::HangulChoseongNieunDashTikeut => HANGUL_CHOSEONG_NIEUN_DASH_TIKEUT,
-            HangulJamo::HangulChoseongNieunDashPieup => HANGUL_CHOSEONG_NIEUN_DASH_PIEUP,
-            HangulJamo::HangulChoseongTikeutDashKiyeok => HANGUL_CHOSEONG_TIKEUT_DASH_KIYEOK,
-            HangulJamo::HangulChoseongRieulDashNieun => HANGUL_CHOSEONG_RIEUL_DASH_NIEUN,
-            HangulJamo::HangulChoseongSsangrieul => HANGUL_CHOSEONG_SSANGRIEUL,
-            HangulJamo::HangulChoseongRieulDashHieuh => HANGUL_CHOSEONG_RIEUL_DASH_HIEUH,
-            HangulJamo::HangulChoseongKapyeounrieul => HANGUL_CHOSEONG_KAPYEOUNRIEUL,
-            HangulJamo::HangulChoseongMieumDashPieup => HANGUL_CHOSEONG_MIEUM_DASH_PIEUP,
-            HangulJamo::HangulChoseongKapyeounmieum => HANGUL_CHOSEONG_KAPYEOUNMIEUM,
-            HangulJamo::HangulChoseongPieupDashKiyeok => HANGUL_CHOSEONG_PIEUP_DASH_KIYEOK,
-            HangulJamo::HangulChoseongPieupDashNieun => HANGUL_CHOSEONG_PIEUP_DASH_NIEUN,
-            HangulJamo::HangulChoseongPieupDashTikeut => HANGUL_CHOSEONG_PIEUP_DASH_TIKEUT,
-            HangulJamo::HangulChoseongPieupDashSios => HANGUL_CHOSEONG_PIEUP_DASH_SIOS,
-            HangulJamo::HangulChoseongPieupDashSiosDashKiyeok => HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_KIYEOK,
-            HangulJamo::HangulChoseongPieupDashSiosDashTikeut => HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_TIKEUT,
-            HangulJamo::HangulChoseongPieupDashSiosDashPieup => HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_PIEUP,
-            HangulJamo::HangulChoseongPieupDashSsangsios => HANGUL_CHOSEONG_PIEUP_DASH_SSANGSIOS,
-            HangulJamo::HangulChoseongPieupDashSiosDashCieuc => HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_CIEUC,
-            HangulJamo::HangulChoseongPieupDashCieuc => HANGUL_CHOSEONG_PIEUP_DASH_CIEUC,
-            HangulJamo::HangulChoseongPieupDashChieuch => HANGUL_CHOSEONG_PIEUP_DASH_CHIEUCH,
-            HangulJamo::HangulChoseongPieupDashThieuth => HANGUL_CHOSEONG_PIEUP_DASH_THIEUTH,
-            HangulJamo::HangulChoseongPieupDashPhieuph => HANGUL_CHOSEONG_PIEUP_DASH_PHIEUPH,
-            HangulJamo::HangulChoseongKapyeounpieup => HANGUL_CHOSEONG_KAPYEOUNPIEUP,
-            HangulJamo::HangulChoseongKapyeounssangpieup => HANGUL_CHOSEONG_KAPYEOUNSSANGPIEUP,
-            HangulJamo::HangulChoseongSiosDashKiyeok => HANGUL_CHOSEONG_SIOS_DASH_KIYEOK,
-            HangulJamo::HangulChoseongSiosDashNieun => HANGUL_CHOSEONG_SIOS_DASH_NIEUN,
-            HangulJamo::HangulChoseongSiosDashTikeut => HANGUL_CHOSEONG_SIOS_DASH_TIKEUT,
-            HangulJamo::HangulChoseongSiosDashRieul => HANGUL_CHOSEONG_SIOS_DASH_RIEUL,
-            HangulJamo::HangulChoseongSiosDashMieum => HANGUL_CHOSEONG_SIOS_DASH_MIEUM,
-            HangulJamo::HangulChoseongSiosDashPieup => HANGUL_CHOSEONG_SIOS_DASH_PIEUP,
-            HangulJamo::HangulChoseongSiosDashPieupDashKiyeok => HANGUL_CHOSEONG_SIOS_DASH_PIEUP_DASH_KIYEOK,
-            HangulJamo::HangulChoseongSiosDashSsangsios => HANGUL_CHOSEONG_SIOS_DASH_SSANGSIOS,
-            HangulJamo::HangulChoseongSiosDashIeung => HANGUL_CHOSEONG_SIOS_DASH_IEUNG,
-            HangulJamo::HangulChoseongSiosDashCieuc => HANGUL_CHOSEONG_SIOS_DASH_CIEUC,
-            HangulJamo::HangulChoseongSiosDashChieuch => HANGUL_CHOSEONG_SIOS_DASH_CHIEUCH,
-            HangulJamo::HangulChoseongSiosDashKhieukh => HANGUL_CHOSEONG_SIOS_DASH_KHIEUKH,
-            HangulJamo::HangulChoseongSiosDashThieuth => HANGUL_CHOSEONG_SIOS_DASH_THIEUTH,
-            HangulJamo::HangulChoseongSiosDashPhieuph => HANGUL_CHOSEONG_SIOS_DASH_PHIEUPH,
-            HangulJamo::HangulChoseongSiosDashHieuh => HANGUL_CHOSEONG_SIOS_DASH_HIEUH,
-            HangulJamo::HangulChoseongChitueumsios => HANGUL_CHOSEONG_CHITUEUMSIOS,
-            HangulJamo::HangulChoseongChitueumssangsios => HANGUL_CHOSEONG_CHITUEUMSSANGSIOS,
-            HangulJamo::HangulChoseongCeongchieumsios => HANGUL_CHOSEONG_CEONGCHIEUMSIOS,
-            HangulJamo::HangulChoseongCeongchieumssangsios => HANGUL_CHOSEONG_CEONGCHIEUMSSANGSIOS,
-            HangulJamo::HangulChoseongPansios => HANGUL_CHOSEONG_PANSIOS,
-            HangulJamo::HangulChoseongIeungDashKiyeok => HANGUL_CHOSEONG_IEUNG_DASH_KIYEOK,
-            HangulJamo::HangulChoseongIeungDashTikeut => HANGUL_CHOSEONG_IEUNG_DASH_TIKEUT,
-            HangulJamo::HangulChoseongIeungDashMieum => HANGUL_CHOSEONG_IEUNG_DASH_MIEUM,
-            HangulJamo::HangulChoseongIeungDashPieup => HANGUL_CHOSEONG_IEUNG_DASH_PIEUP,
-            HangulJamo::HangulChoseongIeungDashSios => HANGUL_CHOSEONG_IEUNG_DASH_SIOS,
-            HangulJamo::HangulChoseongIeungDashPansios => HANGUL_CHOSEONG_IEUNG_DASH_PANSIOS,
-            HangulJamo::HangulChoseongSsangieung => HANGUL_CHOSEONG_SSANGIEUNG,
-            HangulJamo::HangulChoseongIeungDashCieuc => HANGUL_CHOSEONG_IEUNG_DASH_CIEUC,
-            HangulJamo::HangulChoseongIeungDashChieuch => HANGUL_CHOSEONG_IEUNG_DASH_CHIEUCH,
-            HangulJamo::HangulChoseongIeungDashThieuth => HANGUL_CHOSEONG_IEUNG_DASH_THIEUTH,
-            HangulJamo::HangulChoseongIeungDashPhieuph => HANGUL_CHOSEONG_IEUNG_DASH_PHIEUPH,
-            HangulJamo::HangulChoseongYesieung => HANGUL_CHOSEONG_YESIEUNG,
-            HangulJamo::HangulChoseongCieucDashIeung => HANGUL_CHOSEONG_CIEUC_DASH_IEUNG,
-            HangulJamo::HangulChoseongChitueumcieuc => HANGUL_CHOSEONG_CHITUEUMCIEUC,
-            HangulJamo::HangulChoseongChitueumssangcieuc => HANGUL_CHOSEONG_CHITUEUMSSANGCIEUC,
-            HangulJamo::HangulChoseongCeongchieumcieuc => HANGUL_CHOSEONG_CEONGCHIEUMCIEUC,
-            HangulJamo::HangulChoseongCeongchieumssangcieuc => HANGUL_CHOSEONG_CEONGCHIEUMSSANGCIEUC,
-            HangulJamo::HangulChoseongChieuchDashKhieukh => HANGUL_CHOSEONG_CHIEUCH_DASH_KHIEUKH,
-            HangulJamo::HangulChoseongChieuchDashHieuh => HANGUL_CHOSEONG_CHIEUCH_DASH_HIEUH,
-            HangulJamo::HangulChoseongChitueumchieuch => HANGUL_CHOSEONG_CHITUEUMCHIEUCH,
-            HangulJamo::HangulChoseongCeongchieumchieuch => HANGUL_CHOSEONG_CEONGCHIEUMCHIEUCH,
-            HangulJamo::HangulChoseongPhieuphDashPieup => HANGUL_CHOSEONG_PHIEUPH_DASH_PIEUP,
-            HangulJamo::HangulChoseongKapyeounphieuph => HANGUL_CHOSEONG_KAPYEOUNPHIEUPH,
-            HangulJamo::HangulChoseongSsanghieuh => HANGUL_CHOSEONG_SSANGHIEUH,
-            HangulJamo::HangulChoseongYeorinhieuh => HANGUL_CHOSEONG_YEORINHIEUH,
-            HangulJamo::HangulChoseongKiyeokDashTikeut => HANGUL_CHOSEONG_KIYEOK_DASH_TIKEUT,
-            HangulJamo::HangulChoseongNieunDashSios => HANGUL_CHOSEONG_NIEUN_DASH_SIOS,
-            HangulJamo::HangulChoseongNieunDashCieuc => HANGUL_CHOSEONG_NIEUN_DASH_CIEUC,
-            HangulJamo::HangulChoseongNieunDashHieuh => HANGUL_CHOSEONG_NIEUN_DASH_HIEUH,
-            HangulJamo::HangulChoseongTikeutDashRieul => HANGUL_CHOSEONG_TIKEUT_DASH_RIEUL,
-            HangulJamo::HangulChoseongFiller => HANGUL_CHOSEONG_FILLER,
-            HangulJamo::HangulJungseongFiller => HANGUL_JUNGSEONG_FILLER,
-            HangulJamo::HangulJungseongA => HANGUL_JUNGSEONG_A,
-            HangulJamo::HangulJungseongAe => HANGUL_JUNGSEONG_AE,
-            HangulJamo::HangulJungseongYa => HANGUL_JUNGSEONG_YA,
-            HangulJamo::HangulJungseongYae => HANGUL_JUNGSEONG_YAE,
-            HangulJamo::HangulJungseongEo => HANGUL_JUNGSEONG_EO,
-            HangulJamo::HangulJungseongE => HANGUL_JUNGSEONG_E,
-            HangulJamo::HangulJungseongYeo => HANGUL_JUNGSEONG_YEO,
-            HangulJamo::HangulJungseongYe => HANGUL_JUNGSEONG_YE,
-            HangulJamo::HangulJungseongO => HANGUL_JUNGSEONG_O,
-            HangulJamo::HangulJungseongWa => HANGUL_JUNGSEONG_WA,
-            HangulJamo::HangulJungseongWae => HANGUL_JUNGSEONG_WAE,
-            HangulJamo::HangulJungseongOe => HANGUL_JUNGSEONG_OE,
-            HangulJamo::HangulJungseongYo => HANGUL_JUNGSEONG_YO,
-            HangulJamo::HangulJungseongU => HANGUL_JUNGSEONG_U,
-            HangulJamo::HangulJungseongWeo => HANGUL_JUNGSEONG_WEO,
-            HangulJamo::HangulJungseongWe => HANGUL_JUNGSEONG_WE,
-            HangulJamo::HangulJungseongWi => HANGUL_JUNGSEONG_WI,
-            HangulJamo::HangulJungseongYu => HANGUL_JUNGSEONG_YU,
-            HangulJamo::HangulJungseongEu => HANGUL_JUNGSEONG_EU,
-            HangulJamo::HangulJungseongYi => HANGUL_JUNGSEONG_YI,
-            HangulJamo::HangulJungseongI => HANGUL_JUNGSEONG_I,
-            HangulJamo::HangulJungseongADashO => HANGUL_JUNGSEONG_A_DASH_O,
-            HangulJamo::HangulJungseongADashU => HANGUL_JUNGSEONG_A_DASH_U,
-            HangulJamo::HangulJungseongYaDashO => HANGUL_JUNGSEONG_YA_DASH_O,
-            HangulJamo::HangulJungseongYaDashYo => HANGUL_JUNGSEONG_YA_DASH_YO,
-            HangulJamo::HangulJungseongEoDashO => HANGUL_JUNGSEONG_EO_DASH_O,
-            HangulJamo::HangulJungseongEoDashU => HANGUL_JUNGSEONG_EO_DASH_U,
-            HangulJamo::HangulJungseongEoDashEu => HANGUL_JUNGSEONG_EO_DASH_EU,
-            HangulJamo::HangulJungseongYeoDashO => HANGUL_JUNGSEONG_YEO_DASH_O,
-            HangulJamo::HangulJungseongYeoDashU => HANGUL_JUNGSEONG_YEO_DASH_U,
-            HangulJamo::HangulJungseongODashEo => HANGUL_JUNGSEONG_O_DASH_EO,
-            HangulJamo::HangulJungseongODashE => HANGUL_JUNGSEONG_O_DASH_E,
-            HangulJamo::HangulJungseongODashYe => HANGUL_JUNGSEONG_O_DASH_YE,
-            HangulJamo::HangulJungseongODashO => HANGUL_JUNGSEONG_O_DASH_O,
-            HangulJamo::HangulJungseongODashU => HANGUL_JUNGSEONG_O_DASH_U,
-            HangulJamo::HangulJungseongYoDashYa => HANGUL_JUNGSEONG_YO_DASH_YA,
-            HangulJamo::HangulJungseongYoDashYae => HANGUL_JUNGSEONG_YO_DASH_YAE,
-            HangulJamo::HangulJungseongYoDashYeo => HANGUL_JUNGSEONG_YO_DASH_YEO,
-            HangulJamo::HangulJungseongYoDashO => HANGUL_JUNGSEONG_YO_DASH_O,
-            HangulJamo::HangulJungseongYoDashI => HANGUL_JUNGSEONG_YO_DASH_I,
-            HangulJamo::HangulJungseongUDashA => HANGUL_JUNGSEONG_U_DASH_A,
-            HangulJamo::HangulJungseongUDashAe => HANGUL_JUNGSEONG_U_DASH_AE,
-            HangulJamo::HangulJungseongUDashEoDashEu => HANGUL_JUNGSEONG_U_DASH_EO_DASH_EU,
-            HangulJamo::HangulJungseongUDashYe => HANGUL_JUNGSEONG_U_DASH_YE,
-            HangulJamo::HangulJungseongUDashU => HANGUL_JUNGSEONG_U_DASH_U,
-            HangulJamo::HangulJungseongYuDashA => HANGUL_JUNGSEONG_YU_DASH_A,
-            HangulJamo::HangulJungseongYuDashEo => HANGUL_JUNGSEONG_YU_DASH_EO,
-            HangulJamo::HangulJungseongYuDashE => HANGUL_JUNGSEONG_YU_DASH_E,
-            HangulJamo::HangulJungseongYuDashYeo => HANGUL_JUNGSEONG_YU_DASH_YEO,
-            HangulJamo::HangulJungseongYuDashYe => HANGUL_JUNGSEONG_YU_DASH_YE,
-            HangulJamo::HangulJungseongYuDashU => HANGUL_JUNGSEONG_YU_DASH_U,
-            HangulJamo::HangulJungseongYuDashI => HANGUL_JUNGSEONG_YU_DASH_I,
-            HangulJamo::HangulJungseongEuDashU => HANGUL_JUNGSEONG_EU_DASH_U,
-            HangulJamo::HangulJungseongEuDashEu => HANGUL_JUNGSEONG_EU_DASH_EU,
-            HangulJamo::HangulJungseongYiDashU => HANGUL_JUNGSEONG_YI_DASH_U,
-            HangulJamo::HangulJungseongIDashA => HANGUL_JUNGSEONG_I_DASH_A,
-            HangulJamo::HangulJungseongIDashYa => HANGUL_JUNGSEONG_I_DASH_YA,
-            HangulJamo::HangulJungseongIDashO => HANGUL_JUNGSEONG_I_DASH_O,
-            HangulJamo::HangulJungseongIDashU => HANGUL_JUNGSEONG_I_DASH_U,
-            HangulJamo::HangulJungseongIDashEu => HANGUL_JUNGSEONG_I_DASH_EU,
-            HangulJamo::HangulJungseongIDashAraea => HANGUL_JUNGSEONG_I_DASH_ARAEA,
-            HangulJamo::HangulJungseongAraea => HANGUL_JUNGSEONG_ARAEA,
-            HangulJamo::HangulJungseongAraeaDashEo => HANGUL_JUNGSEONG_ARAEA_DASH_EO,
-            HangulJamo::HangulJungseongAraeaDashU => HANGUL_JUNGSEONG_ARAEA_DASH_U,
-            HangulJamo::HangulJungseongAraeaDashI => HANGUL_JUNGSEONG_ARAEA_DASH_I,
-            HangulJamo::HangulJungseongSsangaraea => HANGUL_JUNGSEONG_SSANGARAEA,
-            HangulJamo::HangulJungseongADashEu => HANGUL_JUNGSEONG_A_DASH_EU,
-            HangulJamo::HangulJungseongYaDashU => HANGUL_JUNGSEONG_YA_DASH_U,
-            HangulJamo::HangulJungseongYeoDashYa => HANGUL_JUNGSEONG_YEO_DASH_YA,
-            HangulJamo::HangulJungseongODashYa => HANGUL_JUNGSEONG_O_DASH_YA,
-            HangulJamo::HangulJungseongODashYae => HANGUL_JUNGSEONG_O_DASH_YAE,
-            HangulJamo::HangulJongseongKiyeok => HANGUL_JONGSEONG_KIYEOK,
-            HangulJamo::HangulJongseongSsangkiyeok => HANGUL_JONGSEONG_SSANGKIYEOK,
-            HangulJamo::HangulJongseongKiyeokDashSios => HANGUL_JONGSEONG_KIYEOK_DASH_SIOS,
-            HangulJamo::HangulJongseongNieun => HANGUL_JONGSEONG_NIEUN,
-            HangulJamo::HangulJongseongNieunDashCieuc => HANGUL_JONGSEONG_NIEUN_DASH_CIEUC,
-            HangulJamo::HangulJongseongNieunDashHieuh => HANGUL_JONGSEONG_NIEUN_DASH_HIEUH,
-            HangulJamo::HangulJongseongTikeut => HANGUL_JONGSEONG_TIKEUT,
-            HangulJamo::HangulJongseongRieul => HANGUL_JONGSEONG_RIEUL,
-            HangulJamo::HangulJongseongRieulDashKiyeok => HANGUL_JONGSEONG_RIEUL_DASH_KIYEOK,
-            HangulJamo::HangulJongseongRieulDashMieum => HANGUL_JONGSEONG_RIEUL_DASH_MIEUM,
-            HangulJamo::HangulJongseongRieulDashPieup => HANGUL_JONGSEONG_RIEUL_DASH_PIEUP,
-            HangulJamo::HangulJongseongRieulDashSios => HANGUL_JONGSEONG_RIEUL_DASH_SIOS,
-            HangulJamo::HangulJongseongRieulDashThieuth => HANGUL_JONGSEONG_RIEUL_DASH_THIEUTH,
-            HangulJamo::HangulJongseongRieulDashPhieuph => HANGUL_JONGSEONG_RIEUL_DASH_PHIEUPH,
-            HangulJamo::HangulJongseongRieulDashHieuh => HANGUL_JONGSEONG_RIEUL_DASH_HIEUH,
-            HangulJamo::HangulJongseongMieum => HANGUL_JONGSEONG_MIEUM,
-            HangulJamo::HangulJongseongPieup => HANGUL_JONGSEONG_PIEUP,
-            HangulJamo::HangulJongseongPieupDashSios => HANGUL_JONGSEONG_PIEUP_DASH_SIOS,
-            HangulJamo::HangulJongseongSios => HANGUL_JONGSEONG_SIOS,
-            HangulJamo::HangulJongseongSsangsios => HANGUL_JONGSEONG_SSANGSIOS,
-            HangulJamo::HangulJongseongIeung => HANGUL_JONGSEONG_IEUNG,
-            HangulJamo::HangulJongseongCieuc => HANGUL_JONGSEONG_CIEUC,
-            HangulJamo::HangulJongseongChieuch => HANGUL_JONGSEONG_CHIEUCH,
-            HangulJamo::HangulJongseongKhieukh => HANGUL_JONGSEONG_KHIEUKH,
-            HangulJamo::HangulJongseongThieuth => HANGUL_JONGSEONG_THIEUTH,
-            HangulJamo::HangulJongseongPhieuph => HANGUL_JONGSEONG_PHIEUPH,
-            HangulJamo::HangulJongseongHieuh => HANGUL_JONGSEONG_HIEUH,
-            HangulJamo::HangulJongseongKiyeokDashRieul => HANGUL_JONGSEONG_KIYEOK_DASH_RIEUL,
-            HangulJamo::HangulJongseongKiyeokDashSiosDashKiyeok => HANGUL_JONGSEONG_KIYEOK_DASH_SIOS_DASH_KIYEOK,
-            HangulJamo::HangulJongseongNieunDashKiyeok => HANGUL_JONGSEONG_NIEUN_DASH_KIYEOK,
-            HangulJamo::HangulJongseongNieunDashTikeut => HANGUL_JONGSEONG_NIEUN_DASH_TIKEUT,
-            HangulJamo::HangulJongseongNieunDashSios => HANGUL_JONGSEONG_NIEUN_DASH_SIOS,
-            HangulJamo::HangulJongseongNieunDashPansios => HANGUL_JONGSEONG_NIEUN_DASH_PANSIOS,
-            HangulJamo::HangulJongseongNieunDashThieuth => HANGUL_JONGSEONG_NIEUN_DASH_THIEUTH,
-            HangulJamo::HangulJongseongTikeutDashKiyeok => HANGUL_JONGSEONG_TIKEUT_DASH_KIYEOK,
-            HangulJamo::HangulJongseongTikeutDashRieul => HANGUL_JONGSEONG_TIKEUT_DASH_RIEUL,
-            HangulJamo::HangulJongseongRieulDashKiyeokDashSios => HANGUL_JONGSEONG_RIEUL_DASH_KIYEOK_DASH_SIOS,
-            HangulJamo::HangulJongseongRieulDashNieun => HANGUL_JONGSEONG_RIEUL_DASH_NIEUN,
-            HangulJamo::HangulJongseongRieulDashTikeut => HANGUL_JONGSEONG_RIEUL_DASH_TIKEUT,
-            HangulJamo::HangulJongseongRieulDashTikeutDashHieuh => HANGUL_JONGSEONG_RIEUL_DASH_TIKEUT_DASH_HIEUH,
-            HangulJamo::HangulJongseongSsangrieul => HANGUL_JONGSEONG_SSANGRIEUL,
-            HangulJamo::HangulJongseongRieulDashMieumDashKiyeok => HANGUL_JONGSEONG_RIEUL_DASH_MIEUM_DASH_KIYEOK,
-            HangulJamo::HangulJongseongRieulDashMieumDashSios => HANGUL_JONGSEONG_RIEUL_DASH_MIEUM_DASH_SIOS,
-            HangulJamo::HangulJongseongRieulDashPieupDashSios => HANGUL_JONGSEONG_RIEUL_DASH_PIEUP_DASH_SIOS,
-            HangulJamo::HangulJongseongRieulDashPieupDashHieuh => HANGUL_JONGSEONG_RIEUL_DASH_PIEUP_DASH_HIEUH,
-            HangulJamo::HangulJongseongRieulDashKapyeounpieup => HANGUL_JONGSEONG_RIEUL_DASH_KAPYEOUNPIEUP,
-            HangulJamo::HangulJongseongRieulDashSsangsios => HANGUL_JONGSEONG_RIEUL_DASH_SSANGSIOS,
-            HangulJamo::HangulJongseongRieulDashPansios => HANGUL_JONGSEONG_RIEUL_DASH_PANSIOS,
-            HangulJamo::HangulJongseongRieulDashKhieukh => HANGUL_JONGSEONG_RIEUL_DASH_KHIEUKH,
-            HangulJamo::HangulJongseongRieulDashYeorinhieuh => HANGUL_JONGSEONG_RIEUL_DASH_YEORINHIEUH,
-            HangulJamo::HangulJongseongMieumDashKiyeok => HANGUL_JONGSEONG_MIEUM_DASH_KIYEOK,
-            HangulJamo::HangulJongseongMieumDashRieul => HANGUL_JONGSEONG_MIEUM_DASH_RIEUL,
-            HangulJamo::HangulJongseongMieumDashPieup => HANGUL_JONGSEONG_MIEUM_DASH_PIEUP,
-            HangulJamo::HangulJongseongMieumDashSios => HANGUL_JONGSEONG_MIEUM_DASH_SIOS,
-            HangulJamo::HangulJongseongMieumDashSsangsios => HANGUL_JONGSEONG_MIEUM_DASH_SSANGSIOS,
-            HangulJamo::HangulJongseongMieumDashPansios => HANGUL_JONGSEONG_MIEUM_DASH_PANSIOS,
-            HangulJamo::HangulJongseongMieumDashChieuch => HANGUL_JONGSEONG_MIEUM_DASH_CHIEUCH,
-            HangulJamo::HangulJongseongMieumDashHieuh => HANGUL_JONGSEONG_MIEUM_DASH_HIEUH,
-            HangulJamo::HangulJongseongKapyeounmieum => HANGUL_JONGSEONG_KAPYEOUNMIEUM,
-            HangulJamo::HangulJongseongPieupDashRieul => HANGUL_JONGSEONG_PIEUP_DASH_RIEUL,
-            HangulJamo::HangulJongseongPieupDashPhieuph => HANGUL_JONGSEONG_PIEUP_DASH_PHIEUPH,
-            HangulJamo::HangulJongseongPieupDashHieuh => HANGUL_JONGSEONG_PIEUP_DASH_HIEUH,
-            HangulJamo::HangulJongseongKapyeounpieup => HANGUL_JONGSEONG_KAPYEOUNPIEUP,
-            HangulJamo::HangulJongseongSiosDashKiyeok => HANGUL_JONGSEONG_SIOS_DASH_KIYEOK,
-            HangulJamo::HangulJongseongSiosDashTikeut => HANGUL_JONGSEONG_SIOS_DASH_TIKEUT,
-            HangulJamo::HangulJongseongSiosDashRieul => HANGUL_JONGSEONG_SIOS_DASH_RIEUL,
-            HangulJamo::HangulJongseongSiosDashPieup => HANGUL_JONGSEONG_SIOS_DASH_PIEUP,
-            HangulJamo::HangulJongseongPansios => HANGUL_JONGSEONG_PANSIOS,
-            HangulJamo::HangulJongseongIeungDashKiyeok => HANGUL_JONGSEONG_IEUNG_DASH_KIYEOK,
-            HangulJamo::HangulJongseongIeungDashSsangkiyeok => HANGUL_JONGSEONG_IEUNG_DASH_SSANGKIYEOK,
-            HangulJamo::HangulJongseongSsangieung => HANGUL_JONGSEONG_SSANGIEUNG,
-            HangulJamo::HangulJongseongIeungDashKhieukh => HANGUL_JONGSEONG_IEUNG_DASH_KHIEUKH,
-            HangulJamo::HangulJongseongYesieung => HANGUL_JONGSEONG_YESIEUNG,
-            HangulJamo::HangulJongseongYesieungDashSios => HANGUL_JONGSEONG_YESIEUNG_DASH_SIOS,
-            HangulJamo::HangulJongseongYesieungDashPansios => HANGUL_JONGSEONG_YESIEUNG_DASH_PANSIOS,
-            HangulJamo::HangulJongseongPhieuphDashPieup => HANGUL_JONGSEONG_PHIEUPH_DASH_PIEUP,
-            HangulJamo::HangulJongseongKapyeounphieuph => HANGUL_JONGSEONG_KAPYEOUNPHIEUPH,
-            HangulJamo::HangulJongseongHieuhDashNieun => HANGUL_JONGSEONG_HIEUH_DASH_NIEUN,
-            HangulJamo::HangulJongseongHieuhDashRieul => HANGUL_JONGSEONG_HIEUH_DASH_RIEUL,
-            HangulJamo::HangulJongseongHieuhDashMieum => HANGUL_JONGSEONG_HIEUH_DASH_MIEUM,
-            HangulJamo::HangulJongseongHieuhDashPieup => HANGUL_JONGSEONG_HIEUH_DASH_PIEUP,
-            HangulJamo::HangulJongseongYeorinhieuh => HANGUL_JONGSEONG_YEORINHIEUH,
-            HangulJamo::HangulJongseongKiyeokDashNieun => HANGUL_JONGSEONG_KIYEOK_DASH_NIEUN,
-            HangulJamo::HangulJongseongKiyeokDashPieup => HANGUL_JONGSEONG_KIYEOK_DASH_PIEUP,
-            HangulJamo::HangulJongseongKiyeokDashChieuch => HANGUL_JONGSEONG_KIYEOK_DASH_CHIEUCH,
-            HangulJamo::HangulJongseongKiyeokDashKhieukh => HANGUL_JONGSEONG_KIYEOK_DASH_KHIEUKH,
-            HangulJamo::HangulJongseongKiyeokDashHieuh => HANGUL_JONGSEONG_KIYEOK_DASH_HIEUH,
+            HangulJamo::HangulChoseongKiyeok => 'ᄀ',
+            HangulJamo::HangulChoseongSsangkiyeok => 'ᄁ',
+            HangulJamo::HangulChoseongNieun => 'ᄂ',
+            HangulJamo::HangulChoseongTikeut => 'ᄃ',
+            HangulJamo::HangulChoseongSsangtikeut => 'ᄄ',
+            HangulJamo::HangulChoseongRieul => 'ᄅ',
+            HangulJamo::HangulChoseongMieum => 'ᄆ',
+            HangulJamo::HangulChoseongPieup => 'ᄇ',
+            HangulJamo::HangulChoseongSsangpieup => 'ᄈ',
+            HangulJamo::HangulChoseongSios => 'ᄉ',
+            HangulJamo::HangulChoseongSsangsios => 'ᄊ',
+            HangulJamo::HangulChoseongIeung => 'ᄋ',
+            HangulJamo::HangulChoseongCieuc => 'ᄌ',
+            HangulJamo::HangulChoseongSsangcieuc => 'ᄍ',
+            HangulJamo::HangulChoseongChieuch => 'ᄎ',
+            HangulJamo::HangulChoseongKhieukh => 'ᄏ',
+            HangulJamo::HangulChoseongThieuth => 'ᄐ',
+            HangulJamo::HangulChoseongPhieuph => 'ᄑ',
+            HangulJamo::HangulChoseongHieuh => 'ᄒ',
+            HangulJamo::HangulChoseongNieunDashKiyeok => 'ᄓ',
+            HangulJamo::HangulChoseongSsangnieun => 'ᄔ',
+            HangulJamo::HangulChoseongNieunDashTikeut => 'ᄕ',
+            HangulJamo::HangulChoseongNieunDashPieup => 'ᄖ',
+            HangulJamo::HangulChoseongTikeutDashKiyeok => 'ᄗ',
+            HangulJamo::HangulChoseongRieulDashNieun => 'ᄘ',
+            HangulJamo::HangulChoseongSsangrieul => 'ᄙ',
+            HangulJamo::HangulChoseongRieulDashHieuh => 'ᄚ',
+            HangulJamo::HangulChoseongKapyeounrieul => 'ᄛ',
+            HangulJamo::HangulChoseongMieumDashPieup => 'ᄜ',
+            HangulJamo::HangulChoseongKapyeounmieum => 'ᄝ',
+            HangulJamo::HangulChoseongPieupDashKiyeok => 'ᄞ',
+            HangulJamo::HangulChoseongPieupDashNieun => 'ᄟ',
+            HangulJamo::HangulChoseongPieupDashTikeut => 'ᄠ',
+            HangulJamo::HangulChoseongPieupDashSios => 'ᄡ',
+            HangulJamo::HangulChoseongPieupDashSiosDashKiyeok => 'ᄢ',
+            HangulJamo::HangulChoseongPieupDashSiosDashTikeut => 'ᄣ',
+            HangulJamo::HangulChoseongPieupDashSiosDashPieup => 'ᄤ',
+            HangulJamo::HangulChoseongPieupDashSsangsios => 'ᄥ',
+            HangulJamo::HangulChoseongPieupDashSiosDashCieuc => 'ᄦ',
+            HangulJamo::HangulChoseongPieupDashCieuc => 'ᄧ',
+            HangulJamo::HangulChoseongPieupDashChieuch => 'ᄨ',
+            HangulJamo::HangulChoseongPieupDashThieuth => 'ᄩ',
+            HangulJamo::HangulChoseongPieupDashPhieuph => 'ᄪ',
+            HangulJamo::HangulChoseongKapyeounpieup => 'ᄫ',
+            HangulJamo::HangulChoseongKapyeounssangpieup => 'ᄬ',
+            HangulJamo::HangulChoseongSiosDashKiyeok => 'ᄭ',
+            HangulJamo::HangulChoseongSiosDashNieun => 'ᄮ',
+            HangulJamo::HangulChoseongSiosDashTikeut => 'ᄯ',
+            HangulJamo::HangulChoseongSiosDashRieul => 'ᄰ',
+            HangulJamo::HangulChoseongSiosDashMieum => 'ᄱ',
+            HangulJamo::HangulChoseongSiosDashPieup => 'ᄲ',
+            HangulJamo::HangulChoseongSiosDashPieupDashKiyeok => 'ᄳ',
+            HangulJamo::HangulChoseongSiosDashSsangsios => 'ᄴ',
+            HangulJamo::HangulChoseongSiosDashIeung => 'ᄵ',
+            HangulJamo::HangulChoseongSiosDashCieuc => 'ᄶ',
+            HangulJamo::HangulChoseongSiosDashChieuch => 'ᄷ',
+            HangulJamo::HangulChoseongSiosDashKhieukh => 'ᄸ',
+            HangulJamo::HangulChoseongSiosDashThieuth => 'ᄹ',
+            HangulJamo::HangulChoseongSiosDashPhieuph => 'ᄺ',
+            HangulJamo::HangulChoseongSiosDashHieuh => 'ᄻ',
+            HangulJamo::HangulChoseongChitueumsios => 'ᄼ',
+            HangulJamo::HangulChoseongChitueumssangsios => 'ᄽ',
+            HangulJamo::HangulChoseongCeongchieumsios => 'ᄾ',
+            HangulJamo::HangulChoseongCeongchieumssangsios => 'ᄿ',
+            HangulJamo::HangulChoseongPansios => 'ᅀ',
+            HangulJamo::HangulChoseongIeungDashKiyeok => 'ᅁ',
+            HangulJamo::HangulChoseongIeungDashTikeut => 'ᅂ',
+            HangulJamo::HangulChoseongIeungDashMieum => 'ᅃ',
+            HangulJamo::HangulChoseongIeungDashPieup => 'ᅄ',
+            HangulJamo::HangulChoseongIeungDashSios => 'ᅅ',
+            HangulJamo::HangulChoseongIeungDashPansios => 'ᅆ',
+            HangulJamo::HangulChoseongSsangieung => 'ᅇ',
+            HangulJamo::HangulChoseongIeungDashCieuc => 'ᅈ',
+            HangulJamo::HangulChoseongIeungDashChieuch => 'ᅉ',
+            HangulJamo::HangulChoseongIeungDashThieuth => 'ᅊ',
+            HangulJamo::HangulChoseongIeungDashPhieuph => 'ᅋ',
+            HangulJamo::HangulChoseongYesieung => 'ᅌ',
+            HangulJamo::HangulChoseongCieucDashIeung => 'ᅍ',
+            HangulJamo::HangulChoseongChitueumcieuc => 'ᅎ',
+            HangulJamo::HangulChoseongChitueumssangcieuc => 'ᅏ',
+            HangulJamo::HangulChoseongCeongchieumcieuc => 'ᅐ',
+            HangulJamo::HangulChoseongCeongchieumssangcieuc => 'ᅑ',
+            HangulJamo::HangulChoseongChieuchDashKhieukh => 'ᅒ',
+            HangulJamo::HangulChoseongChieuchDashHieuh => 'ᅓ',
+            HangulJamo::HangulChoseongChitueumchieuch => 'ᅔ',
+            HangulJamo::HangulChoseongCeongchieumchieuch => 'ᅕ',
+            HangulJamo::HangulChoseongPhieuphDashPieup => 'ᅖ',
+            HangulJamo::HangulChoseongKapyeounphieuph => 'ᅗ',
+            HangulJamo::HangulChoseongSsanghieuh => 'ᅘ',
+            HangulJamo::HangulChoseongYeorinhieuh => 'ᅙ',
+            HangulJamo::HangulChoseongKiyeokDashTikeut => 'ᅚ',
+            HangulJamo::HangulChoseongNieunDashSios => 'ᅛ',
+            HangulJamo::HangulChoseongNieunDashCieuc => 'ᅜ',
+            HangulJamo::HangulChoseongNieunDashHieuh => 'ᅝ',
+            HangulJamo::HangulChoseongTikeutDashRieul => 'ᅞ',
+            HangulJamo::HangulChoseongFiller => 'ᅟ',
+            HangulJamo::HangulJungseongFiller => 'ᅠ',
+            HangulJamo::HangulJungseongA => 'ᅡ',
+            HangulJamo::HangulJungseongAe => 'ᅢ',
+            HangulJamo::HangulJungseongYa => 'ᅣ',
+            HangulJamo::HangulJungseongYae => 'ᅤ',
+            HangulJamo::HangulJungseongEo => 'ᅥ',
+            HangulJamo::HangulJungseongE => 'ᅦ',
+            HangulJamo::HangulJungseongYeo => 'ᅧ',
+            HangulJamo::HangulJungseongYe => 'ᅨ',
+            HangulJamo::HangulJungseongO => 'ᅩ',
+            HangulJamo::HangulJungseongWa => 'ᅪ',
+            HangulJamo::HangulJungseongWae => 'ᅫ',
+            HangulJamo::HangulJungseongOe => 'ᅬ',
+            HangulJamo::HangulJungseongYo => 'ᅭ',
+            HangulJamo::HangulJungseongU => 'ᅮ',
+            HangulJamo::HangulJungseongWeo => 'ᅯ',
+            HangulJamo::HangulJungseongWe => 'ᅰ',
+            HangulJamo::HangulJungseongWi => 'ᅱ',
+            HangulJamo::HangulJungseongYu => 'ᅲ',
+            HangulJamo::HangulJungseongEu => 'ᅳ',
+            HangulJamo::HangulJungseongYi => 'ᅴ',
+            HangulJamo::HangulJungseongI => 'ᅵ',
+            HangulJamo::HangulJungseongADashO => 'ᅶ',
+            HangulJamo::HangulJungseongADashU => 'ᅷ',
+            HangulJamo::HangulJungseongYaDashO => 'ᅸ',
+            HangulJamo::HangulJungseongYaDashYo => 'ᅹ',
+            HangulJamo::HangulJungseongEoDashO => 'ᅺ',
+            HangulJamo::HangulJungseongEoDashU => 'ᅻ',
+            HangulJamo::HangulJungseongEoDashEu => 'ᅼ',
+            HangulJamo::HangulJungseongYeoDashO => 'ᅽ',
+            HangulJamo::HangulJungseongYeoDashU => 'ᅾ',
+            HangulJamo::HangulJungseongODashEo => 'ᅿ',
+            HangulJamo::HangulJungseongODashE => 'ᆀ',
+            HangulJamo::HangulJungseongODashYe => 'ᆁ',
+            HangulJamo::HangulJungseongODashO => 'ᆂ',
+            HangulJamo::HangulJungseongODashU => 'ᆃ',
+            HangulJamo::HangulJungseongYoDashYa => 'ᆄ',
+            HangulJamo::HangulJungseongYoDashYae => 'ᆅ',
+            HangulJamo::HangulJungseongYoDashYeo => 'ᆆ',
+            HangulJamo::HangulJungseongYoDashO => 'ᆇ',
+            HangulJamo::HangulJungseongYoDashI => 'ᆈ',
+            HangulJamo::HangulJungseongUDashA => 'ᆉ',
+            HangulJamo::HangulJungseongUDashAe => 'ᆊ',
+            HangulJamo::HangulJungseongUDashEoDashEu => 'ᆋ',
+            HangulJamo::HangulJungseongUDashYe => 'ᆌ',
+            HangulJamo::HangulJungseongUDashU => 'ᆍ',
+            HangulJamo::HangulJungseongYuDashA => 'ᆎ',
+            HangulJamo::HangulJungseongYuDashEo => 'ᆏ',
+            HangulJamo::HangulJungseongYuDashE => 'ᆐ',
+            HangulJamo::HangulJungseongYuDashYeo => 'ᆑ',
+            HangulJamo::HangulJungseongYuDashYe => 'ᆒ',
+            HangulJamo::HangulJungseongYuDashU => 'ᆓ',
+            HangulJamo::HangulJungseongYuDashI => 'ᆔ',
+            HangulJamo::HangulJungseongEuDashU => 'ᆕ',
+            HangulJamo::HangulJungseongEuDashEu => 'ᆖ',
+            HangulJamo::HangulJungseongYiDashU => 'ᆗ',
+            HangulJamo::HangulJungseongIDashA => 'ᆘ',
+            HangulJamo::HangulJungseongIDashYa => 'ᆙ',
+            HangulJamo::HangulJungseongIDashO => 'ᆚ',
+            HangulJamo::HangulJungseongIDashU => 'ᆛ',
+            HangulJamo::HangulJungseongIDashEu => 'ᆜ',
+            HangulJamo::HangulJungseongIDashAraea => 'ᆝ',
+            HangulJamo::HangulJungseongAraea => 'ᆞ',
+            HangulJamo::HangulJungseongAraeaDashEo => 'ᆟ',
+            HangulJamo::HangulJungseongAraeaDashU => 'ᆠ',
+            HangulJamo::HangulJungseongAraeaDashI => 'ᆡ',
+            HangulJamo::HangulJungseongSsangaraea => 'ᆢ',
+            HangulJamo::HangulJungseongADashEu => 'ᆣ',
+            HangulJamo::HangulJungseongYaDashU => 'ᆤ',
+            HangulJamo::HangulJungseongYeoDashYa => 'ᆥ',
+            HangulJamo::HangulJungseongODashYa => 'ᆦ',
+            HangulJamo::HangulJungseongODashYae => 'ᆧ',
+            HangulJamo::HangulJongseongKiyeok => 'ᆨ',
+            HangulJamo::HangulJongseongSsangkiyeok => 'ᆩ',
+            HangulJamo::HangulJongseongKiyeokDashSios => 'ᆪ',
+            HangulJamo::HangulJongseongNieun => 'ᆫ',
+            HangulJamo::HangulJongseongNieunDashCieuc => 'ᆬ',
+            HangulJamo::HangulJongseongNieunDashHieuh => 'ᆭ',
+            HangulJamo::HangulJongseongTikeut => 'ᆮ',
+            HangulJamo::HangulJongseongRieul => 'ᆯ',
+            HangulJamo::HangulJongseongRieulDashKiyeok => 'ᆰ',
+            HangulJamo::HangulJongseongRieulDashMieum => 'ᆱ',
+            HangulJamo::HangulJongseongRieulDashPieup => 'ᆲ',
+            HangulJamo::HangulJongseongRieulDashSios => 'ᆳ',
+            HangulJamo::HangulJongseongRieulDashThieuth => 'ᆴ',
+            HangulJamo::HangulJongseongRieulDashPhieuph => 'ᆵ',
+            HangulJamo::HangulJongseongRieulDashHieuh => 'ᆶ',
+            HangulJamo::HangulJongseongMieum => 'ᆷ',
+            HangulJamo::HangulJongseongPieup => 'ᆸ',
+            HangulJamo::HangulJongseongPieupDashSios => 'ᆹ',
+            HangulJamo::HangulJongseongSios => 'ᆺ',
+            HangulJamo::HangulJongseongSsangsios => 'ᆻ',
+            HangulJamo::HangulJongseongIeung => 'ᆼ',
+            HangulJamo::HangulJongseongCieuc => 'ᆽ',
+            HangulJamo::HangulJongseongChieuch => 'ᆾ',
+            HangulJamo::HangulJongseongKhieukh => 'ᆿ',
+            HangulJamo::HangulJongseongThieuth => 'ᇀ',
+            HangulJamo::HangulJongseongPhieuph => 'ᇁ',
+            HangulJamo::HangulJongseongHieuh => 'ᇂ',
+            HangulJamo::HangulJongseongKiyeokDashRieul => 'ᇃ',
+            HangulJamo::HangulJongseongKiyeokDashSiosDashKiyeok => 'ᇄ',
+            HangulJamo::HangulJongseongNieunDashKiyeok => 'ᇅ',
+            HangulJamo::HangulJongseongNieunDashTikeut => 'ᇆ',
+            HangulJamo::HangulJongseongNieunDashSios => 'ᇇ',
+            HangulJamo::HangulJongseongNieunDashPansios => 'ᇈ',
+            HangulJamo::HangulJongseongNieunDashThieuth => 'ᇉ',
+            HangulJamo::HangulJongseongTikeutDashKiyeok => 'ᇊ',
+            HangulJamo::HangulJongseongTikeutDashRieul => 'ᇋ',
+            HangulJamo::HangulJongseongRieulDashKiyeokDashSios => 'ᇌ',
+            HangulJamo::HangulJongseongRieulDashNieun => 'ᇍ',
+            HangulJamo::HangulJongseongRieulDashTikeut => 'ᇎ',
+            HangulJamo::HangulJongseongRieulDashTikeutDashHieuh => 'ᇏ',
+            HangulJamo::HangulJongseongSsangrieul => 'ᇐ',
+            HangulJamo::HangulJongseongRieulDashMieumDashKiyeok => 'ᇑ',
+            HangulJamo::HangulJongseongRieulDashMieumDashSios => 'ᇒ',
+            HangulJamo::HangulJongseongRieulDashPieupDashSios => 'ᇓ',
+            HangulJamo::HangulJongseongRieulDashPieupDashHieuh => 'ᇔ',
+            HangulJamo::HangulJongseongRieulDashKapyeounpieup => 'ᇕ',
+            HangulJamo::HangulJongseongRieulDashSsangsios => 'ᇖ',
+            HangulJamo::HangulJongseongRieulDashPansios => 'ᇗ',
+            HangulJamo::HangulJongseongRieulDashKhieukh => 'ᇘ',
+            HangulJamo::HangulJongseongRieulDashYeorinhieuh => 'ᇙ',
+            HangulJamo::HangulJongseongMieumDashKiyeok => 'ᇚ',
+            HangulJamo::HangulJongseongMieumDashRieul => 'ᇛ',
+            HangulJamo::HangulJongseongMieumDashPieup => 'ᇜ',
+            HangulJamo::HangulJongseongMieumDashSios => 'ᇝ',
+            HangulJamo::HangulJongseongMieumDashSsangsios => 'ᇞ',
+            HangulJamo::HangulJongseongMieumDashPansios => 'ᇟ',
+            HangulJamo::HangulJongseongMieumDashChieuch => 'ᇠ',
+            HangulJamo::HangulJongseongMieumDashHieuh => 'ᇡ',
+            HangulJamo::HangulJongseongKapyeounmieum => 'ᇢ',
+            HangulJamo::HangulJongseongPieupDashRieul => 'ᇣ',
+            HangulJamo::HangulJongseongPieupDashPhieuph => 'ᇤ',
+            HangulJamo::HangulJongseongPieupDashHieuh => 'ᇥ',
+            HangulJamo::HangulJongseongKapyeounpieup => 'ᇦ',
+            HangulJamo::HangulJongseongSiosDashKiyeok => 'ᇧ',
+            HangulJamo::HangulJongseongSiosDashTikeut => 'ᇨ',
+            HangulJamo::HangulJongseongSiosDashRieul => 'ᇩ',
+            HangulJamo::HangulJongseongSiosDashPieup => 'ᇪ',
+            HangulJamo::HangulJongseongPansios => 'ᇫ',
+            HangulJamo::HangulJongseongIeungDashKiyeok => 'ᇬ',
+            HangulJamo::HangulJongseongIeungDashSsangkiyeok => 'ᇭ',
+            HangulJamo::HangulJongseongSsangieung => 'ᇮ',
+            HangulJamo::HangulJongseongIeungDashKhieukh => 'ᇯ',
+            HangulJamo::HangulJongseongYesieung => 'ᇰ',
+            HangulJamo::HangulJongseongYesieungDashSios => 'ᇱ',
+            HangulJamo::HangulJongseongYesieungDashPansios => 'ᇲ',
+            HangulJamo::HangulJongseongPhieuphDashPieup => 'ᇳ',
+            HangulJamo::HangulJongseongKapyeounphieuph => 'ᇴ',
+            HangulJamo::HangulJongseongHieuhDashNieun => 'ᇵ',
+            HangulJamo::HangulJongseongHieuhDashRieul => 'ᇶ',
+            HangulJamo::HangulJongseongHieuhDashMieum => 'ᇷ',
+            HangulJamo::HangulJongseongHieuhDashPieup => 'ᇸ',
+            HangulJamo::HangulJongseongYeorinhieuh => 'ᇹ',
+            HangulJamo::HangulJongseongKiyeokDashNieun => 'ᇺ',
+            HangulJamo::HangulJongseongKiyeokDashPieup => 'ᇻ',
+            HangulJamo::HangulJongseongKiyeokDashChieuch => 'ᇼ',
+            HangulJamo::HangulJongseongKiyeokDashKhieukh => 'ᇽ',
+            HangulJamo::HangulJongseongKiyeokDashHieuh => 'ᇾ',
         }
     }
 }
@@ -1293,263 +779,262 @@ impl Into<char> for HangulJamo {
 impl std::convert::TryFrom<char> for HangulJamo {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            HANGUL_CHOSEONG_KIYEOK => Ok(HangulJamo::HangulChoseongKiyeok),
-            HANGUL_CHOSEONG_SSANGKIYEOK => Ok(HangulJamo::HangulChoseongSsangkiyeok),
-            HANGUL_CHOSEONG_NIEUN => Ok(HangulJamo::HangulChoseongNieun),
-            HANGUL_CHOSEONG_TIKEUT => Ok(HangulJamo::HangulChoseongTikeut),
-            HANGUL_CHOSEONG_SSANGTIKEUT => Ok(HangulJamo::HangulChoseongSsangtikeut),
-            HANGUL_CHOSEONG_RIEUL => Ok(HangulJamo::HangulChoseongRieul),
-            HANGUL_CHOSEONG_MIEUM => Ok(HangulJamo::HangulChoseongMieum),
-            HANGUL_CHOSEONG_PIEUP => Ok(HangulJamo::HangulChoseongPieup),
-            HANGUL_CHOSEONG_SSANGPIEUP => Ok(HangulJamo::HangulChoseongSsangpieup),
-            HANGUL_CHOSEONG_SIOS => Ok(HangulJamo::HangulChoseongSios),
-            HANGUL_CHOSEONG_SSANGSIOS => Ok(HangulJamo::HangulChoseongSsangsios),
-            HANGUL_CHOSEONG_IEUNG => Ok(HangulJamo::HangulChoseongIeung),
-            HANGUL_CHOSEONG_CIEUC => Ok(HangulJamo::HangulChoseongCieuc),
-            HANGUL_CHOSEONG_SSANGCIEUC => Ok(HangulJamo::HangulChoseongSsangcieuc),
-            HANGUL_CHOSEONG_CHIEUCH => Ok(HangulJamo::HangulChoseongChieuch),
-            HANGUL_CHOSEONG_KHIEUKH => Ok(HangulJamo::HangulChoseongKhieukh),
-            HANGUL_CHOSEONG_THIEUTH => Ok(HangulJamo::HangulChoseongThieuth),
-            HANGUL_CHOSEONG_PHIEUPH => Ok(HangulJamo::HangulChoseongPhieuph),
-            HANGUL_CHOSEONG_HIEUH => Ok(HangulJamo::HangulChoseongHieuh),
-            HANGUL_CHOSEONG_NIEUN_DASH_KIYEOK => Ok(HangulJamo::HangulChoseongNieunDashKiyeok),
-            HANGUL_CHOSEONG_SSANGNIEUN => Ok(HangulJamo::HangulChoseongSsangnieun),
-            HANGUL_CHOSEONG_NIEUN_DASH_TIKEUT => Ok(HangulJamo::HangulChoseongNieunDashTikeut),
-            HANGUL_CHOSEONG_NIEUN_DASH_PIEUP => Ok(HangulJamo::HangulChoseongNieunDashPieup),
-            HANGUL_CHOSEONG_TIKEUT_DASH_KIYEOK => Ok(HangulJamo::HangulChoseongTikeutDashKiyeok),
-            HANGUL_CHOSEONG_RIEUL_DASH_NIEUN => Ok(HangulJamo::HangulChoseongRieulDashNieun),
-            HANGUL_CHOSEONG_SSANGRIEUL => Ok(HangulJamo::HangulChoseongSsangrieul),
-            HANGUL_CHOSEONG_RIEUL_DASH_HIEUH => Ok(HangulJamo::HangulChoseongRieulDashHieuh),
-            HANGUL_CHOSEONG_KAPYEOUNRIEUL => Ok(HangulJamo::HangulChoseongKapyeounrieul),
-            HANGUL_CHOSEONG_MIEUM_DASH_PIEUP => Ok(HangulJamo::HangulChoseongMieumDashPieup),
-            HANGUL_CHOSEONG_KAPYEOUNMIEUM => Ok(HangulJamo::HangulChoseongKapyeounmieum),
-            HANGUL_CHOSEONG_PIEUP_DASH_KIYEOK => Ok(HangulJamo::HangulChoseongPieupDashKiyeok),
-            HANGUL_CHOSEONG_PIEUP_DASH_NIEUN => Ok(HangulJamo::HangulChoseongPieupDashNieun),
-            HANGUL_CHOSEONG_PIEUP_DASH_TIKEUT => Ok(HangulJamo::HangulChoseongPieupDashTikeut),
-            HANGUL_CHOSEONG_PIEUP_DASH_SIOS => Ok(HangulJamo::HangulChoseongPieupDashSios),
-            HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_KIYEOK => Ok(HangulJamo::HangulChoseongPieupDashSiosDashKiyeok),
-            HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_TIKEUT => Ok(HangulJamo::HangulChoseongPieupDashSiosDashTikeut),
-            HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_PIEUP => Ok(HangulJamo::HangulChoseongPieupDashSiosDashPieup),
-            HANGUL_CHOSEONG_PIEUP_DASH_SSANGSIOS => Ok(HangulJamo::HangulChoseongPieupDashSsangsios),
-            HANGUL_CHOSEONG_PIEUP_DASH_SIOS_DASH_CIEUC => Ok(HangulJamo::HangulChoseongPieupDashSiosDashCieuc),
-            HANGUL_CHOSEONG_PIEUP_DASH_CIEUC => Ok(HangulJamo::HangulChoseongPieupDashCieuc),
-            HANGUL_CHOSEONG_PIEUP_DASH_CHIEUCH => Ok(HangulJamo::HangulChoseongPieupDashChieuch),
-            HANGUL_CHOSEONG_PIEUP_DASH_THIEUTH => Ok(HangulJamo::HangulChoseongPieupDashThieuth),
-            HANGUL_CHOSEONG_PIEUP_DASH_PHIEUPH => Ok(HangulJamo::HangulChoseongPieupDashPhieuph),
-            HANGUL_CHOSEONG_KAPYEOUNPIEUP => Ok(HangulJamo::HangulChoseongKapyeounpieup),
-            HANGUL_CHOSEONG_KAPYEOUNSSANGPIEUP => Ok(HangulJamo::HangulChoseongKapyeounssangpieup),
-            HANGUL_CHOSEONG_SIOS_DASH_KIYEOK => Ok(HangulJamo::HangulChoseongSiosDashKiyeok),
-            HANGUL_CHOSEONG_SIOS_DASH_NIEUN => Ok(HangulJamo::HangulChoseongSiosDashNieun),
-            HANGUL_CHOSEONG_SIOS_DASH_TIKEUT => Ok(HangulJamo::HangulChoseongSiosDashTikeut),
-            HANGUL_CHOSEONG_SIOS_DASH_RIEUL => Ok(HangulJamo::HangulChoseongSiosDashRieul),
-            HANGUL_CHOSEONG_SIOS_DASH_MIEUM => Ok(HangulJamo::HangulChoseongSiosDashMieum),
-            HANGUL_CHOSEONG_SIOS_DASH_PIEUP => Ok(HangulJamo::HangulChoseongSiosDashPieup),
-            HANGUL_CHOSEONG_SIOS_DASH_PIEUP_DASH_KIYEOK => Ok(HangulJamo::HangulChoseongSiosDashPieupDashKiyeok),
-            HANGUL_CHOSEONG_SIOS_DASH_SSANGSIOS => Ok(HangulJamo::HangulChoseongSiosDashSsangsios),
-            HANGUL_CHOSEONG_SIOS_DASH_IEUNG => Ok(HangulJamo::HangulChoseongSiosDashIeung),
-            HANGUL_CHOSEONG_SIOS_DASH_CIEUC => Ok(HangulJamo::HangulChoseongSiosDashCieuc),
-            HANGUL_CHOSEONG_SIOS_DASH_CHIEUCH => Ok(HangulJamo::HangulChoseongSiosDashChieuch),
-            HANGUL_CHOSEONG_SIOS_DASH_KHIEUKH => Ok(HangulJamo::HangulChoseongSiosDashKhieukh),
-            HANGUL_CHOSEONG_SIOS_DASH_THIEUTH => Ok(HangulJamo::HangulChoseongSiosDashThieuth),
-            HANGUL_CHOSEONG_SIOS_DASH_PHIEUPH => Ok(HangulJamo::HangulChoseongSiosDashPhieuph),
-            HANGUL_CHOSEONG_SIOS_DASH_HIEUH => Ok(HangulJamo::HangulChoseongSiosDashHieuh),
-            HANGUL_CHOSEONG_CHITUEUMSIOS => Ok(HangulJamo::HangulChoseongChitueumsios),
-            HANGUL_CHOSEONG_CHITUEUMSSANGSIOS => Ok(HangulJamo::HangulChoseongChitueumssangsios),
-            HANGUL_CHOSEONG_CEONGCHIEUMSIOS => Ok(HangulJamo::HangulChoseongCeongchieumsios),
-            HANGUL_CHOSEONG_CEONGCHIEUMSSANGSIOS => Ok(HangulJamo::HangulChoseongCeongchieumssangsios),
-            HANGUL_CHOSEONG_PANSIOS => Ok(HangulJamo::HangulChoseongPansios),
-            HANGUL_CHOSEONG_IEUNG_DASH_KIYEOK => Ok(HangulJamo::HangulChoseongIeungDashKiyeok),
-            HANGUL_CHOSEONG_IEUNG_DASH_TIKEUT => Ok(HangulJamo::HangulChoseongIeungDashTikeut),
-            HANGUL_CHOSEONG_IEUNG_DASH_MIEUM => Ok(HangulJamo::HangulChoseongIeungDashMieum),
-            HANGUL_CHOSEONG_IEUNG_DASH_PIEUP => Ok(HangulJamo::HangulChoseongIeungDashPieup),
-            HANGUL_CHOSEONG_IEUNG_DASH_SIOS => Ok(HangulJamo::HangulChoseongIeungDashSios),
-            HANGUL_CHOSEONG_IEUNG_DASH_PANSIOS => Ok(HangulJamo::HangulChoseongIeungDashPansios),
-            HANGUL_CHOSEONG_SSANGIEUNG => Ok(HangulJamo::HangulChoseongSsangieung),
-            HANGUL_CHOSEONG_IEUNG_DASH_CIEUC => Ok(HangulJamo::HangulChoseongIeungDashCieuc),
-            HANGUL_CHOSEONG_IEUNG_DASH_CHIEUCH => Ok(HangulJamo::HangulChoseongIeungDashChieuch),
-            HANGUL_CHOSEONG_IEUNG_DASH_THIEUTH => Ok(HangulJamo::HangulChoseongIeungDashThieuth),
-            HANGUL_CHOSEONG_IEUNG_DASH_PHIEUPH => Ok(HangulJamo::HangulChoseongIeungDashPhieuph),
-            HANGUL_CHOSEONG_YESIEUNG => Ok(HangulJamo::HangulChoseongYesieung),
-            HANGUL_CHOSEONG_CIEUC_DASH_IEUNG => Ok(HangulJamo::HangulChoseongCieucDashIeung),
-            HANGUL_CHOSEONG_CHITUEUMCIEUC => Ok(HangulJamo::HangulChoseongChitueumcieuc),
-            HANGUL_CHOSEONG_CHITUEUMSSANGCIEUC => Ok(HangulJamo::HangulChoseongChitueumssangcieuc),
-            HANGUL_CHOSEONG_CEONGCHIEUMCIEUC => Ok(HangulJamo::HangulChoseongCeongchieumcieuc),
-            HANGUL_CHOSEONG_CEONGCHIEUMSSANGCIEUC => Ok(HangulJamo::HangulChoseongCeongchieumssangcieuc),
-            HANGUL_CHOSEONG_CHIEUCH_DASH_KHIEUKH => Ok(HangulJamo::HangulChoseongChieuchDashKhieukh),
-            HANGUL_CHOSEONG_CHIEUCH_DASH_HIEUH => Ok(HangulJamo::HangulChoseongChieuchDashHieuh),
-            HANGUL_CHOSEONG_CHITUEUMCHIEUCH => Ok(HangulJamo::HangulChoseongChitueumchieuch),
-            HANGUL_CHOSEONG_CEONGCHIEUMCHIEUCH => Ok(HangulJamo::HangulChoseongCeongchieumchieuch),
-            HANGUL_CHOSEONG_PHIEUPH_DASH_PIEUP => Ok(HangulJamo::HangulChoseongPhieuphDashPieup),
-            HANGUL_CHOSEONG_KAPYEOUNPHIEUPH => Ok(HangulJamo::HangulChoseongKapyeounphieuph),
-            HANGUL_CHOSEONG_SSANGHIEUH => Ok(HangulJamo::HangulChoseongSsanghieuh),
-            HANGUL_CHOSEONG_YEORINHIEUH => Ok(HangulJamo::HangulChoseongYeorinhieuh),
-            HANGUL_CHOSEONG_KIYEOK_DASH_TIKEUT => Ok(HangulJamo::HangulChoseongKiyeokDashTikeut),
-            HANGUL_CHOSEONG_NIEUN_DASH_SIOS => Ok(HangulJamo::HangulChoseongNieunDashSios),
-            HANGUL_CHOSEONG_NIEUN_DASH_CIEUC => Ok(HangulJamo::HangulChoseongNieunDashCieuc),
-            HANGUL_CHOSEONG_NIEUN_DASH_HIEUH => Ok(HangulJamo::HangulChoseongNieunDashHieuh),
-            HANGUL_CHOSEONG_TIKEUT_DASH_RIEUL => Ok(HangulJamo::HangulChoseongTikeutDashRieul),
-            HANGUL_CHOSEONG_FILLER => Ok(HangulJamo::HangulChoseongFiller),
-            HANGUL_JUNGSEONG_FILLER => Ok(HangulJamo::HangulJungseongFiller),
-            HANGUL_JUNGSEONG_A => Ok(HangulJamo::HangulJungseongA),
-            HANGUL_JUNGSEONG_AE => Ok(HangulJamo::HangulJungseongAe),
-            HANGUL_JUNGSEONG_YA => Ok(HangulJamo::HangulJungseongYa),
-            HANGUL_JUNGSEONG_YAE => Ok(HangulJamo::HangulJungseongYae),
-            HANGUL_JUNGSEONG_EO => Ok(HangulJamo::HangulJungseongEo),
-            HANGUL_JUNGSEONG_E => Ok(HangulJamo::HangulJungseongE),
-            HANGUL_JUNGSEONG_YEO => Ok(HangulJamo::HangulJungseongYeo),
-            HANGUL_JUNGSEONG_YE => Ok(HangulJamo::HangulJungseongYe),
-            HANGUL_JUNGSEONG_O => Ok(HangulJamo::HangulJungseongO),
-            HANGUL_JUNGSEONG_WA => Ok(HangulJamo::HangulJungseongWa),
-            HANGUL_JUNGSEONG_WAE => Ok(HangulJamo::HangulJungseongWae),
-            HANGUL_JUNGSEONG_OE => Ok(HangulJamo::HangulJungseongOe),
-            HANGUL_JUNGSEONG_YO => Ok(HangulJamo::HangulJungseongYo),
-            HANGUL_JUNGSEONG_U => Ok(HangulJamo::HangulJungseongU),
-            HANGUL_JUNGSEONG_WEO => Ok(HangulJamo::HangulJungseongWeo),
-            HANGUL_JUNGSEONG_WE => Ok(HangulJamo::HangulJungseongWe),
-            HANGUL_JUNGSEONG_WI => Ok(HangulJamo::HangulJungseongWi),
-            HANGUL_JUNGSEONG_YU => Ok(HangulJamo::HangulJungseongYu),
-            HANGUL_JUNGSEONG_EU => Ok(HangulJamo::HangulJungseongEu),
-            HANGUL_JUNGSEONG_YI => Ok(HangulJamo::HangulJungseongYi),
-            HANGUL_JUNGSEONG_I => Ok(HangulJamo::HangulJungseongI),
-            HANGUL_JUNGSEONG_A_DASH_O => Ok(HangulJamo::HangulJungseongADashO),
-            HANGUL_JUNGSEONG_A_DASH_U => Ok(HangulJamo::HangulJungseongADashU),
-            HANGUL_JUNGSEONG_YA_DASH_O => Ok(HangulJamo::HangulJungseongYaDashO),
-            HANGUL_JUNGSEONG_YA_DASH_YO => Ok(HangulJamo::HangulJungseongYaDashYo),
-            HANGUL_JUNGSEONG_EO_DASH_O => Ok(HangulJamo::HangulJungseongEoDashO),
-            HANGUL_JUNGSEONG_EO_DASH_U => Ok(HangulJamo::HangulJungseongEoDashU),
-            HANGUL_JUNGSEONG_EO_DASH_EU => Ok(HangulJamo::HangulJungseongEoDashEu),
-            HANGUL_JUNGSEONG_YEO_DASH_O => Ok(HangulJamo::HangulJungseongYeoDashO),
-            HANGUL_JUNGSEONG_YEO_DASH_U => Ok(HangulJamo::HangulJungseongYeoDashU),
-            HANGUL_JUNGSEONG_O_DASH_EO => Ok(HangulJamo::HangulJungseongODashEo),
-            HANGUL_JUNGSEONG_O_DASH_E => Ok(HangulJamo::HangulJungseongODashE),
-            HANGUL_JUNGSEONG_O_DASH_YE => Ok(HangulJamo::HangulJungseongODashYe),
-            HANGUL_JUNGSEONG_O_DASH_O => Ok(HangulJamo::HangulJungseongODashO),
-            HANGUL_JUNGSEONG_O_DASH_U => Ok(HangulJamo::HangulJungseongODashU),
-            HANGUL_JUNGSEONG_YO_DASH_YA => Ok(HangulJamo::HangulJungseongYoDashYa),
-            HANGUL_JUNGSEONG_YO_DASH_YAE => Ok(HangulJamo::HangulJungseongYoDashYae),
-            HANGUL_JUNGSEONG_YO_DASH_YEO => Ok(HangulJamo::HangulJungseongYoDashYeo),
-            HANGUL_JUNGSEONG_YO_DASH_O => Ok(HangulJamo::HangulJungseongYoDashO),
-            HANGUL_JUNGSEONG_YO_DASH_I => Ok(HangulJamo::HangulJungseongYoDashI),
-            HANGUL_JUNGSEONG_U_DASH_A => Ok(HangulJamo::HangulJungseongUDashA),
-            HANGUL_JUNGSEONG_U_DASH_AE => Ok(HangulJamo::HangulJungseongUDashAe),
-            HANGUL_JUNGSEONG_U_DASH_EO_DASH_EU => Ok(HangulJamo::HangulJungseongUDashEoDashEu),
-            HANGUL_JUNGSEONG_U_DASH_YE => Ok(HangulJamo::HangulJungseongUDashYe),
-            HANGUL_JUNGSEONG_U_DASH_U => Ok(HangulJamo::HangulJungseongUDashU),
-            HANGUL_JUNGSEONG_YU_DASH_A => Ok(HangulJamo::HangulJungseongYuDashA),
-            HANGUL_JUNGSEONG_YU_DASH_EO => Ok(HangulJamo::HangulJungseongYuDashEo),
-            HANGUL_JUNGSEONG_YU_DASH_E => Ok(HangulJamo::HangulJungseongYuDashE),
-            HANGUL_JUNGSEONG_YU_DASH_YEO => Ok(HangulJamo::HangulJungseongYuDashYeo),
-            HANGUL_JUNGSEONG_YU_DASH_YE => Ok(HangulJamo::HangulJungseongYuDashYe),
-            HANGUL_JUNGSEONG_YU_DASH_U => Ok(HangulJamo::HangulJungseongYuDashU),
-            HANGUL_JUNGSEONG_YU_DASH_I => Ok(HangulJamo::HangulJungseongYuDashI),
-            HANGUL_JUNGSEONG_EU_DASH_U => Ok(HangulJamo::HangulJungseongEuDashU),
-            HANGUL_JUNGSEONG_EU_DASH_EU => Ok(HangulJamo::HangulJungseongEuDashEu),
-            HANGUL_JUNGSEONG_YI_DASH_U => Ok(HangulJamo::HangulJungseongYiDashU),
-            HANGUL_JUNGSEONG_I_DASH_A => Ok(HangulJamo::HangulJungseongIDashA),
-            HANGUL_JUNGSEONG_I_DASH_YA => Ok(HangulJamo::HangulJungseongIDashYa),
-            HANGUL_JUNGSEONG_I_DASH_O => Ok(HangulJamo::HangulJungseongIDashO),
-            HANGUL_JUNGSEONG_I_DASH_U => Ok(HangulJamo::HangulJungseongIDashU),
-            HANGUL_JUNGSEONG_I_DASH_EU => Ok(HangulJamo::HangulJungseongIDashEu),
-            HANGUL_JUNGSEONG_I_DASH_ARAEA => Ok(HangulJamo::HangulJungseongIDashAraea),
-            HANGUL_JUNGSEONG_ARAEA => Ok(HangulJamo::HangulJungseongAraea),
-            HANGUL_JUNGSEONG_ARAEA_DASH_EO => Ok(HangulJamo::HangulJungseongAraeaDashEo),
-            HANGUL_JUNGSEONG_ARAEA_DASH_U => Ok(HangulJamo::HangulJungseongAraeaDashU),
-            HANGUL_JUNGSEONG_ARAEA_DASH_I => Ok(HangulJamo::HangulJungseongAraeaDashI),
-            HANGUL_JUNGSEONG_SSANGARAEA => Ok(HangulJamo::HangulJungseongSsangaraea),
-            HANGUL_JUNGSEONG_A_DASH_EU => Ok(HangulJamo::HangulJungseongADashEu),
-            HANGUL_JUNGSEONG_YA_DASH_U => Ok(HangulJamo::HangulJungseongYaDashU),
-            HANGUL_JUNGSEONG_YEO_DASH_YA => Ok(HangulJamo::HangulJungseongYeoDashYa),
-            HANGUL_JUNGSEONG_O_DASH_YA => Ok(HangulJamo::HangulJungseongODashYa),
-            HANGUL_JUNGSEONG_O_DASH_YAE => Ok(HangulJamo::HangulJungseongODashYae),
-            HANGUL_JONGSEONG_KIYEOK => Ok(HangulJamo::HangulJongseongKiyeok),
-            HANGUL_JONGSEONG_SSANGKIYEOK => Ok(HangulJamo::HangulJongseongSsangkiyeok),
-            HANGUL_JONGSEONG_KIYEOK_DASH_SIOS => Ok(HangulJamo::HangulJongseongKiyeokDashSios),
-            HANGUL_JONGSEONG_NIEUN => Ok(HangulJamo::HangulJongseongNieun),
-            HANGUL_JONGSEONG_NIEUN_DASH_CIEUC => Ok(HangulJamo::HangulJongseongNieunDashCieuc),
-            HANGUL_JONGSEONG_NIEUN_DASH_HIEUH => Ok(HangulJamo::HangulJongseongNieunDashHieuh),
-            HANGUL_JONGSEONG_TIKEUT => Ok(HangulJamo::HangulJongseongTikeut),
-            HANGUL_JONGSEONG_RIEUL => Ok(HangulJamo::HangulJongseongRieul),
-            HANGUL_JONGSEONG_RIEUL_DASH_KIYEOK => Ok(HangulJamo::HangulJongseongRieulDashKiyeok),
-            HANGUL_JONGSEONG_RIEUL_DASH_MIEUM => Ok(HangulJamo::HangulJongseongRieulDashMieum),
-            HANGUL_JONGSEONG_RIEUL_DASH_PIEUP => Ok(HangulJamo::HangulJongseongRieulDashPieup),
-            HANGUL_JONGSEONG_RIEUL_DASH_SIOS => Ok(HangulJamo::HangulJongseongRieulDashSios),
-            HANGUL_JONGSEONG_RIEUL_DASH_THIEUTH => Ok(HangulJamo::HangulJongseongRieulDashThieuth),
-            HANGUL_JONGSEONG_RIEUL_DASH_PHIEUPH => Ok(HangulJamo::HangulJongseongRieulDashPhieuph),
-            HANGUL_JONGSEONG_RIEUL_DASH_HIEUH => Ok(HangulJamo::HangulJongseongRieulDashHieuh),
-            HANGUL_JONGSEONG_MIEUM => Ok(HangulJamo::HangulJongseongMieum),
-            HANGUL_JONGSEONG_PIEUP => Ok(HangulJamo::HangulJongseongPieup),
-            HANGUL_JONGSEONG_PIEUP_DASH_SIOS => Ok(HangulJamo::HangulJongseongPieupDashSios),
-            HANGUL_JONGSEONG_SIOS => Ok(HangulJamo::HangulJongseongSios),
-            HANGUL_JONGSEONG_SSANGSIOS => Ok(HangulJamo::HangulJongseongSsangsios),
-            HANGUL_JONGSEONG_IEUNG => Ok(HangulJamo::HangulJongseongIeung),
-            HANGUL_JONGSEONG_CIEUC => Ok(HangulJamo::HangulJongseongCieuc),
-            HANGUL_JONGSEONG_CHIEUCH => Ok(HangulJamo::HangulJongseongChieuch),
-            HANGUL_JONGSEONG_KHIEUKH => Ok(HangulJamo::HangulJongseongKhieukh),
-            HANGUL_JONGSEONG_THIEUTH => Ok(HangulJamo::HangulJongseongThieuth),
-            HANGUL_JONGSEONG_PHIEUPH => Ok(HangulJamo::HangulJongseongPhieuph),
-            HANGUL_JONGSEONG_HIEUH => Ok(HangulJamo::HangulJongseongHieuh),
-            HANGUL_JONGSEONG_KIYEOK_DASH_RIEUL => Ok(HangulJamo::HangulJongseongKiyeokDashRieul),
-            HANGUL_JONGSEONG_KIYEOK_DASH_SIOS_DASH_KIYEOK => Ok(HangulJamo::HangulJongseongKiyeokDashSiosDashKiyeok),
-            HANGUL_JONGSEONG_NIEUN_DASH_KIYEOK => Ok(HangulJamo::HangulJongseongNieunDashKiyeok),
-            HANGUL_JONGSEONG_NIEUN_DASH_TIKEUT => Ok(HangulJamo::HangulJongseongNieunDashTikeut),
-            HANGUL_JONGSEONG_NIEUN_DASH_SIOS => Ok(HangulJamo::HangulJongseongNieunDashSios),
-            HANGUL_JONGSEONG_NIEUN_DASH_PANSIOS => Ok(HangulJamo::HangulJongseongNieunDashPansios),
-            HANGUL_JONGSEONG_NIEUN_DASH_THIEUTH => Ok(HangulJamo::HangulJongseongNieunDashThieuth),
-            HANGUL_JONGSEONG_TIKEUT_DASH_KIYEOK => Ok(HangulJamo::HangulJongseongTikeutDashKiyeok),
-            HANGUL_JONGSEONG_TIKEUT_DASH_RIEUL => Ok(HangulJamo::HangulJongseongTikeutDashRieul),
-            HANGUL_JONGSEONG_RIEUL_DASH_KIYEOK_DASH_SIOS => Ok(HangulJamo::HangulJongseongRieulDashKiyeokDashSios),
-            HANGUL_JONGSEONG_RIEUL_DASH_NIEUN => Ok(HangulJamo::HangulJongseongRieulDashNieun),
-            HANGUL_JONGSEONG_RIEUL_DASH_TIKEUT => Ok(HangulJamo::HangulJongseongRieulDashTikeut),
-            HANGUL_JONGSEONG_RIEUL_DASH_TIKEUT_DASH_HIEUH => Ok(HangulJamo::HangulJongseongRieulDashTikeutDashHieuh),
-            HANGUL_JONGSEONG_SSANGRIEUL => Ok(HangulJamo::HangulJongseongSsangrieul),
-            HANGUL_JONGSEONG_RIEUL_DASH_MIEUM_DASH_KIYEOK => Ok(HangulJamo::HangulJongseongRieulDashMieumDashKiyeok),
-            HANGUL_JONGSEONG_RIEUL_DASH_MIEUM_DASH_SIOS => Ok(HangulJamo::HangulJongseongRieulDashMieumDashSios),
-            HANGUL_JONGSEONG_RIEUL_DASH_PIEUP_DASH_SIOS => Ok(HangulJamo::HangulJongseongRieulDashPieupDashSios),
-            HANGUL_JONGSEONG_RIEUL_DASH_PIEUP_DASH_HIEUH => Ok(HangulJamo::HangulJongseongRieulDashPieupDashHieuh),
-            HANGUL_JONGSEONG_RIEUL_DASH_KAPYEOUNPIEUP => Ok(HangulJamo::HangulJongseongRieulDashKapyeounpieup),
-            HANGUL_JONGSEONG_RIEUL_DASH_SSANGSIOS => Ok(HangulJamo::HangulJongseongRieulDashSsangsios),
-            HANGUL_JONGSEONG_RIEUL_DASH_PANSIOS => Ok(HangulJamo::HangulJongseongRieulDashPansios),
-            HANGUL_JONGSEONG_RIEUL_DASH_KHIEUKH => Ok(HangulJamo::HangulJongseongRieulDashKhieukh),
-            HANGUL_JONGSEONG_RIEUL_DASH_YEORINHIEUH => Ok(HangulJamo::HangulJongseongRieulDashYeorinhieuh),
-            HANGUL_JONGSEONG_MIEUM_DASH_KIYEOK => Ok(HangulJamo::HangulJongseongMieumDashKiyeok),
-            HANGUL_JONGSEONG_MIEUM_DASH_RIEUL => Ok(HangulJamo::HangulJongseongMieumDashRieul),
-            HANGUL_JONGSEONG_MIEUM_DASH_PIEUP => Ok(HangulJamo::HangulJongseongMieumDashPieup),
-            HANGUL_JONGSEONG_MIEUM_DASH_SIOS => Ok(HangulJamo::HangulJongseongMieumDashSios),
-            HANGUL_JONGSEONG_MIEUM_DASH_SSANGSIOS => Ok(HangulJamo::HangulJongseongMieumDashSsangsios),
-            HANGUL_JONGSEONG_MIEUM_DASH_PANSIOS => Ok(HangulJamo::HangulJongseongMieumDashPansios),
-            HANGUL_JONGSEONG_MIEUM_DASH_CHIEUCH => Ok(HangulJamo::HangulJongseongMieumDashChieuch),
-            HANGUL_JONGSEONG_MIEUM_DASH_HIEUH => Ok(HangulJamo::HangulJongseongMieumDashHieuh),
-            HANGUL_JONGSEONG_KAPYEOUNMIEUM => Ok(HangulJamo::HangulJongseongKapyeounmieum),
-            HANGUL_JONGSEONG_PIEUP_DASH_RIEUL => Ok(HangulJamo::HangulJongseongPieupDashRieul),
-            HANGUL_JONGSEONG_PIEUP_DASH_PHIEUPH => Ok(HangulJamo::HangulJongseongPieupDashPhieuph),
-            HANGUL_JONGSEONG_PIEUP_DASH_HIEUH => Ok(HangulJamo::HangulJongseongPieupDashHieuh),
-            HANGUL_JONGSEONG_KAPYEOUNPIEUP => Ok(HangulJamo::HangulJongseongKapyeounpieup),
-            HANGUL_JONGSEONG_SIOS_DASH_KIYEOK => Ok(HangulJamo::HangulJongseongSiosDashKiyeok),
-            HANGUL_JONGSEONG_SIOS_DASH_TIKEUT => Ok(HangulJamo::HangulJongseongSiosDashTikeut),
-            HANGUL_JONGSEONG_SIOS_DASH_RIEUL => Ok(HangulJamo::HangulJongseongSiosDashRieul),
-            HANGUL_JONGSEONG_SIOS_DASH_PIEUP => Ok(HangulJamo::HangulJongseongSiosDashPieup),
-            HANGUL_JONGSEONG_PANSIOS => Ok(HangulJamo::HangulJongseongPansios),
-            HANGUL_JONGSEONG_IEUNG_DASH_KIYEOK => Ok(HangulJamo::HangulJongseongIeungDashKiyeok),
-            HANGUL_JONGSEONG_IEUNG_DASH_SSANGKIYEOK => Ok(HangulJamo::HangulJongseongIeungDashSsangkiyeok),
-            HANGUL_JONGSEONG_SSANGIEUNG => Ok(HangulJamo::HangulJongseongSsangieung),
-            HANGUL_JONGSEONG_IEUNG_DASH_KHIEUKH => Ok(HangulJamo::HangulJongseongIeungDashKhieukh),
-            HANGUL_JONGSEONG_YESIEUNG => Ok(HangulJamo::HangulJongseongYesieung),
-            HANGUL_JONGSEONG_YESIEUNG_DASH_SIOS => Ok(HangulJamo::HangulJongseongYesieungDashSios),
-            HANGUL_JONGSEONG_YESIEUNG_DASH_PANSIOS => Ok(HangulJamo::HangulJongseongYesieungDashPansios),
-            HANGUL_JONGSEONG_PHIEUPH_DASH_PIEUP => Ok(HangulJamo::HangulJongseongPhieuphDashPieup),
-            HANGUL_JONGSEONG_KAPYEOUNPHIEUPH => Ok(HangulJamo::HangulJongseongKapyeounphieuph),
-            HANGUL_JONGSEONG_HIEUH_DASH_NIEUN => Ok(HangulJamo::HangulJongseongHieuhDashNieun),
-            HANGUL_JONGSEONG_HIEUH_DASH_RIEUL => Ok(HangulJamo::HangulJongseongHieuhDashRieul),
-            HANGUL_JONGSEONG_HIEUH_DASH_MIEUM => Ok(HangulJamo::HangulJongseongHieuhDashMieum),
-            HANGUL_JONGSEONG_HIEUH_DASH_PIEUP => Ok(HangulJamo::HangulJongseongHieuhDashPieup),
-            HANGUL_JONGSEONG_YEORINHIEUH => Ok(HangulJamo::HangulJongseongYeorinhieuh),
-            HANGUL_JONGSEONG_KIYEOK_DASH_NIEUN => Ok(HangulJamo::HangulJongseongKiyeokDashNieun),
-            HANGUL_JONGSEONG_KIYEOK_DASH_PIEUP => Ok(HangulJamo::HangulJongseongKiyeokDashPieup),
-            HANGUL_JONGSEONG_KIYEOK_DASH_CHIEUCH => Ok(HangulJamo::HangulJongseongKiyeokDashChieuch),
-            HANGUL_JONGSEONG_KIYEOK_DASH_KHIEUKH => Ok(HangulJamo::HangulJongseongKiyeokDashKhieukh),
-            HANGUL_JONGSEONG_KIYEOK_DASH_HIEUH => Ok(HangulJamo::HangulJongseongKiyeokDashHieuh),
+            'ᄀ' => Ok(HangulJamo::HangulChoseongKiyeok),
+            'ᄁ' => Ok(HangulJamo::HangulChoseongSsangkiyeok),
+            'ᄂ' => Ok(HangulJamo::HangulChoseongNieun),
+            'ᄃ' => Ok(HangulJamo::HangulChoseongTikeut),
+            'ᄄ' => Ok(HangulJamo::HangulChoseongSsangtikeut),
+            'ᄅ' => Ok(HangulJamo::HangulChoseongRieul),
+            'ᄆ' => Ok(HangulJamo::HangulChoseongMieum),
+            'ᄇ' => Ok(HangulJamo::HangulChoseongPieup),
+            'ᄈ' => Ok(HangulJamo::HangulChoseongSsangpieup),
+            'ᄉ' => Ok(HangulJamo::HangulChoseongSios),
+            'ᄊ' => Ok(HangulJamo::HangulChoseongSsangsios),
+            'ᄋ' => Ok(HangulJamo::HangulChoseongIeung),
+            'ᄌ' => Ok(HangulJamo::HangulChoseongCieuc),
+            'ᄍ' => Ok(HangulJamo::HangulChoseongSsangcieuc),
+            'ᄎ' => Ok(HangulJamo::HangulChoseongChieuch),
+            'ᄏ' => Ok(HangulJamo::HangulChoseongKhieukh),
+            'ᄐ' => Ok(HangulJamo::HangulChoseongThieuth),
+            'ᄑ' => Ok(HangulJamo::HangulChoseongPhieuph),
+            'ᄒ' => Ok(HangulJamo::HangulChoseongHieuh),
+            'ᄓ' => Ok(HangulJamo::HangulChoseongNieunDashKiyeok),
+            'ᄔ' => Ok(HangulJamo::HangulChoseongSsangnieun),
+            'ᄕ' => Ok(HangulJamo::HangulChoseongNieunDashTikeut),
+            'ᄖ' => Ok(HangulJamo::HangulChoseongNieunDashPieup),
+            'ᄗ' => Ok(HangulJamo::HangulChoseongTikeutDashKiyeok),
+            'ᄘ' => Ok(HangulJamo::HangulChoseongRieulDashNieun),
+            'ᄙ' => Ok(HangulJamo::HangulChoseongSsangrieul),
+            'ᄚ' => Ok(HangulJamo::HangulChoseongRieulDashHieuh),
+            'ᄛ' => Ok(HangulJamo::HangulChoseongKapyeounrieul),
+            'ᄜ' => Ok(HangulJamo::HangulChoseongMieumDashPieup),
+            'ᄝ' => Ok(HangulJamo::HangulChoseongKapyeounmieum),
+            'ᄞ' => Ok(HangulJamo::HangulChoseongPieupDashKiyeok),
+            'ᄟ' => Ok(HangulJamo::HangulChoseongPieupDashNieun),
+            'ᄠ' => Ok(HangulJamo::HangulChoseongPieupDashTikeut),
+            'ᄡ' => Ok(HangulJamo::HangulChoseongPieupDashSios),
+            'ᄢ' => Ok(HangulJamo::HangulChoseongPieupDashSiosDashKiyeok),
+            'ᄣ' => Ok(HangulJamo::HangulChoseongPieupDashSiosDashTikeut),
+            'ᄤ' => Ok(HangulJamo::HangulChoseongPieupDashSiosDashPieup),
+            'ᄥ' => Ok(HangulJamo::HangulChoseongPieupDashSsangsios),
+            'ᄦ' => Ok(HangulJamo::HangulChoseongPieupDashSiosDashCieuc),
+            'ᄧ' => Ok(HangulJamo::HangulChoseongPieupDashCieuc),
+            'ᄨ' => Ok(HangulJamo::HangulChoseongPieupDashChieuch),
+            'ᄩ' => Ok(HangulJamo::HangulChoseongPieupDashThieuth),
+            'ᄪ' => Ok(HangulJamo::HangulChoseongPieupDashPhieuph),
+            'ᄫ' => Ok(HangulJamo::HangulChoseongKapyeounpieup),
+            'ᄬ' => Ok(HangulJamo::HangulChoseongKapyeounssangpieup),
+            'ᄭ' => Ok(HangulJamo::HangulChoseongSiosDashKiyeok),
+            'ᄮ' => Ok(HangulJamo::HangulChoseongSiosDashNieun),
+            'ᄯ' => Ok(HangulJamo::HangulChoseongSiosDashTikeut),
+            'ᄰ' => Ok(HangulJamo::HangulChoseongSiosDashRieul),
+            'ᄱ' => Ok(HangulJamo::HangulChoseongSiosDashMieum),
+            'ᄲ' => Ok(HangulJamo::HangulChoseongSiosDashPieup),
+            'ᄳ' => Ok(HangulJamo::HangulChoseongSiosDashPieupDashKiyeok),
+            'ᄴ' => Ok(HangulJamo::HangulChoseongSiosDashSsangsios),
+            'ᄵ' => Ok(HangulJamo::HangulChoseongSiosDashIeung),
+            'ᄶ' => Ok(HangulJamo::HangulChoseongSiosDashCieuc),
+            'ᄷ' => Ok(HangulJamo::HangulChoseongSiosDashChieuch),
+            'ᄸ' => Ok(HangulJamo::HangulChoseongSiosDashKhieukh),
+            'ᄹ' => Ok(HangulJamo::HangulChoseongSiosDashThieuth),
+            'ᄺ' => Ok(HangulJamo::HangulChoseongSiosDashPhieuph),
+            'ᄻ' => Ok(HangulJamo::HangulChoseongSiosDashHieuh),
+            'ᄼ' => Ok(HangulJamo::HangulChoseongChitueumsios),
+            'ᄽ' => Ok(HangulJamo::HangulChoseongChitueumssangsios),
+            'ᄾ' => Ok(HangulJamo::HangulChoseongCeongchieumsios),
+            'ᄿ' => Ok(HangulJamo::HangulChoseongCeongchieumssangsios),
+            'ᅀ' => Ok(HangulJamo::HangulChoseongPansios),
+            'ᅁ' => Ok(HangulJamo::HangulChoseongIeungDashKiyeok),
+            'ᅂ' => Ok(HangulJamo::HangulChoseongIeungDashTikeut),
+            'ᅃ' => Ok(HangulJamo::HangulChoseongIeungDashMieum),
+            'ᅄ' => Ok(HangulJamo::HangulChoseongIeungDashPieup),
+            'ᅅ' => Ok(HangulJamo::HangulChoseongIeungDashSios),
+            'ᅆ' => Ok(HangulJamo::HangulChoseongIeungDashPansios),
+            'ᅇ' => Ok(HangulJamo::HangulChoseongSsangieung),
+            'ᅈ' => Ok(HangulJamo::HangulChoseongIeungDashCieuc),
+            'ᅉ' => Ok(HangulJamo::HangulChoseongIeungDashChieuch),
+            'ᅊ' => Ok(HangulJamo::HangulChoseongIeungDashThieuth),
+            'ᅋ' => Ok(HangulJamo::HangulChoseongIeungDashPhieuph),
+            'ᅌ' => Ok(HangulJamo::HangulChoseongYesieung),
+            'ᅍ' => Ok(HangulJamo::HangulChoseongCieucDashIeung),
+            'ᅎ' => Ok(HangulJamo::HangulChoseongChitueumcieuc),
+            'ᅏ' => Ok(HangulJamo::HangulChoseongChitueumssangcieuc),
+            'ᅐ' => Ok(HangulJamo::HangulChoseongCeongchieumcieuc),
+            'ᅑ' => Ok(HangulJamo::HangulChoseongCeongchieumssangcieuc),
+            'ᅒ' => Ok(HangulJamo::HangulChoseongChieuchDashKhieukh),
+            'ᅓ' => Ok(HangulJamo::HangulChoseongChieuchDashHieuh),
+            'ᅔ' => Ok(HangulJamo::HangulChoseongChitueumchieuch),
+            'ᅕ' => Ok(HangulJamo::HangulChoseongCeongchieumchieuch),
+            'ᅖ' => Ok(HangulJamo::HangulChoseongPhieuphDashPieup),
+            'ᅗ' => Ok(HangulJamo::HangulChoseongKapyeounphieuph),
+            'ᅘ' => Ok(HangulJamo::HangulChoseongSsanghieuh),
+            'ᅙ' => Ok(HangulJamo::HangulChoseongYeorinhieuh),
+            'ᅚ' => Ok(HangulJamo::HangulChoseongKiyeokDashTikeut),
+            'ᅛ' => Ok(HangulJamo::HangulChoseongNieunDashSios),
+            'ᅜ' => Ok(HangulJamo::HangulChoseongNieunDashCieuc),
+            'ᅝ' => Ok(HangulJamo::HangulChoseongNieunDashHieuh),
+            'ᅞ' => Ok(HangulJamo::HangulChoseongTikeutDashRieul),
+            'ᅟ' => Ok(HangulJamo::HangulChoseongFiller),
+            'ᅠ' => Ok(HangulJamo::HangulJungseongFiller),
+            'ᅡ' => Ok(HangulJamo::HangulJungseongA),
+            'ᅢ' => Ok(HangulJamo::HangulJungseongAe),
+            'ᅣ' => Ok(HangulJamo::HangulJungseongYa),
+            'ᅤ' => Ok(HangulJamo::HangulJungseongYae),
+            'ᅥ' => Ok(HangulJamo::HangulJungseongEo),
+            'ᅦ' => Ok(HangulJamo::HangulJungseongE),
+            'ᅧ' => Ok(HangulJamo::HangulJungseongYeo),
+            'ᅨ' => Ok(HangulJamo::HangulJungseongYe),
+            'ᅩ' => Ok(HangulJamo::HangulJungseongO),
+            'ᅪ' => Ok(HangulJamo::HangulJungseongWa),
+            'ᅫ' => Ok(HangulJamo::HangulJungseongWae),
+            'ᅬ' => Ok(HangulJamo::HangulJungseongOe),
+            'ᅭ' => Ok(HangulJamo::HangulJungseongYo),
+            'ᅮ' => Ok(HangulJamo::HangulJungseongU),
+            'ᅯ' => Ok(HangulJamo::HangulJungseongWeo),
+            'ᅰ' => Ok(HangulJamo::HangulJungseongWe),
+            'ᅱ' => Ok(HangulJamo::HangulJungseongWi),
+            'ᅲ' => Ok(HangulJamo::HangulJungseongYu),
+            'ᅳ' => Ok(HangulJamo::HangulJungseongEu),
+            'ᅴ' => Ok(HangulJamo::HangulJungseongYi),
+            'ᅵ' => Ok(HangulJamo::HangulJungseongI),
+            'ᅶ' => Ok(HangulJamo::HangulJungseongADashO),
+            'ᅷ' => Ok(HangulJamo::HangulJungseongADashU),
+            'ᅸ' => Ok(HangulJamo::HangulJungseongYaDashO),
+            'ᅹ' => Ok(HangulJamo::HangulJungseongYaDashYo),
+            'ᅺ' => Ok(HangulJamo::HangulJungseongEoDashO),
+            'ᅻ' => Ok(HangulJamo::HangulJungseongEoDashU),
+            'ᅼ' => Ok(HangulJamo::HangulJungseongEoDashEu),
+            'ᅽ' => Ok(HangulJamo::HangulJungseongYeoDashO),
+            'ᅾ' => Ok(HangulJamo::HangulJungseongYeoDashU),
+            'ᅿ' => Ok(HangulJamo::HangulJungseongODashEo),
+            'ᆀ' => Ok(HangulJamo::HangulJungseongODashE),
+            'ᆁ' => Ok(HangulJamo::HangulJungseongODashYe),
+            'ᆂ' => Ok(HangulJamo::HangulJungseongODashO),
+            'ᆃ' => Ok(HangulJamo::HangulJungseongODashU),
+            'ᆄ' => Ok(HangulJamo::HangulJungseongYoDashYa),
+            'ᆅ' => Ok(HangulJamo::HangulJungseongYoDashYae),
+            'ᆆ' => Ok(HangulJamo::HangulJungseongYoDashYeo),
+            'ᆇ' => Ok(HangulJamo::HangulJungseongYoDashO),
+            'ᆈ' => Ok(HangulJamo::HangulJungseongYoDashI),
+            'ᆉ' => Ok(HangulJamo::HangulJungseongUDashA),
+            'ᆊ' => Ok(HangulJamo::HangulJungseongUDashAe),
+            'ᆋ' => Ok(HangulJamo::HangulJungseongUDashEoDashEu),
+            'ᆌ' => Ok(HangulJamo::HangulJungseongUDashYe),
+            'ᆍ' => Ok(HangulJamo::HangulJungseongUDashU),
+            'ᆎ' => Ok(HangulJamo::HangulJungseongYuDashA),
+            'ᆏ' => Ok(HangulJamo::HangulJungseongYuDashEo),
+            'ᆐ' => Ok(HangulJamo::HangulJungseongYuDashE),
+            'ᆑ' => Ok(HangulJamo::HangulJungseongYuDashYeo),
+            'ᆒ' => Ok(HangulJamo::HangulJungseongYuDashYe),
+            'ᆓ' => Ok(HangulJamo::HangulJungseongYuDashU),
+            'ᆔ' => Ok(HangulJamo::HangulJungseongYuDashI),
+            'ᆕ' => Ok(HangulJamo::HangulJungseongEuDashU),
+            'ᆖ' => Ok(HangulJamo::HangulJungseongEuDashEu),
+            'ᆗ' => Ok(HangulJamo::HangulJungseongYiDashU),
+            'ᆘ' => Ok(HangulJamo::HangulJungseongIDashA),
+            'ᆙ' => Ok(HangulJamo::HangulJungseongIDashYa),
+            'ᆚ' => Ok(HangulJamo::HangulJungseongIDashO),
+            'ᆛ' => Ok(HangulJamo::HangulJungseongIDashU),
+            'ᆜ' => Ok(HangulJamo::HangulJungseongIDashEu),
+            'ᆝ' => Ok(HangulJamo::HangulJungseongIDashAraea),
+            'ᆞ' => Ok(HangulJamo::HangulJungseongAraea),
+            'ᆟ' => Ok(HangulJamo::HangulJungseongAraeaDashEo),
+            'ᆠ' => Ok(HangulJamo::HangulJungseongAraeaDashU),
+            'ᆡ' => Ok(HangulJamo::HangulJungseongAraeaDashI),
+            'ᆢ' => Ok(HangulJamo::HangulJungseongSsangaraea),
+            'ᆣ' => Ok(HangulJamo::HangulJungseongADashEu),
+            'ᆤ' => Ok(HangulJamo::HangulJungseongYaDashU),
+            'ᆥ' => Ok(HangulJamo::HangulJungseongYeoDashYa),
+            'ᆦ' => Ok(HangulJamo::HangulJungseongODashYa),
+            'ᆧ' => Ok(HangulJamo::HangulJungseongODashYae),
+            'ᆨ' => Ok(HangulJamo::HangulJongseongKiyeok),
+            'ᆩ' => Ok(HangulJamo::HangulJongseongSsangkiyeok),
+            'ᆪ' => Ok(HangulJamo::HangulJongseongKiyeokDashSios),
+            'ᆫ' => Ok(HangulJamo::HangulJongseongNieun),
+            'ᆬ' => Ok(HangulJamo::HangulJongseongNieunDashCieuc),
+            'ᆭ' => Ok(HangulJamo::HangulJongseongNieunDashHieuh),
+            'ᆮ' => Ok(HangulJamo::HangulJongseongTikeut),
+            'ᆯ' => Ok(HangulJamo::HangulJongseongRieul),
+            'ᆰ' => Ok(HangulJamo::HangulJongseongRieulDashKiyeok),
+            'ᆱ' => Ok(HangulJamo::HangulJongseongRieulDashMieum),
+            'ᆲ' => Ok(HangulJamo::HangulJongseongRieulDashPieup),
+            'ᆳ' => Ok(HangulJamo::HangulJongseongRieulDashSios),
+            'ᆴ' => Ok(HangulJamo::HangulJongseongRieulDashThieuth),
+            'ᆵ' => Ok(HangulJamo::HangulJongseongRieulDashPhieuph),
+            'ᆶ' => Ok(HangulJamo::HangulJongseongRieulDashHieuh),
+            'ᆷ' => Ok(HangulJamo::HangulJongseongMieum),
+            'ᆸ' => Ok(HangulJamo::HangulJongseongPieup),
+            'ᆹ' => Ok(HangulJamo::HangulJongseongPieupDashSios),
+            'ᆺ' => Ok(HangulJamo::HangulJongseongSios),
+            'ᆻ' => Ok(HangulJamo::HangulJongseongSsangsios),
+            'ᆼ' => Ok(HangulJamo::HangulJongseongIeung),
+            'ᆽ' => Ok(HangulJamo::HangulJongseongCieuc),
+            'ᆾ' => Ok(HangulJamo::HangulJongseongChieuch),
+            'ᆿ' => Ok(HangulJamo::HangulJongseongKhieukh),
+            'ᇀ' => Ok(HangulJamo::HangulJongseongThieuth),
+            'ᇁ' => Ok(HangulJamo::HangulJongseongPhieuph),
+            'ᇂ' => Ok(HangulJamo::HangulJongseongHieuh),
+            'ᇃ' => Ok(HangulJamo::HangulJongseongKiyeokDashRieul),
+            'ᇄ' => Ok(HangulJamo::HangulJongseongKiyeokDashSiosDashKiyeok),
+            'ᇅ' => Ok(HangulJamo::HangulJongseongNieunDashKiyeok),
+            'ᇆ' => Ok(HangulJamo::HangulJongseongNieunDashTikeut),
+            'ᇇ' => Ok(HangulJamo::HangulJongseongNieunDashSios),
+            'ᇈ' => Ok(HangulJamo::HangulJongseongNieunDashPansios),
+            'ᇉ' => Ok(HangulJamo::HangulJongseongNieunDashThieuth),
+            'ᇊ' => Ok(HangulJamo::HangulJongseongTikeutDashKiyeok),
+            'ᇋ' => Ok(HangulJamo::HangulJongseongTikeutDashRieul),
+            'ᇌ' => Ok(HangulJamo::HangulJongseongRieulDashKiyeokDashSios),
+            'ᇍ' => Ok(HangulJamo::HangulJongseongRieulDashNieun),
+            'ᇎ' => Ok(HangulJamo::HangulJongseongRieulDashTikeut),
+            'ᇏ' => Ok(HangulJamo::HangulJongseongRieulDashTikeutDashHieuh),
+            'ᇐ' => Ok(HangulJamo::HangulJongseongSsangrieul),
+            'ᇑ' => Ok(HangulJamo::HangulJongseongRieulDashMieumDashKiyeok),
+            'ᇒ' => Ok(HangulJamo::HangulJongseongRieulDashMieumDashSios),
+            'ᇓ' => Ok(HangulJamo::HangulJongseongRieulDashPieupDashSios),
+            'ᇔ' => Ok(HangulJamo::HangulJongseongRieulDashPieupDashHieuh),
+            'ᇕ' => Ok(HangulJamo::HangulJongseongRieulDashKapyeounpieup),
+            'ᇖ' => Ok(HangulJamo::HangulJongseongRieulDashSsangsios),
+            'ᇗ' => Ok(HangulJamo::HangulJongseongRieulDashPansios),
+            'ᇘ' => Ok(HangulJamo::HangulJongseongRieulDashKhieukh),
+            'ᇙ' => Ok(HangulJamo::HangulJongseongRieulDashYeorinhieuh),
+            'ᇚ' => Ok(HangulJamo::HangulJongseongMieumDashKiyeok),
+            'ᇛ' => Ok(HangulJamo::HangulJongseongMieumDashRieul),
+            'ᇜ' => Ok(HangulJamo::HangulJongseongMieumDashPieup),
+            'ᇝ' => Ok(HangulJamo::HangulJongseongMieumDashSios),
+            'ᇞ' => Ok(HangulJamo::HangulJongseongMieumDashSsangsios),
+            'ᇟ' => Ok(HangulJamo::HangulJongseongMieumDashPansios),
+            'ᇠ' => Ok(HangulJamo::HangulJongseongMieumDashChieuch),
+            'ᇡ' => Ok(HangulJamo::HangulJongseongMieumDashHieuh),
+            'ᇢ' => Ok(HangulJamo::HangulJongseongKapyeounmieum),
+            'ᇣ' => Ok(HangulJamo::HangulJongseongPieupDashRieul),
+            'ᇤ' => Ok(HangulJamo::HangulJongseongPieupDashPhieuph),
+            'ᇥ' => Ok(HangulJamo::HangulJongseongPieupDashHieuh),
+            'ᇦ' => Ok(HangulJamo::HangulJongseongKapyeounpieup),
+            'ᇧ' => Ok(HangulJamo::HangulJongseongSiosDashKiyeok),
+            'ᇨ' => Ok(HangulJamo::HangulJongseongSiosDashTikeut),
+            'ᇩ' => Ok(HangulJamo::HangulJongseongSiosDashRieul),
+            'ᇪ' => Ok(HangulJamo::HangulJongseongSiosDashPieup),
+            'ᇫ' => Ok(HangulJamo::HangulJongseongPansios),
+            'ᇬ' => Ok(HangulJamo::HangulJongseongIeungDashKiyeok),
+            'ᇭ' => Ok(HangulJamo::HangulJongseongIeungDashSsangkiyeok),
+            'ᇮ' => Ok(HangulJamo::HangulJongseongSsangieung),
+            'ᇯ' => Ok(HangulJamo::HangulJongseongIeungDashKhieukh),
+            'ᇰ' => Ok(HangulJamo::HangulJongseongYesieung),
+            'ᇱ' => Ok(HangulJamo::HangulJongseongYesieungDashSios),
+            'ᇲ' => Ok(HangulJamo::HangulJongseongYesieungDashPansios),
+            'ᇳ' => Ok(HangulJamo::HangulJongseongPhieuphDashPieup),
+            'ᇴ' => Ok(HangulJamo::HangulJongseongKapyeounphieuph),
+            'ᇵ' => Ok(HangulJamo::HangulJongseongHieuhDashNieun),
+            'ᇶ' => Ok(HangulJamo::HangulJongseongHieuhDashRieul),
+            'ᇷ' => Ok(HangulJamo::HangulJongseongHieuhDashMieum),
+            'ᇸ' => Ok(HangulJamo::HangulJongseongHieuhDashPieup),
+            'ᇹ' => Ok(HangulJamo::HangulJongseongYeorinhieuh),
+            'ᇺ' => Ok(HangulJamo::HangulJongseongKiyeokDashNieun),
+            'ᇻ' => Ok(HangulJamo::HangulJongseongKiyeokDashPieup),
+            'ᇼ' => Ok(HangulJamo::HangulJongseongKiyeokDashChieuch),
+            'ᇽ' => Ok(HangulJamo::HangulJongseongKiyeokDashKhieukh),
+            'ᇾ' => Ok(HangulJamo::HangulJongseongKiyeokDashHieuh),
             _ => Err(()),
         }
     }

@@ -1,170 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1f0a0}: '🂠'
-    pub const PLAYING_CARD_BACK: char = '🂠';
-    /// \u{1f0a1}: '🂡'
-    pub const PLAYING_CARD_ACE_OF_SPADES: char = '🂡';
-    /// \u{1f0a2}: '🂢'
-    pub const PLAYING_CARD_TWO_OF_SPADES: char = '🂢';
-    /// \u{1f0a3}: '🂣'
-    pub const PLAYING_CARD_THREE_OF_SPADES: char = '🂣';
-    /// \u{1f0a4}: '🂤'
-    pub const PLAYING_CARD_FOUR_OF_SPADES: char = '🂤';
-    /// \u{1f0a5}: '🂥'
-    pub const PLAYING_CARD_FIVE_OF_SPADES: char = '🂥';
-    /// \u{1f0a6}: '🂦'
-    pub const PLAYING_CARD_SIX_OF_SPADES: char = '🂦';
-    /// \u{1f0a7}: '🂧'
-    pub const PLAYING_CARD_SEVEN_OF_SPADES: char = '🂧';
-    /// \u{1f0a8}: '🂨'
-    pub const PLAYING_CARD_EIGHT_OF_SPADES: char = '🂨';
-    /// \u{1f0a9}: '🂩'
-    pub const PLAYING_CARD_NINE_OF_SPADES: char = '🂩';
-    /// \u{1f0aa}: '🂪'
-    pub const PLAYING_CARD_TEN_OF_SPADES: char = '🂪';
-    /// \u{1f0ab}: '🂫'
-    pub const PLAYING_CARD_JACK_OF_SPADES: char = '🂫';
-    /// \u{1f0ac}: '🂬'
-    pub const PLAYING_CARD_KNIGHT_OF_SPADES: char = '🂬';
-    /// \u{1f0ad}: '🂭'
-    pub const PLAYING_CARD_QUEEN_OF_SPADES: char = '🂭';
-    /// \u{1f0ae}: '🂮'
-    pub const PLAYING_CARD_KING_OF_SPADES: char = '🂮';
-    /// \u{1f0b1}: '🂱'
-    pub const PLAYING_CARD_ACE_OF_HEARTS: char = '🂱';
-    /// \u{1f0b2}: '🂲'
-    pub const PLAYING_CARD_TWO_OF_HEARTS: char = '🂲';
-    /// \u{1f0b3}: '🂳'
-    pub const PLAYING_CARD_THREE_OF_HEARTS: char = '🂳';
-    /// \u{1f0b4}: '🂴'
-    pub const PLAYING_CARD_FOUR_OF_HEARTS: char = '🂴';
-    /// \u{1f0b5}: '🂵'
-    pub const PLAYING_CARD_FIVE_OF_HEARTS: char = '🂵';
-    /// \u{1f0b6}: '🂶'
-    pub const PLAYING_CARD_SIX_OF_HEARTS: char = '🂶';
-    /// \u{1f0b7}: '🂷'
-    pub const PLAYING_CARD_SEVEN_OF_HEARTS: char = '🂷';
-    /// \u{1f0b8}: '🂸'
-    pub const PLAYING_CARD_EIGHT_OF_HEARTS: char = '🂸';
-    /// \u{1f0b9}: '🂹'
-    pub const PLAYING_CARD_NINE_OF_HEARTS: char = '🂹';
-    /// \u{1f0ba}: '🂺'
-    pub const PLAYING_CARD_TEN_OF_HEARTS: char = '🂺';
-    /// \u{1f0bb}: '🂻'
-    pub const PLAYING_CARD_JACK_OF_HEARTS: char = '🂻';
-    /// \u{1f0bc}: '🂼'
-    pub const PLAYING_CARD_KNIGHT_OF_HEARTS: char = '🂼';
-    /// \u{1f0bd}: '🂽'
-    pub const PLAYING_CARD_QUEEN_OF_HEARTS: char = '🂽';
-    /// \u{1f0be}: '🂾'
-    pub const PLAYING_CARD_KING_OF_HEARTS: char = '🂾';
-    /// \u{1f0bf}: '🂿'
-    pub const PLAYING_CARD_RED_JOKER: char = '🂿';
-    /// \u{1f0c1}: '🃁'
-    pub const PLAYING_CARD_ACE_OF_DIAMONDS: char = '🃁';
-    /// \u{1f0c2}: '🃂'
-    pub const PLAYING_CARD_TWO_OF_DIAMONDS: char = '🃂';
-    /// \u{1f0c3}: '🃃'
-    pub const PLAYING_CARD_THREE_OF_DIAMONDS: char = '🃃';
-    /// \u{1f0c4}: '🃄'
-    pub const PLAYING_CARD_FOUR_OF_DIAMONDS: char = '🃄';
-    /// \u{1f0c5}: '🃅'
-    pub const PLAYING_CARD_FIVE_OF_DIAMONDS: char = '🃅';
-    /// \u{1f0c6}: '🃆'
-    pub const PLAYING_CARD_SIX_OF_DIAMONDS: char = '🃆';
-    /// \u{1f0c7}: '🃇'
-    pub const PLAYING_CARD_SEVEN_OF_DIAMONDS: char = '🃇';
-    /// \u{1f0c8}: '🃈'
-    pub const PLAYING_CARD_EIGHT_OF_DIAMONDS: char = '🃈';
-    /// \u{1f0c9}: '🃉'
-    pub const PLAYING_CARD_NINE_OF_DIAMONDS: char = '🃉';
-    /// \u{1f0ca}: '🃊'
-    pub const PLAYING_CARD_TEN_OF_DIAMONDS: char = '🃊';
-    /// \u{1f0cb}: '🃋'
-    pub const PLAYING_CARD_JACK_OF_DIAMONDS: char = '🃋';
-    /// \u{1f0cc}: '🃌'
-    pub const PLAYING_CARD_KNIGHT_OF_DIAMONDS: char = '🃌';
-    /// \u{1f0cd}: '🃍'
-    pub const PLAYING_CARD_QUEEN_OF_DIAMONDS: char = '🃍';
-    /// \u{1f0ce}: '🃎'
-    pub const PLAYING_CARD_KING_OF_DIAMONDS: char = '🃎';
-    /// \u{1f0cf}: '🃏'
-    pub const PLAYING_CARD_BLACK_JOKER: char = '🃏';
-    /// \u{1f0d1}: '🃑'
-    pub const PLAYING_CARD_ACE_OF_CLUBS: char = '🃑';
-    /// \u{1f0d2}: '🃒'
-    pub const PLAYING_CARD_TWO_OF_CLUBS: char = '🃒';
-    /// \u{1f0d3}: '🃓'
-    pub const PLAYING_CARD_THREE_OF_CLUBS: char = '🃓';
-    /// \u{1f0d4}: '🃔'
-    pub const PLAYING_CARD_FOUR_OF_CLUBS: char = '🃔';
-    /// \u{1f0d5}: '🃕'
-    pub const PLAYING_CARD_FIVE_OF_CLUBS: char = '🃕';
-    /// \u{1f0d6}: '🃖'
-    pub const PLAYING_CARD_SIX_OF_CLUBS: char = '🃖';
-    /// \u{1f0d7}: '🃗'
-    pub const PLAYING_CARD_SEVEN_OF_CLUBS: char = '🃗';
-    /// \u{1f0d8}: '🃘'
-    pub const PLAYING_CARD_EIGHT_OF_CLUBS: char = '🃘';
-    /// \u{1f0d9}: '🃙'
-    pub const PLAYING_CARD_NINE_OF_CLUBS: char = '🃙';
-    /// \u{1f0da}: '🃚'
-    pub const PLAYING_CARD_TEN_OF_CLUBS: char = '🃚';
-    /// \u{1f0db}: '🃛'
-    pub const PLAYING_CARD_JACK_OF_CLUBS: char = '🃛';
-    /// \u{1f0dc}: '🃜'
-    pub const PLAYING_CARD_KNIGHT_OF_CLUBS: char = '🃜';
-    /// \u{1f0dd}: '🃝'
-    pub const PLAYING_CARD_QUEEN_OF_CLUBS: char = '🃝';
-    /// \u{1f0de}: '🃞'
-    pub const PLAYING_CARD_KING_OF_CLUBS: char = '🃞';
-    /// \u{1f0df}: '🃟'
-    pub const PLAYING_CARD_WHITE_JOKER: char = '🃟';
-    /// \u{1f0e0}: '🃠'
-    pub const PLAYING_CARD_FOOL: char = '🃠';
-    /// \u{1f0e1}: '🃡'
-    pub const PLAYING_CARD_TRUMP_DASH_1: char = '🃡';
-    /// \u{1f0e2}: '🃢'
-    pub const PLAYING_CARD_TRUMP_DASH_2: char = '🃢';
-    /// \u{1f0e3}: '🃣'
-    pub const PLAYING_CARD_TRUMP_DASH_3: char = '🃣';
-    /// \u{1f0e4}: '🃤'
-    pub const PLAYING_CARD_TRUMP_DASH_4: char = '🃤';
-    /// \u{1f0e5}: '🃥'
-    pub const PLAYING_CARD_TRUMP_DASH_5: char = '🃥';
-    /// \u{1f0e6}: '🃦'
-    pub const PLAYING_CARD_TRUMP_DASH_6: char = '🃦';
-    /// \u{1f0e7}: '🃧'
-    pub const PLAYING_CARD_TRUMP_DASH_7: char = '🃧';
-    /// \u{1f0e8}: '🃨'
-    pub const PLAYING_CARD_TRUMP_DASH_8: char = '🃨';
-    /// \u{1f0e9}: '🃩'
-    pub const PLAYING_CARD_TRUMP_DASH_9: char = '🃩';
-    /// \u{1f0ea}: '🃪'
-    pub const PLAYING_CARD_TRUMP_DASH_10: char = '🃪';
-    /// \u{1f0eb}: '🃫'
-    pub const PLAYING_CARD_TRUMP_DASH_11: char = '🃫';
-    /// \u{1f0ec}: '🃬'
-    pub const PLAYING_CARD_TRUMP_DASH_12: char = '🃬';
-    /// \u{1f0ed}: '🃭'
-    pub const PLAYING_CARD_TRUMP_DASH_13: char = '🃭';
-    /// \u{1f0ee}: '🃮'
-    pub const PLAYING_CARD_TRUMP_DASH_14: char = '🃮';
-    /// \u{1f0ef}: '🃯'
-    pub const PLAYING_CARD_TRUMP_DASH_15: char = '🃯';
-    /// \u{1f0f0}: '🃰'
-    pub const PLAYING_CARD_TRUMP_DASH_16: char = '🃰';
-    /// \u{1f0f1}: '🃱'
-    pub const PLAYING_CARD_TRUMP_DASH_17: char = '🃱';
-    /// \u{1f0f2}: '🃲'
-    pub const PLAYING_CARD_TRUMP_DASH_18: char = '🃲';
-    /// \u{1f0f3}: '🃳'
-    pub const PLAYING_CARD_TRUMP_DASH_19: char = '🃳';
-    /// \u{1f0f4}: '🃴'
-    pub const PLAYING_CARD_TRUMP_DASH_20: char = '🃴';
-    /// \u{1f0f5}: '🃵'
-    pub const PLAYING_CARD_TRUMP_DASH_21: char = '🃵';
-}
 
 /// An enum to represent all characters in the PlayingCards block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -337,90 +170,89 @@ pub enum PlayingCards {
 
 impl Into<char> for PlayingCards {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            PlayingCards::PlayingCardBack => PLAYING_CARD_BACK,
-            PlayingCards::PlayingCardAceOfSpades => PLAYING_CARD_ACE_OF_SPADES,
-            PlayingCards::PlayingCardTwoOfSpades => PLAYING_CARD_TWO_OF_SPADES,
-            PlayingCards::PlayingCardThreeOfSpades => PLAYING_CARD_THREE_OF_SPADES,
-            PlayingCards::PlayingCardFourOfSpades => PLAYING_CARD_FOUR_OF_SPADES,
-            PlayingCards::PlayingCardFiveOfSpades => PLAYING_CARD_FIVE_OF_SPADES,
-            PlayingCards::PlayingCardSixOfSpades => PLAYING_CARD_SIX_OF_SPADES,
-            PlayingCards::PlayingCardSevenOfSpades => PLAYING_CARD_SEVEN_OF_SPADES,
-            PlayingCards::PlayingCardEightOfSpades => PLAYING_CARD_EIGHT_OF_SPADES,
-            PlayingCards::PlayingCardNineOfSpades => PLAYING_CARD_NINE_OF_SPADES,
-            PlayingCards::PlayingCardTenOfSpades => PLAYING_CARD_TEN_OF_SPADES,
-            PlayingCards::PlayingCardJackOfSpades => PLAYING_CARD_JACK_OF_SPADES,
-            PlayingCards::PlayingCardKnightOfSpades => PLAYING_CARD_KNIGHT_OF_SPADES,
-            PlayingCards::PlayingCardQueenOfSpades => PLAYING_CARD_QUEEN_OF_SPADES,
-            PlayingCards::PlayingCardKingOfSpades => PLAYING_CARD_KING_OF_SPADES,
-            PlayingCards::PlayingCardAceOfHearts => PLAYING_CARD_ACE_OF_HEARTS,
-            PlayingCards::PlayingCardTwoOfHearts => PLAYING_CARD_TWO_OF_HEARTS,
-            PlayingCards::PlayingCardThreeOfHearts => PLAYING_CARD_THREE_OF_HEARTS,
-            PlayingCards::PlayingCardFourOfHearts => PLAYING_CARD_FOUR_OF_HEARTS,
-            PlayingCards::PlayingCardFiveOfHearts => PLAYING_CARD_FIVE_OF_HEARTS,
-            PlayingCards::PlayingCardSixOfHearts => PLAYING_CARD_SIX_OF_HEARTS,
-            PlayingCards::PlayingCardSevenOfHearts => PLAYING_CARD_SEVEN_OF_HEARTS,
-            PlayingCards::PlayingCardEightOfHearts => PLAYING_CARD_EIGHT_OF_HEARTS,
-            PlayingCards::PlayingCardNineOfHearts => PLAYING_CARD_NINE_OF_HEARTS,
-            PlayingCards::PlayingCardTenOfHearts => PLAYING_CARD_TEN_OF_HEARTS,
-            PlayingCards::PlayingCardJackOfHearts => PLAYING_CARD_JACK_OF_HEARTS,
-            PlayingCards::PlayingCardKnightOfHearts => PLAYING_CARD_KNIGHT_OF_HEARTS,
-            PlayingCards::PlayingCardQueenOfHearts => PLAYING_CARD_QUEEN_OF_HEARTS,
-            PlayingCards::PlayingCardKingOfHearts => PLAYING_CARD_KING_OF_HEARTS,
-            PlayingCards::PlayingCardRedJoker => PLAYING_CARD_RED_JOKER,
-            PlayingCards::PlayingCardAceOfDiamonds => PLAYING_CARD_ACE_OF_DIAMONDS,
-            PlayingCards::PlayingCardTwoOfDiamonds => PLAYING_CARD_TWO_OF_DIAMONDS,
-            PlayingCards::PlayingCardThreeOfDiamonds => PLAYING_CARD_THREE_OF_DIAMONDS,
-            PlayingCards::PlayingCardFourOfDiamonds => PLAYING_CARD_FOUR_OF_DIAMONDS,
-            PlayingCards::PlayingCardFiveOfDiamonds => PLAYING_CARD_FIVE_OF_DIAMONDS,
-            PlayingCards::PlayingCardSixOfDiamonds => PLAYING_CARD_SIX_OF_DIAMONDS,
-            PlayingCards::PlayingCardSevenOfDiamonds => PLAYING_CARD_SEVEN_OF_DIAMONDS,
-            PlayingCards::PlayingCardEightOfDiamonds => PLAYING_CARD_EIGHT_OF_DIAMONDS,
-            PlayingCards::PlayingCardNineOfDiamonds => PLAYING_CARD_NINE_OF_DIAMONDS,
-            PlayingCards::PlayingCardTenOfDiamonds => PLAYING_CARD_TEN_OF_DIAMONDS,
-            PlayingCards::PlayingCardJackOfDiamonds => PLAYING_CARD_JACK_OF_DIAMONDS,
-            PlayingCards::PlayingCardKnightOfDiamonds => PLAYING_CARD_KNIGHT_OF_DIAMONDS,
-            PlayingCards::PlayingCardQueenOfDiamonds => PLAYING_CARD_QUEEN_OF_DIAMONDS,
-            PlayingCards::PlayingCardKingOfDiamonds => PLAYING_CARD_KING_OF_DIAMONDS,
-            PlayingCards::PlayingCardBlackJoker => PLAYING_CARD_BLACK_JOKER,
-            PlayingCards::PlayingCardAceOfClubs => PLAYING_CARD_ACE_OF_CLUBS,
-            PlayingCards::PlayingCardTwoOfClubs => PLAYING_CARD_TWO_OF_CLUBS,
-            PlayingCards::PlayingCardThreeOfClubs => PLAYING_CARD_THREE_OF_CLUBS,
-            PlayingCards::PlayingCardFourOfClubs => PLAYING_CARD_FOUR_OF_CLUBS,
-            PlayingCards::PlayingCardFiveOfClubs => PLAYING_CARD_FIVE_OF_CLUBS,
-            PlayingCards::PlayingCardSixOfClubs => PLAYING_CARD_SIX_OF_CLUBS,
-            PlayingCards::PlayingCardSevenOfClubs => PLAYING_CARD_SEVEN_OF_CLUBS,
-            PlayingCards::PlayingCardEightOfClubs => PLAYING_CARD_EIGHT_OF_CLUBS,
-            PlayingCards::PlayingCardNineOfClubs => PLAYING_CARD_NINE_OF_CLUBS,
-            PlayingCards::PlayingCardTenOfClubs => PLAYING_CARD_TEN_OF_CLUBS,
-            PlayingCards::PlayingCardJackOfClubs => PLAYING_CARD_JACK_OF_CLUBS,
-            PlayingCards::PlayingCardKnightOfClubs => PLAYING_CARD_KNIGHT_OF_CLUBS,
-            PlayingCards::PlayingCardQueenOfClubs => PLAYING_CARD_QUEEN_OF_CLUBS,
-            PlayingCards::PlayingCardKingOfClubs => PLAYING_CARD_KING_OF_CLUBS,
-            PlayingCards::PlayingCardWhiteJoker => PLAYING_CARD_WHITE_JOKER,
-            PlayingCards::PlayingCardFool => PLAYING_CARD_FOOL,
-            PlayingCards::PlayingCardTrumpDash1 => PLAYING_CARD_TRUMP_DASH_1,
-            PlayingCards::PlayingCardTrumpDash2 => PLAYING_CARD_TRUMP_DASH_2,
-            PlayingCards::PlayingCardTrumpDash3 => PLAYING_CARD_TRUMP_DASH_3,
-            PlayingCards::PlayingCardTrumpDash4 => PLAYING_CARD_TRUMP_DASH_4,
-            PlayingCards::PlayingCardTrumpDash5 => PLAYING_CARD_TRUMP_DASH_5,
-            PlayingCards::PlayingCardTrumpDash6 => PLAYING_CARD_TRUMP_DASH_6,
-            PlayingCards::PlayingCardTrumpDash7 => PLAYING_CARD_TRUMP_DASH_7,
-            PlayingCards::PlayingCardTrumpDash8 => PLAYING_CARD_TRUMP_DASH_8,
-            PlayingCards::PlayingCardTrumpDash9 => PLAYING_CARD_TRUMP_DASH_9,
-            PlayingCards::PlayingCardTrumpDash10 => PLAYING_CARD_TRUMP_DASH_10,
-            PlayingCards::PlayingCardTrumpDash11 => PLAYING_CARD_TRUMP_DASH_11,
-            PlayingCards::PlayingCardTrumpDash12 => PLAYING_CARD_TRUMP_DASH_12,
-            PlayingCards::PlayingCardTrumpDash13 => PLAYING_CARD_TRUMP_DASH_13,
-            PlayingCards::PlayingCardTrumpDash14 => PLAYING_CARD_TRUMP_DASH_14,
-            PlayingCards::PlayingCardTrumpDash15 => PLAYING_CARD_TRUMP_DASH_15,
-            PlayingCards::PlayingCardTrumpDash16 => PLAYING_CARD_TRUMP_DASH_16,
-            PlayingCards::PlayingCardTrumpDash17 => PLAYING_CARD_TRUMP_DASH_17,
-            PlayingCards::PlayingCardTrumpDash18 => PLAYING_CARD_TRUMP_DASH_18,
-            PlayingCards::PlayingCardTrumpDash19 => PLAYING_CARD_TRUMP_DASH_19,
-            PlayingCards::PlayingCardTrumpDash20 => PLAYING_CARD_TRUMP_DASH_20,
-            PlayingCards::PlayingCardTrumpDash21 => PLAYING_CARD_TRUMP_DASH_21,
+            PlayingCards::PlayingCardBack => '🂠',
+            PlayingCards::PlayingCardAceOfSpades => '🂡',
+            PlayingCards::PlayingCardTwoOfSpades => '🂢',
+            PlayingCards::PlayingCardThreeOfSpades => '🂣',
+            PlayingCards::PlayingCardFourOfSpades => '🂤',
+            PlayingCards::PlayingCardFiveOfSpades => '🂥',
+            PlayingCards::PlayingCardSixOfSpades => '🂦',
+            PlayingCards::PlayingCardSevenOfSpades => '🂧',
+            PlayingCards::PlayingCardEightOfSpades => '🂨',
+            PlayingCards::PlayingCardNineOfSpades => '🂩',
+            PlayingCards::PlayingCardTenOfSpades => '🂪',
+            PlayingCards::PlayingCardJackOfSpades => '🂫',
+            PlayingCards::PlayingCardKnightOfSpades => '🂬',
+            PlayingCards::PlayingCardQueenOfSpades => '🂭',
+            PlayingCards::PlayingCardKingOfSpades => '🂮',
+            PlayingCards::PlayingCardAceOfHearts => '🂱',
+            PlayingCards::PlayingCardTwoOfHearts => '🂲',
+            PlayingCards::PlayingCardThreeOfHearts => '🂳',
+            PlayingCards::PlayingCardFourOfHearts => '🂴',
+            PlayingCards::PlayingCardFiveOfHearts => '🂵',
+            PlayingCards::PlayingCardSixOfHearts => '🂶',
+            PlayingCards::PlayingCardSevenOfHearts => '🂷',
+            PlayingCards::PlayingCardEightOfHearts => '🂸',
+            PlayingCards::PlayingCardNineOfHearts => '🂹',
+            PlayingCards::PlayingCardTenOfHearts => '🂺',
+            PlayingCards::PlayingCardJackOfHearts => '🂻',
+            PlayingCards::PlayingCardKnightOfHearts => '🂼',
+            PlayingCards::PlayingCardQueenOfHearts => '🂽',
+            PlayingCards::PlayingCardKingOfHearts => '🂾',
+            PlayingCards::PlayingCardRedJoker => '🂿',
+            PlayingCards::PlayingCardAceOfDiamonds => '🃁',
+            PlayingCards::PlayingCardTwoOfDiamonds => '🃂',
+            PlayingCards::PlayingCardThreeOfDiamonds => '🃃',
+            PlayingCards::PlayingCardFourOfDiamonds => '🃄',
+            PlayingCards::PlayingCardFiveOfDiamonds => '🃅',
+            PlayingCards::PlayingCardSixOfDiamonds => '🃆',
+            PlayingCards::PlayingCardSevenOfDiamonds => '🃇',
+            PlayingCards::PlayingCardEightOfDiamonds => '🃈',
+            PlayingCards::PlayingCardNineOfDiamonds => '🃉',
+            PlayingCards::PlayingCardTenOfDiamonds => '🃊',
+            PlayingCards::PlayingCardJackOfDiamonds => '🃋',
+            PlayingCards::PlayingCardKnightOfDiamonds => '🃌',
+            PlayingCards::PlayingCardQueenOfDiamonds => '🃍',
+            PlayingCards::PlayingCardKingOfDiamonds => '🃎',
+            PlayingCards::PlayingCardBlackJoker => '🃏',
+            PlayingCards::PlayingCardAceOfClubs => '🃑',
+            PlayingCards::PlayingCardTwoOfClubs => '🃒',
+            PlayingCards::PlayingCardThreeOfClubs => '🃓',
+            PlayingCards::PlayingCardFourOfClubs => '🃔',
+            PlayingCards::PlayingCardFiveOfClubs => '🃕',
+            PlayingCards::PlayingCardSixOfClubs => '🃖',
+            PlayingCards::PlayingCardSevenOfClubs => '🃗',
+            PlayingCards::PlayingCardEightOfClubs => '🃘',
+            PlayingCards::PlayingCardNineOfClubs => '🃙',
+            PlayingCards::PlayingCardTenOfClubs => '🃚',
+            PlayingCards::PlayingCardJackOfClubs => '🃛',
+            PlayingCards::PlayingCardKnightOfClubs => '🃜',
+            PlayingCards::PlayingCardQueenOfClubs => '🃝',
+            PlayingCards::PlayingCardKingOfClubs => '🃞',
+            PlayingCards::PlayingCardWhiteJoker => '🃟',
+            PlayingCards::PlayingCardFool => '🃠',
+            PlayingCards::PlayingCardTrumpDash1 => '🃡',
+            PlayingCards::PlayingCardTrumpDash2 => '🃢',
+            PlayingCards::PlayingCardTrumpDash3 => '🃣',
+            PlayingCards::PlayingCardTrumpDash4 => '🃤',
+            PlayingCards::PlayingCardTrumpDash5 => '🃥',
+            PlayingCards::PlayingCardTrumpDash6 => '🃦',
+            PlayingCards::PlayingCardTrumpDash7 => '🃧',
+            PlayingCards::PlayingCardTrumpDash8 => '🃨',
+            PlayingCards::PlayingCardTrumpDash9 => '🃩',
+            PlayingCards::PlayingCardTrumpDash10 => '🃪',
+            PlayingCards::PlayingCardTrumpDash11 => '🃫',
+            PlayingCards::PlayingCardTrumpDash12 => '🃬',
+            PlayingCards::PlayingCardTrumpDash13 => '🃭',
+            PlayingCards::PlayingCardTrumpDash14 => '🃮',
+            PlayingCards::PlayingCardTrumpDash15 => '🃯',
+            PlayingCards::PlayingCardTrumpDash16 => '🃰',
+            PlayingCards::PlayingCardTrumpDash17 => '🃱',
+            PlayingCards::PlayingCardTrumpDash18 => '🃲',
+            PlayingCards::PlayingCardTrumpDash19 => '🃳',
+            PlayingCards::PlayingCardTrumpDash20 => '🃴',
+            PlayingCards::PlayingCardTrumpDash21 => '🃵',
         }
     }
 }
@@ -428,90 +260,89 @@ impl Into<char> for PlayingCards {
 impl std::convert::TryFrom<char> for PlayingCards {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            PLAYING_CARD_BACK => Ok(PlayingCards::PlayingCardBack),
-            PLAYING_CARD_ACE_OF_SPADES => Ok(PlayingCards::PlayingCardAceOfSpades),
-            PLAYING_CARD_TWO_OF_SPADES => Ok(PlayingCards::PlayingCardTwoOfSpades),
-            PLAYING_CARD_THREE_OF_SPADES => Ok(PlayingCards::PlayingCardThreeOfSpades),
-            PLAYING_CARD_FOUR_OF_SPADES => Ok(PlayingCards::PlayingCardFourOfSpades),
-            PLAYING_CARD_FIVE_OF_SPADES => Ok(PlayingCards::PlayingCardFiveOfSpades),
-            PLAYING_CARD_SIX_OF_SPADES => Ok(PlayingCards::PlayingCardSixOfSpades),
-            PLAYING_CARD_SEVEN_OF_SPADES => Ok(PlayingCards::PlayingCardSevenOfSpades),
-            PLAYING_CARD_EIGHT_OF_SPADES => Ok(PlayingCards::PlayingCardEightOfSpades),
-            PLAYING_CARD_NINE_OF_SPADES => Ok(PlayingCards::PlayingCardNineOfSpades),
-            PLAYING_CARD_TEN_OF_SPADES => Ok(PlayingCards::PlayingCardTenOfSpades),
-            PLAYING_CARD_JACK_OF_SPADES => Ok(PlayingCards::PlayingCardJackOfSpades),
-            PLAYING_CARD_KNIGHT_OF_SPADES => Ok(PlayingCards::PlayingCardKnightOfSpades),
-            PLAYING_CARD_QUEEN_OF_SPADES => Ok(PlayingCards::PlayingCardQueenOfSpades),
-            PLAYING_CARD_KING_OF_SPADES => Ok(PlayingCards::PlayingCardKingOfSpades),
-            PLAYING_CARD_ACE_OF_HEARTS => Ok(PlayingCards::PlayingCardAceOfHearts),
-            PLAYING_CARD_TWO_OF_HEARTS => Ok(PlayingCards::PlayingCardTwoOfHearts),
-            PLAYING_CARD_THREE_OF_HEARTS => Ok(PlayingCards::PlayingCardThreeOfHearts),
-            PLAYING_CARD_FOUR_OF_HEARTS => Ok(PlayingCards::PlayingCardFourOfHearts),
-            PLAYING_CARD_FIVE_OF_HEARTS => Ok(PlayingCards::PlayingCardFiveOfHearts),
-            PLAYING_CARD_SIX_OF_HEARTS => Ok(PlayingCards::PlayingCardSixOfHearts),
-            PLAYING_CARD_SEVEN_OF_HEARTS => Ok(PlayingCards::PlayingCardSevenOfHearts),
-            PLAYING_CARD_EIGHT_OF_HEARTS => Ok(PlayingCards::PlayingCardEightOfHearts),
-            PLAYING_CARD_NINE_OF_HEARTS => Ok(PlayingCards::PlayingCardNineOfHearts),
-            PLAYING_CARD_TEN_OF_HEARTS => Ok(PlayingCards::PlayingCardTenOfHearts),
-            PLAYING_CARD_JACK_OF_HEARTS => Ok(PlayingCards::PlayingCardJackOfHearts),
-            PLAYING_CARD_KNIGHT_OF_HEARTS => Ok(PlayingCards::PlayingCardKnightOfHearts),
-            PLAYING_CARD_QUEEN_OF_HEARTS => Ok(PlayingCards::PlayingCardQueenOfHearts),
-            PLAYING_CARD_KING_OF_HEARTS => Ok(PlayingCards::PlayingCardKingOfHearts),
-            PLAYING_CARD_RED_JOKER => Ok(PlayingCards::PlayingCardRedJoker),
-            PLAYING_CARD_ACE_OF_DIAMONDS => Ok(PlayingCards::PlayingCardAceOfDiamonds),
-            PLAYING_CARD_TWO_OF_DIAMONDS => Ok(PlayingCards::PlayingCardTwoOfDiamonds),
-            PLAYING_CARD_THREE_OF_DIAMONDS => Ok(PlayingCards::PlayingCardThreeOfDiamonds),
-            PLAYING_CARD_FOUR_OF_DIAMONDS => Ok(PlayingCards::PlayingCardFourOfDiamonds),
-            PLAYING_CARD_FIVE_OF_DIAMONDS => Ok(PlayingCards::PlayingCardFiveOfDiamonds),
-            PLAYING_CARD_SIX_OF_DIAMONDS => Ok(PlayingCards::PlayingCardSixOfDiamonds),
-            PLAYING_CARD_SEVEN_OF_DIAMONDS => Ok(PlayingCards::PlayingCardSevenOfDiamonds),
-            PLAYING_CARD_EIGHT_OF_DIAMONDS => Ok(PlayingCards::PlayingCardEightOfDiamonds),
-            PLAYING_CARD_NINE_OF_DIAMONDS => Ok(PlayingCards::PlayingCardNineOfDiamonds),
-            PLAYING_CARD_TEN_OF_DIAMONDS => Ok(PlayingCards::PlayingCardTenOfDiamonds),
-            PLAYING_CARD_JACK_OF_DIAMONDS => Ok(PlayingCards::PlayingCardJackOfDiamonds),
-            PLAYING_CARD_KNIGHT_OF_DIAMONDS => Ok(PlayingCards::PlayingCardKnightOfDiamonds),
-            PLAYING_CARD_QUEEN_OF_DIAMONDS => Ok(PlayingCards::PlayingCardQueenOfDiamonds),
-            PLAYING_CARD_KING_OF_DIAMONDS => Ok(PlayingCards::PlayingCardKingOfDiamonds),
-            PLAYING_CARD_BLACK_JOKER => Ok(PlayingCards::PlayingCardBlackJoker),
-            PLAYING_CARD_ACE_OF_CLUBS => Ok(PlayingCards::PlayingCardAceOfClubs),
-            PLAYING_CARD_TWO_OF_CLUBS => Ok(PlayingCards::PlayingCardTwoOfClubs),
-            PLAYING_CARD_THREE_OF_CLUBS => Ok(PlayingCards::PlayingCardThreeOfClubs),
-            PLAYING_CARD_FOUR_OF_CLUBS => Ok(PlayingCards::PlayingCardFourOfClubs),
-            PLAYING_CARD_FIVE_OF_CLUBS => Ok(PlayingCards::PlayingCardFiveOfClubs),
-            PLAYING_CARD_SIX_OF_CLUBS => Ok(PlayingCards::PlayingCardSixOfClubs),
-            PLAYING_CARD_SEVEN_OF_CLUBS => Ok(PlayingCards::PlayingCardSevenOfClubs),
-            PLAYING_CARD_EIGHT_OF_CLUBS => Ok(PlayingCards::PlayingCardEightOfClubs),
-            PLAYING_CARD_NINE_OF_CLUBS => Ok(PlayingCards::PlayingCardNineOfClubs),
-            PLAYING_CARD_TEN_OF_CLUBS => Ok(PlayingCards::PlayingCardTenOfClubs),
-            PLAYING_CARD_JACK_OF_CLUBS => Ok(PlayingCards::PlayingCardJackOfClubs),
-            PLAYING_CARD_KNIGHT_OF_CLUBS => Ok(PlayingCards::PlayingCardKnightOfClubs),
-            PLAYING_CARD_QUEEN_OF_CLUBS => Ok(PlayingCards::PlayingCardQueenOfClubs),
-            PLAYING_CARD_KING_OF_CLUBS => Ok(PlayingCards::PlayingCardKingOfClubs),
-            PLAYING_CARD_WHITE_JOKER => Ok(PlayingCards::PlayingCardWhiteJoker),
-            PLAYING_CARD_FOOL => Ok(PlayingCards::PlayingCardFool),
-            PLAYING_CARD_TRUMP_DASH_1 => Ok(PlayingCards::PlayingCardTrumpDash1),
-            PLAYING_CARD_TRUMP_DASH_2 => Ok(PlayingCards::PlayingCardTrumpDash2),
-            PLAYING_CARD_TRUMP_DASH_3 => Ok(PlayingCards::PlayingCardTrumpDash3),
-            PLAYING_CARD_TRUMP_DASH_4 => Ok(PlayingCards::PlayingCardTrumpDash4),
-            PLAYING_CARD_TRUMP_DASH_5 => Ok(PlayingCards::PlayingCardTrumpDash5),
-            PLAYING_CARD_TRUMP_DASH_6 => Ok(PlayingCards::PlayingCardTrumpDash6),
-            PLAYING_CARD_TRUMP_DASH_7 => Ok(PlayingCards::PlayingCardTrumpDash7),
-            PLAYING_CARD_TRUMP_DASH_8 => Ok(PlayingCards::PlayingCardTrumpDash8),
-            PLAYING_CARD_TRUMP_DASH_9 => Ok(PlayingCards::PlayingCardTrumpDash9),
-            PLAYING_CARD_TRUMP_DASH_10 => Ok(PlayingCards::PlayingCardTrumpDash10),
-            PLAYING_CARD_TRUMP_DASH_11 => Ok(PlayingCards::PlayingCardTrumpDash11),
-            PLAYING_CARD_TRUMP_DASH_12 => Ok(PlayingCards::PlayingCardTrumpDash12),
-            PLAYING_CARD_TRUMP_DASH_13 => Ok(PlayingCards::PlayingCardTrumpDash13),
-            PLAYING_CARD_TRUMP_DASH_14 => Ok(PlayingCards::PlayingCardTrumpDash14),
-            PLAYING_CARD_TRUMP_DASH_15 => Ok(PlayingCards::PlayingCardTrumpDash15),
-            PLAYING_CARD_TRUMP_DASH_16 => Ok(PlayingCards::PlayingCardTrumpDash16),
-            PLAYING_CARD_TRUMP_DASH_17 => Ok(PlayingCards::PlayingCardTrumpDash17),
-            PLAYING_CARD_TRUMP_DASH_18 => Ok(PlayingCards::PlayingCardTrumpDash18),
-            PLAYING_CARD_TRUMP_DASH_19 => Ok(PlayingCards::PlayingCardTrumpDash19),
-            PLAYING_CARD_TRUMP_DASH_20 => Ok(PlayingCards::PlayingCardTrumpDash20),
-            PLAYING_CARD_TRUMP_DASH_21 => Ok(PlayingCards::PlayingCardTrumpDash21),
+            '🂠' => Ok(PlayingCards::PlayingCardBack),
+            '🂡' => Ok(PlayingCards::PlayingCardAceOfSpades),
+            '🂢' => Ok(PlayingCards::PlayingCardTwoOfSpades),
+            '🂣' => Ok(PlayingCards::PlayingCardThreeOfSpades),
+            '🂤' => Ok(PlayingCards::PlayingCardFourOfSpades),
+            '🂥' => Ok(PlayingCards::PlayingCardFiveOfSpades),
+            '🂦' => Ok(PlayingCards::PlayingCardSixOfSpades),
+            '🂧' => Ok(PlayingCards::PlayingCardSevenOfSpades),
+            '🂨' => Ok(PlayingCards::PlayingCardEightOfSpades),
+            '🂩' => Ok(PlayingCards::PlayingCardNineOfSpades),
+            '🂪' => Ok(PlayingCards::PlayingCardTenOfSpades),
+            '🂫' => Ok(PlayingCards::PlayingCardJackOfSpades),
+            '🂬' => Ok(PlayingCards::PlayingCardKnightOfSpades),
+            '🂭' => Ok(PlayingCards::PlayingCardQueenOfSpades),
+            '🂮' => Ok(PlayingCards::PlayingCardKingOfSpades),
+            '🂱' => Ok(PlayingCards::PlayingCardAceOfHearts),
+            '🂲' => Ok(PlayingCards::PlayingCardTwoOfHearts),
+            '🂳' => Ok(PlayingCards::PlayingCardThreeOfHearts),
+            '🂴' => Ok(PlayingCards::PlayingCardFourOfHearts),
+            '🂵' => Ok(PlayingCards::PlayingCardFiveOfHearts),
+            '🂶' => Ok(PlayingCards::PlayingCardSixOfHearts),
+            '🂷' => Ok(PlayingCards::PlayingCardSevenOfHearts),
+            '🂸' => Ok(PlayingCards::PlayingCardEightOfHearts),
+            '🂹' => Ok(PlayingCards::PlayingCardNineOfHearts),
+            '🂺' => Ok(PlayingCards::PlayingCardTenOfHearts),
+            '🂻' => Ok(PlayingCards::PlayingCardJackOfHearts),
+            '🂼' => Ok(PlayingCards::PlayingCardKnightOfHearts),
+            '🂽' => Ok(PlayingCards::PlayingCardQueenOfHearts),
+            '🂾' => Ok(PlayingCards::PlayingCardKingOfHearts),
+            '🂿' => Ok(PlayingCards::PlayingCardRedJoker),
+            '🃁' => Ok(PlayingCards::PlayingCardAceOfDiamonds),
+            '🃂' => Ok(PlayingCards::PlayingCardTwoOfDiamonds),
+            '🃃' => Ok(PlayingCards::PlayingCardThreeOfDiamonds),
+            '🃄' => Ok(PlayingCards::PlayingCardFourOfDiamonds),
+            '🃅' => Ok(PlayingCards::PlayingCardFiveOfDiamonds),
+            '🃆' => Ok(PlayingCards::PlayingCardSixOfDiamonds),
+            '🃇' => Ok(PlayingCards::PlayingCardSevenOfDiamonds),
+            '🃈' => Ok(PlayingCards::PlayingCardEightOfDiamonds),
+            '🃉' => Ok(PlayingCards::PlayingCardNineOfDiamonds),
+            '🃊' => Ok(PlayingCards::PlayingCardTenOfDiamonds),
+            '🃋' => Ok(PlayingCards::PlayingCardJackOfDiamonds),
+            '🃌' => Ok(PlayingCards::PlayingCardKnightOfDiamonds),
+            '🃍' => Ok(PlayingCards::PlayingCardQueenOfDiamonds),
+            '🃎' => Ok(PlayingCards::PlayingCardKingOfDiamonds),
+            '🃏' => Ok(PlayingCards::PlayingCardBlackJoker),
+            '🃑' => Ok(PlayingCards::PlayingCardAceOfClubs),
+            '🃒' => Ok(PlayingCards::PlayingCardTwoOfClubs),
+            '🃓' => Ok(PlayingCards::PlayingCardThreeOfClubs),
+            '🃔' => Ok(PlayingCards::PlayingCardFourOfClubs),
+            '🃕' => Ok(PlayingCards::PlayingCardFiveOfClubs),
+            '🃖' => Ok(PlayingCards::PlayingCardSixOfClubs),
+            '🃗' => Ok(PlayingCards::PlayingCardSevenOfClubs),
+            '🃘' => Ok(PlayingCards::PlayingCardEightOfClubs),
+            '🃙' => Ok(PlayingCards::PlayingCardNineOfClubs),
+            '🃚' => Ok(PlayingCards::PlayingCardTenOfClubs),
+            '🃛' => Ok(PlayingCards::PlayingCardJackOfClubs),
+            '🃜' => Ok(PlayingCards::PlayingCardKnightOfClubs),
+            '🃝' => Ok(PlayingCards::PlayingCardQueenOfClubs),
+            '🃞' => Ok(PlayingCards::PlayingCardKingOfClubs),
+            '🃟' => Ok(PlayingCards::PlayingCardWhiteJoker),
+            '🃠' => Ok(PlayingCards::PlayingCardFool),
+            '🃡' => Ok(PlayingCards::PlayingCardTrumpDash1),
+            '🃢' => Ok(PlayingCards::PlayingCardTrumpDash2),
+            '🃣' => Ok(PlayingCards::PlayingCardTrumpDash3),
+            '🃤' => Ok(PlayingCards::PlayingCardTrumpDash4),
+            '🃥' => Ok(PlayingCards::PlayingCardTrumpDash5),
+            '🃦' => Ok(PlayingCards::PlayingCardTrumpDash6),
+            '🃧' => Ok(PlayingCards::PlayingCardTrumpDash7),
+            '🃨' => Ok(PlayingCards::PlayingCardTrumpDash8),
+            '🃩' => Ok(PlayingCards::PlayingCardTrumpDash9),
+            '🃪' => Ok(PlayingCards::PlayingCardTrumpDash10),
+            '🃫' => Ok(PlayingCards::PlayingCardTrumpDash11),
+            '🃬' => Ok(PlayingCards::PlayingCardTrumpDash12),
+            '🃭' => Ok(PlayingCards::PlayingCardTrumpDash13),
+            '🃮' => Ok(PlayingCards::PlayingCardTrumpDash14),
+            '🃯' => Ok(PlayingCards::PlayingCardTrumpDash15),
+            '🃰' => Ok(PlayingCards::PlayingCardTrumpDash16),
+            '🃱' => Ok(PlayingCards::PlayingCardTrumpDash17),
+            '🃲' => Ok(PlayingCards::PlayingCardTrumpDash18),
+            '🃳' => Ok(PlayingCards::PlayingCardTrumpDash19),
+            '🃴' => Ok(PlayingCards::PlayingCardTrumpDash20),
+            '🃵' => Ok(PlayingCards::PlayingCardTrumpDash21),
             _ => Err(()),
         }
     }

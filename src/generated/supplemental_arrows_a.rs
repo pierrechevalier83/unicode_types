@@ -1,36 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{27f0}: '⟰'
-    pub const UPWARDS_QUADRUPLE_ARROW: char = '⟰';
-    /// \u{27f1}: '⟱'
-    pub const DOWNWARDS_QUADRUPLE_ARROW: char = '⟱';
-    /// \u{27f2}: '⟲'
-    pub const ANTICLOCKWISE_GAPPED_CIRCLE_ARROW: char = '⟲';
-    /// \u{27f3}: '⟳'
-    pub const CLOCKWISE_GAPPED_CIRCLE_ARROW: char = '⟳';
-    /// \u{27f4}: '⟴'
-    pub const RIGHT_ARROW_WITH_CIRCLED_PLUS: char = '⟴';
-    /// \u{27f5}: '⟵'
-    pub const LONG_LEFTWARDS_ARROW: char = '⟵';
-    /// \u{27f6}: '⟶'
-    pub const LONG_RIGHTWARDS_ARROW: char = '⟶';
-    /// \u{27f7}: '⟷'
-    pub const LONG_LEFT_RIGHT_ARROW: char = '⟷';
-    /// \u{27f8}: '⟸'
-    pub const LONG_LEFTWARDS_DOUBLE_ARROW: char = '⟸';
-    /// \u{27f9}: '⟹'
-    pub const LONG_RIGHTWARDS_DOUBLE_ARROW: char = '⟹';
-    /// \u{27fa}: '⟺'
-    pub const LONG_LEFT_RIGHT_DOUBLE_ARROW: char = '⟺';
-    /// \u{27fb}: '⟻'
-    pub const LONG_LEFTWARDS_ARROW_FROM_BAR: char = '⟻';
-    /// \u{27fc}: '⟼'
-    pub const LONG_RIGHTWARDS_ARROW_FROM_BAR: char = '⟼';
-    /// \u{27fd}: '⟽'
-    pub const LONG_LEFTWARDS_DOUBLE_ARROW_FROM_BAR: char = '⟽';
-    /// \u{27fe}: '⟾'
-    pub const LONG_RIGHTWARDS_DOUBLE_ARROW_FROM_BAR: char = '⟾';
-}
 
 /// An enum to represent all characters in the SupplementalArrowsA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -69,23 +36,22 @@ pub enum SupplementalArrowsA {
 
 impl Into<char> for SupplementalArrowsA {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SupplementalArrowsA::UpwardsQuadrupleArrow => UPWARDS_QUADRUPLE_ARROW,
-            SupplementalArrowsA::DownwardsQuadrupleArrow => DOWNWARDS_QUADRUPLE_ARROW,
-            SupplementalArrowsA::AnticlockwiseGappedCircleArrow => ANTICLOCKWISE_GAPPED_CIRCLE_ARROW,
-            SupplementalArrowsA::ClockwiseGappedCircleArrow => CLOCKWISE_GAPPED_CIRCLE_ARROW,
-            SupplementalArrowsA::RightArrowWithCircledPlus => RIGHT_ARROW_WITH_CIRCLED_PLUS,
-            SupplementalArrowsA::LongLeftwardsArrow => LONG_LEFTWARDS_ARROW,
-            SupplementalArrowsA::LongRightwardsArrow => LONG_RIGHTWARDS_ARROW,
-            SupplementalArrowsA::LongLeftRightArrow => LONG_LEFT_RIGHT_ARROW,
-            SupplementalArrowsA::LongLeftwardsDoubleArrow => LONG_LEFTWARDS_DOUBLE_ARROW,
-            SupplementalArrowsA::LongRightwardsDoubleArrow => LONG_RIGHTWARDS_DOUBLE_ARROW,
-            SupplementalArrowsA::LongLeftRightDoubleArrow => LONG_LEFT_RIGHT_DOUBLE_ARROW,
-            SupplementalArrowsA::LongLeftwardsArrowFromBar => LONG_LEFTWARDS_ARROW_FROM_BAR,
-            SupplementalArrowsA::LongRightwardsArrowFromBar => LONG_RIGHTWARDS_ARROW_FROM_BAR,
-            SupplementalArrowsA::LongLeftwardsDoubleArrowFromBar => LONG_LEFTWARDS_DOUBLE_ARROW_FROM_BAR,
-            SupplementalArrowsA::LongRightwardsDoubleArrowFromBar => LONG_RIGHTWARDS_DOUBLE_ARROW_FROM_BAR,
+            SupplementalArrowsA::UpwardsQuadrupleArrow => '⟰',
+            SupplementalArrowsA::DownwardsQuadrupleArrow => '⟱',
+            SupplementalArrowsA::AnticlockwiseGappedCircleArrow => '⟲',
+            SupplementalArrowsA::ClockwiseGappedCircleArrow => '⟳',
+            SupplementalArrowsA::RightArrowWithCircledPlus => '⟴',
+            SupplementalArrowsA::LongLeftwardsArrow => '⟵',
+            SupplementalArrowsA::LongRightwardsArrow => '⟶',
+            SupplementalArrowsA::LongLeftRightArrow => '⟷',
+            SupplementalArrowsA::LongLeftwardsDoubleArrow => '⟸',
+            SupplementalArrowsA::LongRightwardsDoubleArrow => '⟹',
+            SupplementalArrowsA::LongLeftRightDoubleArrow => '⟺',
+            SupplementalArrowsA::LongLeftwardsArrowFromBar => '⟻',
+            SupplementalArrowsA::LongRightwardsArrowFromBar => '⟼',
+            SupplementalArrowsA::LongLeftwardsDoubleArrowFromBar => '⟽',
+            SupplementalArrowsA::LongRightwardsDoubleArrowFromBar => '⟾',
         }
     }
 }
@@ -93,23 +59,22 @@ impl Into<char> for SupplementalArrowsA {
 impl std::convert::TryFrom<char> for SupplementalArrowsA {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            UPWARDS_QUADRUPLE_ARROW => Ok(SupplementalArrowsA::UpwardsQuadrupleArrow),
-            DOWNWARDS_QUADRUPLE_ARROW => Ok(SupplementalArrowsA::DownwardsQuadrupleArrow),
-            ANTICLOCKWISE_GAPPED_CIRCLE_ARROW => Ok(SupplementalArrowsA::AnticlockwiseGappedCircleArrow),
-            CLOCKWISE_GAPPED_CIRCLE_ARROW => Ok(SupplementalArrowsA::ClockwiseGappedCircleArrow),
-            RIGHT_ARROW_WITH_CIRCLED_PLUS => Ok(SupplementalArrowsA::RightArrowWithCircledPlus),
-            LONG_LEFTWARDS_ARROW => Ok(SupplementalArrowsA::LongLeftwardsArrow),
-            LONG_RIGHTWARDS_ARROW => Ok(SupplementalArrowsA::LongRightwardsArrow),
-            LONG_LEFT_RIGHT_ARROW => Ok(SupplementalArrowsA::LongLeftRightArrow),
-            LONG_LEFTWARDS_DOUBLE_ARROW => Ok(SupplementalArrowsA::LongLeftwardsDoubleArrow),
-            LONG_RIGHTWARDS_DOUBLE_ARROW => Ok(SupplementalArrowsA::LongRightwardsDoubleArrow),
-            LONG_LEFT_RIGHT_DOUBLE_ARROW => Ok(SupplementalArrowsA::LongLeftRightDoubleArrow),
-            LONG_LEFTWARDS_ARROW_FROM_BAR => Ok(SupplementalArrowsA::LongLeftwardsArrowFromBar),
-            LONG_RIGHTWARDS_ARROW_FROM_BAR => Ok(SupplementalArrowsA::LongRightwardsArrowFromBar),
-            LONG_LEFTWARDS_DOUBLE_ARROW_FROM_BAR => Ok(SupplementalArrowsA::LongLeftwardsDoubleArrowFromBar),
-            LONG_RIGHTWARDS_DOUBLE_ARROW_FROM_BAR => Ok(SupplementalArrowsA::LongRightwardsDoubleArrowFromBar),
+            '⟰' => Ok(SupplementalArrowsA::UpwardsQuadrupleArrow),
+            '⟱' => Ok(SupplementalArrowsA::DownwardsQuadrupleArrow),
+            '⟲' => Ok(SupplementalArrowsA::AnticlockwiseGappedCircleArrow),
+            '⟳' => Ok(SupplementalArrowsA::ClockwiseGappedCircleArrow),
+            '⟴' => Ok(SupplementalArrowsA::RightArrowWithCircledPlus),
+            '⟵' => Ok(SupplementalArrowsA::LongLeftwardsArrow),
+            '⟶' => Ok(SupplementalArrowsA::LongRightwardsArrow),
+            '⟷' => Ok(SupplementalArrowsA::LongLeftRightArrow),
+            '⟸' => Ok(SupplementalArrowsA::LongLeftwardsDoubleArrow),
+            '⟹' => Ok(SupplementalArrowsA::LongRightwardsDoubleArrow),
+            '⟺' => Ok(SupplementalArrowsA::LongLeftRightDoubleArrow),
+            '⟻' => Ok(SupplementalArrowsA::LongLeftwardsArrowFromBar),
+            '⟼' => Ok(SupplementalArrowsA::LongRightwardsArrowFromBar),
+            '⟽' => Ok(SupplementalArrowsA::LongLeftwardsDoubleArrowFromBar),
+            '⟾' => Ok(SupplementalArrowsA::LongRightwardsDoubleArrowFromBar),
             _ => Err(()),
         }
     }

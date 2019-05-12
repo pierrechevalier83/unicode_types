@@ -1,8 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{e000}: ''
-    pub const PRIVATE_USE_FIRST: char = '';
-}
 
 /// An enum to represent all characters in the PrivateUseArea block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -13,9 +8,8 @@ pub enum PrivateUseArea {
 
 impl Into<char> for PrivateUseArea {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            PrivateUseArea::PrivateUseFirst => PRIVATE_USE_FIRST,
+            PrivateUseArea::PrivateUseFirst => '',
         }
     }
 }
@@ -23,9 +17,8 @@ impl Into<char> for PrivateUseArea {
 impl std::convert::TryFrom<char> for PrivateUseArea {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            PRIVATE_USE_FIRST => Ok(PrivateUseArea::PrivateUseFirst),
+            '' => Ok(PrivateUseArea::PrivateUseFirst),
             _ => Err(()),
         }
     }

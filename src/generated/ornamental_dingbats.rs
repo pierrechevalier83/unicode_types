@@ -1,100 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1f650}: '🙐'
-    pub const NORTH_WEST_POINTING_LEAF: char = '🙐';
-    /// \u{1f651}: '🙑'
-    pub const SOUTH_WEST_POINTING_LEAF: char = '🙑';
-    /// \u{1f652}: '🙒'
-    pub const NORTH_EAST_POINTING_LEAF: char = '🙒';
-    /// \u{1f653}: '🙓'
-    pub const SOUTH_EAST_POINTING_LEAF: char = '🙓';
-    /// \u{1f654}: '🙔'
-    pub const TURNED_NORTH_WEST_POINTING_LEAF: char = '🙔';
-    /// \u{1f655}: '🙕'
-    pub const TURNED_SOUTH_WEST_POINTING_LEAF: char = '🙕';
-    /// \u{1f656}: '🙖'
-    pub const TURNED_NORTH_EAST_POINTING_LEAF: char = '🙖';
-    /// \u{1f657}: '🙗'
-    pub const TURNED_SOUTH_EAST_POINTING_LEAF: char = '🙗';
-    /// \u{1f658}: '🙘'
-    pub const NORTH_WEST_POINTING_VINE_LEAF: char = '🙘';
-    /// \u{1f659}: '🙙'
-    pub const SOUTH_WEST_POINTING_VINE_LEAF: char = '🙙';
-    /// \u{1f65a}: '🙚'
-    pub const NORTH_EAST_POINTING_VINE_LEAF: char = '🙚';
-    /// \u{1f65b}: '🙛'
-    pub const SOUTH_EAST_POINTING_VINE_LEAF: char = '🙛';
-    /// \u{1f65c}: '🙜'
-    pub const HEAVY_NORTH_WEST_POINTING_VINE_LEAF: char = '🙜';
-    /// \u{1f65d}: '🙝'
-    pub const HEAVY_SOUTH_WEST_POINTING_VINE_LEAF: char = '🙝';
-    /// \u{1f65e}: '🙞'
-    pub const HEAVY_NORTH_EAST_POINTING_VINE_LEAF: char = '🙞';
-    /// \u{1f65f}: '🙟'
-    pub const HEAVY_SOUTH_EAST_POINTING_VINE_LEAF: char = '🙟';
-    /// \u{1f660}: '🙠'
-    pub const NORTH_WEST_POINTING_BUD: char = '🙠';
-    /// \u{1f661}: '🙡'
-    pub const SOUTH_WEST_POINTING_BUD: char = '🙡';
-    /// \u{1f662}: '🙢'
-    pub const NORTH_EAST_POINTING_BUD: char = '🙢';
-    /// \u{1f663}: '🙣'
-    pub const SOUTH_EAST_POINTING_BUD: char = '🙣';
-    /// \u{1f664}: '🙤'
-    pub const HEAVY_NORTH_WEST_POINTING_BUD: char = '🙤';
-    /// \u{1f665}: '🙥'
-    pub const HEAVY_SOUTH_WEST_POINTING_BUD: char = '🙥';
-    /// \u{1f666}: '🙦'
-    pub const HEAVY_NORTH_EAST_POINTING_BUD: char = '🙦';
-    /// \u{1f667}: '🙧'
-    pub const HEAVY_SOUTH_EAST_POINTING_BUD: char = '🙧';
-    /// \u{1f668}: '🙨'
-    pub const HOLLOW_QUILT_SQUARE_ORNAMENT: char = '🙨';
-    /// \u{1f669}: '🙩'
-    pub const HOLLOW_QUILT_SQUARE_ORNAMENT_IN_BLACK_SQUARE: char = '🙩';
-    /// \u{1f66a}: '🙪'
-    pub const SOLID_QUILT_SQUARE_ORNAMENT: char = '🙪';
-    /// \u{1f66b}: '🙫'
-    pub const SOLID_QUILT_SQUARE_ORNAMENT_IN_BLACK_SQUARE: char = '🙫';
-    /// \u{1f66c}: '🙬'
-    pub const LEFTWARDS_ROCKET: char = '🙬';
-    /// \u{1f66d}: '🙭'
-    pub const UPWARDS_ROCKET: char = '🙭';
-    /// \u{1f66e}: '🙮'
-    pub const RIGHTWARDS_ROCKET: char = '🙮';
-    /// \u{1f66f}: '🙯'
-    pub const DOWNWARDS_ROCKET: char = '🙯';
-    /// \u{1f670}: '🙰'
-    pub const SCRIPT_LIGATURE_ET_ORNAMENT: char = '🙰';
-    /// \u{1f671}: '🙱'
-    pub const HEAVY_SCRIPT_LIGATURE_ET_ORNAMENT: char = '🙱';
-    /// \u{1f672}: '🙲'
-    pub const LIGATURE_OPEN_ET_ORNAMENT: char = '🙲';
-    /// \u{1f673}: '🙳'
-    pub const HEAVY_LIGATURE_OPEN_ET_ORNAMENT: char = '🙳';
-    /// \u{1f674}: '🙴'
-    pub const HEAVY_AMPERSAND_ORNAMENT: char = '🙴';
-    /// \u{1f675}: '🙵'
-    pub const SWASH_AMPERSAND_ORNAMENT: char = '🙵';
-    /// \u{1f676}: '🙶'
-    pub const SANS_DASH_SERIF_HEAVY_DOUBLE_TURNED_COMMA_QUOTATION_MARK_ORNAMENT: char = '🙶';
-    /// \u{1f677}: '🙷'
-    pub const SANS_DASH_SERIF_HEAVY_DOUBLE_COMMA_QUOTATION_MARK_ORNAMENT: char = '🙷';
-    /// \u{1f678}: '🙸'
-    pub const SANS_DASH_SERIF_HEAVY_LOW_DOUBLE_COMMA_QUOTATION_MARK_ORNAMENT: char = '🙸';
-    /// \u{1f679}: '🙹'
-    pub const HEAVY_INTERROBANG_ORNAMENT: char = '🙹';
-    /// \u{1f67a}: '🙺'
-    pub const SANS_DASH_SERIF_INTERROBANG_ORNAMENT: char = '🙺';
-    /// \u{1f67b}: '🙻'
-    pub const HEAVY_SANS_DASH_SERIF_INTERROBANG_ORNAMENT: char = '🙻';
-    /// \u{1f67c}: '🙼'
-    pub const VERY_HEAVY_SOLIDUS: char = '🙼';
-    /// \u{1f67d}: '🙽'
-    pub const VERY_HEAVY_REVERSE_SOLIDUS: char = '🙽';
-    /// \u{1f67e}: '🙾'
-    pub const CHECKER_BOARD: char = '🙾';
-}
 
 /// An enum to represent all characters in the OrnamentalDingbats block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -197,55 +100,54 @@ pub enum OrnamentalDingbats {
 
 impl Into<char> for OrnamentalDingbats {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            OrnamentalDingbats::NorthWestPointingLeaf => NORTH_WEST_POINTING_LEAF,
-            OrnamentalDingbats::SouthWestPointingLeaf => SOUTH_WEST_POINTING_LEAF,
-            OrnamentalDingbats::NorthEastPointingLeaf => NORTH_EAST_POINTING_LEAF,
-            OrnamentalDingbats::SouthEastPointingLeaf => SOUTH_EAST_POINTING_LEAF,
-            OrnamentalDingbats::TurnedNorthWestPointingLeaf => TURNED_NORTH_WEST_POINTING_LEAF,
-            OrnamentalDingbats::TurnedSouthWestPointingLeaf => TURNED_SOUTH_WEST_POINTING_LEAF,
-            OrnamentalDingbats::TurnedNorthEastPointingLeaf => TURNED_NORTH_EAST_POINTING_LEAF,
-            OrnamentalDingbats::TurnedSouthEastPointingLeaf => TURNED_SOUTH_EAST_POINTING_LEAF,
-            OrnamentalDingbats::NorthWestPointingVineLeaf => NORTH_WEST_POINTING_VINE_LEAF,
-            OrnamentalDingbats::SouthWestPointingVineLeaf => SOUTH_WEST_POINTING_VINE_LEAF,
-            OrnamentalDingbats::NorthEastPointingVineLeaf => NORTH_EAST_POINTING_VINE_LEAF,
-            OrnamentalDingbats::SouthEastPointingVineLeaf => SOUTH_EAST_POINTING_VINE_LEAF,
-            OrnamentalDingbats::HeavyNorthWestPointingVineLeaf => HEAVY_NORTH_WEST_POINTING_VINE_LEAF,
-            OrnamentalDingbats::HeavySouthWestPointingVineLeaf => HEAVY_SOUTH_WEST_POINTING_VINE_LEAF,
-            OrnamentalDingbats::HeavyNorthEastPointingVineLeaf => HEAVY_NORTH_EAST_POINTING_VINE_LEAF,
-            OrnamentalDingbats::HeavySouthEastPointingVineLeaf => HEAVY_SOUTH_EAST_POINTING_VINE_LEAF,
-            OrnamentalDingbats::NorthWestPointingBud => NORTH_WEST_POINTING_BUD,
-            OrnamentalDingbats::SouthWestPointingBud => SOUTH_WEST_POINTING_BUD,
-            OrnamentalDingbats::NorthEastPointingBud => NORTH_EAST_POINTING_BUD,
-            OrnamentalDingbats::SouthEastPointingBud => SOUTH_EAST_POINTING_BUD,
-            OrnamentalDingbats::HeavyNorthWestPointingBud => HEAVY_NORTH_WEST_POINTING_BUD,
-            OrnamentalDingbats::HeavySouthWestPointingBud => HEAVY_SOUTH_WEST_POINTING_BUD,
-            OrnamentalDingbats::HeavyNorthEastPointingBud => HEAVY_NORTH_EAST_POINTING_BUD,
-            OrnamentalDingbats::HeavySouthEastPointingBud => HEAVY_SOUTH_EAST_POINTING_BUD,
-            OrnamentalDingbats::HollowQuiltSquareOrnament => HOLLOW_QUILT_SQUARE_ORNAMENT,
-            OrnamentalDingbats::HollowQuiltSquareOrnamentInBlackSquare => HOLLOW_QUILT_SQUARE_ORNAMENT_IN_BLACK_SQUARE,
-            OrnamentalDingbats::SolidQuiltSquareOrnament => SOLID_QUILT_SQUARE_ORNAMENT,
-            OrnamentalDingbats::SolidQuiltSquareOrnamentInBlackSquare => SOLID_QUILT_SQUARE_ORNAMENT_IN_BLACK_SQUARE,
-            OrnamentalDingbats::LeftwardsRocket => LEFTWARDS_ROCKET,
-            OrnamentalDingbats::UpwardsRocket => UPWARDS_ROCKET,
-            OrnamentalDingbats::RightwardsRocket => RIGHTWARDS_ROCKET,
-            OrnamentalDingbats::DownwardsRocket => DOWNWARDS_ROCKET,
-            OrnamentalDingbats::ScriptLigatureEtOrnament => SCRIPT_LIGATURE_ET_ORNAMENT,
-            OrnamentalDingbats::HeavyScriptLigatureEtOrnament => HEAVY_SCRIPT_LIGATURE_ET_ORNAMENT,
-            OrnamentalDingbats::LigatureOpenEtOrnament => LIGATURE_OPEN_ET_ORNAMENT,
-            OrnamentalDingbats::HeavyLigatureOpenEtOrnament => HEAVY_LIGATURE_OPEN_ET_ORNAMENT,
-            OrnamentalDingbats::HeavyAmpersandOrnament => HEAVY_AMPERSAND_ORNAMENT,
-            OrnamentalDingbats::SwashAmpersandOrnament => SWASH_AMPERSAND_ORNAMENT,
-            OrnamentalDingbats::SansDashSerifHeavyDoubleTurnedCommaQuotationMarkOrnament => SANS_DASH_SERIF_HEAVY_DOUBLE_TURNED_COMMA_QUOTATION_MARK_ORNAMENT,
-            OrnamentalDingbats::SansDashSerifHeavyDoubleCommaQuotationMarkOrnament => SANS_DASH_SERIF_HEAVY_DOUBLE_COMMA_QUOTATION_MARK_ORNAMENT,
-            OrnamentalDingbats::SansDashSerifHeavyLowDoubleCommaQuotationMarkOrnament => SANS_DASH_SERIF_HEAVY_LOW_DOUBLE_COMMA_QUOTATION_MARK_ORNAMENT,
-            OrnamentalDingbats::HeavyInterrobangOrnament => HEAVY_INTERROBANG_ORNAMENT,
-            OrnamentalDingbats::SansDashSerifInterrobangOrnament => SANS_DASH_SERIF_INTERROBANG_ORNAMENT,
-            OrnamentalDingbats::HeavySansDashSerifInterrobangOrnament => HEAVY_SANS_DASH_SERIF_INTERROBANG_ORNAMENT,
-            OrnamentalDingbats::VeryHeavySolidus => VERY_HEAVY_SOLIDUS,
-            OrnamentalDingbats::VeryHeavyReverseSolidus => VERY_HEAVY_REVERSE_SOLIDUS,
-            OrnamentalDingbats::CheckerBoard => CHECKER_BOARD,
+            OrnamentalDingbats::NorthWestPointingLeaf => '🙐',
+            OrnamentalDingbats::SouthWestPointingLeaf => '🙑',
+            OrnamentalDingbats::NorthEastPointingLeaf => '🙒',
+            OrnamentalDingbats::SouthEastPointingLeaf => '🙓',
+            OrnamentalDingbats::TurnedNorthWestPointingLeaf => '🙔',
+            OrnamentalDingbats::TurnedSouthWestPointingLeaf => '🙕',
+            OrnamentalDingbats::TurnedNorthEastPointingLeaf => '🙖',
+            OrnamentalDingbats::TurnedSouthEastPointingLeaf => '🙗',
+            OrnamentalDingbats::NorthWestPointingVineLeaf => '🙘',
+            OrnamentalDingbats::SouthWestPointingVineLeaf => '🙙',
+            OrnamentalDingbats::NorthEastPointingVineLeaf => '🙚',
+            OrnamentalDingbats::SouthEastPointingVineLeaf => '🙛',
+            OrnamentalDingbats::HeavyNorthWestPointingVineLeaf => '🙜',
+            OrnamentalDingbats::HeavySouthWestPointingVineLeaf => '🙝',
+            OrnamentalDingbats::HeavyNorthEastPointingVineLeaf => '🙞',
+            OrnamentalDingbats::HeavySouthEastPointingVineLeaf => '🙟',
+            OrnamentalDingbats::NorthWestPointingBud => '🙠',
+            OrnamentalDingbats::SouthWestPointingBud => '🙡',
+            OrnamentalDingbats::NorthEastPointingBud => '🙢',
+            OrnamentalDingbats::SouthEastPointingBud => '🙣',
+            OrnamentalDingbats::HeavyNorthWestPointingBud => '🙤',
+            OrnamentalDingbats::HeavySouthWestPointingBud => '🙥',
+            OrnamentalDingbats::HeavyNorthEastPointingBud => '🙦',
+            OrnamentalDingbats::HeavySouthEastPointingBud => '🙧',
+            OrnamentalDingbats::HollowQuiltSquareOrnament => '🙨',
+            OrnamentalDingbats::HollowQuiltSquareOrnamentInBlackSquare => '🙩',
+            OrnamentalDingbats::SolidQuiltSquareOrnament => '🙪',
+            OrnamentalDingbats::SolidQuiltSquareOrnamentInBlackSquare => '🙫',
+            OrnamentalDingbats::LeftwardsRocket => '🙬',
+            OrnamentalDingbats::UpwardsRocket => '🙭',
+            OrnamentalDingbats::RightwardsRocket => '🙮',
+            OrnamentalDingbats::DownwardsRocket => '🙯',
+            OrnamentalDingbats::ScriptLigatureEtOrnament => '🙰',
+            OrnamentalDingbats::HeavyScriptLigatureEtOrnament => '🙱',
+            OrnamentalDingbats::LigatureOpenEtOrnament => '🙲',
+            OrnamentalDingbats::HeavyLigatureOpenEtOrnament => '🙳',
+            OrnamentalDingbats::HeavyAmpersandOrnament => '🙴',
+            OrnamentalDingbats::SwashAmpersandOrnament => '🙵',
+            OrnamentalDingbats::SansDashSerifHeavyDoubleTurnedCommaQuotationMarkOrnament => '🙶',
+            OrnamentalDingbats::SansDashSerifHeavyDoubleCommaQuotationMarkOrnament => '🙷',
+            OrnamentalDingbats::SansDashSerifHeavyLowDoubleCommaQuotationMarkOrnament => '🙸',
+            OrnamentalDingbats::HeavyInterrobangOrnament => '🙹',
+            OrnamentalDingbats::SansDashSerifInterrobangOrnament => '🙺',
+            OrnamentalDingbats::HeavySansDashSerifInterrobangOrnament => '🙻',
+            OrnamentalDingbats::VeryHeavySolidus => '🙼',
+            OrnamentalDingbats::VeryHeavyReverseSolidus => '🙽',
+            OrnamentalDingbats::CheckerBoard => '🙾',
         }
     }
 }
@@ -253,55 +155,54 @@ impl Into<char> for OrnamentalDingbats {
 impl std::convert::TryFrom<char> for OrnamentalDingbats {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            NORTH_WEST_POINTING_LEAF => Ok(OrnamentalDingbats::NorthWestPointingLeaf),
-            SOUTH_WEST_POINTING_LEAF => Ok(OrnamentalDingbats::SouthWestPointingLeaf),
-            NORTH_EAST_POINTING_LEAF => Ok(OrnamentalDingbats::NorthEastPointingLeaf),
-            SOUTH_EAST_POINTING_LEAF => Ok(OrnamentalDingbats::SouthEastPointingLeaf),
-            TURNED_NORTH_WEST_POINTING_LEAF => Ok(OrnamentalDingbats::TurnedNorthWestPointingLeaf),
-            TURNED_SOUTH_WEST_POINTING_LEAF => Ok(OrnamentalDingbats::TurnedSouthWestPointingLeaf),
-            TURNED_NORTH_EAST_POINTING_LEAF => Ok(OrnamentalDingbats::TurnedNorthEastPointingLeaf),
-            TURNED_SOUTH_EAST_POINTING_LEAF => Ok(OrnamentalDingbats::TurnedSouthEastPointingLeaf),
-            NORTH_WEST_POINTING_VINE_LEAF => Ok(OrnamentalDingbats::NorthWestPointingVineLeaf),
-            SOUTH_WEST_POINTING_VINE_LEAF => Ok(OrnamentalDingbats::SouthWestPointingVineLeaf),
-            NORTH_EAST_POINTING_VINE_LEAF => Ok(OrnamentalDingbats::NorthEastPointingVineLeaf),
-            SOUTH_EAST_POINTING_VINE_LEAF => Ok(OrnamentalDingbats::SouthEastPointingVineLeaf),
-            HEAVY_NORTH_WEST_POINTING_VINE_LEAF => Ok(OrnamentalDingbats::HeavyNorthWestPointingVineLeaf),
-            HEAVY_SOUTH_WEST_POINTING_VINE_LEAF => Ok(OrnamentalDingbats::HeavySouthWestPointingVineLeaf),
-            HEAVY_NORTH_EAST_POINTING_VINE_LEAF => Ok(OrnamentalDingbats::HeavyNorthEastPointingVineLeaf),
-            HEAVY_SOUTH_EAST_POINTING_VINE_LEAF => Ok(OrnamentalDingbats::HeavySouthEastPointingVineLeaf),
-            NORTH_WEST_POINTING_BUD => Ok(OrnamentalDingbats::NorthWestPointingBud),
-            SOUTH_WEST_POINTING_BUD => Ok(OrnamentalDingbats::SouthWestPointingBud),
-            NORTH_EAST_POINTING_BUD => Ok(OrnamentalDingbats::NorthEastPointingBud),
-            SOUTH_EAST_POINTING_BUD => Ok(OrnamentalDingbats::SouthEastPointingBud),
-            HEAVY_NORTH_WEST_POINTING_BUD => Ok(OrnamentalDingbats::HeavyNorthWestPointingBud),
-            HEAVY_SOUTH_WEST_POINTING_BUD => Ok(OrnamentalDingbats::HeavySouthWestPointingBud),
-            HEAVY_NORTH_EAST_POINTING_BUD => Ok(OrnamentalDingbats::HeavyNorthEastPointingBud),
-            HEAVY_SOUTH_EAST_POINTING_BUD => Ok(OrnamentalDingbats::HeavySouthEastPointingBud),
-            HOLLOW_QUILT_SQUARE_ORNAMENT => Ok(OrnamentalDingbats::HollowQuiltSquareOrnament),
-            HOLLOW_QUILT_SQUARE_ORNAMENT_IN_BLACK_SQUARE => Ok(OrnamentalDingbats::HollowQuiltSquareOrnamentInBlackSquare),
-            SOLID_QUILT_SQUARE_ORNAMENT => Ok(OrnamentalDingbats::SolidQuiltSquareOrnament),
-            SOLID_QUILT_SQUARE_ORNAMENT_IN_BLACK_SQUARE => Ok(OrnamentalDingbats::SolidQuiltSquareOrnamentInBlackSquare),
-            LEFTWARDS_ROCKET => Ok(OrnamentalDingbats::LeftwardsRocket),
-            UPWARDS_ROCKET => Ok(OrnamentalDingbats::UpwardsRocket),
-            RIGHTWARDS_ROCKET => Ok(OrnamentalDingbats::RightwardsRocket),
-            DOWNWARDS_ROCKET => Ok(OrnamentalDingbats::DownwardsRocket),
-            SCRIPT_LIGATURE_ET_ORNAMENT => Ok(OrnamentalDingbats::ScriptLigatureEtOrnament),
-            HEAVY_SCRIPT_LIGATURE_ET_ORNAMENT => Ok(OrnamentalDingbats::HeavyScriptLigatureEtOrnament),
-            LIGATURE_OPEN_ET_ORNAMENT => Ok(OrnamentalDingbats::LigatureOpenEtOrnament),
-            HEAVY_LIGATURE_OPEN_ET_ORNAMENT => Ok(OrnamentalDingbats::HeavyLigatureOpenEtOrnament),
-            HEAVY_AMPERSAND_ORNAMENT => Ok(OrnamentalDingbats::HeavyAmpersandOrnament),
-            SWASH_AMPERSAND_ORNAMENT => Ok(OrnamentalDingbats::SwashAmpersandOrnament),
-            SANS_DASH_SERIF_HEAVY_DOUBLE_TURNED_COMMA_QUOTATION_MARK_ORNAMENT => Ok(OrnamentalDingbats::SansDashSerifHeavyDoubleTurnedCommaQuotationMarkOrnament),
-            SANS_DASH_SERIF_HEAVY_DOUBLE_COMMA_QUOTATION_MARK_ORNAMENT => Ok(OrnamentalDingbats::SansDashSerifHeavyDoubleCommaQuotationMarkOrnament),
-            SANS_DASH_SERIF_HEAVY_LOW_DOUBLE_COMMA_QUOTATION_MARK_ORNAMENT => Ok(OrnamentalDingbats::SansDashSerifHeavyLowDoubleCommaQuotationMarkOrnament),
-            HEAVY_INTERROBANG_ORNAMENT => Ok(OrnamentalDingbats::HeavyInterrobangOrnament),
-            SANS_DASH_SERIF_INTERROBANG_ORNAMENT => Ok(OrnamentalDingbats::SansDashSerifInterrobangOrnament),
-            HEAVY_SANS_DASH_SERIF_INTERROBANG_ORNAMENT => Ok(OrnamentalDingbats::HeavySansDashSerifInterrobangOrnament),
-            VERY_HEAVY_SOLIDUS => Ok(OrnamentalDingbats::VeryHeavySolidus),
-            VERY_HEAVY_REVERSE_SOLIDUS => Ok(OrnamentalDingbats::VeryHeavyReverseSolidus),
-            CHECKER_BOARD => Ok(OrnamentalDingbats::CheckerBoard),
+            '🙐' => Ok(OrnamentalDingbats::NorthWestPointingLeaf),
+            '🙑' => Ok(OrnamentalDingbats::SouthWestPointingLeaf),
+            '🙒' => Ok(OrnamentalDingbats::NorthEastPointingLeaf),
+            '🙓' => Ok(OrnamentalDingbats::SouthEastPointingLeaf),
+            '🙔' => Ok(OrnamentalDingbats::TurnedNorthWestPointingLeaf),
+            '🙕' => Ok(OrnamentalDingbats::TurnedSouthWestPointingLeaf),
+            '🙖' => Ok(OrnamentalDingbats::TurnedNorthEastPointingLeaf),
+            '🙗' => Ok(OrnamentalDingbats::TurnedSouthEastPointingLeaf),
+            '🙘' => Ok(OrnamentalDingbats::NorthWestPointingVineLeaf),
+            '🙙' => Ok(OrnamentalDingbats::SouthWestPointingVineLeaf),
+            '🙚' => Ok(OrnamentalDingbats::NorthEastPointingVineLeaf),
+            '🙛' => Ok(OrnamentalDingbats::SouthEastPointingVineLeaf),
+            '🙜' => Ok(OrnamentalDingbats::HeavyNorthWestPointingVineLeaf),
+            '🙝' => Ok(OrnamentalDingbats::HeavySouthWestPointingVineLeaf),
+            '🙞' => Ok(OrnamentalDingbats::HeavyNorthEastPointingVineLeaf),
+            '🙟' => Ok(OrnamentalDingbats::HeavySouthEastPointingVineLeaf),
+            '🙠' => Ok(OrnamentalDingbats::NorthWestPointingBud),
+            '🙡' => Ok(OrnamentalDingbats::SouthWestPointingBud),
+            '🙢' => Ok(OrnamentalDingbats::NorthEastPointingBud),
+            '🙣' => Ok(OrnamentalDingbats::SouthEastPointingBud),
+            '🙤' => Ok(OrnamentalDingbats::HeavyNorthWestPointingBud),
+            '🙥' => Ok(OrnamentalDingbats::HeavySouthWestPointingBud),
+            '🙦' => Ok(OrnamentalDingbats::HeavyNorthEastPointingBud),
+            '🙧' => Ok(OrnamentalDingbats::HeavySouthEastPointingBud),
+            '🙨' => Ok(OrnamentalDingbats::HollowQuiltSquareOrnament),
+            '🙩' => Ok(OrnamentalDingbats::HollowQuiltSquareOrnamentInBlackSquare),
+            '🙪' => Ok(OrnamentalDingbats::SolidQuiltSquareOrnament),
+            '🙫' => Ok(OrnamentalDingbats::SolidQuiltSquareOrnamentInBlackSquare),
+            '🙬' => Ok(OrnamentalDingbats::LeftwardsRocket),
+            '🙭' => Ok(OrnamentalDingbats::UpwardsRocket),
+            '🙮' => Ok(OrnamentalDingbats::RightwardsRocket),
+            '🙯' => Ok(OrnamentalDingbats::DownwardsRocket),
+            '🙰' => Ok(OrnamentalDingbats::ScriptLigatureEtOrnament),
+            '🙱' => Ok(OrnamentalDingbats::HeavyScriptLigatureEtOrnament),
+            '🙲' => Ok(OrnamentalDingbats::LigatureOpenEtOrnament),
+            '🙳' => Ok(OrnamentalDingbats::HeavyLigatureOpenEtOrnament),
+            '🙴' => Ok(OrnamentalDingbats::HeavyAmpersandOrnament),
+            '🙵' => Ok(OrnamentalDingbats::SwashAmpersandOrnament),
+            '🙶' => Ok(OrnamentalDingbats::SansDashSerifHeavyDoubleTurnedCommaQuotationMarkOrnament),
+            '🙷' => Ok(OrnamentalDingbats::SansDashSerifHeavyDoubleCommaQuotationMarkOrnament),
+            '🙸' => Ok(OrnamentalDingbats::SansDashSerifHeavyLowDoubleCommaQuotationMarkOrnament),
+            '🙹' => Ok(OrnamentalDingbats::HeavyInterrobangOrnament),
+            '🙺' => Ok(OrnamentalDingbats::SansDashSerifInterrobangOrnament),
+            '🙻' => Ok(OrnamentalDingbats::HeavySansDashSerifInterrobangOrnament),
+            '🙼' => Ok(OrnamentalDingbats::VeryHeavySolidus),
+            '🙽' => Ok(OrnamentalDingbats::VeryHeavyReverseSolidus),
+            '🙾' => Ok(OrnamentalDingbats::CheckerBoard),
             _ => Err(()),
         }
     }

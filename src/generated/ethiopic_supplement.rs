@@ -1,58 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1380}: 'ᎀ'
-    pub const ETHIOPIC_SYLLABLE_SEBATBEIT_MWA: char = 'ᎀ';
-    /// \u{1381}: 'ᎁ'
-    pub const ETHIOPIC_SYLLABLE_MWI: char = 'ᎁ';
-    /// \u{1382}: 'ᎂ'
-    pub const ETHIOPIC_SYLLABLE_MWEE: char = 'ᎂ';
-    /// \u{1383}: 'ᎃ'
-    pub const ETHIOPIC_SYLLABLE_MWE: char = 'ᎃ';
-    /// \u{1384}: 'ᎄ'
-    pub const ETHIOPIC_SYLLABLE_SEBATBEIT_BWA: char = 'ᎄ';
-    /// \u{1385}: 'ᎅ'
-    pub const ETHIOPIC_SYLLABLE_BWI: char = 'ᎅ';
-    /// \u{1386}: 'ᎆ'
-    pub const ETHIOPIC_SYLLABLE_BWEE: char = 'ᎆ';
-    /// \u{1387}: 'ᎇ'
-    pub const ETHIOPIC_SYLLABLE_BWE: char = 'ᎇ';
-    /// \u{1388}: 'ᎈ'
-    pub const ETHIOPIC_SYLLABLE_SEBATBEIT_FWA: char = 'ᎈ';
-    /// \u{1389}: 'ᎉ'
-    pub const ETHIOPIC_SYLLABLE_FWI: char = 'ᎉ';
-    /// \u{138a}: 'ᎊ'
-    pub const ETHIOPIC_SYLLABLE_FWEE: char = 'ᎊ';
-    /// \u{138b}: 'ᎋ'
-    pub const ETHIOPIC_SYLLABLE_FWE: char = 'ᎋ';
-    /// \u{138c}: 'ᎌ'
-    pub const ETHIOPIC_SYLLABLE_SEBATBEIT_PWA: char = 'ᎌ';
-    /// \u{138d}: 'ᎍ'
-    pub const ETHIOPIC_SYLLABLE_PWI: char = 'ᎍ';
-    /// \u{138e}: 'ᎎ'
-    pub const ETHIOPIC_SYLLABLE_PWEE: char = 'ᎎ';
-    /// \u{138f}: 'ᎏ'
-    pub const ETHIOPIC_SYLLABLE_PWE: char = 'ᎏ';
-    /// \u{1390}: '᎐'
-    pub const ETHIOPIC_TONAL_MARK_YIZET: char = '᎐';
-    /// \u{1391}: '᎑'
-    pub const ETHIOPIC_TONAL_MARK_DERET: char = '᎑';
-    /// \u{1392}: '᎒'
-    pub const ETHIOPIC_TONAL_MARK_RIKRIK: char = '᎒';
-    /// \u{1393}: '᎓'
-    pub const ETHIOPIC_TONAL_MARK_SHORT_RIKRIK: char = '᎓';
-    /// \u{1394}: '᎔'
-    pub const ETHIOPIC_TONAL_MARK_DIFAT: char = '᎔';
-    /// \u{1395}: '᎕'
-    pub const ETHIOPIC_TONAL_MARK_KENAT: char = '᎕';
-    /// \u{1396}: '᎖'
-    pub const ETHIOPIC_TONAL_MARK_CHIRET: char = '᎖';
-    /// \u{1397}: '᎗'
-    pub const ETHIOPIC_TONAL_MARK_HIDET: char = '᎗';
-    /// \u{1398}: '᎘'
-    pub const ETHIOPIC_TONAL_MARK_DERET_DASH_HIDET: char = '᎘';
-    /// \u{1399}: '᎙'
-    pub const ETHIOPIC_TONAL_MARK_KURT: char = '᎙';
-}
 
 /// An enum to represent all characters in the EthiopicSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -113,34 +58,33 @@ pub enum EthiopicSupplement {
 
 impl Into<char> for EthiopicSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            EthiopicSupplement::EthiopicSyllableSebatbeitMwa => ETHIOPIC_SYLLABLE_SEBATBEIT_MWA,
-            EthiopicSupplement::EthiopicSyllableMwi => ETHIOPIC_SYLLABLE_MWI,
-            EthiopicSupplement::EthiopicSyllableMwee => ETHIOPIC_SYLLABLE_MWEE,
-            EthiopicSupplement::EthiopicSyllableMwe => ETHIOPIC_SYLLABLE_MWE,
-            EthiopicSupplement::EthiopicSyllableSebatbeitBwa => ETHIOPIC_SYLLABLE_SEBATBEIT_BWA,
-            EthiopicSupplement::EthiopicSyllableBwi => ETHIOPIC_SYLLABLE_BWI,
-            EthiopicSupplement::EthiopicSyllableBwee => ETHIOPIC_SYLLABLE_BWEE,
-            EthiopicSupplement::EthiopicSyllableBwe => ETHIOPIC_SYLLABLE_BWE,
-            EthiopicSupplement::EthiopicSyllableSebatbeitFwa => ETHIOPIC_SYLLABLE_SEBATBEIT_FWA,
-            EthiopicSupplement::EthiopicSyllableFwi => ETHIOPIC_SYLLABLE_FWI,
-            EthiopicSupplement::EthiopicSyllableFwee => ETHIOPIC_SYLLABLE_FWEE,
-            EthiopicSupplement::EthiopicSyllableFwe => ETHIOPIC_SYLLABLE_FWE,
-            EthiopicSupplement::EthiopicSyllableSebatbeitPwa => ETHIOPIC_SYLLABLE_SEBATBEIT_PWA,
-            EthiopicSupplement::EthiopicSyllablePwi => ETHIOPIC_SYLLABLE_PWI,
-            EthiopicSupplement::EthiopicSyllablePwee => ETHIOPIC_SYLLABLE_PWEE,
-            EthiopicSupplement::EthiopicSyllablePwe => ETHIOPIC_SYLLABLE_PWE,
-            EthiopicSupplement::EthiopicTonalMarkYizet => ETHIOPIC_TONAL_MARK_YIZET,
-            EthiopicSupplement::EthiopicTonalMarkDeret => ETHIOPIC_TONAL_MARK_DERET,
-            EthiopicSupplement::EthiopicTonalMarkRikrik => ETHIOPIC_TONAL_MARK_RIKRIK,
-            EthiopicSupplement::EthiopicTonalMarkShortRikrik => ETHIOPIC_TONAL_MARK_SHORT_RIKRIK,
-            EthiopicSupplement::EthiopicTonalMarkDifat => ETHIOPIC_TONAL_MARK_DIFAT,
-            EthiopicSupplement::EthiopicTonalMarkKenat => ETHIOPIC_TONAL_MARK_KENAT,
-            EthiopicSupplement::EthiopicTonalMarkChiret => ETHIOPIC_TONAL_MARK_CHIRET,
-            EthiopicSupplement::EthiopicTonalMarkHidet => ETHIOPIC_TONAL_MARK_HIDET,
-            EthiopicSupplement::EthiopicTonalMarkDeretDashHidet => ETHIOPIC_TONAL_MARK_DERET_DASH_HIDET,
-            EthiopicSupplement::EthiopicTonalMarkKurt => ETHIOPIC_TONAL_MARK_KURT,
+            EthiopicSupplement::EthiopicSyllableSebatbeitMwa => 'ᎀ',
+            EthiopicSupplement::EthiopicSyllableMwi => 'ᎁ',
+            EthiopicSupplement::EthiopicSyllableMwee => 'ᎂ',
+            EthiopicSupplement::EthiopicSyllableMwe => 'ᎃ',
+            EthiopicSupplement::EthiopicSyllableSebatbeitBwa => 'ᎄ',
+            EthiopicSupplement::EthiopicSyllableBwi => 'ᎅ',
+            EthiopicSupplement::EthiopicSyllableBwee => 'ᎆ',
+            EthiopicSupplement::EthiopicSyllableBwe => 'ᎇ',
+            EthiopicSupplement::EthiopicSyllableSebatbeitFwa => 'ᎈ',
+            EthiopicSupplement::EthiopicSyllableFwi => 'ᎉ',
+            EthiopicSupplement::EthiopicSyllableFwee => 'ᎊ',
+            EthiopicSupplement::EthiopicSyllableFwe => 'ᎋ',
+            EthiopicSupplement::EthiopicSyllableSebatbeitPwa => 'ᎌ',
+            EthiopicSupplement::EthiopicSyllablePwi => 'ᎍ',
+            EthiopicSupplement::EthiopicSyllablePwee => 'ᎎ',
+            EthiopicSupplement::EthiopicSyllablePwe => 'ᎏ',
+            EthiopicSupplement::EthiopicTonalMarkYizet => '᎐',
+            EthiopicSupplement::EthiopicTonalMarkDeret => '᎑',
+            EthiopicSupplement::EthiopicTonalMarkRikrik => '᎒',
+            EthiopicSupplement::EthiopicTonalMarkShortRikrik => '᎓',
+            EthiopicSupplement::EthiopicTonalMarkDifat => '᎔',
+            EthiopicSupplement::EthiopicTonalMarkKenat => '᎕',
+            EthiopicSupplement::EthiopicTonalMarkChiret => '᎖',
+            EthiopicSupplement::EthiopicTonalMarkHidet => '᎗',
+            EthiopicSupplement::EthiopicTonalMarkDeretDashHidet => '᎘',
+            EthiopicSupplement::EthiopicTonalMarkKurt => '᎙',
         }
     }
 }
@@ -148,34 +92,33 @@ impl Into<char> for EthiopicSupplement {
 impl std::convert::TryFrom<char> for EthiopicSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            ETHIOPIC_SYLLABLE_SEBATBEIT_MWA => Ok(EthiopicSupplement::EthiopicSyllableSebatbeitMwa),
-            ETHIOPIC_SYLLABLE_MWI => Ok(EthiopicSupplement::EthiopicSyllableMwi),
-            ETHIOPIC_SYLLABLE_MWEE => Ok(EthiopicSupplement::EthiopicSyllableMwee),
-            ETHIOPIC_SYLLABLE_MWE => Ok(EthiopicSupplement::EthiopicSyllableMwe),
-            ETHIOPIC_SYLLABLE_SEBATBEIT_BWA => Ok(EthiopicSupplement::EthiopicSyllableSebatbeitBwa),
-            ETHIOPIC_SYLLABLE_BWI => Ok(EthiopicSupplement::EthiopicSyllableBwi),
-            ETHIOPIC_SYLLABLE_BWEE => Ok(EthiopicSupplement::EthiopicSyllableBwee),
-            ETHIOPIC_SYLLABLE_BWE => Ok(EthiopicSupplement::EthiopicSyllableBwe),
-            ETHIOPIC_SYLLABLE_SEBATBEIT_FWA => Ok(EthiopicSupplement::EthiopicSyllableSebatbeitFwa),
-            ETHIOPIC_SYLLABLE_FWI => Ok(EthiopicSupplement::EthiopicSyllableFwi),
-            ETHIOPIC_SYLLABLE_FWEE => Ok(EthiopicSupplement::EthiopicSyllableFwee),
-            ETHIOPIC_SYLLABLE_FWE => Ok(EthiopicSupplement::EthiopicSyllableFwe),
-            ETHIOPIC_SYLLABLE_SEBATBEIT_PWA => Ok(EthiopicSupplement::EthiopicSyllableSebatbeitPwa),
-            ETHIOPIC_SYLLABLE_PWI => Ok(EthiopicSupplement::EthiopicSyllablePwi),
-            ETHIOPIC_SYLLABLE_PWEE => Ok(EthiopicSupplement::EthiopicSyllablePwee),
-            ETHIOPIC_SYLLABLE_PWE => Ok(EthiopicSupplement::EthiopicSyllablePwe),
-            ETHIOPIC_TONAL_MARK_YIZET => Ok(EthiopicSupplement::EthiopicTonalMarkYizet),
-            ETHIOPIC_TONAL_MARK_DERET => Ok(EthiopicSupplement::EthiopicTonalMarkDeret),
-            ETHIOPIC_TONAL_MARK_RIKRIK => Ok(EthiopicSupplement::EthiopicTonalMarkRikrik),
-            ETHIOPIC_TONAL_MARK_SHORT_RIKRIK => Ok(EthiopicSupplement::EthiopicTonalMarkShortRikrik),
-            ETHIOPIC_TONAL_MARK_DIFAT => Ok(EthiopicSupplement::EthiopicTonalMarkDifat),
-            ETHIOPIC_TONAL_MARK_KENAT => Ok(EthiopicSupplement::EthiopicTonalMarkKenat),
-            ETHIOPIC_TONAL_MARK_CHIRET => Ok(EthiopicSupplement::EthiopicTonalMarkChiret),
-            ETHIOPIC_TONAL_MARK_HIDET => Ok(EthiopicSupplement::EthiopicTonalMarkHidet),
-            ETHIOPIC_TONAL_MARK_DERET_DASH_HIDET => Ok(EthiopicSupplement::EthiopicTonalMarkDeretDashHidet),
-            ETHIOPIC_TONAL_MARK_KURT => Ok(EthiopicSupplement::EthiopicTonalMarkKurt),
+            'ᎀ' => Ok(EthiopicSupplement::EthiopicSyllableSebatbeitMwa),
+            'ᎁ' => Ok(EthiopicSupplement::EthiopicSyllableMwi),
+            'ᎂ' => Ok(EthiopicSupplement::EthiopicSyllableMwee),
+            'ᎃ' => Ok(EthiopicSupplement::EthiopicSyllableMwe),
+            'ᎄ' => Ok(EthiopicSupplement::EthiopicSyllableSebatbeitBwa),
+            'ᎅ' => Ok(EthiopicSupplement::EthiopicSyllableBwi),
+            'ᎆ' => Ok(EthiopicSupplement::EthiopicSyllableBwee),
+            'ᎇ' => Ok(EthiopicSupplement::EthiopicSyllableBwe),
+            'ᎈ' => Ok(EthiopicSupplement::EthiopicSyllableSebatbeitFwa),
+            'ᎉ' => Ok(EthiopicSupplement::EthiopicSyllableFwi),
+            'ᎊ' => Ok(EthiopicSupplement::EthiopicSyllableFwee),
+            'ᎋ' => Ok(EthiopicSupplement::EthiopicSyllableFwe),
+            'ᎌ' => Ok(EthiopicSupplement::EthiopicSyllableSebatbeitPwa),
+            'ᎍ' => Ok(EthiopicSupplement::EthiopicSyllablePwi),
+            'ᎎ' => Ok(EthiopicSupplement::EthiopicSyllablePwee),
+            'ᎏ' => Ok(EthiopicSupplement::EthiopicSyllablePwe),
+            '᎐' => Ok(EthiopicSupplement::EthiopicTonalMarkYizet),
+            '᎑' => Ok(EthiopicSupplement::EthiopicTonalMarkDeret),
+            '᎒' => Ok(EthiopicSupplement::EthiopicTonalMarkRikrik),
+            '᎓' => Ok(EthiopicSupplement::EthiopicTonalMarkShortRikrik),
+            '᎔' => Ok(EthiopicSupplement::EthiopicTonalMarkDifat),
+            '᎕' => Ok(EthiopicSupplement::EthiopicTonalMarkKenat),
+            '᎖' => Ok(EthiopicSupplement::EthiopicTonalMarkChiret),
+            '᎗' => Ok(EthiopicSupplement::EthiopicTonalMarkHidet),
+            '᎘' => Ok(EthiopicSupplement::EthiopicTonalMarkDeretDashHidet),
+            '᎙' => Ok(EthiopicSupplement::EthiopicTonalMarkKurt),
             _ => Err(()),
         }
     }

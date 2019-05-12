@@ -1,46 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{111e1}: '𑇡'
-    pub const SINHALA_ARCHAIC_DIGIT_ONE: char = '𑇡';
-    /// \u{111e2}: '𑇢'
-    pub const SINHALA_ARCHAIC_DIGIT_TWO: char = '𑇢';
-    /// \u{111e3}: '𑇣'
-    pub const SINHALA_ARCHAIC_DIGIT_THREE: char = '𑇣';
-    /// \u{111e4}: '𑇤'
-    pub const SINHALA_ARCHAIC_DIGIT_FOUR: char = '𑇤';
-    /// \u{111e5}: '𑇥'
-    pub const SINHALA_ARCHAIC_DIGIT_FIVE: char = '𑇥';
-    /// \u{111e6}: '𑇦'
-    pub const SINHALA_ARCHAIC_DIGIT_SIX: char = '𑇦';
-    /// \u{111e7}: '𑇧'
-    pub const SINHALA_ARCHAIC_DIGIT_SEVEN: char = '𑇧';
-    /// \u{111e8}: '𑇨'
-    pub const SINHALA_ARCHAIC_DIGIT_EIGHT: char = '𑇨';
-    /// \u{111e9}: '𑇩'
-    pub const SINHALA_ARCHAIC_DIGIT_NINE: char = '𑇩';
-    /// \u{111ea}: '𑇪'
-    pub const SINHALA_ARCHAIC_NUMBER_TEN: char = '𑇪';
-    /// \u{111eb}: '𑇫'
-    pub const SINHALA_ARCHAIC_NUMBER_TWENTY: char = '𑇫';
-    /// \u{111ec}: '𑇬'
-    pub const SINHALA_ARCHAIC_NUMBER_THIRTY: char = '𑇬';
-    /// \u{111ed}: '𑇭'
-    pub const SINHALA_ARCHAIC_NUMBER_FORTY: char = '𑇭';
-    /// \u{111ee}: '𑇮'
-    pub const SINHALA_ARCHAIC_NUMBER_FIFTY: char = '𑇮';
-    /// \u{111ef}: '𑇯'
-    pub const SINHALA_ARCHAIC_NUMBER_SIXTY: char = '𑇯';
-    /// \u{111f0}: '𑇰'
-    pub const SINHALA_ARCHAIC_NUMBER_SEVENTY: char = '𑇰';
-    /// \u{111f1}: '𑇱'
-    pub const SINHALA_ARCHAIC_NUMBER_EIGHTY: char = '𑇱';
-    /// \u{111f2}: '𑇲'
-    pub const SINHALA_ARCHAIC_NUMBER_NINETY: char = '𑇲';
-    /// \u{111f3}: '𑇳'
-    pub const SINHALA_ARCHAIC_NUMBER_ONE_HUNDRED: char = '𑇳';
-    /// \u{111f4}: '𑇴'
-    pub const SINHALA_ARCHAIC_NUMBER_ONE_THOUSAND: char = '𑇴';
-}
 
 /// An enum to represent all characters in the SinhalaArchaicNumbers block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -89,28 +46,27 @@ pub enum SinhalaArchaicNumbers {
 
 impl Into<char> for SinhalaArchaicNumbers {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SinhalaArchaicNumbers::SinhalaArchaicDigitOne => SINHALA_ARCHAIC_DIGIT_ONE,
-            SinhalaArchaicNumbers::SinhalaArchaicDigitTwo => SINHALA_ARCHAIC_DIGIT_TWO,
-            SinhalaArchaicNumbers::SinhalaArchaicDigitThree => SINHALA_ARCHAIC_DIGIT_THREE,
-            SinhalaArchaicNumbers::SinhalaArchaicDigitFour => SINHALA_ARCHAIC_DIGIT_FOUR,
-            SinhalaArchaicNumbers::SinhalaArchaicDigitFive => SINHALA_ARCHAIC_DIGIT_FIVE,
-            SinhalaArchaicNumbers::SinhalaArchaicDigitSix => SINHALA_ARCHAIC_DIGIT_SIX,
-            SinhalaArchaicNumbers::SinhalaArchaicDigitSeven => SINHALA_ARCHAIC_DIGIT_SEVEN,
-            SinhalaArchaicNumbers::SinhalaArchaicDigitEight => SINHALA_ARCHAIC_DIGIT_EIGHT,
-            SinhalaArchaicNumbers::SinhalaArchaicDigitNine => SINHALA_ARCHAIC_DIGIT_NINE,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberTen => SINHALA_ARCHAIC_NUMBER_TEN,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberTwenty => SINHALA_ARCHAIC_NUMBER_TWENTY,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberThirty => SINHALA_ARCHAIC_NUMBER_THIRTY,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberForty => SINHALA_ARCHAIC_NUMBER_FORTY,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberFifty => SINHALA_ARCHAIC_NUMBER_FIFTY,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberSixty => SINHALA_ARCHAIC_NUMBER_SIXTY,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberSeventy => SINHALA_ARCHAIC_NUMBER_SEVENTY,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberEighty => SINHALA_ARCHAIC_NUMBER_EIGHTY,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberNinety => SINHALA_ARCHAIC_NUMBER_NINETY,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberOneHundred => SINHALA_ARCHAIC_NUMBER_ONE_HUNDRED,
-            SinhalaArchaicNumbers::SinhalaArchaicNumberOneThousand => SINHALA_ARCHAIC_NUMBER_ONE_THOUSAND,
+            SinhalaArchaicNumbers::SinhalaArchaicDigitOne => '𑇡',
+            SinhalaArchaicNumbers::SinhalaArchaicDigitTwo => '𑇢',
+            SinhalaArchaicNumbers::SinhalaArchaicDigitThree => '𑇣',
+            SinhalaArchaicNumbers::SinhalaArchaicDigitFour => '𑇤',
+            SinhalaArchaicNumbers::SinhalaArchaicDigitFive => '𑇥',
+            SinhalaArchaicNumbers::SinhalaArchaicDigitSix => '𑇦',
+            SinhalaArchaicNumbers::SinhalaArchaicDigitSeven => '𑇧',
+            SinhalaArchaicNumbers::SinhalaArchaicDigitEight => '𑇨',
+            SinhalaArchaicNumbers::SinhalaArchaicDigitNine => '𑇩',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberTen => '𑇪',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberTwenty => '𑇫',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberThirty => '𑇬',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberForty => '𑇭',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberFifty => '𑇮',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberSixty => '𑇯',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberSeventy => '𑇰',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberEighty => '𑇱',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberNinety => '𑇲',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberOneHundred => '𑇳',
+            SinhalaArchaicNumbers::SinhalaArchaicNumberOneThousand => '𑇴',
         }
     }
 }
@@ -118,28 +74,27 @@ impl Into<char> for SinhalaArchaicNumbers {
 impl std::convert::TryFrom<char> for SinhalaArchaicNumbers {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SINHALA_ARCHAIC_DIGIT_ONE => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitOne),
-            SINHALA_ARCHAIC_DIGIT_TWO => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitTwo),
-            SINHALA_ARCHAIC_DIGIT_THREE => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitThree),
-            SINHALA_ARCHAIC_DIGIT_FOUR => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitFour),
-            SINHALA_ARCHAIC_DIGIT_FIVE => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitFive),
-            SINHALA_ARCHAIC_DIGIT_SIX => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitSix),
-            SINHALA_ARCHAIC_DIGIT_SEVEN => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitSeven),
-            SINHALA_ARCHAIC_DIGIT_EIGHT => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitEight),
-            SINHALA_ARCHAIC_DIGIT_NINE => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitNine),
-            SINHALA_ARCHAIC_NUMBER_TEN => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberTen),
-            SINHALA_ARCHAIC_NUMBER_TWENTY => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberTwenty),
-            SINHALA_ARCHAIC_NUMBER_THIRTY => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberThirty),
-            SINHALA_ARCHAIC_NUMBER_FORTY => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberForty),
-            SINHALA_ARCHAIC_NUMBER_FIFTY => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberFifty),
-            SINHALA_ARCHAIC_NUMBER_SIXTY => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberSixty),
-            SINHALA_ARCHAIC_NUMBER_SEVENTY => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberSeventy),
-            SINHALA_ARCHAIC_NUMBER_EIGHTY => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberEighty),
-            SINHALA_ARCHAIC_NUMBER_NINETY => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberNinety),
-            SINHALA_ARCHAIC_NUMBER_ONE_HUNDRED => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberOneHundred),
-            SINHALA_ARCHAIC_NUMBER_ONE_THOUSAND => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberOneThousand),
+            '𑇡' => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitOne),
+            '𑇢' => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitTwo),
+            '𑇣' => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitThree),
+            '𑇤' => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitFour),
+            '𑇥' => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitFive),
+            '𑇦' => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitSix),
+            '𑇧' => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitSeven),
+            '𑇨' => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitEight),
+            '𑇩' => Ok(SinhalaArchaicNumbers::SinhalaArchaicDigitNine),
+            '𑇪' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberTen),
+            '𑇫' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberTwenty),
+            '𑇬' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberThirty),
+            '𑇭' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberForty),
+            '𑇮' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberFifty),
+            '𑇯' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberSixty),
+            '𑇰' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberSeventy),
+            '𑇱' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberEighty),
+            '𑇲' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberNinety),
+            '𑇳' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberOneHundred),
+            '𑇴' => Ok(SinhalaArchaicNumbers::SinhalaArchaicNumberOneThousand),
             _ => Err(()),
         }
     }

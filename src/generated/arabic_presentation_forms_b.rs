@@ -1,286 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{fe70}: 'ﹰ'
-    pub const ARABIC_FATHATAN_ISOLATED_FORM: char = 'ﹰ';
-    /// \u{fe71}: 'ﹱ'
-    pub const ARABIC_TATWEEL_WITH_FATHATAN_ABOVE: char = 'ﹱ';
-    /// \u{fe72}: 'ﹲ'
-    pub const ARABIC_DAMMATAN_ISOLATED_FORM: char = 'ﹲ';
-    /// \u{fe73}: 'ﹳ'
-    pub const ARABIC_TAIL_FRAGMENT: char = 'ﹳ';
-    /// \u{fe74}: 'ﹴ'
-    pub const ARABIC_KASRATAN_ISOLATED_FORM: char = 'ﹴ';
-    /// \u{fe76}: 'ﹶ'
-    pub const ARABIC_FATHA_ISOLATED_FORM: char = 'ﹶ';
-    /// \u{fe77}: 'ﹷ'
-    pub const ARABIC_FATHA_MEDIAL_FORM: char = 'ﹷ';
-    /// \u{fe78}: 'ﹸ'
-    pub const ARABIC_DAMMA_ISOLATED_FORM: char = 'ﹸ';
-    /// \u{fe79}: 'ﹹ'
-    pub const ARABIC_DAMMA_MEDIAL_FORM: char = 'ﹹ';
-    /// \u{fe7a}: 'ﹺ'
-    pub const ARABIC_KASRA_ISOLATED_FORM: char = 'ﹺ';
-    /// \u{fe7b}: 'ﹻ'
-    pub const ARABIC_KASRA_MEDIAL_FORM: char = 'ﹻ';
-    /// \u{fe7c}: 'ﹼ'
-    pub const ARABIC_SHADDA_ISOLATED_FORM: char = 'ﹼ';
-    /// \u{fe7d}: 'ﹽ'
-    pub const ARABIC_SHADDA_MEDIAL_FORM: char = 'ﹽ';
-    /// \u{fe7e}: 'ﹾ'
-    pub const ARABIC_SUKUN_ISOLATED_FORM: char = 'ﹾ';
-    /// \u{fe7f}: 'ﹿ'
-    pub const ARABIC_SUKUN_MEDIAL_FORM: char = 'ﹿ';
-    /// \u{fe80}: 'ﺀ'
-    pub const ARABIC_LETTER_HAMZA_ISOLATED_FORM: char = 'ﺀ';
-    /// \u{fe81}: 'ﺁ'
-    pub const ARABIC_LETTER_ALEF_WITH_MADDA_ABOVE_ISOLATED_FORM: char = 'ﺁ';
-    /// \u{fe82}: 'ﺂ'
-    pub const ARABIC_LETTER_ALEF_WITH_MADDA_ABOVE_FINAL_FORM: char = 'ﺂ';
-    /// \u{fe83}: 'ﺃ'
-    pub const ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE_ISOLATED_FORM: char = 'ﺃ';
-    /// \u{fe84}: 'ﺄ'
-    pub const ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE_FINAL_FORM: char = 'ﺄ';
-    /// \u{fe85}: 'ﺅ'
-    pub const ARABIC_LETTER_WAW_WITH_HAMZA_ABOVE_ISOLATED_FORM: char = 'ﺅ';
-    /// \u{fe86}: 'ﺆ'
-    pub const ARABIC_LETTER_WAW_WITH_HAMZA_ABOVE_FINAL_FORM: char = 'ﺆ';
-    /// \u{fe87}: 'ﺇ'
-    pub const ARABIC_LETTER_ALEF_WITH_HAMZA_BELOW_ISOLATED_FORM: char = 'ﺇ';
-    /// \u{fe88}: 'ﺈ'
-    pub const ARABIC_LETTER_ALEF_WITH_HAMZA_BELOW_FINAL_FORM: char = 'ﺈ';
-    /// \u{fe89}: 'ﺉ'
-    pub const ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_ISOLATED_FORM: char = 'ﺉ';
-    /// \u{fe8a}: 'ﺊ'
-    pub const ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_FINAL_FORM: char = 'ﺊ';
-    /// \u{fe8b}: 'ﺋ'
-    pub const ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_INITIAL_FORM: char = 'ﺋ';
-    /// \u{fe8c}: 'ﺌ'
-    pub const ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_MEDIAL_FORM: char = 'ﺌ';
-    /// \u{fe8d}: 'ﺍ'
-    pub const ARABIC_LETTER_ALEF_ISOLATED_FORM: char = 'ﺍ';
-    /// \u{fe8e}: 'ﺎ'
-    pub const ARABIC_LETTER_ALEF_FINAL_FORM: char = 'ﺎ';
-    /// \u{fe8f}: 'ﺏ'
-    pub const ARABIC_LETTER_BEH_ISOLATED_FORM: char = 'ﺏ';
-    /// \u{fe90}: 'ﺐ'
-    pub const ARABIC_LETTER_BEH_FINAL_FORM: char = 'ﺐ';
-    /// \u{fe91}: 'ﺑ'
-    pub const ARABIC_LETTER_BEH_INITIAL_FORM: char = 'ﺑ';
-    /// \u{fe92}: 'ﺒ'
-    pub const ARABIC_LETTER_BEH_MEDIAL_FORM: char = 'ﺒ';
-    /// \u{fe93}: 'ﺓ'
-    pub const ARABIC_LETTER_TEH_MARBUTA_ISOLATED_FORM: char = 'ﺓ';
-    /// \u{fe94}: 'ﺔ'
-    pub const ARABIC_LETTER_TEH_MARBUTA_FINAL_FORM: char = 'ﺔ';
-    /// \u{fe95}: 'ﺕ'
-    pub const ARABIC_LETTER_TEH_ISOLATED_FORM: char = 'ﺕ';
-    /// \u{fe96}: 'ﺖ'
-    pub const ARABIC_LETTER_TEH_FINAL_FORM: char = 'ﺖ';
-    /// \u{fe97}: 'ﺗ'
-    pub const ARABIC_LETTER_TEH_INITIAL_FORM: char = 'ﺗ';
-    /// \u{fe98}: 'ﺘ'
-    pub const ARABIC_LETTER_TEH_MEDIAL_FORM: char = 'ﺘ';
-    /// \u{fe99}: 'ﺙ'
-    pub const ARABIC_LETTER_THEH_ISOLATED_FORM: char = 'ﺙ';
-    /// \u{fe9a}: 'ﺚ'
-    pub const ARABIC_LETTER_THEH_FINAL_FORM: char = 'ﺚ';
-    /// \u{fe9b}: 'ﺛ'
-    pub const ARABIC_LETTER_THEH_INITIAL_FORM: char = 'ﺛ';
-    /// \u{fe9c}: 'ﺜ'
-    pub const ARABIC_LETTER_THEH_MEDIAL_FORM: char = 'ﺜ';
-    /// \u{fe9d}: 'ﺝ'
-    pub const ARABIC_LETTER_JEEM_ISOLATED_FORM: char = 'ﺝ';
-    /// \u{fe9e}: 'ﺞ'
-    pub const ARABIC_LETTER_JEEM_FINAL_FORM: char = 'ﺞ';
-    /// \u{fe9f}: 'ﺟ'
-    pub const ARABIC_LETTER_JEEM_INITIAL_FORM: char = 'ﺟ';
-    /// \u{fea0}: 'ﺠ'
-    pub const ARABIC_LETTER_JEEM_MEDIAL_FORM: char = 'ﺠ';
-    /// \u{fea1}: 'ﺡ'
-    pub const ARABIC_LETTER_HAH_ISOLATED_FORM: char = 'ﺡ';
-    /// \u{fea2}: 'ﺢ'
-    pub const ARABIC_LETTER_HAH_FINAL_FORM: char = 'ﺢ';
-    /// \u{fea3}: 'ﺣ'
-    pub const ARABIC_LETTER_HAH_INITIAL_FORM: char = 'ﺣ';
-    /// \u{fea4}: 'ﺤ'
-    pub const ARABIC_LETTER_HAH_MEDIAL_FORM: char = 'ﺤ';
-    /// \u{fea5}: 'ﺥ'
-    pub const ARABIC_LETTER_KHAH_ISOLATED_FORM: char = 'ﺥ';
-    /// \u{fea6}: 'ﺦ'
-    pub const ARABIC_LETTER_KHAH_FINAL_FORM: char = 'ﺦ';
-    /// \u{fea7}: 'ﺧ'
-    pub const ARABIC_LETTER_KHAH_INITIAL_FORM: char = 'ﺧ';
-    /// \u{fea8}: 'ﺨ'
-    pub const ARABIC_LETTER_KHAH_MEDIAL_FORM: char = 'ﺨ';
-    /// \u{fea9}: 'ﺩ'
-    pub const ARABIC_LETTER_DAL_ISOLATED_FORM: char = 'ﺩ';
-    /// \u{feaa}: 'ﺪ'
-    pub const ARABIC_LETTER_DAL_FINAL_FORM: char = 'ﺪ';
-    /// \u{feab}: 'ﺫ'
-    pub const ARABIC_LETTER_THAL_ISOLATED_FORM: char = 'ﺫ';
-    /// \u{feac}: 'ﺬ'
-    pub const ARABIC_LETTER_THAL_FINAL_FORM: char = 'ﺬ';
-    /// \u{fead}: 'ﺭ'
-    pub const ARABIC_LETTER_REH_ISOLATED_FORM: char = 'ﺭ';
-    /// \u{feae}: 'ﺮ'
-    pub const ARABIC_LETTER_REH_FINAL_FORM: char = 'ﺮ';
-    /// \u{feaf}: 'ﺯ'
-    pub const ARABIC_LETTER_ZAIN_ISOLATED_FORM: char = 'ﺯ';
-    /// \u{feb0}: 'ﺰ'
-    pub const ARABIC_LETTER_ZAIN_FINAL_FORM: char = 'ﺰ';
-    /// \u{feb1}: 'ﺱ'
-    pub const ARABIC_LETTER_SEEN_ISOLATED_FORM: char = 'ﺱ';
-    /// \u{feb2}: 'ﺲ'
-    pub const ARABIC_LETTER_SEEN_FINAL_FORM: char = 'ﺲ';
-    /// \u{feb3}: 'ﺳ'
-    pub const ARABIC_LETTER_SEEN_INITIAL_FORM: char = 'ﺳ';
-    /// \u{feb4}: 'ﺴ'
-    pub const ARABIC_LETTER_SEEN_MEDIAL_FORM: char = 'ﺴ';
-    /// \u{feb5}: 'ﺵ'
-    pub const ARABIC_LETTER_SHEEN_ISOLATED_FORM: char = 'ﺵ';
-    /// \u{feb6}: 'ﺶ'
-    pub const ARABIC_LETTER_SHEEN_FINAL_FORM: char = 'ﺶ';
-    /// \u{feb7}: 'ﺷ'
-    pub const ARABIC_LETTER_SHEEN_INITIAL_FORM: char = 'ﺷ';
-    /// \u{feb8}: 'ﺸ'
-    pub const ARABIC_LETTER_SHEEN_MEDIAL_FORM: char = 'ﺸ';
-    /// \u{feb9}: 'ﺹ'
-    pub const ARABIC_LETTER_SAD_ISOLATED_FORM: char = 'ﺹ';
-    /// \u{feba}: 'ﺺ'
-    pub const ARABIC_LETTER_SAD_FINAL_FORM: char = 'ﺺ';
-    /// \u{febb}: 'ﺻ'
-    pub const ARABIC_LETTER_SAD_INITIAL_FORM: char = 'ﺻ';
-    /// \u{febc}: 'ﺼ'
-    pub const ARABIC_LETTER_SAD_MEDIAL_FORM: char = 'ﺼ';
-    /// \u{febd}: 'ﺽ'
-    pub const ARABIC_LETTER_DAD_ISOLATED_FORM: char = 'ﺽ';
-    /// \u{febe}: 'ﺾ'
-    pub const ARABIC_LETTER_DAD_FINAL_FORM: char = 'ﺾ';
-    /// \u{febf}: 'ﺿ'
-    pub const ARABIC_LETTER_DAD_INITIAL_FORM: char = 'ﺿ';
-    /// \u{fec0}: 'ﻀ'
-    pub const ARABIC_LETTER_DAD_MEDIAL_FORM: char = 'ﻀ';
-    /// \u{fec1}: 'ﻁ'
-    pub const ARABIC_LETTER_TAH_ISOLATED_FORM: char = 'ﻁ';
-    /// \u{fec2}: 'ﻂ'
-    pub const ARABIC_LETTER_TAH_FINAL_FORM: char = 'ﻂ';
-    /// \u{fec3}: 'ﻃ'
-    pub const ARABIC_LETTER_TAH_INITIAL_FORM: char = 'ﻃ';
-    /// \u{fec4}: 'ﻄ'
-    pub const ARABIC_LETTER_TAH_MEDIAL_FORM: char = 'ﻄ';
-    /// \u{fec5}: 'ﻅ'
-    pub const ARABIC_LETTER_ZAH_ISOLATED_FORM: char = 'ﻅ';
-    /// \u{fec6}: 'ﻆ'
-    pub const ARABIC_LETTER_ZAH_FINAL_FORM: char = 'ﻆ';
-    /// \u{fec7}: 'ﻇ'
-    pub const ARABIC_LETTER_ZAH_INITIAL_FORM: char = 'ﻇ';
-    /// \u{fec8}: 'ﻈ'
-    pub const ARABIC_LETTER_ZAH_MEDIAL_FORM: char = 'ﻈ';
-    /// \u{fec9}: 'ﻉ'
-    pub const ARABIC_LETTER_AIN_ISOLATED_FORM: char = 'ﻉ';
-    /// \u{feca}: 'ﻊ'
-    pub const ARABIC_LETTER_AIN_FINAL_FORM: char = 'ﻊ';
-    /// \u{fecb}: 'ﻋ'
-    pub const ARABIC_LETTER_AIN_INITIAL_FORM: char = 'ﻋ';
-    /// \u{fecc}: 'ﻌ'
-    pub const ARABIC_LETTER_AIN_MEDIAL_FORM: char = 'ﻌ';
-    /// \u{fecd}: 'ﻍ'
-    pub const ARABIC_LETTER_GHAIN_ISOLATED_FORM: char = 'ﻍ';
-    /// \u{fece}: 'ﻎ'
-    pub const ARABIC_LETTER_GHAIN_FINAL_FORM: char = 'ﻎ';
-    /// \u{fecf}: 'ﻏ'
-    pub const ARABIC_LETTER_GHAIN_INITIAL_FORM: char = 'ﻏ';
-    /// \u{fed0}: 'ﻐ'
-    pub const ARABIC_LETTER_GHAIN_MEDIAL_FORM: char = 'ﻐ';
-    /// \u{fed1}: 'ﻑ'
-    pub const ARABIC_LETTER_FEH_ISOLATED_FORM: char = 'ﻑ';
-    /// \u{fed2}: 'ﻒ'
-    pub const ARABIC_LETTER_FEH_FINAL_FORM: char = 'ﻒ';
-    /// \u{fed3}: 'ﻓ'
-    pub const ARABIC_LETTER_FEH_INITIAL_FORM: char = 'ﻓ';
-    /// \u{fed4}: 'ﻔ'
-    pub const ARABIC_LETTER_FEH_MEDIAL_FORM: char = 'ﻔ';
-    /// \u{fed5}: 'ﻕ'
-    pub const ARABIC_LETTER_QAF_ISOLATED_FORM: char = 'ﻕ';
-    /// \u{fed6}: 'ﻖ'
-    pub const ARABIC_LETTER_QAF_FINAL_FORM: char = 'ﻖ';
-    /// \u{fed7}: 'ﻗ'
-    pub const ARABIC_LETTER_QAF_INITIAL_FORM: char = 'ﻗ';
-    /// \u{fed8}: 'ﻘ'
-    pub const ARABIC_LETTER_QAF_MEDIAL_FORM: char = 'ﻘ';
-    /// \u{fed9}: 'ﻙ'
-    pub const ARABIC_LETTER_KAF_ISOLATED_FORM: char = 'ﻙ';
-    /// \u{feda}: 'ﻚ'
-    pub const ARABIC_LETTER_KAF_FINAL_FORM: char = 'ﻚ';
-    /// \u{fedb}: 'ﻛ'
-    pub const ARABIC_LETTER_KAF_INITIAL_FORM: char = 'ﻛ';
-    /// \u{fedc}: 'ﻜ'
-    pub const ARABIC_LETTER_KAF_MEDIAL_FORM: char = 'ﻜ';
-    /// \u{fedd}: 'ﻝ'
-    pub const ARABIC_LETTER_LAM_ISOLATED_FORM: char = 'ﻝ';
-    /// \u{fede}: 'ﻞ'
-    pub const ARABIC_LETTER_LAM_FINAL_FORM: char = 'ﻞ';
-    /// \u{fedf}: 'ﻟ'
-    pub const ARABIC_LETTER_LAM_INITIAL_FORM: char = 'ﻟ';
-    /// \u{fee0}: 'ﻠ'
-    pub const ARABIC_LETTER_LAM_MEDIAL_FORM: char = 'ﻠ';
-    /// \u{fee1}: 'ﻡ'
-    pub const ARABIC_LETTER_MEEM_ISOLATED_FORM: char = 'ﻡ';
-    /// \u{fee2}: 'ﻢ'
-    pub const ARABIC_LETTER_MEEM_FINAL_FORM: char = 'ﻢ';
-    /// \u{fee3}: 'ﻣ'
-    pub const ARABIC_LETTER_MEEM_INITIAL_FORM: char = 'ﻣ';
-    /// \u{fee4}: 'ﻤ'
-    pub const ARABIC_LETTER_MEEM_MEDIAL_FORM: char = 'ﻤ';
-    /// \u{fee5}: 'ﻥ'
-    pub const ARABIC_LETTER_NOON_ISOLATED_FORM: char = 'ﻥ';
-    /// \u{fee6}: 'ﻦ'
-    pub const ARABIC_LETTER_NOON_FINAL_FORM: char = 'ﻦ';
-    /// \u{fee7}: 'ﻧ'
-    pub const ARABIC_LETTER_NOON_INITIAL_FORM: char = 'ﻧ';
-    /// \u{fee8}: 'ﻨ'
-    pub const ARABIC_LETTER_NOON_MEDIAL_FORM: char = 'ﻨ';
-    /// \u{fee9}: 'ﻩ'
-    pub const ARABIC_LETTER_HEH_ISOLATED_FORM: char = 'ﻩ';
-    /// \u{feea}: 'ﻪ'
-    pub const ARABIC_LETTER_HEH_FINAL_FORM: char = 'ﻪ';
-    /// \u{feeb}: 'ﻫ'
-    pub const ARABIC_LETTER_HEH_INITIAL_FORM: char = 'ﻫ';
-    /// \u{feec}: 'ﻬ'
-    pub const ARABIC_LETTER_HEH_MEDIAL_FORM: char = 'ﻬ';
-    /// \u{feed}: 'ﻭ'
-    pub const ARABIC_LETTER_WAW_ISOLATED_FORM: char = 'ﻭ';
-    /// \u{feee}: 'ﻮ'
-    pub const ARABIC_LETTER_WAW_FINAL_FORM: char = 'ﻮ';
-    /// \u{feef}: 'ﻯ'
-    pub const ARABIC_LETTER_ALEF_MAKSURA_ISOLATED_FORM: char = 'ﻯ';
-    /// \u{fef0}: 'ﻰ'
-    pub const ARABIC_LETTER_ALEF_MAKSURA_FINAL_FORM: char = 'ﻰ';
-    /// \u{fef1}: 'ﻱ'
-    pub const ARABIC_LETTER_YEH_ISOLATED_FORM: char = 'ﻱ';
-    /// \u{fef2}: 'ﻲ'
-    pub const ARABIC_LETTER_YEH_FINAL_FORM: char = 'ﻲ';
-    /// \u{fef3}: 'ﻳ'
-    pub const ARABIC_LETTER_YEH_INITIAL_FORM: char = 'ﻳ';
-    /// \u{fef4}: 'ﻴ'
-    pub const ARABIC_LETTER_YEH_MEDIAL_FORM: char = 'ﻴ';
-    /// \u{fef5}: 'ﻵ'
-    pub const ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_MADDA_ABOVE_ISOLATED_FORM: char = 'ﻵ';
-    /// \u{fef6}: 'ﻶ'
-    pub const ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_MADDA_ABOVE_FINAL_FORM: char = 'ﻶ';
-    /// \u{fef7}: 'ﻷ'
-    pub const ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_ABOVE_ISOLATED_FORM: char = 'ﻷ';
-    /// \u{fef8}: 'ﻸ'
-    pub const ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_ABOVE_FINAL_FORM: char = 'ﻸ';
-    /// \u{fef9}: 'ﻹ'
-    pub const ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_BELOW_ISOLATED_FORM: char = 'ﻹ';
-    /// \u{fefa}: 'ﻺ'
-    pub const ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_BELOW_FINAL_FORM: char = 'ﻺ';
-    /// \u{fefb}: 'ﻻ'
-    pub const ARABIC_LIGATURE_LAM_WITH_ALEF_ISOLATED_FORM: char = 'ﻻ';
-    /// \u{fefc}: 'ﻼ'
-    pub const ARABIC_LIGATURE_LAM_WITH_ALEF_FINAL_FORM: char = 'ﻼ';
-}
 
 /// An enum to represent all characters in the ArabicPresentationFormsB block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -569,148 +286,147 @@ pub enum ArabicPresentationFormsB {
 
 impl Into<char> for ArabicPresentationFormsB {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            ArabicPresentationFormsB::ArabicFathatanIsolatedForm => ARABIC_FATHATAN_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicTatweelWithFathatanAbove => ARABIC_TATWEEL_WITH_FATHATAN_ABOVE,
-            ArabicPresentationFormsB::ArabicDammatanIsolatedForm => ARABIC_DAMMATAN_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicTailFragment => ARABIC_TAIL_FRAGMENT,
-            ArabicPresentationFormsB::ArabicKasratanIsolatedForm => ARABIC_KASRATAN_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicFathaIsolatedForm => ARABIC_FATHA_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicFathaMedialForm => ARABIC_FATHA_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicDammaIsolatedForm => ARABIC_DAMMA_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicDammaMedialForm => ARABIC_DAMMA_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicKasraIsolatedForm => ARABIC_KASRA_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicKasraMedialForm => ARABIC_KASRA_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicShaddaIsolatedForm => ARABIC_SHADDA_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicShaddaMedialForm => ARABIC_SHADDA_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicSukunIsolatedForm => ARABIC_SUKUN_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicSukunMedialForm => ARABIC_SUKUN_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterHamzaIsolatedForm => ARABIC_LETTER_HAMZA_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefWithMaddaAboveIsolatedForm => ARABIC_LETTER_ALEF_WITH_MADDA_ABOVE_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefWithMaddaAboveFinalForm => ARABIC_LETTER_ALEF_WITH_MADDA_ABOVE_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefWithHamzaAboveIsolatedForm => ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefWithHamzaAboveFinalForm => ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterWawWithHamzaAboveIsolatedForm => ARABIC_LETTER_WAW_WITH_HAMZA_ABOVE_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterWawWithHamzaAboveFinalForm => ARABIC_LETTER_WAW_WITH_HAMZA_ABOVE_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefWithHamzaBelowIsolatedForm => ARABIC_LETTER_ALEF_WITH_HAMZA_BELOW_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefWithHamzaBelowFinalForm => ARABIC_LETTER_ALEF_WITH_HAMZA_BELOW_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveIsolatedForm => ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveFinalForm => ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveInitialForm => ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveMedialForm => ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefIsolatedForm => ARABIC_LETTER_ALEF_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefFinalForm => ARABIC_LETTER_ALEF_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterBehIsolatedForm => ARABIC_LETTER_BEH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterBehFinalForm => ARABIC_LETTER_BEH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterBehInitialForm => ARABIC_LETTER_BEH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterBehMedialForm => ARABIC_LETTER_BEH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterTehMarbutaIsolatedForm => ARABIC_LETTER_TEH_MARBUTA_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterTehMarbutaFinalForm => ARABIC_LETTER_TEH_MARBUTA_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterTehIsolatedForm => ARABIC_LETTER_TEH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterTehFinalForm => ARABIC_LETTER_TEH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterTehInitialForm => ARABIC_LETTER_TEH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterTehMedialForm => ARABIC_LETTER_TEH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterThehIsolatedForm => ARABIC_LETTER_THEH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterThehFinalForm => ARABIC_LETTER_THEH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterThehInitialForm => ARABIC_LETTER_THEH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterThehMedialForm => ARABIC_LETTER_THEH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterJeemIsolatedForm => ARABIC_LETTER_JEEM_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterJeemFinalForm => ARABIC_LETTER_JEEM_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterJeemInitialForm => ARABIC_LETTER_JEEM_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterJeemMedialForm => ARABIC_LETTER_JEEM_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterHahIsolatedForm => ARABIC_LETTER_HAH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterHahFinalForm => ARABIC_LETTER_HAH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterHahInitialForm => ARABIC_LETTER_HAH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterHahMedialForm => ARABIC_LETTER_HAH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterKhahIsolatedForm => ARABIC_LETTER_KHAH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterKhahFinalForm => ARABIC_LETTER_KHAH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterKhahInitialForm => ARABIC_LETTER_KHAH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterKhahMedialForm => ARABIC_LETTER_KHAH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterDalIsolatedForm => ARABIC_LETTER_DAL_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterDalFinalForm => ARABIC_LETTER_DAL_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterThalIsolatedForm => ARABIC_LETTER_THAL_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterThalFinalForm => ARABIC_LETTER_THAL_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterRehIsolatedForm => ARABIC_LETTER_REH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterRehFinalForm => ARABIC_LETTER_REH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterZainIsolatedForm => ARABIC_LETTER_ZAIN_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterZainFinalForm => ARABIC_LETTER_ZAIN_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterSeenIsolatedForm => ARABIC_LETTER_SEEN_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterSeenFinalForm => ARABIC_LETTER_SEEN_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterSeenInitialForm => ARABIC_LETTER_SEEN_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterSeenMedialForm => ARABIC_LETTER_SEEN_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterSheenIsolatedForm => ARABIC_LETTER_SHEEN_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterSheenFinalForm => ARABIC_LETTER_SHEEN_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterSheenInitialForm => ARABIC_LETTER_SHEEN_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterSheenMedialForm => ARABIC_LETTER_SHEEN_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterSadIsolatedForm => ARABIC_LETTER_SAD_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterSadFinalForm => ARABIC_LETTER_SAD_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterSadInitialForm => ARABIC_LETTER_SAD_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterSadMedialForm => ARABIC_LETTER_SAD_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterDadIsolatedForm => ARABIC_LETTER_DAD_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterDadFinalForm => ARABIC_LETTER_DAD_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterDadInitialForm => ARABIC_LETTER_DAD_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterDadMedialForm => ARABIC_LETTER_DAD_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterTahIsolatedForm => ARABIC_LETTER_TAH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterTahFinalForm => ARABIC_LETTER_TAH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterTahInitialForm => ARABIC_LETTER_TAH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterTahMedialForm => ARABIC_LETTER_TAH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterZahIsolatedForm => ARABIC_LETTER_ZAH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterZahFinalForm => ARABIC_LETTER_ZAH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterZahInitialForm => ARABIC_LETTER_ZAH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterZahMedialForm => ARABIC_LETTER_ZAH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterAinIsolatedForm => ARABIC_LETTER_AIN_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterAinFinalForm => ARABIC_LETTER_AIN_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterAinInitialForm => ARABIC_LETTER_AIN_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterAinMedialForm => ARABIC_LETTER_AIN_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterGhainIsolatedForm => ARABIC_LETTER_GHAIN_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterGhainFinalForm => ARABIC_LETTER_GHAIN_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterGhainInitialForm => ARABIC_LETTER_GHAIN_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterGhainMedialForm => ARABIC_LETTER_GHAIN_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterFehIsolatedForm => ARABIC_LETTER_FEH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterFehFinalForm => ARABIC_LETTER_FEH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterFehInitialForm => ARABIC_LETTER_FEH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterFehMedialForm => ARABIC_LETTER_FEH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterQafIsolatedForm => ARABIC_LETTER_QAF_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterQafFinalForm => ARABIC_LETTER_QAF_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterQafInitialForm => ARABIC_LETTER_QAF_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterQafMedialForm => ARABIC_LETTER_QAF_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterKafIsolatedForm => ARABIC_LETTER_KAF_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterKafFinalForm => ARABIC_LETTER_KAF_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterKafInitialForm => ARABIC_LETTER_KAF_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterKafMedialForm => ARABIC_LETTER_KAF_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterLamIsolatedForm => ARABIC_LETTER_LAM_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterLamFinalForm => ARABIC_LETTER_LAM_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterLamInitialForm => ARABIC_LETTER_LAM_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterLamMedialForm => ARABIC_LETTER_LAM_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterMeemIsolatedForm => ARABIC_LETTER_MEEM_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterMeemFinalForm => ARABIC_LETTER_MEEM_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterMeemInitialForm => ARABIC_LETTER_MEEM_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterMeemMedialForm => ARABIC_LETTER_MEEM_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterNoonIsolatedForm => ARABIC_LETTER_NOON_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterNoonFinalForm => ARABIC_LETTER_NOON_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterNoonInitialForm => ARABIC_LETTER_NOON_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterNoonMedialForm => ARABIC_LETTER_NOON_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterHehIsolatedForm => ARABIC_LETTER_HEH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterHehFinalForm => ARABIC_LETTER_HEH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterHehInitialForm => ARABIC_LETTER_HEH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterHehMedialForm => ARABIC_LETTER_HEH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterWawIsolatedForm => ARABIC_LETTER_WAW_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterWawFinalForm => ARABIC_LETTER_WAW_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefMaksuraIsolatedForm => ARABIC_LETTER_ALEF_MAKSURA_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterAlefMaksuraFinalForm => ARABIC_LETTER_ALEF_MAKSURA_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterYehIsolatedForm => ARABIC_LETTER_YEH_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLetterYehFinalForm => ARABIC_LETTER_YEH_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterYehInitialForm => ARABIC_LETTER_YEH_INITIAL_FORM,
-            ArabicPresentationFormsB::ArabicLetterYehMedialForm => ARABIC_LETTER_YEH_MEDIAL_FORM,
-            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithMaddaAboveIsolatedForm => ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_MADDA_ABOVE_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithMaddaAboveFinalForm => ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_MADDA_ABOVE_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaAboveIsolatedForm => ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_ABOVE_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaAboveFinalForm => ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_ABOVE_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaBelowIsolatedForm => ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_BELOW_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaBelowFinalForm => ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_BELOW_FINAL_FORM,
-            ArabicPresentationFormsB::ArabicLigatureLamWithAlefIsolatedForm => ARABIC_LIGATURE_LAM_WITH_ALEF_ISOLATED_FORM,
-            ArabicPresentationFormsB::ArabicLigatureLamWithAlefFinalForm => ARABIC_LIGATURE_LAM_WITH_ALEF_FINAL_FORM,
+            ArabicPresentationFormsB::ArabicFathatanIsolatedForm => 'ﹰ',
+            ArabicPresentationFormsB::ArabicTatweelWithFathatanAbove => 'ﹱ',
+            ArabicPresentationFormsB::ArabicDammatanIsolatedForm => 'ﹲ',
+            ArabicPresentationFormsB::ArabicTailFragment => 'ﹳ',
+            ArabicPresentationFormsB::ArabicKasratanIsolatedForm => 'ﹴ',
+            ArabicPresentationFormsB::ArabicFathaIsolatedForm => 'ﹶ',
+            ArabicPresentationFormsB::ArabicFathaMedialForm => 'ﹷ',
+            ArabicPresentationFormsB::ArabicDammaIsolatedForm => 'ﹸ',
+            ArabicPresentationFormsB::ArabicDammaMedialForm => 'ﹹ',
+            ArabicPresentationFormsB::ArabicKasraIsolatedForm => 'ﹺ',
+            ArabicPresentationFormsB::ArabicKasraMedialForm => 'ﹻ',
+            ArabicPresentationFormsB::ArabicShaddaIsolatedForm => 'ﹼ',
+            ArabicPresentationFormsB::ArabicShaddaMedialForm => 'ﹽ',
+            ArabicPresentationFormsB::ArabicSukunIsolatedForm => 'ﹾ',
+            ArabicPresentationFormsB::ArabicSukunMedialForm => 'ﹿ',
+            ArabicPresentationFormsB::ArabicLetterHamzaIsolatedForm => 'ﺀ',
+            ArabicPresentationFormsB::ArabicLetterAlefWithMaddaAboveIsolatedForm => 'ﺁ',
+            ArabicPresentationFormsB::ArabicLetterAlefWithMaddaAboveFinalForm => 'ﺂ',
+            ArabicPresentationFormsB::ArabicLetterAlefWithHamzaAboveIsolatedForm => 'ﺃ',
+            ArabicPresentationFormsB::ArabicLetterAlefWithHamzaAboveFinalForm => 'ﺄ',
+            ArabicPresentationFormsB::ArabicLetterWawWithHamzaAboveIsolatedForm => 'ﺅ',
+            ArabicPresentationFormsB::ArabicLetterWawWithHamzaAboveFinalForm => 'ﺆ',
+            ArabicPresentationFormsB::ArabicLetterAlefWithHamzaBelowIsolatedForm => 'ﺇ',
+            ArabicPresentationFormsB::ArabicLetterAlefWithHamzaBelowFinalForm => 'ﺈ',
+            ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveIsolatedForm => 'ﺉ',
+            ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveFinalForm => 'ﺊ',
+            ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveInitialForm => 'ﺋ',
+            ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveMedialForm => 'ﺌ',
+            ArabicPresentationFormsB::ArabicLetterAlefIsolatedForm => 'ﺍ',
+            ArabicPresentationFormsB::ArabicLetterAlefFinalForm => 'ﺎ',
+            ArabicPresentationFormsB::ArabicLetterBehIsolatedForm => 'ﺏ',
+            ArabicPresentationFormsB::ArabicLetterBehFinalForm => 'ﺐ',
+            ArabicPresentationFormsB::ArabicLetterBehInitialForm => 'ﺑ',
+            ArabicPresentationFormsB::ArabicLetterBehMedialForm => 'ﺒ',
+            ArabicPresentationFormsB::ArabicLetterTehMarbutaIsolatedForm => 'ﺓ',
+            ArabicPresentationFormsB::ArabicLetterTehMarbutaFinalForm => 'ﺔ',
+            ArabicPresentationFormsB::ArabicLetterTehIsolatedForm => 'ﺕ',
+            ArabicPresentationFormsB::ArabicLetterTehFinalForm => 'ﺖ',
+            ArabicPresentationFormsB::ArabicLetterTehInitialForm => 'ﺗ',
+            ArabicPresentationFormsB::ArabicLetterTehMedialForm => 'ﺘ',
+            ArabicPresentationFormsB::ArabicLetterThehIsolatedForm => 'ﺙ',
+            ArabicPresentationFormsB::ArabicLetterThehFinalForm => 'ﺚ',
+            ArabicPresentationFormsB::ArabicLetterThehInitialForm => 'ﺛ',
+            ArabicPresentationFormsB::ArabicLetterThehMedialForm => 'ﺜ',
+            ArabicPresentationFormsB::ArabicLetterJeemIsolatedForm => 'ﺝ',
+            ArabicPresentationFormsB::ArabicLetterJeemFinalForm => 'ﺞ',
+            ArabicPresentationFormsB::ArabicLetterJeemInitialForm => 'ﺟ',
+            ArabicPresentationFormsB::ArabicLetterJeemMedialForm => 'ﺠ',
+            ArabicPresentationFormsB::ArabicLetterHahIsolatedForm => 'ﺡ',
+            ArabicPresentationFormsB::ArabicLetterHahFinalForm => 'ﺢ',
+            ArabicPresentationFormsB::ArabicLetterHahInitialForm => 'ﺣ',
+            ArabicPresentationFormsB::ArabicLetterHahMedialForm => 'ﺤ',
+            ArabicPresentationFormsB::ArabicLetterKhahIsolatedForm => 'ﺥ',
+            ArabicPresentationFormsB::ArabicLetterKhahFinalForm => 'ﺦ',
+            ArabicPresentationFormsB::ArabicLetterKhahInitialForm => 'ﺧ',
+            ArabicPresentationFormsB::ArabicLetterKhahMedialForm => 'ﺨ',
+            ArabicPresentationFormsB::ArabicLetterDalIsolatedForm => 'ﺩ',
+            ArabicPresentationFormsB::ArabicLetterDalFinalForm => 'ﺪ',
+            ArabicPresentationFormsB::ArabicLetterThalIsolatedForm => 'ﺫ',
+            ArabicPresentationFormsB::ArabicLetterThalFinalForm => 'ﺬ',
+            ArabicPresentationFormsB::ArabicLetterRehIsolatedForm => 'ﺭ',
+            ArabicPresentationFormsB::ArabicLetterRehFinalForm => 'ﺮ',
+            ArabicPresentationFormsB::ArabicLetterZainIsolatedForm => 'ﺯ',
+            ArabicPresentationFormsB::ArabicLetterZainFinalForm => 'ﺰ',
+            ArabicPresentationFormsB::ArabicLetterSeenIsolatedForm => 'ﺱ',
+            ArabicPresentationFormsB::ArabicLetterSeenFinalForm => 'ﺲ',
+            ArabicPresentationFormsB::ArabicLetterSeenInitialForm => 'ﺳ',
+            ArabicPresentationFormsB::ArabicLetterSeenMedialForm => 'ﺴ',
+            ArabicPresentationFormsB::ArabicLetterSheenIsolatedForm => 'ﺵ',
+            ArabicPresentationFormsB::ArabicLetterSheenFinalForm => 'ﺶ',
+            ArabicPresentationFormsB::ArabicLetterSheenInitialForm => 'ﺷ',
+            ArabicPresentationFormsB::ArabicLetterSheenMedialForm => 'ﺸ',
+            ArabicPresentationFormsB::ArabicLetterSadIsolatedForm => 'ﺹ',
+            ArabicPresentationFormsB::ArabicLetterSadFinalForm => 'ﺺ',
+            ArabicPresentationFormsB::ArabicLetterSadInitialForm => 'ﺻ',
+            ArabicPresentationFormsB::ArabicLetterSadMedialForm => 'ﺼ',
+            ArabicPresentationFormsB::ArabicLetterDadIsolatedForm => 'ﺽ',
+            ArabicPresentationFormsB::ArabicLetterDadFinalForm => 'ﺾ',
+            ArabicPresentationFormsB::ArabicLetterDadInitialForm => 'ﺿ',
+            ArabicPresentationFormsB::ArabicLetterDadMedialForm => 'ﻀ',
+            ArabicPresentationFormsB::ArabicLetterTahIsolatedForm => 'ﻁ',
+            ArabicPresentationFormsB::ArabicLetterTahFinalForm => 'ﻂ',
+            ArabicPresentationFormsB::ArabicLetterTahInitialForm => 'ﻃ',
+            ArabicPresentationFormsB::ArabicLetterTahMedialForm => 'ﻄ',
+            ArabicPresentationFormsB::ArabicLetterZahIsolatedForm => 'ﻅ',
+            ArabicPresentationFormsB::ArabicLetterZahFinalForm => 'ﻆ',
+            ArabicPresentationFormsB::ArabicLetterZahInitialForm => 'ﻇ',
+            ArabicPresentationFormsB::ArabicLetterZahMedialForm => 'ﻈ',
+            ArabicPresentationFormsB::ArabicLetterAinIsolatedForm => 'ﻉ',
+            ArabicPresentationFormsB::ArabicLetterAinFinalForm => 'ﻊ',
+            ArabicPresentationFormsB::ArabicLetterAinInitialForm => 'ﻋ',
+            ArabicPresentationFormsB::ArabicLetterAinMedialForm => 'ﻌ',
+            ArabicPresentationFormsB::ArabicLetterGhainIsolatedForm => 'ﻍ',
+            ArabicPresentationFormsB::ArabicLetterGhainFinalForm => 'ﻎ',
+            ArabicPresentationFormsB::ArabicLetterGhainInitialForm => 'ﻏ',
+            ArabicPresentationFormsB::ArabicLetterGhainMedialForm => 'ﻐ',
+            ArabicPresentationFormsB::ArabicLetterFehIsolatedForm => 'ﻑ',
+            ArabicPresentationFormsB::ArabicLetterFehFinalForm => 'ﻒ',
+            ArabicPresentationFormsB::ArabicLetterFehInitialForm => 'ﻓ',
+            ArabicPresentationFormsB::ArabicLetterFehMedialForm => 'ﻔ',
+            ArabicPresentationFormsB::ArabicLetterQafIsolatedForm => 'ﻕ',
+            ArabicPresentationFormsB::ArabicLetterQafFinalForm => 'ﻖ',
+            ArabicPresentationFormsB::ArabicLetterQafInitialForm => 'ﻗ',
+            ArabicPresentationFormsB::ArabicLetterQafMedialForm => 'ﻘ',
+            ArabicPresentationFormsB::ArabicLetterKafIsolatedForm => 'ﻙ',
+            ArabicPresentationFormsB::ArabicLetterKafFinalForm => 'ﻚ',
+            ArabicPresentationFormsB::ArabicLetterKafInitialForm => 'ﻛ',
+            ArabicPresentationFormsB::ArabicLetterKafMedialForm => 'ﻜ',
+            ArabicPresentationFormsB::ArabicLetterLamIsolatedForm => 'ﻝ',
+            ArabicPresentationFormsB::ArabicLetterLamFinalForm => 'ﻞ',
+            ArabicPresentationFormsB::ArabicLetterLamInitialForm => 'ﻟ',
+            ArabicPresentationFormsB::ArabicLetterLamMedialForm => 'ﻠ',
+            ArabicPresentationFormsB::ArabicLetterMeemIsolatedForm => 'ﻡ',
+            ArabicPresentationFormsB::ArabicLetterMeemFinalForm => 'ﻢ',
+            ArabicPresentationFormsB::ArabicLetterMeemInitialForm => 'ﻣ',
+            ArabicPresentationFormsB::ArabicLetterMeemMedialForm => 'ﻤ',
+            ArabicPresentationFormsB::ArabicLetterNoonIsolatedForm => 'ﻥ',
+            ArabicPresentationFormsB::ArabicLetterNoonFinalForm => 'ﻦ',
+            ArabicPresentationFormsB::ArabicLetterNoonInitialForm => 'ﻧ',
+            ArabicPresentationFormsB::ArabicLetterNoonMedialForm => 'ﻨ',
+            ArabicPresentationFormsB::ArabicLetterHehIsolatedForm => 'ﻩ',
+            ArabicPresentationFormsB::ArabicLetterHehFinalForm => 'ﻪ',
+            ArabicPresentationFormsB::ArabicLetterHehInitialForm => 'ﻫ',
+            ArabicPresentationFormsB::ArabicLetterHehMedialForm => 'ﻬ',
+            ArabicPresentationFormsB::ArabicLetterWawIsolatedForm => 'ﻭ',
+            ArabicPresentationFormsB::ArabicLetterWawFinalForm => 'ﻮ',
+            ArabicPresentationFormsB::ArabicLetterAlefMaksuraIsolatedForm => 'ﻯ',
+            ArabicPresentationFormsB::ArabicLetterAlefMaksuraFinalForm => 'ﻰ',
+            ArabicPresentationFormsB::ArabicLetterYehIsolatedForm => 'ﻱ',
+            ArabicPresentationFormsB::ArabicLetterYehFinalForm => 'ﻲ',
+            ArabicPresentationFormsB::ArabicLetterYehInitialForm => 'ﻳ',
+            ArabicPresentationFormsB::ArabicLetterYehMedialForm => 'ﻴ',
+            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithMaddaAboveIsolatedForm => 'ﻵ',
+            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithMaddaAboveFinalForm => 'ﻶ',
+            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaAboveIsolatedForm => 'ﻷ',
+            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaAboveFinalForm => 'ﻸ',
+            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaBelowIsolatedForm => 'ﻹ',
+            ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaBelowFinalForm => 'ﻺ',
+            ArabicPresentationFormsB::ArabicLigatureLamWithAlefIsolatedForm => 'ﻻ',
+            ArabicPresentationFormsB::ArabicLigatureLamWithAlefFinalForm => 'ﻼ',
         }
     }
 }
@@ -718,148 +434,147 @@ impl Into<char> for ArabicPresentationFormsB {
 impl std::convert::TryFrom<char> for ArabicPresentationFormsB {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            ARABIC_FATHATAN_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicFathatanIsolatedForm),
-            ARABIC_TATWEEL_WITH_FATHATAN_ABOVE => Ok(ArabicPresentationFormsB::ArabicTatweelWithFathatanAbove),
-            ARABIC_DAMMATAN_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicDammatanIsolatedForm),
-            ARABIC_TAIL_FRAGMENT => Ok(ArabicPresentationFormsB::ArabicTailFragment),
-            ARABIC_KASRATAN_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicKasratanIsolatedForm),
-            ARABIC_FATHA_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicFathaIsolatedForm),
-            ARABIC_FATHA_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicFathaMedialForm),
-            ARABIC_DAMMA_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicDammaIsolatedForm),
-            ARABIC_DAMMA_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicDammaMedialForm),
-            ARABIC_KASRA_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicKasraIsolatedForm),
-            ARABIC_KASRA_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicKasraMedialForm),
-            ARABIC_SHADDA_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicShaddaIsolatedForm),
-            ARABIC_SHADDA_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicShaddaMedialForm),
-            ARABIC_SUKUN_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicSukunIsolatedForm),
-            ARABIC_SUKUN_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicSukunMedialForm),
-            ARABIC_LETTER_HAMZA_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterHamzaIsolatedForm),
-            ARABIC_LETTER_ALEF_WITH_MADDA_ABOVE_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithMaddaAboveIsolatedForm),
-            ARABIC_LETTER_ALEF_WITH_MADDA_ABOVE_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithMaddaAboveFinalForm),
-            ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithHamzaAboveIsolatedForm),
-            ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithHamzaAboveFinalForm),
-            ARABIC_LETTER_WAW_WITH_HAMZA_ABOVE_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterWawWithHamzaAboveIsolatedForm),
-            ARABIC_LETTER_WAW_WITH_HAMZA_ABOVE_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterWawWithHamzaAboveFinalForm),
-            ARABIC_LETTER_ALEF_WITH_HAMZA_BELOW_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithHamzaBelowIsolatedForm),
-            ARABIC_LETTER_ALEF_WITH_HAMZA_BELOW_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithHamzaBelowFinalForm),
-            ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveIsolatedForm),
-            ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveFinalForm),
-            ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveInitialForm),
-            ARABIC_LETTER_YEH_WITH_HAMZA_ABOVE_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveMedialForm),
-            ARABIC_LETTER_ALEF_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefIsolatedForm),
-            ARABIC_LETTER_ALEF_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefFinalForm),
-            ARABIC_LETTER_BEH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterBehIsolatedForm),
-            ARABIC_LETTER_BEH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterBehFinalForm),
-            ARABIC_LETTER_BEH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterBehInitialForm),
-            ARABIC_LETTER_BEH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterBehMedialForm),
-            ARABIC_LETTER_TEH_MARBUTA_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTehMarbutaIsolatedForm),
-            ARABIC_LETTER_TEH_MARBUTA_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTehMarbutaFinalForm),
-            ARABIC_LETTER_TEH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTehIsolatedForm),
-            ARABIC_LETTER_TEH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTehFinalForm),
-            ARABIC_LETTER_TEH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTehInitialForm),
-            ARABIC_LETTER_TEH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTehMedialForm),
-            ARABIC_LETTER_THEH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterThehIsolatedForm),
-            ARABIC_LETTER_THEH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterThehFinalForm),
-            ARABIC_LETTER_THEH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterThehInitialForm),
-            ARABIC_LETTER_THEH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterThehMedialForm),
-            ARABIC_LETTER_JEEM_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterJeemIsolatedForm),
-            ARABIC_LETTER_JEEM_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterJeemFinalForm),
-            ARABIC_LETTER_JEEM_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterJeemInitialForm),
-            ARABIC_LETTER_JEEM_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterJeemMedialForm),
-            ARABIC_LETTER_HAH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterHahIsolatedForm),
-            ARABIC_LETTER_HAH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterHahFinalForm),
-            ARABIC_LETTER_HAH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterHahInitialForm),
-            ARABIC_LETTER_HAH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterHahMedialForm),
-            ARABIC_LETTER_KHAH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterKhahIsolatedForm),
-            ARABIC_LETTER_KHAH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterKhahFinalForm),
-            ARABIC_LETTER_KHAH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterKhahInitialForm),
-            ARABIC_LETTER_KHAH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterKhahMedialForm),
-            ARABIC_LETTER_DAL_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterDalIsolatedForm),
-            ARABIC_LETTER_DAL_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterDalFinalForm),
-            ARABIC_LETTER_THAL_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterThalIsolatedForm),
-            ARABIC_LETTER_THAL_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterThalFinalForm),
-            ARABIC_LETTER_REH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterRehIsolatedForm),
-            ARABIC_LETTER_REH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterRehFinalForm),
-            ARABIC_LETTER_ZAIN_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterZainIsolatedForm),
-            ARABIC_LETTER_ZAIN_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterZainFinalForm),
-            ARABIC_LETTER_SEEN_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSeenIsolatedForm),
-            ARABIC_LETTER_SEEN_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSeenFinalForm),
-            ARABIC_LETTER_SEEN_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSeenInitialForm),
-            ARABIC_LETTER_SEEN_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSeenMedialForm),
-            ARABIC_LETTER_SHEEN_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSheenIsolatedForm),
-            ARABIC_LETTER_SHEEN_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSheenFinalForm),
-            ARABIC_LETTER_SHEEN_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSheenInitialForm),
-            ARABIC_LETTER_SHEEN_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSheenMedialForm),
-            ARABIC_LETTER_SAD_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSadIsolatedForm),
-            ARABIC_LETTER_SAD_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSadFinalForm),
-            ARABIC_LETTER_SAD_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSadInitialForm),
-            ARABIC_LETTER_SAD_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterSadMedialForm),
-            ARABIC_LETTER_DAD_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterDadIsolatedForm),
-            ARABIC_LETTER_DAD_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterDadFinalForm),
-            ARABIC_LETTER_DAD_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterDadInitialForm),
-            ARABIC_LETTER_DAD_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterDadMedialForm),
-            ARABIC_LETTER_TAH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTahIsolatedForm),
-            ARABIC_LETTER_TAH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTahFinalForm),
-            ARABIC_LETTER_TAH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTahInitialForm),
-            ARABIC_LETTER_TAH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterTahMedialForm),
-            ARABIC_LETTER_ZAH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterZahIsolatedForm),
-            ARABIC_LETTER_ZAH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterZahFinalForm),
-            ARABIC_LETTER_ZAH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterZahInitialForm),
-            ARABIC_LETTER_ZAH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterZahMedialForm),
-            ARABIC_LETTER_AIN_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAinIsolatedForm),
-            ARABIC_LETTER_AIN_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAinFinalForm),
-            ARABIC_LETTER_AIN_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAinInitialForm),
-            ARABIC_LETTER_AIN_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAinMedialForm),
-            ARABIC_LETTER_GHAIN_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterGhainIsolatedForm),
-            ARABIC_LETTER_GHAIN_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterGhainFinalForm),
-            ARABIC_LETTER_GHAIN_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterGhainInitialForm),
-            ARABIC_LETTER_GHAIN_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterGhainMedialForm),
-            ARABIC_LETTER_FEH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterFehIsolatedForm),
-            ARABIC_LETTER_FEH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterFehFinalForm),
-            ARABIC_LETTER_FEH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterFehInitialForm),
-            ARABIC_LETTER_FEH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterFehMedialForm),
-            ARABIC_LETTER_QAF_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterQafIsolatedForm),
-            ARABIC_LETTER_QAF_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterQafFinalForm),
-            ARABIC_LETTER_QAF_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterQafInitialForm),
-            ARABIC_LETTER_QAF_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterQafMedialForm),
-            ARABIC_LETTER_KAF_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterKafIsolatedForm),
-            ARABIC_LETTER_KAF_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterKafFinalForm),
-            ARABIC_LETTER_KAF_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterKafInitialForm),
-            ARABIC_LETTER_KAF_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterKafMedialForm),
-            ARABIC_LETTER_LAM_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterLamIsolatedForm),
-            ARABIC_LETTER_LAM_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterLamFinalForm),
-            ARABIC_LETTER_LAM_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterLamInitialForm),
-            ARABIC_LETTER_LAM_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterLamMedialForm),
-            ARABIC_LETTER_MEEM_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterMeemIsolatedForm),
-            ARABIC_LETTER_MEEM_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterMeemFinalForm),
-            ARABIC_LETTER_MEEM_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterMeemInitialForm),
-            ARABIC_LETTER_MEEM_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterMeemMedialForm),
-            ARABIC_LETTER_NOON_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterNoonIsolatedForm),
-            ARABIC_LETTER_NOON_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterNoonFinalForm),
-            ARABIC_LETTER_NOON_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterNoonInitialForm),
-            ARABIC_LETTER_NOON_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterNoonMedialForm),
-            ARABIC_LETTER_HEH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterHehIsolatedForm),
-            ARABIC_LETTER_HEH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterHehFinalForm),
-            ARABIC_LETTER_HEH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterHehInitialForm),
-            ARABIC_LETTER_HEH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterHehMedialForm),
-            ARABIC_LETTER_WAW_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterWawIsolatedForm),
-            ARABIC_LETTER_WAW_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterWawFinalForm),
-            ARABIC_LETTER_ALEF_MAKSURA_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefMaksuraIsolatedForm),
-            ARABIC_LETTER_ALEF_MAKSURA_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterAlefMaksuraFinalForm),
-            ARABIC_LETTER_YEH_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLetterYehIsolatedForm),
-            ARABIC_LETTER_YEH_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterYehFinalForm),
-            ARABIC_LETTER_YEH_INITIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterYehInitialForm),
-            ARABIC_LETTER_YEH_MEDIAL_FORM => Ok(ArabicPresentationFormsB::ArabicLetterYehMedialForm),
-            ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_MADDA_ABOVE_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithMaddaAboveIsolatedForm),
-            ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_MADDA_ABOVE_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithMaddaAboveFinalForm),
-            ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_ABOVE_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaAboveIsolatedForm),
-            ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_ABOVE_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaAboveFinalForm),
-            ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_BELOW_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaBelowIsolatedForm),
-            ARABIC_LIGATURE_LAM_WITH_ALEF_WITH_HAMZA_BELOW_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaBelowFinalForm),
-            ARABIC_LIGATURE_LAM_WITH_ALEF_ISOLATED_FORM => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefIsolatedForm),
-            ARABIC_LIGATURE_LAM_WITH_ALEF_FINAL_FORM => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefFinalForm),
+            'ﹰ' => Ok(ArabicPresentationFormsB::ArabicFathatanIsolatedForm),
+            'ﹱ' => Ok(ArabicPresentationFormsB::ArabicTatweelWithFathatanAbove),
+            'ﹲ' => Ok(ArabicPresentationFormsB::ArabicDammatanIsolatedForm),
+            'ﹳ' => Ok(ArabicPresentationFormsB::ArabicTailFragment),
+            'ﹴ' => Ok(ArabicPresentationFormsB::ArabicKasratanIsolatedForm),
+            'ﹶ' => Ok(ArabicPresentationFormsB::ArabicFathaIsolatedForm),
+            'ﹷ' => Ok(ArabicPresentationFormsB::ArabicFathaMedialForm),
+            'ﹸ' => Ok(ArabicPresentationFormsB::ArabicDammaIsolatedForm),
+            'ﹹ' => Ok(ArabicPresentationFormsB::ArabicDammaMedialForm),
+            'ﹺ' => Ok(ArabicPresentationFormsB::ArabicKasraIsolatedForm),
+            'ﹻ' => Ok(ArabicPresentationFormsB::ArabicKasraMedialForm),
+            'ﹼ' => Ok(ArabicPresentationFormsB::ArabicShaddaIsolatedForm),
+            'ﹽ' => Ok(ArabicPresentationFormsB::ArabicShaddaMedialForm),
+            'ﹾ' => Ok(ArabicPresentationFormsB::ArabicSukunIsolatedForm),
+            'ﹿ' => Ok(ArabicPresentationFormsB::ArabicSukunMedialForm),
+            'ﺀ' => Ok(ArabicPresentationFormsB::ArabicLetterHamzaIsolatedForm),
+            'ﺁ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithMaddaAboveIsolatedForm),
+            'ﺂ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithMaddaAboveFinalForm),
+            'ﺃ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithHamzaAboveIsolatedForm),
+            'ﺄ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithHamzaAboveFinalForm),
+            'ﺅ' => Ok(ArabicPresentationFormsB::ArabicLetterWawWithHamzaAboveIsolatedForm),
+            'ﺆ' => Ok(ArabicPresentationFormsB::ArabicLetterWawWithHamzaAboveFinalForm),
+            'ﺇ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithHamzaBelowIsolatedForm),
+            'ﺈ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefWithHamzaBelowFinalForm),
+            'ﺉ' => Ok(ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveIsolatedForm),
+            'ﺊ' => Ok(ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveFinalForm),
+            'ﺋ' => Ok(ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveInitialForm),
+            'ﺌ' => Ok(ArabicPresentationFormsB::ArabicLetterYehWithHamzaAboveMedialForm),
+            'ﺍ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefIsolatedForm),
+            'ﺎ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefFinalForm),
+            'ﺏ' => Ok(ArabicPresentationFormsB::ArabicLetterBehIsolatedForm),
+            'ﺐ' => Ok(ArabicPresentationFormsB::ArabicLetterBehFinalForm),
+            'ﺑ' => Ok(ArabicPresentationFormsB::ArabicLetterBehInitialForm),
+            'ﺒ' => Ok(ArabicPresentationFormsB::ArabicLetterBehMedialForm),
+            'ﺓ' => Ok(ArabicPresentationFormsB::ArabicLetterTehMarbutaIsolatedForm),
+            'ﺔ' => Ok(ArabicPresentationFormsB::ArabicLetterTehMarbutaFinalForm),
+            'ﺕ' => Ok(ArabicPresentationFormsB::ArabicLetterTehIsolatedForm),
+            'ﺖ' => Ok(ArabicPresentationFormsB::ArabicLetterTehFinalForm),
+            'ﺗ' => Ok(ArabicPresentationFormsB::ArabicLetterTehInitialForm),
+            'ﺘ' => Ok(ArabicPresentationFormsB::ArabicLetterTehMedialForm),
+            'ﺙ' => Ok(ArabicPresentationFormsB::ArabicLetterThehIsolatedForm),
+            'ﺚ' => Ok(ArabicPresentationFormsB::ArabicLetterThehFinalForm),
+            'ﺛ' => Ok(ArabicPresentationFormsB::ArabicLetterThehInitialForm),
+            'ﺜ' => Ok(ArabicPresentationFormsB::ArabicLetterThehMedialForm),
+            'ﺝ' => Ok(ArabicPresentationFormsB::ArabicLetterJeemIsolatedForm),
+            'ﺞ' => Ok(ArabicPresentationFormsB::ArabicLetterJeemFinalForm),
+            'ﺟ' => Ok(ArabicPresentationFormsB::ArabicLetterJeemInitialForm),
+            'ﺠ' => Ok(ArabicPresentationFormsB::ArabicLetterJeemMedialForm),
+            'ﺡ' => Ok(ArabicPresentationFormsB::ArabicLetterHahIsolatedForm),
+            'ﺢ' => Ok(ArabicPresentationFormsB::ArabicLetterHahFinalForm),
+            'ﺣ' => Ok(ArabicPresentationFormsB::ArabicLetterHahInitialForm),
+            'ﺤ' => Ok(ArabicPresentationFormsB::ArabicLetterHahMedialForm),
+            'ﺥ' => Ok(ArabicPresentationFormsB::ArabicLetterKhahIsolatedForm),
+            'ﺦ' => Ok(ArabicPresentationFormsB::ArabicLetterKhahFinalForm),
+            'ﺧ' => Ok(ArabicPresentationFormsB::ArabicLetterKhahInitialForm),
+            'ﺨ' => Ok(ArabicPresentationFormsB::ArabicLetterKhahMedialForm),
+            'ﺩ' => Ok(ArabicPresentationFormsB::ArabicLetterDalIsolatedForm),
+            'ﺪ' => Ok(ArabicPresentationFormsB::ArabicLetterDalFinalForm),
+            'ﺫ' => Ok(ArabicPresentationFormsB::ArabicLetterThalIsolatedForm),
+            'ﺬ' => Ok(ArabicPresentationFormsB::ArabicLetterThalFinalForm),
+            'ﺭ' => Ok(ArabicPresentationFormsB::ArabicLetterRehIsolatedForm),
+            'ﺮ' => Ok(ArabicPresentationFormsB::ArabicLetterRehFinalForm),
+            'ﺯ' => Ok(ArabicPresentationFormsB::ArabicLetterZainIsolatedForm),
+            'ﺰ' => Ok(ArabicPresentationFormsB::ArabicLetterZainFinalForm),
+            'ﺱ' => Ok(ArabicPresentationFormsB::ArabicLetterSeenIsolatedForm),
+            'ﺲ' => Ok(ArabicPresentationFormsB::ArabicLetterSeenFinalForm),
+            'ﺳ' => Ok(ArabicPresentationFormsB::ArabicLetterSeenInitialForm),
+            'ﺴ' => Ok(ArabicPresentationFormsB::ArabicLetterSeenMedialForm),
+            'ﺵ' => Ok(ArabicPresentationFormsB::ArabicLetterSheenIsolatedForm),
+            'ﺶ' => Ok(ArabicPresentationFormsB::ArabicLetterSheenFinalForm),
+            'ﺷ' => Ok(ArabicPresentationFormsB::ArabicLetterSheenInitialForm),
+            'ﺸ' => Ok(ArabicPresentationFormsB::ArabicLetterSheenMedialForm),
+            'ﺹ' => Ok(ArabicPresentationFormsB::ArabicLetterSadIsolatedForm),
+            'ﺺ' => Ok(ArabicPresentationFormsB::ArabicLetterSadFinalForm),
+            'ﺻ' => Ok(ArabicPresentationFormsB::ArabicLetterSadInitialForm),
+            'ﺼ' => Ok(ArabicPresentationFormsB::ArabicLetterSadMedialForm),
+            'ﺽ' => Ok(ArabicPresentationFormsB::ArabicLetterDadIsolatedForm),
+            'ﺾ' => Ok(ArabicPresentationFormsB::ArabicLetterDadFinalForm),
+            'ﺿ' => Ok(ArabicPresentationFormsB::ArabicLetterDadInitialForm),
+            'ﻀ' => Ok(ArabicPresentationFormsB::ArabicLetterDadMedialForm),
+            'ﻁ' => Ok(ArabicPresentationFormsB::ArabicLetterTahIsolatedForm),
+            'ﻂ' => Ok(ArabicPresentationFormsB::ArabicLetterTahFinalForm),
+            'ﻃ' => Ok(ArabicPresentationFormsB::ArabicLetterTahInitialForm),
+            'ﻄ' => Ok(ArabicPresentationFormsB::ArabicLetterTahMedialForm),
+            'ﻅ' => Ok(ArabicPresentationFormsB::ArabicLetterZahIsolatedForm),
+            'ﻆ' => Ok(ArabicPresentationFormsB::ArabicLetterZahFinalForm),
+            'ﻇ' => Ok(ArabicPresentationFormsB::ArabicLetterZahInitialForm),
+            'ﻈ' => Ok(ArabicPresentationFormsB::ArabicLetterZahMedialForm),
+            'ﻉ' => Ok(ArabicPresentationFormsB::ArabicLetterAinIsolatedForm),
+            'ﻊ' => Ok(ArabicPresentationFormsB::ArabicLetterAinFinalForm),
+            'ﻋ' => Ok(ArabicPresentationFormsB::ArabicLetterAinInitialForm),
+            'ﻌ' => Ok(ArabicPresentationFormsB::ArabicLetterAinMedialForm),
+            'ﻍ' => Ok(ArabicPresentationFormsB::ArabicLetterGhainIsolatedForm),
+            'ﻎ' => Ok(ArabicPresentationFormsB::ArabicLetterGhainFinalForm),
+            'ﻏ' => Ok(ArabicPresentationFormsB::ArabicLetterGhainInitialForm),
+            'ﻐ' => Ok(ArabicPresentationFormsB::ArabicLetterGhainMedialForm),
+            'ﻑ' => Ok(ArabicPresentationFormsB::ArabicLetterFehIsolatedForm),
+            'ﻒ' => Ok(ArabicPresentationFormsB::ArabicLetterFehFinalForm),
+            'ﻓ' => Ok(ArabicPresentationFormsB::ArabicLetterFehInitialForm),
+            'ﻔ' => Ok(ArabicPresentationFormsB::ArabicLetterFehMedialForm),
+            'ﻕ' => Ok(ArabicPresentationFormsB::ArabicLetterQafIsolatedForm),
+            'ﻖ' => Ok(ArabicPresentationFormsB::ArabicLetterQafFinalForm),
+            'ﻗ' => Ok(ArabicPresentationFormsB::ArabicLetterQafInitialForm),
+            'ﻘ' => Ok(ArabicPresentationFormsB::ArabicLetterQafMedialForm),
+            'ﻙ' => Ok(ArabicPresentationFormsB::ArabicLetterKafIsolatedForm),
+            'ﻚ' => Ok(ArabicPresentationFormsB::ArabicLetterKafFinalForm),
+            'ﻛ' => Ok(ArabicPresentationFormsB::ArabicLetterKafInitialForm),
+            'ﻜ' => Ok(ArabicPresentationFormsB::ArabicLetterKafMedialForm),
+            'ﻝ' => Ok(ArabicPresentationFormsB::ArabicLetterLamIsolatedForm),
+            'ﻞ' => Ok(ArabicPresentationFormsB::ArabicLetterLamFinalForm),
+            'ﻟ' => Ok(ArabicPresentationFormsB::ArabicLetterLamInitialForm),
+            'ﻠ' => Ok(ArabicPresentationFormsB::ArabicLetterLamMedialForm),
+            'ﻡ' => Ok(ArabicPresentationFormsB::ArabicLetterMeemIsolatedForm),
+            'ﻢ' => Ok(ArabicPresentationFormsB::ArabicLetterMeemFinalForm),
+            'ﻣ' => Ok(ArabicPresentationFormsB::ArabicLetterMeemInitialForm),
+            'ﻤ' => Ok(ArabicPresentationFormsB::ArabicLetterMeemMedialForm),
+            'ﻥ' => Ok(ArabicPresentationFormsB::ArabicLetterNoonIsolatedForm),
+            'ﻦ' => Ok(ArabicPresentationFormsB::ArabicLetterNoonFinalForm),
+            'ﻧ' => Ok(ArabicPresentationFormsB::ArabicLetterNoonInitialForm),
+            'ﻨ' => Ok(ArabicPresentationFormsB::ArabicLetterNoonMedialForm),
+            'ﻩ' => Ok(ArabicPresentationFormsB::ArabicLetterHehIsolatedForm),
+            'ﻪ' => Ok(ArabicPresentationFormsB::ArabicLetterHehFinalForm),
+            'ﻫ' => Ok(ArabicPresentationFormsB::ArabicLetterHehInitialForm),
+            'ﻬ' => Ok(ArabicPresentationFormsB::ArabicLetterHehMedialForm),
+            'ﻭ' => Ok(ArabicPresentationFormsB::ArabicLetterWawIsolatedForm),
+            'ﻮ' => Ok(ArabicPresentationFormsB::ArabicLetterWawFinalForm),
+            'ﻯ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefMaksuraIsolatedForm),
+            'ﻰ' => Ok(ArabicPresentationFormsB::ArabicLetterAlefMaksuraFinalForm),
+            'ﻱ' => Ok(ArabicPresentationFormsB::ArabicLetterYehIsolatedForm),
+            'ﻲ' => Ok(ArabicPresentationFormsB::ArabicLetterYehFinalForm),
+            'ﻳ' => Ok(ArabicPresentationFormsB::ArabicLetterYehInitialForm),
+            'ﻴ' => Ok(ArabicPresentationFormsB::ArabicLetterYehMedialForm),
+            'ﻵ' => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithMaddaAboveIsolatedForm),
+            'ﻶ' => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithMaddaAboveFinalForm),
+            'ﻷ' => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaAboveIsolatedForm),
+            'ﻸ' => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaAboveFinalForm),
+            'ﻹ' => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaBelowIsolatedForm),
+            'ﻺ' => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefWithHamzaBelowFinalForm),
+            'ﻻ' => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefIsolatedForm),
+            'ﻼ' => Ok(ArabicPresentationFormsB::ArabicLigatureLamWithAlefFinalForm),
             _ => Err(()),
         }
     }

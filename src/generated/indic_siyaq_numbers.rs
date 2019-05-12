@@ -1,142 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1ec71}: '𞱱'
-    pub const INDIC_SIYAQ_NUMBER_ONE: char = '𞱱';
-    /// \u{1ec72}: '𞱲'
-    pub const INDIC_SIYAQ_NUMBER_TWO: char = '𞱲';
-    /// \u{1ec73}: '𞱳'
-    pub const INDIC_SIYAQ_NUMBER_THREE: char = '𞱳';
-    /// \u{1ec74}: '𞱴'
-    pub const INDIC_SIYAQ_NUMBER_FOUR: char = '𞱴';
-    /// \u{1ec75}: '𞱵'
-    pub const INDIC_SIYAQ_NUMBER_FIVE: char = '𞱵';
-    /// \u{1ec76}: '𞱶'
-    pub const INDIC_SIYAQ_NUMBER_SIX: char = '𞱶';
-    /// \u{1ec77}: '𞱷'
-    pub const INDIC_SIYAQ_NUMBER_SEVEN: char = '𞱷';
-    /// \u{1ec78}: '𞱸'
-    pub const INDIC_SIYAQ_NUMBER_EIGHT: char = '𞱸';
-    /// \u{1ec79}: '𞱹'
-    pub const INDIC_SIYAQ_NUMBER_NINE: char = '𞱹';
-    /// \u{1ec7a}: '𞱺'
-    pub const INDIC_SIYAQ_NUMBER_TEN: char = '𞱺';
-    /// \u{1ec7b}: '𞱻'
-    pub const INDIC_SIYAQ_NUMBER_TWENTY: char = '𞱻';
-    /// \u{1ec7c}: '𞱼'
-    pub const INDIC_SIYAQ_NUMBER_THIRTY: char = '𞱼';
-    /// \u{1ec7d}: '𞱽'
-    pub const INDIC_SIYAQ_NUMBER_FORTY: char = '𞱽';
-    /// \u{1ec7e}: '𞱾'
-    pub const INDIC_SIYAQ_NUMBER_FIFTY: char = '𞱾';
-    /// \u{1ec7f}: '𞱿'
-    pub const INDIC_SIYAQ_NUMBER_SIXTY: char = '𞱿';
-    /// \u{1ec80}: '𞲀'
-    pub const INDIC_SIYAQ_NUMBER_SEVENTY: char = '𞲀';
-    /// \u{1ec81}: '𞲁'
-    pub const INDIC_SIYAQ_NUMBER_EIGHTY: char = '𞲁';
-    /// \u{1ec82}: '𞲂'
-    pub const INDIC_SIYAQ_NUMBER_NINETY: char = '𞲂';
-    /// \u{1ec83}: '𞲃'
-    pub const INDIC_SIYAQ_NUMBER_ONE_HUNDRED: char = '𞲃';
-    /// \u{1ec84}: '𞲄'
-    pub const INDIC_SIYAQ_NUMBER_TWO_HUNDRED: char = '𞲄';
-    /// \u{1ec85}: '𞲅'
-    pub const INDIC_SIYAQ_NUMBER_THREE_HUNDRED: char = '𞲅';
-    /// \u{1ec86}: '𞲆'
-    pub const INDIC_SIYAQ_NUMBER_FOUR_HUNDRED: char = '𞲆';
-    /// \u{1ec87}: '𞲇'
-    pub const INDIC_SIYAQ_NUMBER_FIVE_HUNDRED: char = '𞲇';
-    /// \u{1ec88}: '𞲈'
-    pub const INDIC_SIYAQ_NUMBER_SIX_HUNDRED: char = '𞲈';
-    /// \u{1ec89}: '𞲉'
-    pub const INDIC_SIYAQ_NUMBER_SEVEN_HUNDRED: char = '𞲉';
-    /// \u{1ec8a}: '𞲊'
-    pub const INDIC_SIYAQ_NUMBER_EIGHT_HUNDRED: char = '𞲊';
-    /// \u{1ec8b}: '𞲋'
-    pub const INDIC_SIYAQ_NUMBER_NINE_HUNDRED: char = '𞲋';
-    /// \u{1ec8c}: '𞲌'
-    pub const INDIC_SIYAQ_NUMBER_ONE_THOUSAND: char = '𞲌';
-    /// \u{1ec8d}: '𞲍'
-    pub const INDIC_SIYAQ_NUMBER_TWO_THOUSAND: char = '𞲍';
-    /// \u{1ec8e}: '𞲎'
-    pub const INDIC_SIYAQ_NUMBER_THREE_THOUSAND: char = '𞲎';
-    /// \u{1ec8f}: '𞲏'
-    pub const INDIC_SIYAQ_NUMBER_FOUR_THOUSAND: char = '𞲏';
-    /// \u{1ec90}: '𞲐'
-    pub const INDIC_SIYAQ_NUMBER_FIVE_THOUSAND: char = '𞲐';
-    /// \u{1ec91}: '𞲑'
-    pub const INDIC_SIYAQ_NUMBER_SIX_THOUSAND: char = '𞲑';
-    /// \u{1ec92}: '𞲒'
-    pub const INDIC_SIYAQ_NUMBER_SEVEN_THOUSAND: char = '𞲒';
-    /// \u{1ec93}: '𞲓'
-    pub const INDIC_SIYAQ_NUMBER_EIGHT_THOUSAND: char = '𞲓';
-    /// \u{1ec94}: '𞲔'
-    pub const INDIC_SIYAQ_NUMBER_NINE_THOUSAND: char = '𞲔';
-    /// \u{1ec95}: '𞲕'
-    pub const INDIC_SIYAQ_NUMBER_TEN_THOUSAND: char = '𞲕';
-    /// \u{1ec96}: '𞲖'
-    pub const INDIC_SIYAQ_NUMBER_TWENTY_THOUSAND: char = '𞲖';
-    /// \u{1ec97}: '𞲗'
-    pub const INDIC_SIYAQ_NUMBER_THIRTY_THOUSAND: char = '𞲗';
-    /// \u{1ec98}: '𞲘'
-    pub const INDIC_SIYAQ_NUMBER_FORTY_THOUSAND: char = '𞲘';
-    /// \u{1ec99}: '𞲙'
-    pub const INDIC_SIYAQ_NUMBER_FIFTY_THOUSAND: char = '𞲙';
-    /// \u{1ec9a}: '𞲚'
-    pub const INDIC_SIYAQ_NUMBER_SIXTY_THOUSAND: char = '𞲚';
-    /// \u{1ec9b}: '𞲛'
-    pub const INDIC_SIYAQ_NUMBER_SEVENTY_THOUSAND: char = '𞲛';
-    /// \u{1ec9c}: '𞲜'
-    pub const INDIC_SIYAQ_NUMBER_EIGHTY_THOUSAND: char = '𞲜';
-    /// \u{1ec9d}: '𞲝'
-    pub const INDIC_SIYAQ_NUMBER_NINETY_THOUSAND: char = '𞲝';
-    /// \u{1ec9e}: '𞲞'
-    pub const INDIC_SIYAQ_NUMBER_LAKH: char = '𞲞';
-    /// \u{1ec9f}: '𞲟'
-    pub const INDIC_SIYAQ_NUMBER_LAKHAN: char = '𞲟';
-    /// \u{1eca0}: '𞲠'
-    pub const INDIC_SIYAQ_LAKH_MARK: char = '𞲠';
-    /// \u{1eca1}: '𞲡'
-    pub const INDIC_SIYAQ_NUMBER_KAROR: char = '𞲡';
-    /// \u{1eca2}: '𞲢'
-    pub const INDIC_SIYAQ_NUMBER_KARORAN: char = '𞲢';
-    /// \u{1eca3}: '𞲣'
-    pub const INDIC_SIYAQ_NUMBER_PREFIXED_ONE: char = '𞲣';
-    /// \u{1eca4}: '𞲤'
-    pub const INDIC_SIYAQ_NUMBER_PREFIXED_TWO: char = '𞲤';
-    /// \u{1eca5}: '𞲥'
-    pub const INDIC_SIYAQ_NUMBER_PREFIXED_THREE: char = '𞲥';
-    /// \u{1eca6}: '𞲦'
-    pub const INDIC_SIYAQ_NUMBER_PREFIXED_FOUR: char = '𞲦';
-    /// \u{1eca7}: '𞲧'
-    pub const INDIC_SIYAQ_NUMBER_PREFIXED_FIVE: char = '𞲧';
-    /// \u{1eca8}: '𞲨'
-    pub const INDIC_SIYAQ_NUMBER_PREFIXED_SIX: char = '𞲨';
-    /// \u{1eca9}: '𞲩'
-    pub const INDIC_SIYAQ_NUMBER_PREFIXED_SEVEN: char = '𞲩';
-    /// \u{1ecaa}: '𞲪'
-    pub const INDIC_SIYAQ_NUMBER_PREFIXED_EIGHT: char = '𞲪';
-    /// \u{1ecab}: '𞲫'
-    pub const INDIC_SIYAQ_NUMBER_PREFIXED_NINE: char = '𞲫';
-    /// \u{1ecac}: '𞲬'
-    pub const INDIC_SIYAQ_PLACEHOLDER: char = '𞲬';
-    /// \u{1ecad}: '𞲭'
-    pub const INDIC_SIYAQ_FRACTION_ONE_QUARTER: char = '𞲭';
-    /// \u{1ecae}: '𞲮'
-    pub const INDIC_SIYAQ_FRACTION_ONE_HALF: char = '𞲮';
-    /// \u{1ecaf}: '𞲯'
-    pub const INDIC_SIYAQ_FRACTION_THREE_QUARTERS: char = '𞲯';
-    /// \u{1ecb0}: '𞲰'
-    pub const INDIC_SIYAQ_RUPEE_MARK: char = '𞲰';
-    /// \u{1ecb1}: '𞲱'
-    pub const INDIC_SIYAQ_NUMBER_ALTERNATE_ONE: char = '𞲱';
-    /// \u{1ecb2}: '𞲲'
-    pub const INDIC_SIYAQ_NUMBER_ALTERNATE_TWO: char = '𞲲';
-    /// \u{1ecb3}: '𞲳'
-    pub const INDIC_SIYAQ_NUMBER_ALTERNATE_TEN_THOUSAND: char = '𞲳';
-    /// \u{1ecb4}: '𞲴'
-    pub const INDIC_SIYAQ_ALTERNATE_LAKH_MARK: char = '𞲴';
-}
 
 /// An enum to represent all characters in the IndicSiyaqNumbers block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -281,76 +142,75 @@ pub enum IndicSiyaqNumbers {
 
 impl Into<char> for IndicSiyaqNumbers {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            IndicSiyaqNumbers::IndicSiyaqNumberOne => INDIC_SIYAQ_NUMBER_ONE,
-            IndicSiyaqNumbers::IndicSiyaqNumberTwo => INDIC_SIYAQ_NUMBER_TWO,
-            IndicSiyaqNumbers::IndicSiyaqNumberThree => INDIC_SIYAQ_NUMBER_THREE,
-            IndicSiyaqNumbers::IndicSiyaqNumberFour => INDIC_SIYAQ_NUMBER_FOUR,
-            IndicSiyaqNumbers::IndicSiyaqNumberFive => INDIC_SIYAQ_NUMBER_FIVE,
-            IndicSiyaqNumbers::IndicSiyaqNumberSix => INDIC_SIYAQ_NUMBER_SIX,
-            IndicSiyaqNumbers::IndicSiyaqNumberSeven => INDIC_SIYAQ_NUMBER_SEVEN,
-            IndicSiyaqNumbers::IndicSiyaqNumberEight => INDIC_SIYAQ_NUMBER_EIGHT,
-            IndicSiyaqNumbers::IndicSiyaqNumberNine => INDIC_SIYAQ_NUMBER_NINE,
-            IndicSiyaqNumbers::IndicSiyaqNumberTen => INDIC_SIYAQ_NUMBER_TEN,
-            IndicSiyaqNumbers::IndicSiyaqNumberTwenty => INDIC_SIYAQ_NUMBER_TWENTY,
-            IndicSiyaqNumbers::IndicSiyaqNumberThirty => INDIC_SIYAQ_NUMBER_THIRTY,
-            IndicSiyaqNumbers::IndicSiyaqNumberForty => INDIC_SIYAQ_NUMBER_FORTY,
-            IndicSiyaqNumbers::IndicSiyaqNumberFifty => INDIC_SIYAQ_NUMBER_FIFTY,
-            IndicSiyaqNumbers::IndicSiyaqNumberSixty => INDIC_SIYAQ_NUMBER_SIXTY,
-            IndicSiyaqNumbers::IndicSiyaqNumberSeventy => INDIC_SIYAQ_NUMBER_SEVENTY,
-            IndicSiyaqNumbers::IndicSiyaqNumberEighty => INDIC_SIYAQ_NUMBER_EIGHTY,
-            IndicSiyaqNumbers::IndicSiyaqNumberNinety => INDIC_SIYAQ_NUMBER_NINETY,
-            IndicSiyaqNumbers::IndicSiyaqNumberOneHundred => INDIC_SIYAQ_NUMBER_ONE_HUNDRED,
-            IndicSiyaqNumbers::IndicSiyaqNumberTwoHundred => INDIC_SIYAQ_NUMBER_TWO_HUNDRED,
-            IndicSiyaqNumbers::IndicSiyaqNumberThreeHundred => INDIC_SIYAQ_NUMBER_THREE_HUNDRED,
-            IndicSiyaqNumbers::IndicSiyaqNumberFourHundred => INDIC_SIYAQ_NUMBER_FOUR_HUNDRED,
-            IndicSiyaqNumbers::IndicSiyaqNumberFiveHundred => INDIC_SIYAQ_NUMBER_FIVE_HUNDRED,
-            IndicSiyaqNumbers::IndicSiyaqNumberSixHundred => INDIC_SIYAQ_NUMBER_SIX_HUNDRED,
-            IndicSiyaqNumbers::IndicSiyaqNumberSevenHundred => INDIC_SIYAQ_NUMBER_SEVEN_HUNDRED,
-            IndicSiyaqNumbers::IndicSiyaqNumberEightHundred => INDIC_SIYAQ_NUMBER_EIGHT_HUNDRED,
-            IndicSiyaqNumbers::IndicSiyaqNumberNineHundred => INDIC_SIYAQ_NUMBER_NINE_HUNDRED,
-            IndicSiyaqNumbers::IndicSiyaqNumberOneThousand => INDIC_SIYAQ_NUMBER_ONE_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberTwoThousand => INDIC_SIYAQ_NUMBER_TWO_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberThreeThousand => INDIC_SIYAQ_NUMBER_THREE_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberFourThousand => INDIC_SIYAQ_NUMBER_FOUR_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberFiveThousand => INDIC_SIYAQ_NUMBER_FIVE_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberSixThousand => INDIC_SIYAQ_NUMBER_SIX_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberSevenThousand => INDIC_SIYAQ_NUMBER_SEVEN_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberEightThousand => INDIC_SIYAQ_NUMBER_EIGHT_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberNineThousand => INDIC_SIYAQ_NUMBER_NINE_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberTenThousand => INDIC_SIYAQ_NUMBER_TEN_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberTwentyThousand => INDIC_SIYAQ_NUMBER_TWENTY_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberThirtyThousand => INDIC_SIYAQ_NUMBER_THIRTY_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberFortyThousand => INDIC_SIYAQ_NUMBER_FORTY_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberFiftyThousand => INDIC_SIYAQ_NUMBER_FIFTY_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberSixtyThousand => INDIC_SIYAQ_NUMBER_SIXTY_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberSeventyThousand => INDIC_SIYAQ_NUMBER_SEVENTY_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberEightyThousand => INDIC_SIYAQ_NUMBER_EIGHTY_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberNinetyThousand => INDIC_SIYAQ_NUMBER_NINETY_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqNumberLakh => INDIC_SIYAQ_NUMBER_LAKH,
-            IndicSiyaqNumbers::IndicSiyaqNumberLakhan => INDIC_SIYAQ_NUMBER_LAKHAN,
-            IndicSiyaqNumbers::IndicSiyaqLakhMark => INDIC_SIYAQ_LAKH_MARK,
-            IndicSiyaqNumbers::IndicSiyaqNumberKaror => INDIC_SIYAQ_NUMBER_KAROR,
-            IndicSiyaqNumbers::IndicSiyaqNumberKaroran => INDIC_SIYAQ_NUMBER_KARORAN,
-            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedOne => INDIC_SIYAQ_NUMBER_PREFIXED_ONE,
-            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedTwo => INDIC_SIYAQ_NUMBER_PREFIXED_TWO,
-            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedThree => INDIC_SIYAQ_NUMBER_PREFIXED_THREE,
-            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedFour => INDIC_SIYAQ_NUMBER_PREFIXED_FOUR,
-            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedFive => INDIC_SIYAQ_NUMBER_PREFIXED_FIVE,
-            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedSix => INDIC_SIYAQ_NUMBER_PREFIXED_SIX,
-            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedSeven => INDIC_SIYAQ_NUMBER_PREFIXED_SEVEN,
-            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedEight => INDIC_SIYAQ_NUMBER_PREFIXED_EIGHT,
-            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedNine => INDIC_SIYAQ_NUMBER_PREFIXED_NINE,
-            IndicSiyaqNumbers::IndicSiyaqPlaceholder => INDIC_SIYAQ_PLACEHOLDER,
-            IndicSiyaqNumbers::IndicSiyaqFractionOneQuarter => INDIC_SIYAQ_FRACTION_ONE_QUARTER,
-            IndicSiyaqNumbers::IndicSiyaqFractionOneHalf => INDIC_SIYAQ_FRACTION_ONE_HALF,
-            IndicSiyaqNumbers::IndicSiyaqFractionThreeQuarters => INDIC_SIYAQ_FRACTION_THREE_QUARTERS,
-            IndicSiyaqNumbers::IndicSiyaqRupeeMark => INDIC_SIYAQ_RUPEE_MARK,
-            IndicSiyaqNumbers::IndicSiyaqNumberAlternateOne => INDIC_SIYAQ_NUMBER_ALTERNATE_ONE,
-            IndicSiyaqNumbers::IndicSiyaqNumberAlternateTwo => INDIC_SIYAQ_NUMBER_ALTERNATE_TWO,
-            IndicSiyaqNumbers::IndicSiyaqNumberAlternateTenThousand => INDIC_SIYAQ_NUMBER_ALTERNATE_TEN_THOUSAND,
-            IndicSiyaqNumbers::IndicSiyaqAlternateLakhMark => INDIC_SIYAQ_ALTERNATE_LAKH_MARK,
+            IndicSiyaqNumbers::IndicSiyaqNumberOne => '𞱱',
+            IndicSiyaqNumbers::IndicSiyaqNumberTwo => '𞱲',
+            IndicSiyaqNumbers::IndicSiyaqNumberThree => '𞱳',
+            IndicSiyaqNumbers::IndicSiyaqNumberFour => '𞱴',
+            IndicSiyaqNumbers::IndicSiyaqNumberFive => '𞱵',
+            IndicSiyaqNumbers::IndicSiyaqNumberSix => '𞱶',
+            IndicSiyaqNumbers::IndicSiyaqNumberSeven => '𞱷',
+            IndicSiyaqNumbers::IndicSiyaqNumberEight => '𞱸',
+            IndicSiyaqNumbers::IndicSiyaqNumberNine => '𞱹',
+            IndicSiyaqNumbers::IndicSiyaqNumberTen => '𞱺',
+            IndicSiyaqNumbers::IndicSiyaqNumberTwenty => '𞱻',
+            IndicSiyaqNumbers::IndicSiyaqNumberThirty => '𞱼',
+            IndicSiyaqNumbers::IndicSiyaqNumberForty => '𞱽',
+            IndicSiyaqNumbers::IndicSiyaqNumberFifty => '𞱾',
+            IndicSiyaqNumbers::IndicSiyaqNumberSixty => '𞱿',
+            IndicSiyaqNumbers::IndicSiyaqNumberSeventy => '𞲀',
+            IndicSiyaqNumbers::IndicSiyaqNumberEighty => '𞲁',
+            IndicSiyaqNumbers::IndicSiyaqNumberNinety => '𞲂',
+            IndicSiyaqNumbers::IndicSiyaqNumberOneHundred => '𞲃',
+            IndicSiyaqNumbers::IndicSiyaqNumberTwoHundred => '𞲄',
+            IndicSiyaqNumbers::IndicSiyaqNumberThreeHundred => '𞲅',
+            IndicSiyaqNumbers::IndicSiyaqNumberFourHundred => '𞲆',
+            IndicSiyaqNumbers::IndicSiyaqNumberFiveHundred => '𞲇',
+            IndicSiyaqNumbers::IndicSiyaqNumberSixHundred => '𞲈',
+            IndicSiyaqNumbers::IndicSiyaqNumberSevenHundred => '𞲉',
+            IndicSiyaqNumbers::IndicSiyaqNumberEightHundred => '𞲊',
+            IndicSiyaqNumbers::IndicSiyaqNumberNineHundred => '𞲋',
+            IndicSiyaqNumbers::IndicSiyaqNumberOneThousand => '𞲌',
+            IndicSiyaqNumbers::IndicSiyaqNumberTwoThousand => '𞲍',
+            IndicSiyaqNumbers::IndicSiyaqNumberThreeThousand => '𞲎',
+            IndicSiyaqNumbers::IndicSiyaqNumberFourThousand => '𞲏',
+            IndicSiyaqNumbers::IndicSiyaqNumberFiveThousand => '𞲐',
+            IndicSiyaqNumbers::IndicSiyaqNumberSixThousand => '𞲑',
+            IndicSiyaqNumbers::IndicSiyaqNumberSevenThousand => '𞲒',
+            IndicSiyaqNumbers::IndicSiyaqNumberEightThousand => '𞲓',
+            IndicSiyaqNumbers::IndicSiyaqNumberNineThousand => '𞲔',
+            IndicSiyaqNumbers::IndicSiyaqNumberTenThousand => '𞲕',
+            IndicSiyaqNumbers::IndicSiyaqNumberTwentyThousand => '𞲖',
+            IndicSiyaqNumbers::IndicSiyaqNumberThirtyThousand => '𞲗',
+            IndicSiyaqNumbers::IndicSiyaqNumberFortyThousand => '𞲘',
+            IndicSiyaqNumbers::IndicSiyaqNumberFiftyThousand => '𞲙',
+            IndicSiyaqNumbers::IndicSiyaqNumberSixtyThousand => '𞲚',
+            IndicSiyaqNumbers::IndicSiyaqNumberSeventyThousand => '𞲛',
+            IndicSiyaqNumbers::IndicSiyaqNumberEightyThousand => '𞲜',
+            IndicSiyaqNumbers::IndicSiyaqNumberNinetyThousand => '𞲝',
+            IndicSiyaqNumbers::IndicSiyaqNumberLakh => '𞲞',
+            IndicSiyaqNumbers::IndicSiyaqNumberLakhan => '𞲟',
+            IndicSiyaqNumbers::IndicSiyaqLakhMark => '𞲠',
+            IndicSiyaqNumbers::IndicSiyaqNumberKaror => '𞲡',
+            IndicSiyaqNumbers::IndicSiyaqNumberKaroran => '𞲢',
+            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedOne => '𞲣',
+            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedTwo => '𞲤',
+            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedThree => '𞲥',
+            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedFour => '𞲦',
+            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedFive => '𞲧',
+            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedSix => '𞲨',
+            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedSeven => '𞲩',
+            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedEight => '𞲪',
+            IndicSiyaqNumbers::IndicSiyaqNumberPrefixedNine => '𞲫',
+            IndicSiyaqNumbers::IndicSiyaqPlaceholder => '𞲬',
+            IndicSiyaqNumbers::IndicSiyaqFractionOneQuarter => '𞲭',
+            IndicSiyaqNumbers::IndicSiyaqFractionOneHalf => '𞲮',
+            IndicSiyaqNumbers::IndicSiyaqFractionThreeQuarters => '𞲯',
+            IndicSiyaqNumbers::IndicSiyaqRupeeMark => '𞲰',
+            IndicSiyaqNumbers::IndicSiyaqNumberAlternateOne => '𞲱',
+            IndicSiyaqNumbers::IndicSiyaqNumberAlternateTwo => '𞲲',
+            IndicSiyaqNumbers::IndicSiyaqNumberAlternateTenThousand => '𞲳',
+            IndicSiyaqNumbers::IndicSiyaqAlternateLakhMark => '𞲴',
         }
     }
 }
@@ -358,76 +218,75 @@ impl Into<char> for IndicSiyaqNumbers {
 impl std::convert::TryFrom<char> for IndicSiyaqNumbers {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            INDIC_SIYAQ_NUMBER_ONE => Ok(IndicSiyaqNumbers::IndicSiyaqNumberOne),
-            INDIC_SIYAQ_NUMBER_TWO => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwo),
-            INDIC_SIYAQ_NUMBER_THREE => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThree),
-            INDIC_SIYAQ_NUMBER_FOUR => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFour),
-            INDIC_SIYAQ_NUMBER_FIVE => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFive),
-            INDIC_SIYAQ_NUMBER_SIX => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSix),
-            INDIC_SIYAQ_NUMBER_SEVEN => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSeven),
-            INDIC_SIYAQ_NUMBER_EIGHT => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEight),
-            INDIC_SIYAQ_NUMBER_NINE => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNine),
-            INDIC_SIYAQ_NUMBER_TEN => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTen),
-            INDIC_SIYAQ_NUMBER_TWENTY => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwenty),
-            INDIC_SIYAQ_NUMBER_THIRTY => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThirty),
-            INDIC_SIYAQ_NUMBER_FORTY => Ok(IndicSiyaqNumbers::IndicSiyaqNumberForty),
-            INDIC_SIYAQ_NUMBER_FIFTY => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFifty),
-            INDIC_SIYAQ_NUMBER_SIXTY => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSixty),
-            INDIC_SIYAQ_NUMBER_SEVENTY => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSeventy),
-            INDIC_SIYAQ_NUMBER_EIGHTY => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEighty),
-            INDIC_SIYAQ_NUMBER_NINETY => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNinety),
-            INDIC_SIYAQ_NUMBER_ONE_HUNDRED => Ok(IndicSiyaqNumbers::IndicSiyaqNumberOneHundred),
-            INDIC_SIYAQ_NUMBER_TWO_HUNDRED => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwoHundred),
-            INDIC_SIYAQ_NUMBER_THREE_HUNDRED => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThreeHundred),
-            INDIC_SIYAQ_NUMBER_FOUR_HUNDRED => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFourHundred),
-            INDIC_SIYAQ_NUMBER_FIVE_HUNDRED => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFiveHundred),
-            INDIC_SIYAQ_NUMBER_SIX_HUNDRED => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSixHundred),
-            INDIC_SIYAQ_NUMBER_SEVEN_HUNDRED => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSevenHundred),
-            INDIC_SIYAQ_NUMBER_EIGHT_HUNDRED => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEightHundred),
-            INDIC_SIYAQ_NUMBER_NINE_HUNDRED => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNineHundred),
-            INDIC_SIYAQ_NUMBER_ONE_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberOneThousand),
-            INDIC_SIYAQ_NUMBER_TWO_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwoThousand),
-            INDIC_SIYAQ_NUMBER_THREE_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThreeThousand),
-            INDIC_SIYAQ_NUMBER_FOUR_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFourThousand),
-            INDIC_SIYAQ_NUMBER_FIVE_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFiveThousand),
-            INDIC_SIYAQ_NUMBER_SIX_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSixThousand),
-            INDIC_SIYAQ_NUMBER_SEVEN_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSevenThousand),
-            INDIC_SIYAQ_NUMBER_EIGHT_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEightThousand),
-            INDIC_SIYAQ_NUMBER_NINE_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNineThousand),
-            INDIC_SIYAQ_NUMBER_TEN_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTenThousand),
-            INDIC_SIYAQ_NUMBER_TWENTY_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwentyThousand),
-            INDIC_SIYAQ_NUMBER_THIRTY_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThirtyThousand),
-            INDIC_SIYAQ_NUMBER_FORTY_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFortyThousand),
-            INDIC_SIYAQ_NUMBER_FIFTY_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFiftyThousand),
-            INDIC_SIYAQ_NUMBER_SIXTY_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSixtyThousand),
-            INDIC_SIYAQ_NUMBER_SEVENTY_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSeventyThousand),
-            INDIC_SIYAQ_NUMBER_EIGHTY_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEightyThousand),
-            INDIC_SIYAQ_NUMBER_NINETY_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNinetyThousand),
-            INDIC_SIYAQ_NUMBER_LAKH => Ok(IndicSiyaqNumbers::IndicSiyaqNumberLakh),
-            INDIC_SIYAQ_NUMBER_LAKHAN => Ok(IndicSiyaqNumbers::IndicSiyaqNumberLakhan),
-            INDIC_SIYAQ_LAKH_MARK => Ok(IndicSiyaqNumbers::IndicSiyaqLakhMark),
-            INDIC_SIYAQ_NUMBER_KAROR => Ok(IndicSiyaqNumbers::IndicSiyaqNumberKaror),
-            INDIC_SIYAQ_NUMBER_KARORAN => Ok(IndicSiyaqNumbers::IndicSiyaqNumberKaroran),
-            INDIC_SIYAQ_NUMBER_PREFIXED_ONE => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedOne),
-            INDIC_SIYAQ_NUMBER_PREFIXED_TWO => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedTwo),
-            INDIC_SIYAQ_NUMBER_PREFIXED_THREE => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedThree),
-            INDIC_SIYAQ_NUMBER_PREFIXED_FOUR => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedFour),
-            INDIC_SIYAQ_NUMBER_PREFIXED_FIVE => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedFive),
-            INDIC_SIYAQ_NUMBER_PREFIXED_SIX => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedSix),
-            INDIC_SIYAQ_NUMBER_PREFIXED_SEVEN => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedSeven),
-            INDIC_SIYAQ_NUMBER_PREFIXED_EIGHT => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedEight),
-            INDIC_SIYAQ_NUMBER_PREFIXED_NINE => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedNine),
-            INDIC_SIYAQ_PLACEHOLDER => Ok(IndicSiyaqNumbers::IndicSiyaqPlaceholder),
-            INDIC_SIYAQ_FRACTION_ONE_QUARTER => Ok(IndicSiyaqNumbers::IndicSiyaqFractionOneQuarter),
-            INDIC_SIYAQ_FRACTION_ONE_HALF => Ok(IndicSiyaqNumbers::IndicSiyaqFractionOneHalf),
-            INDIC_SIYAQ_FRACTION_THREE_QUARTERS => Ok(IndicSiyaqNumbers::IndicSiyaqFractionThreeQuarters),
-            INDIC_SIYAQ_RUPEE_MARK => Ok(IndicSiyaqNumbers::IndicSiyaqRupeeMark),
-            INDIC_SIYAQ_NUMBER_ALTERNATE_ONE => Ok(IndicSiyaqNumbers::IndicSiyaqNumberAlternateOne),
-            INDIC_SIYAQ_NUMBER_ALTERNATE_TWO => Ok(IndicSiyaqNumbers::IndicSiyaqNumberAlternateTwo),
-            INDIC_SIYAQ_NUMBER_ALTERNATE_TEN_THOUSAND => Ok(IndicSiyaqNumbers::IndicSiyaqNumberAlternateTenThousand),
-            INDIC_SIYAQ_ALTERNATE_LAKH_MARK => Ok(IndicSiyaqNumbers::IndicSiyaqAlternateLakhMark),
+            '𞱱' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberOne),
+            '𞱲' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwo),
+            '𞱳' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThree),
+            '𞱴' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFour),
+            '𞱵' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFive),
+            '𞱶' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSix),
+            '𞱷' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSeven),
+            '𞱸' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEight),
+            '𞱹' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNine),
+            '𞱺' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTen),
+            '𞱻' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwenty),
+            '𞱼' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThirty),
+            '𞱽' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberForty),
+            '𞱾' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFifty),
+            '𞱿' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSixty),
+            '𞲀' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSeventy),
+            '𞲁' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEighty),
+            '𞲂' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNinety),
+            '𞲃' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberOneHundred),
+            '𞲄' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwoHundred),
+            '𞲅' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThreeHundred),
+            '𞲆' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFourHundred),
+            '𞲇' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFiveHundred),
+            '𞲈' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSixHundred),
+            '𞲉' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSevenHundred),
+            '𞲊' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEightHundred),
+            '𞲋' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNineHundred),
+            '𞲌' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberOneThousand),
+            '𞲍' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwoThousand),
+            '𞲎' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThreeThousand),
+            '𞲏' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFourThousand),
+            '𞲐' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFiveThousand),
+            '𞲑' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSixThousand),
+            '𞲒' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSevenThousand),
+            '𞲓' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEightThousand),
+            '𞲔' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNineThousand),
+            '𞲕' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTenThousand),
+            '𞲖' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberTwentyThousand),
+            '𞲗' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberThirtyThousand),
+            '𞲘' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFortyThousand),
+            '𞲙' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberFiftyThousand),
+            '𞲚' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSixtyThousand),
+            '𞲛' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberSeventyThousand),
+            '𞲜' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberEightyThousand),
+            '𞲝' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberNinetyThousand),
+            '𞲞' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberLakh),
+            '𞲟' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberLakhan),
+            '𞲠' => Ok(IndicSiyaqNumbers::IndicSiyaqLakhMark),
+            '𞲡' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberKaror),
+            '𞲢' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberKaroran),
+            '𞲣' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedOne),
+            '𞲤' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedTwo),
+            '𞲥' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedThree),
+            '𞲦' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedFour),
+            '𞲧' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedFive),
+            '𞲨' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedSix),
+            '𞲩' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedSeven),
+            '𞲪' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedEight),
+            '𞲫' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberPrefixedNine),
+            '𞲬' => Ok(IndicSiyaqNumbers::IndicSiyaqPlaceholder),
+            '𞲭' => Ok(IndicSiyaqNumbers::IndicSiyaqFractionOneQuarter),
+            '𞲮' => Ok(IndicSiyaqNumbers::IndicSiyaqFractionOneHalf),
+            '𞲯' => Ok(IndicSiyaqNumbers::IndicSiyaqFractionThreeQuarters),
+            '𞲰' => Ok(IndicSiyaqNumbers::IndicSiyaqRupeeMark),
+            '𞲱' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberAlternateOne),
+            '𞲲' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberAlternateTwo),
+            '𞲳' => Ok(IndicSiyaqNumbers::IndicSiyaqNumberAlternateTenThousand),
+            '𞲴' => Ok(IndicSiyaqNumbers::IndicSiyaqAlternateLakhMark),
             _ => Err(()),
         }
     }

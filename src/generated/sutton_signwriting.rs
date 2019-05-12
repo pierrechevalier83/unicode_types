@@ -1,1348 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{1d800}: '𝠀'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX: char = '𝠀';
-    /// \u{1d801}: '𝠁'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX: char = '𝠁';
-    /// \u{1d802}: '𝠂'
-    pub const SIGNWRITING_HAND_DASH_CUP_INDEX: char = '𝠂';
-    /// \u{1d803}: '𝠃'
-    pub const SIGNWRITING_HAND_DASH_OVAL_INDEX: char = '𝠃';
-    /// \u{1d804}: '𝠄'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX: char = '𝠄';
-    /// \u{1d805}: '𝠅'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_INDEX: char = '𝠅';
-    /// \u{1d806}: '𝠆'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_BENT: char = '𝠆';
-    /// \u{1d807}: '𝠇'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX_BENT: char = '𝠇';
-    /// \u{1d808}: '𝠈'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_INDEX_BENT: char = '𝠈';
-    /// \u{1d809}: '𝠉'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_RAISED_KNUCKLE: char = '𝠉';
-    /// \u{1d80a}: '𝠊'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_CUPPED: char = '𝠊';
-    /// \u{1d80b}: '𝠋'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED: char = '𝠋';
-    /// \u{1d80c}: '𝠌'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED_LOW: char = '𝠌';
-    /// \u{1d80d}: '𝠍'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX_HINGE: char = '𝠍';
-    /// \u{1d80e}: '𝠎'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE: char = '𝠎';
-    /// \u{1d80f}: '𝠏'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE: char = '𝠏';
-    /// \u{1d810}: '𝠐'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_BENT: char = '𝠐';
-    /// \u{1d811}: '𝠑'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RAISED_KNUCKLES: char = '𝠑';
-    /// \u{1d812}: '𝠒'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_HINGED: char = '𝠒';
-    /// \u{1d813}: '𝠓'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_UP_MIDDLE_HINGED: char = '𝠓';
-    /// \u{1d814}: '𝠔'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED_MIDDLE_UP: char = '𝠔';
-    /// \u{1d815}: '𝠕'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED: char = '𝠕';
-    /// \u{1d816}: '𝠖'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_INDEX_BENT: char = '𝠖';
-    /// \u{1d817}: '𝠗'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_MIDDLE_BENT: char = '𝠗';
-    /// \u{1d818}: '𝠘'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_CUPPED: char = '𝠘';
-    /// \u{1d819}: '𝠙'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_HINGED: char = '𝠙';
-    /// \u{1d81a}: '𝠚'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CROSSED: char = '𝠚';
-    /// \u{1d81b}: '𝠛'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_CROSSED: char = '𝠛';
-    /// \u{1d81c}: '𝠜'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_BENT_OVER_INDEX: char = '𝠜';
-    /// \u{1d81d}: '𝠝'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_BENT_OVER_MIDDLE: char = '𝠝';
-    /// \u{1d81e}: '𝠞'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB: char = '𝠞';
-    /// \u{1d81f}: '𝠟'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_THUMB: char = '𝠟';
-    /// \u{1d820}: '𝠠'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_STRAIGHT_THUMB_BENT: char = '𝠠';
-    /// \u{1d821}: '𝠡'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_BENT_THUMB_STRAIGHT: char = '𝠡';
-    /// \u{1d822}: '𝠢'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_BENT: char = '𝠢';
-    /// \u{1d823}: '𝠣'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_HINGED_SPREAD_THUMB_SIDE: char = '𝠣';
-    /// \u{1d824}: '𝠤'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_UP_MIDDLE_HINGED_THUMB_SIDE: char = '𝠤';
-    /// \u{1d825}: '𝠥'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_UP_MIDDLE_HINGED_THUMB_CONJOINED: char = '𝠥';
-    /// \u{1d826}: '𝠦'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED_MIDDLE_UP_THUMB_SIDE: char = '𝠦';
-    /// \u{1d827}: '𝠧'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_UP_SPREAD_THUMB_FORWARD: char = '𝠧';
-    /// \u{1d828}: '𝠨'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_CUPPED: char = '𝠨';
-    /// \u{1d829}: '𝠩'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_CIRCLED: char = '𝠩';
-    /// \u{1d82a}: '𝠪'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_HOOKED: char = '𝠪';
-    /// \u{1d82b}: '𝠫'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_HINGED: char = '𝠫';
-    /// \u{1d82c}: '𝠬'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_INDEX_MIDDLE_STRAIGHT: char = '𝠬';
-    /// \u{1d82d}: '𝠭'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_SIDE: char = '𝠭';
-    /// \u{1d82e}: '𝠮'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_SIDE_CONJOINED: char = '𝠮';
-    /// \u{1d82f}: '𝠯'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_SIDE_BENT: char = '𝠯';
-    /// \u{1d830}: '𝠰'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_HOOKED_INDEX_UP: char = '𝠰';
-    /// \u{1d831}: '𝠱'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_HOOKED_MIDDLE_UP: char = '𝠱';
-    /// \u{1d832}: '𝠲'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_HINGED_THUMB_SIDE: char = '𝠲';
-    /// \u{1d833}: '𝠳'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CROSSED_THUMB_SIDE: char = '𝠳';
-    /// \u{1d834}: '𝠴'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_FORWARD: char = '𝠴';
-    /// \u{1d835}: '𝠵'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_CUPPED_THUMB_FORWARD: char = '𝠵';
-    /// \u{1d836}: '𝠶'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_CUPPED_INDEX_UP: char = '𝠶';
-    /// \u{1d837}: '𝠷'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CUPPED_MIDDLE_UP: char = '𝠷';
-    /// \u{1d838}: '𝠸'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_CIRCLED_INDEX_UP: char = '𝠸';
-    /// \u{1d839}: '𝠹'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_CIRCLED_INDEX_HINGED: char = '𝠹';
-    /// \u{1d83a}: '𝠺'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_ANGLED_OUT_MIDDLE_UP: char = '𝠺';
-    /// \u{1d83b}: '𝠻'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_ANGLED_IN_MIDDLE_UP: char = '𝠻';
-    /// \u{1d83c}: '𝠼'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CIRCLED_MIDDLE_UP: char = '𝠼';
-    /// \u{1d83d}: '𝠽'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_CONJOINED_HINGED: char = '𝠽';
-    /// \u{1d83e}: '𝠾'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_ANGLED_OUT: char = '𝠾';
-    /// \u{1d83f}: '𝠿'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_ANGLED: char = '𝠿';
-    /// \u{1d840}: '𝡀'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_ANGLED_OUT_INDEX_UP: char = '𝡀';
-    /// \u{1d841}: '𝡁'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_ANGLED_OUT_INDEX_CROSSED: char = '𝡁';
-    /// \u{1d842}: '𝡂'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_ANGLED_INDEX_UP: char = '𝡂';
-    /// \u{1d843}: '𝡃'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_HOOKED_MIDDLE_HINGED: char = '𝡃';
-    /// \u{1d844}: '𝡄'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS: char = '𝡄';
-    /// \u{1d845}: '𝡅'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_BENT: char = '𝡅';
-    /// \u{1d846}: '𝡆'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_HINGED: char = '𝡆';
-    /// \u{1d847}: '𝡇'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_CONJOINED: char = '𝡇';
-    /// \u{1d848}: '𝡈'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_CONJOINED_SPLIT: char = '𝡈';
-    /// \u{1d849}: '𝡉'
-    pub const SIGNWRITING_HAND_DASH_CLAW_FOUR_FINGERS_CONJOINED: char = '𝡉';
-    /// \u{1d84a}: '𝡊'
-    pub const SIGNWRITING_HAND_DASH_FIST_FOUR_FINGERS_CONJOINED_BENT: char = '𝡊';
-    /// \u{1d84b}: '𝡋'
-    pub const SIGNWRITING_HAND_DASH_HINGE_FOUR_FINGERS_CONJOINED: char = '𝡋';
-    /// \u{1d84c}: '𝡌'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD: char = '𝡌';
-    /// \u{1d84d}: '𝡍'
-    pub const SIGNWRITING_HAND_DASH_FLAT_HEEL_FIVE_FINGERS_SPREAD: char = '𝡍';
-    /// \u{1d84e}: '𝡎'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_FOUR_BENT: char = '𝡎';
-    /// \u{1d84f}: '𝡏'
-    pub const SIGNWRITING_HAND_DASH_FLAT_HEEL_FIVE_FINGERS_SPREAD_FOUR_BENT: char = '𝡏';
-    /// \u{1d850}: '𝡐'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_BENT: char = '𝡐';
-    /// \u{1d851}: '𝡑'
-    pub const SIGNWRITING_HAND_DASH_FLAT_HEEL_FIVE_FINGERS_SPREAD_BENT: char = '𝡑';
-    /// \u{1d852}: '𝡒'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_THUMB_FORWARD: char = '𝡒';
-    /// \u{1d853}: '𝡓'
-    pub const SIGNWRITING_HAND_DASH_CUP_FIVE_FINGERS_SPREAD: char = '𝡓';
-    /// \u{1d854}: '𝡔'
-    pub const SIGNWRITING_HAND_DASH_CUP_FIVE_FINGERS_SPREAD_OPEN: char = '𝡔';
-    /// \u{1d855}: '𝡕'
-    pub const SIGNWRITING_HAND_DASH_HINGE_FIVE_FINGERS_SPREAD_OPEN: char = '𝡕';
-    /// \u{1d856}: '𝡖'
-    pub const SIGNWRITING_HAND_DASH_OVAL_FIVE_FINGERS_SPREAD: char = '𝡖';
-    /// \u{1d857}: '𝡗'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_HINGED: char = '𝡗';
-    /// \u{1d858}: '𝡘'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_HINGED_THUMB_SIDE: char = '𝡘';
-    /// \u{1d859}: '𝡙'
-    pub const SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_HINGED_NO_THUMB: char = '𝡙';
-    /// \u{1d85a}: '𝡚'
-    pub const SIGNWRITING_HAND_DASH_FLAT: char = '𝡚';
-    /// \u{1d85b}: '𝡛'
-    pub const SIGNWRITING_HAND_DASH_FLAT_BETWEEN_PALM_FACINGS: char = '𝡛';
-    /// \u{1d85c}: '𝡜'
-    pub const SIGNWRITING_HAND_DASH_FLAT_HEEL: char = '𝡜';
-    /// \u{1d85d}: '𝡝'
-    pub const SIGNWRITING_HAND_DASH_FLAT_THUMB_SIDE: char = '𝡝';
-    /// \u{1d85e}: '𝡞'
-    pub const SIGNWRITING_HAND_DASH_FLAT_HEEL_THUMB_SIDE: char = '𝡞';
-    /// \u{1d85f}: '𝡟'
-    pub const SIGNWRITING_HAND_DASH_FLAT_THUMB_BENT: char = '𝡟';
-    /// \u{1d860}: '𝡠'
-    pub const SIGNWRITING_HAND_DASH_FLAT_THUMB_FORWARD: char = '𝡠';
-    /// \u{1d861}: '𝡡'
-    pub const SIGNWRITING_HAND_DASH_FLAT_SPLIT_INDEX_THUMB_SIDE: char = '𝡡';
-    /// \u{1d862}: '𝡢'
-    pub const SIGNWRITING_HAND_DASH_FLAT_SPLIT_CENTRE: char = '𝡢';
-    /// \u{1d863}: '𝡣'
-    pub const SIGNWRITING_HAND_DASH_FLAT_SPLIT_CENTRE_THUMB_SIDE: char = '𝡣';
-    /// \u{1d864}: '𝡤'
-    pub const SIGNWRITING_HAND_DASH_FLAT_SPLIT_CENTRE_THUMB_SIDE_BENT: char = '𝡤';
-    /// \u{1d865}: '𝡥'
-    pub const SIGNWRITING_HAND_DASH_FLAT_SPLIT_LITTLE: char = '𝡥';
-    /// \u{1d866}: '𝡦'
-    pub const SIGNWRITING_HAND_DASH_CLAW: char = '𝡦';
-    /// \u{1d867}: '𝡧'
-    pub const SIGNWRITING_HAND_DASH_CLAW_THUMB_SIDE: char = '𝡧';
-    /// \u{1d868}: '𝡨'
-    pub const SIGNWRITING_HAND_DASH_CLAW_NO_THUMB: char = '𝡨';
-    /// \u{1d869}: '𝡩'
-    pub const SIGNWRITING_HAND_DASH_CLAW_THUMB_FORWARD: char = '𝡩';
-    /// \u{1d86a}: '𝡪'
-    pub const SIGNWRITING_HAND_DASH_HOOK_CURLICUE: char = '𝡪';
-    /// \u{1d86b}: '𝡫'
-    pub const SIGNWRITING_HAND_DASH_HOOK: char = '𝡫';
-    /// \u{1d86c}: '𝡬'
-    pub const SIGNWRITING_HAND_DASH_CUP_OPEN: char = '𝡬';
-    /// \u{1d86d}: '𝡭'
-    pub const SIGNWRITING_HAND_DASH_CUP: char = '𝡭';
-    /// \u{1d86e}: '𝡮'
-    pub const SIGNWRITING_HAND_DASH_CUP_OPEN_THUMB_SIDE: char = '𝡮';
-    /// \u{1d86f}: '𝡯'
-    pub const SIGNWRITING_HAND_DASH_CUP_THUMB_SIDE: char = '𝡯';
-    /// \u{1d870}: '𝡰'
-    pub const SIGNWRITING_HAND_DASH_CUP_OPEN_NO_THUMB: char = '𝡰';
-    /// \u{1d871}: '𝡱'
-    pub const SIGNWRITING_HAND_DASH_CUP_NO_THUMB: char = '𝡱';
-    /// \u{1d872}: '𝡲'
-    pub const SIGNWRITING_HAND_DASH_CUP_OPEN_THUMB_FORWARD: char = '𝡲';
-    /// \u{1d873}: '𝡳'
-    pub const SIGNWRITING_HAND_DASH_CUP_THUMB_FORWARD: char = '𝡳';
-    /// \u{1d874}: '𝡴'
-    pub const SIGNWRITING_HAND_DASH_CURLICUE_OPEN: char = '𝡴';
-    /// \u{1d875}: '𝡵'
-    pub const SIGNWRITING_HAND_DASH_CURLICUE: char = '𝡵';
-    /// \u{1d876}: '𝡶'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE: char = '𝡶';
-    /// \u{1d877}: '𝡷'
-    pub const SIGNWRITING_HAND_DASH_OVAL: char = '𝡷';
-    /// \u{1d878}: '𝡸'
-    pub const SIGNWRITING_HAND_DASH_OVAL_THUMB_SIDE: char = '𝡸';
-    /// \u{1d879}: '𝡹'
-    pub const SIGNWRITING_HAND_DASH_OVAL_NO_THUMB: char = '𝡹';
-    /// \u{1d87a}: '𝡺'
-    pub const SIGNWRITING_HAND_DASH_OVAL_THUMB_FORWARD: char = '𝡺';
-    /// \u{1d87b}: '𝡻'
-    pub const SIGNWRITING_HAND_DASH_HINGE_OPEN: char = '𝡻';
-    /// \u{1d87c}: '𝡼'
-    pub const SIGNWRITING_HAND_DASH_HINGE_OPEN_THUMB_FORWARD: char = '𝡼';
-    /// \u{1d87d}: '𝡽'
-    pub const SIGNWRITING_HAND_DASH_HINGE: char = '𝡽';
-    /// \u{1d87e}: '𝡾'
-    pub const SIGNWRITING_HAND_DASH_HINGE_SMALL: char = '𝡾';
-    /// \u{1d87f}: '𝡿'
-    pub const SIGNWRITING_HAND_DASH_HINGE_OPEN_THUMB_SIDE: char = '𝡿';
-    /// \u{1d880}: '𝢀'
-    pub const SIGNWRITING_HAND_DASH_HINGE_THUMB_SIDE: char = '𝢀';
-    /// \u{1d881}: '𝢁'
-    pub const SIGNWRITING_HAND_DASH_HINGE_OPEN_NO_THUMB: char = '𝢁';
-    /// \u{1d882}: '𝢂'
-    pub const SIGNWRITING_HAND_DASH_HINGE_NO_THUMB: char = '𝢂';
-    /// \u{1d883}: '𝢃'
-    pub const SIGNWRITING_HAND_DASH_HINGE_THUMB_SIDE_TOUCHING_INDEX: char = '𝢃';
-    /// \u{1d884}: '𝢄'
-    pub const SIGNWRITING_HAND_DASH_HINGE_THUMB_BETWEEN_MIDDLE_RING: char = '𝢄';
-    /// \u{1d885}: '𝢅'
-    pub const SIGNWRITING_HAND_DASH_ANGLE: char = '𝢅';
-    /// \u{1d886}: '𝢆'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RING: char = '𝢆';
-    /// \u{1d887}: '𝢇'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_RING: char = '𝢇';
-    /// \u{1d888}: '𝢈'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_MIDDLE_RING: char = '𝢈';
-    /// \u{1d889}: '𝢉'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_INDEX_MIDDLE_RING: char = '𝢉';
-    /// \u{1d88a}: '𝢊'
-    pub const SIGNWRITING_HAND_DASH_HINGE_LITTLE: char = '𝢊';
-    /// \u{1d88b}: '𝢋'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RING_BENT: char = '𝢋';
-    /// \u{1d88c}: '𝢌'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RING_CONJOINED: char = '𝢌';
-    /// \u{1d88d}: '𝢍'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_MIDDLE_RING_CONJOINED: char = '𝢍';
-    /// \u{1d88e}: '𝢎'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN: char = '𝢎';
-    /// \u{1d88f}: '𝢏'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN_RIPPLE_STRAIGHT: char = '𝢏';
-    /// \u{1d890}: '𝢐'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN_RIPPLE_CURVED: char = '𝢐';
-    /// \u{1d891}: '𝢑'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN_OTHERS_CIRCLED: char = '𝢑';
-    /// \u{1d892}: '𝢒'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_UP: char = '𝢒';
-    /// \u{1d893}: '𝢓'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_LITTLE_UP: char = '𝢓';
-    /// \u{1d894}: '𝢔'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_LITTLE_UP: char = '𝢔';
-    /// \u{1d895}: '𝢕'
-    pub const SIGNWRITING_HAND_DASH_OVAL_LITTLE_UP: char = '𝢕';
-    /// \u{1d896}: '𝢖'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_LITTLE_UP: char = '𝢖';
-    /// \u{1d897}: '𝢗'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_RAISED_KNUCKLE: char = '𝢗';
-    /// \u{1d898}: '𝢘'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_BENT: char = '𝢘';
-    /// \u{1d899}: '𝢙'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_TOUCHES_THUMB: char = '𝢙';
-    /// \u{1d89a}: '𝢚'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_THUMB: char = '𝢚';
-    /// \u{1d89b}: '𝢛'
-    pub const SIGNWRITING_HAND_DASH_HINGE_LITTLE_THUMB: char = '𝢛';
-    /// \u{1d89c}: '𝢜'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_INDEX_THUMB: char = '𝢜';
-    /// \u{1d89d}: '𝢝'
-    pub const SIGNWRITING_HAND_DASH_HINGE_LITTLE_INDEX_THUMB: char = '𝢝';
-    /// \u{1d89e}: '𝢞'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_LITTLE_INDEX_THUMB_INDEX_THUMB_OUT: char = '𝢞';
-    /// \u{1d89f}: '𝢟'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_LITTLE_INDEX_THUMB_INDEX_THUMB: char = '𝢟';
-    /// \u{1d8a0}: '𝢠'
-    pub const SIGNWRITING_HAND_DASH_FIST_LITTLE_INDEX: char = '𝢠';
-    /// \u{1d8a1}: '𝢡'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_LITTLE_INDEX: char = '𝢡';
-    /// \u{1d8a2}: '𝢢'
-    pub const SIGNWRITING_HAND_DASH_HINGE_LITTLE_INDEX: char = '𝢢';
-    /// \u{1d8a3}: '𝢣'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_LITTLE_INDEX: char = '𝢣';
-    /// \u{1d8a4}: '𝢤'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_LITTLE: char = '𝢤';
-    /// \u{1d8a5}: '𝢥'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_LITTLE: char = '𝢥';
-    /// \u{1d8a6}: '𝢦'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_MIDDLE_LITTLE: char = '𝢦';
-    /// \u{1d8a7}: '𝢧'
-    pub const SIGNWRITING_HAND_DASH_HINGE_RING: char = '𝢧';
-    /// \u{1d8a8}: '𝢨'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_INDEX_MIDDLE_LITTLE: char = '𝢨';
-    /// \u{1d8a9}: '𝢩'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CROSS_LITTLE: char = '𝢩';
-    /// \u{1d8aa}: '𝢪'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_CROSS_LITTLE: char = '𝢪';
-    /// \u{1d8ab}: '𝢫'
-    pub const SIGNWRITING_HAND_DASH_FIST_RING_DOWN: char = '𝢫';
-    /// \u{1d8ac}: '𝢬'
-    pub const SIGNWRITING_HAND_DASH_HINGE_RING_DOWN_INDEX_THUMB_HOOK_MIDDLE: char = '𝢬';
-    /// \u{1d8ad}: '𝢭'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_RING_DOWN_MIDDLE_THUMB_INDEX_CROSS: char = '𝢭';
-    /// \u{1d8ae}: '𝢮'
-    pub const SIGNWRITING_HAND_DASH_FIST_RING_UP: char = '𝢮';
-    /// \u{1d8af}: '𝢯'
-    pub const SIGNWRITING_HAND_DASH_FIST_RING_RAISED_KNUCKLE: char = '𝢯';
-    /// \u{1d8b0}: '𝢰'
-    pub const SIGNWRITING_HAND_DASH_FIST_RING_LITTLE: char = '𝢰';
-    /// \u{1d8b1}: '𝢱'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_RING_LITTLE: char = '𝢱';
-    /// \u{1d8b2}: '𝢲'
-    pub const SIGNWRITING_HAND_DASH_OVAL_RING_LITTLE: char = '𝢲';
-    /// \u{1d8b3}: '𝢳'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_RING_LITTLE: char = '𝢳';
-    /// \u{1d8b4}: '𝢴'
-    pub const SIGNWRITING_HAND_DASH_FIST_RING_MIDDLE: char = '𝢴';
-    /// \u{1d8b5}: '𝢵'
-    pub const SIGNWRITING_HAND_DASH_FIST_RING_MIDDLE_CONJOINED: char = '𝢵';
-    /// \u{1d8b6}: '𝢶'
-    pub const SIGNWRITING_HAND_DASH_FIST_RING_MIDDLE_RAISED_KNUCKLES: char = '𝢶';
-    /// \u{1d8b7}: '𝢷'
-    pub const SIGNWRITING_HAND_DASH_FIST_RING_INDEX: char = '𝢷';
-    /// \u{1d8b8}: '𝢸'
-    pub const SIGNWRITING_HAND_DASH_FIST_RING_THUMB: char = '𝢸';
-    /// \u{1d8b9}: '𝢹'
-    pub const SIGNWRITING_HAND_DASH_HOOK_RING_THUMB: char = '𝢹';
-    /// \u{1d8ba}: '𝢺'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_RING_LITTLE: char = '𝢺';
-    /// \u{1d8bb}: '𝢻'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_INDEX_RING_LITTLE: char = '𝢻';
-    /// \u{1d8bc}: '𝢼'
-    pub const SIGNWRITING_HAND_DASH_CURLICUE_INDEX_RING_LITTLE_ON: char = '𝢼';
-    /// \u{1d8bd}: '𝢽'
-    pub const SIGNWRITING_HAND_DASH_HOOK_INDEX_RING_LITTLE_OUT: char = '𝢽';
-    /// \u{1d8be}: '𝢾'
-    pub const SIGNWRITING_HAND_DASH_HOOK_INDEX_RING_LITTLE_IN: char = '𝢾';
-    /// \u{1d8bf}: '𝢿'
-    pub const SIGNWRITING_HAND_DASH_HOOK_INDEX_RING_LITTLE_UNDER: char = '𝢿';
-    /// \u{1d8c0}: '𝣀'
-    pub const SIGNWRITING_HAND_DASH_CUP_INDEX_RING_LITTLE: char = '𝣀';
-    /// \u{1d8c1}: '𝣁'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_RING_LITTLE: char = '𝣁';
-    /// \u{1d8c2}: '𝣂'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_INDEX_RING_LITTLE_OUT: char = '𝣂';
-    /// \u{1d8c3}: '𝣃'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_INDEX_RING_LITTLE: char = '𝣃';
-    /// \u{1d8c4}: '𝣄'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_DOWN: char = '𝣄';
-    /// \u{1d8c5}: '𝣅'
-    pub const SIGNWRITING_HAND_DASH_HINGE_MIDDLE: char = '𝣅';
-    /// \u{1d8c6}: '𝣆'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_UP: char = '𝣆';
-    /// \u{1d8c7}: '𝣇'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_MIDDLE_UP: char = '𝣇';
-    /// \u{1d8c8}: '𝣈'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_RAISED_KNUCKLE: char = '𝣈';
-    /// \u{1d8c9}: '𝣉'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_UP_THUMB_SIDE: char = '𝣉';
-    /// \u{1d8ca}: '𝣊'
-    pub const SIGNWRITING_HAND_DASH_HOOK_MIDDLE_THUMB: char = '𝣊';
-    /// \u{1d8cb}: '𝣋'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_LITTLE: char = '𝣋';
-    /// \u{1d8cc}: '𝣌'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_LITTLE: char = '𝣌';
-    /// \u{1d8cd}: '𝣍'
-    pub const SIGNWRITING_HAND_DASH_FIST_MIDDLE_RING_LITTLE: char = '𝣍';
-    /// \u{1d8ce}: '𝣎'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_MIDDLE_RING_LITTLE: char = '𝣎';
-    /// \u{1d8cf}: '𝣏'
-    pub const SIGNWRITING_HAND_DASH_CURLICUE_MIDDLE_RING_LITTLE_ON: char = '𝣏';
-    /// \u{1d8d0}: '𝣐'
-    pub const SIGNWRITING_HAND_DASH_CUP_MIDDLE_RING_LITTLE: char = '𝣐';
-    /// \u{1d8d1}: '𝣑'
-    pub const SIGNWRITING_HAND_DASH_HINGE_MIDDLE_RING_LITTLE: char = '𝣑';
-    /// \u{1d8d2}: '𝣒'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_MIDDLE_RING_LITTLE_OUT: char = '𝣒';
-    /// \u{1d8d3}: '𝣓'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_MIDDLE_RING_LITTLE_IN: char = '𝣓';
-    /// \u{1d8d4}: '𝣔'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_MIDDLE_RING_LITTLE: char = '𝣔';
-    /// \u{1d8d5}: '𝣕'
-    pub const SIGNWRITING_HAND_DASH_CIRCLE_MIDDLE_RING_LITTLE_BENT: char = '𝣕';
-    /// \u{1d8d6}: '𝣖'
-    pub const SIGNWRITING_HAND_DASH_CLAW_MIDDLE_RING_LITTLE_CONJOINED: char = '𝣖';
-    /// \u{1d8d7}: '𝣗'
-    pub const SIGNWRITING_HAND_DASH_CLAW_MIDDLE_RING_LITTLE_CONJOINED_SIDE: char = '𝣗';
-    /// \u{1d8d8}: '𝣘'
-    pub const SIGNWRITING_HAND_DASH_HOOK_MIDDLE_RING_LITTLE_CONJOINED_OUT: char = '𝣘';
-    /// \u{1d8d9}: '𝣙'
-    pub const SIGNWRITING_HAND_DASH_HOOK_MIDDLE_RING_LITTLE_CONJOINED_IN: char = '𝣙';
-    /// \u{1d8da}: '𝣚'
-    pub const SIGNWRITING_HAND_DASH_HOOK_MIDDLE_RING_LITTLE_CONJOINED: char = '𝣚';
-    /// \u{1d8db}: '𝣛'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_HINGED: char = '𝣛';
-    /// \u{1d8dc}: '𝣜'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE: char = '𝣜';
-    /// \u{1d8dd}: '𝣝'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_SIDE: char = '𝣝';
-    /// \u{1d8de}: '𝣞'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_THUMB_DIAGONAL: char = '𝣞';
-    /// \u{1d8df}: '𝣟'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_THUMB_CONJOINED: char = '𝣟';
-    /// \u{1d8e0}: '𝣠'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_THUMB_BENT: char = '𝣠';
-    /// \u{1d8e1}: '𝣡'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_INDEX_BENT: char = '𝣡';
-    /// \u{1d8e2}: '𝣢'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_BOTH_BENT: char = '𝣢';
-    /// \u{1d8e3}: '𝣣'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_INDEX_HINGE: char = '𝣣';
-    /// \u{1d8e4}: '𝣤'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_FORWARD_INDEX_STRAIGHT: char = '𝣤';
-    /// \u{1d8e5}: '𝣥'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_FORWARD_INDEX_BENT: char = '𝣥';
-    /// \u{1d8e6}: '𝣦'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_HOOK: char = '𝣦';
-    /// \u{1d8e7}: '𝣧'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CURLICUE: char = '𝣧';
-    /// \u{1d8e8}: '𝣨'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CURVE_THUMB_INSIDE: char = '𝣨';
-    /// \u{1d8e9}: '𝣩'
-    pub const SIGNWRITING_HAND_DASH_CLAW_INDEX_THUMB_CURVE_THUMB_INSIDE: char = '𝣩';
-    /// \u{1d8ea}: '𝣪'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CURVE_THUMB_UNDER: char = '𝣪';
-    /// \u{1d8eb}: '𝣫'
-    pub const SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CIRCLE: char = '𝣫';
-    /// \u{1d8ec}: '𝣬'
-    pub const SIGNWRITING_HAND_DASH_CUP_INDEX_THUMB: char = '𝣬';
-    /// \u{1d8ed}: '𝣭'
-    pub const SIGNWRITING_HAND_DASH_CUP_INDEX_THUMB_OPEN: char = '𝣭';
-    /// \u{1d8ee}: '𝣮'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_OPEN: char = '𝣮';
-    /// \u{1d8ef}: '𝣯'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_LARGE: char = '𝣯';
-    /// \u{1d8f0}: '𝣰'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB: char = '𝣰';
-    /// \u{1d8f1}: '𝣱'
-    pub const SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_SMALL: char = '𝣱';
-    /// \u{1d8f2}: '𝣲'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_INDEX_THUMB_OUT: char = '𝣲';
-    /// \u{1d8f3}: '𝣳'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_INDEX_THUMB_IN: char = '𝣳';
-    /// \u{1d8f4}: '𝣴'
-    pub const SIGNWRITING_HAND_DASH_ANGLE_INDEX_THUMB: char = '𝣴';
-    /// \u{1d8f5}: '𝣵'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB: char = '𝣵';
-    /// \u{1d8f6}: '𝣶'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_HEEL: char = '𝣶';
-    /// \u{1d8f7}: '𝣷'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_SIDE_DIAGONAL: char = '𝣷';
-    /// \u{1d8f8}: '𝣸'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_SIDE_CONJOINED: char = '𝣸';
-    /// \u{1d8f9}: '𝣹'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_SIDE_BENT: char = '𝣹';
-    /// \u{1d8fa}: '𝣺'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_FORWARD: char = '𝣺';
-    /// \u{1d8fb}: '𝣻'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_INDEX_MIDDLE: char = '𝣻';
-    /// \u{1d8fc}: '𝣼'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_MIDDLE_RING: char = '𝣼';
-    /// \u{1d8fd}: '𝣽'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_RING_LITTLE: char = '𝣽';
-    /// \u{1d8fe}: '𝣾'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_TWO_FINGERS: char = '𝣾';
-    /// \u{1d8ff}: '𝣿'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_OVER_TWO_FINGERS: char = '𝣿';
-    /// \u{1d900}: '𝤀'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_THREE_FINGERS: char = '𝤀';
-    /// \u{1d901}: '𝤁'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_FOUR_FINGERS: char = '𝤁';
-    /// \u{1d902}: '𝤂'
-    pub const SIGNWRITING_HAND_DASH_FIST_THUMB_OVER_FOUR_RAISED_KNUCKLES: char = '𝤂';
-    /// \u{1d903}: '𝤃'
-    pub const SIGNWRITING_HAND_DASH_FIST: char = '𝤃';
-    /// \u{1d904}: '𝤄'
-    pub const SIGNWRITING_HAND_DASH_FIST_HEEL: char = '𝤄';
-    /// \u{1d905}: '𝤅'
-    pub const SIGNWRITING_TOUCH_SINGLE: char = '𝤅';
-    /// \u{1d906}: '𝤆'
-    pub const SIGNWRITING_TOUCH_MULTIPLE: char = '𝤆';
-    /// \u{1d907}: '𝤇'
-    pub const SIGNWRITING_TOUCH_BETWEEN: char = '𝤇';
-    /// \u{1d908}: '𝤈'
-    pub const SIGNWRITING_GRASP_SINGLE: char = '𝤈';
-    /// \u{1d909}: '𝤉'
-    pub const SIGNWRITING_GRASP_MULTIPLE: char = '𝤉';
-    /// \u{1d90a}: '𝤊'
-    pub const SIGNWRITING_GRASP_BETWEEN: char = '𝤊';
-    /// \u{1d90b}: '𝤋'
-    pub const SIGNWRITING_STRIKE_SINGLE: char = '𝤋';
-    /// \u{1d90c}: '𝤌'
-    pub const SIGNWRITING_STRIKE_MULTIPLE: char = '𝤌';
-    /// \u{1d90d}: '𝤍'
-    pub const SIGNWRITING_STRIKE_BETWEEN: char = '𝤍';
-    /// \u{1d90e}: '𝤎'
-    pub const SIGNWRITING_BRUSH_SINGLE: char = '𝤎';
-    /// \u{1d90f}: '𝤏'
-    pub const SIGNWRITING_BRUSH_MULTIPLE: char = '𝤏';
-    /// \u{1d910}: '𝤐'
-    pub const SIGNWRITING_BRUSH_BETWEEN: char = '𝤐';
-    /// \u{1d911}: '𝤑'
-    pub const SIGNWRITING_RUB_SINGLE: char = '𝤑';
-    /// \u{1d912}: '𝤒'
-    pub const SIGNWRITING_RUB_MULTIPLE: char = '𝤒';
-    /// \u{1d913}: '𝤓'
-    pub const SIGNWRITING_RUB_BETWEEN: char = '𝤓';
-    /// \u{1d914}: '𝤔'
-    pub const SIGNWRITING_SURFACE_SYMBOLS: char = '𝤔';
-    /// \u{1d915}: '𝤕'
-    pub const SIGNWRITING_SURFACE_BETWEEN: char = '𝤕';
-    /// \u{1d916}: '𝤖'
-    pub const SIGNWRITING_SQUEEZE_LARGE_SINGLE: char = '𝤖';
-    /// \u{1d917}: '𝤗'
-    pub const SIGNWRITING_SQUEEZE_SMALL_SINGLE: char = '𝤗';
-    /// \u{1d918}: '𝤘'
-    pub const SIGNWRITING_SQUEEZE_LARGE_MULTIPLE: char = '𝤘';
-    /// \u{1d919}: '𝤙'
-    pub const SIGNWRITING_SQUEEZE_SMALL_MULTIPLE: char = '𝤙';
-    /// \u{1d91a}: '𝤚'
-    pub const SIGNWRITING_SQUEEZE_SEQUENTIAL: char = '𝤚';
-    /// \u{1d91b}: '𝤛'
-    pub const SIGNWRITING_FLICK_LARGE_SINGLE: char = '𝤛';
-    /// \u{1d91c}: '𝤜'
-    pub const SIGNWRITING_FLICK_SMALL_SINGLE: char = '𝤜';
-    /// \u{1d91d}: '𝤝'
-    pub const SIGNWRITING_FLICK_LARGE_MULTIPLE: char = '𝤝';
-    /// \u{1d91e}: '𝤞'
-    pub const SIGNWRITING_FLICK_SMALL_MULTIPLE: char = '𝤞';
-    /// \u{1d91f}: '𝤟'
-    pub const SIGNWRITING_FLICK_SEQUENTIAL: char = '𝤟';
-    /// \u{1d920}: '𝤠'
-    pub const SIGNWRITING_SQUEEZE_FLICK_ALTERNATING: char = '𝤠';
-    /// \u{1d921}: '𝤡'
-    pub const SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_LARGE: char = '𝤡';
-    /// \u{1d922}: '𝤢'
-    pub const SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_SMALL: char = '𝤢';
-    /// \u{1d923}: '𝤣'
-    pub const SIGNWRITING_MOVEMENT_DASH_HINGE_UP_SEQUENTIAL: char = '𝤣';
-    /// \u{1d924}: '𝤤'
-    pub const SIGNWRITING_MOVEMENT_DASH_HINGE_DOWN_SEQUENTIAL: char = '𝤤';
-    /// \u{1d925}: '𝤥'
-    pub const SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_ALTERNATING_LARGE: char = '𝤥';
-    /// \u{1d926}: '𝤦'
-    pub const SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_ALTERNATING_SMALL: char = '𝤦';
-    /// \u{1d927}: '𝤧'
-    pub const SIGNWRITING_MOVEMENT_DASH_HINGE_SIDE_TO_SIDE_SCISSORS: char = '𝤧';
-    /// \u{1d928}: '𝤨'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_FINGER_CONTACT: char = '𝤨';
-    /// \u{1d929}: '𝤩'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_FINGER_CONTACT: char = '𝤩';
-    /// \u{1d92a}: '𝤪'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_SMALL: char = '𝤪';
-    /// \u{1d92b}: '𝤫'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_MEDIUM: char = '𝤫';
-    /// \u{1d92c}: '𝤬'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_LARGE: char = '𝤬';
-    /// \u{1d92d}: '𝤭'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_LARGEST: char = '𝤭';
-    /// \u{1d92e}: '𝤮'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_WRIST_FLEX: char = '𝤮';
-    /// \u{1d92f}: '𝤯'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_STRAIGHT: char = '𝤯';
-    /// \u{1d930}: '𝤰'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_WRIST_FLEX: char = '𝤰';
-    /// \u{1d931}: '𝤱'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_ALTERNATING: char = '𝤱';
-    /// \u{1d932}: '𝤲'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_ALTERNATING_WRIST_FLEX: char = '𝤲';
-    /// \u{1d933}: '𝤳'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CROSS: char = '𝤳';
-    /// \u{1d934}: '𝤴'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_STRAIGHT_MOVEMENT: char = '𝤴';
-    /// \u{1d935}: '𝤵'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_WRIST_FLEX: char = '𝤵';
-    /// \u{1d936}: '𝤶'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_ALTERNATING: char = '𝤶';
-    /// \u{1d937}: '𝤷'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_ALTERNATING_WRIST_FLEX: char = '𝤷';
-    /// \u{1d938}: '𝤸'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BEND_SMALL: char = '𝤸';
-    /// \u{1d939}: '𝤹'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BEND_MEDIUM: char = '𝤹';
-    /// \u{1d93a}: '𝤺'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BEND_LARGE: char = '𝤺';
-    /// \u{1d93b}: '𝤻'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_SMALL: char = '𝤻';
-    /// \u{1d93c}: '𝤼'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_MEDIUM: char = '𝤼';
-    /// \u{1d93d}: '𝤽'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_LARGE: char = '𝤽';
-    /// \u{1d93e}: '𝤾'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_ROTATION: char = '𝤾';
-    /// \u{1d93f}: '𝤿'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CHECK_SMALL: char = '𝤿';
-    /// \u{1d940}: '𝥀'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CHECK_MEDIUM: char = '𝥀';
-    /// \u{1d941}: '𝥁'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CHECK_LARGE: char = '𝥁';
-    /// \u{1d942}: '𝥂'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BOX_SMALL: char = '𝥂';
-    /// \u{1d943}: '𝥃'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BOX_MEDIUM: char = '𝥃';
-    /// \u{1d944}: '𝥄'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BOX_LARGE: char = '𝥄';
-    /// \u{1d945}: '𝥅'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ZIGZAG_SMALL: char = '𝥅';
-    /// \u{1d946}: '𝥆'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ZIGZAG_MEDIUM: char = '𝥆';
-    /// \u{1d947}: '𝥇'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ZIGZAG_LARGE: char = '𝥇';
-    /// \u{1d948}: '𝥈'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_PEAKS_SMALL: char = '𝥈';
-    /// \u{1d949}: '𝥉'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_PEAKS_MEDIUM: char = '𝥉';
-    /// \u{1d94a}: '𝥊'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_PEAKS_LARGE: char = '𝥊';
-    /// \u{1d94b}: '𝥋'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_WALLPLANE_SINGLE: char = '𝥋';
-    /// \u{1d94c}: '𝥌'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_WALLPLANE_DOUBLE: char = '𝥌';
-    /// \u{1d94d}: '𝥍'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_WALLPLANE_ALTERNATING: char = '𝥍';
-    /// \u{1d94e}: '𝥎'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_FLOORPLANE_SINGLE: char = '𝥎';
-    /// \u{1d94f}: '𝥏'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_FLOORPLANE_DOUBLE: char = '𝥏';
-    /// \u{1d950}: '𝥐'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_FLOORPLANE_ALTERNATING: char = '𝥐';
-    /// \u{1d951}: '𝥑'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_SHAKING: char = '𝥑';
-    /// \u{1d952}: '𝥒'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_ARM_SPIRAL_SINGLE: char = '𝥒';
-    /// \u{1d953}: '𝥓'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_ARM_SPIRAL_DOUBLE: char = '𝥓';
-    /// \u{1d954}: '𝥔'
-    pub const SIGNWRITING_TRAVEL_DASH_WALLPLANE_ARM_SPIRAL_TRIPLE: char = '𝥔';
-    /// \u{1d955}: '𝥕'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_SMALL: char = '𝥕';
-    /// \u{1d956}: '𝥖'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_MEDIUM: char = '𝥖';
-    /// \u{1d957}: '𝥗'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_LARGE: char = '𝥗';
-    /// \u{1d958}: '𝥘'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_LARGEST: char = '𝥘';
-    /// \u{1d959}: '𝥙'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_SMALL: char = '𝥙';
-    /// \u{1d95a}: '𝥚'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_MEDIUM: char = '𝥚';
-    /// \u{1d95b}: '𝥛'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_LARGE: char = '𝥛';
-    /// \u{1d95c}: '𝥜'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_LARGEST: char = '𝥜';
-    /// \u{1d95d}: '𝥝'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_SMALL: char = '𝥝';
-    /// \u{1d95e}: '𝥞'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_MEDIUM: char = '𝥞';
-    /// \u{1d95f}: '𝥟'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_LARGE: char = '𝥟';
-    /// \u{1d960}: '𝥠'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_LARGEST: char = '𝥠';
-    /// \u{1d961}: '𝥡'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_SMALL: char = '𝥡';
-    /// \u{1d962}: '𝥢'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_MEDIUM: char = '𝥢';
-    /// \u{1d963}: '𝥣'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_LARGE: char = '𝥣';
-    /// \u{1d964}: '𝥤'
-    pub const SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_LARGEST: char = '𝥤';
-    /// \u{1d965}: '𝥥'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_SMALL: char = '𝥥';
-    /// \u{1d966}: '𝥦'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_MEDIUM: char = '𝥦';
-    /// \u{1d967}: '𝥧'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_LARGE: char = '𝥧';
-    /// \u{1d968}: '𝥨'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_LARGEST: char = '𝥨';
-    /// \u{1d969}: '𝥩'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_WRIST_FLEX: char = '𝥩';
-    /// \u{1d96a}: '𝥪'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_STRAIGHT: char = '𝥪';
-    /// \u{1d96b}: '𝥫'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_WRIST_FLEX: char = '𝥫';
-    /// \u{1d96c}: '𝥬'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_ALTERNATING: char = '𝥬';
-    /// \u{1d96d}: '𝥭'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_ALTERNATING_WRIST_FLEX: char = '𝥭';
-    /// \u{1d96e}: '𝥮'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CROSS: char = '𝥮';
-    /// \u{1d96f}: '𝥯'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_STRAIGHT_MOVEMENT: char = '𝥯';
-    /// \u{1d970}: '𝥰'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_WRIST_FLEX: char = '𝥰';
-    /// \u{1d971}: '𝥱'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_ALTERNATING_MOVEMENT: char = '𝥱';
-    /// \u{1d972}: '𝥲'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_ALTERNATING_WRIST_FLEX: char = '𝥲';
-    /// \u{1d973}: '𝥳'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BEND: char = '𝥳';
-    /// \u{1d974}: '𝥴'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CORNER_SMALL: char = '𝥴';
-    /// \u{1d975}: '𝥵'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CORNER_MEDIUM: char = '𝥵';
-    /// \u{1d976}: '𝥶'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CORNER_LARGE: char = '𝥶';
-    /// \u{1d977}: '𝥷'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CHECK: char = '𝥷';
-    /// \u{1d978}: '𝥸'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BOX_SMALL: char = '𝥸';
-    /// \u{1d979}: '𝥹'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BOX_MEDIUM: char = '𝥹';
-    /// \u{1d97a}: '𝥺'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BOX_LARGE: char = '𝥺';
-    /// \u{1d97b}: '𝥻'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ZIGZAG_SMALL: char = '𝥻';
-    /// \u{1d97c}: '𝥼'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ZIGZAG_MEDIUM: char = '𝥼';
-    /// \u{1d97d}: '𝥽'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ZIGZAG_LARGE: char = '𝥽';
-    /// \u{1d97e}: '𝥾'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_PEAKS_SMALL: char = '𝥾';
-    /// \u{1d97f}: '𝥿'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_PEAKS_MEDIUM: char = '𝥿';
-    /// \u{1d980}: '𝦀'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_PEAKS_LARGE: char = '𝦀';
-    /// \u{1d981}: '𝦁'
-    pub const SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_FLOORPLANE_SINGLE: char = '𝦁';
-    /// \u{1d982}: '𝦂'
-    pub const SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_FLOORPLANE_DOUBLE: char = '𝦂';
-    /// \u{1d983}: '𝦃'
-    pub const SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_FLOORPLANE_ALTERNATING: char = '𝦃';
-    /// \u{1d984}: '𝦄'
-    pub const SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_WALLPLANE_SINGLE: char = '𝦄';
-    /// \u{1d985}: '𝦅'
-    pub const SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_WALLPLANE_DOUBLE: char = '𝦅';
-    /// \u{1d986}: '𝦆'
-    pub const SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_WALLPLANE_ALTERNATING: char = '𝦆';
-    /// \u{1d987}: '𝦇'
-    pub const SIGNWRITING_TRAVEL_DASH_FLOORPLANE_SHAKING: char = '𝦇';
-    /// \u{1d988}: '𝦈'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_SMALL: char = '𝦈';
-    /// \u{1d989}: '𝦉'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_MEDIUM: char = '𝦉';
-    /// \u{1d98a}: '𝦊'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_LARGE: char = '𝦊';
-    /// \u{1d98b}: '𝦋'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_LARGEST: char = '𝦋';
-    /// \u{1d98c}: '𝦌'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_SMALL: char = '𝦌';
-    /// \u{1d98d}: '𝦍'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_MEDIUM: char = '𝦍';
-    /// \u{1d98e}: '𝦎'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_LARGE: char = '𝦎';
-    /// \u{1d98f}: '𝦏'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_LARGEST: char = '𝦏';
-    /// \u{1d990}: '𝦐'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_THREE_DASH_QUARTER_CIRCLE_SMALL: char = '𝦐';
-    /// \u{1d991}: '𝦑'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_THREE_DASH_QUARTER_CIRCLE_MEDIUM: char = '𝦑';
-    /// \u{1d992}: '𝦒'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_SMALL: char = '𝦒';
-    /// \u{1d993}: '𝦓'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_MEDIUM: char = '𝦓';
-    /// \u{1d994}: '𝦔'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_LARGE: char = '𝦔';
-    /// \u{1d995}: '𝦕'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_SMALL: char = '𝦕';
-    /// \u{1d996}: '𝦖'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_MEDIUM: char = '𝦖';
-    /// \u{1d997}: '𝦗'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_LARGE: char = '𝦗';
-    /// \u{1d998}: '𝦘'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_SMALL_DOUBLE: char = '𝦘';
-    /// \u{1d999}: '𝦙'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_DOUBLE_SMALL: char = '𝦙';
-    /// \u{1d99a}: '𝦚'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_DOUBLE_MEDIUM: char = '𝦚';
-    /// \u{1d99b}: '𝦛'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_DOUBLE_LARGE: char = '𝦛';
-    /// \u{1d99c}: '𝦜'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_TRIPLE_SMALL: char = '𝦜';
-    /// \u{1d99d}: '𝦝'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_TRIPLE_MEDIUM: char = '𝦝';
-    /// \u{1d99e}: '𝦞'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_TRIPLE_LARGE: char = '𝦞';
-    /// \u{1d99f}: '𝦟'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_THEN_STRAIGHT: char = '𝦟';
-    /// \u{1d9a0}: '𝦠'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVED_CROSS_SMALL: char = '𝦠';
-    /// \u{1d9a1}: '𝦡'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVED_CROSS_MEDIUM: char = '𝦡';
-    /// \u{1d9a2}: '𝦢'
-    pub const SIGNWRITING_ROTATION_DASH_WALLPLANE_SINGLE: char = '𝦢';
-    /// \u{1d9a3}: '𝦣'
-    pub const SIGNWRITING_ROTATION_DASH_WALLPLANE_DOUBLE: char = '𝦣';
-    /// \u{1d9a4}: '𝦤'
-    pub const SIGNWRITING_ROTATION_DASH_WALLPLANE_ALTERNATE: char = '𝦤';
-    /// \u{1d9a5}: '𝦥'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SHAKING: char = '𝦥';
-    /// \u{1d9a6}: '𝦦'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HITTING_FRONT_WALL: char = '𝦦';
-    /// \u{1d9a7}: '𝦧'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_HITTING_FRONT_WALL: char = '𝦧';
-    /// \u{1d9a8}: '𝦨'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_HITTING_FRONT_WALL: char = '𝦨';
-    /// \u{1d9a9}: '𝦩'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_HITTING_FRONT_WALL: char = '𝦩';
-    /// \u{1d9aa}: '𝦪'
-    pub const SIGNWRITING_ROTATION_DASH_WALLPLANE_SINGLE_HITTING_FRONT_WALL: char = '𝦪';
-    /// \u{1d9ab}: '𝦫'
-    pub const SIGNWRITING_ROTATION_DASH_WALLPLANE_DOUBLE_HITTING_FRONT_WALL: char = '𝦫';
-    /// \u{1d9ac}: '𝦬'
-    pub const SIGNWRITING_ROTATION_DASH_WALLPLANE_ALTERNATING_HITTING_FRONT_WALL: char = '𝦬';
-    /// \u{1d9ad}: '𝦭'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HITTING_CHEST: char = '𝦭';
-    /// \u{1d9ae}: '𝦮'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_HITTING_CHEST: char = '𝦮';
-    /// \u{1d9af}: '𝦯'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_HITTING_CHEST: char = '𝦯';
-    /// \u{1d9b0}: '𝦰'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_HITTING_CHEST: char = '𝦰';
-    /// \u{1d9b1}: '𝦱'
-    pub const SIGNWRITING_ROTATION_DASH_WALLPLANE_SINGLE_HITTING_CHEST: char = '𝦱';
-    /// \u{1d9b2}: '𝦲'
-    pub const SIGNWRITING_ROTATION_DASH_WALLPLANE_DOUBLE_HITTING_CHEST: char = '𝦲';
-    /// \u{1d9b3}: '𝦳'
-    pub const SIGNWRITING_ROTATION_DASH_WALLPLANE_ALTERNATING_HITTING_CHEST: char = '𝦳';
-    /// \u{1d9b4}: '𝦴'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_DIAGONAL_PATH_SMALL: char = '𝦴';
-    /// \u{1d9b5}: '𝦵'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_DIAGONAL_PATH_MEDIUM: char = '𝦵';
-    /// \u{1d9b6}: '𝦶'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_DIAGONAL_PATH_LARGE: char = '𝦶';
-    /// \u{1d9b7}: '𝦷'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_CEILING_SMALL: char = '𝦷';
-    /// \u{1d9b8}: '𝦸'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_CEILING_LARGE: char = '𝦸';
-    /// \u{1d9b9}: '𝦹'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_SMALL_DOUBLE: char = '𝦹';
-    /// \u{1d9ba}: '𝦺'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_LARGE_DOUBLE: char = '𝦺';
-    /// \u{1d9bb}: '𝦻'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_SMALL_TRIPLE: char = '𝦻';
-    /// \u{1d9bc}: '𝦼'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_LARGE_TRIPLE: char = '𝦼';
-    /// \u{1d9bd}: '𝦽'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_SMALL_SINGLE: char = '𝦽';
-    /// \u{1d9be}: '𝦾'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_LARGE_SINGLE: char = '𝦾';
-    /// \u{1d9bf}: '𝦿'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_SMALL_DOUBLE: char = '𝦿';
-    /// \u{1d9c0}: '𝧀'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_LARGE_DOUBLE: char = '𝧀';
-    /// \u{1d9c1}: '𝧁'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_CEILING_SMALL: char = '𝧁';
-    /// \u{1d9c2}: '𝧂'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_CEILING_LARGE: char = '𝧂';
-    /// \u{1d9c3}: '𝧃'
-    pub const SIGNWRITING_ROTATION_DASH_FLOORPLANE_SINGLE_HITTING_CEILING: char = '𝧃';
-    /// \u{1d9c4}: '𝧄'
-    pub const SIGNWRITING_ROTATION_DASH_FLOORPLANE_DOUBLE_HITTING_CEILING: char = '𝧄';
-    /// \u{1d9c5}: '𝧅'
-    pub const SIGNWRITING_ROTATION_DASH_FLOORPLANE_ALTERNATING_HITTING_CEILING: char = '𝧅';
-    /// \u{1d9c6}: '𝧆'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_FLOOR_SMALL: char = '𝧆';
-    /// \u{1d9c7}: '𝧇'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_FLOOR_LARGE: char = '𝧇';
-    /// \u{1d9c8}: '𝧈'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_SMALL_DOUBLE: char = '𝧈';
-    /// \u{1d9c9}: '𝧉'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_LARGE_DOUBLE: char = '𝧉';
-    /// \u{1d9ca}: '𝧊'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_TRIPLE_SMALL_TRIPLE: char = '𝧊';
-    /// \u{1d9cb}: '𝧋'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_TRIPLE_LARGE_TRIPLE: char = '𝧋';
-    /// \u{1d9cc}: '𝧌'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_SMALL_SINGLE: char = '𝧌';
-    /// \u{1d9cd}: '𝧍'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_LARGE_SINGLE: char = '𝧍';
-    /// \u{1d9ce}: '𝧎'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_SMALL_DOUBLE: char = '𝧎';
-    /// \u{1d9cf}: '𝧏'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_LARGE_DOUBLE: char = '𝧏';
-    /// \u{1d9d0}: '𝧐'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_FLOOR_SMALL: char = '𝧐';
-    /// \u{1d9d1}: '𝧑'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_FLOOR_LARGE: char = '𝧑';
-    /// \u{1d9d2}: '𝧒'
-    pub const SIGNWRITING_ROTATION_DASH_FLOORPLANE_SINGLE_HITTING_FLOOR: char = '𝧒';
-    /// \u{1d9d3}: '𝧓'
-    pub const SIGNWRITING_ROTATION_DASH_FLOORPLANE_DOUBLE_HITTING_FLOOR: char = '𝧓';
-    /// \u{1d9d4}: '𝧔'
-    pub const SIGNWRITING_ROTATION_DASH_FLOORPLANE_ALTERNATING_HITTING_FLOOR: char = '𝧔';
-    /// \u{1d9d5}: '𝧕'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_SMALL: char = '𝧕';
-    /// \u{1d9d6}: '𝧖'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_MEDIUM: char = '𝧖';
-    /// \u{1d9d7}: '𝧗'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_LARGE: char = '𝧗';
-    /// \u{1d9d8}: '𝧘'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_LARGEST: char = '𝧘';
-    /// \u{1d9d9}: '𝧙'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_COMBINED: char = '𝧙';
-    /// \u{1d9da}: '𝧚'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_SMALL: char = '𝧚';
-    /// \u{1d9db}: '𝧛'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_SMALL: char = '𝧛';
-    /// \u{1d9dc}: '𝧜'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_SNAKE: char = '𝧜';
-    /// \u{1d9dd}: '𝧝'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_SMALL: char = '𝧝';
-    /// \u{1d9de}: '𝧞'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_LARGE: char = '𝧞';
-    /// \u{1d9df}: '𝧟'
-    pub const SIGNWRITING_ROTATION_DASH_FLOORPLANE_SINGLE: char = '𝧟';
-    /// \u{1d9e0}: '𝧠'
-    pub const SIGNWRITING_ROTATION_DASH_FLOORPLANE_DOUBLE: char = '𝧠';
-    /// \u{1d9e1}: '𝧡'
-    pub const SIGNWRITING_ROTATION_DASH_FLOORPLANE_ALTERNATING: char = '𝧡';
-    /// \u{1d9e2}: '𝧢'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SHAKING_PARALLEL: char = '𝧢';
-    /// \u{1d9e3}: '𝧣'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_SMALL_SINGLE: char = '𝧣';
-    /// \u{1d9e4}: '𝧤'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_MEDIUM_SINGLE: char = '𝧤';
-    /// \u{1d9e5}: '𝧥'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_SMALL_DOUBLE: char = '𝧥';
-    /// \u{1d9e6}: '𝧦'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_MEDIUM_DOUBLE: char = '𝧦';
-    /// \u{1d9e7}: '𝧧'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_SMALL_SINGLE: char = '𝧧';
-    /// \u{1d9e8}: '𝧨'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_MEDIUM_SINGLE: char = '𝧨';
-    /// \u{1d9e9}: '𝧩'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_LARGE_SINGLE: char = '𝧩';
-    /// \u{1d9ea}: '𝧪'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_SMALL_DOUBLE: char = '𝧪';
-    /// \u{1d9eb}: '𝧫'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_MEDIUM_DOUBLE: char = '𝧫';
-    /// \u{1d9ec}: '𝧬'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_LARGE_DOUBLE: char = '𝧬';
-    /// \u{1d9ed}: '𝧭'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WRIST_CIRCLE_FRONT_SINGLE: char = '𝧭';
-    /// \u{1d9ee}: '𝧮'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WRIST_CIRCLE_FRONT_DOUBLE: char = '𝧮';
-    /// \u{1d9ef}: '𝧯'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WRIST_CIRCLE_HITTING_WALL_SINGLE: char = '𝧯';
-    /// \u{1d9f0}: '𝧰'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WRIST_CIRCLE_HITTING_WALL_DOUBLE: char = '𝧰';
-    /// \u{1d9f1}: '𝧱'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_FINGER_CIRCLES_SINGLE: char = '𝧱';
-    /// \u{1d9f2}: '𝧲'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_FINGER_CIRCLES_DOUBLE: char = '𝧲';
-    /// \u{1d9f3}: '𝧳'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_FINGER_CIRCLES_HITTING_WALL_SINGLE: char = '𝧳';
-    /// \u{1d9f4}: '𝧴'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_FINGER_CIRCLES_HITTING_WALL_DOUBLE: char = '𝧴';
-    /// \u{1d9f5}: '𝧵'
-    pub const SIGNWRITING_DYNAMIC_ARROWHEAD_SMALL: char = '𝧵';
-    /// \u{1d9f6}: '𝧶'
-    pub const SIGNWRITING_DYNAMIC_ARROWHEAD_LARGE: char = '𝧶';
-    /// \u{1d9f7}: '𝧷'
-    pub const SIGNWRITING_DYNAMIC_FAST: char = '𝧷';
-    /// \u{1d9f8}: '𝧸'
-    pub const SIGNWRITING_DYNAMIC_SLOW: char = '𝧸';
-    /// \u{1d9f9}: '𝧹'
-    pub const SIGNWRITING_DYNAMIC_TENSE: char = '𝧹';
-    /// \u{1d9fa}: '𝧺'
-    pub const SIGNWRITING_DYNAMIC_RELAXED: char = '𝧺';
-    /// \u{1d9fb}: '𝧻'
-    pub const SIGNWRITING_DYNAMIC_SIMULTANEOUS: char = '𝧻';
-    /// \u{1d9fc}: '𝧼'
-    pub const SIGNWRITING_DYNAMIC_SIMULTANEOUS_ALTERNATING: char = '𝧼';
-    /// \u{1d9fd}: '𝧽'
-    pub const SIGNWRITING_DYNAMIC_EVERY_OTHER_TIME: char = '𝧽';
-    /// \u{1d9fe}: '𝧾'
-    pub const SIGNWRITING_DYNAMIC_GRADUAL: char = '𝧾';
-    /// \u{1d9ff}: '𝧿'
-    pub const SIGNWRITING_HEAD: char = '𝧿';
-    /// \u{1da00}: '𝨀'
-    pub const SIGNWRITING_HEAD_RIM: char = '𝨀';
-    /// \u{1da01}: '𝨁'
-    pub const SIGNWRITING_HEAD_MOVEMENT_DASH_WALLPLANE_STRAIGHT: char = '𝨁';
-    /// \u{1da02}: '𝨂'
-    pub const SIGNWRITING_HEAD_MOVEMENT_DASH_WALLPLANE_TILT: char = '𝨂';
-    /// \u{1da03}: '𝨃'
-    pub const SIGNWRITING_HEAD_MOVEMENT_DASH_FLOORPLANE_STRAIGHT: char = '𝨃';
-    /// \u{1da04}: '𝨄'
-    pub const SIGNWRITING_HEAD_MOVEMENT_DASH_WALLPLANE_CURVE: char = '𝨄';
-    /// \u{1da05}: '𝨅'
-    pub const SIGNWRITING_HEAD_MOVEMENT_DASH_FLOORPLANE_CURVE: char = '𝨅';
-    /// \u{1da06}: '𝨆'
-    pub const SIGNWRITING_HEAD_MOVEMENT_CIRCLE: char = '𝨆';
-    /// \u{1da07}: '𝨇'
-    pub const SIGNWRITING_FACE_DIRECTION_POSITION_NOSE_FORWARD_TILTING: char = '𝨇';
-    /// \u{1da08}: '𝨈'
-    pub const SIGNWRITING_FACE_DIRECTION_POSITION_NOSE_UP_OR_DOWN: char = '𝨈';
-    /// \u{1da09}: '𝨉'
-    pub const SIGNWRITING_FACE_DIRECTION_POSITION_NOSE_UP_OR_DOWN_TILTING: char = '𝨉';
-    /// \u{1da0a}: '𝨊'
-    pub const SIGNWRITING_EYEBROWS_STRAIGHT_UP: char = '𝨊';
-    /// \u{1da0b}: '𝨋'
-    pub const SIGNWRITING_EYEBROWS_STRAIGHT_NEUTRAL: char = '𝨋';
-    /// \u{1da0c}: '𝨌'
-    pub const SIGNWRITING_EYEBROWS_STRAIGHT_DOWN: char = '𝨌';
-    /// \u{1da0d}: '𝨍'
-    pub const SIGNWRITING_DREAMY_EYEBROWS_NEUTRAL_DOWN: char = '𝨍';
-    /// \u{1da0e}: '𝨎'
-    pub const SIGNWRITING_DREAMY_EYEBROWS_DOWN_NEUTRAL: char = '𝨎';
-    /// \u{1da0f}: '𝨏'
-    pub const SIGNWRITING_DREAMY_EYEBROWS_UP_NEUTRAL: char = '𝨏';
-    /// \u{1da10}: '𝨐'
-    pub const SIGNWRITING_DREAMY_EYEBROWS_NEUTRAL_UP: char = '𝨐';
-    /// \u{1da11}: '𝨑'
-    pub const SIGNWRITING_FOREHEAD_NEUTRAL: char = '𝨑';
-    /// \u{1da12}: '𝨒'
-    pub const SIGNWRITING_FOREHEAD_CONTACT: char = '𝨒';
-    /// \u{1da13}: '𝨓'
-    pub const SIGNWRITING_FOREHEAD_WRINKLED: char = '𝨓';
-    /// \u{1da14}: '𝨔'
-    pub const SIGNWRITING_EYES_OPEN: char = '𝨔';
-    /// \u{1da15}: '𝨕'
-    pub const SIGNWRITING_EYES_SQUEEZED: char = '𝨕';
-    /// \u{1da16}: '𝨖'
-    pub const SIGNWRITING_EYES_CLOSED: char = '𝨖';
-    /// \u{1da17}: '𝨗'
-    pub const SIGNWRITING_EYE_BLINK_SINGLE: char = '𝨗';
-    /// \u{1da18}: '𝨘'
-    pub const SIGNWRITING_EYE_BLINK_MULTIPLE: char = '𝨘';
-    /// \u{1da19}: '𝨙'
-    pub const SIGNWRITING_EYES_HALF_OPEN: char = '𝨙';
-    /// \u{1da1a}: '𝨚'
-    pub const SIGNWRITING_EYES_WIDE_OPEN: char = '𝨚';
-    /// \u{1da1b}: '𝨛'
-    pub const SIGNWRITING_EYES_HALF_CLOSED: char = '𝨛';
-    /// \u{1da1c}: '𝨜'
-    pub const SIGNWRITING_EYES_WIDENING_MOVEMENT: char = '𝨜';
-    /// \u{1da1d}: '𝨝'
-    pub const SIGNWRITING_EYE_WINK: char = '𝨝';
-    /// \u{1da1e}: '𝨞'
-    pub const SIGNWRITING_EYELASHES_UP: char = '𝨞';
-    /// \u{1da1f}: '𝨟'
-    pub const SIGNWRITING_EYELASHES_DOWN: char = '𝨟';
-    /// \u{1da20}: '𝨠'
-    pub const SIGNWRITING_EYELASHES_FLUTTERING: char = '𝨠';
-    /// \u{1da21}: '𝨡'
-    pub const SIGNWRITING_EYEGAZE_DASH_WALLPLANE_STRAIGHT: char = '𝨡';
-    /// \u{1da22}: '𝨢'
-    pub const SIGNWRITING_EYEGAZE_DASH_WALLPLANE_STRAIGHT_DOUBLE: char = '𝨢';
-    /// \u{1da23}: '𝨣'
-    pub const SIGNWRITING_EYEGAZE_DASH_WALLPLANE_STRAIGHT_ALTERNATING: char = '𝨣';
-    /// \u{1da24}: '𝨤'
-    pub const SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_STRAIGHT: char = '𝨤';
-    /// \u{1da25}: '𝨥'
-    pub const SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_STRAIGHT_DOUBLE: char = '𝨥';
-    /// \u{1da26}: '𝨦'
-    pub const SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_STRAIGHT_ALTERNATING: char = '𝨦';
-    /// \u{1da27}: '𝨧'
-    pub const SIGNWRITING_EYEGAZE_DASH_WALLPLANE_CURVED: char = '𝨧';
-    /// \u{1da28}: '𝨨'
-    pub const SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_CURVED: char = '𝨨';
-    /// \u{1da29}: '𝨩'
-    pub const SIGNWRITING_EYEGAZE_DASH_WALLPLANE_CIRCLING: char = '𝨩';
-    /// \u{1da2a}: '𝨪'
-    pub const SIGNWRITING_CHEEKS_PUFFED: char = '𝨪';
-    /// \u{1da2b}: '𝨫'
-    pub const SIGNWRITING_CHEEKS_NEUTRAL: char = '𝨫';
-    /// \u{1da2c}: '𝨬'
-    pub const SIGNWRITING_CHEEKS_SUCKED: char = '𝨬';
-    /// \u{1da2d}: '𝨭'
-    pub const SIGNWRITING_TENSE_CHEEKS_HIGH: char = '𝨭';
-    /// \u{1da2e}: '𝨮'
-    pub const SIGNWRITING_TENSE_CHEEKS_MIDDLE: char = '𝨮';
-    /// \u{1da2f}: '𝨯'
-    pub const SIGNWRITING_TENSE_CHEEKS_LOW: char = '𝨯';
-    /// \u{1da30}: '𝨰'
-    pub const SIGNWRITING_EARS: char = '𝨰';
-    /// \u{1da31}: '𝨱'
-    pub const SIGNWRITING_NOSE_NEUTRAL: char = '𝨱';
-    /// \u{1da32}: '𝨲'
-    pub const SIGNWRITING_NOSE_CONTACT: char = '𝨲';
-    /// \u{1da33}: '𝨳'
-    pub const SIGNWRITING_NOSE_WRINKLES: char = '𝨳';
-    /// \u{1da34}: '𝨴'
-    pub const SIGNWRITING_NOSE_WIGGLES: char = '𝨴';
-    /// \u{1da35}: '𝨵'
-    pub const SIGNWRITING_AIR_BLOWING_OUT: char = '𝨵';
-    /// \u{1da36}: '𝨶'
-    pub const SIGNWRITING_AIR_SUCKING_IN: char = '𝨶';
-    /// \u{1da37}: '𝨷'
-    pub const SIGNWRITING_AIR_BLOW_SMALL_ROTATIONS: char = '𝨷';
-    /// \u{1da38}: '𝨸'
-    pub const SIGNWRITING_AIR_SUCK_SMALL_ROTATIONS: char = '𝨸';
-    /// \u{1da39}: '𝨹'
-    pub const SIGNWRITING_BREATH_INHALE: char = '𝨹';
-    /// \u{1da3a}: '𝨺'
-    pub const SIGNWRITING_BREATH_EXHALE: char = '𝨺';
-    /// \u{1da3b}: '𝨻'
-    pub const SIGNWRITING_MOUTH_CLOSED_NEUTRAL: char = '𝨻';
-    /// \u{1da3c}: '𝨼'
-    pub const SIGNWRITING_MOUTH_CLOSED_FORWARD: char = '𝨼';
-    /// \u{1da3d}: '𝨽'
-    pub const SIGNWRITING_MOUTH_CLOSED_CONTACT: char = '𝨽';
-    /// \u{1da3e}: '𝨾'
-    pub const SIGNWRITING_MOUTH_SMILE: char = '𝨾';
-    /// \u{1da3f}: '𝨿'
-    pub const SIGNWRITING_MOUTH_SMILE_WRINKLED: char = '𝨿';
-    /// \u{1da40}: '𝩀'
-    pub const SIGNWRITING_MOUTH_SMILE_OPEN: char = '𝩀';
-    /// \u{1da41}: '𝩁'
-    pub const SIGNWRITING_MOUTH_FROWN: char = '𝩁';
-    /// \u{1da42}: '𝩂'
-    pub const SIGNWRITING_MOUTH_FROWN_WRINKLED: char = '𝩂';
-    /// \u{1da43}: '𝩃'
-    pub const SIGNWRITING_MOUTH_FROWN_OPEN: char = '𝩃';
-    /// \u{1da44}: '𝩄'
-    pub const SIGNWRITING_MOUTH_OPEN_CIRCLE: char = '𝩄';
-    /// \u{1da45}: '𝩅'
-    pub const SIGNWRITING_MOUTH_OPEN_FORWARD: char = '𝩅';
-    /// \u{1da46}: '𝩆'
-    pub const SIGNWRITING_MOUTH_OPEN_WRINKLED: char = '𝩆';
-    /// \u{1da47}: '𝩇'
-    pub const SIGNWRITING_MOUTH_OPEN_OVAL: char = '𝩇';
-    /// \u{1da48}: '𝩈'
-    pub const SIGNWRITING_MOUTH_OPEN_OVAL_WRINKLED: char = '𝩈';
-    /// \u{1da49}: '𝩉'
-    pub const SIGNWRITING_MOUTH_OPEN_OVAL_YAWN: char = '𝩉';
-    /// \u{1da4a}: '𝩊'
-    pub const SIGNWRITING_MOUTH_OPEN_RECTANGLE: char = '𝩊';
-    /// \u{1da4b}: '𝩋'
-    pub const SIGNWRITING_MOUTH_OPEN_RECTANGLE_WRINKLED: char = '𝩋';
-    /// \u{1da4c}: '𝩌'
-    pub const SIGNWRITING_MOUTH_OPEN_RECTANGLE_YAWN: char = '𝩌';
-    /// \u{1da4d}: '𝩍'
-    pub const SIGNWRITING_MOUTH_KISS: char = '𝩍';
-    /// \u{1da4e}: '𝩎'
-    pub const SIGNWRITING_MOUTH_KISS_FORWARD: char = '𝩎';
-    /// \u{1da4f}: '𝩏'
-    pub const SIGNWRITING_MOUTH_KISS_WRINKLED: char = '𝩏';
-    /// \u{1da50}: '𝩐'
-    pub const SIGNWRITING_MOUTH_TENSE: char = '𝩐';
-    /// \u{1da51}: '𝩑'
-    pub const SIGNWRITING_MOUTH_TENSE_FORWARD: char = '𝩑';
-    /// \u{1da52}: '𝩒'
-    pub const SIGNWRITING_MOUTH_TENSE_SUCKED: char = '𝩒';
-    /// \u{1da53}: '𝩓'
-    pub const SIGNWRITING_LIPS_PRESSED_TOGETHER: char = '𝩓';
-    /// \u{1da54}: '𝩔'
-    pub const SIGNWRITING_LIP_LOWER_OVER_UPPER: char = '𝩔';
-    /// \u{1da55}: '𝩕'
-    pub const SIGNWRITING_LIP_UPPER_OVER_LOWER: char = '𝩕';
-    /// \u{1da56}: '𝩖'
-    pub const SIGNWRITING_MOUTH_CORNERS: char = '𝩖';
-    /// \u{1da57}: '𝩗'
-    pub const SIGNWRITING_MOUTH_WRINKLES_SINGLE: char = '𝩗';
-    /// \u{1da58}: '𝩘'
-    pub const SIGNWRITING_MOUTH_WRINKLES_DOUBLE: char = '𝩘';
-    /// \u{1da59}: '𝩙'
-    pub const SIGNWRITING_TONGUE_STICKING_OUT_FAR: char = '𝩙';
-    /// \u{1da5a}: '𝩚'
-    pub const SIGNWRITING_TONGUE_LICKING_LIPS: char = '𝩚';
-    /// \u{1da5b}: '𝩛'
-    pub const SIGNWRITING_TONGUE_TIP_BETWEEN_LIPS: char = '𝩛';
-    /// \u{1da5c}: '𝩜'
-    pub const SIGNWRITING_TONGUE_TIP_TOUCHING_INSIDE_MOUTH: char = '𝩜';
-    /// \u{1da5d}: '𝩝'
-    pub const SIGNWRITING_TONGUE_INSIDE_MOUTH_RELAXED: char = '𝩝';
-    /// \u{1da5e}: '𝩞'
-    pub const SIGNWRITING_TONGUE_MOVES_AGAINST_CHEEK: char = '𝩞';
-    /// \u{1da5f}: '𝩟'
-    pub const SIGNWRITING_TONGUE_CENTRE_STICKING_OUT: char = '𝩟';
-    /// \u{1da60}: '𝩠'
-    pub const SIGNWRITING_TONGUE_CENTRE_INSIDE_MOUTH: char = '𝩠';
-    /// \u{1da61}: '𝩡'
-    pub const SIGNWRITING_TEETH: char = '𝩡';
-    /// \u{1da62}: '𝩢'
-    pub const SIGNWRITING_TEETH_MOVEMENT: char = '𝩢';
-    /// \u{1da63}: '𝩣'
-    pub const SIGNWRITING_TEETH_ON_TONGUE: char = '𝩣';
-    /// \u{1da64}: '𝩤'
-    pub const SIGNWRITING_TEETH_ON_TONGUE_MOVEMENT: char = '𝩤';
-    /// \u{1da65}: '𝩥'
-    pub const SIGNWRITING_TEETH_ON_LIPS: char = '𝩥';
-    /// \u{1da66}: '𝩦'
-    pub const SIGNWRITING_TEETH_ON_LIPS_MOVEMENT: char = '𝩦';
-    /// \u{1da67}: '𝩧'
-    pub const SIGNWRITING_TEETH_BITE_LIPS: char = '𝩧';
-    /// \u{1da68}: '𝩨'
-    pub const SIGNWRITING_MOVEMENT_DASH_WALLPLANE_JAW: char = '𝩨';
-    /// \u{1da69}: '𝩩'
-    pub const SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_JAW: char = '𝩩';
-    /// \u{1da6a}: '𝩪'
-    pub const SIGNWRITING_NECK: char = '𝩪';
-    /// \u{1da6b}: '𝩫'
-    pub const SIGNWRITING_HAIR: char = '𝩫';
-    /// \u{1da6c}: '𝩬'
-    pub const SIGNWRITING_EXCITEMENT: char = '𝩬';
-    /// \u{1da6d}: '𝩭'
-    pub const SIGNWRITING_SHOULDER_HIP_SPINE: char = '𝩭';
-    /// \u{1da6e}: '𝩮'
-    pub const SIGNWRITING_SHOULDER_HIP_POSITIONS: char = '𝩮';
-    /// \u{1da6f}: '𝩯'
-    pub const SIGNWRITING_WALLPLANE_SHOULDER_HIP_MOVE: char = '𝩯';
-    /// \u{1da70}: '𝩰'
-    pub const SIGNWRITING_FLOORPLANE_SHOULDER_HIP_MOVE: char = '𝩰';
-    /// \u{1da71}: '𝩱'
-    pub const SIGNWRITING_SHOULDER_TILTING_FROM_WAIST: char = '𝩱';
-    /// \u{1da72}: '𝩲'
-    pub const SIGNWRITING_TORSO_DASH_WALLPLANE_STRAIGHT_STRETCH: char = '𝩲';
-    /// \u{1da73}: '𝩳'
-    pub const SIGNWRITING_TORSO_DASH_WALLPLANE_CURVED_BEND: char = '𝩳';
-    /// \u{1da74}: '𝩴'
-    pub const SIGNWRITING_TORSO_DASH_FLOORPLANE_TWISTING: char = '𝩴';
-    /// \u{1da75}: '𝩵'
-    pub const SIGNWRITING_UPPER_BODY_TILTING_FROM_HIP_JOINTS: char = '𝩵';
-    /// \u{1da76}: '𝩶'
-    pub const SIGNWRITING_LIMB_COMBINATION: char = '𝩶';
-    /// \u{1da77}: '𝩷'
-    pub const SIGNWRITING_LIMB_LENGTH_DASH_1: char = '𝩷';
-    /// \u{1da78}: '𝩸'
-    pub const SIGNWRITING_LIMB_LENGTH_DASH_2: char = '𝩸';
-    /// \u{1da79}: '𝩹'
-    pub const SIGNWRITING_LIMB_LENGTH_DASH_3: char = '𝩹';
-    /// \u{1da7a}: '𝩺'
-    pub const SIGNWRITING_LIMB_LENGTH_DASH_4: char = '𝩺';
-    /// \u{1da7b}: '𝩻'
-    pub const SIGNWRITING_LIMB_LENGTH_DASH_5: char = '𝩻';
-    /// \u{1da7c}: '𝩼'
-    pub const SIGNWRITING_LIMB_LENGTH_DASH_6: char = '𝩼';
-    /// \u{1da7d}: '𝩽'
-    pub const SIGNWRITING_LIMB_LENGTH_DASH_7: char = '𝩽';
-    /// \u{1da7e}: '𝩾'
-    pub const SIGNWRITING_FINGER: char = '𝩾';
-    /// \u{1da7f}: '𝩿'
-    pub const SIGNWRITING_LOCATION_DASH_WALLPLANE_SPACE: char = '𝩿';
-    /// \u{1da80}: '𝪀'
-    pub const SIGNWRITING_LOCATION_DASH_FLOORPLANE_SPACE: char = '𝪀';
-    /// \u{1da81}: '𝪁'
-    pub const SIGNWRITING_LOCATION_HEIGHT: char = '𝪁';
-    /// \u{1da82}: '𝪂'
-    pub const SIGNWRITING_LOCATION_WIDTH: char = '𝪂';
-    /// \u{1da83}: '𝪃'
-    pub const SIGNWRITING_LOCATION_DEPTH: char = '𝪃';
-    /// \u{1da84}: '𝪄'
-    pub const SIGNWRITING_LOCATION_HEAD_NECK: char = '𝪄';
-    /// \u{1da85}: '𝪅'
-    pub const SIGNWRITING_LOCATION_TORSO: char = '𝪅';
-    /// \u{1da86}: '𝪆'
-    pub const SIGNWRITING_LOCATION_LIMBS_DIGITS: char = '𝪆';
-    /// \u{1da87}: '𝪇'
-    pub const SIGNWRITING_COMMA: char = '𝪇';
-    /// \u{1da88}: '𝪈'
-    pub const SIGNWRITING_FULL_STOP: char = '𝪈';
-    /// \u{1da89}: '𝪉'
-    pub const SIGNWRITING_SEMICOLON: char = '𝪉';
-    /// \u{1da8a}: '𝪊'
-    pub const SIGNWRITING_COLON: char = '𝪊';
-    /// \u{1da8b}: '𝪋'
-    pub const SIGNWRITING_PARENTHESIS: char = '𝪋';
-    /// \u{1da9b}: '𝪛'
-    pub const SIGNWRITING_FILL_MODIFIER_DASH_2: char = '𝪛';
-    /// \u{1da9c}: '𝪜'
-    pub const SIGNWRITING_FILL_MODIFIER_DASH_3: char = '𝪜';
-    /// \u{1da9d}: '𝪝'
-    pub const SIGNWRITING_FILL_MODIFIER_DASH_4: char = '𝪝';
-    /// \u{1da9e}: '𝪞'
-    pub const SIGNWRITING_FILL_MODIFIER_DASH_5: char = '𝪞';
-    /// \u{1da9f}: '𝪟'
-    pub const SIGNWRITING_FILL_MODIFIER_DASH_6: char = '𝪟';
-    /// \u{1daa1}: '𝪡'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_2: char = '𝪡';
-    /// \u{1daa2}: '𝪢'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_3: char = '𝪢';
-    /// \u{1daa3}: '𝪣'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_4: char = '𝪣';
-    /// \u{1daa4}: '𝪤'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_5: char = '𝪤';
-    /// \u{1daa5}: '𝪥'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_6: char = '𝪥';
-    /// \u{1daa6}: '𝪦'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_7: char = '𝪦';
-    /// \u{1daa7}: '𝪧'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_8: char = '𝪧';
-    /// \u{1daa8}: '𝪨'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_9: char = '𝪨';
-    /// \u{1daa9}: '𝪩'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_10: char = '𝪩';
-    /// \u{1daaa}: '𝪪'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_11: char = '𝪪';
-    /// \u{1daab}: '𝪫'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_12: char = '𝪫';
-    /// \u{1daac}: '𝪬'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_13: char = '𝪬';
-    /// \u{1daad}: '𝪭'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_14: char = '𝪭';
-    /// \u{1daae}: '𝪮'
-    pub const SIGNWRITING_ROTATION_MODIFIER_DASH_15: char = '𝪮';
-}
 
 /// An enum to represent all characters in the SuttonSignWriting block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -2693,679 +1348,678 @@ pub enum SuttonSignWriting {
 
 impl Into<char> for SuttonSignWriting {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            SuttonSignWriting::SignwritingHandDashFistIndex => SIGNWRITING_HAND_DASH_FIST_INDEX,
-            SuttonSignWriting::SignwritingHandDashCircleIndex => SIGNWRITING_HAND_DASH_CIRCLE_INDEX,
-            SuttonSignWriting::SignwritingHandDashCupIndex => SIGNWRITING_HAND_DASH_CUP_INDEX,
-            SuttonSignWriting::SignwritingHandDashOvalIndex => SIGNWRITING_HAND_DASH_OVAL_INDEX,
-            SuttonSignWriting::SignwritingHandDashHingeIndex => SIGNWRITING_HAND_DASH_HINGE_INDEX,
-            SuttonSignWriting::SignwritingHandDashAngleIndex => SIGNWRITING_HAND_DASH_ANGLE_INDEX,
-            SuttonSignWriting::SignwritingHandDashFistIndexBent => SIGNWRITING_HAND_DASH_FIST_INDEX_BENT,
-            SuttonSignWriting::SignwritingHandDashCircleIndexBent => SIGNWRITING_HAND_DASH_CIRCLE_INDEX_BENT,
-            SuttonSignWriting::SignwritingHandDashFistThumbUnderIndexBent => SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_INDEX_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexRaisedKnuckle => SIGNWRITING_HAND_DASH_FIST_INDEX_RAISED_KNUCKLE,
-            SuttonSignWriting::SignwritingHandDashFistIndexCupped => SIGNWRITING_HAND_DASH_FIST_INDEX_CUPPED,
-            SuttonSignWriting::SignwritingHandDashFistIndexHinged => SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED,
-            SuttonSignWriting::SignwritingHandDashFistIndexHingedLow => SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED_LOW,
-            SuttonSignWriting::SignwritingHandDashCircleIndexHinge => SIGNWRITING_HAND_DASH_CIRCLE_INDEX_HINGE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddle => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE,
-            SuttonSignWriting::SignwritingHandDashCircleIndexMiddle => SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleBent => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleRaisedKnuckles => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RAISED_KNUCKLES,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleHinged => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_HINGED,
-            SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHinged => SIGNWRITING_HAND_DASH_FIST_INDEX_UP_MIDDLE_HINGED,
-            SuttonSignWriting::SignwritingHandDashFistIndexHingedMiddleUp => SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED_MIDDLE_UP,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoined => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedIndexBent => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_INDEX_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedMiddleBent => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_MIDDLE_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedCupped => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_CUPPED,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedHinged => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_HINGED,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossed => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CROSSED,
-            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleCrossed => SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_CROSSED,
-            SuttonSignWriting::SignwritingHandDashFistMiddleBentOverIndex => SIGNWRITING_HAND_DASH_FIST_MIDDLE_BENT_OVER_INDEX,
-            SuttonSignWriting::SignwritingHandDashFistIndexBentOverMiddle => SIGNWRITING_HAND_DASH_FIST_INDEX_BENT_OVER_MIDDLE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumb => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB,
-            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleThumb => SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_THUMB,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleStraightThumbBent => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_STRAIGHT_THUMB_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleBentThumbStraight => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_BENT_THUMB_STRAIGHT,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbBent => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleHingedSpreadThumbSide => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_HINGED_SPREAD_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHingedThumbSide => SIGNWRITING_HAND_DASH_FIST_INDEX_UP_MIDDLE_HINGED_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHingedThumbConjoined => SIGNWRITING_HAND_DASH_FIST_INDEX_UP_MIDDLE_HINGED_THUMB_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFistIndexHingedMiddleUpThumbSide => SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED_MIDDLE_UP_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleUpSpreadThumbForward => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_UP_SPREAD_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbCupped => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_CUPPED,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbCircled => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_CIRCLED,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbHooked => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_HOOKED,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbHinged => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_HINGED,
-            SuttonSignWriting::SignwritingHandDashFistThumbBetweenIndexMiddleStraight => SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_INDEX_MIDDLE_STRAIGHT,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSide => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSideConjoined => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_SIDE_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSideBent => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_SIDE_BENT,
-            SuttonSignWriting::SignwritingHandDashFistMiddleThumbHookedIndexUp => SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_HOOKED_INDEX_UP,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbHookedMiddleUp => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_HOOKED_MIDDLE_UP,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedHingedThumbSide => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_HINGED_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossedThumbSide => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CROSSED_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbForward => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedCuppedThumbForward => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_CUPPED_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashFistMiddleThumbCuppedIndexUp => SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_CUPPED_INDEX_UP,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbCuppedMiddleUp => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CUPPED_MIDDLE_UP,
-            SuttonSignWriting::SignwritingHandDashFistMiddleThumbCircledIndexUp => SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_CIRCLED_INDEX_UP,
-            SuttonSignWriting::SignwritingHandDashFistMiddleThumbCircledIndexHinged => SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_CIRCLED_INDEX_HINGED,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbAngledOutMiddleUp => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_ANGLED_OUT_MIDDLE_UP,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbAngledInMiddleUp => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_ANGLED_IN_MIDDLE_UP,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbCircledMiddleUp => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CIRCLED_MIDDLE_UP,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbConjoinedHinged => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_CONJOINED_HINGED,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbAngledOut => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_ANGLED_OUT,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbAngled => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_ANGLED,
-            SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledOutIndexUp => SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_ANGLED_OUT_INDEX_UP,
-            SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledOutIndexCrossed => SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_ANGLED_OUT_INDEX_CROSSED,
-            SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledIndexUp => SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_ANGLED_INDEX_UP,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbHookedMiddleHinged => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_HOOKED_MIDDLE_HINGED,
-            SuttonSignWriting::SignwritingHandDashFlatFourFingers => SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS,
-            SuttonSignWriting::SignwritingHandDashFlatFourFingersBent => SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_BENT,
-            SuttonSignWriting::SignwritingHandDashFlatFourFingersHinged => SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_HINGED,
-            SuttonSignWriting::SignwritingHandDashFlatFourFingersConjoined => SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFlatFourFingersConjoinedSplit => SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_CONJOINED_SPLIT,
-            SuttonSignWriting::SignwritingHandDashClawFourFingersConjoined => SIGNWRITING_HAND_DASH_CLAW_FOUR_FINGERS_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFistFourFingersConjoinedBent => SIGNWRITING_HAND_DASH_FIST_FOUR_FINGERS_CONJOINED_BENT,
-            SuttonSignWriting::SignwritingHandDashHingeFourFingersConjoined => SIGNWRITING_HAND_DASH_HINGE_FOUR_FINGERS_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpread => SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD,
-            SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpread => SIGNWRITING_HAND_DASH_FLAT_HEEL_FIVE_FINGERS_SPREAD,
-            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadFourBent => SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_FOUR_BENT,
-            SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpreadFourBent => SIGNWRITING_HAND_DASH_FLAT_HEEL_FIVE_FINGERS_SPREAD_FOUR_BENT,
-            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadBent => SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_BENT,
-            SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpreadBent => SIGNWRITING_HAND_DASH_FLAT_HEEL_FIVE_FINGERS_SPREAD_BENT,
-            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadThumbForward => SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashCupFiveFingersSpread => SIGNWRITING_HAND_DASH_CUP_FIVE_FINGERS_SPREAD,
-            SuttonSignWriting::SignwritingHandDashCupFiveFingersSpreadOpen => SIGNWRITING_HAND_DASH_CUP_FIVE_FINGERS_SPREAD_OPEN,
-            SuttonSignWriting::SignwritingHandDashHingeFiveFingersSpreadOpen => SIGNWRITING_HAND_DASH_HINGE_FIVE_FINGERS_SPREAD_OPEN,
-            SuttonSignWriting::SignwritingHandDashOvalFiveFingersSpread => SIGNWRITING_HAND_DASH_OVAL_FIVE_FINGERS_SPREAD,
-            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHinged => SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_HINGED,
-            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHingedThumbSide => SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_HINGED_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHingedNoThumb => SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_HINGED_NO_THUMB,
-            SuttonSignWriting::SignwritingHandDashFlat => SIGNWRITING_HAND_DASH_FLAT,
-            SuttonSignWriting::SignwritingHandDashFlatBetweenPalmFacings => SIGNWRITING_HAND_DASH_FLAT_BETWEEN_PALM_FACINGS,
-            SuttonSignWriting::SignwritingHandDashFlatHeel => SIGNWRITING_HAND_DASH_FLAT_HEEL,
-            SuttonSignWriting::SignwritingHandDashFlatThumbSide => SIGNWRITING_HAND_DASH_FLAT_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFlatHeelThumbSide => SIGNWRITING_HAND_DASH_FLAT_HEEL_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFlatThumbBent => SIGNWRITING_HAND_DASH_FLAT_THUMB_BENT,
-            SuttonSignWriting::SignwritingHandDashFlatThumbForward => SIGNWRITING_HAND_DASH_FLAT_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashFlatSplitIndexThumbSide => SIGNWRITING_HAND_DASH_FLAT_SPLIT_INDEX_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFlatSplitCentre => SIGNWRITING_HAND_DASH_FLAT_SPLIT_CENTRE,
-            SuttonSignWriting::SignwritingHandDashFlatSplitCentreThumbSide => SIGNWRITING_HAND_DASH_FLAT_SPLIT_CENTRE_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFlatSplitCentreThumbSideBent => SIGNWRITING_HAND_DASH_FLAT_SPLIT_CENTRE_THUMB_SIDE_BENT,
-            SuttonSignWriting::SignwritingHandDashFlatSplitLittle => SIGNWRITING_HAND_DASH_FLAT_SPLIT_LITTLE,
-            SuttonSignWriting::SignwritingHandDashClaw => SIGNWRITING_HAND_DASH_CLAW,
-            SuttonSignWriting::SignwritingHandDashClawThumbSide => SIGNWRITING_HAND_DASH_CLAW_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashClawNoThumb => SIGNWRITING_HAND_DASH_CLAW_NO_THUMB,
-            SuttonSignWriting::SignwritingHandDashClawThumbForward => SIGNWRITING_HAND_DASH_CLAW_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashHookCurlicue => SIGNWRITING_HAND_DASH_HOOK_CURLICUE,
-            SuttonSignWriting::SignwritingHandDashHook => SIGNWRITING_HAND_DASH_HOOK,
-            SuttonSignWriting::SignwritingHandDashCupOpen => SIGNWRITING_HAND_DASH_CUP_OPEN,
-            SuttonSignWriting::SignwritingHandDashCup => SIGNWRITING_HAND_DASH_CUP,
-            SuttonSignWriting::SignwritingHandDashCupOpenThumbSide => SIGNWRITING_HAND_DASH_CUP_OPEN_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashCupThumbSide => SIGNWRITING_HAND_DASH_CUP_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashCupOpenNoThumb => SIGNWRITING_HAND_DASH_CUP_OPEN_NO_THUMB,
-            SuttonSignWriting::SignwritingHandDashCupNoThumb => SIGNWRITING_HAND_DASH_CUP_NO_THUMB,
-            SuttonSignWriting::SignwritingHandDashCupOpenThumbForward => SIGNWRITING_HAND_DASH_CUP_OPEN_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashCupThumbForward => SIGNWRITING_HAND_DASH_CUP_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashCurlicueOpen => SIGNWRITING_HAND_DASH_CURLICUE_OPEN,
-            SuttonSignWriting::SignwritingHandDashCurlicue => SIGNWRITING_HAND_DASH_CURLICUE,
-            SuttonSignWriting::SignwritingHandDashCircle => SIGNWRITING_HAND_DASH_CIRCLE,
-            SuttonSignWriting::SignwritingHandDashOval => SIGNWRITING_HAND_DASH_OVAL,
-            SuttonSignWriting::SignwritingHandDashOvalThumbSide => SIGNWRITING_HAND_DASH_OVAL_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashOvalNoThumb => SIGNWRITING_HAND_DASH_OVAL_NO_THUMB,
-            SuttonSignWriting::SignwritingHandDashOvalThumbForward => SIGNWRITING_HAND_DASH_OVAL_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashHingeOpen => SIGNWRITING_HAND_DASH_HINGE_OPEN,
-            SuttonSignWriting::SignwritingHandDashHingeOpenThumbForward => SIGNWRITING_HAND_DASH_HINGE_OPEN_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashHinge => SIGNWRITING_HAND_DASH_HINGE,
-            SuttonSignWriting::SignwritingHandDashHingeSmall => SIGNWRITING_HAND_DASH_HINGE_SMALL,
-            SuttonSignWriting::SignwritingHandDashHingeOpenThumbSide => SIGNWRITING_HAND_DASH_HINGE_OPEN_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashHingeThumbSide => SIGNWRITING_HAND_DASH_HINGE_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashHingeOpenNoThumb => SIGNWRITING_HAND_DASH_HINGE_OPEN_NO_THUMB,
-            SuttonSignWriting::SignwritingHandDashHingeNoThumb => SIGNWRITING_HAND_DASH_HINGE_NO_THUMB,
-            SuttonSignWriting::SignwritingHandDashHingeThumbSideTouchingIndex => SIGNWRITING_HAND_DASH_HINGE_THUMB_SIDE_TOUCHING_INDEX,
-            SuttonSignWriting::SignwritingHandDashHingeThumbBetweenMiddleRing => SIGNWRITING_HAND_DASH_HINGE_THUMB_BETWEEN_MIDDLE_RING,
-            SuttonSignWriting::SignwritingHandDashAngle => SIGNWRITING_HAND_DASH_ANGLE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleRing => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RING,
-            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleRing => SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_RING,
-            SuttonSignWriting::SignwritingHandDashHingeIndexMiddleRing => SIGNWRITING_HAND_DASH_HINGE_INDEX_MIDDLE_RING,
-            SuttonSignWriting::SignwritingHandDashAngleIndexMiddleRing => SIGNWRITING_HAND_DASH_ANGLE_INDEX_MIDDLE_RING,
-            SuttonSignWriting::SignwritingHandDashHingeLittle => SIGNWRITING_HAND_DASH_HINGE_LITTLE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleRingBent => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RING_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleRingConjoined => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RING_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashHingeIndexMiddleRingConjoined => SIGNWRITING_HAND_DASH_HINGE_INDEX_MIDDLE_RING_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFistLittleDown => SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN,
-            SuttonSignWriting::SignwritingHandDashFistLittleDownRippleStraight => SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN_RIPPLE_STRAIGHT,
-            SuttonSignWriting::SignwritingHandDashFistLittleDownRippleCurved => SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN_RIPPLE_CURVED,
-            SuttonSignWriting::SignwritingHandDashFistLittleDownOthersCircled => SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN_OTHERS_CIRCLED,
-            SuttonSignWriting::SignwritingHandDashFistLittleUp => SIGNWRITING_HAND_DASH_FIST_LITTLE_UP,
-            SuttonSignWriting::SignwritingHandDashFistThumbUnderLittleUp => SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_LITTLE_UP,
-            SuttonSignWriting::SignwritingHandDashCircleLittleUp => SIGNWRITING_HAND_DASH_CIRCLE_LITTLE_UP,
-            SuttonSignWriting::SignwritingHandDashOvalLittleUp => SIGNWRITING_HAND_DASH_OVAL_LITTLE_UP,
-            SuttonSignWriting::SignwritingHandDashAngleLittleUp => SIGNWRITING_HAND_DASH_ANGLE_LITTLE_UP,
-            SuttonSignWriting::SignwritingHandDashFistLittleRaisedKnuckle => SIGNWRITING_HAND_DASH_FIST_LITTLE_RAISED_KNUCKLE,
-            SuttonSignWriting::SignwritingHandDashFistLittleBent => SIGNWRITING_HAND_DASH_FIST_LITTLE_BENT,
-            SuttonSignWriting::SignwritingHandDashFistLittleTouchesThumb => SIGNWRITING_HAND_DASH_FIST_LITTLE_TOUCHES_THUMB,
-            SuttonSignWriting::SignwritingHandDashFistLittleThumb => SIGNWRITING_HAND_DASH_FIST_LITTLE_THUMB,
-            SuttonSignWriting::SignwritingHandDashHingeLittleThumb => SIGNWRITING_HAND_DASH_HINGE_LITTLE_THUMB,
-            SuttonSignWriting::SignwritingHandDashFistLittleIndexThumb => SIGNWRITING_HAND_DASH_FIST_LITTLE_INDEX_THUMB,
-            SuttonSignWriting::SignwritingHandDashHingeLittleIndexThumb => SIGNWRITING_HAND_DASH_HINGE_LITTLE_INDEX_THUMB,
-            SuttonSignWriting::SignwritingHandDashAngleLittleIndexThumbIndexThumbOut => SIGNWRITING_HAND_DASH_ANGLE_LITTLE_INDEX_THUMB_INDEX_THUMB_OUT,
-            SuttonSignWriting::SignwritingHandDashAngleLittleIndexThumbIndexThumb => SIGNWRITING_HAND_DASH_ANGLE_LITTLE_INDEX_THUMB_INDEX_THUMB,
-            SuttonSignWriting::SignwritingHandDashFistLittleIndex => SIGNWRITING_HAND_DASH_FIST_LITTLE_INDEX,
-            SuttonSignWriting::SignwritingHandDashCircleLittleIndex => SIGNWRITING_HAND_DASH_CIRCLE_LITTLE_INDEX,
-            SuttonSignWriting::SignwritingHandDashHingeLittleIndex => SIGNWRITING_HAND_DASH_HINGE_LITTLE_INDEX,
-            SuttonSignWriting::SignwritingHandDashAngleLittleIndex => SIGNWRITING_HAND_DASH_ANGLE_LITTLE_INDEX,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleLittle => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_LITTLE,
-            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleLittle => SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_LITTLE,
-            SuttonSignWriting::SignwritingHandDashHingeIndexMiddleLittle => SIGNWRITING_HAND_DASH_HINGE_INDEX_MIDDLE_LITTLE,
-            SuttonSignWriting::SignwritingHandDashHingeRing => SIGNWRITING_HAND_DASH_HINGE_RING,
-            SuttonSignWriting::SignwritingHandDashAngleIndexMiddleLittle => SIGNWRITING_HAND_DASH_ANGLE_INDEX_MIDDLE_LITTLE,
-            SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossLittle => SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CROSS_LITTLE,
-            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleCrossLittle => SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_CROSS_LITTLE,
-            SuttonSignWriting::SignwritingHandDashFistRingDown => SIGNWRITING_HAND_DASH_FIST_RING_DOWN,
-            SuttonSignWriting::SignwritingHandDashHingeRingDownIndexThumbHookMiddle => SIGNWRITING_HAND_DASH_HINGE_RING_DOWN_INDEX_THUMB_HOOK_MIDDLE,
-            SuttonSignWriting::SignwritingHandDashAngleRingDownMiddleThumbIndexCross => SIGNWRITING_HAND_DASH_ANGLE_RING_DOWN_MIDDLE_THUMB_INDEX_CROSS,
-            SuttonSignWriting::SignwritingHandDashFistRingUp => SIGNWRITING_HAND_DASH_FIST_RING_UP,
-            SuttonSignWriting::SignwritingHandDashFistRingRaisedKnuckle => SIGNWRITING_HAND_DASH_FIST_RING_RAISED_KNUCKLE,
-            SuttonSignWriting::SignwritingHandDashFistRingLittle => SIGNWRITING_HAND_DASH_FIST_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashCircleRingLittle => SIGNWRITING_HAND_DASH_CIRCLE_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashOvalRingLittle => SIGNWRITING_HAND_DASH_OVAL_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashAngleRingLittle => SIGNWRITING_HAND_DASH_ANGLE_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashFistRingMiddle => SIGNWRITING_HAND_DASH_FIST_RING_MIDDLE,
-            SuttonSignWriting::SignwritingHandDashFistRingMiddleConjoined => SIGNWRITING_HAND_DASH_FIST_RING_MIDDLE_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFistRingMiddleRaisedKnuckles => SIGNWRITING_HAND_DASH_FIST_RING_MIDDLE_RAISED_KNUCKLES,
-            SuttonSignWriting::SignwritingHandDashFistRingIndex => SIGNWRITING_HAND_DASH_FIST_RING_INDEX,
-            SuttonSignWriting::SignwritingHandDashFistRingThumb => SIGNWRITING_HAND_DASH_FIST_RING_THUMB,
-            SuttonSignWriting::SignwritingHandDashHookRingThumb => SIGNWRITING_HAND_DASH_HOOK_RING_THUMB,
-            SuttonSignWriting::SignwritingHandDashFistIndexRingLittle => SIGNWRITING_HAND_DASH_FIST_INDEX_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashCircleIndexRingLittle => SIGNWRITING_HAND_DASH_CIRCLE_INDEX_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashCurlicueIndexRingLittleOn => SIGNWRITING_HAND_DASH_CURLICUE_INDEX_RING_LITTLE_ON,
-            SuttonSignWriting::SignwritingHandDashHookIndexRingLittleOut => SIGNWRITING_HAND_DASH_HOOK_INDEX_RING_LITTLE_OUT,
-            SuttonSignWriting::SignwritingHandDashHookIndexRingLittleIn => SIGNWRITING_HAND_DASH_HOOK_INDEX_RING_LITTLE_IN,
-            SuttonSignWriting::SignwritingHandDashHookIndexRingLittleUnder => SIGNWRITING_HAND_DASH_HOOK_INDEX_RING_LITTLE_UNDER,
-            SuttonSignWriting::SignwritingHandDashCupIndexRingLittle => SIGNWRITING_HAND_DASH_CUP_INDEX_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashHingeIndexRingLittle => SIGNWRITING_HAND_DASH_HINGE_INDEX_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashAngleIndexRingLittleOut => SIGNWRITING_HAND_DASH_ANGLE_INDEX_RING_LITTLE_OUT,
-            SuttonSignWriting::SignwritingHandDashAngleIndexRingLittle => SIGNWRITING_HAND_DASH_ANGLE_INDEX_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashFistMiddleDown => SIGNWRITING_HAND_DASH_FIST_MIDDLE_DOWN,
-            SuttonSignWriting::SignwritingHandDashHingeMiddle => SIGNWRITING_HAND_DASH_HINGE_MIDDLE,
-            SuttonSignWriting::SignwritingHandDashFistMiddleUp => SIGNWRITING_HAND_DASH_FIST_MIDDLE_UP,
-            SuttonSignWriting::SignwritingHandDashCircleMiddleUp => SIGNWRITING_HAND_DASH_CIRCLE_MIDDLE_UP,
-            SuttonSignWriting::SignwritingHandDashFistMiddleRaisedKnuckle => SIGNWRITING_HAND_DASH_FIST_MIDDLE_RAISED_KNUCKLE,
-            SuttonSignWriting::SignwritingHandDashFistMiddleUpThumbSide => SIGNWRITING_HAND_DASH_FIST_MIDDLE_UP_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashHookMiddleThumb => SIGNWRITING_HAND_DASH_HOOK_MIDDLE_THUMB,
-            SuttonSignWriting::SignwritingHandDashFistMiddleThumbLittle => SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_LITTLE,
-            SuttonSignWriting::SignwritingHandDashFistMiddleLittle => SIGNWRITING_HAND_DASH_FIST_MIDDLE_LITTLE,
-            SuttonSignWriting::SignwritingHandDashFistMiddleRingLittle => SIGNWRITING_HAND_DASH_FIST_MIDDLE_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashCircleMiddleRingLittle => SIGNWRITING_HAND_DASH_CIRCLE_MIDDLE_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashCurlicueMiddleRingLittleOn => SIGNWRITING_HAND_DASH_CURLICUE_MIDDLE_RING_LITTLE_ON,
-            SuttonSignWriting::SignwritingHandDashCupMiddleRingLittle => SIGNWRITING_HAND_DASH_CUP_MIDDLE_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashHingeMiddleRingLittle => SIGNWRITING_HAND_DASH_HINGE_MIDDLE_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittleOut => SIGNWRITING_HAND_DASH_ANGLE_MIDDLE_RING_LITTLE_OUT,
-            SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittleIn => SIGNWRITING_HAND_DASH_ANGLE_MIDDLE_RING_LITTLE_IN,
-            SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittle => SIGNWRITING_HAND_DASH_ANGLE_MIDDLE_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashCircleMiddleRingLittleBent => SIGNWRITING_HAND_DASH_CIRCLE_MIDDLE_RING_LITTLE_BENT,
-            SuttonSignWriting::SignwritingHandDashClawMiddleRingLittleConjoined => SIGNWRITING_HAND_DASH_CLAW_MIDDLE_RING_LITTLE_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashClawMiddleRingLittleConjoinedSide => SIGNWRITING_HAND_DASH_CLAW_MIDDLE_RING_LITTLE_CONJOINED_SIDE,
-            SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoinedOut => SIGNWRITING_HAND_DASH_HOOK_MIDDLE_RING_LITTLE_CONJOINED_OUT,
-            SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoinedIn => SIGNWRITING_HAND_DASH_HOOK_MIDDLE_RING_LITTLE_CONJOINED_IN,
-            SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoined => SIGNWRITING_HAND_DASH_HOOK_MIDDLE_RING_LITTLE_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashHingeIndexHinged => SIGNWRITING_HAND_DASH_HINGE_INDEX_HINGED,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbSide => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashHingeIndexThumbSide => SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_SIDE,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbDiagonal => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_THUMB_DIAGONAL,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbConjoined => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_THUMB_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbBent => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_THUMB_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideIndexBent => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_INDEX_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideBothBent => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_BOTH_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideIndexHinge => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_INDEX_HINGE,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbForwardIndexStraight => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_FORWARD_INDEX_STRAIGHT,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbForwardIndexBent => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_FORWARD_INDEX_BENT,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbHook => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_HOOK,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbCurlicue => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CURLICUE,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbCurveThumbInside => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CURVE_THUMB_INSIDE,
-            SuttonSignWriting::SignwritingHandDashClawIndexThumbCurveThumbInside => SIGNWRITING_HAND_DASH_CLAW_INDEX_THUMB_CURVE_THUMB_INSIDE,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbCurveThumbUnder => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CURVE_THUMB_UNDER,
-            SuttonSignWriting::SignwritingHandDashFistIndexThumbCircle => SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CIRCLE,
-            SuttonSignWriting::SignwritingHandDashCupIndexThumb => SIGNWRITING_HAND_DASH_CUP_INDEX_THUMB,
-            SuttonSignWriting::SignwritingHandDashCupIndexThumbOpen => SIGNWRITING_HAND_DASH_CUP_INDEX_THUMB_OPEN,
-            SuttonSignWriting::SignwritingHandDashHingeIndexThumbOpen => SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_OPEN,
-            SuttonSignWriting::SignwritingHandDashHingeIndexThumbLarge => SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_LARGE,
-            SuttonSignWriting::SignwritingHandDashHingeIndexThumb => SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB,
-            SuttonSignWriting::SignwritingHandDashHingeIndexThumbSmall => SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_SMALL,
-            SuttonSignWriting::SignwritingHandDashAngleIndexThumbOut => SIGNWRITING_HAND_DASH_ANGLE_INDEX_THUMB_OUT,
-            SuttonSignWriting::SignwritingHandDashAngleIndexThumbIn => SIGNWRITING_HAND_DASH_ANGLE_INDEX_THUMB_IN,
-            SuttonSignWriting::SignwritingHandDashAngleIndexThumb => SIGNWRITING_HAND_DASH_ANGLE_INDEX_THUMB,
-            SuttonSignWriting::SignwritingHandDashFistThumb => SIGNWRITING_HAND_DASH_FIST_THUMB,
-            SuttonSignWriting::SignwritingHandDashFistThumbHeel => SIGNWRITING_HAND_DASH_FIST_THUMB_HEEL,
-            SuttonSignWriting::SignwritingHandDashFistThumbSideDiagonal => SIGNWRITING_HAND_DASH_FIST_THUMB_SIDE_DIAGONAL,
-            SuttonSignWriting::SignwritingHandDashFistThumbSideConjoined => SIGNWRITING_HAND_DASH_FIST_THUMB_SIDE_CONJOINED,
-            SuttonSignWriting::SignwritingHandDashFistThumbSideBent => SIGNWRITING_HAND_DASH_FIST_THUMB_SIDE_BENT,
-            SuttonSignWriting::SignwritingHandDashFistThumbForward => SIGNWRITING_HAND_DASH_FIST_THUMB_FORWARD,
-            SuttonSignWriting::SignwritingHandDashFistThumbBetweenIndexMiddle => SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_INDEX_MIDDLE,
-            SuttonSignWriting::SignwritingHandDashFistThumbBetweenMiddleRing => SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_MIDDLE_RING,
-            SuttonSignWriting::SignwritingHandDashFistThumbBetweenRingLittle => SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_RING_LITTLE,
-            SuttonSignWriting::SignwritingHandDashFistThumbUnderTwoFingers => SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_TWO_FINGERS,
-            SuttonSignWriting::SignwritingHandDashFistThumbOverTwoFingers => SIGNWRITING_HAND_DASH_FIST_THUMB_OVER_TWO_FINGERS,
-            SuttonSignWriting::SignwritingHandDashFistThumbUnderThreeFingers => SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_THREE_FINGERS,
-            SuttonSignWriting::SignwritingHandDashFistThumbUnderFourFingers => SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_FOUR_FINGERS,
-            SuttonSignWriting::SignwritingHandDashFistThumbOverFourRaisedKnuckles => SIGNWRITING_HAND_DASH_FIST_THUMB_OVER_FOUR_RAISED_KNUCKLES,
-            SuttonSignWriting::SignwritingHandDashFist => SIGNWRITING_HAND_DASH_FIST,
-            SuttonSignWriting::SignwritingHandDashFistHeel => SIGNWRITING_HAND_DASH_FIST_HEEL,
-            SuttonSignWriting::SignwritingTouchSingle => SIGNWRITING_TOUCH_SINGLE,
-            SuttonSignWriting::SignwritingTouchMultiple => SIGNWRITING_TOUCH_MULTIPLE,
-            SuttonSignWriting::SignwritingTouchBetween => SIGNWRITING_TOUCH_BETWEEN,
-            SuttonSignWriting::SignwritingGraspSingle => SIGNWRITING_GRASP_SINGLE,
-            SuttonSignWriting::SignwritingGraspMultiple => SIGNWRITING_GRASP_MULTIPLE,
-            SuttonSignWriting::SignwritingGraspBetween => SIGNWRITING_GRASP_BETWEEN,
-            SuttonSignWriting::SignwritingStrikeSingle => SIGNWRITING_STRIKE_SINGLE,
-            SuttonSignWriting::SignwritingStrikeMultiple => SIGNWRITING_STRIKE_MULTIPLE,
-            SuttonSignWriting::SignwritingStrikeBetween => SIGNWRITING_STRIKE_BETWEEN,
-            SuttonSignWriting::SignwritingBrushSingle => SIGNWRITING_BRUSH_SINGLE,
-            SuttonSignWriting::SignwritingBrushMultiple => SIGNWRITING_BRUSH_MULTIPLE,
-            SuttonSignWriting::SignwritingBrushBetween => SIGNWRITING_BRUSH_BETWEEN,
-            SuttonSignWriting::SignwritingRubSingle => SIGNWRITING_RUB_SINGLE,
-            SuttonSignWriting::SignwritingRubMultiple => SIGNWRITING_RUB_MULTIPLE,
-            SuttonSignWriting::SignwritingRubBetween => SIGNWRITING_RUB_BETWEEN,
-            SuttonSignWriting::SignwritingSurfaceSymbols => SIGNWRITING_SURFACE_SYMBOLS,
-            SuttonSignWriting::SignwritingSurfaceBetween => SIGNWRITING_SURFACE_BETWEEN,
-            SuttonSignWriting::SignwritingSqueezeLargeSingle => SIGNWRITING_SQUEEZE_LARGE_SINGLE,
-            SuttonSignWriting::SignwritingSqueezeSmallSingle => SIGNWRITING_SQUEEZE_SMALL_SINGLE,
-            SuttonSignWriting::SignwritingSqueezeLargeMultiple => SIGNWRITING_SQUEEZE_LARGE_MULTIPLE,
-            SuttonSignWriting::SignwritingSqueezeSmallMultiple => SIGNWRITING_SQUEEZE_SMALL_MULTIPLE,
-            SuttonSignWriting::SignwritingSqueezeSequential => SIGNWRITING_SQUEEZE_SEQUENTIAL,
-            SuttonSignWriting::SignwritingFlickLargeSingle => SIGNWRITING_FLICK_LARGE_SINGLE,
-            SuttonSignWriting::SignwritingFlickSmallSingle => SIGNWRITING_FLICK_SMALL_SINGLE,
-            SuttonSignWriting::SignwritingFlickLargeMultiple => SIGNWRITING_FLICK_LARGE_MULTIPLE,
-            SuttonSignWriting::SignwritingFlickSmallMultiple => SIGNWRITING_FLICK_SMALL_MULTIPLE,
-            SuttonSignWriting::SignwritingFlickSequential => SIGNWRITING_FLICK_SEQUENTIAL,
-            SuttonSignWriting::SignwritingSqueezeFlickAlternating => SIGNWRITING_SQUEEZE_FLICK_ALTERNATING,
-            SuttonSignWriting::SignwritingMovementDashHingeUpDownLarge => SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_LARGE,
-            SuttonSignWriting::SignwritingMovementDashHingeUpDownSmall => SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_SMALL,
-            SuttonSignWriting::SignwritingMovementDashHingeUpSequential => SIGNWRITING_MOVEMENT_DASH_HINGE_UP_SEQUENTIAL,
-            SuttonSignWriting::SignwritingMovementDashHingeDownSequential => SIGNWRITING_MOVEMENT_DASH_HINGE_DOWN_SEQUENTIAL,
-            SuttonSignWriting::SignwritingMovementDashHingeUpDownAlternatingLarge => SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_ALTERNATING_LARGE,
-            SuttonSignWriting::SignwritingMovementDashHingeUpDownAlternatingSmall => SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_ALTERNATING_SMALL,
-            SuttonSignWriting::SignwritingMovementDashHingeSideToSideScissors => SIGNWRITING_MOVEMENT_DASH_HINGE_SIDE_TO_SIDE_SCISSORS,
-            SuttonSignWriting::SignwritingMovementDashWallplaneFingerContact => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_FINGER_CONTACT,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneFingerContact => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_FINGER_CONTACT,
-            SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightLargest => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_LARGEST,
-            SuttonSignWriting::SignwritingMovementDashWallplaneSingleWristFlex => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashWallplaneDoubleStraight => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_STRAIGHT,
-            SuttonSignWriting::SignwritingMovementDashWallplaneDoubleWristFlex => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashWallplaneDoubleAlternating => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_ALTERNATING,
-            SuttonSignWriting::SignwritingMovementDashWallplaneDoubleAlternatingWristFlex => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_ALTERNATING_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCross => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CROSS,
-            SuttonSignWriting::SignwritingMovementDashWallplaneTripleStraightMovement => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_STRAIGHT_MOVEMENT,
-            SuttonSignWriting::SignwritingMovementDashWallplaneTripleWristFlex => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashWallplaneTripleAlternating => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_ALTERNATING,
-            SuttonSignWriting::SignwritingMovementDashWallplaneTripleAlternatingWristFlex => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_ALTERNATING_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashWallplaneBendSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BEND_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneBendMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BEND_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneBendLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BEND_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCornerSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCornerMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCornerLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCornerRotation => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_ROTATION,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCheckSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CHECK_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCheckMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CHECK_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCheckLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CHECK_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneBoxSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BOX_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneBoxMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BOX_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneBoxLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BOX_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneZigzagSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ZIGZAG_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneZigzagMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ZIGZAG_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneZigzagLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ZIGZAG_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplanePeaksSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_PEAKS_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplanePeaksMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_PEAKS_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplanePeaksLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_PEAKS_LARGE,
-            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneSingle => SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_WALLPLANE_SINGLE,
-            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneDouble => SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_WALLPLANE_DOUBLE,
-            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneAlternating => SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_WALLPLANE_ALTERNATING,
-            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneSingle => SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_FLOORPLANE_SINGLE,
-            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneDouble => SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_FLOORPLANE_DOUBLE,
-            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneAlternating => SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_FLOORPLANE_ALTERNATING,
-            SuttonSignWriting::SignwritingTravelDashWallplaneShaking => SIGNWRITING_TRAVEL_DASH_WALLPLANE_SHAKING,
-            SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralSingle => SIGNWRITING_TRAVEL_DASH_WALLPLANE_ARM_SPIRAL_SINGLE,
-            SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralDouble => SIGNWRITING_TRAVEL_DASH_WALLPLANE_ARM_SPIRAL_DOUBLE,
-            SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralTriple => SIGNWRITING_TRAVEL_DASH_WALLPLANE_ARM_SPIRAL_TRIPLE,
-            SuttonSignWriting::SignwritingMovementDashDiagonalAwaySmall => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_SMALL,
-            SuttonSignWriting::SignwritingMovementDashDiagonalAwayMedium => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashDiagonalAwayLarge => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_LARGE,
-            SuttonSignWriting::SignwritingMovementDashDiagonalAwayLargest => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_LARGEST,
-            SuttonSignWriting::SignwritingMovementDashDiagonalTowardsSmall => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_SMALL,
-            SuttonSignWriting::SignwritingMovementDashDiagonalTowardsMedium => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashDiagonalTowardsLarge => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_LARGE,
-            SuttonSignWriting::SignwritingMovementDashDiagonalTowardsLargest => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_LARGEST,
-            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwaySmall => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_SMALL,
-            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayMedium => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayLarge => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_LARGE,
-            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayLargest => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_LARGEST,
-            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsSmall => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_SMALL,
-            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsMedium => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsLarge => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_LARGE,
-            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsLargest => SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_LARGEST,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightMedium => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_LARGE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightLargest => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_LARGEST,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleWristFlex => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleStraight => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_STRAIGHT,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleWristFlex => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleAlternating => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_ALTERNATING,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleAlternatingWristFlex => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_ALTERNATING_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCross => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CROSS,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneTripleStraightMovement => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_STRAIGHT_MOVEMENT,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneTripleWristFlex => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneTripleAlternatingMovement => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_ALTERNATING_MOVEMENT,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneTripleAlternatingWristFlex => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_ALTERNATING_WRIST_FLEX,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneBend => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BEND,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCornerSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CORNER_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCornerMedium => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CORNER_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCornerLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CORNER_LARGE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCheck => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CHECK,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneBoxSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BOX_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneBoxMedium => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BOX_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneBoxLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BOX_LARGE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ZIGZAG_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagMedium => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ZIGZAG_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ZIGZAG_LARGE,
-            SuttonSignWriting::SignwritingMovementDashFloorplanePeaksSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_PEAKS_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplanePeaksMedium => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_PEAKS_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashFloorplanePeaksLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_PEAKS_LARGE,
-            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneSingle => SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_FLOORPLANE_SINGLE,
-            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneDouble => SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_FLOORPLANE_DOUBLE,
-            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneAlternating => SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_FLOORPLANE_ALTERNATING,
-            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneSingle => SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_WALLPLANE_SINGLE,
-            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneDouble => SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_WALLPLANE_DOUBLE,
-            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneAlternating => SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_WALLPLANE_ALTERNATING,
-            SuttonSignWriting::SignwritingTravelDashFloorplaneShaking => SIGNWRITING_TRAVEL_DASH_FLOORPLANE_SHAKING,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterLargest => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_LARGEST,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleLargest => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_LARGEST,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveThreeDashQuarterCircleSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_THREE_DASH_QUARTER_CIRCLE_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveThreeDashQuarterCircleMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_THREE_DASH_QUARTER_CIRCLE_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneHumpSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneHumpMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneHumpLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneLoopSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneLoopMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneLoopLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneLoopSmallDouble => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_SMALL_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_DOUBLE_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_DOUBLE_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_DOUBLE_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_TRIPLE_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_TRIPLE_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_TRIPLE_LARGE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveThenStraight => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_THEN_STRAIGHT,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurvedCrossSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVED_CROSS_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurvedCrossMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVED_CROSS_MEDIUM,
-            SuttonSignWriting::SignwritingRotationDashWallplaneSingle => SIGNWRITING_ROTATION_DASH_WALLPLANE_SINGLE,
-            SuttonSignWriting::SignwritingRotationDashWallplaneDouble => SIGNWRITING_ROTATION_DASH_WALLPLANE_DOUBLE,
-            SuttonSignWriting::SignwritingRotationDashWallplaneAlternate => SIGNWRITING_ROTATION_DASH_WALLPLANE_ALTERNATE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneShaking => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SHAKING,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHittingFrontWall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HITTING_FRONT_WALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneHumpHittingFrontWall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_HITTING_FRONT_WALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneLoopHittingFrontWall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_HITTING_FRONT_WALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveHittingFrontWall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_HITTING_FRONT_WALL,
-            SuttonSignWriting::SignwritingRotationDashWallplaneSingleHittingFrontWall => SIGNWRITING_ROTATION_DASH_WALLPLANE_SINGLE_HITTING_FRONT_WALL,
-            SuttonSignWriting::SignwritingRotationDashWallplaneDoubleHittingFrontWall => SIGNWRITING_ROTATION_DASH_WALLPLANE_DOUBLE_HITTING_FRONT_WALL,
-            SuttonSignWriting::SignwritingRotationDashWallplaneAlternatingHittingFrontWall => SIGNWRITING_ROTATION_DASH_WALLPLANE_ALTERNATING_HITTING_FRONT_WALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHittingChest => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HITTING_CHEST,
-            SuttonSignWriting::SignwritingMovementDashWallplaneHumpHittingChest => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_HITTING_CHEST,
-            SuttonSignWriting::SignwritingMovementDashWallplaneLoopHittingChest => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_HITTING_CHEST,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveHittingChest => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_HITTING_CHEST,
-            SuttonSignWriting::SignwritingRotationDashWallplaneSingleHittingChest => SIGNWRITING_ROTATION_DASH_WALLPLANE_SINGLE_HITTING_CHEST,
-            SuttonSignWriting::SignwritingRotationDashWallplaneDoubleHittingChest => SIGNWRITING_ROTATION_DASH_WALLPLANE_DOUBLE_HITTING_CHEST,
-            SuttonSignWriting::SignwritingRotationDashWallplaneAlternatingHittingChest => SIGNWRITING_ROTATION_DASH_WALLPLANE_ALTERNATING_HITTING_CHEST,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathSmall => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_DIAGONAL_PATH_SMALL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathMedium => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_DIAGONAL_PATH_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathLarge => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_DIAGONAL_PATH_LARGE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingCeilingSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_CEILING_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingCeilingLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_CEILING_LARGE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingSmallDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_SMALL_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingLargeDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_LARGE_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingSmallTriple => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_SMALL_TRIPLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingLargeTriple => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_LARGE_TRIPLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingSmallSingle => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_SMALL_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingLargeSingle => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_LARGE_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingSmallDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_SMALL_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingLargeDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_LARGE_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingCeilingSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_CEILING_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingCeilingLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_CEILING_LARGE,
-            SuttonSignWriting::SignwritingRotationDashFloorplaneSingleHittingCeiling => SIGNWRITING_ROTATION_DASH_FLOORPLANE_SINGLE_HITTING_CEILING,
-            SuttonSignWriting::SignwritingRotationDashFloorplaneDoubleHittingCeiling => SIGNWRITING_ROTATION_DASH_FLOORPLANE_DOUBLE_HITTING_CEILING,
-            SuttonSignWriting::SignwritingRotationDashFloorplaneAlternatingHittingCeiling => SIGNWRITING_ROTATION_DASH_FLOORPLANE_ALTERNATING_HITTING_CEILING,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingFloorSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_FLOOR_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingFloorLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_FLOOR_LARGE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorSmallDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_SMALL_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorLargeDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_LARGE_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorTripleSmallTriple => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_TRIPLE_SMALL_TRIPLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorTripleLargeTriple => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_TRIPLE_LARGE_TRIPLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorSmallSingle => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_SMALL_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorLargeSingle => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_LARGE_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorSmallDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_SMALL_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorLargeDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_LARGE_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingFloorSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_FLOOR_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingFloorLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_FLOOR_LARGE,
-            SuttonSignWriting::SignwritingRotationDashFloorplaneSingleHittingFloor => SIGNWRITING_ROTATION_DASH_FLOORPLANE_SINGLE_HITTING_FLOOR,
-            SuttonSignWriting::SignwritingRotationDashFloorplaneDoubleHittingFloor => SIGNWRITING_ROTATION_DASH_FLOORPLANE_DOUBLE_HITTING_FLOOR,
-            SuttonSignWriting::SignwritingRotationDashFloorplaneAlternatingHittingFloor => SIGNWRITING_ROTATION_DASH_FLOORPLANE_ALTERNATING_HITTING_FLOOR,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveMedium => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_MEDIUM,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_LARGE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveLargest => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_LARGEST,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveCombined => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_COMBINED,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveSnake => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_SNAKE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveSmall => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_SMALL,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveLarge => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_LARGE,
-            SuttonSignWriting::SignwritingRotationDashFloorplaneSingle => SIGNWRITING_ROTATION_DASH_FLOORPLANE_SINGLE,
-            SuttonSignWriting::SignwritingRotationDashFloorplaneDouble => SIGNWRITING_ROTATION_DASH_FLOORPLANE_DOUBLE,
-            SuttonSignWriting::SignwritingRotationDashFloorplaneAlternating => SIGNWRITING_ROTATION_DASH_FLOORPLANE_ALTERNATING,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneShakingParallel => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SHAKING_PARALLEL,
-            SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleSmallSingle => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_SMALL_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleMediumSingle => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_MEDIUM_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleSmallDouble => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_SMALL_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleMediumDouble => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_MEDIUM_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallSmallSingle => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_SMALL_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallMediumSingle => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_MEDIUM_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallLargeSingle => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_LARGE_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallSmallDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_SMALL_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallMediumDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_MEDIUM_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallLargeDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_LARGE_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWristCircleFrontSingle => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WRIST_CIRCLE_FRONT_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneWristCircleFrontDouble => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WRIST_CIRCLE_FRONT_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneWristCircleHittingWallSingle => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WRIST_CIRCLE_HITTING_WALL_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneWristCircleHittingWallDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WRIST_CIRCLE_HITTING_WALL_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneFingerCirclesSingle => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_FINGER_CIRCLES_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashWallplaneFingerCirclesDouble => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_FINGER_CIRCLES_DOUBLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneFingerCirclesHittingWallSingle => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_FINGER_CIRCLES_HITTING_WALL_SINGLE,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneFingerCirclesHittingWallDouble => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_FINGER_CIRCLES_HITTING_WALL_DOUBLE,
-            SuttonSignWriting::SignwritingDynamicArrowheadSmall => SIGNWRITING_DYNAMIC_ARROWHEAD_SMALL,
-            SuttonSignWriting::SignwritingDynamicArrowheadLarge => SIGNWRITING_DYNAMIC_ARROWHEAD_LARGE,
-            SuttonSignWriting::SignwritingDynamicFast => SIGNWRITING_DYNAMIC_FAST,
-            SuttonSignWriting::SignwritingDynamicSlow => SIGNWRITING_DYNAMIC_SLOW,
-            SuttonSignWriting::SignwritingDynamicTense => SIGNWRITING_DYNAMIC_TENSE,
-            SuttonSignWriting::SignwritingDynamicRelaxed => SIGNWRITING_DYNAMIC_RELAXED,
-            SuttonSignWriting::SignwritingDynamicSimultaneous => SIGNWRITING_DYNAMIC_SIMULTANEOUS,
-            SuttonSignWriting::SignwritingDynamicSimultaneousAlternating => SIGNWRITING_DYNAMIC_SIMULTANEOUS_ALTERNATING,
-            SuttonSignWriting::SignwritingDynamicEveryOtherTime => SIGNWRITING_DYNAMIC_EVERY_OTHER_TIME,
-            SuttonSignWriting::SignwritingDynamicGradual => SIGNWRITING_DYNAMIC_GRADUAL,
-            SuttonSignWriting::SignwritingHead => SIGNWRITING_HEAD,
-            SuttonSignWriting::SignwritingHeadRim => SIGNWRITING_HEAD_RIM,
-            SuttonSignWriting::SignwritingHeadMovementDashWallplaneStraight => SIGNWRITING_HEAD_MOVEMENT_DASH_WALLPLANE_STRAIGHT,
-            SuttonSignWriting::SignwritingHeadMovementDashWallplaneTilt => SIGNWRITING_HEAD_MOVEMENT_DASH_WALLPLANE_TILT,
-            SuttonSignWriting::SignwritingHeadMovementDashFloorplaneStraight => SIGNWRITING_HEAD_MOVEMENT_DASH_FLOORPLANE_STRAIGHT,
-            SuttonSignWriting::SignwritingHeadMovementDashWallplaneCurve => SIGNWRITING_HEAD_MOVEMENT_DASH_WALLPLANE_CURVE,
-            SuttonSignWriting::SignwritingHeadMovementDashFloorplaneCurve => SIGNWRITING_HEAD_MOVEMENT_DASH_FLOORPLANE_CURVE,
-            SuttonSignWriting::SignwritingHeadMovementCircle => SIGNWRITING_HEAD_MOVEMENT_CIRCLE,
-            SuttonSignWriting::SignwritingFaceDirectionPositionNoseForwardTilting => SIGNWRITING_FACE_DIRECTION_POSITION_NOSE_FORWARD_TILTING,
-            SuttonSignWriting::SignwritingFaceDirectionPositionNoseUpOrDown => SIGNWRITING_FACE_DIRECTION_POSITION_NOSE_UP_OR_DOWN,
-            SuttonSignWriting::SignwritingFaceDirectionPositionNoseUpOrDownTilting => SIGNWRITING_FACE_DIRECTION_POSITION_NOSE_UP_OR_DOWN_TILTING,
-            SuttonSignWriting::SignwritingEyebrowsStraightUp => SIGNWRITING_EYEBROWS_STRAIGHT_UP,
-            SuttonSignWriting::SignwritingEyebrowsStraightNeutral => SIGNWRITING_EYEBROWS_STRAIGHT_NEUTRAL,
-            SuttonSignWriting::SignwritingEyebrowsStraightDown => SIGNWRITING_EYEBROWS_STRAIGHT_DOWN,
-            SuttonSignWriting::SignwritingDreamyEyebrowsNeutralDown => SIGNWRITING_DREAMY_EYEBROWS_NEUTRAL_DOWN,
-            SuttonSignWriting::SignwritingDreamyEyebrowsDownNeutral => SIGNWRITING_DREAMY_EYEBROWS_DOWN_NEUTRAL,
-            SuttonSignWriting::SignwritingDreamyEyebrowsUpNeutral => SIGNWRITING_DREAMY_EYEBROWS_UP_NEUTRAL,
-            SuttonSignWriting::SignwritingDreamyEyebrowsNeutralUp => SIGNWRITING_DREAMY_EYEBROWS_NEUTRAL_UP,
-            SuttonSignWriting::SignwritingForeheadNeutral => SIGNWRITING_FOREHEAD_NEUTRAL,
-            SuttonSignWriting::SignwritingForeheadContact => SIGNWRITING_FOREHEAD_CONTACT,
-            SuttonSignWriting::SignwritingForeheadWrinkled => SIGNWRITING_FOREHEAD_WRINKLED,
-            SuttonSignWriting::SignwritingEyesOpen => SIGNWRITING_EYES_OPEN,
-            SuttonSignWriting::SignwritingEyesSqueezed => SIGNWRITING_EYES_SQUEEZED,
-            SuttonSignWriting::SignwritingEyesClosed => SIGNWRITING_EYES_CLOSED,
-            SuttonSignWriting::SignwritingEyeBlinkSingle => SIGNWRITING_EYE_BLINK_SINGLE,
-            SuttonSignWriting::SignwritingEyeBlinkMultiple => SIGNWRITING_EYE_BLINK_MULTIPLE,
-            SuttonSignWriting::SignwritingEyesHalfOpen => SIGNWRITING_EYES_HALF_OPEN,
-            SuttonSignWriting::SignwritingEyesWideOpen => SIGNWRITING_EYES_WIDE_OPEN,
-            SuttonSignWriting::SignwritingEyesHalfClosed => SIGNWRITING_EYES_HALF_CLOSED,
-            SuttonSignWriting::SignwritingEyesWideningMovement => SIGNWRITING_EYES_WIDENING_MOVEMENT,
-            SuttonSignWriting::SignwritingEyeWink => SIGNWRITING_EYE_WINK,
-            SuttonSignWriting::SignwritingEyelashesUp => SIGNWRITING_EYELASHES_UP,
-            SuttonSignWriting::SignwritingEyelashesDown => SIGNWRITING_EYELASHES_DOWN,
-            SuttonSignWriting::SignwritingEyelashesFluttering => SIGNWRITING_EYELASHES_FLUTTERING,
-            SuttonSignWriting::SignwritingEyegazeDashWallplaneStraight => SIGNWRITING_EYEGAZE_DASH_WALLPLANE_STRAIGHT,
-            SuttonSignWriting::SignwritingEyegazeDashWallplaneStraightDouble => SIGNWRITING_EYEGAZE_DASH_WALLPLANE_STRAIGHT_DOUBLE,
-            SuttonSignWriting::SignwritingEyegazeDashWallplaneStraightAlternating => SIGNWRITING_EYEGAZE_DASH_WALLPLANE_STRAIGHT_ALTERNATING,
-            SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraight => SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_STRAIGHT,
-            SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraightDouble => SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_STRAIGHT_DOUBLE,
-            SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraightAlternating => SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_STRAIGHT_ALTERNATING,
-            SuttonSignWriting::SignwritingEyegazeDashWallplaneCurved => SIGNWRITING_EYEGAZE_DASH_WALLPLANE_CURVED,
-            SuttonSignWriting::SignwritingEyegazeDashFloorplaneCurved => SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_CURVED,
-            SuttonSignWriting::SignwritingEyegazeDashWallplaneCircling => SIGNWRITING_EYEGAZE_DASH_WALLPLANE_CIRCLING,
-            SuttonSignWriting::SignwritingCheeksPuffed => SIGNWRITING_CHEEKS_PUFFED,
-            SuttonSignWriting::SignwritingCheeksNeutral => SIGNWRITING_CHEEKS_NEUTRAL,
-            SuttonSignWriting::SignwritingCheeksSucked => SIGNWRITING_CHEEKS_SUCKED,
-            SuttonSignWriting::SignwritingTenseCheeksHigh => SIGNWRITING_TENSE_CHEEKS_HIGH,
-            SuttonSignWriting::SignwritingTenseCheeksMiddle => SIGNWRITING_TENSE_CHEEKS_MIDDLE,
-            SuttonSignWriting::SignwritingTenseCheeksLow => SIGNWRITING_TENSE_CHEEKS_LOW,
-            SuttonSignWriting::SignwritingEars => SIGNWRITING_EARS,
-            SuttonSignWriting::SignwritingNoseNeutral => SIGNWRITING_NOSE_NEUTRAL,
-            SuttonSignWriting::SignwritingNoseContact => SIGNWRITING_NOSE_CONTACT,
-            SuttonSignWriting::SignwritingNoseWrinkles => SIGNWRITING_NOSE_WRINKLES,
-            SuttonSignWriting::SignwritingNoseWiggles => SIGNWRITING_NOSE_WIGGLES,
-            SuttonSignWriting::SignwritingAirBlowingOut => SIGNWRITING_AIR_BLOWING_OUT,
-            SuttonSignWriting::SignwritingAirSuckingIn => SIGNWRITING_AIR_SUCKING_IN,
-            SuttonSignWriting::SignwritingAirBlowSmallRotations => SIGNWRITING_AIR_BLOW_SMALL_ROTATIONS,
-            SuttonSignWriting::SignwritingAirSuckSmallRotations => SIGNWRITING_AIR_SUCK_SMALL_ROTATIONS,
-            SuttonSignWriting::SignwritingBreathInhale => SIGNWRITING_BREATH_INHALE,
-            SuttonSignWriting::SignwritingBreathExhale => SIGNWRITING_BREATH_EXHALE,
-            SuttonSignWriting::SignwritingMouthClosedNeutral => SIGNWRITING_MOUTH_CLOSED_NEUTRAL,
-            SuttonSignWriting::SignwritingMouthClosedForward => SIGNWRITING_MOUTH_CLOSED_FORWARD,
-            SuttonSignWriting::SignwritingMouthClosedContact => SIGNWRITING_MOUTH_CLOSED_CONTACT,
-            SuttonSignWriting::SignwritingMouthSmile => SIGNWRITING_MOUTH_SMILE,
-            SuttonSignWriting::SignwritingMouthSmileWrinkled => SIGNWRITING_MOUTH_SMILE_WRINKLED,
-            SuttonSignWriting::SignwritingMouthSmileOpen => SIGNWRITING_MOUTH_SMILE_OPEN,
-            SuttonSignWriting::SignwritingMouthFrown => SIGNWRITING_MOUTH_FROWN,
-            SuttonSignWriting::SignwritingMouthFrownWrinkled => SIGNWRITING_MOUTH_FROWN_WRINKLED,
-            SuttonSignWriting::SignwritingMouthFrownOpen => SIGNWRITING_MOUTH_FROWN_OPEN,
-            SuttonSignWriting::SignwritingMouthOpenCircle => SIGNWRITING_MOUTH_OPEN_CIRCLE,
-            SuttonSignWriting::SignwritingMouthOpenForward => SIGNWRITING_MOUTH_OPEN_FORWARD,
-            SuttonSignWriting::SignwritingMouthOpenWrinkled => SIGNWRITING_MOUTH_OPEN_WRINKLED,
-            SuttonSignWriting::SignwritingMouthOpenOval => SIGNWRITING_MOUTH_OPEN_OVAL,
-            SuttonSignWriting::SignwritingMouthOpenOvalWrinkled => SIGNWRITING_MOUTH_OPEN_OVAL_WRINKLED,
-            SuttonSignWriting::SignwritingMouthOpenOvalYawn => SIGNWRITING_MOUTH_OPEN_OVAL_YAWN,
-            SuttonSignWriting::SignwritingMouthOpenRectangle => SIGNWRITING_MOUTH_OPEN_RECTANGLE,
-            SuttonSignWriting::SignwritingMouthOpenRectangleWrinkled => SIGNWRITING_MOUTH_OPEN_RECTANGLE_WRINKLED,
-            SuttonSignWriting::SignwritingMouthOpenRectangleYawn => SIGNWRITING_MOUTH_OPEN_RECTANGLE_YAWN,
-            SuttonSignWriting::SignwritingMouthKiss => SIGNWRITING_MOUTH_KISS,
-            SuttonSignWriting::SignwritingMouthKissForward => SIGNWRITING_MOUTH_KISS_FORWARD,
-            SuttonSignWriting::SignwritingMouthKissWrinkled => SIGNWRITING_MOUTH_KISS_WRINKLED,
-            SuttonSignWriting::SignwritingMouthTense => SIGNWRITING_MOUTH_TENSE,
-            SuttonSignWriting::SignwritingMouthTenseForward => SIGNWRITING_MOUTH_TENSE_FORWARD,
-            SuttonSignWriting::SignwritingMouthTenseSucked => SIGNWRITING_MOUTH_TENSE_SUCKED,
-            SuttonSignWriting::SignwritingLipsPressedTogether => SIGNWRITING_LIPS_PRESSED_TOGETHER,
-            SuttonSignWriting::SignwritingLipLowerOverUpper => SIGNWRITING_LIP_LOWER_OVER_UPPER,
-            SuttonSignWriting::SignwritingLipUpperOverLower => SIGNWRITING_LIP_UPPER_OVER_LOWER,
-            SuttonSignWriting::SignwritingMouthCorners => SIGNWRITING_MOUTH_CORNERS,
-            SuttonSignWriting::SignwritingMouthWrinklesSingle => SIGNWRITING_MOUTH_WRINKLES_SINGLE,
-            SuttonSignWriting::SignwritingMouthWrinklesDouble => SIGNWRITING_MOUTH_WRINKLES_DOUBLE,
-            SuttonSignWriting::SignwritingTongueStickingOutFar => SIGNWRITING_TONGUE_STICKING_OUT_FAR,
-            SuttonSignWriting::SignwritingTongueLickingLips => SIGNWRITING_TONGUE_LICKING_LIPS,
-            SuttonSignWriting::SignwritingTongueTipBetweenLips => SIGNWRITING_TONGUE_TIP_BETWEEN_LIPS,
-            SuttonSignWriting::SignwritingTongueTipTouchingInsideMouth => SIGNWRITING_TONGUE_TIP_TOUCHING_INSIDE_MOUTH,
-            SuttonSignWriting::SignwritingTongueInsideMouthRelaxed => SIGNWRITING_TONGUE_INSIDE_MOUTH_RELAXED,
-            SuttonSignWriting::SignwritingTongueMovesAgainstCheek => SIGNWRITING_TONGUE_MOVES_AGAINST_CHEEK,
-            SuttonSignWriting::SignwritingTongueCentreStickingOut => SIGNWRITING_TONGUE_CENTRE_STICKING_OUT,
-            SuttonSignWriting::SignwritingTongueCentreInsideMouth => SIGNWRITING_TONGUE_CENTRE_INSIDE_MOUTH,
-            SuttonSignWriting::SignwritingTeeth => SIGNWRITING_TEETH,
-            SuttonSignWriting::SignwritingTeethMovement => SIGNWRITING_TEETH_MOVEMENT,
-            SuttonSignWriting::SignwritingTeethOnTongue => SIGNWRITING_TEETH_ON_TONGUE,
-            SuttonSignWriting::SignwritingTeethOnTongueMovement => SIGNWRITING_TEETH_ON_TONGUE_MOVEMENT,
-            SuttonSignWriting::SignwritingTeethOnLips => SIGNWRITING_TEETH_ON_LIPS,
-            SuttonSignWriting::SignwritingTeethOnLipsMovement => SIGNWRITING_TEETH_ON_LIPS_MOVEMENT,
-            SuttonSignWriting::SignwritingTeethBiteLips => SIGNWRITING_TEETH_BITE_LIPS,
-            SuttonSignWriting::SignwritingMovementDashWallplaneJaw => SIGNWRITING_MOVEMENT_DASH_WALLPLANE_JAW,
-            SuttonSignWriting::SignwritingMovementDashFloorplaneJaw => SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_JAW,
-            SuttonSignWriting::SignwritingNeck => SIGNWRITING_NECK,
-            SuttonSignWriting::SignwritingHair => SIGNWRITING_HAIR,
-            SuttonSignWriting::SignwritingExcitement => SIGNWRITING_EXCITEMENT,
-            SuttonSignWriting::SignwritingShoulderHipSpine => SIGNWRITING_SHOULDER_HIP_SPINE,
-            SuttonSignWriting::SignwritingShoulderHipPositions => SIGNWRITING_SHOULDER_HIP_POSITIONS,
-            SuttonSignWriting::SignwritingWallplaneShoulderHipMove => SIGNWRITING_WALLPLANE_SHOULDER_HIP_MOVE,
-            SuttonSignWriting::SignwritingFloorplaneShoulderHipMove => SIGNWRITING_FLOORPLANE_SHOULDER_HIP_MOVE,
-            SuttonSignWriting::SignwritingShoulderTiltingFromWaist => SIGNWRITING_SHOULDER_TILTING_FROM_WAIST,
-            SuttonSignWriting::SignwritingTorsoDashWallplaneStraightStretch => SIGNWRITING_TORSO_DASH_WALLPLANE_STRAIGHT_STRETCH,
-            SuttonSignWriting::SignwritingTorsoDashWallplaneCurvedBend => SIGNWRITING_TORSO_DASH_WALLPLANE_CURVED_BEND,
-            SuttonSignWriting::SignwritingTorsoDashFloorplaneTwisting => SIGNWRITING_TORSO_DASH_FLOORPLANE_TWISTING,
-            SuttonSignWriting::SignwritingUpperBodyTiltingFromHipJoints => SIGNWRITING_UPPER_BODY_TILTING_FROM_HIP_JOINTS,
-            SuttonSignWriting::SignwritingLimbCombination => SIGNWRITING_LIMB_COMBINATION,
-            SuttonSignWriting::SignwritingLimbLengthDash1 => SIGNWRITING_LIMB_LENGTH_DASH_1,
-            SuttonSignWriting::SignwritingLimbLengthDash2 => SIGNWRITING_LIMB_LENGTH_DASH_2,
-            SuttonSignWriting::SignwritingLimbLengthDash3 => SIGNWRITING_LIMB_LENGTH_DASH_3,
-            SuttonSignWriting::SignwritingLimbLengthDash4 => SIGNWRITING_LIMB_LENGTH_DASH_4,
-            SuttonSignWriting::SignwritingLimbLengthDash5 => SIGNWRITING_LIMB_LENGTH_DASH_5,
-            SuttonSignWriting::SignwritingLimbLengthDash6 => SIGNWRITING_LIMB_LENGTH_DASH_6,
-            SuttonSignWriting::SignwritingLimbLengthDash7 => SIGNWRITING_LIMB_LENGTH_DASH_7,
-            SuttonSignWriting::SignwritingFinger => SIGNWRITING_FINGER,
-            SuttonSignWriting::SignwritingLocationDashWallplaneSpace => SIGNWRITING_LOCATION_DASH_WALLPLANE_SPACE,
-            SuttonSignWriting::SignwritingLocationDashFloorplaneSpace => SIGNWRITING_LOCATION_DASH_FLOORPLANE_SPACE,
-            SuttonSignWriting::SignwritingLocationHeight => SIGNWRITING_LOCATION_HEIGHT,
-            SuttonSignWriting::SignwritingLocationWidth => SIGNWRITING_LOCATION_WIDTH,
-            SuttonSignWriting::SignwritingLocationDepth => SIGNWRITING_LOCATION_DEPTH,
-            SuttonSignWriting::SignwritingLocationHeadNeck => SIGNWRITING_LOCATION_HEAD_NECK,
-            SuttonSignWriting::SignwritingLocationTorso => SIGNWRITING_LOCATION_TORSO,
-            SuttonSignWriting::SignwritingLocationLimbsDigits => SIGNWRITING_LOCATION_LIMBS_DIGITS,
-            SuttonSignWriting::SignwritingComma => SIGNWRITING_COMMA,
-            SuttonSignWriting::SignwritingFullStop => SIGNWRITING_FULL_STOP,
-            SuttonSignWriting::SignwritingSemicolon => SIGNWRITING_SEMICOLON,
-            SuttonSignWriting::SignwritingColon => SIGNWRITING_COLON,
-            SuttonSignWriting::SignwritingParenthesis => SIGNWRITING_PARENTHESIS,
-            SuttonSignWriting::SignwritingFillModifierDash2 => SIGNWRITING_FILL_MODIFIER_DASH_2,
-            SuttonSignWriting::SignwritingFillModifierDash3 => SIGNWRITING_FILL_MODIFIER_DASH_3,
-            SuttonSignWriting::SignwritingFillModifierDash4 => SIGNWRITING_FILL_MODIFIER_DASH_4,
-            SuttonSignWriting::SignwritingFillModifierDash5 => SIGNWRITING_FILL_MODIFIER_DASH_5,
-            SuttonSignWriting::SignwritingFillModifierDash6 => SIGNWRITING_FILL_MODIFIER_DASH_6,
-            SuttonSignWriting::SignwritingRotationModifierDash2 => SIGNWRITING_ROTATION_MODIFIER_DASH_2,
-            SuttonSignWriting::SignwritingRotationModifierDash3 => SIGNWRITING_ROTATION_MODIFIER_DASH_3,
-            SuttonSignWriting::SignwritingRotationModifierDash4 => SIGNWRITING_ROTATION_MODIFIER_DASH_4,
-            SuttonSignWriting::SignwritingRotationModifierDash5 => SIGNWRITING_ROTATION_MODIFIER_DASH_5,
-            SuttonSignWriting::SignwritingRotationModifierDash6 => SIGNWRITING_ROTATION_MODIFIER_DASH_6,
-            SuttonSignWriting::SignwritingRotationModifierDash7 => SIGNWRITING_ROTATION_MODIFIER_DASH_7,
-            SuttonSignWriting::SignwritingRotationModifierDash8 => SIGNWRITING_ROTATION_MODIFIER_DASH_8,
-            SuttonSignWriting::SignwritingRotationModifierDash9 => SIGNWRITING_ROTATION_MODIFIER_DASH_9,
-            SuttonSignWriting::SignwritingRotationModifierDash10 => SIGNWRITING_ROTATION_MODIFIER_DASH_10,
-            SuttonSignWriting::SignwritingRotationModifierDash11 => SIGNWRITING_ROTATION_MODIFIER_DASH_11,
-            SuttonSignWriting::SignwritingRotationModifierDash12 => SIGNWRITING_ROTATION_MODIFIER_DASH_12,
-            SuttonSignWriting::SignwritingRotationModifierDash13 => SIGNWRITING_ROTATION_MODIFIER_DASH_13,
-            SuttonSignWriting::SignwritingRotationModifierDash14 => SIGNWRITING_ROTATION_MODIFIER_DASH_14,
-            SuttonSignWriting::SignwritingRotationModifierDash15 => SIGNWRITING_ROTATION_MODIFIER_DASH_15,
+            SuttonSignWriting::SignwritingHandDashFistIndex => '𝠀',
+            SuttonSignWriting::SignwritingHandDashCircleIndex => '𝠁',
+            SuttonSignWriting::SignwritingHandDashCupIndex => '𝠂',
+            SuttonSignWriting::SignwritingHandDashOvalIndex => '𝠃',
+            SuttonSignWriting::SignwritingHandDashHingeIndex => '𝠄',
+            SuttonSignWriting::SignwritingHandDashAngleIndex => '𝠅',
+            SuttonSignWriting::SignwritingHandDashFistIndexBent => '𝠆',
+            SuttonSignWriting::SignwritingHandDashCircleIndexBent => '𝠇',
+            SuttonSignWriting::SignwritingHandDashFistThumbUnderIndexBent => '𝠈',
+            SuttonSignWriting::SignwritingHandDashFistIndexRaisedKnuckle => '𝠉',
+            SuttonSignWriting::SignwritingHandDashFistIndexCupped => '𝠊',
+            SuttonSignWriting::SignwritingHandDashFistIndexHinged => '𝠋',
+            SuttonSignWriting::SignwritingHandDashFistIndexHingedLow => '𝠌',
+            SuttonSignWriting::SignwritingHandDashCircleIndexHinge => '𝠍',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddle => '𝠎',
+            SuttonSignWriting::SignwritingHandDashCircleIndexMiddle => '𝠏',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleBent => '𝠐',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleRaisedKnuckles => '𝠑',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleHinged => '𝠒',
+            SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHinged => '𝠓',
+            SuttonSignWriting::SignwritingHandDashFistIndexHingedMiddleUp => '𝠔',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoined => '𝠕',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedIndexBent => '𝠖',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedMiddleBent => '𝠗',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedCupped => '𝠘',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedHinged => '𝠙',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossed => '𝠚',
+            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleCrossed => '𝠛',
+            SuttonSignWriting::SignwritingHandDashFistMiddleBentOverIndex => '𝠜',
+            SuttonSignWriting::SignwritingHandDashFistIndexBentOverMiddle => '𝠝',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumb => '𝠞',
+            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleThumb => '𝠟',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleStraightThumbBent => '𝠠',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleBentThumbStraight => '𝠡',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbBent => '𝠢',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleHingedSpreadThumbSide => '𝠣',
+            SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHingedThumbSide => '𝠤',
+            SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHingedThumbConjoined => '𝠥',
+            SuttonSignWriting::SignwritingHandDashFistIndexHingedMiddleUpThumbSide => '𝠦',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleUpSpreadThumbForward => '𝠧',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbCupped => '𝠨',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbCircled => '𝠩',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbHooked => '𝠪',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbHinged => '𝠫',
+            SuttonSignWriting::SignwritingHandDashFistThumbBetweenIndexMiddleStraight => '𝠬',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSide => '𝠭',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSideConjoined => '𝠮',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSideBent => '𝠯',
+            SuttonSignWriting::SignwritingHandDashFistMiddleThumbHookedIndexUp => '𝠰',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbHookedMiddleUp => '𝠱',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedHingedThumbSide => '𝠲',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossedThumbSide => '𝠳',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbForward => '𝠴',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedCuppedThumbForward => '𝠵',
+            SuttonSignWriting::SignwritingHandDashFistMiddleThumbCuppedIndexUp => '𝠶',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbCuppedMiddleUp => '𝠷',
+            SuttonSignWriting::SignwritingHandDashFistMiddleThumbCircledIndexUp => '𝠸',
+            SuttonSignWriting::SignwritingHandDashFistMiddleThumbCircledIndexHinged => '𝠹',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbAngledOutMiddleUp => '𝠺',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbAngledInMiddleUp => '𝠻',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbCircledMiddleUp => '𝠼',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbConjoinedHinged => '𝠽',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbAngledOut => '𝠾',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbAngled => '𝠿',
+            SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledOutIndexUp => '𝡀',
+            SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledOutIndexCrossed => '𝡁',
+            SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledIndexUp => '𝡂',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbHookedMiddleHinged => '𝡃',
+            SuttonSignWriting::SignwritingHandDashFlatFourFingers => '𝡄',
+            SuttonSignWriting::SignwritingHandDashFlatFourFingersBent => '𝡅',
+            SuttonSignWriting::SignwritingHandDashFlatFourFingersHinged => '𝡆',
+            SuttonSignWriting::SignwritingHandDashFlatFourFingersConjoined => '𝡇',
+            SuttonSignWriting::SignwritingHandDashFlatFourFingersConjoinedSplit => '𝡈',
+            SuttonSignWriting::SignwritingHandDashClawFourFingersConjoined => '𝡉',
+            SuttonSignWriting::SignwritingHandDashFistFourFingersConjoinedBent => '𝡊',
+            SuttonSignWriting::SignwritingHandDashHingeFourFingersConjoined => '𝡋',
+            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpread => '𝡌',
+            SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpread => '𝡍',
+            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadFourBent => '𝡎',
+            SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpreadFourBent => '𝡏',
+            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadBent => '𝡐',
+            SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpreadBent => '𝡑',
+            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadThumbForward => '𝡒',
+            SuttonSignWriting::SignwritingHandDashCupFiveFingersSpread => '𝡓',
+            SuttonSignWriting::SignwritingHandDashCupFiveFingersSpreadOpen => '𝡔',
+            SuttonSignWriting::SignwritingHandDashHingeFiveFingersSpreadOpen => '𝡕',
+            SuttonSignWriting::SignwritingHandDashOvalFiveFingersSpread => '𝡖',
+            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHinged => '𝡗',
+            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHingedThumbSide => '𝡘',
+            SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHingedNoThumb => '𝡙',
+            SuttonSignWriting::SignwritingHandDashFlat => '𝡚',
+            SuttonSignWriting::SignwritingHandDashFlatBetweenPalmFacings => '𝡛',
+            SuttonSignWriting::SignwritingHandDashFlatHeel => '𝡜',
+            SuttonSignWriting::SignwritingHandDashFlatThumbSide => '𝡝',
+            SuttonSignWriting::SignwritingHandDashFlatHeelThumbSide => '𝡞',
+            SuttonSignWriting::SignwritingHandDashFlatThumbBent => '𝡟',
+            SuttonSignWriting::SignwritingHandDashFlatThumbForward => '𝡠',
+            SuttonSignWriting::SignwritingHandDashFlatSplitIndexThumbSide => '𝡡',
+            SuttonSignWriting::SignwritingHandDashFlatSplitCentre => '𝡢',
+            SuttonSignWriting::SignwritingHandDashFlatSplitCentreThumbSide => '𝡣',
+            SuttonSignWriting::SignwritingHandDashFlatSplitCentreThumbSideBent => '𝡤',
+            SuttonSignWriting::SignwritingHandDashFlatSplitLittle => '𝡥',
+            SuttonSignWriting::SignwritingHandDashClaw => '𝡦',
+            SuttonSignWriting::SignwritingHandDashClawThumbSide => '𝡧',
+            SuttonSignWriting::SignwritingHandDashClawNoThumb => '𝡨',
+            SuttonSignWriting::SignwritingHandDashClawThumbForward => '𝡩',
+            SuttonSignWriting::SignwritingHandDashHookCurlicue => '𝡪',
+            SuttonSignWriting::SignwritingHandDashHook => '𝡫',
+            SuttonSignWriting::SignwritingHandDashCupOpen => '𝡬',
+            SuttonSignWriting::SignwritingHandDashCup => '𝡭',
+            SuttonSignWriting::SignwritingHandDashCupOpenThumbSide => '𝡮',
+            SuttonSignWriting::SignwritingHandDashCupThumbSide => '𝡯',
+            SuttonSignWriting::SignwritingHandDashCupOpenNoThumb => '𝡰',
+            SuttonSignWriting::SignwritingHandDashCupNoThumb => '𝡱',
+            SuttonSignWriting::SignwritingHandDashCupOpenThumbForward => '𝡲',
+            SuttonSignWriting::SignwritingHandDashCupThumbForward => '𝡳',
+            SuttonSignWriting::SignwritingHandDashCurlicueOpen => '𝡴',
+            SuttonSignWriting::SignwritingHandDashCurlicue => '𝡵',
+            SuttonSignWriting::SignwritingHandDashCircle => '𝡶',
+            SuttonSignWriting::SignwritingHandDashOval => '𝡷',
+            SuttonSignWriting::SignwritingHandDashOvalThumbSide => '𝡸',
+            SuttonSignWriting::SignwritingHandDashOvalNoThumb => '𝡹',
+            SuttonSignWriting::SignwritingHandDashOvalThumbForward => '𝡺',
+            SuttonSignWriting::SignwritingHandDashHingeOpen => '𝡻',
+            SuttonSignWriting::SignwritingHandDashHingeOpenThumbForward => '𝡼',
+            SuttonSignWriting::SignwritingHandDashHinge => '𝡽',
+            SuttonSignWriting::SignwritingHandDashHingeSmall => '𝡾',
+            SuttonSignWriting::SignwritingHandDashHingeOpenThumbSide => '𝡿',
+            SuttonSignWriting::SignwritingHandDashHingeThumbSide => '𝢀',
+            SuttonSignWriting::SignwritingHandDashHingeOpenNoThumb => '𝢁',
+            SuttonSignWriting::SignwritingHandDashHingeNoThumb => '𝢂',
+            SuttonSignWriting::SignwritingHandDashHingeThumbSideTouchingIndex => '𝢃',
+            SuttonSignWriting::SignwritingHandDashHingeThumbBetweenMiddleRing => '𝢄',
+            SuttonSignWriting::SignwritingHandDashAngle => '𝢅',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleRing => '𝢆',
+            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleRing => '𝢇',
+            SuttonSignWriting::SignwritingHandDashHingeIndexMiddleRing => '𝢈',
+            SuttonSignWriting::SignwritingHandDashAngleIndexMiddleRing => '𝢉',
+            SuttonSignWriting::SignwritingHandDashHingeLittle => '𝢊',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleRingBent => '𝢋',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleRingConjoined => '𝢌',
+            SuttonSignWriting::SignwritingHandDashHingeIndexMiddleRingConjoined => '𝢍',
+            SuttonSignWriting::SignwritingHandDashFistLittleDown => '𝢎',
+            SuttonSignWriting::SignwritingHandDashFistLittleDownRippleStraight => '𝢏',
+            SuttonSignWriting::SignwritingHandDashFistLittleDownRippleCurved => '𝢐',
+            SuttonSignWriting::SignwritingHandDashFistLittleDownOthersCircled => '𝢑',
+            SuttonSignWriting::SignwritingHandDashFistLittleUp => '𝢒',
+            SuttonSignWriting::SignwritingHandDashFistThumbUnderLittleUp => '𝢓',
+            SuttonSignWriting::SignwritingHandDashCircleLittleUp => '𝢔',
+            SuttonSignWriting::SignwritingHandDashOvalLittleUp => '𝢕',
+            SuttonSignWriting::SignwritingHandDashAngleLittleUp => '𝢖',
+            SuttonSignWriting::SignwritingHandDashFistLittleRaisedKnuckle => '𝢗',
+            SuttonSignWriting::SignwritingHandDashFistLittleBent => '𝢘',
+            SuttonSignWriting::SignwritingHandDashFistLittleTouchesThumb => '𝢙',
+            SuttonSignWriting::SignwritingHandDashFistLittleThumb => '𝢚',
+            SuttonSignWriting::SignwritingHandDashHingeLittleThumb => '𝢛',
+            SuttonSignWriting::SignwritingHandDashFistLittleIndexThumb => '𝢜',
+            SuttonSignWriting::SignwritingHandDashHingeLittleIndexThumb => '𝢝',
+            SuttonSignWriting::SignwritingHandDashAngleLittleIndexThumbIndexThumbOut => '𝢞',
+            SuttonSignWriting::SignwritingHandDashAngleLittleIndexThumbIndexThumb => '𝢟',
+            SuttonSignWriting::SignwritingHandDashFistLittleIndex => '𝢠',
+            SuttonSignWriting::SignwritingHandDashCircleLittleIndex => '𝢡',
+            SuttonSignWriting::SignwritingHandDashHingeLittleIndex => '𝢢',
+            SuttonSignWriting::SignwritingHandDashAngleLittleIndex => '𝢣',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleLittle => '𝢤',
+            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleLittle => '𝢥',
+            SuttonSignWriting::SignwritingHandDashHingeIndexMiddleLittle => '𝢦',
+            SuttonSignWriting::SignwritingHandDashHingeRing => '𝢧',
+            SuttonSignWriting::SignwritingHandDashAngleIndexMiddleLittle => '𝢨',
+            SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossLittle => '𝢩',
+            SuttonSignWriting::SignwritingHandDashCircleIndexMiddleCrossLittle => '𝢪',
+            SuttonSignWriting::SignwritingHandDashFistRingDown => '𝢫',
+            SuttonSignWriting::SignwritingHandDashHingeRingDownIndexThumbHookMiddle => '𝢬',
+            SuttonSignWriting::SignwritingHandDashAngleRingDownMiddleThumbIndexCross => '𝢭',
+            SuttonSignWriting::SignwritingHandDashFistRingUp => '𝢮',
+            SuttonSignWriting::SignwritingHandDashFistRingRaisedKnuckle => '𝢯',
+            SuttonSignWriting::SignwritingHandDashFistRingLittle => '𝢰',
+            SuttonSignWriting::SignwritingHandDashCircleRingLittle => '𝢱',
+            SuttonSignWriting::SignwritingHandDashOvalRingLittle => '𝢲',
+            SuttonSignWriting::SignwritingHandDashAngleRingLittle => '𝢳',
+            SuttonSignWriting::SignwritingHandDashFistRingMiddle => '𝢴',
+            SuttonSignWriting::SignwritingHandDashFistRingMiddleConjoined => '𝢵',
+            SuttonSignWriting::SignwritingHandDashFistRingMiddleRaisedKnuckles => '𝢶',
+            SuttonSignWriting::SignwritingHandDashFistRingIndex => '𝢷',
+            SuttonSignWriting::SignwritingHandDashFistRingThumb => '𝢸',
+            SuttonSignWriting::SignwritingHandDashHookRingThumb => '𝢹',
+            SuttonSignWriting::SignwritingHandDashFistIndexRingLittle => '𝢺',
+            SuttonSignWriting::SignwritingHandDashCircleIndexRingLittle => '𝢻',
+            SuttonSignWriting::SignwritingHandDashCurlicueIndexRingLittleOn => '𝢼',
+            SuttonSignWriting::SignwritingHandDashHookIndexRingLittleOut => '𝢽',
+            SuttonSignWriting::SignwritingHandDashHookIndexRingLittleIn => '𝢾',
+            SuttonSignWriting::SignwritingHandDashHookIndexRingLittleUnder => '𝢿',
+            SuttonSignWriting::SignwritingHandDashCupIndexRingLittle => '𝣀',
+            SuttonSignWriting::SignwritingHandDashHingeIndexRingLittle => '𝣁',
+            SuttonSignWriting::SignwritingHandDashAngleIndexRingLittleOut => '𝣂',
+            SuttonSignWriting::SignwritingHandDashAngleIndexRingLittle => '𝣃',
+            SuttonSignWriting::SignwritingHandDashFistMiddleDown => '𝣄',
+            SuttonSignWriting::SignwritingHandDashHingeMiddle => '𝣅',
+            SuttonSignWriting::SignwritingHandDashFistMiddleUp => '𝣆',
+            SuttonSignWriting::SignwritingHandDashCircleMiddleUp => '𝣇',
+            SuttonSignWriting::SignwritingHandDashFistMiddleRaisedKnuckle => '𝣈',
+            SuttonSignWriting::SignwritingHandDashFistMiddleUpThumbSide => '𝣉',
+            SuttonSignWriting::SignwritingHandDashHookMiddleThumb => '𝣊',
+            SuttonSignWriting::SignwritingHandDashFistMiddleThumbLittle => '𝣋',
+            SuttonSignWriting::SignwritingHandDashFistMiddleLittle => '𝣌',
+            SuttonSignWriting::SignwritingHandDashFistMiddleRingLittle => '𝣍',
+            SuttonSignWriting::SignwritingHandDashCircleMiddleRingLittle => '𝣎',
+            SuttonSignWriting::SignwritingHandDashCurlicueMiddleRingLittleOn => '𝣏',
+            SuttonSignWriting::SignwritingHandDashCupMiddleRingLittle => '𝣐',
+            SuttonSignWriting::SignwritingHandDashHingeMiddleRingLittle => '𝣑',
+            SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittleOut => '𝣒',
+            SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittleIn => '𝣓',
+            SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittle => '𝣔',
+            SuttonSignWriting::SignwritingHandDashCircleMiddleRingLittleBent => '𝣕',
+            SuttonSignWriting::SignwritingHandDashClawMiddleRingLittleConjoined => '𝣖',
+            SuttonSignWriting::SignwritingHandDashClawMiddleRingLittleConjoinedSide => '𝣗',
+            SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoinedOut => '𝣘',
+            SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoinedIn => '𝣙',
+            SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoined => '𝣚',
+            SuttonSignWriting::SignwritingHandDashHingeIndexHinged => '𝣛',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbSide => '𝣜',
+            SuttonSignWriting::SignwritingHandDashHingeIndexThumbSide => '𝣝',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbDiagonal => '𝣞',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbConjoined => '𝣟',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbBent => '𝣠',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideIndexBent => '𝣡',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideBothBent => '𝣢',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbSideIndexHinge => '𝣣',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbForwardIndexStraight => '𝣤',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbForwardIndexBent => '𝣥',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbHook => '𝣦',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbCurlicue => '𝣧',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbCurveThumbInside => '𝣨',
+            SuttonSignWriting::SignwritingHandDashClawIndexThumbCurveThumbInside => '𝣩',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbCurveThumbUnder => '𝣪',
+            SuttonSignWriting::SignwritingHandDashFistIndexThumbCircle => '𝣫',
+            SuttonSignWriting::SignwritingHandDashCupIndexThumb => '𝣬',
+            SuttonSignWriting::SignwritingHandDashCupIndexThumbOpen => '𝣭',
+            SuttonSignWriting::SignwritingHandDashHingeIndexThumbOpen => '𝣮',
+            SuttonSignWriting::SignwritingHandDashHingeIndexThumbLarge => '𝣯',
+            SuttonSignWriting::SignwritingHandDashHingeIndexThumb => '𝣰',
+            SuttonSignWriting::SignwritingHandDashHingeIndexThumbSmall => '𝣱',
+            SuttonSignWriting::SignwritingHandDashAngleIndexThumbOut => '𝣲',
+            SuttonSignWriting::SignwritingHandDashAngleIndexThumbIn => '𝣳',
+            SuttonSignWriting::SignwritingHandDashAngleIndexThumb => '𝣴',
+            SuttonSignWriting::SignwritingHandDashFistThumb => '𝣵',
+            SuttonSignWriting::SignwritingHandDashFistThumbHeel => '𝣶',
+            SuttonSignWriting::SignwritingHandDashFistThumbSideDiagonal => '𝣷',
+            SuttonSignWriting::SignwritingHandDashFistThumbSideConjoined => '𝣸',
+            SuttonSignWriting::SignwritingHandDashFistThumbSideBent => '𝣹',
+            SuttonSignWriting::SignwritingHandDashFistThumbForward => '𝣺',
+            SuttonSignWriting::SignwritingHandDashFistThumbBetweenIndexMiddle => '𝣻',
+            SuttonSignWriting::SignwritingHandDashFistThumbBetweenMiddleRing => '𝣼',
+            SuttonSignWriting::SignwritingHandDashFistThumbBetweenRingLittle => '𝣽',
+            SuttonSignWriting::SignwritingHandDashFistThumbUnderTwoFingers => '𝣾',
+            SuttonSignWriting::SignwritingHandDashFistThumbOverTwoFingers => '𝣿',
+            SuttonSignWriting::SignwritingHandDashFistThumbUnderThreeFingers => '𝤀',
+            SuttonSignWriting::SignwritingHandDashFistThumbUnderFourFingers => '𝤁',
+            SuttonSignWriting::SignwritingHandDashFistThumbOverFourRaisedKnuckles => '𝤂',
+            SuttonSignWriting::SignwritingHandDashFist => '𝤃',
+            SuttonSignWriting::SignwritingHandDashFistHeel => '𝤄',
+            SuttonSignWriting::SignwritingTouchSingle => '𝤅',
+            SuttonSignWriting::SignwritingTouchMultiple => '𝤆',
+            SuttonSignWriting::SignwritingTouchBetween => '𝤇',
+            SuttonSignWriting::SignwritingGraspSingle => '𝤈',
+            SuttonSignWriting::SignwritingGraspMultiple => '𝤉',
+            SuttonSignWriting::SignwritingGraspBetween => '𝤊',
+            SuttonSignWriting::SignwritingStrikeSingle => '𝤋',
+            SuttonSignWriting::SignwritingStrikeMultiple => '𝤌',
+            SuttonSignWriting::SignwritingStrikeBetween => '𝤍',
+            SuttonSignWriting::SignwritingBrushSingle => '𝤎',
+            SuttonSignWriting::SignwritingBrushMultiple => '𝤏',
+            SuttonSignWriting::SignwritingBrushBetween => '𝤐',
+            SuttonSignWriting::SignwritingRubSingle => '𝤑',
+            SuttonSignWriting::SignwritingRubMultiple => '𝤒',
+            SuttonSignWriting::SignwritingRubBetween => '𝤓',
+            SuttonSignWriting::SignwritingSurfaceSymbols => '𝤔',
+            SuttonSignWriting::SignwritingSurfaceBetween => '𝤕',
+            SuttonSignWriting::SignwritingSqueezeLargeSingle => '𝤖',
+            SuttonSignWriting::SignwritingSqueezeSmallSingle => '𝤗',
+            SuttonSignWriting::SignwritingSqueezeLargeMultiple => '𝤘',
+            SuttonSignWriting::SignwritingSqueezeSmallMultiple => '𝤙',
+            SuttonSignWriting::SignwritingSqueezeSequential => '𝤚',
+            SuttonSignWriting::SignwritingFlickLargeSingle => '𝤛',
+            SuttonSignWriting::SignwritingFlickSmallSingle => '𝤜',
+            SuttonSignWriting::SignwritingFlickLargeMultiple => '𝤝',
+            SuttonSignWriting::SignwritingFlickSmallMultiple => '𝤞',
+            SuttonSignWriting::SignwritingFlickSequential => '𝤟',
+            SuttonSignWriting::SignwritingSqueezeFlickAlternating => '𝤠',
+            SuttonSignWriting::SignwritingMovementDashHingeUpDownLarge => '𝤡',
+            SuttonSignWriting::SignwritingMovementDashHingeUpDownSmall => '𝤢',
+            SuttonSignWriting::SignwritingMovementDashHingeUpSequential => '𝤣',
+            SuttonSignWriting::SignwritingMovementDashHingeDownSequential => '𝤤',
+            SuttonSignWriting::SignwritingMovementDashHingeUpDownAlternatingLarge => '𝤥',
+            SuttonSignWriting::SignwritingMovementDashHingeUpDownAlternatingSmall => '𝤦',
+            SuttonSignWriting::SignwritingMovementDashHingeSideToSideScissors => '𝤧',
+            SuttonSignWriting::SignwritingMovementDashWallplaneFingerContact => '𝤨',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneFingerContact => '𝤩',
+            SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightSmall => '𝤪',
+            SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightMedium => '𝤫',
+            SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightLarge => '𝤬',
+            SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightLargest => '𝤭',
+            SuttonSignWriting::SignwritingMovementDashWallplaneSingleWristFlex => '𝤮',
+            SuttonSignWriting::SignwritingMovementDashWallplaneDoubleStraight => '𝤯',
+            SuttonSignWriting::SignwritingMovementDashWallplaneDoubleWristFlex => '𝤰',
+            SuttonSignWriting::SignwritingMovementDashWallplaneDoubleAlternating => '𝤱',
+            SuttonSignWriting::SignwritingMovementDashWallplaneDoubleAlternatingWristFlex => '𝤲',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCross => '𝤳',
+            SuttonSignWriting::SignwritingMovementDashWallplaneTripleStraightMovement => '𝤴',
+            SuttonSignWriting::SignwritingMovementDashWallplaneTripleWristFlex => '𝤵',
+            SuttonSignWriting::SignwritingMovementDashWallplaneTripleAlternating => '𝤶',
+            SuttonSignWriting::SignwritingMovementDashWallplaneTripleAlternatingWristFlex => '𝤷',
+            SuttonSignWriting::SignwritingMovementDashWallplaneBendSmall => '𝤸',
+            SuttonSignWriting::SignwritingMovementDashWallplaneBendMedium => '𝤹',
+            SuttonSignWriting::SignwritingMovementDashWallplaneBendLarge => '𝤺',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCornerSmall => '𝤻',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCornerMedium => '𝤼',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCornerLarge => '𝤽',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCornerRotation => '𝤾',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCheckSmall => '𝤿',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCheckMedium => '𝥀',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCheckLarge => '𝥁',
+            SuttonSignWriting::SignwritingMovementDashWallplaneBoxSmall => '𝥂',
+            SuttonSignWriting::SignwritingMovementDashWallplaneBoxMedium => '𝥃',
+            SuttonSignWriting::SignwritingMovementDashWallplaneBoxLarge => '𝥄',
+            SuttonSignWriting::SignwritingMovementDashWallplaneZigzagSmall => '𝥅',
+            SuttonSignWriting::SignwritingMovementDashWallplaneZigzagMedium => '𝥆',
+            SuttonSignWriting::SignwritingMovementDashWallplaneZigzagLarge => '𝥇',
+            SuttonSignWriting::SignwritingMovementDashWallplanePeaksSmall => '𝥈',
+            SuttonSignWriting::SignwritingMovementDashWallplanePeaksMedium => '𝥉',
+            SuttonSignWriting::SignwritingMovementDashWallplanePeaksLarge => '𝥊',
+            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneSingle => '𝥋',
+            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneDouble => '𝥌',
+            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneAlternating => '𝥍',
+            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneSingle => '𝥎',
+            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneDouble => '𝥏',
+            SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneAlternating => '𝥐',
+            SuttonSignWriting::SignwritingTravelDashWallplaneShaking => '𝥑',
+            SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralSingle => '𝥒',
+            SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralDouble => '𝥓',
+            SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralTriple => '𝥔',
+            SuttonSignWriting::SignwritingMovementDashDiagonalAwaySmall => '𝥕',
+            SuttonSignWriting::SignwritingMovementDashDiagonalAwayMedium => '𝥖',
+            SuttonSignWriting::SignwritingMovementDashDiagonalAwayLarge => '𝥗',
+            SuttonSignWriting::SignwritingMovementDashDiagonalAwayLargest => '𝥘',
+            SuttonSignWriting::SignwritingMovementDashDiagonalTowardsSmall => '𝥙',
+            SuttonSignWriting::SignwritingMovementDashDiagonalTowardsMedium => '𝥚',
+            SuttonSignWriting::SignwritingMovementDashDiagonalTowardsLarge => '𝥛',
+            SuttonSignWriting::SignwritingMovementDashDiagonalTowardsLargest => '𝥜',
+            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwaySmall => '𝥝',
+            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayMedium => '𝥞',
+            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayLarge => '𝥟',
+            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayLargest => '𝥠',
+            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsSmall => '𝥡',
+            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsMedium => '𝥢',
+            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsLarge => '𝥣',
+            SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsLargest => '𝥤',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightSmall => '𝥥',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightMedium => '𝥦',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightLarge => '𝥧',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightLargest => '𝥨',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneSingleWristFlex => '𝥩',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleStraight => '𝥪',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleWristFlex => '𝥫',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleAlternating => '𝥬',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleAlternatingWristFlex => '𝥭',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCross => '𝥮',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneTripleStraightMovement => '𝥯',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneTripleWristFlex => '𝥰',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneTripleAlternatingMovement => '𝥱',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneTripleAlternatingWristFlex => '𝥲',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneBend => '𝥳',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCornerSmall => '𝥴',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCornerMedium => '𝥵',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCornerLarge => '𝥶',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCheck => '𝥷',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneBoxSmall => '𝥸',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneBoxMedium => '𝥹',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneBoxLarge => '𝥺',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagSmall => '𝥻',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagMedium => '𝥼',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagLarge => '𝥽',
+            SuttonSignWriting::SignwritingMovementDashFloorplanePeaksSmall => '𝥾',
+            SuttonSignWriting::SignwritingMovementDashFloorplanePeaksMedium => '𝥿',
+            SuttonSignWriting::SignwritingMovementDashFloorplanePeaksLarge => '𝦀',
+            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneSingle => '𝦁',
+            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneDouble => '𝦂',
+            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneAlternating => '𝦃',
+            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneSingle => '𝦄',
+            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneDouble => '𝦅',
+            SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneAlternating => '𝦆',
+            SuttonSignWriting::SignwritingTravelDashFloorplaneShaking => '𝦇',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterSmall => '𝦈',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterMedium => '𝦉',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterLarge => '𝦊',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterLargest => '𝦋',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleSmall => '𝦌',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleMedium => '𝦍',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleLarge => '𝦎',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleLargest => '𝦏',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveThreeDashQuarterCircleSmall => '𝦐',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveThreeDashQuarterCircleMedium => '𝦑',
+            SuttonSignWriting::SignwritingMovementDashWallplaneHumpSmall => '𝦒',
+            SuttonSignWriting::SignwritingMovementDashWallplaneHumpMedium => '𝦓',
+            SuttonSignWriting::SignwritingMovementDashWallplaneHumpLarge => '𝦔',
+            SuttonSignWriting::SignwritingMovementDashWallplaneLoopSmall => '𝦕',
+            SuttonSignWriting::SignwritingMovementDashWallplaneLoopMedium => '𝦖',
+            SuttonSignWriting::SignwritingMovementDashWallplaneLoopLarge => '𝦗',
+            SuttonSignWriting::SignwritingMovementDashWallplaneLoopSmallDouble => '𝦘',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleSmall => '𝦙',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleMedium => '𝦚',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleLarge => '𝦛',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleSmall => '𝦜',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleMedium => '𝦝',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleLarge => '𝦞',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveThenStraight => '𝦟',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurvedCrossSmall => '𝦠',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurvedCrossMedium => '𝦡',
+            SuttonSignWriting::SignwritingRotationDashWallplaneSingle => '𝦢',
+            SuttonSignWriting::SignwritingRotationDashWallplaneDouble => '𝦣',
+            SuttonSignWriting::SignwritingRotationDashWallplaneAlternate => '𝦤',
+            SuttonSignWriting::SignwritingMovementDashWallplaneShaking => '𝦥',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHittingFrontWall => '𝦦',
+            SuttonSignWriting::SignwritingMovementDashWallplaneHumpHittingFrontWall => '𝦧',
+            SuttonSignWriting::SignwritingMovementDashWallplaneLoopHittingFrontWall => '𝦨',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveHittingFrontWall => '𝦩',
+            SuttonSignWriting::SignwritingRotationDashWallplaneSingleHittingFrontWall => '𝦪',
+            SuttonSignWriting::SignwritingRotationDashWallplaneDoubleHittingFrontWall => '𝦫',
+            SuttonSignWriting::SignwritingRotationDashWallplaneAlternatingHittingFrontWall => '𝦬',
+            SuttonSignWriting::SignwritingMovementDashWallplaneCurveHittingChest => '𝦭',
+            SuttonSignWriting::SignwritingMovementDashWallplaneHumpHittingChest => '𝦮',
+            SuttonSignWriting::SignwritingMovementDashWallplaneLoopHittingChest => '𝦯',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveHittingChest => '𝦰',
+            SuttonSignWriting::SignwritingRotationDashWallplaneSingleHittingChest => '𝦱',
+            SuttonSignWriting::SignwritingRotationDashWallplaneDoubleHittingChest => '𝦲',
+            SuttonSignWriting::SignwritingRotationDashWallplaneAlternatingHittingChest => '𝦳',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathSmall => '𝦴',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathMedium => '𝦵',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathLarge => '𝦶',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingCeilingSmall => '𝦷',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingCeilingLarge => '𝦸',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingSmallDouble => '𝦹',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingLargeDouble => '𝦺',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingSmallTriple => '𝦻',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingLargeTriple => '𝦼',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingSmallSingle => '𝦽',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingLargeSingle => '𝦾',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingSmallDouble => '𝦿',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingLargeDouble => '𝧀',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingCeilingSmall => '𝧁',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingCeilingLarge => '𝧂',
+            SuttonSignWriting::SignwritingRotationDashFloorplaneSingleHittingCeiling => '𝧃',
+            SuttonSignWriting::SignwritingRotationDashFloorplaneDoubleHittingCeiling => '𝧄',
+            SuttonSignWriting::SignwritingRotationDashFloorplaneAlternatingHittingCeiling => '𝧅',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingFloorSmall => '𝧆',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingFloorLarge => '𝧇',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorSmallDouble => '𝧈',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorLargeDouble => '𝧉',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorTripleSmallTriple => '𝧊',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorTripleLargeTriple => '𝧋',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorSmallSingle => '𝧌',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorLargeSingle => '𝧍',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorSmallDouble => '𝧎',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorLargeDouble => '𝧏',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingFloorSmall => '𝧐',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingFloorLarge => '𝧑',
+            SuttonSignWriting::SignwritingRotationDashFloorplaneSingleHittingFloor => '𝧒',
+            SuttonSignWriting::SignwritingRotationDashFloorplaneDoubleHittingFloor => '𝧓',
+            SuttonSignWriting::SignwritingRotationDashFloorplaneAlternatingHittingFloor => '𝧔',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveSmall => '𝧕',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveMedium => '𝧖',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveLarge => '𝧗',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveLargest => '𝧘',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneCurveCombined => '𝧙',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneHumpSmall => '𝧚',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneLoopSmall => '𝧛',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveSnake => '𝧜',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveSmall => '𝧝',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneWaveLarge => '𝧞',
+            SuttonSignWriting::SignwritingRotationDashFloorplaneSingle => '𝧟',
+            SuttonSignWriting::SignwritingRotationDashFloorplaneDouble => '𝧠',
+            SuttonSignWriting::SignwritingRotationDashFloorplaneAlternating => '𝧡',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneShakingParallel => '𝧢',
+            SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleSmallSingle => '𝧣',
+            SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleMediumSingle => '𝧤',
+            SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleSmallDouble => '𝧥',
+            SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleMediumDouble => '𝧦',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallSmallSingle => '𝧧',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallMediumSingle => '𝧨',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallLargeSingle => '𝧩',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallSmallDouble => '𝧪',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallMediumDouble => '𝧫',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallLargeDouble => '𝧬',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWristCircleFrontSingle => '𝧭',
+            SuttonSignWriting::SignwritingMovementDashWallplaneWristCircleFrontDouble => '𝧮',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneWristCircleHittingWallSingle => '𝧯',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneWristCircleHittingWallDouble => '𝧰',
+            SuttonSignWriting::SignwritingMovementDashWallplaneFingerCirclesSingle => '𝧱',
+            SuttonSignWriting::SignwritingMovementDashWallplaneFingerCirclesDouble => '𝧲',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneFingerCirclesHittingWallSingle => '𝧳',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneFingerCirclesHittingWallDouble => '𝧴',
+            SuttonSignWriting::SignwritingDynamicArrowheadSmall => '𝧵',
+            SuttonSignWriting::SignwritingDynamicArrowheadLarge => '𝧶',
+            SuttonSignWriting::SignwritingDynamicFast => '𝧷',
+            SuttonSignWriting::SignwritingDynamicSlow => '𝧸',
+            SuttonSignWriting::SignwritingDynamicTense => '𝧹',
+            SuttonSignWriting::SignwritingDynamicRelaxed => '𝧺',
+            SuttonSignWriting::SignwritingDynamicSimultaneous => '𝧻',
+            SuttonSignWriting::SignwritingDynamicSimultaneousAlternating => '𝧼',
+            SuttonSignWriting::SignwritingDynamicEveryOtherTime => '𝧽',
+            SuttonSignWriting::SignwritingDynamicGradual => '𝧾',
+            SuttonSignWriting::SignwritingHead => '𝧿',
+            SuttonSignWriting::SignwritingHeadRim => '𝨀',
+            SuttonSignWriting::SignwritingHeadMovementDashWallplaneStraight => '𝨁',
+            SuttonSignWriting::SignwritingHeadMovementDashWallplaneTilt => '𝨂',
+            SuttonSignWriting::SignwritingHeadMovementDashFloorplaneStraight => '𝨃',
+            SuttonSignWriting::SignwritingHeadMovementDashWallplaneCurve => '𝨄',
+            SuttonSignWriting::SignwritingHeadMovementDashFloorplaneCurve => '𝨅',
+            SuttonSignWriting::SignwritingHeadMovementCircle => '𝨆',
+            SuttonSignWriting::SignwritingFaceDirectionPositionNoseForwardTilting => '𝨇',
+            SuttonSignWriting::SignwritingFaceDirectionPositionNoseUpOrDown => '𝨈',
+            SuttonSignWriting::SignwritingFaceDirectionPositionNoseUpOrDownTilting => '𝨉',
+            SuttonSignWriting::SignwritingEyebrowsStraightUp => '𝨊',
+            SuttonSignWriting::SignwritingEyebrowsStraightNeutral => '𝨋',
+            SuttonSignWriting::SignwritingEyebrowsStraightDown => '𝨌',
+            SuttonSignWriting::SignwritingDreamyEyebrowsNeutralDown => '𝨍',
+            SuttonSignWriting::SignwritingDreamyEyebrowsDownNeutral => '𝨎',
+            SuttonSignWriting::SignwritingDreamyEyebrowsUpNeutral => '𝨏',
+            SuttonSignWriting::SignwritingDreamyEyebrowsNeutralUp => '𝨐',
+            SuttonSignWriting::SignwritingForeheadNeutral => '𝨑',
+            SuttonSignWriting::SignwritingForeheadContact => '𝨒',
+            SuttonSignWriting::SignwritingForeheadWrinkled => '𝨓',
+            SuttonSignWriting::SignwritingEyesOpen => '𝨔',
+            SuttonSignWriting::SignwritingEyesSqueezed => '𝨕',
+            SuttonSignWriting::SignwritingEyesClosed => '𝨖',
+            SuttonSignWriting::SignwritingEyeBlinkSingle => '𝨗',
+            SuttonSignWriting::SignwritingEyeBlinkMultiple => '𝨘',
+            SuttonSignWriting::SignwritingEyesHalfOpen => '𝨙',
+            SuttonSignWriting::SignwritingEyesWideOpen => '𝨚',
+            SuttonSignWriting::SignwritingEyesHalfClosed => '𝨛',
+            SuttonSignWriting::SignwritingEyesWideningMovement => '𝨜',
+            SuttonSignWriting::SignwritingEyeWink => '𝨝',
+            SuttonSignWriting::SignwritingEyelashesUp => '𝨞',
+            SuttonSignWriting::SignwritingEyelashesDown => '𝨟',
+            SuttonSignWriting::SignwritingEyelashesFluttering => '𝨠',
+            SuttonSignWriting::SignwritingEyegazeDashWallplaneStraight => '𝨡',
+            SuttonSignWriting::SignwritingEyegazeDashWallplaneStraightDouble => '𝨢',
+            SuttonSignWriting::SignwritingEyegazeDashWallplaneStraightAlternating => '𝨣',
+            SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraight => '𝨤',
+            SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraightDouble => '𝨥',
+            SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraightAlternating => '𝨦',
+            SuttonSignWriting::SignwritingEyegazeDashWallplaneCurved => '𝨧',
+            SuttonSignWriting::SignwritingEyegazeDashFloorplaneCurved => '𝨨',
+            SuttonSignWriting::SignwritingEyegazeDashWallplaneCircling => '𝨩',
+            SuttonSignWriting::SignwritingCheeksPuffed => '𝨪',
+            SuttonSignWriting::SignwritingCheeksNeutral => '𝨫',
+            SuttonSignWriting::SignwritingCheeksSucked => '𝨬',
+            SuttonSignWriting::SignwritingTenseCheeksHigh => '𝨭',
+            SuttonSignWriting::SignwritingTenseCheeksMiddle => '𝨮',
+            SuttonSignWriting::SignwritingTenseCheeksLow => '𝨯',
+            SuttonSignWriting::SignwritingEars => '𝨰',
+            SuttonSignWriting::SignwritingNoseNeutral => '𝨱',
+            SuttonSignWriting::SignwritingNoseContact => '𝨲',
+            SuttonSignWriting::SignwritingNoseWrinkles => '𝨳',
+            SuttonSignWriting::SignwritingNoseWiggles => '𝨴',
+            SuttonSignWriting::SignwritingAirBlowingOut => '𝨵',
+            SuttonSignWriting::SignwritingAirSuckingIn => '𝨶',
+            SuttonSignWriting::SignwritingAirBlowSmallRotations => '𝨷',
+            SuttonSignWriting::SignwritingAirSuckSmallRotations => '𝨸',
+            SuttonSignWriting::SignwritingBreathInhale => '𝨹',
+            SuttonSignWriting::SignwritingBreathExhale => '𝨺',
+            SuttonSignWriting::SignwritingMouthClosedNeutral => '𝨻',
+            SuttonSignWriting::SignwritingMouthClosedForward => '𝨼',
+            SuttonSignWriting::SignwritingMouthClosedContact => '𝨽',
+            SuttonSignWriting::SignwritingMouthSmile => '𝨾',
+            SuttonSignWriting::SignwritingMouthSmileWrinkled => '𝨿',
+            SuttonSignWriting::SignwritingMouthSmileOpen => '𝩀',
+            SuttonSignWriting::SignwritingMouthFrown => '𝩁',
+            SuttonSignWriting::SignwritingMouthFrownWrinkled => '𝩂',
+            SuttonSignWriting::SignwritingMouthFrownOpen => '𝩃',
+            SuttonSignWriting::SignwritingMouthOpenCircle => '𝩄',
+            SuttonSignWriting::SignwritingMouthOpenForward => '𝩅',
+            SuttonSignWriting::SignwritingMouthOpenWrinkled => '𝩆',
+            SuttonSignWriting::SignwritingMouthOpenOval => '𝩇',
+            SuttonSignWriting::SignwritingMouthOpenOvalWrinkled => '𝩈',
+            SuttonSignWriting::SignwritingMouthOpenOvalYawn => '𝩉',
+            SuttonSignWriting::SignwritingMouthOpenRectangle => '𝩊',
+            SuttonSignWriting::SignwritingMouthOpenRectangleWrinkled => '𝩋',
+            SuttonSignWriting::SignwritingMouthOpenRectangleYawn => '𝩌',
+            SuttonSignWriting::SignwritingMouthKiss => '𝩍',
+            SuttonSignWriting::SignwritingMouthKissForward => '𝩎',
+            SuttonSignWriting::SignwritingMouthKissWrinkled => '𝩏',
+            SuttonSignWriting::SignwritingMouthTense => '𝩐',
+            SuttonSignWriting::SignwritingMouthTenseForward => '𝩑',
+            SuttonSignWriting::SignwritingMouthTenseSucked => '𝩒',
+            SuttonSignWriting::SignwritingLipsPressedTogether => '𝩓',
+            SuttonSignWriting::SignwritingLipLowerOverUpper => '𝩔',
+            SuttonSignWriting::SignwritingLipUpperOverLower => '𝩕',
+            SuttonSignWriting::SignwritingMouthCorners => '𝩖',
+            SuttonSignWriting::SignwritingMouthWrinklesSingle => '𝩗',
+            SuttonSignWriting::SignwritingMouthWrinklesDouble => '𝩘',
+            SuttonSignWriting::SignwritingTongueStickingOutFar => '𝩙',
+            SuttonSignWriting::SignwritingTongueLickingLips => '𝩚',
+            SuttonSignWriting::SignwritingTongueTipBetweenLips => '𝩛',
+            SuttonSignWriting::SignwritingTongueTipTouchingInsideMouth => '𝩜',
+            SuttonSignWriting::SignwritingTongueInsideMouthRelaxed => '𝩝',
+            SuttonSignWriting::SignwritingTongueMovesAgainstCheek => '𝩞',
+            SuttonSignWriting::SignwritingTongueCentreStickingOut => '𝩟',
+            SuttonSignWriting::SignwritingTongueCentreInsideMouth => '𝩠',
+            SuttonSignWriting::SignwritingTeeth => '𝩡',
+            SuttonSignWriting::SignwritingTeethMovement => '𝩢',
+            SuttonSignWriting::SignwritingTeethOnTongue => '𝩣',
+            SuttonSignWriting::SignwritingTeethOnTongueMovement => '𝩤',
+            SuttonSignWriting::SignwritingTeethOnLips => '𝩥',
+            SuttonSignWriting::SignwritingTeethOnLipsMovement => '𝩦',
+            SuttonSignWriting::SignwritingTeethBiteLips => '𝩧',
+            SuttonSignWriting::SignwritingMovementDashWallplaneJaw => '𝩨',
+            SuttonSignWriting::SignwritingMovementDashFloorplaneJaw => '𝩩',
+            SuttonSignWriting::SignwritingNeck => '𝩪',
+            SuttonSignWriting::SignwritingHair => '𝩫',
+            SuttonSignWriting::SignwritingExcitement => '𝩬',
+            SuttonSignWriting::SignwritingShoulderHipSpine => '𝩭',
+            SuttonSignWriting::SignwritingShoulderHipPositions => '𝩮',
+            SuttonSignWriting::SignwritingWallplaneShoulderHipMove => '𝩯',
+            SuttonSignWriting::SignwritingFloorplaneShoulderHipMove => '𝩰',
+            SuttonSignWriting::SignwritingShoulderTiltingFromWaist => '𝩱',
+            SuttonSignWriting::SignwritingTorsoDashWallplaneStraightStretch => '𝩲',
+            SuttonSignWriting::SignwritingTorsoDashWallplaneCurvedBend => '𝩳',
+            SuttonSignWriting::SignwritingTorsoDashFloorplaneTwisting => '𝩴',
+            SuttonSignWriting::SignwritingUpperBodyTiltingFromHipJoints => '𝩵',
+            SuttonSignWriting::SignwritingLimbCombination => '𝩶',
+            SuttonSignWriting::SignwritingLimbLengthDash1 => '𝩷',
+            SuttonSignWriting::SignwritingLimbLengthDash2 => '𝩸',
+            SuttonSignWriting::SignwritingLimbLengthDash3 => '𝩹',
+            SuttonSignWriting::SignwritingLimbLengthDash4 => '𝩺',
+            SuttonSignWriting::SignwritingLimbLengthDash5 => '𝩻',
+            SuttonSignWriting::SignwritingLimbLengthDash6 => '𝩼',
+            SuttonSignWriting::SignwritingLimbLengthDash7 => '𝩽',
+            SuttonSignWriting::SignwritingFinger => '𝩾',
+            SuttonSignWriting::SignwritingLocationDashWallplaneSpace => '𝩿',
+            SuttonSignWriting::SignwritingLocationDashFloorplaneSpace => '𝪀',
+            SuttonSignWriting::SignwritingLocationHeight => '𝪁',
+            SuttonSignWriting::SignwritingLocationWidth => '𝪂',
+            SuttonSignWriting::SignwritingLocationDepth => '𝪃',
+            SuttonSignWriting::SignwritingLocationHeadNeck => '𝪄',
+            SuttonSignWriting::SignwritingLocationTorso => '𝪅',
+            SuttonSignWriting::SignwritingLocationLimbsDigits => '𝪆',
+            SuttonSignWriting::SignwritingComma => '𝪇',
+            SuttonSignWriting::SignwritingFullStop => '𝪈',
+            SuttonSignWriting::SignwritingSemicolon => '𝪉',
+            SuttonSignWriting::SignwritingColon => '𝪊',
+            SuttonSignWriting::SignwritingParenthesis => '𝪋',
+            SuttonSignWriting::SignwritingFillModifierDash2 => '𝪛',
+            SuttonSignWriting::SignwritingFillModifierDash3 => '𝪜',
+            SuttonSignWriting::SignwritingFillModifierDash4 => '𝪝',
+            SuttonSignWriting::SignwritingFillModifierDash5 => '𝪞',
+            SuttonSignWriting::SignwritingFillModifierDash6 => '𝪟',
+            SuttonSignWriting::SignwritingRotationModifierDash2 => '𝪡',
+            SuttonSignWriting::SignwritingRotationModifierDash3 => '𝪢',
+            SuttonSignWriting::SignwritingRotationModifierDash4 => '𝪣',
+            SuttonSignWriting::SignwritingRotationModifierDash5 => '𝪤',
+            SuttonSignWriting::SignwritingRotationModifierDash6 => '𝪥',
+            SuttonSignWriting::SignwritingRotationModifierDash7 => '𝪦',
+            SuttonSignWriting::SignwritingRotationModifierDash8 => '𝪧',
+            SuttonSignWriting::SignwritingRotationModifierDash9 => '𝪨',
+            SuttonSignWriting::SignwritingRotationModifierDash10 => '𝪩',
+            SuttonSignWriting::SignwritingRotationModifierDash11 => '𝪪',
+            SuttonSignWriting::SignwritingRotationModifierDash12 => '𝪫',
+            SuttonSignWriting::SignwritingRotationModifierDash13 => '𝪬',
+            SuttonSignWriting::SignwritingRotationModifierDash14 => '𝪭',
+            SuttonSignWriting::SignwritingRotationModifierDash15 => '𝪮',
         }
     }
 }
@@ -3373,679 +2027,678 @@ impl Into<char> for SuttonSignWriting {
 impl std::convert::TryFrom<char> for SuttonSignWriting {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGNWRITING_HAND_DASH_FIST_INDEX => Ok(SuttonSignWriting::SignwritingHandDashFistIndex),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX => Ok(SuttonSignWriting::SignwritingHandDashCircleIndex),
-            SIGNWRITING_HAND_DASH_CUP_INDEX => Ok(SuttonSignWriting::SignwritingHandDashCupIndex),
-            SIGNWRITING_HAND_DASH_OVAL_INDEX => Ok(SuttonSignWriting::SignwritingHandDashOvalIndex),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX => Ok(SuttonSignWriting::SignwritingHandDashHingeIndex),
-            SIGNWRITING_HAND_DASH_ANGLE_INDEX => Ok(SuttonSignWriting::SignwritingHandDashAngleIndex),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexBent),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX_BENT => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexBent),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_INDEX_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderIndexBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_RAISED_KNUCKLE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexRaisedKnuckle),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_CUPPED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexCupped),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexHinged),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED_LOW => Ok(SuttonSignWriting::SignwritingHandDashFistIndexHingedLow),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX_HINGE => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexHinge),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddle),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddle),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RAISED_KNUCKLES => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleRaisedKnuckles),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleHinged),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_UP_MIDDLE_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHinged),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED_MIDDLE_UP => Ok(SuttonSignWriting::SignwritingHandDashFistIndexHingedMiddleUp),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoined),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_INDEX_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedIndexBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_MIDDLE_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedMiddleBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_CUPPED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedCupped),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedHinged),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CROSSED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossed),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_CROSSED => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleCrossed),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_BENT_OVER_INDEX => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleBentOverIndex),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_BENT_OVER_MIDDLE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexBentOverMiddle),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumb),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_THUMB => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleThumb),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_STRAIGHT_THUMB_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleStraightThumbBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_BENT_THUMB_STRAIGHT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleBentThumbStraight),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_HINGED_SPREAD_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleHingedSpreadThumbSide),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_UP_MIDDLE_HINGED_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHingedThumbSide),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_UP_MIDDLE_HINGED_THUMB_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHingedThumbConjoined),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_HINGED_MIDDLE_UP_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexHingedMiddleUpThumbSide),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_UP_SPREAD_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleUpSpreadThumbForward),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_CUPPED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbCupped),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_CIRCLED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbCircled),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_HOOKED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbHooked),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbHinged),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_INDEX_MIDDLE_STRAIGHT => Ok(SuttonSignWriting::SignwritingHandDashFistThumbBetweenIndexMiddleStraight),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSide),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_SIDE_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSideConjoined),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_SIDE_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSideBent),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_HOOKED_INDEX_UP => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbHookedIndexUp),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_HOOKED_MIDDLE_UP => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbHookedMiddleUp),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_HINGED_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedHingedThumbSide),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CROSSED_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossedThumbSide),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbForward),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CONJOINED_CUPPED_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedCuppedThumbForward),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_CUPPED_INDEX_UP => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbCuppedIndexUp),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CUPPED_MIDDLE_UP => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCuppedMiddleUp),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_CIRCLED_INDEX_UP => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbCircledIndexUp),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_CIRCLED_INDEX_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbCircledIndexHinged),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_ANGLED_OUT_MIDDLE_UP => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbAngledOutMiddleUp),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_ANGLED_IN_MIDDLE_UP => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbAngledInMiddleUp),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CIRCLED_MIDDLE_UP => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCircledMiddleUp),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_CONJOINED_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbConjoinedHinged),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_ANGLED_OUT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbAngledOut),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_THUMB_ANGLED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbAngled),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_ANGLED_OUT_INDEX_UP => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledOutIndexUp),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_ANGLED_OUT_INDEX_CROSSED => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledOutIndexCrossed),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_ANGLED_INDEX_UP => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledIndexUp),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_HOOKED_MIDDLE_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbHookedMiddleHinged),
-            SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingers),
-            SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_BENT => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingersBent),
-            SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingersHinged),
-            SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingersConjoined),
-            SIGNWRITING_HAND_DASH_FLAT_FOUR_FINGERS_CONJOINED_SPLIT => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingersConjoinedSplit),
-            SIGNWRITING_HAND_DASH_CLAW_FOUR_FINGERS_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashClawFourFingersConjoined),
-            SIGNWRITING_HAND_DASH_FIST_FOUR_FINGERS_CONJOINED_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistFourFingersConjoinedBent),
-            SIGNWRITING_HAND_DASH_HINGE_FOUR_FINGERS_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashHingeFourFingersConjoined),
-            SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpread),
-            SIGNWRITING_HAND_DASH_FLAT_HEEL_FIVE_FINGERS_SPREAD => Ok(SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpread),
-            SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_FOUR_BENT => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadFourBent),
-            SIGNWRITING_HAND_DASH_FLAT_HEEL_FIVE_FINGERS_SPREAD_FOUR_BENT => Ok(SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpreadFourBent),
-            SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_BENT => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadBent),
-            SIGNWRITING_HAND_DASH_FLAT_HEEL_FIVE_FINGERS_SPREAD_BENT => Ok(SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpreadBent),
-            SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadThumbForward),
-            SIGNWRITING_HAND_DASH_CUP_FIVE_FINGERS_SPREAD => Ok(SuttonSignWriting::SignwritingHandDashCupFiveFingersSpread),
-            SIGNWRITING_HAND_DASH_CUP_FIVE_FINGERS_SPREAD_OPEN => Ok(SuttonSignWriting::SignwritingHandDashCupFiveFingersSpreadOpen),
-            SIGNWRITING_HAND_DASH_HINGE_FIVE_FINGERS_SPREAD_OPEN => Ok(SuttonSignWriting::SignwritingHandDashHingeFiveFingersSpreadOpen),
-            SIGNWRITING_HAND_DASH_OVAL_FIVE_FINGERS_SPREAD => Ok(SuttonSignWriting::SignwritingHandDashOvalFiveFingersSpread),
-            SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_HINGED => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHinged),
-            SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_HINGED_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHingedThumbSide),
-            SIGNWRITING_HAND_DASH_FLAT_FIVE_FINGERS_SPREAD_HINGED_NO_THUMB => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHingedNoThumb),
-            SIGNWRITING_HAND_DASH_FLAT => Ok(SuttonSignWriting::SignwritingHandDashFlat),
-            SIGNWRITING_HAND_DASH_FLAT_BETWEEN_PALM_FACINGS => Ok(SuttonSignWriting::SignwritingHandDashFlatBetweenPalmFacings),
-            SIGNWRITING_HAND_DASH_FLAT_HEEL => Ok(SuttonSignWriting::SignwritingHandDashFlatHeel),
-            SIGNWRITING_HAND_DASH_FLAT_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFlatThumbSide),
-            SIGNWRITING_HAND_DASH_FLAT_HEEL_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFlatHeelThumbSide),
-            SIGNWRITING_HAND_DASH_FLAT_THUMB_BENT => Ok(SuttonSignWriting::SignwritingHandDashFlatThumbBent),
-            SIGNWRITING_HAND_DASH_FLAT_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashFlatThumbForward),
-            SIGNWRITING_HAND_DASH_FLAT_SPLIT_INDEX_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitIndexThumbSide),
-            SIGNWRITING_HAND_DASH_FLAT_SPLIT_CENTRE => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitCentre),
-            SIGNWRITING_HAND_DASH_FLAT_SPLIT_CENTRE_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitCentreThumbSide),
-            SIGNWRITING_HAND_DASH_FLAT_SPLIT_CENTRE_THUMB_SIDE_BENT => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitCentreThumbSideBent),
-            SIGNWRITING_HAND_DASH_FLAT_SPLIT_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitLittle),
-            SIGNWRITING_HAND_DASH_CLAW => Ok(SuttonSignWriting::SignwritingHandDashClaw),
-            SIGNWRITING_HAND_DASH_CLAW_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashClawThumbSide),
-            SIGNWRITING_HAND_DASH_CLAW_NO_THUMB => Ok(SuttonSignWriting::SignwritingHandDashClawNoThumb),
-            SIGNWRITING_HAND_DASH_CLAW_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashClawThumbForward),
-            SIGNWRITING_HAND_DASH_HOOK_CURLICUE => Ok(SuttonSignWriting::SignwritingHandDashHookCurlicue),
-            SIGNWRITING_HAND_DASH_HOOK => Ok(SuttonSignWriting::SignwritingHandDashHook),
-            SIGNWRITING_HAND_DASH_CUP_OPEN => Ok(SuttonSignWriting::SignwritingHandDashCupOpen),
-            SIGNWRITING_HAND_DASH_CUP => Ok(SuttonSignWriting::SignwritingHandDashCup),
-            SIGNWRITING_HAND_DASH_CUP_OPEN_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashCupOpenThumbSide),
-            SIGNWRITING_HAND_DASH_CUP_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashCupThumbSide),
-            SIGNWRITING_HAND_DASH_CUP_OPEN_NO_THUMB => Ok(SuttonSignWriting::SignwritingHandDashCupOpenNoThumb),
-            SIGNWRITING_HAND_DASH_CUP_NO_THUMB => Ok(SuttonSignWriting::SignwritingHandDashCupNoThumb),
-            SIGNWRITING_HAND_DASH_CUP_OPEN_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashCupOpenThumbForward),
-            SIGNWRITING_HAND_DASH_CUP_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashCupThumbForward),
-            SIGNWRITING_HAND_DASH_CURLICUE_OPEN => Ok(SuttonSignWriting::SignwritingHandDashCurlicueOpen),
-            SIGNWRITING_HAND_DASH_CURLICUE => Ok(SuttonSignWriting::SignwritingHandDashCurlicue),
-            SIGNWRITING_HAND_DASH_CIRCLE => Ok(SuttonSignWriting::SignwritingHandDashCircle),
-            SIGNWRITING_HAND_DASH_OVAL => Ok(SuttonSignWriting::SignwritingHandDashOval),
-            SIGNWRITING_HAND_DASH_OVAL_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashOvalThumbSide),
-            SIGNWRITING_HAND_DASH_OVAL_NO_THUMB => Ok(SuttonSignWriting::SignwritingHandDashOvalNoThumb),
-            SIGNWRITING_HAND_DASH_OVAL_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashOvalThumbForward),
-            SIGNWRITING_HAND_DASH_HINGE_OPEN => Ok(SuttonSignWriting::SignwritingHandDashHingeOpen),
-            SIGNWRITING_HAND_DASH_HINGE_OPEN_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashHingeOpenThumbForward),
-            SIGNWRITING_HAND_DASH_HINGE => Ok(SuttonSignWriting::SignwritingHandDashHinge),
-            SIGNWRITING_HAND_DASH_HINGE_SMALL => Ok(SuttonSignWriting::SignwritingHandDashHingeSmall),
-            SIGNWRITING_HAND_DASH_HINGE_OPEN_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashHingeOpenThumbSide),
-            SIGNWRITING_HAND_DASH_HINGE_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashHingeThumbSide),
-            SIGNWRITING_HAND_DASH_HINGE_OPEN_NO_THUMB => Ok(SuttonSignWriting::SignwritingHandDashHingeOpenNoThumb),
-            SIGNWRITING_HAND_DASH_HINGE_NO_THUMB => Ok(SuttonSignWriting::SignwritingHandDashHingeNoThumb),
-            SIGNWRITING_HAND_DASH_HINGE_THUMB_SIDE_TOUCHING_INDEX => Ok(SuttonSignWriting::SignwritingHandDashHingeThumbSideTouchingIndex),
-            SIGNWRITING_HAND_DASH_HINGE_THUMB_BETWEEN_MIDDLE_RING => Ok(SuttonSignWriting::SignwritingHandDashHingeThumbBetweenMiddleRing),
-            SIGNWRITING_HAND_DASH_ANGLE => Ok(SuttonSignWriting::SignwritingHandDashAngle),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RING => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleRing),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_RING => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleRing),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_MIDDLE_RING => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexMiddleRing),
-            SIGNWRITING_HAND_DASH_ANGLE_INDEX_MIDDLE_RING => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexMiddleRing),
-            SIGNWRITING_HAND_DASH_HINGE_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashHingeLittle),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RING_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleRingBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_RING_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleRingConjoined),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_MIDDLE_RING_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexMiddleRingConjoined),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN => Ok(SuttonSignWriting::SignwritingHandDashFistLittleDown),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN_RIPPLE_STRAIGHT => Ok(SuttonSignWriting::SignwritingHandDashFistLittleDownRippleStraight),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN_RIPPLE_CURVED => Ok(SuttonSignWriting::SignwritingHandDashFistLittleDownRippleCurved),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_DOWN_OTHERS_CIRCLED => Ok(SuttonSignWriting::SignwritingHandDashFistLittleDownOthersCircled),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_UP => Ok(SuttonSignWriting::SignwritingHandDashFistLittleUp),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_LITTLE_UP => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderLittleUp),
-            SIGNWRITING_HAND_DASH_CIRCLE_LITTLE_UP => Ok(SuttonSignWriting::SignwritingHandDashCircleLittleUp),
-            SIGNWRITING_HAND_DASH_OVAL_LITTLE_UP => Ok(SuttonSignWriting::SignwritingHandDashOvalLittleUp),
-            SIGNWRITING_HAND_DASH_ANGLE_LITTLE_UP => Ok(SuttonSignWriting::SignwritingHandDashAngleLittleUp),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_RAISED_KNUCKLE => Ok(SuttonSignWriting::SignwritingHandDashFistLittleRaisedKnuckle),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistLittleBent),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_TOUCHES_THUMB => Ok(SuttonSignWriting::SignwritingHandDashFistLittleTouchesThumb),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_THUMB => Ok(SuttonSignWriting::SignwritingHandDashFistLittleThumb),
-            SIGNWRITING_HAND_DASH_HINGE_LITTLE_THUMB => Ok(SuttonSignWriting::SignwritingHandDashHingeLittleThumb),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_INDEX_THUMB => Ok(SuttonSignWriting::SignwritingHandDashFistLittleIndexThumb),
-            SIGNWRITING_HAND_DASH_HINGE_LITTLE_INDEX_THUMB => Ok(SuttonSignWriting::SignwritingHandDashHingeLittleIndexThumb),
-            SIGNWRITING_HAND_DASH_ANGLE_LITTLE_INDEX_THUMB_INDEX_THUMB_OUT => Ok(SuttonSignWriting::SignwritingHandDashAngleLittleIndexThumbIndexThumbOut),
-            SIGNWRITING_HAND_DASH_ANGLE_LITTLE_INDEX_THUMB_INDEX_THUMB => Ok(SuttonSignWriting::SignwritingHandDashAngleLittleIndexThumbIndexThumb),
-            SIGNWRITING_HAND_DASH_FIST_LITTLE_INDEX => Ok(SuttonSignWriting::SignwritingHandDashFistLittleIndex),
-            SIGNWRITING_HAND_DASH_CIRCLE_LITTLE_INDEX => Ok(SuttonSignWriting::SignwritingHandDashCircleLittleIndex),
-            SIGNWRITING_HAND_DASH_HINGE_LITTLE_INDEX => Ok(SuttonSignWriting::SignwritingHandDashHingeLittleIndex),
-            SIGNWRITING_HAND_DASH_ANGLE_LITTLE_INDEX => Ok(SuttonSignWriting::SignwritingHandDashAngleLittleIndex),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleLittle),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleLittle),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_MIDDLE_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexMiddleLittle),
-            SIGNWRITING_HAND_DASH_HINGE_RING => Ok(SuttonSignWriting::SignwritingHandDashHingeRing),
-            SIGNWRITING_HAND_DASH_ANGLE_INDEX_MIDDLE_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexMiddleLittle),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_MIDDLE_CROSS_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossLittle),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX_MIDDLE_CROSS_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleCrossLittle),
-            SIGNWRITING_HAND_DASH_FIST_RING_DOWN => Ok(SuttonSignWriting::SignwritingHandDashFistRingDown),
-            SIGNWRITING_HAND_DASH_HINGE_RING_DOWN_INDEX_THUMB_HOOK_MIDDLE => Ok(SuttonSignWriting::SignwritingHandDashHingeRingDownIndexThumbHookMiddle),
-            SIGNWRITING_HAND_DASH_ANGLE_RING_DOWN_MIDDLE_THUMB_INDEX_CROSS => Ok(SuttonSignWriting::SignwritingHandDashAngleRingDownMiddleThumbIndexCross),
-            SIGNWRITING_HAND_DASH_FIST_RING_UP => Ok(SuttonSignWriting::SignwritingHandDashFistRingUp),
-            SIGNWRITING_HAND_DASH_FIST_RING_RAISED_KNUCKLE => Ok(SuttonSignWriting::SignwritingHandDashFistRingRaisedKnuckle),
-            SIGNWRITING_HAND_DASH_FIST_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashFistRingLittle),
-            SIGNWRITING_HAND_DASH_CIRCLE_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashCircleRingLittle),
-            SIGNWRITING_HAND_DASH_OVAL_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashOvalRingLittle),
-            SIGNWRITING_HAND_DASH_ANGLE_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashAngleRingLittle),
-            SIGNWRITING_HAND_DASH_FIST_RING_MIDDLE => Ok(SuttonSignWriting::SignwritingHandDashFistRingMiddle),
-            SIGNWRITING_HAND_DASH_FIST_RING_MIDDLE_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashFistRingMiddleConjoined),
-            SIGNWRITING_HAND_DASH_FIST_RING_MIDDLE_RAISED_KNUCKLES => Ok(SuttonSignWriting::SignwritingHandDashFistRingMiddleRaisedKnuckles),
-            SIGNWRITING_HAND_DASH_FIST_RING_INDEX => Ok(SuttonSignWriting::SignwritingHandDashFistRingIndex),
-            SIGNWRITING_HAND_DASH_FIST_RING_THUMB => Ok(SuttonSignWriting::SignwritingHandDashFistRingThumb),
-            SIGNWRITING_HAND_DASH_HOOK_RING_THUMB => Ok(SuttonSignWriting::SignwritingHandDashHookRingThumb),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexRingLittle),
-            SIGNWRITING_HAND_DASH_CIRCLE_INDEX_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexRingLittle),
-            SIGNWRITING_HAND_DASH_CURLICUE_INDEX_RING_LITTLE_ON => Ok(SuttonSignWriting::SignwritingHandDashCurlicueIndexRingLittleOn),
-            SIGNWRITING_HAND_DASH_HOOK_INDEX_RING_LITTLE_OUT => Ok(SuttonSignWriting::SignwritingHandDashHookIndexRingLittleOut),
-            SIGNWRITING_HAND_DASH_HOOK_INDEX_RING_LITTLE_IN => Ok(SuttonSignWriting::SignwritingHandDashHookIndexRingLittleIn),
-            SIGNWRITING_HAND_DASH_HOOK_INDEX_RING_LITTLE_UNDER => Ok(SuttonSignWriting::SignwritingHandDashHookIndexRingLittleUnder),
-            SIGNWRITING_HAND_DASH_CUP_INDEX_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashCupIndexRingLittle),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexRingLittle),
-            SIGNWRITING_HAND_DASH_ANGLE_INDEX_RING_LITTLE_OUT => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexRingLittleOut),
-            SIGNWRITING_HAND_DASH_ANGLE_INDEX_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexRingLittle),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_DOWN => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleDown),
-            SIGNWRITING_HAND_DASH_HINGE_MIDDLE => Ok(SuttonSignWriting::SignwritingHandDashHingeMiddle),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_UP => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleUp),
-            SIGNWRITING_HAND_DASH_CIRCLE_MIDDLE_UP => Ok(SuttonSignWriting::SignwritingHandDashCircleMiddleUp),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_RAISED_KNUCKLE => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleRaisedKnuckle),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_UP_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleUpThumbSide),
-            SIGNWRITING_HAND_DASH_HOOK_MIDDLE_THUMB => Ok(SuttonSignWriting::SignwritingHandDashHookMiddleThumb),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_THUMB_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbLittle),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleLittle),
-            SIGNWRITING_HAND_DASH_FIST_MIDDLE_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleRingLittle),
-            SIGNWRITING_HAND_DASH_CIRCLE_MIDDLE_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashCircleMiddleRingLittle),
-            SIGNWRITING_HAND_DASH_CURLICUE_MIDDLE_RING_LITTLE_ON => Ok(SuttonSignWriting::SignwritingHandDashCurlicueMiddleRingLittleOn),
-            SIGNWRITING_HAND_DASH_CUP_MIDDLE_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashCupMiddleRingLittle),
-            SIGNWRITING_HAND_DASH_HINGE_MIDDLE_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashHingeMiddleRingLittle),
-            SIGNWRITING_HAND_DASH_ANGLE_MIDDLE_RING_LITTLE_OUT => Ok(SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittleOut),
-            SIGNWRITING_HAND_DASH_ANGLE_MIDDLE_RING_LITTLE_IN => Ok(SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittleIn),
-            SIGNWRITING_HAND_DASH_ANGLE_MIDDLE_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittle),
-            SIGNWRITING_HAND_DASH_CIRCLE_MIDDLE_RING_LITTLE_BENT => Ok(SuttonSignWriting::SignwritingHandDashCircleMiddleRingLittleBent),
-            SIGNWRITING_HAND_DASH_CLAW_MIDDLE_RING_LITTLE_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashClawMiddleRingLittleConjoined),
-            SIGNWRITING_HAND_DASH_CLAW_MIDDLE_RING_LITTLE_CONJOINED_SIDE => Ok(SuttonSignWriting::SignwritingHandDashClawMiddleRingLittleConjoinedSide),
-            SIGNWRITING_HAND_DASH_HOOK_MIDDLE_RING_LITTLE_CONJOINED_OUT => Ok(SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoinedOut),
-            SIGNWRITING_HAND_DASH_HOOK_MIDDLE_RING_LITTLE_CONJOINED_IN => Ok(SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoinedIn),
-            SIGNWRITING_HAND_DASH_HOOK_MIDDLE_RING_LITTLE_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoined),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_HINGED => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexHinged),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSide),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_SIDE => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumbSide),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_THUMB_DIAGONAL => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbDiagonal),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_THUMB_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbConjoined),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_THUMB_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_INDEX_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideIndexBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_BOTH_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideBothBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_SIDE_INDEX_HINGE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideIndexHinge),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_FORWARD_INDEX_STRAIGHT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbForwardIndexStraight),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_FORWARD_INDEX_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbForwardIndexBent),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_HOOK => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbHook),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CURLICUE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCurlicue),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CURVE_THUMB_INSIDE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCurveThumbInside),
-            SIGNWRITING_HAND_DASH_CLAW_INDEX_THUMB_CURVE_THUMB_INSIDE => Ok(SuttonSignWriting::SignwritingHandDashClawIndexThumbCurveThumbInside),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CURVE_THUMB_UNDER => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCurveThumbUnder),
-            SIGNWRITING_HAND_DASH_FIST_INDEX_THUMB_CIRCLE => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCircle),
-            SIGNWRITING_HAND_DASH_CUP_INDEX_THUMB => Ok(SuttonSignWriting::SignwritingHandDashCupIndexThumb),
-            SIGNWRITING_HAND_DASH_CUP_INDEX_THUMB_OPEN => Ok(SuttonSignWriting::SignwritingHandDashCupIndexThumbOpen),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_OPEN => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumbOpen),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_LARGE => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumbLarge),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumb),
-            SIGNWRITING_HAND_DASH_HINGE_INDEX_THUMB_SMALL => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumbSmall),
-            SIGNWRITING_HAND_DASH_ANGLE_INDEX_THUMB_OUT => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexThumbOut),
-            SIGNWRITING_HAND_DASH_ANGLE_INDEX_THUMB_IN => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexThumbIn),
-            SIGNWRITING_HAND_DASH_ANGLE_INDEX_THUMB => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexThumb),
-            SIGNWRITING_HAND_DASH_FIST_THUMB => Ok(SuttonSignWriting::SignwritingHandDashFistThumb),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_HEEL => Ok(SuttonSignWriting::SignwritingHandDashFistThumbHeel),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_SIDE_DIAGONAL => Ok(SuttonSignWriting::SignwritingHandDashFistThumbSideDiagonal),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_SIDE_CONJOINED => Ok(SuttonSignWriting::SignwritingHandDashFistThumbSideConjoined),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_SIDE_BENT => Ok(SuttonSignWriting::SignwritingHandDashFistThumbSideBent),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_FORWARD => Ok(SuttonSignWriting::SignwritingHandDashFistThumbForward),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_INDEX_MIDDLE => Ok(SuttonSignWriting::SignwritingHandDashFistThumbBetweenIndexMiddle),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_MIDDLE_RING => Ok(SuttonSignWriting::SignwritingHandDashFistThumbBetweenMiddleRing),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_BETWEEN_RING_LITTLE => Ok(SuttonSignWriting::SignwritingHandDashFistThumbBetweenRingLittle),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_TWO_FINGERS => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderTwoFingers),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_OVER_TWO_FINGERS => Ok(SuttonSignWriting::SignwritingHandDashFistThumbOverTwoFingers),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_THREE_FINGERS => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderThreeFingers),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_UNDER_FOUR_FINGERS => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderFourFingers),
-            SIGNWRITING_HAND_DASH_FIST_THUMB_OVER_FOUR_RAISED_KNUCKLES => Ok(SuttonSignWriting::SignwritingHandDashFistThumbOverFourRaisedKnuckles),
-            SIGNWRITING_HAND_DASH_FIST => Ok(SuttonSignWriting::SignwritingHandDashFist),
-            SIGNWRITING_HAND_DASH_FIST_HEEL => Ok(SuttonSignWriting::SignwritingHandDashFistHeel),
-            SIGNWRITING_TOUCH_SINGLE => Ok(SuttonSignWriting::SignwritingTouchSingle),
-            SIGNWRITING_TOUCH_MULTIPLE => Ok(SuttonSignWriting::SignwritingTouchMultiple),
-            SIGNWRITING_TOUCH_BETWEEN => Ok(SuttonSignWriting::SignwritingTouchBetween),
-            SIGNWRITING_GRASP_SINGLE => Ok(SuttonSignWriting::SignwritingGraspSingle),
-            SIGNWRITING_GRASP_MULTIPLE => Ok(SuttonSignWriting::SignwritingGraspMultiple),
-            SIGNWRITING_GRASP_BETWEEN => Ok(SuttonSignWriting::SignwritingGraspBetween),
-            SIGNWRITING_STRIKE_SINGLE => Ok(SuttonSignWriting::SignwritingStrikeSingle),
-            SIGNWRITING_STRIKE_MULTIPLE => Ok(SuttonSignWriting::SignwritingStrikeMultiple),
-            SIGNWRITING_STRIKE_BETWEEN => Ok(SuttonSignWriting::SignwritingStrikeBetween),
-            SIGNWRITING_BRUSH_SINGLE => Ok(SuttonSignWriting::SignwritingBrushSingle),
-            SIGNWRITING_BRUSH_MULTIPLE => Ok(SuttonSignWriting::SignwritingBrushMultiple),
-            SIGNWRITING_BRUSH_BETWEEN => Ok(SuttonSignWriting::SignwritingBrushBetween),
-            SIGNWRITING_RUB_SINGLE => Ok(SuttonSignWriting::SignwritingRubSingle),
-            SIGNWRITING_RUB_MULTIPLE => Ok(SuttonSignWriting::SignwritingRubMultiple),
-            SIGNWRITING_RUB_BETWEEN => Ok(SuttonSignWriting::SignwritingRubBetween),
-            SIGNWRITING_SURFACE_SYMBOLS => Ok(SuttonSignWriting::SignwritingSurfaceSymbols),
-            SIGNWRITING_SURFACE_BETWEEN => Ok(SuttonSignWriting::SignwritingSurfaceBetween),
-            SIGNWRITING_SQUEEZE_LARGE_SINGLE => Ok(SuttonSignWriting::SignwritingSqueezeLargeSingle),
-            SIGNWRITING_SQUEEZE_SMALL_SINGLE => Ok(SuttonSignWriting::SignwritingSqueezeSmallSingle),
-            SIGNWRITING_SQUEEZE_LARGE_MULTIPLE => Ok(SuttonSignWriting::SignwritingSqueezeLargeMultiple),
-            SIGNWRITING_SQUEEZE_SMALL_MULTIPLE => Ok(SuttonSignWriting::SignwritingSqueezeSmallMultiple),
-            SIGNWRITING_SQUEEZE_SEQUENTIAL => Ok(SuttonSignWriting::SignwritingSqueezeSequential),
-            SIGNWRITING_FLICK_LARGE_SINGLE => Ok(SuttonSignWriting::SignwritingFlickLargeSingle),
-            SIGNWRITING_FLICK_SMALL_SINGLE => Ok(SuttonSignWriting::SignwritingFlickSmallSingle),
-            SIGNWRITING_FLICK_LARGE_MULTIPLE => Ok(SuttonSignWriting::SignwritingFlickLargeMultiple),
-            SIGNWRITING_FLICK_SMALL_MULTIPLE => Ok(SuttonSignWriting::SignwritingFlickSmallMultiple),
-            SIGNWRITING_FLICK_SEQUENTIAL => Ok(SuttonSignWriting::SignwritingFlickSequential),
-            SIGNWRITING_SQUEEZE_FLICK_ALTERNATING => Ok(SuttonSignWriting::SignwritingSqueezeFlickAlternating),
-            SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpDownLarge),
-            SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpDownSmall),
-            SIGNWRITING_MOVEMENT_DASH_HINGE_UP_SEQUENTIAL => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpSequential),
-            SIGNWRITING_MOVEMENT_DASH_HINGE_DOWN_SEQUENTIAL => Ok(SuttonSignWriting::SignwritingMovementDashHingeDownSequential),
-            SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_ALTERNATING_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpDownAlternatingLarge),
-            SIGNWRITING_MOVEMENT_DASH_HINGE_UP_DOWN_ALTERNATING_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpDownAlternatingSmall),
-            SIGNWRITING_MOVEMENT_DASH_HINGE_SIDE_TO_SIDE_SCISSORS => Ok(SuttonSignWriting::SignwritingMovementDashHingeSideToSideScissors),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_FINGER_CONTACT => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneFingerContact),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_FINGER_CONTACT => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneFingerContact),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_STRAIGHT_LARGEST => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightLargest),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SINGLE_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_STRAIGHT => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneDoubleStraight),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneDoubleWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_ALTERNATING => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneDoubleAlternating),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_DOUBLE_ALTERNATING_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneDoubleAlternatingWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CROSS => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCross),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_STRAIGHT_MOVEMENT => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneTripleStraightMovement),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneTripleWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_ALTERNATING => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneTripleAlternating),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_TRIPLE_ALTERNATING_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneTripleAlternatingWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BEND_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBendSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BEND_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBendMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BEND_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBendLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCornerSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCornerMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCornerLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CORNER_ROTATION => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCornerRotation),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CHECK_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCheckSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CHECK_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCheckMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CHECK_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCheckLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BOX_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBoxSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BOX_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBoxMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_BOX_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBoxLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ZIGZAG_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneZigzagSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ZIGZAG_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneZigzagMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ZIGZAG_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneZigzagLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_PEAKS_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplanePeaksSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_PEAKS_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplanePeaksMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_PEAKS_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplanePeaksLarge),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_WALLPLANE_SINGLE => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneSingle),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_WALLPLANE_DOUBLE => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneDouble),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_WALLPLANE_ALTERNATING => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneAlternating),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_FLOORPLANE_SINGLE => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneSingle),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_FLOORPLANE_DOUBLE => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneDouble),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_ROTATION_DASH_FLOORPLANE_ALTERNATING => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneAlternating),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_SHAKING => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneShaking),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_ARM_SPIRAL_SINGLE => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralSingle),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_ARM_SPIRAL_DOUBLE => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralDouble),
-            SIGNWRITING_TRAVEL_DASH_WALLPLANE_ARM_SPIRAL_TRIPLE => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralTriple),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalAwaySmall),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalAwayMedium),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalAwayLarge),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_AWAY_LARGEST => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalAwayLargest),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalTowardsSmall),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalTowardsMedium),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalTowardsLarge),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_TOWARDS_LARGEST => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalTowardsLargest),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwaySmall),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayMedium),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayLarge),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_AWAY_LARGEST => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayLargest),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsSmall),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsMedium),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsLarge),
-            SIGNWRITING_MOVEMENT_DASH_DIAGONAL_BETWEEN_TOWARDS_LARGEST => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsLargest),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightMedium),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightLarge),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_STRAIGHT_LARGEST => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightLargest),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SINGLE_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_STRAIGHT => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleStraight),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_ALTERNATING => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleAlternating),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_DOUBLE_ALTERNATING_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleAlternatingWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CROSS => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCross),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_STRAIGHT_MOVEMENT => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneTripleStraightMovement),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneTripleWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_ALTERNATING_MOVEMENT => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneTripleAlternatingMovement),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_TRIPLE_ALTERNATING_WRIST_FLEX => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneTripleAlternatingWristFlex),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BEND => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneBend),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CORNER_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCornerSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CORNER_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCornerMedium),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CORNER_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCornerLarge),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CHECK => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCheck),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BOX_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneBoxSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BOX_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneBoxMedium),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_BOX_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneBoxLarge),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ZIGZAG_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ZIGZAG_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagMedium),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ZIGZAG_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagLarge),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_PEAKS_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplanePeaksSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_PEAKS_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashFloorplanePeaksMedium),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_PEAKS_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplanePeaksLarge),
-            SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_FLOORPLANE_SINGLE => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneSingle),
-            SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_FLOORPLANE_DOUBLE => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneDouble),
-            SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_FLOORPLANE_ALTERNATING => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneAlternating),
-            SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_WALLPLANE_SINGLE => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneSingle),
-            SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_WALLPLANE_DOUBLE => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneDouble),
-            SIGNWRITING_TRAVEL_DASH_FLOORPLANE_ROTATION_DASH_WALLPLANE_ALTERNATING => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneAlternating),
-            SIGNWRITING_TRAVEL_DASH_FLOORPLANE_SHAKING => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneShaking),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_QUARTER_LARGEST => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterLargest),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HALF_DASH_CIRCLE_LARGEST => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleLargest),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_THREE_DASH_QUARTER_CIRCLE_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveThreeDashQuarterCircleSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_THREE_DASH_QUARTER_CIRCLE_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveThreeDashQuarterCircleMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_SMALL_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopSmallDouble),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_DOUBLE_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_DOUBLE_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_DOUBLE_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_TRIPLE_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_TRIPLE_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_CURVE_TRIPLE_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleLarge),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_THEN_STRAIGHT => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveThenStraight),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVED_CROSS_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurvedCrossSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVED_CROSS_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurvedCrossMedium),
-            SIGNWRITING_ROTATION_DASH_WALLPLANE_SINGLE => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneSingle),
-            SIGNWRITING_ROTATION_DASH_WALLPLANE_DOUBLE => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneDouble),
-            SIGNWRITING_ROTATION_DASH_WALLPLANE_ALTERNATE => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneAlternate),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_SHAKING => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneShaking),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HITTING_FRONT_WALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHittingFrontWall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_HITTING_FRONT_WALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpHittingFrontWall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_HITTING_FRONT_WALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopHittingFrontWall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_HITTING_FRONT_WALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveHittingFrontWall),
-            SIGNWRITING_ROTATION_DASH_WALLPLANE_SINGLE_HITTING_FRONT_WALL => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneSingleHittingFrontWall),
-            SIGNWRITING_ROTATION_DASH_WALLPLANE_DOUBLE_HITTING_FRONT_WALL => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneDoubleHittingFrontWall),
-            SIGNWRITING_ROTATION_DASH_WALLPLANE_ALTERNATING_HITTING_FRONT_WALL => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneAlternatingHittingFrontWall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_CURVE_HITTING_CHEST => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHittingChest),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_HUMP_HITTING_CHEST => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpHittingChest),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_LOOP_HITTING_CHEST => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopHittingChest),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_HITTING_CHEST => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveHittingChest),
-            SIGNWRITING_ROTATION_DASH_WALLPLANE_SINGLE_HITTING_CHEST => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneSingleHittingChest),
-            SIGNWRITING_ROTATION_DASH_WALLPLANE_DOUBLE_HITTING_CHEST => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneDoubleHittingChest),
-            SIGNWRITING_ROTATION_DASH_WALLPLANE_ALTERNATING_HITTING_CHEST => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneAlternatingHittingChest),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_DIAGONAL_PATH_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathSmall),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_DIAGONAL_PATH_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathMedium),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WAVE_DIAGONAL_PATH_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathLarge),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_CEILING_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingCeilingSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_CEILING_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingCeilingLarge),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_SMALL_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingSmallDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_LARGE_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingLargeDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_SMALL_TRIPLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingSmallTriple),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_CEILING_LARGE_TRIPLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingLargeTriple),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_SMALL_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingSmallSingle),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_LARGE_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingLargeSingle),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_SMALL_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingSmallDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_CEILING_LARGE_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingLargeDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_CEILING_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingCeilingSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_CEILING_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingCeilingLarge),
-            SIGNWRITING_ROTATION_DASH_FLOORPLANE_SINGLE_HITTING_CEILING => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneSingleHittingCeiling),
-            SIGNWRITING_ROTATION_DASH_FLOORPLANE_DOUBLE_HITTING_CEILING => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneDoubleHittingCeiling),
-            SIGNWRITING_ROTATION_DASH_FLOORPLANE_ALTERNATING_HITTING_CEILING => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneAlternatingHittingCeiling),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_FLOOR_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingFloorSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_HITTING_FLOOR_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingFloorLarge),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_SMALL_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorSmallDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_LARGE_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorLargeDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_TRIPLE_SMALL_TRIPLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorTripleSmallTriple),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_HITTING_FLOOR_TRIPLE_LARGE_TRIPLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorTripleLargeTriple),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_SMALL_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorSmallSingle),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_LARGE_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorLargeSingle),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_SMALL_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorSmallDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_HITTING_FLOOR_LARGE_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorLargeDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_FLOOR_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingFloorSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_HITTING_FLOOR_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingFloorLarge),
-            SIGNWRITING_ROTATION_DASH_FLOORPLANE_SINGLE_HITTING_FLOOR => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneSingleHittingFloor),
-            SIGNWRITING_ROTATION_DASH_FLOORPLANE_DOUBLE_HITTING_FLOOR => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneDoubleHittingFloor),
-            SIGNWRITING_ROTATION_DASH_FLOORPLANE_ALTERNATING_HITTING_FLOOR => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneAlternatingHittingFloor),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_MEDIUM => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveMedium),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveLarge),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_LARGEST => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveLargest),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_CURVE_COMBINED => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveCombined),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_HUMP_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_LOOP_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_SNAKE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveSnake),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_SMALL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveSmall),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WAVE_LARGE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveLarge),
-            SIGNWRITING_ROTATION_DASH_FLOORPLANE_SINGLE => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneSingle),
-            SIGNWRITING_ROTATION_DASH_FLOORPLANE_DOUBLE => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneDouble),
-            SIGNWRITING_ROTATION_DASH_FLOORPLANE_ALTERNATING => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneAlternating),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_SHAKING_PARALLEL => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneShakingParallel),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_SMALL_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleSmallSingle),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_MEDIUM_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleMediumSingle),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_SMALL_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleSmallDouble),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_ARM_CIRCLE_MEDIUM_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleMediumDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_SMALL_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallSmallSingle),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_MEDIUM_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallMediumSingle),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_LARGE_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallLargeSingle),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_SMALL_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallSmallDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_MEDIUM_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallMediumDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_ARM_CIRCLE_HITTING_WALL_LARGE_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallLargeDouble),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WRIST_CIRCLE_FRONT_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWristCircleFrontSingle),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_WRIST_CIRCLE_FRONT_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWristCircleFrontDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WRIST_CIRCLE_HITTING_WALL_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWristCircleHittingWallSingle),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_WRIST_CIRCLE_HITTING_WALL_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWristCircleHittingWallDouble),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_FINGER_CIRCLES_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneFingerCirclesSingle),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_FINGER_CIRCLES_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneFingerCirclesDouble),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_FINGER_CIRCLES_HITTING_WALL_SINGLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneFingerCirclesHittingWallSingle),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_FINGER_CIRCLES_HITTING_WALL_DOUBLE => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneFingerCirclesHittingWallDouble),
-            SIGNWRITING_DYNAMIC_ARROWHEAD_SMALL => Ok(SuttonSignWriting::SignwritingDynamicArrowheadSmall),
-            SIGNWRITING_DYNAMIC_ARROWHEAD_LARGE => Ok(SuttonSignWriting::SignwritingDynamicArrowheadLarge),
-            SIGNWRITING_DYNAMIC_FAST => Ok(SuttonSignWriting::SignwritingDynamicFast),
-            SIGNWRITING_DYNAMIC_SLOW => Ok(SuttonSignWriting::SignwritingDynamicSlow),
-            SIGNWRITING_DYNAMIC_TENSE => Ok(SuttonSignWriting::SignwritingDynamicTense),
-            SIGNWRITING_DYNAMIC_RELAXED => Ok(SuttonSignWriting::SignwritingDynamicRelaxed),
-            SIGNWRITING_DYNAMIC_SIMULTANEOUS => Ok(SuttonSignWriting::SignwritingDynamicSimultaneous),
-            SIGNWRITING_DYNAMIC_SIMULTANEOUS_ALTERNATING => Ok(SuttonSignWriting::SignwritingDynamicSimultaneousAlternating),
-            SIGNWRITING_DYNAMIC_EVERY_OTHER_TIME => Ok(SuttonSignWriting::SignwritingDynamicEveryOtherTime),
-            SIGNWRITING_DYNAMIC_GRADUAL => Ok(SuttonSignWriting::SignwritingDynamicGradual),
-            SIGNWRITING_HEAD => Ok(SuttonSignWriting::SignwritingHead),
-            SIGNWRITING_HEAD_RIM => Ok(SuttonSignWriting::SignwritingHeadRim),
-            SIGNWRITING_HEAD_MOVEMENT_DASH_WALLPLANE_STRAIGHT => Ok(SuttonSignWriting::SignwritingHeadMovementDashWallplaneStraight),
-            SIGNWRITING_HEAD_MOVEMENT_DASH_WALLPLANE_TILT => Ok(SuttonSignWriting::SignwritingHeadMovementDashWallplaneTilt),
-            SIGNWRITING_HEAD_MOVEMENT_DASH_FLOORPLANE_STRAIGHT => Ok(SuttonSignWriting::SignwritingHeadMovementDashFloorplaneStraight),
-            SIGNWRITING_HEAD_MOVEMENT_DASH_WALLPLANE_CURVE => Ok(SuttonSignWriting::SignwritingHeadMovementDashWallplaneCurve),
-            SIGNWRITING_HEAD_MOVEMENT_DASH_FLOORPLANE_CURVE => Ok(SuttonSignWriting::SignwritingHeadMovementDashFloorplaneCurve),
-            SIGNWRITING_HEAD_MOVEMENT_CIRCLE => Ok(SuttonSignWriting::SignwritingHeadMovementCircle),
-            SIGNWRITING_FACE_DIRECTION_POSITION_NOSE_FORWARD_TILTING => Ok(SuttonSignWriting::SignwritingFaceDirectionPositionNoseForwardTilting),
-            SIGNWRITING_FACE_DIRECTION_POSITION_NOSE_UP_OR_DOWN => Ok(SuttonSignWriting::SignwritingFaceDirectionPositionNoseUpOrDown),
-            SIGNWRITING_FACE_DIRECTION_POSITION_NOSE_UP_OR_DOWN_TILTING => Ok(SuttonSignWriting::SignwritingFaceDirectionPositionNoseUpOrDownTilting),
-            SIGNWRITING_EYEBROWS_STRAIGHT_UP => Ok(SuttonSignWriting::SignwritingEyebrowsStraightUp),
-            SIGNWRITING_EYEBROWS_STRAIGHT_NEUTRAL => Ok(SuttonSignWriting::SignwritingEyebrowsStraightNeutral),
-            SIGNWRITING_EYEBROWS_STRAIGHT_DOWN => Ok(SuttonSignWriting::SignwritingEyebrowsStraightDown),
-            SIGNWRITING_DREAMY_EYEBROWS_NEUTRAL_DOWN => Ok(SuttonSignWriting::SignwritingDreamyEyebrowsNeutralDown),
-            SIGNWRITING_DREAMY_EYEBROWS_DOWN_NEUTRAL => Ok(SuttonSignWriting::SignwritingDreamyEyebrowsDownNeutral),
-            SIGNWRITING_DREAMY_EYEBROWS_UP_NEUTRAL => Ok(SuttonSignWriting::SignwritingDreamyEyebrowsUpNeutral),
-            SIGNWRITING_DREAMY_EYEBROWS_NEUTRAL_UP => Ok(SuttonSignWriting::SignwritingDreamyEyebrowsNeutralUp),
-            SIGNWRITING_FOREHEAD_NEUTRAL => Ok(SuttonSignWriting::SignwritingForeheadNeutral),
-            SIGNWRITING_FOREHEAD_CONTACT => Ok(SuttonSignWriting::SignwritingForeheadContact),
-            SIGNWRITING_FOREHEAD_WRINKLED => Ok(SuttonSignWriting::SignwritingForeheadWrinkled),
-            SIGNWRITING_EYES_OPEN => Ok(SuttonSignWriting::SignwritingEyesOpen),
-            SIGNWRITING_EYES_SQUEEZED => Ok(SuttonSignWriting::SignwritingEyesSqueezed),
-            SIGNWRITING_EYES_CLOSED => Ok(SuttonSignWriting::SignwritingEyesClosed),
-            SIGNWRITING_EYE_BLINK_SINGLE => Ok(SuttonSignWriting::SignwritingEyeBlinkSingle),
-            SIGNWRITING_EYE_BLINK_MULTIPLE => Ok(SuttonSignWriting::SignwritingEyeBlinkMultiple),
-            SIGNWRITING_EYES_HALF_OPEN => Ok(SuttonSignWriting::SignwritingEyesHalfOpen),
-            SIGNWRITING_EYES_WIDE_OPEN => Ok(SuttonSignWriting::SignwritingEyesWideOpen),
-            SIGNWRITING_EYES_HALF_CLOSED => Ok(SuttonSignWriting::SignwritingEyesHalfClosed),
-            SIGNWRITING_EYES_WIDENING_MOVEMENT => Ok(SuttonSignWriting::SignwritingEyesWideningMovement),
-            SIGNWRITING_EYE_WINK => Ok(SuttonSignWriting::SignwritingEyeWink),
-            SIGNWRITING_EYELASHES_UP => Ok(SuttonSignWriting::SignwritingEyelashesUp),
-            SIGNWRITING_EYELASHES_DOWN => Ok(SuttonSignWriting::SignwritingEyelashesDown),
-            SIGNWRITING_EYELASHES_FLUTTERING => Ok(SuttonSignWriting::SignwritingEyelashesFluttering),
-            SIGNWRITING_EYEGAZE_DASH_WALLPLANE_STRAIGHT => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneStraight),
-            SIGNWRITING_EYEGAZE_DASH_WALLPLANE_STRAIGHT_DOUBLE => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneStraightDouble),
-            SIGNWRITING_EYEGAZE_DASH_WALLPLANE_STRAIGHT_ALTERNATING => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneStraightAlternating),
-            SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_STRAIGHT => Ok(SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraight),
-            SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_STRAIGHT_DOUBLE => Ok(SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraightDouble),
-            SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_STRAIGHT_ALTERNATING => Ok(SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraightAlternating),
-            SIGNWRITING_EYEGAZE_DASH_WALLPLANE_CURVED => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneCurved),
-            SIGNWRITING_EYEGAZE_DASH_FLOORPLANE_CURVED => Ok(SuttonSignWriting::SignwritingEyegazeDashFloorplaneCurved),
-            SIGNWRITING_EYEGAZE_DASH_WALLPLANE_CIRCLING => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneCircling),
-            SIGNWRITING_CHEEKS_PUFFED => Ok(SuttonSignWriting::SignwritingCheeksPuffed),
-            SIGNWRITING_CHEEKS_NEUTRAL => Ok(SuttonSignWriting::SignwritingCheeksNeutral),
-            SIGNWRITING_CHEEKS_SUCKED => Ok(SuttonSignWriting::SignwritingCheeksSucked),
-            SIGNWRITING_TENSE_CHEEKS_HIGH => Ok(SuttonSignWriting::SignwritingTenseCheeksHigh),
-            SIGNWRITING_TENSE_CHEEKS_MIDDLE => Ok(SuttonSignWriting::SignwritingTenseCheeksMiddle),
-            SIGNWRITING_TENSE_CHEEKS_LOW => Ok(SuttonSignWriting::SignwritingTenseCheeksLow),
-            SIGNWRITING_EARS => Ok(SuttonSignWriting::SignwritingEars),
-            SIGNWRITING_NOSE_NEUTRAL => Ok(SuttonSignWriting::SignwritingNoseNeutral),
-            SIGNWRITING_NOSE_CONTACT => Ok(SuttonSignWriting::SignwritingNoseContact),
-            SIGNWRITING_NOSE_WRINKLES => Ok(SuttonSignWriting::SignwritingNoseWrinkles),
-            SIGNWRITING_NOSE_WIGGLES => Ok(SuttonSignWriting::SignwritingNoseWiggles),
-            SIGNWRITING_AIR_BLOWING_OUT => Ok(SuttonSignWriting::SignwritingAirBlowingOut),
-            SIGNWRITING_AIR_SUCKING_IN => Ok(SuttonSignWriting::SignwritingAirSuckingIn),
-            SIGNWRITING_AIR_BLOW_SMALL_ROTATIONS => Ok(SuttonSignWriting::SignwritingAirBlowSmallRotations),
-            SIGNWRITING_AIR_SUCK_SMALL_ROTATIONS => Ok(SuttonSignWriting::SignwritingAirSuckSmallRotations),
-            SIGNWRITING_BREATH_INHALE => Ok(SuttonSignWriting::SignwritingBreathInhale),
-            SIGNWRITING_BREATH_EXHALE => Ok(SuttonSignWriting::SignwritingBreathExhale),
-            SIGNWRITING_MOUTH_CLOSED_NEUTRAL => Ok(SuttonSignWriting::SignwritingMouthClosedNeutral),
-            SIGNWRITING_MOUTH_CLOSED_FORWARD => Ok(SuttonSignWriting::SignwritingMouthClosedForward),
-            SIGNWRITING_MOUTH_CLOSED_CONTACT => Ok(SuttonSignWriting::SignwritingMouthClosedContact),
-            SIGNWRITING_MOUTH_SMILE => Ok(SuttonSignWriting::SignwritingMouthSmile),
-            SIGNWRITING_MOUTH_SMILE_WRINKLED => Ok(SuttonSignWriting::SignwritingMouthSmileWrinkled),
-            SIGNWRITING_MOUTH_SMILE_OPEN => Ok(SuttonSignWriting::SignwritingMouthSmileOpen),
-            SIGNWRITING_MOUTH_FROWN => Ok(SuttonSignWriting::SignwritingMouthFrown),
-            SIGNWRITING_MOUTH_FROWN_WRINKLED => Ok(SuttonSignWriting::SignwritingMouthFrownWrinkled),
-            SIGNWRITING_MOUTH_FROWN_OPEN => Ok(SuttonSignWriting::SignwritingMouthFrownOpen),
-            SIGNWRITING_MOUTH_OPEN_CIRCLE => Ok(SuttonSignWriting::SignwritingMouthOpenCircle),
-            SIGNWRITING_MOUTH_OPEN_FORWARD => Ok(SuttonSignWriting::SignwritingMouthOpenForward),
-            SIGNWRITING_MOUTH_OPEN_WRINKLED => Ok(SuttonSignWriting::SignwritingMouthOpenWrinkled),
-            SIGNWRITING_MOUTH_OPEN_OVAL => Ok(SuttonSignWriting::SignwritingMouthOpenOval),
-            SIGNWRITING_MOUTH_OPEN_OVAL_WRINKLED => Ok(SuttonSignWriting::SignwritingMouthOpenOvalWrinkled),
-            SIGNWRITING_MOUTH_OPEN_OVAL_YAWN => Ok(SuttonSignWriting::SignwritingMouthOpenOvalYawn),
-            SIGNWRITING_MOUTH_OPEN_RECTANGLE => Ok(SuttonSignWriting::SignwritingMouthOpenRectangle),
-            SIGNWRITING_MOUTH_OPEN_RECTANGLE_WRINKLED => Ok(SuttonSignWriting::SignwritingMouthOpenRectangleWrinkled),
-            SIGNWRITING_MOUTH_OPEN_RECTANGLE_YAWN => Ok(SuttonSignWriting::SignwritingMouthOpenRectangleYawn),
-            SIGNWRITING_MOUTH_KISS => Ok(SuttonSignWriting::SignwritingMouthKiss),
-            SIGNWRITING_MOUTH_KISS_FORWARD => Ok(SuttonSignWriting::SignwritingMouthKissForward),
-            SIGNWRITING_MOUTH_KISS_WRINKLED => Ok(SuttonSignWriting::SignwritingMouthKissWrinkled),
-            SIGNWRITING_MOUTH_TENSE => Ok(SuttonSignWriting::SignwritingMouthTense),
-            SIGNWRITING_MOUTH_TENSE_FORWARD => Ok(SuttonSignWriting::SignwritingMouthTenseForward),
-            SIGNWRITING_MOUTH_TENSE_SUCKED => Ok(SuttonSignWriting::SignwritingMouthTenseSucked),
-            SIGNWRITING_LIPS_PRESSED_TOGETHER => Ok(SuttonSignWriting::SignwritingLipsPressedTogether),
-            SIGNWRITING_LIP_LOWER_OVER_UPPER => Ok(SuttonSignWriting::SignwritingLipLowerOverUpper),
-            SIGNWRITING_LIP_UPPER_OVER_LOWER => Ok(SuttonSignWriting::SignwritingLipUpperOverLower),
-            SIGNWRITING_MOUTH_CORNERS => Ok(SuttonSignWriting::SignwritingMouthCorners),
-            SIGNWRITING_MOUTH_WRINKLES_SINGLE => Ok(SuttonSignWriting::SignwritingMouthWrinklesSingle),
-            SIGNWRITING_MOUTH_WRINKLES_DOUBLE => Ok(SuttonSignWriting::SignwritingMouthWrinklesDouble),
-            SIGNWRITING_TONGUE_STICKING_OUT_FAR => Ok(SuttonSignWriting::SignwritingTongueStickingOutFar),
-            SIGNWRITING_TONGUE_LICKING_LIPS => Ok(SuttonSignWriting::SignwritingTongueLickingLips),
-            SIGNWRITING_TONGUE_TIP_BETWEEN_LIPS => Ok(SuttonSignWriting::SignwritingTongueTipBetweenLips),
-            SIGNWRITING_TONGUE_TIP_TOUCHING_INSIDE_MOUTH => Ok(SuttonSignWriting::SignwritingTongueTipTouchingInsideMouth),
-            SIGNWRITING_TONGUE_INSIDE_MOUTH_RELAXED => Ok(SuttonSignWriting::SignwritingTongueInsideMouthRelaxed),
-            SIGNWRITING_TONGUE_MOVES_AGAINST_CHEEK => Ok(SuttonSignWriting::SignwritingTongueMovesAgainstCheek),
-            SIGNWRITING_TONGUE_CENTRE_STICKING_OUT => Ok(SuttonSignWriting::SignwritingTongueCentreStickingOut),
-            SIGNWRITING_TONGUE_CENTRE_INSIDE_MOUTH => Ok(SuttonSignWriting::SignwritingTongueCentreInsideMouth),
-            SIGNWRITING_TEETH => Ok(SuttonSignWriting::SignwritingTeeth),
-            SIGNWRITING_TEETH_MOVEMENT => Ok(SuttonSignWriting::SignwritingTeethMovement),
-            SIGNWRITING_TEETH_ON_TONGUE => Ok(SuttonSignWriting::SignwritingTeethOnTongue),
-            SIGNWRITING_TEETH_ON_TONGUE_MOVEMENT => Ok(SuttonSignWriting::SignwritingTeethOnTongueMovement),
-            SIGNWRITING_TEETH_ON_LIPS => Ok(SuttonSignWriting::SignwritingTeethOnLips),
-            SIGNWRITING_TEETH_ON_LIPS_MOVEMENT => Ok(SuttonSignWriting::SignwritingTeethOnLipsMovement),
-            SIGNWRITING_TEETH_BITE_LIPS => Ok(SuttonSignWriting::SignwritingTeethBiteLips),
-            SIGNWRITING_MOVEMENT_DASH_WALLPLANE_JAW => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneJaw),
-            SIGNWRITING_MOVEMENT_DASH_FLOORPLANE_JAW => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneJaw),
-            SIGNWRITING_NECK => Ok(SuttonSignWriting::SignwritingNeck),
-            SIGNWRITING_HAIR => Ok(SuttonSignWriting::SignwritingHair),
-            SIGNWRITING_EXCITEMENT => Ok(SuttonSignWriting::SignwritingExcitement),
-            SIGNWRITING_SHOULDER_HIP_SPINE => Ok(SuttonSignWriting::SignwritingShoulderHipSpine),
-            SIGNWRITING_SHOULDER_HIP_POSITIONS => Ok(SuttonSignWriting::SignwritingShoulderHipPositions),
-            SIGNWRITING_WALLPLANE_SHOULDER_HIP_MOVE => Ok(SuttonSignWriting::SignwritingWallplaneShoulderHipMove),
-            SIGNWRITING_FLOORPLANE_SHOULDER_HIP_MOVE => Ok(SuttonSignWriting::SignwritingFloorplaneShoulderHipMove),
-            SIGNWRITING_SHOULDER_TILTING_FROM_WAIST => Ok(SuttonSignWriting::SignwritingShoulderTiltingFromWaist),
-            SIGNWRITING_TORSO_DASH_WALLPLANE_STRAIGHT_STRETCH => Ok(SuttonSignWriting::SignwritingTorsoDashWallplaneStraightStretch),
-            SIGNWRITING_TORSO_DASH_WALLPLANE_CURVED_BEND => Ok(SuttonSignWriting::SignwritingTorsoDashWallplaneCurvedBend),
-            SIGNWRITING_TORSO_DASH_FLOORPLANE_TWISTING => Ok(SuttonSignWriting::SignwritingTorsoDashFloorplaneTwisting),
-            SIGNWRITING_UPPER_BODY_TILTING_FROM_HIP_JOINTS => Ok(SuttonSignWriting::SignwritingUpperBodyTiltingFromHipJoints),
-            SIGNWRITING_LIMB_COMBINATION => Ok(SuttonSignWriting::SignwritingLimbCombination),
-            SIGNWRITING_LIMB_LENGTH_DASH_1 => Ok(SuttonSignWriting::SignwritingLimbLengthDash1),
-            SIGNWRITING_LIMB_LENGTH_DASH_2 => Ok(SuttonSignWriting::SignwritingLimbLengthDash2),
-            SIGNWRITING_LIMB_LENGTH_DASH_3 => Ok(SuttonSignWriting::SignwritingLimbLengthDash3),
-            SIGNWRITING_LIMB_LENGTH_DASH_4 => Ok(SuttonSignWriting::SignwritingLimbLengthDash4),
-            SIGNWRITING_LIMB_LENGTH_DASH_5 => Ok(SuttonSignWriting::SignwritingLimbLengthDash5),
-            SIGNWRITING_LIMB_LENGTH_DASH_6 => Ok(SuttonSignWriting::SignwritingLimbLengthDash6),
-            SIGNWRITING_LIMB_LENGTH_DASH_7 => Ok(SuttonSignWriting::SignwritingLimbLengthDash7),
-            SIGNWRITING_FINGER => Ok(SuttonSignWriting::SignwritingFinger),
-            SIGNWRITING_LOCATION_DASH_WALLPLANE_SPACE => Ok(SuttonSignWriting::SignwritingLocationDashWallplaneSpace),
-            SIGNWRITING_LOCATION_DASH_FLOORPLANE_SPACE => Ok(SuttonSignWriting::SignwritingLocationDashFloorplaneSpace),
-            SIGNWRITING_LOCATION_HEIGHT => Ok(SuttonSignWriting::SignwritingLocationHeight),
-            SIGNWRITING_LOCATION_WIDTH => Ok(SuttonSignWriting::SignwritingLocationWidth),
-            SIGNWRITING_LOCATION_DEPTH => Ok(SuttonSignWriting::SignwritingLocationDepth),
-            SIGNWRITING_LOCATION_HEAD_NECK => Ok(SuttonSignWriting::SignwritingLocationHeadNeck),
-            SIGNWRITING_LOCATION_TORSO => Ok(SuttonSignWriting::SignwritingLocationTorso),
-            SIGNWRITING_LOCATION_LIMBS_DIGITS => Ok(SuttonSignWriting::SignwritingLocationLimbsDigits),
-            SIGNWRITING_COMMA => Ok(SuttonSignWriting::SignwritingComma),
-            SIGNWRITING_FULL_STOP => Ok(SuttonSignWriting::SignwritingFullStop),
-            SIGNWRITING_SEMICOLON => Ok(SuttonSignWriting::SignwritingSemicolon),
-            SIGNWRITING_COLON => Ok(SuttonSignWriting::SignwritingColon),
-            SIGNWRITING_PARENTHESIS => Ok(SuttonSignWriting::SignwritingParenthesis),
-            SIGNWRITING_FILL_MODIFIER_DASH_2 => Ok(SuttonSignWriting::SignwritingFillModifierDash2),
-            SIGNWRITING_FILL_MODIFIER_DASH_3 => Ok(SuttonSignWriting::SignwritingFillModifierDash3),
-            SIGNWRITING_FILL_MODIFIER_DASH_4 => Ok(SuttonSignWriting::SignwritingFillModifierDash4),
-            SIGNWRITING_FILL_MODIFIER_DASH_5 => Ok(SuttonSignWriting::SignwritingFillModifierDash5),
-            SIGNWRITING_FILL_MODIFIER_DASH_6 => Ok(SuttonSignWriting::SignwritingFillModifierDash6),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_2 => Ok(SuttonSignWriting::SignwritingRotationModifierDash2),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_3 => Ok(SuttonSignWriting::SignwritingRotationModifierDash3),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_4 => Ok(SuttonSignWriting::SignwritingRotationModifierDash4),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_5 => Ok(SuttonSignWriting::SignwritingRotationModifierDash5),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_6 => Ok(SuttonSignWriting::SignwritingRotationModifierDash6),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_7 => Ok(SuttonSignWriting::SignwritingRotationModifierDash7),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_8 => Ok(SuttonSignWriting::SignwritingRotationModifierDash8),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_9 => Ok(SuttonSignWriting::SignwritingRotationModifierDash9),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_10 => Ok(SuttonSignWriting::SignwritingRotationModifierDash10),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_11 => Ok(SuttonSignWriting::SignwritingRotationModifierDash11),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_12 => Ok(SuttonSignWriting::SignwritingRotationModifierDash12),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_13 => Ok(SuttonSignWriting::SignwritingRotationModifierDash13),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_14 => Ok(SuttonSignWriting::SignwritingRotationModifierDash14),
-            SIGNWRITING_ROTATION_MODIFIER_DASH_15 => Ok(SuttonSignWriting::SignwritingRotationModifierDash15),
+            '𝠀' => Ok(SuttonSignWriting::SignwritingHandDashFistIndex),
+            '𝠁' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndex),
+            '𝠂' => Ok(SuttonSignWriting::SignwritingHandDashCupIndex),
+            '𝠃' => Ok(SuttonSignWriting::SignwritingHandDashOvalIndex),
+            '𝠄' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndex),
+            '𝠅' => Ok(SuttonSignWriting::SignwritingHandDashAngleIndex),
+            '𝠆' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexBent),
+            '𝠇' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexBent),
+            '𝠈' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderIndexBent),
+            '𝠉' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexRaisedKnuckle),
+            '𝠊' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexCupped),
+            '𝠋' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexHinged),
+            '𝠌' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexHingedLow),
+            '𝠍' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexHinge),
+            '𝠎' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddle),
+            '𝠏' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddle),
+            '𝠐' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleBent),
+            '𝠑' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleRaisedKnuckles),
+            '𝠒' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleHinged),
+            '𝠓' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHinged),
+            '𝠔' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexHingedMiddleUp),
+            '𝠕' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoined),
+            '𝠖' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedIndexBent),
+            '𝠗' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedMiddleBent),
+            '𝠘' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedCupped),
+            '𝠙' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedHinged),
+            '𝠚' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossed),
+            '𝠛' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleCrossed),
+            '𝠜' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleBentOverIndex),
+            '𝠝' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexBentOverMiddle),
+            '𝠞' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumb),
+            '𝠟' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleThumb),
+            '𝠠' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleStraightThumbBent),
+            '𝠡' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleBentThumbStraight),
+            '𝠢' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbBent),
+            '𝠣' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleHingedSpreadThumbSide),
+            '𝠤' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHingedThumbSide),
+            '𝠥' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexUpMiddleHingedThumbConjoined),
+            '𝠦' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexHingedMiddleUpThumbSide),
+            '𝠧' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleUpSpreadThumbForward),
+            '𝠨' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbCupped),
+            '𝠩' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbCircled),
+            '𝠪' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbHooked),
+            '𝠫' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbHinged),
+            '𝠬' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbBetweenIndexMiddleStraight),
+            '𝠭' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSide),
+            '𝠮' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSideConjoined),
+            '𝠯' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbSideBent),
+            '𝠰' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbHookedIndexUp),
+            '𝠱' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbHookedMiddleUp),
+            '𝠲' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedHingedThumbSide),
+            '𝠳' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossedThumbSide),
+            '𝠴' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedThumbForward),
+            '𝠵' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleConjoinedCuppedThumbForward),
+            '𝠶' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbCuppedIndexUp),
+            '𝠷' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCuppedMiddleUp),
+            '𝠸' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbCircledIndexUp),
+            '𝠹' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbCircledIndexHinged),
+            '𝠺' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbAngledOutMiddleUp),
+            '𝠻' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbAngledInMiddleUp),
+            '𝠼' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCircledMiddleUp),
+            '𝠽' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbConjoinedHinged),
+            '𝠾' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbAngledOut),
+            '𝠿' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleThumbAngled),
+            '𝡀' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledOutIndexUp),
+            '𝡁' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledOutIndexCrossed),
+            '𝡂' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbAngledIndexUp),
+            '𝡃' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbHookedMiddleHinged),
+            '𝡄' => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingers),
+            '𝡅' => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingersBent),
+            '𝡆' => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingersHinged),
+            '𝡇' => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingersConjoined),
+            '𝡈' => Ok(SuttonSignWriting::SignwritingHandDashFlatFourFingersConjoinedSplit),
+            '𝡉' => Ok(SuttonSignWriting::SignwritingHandDashClawFourFingersConjoined),
+            '𝡊' => Ok(SuttonSignWriting::SignwritingHandDashFistFourFingersConjoinedBent),
+            '𝡋' => Ok(SuttonSignWriting::SignwritingHandDashHingeFourFingersConjoined),
+            '𝡌' => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpread),
+            '𝡍' => Ok(SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpread),
+            '𝡎' => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadFourBent),
+            '𝡏' => Ok(SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpreadFourBent),
+            '𝡐' => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadBent),
+            '𝡑' => Ok(SuttonSignWriting::SignwritingHandDashFlatHeelFiveFingersSpreadBent),
+            '𝡒' => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadThumbForward),
+            '𝡓' => Ok(SuttonSignWriting::SignwritingHandDashCupFiveFingersSpread),
+            '𝡔' => Ok(SuttonSignWriting::SignwritingHandDashCupFiveFingersSpreadOpen),
+            '𝡕' => Ok(SuttonSignWriting::SignwritingHandDashHingeFiveFingersSpreadOpen),
+            '𝡖' => Ok(SuttonSignWriting::SignwritingHandDashOvalFiveFingersSpread),
+            '𝡗' => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHinged),
+            '𝡘' => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHingedThumbSide),
+            '𝡙' => Ok(SuttonSignWriting::SignwritingHandDashFlatFiveFingersSpreadHingedNoThumb),
+            '𝡚' => Ok(SuttonSignWriting::SignwritingHandDashFlat),
+            '𝡛' => Ok(SuttonSignWriting::SignwritingHandDashFlatBetweenPalmFacings),
+            '𝡜' => Ok(SuttonSignWriting::SignwritingHandDashFlatHeel),
+            '𝡝' => Ok(SuttonSignWriting::SignwritingHandDashFlatThumbSide),
+            '𝡞' => Ok(SuttonSignWriting::SignwritingHandDashFlatHeelThumbSide),
+            '𝡟' => Ok(SuttonSignWriting::SignwritingHandDashFlatThumbBent),
+            '𝡠' => Ok(SuttonSignWriting::SignwritingHandDashFlatThumbForward),
+            '𝡡' => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitIndexThumbSide),
+            '𝡢' => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitCentre),
+            '𝡣' => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitCentreThumbSide),
+            '𝡤' => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitCentreThumbSideBent),
+            '𝡥' => Ok(SuttonSignWriting::SignwritingHandDashFlatSplitLittle),
+            '𝡦' => Ok(SuttonSignWriting::SignwritingHandDashClaw),
+            '𝡧' => Ok(SuttonSignWriting::SignwritingHandDashClawThumbSide),
+            '𝡨' => Ok(SuttonSignWriting::SignwritingHandDashClawNoThumb),
+            '𝡩' => Ok(SuttonSignWriting::SignwritingHandDashClawThumbForward),
+            '𝡪' => Ok(SuttonSignWriting::SignwritingHandDashHookCurlicue),
+            '𝡫' => Ok(SuttonSignWriting::SignwritingHandDashHook),
+            '𝡬' => Ok(SuttonSignWriting::SignwritingHandDashCupOpen),
+            '𝡭' => Ok(SuttonSignWriting::SignwritingHandDashCup),
+            '𝡮' => Ok(SuttonSignWriting::SignwritingHandDashCupOpenThumbSide),
+            '𝡯' => Ok(SuttonSignWriting::SignwritingHandDashCupThumbSide),
+            '𝡰' => Ok(SuttonSignWriting::SignwritingHandDashCupOpenNoThumb),
+            '𝡱' => Ok(SuttonSignWriting::SignwritingHandDashCupNoThumb),
+            '𝡲' => Ok(SuttonSignWriting::SignwritingHandDashCupOpenThumbForward),
+            '𝡳' => Ok(SuttonSignWriting::SignwritingHandDashCupThumbForward),
+            '𝡴' => Ok(SuttonSignWriting::SignwritingHandDashCurlicueOpen),
+            '𝡵' => Ok(SuttonSignWriting::SignwritingHandDashCurlicue),
+            '𝡶' => Ok(SuttonSignWriting::SignwritingHandDashCircle),
+            '𝡷' => Ok(SuttonSignWriting::SignwritingHandDashOval),
+            '𝡸' => Ok(SuttonSignWriting::SignwritingHandDashOvalThumbSide),
+            '𝡹' => Ok(SuttonSignWriting::SignwritingHandDashOvalNoThumb),
+            '𝡺' => Ok(SuttonSignWriting::SignwritingHandDashOvalThumbForward),
+            '𝡻' => Ok(SuttonSignWriting::SignwritingHandDashHingeOpen),
+            '𝡼' => Ok(SuttonSignWriting::SignwritingHandDashHingeOpenThumbForward),
+            '𝡽' => Ok(SuttonSignWriting::SignwritingHandDashHinge),
+            '𝡾' => Ok(SuttonSignWriting::SignwritingHandDashHingeSmall),
+            '𝡿' => Ok(SuttonSignWriting::SignwritingHandDashHingeOpenThumbSide),
+            '𝢀' => Ok(SuttonSignWriting::SignwritingHandDashHingeThumbSide),
+            '𝢁' => Ok(SuttonSignWriting::SignwritingHandDashHingeOpenNoThumb),
+            '𝢂' => Ok(SuttonSignWriting::SignwritingHandDashHingeNoThumb),
+            '𝢃' => Ok(SuttonSignWriting::SignwritingHandDashHingeThumbSideTouchingIndex),
+            '𝢄' => Ok(SuttonSignWriting::SignwritingHandDashHingeThumbBetweenMiddleRing),
+            '𝢅' => Ok(SuttonSignWriting::SignwritingHandDashAngle),
+            '𝢆' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleRing),
+            '𝢇' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleRing),
+            '𝢈' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexMiddleRing),
+            '𝢉' => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexMiddleRing),
+            '𝢊' => Ok(SuttonSignWriting::SignwritingHandDashHingeLittle),
+            '𝢋' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleRingBent),
+            '𝢌' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleRingConjoined),
+            '𝢍' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexMiddleRingConjoined),
+            '𝢎' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleDown),
+            '𝢏' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleDownRippleStraight),
+            '𝢐' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleDownRippleCurved),
+            '𝢑' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleDownOthersCircled),
+            '𝢒' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleUp),
+            '𝢓' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderLittleUp),
+            '𝢔' => Ok(SuttonSignWriting::SignwritingHandDashCircleLittleUp),
+            '𝢕' => Ok(SuttonSignWriting::SignwritingHandDashOvalLittleUp),
+            '𝢖' => Ok(SuttonSignWriting::SignwritingHandDashAngleLittleUp),
+            '𝢗' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleRaisedKnuckle),
+            '𝢘' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleBent),
+            '𝢙' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleTouchesThumb),
+            '𝢚' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleThumb),
+            '𝢛' => Ok(SuttonSignWriting::SignwritingHandDashHingeLittleThumb),
+            '𝢜' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleIndexThumb),
+            '𝢝' => Ok(SuttonSignWriting::SignwritingHandDashHingeLittleIndexThumb),
+            '𝢞' => Ok(SuttonSignWriting::SignwritingHandDashAngleLittleIndexThumbIndexThumbOut),
+            '𝢟' => Ok(SuttonSignWriting::SignwritingHandDashAngleLittleIndexThumbIndexThumb),
+            '𝢠' => Ok(SuttonSignWriting::SignwritingHandDashFistLittleIndex),
+            '𝢡' => Ok(SuttonSignWriting::SignwritingHandDashCircleLittleIndex),
+            '𝢢' => Ok(SuttonSignWriting::SignwritingHandDashHingeLittleIndex),
+            '𝢣' => Ok(SuttonSignWriting::SignwritingHandDashAngleLittleIndex),
+            '𝢤' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleLittle),
+            '𝢥' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleLittle),
+            '𝢦' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexMiddleLittle),
+            '𝢧' => Ok(SuttonSignWriting::SignwritingHandDashHingeRing),
+            '𝢨' => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexMiddleLittle),
+            '𝢩' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexMiddleCrossLittle),
+            '𝢪' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexMiddleCrossLittle),
+            '𝢫' => Ok(SuttonSignWriting::SignwritingHandDashFistRingDown),
+            '𝢬' => Ok(SuttonSignWriting::SignwritingHandDashHingeRingDownIndexThumbHookMiddle),
+            '𝢭' => Ok(SuttonSignWriting::SignwritingHandDashAngleRingDownMiddleThumbIndexCross),
+            '𝢮' => Ok(SuttonSignWriting::SignwritingHandDashFistRingUp),
+            '𝢯' => Ok(SuttonSignWriting::SignwritingHandDashFistRingRaisedKnuckle),
+            '𝢰' => Ok(SuttonSignWriting::SignwritingHandDashFistRingLittle),
+            '𝢱' => Ok(SuttonSignWriting::SignwritingHandDashCircleRingLittle),
+            '𝢲' => Ok(SuttonSignWriting::SignwritingHandDashOvalRingLittle),
+            '𝢳' => Ok(SuttonSignWriting::SignwritingHandDashAngleRingLittle),
+            '𝢴' => Ok(SuttonSignWriting::SignwritingHandDashFistRingMiddle),
+            '𝢵' => Ok(SuttonSignWriting::SignwritingHandDashFistRingMiddleConjoined),
+            '𝢶' => Ok(SuttonSignWriting::SignwritingHandDashFistRingMiddleRaisedKnuckles),
+            '𝢷' => Ok(SuttonSignWriting::SignwritingHandDashFistRingIndex),
+            '𝢸' => Ok(SuttonSignWriting::SignwritingHandDashFistRingThumb),
+            '𝢹' => Ok(SuttonSignWriting::SignwritingHandDashHookRingThumb),
+            '𝢺' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexRingLittle),
+            '𝢻' => Ok(SuttonSignWriting::SignwritingHandDashCircleIndexRingLittle),
+            '𝢼' => Ok(SuttonSignWriting::SignwritingHandDashCurlicueIndexRingLittleOn),
+            '𝢽' => Ok(SuttonSignWriting::SignwritingHandDashHookIndexRingLittleOut),
+            '𝢾' => Ok(SuttonSignWriting::SignwritingHandDashHookIndexRingLittleIn),
+            '𝢿' => Ok(SuttonSignWriting::SignwritingHandDashHookIndexRingLittleUnder),
+            '𝣀' => Ok(SuttonSignWriting::SignwritingHandDashCupIndexRingLittle),
+            '𝣁' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexRingLittle),
+            '𝣂' => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexRingLittleOut),
+            '𝣃' => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexRingLittle),
+            '𝣄' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleDown),
+            '𝣅' => Ok(SuttonSignWriting::SignwritingHandDashHingeMiddle),
+            '𝣆' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleUp),
+            '𝣇' => Ok(SuttonSignWriting::SignwritingHandDashCircleMiddleUp),
+            '𝣈' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleRaisedKnuckle),
+            '𝣉' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleUpThumbSide),
+            '𝣊' => Ok(SuttonSignWriting::SignwritingHandDashHookMiddleThumb),
+            '𝣋' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleThumbLittle),
+            '𝣌' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleLittle),
+            '𝣍' => Ok(SuttonSignWriting::SignwritingHandDashFistMiddleRingLittle),
+            '𝣎' => Ok(SuttonSignWriting::SignwritingHandDashCircleMiddleRingLittle),
+            '𝣏' => Ok(SuttonSignWriting::SignwritingHandDashCurlicueMiddleRingLittleOn),
+            '𝣐' => Ok(SuttonSignWriting::SignwritingHandDashCupMiddleRingLittle),
+            '𝣑' => Ok(SuttonSignWriting::SignwritingHandDashHingeMiddleRingLittle),
+            '𝣒' => Ok(SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittleOut),
+            '𝣓' => Ok(SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittleIn),
+            '𝣔' => Ok(SuttonSignWriting::SignwritingHandDashAngleMiddleRingLittle),
+            '𝣕' => Ok(SuttonSignWriting::SignwritingHandDashCircleMiddleRingLittleBent),
+            '𝣖' => Ok(SuttonSignWriting::SignwritingHandDashClawMiddleRingLittleConjoined),
+            '𝣗' => Ok(SuttonSignWriting::SignwritingHandDashClawMiddleRingLittleConjoinedSide),
+            '𝣘' => Ok(SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoinedOut),
+            '𝣙' => Ok(SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoinedIn),
+            '𝣚' => Ok(SuttonSignWriting::SignwritingHandDashHookMiddleRingLittleConjoined),
+            '𝣛' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexHinged),
+            '𝣜' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSide),
+            '𝣝' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumbSide),
+            '𝣞' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbDiagonal),
+            '𝣟' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbConjoined),
+            '𝣠' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideThumbBent),
+            '𝣡' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideIndexBent),
+            '𝣢' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideBothBent),
+            '𝣣' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbSideIndexHinge),
+            '𝣤' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbForwardIndexStraight),
+            '𝣥' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbForwardIndexBent),
+            '𝣦' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbHook),
+            '𝣧' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCurlicue),
+            '𝣨' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCurveThumbInside),
+            '𝣩' => Ok(SuttonSignWriting::SignwritingHandDashClawIndexThumbCurveThumbInside),
+            '𝣪' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCurveThumbUnder),
+            '𝣫' => Ok(SuttonSignWriting::SignwritingHandDashFistIndexThumbCircle),
+            '𝣬' => Ok(SuttonSignWriting::SignwritingHandDashCupIndexThumb),
+            '𝣭' => Ok(SuttonSignWriting::SignwritingHandDashCupIndexThumbOpen),
+            '𝣮' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumbOpen),
+            '𝣯' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumbLarge),
+            '𝣰' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumb),
+            '𝣱' => Ok(SuttonSignWriting::SignwritingHandDashHingeIndexThumbSmall),
+            '𝣲' => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexThumbOut),
+            '𝣳' => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexThumbIn),
+            '𝣴' => Ok(SuttonSignWriting::SignwritingHandDashAngleIndexThumb),
+            '𝣵' => Ok(SuttonSignWriting::SignwritingHandDashFistThumb),
+            '𝣶' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbHeel),
+            '𝣷' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbSideDiagonal),
+            '𝣸' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbSideConjoined),
+            '𝣹' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbSideBent),
+            '𝣺' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbForward),
+            '𝣻' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbBetweenIndexMiddle),
+            '𝣼' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbBetweenMiddleRing),
+            '𝣽' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbBetweenRingLittle),
+            '𝣾' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderTwoFingers),
+            '𝣿' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbOverTwoFingers),
+            '𝤀' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderThreeFingers),
+            '𝤁' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbUnderFourFingers),
+            '𝤂' => Ok(SuttonSignWriting::SignwritingHandDashFistThumbOverFourRaisedKnuckles),
+            '𝤃' => Ok(SuttonSignWriting::SignwritingHandDashFist),
+            '𝤄' => Ok(SuttonSignWriting::SignwritingHandDashFistHeel),
+            '𝤅' => Ok(SuttonSignWriting::SignwritingTouchSingle),
+            '𝤆' => Ok(SuttonSignWriting::SignwritingTouchMultiple),
+            '𝤇' => Ok(SuttonSignWriting::SignwritingTouchBetween),
+            '𝤈' => Ok(SuttonSignWriting::SignwritingGraspSingle),
+            '𝤉' => Ok(SuttonSignWriting::SignwritingGraspMultiple),
+            '𝤊' => Ok(SuttonSignWriting::SignwritingGraspBetween),
+            '𝤋' => Ok(SuttonSignWriting::SignwritingStrikeSingle),
+            '𝤌' => Ok(SuttonSignWriting::SignwritingStrikeMultiple),
+            '𝤍' => Ok(SuttonSignWriting::SignwritingStrikeBetween),
+            '𝤎' => Ok(SuttonSignWriting::SignwritingBrushSingle),
+            '𝤏' => Ok(SuttonSignWriting::SignwritingBrushMultiple),
+            '𝤐' => Ok(SuttonSignWriting::SignwritingBrushBetween),
+            '𝤑' => Ok(SuttonSignWriting::SignwritingRubSingle),
+            '𝤒' => Ok(SuttonSignWriting::SignwritingRubMultiple),
+            '𝤓' => Ok(SuttonSignWriting::SignwritingRubBetween),
+            '𝤔' => Ok(SuttonSignWriting::SignwritingSurfaceSymbols),
+            '𝤕' => Ok(SuttonSignWriting::SignwritingSurfaceBetween),
+            '𝤖' => Ok(SuttonSignWriting::SignwritingSqueezeLargeSingle),
+            '𝤗' => Ok(SuttonSignWriting::SignwritingSqueezeSmallSingle),
+            '𝤘' => Ok(SuttonSignWriting::SignwritingSqueezeLargeMultiple),
+            '𝤙' => Ok(SuttonSignWriting::SignwritingSqueezeSmallMultiple),
+            '𝤚' => Ok(SuttonSignWriting::SignwritingSqueezeSequential),
+            '𝤛' => Ok(SuttonSignWriting::SignwritingFlickLargeSingle),
+            '𝤜' => Ok(SuttonSignWriting::SignwritingFlickSmallSingle),
+            '𝤝' => Ok(SuttonSignWriting::SignwritingFlickLargeMultiple),
+            '𝤞' => Ok(SuttonSignWriting::SignwritingFlickSmallMultiple),
+            '𝤟' => Ok(SuttonSignWriting::SignwritingFlickSequential),
+            '𝤠' => Ok(SuttonSignWriting::SignwritingSqueezeFlickAlternating),
+            '𝤡' => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpDownLarge),
+            '𝤢' => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpDownSmall),
+            '𝤣' => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpSequential),
+            '𝤤' => Ok(SuttonSignWriting::SignwritingMovementDashHingeDownSequential),
+            '𝤥' => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpDownAlternatingLarge),
+            '𝤦' => Ok(SuttonSignWriting::SignwritingMovementDashHingeUpDownAlternatingSmall),
+            '𝤧' => Ok(SuttonSignWriting::SignwritingMovementDashHingeSideToSideScissors),
+            '𝤨' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneFingerContact),
+            '𝤩' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneFingerContact),
+            '𝤪' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightSmall),
+            '𝤫' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightMedium),
+            '𝤬' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightLarge),
+            '𝤭' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleStraightLargest),
+            '𝤮' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneSingleWristFlex),
+            '𝤯' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneDoubleStraight),
+            '𝤰' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneDoubleWristFlex),
+            '𝤱' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneDoubleAlternating),
+            '𝤲' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneDoubleAlternatingWristFlex),
+            '𝤳' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCross),
+            '𝤴' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneTripleStraightMovement),
+            '𝤵' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneTripleWristFlex),
+            '𝤶' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneTripleAlternating),
+            '𝤷' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneTripleAlternatingWristFlex),
+            '𝤸' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBendSmall),
+            '𝤹' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBendMedium),
+            '𝤺' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBendLarge),
+            '𝤻' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCornerSmall),
+            '𝤼' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCornerMedium),
+            '𝤽' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCornerLarge),
+            '𝤾' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCornerRotation),
+            '𝤿' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCheckSmall),
+            '𝥀' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCheckMedium),
+            '𝥁' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCheckLarge),
+            '𝥂' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBoxSmall),
+            '𝥃' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBoxMedium),
+            '𝥄' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneBoxLarge),
+            '𝥅' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneZigzagSmall),
+            '𝥆' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneZigzagMedium),
+            '𝥇' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneZigzagLarge),
+            '𝥈' => Ok(SuttonSignWriting::SignwritingMovementDashWallplanePeaksSmall),
+            '𝥉' => Ok(SuttonSignWriting::SignwritingMovementDashWallplanePeaksMedium),
+            '𝥊' => Ok(SuttonSignWriting::SignwritingMovementDashWallplanePeaksLarge),
+            '𝥋' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneSingle),
+            '𝥌' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneDouble),
+            '𝥍' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashWallplaneAlternating),
+            '𝥎' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneSingle),
+            '𝥏' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneDouble),
+            '𝥐' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneRotationDashFloorplaneAlternating),
+            '𝥑' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneShaking),
+            '𝥒' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralSingle),
+            '𝥓' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralDouble),
+            '𝥔' => Ok(SuttonSignWriting::SignwritingTravelDashWallplaneArmSpiralTriple),
+            '𝥕' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalAwaySmall),
+            '𝥖' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalAwayMedium),
+            '𝥗' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalAwayLarge),
+            '𝥘' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalAwayLargest),
+            '𝥙' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalTowardsSmall),
+            '𝥚' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalTowardsMedium),
+            '𝥛' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalTowardsLarge),
+            '𝥜' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalTowardsLargest),
+            '𝥝' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwaySmall),
+            '𝥞' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayMedium),
+            '𝥟' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayLarge),
+            '𝥠' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenAwayLargest),
+            '𝥡' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsSmall),
+            '𝥢' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsMedium),
+            '𝥣' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsLarge),
+            '𝥤' => Ok(SuttonSignWriting::SignwritingMovementDashDiagonalBetweenTowardsLargest),
+            '𝥥' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightSmall),
+            '𝥦' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightMedium),
+            '𝥧' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightLarge),
+            '𝥨' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleStraightLargest),
+            '𝥩' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneSingleWristFlex),
+            '𝥪' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleStraight),
+            '𝥫' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleWristFlex),
+            '𝥬' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleAlternating),
+            '𝥭' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneDoubleAlternatingWristFlex),
+            '𝥮' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCross),
+            '𝥯' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneTripleStraightMovement),
+            '𝥰' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneTripleWristFlex),
+            '𝥱' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneTripleAlternatingMovement),
+            '𝥲' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneTripleAlternatingWristFlex),
+            '𝥳' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneBend),
+            '𝥴' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCornerSmall),
+            '𝥵' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCornerMedium),
+            '𝥶' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCornerLarge),
+            '𝥷' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCheck),
+            '𝥸' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneBoxSmall),
+            '𝥹' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneBoxMedium),
+            '𝥺' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneBoxLarge),
+            '𝥻' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagSmall),
+            '𝥼' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagMedium),
+            '𝥽' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneZigzagLarge),
+            '𝥾' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplanePeaksSmall),
+            '𝥿' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplanePeaksMedium),
+            '𝦀' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplanePeaksLarge),
+            '𝦁' => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneSingle),
+            '𝦂' => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneDouble),
+            '𝦃' => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashFloorplaneAlternating),
+            '𝦄' => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneSingle),
+            '𝦅' => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneDouble),
+            '𝦆' => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneRotationDashWallplaneAlternating),
+            '𝦇' => Ok(SuttonSignWriting::SignwritingTravelDashFloorplaneShaking),
+            '𝦈' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterSmall),
+            '𝦉' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterMedium),
+            '𝦊' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterLarge),
+            '𝦋' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveQuarterLargest),
+            '𝦌' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleSmall),
+            '𝦍' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleMedium),
+            '𝦎' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleLarge),
+            '𝦏' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHalfDashCircleLargest),
+            '𝦐' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveThreeDashQuarterCircleSmall),
+            '𝦑' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveThreeDashQuarterCircleMedium),
+            '𝦒' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpSmall),
+            '𝦓' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpMedium),
+            '𝦔' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpLarge),
+            '𝦕' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopSmall),
+            '𝦖' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopMedium),
+            '𝦗' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopLarge),
+            '𝦘' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopSmallDouble),
+            '𝦙' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleSmall),
+            '𝦚' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleMedium),
+            '𝦛' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveDoubleLarge),
+            '𝦜' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleSmall),
+            '𝦝' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleMedium),
+            '𝦞' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveCurveTripleLarge),
+            '𝦟' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveThenStraight),
+            '𝦠' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurvedCrossSmall),
+            '𝦡' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurvedCrossMedium),
+            '𝦢' => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneSingle),
+            '𝦣' => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneDouble),
+            '𝦤' => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneAlternate),
+            '𝦥' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneShaking),
+            '𝦦' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHittingFrontWall),
+            '𝦧' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpHittingFrontWall),
+            '𝦨' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopHittingFrontWall),
+            '𝦩' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveHittingFrontWall),
+            '𝦪' => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneSingleHittingFrontWall),
+            '𝦫' => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneDoubleHittingFrontWall),
+            '𝦬' => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneAlternatingHittingFrontWall),
+            '𝦭' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneCurveHittingChest),
+            '𝦮' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneHumpHittingChest),
+            '𝦯' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneLoopHittingChest),
+            '𝦰' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveHittingChest),
+            '𝦱' => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneSingleHittingChest),
+            '𝦲' => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneDoubleHittingChest),
+            '𝦳' => Ok(SuttonSignWriting::SignwritingRotationDashWallplaneAlternatingHittingChest),
+            '𝦴' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathSmall),
+            '𝦵' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathMedium),
+            '𝦶' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWaveDiagonalPathLarge),
+            '𝦷' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingCeilingSmall),
+            '𝦸' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingCeilingLarge),
+            '𝦹' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingSmallDouble),
+            '𝦺' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingLargeDouble),
+            '𝦻' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingSmallTriple),
+            '𝦼' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingCeilingLargeTriple),
+            '𝦽' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingSmallSingle),
+            '𝦾' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingLargeSingle),
+            '𝦿' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingSmallDouble),
+            '𝧀' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingCeilingLargeDouble),
+            '𝧁' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingCeilingSmall),
+            '𝧂' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingCeilingLarge),
+            '𝧃' => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneSingleHittingCeiling),
+            '𝧄' => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneDoubleHittingCeiling),
+            '𝧅' => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneAlternatingHittingCeiling),
+            '𝧆' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingFloorSmall),
+            '𝧇' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveHittingFloorLarge),
+            '𝧈' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorSmallDouble),
+            '𝧉' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorLargeDouble),
+            '𝧊' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorTripleSmallTriple),
+            '𝧋' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpHittingFloorTripleLargeTriple),
+            '𝧌' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorSmallSingle),
+            '𝧍' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorLargeSingle),
+            '𝧎' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorSmallDouble),
+            '𝧏' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopHittingFloorLargeDouble),
+            '𝧐' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingFloorSmall),
+            '𝧑' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveHittingFloorLarge),
+            '𝧒' => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneSingleHittingFloor),
+            '𝧓' => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneDoubleHittingFloor),
+            '𝧔' => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneAlternatingHittingFloor),
+            '𝧕' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveSmall),
+            '𝧖' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveMedium),
+            '𝧗' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveLarge),
+            '𝧘' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveLargest),
+            '𝧙' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneCurveCombined),
+            '𝧚' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneHumpSmall),
+            '𝧛' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneLoopSmall),
+            '𝧜' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveSnake),
+            '𝧝' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveSmall),
+            '𝧞' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWaveLarge),
+            '𝧟' => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneSingle),
+            '𝧠' => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneDouble),
+            '𝧡' => Ok(SuttonSignWriting::SignwritingRotationDashFloorplaneAlternating),
+            '𝧢' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneShakingParallel),
+            '𝧣' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleSmallSingle),
+            '𝧤' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleMediumSingle),
+            '𝧥' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleSmallDouble),
+            '𝧦' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneArmCircleMediumDouble),
+            '𝧧' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallSmallSingle),
+            '𝧨' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallMediumSingle),
+            '𝧩' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallLargeSingle),
+            '𝧪' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallSmallDouble),
+            '𝧫' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallMediumDouble),
+            '𝧬' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneArmCircleHittingWallLargeDouble),
+            '𝧭' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWristCircleFrontSingle),
+            '𝧮' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneWristCircleFrontDouble),
+            '𝧯' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWristCircleHittingWallSingle),
+            '𝧰' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneWristCircleHittingWallDouble),
+            '𝧱' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneFingerCirclesSingle),
+            '𝧲' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneFingerCirclesDouble),
+            '𝧳' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneFingerCirclesHittingWallSingle),
+            '𝧴' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneFingerCirclesHittingWallDouble),
+            '𝧵' => Ok(SuttonSignWriting::SignwritingDynamicArrowheadSmall),
+            '𝧶' => Ok(SuttonSignWriting::SignwritingDynamicArrowheadLarge),
+            '𝧷' => Ok(SuttonSignWriting::SignwritingDynamicFast),
+            '𝧸' => Ok(SuttonSignWriting::SignwritingDynamicSlow),
+            '𝧹' => Ok(SuttonSignWriting::SignwritingDynamicTense),
+            '𝧺' => Ok(SuttonSignWriting::SignwritingDynamicRelaxed),
+            '𝧻' => Ok(SuttonSignWriting::SignwritingDynamicSimultaneous),
+            '𝧼' => Ok(SuttonSignWriting::SignwritingDynamicSimultaneousAlternating),
+            '𝧽' => Ok(SuttonSignWriting::SignwritingDynamicEveryOtherTime),
+            '𝧾' => Ok(SuttonSignWriting::SignwritingDynamicGradual),
+            '𝧿' => Ok(SuttonSignWriting::SignwritingHead),
+            '𝨀' => Ok(SuttonSignWriting::SignwritingHeadRim),
+            '𝨁' => Ok(SuttonSignWriting::SignwritingHeadMovementDashWallplaneStraight),
+            '𝨂' => Ok(SuttonSignWriting::SignwritingHeadMovementDashWallplaneTilt),
+            '𝨃' => Ok(SuttonSignWriting::SignwritingHeadMovementDashFloorplaneStraight),
+            '𝨄' => Ok(SuttonSignWriting::SignwritingHeadMovementDashWallplaneCurve),
+            '𝨅' => Ok(SuttonSignWriting::SignwritingHeadMovementDashFloorplaneCurve),
+            '𝨆' => Ok(SuttonSignWriting::SignwritingHeadMovementCircle),
+            '𝨇' => Ok(SuttonSignWriting::SignwritingFaceDirectionPositionNoseForwardTilting),
+            '𝨈' => Ok(SuttonSignWriting::SignwritingFaceDirectionPositionNoseUpOrDown),
+            '𝨉' => Ok(SuttonSignWriting::SignwritingFaceDirectionPositionNoseUpOrDownTilting),
+            '𝨊' => Ok(SuttonSignWriting::SignwritingEyebrowsStraightUp),
+            '𝨋' => Ok(SuttonSignWriting::SignwritingEyebrowsStraightNeutral),
+            '𝨌' => Ok(SuttonSignWriting::SignwritingEyebrowsStraightDown),
+            '𝨍' => Ok(SuttonSignWriting::SignwritingDreamyEyebrowsNeutralDown),
+            '𝨎' => Ok(SuttonSignWriting::SignwritingDreamyEyebrowsDownNeutral),
+            '𝨏' => Ok(SuttonSignWriting::SignwritingDreamyEyebrowsUpNeutral),
+            '𝨐' => Ok(SuttonSignWriting::SignwritingDreamyEyebrowsNeutralUp),
+            '𝨑' => Ok(SuttonSignWriting::SignwritingForeheadNeutral),
+            '𝨒' => Ok(SuttonSignWriting::SignwritingForeheadContact),
+            '𝨓' => Ok(SuttonSignWriting::SignwritingForeheadWrinkled),
+            '𝨔' => Ok(SuttonSignWriting::SignwritingEyesOpen),
+            '𝨕' => Ok(SuttonSignWriting::SignwritingEyesSqueezed),
+            '𝨖' => Ok(SuttonSignWriting::SignwritingEyesClosed),
+            '𝨗' => Ok(SuttonSignWriting::SignwritingEyeBlinkSingle),
+            '𝨘' => Ok(SuttonSignWriting::SignwritingEyeBlinkMultiple),
+            '𝨙' => Ok(SuttonSignWriting::SignwritingEyesHalfOpen),
+            '𝨚' => Ok(SuttonSignWriting::SignwritingEyesWideOpen),
+            '𝨛' => Ok(SuttonSignWriting::SignwritingEyesHalfClosed),
+            '𝨜' => Ok(SuttonSignWriting::SignwritingEyesWideningMovement),
+            '𝨝' => Ok(SuttonSignWriting::SignwritingEyeWink),
+            '𝨞' => Ok(SuttonSignWriting::SignwritingEyelashesUp),
+            '𝨟' => Ok(SuttonSignWriting::SignwritingEyelashesDown),
+            '𝨠' => Ok(SuttonSignWriting::SignwritingEyelashesFluttering),
+            '𝨡' => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneStraight),
+            '𝨢' => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneStraightDouble),
+            '𝨣' => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneStraightAlternating),
+            '𝨤' => Ok(SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraight),
+            '𝨥' => Ok(SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraightDouble),
+            '𝨦' => Ok(SuttonSignWriting::SignwritingEyegazeDashFloorplaneStraightAlternating),
+            '𝨧' => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneCurved),
+            '𝨨' => Ok(SuttonSignWriting::SignwritingEyegazeDashFloorplaneCurved),
+            '𝨩' => Ok(SuttonSignWriting::SignwritingEyegazeDashWallplaneCircling),
+            '𝨪' => Ok(SuttonSignWriting::SignwritingCheeksPuffed),
+            '𝨫' => Ok(SuttonSignWriting::SignwritingCheeksNeutral),
+            '𝨬' => Ok(SuttonSignWriting::SignwritingCheeksSucked),
+            '𝨭' => Ok(SuttonSignWriting::SignwritingTenseCheeksHigh),
+            '𝨮' => Ok(SuttonSignWriting::SignwritingTenseCheeksMiddle),
+            '𝨯' => Ok(SuttonSignWriting::SignwritingTenseCheeksLow),
+            '𝨰' => Ok(SuttonSignWriting::SignwritingEars),
+            '𝨱' => Ok(SuttonSignWriting::SignwritingNoseNeutral),
+            '𝨲' => Ok(SuttonSignWriting::SignwritingNoseContact),
+            '𝨳' => Ok(SuttonSignWriting::SignwritingNoseWrinkles),
+            '𝨴' => Ok(SuttonSignWriting::SignwritingNoseWiggles),
+            '𝨵' => Ok(SuttonSignWriting::SignwritingAirBlowingOut),
+            '𝨶' => Ok(SuttonSignWriting::SignwritingAirSuckingIn),
+            '𝨷' => Ok(SuttonSignWriting::SignwritingAirBlowSmallRotations),
+            '𝨸' => Ok(SuttonSignWriting::SignwritingAirSuckSmallRotations),
+            '𝨹' => Ok(SuttonSignWriting::SignwritingBreathInhale),
+            '𝨺' => Ok(SuttonSignWriting::SignwritingBreathExhale),
+            '𝨻' => Ok(SuttonSignWriting::SignwritingMouthClosedNeutral),
+            '𝨼' => Ok(SuttonSignWriting::SignwritingMouthClosedForward),
+            '𝨽' => Ok(SuttonSignWriting::SignwritingMouthClosedContact),
+            '𝨾' => Ok(SuttonSignWriting::SignwritingMouthSmile),
+            '𝨿' => Ok(SuttonSignWriting::SignwritingMouthSmileWrinkled),
+            '𝩀' => Ok(SuttonSignWriting::SignwritingMouthSmileOpen),
+            '𝩁' => Ok(SuttonSignWriting::SignwritingMouthFrown),
+            '𝩂' => Ok(SuttonSignWriting::SignwritingMouthFrownWrinkled),
+            '𝩃' => Ok(SuttonSignWriting::SignwritingMouthFrownOpen),
+            '𝩄' => Ok(SuttonSignWriting::SignwritingMouthOpenCircle),
+            '𝩅' => Ok(SuttonSignWriting::SignwritingMouthOpenForward),
+            '𝩆' => Ok(SuttonSignWriting::SignwritingMouthOpenWrinkled),
+            '𝩇' => Ok(SuttonSignWriting::SignwritingMouthOpenOval),
+            '𝩈' => Ok(SuttonSignWriting::SignwritingMouthOpenOvalWrinkled),
+            '𝩉' => Ok(SuttonSignWriting::SignwritingMouthOpenOvalYawn),
+            '𝩊' => Ok(SuttonSignWriting::SignwritingMouthOpenRectangle),
+            '𝩋' => Ok(SuttonSignWriting::SignwritingMouthOpenRectangleWrinkled),
+            '𝩌' => Ok(SuttonSignWriting::SignwritingMouthOpenRectangleYawn),
+            '𝩍' => Ok(SuttonSignWriting::SignwritingMouthKiss),
+            '𝩎' => Ok(SuttonSignWriting::SignwritingMouthKissForward),
+            '𝩏' => Ok(SuttonSignWriting::SignwritingMouthKissWrinkled),
+            '𝩐' => Ok(SuttonSignWriting::SignwritingMouthTense),
+            '𝩑' => Ok(SuttonSignWriting::SignwritingMouthTenseForward),
+            '𝩒' => Ok(SuttonSignWriting::SignwritingMouthTenseSucked),
+            '𝩓' => Ok(SuttonSignWriting::SignwritingLipsPressedTogether),
+            '𝩔' => Ok(SuttonSignWriting::SignwritingLipLowerOverUpper),
+            '𝩕' => Ok(SuttonSignWriting::SignwritingLipUpperOverLower),
+            '𝩖' => Ok(SuttonSignWriting::SignwritingMouthCorners),
+            '𝩗' => Ok(SuttonSignWriting::SignwritingMouthWrinklesSingle),
+            '𝩘' => Ok(SuttonSignWriting::SignwritingMouthWrinklesDouble),
+            '𝩙' => Ok(SuttonSignWriting::SignwritingTongueStickingOutFar),
+            '𝩚' => Ok(SuttonSignWriting::SignwritingTongueLickingLips),
+            '𝩛' => Ok(SuttonSignWriting::SignwritingTongueTipBetweenLips),
+            '𝩜' => Ok(SuttonSignWriting::SignwritingTongueTipTouchingInsideMouth),
+            '𝩝' => Ok(SuttonSignWriting::SignwritingTongueInsideMouthRelaxed),
+            '𝩞' => Ok(SuttonSignWriting::SignwritingTongueMovesAgainstCheek),
+            '𝩟' => Ok(SuttonSignWriting::SignwritingTongueCentreStickingOut),
+            '𝩠' => Ok(SuttonSignWriting::SignwritingTongueCentreInsideMouth),
+            '𝩡' => Ok(SuttonSignWriting::SignwritingTeeth),
+            '𝩢' => Ok(SuttonSignWriting::SignwritingTeethMovement),
+            '𝩣' => Ok(SuttonSignWriting::SignwritingTeethOnTongue),
+            '𝩤' => Ok(SuttonSignWriting::SignwritingTeethOnTongueMovement),
+            '𝩥' => Ok(SuttonSignWriting::SignwritingTeethOnLips),
+            '𝩦' => Ok(SuttonSignWriting::SignwritingTeethOnLipsMovement),
+            '𝩧' => Ok(SuttonSignWriting::SignwritingTeethBiteLips),
+            '𝩨' => Ok(SuttonSignWriting::SignwritingMovementDashWallplaneJaw),
+            '𝩩' => Ok(SuttonSignWriting::SignwritingMovementDashFloorplaneJaw),
+            '𝩪' => Ok(SuttonSignWriting::SignwritingNeck),
+            '𝩫' => Ok(SuttonSignWriting::SignwritingHair),
+            '𝩬' => Ok(SuttonSignWriting::SignwritingExcitement),
+            '𝩭' => Ok(SuttonSignWriting::SignwritingShoulderHipSpine),
+            '𝩮' => Ok(SuttonSignWriting::SignwritingShoulderHipPositions),
+            '𝩯' => Ok(SuttonSignWriting::SignwritingWallplaneShoulderHipMove),
+            '𝩰' => Ok(SuttonSignWriting::SignwritingFloorplaneShoulderHipMove),
+            '𝩱' => Ok(SuttonSignWriting::SignwritingShoulderTiltingFromWaist),
+            '𝩲' => Ok(SuttonSignWriting::SignwritingTorsoDashWallplaneStraightStretch),
+            '𝩳' => Ok(SuttonSignWriting::SignwritingTorsoDashWallplaneCurvedBend),
+            '𝩴' => Ok(SuttonSignWriting::SignwritingTorsoDashFloorplaneTwisting),
+            '𝩵' => Ok(SuttonSignWriting::SignwritingUpperBodyTiltingFromHipJoints),
+            '𝩶' => Ok(SuttonSignWriting::SignwritingLimbCombination),
+            '𝩷' => Ok(SuttonSignWriting::SignwritingLimbLengthDash1),
+            '𝩸' => Ok(SuttonSignWriting::SignwritingLimbLengthDash2),
+            '𝩹' => Ok(SuttonSignWriting::SignwritingLimbLengthDash3),
+            '𝩺' => Ok(SuttonSignWriting::SignwritingLimbLengthDash4),
+            '𝩻' => Ok(SuttonSignWriting::SignwritingLimbLengthDash5),
+            '𝩼' => Ok(SuttonSignWriting::SignwritingLimbLengthDash6),
+            '𝩽' => Ok(SuttonSignWriting::SignwritingLimbLengthDash7),
+            '𝩾' => Ok(SuttonSignWriting::SignwritingFinger),
+            '𝩿' => Ok(SuttonSignWriting::SignwritingLocationDashWallplaneSpace),
+            '𝪀' => Ok(SuttonSignWriting::SignwritingLocationDashFloorplaneSpace),
+            '𝪁' => Ok(SuttonSignWriting::SignwritingLocationHeight),
+            '𝪂' => Ok(SuttonSignWriting::SignwritingLocationWidth),
+            '𝪃' => Ok(SuttonSignWriting::SignwritingLocationDepth),
+            '𝪄' => Ok(SuttonSignWriting::SignwritingLocationHeadNeck),
+            '𝪅' => Ok(SuttonSignWriting::SignwritingLocationTorso),
+            '𝪆' => Ok(SuttonSignWriting::SignwritingLocationLimbsDigits),
+            '𝪇' => Ok(SuttonSignWriting::SignwritingComma),
+            '𝪈' => Ok(SuttonSignWriting::SignwritingFullStop),
+            '𝪉' => Ok(SuttonSignWriting::SignwritingSemicolon),
+            '𝪊' => Ok(SuttonSignWriting::SignwritingColon),
+            '𝪋' => Ok(SuttonSignWriting::SignwritingParenthesis),
+            '𝪛' => Ok(SuttonSignWriting::SignwritingFillModifierDash2),
+            '𝪜' => Ok(SuttonSignWriting::SignwritingFillModifierDash3),
+            '𝪝' => Ok(SuttonSignWriting::SignwritingFillModifierDash4),
+            '𝪞' => Ok(SuttonSignWriting::SignwritingFillModifierDash5),
+            '𝪟' => Ok(SuttonSignWriting::SignwritingFillModifierDash6),
+            '𝪡' => Ok(SuttonSignWriting::SignwritingRotationModifierDash2),
+            '𝪢' => Ok(SuttonSignWriting::SignwritingRotationModifierDash3),
+            '𝪣' => Ok(SuttonSignWriting::SignwritingRotationModifierDash4),
+            '𝪤' => Ok(SuttonSignWriting::SignwritingRotationModifierDash5),
+            '𝪥' => Ok(SuttonSignWriting::SignwritingRotationModifierDash6),
+            '𝪦' => Ok(SuttonSignWriting::SignwritingRotationModifierDash7),
+            '𝪧' => Ok(SuttonSignWriting::SignwritingRotationModifierDash8),
+            '𝪨' => Ok(SuttonSignWriting::SignwritingRotationModifierDash9),
+            '𝪩' => Ok(SuttonSignWriting::SignwritingRotationModifierDash10),
+            '𝪪' => Ok(SuttonSignWriting::SignwritingRotationModifierDash11),
+            '𝪫' => Ok(SuttonSignWriting::SignwritingRotationModifierDash12),
+            '𝪬' => Ok(SuttonSignWriting::SignwritingRotationModifierDash13),
+            '𝪭' => Ok(SuttonSignWriting::SignwritingRotationModifierDash14),
+            '𝪮' => Ok(SuttonSignWriting::SignwritingRotationModifierDash15),
             _ => Err(()),
         }
     }

@@ -1,194 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2c00}: 'Ⰰ'
-    pub const CAPITAL_LETTER_AZU: char = 'Ⰰ';
-    /// \u{2c01}: 'Ⰱ'
-    pub const CAPITAL_LETTER_BUKY: char = 'Ⰱ';
-    /// \u{2c02}: 'Ⰲ'
-    pub const CAPITAL_LETTER_VEDE: char = 'Ⰲ';
-    /// \u{2c03}: 'Ⰳ'
-    pub const CAPITAL_LETTER_GLAGOLI: char = 'Ⰳ';
-    /// \u{2c04}: 'Ⰴ'
-    pub const CAPITAL_LETTER_DOBRO: char = 'Ⰴ';
-    /// \u{2c05}: 'Ⰵ'
-    pub const CAPITAL_LETTER_YESTU: char = 'Ⰵ';
-    /// \u{2c06}: 'Ⰶ'
-    pub const CAPITAL_LETTER_ZHIVETE: char = 'Ⰶ';
-    /// \u{2c07}: 'Ⰷ'
-    pub const CAPITAL_LETTER_DZELO: char = 'Ⰷ';
-    /// \u{2c08}: 'Ⰸ'
-    pub const CAPITAL_LETTER_ZEMLJA: char = 'Ⰸ';
-    /// \u{2c09}: 'Ⰹ'
-    pub const CAPITAL_LETTER_IZHE: char = 'Ⰹ';
-    /// \u{2c0a}: 'Ⰺ'
-    pub const CAPITAL_LETTER_INITIAL_IZHE: char = 'Ⰺ';
-    /// \u{2c0b}: 'Ⰻ'
-    pub const CAPITAL_LETTER_I: char = 'Ⰻ';
-    /// \u{2c0c}: 'Ⰼ'
-    pub const CAPITAL_LETTER_DJERVI: char = 'Ⰼ';
-    /// \u{2c0d}: 'Ⰽ'
-    pub const CAPITAL_LETTER_KAKO: char = 'Ⰽ';
-    /// \u{2c0e}: 'Ⰾ'
-    pub const CAPITAL_LETTER_LJUDIJE: char = 'Ⰾ';
-    /// \u{2c0f}: 'Ⰿ'
-    pub const CAPITAL_LETTER_MYSLITE: char = 'Ⰿ';
-    /// \u{2c10}: 'Ⱀ'
-    pub const CAPITAL_LETTER_NASHI: char = 'Ⱀ';
-    /// \u{2c11}: 'Ⱁ'
-    pub const CAPITAL_LETTER_ONU: char = 'Ⱁ';
-    /// \u{2c12}: 'Ⱂ'
-    pub const CAPITAL_LETTER_POKOJI: char = 'Ⱂ';
-    /// \u{2c13}: 'Ⱃ'
-    pub const CAPITAL_LETTER_RITSI: char = 'Ⱃ';
-    /// \u{2c14}: 'Ⱄ'
-    pub const CAPITAL_LETTER_SLOVO: char = 'Ⱄ';
-    /// \u{2c15}: 'Ⱅ'
-    pub const CAPITAL_LETTER_TVRIDO: char = 'Ⱅ';
-    /// \u{2c16}: 'Ⱆ'
-    pub const CAPITAL_LETTER_UKU: char = 'Ⱆ';
-    /// \u{2c17}: 'Ⱇ'
-    pub const CAPITAL_LETTER_FRITU: char = 'Ⱇ';
-    /// \u{2c18}: 'Ⱈ'
-    pub const CAPITAL_LETTER_HERU: char = 'Ⱈ';
-    /// \u{2c19}: 'Ⱉ'
-    pub const CAPITAL_LETTER_OTU: char = 'Ⱉ';
-    /// \u{2c1a}: 'Ⱊ'
-    pub const CAPITAL_LETTER_PE: char = 'Ⱊ';
-    /// \u{2c1b}: 'Ⱋ'
-    pub const CAPITAL_LETTER_SHTA: char = 'Ⱋ';
-    /// \u{2c1c}: 'Ⱌ'
-    pub const CAPITAL_LETTER_TSI: char = 'Ⱌ';
-    /// \u{2c1d}: 'Ⱍ'
-    pub const CAPITAL_LETTER_CHRIVI: char = 'Ⱍ';
-    /// \u{2c1e}: 'Ⱎ'
-    pub const CAPITAL_LETTER_SHA: char = 'Ⱎ';
-    /// \u{2c1f}: 'Ⱏ'
-    pub const CAPITAL_LETTER_YERU: char = 'Ⱏ';
-    /// \u{2c20}: 'Ⱐ'
-    pub const CAPITAL_LETTER_YERI: char = 'Ⱐ';
-    /// \u{2c21}: 'Ⱑ'
-    pub const CAPITAL_LETTER_YATI: char = 'Ⱑ';
-    /// \u{2c22}: 'Ⱒ'
-    pub const CAPITAL_LETTER_SPIDERY_HA: char = 'Ⱒ';
-    /// \u{2c23}: 'Ⱓ'
-    pub const CAPITAL_LETTER_YU: char = 'Ⱓ';
-    /// \u{2c24}: 'Ⱔ'
-    pub const CAPITAL_LETTER_SMALL_YUS: char = 'Ⱔ';
-    /// \u{2c25}: 'Ⱕ'
-    pub const CAPITAL_LETTER_SMALL_YUS_WITH_TAIL: char = 'Ⱕ';
-    /// \u{2c26}: 'Ⱖ'
-    pub const CAPITAL_LETTER_YO: char = 'Ⱖ';
-    /// \u{2c27}: 'Ⱗ'
-    pub const CAPITAL_LETTER_IOTATED_SMALL_YUS: char = 'Ⱗ';
-    /// \u{2c28}: 'Ⱘ'
-    pub const CAPITAL_LETTER_BIG_YUS: char = 'Ⱘ';
-    /// \u{2c29}: 'Ⱙ'
-    pub const CAPITAL_LETTER_IOTATED_BIG_YUS: char = 'Ⱙ';
-    /// \u{2c2a}: 'Ⱚ'
-    pub const CAPITAL_LETTER_FITA: char = 'Ⱚ';
-    /// \u{2c2b}: 'Ⱛ'
-    pub const CAPITAL_LETTER_IZHITSA: char = 'Ⱛ';
-    /// \u{2c2c}: 'Ⱜ'
-    pub const CAPITAL_LETTER_SHTAPIC: char = 'Ⱜ';
-    /// \u{2c2d}: 'Ⱝ'
-    pub const CAPITAL_LETTER_TROKUTASTI_A: char = 'Ⱝ';
-    /// \u{2c2e}: 'Ⱞ'
-    pub const CAPITAL_LETTER_LATINATE_MYSLITE: char = 'Ⱞ';
-    /// \u{2c30}: 'ⰰ'
-    pub const SMALL_LETTER_AZU: char = 'ⰰ';
-    /// \u{2c31}: 'ⰱ'
-    pub const SMALL_LETTER_BUKY: char = 'ⰱ';
-    /// \u{2c32}: 'ⰲ'
-    pub const SMALL_LETTER_VEDE: char = 'ⰲ';
-    /// \u{2c33}: 'ⰳ'
-    pub const SMALL_LETTER_GLAGOLI: char = 'ⰳ';
-    /// \u{2c34}: 'ⰴ'
-    pub const SMALL_LETTER_DOBRO: char = 'ⰴ';
-    /// \u{2c35}: 'ⰵ'
-    pub const SMALL_LETTER_YESTU: char = 'ⰵ';
-    /// \u{2c36}: 'ⰶ'
-    pub const SMALL_LETTER_ZHIVETE: char = 'ⰶ';
-    /// \u{2c37}: 'ⰷ'
-    pub const SMALL_LETTER_DZELO: char = 'ⰷ';
-    /// \u{2c38}: 'ⰸ'
-    pub const SMALL_LETTER_ZEMLJA: char = 'ⰸ';
-    /// \u{2c39}: 'ⰹ'
-    pub const SMALL_LETTER_IZHE: char = 'ⰹ';
-    /// \u{2c3a}: 'ⰺ'
-    pub const SMALL_LETTER_INITIAL_IZHE: char = 'ⰺ';
-    /// \u{2c3b}: 'ⰻ'
-    pub const SMALL_LETTER_I: char = 'ⰻ';
-    /// \u{2c3c}: 'ⰼ'
-    pub const SMALL_LETTER_DJERVI: char = 'ⰼ';
-    /// \u{2c3d}: 'ⰽ'
-    pub const SMALL_LETTER_KAKO: char = 'ⰽ';
-    /// \u{2c3e}: 'ⰾ'
-    pub const SMALL_LETTER_LJUDIJE: char = 'ⰾ';
-    /// \u{2c3f}: 'ⰿ'
-    pub const SMALL_LETTER_MYSLITE: char = 'ⰿ';
-    /// \u{2c40}: 'ⱀ'
-    pub const SMALL_LETTER_NASHI: char = 'ⱀ';
-    /// \u{2c41}: 'ⱁ'
-    pub const SMALL_LETTER_ONU: char = 'ⱁ';
-    /// \u{2c42}: 'ⱂ'
-    pub const SMALL_LETTER_POKOJI: char = 'ⱂ';
-    /// \u{2c43}: 'ⱃ'
-    pub const SMALL_LETTER_RITSI: char = 'ⱃ';
-    /// \u{2c44}: 'ⱄ'
-    pub const SMALL_LETTER_SLOVO: char = 'ⱄ';
-    /// \u{2c45}: 'ⱅ'
-    pub const SMALL_LETTER_TVRIDO: char = 'ⱅ';
-    /// \u{2c46}: 'ⱆ'
-    pub const SMALL_LETTER_UKU: char = 'ⱆ';
-    /// \u{2c47}: 'ⱇ'
-    pub const SMALL_LETTER_FRITU: char = 'ⱇ';
-    /// \u{2c48}: 'ⱈ'
-    pub const SMALL_LETTER_HERU: char = 'ⱈ';
-    /// \u{2c49}: 'ⱉ'
-    pub const SMALL_LETTER_OTU: char = 'ⱉ';
-    /// \u{2c4a}: 'ⱊ'
-    pub const SMALL_LETTER_PE: char = 'ⱊ';
-    /// \u{2c4b}: 'ⱋ'
-    pub const SMALL_LETTER_SHTA: char = 'ⱋ';
-    /// \u{2c4c}: 'ⱌ'
-    pub const SMALL_LETTER_TSI: char = 'ⱌ';
-    /// \u{2c4d}: 'ⱍ'
-    pub const SMALL_LETTER_CHRIVI: char = 'ⱍ';
-    /// \u{2c4e}: 'ⱎ'
-    pub const SMALL_LETTER_SHA: char = 'ⱎ';
-    /// \u{2c4f}: 'ⱏ'
-    pub const SMALL_LETTER_YERU: char = 'ⱏ';
-    /// \u{2c50}: 'ⱐ'
-    pub const SMALL_LETTER_YERI: char = 'ⱐ';
-    /// \u{2c51}: 'ⱑ'
-    pub const SMALL_LETTER_YATI: char = 'ⱑ';
-    /// \u{2c52}: 'ⱒ'
-    pub const SMALL_LETTER_SPIDERY_HA: char = 'ⱒ';
-    /// \u{2c53}: 'ⱓ'
-    pub const SMALL_LETTER_YU: char = 'ⱓ';
-    /// \u{2c54}: 'ⱔ'
-    pub const SMALL_LETTER_SMALL_YUS: char = 'ⱔ';
-    /// \u{2c55}: 'ⱕ'
-    pub const SMALL_LETTER_SMALL_YUS_WITH_TAIL: char = 'ⱕ';
-    /// \u{2c56}: 'ⱖ'
-    pub const SMALL_LETTER_YO: char = 'ⱖ';
-    /// \u{2c57}: 'ⱗ'
-    pub const SMALL_LETTER_IOTATED_SMALL_YUS: char = 'ⱗ';
-    /// \u{2c58}: 'ⱘ'
-    pub const SMALL_LETTER_BIG_YUS: char = 'ⱘ';
-    /// \u{2c59}: 'ⱙ'
-    pub const SMALL_LETTER_IOTATED_BIG_YUS: char = 'ⱙ';
-    /// \u{2c5a}: 'ⱚ'
-    pub const SMALL_LETTER_FITA: char = 'ⱚ';
-    /// \u{2c5b}: 'ⱛ'
-    pub const SMALL_LETTER_IZHITSA: char = 'ⱛ';
-    /// \u{2c5c}: 'ⱜ'
-    pub const SMALL_LETTER_SHTAPIC: char = 'ⱜ';
-    /// \u{2c5d}: 'ⱝ'
-    pub const SMALL_LETTER_TROKUTASTI_A: char = 'ⱝ';
-    /// \u{2c5e}: 'ⱞ'
-    pub const SMALL_LETTER_LATINATE_MYSLITE: char = 'ⱞ';
-}
 
 /// An enum to represent all characters in the Glagolitic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -385,102 +194,101 @@ pub enum Glagolitic {
 
 impl Into<char> for Glagolitic {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Glagolitic::CapitalLetterAzu => CAPITAL_LETTER_AZU,
-            Glagolitic::CapitalLetterBuky => CAPITAL_LETTER_BUKY,
-            Glagolitic::CapitalLetterVede => CAPITAL_LETTER_VEDE,
-            Glagolitic::CapitalLetterGlagoli => CAPITAL_LETTER_GLAGOLI,
-            Glagolitic::CapitalLetterDobro => CAPITAL_LETTER_DOBRO,
-            Glagolitic::CapitalLetterYestu => CAPITAL_LETTER_YESTU,
-            Glagolitic::CapitalLetterZhivete => CAPITAL_LETTER_ZHIVETE,
-            Glagolitic::CapitalLetterDzelo => CAPITAL_LETTER_DZELO,
-            Glagolitic::CapitalLetterZemlja => CAPITAL_LETTER_ZEMLJA,
-            Glagolitic::CapitalLetterIzhe => CAPITAL_LETTER_IZHE,
-            Glagolitic::CapitalLetterInitialIzhe => CAPITAL_LETTER_INITIAL_IZHE,
-            Glagolitic::CapitalLetterI => CAPITAL_LETTER_I,
-            Glagolitic::CapitalLetterDjervi => CAPITAL_LETTER_DJERVI,
-            Glagolitic::CapitalLetterKako => CAPITAL_LETTER_KAKO,
-            Glagolitic::CapitalLetterLjudije => CAPITAL_LETTER_LJUDIJE,
-            Glagolitic::CapitalLetterMyslite => CAPITAL_LETTER_MYSLITE,
-            Glagolitic::CapitalLetterNashi => CAPITAL_LETTER_NASHI,
-            Glagolitic::CapitalLetterOnu => CAPITAL_LETTER_ONU,
-            Glagolitic::CapitalLetterPokoji => CAPITAL_LETTER_POKOJI,
-            Glagolitic::CapitalLetterRitsi => CAPITAL_LETTER_RITSI,
-            Glagolitic::CapitalLetterSlovo => CAPITAL_LETTER_SLOVO,
-            Glagolitic::CapitalLetterTvrido => CAPITAL_LETTER_TVRIDO,
-            Glagolitic::CapitalLetterUku => CAPITAL_LETTER_UKU,
-            Glagolitic::CapitalLetterFritu => CAPITAL_LETTER_FRITU,
-            Glagolitic::CapitalLetterHeru => CAPITAL_LETTER_HERU,
-            Glagolitic::CapitalLetterOtu => CAPITAL_LETTER_OTU,
-            Glagolitic::CapitalLetterPe => CAPITAL_LETTER_PE,
-            Glagolitic::CapitalLetterShta => CAPITAL_LETTER_SHTA,
-            Glagolitic::CapitalLetterTsi => CAPITAL_LETTER_TSI,
-            Glagolitic::CapitalLetterChrivi => CAPITAL_LETTER_CHRIVI,
-            Glagolitic::CapitalLetterSha => CAPITAL_LETTER_SHA,
-            Glagolitic::CapitalLetterYeru => CAPITAL_LETTER_YERU,
-            Glagolitic::CapitalLetterYeri => CAPITAL_LETTER_YERI,
-            Glagolitic::CapitalLetterYati => CAPITAL_LETTER_YATI,
-            Glagolitic::CapitalLetterSpideryHa => CAPITAL_LETTER_SPIDERY_HA,
-            Glagolitic::CapitalLetterYu => CAPITAL_LETTER_YU,
-            Glagolitic::CapitalLetterSmallYus => CAPITAL_LETTER_SMALL_YUS,
-            Glagolitic::CapitalLetterSmallYusWithTail => CAPITAL_LETTER_SMALL_YUS_WITH_TAIL,
-            Glagolitic::CapitalLetterYo => CAPITAL_LETTER_YO,
-            Glagolitic::CapitalLetterIotatedSmallYus => CAPITAL_LETTER_IOTATED_SMALL_YUS,
-            Glagolitic::CapitalLetterBigYus => CAPITAL_LETTER_BIG_YUS,
-            Glagolitic::CapitalLetterIotatedBigYus => CAPITAL_LETTER_IOTATED_BIG_YUS,
-            Glagolitic::CapitalLetterFita => CAPITAL_LETTER_FITA,
-            Glagolitic::CapitalLetterIzhitsa => CAPITAL_LETTER_IZHITSA,
-            Glagolitic::CapitalLetterShtapic => CAPITAL_LETTER_SHTAPIC,
-            Glagolitic::CapitalLetterTrokutastiA => CAPITAL_LETTER_TROKUTASTI_A,
-            Glagolitic::CapitalLetterLatinateMyslite => CAPITAL_LETTER_LATINATE_MYSLITE,
-            Glagolitic::SmallLetterAzu => SMALL_LETTER_AZU,
-            Glagolitic::SmallLetterBuky => SMALL_LETTER_BUKY,
-            Glagolitic::SmallLetterVede => SMALL_LETTER_VEDE,
-            Glagolitic::SmallLetterGlagoli => SMALL_LETTER_GLAGOLI,
-            Glagolitic::SmallLetterDobro => SMALL_LETTER_DOBRO,
-            Glagolitic::SmallLetterYestu => SMALL_LETTER_YESTU,
-            Glagolitic::SmallLetterZhivete => SMALL_LETTER_ZHIVETE,
-            Glagolitic::SmallLetterDzelo => SMALL_LETTER_DZELO,
-            Glagolitic::SmallLetterZemlja => SMALL_LETTER_ZEMLJA,
-            Glagolitic::SmallLetterIzhe => SMALL_LETTER_IZHE,
-            Glagolitic::SmallLetterInitialIzhe => SMALL_LETTER_INITIAL_IZHE,
-            Glagolitic::SmallLetterI => SMALL_LETTER_I,
-            Glagolitic::SmallLetterDjervi => SMALL_LETTER_DJERVI,
-            Glagolitic::SmallLetterKako => SMALL_LETTER_KAKO,
-            Glagolitic::SmallLetterLjudije => SMALL_LETTER_LJUDIJE,
-            Glagolitic::SmallLetterMyslite => SMALL_LETTER_MYSLITE,
-            Glagolitic::SmallLetterNashi => SMALL_LETTER_NASHI,
-            Glagolitic::SmallLetterOnu => SMALL_LETTER_ONU,
-            Glagolitic::SmallLetterPokoji => SMALL_LETTER_POKOJI,
-            Glagolitic::SmallLetterRitsi => SMALL_LETTER_RITSI,
-            Glagolitic::SmallLetterSlovo => SMALL_LETTER_SLOVO,
-            Glagolitic::SmallLetterTvrido => SMALL_LETTER_TVRIDO,
-            Glagolitic::SmallLetterUku => SMALL_LETTER_UKU,
-            Glagolitic::SmallLetterFritu => SMALL_LETTER_FRITU,
-            Glagolitic::SmallLetterHeru => SMALL_LETTER_HERU,
-            Glagolitic::SmallLetterOtu => SMALL_LETTER_OTU,
-            Glagolitic::SmallLetterPe => SMALL_LETTER_PE,
-            Glagolitic::SmallLetterShta => SMALL_LETTER_SHTA,
-            Glagolitic::SmallLetterTsi => SMALL_LETTER_TSI,
-            Glagolitic::SmallLetterChrivi => SMALL_LETTER_CHRIVI,
-            Glagolitic::SmallLetterSha => SMALL_LETTER_SHA,
-            Glagolitic::SmallLetterYeru => SMALL_LETTER_YERU,
-            Glagolitic::SmallLetterYeri => SMALL_LETTER_YERI,
-            Glagolitic::SmallLetterYati => SMALL_LETTER_YATI,
-            Glagolitic::SmallLetterSpideryHa => SMALL_LETTER_SPIDERY_HA,
-            Glagolitic::SmallLetterYu => SMALL_LETTER_YU,
-            Glagolitic::SmallLetterSmallYus => SMALL_LETTER_SMALL_YUS,
-            Glagolitic::SmallLetterSmallYusWithTail => SMALL_LETTER_SMALL_YUS_WITH_TAIL,
-            Glagolitic::SmallLetterYo => SMALL_LETTER_YO,
-            Glagolitic::SmallLetterIotatedSmallYus => SMALL_LETTER_IOTATED_SMALL_YUS,
-            Glagolitic::SmallLetterBigYus => SMALL_LETTER_BIG_YUS,
-            Glagolitic::SmallLetterIotatedBigYus => SMALL_LETTER_IOTATED_BIG_YUS,
-            Glagolitic::SmallLetterFita => SMALL_LETTER_FITA,
-            Glagolitic::SmallLetterIzhitsa => SMALL_LETTER_IZHITSA,
-            Glagolitic::SmallLetterShtapic => SMALL_LETTER_SHTAPIC,
-            Glagolitic::SmallLetterTrokutastiA => SMALL_LETTER_TROKUTASTI_A,
-            Glagolitic::SmallLetterLatinateMyslite => SMALL_LETTER_LATINATE_MYSLITE,
+            Glagolitic::CapitalLetterAzu => 'Ⰰ',
+            Glagolitic::CapitalLetterBuky => 'Ⰱ',
+            Glagolitic::CapitalLetterVede => 'Ⰲ',
+            Glagolitic::CapitalLetterGlagoli => 'Ⰳ',
+            Glagolitic::CapitalLetterDobro => 'Ⰴ',
+            Glagolitic::CapitalLetterYestu => 'Ⰵ',
+            Glagolitic::CapitalLetterZhivete => 'Ⰶ',
+            Glagolitic::CapitalLetterDzelo => 'Ⰷ',
+            Glagolitic::CapitalLetterZemlja => 'Ⰸ',
+            Glagolitic::CapitalLetterIzhe => 'Ⰹ',
+            Glagolitic::CapitalLetterInitialIzhe => 'Ⰺ',
+            Glagolitic::CapitalLetterI => 'Ⰻ',
+            Glagolitic::CapitalLetterDjervi => 'Ⰼ',
+            Glagolitic::CapitalLetterKako => 'Ⰽ',
+            Glagolitic::CapitalLetterLjudije => 'Ⰾ',
+            Glagolitic::CapitalLetterMyslite => 'Ⰿ',
+            Glagolitic::CapitalLetterNashi => 'Ⱀ',
+            Glagolitic::CapitalLetterOnu => 'Ⱁ',
+            Glagolitic::CapitalLetterPokoji => 'Ⱂ',
+            Glagolitic::CapitalLetterRitsi => 'Ⱃ',
+            Glagolitic::CapitalLetterSlovo => 'Ⱄ',
+            Glagolitic::CapitalLetterTvrido => 'Ⱅ',
+            Glagolitic::CapitalLetterUku => 'Ⱆ',
+            Glagolitic::CapitalLetterFritu => 'Ⱇ',
+            Glagolitic::CapitalLetterHeru => 'Ⱈ',
+            Glagolitic::CapitalLetterOtu => 'Ⱉ',
+            Glagolitic::CapitalLetterPe => 'Ⱊ',
+            Glagolitic::CapitalLetterShta => 'Ⱋ',
+            Glagolitic::CapitalLetterTsi => 'Ⱌ',
+            Glagolitic::CapitalLetterChrivi => 'Ⱍ',
+            Glagolitic::CapitalLetterSha => 'Ⱎ',
+            Glagolitic::CapitalLetterYeru => 'Ⱏ',
+            Glagolitic::CapitalLetterYeri => 'Ⱐ',
+            Glagolitic::CapitalLetterYati => 'Ⱑ',
+            Glagolitic::CapitalLetterSpideryHa => 'Ⱒ',
+            Glagolitic::CapitalLetterYu => 'Ⱓ',
+            Glagolitic::CapitalLetterSmallYus => 'Ⱔ',
+            Glagolitic::CapitalLetterSmallYusWithTail => 'Ⱕ',
+            Glagolitic::CapitalLetterYo => 'Ⱖ',
+            Glagolitic::CapitalLetterIotatedSmallYus => 'Ⱗ',
+            Glagolitic::CapitalLetterBigYus => 'Ⱘ',
+            Glagolitic::CapitalLetterIotatedBigYus => 'Ⱙ',
+            Glagolitic::CapitalLetterFita => 'Ⱚ',
+            Glagolitic::CapitalLetterIzhitsa => 'Ⱛ',
+            Glagolitic::CapitalLetterShtapic => 'Ⱜ',
+            Glagolitic::CapitalLetterTrokutastiA => 'Ⱝ',
+            Glagolitic::CapitalLetterLatinateMyslite => 'Ⱞ',
+            Glagolitic::SmallLetterAzu => 'ⰰ',
+            Glagolitic::SmallLetterBuky => 'ⰱ',
+            Glagolitic::SmallLetterVede => 'ⰲ',
+            Glagolitic::SmallLetterGlagoli => 'ⰳ',
+            Glagolitic::SmallLetterDobro => 'ⰴ',
+            Glagolitic::SmallLetterYestu => 'ⰵ',
+            Glagolitic::SmallLetterZhivete => 'ⰶ',
+            Glagolitic::SmallLetterDzelo => 'ⰷ',
+            Glagolitic::SmallLetterZemlja => 'ⰸ',
+            Glagolitic::SmallLetterIzhe => 'ⰹ',
+            Glagolitic::SmallLetterInitialIzhe => 'ⰺ',
+            Glagolitic::SmallLetterI => 'ⰻ',
+            Glagolitic::SmallLetterDjervi => 'ⰼ',
+            Glagolitic::SmallLetterKako => 'ⰽ',
+            Glagolitic::SmallLetterLjudije => 'ⰾ',
+            Glagolitic::SmallLetterMyslite => 'ⰿ',
+            Glagolitic::SmallLetterNashi => 'ⱀ',
+            Glagolitic::SmallLetterOnu => 'ⱁ',
+            Glagolitic::SmallLetterPokoji => 'ⱂ',
+            Glagolitic::SmallLetterRitsi => 'ⱃ',
+            Glagolitic::SmallLetterSlovo => 'ⱄ',
+            Glagolitic::SmallLetterTvrido => 'ⱅ',
+            Glagolitic::SmallLetterUku => 'ⱆ',
+            Glagolitic::SmallLetterFritu => 'ⱇ',
+            Glagolitic::SmallLetterHeru => 'ⱈ',
+            Glagolitic::SmallLetterOtu => 'ⱉ',
+            Glagolitic::SmallLetterPe => 'ⱊ',
+            Glagolitic::SmallLetterShta => 'ⱋ',
+            Glagolitic::SmallLetterTsi => 'ⱌ',
+            Glagolitic::SmallLetterChrivi => 'ⱍ',
+            Glagolitic::SmallLetterSha => 'ⱎ',
+            Glagolitic::SmallLetterYeru => 'ⱏ',
+            Glagolitic::SmallLetterYeri => 'ⱐ',
+            Glagolitic::SmallLetterYati => 'ⱑ',
+            Glagolitic::SmallLetterSpideryHa => 'ⱒ',
+            Glagolitic::SmallLetterYu => 'ⱓ',
+            Glagolitic::SmallLetterSmallYus => 'ⱔ',
+            Glagolitic::SmallLetterSmallYusWithTail => 'ⱕ',
+            Glagolitic::SmallLetterYo => 'ⱖ',
+            Glagolitic::SmallLetterIotatedSmallYus => 'ⱗ',
+            Glagolitic::SmallLetterBigYus => 'ⱘ',
+            Glagolitic::SmallLetterIotatedBigYus => 'ⱙ',
+            Glagolitic::SmallLetterFita => 'ⱚ',
+            Glagolitic::SmallLetterIzhitsa => 'ⱛ',
+            Glagolitic::SmallLetterShtapic => 'ⱜ',
+            Glagolitic::SmallLetterTrokutastiA => 'ⱝ',
+            Glagolitic::SmallLetterLatinateMyslite => 'ⱞ',
         }
     }
 }
@@ -488,102 +296,101 @@ impl Into<char> for Glagolitic {
 impl std::convert::TryFrom<char> for Glagolitic {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CAPITAL_LETTER_AZU => Ok(Glagolitic::CapitalLetterAzu),
-            CAPITAL_LETTER_BUKY => Ok(Glagolitic::CapitalLetterBuky),
-            CAPITAL_LETTER_VEDE => Ok(Glagolitic::CapitalLetterVede),
-            CAPITAL_LETTER_GLAGOLI => Ok(Glagolitic::CapitalLetterGlagoli),
-            CAPITAL_LETTER_DOBRO => Ok(Glagolitic::CapitalLetterDobro),
-            CAPITAL_LETTER_YESTU => Ok(Glagolitic::CapitalLetterYestu),
-            CAPITAL_LETTER_ZHIVETE => Ok(Glagolitic::CapitalLetterZhivete),
-            CAPITAL_LETTER_DZELO => Ok(Glagolitic::CapitalLetterDzelo),
-            CAPITAL_LETTER_ZEMLJA => Ok(Glagolitic::CapitalLetterZemlja),
-            CAPITAL_LETTER_IZHE => Ok(Glagolitic::CapitalLetterIzhe),
-            CAPITAL_LETTER_INITIAL_IZHE => Ok(Glagolitic::CapitalLetterInitialIzhe),
-            CAPITAL_LETTER_I => Ok(Glagolitic::CapitalLetterI),
-            CAPITAL_LETTER_DJERVI => Ok(Glagolitic::CapitalLetterDjervi),
-            CAPITAL_LETTER_KAKO => Ok(Glagolitic::CapitalLetterKako),
-            CAPITAL_LETTER_LJUDIJE => Ok(Glagolitic::CapitalLetterLjudije),
-            CAPITAL_LETTER_MYSLITE => Ok(Glagolitic::CapitalLetterMyslite),
-            CAPITAL_LETTER_NASHI => Ok(Glagolitic::CapitalLetterNashi),
-            CAPITAL_LETTER_ONU => Ok(Glagolitic::CapitalLetterOnu),
-            CAPITAL_LETTER_POKOJI => Ok(Glagolitic::CapitalLetterPokoji),
-            CAPITAL_LETTER_RITSI => Ok(Glagolitic::CapitalLetterRitsi),
-            CAPITAL_LETTER_SLOVO => Ok(Glagolitic::CapitalLetterSlovo),
-            CAPITAL_LETTER_TVRIDO => Ok(Glagolitic::CapitalLetterTvrido),
-            CAPITAL_LETTER_UKU => Ok(Glagolitic::CapitalLetterUku),
-            CAPITAL_LETTER_FRITU => Ok(Glagolitic::CapitalLetterFritu),
-            CAPITAL_LETTER_HERU => Ok(Glagolitic::CapitalLetterHeru),
-            CAPITAL_LETTER_OTU => Ok(Glagolitic::CapitalLetterOtu),
-            CAPITAL_LETTER_PE => Ok(Glagolitic::CapitalLetterPe),
-            CAPITAL_LETTER_SHTA => Ok(Glagolitic::CapitalLetterShta),
-            CAPITAL_LETTER_TSI => Ok(Glagolitic::CapitalLetterTsi),
-            CAPITAL_LETTER_CHRIVI => Ok(Glagolitic::CapitalLetterChrivi),
-            CAPITAL_LETTER_SHA => Ok(Glagolitic::CapitalLetterSha),
-            CAPITAL_LETTER_YERU => Ok(Glagolitic::CapitalLetterYeru),
-            CAPITAL_LETTER_YERI => Ok(Glagolitic::CapitalLetterYeri),
-            CAPITAL_LETTER_YATI => Ok(Glagolitic::CapitalLetterYati),
-            CAPITAL_LETTER_SPIDERY_HA => Ok(Glagolitic::CapitalLetterSpideryHa),
-            CAPITAL_LETTER_YU => Ok(Glagolitic::CapitalLetterYu),
-            CAPITAL_LETTER_SMALL_YUS => Ok(Glagolitic::CapitalLetterSmallYus),
-            CAPITAL_LETTER_SMALL_YUS_WITH_TAIL => Ok(Glagolitic::CapitalLetterSmallYusWithTail),
-            CAPITAL_LETTER_YO => Ok(Glagolitic::CapitalLetterYo),
-            CAPITAL_LETTER_IOTATED_SMALL_YUS => Ok(Glagolitic::CapitalLetterIotatedSmallYus),
-            CAPITAL_LETTER_BIG_YUS => Ok(Glagolitic::CapitalLetterBigYus),
-            CAPITAL_LETTER_IOTATED_BIG_YUS => Ok(Glagolitic::CapitalLetterIotatedBigYus),
-            CAPITAL_LETTER_FITA => Ok(Glagolitic::CapitalLetterFita),
-            CAPITAL_LETTER_IZHITSA => Ok(Glagolitic::CapitalLetterIzhitsa),
-            CAPITAL_LETTER_SHTAPIC => Ok(Glagolitic::CapitalLetterShtapic),
-            CAPITAL_LETTER_TROKUTASTI_A => Ok(Glagolitic::CapitalLetterTrokutastiA),
-            CAPITAL_LETTER_LATINATE_MYSLITE => Ok(Glagolitic::CapitalLetterLatinateMyslite),
-            SMALL_LETTER_AZU => Ok(Glagolitic::SmallLetterAzu),
-            SMALL_LETTER_BUKY => Ok(Glagolitic::SmallLetterBuky),
-            SMALL_LETTER_VEDE => Ok(Glagolitic::SmallLetterVede),
-            SMALL_LETTER_GLAGOLI => Ok(Glagolitic::SmallLetterGlagoli),
-            SMALL_LETTER_DOBRO => Ok(Glagolitic::SmallLetterDobro),
-            SMALL_LETTER_YESTU => Ok(Glagolitic::SmallLetterYestu),
-            SMALL_LETTER_ZHIVETE => Ok(Glagolitic::SmallLetterZhivete),
-            SMALL_LETTER_DZELO => Ok(Glagolitic::SmallLetterDzelo),
-            SMALL_LETTER_ZEMLJA => Ok(Glagolitic::SmallLetterZemlja),
-            SMALL_LETTER_IZHE => Ok(Glagolitic::SmallLetterIzhe),
-            SMALL_LETTER_INITIAL_IZHE => Ok(Glagolitic::SmallLetterInitialIzhe),
-            SMALL_LETTER_I => Ok(Glagolitic::SmallLetterI),
-            SMALL_LETTER_DJERVI => Ok(Glagolitic::SmallLetterDjervi),
-            SMALL_LETTER_KAKO => Ok(Glagolitic::SmallLetterKako),
-            SMALL_LETTER_LJUDIJE => Ok(Glagolitic::SmallLetterLjudije),
-            SMALL_LETTER_MYSLITE => Ok(Glagolitic::SmallLetterMyslite),
-            SMALL_LETTER_NASHI => Ok(Glagolitic::SmallLetterNashi),
-            SMALL_LETTER_ONU => Ok(Glagolitic::SmallLetterOnu),
-            SMALL_LETTER_POKOJI => Ok(Glagolitic::SmallLetterPokoji),
-            SMALL_LETTER_RITSI => Ok(Glagolitic::SmallLetterRitsi),
-            SMALL_LETTER_SLOVO => Ok(Glagolitic::SmallLetterSlovo),
-            SMALL_LETTER_TVRIDO => Ok(Glagolitic::SmallLetterTvrido),
-            SMALL_LETTER_UKU => Ok(Glagolitic::SmallLetterUku),
-            SMALL_LETTER_FRITU => Ok(Glagolitic::SmallLetterFritu),
-            SMALL_LETTER_HERU => Ok(Glagolitic::SmallLetterHeru),
-            SMALL_LETTER_OTU => Ok(Glagolitic::SmallLetterOtu),
-            SMALL_LETTER_PE => Ok(Glagolitic::SmallLetterPe),
-            SMALL_LETTER_SHTA => Ok(Glagolitic::SmallLetterShta),
-            SMALL_LETTER_TSI => Ok(Glagolitic::SmallLetterTsi),
-            SMALL_LETTER_CHRIVI => Ok(Glagolitic::SmallLetterChrivi),
-            SMALL_LETTER_SHA => Ok(Glagolitic::SmallLetterSha),
-            SMALL_LETTER_YERU => Ok(Glagolitic::SmallLetterYeru),
-            SMALL_LETTER_YERI => Ok(Glagolitic::SmallLetterYeri),
-            SMALL_LETTER_YATI => Ok(Glagolitic::SmallLetterYati),
-            SMALL_LETTER_SPIDERY_HA => Ok(Glagolitic::SmallLetterSpideryHa),
-            SMALL_LETTER_YU => Ok(Glagolitic::SmallLetterYu),
-            SMALL_LETTER_SMALL_YUS => Ok(Glagolitic::SmallLetterSmallYus),
-            SMALL_LETTER_SMALL_YUS_WITH_TAIL => Ok(Glagolitic::SmallLetterSmallYusWithTail),
-            SMALL_LETTER_YO => Ok(Glagolitic::SmallLetterYo),
-            SMALL_LETTER_IOTATED_SMALL_YUS => Ok(Glagolitic::SmallLetterIotatedSmallYus),
-            SMALL_LETTER_BIG_YUS => Ok(Glagolitic::SmallLetterBigYus),
-            SMALL_LETTER_IOTATED_BIG_YUS => Ok(Glagolitic::SmallLetterIotatedBigYus),
-            SMALL_LETTER_FITA => Ok(Glagolitic::SmallLetterFita),
-            SMALL_LETTER_IZHITSA => Ok(Glagolitic::SmallLetterIzhitsa),
-            SMALL_LETTER_SHTAPIC => Ok(Glagolitic::SmallLetterShtapic),
-            SMALL_LETTER_TROKUTASTI_A => Ok(Glagolitic::SmallLetterTrokutastiA),
-            SMALL_LETTER_LATINATE_MYSLITE => Ok(Glagolitic::SmallLetterLatinateMyslite),
+            'Ⰰ' => Ok(Glagolitic::CapitalLetterAzu),
+            'Ⰱ' => Ok(Glagolitic::CapitalLetterBuky),
+            'Ⰲ' => Ok(Glagolitic::CapitalLetterVede),
+            'Ⰳ' => Ok(Glagolitic::CapitalLetterGlagoli),
+            'Ⰴ' => Ok(Glagolitic::CapitalLetterDobro),
+            'Ⰵ' => Ok(Glagolitic::CapitalLetterYestu),
+            'Ⰶ' => Ok(Glagolitic::CapitalLetterZhivete),
+            'Ⰷ' => Ok(Glagolitic::CapitalLetterDzelo),
+            'Ⰸ' => Ok(Glagolitic::CapitalLetterZemlja),
+            'Ⰹ' => Ok(Glagolitic::CapitalLetterIzhe),
+            'Ⰺ' => Ok(Glagolitic::CapitalLetterInitialIzhe),
+            'Ⰻ' => Ok(Glagolitic::CapitalLetterI),
+            'Ⰼ' => Ok(Glagolitic::CapitalLetterDjervi),
+            'Ⰽ' => Ok(Glagolitic::CapitalLetterKako),
+            'Ⰾ' => Ok(Glagolitic::CapitalLetterLjudije),
+            'Ⰿ' => Ok(Glagolitic::CapitalLetterMyslite),
+            'Ⱀ' => Ok(Glagolitic::CapitalLetterNashi),
+            'Ⱁ' => Ok(Glagolitic::CapitalLetterOnu),
+            'Ⱂ' => Ok(Glagolitic::CapitalLetterPokoji),
+            'Ⱃ' => Ok(Glagolitic::CapitalLetterRitsi),
+            'Ⱄ' => Ok(Glagolitic::CapitalLetterSlovo),
+            'Ⱅ' => Ok(Glagolitic::CapitalLetterTvrido),
+            'Ⱆ' => Ok(Glagolitic::CapitalLetterUku),
+            'Ⱇ' => Ok(Glagolitic::CapitalLetterFritu),
+            'Ⱈ' => Ok(Glagolitic::CapitalLetterHeru),
+            'Ⱉ' => Ok(Glagolitic::CapitalLetterOtu),
+            'Ⱊ' => Ok(Glagolitic::CapitalLetterPe),
+            'Ⱋ' => Ok(Glagolitic::CapitalLetterShta),
+            'Ⱌ' => Ok(Glagolitic::CapitalLetterTsi),
+            'Ⱍ' => Ok(Glagolitic::CapitalLetterChrivi),
+            'Ⱎ' => Ok(Glagolitic::CapitalLetterSha),
+            'Ⱏ' => Ok(Glagolitic::CapitalLetterYeru),
+            'Ⱐ' => Ok(Glagolitic::CapitalLetterYeri),
+            'Ⱑ' => Ok(Glagolitic::CapitalLetterYati),
+            'Ⱒ' => Ok(Glagolitic::CapitalLetterSpideryHa),
+            'Ⱓ' => Ok(Glagolitic::CapitalLetterYu),
+            'Ⱔ' => Ok(Glagolitic::CapitalLetterSmallYus),
+            'Ⱕ' => Ok(Glagolitic::CapitalLetterSmallYusWithTail),
+            'Ⱖ' => Ok(Glagolitic::CapitalLetterYo),
+            'Ⱗ' => Ok(Glagolitic::CapitalLetterIotatedSmallYus),
+            'Ⱘ' => Ok(Glagolitic::CapitalLetterBigYus),
+            'Ⱙ' => Ok(Glagolitic::CapitalLetterIotatedBigYus),
+            'Ⱚ' => Ok(Glagolitic::CapitalLetterFita),
+            'Ⱛ' => Ok(Glagolitic::CapitalLetterIzhitsa),
+            'Ⱜ' => Ok(Glagolitic::CapitalLetterShtapic),
+            'Ⱝ' => Ok(Glagolitic::CapitalLetterTrokutastiA),
+            'Ⱞ' => Ok(Glagolitic::CapitalLetterLatinateMyslite),
+            'ⰰ' => Ok(Glagolitic::SmallLetterAzu),
+            'ⰱ' => Ok(Glagolitic::SmallLetterBuky),
+            'ⰲ' => Ok(Glagolitic::SmallLetterVede),
+            'ⰳ' => Ok(Glagolitic::SmallLetterGlagoli),
+            'ⰴ' => Ok(Glagolitic::SmallLetterDobro),
+            'ⰵ' => Ok(Glagolitic::SmallLetterYestu),
+            'ⰶ' => Ok(Glagolitic::SmallLetterZhivete),
+            'ⰷ' => Ok(Glagolitic::SmallLetterDzelo),
+            'ⰸ' => Ok(Glagolitic::SmallLetterZemlja),
+            'ⰹ' => Ok(Glagolitic::SmallLetterIzhe),
+            'ⰺ' => Ok(Glagolitic::SmallLetterInitialIzhe),
+            'ⰻ' => Ok(Glagolitic::SmallLetterI),
+            'ⰼ' => Ok(Glagolitic::SmallLetterDjervi),
+            'ⰽ' => Ok(Glagolitic::SmallLetterKako),
+            'ⰾ' => Ok(Glagolitic::SmallLetterLjudije),
+            'ⰿ' => Ok(Glagolitic::SmallLetterMyslite),
+            'ⱀ' => Ok(Glagolitic::SmallLetterNashi),
+            'ⱁ' => Ok(Glagolitic::SmallLetterOnu),
+            'ⱂ' => Ok(Glagolitic::SmallLetterPokoji),
+            'ⱃ' => Ok(Glagolitic::SmallLetterRitsi),
+            'ⱄ' => Ok(Glagolitic::SmallLetterSlovo),
+            'ⱅ' => Ok(Glagolitic::SmallLetterTvrido),
+            'ⱆ' => Ok(Glagolitic::SmallLetterUku),
+            'ⱇ' => Ok(Glagolitic::SmallLetterFritu),
+            'ⱈ' => Ok(Glagolitic::SmallLetterHeru),
+            'ⱉ' => Ok(Glagolitic::SmallLetterOtu),
+            'ⱊ' => Ok(Glagolitic::SmallLetterPe),
+            'ⱋ' => Ok(Glagolitic::SmallLetterShta),
+            'ⱌ' => Ok(Glagolitic::SmallLetterTsi),
+            'ⱍ' => Ok(Glagolitic::SmallLetterChrivi),
+            'ⱎ' => Ok(Glagolitic::SmallLetterSha),
+            'ⱏ' => Ok(Glagolitic::SmallLetterYeru),
+            'ⱐ' => Ok(Glagolitic::SmallLetterYeri),
+            'ⱑ' => Ok(Glagolitic::SmallLetterYati),
+            'ⱒ' => Ok(Glagolitic::SmallLetterSpideryHa),
+            'ⱓ' => Ok(Glagolitic::SmallLetterYu),
+            'ⱔ' => Ok(Glagolitic::SmallLetterSmallYus),
+            'ⱕ' => Ok(Glagolitic::SmallLetterSmallYusWithTail),
+            'ⱖ' => Ok(Glagolitic::SmallLetterYo),
+            'ⱗ' => Ok(Glagolitic::SmallLetterIotatedSmallYus),
+            'ⱘ' => Ok(Glagolitic::SmallLetterBigYus),
+            'ⱙ' => Ok(Glagolitic::SmallLetterIotatedBigYus),
+            'ⱚ' => Ok(Glagolitic::SmallLetterFita),
+            'ⱛ' => Ok(Glagolitic::SmallLetterIzhitsa),
+            'ⱜ' => Ok(Glagolitic::SmallLetterShtapic),
+            'ⱝ' => Ok(Glagolitic::SmallLetterTrokutastiA),
+            'ⱞ' => Ok(Glagolitic::SmallLetterLatinateMyslite),
             _ => Err(()),
         }
     }

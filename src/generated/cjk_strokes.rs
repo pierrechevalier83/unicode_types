@@ -1,78 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{31c0}: '㇀'
-    pub const CJK_STROKE_T: char = '㇀';
-    /// \u{31c1}: '㇁'
-    pub const CJK_STROKE_WG: char = '㇁';
-    /// \u{31c2}: '㇂'
-    pub const CJK_STROKE_XG: char = '㇂';
-    /// \u{31c3}: '㇃'
-    pub const CJK_STROKE_BXG: char = '㇃';
-    /// \u{31c4}: '㇄'
-    pub const CJK_STROKE_SW: char = '㇄';
-    /// \u{31c5}: '㇅'
-    pub const CJK_STROKE_HZZ: char = '㇅';
-    /// \u{31c6}: '㇆'
-    pub const CJK_STROKE_HZG: char = '㇆';
-    /// \u{31c7}: '㇇'
-    pub const CJK_STROKE_HP: char = '㇇';
-    /// \u{31c8}: '㇈'
-    pub const CJK_STROKE_HZWG: char = '㇈';
-    /// \u{31c9}: '㇉'
-    pub const CJK_STROKE_SZWG: char = '㇉';
-    /// \u{31ca}: '㇊'
-    pub const CJK_STROKE_HZT: char = '㇊';
-    /// \u{31cb}: '㇋'
-    pub const CJK_STROKE_HZZP: char = '㇋';
-    /// \u{31cc}: '㇌'
-    pub const CJK_STROKE_HPWG: char = '㇌';
-    /// \u{31cd}: '㇍'
-    pub const CJK_STROKE_HZW: char = '㇍';
-    /// \u{31ce}: '㇎'
-    pub const CJK_STROKE_HZZZ: char = '㇎';
-    /// \u{31cf}: '㇏'
-    pub const CJK_STROKE_N: char = '㇏';
-    /// \u{31d0}: '㇐'
-    pub const CJK_STROKE_H: char = '㇐';
-    /// \u{31d1}: '㇑'
-    pub const CJK_STROKE_S: char = '㇑';
-    /// \u{31d2}: '㇒'
-    pub const CJK_STROKE_P: char = '㇒';
-    /// \u{31d3}: '㇓'
-    pub const CJK_STROKE_SP: char = '㇓';
-    /// \u{31d4}: '㇔'
-    pub const CJK_STROKE_D: char = '㇔';
-    /// \u{31d5}: '㇕'
-    pub const CJK_STROKE_HZ: char = '㇕';
-    /// \u{31d6}: '㇖'
-    pub const CJK_STROKE_HG: char = '㇖';
-    /// \u{31d7}: '㇗'
-    pub const CJK_STROKE_SZ: char = '㇗';
-    /// \u{31d8}: '㇘'
-    pub const CJK_STROKE_SWZ: char = '㇘';
-    /// \u{31d9}: '㇙'
-    pub const CJK_STROKE_ST: char = '㇙';
-    /// \u{31da}: '㇚'
-    pub const CJK_STROKE_SG: char = '㇚';
-    /// \u{31db}: '㇛'
-    pub const CJK_STROKE_PD: char = '㇛';
-    /// \u{31dc}: '㇜'
-    pub const CJK_STROKE_PZ: char = '㇜';
-    /// \u{31dd}: '㇝'
-    pub const CJK_STROKE_TN: char = '㇝';
-    /// \u{31de}: '㇞'
-    pub const CJK_STROKE_SZZ: char = '㇞';
-    /// \u{31df}: '㇟'
-    pub const CJK_STROKE_SWG: char = '㇟';
-    /// \u{31e0}: '㇠'
-    pub const CJK_STROKE_HXWG: char = '㇠';
-    /// \u{31e1}: '㇡'
-    pub const CJK_STROKE_HZZZG: char = '㇡';
-    /// \u{31e2}: '㇢'
-    pub const CJK_STROKE_PG: char = '㇢';
-    /// \u{31e3}: '㇣'
-    pub const CJK_STROKE_Q: char = '㇣';
-}
 
 /// An enum to represent all characters in the CJKStrokes block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -153,44 +78,43 @@ pub enum CJKStrokes {
 
 impl Into<char> for CJKStrokes {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CJKStrokes::CjkStrokeT => CJK_STROKE_T,
-            CJKStrokes::CjkStrokeWg => CJK_STROKE_WG,
-            CJKStrokes::CjkStrokeXg => CJK_STROKE_XG,
-            CJKStrokes::CjkStrokeBxg => CJK_STROKE_BXG,
-            CJKStrokes::CjkStrokeSw => CJK_STROKE_SW,
-            CJKStrokes::CjkStrokeHzz => CJK_STROKE_HZZ,
-            CJKStrokes::CjkStrokeHzg => CJK_STROKE_HZG,
-            CJKStrokes::CjkStrokeHp => CJK_STROKE_HP,
-            CJKStrokes::CjkStrokeHzwg => CJK_STROKE_HZWG,
-            CJKStrokes::CjkStrokeSzwg => CJK_STROKE_SZWG,
-            CJKStrokes::CjkStrokeHzt => CJK_STROKE_HZT,
-            CJKStrokes::CjkStrokeHzzp => CJK_STROKE_HZZP,
-            CJKStrokes::CjkStrokeHpwg => CJK_STROKE_HPWG,
-            CJKStrokes::CjkStrokeHzw => CJK_STROKE_HZW,
-            CJKStrokes::CjkStrokeHzzz => CJK_STROKE_HZZZ,
-            CJKStrokes::CjkStrokeN => CJK_STROKE_N,
-            CJKStrokes::CjkStrokeH => CJK_STROKE_H,
-            CJKStrokes::CjkStrokeS => CJK_STROKE_S,
-            CJKStrokes::CjkStrokeP => CJK_STROKE_P,
-            CJKStrokes::CjkStrokeSp => CJK_STROKE_SP,
-            CJKStrokes::CjkStrokeD => CJK_STROKE_D,
-            CJKStrokes::CjkStrokeHz => CJK_STROKE_HZ,
-            CJKStrokes::CjkStrokeHg => CJK_STROKE_HG,
-            CJKStrokes::CjkStrokeSz => CJK_STROKE_SZ,
-            CJKStrokes::CjkStrokeSwz => CJK_STROKE_SWZ,
-            CJKStrokes::CjkStrokeSt => CJK_STROKE_ST,
-            CJKStrokes::CjkStrokeSg => CJK_STROKE_SG,
-            CJKStrokes::CjkStrokePd => CJK_STROKE_PD,
-            CJKStrokes::CjkStrokePz => CJK_STROKE_PZ,
-            CJKStrokes::CjkStrokeTn => CJK_STROKE_TN,
-            CJKStrokes::CjkStrokeSzz => CJK_STROKE_SZZ,
-            CJKStrokes::CjkStrokeSwg => CJK_STROKE_SWG,
-            CJKStrokes::CjkStrokeHxwg => CJK_STROKE_HXWG,
-            CJKStrokes::CjkStrokeHzzzg => CJK_STROKE_HZZZG,
-            CJKStrokes::CjkStrokePg => CJK_STROKE_PG,
-            CJKStrokes::CjkStrokeQ => CJK_STROKE_Q,
+            CJKStrokes::CjkStrokeT => '㇀',
+            CJKStrokes::CjkStrokeWg => '㇁',
+            CJKStrokes::CjkStrokeXg => '㇂',
+            CJKStrokes::CjkStrokeBxg => '㇃',
+            CJKStrokes::CjkStrokeSw => '㇄',
+            CJKStrokes::CjkStrokeHzz => '㇅',
+            CJKStrokes::CjkStrokeHzg => '㇆',
+            CJKStrokes::CjkStrokeHp => '㇇',
+            CJKStrokes::CjkStrokeHzwg => '㇈',
+            CJKStrokes::CjkStrokeSzwg => '㇉',
+            CJKStrokes::CjkStrokeHzt => '㇊',
+            CJKStrokes::CjkStrokeHzzp => '㇋',
+            CJKStrokes::CjkStrokeHpwg => '㇌',
+            CJKStrokes::CjkStrokeHzw => '㇍',
+            CJKStrokes::CjkStrokeHzzz => '㇎',
+            CJKStrokes::CjkStrokeN => '㇏',
+            CJKStrokes::CjkStrokeH => '㇐',
+            CJKStrokes::CjkStrokeS => '㇑',
+            CJKStrokes::CjkStrokeP => '㇒',
+            CJKStrokes::CjkStrokeSp => '㇓',
+            CJKStrokes::CjkStrokeD => '㇔',
+            CJKStrokes::CjkStrokeHz => '㇕',
+            CJKStrokes::CjkStrokeHg => '㇖',
+            CJKStrokes::CjkStrokeSz => '㇗',
+            CJKStrokes::CjkStrokeSwz => '㇘',
+            CJKStrokes::CjkStrokeSt => '㇙',
+            CJKStrokes::CjkStrokeSg => '㇚',
+            CJKStrokes::CjkStrokePd => '㇛',
+            CJKStrokes::CjkStrokePz => '㇜',
+            CJKStrokes::CjkStrokeTn => '㇝',
+            CJKStrokes::CjkStrokeSzz => '㇞',
+            CJKStrokes::CjkStrokeSwg => '㇟',
+            CJKStrokes::CjkStrokeHxwg => '㇠',
+            CJKStrokes::CjkStrokeHzzzg => '㇡',
+            CJKStrokes::CjkStrokePg => '㇢',
+            CJKStrokes::CjkStrokeQ => '㇣',
         }
     }
 }
@@ -198,44 +122,43 @@ impl Into<char> for CJKStrokes {
 impl std::convert::TryFrom<char> for CJKStrokes {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CJK_STROKE_T => Ok(CJKStrokes::CjkStrokeT),
-            CJK_STROKE_WG => Ok(CJKStrokes::CjkStrokeWg),
-            CJK_STROKE_XG => Ok(CJKStrokes::CjkStrokeXg),
-            CJK_STROKE_BXG => Ok(CJKStrokes::CjkStrokeBxg),
-            CJK_STROKE_SW => Ok(CJKStrokes::CjkStrokeSw),
-            CJK_STROKE_HZZ => Ok(CJKStrokes::CjkStrokeHzz),
-            CJK_STROKE_HZG => Ok(CJKStrokes::CjkStrokeHzg),
-            CJK_STROKE_HP => Ok(CJKStrokes::CjkStrokeHp),
-            CJK_STROKE_HZWG => Ok(CJKStrokes::CjkStrokeHzwg),
-            CJK_STROKE_SZWG => Ok(CJKStrokes::CjkStrokeSzwg),
-            CJK_STROKE_HZT => Ok(CJKStrokes::CjkStrokeHzt),
-            CJK_STROKE_HZZP => Ok(CJKStrokes::CjkStrokeHzzp),
-            CJK_STROKE_HPWG => Ok(CJKStrokes::CjkStrokeHpwg),
-            CJK_STROKE_HZW => Ok(CJKStrokes::CjkStrokeHzw),
-            CJK_STROKE_HZZZ => Ok(CJKStrokes::CjkStrokeHzzz),
-            CJK_STROKE_N => Ok(CJKStrokes::CjkStrokeN),
-            CJK_STROKE_H => Ok(CJKStrokes::CjkStrokeH),
-            CJK_STROKE_S => Ok(CJKStrokes::CjkStrokeS),
-            CJK_STROKE_P => Ok(CJKStrokes::CjkStrokeP),
-            CJK_STROKE_SP => Ok(CJKStrokes::CjkStrokeSp),
-            CJK_STROKE_D => Ok(CJKStrokes::CjkStrokeD),
-            CJK_STROKE_HZ => Ok(CJKStrokes::CjkStrokeHz),
-            CJK_STROKE_HG => Ok(CJKStrokes::CjkStrokeHg),
-            CJK_STROKE_SZ => Ok(CJKStrokes::CjkStrokeSz),
-            CJK_STROKE_SWZ => Ok(CJKStrokes::CjkStrokeSwz),
-            CJK_STROKE_ST => Ok(CJKStrokes::CjkStrokeSt),
-            CJK_STROKE_SG => Ok(CJKStrokes::CjkStrokeSg),
-            CJK_STROKE_PD => Ok(CJKStrokes::CjkStrokePd),
-            CJK_STROKE_PZ => Ok(CJKStrokes::CjkStrokePz),
-            CJK_STROKE_TN => Ok(CJKStrokes::CjkStrokeTn),
-            CJK_STROKE_SZZ => Ok(CJKStrokes::CjkStrokeSzz),
-            CJK_STROKE_SWG => Ok(CJKStrokes::CjkStrokeSwg),
-            CJK_STROKE_HXWG => Ok(CJKStrokes::CjkStrokeHxwg),
-            CJK_STROKE_HZZZG => Ok(CJKStrokes::CjkStrokeHzzzg),
-            CJK_STROKE_PG => Ok(CJKStrokes::CjkStrokePg),
-            CJK_STROKE_Q => Ok(CJKStrokes::CjkStrokeQ),
+            '㇀' => Ok(CJKStrokes::CjkStrokeT),
+            '㇁' => Ok(CJKStrokes::CjkStrokeWg),
+            '㇂' => Ok(CJKStrokes::CjkStrokeXg),
+            '㇃' => Ok(CJKStrokes::CjkStrokeBxg),
+            '㇄' => Ok(CJKStrokes::CjkStrokeSw),
+            '㇅' => Ok(CJKStrokes::CjkStrokeHzz),
+            '㇆' => Ok(CJKStrokes::CjkStrokeHzg),
+            '㇇' => Ok(CJKStrokes::CjkStrokeHp),
+            '㇈' => Ok(CJKStrokes::CjkStrokeHzwg),
+            '㇉' => Ok(CJKStrokes::CjkStrokeSzwg),
+            '㇊' => Ok(CJKStrokes::CjkStrokeHzt),
+            '㇋' => Ok(CJKStrokes::CjkStrokeHzzp),
+            '㇌' => Ok(CJKStrokes::CjkStrokeHpwg),
+            '㇍' => Ok(CJKStrokes::CjkStrokeHzw),
+            '㇎' => Ok(CJKStrokes::CjkStrokeHzzz),
+            '㇏' => Ok(CJKStrokes::CjkStrokeN),
+            '㇐' => Ok(CJKStrokes::CjkStrokeH),
+            '㇑' => Ok(CJKStrokes::CjkStrokeS),
+            '㇒' => Ok(CJKStrokes::CjkStrokeP),
+            '㇓' => Ok(CJKStrokes::CjkStrokeSp),
+            '㇔' => Ok(CJKStrokes::CjkStrokeD),
+            '㇕' => Ok(CJKStrokes::CjkStrokeHz),
+            '㇖' => Ok(CJKStrokes::CjkStrokeHg),
+            '㇗' => Ok(CJKStrokes::CjkStrokeSz),
+            '㇘' => Ok(CJKStrokes::CjkStrokeSwz),
+            '㇙' => Ok(CJKStrokes::CjkStrokeSt),
+            '㇚' => Ok(CJKStrokes::CjkStrokeSg),
+            '㇛' => Ok(CJKStrokes::CjkStrokePd),
+            '㇜' => Ok(CJKStrokes::CjkStrokePz),
+            '㇝' => Ok(CJKStrokes::CjkStrokeTn),
+            '㇞' => Ok(CJKStrokes::CjkStrokeSzz),
+            '㇟' => Ok(CJKStrokes::CjkStrokeSwg),
+            '㇠' => Ok(CJKStrokes::CjkStrokeHxwg),
+            '㇡' => Ok(CJKStrokes::CjkStrokeHzzzg),
+            '㇢' => Ok(CJKStrokes::CjkStrokePg),
+            '㇣' => Ok(CJKStrokes::CjkStrokeQ),
             _ => Err(()),
         }
     }

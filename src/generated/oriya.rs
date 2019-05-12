@@ -1,186 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{b01}: 'ଁ'
-    pub const SIGN_CANDRABINDU: char = 'ଁ';
-    /// \u{b02}: 'ଂ'
-    pub const SIGN_ANUSVARA: char = 'ଂ';
-    /// \u{b03}: 'ଃ'
-    pub const SIGN_VISARGA: char = 'ଃ';
-    /// \u{b05}: 'ଅ'
-    pub const LETTER_A: char = 'ଅ';
-    /// \u{b06}: 'ଆ'
-    pub const LETTER_AA: char = 'ଆ';
-    /// \u{b07}: 'ଇ'
-    pub const LETTER_I: char = 'ଇ';
-    /// \u{b08}: 'ଈ'
-    pub const LETTER_II: char = 'ଈ';
-    /// \u{b09}: 'ଉ'
-    pub const LETTER_U: char = 'ଉ';
-    /// \u{b0a}: 'ଊ'
-    pub const LETTER_UU: char = 'ଊ';
-    /// \u{b0b}: 'ଋ'
-    pub const LETTER_VOCALIC_R: char = 'ଋ';
-    /// \u{b0c}: 'ଌ'
-    pub const LETTER_VOCALIC_L: char = 'ଌ';
-    /// \u{b0f}: 'ଏ'
-    pub const LETTER_E: char = 'ଏ';
-    /// \u{b10}: 'ଐ'
-    pub const LETTER_AI: char = 'ଐ';
-    /// \u{b13}: 'ଓ'
-    pub const LETTER_O: char = 'ଓ';
-    /// \u{b14}: 'ଔ'
-    pub const LETTER_AU: char = 'ଔ';
-    /// \u{b15}: 'କ'
-    pub const LETTER_KA: char = 'କ';
-    /// \u{b16}: 'ଖ'
-    pub const LETTER_KHA: char = 'ଖ';
-    /// \u{b17}: 'ଗ'
-    pub const LETTER_GA: char = 'ଗ';
-    /// \u{b18}: 'ଘ'
-    pub const LETTER_GHA: char = 'ଘ';
-    /// \u{b19}: 'ଙ'
-    pub const LETTER_NGA: char = 'ଙ';
-    /// \u{b1a}: 'ଚ'
-    pub const LETTER_CA: char = 'ଚ';
-    /// \u{b1b}: 'ଛ'
-    pub const LETTER_CHA: char = 'ଛ';
-    /// \u{b1c}: 'ଜ'
-    pub const LETTER_JA: char = 'ଜ';
-    /// \u{b1d}: 'ଝ'
-    pub const LETTER_JHA: char = 'ଝ';
-    /// \u{b1e}: 'ଞ'
-    pub const LETTER_NYA: char = 'ଞ';
-    /// \u{b1f}: 'ଟ'
-    pub const LETTER_TTA: char = 'ଟ';
-    /// \u{b20}: 'ଠ'
-    pub const LETTER_TTHA: char = 'ଠ';
-    /// \u{b21}: 'ଡ'
-    pub const LETTER_DDA: char = 'ଡ';
-    /// \u{b22}: 'ଢ'
-    pub const LETTER_DDHA: char = 'ଢ';
-    /// \u{b23}: 'ଣ'
-    pub const LETTER_NNA: char = 'ଣ';
-    /// \u{b24}: 'ତ'
-    pub const LETTER_TA: char = 'ତ';
-    /// \u{b25}: 'ଥ'
-    pub const LETTER_THA: char = 'ଥ';
-    /// \u{b26}: 'ଦ'
-    pub const LETTER_DA: char = 'ଦ';
-    /// \u{b27}: 'ଧ'
-    pub const LETTER_DHA: char = 'ଧ';
-    /// \u{b28}: 'ନ'
-    pub const LETTER_NA: char = 'ନ';
-    /// \u{b2a}: 'ପ'
-    pub const LETTER_PA: char = 'ପ';
-    /// \u{b2b}: 'ଫ'
-    pub const LETTER_PHA: char = 'ଫ';
-    /// \u{b2c}: 'ବ'
-    pub const LETTER_BA: char = 'ବ';
-    /// \u{b2d}: 'ଭ'
-    pub const LETTER_BHA: char = 'ଭ';
-    /// \u{b2e}: 'ମ'
-    pub const LETTER_MA: char = 'ମ';
-    /// \u{b2f}: 'ଯ'
-    pub const LETTER_YA: char = 'ଯ';
-    /// \u{b30}: 'ର'
-    pub const LETTER_RA: char = 'ର';
-    /// \u{b32}: 'ଲ'
-    pub const LETTER_LA: char = 'ଲ';
-    /// \u{b33}: 'ଳ'
-    pub const LETTER_LLA: char = 'ଳ';
-    /// \u{b35}: 'ଵ'
-    pub const LETTER_VA: char = 'ଵ';
-    /// \u{b36}: 'ଶ'
-    pub const LETTER_SHA: char = 'ଶ';
-    /// \u{b37}: 'ଷ'
-    pub const LETTER_SSA: char = 'ଷ';
-    /// \u{b38}: 'ସ'
-    pub const LETTER_SA: char = 'ସ';
-    /// \u{b39}: 'ହ'
-    pub const LETTER_HA: char = 'ହ';
-    /// \u{b3c}: '଼'
-    pub const SIGN_NUKTA: char = '଼';
-    /// \u{b3d}: 'ଽ'
-    pub const SIGN_AVAGRAHA: char = 'ଽ';
-    /// \u{b3e}: 'ା'
-    pub const VOWEL_SIGN_AA: char = 'ା';
-    /// \u{b3f}: 'ି'
-    pub const VOWEL_SIGN_I: char = 'ି';
-    /// \u{b40}: 'ୀ'
-    pub const VOWEL_SIGN_II: char = 'ୀ';
-    /// \u{b41}: 'ୁ'
-    pub const VOWEL_SIGN_U: char = 'ୁ';
-    /// \u{b42}: 'ୂ'
-    pub const VOWEL_SIGN_UU: char = 'ୂ';
-    /// \u{b43}: 'ୃ'
-    pub const VOWEL_SIGN_VOCALIC_R: char = 'ୃ';
-    /// \u{b44}: 'ୄ'
-    pub const VOWEL_SIGN_VOCALIC_RR: char = 'ୄ';
-    /// \u{b47}: 'େ'
-    pub const VOWEL_SIGN_E: char = 'େ';
-    /// \u{b48}: 'ୈ'
-    pub const VOWEL_SIGN_AI: char = 'ୈ';
-    /// \u{b4b}: 'ୋ'
-    pub const VOWEL_SIGN_O: char = 'ୋ';
-    /// \u{b4c}: 'ୌ'
-    pub const VOWEL_SIGN_AU: char = 'ୌ';
-    /// \u{b4d}: '୍'
-    pub const SIGN_VIRAMA: char = '୍';
-    /// \u{b56}: 'ୖ'
-    pub const AI_LENGTH_MARK: char = 'ୖ';
-    /// \u{b57}: 'ୗ'
-    pub const AU_LENGTH_MARK: char = 'ୗ';
-    /// \u{b5c}: 'ଡ଼'
-    pub const LETTER_RRA: char = 'ଡ଼';
-    /// \u{b5d}: 'ଢ଼'
-    pub const LETTER_RHA: char = 'ଢ଼';
-    /// \u{b5f}: 'ୟ'
-    pub const LETTER_YYA: char = 'ୟ';
-    /// \u{b60}: 'ୠ'
-    pub const LETTER_VOCALIC_RR: char = 'ୠ';
-    /// \u{b61}: 'ୡ'
-    pub const LETTER_VOCALIC_LL: char = 'ୡ';
-    /// \u{b62}: 'ୢ'
-    pub const VOWEL_SIGN_VOCALIC_L: char = 'ୢ';
-    /// \u{b63}: 'ୣ'
-    pub const VOWEL_SIGN_VOCALIC_LL: char = 'ୣ';
-    /// \u{b66}: '୦'
-    pub const DIGIT_ZERO: char = '୦';
-    /// \u{b67}: '୧'
-    pub const DIGIT_ONE: char = '୧';
-    /// \u{b68}: '୨'
-    pub const DIGIT_TWO: char = '୨';
-    /// \u{b69}: '୩'
-    pub const DIGIT_THREE: char = '୩';
-    /// \u{b6a}: '୪'
-    pub const DIGIT_FOUR: char = '୪';
-    /// \u{b6b}: '୫'
-    pub const DIGIT_FIVE: char = '୫';
-    /// \u{b6c}: '୬'
-    pub const DIGIT_SIX: char = '୬';
-    /// \u{b6d}: '୭'
-    pub const DIGIT_SEVEN: char = '୭';
-    /// \u{b6e}: '୮'
-    pub const DIGIT_EIGHT: char = '୮';
-    /// \u{b6f}: '୯'
-    pub const DIGIT_NINE: char = '୯';
-    /// \u{b70}: '୰'
-    pub const ISSHAR: char = '୰';
-    /// \u{b71}: 'ୱ'
-    pub const LETTER_WA: char = 'ୱ';
-    /// \u{b72}: '୲'
-    pub const FRACTION_ONE_QUARTER: char = '୲';
-    /// \u{b73}: '୳'
-    pub const FRACTION_ONE_HALF: char = '୳';
-    /// \u{b74}: '୴'
-    pub const FRACTION_THREE_QUARTERS: char = '୴';
-    /// \u{b75}: '୵'
-    pub const FRACTION_ONE_SIXTEENTH: char = '୵';
-    /// \u{b76}: '୶'
-    pub const FRACTION_ONE_EIGHTH: char = '୶';
-    /// \u{b77}: '୷'
-    pub const FRACTION_THREE_SIXTEENTHS: char = '୷';
-}
 
 /// An enum to represent all characters in the Oriya block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -369,98 +186,97 @@ pub enum Oriya {
 
 impl Into<char> for Oriya {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Oriya::SignCandrabindu => SIGN_CANDRABINDU,
-            Oriya::SignAnusvara => SIGN_ANUSVARA,
-            Oriya::SignVisarga => SIGN_VISARGA,
-            Oriya::LetterA => LETTER_A,
-            Oriya::LetterAa => LETTER_AA,
-            Oriya::LetterI => LETTER_I,
-            Oriya::LetterIi => LETTER_II,
-            Oriya::LetterU => LETTER_U,
-            Oriya::LetterUu => LETTER_UU,
-            Oriya::LetterVocalicR => LETTER_VOCALIC_R,
-            Oriya::LetterVocalicL => LETTER_VOCALIC_L,
-            Oriya::LetterE => LETTER_E,
-            Oriya::LetterAi => LETTER_AI,
-            Oriya::LetterO => LETTER_O,
-            Oriya::LetterAu => LETTER_AU,
-            Oriya::LetterKa => LETTER_KA,
-            Oriya::LetterKha => LETTER_KHA,
-            Oriya::LetterGa => LETTER_GA,
-            Oriya::LetterGha => LETTER_GHA,
-            Oriya::LetterNga => LETTER_NGA,
-            Oriya::LetterCa => LETTER_CA,
-            Oriya::LetterCha => LETTER_CHA,
-            Oriya::LetterJa => LETTER_JA,
-            Oriya::LetterJha => LETTER_JHA,
-            Oriya::LetterNya => LETTER_NYA,
-            Oriya::LetterTta => LETTER_TTA,
-            Oriya::LetterTtha => LETTER_TTHA,
-            Oriya::LetterDda => LETTER_DDA,
-            Oriya::LetterDdha => LETTER_DDHA,
-            Oriya::LetterNna => LETTER_NNA,
-            Oriya::LetterTa => LETTER_TA,
-            Oriya::LetterTha => LETTER_THA,
-            Oriya::LetterDa => LETTER_DA,
-            Oriya::LetterDha => LETTER_DHA,
-            Oriya::LetterNa => LETTER_NA,
-            Oriya::LetterPa => LETTER_PA,
-            Oriya::LetterPha => LETTER_PHA,
-            Oriya::LetterBa => LETTER_BA,
-            Oriya::LetterBha => LETTER_BHA,
-            Oriya::LetterMa => LETTER_MA,
-            Oriya::LetterYa => LETTER_YA,
-            Oriya::LetterRa => LETTER_RA,
-            Oriya::LetterLa => LETTER_LA,
-            Oriya::LetterLla => LETTER_LLA,
-            Oriya::LetterVa => LETTER_VA,
-            Oriya::LetterSha => LETTER_SHA,
-            Oriya::LetterSsa => LETTER_SSA,
-            Oriya::LetterSa => LETTER_SA,
-            Oriya::LetterHa => LETTER_HA,
-            Oriya::SignNukta => SIGN_NUKTA,
-            Oriya::SignAvagraha => SIGN_AVAGRAHA,
-            Oriya::VowelSignAa => VOWEL_SIGN_AA,
-            Oriya::VowelSignI => VOWEL_SIGN_I,
-            Oriya::VowelSignIi => VOWEL_SIGN_II,
-            Oriya::VowelSignU => VOWEL_SIGN_U,
-            Oriya::VowelSignUu => VOWEL_SIGN_UU,
-            Oriya::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            Oriya::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
-            Oriya::VowelSignE => VOWEL_SIGN_E,
-            Oriya::VowelSignAi => VOWEL_SIGN_AI,
-            Oriya::VowelSignO => VOWEL_SIGN_O,
-            Oriya::VowelSignAu => VOWEL_SIGN_AU,
-            Oriya::SignVirama => SIGN_VIRAMA,
-            Oriya::AiLengthMark => AI_LENGTH_MARK,
-            Oriya::AuLengthMark => AU_LENGTH_MARK,
-            Oriya::LetterRra => LETTER_RRA,
-            Oriya::LetterRha => LETTER_RHA,
-            Oriya::LetterYya => LETTER_YYA,
-            Oriya::LetterVocalicRr => LETTER_VOCALIC_RR,
-            Oriya::LetterVocalicLl => LETTER_VOCALIC_LL,
-            Oriya::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
-            Oriya::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
-            Oriya::DigitZero => DIGIT_ZERO,
-            Oriya::DigitOne => DIGIT_ONE,
-            Oriya::DigitTwo => DIGIT_TWO,
-            Oriya::DigitThree => DIGIT_THREE,
-            Oriya::DigitFour => DIGIT_FOUR,
-            Oriya::DigitFive => DIGIT_FIVE,
-            Oriya::DigitSix => DIGIT_SIX,
-            Oriya::DigitSeven => DIGIT_SEVEN,
-            Oriya::DigitEight => DIGIT_EIGHT,
-            Oriya::DigitNine => DIGIT_NINE,
-            Oriya::Isshar => ISSHAR,
-            Oriya::LetterWa => LETTER_WA,
-            Oriya::FractionOneQuarter => FRACTION_ONE_QUARTER,
-            Oriya::FractionOneHalf => FRACTION_ONE_HALF,
-            Oriya::FractionThreeQuarters => FRACTION_THREE_QUARTERS,
-            Oriya::FractionOneSixteenth => FRACTION_ONE_SIXTEENTH,
-            Oriya::FractionOneEighth => FRACTION_ONE_EIGHTH,
-            Oriya::FractionThreeSixteenths => FRACTION_THREE_SIXTEENTHS,
+            Oriya::SignCandrabindu => 'ଁ',
+            Oriya::SignAnusvara => 'ଂ',
+            Oriya::SignVisarga => 'ଃ',
+            Oriya::LetterA => 'ଅ',
+            Oriya::LetterAa => 'ଆ',
+            Oriya::LetterI => 'ଇ',
+            Oriya::LetterIi => 'ଈ',
+            Oriya::LetterU => 'ଉ',
+            Oriya::LetterUu => 'ଊ',
+            Oriya::LetterVocalicR => 'ଋ',
+            Oriya::LetterVocalicL => 'ଌ',
+            Oriya::LetterE => 'ଏ',
+            Oriya::LetterAi => 'ଐ',
+            Oriya::LetterO => 'ଓ',
+            Oriya::LetterAu => 'ଔ',
+            Oriya::LetterKa => 'କ',
+            Oriya::LetterKha => 'ଖ',
+            Oriya::LetterGa => 'ଗ',
+            Oriya::LetterGha => 'ଘ',
+            Oriya::LetterNga => 'ଙ',
+            Oriya::LetterCa => 'ଚ',
+            Oriya::LetterCha => 'ଛ',
+            Oriya::LetterJa => 'ଜ',
+            Oriya::LetterJha => 'ଝ',
+            Oriya::LetterNya => 'ଞ',
+            Oriya::LetterTta => 'ଟ',
+            Oriya::LetterTtha => 'ଠ',
+            Oriya::LetterDda => 'ଡ',
+            Oriya::LetterDdha => 'ଢ',
+            Oriya::LetterNna => 'ଣ',
+            Oriya::LetterTa => 'ତ',
+            Oriya::LetterTha => 'ଥ',
+            Oriya::LetterDa => 'ଦ',
+            Oriya::LetterDha => 'ଧ',
+            Oriya::LetterNa => 'ନ',
+            Oriya::LetterPa => 'ପ',
+            Oriya::LetterPha => 'ଫ',
+            Oriya::LetterBa => 'ବ',
+            Oriya::LetterBha => 'ଭ',
+            Oriya::LetterMa => 'ମ',
+            Oriya::LetterYa => 'ଯ',
+            Oriya::LetterRa => 'ର',
+            Oriya::LetterLa => 'ଲ',
+            Oriya::LetterLla => 'ଳ',
+            Oriya::LetterVa => 'ଵ',
+            Oriya::LetterSha => 'ଶ',
+            Oriya::LetterSsa => 'ଷ',
+            Oriya::LetterSa => 'ସ',
+            Oriya::LetterHa => 'ହ',
+            Oriya::SignNukta => '଼',
+            Oriya::SignAvagraha => 'ଽ',
+            Oriya::VowelSignAa => 'ା',
+            Oriya::VowelSignI => 'ି',
+            Oriya::VowelSignIi => 'ୀ',
+            Oriya::VowelSignU => 'ୁ',
+            Oriya::VowelSignUu => 'ୂ',
+            Oriya::VowelSignVocalicR => 'ୃ',
+            Oriya::VowelSignVocalicRr => 'ୄ',
+            Oriya::VowelSignE => 'େ',
+            Oriya::VowelSignAi => 'ୈ',
+            Oriya::VowelSignO => 'ୋ',
+            Oriya::VowelSignAu => 'ୌ',
+            Oriya::SignVirama => '୍',
+            Oriya::AiLengthMark => 'ୖ',
+            Oriya::AuLengthMark => 'ୗ',
+            Oriya::LetterRra => 'ଡ଼',
+            Oriya::LetterRha => 'ଢ଼',
+            Oriya::LetterYya => 'ୟ',
+            Oriya::LetterVocalicRr => 'ୠ',
+            Oriya::LetterVocalicLl => 'ୡ',
+            Oriya::VowelSignVocalicL => 'ୢ',
+            Oriya::VowelSignVocalicLl => 'ୣ',
+            Oriya::DigitZero => '୦',
+            Oriya::DigitOne => '୧',
+            Oriya::DigitTwo => '୨',
+            Oriya::DigitThree => '୩',
+            Oriya::DigitFour => '୪',
+            Oriya::DigitFive => '୫',
+            Oriya::DigitSix => '୬',
+            Oriya::DigitSeven => '୭',
+            Oriya::DigitEight => '୮',
+            Oriya::DigitNine => '୯',
+            Oriya::Isshar => '୰',
+            Oriya::LetterWa => 'ୱ',
+            Oriya::FractionOneQuarter => '୲',
+            Oriya::FractionOneHalf => '୳',
+            Oriya::FractionThreeQuarters => '୴',
+            Oriya::FractionOneSixteenth => '୵',
+            Oriya::FractionOneEighth => '୶',
+            Oriya::FractionThreeSixteenths => '୷',
         }
     }
 }
@@ -468,98 +284,97 @@ impl Into<char> for Oriya {
 impl std::convert::TryFrom<char> for Oriya {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_CANDRABINDU => Ok(Oriya::SignCandrabindu),
-            SIGN_ANUSVARA => Ok(Oriya::SignAnusvara),
-            SIGN_VISARGA => Ok(Oriya::SignVisarga),
-            LETTER_A => Ok(Oriya::LetterA),
-            LETTER_AA => Ok(Oriya::LetterAa),
-            LETTER_I => Ok(Oriya::LetterI),
-            LETTER_II => Ok(Oriya::LetterIi),
-            LETTER_U => Ok(Oriya::LetterU),
-            LETTER_UU => Ok(Oriya::LetterUu),
-            LETTER_VOCALIC_R => Ok(Oriya::LetterVocalicR),
-            LETTER_VOCALIC_L => Ok(Oriya::LetterVocalicL),
-            LETTER_E => Ok(Oriya::LetterE),
-            LETTER_AI => Ok(Oriya::LetterAi),
-            LETTER_O => Ok(Oriya::LetterO),
-            LETTER_AU => Ok(Oriya::LetterAu),
-            LETTER_KA => Ok(Oriya::LetterKa),
-            LETTER_KHA => Ok(Oriya::LetterKha),
-            LETTER_GA => Ok(Oriya::LetterGa),
-            LETTER_GHA => Ok(Oriya::LetterGha),
-            LETTER_NGA => Ok(Oriya::LetterNga),
-            LETTER_CA => Ok(Oriya::LetterCa),
-            LETTER_CHA => Ok(Oriya::LetterCha),
-            LETTER_JA => Ok(Oriya::LetterJa),
-            LETTER_JHA => Ok(Oriya::LetterJha),
-            LETTER_NYA => Ok(Oriya::LetterNya),
-            LETTER_TTA => Ok(Oriya::LetterTta),
-            LETTER_TTHA => Ok(Oriya::LetterTtha),
-            LETTER_DDA => Ok(Oriya::LetterDda),
-            LETTER_DDHA => Ok(Oriya::LetterDdha),
-            LETTER_NNA => Ok(Oriya::LetterNna),
-            LETTER_TA => Ok(Oriya::LetterTa),
-            LETTER_THA => Ok(Oriya::LetterTha),
-            LETTER_DA => Ok(Oriya::LetterDa),
-            LETTER_DHA => Ok(Oriya::LetterDha),
-            LETTER_NA => Ok(Oriya::LetterNa),
-            LETTER_PA => Ok(Oriya::LetterPa),
-            LETTER_PHA => Ok(Oriya::LetterPha),
-            LETTER_BA => Ok(Oriya::LetterBa),
-            LETTER_BHA => Ok(Oriya::LetterBha),
-            LETTER_MA => Ok(Oriya::LetterMa),
-            LETTER_YA => Ok(Oriya::LetterYa),
-            LETTER_RA => Ok(Oriya::LetterRa),
-            LETTER_LA => Ok(Oriya::LetterLa),
-            LETTER_LLA => Ok(Oriya::LetterLla),
-            LETTER_VA => Ok(Oriya::LetterVa),
-            LETTER_SHA => Ok(Oriya::LetterSha),
-            LETTER_SSA => Ok(Oriya::LetterSsa),
-            LETTER_SA => Ok(Oriya::LetterSa),
-            LETTER_HA => Ok(Oriya::LetterHa),
-            SIGN_NUKTA => Ok(Oriya::SignNukta),
-            SIGN_AVAGRAHA => Ok(Oriya::SignAvagraha),
-            VOWEL_SIGN_AA => Ok(Oriya::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Oriya::VowelSignI),
-            VOWEL_SIGN_II => Ok(Oriya::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Oriya::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Oriya::VowelSignUu),
-            VOWEL_SIGN_VOCALIC_R => Ok(Oriya::VowelSignVocalicR),
-            VOWEL_SIGN_VOCALIC_RR => Ok(Oriya::VowelSignVocalicRr),
-            VOWEL_SIGN_E => Ok(Oriya::VowelSignE),
-            VOWEL_SIGN_AI => Ok(Oriya::VowelSignAi),
-            VOWEL_SIGN_O => Ok(Oriya::VowelSignO),
-            VOWEL_SIGN_AU => Ok(Oriya::VowelSignAu),
-            SIGN_VIRAMA => Ok(Oriya::SignVirama),
-            AI_LENGTH_MARK => Ok(Oriya::AiLengthMark),
-            AU_LENGTH_MARK => Ok(Oriya::AuLengthMark),
-            LETTER_RRA => Ok(Oriya::LetterRra),
-            LETTER_RHA => Ok(Oriya::LetterRha),
-            LETTER_YYA => Ok(Oriya::LetterYya),
-            LETTER_VOCALIC_RR => Ok(Oriya::LetterVocalicRr),
-            LETTER_VOCALIC_LL => Ok(Oriya::LetterVocalicLl),
-            VOWEL_SIGN_VOCALIC_L => Ok(Oriya::VowelSignVocalicL),
-            VOWEL_SIGN_VOCALIC_LL => Ok(Oriya::VowelSignVocalicLl),
-            DIGIT_ZERO => Ok(Oriya::DigitZero),
-            DIGIT_ONE => Ok(Oriya::DigitOne),
-            DIGIT_TWO => Ok(Oriya::DigitTwo),
-            DIGIT_THREE => Ok(Oriya::DigitThree),
-            DIGIT_FOUR => Ok(Oriya::DigitFour),
-            DIGIT_FIVE => Ok(Oriya::DigitFive),
-            DIGIT_SIX => Ok(Oriya::DigitSix),
-            DIGIT_SEVEN => Ok(Oriya::DigitSeven),
-            DIGIT_EIGHT => Ok(Oriya::DigitEight),
-            DIGIT_NINE => Ok(Oriya::DigitNine),
-            ISSHAR => Ok(Oriya::Isshar),
-            LETTER_WA => Ok(Oriya::LetterWa),
-            FRACTION_ONE_QUARTER => Ok(Oriya::FractionOneQuarter),
-            FRACTION_ONE_HALF => Ok(Oriya::FractionOneHalf),
-            FRACTION_THREE_QUARTERS => Ok(Oriya::FractionThreeQuarters),
-            FRACTION_ONE_SIXTEENTH => Ok(Oriya::FractionOneSixteenth),
-            FRACTION_ONE_EIGHTH => Ok(Oriya::FractionOneEighth),
-            FRACTION_THREE_SIXTEENTHS => Ok(Oriya::FractionThreeSixteenths),
+            'ଁ' => Ok(Oriya::SignCandrabindu),
+            'ଂ' => Ok(Oriya::SignAnusvara),
+            'ଃ' => Ok(Oriya::SignVisarga),
+            'ଅ' => Ok(Oriya::LetterA),
+            'ଆ' => Ok(Oriya::LetterAa),
+            'ଇ' => Ok(Oriya::LetterI),
+            'ଈ' => Ok(Oriya::LetterIi),
+            'ଉ' => Ok(Oriya::LetterU),
+            'ଊ' => Ok(Oriya::LetterUu),
+            'ଋ' => Ok(Oriya::LetterVocalicR),
+            'ଌ' => Ok(Oriya::LetterVocalicL),
+            'ଏ' => Ok(Oriya::LetterE),
+            'ଐ' => Ok(Oriya::LetterAi),
+            'ଓ' => Ok(Oriya::LetterO),
+            'ଔ' => Ok(Oriya::LetterAu),
+            'କ' => Ok(Oriya::LetterKa),
+            'ଖ' => Ok(Oriya::LetterKha),
+            'ଗ' => Ok(Oriya::LetterGa),
+            'ଘ' => Ok(Oriya::LetterGha),
+            'ଙ' => Ok(Oriya::LetterNga),
+            'ଚ' => Ok(Oriya::LetterCa),
+            'ଛ' => Ok(Oriya::LetterCha),
+            'ଜ' => Ok(Oriya::LetterJa),
+            'ଝ' => Ok(Oriya::LetterJha),
+            'ଞ' => Ok(Oriya::LetterNya),
+            'ଟ' => Ok(Oriya::LetterTta),
+            'ଠ' => Ok(Oriya::LetterTtha),
+            'ଡ' => Ok(Oriya::LetterDda),
+            'ଢ' => Ok(Oriya::LetterDdha),
+            'ଣ' => Ok(Oriya::LetterNna),
+            'ତ' => Ok(Oriya::LetterTa),
+            'ଥ' => Ok(Oriya::LetterTha),
+            'ଦ' => Ok(Oriya::LetterDa),
+            'ଧ' => Ok(Oriya::LetterDha),
+            'ନ' => Ok(Oriya::LetterNa),
+            'ପ' => Ok(Oriya::LetterPa),
+            'ଫ' => Ok(Oriya::LetterPha),
+            'ବ' => Ok(Oriya::LetterBa),
+            'ଭ' => Ok(Oriya::LetterBha),
+            'ମ' => Ok(Oriya::LetterMa),
+            'ଯ' => Ok(Oriya::LetterYa),
+            'ର' => Ok(Oriya::LetterRa),
+            'ଲ' => Ok(Oriya::LetterLa),
+            'ଳ' => Ok(Oriya::LetterLla),
+            'ଵ' => Ok(Oriya::LetterVa),
+            'ଶ' => Ok(Oriya::LetterSha),
+            'ଷ' => Ok(Oriya::LetterSsa),
+            'ସ' => Ok(Oriya::LetterSa),
+            'ହ' => Ok(Oriya::LetterHa),
+            '଼' => Ok(Oriya::SignNukta),
+            'ଽ' => Ok(Oriya::SignAvagraha),
+            'ା' => Ok(Oriya::VowelSignAa),
+            'ି' => Ok(Oriya::VowelSignI),
+            'ୀ' => Ok(Oriya::VowelSignIi),
+            'ୁ' => Ok(Oriya::VowelSignU),
+            'ୂ' => Ok(Oriya::VowelSignUu),
+            'ୃ' => Ok(Oriya::VowelSignVocalicR),
+            'ୄ' => Ok(Oriya::VowelSignVocalicRr),
+            'େ' => Ok(Oriya::VowelSignE),
+            'ୈ' => Ok(Oriya::VowelSignAi),
+            'ୋ' => Ok(Oriya::VowelSignO),
+            'ୌ' => Ok(Oriya::VowelSignAu),
+            '୍' => Ok(Oriya::SignVirama),
+            'ୖ' => Ok(Oriya::AiLengthMark),
+            'ୗ' => Ok(Oriya::AuLengthMark),
+            'ଡ଼' => Ok(Oriya::LetterRra),
+            'ଢ଼' => Ok(Oriya::LetterRha),
+            'ୟ' => Ok(Oriya::LetterYya),
+            'ୠ' => Ok(Oriya::LetterVocalicRr),
+            'ୡ' => Ok(Oriya::LetterVocalicLl),
+            'ୢ' => Ok(Oriya::VowelSignVocalicL),
+            'ୣ' => Ok(Oriya::VowelSignVocalicLl),
+            '୦' => Ok(Oriya::DigitZero),
+            '୧' => Ok(Oriya::DigitOne),
+            '୨' => Ok(Oriya::DigitTwo),
+            '୩' => Ok(Oriya::DigitThree),
+            '୪' => Ok(Oriya::DigitFour),
+            '୫' => Ok(Oriya::DigitFive),
+            '୬' => Ok(Oriya::DigitSix),
+            '୭' => Ok(Oriya::DigitSeven),
+            '୮' => Ok(Oriya::DigitEight),
+            '୯' => Ok(Oriya::DigitNine),
+            '୰' => Ok(Oriya::Isshar),
+            'ୱ' => Ok(Oriya::LetterWa),
+            '୲' => Ok(Oriya::FractionOneQuarter),
+            '୳' => Ok(Oriya::FractionOneHalf),
+            '୴' => Ok(Oriya::FractionThreeQuarters),
+            '୵' => Ok(Oriya::FractionOneSixteenth),
+            '୶' => Ok(Oriya::FractionOneEighth),
+            '୷' => Ok(Oriya::FractionThreeSixteenths),
             _ => Err(()),
         }
     }

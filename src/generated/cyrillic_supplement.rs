@@ -1,100 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{500}: 'Ԁ'
-    pub const CYRILLIC_CAPITAL_LETTER_KOMI_DE: char = 'Ԁ';
-    /// \u{501}: 'ԁ'
-    pub const CYRILLIC_SMALL_LETTER_KOMI_DE: char = 'ԁ';
-    /// \u{502}: 'Ԃ'
-    pub const CYRILLIC_CAPITAL_LETTER_KOMI_DJE: char = 'Ԃ';
-    /// \u{503}: 'ԃ'
-    pub const CYRILLIC_SMALL_LETTER_KOMI_DJE: char = 'ԃ';
-    /// \u{504}: 'Ԅ'
-    pub const CYRILLIC_CAPITAL_LETTER_KOMI_ZJE: char = 'Ԅ';
-    /// \u{505}: 'ԅ'
-    pub const CYRILLIC_SMALL_LETTER_KOMI_ZJE: char = 'ԅ';
-    /// \u{506}: 'Ԇ'
-    pub const CYRILLIC_CAPITAL_LETTER_KOMI_DZJE: char = 'Ԇ';
-    /// \u{507}: 'ԇ'
-    pub const CYRILLIC_SMALL_LETTER_KOMI_DZJE: char = 'ԇ';
-    /// \u{508}: 'Ԉ'
-    pub const CYRILLIC_CAPITAL_LETTER_KOMI_LJE: char = 'Ԉ';
-    /// \u{509}: 'ԉ'
-    pub const CYRILLIC_SMALL_LETTER_KOMI_LJE: char = 'ԉ';
-    /// \u{50a}: 'Ԋ'
-    pub const CYRILLIC_CAPITAL_LETTER_KOMI_NJE: char = 'Ԋ';
-    /// \u{50b}: 'ԋ'
-    pub const CYRILLIC_SMALL_LETTER_KOMI_NJE: char = 'ԋ';
-    /// \u{50c}: 'Ԍ'
-    pub const CYRILLIC_CAPITAL_LETTER_KOMI_SJE: char = 'Ԍ';
-    /// \u{50d}: 'ԍ'
-    pub const CYRILLIC_SMALL_LETTER_KOMI_SJE: char = 'ԍ';
-    /// \u{50e}: 'Ԏ'
-    pub const CYRILLIC_CAPITAL_LETTER_KOMI_TJE: char = 'Ԏ';
-    /// \u{50f}: 'ԏ'
-    pub const CYRILLIC_SMALL_LETTER_KOMI_TJE: char = 'ԏ';
-    /// \u{510}: 'Ԑ'
-    pub const CYRILLIC_CAPITAL_LETTER_REVERSED_ZE: char = 'Ԑ';
-    /// \u{511}: 'ԑ'
-    pub const CYRILLIC_SMALL_LETTER_REVERSED_ZE: char = 'ԑ';
-    /// \u{512}: 'Ԓ'
-    pub const CYRILLIC_CAPITAL_LETTER_EL_WITH_HOOK: char = 'Ԓ';
-    /// \u{513}: 'ԓ'
-    pub const CYRILLIC_SMALL_LETTER_EL_WITH_HOOK: char = 'ԓ';
-    /// \u{514}: 'Ԕ'
-    pub const CYRILLIC_CAPITAL_LETTER_LHA: char = 'Ԕ';
-    /// \u{515}: 'ԕ'
-    pub const CYRILLIC_SMALL_LETTER_LHA: char = 'ԕ';
-    /// \u{516}: 'Ԗ'
-    pub const CYRILLIC_CAPITAL_LETTER_RHA: char = 'Ԗ';
-    /// \u{517}: 'ԗ'
-    pub const CYRILLIC_SMALL_LETTER_RHA: char = 'ԗ';
-    /// \u{518}: 'Ԙ'
-    pub const CYRILLIC_CAPITAL_LETTER_YAE: char = 'Ԙ';
-    /// \u{519}: 'ԙ'
-    pub const CYRILLIC_SMALL_LETTER_YAE: char = 'ԙ';
-    /// \u{51a}: 'Ԛ'
-    pub const CYRILLIC_CAPITAL_LETTER_QA: char = 'Ԛ';
-    /// \u{51b}: 'ԛ'
-    pub const CYRILLIC_SMALL_LETTER_QA: char = 'ԛ';
-    /// \u{51c}: 'Ԝ'
-    pub const CYRILLIC_CAPITAL_LETTER_WE: char = 'Ԝ';
-    /// \u{51d}: 'ԝ'
-    pub const CYRILLIC_SMALL_LETTER_WE: char = 'ԝ';
-    /// \u{51e}: 'Ԟ'
-    pub const CYRILLIC_CAPITAL_LETTER_ALEUT_KA: char = 'Ԟ';
-    /// \u{51f}: 'ԟ'
-    pub const CYRILLIC_SMALL_LETTER_ALEUT_KA: char = 'ԟ';
-    /// \u{520}: 'Ԡ'
-    pub const CYRILLIC_CAPITAL_LETTER_EL_WITH_MIDDLE_HOOK: char = 'Ԡ';
-    /// \u{521}: 'ԡ'
-    pub const CYRILLIC_SMALL_LETTER_EL_WITH_MIDDLE_HOOK: char = 'ԡ';
-    /// \u{522}: 'Ԣ'
-    pub const CYRILLIC_CAPITAL_LETTER_EN_WITH_MIDDLE_HOOK: char = 'Ԣ';
-    /// \u{523}: 'ԣ'
-    pub const CYRILLIC_SMALL_LETTER_EN_WITH_MIDDLE_HOOK: char = 'ԣ';
-    /// \u{524}: 'Ԥ'
-    pub const CYRILLIC_CAPITAL_LETTER_PE_WITH_DESCENDER: char = 'Ԥ';
-    /// \u{525}: 'ԥ'
-    pub const CYRILLIC_SMALL_LETTER_PE_WITH_DESCENDER: char = 'ԥ';
-    /// \u{526}: 'Ԧ'
-    pub const CYRILLIC_CAPITAL_LETTER_SHHA_WITH_DESCENDER: char = 'Ԧ';
-    /// \u{527}: 'ԧ'
-    pub const CYRILLIC_SMALL_LETTER_SHHA_WITH_DESCENDER: char = 'ԧ';
-    /// \u{528}: 'Ԩ'
-    pub const CYRILLIC_CAPITAL_LETTER_EN_WITH_LEFT_HOOK: char = 'Ԩ';
-    /// \u{529}: 'ԩ'
-    pub const CYRILLIC_SMALL_LETTER_EN_WITH_LEFT_HOOK: char = 'ԩ';
-    /// \u{52a}: 'Ԫ'
-    pub const CYRILLIC_CAPITAL_LETTER_DZZHE: char = 'Ԫ';
-    /// \u{52b}: 'ԫ'
-    pub const CYRILLIC_SMALL_LETTER_DZZHE: char = 'ԫ';
-    /// \u{52c}: 'Ԭ'
-    pub const CYRILLIC_CAPITAL_LETTER_DCHE: char = 'Ԭ';
-    /// \u{52d}: 'ԭ'
-    pub const CYRILLIC_SMALL_LETTER_DCHE: char = 'ԭ';
-    /// \u{52e}: 'Ԯ'
-    pub const CYRILLIC_CAPITAL_LETTER_EL_WITH_DESCENDER: char = 'Ԯ';
-}
 
 /// An enum to represent all characters in the CyrillicSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -197,55 +100,54 @@ pub enum CyrillicSupplement {
 
 impl Into<char> for CyrillicSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CyrillicSupplement::CyrillicCapitalLetterKomiDe => CYRILLIC_CAPITAL_LETTER_KOMI_DE,
-            CyrillicSupplement::CyrillicSmallLetterKomiDe => CYRILLIC_SMALL_LETTER_KOMI_DE,
-            CyrillicSupplement::CyrillicCapitalLetterKomiDje => CYRILLIC_CAPITAL_LETTER_KOMI_DJE,
-            CyrillicSupplement::CyrillicSmallLetterKomiDje => CYRILLIC_SMALL_LETTER_KOMI_DJE,
-            CyrillicSupplement::CyrillicCapitalLetterKomiZje => CYRILLIC_CAPITAL_LETTER_KOMI_ZJE,
-            CyrillicSupplement::CyrillicSmallLetterKomiZje => CYRILLIC_SMALL_LETTER_KOMI_ZJE,
-            CyrillicSupplement::CyrillicCapitalLetterKomiDzje => CYRILLIC_CAPITAL_LETTER_KOMI_DZJE,
-            CyrillicSupplement::CyrillicSmallLetterKomiDzje => CYRILLIC_SMALL_LETTER_KOMI_DZJE,
-            CyrillicSupplement::CyrillicCapitalLetterKomiLje => CYRILLIC_CAPITAL_LETTER_KOMI_LJE,
-            CyrillicSupplement::CyrillicSmallLetterKomiLje => CYRILLIC_SMALL_LETTER_KOMI_LJE,
-            CyrillicSupplement::CyrillicCapitalLetterKomiNje => CYRILLIC_CAPITAL_LETTER_KOMI_NJE,
-            CyrillicSupplement::CyrillicSmallLetterKomiNje => CYRILLIC_SMALL_LETTER_KOMI_NJE,
-            CyrillicSupplement::CyrillicCapitalLetterKomiSje => CYRILLIC_CAPITAL_LETTER_KOMI_SJE,
-            CyrillicSupplement::CyrillicSmallLetterKomiSje => CYRILLIC_SMALL_LETTER_KOMI_SJE,
-            CyrillicSupplement::CyrillicCapitalLetterKomiTje => CYRILLIC_CAPITAL_LETTER_KOMI_TJE,
-            CyrillicSupplement::CyrillicSmallLetterKomiTje => CYRILLIC_SMALL_LETTER_KOMI_TJE,
-            CyrillicSupplement::CyrillicCapitalLetterReversedZe => CYRILLIC_CAPITAL_LETTER_REVERSED_ZE,
-            CyrillicSupplement::CyrillicSmallLetterReversedZe => CYRILLIC_SMALL_LETTER_REVERSED_ZE,
-            CyrillicSupplement::CyrillicCapitalLetterElWithHook => CYRILLIC_CAPITAL_LETTER_EL_WITH_HOOK,
-            CyrillicSupplement::CyrillicSmallLetterElWithHook => CYRILLIC_SMALL_LETTER_EL_WITH_HOOK,
-            CyrillicSupplement::CyrillicCapitalLetterLha => CYRILLIC_CAPITAL_LETTER_LHA,
-            CyrillicSupplement::CyrillicSmallLetterLha => CYRILLIC_SMALL_LETTER_LHA,
-            CyrillicSupplement::CyrillicCapitalLetterRha => CYRILLIC_CAPITAL_LETTER_RHA,
-            CyrillicSupplement::CyrillicSmallLetterRha => CYRILLIC_SMALL_LETTER_RHA,
-            CyrillicSupplement::CyrillicCapitalLetterYae => CYRILLIC_CAPITAL_LETTER_YAE,
-            CyrillicSupplement::CyrillicSmallLetterYae => CYRILLIC_SMALL_LETTER_YAE,
-            CyrillicSupplement::CyrillicCapitalLetterQa => CYRILLIC_CAPITAL_LETTER_QA,
-            CyrillicSupplement::CyrillicSmallLetterQa => CYRILLIC_SMALL_LETTER_QA,
-            CyrillicSupplement::CyrillicCapitalLetterWe => CYRILLIC_CAPITAL_LETTER_WE,
-            CyrillicSupplement::CyrillicSmallLetterWe => CYRILLIC_SMALL_LETTER_WE,
-            CyrillicSupplement::CyrillicCapitalLetterAleutKa => CYRILLIC_CAPITAL_LETTER_ALEUT_KA,
-            CyrillicSupplement::CyrillicSmallLetterAleutKa => CYRILLIC_SMALL_LETTER_ALEUT_KA,
-            CyrillicSupplement::CyrillicCapitalLetterElWithMiddleHook => CYRILLIC_CAPITAL_LETTER_EL_WITH_MIDDLE_HOOK,
-            CyrillicSupplement::CyrillicSmallLetterElWithMiddleHook => CYRILLIC_SMALL_LETTER_EL_WITH_MIDDLE_HOOK,
-            CyrillicSupplement::CyrillicCapitalLetterEnWithMiddleHook => CYRILLIC_CAPITAL_LETTER_EN_WITH_MIDDLE_HOOK,
-            CyrillicSupplement::CyrillicSmallLetterEnWithMiddleHook => CYRILLIC_SMALL_LETTER_EN_WITH_MIDDLE_HOOK,
-            CyrillicSupplement::CyrillicCapitalLetterPeWithDescender => CYRILLIC_CAPITAL_LETTER_PE_WITH_DESCENDER,
-            CyrillicSupplement::CyrillicSmallLetterPeWithDescender => CYRILLIC_SMALL_LETTER_PE_WITH_DESCENDER,
-            CyrillicSupplement::CyrillicCapitalLetterShhaWithDescender => CYRILLIC_CAPITAL_LETTER_SHHA_WITH_DESCENDER,
-            CyrillicSupplement::CyrillicSmallLetterShhaWithDescender => CYRILLIC_SMALL_LETTER_SHHA_WITH_DESCENDER,
-            CyrillicSupplement::CyrillicCapitalLetterEnWithLeftHook => CYRILLIC_CAPITAL_LETTER_EN_WITH_LEFT_HOOK,
-            CyrillicSupplement::CyrillicSmallLetterEnWithLeftHook => CYRILLIC_SMALL_LETTER_EN_WITH_LEFT_HOOK,
-            CyrillicSupplement::CyrillicCapitalLetterDzzhe => CYRILLIC_CAPITAL_LETTER_DZZHE,
-            CyrillicSupplement::CyrillicSmallLetterDzzhe => CYRILLIC_SMALL_LETTER_DZZHE,
-            CyrillicSupplement::CyrillicCapitalLetterDche => CYRILLIC_CAPITAL_LETTER_DCHE,
-            CyrillicSupplement::CyrillicSmallLetterDche => CYRILLIC_SMALL_LETTER_DCHE,
-            CyrillicSupplement::CyrillicCapitalLetterElWithDescender => CYRILLIC_CAPITAL_LETTER_EL_WITH_DESCENDER,
+            CyrillicSupplement::CyrillicCapitalLetterKomiDe => 'Ԁ',
+            CyrillicSupplement::CyrillicSmallLetterKomiDe => 'ԁ',
+            CyrillicSupplement::CyrillicCapitalLetterKomiDje => 'Ԃ',
+            CyrillicSupplement::CyrillicSmallLetterKomiDje => 'ԃ',
+            CyrillicSupplement::CyrillicCapitalLetterKomiZje => 'Ԅ',
+            CyrillicSupplement::CyrillicSmallLetterKomiZje => 'ԅ',
+            CyrillicSupplement::CyrillicCapitalLetterKomiDzje => 'Ԇ',
+            CyrillicSupplement::CyrillicSmallLetterKomiDzje => 'ԇ',
+            CyrillicSupplement::CyrillicCapitalLetterKomiLje => 'Ԉ',
+            CyrillicSupplement::CyrillicSmallLetterKomiLje => 'ԉ',
+            CyrillicSupplement::CyrillicCapitalLetterKomiNje => 'Ԋ',
+            CyrillicSupplement::CyrillicSmallLetterKomiNje => 'ԋ',
+            CyrillicSupplement::CyrillicCapitalLetterKomiSje => 'Ԍ',
+            CyrillicSupplement::CyrillicSmallLetterKomiSje => 'ԍ',
+            CyrillicSupplement::CyrillicCapitalLetterKomiTje => 'Ԏ',
+            CyrillicSupplement::CyrillicSmallLetterKomiTje => 'ԏ',
+            CyrillicSupplement::CyrillicCapitalLetterReversedZe => 'Ԑ',
+            CyrillicSupplement::CyrillicSmallLetterReversedZe => 'ԑ',
+            CyrillicSupplement::CyrillicCapitalLetterElWithHook => 'Ԓ',
+            CyrillicSupplement::CyrillicSmallLetterElWithHook => 'ԓ',
+            CyrillicSupplement::CyrillicCapitalLetterLha => 'Ԕ',
+            CyrillicSupplement::CyrillicSmallLetterLha => 'ԕ',
+            CyrillicSupplement::CyrillicCapitalLetterRha => 'Ԗ',
+            CyrillicSupplement::CyrillicSmallLetterRha => 'ԗ',
+            CyrillicSupplement::CyrillicCapitalLetterYae => 'Ԙ',
+            CyrillicSupplement::CyrillicSmallLetterYae => 'ԙ',
+            CyrillicSupplement::CyrillicCapitalLetterQa => 'Ԛ',
+            CyrillicSupplement::CyrillicSmallLetterQa => 'ԛ',
+            CyrillicSupplement::CyrillicCapitalLetterWe => 'Ԝ',
+            CyrillicSupplement::CyrillicSmallLetterWe => 'ԝ',
+            CyrillicSupplement::CyrillicCapitalLetterAleutKa => 'Ԟ',
+            CyrillicSupplement::CyrillicSmallLetterAleutKa => 'ԟ',
+            CyrillicSupplement::CyrillicCapitalLetterElWithMiddleHook => 'Ԡ',
+            CyrillicSupplement::CyrillicSmallLetterElWithMiddleHook => 'ԡ',
+            CyrillicSupplement::CyrillicCapitalLetterEnWithMiddleHook => 'Ԣ',
+            CyrillicSupplement::CyrillicSmallLetterEnWithMiddleHook => 'ԣ',
+            CyrillicSupplement::CyrillicCapitalLetterPeWithDescender => 'Ԥ',
+            CyrillicSupplement::CyrillicSmallLetterPeWithDescender => 'ԥ',
+            CyrillicSupplement::CyrillicCapitalLetterShhaWithDescender => 'Ԧ',
+            CyrillicSupplement::CyrillicSmallLetterShhaWithDescender => 'ԧ',
+            CyrillicSupplement::CyrillicCapitalLetterEnWithLeftHook => 'Ԩ',
+            CyrillicSupplement::CyrillicSmallLetterEnWithLeftHook => 'ԩ',
+            CyrillicSupplement::CyrillicCapitalLetterDzzhe => 'Ԫ',
+            CyrillicSupplement::CyrillicSmallLetterDzzhe => 'ԫ',
+            CyrillicSupplement::CyrillicCapitalLetterDche => 'Ԭ',
+            CyrillicSupplement::CyrillicSmallLetterDche => 'ԭ',
+            CyrillicSupplement::CyrillicCapitalLetterElWithDescender => 'Ԯ',
         }
     }
 }
@@ -253,55 +155,54 @@ impl Into<char> for CyrillicSupplement {
 impl std::convert::TryFrom<char> for CyrillicSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CYRILLIC_CAPITAL_LETTER_KOMI_DE => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiDe),
-            CYRILLIC_SMALL_LETTER_KOMI_DE => Ok(CyrillicSupplement::CyrillicSmallLetterKomiDe),
-            CYRILLIC_CAPITAL_LETTER_KOMI_DJE => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiDje),
-            CYRILLIC_SMALL_LETTER_KOMI_DJE => Ok(CyrillicSupplement::CyrillicSmallLetterKomiDje),
-            CYRILLIC_CAPITAL_LETTER_KOMI_ZJE => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiZje),
-            CYRILLIC_SMALL_LETTER_KOMI_ZJE => Ok(CyrillicSupplement::CyrillicSmallLetterKomiZje),
-            CYRILLIC_CAPITAL_LETTER_KOMI_DZJE => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiDzje),
-            CYRILLIC_SMALL_LETTER_KOMI_DZJE => Ok(CyrillicSupplement::CyrillicSmallLetterKomiDzje),
-            CYRILLIC_CAPITAL_LETTER_KOMI_LJE => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiLje),
-            CYRILLIC_SMALL_LETTER_KOMI_LJE => Ok(CyrillicSupplement::CyrillicSmallLetterKomiLje),
-            CYRILLIC_CAPITAL_LETTER_KOMI_NJE => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiNje),
-            CYRILLIC_SMALL_LETTER_KOMI_NJE => Ok(CyrillicSupplement::CyrillicSmallLetterKomiNje),
-            CYRILLIC_CAPITAL_LETTER_KOMI_SJE => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiSje),
-            CYRILLIC_SMALL_LETTER_KOMI_SJE => Ok(CyrillicSupplement::CyrillicSmallLetterKomiSje),
-            CYRILLIC_CAPITAL_LETTER_KOMI_TJE => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiTje),
-            CYRILLIC_SMALL_LETTER_KOMI_TJE => Ok(CyrillicSupplement::CyrillicSmallLetterKomiTje),
-            CYRILLIC_CAPITAL_LETTER_REVERSED_ZE => Ok(CyrillicSupplement::CyrillicCapitalLetterReversedZe),
-            CYRILLIC_SMALL_LETTER_REVERSED_ZE => Ok(CyrillicSupplement::CyrillicSmallLetterReversedZe),
-            CYRILLIC_CAPITAL_LETTER_EL_WITH_HOOK => Ok(CyrillicSupplement::CyrillicCapitalLetterElWithHook),
-            CYRILLIC_SMALL_LETTER_EL_WITH_HOOK => Ok(CyrillicSupplement::CyrillicSmallLetterElWithHook),
-            CYRILLIC_CAPITAL_LETTER_LHA => Ok(CyrillicSupplement::CyrillicCapitalLetterLha),
-            CYRILLIC_SMALL_LETTER_LHA => Ok(CyrillicSupplement::CyrillicSmallLetterLha),
-            CYRILLIC_CAPITAL_LETTER_RHA => Ok(CyrillicSupplement::CyrillicCapitalLetterRha),
-            CYRILLIC_SMALL_LETTER_RHA => Ok(CyrillicSupplement::CyrillicSmallLetterRha),
-            CYRILLIC_CAPITAL_LETTER_YAE => Ok(CyrillicSupplement::CyrillicCapitalLetterYae),
-            CYRILLIC_SMALL_LETTER_YAE => Ok(CyrillicSupplement::CyrillicSmallLetterYae),
-            CYRILLIC_CAPITAL_LETTER_QA => Ok(CyrillicSupplement::CyrillicCapitalLetterQa),
-            CYRILLIC_SMALL_LETTER_QA => Ok(CyrillicSupplement::CyrillicSmallLetterQa),
-            CYRILLIC_CAPITAL_LETTER_WE => Ok(CyrillicSupplement::CyrillicCapitalLetterWe),
-            CYRILLIC_SMALL_LETTER_WE => Ok(CyrillicSupplement::CyrillicSmallLetterWe),
-            CYRILLIC_CAPITAL_LETTER_ALEUT_KA => Ok(CyrillicSupplement::CyrillicCapitalLetterAleutKa),
-            CYRILLIC_SMALL_LETTER_ALEUT_KA => Ok(CyrillicSupplement::CyrillicSmallLetterAleutKa),
-            CYRILLIC_CAPITAL_LETTER_EL_WITH_MIDDLE_HOOK => Ok(CyrillicSupplement::CyrillicCapitalLetterElWithMiddleHook),
-            CYRILLIC_SMALL_LETTER_EL_WITH_MIDDLE_HOOK => Ok(CyrillicSupplement::CyrillicSmallLetterElWithMiddleHook),
-            CYRILLIC_CAPITAL_LETTER_EN_WITH_MIDDLE_HOOK => Ok(CyrillicSupplement::CyrillicCapitalLetterEnWithMiddleHook),
-            CYRILLIC_SMALL_LETTER_EN_WITH_MIDDLE_HOOK => Ok(CyrillicSupplement::CyrillicSmallLetterEnWithMiddleHook),
-            CYRILLIC_CAPITAL_LETTER_PE_WITH_DESCENDER => Ok(CyrillicSupplement::CyrillicCapitalLetterPeWithDescender),
-            CYRILLIC_SMALL_LETTER_PE_WITH_DESCENDER => Ok(CyrillicSupplement::CyrillicSmallLetterPeWithDescender),
-            CYRILLIC_CAPITAL_LETTER_SHHA_WITH_DESCENDER => Ok(CyrillicSupplement::CyrillicCapitalLetterShhaWithDescender),
-            CYRILLIC_SMALL_LETTER_SHHA_WITH_DESCENDER => Ok(CyrillicSupplement::CyrillicSmallLetterShhaWithDescender),
-            CYRILLIC_CAPITAL_LETTER_EN_WITH_LEFT_HOOK => Ok(CyrillicSupplement::CyrillicCapitalLetterEnWithLeftHook),
-            CYRILLIC_SMALL_LETTER_EN_WITH_LEFT_HOOK => Ok(CyrillicSupplement::CyrillicSmallLetterEnWithLeftHook),
-            CYRILLIC_CAPITAL_LETTER_DZZHE => Ok(CyrillicSupplement::CyrillicCapitalLetterDzzhe),
-            CYRILLIC_SMALL_LETTER_DZZHE => Ok(CyrillicSupplement::CyrillicSmallLetterDzzhe),
-            CYRILLIC_CAPITAL_LETTER_DCHE => Ok(CyrillicSupplement::CyrillicCapitalLetterDche),
-            CYRILLIC_SMALL_LETTER_DCHE => Ok(CyrillicSupplement::CyrillicSmallLetterDche),
-            CYRILLIC_CAPITAL_LETTER_EL_WITH_DESCENDER => Ok(CyrillicSupplement::CyrillicCapitalLetterElWithDescender),
+            'Ԁ' => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiDe),
+            'ԁ' => Ok(CyrillicSupplement::CyrillicSmallLetterKomiDe),
+            'Ԃ' => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiDje),
+            'ԃ' => Ok(CyrillicSupplement::CyrillicSmallLetterKomiDje),
+            'Ԅ' => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiZje),
+            'ԅ' => Ok(CyrillicSupplement::CyrillicSmallLetterKomiZje),
+            'Ԇ' => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiDzje),
+            'ԇ' => Ok(CyrillicSupplement::CyrillicSmallLetterKomiDzje),
+            'Ԉ' => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiLje),
+            'ԉ' => Ok(CyrillicSupplement::CyrillicSmallLetterKomiLje),
+            'Ԋ' => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiNje),
+            'ԋ' => Ok(CyrillicSupplement::CyrillicSmallLetterKomiNje),
+            'Ԍ' => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiSje),
+            'ԍ' => Ok(CyrillicSupplement::CyrillicSmallLetterKomiSje),
+            'Ԏ' => Ok(CyrillicSupplement::CyrillicCapitalLetterKomiTje),
+            'ԏ' => Ok(CyrillicSupplement::CyrillicSmallLetterKomiTje),
+            'Ԑ' => Ok(CyrillicSupplement::CyrillicCapitalLetterReversedZe),
+            'ԑ' => Ok(CyrillicSupplement::CyrillicSmallLetterReversedZe),
+            'Ԓ' => Ok(CyrillicSupplement::CyrillicCapitalLetterElWithHook),
+            'ԓ' => Ok(CyrillicSupplement::CyrillicSmallLetterElWithHook),
+            'Ԕ' => Ok(CyrillicSupplement::CyrillicCapitalLetterLha),
+            'ԕ' => Ok(CyrillicSupplement::CyrillicSmallLetterLha),
+            'Ԗ' => Ok(CyrillicSupplement::CyrillicCapitalLetterRha),
+            'ԗ' => Ok(CyrillicSupplement::CyrillicSmallLetterRha),
+            'Ԙ' => Ok(CyrillicSupplement::CyrillicCapitalLetterYae),
+            'ԙ' => Ok(CyrillicSupplement::CyrillicSmallLetterYae),
+            'Ԛ' => Ok(CyrillicSupplement::CyrillicCapitalLetterQa),
+            'ԛ' => Ok(CyrillicSupplement::CyrillicSmallLetterQa),
+            'Ԝ' => Ok(CyrillicSupplement::CyrillicCapitalLetterWe),
+            'ԝ' => Ok(CyrillicSupplement::CyrillicSmallLetterWe),
+            'Ԟ' => Ok(CyrillicSupplement::CyrillicCapitalLetterAleutKa),
+            'ԟ' => Ok(CyrillicSupplement::CyrillicSmallLetterAleutKa),
+            'Ԡ' => Ok(CyrillicSupplement::CyrillicCapitalLetterElWithMiddleHook),
+            'ԡ' => Ok(CyrillicSupplement::CyrillicSmallLetterElWithMiddleHook),
+            'Ԣ' => Ok(CyrillicSupplement::CyrillicCapitalLetterEnWithMiddleHook),
+            'ԣ' => Ok(CyrillicSupplement::CyrillicSmallLetterEnWithMiddleHook),
+            'Ԥ' => Ok(CyrillicSupplement::CyrillicCapitalLetterPeWithDescender),
+            'ԥ' => Ok(CyrillicSupplement::CyrillicSmallLetterPeWithDescender),
+            'Ԧ' => Ok(CyrillicSupplement::CyrillicCapitalLetterShhaWithDescender),
+            'ԧ' => Ok(CyrillicSupplement::CyrillicSmallLetterShhaWithDescender),
+            'Ԩ' => Ok(CyrillicSupplement::CyrillicCapitalLetterEnWithLeftHook),
+            'ԩ' => Ok(CyrillicSupplement::CyrillicSmallLetterEnWithLeftHook),
+            'Ԫ' => Ok(CyrillicSupplement::CyrillicCapitalLetterDzzhe),
+            'ԫ' => Ok(CyrillicSupplement::CyrillicSmallLetterDzzhe),
+            'Ԭ' => Ok(CyrillicSupplement::CyrillicCapitalLetterDche),
+            'ԭ' => Ok(CyrillicSupplement::CyrillicSmallLetterDche),
+            'Ԯ' => Ok(CyrillicSupplement::CyrillicCapitalLetterElWithDescender),
             _ => Err(()),
         }
     }

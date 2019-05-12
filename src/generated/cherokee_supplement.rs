@@ -1,164 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{ab70}: 'ꭰ'
-    pub const CHEROKEE_SMALL_LETTER_A: char = 'ꭰ';
-    /// \u{ab71}: 'ꭱ'
-    pub const CHEROKEE_SMALL_LETTER_E: char = 'ꭱ';
-    /// \u{ab72}: 'ꭲ'
-    pub const CHEROKEE_SMALL_LETTER_I: char = 'ꭲ';
-    /// \u{ab73}: 'ꭳ'
-    pub const CHEROKEE_SMALL_LETTER_O: char = 'ꭳ';
-    /// \u{ab74}: 'ꭴ'
-    pub const CHEROKEE_SMALL_LETTER_U: char = 'ꭴ';
-    /// \u{ab75}: 'ꭵ'
-    pub const CHEROKEE_SMALL_LETTER_V: char = 'ꭵ';
-    /// \u{ab76}: 'ꭶ'
-    pub const CHEROKEE_SMALL_LETTER_GA: char = 'ꭶ';
-    /// \u{ab77}: 'ꭷ'
-    pub const CHEROKEE_SMALL_LETTER_KA: char = 'ꭷ';
-    /// \u{ab78}: 'ꭸ'
-    pub const CHEROKEE_SMALL_LETTER_GE: char = 'ꭸ';
-    /// \u{ab79}: 'ꭹ'
-    pub const CHEROKEE_SMALL_LETTER_GI: char = 'ꭹ';
-    /// \u{ab7a}: 'ꭺ'
-    pub const CHEROKEE_SMALL_LETTER_GO: char = 'ꭺ';
-    /// \u{ab7b}: 'ꭻ'
-    pub const CHEROKEE_SMALL_LETTER_GU: char = 'ꭻ';
-    /// \u{ab7c}: 'ꭼ'
-    pub const CHEROKEE_SMALL_LETTER_GV: char = 'ꭼ';
-    /// \u{ab7d}: 'ꭽ'
-    pub const CHEROKEE_SMALL_LETTER_HA: char = 'ꭽ';
-    /// \u{ab7e}: 'ꭾ'
-    pub const CHEROKEE_SMALL_LETTER_HE: char = 'ꭾ';
-    /// \u{ab7f}: 'ꭿ'
-    pub const CHEROKEE_SMALL_LETTER_HI: char = 'ꭿ';
-    /// \u{ab80}: 'ꮀ'
-    pub const CHEROKEE_SMALL_LETTER_HO: char = 'ꮀ';
-    /// \u{ab81}: 'ꮁ'
-    pub const CHEROKEE_SMALL_LETTER_HU: char = 'ꮁ';
-    /// \u{ab82}: 'ꮂ'
-    pub const CHEROKEE_SMALL_LETTER_HV: char = 'ꮂ';
-    /// \u{ab83}: 'ꮃ'
-    pub const CHEROKEE_SMALL_LETTER_LA: char = 'ꮃ';
-    /// \u{ab84}: 'ꮄ'
-    pub const CHEROKEE_SMALL_LETTER_LE: char = 'ꮄ';
-    /// \u{ab85}: 'ꮅ'
-    pub const CHEROKEE_SMALL_LETTER_LI: char = 'ꮅ';
-    /// \u{ab86}: 'ꮆ'
-    pub const CHEROKEE_SMALL_LETTER_LO: char = 'ꮆ';
-    /// \u{ab87}: 'ꮇ'
-    pub const CHEROKEE_SMALL_LETTER_LU: char = 'ꮇ';
-    /// \u{ab88}: 'ꮈ'
-    pub const CHEROKEE_SMALL_LETTER_LV: char = 'ꮈ';
-    /// \u{ab89}: 'ꮉ'
-    pub const CHEROKEE_SMALL_LETTER_MA: char = 'ꮉ';
-    /// \u{ab8a}: 'ꮊ'
-    pub const CHEROKEE_SMALL_LETTER_ME: char = 'ꮊ';
-    /// \u{ab8b}: 'ꮋ'
-    pub const CHEROKEE_SMALL_LETTER_MI: char = 'ꮋ';
-    /// \u{ab8c}: 'ꮌ'
-    pub const CHEROKEE_SMALL_LETTER_MO: char = 'ꮌ';
-    /// \u{ab8d}: 'ꮍ'
-    pub const CHEROKEE_SMALL_LETTER_MU: char = 'ꮍ';
-    /// \u{ab8e}: 'ꮎ'
-    pub const CHEROKEE_SMALL_LETTER_NA: char = 'ꮎ';
-    /// \u{ab8f}: 'ꮏ'
-    pub const CHEROKEE_SMALL_LETTER_HNA: char = 'ꮏ';
-    /// \u{ab90}: 'ꮐ'
-    pub const CHEROKEE_SMALL_LETTER_NAH: char = 'ꮐ';
-    /// \u{ab91}: 'ꮑ'
-    pub const CHEROKEE_SMALL_LETTER_NE: char = 'ꮑ';
-    /// \u{ab92}: 'ꮒ'
-    pub const CHEROKEE_SMALL_LETTER_NI: char = 'ꮒ';
-    /// \u{ab93}: 'ꮓ'
-    pub const CHEROKEE_SMALL_LETTER_NO: char = 'ꮓ';
-    /// \u{ab94}: 'ꮔ'
-    pub const CHEROKEE_SMALL_LETTER_NU: char = 'ꮔ';
-    /// \u{ab95}: 'ꮕ'
-    pub const CHEROKEE_SMALL_LETTER_NV: char = 'ꮕ';
-    /// \u{ab96}: 'ꮖ'
-    pub const CHEROKEE_SMALL_LETTER_QUA: char = 'ꮖ';
-    /// \u{ab97}: 'ꮗ'
-    pub const CHEROKEE_SMALL_LETTER_QUE: char = 'ꮗ';
-    /// \u{ab98}: 'ꮘ'
-    pub const CHEROKEE_SMALL_LETTER_QUI: char = 'ꮘ';
-    /// \u{ab99}: 'ꮙ'
-    pub const CHEROKEE_SMALL_LETTER_QUO: char = 'ꮙ';
-    /// \u{ab9a}: 'ꮚ'
-    pub const CHEROKEE_SMALL_LETTER_QUU: char = 'ꮚ';
-    /// \u{ab9b}: 'ꮛ'
-    pub const CHEROKEE_SMALL_LETTER_QUV: char = 'ꮛ';
-    /// \u{ab9c}: 'ꮜ'
-    pub const CHEROKEE_SMALL_LETTER_SA: char = 'ꮜ';
-    /// \u{ab9d}: 'ꮝ'
-    pub const CHEROKEE_SMALL_LETTER_S: char = 'ꮝ';
-    /// \u{ab9e}: 'ꮞ'
-    pub const CHEROKEE_SMALL_LETTER_SE: char = 'ꮞ';
-    /// \u{ab9f}: 'ꮟ'
-    pub const CHEROKEE_SMALL_LETTER_SI: char = 'ꮟ';
-    /// \u{aba0}: 'ꮠ'
-    pub const CHEROKEE_SMALL_LETTER_SO: char = 'ꮠ';
-    /// \u{aba1}: 'ꮡ'
-    pub const CHEROKEE_SMALL_LETTER_SU: char = 'ꮡ';
-    /// \u{aba2}: 'ꮢ'
-    pub const CHEROKEE_SMALL_LETTER_SV: char = 'ꮢ';
-    /// \u{aba3}: 'ꮣ'
-    pub const CHEROKEE_SMALL_LETTER_DA: char = 'ꮣ';
-    /// \u{aba4}: 'ꮤ'
-    pub const CHEROKEE_SMALL_LETTER_TA: char = 'ꮤ';
-    /// \u{aba5}: 'ꮥ'
-    pub const CHEROKEE_SMALL_LETTER_DE: char = 'ꮥ';
-    /// \u{aba6}: 'ꮦ'
-    pub const CHEROKEE_SMALL_LETTER_TE: char = 'ꮦ';
-    /// \u{aba7}: 'ꮧ'
-    pub const CHEROKEE_SMALL_LETTER_DI: char = 'ꮧ';
-    /// \u{aba8}: 'ꮨ'
-    pub const CHEROKEE_SMALL_LETTER_TI: char = 'ꮨ';
-    /// \u{aba9}: 'ꮩ'
-    pub const CHEROKEE_SMALL_LETTER_DO: char = 'ꮩ';
-    /// \u{abaa}: 'ꮪ'
-    pub const CHEROKEE_SMALL_LETTER_DU: char = 'ꮪ';
-    /// \u{abab}: 'ꮫ'
-    pub const CHEROKEE_SMALL_LETTER_DV: char = 'ꮫ';
-    /// \u{abac}: 'ꮬ'
-    pub const CHEROKEE_SMALL_LETTER_DLA: char = 'ꮬ';
-    /// \u{abad}: 'ꮭ'
-    pub const CHEROKEE_SMALL_LETTER_TLA: char = 'ꮭ';
-    /// \u{abae}: 'ꮮ'
-    pub const CHEROKEE_SMALL_LETTER_TLE: char = 'ꮮ';
-    /// \u{abaf}: 'ꮯ'
-    pub const CHEROKEE_SMALL_LETTER_TLI: char = 'ꮯ';
-    /// \u{abb0}: 'ꮰ'
-    pub const CHEROKEE_SMALL_LETTER_TLO: char = 'ꮰ';
-    /// \u{abb1}: 'ꮱ'
-    pub const CHEROKEE_SMALL_LETTER_TLU: char = 'ꮱ';
-    /// \u{abb2}: 'ꮲ'
-    pub const CHEROKEE_SMALL_LETTER_TLV: char = 'ꮲ';
-    /// \u{abb3}: 'ꮳ'
-    pub const CHEROKEE_SMALL_LETTER_TSA: char = 'ꮳ';
-    /// \u{abb4}: 'ꮴ'
-    pub const CHEROKEE_SMALL_LETTER_TSE: char = 'ꮴ';
-    /// \u{abb5}: 'ꮵ'
-    pub const CHEROKEE_SMALL_LETTER_TSI: char = 'ꮵ';
-    /// \u{abb6}: 'ꮶ'
-    pub const CHEROKEE_SMALL_LETTER_TSO: char = 'ꮶ';
-    /// \u{abb7}: 'ꮷ'
-    pub const CHEROKEE_SMALL_LETTER_TSU: char = 'ꮷ';
-    /// \u{abb8}: 'ꮸ'
-    pub const CHEROKEE_SMALL_LETTER_TSV: char = 'ꮸ';
-    /// \u{abb9}: 'ꮹ'
-    pub const CHEROKEE_SMALL_LETTER_WA: char = 'ꮹ';
-    /// \u{abba}: 'ꮺ'
-    pub const CHEROKEE_SMALL_LETTER_WE: char = 'ꮺ';
-    /// \u{abbb}: 'ꮻ'
-    pub const CHEROKEE_SMALL_LETTER_WI: char = 'ꮻ';
-    /// \u{abbc}: 'ꮼ'
-    pub const CHEROKEE_SMALL_LETTER_WO: char = 'ꮼ';
-    /// \u{abbd}: 'ꮽ'
-    pub const CHEROKEE_SMALL_LETTER_WU: char = 'ꮽ';
-    /// \u{abbe}: 'ꮾ'
-    pub const CHEROKEE_SMALL_LETTER_WV: char = 'ꮾ';
-}
 
 /// An enum to represent all characters in the CherokeeSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -325,87 +164,86 @@ pub enum CherokeeSupplement {
 
 impl Into<char> for CherokeeSupplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            CherokeeSupplement::CherokeeSmallLetterA => CHEROKEE_SMALL_LETTER_A,
-            CherokeeSupplement::CherokeeSmallLetterE => CHEROKEE_SMALL_LETTER_E,
-            CherokeeSupplement::CherokeeSmallLetterI => CHEROKEE_SMALL_LETTER_I,
-            CherokeeSupplement::CherokeeSmallLetterO => CHEROKEE_SMALL_LETTER_O,
-            CherokeeSupplement::CherokeeSmallLetterU => CHEROKEE_SMALL_LETTER_U,
-            CherokeeSupplement::CherokeeSmallLetterV => CHEROKEE_SMALL_LETTER_V,
-            CherokeeSupplement::CherokeeSmallLetterGa => CHEROKEE_SMALL_LETTER_GA,
-            CherokeeSupplement::CherokeeSmallLetterKa => CHEROKEE_SMALL_LETTER_KA,
-            CherokeeSupplement::CherokeeSmallLetterGe => CHEROKEE_SMALL_LETTER_GE,
-            CherokeeSupplement::CherokeeSmallLetterGi => CHEROKEE_SMALL_LETTER_GI,
-            CherokeeSupplement::CherokeeSmallLetterGo => CHEROKEE_SMALL_LETTER_GO,
-            CherokeeSupplement::CherokeeSmallLetterGu => CHEROKEE_SMALL_LETTER_GU,
-            CherokeeSupplement::CherokeeSmallLetterGv => CHEROKEE_SMALL_LETTER_GV,
-            CherokeeSupplement::CherokeeSmallLetterHa => CHEROKEE_SMALL_LETTER_HA,
-            CherokeeSupplement::CherokeeSmallLetterHe => CHEROKEE_SMALL_LETTER_HE,
-            CherokeeSupplement::CherokeeSmallLetterHi => CHEROKEE_SMALL_LETTER_HI,
-            CherokeeSupplement::CherokeeSmallLetterHo => CHEROKEE_SMALL_LETTER_HO,
-            CherokeeSupplement::CherokeeSmallLetterHu => CHEROKEE_SMALL_LETTER_HU,
-            CherokeeSupplement::CherokeeSmallLetterHv => CHEROKEE_SMALL_LETTER_HV,
-            CherokeeSupplement::CherokeeSmallLetterLa => CHEROKEE_SMALL_LETTER_LA,
-            CherokeeSupplement::CherokeeSmallLetterLe => CHEROKEE_SMALL_LETTER_LE,
-            CherokeeSupplement::CherokeeSmallLetterLi => CHEROKEE_SMALL_LETTER_LI,
-            CherokeeSupplement::CherokeeSmallLetterLo => CHEROKEE_SMALL_LETTER_LO,
-            CherokeeSupplement::CherokeeSmallLetterLu => CHEROKEE_SMALL_LETTER_LU,
-            CherokeeSupplement::CherokeeSmallLetterLv => CHEROKEE_SMALL_LETTER_LV,
-            CherokeeSupplement::CherokeeSmallLetterMa => CHEROKEE_SMALL_LETTER_MA,
-            CherokeeSupplement::CherokeeSmallLetterMe => CHEROKEE_SMALL_LETTER_ME,
-            CherokeeSupplement::CherokeeSmallLetterMi => CHEROKEE_SMALL_LETTER_MI,
-            CherokeeSupplement::CherokeeSmallLetterMo => CHEROKEE_SMALL_LETTER_MO,
-            CherokeeSupplement::CherokeeSmallLetterMu => CHEROKEE_SMALL_LETTER_MU,
-            CherokeeSupplement::CherokeeSmallLetterNa => CHEROKEE_SMALL_LETTER_NA,
-            CherokeeSupplement::CherokeeSmallLetterHna => CHEROKEE_SMALL_LETTER_HNA,
-            CherokeeSupplement::CherokeeSmallLetterNah => CHEROKEE_SMALL_LETTER_NAH,
-            CherokeeSupplement::CherokeeSmallLetterNe => CHEROKEE_SMALL_LETTER_NE,
-            CherokeeSupplement::CherokeeSmallLetterNi => CHEROKEE_SMALL_LETTER_NI,
-            CherokeeSupplement::CherokeeSmallLetterNo => CHEROKEE_SMALL_LETTER_NO,
-            CherokeeSupplement::CherokeeSmallLetterNu => CHEROKEE_SMALL_LETTER_NU,
-            CherokeeSupplement::CherokeeSmallLetterNv => CHEROKEE_SMALL_LETTER_NV,
-            CherokeeSupplement::CherokeeSmallLetterQua => CHEROKEE_SMALL_LETTER_QUA,
-            CherokeeSupplement::CherokeeSmallLetterQue => CHEROKEE_SMALL_LETTER_QUE,
-            CherokeeSupplement::CherokeeSmallLetterQui => CHEROKEE_SMALL_LETTER_QUI,
-            CherokeeSupplement::CherokeeSmallLetterQuo => CHEROKEE_SMALL_LETTER_QUO,
-            CherokeeSupplement::CherokeeSmallLetterQuu => CHEROKEE_SMALL_LETTER_QUU,
-            CherokeeSupplement::CherokeeSmallLetterQuv => CHEROKEE_SMALL_LETTER_QUV,
-            CherokeeSupplement::CherokeeSmallLetterSa => CHEROKEE_SMALL_LETTER_SA,
-            CherokeeSupplement::CherokeeSmallLetterS => CHEROKEE_SMALL_LETTER_S,
-            CherokeeSupplement::CherokeeSmallLetterSe => CHEROKEE_SMALL_LETTER_SE,
-            CherokeeSupplement::CherokeeSmallLetterSi => CHEROKEE_SMALL_LETTER_SI,
-            CherokeeSupplement::CherokeeSmallLetterSo => CHEROKEE_SMALL_LETTER_SO,
-            CherokeeSupplement::CherokeeSmallLetterSu => CHEROKEE_SMALL_LETTER_SU,
-            CherokeeSupplement::CherokeeSmallLetterSv => CHEROKEE_SMALL_LETTER_SV,
-            CherokeeSupplement::CherokeeSmallLetterDa => CHEROKEE_SMALL_LETTER_DA,
-            CherokeeSupplement::CherokeeSmallLetterTa => CHEROKEE_SMALL_LETTER_TA,
-            CherokeeSupplement::CherokeeSmallLetterDe => CHEROKEE_SMALL_LETTER_DE,
-            CherokeeSupplement::CherokeeSmallLetterTe => CHEROKEE_SMALL_LETTER_TE,
-            CherokeeSupplement::CherokeeSmallLetterDi => CHEROKEE_SMALL_LETTER_DI,
-            CherokeeSupplement::CherokeeSmallLetterTi => CHEROKEE_SMALL_LETTER_TI,
-            CherokeeSupplement::CherokeeSmallLetterDo => CHEROKEE_SMALL_LETTER_DO,
-            CherokeeSupplement::CherokeeSmallLetterDu => CHEROKEE_SMALL_LETTER_DU,
-            CherokeeSupplement::CherokeeSmallLetterDv => CHEROKEE_SMALL_LETTER_DV,
-            CherokeeSupplement::CherokeeSmallLetterDla => CHEROKEE_SMALL_LETTER_DLA,
-            CherokeeSupplement::CherokeeSmallLetterTla => CHEROKEE_SMALL_LETTER_TLA,
-            CherokeeSupplement::CherokeeSmallLetterTle => CHEROKEE_SMALL_LETTER_TLE,
-            CherokeeSupplement::CherokeeSmallLetterTli => CHEROKEE_SMALL_LETTER_TLI,
-            CherokeeSupplement::CherokeeSmallLetterTlo => CHEROKEE_SMALL_LETTER_TLO,
-            CherokeeSupplement::CherokeeSmallLetterTlu => CHEROKEE_SMALL_LETTER_TLU,
-            CherokeeSupplement::CherokeeSmallLetterTlv => CHEROKEE_SMALL_LETTER_TLV,
-            CherokeeSupplement::CherokeeSmallLetterTsa => CHEROKEE_SMALL_LETTER_TSA,
-            CherokeeSupplement::CherokeeSmallLetterTse => CHEROKEE_SMALL_LETTER_TSE,
-            CherokeeSupplement::CherokeeSmallLetterTsi => CHEROKEE_SMALL_LETTER_TSI,
-            CherokeeSupplement::CherokeeSmallLetterTso => CHEROKEE_SMALL_LETTER_TSO,
-            CherokeeSupplement::CherokeeSmallLetterTsu => CHEROKEE_SMALL_LETTER_TSU,
-            CherokeeSupplement::CherokeeSmallLetterTsv => CHEROKEE_SMALL_LETTER_TSV,
-            CherokeeSupplement::CherokeeSmallLetterWa => CHEROKEE_SMALL_LETTER_WA,
-            CherokeeSupplement::CherokeeSmallLetterWe => CHEROKEE_SMALL_LETTER_WE,
-            CherokeeSupplement::CherokeeSmallLetterWi => CHEROKEE_SMALL_LETTER_WI,
-            CherokeeSupplement::CherokeeSmallLetterWo => CHEROKEE_SMALL_LETTER_WO,
-            CherokeeSupplement::CherokeeSmallLetterWu => CHEROKEE_SMALL_LETTER_WU,
-            CherokeeSupplement::CherokeeSmallLetterWv => CHEROKEE_SMALL_LETTER_WV,
+            CherokeeSupplement::CherokeeSmallLetterA => 'ꭰ',
+            CherokeeSupplement::CherokeeSmallLetterE => 'ꭱ',
+            CherokeeSupplement::CherokeeSmallLetterI => 'ꭲ',
+            CherokeeSupplement::CherokeeSmallLetterO => 'ꭳ',
+            CherokeeSupplement::CherokeeSmallLetterU => 'ꭴ',
+            CherokeeSupplement::CherokeeSmallLetterV => 'ꭵ',
+            CherokeeSupplement::CherokeeSmallLetterGa => 'ꭶ',
+            CherokeeSupplement::CherokeeSmallLetterKa => 'ꭷ',
+            CherokeeSupplement::CherokeeSmallLetterGe => 'ꭸ',
+            CherokeeSupplement::CherokeeSmallLetterGi => 'ꭹ',
+            CherokeeSupplement::CherokeeSmallLetterGo => 'ꭺ',
+            CherokeeSupplement::CherokeeSmallLetterGu => 'ꭻ',
+            CherokeeSupplement::CherokeeSmallLetterGv => 'ꭼ',
+            CherokeeSupplement::CherokeeSmallLetterHa => 'ꭽ',
+            CherokeeSupplement::CherokeeSmallLetterHe => 'ꭾ',
+            CherokeeSupplement::CherokeeSmallLetterHi => 'ꭿ',
+            CherokeeSupplement::CherokeeSmallLetterHo => 'ꮀ',
+            CherokeeSupplement::CherokeeSmallLetterHu => 'ꮁ',
+            CherokeeSupplement::CherokeeSmallLetterHv => 'ꮂ',
+            CherokeeSupplement::CherokeeSmallLetterLa => 'ꮃ',
+            CherokeeSupplement::CherokeeSmallLetterLe => 'ꮄ',
+            CherokeeSupplement::CherokeeSmallLetterLi => 'ꮅ',
+            CherokeeSupplement::CherokeeSmallLetterLo => 'ꮆ',
+            CherokeeSupplement::CherokeeSmallLetterLu => 'ꮇ',
+            CherokeeSupplement::CherokeeSmallLetterLv => 'ꮈ',
+            CherokeeSupplement::CherokeeSmallLetterMa => 'ꮉ',
+            CherokeeSupplement::CherokeeSmallLetterMe => 'ꮊ',
+            CherokeeSupplement::CherokeeSmallLetterMi => 'ꮋ',
+            CherokeeSupplement::CherokeeSmallLetterMo => 'ꮌ',
+            CherokeeSupplement::CherokeeSmallLetterMu => 'ꮍ',
+            CherokeeSupplement::CherokeeSmallLetterNa => 'ꮎ',
+            CherokeeSupplement::CherokeeSmallLetterHna => 'ꮏ',
+            CherokeeSupplement::CherokeeSmallLetterNah => 'ꮐ',
+            CherokeeSupplement::CherokeeSmallLetterNe => 'ꮑ',
+            CherokeeSupplement::CherokeeSmallLetterNi => 'ꮒ',
+            CherokeeSupplement::CherokeeSmallLetterNo => 'ꮓ',
+            CherokeeSupplement::CherokeeSmallLetterNu => 'ꮔ',
+            CherokeeSupplement::CherokeeSmallLetterNv => 'ꮕ',
+            CherokeeSupplement::CherokeeSmallLetterQua => 'ꮖ',
+            CherokeeSupplement::CherokeeSmallLetterQue => 'ꮗ',
+            CherokeeSupplement::CherokeeSmallLetterQui => 'ꮘ',
+            CherokeeSupplement::CherokeeSmallLetterQuo => 'ꮙ',
+            CherokeeSupplement::CherokeeSmallLetterQuu => 'ꮚ',
+            CherokeeSupplement::CherokeeSmallLetterQuv => 'ꮛ',
+            CherokeeSupplement::CherokeeSmallLetterSa => 'ꮜ',
+            CherokeeSupplement::CherokeeSmallLetterS => 'ꮝ',
+            CherokeeSupplement::CherokeeSmallLetterSe => 'ꮞ',
+            CherokeeSupplement::CherokeeSmallLetterSi => 'ꮟ',
+            CherokeeSupplement::CherokeeSmallLetterSo => 'ꮠ',
+            CherokeeSupplement::CherokeeSmallLetterSu => 'ꮡ',
+            CherokeeSupplement::CherokeeSmallLetterSv => 'ꮢ',
+            CherokeeSupplement::CherokeeSmallLetterDa => 'ꮣ',
+            CherokeeSupplement::CherokeeSmallLetterTa => 'ꮤ',
+            CherokeeSupplement::CherokeeSmallLetterDe => 'ꮥ',
+            CherokeeSupplement::CherokeeSmallLetterTe => 'ꮦ',
+            CherokeeSupplement::CherokeeSmallLetterDi => 'ꮧ',
+            CherokeeSupplement::CherokeeSmallLetterTi => 'ꮨ',
+            CherokeeSupplement::CherokeeSmallLetterDo => 'ꮩ',
+            CherokeeSupplement::CherokeeSmallLetterDu => 'ꮪ',
+            CherokeeSupplement::CherokeeSmallLetterDv => 'ꮫ',
+            CherokeeSupplement::CherokeeSmallLetterDla => 'ꮬ',
+            CherokeeSupplement::CherokeeSmallLetterTla => 'ꮭ',
+            CherokeeSupplement::CherokeeSmallLetterTle => 'ꮮ',
+            CherokeeSupplement::CherokeeSmallLetterTli => 'ꮯ',
+            CherokeeSupplement::CherokeeSmallLetterTlo => 'ꮰ',
+            CherokeeSupplement::CherokeeSmallLetterTlu => 'ꮱ',
+            CherokeeSupplement::CherokeeSmallLetterTlv => 'ꮲ',
+            CherokeeSupplement::CherokeeSmallLetterTsa => 'ꮳ',
+            CherokeeSupplement::CherokeeSmallLetterTse => 'ꮴ',
+            CherokeeSupplement::CherokeeSmallLetterTsi => 'ꮵ',
+            CherokeeSupplement::CherokeeSmallLetterTso => 'ꮶ',
+            CherokeeSupplement::CherokeeSmallLetterTsu => 'ꮷ',
+            CherokeeSupplement::CherokeeSmallLetterTsv => 'ꮸ',
+            CherokeeSupplement::CherokeeSmallLetterWa => 'ꮹ',
+            CherokeeSupplement::CherokeeSmallLetterWe => 'ꮺ',
+            CherokeeSupplement::CherokeeSmallLetterWi => 'ꮻ',
+            CherokeeSupplement::CherokeeSmallLetterWo => 'ꮼ',
+            CherokeeSupplement::CherokeeSmallLetterWu => 'ꮽ',
+            CherokeeSupplement::CherokeeSmallLetterWv => 'ꮾ',
         }
     }
 }
@@ -413,87 +251,86 @@ impl Into<char> for CherokeeSupplement {
 impl std::convert::TryFrom<char> for CherokeeSupplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CHEROKEE_SMALL_LETTER_A => Ok(CherokeeSupplement::CherokeeSmallLetterA),
-            CHEROKEE_SMALL_LETTER_E => Ok(CherokeeSupplement::CherokeeSmallLetterE),
-            CHEROKEE_SMALL_LETTER_I => Ok(CherokeeSupplement::CherokeeSmallLetterI),
-            CHEROKEE_SMALL_LETTER_O => Ok(CherokeeSupplement::CherokeeSmallLetterO),
-            CHEROKEE_SMALL_LETTER_U => Ok(CherokeeSupplement::CherokeeSmallLetterU),
-            CHEROKEE_SMALL_LETTER_V => Ok(CherokeeSupplement::CherokeeSmallLetterV),
-            CHEROKEE_SMALL_LETTER_GA => Ok(CherokeeSupplement::CherokeeSmallLetterGa),
-            CHEROKEE_SMALL_LETTER_KA => Ok(CherokeeSupplement::CherokeeSmallLetterKa),
-            CHEROKEE_SMALL_LETTER_GE => Ok(CherokeeSupplement::CherokeeSmallLetterGe),
-            CHEROKEE_SMALL_LETTER_GI => Ok(CherokeeSupplement::CherokeeSmallLetterGi),
-            CHEROKEE_SMALL_LETTER_GO => Ok(CherokeeSupplement::CherokeeSmallLetterGo),
-            CHEROKEE_SMALL_LETTER_GU => Ok(CherokeeSupplement::CherokeeSmallLetterGu),
-            CHEROKEE_SMALL_LETTER_GV => Ok(CherokeeSupplement::CherokeeSmallLetterGv),
-            CHEROKEE_SMALL_LETTER_HA => Ok(CherokeeSupplement::CherokeeSmallLetterHa),
-            CHEROKEE_SMALL_LETTER_HE => Ok(CherokeeSupplement::CherokeeSmallLetterHe),
-            CHEROKEE_SMALL_LETTER_HI => Ok(CherokeeSupplement::CherokeeSmallLetterHi),
-            CHEROKEE_SMALL_LETTER_HO => Ok(CherokeeSupplement::CherokeeSmallLetterHo),
-            CHEROKEE_SMALL_LETTER_HU => Ok(CherokeeSupplement::CherokeeSmallLetterHu),
-            CHEROKEE_SMALL_LETTER_HV => Ok(CherokeeSupplement::CherokeeSmallLetterHv),
-            CHEROKEE_SMALL_LETTER_LA => Ok(CherokeeSupplement::CherokeeSmallLetterLa),
-            CHEROKEE_SMALL_LETTER_LE => Ok(CherokeeSupplement::CherokeeSmallLetterLe),
-            CHEROKEE_SMALL_LETTER_LI => Ok(CherokeeSupplement::CherokeeSmallLetterLi),
-            CHEROKEE_SMALL_LETTER_LO => Ok(CherokeeSupplement::CherokeeSmallLetterLo),
-            CHEROKEE_SMALL_LETTER_LU => Ok(CherokeeSupplement::CherokeeSmallLetterLu),
-            CHEROKEE_SMALL_LETTER_LV => Ok(CherokeeSupplement::CherokeeSmallLetterLv),
-            CHEROKEE_SMALL_LETTER_MA => Ok(CherokeeSupplement::CherokeeSmallLetterMa),
-            CHEROKEE_SMALL_LETTER_ME => Ok(CherokeeSupplement::CherokeeSmallLetterMe),
-            CHEROKEE_SMALL_LETTER_MI => Ok(CherokeeSupplement::CherokeeSmallLetterMi),
-            CHEROKEE_SMALL_LETTER_MO => Ok(CherokeeSupplement::CherokeeSmallLetterMo),
-            CHEROKEE_SMALL_LETTER_MU => Ok(CherokeeSupplement::CherokeeSmallLetterMu),
-            CHEROKEE_SMALL_LETTER_NA => Ok(CherokeeSupplement::CherokeeSmallLetterNa),
-            CHEROKEE_SMALL_LETTER_HNA => Ok(CherokeeSupplement::CherokeeSmallLetterHna),
-            CHEROKEE_SMALL_LETTER_NAH => Ok(CherokeeSupplement::CherokeeSmallLetterNah),
-            CHEROKEE_SMALL_LETTER_NE => Ok(CherokeeSupplement::CherokeeSmallLetterNe),
-            CHEROKEE_SMALL_LETTER_NI => Ok(CherokeeSupplement::CherokeeSmallLetterNi),
-            CHEROKEE_SMALL_LETTER_NO => Ok(CherokeeSupplement::CherokeeSmallLetterNo),
-            CHEROKEE_SMALL_LETTER_NU => Ok(CherokeeSupplement::CherokeeSmallLetterNu),
-            CHEROKEE_SMALL_LETTER_NV => Ok(CherokeeSupplement::CherokeeSmallLetterNv),
-            CHEROKEE_SMALL_LETTER_QUA => Ok(CherokeeSupplement::CherokeeSmallLetterQua),
-            CHEROKEE_SMALL_LETTER_QUE => Ok(CherokeeSupplement::CherokeeSmallLetterQue),
-            CHEROKEE_SMALL_LETTER_QUI => Ok(CherokeeSupplement::CherokeeSmallLetterQui),
-            CHEROKEE_SMALL_LETTER_QUO => Ok(CherokeeSupplement::CherokeeSmallLetterQuo),
-            CHEROKEE_SMALL_LETTER_QUU => Ok(CherokeeSupplement::CherokeeSmallLetterQuu),
-            CHEROKEE_SMALL_LETTER_QUV => Ok(CherokeeSupplement::CherokeeSmallLetterQuv),
-            CHEROKEE_SMALL_LETTER_SA => Ok(CherokeeSupplement::CherokeeSmallLetterSa),
-            CHEROKEE_SMALL_LETTER_S => Ok(CherokeeSupplement::CherokeeSmallLetterS),
-            CHEROKEE_SMALL_LETTER_SE => Ok(CherokeeSupplement::CherokeeSmallLetterSe),
-            CHEROKEE_SMALL_LETTER_SI => Ok(CherokeeSupplement::CherokeeSmallLetterSi),
-            CHEROKEE_SMALL_LETTER_SO => Ok(CherokeeSupplement::CherokeeSmallLetterSo),
-            CHEROKEE_SMALL_LETTER_SU => Ok(CherokeeSupplement::CherokeeSmallLetterSu),
-            CHEROKEE_SMALL_LETTER_SV => Ok(CherokeeSupplement::CherokeeSmallLetterSv),
-            CHEROKEE_SMALL_LETTER_DA => Ok(CherokeeSupplement::CherokeeSmallLetterDa),
-            CHEROKEE_SMALL_LETTER_TA => Ok(CherokeeSupplement::CherokeeSmallLetterTa),
-            CHEROKEE_SMALL_LETTER_DE => Ok(CherokeeSupplement::CherokeeSmallLetterDe),
-            CHEROKEE_SMALL_LETTER_TE => Ok(CherokeeSupplement::CherokeeSmallLetterTe),
-            CHEROKEE_SMALL_LETTER_DI => Ok(CherokeeSupplement::CherokeeSmallLetterDi),
-            CHEROKEE_SMALL_LETTER_TI => Ok(CherokeeSupplement::CherokeeSmallLetterTi),
-            CHEROKEE_SMALL_LETTER_DO => Ok(CherokeeSupplement::CherokeeSmallLetterDo),
-            CHEROKEE_SMALL_LETTER_DU => Ok(CherokeeSupplement::CherokeeSmallLetterDu),
-            CHEROKEE_SMALL_LETTER_DV => Ok(CherokeeSupplement::CherokeeSmallLetterDv),
-            CHEROKEE_SMALL_LETTER_DLA => Ok(CherokeeSupplement::CherokeeSmallLetterDla),
-            CHEROKEE_SMALL_LETTER_TLA => Ok(CherokeeSupplement::CherokeeSmallLetterTla),
-            CHEROKEE_SMALL_LETTER_TLE => Ok(CherokeeSupplement::CherokeeSmallLetterTle),
-            CHEROKEE_SMALL_LETTER_TLI => Ok(CherokeeSupplement::CherokeeSmallLetterTli),
-            CHEROKEE_SMALL_LETTER_TLO => Ok(CherokeeSupplement::CherokeeSmallLetterTlo),
-            CHEROKEE_SMALL_LETTER_TLU => Ok(CherokeeSupplement::CherokeeSmallLetterTlu),
-            CHEROKEE_SMALL_LETTER_TLV => Ok(CherokeeSupplement::CherokeeSmallLetterTlv),
-            CHEROKEE_SMALL_LETTER_TSA => Ok(CherokeeSupplement::CherokeeSmallLetterTsa),
-            CHEROKEE_SMALL_LETTER_TSE => Ok(CherokeeSupplement::CherokeeSmallLetterTse),
-            CHEROKEE_SMALL_LETTER_TSI => Ok(CherokeeSupplement::CherokeeSmallLetterTsi),
-            CHEROKEE_SMALL_LETTER_TSO => Ok(CherokeeSupplement::CherokeeSmallLetterTso),
-            CHEROKEE_SMALL_LETTER_TSU => Ok(CherokeeSupplement::CherokeeSmallLetterTsu),
-            CHEROKEE_SMALL_LETTER_TSV => Ok(CherokeeSupplement::CherokeeSmallLetterTsv),
-            CHEROKEE_SMALL_LETTER_WA => Ok(CherokeeSupplement::CherokeeSmallLetterWa),
-            CHEROKEE_SMALL_LETTER_WE => Ok(CherokeeSupplement::CherokeeSmallLetterWe),
-            CHEROKEE_SMALL_LETTER_WI => Ok(CherokeeSupplement::CherokeeSmallLetterWi),
-            CHEROKEE_SMALL_LETTER_WO => Ok(CherokeeSupplement::CherokeeSmallLetterWo),
-            CHEROKEE_SMALL_LETTER_WU => Ok(CherokeeSupplement::CherokeeSmallLetterWu),
-            CHEROKEE_SMALL_LETTER_WV => Ok(CherokeeSupplement::CherokeeSmallLetterWv),
+            'ꭰ' => Ok(CherokeeSupplement::CherokeeSmallLetterA),
+            'ꭱ' => Ok(CherokeeSupplement::CherokeeSmallLetterE),
+            'ꭲ' => Ok(CherokeeSupplement::CherokeeSmallLetterI),
+            'ꭳ' => Ok(CherokeeSupplement::CherokeeSmallLetterO),
+            'ꭴ' => Ok(CherokeeSupplement::CherokeeSmallLetterU),
+            'ꭵ' => Ok(CherokeeSupplement::CherokeeSmallLetterV),
+            'ꭶ' => Ok(CherokeeSupplement::CherokeeSmallLetterGa),
+            'ꭷ' => Ok(CherokeeSupplement::CherokeeSmallLetterKa),
+            'ꭸ' => Ok(CherokeeSupplement::CherokeeSmallLetterGe),
+            'ꭹ' => Ok(CherokeeSupplement::CherokeeSmallLetterGi),
+            'ꭺ' => Ok(CherokeeSupplement::CherokeeSmallLetterGo),
+            'ꭻ' => Ok(CherokeeSupplement::CherokeeSmallLetterGu),
+            'ꭼ' => Ok(CherokeeSupplement::CherokeeSmallLetterGv),
+            'ꭽ' => Ok(CherokeeSupplement::CherokeeSmallLetterHa),
+            'ꭾ' => Ok(CherokeeSupplement::CherokeeSmallLetterHe),
+            'ꭿ' => Ok(CherokeeSupplement::CherokeeSmallLetterHi),
+            'ꮀ' => Ok(CherokeeSupplement::CherokeeSmallLetterHo),
+            'ꮁ' => Ok(CherokeeSupplement::CherokeeSmallLetterHu),
+            'ꮂ' => Ok(CherokeeSupplement::CherokeeSmallLetterHv),
+            'ꮃ' => Ok(CherokeeSupplement::CherokeeSmallLetterLa),
+            'ꮄ' => Ok(CherokeeSupplement::CherokeeSmallLetterLe),
+            'ꮅ' => Ok(CherokeeSupplement::CherokeeSmallLetterLi),
+            'ꮆ' => Ok(CherokeeSupplement::CherokeeSmallLetterLo),
+            'ꮇ' => Ok(CherokeeSupplement::CherokeeSmallLetterLu),
+            'ꮈ' => Ok(CherokeeSupplement::CherokeeSmallLetterLv),
+            'ꮉ' => Ok(CherokeeSupplement::CherokeeSmallLetterMa),
+            'ꮊ' => Ok(CherokeeSupplement::CherokeeSmallLetterMe),
+            'ꮋ' => Ok(CherokeeSupplement::CherokeeSmallLetterMi),
+            'ꮌ' => Ok(CherokeeSupplement::CherokeeSmallLetterMo),
+            'ꮍ' => Ok(CherokeeSupplement::CherokeeSmallLetterMu),
+            'ꮎ' => Ok(CherokeeSupplement::CherokeeSmallLetterNa),
+            'ꮏ' => Ok(CherokeeSupplement::CherokeeSmallLetterHna),
+            'ꮐ' => Ok(CherokeeSupplement::CherokeeSmallLetterNah),
+            'ꮑ' => Ok(CherokeeSupplement::CherokeeSmallLetterNe),
+            'ꮒ' => Ok(CherokeeSupplement::CherokeeSmallLetterNi),
+            'ꮓ' => Ok(CherokeeSupplement::CherokeeSmallLetterNo),
+            'ꮔ' => Ok(CherokeeSupplement::CherokeeSmallLetterNu),
+            'ꮕ' => Ok(CherokeeSupplement::CherokeeSmallLetterNv),
+            'ꮖ' => Ok(CherokeeSupplement::CherokeeSmallLetterQua),
+            'ꮗ' => Ok(CherokeeSupplement::CherokeeSmallLetterQue),
+            'ꮘ' => Ok(CherokeeSupplement::CherokeeSmallLetterQui),
+            'ꮙ' => Ok(CherokeeSupplement::CherokeeSmallLetterQuo),
+            'ꮚ' => Ok(CherokeeSupplement::CherokeeSmallLetterQuu),
+            'ꮛ' => Ok(CherokeeSupplement::CherokeeSmallLetterQuv),
+            'ꮜ' => Ok(CherokeeSupplement::CherokeeSmallLetterSa),
+            'ꮝ' => Ok(CherokeeSupplement::CherokeeSmallLetterS),
+            'ꮞ' => Ok(CherokeeSupplement::CherokeeSmallLetterSe),
+            'ꮟ' => Ok(CherokeeSupplement::CherokeeSmallLetterSi),
+            'ꮠ' => Ok(CherokeeSupplement::CherokeeSmallLetterSo),
+            'ꮡ' => Ok(CherokeeSupplement::CherokeeSmallLetterSu),
+            'ꮢ' => Ok(CherokeeSupplement::CherokeeSmallLetterSv),
+            'ꮣ' => Ok(CherokeeSupplement::CherokeeSmallLetterDa),
+            'ꮤ' => Ok(CherokeeSupplement::CherokeeSmallLetterTa),
+            'ꮥ' => Ok(CherokeeSupplement::CherokeeSmallLetterDe),
+            'ꮦ' => Ok(CherokeeSupplement::CherokeeSmallLetterTe),
+            'ꮧ' => Ok(CherokeeSupplement::CherokeeSmallLetterDi),
+            'ꮨ' => Ok(CherokeeSupplement::CherokeeSmallLetterTi),
+            'ꮩ' => Ok(CherokeeSupplement::CherokeeSmallLetterDo),
+            'ꮪ' => Ok(CherokeeSupplement::CherokeeSmallLetterDu),
+            'ꮫ' => Ok(CherokeeSupplement::CherokeeSmallLetterDv),
+            'ꮬ' => Ok(CherokeeSupplement::CherokeeSmallLetterDla),
+            'ꮭ' => Ok(CherokeeSupplement::CherokeeSmallLetterTla),
+            'ꮮ' => Ok(CherokeeSupplement::CherokeeSmallLetterTle),
+            'ꮯ' => Ok(CherokeeSupplement::CherokeeSmallLetterTli),
+            'ꮰ' => Ok(CherokeeSupplement::CherokeeSmallLetterTlo),
+            'ꮱ' => Ok(CherokeeSupplement::CherokeeSmallLetterTlu),
+            'ꮲ' => Ok(CherokeeSupplement::CherokeeSmallLetterTlv),
+            'ꮳ' => Ok(CherokeeSupplement::CherokeeSmallLetterTsa),
+            'ꮴ' => Ok(CherokeeSupplement::CherokeeSmallLetterTse),
+            'ꮵ' => Ok(CherokeeSupplement::CherokeeSmallLetterTsi),
+            'ꮶ' => Ok(CherokeeSupplement::CherokeeSmallLetterTso),
+            'ꮷ' => Ok(CherokeeSupplement::CherokeeSmallLetterTsu),
+            'ꮸ' => Ok(CherokeeSupplement::CherokeeSmallLetterTsv),
+            'ꮹ' => Ok(CherokeeSupplement::CherokeeSmallLetterWa),
+            'ꮺ' => Ok(CherokeeSupplement::CherokeeSmallLetterWe),
+            'ꮻ' => Ok(CherokeeSupplement::CherokeeSmallLetterWi),
+            'ꮼ' => Ok(CherokeeSupplement::CherokeeSmallLetterWo),
+            'ꮽ' => Ok(CherokeeSupplement::CherokeeSmallLetterWu),
+            'ꮾ' => Ok(CherokeeSupplement::CherokeeSmallLetterWv),
             _ => Err(()),
         }
     }

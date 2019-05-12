@@ -1,260 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{900}: 'ऀ'
-    pub const SIGN_INVERTED_CANDRABINDU: char = 'ऀ';
-    /// \u{901}: 'ँ'
-    pub const SIGN_CANDRABINDU: char = 'ँ';
-    /// \u{902}: 'ं'
-    pub const SIGN_ANUSVARA: char = 'ं';
-    /// \u{903}: 'ः'
-    pub const SIGN_VISARGA: char = 'ः';
-    /// \u{904}: 'ऄ'
-    pub const LETTER_SHORT_A: char = 'ऄ';
-    /// \u{905}: 'अ'
-    pub const LETTER_A: char = 'अ';
-    /// \u{906}: 'आ'
-    pub const LETTER_AA: char = 'आ';
-    /// \u{907}: 'इ'
-    pub const LETTER_I: char = 'इ';
-    /// \u{908}: 'ई'
-    pub const LETTER_II: char = 'ई';
-    /// \u{909}: 'उ'
-    pub const LETTER_U: char = 'उ';
-    /// \u{90a}: 'ऊ'
-    pub const LETTER_UU: char = 'ऊ';
-    /// \u{90b}: 'ऋ'
-    pub const LETTER_VOCALIC_R: char = 'ऋ';
-    /// \u{90c}: 'ऌ'
-    pub const LETTER_VOCALIC_L: char = 'ऌ';
-    /// \u{90d}: 'ऍ'
-    pub const LETTER_CANDRA_E: char = 'ऍ';
-    /// \u{90e}: 'ऎ'
-    pub const LETTER_SHORT_E: char = 'ऎ';
-    /// \u{90f}: 'ए'
-    pub const LETTER_E: char = 'ए';
-    /// \u{910}: 'ऐ'
-    pub const LETTER_AI: char = 'ऐ';
-    /// \u{911}: 'ऑ'
-    pub const LETTER_CANDRA_O: char = 'ऑ';
-    /// \u{912}: 'ऒ'
-    pub const LETTER_SHORT_O: char = 'ऒ';
-    /// \u{913}: 'ओ'
-    pub const LETTER_O: char = 'ओ';
-    /// \u{914}: 'औ'
-    pub const LETTER_AU: char = 'औ';
-    /// \u{915}: 'क'
-    pub const LETTER_KA: char = 'क';
-    /// \u{916}: 'ख'
-    pub const LETTER_KHA: char = 'ख';
-    /// \u{917}: 'ग'
-    pub const LETTER_GA: char = 'ग';
-    /// \u{918}: 'घ'
-    pub const LETTER_GHA: char = 'घ';
-    /// \u{919}: 'ङ'
-    pub const LETTER_NGA: char = 'ङ';
-    /// \u{91a}: 'च'
-    pub const LETTER_CA: char = 'च';
-    /// \u{91b}: 'छ'
-    pub const LETTER_CHA: char = 'छ';
-    /// \u{91c}: 'ज'
-    pub const LETTER_JA: char = 'ज';
-    /// \u{91d}: 'झ'
-    pub const LETTER_JHA: char = 'झ';
-    /// \u{91e}: 'ञ'
-    pub const LETTER_NYA: char = 'ञ';
-    /// \u{91f}: 'ट'
-    pub const LETTER_TTA: char = 'ट';
-    /// \u{920}: 'ठ'
-    pub const LETTER_TTHA: char = 'ठ';
-    /// \u{921}: 'ड'
-    pub const LETTER_DDA: char = 'ड';
-    /// \u{922}: 'ढ'
-    pub const LETTER_DDHA: char = 'ढ';
-    /// \u{923}: 'ण'
-    pub const LETTER_NNA: char = 'ण';
-    /// \u{924}: 'त'
-    pub const LETTER_TA: char = 'त';
-    /// \u{925}: 'थ'
-    pub const LETTER_THA: char = 'थ';
-    /// \u{926}: 'द'
-    pub const LETTER_DA: char = 'द';
-    /// \u{927}: 'ध'
-    pub const LETTER_DHA: char = 'ध';
-    /// \u{928}: 'न'
-    pub const LETTER_NA: char = 'न';
-    /// \u{929}: 'ऩ'
-    pub const LETTER_NNNA: char = 'ऩ';
-    /// \u{92a}: 'प'
-    pub const LETTER_PA: char = 'प';
-    /// \u{92b}: 'फ'
-    pub const LETTER_PHA: char = 'फ';
-    /// \u{92c}: 'ब'
-    pub const LETTER_BA: char = 'ब';
-    /// \u{92d}: 'भ'
-    pub const LETTER_BHA: char = 'भ';
-    /// \u{92e}: 'म'
-    pub const LETTER_MA: char = 'म';
-    /// \u{92f}: 'य'
-    pub const LETTER_YA: char = 'य';
-    /// \u{930}: 'र'
-    pub const LETTER_RA: char = 'र';
-    /// \u{931}: 'ऱ'
-    pub const LETTER_RRA: char = 'ऱ';
-    /// \u{932}: 'ल'
-    pub const LETTER_LA: char = 'ल';
-    /// \u{933}: 'ळ'
-    pub const LETTER_LLA: char = 'ळ';
-    /// \u{934}: 'ऴ'
-    pub const LETTER_LLLA: char = 'ऴ';
-    /// \u{935}: 'व'
-    pub const LETTER_VA: char = 'व';
-    /// \u{936}: 'श'
-    pub const LETTER_SHA: char = 'श';
-    /// \u{937}: 'ष'
-    pub const LETTER_SSA: char = 'ष';
-    /// \u{938}: 'स'
-    pub const LETTER_SA: char = 'स';
-    /// \u{939}: 'ह'
-    pub const LETTER_HA: char = 'ह';
-    /// \u{93a}: 'ऺ'
-    pub const VOWEL_SIGN_OE: char = 'ऺ';
-    /// \u{93b}: 'ऻ'
-    pub const VOWEL_SIGN_OOE: char = 'ऻ';
-    /// \u{93c}: '़'
-    pub const SIGN_NUKTA: char = '़';
-    /// \u{93d}: 'ऽ'
-    pub const SIGN_AVAGRAHA: char = 'ऽ';
-    /// \u{93e}: 'ा'
-    pub const VOWEL_SIGN_AA: char = 'ा';
-    /// \u{93f}: 'ि'
-    pub const VOWEL_SIGN_I: char = 'ि';
-    /// \u{940}: 'ी'
-    pub const VOWEL_SIGN_II: char = 'ी';
-    /// \u{941}: 'ु'
-    pub const VOWEL_SIGN_U: char = 'ु';
-    /// \u{942}: 'ू'
-    pub const VOWEL_SIGN_UU: char = 'ू';
-    /// \u{943}: 'ृ'
-    pub const VOWEL_SIGN_VOCALIC_R: char = 'ृ';
-    /// \u{944}: 'ॄ'
-    pub const VOWEL_SIGN_VOCALIC_RR: char = 'ॄ';
-    /// \u{945}: 'ॅ'
-    pub const VOWEL_SIGN_CANDRA_E: char = 'ॅ';
-    /// \u{946}: 'ॆ'
-    pub const VOWEL_SIGN_SHORT_E: char = 'ॆ';
-    /// \u{947}: 'े'
-    pub const VOWEL_SIGN_E: char = 'े';
-    /// \u{948}: 'ै'
-    pub const VOWEL_SIGN_AI: char = 'ै';
-    /// \u{949}: 'ॉ'
-    pub const VOWEL_SIGN_CANDRA_O: char = 'ॉ';
-    /// \u{94a}: 'ॊ'
-    pub const VOWEL_SIGN_SHORT_O: char = 'ॊ';
-    /// \u{94b}: 'ो'
-    pub const VOWEL_SIGN_O: char = 'ो';
-    /// \u{94c}: 'ौ'
-    pub const VOWEL_SIGN_AU: char = 'ौ';
-    /// \u{94d}: '्'
-    pub const SIGN_VIRAMA: char = '्';
-    /// \u{94e}: 'ॎ'
-    pub const VOWEL_SIGN_PRISHTHAMATRA_E: char = 'ॎ';
-    /// \u{94f}: 'ॏ'
-    pub const VOWEL_SIGN_AW: char = 'ॏ';
-    /// \u{950}: 'ॐ'
-    pub const OM: char = 'ॐ';
-    /// \u{951}: '॑'
-    pub const STRESS_SIGN_UDATTA: char = '॑';
-    /// \u{952}: '॒'
-    pub const STRESS_SIGN_ANUDATTA: char = '॒';
-    /// \u{953}: '॓'
-    pub const GRAVE_ACCENT: char = '॓';
-    /// \u{954}: '॔'
-    pub const ACUTE_ACCENT: char = '॔';
-    /// \u{955}: 'ॕ'
-    pub const VOWEL_SIGN_CANDRA_LONG_E: char = 'ॕ';
-    /// \u{956}: 'ॖ'
-    pub const VOWEL_SIGN_UE: char = 'ॖ';
-    /// \u{957}: 'ॗ'
-    pub const VOWEL_SIGN_UUE: char = 'ॗ';
-    /// \u{958}: 'क़'
-    pub const LETTER_QA: char = 'क़';
-    /// \u{959}: 'ख़'
-    pub const LETTER_KHHA: char = 'ख़';
-    /// \u{95a}: 'ग़'
-    pub const LETTER_GHHA: char = 'ग़';
-    /// \u{95b}: 'ज़'
-    pub const LETTER_ZA: char = 'ज़';
-    /// \u{95c}: 'ड़'
-    pub const LETTER_DDDHA: char = 'ड़';
-    /// \u{95d}: 'ढ़'
-    pub const LETTER_RHA: char = 'ढ़';
-    /// \u{95e}: 'फ़'
-    pub const LETTER_FA: char = 'फ़';
-    /// \u{95f}: 'य़'
-    pub const LETTER_YYA: char = 'य़';
-    /// \u{960}: 'ॠ'
-    pub const LETTER_VOCALIC_RR: char = 'ॠ';
-    /// \u{961}: 'ॡ'
-    pub const LETTER_VOCALIC_LL: char = 'ॡ';
-    /// \u{962}: 'ॢ'
-    pub const VOWEL_SIGN_VOCALIC_L: char = 'ॢ';
-    /// \u{963}: 'ॣ'
-    pub const VOWEL_SIGN_VOCALIC_LL: char = 'ॣ';
-    /// \u{964}: '।'
-    pub const DANDA: char = '।';
-    /// \u{965}: '॥'
-    pub const DOUBLE_DANDA: char = '॥';
-    /// \u{966}: '०'
-    pub const DIGIT_ZERO: char = '०';
-    /// \u{967}: '१'
-    pub const DIGIT_ONE: char = '१';
-    /// \u{968}: '२'
-    pub const DIGIT_TWO: char = '२';
-    /// \u{969}: '३'
-    pub const DIGIT_THREE: char = '३';
-    /// \u{96a}: '४'
-    pub const DIGIT_FOUR: char = '४';
-    /// \u{96b}: '५'
-    pub const DIGIT_FIVE: char = '५';
-    /// \u{96c}: '६'
-    pub const DIGIT_SIX: char = '६';
-    /// \u{96d}: '७'
-    pub const DIGIT_SEVEN: char = '७';
-    /// \u{96e}: '८'
-    pub const DIGIT_EIGHT: char = '८';
-    /// \u{96f}: '९'
-    pub const DIGIT_NINE: char = '९';
-    /// \u{970}: '॰'
-    pub const ABBREVIATION_SIGN: char = '॰';
-    /// \u{971}: 'ॱ'
-    pub const SIGN_HIGH_SPACING_DOT: char = 'ॱ';
-    /// \u{972}: 'ॲ'
-    pub const LETTER_CANDRA_A: char = 'ॲ';
-    /// \u{973}: 'ॳ'
-    pub const LETTER_OE: char = 'ॳ';
-    /// \u{974}: 'ॴ'
-    pub const LETTER_OOE: char = 'ॴ';
-    /// \u{975}: 'ॵ'
-    pub const LETTER_AW: char = 'ॵ';
-    /// \u{976}: 'ॶ'
-    pub const LETTER_UE: char = 'ॶ';
-    /// \u{977}: 'ॷ'
-    pub const LETTER_UUE: char = 'ॷ';
-    /// \u{978}: 'ॸ'
-    pub const LETTER_MARWARI_DDA: char = 'ॸ';
-    /// \u{979}: 'ॹ'
-    pub const LETTER_ZHA: char = 'ॹ';
-    /// \u{97a}: 'ॺ'
-    pub const LETTER_HEAVY_YA: char = 'ॺ';
-    /// \u{97b}: 'ॻ'
-    pub const LETTER_GGA: char = 'ॻ';
-    /// \u{97c}: 'ॼ'
-    pub const LETTER_JJA: char = 'ॼ';
-    /// \u{97d}: 'ॽ'
-    pub const LETTER_GLOTTAL_STOP: char = 'ॽ';
-    /// \u{97e}: 'ॾ'
-    pub const LETTER_DDDA: char = 'ॾ';
-}
 
 /// An enum to represent all characters in the Devanagari block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -517,135 +260,134 @@ pub enum Devanagari {
 
 impl Into<char> for Devanagari {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Devanagari::SignInvertedCandrabindu => SIGN_INVERTED_CANDRABINDU,
-            Devanagari::SignCandrabindu => SIGN_CANDRABINDU,
-            Devanagari::SignAnusvara => SIGN_ANUSVARA,
-            Devanagari::SignVisarga => SIGN_VISARGA,
-            Devanagari::LetterShortA => LETTER_SHORT_A,
-            Devanagari::LetterA => LETTER_A,
-            Devanagari::LetterAa => LETTER_AA,
-            Devanagari::LetterI => LETTER_I,
-            Devanagari::LetterIi => LETTER_II,
-            Devanagari::LetterU => LETTER_U,
-            Devanagari::LetterUu => LETTER_UU,
-            Devanagari::LetterVocalicR => LETTER_VOCALIC_R,
-            Devanagari::LetterVocalicL => LETTER_VOCALIC_L,
-            Devanagari::LetterCandraE => LETTER_CANDRA_E,
-            Devanagari::LetterShortE => LETTER_SHORT_E,
-            Devanagari::LetterE => LETTER_E,
-            Devanagari::LetterAi => LETTER_AI,
-            Devanagari::LetterCandraO => LETTER_CANDRA_O,
-            Devanagari::LetterShortO => LETTER_SHORT_O,
-            Devanagari::LetterO => LETTER_O,
-            Devanagari::LetterAu => LETTER_AU,
-            Devanagari::LetterKa => LETTER_KA,
-            Devanagari::LetterKha => LETTER_KHA,
-            Devanagari::LetterGa => LETTER_GA,
-            Devanagari::LetterGha => LETTER_GHA,
-            Devanagari::LetterNga => LETTER_NGA,
-            Devanagari::LetterCa => LETTER_CA,
-            Devanagari::LetterCha => LETTER_CHA,
-            Devanagari::LetterJa => LETTER_JA,
-            Devanagari::LetterJha => LETTER_JHA,
-            Devanagari::LetterNya => LETTER_NYA,
-            Devanagari::LetterTta => LETTER_TTA,
-            Devanagari::LetterTtha => LETTER_TTHA,
-            Devanagari::LetterDda => LETTER_DDA,
-            Devanagari::LetterDdha => LETTER_DDHA,
-            Devanagari::LetterNna => LETTER_NNA,
-            Devanagari::LetterTa => LETTER_TA,
-            Devanagari::LetterTha => LETTER_THA,
-            Devanagari::LetterDa => LETTER_DA,
-            Devanagari::LetterDha => LETTER_DHA,
-            Devanagari::LetterNa => LETTER_NA,
-            Devanagari::LetterNnna => LETTER_NNNA,
-            Devanagari::LetterPa => LETTER_PA,
-            Devanagari::LetterPha => LETTER_PHA,
-            Devanagari::LetterBa => LETTER_BA,
-            Devanagari::LetterBha => LETTER_BHA,
-            Devanagari::LetterMa => LETTER_MA,
-            Devanagari::LetterYa => LETTER_YA,
-            Devanagari::LetterRa => LETTER_RA,
-            Devanagari::LetterRra => LETTER_RRA,
-            Devanagari::LetterLa => LETTER_LA,
-            Devanagari::LetterLla => LETTER_LLA,
-            Devanagari::LetterLlla => LETTER_LLLA,
-            Devanagari::LetterVa => LETTER_VA,
-            Devanagari::LetterSha => LETTER_SHA,
-            Devanagari::LetterSsa => LETTER_SSA,
-            Devanagari::LetterSa => LETTER_SA,
-            Devanagari::LetterHa => LETTER_HA,
-            Devanagari::VowelSignOe => VOWEL_SIGN_OE,
-            Devanagari::VowelSignOoe => VOWEL_SIGN_OOE,
-            Devanagari::SignNukta => SIGN_NUKTA,
-            Devanagari::SignAvagraha => SIGN_AVAGRAHA,
-            Devanagari::VowelSignAa => VOWEL_SIGN_AA,
-            Devanagari::VowelSignI => VOWEL_SIGN_I,
-            Devanagari::VowelSignIi => VOWEL_SIGN_II,
-            Devanagari::VowelSignU => VOWEL_SIGN_U,
-            Devanagari::VowelSignUu => VOWEL_SIGN_UU,
-            Devanagari::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            Devanagari::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
-            Devanagari::VowelSignCandraE => VOWEL_SIGN_CANDRA_E,
-            Devanagari::VowelSignShortE => VOWEL_SIGN_SHORT_E,
-            Devanagari::VowelSignE => VOWEL_SIGN_E,
-            Devanagari::VowelSignAi => VOWEL_SIGN_AI,
-            Devanagari::VowelSignCandraO => VOWEL_SIGN_CANDRA_O,
-            Devanagari::VowelSignShortO => VOWEL_SIGN_SHORT_O,
-            Devanagari::VowelSignO => VOWEL_SIGN_O,
-            Devanagari::VowelSignAu => VOWEL_SIGN_AU,
-            Devanagari::SignVirama => SIGN_VIRAMA,
-            Devanagari::VowelSignPrishthamatraE => VOWEL_SIGN_PRISHTHAMATRA_E,
-            Devanagari::VowelSignAw => VOWEL_SIGN_AW,
-            Devanagari::Om => OM,
-            Devanagari::StressSignUdatta => STRESS_SIGN_UDATTA,
-            Devanagari::StressSignAnudatta => STRESS_SIGN_ANUDATTA,
-            Devanagari::GraveAccent => GRAVE_ACCENT,
-            Devanagari::AcuteAccent => ACUTE_ACCENT,
-            Devanagari::VowelSignCandraLongE => VOWEL_SIGN_CANDRA_LONG_E,
-            Devanagari::VowelSignUe => VOWEL_SIGN_UE,
-            Devanagari::VowelSignUue => VOWEL_SIGN_UUE,
-            Devanagari::LetterQa => LETTER_QA,
-            Devanagari::LetterKhha => LETTER_KHHA,
-            Devanagari::LetterGhha => LETTER_GHHA,
-            Devanagari::LetterZa => LETTER_ZA,
-            Devanagari::LetterDddha => LETTER_DDDHA,
-            Devanagari::LetterRha => LETTER_RHA,
-            Devanagari::LetterFa => LETTER_FA,
-            Devanagari::LetterYya => LETTER_YYA,
-            Devanagari::LetterVocalicRr => LETTER_VOCALIC_RR,
-            Devanagari::LetterVocalicLl => LETTER_VOCALIC_LL,
-            Devanagari::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
-            Devanagari::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
-            Devanagari::Danda => DANDA,
-            Devanagari::DoubleDanda => DOUBLE_DANDA,
-            Devanagari::DigitZero => DIGIT_ZERO,
-            Devanagari::DigitOne => DIGIT_ONE,
-            Devanagari::DigitTwo => DIGIT_TWO,
-            Devanagari::DigitThree => DIGIT_THREE,
-            Devanagari::DigitFour => DIGIT_FOUR,
-            Devanagari::DigitFive => DIGIT_FIVE,
-            Devanagari::DigitSix => DIGIT_SIX,
-            Devanagari::DigitSeven => DIGIT_SEVEN,
-            Devanagari::DigitEight => DIGIT_EIGHT,
-            Devanagari::DigitNine => DIGIT_NINE,
-            Devanagari::AbbreviationSign => ABBREVIATION_SIGN,
-            Devanagari::SignHighSpacingDot => SIGN_HIGH_SPACING_DOT,
-            Devanagari::LetterCandraA => LETTER_CANDRA_A,
-            Devanagari::LetterOe => LETTER_OE,
-            Devanagari::LetterOoe => LETTER_OOE,
-            Devanagari::LetterAw => LETTER_AW,
-            Devanagari::LetterUe => LETTER_UE,
-            Devanagari::LetterUue => LETTER_UUE,
-            Devanagari::LetterMarwariDda => LETTER_MARWARI_DDA,
-            Devanagari::LetterZha => LETTER_ZHA,
-            Devanagari::LetterHeavyYa => LETTER_HEAVY_YA,
-            Devanagari::LetterGga => LETTER_GGA,
-            Devanagari::LetterJja => LETTER_JJA,
-            Devanagari::LetterGlottalStop => LETTER_GLOTTAL_STOP,
-            Devanagari::LetterDdda => LETTER_DDDA,
+            Devanagari::SignInvertedCandrabindu => 'ऀ',
+            Devanagari::SignCandrabindu => 'ँ',
+            Devanagari::SignAnusvara => 'ं',
+            Devanagari::SignVisarga => 'ः',
+            Devanagari::LetterShortA => 'ऄ',
+            Devanagari::LetterA => 'अ',
+            Devanagari::LetterAa => 'आ',
+            Devanagari::LetterI => 'इ',
+            Devanagari::LetterIi => 'ई',
+            Devanagari::LetterU => 'उ',
+            Devanagari::LetterUu => 'ऊ',
+            Devanagari::LetterVocalicR => 'ऋ',
+            Devanagari::LetterVocalicL => 'ऌ',
+            Devanagari::LetterCandraE => 'ऍ',
+            Devanagari::LetterShortE => 'ऎ',
+            Devanagari::LetterE => 'ए',
+            Devanagari::LetterAi => 'ऐ',
+            Devanagari::LetterCandraO => 'ऑ',
+            Devanagari::LetterShortO => 'ऒ',
+            Devanagari::LetterO => 'ओ',
+            Devanagari::LetterAu => 'औ',
+            Devanagari::LetterKa => 'क',
+            Devanagari::LetterKha => 'ख',
+            Devanagari::LetterGa => 'ग',
+            Devanagari::LetterGha => 'घ',
+            Devanagari::LetterNga => 'ङ',
+            Devanagari::LetterCa => 'च',
+            Devanagari::LetterCha => 'छ',
+            Devanagari::LetterJa => 'ज',
+            Devanagari::LetterJha => 'झ',
+            Devanagari::LetterNya => 'ञ',
+            Devanagari::LetterTta => 'ट',
+            Devanagari::LetterTtha => 'ठ',
+            Devanagari::LetterDda => 'ड',
+            Devanagari::LetterDdha => 'ढ',
+            Devanagari::LetterNna => 'ण',
+            Devanagari::LetterTa => 'त',
+            Devanagari::LetterTha => 'थ',
+            Devanagari::LetterDa => 'द',
+            Devanagari::LetterDha => 'ध',
+            Devanagari::LetterNa => 'न',
+            Devanagari::LetterNnna => 'ऩ',
+            Devanagari::LetterPa => 'प',
+            Devanagari::LetterPha => 'फ',
+            Devanagari::LetterBa => 'ब',
+            Devanagari::LetterBha => 'भ',
+            Devanagari::LetterMa => 'म',
+            Devanagari::LetterYa => 'य',
+            Devanagari::LetterRa => 'र',
+            Devanagari::LetterRra => 'ऱ',
+            Devanagari::LetterLa => 'ल',
+            Devanagari::LetterLla => 'ळ',
+            Devanagari::LetterLlla => 'ऴ',
+            Devanagari::LetterVa => 'व',
+            Devanagari::LetterSha => 'श',
+            Devanagari::LetterSsa => 'ष',
+            Devanagari::LetterSa => 'स',
+            Devanagari::LetterHa => 'ह',
+            Devanagari::VowelSignOe => 'ऺ',
+            Devanagari::VowelSignOoe => 'ऻ',
+            Devanagari::SignNukta => '़',
+            Devanagari::SignAvagraha => 'ऽ',
+            Devanagari::VowelSignAa => 'ा',
+            Devanagari::VowelSignI => 'ि',
+            Devanagari::VowelSignIi => 'ी',
+            Devanagari::VowelSignU => 'ु',
+            Devanagari::VowelSignUu => 'ू',
+            Devanagari::VowelSignVocalicR => 'ृ',
+            Devanagari::VowelSignVocalicRr => 'ॄ',
+            Devanagari::VowelSignCandraE => 'ॅ',
+            Devanagari::VowelSignShortE => 'ॆ',
+            Devanagari::VowelSignE => 'े',
+            Devanagari::VowelSignAi => 'ै',
+            Devanagari::VowelSignCandraO => 'ॉ',
+            Devanagari::VowelSignShortO => 'ॊ',
+            Devanagari::VowelSignO => 'ो',
+            Devanagari::VowelSignAu => 'ौ',
+            Devanagari::SignVirama => '्',
+            Devanagari::VowelSignPrishthamatraE => 'ॎ',
+            Devanagari::VowelSignAw => 'ॏ',
+            Devanagari::Om => 'ॐ',
+            Devanagari::StressSignUdatta => '॑',
+            Devanagari::StressSignAnudatta => '॒',
+            Devanagari::GraveAccent => '॓',
+            Devanagari::AcuteAccent => '॔',
+            Devanagari::VowelSignCandraLongE => 'ॕ',
+            Devanagari::VowelSignUe => 'ॖ',
+            Devanagari::VowelSignUue => 'ॗ',
+            Devanagari::LetterQa => 'क़',
+            Devanagari::LetterKhha => 'ख़',
+            Devanagari::LetterGhha => 'ग़',
+            Devanagari::LetterZa => 'ज़',
+            Devanagari::LetterDddha => 'ड़',
+            Devanagari::LetterRha => 'ढ़',
+            Devanagari::LetterFa => 'फ़',
+            Devanagari::LetterYya => 'य़',
+            Devanagari::LetterVocalicRr => 'ॠ',
+            Devanagari::LetterVocalicLl => 'ॡ',
+            Devanagari::VowelSignVocalicL => 'ॢ',
+            Devanagari::VowelSignVocalicLl => 'ॣ',
+            Devanagari::Danda => '।',
+            Devanagari::DoubleDanda => '॥',
+            Devanagari::DigitZero => '०',
+            Devanagari::DigitOne => '१',
+            Devanagari::DigitTwo => '२',
+            Devanagari::DigitThree => '३',
+            Devanagari::DigitFour => '४',
+            Devanagari::DigitFive => '५',
+            Devanagari::DigitSix => '६',
+            Devanagari::DigitSeven => '७',
+            Devanagari::DigitEight => '८',
+            Devanagari::DigitNine => '९',
+            Devanagari::AbbreviationSign => '॰',
+            Devanagari::SignHighSpacingDot => 'ॱ',
+            Devanagari::LetterCandraA => 'ॲ',
+            Devanagari::LetterOe => 'ॳ',
+            Devanagari::LetterOoe => 'ॴ',
+            Devanagari::LetterAw => 'ॵ',
+            Devanagari::LetterUe => 'ॶ',
+            Devanagari::LetterUue => 'ॷ',
+            Devanagari::LetterMarwariDda => 'ॸ',
+            Devanagari::LetterZha => 'ॹ',
+            Devanagari::LetterHeavyYa => 'ॺ',
+            Devanagari::LetterGga => 'ॻ',
+            Devanagari::LetterJja => 'ॼ',
+            Devanagari::LetterGlottalStop => 'ॽ',
+            Devanagari::LetterDdda => 'ॾ',
         }
     }
 }
@@ -653,135 +395,134 @@ impl Into<char> for Devanagari {
 impl std::convert::TryFrom<char> for Devanagari {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_INVERTED_CANDRABINDU => Ok(Devanagari::SignInvertedCandrabindu),
-            SIGN_CANDRABINDU => Ok(Devanagari::SignCandrabindu),
-            SIGN_ANUSVARA => Ok(Devanagari::SignAnusvara),
-            SIGN_VISARGA => Ok(Devanagari::SignVisarga),
-            LETTER_SHORT_A => Ok(Devanagari::LetterShortA),
-            LETTER_A => Ok(Devanagari::LetterA),
-            LETTER_AA => Ok(Devanagari::LetterAa),
-            LETTER_I => Ok(Devanagari::LetterI),
-            LETTER_II => Ok(Devanagari::LetterIi),
-            LETTER_U => Ok(Devanagari::LetterU),
-            LETTER_UU => Ok(Devanagari::LetterUu),
-            LETTER_VOCALIC_R => Ok(Devanagari::LetterVocalicR),
-            LETTER_VOCALIC_L => Ok(Devanagari::LetterVocalicL),
-            LETTER_CANDRA_E => Ok(Devanagari::LetterCandraE),
-            LETTER_SHORT_E => Ok(Devanagari::LetterShortE),
-            LETTER_E => Ok(Devanagari::LetterE),
-            LETTER_AI => Ok(Devanagari::LetterAi),
-            LETTER_CANDRA_O => Ok(Devanagari::LetterCandraO),
-            LETTER_SHORT_O => Ok(Devanagari::LetterShortO),
-            LETTER_O => Ok(Devanagari::LetterO),
-            LETTER_AU => Ok(Devanagari::LetterAu),
-            LETTER_KA => Ok(Devanagari::LetterKa),
-            LETTER_KHA => Ok(Devanagari::LetterKha),
-            LETTER_GA => Ok(Devanagari::LetterGa),
-            LETTER_GHA => Ok(Devanagari::LetterGha),
-            LETTER_NGA => Ok(Devanagari::LetterNga),
-            LETTER_CA => Ok(Devanagari::LetterCa),
-            LETTER_CHA => Ok(Devanagari::LetterCha),
-            LETTER_JA => Ok(Devanagari::LetterJa),
-            LETTER_JHA => Ok(Devanagari::LetterJha),
-            LETTER_NYA => Ok(Devanagari::LetterNya),
-            LETTER_TTA => Ok(Devanagari::LetterTta),
-            LETTER_TTHA => Ok(Devanagari::LetterTtha),
-            LETTER_DDA => Ok(Devanagari::LetterDda),
-            LETTER_DDHA => Ok(Devanagari::LetterDdha),
-            LETTER_NNA => Ok(Devanagari::LetterNna),
-            LETTER_TA => Ok(Devanagari::LetterTa),
-            LETTER_THA => Ok(Devanagari::LetterTha),
-            LETTER_DA => Ok(Devanagari::LetterDa),
-            LETTER_DHA => Ok(Devanagari::LetterDha),
-            LETTER_NA => Ok(Devanagari::LetterNa),
-            LETTER_NNNA => Ok(Devanagari::LetterNnna),
-            LETTER_PA => Ok(Devanagari::LetterPa),
-            LETTER_PHA => Ok(Devanagari::LetterPha),
-            LETTER_BA => Ok(Devanagari::LetterBa),
-            LETTER_BHA => Ok(Devanagari::LetterBha),
-            LETTER_MA => Ok(Devanagari::LetterMa),
-            LETTER_YA => Ok(Devanagari::LetterYa),
-            LETTER_RA => Ok(Devanagari::LetterRa),
-            LETTER_RRA => Ok(Devanagari::LetterRra),
-            LETTER_LA => Ok(Devanagari::LetterLa),
-            LETTER_LLA => Ok(Devanagari::LetterLla),
-            LETTER_LLLA => Ok(Devanagari::LetterLlla),
-            LETTER_VA => Ok(Devanagari::LetterVa),
-            LETTER_SHA => Ok(Devanagari::LetterSha),
-            LETTER_SSA => Ok(Devanagari::LetterSsa),
-            LETTER_SA => Ok(Devanagari::LetterSa),
-            LETTER_HA => Ok(Devanagari::LetterHa),
-            VOWEL_SIGN_OE => Ok(Devanagari::VowelSignOe),
-            VOWEL_SIGN_OOE => Ok(Devanagari::VowelSignOoe),
-            SIGN_NUKTA => Ok(Devanagari::SignNukta),
-            SIGN_AVAGRAHA => Ok(Devanagari::SignAvagraha),
-            VOWEL_SIGN_AA => Ok(Devanagari::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Devanagari::VowelSignI),
-            VOWEL_SIGN_II => Ok(Devanagari::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Devanagari::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Devanagari::VowelSignUu),
-            VOWEL_SIGN_VOCALIC_R => Ok(Devanagari::VowelSignVocalicR),
-            VOWEL_SIGN_VOCALIC_RR => Ok(Devanagari::VowelSignVocalicRr),
-            VOWEL_SIGN_CANDRA_E => Ok(Devanagari::VowelSignCandraE),
-            VOWEL_SIGN_SHORT_E => Ok(Devanagari::VowelSignShortE),
-            VOWEL_SIGN_E => Ok(Devanagari::VowelSignE),
-            VOWEL_SIGN_AI => Ok(Devanagari::VowelSignAi),
-            VOWEL_SIGN_CANDRA_O => Ok(Devanagari::VowelSignCandraO),
-            VOWEL_SIGN_SHORT_O => Ok(Devanagari::VowelSignShortO),
-            VOWEL_SIGN_O => Ok(Devanagari::VowelSignO),
-            VOWEL_SIGN_AU => Ok(Devanagari::VowelSignAu),
-            SIGN_VIRAMA => Ok(Devanagari::SignVirama),
-            VOWEL_SIGN_PRISHTHAMATRA_E => Ok(Devanagari::VowelSignPrishthamatraE),
-            VOWEL_SIGN_AW => Ok(Devanagari::VowelSignAw),
-            OM => Ok(Devanagari::Om),
-            STRESS_SIGN_UDATTA => Ok(Devanagari::StressSignUdatta),
-            STRESS_SIGN_ANUDATTA => Ok(Devanagari::StressSignAnudatta),
-            GRAVE_ACCENT => Ok(Devanagari::GraveAccent),
-            ACUTE_ACCENT => Ok(Devanagari::AcuteAccent),
-            VOWEL_SIGN_CANDRA_LONG_E => Ok(Devanagari::VowelSignCandraLongE),
-            VOWEL_SIGN_UE => Ok(Devanagari::VowelSignUe),
-            VOWEL_SIGN_UUE => Ok(Devanagari::VowelSignUue),
-            LETTER_QA => Ok(Devanagari::LetterQa),
-            LETTER_KHHA => Ok(Devanagari::LetterKhha),
-            LETTER_GHHA => Ok(Devanagari::LetterGhha),
-            LETTER_ZA => Ok(Devanagari::LetterZa),
-            LETTER_DDDHA => Ok(Devanagari::LetterDddha),
-            LETTER_RHA => Ok(Devanagari::LetterRha),
-            LETTER_FA => Ok(Devanagari::LetterFa),
-            LETTER_YYA => Ok(Devanagari::LetterYya),
-            LETTER_VOCALIC_RR => Ok(Devanagari::LetterVocalicRr),
-            LETTER_VOCALIC_LL => Ok(Devanagari::LetterVocalicLl),
-            VOWEL_SIGN_VOCALIC_L => Ok(Devanagari::VowelSignVocalicL),
-            VOWEL_SIGN_VOCALIC_LL => Ok(Devanagari::VowelSignVocalicLl),
-            DANDA => Ok(Devanagari::Danda),
-            DOUBLE_DANDA => Ok(Devanagari::DoubleDanda),
-            DIGIT_ZERO => Ok(Devanagari::DigitZero),
-            DIGIT_ONE => Ok(Devanagari::DigitOne),
-            DIGIT_TWO => Ok(Devanagari::DigitTwo),
-            DIGIT_THREE => Ok(Devanagari::DigitThree),
-            DIGIT_FOUR => Ok(Devanagari::DigitFour),
-            DIGIT_FIVE => Ok(Devanagari::DigitFive),
-            DIGIT_SIX => Ok(Devanagari::DigitSix),
-            DIGIT_SEVEN => Ok(Devanagari::DigitSeven),
-            DIGIT_EIGHT => Ok(Devanagari::DigitEight),
-            DIGIT_NINE => Ok(Devanagari::DigitNine),
-            ABBREVIATION_SIGN => Ok(Devanagari::AbbreviationSign),
-            SIGN_HIGH_SPACING_DOT => Ok(Devanagari::SignHighSpacingDot),
-            LETTER_CANDRA_A => Ok(Devanagari::LetterCandraA),
-            LETTER_OE => Ok(Devanagari::LetterOe),
-            LETTER_OOE => Ok(Devanagari::LetterOoe),
-            LETTER_AW => Ok(Devanagari::LetterAw),
-            LETTER_UE => Ok(Devanagari::LetterUe),
-            LETTER_UUE => Ok(Devanagari::LetterUue),
-            LETTER_MARWARI_DDA => Ok(Devanagari::LetterMarwariDda),
-            LETTER_ZHA => Ok(Devanagari::LetterZha),
-            LETTER_HEAVY_YA => Ok(Devanagari::LetterHeavyYa),
-            LETTER_GGA => Ok(Devanagari::LetterGga),
-            LETTER_JJA => Ok(Devanagari::LetterJja),
-            LETTER_GLOTTAL_STOP => Ok(Devanagari::LetterGlottalStop),
-            LETTER_DDDA => Ok(Devanagari::LetterDdda),
+            'ऀ' => Ok(Devanagari::SignInvertedCandrabindu),
+            'ँ' => Ok(Devanagari::SignCandrabindu),
+            'ं' => Ok(Devanagari::SignAnusvara),
+            'ः' => Ok(Devanagari::SignVisarga),
+            'ऄ' => Ok(Devanagari::LetterShortA),
+            'अ' => Ok(Devanagari::LetterA),
+            'आ' => Ok(Devanagari::LetterAa),
+            'इ' => Ok(Devanagari::LetterI),
+            'ई' => Ok(Devanagari::LetterIi),
+            'उ' => Ok(Devanagari::LetterU),
+            'ऊ' => Ok(Devanagari::LetterUu),
+            'ऋ' => Ok(Devanagari::LetterVocalicR),
+            'ऌ' => Ok(Devanagari::LetterVocalicL),
+            'ऍ' => Ok(Devanagari::LetterCandraE),
+            'ऎ' => Ok(Devanagari::LetterShortE),
+            'ए' => Ok(Devanagari::LetterE),
+            'ऐ' => Ok(Devanagari::LetterAi),
+            'ऑ' => Ok(Devanagari::LetterCandraO),
+            'ऒ' => Ok(Devanagari::LetterShortO),
+            'ओ' => Ok(Devanagari::LetterO),
+            'औ' => Ok(Devanagari::LetterAu),
+            'क' => Ok(Devanagari::LetterKa),
+            'ख' => Ok(Devanagari::LetterKha),
+            'ग' => Ok(Devanagari::LetterGa),
+            'घ' => Ok(Devanagari::LetterGha),
+            'ङ' => Ok(Devanagari::LetterNga),
+            'च' => Ok(Devanagari::LetterCa),
+            'छ' => Ok(Devanagari::LetterCha),
+            'ज' => Ok(Devanagari::LetterJa),
+            'झ' => Ok(Devanagari::LetterJha),
+            'ञ' => Ok(Devanagari::LetterNya),
+            'ट' => Ok(Devanagari::LetterTta),
+            'ठ' => Ok(Devanagari::LetterTtha),
+            'ड' => Ok(Devanagari::LetterDda),
+            'ढ' => Ok(Devanagari::LetterDdha),
+            'ण' => Ok(Devanagari::LetterNna),
+            'त' => Ok(Devanagari::LetterTa),
+            'थ' => Ok(Devanagari::LetterTha),
+            'द' => Ok(Devanagari::LetterDa),
+            'ध' => Ok(Devanagari::LetterDha),
+            'न' => Ok(Devanagari::LetterNa),
+            'ऩ' => Ok(Devanagari::LetterNnna),
+            'प' => Ok(Devanagari::LetterPa),
+            'फ' => Ok(Devanagari::LetterPha),
+            'ब' => Ok(Devanagari::LetterBa),
+            'भ' => Ok(Devanagari::LetterBha),
+            'म' => Ok(Devanagari::LetterMa),
+            'य' => Ok(Devanagari::LetterYa),
+            'र' => Ok(Devanagari::LetterRa),
+            'ऱ' => Ok(Devanagari::LetterRra),
+            'ल' => Ok(Devanagari::LetterLa),
+            'ळ' => Ok(Devanagari::LetterLla),
+            'ऴ' => Ok(Devanagari::LetterLlla),
+            'व' => Ok(Devanagari::LetterVa),
+            'श' => Ok(Devanagari::LetterSha),
+            'ष' => Ok(Devanagari::LetterSsa),
+            'स' => Ok(Devanagari::LetterSa),
+            'ह' => Ok(Devanagari::LetterHa),
+            'ऺ' => Ok(Devanagari::VowelSignOe),
+            'ऻ' => Ok(Devanagari::VowelSignOoe),
+            '़' => Ok(Devanagari::SignNukta),
+            'ऽ' => Ok(Devanagari::SignAvagraha),
+            'ा' => Ok(Devanagari::VowelSignAa),
+            'ि' => Ok(Devanagari::VowelSignI),
+            'ी' => Ok(Devanagari::VowelSignIi),
+            'ु' => Ok(Devanagari::VowelSignU),
+            'ू' => Ok(Devanagari::VowelSignUu),
+            'ृ' => Ok(Devanagari::VowelSignVocalicR),
+            'ॄ' => Ok(Devanagari::VowelSignVocalicRr),
+            'ॅ' => Ok(Devanagari::VowelSignCandraE),
+            'ॆ' => Ok(Devanagari::VowelSignShortE),
+            'े' => Ok(Devanagari::VowelSignE),
+            'ै' => Ok(Devanagari::VowelSignAi),
+            'ॉ' => Ok(Devanagari::VowelSignCandraO),
+            'ॊ' => Ok(Devanagari::VowelSignShortO),
+            'ो' => Ok(Devanagari::VowelSignO),
+            'ौ' => Ok(Devanagari::VowelSignAu),
+            '्' => Ok(Devanagari::SignVirama),
+            'ॎ' => Ok(Devanagari::VowelSignPrishthamatraE),
+            'ॏ' => Ok(Devanagari::VowelSignAw),
+            'ॐ' => Ok(Devanagari::Om),
+            '॑' => Ok(Devanagari::StressSignUdatta),
+            '॒' => Ok(Devanagari::StressSignAnudatta),
+            '॓' => Ok(Devanagari::GraveAccent),
+            '॔' => Ok(Devanagari::AcuteAccent),
+            'ॕ' => Ok(Devanagari::VowelSignCandraLongE),
+            'ॖ' => Ok(Devanagari::VowelSignUe),
+            'ॗ' => Ok(Devanagari::VowelSignUue),
+            'क़' => Ok(Devanagari::LetterQa),
+            'ख़' => Ok(Devanagari::LetterKhha),
+            'ग़' => Ok(Devanagari::LetterGhha),
+            'ज़' => Ok(Devanagari::LetterZa),
+            'ड़' => Ok(Devanagari::LetterDddha),
+            'ढ़' => Ok(Devanagari::LetterRha),
+            'फ़' => Ok(Devanagari::LetterFa),
+            'य़' => Ok(Devanagari::LetterYya),
+            'ॠ' => Ok(Devanagari::LetterVocalicRr),
+            'ॡ' => Ok(Devanagari::LetterVocalicLl),
+            'ॢ' => Ok(Devanagari::VowelSignVocalicL),
+            'ॣ' => Ok(Devanagari::VowelSignVocalicLl),
+            '।' => Ok(Devanagari::Danda),
+            '॥' => Ok(Devanagari::DoubleDanda),
+            '०' => Ok(Devanagari::DigitZero),
+            '१' => Ok(Devanagari::DigitOne),
+            '२' => Ok(Devanagari::DigitTwo),
+            '३' => Ok(Devanagari::DigitThree),
+            '४' => Ok(Devanagari::DigitFour),
+            '५' => Ok(Devanagari::DigitFive),
+            '६' => Ok(Devanagari::DigitSix),
+            '७' => Ok(Devanagari::DigitSeven),
+            '८' => Ok(Devanagari::DigitEight),
+            '९' => Ok(Devanagari::DigitNine),
+            '॰' => Ok(Devanagari::AbbreviationSign),
+            'ॱ' => Ok(Devanagari::SignHighSpacingDot),
+            'ॲ' => Ok(Devanagari::LetterCandraA),
+            'ॳ' => Ok(Devanagari::LetterOe),
+            'ॴ' => Ok(Devanagari::LetterOoe),
+            'ॵ' => Ok(Devanagari::LetterAw),
+            'ॶ' => Ok(Devanagari::LetterUe),
+            'ॷ' => Ok(Devanagari::LetterUue),
+            'ॸ' => Ok(Devanagari::LetterMarwariDda),
+            'ॹ' => Ok(Devanagari::LetterZha),
+            'ॺ' => Ok(Devanagari::LetterHeavyYa),
+            'ॻ' => Ok(Devanagari::LetterGga),
+            'ॼ' => Ok(Devanagari::LetterJja),
+            'ॽ' => Ok(Devanagari::LetterGlottalStop),
+            'ॾ' => Ok(Devanagari::LetterDdda),
             _ => Err(()),
         }
     }

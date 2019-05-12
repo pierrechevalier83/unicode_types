@@ -1,120 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11700}: '𑜀'
-    pub const LETTER_KA: char = '𑜀';
-    /// \u{11701}: '𑜁'
-    pub const LETTER_KHA: char = '𑜁';
-    /// \u{11702}: '𑜂'
-    pub const LETTER_NGA: char = '𑜂';
-    /// \u{11703}: '𑜃'
-    pub const LETTER_NA: char = '𑜃';
-    /// \u{11704}: '𑜄'
-    pub const LETTER_TA: char = '𑜄';
-    /// \u{11705}: '𑜅'
-    pub const LETTER_ALTERNATE_TA: char = '𑜅';
-    /// \u{11706}: '𑜆'
-    pub const LETTER_PA: char = '𑜆';
-    /// \u{11707}: '𑜇'
-    pub const LETTER_PHA: char = '𑜇';
-    /// \u{11708}: '𑜈'
-    pub const LETTER_BA: char = '𑜈';
-    /// \u{11709}: '𑜉'
-    pub const LETTER_MA: char = '𑜉';
-    /// \u{1170a}: '𑜊'
-    pub const LETTER_JA: char = '𑜊';
-    /// \u{1170b}: '𑜋'
-    pub const LETTER_CHA: char = '𑜋';
-    /// \u{1170c}: '𑜌'
-    pub const LETTER_THA: char = '𑜌';
-    /// \u{1170d}: '𑜍'
-    pub const LETTER_RA: char = '𑜍';
-    /// \u{1170e}: '𑜎'
-    pub const LETTER_LA: char = '𑜎';
-    /// \u{1170f}: '𑜏'
-    pub const LETTER_SA: char = '𑜏';
-    /// \u{11710}: '𑜐'
-    pub const LETTER_NYA: char = '𑜐';
-    /// \u{11711}: '𑜑'
-    pub const LETTER_HA: char = '𑜑';
-    /// \u{11712}: '𑜒'
-    pub const LETTER_A: char = '𑜒';
-    /// \u{11713}: '𑜓'
-    pub const LETTER_DA: char = '𑜓';
-    /// \u{11714}: '𑜔'
-    pub const LETTER_DHA: char = '𑜔';
-    /// \u{11715}: '𑜕'
-    pub const LETTER_GA: char = '𑜕';
-    /// \u{11716}: '𑜖'
-    pub const LETTER_ALTERNATE_GA: char = '𑜖';
-    /// \u{11717}: '𑜗'
-    pub const LETTER_GHA: char = '𑜗';
-    /// \u{11718}: '𑜘'
-    pub const LETTER_BHA: char = '𑜘';
-    /// \u{11719}: '𑜙'
-    pub const LETTER_JHA: char = '𑜙';
-    /// \u{1171a}: '𑜚'
-    pub const LETTER_ALTERNATE_BA: char = '𑜚';
-    /// \u{1171d}: '𑜝'
-    pub const CONSONANT_SIGN_MEDIAL_LA: char = '𑜝';
-    /// \u{1171e}: '𑜞'
-    pub const CONSONANT_SIGN_MEDIAL_RA: char = '𑜞';
-    /// \u{1171f}: '𑜟'
-    pub const CONSONANT_SIGN_MEDIAL_LIGATING_RA: char = '𑜟';
-    /// \u{11720}: '𑜠'
-    pub const VOWEL_SIGN_A: char = '𑜠';
-    /// \u{11721}: '𑜡'
-    pub const VOWEL_SIGN_AA: char = '𑜡';
-    /// \u{11722}: '𑜢'
-    pub const VOWEL_SIGN_I: char = '𑜢';
-    /// \u{11723}: '𑜣'
-    pub const VOWEL_SIGN_II: char = '𑜣';
-    /// \u{11724}: '𑜤'
-    pub const VOWEL_SIGN_U: char = '𑜤';
-    /// \u{11725}: '𑜥'
-    pub const VOWEL_SIGN_UU: char = '𑜥';
-    /// \u{11726}: '𑜦'
-    pub const VOWEL_SIGN_E: char = '𑜦';
-    /// \u{11727}: '𑜧'
-    pub const VOWEL_SIGN_AW: char = '𑜧';
-    /// \u{11728}: '𑜨'
-    pub const VOWEL_SIGN_O: char = '𑜨';
-    /// \u{11729}: '𑜩'
-    pub const VOWEL_SIGN_AI: char = '𑜩';
-    /// \u{1172a}: '𑜪'
-    pub const VOWEL_SIGN_AM: char = '𑜪';
-    /// \u{1172b}: '𑜫'
-    pub const SIGN_KILLER: char = '𑜫';
-    /// \u{11730}: '𑜰'
-    pub const DIGIT_ZERO: char = '𑜰';
-    /// \u{11731}: '𑜱'
-    pub const DIGIT_ONE: char = '𑜱';
-    /// \u{11732}: '𑜲'
-    pub const DIGIT_TWO: char = '𑜲';
-    /// \u{11733}: '𑜳'
-    pub const DIGIT_THREE: char = '𑜳';
-    /// \u{11734}: '𑜴'
-    pub const DIGIT_FOUR: char = '𑜴';
-    /// \u{11735}: '𑜵'
-    pub const DIGIT_FIVE: char = '𑜵';
-    /// \u{11736}: '𑜶'
-    pub const DIGIT_SIX: char = '𑜶';
-    /// \u{11737}: '𑜷'
-    pub const DIGIT_SEVEN: char = '𑜷';
-    /// \u{11738}: '𑜸'
-    pub const DIGIT_EIGHT: char = '𑜸';
-    /// \u{11739}: '𑜹'
-    pub const DIGIT_NINE: char = '𑜹';
-    /// \u{1173a}: '𑜺'
-    pub const NUMBER_TEN: char = '𑜺';
-    /// \u{1173b}: '𑜻'
-    pub const NUMBER_TWENTY: char = '𑜻';
-    /// \u{1173c}: '𑜼'
-    pub const SIGN_SMALL_SECTION: char = '𑜼';
-    /// \u{1173d}: '𑜽'
-    pub const SIGN_SECTION: char = '𑜽';
-    /// \u{1173e}: '𑜾'
-    pub const SIGN_RULAI: char = '𑜾';
-}
 
 /// An enum to represent all characters in the Ahom block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -237,65 +120,64 @@ pub enum Ahom {
 
 impl Into<char> for Ahom {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Ahom::LetterKa => LETTER_KA,
-            Ahom::LetterKha => LETTER_KHA,
-            Ahom::LetterNga => LETTER_NGA,
-            Ahom::LetterNa => LETTER_NA,
-            Ahom::LetterTa => LETTER_TA,
-            Ahom::LetterAlternateTa => LETTER_ALTERNATE_TA,
-            Ahom::LetterPa => LETTER_PA,
-            Ahom::LetterPha => LETTER_PHA,
-            Ahom::LetterBa => LETTER_BA,
-            Ahom::LetterMa => LETTER_MA,
-            Ahom::LetterJa => LETTER_JA,
-            Ahom::LetterCha => LETTER_CHA,
-            Ahom::LetterTha => LETTER_THA,
-            Ahom::LetterRa => LETTER_RA,
-            Ahom::LetterLa => LETTER_LA,
-            Ahom::LetterSa => LETTER_SA,
-            Ahom::LetterNya => LETTER_NYA,
-            Ahom::LetterHa => LETTER_HA,
-            Ahom::LetterA => LETTER_A,
-            Ahom::LetterDa => LETTER_DA,
-            Ahom::LetterDha => LETTER_DHA,
-            Ahom::LetterGa => LETTER_GA,
-            Ahom::LetterAlternateGa => LETTER_ALTERNATE_GA,
-            Ahom::LetterGha => LETTER_GHA,
-            Ahom::LetterBha => LETTER_BHA,
-            Ahom::LetterJha => LETTER_JHA,
-            Ahom::LetterAlternateBa => LETTER_ALTERNATE_BA,
-            Ahom::ConsonantSignMedialLa => CONSONANT_SIGN_MEDIAL_LA,
-            Ahom::ConsonantSignMedialRa => CONSONANT_SIGN_MEDIAL_RA,
-            Ahom::ConsonantSignMedialLigatingRa => CONSONANT_SIGN_MEDIAL_LIGATING_RA,
-            Ahom::VowelSignA => VOWEL_SIGN_A,
-            Ahom::VowelSignAa => VOWEL_SIGN_AA,
-            Ahom::VowelSignI => VOWEL_SIGN_I,
-            Ahom::VowelSignIi => VOWEL_SIGN_II,
-            Ahom::VowelSignU => VOWEL_SIGN_U,
-            Ahom::VowelSignUu => VOWEL_SIGN_UU,
-            Ahom::VowelSignE => VOWEL_SIGN_E,
-            Ahom::VowelSignAw => VOWEL_SIGN_AW,
-            Ahom::VowelSignO => VOWEL_SIGN_O,
-            Ahom::VowelSignAi => VOWEL_SIGN_AI,
-            Ahom::VowelSignAm => VOWEL_SIGN_AM,
-            Ahom::SignKiller => SIGN_KILLER,
-            Ahom::DigitZero => DIGIT_ZERO,
-            Ahom::DigitOne => DIGIT_ONE,
-            Ahom::DigitTwo => DIGIT_TWO,
-            Ahom::DigitThree => DIGIT_THREE,
-            Ahom::DigitFour => DIGIT_FOUR,
-            Ahom::DigitFive => DIGIT_FIVE,
-            Ahom::DigitSix => DIGIT_SIX,
-            Ahom::DigitSeven => DIGIT_SEVEN,
-            Ahom::DigitEight => DIGIT_EIGHT,
-            Ahom::DigitNine => DIGIT_NINE,
-            Ahom::NumberTen => NUMBER_TEN,
-            Ahom::NumberTwenty => NUMBER_TWENTY,
-            Ahom::SignSmallSection => SIGN_SMALL_SECTION,
-            Ahom::SignSection => SIGN_SECTION,
-            Ahom::SignRulai => SIGN_RULAI,
+            Ahom::LetterKa => '𑜀',
+            Ahom::LetterKha => '𑜁',
+            Ahom::LetterNga => '𑜂',
+            Ahom::LetterNa => '𑜃',
+            Ahom::LetterTa => '𑜄',
+            Ahom::LetterAlternateTa => '𑜅',
+            Ahom::LetterPa => '𑜆',
+            Ahom::LetterPha => '𑜇',
+            Ahom::LetterBa => '𑜈',
+            Ahom::LetterMa => '𑜉',
+            Ahom::LetterJa => '𑜊',
+            Ahom::LetterCha => '𑜋',
+            Ahom::LetterTha => '𑜌',
+            Ahom::LetterRa => '𑜍',
+            Ahom::LetterLa => '𑜎',
+            Ahom::LetterSa => '𑜏',
+            Ahom::LetterNya => '𑜐',
+            Ahom::LetterHa => '𑜑',
+            Ahom::LetterA => '𑜒',
+            Ahom::LetterDa => '𑜓',
+            Ahom::LetterDha => '𑜔',
+            Ahom::LetterGa => '𑜕',
+            Ahom::LetterAlternateGa => '𑜖',
+            Ahom::LetterGha => '𑜗',
+            Ahom::LetterBha => '𑜘',
+            Ahom::LetterJha => '𑜙',
+            Ahom::LetterAlternateBa => '𑜚',
+            Ahom::ConsonantSignMedialLa => '𑜝',
+            Ahom::ConsonantSignMedialRa => '𑜞',
+            Ahom::ConsonantSignMedialLigatingRa => '𑜟',
+            Ahom::VowelSignA => '𑜠',
+            Ahom::VowelSignAa => '𑜡',
+            Ahom::VowelSignI => '𑜢',
+            Ahom::VowelSignIi => '𑜣',
+            Ahom::VowelSignU => '𑜤',
+            Ahom::VowelSignUu => '𑜥',
+            Ahom::VowelSignE => '𑜦',
+            Ahom::VowelSignAw => '𑜧',
+            Ahom::VowelSignO => '𑜨',
+            Ahom::VowelSignAi => '𑜩',
+            Ahom::VowelSignAm => '𑜪',
+            Ahom::SignKiller => '𑜫',
+            Ahom::DigitZero => '𑜰',
+            Ahom::DigitOne => '𑜱',
+            Ahom::DigitTwo => '𑜲',
+            Ahom::DigitThree => '𑜳',
+            Ahom::DigitFour => '𑜴',
+            Ahom::DigitFive => '𑜵',
+            Ahom::DigitSix => '𑜶',
+            Ahom::DigitSeven => '𑜷',
+            Ahom::DigitEight => '𑜸',
+            Ahom::DigitNine => '𑜹',
+            Ahom::NumberTen => '𑜺',
+            Ahom::NumberTwenty => '𑜻',
+            Ahom::SignSmallSection => '𑜼',
+            Ahom::SignSection => '𑜽',
+            Ahom::SignRulai => '𑜾',
         }
     }
 }
@@ -303,65 +185,64 @@ impl Into<char> for Ahom {
 impl std::convert::TryFrom<char> for Ahom {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            LETTER_KA => Ok(Ahom::LetterKa),
-            LETTER_KHA => Ok(Ahom::LetterKha),
-            LETTER_NGA => Ok(Ahom::LetterNga),
-            LETTER_NA => Ok(Ahom::LetterNa),
-            LETTER_TA => Ok(Ahom::LetterTa),
-            LETTER_ALTERNATE_TA => Ok(Ahom::LetterAlternateTa),
-            LETTER_PA => Ok(Ahom::LetterPa),
-            LETTER_PHA => Ok(Ahom::LetterPha),
-            LETTER_BA => Ok(Ahom::LetterBa),
-            LETTER_MA => Ok(Ahom::LetterMa),
-            LETTER_JA => Ok(Ahom::LetterJa),
-            LETTER_CHA => Ok(Ahom::LetterCha),
-            LETTER_THA => Ok(Ahom::LetterTha),
-            LETTER_RA => Ok(Ahom::LetterRa),
-            LETTER_LA => Ok(Ahom::LetterLa),
-            LETTER_SA => Ok(Ahom::LetterSa),
-            LETTER_NYA => Ok(Ahom::LetterNya),
-            LETTER_HA => Ok(Ahom::LetterHa),
-            LETTER_A => Ok(Ahom::LetterA),
-            LETTER_DA => Ok(Ahom::LetterDa),
-            LETTER_DHA => Ok(Ahom::LetterDha),
-            LETTER_GA => Ok(Ahom::LetterGa),
-            LETTER_ALTERNATE_GA => Ok(Ahom::LetterAlternateGa),
-            LETTER_GHA => Ok(Ahom::LetterGha),
-            LETTER_BHA => Ok(Ahom::LetterBha),
-            LETTER_JHA => Ok(Ahom::LetterJha),
-            LETTER_ALTERNATE_BA => Ok(Ahom::LetterAlternateBa),
-            CONSONANT_SIGN_MEDIAL_LA => Ok(Ahom::ConsonantSignMedialLa),
-            CONSONANT_SIGN_MEDIAL_RA => Ok(Ahom::ConsonantSignMedialRa),
-            CONSONANT_SIGN_MEDIAL_LIGATING_RA => Ok(Ahom::ConsonantSignMedialLigatingRa),
-            VOWEL_SIGN_A => Ok(Ahom::VowelSignA),
-            VOWEL_SIGN_AA => Ok(Ahom::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Ahom::VowelSignI),
-            VOWEL_SIGN_II => Ok(Ahom::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Ahom::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Ahom::VowelSignUu),
-            VOWEL_SIGN_E => Ok(Ahom::VowelSignE),
-            VOWEL_SIGN_AW => Ok(Ahom::VowelSignAw),
-            VOWEL_SIGN_O => Ok(Ahom::VowelSignO),
-            VOWEL_SIGN_AI => Ok(Ahom::VowelSignAi),
-            VOWEL_SIGN_AM => Ok(Ahom::VowelSignAm),
-            SIGN_KILLER => Ok(Ahom::SignKiller),
-            DIGIT_ZERO => Ok(Ahom::DigitZero),
-            DIGIT_ONE => Ok(Ahom::DigitOne),
-            DIGIT_TWO => Ok(Ahom::DigitTwo),
-            DIGIT_THREE => Ok(Ahom::DigitThree),
-            DIGIT_FOUR => Ok(Ahom::DigitFour),
-            DIGIT_FIVE => Ok(Ahom::DigitFive),
-            DIGIT_SIX => Ok(Ahom::DigitSix),
-            DIGIT_SEVEN => Ok(Ahom::DigitSeven),
-            DIGIT_EIGHT => Ok(Ahom::DigitEight),
-            DIGIT_NINE => Ok(Ahom::DigitNine),
-            NUMBER_TEN => Ok(Ahom::NumberTen),
-            NUMBER_TWENTY => Ok(Ahom::NumberTwenty),
-            SIGN_SMALL_SECTION => Ok(Ahom::SignSmallSection),
-            SIGN_SECTION => Ok(Ahom::SignSection),
-            SIGN_RULAI => Ok(Ahom::SignRulai),
+            '𑜀' => Ok(Ahom::LetterKa),
+            '𑜁' => Ok(Ahom::LetterKha),
+            '𑜂' => Ok(Ahom::LetterNga),
+            '𑜃' => Ok(Ahom::LetterNa),
+            '𑜄' => Ok(Ahom::LetterTa),
+            '𑜅' => Ok(Ahom::LetterAlternateTa),
+            '𑜆' => Ok(Ahom::LetterPa),
+            '𑜇' => Ok(Ahom::LetterPha),
+            '𑜈' => Ok(Ahom::LetterBa),
+            '𑜉' => Ok(Ahom::LetterMa),
+            '𑜊' => Ok(Ahom::LetterJa),
+            '𑜋' => Ok(Ahom::LetterCha),
+            '𑜌' => Ok(Ahom::LetterTha),
+            '𑜍' => Ok(Ahom::LetterRa),
+            '𑜎' => Ok(Ahom::LetterLa),
+            '𑜏' => Ok(Ahom::LetterSa),
+            '𑜐' => Ok(Ahom::LetterNya),
+            '𑜑' => Ok(Ahom::LetterHa),
+            '𑜒' => Ok(Ahom::LetterA),
+            '𑜓' => Ok(Ahom::LetterDa),
+            '𑜔' => Ok(Ahom::LetterDha),
+            '𑜕' => Ok(Ahom::LetterGa),
+            '𑜖' => Ok(Ahom::LetterAlternateGa),
+            '𑜗' => Ok(Ahom::LetterGha),
+            '𑜘' => Ok(Ahom::LetterBha),
+            '𑜙' => Ok(Ahom::LetterJha),
+            '𑜚' => Ok(Ahom::LetterAlternateBa),
+            '𑜝' => Ok(Ahom::ConsonantSignMedialLa),
+            '𑜞' => Ok(Ahom::ConsonantSignMedialRa),
+            '𑜟' => Ok(Ahom::ConsonantSignMedialLigatingRa),
+            '𑜠' => Ok(Ahom::VowelSignA),
+            '𑜡' => Ok(Ahom::VowelSignAa),
+            '𑜢' => Ok(Ahom::VowelSignI),
+            '𑜣' => Ok(Ahom::VowelSignIi),
+            '𑜤' => Ok(Ahom::VowelSignU),
+            '𑜥' => Ok(Ahom::VowelSignUu),
+            '𑜦' => Ok(Ahom::VowelSignE),
+            '𑜧' => Ok(Ahom::VowelSignAw),
+            '𑜨' => Ok(Ahom::VowelSignO),
+            '𑜩' => Ok(Ahom::VowelSignAi),
+            '𑜪' => Ok(Ahom::VowelSignAm),
+            '𑜫' => Ok(Ahom::SignKiller),
+            '𑜰' => Ok(Ahom::DigitZero),
+            '𑜱' => Ok(Ahom::DigitOne),
+            '𑜲' => Ok(Ahom::DigitTwo),
+            '𑜳' => Ok(Ahom::DigitThree),
+            '𑜴' => Ok(Ahom::DigitFour),
+            '𑜵' => Ok(Ahom::DigitFive),
+            '𑜶' => Ok(Ahom::DigitSix),
+            '𑜷' => Ok(Ahom::DigitSeven),
+            '𑜸' => Ok(Ahom::DigitEight),
+            '𑜹' => Ok(Ahom::DigitNine),
+            '𑜺' => Ok(Ahom::NumberTen),
+            '𑜻' => Ok(Ahom::NumberTwenty),
+            '𑜼' => Ok(Ahom::SignSmallSection),
+            '𑜽' => Ok(Ahom::SignSection),
+            '𑜾' => Ok(Ahom::SignRulai),
             _ => Err(()),
         }
     }

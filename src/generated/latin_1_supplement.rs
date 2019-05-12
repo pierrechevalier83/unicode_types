@@ -1,260 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{80}: ''
-    pub const CONTROL_0080: char = '';
-    /// \u{81}: ''
-    pub const CONTROL_0081: char = '';
-    /// \u{82}: ''
-    pub const CONTROL_0082: char = '';
-    /// \u{83}: ''
-    pub const CONTROL_0083: char = '';
-    /// \u{84}: ''
-    pub const CONTROL_0084: char = '';
-    /// \u{85}: ''
-    pub const CONTROL_0085: char = '';
-    /// \u{86}: ''
-    pub const CONTROL_0086: char = '';
-    /// \u{87}: ''
-    pub const CONTROL_0087: char = '';
-    /// \u{88}: ''
-    pub const CONTROL_0088: char = '';
-    /// \u{89}: ''
-    pub const CONTROL_0089: char = '';
-    /// \u{8a}: ''
-    pub const CONTROL_008A: char = '';
-    /// \u{8b}: ''
-    pub const CONTROL_008B: char = '';
-    /// \u{8c}: ''
-    pub const CONTROL_008C: char = '';
-    /// \u{8d}: ''
-    pub const CONTROL_008D: char = '';
-    /// \u{8e}: ''
-    pub const CONTROL_008E: char = '';
-    /// \u{8f}: ''
-    pub const CONTROL_008F: char = '';
-    /// \u{90}: ''
-    pub const CONTROL_0090: char = '';
-    /// \u{91}: ''
-    pub const CONTROL_0091: char = '';
-    /// \u{92}: ''
-    pub const CONTROL_0092: char = '';
-    /// \u{93}: ''
-    pub const CONTROL_0093: char = '';
-    /// \u{94}: ''
-    pub const CONTROL_0094: char = '';
-    /// \u{95}: ''
-    pub const CONTROL_0095: char = '';
-    /// \u{96}: ''
-    pub const CONTROL_0096: char = '';
-    /// \u{97}: ''
-    pub const CONTROL_0097: char = '';
-    /// \u{98}: ''
-    pub const CONTROL_0098: char = '';
-    /// \u{99}: ''
-    pub const CONTROL_0099: char = '';
-    /// \u{9a}: ''
-    pub const CONTROL_009A: char = '';
-    /// \u{9b}: ''
-    pub const CONTROL_009B: char = '';
-    /// \u{9c}: ''
-    pub const CONTROL_009C: char = '';
-    /// \u{9d}: ''
-    pub const CONTROL_009D: char = '';
-    /// \u{9e}: ''
-    pub const CONTROL_009E: char = '';
-    /// \u{9f}: ''
-    pub const CONTROL_009F: char = '';
-    /// \u{a0}: ' '
-    pub const NO_DASH_BREAK_SPACE: char = ' ';
-    /// \u{a1}: '¡'
-    pub const INVERTED_EXCLAMATION_MARK: char = '¡';
-    /// \u{a2}: '¢'
-    pub const CENT_SIGN: char = '¢';
-    /// \u{a3}: '£'
-    pub const POUND_SIGN: char = '£';
-    /// \u{a4}: '¤'
-    pub const CURRENCY_SIGN: char = '¤';
-    /// \u{a5}: '¥'
-    pub const YEN_SIGN: char = '¥';
-    /// \u{a6}: '¦'
-    pub const BROKEN_BAR: char = '¦';
-    /// \u{a7}: '§'
-    pub const SECTION_SIGN: char = '§';
-    /// \u{a8}: '¨'
-    pub const DIAERESIS: char = '¨';
-    /// \u{a9}: '©'
-    pub const COPYRIGHT_SIGN: char = '©';
-    /// \u{aa}: 'ª'
-    pub const FEMININE_ORDINAL_INDICATOR: char = 'ª';
-    /// \u{ab}: '«'
-    pub const LEFT_DASH_POINTING_DOUBLE_ANGLE_QUOTATION_MARK: char = '«';
-    /// \u{ac}: '¬'
-    pub const NOT_SIGN: char = '¬';
-    /// \u{ad}: '­'
-    pub const SOFT_HYPHEN: char = '­';
-    /// \u{ae}: '®'
-    pub const REGISTERED_SIGN: char = '®';
-    /// \u{af}: '¯'
-    pub const MACRON: char = '¯';
-    /// \u{b0}: '°'
-    pub const DEGREE_SIGN: char = '°';
-    /// \u{b1}: '±'
-    pub const PLUS_DASH_MINUS_SIGN: char = '±';
-    /// \u{b2}: '²'
-    pub const SUPERSCRIPT_TWO: char = '²';
-    /// \u{b3}: '³'
-    pub const SUPERSCRIPT_THREE: char = '³';
-    /// \u{b4}: '´'
-    pub const ACUTE_ACCENT: char = '´';
-    /// \u{b5}: 'µ'
-    pub const MICRO_SIGN: char = 'µ';
-    /// \u{b6}: '¶'
-    pub const PILCROW_SIGN: char = '¶';
-    /// \u{b7}: '·'
-    pub const MIDDLE_DOT: char = '·';
-    /// \u{b8}: '¸'
-    pub const CEDILLA: char = '¸';
-    /// \u{b9}: '¹'
-    pub const SUPERSCRIPT_ONE: char = '¹';
-    /// \u{ba}: 'º'
-    pub const MASCULINE_ORDINAL_INDICATOR: char = 'º';
-    /// \u{bb}: '»'
-    pub const RIGHT_DASH_POINTING_DOUBLE_ANGLE_QUOTATION_MARK: char = '»';
-    /// \u{bc}: '¼'
-    pub const VULGAR_FRACTION_ONE_QUARTER: char = '¼';
-    /// \u{bd}: '½'
-    pub const VULGAR_FRACTION_ONE_HALF: char = '½';
-    /// \u{be}: '¾'
-    pub const VULGAR_FRACTION_THREE_QUARTERS: char = '¾';
-    /// \u{bf}: '¿'
-    pub const INVERTED_QUESTION_MARK: char = '¿';
-    /// \u{c0}: 'À'
-    pub const LATIN_CAPITAL_LETTER_A_WITH_GRAVE: char = 'À';
-    /// \u{c1}: 'Á'
-    pub const LATIN_CAPITAL_LETTER_A_WITH_ACUTE: char = 'Á';
-    /// \u{c2}: 'Â'
-    pub const LATIN_CAPITAL_LETTER_A_WITH_CIRCUMFLEX: char = 'Â';
-    /// \u{c3}: 'Ã'
-    pub const LATIN_CAPITAL_LETTER_A_WITH_TILDE: char = 'Ã';
-    /// \u{c4}: 'Ä'
-    pub const LATIN_CAPITAL_LETTER_A_WITH_DIAERESIS: char = 'Ä';
-    /// \u{c5}: 'Å'
-    pub const LATIN_CAPITAL_LETTER_A_WITH_RING_ABOVE: char = 'Å';
-    /// \u{c6}: 'Æ'
-    pub const LATIN_CAPITAL_LETTER_AE: char = 'Æ';
-    /// \u{c7}: 'Ç'
-    pub const LATIN_CAPITAL_LETTER_C_WITH_CEDILLA: char = 'Ç';
-    /// \u{c8}: 'È'
-    pub const LATIN_CAPITAL_LETTER_E_WITH_GRAVE: char = 'È';
-    /// \u{c9}: 'É'
-    pub const LATIN_CAPITAL_LETTER_E_WITH_ACUTE: char = 'É';
-    /// \u{ca}: 'Ê'
-    pub const LATIN_CAPITAL_LETTER_E_WITH_CIRCUMFLEX: char = 'Ê';
-    /// \u{cb}: 'Ë'
-    pub const LATIN_CAPITAL_LETTER_E_WITH_DIAERESIS: char = 'Ë';
-    /// \u{cc}: 'Ì'
-    pub const LATIN_CAPITAL_LETTER_I_WITH_GRAVE: char = 'Ì';
-    /// \u{cd}: 'Í'
-    pub const LATIN_CAPITAL_LETTER_I_WITH_ACUTE: char = 'Í';
-    /// \u{ce}: 'Î'
-    pub const LATIN_CAPITAL_LETTER_I_WITH_CIRCUMFLEX: char = 'Î';
-    /// \u{cf}: 'Ï'
-    pub const LATIN_CAPITAL_LETTER_I_WITH_DIAERESIS: char = 'Ï';
-    /// \u{d0}: 'Ð'
-    pub const LATIN_CAPITAL_LETTER_ETH: char = 'Ð';
-    /// \u{d1}: 'Ñ'
-    pub const LATIN_CAPITAL_LETTER_N_WITH_TILDE: char = 'Ñ';
-    /// \u{d2}: 'Ò'
-    pub const LATIN_CAPITAL_LETTER_O_WITH_GRAVE: char = 'Ò';
-    /// \u{d3}: 'Ó'
-    pub const LATIN_CAPITAL_LETTER_O_WITH_ACUTE: char = 'Ó';
-    /// \u{d4}: 'Ô'
-    pub const LATIN_CAPITAL_LETTER_O_WITH_CIRCUMFLEX: char = 'Ô';
-    /// \u{d5}: 'Õ'
-    pub const LATIN_CAPITAL_LETTER_O_WITH_TILDE: char = 'Õ';
-    /// \u{d6}: 'Ö'
-    pub const LATIN_CAPITAL_LETTER_O_WITH_DIAERESIS: char = 'Ö';
-    /// \u{d7}: '×'
-    pub const MULTIPLICATION_SIGN: char = '×';
-    /// \u{d8}: 'Ø'
-    pub const LATIN_CAPITAL_LETTER_O_WITH_STROKE: char = 'Ø';
-    /// \u{d9}: 'Ù'
-    pub const LATIN_CAPITAL_LETTER_U_WITH_GRAVE: char = 'Ù';
-    /// \u{da}: 'Ú'
-    pub const LATIN_CAPITAL_LETTER_U_WITH_ACUTE: char = 'Ú';
-    /// \u{db}: 'Û'
-    pub const LATIN_CAPITAL_LETTER_U_WITH_CIRCUMFLEX: char = 'Û';
-    /// \u{dc}: 'Ü'
-    pub const LATIN_CAPITAL_LETTER_U_WITH_DIAERESIS: char = 'Ü';
-    /// \u{dd}: 'Ý'
-    pub const LATIN_CAPITAL_LETTER_Y_WITH_ACUTE: char = 'Ý';
-    /// \u{de}: 'Þ'
-    pub const LATIN_CAPITAL_LETTER_THORN: char = 'Þ';
-    /// \u{df}: 'ß'
-    pub const LATIN_SMALL_LETTER_SHARP_S: char = 'ß';
-    /// \u{e0}: 'à'
-    pub const LATIN_SMALL_LETTER_A_WITH_GRAVE: char = 'à';
-    /// \u{e1}: 'á'
-    pub const LATIN_SMALL_LETTER_A_WITH_ACUTE: char = 'á';
-    /// \u{e2}: 'â'
-    pub const LATIN_SMALL_LETTER_A_WITH_CIRCUMFLEX: char = 'â';
-    /// \u{e3}: 'ã'
-    pub const LATIN_SMALL_LETTER_A_WITH_TILDE: char = 'ã';
-    /// \u{e4}: 'ä'
-    pub const LATIN_SMALL_LETTER_A_WITH_DIAERESIS: char = 'ä';
-    /// \u{e5}: 'å'
-    pub const LATIN_SMALL_LETTER_A_WITH_RING_ABOVE: char = 'å';
-    /// \u{e6}: 'æ'
-    pub const LATIN_SMALL_LETTER_AE: char = 'æ';
-    /// \u{e7}: 'ç'
-    pub const LATIN_SMALL_LETTER_C_WITH_CEDILLA: char = 'ç';
-    /// \u{e8}: 'è'
-    pub const LATIN_SMALL_LETTER_E_WITH_GRAVE: char = 'è';
-    /// \u{e9}: 'é'
-    pub const LATIN_SMALL_LETTER_E_WITH_ACUTE: char = 'é';
-    /// \u{ea}: 'ê'
-    pub const LATIN_SMALL_LETTER_E_WITH_CIRCUMFLEX: char = 'ê';
-    /// \u{eb}: 'ë'
-    pub const LATIN_SMALL_LETTER_E_WITH_DIAERESIS: char = 'ë';
-    /// \u{ec}: 'ì'
-    pub const LATIN_SMALL_LETTER_I_WITH_GRAVE: char = 'ì';
-    /// \u{ed}: 'í'
-    pub const LATIN_SMALL_LETTER_I_WITH_ACUTE: char = 'í';
-    /// \u{ee}: 'î'
-    pub const LATIN_SMALL_LETTER_I_WITH_CIRCUMFLEX: char = 'î';
-    /// \u{ef}: 'ï'
-    pub const LATIN_SMALL_LETTER_I_WITH_DIAERESIS: char = 'ï';
-    /// \u{f0}: 'ð'
-    pub const LATIN_SMALL_LETTER_ETH: char = 'ð';
-    /// \u{f1}: 'ñ'
-    pub const LATIN_SMALL_LETTER_N_WITH_TILDE: char = 'ñ';
-    /// \u{f2}: 'ò'
-    pub const LATIN_SMALL_LETTER_O_WITH_GRAVE: char = 'ò';
-    /// \u{f3}: 'ó'
-    pub const LATIN_SMALL_LETTER_O_WITH_ACUTE: char = 'ó';
-    /// \u{f4}: 'ô'
-    pub const LATIN_SMALL_LETTER_O_WITH_CIRCUMFLEX: char = 'ô';
-    /// \u{f5}: 'õ'
-    pub const LATIN_SMALL_LETTER_O_WITH_TILDE: char = 'õ';
-    /// \u{f6}: 'ö'
-    pub const LATIN_SMALL_LETTER_O_WITH_DIAERESIS: char = 'ö';
-    /// \u{f7}: '÷'
-    pub const DIVISION_SIGN: char = '÷';
-    /// \u{f8}: 'ø'
-    pub const LATIN_SMALL_LETTER_O_WITH_STROKE: char = 'ø';
-    /// \u{f9}: 'ù'
-    pub const LATIN_SMALL_LETTER_U_WITH_GRAVE: char = 'ù';
-    /// \u{fa}: 'ú'
-    pub const LATIN_SMALL_LETTER_U_WITH_ACUTE: char = 'ú';
-    /// \u{fb}: 'û'
-    pub const LATIN_SMALL_LETTER_U_WITH_CIRCUMFLEX: char = 'û';
-    /// \u{fc}: 'ü'
-    pub const LATIN_SMALL_LETTER_U_WITH_DIAERESIS: char = 'ü';
-    /// \u{fd}: 'ý'
-    pub const LATIN_SMALL_LETTER_Y_WITH_ACUTE: char = 'ý';
-    /// \u{fe}: 'þ'
-    pub const LATIN_SMALL_LETTER_THORN: char = 'þ';
-}
 
 /// An enum to represent all characters in the Latin1Supplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -517,135 +260,134 @@ pub enum Latin1Supplement {
 
 impl Into<char> for Latin1Supplement {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Latin1Supplement::Control0080 => CONTROL_0080,
-            Latin1Supplement::Control0081 => CONTROL_0081,
-            Latin1Supplement::Control0082 => CONTROL_0082,
-            Latin1Supplement::Control0083 => CONTROL_0083,
-            Latin1Supplement::Control0084 => CONTROL_0084,
-            Latin1Supplement::Control0085 => CONTROL_0085,
-            Latin1Supplement::Control0086 => CONTROL_0086,
-            Latin1Supplement::Control0087 => CONTROL_0087,
-            Latin1Supplement::Control0088 => CONTROL_0088,
-            Latin1Supplement::Control0089 => CONTROL_0089,
-            Latin1Supplement::Control008a => CONTROL_008A,
-            Latin1Supplement::Control008b => CONTROL_008B,
-            Latin1Supplement::Control008c => CONTROL_008C,
-            Latin1Supplement::Control008d => CONTROL_008D,
-            Latin1Supplement::Control008e => CONTROL_008E,
-            Latin1Supplement::Control008f => CONTROL_008F,
-            Latin1Supplement::Control0090 => CONTROL_0090,
-            Latin1Supplement::Control0091 => CONTROL_0091,
-            Latin1Supplement::Control0092 => CONTROL_0092,
-            Latin1Supplement::Control0093 => CONTROL_0093,
-            Latin1Supplement::Control0094 => CONTROL_0094,
-            Latin1Supplement::Control0095 => CONTROL_0095,
-            Latin1Supplement::Control0096 => CONTROL_0096,
-            Latin1Supplement::Control0097 => CONTROL_0097,
-            Latin1Supplement::Control0098 => CONTROL_0098,
-            Latin1Supplement::Control0099 => CONTROL_0099,
-            Latin1Supplement::Control009a => CONTROL_009A,
-            Latin1Supplement::Control009b => CONTROL_009B,
-            Latin1Supplement::Control009c => CONTROL_009C,
-            Latin1Supplement::Control009d => CONTROL_009D,
-            Latin1Supplement::Control009e => CONTROL_009E,
-            Latin1Supplement::Control009f => CONTROL_009F,
-            Latin1Supplement::NoDashBreakSpace => NO_DASH_BREAK_SPACE,
-            Latin1Supplement::InvertedExclamationMark => INVERTED_EXCLAMATION_MARK,
-            Latin1Supplement::CentSign => CENT_SIGN,
-            Latin1Supplement::PoundSign => POUND_SIGN,
-            Latin1Supplement::CurrencySign => CURRENCY_SIGN,
-            Latin1Supplement::YenSign => YEN_SIGN,
-            Latin1Supplement::BrokenBar => BROKEN_BAR,
-            Latin1Supplement::SectionSign => SECTION_SIGN,
-            Latin1Supplement::Diaeresis => DIAERESIS,
-            Latin1Supplement::CopyrightSign => COPYRIGHT_SIGN,
-            Latin1Supplement::FeminineOrdinalIndicator => FEMININE_ORDINAL_INDICATOR,
-            Latin1Supplement::LeftDashPointingDoubleAngleQuotationMark => LEFT_DASH_POINTING_DOUBLE_ANGLE_QUOTATION_MARK,
-            Latin1Supplement::NotSign => NOT_SIGN,
-            Latin1Supplement::SoftHyphen => SOFT_HYPHEN,
-            Latin1Supplement::RegisteredSign => REGISTERED_SIGN,
-            Latin1Supplement::Macron => MACRON,
-            Latin1Supplement::DegreeSign => DEGREE_SIGN,
-            Latin1Supplement::PlusDashMinusSign => PLUS_DASH_MINUS_SIGN,
-            Latin1Supplement::SuperscriptTwo => SUPERSCRIPT_TWO,
-            Latin1Supplement::SuperscriptThree => SUPERSCRIPT_THREE,
-            Latin1Supplement::AcuteAccent => ACUTE_ACCENT,
-            Latin1Supplement::MicroSign => MICRO_SIGN,
-            Latin1Supplement::PilcrowSign => PILCROW_SIGN,
-            Latin1Supplement::MiddleDot => MIDDLE_DOT,
-            Latin1Supplement::Cedilla => CEDILLA,
-            Latin1Supplement::SuperscriptOne => SUPERSCRIPT_ONE,
-            Latin1Supplement::MasculineOrdinalIndicator => MASCULINE_ORDINAL_INDICATOR,
-            Latin1Supplement::RightDashPointingDoubleAngleQuotationMark => RIGHT_DASH_POINTING_DOUBLE_ANGLE_QUOTATION_MARK,
-            Latin1Supplement::VulgarFractionOneQuarter => VULGAR_FRACTION_ONE_QUARTER,
-            Latin1Supplement::VulgarFractionOneHalf => VULGAR_FRACTION_ONE_HALF,
-            Latin1Supplement::VulgarFractionThreeQuarters => VULGAR_FRACTION_THREE_QUARTERS,
-            Latin1Supplement::InvertedQuestionMark => INVERTED_QUESTION_MARK,
-            Latin1Supplement::LatinCapitalLetterAWithGrave => LATIN_CAPITAL_LETTER_A_WITH_GRAVE,
-            Latin1Supplement::LatinCapitalLetterAWithAcute => LATIN_CAPITAL_LETTER_A_WITH_ACUTE,
-            Latin1Supplement::LatinCapitalLetterAWithCircumflex => LATIN_CAPITAL_LETTER_A_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinCapitalLetterAWithTilde => LATIN_CAPITAL_LETTER_A_WITH_TILDE,
-            Latin1Supplement::LatinCapitalLetterAWithDiaeresis => LATIN_CAPITAL_LETTER_A_WITH_DIAERESIS,
-            Latin1Supplement::LatinCapitalLetterAWithRingAbove => LATIN_CAPITAL_LETTER_A_WITH_RING_ABOVE,
-            Latin1Supplement::LatinCapitalLetterAe => LATIN_CAPITAL_LETTER_AE,
-            Latin1Supplement::LatinCapitalLetterCWithCedilla => LATIN_CAPITAL_LETTER_C_WITH_CEDILLA,
-            Latin1Supplement::LatinCapitalLetterEWithGrave => LATIN_CAPITAL_LETTER_E_WITH_GRAVE,
-            Latin1Supplement::LatinCapitalLetterEWithAcute => LATIN_CAPITAL_LETTER_E_WITH_ACUTE,
-            Latin1Supplement::LatinCapitalLetterEWithCircumflex => LATIN_CAPITAL_LETTER_E_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinCapitalLetterEWithDiaeresis => LATIN_CAPITAL_LETTER_E_WITH_DIAERESIS,
-            Latin1Supplement::LatinCapitalLetterIWithGrave => LATIN_CAPITAL_LETTER_I_WITH_GRAVE,
-            Latin1Supplement::LatinCapitalLetterIWithAcute => LATIN_CAPITAL_LETTER_I_WITH_ACUTE,
-            Latin1Supplement::LatinCapitalLetterIWithCircumflex => LATIN_CAPITAL_LETTER_I_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinCapitalLetterIWithDiaeresis => LATIN_CAPITAL_LETTER_I_WITH_DIAERESIS,
-            Latin1Supplement::LatinCapitalLetterEth => LATIN_CAPITAL_LETTER_ETH,
-            Latin1Supplement::LatinCapitalLetterNWithTilde => LATIN_CAPITAL_LETTER_N_WITH_TILDE,
-            Latin1Supplement::LatinCapitalLetterOWithGrave => LATIN_CAPITAL_LETTER_O_WITH_GRAVE,
-            Latin1Supplement::LatinCapitalLetterOWithAcute => LATIN_CAPITAL_LETTER_O_WITH_ACUTE,
-            Latin1Supplement::LatinCapitalLetterOWithCircumflex => LATIN_CAPITAL_LETTER_O_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinCapitalLetterOWithTilde => LATIN_CAPITAL_LETTER_O_WITH_TILDE,
-            Latin1Supplement::LatinCapitalLetterOWithDiaeresis => LATIN_CAPITAL_LETTER_O_WITH_DIAERESIS,
-            Latin1Supplement::MultiplicationSign => MULTIPLICATION_SIGN,
-            Latin1Supplement::LatinCapitalLetterOWithStroke => LATIN_CAPITAL_LETTER_O_WITH_STROKE,
-            Latin1Supplement::LatinCapitalLetterUWithGrave => LATIN_CAPITAL_LETTER_U_WITH_GRAVE,
-            Latin1Supplement::LatinCapitalLetterUWithAcute => LATIN_CAPITAL_LETTER_U_WITH_ACUTE,
-            Latin1Supplement::LatinCapitalLetterUWithCircumflex => LATIN_CAPITAL_LETTER_U_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinCapitalLetterUWithDiaeresis => LATIN_CAPITAL_LETTER_U_WITH_DIAERESIS,
-            Latin1Supplement::LatinCapitalLetterYWithAcute => LATIN_CAPITAL_LETTER_Y_WITH_ACUTE,
-            Latin1Supplement::LatinCapitalLetterThorn => LATIN_CAPITAL_LETTER_THORN,
-            Latin1Supplement::LatinSmallLetterSharpS => LATIN_SMALL_LETTER_SHARP_S,
-            Latin1Supplement::LatinSmallLetterAWithGrave => LATIN_SMALL_LETTER_A_WITH_GRAVE,
-            Latin1Supplement::LatinSmallLetterAWithAcute => LATIN_SMALL_LETTER_A_WITH_ACUTE,
-            Latin1Supplement::LatinSmallLetterAWithCircumflex => LATIN_SMALL_LETTER_A_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinSmallLetterAWithTilde => LATIN_SMALL_LETTER_A_WITH_TILDE,
-            Latin1Supplement::LatinSmallLetterAWithDiaeresis => LATIN_SMALL_LETTER_A_WITH_DIAERESIS,
-            Latin1Supplement::LatinSmallLetterAWithRingAbove => LATIN_SMALL_LETTER_A_WITH_RING_ABOVE,
-            Latin1Supplement::LatinSmallLetterAe => LATIN_SMALL_LETTER_AE,
-            Latin1Supplement::LatinSmallLetterCWithCedilla => LATIN_SMALL_LETTER_C_WITH_CEDILLA,
-            Latin1Supplement::LatinSmallLetterEWithGrave => LATIN_SMALL_LETTER_E_WITH_GRAVE,
-            Latin1Supplement::LatinSmallLetterEWithAcute => LATIN_SMALL_LETTER_E_WITH_ACUTE,
-            Latin1Supplement::LatinSmallLetterEWithCircumflex => LATIN_SMALL_LETTER_E_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinSmallLetterEWithDiaeresis => LATIN_SMALL_LETTER_E_WITH_DIAERESIS,
-            Latin1Supplement::LatinSmallLetterIWithGrave => LATIN_SMALL_LETTER_I_WITH_GRAVE,
-            Latin1Supplement::LatinSmallLetterIWithAcute => LATIN_SMALL_LETTER_I_WITH_ACUTE,
-            Latin1Supplement::LatinSmallLetterIWithCircumflex => LATIN_SMALL_LETTER_I_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinSmallLetterIWithDiaeresis => LATIN_SMALL_LETTER_I_WITH_DIAERESIS,
-            Latin1Supplement::LatinSmallLetterEth => LATIN_SMALL_LETTER_ETH,
-            Latin1Supplement::LatinSmallLetterNWithTilde => LATIN_SMALL_LETTER_N_WITH_TILDE,
-            Latin1Supplement::LatinSmallLetterOWithGrave => LATIN_SMALL_LETTER_O_WITH_GRAVE,
-            Latin1Supplement::LatinSmallLetterOWithAcute => LATIN_SMALL_LETTER_O_WITH_ACUTE,
-            Latin1Supplement::LatinSmallLetterOWithCircumflex => LATIN_SMALL_LETTER_O_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinSmallLetterOWithTilde => LATIN_SMALL_LETTER_O_WITH_TILDE,
-            Latin1Supplement::LatinSmallLetterOWithDiaeresis => LATIN_SMALL_LETTER_O_WITH_DIAERESIS,
-            Latin1Supplement::DivisionSign => DIVISION_SIGN,
-            Latin1Supplement::LatinSmallLetterOWithStroke => LATIN_SMALL_LETTER_O_WITH_STROKE,
-            Latin1Supplement::LatinSmallLetterUWithGrave => LATIN_SMALL_LETTER_U_WITH_GRAVE,
-            Latin1Supplement::LatinSmallLetterUWithAcute => LATIN_SMALL_LETTER_U_WITH_ACUTE,
-            Latin1Supplement::LatinSmallLetterUWithCircumflex => LATIN_SMALL_LETTER_U_WITH_CIRCUMFLEX,
-            Latin1Supplement::LatinSmallLetterUWithDiaeresis => LATIN_SMALL_LETTER_U_WITH_DIAERESIS,
-            Latin1Supplement::LatinSmallLetterYWithAcute => LATIN_SMALL_LETTER_Y_WITH_ACUTE,
-            Latin1Supplement::LatinSmallLetterThorn => LATIN_SMALL_LETTER_THORN,
+            Latin1Supplement::Control0080 => '',
+            Latin1Supplement::Control0081 => '',
+            Latin1Supplement::Control0082 => '',
+            Latin1Supplement::Control0083 => '',
+            Latin1Supplement::Control0084 => '',
+            Latin1Supplement::Control0085 => '',
+            Latin1Supplement::Control0086 => '',
+            Latin1Supplement::Control0087 => '',
+            Latin1Supplement::Control0088 => '',
+            Latin1Supplement::Control0089 => '',
+            Latin1Supplement::Control008a => '',
+            Latin1Supplement::Control008b => '',
+            Latin1Supplement::Control008c => '',
+            Latin1Supplement::Control008d => '',
+            Latin1Supplement::Control008e => '',
+            Latin1Supplement::Control008f => '',
+            Latin1Supplement::Control0090 => '',
+            Latin1Supplement::Control0091 => '',
+            Latin1Supplement::Control0092 => '',
+            Latin1Supplement::Control0093 => '',
+            Latin1Supplement::Control0094 => '',
+            Latin1Supplement::Control0095 => '',
+            Latin1Supplement::Control0096 => '',
+            Latin1Supplement::Control0097 => '',
+            Latin1Supplement::Control0098 => '',
+            Latin1Supplement::Control0099 => '',
+            Latin1Supplement::Control009a => '',
+            Latin1Supplement::Control009b => '',
+            Latin1Supplement::Control009c => '',
+            Latin1Supplement::Control009d => '',
+            Latin1Supplement::Control009e => '',
+            Latin1Supplement::Control009f => '',
+            Latin1Supplement::NoDashBreakSpace => ' ',
+            Latin1Supplement::InvertedExclamationMark => '¡',
+            Latin1Supplement::CentSign => '¢',
+            Latin1Supplement::PoundSign => '£',
+            Latin1Supplement::CurrencySign => '¤',
+            Latin1Supplement::YenSign => '¥',
+            Latin1Supplement::BrokenBar => '¦',
+            Latin1Supplement::SectionSign => '§',
+            Latin1Supplement::Diaeresis => '¨',
+            Latin1Supplement::CopyrightSign => '©',
+            Latin1Supplement::FeminineOrdinalIndicator => 'ª',
+            Latin1Supplement::LeftDashPointingDoubleAngleQuotationMark => '«',
+            Latin1Supplement::NotSign => '¬',
+            Latin1Supplement::SoftHyphen => '­',
+            Latin1Supplement::RegisteredSign => '®',
+            Latin1Supplement::Macron => '¯',
+            Latin1Supplement::DegreeSign => '°',
+            Latin1Supplement::PlusDashMinusSign => '±',
+            Latin1Supplement::SuperscriptTwo => '²',
+            Latin1Supplement::SuperscriptThree => '³',
+            Latin1Supplement::AcuteAccent => '´',
+            Latin1Supplement::MicroSign => 'µ',
+            Latin1Supplement::PilcrowSign => '¶',
+            Latin1Supplement::MiddleDot => '·',
+            Latin1Supplement::Cedilla => '¸',
+            Latin1Supplement::SuperscriptOne => '¹',
+            Latin1Supplement::MasculineOrdinalIndicator => 'º',
+            Latin1Supplement::RightDashPointingDoubleAngleQuotationMark => '»',
+            Latin1Supplement::VulgarFractionOneQuarter => '¼',
+            Latin1Supplement::VulgarFractionOneHalf => '½',
+            Latin1Supplement::VulgarFractionThreeQuarters => '¾',
+            Latin1Supplement::InvertedQuestionMark => '¿',
+            Latin1Supplement::LatinCapitalLetterAWithGrave => 'À',
+            Latin1Supplement::LatinCapitalLetterAWithAcute => 'Á',
+            Latin1Supplement::LatinCapitalLetterAWithCircumflex => 'Â',
+            Latin1Supplement::LatinCapitalLetterAWithTilde => 'Ã',
+            Latin1Supplement::LatinCapitalLetterAWithDiaeresis => 'Ä',
+            Latin1Supplement::LatinCapitalLetterAWithRingAbove => 'Å',
+            Latin1Supplement::LatinCapitalLetterAe => 'Æ',
+            Latin1Supplement::LatinCapitalLetterCWithCedilla => 'Ç',
+            Latin1Supplement::LatinCapitalLetterEWithGrave => 'È',
+            Latin1Supplement::LatinCapitalLetterEWithAcute => 'É',
+            Latin1Supplement::LatinCapitalLetterEWithCircumflex => 'Ê',
+            Latin1Supplement::LatinCapitalLetterEWithDiaeresis => 'Ë',
+            Latin1Supplement::LatinCapitalLetterIWithGrave => 'Ì',
+            Latin1Supplement::LatinCapitalLetterIWithAcute => 'Í',
+            Latin1Supplement::LatinCapitalLetterIWithCircumflex => 'Î',
+            Latin1Supplement::LatinCapitalLetterIWithDiaeresis => 'Ï',
+            Latin1Supplement::LatinCapitalLetterEth => 'Ð',
+            Latin1Supplement::LatinCapitalLetterNWithTilde => 'Ñ',
+            Latin1Supplement::LatinCapitalLetterOWithGrave => 'Ò',
+            Latin1Supplement::LatinCapitalLetterOWithAcute => 'Ó',
+            Latin1Supplement::LatinCapitalLetterOWithCircumflex => 'Ô',
+            Latin1Supplement::LatinCapitalLetterOWithTilde => 'Õ',
+            Latin1Supplement::LatinCapitalLetterOWithDiaeresis => 'Ö',
+            Latin1Supplement::MultiplicationSign => '×',
+            Latin1Supplement::LatinCapitalLetterOWithStroke => 'Ø',
+            Latin1Supplement::LatinCapitalLetterUWithGrave => 'Ù',
+            Latin1Supplement::LatinCapitalLetterUWithAcute => 'Ú',
+            Latin1Supplement::LatinCapitalLetterUWithCircumflex => 'Û',
+            Latin1Supplement::LatinCapitalLetterUWithDiaeresis => 'Ü',
+            Latin1Supplement::LatinCapitalLetterYWithAcute => 'Ý',
+            Latin1Supplement::LatinCapitalLetterThorn => 'Þ',
+            Latin1Supplement::LatinSmallLetterSharpS => 'ß',
+            Latin1Supplement::LatinSmallLetterAWithGrave => 'à',
+            Latin1Supplement::LatinSmallLetterAWithAcute => 'á',
+            Latin1Supplement::LatinSmallLetterAWithCircumflex => 'â',
+            Latin1Supplement::LatinSmallLetterAWithTilde => 'ã',
+            Latin1Supplement::LatinSmallLetterAWithDiaeresis => 'ä',
+            Latin1Supplement::LatinSmallLetterAWithRingAbove => 'å',
+            Latin1Supplement::LatinSmallLetterAe => 'æ',
+            Latin1Supplement::LatinSmallLetterCWithCedilla => 'ç',
+            Latin1Supplement::LatinSmallLetterEWithGrave => 'è',
+            Latin1Supplement::LatinSmallLetterEWithAcute => 'é',
+            Latin1Supplement::LatinSmallLetterEWithCircumflex => 'ê',
+            Latin1Supplement::LatinSmallLetterEWithDiaeresis => 'ë',
+            Latin1Supplement::LatinSmallLetterIWithGrave => 'ì',
+            Latin1Supplement::LatinSmallLetterIWithAcute => 'í',
+            Latin1Supplement::LatinSmallLetterIWithCircumflex => 'î',
+            Latin1Supplement::LatinSmallLetterIWithDiaeresis => 'ï',
+            Latin1Supplement::LatinSmallLetterEth => 'ð',
+            Latin1Supplement::LatinSmallLetterNWithTilde => 'ñ',
+            Latin1Supplement::LatinSmallLetterOWithGrave => 'ò',
+            Latin1Supplement::LatinSmallLetterOWithAcute => 'ó',
+            Latin1Supplement::LatinSmallLetterOWithCircumflex => 'ô',
+            Latin1Supplement::LatinSmallLetterOWithTilde => 'õ',
+            Latin1Supplement::LatinSmallLetterOWithDiaeresis => 'ö',
+            Latin1Supplement::DivisionSign => '÷',
+            Latin1Supplement::LatinSmallLetterOWithStroke => 'ø',
+            Latin1Supplement::LatinSmallLetterUWithGrave => 'ù',
+            Latin1Supplement::LatinSmallLetterUWithAcute => 'ú',
+            Latin1Supplement::LatinSmallLetterUWithCircumflex => 'û',
+            Latin1Supplement::LatinSmallLetterUWithDiaeresis => 'ü',
+            Latin1Supplement::LatinSmallLetterYWithAcute => 'ý',
+            Latin1Supplement::LatinSmallLetterThorn => 'þ',
         }
     }
 }
@@ -653,135 +395,134 @@ impl Into<char> for Latin1Supplement {
 impl std::convert::TryFrom<char> for Latin1Supplement {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CONTROL_0080 => Ok(Latin1Supplement::Control0080),
-            CONTROL_0081 => Ok(Latin1Supplement::Control0081),
-            CONTROL_0082 => Ok(Latin1Supplement::Control0082),
-            CONTROL_0083 => Ok(Latin1Supplement::Control0083),
-            CONTROL_0084 => Ok(Latin1Supplement::Control0084),
-            CONTROL_0085 => Ok(Latin1Supplement::Control0085),
-            CONTROL_0086 => Ok(Latin1Supplement::Control0086),
-            CONTROL_0087 => Ok(Latin1Supplement::Control0087),
-            CONTROL_0088 => Ok(Latin1Supplement::Control0088),
-            CONTROL_0089 => Ok(Latin1Supplement::Control0089),
-            CONTROL_008A => Ok(Latin1Supplement::Control008a),
-            CONTROL_008B => Ok(Latin1Supplement::Control008b),
-            CONTROL_008C => Ok(Latin1Supplement::Control008c),
-            CONTROL_008D => Ok(Latin1Supplement::Control008d),
-            CONTROL_008E => Ok(Latin1Supplement::Control008e),
-            CONTROL_008F => Ok(Latin1Supplement::Control008f),
-            CONTROL_0090 => Ok(Latin1Supplement::Control0090),
-            CONTROL_0091 => Ok(Latin1Supplement::Control0091),
-            CONTROL_0092 => Ok(Latin1Supplement::Control0092),
-            CONTROL_0093 => Ok(Latin1Supplement::Control0093),
-            CONTROL_0094 => Ok(Latin1Supplement::Control0094),
-            CONTROL_0095 => Ok(Latin1Supplement::Control0095),
-            CONTROL_0096 => Ok(Latin1Supplement::Control0096),
-            CONTROL_0097 => Ok(Latin1Supplement::Control0097),
-            CONTROL_0098 => Ok(Latin1Supplement::Control0098),
-            CONTROL_0099 => Ok(Latin1Supplement::Control0099),
-            CONTROL_009A => Ok(Latin1Supplement::Control009a),
-            CONTROL_009B => Ok(Latin1Supplement::Control009b),
-            CONTROL_009C => Ok(Latin1Supplement::Control009c),
-            CONTROL_009D => Ok(Latin1Supplement::Control009d),
-            CONTROL_009E => Ok(Latin1Supplement::Control009e),
-            CONTROL_009F => Ok(Latin1Supplement::Control009f),
-            NO_DASH_BREAK_SPACE => Ok(Latin1Supplement::NoDashBreakSpace),
-            INVERTED_EXCLAMATION_MARK => Ok(Latin1Supplement::InvertedExclamationMark),
-            CENT_SIGN => Ok(Latin1Supplement::CentSign),
-            POUND_SIGN => Ok(Latin1Supplement::PoundSign),
-            CURRENCY_SIGN => Ok(Latin1Supplement::CurrencySign),
-            YEN_SIGN => Ok(Latin1Supplement::YenSign),
-            BROKEN_BAR => Ok(Latin1Supplement::BrokenBar),
-            SECTION_SIGN => Ok(Latin1Supplement::SectionSign),
-            DIAERESIS => Ok(Latin1Supplement::Diaeresis),
-            COPYRIGHT_SIGN => Ok(Latin1Supplement::CopyrightSign),
-            FEMININE_ORDINAL_INDICATOR => Ok(Latin1Supplement::FeminineOrdinalIndicator),
-            LEFT_DASH_POINTING_DOUBLE_ANGLE_QUOTATION_MARK => Ok(Latin1Supplement::LeftDashPointingDoubleAngleQuotationMark),
-            NOT_SIGN => Ok(Latin1Supplement::NotSign),
-            SOFT_HYPHEN => Ok(Latin1Supplement::SoftHyphen),
-            REGISTERED_SIGN => Ok(Latin1Supplement::RegisteredSign),
-            MACRON => Ok(Latin1Supplement::Macron),
-            DEGREE_SIGN => Ok(Latin1Supplement::DegreeSign),
-            PLUS_DASH_MINUS_SIGN => Ok(Latin1Supplement::PlusDashMinusSign),
-            SUPERSCRIPT_TWO => Ok(Latin1Supplement::SuperscriptTwo),
-            SUPERSCRIPT_THREE => Ok(Latin1Supplement::SuperscriptThree),
-            ACUTE_ACCENT => Ok(Latin1Supplement::AcuteAccent),
-            MICRO_SIGN => Ok(Latin1Supplement::MicroSign),
-            PILCROW_SIGN => Ok(Latin1Supplement::PilcrowSign),
-            MIDDLE_DOT => Ok(Latin1Supplement::MiddleDot),
-            CEDILLA => Ok(Latin1Supplement::Cedilla),
-            SUPERSCRIPT_ONE => Ok(Latin1Supplement::SuperscriptOne),
-            MASCULINE_ORDINAL_INDICATOR => Ok(Latin1Supplement::MasculineOrdinalIndicator),
-            RIGHT_DASH_POINTING_DOUBLE_ANGLE_QUOTATION_MARK => Ok(Latin1Supplement::RightDashPointingDoubleAngleQuotationMark),
-            VULGAR_FRACTION_ONE_QUARTER => Ok(Latin1Supplement::VulgarFractionOneQuarter),
-            VULGAR_FRACTION_ONE_HALF => Ok(Latin1Supplement::VulgarFractionOneHalf),
-            VULGAR_FRACTION_THREE_QUARTERS => Ok(Latin1Supplement::VulgarFractionThreeQuarters),
-            INVERTED_QUESTION_MARK => Ok(Latin1Supplement::InvertedQuestionMark),
-            LATIN_CAPITAL_LETTER_A_WITH_GRAVE => Ok(Latin1Supplement::LatinCapitalLetterAWithGrave),
-            LATIN_CAPITAL_LETTER_A_WITH_ACUTE => Ok(Latin1Supplement::LatinCapitalLetterAWithAcute),
-            LATIN_CAPITAL_LETTER_A_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinCapitalLetterAWithCircumflex),
-            LATIN_CAPITAL_LETTER_A_WITH_TILDE => Ok(Latin1Supplement::LatinCapitalLetterAWithTilde),
-            LATIN_CAPITAL_LETTER_A_WITH_DIAERESIS => Ok(Latin1Supplement::LatinCapitalLetterAWithDiaeresis),
-            LATIN_CAPITAL_LETTER_A_WITH_RING_ABOVE => Ok(Latin1Supplement::LatinCapitalLetterAWithRingAbove),
-            LATIN_CAPITAL_LETTER_AE => Ok(Latin1Supplement::LatinCapitalLetterAe),
-            LATIN_CAPITAL_LETTER_C_WITH_CEDILLA => Ok(Latin1Supplement::LatinCapitalLetterCWithCedilla),
-            LATIN_CAPITAL_LETTER_E_WITH_GRAVE => Ok(Latin1Supplement::LatinCapitalLetterEWithGrave),
-            LATIN_CAPITAL_LETTER_E_WITH_ACUTE => Ok(Latin1Supplement::LatinCapitalLetterEWithAcute),
-            LATIN_CAPITAL_LETTER_E_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinCapitalLetterEWithCircumflex),
-            LATIN_CAPITAL_LETTER_E_WITH_DIAERESIS => Ok(Latin1Supplement::LatinCapitalLetterEWithDiaeresis),
-            LATIN_CAPITAL_LETTER_I_WITH_GRAVE => Ok(Latin1Supplement::LatinCapitalLetterIWithGrave),
-            LATIN_CAPITAL_LETTER_I_WITH_ACUTE => Ok(Latin1Supplement::LatinCapitalLetterIWithAcute),
-            LATIN_CAPITAL_LETTER_I_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinCapitalLetterIWithCircumflex),
-            LATIN_CAPITAL_LETTER_I_WITH_DIAERESIS => Ok(Latin1Supplement::LatinCapitalLetterIWithDiaeresis),
-            LATIN_CAPITAL_LETTER_ETH => Ok(Latin1Supplement::LatinCapitalLetterEth),
-            LATIN_CAPITAL_LETTER_N_WITH_TILDE => Ok(Latin1Supplement::LatinCapitalLetterNWithTilde),
-            LATIN_CAPITAL_LETTER_O_WITH_GRAVE => Ok(Latin1Supplement::LatinCapitalLetterOWithGrave),
-            LATIN_CAPITAL_LETTER_O_WITH_ACUTE => Ok(Latin1Supplement::LatinCapitalLetterOWithAcute),
-            LATIN_CAPITAL_LETTER_O_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinCapitalLetterOWithCircumflex),
-            LATIN_CAPITAL_LETTER_O_WITH_TILDE => Ok(Latin1Supplement::LatinCapitalLetterOWithTilde),
-            LATIN_CAPITAL_LETTER_O_WITH_DIAERESIS => Ok(Latin1Supplement::LatinCapitalLetterOWithDiaeresis),
-            MULTIPLICATION_SIGN => Ok(Latin1Supplement::MultiplicationSign),
-            LATIN_CAPITAL_LETTER_O_WITH_STROKE => Ok(Latin1Supplement::LatinCapitalLetterOWithStroke),
-            LATIN_CAPITAL_LETTER_U_WITH_GRAVE => Ok(Latin1Supplement::LatinCapitalLetterUWithGrave),
-            LATIN_CAPITAL_LETTER_U_WITH_ACUTE => Ok(Latin1Supplement::LatinCapitalLetterUWithAcute),
-            LATIN_CAPITAL_LETTER_U_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinCapitalLetterUWithCircumflex),
-            LATIN_CAPITAL_LETTER_U_WITH_DIAERESIS => Ok(Latin1Supplement::LatinCapitalLetterUWithDiaeresis),
-            LATIN_CAPITAL_LETTER_Y_WITH_ACUTE => Ok(Latin1Supplement::LatinCapitalLetterYWithAcute),
-            LATIN_CAPITAL_LETTER_THORN => Ok(Latin1Supplement::LatinCapitalLetterThorn),
-            LATIN_SMALL_LETTER_SHARP_S => Ok(Latin1Supplement::LatinSmallLetterSharpS),
-            LATIN_SMALL_LETTER_A_WITH_GRAVE => Ok(Latin1Supplement::LatinSmallLetterAWithGrave),
-            LATIN_SMALL_LETTER_A_WITH_ACUTE => Ok(Latin1Supplement::LatinSmallLetterAWithAcute),
-            LATIN_SMALL_LETTER_A_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinSmallLetterAWithCircumflex),
-            LATIN_SMALL_LETTER_A_WITH_TILDE => Ok(Latin1Supplement::LatinSmallLetterAWithTilde),
-            LATIN_SMALL_LETTER_A_WITH_DIAERESIS => Ok(Latin1Supplement::LatinSmallLetterAWithDiaeresis),
-            LATIN_SMALL_LETTER_A_WITH_RING_ABOVE => Ok(Latin1Supplement::LatinSmallLetterAWithRingAbove),
-            LATIN_SMALL_LETTER_AE => Ok(Latin1Supplement::LatinSmallLetterAe),
-            LATIN_SMALL_LETTER_C_WITH_CEDILLA => Ok(Latin1Supplement::LatinSmallLetterCWithCedilla),
-            LATIN_SMALL_LETTER_E_WITH_GRAVE => Ok(Latin1Supplement::LatinSmallLetterEWithGrave),
-            LATIN_SMALL_LETTER_E_WITH_ACUTE => Ok(Latin1Supplement::LatinSmallLetterEWithAcute),
-            LATIN_SMALL_LETTER_E_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinSmallLetterEWithCircumflex),
-            LATIN_SMALL_LETTER_E_WITH_DIAERESIS => Ok(Latin1Supplement::LatinSmallLetterEWithDiaeresis),
-            LATIN_SMALL_LETTER_I_WITH_GRAVE => Ok(Latin1Supplement::LatinSmallLetterIWithGrave),
-            LATIN_SMALL_LETTER_I_WITH_ACUTE => Ok(Latin1Supplement::LatinSmallLetterIWithAcute),
-            LATIN_SMALL_LETTER_I_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinSmallLetterIWithCircumflex),
-            LATIN_SMALL_LETTER_I_WITH_DIAERESIS => Ok(Latin1Supplement::LatinSmallLetterIWithDiaeresis),
-            LATIN_SMALL_LETTER_ETH => Ok(Latin1Supplement::LatinSmallLetterEth),
-            LATIN_SMALL_LETTER_N_WITH_TILDE => Ok(Latin1Supplement::LatinSmallLetterNWithTilde),
-            LATIN_SMALL_LETTER_O_WITH_GRAVE => Ok(Latin1Supplement::LatinSmallLetterOWithGrave),
-            LATIN_SMALL_LETTER_O_WITH_ACUTE => Ok(Latin1Supplement::LatinSmallLetterOWithAcute),
-            LATIN_SMALL_LETTER_O_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinSmallLetterOWithCircumflex),
-            LATIN_SMALL_LETTER_O_WITH_TILDE => Ok(Latin1Supplement::LatinSmallLetterOWithTilde),
-            LATIN_SMALL_LETTER_O_WITH_DIAERESIS => Ok(Latin1Supplement::LatinSmallLetterOWithDiaeresis),
-            DIVISION_SIGN => Ok(Latin1Supplement::DivisionSign),
-            LATIN_SMALL_LETTER_O_WITH_STROKE => Ok(Latin1Supplement::LatinSmallLetterOWithStroke),
-            LATIN_SMALL_LETTER_U_WITH_GRAVE => Ok(Latin1Supplement::LatinSmallLetterUWithGrave),
-            LATIN_SMALL_LETTER_U_WITH_ACUTE => Ok(Latin1Supplement::LatinSmallLetterUWithAcute),
-            LATIN_SMALL_LETTER_U_WITH_CIRCUMFLEX => Ok(Latin1Supplement::LatinSmallLetterUWithCircumflex),
-            LATIN_SMALL_LETTER_U_WITH_DIAERESIS => Ok(Latin1Supplement::LatinSmallLetterUWithDiaeresis),
-            LATIN_SMALL_LETTER_Y_WITH_ACUTE => Ok(Latin1Supplement::LatinSmallLetterYWithAcute),
-            LATIN_SMALL_LETTER_THORN => Ok(Latin1Supplement::LatinSmallLetterThorn),
+            '' => Ok(Latin1Supplement::Control0080),
+            '' => Ok(Latin1Supplement::Control0081),
+            '' => Ok(Latin1Supplement::Control0082),
+            '' => Ok(Latin1Supplement::Control0083),
+            '' => Ok(Latin1Supplement::Control0084),
+            '' => Ok(Latin1Supplement::Control0085),
+            '' => Ok(Latin1Supplement::Control0086),
+            '' => Ok(Latin1Supplement::Control0087),
+            '' => Ok(Latin1Supplement::Control0088),
+            '' => Ok(Latin1Supplement::Control0089),
+            '' => Ok(Latin1Supplement::Control008a),
+            '' => Ok(Latin1Supplement::Control008b),
+            '' => Ok(Latin1Supplement::Control008c),
+            '' => Ok(Latin1Supplement::Control008d),
+            '' => Ok(Latin1Supplement::Control008e),
+            '' => Ok(Latin1Supplement::Control008f),
+            '' => Ok(Latin1Supplement::Control0090),
+            '' => Ok(Latin1Supplement::Control0091),
+            '' => Ok(Latin1Supplement::Control0092),
+            '' => Ok(Latin1Supplement::Control0093),
+            '' => Ok(Latin1Supplement::Control0094),
+            '' => Ok(Latin1Supplement::Control0095),
+            '' => Ok(Latin1Supplement::Control0096),
+            '' => Ok(Latin1Supplement::Control0097),
+            '' => Ok(Latin1Supplement::Control0098),
+            '' => Ok(Latin1Supplement::Control0099),
+            '' => Ok(Latin1Supplement::Control009a),
+            '' => Ok(Latin1Supplement::Control009b),
+            '' => Ok(Latin1Supplement::Control009c),
+            '' => Ok(Latin1Supplement::Control009d),
+            '' => Ok(Latin1Supplement::Control009e),
+            '' => Ok(Latin1Supplement::Control009f),
+            ' ' => Ok(Latin1Supplement::NoDashBreakSpace),
+            '¡' => Ok(Latin1Supplement::InvertedExclamationMark),
+            '¢' => Ok(Latin1Supplement::CentSign),
+            '£' => Ok(Latin1Supplement::PoundSign),
+            '¤' => Ok(Latin1Supplement::CurrencySign),
+            '¥' => Ok(Latin1Supplement::YenSign),
+            '¦' => Ok(Latin1Supplement::BrokenBar),
+            '§' => Ok(Latin1Supplement::SectionSign),
+            '¨' => Ok(Latin1Supplement::Diaeresis),
+            '©' => Ok(Latin1Supplement::CopyrightSign),
+            'ª' => Ok(Latin1Supplement::FeminineOrdinalIndicator),
+            '«' => Ok(Latin1Supplement::LeftDashPointingDoubleAngleQuotationMark),
+            '¬' => Ok(Latin1Supplement::NotSign),
+            '­' => Ok(Latin1Supplement::SoftHyphen),
+            '®' => Ok(Latin1Supplement::RegisteredSign),
+            '¯' => Ok(Latin1Supplement::Macron),
+            '°' => Ok(Latin1Supplement::DegreeSign),
+            '±' => Ok(Latin1Supplement::PlusDashMinusSign),
+            '²' => Ok(Latin1Supplement::SuperscriptTwo),
+            '³' => Ok(Latin1Supplement::SuperscriptThree),
+            '´' => Ok(Latin1Supplement::AcuteAccent),
+            'µ' => Ok(Latin1Supplement::MicroSign),
+            '¶' => Ok(Latin1Supplement::PilcrowSign),
+            '·' => Ok(Latin1Supplement::MiddleDot),
+            '¸' => Ok(Latin1Supplement::Cedilla),
+            '¹' => Ok(Latin1Supplement::SuperscriptOne),
+            'º' => Ok(Latin1Supplement::MasculineOrdinalIndicator),
+            '»' => Ok(Latin1Supplement::RightDashPointingDoubleAngleQuotationMark),
+            '¼' => Ok(Latin1Supplement::VulgarFractionOneQuarter),
+            '½' => Ok(Latin1Supplement::VulgarFractionOneHalf),
+            '¾' => Ok(Latin1Supplement::VulgarFractionThreeQuarters),
+            '¿' => Ok(Latin1Supplement::InvertedQuestionMark),
+            'À' => Ok(Latin1Supplement::LatinCapitalLetterAWithGrave),
+            'Á' => Ok(Latin1Supplement::LatinCapitalLetterAWithAcute),
+            'Â' => Ok(Latin1Supplement::LatinCapitalLetterAWithCircumflex),
+            'Ã' => Ok(Latin1Supplement::LatinCapitalLetterAWithTilde),
+            'Ä' => Ok(Latin1Supplement::LatinCapitalLetterAWithDiaeresis),
+            'Å' => Ok(Latin1Supplement::LatinCapitalLetterAWithRingAbove),
+            'Æ' => Ok(Latin1Supplement::LatinCapitalLetterAe),
+            'Ç' => Ok(Latin1Supplement::LatinCapitalLetterCWithCedilla),
+            'È' => Ok(Latin1Supplement::LatinCapitalLetterEWithGrave),
+            'É' => Ok(Latin1Supplement::LatinCapitalLetterEWithAcute),
+            'Ê' => Ok(Latin1Supplement::LatinCapitalLetterEWithCircumflex),
+            'Ë' => Ok(Latin1Supplement::LatinCapitalLetterEWithDiaeresis),
+            'Ì' => Ok(Latin1Supplement::LatinCapitalLetterIWithGrave),
+            'Í' => Ok(Latin1Supplement::LatinCapitalLetterIWithAcute),
+            'Î' => Ok(Latin1Supplement::LatinCapitalLetterIWithCircumflex),
+            'Ï' => Ok(Latin1Supplement::LatinCapitalLetterIWithDiaeresis),
+            'Ð' => Ok(Latin1Supplement::LatinCapitalLetterEth),
+            'Ñ' => Ok(Latin1Supplement::LatinCapitalLetterNWithTilde),
+            'Ò' => Ok(Latin1Supplement::LatinCapitalLetterOWithGrave),
+            'Ó' => Ok(Latin1Supplement::LatinCapitalLetterOWithAcute),
+            'Ô' => Ok(Latin1Supplement::LatinCapitalLetterOWithCircumflex),
+            'Õ' => Ok(Latin1Supplement::LatinCapitalLetterOWithTilde),
+            'Ö' => Ok(Latin1Supplement::LatinCapitalLetterOWithDiaeresis),
+            '×' => Ok(Latin1Supplement::MultiplicationSign),
+            'Ø' => Ok(Latin1Supplement::LatinCapitalLetterOWithStroke),
+            'Ù' => Ok(Latin1Supplement::LatinCapitalLetterUWithGrave),
+            'Ú' => Ok(Latin1Supplement::LatinCapitalLetterUWithAcute),
+            'Û' => Ok(Latin1Supplement::LatinCapitalLetterUWithCircumflex),
+            'Ü' => Ok(Latin1Supplement::LatinCapitalLetterUWithDiaeresis),
+            'Ý' => Ok(Latin1Supplement::LatinCapitalLetterYWithAcute),
+            'Þ' => Ok(Latin1Supplement::LatinCapitalLetterThorn),
+            'ß' => Ok(Latin1Supplement::LatinSmallLetterSharpS),
+            'à' => Ok(Latin1Supplement::LatinSmallLetterAWithGrave),
+            'á' => Ok(Latin1Supplement::LatinSmallLetterAWithAcute),
+            'â' => Ok(Latin1Supplement::LatinSmallLetterAWithCircumflex),
+            'ã' => Ok(Latin1Supplement::LatinSmallLetterAWithTilde),
+            'ä' => Ok(Latin1Supplement::LatinSmallLetterAWithDiaeresis),
+            'å' => Ok(Latin1Supplement::LatinSmallLetterAWithRingAbove),
+            'æ' => Ok(Latin1Supplement::LatinSmallLetterAe),
+            'ç' => Ok(Latin1Supplement::LatinSmallLetterCWithCedilla),
+            'è' => Ok(Latin1Supplement::LatinSmallLetterEWithGrave),
+            'é' => Ok(Latin1Supplement::LatinSmallLetterEWithAcute),
+            'ê' => Ok(Latin1Supplement::LatinSmallLetterEWithCircumflex),
+            'ë' => Ok(Latin1Supplement::LatinSmallLetterEWithDiaeresis),
+            'ì' => Ok(Latin1Supplement::LatinSmallLetterIWithGrave),
+            'í' => Ok(Latin1Supplement::LatinSmallLetterIWithAcute),
+            'î' => Ok(Latin1Supplement::LatinSmallLetterIWithCircumflex),
+            'ï' => Ok(Latin1Supplement::LatinSmallLetterIWithDiaeresis),
+            'ð' => Ok(Latin1Supplement::LatinSmallLetterEth),
+            'ñ' => Ok(Latin1Supplement::LatinSmallLetterNWithTilde),
+            'ò' => Ok(Latin1Supplement::LatinSmallLetterOWithGrave),
+            'ó' => Ok(Latin1Supplement::LatinSmallLetterOWithAcute),
+            'ô' => Ok(Latin1Supplement::LatinSmallLetterOWithCircumflex),
+            'õ' => Ok(Latin1Supplement::LatinSmallLetterOWithTilde),
+            'ö' => Ok(Latin1Supplement::LatinSmallLetterOWithDiaeresis),
+            '÷' => Ok(Latin1Supplement::DivisionSign),
+            'ø' => Ok(Latin1Supplement::LatinSmallLetterOWithStroke),
+            'ù' => Ok(Latin1Supplement::LatinSmallLetterUWithGrave),
+            'ú' => Ok(Latin1Supplement::LatinSmallLetterUWithAcute),
+            'û' => Ok(Latin1Supplement::LatinSmallLetterUWithCircumflex),
+            'ü' => Ok(Latin1Supplement::LatinSmallLetterUWithDiaeresis),
+            'ý' => Ok(Latin1Supplement::LatinSmallLetterYWithAcute),
+            'þ' => Ok(Latin1Supplement::LatinSmallLetterThorn),
             _ => Err(()),
         }
     }

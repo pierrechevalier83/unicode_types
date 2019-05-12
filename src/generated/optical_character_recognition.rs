@@ -1,28 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2440}: '⑀'
-    pub const OCR_HOOK: char = '⑀';
-    /// \u{2441}: '⑁'
-    pub const OCR_CHAIR: char = '⑁';
-    /// \u{2442}: '⑂'
-    pub const OCR_FORK: char = '⑂';
-    /// \u{2443}: '⑃'
-    pub const OCR_INVERTED_FORK: char = '⑃';
-    /// \u{2444}: '⑄'
-    pub const OCR_BELT_BUCKLE: char = '⑄';
-    /// \u{2445}: '⑅'
-    pub const OCR_BOW_TIE: char = '⑅';
-    /// \u{2446}: '⑆'
-    pub const OCR_BRANCH_BANK_IDENTIFICATION: char = '⑆';
-    /// \u{2447}: '⑇'
-    pub const OCR_AMOUNT_OF_CHECK: char = '⑇';
-    /// \u{2448}: '⑈'
-    pub const OCR_DASH: char = '⑈';
-    /// \u{2449}: '⑉'
-    pub const OCR_CUSTOMER_ACCOUNT_NUMBER: char = '⑉';
-    /// \u{244a}: '⑊'
-    pub const OCR_DOUBLE_BACKSLASH: char = '⑊';
-}
 
 /// An enum to represent all characters in the OpticalCharacterRecognition block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -53,19 +28,18 @@ pub enum OpticalCharacterRecognition {
 
 impl Into<char> for OpticalCharacterRecognition {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            OpticalCharacterRecognition::OcrHook => OCR_HOOK,
-            OpticalCharacterRecognition::OcrChair => OCR_CHAIR,
-            OpticalCharacterRecognition::OcrFork => OCR_FORK,
-            OpticalCharacterRecognition::OcrInvertedFork => OCR_INVERTED_FORK,
-            OpticalCharacterRecognition::OcrBeltBuckle => OCR_BELT_BUCKLE,
-            OpticalCharacterRecognition::OcrBowTie => OCR_BOW_TIE,
-            OpticalCharacterRecognition::OcrBranchBankIdentification => OCR_BRANCH_BANK_IDENTIFICATION,
-            OpticalCharacterRecognition::OcrAmountOfCheck => OCR_AMOUNT_OF_CHECK,
-            OpticalCharacterRecognition::OcrDash => OCR_DASH,
-            OpticalCharacterRecognition::OcrCustomerAccountNumber => OCR_CUSTOMER_ACCOUNT_NUMBER,
-            OpticalCharacterRecognition::OcrDoubleBackslash => OCR_DOUBLE_BACKSLASH,
+            OpticalCharacterRecognition::OcrHook => '⑀',
+            OpticalCharacterRecognition::OcrChair => '⑁',
+            OpticalCharacterRecognition::OcrFork => '⑂',
+            OpticalCharacterRecognition::OcrInvertedFork => '⑃',
+            OpticalCharacterRecognition::OcrBeltBuckle => '⑄',
+            OpticalCharacterRecognition::OcrBowTie => '⑅',
+            OpticalCharacterRecognition::OcrBranchBankIdentification => '⑆',
+            OpticalCharacterRecognition::OcrAmountOfCheck => '⑇',
+            OpticalCharacterRecognition::OcrDash => '⑈',
+            OpticalCharacterRecognition::OcrCustomerAccountNumber => '⑉',
+            OpticalCharacterRecognition::OcrDoubleBackslash => '⑊',
         }
     }
 }
@@ -73,19 +47,18 @@ impl Into<char> for OpticalCharacterRecognition {
 impl std::convert::TryFrom<char> for OpticalCharacterRecognition {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            OCR_HOOK => Ok(OpticalCharacterRecognition::OcrHook),
-            OCR_CHAIR => Ok(OpticalCharacterRecognition::OcrChair),
-            OCR_FORK => Ok(OpticalCharacterRecognition::OcrFork),
-            OCR_INVERTED_FORK => Ok(OpticalCharacterRecognition::OcrInvertedFork),
-            OCR_BELT_BUCKLE => Ok(OpticalCharacterRecognition::OcrBeltBuckle),
-            OCR_BOW_TIE => Ok(OpticalCharacterRecognition::OcrBowTie),
-            OCR_BRANCH_BANK_IDENTIFICATION => Ok(OpticalCharacterRecognition::OcrBranchBankIdentification),
-            OCR_AMOUNT_OF_CHECK => Ok(OpticalCharacterRecognition::OcrAmountOfCheck),
-            OCR_DASH => Ok(OpticalCharacterRecognition::OcrDash),
-            OCR_CUSTOMER_ACCOUNT_NUMBER => Ok(OpticalCharacterRecognition::OcrCustomerAccountNumber),
-            OCR_DOUBLE_BACKSLASH => Ok(OpticalCharacterRecognition::OcrDoubleBackslash),
+            '⑀' => Ok(OpticalCharacterRecognition::OcrHook),
+            '⑁' => Ok(OpticalCharacterRecognition::OcrChair),
+            '⑂' => Ok(OpticalCharacterRecognition::OcrFork),
+            '⑃' => Ok(OpticalCharacterRecognition::OcrInvertedFork),
+            '⑄' => Ok(OpticalCharacterRecognition::OcrBeltBuckle),
+            '⑅' => Ok(OpticalCharacterRecognition::OcrBowTie),
+            '⑆' => Ok(OpticalCharacterRecognition::OcrBranchBankIdentification),
+            '⑇' => Ok(OpticalCharacterRecognition::OcrAmountOfCheck),
+            '⑈' => Ok(OpticalCharacterRecognition::OcrDash),
+            '⑉' => Ok(OpticalCharacterRecognition::OcrCustomerAccountNumber),
+            '⑊' => Ok(OpticalCharacterRecognition::OcrDoubleBackslash),
             _ => Err(()),
         }
     }

@@ -1,178 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{11300}: '𑌀'
-    pub const SIGN_COMBINING_ANUSVARA_ABOVE: char = '𑌀';
-    /// \u{11301}: '𑌁'
-    pub const SIGN_CANDRABINDU: char = '𑌁';
-    /// \u{11302}: '𑌂'
-    pub const SIGN_ANUSVARA: char = '𑌂';
-    /// \u{11303}: '𑌃'
-    pub const SIGN_VISARGA: char = '𑌃';
-    /// \u{11305}: '𑌅'
-    pub const LETTER_A: char = '𑌅';
-    /// \u{11306}: '𑌆'
-    pub const LETTER_AA: char = '𑌆';
-    /// \u{11307}: '𑌇'
-    pub const LETTER_I: char = '𑌇';
-    /// \u{11308}: '𑌈'
-    pub const LETTER_II: char = '𑌈';
-    /// \u{11309}: '𑌉'
-    pub const LETTER_U: char = '𑌉';
-    /// \u{1130a}: '𑌊'
-    pub const LETTER_UU: char = '𑌊';
-    /// \u{1130b}: '𑌋'
-    pub const LETTER_VOCALIC_R: char = '𑌋';
-    /// \u{1130c}: '𑌌'
-    pub const LETTER_VOCALIC_L: char = '𑌌';
-    /// \u{1130f}: '𑌏'
-    pub const LETTER_EE: char = '𑌏';
-    /// \u{11310}: '𑌐'
-    pub const LETTER_AI: char = '𑌐';
-    /// \u{11313}: '𑌓'
-    pub const LETTER_OO: char = '𑌓';
-    /// \u{11314}: '𑌔'
-    pub const LETTER_AU: char = '𑌔';
-    /// \u{11315}: '𑌕'
-    pub const LETTER_KA: char = '𑌕';
-    /// \u{11316}: '𑌖'
-    pub const LETTER_KHA: char = '𑌖';
-    /// \u{11317}: '𑌗'
-    pub const LETTER_GA: char = '𑌗';
-    /// \u{11318}: '𑌘'
-    pub const LETTER_GHA: char = '𑌘';
-    /// \u{11319}: '𑌙'
-    pub const LETTER_NGA: char = '𑌙';
-    /// \u{1131a}: '𑌚'
-    pub const LETTER_CA: char = '𑌚';
-    /// \u{1131b}: '𑌛'
-    pub const LETTER_CHA: char = '𑌛';
-    /// \u{1131c}: '𑌜'
-    pub const LETTER_JA: char = '𑌜';
-    /// \u{1131d}: '𑌝'
-    pub const LETTER_JHA: char = '𑌝';
-    /// \u{1131e}: '𑌞'
-    pub const LETTER_NYA: char = '𑌞';
-    /// \u{1131f}: '𑌟'
-    pub const LETTER_TTA: char = '𑌟';
-    /// \u{11320}: '𑌠'
-    pub const LETTER_TTHA: char = '𑌠';
-    /// \u{11321}: '𑌡'
-    pub const LETTER_DDA: char = '𑌡';
-    /// \u{11322}: '𑌢'
-    pub const LETTER_DDHA: char = '𑌢';
-    /// \u{11323}: '𑌣'
-    pub const LETTER_NNA: char = '𑌣';
-    /// \u{11324}: '𑌤'
-    pub const LETTER_TA: char = '𑌤';
-    /// \u{11325}: '𑌥'
-    pub const LETTER_THA: char = '𑌥';
-    /// \u{11326}: '𑌦'
-    pub const LETTER_DA: char = '𑌦';
-    /// \u{11327}: '𑌧'
-    pub const LETTER_DHA: char = '𑌧';
-    /// \u{11328}: '𑌨'
-    pub const LETTER_NA: char = '𑌨';
-    /// \u{1132a}: '𑌪'
-    pub const LETTER_PA: char = '𑌪';
-    /// \u{1132b}: '𑌫'
-    pub const LETTER_PHA: char = '𑌫';
-    /// \u{1132c}: '𑌬'
-    pub const LETTER_BA: char = '𑌬';
-    /// \u{1132d}: '𑌭'
-    pub const LETTER_BHA: char = '𑌭';
-    /// \u{1132e}: '𑌮'
-    pub const LETTER_MA: char = '𑌮';
-    /// \u{1132f}: '𑌯'
-    pub const LETTER_YA: char = '𑌯';
-    /// \u{11330}: '𑌰'
-    pub const LETTER_RA: char = '𑌰';
-    /// \u{11332}: '𑌲'
-    pub const LETTER_LA: char = '𑌲';
-    /// \u{11333}: '𑌳'
-    pub const LETTER_LLA: char = '𑌳';
-    /// \u{11335}: '𑌵'
-    pub const LETTER_VA: char = '𑌵';
-    /// \u{11336}: '𑌶'
-    pub const LETTER_SHA: char = '𑌶';
-    /// \u{11337}: '𑌷'
-    pub const LETTER_SSA: char = '𑌷';
-    /// \u{11338}: '𑌸'
-    pub const LETTER_SA: char = '𑌸';
-    /// \u{11339}: '𑌹'
-    pub const LETTER_HA: char = '𑌹';
-    /// \u{1133b}: '𑌻'
-    pub const COMBINING_BINDU_BELOW: char = '𑌻';
-    /// \u{1133c}: '𑌼'
-    pub const SIGN_NUKTA: char = '𑌼';
-    /// \u{1133d}: '𑌽'
-    pub const SIGN_AVAGRAHA: char = '𑌽';
-    /// \u{1133e}: '𑌾'
-    pub const VOWEL_SIGN_AA: char = '𑌾';
-    /// \u{1133f}: '𑌿'
-    pub const VOWEL_SIGN_I: char = '𑌿';
-    /// \u{11340}: '𑍀'
-    pub const VOWEL_SIGN_II: char = '𑍀';
-    /// \u{11341}: '𑍁'
-    pub const VOWEL_SIGN_U: char = '𑍁';
-    /// \u{11342}: '𑍂'
-    pub const VOWEL_SIGN_UU: char = '𑍂';
-    /// \u{11343}: '𑍃'
-    pub const VOWEL_SIGN_VOCALIC_R: char = '𑍃';
-    /// \u{11344}: '𑍄'
-    pub const VOWEL_SIGN_VOCALIC_RR: char = '𑍄';
-    /// \u{11347}: '𑍇'
-    pub const VOWEL_SIGN_EE: char = '𑍇';
-    /// \u{11348}: '𑍈'
-    pub const VOWEL_SIGN_AI: char = '𑍈';
-    /// \u{1134b}: '𑍋'
-    pub const VOWEL_SIGN_OO: char = '𑍋';
-    /// \u{1134c}: '𑍌'
-    pub const VOWEL_SIGN_AU: char = '𑍌';
-    /// \u{1134d}: '𑍍'
-    pub const SIGN_VIRAMA: char = '𑍍';
-    /// \u{11350}: '𑍐'
-    pub const OM: char = '𑍐';
-    /// \u{11357}: '𑍗'
-    pub const AU_LENGTH_MARK: char = '𑍗';
-    /// \u{1135d}: '𑍝'
-    pub const SIGN_PLUTA: char = '𑍝';
-    /// \u{1135e}: '𑍞'
-    pub const LETTER_VEDIC_ANUSVARA: char = '𑍞';
-    /// \u{1135f}: '𑍟'
-    pub const LETTER_VEDIC_DOUBLE_ANUSVARA: char = '𑍟';
-    /// \u{11360}: '𑍠'
-    pub const LETTER_VOCALIC_RR: char = '𑍠';
-    /// \u{11361}: '𑍡'
-    pub const LETTER_VOCALIC_LL: char = '𑍡';
-    /// \u{11362}: '𑍢'
-    pub const VOWEL_SIGN_VOCALIC_L: char = '𑍢';
-    /// \u{11363}: '𑍣'
-    pub const VOWEL_SIGN_VOCALIC_LL: char = '𑍣';
-    /// \u{11366}: '𑍦'
-    pub const COMBINING_DIGIT_ZERO: char = '𑍦';
-    /// \u{11367}: '𑍧'
-    pub const COMBINING_DIGIT_ONE: char = '𑍧';
-    /// \u{11368}: '𑍨'
-    pub const COMBINING_DIGIT_TWO: char = '𑍨';
-    /// \u{11369}: '𑍩'
-    pub const COMBINING_DIGIT_THREE: char = '𑍩';
-    /// \u{1136a}: '𑍪'
-    pub const COMBINING_DIGIT_FOUR: char = '𑍪';
-    /// \u{1136b}: '𑍫'
-    pub const COMBINING_DIGIT_FIVE: char = '𑍫';
-    /// \u{1136c}: '𑍬'
-    pub const COMBINING_DIGIT_SIX: char = '𑍬';
-    /// \u{11370}: '𑍰'
-    pub const COMBINING_LETTER_A: char = '𑍰';
-    /// \u{11371}: '𑍱'
-    pub const COMBINING_LETTER_KA: char = '𑍱';
-    /// \u{11372}: '𑍲'
-    pub const COMBINING_LETTER_NA: char = '𑍲';
-    /// \u{11373}: '𑍳'
-    pub const COMBINING_LETTER_VI: char = '𑍳';
-    /// \u{11374}: '𑍴'
-    pub const COMBINING_LETTER_PA: char = '𑍴';
-}
 
 /// An enum to represent all characters in the Grantha block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -353,94 +178,93 @@ pub enum Grantha {
 
 impl Into<char> for Grantha {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Grantha::SignCombiningAnusvaraAbove => SIGN_COMBINING_ANUSVARA_ABOVE,
-            Grantha::SignCandrabindu => SIGN_CANDRABINDU,
-            Grantha::SignAnusvara => SIGN_ANUSVARA,
-            Grantha::SignVisarga => SIGN_VISARGA,
-            Grantha::LetterA => LETTER_A,
-            Grantha::LetterAa => LETTER_AA,
-            Grantha::LetterI => LETTER_I,
-            Grantha::LetterIi => LETTER_II,
-            Grantha::LetterU => LETTER_U,
-            Grantha::LetterUu => LETTER_UU,
-            Grantha::LetterVocalicR => LETTER_VOCALIC_R,
-            Grantha::LetterVocalicL => LETTER_VOCALIC_L,
-            Grantha::LetterEe => LETTER_EE,
-            Grantha::LetterAi => LETTER_AI,
-            Grantha::LetterOo => LETTER_OO,
-            Grantha::LetterAu => LETTER_AU,
-            Grantha::LetterKa => LETTER_KA,
-            Grantha::LetterKha => LETTER_KHA,
-            Grantha::LetterGa => LETTER_GA,
-            Grantha::LetterGha => LETTER_GHA,
-            Grantha::LetterNga => LETTER_NGA,
-            Grantha::LetterCa => LETTER_CA,
-            Grantha::LetterCha => LETTER_CHA,
-            Grantha::LetterJa => LETTER_JA,
-            Grantha::LetterJha => LETTER_JHA,
-            Grantha::LetterNya => LETTER_NYA,
-            Grantha::LetterTta => LETTER_TTA,
-            Grantha::LetterTtha => LETTER_TTHA,
-            Grantha::LetterDda => LETTER_DDA,
-            Grantha::LetterDdha => LETTER_DDHA,
-            Grantha::LetterNna => LETTER_NNA,
-            Grantha::LetterTa => LETTER_TA,
-            Grantha::LetterTha => LETTER_THA,
-            Grantha::LetterDa => LETTER_DA,
-            Grantha::LetterDha => LETTER_DHA,
-            Grantha::LetterNa => LETTER_NA,
-            Grantha::LetterPa => LETTER_PA,
-            Grantha::LetterPha => LETTER_PHA,
-            Grantha::LetterBa => LETTER_BA,
-            Grantha::LetterBha => LETTER_BHA,
-            Grantha::LetterMa => LETTER_MA,
-            Grantha::LetterYa => LETTER_YA,
-            Grantha::LetterRa => LETTER_RA,
-            Grantha::LetterLa => LETTER_LA,
-            Grantha::LetterLla => LETTER_LLA,
-            Grantha::LetterVa => LETTER_VA,
-            Grantha::LetterSha => LETTER_SHA,
-            Grantha::LetterSsa => LETTER_SSA,
-            Grantha::LetterSa => LETTER_SA,
-            Grantha::LetterHa => LETTER_HA,
-            Grantha::CombiningBinduBelow => COMBINING_BINDU_BELOW,
-            Grantha::SignNukta => SIGN_NUKTA,
-            Grantha::SignAvagraha => SIGN_AVAGRAHA,
-            Grantha::VowelSignAa => VOWEL_SIGN_AA,
-            Grantha::VowelSignI => VOWEL_SIGN_I,
-            Grantha::VowelSignIi => VOWEL_SIGN_II,
-            Grantha::VowelSignU => VOWEL_SIGN_U,
-            Grantha::VowelSignUu => VOWEL_SIGN_UU,
-            Grantha::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
-            Grantha::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
-            Grantha::VowelSignEe => VOWEL_SIGN_EE,
-            Grantha::VowelSignAi => VOWEL_SIGN_AI,
-            Grantha::VowelSignOo => VOWEL_SIGN_OO,
-            Grantha::VowelSignAu => VOWEL_SIGN_AU,
-            Grantha::SignVirama => SIGN_VIRAMA,
-            Grantha::Om => OM,
-            Grantha::AuLengthMark => AU_LENGTH_MARK,
-            Grantha::SignPluta => SIGN_PLUTA,
-            Grantha::LetterVedicAnusvara => LETTER_VEDIC_ANUSVARA,
-            Grantha::LetterVedicDoubleAnusvara => LETTER_VEDIC_DOUBLE_ANUSVARA,
-            Grantha::LetterVocalicRr => LETTER_VOCALIC_RR,
-            Grantha::LetterVocalicLl => LETTER_VOCALIC_LL,
-            Grantha::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
-            Grantha::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
-            Grantha::CombiningDigitZero => COMBINING_DIGIT_ZERO,
-            Grantha::CombiningDigitOne => COMBINING_DIGIT_ONE,
-            Grantha::CombiningDigitTwo => COMBINING_DIGIT_TWO,
-            Grantha::CombiningDigitThree => COMBINING_DIGIT_THREE,
-            Grantha::CombiningDigitFour => COMBINING_DIGIT_FOUR,
-            Grantha::CombiningDigitFive => COMBINING_DIGIT_FIVE,
-            Grantha::CombiningDigitSix => COMBINING_DIGIT_SIX,
-            Grantha::CombiningLetterA => COMBINING_LETTER_A,
-            Grantha::CombiningLetterKa => COMBINING_LETTER_KA,
-            Grantha::CombiningLetterNa => COMBINING_LETTER_NA,
-            Grantha::CombiningLetterVi => COMBINING_LETTER_VI,
-            Grantha::CombiningLetterPa => COMBINING_LETTER_PA,
+            Grantha::SignCombiningAnusvaraAbove => '𑌀',
+            Grantha::SignCandrabindu => '𑌁',
+            Grantha::SignAnusvara => '𑌂',
+            Grantha::SignVisarga => '𑌃',
+            Grantha::LetterA => '𑌅',
+            Grantha::LetterAa => '𑌆',
+            Grantha::LetterI => '𑌇',
+            Grantha::LetterIi => '𑌈',
+            Grantha::LetterU => '𑌉',
+            Grantha::LetterUu => '𑌊',
+            Grantha::LetterVocalicR => '𑌋',
+            Grantha::LetterVocalicL => '𑌌',
+            Grantha::LetterEe => '𑌏',
+            Grantha::LetterAi => '𑌐',
+            Grantha::LetterOo => '𑌓',
+            Grantha::LetterAu => '𑌔',
+            Grantha::LetterKa => '𑌕',
+            Grantha::LetterKha => '𑌖',
+            Grantha::LetterGa => '𑌗',
+            Grantha::LetterGha => '𑌘',
+            Grantha::LetterNga => '𑌙',
+            Grantha::LetterCa => '𑌚',
+            Grantha::LetterCha => '𑌛',
+            Grantha::LetterJa => '𑌜',
+            Grantha::LetterJha => '𑌝',
+            Grantha::LetterNya => '𑌞',
+            Grantha::LetterTta => '𑌟',
+            Grantha::LetterTtha => '𑌠',
+            Grantha::LetterDda => '𑌡',
+            Grantha::LetterDdha => '𑌢',
+            Grantha::LetterNna => '𑌣',
+            Grantha::LetterTa => '𑌤',
+            Grantha::LetterTha => '𑌥',
+            Grantha::LetterDa => '𑌦',
+            Grantha::LetterDha => '𑌧',
+            Grantha::LetterNa => '𑌨',
+            Grantha::LetterPa => '𑌪',
+            Grantha::LetterPha => '𑌫',
+            Grantha::LetterBa => '𑌬',
+            Grantha::LetterBha => '𑌭',
+            Grantha::LetterMa => '𑌮',
+            Grantha::LetterYa => '𑌯',
+            Grantha::LetterRa => '𑌰',
+            Grantha::LetterLa => '𑌲',
+            Grantha::LetterLla => '𑌳',
+            Grantha::LetterVa => '𑌵',
+            Grantha::LetterSha => '𑌶',
+            Grantha::LetterSsa => '𑌷',
+            Grantha::LetterSa => '𑌸',
+            Grantha::LetterHa => '𑌹',
+            Grantha::CombiningBinduBelow => '𑌻',
+            Grantha::SignNukta => '𑌼',
+            Grantha::SignAvagraha => '𑌽',
+            Grantha::VowelSignAa => '𑌾',
+            Grantha::VowelSignI => '𑌿',
+            Grantha::VowelSignIi => '𑍀',
+            Grantha::VowelSignU => '𑍁',
+            Grantha::VowelSignUu => '𑍂',
+            Grantha::VowelSignVocalicR => '𑍃',
+            Grantha::VowelSignVocalicRr => '𑍄',
+            Grantha::VowelSignEe => '𑍇',
+            Grantha::VowelSignAi => '𑍈',
+            Grantha::VowelSignOo => '𑍋',
+            Grantha::VowelSignAu => '𑍌',
+            Grantha::SignVirama => '𑍍',
+            Grantha::Om => '𑍐',
+            Grantha::AuLengthMark => '𑍗',
+            Grantha::SignPluta => '𑍝',
+            Grantha::LetterVedicAnusvara => '𑍞',
+            Grantha::LetterVedicDoubleAnusvara => '𑍟',
+            Grantha::LetterVocalicRr => '𑍠',
+            Grantha::LetterVocalicLl => '𑍡',
+            Grantha::VowelSignVocalicL => '𑍢',
+            Grantha::VowelSignVocalicLl => '𑍣',
+            Grantha::CombiningDigitZero => '𑍦',
+            Grantha::CombiningDigitOne => '𑍧',
+            Grantha::CombiningDigitTwo => '𑍨',
+            Grantha::CombiningDigitThree => '𑍩',
+            Grantha::CombiningDigitFour => '𑍪',
+            Grantha::CombiningDigitFive => '𑍫',
+            Grantha::CombiningDigitSix => '𑍬',
+            Grantha::CombiningLetterA => '𑍰',
+            Grantha::CombiningLetterKa => '𑍱',
+            Grantha::CombiningLetterNa => '𑍲',
+            Grantha::CombiningLetterVi => '𑍳',
+            Grantha::CombiningLetterPa => '𑍴',
         }
     }
 }
@@ -448,94 +272,93 @@ impl Into<char> for Grantha {
 impl std::convert::TryFrom<char> for Grantha {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            SIGN_COMBINING_ANUSVARA_ABOVE => Ok(Grantha::SignCombiningAnusvaraAbove),
-            SIGN_CANDRABINDU => Ok(Grantha::SignCandrabindu),
-            SIGN_ANUSVARA => Ok(Grantha::SignAnusvara),
-            SIGN_VISARGA => Ok(Grantha::SignVisarga),
-            LETTER_A => Ok(Grantha::LetterA),
-            LETTER_AA => Ok(Grantha::LetterAa),
-            LETTER_I => Ok(Grantha::LetterI),
-            LETTER_II => Ok(Grantha::LetterIi),
-            LETTER_U => Ok(Grantha::LetterU),
-            LETTER_UU => Ok(Grantha::LetterUu),
-            LETTER_VOCALIC_R => Ok(Grantha::LetterVocalicR),
-            LETTER_VOCALIC_L => Ok(Grantha::LetterVocalicL),
-            LETTER_EE => Ok(Grantha::LetterEe),
-            LETTER_AI => Ok(Grantha::LetterAi),
-            LETTER_OO => Ok(Grantha::LetterOo),
-            LETTER_AU => Ok(Grantha::LetterAu),
-            LETTER_KA => Ok(Grantha::LetterKa),
-            LETTER_KHA => Ok(Grantha::LetterKha),
-            LETTER_GA => Ok(Grantha::LetterGa),
-            LETTER_GHA => Ok(Grantha::LetterGha),
-            LETTER_NGA => Ok(Grantha::LetterNga),
-            LETTER_CA => Ok(Grantha::LetterCa),
-            LETTER_CHA => Ok(Grantha::LetterCha),
-            LETTER_JA => Ok(Grantha::LetterJa),
-            LETTER_JHA => Ok(Grantha::LetterJha),
-            LETTER_NYA => Ok(Grantha::LetterNya),
-            LETTER_TTA => Ok(Grantha::LetterTta),
-            LETTER_TTHA => Ok(Grantha::LetterTtha),
-            LETTER_DDA => Ok(Grantha::LetterDda),
-            LETTER_DDHA => Ok(Grantha::LetterDdha),
-            LETTER_NNA => Ok(Grantha::LetterNna),
-            LETTER_TA => Ok(Grantha::LetterTa),
-            LETTER_THA => Ok(Grantha::LetterTha),
-            LETTER_DA => Ok(Grantha::LetterDa),
-            LETTER_DHA => Ok(Grantha::LetterDha),
-            LETTER_NA => Ok(Grantha::LetterNa),
-            LETTER_PA => Ok(Grantha::LetterPa),
-            LETTER_PHA => Ok(Grantha::LetterPha),
-            LETTER_BA => Ok(Grantha::LetterBa),
-            LETTER_BHA => Ok(Grantha::LetterBha),
-            LETTER_MA => Ok(Grantha::LetterMa),
-            LETTER_YA => Ok(Grantha::LetterYa),
-            LETTER_RA => Ok(Grantha::LetterRa),
-            LETTER_LA => Ok(Grantha::LetterLa),
-            LETTER_LLA => Ok(Grantha::LetterLla),
-            LETTER_VA => Ok(Grantha::LetterVa),
-            LETTER_SHA => Ok(Grantha::LetterSha),
-            LETTER_SSA => Ok(Grantha::LetterSsa),
-            LETTER_SA => Ok(Grantha::LetterSa),
-            LETTER_HA => Ok(Grantha::LetterHa),
-            COMBINING_BINDU_BELOW => Ok(Grantha::CombiningBinduBelow),
-            SIGN_NUKTA => Ok(Grantha::SignNukta),
-            SIGN_AVAGRAHA => Ok(Grantha::SignAvagraha),
-            VOWEL_SIGN_AA => Ok(Grantha::VowelSignAa),
-            VOWEL_SIGN_I => Ok(Grantha::VowelSignI),
-            VOWEL_SIGN_II => Ok(Grantha::VowelSignIi),
-            VOWEL_SIGN_U => Ok(Grantha::VowelSignU),
-            VOWEL_SIGN_UU => Ok(Grantha::VowelSignUu),
-            VOWEL_SIGN_VOCALIC_R => Ok(Grantha::VowelSignVocalicR),
-            VOWEL_SIGN_VOCALIC_RR => Ok(Grantha::VowelSignVocalicRr),
-            VOWEL_SIGN_EE => Ok(Grantha::VowelSignEe),
-            VOWEL_SIGN_AI => Ok(Grantha::VowelSignAi),
-            VOWEL_SIGN_OO => Ok(Grantha::VowelSignOo),
-            VOWEL_SIGN_AU => Ok(Grantha::VowelSignAu),
-            SIGN_VIRAMA => Ok(Grantha::SignVirama),
-            OM => Ok(Grantha::Om),
-            AU_LENGTH_MARK => Ok(Grantha::AuLengthMark),
-            SIGN_PLUTA => Ok(Grantha::SignPluta),
-            LETTER_VEDIC_ANUSVARA => Ok(Grantha::LetterVedicAnusvara),
-            LETTER_VEDIC_DOUBLE_ANUSVARA => Ok(Grantha::LetterVedicDoubleAnusvara),
-            LETTER_VOCALIC_RR => Ok(Grantha::LetterVocalicRr),
-            LETTER_VOCALIC_LL => Ok(Grantha::LetterVocalicLl),
-            VOWEL_SIGN_VOCALIC_L => Ok(Grantha::VowelSignVocalicL),
-            VOWEL_SIGN_VOCALIC_LL => Ok(Grantha::VowelSignVocalicLl),
-            COMBINING_DIGIT_ZERO => Ok(Grantha::CombiningDigitZero),
-            COMBINING_DIGIT_ONE => Ok(Grantha::CombiningDigitOne),
-            COMBINING_DIGIT_TWO => Ok(Grantha::CombiningDigitTwo),
-            COMBINING_DIGIT_THREE => Ok(Grantha::CombiningDigitThree),
-            COMBINING_DIGIT_FOUR => Ok(Grantha::CombiningDigitFour),
-            COMBINING_DIGIT_FIVE => Ok(Grantha::CombiningDigitFive),
-            COMBINING_DIGIT_SIX => Ok(Grantha::CombiningDigitSix),
-            COMBINING_LETTER_A => Ok(Grantha::CombiningLetterA),
-            COMBINING_LETTER_KA => Ok(Grantha::CombiningLetterKa),
-            COMBINING_LETTER_NA => Ok(Grantha::CombiningLetterNa),
-            COMBINING_LETTER_VI => Ok(Grantha::CombiningLetterVi),
-            COMBINING_LETTER_PA => Ok(Grantha::CombiningLetterPa),
+            '𑌀' => Ok(Grantha::SignCombiningAnusvaraAbove),
+            '𑌁' => Ok(Grantha::SignCandrabindu),
+            '𑌂' => Ok(Grantha::SignAnusvara),
+            '𑌃' => Ok(Grantha::SignVisarga),
+            '𑌅' => Ok(Grantha::LetterA),
+            '𑌆' => Ok(Grantha::LetterAa),
+            '𑌇' => Ok(Grantha::LetterI),
+            '𑌈' => Ok(Grantha::LetterIi),
+            '𑌉' => Ok(Grantha::LetterU),
+            '𑌊' => Ok(Grantha::LetterUu),
+            '𑌋' => Ok(Grantha::LetterVocalicR),
+            '𑌌' => Ok(Grantha::LetterVocalicL),
+            '𑌏' => Ok(Grantha::LetterEe),
+            '𑌐' => Ok(Grantha::LetterAi),
+            '𑌓' => Ok(Grantha::LetterOo),
+            '𑌔' => Ok(Grantha::LetterAu),
+            '𑌕' => Ok(Grantha::LetterKa),
+            '𑌖' => Ok(Grantha::LetterKha),
+            '𑌗' => Ok(Grantha::LetterGa),
+            '𑌘' => Ok(Grantha::LetterGha),
+            '𑌙' => Ok(Grantha::LetterNga),
+            '𑌚' => Ok(Grantha::LetterCa),
+            '𑌛' => Ok(Grantha::LetterCha),
+            '𑌜' => Ok(Grantha::LetterJa),
+            '𑌝' => Ok(Grantha::LetterJha),
+            '𑌞' => Ok(Grantha::LetterNya),
+            '𑌟' => Ok(Grantha::LetterTta),
+            '𑌠' => Ok(Grantha::LetterTtha),
+            '𑌡' => Ok(Grantha::LetterDda),
+            '𑌢' => Ok(Grantha::LetterDdha),
+            '𑌣' => Ok(Grantha::LetterNna),
+            '𑌤' => Ok(Grantha::LetterTa),
+            '𑌥' => Ok(Grantha::LetterTha),
+            '𑌦' => Ok(Grantha::LetterDa),
+            '𑌧' => Ok(Grantha::LetterDha),
+            '𑌨' => Ok(Grantha::LetterNa),
+            '𑌪' => Ok(Grantha::LetterPa),
+            '𑌫' => Ok(Grantha::LetterPha),
+            '𑌬' => Ok(Grantha::LetterBa),
+            '𑌭' => Ok(Grantha::LetterBha),
+            '𑌮' => Ok(Grantha::LetterMa),
+            '𑌯' => Ok(Grantha::LetterYa),
+            '𑌰' => Ok(Grantha::LetterRa),
+            '𑌲' => Ok(Grantha::LetterLa),
+            '𑌳' => Ok(Grantha::LetterLla),
+            '𑌵' => Ok(Grantha::LetterVa),
+            '𑌶' => Ok(Grantha::LetterSha),
+            '𑌷' => Ok(Grantha::LetterSsa),
+            '𑌸' => Ok(Grantha::LetterSa),
+            '𑌹' => Ok(Grantha::LetterHa),
+            '𑌻' => Ok(Grantha::CombiningBinduBelow),
+            '𑌼' => Ok(Grantha::SignNukta),
+            '𑌽' => Ok(Grantha::SignAvagraha),
+            '𑌾' => Ok(Grantha::VowelSignAa),
+            '𑌿' => Ok(Grantha::VowelSignI),
+            '𑍀' => Ok(Grantha::VowelSignIi),
+            '𑍁' => Ok(Grantha::VowelSignU),
+            '𑍂' => Ok(Grantha::VowelSignUu),
+            '𑍃' => Ok(Grantha::VowelSignVocalicR),
+            '𑍄' => Ok(Grantha::VowelSignVocalicRr),
+            '𑍇' => Ok(Grantha::VowelSignEe),
+            '𑍈' => Ok(Grantha::VowelSignAi),
+            '𑍋' => Ok(Grantha::VowelSignOo),
+            '𑍌' => Ok(Grantha::VowelSignAu),
+            '𑍍' => Ok(Grantha::SignVirama),
+            '𑍐' => Ok(Grantha::Om),
+            '𑍗' => Ok(Grantha::AuLengthMark),
+            '𑍝' => Ok(Grantha::SignPluta),
+            '𑍞' => Ok(Grantha::LetterVedicAnusvara),
+            '𑍟' => Ok(Grantha::LetterVedicDoubleAnusvara),
+            '𑍠' => Ok(Grantha::LetterVocalicRr),
+            '𑍡' => Ok(Grantha::LetterVocalicLl),
+            '𑍢' => Ok(Grantha::VowelSignVocalicL),
+            '𑍣' => Ok(Grantha::VowelSignVocalicLl),
+            '𑍦' => Ok(Grantha::CombiningDigitZero),
+            '𑍧' => Ok(Grantha::CombiningDigitOne),
+            '𑍨' => Ok(Grantha::CombiningDigitTwo),
+            '𑍩' => Ok(Grantha::CombiningDigitThree),
+            '𑍪' => Ok(Grantha::CombiningDigitFour),
+            '𑍫' => Ok(Grantha::CombiningDigitFive),
+            '𑍬' => Ok(Grantha::CombiningDigitSix),
+            '𑍰' => Ok(Grantha::CombiningLetterA),
+            '𑍱' => Ok(Grantha::CombiningLetterKa),
+            '𑍲' => Ok(Grantha::CombiningLetterNa),
+            '𑍳' => Ok(Grantha::CombiningLetterVi),
+            '𑍴' => Ok(Grantha::CombiningLetterPa),
             _ => Err(()),
         }
     }

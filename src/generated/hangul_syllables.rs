@@ -1,10 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{ac00}: '가'
-    pub const HANGUL_SYLLABLE_FIRST: char = '가';
-    /// \u{d7a3}: '힣'
-    pub const HANGUL_SYLLABLE_LAST: char = '힣';
-}
 
 /// An enum to represent all characters in the HangulSyllables block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -17,10 +10,9 @@ pub enum HangulSyllables {
 
 impl Into<char> for HangulSyllables {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            HangulSyllables::HangulSyllableFirst => HANGUL_SYLLABLE_FIRST,
-            HangulSyllables::HangulSyllableLast => HANGUL_SYLLABLE_LAST,
+            HangulSyllables::HangulSyllableFirst => '가',
+            HangulSyllables::HangulSyllableLast => '힣',
         }
     }
 }
@@ -28,10 +20,9 @@ impl Into<char> for HangulSyllables {
 impl std::convert::TryFrom<char> for HangulSyllables {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            HANGUL_SYLLABLE_FIRST => Ok(HangulSyllables::HangulSyllableFirst),
-            HANGUL_SYLLABLE_LAST => Ok(HangulSyllables::HangulSyllableLast),
+            '가' => Ok(HangulSyllables::HangulSyllableFirst),
+            '힣' => Ok(HangulSyllables::HangulSyllableLast),
             _ => Err(()),
         }
     }

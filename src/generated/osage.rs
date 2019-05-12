@@ -1,150 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{104b0}: '𐒰'
-    pub const CAPITAL_LETTER_A: char = '𐒰';
-    /// \u{104b1}: '𐒱'
-    pub const CAPITAL_LETTER_AI: char = '𐒱';
-    /// \u{104b2}: '𐒲'
-    pub const CAPITAL_LETTER_AIN: char = '𐒲';
-    /// \u{104b3}: '𐒳'
-    pub const CAPITAL_LETTER_AH: char = '𐒳';
-    /// \u{104b4}: '𐒴'
-    pub const CAPITAL_LETTER_BRA: char = '𐒴';
-    /// \u{104b5}: '𐒵'
-    pub const CAPITAL_LETTER_CHA: char = '𐒵';
-    /// \u{104b6}: '𐒶'
-    pub const CAPITAL_LETTER_EHCHA: char = '𐒶';
-    /// \u{104b7}: '𐒷'
-    pub const CAPITAL_LETTER_E: char = '𐒷';
-    /// \u{104b8}: '𐒸'
-    pub const CAPITAL_LETTER_EIN: char = '𐒸';
-    /// \u{104b9}: '𐒹'
-    pub const CAPITAL_LETTER_HA: char = '𐒹';
-    /// \u{104ba}: '𐒺'
-    pub const CAPITAL_LETTER_HYA: char = '𐒺';
-    /// \u{104bb}: '𐒻'
-    pub const CAPITAL_LETTER_I: char = '𐒻';
-    /// \u{104bc}: '𐒼'
-    pub const CAPITAL_LETTER_KA: char = '𐒼';
-    /// \u{104bd}: '𐒽'
-    pub const CAPITAL_LETTER_EHKA: char = '𐒽';
-    /// \u{104be}: '𐒾'
-    pub const CAPITAL_LETTER_KYA: char = '𐒾';
-    /// \u{104bf}: '𐒿'
-    pub const CAPITAL_LETTER_LA: char = '𐒿';
-    /// \u{104c0}: '𐓀'
-    pub const CAPITAL_LETTER_MA: char = '𐓀';
-    /// \u{104c1}: '𐓁'
-    pub const CAPITAL_LETTER_NA: char = '𐓁';
-    /// \u{104c2}: '𐓂'
-    pub const CAPITAL_LETTER_O: char = '𐓂';
-    /// \u{104c3}: '𐓃'
-    pub const CAPITAL_LETTER_OIN: char = '𐓃';
-    /// \u{104c4}: '𐓄'
-    pub const CAPITAL_LETTER_PA: char = '𐓄';
-    /// \u{104c5}: '𐓅'
-    pub const CAPITAL_LETTER_EHPA: char = '𐓅';
-    /// \u{104c6}: '𐓆'
-    pub const CAPITAL_LETTER_SA: char = '𐓆';
-    /// \u{104c7}: '𐓇'
-    pub const CAPITAL_LETTER_SHA: char = '𐓇';
-    /// \u{104c8}: '𐓈'
-    pub const CAPITAL_LETTER_TA: char = '𐓈';
-    /// \u{104c9}: '𐓉'
-    pub const CAPITAL_LETTER_EHTA: char = '𐓉';
-    /// \u{104ca}: '𐓊'
-    pub const CAPITAL_LETTER_TSA: char = '𐓊';
-    /// \u{104cb}: '𐓋'
-    pub const CAPITAL_LETTER_EHTSA: char = '𐓋';
-    /// \u{104cc}: '𐓌'
-    pub const CAPITAL_LETTER_TSHA: char = '𐓌';
-    /// \u{104cd}: '𐓍'
-    pub const CAPITAL_LETTER_DHA: char = '𐓍';
-    /// \u{104ce}: '𐓎'
-    pub const CAPITAL_LETTER_U: char = '𐓎';
-    /// \u{104cf}: '𐓏'
-    pub const CAPITAL_LETTER_WA: char = '𐓏';
-    /// \u{104d0}: '𐓐'
-    pub const CAPITAL_LETTER_KHA: char = '𐓐';
-    /// \u{104d1}: '𐓑'
-    pub const CAPITAL_LETTER_GHA: char = '𐓑';
-    /// \u{104d2}: '𐓒'
-    pub const CAPITAL_LETTER_ZA: char = '𐓒';
-    /// \u{104d3}: '𐓓'
-    pub const CAPITAL_LETTER_ZHA: char = '𐓓';
-    /// \u{104d8}: '𐓘'
-    pub const SMALL_LETTER_A: char = '𐓘';
-    /// \u{104d9}: '𐓙'
-    pub const SMALL_LETTER_AI: char = '𐓙';
-    /// \u{104da}: '𐓚'
-    pub const SMALL_LETTER_AIN: char = '𐓚';
-    /// \u{104db}: '𐓛'
-    pub const SMALL_LETTER_AH: char = '𐓛';
-    /// \u{104dc}: '𐓜'
-    pub const SMALL_LETTER_BRA: char = '𐓜';
-    /// \u{104dd}: '𐓝'
-    pub const SMALL_LETTER_CHA: char = '𐓝';
-    /// \u{104de}: '𐓞'
-    pub const SMALL_LETTER_EHCHA: char = '𐓞';
-    /// \u{104df}: '𐓟'
-    pub const SMALL_LETTER_E: char = '𐓟';
-    /// \u{104e0}: '𐓠'
-    pub const SMALL_LETTER_EIN: char = '𐓠';
-    /// \u{104e1}: '𐓡'
-    pub const SMALL_LETTER_HA: char = '𐓡';
-    /// \u{104e2}: '𐓢'
-    pub const SMALL_LETTER_HYA: char = '𐓢';
-    /// \u{104e3}: '𐓣'
-    pub const SMALL_LETTER_I: char = '𐓣';
-    /// \u{104e4}: '𐓤'
-    pub const SMALL_LETTER_KA: char = '𐓤';
-    /// \u{104e5}: '𐓥'
-    pub const SMALL_LETTER_EHKA: char = '𐓥';
-    /// \u{104e6}: '𐓦'
-    pub const SMALL_LETTER_KYA: char = '𐓦';
-    /// \u{104e7}: '𐓧'
-    pub const SMALL_LETTER_LA: char = '𐓧';
-    /// \u{104e8}: '𐓨'
-    pub const SMALL_LETTER_MA: char = '𐓨';
-    /// \u{104e9}: '𐓩'
-    pub const SMALL_LETTER_NA: char = '𐓩';
-    /// \u{104ea}: '𐓪'
-    pub const SMALL_LETTER_O: char = '𐓪';
-    /// \u{104eb}: '𐓫'
-    pub const SMALL_LETTER_OIN: char = '𐓫';
-    /// \u{104ec}: '𐓬'
-    pub const SMALL_LETTER_PA: char = '𐓬';
-    /// \u{104ed}: '𐓭'
-    pub const SMALL_LETTER_EHPA: char = '𐓭';
-    /// \u{104ee}: '𐓮'
-    pub const SMALL_LETTER_SA: char = '𐓮';
-    /// \u{104ef}: '𐓯'
-    pub const SMALL_LETTER_SHA: char = '𐓯';
-    /// \u{104f0}: '𐓰'
-    pub const SMALL_LETTER_TA: char = '𐓰';
-    /// \u{104f1}: '𐓱'
-    pub const SMALL_LETTER_EHTA: char = '𐓱';
-    /// \u{104f2}: '𐓲'
-    pub const SMALL_LETTER_TSA: char = '𐓲';
-    /// \u{104f3}: '𐓳'
-    pub const SMALL_LETTER_EHTSA: char = '𐓳';
-    /// \u{104f4}: '𐓴'
-    pub const SMALL_LETTER_TSHA: char = '𐓴';
-    /// \u{104f5}: '𐓵'
-    pub const SMALL_LETTER_DHA: char = '𐓵';
-    /// \u{104f6}: '𐓶'
-    pub const SMALL_LETTER_U: char = '𐓶';
-    /// \u{104f7}: '𐓷'
-    pub const SMALL_LETTER_WA: char = '𐓷';
-    /// \u{104f8}: '𐓸'
-    pub const SMALL_LETTER_KHA: char = '𐓸';
-    /// \u{104f9}: '𐓹'
-    pub const SMALL_LETTER_GHA: char = '𐓹';
-    /// \u{104fa}: '𐓺'
-    pub const SMALL_LETTER_ZA: char = '𐓺';
-    /// \u{104fb}: '𐓻'
-    pub const SMALL_LETTER_ZHA: char = '𐓻';
-}
 
 /// An enum to represent all characters in the Osage block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -297,80 +150,79 @@ pub enum Osage {
 
 impl Into<char> for Osage {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            Osage::CapitalLetterA => CAPITAL_LETTER_A,
-            Osage::CapitalLetterAi => CAPITAL_LETTER_AI,
-            Osage::CapitalLetterAin => CAPITAL_LETTER_AIN,
-            Osage::CapitalLetterAh => CAPITAL_LETTER_AH,
-            Osage::CapitalLetterBra => CAPITAL_LETTER_BRA,
-            Osage::CapitalLetterCha => CAPITAL_LETTER_CHA,
-            Osage::CapitalLetterEhcha => CAPITAL_LETTER_EHCHA,
-            Osage::CapitalLetterE => CAPITAL_LETTER_E,
-            Osage::CapitalLetterEin => CAPITAL_LETTER_EIN,
-            Osage::CapitalLetterHa => CAPITAL_LETTER_HA,
-            Osage::CapitalLetterHya => CAPITAL_LETTER_HYA,
-            Osage::CapitalLetterI => CAPITAL_LETTER_I,
-            Osage::CapitalLetterKa => CAPITAL_LETTER_KA,
-            Osage::CapitalLetterEhka => CAPITAL_LETTER_EHKA,
-            Osage::CapitalLetterKya => CAPITAL_LETTER_KYA,
-            Osage::CapitalLetterLa => CAPITAL_LETTER_LA,
-            Osage::CapitalLetterMa => CAPITAL_LETTER_MA,
-            Osage::CapitalLetterNa => CAPITAL_LETTER_NA,
-            Osage::CapitalLetterO => CAPITAL_LETTER_O,
-            Osage::CapitalLetterOin => CAPITAL_LETTER_OIN,
-            Osage::CapitalLetterPa => CAPITAL_LETTER_PA,
-            Osage::CapitalLetterEhpa => CAPITAL_LETTER_EHPA,
-            Osage::CapitalLetterSa => CAPITAL_LETTER_SA,
-            Osage::CapitalLetterSha => CAPITAL_LETTER_SHA,
-            Osage::CapitalLetterTa => CAPITAL_LETTER_TA,
-            Osage::CapitalLetterEhta => CAPITAL_LETTER_EHTA,
-            Osage::CapitalLetterTsa => CAPITAL_LETTER_TSA,
-            Osage::CapitalLetterEhtsa => CAPITAL_LETTER_EHTSA,
-            Osage::CapitalLetterTsha => CAPITAL_LETTER_TSHA,
-            Osage::CapitalLetterDha => CAPITAL_LETTER_DHA,
-            Osage::CapitalLetterU => CAPITAL_LETTER_U,
-            Osage::CapitalLetterWa => CAPITAL_LETTER_WA,
-            Osage::CapitalLetterKha => CAPITAL_LETTER_KHA,
-            Osage::CapitalLetterGha => CAPITAL_LETTER_GHA,
-            Osage::CapitalLetterZa => CAPITAL_LETTER_ZA,
-            Osage::CapitalLetterZha => CAPITAL_LETTER_ZHA,
-            Osage::SmallLetterA => SMALL_LETTER_A,
-            Osage::SmallLetterAi => SMALL_LETTER_AI,
-            Osage::SmallLetterAin => SMALL_LETTER_AIN,
-            Osage::SmallLetterAh => SMALL_LETTER_AH,
-            Osage::SmallLetterBra => SMALL_LETTER_BRA,
-            Osage::SmallLetterCha => SMALL_LETTER_CHA,
-            Osage::SmallLetterEhcha => SMALL_LETTER_EHCHA,
-            Osage::SmallLetterE => SMALL_LETTER_E,
-            Osage::SmallLetterEin => SMALL_LETTER_EIN,
-            Osage::SmallLetterHa => SMALL_LETTER_HA,
-            Osage::SmallLetterHya => SMALL_LETTER_HYA,
-            Osage::SmallLetterI => SMALL_LETTER_I,
-            Osage::SmallLetterKa => SMALL_LETTER_KA,
-            Osage::SmallLetterEhka => SMALL_LETTER_EHKA,
-            Osage::SmallLetterKya => SMALL_LETTER_KYA,
-            Osage::SmallLetterLa => SMALL_LETTER_LA,
-            Osage::SmallLetterMa => SMALL_LETTER_MA,
-            Osage::SmallLetterNa => SMALL_LETTER_NA,
-            Osage::SmallLetterO => SMALL_LETTER_O,
-            Osage::SmallLetterOin => SMALL_LETTER_OIN,
-            Osage::SmallLetterPa => SMALL_LETTER_PA,
-            Osage::SmallLetterEhpa => SMALL_LETTER_EHPA,
-            Osage::SmallLetterSa => SMALL_LETTER_SA,
-            Osage::SmallLetterSha => SMALL_LETTER_SHA,
-            Osage::SmallLetterTa => SMALL_LETTER_TA,
-            Osage::SmallLetterEhta => SMALL_LETTER_EHTA,
-            Osage::SmallLetterTsa => SMALL_LETTER_TSA,
-            Osage::SmallLetterEhtsa => SMALL_LETTER_EHTSA,
-            Osage::SmallLetterTsha => SMALL_LETTER_TSHA,
-            Osage::SmallLetterDha => SMALL_LETTER_DHA,
-            Osage::SmallLetterU => SMALL_LETTER_U,
-            Osage::SmallLetterWa => SMALL_LETTER_WA,
-            Osage::SmallLetterKha => SMALL_LETTER_KHA,
-            Osage::SmallLetterGha => SMALL_LETTER_GHA,
-            Osage::SmallLetterZa => SMALL_LETTER_ZA,
-            Osage::SmallLetterZha => SMALL_LETTER_ZHA,
+            Osage::CapitalLetterA => '𐒰',
+            Osage::CapitalLetterAi => '𐒱',
+            Osage::CapitalLetterAin => '𐒲',
+            Osage::CapitalLetterAh => '𐒳',
+            Osage::CapitalLetterBra => '𐒴',
+            Osage::CapitalLetterCha => '𐒵',
+            Osage::CapitalLetterEhcha => '𐒶',
+            Osage::CapitalLetterE => '𐒷',
+            Osage::CapitalLetterEin => '𐒸',
+            Osage::CapitalLetterHa => '𐒹',
+            Osage::CapitalLetterHya => '𐒺',
+            Osage::CapitalLetterI => '𐒻',
+            Osage::CapitalLetterKa => '𐒼',
+            Osage::CapitalLetterEhka => '𐒽',
+            Osage::CapitalLetterKya => '𐒾',
+            Osage::CapitalLetterLa => '𐒿',
+            Osage::CapitalLetterMa => '𐓀',
+            Osage::CapitalLetterNa => '𐓁',
+            Osage::CapitalLetterO => '𐓂',
+            Osage::CapitalLetterOin => '𐓃',
+            Osage::CapitalLetterPa => '𐓄',
+            Osage::CapitalLetterEhpa => '𐓅',
+            Osage::CapitalLetterSa => '𐓆',
+            Osage::CapitalLetterSha => '𐓇',
+            Osage::CapitalLetterTa => '𐓈',
+            Osage::CapitalLetterEhta => '𐓉',
+            Osage::CapitalLetterTsa => '𐓊',
+            Osage::CapitalLetterEhtsa => '𐓋',
+            Osage::CapitalLetterTsha => '𐓌',
+            Osage::CapitalLetterDha => '𐓍',
+            Osage::CapitalLetterU => '𐓎',
+            Osage::CapitalLetterWa => '𐓏',
+            Osage::CapitalLetterKha => '𐓐',
+            Osage::CapitalLetterGha => '𐓑',
+            Osage::CapitalLetterZa => '𐓒',
+            Osage::CapitalLetterZha => '𐓓',
+            Osage::SmallLetterA => '𐓘',
+            Osage::SmallLetterAi => '𐓙',
+            Osage::SmallLetterAin => '𐓚',
+            Osage::SmallLetterAh => '𐓛',
+            Osage::SmallLetterBra => '𐓜',
+            Osage::SmallLetterCha => '𐓝',
+            Osage::SmallLetterEhcha => '𐓞',
+            Osage::SmallLetterE => '𐓟',
+            Osage::SmallLetterEin => '𐓠',
+            Osage::SmallLetterHa => '𐓡',
+            Osage::SmallLetterHya => '𐓢',
+            Osage::SmallLetterI => '𐓣',
+            Osage::SmallLetterKa => '𐓤',
+            Osage::SmallLetterEhka => '𐓥',
+            Osage::SmallLetterKya => '𐓦',
+            Osage::SmallLetterLa => '𐓧',
+            Osage::SmallLetterMa => '𐓨',
+            Osage::SmallLetterNa => '𐓩',
+            Osage::SmallLetterO => '𐓪',
+            Osage::SmallLetterOin => '𐓫',
+            Osage::SmallLetterPa => '𐓬',
+            Osage::SmallLetterEhpa => '𐓭',
+            Osage::SmallLetterSa => '𐓮',
+            Osage::SmallLetterSha => '𐓯',
+            Osage::SmallLetterTa => '𐓰',
+            Osage::SmallLetterEhta => '𐓱',
+            Osage::SmallLetterTsa => '𐓲',
+            Osage::SmallLetterEhtsa => '𐓳',
+            Osage::SmallLetterTsha => '𐓴',
+            Osage::SmallLetterDha => '𐓵',
+            Osage::SmallLetterU => '𐓶',
+            Osage::SmallLetterWa => '𐓷',
+            Osage::SmallLetterKha => '𐓸',
+            Osage::SmallLetterGha => '𐓹',
+            Osage::SmallLetterZa => '𐓺',
+            Osage::SmallLetterZha => '𐓻',
         }
     }
 }
@@ -378,80 +230,79 @@ impl Into<char> for Osage {
 impl std::convert::TryFrom<char> for Osage {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            CAPITAL_LETTER_A => Ok(Osage::CapitalLetterA),
-            CAPITAL_LETTER_AI => Ok(Osage::CapitalLetterAi),
-            CAPITAL_LETTER_AIN => Ok(Osage::CapitalLetterAin),
-            CAPITAL_LETTER_AH => Ok(Osage::CapitalLetterAh),
-            CAPITAL_LETTER_BRA => Ok(Osage::CapitalLetterBra),
-            CAPITAL_LETTER_CHA => Ok(Osage::CapitalLetterCha),
-            CAPITAL_LETTER_EHCHA => Ok(Osage::CapitalLetterEhcha),
-            CAPITAL_LETTER_E => Ok(Osage::CapitalLetterE),
-            CAPITAL_LETTER_EIN => Ok(Osage::CapitalLetterEin),
-            CAPITAL_LETTER_HA => Ok(Osage::CapitalLetterHa),
-            CAPITAL_LETTER_HYA => Ok(Osage::CapitalLetterHya),
-            CAPITAL_LETTER_I => Ok(Osage::CapitalLetterI),
-            CAPITAL_LETTER_KA => Ok(Osage::CapitalLetterKa),
-            CAPITAL_LETTER_EHKA => Ok(Osage::CapitalLetterEhka),
-            CAPITAL_LETTER_KYA => Ok(Osage::CapitalLetterKya),
-            CAPITAL_LETTER_LA => Ok(Osage::CapitalLetterLa),
-            CAPITAL_LETTER_MA => Ok(Osage::CapitalLetterMa),
-            CAPITAL_LETTER_NA => Ok(Osage::CapitalLetterNa),
-            CAPITAL_LETTER_O => Ok(Osage::CapitalLetterO),
-            CAPITAL_LETTER_OIN => Ok(Osage::CapitalLetterOin),
-            CAPITAL_LETTER_PA => Ok(Osage::CapitalLetterPa),
-            CAPITAL_LETTER_EHPA => Ok(Osage::CapitalLetterEhpa),
-            CAPITAL_LETTER_SA => Ok(Osage::CapitalLetterSa),
-            CAPITAL_LETTER_SHA => Ok(Osage::CapitalLetterSha),
-            CAPITAL_LETTER_TA => Ok(Osage::CapitalLetterTa),
-            CAPITAL_LETTER_EHTA => Ok(Osage::CapitalLetterEhta),
-            CAPITAL_LETTER_TSA => Ok(Osage::CapitalLetterTsa),
-            CAPITAL_LETTER_EHTSA => Ok(Osage::CapitalLetterEhtsa),
-            CAPITAL_LETTER_TSHA => Ok(Osage::CapitalLetterTsha),
-            CAPITAL_LETTER_DHA => Ok(Osage::CapitalLetterDha),
-            CAPITAL_LETTER_U => Ok(Osage::CapitalLetterU),
-            CAPITAL_LETTER_WA => Ok(Osage::CapitalLetterWa),
-            CAPITAL_LETTER_KHA => Ok(Osage::CapitalLetterKha),
-            CAPITAL_LETTER_GHA => Ok(Osage::CapitalLetterGha),
-            CAPITAL_LETTER_ZA => Ok(Osage::CapitalLetterZa),
-            CAPITAL_LETTER_ZHA => Ok(Osage::CapitalLetterZha),
-            SMALL_LETTER_A => Ok(Osage::SmallLetterA),
-            SMALL_LETTER_AI => Ok(Osage::SmallLetterAi),
-            SMALL_LETTER_AIN => Ok(Osage::SmallLetterAin),
-            SMALL_LETTER_AH => Ok(Osage::SmallLetterAh),
-            SMALL_LETTER_BRA => Ok(Osage::SmallLetterBra),
-            SMALL_LETTER_CHA => Ok(Osage::SmallLetterCha),
-            SMALL_LETTER_EHCHA => Ok(Osage::SmallLetterEhcha),
-            SMALL_LETTER_E => Ok(Osage::SmallLetterE),
-            SMALL_LETTER_EIN => Ok(Osage::SmallLetterEin),
-            SMALL_LETTER_HA => Ok(Osage::SmallLetterHa),
-            SMALL_LETTER_HYA => Ok(Osage::SmallLetterHya),
-            SMALL_LETTER_I => Ok(Osage::SmallLetterI),
-            SMALL_LETTER_KA => Ok(Osage::SmallLetterKa),
-            SMALL_LETTER_EHKA => Ok(Osage::SmallLetterEhka),
-            SMALL_LETTER_KYA => Ok(Osage::SmallLetterKya),
-            SMALL_LETTER_LA => Ok(Osage::SmallLetterLa),
-            SMALL_LETTER_MA => Ok(Osage::SmallLetterMa),
-            SMALL_LETTER_NA => Ok(Osage::SmallLetterNa),
-            SMALL_LETTER_O => Ok(Osage::SmallLetterO),
-            SMALL_LETTER_OIN => Ok(Osage::SmallLetterOin),
-            SMALL_LETTER_PA => Ok(Osage::SmallLetterPa),
-            SMALL_LETTER_EHPA => Ok(Osage::SmallLetterEhpa),
-            SMALL_LETTER_SA => Ok(Osage::SmallLetterSa),
-            SMALL_LETTER_SHA => Ok(Osage::SmallLetterSha),
-            SMALL_LETTER_TA => Ok(Osage::SmallLetterTa),
-            SMALL_LETTER_EHTA => Ok(Osage::SmallLetterEhta),
-            SMALL_LETTER_TSA => Ok(Osage::SmallLetterTsa),
-            SMALL_LETTER_EHTSA => Ok(Osage::SmallLetterEhtsa),
-            SMALL_LETTER_TSHA => Ok(Osage::SmallLetterTsha),
-            SMALL_LETTER_DHA => Ok(Osage::SmallLetterDha),
-            SMALL_LETTER_U => Ok(Osage::SmallLetterU),
-            SMALL_LETTER_WA => Ok(Osage::SmallLetterWa),
-            SMALL_LETTER_KHA => Ok(Osage::SmallLetterKha),
-            SMALL_LETTER_GHA => Ok(Osage::SmallLetterGha),
-            SMALL_LETTER_ZA => Ok(Osage::SmallLetterZa),
-            SMALL_LETTER_ZHA => Ok(Osage::SmallLetterZha),
+            '𐒰' => Ok(Osage::CapitalLetterA),
+            '𐒱' => Ok(Osage::CapitalLetterAi),
+            '𐒲' => Ok(Osage::CapitalLetterAin),
+            '𐒳' => Ok(Osage::CapitalLetterAh),
+            '𐒴' => Ok(Osage::CapitalLetterBra),
+            '𐒵' => Ok(Osage::CapitalLetterCha),
+            '𐒶' => Ok(Osage::CapitalLetterEhcha),
+            '𐒷' => Ok(Osage::CapitalLetterE),
+            '𐒸' => Ok(Osage::CapitalLetterEin),
+            '𐒹' => Ok(Osage::CapitalLetterHa),
+            '𐒺' => Ok(Osage::CapitalLetterHya),
+            '𐒻' => Ok(Osage::CapitalLetterI),
+            '𐒼' => Ok(Osage::CapitalLetterKa),
+            '𐒽' => Ok(Osage::CapitalLetterEhka),
+            '𐒾' => Ok(Osage::CapitalLetterKya),
+            '𐒿' => Ok(Osage::CapitalLetterLa),
+            '𐓀' => Ok(Osage::CapitalLetterMa),
+            '𐓁' => Ok(Osage::CapitalLetterNa),
+            '𐓂' => Ok(Osage::CapitalLetterO),
+            '𐓃' => Ok(Osage::CapitalLetterOin),
+            '𐓄' => Ok(Osage::CapitalLetterPa),
+            '𐓅' => Ok(Osage::CapitalLetterEhpa),
+            '𐓆' => Ok(Osage::CapitalLetterSa),
+            '𐓇' => Ok(Osage::CapitalLetterSha),
+            '𐓈' => Ok(Osage::CapitalLetterTa),
+            '𐓉' => Ok(Osage::CapitalLetterEhta),
+            '𐓊' => Ok(Osage::CapitalLetterTsa),
+            '𐓋' => Ok(Osage::CapitalLetterEhtsa),
+            '𐓌' => Ok(Osage::CapitalLetterTsha),
+            '𐓍' => Ok(Osage::CapitalLetterDha),
+            '𐓎' => Ok(Osage::CapitalLetterU),
+            '𐓏' => Ok(Osage::CapitalLetterWa),
+            '𐓐' => Ok(Osage::CapitalLetterKha),
+            '𐓑' => Ok(Osage::CapitalLetterGha),
+            '𐓒' => Ok(Osage::CapitalLetterZa),
+            '𐓓' => Ok(Osage::CapitalLetterZha),
+            '𐓘' => Ok(Osage::SmallLetterA),
+            '𐓙' => Ok(Osage::SmallLetterAi),
+            '𐓚' => Ok(Osage::SmallLetterAin),
+            '𐓛' => Ok(Osage::SmallLetterAh),
+            '𐓜' => Ok(Osage::SmallLetterBra),
+            '𐓝' => Ok(Osage::SmallLetterCha),
+            '𐓞' => Ok(Osage::SmallLetterEhcha),
+            '𐓟' => Ok(Osage::SmallLetterE),
+            '𐓠' => Ok(Osage::SmallLetterEin),
+            '𐓡' => Ok(Osage::SmallLetterHa),
+            '𐓢' => Ok(Osage::SmallLetterHya),
+            '𐓣' => Ok(Osage::SmallLetterI),
+            '𐓤' => Ok(Osage::SmallLetterKa),
+            '𐓥' => Ok(Osage::SmallLetterEhka),
+            '𐓦' => Ok(Osage::SmallLetterKya),
+            '𐓧' => Ok(Osage::SmallLetterLa),
+            '𐓨' => Ok(Osage::SmallLetterMa),
+            '𐓩' => Ok(Osage::SmallLetterNa),
+            '𐓪' => Ok(Osage::SmallLetterO),
+            '𐓫' => Ok(Osage::SmallLetterOin),
+            '𐓬' => Ok(Osage::SmallLetterPa),
+            '𐓭' => Ok(Osage::SmallLetterEhpa),
+            '𐓮' => Ok(Osage::SmallLetterSa),
+            '𐓯' => Ok(Osage::SmallLetterSha),
+            '𐓰' => Ok(Osage::SmallLetterTa),
+            '𐓱' => Ok(Osage::SmallLetterEhta),
+            '𐓲' => Ok(Osage::SmallLetterTsa),
+            '𐓳' => Ok(Osage::SmallLetterEhtsa),
+            '𐓴' => Ok(Osage::SmallLetterTsha),
+            '𐓵' => Ok(Osage::SmallLetterDha),
+            '𐓶' => Ok(Osage::SmallLetterU),
+            '𐓷' => Ok(Osage::SmallLetterWa),
+            '𐓸' => Ok(Osage::SmallLetterKha),
+            '𐓹' => Ok(Osage::SmallLetterGha),
+            '𐓺' => Ok(Osage::SmallLetterZa),
+            '𐓻' => Ok(Osage::SmallLetterZha),
             _ => Err(()),
         }
     }

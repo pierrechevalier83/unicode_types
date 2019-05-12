@@ -1,434 +1,3 @@
-/// A number of constants to give a name to all characters in this block.
-mod constants {
-    /// \u{2f00}: '⼀'
-    pub const KANGXI_RADICAL_ONE: char = '⼀';
-    /// \u{2f01}: '⼁'
-    pub const KANGXI_RADICAL_LINE: char = '⼁';
-    /// \u{2f02}: '⼂'
-    pub const KANGXI_RADICAL_DOT: char = '⼂';
-    /// \u{2f03}: '⼃'
-    pub const KANGXI_RADICAL_SLASH: char = '⼃';
-    /// \u{2f04}: '⼄'
-    pub const KANGXI_RADICAL_SECOND: char = '⼄';
-    /// \u{2f05}: '⼅'
-    pub const KANGXI_RADICAL_HOOK: char = '⼅';
-    /// \u{2f06}: '⼆'
-    pub const KANGXI_RADICAL_TWO: char = '⼆';
-    /// \u{2f07}: '⼇'
-    pub const KANGXI_RADICAL_LID: char = '⼇';
-    /// \u{2f08}: '⼈'
-    pub const KANGXI_RADICAL_MAN: char = '⼈';
-    /// \u{2f09}: '⼉'
-    pub const KANGXI_RADICAL_LEGS: char = '⼉';
-    /// \u{2f0a}: '⼊'
-    pub const KANGXI_RADICAL_ENTER: char = '⼊';
-    /// \u{2f0b}: '⼋'
-    pub const KANGXI_RADICAL_EIGHT: char = '⼋';
-    /// \u{2f0c}: '⼌'
-    pub const KANGXI_RADICAL_DOWN_BOX: char = '⼌';
-    /// \u{2f0d}: '⼍'
-    pub const KANGXI_RADICAL_COVER: char = '⼍';
-    /// \u{2f0e}: '⼎'
-    pub const KANGXI_RADICAL_ICE: char = '⼎';
-    /// \u{2f0f}: '⼏'
-    pub const KANGXI_RADICAL_TABLE: char = '⼏';
-    /// \u{2f10}: '⼐'
-    pub const KANGXI_RADICAL_OPEN_BOX: char = '⼐';
-    /// \u{2f11}: '⼑'
-    pub const KANGXI_RADICAL_KNIFE: char = '⼑';
-    /// \u{2f12}: '⼒'
-    pub const KANGXI_RADICAL_POWER: char = '⼒';
-    /// \u{2f13}: '⼓'
-    pub const KANGXI_RADICAL_WRAP: char = '⼓';
-    /// \u{2f14}: '⼔'
-    pub const KANGXI_RADICAL_SPOON: char = '⼔';
-    /// \u{2f15}: '⼕'
-    pub const KANGXI_RADICAL_RIGHT_OPEN_BOX: char = '⼕';
-    /// \u{2f16}: '⼖'
-    pub const KANGXI_RADICAL_HIDING_ENCLOSURE: char = '⼖';
-    /// \u{2f17}: '⼗'
-    pub const KANGXI_RADICAL_TEN: char = '⼗';
-    /// \u{2f18}: '⼘'
-    pub const KANGXI_RADICAL_DIVINATION: char = '⼘';
-    /// \u{2f19}: '⼙'
-    pub const KANGXI_RADICAL_SEAL: char = '⼙';
-    /// \u{2f1a}: '⼚'
-    pub const KANGXI_RADICAL_CLIFF: char = '⼚';
-    /// \u{2f1b}: '⼛'
-    pub const KANGXI_RADICAL_PRIVATE: char = '⼛';
-    /// \u{2f1c}: '⼜'
-    pub const KANGXI_RADICAL_AGAIN: char = '⼜';
-    /// \u{2f1d}: '⼝'
-    pub const KANGXI_RADICAL_MOUTH: char = '⼝';
-    /// \u{2f1e}: '⼞'
-    pub const KANGXI_RADICAL_ENCLOSURE: char = '⼞';
-    /// \u{2f1f}: '⼟'
-    pub const KANGXI_RADICAL_EARTH: char = '⼟';
-    /// \u{2f20}: '⼠'
-    pub const KANGXI_RADICAL_SCHOLAR: char = '⼠';
-    /// \u{2f21}: '⼡'
-    pub const KANGXI_RADICAL_GO: char = '⼡';
-    /// \u{2f22}: '⼢'
-    pub const KANGXI_RADICAL_GO_SLOWLY: char = '⼢';
-    /// \u{2f23}: '⼣'
-    pub const KANGXI_RADICAL_EVENING: char = '⼣';
-    /// \u{2f24}: '⼤'
-    pub const KANGXI_RADICAL_BIG: char = '⼤';
-    /// \u{2f25}: '⼥'
-    pub const KANGXI_RADICAL_WOMAN: char = '⼥';
-    /// \u{2f26}: '⼦'
-    pub const KANGXI_RADICAL_CHILD: char = '⼦';
-    /// \u{2f27}: '⼧'
-    pub const KANGXI_RADICAL_ROOF: char = '⼧';
-    /// \u{2f28}: '⼨'
-    pub const KANGXI_RADICAL_INCH: char = '⼨';
-    /// \u{2f29}: '⼩'
-    pub const KANGXI_RADICAL_SMALL: char = '⼩';
-    /// \u{2f2a}: '⼪'
-    pub const KANGXI_RADICAL_LAME: char = '⼪';
-    /// \u{2f2b}: '⼫'
-    pub const KANGXI_RADICAL_CORPSE: char = '⼫';
-    /// \u{2f2c}: '⼬'
-    pub const KANGXI_RADICAL_SPROUT: char = '⼬';
-    /// \u{2f2d}: '⼭'
-    pub const KANGXI_RADICAL_MOUNTAIN: char = '⼭';
-    /// \u{2f2e}: '⼮'
-    pub const KANGXI_RADICAL_RIVER: char = '⼮';
-    /// \u{2f2f}: '⼯'
-    pub const KANGXI_RADICAL_WORK: char = '⼯';
-    /// \u{2f30}: '⼰'
-    pub const KANGXI_RADICAL_ONESELF: char = '⼰';
-    /// \u{2f31}: '⼱'
-    pub const KANGXI_RADICAL_TURBAN: char = '⼱';
-    /// \u{2f32}: '⼲'
-    pub const KANGXI_RADICAL_DRY: char = '⼲';
-    /// \u{2f33}: '⼳'
-    pub const KANGXI_RADICAL_SHORT_THREAD: char = '⼳';
-    /// \u{2f34}: '⼴'
-    pub const KANGXI_RADICAL_DOTTED_CLIFF: char = '⼴';
-    /// \u{2f35}: '⼵'
-    pub const KANGXI_RADICAL_LONG_STRIDE: char = '⼵';
-    /// \u{2f36}: '⼶'
-    pub const KANGXI_RADICAL_TWO_HANDS: char = '⼶';
-    /// \u{2f37}: '⼷'
-    pub const KANGXI_RADICAL_SHOOT: char = '⼷';
-    /// \u{2f38}: '⼸'
-    pub const KANGXI_RADICAL_BOW: char = '⼸';
-    /// \u{2f39}: '⼹'
-    pub const KANGXI_RADICAL_SNOUT: char = '⼹';
-    /// \u{2f3a}: '⼺'
-    pub const KANGXI_RADICAL_BRISTLE: char = '⼺';
-    /// \u{2f3b}: '⼻'
-    pub const KANGXI_RADICAL_STEP: char = '⼻';
-    /// \u{2f3c}: '⼼'
-    pub const KANGXI_RADICAL_HEART: char = '⼼';
-    /// \u{2f3d}: '⼽'
-    pub const KANGXI_RADICAL_HALBERD: char = '⼽';
-    /// \u{2f3e}: '⼾'
-    pub const KANGXI_RADICAL_DOOR: char = '⼾';
-    /// \u{2f3f}: '⼿'
-    pub const KANGXI_RADICAL_HAND: char = '⼿';
-    /// \u{2f40}: '⽀'
-    pub const KANGXI_RADICAL_BRANCH: char = '⽀';
-    /// \u{2f41}: '⽁'
-    pub const KANGXI_RADICAL_RAP: char = '⽁';
-    /// \u{2f42}: '⽂'
-    pub const KANGXI_RADICAL_SCRIPT: char = '⽂';
-    /// \u{2f43}: '⽃'
-    pub const KANGXI_RADICAL_DIPPER: char = '⽃';
-    /// \u{2f44}: '⽄'
-    pub const KANGXI_RADICAL_AXE: char = '⽄';
-    /// \u{2f45}: '⽅'
-    pub const KANGXI_RADICAL_SQUARE: char = '⽅';
-    /// \u{2f46}: '⽆'
-    pub const KANGXI_RADICAL_NOT: char = '⽆';
-    /// \u{2f47}: '⽇'
-    pub const KANGXI_RADICAL_SUN: char = '⽇';
-    /// \u{2f48}: '⽈'
-    pub const KANGXI_RADICAL_SAY: char = '⽈';
-    /// \u{2f49}: '⽉'
-    pub const KANGXI_RADICAL_MOON: char = '⽉';
-    /// \u{2f4a}: '⽊'
-    pub const KANGXI_RADICAL_TREE: char = '⽊';
-    /// \u{2f4b}: '⽋'
-    pub const KANGXI_RADICAL_LACK: char = '⽋';
-    /// \u{2f4c}: '⽌'
-    pub const KANGXI_RADICAL_STOP: char = '⽌';
-    /// \u{2f4d}: '⽍'
-    pub const KANGXI_RADICAL_DEATH: char = '⽍';
-    /// \u{2f4e}: '⽎'
-    pub const KANGXI_RADICAL_WEAPON: char = '⽎';
-    /// \u{2f4f}: '⽏'
-    pub const KANGXI_RADICAL_DO_NOT: char = '⽏';
-    /// \u{2f50}: '⽐'
-    pub const KANGXI_RADICAL_COMPARE: char = '⽐';
-    /// \u{2f51}: '⽑'
-    pub const KANGXI_RADICAL_FUR: char = '⽑';
-    /// \u{2f52}: '⽒'
-    pub const KANGXI_RADICAL_CLAN: char = '⽒';
-    /// \u{2f53}: '⽓'
-    pub const KANGXI_RADICAL_STEAM: char = '⽓';
-    /// \u{2f54}: '⽔'
-    pub const KANGXI_RADICAL_WATER: char = '⽔';
-    /// \u{2f55}: '⽕'
-    pub const KANGXI_RADICAL_FIRE: char = '⽕';
-    /// \u{2f56}: '⽖'
-    pub const KANGXI_RADICAL_CLAW: char = '⽖';
-    /// \u{2f57}: '⽗'
-    pub const KANGXI_RADICAL_FATHER: char = '⽗';
-    /// \u{2f58}: '⽘'
-    pub const KANGXI_RADICAL_DOUBLE_X: char = '⽘';
-    /// \u{2f59}: '⽙'
-    pub const KANGXI_RADICAL_HALF_TREE_TRUNK: char = '⽙';
-    /// \u{2f5a}: '⽚'
-    pub const KANGXI_RADICAL_SLICE: char = '⽚';
-    /// \u{2f5b}: '⽛'
-    pub const KANGXI_RADICAL_FANG: char = '⽛';
-    /// \u{2f5c}: '⽜'
-    pub const KANGXI_RADICAL_COW: char = '⽜';
-    /// \u{2f5d}: '⽝'
-    pub const KANGXI_RADICAL_DOG: char = '⽝';
-    /// \u{2f5e}: '⽞'
-    pub const KANGXI_RADICAL_PROFOUND: char = '⽞';
-    /// \u{2f5f}: '⽟'
-    pub const KANGXI_RADICAL_JADE: char = '⽟';
-    /// \u{2f60}: '⽠'
-    pub const KANGXI_RADICAL_MELON: char = '⽠';
-    /// \u{2f61}: '⽡'
-    pub const KANGXI_RADICAL_TILE: char = '⽡';
-    /// \u{2f62}: '⽢'
-    pub const KANGXI_RADICAL_SWEET: char = '⽢';
-    /// \u{2f63}: '⽣'
-    pub const KANGXI_RADICAL_LIFE: char = '⽣';
-    /// \u{2f64}: '⽤'
-    pub const KANGXI_RADICAL_USE: char = '⽤';
-    /// \u{2f65}: '⽥'
-    pub const KANGXI_RADICAL_FIELD: char = '⽥';
-    /// \u{2f66}: '⽦'
-    pub const KANGXI_RADICAL_BOLT_OF_CLOTH: char = '⽦';
-    /// \u{2f67}: '⽧'
-    pub const KANGXI_RADICAL_SICKNESS: char = '⽧';
-    /// \u{2f68}: '⽨'
-    pub const KANGXI_RADICAL_DOTTED_TENT: char = '⽨';
-    /// \u{2f69}: '⽩'
-    pub const KANGXI_RADICAL_WHITE: char = '⽩';
-    /// \u{2f6a}: '⽪'
-    pub const KANGXI_RADICAL_SKIN: char = '⽪';
-    /// \u{2f6b}: '⽫'
-    pub const KANGXI_RADICAL_DISH: char = '⽫';
-    /// \u{2f6c}: '⽬'
-    pub const KANGXI_RADICAL_EYE: char = '⽬';
-    /// \u{2f6d}: '⽭'
-    pub const KANGXI_RADICAL_SPEAR: char = '⽭';
-    /// \u{2f6e}: '⽮'
-    pub const KANGXI_RADICAL_ARROW: char = '⽮';
-    /// \u{2f6f}: '⽯'
-    pub const KANGXI_RADICAL_STONE: char = '⽯';
-    /// \u{2f70}: '⽰'
-    pub const KANGXI_RADICAL_SPIRIT: char = '⽰';
-    /// \u{2f71}: '⽱'
-    pub const KANGXI_RADICAL_TRACK: char = '⽱';
-    /// \u{2f72}: '⽲'
-    pub const KANGXI_RADICAL_GRAIN: char = '⽲';
-    /// \u{2f73}: '⽳'
-    pub const KANGXI_RADICAL_CAVE: char = '⽳';
-    /// \u{2f74}: '⽴'
-    pub const KANGXI_RADICAL_STAND: char = '⽴';
-    /// \u{2f75}: '⽵'
-    pub const KANGXI_RADICAL_BAMBOO: char = '⽵';
-    /// \u{2f76}: '⽶'
-    pub const KANGXI_RADICAL_RICE: char = '⽶';
-    /// \u{2f77}: '⽷'
-    pub const KANGXI_RADICAL_SILK: char = '⽷';
-    /// \u{2f78}: '⽸'
-    pub const KANGXI_RADICAL_JAR: char = '⽸';
-    /// \u{2f79}: '⽹'
-    pub const KANGXI_RADICAL_NET: char = '⽹';
-    /// \u{2f7a}: '⽺'
-    pub const KANGXI_RADICAL_SHEEP: char = '⽺';
-    /// \u{2f7b}: '⽻'
-    pub const KANGXI_RADICAL_FEATHER: char = '⽻';
-    /// \u{2f7c}: '⽼'
-    pub const KANGXI_RADICAL_OLD: char = '⽼';
-    /// \u{2f7d}: '⽽'
-    pub const KANGXI_RADICAL_AND: char = '⽽';
-    /// \u{2f7e}: '⽾'
-    pub const KANGXI_RADICAL_PLOW: char = '⽾';
-    /// \u{2f7f}: '⽿'
-    pub const KANGXI_RADICAL_EAR: char = '⽿';
-    /// \u{2f80}: '⾀'
-    pub const KANGXI_RADICAL_BRUSH: char = '⾀';
-    /// \u{2f81}: '⾁'
-    pub const KANGXI_RADICAL_MEAT: char = '⾁';
-    /// \u{2f82}: '⾂'
-    pub const KANGXI_RADICAL_MINISTER: char = '⾂';
-    /// \u{2f83}: '⾃'
-    pub const KANGXI_RADICAL_SELF: char = '⾃';
-    /// \u{2f84}: '⾄'
-    pub const KANGXI_RADICAL_ARRIVE: char = '⾄';
-    /// \u{2f85}: '⾅'
-    pub const KANGXI_RADICAL_MORTAR: char = '⾅';
-    /// \u{2f86}: '⾆'
-    pub const KANGXI_RADICAL_TONGUE: char = '⾆';
-    /// \u{2f87}: '⾇'
-    pub const KANGXI_RADICAL_OPPOSE: char = '⾇';
-    /// \u{2f88}: '⾈'
-    pub const KANGXI_RADICAL_BOAT: char = '⾈';
-    /// \u{2f89}: '⾉'
-    pub const KANGXI_RADICAL_STOPPING: char = '⾉';
-    /// \u{2f8a}: '⾊'
-    pub const KANGXI_RADICAL_COLOR: char = '⾊';
-    /// \u{2f8b}: '⾋'
-    pub const KANGXI_RADICAL_GRASS: char = '⾋';
-    /// \u{2f8c}: '⾌'
-    pub const KANGXI_RADICAL_TIGER: char = '⾌';
-    /// \u{2f8d}: '⾍'
-    pub const KANGXI_RADICAL_INSECT: char = '⾍';
-    /// \u{2f8e}: '⾎'
-    pub const KANGXI_RADICAL_BLOOD: char = '⾎';
-    /// \u{2f8f}: '⾏'
-    pub const KANGXI_RADICAL_WALK_ENCLOSURE: char = '⾏';
-    /// \u{2f90}: '⾐'
-    pub const KANGXI_RADICAL_CLOTHES: char = '⾐';
-    /// \u{2f91}: '⾑'
-    pub const KANGXI_RADICAL_WEST: char = '⾑';
-    /// \u{2f92}: '⾒'
-    pub const KANGXI_RADICAL_SEE: char = '⾒';
-    /// \u{2f93}: '⾓'
-    pub const KANGXI_RADICAL_HORN: char = '⾓';
-    /// \u{2f94}: '⾔'
-    pub const KANGXI_RADICAL_SPEECH: char = '⾔';
-    /// \u{2f95}: '⾕'
-    pub const KANGXI_RADICAL_VALLEY: char = '⾕';
-    /// \u{2f96}: '⾖'
-    pub const KANGXI_RADICAL_BEAN: char = '⾖';
-    /// \u{2f97}: '⾗'
-    pub const KANGXI_RADICAL_PIG: char = '⾗';
-    /// \u{2f98}: '⾘'
-    pub const KANGXI_RADICAL_BADGER: char = '⾘';
-    /// \u{2f99}: '⾙'
-    pub const KANGXI_RADICAL_SHELL: char = '⾙';
-    /// \u{2f9a}: '⾚'
-    pub const KANGXI_RADICAL_RED: char = '⾚';
-    /// \u{2f9b}: '⾛'
-    pub const KANGXI_RADICAL_RUN: char = '⾛';
-    /// \u{2f9c}: '⾜'
-    pub const KANGXI_RADICAL_FOOT: char = '⾜';
-    /// \u{2f9d}: '⾝'
-    pub const KANGXI_RADICAL_BODY: char = '⾝';
-    /// \u{2f9e}: '⾞'
-    pub const KANGXI_RADICAL_CART: char = '⾞';
-    /// \u{2f9f}: '⾟'
-    pub const KANGXI_RADICAL_BITTER: char = '⾟';
-    /// \u{2fa0}: '⾠'
-    pub const KANGXI_RADICAL_MORNING: char = '⾠';
-    /// \u{2fa1}: '⾡'
-    pub const KANGXI_RADICAL_WALK: char = '⾡';
-    /// \u{2fa2}: '⾢'
-    pub const KANGXI_RADICAL_CITY: char = '⾢';
-    /// \u{2fa3}: '⾣'
-    pub const KANGXI_RADICAL_WINE: char = '⾣';
-    /// \u{2fa4}: '⾤'
-    pub const KANGXI_RADICAL_DISTINGUISH: char = '⾤';
-    /// \u{2fa5}: '⾥'
-    pub const KANGXI_RADICAL_VILLAGE: char = '⾥';
-    /// \u{2fa6}: '⾦'
-    pub const KANGXI_RADICAL_GOLD: char = '⾦';
-    /// \u{2fa7}: '⾧'
-    pub const KANGXI_RADICAL_LONG: char = '⾧';
-    /// \u{2fa8}: '⾨'
-    pub const KANGXI_RADICAL_GATE: char = '⾨';
-    /// \u{2fa9}: '⾩'
-    pub const KANGXI_RADICAL_MOUND: char = '⾩';
-    /// \u{2faa}: '⾪'
-    pub const KANGXI_RADICAL_SLAVE: char = '⾪';
-    /// \u{2fab}: '⾫'
-    pub const KANGXI_RADICAL_SHORT_TAILED_BIRD: char = '⾫';
-    /// \u{2fac}: '⾬'
-    pub const KANGXI_RADICAL_RAIN: char = '⾬';
-    /// \u{2fad}: '⾭'
-    pub const KANGXI_RADICAL_BLUE: char = '⾭';
-    /// \u{2fae}: '⾮'
-    pub const KANGXI_RADICAL_WRONG: char = '⾮';
-    /// \u{2faf}: '⾯'
-    pub const KANGXI_RADICAL_FACE: char = '⾯';
-    /// \u{2fb0}: '⾰'
-    pub const KANGXI_RADICAL_LEATHER: char = '⾰';
-    /// \u{2fb1}: '⾱'
-    pub const KANGXI_RADICAL_TANNED_LEATHER: char = '⾱';
-    /// \u{2fb2}: '⾲'
-    pub const KANGXI_RADICAL_LEEK: char = '⾲';
-    /// \u{2fb3}: '⾳'
-    pub const KANGXI_RADICAL_SOUND: char = '⾳';
-    /// \u{2fb4}: '⾴'
-    pub const KANGXI_RADICAL_LEAF: char = '⾴';
-    /// \u{2fb5}: '⾵'
-    pub const KANGXI_RADICAL_WIND: char = '⾵';
-    /// \u{2fb6}: '⾶'
-    pub const KANGXI_RADICAL_FLY: char = '⾶';
-    /// \u{2fb7}: '⾷'
-    pub const KANGXI_RADICAL_EAT: char = '⾷';
-    /// \u{2fb8}: '⾸'
-    pub const KANGXI_RADICAL_HEAD: char = '⾸';
-    /// \u{2fb9}: '⾹'
-    pub const KANGXI_RADICAL_FRAGRANT: char = '⾹';
-    /// \u{2fba}: '⾺'
-    pub const KANGXI_RADICAL_HORSE: char = '⾺';
-    /// \u{2fbb}: '⾻'
-    pub const KANGXI_RADICAL_BONE: char = '⾻';
-    /// \u{2fbc}: '⾼'
-    pub const KANGXI_RADICAL_TALL: char = '⾼';
-    /// \u{2fbd}: '⾽'
-    pub const KANGXI_RADICAL_HAIR: char = '⾽';
-    /// \u{2fbe}: '⾾'
-    pub const KANGXI_RADICAL_FIGHT: char = '⾾';
-    /// \u{2fbf}: '⾿'
-    pub const KANGXI_RADICAL_SACRIFICIAL_WINE: char = '⾿';
-    /// \u{2fc0}: '⿀'
-    pub const KANGXI_RADICAL_CAULDRON: char = '⿀';
-    /// \u{2fc1}: '⿁'
-    pub const KANGXI_RADICAL_GHOST: char = '⿁';
-    /// \u{2fc2}: '⿂'
-    pub const KANGXI_RADICAL_FISH: char = '⿂';
-    /// \u{2fc3}: '⿃'
-    pub const KANGXI_RADICAL_BIRD: char = '⿃';
-    /// \u{2fc4}: '⿄'
-    pub const KANGXI_RADICAL_SALT: char = '⿄';
-    /// \u{2fc5}: '⿅'
-    pub const KANGXI_RADICAL_DEER: char = '⿅';
-    /// \u{2fc6}: '⿆'
-    pub const KANGXI_RADICAL_WHEAT: char = '⿆';
-    /// \u{2fc7}: '⿇'
-    pub const KANGXI_RADICAL_HEMP: char = '⿇';
-    /// \u{2fc8}: '⿈'
-    pub const KANGXI_RADICAL_YELLOW: char = '⿈';
-    /// \u{2fc9}: '⿉'
-    pub const KANGXI_RADICAL_MILLET: char = '⿉';
-    /// \u{2fca}: '⿊'
-    pub const KANGXI_RADICAL_BLACK: char = '⿊';
-    /// \u{2fcb}: '⿋'
-    pub const KANGXI_RADICAL_EMBROIDERY: char = '⿋';
-    /// \u{2fcc}: '⿌'
-    pub const KANGXI_RADICAL_FROG: char = '⿌';
-    /// \u{2fcd}: '⿍'
-    pub const KANGXI_RADICAL_TRIPOD: char = '⿍';
-    /// \u{2fce}: '⿎'
-    pub const KANGXI_RADICAL_DRUM: char = '⿎';
-    /// \u{2fcf}: '⿏'
-    pub const KANGXI_RADICAL_RAT: char = '⿏';
-    /// \u{2fd0}: '⿐'
-    pub const KANGXI_RADICAL_NOSE: char = '⿐';
-    /// \u{2fd1}: '⿑'
-    pub const KANGXI_RADICAL_EVEN: char = '⿑';
-    /// \u{2fd2}: '⿒'
-    pub const KANGXI_RADICAL_TOOTH: char = '⿒';
-    /// \u{2fd3}: '⿓'
-    pub const KANGXI_RADICAL_DRAGON: char = '⿓';
-    /// \u{2fd4}: '⿔'
-    pub const KANGXI_RADICAL_TURTLE: char = '⿔';
-    /// \u{2fd5}: '⿕'
-    pub const KANGXI_RADICAL_FLUTE: char = '⿕';
-}
 
 /// An enum to represent all characters in the KangxiRadicals block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
@@ -865,222 +434,221 @@ pub enum KangxiRadicals {
 
 impl Into<char> for KangxiRadicals {
     fn into(self) -> char {
-        use constants::*;
         match self {
-            KangxiRadicals::KangxiRadicalOne => KANGXI_RADICAL_ONE,
-            KangxiRadicals::KangxiRadicalLine => KANGXI_RADICAL_LINE,
-            KangxiRadicals::KangxiRadicalDot => KANGXI_RADICAL_DOT,
-            KangxiRadicals::KangxiRadicalSlash => KANGXI_RADICAL_SLASH,
-            KangxiRadicals::KangxiRadicalSecond => KANGXI_RADICAL_SECOND,
-            KangxiRadicals::KangxiRadicalHook => KANGXI_RADICAL_HOOK,
-            KangxiRadicals::KangxiRadicalTwo => KANGXI_RADICAL_TWO,
-            KangxiRadicals::KangxiRadicalLid => KANGXI_RADICAL_LID,
-            KangxiRadicals::KangxiRadicalMan => KANGXI_RADICAL_MAN,
-            KangxiRadicals::KangxiRadicalLegs => KANGXI_RADICAL_LEGS,
-            KangxiRadicals::KangxiRadicalEnter => KANGXI_RADICAL_ENTER,
-            KangxiRadicals::KangxiRadicalEight => KANGXI_RADICAL_EIGHT,
-            KangxiRadicals::KangxiRadicalDownBox => KANGXI_RADICAL_DOWN_BOX,
-            KangxiRadicals::KangxiRadicalCover => KANGXI_RADICAL_COVER,
-            KangxiRadicals::KangxiRadicalIce => KANGXI_RADICAL_ICE,
-            KangxiRadicals::KangxiRadicalTable => KANGXI_RADICAL_TABLE,
-            KangxiRadicals::KangxiRadicalOpenBox => KANGXI_RADICAL_OPEN_BOX,
-            KangxiRadicals::KangxiRadicalKnife => KANGXI_RADICAL_KNIFE,
-            KangxiRadicals::KangxiRadicalPower => KANGXI_RADICAL_POWER,
-            KangxiRadicals::KangxiRadicalWrap => KANGXI_RADICAL_WRAP,
-            KangxiRadicals::KangxiRadicalSpoon => KANGXI_RADICAL_SPOON,
-            KangxiRadicals::KangxiRadicalRightOpenBox => KANGXI_RADICAL_RIGHT_OPEN_BOX,
-            KangxiRadicals::KangxiRadicalHidingEnclosure => KANGXI_RADICAL_HIDING_ENCLOSURE,
-            KangxiRadicals::KangxiRadicalTen => KANGXI_RADICAL_TEN,
-            KangxiRadicals::KangxiRadicalDivination => KANGXI_RADICAL_DIVINATION,
-            KangxiRadicals::KangxiRadicalSeal => KANGXI_RADICAL_SEAL,
-            KangxiRadicals::KangxiRadicalCliff => KANGXI_RADICAL_CLIFF,
-            KangxiRadicals::KangxiRadicalPrivate => KANGXI_RADICAL_PRIVATE,
-            KangxiRadicals::KangxiRadicalAgain => KANGXI_RADICAL_AGAIN,
-            KangxiRadicals::KangxiRadicalMouth => KANGXI_RADICAL_MOUTH,
-            KangxiRadicals::KangxiRadicalEnclosure => KANGXI_RADICAL_ENCLOSURE,
-            KangxiRadicals::KangxiRadicalEarth => KANGXI_RADICAL_EARTH,
-            KangxiRadicals::KangxiRadicalScholar => KANGXI_RADICAL_SCHOLAR,
-            KangxiRadicals::KangxiRadicalGo => KANGXI_RADICAL_GO,
-            KangxiRadicals::KangxiRadicalGoSlowly => KANGXI_RADICAL_GO_SLOWLY,
-            KangxiRadicals::KangxiRadicalEvening => KANGXI_RADICAL_EVENING,
-            KangxiRadicals::KangxiRadicalBig => KANGXI_RADICAL_BIG,
-            KangxiRadicals::KangxiRadicalWoman => KANGXI_RADICAL_WOMAN,
-            KangxiRadicals::KangxiRadicalChild => KANGXI_RADICAL_CHILD,
-            KangxiRadicals::KangxiRadicalRoof => KANGXI_RADICAL_ROOF,
-            KangxiRadicals::KangxiRadicalInch => KANGXI_RADICAL_INCH,
-            KangxiRadicals::KangxiRadicalSmall => KANGXI_RADICAL_SMALL,
-            KangxiRadicals::KangxiRadicalLame => KANGXI_RADICAL_LAME,
-            KangxiRadicals::KangxiRadicalCorpse => KANGXI_RADICAL_CORPSE,
-            KangxiRadicals::KangxiRadicalSprout => KANGXI_RADICAL_SPROUT,
-            KangxiRadicals::KangxiRadicalMountain => KANGXI_RADICAL_MOUNTAIN,
-            KangxiRadicals::KangxiRadicalRiver => KANGXI_RADICAL_RIVER,
-            KangxiRadicals::KangxiRadicalWork => KANGXI_RADICAL_WORK,
-            KangxiRadicals::KangxiRadicalOneself => KANGXI_RADICAL_ONESELF,
-            KangxiRadicals::KangxiRadicalTurban => KANGXI_RADICAL_TURBAN,
-            KangxiRadicals::KangxiRadicalDry => KANGXI_RADICAL_DRY,
-            KangxiRadicals::KangxiRadicalShortThread => KANGXI_RADICAL_SHORT_THREAD,
-            KangxiRadicals::KangxiRadicalDottedCliff => KANGXI_RADICAL_DOTTED_CLIFF,
-            KangxiRadicals::KangxiRadicalLongStride => KANGXI_RADICAL_LONG_STRIDE,
-            KangxiRadicals::KangxiRadicalTwoHands => KANGXI_RADICAL_TWO_HANDS,
-            KangxiRadicals::KangxiRadicalShoot => KANGXI_RADICAL_SHOOT,
-            KangxiRadicals::KangxiRadicalBow => KANGXI_RADICAL_BOW,
-            KangxiRadicals::KangxiRadicalSnout => KANGXI_RADICAL_SNOUT,
-            KangxiRadicals::KangxiRadicalBristle => KANGXI_RADICAL_BRISTLE,
-            KangxiRadicals::KangxiRadicalStep => KANGXI_RADICAL_STEP,
-            KangxiRadicals::KangxiRadicalHeart => KANGXI_RADICAL_HEART,
-            KangxiRadicals::KangxiRadicalHalberd => KANGXI_RADICAL_HALBERD,
-            KangxiRadicals::KangxiRadicalDoor => KANGXI_RADICAL_DOOR,
-            KangxiRadicals::KangxiRadicalHand => KANGXI_RADICAL_HAND,
-            KangxiRadicals::KangxiRadicalBranch => KANGXI_RADICAL_BRANCH,
-            KangxiRadicals::KangxiRadicalRap => KANGXI_RADICAL_RAP,
-            KangxiRadicals::KangxiRadicalScript => KANGXI_RADICAL_SCRIPT,
-            KangxiRadicals::KangxiRadicalDipper => KANGXI_RADICAL_DIPPER,
-            KangxiRadicals::KangxiRadicalAxe => KANGXI_RADICAL_AXE,
-            KangxiRadicals::KangxiRadicalSquare => KANGXI_RADICAL_SQUARE,
-            KangxiRadicals::KangxiRadicalNot => KANGXI_RADICAL_NOT,
-            KangxiRadicals::KangxiRadicalSun => KANGXI_RADICAL_SUN,
-            KangxiRadicals::KangxiRadicalSay => KANGXI_RADICAL_SAY,
-            KangxiRadicals::KangxiRadicalMoon => KANGXI_RADICAL_MOON,
-            KangxiRadicals::KangxiRadicalTree => KANGXI_RADICAL_TREE,
-            KangxiRadicals::KangxiRadicalLack => KANGXI_RADICAL_LACK,
-            KangxiRadicals::KangxiRadicalStop => KANGXI_RADICAL_STOP,
-            KangxiRadicals::KangxiRadicalDeath => KANGXI_RADICAL_DEATH,
-            KangxiRadicals::KangxiRadicalWeapon => KANGXI_RADICAL_WEAPON,
-            KangxiRadicals::KangxiRadicalDoNot => KANGXI_RADICAL_DO_NOT,
-            KangxiRadicals::KangxiRadicalCompare => KANGXI_RADICAL_COMPARE,
-            KangxiRadicals::KangxiRadicalFur => KANGXI_RADICAL_FUR,
-            KangxiRadicals::KangxiRadicalClan => KANGXI_RADICAL_CLAN,
-            KangxiRadicals::KangxiRadicalSteam => KANGXI_RADICAL_STEAM,
-            KangxiRadicals::KangxiRadicalWater => KANGXI_RADICAL_WATER,
-            KangxiRadicals::KangxiRadicalFire => KANGXI_RADICAL_FIRE,
-            KangxiRadicals::KangxiRadicalClaw => KANGXI_RADICAL_CLAW,
-            KangxiRadicals::KangxiRadicalFather => KANGXI_RADICAL_FATHER,
-            KangxiRadicals::KangxiRadicalDoubleX => KANGXI_RADICAL_DOUBLE_X,
-            KangxiRadicals::KangxiRadicalHalfTreeTrunk => KANGXI_RADICAL_HALF_TREE_TRUNK,
-            KangxiRadicals::KangxiRadicalSlice => KANGXI_RADICAL_SLICE,
-            KangxiRadicals::KangxiRadicalFang => KANGXI_RADICAL_FANG,
-            KangxiRadicals::KangxiRadicalCow => KANGXI_RADICAL_COW,
-            KangxiRadicals::KangxiRadicalDog => KANGXI_RADICAL_DOG,
-            KangxiRadicals::KangxiRadicalProfound => KANGXI_RADICAL_PROFOUND,
-            KangxiRadicals::KangxiRadicalJade => KANGXI_RADICAL_JADE,
-            KangxiRadicals::KangxiRadicalMelon => KANGXI_RADICAL_MELON,
-            KangxiRadicals::KangxiRadicalTile => KANGXI_RADICAL_TILE,
-            KangxiRadicals::KangxiRadicalSweet => KANGXI_RADICAL_SWEET,
-            KangxiRadicals::KangxiRadicalLife => KANGXI_RADICAL_LIFE,
-            KangxiRadicals::KangxiRadicalUse => KANGXI_RADICAL_USE,
-            KangxiRadicals::KangxiRadicalField => KANGXI_RADICAL_FIELD,
-            KangxiRadicals::KangxiRadicalBoltOfCloth => KANGXI_RADICAL_BOLT_OF_CLOTH,
-            KangxiRadicals::KangxiRadicalSickness => KANGXI_RADICAL_SICKNESS,
-            KangxiRadicals::KangxiRadicalDottedTent => KANGXI_RADICAL_DOTTED_TENT,
-            KangxiRadicals::KangxiRadicalWhite => KANGXI_RADICAL_WHITE,
-            KangxiRadicals::KangxiRadicalSkin => KANGXI_RADICAL_SKIN,
-            KangxiRadicals::KangxiRadicalDish => KANGXI_RADICAL_DISH,
-            KangxiRadicals::KangxiRadicalEye => KANGXI_RADICAL_EYE,
-            KangxiRadicals::KangxiRadicalSpear => KANGXI_RADICAL_SPEAR,
-            KangxiRadicals::KangxiRadicalArrow => KANGXI_RADICAL_ARROW,
-            KangxiRadicals::KangxiRadicalStone => KANGXI_RADICAL_STONE,
-            KangxiRadicals::KangxiRadicalSpirit => KANGXI_RADICAL_SPIRIT,
-            KangxiRadicals::KangxiRadicalTrack => KANGXI_RADICAL_TRACK,
-            KangxiRadicals::KangxiRadicalGrain => KANGXI_RADICAL_GRAIN,
-            KangxiRadicals::KangxiRadicalCave => KANGXI_RADICAL_CAVE,
-            KangxiRadicals::KangxiRadicalStand => KANGXI_RADICAL_STAND,
-            KangxiRadicals::KangxiRadicalBamboo => KANGXI_RADICAL_BAMBOO,
-            KangxiRadicals::KangxiRadicalRice => KANGXI_RADICAL_RICE,
-            KangxiRadicals::KangxiRadicalSilk => KANGXI_RADICAL_SILK,
-            KangxiRadicals::KangxiRadicalJar => KANGXI_RADICAL_JAR,
-            KangxiRadicals::KangxiRadicalNet => KANGXI_RADICAL_NET,
-            KangxiRadicals::KangxiRadicalSheep => KANGXI_RADICAL_SHEEP,
-            KangxiRadicals::KangxiRadicalFeather => KANGXI_RADICAL_FEATHER,
-            KangxiRadicals::KangxiRadicalOld => KANGXI_RADICAL_OLD,
-            KangxiRadicals::KangxiRadicalAnd => KANGXI_RADICAL_AND,
-            KangxiRadicals::KangxiRadicalPlow => KANGXI_RADICAL_PLOW,
-            KangxiRadicals::KangxiRadicalEar => KANGXI_RADICAL_EAR,
-            KangxiRadicals::KangxiRadicalBrush => KANGXI_RADICAL_BRUSH,
-            KangxiRadicals::KangxiRadicalMeat => KANGXI_RADICAL_MEAT,
-            KangxiRadicals::KangxiRadicalMinister => KANGXI_RADICAL_MINISTER,
-            KangxiRadicals::KangxiRadicalSelf => KANGXI_RADICAL_SELF,
-            KangxiRadicals::KangxiRadicalArrive => KANGXI_RADICAL_ARRIVE,
-            KangxiRadicals::KangxiRadicalMortar => KANGXI_RADICAL_MORTAR,
-            KangxiRadicals::KangxiRadicalTongue => KANGXI_RADICAL_TONGUE,
-            KangxiRadicals::KangxiRadicalOppose => KANGXI_RADICAL_OPPOSE,
-            KangxiRadicals::KangxiRadicalBoat => KANGXI_RADICAL_BOAT,
-            KangxiRadicals::KangxiRadicalStopping => KANGXI_RADICAL_STOPPING,
-            KangxiRadicals::KangxiRadicalColor => KANGXI_RADICAL_COLOR,
-            KangxiRadicals::KangxiRadicalGrass => KANGXI_RADICAL_GRASS,
-            KangxiRadicals::KangxiRadicalTiger => KANGXI_RADICAL_TIGER,
-            KangxiRadicals::KangxiRadicalInsect => KANGXI_RADICAL_INSECT,
-            KangxiRadicals::KangxiRadicalBlood => KANGXI_RADICAL_BLOOD,
-            KangxiRadicals::KangxiRadicalWalkEnclosure => KANGXI_RADICAL_WALK_ENCLOSURE,
-            KangxiRadicals::KangxiRadicalClothes => KANGXI_RADICAL_CLOTHES,
-            KangxiRadicals::KangxiRadicalWest => KANGXI_RADICAL_WEST,
-            KangxiRadicals::KangxiRadicalSee => KANGXI_RADICAL_SEE,
-            KangxiRadicals::KangxiRadicalHorn => KANGXI_RADICAL_HORN,
-            KangxiRadicals::KangxiRadicalSpeech => KANGXI_RADICAL_SPEECH,
-            KangxiRadicals::KangxiRadicalValley => KANGXI_RADICAL_VALLEY,
-            KangxiRadicals::KangxiRadicalBean => KANGXI_RADICAL_BEAN,
-            KangxiRadicals::KangxiRadicalPig => KANGXI_RADICAL_PIG,
-            KangxiRadicals::KangxiRadicalBadger => KANGXI_RADICAL_BADGER,
-            KangxiRadicals::KangxiRadicalShell => KANGXI_RADICAL_SHELL,
-            KangxiRadicals::KangxiRadicalRed => KANGXI_RADICAL_RED,
-            KangxiRadicals::KangxiRadicalRun => KANGXI_RADICAL_RUN,
-            KangxiRadicals::KangxiRadicalFoot => KANGXI_RADICAL_FOOT,
-            KangxiRadicals::KangxiRadicalBody => KANGXI_RADICAL_BODY,
-            KangxiRadicals::KangxiRadicalCart => KANGXI_RADICAL_CART,
-            KangxiRadicals::KangxiRadicalBitter => KANGXI_RADICAL_BITTER,
-            KangxiRadicals::KangxiRadicalMorning => KANGXI_RADICAL_MORNING,
-            KangxiRadicals::KangxiRadicalWalk => KANGXI_RADICAL_WALK,
-            KangxiRadicals::KangxiRadicalCity => KANGXI_RADICAL_CITY,
-            KangxiRadicals::KangxiRadicalWine => KANGXI_RADICAL_WINE,
-            KangxiRadicals::KangxiRadicalDistinguish => KANGXI_RADICAL_DISTINGUISH,
-            KangxiRadicals::KangxiRadicalVillage => KANGXI_RADICAL_VILLAGE,
-            KangxiRadicals::KangxiRadicalGold => KANGXI_RADICAL_GOLD,
-            KangxiRadicals::KangxiRadicalLong => KANGXI_RADICAL_LONG,
-            KangxiRadicals::KangxiRadicalGate => KANGXI_RADICAL_GATE,
-            KangxiRadicals::KangxiRadicalMound => KANGXI_RADICAL_MOUND,
-            KangxiRadicals::KangxiRadicalSlave => KANGXI_RADICAL_SLAVE,
-            KangxiRadicals::KangxiRadicalShortTailedBird => KANGXI_RADICAL_SHORT_TAILED_BIRD,
-            KangxiRadicals::KangxiRadicalRain => KANGXI_RADICAL_RAIN,
-            KangxiRadicals::KangxiRadicalBlue => KANGXI_RADICAL_BLUE,
-            KangxiRadicals::KangxiRadicalWrong => KANGXI_RADICAL_WRONG,
-            KangxiRadicals::KangxiRadicalFace => KANGXI_RADICAL_FACE,
-            KangxiRadicals::KangxiRadicalLeather => KANGXI_RADICAL_LEATHER,
-            KangxiRadicals::KangxiRadicalTannedLeather => KANGXI_RADICAL_TANNED_LEATHER,
-            KangxiRadicals::KangxiRadicalLeek => KANGXI_RADICAL_LEEK,
-            KangxiRadicals::KangxiRadicalSound => KANGXI_RADICAL_SOUND,
-            KangxiRadicals::KangxiRadicalLeaf => KANGXI_RADICAL_LEAF,
-            KangxiRadicals::KangxiRadicalWind => KANGXI_RADICAL_WIND,
-            KangxiRadicals::KangxiRadicalFly => KANGXI_RADICAL_FLY,
-            KangxiRadicals::KangxiRadicalEat => KANGXI_RADICAL_EAT,
-            KangxiRadicals::KangxiRadicalHead => KANGXI_RADICAL_HEAD,
-            KangxiRadicals::KangxiRadicalFragrant => KANGXI_RADICAL_FRAGRANT,
-            KangxiRadicals::KangxiRadicalHorse => KANGXI_RADICAL_HORSE,
-            KangxiRadicals::KangxiRadicalBone => KANGXI_RADICAL_BONE,
-            KangxiRadicals::KangxiRadicalTall => KANGXI_RADICAL_TALL,
-            KangxiRadicals::KangxiRadicalHair => KANGXI_RADICAL_HAIR,
-            KangxiRadicals::KangxiRadicalFight => KANGXI_RADICAL_FIGHT,
-            KangxiRadicals::KangxiRadicalSacrificialWine => KANGXI_RADICAL_SACRIFICIAL_WINE,
-            KangxiRadicals::KangxiRadicalCauldron => KANGXI_RADICAL_CAULDRON,
-            KangxiRadicals::KangxiRadicalGhost => KANGXI_RADICAL_GHOST,
-            KangxiRadicals::KangxiRadicalFish => KANGXI_RADICAL_FISH,
-            KangxiRadicals::KangxiRadicalBird => KANGXI_RADICAL_BIRD,
-            KangxiRadicals::KangxiRadicalSalt => KANGXI_RADICAL_SALT,
-            KangxiRadicals::KangxiRadicalDeer => KANGXI_RADICAL_DEER,
-            KangxiRadicals::KangxiRadicalWheat => KANGXI_RADICAL_WHEAT,
-            KangxiRadicals::KangxiRadicalHemp => KANGXI_RADICAL_HEMP,
-            KangxiRadicals::KangxiRadicalYellow => KANGXI_RADICAL_YELLOW,
-            KangxiRadicals::KangxiRadicalMillet => KANGXI_RADICAL_MILLET,
-            KangxiRadicals::KangxiRadicalBlack => KANGXI_RADICAL_BLACK,
-            KangxiRadicals::KangxiRadicalEmbroidery => KANGXI_RADICAL_EMBROIDERY,
-            KangxiRadicals::KangxiRadicalFrog => KANGXI_RADICAL_FROG,
-            KangxiRadicals::KangxiRadicalTripod => KANGXI_RADICAL_TRIPOD,
-            KangxiRadicals::KangxiRadicalDrum => KANGXI_RADICAL_DRUM,
-            KangxiRadicals::KangxiRadicalRat => KANGXI_RADICAL_RAT,
-            KangxiRadicals::KangxiRadicalNose => KANGXI_RADICAL_NOSE,
-            KangxiRadicals::KangxiRadicalEven => KANGXI_RADICAL_EVEN,
-            KangxiRadicals::KangxiRadicalTooth => KANGXI_RADICAL_TOOTH,
-            KangxiRadicals::KangxiRadicalDragon => KANGXI_RADICAL_DRAGON,
-            KangxiRadicals::KangxiRadicalTurtle => KANGXI_RADICAL_TURTLE,
-            KangxiRadicals::KangxiRadicalFlute => KANGXI_RADICAL_FLUTE,
+            KangxiRadicals::KangxiRadicalOne => '⼀',
+            KangxiRadicals::KangxiRadicalLine => '⼁',
+            KangxiRadicals::KangxiRadicalDot => '⼂',
+            KangxiRadicals::KangxiRadicalSlash => '⼃',
+            KangxiRadicals::KangxiRadicalSecond => '⼄',
+            KangxiRadicals::KangxiRadicalHook => '⼅',
+            KangxiRadicals::KangxiRadicalTwo => '⼆',
+            KangxiRadicals::KangxiRadicalLid => '⼇',
+            KangxiRadicals::KangxiRadicalMan => '⼈',
+            KangxiRadicals::KangxiRadicalLegs => '⼉',
+            KangxiRadicals::KangxiRadicalEnter => '⼊',
+            KangxiRadicals::KangxiRadicalEight => '⼋',
+            KangxiRadicals::KangxiRadicalDownBox => '⼌',
+            KangxiRadicals::KangxiRadicalCover => '⼍',
+            KangxiRadicals::KangxiRadicalIce => '⼎',
+            KangxiRadicals::KangxiRadicalTable => '⼏',
+            KangxiRadicals::KangxiRadicalOpenBox => '⼐',
+            KangxiRadicals::KangxiRadicalKnife => '⼑',
+            KangxiRadicals::KangxiRadicalPower => '⼒',
+            KangxiRadicals::KangxiRadicalWrap => '⼓',
+            KangxiRadicals::KangxiRadicalSpoon => '⼔',
+            KangxiRadicals::KangxiRadicalRightOpenBox => '⼕',
+            KangxiRadicals::KangxiRadicalHidingEnclosure => '⼖',
+            KangxiRadicals::KangxiRadicalTen => '⼗',
+            KangxiRadicals::KangxiRadicalDivination => '⼘',
+            KangxiRadicals::KangxiRadicalSeal => '⼙',
+            KangxiRadicals::KangxiRadicalCliff => '⼚',
+            KangxiRadicals::KangxiRadicalPrivate => '⼛',
+            KangxiRadicals::KangxiRadicalAgain => '⼜',
+            KangxiRadicals::KangxiRadicalMouth => '⼝',
+            KangxiRadicals::KangxiRadicalEnclosure => '⼞',
+            KangxiRadicals::KangxiRadicalEarth => '⼟',
+            KangxiRadicals::KangxiRadicalScholar => '⼠',
+            KangxiRadicals::KangxiRadicalGo => '⼡',
+            KangxiRadicals::KangxiRadicalGoSlowly => '⼢',
+            KangxiRadicals::KangxiRadicalEvening => '⼣',
+            KangxiRadicals::KangxiRadicalBig => '⼤',
+            KangxiRadicals::KangxiRadicalWoman => '⼥',
+            KangxiRadicals::KangxiRadicalChild => '⼦',
+            KangxiRadicals::KangxiRadicalRoof => '⼧',
+            KangxiRadicals::KangxiRadicalInch => '⼨',
+            KangxiRadicals::KangxiRadicalSmall => '⼩',
+            KangxiRadicals::KangxiRadicalLame => '⼪',
+            KangxiRadicals::KangxiRadicalCorpse => '⼫',
+            KangxiRadicals::KangxiRadicalSprout => '⼬',
+            KangxiRadicals::KangxiRadicalMountain => '⼭',
+            KangxiRadicals::KangxiRadicalRiver => '⼮',
+            KangxiRadicals::KangxiRadicalWork => '⼯',
+            KangxiRadicals::KangxiRadicalOneself => '⼰',
+            KangxiRadicals::KangxiRadicalTurban => '⼱',
+            KangxiRadicals::KangxiRadicalDry => '⼲',
+            KangxiRadicals::KangxiRadicalShortThread => '⼳',
+            KangxiRadicals::KangxiRadicalDottedCliff => '⼴',
+            KangxiRadicals::KangxiRadicalLongStride => '⼵',
+            KangxiRadicals::KangxiRadicalTwoHands => '⼶',
+            KangxiRadicals::KangxiRadicalShoot => '⼷',
+            KangxiRadicals::KangxiRadicalBow => '⼸',
+            KangxiRadicals::KangxiRadicalSnout => '⼹',
+            KangxiRadicals::KangxiRadicalBristle => '⼺',
+            KangxiRadicals::KangxiRadicalStep => '⼻',
+            KangxiRadicals::KangxiRadicalHeart => '⼼',
+            KangxiRadicals::KangxiRadicalHalberd => '⼽',
+            KangxiRadicals::KangxiRadicalDoor => '⼾',
+            KangxiRadicals::KangxiRadicalHand => '⼿',
+            KangxiRadicals::KangxiRadicalBranch => '⽀',
+            KangxiRadicals::KangxiRadicalRap => '⽁',
+            KangxiRadicals::KangxiRadicalScript => '⽂',
+            KangxiRadicals::KangxiRadicalDipper => '⽃',
+            KangxiRadicals::KangxiRadicalAxe => '⽄',
+            KangxiRadicals::KangxiRadicalSquare => '⽅',
+            KangxiRadicals::KangxiRadicalNot => '⽆',
+            KangxiRadicals::KangxiRadicalSun => '⽇',
+            KangxiRadicals::KangxiRadicalSay => '⽈',
+            KangxiRadicals::KangxiRadicalMoon => '⽉',
+            KangxiRadicals::KangxiRadicalTree => '⽊',
+            KangxiRadicals::KangxiRadicalLack => '⽋',
+            KangxiRadicals::KangxiRadicalStop => '⽌',
+            KangxiRadicals::KangxiRadicalDeath => '⽍',
+            KangxiRadicals::KangxiRadicalWeapon => '⽎',
+            KangxiRadicals::KangxiRadicalDoNot => '⽏',
+            KangxiRadicals::KangxiRadicalCompare => '⽐',
+            KangxiRadicals::KangxiRadicalFur => '⽑',
+            KangxiRadicals::KangxiRadicalClan => '⽒',
+            KangxiRadicals::KangxiRadicalSteam => '⽓',
+            KangxiRadicals::KangxiRadicalWater => '⽔',
+            KangxiRadicals::KangxiRadicalFire => '⽕',
+            KangxiRadicals::KangxiRadicalClaw => '⽖',
+            KangxiRadicals::KangxiRadicalFather => '⽗',
+            KangxiRadicals::KangxiRadicalDoubleX => '⽘',
+            KangxiRadicals::KangxiRadicalHalfTreeTrunk => '⽙',
+            KangxiRadicals::KangxiRadicalSlice => '⽚',
+            KangxiRadicals::KangxiRadicalFang => '⽛',
+            KangxiRadicals::KangxiRadicalCow => '⽜',
+            KangxiRadicals::KangxiRadicalDog => '⽝',
+            KangxiRadicals::KangxiRadicalProfound => '⽞',
+            KangxiRadicals::KangxiRadicalJade => '⽟',
+            KangxiRadicals::KangxiRadicalMelon => '⽠',
+            KangxiRadicals::KangxiRadicalTile => '⽡',
+            KangxiRadicals::KangxiRadicalSweet => '⽢',
+            KangxiRadicals::KangxiRadicalLife => '⽣',
+            KangxiRadicals::KangxiRadicalUse => '⽤',
+            KangxiRadicals::KangxiRadicalField => '⽥',
+            KangxiRadicals::KangxiRadicalBoltOfCloth => '⽦',
+            KangxiRadicals::KangxiRadicalSickness => '⽧',
+            KangxiRadicals::KangxiRadicalDottedTent => '⽨',
+            KangxiRadicals::KangxiRadicalWhite => '⽩',
+            KangxiRadicals::KangxiRadicalSkin => '⽪',
+            KangxiRadicals::KangxiRadicalDish => '⽫',
+            KangxiRadicals::KangxiRadicalEye => '⽬',
+            KangxiRadicals::KangxiRadicalSpear => '⽭',
+            KangxiRadicals::KangxiRadicalArrow => '⽮',
+            KangxiRadicals::KangxiRadicalStone => '⽯',
+            KangxiRadicals::KangxiRadicalSpirit => '⽰',
+            KangxiRadicals::KangxiRadicalTrack => '⽱',
+            KangxiRadicals::KangxiRadicalGrain => '⽲',
+            KangxiRadicals::KangxiRadicalCave => '⽳',
+            KangxiRadicals::KangxiRadicalStand => '⽴',
+            KangxiRadicals::KangxiRadicalBamboo => '⽵',
+            KangxiRadicals::KangxiRadicalRice => '⽶',
+            KangxiRadicals::KangxiRadicalSilk => '⽷',
+            KangxiRadicals::KangxiRadicalJar => '⽸',
+            KangxiRadicals::KangxiRadicalNet => '⽹',
+            KangxiRadicals::KangxiRadicalSheep => '⽺',
+            KangxiRadicals::KangxiRadicalFeather => '⽻',
+            KangxiRadicals::KangxiRadicalOld => '⽼',
+            KangxiRadicals::KangxiRadicalAnd => '⽽',
+            KangxiRadicals::KangxiRadicalPlow => '⽾',
+            KangxiRadicals::KangxiRadicalEar => '⽿',
+            KangxiRadicals::KangxiRadicalBrush => '⾀',
+            KangxiRadicals::KangxiRadicalMeat => '⾁',
+            KangxiRadicals::KangxiRadicalMinister => '⾂',
+            KangxiRadicals::KangxiRadicalSelf => '⾃',
+            KangxiRadicals::KangxiRadicalArrive => '⾄',
+            KangxiRadicals::KangxiRadicalMortar => '⾅',
+            KangxiRadicals::KangxiRadicalTongue => '⾆',
+            KangxiRadicals::KangxiRadicalOppose => '⾇',
+            KangxiRadicals::KangxiRadicalBoat => '⾈',
+            KangxiRadicals::KangxiRadicalStopping => '⾉',
+            KangxiRadicals::KangxiRadicalColor => '⾊',
+            KangxiRadicals::KangxiRadicalGrass => '⾋',
+            KangxiRadicals::KangxiRadicalTiger => '⾌',
+            KangxiRadicals::KangxiRadicalInsect => '⾍',
+            KangxiRadicals::KangxiRadicalBlood => '⾎',
+            KangxiRadicals::KangxiRadicalWalkEnclosure => '⾏',
+            KangxiRadicals::KangxiRadicalClothes => '⾐',
+            KangxiRadicals::KangxiRadicalWest => '⾑',
+            KangxiRadicals::KangxiRadicalSee => '⾒',
+            KangxiRadicals::KangxiRadicalHorn => '⾓',
+            KangxiRadicals::KangxiRadicalSpeech => '⾔',
+            KangxiRadicals::KangxiRadicalValley => '⾕',
+            KangxiRadicals::KangxiRadicalBean => '⾖',
+            KangxiRadicals::KangxiRadicalPig => '⾗',
+            KangxiRadicals::KangxiRadicalBadger => '⾘',
+            KangxiRadicals::KangxiRadicalShell => '⾙',
+            KangxiRadicals::KangxiRadicalRed => '⾚',
+            KangxiRadicals::KangxiRadicalRun => '⾛',
+            KangxiRadicals::KangxiRadicalFoot => '⾜',
+            KangxiRadicals::KangxiRadicalBody => '⾝',
+            KangxiRadicals::KangxiRadicalCart => '⾞',
+            KangxiRadicals::KangxiRadicalBitter => '⾟',
+            KangxiRadicals::KangxiRadicalMorning => '⾠',
+            KangxiRadicals::KangxiRadicalWalk => '⾡',
+            KangxiRadicals::KangxiRadicalCity => '⾢',
+            KangxiRadicals::KangxiRadicalWine => '⾣',
+            KangxiRadicals::KangxiRadicalDistinguish => '⾤',
+            KangxiRadicals::KangxiRadicalVillage => '⾥',
+            KangxiRadicals::KangxiRadicalGold => '⾦',
+            KangxiRadicals::KangxiRadicalLong => '⾧',
+            KangxiRadicals::KangxiRadicalGate => '⾨',
+            KangxiRadicals::KangxiRadicalMound => '⾩',
+            KangxiRadicals::KangxiRadicalSlave => '⾪',
+            KangxiRadicals::KangxiRadicalShortTailedBird => '⾫',
+            KangxiRadicals::KangxiRadicalRain => '⾬',
+            KangxiRadicals::KangxiRadicalBlue => '⾭',
+            KangxiRadicals::KangxiRadicalWrong => '⾮',
+            KangxiRadicals::KangxiRadicalFace => '⾯',
+            KangxiRadicals::KangxiRadicalLeather => '⾰',
+            KangxiRadicals::KangxiRadicalTannedLeather => '⾱',
+            KangxiRadicals::KangxiRadicalLeek => '⾲',
+            KangxiRadicals::KangxiRadicalSound => '⾳',
+            KangxiRadicals::KangxiRadicalLeaf => '⾴',
+            KangxiRadicals::KangxiRadicalWind => '⾵',
+            KangxiRadicals::KangxiRadicalFly => '⾶',
+            KangxiRadicals::KangxiRadicalEat => '⾷',
+            KangxiRadicals::KangxiRadicalHead => '⾸',
+            KangxiRadicals::KangxiRadicalFragrant => '⾹',
+            KangxiRadicals::KangxiRadicalHorse => '⾺',
+            KangxiRadicals::KangxiRadicalBone => '⾻',
+            KangxiRadicals::KangxiRadicalTall => '⾼',
+            KangxiRadicals::KangxiRadicalHair => '⾽',
+            KangxiRadicals::KangxiRadicalFight => '⾾',
+            KangxiRadicals::KangxiRadicalSacrificialWine => '⾿',
+            KangxiRadicals::KangxiRadicalCauldron => '⿀',
+            KangxiRadicals::KangxiRadicalGhost => '⿁',
+            KangxiRadicals::KangxiRadicalFish => '⿂',
+            KangxiRadicals::KangxiRadicalBird => '⿃',
+            KangxiRadicals::KangxiRadicalSalt => '⿄',
+            KangxiRadicals::KangxiRadicalDeer => '⿅',
+            KangxiRadicals::KangxiRadicalWheat => '⿆',
+            KangxiRadicals::KangxiRadicalHemp => '⿇',
+            KangxiRadicals::KangxiRadicalYellow => '⿈',
+            KangxiRadicals::KangxiRadicalMillet => '⿉',
+            KangxiRadicals::KangxiRadicalBlack => '⿊',
+            KangxiRadicals::KangxiRadicalEmbroidery => '⿋',
+            KangxiRadicals::KangxiRadicalFrog => '⿌',
+            KangxiRadicals::KangxiRadicalTripod => '⿍',
+            KangxiRadicals::KangxiRadicalDrum => '⿎',
+            KangxiRadicals::KangxiRadicalRat => '⿏',
+            KangxiRadicals::KangxiRadicalNose => '⿐',
+            KangxiRadicals::KangxiRadicalEven => '⿑',
+            KangxiRadicals::KangxiRadicalTooth => '⿒',
+            KangxiRadicals::KangxiRadicalDragon => '⿓',
+            KangxiRadicals::KangxiRadicalTurtle => '⿔',
+            KangxiRadicals::KangxiRadicalFlute => '⿕',
         }
     }
 }
@@ -1088,222 +656,221 @@ impl Into<char> for KangxiRadicals {
 impl std::convert::TryFrom<char> for KangxiRadicals {
     type Error = ();
     fn try_from(c: char) -> Result<Self, Self::Error> {
-        use constants::*;
         match c {
-            KANGXI_RADICAL_ONE => Ok(KangxiRadicals::KangxiRadicalOne),
-            KANGXI_RADICAL_LINE => Ok(KangxiRadicals::KangxiRadicalLine),
-            KANGXI_RADICAL_DOT => Ok(KangxiRadicals::KangxiRadicalDot),
-            KANGXI_RADICAL_SLASH => Ok(KangxiRadicals::KangxiRadicalSlash),
-            KANGXI_RADICAL_SECOND => Ok(KangxiRadicals::KangxiRadicalSecond),
-            KANGXI_RADICAL_HOOK => Ok(KangxiRadicals::KangxiRadicalHook),
-            KANGXI_RADICAL_TWO => Ok(KangxiRadicals::KangxiRadicalTwo),
-            KANGXI_RADICAL_LID => Ok(KangxiRadicals::KangxiRadicalLid),
-            KANGXI_RADICAL_MAN => Ok(KangxiRadicals::KangxiRadicalMan),
-            KANGXI_RADICAL_LEGS => Ok(KangxiRadicals::KangxiRadicalLegs),
-            KANGXI_RADICAL_ENTER => Ok(KangxiRadicals::KangxiRadicalEnter),
-            KANGXI_RADICAL_EIGHT => Ok(KangxiRadicals::KangxiRadicalEight),
-            KANGXI_RADICAL_DOWN_BOX => Ok(KangxiRadicals::KangxiRadicalDownBox),
-            KANGXI_RADICAL_COVER => Ok(KangxiRadicals::KangxiRadicalCover),
-            KANGXI_RADICAL_ICE => Ok(KangxiRadicals::KangxiRadicalIce),
-            KANGXI_RADICAL_TABLE => Ok(KangxiRadicals::KangxiRadicalTable),
-            KANGXI_RADICAL_OPEN_BOX => Ok(KangxiRadicals::KangxiRadicalOpenBox),
-            KANGXI_RADICAL_KNIFE => Ok(KangxiRadicals::KangxiRadicalKnife),
-            KANGXI_RADICAL_POWER => Ok(KangxiRadicals::KangxiRadicalPower),
-            KANGXI_RADICAL_WRAP => Ok(KangxiRadicals::KangxiRadicalWrap),
-            KANGXI_RADICAL_SPOON => Ok(KangxiRadicals::KangxiRadicalSpoon),
-            KANGXI_RADICAL_RIGHT_OPEN_BOX => Ok(KangxiRadicals::KangxiRadicalRightOpenBox),
-            KANGXI_RADICAL_HIDING_ENCLOSURE => Ok(KangxiRadicals::KangxiRadicalHidingEnclosure),
-            KANGXI_RADICAL_TEN => Ok(KangxiRadicals::KangxiRadicalTen),
-            KANGXI_RADICAL_DIVINATION => Ok(KangxiRadicals::KangxiRadicalDivination),
-            KANGXI_RADICAL_SEAL => Ok(KangxiRadicals::KangxiRadicalSeal),
-            KANGXI_RADICAL_CLIFF => Ok(KangxiRadicals::KangxiRadicalCliff),
-            KANGXI_RADICAL_PRIVATE => Ok(KangxiRadicals::KangxiRadicalPrivate),
-            KANGXI_RADICAL_AGAIN => Ok(KangxiRadicals::KangxiRadicalAgain),
-            KANGXI_RADICAL_MOUTH => Ok(KangxiRadicals::KangxiRadicalMouth),
-            KANGXI_RADICAL_ENCLOSURE => Ok(KangxiRadicals::KangxiRadicalEnclosure),
-            KANGXI_RADICAL_EARTH => Ok(KangxiRadicals::KangxiRadicalEarth),
-            KANGXI_RADICAL_SCHOLAR => Ok(KangxiRadicals::KangxiRadicalScholar),
-            KANGXI_RADICAL_GO => Ok(KangxiRadicals::KangxiRadicalGo),
-            KANGXI_RADICAL_GO_SLOWLY => Ok(KangxiRadicals::KangxiRadicalGoSlowly),
-            KANGXI_RADICAL_EVENING => Ok(KangxiRadicals::KangxiRadicalEvening),
-            KANGXI_RADICAL_BIG => Ok(KangxiRadicals::KangxiRadicalBig),
-            KANGXI_RADICAL_WOMAN => Ok(KangxiRadicals::KangxiRadicalWoman),
-            KANGXI_RADICAL_CHILD => Ok(KangxiRadicals::KangxiRadicalChild),
-            KANGXI_RADICAL_ROOF => Ok(KangxiRadicals::KangxiRadicalRoof),
-            KANGXI_RADICAL_INCH => Ok(KangxiRadicals::KangxiRadicalInch),
-            KANGXI_RADICAL_SMALL => Ok(KangxiRadicals::KangxiRadicalSmall),
-            KANGXI_RADICAL_LAME => Ok(KangxiRadicals::KangxiRadicalLame),
-            KANGXI_RADICAL_CORPSE => Ok(KangxiRadicals::KangxiRadicalCorpse),
-            KANGXI_RADICAL_SPROUT => Ok(KangxiRadicals::KangxiRadicalSprout),
-            KANGXI_RADICAL_MOUNTAIN => Ok(KangxiRadicals::KangxiRadicalMountain),
-            KANGXI_RADICAL_RIVER => Ok(KangxiRadicals::KangxiRadicalRiver),
-            KANGXI_RADICAL_WORK => Ok(KangxiRadicals::KangxiRadicalWork),
-            KANGXI_RADICAL_ONESELF => Ok(KangxiRadicals::KangxiRadicalOneself),
-            KANGXI_RADICAL_TURBAN => Ok(KangxiRadicals::KangxiRadicalTurban),
-            KANGXI_RADICAL_DRY => Ok(KangxiRadicals::KangxiRadicalDry),
-            KANGXI_RADICAL_SHORT_THREAD => Ok(KangxiRadicals::KangxiRadicalShortThread),
-            KANGXI_RADICAL_DOTTED_CLIFF => Ok(KangxiRadicals::KangxiRadicalDottedCliff),
-            KANGXI_RADICAL_LONG_STRIDE => Ok(KangxiRadicals::KangxiRadicalLongStride),
-            KANGXI_RADICAL_TWO_HANDS => Ok(KangxiRadicals::KangxiRadicalTwoHands),
-            KANGXI_RADICAL_SHOOT => Ok(KangxiRadicals::KangxiRadicalShoot),
-            KANGXI_RADICAL_BOW => Ok(KangxiRadicals::KangxiRadicalBow),
-            KANGXI_RADICAL_SNOUT => Ok(KangxiRadicals::KangxiRadicalSnout),
-            KANGXI_RADICAL_BRISTLE => Ok(KangxiRadicals::KangxiRadicalBristle),
-            KANGXI_RADICAL_STEP => Ok(KangxiRadicals::KangxiRadicalStep),
-            KANGXI_RADICAL_HEART => Ok(KangxiRadicals::KangxiRadicalHeart),
-            KANGXI_RADICAL_HALBERD => Ok(KangxiRadicals::KangxiRadicalHalberd),
-            KANGXI_RADICAL_DOOR => Ok(KangxiRadicals::KangxiRadicalDoor),
-            KANGXI_RADICAL_HAND => Ok(KangxiRadicals::KangxiRadicalHand),
-            KANGXI_RADICAL_BRANCH => Ok(KangxiRadicals::KangxiRadicalBranch),
-            KANGXI_RADICAL_RAP => Ok(KangxiRadicals::KangxiRadicalRap),
-            KANGXI_RADICAL_SCRIPT => Ok(KangxiRadicals::KangxiRadicalScript),
-            KANGXI_RADICAL_DIPPER => Ok(KangxiRadicals::KangxiRadicalDipper),
-            KANGXI_RADICAL_AXE => Ok(KangxiRadicals::KangxiRadicalAxe),
-            KANGXI_RADICAL_SQUARE => Ok(KangxiRadicals::KangxiRadicalSquare),
-            KANGXI_RADICAL_NOT => Ok(KangxiRadicals::KangxiRadicalNot),
-            KANGXI_RADICAL_SUN => Ok(KangxiRadicals::KangxiRadicalSun),
-            KANGXI_RADICAL_SAY => Ok(KangxiRadicals::KangxiRadicalSay),
-            KANGXI_RADICAL_MOON => Ok(KangxiRadicals::KangxiRadicalMoon),
-            KANGXI_RADICAL_TREE => Ok(KangxiRadicals::KangxiRadicalTree),
-            KANGXI_RADICAL_LACK => Ok(KangxiRadicals::KangxiRadicalLack),
-            KANGXI_RADICAL_STOP => Ok(KangxiRadicals::KangxiRadicalStop),
-            KANGXI_RADICAL_DEATH => Ok(KangxiRadicals::KangxiRadicalDeath),
-            KANGXI_RADICAL_WEAPON => Ok(KangxiRadicals::KangxiRadicalWeapon),
-            KANGXI_RADICAL_DO_NOT => Ok(KangxiRadicals::KangxiRadicalDoNot),
-            KANGXI_RADICAL_COMPARE => Ok(KangxiRadicals::KangxiRadicalCompare),
-            KANGXI_RADICAL_FUR => Ok(KangxiRadicals::KangxiRadicalFur),
-            KANGXI_RADICAL_CLAN => Ok(KangxiRadicals::KangxiRadicalClan),
-            KANGXI_RADICAL_STEAM => Ok(KangxiRadicals::KangxiRadicalSteam),
-            KANGXI_RADICAL_WATER => Ok(KangxiRadicals::KangxiRadicalWater),
-            KANGXI_RADICAL_FIRE => Ok(KangxiRadicals::KangxiRadicalFire),
-            KANGXI_RADICAL_CLAW => Ok(KangxiRadicals::KangxiRadicalClaw),
-            KANGXI_RADICAL_FATHER => Ok(KangxiRadicals::KangxiRadicalFather),
-            KANGXI_RADICAL_DOUBLE_X => Ok(KangxiRadicals::KangxiRadicalDoubleX),
-            KANGXI_RADICAL_HALF_TREE_TRUNK => Ok(KangxiRadicals::KangxiRadicalHalfTreeTrunk),
-            KANGXI_RADICAL_SLICE => Ok(KangxiRadicals::KangxiRadicalSlice),
-            KANGXI_RADICAL_FANG => Ok(KangxiRadicals::KangxiRadicalFang),
-            KANGXI_RADICAL_COW => Ok(KangxiRadicals::KangxiRadicalCow),
-            KANGXI_RADICAL_DOG => Ok(KangxiRadicals::KangxiRadicalDog),
-            KANGXI_RADICAL_PROFOUND => Ok(KangxiRadicals::KangxiRadicalProfound),
-            KANGXI_RADICAL_JADE => Ok(KangxiRadicals::KangxiRadicalJade),
-            KANGXI_RADICAL_MELON => Ok(KangxiRadicals::KangxiRadicalMelon),
-            KANGXI_RADICAL_TILE => Ok(KangxiRadicals::KangxiRadicalTile),
-            KANGXI_RADICAL_SWEET => Ok(KangxiRadicals::KangxiRadicalSweet),
-            KANGXI_RADICAL_LIFE => Ok(KangxiRadicals::KangxiRadicalLife),
-            KANGXI_RADICAL_USE => Ok(KangxiRadicals::KangxiRadicalUse),
-            KANGXI_RADICAL_FIELD => Ok(KangxiRadicals::KangxiRadicalField),
-            KANGXI_RADICAL_BOLT_OF_CLOTH => Ok(KangxiRadicals::KangxiRadicalBoltOfCloth),
-            KANGXI_RADICAL_SICKNESS => Ok(KangxiRadicals::KangxiRadicalSickness),
-            KANGXI_RADICAL_DOTTED_TENT => Ok(KangxiRadicals::KangxiRadicalDottedTent),
-            KANGXI_RADICAL_WHITE => Ok(KangxiRadicals::KangxiRadicalWhite),
-            KANGXI_RADICAL_SKIN => Ok(KangxiRadicals::KangxiRadicalSkin),
-            KANGXI_RADICAL_DISH => Ok(KangxiRadicals::KangxiRadicalDish),
-            KANGXI_RADICAL_EYE => Ok(KangxiRadicals::KangxiRadicalEye),
-            KANGXI_RADICAL_SPEAR => Ok(KangxiRadicals::KangxiRadicalSpear),
-            KANGXI_RADICAL_ARROW => Ok(KangxiRadicals::KangxiRadicalArrow),
-            KANGXI_RADICAL_STONE => Ok(KangxiRadicals::KangxiRadicalStone),
-            KANGXI_RADICAL_SPIRIT => Ok(KangxiRadicals::KangxiRadicalSpirit),
-            KANGXI_RADICAL_TRACK => Ok(KangxiRadicals::KangxiRadicalTrack),
-            KANGXI_RADICAL_GRAIN => Ok(KangxiRadicals::KangxiRadicalGrain),
-            KANGXI_RADICAL_CAVE => Ok(KangxiRadicals::KangxiRadicalCave),
-            KANGXI_RADICAL_STAND => Ok(KangxiRadicals::KangxiRadicalStand),
-            KANGXI_RADICAL_BAMBOO => Ok(KangxiRadicals::KangxiRadicalBamboo),
-            KANGXI_RADICAL_RICE => Ok(KangxiRadicals::KangxiRadicalRice),
-            KANGXI_RADICAL_SILK => Ok(KangxiRadicals::KangxiRadicalSilk),
-            KANGXI_RADICAL_JAR => Ok(KangxiRadicals::KangxiRadicalJar),
-            KANGXI_RADICAL_NET => Ok(KangxiRadicals::KangxiRadicalNet),
-            KANGXI_RADICAL_SHEEP => Ok(KangxiRadicals::KangxiRadicalSheep),
-            KANGXI_RADICAL_FEATHER => Ok(KangxiRadicals::KangxiRadicalFeather),
-            KANGXI_RADICAL_OLD => Ok(KangxiRadicals::KangxiRadicalOld),
-            KANGXI_RADICAL_AND => Ok(KangxiRadicals::KangxiRadicalAnd),
-            KANGXI_RADICAL_PLOW => Ok(KangxiRadicals::KangxiRadicalPlow),
-            KANGXI_RADICAL_EAR => Ok(KangxiRadicals::KangxiRadicalEar),
-            KANGXI_RADICAL_BRUSH => Ok(KangxiRadicals::KangxiRadicalBrush),
-            KANGXI_RADICAL_MEAT => Ok(KangxiRadicals::KangxiRadicalMeat),
-            KANGXI_RADICAL_MINISTER => Ok(KangxiRadicals::KangxiRadicalMinister),
-            KANGXI_RADICAL_SELF => Ok(KangxiRadicals::KangxiRadicalSelf),
-            KANGXI_RADICAL_ARRIVE => Ok(KangxiRadicals::KangxiRadicalArrive),
-            KANGXI_RADICAL_MORTAR => Ok(KangxiRadicals::KangxiRadicalMortar),
-            KANGXI_RADICAL_TONGUE => Ok(KangxiRadicals::KangxiRadicalTongue),
-            KANGXI_RADICAL_OPPOSE => Ok(KangxiRadicals::KangxiRadicalOppose),
-            KANGXI_RADICAL_BOAT => Ok(KangxiRadicals::KangxiRadicalBoat),
-            KANGXI_RADICAL_STOPPING => Ok(KangxiRadicals::KangxiRadicalStopping),
-            KANGXI_RADICAL_COLOR => Ok(KangxiRadicals::KangxiRadicalColor),
-            KANGXI_RADICAL_GRASS => Ok(KangxiRadicals::KangxiRadicalGrass),
-            KANGXI_RADICAL_TIGER => Ok(KangxiRadicals::KangxiRadicalTiger),
-            KANGXI_RADICAL_INSECT => Ok(KangxiRadicals::KangxiRadicalInsect),
-            KANGXI_RADICAL_BLOOD => Ok(KangxiRadicals::KangxiRadicalBlood),
-            KANGXI_RADICAL_WALK_ENCLOSURE => Ok(KangxiRadicals::KangxiRadicalWalkEnclosure),
-            KANGXI_RADICAL_CLOTHES => Ok(KangxiRadicals::KangxiRadicalClothes),
-            KANGXI_RADICAL_WEST => Ok(KangxiRadicals::KangxiRadicalWest),
-            KANGXI_RADICAL_SEE => Ok(KangxiRadicals::KangxiRadicalSee),
-            KANGXI_RADICAL_HORN => Ok(KangxiRadicals::KangxiRadicalHorn),
-            KANGXI_RADICAL_SPEECH => Ok(KangxiRadicals::KangxiRadicalSpeech),
-            KANGXI_RADICAL_VALLEY => Ok(KangxiRadicals::KangxiRadicalValley),
-            KANGXI_RADICAL_BEAN => Ok(KangxiRadicals::KangxiRadicalBean),
-            KANGXI_RADICAL_PIG => Ok(KangxiRadicals::KangxiRadicalPig),
-            KANGXI_RADICAL_BADGER => Ok(KangxiRadicals::KangxiRadicalBadger),
-            KANGXI_RADICAL_SHELL => Ok(KangxiRadicals::KangxiRadicalShell),
-            KANGXI_RADICAL_RED => Ok(KangxiRadicals::KangxiRadicalRed),
-            KANGXI_RADICAL_RUN => Ok(KangxiRadicals::KangxiRadicalRun),
-            KANGXI_RADICAL_FOOT => Ok(KangxiRadicals::KangxiRadicalFoot),
-            KANGXI_RADICAL_BODY => Ok(KangxiRadicals::KangxiRadicalBody),
-            KANGXI_RADICAL_CART => Ok(KangxiRadicals::KangxiRadicalCart),
-            KANGXI_RADICAL_BITTER => Ok(KangxiRadicals::KangxiRadicalBitter),
-            KANGXI_RADICAL_MORNING => Ok(KangxiRadicals::KangxiRadicalMorning),
-            KANGXI_RADICAL_WALK => Ok(KangxiRadicals::KangxiRadicalWalk),
-            KANGXI_RADICAL_CITY => Ok(KangxiRadicals::KangxiRadicalCity),
-            KANGXI_RADICAL_WINE => Ok(KangxiRadicals::KangxiRadicalWine),
-            KANGXI_RADICAL_DISTINGUISH => Ok(KangxiRadicals::KangxiRadicalDistinguish),
-            KANGXI_RADICAL_VILLAGE => Ok(KangxiRadicals::KangxiRadicalVillage),
-            KANGXI_RADICAL_GOLD => Ok(KangxiRadicals::KangxiRadicalGold),
-            KANGXI_RADICAL_LONG => Ok(KangxiRadicals::KangxiRadicalLong),
-            KANGXI_RADICAL_GATE => Ok(KangxiRadicals::KangxiRadicalGate),
-            KANGXI_RADICAL_MOUND => Ok(KangxiRadicals::KangxiRadicalMound),
-            KANGXI_RADICAL_SLAVE => Ok(KangxiRadicals::KangxiRadicalSlave),
-            KANGXI_RADICAL_SHORT_TAILED_BIRD => Ok(KangxiRadicals::KangxiRadicalShortTailedBird),
-            KANGXI_RADICAL_RAIN => Ok(KangxiRadicals::KangxiRadicalRain),
-            KANGXI_RADICAL_BLUE => Ok(KangxiRadicals::KangxiRadicalBlue),
-            KANGXI_RADICAL_WRONG => Ok(KangxiRadicals::KangxiRadicalWrong),
-            KANGXI_RADICAL_FACE => Ok(KangxiRadicals::KangxiRadicalFace),
-            KANGXI_RADICAL_LEATHER => Ok(KangxiRadicals::KangxiRadicalLeather),
-            KANGXI_RADICAL_TANNED_LEATHER => Ok(KangxiRadicals::KangxiRadicalTannedLeather),
-            KANGXI_RADICAL_LEEK => Ok(KangxiRadicals::KangxiRadicalLeek),
-            KANGXI_RADICAL_SOUND => Ok(KangxiRadicals::KangxiRadicalSound),
-            KANGXI_RADICAL_LEAF => Ok(KangxiRadicals::KangxiRadicalLeaf),
-            KANGXI_RADICAL_WIND => Ok(KangxiRadicals::KangxiRadicalWind),
-            KANGXI_RADICAL_FLY => Ok(KangxiRadicals::KangxiRadicalFly),
-            KANGXI_RADICAL_EAT => Ok(KangxiRadicals::KangxiRadicalEat),
-            KANGXI_RADICAL_HEAD => Ok(KangxiRadicals::KangxiRadicalHead),
-            KANGXI_RADICAL_FRAGRANT => Ok(KangxiRadicals::KangxiRadicalFragrant),
-            KANGXI_RADICAL_HORSE => Ok(KangxiRadicals::KangxiRadicalHorse),
-            KANGXI_RADICAL_BONE => Ok(KangxiRadicals::KangxiRadicalBone),
-            KANGXI_RADICAL_TALL => Ok(KangxiRadicals::KangxiRadicalTall),
-            KANGXI_RADICAL_HAIR => Ok(KangxiRadicals::KangxiRadicalHair),
-            KANGXI_RADICAL_FIGHT => Ok(KangxiRadicals::KangxiRadicalFight),
-            KANGXI_RADICAL_SACRIFICIAL_WINE => Ok(KangxiRadicals::KangxiRadicalSacrificialWine),
-            KANGXI_RADICAL_CAULDRON => Ok(KangxiRadicals::KangxiRadicalCauldron),
-            KANGXI_RADICAL_GHOST => Ok(KangxiRadicals::KangxiRadicalGhost),
-            KANGXI_RADICAL_FISH => Ok(KangxiRadicals::KangxiRadicalFish),
-            KANGXI_RADICAL_BIRD => Ok(KangxiRadicals::KangxiRadicalBird),
-            KANGXI_RADICAL_SALT => Ok(KangxiRadicals::KangxiRadicalSalt),
-            KANGXI_RADICAL_DEER => Ok(KangxiRadicals::KangxiRadicalDeer),
-            KANGXI_RADICAL_WHEAT => Ok(KangxiRadicals::KangxiRadicalWheat),
-            KANGXI_RADICAL_HEMP => Ok(KangxiRadicals::KangxiRadicalHemp),
-            KANGXI_RADICAL_YELLOW => Ok(KangxiRadicals::KangxiRadicalYellow),
-            KANGXI_RADICAL_MILLET => Ok(KangxiRadicals::KangxiRadicalMillet),
-            KANGXI_RADICAL_BLACK => Ok(KangxiRadicals::KangxiRadicalBlack),
-            KANGXI_RADICAL_EMBROIDERY => Ok(KangxiRadicals::KangxiRadicalEmbroidery),
-            KANGXI_RADICAL_FROG => Ok(KangxiRadicals::KangxiRadicalFrog),
-            KANGXI_RADICAL_TRIPOD => Ok(KangxiRadicals::KangxiRadicalTripod),
-            KANGXI_RADICAL_DRUM => Ok(KangxiRadicals::KangxiRadicalDrum),
-            KANGXI_RADICAL_RAT => Ok(KangxiRadicals::KangxiRadicalRat),
-            KANGXI_RADICAL_NOSE => Ok(KangxiRadicals::KangxiRadicalNose),
-            KANGXI_RADICAL_EVEN => Ok(KangxiRadicals::KangxiRadicalEven),
-            KANGXI_RADICAL_TOOTH => Ok(KangxiRadicals::KangxiRadicalTooth),
-            KANGXI_RADICAL_DRAGON => Ok(KangxiRadicals::KangxiRadicalDragon),
-            KANGXI_RADICAL_TURTLE => Ok(KangxiRadicals::KangxiRadicalTurtle),
-            KANGXI_RADICAL_FLUTE => Ok(KangxiRadicals::KangxiRadicalFlute),
+            '⼀' => Ok(KangxiRadicals::KangxiRadicalOne),
+            '⼁' => Ok(KangxiRadicals::KangxiRadicalLine),
+            '⼂' => Ok(KangxiRadicals::KangxiRadicalDot),
+            '⼃' => Ok(KangxiRadicals::KangxiRadicalSlash),
+            '⼄' => Ok(KangxiRadicals::KangxiRadicalSecond),
+            '⼅' => Ok(KangxiRadicals::KangxiRadicalHook),
+            '⼆' => Ok(KangxiRadicals::KangxiRadicalTwo),
+            '⼇' => Ok(KangxiRadicals::KangxiRadicalLid),
+            '⼈' => Ok(KangxiRadicals::KangxiRadicalMan),
+            '⼉' => Ok(KangxiRadicals::KangxiRadicalLegs),
+            '⼊' => Ok(KangxiRadicals::KangxiRadicalEnter),
+            '⼋' => Ok(KangxiRadicals::KangxiRadicalEight),
+            '⼌' => Ok(KangxiRadicals::KangxiRadicalDownBox),
+            '⼍' => Ok(KangxiRadicals::KangxiRadicalCover),
+            '⼎' => Ok(KangxiRadicals::KangxiRadicalIce),
+            '⼏' => Ok(KangxiRadicals::KangxiRadicalTable),
+            '⼐' => Ok(KangxiRadicals::KangxiRadicalOpenBox),
+            '⼑' => Ok(KangxiRadicals::KangxiRadicalKnife),
+            '⼒' => Ok(KangxiRadicals::KangxiRadicalPower),
+            '⼓' => Ok(KangxiRadicals::KangxiRadicalWrap),
+            '⼔' => Ok(KangxiRadicals::KangxiRadicalSpoon),
+            '⼕' => Ok(KangxiRadicals::KangxiRadicalRightOpenBox),
+            '⼖' => Ok(KangxiRadicals::KangxiRadicalHidingEnclosure),
+            '⼗' => Ok(KangxiRadicals::KangxiRadicalTen),
+            '⼘' => Ok(KangxiRadicals::KangxiRadicalDivination),
+            '⼙' => Ok(KangxiRadicals::KangxiRadicalSeal),
+            '⼚' => Ok(KangxiRadicals::KangxiRadicalCliff),
+            '⼛' => Ok(KangxiRadicals::KangxiRadicalPrivate),
+            '⼜' => Ok(KangxiRadicals::KangxiRadicalAgain),
+            '⼝' => Ok(KangxiRadicals::KangxiRadicalMouth),
+            '⼞' => Ok(KangxiRadicals::KangxiRadicalEnclosure),
+            '⼟' => Ok(KangxiRadicals::KangxiRadicalEarth),
+            '⼠' => Ok(KangxiRadicals::KangxiRadicalScholar),
+            '⼡' => Ok(KangxiRadicals::KangxiRadicalGo),
+            '⼢' => Ok(KangxiRadicals::KangxiRadicalGoSlowly),
+            '⼣' => Ok(KangxiRadicals::KangxiRadicalEvening),
+            '⼤' => Ok(KangxiRadicals::KangxiRadicalBig),
+            '⼥' => Ok(KangxiRadicals::KangxiRadicalWoman),
+            '⼦' => Ok(KangxiRadicals::KangxiRadicalChild),
+            '⼧' => Ok(KangxiRadicals::KangxiRadicalRoof),
+            '⼨' => Ok(KangxiRadicals::KangxiRadicalInch),
+            '⼩' => Ok(KangxiRadicals::KangxiRadicalSmall),
+            '⼪' => Ok(KangxiRadicals::KangxiRadicalLame),
+            '⼫' => Ok(KangxiRadicals::KangxiRadicalCorpse),
+            '⼬' => Ok(KangxiRadicals::KangxiRadicalSprout),
+            '⼭' => Ok(KangxiRadicals::KangxiRadicalMountain),
+            '⼮' => Ok(KangxiRadicals::KangxiRadicalRiver),
+            '⼯' => Ok(KangxiRadicals::KangxiRadicalWork),
+            '⼰' => Ok(KangxiRadicals::KangxiRadicalOneself),
+            '⼱' => Ok(KangxiRadicals::KangxiRadicalTurban),
+            '⼲' => Ok(KangxiRadicals::KangxiRadicalDry),
+            '⼳' => Ok(KangxiRadicals::KangxiRadicalShortThread),
+            '⼴' => Ok(KangxiRadicals::KangxiRadicalDottedCliff),
+            '⼵' => Ok(KangxiRadicals::KangxiRadicalLongStride),
+            '⼶' => Ok(KangxiRadicals::KangxiRadicalTwoHands),
+            '⼷' => Ok(KangxiRadicals::KangxiRadicalShoot),
+            '⼸' => Ok(KangxiRadicals::KangxiRadicalBow),
+            '⼹' => Ok(KangxiRadicals::KangxiRadicalSnout),
+            '⼺' => Ok(KangxiRadicals::KangxiRadicalBristle),
+            '⼻' => Ok(KangxiRadicals::KangxiRadicalStep),
+            '⼼' => Ok(KangxiRadicals::KangxiRadicalHeart),
+            '⼽' => Ok(KangxiRadicals::KangxiRadicalHalberd),
+            '⼾' => Ok(KangxiRadicals::KangxiRadicalDoor),
+            '⼿' => Ok(KangxiRadicals::KangxiRadicalHand),
+            '⽀' => Ok(KangxiRadicals::KangxiRadicalBranch),
+            '⽁' => Ok(KangxiRadicals::KangxiRadicalRap),
+            '⽂' => Ok(KangxiRadicals::KangxiRadicalScript),
+            '⽃' => Ok(KangxiRadicals::KangxiRadicalDipper),
+            '⽄' => Ok(KangxiRadicals::KangxiRadicalAxe),
+            '⽅' => Ok(KangxiRadicals::KangxiRadicalSquare),
+            '⽆' => Ok(KangxiRadicals::KangxiRadicalNot),
+            '⽇' => Ok(KangxiRadicals::KangxiRadicalSun),
+            '⽈' => Ok(KangxiRadicals::KangxiRadicalSay),
+            '⽉' => Ok(KangxiRadicals::KangxiRadicalMoon),
+            '⽊' => Ok(KangxiRadicals::KangxiRadicalTree),
+            '⽋' => Ok(KangxiRadicals::KangxiRadicalLack),
+            '⽌' => Ok(KangxiRadicals::KangxiRadicalStop),
+            '⽍' => Ok(KangxiRadicals::KangxiRadicalDeath),
+            '⽎' => Ok(KangxiRadicals::KangxiRadicalWeapon),
+            '⽏' => Ok(KangxiRadicals::KangxiRadicalDoNot),
+            '⽐' => Ok(KangxiRadicals::KangxiRadicalCompare),
+            '⽑' => Ok(KangxiRadicals::KangxiRadicalFur),
+            '⽒' => Ok(KangxiRadicals::KangxiRadicalClan),
+            '⽓' => Ok(KangxiRadicals::KangxiRadicalSteam),
+            '⽔' => Ok(KangxiRadicals::KangxiRadicalWater),
+            '⽕' => Ok(KangxiRadicals::KangxiRadicalFire),
+            '⽖' => Ok(KangxiRadicals::KangxiRadicalClaw),
+            '⽗' => Ok(KangxiRadicals::KangxiRadicalFather),
+            '⽘' => Ok(KangxiRadicals::KangxiRadicalDoubleX),
+            '⽙' => Ok(KangxiRadicals::KangxiRadicalHalfTreeTrunk),
+            '⽚' => Ok(KangxiRadicals::KangxiRadicalSlice),
+            '⽛' => Ok(KangxiRadicals::KangxiRadicalFang),
+            '⽜' => Ok(KangxiRadicals::KangxiRadicalCow),
+            '⽝' => Ok(KangxiRadicals::KangxiRadicalDog),
+            '⽞' => Ok(KangxiRadicals::KangxiRadicalProfound),
+            '⽟' => Ok(KangxiRadicals::KangxiRadicalJade),
+            '⽠' => Ok(KangxiRadicals::KangxiRadicalMelon),
+            '⽡' => Ok(KangxiRadicals::KangxiRadicalTile),
+            '⽢' => Ok(KangxiRadicals::KangxiRadicalSweet),
+            '⽣' => Ok(KangxiRadicals::KangxiRadicalLife),
+            '⽤' => Ok(KangxiRadicals::KangxiRadicalUse),
+            '⽥' => Ok(KangxiRadicals::KangxiRadicalField),
+            '⽦' => Ok(KangxiRadicals::KangxiRadicalBoltOfCloth),
+            '⽧' => Ok(KangxiRadicals::KangxiRadicalSickness),
+            '⽨' => Ok(KangxiRadicals::KangxiRadicalDottedTent),
+            '⽩' => Ok(KangxiRadicals::KangxiRadicalWhite),
+            '⽪' => Ok(KangxiRadicals::KangxiRadicalSkin),
+            '⽫' => Ok(KangxiRadicals::KangxiRadicalDish),
+            '⽬' => Ok(KangxiRadicals::KangxiRadicalEye),
+            '⽭' => Ok(KangxiRadicals::KangxiRadicalSpear),
+            '⽮' => Ok(KangxiRadicals::KangxiRadicalArrow),
+            '⽯' => Ok(KangxiRadicals::KangxiRadicalStone),
+            '⽰' => Ok(KangxiRadicals::KangxiRadicalSpirit),
+            '⽱' => Ok(KangxiRadicals::KangxiRadicalTrack),
+            '⽲' => Ok(KangxiRadicals::KangxiRadicalGrain),
+            '⽳' => Ok(KangxiRadicals::KangxiRadicalCave),
+            '⽴' => Ok(KangxiRadicals::KangxiRadicalStand),
+            '⽵' => Ok(KangxiRadicals::KangxiRadicalBamboo),
+            '⽶' => Ok(KangxiRadicals::KangxiRadicalRice),
+            '⽷' => Ok(KangxiRadicals::KangxiRadicalSilk),
+            '⽸' => Ok(KangxiRadicals::KangxiRadicalJar),
+            '⽹' => Ok(KangxiRadicals::KangxiRadicalNet),
+            '⽺' => Ok(KangxiRadicals::KangxiRadicalSheep),
+            '⽻' => Ok(KangxiRadicals::KangxiRadicalFeather),
+            '⽼' => Ok(KangxiRadicals::KangxiRadicalOld),
+            '⽽' => Ok(KangxiRadicals::KangxiRadicalAnd),
+            '⽾' => Ok(KangxiRadicals::KangxiRadicalPlow),
+            '⽿' => Ok(KangxiRadicals::KangxiRadicalEar),
+            '⾀' => Ok(KangxiRadicals::KangxiRadicalBrush),
+            '⾁' => Ok(KangxiRadicals::KangxiRadicalMeat),
+            '⾂' => Ok(KangxiRadicals::KangxiRadicalMinister),
+            '⾃' => Ok(KangxiRadicals::KangxiRadicalSelf),
+            '⾄' => Ok(KangxiRadicals::KangxiRadicalArrive),
+            '⾅' => Ok(KangxiRadicals::KangxiRadicalMortar),
+            '⾆' => Ok(KangxiRadicals::KangxiRadicalTongue),
+            '⾇' => Ok(KangxiRadicals::KangxiRadicalOppose),
+            '⾈' => Ok(KangxiRadicals::KangxiRadicalBoat),
+            '⾉' => Ok(KangxiRadicals::KangxiRadicalStopping),
+            '⾊' => Ok(KangxiRadicals::KangxiRadicalColor),
+            '⾋' => Ok(KangxiRadicals::KangxiRadicalGrass),
+            '⾌' => Ok(KangxiRadicals::KangxiRadicalTiger),
+            '⾍' => Ok(KangxiRadicals::KangxiRadicalInsect),
+            '⾎' => Ok(KangxiRadicals::KangxiRadicalBlood),
+            '⾏' => Ok(KangxiRadicals::KangxiRadicalWalkEnclosure),
+            '⾐' => Ok(KangxiRadicals::KangxiRadicalClothes),
+            '⾑' => Ok(KangxiRadicals::KangxiRadicalWest),
+            '⾒' => Ok(KangxiRadicals::KangxiRadicalSee),
+            '⾓' => Ok(KangxiRadicals::KangxiRadicalHorn),
+            '⾔' => Ok(KangxiRadicals::KangxiRadicalSpeech),
+            '⾕' => Ok(KangxiRadicals::KangxiRadicalValley),
+            '⾖' => Ok(KangxiRadicals::KangxiRadicalBean),
+            '⾗' => Ok(KangxiRadicals::KangxiRadicalPig),
+            '⾘' => Ok(KangxiRadicals::KangxiRadicalBadger),
+            '⾙' => Ok(KangxiRadicals::KangxiRadicalShell),
+            '⾚' => Ok(KangxiRadicals::KangxiRadicalRed),
+            '⾛' => Ok(KangxiRadicals::KangxiRadicalRun),
+            '⾜' => Ok(KangxiRadicals::KangxiRadicalFoot),
+            '⾝' => Ok(KangxiRadicals::KangxiRadicalBody),
+            '⾞' => Ok(KangxiRadicals::KangxiRadicalCart),
+            '⾟' => Ok(KangxiRadicals::KangxiRadicalBitter),
+            '⾠' => Ok(KangxiRadicals::KangxiRadicalMorning),
+            '⾡' => Ok(KangxiRadicals::KangxiRadicalWalk),
+            '⾢' => Ok(KangxiRadicals::KangxiRadicalCity),
+            '⾣' => Ok(KangxiRadicals::KangxiRadicalWine),
+            '⾤' => Ok(KangxiRadicals::KangxiRadicalDistinguish),
+            '⾥' => Ok(KangxiRadicals::KangxiRadicalVillage),
+            '⾦' => Ok(KangxiRadicals::KangxiRadicalGold),
+            '⾧' => Ok(KangxiRadicals::KangxiRadicalLong),
+            '⾨' => Ok(KangxiRadicals::KangxiRadicalGate),
+            '⾩' => Ok(KangxiRadicals::KangxiRadicalMound),
+            '⾪' => Ok(KangxiRadicals::KangxiRadicalSlave),
+            '⾫' => Ok(KangxiRadicals::KangxiRadicalShortTailedBird),
+            '⾬' => Ok(KangxiRadicals::KangxiRadicalRain),
+            '⾭' => Ok(KangxiRadicals::KangxiRadicalBlue),
+            '⾮' => Ok(KangxiRadicals::KangxiRadicalWrong),
+            '⾯' => Ok(KangxiRadicals::KangxiRadicalFace),
+            '⾰' => Ok(KangxiRadicals::KangxiRadicalLeather),
+            '⾱' => Ok(KangxiRadicals::KangxiRadicalTannedLeather),
+            '⾲' => Ok(KangxiRadicals::KangxiRadicalLeek),
+            '⾳' => Ok(KangxiRadicals::KangxiRadicalSound),
+            '⾴' => Ok(KangxiRadicals::KangxiRadicalLeaf),
+            '⾵' => Ok(KangxiRadicals::KangxiRadicalWind),
+            '⾶' => Ok(KangxiRadicals::KangxiRadicalFly),
+            '⾷' => Ok(KangxiRadicals::KangxiRadicalEat),
+            '⾸' => Ok(KangxiRadicals::KangxiRadicalHead),
+            '⾹' => Ok(KangxiRadicals::KangxiRadicalFragrant),
+            '⾺' => Ok(KangxiRadicals::KangxiRadicalHorse),
+            '⾻' => Ok(KangxiRadicals::KangxiRadicalBone),
+            '⾼' => Ok(KangxiRadicals::KangxiRadicalTall),
+            '⾽' => Ok(KangxiRadicals::KangxiRadicalHair),
+            '⾾' => Ok(KangxiRadicals::KangxiRadicalFight),
+            '⾿' => Ok(KangxiRadicals::KangxiRadicalSacrificialWine),
+            '⿀' => Ok(KangxiRadicals::KangxiRadicalCauldron),
+            '⿁' => Ok(KangxiRadicals::KangxiRadicalGhost),
+            '⿂' => Ok(KangxiRadicals::KangxiRadicalFish),
+            '⿃' => Ok(KangxiRadicals::KangxiRadicalBird),
+            '⿄' => Ok(KangxiRadicals::KangxiRadicalSalt),
+            '⿅' => Ok(KangxiRadicals::KangxiRadicalDeer),
+            '⿆' => Ok(KangxiRadicals::KangxiRadicalWheat),
+            '⿇' => Ok(KangxiRadicals::KangxiRadicalHemp),
+            '⿈' => Ok(KangxiRadicals::KangxiRadicalYellow),
+            '⿉' => Ok(KangxiRadicals::KangxiRadicalMillet),
+            '⿊' => Ok(KangxiRadicals::KangxiRadicalBlack),
+            '⿋' => Ok(KangxiRadicals::KangxiRadicalEmbroidery),
+            '⿌' => Ok(KangxiRadicals::KangxiRadicalFrog),
+            '⿍' => Ok(KangxiRadicals::KangxiRadicalTripod),
+            '⿎' => Ok(KangxiRadicals::KangxiRadicalDrum),
+            '⿏' => Ok(KangxiRadicals::KangxiRadicalRat),
+            '⿐' => Ok(KangxiRadicals::KangxiRadicalNose),
+            '⿑' => Ok(KangxiRadicals::KangxiRadicalEven),
+            '⿒' => Ok(KangxiRadicals::KangxiRadicalTooth),
+            '⿓' => Ok(KangxiRadicals::KangxiRadicalDragon),
+            '⿔' => Ok(KangxiRadicals::KangxiRadicalTurtle),
+            '⿕' => Ok(KangxiRadicals::KangxiRadicalFlute),
             _ => Err(()),
         }
     }
