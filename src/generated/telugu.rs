@@ -9,199 +9,199 @@
 /// ౾
 pub mod constants {
     /// \u{c00}: 'ఀ'
-    pub const TELUGU_SIGN_COMBINING_CANDRABINDU_ABOVE: char = 'ఀ';
+    pub const SIGN_COMBINING_CANDRABINDU_ABOVE: char = 'ఀ';
     /// \u{c01}: 'ఁ'
-    pub const TELUGU_SIGN_CANDRABINDU: char = 'ఁ';
+    pub const SIGN_CANDRABINDU: char = 'ఁ';
     /// \u{c02}: 'ం'
-    pub const TELUGU_SIGN_ANUSVARA: char = 'ం';
+    pub const SIGN_ANUSVARA: char = 'ం';
     /// \u{c03}: 'ః'
-    pub const TELUGU_SIGN_VISARGA: char = 'ః';
+    pub const SIGN_VISARGA: char = 'ః';
     /// \u{c04}: 'ఄ'
-    pub const TELUGU_SIGN_COMBINING_ANUSVARA_ABOVE: char = 'ఄ';
+    pub const SIGN_COMBINING_ANUSVARA_ABOVE: char = 'ఄ';
     /// \u{c05}: 'అ'
-    pub const TELUGU_LETTER_A: char = 'అ';
+    pub const LETTER_A: char = 'అ';
     /// \u{c06}: 'ఆ'
-    pub const TELUGU_LETTER_AA: char = 'ఆ';
+    pub const LETTER_AA: char = 'ఆ';
     /// \u{c07}: 'ఇ'
-    pub const TELUGU_LETTER_I: char = 'ఇ';
+    pub const LETTER_I: char = 'ఇ';
     /// \u{c08}: 'ఈ'
-    pub const TELUGU_LETTER_II: char = 'ఈ';
+    pub const LETTER_II: char = 'ఈ';
     /// \u{c09}: 'ఉ'
-    pub const TELUGU_LETTER_U: char = 'ఉ';
+    pub const LETTER_U: char = 'ఉ';
     /// \u{c0a}: 'ఊ'
-    pub const TELUGU_LETTER_UU: char = 'ఊ';
+    pub const LETTER_UU: char = 'ఊ';
     /// \u{c0b}: 'ఋ'
-    pub const TELUGU_LETTER_VOCALIC_R: char = 'ఋ';
+    pub const LETTER_VOCALIC_R: char = 'ఋ';
     /// \u{c0c}: 'ఌ'
-    pub const TELUGU_LETTER_VOCALIC_L: char = 'ఌ';
+    pub const LETTER_VOCALIC_L: char = 'ఌ';
     /// \u{c0e}: 'ఎ'
-    pub const TELUGU_LETTER_E: char = 'ఎ';
+    pub const LETTER_E: char = 'ఎ';
     /// \u{c0f}: 'ఏ'
-    pub const TELUGU_LETTER_EE: char = 'ఏ';
+    pub const LETTER_EE: char = 'ఏ';
     /// \u{c10}: 'ఐ'
-    pub const TELUGU_LETTER_AI: char = 'ఐ';
+    pub const LETTER_AI: char = 'ఐ';
     /// \u{c12}: 'ఒ'
-    pub const TELUGU_LETTER_O: char = 'ఒ';
+    pub const LETTER_O: char = 'ఒ';
     /// \u{c13}: 'ఓ'
-    pub const TELUGU_LETTER_OO: char = 'ఓ';
+    pub const LETTER_OO: char = 'ఓ';
     /// \u{c14}: 'ఔ'
-    pub const TELUGU_LETTER_AU: char = 'ఔ';
+    pub const LETTER_AU: char = 'ఔ';
     /// \u{c15}: 'క'
-    pub const TELUGU_LETTER_KA: char = 'క';
+    pub const LETTER_KA: char = 'క';
     /// \u{c16}: 'ఖ'
-    pub const TELUGU_LETTER_KHA: char = 'ఖ';
+    pub const LETTER_KHA: char = 'ఖ';
     /// \u{c17}: 'గ'
-    pub const TELUGU_LETTER_GA: char = 'గ';
+    pub const LETTER_GA: char = 'గ';
     /// \u{c18}: 'ఘ'
-    pub const TELUGU_LETTER_GHA: char = 'ఘ';
+    pub const LETTER_GHA: char = 'ఘ';
     /// \u{c19}: 'ఙ'
-    pub const TELUGU_LETTER_NGA: char = 'ఙ';
+    pub const LETTER_NGA: char = 'ఙ';
     /// \u{c1a}: 'చ'
-    pub const TELUGU_LETTER_CA: char = 'చ';
+    pub const LETTER_CA: char = 'చ';
     /// \u{c1b}: 'ఛ'
-    pub const TELUGU_LETTER_CHA: char = 'ఛ';
+    pub const LETTER_CHA: char = 'ఛ';
     /// \u{c1c}: 'జ'
-    pub const TELUGU_LETTER_JA: char = 'జ';
+    pub const LETTER_JA: char = 'జ';
     /// \u{c1d}: 'ఝ'
-    pub const TELUGU_LETTER_JHA: char = 'ఝ';
+    pub const LETTER_JHA: char = 'ఝ';
     /// \u{c1e}: 'ఞ'
-    pub const TELUGU_LETTER_NYA: char = 'ఞ';
+    pub const LETTER_NYA: char = 'ఞ';
     /// \u{c1f}: 'ట'
-    pub const TELUGU_LETTER_TTA: char = 'ట';
+    pub const LETTER_TTA: char = 'ట';
     /// \u{c20}: 'ఠ'
-    pub const TELUGU_LETTER_TTHA: char = 'ఠ';
+    pub const LETTER_TTHA: char = 'ఠ';
     /// \u{c21}: 'డ'
-    pub const TELUGU_LETTER_DDA: char = 'డ';
+    pub const LETTER_DDA: char = 'డ';
     /// \u{c22}: 'ఢ'
-    pub const TELUGU_LETTER_DDHA: char = 'ఢ';
+    pub const LETTER_DDHA: char = 'ఢ';
     /// \u{c23}: 'ణ'
-    pub const TELUGU_LETTER_NNA: char = 'ణ';
+    pub const LETTER_NNA: char = 'ణ';
     /// \u{c24}: 'త'
-    pub const TELUGU_LETTER_TA: char = 'త';
+    pub const LETTER_TA: char = 'త';
     /// \u{c25}: 'థ'
-    pub const TELUGU_LETTER_THA: char = 'థ';
+    pub const LETTER_THA: char = 'థ';
     /// \u{c26}: 'ద'
-    pub const TELUGU_LETTER_DA: char = 'ద';
+    pub const LETTER_DA: char = 'ద';
     /// \u{c27}: 'ధ'
-    pub const TELUGU_LETTER_DHA: char = 'ధ';
+    pub const LETTER_DHA: char = 'ధ';
     /// \u{c28}: 'న'
-    pub const TELUGU_LETTER_NA: char = 'న';
+    pub const LETTER_NA: char = 'న';
     /// \u{c2a}: 'ప'
-    pub const TELUGU_LETTER_PA: char = 'ప';
+    pub const LETTER_PA: char = 'ప';
     /// \u{c2b}: 'ఫ'
-    pub const TELUGU_LETTER_PHA: char = 'ఫ';
+    pub const LETTER_PHA: char = 'ఫ';
     /// \u{c2c}: 'బ'
-    pub const TELUGU_LETTER_BA: char = 'బ';
+    pub const LETTER_BA: char = 'బ';
     /// \u{c2d}: 'భ'
-    pub const TELUGU_LETTER_BHA: char = 'భ';
+    pub const LETTER_BHA: char = 'భ';
     /// \u{c2e}: 'మ'
-    pub const TELUGU_LETTER_MA: char = 'మ';
+    pub const LETTER_MA: char = 'మ';
     /// \u{c2f}: 'య'
-    pub const TELUGU_LETTER_YA: char = 'య';
+    pub const LETTER_YA: char = 'య';
     /// \u{c30}: 'ర'
-    pub const TELUGU_LETTER_RA: char = 'ర';
+    pub const LETTER_RA: char = 'ర';
     /// \u{c31}: 'ఱ'
-    pub const TELUGU_LETTER_RRA: char = 'ఱ';
+    pub const LETTER_RRA: char = 'ఱ';
     /// \u{c32}: 'ల'
-    pub const TELUGU_LETTER_LA: char = 'ల';
+    pub const LETTER_LA: char = 'ల';
     /// \u{c33}: 'ళ'
-    pub const TELUGU_LETTER_LLA: char = 'ళ';
+    pub const LETTER_LLA: char = 'ళ';
     /// \u{c34}: 'ఴ'
-    pub const TELUGU_LETTER_LLLA: char = 'ఴ';
+    pub const LETTER_LLLA: char = 'ఴ';
     /// \u{c35}: 'వ'
-    pub const TELUGU_LETTER_VA: char = 'వ';
+    pub const LETTER_VA: char = 'వ';
     /// \u{c36}: 'శ'
-    pub const TELUGU_LETTER_SHA: char = 'శ';
+    pub const LETTER_SHA: char = 'శ';
     /// \u{c37}: 'ష'
-    pub const TELUGU_LETTER_SSA: char = 'ష';
+    pub const LETTER_SSA: char = 'ష';
     /// \u{c38}: 'స'
-    pub const TELUGU_LETTER_SA: char = 'స';
+    pub const LETTER_SA: char = 'స';
     /// \u{c39}: 'హ'
-    pub const TELUGU_LETTER_HA: char = 'హ';
+    pub const LETTER_HA: char = 'హ';
     /// \u{c3d}: 'ఽ'
-    pub const TELUGU_SIGN_AVAGRAHA: char = 'ఽ';
+    pub const SIGN_AVAGRAHA: char = 'ఽ';
     /// \u{c3e}: 'ా'
-    pub const TELUGU_VOWEL_SIGN_AA: char = 'ా';
+    pub const VOWEL_SIGN_AA: char = 'ా';
     /// \u{c3f}: 'ి'
-    pub const TELUGU_VOWEL_SIGN_I: char = 'ి';
+    pub const VOWEL_SIGN_I: char = 'ి';
     /// \u{c40}: 'ీ'
-    pub const TELUGU_VOWEL_SIGN_II: char = 'ీ';
+    pub const VOWEL_SIGN_II: char = 'ీ';
     /// \u{c41}: 'ు'
-    pub const TELUGU_VOWEL_SIGN_U: char = 'ు';
+    pub const VOWEL_SIGN_U: char = 'ు';
     /// \u{c42}: 'ూ'
-    pub const TELUGU_VOWEL_SIGN_UU: char = 'ూ';
+    pub const VOWEL_SIGN_UU: char = 'ూ';
     /// \u{c43}: 'ృ'
-    pub const TELUGU_VOWEL_SIGN_VOCALIC_R: char = 'ృ';
+    pub const VOWEL_SIGN_VOCALIC_R: char = 'ృ';
     /// \u{c44}: 'ౄ'
-    pub const TELUGU_VOWEL_SIGN_VOCALIC_RR: char = 'ౄ';
+    pub const VOWEL_SIGN_VOCALIC_RR: char = 'ౄ';
     /// \u{c46}: 'ె'
-    pub const TELUGU_VOWEL_SIGN_E: char = 'ె';
+    pub const VOWEL_SIGN_E: char = 'ె';
     /// \u{c47}: 'ే'
-    pub const TELUGU_VOWEL_SIGN_EE: char = 'ే';
+    pub const VOWEL_SIGN_EE: char = 'ే';
     /// \u{c48}: 'ై'
-    pub const TELUGU_VOWEL_SIGN_AI: char = 'ై';
+    pub const VOWEL_SIGN_AI: char = 'ై';
     /// \u{c4a}: 'ొ'
-    pub const TELUGU_VOWEL_SIGN_O: char = 'ొ';
+    pub const VOWEL_SIGN_O: char = 'ొ';
     /// \u{c4b}: 'ో'
-    pub const TELUGU_VOWEL_SIGN_OO: char = 'ో';
+    pub const VOWEL_SIGN_OO: char = 'ో';
     /// \u{c4c}: 'ౌ'
-    pub const TELUGU_VOWEL_SIGN_AU: char = 'ౌ';
+    pub const VOWEL_SIGN_AU: char = 'ౌ';
     /// \u{c4d}: '్'
-    pub const TELUGU_SIGN_VIRAMA: char = '్';
+    pub const SIGN_VIRAMA: char = '్';
     /// \u{c55}: 'ౕ'
-    pub const TELUGU_LENGTH_MARK: char = 'ౕ';
+    pub const LENGTH_MARK: char = 'ౕ';
     /// \u{c56}: 'ౖ'
-    pub const TELUGU_AI_LENGTH_MARK: char = 'ౖ';
+    pub const AI_LENGTH_MARK: char = 'ౖ';
     /// \u{c58}: 'ౘ'
-    pub const TELUGU_LETTER_TSA: char = 'ౘ';
+    pub const LETTER_TSA: char = 'ౘ';
     /// \u{c59}: 'ౙ'
-    pub const TELUGU_LETTER_DZA: char = 'ౙ';
+    pub const LETTER_DZA: char = 'ౙ';
     /// \u{c5a}: 'ౚ'
-    pub const TELUGU_LETTER_RRRA: char = 'ౚ';
+    pub const LETTER_RRRA: char = 'ౚ';
     /// \u{c60}: 'ౠ'
-    pub const TELUGU_LETTER_VOCALIC_RR: char = 'ౠ';
+    pub const LETTER_VOCALIC_RR: char = 'ౠ';
     /// \u{c61}: 'ౡ'
-    pub const TELUGU_LETTER_VOCALIC_LL: char = 'ౡ';
+    pub const LETTER_VOCALIC_LL: char = 'ౡ';
     /// \u{c62}: 'ౢ'
-    pub const TELUGU_VOWEL_SIGN_VOCALIC_L: char = 'ౢ';
+    pub const VOWEL_SIGN_VOCALIC_L: char = 'ౢ';
     /// \u{c63}: 'ౣ'
-    pub const TELUGU_VOWEL_SIGN_VOCALIC_LL: char = 'ౣ';
+    pub const VOWEL_SIGN_VOCALIC_LL: char = 'ౣ';
     /// \u{c66}: '౦'
-    pub const TELUGU_DIGIT_ZERO: char = '౦';
+    pub const DIGIT_ZERO: char = '౦';
     /// \u{c67}: '౧'
-    pub const TELUGU_DIGIT_ONE: char = '౧';
+    pub const DIGIT_ONE: char = '౧';
     /// \u{c68}: '౨'
-    pub const TELUGU_DIGIT_TWO: char = '౨';
+    pub const DIGIT_TWO: char = '౨';
     /// \u{c69}: '౩'
-    pub const TELUGU_DIGIT_THREE: char = '౩';
+    pub const DIGIT_THREE: char = '౩';
     /// \u{c6a}: '౪'
-    pub const TELUGU_DIGIT_FOUR: char = '౪';
+    pub const DIGIT_FOUR: char = '౪';
     /// \u{c6b}: '౫'
-    pub const TELUGU_DIGIT_FIVE: char = '౫';
+    pub const DIGIT_FIVE: char = '౫';
     /// \u{c6c}: '౬'
-    pub const TELUGU_DIGIT_SIX: char = '౬';
+    pub const DIGIT_SIX: char = '౬';
     /// \u{c6d}: '౭'
-    pub const TELUGU_DIGIT_SEVEN: char = '౭';
+    pub const DIGIT_SEVEN: char = '౭';
     /// \u{c6e}: '౮'
-    pub const TELUGU_DIGIT_EIGHT: char = '౮';
+    pub const DIGIT_EIGHT: char = '౮';
     /// \u{c6f}: '౯'
-    pub const TELUGU_DIGIT_NINE: char = '౯';
+    pub const DIGIT_NINE: char = '౯';
     /// \u{c77}: '౷'
-    pub const TELUGU_SIGN_SIDDHAM: char = '౷';
+    pub const SIGN_SIDDHAM: char = '౷';
     /// \u{c78}: '౸'
-    pub const TELUGU_FRACTION_DIGIT_ZERO_FOR_ODD_POWERS_OF_FOUR: char = '౸';
+    pub const FRACTION_DIGIT_ZERO_FOR_ODD_POWERS_OF_FOUR: char = '౸';
     /// \u{c79}: '౹'
-    pub const TELUGU_FRACTION_DIGIT_ONE_FOR_ODD_POWERS_OF_FOUR: char = '౹';
+    pub const FRACTION_DIGIT_ONE_FOR_ODD_POWERS_OF_FOUR: char = '౹';
     /// \u{c7a}: '౺'
-    pub const TELUGU_FRACTION_DIGIT_TWO_FOR_ODD_POWERS_OF_FOUR: char = '౺';
+    pub const FRACTION_DIGIT_TWO_FOR_ODD_POWERS_OF_FOUR: char = '౺';
     /// \u{c7b}: '౻'
-    pub const TELUGU_FRACTION_DIGIT_THREE_FOR_ODD_POWERS_OF_FOUR: char = '౻';
+    pub const FRACTION_DIGIT_THREE_FOR_ODD_POWERS_OF_FOUR: char = '౻';
     /// \u{c7c}: '౼'
-    pub const TELUGU_FRACTION_DIGIT_ONE_FOR_EVEN_POWERS_OF_FOUR: char = '౼';
+    pub const FRACTION_DIGIT_ONE_FOR_EVEN_POWERS_OF_FOUR: char = '౼';
     /// \u{c7d}: '౽'
-    pub const TELUGU_FRACTION_DIGIT_TWO_FOR_EVEN_POWERS_OF_FOUR: char = '౽';
+    pub const FRACTION_DIGIT_TWO_FOR_EVEN_POWERS_OF_FOUR: char = '౽';
     /// \u{c7e}: '౾'
-    pub const TELUGU_FRACTION_DIGIT_THREE_FOR_EVEN_POWERS_OF_FOUR: char = '౾';
+    pub const FRACTION_DIGIT_THREE_FOR_EVEN_POWERS_OF_FOUR: char = '౾';
 }
 
 /// \u{c00} → \u{c7f}\
@@ -216,302 +216,302 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Telugu {
     /// \u{c00}: 'ఀ'
-    TeluguSignCombiningCandrabinduAbove,
+    SignCombiningCandrabinduAbove,
     /// \u{c01}: 'ఁ'
-    TeluguSignCandrabindu,
+    SignCandrabindu,
     /// \u{c02}: 'ం'
-    TeluguSignAnusvara,
+    SignAnusvara,
     /// \u{c03}: 'ః'
-    TeluguSignVisarga,
+    SignVisarga,
     /// \u{c04}: 'ఄ'
-    TeluguSignCombiningAnusvaraAbove,
+    SignCombiningAnusvaraAbove,
     /// \u{c05}: 'అ'
-    TeluguLetterA,
+    LetterA,
     /// \u{c06}: 'ఆ'
-    TeluguLetterAa,
+    LetterAa,
     /// \u{c07}: 'ఇ'
-    TeluguLetterI,
+    LetterI,
     /// \u{c08}: 'ఈ'
-    TeluguLetterIi,
+    LetterIi,
     /// \u{c09}: 'ఉ'
-    TeluguLetterU,
+    LetterU,
     /// \u{c0a}: 'ఊ'
-    TeluguLetterUu,
+    LetterUu,
     /// \u{c0b}: 'ఋ'
-    TeluguLetterVocalicR,
+    LetterVocalicR,
     /// \u{c0c}: 'ఌ'
-    TeluguLetterVocalicL,
+    LetterVocalicL,
     /// \u{c0e}: 'ఎ'
-    TeluguLetterE,
+    LetterE,
     /// \u{c0f}: 'ఏ'
-    TeluguLetterEe,
+    LetterEe,
     /// \u{c10}: 'ఐ'
-    TeluguLetterAi,
+    LetterAi,
     /// \u{c12}: 'ఒ'
-    TeluguLetterO,
+    LetterO,
     /// \u{c13}: 'ఓ'
-    TeluguLetterOo,
+    LetterOo,
     /// \u{c14}: 'ఔ'
-    TeluguLetterAu,
+    LetterAu,
     /// \u{c15}: 'క'
-    TeluguLetterKa,
+    LetterKa,
     /// \u{c16}: 'ఖ'
-    TeluguLetterKha,
+    LetterKha,
     /// \u{c17}: 'గ'
-    TeluguLetterGa,
+    LetterGa,
     /// \u{c18}: 'ఘ'
-    TeluguLetterGha,
+    LetterGha,
     /// \u{c19}: 'ఙ'
-    TeluguLetterNga,
+    LetterNga,
     /// \u{c1a}: 'చ'
-    TeluguLetterCa,
+    LetterCa,
     /// \u{c1b}: 'ఛ'
-    TeluguLetterCha,
+    LetterCha,
     /// \u{c1c}: 'జ'
-    TeluguLetterJa,
+    LetterJa,
     /// \u{c1d}: 'ఝ'
-    TeluguLetterJha,
+    LetterJha,
     /// \u{c1e}: 'ఞ'
-    TeluguLetterNya,
+    LetterNya,
     /// \u{c1f}: 'ట'
-    TeluguLetterTta,
+    LetterTta,
     /// \u{c20}: 'ఠ'
-    TeluguLetterTtha,
+    LetterTtha,
     /// \u{c21}: 'డ'
-    TeluguLetterDda,
+    LetterDda,
     /// \u{c22}: 'ఢ'
-    TeluguLetterDdha,
+    LetterDdha,
     /// \u{c23}: 'ణ'
-    TeluguLetterNna,
+    LetterNna,
     /// \u{c24}: 'త'
-    TeluguLetterTa,
+    LetterTa,
     /// \u{c25}: 'థ'
-    TeluguLetterTha,
+    LetterTha,
     /// \u{c26}: 'ద'
-    TeluguLetterDa,
+    LetterDa,
     /// \u{c27}: 'ధ'
-    TeluguLetterDha,
+    LetterDha,
     /// \u{c28}: 'న'
-    TeluguLetterNa,
+    LetterNa,
     /// \u{c2a}: 'ప'
-    TeluguLetterPa,
+    LetterPa,
     /// \u{c2b}: 'ఫ'
-    TeluguLetterPha,
+    LetterPha,
     /// \u{c2c}: 'బ'
-    TeluguLetterBa,
+    LetterBa,
     /// \u{c2d}: 'భ'
-    TeluguLetterBha,
+    LetterBha,
     /// \u{c2e}: 'మ'
-    TeluguLetterMa,
+    LetterMa,
     /// \u{c2f}: 'య'
-    TeluguLetterYa,
+    LetterYa,
     /// \u{c30}: 'ర'
-    TeluguLetterRa,
+    LetterRa,
     /// \u{c31}: 'ఱ'
-    TeluguLetterRra,
+    LetterRra,
     /// \u{c32}: 'ల'
-    TeluguLetterLa,
+    LetterLa,
     /// \u{c33}: 'ళ'
-    TeluguLetterLla,
+    LetterLla,
     /// \u{c34}: 'ఴ'
-    TeluguLetterLlla,
+    LetterLlla,
     /// \u{c35}: 'వ'
-    TeluguLetterVa,
+    LetterVa,
     /// \u{c36}: 'శ'
-    TeluguLetterSha,
+    LetterSha,
     /// \u{c37}: 'ష'
-    TeluguLetterSsa,
+    LetterSsa,
     /// \u{c38}: 'స'
-    TeluguLetterSa,
+    LetterSa,
     /// \u{c39}: 'హ'
-    TeluguLetterHa,
+    LetterHa,
     /// \u{c3d}: 'ఽ'
-    TeluguSignAvagraha,
+    SignAvagraha,
     /// \u{c3e}: 'ా'
-    TeluguVowelSignAa,
+    VowelSignAa,
     /// \u{c3f}: 'ి'
-    TeluguVowelSignI,
+    VowelSignI,
     /// \u{c40}: 'ీ'
-    TeluguVowelSignIi,
+    VowelSignIi,
     /// \u{c41}: 'ు'
-    TeluguVowelSignU,
+    VowelSignU,
     /// \u{c42}: 'ూ'
-    TeluguVowelSignUu,
+    VowelSignUu,
     /// \u{c43}: 'ృ'
-    TeluguVowelSignVocalicR,
+    VowelSignVocalicR,
     /// \u{c44}: 'ౄ'
-    TeluguVowelSignVocalicRr,
+    VowelSignVocalicRr,
     /// \u{c46}: 'ె'
-    TeluguVowelSignE,
+    VowelSignE,
     /// \u{c47}: 'ే'
-    TeluguVowelSignEe,
+    VowelSignEe,
     /// \u{c48}: 'ై'
-    TeluguVowelSignAi,
+    VowelSignAi,
     /// \u{c4a}: 'ొ'
-    TeluguVowelSignO,
+    VowelSignO,
     /// \u{c4b}: 'ో'
-    TeluguVowelSignOo,
+    VowelSignOo,
     /// \u{c4c}: 'ౌ'
-    TeluguVowelSignAu,
+    VowelSignAu,
     /// \u{c4d}: '్'
-    TeluguSignVirama,
+    SignVirama,
     /// \u{c55}: 'ౕ'
-    TeluguLengthMark,
+    LengthMark,
     /// \u{c56}: 'ౖ'
-    TeluguAiLengthMark,
+    AiLengthMark,
     /// \u{c58}: 'ౘ'
-    TeluguLetterTsa,
+    LetterTsa,
     /// \u{c59}: 'ౙ'
-    TeluguLetterDza,
+    LetterDza,
     /// \u{c5a}: 'ౚ'
-    TeluguLetterRrra,
+    LetterRrra,
     /// \u{c60}: 'ౠ'
-    TeluguLetterVocalicRr,
+    LetterVocalicRr,
     /// \u{c61}: 'ౡ'
-    TeluguLetterVocalicLl,
+    LetterVocalicLl,
     /// \u{c62}: 'ౢ'
-    TeluguVowelSignVocalicL,
+    VowelSignVocalicL,
     /// \u{c63}: 'ౣ'
-    TeluguVowelSignVocalicLl,
+    VowelSignVocalicLl,
     /// \u{c66}: '౦'
-    TeluguDigitZero,
+    DigitZero,
     /// \u{c67}: '౧'
-    TeluguDigitOne,
+    DigitOne,
     /// \u{c68}: '౨'
-    TeluguDigitTwo,
+    DigitTwo,
     /// \u{c69}: '౩'
-    TeluguDigitThree,
+    DigitThree,
     /// \u{c6a}: '౪'
-    TeluguDigitFour,
+    DigitFour,
     /// \u{c6b}: '౫'
-    TeluguDigitFive,
+    DigitFive,
     /// \u{c6c}: '౬'
-    TeluguDigitSix,
+    DigitSix,
     /// \u{c6d}: '౭'
-    TeluguDigitSeven,
+    DigitSeven,
     /// \u{c6e}: '౮'
-    TeluguDigitEight,
+    DigitEight,
     /// \u{c6f}: '౯'
-    TeluguDigitNine,
+    DigitNine,
     /// \u{c77}: '౷'
-    TeluguSignSiddham,
+    SignSiddham,
     /// \u{c78}: '౸'
-    TeluguFractionDigitZeroForOddPowersOfFour,
+    FractionDigitZeroForOddPowersOfFour,
     /// \u{c79}: '౹'
-    TeluguFractionDigitOneForOddPowersOfFour,
+    FractionDigitOneForOddPowersOfFour,
     /// \u{c7a}: '౺'
-    TeluguFractionDigitTwoForOddPowersOfFour,
+    FractionDigitTwoForOddPowersOfFour,
     /// \u{c7b}: '౻'
-    TeluguFractionDigitThreeForOddPowersOfFour,
+    FractionDigitThreeForOddPowersOfFour,
     /// \u{c7c}: '౼'
-    TeluguFractionDigitOneForEvenPowersOfFour,
+    FractionDigitOneForEvenPowersOfFour,
     /// \u{c7d}: '౽'
-    TeluguFractionDigitTwoForEvenPowersOfFour,
+    FractionDigitTwoForEvenPowersOfFour,
     /// \u{c7e}: '౾'
-    TeluguFractionDigitThreeForEvenPowersOfFour,
+    FractionDigitThreeForEvenPowersOfFour,
 }
 
 impl Into<char> for Telugu {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Telugu::TeluguSignCombiningCandrabinduAbove => TELUGU_SIGN_COMBINING_CANDRABINDU_ABOVE,
-            Telugu::TeluguSignCandrabindu => TELUGU_SIGN_CANDRABINDU,
-            Telugu::TeluguSignAnusvara => TELUGU_SIGN_ANUSVARA,
-            Telugu::TeluguSignVisarga => TELUGU_SIGN_VISARGA,
-            Telugu::TeluguSignCombiningAnusvaraAbove => TELUGU_SIGN_COMBINING_ANUSVARA_ABOVE,
-            Telugu::TeluguLetterA => TELUGU_LETTER_A,
-            Telugu::TeluguLetterAa => TELUGU_LETTER_AA,
-            Telugu::TeluguLetterI => TELUGU_LETTER_I,
-            Telugu::TeluguLetterIi => TELUGU_LETTER_II,
-            Telugu::TeluguLetterU => TELUGU_LETTER_U,
-            Telugu::TeluguLetterUu => TELUGU_LETTER_UU,
-            Telugu::TeluguLetterVocalicR => TELUGU_LETTER_VOCALIC_R,
-            Telugu::TeluguLetterVocalicL => TELUGU_LETTER_VOCALIC_L,
-            Telugu::TeluguLetterE => TELUGU_LETTER_E,
-            Telugu::TeluguLetterEe => TELUGU_LETTER_EE,
-            Telugu::TeluguLetterAi => TELUGU_LETTER_AI,
-            Telugu::TeluguLetterO => TELUGU_LETTER_O,
-            Telugu::TeluguLetterOo => TELUGU_LETTER_OO,
-            Telugu::TeluguLetterAu => TELUGU_LETTER_AU,
-            Telugu::TeluguLetterKa => TELUGU_LETTER_KA,
-            Telugu::TeluguLetterKha => TELUGU_LETTER_KHA,
-            Telugu::TeluguLetterGa => TELUGU_LETTER_GA,
-            Telugu::TeluguLetterGha => TELUGU_LETTER_GHA,
-            Telugu::TeluguLetterNga => TELUGU_LETTER_NGA,
-            Telugu::TeluguLetterCa => TELUGU_LETTER_CA,
-            Telugu::TeluguLetterCha => TELUGU_LETTER_CHA,
-            Telugu::TeluguLetterJa => TELUGU_LETTER_JA,
-            Telugu::TeluguLetterJha => TELUGU_LETTER_JHA,
-            Telugu::TeluguLetterNya => TELUGU_LETTER_NYA,
-            Telugu::TeluguLetterTta => TELUGU_LETTER_TTA,
-            Telugu::TeluguLetterTtha => TELUGU_LETTER_TTHA,
-            Telugu::TeluguLetterDda => TELUGU_LETTER_DDA,
-            Telugu::TeluguLetterDdha => TELUGU_LETTER_DDHA,
-            Telugu::TeluguLetterNna => TELUGU_LETTER_NNA,
-            Telugu::TeluguLetterTa => TELUGU_LETTER_TA,
-            Telugu::TeluguLetterTha => TELUGU_LETTER_THA,
-            Telugu::TeluguLetterDa => TELUGU_LETTER_DA,
-            Telugu::TeluguLetterDha => TELUGU_LETTER_DHA,
-            Telugu::TeluguLetterNa => TELUGU_LETTER_NA,
-            Telugu::TeluguLetterPa => TELUGU_LETTER_PA,
-            Telugu::TeluguLetterPha => TELUGU_LETTER_PHA,
-            Telugu::TeluguLetterBa => TELUGU_LETTER_BA,
-            Telugu::TeluguLetterBha => TELUGU_LETTER_BHA,
-            Telugu::TeluguLetterMa => TELUGU_LETTER_MA,
-            Telugu::TeluguLetterYa => TELUGU_LETTER_YA,
-            Telugu::TeluguLetterRa => TELUGU_LETTER_RA,
-            Telugu::TeluguLetterRra => TELUGU_LETTER_RRA,
-            Telugu::TeluguLetterLa => TELUGU_LETTER_LA,
-            Telugu::TeluguLetterLla => TELUGU_LETTER_LLA,
-            Telugu::TeluguLetterLlla => TELUGU_LETTER_LLLA,
-            Telugu::TeluguLetterVa => TELUGU_LETTER_VA,
-            Telugu::TeluguLetterSha => TELUGU_LETTER_SHA,
-            Telugu::TeluguLetterSsa => TELUGU_LETTER_SSA,
-            Telugu::TeluguLetterSa => TELUGU_LETTER_SA,
-            Telugu::TeluguLetterHa => TELUGU_LETTER_HA,
-            Telugu::TeluguSignAvagraha => TELUGU_SIGN_AVAGRAHA,
-            Telugu::TeluguVowelSignAa => TELUGU_VOWEL_SIGN_AA,
-            Telugu::TeluguVowelSignI => TELUGU_VOWEL_SIGN_I,
-            Telugu::TeluguVowelSignIi => TELUGU_VOWEL_SIGN_II,
-            Telugu::TeluguVowelSignU => TELUGU_VOWEL_SIGN_U,
-            Telugu::TeluguVowelSignUu => TELUGU_VOWEL_SIGN_UU,
-            Telugu::TeluguVowelSignVocalicR => TELUGU_VOWEL_SIGN_VOCALIC_R,
-            Telugu::TeluguVowelSignVocalicRr => TELUGU_VOWEL_SIGN_VOCALIC_RR,
-            Telugu::TeluguVowelSignE => TELUGU_VOWEL_SIGN_E,
-            Telugu::TeluguVowelSignEe => TELUGU_VOWEL_SIGN_EE,
-            Telugu::TeluguVowelSignAi => TELUGU_VOWEL_SIGN_AI,
-            Telugu::TeluguVowelSignO => TELUGU_VOWEL_SIGN_O,
-            Telugu::TeluguVowelSignOo => TELUGU_VOWEL_SIGN_OO,
-            Telugu::TeluguVowelSignAu => TELUGU_VOWEL_SIGN_AU,
-            Telugu::TeluguSignVirama => TELUGU_SIGN_VIRAMA,
-            Telugu::TeluguLengthMark => TELUGU_LENGTH_MARK,
-            Telugu::TeluguAiLengthMark => TELUGU_AI_LENGTH_MARK,
-            Telugu::TeluguLetterTsa => TELUGU_LETTER_TSA,
-            Telugu::TeluguLetterDza => TELUGU_LETTER_DZA,
-            Telugu::TeluguLetterRrra => TELUGU_LETTER_RRRA,
-            Telugu::TeluguLetterVocalicRr => TELUGU_LETTER_VOCALIC_RR,
-            Telugu::TeluguLetterVocalicLl => TELUGU_LETTER_VOCALIC_LL,
-            Telugu::TeluguVowelSignVocalicL => TELUGU_VOWEL_SIGN_VOCALIC_L,
-            Telugu::TeluguVowelSignVocalicLl => TELUGU_VOWEL_SIGN_VOCALIC_LL,
-            Telugu::TeluguDigitZero => TELUGU_DIGIT_ZERO,
-            Telugu::TeluguDigitOne => TELUGU_DIGIT_ONE,
-            Telugu::TeluguDigitTwo => TELUGU_DIGIT_TWO,
-            Telugu::TeluguDigitThree => TELUGU_DIGIT_THREE,
-            Telugu::TeluguDigitFour => TELUGU_DIGIT_FOUR,
-            Telugu::TeluguDigitFive => TELUGU_DIGIT_FIVE,
-            Telugu::TeluguDigitSix => TELUGU_DIGIT_SIX,
-            Telugu::TeluguDigitSeven => TELUGU_DIGIT_SEVEN,
-            Telugu::TeluguDigitEight => TELUGU_DIGIT_EIGHT,
-            Telugu::TeluguDigitNine => TELUGU_DIGIT_NINE,
-            Telugu::TeluguSignSiddham => TELUGU_SIGN_SIDDHAM,
-            Telugu::TeluguFractionDigitZeroForOddPowersOfFour => TELUGU_FRACTION_DIGIT_ZERO_FOR_ODD_POWERS_OF_FOUR,
-            Telugu::TeluguFractionDigitOneForOddPowersOfFour => TELUGU_FRACTION_DIGIT_ONE_FOR_ODD_POWERS_OF_FOUR,
-            Telugu::TeluguFractionDigitTwoForOddPowersOfFour => TELUGU_FRACTION_DIGIT_TWO_FOR_ODD_POWERS_OF_FOUR,
-            Telugu::TeluguFractionDigitThreeForOddPowersOfFour => TELUGU_FRACTION_DIGIT_THREE_FOR_ODD_POWERS_OF_FOUR,
-            Telugu::TeluguFractionDigitOneForEvenPowersOfFour => TELUGU_FRACTION_DIGIT_ONE_FOR_EVEN_POWERS_OF_FOUR,
-            Telugu::TeluguFractionDigitTwoForEvenPowersOfFour => TELUGU_FRACTION_DIGIT_TWO_FOR_EVEN_POWERS_OF_FOUR,
-            Telugu::TeluguFractionDigitThreeForEvenPowersOfFour => TELUGU_FRACTION_DIGIT_THREE_FOR_EVEN_POWERS_OF_FOUR,
+            Telugu::SignCombiningCandrabinduAbove => SIGN_COMBINING_CANDRABINDU_ABOVE,
+            Telugu::SignCandrabindu => SIGN_CANDRABINDU,
+            Telugu::SignAnusvara => SIGN_ANUSVARA,
+            Telugu::SignVisarga => SIGN_VISARGA,
+            Telugu::SignCombiningAnusvaraAbove => SIGN_COMBINING_ANUSVARA_ABOVE,
+            Telugu::LetterA => LETTER_A,
+            Telugu::LetterAa => LETTER_AA,
+            Telugu::LetterI => LETTER_I,
+            Telugu::LetterIi => LETTER_II,
+            Telugu::LetterU => LETTER_U,
+            Telugu::LetterUu => LETTER_UU,
+            Telugu::LetterVocalicR => LETTER_VOCALIC_R,
+            Telugu::LetterVocalicL => LETTER_VOCALIC_L,
+            Telugu::LetterE => LETTER_E,
+            Telugu::LetterEe => LETTER_EE,
+            Telugu::LetterAi => LETTER_AI,
+            Telugu::LetterO => LETTER_O,
+            Telugu::LetterOo => LETTER_OO,
+            Telugu::LetterAu => LETTER_AU,
+            Telugu::LetterKa => LETTER_KA,
+            Telugu::LetterKha => LETTER_KHA,
+            Telugu::LetterGa => LETTER_GA,
+            Telugu::LetterGha => LETTER_GHA,
+            Telugu::LetterNga => LETTER_NGA,
+            Telugu::LetterCa => LETTER_CA,
+            Telugu::LetterCha => LETTER_CHA,
+            Telugu::LetterJa => LETTER_JA,
+            Telugu::LetterJha => LETTER_JHA,
+            Telugu::LetterNya => LETTER_NYA,
+            Telugu::LetterTta => LETTER_TTA,
+            Telugu::LetterTtha => LETTER_TTHA,
+            Telugu::LetterDda => LETTER_DDA,
+            Telugu::LetterDdha => LETTER_DDHA,
+            Telugu::LetterNna => LETTER_NNA,
+            Telugu::LetterTa => LETTER_TA,
+            Telugu::LetterTha => LETTER_THA,
+            Telugu::LetterDa => LETTER_DA,
+            Telugu::LetterDha => LETTER_DHA,
+            Telugu::LetterNa => LETTER_NA,
+            Telugu::LetterPa => LETTER_PA,
+            Telugu::LetterPha => LETTER_PHA,
+            Telugu::LetterBa => LETTER_BA,
+            Telugu::LetterBha => LETTER_BHA,
+            Telugu::LetterMa => LETTER_MA,
+            Telugu::LetterYa => LETTER_YA,
+            Telugu::LetterRa => LETTER_RA,
+            Telugu::LetterRra => LETTER_RRA,
+            Telugu::LetterLa => LETTER_LA,
+            Telugu::LetterLla => LETTER_LLA,
+            Telugu::LetterLlla => LETTER_LLLA,
+            Telugu::LetterVa => LETTER_VA,
+            Telugu::LetterSha => LETTER_SHA,
+            Telugu::LetterSsa => LETTER_SSA,
+            Telugu::LetterSa => LETTER_SA,
+            Telugu::LetterHa => LETTER_HA,
+            Telugu::SignAvagraha => SIGN_AVAGRAHA,
+            Telugu::VowelSignAa => VOWEL_SIGN_AA,
+            Telugu::VowelSignI => VOWEL_SIGN_I,
+            Telugu::VowelSignIi => VOWEL_SIGN_II,
+            Telugu::VowelSignU => VOWEL_SIGN_U,
+            Telugu::VowelSignUu => VOWEL_SIGN_UU,
+            Telugu::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
+            Telugu::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
+            Telugu::VowelSignE => VOWEL_SIGN_E,
+            Telugu::VowelSignEe => VOWEL_SIGN_EE,
+            Telugu::VowelSignAi => VOWEL_SIGN_AI,
+            Telugu::VowelSignO => VOWEL_SIGN_O,
+            Telugu::VowelSignOo => VOWEL_SIGN_OO,
+            Telugu::VowelSignAu => VOWEL_SIGN_AU,
+            Telugu::SignVirama => SIGN_VIRAMA,
+            Telugu::LengthMark => LENGTH_MARK,
+            Telugu::AiLengthMark => AI_LENGTH_MARK,
+            Telugu::LetterTsa => LETTER_TSA,
+            Telugu::LetterDza => LETTER_DZA,
+            Telugu::LetterRrra => LETTER_RRRA,
+            Telugu::LetterVocalicRr => LETTER_VOCALIC_RR,
+            Telugu::LetterVocalicLl => LETTER_VOCALIC_LL,
+            Telugu::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
+            Telugu::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
+            Telugu::DigitZero => DIGIT_ZERO,
+            Telugu::DigitOne => DIGIT_ONE,
+            Telugu::DigitTwo => DIGIT_TWO,
+            Telugu::DigitThree => DIGIT_THREE,
+            Telugu::DigitFour => DIGIT_FOUR,
+            Telugu::DigitFive => DIGIT_FIVE,
+            Telugu::DigitSix => DIGIT_SIX,
+            Telugu::DigitSeven => DIGIT_SEVEN,
+            Telugu::DigitEight => DIGIT_EIGHT,
+            Telugu::DigitNine => DIGIT_NINE,
+            Telugu::SignSiddham => SIGN_SIDDHAM,
+            Telugu::FractionDigitZeroForOddPowersOfFour => FRACTION_DIGIT_ZERO_FOR_ODD_POWERS_OF_FOUR,
+            Telugu::FractionDigitOneForOddPowersOfFour => FRACTION_DIGIT_ONE_FOR_ODD_POWERS_OF_FOUR,
+            Telugu::FractionDigitTwoForOddPowersOfFour => FRACTION_DIGIT_TWO_FOR_ODD_POWERS_OF_FOUR,
+            Telugu::FractionDigitThreeForOddPowersOfFour => FRACTION_DIGIT_THREE_FOR_ODD_POWERS_OF_FOUR,
+            Telugu::FractionDigitOneForEvenPowersOfFour => FRACTION_DIGIT_ONE_FOR_EVEN_POWERS_OF_FOUR,
+            Telugu::FractionDigitTwoForEvenPowersOfFour => FRACTION_DIGIT_TWO_FOR_EVEN_POWERS_OF_FOUR,
+            Telugu::FractionDigitThreeForEvenPowersOfFour => FRACTION_DIGIT_THREE_FOR_EVEN_POWERS_OF_FOUR,
         }
     }
 }
@@ -521,103 +521,103 @@ impl std::convert::TryFrom<char> for Telugu {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            TELUGU_SIGN_COMBINING_CANDRABINDU_ABOVE => Ok(Telugu::TeluguSignCombiningCandrabinduAbove),
-            TELUGU_SIGN_CANDRABINDU => Ok(Telugu::TeluguSignCandrabindu),
-            TELUGU_SIGN_ANUSVARA => Ok(Telugu::TeluguSignAnusvara),
-            TELUGU_SIGN_VISARGA => Ok(Telugu::TeluguSignVisarga),
-            TELUGU_SIGN_COMBINING_ANUSVARA_ABOVE => Ok(Telugu::TeluguSignCombiningAnusvaraAbove),
-            TELUGU_LETTER_A => Ok(Telugu::TeluguLetterA),
-            TELUGU_LETTER_AA => Ok(Telugu::TeluguLetterAa),
-            TELUGU_LETTER_I => Ok(Telugu::TeluguLetterI),
-            TELUGU_LETTER_II => Ok(Telugu::TeluguLetterIi),
-            TELUGU_LETTER_U => Ok(Telugu::TeluguLetterU),
-            TELUGU_LETTER_UU => Ok(Telugu::TeluguLetterUu),
-            TELUGU_LETTER_VOCALIC_R => Ok(Telugu::TeluguLetterVocalicR),
-            TELUGU_LETTER_VOCALIC_L => Ok(Telugu::TeluguLetterVocalicL),
-            TELUGU_LETTER_E => Ok(Telugu::TeluguLetterE),
-            TELUGU_LETTER_EE => Ok(Telugu::TeluguLetterEe),
-            TELUGU_LETTER_AI => Ok(Telugu::TeluguLetterAi),
-            TELUGU_LETTER_O => Ok(Telugu::TeluguLetterO),
-            TELUGU_LETTER_OO => Ok(Telugu::TeluguLetterOo),
-            TELUGU_LETTER_AU => Ok(Telugu::TeluguLetterAu),
-            TELUGU_LETTER_KA => Ok(Telugu::TeluguLetterKa),
-            TELUGU_LETTER_KHA => Ok(Telugu::TeluguLetterKha),
-            TELUGU_LETTER_GA => Ok(Telugu::TeluguLetterGa),
-            TELUGU_LETTER_GHA => Ok(Telugu::TeluguLetterGha),
-            TELUGU_LETTER_NGA => Ok(Telugu::TeluguLetterNga),
-            TELUGU_LETTER_CA => Ok(Telugu::TeluguLetterCa),
-            TELUGU_LETTER_CHA => Ok(Telugu::TeluguLetterCha),
-            TELUGU_LETTER_JA => Ok(Telugu::TeluguLetterJa),
-            TELUGU_LETTER_JHA => Ok(Telugu::TeluguLetterJha),
-            TELUGU_LETTER_NYA => Ok(Telugu::TeluguLetterNya),
-            TELUGU_LETTER_TTA => Ok(Telugu::TeluguLetterTta),
-            TELUGU_LETTER_TTHA => Ok(Telugu::TeluguLetterTtha),
-            TELUGU_LETTER_DDA => Ok(Telugu::TeluguLetterDda),
-            TELUGU_LETTER_DDHA => Ok(Telugu::TeluguLetterDdha),
-            TELUGU_LETTER_NNA => Ok(Telugu::TeluguLetterNna),
-            TELUGU_LETTER_TA => Ok(Telugu::TeluguLetterTa),
-            TELUGU_LETTER_THA => Ok(Telugu::TeluguLetterTha),
-            TELUGU_LETTER_DA => Ok(Telugu::TeluguLetterDa),
-            TELUGU_LETTER_DHA => Ok(Telugu::TeluguLetterDha),
-            TELUGU_LETTER_NA => Ok(Telugu::TeluguLetterNa),
-            TELUGU_LETTER_PA => Ok(Telugu::TeluguLetterPa),
-            TELUGU_LETTER_PHA => Ok(Telugu::TeluguLetterPha),
-            TELUGU_LETTER_BA => Ok(Telugu::TeluguLetterBa),
-            TELUGU_LETTER_BHA => Ok(Telugu::TeluguLetterBha),
-            TELUGU_LETTER_MA => Ok(Telugu::TeluguLetterMa),
-            TELUGU_LETTER_YA => Ok(Telugu::TeluguLetterYa),
-            TELUGU_LETTER_RA => Ok(Telugu::TeluguLetterRa),
-            TELUGU_LETTER_RRA => Ok(Telugu::TeluguLetterRra),
-            TELUGU_LETTER_LA => Ok(Telugu::TeluguLetterLa),
-            TELUGU_LETTER_LLA => Ok(Telugu::TeluguLetterLla),
-            TELUGU_LETTER_LLLA => Ok(Telugu::TeluguLetterLlla),
-            TELUGU_LETTER_VA => Ok(Telugu::TeluguLetterVa),
-            TELUGU_LETTER_SHA => Ok(Telugu::TeluguLetterSha),
-            TELUGU_LETTER_SSA => Ok(Telugu::TeluguLetterSsa),
-            TELUGU_LETTER_SA => Ok(Telugu::TeluguLetterSa),
-            TELUGU_LETTER_HA => Ok(Telugu::TeluguLetterHa),
-            TELUGU_SIGN_AVAGRAHA => Ok(Telugu::TeluguSignAvagraha),
-            TELUGU_VOWEL_SIGN_AA => Ok(Telugu::TeluguVowelSignAa),
-            TELUGU_VOWEL_SIGN_I => Ok(Telugu::TeluguVowelSignI),
-            TELUGU_VOWEL_SIGN_II => Ok(Telugu::TeluguVowelSignIi),
-            TELUGU_VOWEL_SIGN_U => Ok(Telugu::TeluguVowelSignU),
-            TELUGU_VOWEL_SIGN_UU => Ok(Telugu::TeluguVowelSignUu),
-            TELUGU_VOWEL_SIGN_VOCALIC_R => Ok(Telugu::TeluguVowelSignVocalicR),
-            TELUGU_VOWEL_SIGN_VOCALIC_RR => Ok(Telugu::TeluguVowelSignVocalicRr),
-            TELUGU_VOWEL_SIGN_E => Ok(Telugu::TeluguVowelSignE),
-            TELUGU_VOWEL_SIGN_EE => Ok(Telugu::TeluguVowelSignEe),
-            TELUGU_VOWEL_SIGN_AI => Ok(Telugu::TeluguVowelSignAi),
-            TELUGU_VOWEL_SIGN_O => Ok(Telugu::TeluguVowelSignO),
-            TELUGU_VOWEL_SIGN_OO => Ok(Telugu::TeluguVowelSignOo),
-            TELUGU_VOWEL_SIGN_AU => Ok(Telugu::TeluguVowelSignAu),
-            TELUGU_SIGN_VIRAMA => Ok(Telugu::TeluguSignVirama),
-            TELUGU_LENGTH_MARK => Ok(Telugu::TeluguLengthMark),
-            TELUGU_AI_LENGTH_MARK => Ok(Telugu::TeluguAiLengthMark),
-            TELUGU_LETTER_TSA => Ok(Telugu::TeluguLetterTsa),
-            TELUGU_LETTER_DZA => Ok(Telugu::TeluguLetterDza),
-            TELUGU_LETTER_RRRA => Ok(Telugu::TeluguLetterRrra),
-            TELUGU_LETTER_VOCALIC_RR => Ok(Telugu::TeluguLetterVocalicRr),
-            TELUGU_LETTER_VOCALIC_LL => Ok(Telugu::TeluguLetterVocalicLl),
-            TELUGU_VOWEL_SIGN_VOCALIC_L => Ok(Telugu::TeluguVowelSignVocalicL),
-            TELUGU_VOWEL_SIGN_VOCALIC_LL => Ok(Telugu::TeluguVowelSignVocalicLl),
-            TELUGU_DIGIT_ZERO => Ok(Telugu::TeluguDigitZero),
-            TELUGU_DIGIT_ONE => Ok(Telugu::TeluguDigitOne),
-            TELUGU_DIGIT_TWO => Ok(Telugu::TeluguDigitTwo),
-            TELUGU_DIGIT_THREE => Ok(Telugu::TeluguDigitThree),
-            TELUGU_DIGIT_FOUR => Ok(Telugu::TeluguDigitFour),
-            TELUGU_DIGIT_FIVE => Ok(Telugu::TeluguDigitFive),
-            TELUGU_DIGIT_SIX => Ok(Telugu::TeluguDigitSix),
-            TELUGU_DIGIT_SEVEN => Ok(Telugu::TeluguDigitSeven),
-            TELUGU_DIGIT_EIGHT => Ok(Telugu::TeluguDigitEight),
-            TELUGU_DIGIT_NINE => Ok(Telugu::TeluguDigitNine),
-            TELUGU_SIGN_SIDDHAM => Ok(Telugu::TeluguSignSiddham),
-            TELUGU_FRACTION_DIGIT_ZERO_FOR_ODD_POWERS_OF_FOUR => Ok(Telugu::TeluguFractionDigitZeroForOddPowersOfFour),
-            TELUGU_FRACTION_DIGIT_ONE_FOR_ODD_POWERS_OF_FOUR => Ok(Telugu::TeluguFractionDigitOneForOddPowersOfFour),
-            TELUGU_FRACTION_DIGIT_TWO_FOR_ODD_POWERS_OF_FOUR => Ok(Telugu::TeluguFractionDigitTwoForOddPowersOfFour),
-            TELUGU_FRACTION_DIGIT_THREE_FOR_ODD_POWERS_OF_FOUR => Ok(Telugu::TeluguFractionDigitThreeForOddPowersOfFour),
-            TELUGU_FRACTION_DIGIT_ONE_FOR_EVEN_POWERS_OF_FOUR => Ok(Telugu::TeluguFractionDigitOneForEvenPowersOfFour),
-            TELUGU_FRACTION_DIGIT_TWO_FOR_EVEN_POWERS_OF_FOUR => Ok(Telugu::TeluguFractionDigitTwoForEvenPowersOfFour),
-            TELUGU_FRACTION_DIGIT_THREE_FOR_EVEN_POWERS_OF_FOUR => Ok(Telugu::TeluguFractionDigitThreeForEvenPowersOfFour),
+            SIGN_COMBINING_CANDRABINDU_ABOVE => Ok(Telugu::SignCombiningCandrabinduAbove),
+            SIGN_CANDRABINDU => Ok(Telugu::SignCandrabindu),
+            SIGN_ANUSVARA => Ok(Telugu::SignAnusvara),
+            SIGN_VISARGA => Ok(Telugu::SignVisarga),
+            SIGN_COMBINING_ANUSVARA_ABOVE => Ok(Telugu::SignCombiningAnusvaraAbove),
+            LETTER_A => Ok(Telugu::LetterA),
+            LETTER_AA => Ok(Telugu::LetterAa),
+            LETTER_I => Ok(Telugu::LetterI),
+            LETTER_II => Ok(Telugu::LetterIi),
+            LETTER_U => Ok(Telugu::LetterU),
+            LETTER_UU => Ok(Telugu::LetterUu),
+            LETTER_VOCALIC_R => Ok(Telugu::LetterVocalicR),
+            LETTER_VOCALIC_L => Ok(Telugu::LetterVocalicL),
+            LETTER_E => Ok(Telugu::LetterE),
+            LETTER_EE => Ok(Telugu::LetterEe),
+            LETTER_AI => Ok(Telugu::LetterAi),
+            LETTER_O => Ok(Telugu::LetterO),
+            LETTER_OO => Ok(Telugu::LetterOo),
+            LETTER_AU => Ok(Telugu::LetterAu),
+            LETTER_KA => Ok(Telugu::LetterKa),
+            LETTER_KHA => Ok(Telugu::LetterKha),
+            LETTER_GA => Ok(Telugu::LetterGa),
+            LETTER_GHA => Ok(Telugu::LetterGha),
+            LETTER_NGA => Ok(Telugu::LetterNga),
+            LETTER_CA => Ok(Telugu::LetterCa),
+            LETTER_CHA => Ok(Telugu::LetterCha),
+            LETTER_JA => Ok(Telugu::LetterJa),
+            LETTER_JHA => Ok(Telugu::LetterJha),
+            LETTER_NYA => Ok(Telugu::LetterNya),
+            LETTER_TTA => Ok(Telugu::LetterTta),
+            LETTER_TTHA => Ok(Telugu::LetterTtha),
+            LETTER_DDA => Ok(Telugu::LetterDda),
+            LETTER_DDHA => Ok(Telugu::LetterDdha),
+            LETTER_NNA => Ok(Telugu::LetterNna),
+            LETTER_TA => Ok(Telugu::LetterTa),
+            LETTER_THA => Ok(Telugu::LetterTha),
+            LETTER_DA => Ok(Telugu::LetterDa),
+            LETTER_DHA => Ok(Telugu::LetterDha),
+            LETTER_NA => Ok(Telugu::LetterNa),
+            LETTER_PA => Ok(Telugu::LetterPa),
+            LETTER_PHA => Ok(Telugu::LetterPha),
+            LETTER_BA => Ok(Telugu::LetterBa),
+            LETTER_BHA => Ok(Telugu::LetterBha),
+            LETTER_MA => Ok(Telugu::LetterMa),
+            LETTER_YA => Ok(Telugu::LetterYa),
+            LETTER_RA => Ok(Telugu::LetterRa),
+            LETTER_RRA => Ok(Telugu::LetterRra),
+            LETTER_LA => Ok(Telugu::LetterLa),
+            LETTER_LLA => Ok(Telugu::LetterLla),
+            LETTER_LLLA => Ok(Telugu::LetterLlla),
+            LETTER_VA => Ok(Telugu::LetterVa),
+            LETTER_SHA => Ok(Telugu::LetterSha),
+            LETTER_SSA => Ok(Telugu::LetterSsa),
+            LETTER_SA => Ok(Telugu::LetterSa),
+            LETTER_HA => Ok(Telugu::LetterHa),
+            SIGN_AVAGRAHA => Ok(Telugu::SignAvagraha),
+            VOWEL_SIGN_AA => Ok(Telugu::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Telugu::VowelSignI),
+            VOWEL_SIGN_II => Ok(Telugu::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Telugu::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Telugu::VowelSignUu),
+            VOWEL_SIGN_VOCALIC_R => Ok(Telugu::VowelSignVocalicR),
+            VOWEL_SIGN_VOCALIC_RR => Ok(Telugu::VowelSignVocalicRr),
+            VOWEL_SIGN_E => Ok(Telugu::VowelSignE),
+            VOWEL_SIGN_EE => Ok(Telugu::VowelSignEe),
+            VOWEL_SIGN_AI => Ok(Telugu::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Telugu::VowelSignO),
+            VOWEL_SIGN_OO => Ok(Telugu::VowelSignOo),
+            VOWEL_SIGN_AU => Ok(Telugu::VowelSignAu),
+            SIGN_VIRAMA => Ok(Telugu::SignVirama),
+            LENGTH_MARK => Ok(Telugu::LengthMark),
+            AI_LENGTH_MARK => Ok(Telugu::AiLengthMark),
+            LETTER_TSA => Ok(Telugu::LetterTsa),
+            LETTER_DZA => Ok(Telugu::LetterDza),
+            LETTER_RRRA => Ok(Telugu::LetterRrra),
+            LETTER_VOCALIC_RR => Ok(Telugu::LetterVocalicRr),
+            LETTER_VOCALIC_LL => Ok(Telugu::LetterVocalicLl),
+            VOWEL_SIGN_VOCALIC_L => Ok(Telugu::VowelSignVocalicL),
+            VOWEL_SIGN_VOCALIC_LL => Ok(Telugu::VowelSignVocalicLl),
+            DIGIT_ZERO => Ok(Telugu::DigitZero),
+            DIGIT_ONE => Ok(Telugu::DigitOne),
+            DIGIT_TWO => Ok(Telugu::DigitTwo),
+            DIGIT_THREE => Ok(Telugu::DigitThree),
+            DIGIT_FOUR => Ok(Telugu::DigitFour),
+            DIGIT_FIVE => Ok(Telugu::DigitFive),
+            DIGIT_SIX => Ok(Telugu::DigitSix),
+            DIGIT_SEVEN => Ok(Telugu::DigitSeven),
+            DIGIT_EIGHT => Ok(Telugu::DigitEight),
+            DIGIT_NINE => Ok(Telugu::DigitNine),
+            SIGN_SIDDHAM => Ok(Telugu::SignSiddham),
+            FRACTION_DIGIT_ZERO_FOR_ODD_POWERS_OF_FOUR => Ok(Telugu::FractionDigitZeroForOddPowersOfFour),
+            FRACTION_DIGIT_ONE_FOR_ODD_POWERS_OF_FOUR => Ok(Telugu::FractionDigitOneForOddPowersOfFour),
+            FRACTION_DIGIT_TWO_FOR_ODD_POWERS_OF_FOUR => Ok(Telugu::FractionDigitTwoForOddPowersOfFour),
+            FRACTION_DIGIT_THREE_FOR_ODD_POWERS_OF_FOUR => Ok(Telugu::FractionDigitThreeForOddPowersOfFour),
+            FRACTION_DIGIT_ONE_FOR_EVEN_POWERS_OF_FOUR => Ok(Telugu::FractionDigitOneForEvenPowersOfFour),
+            FRACTION_DIGIT_TWO_FOR_EVEN_POWERS_OF_FOUR => Ok(Telugu::FractionDigitTwoForEvenPowersOfFour),
+            FRACTION_DIGIT_THREE_FOR_EVEN_POWERS_OF_FOUR => Ok(Telugu::FractionDigitThreeForEvenPowersOfFour),
             _ => Err(()),
         }
     }
@@ -656,111 +656,111 @@ impl Iterator for Telugu {
 }
 
 impl Telugu {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Telugu::TeluguSignCombiningCandrabinduAbove
+        Telugu::SignCombiningCandrabinduAbove
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Telugu::TeluguSignCombiningCandrabinduAbove => "telugu sign combining candrabindu above",
-            Telugu::TeluguSignCandrabindu => "telugu sign candrabindu",
-            Telugu::TeluguSignAnusvara => "telugu sign anusvara",
-            Telugu::TeluguSignVisarga => "telugu sign visarga",
-            Telugu::TeluguSignCombiningAnusvaraAbove => "telugu sign combining anusvara above",
-            Telugu::TeluguLetterA => "telugu letter a",
-            Telugu::TeluguLetterAa => "telugu letter aa",
-            Telugu::TeluguLetterI => "telugu letter i",
-            Telugu::TeluguLetterIi => "telugu letter ii",
-            Telugu::TeluguLetterU => "telugu letter u",
-            Telugu::TeluguLetterUu => "telugu letter uu",
-            Telugu::TeluguLetterVocalicR => "telugu letter vocalic r",
-            Telugu::TeluguLetterVocalicL => "telugu letter vocalic l",
-            Telugu::TeluguLetterE => "telugu letter e",
-            Telugu::TeluguLetterEe => "telugu letter ee",
-            Telugu::TeluguLetterAi => "telugu letter ai",
-            Telugu::TeluguLetterO => "telugu letter o",
-            Telugu::TeluguLetterOo => "telugu letter oo",
-            Telugu::TeluguLetterAu => "telugu letter au",
-            Telugu::TeluguLetterKa => "telugu letter ka",
-            Telugu::TeluguLetterKha => "telugu letter kha",
-            Telugu::TeluguLetterGa => "telugu letter ga",
-            Telugu::TeluguLetterGha => "telugu letter gha",
-            Telugu::TeluguLetterNga => "telugu letter nga",
-            Telugu::TeluguLetterCa => "telugu letter ca",
-            Telugu::TeluguLetterCha => "telugu letter cha",
-            Telugu::TeluguLetterJa => "telugu letter ja",
-            Telugu::TeluguLetterJha => "telugu letter jha",
-            Telugu::TeluguLetterNya => "telugu letter nya",
-            Telugu::TeluguLetterTta => "telugu letter tta",
-            Telugu::TeluguLetterTtha => "telugu letter ttha",
-            Telugu::TeluguLetterDda => "telugu letter dda",
-            Telugu::TeluguLetterDdha => "telugu letter ddha",
-            Telugu::TeluguLetterNna => "telugu letter nna",
-            Telugu::TeluguLetterTa => "telugu letter ta",
-            Telugu::TeluguLetterTha => "telugu letter tha",
-            Telugu::TeluguLetterDa => "telugu letter da",
-            Telugu::TeluguLetterDha => "telugu letter dha",
-            Telugu::TeluguLetterNa => "telugu letter na",
-            Telugu::TeluguLetterPa => "telugu letter pa",
-            Telugu::TeluguLetterPha => "telugu letter pha",
-            Telugu::TeluguLetterBa => "telugu letter ba",
-            Telugu::TeluguLetterBha => "telugu letter bha",
-            Telugu::TeluguLetterMa => "telugu letter ma",
-            Telugu::TeluguLetterYa => "telugu letter ya",
-            Telugu::TeluguLetterRa => "telugu letter ra",
-            Telugu::TeluguLetterRra => "telugu letter rra",
-            Telugu::TeluguLetterLa => "telugu letter la",
-            Telugu::TeluguLetterLla => "telugu letter lla",
-            Telugu::TeluguLetterLlla => "telugu letter llla",
-            Telugu::TeluguLetterVa => "telugu letter va",
-            Telugu::TeluguLetterSha => "telugu letter sha",
-            Telugu::TeluguLetterSsa => "telugu letter ssa",
-            Telugu::TeluguLetterSa => "telugu letter sa",
-            Telugu::TeluguLetterHa => "telugu letter ha",
-            Telugu::TeluguSignAvagraha => "telugu sign avagraha",
-            Telugu::TeluguVowelSignAa => "telugu vowel sign aa",
-            Telugu::TeluguVowelSignI => "telugu vowel sign i",
-            Telugu::TeluguVowelSignIi => "telugu vowel sign ii",
-            Telugu::TeluguVowelSignU => "telugu vowel sign u",
-            Telugu::TeluguVowelSignUu => "telugu vowel sign uu",
-            Telugu::TeluguVowelSignVocalicR => "telugu vowel sign vocalic r",
-            Telugu::TeluguVowelSignVocalicRr => "telugu vowel sign vocalic rr",
-            Telugu::TeluguVowelSignE => "telugu vowel sign e",
-            Telugu::TeluguVowelSignEe => "telugu vowel sign ee",
-            Telugu::TeluguVowelSignAi => "telugu vowel sign ai",
-            Telugu::TeluguVowelSignO => "telugu vowel sign o",
-            Telugu::TeluguVowelSignOo => "telugu vowel sign oo",
-            Telugu::TeluguVowelSignAu => "telugu vowel sign au",
-            Telugu::TeluguSignVirama => "telugu sign virama",
-            Telugu::TeluguLengthMark => "telugu length mark",
-            Telugu::TeluguAiLengthMark => "telugu ai length mark",
-            Telugu::TeluguLetterTsa => "telugu letter tsa",
-            Telugu::TeluguLetterDza => "telugu letter dza",
-            Telugu::TeluguLetterRrra => "telugu letter rrra",
-            Telugu::TeluguLetterVocalicRr => "telugu letter vocalic rr",
-            Telugu::TeluguLetterVocalicLl => "telugu letter vocalic ll",
-            Telugu::TeluguVowelSignVocalicL => "telugu vowel sign vocalic l",
-            Telugu::TeluguVowelSignVocalicLl => "telugu vowel sign vocalic ll",
-            Telugu::TeluguDigitZero => "telugu digit zero",
-            Telugu::TeluguDigitOne => "telugu digit one",
-            Telugu::TeluguDigitTwo => "telugu digit two",
-            Telugu::TeluguDigitThree => "telugu digit three",
-            Telugu::TeluguDigitFour => "telugu digit four",
-            Telugu::TeluguDigitFive => "telugu digit five",
-            Telugu::TeluguDigitSix => "telugu digit six",
-            Telugu::TeluguDigitSeven => "telugu digit seven",
-            Telugu::TeluguDigitEight => "telugu digit eight",
-            Telugu::TeluguDigitNine => "telugu digit nine",
-            Telugu::TeluguSignSiddham => "telugu sign siddham",
-            Telugu::TeluguFractionDigitZeroForOddPowersOfFour => "telugu fraction digit zero for odd powers of four",
-            Telugu::TeluguFractionDigitOneForOddPowersOfFour => "telugu fraction digit one for odd powers of four",
-            Telugu::TeluguFractionDigitTwoForOddPowersOfFour => "telugu fraction digit two for odd powers of four",
-            Telugu::TeluguFractionDigitThreeForOddPowersOfFour => "telugu fraction digit three for odd powers of four",
-            Telugu::TeluguFractionDigitOneForEvenPowersOfFour => "telugu fraction digit one for even powers of four",
-            Telugu::TeluguFractionDigitTwoForEvenPowersOfFour => "telugu fraction digit two for even powers of four",
-            Telugu::TeluguFractionDigitThreeForEvenPowersOfFour => "telugu fraction digit three for even powers of four",
+            Telugu::SignCombiningCandrabinduAbove => "telugu sign combining candrabindu above",
+            Telugu::SignCandrabindu => "telugu sign candrabindu",
+            Telugu::SignAnusvara => "telugu sign anusvara",
+            Telugu::SignVisarga => "telugu sign visarga",
+            Telugu::SignCombiningAnusvaraAbove => "telugu sign combining anusvara above",
+            Telugu::LetterA => "telugu letter a",
+            Telugu::LetterAa => "telugu letter aa",
+            Telugu::LetterI => "telugu letter i",
+            Telugu::LetterIi => "telugu letter ii",
+            Telugu::LetterU => "telugu letter u",
+            Telugu::LetterUu => "telugu letter uu",
+            Telugu::LetterVocalicR => "telugu letter vocalic r",
+            Telugu::LetterVocalicL => "telugu letter vocalic l",
+            Telugu::LetterE => "telugu letter e",
+            Telugu::LetterEe => "telugu letter ee",
+            Telugu::LetterAi => "telugu letter ai",
+            Telugu::LetterO => "telugu letter o",
+            Telugu::LetterOo => "telugu letter oo",
+            Telugu::LetterAu => "telugu letter au",
+            Telugu::LetterKa => "telugu letter ka",
+            Telugu::LetterKha => "telugu letter kha",
+            Telugu::LetterGa => "telugu letter ga",
+            Telugu::LetterGha => "telugu letter gha",
+            Telugu::LetterNga => "telugu letter nga",
+            Telugu::LetterCa => "telugu letter ca",
+            Telugu::LetterCha => "telugu letter cha",
+            Telugu::LetterJa => "telugu letter ja",
+            Telugu::LetterJha => "telugu letter jha",
+            Telugu::LetterNya => "telugu letter nya",
+            Telugu::LetterTta => "telugu letter tta",
+            Telugu::LetterTtha => "telugu letter ttha",
+            Telugu::LetterDda => "telugu letter dda",
+            Telugu::LetterDdha => "telugu letter ddha",
+            Telugu::LetterNna => "telugu letter nna",
+            Telugu::LetterTa => "telugu letter ta",
+            Telugu::LetterTha => "telugu letter tha",
+            Telugu::LetterDa => "telugu letter da",
+            Telugu::LetterDha => "telugu letter dha",
+            Telugu::LetterNa => "telugu letter na",
+            Telugu::LetterPa => "telugu letter pa",
+            Telugu::LetterPha => "telugu letter pha",
+            Telugu::LetterBa => "telugu letter ba",
+            Telugu::LetterBha => "telugu letter bha",
+            Telugu::LetterMa => "telugu letter ma",
+            Telugu::LetterYa => "telugu letter ya",
+            Telugu::LetterRa => "telugu letter ra",
+            Telugu::LetterRra => "telugu letter rra",
+            Telugu::LetterLa => "telugu letter la",
+            Telugu::LetterLla => "telugu letter lla",
+            Telugu::LetterLlla => "telugu letter llla",
+            Telugu::LetterVa => "telugu letter va",
+            Telugu::LetterSha => "telugu letter sha",
+            Telugu::LetterSsa => "telugu letter ssa",
+            Telugu::LetterSa => "telugu letter sa",
+            Telugu::LetterHa => "telugu letter ha",
+            Telugu::SignAvagraha => "telugu sign avagraha",
+            Telugu::VowelSignAa => "telugu vowel sign aa",
+            Telugu::VowelSignI => "telugu vowel sign i",
+            Telugu::VowelSignIi => "telugu vowel sign ii",
+            Telugu::VowelSignU => "telugu vowel sign u",
+            Telugu::VowelSignUu => "telugu vowel sign uu",
+            Telugu::VowelSignVocalicR => "telugu vowel sign vocalic r",
+            Telugu::VowelSignVocalicRr => "telugu vowel sign vocalic rr",
+            Telugu::VowelSignE => "telugu vowel sign e",
+            Telugu::VowelSignEe => "telugu vowel sign ee",
+            Telugu::VowelSignAi => "telugu vowel sign ai",
+            Telugu::VowelSignO => "telugu vowel sign o",
+            Telugu::VowelSignOo => "telugu vowel sign oo",
+            Telugu::VowelSignAu => "telugu vowel sign au",
+            Telugu::SignVirama => "telugu sign virama",
+            Telugu::LengthMark => "telugu length mark",
+            Telugu::AiLengthMark => "telugu ai length mark",
+            Telugu::LetterTsa => "telugu letter tsa",
+            Telugu::LetterDza => "telugu letter dza",
+            Telugu::LetterRrra => "telugu letter rrra",
+            Telugu::LetterVocalicRr => "telugu letter vocalic rr",
+            Telugu::LetterVocalicLl => "telugu letter vocalic ll",
+            Telugu::VowelSignVocalicL => "telugu vowel sign vocalic l",
+            Telugu::VowelSignVocalicLl => "telugu vowel sign vocalic ll",
+            Telugu::DigitZero => "telugu digit zero",
+            Telugu::DigitOne => "telugu digit one",
+            Telugu::DigitTwo => "telugu digit two",
+            Telugu::DigitThree => "telugu digit three",
+            Telugu::DigitFour => "telugu digit four",
+            Telugu::DigitFive => "telugu digit five",
+            Telugu::DigitSix => "telugu digit six",
+            Telugu::DigitSeven => "telugu digit seven",
+            Telugu::DigitEight => "telugu digit eight",
+            Telugu::DigitNine => "telugu digit nine",
+            Telugu::SignSiddham => "telugu sign siddham",
+            Telugu::FractionDigitZeroForOddPowersOfFour => "telugu fraction digit zero for odd powers of four",
+            Telugu::FractionDigitOneForOddPowersOfFour => "telugu fraction digit one for odd powers of four",
+            Telugu::FractionDigitTwoForOddPowersOfFour => "telugu fraction digit two for odd powers of four",
+            Telugu::FractionDigitThreeForOddPowersOfFour => "telugu fraction digit three for odd powers of four",
+            Telugu::FractionDigitOneForEvenPowersOfFour => "telugu fraction digit one for even powers of four",
+            Telugu::FractionDigitTwoForEvenPowersOfFour => "telugu fraction digit two for even powers of four",
+            Telugu::FractionDigitThreeForEvenPowersOfFour => "telugu fraction digit three for even powers of four",
         }
     }
 }

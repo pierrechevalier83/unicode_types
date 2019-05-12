@@ -5,75 +5,75 @@
 /// 𑃷 𑃸 𑃹
 pub mod constants {
     /// \u{110d0}: '𑃐'
-    pub const SORA_SOMPENG_LETTER_SAH: char = '𑃐';
+    pub const LETTER_SAH: char = '𑃐';
     /// \u{110d1}: '𑃑'
-    pub const SORA_SOMPENG_LETTER_TAH: char = '𑃑';
+    pub const LETTER_TAH: char = '𑃑';
     /// \u{110d2}: '𑃒'
-    pub const SORA_SOMPENG_LETTER_BAH: char = '𑃒';
+    pub const LETTER_BAH: char = '𑃒';
     /// \u{110d3}: '𑃓'
-    pub const SORA_SOMPENG_LETTER_CAH: char = '𑃓';
+    pub const LETTER_CAH: char = '𑃓';
     /// \u{110d4}: '𑃔'
-    pub const SORA_SOMPENG_LETTER_DAH: char = '𑃔';
+    pub const LETTER_DAH: char = '𑃔';
     /// \u{110d5}: '𑃕'
-    pub const SORA_SOMPENG_LETTER_GAH: char = '𑃕';
+    pub const LETTER_GAH: char = '𑃕';
     /// \u{110d6}: '𑃖'
-    pub const SORA_SOMPENG_LETTER_MAH: char = '𑃖';
+    pub const LETTER_MAH: char = '𑃖';
     /// \u{110d7}: '𑃗'
-    pub const SORA_SOMPENG_LETTER_NGAH: char = '𑃗';
+    pub const LETTER_NGAH: char = '𑃗';
     /// \u{110d8}: '𑃘'
-    pub const SORA_SOMPENG_LETTER_LAH: char = '𑃘';
+    pub const LETTER_LAH: char = '𑃘';
     /// \u{110d9}: '𑃙'
-    pub const SORA_SOMPENG_LETTER_NAH: char = '𑃙';
+    pub const LETTER_NAH: char = '𑃙';
     /// \u{110da}: '𑃚'
-    pub const SORA_SOMPENG_LETTER_VAH: char = '𑃚';
+    pub const LETTER_VAH: char = '𑃚';
     /// \u{110db}: '𑃛'
-    pub const SORA_SOMPENG_LETTER_PAH: char = '𑃛';
+    pub const LETTER_PAH: char = '𑃛';
     /// \u{110dc}: '𑃜'
-    pub const SORA_SOMPENG_LETTER_YAH: char = '𑃜';
+    pub const LETTER_YAH: char = '𑃜';
     /// \u{110dd}: '𑃝'
-    pub const SORA_SOMPENG_LETTER_RAH: char = '𑃝';
+    pub const LETTER_RAH: char = '𑃝';
     /// \u{110de}: '𑃞'
-    pub const SORA_SOMPENG_LETTER_HAH: char = '𑃞';
+    pub const LETTER_HAH: char = '𑃞';
     /// \u{110df}: '𑃟'
-    pub const SORA_SOMPENG_LETTER_KAH: char = '𑃟';
+    pub const LETTER_KAH: char = '𑃟';
     /// \u{110e0}: '𑃠'
-    pub const SORA_SOMPENG_LETTER_JAH: char = '𑃠';
+    pub const LETTER_JAH: char = '𑃠';
     /// \u{110e1}: '𑃡'
-    pub const SORA_SOMPENG_LETTER_NYAH: char = '𑃡';
+    pub const LETTER_NYAH: char = '𑃡';
     /// \u{110e2}: '𑃢'
-    pub const SORA_SOMPENG_LETTER_AH: char = '𑃢';
+    pub const LETTER_AH: char = '𑃢';
     /// \u{110e3}: '𑃣'
-    pub const SORA_SOMPENG_LETTER_EEH: char = '𑃣';
+    pub const LETTER_EEH: char = '𑃣';
     /// \u{110e4}: '𑃤'
-    pub const SORA_SOMPENG_LETTER_IH: char = '𑃤';
+    pub const LETTER_IH: char = '𑃤';
     /// \u{110e5}: '𑃥'
-    pub const SORA_SOMPENG_LETTER_UH: char = '𑃥';
+    pub const LETTER_UH: char = '𑃥';
     /// \u{110e6}: '𑃦'
-    pub const SORA_SOMPENG_LETTER_OH: char = '𑃦';
+    pub const LETTER_OH: char = '𑃦';
     /// \u{110e7}: '𑃧'
-    pub const SORA_SOMPENG_LETTER_EH: char = '𑃧';
+    pub const LETTER_EH: char = '𑃧';
     /// \u{110e8}: '𑃨'
-    pub const SORA_SOMPENG_LETTER_MAE: char = '𑃨';
+    pub const LETTER_MAE: char = '𑃨';
     /// \u{110f0}: '𑃰'
-    pub const SORA_SOMPENG_DIGIT_ZERO: char = '𑃰';
+    pub const DIGIT_ZERO: char = '𑃰';
     /// \u{110f1}: '𑃱'
-    pub const SORA_SOMPENG_DIGIT_ONE: char = '𑃱';
+    pub const DIGIT_ONE: char = '𑃱';
     /// \u{110f2}: '𑃲'
-    pub const SORA_SOMPENG_DIGIT_TWO: char = '𑃲';
+    pub const DIGIT_TWO: char = '𑃲';
     /// \u{110f3}: '𑃳'
-    pub const SORA_SOMPENG_DIGIT_THREE: char = '𑃳';
+    pub const DIGIT_THREE: char = '𑃳';
     /// \u{110f4}: '𑃴'
-    pub const SORA_SOMPENG_DIGIT_FOUR: char = '𑃴';
+    pub const DIGIT_FOUR: char = '𑃴';
     /// \u{110f5}: '𑃵'
-    pub const SORA_SOMPENG_DIGIT_FIVE: char = '𑃵';
+    pub const DIGIT_FIVE: char = '𑃵';
     /// \u{110f6}: '𑃶'
-    pub const SORA_SOMPENG_DIGIT_SIX: char = '𑃶';
+    pub const DIGIT_SIX: char = '𑃶';
     /// \u{110f7}: '𑃷'
-    pub const SORA_SOMPENG_DIGIT_SEVEN: char = '𑃷';
+    pub const DIGIT_SEVEN: char = '𑃷';
     /// \u{110f8}: '𑃸'
-    pub const SORA_SOMPENG_DIGIT_EIGHT: char = '𑃸';
+    pub const DIGIT_EIGHT: char = '𑃸';
     /// \u{110f9}: '𑃹'
-    pub const SORA_SOMPENG_DIGIT_NINE: char = '𑃹';
+    pub const DIGIT_NINE: char = '𑃹';
 }
 
 /// \u{110d0} → \u{110ff}\
@@ -84,116 +84,116 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SoraSompeng {
     /// \u{110d0}: '𑃐'
-    SoraSompengLetterSah,
+    LetterSah,
     /// \u{110d1}: '𑃑'
-    SoraSompengLetterTah,
+    LetterTah,
     /// \u{110d2}: '𑃒'
-    SoraSompengLetterBah,
+    LetterBah,
     /// \u{110d3}: '𑃓'
-    SoraSompengLetterCah,
+    LetterCah,
     /// \u{110d4}: '𑃔'
-    SoraSompengLetterDah,
+    LetterDah,
     /// \u{110d5}: '𑃕'
-    SoraSompengLetterGah,
+    LetterGah,
     /// \u{110d6}: '𑃖'
-    SoraSompengLetterMah,
+    LetterMah,
     /// \u{110d7}: '𑃗'
-    SoraSompengLetterNgah,
+    LetterNgah,
     /// \u{110d8}: '𑃘'
-    SoraSompengLetterLah,
+    LetterLah,
     /// \u{110d9}: '𑃙'
-    SoraSompengLetterNah,
+    LetterNah,
     /// \u{110da}: '𑃚'
-    SoraSompengLetterVah,
+    LetterVah,
     /// \u{110db}: '𑃛'
-    SoraSompengLetterPah,
+    LetterPah,
     /// \u{110dc}: '𑃜'
-    SoraSompengLetterYah,
+    LetterYah,
     /// \u{110dd}: '𑃝'
-    SoraSompengLetterRah,
+    LetterRah,
     /// \u{110de}: '𑃞'
-    SoraSompengLetterHah,
+    LetterHah,
     /// \u{110df}: '𑃟'
-    SoraSompengLetterKah,
+    LetterKah,
     /// \u{110e0}: '𑃠'
-    SoraSompengLetterJah,
+    LetterJah,
     /// \u{110e1}: '𑃡'
-    SoraSompengLetterNyah,
+    LetterNyah,
     /// \u{110e2}: '𑃢'
-    SoraSompengLetterAh,
+    LetterAh,
     /// \u{110e3}: '𑃣'
-    SoraSompengLetterEeh,
+    LetterEeh,
     /// \u{110e4}: '𑃤'
-    SoraSompengLetterIh,
+    LetterIh,
     /// \u{110e5}: '𑃥'
-    SoraSompengLetterUh,
+    LetterUh,
     /// \u{110e6}: '𑃦'
-    SoraSompengLetterOh,
+    LetterOh,
     /// \u{110e7}: '𑃧'
-    SoraSompengLetterEh,
+    LetterEh,
     /// \u{110e8}: '𑃨'
-    SoraSompengLetterMae,
+    LetterMae,
     /// \u{110f0}: '𑃰'
-    SoraSompengDigitZero,
+    DigitZero,
     /// \u{110f1}: '𑃱'
-    SoraSompengDigitOne,
+    DigitOne,
     /// \u{110f2}: '𑃲'
-    SoraSompengDigitTwo,
+    DigitTwo,
     /// \u{110f3}: '𑃳'
-    SoraSompengDigitThree,
+    DigitThree,
     /// \u{110f4}: '𑃴'
-    SoraSompengDigitFour,
+    DigitFour,
     /// \u{110f5}: '𑃵'
-    SoraSompengDigitFive,
+    DigitFive,
     /// \u{110f6}: '𑃶'
-    SoraSompengDigitSix,
+    DigitSix,
     /// \u{110f7}: '𑃷'
-    SoraSompengDigitSeven,
+    DigitSeven,
     /// \u{110f8}: '𑃸'
-    SoraSompengDigitEight,
+    DigitEight,
     /// \u{110f9}: '𑃹'
-    SoraSompengDigitNine,
+    DigitNine,
 }
 
 impl Into<char> for SoraSompeng {
     fn into(self) -> char {
         use constants::*;
         match self {
-            SoraSompeng::SoraSompengLetterSah => SORA_SOMPENG_LETTER_SAH,
-            SoraSompeng::SoraSompengLetterTah => SORA_SOMPENG_LETTER_TAH,
-            SoraSompeng::SoraSompengLetterBah => SORA_SOMPENG_LETTER_BAH,
-            SoraSompeng::SoraSompengLetterCah => SORA_SOMPENG_LETTER_CAH,
-            SoraSompeng::SoraSompengLetterDah => SORA_SOMPENG_LETTER_DAH,
-            SoraSompeng::SoraSompengLetterGah => SORA_SOMPENG_LETTER_GAH,
-            SoraSompeng::SoraSompengLetterMah => SORA_SOMPENG_LETTER_MAH,
-            SoraSompeng::SoraSompengLetterNgah => SORA_SOMPENG_LETTER_NGAH,
-            SoraSompeng::SoraSompengLetterLah => SORA_SOMPENG_LETTER_LAH,
-            SoraSompeng::SoraSompengLetterNah => SORA_SOMPENG_LETTER_NAH,
-            SoraSompeng::SoraSompengLetterVah => SORA_SOMPENG_LETTER_VAH,
-            SoraSompeng::SoraSompengLetterPah => SORA_SOMPENG_LETTER_PAH,
-            SoraSompeng::SoraSompengLetterYah => SORA_SOMPENG_LETTER_YAH,
-            SoraSompeng::SoraSompengLetterRah => SORA_SOMPENG_LETTER_RAH,
-            SoraSompeng::SoraSompengLetterHah => SORA_SOMPENG_LETTER_HAH,
-            SoraSompeng::SoraSompengLetterKah => SORA_SOMPENG_LETTER_KAH,
-            SoraSompeng::SoraSompengLetterJah => SORA_SOMPENG_LETTER_JAH,
-            SoraSompeng::SoraSompengLetterNyah => SORA_SOMPENG_LETTER_NYAH,
-            SoraSompeng::SoraSompengLetterAh => SORA_SOMPENG_LETTER_AH,
-            SoraSompeng::SoraSompengLetterEeh => SORA_SOMPENG_LETTER_EEH,
-            SoraSompeng::SoraSompengLetterIh => SORA_SOMPENG_LETTER_IH,
-            SoraSompeng::SoraSompengLetterUh => SORA_SOMPENG_LETTER_UH,
-            SoraSompeng::SoraSompengLetterOh => SORA_SOMPENG_LETTER_OH,
-            SoraSompeng::SoraSompengLetterEh => SORA_SOMPENG_LETTER_EH,
-            SoraSompeng::SoraSompengLetterMae => SORA_SOMPENG_LETTER_MAE,
-            SoraSompeng::SoraSompengDigitZero => SORA_SOMPENG_DIGIT_ZERO,
-            SoraSompeng::SoraSompengDigitOne => SORA_SOMPENG_DIGIT_ONE,
-            SoraSompeng::SoraSompengDigitTwo => SORA_SOMPENG_DIGIT_TWO,
-            SoraSompeng::SoraSompengDigitThree => SORA_SOMPENG_DIGIT_THREE,
-            SoraSompeng::SoraSompengDigitFour => SORA_SOMPENG_DIGIT_FOUR,
-            SoraSompeng::SoraSompengDigitFive => SORA_SOMPENG_DIGIT_FIVE,
-            SoraSompeng::SoraSompengDigitSix => SORA_SOMPENG_DIGIT_SIX,
-            SoraSompeng::SoraSompengDigitSeven => SORA_SOMPENG_DIGIT_SEVEN,
-            SoraSompeng::SoraSompengDigitEight => SORA_SOMPENG_DIGIT_EIGHT,
-            SoraSompeng::SoraSompengDigitNine => SORA_SOMPENG_DIGIT_NINE,
+            SoraSompeng::LetterSah => LETTER_SAH,
+            SoraSompeng::LetterTah => LETTER_TAH,
+            SoraSompeng::LetterBah => LETTER_BAH,
+            SoraSompeng::LetterCah => LETTER_CAH,
+            SoraSompeng::LetterDah => LETTER_DAH,
+            SoraSompeng::LetterGah => LETTER_GAH,
+            SoraSompeng::LetterMah => LETTER_MAH,
+            SoraSompeng::LetterNgah => LETTER_NGAH,
+            SoraSompeng::LetterLah => LETTER_LAH,
+            SoraSompeng::LetterNah => LETTER_NAH,
+            SoraSompeng::LetterVah => LETTER_VAH,
+            SoraSompeng::LetterPah => LETTER_PAH,
+            SoraSompeng::LetterYah => LETTER_YAH,
+            SoraSompeng::LetterRah => LETTER_RAH,
+            SoraSompeng::LetterHah => LETTER_HAH,
+            SoraSompeng::LetterKah => LETTER_KAH,
+            SoraSompeng::LetterJah => LETTER_JAH,
+            SoraSompeng::LetterNyah => LETTER_NYAH,
+            SoraSompeng::LetterAh => LETTER_AH,
+            SoraSompeng::LetterEeh => LETTER_EEH,
+            SoraSompeng::LetterIh => LETTER_IH,
+            SoraSompeng::LetterUh => LETTER_UH,
+            SoraSompeng::LetterOh => LETTER_OH,
+            SoraSompeng::LetterEh => LETTER_EH,
+            SoraSompeng::LetterMae => LETTER_MAE,
+            SoraSompeng::DigitZero => DIGIT_ZERO,
+            SoraSompeng::DigitOne => DIGIT_ONE,
+            SoraSompeng::DigitTwo => DIGIT_TWO,
+            SoraSompeng::DigitThree => DIGIT_THREE,
+            SoraSompeng::DigitFour => DIGIT_FOUR,
+            SoraSompeng::DigitFive => DIGIT_FIVE,
+            SoraSompeng::DigitSix => DIGIT_SIX,
+            SoraSompeng::DigitSeven => DIGIT_SEVEN,
+            SoraSompeng::DigitEight => DIGIT_EIGHT,
+            SoraSompeng::DigitNine => DIGIT_NINE,
         }
     }
 }
@@ -203,41 +203,41 @@ impl std::convert::TryFrom<char> for SoraSompeng {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            SORA_SOMPENG_LETTER_SAH => Ok(SoraSompeng::SoraSompengLetterSah),
-            SORA_SOMPENG_LETTER_TAH => Ok(SoraSompeng::SoraSompengLetterTah),
-            SORA_SOMPENG_LETTER_BAH => Ok(SoraSompeng::SoraSompengLetterBah),
-            SORA_SOMPENG_LETTER_CAH => Ok(SoraSompeng::SoraSompengLetterCah),
-            SORA_SOMPENG_LETTER_DAH => Ok(SoraSompeng::SoraSompengLetterDah),
-            SORA_SOMPENG_LETTER_GAH => Ok(SoraSompeng::SoraSompengLetterGah),
-            SORA_SOMPENG_LETTER_MAH => Ok(SoraSompeng::SoraSompengLetterMah),
-            SORA_SOMPENG_LETTER_NGAH => Ok(SoraSompeng::SoraSompengLetterNgah),
-            SORA_SOMPENG_LETTER_LAH => Ok(SoraSompeng::SoraSompengLetterLah),
-            SORA_SOMPENG_LETTER_NAH => Ok(SoraSompeng::SoraSompengLetterNah),
-            SORA_SOMPENG_LETTER_VAH => Ok(SoraSompeng::SoraSompengLetterVah),
-            SORA_SOMPENG_LETTER_PAH => Ok(SoraSompeng::SoraSompengLetterPah),
-            SORA_SOMPENG_LETTER_YAH => Ok(SoraSompeng::SoraSompengLetterYah),
-            SORA_SOMPENG_LETTER_RAH => Ok(SoraSompeng::SoraSompengLetterRah),
-            SORA_SOMPENG_LETTER_HAH => Ok(SoraSompeng::SoraSompengLetterHah),
-            SORA_SOMPENG_LETTER_KAH => Ok(SoraSompeng::SoraSompengLetterKah),
-            SORA_SOMPENG_LETTER_JAH => Ok(SoraSompeng::SoraSompengLetterJah),
-            SORA_SOMPENG_LETTER_NYAH => Ok(SoraSompeng::SoraSompengLetterNyah),
-            SORA_SOMPENG_LETTER_AH => Ok(SoraSompeng::SoraSompengLetterAh),
-            SORA_SOMPENG_LETTER_EEH => Ok(SoraSompeng::SoraSompengLetterEeh),
-            SORA_SOMPENG_LETTER_IH => Ok(SoraSompeng::SoraSompengLetterIh),
-            SORA_SOMPENG_LETTER_UH => Ok(SoraSompeng::SoraSompengLetterUh),
-            SORA_SOMPENG_LETTER_OH => Ok(SoraSompeng::SoraSompengLetterOh),
-            SORA_SOMPENG_LETTER_EH => Ok(SoraSompeng::SoraSompengLetterEh),
-            SORA_SOMPENG_LETTER_MAE => Ok(SoraSompeng::SoraSompengLetterMae),
-            SORA_SOMPENG_DIGIT_ZERO => Ok(SoraSompeng::SoraSompengDigitZero),
-            SORA_SOMPENG_DIGIT_ONE => Ok(SoraSompeng::SoraSompengDigitOne),
-            SORA_SOMPENG_DIGIT_TWO => Ok(SoraSompeng::SoraSompengDigitTwo),
-            SORA_SOMPENG_DIGIT_THREE => Ok(SoraSompeng::SoraSompengDigitThree),
-            SORA_SOMPENG_DIGIT_FOUR => Ok(SoraSompeng::SoraSompengDigitFour),
-            SORA_SOMPENG_DIGIT_FIVE => Ok(SoraSompeng::SoraSompengDigitFive),
-            SORA_SOMPENG_DIGIT_SIX => Ok(SoraSompeng::SoraSompengDigitSix),
-            SORA_SOMPENG_DIGIT_SEVEN => Ok(SoraSompeng::SoraSompengDigitSeven),
-            SORA_SOMPENG_DIGIT_EIGHT => Ok(SoraSompeng::SoraSompengDigitEight),
-            SORA_SOMPENG_DIGIT_NINE => Ok(SoraSompeng::SoraSompengDigitNine),
+            LETTER_SAH => Ok(SoraSompeng::LetterSah),
+            LETTER_TAH => Ok(SoraSompeng::LetterTah),
+            LETTER_BAH => Ok(SoraSompeng::LetterBah),
+            LETTER_CAH => Ok(SoraSompeng::LetterCah),
+            LETTER_DAH => Ok(SoraSompeng::LetterDah),
+            LETTER_GAH => Ok(SoraSompeng::LetterGah),
+            LETTER_MAH => Ok(SoraSompeng::LetterMah),
+            LETTER_NGAH => Ok(SoraSompeng::LetterNgah),
+            LETTER_LAH => Ok(SoraSompeng::LetterLah),
+            LETTER_NAH => Ok(SoraSompeng::LetterNah),
+            LETTER_VAH => Ok(SoraSompeng::LetterVah),
+            LETTER_PAH => Ok(SoraSompeng::LetterPah),
+            LETTER_YAH => Ok(SoraSompeng::LetterYah),
+            LETTER_RAH => Ok(SoraSompeng::LetterRah),
+            LETTER_HAH => Ok(SoraSompeng::LetterHah),
+            LETTER_KAH => Ok(SoraSompeng::LetterKah),
+            LETTER_JAH => Ok(SoraSompeng::LetterJah),
+            LETTER_NYAH => Ok(SoraSompeng::LetterNyah),
+            LETTER_AH => Ok(SoraSompeng::LetterAh),
+            LETTER_EEH => Ok(SoraSompeng::LetterEeh),
+            LETTER_IH => Ok(SoraSompeng::LetterIh),
+            LETTER_UH => Ok(SoraSompeng::LetterUh),
+            LETTER_OH => Ok(SoraSompeng::LetterOh),
+            LETTER_EH => Ok(SoraSompeng::LetterEh),
+            LETTER_MAE => Ok(SoraSompeng::LetterMae),
+            DIGIT_ZERO => Ok(SoraSompeng::DigitZero),
+            DIGIT_ONE => Ok(SoraSompeng::DigitOne),
+            DIGIT_TWO => Ok(SoraSompeng::DigitTwo),
+            DIGIT_THREE => Ok(SoraSompeng::DigitThree),
+            DIGIT_FOUR => Ok(SoraSompeng::DigitFour),
+            DIGIT_FIVE => Ok(SoraSompeng::DigitFive),
+            DIGIT_SIX => Ok(SoraSompeng::DigitSix),
+            DIGIT_SEVEN => Ok(SoraSompeng::DigitSeven),
+            DIGIT_EIGHT => Ok(SoraSompeng::DigitEight),
+            DIGIT_NINE => Ok(SoraSompeng::DigitNine),
             _ => Err(()),
         }
     }
@@ -276,49 +276,49 @@ impl Iterator for SoraSompeng {
 }
 
 impl SoraSompeng {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        SoraSompeng::SoraSompengLetterSah
+        SoraSompeng::LetterSah
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            SoraSompeng::SoraSompengLetterSah => "sora sompeng letter sah",
-            SoraSompeng::SoraSompengLetterTah => "sora sompeng letter tah",
-            SoraSompeng::SoraSompengLetterBah => "sora sompeng letter bah",
-            SoraSompeng::SoraSompengLetterCah => "sora sompeng letter cah",
-            SoraSompeng::SoraSompengLetterDah => "sora sompeng letter dah",
-            SoraSompeng::SoraSompengLetterGah => "sora sompeng letter gah",
-            SoraSompeng::SoraSompengLetterMah => "sora sompeng letter mah",
-            SoraSompeng::SoraSompengLetterNgah => "sora sompeng letter ngah",
-            SoraSompeng::SoraSompengLetterLah => "sora sompeng letter lah",
-            SoraSompeng::SoraSompengLetterNah => "sora sompeng letter nah",
-            SoraSompeng::SoraSompengLetterVah => "sora sompeng letter vah",
-            SoraSompeng::SoraSompengLetterPah => "sora sompeng letter pah",
-            SoraSompeng::SoraSompengLetterYah => "sora sompeng letter yah",
-            SoraSompeng::SoraSompengLetterRah => "sora sompeng letter rah",
-            SoraSompeng::SoraSompengLetterHah => "sora sompeng letter hah",
-            SoraSompeng::SoraSompengLetterKah => "sora sompeng letter kah",
-            SoraSompeng::SoraSompengLetterJah => "sora sompeng letter jah",
-            SoraSompeng::SoraSompengLetterNyah => "sora sompeng letter nyah",
-            SoraSompeng::SoraSompengLetterAh => "sora sompeng letter ah",
-            SoraSompeng::SoraSompengLetterEeh => "sora sompeng letter eeh",
-            SoraSompeng::SoraSompengLetterIh => "sora sompeng letter ih",
-            SoraSompeng::SoraSompengLetterUh => "sora sompeng letter uh",
-            SoraSompeng::SoraSompengLetterOh => "sora sompeng letter oh",
-            SoraSompeng::SoraSompengLetterEh => "sora sompeng letter eh",
-            SoraSompeng::SoraSompengLetterMae => "sora sompeng letter mae",
-            SoraSompeng::SoraSompengDigitZero => "sora sompeng digit zero",
-            SoraSompeng::SoraSompengDigitOne => "sora sompeng digit one",
-            SoraSompeng::SoraSompengDigitTwo => "sora sompeng digit two",
-            SoraSompeng::SoraSompengDigitThree => "sora sompeng digit three",
-            SoraSompeng::SoraSompengDigitFour => "sora sompeng digit four",
-            SoraSompeng::SoraSompengDigitFive => "sora sompeng digit five",
-            SoraSompeng::SoraSompengDigitSix => "sora sompeng digit six",
-            SoraSompeng::SoraSompengDigitSeven => "sora sompeng digit seven",
-            SoraSompeng::SoraSompengDigitEight => "sora sompeng digit eight",
-            SoraSompeng::SoraSompengDigitNine => "sora sompeng digit nine",
+            SoraSompeng::LetterSah => "sora sompeng letter sah",
+            SoraSompeng::LetterTah => "sora sompeng letter tah",
+            SoraSompeng::LetterBah => "sora sompeng letter bah",
+            SoraSompeng::LetterCah => "sora sompeng letter cah",
+            SoraSompeng::LetterDah => "sora sompeng letter dah",
+            SoraSompeng::LetterGah => "sora sompeng letter gah",
+            SoraSompeng::LetterMah => "sora sompeng letter mah",
+            SoraSompeng::LetterNgah => "sora sompeng letter ngah",
+            SoraSompeng::LetterLah => "sora sompeng letter lah",
+            SoraSompeng::LetterNah => "sora sompeng letter nah",
+            SoraSompeng::LetterVah => "sora sompeng letter vah",
+            SoraSompeng::LetterPah => "sora sompeng letter pah",
+            SoraSompeng::LetterYah => "sora sompeng letter yah",
+            SoraSompeng::LetterRah => "sora sompeng letter rah",
+            SoraSompeng::LetterHah => "sora sompeng letter hah",
+            SoraSompeng::LetterKah => "sora sompeng letter kah",
+            SoraSompeng::LetterJah => "sora sompeng letter jah",
+            SoraSompeng::LetterNyah => "sora sompeng letter nyah",
+            SoraSompeng::LetterAh => "sora sompeng letter ah",
+            SoraSompeng::LetterEeh => "sora sompeng letter eeh",
+            SoraSompeng::LetterIh => "sora sompeng letter ih",
+            SoraSompeng::LetterUh => "sora sompeng letter uh",
+            SoraSompeng::LetterOh => "sora sompeng letter oh",
+            SoraSompeng::LetterEh => "sora sompeng letter eh",
+            SoraSompeng::LetterMae => "sora sompeng letter mae",
+            SoraSompeng::DigitZero => "sora sompeng digit zero",
+            SoraSompeng::DigitOne => "sora sompeng digit one",
+            SoraSompeng::DigitTwo => "sora sompeng digit two",
+            SoraSompeng::DigitThree => "sora sompeng digit three",
+            SoraSompeng::DigitFour => "sora sompeng digit four",
+            SoraSompeng::DigitFive => "sora sompeng digit five",
+            SoraSompeng::DigitSix => "sora sompeng digit six",
+            SoraSompeng::DigitSeven => "sora sompeng digit seven",
+            SoraSompeng::DigitEight => "sora sompeng digit eight",
+            SoraSompeng::DigitNine => "sora sompeng digit nine",
         }
     }
 }

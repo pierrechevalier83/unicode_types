@@ -3632,7 +3632,7 @@ impl Iterator for AnatolianHieroglyphs {
 }
 
 impl AnatolianHieroglyphs {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         AnatolianHieroglyphs::AnatolianHieroglyphA001
     }

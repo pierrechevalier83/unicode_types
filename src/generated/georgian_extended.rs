@@ -336,7 +336,7 @@ impl Iterator for GeorgianExtended {
 }
 
 impl GeorgianExtended {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         GeorgianExtended::GeorgianMtavruliCapitalLetterAn
     }

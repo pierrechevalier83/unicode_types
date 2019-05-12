@@ -8,179 +8,179 @@
 /// ๕ ๖ ๗ ๘ ๙ ๚ ๛
 pub mod constants {
     /// \u{e01}: 'ก'
-    pub const THAI_CHARACTER_KO_KAI: char = 'ก';
+    pub const CHARACTER_KO_KAI: char = 'ก';
     /// \u{e02}: 'ข'
-    pub const THAI_CHARACTER_KHO_KHAI: char = 'ข';
+    pub const CHARACTER_KHO_KHAI: char = 'ข';
     /// \u{e03}: 'ฃ'
-    pub const THAI_CHARACTER_KHO_KHUAT: char = 'ฃ';
+    pub const CHARACTER_KHO_KHUAT: char = 'ฃ';
     /// \u{e04}: 'ค'
-    pub const THAI_CHARACTER_KHO_KHWAI: char = 'ค';
+    pub const CHARACTER_KHO_KHWAI: char = 'ค';
     /// \u{e05}: 'ฅ'
-    pub const THAI_CHARACTER_KHO_KHON: char = 'ฅ';
+    pub const CHARACTER_KHO_KHON: char = 'ฅ';
     /// \u{e06}: 'ฆ'
-    pub const THAI_CHARACTER_KHO_RAKHANG: char = 'ฆ';
+    pub const CHARACTER_KHO_RAKHANG: char = 'ฆ';
     /// \u{e07}: 'ง'
-    pub const THAI_CHARACTER_NGO_NGU: char = 'ง';
+    pub const CHARACTER_NGO_NGU: char = 'ง';
     /// \u{e08}: 'จ'
-    pub const THAI_CHARACTER_CHO_CHAN: char = 'จ';
+    pub const CHARACTER_CHO_CHAN: char = 'จ';
     /// \u{e09}: 'ฉ'
-    pub const THAI_CHARACTER_CHO_CHING: char = 'ฉ';
+    pub const CHARACTER_CHO_CHING: char = 'ฉ';
     /// \u{e0a}: 'ช'
-    pub const THAI_CHARACTER_CHO_CHANG: char = 'ช';
+    pub const CHARACTER_CHO_CHANG: char = 'ช';
     /// \u{e0b}: 'ซ'
-    pub const THAI_CHARACTER_SO_SO: char = 'ซ';
+    pub const CHARACTER_SO_SO: char = 'ซ';
     /// \u{e0c}: 'ฌ'
-    pub const THAI_CHARACTER_CHO_CHOE: char = 'ฌ';
+    pub const CHARACTER_CHO_CHOE: char = 'ฌ';
     /// \u{e0d}: 'ญ'
-    pub const THAI_CHARACTER_YO_YING: char = 'ญ';
+    pub const CHARACTER_YO_YING: char = 'ญ';
     /// \u{e0e}: 'ฎ'
-    pub const THAI_CHARACTER_DO_CHADA: char = 'ฎ';
+    pub const CHARACTER_DO_CHADA: char = 'ฎ';
     /// \u{e0f}: 'ฏ'
-    pub const THAI_CHARACTER_TO_PATAK: char = 'ฏ';
+    pub const CHARACTER_TO_PATAK: char = 'ฏ';
     /// \u{e10}: 'ฐ'
-    pub const THAI_CHARACTER_THO_THAN: char = 'ฐ';
+    pub const CHARACTER_THO_THAN: char = 'ฐ';
     /// \u{e11}: 'ฑ'
-    pub const THAI_CHARACTER_THO_NANGMONTHO: char = 'ฑ';
+    pub const CHARACTER_THO_NANGMONTHO: char = 'ฑ';
     /// \u{e12}: 'ฒ'
-    pub const THAI_CHARACTER_THO_PHUTHAO: char = 'ฒ';
+    pub const CHARACTER_THO_PHUTHAO: char = 'ฒ';
     /// \u{e13}: 'ณ'
-    pub const THAI_CHARACTER_NO_NEN: char = 'ณ';
+    pub const CHARACTER_NO_NEN: char = 'ณ';
     /// \u{e14}: 'ด'
-    pub const THAI_CHARACTER_DO_DEK: char = 'ด';
+    pub const CHARACTER_DO_DEK: char = 'ด';
     /// \u{e15}: 'ต'
-    pub const THAI_CHARACTER_TO_TAO: char = 'ต';
+    pub const CHARACTER_TO_TAO: char = 'ต';
     /// \u{e16}: 'ถ'
-    pub const THAI_CHARACTER_THO_THUNG: char = 'ถ';
+    pub const CHARACTER_THO_THUNG: char = 'ถ';
     /// \u{e17}: 'ท'
-    pub const THAI_CHARACTER_THO_THAHAN: char = 'ท';
+    pub const CHARACTER_THO_THAHAN: char = 'ท';
     /// \u{e18}: 'ธ'
-    pub const THAI_CHARACTER_THO_THONG: char = 'ธ';
+    pub const CHARACTER_THO_THONG: char = 'ธ';
     /// \u{e19}: 'น'
-    pub const THAI_CHARACTER_NO_NU: char = 'น';
+    pub const CHARACTER_NO_NU: char = 'น';
     /// \u{e1a}: 'บ'
-    pub const THAI_CHARACTER_BO_BAIMAI: char = 'บ';
+    pub const CHARACTER_BO_BAIMAI: char = 'บ';
     /// \u{e1b}: 'ป'
-    pub const THAI_CHARACTER_PO_PLA: char = 'ป';
+    pub const CHARACTER_PO_PLA: char = 'ป';
     /// \u{e1c}: 'ผ'
-    pub const THAI_CHARACTER_PHO_PHUNG: char = 'ผ';
+    pub const CHARACTER_PHO_PHUNG: char = 'ผ';
     /// \u{e1d}: 'ฝ'
-    pub const THAI_CHARACTER_FO_FA: char = 'ฝ';
+    pub const CHARACTER_FO_FA: char = 'ฝ';
     /// \u{e1e}: 'พ'
-    pub const THAI_CHARACTER_PHO_PHAN: char = 'พ';
+    pub const CHARACTER_PHO_PHAN: char = 'พ';
     /// \u{e1f}: 'ฟ'
-    pub const THAI_CHARACTER_FO_FAN: char = 'ฟ';
+    pub const CHARACTER_FO_FAN: char = 'ฟ';
     /// \u{e20}: 'ภ'
-    pub const THAI_CHARACTER_PHO_SAMPHAO: char = 'ภ';
+    pub const CHARACTER_PHO_SAMPHAO: char = 'ภ';
     /// \u{e21}: 'ม'
-    pub const THAI_CHARACTER_MO_MA: char = 'ม';
+    pub const CHARACTER_MO_MA: char = 'ม';
     /// \u{e22}: 'ย'
-    pub const THAI_CHARACTER_YO_YAK: char = 'ย';
+    pub const CHARACTER_YO_YAK: char = 'ย';
     /// \u{e23}: 'ร'
-    pub const THAI_CHARACTER_RO_RUA: char = 'ร';
+    pub const CHARACTER_RO_RUA: char = 'ร';
     /// \u{e24}: 'ฤ'
-    pub const THAI_CHARACTER_RU: char = 'ฤ';
+    pub const CHARACTER_RU: char = 'ฤ';
     /// \u{e25}: 'ล'
-    pub const THAI_CHARACTER_LO_LING: char = 'ล';
+    pub const CHARACTER_LO_LING: char = 'ล';
     /// \u{e26}: 'ฦ'
-    pub const THAI_CHARACTER_LU: char = 'ฦ';
+    pub const CHARACTER_LU: char = 'ฦ';
     /// \u{e27}: 'ว'
-    pub const THAI_CHARACTER_WO_WAEN: char = 'ว';
+    pub const CHARACTER_WO_WAEN: char = 'ว';
     /// \u{e28}: 'ศ'
-    pub const THAI_CHARACTER_SO_SALA: char = 'ศ';
+    pub const CHARACTER_SO_SALA: char = 'ศ';
     /// \u{e29}: 'ษ'
-    pub const THAI_CHARACTER_SO_RUSI: char = 'ษ';
+    pub const CHARACTER_SO_RUSI: char = 'ษ';
     /// \u{e2a}: 'ส'
-    pub const THAI_CHARACTER_SO_SUA: char = 'ส';
+    pub const CHARACTER_SO_SUA: char = 'ส';
     /// \u{e2b}: 'ห'
-    pub const THAI_CHARACTER_HO_HIP: char = 'ห';
+    pub const CHARACTER_HO_HIP: char = 'ห';
     /// \u{e2c}: 'ฬ'
-    pub const THAI_CHARACTER_LO_CHULA: char = 'ฬ';
+    pub const CHARACTER_LO_CHULA: char = 'ฬ';
     /// \u{e2d}: 'อ'
-    pub const THAI_CHARACTER_O_ANG: char = 'อ';
+    pub const CHARACTER_O_ANG: char = 'อ';
     /// \u{e2e}: 'ฮ'
-    pub const THAI_CHARACTER_HO_NOKHUK: char = 'ฮ';
+    pub const CHARACTER_HO_NOKHUK: char = 'ฮ';
     /// \u{e2f}: 'ฯ'
-    pub const THAI_CHARACTER_PAIYANNOI: char = 'ฯ';
+    pub const CHARACTER_PAIYANNOI: char = 'ฯ';
     /// \u{e30}: 'ะ'
-    pub const THAI_CHARACTER_SARA_A: char = 'ะ';
+    pub const CHARACTER_SARA_A: char = 'ะ';
     /// \u{e31}: 'ั'
-    pub const THAI_CHARACTER_MAI_HAN_DASH_AKAT: char = 'ั';
+    pub const CHARACTER_MAI_HAN_DASH_AKAT: char = 'ั';
     /// \u{e32}: 'า'
-    pub const THAI_CHARACTER_SARA_AA: char = 'า';
+    pub const CHARACTER_SARA_AA: char = 'า';
     /// \u{e33}: 'ำ'
-    pub const THAI_CHARACTER_SARA_AM: char = 'ำ';
+    pub const CHARACTER_SARA_AM: char = 'ำ';
     /// \u{e34}: 'ิ'
-    pub const THAI_CHARACTER_SARA_I: char = 'ิ';
+    pub const CHARACTER_SARA_I: char = 'ิ';
     /// \u{e35}: 'ี'
-    pub const THAI_CHARACTER_SARA_II: char = 'ี';
+    pub const CHARACTER_SARA_II: char = 'ี';
     /// \u{e36}: 'ึ'
-    pub const THAI_CHARACTER_SARA_UE: char = 'ึ';
+    pub const CHARACTER_SARA_UE: char = 'ึ';
     /// \u{e37}: 'ื'
-    pub const THAI_CHARACTER_SARA_UEE: char = 'ื';
+    pub const CHARACTER_SARA_UEE: char = 'ื';
     /// \u{e38}: 'ุ'
-    pub const THAI_CHARACTER_SARA_U: char = 'ุ';
+    pub const CHARACTER_SARA_U: char = 'ุ';
     /// \u{e39}: 'ู'
-    pub const THAI_CHARACTER_SARA_UU: char = 'ู';
+    pub const CHARACTER_SARA_UU: char = 'ู';
     /// \u{e3a}: 'ฺ'
-    pub const THAI_CHARACTER_PHINTHU: char = 'ฺ';
+    pub const CHARACTER_PHINTHU: char = 'ฺ';
     /// \u{e3f}: '฿'
-    pub const THAI_CURRENCY_SYMBOL_BAHT: char = '฿';
+    pub const CURRENCY_SYMBOL_BAHT: char = '฿';
     /// \u{e40}: 'เ'
-    pub const THAI_CHARACTER_SARA_E: char = 'เ';
+    pub const CHARACTER_SARA_E: char = 'เ';
     /// \u{e41}: 'แ'
-    pub const THAI_CHARACTER_SARA_AE: char = 'แ';
+    pub const CHARACTER_SARA_AE: char = 'แ';
     /// \u{e42}: 'โ'
-    pub const THAI_CHARACTER_SARA_O: char = 'โ';
+    pub const CHARACTER_SARA_O: char = 'โ';
     /// \u{e43}: 'ใ'
-    pub const THAI_CHARACTER_SARA_AI_MAIMUAN: char = 'ใ';
+    pub const CHARACTER_SARA_AI_MAIMUAN: char = 'ใ';
     /// \u{e44}: 'ไ'
-    pub const THAI_CHARACTER_SARA_AI_MAIMALAI: char = 'ไ';
+    pub const CHARACTER_SARA_AI_MAIMALAI: char = 'ไ';
     /// \u{e45}: 'ๅ'
-    pub const THAI_CHARACTER_LAKKHANGYAO: char = 'ๅ';
+    pub const CHARACTER_LAKKHANGYAO: char = 'ๅ';
     /// \u{e46}: 'ๆ'
-    pub const THAI_CHARACTER_MAIYAMOK: char = 'ๆ';
+    pub const CHARACTER_MAIYAMOK: char = 'ๆ';
     /// \u{e47}: '็'
-    pub const THAI_CHARACTER_MAITAIKHU: char = '็';
+    pub const CHARACTER_MAITAIKHU: char = '็';
     /// \u{e48}: '่'
-    pub const THAI_CHARACTER_MAI_EK: char = '่';
+    pub const CHARACTER_MAI_EK: char = '่';
     /// \u{e49}: '้'
-    pub const THAI_CHARACTER_MAI_THO: char = '้';
+    pub const CHARACTER_MAI_THO: char = '้';
     /// \u{e4a}: '๊'
-    pub const THAI_CHARACTER_MAI_TRI: char = '๊';
+    pub const CHARACTER_MAI_TRI: char = '๊';
     /// \u{e4b}: '๋'
-    pub const THAI_CHARACTER_MAI_CHATTAWA: char = '๋';
+    pub const CHARACTER_MAI_CHATTAWA: char = '๋';
     /// \u{e4c}: '์'
-    pub const THAI_CHARACTER_THANTHAKHAT: char = '์';
+    pub const CHARACTER_THANTHAKHAT: char = '์';
     /// \u{e4d}: 'ํ'
-    pub const THAI_CHARACTER_NIKHAHIT: char = 'ํ';
+    pub const CHARACTER_NIKHAHIT: char = 'ํ';
     /// \u{e4e}: '๎'
-    pub const THAI_CHARACTER_YAMAKKAN: char = '๎';
+    pub const CHARACTER_YAMAKKAN: char = '๎';
     /// \u{e4f}: '๏'
-    pub const THAI_CHARACTER_FONGMAN: char = '๏';
+    pub const CHARACTER_FONGMAN: char = '๏';
     /// \u{e50}: '๐'
-    pub const THAI_DIGIT_ZERO: char = '๐';
+    pub const DIGIT_ZERO: char = '๐';
     /// \u{e51}: '๑'
-    pub const THAI_DIGIT_ONE: char = '๑';
+    pub const DIGIT_ONE: char = '๑';
     /// \u{e52}: '๒'
-    pub const THAI_DIGIT_TWO: char = '๒';
+    pub const DIGIT_TWO: char = '๒';
     /// \u{e53}: '๓'
-    pub const THAI_DIGIT_THREE: char = '๓';
+    pub const DIGIT_THREE: char = '๓';
     /// \u{e54}: '๔'
-    pub const THAI_DIGIT_FOUR: char = '๔';
+    pub const DIGIT_FOUR: char = '๔';
     /// \u{e55}: '๕'
-    pub const THAI_DIGIT_FIVE: char = '๕';
+    pub const DIGIT_FIVE: char = '๕';
     /// \u{e56}: '๖'
-    pub const THAI_DIGIT_SIX: char = '๖';
+    pub const DIGIT_SIX: char = '๖';
     /// \u{e57}: '๗'
-    pub const THAI_DIGIT_SEVEN: char = '๗';
+    pub const DIGIT_SEVEN: char = '๗';
     /// \u{e58}: '๘'
-    pub const THAI_DIGIT_EIGHT: char = '๘';
+    pub const DIGIT_EIGHT: char = '๘';
     /// \u{e59}: '๙'
-    pub const THAI_DIGIT_NINE: char = '๙';
+    pub const DIGIT_NINE: char = '๙';
     /// \u{e5a}: '๚'
-    pub const THAI_CHARACTER_ANGKHANKHU: char = '๚';
+    pub const CHARACTER_ANGKHANKHU: char = '๚';
     /// \u{e5b}: '๛'
-    pub const THAI_CHARACTER_KHOMUT: char = '๛';
+    pub const CHARACTER_KHOMUT: char = '๛';
 }
 
 /// \u{e00} → \u{e7f}\
@@ -194,272 +194,272 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Thai {
     /// \u{e01}: 'ก'
-    ThaiCharacterKoKai,
+    CharacterKoKai,
     /// \u{e02}: 'ข'
-    ThaiCharacterKhoKhai,
+    CharacterKhoKhai,
     /// \u{e03}: 'ฃ'
-    ThaiCharacterKhoKhuat,
+    CharacterKhoKhuat,
     /// \u{e04}: 'ค'
-    ThaiCharacterKhoKhwai,
+    CharacterKhoKhwai,
     /// \u{e05}: 'ฅ'
-    ThaiCharacterKhoKhon,
+    CharacterKhoKhon,
     /// \u{e06}: 'ฆ'
-    ThaiCharacterKhoRakhang,
+    CharacterKhoRakhang,
     /// \u{e07}: 'ง'
-    ThaiCharacterNgoNgu,
+    CharacterNgoNgu,
     /// \u{e08}: 'จ'
-    ThaiCharacterChoChan,
+    CharacterChoChan,
     /// \u{e09}: 'ฉ'
-    ThaiCharacterChoChing,
+    CharacterChoChing,
     /// \u{e0a}: 'ช'
-    ThaiCharacterChoChang,
+    CharacterChoChang,
     /// \u{e0b}: 'ซ'
-    ThaiCharacterSoSo,
+    CharacterSoSo,
     /// \u{e0c}: 'ฌ'
-    ThaiCharacterChoChoe,
+    CharacterChoChoe,
     /// \u{e0d}: 'ญ'
-    ThaiCharacterYoYing,
+    CharacterYoYing,
     /// \u{e0e}: 'ฎ'
-    ThaiCharacterDoChada,
+    CharacterDoChada,
     /// \u{e0f}: 'ฏ'
-    ThaiCharacterToPatak,
+    CharacterToPatak,
     /// \u{e10}: 'ฐ'
-    ThaiCharacterThoThan,
+    CharacterThoThan,
     /// \u{e11}: 'ฑ'
-    ThaiCharacterThoNangmontho,
+    CharacterThoNangmontho,
     /// \u{e12}: 'ฒ'
-    ThaiCharacterThoPhuthao,
+    CharacterThoPhuthao,
     /// \u{e13}: 'ณ'
-    ThaiCharacterNoNen,
+    CharacterNoNen,
     /// \u{e14}: 'ด'
-    ThaiCharacterDoDek,
+    CharacterDoDek,
     /// \u{e15}: 'ต'
-    ThaiCharacterToTao,
+    CharacterToTao,
     /// \u{e16}: 'ถ'
-    ThaiCharacterThoThung,
+    CharacterThoThung,
     /// \u{e17}: 'ท'
-    ThaiCharacterThoThahan,
+    CharacterThoThahan,
     /// \u{e18}: 'ธ'
-    ThaiCharacterThoThong,
+    CharacterThoThong,
     /// \u{e19}: 'น'
-    ThaiCharacterNoNu,
+    CharacterNoNu,
     /// \u{e1a}: 'บ'
-    ThaiCharacterBoBaimai,
+    CharacterBoBaimai,
     /// \u{e1b}: 'ป'
-    ThaiCharacterPoPla,
+    CharacterPoPla,
     /// \u{e1c}: 'ผ'
-    ThaiCharacterPhoPhung,
+    CharacterPhoPhung,
     /// \u{e1d}: 'ฝ'
-    ThaiCharacterFoFa,
+    CharacterFoFa,
     /// \u{e1e}: 'พ'
-    ThaiCharacterPhoPhan,
+    CharacterPhoPhan,
     /// \u{e1f}: 'ฟ'
-    ThaiCharacterFoFan,
+    CharacterFoFan,
     /// \u{e20}: 'ภ'
-    ThaiCharacterPhoSamphao,
+    CharacterPhoSamphao,
     /// \u{e21}: 'ม'
-    ThaiCharacterMoMa,
+    CharacterMoMa,
     /// \u{e22}: 'ย'
-    ThaiCharacterYoYak,
+    CharacterYoYak,
     /// \u{e23}: 'ร'
-    ThaiCharacterRoRua,
+    CharacterRoRua,
     /// \u{e24}: 'ฤ'
-    ThaiCharacterRu,
+    CharacterRu,
     /// \u{e25}: 'ล'
-    ThaiCharacterLoLing,
+    CharacterLoLing,
     /// \u{e26}: 'ฦ'
-    ThaiCharacterLu,
+    CharacterLu,
     /// \u{e27}: 'ว'
-    ThaiCharacterWoWaen,
+    CharacterWoWaen,
     /// \u{e28}: 'ศ'
-    ThaiCharacterSoSala,
+    CharacterSoSala,
     /// \u{e29}: 'ษ'
-    ThaiCharacterSoRusi,
+    CharacterSoRusi,
     /// \u{e2a}: 'ส'
-    ThaiCharacterSoSua,
+    CharacterSoSua,
     /// \u{e2b}: 'ห'
-    ThaiCharacterHoHip,
+    CharacterHoHip,
     /// \u{e2c}: 'ฬ'
-    ThaiCharacterLoChula,
+    CharacterLoChula,
     /// \u{e2d}: 'อ'
-    ThaiCharacterOAng,
+    CharacterOAng,
     /// \u{e2e}: 'ฮ'
-    ThaiCharacterHoNokhuk,
+    CharacterHoNokhuk,
     /// \u{e2f}: 'ฯ'
-    ThaiCharacterPaiyannoi,
+    CharacterPaiyannoi,
     /// \u{e30}: 'ะ'
-    ThaiCharacterSaraA,
+    CharacterSaraA,
     /// \u{e31}: 'ั'
-    ThaiCharacterMaiHanDashAkat,
+    CharacterMaiHanDashAkat,
     /// \u{e32}: 'า'
-    ThaiCharacterSaraAa,
+    CharacterSaraAa,
     /// \u{e33}: 'ำ'
-    ThaiCharacterSaraAm,
+    CharacterSaraAm,
     /// \u{e34}: 'ิ'
-    ThaiCharacterSaraI,
+    CharacterSaraI,
     /// \u{e35}: 'ี'
-    ThaiCharacterSaraIi,
+    CharacterSaraIi,
     /// \u{e36}: 'ึ'
-    ThaiCharacterSaraUe,
+    CharacterSaraUe,
     /// \u{e37}: 'ื'
-    ThaiCharacterSaraUee,
+    CharacterSaraUee,
     /// \u{e38}: 'ุ'
-    ThaiCharacterSaraU,
+    CharacterSaraU,
     /// \u{e39}: 'ู'
-    ThaiCharacterSaraUu,
+    CharacterSaraUu,
     /// \u{e3a}: 'ฺ'
-    ThaiCharacterPhinthu,
+    CharacterPhinthu,
     /// \u{e3f}: '฿'
-    ThaiCurrencySymbolBaht,
+    CurrencySymbolBaht,
     /// \u{e40}: 'เ'
-    ThaiCharacterSaraE,
+    CharacterSaraE,
     /// \u{e41}: 'แ'
-    ThaiCharacterSaraAe,
+    CharacterSaraAe,
     /// \u{e42}: 'โ'
-    ThaiCharacterSaraO,
+    CharacterSaraO,
     /// \u{e43}: 'ใ'
-    ThaiCharacterSaraAiMaimuan,
+    CharacterSaraAiMaimuan,
     /// \u{e44}: 'ไ'
-    ThaiCharacterSaraAiMaimalai,
+    CharacterSaraAiMaimalai,
     /// \u{e45}: 'ๅ'
-    ThaiCharacterLakkhangyao,
+    CharacterLakkhangyao,
     /// \u{e46}: 'ๆ'
-    ThaiCharacterMaiyamok,
+    CharacterMaiyamok,
     /// \u{e47}: '็'
-    ThaiCharacterMaitaikhu,
+    CharacterMaitaikhu,
     /// \u{e48}: '่'
-    ThaiCharacterMaiEk,
+    CharacterMaiEk,
     /// \u{e49}: '้'
-    ThaiCharacterMaiTho,
+    CharacterMaiTho,
     /// \u{e4a}: '๊'
-    ThaiCharacterMaiTri,
+    CharacterMaiTri,
     /// \u{e4b}: '๋'
-    ThaiCharacterMaiChattawa,
+    CharacterMaiChattawa,
     /// \u{e4c}: '์'
-    ThaiCharacterThanthakhat,
+    CharacterThanthakhat,
     /// \u{e4d}: 'ํ'
-    ThaiCharacterNikhahit,
+    CharacterNikhahit,
     /// \u{e4e}: '๎'
-    ThaiCharacterYamakkan,
+    CharacterYamakkan,
     /// \u{e4f}: '๏'
-    ThaiCharacterFongman,
+    CharacterFongman,
     /// \u{e50}: '๐'
-    ThaiDigitZero,
+    DigitZero,
     /// \u{e51}: '๑'
-    ThaiDigitOne,
+    DigitOne,
     /// \u{e52}: '๒'
-    ThaiDigitTwo,
+    DigitTwo,
     /// \u{e53}: '๓'
-    ThaiDigitThree,
+    DigitThree,
     /// \u{e54}: '๔'
-    ThaiDigitFour,
+    DigitFour,
     /// \u{e55}: '๕'
-    ThaiDigitFive,
+    DigitFive,
     /// \u{e56}: '๖'
-    ThaiDigitSix,
+    DigitSix,
     /// \u{e57}: '๗'
-    ThaiDigitSeven,
+    DigitSeven,
     /// \u{e58}: '๘'
-    ThaiDigitEight,
+    DigitEight,
     /// \u{e59}: '๙'
-    ThaiDigitNine,
+    DigitNine,
     /// \u{e5a}: '๚'
-    ThaiCharacterAngkhankhu,
+    CharacterAngkhankhu,
     /// \u{e5b}: '๛'
-    ThaiCharacterKhomut,
+    CharacterKhomut,
 }
 
 impl Into<char> for Thai {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Thai::ThaiCharacterKoKai => THAI_CHARACTER_KO_KAI,
-            Thai::ThaiCharacterKhoKhai => THAI_CHARACTER_KHO_KHAI,
-            Thai::ThaiCharacterKhoKhuat => THAI_CHARACTER_KHO_KHUAT,
-            Thai::ThaiCharacterKhoKhwai => THAI_CHARACTER_KHO_KHWAI,
-            Thai::ThaiCharacterKhoKhon => THAI_CHARACTER_KHO_KHON,
-            Thai::ThaiCharacterKhoRakhang => THAI_CHARACTER_KHO_RAKHANG,
-            Thai::ThaiCharacterNgoNgu => THAI_CHARACTER_NGO_NGU,
-            Thai::ThaiCharacterChoChan => THAI_CHARACTER_CHO_CHAN,
-            Thai::ThaiCharacterChoChing => THAI_CHARACTER_CHO_CHING,
-            Thai::ThaiCharacterChoChang => THAI_CHARACTER_CHO_CHANG,
-            Thai::ThaiCharacterSoSo => THAI_CHARACTER_SO_SO,
-            Thai::ThaiCharacterChoChoe => THAI_CHARACTER_CHO_CHOE,
-            Thai::ThaiCharacterYoYing => THAI_CHARACTER_YO_YING,
-            Thai::ThaiCharacterDoChada => THAI_CHARACTER_DO_CHADA,
-            Thai::ThaiCharacterToPatak => THAI_CHARACTER_TO_PATAK,
-            Thai::ThaiCharacterThoThan => THAI_CHARACTER_THO_THAN,
-            Thai::ThaiCharacterThoNangmontho => THAI_CHARACTER_THO_NANGMONTHO,
-            Thai::ThaiCharacterThoPhuthao => THAI_CHARACTER_THO_PHUTHAO,
-            Thai::ThaiCharacterNoNen => THAI_CHARACTER_NO_NEN,
-            Thai::ThaiCharacterDoDek => THAI_CHARACTER_DO_DEK,
-            Thai::ThaiCharacterToTao => THAI_CHARACTER_TO_TAO,
-            Thai::ThaiCharacterThoThung => THAI_CHARACTER_THO_THUNG,
-            Thai::ThaiCharacterThoThahan => THAI_CHARACTER_THO_THAHAN,
-            Thai::ThaiCharacterThoThong => THAI_CHARACTER_THO_THONG,
-            Thai::ThaiCharacterNoNu => THAI_CHARACTER_NO_NU,
-            Thai::ThaiCharacterBoBaimai => THAI_CHARACTER_BO_BAIMAI,
-            Thai::ThaiCharacterPoPla => THAI_CHARACTER_PO_PLA,
-            Thai::ThaiCharacterPhoPhung => THAI_CHARACTER_PHO_PHUNG,
-            Thai::ThaiCharacterFoFa => THAI_CHARACTER_FO_FA,
-            Thai::ThaiCharacterPhoPhan => THAI_CHARACTER_PHO_PHAN,
-            Thai::ThaiCharacterFoFan => THAI_CHARACTER_FO_FAN,
-            Thai::ThaiCharacterPhoSamphao => THAI_CHARACTER_PHO_SAMPHAO,
-            Thai::ThaiCharacterMoMa => THAI_CHARACTER_MO_MA,
-            Thai::ThaiCharacterYoYak => THAI_CHARACTER_YO_YAK,
-            Thai::ThaiCharacterRoRua => THAI_CHARACTER_RO_RUA,
-            Thai::ThaiCharacterRu => THAI_CHARACTER_RU,
-            Thai::ThaiCharacterLoLing => THAI_CHARACTER_LO_LING,
-            Thai::ThaiCharacterLu => THAI_CHARACTER_LU,
-            Thai::ThaiCharacterWoWaen => THAI_CHARACTER_WO_WAEN,
-            Thai::ThaiCharacterSoSala => THAI_CHARACTER_SO_SALA,
-            Thai::ThaiCharacterSoRusi => THAI_CHARACTER_SO_RUSI,
-            Thai::ThaiCharacterSoSua => THAI_CHARACTER_SO_SUA,
-            Thai::ThaiCharacterHoHip => THAI_CHARACTER_HO_HIP,
-            Thai::ThaiCharacterLoChula => THAI_CHARACTER_LO_CHULA,
-            Thai::ThaiCharacterOAng => THAI_CHARACTER_O_ANG,
-            Thai::ThaiCharacterHoNokhuk => THAI_CHARACTER_HO_NOKHUK,
-            Thai::ThaiCharacterPaiyannoi => THAI_CHARACTER_PAIYANNOI,
-            Thai::ThaiCharacterSaraA => THAI_CHARACTER_SARA_A,
-            Thai::ThaiCharacterMaiHanDashAkat => THAI_CHARACTER_MAI_HAN_DASH_AKAT,
-            Thai::ThaiCharacterSaraAa => THAI_CHARACTER_SARA_AA,
-            Thai::ThaiCharacterSaraAm => THAI_CHARACTER_SARA_AM,
-            Thai::ThaiCharacterSaraI => THAI_CHARACTER_SARA_I,
-            Thai::ThaiCharacterSaraIi => THAI_CHARACTER_SARA_II,
-            Thai::ThaiCharacterSaraUe => THAI_CHARACTER_SARA_UE,
-            Thai::ThaiCharacterSaraUee => THAI_CHARACTER_SARA_UEE,
-            Thai::ThaiCharacterSaraU => THAI_CHARACTER_SARA_U,
-            Thai::ThaiCharacterSaraUu => THAI_CHARACTER_SARA_UU,
-            Thai::ThaiCharacterPhinthu => THAI_CHARACTER_PHINTHU,
-            Thai::ThaiCurrencySymbolBaht => THAI_CURRENCY_SYMBOL_BAHT,
-            Thai::ThaiCharacterSaraE => THAI_CHARACTER_SARA_E,
-            Thai::ThaiCharacterSaraAe => THAI_CHARACTER_SARA_AE,
-            Thai::ThaiCharacterSaraO => THAI_CHARACTER_SARA_O,
-            Thai::ThaiCharacterSaraAiMaimuan => THAI_CHARACTER_SARA_AI_MAIMUAN,
-            Thai::ThaiCharacterSaraAiMaimalai => THAI_CHARACTER_SARA_AI_MAIMALAI,
-            Thai::ThaiCharacterLakkhangyao => THAI_CHARACTER_LAKKHANGYAO,
-            Thai::ThaiCharacterMaiyamok => THAI_CHARACTER_MAIYAMOK,
-            Thai::ThaiCharacterMaitaikhu => THAI_CHARACTER_MAITAIKHU,
-            Thai::ThaiCharacterMaiEk => THAI_CHARACTER_MAI_EK,
-            Thai::ThaiCharacterMaiTho => THAI_CHARACTER_MAI_THO,
-            Thai::ThaiCharacterMaiTri => THAI_CHARACTER_MAI_TRI,
-            Thai::ThaiCharacterMaiChattawa => THAI_CHARACTER_MAI_CHATTAWA,
-            Thai::ThaiCharacterThanthakhat => THAI_CHARACTER_THANTHAKHAT,
-            Thai::ThaiCharacterNikhahit => THAI_CHARACTER_NIKHAHIT,
-            Thai::ThaiCharacterYamakkan => THAI_CHARACTER_YAMAKKAN,
-            Thai::ThaiCharacterFongman => THAI_CHARACTER_FONGMAN,
-            Thai::ThaiDigitZero => THAI_DIGIT_ZERO,
-            Thai::ThaiDigitOne => THAI_DIGIT_ONE,
-            Thai::ThaiDigitTwo => THAI_DIGIT_TWO,
-            Thai::ThaiDigitThree => THAI_DIGIT_THREE,
-            Thai::ThaiDigitFour => THAI_DIGIT_FOUR,
-            Thai::ThaiDigitFive => THAI_DIGIT_FIVE,
-            Thai::ThaiDigitSix => THAI_DIGIT_SIX,
-            Thai::ThaiDigitSeven => THAI_DIGIT_SEVEN,
-            Thai::ThaiDigitEight => THAI_DIGIT_EIGHT,
-            Thai::ThaiDigitNine => THAI_DIGIT_NINE,
-            Thai::ThaiCharacterAngkhankhu => THAI_CHARACTER_ANGKHANKHU,
-            Thai::ThaiCharacterKhomut => THAI_CHARACTER_KHOMUT,
+            Thai::CharacterKoKai => CHARACTER_KO_KAI,
+            Thai::CharacterKhoKhai => CHARACTER_KHO_KHAI,
+            Thai::CharacterKhoKhuat => CHARACTER_KHO_KHUAT,
+            Thai::CharacterKhoKhwai => CHARACTER_KHO_KHWAI,
+            Thai::CharacterKhoKhon => CHARACTER_KHO_KHON,
+            Thai::CharacterKhoRakhang => CHARACTER_KHO_RAKHANG,
+            Thai::CharacterNgoNgu => CHARACTER_NGO_NGU,
+            Thai::CharacterChoChan => CHARACTER_CHO_CHAN,
+            Thai::CharacterChoChing => CHARACTER_CHO_CHING,
+            Thai::CharacterChoChang => CHARACTER_CHO_CHANG,
+            Thai::CharacterSoSo => CHARACTER_SO_SO,
+            Thai::CharacterChoChoe => CHARACTER_CHO_CHOE,
+            Thai::CharacterYoYing => CHARACTER_YO_YING,
+            Thai::CharacterDoChada => CHARACTER_DO_CHADA,
+            Thai::CharacterToPatak => CHARACTER_TO_PATAK,
+            Thai::CharacterThoThan => CHARACTER_THO_THAN,
+            Thai::CharacterThoNangmontho => CHARACTER_THO_NANGMONTHO,
+            Thai::CharacterThoPhuthao => CHARACTER_THO_PHUTHAO,
+            Thai::CharacterNoNen => CHARACTER_NO_NEN,
+            Thai::CharacterDoDek => CHARACTER_DO_DEK,
+            Thai::CharacterToTao => CHARACTER_TO_TAO,
+            Thai::CharacterThoThung => CHARACTER_THO_THUNG,
+            Thai::CharacterThoThahan => CHARACTER_THO_THAHAN,
+            Thai::CharacterThoThong => CHARACTER_THO_THONG,
+            Thai::CharacterNoNu => CHARACTER_NO_NU,
+            Thai::CharacterBoBaimai => CHARACTER_BO_BAIMAI,
+            Thai::CharacterPoPla => CHARACTER_PO_PLA,
+            Thai::CharacterPhoPhung => CHARACTER_PHO_PHUNG,
+            Thai::CharacterFoFa => CHARACTER_FO_FA,
+            Thai::CharacterPhoPhan => CHARACTER_PHO_PHAN,
+            Thai::CharacterFoFan => CHARACTER_FO_FAN,
+            Thai::CharacterPhoSamphao => CHARACTER_PHO_SAMPHAO,
+            Thai::CharacterMoMa => CHARACTER_MO_MA,
+            Thai::CharacterYoYak => CHARACTER_YO_YAK,
+            Thai::CharacterRoRua => CHARACTER_RO_RUA,
+            Thai::CharacterRu => CHARACTER_RU,
+            Thai::CharacterLoLing => CHARACTER_LO_LING,
+            Thai::CharacterLu => CHARACTER_LU,
+            Thai::CharacterWoWaen => CHARACTER_WO_WAEN,
+            Thai::CharacterSoSala => CHARACTER_SO_SALA,
+            Thai::CharacterSoRusi => CHARACTER_SO_RUSI,
+            Thai::CharacterSoSua => CHARACTER_SO_SUA,
+            Thai::CharacterHoHip => CHARACTER_HO_HIP,
+            Thai::CharacterLoChula => CHARACTER_LO_CHULA,
+            Thai::CharacterOAng => CHARACTER_O_ANG,
+            Thai::CharacterHoNokhuk => CHARACTER_HO_NOKHUK,
+            Thai::CharacterPaiyannoi => CHARACTER_PAIYANNOI,
+            Thai::CharacterSaraA => CHARACTER_SARA_A,
+            Thai::CharacterMaiHanDashAkat => CHARACTER_MAI_HAN_DASH_AKAT,
+            Thai::CharacterSaraAa => CHARACTER_SARA_AA,
+            Thai::CharacterSaraAm => CHARACTER_SARA_AM,
+            Thai::CharacterSaraI => CHARACTER_SARA_I,
+            Thai::CharacterSaraIi => CHARACTER_SARA_II,
+            Thai::CharacterSaraUe => CHARACTER_SARA_UE,
+            Thai::CharacterSaraUee => CHARACTER_SARA_UEE,
+            Thai::CharacterSaraU => CHARACTER_SARA_U,
+            Thai::CharacterSaraUu => CHARACTER_SARA_UU,
+            Thai::CharacterPhinthu => CHARACTER_PHINTHU,
+            Thai::CurrencySymbolBaht => CURRENCY_SYMBOL_BAHT,
+            Thai::CharacterSaraE => CHARACTER_SARA_E,
+            Thai::CharacterSaraAe => CHARACTER_SARA_AE,
+            Thai::CharacterSaraO => CHARACTER_SARA_O,
+            Thai::CharacterSaraAiMaimuan => CHARACTER_SARA_AI_MAIMUAN,
+            Thai::CharacterSaraAiMaimalai => CHARACTER_SARA_AI_MAIMALAI,
+            Thai::CharacterLakkhangyao => CHARACTER_LAKKHANGYAO,
+            Thai::CharacterMaiyamok => CHARACTER_MAIYAMOK,
+            Thai::CharacterMaitaikhu => CHARACTER_MAITAIKHU,
+            Thai::CharacterMaiEk => CHARACTER_MAI_EK,
+            Thai::CharacterMaiTho => CHARACTER_MAI_THO,
+            Thai::CharacterMaiTri => CHARACTER_MAI_TRI,
+            Thai::CharacterMaiChattawa => CHARACTER_MAI_CHATTAWA,
+            Thai::CharacterThanthakhat => CHARACTER_THANTHAKHAT,
+            Thai::CharacterNikhahit => CHARACTER_NIKHAHIT,
+            Thai::CharacterYamakkan => CHARACTER_YAMAKKAN,
+            Thai::CharacterFongman => CHARACTER_FONGMAN,
+            Thai::DigitZero => DIGIT_ZERO,
+            Thai::DigitOne => DIGIT_ONE,
+            Thai::DigitTwo => DIGIT_TWO,
+            Thai::DigitThree => DIGIT_THREE,
+            Thai::DigitFour => DIGIT_FOUR,
+            Thai::DigitFive => DIGIT_FIVE,
+            Thai::DigitSix => DIGIT_SIX,
+            Thai::DigitSeven => DIGIT_SEVEN,
+            Thai::DigitEight => DIGIT_EIGHT,
+            Thai::DigitNine => DIGIT_NINE,
+            Thai::CharacterAngkhankhu => CHARACTER_ANGKHANKHU,
+            Thai::CharacterKhomut => CHARACTER_KHOMUT,
         }
     }
 }
@@ -469,93 +469,93 @@ impl std::convert::TryFrom<char> for Thai {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            THAI_CHARACTER_KO_KAI => Ok(Thai::ThaiCharacterKoKai),
-            THAI_CHARACTER_KHO_KHAI => Ok(Thai::ThaiCharacterKhoKhai),
-            THAI_CHARACTER_KHO_KHUAT => Ok(Thai::ThaiCharacterKhoKhuat),
-            THAI_CHARACTER_KHO_KHWAI => Ok(Thai::ThaiCharacterKhoKhwai),
-            THAI_CHARACTER_KHO_KHON => Ok(Thai::ThaiCharacterKhoKhon),
-            THAI_CHARACTER_KHO_RAKHANG => Ok(Thai::ThaiCharacterKhoRakhang),
-            THAI_CHARACTER_NGO_NGU => Ok(Thai::ThaiCharacterNgoNgu),
-            THAI_CHARACTER_CHO_CHAN => Ok(Thai::ThaiCharacterChoChan),
-            THAI_CHARACTER_CHO_CHING => Ok(Thai::ThaiCharacterChoChing),
-            THAI_CHARACTER_CHO_CHANG => Ok(Thai::ThaiCharacterChoChang),
-            THAI_CHARACTER_SO_SO => Ok(Thai::ThaiCharacterSoSo),
-            THAI_CHARACTER_CHO_CHOE => Ok(Thai::ThaiCharacterChoChoe),
-            THAI_CHARACTER_YO_YING => Ok(Thai::ThaiCharacterYoYing),
-            THAI_CHARACTER_DO_CHADA => Ok(Thai::ThaiCharacterDoChada),
-            THAI_CHARACTER_TO_PATAK => Ok(Thai::ThaiCharacterToPatak),
-            THAI_CHARACTER_THO_THAN => Ok(Thai::ThaiCharacterThoThan),
-            THAI_CHARACTER_THO_NANGMONTHO => Ok(Thai::ThaiCharacterThoNangmontho),
-            THAI_CHARACTER_THO_PHUTHAO => Ok(Thai::ThaiCharacterThoPhuthao),
-            THAI_CHARACTER_NO_NEN => Ok(Thai::ThaiCharacterNoNen),
-            THAI_CHARACTER_DO_DEK => Ok(Thai::ThaiCharacterDoDek),
-            THAI_CHARACTER_TO_TAO => Ok(Thai::ThaiCharacterToTao),
-            THAI_CHARACTER_THO_THUNG => Ok(Thai::ThaiCharacterThoThung),
-            THAI_CHARACTER_THO_THAHAN => Ok(Thai::ThaiCharacterThoThahan),
-            THAI_CHARACTER_THO_THONG => Ok(Thai::ThaiCharacterThoThong),
-            THAI_CHARACTER_NO_NU => Ok(Thai::ThaiCharacterNoNu),
-            THAI_CHARACTER_BO_BAIMAI => Ok(Thai::ThaiCharacterBoBaimai),
-            THAI_CHARACTER_PO_PLA => Ok(Thai::ThaiCharacterPoPla),
-            THAI_CHARACTER_PHO_PHUNG => Ok(Thai::ThaiCharacterPhoPhung),
-            THAI_CHARACTER_FO_FA => Ok(Thai::ThaiCharacterFoFa),
-            THAI_CHARACTER_PHO_PHAN => Ok(Thai::ThaiCharacterPhoPhan),
-            THAI_CHARACTER_FO_FAN => Ok(Thai::ThaiCharacterFoFan),
-            THAI_CHARACTER_PHO_SAMPHAO => Ok(Thai::ThaiCharacterPhoSamphao),
-            THAI_CHARACTER_MO_MA => Ok(Thai::ThaiCharacterMoMa),
-            THAI_CHARACTER_YO_YAK => Ok(Thai::ThaiCharacterYoYak),
-            THAI_CHARACTER_RO_RUA => Ok(Thai::ThaiCharacterRoRua),
-            THAI_CHARACTER_RU => Ok(Thai::ThaiCharacterRu),
-            THAI_CHARACTER_LO_LING => Ok(Thai::ThaiCharacterLoLing),
-            THAI_CHARACTER_LU => Ok(Thai::ThaiCharacterLu),
-            THAI_CHARACTER_WO_WAEN => Ok(Thai::ThaiCharacterWoWaen),
-            THAI_CHARACTER_SO_SALA => Ok(Thai::ThaiCharacterSoSala),
-            THAI_CHARACTER_SO_RUSI => Ok(Thai::ThaiCharacterSoRusi),
-            THAI_CHARACTER_SO_SUA => Ok(Thai::ThaiCharacterSoSua),
-            THAI_CHARACTER_HO_HIP => Ok(Thai::ThaiCharacterHoHip),
-            THAI_CHARACTER_LO_CHULA => Ok(Thai::ThaiCharacterLoChula),
-            THAI_CHARACTER_O_ANG => Ok(Thai::ThaiCharacterOAng),
-            THAI_CHARACTER_HO_NOKHUK => Ok(Thai::ThaiCharacterHoNokhuk),
-            THAI_CHARACTER_PAIYANNOI => Ok(Thai::ThaiCharacterPaiyannoi),
-            THAI_CHARACTER_SARA_A => Ok(Thai::ThaiCharacterSaraA),
-            THAI_CHARACTER_MAI_HAN_DASH_AKAT => Ok(Thai::ThaiCharacterMaiHanDashAkat),
-            THAI_CHARACTER_SARA_AA => Ok(Thai::ThaiCharacterSaraAa),
-            THAI_CHARACTER_SARA_AM => Ok(Thai::ThaiCharacterSaraAm),
-            THAI_CHARACTER_SARA_I => Ok(Thai::ThaiCharacterSaraI),
-            THAI_CHARACTER_SARA_II => Ok(Thai::ThaiCharacterSaraIi),
-            THAI_CHARACTER_SARA_UE => Ok(Thai::ThaiCharacterSaraUe),
-            THAI_CHARACTER_SARA_UEE => Ok(Thai::ThaiCharacterSaraUee),
-            THAI_CHARACTER_SARA_U => Ok(Thai::ThaiCharacterSaraU),
-            THAI_CHARACTER_SARA_UU => Ok(Thai::ThaiCharacterSaraUu),
-            THAI_CHARACTER_PHINTHU => Ok(Thai::ThaiCharacterPhinthu),
-            THAI_CURRENCY_SYMBOL_BAHT => Ok(Thai::ThaiCurrencySymbolBaht),
-            THAI_CHARACTER_SARA_E => Ok(Thai::ThaiCharacterSaraE),
-            THAI_CHARACTER_SARA_AE => Ok(Thai::ThaiCharacterSaraAe),
-            THAI_CHARACTER_SARA_O => Ok(Thai::ThaiCharacterSaraO),
-            THAI_CHARACTER_SARA_AI_MAIMUAN => Ok(Thai::ThaiCharacterSaraAiMaimuan),
-            THAI_CHARACTER_SARA_AI_MAIMALAI => Ok(Thai::ThaiCharacterSaraAiMaimalai),
-            THAI_CHARACTER_LAKKHANGYAO => Ok(Thai::ThaiCharacterLakkhangyao),
-            THAI_CHARACTER_MAIYAMOK => Ok(Thai::ThaiCharacterMaiyamok),
-            THAI_CHARACTER_MAITAIKHU => Ok(Thai::ThaiCharacterMaitaikhu),
-            THAI_CHARACTER_MAI_EK => Ok(Thai::ThaiCharacterMaiEk),
-            THAI_CHARACTER_MAI_THO => Ok(Thai::ThaiCharacterMaiTho),
-            THAI_CHARACTER_MAI_TRI => Ok(Thai::ThaiCharacterMaiTri),
-            THAI_CHARACTER_MAI_CHATTAWA => Ok(Thai::ThaiCharacterMaiChattawa),
-            THAI_CHARACTER_THANTHAKHAT => Ok(Thai::ThaiCharacterThanthakhat),
-            THAI_CHARACTER_NIKHAHIT => Ok(Thai::ThaiCharacterNikhahit),
-            THAI_CHARACTER_YAMAKKAN => Ok(Thai::ThaiCharacterYamakkan),
-            THAI_CHARACTER_FONGMAN => Ok(Thai::ThaiCharacterFongman),
-            THAI_DIGIT_ZERO => Ok(Thai::ThaiDigitZero),
-            THAI_DIGIT_ONE => Ok(Thai::ThaiDigitOne),
-            THAI_DIGIT_TWO => Ok(Thai::ThaiDigitTwo),
-            THAI_DIGIT_THREE => Ok(Thai::ThaiDigitThree),
-            THAI_DIGIT_FOUR => Ok(Thai::ThaiDigitFour),
-            THAI_DIGIT_FIVE => Ok(Thai::ThaiDigitFive),
-            THAI_DIGIT_SIX => Ok(Thai::ThaiDigitSix),
-            THAI_DIGIT_SEVEN => Ok(Thai::ThaiDigitSeven),
-            THAI_DIGIT_EIGHT => Ok(Thai::ThaiDigitEight),
-            THAI_DIGIT_NINE => Ok(Thai::ThaiDigitNine),
-            THAI_CHARACTER_ANGKHANKHU => Ok(Thai::ThaiCharacterAngkhankhu),
-            THAI_CHARACTER_KHOMUT => Ok(Thai::ThaiCharacterKhomut),
+            CHARACTER_KO_KAI => Ok(Thai::CharacterKoKai),
+            CHARACTER_KHO_KHAI => Ok(Thai::CharacterKhoKhai),
+            CHARACTER_KHO_KHUAT => Ok(Thai::CharacterKhoKhuat),
+            CHARACTER_KHO_KHWAI => Ok(Thai::CharacterKhoKhwai),
+            CHARACTER_KHO_KHON => Ok(Thai::CharacterKhoKhon),
+            CHARACTER_KHO_RAKHANG => Ok(Thai::CharacterKhoRakhang),
+            CHARACTER_NGO_NGU => Ok(Thai::CharacterNgoNgu),
+            CHARACTER_CHO_CHAN => Ok(Thai::CharacterChoChan),
+            CHARACTER_CHO_CHING => Ok(Thai::CharacterChoChing),
+            CHARACTER_CHO_CHANG => Ok(Thai::CharacterChoChang),
+            CHARACTER_SO_SO => Ok(Thai::CharacterSoSo),
+            CHARACTER_CHO_CHOE => Ok(Thai::CharacterChoChoe),
+            CHARACTER_YO_YING => Ok(Thai::CharacterYoYing),
+            CHARACTER_DO_CHADA => Ok(Thai::CharacterDoChada),
+            CHARACTER_TO_PATAK => Ok(Thai::CharacterToPatak),
+            CHARACTER_THO_THAN => Ok(Thai::CharacterThoThan),
+            CHARACTER_THO_NANGMONTHO => Ok(Thai::CharacterThoNangmontho),
+            CHARACTER_THO_PHUTHAO => Ok(Thai::CharacterThoPhuthao),
+            CHARACTER_NO_NEN => Ok(Thai::CharacterNoNen),
+            CHARACTER_DO_DEK => Ok(Thai::CharacterDoDek),
+            CHARACTER_TO_TAO => Ok(Thai::CharacterToTao),
+            CHARACTER_THO_THUNG => Ok(Thai::CharacterThoThung),
+            CHARACTER_THO_THAHAN => Ok(Thai::CharacterThoThahan),
+            CHARACTER_THO_THONG => Ok(Thai::CharacterThoThong),
+            CHARACTER_NO_NU => Ok(Thai::CharacterNoNu),
+            CHARACTER_BO_BAIMAI => Ok(Thai::CharacterBoBaimai),
+            CHARACTER_PO_PLA => Ok(Thai::CharacterPoPla),
+            CHARACTER_PHO_PHUNG => Ok(Thai::CharacterPhoPhung),
+            CHARACTER_FO_FA => Ok(Thai::CharacterFoFa),
+            CHARACTER_PHO_PHAN => Ok(Thai::CharacterPhoPhan),
+            CHARACTER_FO_FAN => Ok(Thai::CharacterFoFan),
+            CHARACTER_PHO_SAMPHAO => Ok(Thai::CharacterPhoSamphao),
+            CHARACTER_MO_MA => Ok(Thai::CharacterMoMa),
+            CHARACTER_YO_YAK => Ok(Thai::CharacterYoYak),
+            CHARACTER_RO_RUA => Ok(Thai::CharacterRoRua),
+            CHARACTER_RU => Ok(Thai::CharacterRu),
+            CHARACTER_LO_LING => Ok(Thai::CharacterLoLing),
+            CHARACTER_LU => Ok(Thai::CharacterLu),
+            CHARACTER_WO_WAEN => Ok(Thai::CharacterWoWaen),
+            CHARACTER_SO_SALA => Ok(Thai::CharacterSoSala),
+            CHARACTER_SO_RUSI => Ok(Thai::CharacterSoRusi),
+            CHARACTER_SO_SUA => Ok(Thai::CharacterSoSua),
+            CHARACTER_HO_HIP => Ok(Thai::CharacterHoHip),
+            CHARACTER_LO_CHULA => Ok(Thai::CharacterLoChula),
+            CHARACTER_O_ANG => Ok(Thai::CharacterOAng),
+            CHARACTER_HO_NOKHUK => Ok(Thai::CharacterHoNokhuk),
+            CHARACTER_PAIYANNOI => Ok(Thai::CharacterPaiyannoi),
+            CHARACTER_SARA_A => Ok(Thai::CharacterSaraA),
+            CHARACTER_MAI_HAN_DASH_AKAT => Ok(Thai::CharacterMaiHanDashAkat),
+            CHARACTER_SARA_AA => Ok(Thai::CharacterSaraAa),
+            CHARACTER_SARA_AM => Ok(Thai::CharacterSaraAm),
+            CHARACTER_SARA_I => Ok(Thai::CharacterSaraI),
+            CHARACTER_SARA_II => Ok(Thai::CharacterSaraIi),
+            CHARACTER_SARA_UE => Ok(Thai::CharacterSaraUe),
+            CHARACTER_SARA_UEE => Ok(Thai::CharacterSaraUee),
+            CHARACTER_SARA_U => Ok(Thai::CharacterSaraU),
+            CHARACTER_SARA_UU => Ok(Thai::CharacterSaraUu),
+            CHARACTER_PHINTHU => Ok(Thai::CharacterPhinthu),
+            CURRENCY_SYMBOL_BAHT => Ok(Thai::CurrencySymbolBaht),
+            CHARACTER_SARA_E => Ok(Thai::CharacterSaraE),
+            CHARACTER_SARA_AE => Ok(Thai::CharacterSaraAe),
+            CHARACTER_SARA_O => Ok(Thai::CharacterSaraO),
+            CHARACTER_SARA_AI_MAIMUAN => Ok(Thai::CharacterSaraAiMaimuan),
+            CHARACTER_SARA_AI_MAIMALAI => Ok(Thai::CharacterSaraAiMaimalai),
+            CHARACTER_LAKKHANGYAO => Ok(Thai::CharacterLakkhangyao),
+            CHARACTER_MAIYAMOK => Ok(Thai::CharacterMaiyamok),
+            CHARACTER_MAITAIKHU => Ok(Thai::CharacterMaitaikhu),
+            CHARACTER_MAI_EK => Ok(Thai::CharacterMaiEk),
+            CHARACTER_MAI_THO => Ok(Thai::CharacterMaiTho),
+            CHARACTER_MAI_TRI => Ok(Thai::CharacterMaiTri),
+            CHARACTER_MAI_CHATTAWA => Ok(Thai::CharacterMaiChattawa),
+            CHARACTER_THANTHAKHAT => Ok(Thai::CharacterThanthakhat),
+            CHARACTER_NIKHAHIT => Ok(Thai::CharacterNikhahit),
+            CHARACTER_YAMAKKAN => Ok(Thai::CharacterYamakkan),
+            CHARACTER_FONGMAN => Ok(Thai::CharacterFongman),
+            DIGIT_ZERO => Ok(Thai::DigitZero),
+            DIGIT_ONE => Ok(Thai::DigitOne),
+            DIGIT_TWO => Ok(Thai::DigitTwo),
+            DIGIT_THREE => Ok(Thai::DigitThree),
+            DIGIT_FOUR => Ok(Thai::DigitFour),
+            DIGIT_FIVE => Ok(Thai::DigitFive),
+            DIGIT_SIX => Ok(Thai::DigitSix),
+            DIGIT_SEVEN => Ok(Thai::DigitSeven),
+            DIGIT_EIGHT => Ok(Thai::DigitEight),
+            DIGIT_NINE => Ok(Thai::DigitNine),
+            CHARACTER_ANGKHANKHU => Ok(Thai::CharacterAngkhankhu),
+            CHARACTER_KHOMUT => Ok(Thai::CharacterKhomut),
             _ => Err(()),
         }
     }
@@ -594,101 +594,101 @@ impl Iterator for Thai {
 }
 
 impl Thai {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Thai::ThaiCharacterKoKai
+        Thai::CharacterKoKai
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Thai::ThaiCharacterKoKai => "thai character ko kai",
-            Thai::ThaiCharacterKhoKhai => "thai character kho khai",
-            Thai::ThaiCharacterKhoKhuat => "thai character kho khuat",
-            Thai::ThaiCharacterKhoKhwai => "thai character kho khwai",
-            Thai::ThaiCharacterKhoKhon => "thai character kho khon",
-            Thai::ThaiCharacterKhoRakhang => "thai character kho rakhang",
-            Thai::ThaiCharacterNgoNgu => "thai character ngo ngu",
-            Thai::ThaiCharacterChoChan => "thai character cho chan",
-            Thai::ThaiCharacterChoChing => "thai character cho ching",
-            Thai::ThaiCharacterChoChang => "thai character cho chang",
-            Thai::ThaiCharacterSoSo => "thai character so so",
-            Thai::ThaiCharacterChoChoe => "thai character cho choe",
-            Thai::ThaiCharacterYoYing => "thai character yo ying",
-            Thai::ThaiCharacterDoChada => "thai character do chada",
-            Thai::ThaiCharacterToPatak => "thai character to patak",
-            Thai::ThaiCharacterThoThan => "thai character tho than",
-            Thai::ThaiCharacterThoNangmontho => "thai character tho nangmontho",
-            Thai::ThaiCharacterThoPhuthao => "thai character tho phuthao",
-            Thai::ThaiCharacterNoNen => "thai character no nen",
-            Thai::ThaiCharacterDoDek => "thai character do dek",
-            Thai::ThaiCharacterToTao => "thai character to tao",
-            Thai::ThaiCharacterThoThung => "thai character tho thung",
-            Thai::ThaiCharacterThoThahan => "thai character tho thahan",
-            Thai::ThaiCharacterThoThong => "thai character tho thong",
-            Thai::ThaiCharacterNoNu => "thai character no nu",
-            Thai::ThaiCharacterBoBaimai => "thai character bo baimai",
-            Thai::ThaiCharacterPoPla => "thai character po pla",
-            Thai::ThaiCharacterPhoPhung => "thai character pho phung",
-            Thai::ThaiCharacterFoFa => "thai character fo fa",
-            Thai::ThaiCharacterPhoPhan => "thai character pho phan",
-            Thai::ThaiCharacterFoFan => "thai character fo fan",
-            Thai::ThaiCharacterPhoSamphao => "thai character pho samphao",
-            Thai::ThaiCharacterMoMa => "thai character mo ma",
-            Thai::ThaiCharacterYoYak => "thai character yo yak",
-            Thai::ThaiCharacterRoRua => "thai character ro rua",
-            Thai::ThaiCharacterRu => "thai character ru",
-            Thai::ThaiCharacterLoLing => "thai character lo ling",
-            Thai::ThaiCharacterLu => "thai character lu",
-            Thai::ThaiCharacterWoWaen => "thai character wo waen",
-            Thai::ThaiCharacterSoSala => "thai character so sala",
-            Thai::ThaiCharacterSoRusi => "thai character so rusi",
-            Thai::ThaiCharacterSoSua => "thai character so sua",
-            Thai::ThaiCharacterHoHip => "thai character ho hip",
-            Thai::ThaiCharacterLoChula => "thai character lo chula",
-            Thai::ThaiCharacterOAng => "thai character o ang",
-            Thai::ThaiCharacterHoNokhuk => "thai character ho nokhuk",
-            Thai::ThaiCharacterPaiyannoi => "thai character paiyannoi",
-            Thai::ThaiCharacterSaraA => "thai character sara a",
-            Thai::ThaiCharacterMaiHanDashAkat => "thai character mai han-akat",
-            Thai::ThaiCharacterSaraAa => "thai character sara aa",
-            Thai::ThaiCharacterSaraAm => "thai character sara am",
-            Thai::ThaiCharacterSaraI => "thai character sara i",
-            Thai::ThaiCharacterSaraIi => "thai character sara ii",
-            Thai::ThaiCharacterSaraUe => "thai character sara ue",
-            Thai::ThaiCharacterSaraUee => "thai character sara uee",
-            Thai::ThaiCharacterSaraU => "thai character sara u",
-            Thai::ThaiCharacterSaraUu => "thai character sara uu",
-            Thai::ThaiCharacterPhinthu => "thai character phinthu",
-            Thai::ThaiCurrencySymbolBaht => "thai currency symbol baht",
-            Thai::ThaiCharacterSaraE => "thai character sara e",
-            Thai::ThaiCharacterSaraAe => "thai character sara ae",
-            Thai::ThaiCharacterSaraO => "thai character sara o",
-            Thai::ThaiCharacterSaraAiMaimuan => "thai character sara ai maimuan",
-            Thai::ThaiCharacterSaraAiMaimalai => "thai character sara ai maimalai",
-            Thai::ThaiCharacterLakkhangyao => "thai character lakkhangyao",
-            Thai::ThaiCharacterMaiyamok => "thai character maiyamok",
-            Thai::ThaiCharacterMaitaikhu => "thai character maitaikhu",
-            Thai::ThaiCharacterMaiEk => "thai character mai ek",
-            Thai::ThaiCharacterMaiTho => "thai character mai tho",
-            Thai::ThaiCharacterMaiTri => "thai character mai tri",
-            Thai::ThaiCharacterMaiChattawa => "thai character mai chattawa",
-            Thai::ThaiCharacterThanthakhat => "thai character thanthakhat",
-            Thai::ThaiCharacterNikhahit => "thai character nikhahit",
-            Thai::ThaiCharacterYamakkan => "thai character yamakkan",
-            Thai::ThaiCharacterFongman => "thai character fongman",
-            Thai::ThaiDigitZero => "thai digit zero",
-            Thai::ThaiDigitOne => "thai digit one",
-            Thai::ThaiDigitTwo => "thai digit two",
-            Thai::ThaiDigitThree => "thai digit three",
-            Thai::ThaiDigitFour => "thai digit four",
-            Thai::ThaiDigitFive => "thai digit five",
-            Thai::ThaiDigitSix => "thai digit six",
-            Thai::ThaiDigitSeven => "thai digit seven",
-            Thai::ThaiDigitEight => "thai digit eight",
-            Thai::ThaiDigitNine => "thai digit nine",
-            Thai::ThaiCharacterAngkhankhu => "thai character angkhankhu",
-            Thai::ThaiCharacterKhomut => "thai character khomut",
+            Thai::CharacterKoKai => "thai character ko kai",
+            Thai::CharacterKhoKhai => "thai character kho khai",
+            Thai::CharacterKhoKhuat => "thai character kho khuat",
+            Thai::CharacterKhoKhwai => "thai character kho khwai",
+            Thai::CharacterKhoKhon => "thai character kho khon",
+            Thai::CharacterKhoRakhang => "thai character kho rakhang",
+            Thai::CharacterNgoNgu => "thai character ngo ngu",
+            Thai::CharacterChoChan => "thai character cho chan",
+            Thai::CharacterChoChing => "thai character cho ching",
+            Thai::CharacterChoChang => "thai character cho chang",
+            Thai::CharacterSoSo => "thai character so so",
+            Thai::CharacterChoChoe => "thai character cho choe",
+            Thai::CharacterYoYing => "thai character yo ying",
+            Thai::CharacterDoChada => "thai character do chada",
+            Thai::CharacterToPatak => "thai character to patak",
+            Thai::CharacterThoThan => "thai character tho than",
+            Thai::CharacterThoNangmontho => "thai character tho nangmontho",
+            Thai::CharacterThoPhuthao => "thai character tho phuthao",
+            Thai::CharacterNoNen => "thai character no nen",
+            Thai::CharacterDoDek => "thai character do dek",
+            Thai::CharacterToTao => "thai character to tao",
+            Thai::CharacterThoThung => "thai character tho thung",
+            Thai::CharacterThoThahan => "thai character tho thahan",
+            Thai::CharacterThoThong => "thai character tho thong",
+            Thai::CharacterNoNu => "thai character no nu",
+            Thai::CharacterBoBaimai => "thai character bo baimai",
+            Thai::CharacterPoPla => "thai character po pla",
+            Thai::CharacterPhoPhung => "thai character pho phung",
+            Thai::CharacterFoFa => "thai character fo fa",
+            Thai::CharacterPhoPhan => "thai character pho phan",
+            Thai::CharacterFoFan => "thai character fo fan",
+            Thai::CharacterPhoSamphao => "thai character pho samphao",
+            Thai::CharacterMoMa => "thai character mo ma",
+            Thai::CharacterYoYak => "thai character yo yak",
+            Thai::CharacterRoRua => "thai character ro rua",
+            Thai::CharacterRu => "thai character ru",
+            Thai::CharacterLoLing => "thai character lo ling",
+            Thai::CharacterLu => "thai character lu",
+            Thai::CharacterWoWaen => "thai character wo waen",
+            Thai::CharacterSoSala => "thai character so sala",
+            Thai::CharacterSoRusi => "thai character so rusi",
+            Thai::CharacterSoSua => "thai character so sua",
+            Thai::CharacterHoHip => "thai character ho hip",
+            Thai::CharacterLoChula => "thai character lo chula",
+            Thai::CharacterOAng => "thai character o ang",
+            Thai::CharacterHoNokhuk => "thai character ho nokhuk",
+            Thai::CharacterPaiyannoi => "thai character paiyannoi",
+            Thai::CharacterSaraA => "thai character sara a",
+            Thai::CharacterMaiHanDashAkat => "thai character mai han-akat",
+            Thai::CharacterSaraAa => "thai character sara aa",
+            Thai::CharacterSaraAm => "thai character sara am",
+            Thai::CharacterSaraI => "thai character sara i",
+            Thai::CharacterSaraIi => "thai character sara ii",
+            Thai::CharacterSaraUe => "thai character sara ue",
+            Thai::CharacterSaraUee => "thai character sara uee",
+            Thai::CharacterSaraU => "thai character sara u",
+            Thai::CharacterSaraUu => "thai character sara uu",
+            Thai::CharacterPhinthu => "thai character phinthu",
+            Thai::CurrencySymbolBaht => "thai currency symbol baht",
+            Thai::CharacterSaraE => "thai character sara e",
+            Thai::CharacterSaraAe => "thai character sara ae",
+            Thai::CharacterSaraO => "thai character sara o",
+            Thai::CharacterSaraAiMaimuan => "thai character sara ai maimuan",
+            Thai::CharacterSaraAiMaimalai => "thai character sara ai maimalai",
+            Thai::CharacterLakkhangyao => "thai character lakkhangyao",
+            Thai::CharacterMaiyamok => "thai character maiyamok",
+            Thai::CharacterMaitaikhu => "thai character maitaikhu",
+            Thai::CharacterMaiEk => "thai character mai ek",
+            Thai::CharacterMaiTho => "thai character mai tho",
+            Thai::CharacterMaiTri => "thai character mai tri",
+            Thai::CharacterMaiChattawa => "thai character mai chattawa",
+            Thai::CharacterThanthakhat => "thai character thanthakhat",
+            Thai::CharacterNikhahit => "thai character nikhahit",
+            Thai::CharacterYamakkan => "thai character yamakkan",
+            Thai::CharacterFongman => "thai character fongman",
+            Thai::DigitZero => "thai digit zero",
+            Thai::DigitOne => "thai digit one",
+            Thai::DigitTwo => "thai digit two",
+            Thai::DigitThree => "thai digit three",
+            Thai::DigitFour => "thai digit four",
+            Thai::DigitFive => "thai digit five",
+            Thai::DigitSix => "thai digit six",
+            Thai::DigitSeven => "thai digit seven",
+            Thai::DigitEight => "thai digit eight",
+            Thai::DigitNine => "thai digit nine",
+            Thai::CharacterAngkhankhu => "thai character angkhankhu",
+            Thai::CharacterKhomut => "thai character khomut",
         }
     }
 }

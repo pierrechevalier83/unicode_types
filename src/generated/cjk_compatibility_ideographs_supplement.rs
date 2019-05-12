@@ -3380,7 +3380,7 @@ impl Iterator for CJKCompatibilityIdeographsSupplement {
 }
 
 impl CJKCompatibilityIdeographsSupplement {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         CJKCompatibilityIdeographsSupplement::CjkCompatibilityIdeographDash2f800
     }

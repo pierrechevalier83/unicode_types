@@ -5,77 +5,77 @@
 /// ꥐ ꥑ ꥒ ꥓
 pub mod constants {
     /// \u{a930}: 'ꤰ'
-    pub const REJANG_LETTER_KA: char = 'ꤰ';
+    pub const LETTER_KA: char = 'ꤰ';
     /// \u{a931}: 'ꤱ'
-    pub const REJANG_LETTER_GA: char = 'ꤱ';
+    pub const LETTER_GA: char = 'ꤱ';
     /// \u{a932}: 'ꤲ'
-    pub const REJANG_LETTER_NGA: char = 'ꤲ';
+    pub const LETTER_NGA: char = 'ꤲ';
     /// \u{a933}: 'ꤳ'
-    pub const REJANG_LETTER_TA: char = 'ꤳ';
+    pub const LETTER_TA: char = 'ꤳ';
     /// \u{a934}: 'ꤴ'
-    pub const REJANG_LETTER_DA: char = 'ꤴ';
+    pub const LETTER_DA: char = 'ꤴ';
     /// \u{a935}: 'ꤵ'
-    pub const REJANG_LETTER_NA: char = 'ꤵ';
+    pub const LETTER_NA: char = 'ꤵ';
     /// \u{a936}: 'ꤶ'
-    pub const REJANG_LETTER_PA: char = 'ꤶ';
+    pub const LETTER_PA: char = 'ꤶ';
     /// \u{a937}: 'ꤷ'
-    pub const REJANG_LETTER_BA: char = 'ꤷ';
+    pub const LETTER_BA: char = 'ꤷ';
     /// \u{a938}: 'ꤸ'
-    pub const REJANG_LETTER_MA: char = 'ꤸ';
+    pub const LETTER_MA: char = 'ꤸ';
     /// \u{a939}: 'ꤹ'
-    pub const REJANG_LETTER_CA: char = 'ꤹ';
+    pub const LETTER_CA: char = 'ꤹ';
     /// \u{a93a}: 'ꤺ'
-    pub const REJANG_LETTER_JA: char = 'ꤺ';
+    pub const LETTER_JA: char = 'ꤺ';
     /// \u{a93b}: 'ꤻ'
-    pub const REJANG_LETTER_NYA: char = 'ꤻ';
+    pub const LETTER_NYA: char = 'ꤻ';
     /// \u{a93c}: 'ꤼ'
-    pub const REJANG_LETTER_SA: char = 'ꤼ';
+    pub const LETTER_SA: char = 'ꤼ';
     /// \u{a93d}: 'ꤽ'
-    pub const REJANG_LETTER_RA: char = 'ꤽ';
+    pub const LETTER_RA: char = 'ꤽ';
     /// \u{a93e}: 'ꤾ'
-    pub const REJANG_LETTER_LA: char = 'ꤾ';
+    pub const LETTER_LA: char = 'ꤾ';
     /// \u{a93f}: 'ꤿ'
-    pub const REJANG_LETTER_YA: char = 'ꤿ';
+    pub const LETTER_YA: char = 'ꤿ';
     /// \u{a940}: 'ꥀ'
-    pub const REJANG_LETTER_WA: char = 'ꥀ';
+    pub const LETTER_WA: char = 'ꥀ';
     /// \u{a941}: 'ꥁ'
-    pub const REJANG_LETTER_HA: char = 'ꥁ';
+    pub const LETTER_HA: char = 'ꥁ';
     /// \u{a942}: 'ꥂ'
-    pub const REJANG_LETTER_MBA: char = 'ꥂ';
+    pub const LETTER_MBA: char = 'ꥂ';
     /// \u{a943}: 'ꥃ'
-    pub const REJANG_LETTER_NGGA: char = 'ꥃ';
+    pub const LETTER_NGGA: char = 'ꥃ';
     /// \u{a944}: 'ꥄ'
-    pub const REJANG_LETTER_NDA: char = 'ꥄ';
+    pub const LETTER_NDA: char = 'ꥄ';
     /// \u{a945}: 'ꥅ'
-    pub const REJANG_LETTER_NYJA: char = 'ꥅ';
+    pub const LETTER_NYJA: char = 'ꥅ';
     /// \u{a946}: 'ꥆ'
-    pub const REJANG_LETTER_A: char = 'ꥆ';
+    pub const LETTER_A: char = 'ꥆ';
     /// \u{a947}: 'ꥇ'
-    pub const REJANG_VOWEL_SIGN_I: char = 'ꥇ';
+    pub const VOWEL_SIGN_I: char = 'ꥇ';
     /// \u{a948}: 'ꥈ'
-    pub const REJANG_VOWEL_SIGN_U: char = 'ꥈ';
+    pub const VOWEL_SIGN_U: char = 'ꥈ';
     /// \u{a949}: 'ꥉ'
-    pub const REJANG_VOWEL_SIGN_E: char = 'ꥉ';
+    pub const VOWEL_SIGN_E: char = 'ꥉ';
     /// \u{a94a}: 'ꥊ'
-    pub const REJANG_VOWEL_SIGN_AI: char = 'ꥊ';
+    pub const VOWEL_SIGN_AI: char = 'ꥊ';
     /// \u{a94b}: 'ꥋ'
-    pub const REJANG_VOWEL_SIGN_O: char = 'ꥋ';
+    pub const VOWEL_SIGN_O: char = 'ꥋ';
     /// \u{a94c}: 'ꥌ'
-    pub const REJANG_VOWEL_SIGN_AU: char = 'ꥌ';
+    pub const VOWEL_SIGN_AU: char = 'ꥌ';
     /// \u{a94d}: 'ꥍ'
-    pub const REJANG_VOWEL_SIGN_EU: char = 'ꥍ';
+    pub const VOWEL_SIGN_EU: char = 'ꥍ';
     /// \u{a94e}: 'ꥎ'
-    pub const REJANG_VOWEL_SIGN_EA: char = 'ꥎ';
+    pub const VOWEL_SIGN_EA: char = 'ꥎ';
     /// \u{a94f}: 'ꥏ'
-    pub const REJANG_CONSONANT_SIGN_NG: char = 'ꥏ';
+    pub const CONSONANT_SIGN_NG: char = 'ꥏ';
     /// \u{a950}: 'ꥐ'
-    pub const REJANG_CONSONANT_SIGN_N: char = 'ꥐ';
+    pub const CONSONANT_SIGN_N: char = 'ꥐ';
     /// \u{a951}: 'ꥑ'
-    pub const REJANG_CONSONANT_SIGN_R: char = 'ꥑ';
+    pub const CONSONANT_SIGN_R: char = 'ꥑ';
     /// \u{a952}: 'ꥒ'
-    pub const REJANG_CONSONANT_SIGN_H: char = 'ꥒ';
+    pub const CONSONANT_SIGN_H: char = 'ꥒ';
     /// \u{a953}: '꥓'
-    pub const REJANG_VIRAMA: char = '꥓';
+    pub const VIRAMA: char = '꥓';
 }
 
 /// \u{a930} → \u{a95f}\
@@ -86,119 +86,119 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Rejang {
     /// \u{a930}: 'ꤰ'
-    RejangLetterKa,
+    LetterKa,
     /// \u{a931}: 'ꤱ'
-    RejangLetterGa,
+    LetterGa,
     /// \u{a932}: 'ꤲ'
-    RejangLetterNga,
+    LetterNga,
     /// \u{a933}: 'ꤳ'
-    RejangLetterTa,
+    LetterTa,
     /// \u{a934}: 'ꤴ'
-    RejangLetterDa,
+    LetterDa,
     /// \u{a935}: 'ꤵ'
-    RejangLetterNa,
+    LetterNa,
     /// \u{a936}: 'ꤶ'
-    RejangLetterPa,
+    LetterPa,
     /// \u{a937}: 'ꤷ'
-    RejangLetterBa,
+    LetterBa,
     /// \u{a938}: 'ꤸ'
-    RejangLetterMa,
+    LetterMa,
     /// \u{a939}: 'ꤹ'
-    RejangLetterCa,
+    LetterCa,
     /// \u{a93a}: 'ꤺ'
-    RejangLetterJa,
+    LetterJa,
     /// \u{a93b}: 'ꤻ'
-    RejangLetterNya,
+    LetterNya,
     /// \u{a93c}: 'ꤼ'
-    RejangLetterSa,
+    LetterSa,
     /// \u{a93d}: 'ꤽ'
-    RejangLetterRa,
+    LetterRa,
     /// \u{a93e}: 'ꤾ'
-    RejangLetterLa,
+    LetterLa,
     /// \u{a93f}: 'ꤿ'
-    RejangLetterYa,
+    LetterYa,
     /// \u{a940}: 'ꥀ'
-    RejangLetterWa,
+    LetterWa,
     /// \u{a941}: 'ꥁ'
-    RejangLetterHa,
+    LetterHa,
     /// \u{a942}: 'ꥂ'
-    RejangLetterMba,
+    LetterMba,
     /// \u{a943}: 'ꥃ'
-    RejangLetterNgga,
+    LetterNgga,
     /// \u{a944}: 'ꥄ'
-    RejangLetterNda,
+    LetterNda,
     /// \u{a945}: 'ꥅ'
-    RejangLetterNyja,
+    LetterNyja,
     /// \u{a946}: 'ꥆ'
-    RejangLetterA,
+    LetterA,
     /// \u{a947}: 'ꥇ'
-    RejangVowelSignI,
+    VowelSignI,
     /// \u{a948}: 'ꥈ'
-    RejangVowelSignU,
+    VowelSignU,
     /// \u{a949}: 'ꥉ'
-    RejangVowelSignE,
+    VowelSignE,
     /// \u{a94a}: 'ꥊ'
-    RejangVowelSignAi,
+    VowelSignAi,
     /// \u{a94b}: 'ꥋ'
-    RejangVowelSignO,
+    VowelSignO,
     /// \u{a94c}: 'ꥌ'
-    RejangVowelSignAu,
+    VowelSignAu,
     /// \u{a94d}: 'ꥍ'
-    RejangVowelSignEu,
+    VowelSignEu,
     /// \u{a94e}: 'ꥎ'
-    RejangVowelSignEa,
+    VowelSignEa,
     /// \u{a94f}: 'ꥏ'
-    RejangConsonantSignNg,
+    ConsonantSignNg,
     /// \u{a950}: 'ꥐ'
-    RejangConsonantSignN,
+    ConsonantSignN,
     /// \u{a951}: 'ꥑ'
-    RejangConsonantSignR,
+    ConsonantSignR,
     /// \u{a952}: 'ꥒ'
-    RejangConsonantSignH,
+    ConsonantSignH,
     /// \u{a953}: '꥓'
-    RejangVirama,
+    Virama,
 }
 
 impl Into<char> for Rejang {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Rejang::RejangLetterKa => REJANG_LETTER_KA,
-            Rejang::RejangLetterGa => REJANG_LETTER_GA,
-            Rejang::RejangLetterNga => REJANG_LETTER_NGA,
-            Rejang::RejangLetterTa => REJANG_LETTER_TA,
-            Rejang::RejangLetterDa => REJANG_LETTER_DA,
-            Rejang::RejangLetterNa => REJANG_LETTER_NA,
-            Rejang::RejangLetterPa => REJANG_LETTER_PA,
-            Rejang::RejangLetterBa => REJANG_LETTER_BA,
-            Rejang::RejangLetterMa => REJANG_LETTER_MA,
-            Rejang::RejangLetterCa => REJANG_LETTER_CA,
-            Rejang::RejangLetterJa => REJANG_LETTER_JA,
-            Rejang::RejangLetterNya => REJANG_LETTER_NYA,
-            Rejang::RejangLetterSa => REJANG_LETTER_SA,
-            Rejang::RejangLetterRa => REJANG_LETTER_RA,
-            Rejang::RejangLetterLa => REJANG_LETTER_LA,
-            Rejang::RejangLetterYa => REJANG_LETTER_YA,
-            Rejang::RejangLetterWa => REJANG_LETTER_WA,
-            Rejang::RejangLetterHa => REJANG_LETTER_HA,
-            Rejang::RejangLetterMba => REJANG_LETTER_MBA,
-            Rejang::RejangLetterNgga => REJANG_LETTER_NGGA,
-            Rejang::RejangLetterNda => REJANG_LETTER_NDA,
-            Rejang::RejangLetterNyja => REJANG_LETTER_NYJA,
-            Rejang::RejangLetterA => REJANG_LETTER_A,
-            Rejang::RejangVowelSignI => REJANG_VOWEL_SIGN_I,
-            Rejang::RejangVowelSignU => REJANG_VOWEL_SIGN_U,
-            Rejang::RejangVowelSignE => REJANG_VOWEL_SIGN_E,
-            Rejang::RejangVowelSignAi => REJANG_VOWEL_SIGN_AI,
-            Rejang::RejangVowelSignO => REJANG_VOWEL_SIGN_O,
-            Rejang::RejangVowelSignAu => REJANG_VOWEL_SIGN_AU,
-            Rejang::RejangVowelSignEu => REJANG_VOWEL_SIGN_EU,
-            Rejang::RejangVowelSignEa => REJANG_VOWEL_SIGN_EA,
-            Rejang::RejangConsonantSignNg => REJANG_CONSONANT_SIGN_NG,
-            Rejang::RejangConsonantSignN => REJANG_CONSONANT_SIGN_N,
-            Rejang::RejangConsonantSignR => REJANG_CONSONANT_SIGN_R,
-            Rejang::RejangConsonantSignH => REJANG_CONSONANT_SIGN_H,
-            Rejang::RejangVirama => REJANG_VIRAMA,
+            Rejang::LetterKa => LETTER_KA,
+            Rejang::LetterGa => LETTER_GA,
+            Rejang::LetterNga => LETTER_NGA,
+            Rejang::LetterTa => LETTER_TA,
+            Rejang::LetterDa => LETTER_DA,
+            Rejang::LetterNa => LETTER_NA,
+            Rejang::LetterPa => LETTER_PA,
+            Rejang::LetterBa => LETTER_BA,
+            Rejang::LetterMa => LETTER_MA,
+            Rejang::LetterCa => LETTER_CA,
+            Rejang::LetterJa => LETTER_JA,
+            Rejang::LetterNya => LETTER_NYA,
+            Rejang::LetterSa => LETTER_SA,
+            Rejang::LetterRa => LETTER_RA,
+            Rejang::LetterLa => LETTER_LA,
+            Rejang::LetterYa => LETTER_YA,
+            Rejang::LetterWa => LETTER_WA,
+            Rejang::LetterHa => LETTER_HA,
+            Rejang::LetterMba => LETTER_MBA,
+            Rejang::LetterNgga => LETTER_NGGA,
+            Rejang::LetterNda => LETTER_NDA,
+            Rejang::LetterNyja => LETTER_NYJA,
+            Rejang::LetterA => LETTER_A,
+            Rejang::VowelSignI => VOWEL_SIGN_I,
+            Rejang::VowelSignU => VOWEL_SIGN_U,
+            Rejang::VowelSignE => VOWEL_SIGN_E,
+            Rejang::VowelSignAi => VOWEL_SIGN_AI,
+            Rejang::VowelSignO => VOWEL_SIGN_O,
+            Rejang::VowelSignAu => VOWEL_SIGN_AU,
+            Rejang::VowelSignEu => VOWEL_SIGN_EU,
+            Rejang::VowelSignEa => VOWEL_SIGN_EA,
+            Rejang::ConsonantSignNg => CONSONANT_SIGN_NG,
+            Rejang::ConsonantSignN => CONSONANT_SIGN_N,
+            Rejang::ConsonantSignR => CONSONANT_SIGN_R,
+            Rejang::ConsonantSignH => CONSONANT_SIGN_H,
+            Rejang::Virama => VIRAMA,
         }
     }
 }
@@ -208,42 +208,42 @@ impl std::convert::TryFrom<char> for Rejang {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            REJANG_LETTER_KA => Ok(Rejang::RejangLetterKa),
-            REJANG_LETTER_GA => Ok(Rejang::RejangLetterGa),
-            REJANG_LETTER_NGA => Ok(Rejang::RejangLetterNga),
-            REJANG_LETTER_TA => Ok(Rejang::RejangLetterTa),
-            REJANG_LETTER_DA => Ok(Rejang::RejangLetterDa),
-            REJANG_LETTER_NA => Ok(Rejang::RejangLetterNa),
-            REJANG_LETTER_PA => Ok(Rejang::RejangLetterPa),
-            REJANG_LETTER_BA => Ok(Rejang::RejangLetterBa),
-            REJANG_LETTER_MA => Ok(Rejang::RejangLetterMa),
-            REJANG_LETTER_CA => Ok(Rejang::RejangLetterCa),
-            REJANG_LETTER_JA => Ok(Rejang::RejangLetterJa),
-            REJANG_LETTER_NYA => Ok(Rejang::RejangLetterNya),
-            REJANG_LETTER_SA => Ok(Rejang::RejangLetterSa),
-            REJANG_LETTER_RA => Ok(Rejang::RejangLetterRa),
-            REJANG_LETTER_LA => Ok(Rejang::RejangLetterLa),
-            REJANG_LETTER_YA => Ok(Rejang::RejangLetterYa),
-            REJANG_LETTER_WA => Ok(Rejang::RejangLetterWa),
-            REJANG_LETTER_HA => Ok(Rejang::RejangLetterHa),
-            REJANG_LETTER_MBA => Ok(Rejang::RejangLetterMba),
-            REJANG_LETTER_NGGA => Ok(Rejang::RejangLetterNgga),
-            REJANG_LETTER_NDA => Ok(Rejang::RejangLetterNda),
-            REJANG_LETTER_NYJA => Ok(Rejang::RejangLetterNyja),
-            REJANG_LETTER_A => Ok(Rejang::RejangLetterA),
-            REJANG_VOWEL_SIGN_I => Ok(Rejang::RejangVowelSignI),
-            REJANG_VOWEL_SIGN_U => Ok(Rejang::RejangVowelSignU),
-            REJANG_VOWEL_SIGN_E => Ok(Rejang::RejangVowelSignE),
-            REJANG_VOWEL_SIGN_AI => Ok(Rejang::RejangVowelSignAi),
-            REJANG_VOWEL_SIGN_O => Ok(Rejang::RejangVowelSignO),
-            REJANG_VOWEL_SIGN_AU => Ok(Rejang::RejangVowelSignAu),
-            REJANG_VOWEL_SIGN_EU => Ok(Rejang::RejangVowelSignEu),
-            REJANG_VOWEL_SIGN_EA => Ok(Rejang::RejangVowelSignEa),
-            REJANG_CONSONANT_SIGN_NG => Ok(Rejang::RejangConsonantSignNg),
-            REJANG_CONSONANT_SIGN_N => Ok(Rejang::RejangConsonantSignN),
-            REJANG_CONSONANT_SIGN_R => Ok(Rejang::RejangConsonantSignR),
-            REJANG_CONSONANT_SIGN_H => Ok(Rejang::RejangConsonantSignH),
-            REJANG_VIRAMA => Ok(Rejang::RejangVirama),
+            LETTER_KA => Ok(Rejang::LetterKa),
+            LETTER_GA => Ok(Rejang::LetterGa),
+            LETTER_NGA => Ok(Rejang::LetterNga),
+            LETTER_TA => Ok(Rejang::LetterTa),
+            LETTER_DA => Ok(Rejang::LetterDa),
+            LETTER_NA => Ok(Rejang::LetterNa),
+            LETTER_PA => Ok(Rejang::LetterPa),
+            LETTER_BA => Ok(Rejang::LetterBa),
+            LETTER_MA => Ok(Rejang::LetterMa),
+            LETTER_CA => Ok(Rejang::LetterCa),
+            LETTER_JA => Ok(Rejang::LetterJa),
+            LETTER_NYA => Ok(Rejang::LetterNya),
+            LETTER_SA => Ok(Rejang::LetterSa),
+            LETTER_RA => Ok(Rejang::LetterRa),
+            LETTER_LA => Ok(Rejang::LetterLa),
+            LETTER_YA => Ok(Rejang::LetterYa),
+            LETTER_WA => Ok(Rejang::LetterWa),
+            LETTER_HA => Ok(Rejang::LetterHa),
+            LETTER_MBA => Ok(Rejang::LetterMba),
+            LETTER_NGGA => Ok(Rejang::LetterNgga),
+            LETTER_NDA => Ok(Rejang::LetterNda),
+            LETTER_NYJA => Ok(Rejang::LetterNyja),
+            LETTER_A => Ok(Rejang::LetterA),
+            VOWEL_SIGN_I => Ok(Rejang::VowelSignI),
+            VOWEL_SIGN_U => Ok(Rejang::VowelSignU),
+            VOWEL_SIGN_E => Ok(Rejang::VowelSignE),
+            VOWEL_SIGN_AI => Ok(Rejang::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Rejang::VowelSignO),
+            VOWEL_SIGN_AU => Ok(Rejang::VowelSignAu),
+            VOWEL_SIGN_EU => Ok(Rejang::VowelSignEu),
+            VOWEL_SIGN_EA => Ok(Rejang::VowelSignEa),
+            CONSONANT_SIGN_NG => Ok(Rejang::ConsonantSignNg),
+            CONSONANT_SIGN_N => Ok(Rejang::ConsonantSignN),
+            CONSONANT_SIGN_R => Ok(Rejang::ConsonantSignR),
+            CONSONANT_SIGN_H => Ok(Rejang::ConsonantSignH),
+            VIRAMA => Ok(Rejang::Virama),
             _ => Err(()),
         }
     }
@@ -282,50 +282,50 @@ impl Iterator for Rejang {
 }
 
 impl Rejang {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Rejang::RejangLetterKa
+        Rejang::LetterKa
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Rejang::RejangLetterKa => "rejang letter ka",
-            Rejang::RejangLetterGa => "rejang letter ga",
-            Rejang::RejangLetterNga => "rejang letter nga",
-            Rejang::RejangLetterTa => "rejang letter ta",
-            Rejang::RejangLetterDa => "rejang letter da",
-            Rejang::RejangLetterNa => "rejang letter na",
-            Rejang::RejangLetterPa => "rejang letter pa",
-            Rejang::RejangLetterBa => "rejang letter ba",
-            Rejang::RejangLetterMa => "rejang letter ma",
-            Rejang::RejangLetterCa => "rejang letter ca",
-            Rejang::RejangLetterJa => "rejang letter ja",
-            Rejang::RejangLetterNya => "rejang letter nya",
-            Rejang::RejangLetterSa => "rejang letter sa",
-            Rejang::RejangLetterRa => "rejang letter ra",
-            Rejang::RejangLetterLa => "rejang letter la",
-            Rejang::RejangLetterYa => "rejang letter ya",
-            Rejang::RejangLetterWa => "rejang letter wa",
-            Rejang::RejangLetterHa => "rejang letter ha",
-            Rejang::RejangLetterMba => "rejang letter mba",
-            Rejang::RejangLetterNgga => "rejang letter ngga",
-            Rejang::RejangLetterNda => "rejang letter nda",
-            Rejang::RejangLetterNyja => "rejang letter nyja",
-            Rejang::RejangLetterA => "rejang letter a",
-            Rejang::RejangVowelSignI => "rejang vowel sign i",
-            Rejang::RejangVowelSignU => "rejang vowel sign u",
-            Rejang::RejangVowelSignE => "rejang vowel sign e",
-            Rejang::RejangVowelSignAi => "rejang vowel sign ai",
-            Rejang::RejangVowelSignO => "rejang vowel sign o",
-            Rejang::RejangVowelSignAu => "rejang vowel sign au",
-            Rejang::RejangVowelSignEu => "rejang vowel sign eu",
-            Rejang::RejangVowelSignEa => "rejang vowel sign ea",
-            Rejang::RejangConsonantSignNg => "rejang consonant sign ng",
-            Rejang::RejangConsonantSignN => "rejang consonant sign n",
-            Rejang::RejangConsonantSignR => "rejang consonant sign r",
-            Rejang::RejangConsonantSignH => "rejang consonant sign h",
-            Rejang::RejangVirama => "rejang virama",
+            Rejang::LetterKa => "rejang letter ka",
+            Rejang::LetterGa => "rejang letter ga",
+            Rejang::LetterNga => "rejang letter nga",
+            Rejang::LetterTa => "rejang letter ta",
+            Rejang::LetterDa => "rejang letter da",
+            Rejang::LetterNa => "rejang letter na",
+            Rejang::LetterPa => "rejang letter pa",
+            Rejang::LetterBa => "rejang letter ba",
+            Rejang::LetterMa => "rejang letter ma",
+            Rejang::LetterCa => "rejang letter ca",
+            Rejang::LetterJa => "rejang letter ja",
+            Rejang::LetterNya => "rejang letter nya",
+            Rejang::LetterSa => "rejang letter sa",
+            Rejang::LetterRa => "rejang letter ra",
+            Rejang::LetterLa => "rejang letter la",
+            Rejang::LetterYa => "rejang letter ya",
+            Rejang::LetterWa => "rejang letter wa",
+            Rejang::LetterHa => "rejang letter ha",
+            Rejang::LetterMba => "rejang letter mba",
+            Rejang::LetterNgga => "rejang letter ngga",
+            Rejang::LetterNda => "rejang letter nda",
+            Rejang::LetterNyja => "rejang letter nyja",
+            Rejang::LetterA => "rejang letter a",
+            Rejang::VowelSignI => "rejang vowel sign i",
+            Rejang::VowelSignU => "rejang vowel sign u",
+            Rejang::VowelSignE => "rejang vowel sign e",
+            Rejang::VowelSignAi => "rejang vowel sign ai",
+            Rejang::VowelSignO => "rejang vowel sign o",
+            Rejang::VowelSignAu => "rejang vowel sign au",
+            Rejang::VowelSignEu => "rejang vowel sign eu",
+            Rejang::VowelSignEa => "rejang vowel sign ea",
+            Rejang::ConsonantSignNg => "rejang consonant sign ng",
+            Rejang::ConsonantSignN => "rejang consonant sign n",
+            Rejang::ConsonantSignR => "rejang consonant sign r",
+            Rejang::ConsonantSignH => "rejang consonant sign h",
+            Rejang::Virama => "rejang virama",
         }
     }
 }

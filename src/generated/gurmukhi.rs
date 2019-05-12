@@ -7,165 +7,165 @@
 /// ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯ ੰ ੱ ੲ ੳ ੴ ੵ ੶
 pub mod constants {
     /// \u{a01}: 'ਁ'
-    pub const GURMUKHI_SIGN_ADAK_BINDI: char = 'ਁ';
+    pub const SIGN_ADAK_BINDI: char = 'ਁ';
     /// \u{a02}: 'ਂ'
-    pub const GURMUKHI_SIGN_BINDI: char = 'ਂ';
+    pub const SIGN_BINDI: char = 'ਂ';
     /// \u{a03}: 'ਃ'
-    pub const GURMUKHI_SIGN_VISARGA: char = 'ਃ';
+    pub const SIGN_VISARGA: char = 'ਃ';
     /// \u{a05}: 'ਅ'
-    pub const GURMUKHI_LETTER_A: char = 'ਅ';
+    pub const LETTER_A: char = 'ਅ';
     /// \u{a06}: 'ਆ'
-    pub const GURMUKHI_LETTER_AA: char = 'ਆ';
+    pub const LETTER_AA: char = 'ਆ';
     /// \u{a07}: 'ਇ'
-    pub const GURMUKHI_LETTER_I: char = 'ਇ';
+    pub const LETTER_I: char = 'ਇ';
     /// \u{a08}: 'ਈ'
-    pub const GURMUKHI_LETTER_II: char = 'ਈ';
+    pub const LETTER_II: char = 'ਈ';
     /// \u{a09}: 'ਉ'
-    pub const GURMUKHI_LETTER_U: char = 'ਉ';
+    pub const LETTER_U: char = 'ਉ';
     /// \u{a0a}: 'ਊ'
-    pub const GURMUKHI_LETTER_UU: char = 'ਊ';
+    pub const LETTER_UU: char = 'ਊ';
     /// \u{a0f}: 'ਏ'
-    pub const GURMUKHI_LETTER_EE: char = 'ਏ';
+    pub const LETTER_EE: char = 'ਏ';
     /// \u{a10}: 'ਐ'
-    pub const GURMUKHI_LETTER_AI: char = 'ਐ';
+    pub const LETTER_AI: char = 'ਐ';
     /// \u{a13}: 'ਓ'
-    pub const GURMUKHI_LETTER_OO: char = 'ਓ';
+    pub const LETTER_OO: char = 'ਓ';
     /// \u{a14}: 'ਔ'
-    pub const GURMUKHI_LETTER_AU: char = 'ਔ';
+    pub const LETTER_AU: char = 'ਔ';
     /// \u{a15}: 'ਕ'
-    pub const GURMUKHI_LETTER_KA: char = 'ਕ';
+    pub const LETTER_KA: char = 'ਕ';
     /// \u{a16}: 'ਖ'
-    pub const GURMUKHI_LETTER_KHA: char = 'ਖ';
+    pub const LETTER_KHA: char = 'ਖ';
     /// \u{a17}: 'ਗ'
-    pub const GURMUKHI_LETTER_GA: char = 'ਗ';
+    pub const LETTER_GA: char = 'ਗ';
     /// \u{a18}: 'ਘ'
-    pub const GURMUKHI_LETTER_GHA: char = 'ਘ';
+    pub const LETTER_GHA: char = 'ਘ';
     /// \u{a19}: 'ਙ'
-    pub const GURMUKHI_LETTER_NGA: char = 'ਙ';
+    pub const LETTER_NGA: char = 'ਙ';
     /// \u{a1a}: 'ਚ'
-    pub const GURMUKHI_LETTER_CA: char = 'ਚ';
+    pub const LETTER_CA: char = 'ਚ';
     /// \u{a1b}: 'ਛ'
-    pub const GURMUKHI_LETTER_CHA: char = 'ਛ';
+    pub const LETTER_CHA: char = 'ਛ';
     /// \u{a1c}: 'ਜ'
-    pub const GURMUKHI_LETTER_JA: char = 'ਜ';
+    pub const LETTER_JA: char = 'ਜ';
     /// \u{a1d}: 'ਝ'
-    pub const GURMUKHI_LETTER_JHA: char = 'ਝ';
+    pub const LETTER_JHA: char = 'ਝ';
     /// \u{a1e}: 'ਞ'
-    pub const GURMUKHI_LETTER_NYA: char = 'ਞ';
+    pub const LETTER_NYA: char = 'ਞ';
     /// \u{a1f}: 'ਟ'
-    pub const GURMUKHI_LETTER_TTA: char = 'ਟ';
+    pub const LETTER_TTA: char = 'ਟ';
     /// \u{a20}: 'ਠ'
-    pub const GURMUKHI_LETTER_TTHA: char = 'ਠ';
+    pub const LETTER_TTHA: char = 'ਠ';
     /// \u{a21}: 'ਡ'
-    pub const GURMUKHI_LETTER_DDA: char = 'ਡ';
+    pub const LETTER_DDA: char = 'ਡ';
     /// \u{a22}: 'ਢ'
-    pub const GURMUKHI_LETTER_DDHA: char = 'ਢ';
+    pub const LETTER_DDHA: char = 'ਢ';
     /// \u{a23}: 'ਣ'
-    pub const GURMUKHI_LETTER_NNA: char = 'ਣ';
+    pub const LETTER_NNA: char = 'ਣ';
     /// \u{a24}: 'ਤ'
-    pub const GURMUKHI_LETTER_TA: char = 'ਤ';
+    pub const LETTER_TA: char = 'ਤ';
     /// \u{a25}: 'ਥ'
-    pub const GURMUKHI_LETTER_THA: char = 'ਥ';
+    pub const LETTER_THA: char = 'ਥ';
     /// \u{a26}: 'ਦ'
-    pub const GURMUKHI_LETTER_DA: char = 'ਦ';
+    pub const LETTER_DA: char = 'ਦ';
     /// \u{a27}: 'ਧ'
-    pub const GURMUKHI_LETTER_DHA: char = 'ਧ';
+    pub const LETTER_DHA: char = 'ਧ';
     /// \u{a28}: 'ਨ'
-    pub const GURMUKHI_LETTER_NA: char = 'ਨ';
+    pub const LETTER_NA: char = 'ਨ';
     /// \u{a2a}: 'ਪ'
-    pub const GURMUKHI_LETTER_PA: char = 'ਪ';
+    pub const LETTER_PA: char = 'ਪ';
     /// \u{a2b}: 'ਫ'
-    pub const GURMUKHI_LETTER_PHA: char = 'ਫ';
+    pub const LETTER_PHA: char = 'ਫ';
     /// \u{a2c}: 'ਬ'
-    pub const GURMUKHI_LETTER_BA: char = 'ਬ';
+    pub const LETTER_BA: char = 'ਬ';
     /// \u{a2d}: 'ਭ'
-    pub const GURMUKHI_LETTER_BHA: char = 'ਭ';
+    pub const LETTER_BHA: char = 'ਭ';
     /// \u{a2e}: 'ਮ'
-    pub const GURMUKHI_LETTER_MA: char = 'ਮ';
+    pub const LETTER_MA: char = 'ਮ';
     /// \u{a2f}: 'ਯ'
-    pub const GURMUKHI_LETTER_YA: char = 'ਯ';
+    pub const LETTER_YA: char = 'ਯ';
     /// \u{a30}: 'ਰ'
-    pub const GURMUKHI_LETTER_RA: char = 'ਰ';
+    pub const LETTER_RA: char = 'ਰ';
     /// \u{a32}: 'ਲ'
-    pub const GURMUKHI_LETTER_LA: char = 'ਲ';
+    pub const LETTER_LA: char = 'ਲ';
     /// \u{a33}: 'ਲ਼'
-    pub const GURMUKHI_LETTER_LLA: char = 'ਲ਼';
+    pub const LETTER_LLA: char = 'ਲ਼';
     /// \u{a35}: 'ਵ'
-    pub const GURMUKHI_LETTER_VA: char = 'ਵ';
+    pub const LETTER_VA: char = 'ਵ';
     /// \u{a36}: 'ਸ਼'
-    pub const GURMUKHI_LETTER_SHA: char = 'ਸ਼';
+    pub const LETTER_SHA: char = 'ਸ਼';
     /// \u{a38}: 'ਸ'
-    pub const GURMUKHI_LETTER_SA: char = 'ਸ';
+    pub const LETTER_SA: char = 'ਸ';
     /// \u{a39}: 'ਹ'
-    pub const GURMUKHI_LETTER_HA: char = 'ਹ';
+    pub const LETTER_HA: char = 'ਹ';
     /// \u{a3c}: '਼'
-    pub const GURMUKHI_SIGN_NUKTA: char = '਼';
+    pub const SIGN_NUKTA: char = '਼';
     /// \u{a3e}: 'ਾ'
-    pub const GURMUKHI_VOWEL_SIGN_AA: char = 'ਾ';
+    pub const VOWEL_SIGN_AA: char = 'ਾ';
     /// \u{a3f}: 'ਿ'
-    pub const GURMUKHI_VOWEL_SIGN_I: char = 'ਿ';
+    pub const VOWEL_SIGN_I: char = 'ਿ';
     /// \u{a40}: 'ੀ'
-    pub const GURMUKHI_VOWEL_SIGN_II: char = 'ੀ';
+    pub const VOWEL_SIGN_II: char = 'ੀ';
     /// \u{a41}: 'ੁ'
-    pub const GURMUKHI_VOWEL_SIGN_U: char = 'ੁ';
+    pub const VOWEL_SIGN_U: char = 'ੁ';
     /// \u{a42}: 'ੂ'
-    pub const GURMUKHI_VOWEL_SIGN_UU: char = 'ੂ';
+    pub const VOWEL_SIGN_UU: char = 'ੂ';
     /// \u{a47}: 'ੇ'
-    pub const GURMUKHI_VOWEL_SIGN_EE: char = 'ੇ';
+    pub const VOWEL_SIGN_EE: char = 'ੇ';
     /// \u{a48}: 'ੈ'
-    pub const GURMUKHI_VOWEL_SIGN_AI: char = 'ੈ';
+    pub const VOWEL_SIGN_AI: char = 'ੈ';
     /// \u{a4b}: 'ੋ'
-    pub const GURMUKHI_VOWEL_SIGN_OO: char = 'ੋ';
+    pub const VOWEL_SIGN_OO: char = 'ੋ';
     /// \u{a4c}: 'ੌ'
-    pub const GURMUKHI_VOWEL_SIGN_AU: char = 'ੌ';
+    pub const VOWEL_SIGN_AU: char = 'ੌ';
     /// \u{a4d}: '੍'
-    pub const GURMUKHI_SIGN_VIRAMA: char = '੍';
+    pub const SIGN_VIRAMA: char = '੍';
     /// \u{a51}: 'ੑ'
-    pub const GURMUKHI_SIGN_UDAAT: char = 'ੑ';
+    pub const SIGN_UDAAT: char = 'ੑ';
     /// \u{a59}: 'ਖ਼'
-    pub const GURMUKHI_LETTER_KHHA: char = 'ਖ਼';
+    pub const LETTER_KHHA: char = 'ਖ਼';
     /// \u{a5a}: 'ਗ਼'
-    pub const GURMUKHI_LETTER_GHHA: char = 'ਗ਼';
+    pub const LETTER_GHHA: char = 'ਗ਼';
     /// \u{a5b}: 'ਜ਼'
-    pub const GURMUKHI_LETTER_ZA: char = 'ਜ਼';
+    pub const LETTER_ZA: char = 'ਜ਼';
     /// \u{a5c}: 'ੜ'
-    pub const GURMUKHI_LETTER_RRA: char = 'ੜ';
+    pub const LETTER_RRA: char = 'ੜ';
     /// \u{a5e}: 'ਫ਼'
-    pub const GURMUKHI_LETTER_FA: char = 'ਫ਼';
+    pub const LETTER_FA: char = 'ਫ਼';
     /// \u{a66}: '੦'
-    pub const GURMUKHI_DIGIT_ZERO: char = '੦';
+    pub const DIGIT_ZERO: char = '੦';
     /// \u{a67}: '੧'
-    pub const GURMUKHI_DIGIT_ONE: char = '੧';
+    pub const DIGIT_ONE: char = '੧';
     /// \u{a68}: '੨'
-    pub const GURMUKHI_DIGIT_TWO: char = '੨';
+    pub const DIGIT_TWO: char = '੨';
     /// \u{a69}: '੩'
-    pub const GURMUKHI_DIGIT_THREE: char = '੩';
+    pub const DIGIT_THREE: char = '੩';
     /// \u{a6a}: '੪'
-    pub const GURMUKHI_DIGIT_FOUR: char = '੪';
+    pub const DIGIT_FOUR: char = '੪';
     /// \u{a6b}: '੫'
-    pub const GURMUKHI_DIGIT_FIVE: char = '੫';
+    pub const DIGIT_FIVE: char = '੫';
     /// \u{a6c}: '੬'
-    pub const GURMUKHI_DIGIT_SIX: char = '੬';
+    pub const DIGIT_SIX: char = '੬';
     /// \u{a6d}: '੭'
-    pub const GURMUKHI_DIGIT_SEVEN: char = '੭';
+    pub const DIGIT_SEVEN: char = '੭';
     /// \u{a6e}: '੮'
-    pub const GURMUKHI_DIGIT_EIGHT: char = '੮';
+    pub const DIGIT_EIGHT: char = '੮';
     /// \u{a6f}: '੯'
-    pub const GURMUKHI_DIGIT_NINE: char = '੯';
+    pub const DIGIT_NINE: char = '੯';
     /// \u{a70}: 'ੰ'
-    pub const GURMUKHI_TIPPI: char = 'ੰ';
+    pub const TIPPI: char = 'ੰ';
     /// \u{a71}: 'ੱ'
-    pub const GURMUKHI_ADDAK: char = 'ੱ';
+    pub const ADDAK: char = 'ੱ';
     /// \u{a72}: 'ੲ'
-    pub const GURMUKHI_IRI: char = 'ੲ';
+    pub const IRI: char = 'ੲ';
     /// \u{a73}: 'ੳ'
-    pub const GURMUKHI_URA: char = 'ੳ';
+    pub const URA: char = 'ੳ';
     /// \u{a74}: 'ੴ'
-    pub const GURMUKHI_EK_ONKAR: char = 'ੴ';
+    pub const EK_ONKAR: char = 'ੴ';
     /// \u{a75}: 'ੵ'
-    pub const GURMUKHI_SIGN_YAKASH: char = 'ੵ';
+    pub const SIGN_YAKASH: char = 'ੵ';
     /// \u{a76}: '੶'
-    pub const GURMUKHI_ABBREVIATION_SIGN: char = '੶';
+    pub const ABBREVIATION_SIGN: char = '੶';
 }
 
 /// \u{a00} → \u{a7f}\
@@ -178,251 +178,251 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Gurmukhi {
     /// \u{a01}: 'ਁ'
-    GurmukhiSignAdakBindi,
+    SignAdakBindi,
     /// \u{a02}: 'ਂ'
-    GurmukhiSignBindi,
+    SignBindi,
     /// \u{a03}: 'ਃ'
-    GurmukhiSignVisarga,
+    SignVisarga,
     /// \u{a05}: 'ਅ'
-    GurmukhiLetterA,
+    LetterA,
     /// \u{a06}: 'ਆ'
-    GurmukhiLetterAa,
+    LetterAa,
     /// \u{a07}: 'ਇ'
-    GurmukhiLetterI,
+    LetterI,
     /// \u{a08}: 'ਈ'
-    GurmukhiLetterIi,
+    LetterIi,
     /// \u{a09}: 'ਉ'
-    GurmukhiLetterU,
+    LetterU,
     /// \u{a0a}: 'ਊ'
-    GurmukhiLetterUu,
+    LetterUu,
     /// \u{a0f}: 'ਏ'
-    GurmukhiLetterEe,
+    LetterEe,
     /// \u{a10}: 'ਐ'
-    GurmukhiLetterAi,
+    LetterAi,
     /// \u{a13}: 'ਓ'
-    GurmukhiLetterOo,
+    LetterOo,
     /// \u{a14}: 'ਔ'
-    GurmukhiLetterAu,
+    LetterAu,
     /// \u{a15}: 'ਕ'
-    GurmukhiLetterKa,
+    LetterKa,
     /// \u{a16}: 'ਖ'
-    GurmukhiLetterKha,
+    LetterKha,
     /// \u{a17}: 'ਗ'
-    GurmukhiLetterGa,
+    LetterGa,
     /// \u{a18}: 'ਘ'
-    GurmukhiLetterGha,
+    LetterGha,
     /// \u{a19}: 'ਙ'
-    GurmukhiLetterNga,
+    LetterNga,
     /// \u{a1a}: 'ਚ'
-    GurmukhiLetterCa,
+    LetterCa,
     /// \u{a1b}: 'ਛ'
-    GurmukhiLetterCha,
+    LetterCha,
     /// \u{a1c}: 'ਜ'
-    GurmukhiLetterJa,
+    LetterJa,
     /// \u{a1d}: 'ਝ'
-    GurmukhiLetterJha,
+    LetterJha,
     /// \u{a1e}: 'ਞ'
-    GurmukhiLetterNya,
+    LetterNya,
     /// \u{a1f}: 'ਟ'
-    GurmukhiLetterTta,
+    LetterTta,
     /// \u{a20}: 'ਠ'
-    GurmukhiLetterTtha,
+    LetterTtha,
     /// \u{a21}: 'ਡ'
-    GurmukhiLetterDda,
+    LetterDda,
     /// \u{a22}: 'ਢ'
-    GurmukhiLetterDdha,
+    LetterDdha,
     /// \u{a23}: 'ਣ'
-    GurmukhiLetterNna,
+    LetterNna,
     /// \u{a24}: 'ਤ'
-    GurmukhiLetterTa,
+    LetterTa,
     /// \u{a25}: 'ਥ'
-    GurmukhiLetterTha,
+    LetterTha,
     /// \u{a26}: 'ਦ'
-    GurmukhiLetterDa,
+    LetterDa,
     /// \u{a27}: 'ਧ'
-    GurmukhiLetterDha,
+    LetterDha,
     /// \u{a28}: 'ਨ'
-    GurmukhiLetterNa,
+    LetterNa,
     /// \u{a2a}: 'ਪ'
-    GurmukhiLetterPa,
+    LetterPa,
     /// \u{a2b}: 'ਫ'
-    GurmukhiLetterPha,
+    LetterPha,
     /// \u{a2c}: 'ਬ'
-    GurmukhiLetterBa,
+    LetterBa,
     /// \u{a2d}: 'ਭ'
-    GurmukhiLetterBha,
+    LetterBha,
     /// \u{a2e}: 'ਮ'
-    GurmukhiLetterMa,
+    LetterMa,
     /// \u{a2f}: 'ਯ'
-    GurmukhiLetterYa,
+    LetterYa,
     /// \u{a30}: 'ਰ'
-    GurmukhiLetterRa,
+    LetterRa,
     /// \u{a32}: 'ਲ'
-    GurmukhiLetterLa,
+    LetterLa,
     /// \u{a33}: 'ਲ਼'
-    GurmukhiLetterLla,
+    LetterLla,
     /// \u{a35}: 'ਵ'
-    GurmukhiLetterVa,
+    LetterVa,
     /// \u{a36}: 'ਸ਼'
-    GurmukhiLetterSha,
+    LetterSha,
     /// \u{a38}: 'ਸ'
-    GurmukhiLetterSa,
+    LetterSa,
     /// \u{a39}: 'ਹ'
-    GurmukhiLetterHa,
+    LetterHa,
     /// \u{a3c}: '਼'
-    GurmukhiSignNukta,
+    SignNukta,
     /// \u{a3e}: 'ਾ'
-    GurmukhiVowelSignAa,
+    VowelSignAa,
     /// \u{a3f}: 'ਿ'
-    GurmukhiVowelSignI,
+    VowelSignI,
     /// \u{a40}: 'ੀ'
-    GurmukhiVowelSignIi,
+    VowelSignIi,
     /// \u{a41}: 'ੁ'
-    GurmukhiVowelSignU,
+    VowelSignU,
     /// \u{a42}: 'ੂ'
-    GurmukhiVowelSignUu,
+    VowelSignUu,
     /// \u{a47}: 'ੇ'
-    GurmukhiVowelSignEe,
+    VowelSignEe,
     /// \u{a48}: 'ੈ'
-    GurmukhiVowelSignAi,
+    VowelSignAi,
     /// \u{a4b}: 'ੋ'
-    GurmukhiVowelSignOo,
+    VowelSignOo,
     /// \u{a4c}: 'ੌ'
-    GurmukhiVowelSignAu,
+    VowelSignAu,
     /// \u{a4d}: '੍'
-    GurmukhiSignVirama,
+    SignVirama,
     /// \u{a51}: 'ੑ'
-    GurmukhiSignUdaat,
+    SignUdaat,
     /// \u{a59}: 'ਖ਼'
-    GurmukhiLetterKhha,
+    LetterKhha,
     /// \u{a5a}: 'ਗ਼'
-    GurmukhiLetterGhha,
+    LetterGhha,
     /// \u{a5b}: 'ਜ਼'
-    GurmukhiLetterZa,
+    LetterZa,
     /// \u{a5c}: 'ੜ'
-    GurmukhiLetterRra,
+    LetterRra,
     /// \u{a5e}: 'ਫ਼'
-    GurmukhiLetterFa,
+    LetterFa,
     /// \u{a66}: '੦'
-    GurmukhiDigitZero,
+    DigitZero,
     /// \u{a67}: '੧'
-    GurmukhiDigitOne,
+    DigitOne,
     /// \u{a68}: '੨'
-    GurmukhiDigitTwo,
+    DigitTwo,
     /// \u{a69}: '੩'
-    GurmukhiDigitThree,
+    DigitThree,
     /// \u{a6a}: '੪'
-    GurmukhiDigitFour,
+    DigitFour,
     /// \u{a6b}: '੫'
-    GurmukhiDigitFive,
+    DigitFive,
     /// \u{a6c}: '੬'
-    GurmukhiDigitSix,
+    DigitSix,
     /// \u{a6d}: '੭'
-    GurmukhiDigitSeven,
+    DigitSeven,
     /// \u{a6e}: '੮'
-    GurmukhiDigitEight,
+    DigitEight,
     /// \u{a6f}: '੯'
-    GurmukhiDigitNine,
+    DigitNine,
     /// \u{a70}: 'ੰ'
-    GurmukhiTippi,
+    Tippi,
     /// \u{a71}: 'ੱ'
-    GurmukhiAddak,
+    Addak,
     /// \u{a72}: 'ੲ'
-    GurmukhiIri,
+    Iri,
     /// \u{a73}: 'ੳ'
-    GurmukhiUra,
+    Ura,
     /// \u{a74}: 'ੴ'
-    GurmukhiEkOnkar,
+    EkOnkar,
     /// \u{a75}: 'ੵ'
-    GurmukhiSignYakash,
+    SignYakash,
     /// \u{a76}: '੶'
-    GurmukhiAbbreviationSign,
+    AbbreviationSign,
 }
 
 impl Into<char> for Gurmukhi {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Gurmukhi::GurmukhiSignAdakBindi => GURMUKHI_SIGN_ADAK_BINDI,
-            Gurmukhi::GurmukhiSignBindi => GURMUKHI_SIGN_BINDI,
-            Gurmukhi::GurmukhiSignVisarga => GURMUKHI_SIGN_VISARGA,
-            Gurmukhi::GurmukhiLetterA => GURMUKHI_LETTER_A,
-            Gurmukhi::GurmukhiLetterAa => GURMUKHI_LETTER_AA,
-            Gurmukhi::GurmukhiLetterI => GURMUKHI_LETTER_I,
-            Gurmukhi::GurmukhiLetterIi => GURMUKHI_LETTER_II,
-            Gurmukhi::GurmukhiLetterU => GURMUKHI_LETTER_U,
-            Gurmukhi::GurmukhiLetterUu => GURMUKHI_LETTER_UU,
-            Gurmukhi::GurmukhiLetterEe => GURMUKHI_LETTER_EE,
-            Gurmukhi::GurmukhiLetterAi => GURMUKHI_LETTER_AI,
-            Gurmukhi::GurmukhiLetterOo => GURMUKHI_LETTER_OO,
-            Gurmukhi::GurmukhiLetterAu => GURMUKHI_LETTER_AU,
-            Gurmukhi::GurmukhiLetterKa => GURMUKHI_LETTER_KA,
-            Gurmukhi::GurmukhiLetterKha => GURMUKHI_LETTER_KHA,
-            Gurmukhi::GurmukhiLetterGa => GURMUKHI_LETTER_GA,
-            Gurmukhi::GurmukhiLetterGha => GURMUKHI_LETTER_GHA,
-            Gurmukhi::GurmukhiLetterNga => GURMUKHI_LETTER_NGA,
-            Gurmukhi::GurmukhiLetterCa => GURMUKHI_LETTER_CA,
-            Gurmukhi::GurmukhiLetterCha => GURMUKHI_LETTER_CHA,
-            Gurmukhi::GurmukhiLetterJa => GURMUKHI_LETTER_JA,
-            Gurmukhi::GurmukhiLetterJha => GURMUKHI_LETTER_JHA,
-            Gurmukhi::GurmukhiLetterNya => GURMUKHI_LETTER_NYA,
-            Gurmukhi::GurmukhiLetterTta => GURMUKHI_LETTER_TTA,
-            Gurmukhi::GurmukhiLetterTtha => GURMUKHI_LETTER_TTHA,
-            Gurmukhi::GurmukhiLetterDda => GURMUKHI_LETTER_DDA,
-            Gurmukhi::GurmukhiLetterDdha => GURMUKHI_LETTER_DDHA,
-            Gurmukhi::GurmukhiLetterNna => GURMUKHI_LETTER_NNA,
-            Gurmukhi::GurmukhiLetterTa => GURMUKHI_LETTER_TA,
-            Gurmukhi::GurmukhiLetterTha => GURMUKHI_LETTER_THA,
-            Gurmukhi::GurmukhiLetterDa => GURMUKHI_LETTER_DA,
-            Gurmukhi::GurmukhiLetterDha => GURMUKHI_LETTER_DHA,
-            Gurmukhi::GurmukhiLetterNa => GURMUKHI_LETTER_NA,
-            Gurmukhi::GurmukhiLetterPa => GURMUKHI_LETTER_PA,
-            Gurmukhi::GurmukhiLetterPha => GURMUKHI_LETTER_PHA,
-            Gurmukhi::GurmukhiLetterBa => GURMUKHI_LETTER_BA,
-            Gurmukhi::GurmukhiLetterBha => GURMUKHI_LETTER_BHA,
-            Gurmukhi::GurmukhiLetterMa => GURMUKHI_LETTER_MA,
-            Gurmukhi::GurmukhiLetterYa => GURMUKHI_LETTER_YA,
-            Gurmukhi::GurmukhiLetterRa => GURMUKHI_LETTER_RA,
-            Gurmukhi::GurmukhiLetterLa => GURMUKHI_LETTER_LA,
-            Gurmukhi::GurmukhiLetterLla => GURMUKHI_LETTER_LLA,
-            Gurmukhi::GurmukhiLetterVa => GURMUKHI_LETTER_VA,
-            Gurmukhi::GurmukhiLetterSha => GURMUKHI_LETTER_SHA,
-            Gurmukhi::GurmukhiLetterSa => GURMUKHI_LETTER_SA,
-            Gurmukhi::GurmukhiLetterHa => GURMUKHI_LETTER_HA,
-            Gurmukhi::GurmukhiSignNukta => GURMUKHI_SIGN_NUKTA,
-            Gurmukhi::GurmukhiVowelSignAa => GURMUKHI_VOWEL_SIGN_AA,
-            Gurmukhi::GurmukhiVowelSignI => GURMUKHI_VOWEL_SIGN_I,
-            Gurmukhi::GurmukhiVowelSignIi => GURMUKHI_VOWEL_SIGN_II,
-            Gurmukhi::GurmukhiVowelSignU => GURMUKHI_VOWEL_SIGN_U,
-            Gurmukhi::GurmukhiVowelSignUu => GURMUKHI_VOWEL_SIGN_UU,
-            Gurmukhi::GurmukhiVowelSignEe => GURMUKHI_VOWEL_SIGN_EE,
-            Gurmukhi::GurmukhiVowelSignAi => GURMUKHI_VOWEL_SIGN_AI,
-            Gurmukhi::GurmukhiVowelSignOo => GURMUKHI_VOWEL_SIGN_OO,
-            Gurmukhi::GurmukhiVowelSignAu => GURMUKHI_VOWEL_SIGN_AU,
-            Gurmukhi::GurmukhiSignVirama => GURMUKHI_SIGN_VIRAMA,
-            Gurmukhi::GurmukhiSignUdaat => GURMUKHI_SIGN_UDAAT,
-            Gurmukhi::GurmukhiLetterKhha => GURMUKHI_LETTER_KHHA,
-            Gurmukhi::GurmukhiLetterGhha => GURMUKHI_LETTER_GHHA,
-            Gurmukhi::GurmukhiLetterZa => GURMUKHI_LETTER_ZA,
-            Gurmukhi::GurmukhiLetterRra => GURMUKHI_LETTER_RRA,
-            Gurmukhi::GurmukhiLetterFa => GURMUKHI_LETTER_FA,
-            Gurmukhi::GurmukhiDigitZero => GURMUKHI_DIGIT_ZERO,
-            Gurmukhi::GurmukhiDigitOne => GURMUKHI_DIGIT_ONE,
-            Gurmukhi::GurmukhiDigitTwo => GURMUKHI_DIGIT_TWO,
-            Gurmukhi::GurmukhiDigitThree => GURMUKHI_DIGIT_THREE,
-            Gurmukhi::GurmukhiDigitFour => GURMUKHI_DIGIT_FOUR,
-            Gurmukhi::GurmukhiDigitFive => GURMUKHI_DIGIT_FIVE,
-            Gurmukhi::GurmukhiDigitSix => GURMUKHI_DIGIT_SIX,
-            Gurmukhi::GurmukhiDigitSeven => GURMUKHI_DIGIT_SEVEN,
-            Gurmukhi::GurmukhiDigitEight => GURMUKHI_DIGIT_EIGHT,
-            Gurmukhi::GurmukhiDigitNine => GURMUKHI_DIGIT_NINE,
-            Gurmukhi::GurmukhiTippi => GURMUKHI_TIPPI,
-            Gurmukhi::GurmukhiAddak => GURMUKHI_ADDAK,
-            Gurmukhi::GurmukhiIri => GURMUKHI_IRI,
-            Gurmukhi::GurmukhiUra => GURMUKHI_URA,
-            Gurmukhi::GurmukhiEkOnkar => GURMUKHI_EK_ONKAR,
-            Gurmukhi::GurmukhiSignYakash => GURMUKHI_SIGN_YAKASH,
-            Gurmukhi::GurmukhiAbbreviationSign => GURMUKHI_ABBREVIATION_SIGN,
+            Gurmukhi::SignAdakBindi => SIGN_ADAK_BINDI,
+            Gurmukhi::SignBindi => SIGN_BINDI,
+            Gurmukhi::SignVisarga => SIGN_VISARGA,
+            Gurmukhi::LetterA => LETTER_A,
+            Gurmukhi::LetterAa => LETTER_AA,
+            Gurmukhi::LetterI => LETTER_I,
+            Gurmukhi::LetterIi => LETTER_II,
+            Gurmukhi::LetterU => LETTER_U,
+            Gurmukhi::LetterUu => LETTER_UU,
+            Gurmukhi::LetterEe => LETTER_EE,
+            Gurmukhi::LetterAi => LETTER_AI,
+            Gurmukhi::LetterOo => LETTER_OO,
+            Gurmukhi::LetterAu => LETTER_AU,
+            Gurmukhi::LetterKa => LETTER_KA,
+            Gurmukhi::LetterKha => LETTER_KHA,
+            Gurmukhi::LetterGa => LETTER_GA,
+            Gurmukhi::LetterGha => LETTER_GHA,
+            Gurmukhi::LetterNga => LETTER_NGA,
+            Gurmukhi::LetterCa => LETTER_CA,
+            Gurmukhi::LetterCha => LETTER_CHA,
+            Gurmukhi::LetterJa => LETTER_JA,
+            Gurmukhi::LetterJha => LETTER_JHA,
+            Gurmukhi::LetterNya => LETTER_NYA,
+            Gurmukhi::LetterTta => LETTER_TTA,
+            Gurmukhi::LetterTtha => LETTER_TTHA,
+            Gurmukhi::LetterDda => LETTER_DDA,
+            Gurmukhi::LetterDdha => LETTER_DDHA,
+            Gurmukhi::LetterNna => LETTER_NNA,
+            Gurmukhi::LetterTa => LETTER_TA,
+            Gurmukhi::LetterTha => LETTER_THA,
+            Gurmukhi::LetterDa => LETTER_DA,
+            Gurmukhi::LetterDha => LETTER_DHA,
+            Gurmukhi::LetterNa => LETTER_NA,
+            Gurmukhi::LetterPa => LETTER_PA,
+            Gurmukhi::LetterPha => LETTER_PHA,
+            Gurmukhi::LetterBa => LETTER_BA,
+            Gurmukhi::LetterBha => LETTER_BHA,
+            Gurmukhi::LetterMa => LETTER_MA,
+            Gurmukhi::LetterYa => LETTER_YA,
+            Gurmukhi::LetterRa => LETTER_RA,
+            Gurmukhi::LetterLa => LETTER_LA,
+            Gurmukhi::LetterLla => LETTER_LLA,
+            Gurmukhi::LetterVa => LETTER_VA,
+            Gurmukhi::LetterSha => LETTER_SHA,
+            Gurmukhi::LetterSa => LETTER_SA,
+            Gurmukhi::LetterHa => LETTER_HA,
+            Gurmukhi::SignNukta => SIGN_NUKTA,
+            Gurmukhi::VowelSignAa => VOWEL_SIGN_AA,
+            Gurmukhi::VowelSignI => VOWEL_SIGN_I,
+            Gurmukhi::VowelSignIi => VOWEL_SIGN_II,
+            Gurmukhi::VowelSignU => VOWEL_SIGN_U,
+            Gurmukhi::VowelSignUu => VOWEL_SIGN_UU,
+            Gurmukhi::VowelSignEe => VOWEL_SIGN_EE,
+            Gurmukhi::VowelSignAi => VOWEL_SIGN_AI,
+            Gurmukhi::VowelSignOo => VOWEL_SIGN_OO,
+            Gurmukhi::VowelSignAu => VOWEL_SIGN_AU,
+            Gurmukhi::SignVirama => SIGN_VIRAMA,
+            Gurmukhi::SignUdaat => SIGN_UDAAT,
+            Gurmukhi::LetterKhha => LETTER_KHHA,
+            Gurmukhi::LetterGhha => LETTER_GHHA,
+            Gurmukhi::LetterZa => LETTER_ZA,
+            Gurmukhi::LetterRra => LETTER_RRA,
+            Gurmukhi::LetterFa => LETTER_FA,
+            Gurmukhi::DigitZero => DIGIT_ZERO,
+            Gurmukhi::DigitOne => DIGIT_ONE,
+            Gurmukhi::DigitTwo => DIGIT_TWO,
+            Gurmukhi::DigitThree => DIGIT_THREE,
+            Gurmukhi::DigitFour => DIGIT_FOUR,
+            Gurmukhi::DigitFive => DIGIT_FIVE,
+            Gurmukhi::DigitSix => DIGIT_SIX,
+            Gurmukhi::DigitSeven => DIGIT_SEVEN,
+            Gurmukhi::DigitEight => DIGIT_EIGHT,
+            Gurmukhi::DigitNine => DIGIT_NINE,
+            Gurmukhi::Tippi => TIPPI,
+            Gurmukhi::Addak => ADDAK,
+            Gurmukhi::Iri => IRI,
+            Gurmukhi::Ura => URA,
+            Gurmukhi::EkOnkar => EK_ONKAR,
+            Gurmukhi::SignYakash => SIGN_YAKASH,
+            Gurmukhi::AbbreviationSign => ABBREVIATION_SIGN,
         }
     }
 }
@@ -432,86 +432,86 @@ impl std::convert::TryFrom<char> for Gurmukhi {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            GURMUKHI_SIGN_ADAK_BINDI => Ok(Gurmukhi::GurmukhiSignAdakBindi),
-            GURMUKHI_SIGN_BINDI => Ok(Gurmukhi::GurmukhiSignBindi),
-            GURMUKHI_SIGN_VISARGA => Ok(Gurmukhi::GurmukhiSignVisarga),
-            GURMUKHI_LETTER_A => Ok(Gurmukhi::GurmukhiLetterA),
-            GURMUKHI_LETTER_AA => Ok(Gurmukhi::GurmukhiLetterAa),
-            GURMUKHI_LETTER_I => Ok(Gurmukhi::GurmukhiLetterI),
-            GURMUKHI_LETTER_II => Ok(Gurmukhi::GurmukhiLetterIi),
-            GURMUKHI_LETTER_U => Ok(Gurmukhi::GurmukhiLetterU),
-            GURMUKHI_LETTER_UU => Ok(Gurmukhi::GurmukhiLetterUu),
-            GURMUKHI_LETTER_EE => Ok(Gurmukhi::GurmukhiLetterEe),
-            GURMUKHI_LETTER_AI => Ok(Gurmukhi::GurmukhiLetterAi),
-            GURMUKHI_LETTER_OO => Ok(Gurmukhi::GurmukhiLetterOo),
-            GURMUKHI_LETTER_AU => Ok(Gurmukhi::GurmukhiLetterAu),
-            GURMUKHI_LETTER_KA => Ok(Gurmukhi::GurmukhiLetterKa),
-            GURMUKHI_LETTER_KHA => Ok(Gurmukhi::GurmukhiLetterKha),
-            GURMUKHI_LETTER_GA => Ok(Gurmukhi::GurmukhiLetterGa),
-            GURMUKHI_LETTER_GHA => Ok(Gurmukhi::GurmukhiLetterGha),
-            GURMUKHI_LETTER_NGA => Ok(Gurmukhi::GurmukhiLetterNga),
-            GURMUKHI_LETTER_CA => Ok(Gurmukhi::GurmukhiLetterCa),
-            GURMUKHI_LETTER_CHA => Ok(Gurmukhi::GurmukhiLetterCha),
-            GURMUKHI_LETTER_JA => Ok(Gurmukhi::GurmukhiLetterJa),
-            GURMUKHI_LETTER_JHA => Ok(Gurmukhi::GurmukhiLetterJha),
-            GURMUKHI_LETTER_NYA => Ok(Gurmukhi::GurmukhiLetterNya),
-            GURMUKHI_LETTER_TTA => Ok(Gurmukhi::GurmukhiLetterTta),
-            GURMUKHI_LETTER_TTHA => Ok(Gurmukhi::GurmukhiLetterTtha),
-            GURMUKHI_LETTER_DDA => Ok(Gurmukhi::GurmukhiLetterDda),
-            GURMUKHI_LETTER_DDHA => Ok(Gurmukhi::GurmukhiLetterDdha),
-            GURMUKHI_LETTER_NNA => Ok(Gurmukhi::GurmukhiLetterNna),
-            GURMUKHI_LETTER_TA => Ok(Gurmukhi::GurmukhiLetterTa),
-            GURMUKHI_LETTER_THA => Ok(Gurmukhi::GurmukhiLetterTha),
-            GURMUKHI_LETTER_DA => Ok(Gurmukhi::GurmukhiLetterDa),
-            GURMUKHI_LETTER_DHA => Ok(Gurmukhi::GurmukhiLetterDha),
-            GURMUKHI_LETTER_NA => Ok(Gurmukhi::GurmukhiLetterNa),
-            GURMUKHI_LETTER_PA => Ok(Gurmukhi::GurmukhiLetterPa),
-            GURMUKHI_LETTER_PHA => Ok(Gurmukhi::GurmukhiLetterPha),
-            GURMUKHI_LETTER_BA => Ok(Gurmukhi::GurmukhiLetterBa),
-            GURMUKHI_LETTER_BHA => Ok(Gurmukhi::GurmukhiLetterBha),
-            GURMUKHI_LETTER_MA => Ok(Gurmukhi::GurmukhiLetterMa),
-            GURMUKHI_LETTER_YA => Ok(Gurmukhi::GurmukhiLetterYa),
-            GURMUKHI_LETTER_RA => Ok(Gurmukhi::GurmukhiLetterRa),
-            GURMUKHI_LETTER_LA => Ok(Gurmukhi::GurmukhiLetterLa),
-            GURMUKHI_LETTER_LLA => Ok(Gurmukhi::GurmukhiLetterLla),
-            GURMUKHI_LETTER_VA => Ok(Gurmukhi::GurmukhiLetterVa),
-            GURMUKHI_LETTER_SHA => Ok(Gurmukhi::GurmukhiLetterSha),
-            GURMUKHI_LETTER_SA => Ok(Gurmukhi::GurmukhiLetterSa),
-            GURMUKHI_LETTER_HA => Ok(Gurmukhi::GurmukhiLetterHa),
-            GURMUKHI_SIGN_NUKTA => Ok(Gurmukhi::GurmukhiSignNukta),
-            GURMUKHI_VOWEL_SIGN_AA => Ok(Gurmukhi::GurmukhiVowelSignAa),
-            GURMUKHI_VOWEL_SIGN_I => Ok(Gurmukhi::GurmukhiVowelSignI),
-            GURMUKHI_VOWEL_SIGN_II => Ok(Gurmukhi::GurmukhiVowelSignIi),
-            GURMUKHI_VOWEL_SIGN_U => Ok(Gurmukhi::GurmukhiVowelSignU),
-            GURMUKHI_VOWEL_SIGN_UU => Ok(Gurmukhi::GurmukhiVowelSignUu),
-            GURMUKHI_VOWEL_SIGN_EE => Ok(Gurmukhi::GurmukhiVowelSignEe),
-            GURMUKHI_VOWEL_SIGN_AI => Ok(Gurmukhi::GurmukhiVowelSignAi),
-            GURMUKHI_VOWEL_SIGN_OO => Ok(Gurmukhi::GurmukhiVowelSignOo),
-            GURMUKHI_VOWEL_SIGN_AU => Ok(Gurmukhi::GurmukhiVowelSignAu),
-            GURMUKHI_SIGN_VIRAMA => Ok(Gurmukhi::GurmukhiSignVirama),
-            GURMUKHI_SIGN_UDAAT => Ok(Gurmukhi::GurmukhiSignUdaat),
-            GURMUKHI_LETTER_KHHA => Ok(Gurmukhi::GurmukhiLetterKhha),
-            GURMUKHI_LETTER_GHHA => Ok(Gurmukhi::GurmukhiLetterGhha),
-            GURMUKHI_LETTER_ZA => Ok(Gurmukhi::GurmukhiLetterZa),
-            GURMUKHI_LETTER_RRA => Ok(Gurmukhi::GurmukhiLetterRra),
-            GURMUKHI_LETTER_FA => Ok(Gurmukhi::GurmukhiLetterFa),
-            GURMUKHI_DIGIT_ZERO => Ok(Gurmukhi::GurmukhiDigitZero),
-            GURMUKHI_DIGIT_ONE => Ok(Gurmukhi::GurmukhiDigitOne),
-            GURMUKHI_DIGIT_TWO => Ok(Gurmukhi::GurmukhiDigitTwo),
-            GURMUKHI_DIGIT_THREE => Ok(Gurmukhi::GurmukhiDigitThree),
-            GURMUKHI_DIGIT_FOUR => Ok(Gurmukhi::GurmukhiDigitFour),
-            GURMUKHI_DIGIT_FIVE => Ok(Gurmukhi::GurmukhiDigitFive),
-            GURMUKHI_DIGIT_SIX => Ok(Gurmukhi::GurmukhiDigitSix),
-            GURMUKHI_DIGIT_SEVEN => Ok(Gurmukhi::GurmukhiDigitSeven),
-            GURMUKHI_DIGIT_EIGHT => Ok(Gurmukhi::GurmukhiDigitEight),
-            GURMUKHI_DIGIT_NINE => Ok(Gurmukhi::GurmukhiDigitNine),
-            GURMUKHI_TIPPI => Ok(Gurmukhi::GurmukhiTippi),
-            GURMUKHI_ADDAK => Ok(Gurmukhi::GurmukhiAddak),
-            GURMUKHI_IRI => Ok(Gurmukhi::GurmukhiIri),
-            GURMUKHI_URA => Ok(Gurmukhi::GurmukhiUra),
-            GURMUKHI_EK_ONKAR => Ok(Gurmukhi::GurmukhiEkOnkar),
-            GURMUKHI_SIGN_YAKASH => Ok(Gurmukhi::GurmukhiSignYakash),
-            GURMUKHI_ABBREVIATION_SIGN => Ok(Gurmukhi::GurmukhiAbbreviationSign),
+            SIGN_ADAK_BINDI => Ok(Gurmukhi::SignAdakBindi),
+            SIGN_BINDI => Ok(Gurmukhi::SignBindi),
+            SIGN_VISARGA => Ok(Gurmukhi::SignVisarga),
+            LETTER_A => Ok(Gurmukhi::LetterA),
+            LETTER_AA => Ok(Gurmukhi::LetterAa),
+            LETTER_I => Ok(Gurmukhi::LetterI),
+            LETTER_II => Ok(Gurmukhi::LetterIi),
+            LETTER_U => Ok(Gurmukhi::LetterU),
+            LETTER_UU => Ok(Gurmukhi::LetterUu),
+            LETTER_EE => Ok(Gurmukhi::LetterEe),
+            LETTER_AI => Ok(Gurmukhi::LetterAi),
+            LETTER_OO => Ok(Gurmukhi::LetterOo),
+            LETTER_AU => Ok(Gurmukhi::LetterAu),
+            LETTER_KA => Ok(Gurmukhi::LetterKa),
+            LETTER_KHA => Ok(Gurmukhi::LetterKha),
+            LETTER_GA => Ok(Gurmukhi::LetterGa),
+            LETTER_GHA => Ok(Gurmukhi::LetterGha),
+            LETTER_NGA => Ok(Gurmukhi::LetterNga),
+            LETTER_CA => Ok(Gurmukhi::LetterCa),
+            LETTER_CHA => Ok(Gurmukhi::LetterCha),
+            LETTER_JA => Ok(Gurmukhi::LetterJa),
+            LETTER_JHA => Ok(Gurmukhi::LetterJha),
+            LETTER_NYA => Ok(Gurmukhi::LetterNya),
+            LETTER_TTA => Ok(Gurmukhi::LetterTta),
+            LETTER_TTHA => Ok(Gurmukhi::LetterTtha),
+            LETTER_DDA => Ok(Gurmukhi::LetterDda),
+            LETTER_DDHA => Ok(Gurmukhi::LetterDdha),
+            LETTER_NNA => Ok(Gurmukhi::LetterNna),
+            LETTER_TA => Ok(Gurmukhi::LetterTa),
+            LETTER_THA => Ok(Gurmukhi::LetterTha),
+            LETTER_DA => Ok(Gurmukhi::LetterDa),
+            LETTER_DHA => Ok(Gurmukhi::LetterDha),
+            LETTER_NA => Ok(Gurmukhi::LetterNa),
+            LETTER_PA => Ok(Gurmukhi::LetterPa),
+            LETTER_PHA => Ok(Gurmukhi::LetterPha),
+            LETTER_BA => Ok(Gurmukhi::LetterBa),
+            LETTER_BHA => Ok(Gurmukhi::LetterBha),
+            LETTER_MA => Ok(Gurmukhi::LetterMa),
+            LETTER_YA => Ok(Gurmukhi::LetterYa),
+            LETTER_RA => Ok(Gurmukhi::LetterRa),
+            LETTER_LA => Ok(Gurmukhi::LetterLa),
+            LETTER_LLA => Ok(Gurmukhi::LetterLla),
+            LETTER_VA => Ok(Gurmukhi::LetterVa),
+            LETTER_SHA => Ok(Gurmukhi::LetterSha),
+            LETTER_SA => Ok(Gurmukhi::LetterSa),
+            LETTER_HA => Ok(Gurmukhi::LetterHa),
+            SIGN_NUKTA => Ok(Gurmukhi::SignNukta),
+            VOWEL_SIGN_AA => Ok(Gurmukhi::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Gurmukhi::VowelSignI),
+            VOWEL_SIGN_II => Ok(Gurmukhi::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Gurmukhi::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Gurmukhi::VowelSignUu),
+            VOWEL_SIGN_EE => Ok(Gurmukhi::VowelSignEe),
+            VOWEL_SIGN_AI => Ok(Gurmukhi::VowelSignAi),
+            VOWEL_SIGN_OO => Ok(Gurmukhi::VowelSignOo),
+            VOWEL_SIGN_AU => Ok(Gurmukhi::VowelSignAu),
+            SIGN_VIRAMA => Ok(Gurmukhi::SignVirama),
+            SIGN_UDAAT => Ok(Gurmukhi::SignUdaat),
+            LETTER_KHHA => Ok(Gurmukhi::LetterKhha),
+            LETTER_GHHA => Ok(Gurmukhi::LetterGhha),
+            LETTER_ZA => Ok(Gurmukhi::LetterZa),
+            LETTER_RRA => Ok(Gurmukhi::LetterRra),
+            LETTER_FA => Ok(Gurmukhi::LetterFa),
+            DIGIT_ZERO => Ok(Gurmukhi::DigitZero),
+            DIGIT_ONE => Ok(Gurmukhi::DigitOne),
+            DIGIT_TWO => Ok(Gurmukhi::DigitTwo),
+            DIGIT_THREE => Ok(Gurmukhi::DigitThree),
+            DIGIT_FOUR => Ok(Gurmukhi::DigitFour),
+            DIGIT_FIVE => Ok(Gurmukhi::DigitFive),
+            DIGIT_SIX => Ok(Gurmukhi::DigitSix),
+            DIGIT_SEVEN => Ok(Gurmukhi::DigitSeven),
+            DIGIT_EIGHT => Ok(Gurmukhi::DigitEight),
+            DIGIT_NINE => Ok(Gurmukhi::DigitNine),
+            TIPPI => Ok(Gurmukhi::Tippi),
+            ADDAK => Ok(Gurmukhi::Addak),
+            IRI => Ok(Gurmukhi::Iri),
+            URA => Ok(Gurmukhi::Ura),
+            EK_ONKAR => Ok(Gurmukhi::EkOnkar),
+            SIGN_YAKASH => Ok(Gurmukhi::SignYakash),
+            ABBREVIATION_SIGN => Ok(Gurmukhi::AbbreviationSign),
             _ => Err(()),
         }
     }
@@ -550,94 +550,94 @@ impl Iterator for Gurmukhi {
 }
 
 impl Gurmukhi {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Gurmukhi::GurmukhiSignAdakBindi
+        Gurmukhi::SignAdakBindi
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Gurmukhi::GurmukhiSignAdakBindi => "gurmukhi sign adak bindi",
-            Gurmukhi::GurmukhiSignBindi => "gurmukhi sign bindi",
-            Gurmukhi::GurmukhiSignVisarga => "gurmukhi sign visarga",
-            Gurmukhi::GurmukhiLetterA => "gurmukhi letter a",
-            Gurmukhi::GurmukhiLetterAa => "gurmukhi letter aa",
-            Gurmukhi::GurmukhiLetterI => "gurmukhi letter i",
-            Gurmukhi::GurmukhiLetterIi => "gurmukhi letter ii",
-            Gurmukhi::GurmukhiLetterU => "gurmukhi letter u",
-            Gurmukhi::GurmukhiLetterUu => "gurmukhi letter uu",
-            Gurmukhi::GurmukhiLetterEe => "gurmukhi letter ee",
-            Gurmukhi::GurmukhiLetterAi => "gurmukhi letter ai",
-            Gurmukhi::GurmukhiLetterOo => "gurmukhi letter oo",
-            Gurmukhi::GurmukhiLetterAu => "gurmukhi letter au",
-            Gurmukhi::GurmukhiLetterKa => "gurmukhi letter ka",
-            Gurmukhi::GurmukhiLetterKha => "gurmukhi letter kha",
-            Gurmukhi::GurmukhiLetterGa => "gurmukhi letter ga",
-            Gurmukhi::GurmukhiLetterGha => "gurmukhi letter gha",
-            Gurmukhi::GurmukhiLetterNga => "gurmukhi letter nga",
-            Gurmukhi::GurmukhiLetterCa => "gurmukhi letter ca",
-            Gurmukhi::GurmukhiLetterCha => "gurmukhi letter cha",
-            Gurmukhi::GurmukhiLetterJa => "gurmukhi letter ja",
-            Gurmukhi::GurmukhiLetterJha => "gurmukhi letter jha",
-            Gurmukhi::GurmukhiLetterNya => "gurmukhi letter nya",
-            Gurmukhi::GurmukhiLetterTta => "gurmukhi letter tta",
-            Gurmukhi::GurmukhiLetterTtha => "gurmukhi letter ttha",
-            Gurmukhi::GurmukhiLetterDda => "gurmukhi letter dda",
-            Gurmukhi::GurmukhiLetterDdha => "gurmukhi letter ddha",
-            Gurmukhi::GurmukhiLetterNna => "gurmukhi letter nna",
-            Gurmukhi::GurmukhiLetterTa => "gurmukhi letter ta",
-            Gurmukhi::GurmukhiLetterTha => "gurmukhi letter tha",
-            Gurmukhi::GurmukhiLetterDa => "gurmukhi letter da",
-            Gurmukhi::GurmukhiLetterDha => "gurmukhi letter dha",
-            Gurmukhi::GurmukhiLetterNa => "gurmukhi letter na",
-            Gurmukhi::GurmukhiLetterPa => "gurmukhi letter pa",
-            Gurmukhi::GurmukhiLetterPha => "gurmukhi letter pha",
-            Gurmukhi::GurmukhiLetterBa => "gurmukhi letter ba",
-            Gurmukhi::GurmukhiLetterBha => "gurmukhi letter bha",
-            Gurmukhi::GurmukhiLetterMa => "gurmukhi letter ma",
-            Gurmukhi::GurmukhiLetterYa => "gurmukhi letter ya",
-            Gurmukhi::GurmukhiLetterRa => "gurmukhi letter ra",
-            Gurmukhi::GurmukhiLetterLa => "gurmukhi letter la",
-            Gurmukhi::GurmukhiLetterLla => "gurmukhi letter lla",
-            Gurmukhi::GurmukhiLetterVa => "gurmukhi letter va",
-            Gurmukhi::GurmukhiLetterSha => "gurmukhi letter sha",
-            Gurmukhi::GurmukhiLetterSa => "gurmukhi letter sa",
-            Gurmukhi::GurmukhiLetterHa => "gurmukhi letter ha",
-            Gurmukhi::GurmukhiSignNukta => "gurmukhi sign nukta",
-            Gurmukhi::GurmukhiVowelSignAa => "gurmukhi vowel sign aa",
-            Gurmukhi::GurmukhiVowelSignI => "gurmukhi vowel sign i",
-            Gurmukhi::GurmukhiVowelSignIi => "gurmukhi vowel sign ii",
-            Gurmukhi::GurmukhiVowelSignU => "gurmukhi vowel sign u",
-            Gurmukhi::GurmukhiVowelSignUu => "gurmukhi vowel sign uu",
-            Gurmukhi::GurmukhiVowelSignEe => "gurmukhi vowel sign ee",
-            Gurmukhi::GurmukhiVowelSignAi => "gurmukhi vowel sign ai",
-            Gurmukhi::GurmukhiVowelSignOo => "gurmukhi vowel sign oo",
-            Gurmukhi::GurmukhiVowelSignAu => "gurmukhi vowel sign au",
-            Gurmukhi::GurmukhiSignVirama => "gurmukhi sign virama",
-            Gurmukhi::GurmukhiSignUdaat => "gurmukhi sign udaat",
-            Gurmukhi::GurmukhiLetterKhha => "gurmukhi letter khha",
-            Gurmukhi::GurmukhiLetterGhha => "gurmukhi letter ghha",
-            Gurmukhi::GurmukhiLetterZa => "gurmukhi letter za",
-            Gurmukhi::GurmukhiLetterRra => "gurmukhi letter rra",
-            Gurmukhi::GurmukhiLetterFa => "gurmukhi letter fa",
-            Gurmukhi::GurmukhiDigitZero => "gurmukhi digit zero",
-            Gurmukhi::GurmukhiDigitOne => "gurmukhi digit one",
-            Gurmukhi::GurmukhiDigitTwo => "gurmukhi digit two",
-            Gurmukhi::GurmukhiDigitThree => "gurmukhi digit three",
-            Gurmukhi::GurmukhiDigitFour => "gurmukhi digit four",
-            Gurmukhi::GurmukhiDigitFive => "gurmukhi digit five",
-            Gurmukhi::GurmukhiDigitSix => "gurmukhi digit six",
-            Gurmukhi::GurmukhiDigitSeven => "gurmukhi digit seven",
-            Gurmukhi::GurmukhiDigitEight => "gurmukhi digit eight",
-            Gurmukhi::GurmukhiDigitNine => "gurmukhi digit nine",
-            Gurmukhi::GurmukhiTippi => "gurmukhi tippi",
-            Gurmukhi::GurmukhiAddak => "gurmukhi addak",
-            Gurmukhi::GurmukhiIri => "gurmukhi iri",
-            Gurmukhi::GurmukhiUra => "gurmukhi ura",
-            Gurmukhi::GurmukhiEkOnkar => "gurmukhi ek onkar",
-            Gurmukhi::GurmukhiSignYakash => "gurmukhi sign yakash",
-            Gurmukhi::GurmukhiAbbreviationSign => "gurmukhi abbreviation sign",
+            Gurmukhi::SignAdakBindi => "gurmukhi sign adak bindi",
+            Gurmukhi::SignBindi => "gurmukhi sign bindi",
+            Gurmukhi::SignVisarga => "gurmukhi sign visarga",
+            Gurmukhi::LetterA => "gurmukhi letter a",
+            Gurmukhi::LetterAa => "gurmukhi letter aa",
+            Gurmukhi::LetterI => "gurmukhi letter i",
+            Gurmukhi::LetterIi => "gurmukhi letter ii",
+            Gurmukhi::LetterU => "gurmukhi letter u",
+            Gurmukhi::LetterUu => "gurmukhi letter uu",
+            Gurmukhi::LetterEe => "gurmukhi letter ee",
+            Gurmukhi::LetterAi => "gurmukhi letter ai",
+            Gurmukhi::LetterOo => "gurmukhi letter oo",
+            Gurmukhi::LetterAu => "gurmukhi letter au",
+            Gurmukhi::LetterKa => "gurmukhi letter ka",
+            Gurmukhi::LetterKha => "gurmukhi letter kha",
+            Gurmukhi::LetterGa => "gurmukhi letter ga",
+            Gurmukhi::LetterGha => "gurmukhi letter gha",
+            Gurmukhi::LetterNga => "gurmukhi letter nga",
+            Gurmukhi::LetterCa => "gurmukhi letter ca",
+            Gurmukhi::LetterCha => "gurmukhi letter cha",
+            Gurmukhi::LetterJa => "gurmukhi letter ja",
+            Gurmukhi::LetterJha => "gurmukhi letter jha",
+            Gurmukhi::LetterNya => "gurmukhi letter nya",
+            Gurmukhi::LetterTta => "gurmukhi letter tta",
+            Gurmukhi::LetterTtha => "gurmukhi letter ttha",
+            Gurmukhi::LetterDda => "gurmukhi letter dda",
+            Gurmukhi::LetterDdha => "gurmukhi letter ddha",
+            Gurmukhi::LetterNna => "gurmukhi letter nna",
+            Gurmukhi::LetterTa => "gurmukhi letter ta",
+            Gurmukhi::LetterTha => "gurmukhi letter tha",
+            Gurmukhi::LetterDa => "gurmukhi letter da",
+            Gurmukhi::LetterDha => "gurmukhi letter dha",
+            Gurmukhi::LetterNa => "gurmukhi letter na",
+            Gurmukhi::LetterPa => "gurmukhi letter pa",
+            Gurmukhi::LetterPha => "gurmukhi letter pha",
+            Gurmukhi::LetterBa => "gurmukhi letter ba",
+            Gurmukhi::LetterBha => "gurmukhi letter bha",
+            Gurmukhi::LetterMa => "gurmukhi letter ma",
+            Gurmukhi::LetterYa => "gurmukhi letter ya",
+            Gurmukhi::LetterRa => "gurmukhi letter ra",
+            Gurmukhi::LetterLa => "gurmukhi letter la",
+            Gurmukhi::LetterLla => "gurmukhi letter lla",
+            Gurmukhi::LetterVa => "gurmukhi letter va",
+            Gurmukhi::LetterSha => "gurmukhi letter sha",
+            Gurmukhi::LetterSa => "gurmukhi letter sa",
+            Gurmukhi::LetterHa => "gurmukhi letter ha",
+            Gurmukhi::SignNukta => "gurmukhi sign nukta",
+            Gurmukhi::VowelSignAa => "gurmukhi vowel sign aa",
+            Gurmukhi::VowelSignI => "gurmukhi vowel sign i",
+            Gurmukhi::VowelSignIi => "gurmukhi vowel sign ii",
+            Gurmukhi::VowelSignU => "gurmukhi vowel sign u",
+            Gurmukhi::VowelSignUu => "gurmukhi vowel sign uu",
+            Gurmukhi::VowelSignEe => "gurmukhi vowel sign ee",
+            Gurmukhi::VowelSignAi => "gurmukhi vowel sign ai",
+            Gurmukhi::VowelSignOo => "gurmukhi vowel sign oo",
+            Gurmukhi::VowelSignAu => "gurmukhi vowel sign au",
+            Gurmukhi::SignVirama => "gurmukhi sign virama",
+            Gurmukhi::SignUdaat => "gurmukhi sign udaat",
+            Gurmukhi::LetterKhha => "gurmukhi letter khha",
+            Gurmukhi::LetterGhha => "gurmukhi letter ghha",
+            Gurmukhi::LetterZa => "gurmukhi letter za",
+            Gurmukhi::LetterRra => "gurmukhi letter rra",
+            Gurmukhi::LetterFa => "gurmukhi letter fa",
+            Gurmukhi::DigitZero => "gurmukhi digit zero",
+            Gurmukhi::DigitOne => "gurmukhi digit one",
+            Gurmukhi::DigitTwo => "gurmukhi digit two",
+            Gurmukhi::DigitThree => "gurmukhi digit three",
+            Gurmukhi::DigitFour => "gurmukhi digit four",
+            Gurmukhi::DigitFive => "gurmukhi digit five",
+            Gurmukhi::DigitSix => "gurmukhi digit six",
+            Gurmukhi::DigitSeven => "gurmukhi digit seven",
+            Gurmukhi::DigitEight => "gurmukhi digit eight",
+            Gurmukhi::DigitNine => "gurmukhi digit nine",
+            Gurmukhi::Tippi => "gurmukhi tippi",
+            Gurmukhi::Addak => "gurmukhi addak",
+            Gurmukhi::Iri => "gurmukhi iri",
+            Gurmukhi::Ura => "gurmukhi ura",
+            Gurmukhi::EkOnkar => "gurmukhi ek onkar",
+            Gurmukhi::SignYakash => "gurmukhi sign yakash",
+            Gurmukhi::AbbreviationSign => "gurmukhi abbreviation sign",
         }
     }
 }

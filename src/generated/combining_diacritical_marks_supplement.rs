@@ -440,7 +440,7 @@ impl Iterator for CombiningDiacriticalMarksSupplement {
 }
 
 impl CombiningDiacriticalMarksSupplement {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         CombiningDiacriticalMarksSupplement::CombiningDottedGraveAccent
     }

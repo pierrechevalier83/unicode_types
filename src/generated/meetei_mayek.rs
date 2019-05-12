@@ -6,117 +6,117 @@
 /// ꯲ ꯳ ꯴ ꯵ ꯶ ꯷ ꯸ ꯹
 pub mod constants {
     /// \u{abc0}: 'ꯀ'
-    pub const MEETEI_MAYEK_LETTER_KOK: char = 'ꯀ';
+    pub const LETTER_KOK: char = 'ꯀ';
     /// \u{abc1}: 'ꯁ'
-    pub const MEETEI_MAYEK_LETTER_SAM: char = 'ꯁ';
+    pub const LETTER_SAM: char = 'ꯁ';
     /// \u{abc2}: 'ꯂ'
-    pub const MEETEI_MAYEK_LETTER_LAI: char = 'ꯂ';
+    pub const LETTER_LAI: char = 'ꯂ';
     /// \u{abc3}: 'ꯃ'
-    pub const MEETEI_MAYEK_LETTER_MIT: char = 'ꯃ';
+    pub const LETTER_MIT: char = 'ꯃ';
     /// \u{abc4}: 'ꯄ'
-    pub const MEETEI_MAYEK_LETTER_PA: char = 'ꯄ';
+    pub const LETTER_PA: char = 'ꯄ';
     /// \u{abc5}: 'ꯅ'
-    pub const MEETEI_MAYEK_LETTER_NA: char = 'ꯅ';
+    pub const LETTER_NA: char = 'ꯅ';
     /// \u{abc6}: 'ꯆ'
-    pub const MEETEI_MAYEK_LETTER_CHIL: char = 'ꯆ';
+    pub const LETTER_CHIL: char = 'ꯆ';
     /// \u{abc7}: 'ꯇ'
-    pub const MEETEI_MAYEK_LETTER_TIL: char = 'ꯇ';
+    pub const LETTER_TIL: char = 'ꯇ';
     /// \u{abc8}: 'ꯈ'
-    pub const MEETEI_MAYEK_LETTER_KHOU: char = 'ꯈ';
+    pub const LETTER_KHOU: char = 'ꯈ';
     /// \u{abc9}: 'ꯉ'
-    pub const MEETEI_MAYEK_LETTER_NGOU: char = 'ꯉ';
+    pub const LETTER_NGOU: char = 'ꯉ';
     /// \u{abca}: 'ꯊ'
-    pub const MEETEI_MAYEK_LETTER_THOU: char = 'ꯊ';
+    pub const LETTER_THOU: char = 'ꯊ';
     /// \u{abcb}: 'ꯋ'
-    pub const MEETEI_MAYEK_LETTER_WAI: char = 'ꯋ';
+    pub const LETTER_WAI: char = 'ꯋ';
     /// \u{abcc}: 'ꯌ'
-    pub const MEETEI_MAYEK_LETTER_YANG: char = 'ꯌ';
+    pub const LETTER_YANG: char = 'ꯌ';
     /// \u{abcd}: 'ꯍ'
-    pub const MEETEI_MAYEK_LETTER_HUK: char = 'ꯍ';
+    pub const LETTER_HUK: char = 'ꯍ';
     /// \u{abce}: 'ꯎ'
-    pub const MEETEI_MAYEK_LETTER_UN: char = 'ꯎ';
+    pub const LETTER_UN: char = 'ꯎ';
     /// \u{abcf}: 'ꯏ'
-    pub const MEETEI_MAYEK_LETTER_I: char = 'ꯏ';
+    pub const LETTER_I: char = 'ꯏ';
     /// \u{abd0}: 'ꯐ'
-    pub const MEETEI_MAYEK_LETTER_PHAM: char = 'ꯐ';
+    pub const LETTER_PHAM: char = 'ꯐ';
     /// \u{abd1}: 'ꯑ'
-    pub const MEETEI_MAYEK_LETTER_ATIYA: char = 'ꯑ';
+    pub const LETTER_ATIYA: char = 'ꯑ';
     /// \u{abd2}: 'ꯒ'
-    pub const MEETEI_MAYEK_LETTER_GOK: char = 'ꯒ';
+    pub const LETTER_GOK: char = 'ꯒ';
     /// \u{abd3}: 'ꯓ'
-    pub const MEETEI_MAYEK_LETTER_JHAM: char = 'ꯓ';
+    pub const LETTER_JHAM: char = 'ꯓ';
     /// \u{abd4}: 'ꯔ'
-    pub const MEETEI_MAYEK_LETTER_RAI: char = 'ꯔ';
+    pub const LETTER_RAI: char = 'ꯔ';
     /// \u{abd5}: 'ꯕ'
-    pub const MEETEI_MAYEK_LETTER_BA: char = 'ꯕ';
+    pub const LETTER_BA: char = 'ꯕ';
     /// \u{abd6}: 'ꯖ'
-    pub const MEETEI_MAYEK_LETTER_JIL: char = 'ꯖ';
+    pub const LETTER_JIL: char = 'ꯖ';
     /// \u{abd7}: 'ꯗ'
-    pub const MEETEI_MAYEK_LETTER_DIL: char = 'ꯗ';
+    pub const LETTER_DIL: char = 'ꯗ';
     /// \u{abd8}: 'ꯘ'
-    pub const MEETEI_MAYEK_LETTER_GHOU: char = 'ꯘ';
+    pub const LETTER_GHOU: char = 'ꯘ';
     /// \u{abd9}: 'ꯙ'
-    pub const MEETEI_MAYEK_LETTER_DHOU: char = 'ꯙ';
+    pub const LETTER_DHOU: char = 'ꯙ';
     /// \u{abda}: 'ꯚ'
-    pub const MEETEI_MAYEK_LETTER_BHAM: char = 'ꯚ';
+    pub const LETTER_BHAM: char = 'ꯚ';
     /// \u{abdb}: 'ꯛ'
-    pub const MEETEI_MAYEK_LETTER_KOK_LONSUM: char = 'ꯛ';
+    pub const LETTER_KOK_LONSUM: char = 'ꯛ';
     /// \u{abdc}: 'ꯜ'
-    pub const MEETEI_MAYEK_LETTER_LAI_LONSUM: char = 'ꯜ';
+    pub const LETTER_LAI_LONSUM: char = 'ꯜ';
     /// \u{abdd}: 'ꯝ'
-    pub const MEETEI_MAYEK_LETTER_MIT_LONSUM: char = 'ꯝ';
+    pub const LETTER_MIT_LONSUM: char = 'ꯝ';
     /// \u{abde}: 'ꯞ'
-    pub const MEETEI_MAYEK_LETTER_PA_LONSUM: char = 'ꯞ';
+    pub const LETTER_PA_LONSUM: char = 'ꯞ';
     /// \u{abdf}: 'ꯟ'
-    pub const MEETEI_MAYEK_LETTER_NA_LONSUM: char = 'ꯟ';
+    pub const LETTER_NA_LONSUM: char = 'ꯟ';
     /// \u{abe0}: 'ꯠ'
-    pub const MEETEI_MAYEK_LETTER_TIL_LONSUM: char = 'ꯠ';
+    pub const LETTER_TIL_LONSUM: char = 'ꯠ';
     /// \u{abe1}: 'ꯡ'
-    pub const MEETEI_MAYEK_LETTER_NGOU_LONSUM: char = 'ꯡ';
+    pub const LETTER_NGOU_LONSUM: char = 'ꯡ';
     /// \u{abe2}: 'ꯢ'
-    pub const MEETEI_MAYEK_LETTER_I_LONSUM: char = 'ꯢ';
+    pub const LETTER_I_LONSUM: char = 'ꯢ';
     /// \u{abe3}: 'ꯣ'
-    pub const MEETEI_MAYEK_VOWEL_SIGN_ONAP: char = 'ꯣ';
+    pub const VOWEL_SIGN_ONAP: char = 'ꯣ';
     /// \u{abe4}: 'ꯤ'
-    pub const MEETEI_MAYEK_VOWEL_SIGN_INAP: char = 'ꯤ';
+    pub const VOWEL_SIGN_INAP: char = 'ꯤ';
     /// \u{abe5}: 'ꯥ'
-    pub const MEETEI_MAYEK_VOWEL_SIGN_ANAP: char = 'ꯥ';
+    pub const VOWEL_SIGN_ANAP: char = 'ꯥ';
     /// \u{abe6}: 'ꯦ'
-    pub const MEETEI_MAYEK_VOWEL_SIGN_YENAP: char = 'ꯦ';
+    pub const VOWEL_SIGN_YENAP: char = 'ꯦ';
     /// \u{abe7}: 'ꯧ'
-    pub const MEETEI_MAYEK_VOWEL_SIGN_SOUNAP: char = 'ꯧ';
+    pub const VOWEL_SIGN_SOUNAP: char = 'ꯧ';
     /// \u{abe8}: 'ꯨ'
-    pub const MEETEI_MAYEK_VOWEL_SIGN_UNAP: char = 'ꯨ';
+    pub const VOWEL_SIGN_UNAP: char = 'ꯨ';
     /// \u{abe9}: 'ꯩ'
-    pub const MEETEI_MAYEK_VOWEL_SIGN_CHEINAP: char = 'ꯩ';
+    pub const VOWEL_SIGN_CHEINAP: char = 'ꯩ';
     /// \u{abea}: 'ꯪ'
-    pub const MEETEI_MAYEK_VOWEL_SIGN_NUNG: char = 'ꯪ';
+    pub const VOWEL_SIGN_NUNG: char = 'ꯪ';
     /// \u{abeb}: '꯫'
-    pub const MEETEI_MAYEK_CHEIKHEI: char = '꯫';
+    pub const CHEIKHEI: char = '꯫';
     /// \u{abec}: '꯬'
-    pub const MEETEI_MAYEK_LUM_IYEK: char = '꯬';
+    pub const LUM_IYEK: char = '꯬';
     /// \u{abed}: '꯭'
-    pub const MEETEI_MAYEK_APUN_IYEK: char = '꯭';
+    pub const APUN_IYEK: char = '꯭';
     /// \u{abf0}: '꯰'
-    pub const MEETEI_MAYEK_DIGIT_ZERO: char = '꯰';
+    pub const DIGIT_ZERO: char = '꯰';
     /// \u{abf1}: '꯱'
-    pub const MEETEI_MAYEK_DIGIT_ONE: char = '꯱';
+    pub const DIGIT_ONE: char = '꯱';
     /// \u{abf2}: '꯲'
-    pub const MEETEI_MAYEK_DIGIT_TWO: char = '꯲';
+    pub const DIGIT_TWO: char = '꯲';
     /// \u{abf3}: '꯳'
-    pub const MEETEI_MAYEK_DIGIT_THREE: char = '꯳';
+    pub const DIGIT_THREE: char = '꯳';
     /// \u{abf4}: '꯴'
-    pub const MEETEI_MAYEK_DIGIT_FOUR: char = '꯴';
+    pub const DIGIT_FOUR: char = '꯴';
     /// \u{abf5}: '꯵'
-    pub const MEETEI_MAYEK_DIGIT_FIVE: char = '꯵';
+    pub const DIGIT_FIVE: char = '꯵';
     /// \u{abf6}: '꯶'
-    pub const MEETEI_MAYEK_DIGIT_SIX: char = '꯶';
+    pub const DIGIT_SIX: char = '꯶';
     /// \u{abf7}: '꯷'
-    pub const MEETEI_MAYEK_DIGIT_SEVEN: char = '꯷';
+    pub const DIGIT_SEVEN: char = '꯷';
     /// \u{abf8}: '꯸'
-    pub const MEETEI_MAYEK_DIGIT_EIGHT: char = '꯸';
+    pub const DIGIT_EIGHT: char = '꯸';
     /// \u{abf9}: '꯹'
-    pub const MEETEI_MAYEK_DIGIT_NINE: char = '꯹';
+    pub const DIGIT_NINE: char = '꯹';
 }
 
 /// \u{abc0} → \u{abff}\
@@ -128,179 +128,179 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum MeeteiMayek {
     /// \u{abc0}: 'ꯀ'
-    MeeteiMayekLetterKok,
+    LetterKok,
     /// \u{abc1}: 'ꯁ'
-    MeeteiMayekLetterSam,
+    LetterSam,
     /// \u{abc2}: 'ꯂ'
-    MeeteiMayekLetterLai,
+    LetterLai,
     /// \u{abc3}: 'ꯃ'
-    MeeteiMayekLetterMit,
+    LetterMit,
     /// \u{abc4}: 'ꯄ'
-    MeeteiMayekLetterPa,
+    LetterPa,
     /// \u{abc5}: 'ꯅ'
-    MeeteiMayekLetterNa,
+    LetterNa,
     /// \u{abc6}: 'ꯆ'
-    MeeteiMayekLetterChil,
+    LetterChil,
     /// \u{abc7}: 'ꯇ'
-    MeeteiMayekLetterTil,
+    LetterTil,
     /// \u{abc8}: 'ꯈ'
-    MeeteiMayekLetterKhou,
+    LetterKhou,
     /// \u{abc9}: 'ꯉ'
-    MeeteiMayekLetterNgou,
+    LetterNgou,
     /// \u{abca}: 'ꯊ'
-    MeeteiMayekLetterThou,
+    LetterThou,
     /// \u{abcb}: 'ꯋ'
-    MeeteiMayekLetterWai,
+    LetterWai,
     /// \u{abcc}: 'ꯌ'
-    MeeteiMayekLetterYang,
+    LetterYang,
     /// \u{abcd}: 'ꯍ'
-    MeeteiMayekLetterHuk,
+    LetterHuk,
     /// \u{abce}: 'ꯎ'
-    MeeteiMayekLetterUn,
+    LetterUn,
     /// \u{abcf}: 'ꯏ'
-    MeeteiMayekLetterI,
+    LetterI,
     /// \u{abd0}: 'ꯐ'
-    MeeteiMayekLetterPham,
+    LetterPham,
     /// \u{abd1}: 'ꯑ'
-    MeeteiMayekLetterAtiya,
+    LetterAtiya,
     /// \u{abd2}: 'ꯒ'
-    MeeteiMayekLetterGok,
+    LetterGok,
     /// \u{abd3}: 'ꯓ'
-    MeeteiMayekLetterJham,
+    LetterJham,
     /// \u{abd4}: 'ꯔ'
-    MeeteiMayekLetterRai,
+    LetterRai,
     /// \u{abd5}: 'ꯕ'
-    MeeteiMayekLetterBa,
+    LetterBa,
     /// \u{abd6}: 'ꯖ'
-    MeeteiMayekLetterJil,
+    LetterJil,
     /// \u{abd7}: 'ꯗ'
-    MeeteiMayekLetterDil,
+    LetterDil,
     /// \u{abd8}: 'ꯘ'
-    MeeteiMayekLetterGhou,
+    LetterGhou,
     /// \u{abd9}: 'ꯙ'
-    MeeteiMayekLetterDhou,
+    LetterDhou,
     /// \u{abda}: 'ꯚ'
-    MeeteiMayekLetterBham,
+    LetterBham,
     /// \u{abdb}: 'ꯛ'
-    MeeteiMayekLetterKokLonsum,
+    LetterKokLonsum,
     /// \u{abdc}: 'ꯜ'
-    MeeteiMayekLetterLaiLonsum,
+    LetterLaiLonsum,
     /// \u{abdd}: 'ꯝ'
-    MeeteiMayekLetterMitLonsum,
+    LetterMitLonsum,
     /// \u{abde}: 'ꯞ'
-    MeeteiMayekLetterPaLonsum,
+    LetterPaLonsum,
     /// \u{abdf}: 'ꯟ'
-    MeeteiMayekLetterNaLonsum,
+    LetterNaLonsum,
     /// \u{abe0}: 'ꯠ'
-    MeeteiMayekLetterTilLonsum,
+    LetterTilLonsum,
     /// \u{abe1}: 'ꯡ'
-    MeeteiMayekLetterNgouLonsum,
+    LetterNgouLonsum,
     /// \u{abe2}: 'ꯢ'
-    MeeteiMayekLetterILonsum,
+    LetterILonsum,
     /// \u{abe3}: 'ꯣ'
-    MeeteiMayekVowelSignOnap,
+    VowelSignOnap,
     /// \u{abe4}: 'ꯤ'
-    MeeteiMayekVowelSignInap,
+    VowelSignInap,
     /// \u{abe5}: 'ꯥ'
-    MeeteiMayekVowelSignAnap,
+    VowelSignAnap,
     /// \u{abe6}: 'ꯦ'
-    MeeteiMayekVowelSignYenap,
+    VowelSignYenap,
     /// \u{abe7}: 'ꯧ'
-    MeeteiMayekVowelSignSounap,
+    VowelSignSounap,
     /// \u{abe8}: 'ꯨ'
-    MeeteiMayekVowelSignUnap,
+    VowelSignUnap,
     /// \u{abe9}: 'ꯩ'
-    MeeteiMayekVowelSignCheinap,
+    VowelSignCheinap,
     /// \u{abea}: 'ꯪ'
-    MeeteiMayekVowelSignNung,
+    VowelSignNung,
     /// \u{abeb}: '꯫'
-    MeeteiMayekCheikhei,
+    Cheikhei,
     /// \u{abec}: '꯬'
-    MeeteiMayekLumIyek,
+    LumIyek,
     /// \u{abed}: '꯭'
-    MeeteiMayekApunIyek,
+    ApunIyek,
     /// \u{abf0}: '꯰'
-    MeeteiMayekDigitZero,
+    DigitZero,
     /// \u{abf1}: '꯱'
-    MeeteiMayekDigitOne,
+    DigitOne,
     /// \u{abf2}: '꯲'
-    MeeteiMayekDigitTwo,
+    DigitTwo,
     /// \u{abf3}: '꯳'
-    MeeteiMayekDigitThree,
+    DigitThree,
     /// \u{abf4}: '꯴'
-    MeeteiMayekDigitFour,
+    DigitFour,
     /// \u{abf5}: '꯵'
-    MeeteiMayekDigitFive,
+    DigitFive,
     /// \u{abf6}: '꯶'
-    MeeteiMayekDigitSix,
+    DigitSix,
     /// \u{abf7}: '꯷'
-    MeeteiMayekDigitSeven,
+    DigitSeven,
     /// \u{abf8}: '꯸'
-    MeeteiMayekDigitEight,
+    DigitEight,
     /// \u{abf9}: '꯹'
-    MeeteiMayekDigitNine,
+    DigitNine,
 }
 
 impl Into<char> for MeeteiMayek {
     fn into(self) -> char {
         use constants::*;
         match self {
-            MeeteiMayek::MeeteiMayekLetterKok => MEETEI_MAYEK_LETTER_KOK,
-            MeeteiMayek::MeeteiMayekLetterSam => MEETEI_MAYEK_LETTER_SAM,
-            MeeteiMayek::MeeteiMayekLetterLai => MEETEI_MAYEK_LETTER_LAI,
-            MeeteiMayek::MeeteiMayekLetterMit => MEETEI_MAYEK_LETTER_MIT,
-            MeeteiMayek::MeeteiMayekLetterPa => MEETEI_MAYEK_LETTER_PA,
-            MeeteiMayek::MeeteiMayekLetterNa => MEETEI_MAYEK_LETTER_NA,
-            MeeteiMayek::MeeteiMayekLetterChil => MEETEI_MAYEK_LETTER_CHIL,
-            MeeteiMayek::MeeteiMayekLetterTil => MEETEI_MAYEK_LETTER_TIL,
-            MeeteiMayek::MeeteiMayekLetterKhou => MEETEI_MAYEK_LETTER_KHOU,
-            MeeteiMayek::MeeteiMayekLetterNgou => MEETEI_MAYEK_LETTER_NGOU,
-            MeeteiMayek::MeeteiMayekLetterThou => MEETEI_MAYEK_LETTER_THOU,
-            MeeteiMayek::MeeteiMayekLetterWai => MEETEI_MAYEK_LETTER_WAI,
-            MeeteiMayek::MeeteiMayekLetterYang => MEETEI_MAYEK_LETTER_YANG,
-            MeeteiMayek::MeeteiMayekLetterHuk => MEETEI_MAYEK_LETTER_HUK,
-            MeeteiMayek::MeeteiMayekLetterUn => MEETEI_MAYEK_LETTER_UN,
-            MeeteiMayek::MeeteiMayekLetterI => MEETEI_MAYEK_LETTER_I,
-            MeeteiMayek::MeeteiMayekLetterPham => MEETEI_MAYEK_LETTER_PHAM,
-            MeeteiMayek::MeeteiMayekLetterAtiya => MEETEI_MAYEK_LETTER_ATIYA,
-            MeeteiMayek::MeeteiMayekLetterGok => MEETEI_MAYEK_LETTER_GOK,
-            MeeteiMayek::MeeteiMayekLetterJham => MEETEI_MAYEK_LETTER_JHAM,
-            MeeteiMayek::MeeteiMayekLetterRai => MEETEI_MAYEK_LETTER_RAI,
-            MeeteiMayek::MeeteiMayekLetterBa => MEETEI_MAYEK_LETTER_BA,
-            MeeteiMayek::MeeteiMayekLetterJil => MEETEI_MAYEK_LETTER_JIL,
-            MeeteiMayek::MeeteiMayekLetterDil => MEETEI_MAYEK_LETTER_DIL,
-            MeeteiMayek::MeeteiMayekLetterGhou => MEETEI_MAYEK_LETTER_GHOU,
-            MeeteiMayek::MeeteiMayekLetterDhou => MEETEI_MAYEK_LETTER_DHOU,
-            MeeteiMayek::MeeteiMayekLetterBham => MEETEI_MAYEK_LETTER_BHAM,
-            MeeteiMayek::MeeteiMayekLetterKokLonsum => MEETEI_MAYEK_LETTER_KOK_LONSUM,
-            MeeteiMayek::MeeteiMayekLetterLaiLonsum => MEETEI_MAYEK_LETTER_LAI_LONSUM,
-            MeeteiMayek::MeeteiMayekLetterMitLonsum => MEETEI_MAYEK_LETTER_MIT_LONSUM,
-            MeeteiMayek::MeeteiMayekLetterPaLonsum => MEETEI_MAYEK_LETTER_PA_LONSUM,
-            MeeteiMayek::MeeteiMayekLetterNaLonsum => MEETEI_MAYEK_LETTER_NA_LONSUM,
-            MeeteiMayek::MeeteiMayekLetterTilLonsum => MEETEI_MAYEK_LETTER_TIL_LONSUM,
-            MeeteiMayek::MeeteiMayekLetterNgouLonsum => MEETEI_MAYEK_LETTER_NGOU_LONSUM,
-            MeeteiMayek::MeeteiMayekLetterILonsum => MEETEI_MAYEK_LETTER_I_LONSUM,
-            MeeteiMayek::MeeteiMayekVowelSignOnap => MEETEI_MAYEK_VOWEL_SIGN_ONAP,
-            MeeteiMayek::MeeteiMayekVowelSignInap => MEETEI_MAYEK_VOWEL_SIGN_INAP,
-            MeeteiMayek::MeeteiMayekVowelSignAnap => MEETEI_MAYEK_VOWEL_SIGN_ANAP,
-            MeeteiMayek::MeeteiMayekVowelSignYenap => MEETEI_MAYEK_VOWEL_SIGN_YENAP,
-            MeeteiMayek::MeeteiMayekVowelSignSounap => MEETEI_MAYEK_VOWEL_SIGN_SOUNAP,
-            MeeteiMayek::MeeteiMayekVowelSignUnap => MEETEI_MAYEK_VOWEL_SIGN_UNAP,
-            MeeteiMayek::MeeteiMayekVowelSignCheinap => MEETEI_MAYEK_VOWEL_SIGN_CHEINAP,
-            MeeteiMayek::MeeteiMayekVowelSignNung => MEETEI_MAYEK_VOWEL_SIGN_NUNG,
-            MeeteiMayek::MeeteiMayekCheikhei => MEETEI_MAYEK_CHEIKHEI,
-            MeeteiMayek::MeeteiMayekLumIyek => MEETEI_MAYEK_LUM_IYEK,
-            MeeteiMayek::MeeteiMayekApunIyek => MEETEI_MAYEK_APUN_IYEK,
-            MeeteiMayek::MeeteiMayekDigitZero => MEETEI_MAYEK_DIGIT_ZERO,
-            MeeteiMayek::MeeteiMayekDigitOne => MEETEI_MAYEK_DIGIT_ONE,
-            MeeteiMayek::MeeteiMayekDigitTwo => MEETEI_MAYEK_DIGIT_TWO,
-            MeeteiMayek::MeeteiMayekDigitThree => MEETEI_MAYEK_DIGIT_THREE,
-            MeeteiMayek::MeeteiMayekDigitFour => MEETEI_MAYEK_DIGIT_FOUR,
-            MeeteiMayek::MeeteiMayekDigitFive => MEETEI_MAYEK_DIGIT_FIVE,
-            MeeteiMayek::MeeteiMayekDigitSix => MEETEI_MAYEK_DIGIT_SIX,
-            MeeteiMayek::MeeteiMayekDigitSeven => MEETEI_MAYEK_DIGIT_SEVEN,
-            MeeteiMayek::MeeteiMayekDigitEight => MEETEI_MAYEK_DIGIT_EIGHT,
-            MeeteiMayek::MeeteiMayekDigitNine => MEETEI_MAYEK_DIGIT_NINE,
+            MeeteiMayek::LetterKok => LETTER_KOK,
+            MeeteiMayek::LetterSam => LETTER_SAM,
+            MeeteiMayek::LetterLai => LETTER_LAI,
+            MeeteiMayek::LetterMit => LETTER_MIT,
+            MeeteiMayek::LetterPa => LETTER_PA,
+            MeeteiMayek::LetterNa => LETTER_NA,
+            MeeteiMayek::LetterChil => LETTER_CHIL,
+            MeeteiMayek::LetterTil => LETTER_TIL,
+            MeeteiMayek::LetterKhou => LETTER_KHOU,
+            MeeteiMayek::LetterNgou => LETTER_NGOU,
+            MeeteiMayek::LetterThou => LETTER_THOU,
+            MeeteiMayek::LetterWai => LETTER_WAI,
+            MeeteiMayek::LetterYang => LETTER_YANG,
+            MeeteiMayek::LetterHuk => LETTER_HUK,
+            MeeteiMayek::LetterUn => LETTER_UN,
+            MeeteiMayek::LetterI => LETTER_I,
+            MeeteiMayek::LetterPham => LETTER_PHAM,
+            MeeteiMayek::LetterAtiya => LETTER_ATIYA,
+            MeeteiMayek::LetterGok => LETTER_GOK,
+            MeeteiMayek::LetterJham => LETTER_JHAM,
+            MeeteiMayek::LetterRai => LETTER_RAI,
+            MeeteiMayek::LetterBa => LETTER_BA,
+            MeeteiMayek::LetterJil => LETTER_JIL,
+            MeeteiMayek::LetterDil => LETTER_DIL,
+            MeeteiMayek::LetterGhou => LETTER_GHOU,
+            MeeteiMayek::LetterDhou => LETTER_DHOU,
+            MeeteiMayek::LetterBham => LETTER_BHAM,
+            MeeteiMayek::LetterKokLonsum => LETTER_KOK_LONSUM,
+            MeeteiMayek::LetterLaiLonsum => LETTER_LAI_LONSUM,
+            MeeteiMayek::LetterMitLonsum => LETTER_MIT_LONSUM,
+            MeeteiMayek::LetterPaLonsum => LETTER_PA_LONSUM,
+            MeeteiMayek::LetterNaLonsum => LETTER_NA_LONSUM,
+            MeeteiMayek::LetterTilLonsum => LETTER_TIL_LONSUM,
+            MeeteiMayek::LetterNgouLonsum => LETTER_NGOU_LONSUM,
+            MeeteiMayek::LetterILonsum => LETTER_I_LONSUM,
+            MeeteiMayek::VowelSignOnap => VOWEL_SIGN_ONAP,
+            MeeteiMayek::VowelSignInap => VOWEL_SIGN_INAP,
+            MeeteiMayek::VowelSignAnap => VOWEL_SIGN_ANAP,
+            MeeteiMayek::VowelSignYenap => VOWEL_SIGN_YENAP,
+            MeeteiMayek::VowelSignSounap => VOWEL_SIGN_SOUNAP,
+            MeeteiMayek::VowelSignUnap => VOWEL_SIGN_UNAP,
+            MeeteiMayek::VowelSignCheinap => VOWEL_SIGN_CHEINAP,
+            MeeteiMayek::VowelSignNung => VOWEL_SIGN_NUNG,
+            MeeteiMayek::Cheikhei => CHEIKHEI,
+            MeeteiMayek::LumIyek => LUM_IYEK,
+            MeeteiMayek::ApunIyek => APUN_IYEK,
+            MeeteiMayek::DigitZero => DIGIT_ZERO,
+            MeeteiMayek::DigitOne => DIGIT_ONE,
+            MeeteiMayek::DigitTwo => DIGIT_TWO,
+            MeeteiMayek::DigitThree => DIGIT_THREE,
+            MeeteiMayek::DigitFour => DIGIT_FOUR,
+            MeeteiMayek::DigitFive => DIGIT_FIVE,
+            MeeteiMayek::DigitSix => DIGIT_SIX,
+            MeeteiMayek::DigitSeven => DIGIT_SEVEN,
+            MeeteiMayek::DigitEight => DIGIT_EIGHT,
+            MeeteiMayek::DigitNine => DIGIT_NINE,
         }
     }
 }
@@ -310,62 +310,62 @@ impl std::convert::TryFrom<char> for MeeteiMayek {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            MEETEI_MAYEK_LETTER_KOK => Ok(MeeteiMayek::MeeteiMayekLetterKok),
-            MEETEI_MAYEK_LETTER_SAM => Ok(MeeteiMayek::MeeteiMayekLetterSam),
-            MEETEI_MAYEK_LETTER_LAI => Ok(MeeteiMayek::MeeteiMayekLetterLai),
-            MEETEI_MAYEK_LETTER_MIT => Ok(MeeteiMayek::MeeteiMayekLetterMit),
-            MEETEI_MAYEK_LETTER_PA => Ok(MeeteiMayek::MeeteiMayekLetterPa),
-            MEETEI_MAYEK_LETTER_NA => Ok(MeeteiMayek::MeeteiMayekLetterNa),
-            MEETEI_MAYEK_LETTER_CHIL => Ok(MeeteiMayek::MeeteiMayekLetterChil),
-            MEETEI_MAYEK_LETTER_TIL => Ok(MeeteiMayek::MeeteiMayekLetterTil),
-            MEETEI_MAYEK_LETTER_KHOU => Ok(MeeteiMayek::MeeteiMayekLetterKhou),
-            MEETEI_MAYEK_LETTER_NGOU => Ok(MeeteiMayek::MeeteiMayekLetterNgou),
-            MEETEI_MAYEK_LETTER_THOU => Ok(MeeteiMayek::MeeteiMayekLetterThou),
-            MEETEI_MAYEK_LETTER_WAI => Ok(MeeteiMayek::MeeteiMayekLetterWai),
-            MEETEI_MAYEK_LETTER_YANG => Ok(MeeteiMayek::MeeteiMayekLetterYang),
-            MEETEI_MAYEK_LETTER_HUK => Ok(MeeteiMayek::MeeteiMayekLetterHuk),
-            MEETEI_MAYEK_LETTER_UN => Ok(MeeteiMayek::MeeteiMayekLetterUn),
-            MEETEI_MAYEK_LETTER_I => Ok(MeeteiMayek::MeeteiMayekLetterI),
-            MEETEI_MAYEK_LETTER_PHAM => Ok(MeeteiMayek::MeeteiMayekLetterPham),
-            MEETEI_MAYEK_LETTER_ATIYA => Ok(MeeteiMayek::MeeteiMayekLetterAtiya),
-            MEETEI_MAYEK_LETTER_GOK => Ok(MeeteiMayek::MeeteiMayekLetterGok),
-            MEETEI_MAYEK_LETTER_JHAM => Ok(MeeteiMayek::MeeteiMayekLetterJham),
-            MEETEI_MAYEK_LETTER_RAI => Ok(MeeteiMayek::MeeteiMayekLetterRai),
-            MEETEI_MAYEK_LETTER_BA => Ok(MeeteiMayek::MeeteiMayekLetterBa),
-            MEETEI_MAYEK_LETTER_JIL => Ok(MeeteiMayek::MeeteiMayekLetterJil),
-            MEETEI_MAYEK_LETTER_DIL => Ok(MeeteiMayek::MeeteiMayekLetterDil),
-            MEETEI_MAYEK_LETTER_GHOU => Ok(MeeteiMayek::MeeteiMayekLetterGhou),
-            MEETEI_MAYEK_LETTER_DHOU => Ok(MeeteiMayek::MeeteiMayekLetterDhou),
-            MEETEI_MAYEK_LETTER_BHAM => Ok(MeeteiMayek::MeeteiMayekLetterBham),
-            MEETEI_MAYEK_LETTER_KOK_LONSUM => Ok(MeeteiMayek::MeeteiMayekLetterKokLonsum),
-            MEETEI_MAYEK_LETTER_LAI_LONSUM => Ok(MeeteiMayek::MeeteiMayekLetterLaiLonsum),
-            MEETEI_MAYEK_LETTER_MIT_LONSUM => Ok(MeeteiMayek::MeeteiMayekLetterMitLonsum),
-            MEETEI_MAYEK_LETTER_PA_LONSUM => Ok(MeeteiMayek::MeeteiMayekLetterPaLonsum),
-            MEETEI_MAYEK_LETTER_NA_LONSUM => Ok(MeeteiMayek::MeeteiMayekLetterNaLonsum),
-            MEETEI_MAYEK_LETTER_TIL_LONSUM => Ok(MeeteiMayek::MeeteiMayekLetterTilLonsum),
-            MEETEI_MAYEK_LETTER_NGOU_LONSUM => Ok(MeeteiMayek::MeeteiMayekLetterNgouLonsum),
-            MEETEI_MAYEK_LETTER_I_LONSUM => Ok(MeeteiMayek::MeeteiMayekLetterILonsum),
-            MEETEI_MAYEK_VOWEL_SIGN_ONAP => Ok(MeeteiMayek::MeeteiMayekVowelSignOnap),
-            MEETEI_MAYEK_VOWEL_SIGN_INAP => Ok(MeeteiMayek::MeeteiMayekVowelSignInap),
-            MEETEI_MAYEK_VOWEL_SIGN_ANAP => Ok(MeeteiMayek::MeeteiMayekVowelSignAnap),
-            MEETEI_MAYEK_VOWEL_SIGN_YENAP => Ok(MeeteiMayek::MeeteiMayekVowelSignYenap),
-            MEETEI_MAYEK_VOWEL_SIGN_SOUNAP => Ok(MeeteiMayek::MeeteiMayekVowelSignSounap),
-            MEETEI_MAYEK_VOWEL_SIGN_UNAP => Ok(MeeteiMayek::MeeteiMayekVowelSignUnap),
-            MEETEI_MAYEK_VOWEL_SIGN_CHEINAP => Ok(MeeteiMayek::MeeteiMayekVowelSignCheinap),
-            MEETEI_MAYEK_VOWEL_SIGN_NUNG => Ok(MeeteiMayek::MeeteiMayekVowelSignNung),
-            MEETEI_MAYEK_CHEIKHEI => Ok(MeeteiMayek::MeeteiMayekCheikhei),
-            MEETEI_MAYEK_LUM_IYEK => Ok(MeeteiMayek::MeeteiMayekLumIyek),
-            MEETEI_MAYEK_APUN_IYEK => Ok(MeeteiMayek::MeeteiMayekApunIyek),
-            MEETEI_MAYEK_DIGIT_ZERO => Ok(MeeteiMayek::MeeteiMayekDigitZero),
-            MEETEI_MAYEK_DIGIT_ONE => Ok(MeeteiMayek::MeeteiMayekDigitOne),
-            MEETEI_MAYEK_DIGIT_TWO => Ok(MeeteiMayek::MeeteiMayekDigitTwo),
-            MEETEI_MAYEK_DIGIT_THREE => Ok(MeeteiMayek::MeeteiMayekDigitThree),
-            MEETEI_MAYEK_DIGIT_FOUR => Ok(MeeteiMayek::MeeteiMayekDigitFour),
-            MEETEI_MAYEK_DIGIT_FIVE => Ok(MeeteiMayek::MeeteiMayekDigitFive),
-            MEETEI_MAYEK_DIGIT_SIX => Ok(MeeteiMayek::MeeteiMayekDigitSix),
-            MEETEI_MAYEK_DIGIT_SEVEN => Ok(MeeteiMayek::MeeteiMayekDigitSeven),
-            MEETEI_MAYEK_DIGIT_EIGHT => Ok(MeeteiMayek::MeeteiMayekDigitEight),
-            MEETEI_MAYEK_DIGIT_NINE => Ok(MeeteiMayek::MeeteiMayekDigitNine),
+            LETTER_KOK => Ok(MeeteiMayek::LetterKok),
+            LETTER_SAM => Ok(MeeteiMayek::LetterSam),
+            LETTER_LAI => Ok(MeeteiMayek::LetterLai),
+            LETTER_MIT => Ok(MeeteiMayek::LetterMit),
+            LETTER_PA => Ok(MeeteiMayek::LetterPa),
+            LETTER_NA => Ok(MeeteiMayek::LetterNa),
+            LETTER_CHIL => Ok(MeeteiMayek::LetterChil),
+            LETTER_TIL => Ok(MeeteiMayek::LetterTil),
+            LETTER_KHOU => Ok(MeeteiMayek::LetterKhou),
+            LETTER_NGOU => Ok(MeeteiMayek::LetterNgou),
+            LETTER_THOU => Ok(MeeteiMayek::LetterThou),
+            LETTER_WAI => Ok(MeeteiMayek::LetterWai),
+            LETTER_YANG => Ok(MeeteiMayek::LetterYang),
+            LETTER_HUK => Ok(MeeteiMayek::LetterHuk),
+            LETTER_UN => Ok(MeeteiMayek::LetterUn),
+            LETTER_I => Ok(MeeteiMayek::LetterI),
+            LETTER_PHAM => Ok(MeeteiMayek::LetterPham),
+            LETTER_ATIYA => Ok(MeeteiMayek::LetterAtiya),
+            LETTER_GOK => Ok(MeeteiMayek::LetterGok),
+            LETTER_JHAM => Ok(MeeteiMayek::LetterJham),
+            LETTER_RAI => Ok(MeeteiMayek::LetterRai),
+            LETTER_BA => Ok(MeeteiMayek::LetterBa),
+            LETTER_JIL => Ok(MeeteiMayek::LetterJil),
+            LETTER_DIL => Ok(MeeteiMayek::LetterDil),
+            LETTER_GHOU => Ok(MeeteiMayek::LetterGhou),
+            LETTER_DHOU => Ok(MeeteiMayek::LetterDhou),
+            LETTER_BHAM => Ok(MeeteiMayek::LetterBham),
+            LETTER_KOK_LONSUM => Ok(MeeteiMayek::LetterKokLonsum),
+            LETTER_LAI_LONSUM => Ok(MeeteiMayek::LetterLaiLonsum),
+            LETTER_MIT_LONSUM => Ok(MeeteiMayek::LetterMitLonsum),
+            LETTER_PA_LONSUM => Ok(MeeteiMayek::LetterPaLonsum),
+            LETTER_NA_LONSUM => Ok(MeeteiMayek::LetterNaLonsum),
+            LETTER_TIL_LONSUM => Ok(MeeteiMayek::LetterTilLonsum),
+            LETTER_NGOU_LONSUM => Ok(MeeteiMayek::LetterNgouLonsum),
+            LETTER_I_LONSUM => Ok(MeeteiMayek::LetterILonsum),
+            VOWEL_SIGN_ONAP => Ok(MeeteiMayek::VowelSignOnap),
+            VOWEL_SIGN_INAP => Ok(MeeteiMayek::VowelSignInap),
+            VOWEL_SIGN_ANAP => Ok(MeeteiMayek::VowelSignAnap),
+            VOWEL_SIGN_YENAP => Ok(MeeteiMayek::VowelSignYenap),
+            VOWEL_SIGN_SOUNAP => Ok(MeeteiMayek::VowelSignSounap),
+            VOWEL_SIGN_UNAP => Ok(MeeteiMayek::VowelSignUnap),
+            VOWEL_SIGN_CHEINAP => Ok(MeeteiMayek::VowelSignCheinap),
+            VOWEL_SIGN_NUNG => Ok(MeeteiMayek::VowelSignNung),
+            CHEIKHEI => Ok(MeeteiMayek::Cheikhei),
+            LUM_IYEK => Ok(MeeteiMayek::LumIyek),
+            APUN_IYEK => Ok(MeeteiMayek::ApunIyek),
+            DIGIT_ZERO => Ok(MeeteiMayek::DigitZero),
+            DIGIT_ONE => Ok(MeeteiMayek::DigitOne),
+            DIGIT_TWO => Ok(MeeteiMayek::DigitTwo),
+            DIGIT_THREE => Ok(MeeteiMayek::DigitThree),
+            DIGIT_FOUR => Ok(MeeteiMayek::DigitFour),
+            DIGIT_FIVE => Ok(MeeteiMayek::DigitFive),
+            DIGIT_SIX => Ok(MeeteiMayek::DigitSix),
+            DIGIT_SEVEN => Ok(MeeteiMayek::DigitSeven),
+            DIGIT_EIGHT => Ok(MeeteiMayek::DigitEight),
+            DIGIT_NINE => Ok(MeeteiMayek::DigitNine),
             _ => Err(()),
         }
     }
@@ -404,70 +404,70 @@ impl Iterator for MeeteiMayek {
 }
 
 impl MeeteiMayek {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        MeeteiMayek::MeeteiMayekLetterKok
+        MeeteiMayek::LetterKok
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            MeeteiMayek::MeeteiMayekLetterKok => "meetei mayek letter kok",
-            MeeteiMayek::MeeteiMayekLetterSam => "meetei mayek letter sam",
-            MeeteiMayek::MeeteiMayekLetterLai => "meetei mayek letter lai",
-            MeeteiMayek::MeeteiMayekLetterMit => "meetei mayek letter mit",
-            MeeteiMayek::MeeteiMayekLetterPa => "meetei mayek letter pa",
-            MeeteiMayek::MeeteiMayekLetterNa => "meetei mayek letter na",
-            MeeteiMayek::MeeteiMayekLetterChil => "meetei mayek letter chil",
-            MeeteiMayek::MeeteiMayekLetterTil => "meetei mayek letter til",
-            MeeteiMayek::MeeteiMayekLetterKhou => "meetei mayek letter khou",
-            MeeteiMayek::MeeteiMayekLetterNgou => "meetei mayek letter ngou",
-            MeeteiMayek::MeeteiMayekLetterThou => "meetei mayek letter thou",
-            MeeteiMayek::MeeteiMayekLetterWai => "meetei mayek letter wai",
-            MeeteiMayek::MeeteiMayekLetterYang => "meetei mayek letter yang",
-            MeeteiMayek::MeeteiMayekLetterHuk => "meetei mayek letter huk",
-            MeeteiMayek::MeeteiMayekLetterUn => "meetei mayek letter un",
-            MeeteiMayek::MeeteiMayekLetterI => "meetei mayek letter i",
-            MeeteiMayek::MeeteiMayekLetterPham => "meetei mayek letter pham",
-            MeeteiMayek::MeeteiMayekLetterAtiya => "meetei mayek letter atiya",
-            MeeteiMayek::MeeteiMayekLetterGok => "meetei mayek letter gok",
-            MeeteiMayek::MeeteiMayekLetterJham => "meetei mayek letter jham",
-            MeeteiMayek::MeeteiMayekLetterRai => "meetei mayek letter rai",
-            MeeteiMayek::MeeteiMayekLetterBa => "meetei mayek letter ba",
-            MeeteiMayek::MeeteiMayekLetterJil => "meetei mayek letter jil",
-            MeeteiMayek::MeeteiMayekLetterDil => "meetei mayek letter dil",
-            MeeteiMayek::MeeteiMayekLetterGhou => "meetei mayek letter ghou",
-            MeeteiMayek::MeeteiMayekLetterDhou => "meetei mayek letter dhou",
-            MeeteiMayek::MeeteiMayekLetterBham => "meetei mayek letter bham",
-            MeeteiMayek::MeeteiMayekLetterKokLonsum => "meetei mayek letter kok lonsum",
-            MeeteiMayek::MeeteiMayekLetterLaiLonsum => "meetei mayek letter lai lonsum",
-            MeeteiMayek::MeeteiMayekLetterMitLonsum => "meetei mayek letter mit lonsum",
-            MeeteiMayek::MeeteiMayekLetterPaLonsum => "meetei mayek letter pa lonsum",
-            MeeteiMayek::MeeteiMayekLetterNaLonsum => "meetei mayek letter na lonsum",
-            MeeteiMayek::MeeteiMayekLetterTilLonsum => "meetei mayek letter til lonsum",
-            MeeteiMayek::MeeteiMayekLetterNgouLonsum => "meetei mayek letter ngou lonsum",
-            MeeteiMayek::MeeteiMayekLetterILonsum => "meetei mayek letter i lonsum",
-            MeeteiMayek::MeeteiMayekVowelSignOnap => "meetei mayek vowel sign onap",
-            MeeteiMayek::MeeteiMayekVowelSignInap => "meetei mayek vowel sign inap",
-            MeeteiMayek::MeeteiMayekVowelSignAnap => "meetei mayek vowel sign anap",
-            MeeteiMayek::MeeteiMayekVowelSignYenap => "meetei mayek vowel sign yenap",
-            MeeteiMayek::MeeteiMayekVowelSignSounap => "meetei mayek vowel sign sounap",
-            MeeteiMayek::MeeteiMayekVowelSignUnap => "meetei mayek vowel sign unap",
-            MeeteiMayek::MeeteiMayekVowelSignCheinap => "meetei mayek vowel sign cheinap",
-            MeeteiMayek::MeeteiMayekVowelSignNung => "meetei mayek vowel sign nung",
-            MeeteiMayek::MeeteiMayekCheikhei => "meetei mayek cheikhei",
-            MeeteiMayek::MeeteiMayekLumIyek => "meetei mayek lum iyek",
-            MeeteiMayek::MeeteiMayekApunIyek => "meetei mayek apun iyek",
-            MeeteiMayek::MeeteiMayekDigitZero => "meetei mayek digit zero",
-            MeeteiMayek::MeeteiMayekDigitOne => "meetei mayek digit one",
-            MeeteiMayek::MeeteiMayekDigitTwo => "meetei mayek digit two",
-            MeeteiMayek::MeeteiMayekDigitThree => "meetei mayek digit three",
-            MeeteiMayek::MeeteiMayekDigitFour => "meetei mayek digit four",
-            MeeteiMayek::MeeteiMayekDigitFive => "meetei mayek digit five",
-            MeeteiMayek::MeeteiMayekDigitSix => "meetei mayek digit six",
-            MeeteiMayek::MeeteiMayekDigitSeven => "meetei mayek digit seven",
-            MeeteiMayek::MeeteiMayekDigitEight => "meetei mayek digit eight",
-            MeeteiMayek::MeeteiMayekDigitNine => "meetei mayek digit nine",
+            MeeteiMayek::LetterKok => "meetei mayek letter kok",
+            MeeteiMayek::LetterSam => "meetei mayek letter sam",
+            MeeteiMayek::LetterLai => "meetei mayek letter lai",
+            MeeteiMayek::LetterMit => "meetei mayek letter mit",
+            MeeteiMayek::LetterPa => "meetei mayek letter pa",
+            MeeteiMayek::LetterNa => "meetei mayek letter na",
+            MeeteiMayek::LetterChil => "meetei mayek letter chil",
+            MeeteiMayek::LetterTil => "meetei mayek letter til",
+            MeeteiMayek::LetterKhou => "meetei mayek letter khou",
+            MeeteiMayek::LetterNgou => "meetei mayek letter ngou",
+            MeeteiMayek::LetterThou => "meetei mayek letter thou",
+            MeeteiMayek::LetterWai => "meetei mayek letter wai",
+            MeeteiMayek::LetterYang => "meetei mayek letter yang",
+            MeeteiMayek::LetterHuk => "meetei mayek letter huk",
+            MeeteiMayek::LetterUn => "meetei mayek letter un",
+            MeeteiMayek::LetterI => "meetei mayek letter i",
+            MeeteiMayek::LetterPham => "meetei mayek letter pham",
+            MeeteiMayek::LetterAtiya => "meetei mayek letter atiya",
+            MeeteiMayek::LetterGok => "meetei mayek letter gok",
+            MeeteiMayek::LetterJham => "meetei mayek letter jham",
+            MeeteiMayek::LetterRai => "meetei mayek letter rai",
+            MeeteiMayek::LetterBa => "meetei mayek letter ba",
+            MeeteiMayek::LetterJil => "meetei mayek letter jil",
+            MeeteiMayek::LetterDil => "meetei mayek letter dil",
+            MeeteiMayek::LetterGhou => "meetei mayek letter ghou",
+            MeeteiMayek::LetterDhou => "meetei mayek letter dhou",
+            MeeteiMayek::LetterBham => "meetei mayek letter bham",
+            MeeteiMayek::LetterKokLonsum => "meetei mayek letter kok lonsum",
+            MeeteiMayek::LetterLaiLonsum => "meetei mayek letter lai lonsum",
+            MeeteiMayek::LetterMitLonsum => "meetei mayek letter mit lonsum",
+            MeeteiMayek::LetterPaLonsum => "meetei mayek letter pa lonsum",
+            MeeteiMayek::LetterNaLonsum => "meetei mayek letter na lonsum",
+            MeeteiMayek::LetterTilLonsum => "meetei mayek letter til lonsum",
+            MeeteiMayek::LetterNgouLonsum => "meetei mayek letter ngou lonsum",
+            MeeteiMayek::LetterILonsum => "meetei mayek letter i lonsum",
+            MeeteiMayek::VowelSignOnap => "meetei mayek vowel sign onap",
+            MeeteiMayek::VowelSignInap => "meetei mayek vowel sign inap",
+            MeeteiMayek::VowelSignAnap => "meetei mayek vowel sign anap",
+            MeeteiMayek::VowelSignYenap => "meetei mayek vowel sign yenap",
+            MeeteiMayek::VowelSignSounap => "meetei mayek vowel sign sounap",
+            MeeteiMayek::VowelSignUnap => "meetei mayek vowel sign unap",
+            MeeteiMayek::VowelSignCheinap => "meetei mayek vowel sign cheinap",
+            MeeteiMayek::VowelSignNung => "meetei mayek vowel sign nung",
+            MeeteiMayek::Cheikhei => "meetei mayek cheikhei",
+            MeeteiMayek::LumIyek => "meetei mayek lum iyek",
+            MeeteiMayek::ApunIyek => "meetei mayek apun iyek",
+            MeeteiMayek::DigitZero => "meetei mayek digit zero",
+            MeeteiMayek::DigitOne => "meetei mayek digit one",
+            MeeteiMayek::DigitTwo => "meetei mayek digit two",
+            MeeteiMayek::DigitThree => "meetei mayek digit three",
+            MeeteiMayek::DigitFour => "meetei mayek digit four",
+            MeeteiMayek::DigitFive => "meetei mayek digit five",
+            MeeteiMayek::DigitSix => "meetei mayek digit six",
+            MeeteiMayek::DigitSeven => "meetei mayek digit seven",
+            MeeteiMayek::DigitEight => "meetei mayek digit eight",
+            MeeteiMayek::DigitNine => "meetei mayek digit nine",
         }
     }
 }

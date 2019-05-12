@@ -74,7 +74,7 @@ impl Iterator for CJKUnifiedIdeographsExtensionE {
 }
 
 impl CJKUnifiedIdeographsExtensionE {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         CJKUnifiedIdeographsExtensionE::CjkIdeographExtensionEFirst
     }

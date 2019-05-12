@@ -5,99 +5,99 @@
 /// ᱰ ᱱ ᱲ ᱳ ᱴ ᱵ ᱶ ᱷ ᱸ ᱹ ᱺ ᱻ ᱼ ᱽ ᱾
 pub mod constants {
     /// \u{1c50}: '᱐'
-    pub const OL_CHIKI_DIGIT_ZERO: char = '᱐';
+    pub const DIGIT_ZERO: char = '᱐';
     /// \u{1c51}: '᱑'
-    pub const OL_CHIKI_DIGIT_ONE: char = '᱑';
+    pub const DIGIT_ONE: char = '᱑';
     /// \u{1c52}: '᱒'
-    pub const OL_CHIKI_DIGIT_TWO: char = '᱒';
+    pub const DIGIT_TWO: char = '᱒';
     /// \u{1c53}: '᱓'
-    pub const OL_CHIKI_DIGIT_THREE: char = '᱓';
+    pub const DIGIT_THREE: char = '᱓';
     /// \u{1c54}: '᱔'
-    pub const OL_CHIKI_DIGIT_FOUR: char = '᱔';
+    pub const DIGIT_FOUR: char = '᱔';
     /// \u{1c55}: '᱕'
-    pub const OL_CHIKI_DIGIT_FIVE: char = '᱕';
+    pub const DIGIT_FIVE: char = '᱕';
     /// \u{1c56}: '᱖'
-    pub const OL_CHIKI_DIGIT_SIX: char = '᱖';
+    pub const DIGIT_SIX: char = '᱖';
     /// \u{1c57}: '᱗'
-    pub const OL_CHIKI_DIGIT_SEVEN: char = '᱗';
+    pub const DIGIT_SEVEN: char = '᱗';
     /// \u{1c58}: '᱘'
-    pub const OL_CHIKI_DIGIT_EIGHT: char = '᱘';
+    pub const DIGIT_EIGHT: char = '᱘';
     /// \u{1c59}: '᱙'
-    pub const OL_CHIKI_DIGIT_NINE: char = '᱙';
+    pub const DIGIT_NINE: char = '᱙';
     /// \u{1c5a}: 'ᱚ'
-    pub const OL_CHIKI_LETTER_LA: char = 'ᱚ';
+    pub const LETTER_LA: char = 'ᱚ';
     /// \u{1c5b}: 'ᱛ'
-    pub const OL_CHIKI_LETTER_AT: char = 'ᱛ';
+    pub const LETTER_AT: char = 'ᱛ';
     /// \u{1c5c}: 'ᱜ'
-    pub const OL_CHIKI_LETTER_AG: char = 'ᱜ';
+    pub const LETTER_AG: char = 'ᱜ';
     /// \u{1c5d}: 'ᱝ'
-    pub const OL_CHIKI_LETTER_ANG: char = 'ᱝ';
+    pub const LETTER_ANG: char = 'ᱝ';
     /// \u{1c5e}: 'ᱞ'
-    pub const OL_CHIKI_LETTER_AL: char = 'ᱞ';
+    pub const LETTER_AL: char = 'ᱞ';
     /// \u{1c5f}: 'ᱟ'
-    pub const OL_CHIKI_LETTER_LAA: char = 'ᱟ';
+    pub const LETTER_LAA: char = 'ᱟ';
     /// \u{1c60}: 'ᱠ'
-    pub const OL_CHIKI_LETTER_AAK: char = 'ᱠ';
+    pub const LETTER_AAK: char = 'ᱠ';
     /// \u{1c61}: 'ᱡ'
-    pub const OL_CHIKI_LETTER_AAJ: char = 'ᱡ';
+    pub const LETTER_AAJ: char = 'ᱡ';
     /// \u{1c62}: 'ᱢ'
-    pub const OL_CHIKI_LETTER_AAM: char = 'ᱢ';
+    pub const LETTER_AAM: char = 'ᱢ';
     /// \u{1c63}: 'ᱣ'
-    pub const OL_CHIKI_LETTER_AAW: char = 'ᱣ';
+    pub const LETTER_AAW: char = 'ᱣ';
     /// \u{1c64}: 'ᱤ'
-    pub const OL_CHIKI_LETTER_LI: char = 'ᱤ';
+    pub const LETTER_LI: char = 'ᱤ';
     /// \u{1c65}: 'ᱥ'
-    pub const OL_CHIKI_LETTER_IS: char = 'ᱥ';
+    pub const LETTER_IS: char = 'ᱥ';
     /// \u{1c66}: 'ᱦ'
-    pub const OL_CHIKI_LETTER_IH: char = 'ᱦ';
+    pub const LETTER_IH: char = 'ᱦ';
     /// \u{1c67}: 'ᱧ'
-    pub const OL_CHIKI_LETTER_INY: char = 'ᱧ';
+    pub const LETTER_INY: char = 'ᱧ';
     /// \u{1c68}: 'ᱨ'
-    pub const OL_CHIKI_LETTER_IR: char = 'ᱨ';
+    pub const LETTER_IR: char = 'ᱨ';
     /// \u{1c69}: 'ᱩ'
-    pub const OL_CHIKI_LETTER_LU: char = 'ᱩ';
+    pub const LETTER_LU: char = 'ᱩ';
     /// \u{1c6a}: 'ᱪ'
-    pub const OL_CHIKI_LETTER_UC: char = 'ᱪ';
+    pub const LETTER_UC: char = 'ᱪ';
     /// \u{1c6b}: 'ᱫ'
-    pub const OL_CHIKI_LETTER_UD: char = 'ᱫ';
+    pub const LETTER_UD: char = 'ᱫ';
     /// \u{1c6c}: 'ᱬ'
-    pub const OL_CHIKI_LETTER_UNN: char = 'ᱬ';
+    pub const LETTER_UNN: char = 'ᱬ';
     /// \u{1c6d}: 'ᱭ'
-    pub const OL_CHIKI_LETTER_UY: char = 'ᱭ';
+    pub const LETTER_UY: char = 'ᱭ';
     /// \u{1c6e}: 'ᱮ'
-    pub const OL_CHIKI_LETTER_LE: char = 'ᱮ';
+    pub const LETTER_LE: char = 'ᱮ';
     /// \u{1c6f}: 'ᱯ'
-    pub const OL_CHIKI_LETTER_EP: char = 'ᱯ';
+    pub const LETTER_EP: char = 'ᱯ';
     /// \u{1c70}: 'ᱰ'
-    pub const OL_CHIKI_LETTER_EDD: char = 'ᱰ';
+    pub const LETTER_EDD: char = 'ᱰ';
     /// \u{1c71}: 'ᱱ'
-    pub const OL_CHIKI_LETTER_EN: char = 'ᱱ';
+    pub const LETTER_EN: char = 'ᱱ';
     /// \u{1c72}: 'ᱲ'
-    pub const OL_CHIKI_LETTER_ERR: char = 'ᱲ';
+    pub const LETTER_ERR: char = 'ᱲ';
     /// \u{1c73}: 'ᱳ'
-    pub const OL_CHIKI_LETTER_LO: char = 'ᱳ';
+    pub const LETTER_LO: char = 'ᱳ';
     /// \u{1c74}: 'ᱴ'
-    pub const OL_CHIKI_LETTER_OTT: char = 'ᱴ';
+    pub const LETTER_OTT: char = 'ᱴ';
     /// \u{1c75}: 'ᱵ'
-    pub const OL_CHIKI_LETTER_OB: char = 'ᱵ';
+    pub const LETTER_OB: char = 'ᱵ';
     /// \u{1c76}: 'ᱶ'
-    pub const OL_CHIKI_LETTER_OV: char = 'ᱶ';
+    pub const LETTER_OV: char = 'ᱶ';
     /// \u{1c77}: 'ᱷ'
-    pub const OL_CHIKI_LETTER_OH: char = 'ᱷ';
+    pub const LETTER_OH: char = 'ᱷ';
     /// \u{1c78}: 'ᱸ'
-    pub const OL_CHIKI_MU_TTUDDAG: char = 'ᱸ';
+    pub const MU_TTUDDAG: char = 'ᱸ';
     /// \u{1c79}: 'ᱹ'
-    pub const OL_CHIKI_GAAHLAA_TTUDDAAG: char = 'ᱹ';
+    pub const GAAHLAA_TTUDDAAG: char = 'ᱹ';
     /// \u{1c7a}: 'ᱺ'
-    pub const OL_CHIKI_MU_DASH_GAAHLAA_TTUDDAAG: char = 'ᱺ';
+    pub const MU_DASH_GAAHLAA_TTUDDAAG: char = 'ᱺ';
     /// \u{1c7b}: 'ᱻ'
-    pub const OL_CHIKI_RELAA: char = 'ᱻ';
+    pub const RELAA: char = 'ᱻ';
     /// \u{1c7c}: 'ᱼ'
-    pub const OL_CHIKI_PHAARKAA: char = 'ᱼ';
+    pub const PHAARKAA: char = 'ᱼ';
     /// \u{1c7d}: 'ᱽ'
-    pub const OL_CHIKI_AHAD: char = 'ᱽ';
+    pub const AHAD: char = 'ᱽ';
     /// \u{1c7e}: '᱾'
-    pub const OL_CHIKI_PUNCTUATION_MUCAAD: char = '᱾';
+    pub const PUNCTUATION_MUCAAD: char = '᱾';
 }
 
 /// \u{1c50} → \u{1c7f}\
@@ -108,152 +108,152 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OlChiki {
     /// \u{1c50}: '᱐'
-    OlChikiDigitZero,
+    DigitZero,
     /// \u{1c51}: '᱑'
-    OlChikiDigitOne,
+    DigitOne,
     /// \u{1c52}: '᱒'
-    OlChikiDigitTwo,
+    DigitTwo,
     /// \u{1c53}: '᱓'
-    OlChikiDigitThree,
+    DigitThree,
     /// \u{1c54}: '᱔'
-    OlChikiDigitFour,
+    DigitFour,
     /// \u{1c55}: '᱕'
-    OlChikiDigitFive,
+    DigitFive,
     /// \u{1c56}: '᱖'
-    OlChikiDigitSix,
+    DigitSix,
     /// \u{1c57}: '᱗'
-    OlChikiDigitSeven,
+    DigitSeven,
     /// \u{1c58}: '᱘'
-    OlChikiDigitEight,
+    DigitEight,
     /// \u{1c59}: '᱙'
-    OlChikiDigitNine,
+    DigitNine,
     /// \u{1c5a}: 'ᱚ'
-    OlChikiLetterLa,
+    LetterLa,
     /// \u{1c5b}: 'ᱛ'
-    OlChikiLetterAt,
+    LetterAt,
     /// \u{1c5c}: 'ᱜ'
-    OlChikiLetterAg,
+    LetterAg,
     /// \u{1c5d}: 'ᱝ'
-    OlChikiLetterAng,
+    LetterAng,
     /// \u{1c5e}: 'ᱞ'
-    OlChikiLetterAl,
+    LetterAl,
     /// \u{1c5f}: 'ᱟ'
-    OlChikiLetterLaa,
+    LetterLaa,
     /// \u{1c60}: 'ᱠ'
-    OlChikiLetterAak,
+    LetterAak,
     /// \u{1c61}: 'ᱡ'
-    OlChikiLetterAaj,
+    LetterAaj,
     /// \u{1c62}: 'ᱢ'
-    OlChikiLetterAam,
+    LetterAam,
     /// \u{1c63}: 'ᱣ'
-    OlChikiLetterAaw,
+    LetterAaw,
     /// \u{1c64}: 'ᱤ'
-    OlChikiLetterLi,
+    LetterLi,
     /// \u{1c65}: 'ᱥ'
-    OlChikiLetterIs,
+    LetterIs,
     /// \u{1c66}: 'ᱦ'
-    OlChikiLetterIh,
+    LetterIh,
     /// \u{1c67}: 'ᱧ'
-    OlChikiLetterIny,
+    LetterIny,
     /// \u{1c68}: 'ᱨ'
-    OlChikiLetterIr,
+    LetterIr,
     /// \u{1c69}: 'ᱩ'
-    OlChikiLetterLu,
+    LetterLu,
     /// \u{1c6a}: 'ᱪ'
-    OlChikiLetterUc,
+    LetterUc,
     /// \u{1c6b}: 'ᱫ'
-    OlChikiLetterUd,
+    LetterUd,
     /// \u{1c6c}: 'ᱬ'
-    OlChikiLetterUnn,
+    LetterUnn,
     /// \u{1c6d}: 'ᱭ'
-    OlChikiLetterUy,
+    LetterUy,
     /// \u{1c6e}: 'ᱮ'
-    OlChikiLetterLe,
+    LetterLe,
     /// \u{1c6f}: 'ᱯ'
-    OlChikiLetterEp,
+    LetterEp,
     /// \u{1c70}: 'ᱰ'
-    OlChikiLetterEdd,
+    LetterEdd,
     /// \u{1c71}: 'ᱱ'
-    OlChikiLetterEn,
+    LetterEn,
     /// \u{1c72}: 'ᱲ'
-    OlChikiLetterErr,
+    LetterErr,
     /// \u{1c73}: 'ᱳ'
-    OlChikiLetterLo,
+    LetterLo,
     /// \u{1c74}: 'ᱴ'
-    OlChikiLetterOtt,
+    LetterOtt,
     /// \u{1c75}: 'ᱵ'
-    OlChikiLetterOb,
+    LetterOb,
     /// \u{1c76}: 'ᱶ'
-    OlChikiLetterOv,
+    LetterOv,
     /// \u{1c77}: 'ᱷ'
-    OlChikiLetterOh,
+    LetterOh,
     /// \u{1c78}: 'ᱸ'
-    OlChikiMuTtuddag,
+    MuTtuddag,
     /// \u{1c79}: 'ᱹ'
-    OlChikiGaahlaaTtuddaag,
+    GaahlaaTtuddaag,
     /// \u{1c7a}: 'ᱺ'
-    OlChikiMuDashGaahlaaTtuddaag,
+    MuDashGaahlaaTtuddaag,
     /// \u{1c7b}: 'ᱻ'
-    OlChikiRelaa,
+    Relaa,
     /// \u{1c7c}: 'ᱼ'
-    OlChikiPhaarkaa,
+    Phaarkaa,
     /// \u{1c7d}: 'ᱽ'
-    OlChikiAhad,
+    Ahad,
     /// \u{1c7e}: '᱾'
-    OlChikiPunctuationMucaad,
+    PunctuationMucaad,
 }
 
 impl Into<char> for OlChiki {
     fn into(self) -> char {
         use constants::*;
         match self {
-            OlChiki::OlChikiDigitZero => OL_CHIKI_DIGIT_ZERO,
-            OlChiki::OlChikiDigitOne => OL_CHIKI_DIGIT_ONE,
-            OlChiki::OlChikiDigitTwo => OL_CHIKI_DIGIT_TWO,
-            OlChiki::OlChikiDigitThree => OL_CHIKI_DIGIT_THREE,
-            OlChiki::OlChikiDigitFour => OL_CHIKI_DIGIT_FOUR,
-            OlChiki::OlChikiDigitFive => OL_CHIKI_DIGIT_FIVE,
-            OlChiki::OlChikiDigitSix => OL_CHIKI_DIGIT_SIX,
-            OlChiki::OlChikiDigitSeven => OL_CHIKI_DIGIT_SEVEN,
-            OlChiki::OlChikiDigitEight => OL_CHIKI_DIGIT_EIGHT,
-            OlChiki::OlChikiDigitNine => OL_CHIKI_DIGIT_NINE,
-            OlChiki::OlChikiLetterLa => OL_CHIKI_LETTER_LA,
-            OlChiki::OlChikiLetterAt => OL_CHIKI_LETTER_AT,
-            OlChiki::OlChikiLetterAg => OL_CHIKI_LETTER_AG,
-            OlChiki::OlChikiLetterAng => OL_CHIKI_LETTER_ANG,
-            OlChiki::OlChikiLetterAl => OL_CHIKI_LETTER_AL,
-            OlChiki::OlChikiLetterLaa => OL_CHIKI_LETTER_LAA,
-            OlChiki::OlChikiLetterAak => OL_CHIKI_LETTER_AAK,
-            OlChiki::OlChikiLetterAaj => OL_CHIKI_LETTER_AAJ,
-            OlChiki::OlChikiLetterAam => OL_CHIKI_LETTER_AAM,
-            OlChiki::OlChikiLetterAaw => OL_CHIKI_LETTER_AAW,
-            OlChiki::OlChikiLetterLi => OL_CHIKI_LETTER_LI,
-            OlChiki::OlChikiLetterIs => OL_CHIKI_LETTER_IS,
-            OlChiki::OlChikiLetterIh => OL_CHIKI_LETTER_IH,
-            OlChiki::OlChikiLetterIny => OL_CHIKI_LETTER_INY,
-            OlChiki::OlChikiLetterIr => OL_CHIKI_LETTER_IR,
-            OlChiki::OlChikiLetterLu => OL_CHIKI_LETTER_LU,
-            OlChiki::OlChikiLetterUc => OL_CHIKI_LETTER_UC,
-            OlChiki::OlChikiLetterUd => OL_CHIKI_LETTER_UD,
-            OlChiki::OlChikiLetterUnn => OL_CHIKI_LETTER_UNN,
-            OlChiki::OlChikiLetterUy => OL_CHIKI_LETTER_UY,
-            OlChiki::OlChikiLetterLe => OL_CHIKI_LETTER_LE,
-            OlChiki::OlChikiLetterEp => OL_CHIKI_LETTER_EP,
-            OlChiki::OlChikiLetterEdd => OL_CHIKI_LETTER_EDD,
-            OlChiki::OlChikiLetterEn => OL_CHIKI_LETTER_EN,
-            OlChiki::OlChikiLetterErr => OL_CHIKI_LETTER_ERR,
-            OlChiki::OlChikiLetterLo => OL_CHIKI_LETTER_LO,
-            OlChiki::OlChikiLetterOtt => OL_CHIKI_LETTER_OTT,
-            OlChiki::OlChikiLetterOb => OL_CHIKI_LETTER_OB,
-            OlChiki::OlChikiLetterOv => OL_CHIKI_LETTER_OV,
-            OlChiki::OlChikiLetterOh => OL_CHIKI_LETTER_OH,
-            OlChiki::OlChikiMuTtuddag => OL_CHIKI_MU_TTUDDAG,
-            OlChiki::OlChikiGaahlaaTtuddaag => OL_CHIKI_GAAHLAA_TTUDDAAG,
-            OlChiki::OlChikiMuDashGaahlaaTtuddaag => OL_CHIKI_MU_DASH_GAAHLAA_TTUDDAAG,
-            OlChiki::OlChikiRelaa => OL_CHIKI_RELAA,
-            OlChiki::OlChikiPhaarkaa => OL_CHIKI_PHAARKAA,
-            OlChiki::OlChikiAhad => OL_CHIKI_AHAD,
-            OlChiki::OlChikiPunctuationMucaad => OL_CHIKI_PUNCTUATION_MUCAAD,
+            OlChiki::DigitZero => DIGIT_ZERO,
+            OlChiki::DigitOne => DIGIT_ONE,
+            OlChiki::DigitTwo => DIGIT_TWO,
+            OlChiki::DigitThree => DIGIT_THREE,
+            OlChiki::DigitFour => DIGIT_FOUR,
+            OlChiki::DigitFive => DIGIT_FIVE,
+            OlChiki::DigitSix => DIGIT_SIX,
+            OlChiki::DigitSeven => DIGIT_SEVEN,
+            OlChiki::DigitEight => DIGIT_EIGHT,
+            OlChiki::DigitNine => DIGIT_NINE,
+            OlChiki::LetterLa => LETTER_LA,
+            OlChiki::LetterAt => LETTER_AT,
+            OlChiki::LetterAg => LETTER_AG,
+            OlChiki::LetterAng => LETTER_ANG,
+            OlChiki::LetterAl => LETTER_AL,
+            OlChiki::LetterLaa => LETTER_LAA,
+            OlChiki::LetterAak => LETTER_AAK,
+            OlChiki::LetterAaj => LETTER_AAJ,
+            OlChiki::LetterAam => LETTER_AAM,
+            OlChiki::LetterAaw => LETTER_AAW,
+            OlChiki::LetterLi => LETTER_LI,
+            OlChiki::LetterIs => LETTER_IS,
+            OlChiki::LetterIh => LETTER_IH,
+            OlChiki::LetterIny => LETTER_INY,
+            OlChiki::LetterIr => LETTER_IR,
+            OlChiki::LetterLu => LETTER_LU,
+            OlChiki::LetterUc => LETTER_UC,
+            OlChiki::LetterUd => LETTER_UD,
+            OlChiki::LetterUnn => LETTER_UNN,
+            OlChiki::LetterUy => LETTER_UY,
+            OlChiki::LetterLe => LETTER_LE,
+            OlChiki::LetterEp => LETTER_EP,
+            OlChiki::LetterEdd => LETTER_EDD,
+            OlChiki::LetterEn => LETTER_EN,
+            OlChiki::LetterErr => LETTER_ERR,
+            OlChiki::LetterLo => LETTER_LO,
+            OlChiki::LetterOtt => LETTER_OTT,
+            OlChiki::LetterOb => LETTER_OB,
+            OlChiki::LetterOv => LETTER_OV,
+            OlChiki::LetterOh => LETTER_OH,
+            OlChiki::MuTtuddag => MU_TTUDDAG,
+            OlChiki::GaahlaaTtuddaag => GAAHLAA_TTUDDAAG,
+            OlChiki::MuDashGaahlaaTtuddaag => MU_DASH_GAAHLAA_TTUDDAAG,
+            OlChiki::Relaa => RELAA,
+            OlChiki::Phaarkaa => PHAARKAA,
+            OlChiki::Ahad => AHAD,
+            OlChiki::PunctuationMucaad => PUNCTUATION_MUCAAD,
         }
     }
 }
@@ -263,53 +263,53 @@ impl std::convert::TryFrom<char> for OlChiki {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            OL_CHIKI_DIGIT_ZERO => Ok(OlChiki::OlChikiDigitZero),
-            OL_CHIKI_DIGIT_ONE => Ok(OlChiki::OlChikiDigitOne),
-            OL_CHIKI_DIGIT_TWO => Ok(OlChiki::OlChikiDigitTwo),
-            OL_CHIKI_DIGIT_THREE => Ok(OlChiki::OlChikiDigitThree),
-            OL_CHIKI_DIGIT_FOUR => Ok(OlChiki::OlChikiDigitFour),
-            OL_CHIKI_DIGIT_FIVE => Ok(OlChiki::OlChikiDigitFive),
-            OL_CHIKI_DIGIT_SIX => Ok(OlChiki::OlChikiDigitSix),
-            OL_CHIKI_DIGIT_SEVEN => Ok(OlChiki::OlChikiDigitSeven),
-            OL_CHIKI_DIGIT_EIGHT => Ok(OlChiki::OlChikiDigitEight),
-            OL_CHIKI_DIGIT_NINE => Ok(OlChiki::OlChikiDigitNine),
-            OL_CHIKI_LETTER_LA => Ok(OlChiki::OlChikiLetterLa),
-            OL_CHIKI_LETTER_AT => Ok(OlChiki::OlChikiLetterAt),
-            OL_CHIKI_LETTER_AG => Ok(OlChiki::OlChikiLetterAg),
-            OL_CHIKI_LETTER_ANG => Ok(OlChiki::OlChikiLetterAng),
-            OL_CHIKI_LETTER_AL => Ok(OlChiki::OlChikiLetterAl),
-            OL_CHIKI_LETTER_LAA => Ok(OlChiki::OlChikiLetterLaa),
-            OL_CHIKI_LETTER_AAK => Ok(OlChiki::OlChikiLetterAak),
-            OL_CHIKI_LETTER_AAJ => Ok(OlChiki::OlChikiLetterAaj),
-            OL_CHIKI_LETTER_AAM => Ok(OlChiki::OlChikiLetterAam),
-            OL_CHIKI_LETTER_AAW => Ok(OlChiki::OlChikiLetterAaw),
-            OL_CHIKI_LETTER_LI => Ok(OlChiki::OlChikiLetterLi),
-            OL_CHIKI_LETTER_IS => Ok(OlChiki::OlChikiLetterIs),
-            OL_CHIKI_LETTER_IH => Ok(OlChiki::OlChikiLetterIh),
-            OL_CHIKI_LETTER_INY => Ok(OlChiki::OlChikiLetterIny),
-            OL_CHIKI_LETTER_IR => Ok(OlChiki::OlChikiLetterIr),
-            OL_CHIKI_LETTER_LU => Ok(OlChiki::OlChikiLetterLu),
-            OL_CHIKI_LETTER_UC => Ok(OlChiki::OlChikiLetterUc),
-            OL_CHIKI_LETTER_UD => Ok(OlChiki::OlChikiLetterUd),
-            OL_CHIKI_LETTER_UNN => Ok(OlChiki::OlChikiLetterUnn),
-            OL_CHIKI_LETTER_UY => Ok(OlChiki::OlChikiLetterUy),
-            OL_CHIKI_LETTER_LE => Ok(OlChiki::OlChikiLetterLe),
-            OL_CHIKI_LETTER_EP => Ok(OlChiki::OlChikiLetterEp),
-            OL_CHIKI_LETTER_EDD => Ok(OlChiki::OlChikiLetterEdd),
-            OL_CHIKI_LETTER_EN => Ok(OlChiki::OlChikiLetterEn),
-            OL_CHIKI_LETTER_ERR => Ok(OlChiki::OlChikiLetterErr),
-            OL_CHIKI_LETTER_LO => Ok(OlChiki::OlChikiLetterLo),
-            OL_CHIKI_LETTER_OTT => Ok(OlChiki::OlChikiLetterOtt),
-            OL_CHIKI_LETTER_OB => Ok(OlChiki::OlChikiLetterOb),
-            OL_CHIKI_LETTER_OV => Ok(OlChiki::OlChikiLetterOv),
-            OL_CHIKI_LETTER_OH => Ok(OlChiki::OlChikiLetterOh),
-            OL_CHIKI_MU_TTUDDAG => Ok(OlChiki::OlChikiMuTtuddag),
-            OL_CHIKI_GAAHLAA_TTUDDAAG => Ok(OlChiki::OlChikiGaahlaaTtuddaag),
-            OL_CHIKI_MU_DASH_GAAHLAA_TTUDDAAG => Ok(OlChiki::OlChikiMuDashGaahlaaTtuddaag),
-            OL_CHIKI_RELAA => Ok(OlChiki::OlChikiRelaa),
-            OL_CHIKI_PHAARKAA => Ok(OlChiki::OlChikiPhaarkaa),
-            OL_CHIKI_AHAD => Ok(OlChiki::OlChikiAhad),
-            OL_CHIKI_PUNCTUATION_MUCAAD => Ok(OlChiki::OlChikiPunctuationMucaad),
+            DIGIT_ZERO => Ok(OlChiki::DigitZero),
+            DIGIT_ONE => Ok(OlChiki::DigitOne),
+            DIGIT_TWO => Ok(OlChiki::DigitTwo),
+            DIGIT_THREE => Ok(OlChiki::DigitThree),
+            DIGIT_FOUR => Ok(OlChiki::DigitFour),
+            DIGIT_FIVE => Ok(OlChiki::DigitFive),
+            DIGIT_SIX => Ok(OlChiki::DigitSix),
+            DIGIT_SEVEN => Ok(OlChiki::DigitSeven),
+            DIGIT_EIGHT => Ok(OlChiki::DigitEight),
+            DIGIT_NINE => Ok(OlChiki::DigitNine),
+            LETTER_LA => Ok(OlChiki::LetterLa),
+            LETTER_AT => Ok(OlChiki::LetterAt),
+            LETTER_AG => Ok(OlChiki::LetterAg),
+            LETTER_ANG => Ok(OlChiki::LetterAng),
+            LETTER_AL => Ok(OlChiki::LetterAl),
+            LETTER_LAA => Ok(OlChiki::LetterLaa),
+            LETTER_AAK => Ok(OlChiki::LetterAak),
+            LETTER_AAJ => Ok(OlChiki::LetterAaj),
+            LETTER_AAM => Ok(OlChiki::LetterAam),
+            LETTER_AAW => Ok(OlChiki::LetterAaw),
+            LETTER_LI => Ok(OlChiki::LetterLi),
+            LETTER_IS => Ok(OlChiki::LetterIs),
+            LETTER_IH => Ok(OlChiki::LetterIh),
+            LETTER_INY => Ok(OlChiki::LetterIny),
+            LETTER_IR => Ok(OlChiki::LetterIr),
+            LETTER_LU => Ok(OlChiki::LetterLu),
+            LETTER_UC => Ok(OlChiki::LetterUc),
+            LETTER_UD => Ok(OlChiki::LetterUd),
+            LETTER_UNN => Ok(OlChiki::LetterUnn),
+            LETTER_UY => Ok(OlChiki::LetterUy),
+            LETTER_LE => Ok(OlChiki::LetterLe),
+            LETTER_EP => Ok(OlChiki::LetterEp),
+            LETTER_EDD => Ok(OlChiki::LetterEdd),
+            LETTER_EN => Ok(OlChiki::LetterEn),
+            LETTER_ERR => Ok(OlChiki::LetterErr),
+            LETTER_LO => Ok(OlChiki::LetterLo),
+            LETTER_OTT => Ok(OlChiki::LetterOtt),
+            LETTER_OB => Ok(OlChiki::LetterOb),
+            LETTER_OV => Ok(OlChiki::LetterOv),
+            LETTER_OH => Ok(OlChiki::LetterOh),
+            MU_TTUDDAG => Ok(OlChiki::MuTtuddag),
+            GAAHLAA_TTUDDAAG => Ok(OlChiki::GaahlaaTtuddaag),
+            MU_DASH_GAAHLAA_TTUDDAAG => Ok(OlChiki::MuDashGaahlaaTtuddaag),
+            RELAA => Ok(OlChiki::Relaa),
+            PHAARKAA => Ok(OlChiki::Phaarkaa),
+            AHAD => Ok(OlChiki::Ahad),
+            PUNCTUATION_MUCAAD => Ok(OlChiki::PunctuationMucaad),
             _ => Err(()),
         }
     }
@@ -348,61 +348,61 @@ impl Iterator for OlChiki {
 }
 
 impl OlChiki {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        OlChiki::OlChikiDigitZero
+        OlChiki::DigitZero
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            OlChiki::OlChikiDigitZero => "ol chiki digit zero",
-            OlChiki::OlChikiDigitOne => "ol chiki digit one",
-            OlChiki::OlChikiDigitTwo => "ol chiki digit two",
-            OlChiki::OlChikiDigitThree => "ol chiki digit three",
-            OlChiki::OlChikiDigitFour => "ol chiki digit four",
-            OlChiki::OlChikiDigitFive => "ol chiki digit five",
-            OlChiki::OlChikiDigitSix => "ol chiki digit six",
-            OlChiki::OlChikiDigitSeven => "ol chiki digit seven",
-            OlChiki::OlChikiDigitEight => "ol chiki digit eight",
-            OlChiki::OlChikiDigitNine => "ol chiki digit nine",
-            OlChiki::OlChikiLetterLa => "ol chiki letter la",
-            OlChiki::OlChikiLetterAt => "ol chiki letter at",
-            OlChiki::OlChikiLetterAg => "ol chiki letter ag",
-            OlChiki::OlChikiLetterAng => "ol chiki letter ang",
-            OlChiki::OlChikiLetterAl => "ol chiki letter al",
-            OlChiki::OlChikiLetterLaa => "ol chiki letter laa",
-            OlChiki::OlChikiLetterAak => "ol chiki letter aak",
-            OlChiki::OlChikiLetterAaj => "ol chiki letter aaj",
-            OlChiki::OlChikiLetterAam => "ol chiki letter aam",
-            OlChiki::OlChikiLetterAaw => "ol chiki letter aaw",
-            OlChiki::OlChikiLetterLi => "ol chiki letter li",
-            OlChiki::OlChikiLetterIs => "ol chiki letter is",
-            OlChiki::OlChikiLetterIh => "ol chiki letter ih",
-            OlChiki::OlChikiLetterIny => "ol chiki letter iny",
-            OlChiki::OlChikiLetterIr => "ol chiki letter ir",
-            OlChiki::OlChikiLetterLu => "ol chiki letter lu",
-            OlChiki::OlChikiLetterUc => "ol chiki letter uc",
-            OlChiki::OlChikiLetterUd => "ol chiki letter ud",
-            OlChiki::OlChikiLetterUnn => "ol chiki letter unn",
-            OlChiki::OlChikiLetterUy => "ol chiki letter uy",
-            OlChiki::OlChikiLetterLe => "ol chiki letter le",
-            OlChiki::OlChikiLetterEp => "ol chiki letter ep",
-            OlChiki::OlChikiLetterEdd => "ol chiki letter edd",
-            OlChiki::OlChikiLetterEn => "ol chiki letter en",
-            OlChiki::OlChikiLetterErr => "ol chiki letter err",
-            OlChiki::OlChikiLetterLo => "ol chiki letter lo",
-            OlChiki::OlChikiLetterOtt => "ol chiki letter ott",
-            OlChiki::OlChikiLetterOb => "ol chiki letter ob",
-            OlChiki::OlChikiLetterOv => "ol chiki letter ov",
-            OlChiki::OlChikiLetterOh => "ol chiki letter oh",
-            OlChiki::OlChikiMuTtuddag => "ol chiki mu ttuddag",
-            OlChiki::OlChikiGaahlaaTtuddaag => "ol chiki gaahlaa ttuddaag",
-            OlChiki::OlChikiMuDashGaahlaaTtuddaag => "ol chiki mu-gaahlaa ttuddaag",
-            OlChiki::OlChikiRelaa => "ol chiki relaa",
-            OlChiki::OlChikiPhaarkaa => "ol chiki phaarkaa",
-            OlChiki::OlChikiAhad => "ol chiki ahad",
-            OlChiki::OlChikiPunctuationMucaad => "ol chiki punctuation mucaad",
+            OlChiki::DigitZero => "ol chiki digit zero",
+            OlChiki::DigitOne => "ol chiki digit one",
+            OlChiki::DigitTwo => "ol chiki digit two",
+            OlChiki::DigitThree => "ol chiki digit three",
+            OlChiki::DigitFour => "ol chiki digit four",
+            OlChiki::DigitFive => "ol chiki digit five",
+            OlChiki::DigitSix => "ol chiki digit six",
+            OlChiki::DigitSeven => "ol chiki digit seven",
+            OlChiki::DigitEight => "ol chiki digit eight",
+            OlChiki::DigitNine => "ol chiki digit nine",
+            OlChiki::LetterLa => "ol chiki letter la",
+            OlChiki::LetterAt => "ol chiki letter at",
+            OlChiki::LetterAg => "ol chiki letter ag",
+            OlChiki::LetterAng => "ol chiki letter ang",
+            OlChiki::LetterAl => "ol chiki letter al",
+            OlChiki::LetterLaa => "ol chiki letter laa",
+            OlChiki::LetterAak => "ol chiki letter aak",
+            OlChiki::LetterAaj => "ol chiki letter aaj",
+            OlChiki::LetterAam => "ol chiki letter aam",
+            OlChiki::LetterAaw => "ol chiki letter aaw",
+            OlChiki::LetterLi => "ol chiki letter li",
+            OlChiki::LetterIs => "ol chiki letter is",
+            OlChiki::LetterIh => "ol chiki letter ih",
+            OlChiki::LetterIny => "ol chiki letter iny",
+            OlChiki::LetterIr => "ol chiki letter ir",
+            OlChiki::LetterLu => "ol chiki letter lu",
+            OlChiki::LetterUc => "ol chiki letter uc",
+            OlChiki::LetterUd => "ol chiki letter ud",
+            OlChiki::LetterUnn => "ol chiki letter unn",
+            OlChiki::LetterUy => "ol chiki letter uy",
+            OlChiki::LetterLe => "ol chiki letter le",
+            OlChiki::LetterEp => "ol chiki letter ep",
+            OlChiki::LetterEdd => "ol chiki letter edd",
+            OlChiki::LetterEn => "ol chiki letter en",
+            OlChiki::LetterErr => "ol chiki letter err",
+            OlChiki::LetterLo => "ol chiki letter lo",
+            OlChiki::LetterOtt => "ol chiki letter ott",
+            OlChiki::LetterOb => "ol chiki letter ob",
+            OlChiki::LetterOv => "ol chiki letter ov",
+            OlChiki::LetterOh => "ol chiki letter oh",
+            OlChiki::MuTtuddag => "ol chiki mu ttuddag",
+            OlChiki::GaahlaaTtuddaag => "ol chiki gaahlaa ttuddaag",
+            OlChiki::MuDashGaahlaaTtuddaag => "ol chiki mu-gaahlaa ttuddaag",
+            OlChiki::Relaa => "ol chiki relaa",
+            OlChiki::Phaarkaa => "ol chiki phaarkaa",
+            OlChiki::Ahad => "ol chiki ahad",
+            OlChiki::PunctuationMucaad => "ol chiki punctuation mucaad",
         }
     }
 }

@@ -1622,7 +1622,7 @@ impl Iterator for MiscellaneousSymbols {
 }
 
 impl MiscellaneousSymbols {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         MiscellaneousSymbols::BlackSunWithRays
     }

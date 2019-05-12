@@ -5,77 +5,77 @@
 /// 𖫲 𖫳 𖫴 𖫵
 pub mod constants {
     /// \u{16ad0}: '𖫐'
-    pub const BASSA_VAH_LETTER_ENNI: char = '𖫐';
+    pub const LETTER_ENNI: char = '𖫐';
     /// \u{16ad1}: '𖫑'
-    pub const BASSA_VAH_LETTER_KA: char = '𖫑';
+    pub const LETTER_KA: char = '𖫑';
     /// \u{16ad2}: '𖫒'
-    pub const BASSA_VAH_LETTER_SE: char = '𖫒';
+    pub const LETTER_SE: char = '𖫒';
     /// \u{16ad3}: '𖫓'
-    pub const BASSA_VAH_LETTER_FA: char = '𖫓';
+    pub const LETTER_FA: char = '𖫓';
     /// \u{16ad4}: '𖫔'
-    pub const BASSA_VAH_LETTER_MBE: char = '𖫔';
+    pub const LETTER_MBE: char = '𖫔';
     /// \u{16ad5}: '𖫕'
-    pub const BASSA_VAH_LETTER_YIE: char = '𖫕';
+    pub const LETTER_YIE: char = '𖫕';
     /// \u{16ad6}: '𖫖'
-    pub const BASSA_VAH_LETTER_GAH: char = '𖫖';
+    pub const LETTER_GAH: char = '𖫖';
     /// \u{16ad7}: '𖫗'
-    pub const BASSA_VAH_LETTER_DHII: char = '𖫗';
+    pub const LETTER_DHII: char = '𖫗';
     /// \u{16ad8}: '𖫘'
-    pub const BASSA_VAH_LETTER_KPAH: char = '𖫘';
+    pub const LETTER_KPAH: char = '𖫘';
     /// \u{16ad9}: '𖫙'
-    pub const BASSA_VAH_LETTER_JO: char = '𖫙';
+    pub const LETTER_JO: char = '𖫙';
     /// \u{16ada}: '𖫚'
-    pub const BASSA_VAH_LETTER_HWAH: char = '𖫚';
+    pub const LETTER_HWAH: char = '𖫚';
     /// \u{16adb}: '𖫛'
-    pub const BASSA_VAH_LETTER_WA: char = '𖫛';
+    pub const LETTER_WA: char = '𖫛';
     /// \u{16adc}: '𖫜'
-    pub const BASSA_VAH_LETTER_ZO: char = '𖫜';
+    pub const LETTER_ZO: char = '𖫜';
     /// \u{16add}: '𖫝'
-    pub const BASSA_VAH_LETTER_GBU: char = '𖫝';
+    pub const LETTER_GBU: char = '𖫝';
     /// \u{16ade}: '𖫞'
-    pub const BASSA_VAH_LETTER_DO: char = '𖫞';
+    pub const LETTER_DO: char = '𖫞';
     /// \u{16adf}: '𖫟'
-    pub const BASSA_VAH_LETTER_CE: char = '𖫟';
+    pub const LETTER_CE: char = '𖫟';
     /// \u{16ae0}: '𖫠'
-    pub const BASSA_VAH_LETTER_UWU: char = '𖫠';
+    pub const LETTER_UWU: char = '𖫠';
     /// \u{16ae1}: '𖫡'
-    pub const BASSA_VAH_LETTER_TO: char = '𖫡';
+    pub const LETTER_TO: char = '𖫡';
     /// \u{16ae2}: '𖫢'
-    pub const BASSA_VAH_LETTER_BA: char = '𖫢';
+    pub const LETTER_BA: char = '𖫢';
     /// \u{16ae3}: '𖫣'
-    pub const BASSA_VAH_LETTER_VU: char = '𖫣';
+    pub const LETTER_VU: char = '𖫣';
     /// \u{16ae4}: '𖫤'
-    pub const BASSA_VAH_LETTER_YEIN: char = '𖫤';
+    pub const LETTER_YEIN: char = '𖫤';
     /// \u{16ae5}: '𖫥'
-    pub const BASSA_VAH_LETTER_PA: char = '𖫥';
+    pub const LETTER_PA: char = '𖫥';
     /// \u{16ae6}: '𖫦'
-    pub const BASSA_VAH_LETTER_WADDA: char = '𖫦';
+    pub const LETTER_WADDA: char = '𖫦';
     /// \u{16ae7}: '𖫧'
-    pub const BASSA_VAH_LETTER_A: char = '𖫧';
+    pub const LETTER_A: char = '𖫧';
     /// \u{16ae8}: '𖫨'
-    pub const BASSA_VAH_LETTER_O: char = '𖫨';
+    pub const LETTER_O: char = '𖫨';
     /// \u{16ae9}: '𖫩'
-    pub const BASSA_VAH_LETTER_OO: char = '𖫩';
+    pub const LETTER_OO: char = '𖫩';
     /// \u{16aea}: '𖫪'
-    pub const BASSA_VAH_LETTER_U: char = '𖫪';
+    pub const LETTER_U: char = '𖫪';
     /// \u{16aeb}: '𖫫'
-    pub const BASSA_VAH_LETTER_EE: char = '𖫫';
+    pub const LETTER_EE: char = '𖫫';
     /// \u{16aec}: '𖫬'
-    pub const BASSA_VAH_LETTER_E: char = '𖫬';
+    pub const LETTER_E: char = '𖫬';
     /// \u{16aed}: '𖫭'
-    pub const BASSA_VAH_LETTER_I: char = '𖫭';
+    pub const LETTER_I: char = '𖫭';
     /// \u{16af0}: '𖫰'
-    pub const BASSA_VAH_COMBINING_HIGH_TONE: char = '𖫰';
+    pub const COMBINING_HIGH_TONE: char = '𖫰';
     /// \u{16af1}: '𖫱'
-    pub const BASSA_VAH_COMBINING_LOW_TONE: char = '𖫱';
+    pub const COMBINING_LOW_TONE: char = '𖫱';
     /// \u{16af2}: '𖫲'
-    pub const BASSA_VAH_COMBINING_MID_TONE: char = '𖫲';
+    pub const COMBINING_MID_TONE: char = '𖫲';
     /// \u{16af3}: '𖫳'
-    pub const BASSA_VAH_COMBINING_LOW_DASH_MID_TONE: char = '𖫳';
+    pub const COMBINING_LOW_DASH_MID_TONE: char = '𖫳';
     /// \u{16af4}: '𖫴'
-    pub const BASSA_VAH_COMBINING_HIGH_DASH_LOW_TONE: char = '𖫴';
+    pub const COMBINING_HIGH_DASH_LOW_TONE: char = '𖫴';
     /// \u{16af5}: '𖫵'
-    pub const BASSA_VAH_FULL_STOP: char = '𖫵';
+    pub const FULL_STOP: char = '𖫵';
 }
 
 /// \u{16ad0} → \u{16aff}\
@@ -86,119 +86,119 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum BassaVah {
     /// \u{16ad0}: '𖫐'
-    BassaVahLetterEnni,
+    LetterEnni,
     /// \u{16ad1}: '𖫑'
-    BassaVahLetterKa,
+    LetterKa,
     /// \u{16ad2}: '𖫒'
-    BassaVahLetterSe,
+    LetterSe,
     /// \u{16ad3}: '𖫓'
-    BassaVahLetterFa,
+    LetterFa,
     /// \u{16ad4}: '𖫔'
-    BassaVahLetterMbe,
+    LetterMbe,
     /// \u{16ad5}: '𖫕'
-    BassaVahLetterYie,
+    LetterYie,
     /// \u{16ad6}: '𖫖'
-    BassaVahLetterGah,
+    LetterGah,
     /// \u{16ad7}: '𖫗'
-    BassaVahLetterDhii,
+    LetterDhii,
     /// \u{16ad8}: '𖫘'
-    BassaVahLetterKpah,
+    LetterKpah,
     /// \u{16ad9}: '𖫙'
-    BassaVahLetterJo,
+    LetterJo,
     /// \u{16ada}: '𖫚'
-    BassaVahLetterHwah,
+    LetterHwah,
     /// \u{16adb}: '𖫛'
-    BassaVahLetterWa,
+    LetterWa,
     /// \u{16adc}: '𖫜'
-    BassaVahLetterZo,
+    LetterZo,
     /// \u{16add}: '𖫝'
-    BassaVahLetterGbu,
+    LetterGbu,
     /// \u{16ade}: '𖫞'
-    BassaVahLetterDo,
+    LetterDo,
     /// \u{16adf}: '𖫟'
-    BassaVahLetterCe,
+    LetterCe,
     /// \u{16ae0}: '𖫠'
-    BassaVahLetterUwu,
+    LetterUwu,
     /// \u{16ae1}: '𖫡'
-    BassaVahLetterTo,
+    LetterTo,
     /// \u{16ae2}: '𖫢'
-    BassaVahLetterBa,
+    LetterBa,
     /// \u{16ae3}: '𖫣'
-    BassaVahLetterVu,
+    LetterVu,
     /// \u{16ae4}: '𖫤'
-    BassaVahLetterYein,
+    LetterYein,
     /// \u{16ae5}: '𖫥'
-    BassaVahLetterPa,
+    LetterPa,
     /// \u{16ae6}: '𖫦'
-    BassaVahLetterWadda,
+    LetterWadda,
     /// \u{16ae7}: '𖫧'
-    BassaVahLetterA,
+    LetterA,
     /// \u{16ae8}: '𖫨'
-    BassaVahLetterO,
+    LetterO,
     /// \u{16ae9}: '𖫩'
-    BassaVahLetterOo,
+    LetterOo,
     /// \u{16aea}: '𖫪'
-    BassaVahLetterU,
+    LetterU,
     /// \u{16aeb}: '𖫫'
-    BassaVahLetterEe,
+    LetterEe,
     /// \u{16aec}: '𖫬'
-    BassaVahLetterE,
+    LetterE,
     /// \u{16aed}: '𖫭'
-    BassaVahLetterI,
+    LetterI,
     /// \u{16af0}: '𖫰'
-    BassaVahCombiningHighTone,
+    CombiningHighTone,
     /// \u{16af1}: '𖫱'
-    BassaVahCombiningLowTone,
+    CombiningLowTone,
     /// \u{16af2}: '𖫲'
-    BassaVahCombiningMidTone,
+    CombiningMidTone,
     /// \u{16af3}: '𖫳'
-    BassaVahCombiningLowDashMidTone,
+    CombiningLowDashMidTone,
     /// \u{16af4}: '𖫴'
-    BassaVahCombiningHighDashLowTone,
+    CombiningHighDashLowTone,
     /// \u{16af5}: '𖫵'
-    BassaVahFullStop,
+    FullStop,
 }
 
 impl Into<char> for BassaVah {
     fn into(self) -> char {
         use constants::*;
         match self {
-            BassaVah::BassaVahLetterEnni => BASSA_VAH_LETTER_ENNI,
-            BassaVah::BassaVahLetterKa => BASSA_VAH_LETTER_KA,
-            BassaVah::BassaVahLetterSe => BASSA_VAH_LETTER_SE,
-            BassaVah::BassaVahLetterFa => BASSA_VAH_LETTER_FA,
-            BassaVah::BassaVahLetterMbe => BASSA_VAH_LETTER_MBE,
-            BassaVah::BassaVahLetterYie => BASSA_VAH_LETTER_YIE,
-            BassaVah::BassaVahLetterGah => BASSA_VAH_LETTER_GAH,
-            BassaVah::BassaVahLetterDhii => BASSA_VAH_LETTER_DHII,
-            BassaVah::BassaVahLetterKpah => BASSA_VAH_LETTER_KPAH,
-            BassaVah::BassaVahLetterJo => BASSA_VAH_LETTER_JO,
-            BassaVah::BassaVahLetterHwah => BASSA_VAH_LETTER_HWAH,
-            BassaVah::BassaVahLetterWa => BASSA_VAH_LETTER_WA,
-            BassaVah::BassaVahLetterZo => BASSA_VAH_LETTER_ZO,
-            BassaVah::BassaVahLetterGbu => BASSA_VAH_LETTER_GBU,
-            BassaVah::BassaVahLetterDo => BASSA_VAH_LETTER_DO,
-            BassaVah::BassaVahLetterCe => BASSA_VAH_LETTER_CE,
-            BassaVah::BassaVahLetterUwu => BASSA_VAH_LETTER_UWU,
-            BassaVah::BassaVahLetterTo => BASSA_VAH_LETTER_TO,
-            BassaVah::BassaVahLetterBa => BASSA_VAH_LETTER_BA,
-            BassaVah::BassaVahLetterVu => BASSA_VAH_LETTER_VU,
-            BassaVah::BassaVahLetterYein => BASSA_VAH_LETTER_YEIN,
-            BassaVah::BassaVahLetterPa => BASSA_VAH_LETTER_PA,
-            BassaVah::BassaVahLetterWadda => BASSA_VAH_LETTER_WADDA,
-            BassaVah::BassaVahLetterA => BASSA_VAH_LETTER_A,
-            BassaVah::BassaVahLetterO => BASSA_VAH_LETTER_O,
-            BassaVah::BassaVahLetterOo => BASSA_VAH_LETTER_OO,
-            BassaVah::BassaVahLetterU => BASSA_VAH_LETTER_U,
-            BassaVah::BassaVahLetterEe => BASSA_VAH_LETTER_EE,
-            BassaVah::BassaVahLetterE => BASSA_VAH_LETTER_E,
-            BassaVah::BassaVahLetterI => BASSA_VAH_LETTER_I,
-            BassaVah::BassaVahCombiningHighTone => BASSA_VAH_COMBINING_HIGH_TONE,
-            BassaVah::BassaVahCombiningLowTone => BASSA_VAH_COMBINING_LOW_TONE,
-            BassaVah::BassaVahCombiningMidTone => BASSA_VAH_COMBINING_MID_TONE,
-            BassaVah::BassaVahCombiningLowDashMidTone => BASSA_VAH_COMBINING_LOW_DASH_MID_TONE,
-            BassaVah::BassaVahCombiningHighDashLowTone => BASSA_VAH_COMBINING_HIGH_DASH_LOW_TONE,
-            BassaVah::BassaVahFullStop => BASSA_VAH_FULL_STOP,
+            BassaVah::LetterEnni => LETTER_ENNI,
+            BassaVah::LetterKa => LETTER_KA,
+            BassaVah::LetterSe => LETTER_SE,
+            BassaVah::LetterFa => LETTER_FA,
+            BassaVah::LetterMbe => LETTER_MBE,
+            BassaVah::LetterYie => LETTER_YIE,
+            BassaVah::LetterGah => LETTER_GAH,
+            BassaVah::LetterDhii => LETTER_DHII,
+            BassaVah::LetterKpah => LETTER_KPAH,
+            BassaVah::LetterJo => LETTER_JO,
+            BassaVah::LetterHwah => LETTER_HWAH,
+            BassaVah::LetterWa => LETTER_WA,
+            BassaVah::LetterZo => LETTER_ZO,
+            BassaVah::LetterGbu => LETTER_GBU,
+            BassaVah::LetterDo => LETTER_DO,
+            BassaVah::LetterCe => LETTER_CE,
+            BassaVah::LetterUwu => LETTER_UWU,
+            BassaVah::LetterTo => LETTER_TO,
+            BassaVah::LetterBa => LETTER_BA,
+            BassaVah::LetterVu => LETTER_VU,
+            BassaVah::LetterYein => LETTER_YEIN,
+            BassaVah::LetterPa => LETTER_PA,
+            BassaVah::LetterWadda => LETTER_WADDA,
+            BassaVah::LetterA => LETTER_A,
+            BassaVah::LetterO => LETTER_O,
+            BassaVah::LetterOo => LETTER_OO,
+            BassaVah::LetterU => LETTER_U,
+            BassaVah::LetterEe => LETTER_EE,
+            BassaVah::LetterE => LETTER_E,
+            BassaVah::LetterI => LETTER_I,
+            BassaVah::CombiningHighTone => COMBINING_HIGH_TONE,
+            BassaVah::CombiningLowTone => COMBINING_LOW_TONE,
+            BassaVah::CombiningMidTone => COMBINING_MID_TONE,
+            BassaVah::CombiningLowDashMidTone => COMBINING_LOW_DASH_MID_TONE,
+            BassaVah::CombiningHighDashLowTone => COMBINING_HIGH_DASH_LOW_TONE,
+            BassaVah::FullStop => FULL_STOP,
         }
     }
 }
@@ -208,42 +208,42 @@ impl std::convert::TryFrom<char> for BassaVah {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            BASSA_VAH_LETTER_ENNI => Ok(BassaVah::BassaVahLetterEnni),
-            BASSA_VAH_LETTER_KA => Ok(BassaVah::BassaVahLetterKa),
-            BASSA_VAH_LETTER_SE => Ok(BassaVah::BassaVahLetterSe),
-            BASSA_VAH_LETTER_FA => Ok(BassaVah::BassaVahLetterFa),
-            BASSA_VAH_LETTER_MBE => Ok(BassaVah::BassaVahLetterMbe),
-            BASSA_VAH_LETTER_YIE => Ok(BassaVah::BassaVahLetterYie),
-            BASSA_VAH_LETTER_GAH => Ok(BassaVah::BassaVahLetterGah),
-            BASSA_VAH_LETTER_DHII => Ok(BassaVah::BassaVahLetterDhii),
-            BASSA_VAH_LETTER_KPAH => Ok(BassaVah::BassaVahLetterKpah),
-            BASSA_VAH_LETTER_JO => Ok(BassaVah::BassaVahLetterJo),
-            BASSA_VAH_LETTER_HWAH => Ok(BassaVah::BassaVahLetterHwah),
-            BASSA_VAH_LETTER_WA => Ok(BassaVah::BassaVahLetterWa),
-            BASSA_VAH_LETTER_ZO => Ok(BassaVah::BassaVahLetterZo),
-            BASSA_VAH_LETTER_GBU => Ok(BassaVah::BassaVahLetterGbu),
-            BASSA_VAH_LETTER_DO => Ok(BassaVah::BassaVahLetterDo),
-            BASSA_VAH_LETTER_CE => Ok(BassaVah::BassaVahLetterCe),
-            BASSA_VAH_LETTER_UWU => Ok(BassaVah::BassaVahLetterUwu),
-            BASSA_VAH_LETTER_TO => Ok(BassaVah::BassaVahLetterTo),
-            BASSA_VAH_LETTER_BA => Ok(BassaVah::BassaVahLetterBa),
-            BASSA_VAH_LETTER_VU => Ok(BassaVah::BassaVahLetterVu),
-            BASSA_VAH_LETTER_YEIN => Ok(BassaVah::BassaVahLetterYein),
-            BASSA_VAH_LETTER_PA => Ok(BassaVah::BassaVahLetterPa),
-            BASSA_VAH_LETTER_WADDA => Ok(BassaVah::BassaVahLetterWadda),
-            BASSA_VAH_LETTER_A => Ok(BassaVah::BassaVahLetterA),
-            BASSA_VAH_LETTER_O => Ok(BassaVah::BassaVahLetterO),
-            BASSA_VAH_LETTER_OO => Ok(BassaVah::BassaVahLetterOo),
-            BASSA_VAH_LETTER_U => Ok(BassaVah::BassaVahLetterU),
-            BASSA_VAH_LETTER_EE => Ok(BassaVah::BassaVahLetterEe),
-            BASSA_VAH_LETTER_E => Ok(BassaVah::BassaVahLetterE),
-            BASSA_VAH_LETTER_I => Ok(BassaVah::BassaVahLetterI),
-            BASSA_VAH_COMBINING_HIGH_TONE => Ok(BassaVah::BassaVahCombiningHighTone),
-            BASSA_VAH_COMBINING_LOW_TONE => Ok(BassaVah::BassaVahCombiningLowTone),
-            BASSA_VAH_COMBINING_MID_TONE => Ok(BassaVah::BassaVahCombiningMidTone),
-            BASSA_VAH_COMBINING_LOW_DASH_MID_TONE => Ok(BassaVah::BassaVahCombiningLowDashMidTone),
-            BASSA_VAH_COMBINING_HIGH_DASH_LOW_TONE => Ok(BassaVah::BassaVahCombiningHighDashLowTone),
-            BASSA_VAH_FULL_STOP => Ok(BassaVah::BassaVahFullStop),
+            LETTER_ENNI => Ok(BassaVah::LetterEnni),
+            LETTER_KA => Ok(BassaVah::LetterKa),
+            LETTER_SE => Ok(BassaVah::LetterSe),
+            LETTER_FA => Ok(BassaVah::LetterFa),
+            LETTER_MBE => Ok(BassaVah::LetterMbe),
+            LETTER_YIE => Ok(BassaVah::LetterYie),
+            LETTER_GAH => Ok(BassaVah::LetterGah),
+            LETTER_DHII => Ok(BassaVah::LetterDhii),
+            LETTER_KPAH => Ok(BassaVah::LetterKpah),
+            LETTER_JO => Ok(BassaVah::LetterJo),
+            LETTER_HWAH => Ok(BassaVah::LetterHwah),
+            LETTER_WA => Ok(BassaVah::LetterWa),
+            LETTER_ZO => Ok(BassaVah::LetterZo),
+            LETTER_GBU => Ok(BassaVah::LetterGbu),
+            LETTER_DO => Ok(BassaVah::LetterDo),
+            LETTER_CE => Ok(BassaVah::LetterCe),
+            LETTER_UWU => Ok(BassaVah::LetterUwu),
+            LETTER_TO => Ok(BassaVah::LetterTo),
+            LETTER_BA => Ok(BassaVah::LetterBa),
+            LETTER_VU => Ok(BassaVah::LetterVu),
+            LETTER_YEIN => Ok(BassaVah::LetterYein),
+            LETTER_PA => Ok(BassaVah::LetterPa),
+            LETTER_WADDA => Ok(BassaVah::LetterWadda),
+            LETTER_A => Ok(BassaVah::LetterA),
+            LETTER_O => Ok(BassaVah::LetterO),
+            LETTER_OO => Ok(BassaVah::LetterOo),
+            LETTER_U => Ok(BassaVah::LetterU),
+            LETTER_EE => Ok(BassaVah::LetterEe),
+            LETTER_E => Ok(BassaVah::LetterE),
+            LETTER_I => Ok(BassaVah::LetterI),
+            COMBINING_HIGH_TONE => Ok(BassaVah::CombiningHighTone),
+            COMBINING_LOW_TONE => Ok(BassaVah::CombiningLowTone),
+            COMBINING_MID_TONE => Ok(BassaVah::CombiningMidTone),
+            COMBINING_LOW_DASH_MID_TONE => Ok(BassaVah::CombiningLowDashMidTone),
+            COMBINING_HIGH_DASH_LOW_TONE => Ok(BassaVah::CombiningHighDashLowTone),
+            FULL_STOP => Ok(BassaVah::FullStop),
             _ => Err(()),
         }
     }
@@ -282,50 +282,50 @@ impl Iterator for BassaVah {
 }
 
 impl BassaVah {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        BassaVah::BassaVahLetterEnni
+        BassaVah::LetterEnni
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            BassaVah::BassaVahLetterEnni => "bassa vah letter enni",
-            BassaVah::BassaVahLetterKa => "bassa vah letter ka",
-            BassaVah::BassaVahLetterSe => "bassa vah letter se",
-            BassaVah::BassaVahLetterFa => "bassa vah letter fa",
-            BassaVah::BassaVahLetterMbe => "bassa vah letter mbe",
-            BassaVah::BassaVahLetterYie => "bassa vah letter yie",
-            BassaVah::BassaVahLetterGah => "bassa vah letter gah",
-            BassaVah::BassaVahLetterDhii => "bassa vah letter dhii",
-            BassaVah::BassaVahLetterKpah => "bassa vah letter kpah",
-            BassaVah::BassaVahLetterJo => "bassa vah letter jo",
-            BassaVah::BassaVahLetterHwah => "bassa vah letter hwah",
-            BassaVah::BassaVahLetterWa => "bassa vah letter wa",
-            BassaVah::BassaVahLetterZo => "bassa vah letter zo",
-            BassaVah::BassaVahLetterGbu => "bassa vah letter gbu",
-            BassaVah::BassaVahLetterDo => "bassa vah letter do",
-            BassaVah::BassaVahLetterCe => "bassa vah letter ce",
-            BassaVah::BassaVahLetterUwu => "bassa vah letter uwu",
-            BassaVah::BassaVahLetterTo => "bassa vah letter to",
-            BassaVah::BassaVahLetterBa => "bassa vah letter ba",
-            BassaVah::BassaVahLetterVu => "bassa vah letter vu",
-            BassaVah::BassaVahLetterYein => "bassa vah letter yein",
-            BassaVah::BassaVahLetterPa => "bassa vah letter pa",
-            BassaVah::BassaVahLetterWadda => "bassa vah letter wadda",
-            BassaVah::BassaVahLetterA => "bassa vah letter a",
-            BassaVah::BassaVahLetterO => "bassa vah letter o",
-            BassaVah::BassaVahLetterOo => "bassa vah letter oo",
-            BassaVah::BassaVahLetterU => "bassa vah letter u",
-            BassaVah::BassaVahLetterEe => "bassa vah letter ee",
-            BassaVah::BassaVahLetterE => "bassa vah letter e",
-            BassaVah::BassaVahLetterI => "bassa vah letter i",
-            BassaVah::BassaVahCombiningHighTone => "bassa vah combining high tone",
-            BassaVah::BassaVahCombiningLowTone => "bassa vah combining low tone",
-            BassaVah::BassaVahCombiningMidTone => "bassa vah combining mid tone",
-            BassaVah::BassaVahCombiningLowDashMidTone => "bassa vah combining low-mid tone",
-            BassaVah::BassaVahCombiningHighDashLowTone => "bassa vah combining high-low tone",
-            BassaVah::BassaVahFullStop => "bassa vah full stop",
+            BassaVah::LetterEnni => "bassa vah letter enni",
+            BassaVah::LetterKa => "bassa vah letter ka",
+            BassaVah::LetterSe => "bassa vah letter se",
+            BassaVah::LetterFa => "bassa vah letter fa",
+            BassaVah::LetterMbe => "bassa vah letter mbe",
+            BassaVah::LetterYie => "bassa vah letter yie",
+            BassaVah::LetterGah => "bassa vah letter gah",
+            BassaVah::LetterDhii => "bassa vah letter dhii",
+            BassaVah::LetterKpah => "bassa vah letter kpah",
+            BassaVah::LetterJo => "bassa vah letter jo",
+            BassaVah::LetterHwah => "bassa vah letter hwah",
+            BassaVah::LetterWa => "bassa vah letter wa",
+            BassaVah::LetterZo => "bassa vah letter zo",
+            BassaVah::LetterGbu => "bassa vah letter gbu",
+            BassaVah::LetterDo => "bassa vah letter do",
+            BassaVah::LetterCe => "bassa vah letter ce",
+            BassaVah::LetterUwu => "bassa vah letter uwu",
+            BassaVah::LetterTo => "bassa vah letter to",
+            BassaVah::LetterBa => "bassa vah letter ba",
+            BassaVah::LetterVu => "bassa vah letter vu",
+            BassaVah::LetterYein => "bassa vah letter yein",
+            BassaVah::LetterPa => "bassa vah letter pa",
+            BassaVah::LetterWadda => "bassa vah letter wadda",
+            BassaVah::LetterA => "bassa vah letter a",
+            BassaVah::LetterO => "bassa vah letter o",
+            BassaVah::LetterOo => "bassa vah letter oo",
+            BassaVah::LetterU => "bassa vah letter u",
+            BassaVah::LetterEe => "bassa vah letter ee",
+            BassaVah::LetterE => "bassa vah letter e",
+            BassaVah::LetterI => "bassa vah letter i",
+            BassaVah::CombiningHighTone => "bassa vah combining high tone",
+            BassaVah::CombiningLowTone => "bassa vah combining low tone",
+            BassaVah::CombiningMidTone => "bassa vah combining mid tone",
+            BassaVah::CombiningLowDashMidTone => "bassa vah combining low-mid tone",
+            BassaVah::CombiningHighDashLowTone => "bassa vah combining high-low tone",
+            BassaVah::FullStop => "bassa vah full stop",
         }
     }
 }

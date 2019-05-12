@@ -12,323 +12,323 @@
 /// ႐ ႑ ႒ ႓ ႔ ႕ ႖ ႗ ႘ ႙ ႚ ႛ ႜ ႝ ႞
 pub mod constants {
     /// \u{1000}: 'က'
-    pub const MYANMAR_LETTER_KA: char = 'က';
+    pub const LETTER_KA: char = 'က';
     /// \u{1001}: 'ခ'
-    pub const MYANMAR_LETTER_KHA: char = 'ခ';
+    pub const LETTER_KHA: char = 'ခ';
     /// \u{1002}: 'ဂ'
-    pub const MYANMAR_LETTER_GA: char = 'ဂ';
+    pub const LETTER_GA: char = 'ဂ';
     /// \u{1003}: 'ဃ'
-    pub const MYANMAR_LETTER_GHA: char = 'ဃ';
+    pub const LETTER_GHA: char = 'ဃ';
     /// \u{1004}: 'င'
-    pub const MYANMAR_LETTER_NGA: char = 'င';
+    pub const LETTER_NGA: char = 'င';
     /// \u{1005}: 'စ'
-    pub const MYANMAR_LETTER_CA: char = 'စ';
+    pub const LETTER_CA: char = 'စ';
     /// \u{1006}: 'ဆ'
-    pub const MYANMAR_LETTER_CHA: char = 'ဆ';
+    pub const LETTER_CHA: char = 'ဆ';
     /// \u{1007}: 'ဇ'
-    pub const MYANMAR_LETTER_JA: char = 'ဇ';
+    pub const LETTER_JA: char = 'ဇ';
     /// \u{1008}: 'ဈ'
-    pub const MYANMAR_LETTER_JHA: char = 'ဈ';
+    pub const LETTER_JHA: char = 'ဈ';
     /// \u{1009}: 'ဉ'
-    pub const MYANMAR_LETTER_NYA: char = 'ဉ';
+    pub const LETTER_NYA: char = 'ဉ';
     /// \u{100a}: 'ည'
-    pub const MYANMAR_LETTER_NNYA: char = 'ည';
+    pub const LETTER_NNYA: char = 'ည';
     /// \u{100b}: 'ဋ'
-    pub const MYANMAR_LETTER_TTA: char = 'ဋ';
+    pub const LETTER_TTA: char = 'ဋ';
     /// \u{100c}: 'ဌ'
-    pub const MYANMAR_LETTER_TTHA: char = 'ဌ';
+    pub const LETTER_TTHA: char = 'ဌ';
     /// \u{100d}: 'ဍ'
-    pub const MYANMAR_LETTER_DDA: char = 'ဍ';
+    pub const LETTER_DDA: char = 'ဍ';
     /// \u{100e}: 'ဎ'
-    pub const MYANMAR_LETTER_DDHA: char = 'ဎ';
+    pub const LETTER_DDHA: char = 'ဎ';
     /// \u{100f}: 'ဏ'
-    pub const MYANMAR_LETTER_NNA: char = 'ဏ';
+    pub const LETTER_NNA: char = 'ဏ';
     /// \u{1010}: 'တ'
-    pub const MYANMAR_LETTER_TA: char = 'တ';
+    pub const LETTER_TA: char = 'တ';
     /// \u{1011}: 'ထ'
-    pub const MYANMAR_LETTER_THA: char = 'ထ';
+    pub const LETTER_THA: char = 'ထ';
     /// \u{1012}: 'ဒ'
-    pub const MYANMAR_LETTER_DA: char = 'ဒ';
+    pub const LETTER_DA: char = 'ဒ';
     /// \u{1013}: 'ဓ'
-    pub const MYANMAR_LETTER_DHA: char = 'ဓ';
+    pub const LETTER_DHA: char = 'ဓ';
     /// \u{1014}: 'န'
-    pub const MYANMAR_LETTER_NA: char = 'န';
+    pub const LETTER_NA: char = 'န';
     /// \u{1015}: 'ပ'
-    pub const MYANMAR_LETTER_PA: char = 'ပ';
+    pub const LETTER_PA: char = 'ပ';
     /// \u{1016}: 'ဖ'
-    pub const MYANMAR_LETTER_PHA: char = 'ဖ';
+    pub const LETTER_PHA: char = 'ဖ';
     /// \u{1017}: 'ဗ'
-    pub const MYANMAR_LETTER_BA: char = 'ဗ';
+    pub const LETTER_BA: char = 'ဗ';
     /// \u{1018}: 'ဘ'
-    pub const MYANMAR_LETTER_BHA: char = 'ဘ';
+    pub const LETTER_BHA: char = 'ဘ';
     /// \u{1019}: 'မ'
-    pub const MYANMAR_LETTER_MA: char = 'မ';
+    pub const LETTER_MA: char = 'မ';
     /// \u{101a}: 'ယ'
-    pub const MYANMAR_LETTER_YA: char = 'ယ';
+    pub const LETTER_YA: char = 'ယ';
     /// \u{101b}: 'ရ'
-    pub const MYANMAR_LETTER_RA: char = 'ရ';
+    pub const LETTER_RA: char = 'ရ';
     /// \u{101c}: 'လ'
-    pub const MYANMAR_LETTER_LA: char = 'လ';
+    pub const LETTER_LA: char = 'လ';
     /// \u{101d}: 'ဝ'
-    pub const MYANMAR_LETTER_WA: char = 'ဝ';
+    pub const LETTER_WA: char = 'ဝ';
     /// \u{101e}: 'သ'
-    pub const MYANMAR_LETTER_SA: char = 'သ';
+    pub const LETTER_SA: char = 'သ';
     /// \u{101f}: 'ဟ'
-    pub const MYANMAR_LETTER_HA: char = 'ဟ';
+    pub const LETTER_HA: char = 'ဟ';
     /// \u{1020}: 'ဠ'
-    pub const MYANMAR_LETTER_LLA: char = 'ဠ';
+    pub const LETTER_LLA: char = 'ဠ';
     /// \u{1021}: 'အ'
-    pub const MYANMAR_LETTER_A: char = 'အ';
+    pub const LETTER_A: char = 'အ';
     /// \u{1022}: 'ဢ'
-    pub const MYANMAR_LETTER_SHAN_A: char = 'ဢ';
+    pub const LETTER_SHAN_A: char = 'ဢ';
     /// \u{1023}: 'ဣ'
-    pub const MYANMAR_LETTER_I: char = 'ဣ';
+    pub const LETTER_I: char = 'ဣ';
     /// \u{1024}: 'ဤ'
-    pub const MYANMAR_LETTER_II: char = 'ဤ';
+    pub const LETTER_II: char = 'ဤ';
     /// \u{1025}: 'ဥ'
-    pub const MYANMAR_LETTER_U: char = 'ဥ';
+    pub const LETTER_U: char = 'ဥ';
     /// \u{1026}: 'ဦ'
-    pub const MYANMAR_LETTER_UU: char = 'ဦ';
+    pub const LETTER_UU: char = 'ဦ';
     /// \u{1027}: 'ဧ'
-    pub const MYANMAR_LETTER_E: char = 'ဧ';
+    pub const LETTER_E: char = 'ဧ';
     /// \u{1028}: 'ဨ'
-    pub const MYANMAR_LETTER_MON_E: char = 'ဨ';
+    pub const LETTER_MON_E: char = 'ဨ';
     /// \u{1029}: 'ဩ'
-    pub const MYANMAR_LETTER_O: char = 'ဩ';
+    pub const LETTER_O: char = 'ဩ';
     /// \u{102a}: 'ဪ'
-    pub const MYANMAR_LETTER_AU: char = 'ဪ';
+    pub const LETTER_AU: char = 'ဪ';
     /// \u{102b}: 'ါ'
-    pub const MYANMAR_VOWEL_SIGN_TALL_AA: char = 'ါ';
+    pub const VOWEL_SIGN_TALL_AA: char = 'ါ';
     /// \u{102c}: 'ာ'
-    pub const MYANMAR_VOWEL_SIGN_AA: char = 'ာ';
+    pub const VOWEL_SIGN_AA: char = 'ာ';
     /// \u{102d}: 'ိ'
-    pub const MYANMAR_VOWEL_SIGN_I: char = 'ိ';
+    pub const VOWEL_SIGN_I: char = 'ိ';
     /// \u{102e}: 'ီ'
-    pub const MYANMAR_VOWEL_SIGN_II: char = 'ီ';
+    pub const VOWEL_SIGN_II: char = 'ီ';
     /// \u{102f}: 'ု'
-    pub const MYANMAR_VOWEL_SIGN_U: char = 'ု';
+    pub const VOWEL_SIGN_U: char = 'ု';
     /// \u{1030}: 'ူ'
-    pub const MYANMAR_VOWEL_SIGN_UU: char = 'ူ';
+    pub const VOWEL_SIGN_UU: char = 'ူ';
     /// \u{1031}: 'ေ'
-    pub const MYANMAR_VOWEL_SIGN_E: char = 'ေ';
+    pub const VOWEL_SIGN_E: char = 'ေ';
     /// \u{1032}: 'ဲ'
-    pub const MYANMAR_VOWEL_SIGN_AI: char = 'ဲ';
+    pub const VOWEL_SIGN_AI: char = 'ဲ';
     /// \u{1033}: 'ဳ'
-    pub const MYANMAR_VOWEL_SIGN_MON_II: char = 'ဳ';
+    pub const VOWEL_SIGN_MON_II: char = 'ဳ';
     /// \u{1034}: 'ဴ'
-    pub const MYANMAR_VOWEL_SIGN_MON_O: char = 'ဴ';
+    pub const VOWEL_SIGN_MON_O: char = 'ဴ';
     /// \u{1035}: 'ဵ'
-    pub const MYANMAR_VOWEL_SIGN_E_ABOVE: char = 'ဵ';
+    pub const VOWEL_SIGN_E_ABOVE: char = 'ဵ';
     /// \u{1036}: 'ံ'
-    pub const MYANMAR_SIGN_ANUSVARA: char = 'ံ';
+    pub const SIGN_ANUSVARA: char = 'ံ';
     /// \u{1037}: '့'
-    pub const MYANMAR_SIGN_DOT_BELOW: char = '့';
+    pub const SIGN_DOT_BELOW: char = '့';
     /// \u{1038}: 'း'
-    pub const MYANMAR_SIGN_VISARGA: char = 'း';
+    pub const SIGN_VISARGA: char = 'း';
     /// \u{1039}: '္'
-    pub const MYANMAR_SIGN_VIRAMA: char = '္';
+    pub const SIGN_VIRAMA: char = '္';
     /// \u{103a}: '်'
-    pub const MYANMAR_SIGN_ASAT: char = '်';
+    pub const SIGN_ASAT: char = '်';
     /// \u{103b}: 'ျ'
-    pub const MYANMAR_CONSONANT_SIGN_MEDIAL_YA: char = 'ျ';
+    pub const CONSONANT_SIGN_MEDIAL_YA: char = 'ျ';
     /// \u{103c}: 'ြ'
-    pub const MYANMAR_CONSONANT_SIGN_MEDIAL_RA: char = 'ြ';
+    pub const CONSONANT_SIGN_MEDIAL_RA: char = 'ြ';
     /// \u{103d}: 'ွ'
-    pub const MYANMAR_CONSONANT_SIGN_MEDIAL_WA: char = 'ွ';
+    pub const CONSONANT_SIGN_MEDIAL_WA: char = 'ွ';
     /// \u{103e}: 'ှ'
-    pub const MYANMAR_CONSONANT_SIGN_MEDIAL_HA: char = 'ှ';
+    pub const CONSONANT_SIGN_MEDIAL_HA: char = 'ှ';
     /// \u{103f}: 'ဿ'
-    pub const MYANMAR_LETTER_GREAT_SA: char = 'ဿ';
+    pub const LETTER_GREAT_SA: char = 'ဿ';
     /// \u{1040}: '၀'
-    pub const MYANMAR_DIGIT_ZERO: char = '၀';
+    pub const DIGIT_ZERO: char = '၀';
     /// \u{1041}: '၁'
-    pub const MYANMAR_DIGIT_ONE: char = '၁';
+    pub const DIGIT_ONE: char = '၁';
     /// \u{1042}: '၂'
-    pub const MYANMAR_DIGIT_TWO: char = '၂';
+    pub const DIGIT_TWO: char = '၂';
     /// \u{1043}: '၃'
-    pub const MYANMAR_DIGIT_THREE: char = '၃';
+    pub const DIGIT_THREE: char = '၃';
     /// \u{1044}: '၄'
-    pub const MYANMAR_DIGIT_FOUR: char = '၄';
+    pub const DIGIT_FOUR: char = '၄';
     /// \u{1045}: '၅'
-    pub const MYANMAR_DIGIT_FIVE: char = '၅';
+    pub const DIGIT_FIVE: char = '၅';
     /// \u{1046}: '၆'
-    pub const MYANMAR_DIGIT_SIX: char = '၆';
+    pub const DIGIT_SIX: char = '၆';
     /// \u{1047}: '၇'
-    pub const MYANMAR_DIGIT_SEVEN: char = '၇';
+    pub const DIGIT_SEVEN: char = '၇';
     /// \u{1048}: '၈'
-    pub const MYANMAR_DIGIT_EIGHT: char = '၈';
+    pub const DIGIT_EIGHT: char = '၈';
     /// \u{1049}: '၉'
-    pub const MYANMAR_DIGIT_NINE: char = '၉';
+    pub const DIGIT_NINE: char = '၉';
     /// \u{104a}: '၊'
-    pub const MYANMAR_SIGN_LITTLE_SECTION: char = '၊';
+    pub const SIGN_LITTLE_SECTION: char = '၊';
     /// \u{104b}: '။'
-    pub const MYANMAR_SIGN_SECTION: char = '။';
+    pub const SIGN_SECTION: char = '။';
     /// \u{104c}: '၌'
-    pub const MYANMAR_SYMBOL_LOCATIVE: char = '၌';
+    pub const SYMBOL_LOCATIVE: char = '၌';
     /// \u{104d}: '၍'
-    pub const MYANMAR_SYMBOL_COMPLETED: char = '၍';
+    pub const SYMBOL_COMPLETED: char = '၍';
     /// \u{104e}: '၎'
-    pub const MYANMAR_SYMBOL_AFOREMENTIONED: char = '၎';
+    pub const SYMBOL_AFOREMENTIONED: char = '၎';
     /// \u{104f}: '၏'
-    pub const MYANMAR_SYMBOL_GENITIVE: char = '၏';
+    pub const SYMBOL_GENITIVE: char = '၏';
     /// \u{1050}: 'ၐ'
-    pub const MYANMAR_LETTER_SHA: char = 'ၐ';
+    pub const LETTER_SHA: char = 'ၐ';
     /// \u{1051}: 'ၑ'
-    pub const MYANMAR_LETTER_SSA: char = 'ၑ';
+    pub const LETTER_SSA: char = 'ၑ';
     /// \u{1052}: 'ၒ'
-    pub const MYANMAR_LETTER_VOCALIC_R: char = 'ၒ';
+    pub const LETTER_VOCALIC_R: char = 'ၒ';
     /// \u{1053}: 'ၓ'
-    pub const MYANMAR_LETTER_VOCALIC_RR: char = 'ၓ';
+    pub const LETTER_VOCALIC_RR: char = 'ၓ';
     /// \u{1054}: 'ၔ'
-    pub const MYANMAR_LETTER_VOCALIC_L: char = 'ၔ';
+    pub const LETTER_VOCALIC_L: char = 'ၔ';
     /// \u{1055}: 'ၕ'
-    pub const MYANMAR_LETTER_VOCALIC_LL: char = 'ၕ';
+    pub const LETTER_VOCALIC_LL: char = 'ၕ';
     /// \u{1056}: 'ၖ'
-    pub const MYANMAR_VOWEL_SIGN_VOCALIC_R: char = 'ၖ';
+    pub const VOWEL_SIGN_VOCALIC_R: char = 'ၖ';
     /// \u{1057}: 'ၗ'
-    pub const MYANMAR_VOWEL_SIGN_VOCALIC_RR: char = 'ၗ';
+    pub const VOWEL_SIGN_VOCALIC_RR: char = 'ၗ';
     /// \u{1058}: 'ၘ'
-    pub const MYANMAR_VOWEL_SIGN_VOCALIC_L: char = 'ၘ';
+    pub const VOWEL_SIGN_VOCALIC_L: char = 'ၘ';
     /// \u{1059}: 'ၙ'
-    pub const MYANMAR_VOWEL_SIGN_VOCALIC_LL: char = 'ၙ';
+    pub const VOWEL_SIGN_VOCALIC_LL: char = 'ၙ';
     /// \u{105a}: 'ၚ'
-    pub const MYANMAR_LETTER_MON_NGA: char = 'ၚ';
+    pub const LETTER_MON_NGA: char = 'ၚ';
     /// \u{105b}: 'ၛ'
-    pub const MYANMAR_LETTER_MON_JHA: char = 'ၛ';
+    pub const LETTER_MON_JHA: char = 'ၛ';
     /// \u{105c}: 'ၜ'
-    pub const MYANMAR_LETTER_MON_BBA: char = 'ၜ';
+    pub const LETTER_MON_BBA: char = 'ၜ';
     /// \u{105d}: 'ၝ'
-    pub const MYANMAR_LETTER_MON_BBE: char = 'ၝ';
+    pub const LETTER_MON_BBE: char = 'ၝ';
     /// \u{105e}: 'ၞ'
-    pub const MYANMAR_CONSONANT_SIGN_MON_MEDIAL_NA: char = 'ၞ';
+    pub const CONSONANT_SIGN_MON_MEDIAL_NA: char = 'ၞ';
     /// \u{105f}: 'ၟ'
-    pub const MYANMAR_CONSONANT_SIGN_MON_MEDIAL_MA: char = 'ၟ';
+    pub const CONSONANT_SIGN_MON_MEDIAL_MA: char = 'ၟ';
     /// \u{1060}: 'ၠ'
-    pub const MYANMAR_CONSONANT_SIGN_MON_MEDIAL_LA: char = 'ၠ';
+    pub const CONSONANT_SIGN_MON_MEDIAL_LA: char = 'ၠ';
     /// \u{1061}: 'ၡ'
-    pub const MYANMAR_LETTER_SGAW_KAREN_SHA: char = 'ၡ';
+    pub const LETTER_SGAW_KAREN_SHA: char = 'ၡ';
     /// \u{1062}: 'ၢ'
-    pub const MYANMAR_VOWEL_SIGN_SGAW_KAREN_EU: char = 'ၢ';
+    pub const VOWEL_SIGN_SGAW_KAREN_EU: char = 'ၢ';
     /// \u{1063}: 'ၣ'
-    pub const MYANMAR_TONE_MARK_SGAW_KAREN_HATHI: char = 'ၣ';
+    pub const TONE_MARK_SGAW_KAREN_HATHI: char = 'ၣ';
     /// \u{1064}: 'ၤ'
-    pub const MYANMAR_TONE_MARK_SGAW_KAREN_KE_PHO: char = 'ၤ';
+    pub const TONE_MARK_SGAW_KAREN_KE_PHO: char = 'ၤ';
     /// \u{1065}: 'ၥ'
-    pub const MYANMAR_LETTER_WESTERN_PWO_KAREN_THA: char = 'ၥ';
+    pub const LETTER_WESTERN_PWO_KAREN_THA: char = 'ၥ';
     /// \u{1066}: 'ၦ'
-    pub const MYANMAR_LETTER_WESTERN_PWO_KAREN_PWA: char = 'ၦ';
+    pub const LETTER_WESTERN_PWO_KAREN_PWA: char = 'ၦ';
     /// \u{1067}: 'ၧ'
-    pub const MYANMAR_VOWEL_SIGN_WESTERN_PWO_KAREN_EU: char = 'ၧ';
+    pub const VOWEL_SIGN_WESTERN_PWO_KAREN_EU: char = 'ၧ';
     /// \u{1068}: 'ၨ'
-    pub const MYANMAR_VOWEL_SIGN_WESTERN_PWO_KAREN_UE: char = 'ၨ';
+    pub const VOWEL_SIGN_WESTERN_PWO_KAREN_UE: char = 'ၨ';
     /// \u{1069}: 'ၩ'
-    pub const MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_1: char = 'ၩ';
+    pub const SIGN_WESTERN_PWO_KAREN_TONE_DASH_1: char = 'ၩ';
     /// \u{106a}: 'ၪ'
-    pub const MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_2: char = 'ၪ';
+    pub const SIGN_WESTERN_PWO_KAREN_TONE_DASH_2: char = 'ၪ';
     /// \u{106b}: 'ၫ'
-    pub const MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_3: char = 'ၫ';
+    pub const SIGN_WESTERN_PWO_KAREN_TONE_DASH_3: char = 'ၫ';
     /// \u{106c}: 'ၬ'
-    pub const MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_4: char = 'ၬ';
+    pub const SIGN_WESTERN_PWO_KAREN_TONE_DASH_4: char = 'ၬ';
     /// \u{106d}: 'ၭ'
-    pub const MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_5: char = 'ၭ';
+    pub const SIGN_WESTERN_PWO_KAREN_TONE_DASH_5: char = 'ၭ';
     /// \u{106e}: 'ၮ'
-    pub const MYANMAR_LETTER_EASTERN_PWO_KAREN_NNA: char = 'ၮ';
+    pub const LETTER_EASTERN_PWO_KAREN_NNA: char = 'ၮ';
     /// \u{106f}: 'ၯ'
-    pub const MYANMAR_LETTER_EASTERN_PWO_KAREN_YWA: char = 'ၯ';
+    pub const LETTER_EASTERN_PWO_KAREN_YWA: char = 'ၯ';
     /// \u{1070}: 'ၰ'
-    pub const MYANMAR_LETTER_EASTERN_PWO_KAREN_GHWA: char = 'ၰ';
+    pub const LETTER_EASTERN_PWO_KAREN_GHWA: char = 'ၰ';
     /// \u{1071}: 'ၱ'
-    pub const MYANMAR_VOWEL_SIGN_GEBA_KAREN_I: char = 'ၱ';
+    pub const VOWEL_SIGN_GEBA_KAREN_I: char = 'ၱ';
     /// \u{1072}: 'ၲ'
-    pub const MYANMAR_VOWEL_SIGN_KAYAH_OE: char = 'ၲ';
+    pub const VOWEL_SIGN_KAYAH_OE: char = 'ၲ';
     /// \u{1073}: 'ၳ'
-    pub const MYANMAR_VOWEL_SIGN_KAYAH_U: char = 'ၳ';
+    pub const VOWEL_SIGN_KAYAH_U: char = 'ၳ';
     /// \u{1074}: 'ၴ'
-    pub const MYANMAR_VOWEL_SIGN_KAYAH_EE: char = 'ၴ';
+    pub const VOWEL_SIGN_KAYAH_EE: char = 'ၴ';
     /// \u{1075}: 'ၵ'
-    pub const MYANMAR_LETTER_SHAN_KA: char = 'ၵ';
+    pub const LETTER_SHAN_KA: char = 'ၵ';
     /// \u{1076}: 'ၶ'
-    pub const MYANMAR_LETTER_SHAN_KHA: char = 'ၶ';
+    pub const LETTER_SHAN_KHA: char = 'ၶ';
     /// \u{1077}: 'ၷ'
-    pub const MYANMAR_LETTER_SHAN_GA: char = 'ၷ';
+    pub const LETTER_SHAN_GA: char = 'ၷ';
     /// \u{1078}: 'ၸ'
-    pub const MYANMAR_LETTER_SHAN_CA: char = 'ၸ';
+    pub const LETTER_SHAN_CA: char = 'ၸ';
     /// \u{1079}: 'ၹ'
-    pub const MYANMAR_LETTER_SHAN_ZA: char = 'ၹ';
+    pub const LETTER_SHAN_ZA: char = 'ၹ';
     /// \u{107a}: 'ၺ'
-    pub const MYANMAR_LETTER_SHAN_NYA: char = 'ၺ';
+    pub const LETTER_SHAN_NYA: char = 'ၺ';
     /// \u{107b}: 'ၻ'
-    pub const MYANMAR_LETTER_SHAN_DA: char = 'ၻ';
+    pub const LETTER_SHAN_DA: char = 'ၻ';
     /// \u{107c}: 'ၼ'
-    pub const MYANMAR_LETTER_SHAN_NA: char = 'ၼ';
+    pub const LETTER_SHAN_NA: char = 'ၼ';
     /// \u{107d}: 'ၽ'
-    pub const MYANMAR_LETTER_SHAN_PHA: char = 'ၽ';
+    pub const LETTER_SHAN_PHA: char = 'ၽ';
     /// \u{107e}: 'ၾ'
-    pub const MYANMAR_LETTER_SHAN_FA: char = 'ၾ';
+    pub const LETTER_SHAN_FA: char = 'ၾ';
     /// \u{107f}: 'ၿ'
-    pub const MYANMAR_LETTER_SHAN_BA: char = 'ၿ';
+    pub const LETTER_SHAN_BA: char = 'ၿ';
     /// \u{1080}: 'ႀ'
-    pub const MYANMAR_LETTER_SHAN_THA: char = 'ႀ';
+    pub const LETTER_SHAN_THA: char = 'ႀ';
     /// \u{1081}: 'ႁ'
-    pub const MYANMAR_LETTER_SHAN_HA: char = 'ႁ';
+    pub const LETTER_SHAN_HA: char = 'ႁ';
     /// \u{1082}: 'ႂ'
-    pub const MYANMAR_CONSONANT_SIGN_SHAN_MEDIAL_WA: char = 'ႂ';
+    pub const CONSONANT_SIGN_SHAN_MEDIAL_WA: char = 'ႂ';
     /// \u{1083}: 'ႃ'
-    pub const MYANMAR_VOWEL_SIGN_SHAN_AA: char = 'ႃ';
+    pub const VOWEL_SIGN_SHAN_AA: char = 'ႃ';
     /// \u{1084}: 'ႄ'
-    pub const MYANMAR_VOWEL_SIGN_SHAN_E: char = 'ႄ';
+    pub const VOWEL_SIGN_SHAN_E: char = 'ႄ';
     /// \u{1085}: 'ႅ'
-    pub const MYANMAR_VOWEL_SIGN_SHAN_E_ABOVE: char = 'ႅ';
+    pub const VOWEL_SIGN_SHAN_E_ABOVE: char = 'ႅ';
     /// \u{1086}: 'ႆ'
-    pub const MYANMAR_VOWEL_SIGN_SHAN_FINAL_Y: char = 'ႆ';
+    pub const VOWEL_SIGN_SHAN_FINAL_Y: char = 'ႆ';
     /// \u{1087}: 'ႇ'
-    pub const MYANMAR_SIGN_SHAN_TONE_DASH_2: char = 'ႇ';
+    pub const SIGN_SHAN_TONE_DASH_2: char = 'ႇ';
     /// \u{1088}: 'ႈ'
-    pub const MYANMAR_SIGN_SHAN_TONE_DASH_3: char = 'ႈ';
+    pub const SIGN_SHAN_TONE_DASH_3: char = 'ႈ';
     /// \u{1089}: 'ႉ'
-    pub const MYANMAR_SIGN_SHAN_TONE_DASH_5: char = 'ႉ';
+    pub const SIGN_SHAN_TONE_DASH_5: char = 'ႉ';
     /// \u{108a}: 'ႊ'
-    pub const MYANMAR_SIGN_SHAN_TONE_DASH_6: char = 'ႊ';
+    pub const SIGN_SHAN_TONE_DASH_6: char = 'ႊ';
     /// \u{108b}: 'ႋ'
-    pub const MYANMAR_SIGN_SHAN_COUNCIL_TONE_DASH_2: char = 'ႋ';
+    pub const SIGN_SHAN_COUNCIL_TONE_DASH_2: char = 'ႋ';
     /// \u{108c}: 'ႌ'
-    pub const MYANMAR_SIGN_SHAN_COUNCIL_TONE_DASH_3: char = 'ႌ';
+    pub const SIGN_SHAN_COUNCIL_TONE_DASH_3: char = 'ႌ';
     /// \u{108d}: 'ႍ'
-    pub const MYANMAR_SIGN_SHAN_COUNCIL_EMPHATIC_TONE: char = 'ႍ';
+    pub const SIGN_SHAN_COUNCIL_EMPHATIC_TONE: char = 'ႍ';
     /// \u{108e}: 'ႎ'
-    pub const MYANMAR_LETTER_RUMAI_PALAUNG_FA: char = 'ႎ';
+    pub const LETTER_RUMAI_PALAUNG_FA: char = 'ႎ';
     /// \u{108f}: 'ႏ'
-    pub const MYANMAR_SIGN_RUMAI_PALAUNG_TONE_DASH_5: char = 'ႏ';
+    pub const SIGN_RUMAI_PALAUNG_TONE_DASH_5: char = 'ႏ';
     /// \u{1090}: '႐'
-    pub const MYANMAR_SHAN_DIGIT_ZERO: char = '႐';
+    pub const SHAN_DIGIT_ZERO: char = '႐';
     /// \u{1091}: '႑'
-    pub const MYANMAR_SHAN_DIGIT_ONE: char = '႑';
+    pub const SHAN_DIGIT_ONE: char = '႑';
     /// \u{1092}: '႒'
-    pub const MYANMAR_SHAN_DIGIT_TWO: char = '႒';
+    pub const SHAN_DIGIT_TWO: char = '႒';
     /// \u{1093}: '႓'
-    pub const MYANMAR_SHAN_DIGIT_THREE: char = '႓';
+    pub const SHAN_DIGIT_THREE: char = '႓';
     /// \u{1094}: '႔'
-    pub const MYANMAR_SHAN_DIGIT_FOUR: char = '႔';
+    pub const SHAN_DIGIT_FOUR: char = '႔';
     /// \u{1095}: '႕'
-    pub const MYANMAR_SHAN_DIGIT_FIVE: char = '႕';
+    pub const SHAN_DIGIT_FIVE: char = '႕';
     /// \u{1096}: '႖'
-    pub const MYANMAR_SHAN_DIGIT_SIX: char = '႖';
+    pub const SHAN_DIGIT_SIX: char = '႖';
     /// \u{1097}: '႗'
-    pub const MYANMAR_SHAN_DIGIT_SEVEN: char = '႗';
+    pub const SHAN_DIGIT_SEVEN: char = '႗';
     /// \u{1098}: '႘'
-    pub const MYANMAR_SHAN_DIGIT_EIGHT: char = '႘';
+    pub const SHAN_DIGIT_EIGHT: char = '႘';
     /// \u{1099}: '႙'
-    pub const MYANMAR_SHAN_DIGIT_NINE: char = '႙';
+    pub const SHAN_DIGIT_NINE: char = '႙';
     /// \u{109a}: 'ႚ'
-    pub const MYANMAR_SIGN_KHAMTI_TONE_DASH_1: char = 'ႚ';
+    pub const SIGN_KHAMTI_TONE_DASH_1: char = 'ႚ';
     /// \u{109b}: 'ႛ'
-    pub const MYANMAR_SIGN_KHAMTI_TONE_DASH_3: char = 'ႛ';
+    pub const SIGN_KHAMTI_TONE_DASH_3: char = 'ႛ';
     /// \u{109c}: 'ႜ'
-    pub const MYANMAR_VOWEL_SIGN_AITON_A: char = 'ႜ';
+    pub const VOWEL_SIGN_AITON_A: char = 'ႜ';
     /// \u{109d}: 'ႝ'
-    pub const MYANMAR_VOWEL_SIGN_AITON_AI: char = 'ႝ';
+    pub const VOWEL_SIGN_AITON_AI: char = 'ႝ';
     /// \u{109e}: '႞'
-    pub const MYANMAR_SYMBOL_SHAN_ONE: char = '႞';
+    pub const SYMBOL_SHAN_ONE: char = '႞';
 }
 
 /// \u{1000} → \u{109f}\
@@ -346,488 +346,488 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Myanmar {
     /// \u{1000}: 'က'
-    MyanmarLetterKa,
+    LetterKa,
     /// \u{1001}: 'ခ'
-    MyanmarLetterKha,
+    LetterKha,
     /// \u{1002}: 'ဂ'
-    MyanmarLetterGa,
+    LetterGa,
     /// \u{1003}: 'ဃ'
-    MyanmarLetterGha,
+    LetterGha,
     /// \u{1004}: 'င'
-    MyanmarLetterNga,
+    LetterNga,
     /// \u{1005}: 'စ'
-    MyanmarLetterCa,
+    LetterCa,
     /// \u{1006}: 'ဆ'
-    MyanmarLetterCha,
+    LetterCha,
     /// \u{1007}: 'ဇ'
-    MyanmarLetterJa,
+    LetterJa,
     /// \u{1008}: 'ဈ'
-    MyanmarLetterJha,
+    LetterJha,
     /// \u{1009}: 'ဉ'
-    MyanmarLetterNya,
+    LetterNya,
     /// \u{100a}: 'ည'
-    MyanmarLetterNnya,
+    LetterNnya,
     /// \u{100b}: 'ဋ'
-    MyanmarLetterTta,
+    LetterTta,
     /// \u{100c}: 'ဌ'
-    MyanmarLetterTtha,
+    LetterTtha,
     /// \u{100d}: 'ဍ'
-    MyanmarLetterDda,
+    LetterDda,
     /// \u{100e}: 'ဎ'
-    MyanmarLetterDdha,
+    LetterDdha,
     /// \u{100f}: 'ဏ'
-    MyanmarLetterNna,
+    LetterNna,
     /// \u{1010}: 'တ'
-    MyanmarLetterTa,
+    LetterTa,
     /// \u{1011}: 'ထ'
-    MyanmarLetterTha,
+    LetterTha,
     /// \u{1012}: 'ဒ'
-    MyanmarLetterDa,
+    LetterDa,
     /// \u{1013}: 'ဓ'
-    MyanmarLetterDha,
+    LetterDha,
     /// \u{1014}: 'န'
-    MyanmarLetterNa,
+    LetterNa,
     /// \u{1015}: 'ပ'
-    MyanmarLetterPa,
+    LetterPa,
     /// \u{1016}: 'ဖ'
-    MyanmarLetterPha,
+    LetterPha,
     /// \u{1017}: 'ဗ'
-    MyanmarLetterBa,
+    LetterBa,
     /// \u{1018}: 'ဘ'
-    MyanmarLetterBha,
+    LetterBha,
     /// \u{1019}: 'မ'
-    MyanmarLetterMa,
+    LetterMa,
     /// \u{101a}: 'ယ'
-    MyanmarLetterYa,
+    LetterYa,
     /// \u{101b}: 'ရ'
-    MyanmarLetterRa,
+    LetterRa,
     /// \u{101c}: 'လ'
-    MyanmarLetterLa,
+    LetterLa,
     /// \u{101d}: 'ဝ'
-    MyanmarLetterWa,
+    LetterWa,
     /// \u{101e}: 'သ'
-    MyanmarLetterSa,
+    LetterSa,
     /// \u{101f}: 'ဟ'
-    MyanmarLetterHa,
+    LetterHa,
     /// \u{1020}: 'ဠ'
-    MyanmarLetterLla,
+    LetterLla,
     /// \u{1021}: 'အ'
-    MyanmarLetterA,
+    LetterA,
     /// \u{1022}: 'ဢ'
-    MyanmarLetterShanA,
+    LetterShanA,
     /// \u{1023}: 'ဣ'
-    MyanmarLetterI,
+    LetterI,
     /// \u{1024}: 'ဤ'
-    MyanmarLetterIi,
+    LetterIi,
     /// \u{1025}: 'ဥ'
-    MyanmarLetterU,
+    LetterU,
     /// \u{1026}: 'ဦ'
-    MyanmarLetterUu,
+    LetterUu,
     /// \u{1027}: 'ဧ'
-    MyanmarLetterE,
+    LetterE,
     /// \u{1028}: 'ဨ'
-    MyanmarLetterMonE,
+    LetterMonE,
     /// \u{1029}: 'ဩ'
-    MyanmarLetterO,
+    LetterO,
     /// \u{102a}: 'ဪ'
-    MyanmarLetterAu,
+    LetterAu,
     /// \u{102b}: 'ါ'
-    MyanmarVowelSignTallAa,
+    VowelSignTallAa,
     /// \u{102c}: 'ာ'
-    MyanmarVowelSignAa,
+    VowelSignAa,
     /// \u{102d}: 'ိ'
-    MyanmarVowelSignI,
+    VowelSignI,
     /// \u{102e}: 'ီ'
-    MyanmarVowelSignIi,
+    VowelSignIi,
     /// \u{102f}: 'ု'
-    MyanmarVowelSignU,
+    VowelSignU,
     /// \u{1030}: 'ူ'
-    MyanmarVowelSignUu,
+    VowelSignUu,
     /// \u{1031}: 'ေ'
-    MyanmarVowelSignE,
+    VowelSignE,
     /// \u{1032}: 'ဲ'
-    MyanmarVowelSignAi,
+    VowelSignAi,
     /// \u{1033}: 'ဳ'
-    MyanmarVowelSignMonIi,
+    VowelSignMonIi,
     /// \u{1034}: 'ဴ'
-    MyanmarVowelSignMonO,
+    VowelSignMonO,
     /// \u{1035}: 'ဵ'
-    MyanmarVowelSignEAbove,
+    VowelSignEAbove,
     /// \u{1036}: 'ံ'
-    MyanmarSignAnusvara,
+    SignAnusvara,
     /// \u{1037}: '့'
-    MyanmarSignDotBelow,
+    SignDotBelow,
     /// \u{1038}: 'း'
-    MyanmarSignVisarga,
+    SignVisarga,
     /// \u{1039}: '္'
-    MyanmarSignVirama,
+    SignVirama,
     /// \u{103a}: '်'
-    MyanmarSignAsat,
+    SignAsat,
     /// \u{103b}: 'ျ'
-    MyanmarConsonantSignMedialYa,
+    ConsonantSignMedialYa,
     /// \u{103c}: 'ြ'
-    MyanmarConsonantSignMedialRa,
+    ConsonantSignMedialRa,
     /// \u{103d}: 'ွ'
-    MyanmarConsonantSignMedialWa,
+    ConsonantSignMedialWa,
     /// \u{103e}: 'ှ'
-    MyanmarConsonantSignMedialHa,
+    ConsonantSignMedialHa,
     /// \u{103f}: 'ဿ'
-    MyanmarLetterGreatSa,
+    LetterGreatSa,
     /// \u{1040}: '၀'
-    MyanmarDigitZero,
+    DigitZero,
     /// \u{1041}: '၁'
-    MyanmarDigitOne,
+    DigitOne,
     /// \u{1042}: '၂'
-    MyanmarDigitTwo,
+    DigitTwo,
     /// \u{1043}: '၃'
-    MyanmarDigitThree,
+    DigitThree,
     /// \u{1044}: '၄'
-    MyanmarDigitFour,
+    DigitFour,
     /// \u{1045}: '၅'
-    MyanmarDigitFive,
+    DigitFive,
     /// \u{1046}: '၆'
-    MyanmarDigitSix,
+    DigitSix,
     /// \u{1047}: '၇'
-    MyanmarDigitSeven,
+    DigitSeven,
     /// \u{1048}: '၈'
-    MyanmarDigitEight,
+    DigitEight,
     /// \u{1049}: '၉'
-    MyanmarDigitNine,
+    DigitNine,
     /// \u{104a}: '၊'
-    MyanmarSignLittleSection,
+    SignLittleSection,
     /// \u{104b}: '။'
-    MyanmarSignSection,
+    SignSection,
     /// \u{104c}: '၌'
-    MyanmarSymbolLocative,
+    SymbolLocative,
     /// \u{104d}: '၍'
-    MyanmarSymbolCompleted,
+    SymbolCompleted,
     /// \u{104e}: '၎'
-    MyanmarSymbolAforementioned,
+    SymbolAforementioned,
     /// \u{104f}: '၏'
-    MyanmarSymbolGenitive,
+    SymbolGenitive,
     /// \u{1050}: 'ၐ'
-    MyanmarLetterSha,
+    LetterSha,
     /// \u{1051}: 'ၑ'
-    MyanmarLetterSsa,
+    LetterSsa,
     /// \u{1052}: 'ၒ'
-    MyanmarLetterVocalicR,
+    LetterVocalicR,
     /// \u{1053}: 'ၓ'
-    MyanmarLetterVocalicRr,
+    LetterVocalicRr,
     /// \u{1054}: 'ၔ'
-    MyanmarLetterVocalicL,
+    LetterVocalicL,
     /// \u{1055}: 'ၕ'
-    MyanmarLetterVocalicLl,
+    LetterVocalicLl,
     /// \u{1056}: 'ၖ'
-    MyanmarVowelSignVocalicR,
+    VowelSignVocalicR,
     /// \u{1057}: 'ၗ'
-    MyanmarVowelSignVocalicRr,
+    VowelSignVocalicRr,
     /// \u{1058}: 'ၘ'
-    MyanmarVowelSignVocalicL,
+    VowelSignVocalicL,
     /// \u{1059}: 'ၙ'
-    MyanmarVowelSignVocalicLl,
+    VowelSignVocalicLl,
     /// \u{105a}: 'ၚ'
-    MyanmarLetterMonNga,
+    LetterMonNga,
     /// \u{105b}: 'ၛ'
-    MyanmarLetterMonJha,
+    LetterMonJha,
     /// \u{105c}: 'ၜ'
-    MyanmarLetterMonBba,
+    LetterMonBba,
     /// \u{105d}: 'ၝ'
-    MyanmarLetterMonBbe,
+    LetterMonBbe,
     /// \u{105e}: 'ၞ'
-    MyanmarConsonantSignMonMedialNa,
+    ConsonantSignMonMedialNa,
     /// \u{105f}: 'ၟ'
-    MyanmarConsonantSignMonMedialMa,
+    ConsonantSignMonMedialMa,
     /// \u{1060}: 'ၠ'
-    MyanmarConsonantSignMonMedialLa,
+    ConsonantSignMonMedialLa,
     /// \u{1061}: 'ၡ'
-    MyanmarLetterSgawKarenSha,
+    LetterSgawKarenSha,
     /// \u{1062}: 'ၢ'
-    MyanmarVowelSignSgawKarenEu,
+    VowelSignSgawKarenEu,
     /// \u{1063}: 'ၣ'
-    MyanmarToneMarkSgawKarenHathi,
+    ToneMarkSgawKarenHathi,
     /// \u{1064}: 'ၤ'
-    MyanmarToneMarkSgawKarenKePho,
+    ToneMarkSgawKarenKePho,
     /// \u{1065}: 'ၥ'
-    MyanmarLetterWesternPwoKarenTha,
+    LetterWesternPwoKarenTha,
     /// \u{1066}: 'ၦ'
-    MyanmarLetterWesternPwoKarenPwa,
+    LetterWesternPwoKarenPwa,
     /// \u{1067}: 'ၧ'
-    MyanmarVowelSignWesternPwoKarenEu,
+    VowelSignWesternPwoKarenEu,
     /// \u{1068}: 'ၨ'
-    MyanmarVowelSignWesternPwoKarenUe,
+    VowelSignWesternPwoKarenUe,
     /// \u{1069}: 'ၩ'
-    MyanmarSignWesternPwoKarenToneDash1,
+    SignWesternPwoKarenToneDash1,
     /// \u{106a}: 'ၪ'
-    MyanmarSignWesternPwoKarenToneDash2,
+    SignWesternPwoKarenToneDash2,
     /// \u{106b}: 'ၫ'
-    MyanmarSignWesternPwoKarenToneDash3,
+    SignWesternPwoKarenToneDash3,
     /// \u{106c}: 'ၬ'
-    MyanmarSignWesternPwoKarenToneDash4,
+    SignWesternPwoKarenToneDash4,
     /// \u{106d}: 'ၭ'
-    MyanmarSignWesternPwoKarenToneDash5,
+    SignWesternPwoKarenToneDash5,
     /// \u{106e}: 'ၮ'
-    MyanmarLetterEasternPwoKarenNna,
+    LetterEasternPwoKarenNna,
     /// \u{106f}: 'ၯ'
-    MyanmarLetterEasternPwoKarenYwa,
+    LetterEasternPwoKarenYwa,
     /// \u{1070}: 'ၰ'
-    MyanmarLetterEasternPwoKarenGhwa,
+    LetterEasternPwoKarenGhwa,
     /// \u{1071}: 'ၱ'
-    MyanmarVowelSignGebaKarenI,
+    VowelSignGebaKarenI,
     /// \u{1072}: 'ၲ'
-    MyanmarVowelSignKayahOe,
+    VowelSignKayahOe,
     /// \u{1073}: 'ၳ'
-    MyanmarVowelSignKayahU,
+    VowelSignKayahU,
     /// \u{1074}: 'ၴ'
-    MyanmarVowelSignKayahEe,
+    VowelSignKayahEe,
     /// \u{1075}: 'ၵ'
-    MyanmarLetterShanKa,
+    LetterShanKa,
     /// \u{1076}: 'ၶ'
-    MyanmarLetterShanKha,
+    LetterShanKha,
     /// \u{1077}: 'ၷ'
-    MyanmarLetterShanGa,
+    LetterShanGa,
     /// \u{1078}: 'ၸ'
-    MyanmarLetterShanCa,
+    LetterShanCa,
     /// \u{1079}: 'ၹ'
-    MyanmarLetterShanZa,
+    LetterShanZa,
     /// \u{107a}: 'ၺ'
-    MyanmarLetterShanNya,
+    LetterShanNya,
     /// \u{107b}: 'ၻ'
-    MyanmarLetterShanDa,
+    LetterShanDa,
     /// \u{107c}: 'ၼ'
-    MyanmarLetterShanNa,
+    LetterShanNa,
     /// \u{107d}: 'ၽ'
-    MyanmarLetterShanPha,
+    LetterShanPha,
     /// \u{107e}: 'ၾ'
-    MyanmarLetterShanFa,
+    LetterShanFa,
     /// \u{107f}: 'ၿ'
-    MyanmarLetterShanBa,
+    LetterShanBa,
     /// \u{1080}: 'ႀ'
-    MyanmarLetterShanTha,
+    LetterShanTha,
     /// \u{1081}: 'ႁ'
-    MyanmarLetterShanHa,
+    LetterShanHa,
     /// \u{1082}: 'ႂ'
-    MyanmarConsonantSignShanMedialWa,
+    ConsonantSignShanMedialWa,
     /// \u{1083}: 'ႃ'
-    MyanmarVowelSignShanAa,
+    VowelSignShanAa,
     /// \u{1084}: 'ႄ'
-    MyanmarVowelSignShanE,
+    VowelSignShanE,
     /// \u{1085}: 'ႅ'
-    MyanmarVowelSignShanEAbove,
+    VowelSignShanEAbove,
     /// \u{1086}: 'ႆ'
-    MyanmarVowelSignShanFinalY,
+    VowelSignShanFinalY,
     /// \u{1087}: 'ႇ'
-    MyanmarSignShanToneDash2,
+    SignShanToneDash2,
     /// \u{1088}: 'ႈ'
-    MyanmarSignShanToneDash3,
+    SignShanToneDash3,
     /// \u{1089}: 'ႉ'
-    MyanmarSignShanToneDash5,
+    SignShanToneDash5,
     /// \u{108a}: 'ႊ'
-    MyanmarSignShanToneDash6,
+    SignShanToneDash6,
     /// \u{108b}: 'ႋ'
-    MyanmarSignShanCouncilToneDash2,
+    SignShanCouncilToneDash2,
     /// \u{108c}: 'ႌ'
-    MyanmarSignShanCouncilToneDash3,
+    SignShanCouncilToneDash3,
     /// \u{108d}: 'ႍ'
-    MyanmarSignShanCouncilEmphaticTone,
+    SignShanCouncilEmphaticTone,
     /// \u{108e}: 'ႎ'
-    MyanmarLetterRumaiPalaungFa,
+    LetterRumaiPalaungFa,
     /// \u{108f}: 'ႏ'
-    MyanmarSignRumaiPalaungToneDash5,
+    SignRumaiPalaungToneDash5,
     /// \u{1090}: '႐'
-    MyanmarShanDigitZero,
+    ShanDigitZero,
     /// \u{1091}: '႑'
-    MyanmarShanDigitOne,
+    ShanDigitOne,
     /// \u{1092}: '႒'
-    MyanmarShanDigitTwo,
+    ShanDigitTwo,
     /// \u{1093}: '႓'
-    MyanmarShanDigitThree,
+    ShanDigitThree,
     /// \u{1094}: '႔'
-    MyanmarShanDigitFour,
+    ShanDigitFour,
     /// \u{1095}: '႕'
-    MyanmarShanDigitFive,
+    ShanDigitFive,
     /// \u{1096}: '႖'
-    MyanmarShanDigitSix,
+    ShanDigitSix,
     /// \u{1097}: '႗'
-    MyanmarShanDigitSeven,
+    ShanDigitSeven,
     /// \u{1098}: '႘'
-    MyanmarShanDigitEight,
+    ShanDigitEight,
     /// \u{1099}: '႙'
-    MyanmarShanDigitNine,
+    ShanDigitNine,
     /// \u{109a}: 'ႚ'
-    MyanmarSignKhamtiToneDash1,
+    SignKhamtiToneDash1,
     /// \u{109b}: 'ႛ'
-    MyanmarSignKhamtiToneDash3,
+    SignKhamtiToneDash3,
     /// \u{109c}: 'ႜ'
-    MyanmarVowelSignAitonA,
+    VowelSignAitonA,
     /// \u{109d}: 'ႝ'
-    MyanmarVowelSignAitonAi,
+    VowelSignAitonAi,
     /// \u{109e}: '႞'
-    MyanmarSymbolShanOne,
+    SymbolShanOne,
 }
 
 impl Into<char> for Myanmar {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Myanmar::MyanmarLetterKa => MYANMAR_LETTER_KA,
-            Myanmar::MyanmarLetterKha => MYANMAR_LETTER_KHA,
-            Myanmar::MyanmarLetterGa => MYANMAR_LETTER_GA,
-            Myanmar::MyanmarLetterGha => MYANMAR_LETTER_GHA,
-            Myanmar::MyanmarLetterNga => MYANMAR_LETTER_NGA,
-            Myanmar::MyanmarLetterCa => MYANMAR_LETTER_CA,
-            Myanmar::MyanmarLetterCha => MYANMAR_LETTER_CHA,
-            Myanmar::MyanmarLetterJa => MYANMAR_LETTER_JA,
-            Myanmar::MyanmarLetterJha => MYANMAR_LETTER_JHA,
-            Myanmar::MyanmarLetterNya => MYANMAR_LETTER_NYA,
-            Myanmar::MyanmarLetterNnya => MYANMAR_LETTER_NNYA,
-            Myanmar::MyanmarLetterTta => MYANMAR_LETTER_TTA,
-            Myanmar::MyanmarLetterTtha => MYANMAR_LETTER_TTHA,
-            Myanmar::MyanmarLetterDda => MYANMAR_LETTER_DDA,
-            Myanmar::MyanmarLetterDdha => MYANMAR_LETTER_DDHA,
-            Myanmar::MyanmarLetterNna => MYANMAR_LETTER_NNA,
-            Myanmar::MyanmarLetterTa => MYANMAR_LETTER_TA,
-            Myanmar::MyanmarLetterTha => MYANMAR_LETTER_THA,
-            Myanmar::MyanmarLetterDa => MYANMAR_LETTER_DA,
-            Myanmar::MyanmarLetterDha => MYANMAR_LETTER_DHA,
-            Myanmar::MyanmarLetterNa => MYANMAR_LETTER_NA,
-            Myanmar::MyanmarLetterPa => MYANMAR_LETTER_PA,
-            Myanmar::MyanmarLetterPha => MYANMAR_LETTER_PHA,
-            Myanmar::MyanmarLetterBa => MYANMAR_LETTER_BA,
-            Myanmar::MyanmarLetterBha => MYANMAR_LETTER_BHA,
-            Myanmar::MyanmarLetterMa => MYANMAR_LETTER_MA,
-            Myanmar::MyanmarLetterYa => MYANMAR_LETTER_YA,
-            Myanmar::MyanmarLetterRa => MYANMAR_LETTER_RA,
-            Myanmar::MyanmarLetterLa => MYANMAR_LETTER_LA,
-            Myanmar::MyanmarLetterWa => MYANMAR_LETTER_WA,
-            Myanmar::MyanmarLetterSa => MYANMAR_LETTER_SA,
-            Myanmar::MyanmarLetterHa => MYANMAR_LETTER_HA,
-            Myanmar::MyanmarLetterLla => MYANMAR_LETTER_LLA,
-            Myanmar::MyanmarLetterA => MYANMAR_LETTER_A,
-            Myanmar::MyanmarLetterShanA => MYANMAR_LETTER_SHAN_A,
-            Myanmar::MyanmarLetterI => MYANMAR_LETTER_I,
-            Myanmar::MyanmarLetterIi => MYANMAR_LETTER_II,
-            Myanmar::MyanmarLetterU => MYANMAR_LETTER_U,
-            Myanmar::MyanmarLetterUu => MYANMAR_LETTER_UU,
-            Myanmar::MyanmarLetterE => MYANMAR_LETTER_E,
-            Myanmar::MyanmarLetterMonE => MYANMAR_LETTER_MON_E,
-            Myanmar::MyanmarLetterO => MYANMAR_LETTER_O,
-            Myanmar::MyanmarLetterAu => MYANMAR_LETTER_AU,
-            Myanmar::MyanmarVowelSignTallAa => MYANMAR_VOWEL_SIGN_TALL_AA,
-            Myanmar::MyanmarVowelSignAa => MYANMAR_VOWEL_SIGN_AA,
-            Myanmar::MyanmarVowelSignI => MYANMAR_VOWEL_SIGN_I,
-            Myanmar::MyanmarVowelSignIi => MYANMAR_VOWEL_SIGN_II,
-            Myanmar::MyanmarVowelSignU => MYANMAR_VOWEL_SIGN_U,
-            Myanmar::MyanmarVowelSignUu => MYANMAR_VOWEL_SIGN_UU,
-            Myanmar::MyanmarVowelSignE => MYANMAR_VOWEL_SIGN_E,
-            Myanmar::MyanmarVowelSignAi => MYANMAR_VOWEL_SIGN_AI,
-            Myanmar::MyanmarVowelSignMonIi => MYANMAR_VOWEL_SIGN_MON_II,
-            Myanmar::MyanmarVowelSignMonO => MYANMAR_VOWEL_SIGN_MON_O,
-            Myanmar::MyanmarVowelSignEAbove => MYANMAR_VOWEL_SIGN_E_ABOVE,
-            Myanmar::MyanmarSignAnusvara => MYANMAR_SIGN_ANUSVARA,
-            Myanmar::MyanmarSignDotBelow => MYANMAR_SIGN_DOT_BELOW,
-            Myanmar::MyanmarSignVisarga => MYANMAR_SIGN_VISARGA,
-            Myanmar::MyanmarSignVirama => MYANMAR_SIGN_VIRAMA,
-            Myanmar::MyanmarSignAsat => MYANMAR_SIGN_ASAT,
-            Myanmar::MyanmarConsonantSignMedialYa => MYANMAR_CONSONANT_SIGN_MEDIAL_YA,
-            Myanmar::MyanmarConsonantSignMedialRa => MYANMAR_CONSONANT_SIGN_MEDIAL_RA,
-            Myanmar::MyanmarConsonantSignMedialWa => MYANMAR_CONSONANT_SIGN_MEDIAL_WA,
-            Myanmar::MyanmarConsonantSignMedialHa => MYANMAR_CONSONANT_SIGN_MEDIAL_HA,
-            Myanmar::MyanmarLetterGreatSa => MYANMAR_LETTER_GREAT_SA,
-            Myanmar::MyanmarDigitZero => MYANMAR_DIGIT_ZERO,
-            Myanmar::MyanmarDigitOne => MYANMAR_DIGIT_ONE,
-            Myanmar::MyanmarDigitTwo => MYANMAR_DIGIT_TWO,
-            Myanmar::MyanmarDigitThree => MYANMAR_DIGIT_THREE,
-            Myanmar::MyanmarDigitFour => MYANMAR_DIGIT_FOUR,
-            Myanmar::MyanmarDigitFive => MYANMAR_DIGIT_FIVE,
-            Myanmar::MyanmarDigitSix => MYANMAR_DIGIT_SIX,
-            Myanmar::MyanmarDigitSeven => MYANMAR_DIGIT_SEVEN,
-            Myanmar::MyanmarDigitEight => MYANMAR_DIGIT_EIGHT,
-            Myanmar::MyanmarDigitNine => MYANMAR_DIGIT_NINE,
-            Myanmar::MyanmarSignLittleSection => MYANMAR_SIGN_LITTLE_SECTION,
-            Myanmar::MyanmarSignSection => MYANMAR_SIGN_SECTION,
-            Myanmar::MyanmarSymbolLocative => MYANMAR_SYMBOL_LOCATIVE,
-            Myanmar::MyanmarSymbolCompleted => MYANMAR_SYMBOL_COMPLETED,
-            Myanmar::MyanmarSymbolAforementioned => MYANMAR_SYMBOL_AFOREMENTIONED,
-            Myanmar::MyanmarSymbolGenitive => MYANMAR_SYMBOL_GENITIVE,
-            Myanmar::MyanmarLetterSha => MYANMAR_LETTER_SHA,
-            Myanmar::MyanmarLetterSsa => MYANMAR_LETTER_SSA,
-            Myanmar::MyanmarLetterVocalicR => MYANMAR_LETTER_VOCALIC_R,
-            Myanmar::MyanmarLetterVocalicRr => MYANMAR_LETTER_VOCALIC_RR,
-            Myanmar::MyanmarLetterVocalicL => MYANMAR_LETTER_VOCALIC_L,
-            Myanmar::MyanmarLetterVocalicLl => MYANMAR_LETTER_VOCALIC_LL,
-            Myanmar::MyanmarVowelSignVocalicR => MYANMAR_VOWEL_SIGN_VOCALIC_R,
-            Myanmar::MyanmarVowelSignVocalicRr => MYANMAR_VOWEL_SIGN_VOCALIC_RR,
-            Myanmar::MyanmarVowelSignVocalicL => MYANMAR_VOWEL_SIGN_VOCALIC_L,
-            Myanmar::MyanmarVowelSignVocalicLl => MYANMAR_VOWEL_SIGN_VOCALIC_LL,
-            Myanmar::MyanmarLetterMonNga => MYANMAR_LETTER_MON_NGA,
-            Myanmar::MyanmarLetterMonJha => MYANMAR_LETTER_MON_JHA,
-            Myanmar::MyanmarLetterMonBba => MYANMAR_LETTER_MON_BBA,
-            Myanmar::MyanmarLetterMonBbe => MYANMAR_LETTER_MON_BBE,
-            Myanmar::MyanmarConsonantSignMonMedialNa => MYANMAR_CONSONANT_SIGN_MON_MEDIAL_NA,
-            Myanmar::MyanmarConsonantSignMonMedialMa => MYANMAR_CONSONANT_SIGN_MON_MEDIAL_MA,
-            Myanmar::MyanmarConsonantSignMonMedialLa => MYANMAR_CONSONANT_SIGN_MON_MEDIAL_LA,
-            Myanmar::MyanmarLetterSgawKarenSha => MYANMAR_LETTER_SGAW_KAREN_SHA,
-            Myanmar::MyanmarVowelSignSgawKarenEu => MYANMAR_VOWEL_SIGN_SGAW_KAREN_EU,
-            Myanmar::MyanmarToneMarkSgawKarenHathi => MYANMAR_TONE_MARK_SGAW_KAREN_HATHI,
-            Myanmar::MyanmarToneMarkSgawKarenKePho => MYANMAR_TONE_MARK_SGAW_KAREN_KE_PHO,
-            Myanmar::MyanmarLetterWesternPwoKarenTha => MYANMAR_LETTER_WESTERN_PWO_KAREN_THA,
-            Myanmar::MyanmarLetterWesternPwoKarenPwa => MYANMAR_LETTER_WESTERN_PWO_KAREN_PWA,
-            Myanmar::MyanmarVowelSignWesternPwoKarenEu => MYANMAR_VOWEL_SIGN_WESTERN_PWO_KAREN_EU,
-            Myanmar::MyanmarVowelSignWesternPwoKarenUe => MYANMAR_VOWEL_SIGN_WESTERN_PWO_KAREN_UE,
-            Myanmar::MyanmarSignWesternPwoKarenToneDash1 => MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_1,
-            Myanmar::MyanmarSignWesternPwoKarenToneDash2 => MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_2,
-            Myanmar::MyanmarSignWesternPwoKarenToneDash3 => MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_3,
-            Myanmar::MyanmarSignWesternPwoKarenToneDash4 => MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_4,
-            Myanmar::MyanmarSignWesternPwoKarenToneDash5 => MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_5,
-            Myanmar::MyanmarLetterEasternPwoKarenNna => MYANMAR_LETTER_EASTERN_PWO_KAREN_NNA,
-            Myanmar::MyanmarLetterEasternPwoKarenYwa => MYANMAR_LETTER_EASTERN_PWO_KAREN_YWA,
-            Myanmar::MyanmarLetterEasternPwoKarenGhwa => MYANMAR_LETTER_EASTERN_PWO_KAREN_GHWA,
-            Myanmar::MyanmarVowelSignGebaKarenI => MYANMAR_VOWEL_SIGN_GEBA_KAREN_I,
-            Myanmar::MyanmarVowelSignKayahOe => MYANMAR_VOWEL_SIGN_KAYAH_OE,
-            Myanmar::MyanmarVowelSignKayahU => MYANMAR_VOWEL_SIGN_KAYAH_U,
-            Myanmar::MyanmarVowelSignKayahEe => MYANMAR_VOWEL_SIGN_KAYAH_EE,
-            Myanmar::MyanmarLetterShanKa => MYANMAR_LETTER_SHAN_KA,
-            Myanmar::MyanmarLetterShanKha => MYANMAR_LETTER_SHAN_KHA,
-            Myanmar::MyanmarLetterShanGa => MYANMAR_LETTER_SHAN_GA,
-            Myanmar::MyanmarLetterShanCa => MYANMAR_LETTER_SHAN_CA,
-            Myanmar::MyanmarLetterShanZa => MYANMAR_LETTER_SHAN_ZA,
-            Myanmar::MyanmarLetterShanNya => MYANMAR_LETTER_SHAN_NYA,
-            Myanmar::MyanmarLetterShanDa => MYANMAR_LETTER_SHAN_DA,
-            Myanmar::MyanmarLetterShanNa => MYANMAR_LETTER_SHAN_NA,
-            Myanmar::MyanmarLetterShanPha => MYANMAR_LETTER_SHAN_PHA,
-            Myanmar::MyanmarLetterShanFa => MYANMAR_LETTER_SHAN_FA,
-            Myanmar::MyanmarLetterShanBa => MYANMAR_LETTER_SHAN_BA,
-            Myanmar::MyanmarLetterShanTha => MYANMAR_LETTER_SHAN_THA,
-            Myanmar::MyanmarLetterShanHa => MYANMAR_LETTER_SHAN_HA,
-            Myanmar::MyanmarConsonantSignShanMedialWa => MYANMAR_CONSONANT_SIGN_SHAN_MEDIAL_WA,
-            Myanmar::MyanmarVowelSignShanAa => MYANMAR_VOWEL_SIGN_SHAN_AA,
-            Myanmar::MyanmarVowelSignShanE => MYANMAR_VOWEL_SIGN_SHAN_E,
-            Myanmar::MyanmarVowelSignShanEAbove => MYANMAR_VOWEL_SIGN_SHAN_E_ABOVE,
-            Myanmar::MyanmarVowelSignShanFinalY => MYANMAR_VOWEL_SIGN_SHAN_FINAL_Y,
-            Myanmar::MyanmarSignShanToneDash2 => MYANMAR_SIGN_SHAN_TONE_DASH_2,
-            Myanmar::MyanmarSignShanToneDash3 => MYANMAR_SIGN_SHAN_TONE_DASH_3,
-            Myanmar::MyanmarSignShanToneDash5 => MYANMAR_SIGN_SHAN_TONE_DASH_5,
-            Myanmar::MyanmarSignShanToneDash6 => MYANMAR_SIGN_SHAN_TONE_DASH_6,
-            Myanmar::MyanmarSignShanCouncilToneDash2 => MYANMAR_SIGN_SHAN_COUNCIL_TONE_DASH_2,
-            Myanmar::MyanmarSignShanCouncilToneDash3 => MYANMAR_SIGN_SHAN_COUNCIL_TONE_DASH_3,
-            Myanmar::MyanmarSignShanCouncilEmphaticTone => MYANMAR_SIGN_SHAN_COUNCIL_EMPHATIC_TONE,
-            Myanmar::MyanmarLetterRumaiPalaungFa => MYANMAR_LETTER_RUMAI_PALAUNG_FA,
-            Myanmar::MyanmarSignRumaiPalaungToneDash5 => MYANMAR_SIGN_RUMAI_PALAUNG_TONE_DASH_5,
-            Myanmar::MyanmarShanDigitZero => MYANMAR_SHAN_DIGIT_ZERO,
-            Myanmar::MyanmarShanDigitOne => MYANMAR_SHAN_DIGIT_ONE,
-            Myanmar::MyanmarShanDigitTwo => MYANMAR_SHAN_DIGIT_TWO,
-            Myanmar::MyanmarShanDigitThree => MYANMAR_SHAN_DIGIT_THREE,
-            Myanmar::MyanmarShanDigitFour => MYANMAR_SHAN_DIGIT_FOUR,
-            Myanmar::MyanmarShanDigitFive => MYANMAR_SHAN_DIGIT_FIVE,
-            Myanmar::MyanmarShanDigitSix => MYANMAR_SHAN_DIGIT_SIX,
-            Myanmar::MyanmarShanDigitSeven => MYANMAR_SHAN_DIGIT_SEVEN,
-            Myanmar::MyanmarShanDigitEight => MYANMAR_SHAN_DIGIT_EIGHT,
-            Myanmar::MyanmarShanDigitNine => MYANMAR_SHAN_DIGIT_NINE,
-            Myanmar::MyanmarSignKhamtiToneDash1 => MYANMAR_SIGN_KHAMTI_TONE_DASH_1,
-            Myanmar::MyanmarSignKhamtiToneDash3 => MYANMAR_SIGN_KHAMTI_TONE_DASH_3,
-            Myanmar::MyanmarVowelSignAitonA => MYANMAR_VOWEL_SIGN_AITON_A,
-            Myanmar::MyanmarVowelSignAitonAi => MYANMAR_VOWEL_SIGN_AITON_AI,
-            Myanmar::MyanmarSymbolShanOne => MYANMAR_SYMBOL_SHAN_ONE,
+            Myanmar::LetterKa => LETTER_KA,
+            Myanmar::LetterKha => LETTER_KHA,
+            Myanmar::LetterGa => LETTER_GA,
+            Myanmar::LetterGha => LETTER_GHA,
+            Myanmar::LetterNga => LETTER_NGA,
+            Myanmar::LetterCa => LETTER_CA,
+            Myanmar::LetterCha => LETTER_CHA,
+            Myanmar::LetterJa => LETTER_JA,
+            Myanmar::LetterJha => LETTER_JHA,
+            Myanmar::LetterNya => LETTER_NYA,
+            Myanmar::LetterNnya => LETTER_NNYA,
+            Myanmar::LetterTta => LETTER_TTA,
+            Myanmar::LetterTtha => LETTER_TTHA,
+            Myanmar::LetterDda => LETTER_DDA,
+            Myanmar::LetterDdha => LETTER_DDHA,
+            Myanmar::LetterNna => LETTER_NNA,
+            Myanmar::LetterTa => LETTER_TA,
+            Myanmar::LetterTha => LETTER_THA,
+            Myanmar::LetterDa => LETTER_DA,
+            Myanmar::LetterDha => LETTER_DHA,
+            Myanmar::LetterNa => LETTER_NA,
+            Myanmar::LetterPa => LETTER_PA,
+            Myanmar::LetterPha => LETTER_PHA,
+            Myanmar::LetterBa => LETTER_BA,
+            Myanmar::LetterBha => LETTER_BHA,
+            Myanmar::LetterMa => LETTER_MA,
+            Myanmar::LetterYa => LETTER_YA,
+            Myanmar::LetterRa => LETTER_RA,
+            Myanmar::LetterLa => LETTER_LA,
+            Myanmar::LetterWa => LETTER_WA,
+            Myanmar::LetterSa => LETTER_SA,
+            Myanmar::LetterHa => LETTER_HA,
+            Myanmar::LetterLla => LETTER_LLA,
+            Myanmar::LetterA => LETTER_A,
+            Myanmar::LetterShanA => LETTER_SHAN_A,
+            Myanmar::LetterI => LETTER_I,
+            Myanmar::LetterIi => LETTER_II,
+            Myanmar::LetterU => LETTER_U,
+            Myanmar::LetterUu => LETTER_UU,
+            Myanmar::LetterE => LETTER_E,
+            Myanmar::LetterMonE => LETTER_MON_E,
+            Myanmar::LetterO => LETTER_O,
+            Myanmar::LetterAu => LETTER_AU,
+            Myanmar::VowelSignTallAa => VOWEL_SIGN_TALL_AA,
+            Myanmar::VowelSignAa => VOWEL_SIGN_AA,
+            Myanmar::VowelSignI => VOWEL_SIGN_I,
+            Myanmar::VowelSignIi => VOWEL_SIGN_II,
+            Myanmar::VowelSignU => VOWEL_SIGN_U,
+            Myanmar::VowelSignUu => VOWEL_SIGN_UU,
+            Myanmar::VowelSignE => VOWEL_SIGN_E,
+            Myanmar::VowelSignAi => VOWEL_SIGN_AI,
+            Myanmar::VowelSignMonIi => VOWEL_SIGN_MON_II,
+            Myanmar::VowelSignMonO => VOWEL_SIGN_MON_O,
+            Myanmar::VowelSignEAbove => VOWEL_SIGN_E_ABOVE,
+            Myanmar::SignAnusvara => SIGN_ANUSVARA,
+            Myanmar::SignDotBelow => SIGN_DOT_BELOW,
+            Myanmar::SignVisarga => SIGN_VISARGA,
+            Myanmar::SignVirama => SIGN_VIRAMA,
+            Myanmar::SignAsat => SIGN_ASAT,
+            Myanmar::ConsonantSignMedialYa => CONSONANT_SIGN_MEDIAL_YA,
+            Myanmar::ConsonantSignMedialRa => CONSONANT_SIGN_MEDIAL_RA,
+            Myanmar::ConsonantSignMedialWa => CONSONANT_SIGN_MEDIAL_WA,
+            Myanmar::ConsonantSignMedialHa => CONSONANT_SIGN_MEDIAL_HA,
+            Myanmar::LetterGreatSa => LETTER_GREAT_SA,
+            Myanmar::DigitZero => DIGIT_ZERO,
+            Myanmar::DigitOne => DIGIT_ONE,
+            Myanmar::DigitTwo => DIGIT_TWO,
+            Myanmar::DigitThree => DIGIT_THREE,
+            Myanmar::DigitFour => DIGIT_FOUR,
+            Myanmar::DigitFive => DIGIT_FIVE,
+            Myanmar::DigitSix => DIGIT_SIX,
+            Myanmar::DigitSeven => DIGIT_SEVEN,
+            Myanmar::DigitEight => DIGIT_EIGHT,
+            Myanmar::DigitNine => DIGIT_NINE,
+            Myanmar::SignLittleSection => SIGN_LITTLE_SECTION,
+            Myanmar::SignSection => SIGN_SECTION,
+            Myanmar::SymbolLocative => SYMBOL_LOCATIVE,
+            Myanmar::SymbolCompleted => SYMBOL_COMPLETED,
+            Myanmar::SymbolAforementioned => SYMBOL_AFOREMENTIONED,
+            Myanmar::SymbolGenitive => SYMBOL_GENITIVE,
+            Myanmar::LetterSha => LETTER_SHA,
+            Myanmar::LetterSsa => LETTER_SSA,
+            Myanmar::LetterVocalicR => LETTER_VOCALIC_R,
+            Myanmar::LetterVocalicRr => LETTER_VOCALIC_RR,
+            Myanmar::LetterVocalicL => LETTER_VOCALIC_L,
+            Myanmar::LetterVocalicLl => LETTER_VOCALIC_LL,
+            Myanmar::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
+            Myanmar::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
+            Myanmar::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
+            Myanmar::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
+            Myanmar::LetterMonNga => LETTER_MON_NGA,
+            Myanmar::LetterMonJha => LETTER_MON_JHA,
+            Myanmar::LetterMonBba => LETTER_MON_BBA,
+            Myanmar::LetterMonBbe => LETTER_MON_BBE,
+            Myanmar::ConsonantSignMonMedialNa => CONSONANT_SIGN_MON_MEDIAL_NA,
+            Myanmar::ConsonantSignMonMedialMa => CONSONANT_SIGN_MON_MEDIAL_MA,
+            Myanmar::ConsonantSignMonMedialLa => CONSONANT_SIGN_MON_MEDIAL_LA,
+            Myanmar::LetterSgawKarenSha => LETTER_SGAW_KAREN_SHA,
+            Myanmar::VowelSignSgawKarenEu => VOWEL_SIGN_SGAW_KAREN_EU,
+            Myanmar::ToneMarkSgawKarenHathi => TONE_MARK_SGAW_KAREN_HATHI,
+            Myanmar::ToneMarkSgawKarenKePho => TONE_MARK_SGAW_KAREN_KE_PHO,
+            Myanmar::LetterWesternPwoKarenTha => LETTER_WESTERN_PWO_KAREN_THA,
+            Myanmar::LetterWesternPwoKarenPwa => LETTER_WESTERN_PWO_KAREN_PWA,
+            Myanmar::VowelSignWesternPwoKarenEu => VOWEL_SIGN_WESTERN_PWO_KAREN_EU,
+            Myanmar::VowelSignWesternPwoKarenUe => VOWEL_SIGN_WESTERN_PWO_KAREN_UE,
+            Myanmar::SignWesternPwoKarenToneDash1 => SIGN_WESTERN_PWO_KAREN_TONE_DASH_1,
+            Myanmar::SignWesternPwoKarenToneDash2 => SIGN_WESTERN_PWO_KAREN_TONE_DASH_2,
+            Myanmar::SignWesternPwoKarenToneDash3 => SIGN_WESTERN_PWO_KAREN_TONE_DASH_3,
+            Myanmar::SignWesternPwoKarenToneDash4 => SIGN_WESTERN_PWO_KAREN_TONE_DASH_4,
+            Myanmar::SignWesternPwoKarenToneDash5 => SIGN_WESTERN_PWO_KAREN_TONE_DASH_5,
+            Myanmar::LetterEasternPwoKarenNna => LETTER_EASTERN_PWO_KAREN_NNA,
+            Myanmar::LetterEasternPwoKarenYwa => LETTER_EASTERN_PWO_KAREN_YWA,
+            Myanmar::LetterEasternPwoKarenGhwa => LETTER_EASTERN_PWO_KAREN_GHWA,
+            Myanmar::VowelSignGebaKarenI => VOWEL_SIGN_GEBA_KAREN_I,
+            Myanmar::VowelSignKayahOe => VOWEL_SIGN_KAYAH_OE,
+            Myanmar::VowelSignKayahU => VOWEL_SIGN_KAYAH_U,
+            Myanmar::VowelSignKayahEe => VOWEL_SIGN_KAYAH_EE,
+            Myanmar::LetterShanKa => LETTER_SHAN_KA,
+            Myanmar::LetterShanKha => LETTER_SHAN_KHA,
+            Myanmar::LetterShanGa => LETTER_SHAN_GA,
+            Myanmar::LetterShanCa => LETTER_SHAN_CA,
+            Myanmar::LetterShanZa => LETTER_SHAN_ZA,
+            Myanmar::LetterShanNya => LETTER_SHAN_NYA,
+            Myanmar::LetterShanDa => LETTER_SHAN_DA,
+            Myanmar::LetterShanNa => LETTER_SHAN_NA,
+            Myanmar::LetterShanPha => LETTER_SHAN_PHA,
+            Myanmar::LetterShanFa => LETTER_SHAN_FA,
+            Myanmar::LetterShanBa => LETTER_SHAN_BA,
+            Myanmar::LetterShanTha => LETTER_SHAN_THA,
+            Myanmar::LetterShanHa => LETTER_SHAN_HA,
+            Myanmar::ConsonantSignShanMedialWa => CONSONANT_SIGN_SHAN_MEDIAL_WA,
+            Myanmar::VowelSignShanAa => VOWEL_SIGN_SHAN_AA,
+            Myanmar::VowelSignShanE => VOWEL_SIGN_SHAN_E,
+            Myanmar::VowelSignShanEAbove => VOWEL_SIGN_SHAN_E_ABOVE,
+            Myanmar::VowelSignShanFinalY => VOWEL_SIGN_SHAN_FINAL_Y,
+            Myanmar::SignShanToneDash2 => SIGN_SHAN_TONE_DASH_2,
+            Myanmar::SignShanToneDash3 => SIGN_SHAN_TONE_DASH_3,
+            Myanmar::SignShanToneDash5 => SIGN_SHAN_TONE_DASH_5,
+            Myanmar::SignShanToneDash6 => SIGN_SHAN_TONE_DASH_6,
+            Myanmar::SignShanCouncilToneDash2 => SIGN_SHAN_COUNCIL_TONE_DASH_2,
+            Myanmar::SignShanCouncilToneDash3 => SIGN_SHAN_COUNCIL_TONE_DASH_3,
+            Myanmar::SignShanCouncilEmphaticTone => SIGN_SHAN_COUNCIL_EMPHATIC_TONE,
+            Myanmar::LetterRumaiPalaungFa => LETTER_RUMAI_PALAUNG_FA,
+            Myanmar::SignRumaiPalaungToneDash5 => SIGN_RUMAI_PALAUNG_TONE_DASH_5,
+            Myanmar::ShanDigitZero => SHAN_DIGIT_ZERO,
+            Myanmar::ShanDigitOne => SHAN_DIGIT_ONE,
+            Myanmar::ShanDigitTwo => SHAN_DIGIT_TWO,
+            Myanmar::ShanDigitThree => SHAN_DIGIT_THREE,
+            Myanmar::ShanDigitFour => SHAN_DIGIT_FOUR,
+            Myanmar::ShanDigitFive => SHAN_DIGIT_FIVE,
+            Myanmar::ShanDigitSix => SHAN_DIGIT_SIX,
+            Myanmar::ShanDigitSeven => SHAN_DIGIT_SEVEN,
+            Myanmar::ShanDigitEight => SHAN_DIGIT_EIGHT,
+            Myanmar::ShanDigitNine => SHAN_DIGIT_NINE,
+            Myanmar::SignKhamtiToneDash1 => SIGN_KHAMTI_TONE_DASH_1,
+            Myanmar::SignKhamtiToneDash3 => SIGN_KHAMTI_TONE_DASH_3,
+            Myanmar::VowelSignAitonA => VOWEL_SIGN_AITON_A,
+            Myanmar::VowelSignAitonAi => VOWEL_SIGN_AITON_AI,
+            Myanmar::SymbolShanOne => SYMBOL_SHAN_ONE,
         }
     }
 }
@@ -837,165 +837,165 @@ impl std::convert::TryFrom<char> for Myanmar {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            MYANMAR_LETTER_KA => Ok(Myanmar::MyanmarLetterKa),
-            MYANMAR_LETTER_KHA => Ok(Myanmar::MyanmarLetterKha),
-            MYANMAR_LETTER_GA => Ok(Myanmar::MyanmarLetterGa),
-            MYANMAR_LETTER_GHA => Ok(Myanmar::MyanmarLetterGha),
-            MYANMAR_LETTER_NGA => Ok(Myanmar::MyanmarLetterNga),
-            MYANMAR_LETTER_CA => Ok(Myanmar::MyanmarLetterCa),
-            MYANMAR_LETTER_CHA => Ok(Myanmar::MyanmarLetterCha),
-            MYANMAR_LETTER_JA => Ok(Myanmar::MyanmarLetterJa),
-            MYANMAR_LETTER_JHA => Ok(Myanmar::MyanmarLetterJha),
-            MYANMAR_LETTER_NYA => Ok(Myanmar::MyanmarLetterNya),
-            MYANMAR_LETTER_NNYA => Ok(Myanmar::MyanmarLetterNnya),
-            MYANMAR_LETTER_TTA => Ok(Myanmar::MyanmarLetterTta),
-            MYANMAR_LETTER_TTHA => Ok(Myanmar::MyanmarLetterTtha),
-            MYANMAR_LETTER_DDA => Ok(Myanmar::MyanmarLetterDda),
-            MYANMAR_LETTER_DDHA => Ok(Myanmar::MyanmarLetterDdha),
-            MYANMAR_LETTER_NNA => Ok(Myanmar::MyanmarLetterNna),
-            MYANMAR_LETTER_TA => Ok(Myanmar::MyanmarLetterTa),
-            MYANMAR_LETTER_THA => Ok(Myanmar::MyanmarLetterTha),
-            MYANMAR_LETTER_DA => Ok(Myanmar::MyanmarLetterDa),
-            MYANMAR_LETTER_DHA => Ok(Myanmar::MyanmarLetterDha),
-            MYANMAR_LETTER_NA => Ok(Myanmar::MyanmarLetterNa),
-            MYANMAR_LETTER_PA => Ok(Myanmar::MyanmarLetterPa),
-            MYANMAR_LETTER_PHA => Ok(Myanmar::MyanmarLetterPha),
-            MYANMAR_LETTER_BA => Ok(Myanmar::MyanmarLetterBa),
-            MYANMAR_LETTER_BHA => Ok(Myanmar::MyanmarLetterBha),
-            MYANMAR_LETTER_MA => Ok(Myanmar::MyanmarLetterMa),
-            MYANMAR_LETTER_YA => Ok(Myanmar::MyanmarLetterYa),
-            MYANMAR_LETTER_RA => Ok(Myanmar::MyanmarLetterRa),
-            MYANMAR_LETTER_LA => Ok(Myanmar::MyanmarLetterLa),
-            MYANMAR_LETTER_WA => Ok(Myanmar::MyanmarLetterWa),
-            MYANMAR_LETTER_SA => Ok(Myanmar::MyanmarLetterSa),
-            MYANMAR_LETTER_HA => Ok(Myanmar::MyanmarLetterHa),
-            MYANMAR_LETTER_LLA => Ok(Myanmar::MyanmarLetterLla),
-            MYANMAR_LETTER_A => Ok(Myanmar::MyanmarLetterA),
-            MYANMAR_LETTER_SHAN_A => Ok(Myanmar::MyanmarLetterShanA),
-            MYANMAR_LETTER_I => Ok(Myanmar::MyanmarLetterI),
-            MYANMAR_LETTER_II => Ok(Myanmar::MyanmarLetterIi),
-            MYANMAR_LETTER_U => Ok(Myanmar::MyanmarLetterU),
-            MYANMAR_LETTER_UU => Ok(Myanmar::MyanmarLetterUu),
-            MYANMAR_LETTER_E => Ok(Myanmar::MyanmarLetterE),
-            MYANMAR_LETTER_MON_E => Ok(Myanmar::MyanmarLetterMonE),
-            MYANMAR_LETTER_O => Ok(Myanmar::MyanmarLetterO),
-            MYANMAR_LETTER_AU => Ok(Myanmar::MyanmarLetterAu),
-            MYANMAR_VOWEL_SIGN_TALL_AA => Ok(Myanmar::MyanmarVowelSignTallAa),
-            MYANMAR_VOWEL_SIGN_AA => Ok(Myanmar::MyanmarVowelSignAa),
-            MYANMAR_VOWEL_SIGN_I => Ok(Myanmar::MyanmarVowelSignI),
-            MYANMAR_VOWEL_SIGN_II => Ok(Myanmar::MyanmarVowelSignIi),
-            MYANMAR_VOWEL_SIGN_U => Ok(Myanmar::MyanmarVowelSignU),
-            MYANMAR_VOWEL_SIGN_UU => Ok(Myanmar::MyanmarVowelSignUu),
-            MYANMAR_VOWEL_SIGN_E => Ok(Myanmar::MyanmarVowelSignE),
-            MYANMAR_VOWEL_SIGN_AI => Ok(Myanmar::MyanmarVowelSignAi),
-            MYANMAR_VOWEL_SIGN_MON_II => Ok(Myanmar::MyanmarVowelSignMonIi),
-            MYANMAR_VOWEL_SIGN_MON_O => Ok(Myanmar::MyanmarVowelSignMonO),
-            MYANMAR_VOWEL_SIGN_E_ABOVE => Ok(Myanmar::MyanmarVowelSignEAbove),
-            MYANMAR_SIGN_ANUSVARA => Ok(Myanmar::MyanmarSignAnusvara),
-            MYANMAR_SIGN_DOT_BELOW => Ok(Myanmar::MyanmarSignDotBelow),
-            MYANMAR_SIGN_VISARGA => Ok(Myanmar::MyanmarSignVisarga),
-            MYANMAR_SIGN_VIRAMA => Ok(Myanmar::MyanmarSignVirama),
-            MYANMAR_SIGN_ASAT => Ok(Myanmar::MyanmarSignAsat),
-            MYANMAR_CONSONANT_SIGN_MEDIAL_YA => Ok(Myanmar::MyanmarConsonantSignMedialYa),
-            MYANMAR_CONSONANT_SIGN_MEDIAL_RA => Ok(Myanmar::MyanmarConsonantSignMedialRa),
-            MYANMAR_CONSONANT_SIGN_MEDIAL_WA => Ok(Myanmar::MyanmarConsonantSignMedialWa),
-            MYANMAR_CONSONANT_SIGN_MEDIAL_HA => Ok(Myanmar::MyanmarConsonantSignMedialHa),
-            MYANMAR_LETTER_GREAT_SA => Ok(Myanmar::MyanmarLetterGreatSa),
-            MYANMAR_DIGIT_ZERO => Ok(Myanmar::MyanmarDigitZero),
-            MYANMAR_DIGIT_ONE => Ok(Myanmar::MyanmarDigitOne),
-            MYANMAR_DIGIT_TWO => Ok(Myanmar::MyanmarDigitTwo),
-            MYANMAR_DIGIT_THREE => Ok(Myanmar::MyanmarDigitThree),
-            MYANMAR_DIGIT_FOUR => Ok(Myanmar::MyanmarDigitFour),
-            MYANMAR_DIGIT_FIVE => Ok(Myanmar::MyanmarDigitFive),
-            MYANMAR_DIGIT_SIX => Ok(Myanmar::MyanmarDigitSix),
-            MYANMAR_DIGIT_SEVEN => Ok(Myanmar::MyanmarDigitSeven),
-            MYANMAR_DIGIT_EIGHT => Ok(Myanmar::MyanmarDigitEight),
-            MYANMAR_DIGIT_NINE => Ok(Myanmar::MyanmarDigitNine),
-            MYANMAR_SIGN_LITTLE_SECTION => Ok(Myanmar::MyanmarSignLittleSection),
-            MYANMAR_SIGN_SECTION => Ok(Myanmar::MyanmarSignSection),
-            MYANMAR_SYMBOL_LOCATIVE => Ok(Myanmar::MyanmarSymbolLocative),
-            MYANMAR_SYMBOL_COMPLETED => Ok(Myanmar::MyanmarSymbolCompleted),
-            MYANMAR_SYMBOL_AFOREMENTIONED => Ok(Myanmar::MyanmarSymbolAforementioned),
-            MYANMAR_SYMBOL_GENITIVE => Ok(Myanmar::MyanmarSymbolGenitive),
-            MYANMAR_LETTER_SHA => Ok(Myanmar::MyanmarLetterSha),
-            MYANMAR_LETTER_SSA => Ok(Myanmar::MyanmarLetterSsa),
-            MYANMAR_LETTER_VOCALIC_R => Ok(Myanmar::MyanmarLetterVocalicR),
-            MYANMAR_LETTER_VOCALIC_RR => Ok(Myanmar::MyanmarLetterVocalicRr),
-            MYANMAR_LETTER_VOCALIC_L => Ok(Myanmar::MyanmarLetterVocalicL),
-            MYANMAR_LETTER_VOCALIC_LL => Ok(Myanmar::MyanmarLetterVocalicLl),
-            MYANMAR_VOWEL_SIGN_VOCALIC_R => Ok(Myanmar::MyanmarVowelSignVocalicR),
-            MYANMAR_VOWEL_SIGN_VOCALIC_RR => Ok(Myanmar::MyanmarVowelSignVocalicRr),
-            MYANMAR_VOWEL_SIGN_VOCALIC_L => Ok(Myanmar::MyanmarVowelSignVocalicL),
-            MYANMAR_VOWEL_SIGN_VOCALIC_LL => Ok(Myanmar::MyanmarVowelSignVocalicLl),
-            MYANMAR_LETTER_MON_NGA => Ok(Myanmar::MyanmarLetterMonNga),
-            MYANMAR_LETTER_MON_JHA => Ok(Myanmar::MyanmarLetterMonJha),
-            MYANMAR_LETTER_MON_BBA => Ok(Myanmar::MyanmarLetterMonBba),
-            MYANMAR_LETTER_MON_BBE => Ok(Myanmar::MyanmarLetterMonBbe),
-            MYANMAR_CONSONANT_SIGN_MON_MEDIAL_NA => Ok(Myanmar::MyanmarConsonantSignMonMedialNa),
-            MYANMAR_CONSONANT_SIGN_MON_MEDIAL_MA => Ok(Myanmar::MyanmarConsonantSignMonMedialMa),
-            MYANMAR_CONSONANT_SIGN_MON_MEDIAL_LA => Ok(Myanmar::MyanmarConsonantSignMonMedialLa),
-            MYANMAR_LETTER_SGAW_KAREN_SHA => Ok(Myanmar::MyanmarLetterSgawKarenSha),
-            MYANMAR_VOWEL_SIGN_SGAW_KAREN_EU => Ok(Myanmar::MyanmarVowelSignSgawKarenEu),
-            MYANMAR_TONE_MARK_SGAW_KAREN_HATHI => Ok(Myanmar::MyanmarToneMarkSgawKarenHathi),
-            MYANMAR_TONE_MARK_SGAW_KAREN_KE_PHO => Ok(Myanmar::MyanmarToneMarkSgawKarenKePho),
-            MYANMAR_LETTER_WESTERN_PWO_KAREN_THA => Ok(Myanmar::MyanmarLetterWesternPwoKarenTha),
-            MYANMAR_LETTER_WESTERN_PWO_KAREN_PWA => Ok(Myanmar::MyanmarLetterWesternPwoKarenPwa),
-            MYANMAR_VOWEL_SIGN_WESTERN_PWO_KAREN_EU => Ok(Myanmar::MyanmarVowelSignWesternPwoKarenEu),
-            MYANMAR_VOWEL_SIGN_WESTERN_PWO_KAREN_UE => Ok(Myanmar::MyanmarVowelSignWesternPwoKarenUe),
-            MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_1 => Ok(Myanmar::MyanmarSignWesternPwoKarenToneDash1),
-            MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_2 => Ok(Myanmar::MyanmarSignWesternPwoKarenToneDash2),
-            MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_3 => Ok(Myanmar::MyanmarSignWesternPwoKarenToneDash3),
-            MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_4 => Ok(Myanmar::MyanmarSignWesternPwoKarenToneDash4),
-            MYANMAR_SIGN_WESTERN_PWO_KAREN_TONE_DASH_5 => Ok(Myanmar::MyanmarSignWesternPwoKarenToneDash5),
-            MYANMAR_LETTER_EASTERN_PWO_KAREN_NNA => Ok(Myanmar::MyanmarLetterEasternPwoKarenNna),
-            MYANMAR_LETTER_EASTERN_PWO_KAREN_YWA => Ok(Myanmar::MyanmarLetterEasternPwoKarenYwa),
-            MYANMAR_LETTER_EASTERN_PWO_KAREN_GHWA => Ok(Myanmar::MyanmarLetterEasternPwoKarenGhwa),
-            MYANMAR_VOWEL_SIGN_GEBA_KAREN_I => Ok(Myanmar::MyanmarVowelSignGebaKarenI),
-            MYANMAR_VOWEL_SIGN_KAYAH_OE => Ok(Myanmar::MyanmarVowelSignKayahOe),
-            MYANMAR_VOWEL_SIGN_KAYAH_U => Ok(Myanmar::MyanmarVowelSignKayahU),
-            MYANMAR_VOWEL_SIGN_KAYAH_EE => Ok(Myanmar::MyanmarVowelSignKayahEe),
-            MYANMAR_LETTER_SHAN_KA => Ok(Myanmar::MyanmarLetterShanKa),
-            MYANMAR_LETTER_SHAN_KHA => Ok(Myanmar::MyanmarLetterShanKha),
-            MYANMAR_LETTER_SHAN_GA => Ok(Myanmar::MyanmarLetterShanGa),
-            MYANMAR_LETTER_SHAN_CA => Ok(Myanmar::MyanmarLetterShanCa),
-            MYANMAR_LETTER_SHAN_ZA => Ok(Myanmar::MyanmarLetterShanZa),
-            MYANMAR_LETTER_SHAN_NYA => Ok(Myanmar::MyanmarLetterShanNya),
-            MYANMAR_LETTER_SHAN_DA => Ok(Myanmar::MyanmarLetterShanDa),
-            MYANMAR_LETTER_SHAN_NA => Ok(Myanmar::MyanmarLetterShanNa),
-            MYANMAR_LETTER_SHAN_PHA => Ok(Myanmar::MyanmarLetterShanPha),
-            MYANMAR_LETTER_SHAN_FA => Ok(Myanmar::MyanmarLetterShanFa),
-            MYANMAR_LETTER_SHAN_BA => Ok(Myanmar::MyanmarLetterShanBa),
-            MYANMAR_LETTER_SHAN_THA => Ok(Myanmar::MyanmarLetterShanTha),
-            MYANMAR_LETTER_SHAN_HA => Ok(Myanmar::MyanmarLetterShanHa),
-            MYANMAR_CONSONANT_SIGN_SHAN_MEDIAL_WA => Ok(Myanmar::MyanmarConsonantSignShanMedialWa),
-            MYANMAR_VOWEL_SIGN_SHAN_AA => Ok(Myanmar::MyanmarVowelSignShanAa),
-            MYANMAR_VOWEL_SIGN_SHAN_E => Ok(Myanmar::MyanmarVowelSignShanE),
-            MYANMAR_VOWEL_SIGN_SHAN_E_ABOVE => Ok(Myanmar::MyanmarVowelSignShanEAbove),
-            MYANMAR_VOWEL_SIGN_SHAN_FINAL_Y => Ok(Myanmar::MyanmarVowelSignShanFinalY),
-            MYANMAR_SIGN_SHAN_TONE_DASH_2 => Ok(Myanmar::MyanmarSignShanToneDash2),
-            MYANMAR_SIGN_SHAN_TONE_DASH_3 => Ok(Myanmar::MyanmarSignShanToneDash3),
-            MYANMAR_SIGN_SHAN_TONE_DASH_5 => Ok(Myanmar::MyanmarSignShanToneDash5),
-            MYANMAR_SIGN_SHAN_TONE_DASH_6 => Ok(Myanmar::MyanmarSignShanToneDash6),
-            MYANMAR_SIGN_SHAN_COUNCIL_TONE_DASH_2 => Ok(Myanmar::MyanmarSignShanCouncilToneDash2),
-            MYANMAR_SIGN_SHAN_COUNCIL_TONE_DASH_3 => Ok(Myanmar::MyanmarSignShanCouncilToneDash3),
-            MYANMAR_SIGN_SHAN_COUNCIL_EMPHATIC_TONE => Ok(Myanmar::MyanmarSignShanCouncilEmphaticTone),
-            MYANMAR_LETTER_RUMAI_PALAUNG_FA => Ok(Myanmar::MyanmarLetterRumaiPalaungFa),
-            MYANMAR_SIGN_RUMAI_PALAUNG_TONE_DASH_5 => Ok(Myanmar::MyanmarSignRumaiPalaungToneDash5),
-            MYANMAR_SHAN_DIGIT_ZERO => Ok(Myanmar::MyanmarShanDigitZero),
-            MYANMAR_SHAN_DIGIT_ONE => Ok(Myanmar::MyanmarShanDigitOne),
-            MYANMAR_SHAN_DIGIT_TWO => Ok(Myanmar::MyanmarShanDigitTwo),
-            MYANMAR_SHAN_DIGIT_THREE => Ok(Myanmar::MyanmarShanDigitThree),
-            MYANMAR_SHAN_DIGIT_FOUR => Ok(Myanmar::MyanmarShanDigitFour),
-            MYANMAR_SHAN_DIGIT_FIVE => Ok(Myanmar::MyanmarShanDigitFive),
-            MYANMAR_SHAN_DIGIT_SIX => Ok(Myanmar::MyanmarShanDigitSix),
-            MYANMAR_SHAN_DIGIT_SEVEN => Ok(Myanmar::MyanmarShanDigitSeven),
-            MYANMAR_SHAN_DIGIT_EIGHT => Ok(Myanmar::MyanmarShanDigitEight),
-            MYANMAR_SHAN_DIGIT_NINE => Ok(Myanmar::MyanmarShanDigitNine),
-            MYANMAR_SIGN_KHAMTI_TONE_DASH_1 => Ok(Myanmar::MyanmarSignKhamtiToneDash1),
-            MYANMAR_SIGN_KHAMTI_TONE_DASH_3 => Ok(Myanmar::MyanmarSignKhamtiToneDash3),
-            MYANMAR_VOWEL_SIGN_AITON_A => Ok(Myanmar::MyanmarVowelSignAitonA),
-            MYANMAR_VOWEL_SIGN_AITON_AI => Ok(Myanmar::MyanmarVowelSignAitonAi),
-            MYANMAR_SYMBOL_SHAN_ONE => Ok(Myanmar::MyanmarSymbolShanOne),
+            LETTER_KA => Ok(Myanmar::LetterKa),
+            LETTER_KHA => Ok(Myanmar::LetterKha),
+            LETTER_GA => Ok(Myanmar::LetterGa),
+            LETTER_GHA => Ok(Myanmar::LetterGha),
+            LETTER_NGA => Ok(Myanmar::LetterNga),
+            LETTER_CA => Ok(Myanmar::LetterCa),
+            LETTER_CHA => Ok(Myanmar::LetterCha),
+            LETTER_JA => Ok(Myanmar::LetterJa),
+            LETTER_JHA => Ok(Myanmar::LetterJha),
+            LETTER_NYA => Ok(Myanmar::LetterNya),
+            LETTER_NNYA => Ok(Myanmar::LetterNnya),
+            LETTER_TTA => Ok(Myanmar::LetterTta),
+            LETTER_TTHA => Ok(Myanmar::LetterTtha),
+            LETTER_DDA => Ok(Myanmar::LetterDda),
+            LETTER_DDHA => Ok(Myanmar::LetterDdha),
+            LETTER_NNA => Ok(Myanmar::LetterNna),
+            LETTER_TA => Ok(Myanmar::LetterTa),
+            LETTER_THA => Ok(Myanmar::LetterTha),
+            LETTER_DA => Ok(Myanmar::LetterDa),
+            LETTER_DHA => Ok(Myanmar::LetterDha),
+            LETTER_NA => Ok(Myanmar::LetterNa),
+            LETTER_PA => Ok(Myanmar::LetterPa),
+            LETTER_PHA => Ok(Myanmar::LetterPha),
+            LETTER_BA => Ok(Myanmar::LetterBa),
+            LETTER_BHA => Ok(Myanmar::LetterBha),
+            LETTER_MA => Ok(Myanmar::LetterMa),
+            LETTER_YA => Ok(Myanmar::LetterYa),
+            LETTER_RA => Ok(Myanmar::LetterRa),
+            LETTER_LA => Ok(Myanmar::LetterLa),
+            LETTER_WA => Ok(Myanmar::LetterWa),
+            LETTER_SA => Ok(Myanmar::LetterSa),
+            LETTER_HA => Ok(Myanmar::LetterHa),
+            LETTER_LLA => Ok(Myanmar::LetterLla),
+            LETTER_A => Ok(Myanmar::LetterA),
+            LETTER_SHAN_A => Ok(Myanmar::LetterShanA),
+            LETTER_I => Ok(Myanmar::LetterI),
+            LETTER_II => Ok(Myanmar::LetterIi),
+            LETTER_U => Ok(Myanmar::LetterU),
+            LETTER_UU => Ok(Myanmar::LetterUu),
+            LETTER_E => Ok(Myanmar::LetterE),
+            LETTER_MON_E => Ok(Myanmar::LetterMonE),
+            LETTER_O => Ok(Myanmar::LetterO),
+            LETTER_AU => Ok(Myanmar::LetterAu),
+            VOWEL_SIGN_TALL_AA => Ok(Myanmar::VowelSignTallAa),
+            VOWEL_SIGN_AA => Ok(Myanmar::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Myanmar::VowelSignI),
+            VOWEL_SIGN_II => Ok(Myanmar::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Myanmar::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Myanmar::VowelSignUu),
+            VOWEL_SIGN_E => Ok(Myanmar::VowelSignE),
+            VOWEL_SIGN_AI => Ok(Myanmar::VowelSignAi),
+            VOWEL_SIGN_MON_II => Ok(Myanmar::VowelSignMonIi),
+            VOWEL_SIGN_MON_O => Ok(Myanmar::VowelSignMonO),
+            VOWEL_SIGN_E_ABOVE => Ok(Myanmar::VowelSignEAbove),
+            SIGN_ANUSVARA => Ok(Myanmar::SignAnusvara),
+            SIGN_DOT_BELOW => Ok(Myanmar::SignDotBelow),
+            SIGN_VISARGA => Ok(Myanmar::SignVisarga),
+            SIGN_VIRAMA => Ok(Myanmar::SignVirama),
+            SIGN_ASAT => Ok(Myanmar::SignAsat),
+            CONSONANT_SIGN_MEDIAL_YA => Ok(Myanmar::ConsonantSignMedialYa),
+            CONSONANT_SIGN_MEDIAL_RA => Ok(Myanmar::ConsonantSignMedialRa),
+            CONSONANT_SIGN_MEDIAL_WA => Ok(Myanmar::ConsonantSignMedialWa),
+            CONSONANT_SIGN_MEDIAL_HA => Ok(Myanmar::ConsonantSignMedialHa),
+            LETTER_GREAT_SA => Ok(Myanmar::LetterGreatSa),
+            DIGIT_ZERO => Ok(Myanmar::DigitZero),
+            DIGIT_ONE => Ok(Myanmar::DigitOne),
+            DIGIT_TWO => Ok(Myanmar::DigitTwo),
+            DIGIT_THREE => Ok(Myanmar::DigitThree),
+            DIGIT_FOUR => Ok(Myanmar::DigitFour),
+            DIGIT_FIVE => Ok(Myanmar::DigitFive),
+            DIGIT_SIX => Ok(Myanmar::DigitSix),
+            DIGIT_SEVEN => Ok(Myanmar::DigitSeven),
+            DIGIT_EIGHT => Ok(Myanmar::DigitEight),
+            DIGIT_NINE => Ok(Myanmar::DigitNine),
+            SIGN_LITTLE_SECTION => Ok(Myanmar::SignLittleSection),
+            SIGN_SECTION => Ok(Myanmar::SignSection),
+            SYMBOL_LOCATIVE => Ok(Myanmar::SymbolLocative),
+            SYMBOL_COMPLETED => Ok(Myanmar::SymbolCompleted),
+            SYMBOL_AFOREMENTIONED => Ok(Myanmar::SymbolAforementioned),
+            SYMBOL_GENITIVE => Ok(Myanmar::SymbolGenitive),
+            LETTER_SHA => Ok(Myanmar::LetterSha),
+            LETTER_SSA => Ok(Myanmar::LetterSsa),
+            LETTER_VOCALIC_R => Ok(Myanmar::LetterVocalicR),
+            LETTER_VOCALIC_RR => Ok(Myanmar::LetterVocalicRr),
+            LETTER_VOCALIC_L => Ok(Myanmar::LetterVocalicL),
+            LETTER_VOCALIC_LL => Ok(Myanmar::LetterVocalicLl),
+            VOWEL_SIGN_VOCALIC_R => Ok(Myanmar::VowelSignVocalicR),
+            VOWEL_SIGN_VOCALIC_RR => Ok(Myanmar::VowelSignVocalicRr),
+            VOWEL_SIGN_VOCALIC_L => Ok(Myanmar::VowelSignVocalicL),
+            VOWEL_SIGN_VOCALIC_LL => Ok(Myanmar::VowelSignVocalicLl),
+            LETTER_MON_NGA => Ok(Myanmar::LetterMonNga),
+            LETTER_MON_JHA => Ok(Myanmar::LetterMonJha),
+            LETTER_MON_BBA => Ok(Myanmar::LetterMonBba),
+            LETTER_MON_BBE => Ok(Myanmar::LetterMonBbe),
+            CONSONANT_SIGN_MON_MEDIAL_NA => Ok(Myanmar::ConsonantSignMonMedialNa),
+            CONSONANT_SIGN_MON_MEDIAL_MA => Ok(Myanmar::ConsonantSignMonMedialMa),
+            CONSONANT_SIGN_MON_MEDIAL_LA => Ok(Myanmar::ConsonantSignMonMedialLa),
+            LETTER_SGAW_KAREN_SHA => Ok(Myanmar::LetterSgawKarenSha),
+            VOWEL_SIGN_SGAW_KAREN_EU => Ok(Myanmar::VowelSignSgawKarenEu),
+            TONE_MARK_SGAW_KAREN_HATHI => Ok(Myanmar::ToneMarkSgawKarenHathi),
+            TONE_MARK_SGAW_KAREN_KE_PHO => Ok(Myanmar::ToneMarkSgawKarenKePho),
+            LETTER_WESTERN_PWO_KAREN_THA => Ok(Myanmar::LetterWesternPwoKarenTha),
+            LETTER_WESTERN_PWO_KAREN_PWA => Ok(Myanmar::LetterWesternPwoKarenPwa),
+            VOWEL_SIGN_WESTERN_PWO_KAREN_EU => Ok(Myanmar::VowelSignWesternPwoKarenEu),
+            VOWEL_SIGN_WESTERN_PWO_KAREN_UE => Ok(Myanmar::VowelSignWesternPwoKarenUe),
+            SIGN_WESTERN_PWO_KAREN_TONE_DASH_1 => Ok(Myanmar::SignWesternPwoKarenToneDash1),
+            SIGN_WESTERN_PWO_KAREN_TONE_DASH_2 => Ok(Myanmar::SignWesternPwoKarenToneDash2),
+            SIGN_WESTERN_PWO_KAREN_TONE_DASH_3 => Ok(Myanmar::SignWesternPwoKarenToneDash3),
+            SIGN_WESTERN_PWO_KAREN_TONE_DASH_4 => Ok(Myanmar::SignWesternPwoKarenToneDash4),
+            SIGN_WESTERN_PWO_KAREN_TONE_DASH_5 => Ok(Myanmar::SignWesternPwoKarenToneDash5),
+            LETTER_EASTERN_PWO_KAREN_NNA => Ok(Myanmar::LetterEasternPwoKarenNna),
+            LETTER_EASTERN_PWO_KAREN_YWA => Ok(Myanmar::LetterEasternPwoKarenYwa),
+            LETTER_EASTERN_PWO_KAREN_GHWA => Ok(Myanmar::LetterEasternPwoKarenGhwa),
+            VOWEL_SIGN_GEBA_KAREN_I => Ok(Myanmar::VowelSignGebaKarenI),
+            VOWEL_SIGN_KAYAH_OE => Ok(Myanmar::VowelSignKayahOe),
+            VOWEL_SIGN_KAYAH_U => Ok(Myanmar::VowelSignKayahU),
+            VOWEL_SIGN_KAYAH_EE => Ok(Myanmar::VowelSignKayahEe),
+            LETTER_SHAN_KA => Ok(Myanmar::LetterShanKa),
+            LETTER_SHAN_KHA => Ok(Myanmar::LetterShanKha),
+            LETTER_SHAN_GA => Ok(Myanmar::LetterShanGa),
+            LETTER_SHAN_CA => Ok(Myanmar::LetterShanCa),
+            LETTER_SHAN_ZA => Ok(Myanmar::LetterShanZa),
+            LETTER_SHAN_NYA => Ok(Myanmar::LetterShanNya),
+            LETTER_SHAN_DA => Ok(Myanmar::LetterShanDa),
+            LETTER_SHAN_NA => Ok(Myanmar::LetterShanNa),
+            LETTER_SHAN_PHA => Ok(Myanmar::LetterShanPha),
+            LETTER_SHAN_FA => Ok(Myanmar::LetterShanFa),
+            LETTER_SHAN_BA => Ok(Myanmar::LetterShanBa),
+            LETTER_SHAN_THA => Ok(Myanmar::LetterShanTha),
+            LETTER_SHAN_HA => Ok(Myanmar::LetterShanHa),
+            CONSONANT_SIGN_SHAN_MEDIAL_WA => Ok(Myanmar::ConsonantSignShanMedialWa),
+            VOWEL_SIGN_SHAN_AA => Ok(Myanmar::VowelSignShanAa),
+            VOWEL_SIGN_SHAN_E => Ok(Myanmar::VowelSignShanE),
+            VOWEL_SIGN_SHAN_E_ABOVE => Ok(Myanmar::VowelSignShanEAbove),
+            VOWEL_SIGN_SHAN_FINAL_Y => Ok(Myanmar::VowelSignShanFinalY),
+            SIGN_SHAN_TONE_DASH_2 => Ok(Myanmar::SignShanToneDash2),
+            SIGN_SHAN_TONE_DASH_3 => Ok(Myanmar::SignShanToneDash3),
+            SIGN_SHAN_TONE_DASH_5 => Ok(Myanmar::SignShanToneDash5),
+            SIGN_SHAN_TONE_DASH_6 => Ok(Myanmar::SignShanToneDash6),
+            SIGN_SHAN_COUNCIL_TONE_DASH_2 => Ok(Myanmar::SignShanCouncilToneDash2),
+            SIGN_SHAN_COUNCIL_TONE_DASH_3 => Ok(Myanmar::SignShanCouncilToneDash3),
+            SIGN_SHAN_COUNCIL_EMPHATIC_TONE => Ok(Myanmar::SignShanCouncilEmphaticTone),
+            LETTER_RUMAI_PALAUNG_FA => Ok(Myanmar::LetterRumaiPalaungFa),
+            SIGN_RUMAI_PALAUNG_TONE_DASH_5 => Ok(Myanmar::SignRumaiPalaungToneDash5),
+            SHAN_DIGIT_ZERO => Ok(Myanmar::ShanDigitZero),
+            SHAN_DIGIT_ONE => Ok(Myanmar::ShanDigitOne),
+            SHAN_DIGIT_TWO => Ok(Myanmar::ShanDigitTwo),
+            SHAN_DIGIT_THREE => Ok(Myanmar::ShanDigitThree),
+            SHAN_DIGIT_FOUR => Ok(Myanmar::ShanDigitFour),
+            SHAN_DIGIT_FIVE => Ok(Myanmar::ShanDigitFive),
+            SHAN_DIGIT_SIX => Ok(Myanmar::ShanDigitSix),
+            SHAN_DIGIT_SEVEN => Ok(Myanmar::ShanDigitSeven),
+            SHAN_DIGIT_EIGHT => Ok(Myanmar::ShanDigitEight),
+            SHAN_DIGIT_NINE => Ok(Myanmar::ShanDigitNine),
+            SIGN_KHAMTI_TONE_DASH_1 => Ok(Myanmar::SignKhamtiToneDash1),
+            SIGN_KHAMTI_TONE_DASH_3 => Ok(Myanmar::SignKhamtiToneDash3),
+            VOWEL_SIGN_AITON_A => Ok(Myanmar::VowelSignAitonA),
+            VOWEL_SIGN_AITON_AI => Ok(Myanmar::VowelSignAitonAi),
+            SYMBOL_SHAN_ONE => Ok(Myanmar::SymbolShanOne),
             _ => Err(()),
         }
     }
@@ -1034,173 +1034,173 @@ impl Iterator for Myanmar {
 }
 
 impl Myanmar {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Myanmar::MyanmarLetterKa
+        Myanmar::LetterKa
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Myanmar::MyanmarLetterKa => "myanmar letter ka",
-            Myanmar::MyanmarLetterKha => "myanmar letter kha",
-            Myanmar::MyanmarLetterGa => "myanmar letter ga",
-            Myanmar::MyanmarLetterGha => "myanmar letter gha",
-            Myanmar::MyanmarLetterNga => "myanmar letter nga",
-            Myanmar::MyanmarLetterCa => "myanmar letter ca",
-            Myanmar::MyanmarLetterCha => "myanmar letter cha",
-            Myanmar::MyanmarLetterJa => "myanmar letter ja",
-            Myanmar::MyanmarLetterJha => "myanmar letter jha",
-            Myanmar::MyanmarLetterNya => "myanmar letter nya",
-            Myanmar::MyanmarLetterNnya => "myanmar letter nnya",
-            Myanmar::MyanmarLetterTta => "myanmar letter tta",
-            Myanmar::MyanmarLetterTtha => "myanmar letter ttha",
-            Myanmar::MyanmarLetterDda => "myanmar letter dda",
-            Myanmar::MyanmarLetterDdha => "myanmar letter ddha",
-            Myanmar::MyanmarLetterNna => "myanmar letter nna",
-            Myanmar::MyanmarLetterTa => "myanmar letter ta",
-            Myanmar::MyanmarLetterTha => "myanmar letter tha",
-            Myanmar::MyanmarLetterDa => "myanmar letter da",
-            Myanmar::MyanmarLetterDha => "myanmar letter dha",
-            Myanmar::MyanmarLetterNa => "myanmar letter na",
-            Myanmar::MyanmarLetterPa => "myanmar letter pa",
-            Myanmar::MyanmarLetterPha => "myanmar letter pha",
-            Myanmar::MyanmarLetterBa => "myanmar letter ba",
-            Myanmar::MyanmarLetterBha => "myanmar letter bha",
-            Myanmar::MyanmarLetterMa => "myanmar letter ma",
-            Myanmar::MyanmarLetterYa => "myanmar letter ya",
-            Myanmar::MyanmarLetterRa => "myanmar letter ra",
-            Myanmar::MyanmarLetterLa => "myanmar letter la",
-            Myanmar::MyanmarLetterWa => "myanmar letter wa",
-            Myanmar::MyanmarLetterSa => "myanmar letter sa",
-            Myanmar::MyanmarLetterHa => "myanmar letter ha",
-            Myanmar::MyanmarLetterLla => "myanmar letter lla",
-            Myanmar::MyanmarLetterA => "myanmar letter a",
-            Myanmar::MyanmarLetterShanA => "myanmar letter shan a",
-            Myanmar::MyanmarLetterI => "myanmar letter i",
-            Myanmar::MyanmarLetterIi => "myanmar letter ii",
-            Myanmar::MyanmarLetterU => "myanmar letter u",
-            Myanmar::MyanmarLetterUu => "myanmar letter uu",
-            Myanmar::MyanmarLetterE => "myanmar letter e",
-            Myanmar::MyanmarLetterMonE => "myanmar letter mon e",
-            Myanmar::MyanmarLetterO => "myanmar letter o",
-            Myanmar::MyanmarLetterAu => "myanmar letter au",
-            Myanmar::MyanmarVowelSignTallAa => "myanmar vowel sign tall aa",
-            Myanmar::MyanmarVowelSignAa => "myanmar vowel sign aa",
-            Myanmar::MyanmarVowelSignI => "myanmar vowel sign i",
-            Myanmar::MyanmarVowelSignIi => "myanmar vowel sign ii",
-            Myanmar::MyanmarVowelSignU => "myanmar vowel sign u",
-            Myanmar::MyanmarVowelSignUu => "myanmar vowel sign uu",
-            Myanmar::MyanmarVowelSignE => "myanmar vowel sign e",
-            Myanmar::MyanmarVowelSignAi => "myanmar vowel sign ai",
-            Myanmar::MyanmarVowelSignMonIi => "myanmar vowel sign mon ii",
-            Myanmar::MyanmarVowelSignMonO => "myanmar vowel sign mon o",
-            Myanmar::MyanmarVowelSignEAbove => "myanmar vowel sign e above",
-            Myanmar::MyanmarSignAnusvara => "myanmar sign anusvara",
-            Myanmar::MyanmarSignDotBelow => "myanmar sign dot below",
-            Myanmar::MyanmarSignVisarga => "myanmar sign visarga",
-            Myanmar::MyanmarSignVirama => "myanmar sign virama",
-            Myanmar::MyanmarSignAsat => "myanmar sign asat",
-            Myanmar::MyanmarConsonantSignMedialYa => "myanmar consonant sign medial ya",
-            Myanmar::MyanmarConsonantSignMedialRa => "myanmar consonant sign medial ra",
-            Myanmar::MyanmarConsonantSignMedialWa => "myanmar consonant sign medial wa",
-            Myanmar::MyanmarConsonantSignMedialHa => "myanmar consonant sign medial ha",
-            Myanmar::MyanmarLetterGreatSa => "myanmar letter great sa",
-            Myanmar::MyanmarDigitZero => "myanmar digit zero",
-            Myanmar::MyanmarDigitOne => "myanmar digit one",
-            Myanmar::MyanmarDigitTwo => "myanmar digit two",
-            Myanmar::MyanmarDigitThree => "myanmar digit three",
-            Myanmar::MyanmarDigitFour => "myanmar digit four",
-            Myanmar::MyanmarDigitFive => "myanmar digit five",
-            Myanmar::MyanmarDigitSix => "myanmar digit six",
-            Myanmar::MyanmarDigitSeven => "myanmar digit seven",
-            Myanmar::MyanmarDigitEight => "myanmar digit eight",
-            Myanmar::MyanmarDigitNine => "myanmar digit nine",
-            Myanmar::MyanmarSignLittleSection => "myanmar sign little section",
-            Myanmar::MyanmarSignSection => "myanmar sign section",
-            Myanmar::MyanmarSymbolLocative => "myanmar symbol locative",
-            Myanmar::MyanmarSymbolCompleted => "myanmar symbol completed",
-            Myanmar::MyanmarSymbolAforementioned => "myanmar symbol aforementioned",
-            Myanmar::MyanmarSymbolGenitive => "myanmar symbol genitive",
-            Myanmar::MyanmarLetterSha => "myanmar letter sha",
-            Myanmar::MyanmarLetterSsa => "myanmar letter ssa",
-            Myanmar::MyanmarLetterVocalicR => "myanmar letter vocalic r",
-            Myanmar::MyanmarLetterVocalicRr => "myanmar letter vocalic rr",
-            Myanmar::MyanmarLetterVocalicL => "myanmar letter vocalic l",
-            Myanmar::MyanmarLetterVocalicLl => "myanmar letter vocalic ll",
-            Myanmar::MyanmarVowelSignVocalicR => "myanmar vowel sign vocalic r",
-            Myanmar::MyanmarVowelSignVocalicRr => "myanmar vowel sign vocalic rr",
-            Myanmar::MyanmarVowelSignVocalicL => "myanmar vowel sign vocalic l",
-            Myanmar::MyanmarVowelSignVocalicLl => "myanmar vowel sign vocalic ll",
-            Myanmar::MyanmarLetterMonNga => "myanmar letter mon nga",
-            Myanmar::MyanmarLetterMonJha => "myanmar letter mon jha",
-            Myanmar::MyanmarLetterMonBba => "myanmar letter mon bba",
-            Myanmar::MyanmarLetterMonBbe => "myanmar letter mon bbe",
-            Myanmar::MyanmarConsonantSignMonMedialNa => "myanmar consonant sign mon medial na",
-            Myanmar::MyanmarConsonantSignMonMedialMa => "myanmar consonant sign mon medial ma",
-            Myanmar::MyanmarConsonantSignMonMedialLa => "myanmar consonant sign mon medial la",
-            Myanmar::MyanmarLetterSgawKarenSha => "myanmar letter sgaw karen sha",
-            Myanmar::MyanmarVowelSignSgawKarenEu => "myanmar vowel sign sgaw karen eu",
-            Myanmar::MyanmarToneMarkSgawKarenHathi => "myanmar tone mark sgaw karen hathi",
-            Myanmar::MyanmarToneMarkSgawKarenKePho => "myanmar tone mark sgaw karen ke pho",
-            Myanmar::MyanmarLetterWesternPwoKarenTha => "myanmar letter western pwo karen tha",
-            Myanmar::MyanmarLetterWesternPwoKarenPwa => "myanmar letter western pwo karen pwa",
-            Myanmar::MyanmarVowelSignWesternPwoKarenEu => "myanmar vowel sign western pwo karen eu",
-            Myanmar::MyanmarVowelSignWesternPwoKarenUe => "myanmar vowel sign western pwo karen ue",
-            Myanmar::MyanmarSignWesternPwoKarenToneDash1 => "myanmar sign western pwo karen tone-1",
-            Myanmar::MyanmarSignWesternPwoKarenToneDash2 => "myanmar sign western pwo karen tone-2",
-            Myanmar::MyanmarSignWesternPwoKarenToneDash3 => "myanmar sign western pwo karen tone-3",
-            Myanmar::MyanmarSignWesternPwoKarenToneDash4 => "myanmar sign western pwo karen tone-4",
-            Myanmar::MyanmarSignWesternPwoKarenToneDash5 => "myanmar sign western pwo karen tone-5",
-            Myanmar::MyanmarLetterEasternPwoKarenNna => "myanmar letter eastern pwo karen nna",
-            Myanmar::MyanmarLetterEasternPwoKarenYwa => "myanmar letter eastern pwo karen ywa",
-            Myanmar::MyanmarLetterEasternPwoKarenGhwa => "myanmar letter eastern pwo karen ghwa",
-            Myanmar::MyanmarVowelSignGebaKarenI => "myanmar vowel sign geba karen i",
-            Myanmar::MyanmarVowelSignKayahOe => "myanmar vowel sign kayah oe",
-            Myanmar::MyanmarVowelSignKayahU => "myanmar vowel sign kayah u",
-            Myanmar::MyanmarVowelSignKayahEe => "myanmar vowel sign kayah ee",
-            Myanmar::MyanmarLetterShanKa => "myanmar letter shan ka",
-            Myanmar::MyanmarLetterShanKha => "myanmar letter shan kha",
-            Myanmar::MyanmarLetterShanGa => "myanmar letter shan ga",
-            Myanmar::MyanmarLetterShanCa => "myanmar letter shan ca",
-            Myanmar::MyanmarLetterShanZa => "myanmar letter shan za",
-            Myanmar::MyanmarLetterShanNya => "myanmar letter shan nya",
-            Myanmar::MyanmarLetterShanDa => "myanmar letter shan da",
-            Myanmar::MyanmarLetterShanNa => "myanmar letter shan na",
-            Myanmar::MyanmarLetterShanPha => "myanmar letter shan pha",
-            Myanmar::MyanmarLetterShanFa => "myanmar letter shan fa",
-            Myanmar::MyanmarLetterShanBa => "myanmar letter shan ba",
-            Myanmar::MyanmarLetterShanTha => "myanmar letter shan tha",
-            Myanmar::MyanmarLetterShanHa => "myanmar letter shan ha",
-            Myanmar::MyanmarConsonantSignShanMedialWa => "myanmar consonant sign shan medial wa",
-            Myanmar::MyanmarVowelSignShanAa => "myanmar vowel sign shan aa",
-            Myanmar::MyanmarVowelSignShanE => "myanmar vowel sign shan e",
-            Myanmar::MyanmarVowelSignShanEAbove => "myanmar vowel sign shan e above",
-            Myanmar::MyanmarVowelSignShanFinalY => "myanmar vowel sign shan final y",
-            Myanmar::MyanmarSignShanToneDash2 => "myanmar sign shan tone-2",
-            Myanmar::MyanmarSignShanToneDash3 => "myanmar sign shan tone-3",
-            Myanmar::MyanmarSignShanToneDash5 => "myanmar sign shan tone-5",
-            Myanmar::MyanmarSignShanToneDash6 => "myanmar sign shan tone-6",
-            Myanmar::MyanmarSignShanCouncilToneDash2 => "myanmar sign shan council tone-2",
-            Myanmar::MyanmarSignShanCouncilToneDash3 => "myanmar sign shan council tone-3",
-            Myanmar::MyanmarSignShanCouncilEmphaticTone => "myanmar sign shan council emphatic tone",
-            Myanmar::MyanmarLetterRumaiPalaungFa => "myanmar letter rumai palaung fa",
-            Myanmar::MyanmarSignRumaiPalaungToneDash5 => "myanmar sign rumai palaung tone-5",
-            Myanmar::MyanmarShanDigitZero => "myanmar shan digit zero",
-            Myanmar::MyanmarShanDigitOne => "myanmar shan digit one",
-            Myanmar::MyanmarShanDigitTwo => "myanmar shan digit two",
-            Myanmar::MyanmarShanDigitThree => "myanmar shan digit three",
-            Myanmar::MyanmarShanDigitFour => "myanmar shan digit four",
-            Myanmar::MyanmarShanDigitFive => "myanmar shan digit five",
-            Myanmar::MyanmarShanDigitSix => "myanmar shan digit six",
-            Myanmar::MyanmarShanDigitSeven => "myanmar shan digit seven",
-            Myanmar::MyanmarShanDigitEight => "myanmar shan digit eight",
-            Myanmar::MyanmarShanDigitNine => "myanmar shan digit nine",
-            Myanmar::MyanmarSignKhamtiToneDash1 => "myanmar sign khamti tone-1",
-            Myanmar::MyanmarSignKhamtiToneDash3 => "myanmar sign khamti tone-3",
-            Myanmar::MyanmarVowelSignAitonA => "myanmar vowel sign aiton a",
-            Myanmar::MyanmarVowelSignAitonAi => "myanmar vowel sign aiton ai",
-            Myanmar::MyanmarSymbolShanOne => "myanmar symbol shan one",
+            Myanmar::LetterKa => "myanmar letter ka",
+            Myanmar::LetterKha => "myanmar letter kha",
+            Myanmar::LetterGa => "myanmar letter ga",
+            Myanmar::LetterGha => "myanmar letter gha",
+            Myanmar::LetterNga => "myanmar letter nga",
+            Myanmar::LetterCa => "myanmar letter ca",
+            Myanmar::LetterCha => "myanmar letter cha",
+            Myanmar::LetterJa => "myanmar letter ja",
+            Myanmar::LetterJha => "myanmar letter jha",
+            Myanmar::LetterNya => "myanmar letter nya",
+            Myanmar::LetterNnya => "myanmar letter nnya",
+            Myanmar::LetterTta => "myanmar letter tta",
+            Myanmar::LetterTtha => "myanmar letter ttha",
+            Myanmar::LetterDda => "myanmar letter dda",
+            Myanmar::LetterDdha => "myanmar letter ddha",
+            Myanmar::LetterNna => "myanmar letter nna",
+            Myanmar::LetterTa => "myanmar letter ta",
+            Myanmar::LetterTha => "myanmar letter tha",
+            Myanmar::LetterDa => "myanmar letter da",
+            Myanmar::LetterDha => "myanmar letter dha",
+            Myanmar::LetterNa => "myanmar letter na",
+            Myanmar::LetterPa => "myanmar letter pa",
+            Myanmar::LetterPha => "myanmar letter pha",
+            Myanmar::LetterBa => "myanmar letter ba",
+            Myanmar::LetterBha => "myanmar letter bha",
+            Myanmar::LetterMa => "myanmar letter ma",
+            Myanmar::LetterYa => "myanmar letter ya",
+            Myanmar::LetterRa => "myanmar letter ra",
+            Myanmar::LetterLa => "myanmar letter la",
+            Myanmar::LetterWa => "myanmar letter wa",
+            Myanmar::LetterSa => "myanmar letter sa",
+            Myanmar::LetterHa => "myanmar letter ha",
+            Myanmar::LetterLla => "myanmar letter lla",
+            Myanmar::LetterA => "myanmar letter a",
+            Myanmar::LetterShanA => "myanmar letter shan a",
+            Myanmar::LetterI => "myanmar letter i",
+            Myanmar::LetterIi => "myanmar letter ii",
+            Myanmar::LetterU => "myanmar letter u",
+            Myanmar::LetterUu => "myanmar letter uu",
+            Myanmar::LetterE => "myanmar letter e",
+            Myanmar::LetterMonE => "myanmar letter mon e",
+            Myanmar::LetterO => "myanmar letter o",
+            Myanmar::LetterAu => "myanmar letter au",
+            Myanmar::VowelSignTallAa => "myanmar vowel sign tall aa",
+            Myanmar::VowelSignAa => "myanmar vowel sign aa",
+            Myanmar::VowelSignI => "myanmar vowel sign i",
+            Myanmar::VowelSignIi => "myanmar vowel sign ii",
+            Myanmar::VowelSignU => "myanmar vowel sign u",
+            Myanmar::VowelSignUu => "myanmar vowel sign uu",
+            Myanmar::VowelSignE => "myanmar vowel sign e",
+            Myanmar::VowelSignAi => "myanmar vowel sign ai",
+            Myanmar::VowelSignMonIi => "myanmar vowel sign mon ii",
+            Myanmar::VowelSignMonO => "myanmar vowel sign mon o",
+            Myanmar::VowelSignEAbove => "myanmar vowel sign e above",
+            Myanmar::SignAnusvara => "myanmar sign anusvara",
+            Myanmar::SignDotBelow => "myanmar sign dot below",
+            Myanmar::SignVisarga => "myanmar sign visarga",
+            Myanmar::SignVirama => "myanmar sign virama",
+            Myanmar::SignAsat => "myanmar sign asat",
+            Myanmar::ConsonantSignMedialYa => "myanmar consonant sign medial ya",
+            Myanmar::ConsonantSignMedialRa => "myanmar consonant sign medial ra",
+            Myanmar::ConsonantSignMedialWa => "myanmar consonant sign medial wa",
+            Myanmar::ConsonantSignMedialHa => "myanmar consonant sign medial ha",
+            Myanmar::LetterGreatSa => "myanmar letter great sa",
+            Myanmar::DigitZero => "myanmar digit zero",
+            Myanmar::DigitOne => "myanmar digit one",
+            Myanmar::DigitTwo => "myanmar digit two",
+            Myanmar::DigitThree => "myanmar digit three",
+            Myanmar::DigitFour => "myanmar digit four",
+            Myanmar::DigitFive => "myanmar digit five",
+            Myanmar::DigitSix => "myanmar digit six",
+            Myanmar::DigitSeven => "myanmar digit seven",
+            Myanmar::DigitEight => "myanmar digit eight",
+            Myanmar::DigitNine => "myanmar digit nine",
+            Myanmar::SignLittleSection => "myanmar sign little section",
+            Myanmar::SignSection => "myanmar sign section",
+            Myanmar::SymbolLocative => "myanmar symbol locative",
+            Myanmar::SymbolCompleted => "myanmar symbol completed",
+            Myanmar::SymbolAforementioned => "myanmar symbol aforementioned",
+            Myanmar::SymbolGenitive => "myanmar symbol genitive",
+            Myanmar::LetterSha => "myanmar letter sha",
+            Myanmar::LetterSsa => "myanmar letter ssa",
+            Myanmar::LetterVocalicR => "myanmar letter vocalic r",
+            Myanmar::LetterVocalicRr => "myanmar letter vocalic rr",
+            Myanmar::LetterVocalicL => "myanmar letter vocalic l",
+            Myanmar::LetterVocalicLl => "myanmar letter vocalic ll",
+            Myanmar::VowelSignVocalicR => "myanmar vowel sign vocalic r",
+            Myanmar::VowelSignVocalicRr => "myanmar vowel sign vocalic rr",
+            Myanmar::VowelSignVocalicL => "myanmar vowel sign vocalic l",
+            Myanmar::VowelSignVocalicLl => "myanmar vowel sign vocalic ll",
+            Myanmar::LetterMonNga => "myanmar letter mon nga",
+            Myanmar::LetterMonJha => "myanmar letter mon jha",
+            Myanmar::LetterMonBba => "myanmar letter mon bba",
+            Myanmar::LetterMonBbe => "myanmar letter mon bbe",
+            Myanmar::ConsonantSignMonMedialNa => "myanmar consonant sign mon medial na",
+            Myanmar::ConsonantSignMonMedialMa => "myanmar consonant sign mon medial ma",
+            Myanmar::ConsonantSignMonMedialLa => "myanmar consonant sign mon medial la",
+            Myanmar::LetterSgawKarenSha => "myanmar letter sgaw karen sha",
+            Myanmar::VowelSignSgawKarenEu => "myanmar vowel sign sgaw karen eu",
+            Myanmar::ToneMarkSgawKarenHathi => "myanmar tone mark sgaw karen hathi",
+            Myanmar::ToneMarkSgawKarenKePho => "myanmar tone mark sgaw karen ke pho",
+            Myanmar::LetterWesternPwoKarenTha => "myanmar letter western pwo karen tha",
+            Myanmar::LetterWesternPwoKarenPwa => "myanmar letter western pwo karen pwa",
+            Myanmar::VowelSignWesternPwoKarenEu => "myanmar vowel sign western pwo karen eu",
+            Myanmar::VowelSignWesternPwoKarenUe => "myanmar vowel sign western pwo karen ue",
+            Myanmar::SignWesternPwoKarenToneDash1 => "myanmar sign western pwo karen tone-1",
+            Myanmar::SignWesternPwoKarenToneDash2 => "myanmar sign western pwo karen tone-2",
+            Myanmar::SignWesternPwoKarenToneDash3 => "myanmar sign western pwo karen tone-3",
+            Myanmar::SignWesternPwoKarenToneDash4 => "myanmar sign western pwo karen tone-4",
+            Myanmar::SignWesternPwoKarenToneDash5 => "myanmar sign western pwo karen tone-5",
+            Myanmar::LetterEasternPwoKarenNna => "myanmar letter eastern pwo karen nna",
+            Myanmar::LetterEasternPwoKarenYwa => "myanmar letter eastern pwo karen ywa",
+            Myanmar::LetterEasternPwoKarenGhwa => "myanmar letter eastern pwo karen ghwa",
+            Myanmar::VowelSignGebaKarenI => "myanmar vowel sign geba karen i",
+            Myanmar::VowelSignKayahOe => "myanmar vowel sign kayah oe",
+            Myanmar::VowelSignKayahU => "myanmar vowel sign kayah u",
+            Myanmar::VowelSignKayahEe => "myanmar vowel sign kayah ee",
+            Myanmar::LetterShanKa => "myanmar letter shan ka",
+            Myanmar::LetterShanKha => "myanmar letter shan kha",
+            Myanmar::LetterShanGa => "myanmar letter shan ga",
+            Myanmar::LetterShanCa => "myanmar letter shan ca",
+            Myanmar::LetterShanZa => "myanmar letter shan za",
+            Myanmar::LetterShanNya => "myanmar letter shan nya",
+            Myanmar::LetterShanDa => "myanmar letter shan da",
+            Myanmar::LetterShanNa => "myanmar letter shan na",
+            Myanmar::LetterShanPha => "myanmar letter shan pha",
+            Myanmar::LetterShanFa => "myanmar letter shan fa",
+            Myanmar::LetterShanBa => "myanmar letter shan ba",
+            Myanmar::LetterShanTha => "myanmar letter shan tha",
+            Myanmar::LetterShanHa => "myanmar letter shan ha",
+            Myanmar::ConsonantSignShanMedialWa => "myanmar consonant sign shan medial wa",
+            Myanmar::VowelSignShanAa => "myanmar vowel sign shan aa",
+            Myanmar::VowelSignShanE => "myanmar vowel sign shan e",
+            Myanmar::VowelSignShanEAbove => "myanmar vowel sign shan e above",
+            Myanmar::VowelSignShanFinalY => "myanmar vowel sign shan final y",
+            Myanmar::SignShanToneDash2 => "myanmar sign shan tone-2",
+            Myanmar::SignShanToneDash3 => "myanmar sign shan tone-3",
+            Myanmar::SignShanToneDash5 => "myanmar sign shan tone-5",
+            Myanmar::SignShanToneDash6 => "myanmar sign shan tone-6",
+            Myanmar::SignShanCouncilToneDash2 => "myanmar sign shan council tone-2",
+            Myanmar::SignShanCouncilToneDash3 => "myanmar sign shan council tone-3",
+            Myanmar::SignShanCouncilEmphaticTone => "myanmar sign shan council emphatic tone",
+            Myanmar::LetterRumaiPalaungFa => "myanmar letter rumai palaung fa",
+            Myanmar::SignRumaiPalaungToneDash5 => "myanmar sign rumai palaung tone-5",
+            Myanmar::ShanDigitZero => "myanmar shan digit zero",
+            Myanmar::ShanDigitOne => "myanmar shan digit one",
+            Myanmar::ShanDigitTwo => "myanmar shan digit two",
+            Myanmar::ShanDigitThree => "myanmar shan digit three",
+            Myanmar::ShanDigitFour => "myanmar shan digit four",
+            Myanmar::ShanDigitFive => "myanmar shan digit five",
+            Myanmar::ShanDigitSix => "myanmar shan digit six",
+            Myanmar::ShanDigitSeven => "myanmar shan digit seven",
+            Myanmar::ShanDigitEight => "myanmar shan digit eight",
+            Myanmar::ShanDigitNine => "myanmar shan digit nine",
+            Myanmar::SignKhamtiToneDash1 => "myanmar sign khamti tone-1",
+            Myanmar::SignKhamtiToneDash3 => "myanmar sign khamti tone-3",
+            Myanmar::VowelSignAitonA => "myanmar vowel sign aiton a",
+            Myanmar::VowelSignAitonAi => "myanmar vowel sign aiton ai",
+            Myanmar::SymbolShanOne => "myanmar symbol shan one",
         }
     }
 }

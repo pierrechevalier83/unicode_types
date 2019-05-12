@@ -7,145 +7,145 @@
 /// 𞅅 𞅆 𞅇 𞅈 𞅉 𞅎
 pub mod constants {
     /// \u{1e100}: '𞄀'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_MA: char = '𞄀';
+    pub const LETTER_MA: char = '𞄀';
     /// \u{1e101}: '𞄁'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_TSA: char = '𞄁';
+    pub const LETTER_TSA: char = '𞄁';
     /// \u{1e102}: '𞄂'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NTA: char = '𞄂';
+    pub const LETTER_NTA: char = '𞄂';
     /// \u{1e103}: '𞄃'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_TA: char = '𞄃';
+    pub const LETTER_TA: char = '𞄃';
     /// \u{1e104}: '𞄄'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_HA: char = '𞄄';
+    pub const LETTER_HA: char = '𞄄';
     /// \u{1e105}: '𞄅'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NA: char = '𞄅';
+    pub const LETTER_NA: char = '𞄅';
     /// \u{1e106}: '𞄆'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_XA: char = '𞄆';
+    pub const LETTER_XA: char = '𞄆';
     /// \u{1e107}: '𞄇'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NKA: char = '𞄇';
+    pub const LETTER_NKA: char = '𞄇';
     /// \u{1e108}: '𞄈'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_CA: char = '𞄈';
+    pub const LETTER_CA: char = '𞄈';
     /// \u{1e109}: '𞄉'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_LA: char = '𞄉';
+    pub const LETTER_LA: char = '𞄉';
     /// \u{1e10a}: '𞄊'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_SA: char = '𞄊';
+    pub const LETTER_SA: char = '𞄊';
     /// \u{1e10b}: '𞄋'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_ZA: char = '𞄋';
+    pub const LETTER_ZA: char = '𞄋';
     /// \u{1e10c}: '𞄌'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NCA: char = '𞄌';
+    pub const LETTER_NCA: char = '𞄌';
     /// \u{1e10d}: '𞄍'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NTSA: char = '𞄍';
+    pub const LETTER_NTSA: char = '𞄍';
     /// \u{1e10e}: '𞄎'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_KA: char = '𞄎';
+    pub const LETTER_KA: char = '𞄎';
     /// \u{1e10f}: '𞄏'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_DA: char = '𞄏';
+    pub const LETTER_DA: char = '𞄏';
     /// \u{1e110}: '𞄐'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NYA: char = '𞄐';
+    pub const LETTER_NYA: char = '𞄐';
     /// \u{1e111}: '𞄑'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NRA: char = '𞄑';
+    pub const LETTER_NRA: char = '𞄑';
     /// \u{1e112}: '𞄒'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_VA: char = '𞄒';
+    pub const LETTER_VA: char = '𞄒';
     /// \u{1e113}: '𞄓'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NTXA: char = '𞄓';
+    pub const LETTER_NTXA: char = '𞄓';
     /// \u{1e114}: '𞄔'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_TXA: char = '𞄔';
+    pub const LETTER_TXA: char = '𞄔';
     /// \u{1e115}: '𞄕'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_FA: char = '𞄕';
+    pub const LETTER_FA: char = '𞄕';
     /// \u{1e116}: '𞄖'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_RA: char = '𞄖';
+    pub const LETTER_RA: char = '𞄖';
     /// \u{1e117}: '𞄗'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_QA: char = '𞄗';
+    pub const LETTER_QA: char = '𞄗';
     /// \u{1e118}: '𞄘'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_YA: char = '𞄘';
+    pub const LETTER_YA: char = '𞄘';
     /// \u{1e119}: '𞄙'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NQA: char = '𞄙';
+    pub const LETTER_NQA: char = '𞄙';
     /// \u{1e11a}: '𞄚'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_PA: char = '𞄚';
+    pub const LETTER_PA: char = '𞄚';
     /// \u{1e11b}: '𞄛'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_XYA: char = '𞄛';
+    pub const LETTER_XYA: char = '𞄛';
     /// \u{1e11c}: '𞄜'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NPA: char = '𞄜';
+    pub const LETTER_NPA: char = '𞄜';
     /// \u{1e11d}: '𞄝'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_DLA: char = '𞄝';
+    pub const LETTER_DLA: char = '𞄝';
     /// \u{1e11e}: '𞄞'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_NPLA: char = '𞄞';
+    pub const LETTER_NPLA: char = '𞄞';
     /// \u{1e11f}: '𞄟'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_HAH: char = '𞄟';
+    pub const LETTER_HAH: char = '𞄟';
     /// \u{1e120}: '𞄠'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_MLA: char = '𞄠';
+    pub const LETTER_MLA: char = '𞄠';
     /// \u{1e121}: '𞄡'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_PLA: char = '𞄡';
+    pub const LETTER_PLA: char = '𞄡';
     /// \u{1e122}: '𞄢'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_GA: char = '𞄢';
+    pub const LETTER_GA: char = '𞄢';
     /// \u{1e123}: '𞄣'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_RRA: char = '𞄣';
+    pub const LETTER_RRA: char = '𞄣';
     /// \u{1e124}: '𞄤'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_A: char = '𞄤';
+    pub const LETTER_A: char = '𞄤';
     /// \u{1e125}: '𞄥'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_AA: char = '𞄥';
+    pub const LETTER_AA: char = '𞄥';
     /// \u{1e126}: '𞄦'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_I: char = '𞄦';
+    pub const LETTER_I: char = '𞄦';
     /// \u{1e127}: '𞄧'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_U: char = '𞄧';
+    pub const LETTER_U: char = '𞄧';
     /// \u{1e128}: '𞄨'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_O: char = '𞄨';
+    pub const LETTER_O: char = '𞄨';
     /// \u{1e129}: '𞄩'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_OO: char = '𞄩';
+    pub const LETTER_OO: char = '𞄩';
     /// \u{1e12a}: '𞄪'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_E: char = '𞄪';
+    pub const LETTER_E: char = '𞄪';
     /// \u{1e12b}: '𞄫'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_EE: char = '𞄫';
+    pub const LETTER_EE: char = '𞄫';
     /// \u{1e12c}: '𞄬'
-    pub const NYIAKENG_PUACHUE_HMONG_LETTER_W: char = '𞄬';
+    pub const LETTER_W: char = '𞄬';
     /// \u{1e130}: '𞄰'
-    pub const NYIAKENG_PUACHUE_HMONG_TONE_DASH_B: char = '𞄰';
+    pub const TONE_DASH_B: char = '𞄰';
     /// \u{1e131}: '𞄱'
-    pub const NYIAKENG_PUACHUE_HMONG_TONE_DASH_M: char = '𞄱';
+    pub const TONE_DASH_M: char = '𞄱';
     /// \u{1e132}: '𞄲'
-    pub const NYIAKENG_PUACHUE_HMONG_TONE_DASH_J: char = '𞄲';
+    pub const TONE_DASH_J: char = '𞄲';
     /// \u{1e133}: '𞄳'
-    pub const NYIAKENG_PUACHUE_HMONG_TONE_DASH_V: char = '𞄳';
+    pub const TONE_DASH_V: char = '𞄳';
     /// \u{1e134}: '𞄴'
-    pub const NYIAKENG_PUACHUE_HMONG_TONE_DASH_S: char = '𞄴';
+    pub const TONE_DASH_S: char = '𞄴';
     /// \u{1e135}: '𞄵'
-    pub const NYIAKENG_PUACHUE_HMONG_TONE_DASH_G: char = '𞄵';
+    pub const TONE_DASH_G: char = '𞄵';
     /// \u{1e136}: '𞄶'
-    pub const NYIAKENG_PUACHUE_HMONG_TONE_DASH_D: char = '𞄶';
+    pub const TONE_DASH_D: char = '𞄶';
     /// \u{1e137}: '𞄷'
-    pub const NYIAKENG_PUACHUE_HMONG_SIGN_FOR_PERSON: char = '𞄷';
+    pub const SIGN_FOR_PERSON: char = '𞄷';
     /// \u{1e138}: '𞄸'
-    pub const NYIAKENG_PUACHUE_HMONG_SIGN_FOR_THING: char = '𞄸';
+    pub const SIGN_FOR_THING: char = '𞄸';
     /// \u{1e139}: '𞄹'
-    pub const NYIAKENG_PUACHUE_HMONG_SIGN_FOR_LOCATION: char = '𞄹';
+    pub const SIGN_FOR_LOCATION: char = '𞄹';
     /// \u{1e13a}: '𞄺'
-    pub const NYIAKENG_PUACHUE_HMONG_SIGN_FOR_ANIMAL: char = '𞄺';
+    pub const SIGN_FOR_ANIMAL: char = '𞄺';
     /// \u{1e13b}: '𞄻'
-    pub const NYIAKENG_PUACHUE_HMONG_SIGN_FOR_INVERTEBRATE: char = '𞄻';
+    pub const SIGN_FOR_INVERTEBRATE: char = '𞄻';
     /// \u{1e13c}: '𞄼'
-    pub const NYIAKENG_PUACHUE_HMONG_SIGN_XW_XW: char = '𞄼';
+    pub const SIGN_XW_XW: char = '𞄼';
     /// \u{1e13d}: '𞄽'
-    pub const NYIAKENG_PUACHUE_HMONG_SYLLABLE_LENGTHENER: char = '𞄽';
+    pub const SYLLABLE_LENGTHENER: char = '𞄽';
     /// \u{1e140}: '𞅀'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_ZERO: char = '𞅀';
+    pub const DIGIT_ZERO: char = '𞅀';
     /// \u{1e141}: '𞅁'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_ONE: char = '𞅁';
+    pub const DIGIT_ONE: char = '𞅁';
     /// \u{1e142}: '𞅂'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_TWO: char = '𞅂';
+    pub const DIGIT_TWO: char = '𞅂';
     /// \u{1e143}: '𞅃'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_THREE: char = '𞅃';
+    pub const DIGIT_THREE: char = '𞅃';
     /// \u{1e144}: '𞅄'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_FOUR: char = '𞅄';
+    pub const DIGIT_FOUR: char = '𞅄';
     /// \u{1e145}: '𞅅'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_FIVE: char = '𞅅';
+    pub const DIGIT_FIVE: char = '𞅅';
     /// \u{1e146}: '𞅆'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_SIX: char = '𞅆';
+    pub const DIGIT_SIX: char = '𞅆';
     /// \u{1e147}: '𞅇'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_SEVEN: char = '𞅇';
+    pub const DIGIT_SEVEN: char = '𞅇';
     /// \u{1e148}: '𞅈'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_EIGHT: char = '𞅈';
+    pub const DIGIT_EIGHT: char = '𞅈';
     /// \u{1e149}: '𞅉'
-    pub const NYIAKENG_PUACHUE_HMONG_DIGIT_NINE: char = '𞅉';
+    pub const DIGIT_NINE: char = '𞅉';
     /// \u{1e14e}: '𞅎'
-    pub const NYIAKENG_PUACHUE_HMONG_LOGOGRAM_NYAJ: char = '𞅎';
+    pub const LOGOGRAM_NYAJ: char = '𞅎';
 }
 
 /// \u{1e100} → \u{1e14f}\
@@ -158,221 +158,221 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum NyiakengPuachueHmong {
     /// \u{1e100}: '𞄀'
-    NyiakengPuachueHmongLetterMa,
+    LetterMa,
     /// \u{1e101}: '𞄁'
-    NyiakengPuachueHmongLetterTsa,
+    LetterTsa,
     /// \u{1e102}: '𞄂'
-    NyiakengPuachueHmongLetterNta,
+    LetterNta,
     /// \u{1e103}: '𞄃'
-    NyiakengPuachueHmongLetterTa,
+    LetterTa,
     /// \u{1e104}: '𞄄'
-    NyiakengPuachueHmongLetterHa,
+    LetterHa,
     /// \u{1e105}: '𞄅'
-    NyiakengPuachueHmongLetterNa,
+    LetterNa,
     /// \u{1e106}: '𞄆'
-    NyiakengPuachueHmongLetterXa,
+    LetterXa,
     /// \u{1e107}: '𞄇'
-    NyiakengPuachueHmongLetterNka,
+    LetterNka,
     /// \u{1e108}: '𞄈'
-    NyiakengPuachueHmongLetterCa,
+    LetterCa,
     /// \u{1e109}: '𞄉'
-    NyiakengPuachueHmongLetterLa,
+    LetterLa,
     /// \u{1e10a}: '𞄊'
-    NyiakengPuachueHmongLetterSa,
+    LetterSa,
     /// \u{1e10b}: '𞄋'
-    NyiakengPuachueHmongLetterZa,
+    LetterZa,
     /// \u{1e10c}: '𞄌'
-    NyiakengPuachueHmongLetterNca,
+    LetterNca,
     /// \u{1e10d}: '𞄍'
-    NyiakengPuachueHmongLetterNtsa,
+    LetterNtsa,
     /// \u{1e10e}: '𞄎'
-    NyiakengPuachueHmongLetterKa,
+    LetterKa,
     /// \u{1e10f}: '𞄏'
-    NyiakengPuachueHmongLetterDa,
+    LetterDa,
     /// \u{1e110}: '𞄐'
-    NyiakengPuachueHmongLetterNya,
+    LetterNya,
     /// \u{1e111}: '𞄑'
-    NyiakengPuachueHmongLetterNra,
+    LetterNra,
     /// \u{1e112}: '𞄒'
-    NyiakengPuachueHmongLetterVa,
+    LetterVa,
     /// \u{1e113}: '𞄓'
-    NyiakengPuachueHmongLetterNtxa,
+    LetterNtxa,
     /// \u{1e114}: '𞄔'
-    NyiakengPuachueHmongLetterTxa,
+    LetterTxa,
     /// \u{1e115}: '𞄕'
-    NyiakengPuachueHmongLetterFa,
+    LetterFa,
     /// \u{1e116}: '𞄖'
-    NyiakengPuachueHmongLetterRa,
+    LetterRa,
     /// \u{1e117}: '𞄗'
-    NyiakengPuachueHmongLetterQa,
+    LetterQa,
     /// \u{1e118}: '𞄘'
-    NyiakengPuachueHmongLetterYa,
+    LetterYa,
     /// \u{1e119}: '𞄙'
-    NyiakengPuachueHmongLetterNqa,
+    LetterNqa,
     /// \u{1e11a}: '𞄚'
-    NyiakengPuachueHmongLetterPa,
+    LetterPa,
     /// \u{1e11b}: '𞄛'
-    NyiakengPuachueHmongLetterXya,
+    LetterXya,
     /// \u{1e11c}: '𞄜'
-    NyiakengPuachueHmongLetterNpa,
+    LetterNpa,
     /// \u{1e11d}: '𞄝'
-    NyiakengPuachueHmongLetterDla,
+    LetterDla,
     /// \u{1e11e}: '𞄞'
-    NyiakengPuachueHmongLetterNpla,
+    LetterNpla,
     /// \u{1e11f}: '𞄟'
-    NyiakengPuachueHmongLetterHah,
+    LetterHah,
     /// \u{1e120}: '𞄠'
-    NyiakengPuachueHmongLetterMla,
+    LetterMla,
     /// \u{1e121}: '𞄡'
-    NyiakengPuachueHmongLetterPla,
+    LetterPla,
     /// \u{1e122}: '𞄢'
-    NyiakengPuachueHmongLetterGa,
+    LetterGa,
     /// \u{1e123}: '𞄣'
-    NyiakengPuachueHmongLetterRra,
+    LetterRra,
     /// \u{1e124}: '𞄤'
-    NyiakengPuachueHmongLetterA,
+    LetterA,
     /// \u{1e125}: '𞄥'
-    NyiakengPuachueHmongLetterAa,
+    LetterAa,
     /// \u{1e126}: '𞄦'
-    NyiakengPuachueHmongLetterI,
+    LetterI,
     /// \u{1e127}: '𞄧'
-    NyiakengPuachueHmongLetterU,
+    LetterU,
     /// \u{1e128}: '𞄨'
-    NyiakengPuachueHmongLetterO,
+    LetterO,
     /// \u{1e129}: '𞄩'
-    NyiakengPuachueHmongLetterOo,
+    LetterOo,
     /// \u{1e12a}: '𞄪'
-    NyiakengPuachueHmongLetterE,
+    LetterE,
     /// \u{1e12b}: '𞄫'
-    NyiakengPuachueHmongLetterEe,
+    LetterEe,
     /// \u{1e12c}: '𞄬'
-    NyiakengPuachueHmongLetterW,
+    LetterW,
     /// \u{1e130}: '𞄰'
-    NyiakengPuachueHmongToneDashB,
+    ToneDashB,
     /// \u{1e131}: '𞄱'
-    NyiakengPuachueHmongToneDashM,
+    ToneDashM,
     /// \u{1e132}: '𞄲'
-    NyiakengPuachueHmongToneDashJ,
+    ToneDashJ,
     /// \u{1e133}: '𞄳'
-    NyiakengPuachueHmongToneDashV,
+    ToneDashV,
     /// \u{1e134}: '𞄴'
-    NyiakengPuachueHmongToneDashS,
+    ToneDashS,
     /// \u{1e135}: '𞄵'
-    NyiakengPuachueHmongToneDashG,
+    ToneDashG,
     /// \u{1e136}: '𞄶'
-    NyiakengPuachueHmongToneDashD,
+    ToneDashD,
     /// \u{1e137}: '𞄷'
-    NyiakengPuachueHmongSignForPerson,
+    SignForPerson,
     /// \u{1e138}: '𞄸'
-    NyiakengPuachueHmongSignForThing,
+    SignForThing,
     /// \u{1e139}: '𞄹'
-    NyiakengPuachueHmongSignForLocation,
+    SignForLocation,
     /// \u{1e13a}: '𞄺'
-    NyiakengPuachueHmongSignForAnimal,
+    SignForAnimal,
     /// \u{1e13b}: '𞄻'
-    NyiakengPuachueHmongSignForInvertebrate,
+    SignForInvertebrate,
     /// \u{1e13c}: '𞄼'
-    NyiakengPuachueHmongSignXwXw,
+    SignXwXw,
     /// \u{1e13d}: '𞄽'
-    NyiakengPuachueHmongSyllableLengthener,
+    SyllableLengthener,
     /// \u{1e140}: '𞅀'
-    NyiakengPuachueHmongDigitZero,
+    DigitZero,
     /// \u{1e141}: '𞅁'
-    NyiakengPuachueHmongDigitOne,
+    DigitOne,
     /// \u{1e142}: '𞅂'
-    NyiakengPuachueHmongDigitTwo,
+    DigitTwo,
     /// \u{1e143}: '𞅃'
-    NyiakengPuachueHmongDigitThree,
+    DigitThree,
     /// \u{1e144}: '𞅄'
-    NyiakengPuachueHmongDigitFour,
+    DigitFour,
     /// \u{1e145}: '𞅅'
-    NyiakengPuachueHmongDigitFive,
+    DigitFive,
     /// \u{1e146}: '𞅆'
-    NyiakengPuachueHmongDigitSix,
+    DigitSix,
     /// \u{1e147}: '𞅇'
-    NyiakengPuachueHmongDigitSeven,
+    DigitSeven,
     /// \u{1e148}: '𞅈'
-    NyiakengPuachueHmongDigitEight,
+    DigitEight,
     /// \u{1e149}: '𞅉'
-    NyiakengPuachueHmongDigitNine,
+    DigitNine,
     /// \u{1e14e}: '𞅎'
-    NyiakengPuachueHmongLogogramNyaj,
+    LogogramNyaj,
 }
 
 impl Into<char> for NyiakengPuachueHmong {
     fn into(self) -> char {
         use constants::*;
         match self {
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterMa => NYIAKENG_PUACHUE_HMONG_LETTER_MA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterTsa => NYIAKENG_PUACHUE_HMONG_LETTER_TSA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNta => NYIAKENG_PUACHUE_HMONG_LETTER_NTA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterTa => NYIAKENG_PUACHUE_HMONG_LETTER_TA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterHa => NYIAKENG_PUACHUE_HMONG_LETTER_HA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNa => NYIAKENG_PUACHUE_HMONG_LETTER_NA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterXa => NYIAKENG_PUACHUE_HMONG_LETTER_XA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNka => NYIAKENG_PUACHUE_HMONG_LETTER_NKA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterCa => NYIAKENG_PUACHUE_HMONG_LETTER_CA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterLa => NYIAKENG_PUACHUE_HMONG_LETTER_LA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterSa => NYIAKENG_PUACHUE_HMONG_LETTER_SA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterZa => NYIAKENG_PUACHUE_HMONG_LETTER_ZA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNca => NYIAKENG_PUACHUE_HMONG_LETTER_NCA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNtsa => NYIAKENG_PUACHUE_HMONG_LETTER_NTSA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterKa => NYIAKENG_PUACHUE_HMONG_LETTER_KA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterDa => NYIAKENG_PUACHUE_HMONG_LETTER_DA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNya => NYIAKENG_PUACHUE_HMONG_LETTER_NYA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNra => NYIAKENG_PUACHUE_HMONG_LETTER_NRA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterVa => NYIAKENG_PUACHUE_HMONG_LETTER_VA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNtxa => NYIAKENG_PUACHUE_HMONG_LETTER_NTXA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterTxa => NYIAKENG_PUACHUE_HMONG_LETTER_TXA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterFa => NYIAKENG_PUACHUE_HMONG_LETTER_FA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterRa => NYIAKENG_PUACHUE_HMONG_LETTER_RA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterQa => NYIAKENG_PUACHUE_HMONG_LETTER_QA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterYa => NYIAKENG_PUACHUE_HMONG_LETTER_YA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNqa => NYIAKENG_PUACHUE_HMONG_LETTER_NQA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterPa => NYIAKENG_PUACHUE_HMONG_LETTER_PA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterXya => NYIAKENG_PUACHUE_HMONG_LETTER_XYA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNpa => NYIAKENG_PUACHUE_HMONG_LETTER_NPA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterDla => NYIAKENG_PUACHUE_HMONG_LETTER_DLA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNpla => NYIAKENG_PUACHUE_HMONG_LETTER_NPLA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterHah => NYIAKENG_PUACHUE_HMONG_LETTER_HAH,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterMla => NYIAKENG_PUACHUE_HMONG_LETTER_MLA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterPla => NYIAKENG_PUACHUE_HMONG_LETTER_PLA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterGa => NYIAKENG_PUACHUE_HMONG_LETTER_GA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterRra => NYIAKENG_PUACHUE_HMONG_LETTER_RRA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterA => NYIAKENG_PUACHUE_HMONG_LETTER_A,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterAa => NYIAKENG_PUACHUE_HMONG_LETTER_AA,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterI => NYIAKENG_PUACHUE_HMONG_LETTER_I,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterU => NYIAKENG_PUACHUE_HMONG_LETTER_U,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterO => NYIAKENG_PUACHUE_HMONG_LETTER_O,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterOo => NYIAKENG_PUACHUE_HMONG_LETTER_OO,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterE => NYIAKENG_PUACHUE_HMONG_LETTER_E,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterEe => NYIAKENG_PUACHUE_HMONG_LETTER_EE,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterW => NYIAKENG_PUACHUE_HMONG_LETTER_W,
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashB => NYIAKENG_PUACHUE_HMONG_TONE_DASH_B,
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashM => NYIAKENG_PUACHUE_HMONG_TONE_DASH_M,
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashJ => NYIAKENG_PUACHUE_HMONG_TONE_DASH_J,
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashV => NYIAKENG_PUACHUE_HMONG_TONE_DASH_V,
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashS => NYIAKENG_PUACHUE_HMONG_TONE_DASH_S,
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashG => NYIAKENG_PUACHUE_HMONG_TONE_DASH_G,
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashD => NYIAKENG_PUACHUE_HMONG_TONE_DASH_D,
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForPerson => NYIAKENG_PUACHUE_HMONG_SIGN_FOR_PERSON,
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForThing => NYIAKENG_PUACHUE_HMONG_SIGN_FOR_THING,
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForLocation => NYIAKENG_PUACHUE_HMONG_SIGN_FOR_LOCATION,
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForAnimal => NYIAKENG_PUACHUE_HMONG_SIGN_FOR_ANIMAL,
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForInvertebrate => NYIAKENG_PUACHUE_HMONG_SIGN_FOR_INVERTEBRATE,
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignXwXw => NYIAKENG_PUACHUE_HMONG_SIGN_XW_XW,
-            NyiakengPuachueHmong::NyiakengPuachueHmongSyllableLengthener => NYIAKENG_PUACHUE_HMONG_SYLLABLE_LENGTHENER,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitZero => NYIAKENG_PUACHUE_HMONG_DIGIT_ZERO,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitOne => NYIAKENG_PUACHUE_HMONG_DIGIT_ONE,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitTwo => NYIAKENG_PUACHUE_HMONG_DIGIT_TWO,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitThree => NYIAKENG_PUACHUE_HMONG_DIGIT_THREE,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitFour => NYIAKENG_PUACHUE_HMONG_DIGIT_FOUR,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitFive => NYIAKENG_PUACHUE_HMONG_DIGIT_FIVE,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitSix => NYIAKENG_PUACHUE_HMONG_DIGIT_SIX,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitSeven => NYIAKENG_PUACHUE_HMONG_DIGIT_SEVEN,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitEight => NYIAKENG_PUACHUE_HMONG_DIGIT_EIGHT,
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitNine => NYIAKENG_PUACHUE_HMONG_DIGIT_NINE,
-            NyiakengPuachueHmong::NyiakengPuachueHmongLogogramNyaj => NYIAKENG_PUACHUE_HMONG_LOGOGRAM_NYAJ,
+            NyiakengPuachueHmong::LetterMa => LETTER_MA,
+            NyiakengPuachueHmong::LetterTsa => LETTER_TSA,
+            NyiakengPuachueHmong::LetterNta => LETTER_NTA,
+            NyiakengPuachueHmong::LetterTa => LETTER_TA,
+            NyiakengPuachueHmong::LetterHa => LETTER_HA,
+            NyiakengPuachueHmong::LetterNa => LETTER_NA,
+            NyiakengPuachueHmong::LetterXa => LETTER_XA,
+            NyiakengPuachueHmong::LetterNka => LETTER_NKA,
+            NyiakengPuachueHmong::LetterCa => LETTER_CA,
+            NyiakengPuachueHmong::LetterLa => LETTER_LA,
+            NyiakengPuachueHmong::LetterSa => LETTER_SA,
+            NyiakengPuachueHmong::LetterZa => LETTER_ZA,
+            NyiakengPuachueHmong::LetterNca => LETTER_NCA,
+            NyiakengPuachueHmong::LetterNtsa => LETTER_NTSA,
+            NyiakengPuachueHmong::LetterKa => LETTER_KA,
+            NyiakengPuachueHmong::LetterDa => LETTER_DA,
+            NyiakengPuachueHmong::LetterNya => LETTER_NYA,
+            NyiakengPuachueHmong::LetterNra => LETTER_NRA,
+            NyiakengPuachueHmong::LetterVa => LETTER_VA,
+            NyiakengPuachueHmong::LetterNtxa => LETTER_NTXA,
+            NyiakengPuachueHmong::LetterTxa => LETTER_TXA,
+            NyiakengPuachueHmong::LetterFa => LETTER_FA,
+            NyiakengPuachueHmong::LetterRa => LETTER_RA,
+            NyiakengPuachueHmong::LetterQa => LETTER_QA,
+            NyiakengPuachueHmong::LetterYa => LETTER_YA,
+            NyiakengPuachueHmong::LetterNqa => LETTER_NQA,
+            NyiakengPuachueHmong::LetterPa => LETTER_PA,
+            NyiakengPuachueHmong::LetterXya => LETTER_XYA,
+            NyiakengPuachueHmong::LetterNpa => LETTER_NPA,
+            NyiakengPuachueHmong::LetterDla => LETTER_DLA,
+            NyiakengPuachueHmong::LetterNpla => LETTER_NPLA,
+            NyiakengPuachueHmong::LetterHah => LETTER_HAH,
+            NyiakengPuachueHmong::LetterMla => LETTER_MLA,
+            NyiakengPuachueHmong::LetterPla => LETTER_PLA,
+            NyiakengPuachueHmong::LetterGa => LETTER_GA,
+            NyiakengPuachueHmong::LetterRra => LETTER_RRA,
+            NyiakengPuachueHmong::LetterA => LETTER_A,
+            NyiakengPuachueHmong::LetterAa => LETTER_AA,
+            NyiakengPuachueHmong::LetterI => LETTER_I,
+            NyiakengPuachueHmong::LetterU => LETTER_U,
+            NyiakengPuachueHmong::LetterO => LETTER_O,
+            NyiakengPuachueHmong::LetterOo => LETTER_OO,
+            NyiakengPuachueHmong::LetterE => LETTER_E,
+            NyiakengPuachueHmong::LetterEe => LETTER_EE,
+            NyiakengPuachueHmong::LetterW => LETTER_W,
+            NyiakengPuachueHmong::ToneDashB => TONE_DASH_B,
+            NyiakengPuachueHmong::ToneDashM => TONE_DASH_M,
+            NyiakengPuachueHmong::ToneDashJ => TONE_DASH_J,
+            NyiakengPuachueHmong::ToneDashV => TONE_DASH_V,
+            NyiakengPuachueHmong::ToneDashS => TONE_DASH_S,
+            NyiakengPuachueHmong::ToneDashG => TONE_DASH_G,
+            NyiakengPuachueHmong::ToneDashD => TONE_DASH_D,
+            NyiakengPuachueHmong::SignForPerson => SIGN_FOR_PERSON,
+            NyiakengPuachueHmong::SignForThing => SIGN_FOR_THING,
+            NyiakengPuachueHmong::SignForLocation => SIGN_FOR_LOCATION,
+            NyiakengPuachueHmong::SignForAnimal => SIGN_FOR_ANIMAL,
+            NyiakengPuachueHmong::SignForInvertebrate => SIGN_FOR_INVERTEBRATE,
+            NyiakengPuachueHmong::SignXwXw => SIGN_XW_XW,
+            NyiakengPuachueHmong::SyllableLengthener => SYLLABLE_LENGTHENER,
+            NyiakengPuachueHmong::DigitZero => DIGIT_ZERO,
+            NyiakengPuachueHmong::DigitOne => DIGIT_ONE,
+            NyiakengPuachueHmong::DigitTwo => DIGIT_TWO,
+            NyiakengPuachueHmong::DigitThree => DIGIT_THREE,
+            NyiakengPuachueHmong::DigitFour => DIGIT_FOUR,
+            NyiakengPuachueHmong::DigitFive => DIGIT_FIVE,
+            NyiakengPuachueHmong::DigitSix => DIGIT_SIX,
+            NyiakengPuachueHmong::DigitSeven => DIGIT_SEVEN,
+            NyiakengPuachueHmong::DigitEight => DIGIT_EIGHT,
+            NyiakengPuachueHmong::DigitNine => DIGIT_NINE,
+            NyiakengPuachueHmong::LogogramNyaj => LOGOGRAM_NYAJ,
         }
     }
 }
@@ -382,76 +382,76 @@ impl std::convert::TryFrom<char> for NyiakengPuachueHmong {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            NYIAKENG_PUACHUE_HMONG_LETTER_MA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterMa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_TSA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterTsa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NTA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNta),
-            NYIAKENG_PUACHUE_HMONG_LETTER_TA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterTa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_HA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterHa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_XA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterXa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NKA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNka),
-            NYIAKENG_PUACHUE_HMONG_LETTER_CA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterCa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_LA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterLa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_SA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterSa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_ZA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterZa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NCA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNca),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NTSA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNtsa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_KA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterKa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_DA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterDa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NYA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNya),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NRA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNra),
-            NYIAKENG_PUACHUE_HMONG_LETTER_VA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterVa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NTXA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNtxa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_TXA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterTxa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_FA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterFa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_RA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterRa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_QA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterQa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_YA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterYa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NQA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNqa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_PA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterPa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_XYA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterXya),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NPA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNpa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_DLA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterDla),
-            NYIAKENG_PUACHUE_HMONG_LETTER_NPLA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterNpla),
-            NYIAKENG_PUACHUE_HMONG_LETTER_HAH => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterHah),
-            NYIAKENG_PUACHUE_HMONG_LETTER_MLA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterMla),
-            NYIAKENG_PUACHUE_HMONG_LETTER_PLA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterPla),
-            NYIAKENG_PUACHUE_HMONG_LETTER_GA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterGa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_RRA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterRra),
-            NYIAKENG_PUACHUE_HMONG_LETTER_A => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterA),
-            NYIAKENG_PUACHUE_HMONG_LETTER_AA => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterAa),
-            NYIAKENG_PUACHUE_HMONG_LETTER_I => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterI),
-            NYIAKENG_PUACHUE_HMONG_LETTER_U => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterU),
-            NYIAKENG_PUACHUE_HMONG_LETTER_O => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterO),
-            NYIAKENG_PUACHUE_HMONG_LETTER_OO => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterOo),
-            NYIAKENG_PUACHUE_HMONG_LETTER_E => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterE),
-            NYIAKENG_PUACHUE_HMONG_LETTER_EE => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterEe),
-            NYIAKENG_PUACHUE_HMONG_LETTER_W => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLetterW),
-            NYIAKENG_PUACHUE_HMONG_TONE_DASH_B => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongToneDashB),
-            NYIAKENG_PUACHUE_HMONG_TONE_DASH_M => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongToneDashM),
-            NYIAKENG_PUACHUE_HMONG_TONE_DASH_J => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongToneDashJ),
-            NYIAKENG_PUACHUE_HMONG_TONE_DASH_V => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongToneDashV),
-            NYIAKENG_PUACHUE_HMONG_TONE_DASH_S => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongToneDashS),
-            NYIAKENG_PUACHUE_HMONG_TONE_DASH_G => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongToneDashG),
-            NYIAKENG_PUACHUE_HMONG_TONE_DASH_D => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongToneDashD),
-            NYIAKENG_PUACHUE_HMONG_SIGN_FOR_PERSON => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongSignForPerson),
-            NYIAKENG_PUACHUE_HMONG_SIGN_FOR_THING => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongSignForThing),
-            NYIAKENG_PUACHUE_HMONG_SIGN_FOR_LOCATION => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongSignForLocation),
-            NYIAKENG_PUACHUE_HMONG_SIGN_FOR_ANIMAL => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongSignForAnimal),
-            NYIAKENG_PUACHUE_HMONG_SIGN_FOR_INVERTEBRATE => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongSignForInvertebrate),
-            NYIAKENG_PUACHUE_HMONG_SIGN_XW_XW => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongSignXwXw),
-            NYIAKENG_PUACHUE_HMONG_SYLLABLE_LENGTHENER => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongSyllableLengthener),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_ZERO => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitZero),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_ONE => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitOne),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_TWO => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitTwo),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_THREE => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitThree),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_FOUR => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitFour),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_FIVE => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitFive),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_SIX => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitSix),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_SEVEN => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitSeven),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_EIGHT => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitEight),
-            NYIAKENG_PUACHUE_HMONG_DIGIT_NINE => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongDigitNine),
-            NYIAKENG_PUACHUE_HMONG_LOGOGRAM_NYAJ => Ok(NyiakengPuachueHmong::NyiakengPuachueHmongLogogramNyaj),
+            LETTER_MA => Ok(NyiakengPuachueHmong::LetterMa),
+            LETTER_TSA => Ok(NyiakengPuachueHmong::LetterTsa),
+            LETTER_NTA => Ok(NyiakengPuachueHmong::LetterNta),
+            LETTER_TA => Ok(NyiakengPuachueHmong::LetterTa),
+            LETTER_HA => Ok(NyiakengPuachueHmong::LetterHa),
+            LETTER_NA => Ok(NyiakengPuachueHmong::LetterNa),
+            LETTER_XA => Ok(NyiakengPuachueHmong::LetterXa),
+            LETTER_NKA => Ok(NyiakengPuachueHmong::LetterNka),
+            LETTER_CA => Ok(NyiakengPuachueHmong::LetterCa),
+            LETTER_LA => Ok(NyiakengPuachueHmong::LetterLa),
+            LETTER_SA => Ok(NyiakengPuachueHmong::LetterSa),
+            LETTER_ZA => Ok(NyiakengPuachueHmong::LetterZa),
+            LETTER_NCA => Ok(NyiakengPuachueHmong::LetterNca),
+            LETTER_NTSA => Ok(NyiakengPuachueHmong::LetterNtsa),
+            LETTER_KA => Ok(NyiakengPuachueHmong::LetterKa),
+            LETTER_DA => Ok(NyiakengPuachueHmong::LetterDa),
+            LETTER_NYA => Ok(NyiakengPuachueHmong::LetterNya),
+            LETTER_NRA => Ok(NyiakengPuachueHmong::LetterNra),
+            LETTER_VA => Ok(NyiakengPuachueHmong::LetterVa),
+            LETTER_NTXA => Ok(NyiakengPuachueHmong::LetterNtxa),
+            LETTER_TXA => Ok(NyiakengPuachueHmong::LetterTxa),
+            LETTER_FA => Ok(NyiakengPuachueHmong::LetterFa),
+            LETTER_RA => Ok(NyiakengPuachueHmong::LetterRa),
+            LETTER_QA => Ok(NyiakengPuachueHmong::LetterQa),
+            LETTER_YA => Ok(NyiakengPuachueHmong::LetterYa),
+            LETTER_NQA => Ok(NyiakengPuachueHmong::LetterNqa),
+            LETTER_PA => Ok(NyiakengPuachueHmong::LetterPa),
+            LETTER_XYA => Ok(NyiakengPuachueHmong::LetterXya),
+            LETTER_NPA => Ok(NyiakengPuachueHmong::LetterNpa),
+            LETTER_DLA => Ok(NyiakengPuachueHmong::LetterDla),
+            LETTER_NPLA => Ok(NyiakengPuachueHmong::LetterNpla),
+            LETTER_HAH => Ok(NyiakengPuachueHmong::LetterHah),
+            LETTER_MLA => Ok(NyiakengPuachueHmong::LetterMla),
+            LETTER_PLA => Ok(NyiakengPuachueHmong::LetterPla),
+            LETTER_GA => Ok(NyiakengPuachueHmong::LetterGa),
+            LETTER_RRA => Ok(NyiakengPuachueHmong::LetterRra),
+            LETTER_A => Ok(NyiakengPuachueHmong::LetterA),
+            LETTER_AA => Ok(NyiakengPuachueHmong::LetterAa),
+            LETTER_I => Ok(NyiakengPuachueHmong::LetterI),
+            LETTER_U => Ok(NyiakengPuachueHmong::LetterU),
+            LETTER_O => Ok(NyiakengPuachueHmong::LetterO),
+            LETTER_OO => Ok(NyiakengPuachueHmong::LetterOo),
+            LETTER_E => Ok(NyiakengPuachueHmong::LetterE),
+            LETTER_EE => Ok(NyiakengPuachueHmong::LetterEe),
+            LETTER_W => Ok(NyiakengPuachueHmong::LetterW),
+            TONE_DASH_B => Ok(NyiakengPuachueHmong::ToneDashB),
+            TONE_DASH_M => Ok(NyiakengPuachueHmong::ToneDashM),
+            TONE_DASH_J => Ok(NyiakengPuachueHmong::ToneDashJ),
+            TONE_DASH_V => Ok(NyiakengPuachueHmong::ToneDashV),
+            TONE_DASH_S => Ok(NyiakengPuachueHmong::ToneDashS),
+            TONE_DASH_G => Ok(NyiakengPuachueHmong::ToneDashG),
+            TONE_DASH_D => Ok(NyiakengPuachueHmong::ToneDashD),
+            SIGN_FOR_PERSON => Ok(NyiakengPuachueHmong::SignForPerson),
+            SIGN_FOR_THING => Ok(NyiakengPuachueHmong::SignForThing),
+            SIGN_FOR_LOCATION => Ok(NyiakengPuachueHmong::SignForLocation),
+            SIGN_FOR_ANIMAL => Ok(NyiakengPuachueHmong::SignForAnimal),
+            SIGN_FOR_INVERTEBRATE => Ok(NyiakengPuachueHmong::SignForInvertebrate),
+            SIGN_XW_XW => Ok(NyiakengPuachueHmong::SignXwXw),
+            SYLLABLE_LENGTHENER => Ok(NyiakengPuachueHmong::SyllableLengthener),
+            DIGIT_ZERO => Ok(NyiakengPuachueHmong::DigitZero),
+            DIGIT_ONE => Ok(NyiakengPuachueHmong::DigitOne),
+            DIGIT_TWO => Ok(NyiakengPuachueHmong::DigitTwo),
+            DIGIT_THREE => Ok(NyiakengPuachueHmong::DigitThree),
+            DIGIT_FOUR => Ok(NyiakengPuachueHmong::DigitFour),
+            DIGIT_FIVE => Ok(NyiakengPuachueHmong::DigitFive),
+            DIGIT_SIX => Ok(NyiakengPuachueHmong::DigitSix),
+            DIGIT_SEVEN => Ok(NyiakengPuachueHmong::DigitSeven),
+            DIGIT_EIGHT => Ok(NyiakengPuachueHmong::DigitEight),
+            DIGIT_NINE => Ok(NyiakengPuachueHmong::DigitNine),
+            LOGOGRAM_NYAJ => Ok(NyiakengPuachueHmong::LogogramNyaj),
             _ => Err(()),
         }
     }
@@ -490,84 +490,84 @@ impl Iterator for NyiakengPuachueHmong {
 }
 
 impl NyiakengPuachueHmong {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        NyiakengPuachueHmong::NyiakengPuachueHmongLetterMa
+        NyiakengPuachueHmong::LetterMa
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterMa => "nyiakeng puachue hmong letter ma",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterTsa => "nyiakeng puachue hmong letter tsa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNta => "nyiakeng puachue hmong letter nta",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterTa => "nyiakeng puachue hmong letter ta",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterHa => "nyiakeng puachue hmong letter ha",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNa => "nyiakeng puachue hmong letter na",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterXa => "nyiakeng puachue hmong letter xa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNka => "nyiakeng puachue hmong letter nka",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterCa => "nyiakeng puachue hmong letter ca",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterLa => "nyiakeng puachue hmong letter la",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterSa => "nyiakeng puachue hmong letter sa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterZa => "nyiakeng puachue hmong letter za",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNca => "nyiakeng puachue hmong letter nca",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNtsa => "nyiakeng puachue hmong letter ntsa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterKa => "nyiakeng puachue hmong letter ka",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterDa => "nyiakeng puachue hmong letter da",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNya => "nyiakeng puachue hmong letter nya",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNra => "nyiakeng puachue hmong letter nra",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterVa => "nyiakeng puachue hmong letter va",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNtxa => "nyiakeng puachue hmong letter ntxa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterTxa => "nyiakeng puachue hmong letter txa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterFa => "nyiakeng puachue hmong letter fa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterRa => "nyiakeng puachue hmong letter ra",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterQa => "nyiakeng puachue hmong letter qa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterYa => "nyiakeng puachue hmong letter ya",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNqa => "nyiakeng puachue hmong letter nqa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterPa => "nyiakeng puachue hmong letter pa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterXya => "nyiakeng puachue hmong letter xya",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNpa => "nyiakeng puachue hmong letter npa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterDla => "nyiakeng puachue hmong letter dla",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterNpla => "nyiakeng puachue hmong letter npla",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterHah => "nyiakeng puachue hmong letter hah",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterMla => "nyiakeng puachue hmong letter mla",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterPla => "nyiakeng puachue hmong letter pla",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterGa => "nyiakeng puachue hmong letter ga",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterRra => "nyiakeng puachue hmong letter rra",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterA => "nyiakeng puachue hmong letter a",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterAa => "nyiakeng puachue hmong letter aa",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterI => "nyiakeng puachue hmong letter i",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterU => "nyiakeng puachue hmong letter u",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterO => "nyiakeng puachue hmong letter o",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterOo => "nyiakeng puachue hmong letter oo",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterE => "nyiakeng puachue hmong letter e",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterEe => "nyiakeng puachue hmong letter ee",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLetterW => "nyiakeng puachue hmong letter w",
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashB => "nyiakeng puachue hmong tone-b",
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashM => "nyiakeng puachue hmong tone-m",
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashJ => "nyiakeng puachue hmong tone-j",
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashV => "nyiakeng puachue hmong tone-v",
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashS => "nyiakeng puachue hmong tone-s",
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashG => "nyiakeng puachue hmong tone-g",
-            NyiakengPuachueHmong::NyiakengPuachueHmongToneDashD => "nyiakeng puachue hmong tone-d",
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForPerson => "nyiakeng puachue hmong sign for person",
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForThing => "nyiakeng puachue hmong sign for thing",
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForLocation => "nyiakeng puachue hmong sign for location",
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForAnimal => "nyiakeng puachue hmong sign for animal",
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignForInvertebrate => "nyiakeng puachue hmong sign for invertebrate",
-            NyiakengPuachueHmong::NyiakengPuachueHmongSignXwXw => "nyiakeng puachue hmong sign xw xw",
-            NyiakengPuachueHmong::NyiakengPuachueHmongSyllableLengthener => "nyiakeng puachue hmong syllable lengthener",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitZero => "nyiakeng puachue hmong digit zero",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitOne => "nyiakeng puachue hmong digit one",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitTwo => "nyiakeng puachue hmong digit two",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitThree => "nyiakeng puachue hmong digit three",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitFour => "nyiakeng puachue hmong digit four",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitFive => "nyiakeng puachue hmong digit five",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitSix => "nyiakeng puachue hmong digit six",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitSeven => "nyiakeng puachue hmong digit seven",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitEight => "nyiakeng puachue hmong digit eight",
-            NyiakengPuachueHmong::NyiakengPuachueHmongDigitNine => "nyiakeng puachue hmong digit nine",
-            NyiakengPuachueHmong::NyiakengPuachueHmongLogogramNyaj => "nyiakeng puachue hmong logogram nyaj",
+            NyiakengPuachueHmong::LetterMa => "nyiakeng puachue hmong letter ma",
+            NyiakengPuachueHmong::LetterTsa => "nyiakeng puachue hmong letter tsa",
+            NyiakengPuachueHmong::LetterNta => "nyiakeng puachue hmong letter nta",
+            NyiakengPuachueHmong::LetterTa => "nyiakeng puachue hmong letter ta",
+            NyiakengPuachueHmong::LetterHa => "nyiakeng puachue hmong letter ha",
+            NyiakengPuachueHmong::LetterNa => "nyiakeng puachue hmong letter na",
+            NyiakengPuachueHmong::LetterXa => "nyiakeng puachue hmong letter xa",
+            NyiakengPuachueHmong::LetterNka => "nyiakeng puachue hmong letter nka",
+            NyiakengPuachueHmong::LetterCa => "nyiakeng puachue hmong letter ca",
+            NyiakengPuachueHmong::LetterLa => "nyiakeng puachue hmong letter la",
+            NyiakengPuachueHmong::LetterSa => "nyiakeng puachue hmong letter sa",
+            NyiakengPuachueHmong::LetterZa => "nyiakeng puachue hmong letter za",
+            NyiakengPuachueHmong::LetterNca => "nyiakeng puachue hmong letter nca",
+            NyiakengPuachueHmong::LetterNtsa => "nyiakeng puachue hmong letter ntsa",
+            NyiakengPuachueHmong::LetterKa => "nyiakeng puachue hmong letter ka",
+            NyiakengPuachueHmong::LetterDa => "nyiakeng puachue hmong letter da",
+            NyiakengPuachueHmong::LetterNya => "nyiakeng puachue hmong letter nya",
+            NyiakengPuachueHmong::LetterNra => "nyiakeng puachue hmong letter nra",
+            NyiakengPuachueHmong::LetterVa => "nyiakeng puachue hmong letter va",
+            NyiakengPuachueHmong::LetterNtxa => "nyiakeng puachue hmong letter ntxa",
+            NyiakengPuachueHmong::LetterTxa => "nyiakeng puachue hmong letter txa",
+            NyiakengPuachueHmong::LetterFa => "nyiakeng puachue hmong letter fa",
+            NyiakengPuachueHmong::LetterRa => "nyiakeng puachue hmong letter ra",
+            NyiakengPuachueHmong::LetterQa => "nyiakeng puachue hmong letter qa",
+            NyiakengPuachueHmong::LetterYa => "nyiakeng puachue hmong letter ya",
+            NyiakengPuachueHmong::LetterNqa => "nyiakeng puachue hmong letter nqa",
+            NyiakengPuachueHmong::LetterPa => "nyiakeng puachue hmong letter pa",
+            NyiakengPuachueHmong::LetterXya => "nyiakeng puachue hmong letter xya",
+            NyiakengPuachueHmong::LetterNpa => "nyiakeng puachue hmong letter npa",
+            NyiakengPuachueHmong::LetterDla => "nyiakeng puachue hmong letter dla",
+            NyiakengPuachueHmong::LetterNpla => "nyiakeng puachue hmong letter npla",
+            NyiakengPuachueHmong::LetterHah => "nyiakeng puachue hmong letter hah",
+            NyiakengPuachueHmong::LetterMla => "nyiakeng puachue hmong letter mla",
+            NyiakengPuachueHmong::LetterPla => "nyiakeng puachue hmong letter pla",
+            NyiakengPuachueHmong::LetterGa => "nyiakeng puachue hmong letter ga",
+            NyiakengPuachueHmong::LetterRra => "nyiakeng puachue hmong letter rra",
+            NyiakengPuachueHmong::LetterA => "nyiakeng puachue hmong letter a",
+            NyiakengPuachueHmong::LetterAa => "nyiakeng puachue hmong letter aa",
+            NyiakengPuachueHmong::LetterI => "nyiakeng puachue hmong letter i",
+            NyiakengPuachueHmong::LetterU => "nyiakeng puachue hmong letter u",
+            NyiakengPuachueHmong::LetterO => "nyiakeng puachue hmong letter o",
+            NyiakengPuachueHmong::LetterOo => "nyiakeng puachue hmong letter oo",
+            NyiakengPuachueHmong::LetterE => "nyiakeng puachue hmong letter e",
+            NyiakengPuachueHmong::LetterEe => "nyiakeng puachue hmong letter ee",
+            NyiakengPuachueHmong::LetterW => "nyiakeng puachue hmong letter w",
+            NyiakengPuachueHmong::ToneDashB => "nyiakeng puachue hmong tone-b",
+            NyiakengPuachueHmong::ToneDashM => "nyiakeng puachue hmong tone-m",
+            NyiakengPuachueHmong::ToneDashJ => "nyiakeng puachue hmong tone-j",
+            NyiakengPuachueHmong::ToneDashV => "nyiakeng puachue hmong tone-v",
+            NyiakengPuachueHmong::ToneDashS => "nyiakeng puachue hmong tone-s",
+            NyiakengPuachueHmong::ToneDashG => "nyiakeng puachue hmong tone-g",
+            NyiakengPuachueHmong::ToneDashD => "nyiakeng puachue hmong tone-d",
+            NyiakengPuachueHmong::SignForPerson => "nyiakeng puachue hmong sign for person",
+            NyiakengPuachueHmong::SignForThing => "nyiakeng puachue hmong sign for thing",
+            NyiakengPuachueHmong::SignForLocation => "nyiakeng puachue hmong sign for location",
+            NyiakengPuachueHmong::SignForAnimal => "nyiakeng puachue hmong sign for animal",
+            NyiakengPuachueHmong::SignForInvertebrate => "nyiakeng puachue hmong sign for invertebrate",
+            NyiakengPuachueHmong::SignXwXw => "nyiakeng puachue hmong sign xw xw",
+            NyiakengPuachueHmong::SyllableLengthener => "nyiakeng puachue hmong syllable lengthener",
+            NyiakengPuachueHmong::DigitZero => "nyiakeng puachue hmong digit zero",
+            NyiakengPuachueHmong::DigitOne => "nyiakeng puachue hmong digit one",
+            NyiakengPuachueHmong::DigitTwo => "nyiakeng puachue hmong digit two",
+            NyiakengPuachueHmong::DigitThree => "nyiakeng puachue hmong digit three",
+            NyiakengPuachueHmong::DigitFour => "nyiakeng puachue hmong digit four",
+            NyiakengPuachueHmong::DigitFive => "nyiakeng puachue hmong digit five",
+            NyiakengPuachueHmong::DigitSix => "nyiakeng puachue hmong digit six",
+            NyiakengPuachueHmong::DigitSeven => "nyiakeng puachue hmong digit seven",
+            NyiakengPuachueHmong::DigitEight => "nyiakeng puachue hmong digit eight",
+            NyiakengPuachueHmong::DigitNine => "nyiakeng puachue hmong digit nine",
+            NyiakengPuachueHmong::LogogramNyaj => "nyiakeng puachue hmong logogram nyaj",
         }
     }
 }

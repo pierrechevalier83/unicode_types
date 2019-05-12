@@ -8,197 +8,197 @@
 /// ৯ ৰ ৱ ৲ ৳ ৴ ৵ ৶ ৷ ৸ ৹ ৺ ৻ ৼ ৽ ৾
 pub mod constants {
     /// \u{980}: 'ঀ'
-    pub const BENGALI_ANJI: char = 'ঀ';
+    pub const ANJI: char = 'ঀ';
     /// \u{981}: 'ঁ'
-    pub const BENGALI_SIGN_CANDRABINDU: char = 'ঁ';
+    pub const SIGN_CANDRABINDU: char = 'ঁ';
     /// \u{982}: 'ং'
-    pub const BENGALI_SIGN_ANUSVARA: char = 'ং';
+    pub const SIGN_ANUSVARA: char = 'ং';
     /// \u{983}: 'ঃ'
-    pub const BENGALI_SIGN_VISARGA: char = 'ঃ';
+    pub const SIGN_VISARGA: char = 'ঃ';
     /// \u{985}: 'অ'
-    pub const BENGALI_LETTER_A: char = 'অ';
+    pub const LETTER_A: char = 'অ';
     /// \u{986}: 'আ'
-    pub const BENGALI_LETTER_AA: char = 'আ';
+    pub const LETTER_AA: char = 'আ';
     /// \u{987}: 'ই'
-    pub const BENGALI_LETTER_I: char = 'ই';
+    pub const LETTER_I: char = 'ই';
     /// \u{988}: 'ঈ'
-    pub const BENGALI_LETTER_II: char = 'ঈ';
+    pub const LETTER_II: char = 'ঈ';
     /// \u{989}: 'উ'
-    pub const BENGALI_LETTER_U: char = 'উ';
+    pub const LETTER_U: char = 'উ';
     /// \u{98a}: 'ঊ'
-    pub const BENGALI_LETTER_UU: char = 'ঊ';
+    pub const LETTER_UU: char = 'ঊ';
     /// \u{98b}: 'ঋ'
-    pub const BENGALI_LETTER_VOCALIC_R: char = 'ঋ';
+    pub const LETTER_VOCALIC_R: char = 'ঋ';
     /// \u{98c}: 'ঌ'
-    pub const BENGALI_LETTER_VOCALIC_L: char = 'ঌ';
+    pub const LETTER_VOCALIC_L: char = 'ঌ';
     /// \u{98f}: 'এ'
-    pub const BENGALI_LETTER_E: char = 'এ';
+    pub const LETTER_E: char = 'এ';
     /// \u{990}: 'ঐ'
-    pub const BENGALI_LETTER_AI: char = 'ঐ';
+    pub const LETTER_AI: char = 'ঐ';
     /// \u{993}: 'ও'
-    pub const BENGALI_LETTER_O: char = 'ও';
+    pub const LETTER_O: char = 'ও';
     /// \u{994}: 'ঔ'
-    pub const BENGALI_LETTER_AU: char = 'ঔ';
+    pub const LETTER_AU: char = 'ঔ';
     /// \u{995}: 'ক'
-    pub const BENGALI_LETTER_KA: char = 'ক';
+    pub const LETTER_KA: char = 'ক';
     /// \u{996}: 'খ'
-    pub const BENGALI_LETTER_KHA: char = 'খ';
+    pub const LETTER_KHA: char = 'খ';
     /// \u{997}: 'গ'
-    pub const BENGALI_LETTER_GA: char = 'গ';
+    pub const LETTER_GA: char = 'গ';
     /// \u{998}: 'ঘ'
-    pub const BENGALI_LETTER_GHA: char = 'ঘ';
+    pub const LETTER_GHA: char = 'ঘ';
     /// \u{999}: 'ঙ'
-    pub const BENGALI_LETTER_NGA: char = 'ঙ';
+    pub const LETTER_NGA: char = 'ঙ';
     /// \u{99a}: 'চ'
-    pub const BENGALI_LETTER_CA: char = 'চ';
+    pub const LETTER_CA: char = 'চ';
     /// \u{99b}: 'ছ'
-    pub const BENGALI_LETTER_CHA: char = 'ছ';
+    pub const LETTER_CHA: char = 'ছ';
     /// \u{99c}: 'জ'
-    pub const BENGALI_LETTER_JA: char = 'জ';
+    pub const LETTER_JA: char = 'জ';
     /// \u{99d}: 'ঝ'
-    pub const BENGALI_LETTER_JHA: char = 'ঝ';
+    pub const LETTER_JHA: char = 'ঝ';
     /// \u{99e}: 'ঞ'
-    pub const BENGALI_LETTER_NYA: char = 'ঞ';
+    pub const LETTER_NYA: char = 'ঞ';
     /// \u{99f}: 'ট'
-    pub const BENGALI_LETTER_TTA: char = 'ট';
+    pub const LETTER_TTA: char = 'ট';
     /// \u{9a0}: 'ঠ'
-    pub const BENGALI_LETTER_TTHA: char = 'ঠ';
+    pub const LETTER_TTHA: char = 'ঠ';
     /// \u{9a1}: 'ড'
-    pub const BENGALI_LETTER_DDA: char = 'ড';
+    pub const LETTER_DDA: char = 'ড';
     /// \u{9a2}: 'ঢ'
-    pub const BENGALI_LETTER_DDHA: char = 'ঢ';
+    pub const LETTER_DDHA: char = 'ঢ';
     /// \u{9a3}: 'ণ'
-    pub const BENGALI_LETTER_NNA: char = 'ণ';
+    pub const LETTER_NNA: char = 'ণ';
     /// \u{9a4}: 'ত'
-    pub const BENGALI_LETTER_TA: char = 'ত';
+    pub const LETTER_TA: char = 'ত';
     /// \u{9a5}: 'থ'
-    pub const BENGALI_LETTER_THA: char = 'থ';
+    pub const LETTER_THA: char = 'থ';
     /// \u{9a6}: 'দ'
-    pub const BENGALI_LETTER_DA: char = 'দ';
+    pub const LETTER_DA: char = 'দ';
     /// \u{9a7}: 'ধ'
-    pub const BENGALI_LETTER_DHA: char = 'ধ';
+    pub const LETTER_DHA: char = 'ধ';
     /// \u{9a8}: 'ন'
-    pub const BENGALI_LETTER_NA: char = 'ন';
+    pub const LETTER_NA: char = 'ন';
     /// \u{9aa}: 'প'
-    pub const BENGALI_LETTER_PA: char = 'প';
+    pub const LETTER_PA: char = 'প';
     /// \u{9ab}: 'ফ'
-    pub const BENGALI_LETTER_PHA: char = 'ফ';
+    pub const LETTER_PHA: char = 'ফ';
     /// \u{9ac}: 'ব'
-    pub const BENGALI_LETTER_BA: char = 'ব';
+    pub const LETTER_BA: char = 'ব';
     /// \u{9ad}: 'ভ'
-    pub const BENGALI_LETTER_BHA: char = 'ভ';
+    pub const LETTER_BHA: char = 'ভ';
     /// \u{9ae}: 'ম'
-    pub const BENGALI_LETTER_MA: char = 'ম';
+    pub const LETTER_MA: char = 'ম';
     /// \u{9af}: 'য'
-    pub const BENGALI_LETTER_YA: char = 'য';
+    pub const LETTER_YA: char = 'য';
     /// \u{9b0}: 'র'
-    pub const BENGALI_LETTER_RA: char = 'র';
+    pub const LETTER_RA: char = 'র';
     /// \u{9b2}: 'ল'
-    pub const BENGALI_LETTER_LA: char = 'ল';
+    pub const LETTER_LA: char = 'ল';
     /// \u{9b6}: 'শ'
-    pub const BENGALI_LETTER_SHA: char = 'শ';
+    pub const LETTER_SHA: char = 'শ';
     /// \u{9b7}: 'ষ'
-    pub const BENGALI_LETTER_SSA: char = 'ষ';
+    pub const LETTER_SSA: char = 'ষ';
     /// \u{9b8}: 'স'
-    pub const BENGALI_LETTER_SA: char = 'স';
+    pub const LETTER_SA: char = 'স';
     /// \u{9b9}: 'হ'
-    pub const BENGALI_LETTER_HA: char = 'হ';
+    pub const LETTER_HA: char = 'হ';
     /// \u{9bc}: '়'
-    pub const BENGALI_SIGN_NUKTA: char = '়';
+    pub const SIGN_NUKTA: char = '়';
     /// \u{9bd}: 'ঽ'
-    pub const BENGALI_SIGN_AVAGRAHA: char = 'ঽ';
+    pub const SIGN_AVAGRAHA: char = 'ঽ';
     /// \u{9be}: 'া'
-    pub const BENGALI_VOWEL_SIGN_AA: char = 'া';
+    pub const VOWEL_SIGN_AA: char = 'া';
     /// \u{9bf}: 'ি'
-    pub const BENGALI_VOWEL_SIGN_I: char = 'ি';
+    pub const VOWEL_SIGN_I: char = 'ি';
     /// \u{9c0}: 'ী'
-    pub const BENGALI_VOWEL_SIGN_II: char = 'ী';
+    pub const VOWEL_SIGN_II: char = 'ী';
     /// \u{9c1}: 'ু'
-    pub const BENGALI_VOWEL_SIGN_U: char = 'ু';
+    pub const VOWEL_SIGN_U: char = 'ু';
     /// \u{9c2}: 'ূ'
-    pub const BENGALI_VOWEL_SIGN_UU: char = 'ূ';
+    pub const VOWEL_SIGN_UU: char = 'ূ';
     /// \u{9c3}: 'ৃ'
-    pub const BENGALI_VOWEL_SIGN_VOCALIC_R: char = 'ৃ';
+    pub const VOWEL_SIGN_VOCALIC_R: char = 'ৃ';
     /// \u{9c4}: 'ৄ'
-    pub const BENGALI_VOWEL_SIGN_VOCALIC_RR: char = 'ৄ';
+    pub const VOWEL_SIGN_VOCALIC_RR: char = 'ৄ';
     /// \u{9c7}: 'ে'
-    pub const BENGALI_VOWEL_SIGN_E: char = 'ে';
+    pub const VOWEL_SIGN_E: char = 'ে';
     /// \u{9c8}: 'ৈ'
-    pub const BENGALI_VOWEL_SIGN_AI: char = 'ৈ';
+    pub const VOWEL_SIGN_AI: char = 'ৈ';
     /// \u{9cb}: 'ো'
-    pub const BENGALI_VOWEL_SIGN_O: char = 'ো';
+    pub const VOWEL_SIGN_O: char = 'ো';
     /// \u{9cc}: 'ৌ'
-    pub const BENGALI_VOWEL_SIGN_AU: char = 'ৌ';
+    pub const VOWEL_SIGN_AU: char = 'ৌ';
     /// \u{9cd}: '্'
-    pub const BENGALI_SIGN_VIRAMA: char = '্';
+    pub const SIGN_VIRAMA: char = '্';
     /// \u{9ce}: 'ৎ'
-    pub const BENGALI_LETTER_KHANDA_TA: char = 'ৎ';
+    pub const LETTER_KHANDA_TA: char = 'ৎ';
     /// \u{9d7}: 'ৗ'
-    pub const BENGALI_AU_LENGTH_MARK: char = 'ৗ';
+    pub const AU_LENGTH_MARK: char = 'ৗ';
     /// \u{9dc}: 'ড়'
-    pub const BENGALI_LETTER_RRA: char = 'ড়';
+    pub const LETTER_RRA: char = 'ড়';
     /// \u{9dd}: 'ঢ়'
-    pub const BENGALI_LETTER_RHA: char = 'ঢ়';
+    pub const LETTER_RHA: char = 'ঢ়';
     /// \u{9df}: 'য়'
-    pub const BENGALI_LETTER_YYA: char = 'য়';
+    pub const LETTER_YYA: char = 'য়';
     /// \u{9e0}: 'ৠ'
-    pub const BENGALI_LETTER_VOCALIC_RR: char = 'ৠ';
+    pub const LETTER_VOCALIC_RR: char = 'ৠ';
     /// \u{9e1}: 'ৡ'
-    pub const BENGALI_LETTER_VOCALIC_LL: char = 'ৡ';
+    pub const LETTER_VOCALIC_LL: char = 'ৡ';
     /// \u{9e2}: 'ৢ'
-    pub const BENGALI_VOWEL_SIGN_VOCALIC_L: char = 'ৢ';
+    pub const VOWEL_SIGN_VOCALIC_L: char = 'ৢ';
     /// \u{9e3}: 'ৣ'
-    pub const BENGALI_VOWEL_SIGN_VOCALIC_LL: char = 'ৣ';
+    pub const VOWEL_SIGN_VOCALIC_LL: char = 'ৣ';
     /// \u{9e6}: '০'
-    pub const BENGALI_DIGIT_ZERO: char = '০';
+    pub const DIGIT_ZERO: char = '০';
     /// \u{9e7}: '১'
-    pub const BENGALI_DIGIT_ONE: char = '১';
+    pub const DIGIT_ONE: char = '১';
     /// \u{9e8}: '২'
-    pub const BENGALI_DIGIT_TWO: char = '২';
+    pub const DIGIT_TWO: char = '২';
     /// \u{9e9}: '৩'
-    pub const BENGALI_DIGIT_THREE: char = '৩';
+    pub const DIGIT_THREE: char = '৩';
     /// \u{9ea}: '৪'
-    pub const BENGALI_DIGIT_FOUR: char = '৪';
+    pub const DIGIT_FOUR: char = '৪';
     /// \u{9eb}: '৫'
-    pub const BENGALI_DIGIT_FIVE: char = '৫';
+    pub const DIGIT_FIVE: char = '৫';
     /// \u{9ec}: '৬'
-    pub const BENGALI_DIGIT_SIX: char = '৬';
+    pub const DIGIT_SIX: char = '৬';
     /// \u{9ed}: '৭'
-    pub const BENGALI_DIGIT_SEVEN: char = '৭';
+    pub const DIGIT_SEVEN: char = '৭';
     /// \u{9ee}: '৮'
-    pub const BENGALI_DIGIT_EIGHT: char = '৮';
+    pub const DIGIT_EIGHT: char = '৮';
     /// \u{9ef}: '৯'
-    pub const BENGALI_DIGIT_NINE: char = '৯';
+    pub const DIGIT_NINE: char = '৯';
     /// \u{9f0}: 'ৰ'
-    pub const BENGALI_LETTER_RA_WITH_MIDDLE_DIAGONAL: char = 'ৰ';
+    pub const LETTER_RA_WITH_MIDDLE_DIAGONAL: char = 'ৰ';
     /// \u{9f1}: 'ৱ'
-    pub const BENGALI_LETTER_RA_WITH_LOWER_DIAGONAL: char = 'ৱ';
+    pub const LETTER_RA_WITH_LOWER_DIAGONAL: char = 'ৱ';
     /// \u{9f2}: '৲'
-    pub const BENGALI_RUPEE_MARK: char = '৲';
+    pub const RUPEE_MARK: char = '৲';
     /// \u{9f3}: '৳'
-    pub const BENGALI_RUPEE_SIGN: char = '৳';
+    pub const RUPEE_SIGN: char = '৳';
     /// \u{9f4}: '৴'
-    pub const BENGALI_CURRENCY_NUMERATOR_ONE: char = '৴';
+    pub const CURRENCY_NUMERATOR_ONE: char = '৴';
     /// \u{9f5}: '৵'
-    pub const BENGALI_CURRENCY_NUMERATOR_TWO: char = '৵';
+    pub const CURRENCY_NUMERATOR_TWO: char = '৵';
     /// \u{9f6}: '৶'
-    pub const BENGALI_CURRENCY_NUMERATOR_THREE: char = '৶';
+    pub const CURRENCY_NUMERATOR_THREE: char = '৶';
     /// \u{9f7}: '৷'
-    pub const BENGALI_CURRENCY_NUMERATOR_FOUR: char = '৷';
+    pub const CURRENCY_NUMERATOR_FOUR: char = '৷';
     /// \u{9f8}: '৸'
-    pub const BENGALI_CURRENCY_NUMERATOR_ONE_LESS_THAN_THE_DENOMINATOR: char = '৸';
+    pub const CURRENCY_NUMERATOR_ONE_LESS_THAN_THE_DENOMINATOR: char = '৸';
     /// \u{9f9}: '৹'
-    pub const BENGALI_CURRENCY_DENOMINATOR_SIXTEEN: char = '৹';
+    pub const CURRENCY_DENOMINATOR_SIXTEEN: char = '৹';
     /// \u{9fa}: '৺'
-    pub const BENGALI_ISSHAR: char = '৺';
+    pub const ISSHAR: char = '৺';
     /// \u{9fb}: '৻'
-    pub const BENGALI_GANDA_MARK: char = '৻';
+    pub const GANDA_MARK: char = '৻';
     /// \u{9fc}: 'ৼ'
-    pub const BENGALI_LETTER_VEDIC_ANUSVARA: char = 'ৼ';
+    pub const LETTER_VEDIC_ANUSVARA: char = 'ৼ';
     /// \u{9fd}: '৽'
-    pub const BENGALI_ABBREVIATION_SIGN: char = '৽';
+    pub const ABBREVIATION_SIGN: char = '৽';
     /// \u{9fe}: '৾'
-    pub const BENGALI_SANDHI_MARK: char = '৾';
+    pub const SANDHI_MARK: char = '৾';
 }
 
 /// \u{980} → \u{9ff}\
@@ -212,299 +212,299 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Bengali {
     /// \u{980}: 'ঀ'
-    BengaliAnji,
+    Anji,
     /// \u{981}: 'ঁ'
-    BengaliSignCandrabindu,
+    SignCandrabindu,
     /// \u{982}: 'ং'
-    BengaliSignAnusvara,
+    SignAnusvara,
     /// \u{983}: 'ঃ'
-    BengaliSignVisarga,
+    SignVisarga,
     /// \u{985}: 'অ'
-    BengaliLetterA,
+    LetterA,
     /// \u{986}: 'আ'
-    BengaliLetterAa,
+    LetterAa,
     /// \u{987}: 'ই'
-    BengaliLetterI,
+    LetterI,
     /// \u{988}: 'ঈ'
-    BengaliLetterIi,
+    LetterIi,
     /// \u{989}: 'উ'
-    BengaliLetterU,
+    LetterU,
     /// \u{98a}: 'ঊ'
-    BengaliLetterUu,
+    LetterUu,
     /// \u{98b}: 'ঋ'
-    BengaliLetterVocalicR,
+    LetterVocalicR,
     /// \u{98c}: 'ঌ'
-    BengaliLetterVocalicL,
+    LetterVocalicL,
     /// \u{98f}: 'এ'
-    BengaliLetterE,
+    LetterE,
     /// \u{990}: 'ঐ'
-    BengaliLetterAi,
+    LetterAi,
     /// \u{993}: 'ও'
-    BengaliLetterO,
+    LetterO,
     /// \u{994}: 'ঔ'
-    BengaliLetterAu,
+    LetterAu,
     /// \u{995}: 'ক'
-    BengaliLetterKa,
+    LetterKa,
     /// \u{996}: 'খ'
-    BengaliLetterKha,
+    LetterKha,
     /// \u{997}: 'গ'
-    BengaliLetterGa,
+    LetterGa,
     /// \u{998}: 'ঘ'
-    BengaliLetterGha,
+    LetterGha,
     /// \u{999}: 'ঙ'
-    BengaliLetterNga,
+    LetterNga,
     /// \u{99a}: 'চ'
-    BengaliLetterCa,
+    LetterCa,
     /// \u{99b}: 'ছ'
-    BengaliLetterCha,
+    LetterCha,
     /// \u{99c}: 'জ'
-    BengaliLetterJa,
+    LetterJa,
     /// \u{99d}: 'ঝ'
-    BengaliLetterJha,
+    LetterJha,
     /// \u{99e}: 'ঞ'
-    BengaliLetterNya,
+    LetterNya,
     /// \u{99f}: 'ট'
-    BengaliLetterTta,
+    LetterTta,
     /// \u{9a0}: 'ঠ'
-    BengaliLetterTtha,
+    LetterTtha,
     /// \u{9a1}: 'ড'
-    BengaliLetterDda,
+    LetterDda,
     /// \u{9a2}: 'ঢ'
-    BengaliLetterDdha,
+    LetterDdha,
     /// \u{9a3}: 'ণ'
-    BengaliLetterNna,
+    LetterNna,
     /// \u{9a4}: 'ত'
-    BengaliLetterTa,
+    LetterTa,
     /// \u{9a5}: 'থ'
-    BengaliLetterTha,
+    LetterTha,
     /// \u{9a6}: 'দ'
-    BengaliLetterDa,
+    LetterDa,
     /// \u{9a7}: 'ধ'
-    BengaliLetterDha,
+    LetterDha,
     /// \u{9a8}: 'ন'
-    BengaliLetterNa,
+    LetterNa,
     /// \u{9aa}: 'প'
-    BengaliLetterPa,
+    LetterPa,
     /// \u{9ab}: 'ফ'
-    BengaliLetterPha,
+    LetterPha,
     /// \u{9ac}: 'ব'
-    BengaliLetterBa,
+    LetterBa,
     /// \u{9ad}: 'ভ'
-    BengaliLetterBha,
+    LetterBha,
     /// \u{9ae}: 'ম'
-    BengaliLetterMa,
+    LetterMa,
     /// \u{9af}: 'য'
-    BengaliLetterYa,
+    LetterYa,
     /// \u{9b0}: 'র'
-    BengaliLetterRa,
+    LetterRa,
     /// \u{9b2}: 'ল'
-    BengaliLetterLa,
+    LetterLa,
     /// \u{9b6}: 'শ'
-    BengaliLetterSha,
+    LetterSha,
     /// \u{9b7}: 'ষ'
-    BengaliLetterSsa,
+    LetterSsa,
     /// \u{9b8}: 'স'
-    BengaliLetterSa,
+    LetterSa,
     /// \u{9b9}: 'হ'
-    BengaliLetterHa,
+    LetterHa,
     /// \u{9bc}: '়'
-    BengaliSignNukta,
+    SignNukta,
     /// \u{9bd}: 'ঽ'
-    BengaliSignAvagraha,
+    SignAvagraha,
     /// \u{9be}: 'া'
-    BengaliVowelSignAa,
+    VowelSignAa,
     /// \u{9bf}: 'ি'
-    BengaliVowelSignI,
+    VowelSignI,
     /// \u{9c0}: 'ী'
-    BengaliVowelSignIi,
+    VowelSignIi,
     /// \u{9c1}: 'ু'
-    BengaliVowelSignU,
+    VowelSignU,
     /// \u{9c2}: 'ূ'
-    BengaliVowelSignUu,
+    VowelSignUu,
     /// \u{9c3}: 'ৃ'
-    BengaliVowelSignVocalicR,
+    VowelSignVocalicR,
     /// \u{9c4}: 'ৄ'
-    BengaliVowelSignVocalicRr,
+    VowelSignVocalicRr,
     /// \u{9c7}: 'ে'
-    BengaliVowelSignE,
+    VowelSignE,
     /// \u{9c8}: 'ৈ'
-    BengaliVowelSignAi,
+    VowelSignAi,
     /// \u{9cb}: 'ো'
-    BengaliVowelSignO,
+    VowelSignO,
     /// \u{9cc}: 'ৌ'
-    BengaliVowelSignAu,
+    VowelSignAu,
     /// \u{9cd}: '্'
-    BengaliSignVirama,
+    SignVirama,
     /// \u{9ce}: 'ৎ'
-    BengaliLetterKhandaTa,
+    LetterKhandaTa,
     /// \u{9d7}: 'ৗ'
-    BengaliAuLengthMark,
+    AuLengthMark,
     /// \u{9dc}: 'ড়'
-    BengaliLetterRra,
+    LetterRra,
     /// \u{9dd}: 'ঢ়'
-    BengaliLetterRha,
+    LetterRha,
     /// \u{9df}: 'য়'
-    BengaliLetterYya,
+    LetterYya,
     /// \u{9e0}: 'ৠ'
-    BengaliLetterVocalicRr,
+    LetterVocalicRr,
     /// \u{9e1}: 'ৡ'
-    BengaliLetterVocalicLl,
+    LetterVocalicLl,
     /// \u{9e2}: 'ৢ'
-    BengaliVowelSignVocalicL,
+    VowelSignVocalicL,
     /// \u{9e3}: 'ৣ'
-    BengaliVowelSignVocalicLl,
+    VowelSignVocalicLl,
     /// \u{9e6}: '০'
-    BengaliDigitZero,
+    DigitZero,
     /// \u{9e7}: '১'
-    BengaliDigitOne,
+    DigitOne,
     /// \u{9e8}: '২'
-    BengaliDigitTwo,
+    DigitTwo,
     /// \u{9e9}: '৩'
-    BengaliDigitThree,
+    DigitThree,
     /// \u{9ea}: '৪'
-    BengaliDigitFour,
+    DigitFour,
     /// \u{9eb}: '৫'
-    BengaliDigitFive,
+    DigitFive,
     /// \u{9ec}: '৬'
-    BengaliDigitSix,
+    DigitSix,
     /// \u{9ed}: '৭'
-    BengaliDigitSeven,
+    DigitSeven,
     /// \u{9ee}: '৮'
-    BengaliDigitEight,
+    DigitEight,
     /// \u{9ef}: '৯'
-    BengaliDigitNine,
+    DigitNine,
     /// \u{9f0}: 'ৰ'
-    BengaliLetterRaWithMiddleDiagonal,
+    LetterRaWithMiddleDiagonal,
     /// \u{9f1}: 'ৱ'
-    BengaliLetterRaWithLowerDiagonal,
+    LetterRaWithLowerDiagonal,
     /// \u{9f2}: '৲'
-    BengaliRupeeMark,
+    RupeeMark,
     /// \u{9f3}: '৳'
-    BengaliRupeeSign,
+    RupeeSign,
     /// \u{9f4}: '৴'
-    BengaliCurrencyNumeratorOne,
+    CurrencyNumeratorOne,
     /// \u{9f5}: '৵'
-    BengaliCurrencyNumeratorTwo,
+    CurrencyNumeratorTwo,
     /// \u{9f6}: '৶'
-    BengaliCurrencyNumeratorThree,
+    CurrencyNumeratorThree,
     /// \u{9f7}: '৷'
-    BengaliCurrencyNumeratorFour,
+    CurrencyNumeratorFour,
     /// \u{9f8}: '৸'
-    BengaliCurrencyNumeratorOneLessThanTheDenominator,
+    CurrencyNumeratorOneLessThanTheDenominator,
     /// \u{9f9}: '৹'
-    BengaliCurrencyDenominatorSixteen,
+    CurrencyDenominatorSixteen,
     /// \u{9fa}: '৺'
-    BengaliIsshar,
+    Isshar,
     /// \u{9fb}: '৻'
-    BengaliGandaMark,
+    GandaMark,
     /// \u{9fc}: 'ৼ'
-    BengaliLetterVedicAnusvara,
+    LetterVedicAnusvara,
     /// \u{9fd}: '৽'
-    BengaliAbbreviationSign,
+    AbbreviationSign,
     /// \u{9fe}: '৾'
-    BengaliSandhiMark,
+    SandhiMark,
 }
 
 impl Into<char> for Bengali {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Bengali::BengaliAnji => BENGALI_ANJI,
-            Bengali::BengaliSignCandrabindu => BENGALI_SIGN_CANDRABINDU,
-            Bengali::BengaliSignAnusvara => BENGALI_SIGN_ANUSVARA,
-            Bengali::BengaliSignVisarga => BENGALI_SIGN_VISARGA,
-            Bengali::BengaliLetterA => BENGALI_LETTER_A,
-            Bengali::BengaliLetterAa => BENGALI_LETTER_AA,
-            Bengali::BengaliLetterI => BENGALI_LETTER_I,
-            Bengali::BengaliLetterIi => BENGALI_LETTER_II,
-            Bengali::BengaliLetterU => BENGALI_LETTER_U,
-            Bengali::BengaliLetterUu => BENGALI_LETTER_UU,
-            Bengali::BengaliLetterVocalicR => BENGALI_LETTER_VOCALIC_R,
-            Bengali::BengaliLetterVocalicL => BENGALI_LETTER_VOCALIC_L,
-            Bengali::BengaliLetterE => BENGALI_LETTER_E,
-            Bengali::BengaliLetterAi => BENGALI_LETTER_AI,
-            Bengali::BengaliLetterO => BENGALI_LETTER_O,
-            Bengali::BengaliLetterAu => BENGALI_LETTER_AU,
-            Bengali::BengaliLetterKa => BENGALI_LETTER_KA,
-            Bengali::BengaliLetterKha => BENGALI_LETTER_KHA,
-            Bengali::BengaliLetterGa => BENGALI_LETTER_GA,
-            Bengali::BengaliLetterGha => BENGALI_LETTER_GHA,
-            Bengali::BengaliLetterNga => BENGALI_LETTER_NGA,
-            Bengali::BengaliLetterCa => BENGALI_LETTER_CA,
-            Bengali::BengaliLetterCha => BENGALI_LETTER_CHA,
-            Bengali::BengaliLetterJa => BENGALI_LETTER_JA,
-            Bengali::BengaliLetterJha => BENGALI_LETTER_JHA,
-            Bengali::BengaliLetterNya => BENGALI_LETTER_NYA,
-            Bengali::BengaliLetterTta => BENGALI_LETTER_TTA,
-            Bengali::BengaliLetterTtha => BENGALI_LETTER_TTHA,
-            Bengali::BengaliLetterDda => BENGALI_LETTER_DDA,
-            Bengali::BengaliLetterDdha => BENGALI_LETTER_DDHA,
-            Bengali::BengaliLetterNna => BENGALI_LETTER_NNA,
-            Bengali::BengaliLetterTa => BENGALI_LETTER_TA,
-            Bengali::BengaliLetterTha => BENGALI_LETTER_THA,
-            Bengali::BengaliLetterDa => BENGALI_LETTER_DA,
-            Bengali::BengaliLetterDha => BENGALI_LETTER_DHA,
-            Bengali::BengaliLetterNa => BENGALI_LETTER_NA,
-            Bengali::BengaliLetterPa => BENGALI_LETTER_PA,
-            Bengali::BengaliLetterPha => BENGALI_LETTER_PHA,
-            Bengali::BengaliLetterBa => BENGALI_LETTER_BA,
-            Bengali::BengaliLetterBha => BENGALI_LETTER_BHA,
-            Bengali::BengaliLetterMa => BENGALI_LETTER_MA,
-            Bengali::BengaliLetterYa => BENGALI_LETTER_YA,
-            Bengali::BengaliLetterRa => BENGALI_LETTER_RA,
-            Bengali::BengaliLetterLa => BENGALI_LETTER_LA,
-            Bengali::BengaliLetterSha => BENGALI_LETTER_SHA,
-            Bengali::BengaliLetterSsa => BENGALI_LETTER_SSA,
-            Bengali::BengaliLetterSa => BENGALI_LETTER_SA,
-            Bengali::BengaliLetterHa => BENGALI_LETTER_HA,
-            Bengali::BengaliSignNukta => BENGALI_SIGN_NUKTA,
-            Bengali::BengaliSignAvagraha => BENGALI_SIGN_AVAGRAHA,
-            Bengali::BengaliVowelSignAa => BENGALI_VOWEL_SIGN_AA,
-            Bengali::BengaliVowelSignI => BENGALI_VOWEL_SIGN_I,
-            Bengali::BengaliVowelSignIi => BENGALI_VOWEL_SIGN_II,
-            Bengali::BengaliVowelSignU => BENGALI_VOWEL_SIGN_U,
-            Bengali::BengaliVowelSignUu => BENGALI_VOWEL_SIGN_UU,
-            Bengali::BengaliVowelSignVocalicR => BENGALI_VOWEL_SIGN_VOCALIC_R,
-            Bengali::BengaliVowelSignVocalicRr => BENGALI_VOWEL_SIGN_VOCALIC_RR,
-            Bengali::BengaliVowelSignE => BENGALI_VOWEL_SIGN_E,
-            Bengali::BengaliVowelSignAi => BENGALI_VOWEL_SIGN_AI,
-            Bengali::BengaliVowelSignO => BENGALI_VOWEL_SIGN_O,
-            Bengali::BengaliVowelSignAu => BENGALI_VOWEL_SIGN_AU,
-            Bengali::BengaliSignVirama => BENGALI_SIGN_VIRAMA,
-            Bengali::BengaliLetterKhandaTa => BENGALI_LETTER_KHANDA_TA,
-            Bengali::BengaliAuLengthMark => BENGALI_AU_LENGTH_MARK,
-            Bengali::BengaliLetterRra => BENGALI_LETTER_RRA,
-            Bengali::BengaliLetterRha => BENGALI_LETTER_RHA,
-            Bengali::BengaliLetterYya => BENGALI_LETTER_YYA,
-            Bengali::BengaliLetterVocalicRr => BENGALI_LETTER_VOCALIC_RR,
-            Bengali::BengaliLetterVocalicLl => BENGALI_LETTER_VOCALIC_LL,
-            Bengali::BengaliVowelSignVocalicL => BENGALI_VOWEL_SIGN_VOCALIC_L,
-            Bengali::BengaliVowelSignVocalicLl => BENGALI_VOWEL_SIGN_VOCALIC_LL,
-            Bengali::BengaliDigitZero => BENGALI_DIGIT_ZERO,
-            Bengali::BengaliDigitOne => BENGALI_DIGIT_ONE,
-            Bengali::BengaliDigitTwo => BENGALI_DIGIT_TWO,
-            Bengali::BengaliDigitThree => BENGALI_DIGIT_THREE,
-            Bengali::BengaliDigitFour => BENGALI_DIGIT_FOUR,
-            Bengali::BengaliDigitFive => BENGALI_DIGIT_FIVE,
-            Bengali::BengaliDigitSix => BENGALI_DIGIT_SIX,
-            Bengali::BengaliDigitSeven => BENGALI_DIGIT_SEVEN,
-            Bengali::BengaliDigitEight => BENGALI_DIGIT_EIGHT,
-            Bengali::BengaliDigitNine => BENGALI_DIGIT_NINE,
-            Bengali::BengaliLetterRaWithMiddleDiagonal => BENGALI_LETTER_RA_WITH_MIDDLE_DIAGONAL,
-            Bengali::BengaliLetterRaWithLowerDiagonal => BENGALI_LETTER_RA_WITH_LOWER_DIAGONAL,
-            Bengali::BengaliRupeeMark => BENGALI_RUPEE_MARK,
-            Bengali::BengaliRupeeSign => BENGALI_RUPEE_SIGN,
-            Bengali::BengaliCurrencyNumeratorOne => BENGALI_CURRENCY_NUMERATOR_ONE,
-            Bengali::BengaliCurrencyNumeratorTwo => BENGALI_CURRENCY_NUMERATOR_TWO,
-            Bengali::BengaliCurrencyNumeratorThree => BENGALI_CURRENCY_NUMERATOR_THREE,
-            Bengali::BengaliCurrencyNumeratorFour => BENGALI_CURRENCY_NUMERATOR_FOUR,
-            Bengali::BengaliCurrencyNumeratorOneLessThanTheDenominator => BENGALI_CURRENCY_NUMERATOR_ONE_LESS_THAN_THE_DENOMINATOR,
-            Bengali::BengaliCurrencyDenominatorSixteen => BENGALI_CURRENCY_DENOMINATOR_SIXTEEN,
-            Bengali::BengaliIsshar => BENGALI_ISSHAR,
-            Bengali::BengaliGandaMark => BENGALI_GANDA_MARK,
-            Bengali::BengaliLetterVedicAnusvara => BENGALI_LETTER_VEDIC_ANUSVARA,
-            Bengali::BengaliAbbreviationSign => BENGALI_ABBREVIATION_SIGN,
-            Bengali::BengaliSandhiMark => BENGALI_SANDHI_MARK,
+            Bengali::Anji => ANJI,
+            Bengali::SignCandrabindu => SIGN_CANDRABINDU,
+            Bengali::SignAnusvara => SIGN_ANUSVARA,
+            Bengali::SignVisarga => SIGN_VISARGA,
+            Bengali::LetterA => LETTER_A,
+            Bengali::LetterAa => LETTER_AA,
+            Bengali::LetterI => LETTER_I,
+            Bengali::LetterIi => LETTER_II,
+            Bengali::LetterU => LETTER_U,
+            Bengali::LetterUu => LETTER_UU,
+            Bengali::LetterVocalicR => LETTER_VOCALIC_R,
+            Bengali::LetterVocalicL => LETTER_VOCALIC_L,
+            Bengali::LetterE => LETTER_E,
+            Bengali::LetterAi => LETTER_AI,
+            Bengali::LetterO => LETTER_O,
+            Bengali::LetterAu => LETTER_AU,
+            Bengali::LetterKa => LETTER_KA,
+            Bengali::LetterKha => LETTER_KHA,
+            Bengali::LetterGa => LETTER_GA,
+            Bengali::LetterGha => LETTER_GHA,
+            Bengali::LetterNga => LETTER_NGA,
+            Bengali::LetterCa => LETTER_CA,
+            Bengali::LetterCha => LETTER_CHA,
+            Bengali::LetterJa => LETTER_JA,
+            Bengali::LetterJha => LETTER_JHA,
+            Bengali::LetterNya => LETTER_NYA,
+            Bengali::LetterTta => LETTER_TTA,
+            Bengali::LetterTtha => LETTER_TTHA,
+            Bengali::LetterDda => LETTER_DDA,
+            Bengali::LetterDdha => LETTER_DDHA,
+            Bengali::LetterNna => LETTER_NNA,
+            Bengali::LetterTa => LETTER_TA,
+            Bengali::LetterTha => LETTER_THA,
+            Bengali::LetterDa => LETTER_DA,
+            Bengali::LetterDha => LETTER_DHA,
+            Bengali::LetterNa => LETTER_NA,
+            Bengali::LetterPa => LETTER_PA,
+            Bengali::LetterPha => LETTER_PHA,
+            Bengali::LetterBa => LETTER_BA,
+            Bengali::LetterBha => LETTER_BHA,
+            Bengali::LetterMa => LETTER_MA,
+            Bengali::LetterYa => LETTER_YA,
+            Bengali::LetterRa => LETTER_RA,
+            Bengali::LetterLa => LETTER_LA,
+            Bengali::LetterSha => LETTER_SHA,
+            Bengali::LetterSsa => LETTER_SSA,
+            Bengali::LetterSa => LETTER_SA,
+            Bengali::LetterHa => LETTER_HA,
+            Bengali::SignNukta => SIGN_NUKTA,
+            Bengali::SignAvagraha => SIGN_AVAGRAHA,
+            Bengali::VowelSignAa => VOWEL_SIGN_AA,
+            Bengali::VowelSignI => VOWEL_SIGN_I,
+            Bengali::VowelSignIi => VOWEL_SIGN_II,
+            Bengali::VowelSignU => VOWEL_SIGN_U,
+            Bengali::VowelSignUu => VOWEL_SIGN_UU,
+            Bengali::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
+            Bengali::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
+            Bengali::VowelSignE => VOWEL_SIGN_E,
+            Bengali::VowelSignAi => VOWEL_SIGN_AI,
+            Bengali::VowelSignO => VOWEL_SIGN_O,
+            Bengali::VowelSignAu => VOWEL_SIGN_AU,
+            Bengali::SignVirama => SIGN_VIRAMA,
+            Bengali::LetterKhandaTa => LETTER_KHANDA_TA,
+            Bengali::AuLengthMark => AU_LENGTH_MARK,
+            Bengali::LetterRra => LETTER_RRA,
+            Bengali::LetterRha => LETTER_RHA,
+            Bengali::LetterYya => LETTER_YYA,
+            Bengali::LetterVocalicRr => LETTER_VOCALIC_RR,
+            Bengali::LetterVocalicLl => LETTER_VOCALIC_LL,
+            Bengali::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
+            Bengali::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
+            Bengali::DigitZero => DIGIT_ZERO,
+            Bengali::DigitOne => DIGIT_ONE,
+            Bengali::DigitTwo => DIGIT_TWO,
+            Bengali::DigitThree => DIGIT_THREE,
+            Bengali::DigitFour => DIGIT_FOUR,
+            Bengali::DigitFive => DIGIT_FIVE,
+            Bengali::DigitSix => DIGIT_SIX,
+            Bengali::DigitSeven => DIGIT_SEVEN,
+            Bengali::DigitEight => DIGIT_EIGHT,
+            Bengali::DigitNine => DIGIT_NINE,
+            Bengali::LetterRaWithMiddleDiagonal => LETTER_RA_WITH_MIDDLE_DIAGONAL,
+            Bengali::LetterRaWithLowerDiagonal => LETTER_RA_WITH_LOWER_DIAGONAL,
+            Bengali::RupeeMark => RUPEE_MARK,
+            Bengali::RupeeSign => RUPEE_SIGN,
+            Bengali::CurrencyNumeratorOne => CURRENCY_NUMERATOR_ONE,
+            Bengali::CurrencyNumeratorTwo => CURRENCY_NUMERATOR_TWO,
+            Bengali::CurrencyNumeratorThree => CURRENCY_NUMERATOR_THREE,
+            Bengali::CurrencyNumeratorFour => CURRENCY_NUMERATOR_FOUR,
+            Bengali::CurrencyNumeratorOneLessThanTheDenominator => CURRENCY_NUMERATOR_ONE_LESS_THAN_THE_DENOMINATOR,
+            Bengali::CurrencyDenominatorSixteen => CURRENCY_DENOMINATOR_SIXTEEN,
+            Bengali::Isshar => ISSHAR,
+            Bengali::GandaMark => GANDA_MARK,
+            Bengali::LetterVedicAnusvara => LETTER_VEDIC_ANUSVARA,
+            Bengali::AbbreviationSign => ABBREVIATION_SIGN,
+            Bengali::SandhiMark => SANDHI_MARK,
         }
     }
 }
@@ -514,102 +514,102 @@ impl std::convert::TryFrom<char> for Bengali {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            BENGALI_ANJI => Ok(Bengali::BengaliAnji),
-            BENGALI_SIGN_CANDRABINDU => Ok(Bengali::BengaliSignCandrabindu),
-            BENGALI_SIGN_ANUSVARA => Ok(Bengali::BengaliSignAnusvara),
-            BENGALI_SIGN_VISARGA => Ok(Bengali::BengaliSignVisarga),
-            BENGALI_LETTER_A => Ok(Bengali::BengaliLetterA),
-            BENGALI_LETTER_AA => Ok(Bengali::BengaliLetterAa),
-            BENGALI_LETTER_I => Ok(Bengali::BengaliLetterI),
-            BENGALI_LETTER_II => Ok(Bengali::BengaliLetterIi),
-            BENGALI_LETTER_U => Ok(Bengali::BengaliLetterU),
-            BENGALI_LETTER_UU => Ok(Bengali::BengaliLetterUu),
-            BENGALI_LETTER_VOCALIC_R => Ok(Bengali::BengaliLetterVocalicR),
-            BENGALI_LETTER_VOCALIC_L => Ok(Bengali::BengaliLetterVocalicL),
-            BENGALI_LETTER_E => Ok(Bengali::BengaliLetterE),
-            BENGALI_LETTER_AI => Ok(Bengali::BengaliLetterAi),
-            BENGALI_LETTER_O => Ok(Bengali::BengaliLetterO),
-            BENGALI_LETTER_AU => Ok(Bengali::BengaliLetterAu),
-            BENGALI_LETTER_KA => Ok(Bengali::BengaliLetterKa),
-            BENGALI_LETTER_KHA => Ok(Bengali::BengaliLetterKha),
-            BENGALI_LETTER_GA => Ok(Bengali::BengaliLetterGa),
-            BENGALI_LETTER_GHA => Ok(Bengali::BengaliLetterGha),
-            BENGALI_LETTER_NGA => Ok(Bengali::BengaliLetterNga),
-            BENGALI_LETTER_CA => Ok(Bengali::BengaliLetterCa),
-            BENGALI_LETTER_CHA => Ok(Bengali::BengaliLetterCha),
-            BENGALI_LETTER_JA => Ok(Bengali::BengaliLetterJa),
-            BENGALI_LETTER_JHA => Ok(Bengali::BengaliLetterJha),
-            BENGALI_LETTER_NYA => Ok(Bengali::BengaliLetterNya),
-            BENGALI_LETTER_TTA => Ok(Bengali::BengaliLetterTta),
-            BENGALI_LETTER_TTHA => Ok(Bengali::BengaliLetterTtha),
-            BENGALI_LETTER_DDA => Ok(Bengali::BengaliLetterDda),
-            BENGALI_LETTER_DDHA => Ok(Bengali::BengaliLetterDdha),
-            BENGALI_LETTER_NNA => Ok(Bengali::BengaliLetterNna),
-            BENGALI_LETTER_TA => Ok(Bengali::BengaliLetterTa),
-            BENGALI_LETTER_THA => Ok(Bengali::BengaliLetterTha),
-            BENGALI_LETTER_DA => Ok(Bengali::BengaliLetterDa),
-            BENGALI_LETTER_DHA => Ok(Bengali::BengaliLetterDha),
-            BENGALI_LETTER_NA => Ok(Bengali::BengaliLetterNa),
-            BENGALI_LETTER_PA => Ok(Bengali::BengaliLetterPa),
-            BENGALI_LETTER_PHA => Ok(Bengali::BengaliLetterPha),
-            BENGALI_LETTER_BA => Ok(Bengali::BengaliLetterBa),
-            BENGALI_LETTER_BHA => Ok(Bengali::BengaliLetterBha),
-            BENGALI_LETTER_MA => Ok(Bengali::BengaliLetterMa),
-            BENGALI_LETTER_YA => Ok(Bengali::BengaliLetterYa),
-            BENGALI_LETTER_RA => Ok(Bengali::BengaliLetterRa),
-            BENGALI_LETTER_LA => Ok(Bengali::BengaliLetterLa),
-            BENGALI_LETTER_SHA => Ok(Bengali::BengaliLetterSha),
-            BENGALI_LETTER_SSA => Ok(Bengali::BengaliLetterSsa),
-            BENGALI_LETTER_SA => Ok(Bengali::BengaliLetterSa),
-            BENGALI_LETTER_HA => Ok(Bengali::BengaliLetterHa),
-            BENGALI_SIGN_NUKTA => Ok(Bengali::BengaliSignNukta),
-            BENGALI_SIGN_AVAGRAHA => Ok(Bengali::BengaliSignAvagraha),
-            BENGALI_VOWEL_SIGN_AA => Ok(Bengali::BengaliVowelSignAa),
-            BENGALI_VOWEL_SIGN_I => Ok(Bengali::BengaliVowelSignI),
-            BENGALI_VOWEL_SIGN_II => Ok(Bengali::BengaliVowelSignIi),
-            BENGALI_VOWEL_SIGN_U => Ok(Bengali::BengaliVowelSignU),
-            BENGALI_VOWEL_SIGN_UU => Ok(Bengali::BengaliVowelSignUu),
-            BENGALI_VOWEL_SIGN_VOCALIC_R => Ok(Bengali::BengaliVowelSignVocalicR),
-            BENGALI_VOWEL_SIGN_VOCALIC_RR => Ok(Bengali::BengaliVowelSignVocalicRr),
-            BENGALI_VOWEL_SIGN_E => Ok(Bengali::BengaliVowelSignE),
-            BENGALI_VOWEL_SIGN_AI => Ok(Bengali::BengaliVowelSignAi),
-            BENGALI_VOWEL_SIGN_O => Ok(Bengali::BengaliVowelSignO),
-            BENGALI_VOWEL_SIGN_AU => Ok(Bengali::BengaliVowelSignAu),
-            BENGALI_SIGN_VIRAMA => Ok(Bengali::BengaliSignVirama),
-            BENGALI_LETTER_KHANDA_TA => Ok(Bengali::BengaliLetterKhandaTa),
-            BENGALI_AU_LENGTH_MARK => Ok(Bengali::BengaliAuLengthMark),
-            BENGALI_LETTER_RRA => Ok(Bengali::BengaliLetterRra),
-            BENGALI_LETTER_RHA => Ok(Bengali::BengaliLetterRha),
-            BENGALI_LETTER_YYA => Ok(Bengali::BengaliLetterYya),
-            BENGALI_LETTER_VOCALIC_RR => Ok(Bengali::BengaliLetterVocalicRr),
-            BENGALI_LETTER_VOCALIC_LL => Ok(Bengali::BengaliLetterVocalicLl),
-            BENGALI_VOWEL_SIGN_VOCALIC_L => Ok(Bengali::BengaliVowelSignVocalicL),
-            BENGALI_VOWEL_SIGN_VOCALIC_LL => Ok(Bengali::BengaliVowelSignVocalicLl),
-            BENGALI_DIGIT_ZERO => Ok(Bengali::BengaliDigitZero),
-            BENGALI_DIGIT_ONE => Ok(Bengali::BengaliDigitOne),
-            BENGALI_DIGIT_TWO => Ok(Bengali::BengaliDigitTwo),
-            BENGALI_DIGIT_THREE => Ok(Bengali::BengaliDigitThree),
-            BENGALI_DIGIT_FOUR => Ok(Bengali::BengaliDigitFour),
-            BENGALI_DIGIT_FIVE => Ok(Bengali::BengaliDigitFive),
-            BENGALI_DIGIT_SIX => Ok(Bengali::BengaliDigitSix),
-            BENGALI_DIGIT_SEVEN => Ok(Bengali::BengaliDigitSeven),
-            BENGALI_DIGIT_EIGHT => Ok(Bengali::BengaliDigitEight),
-            BENGALI_DIGIT_NINE => Ok(Bengali::BengaliDigitNine),
-            BENGALI_LETTER_RA_WITH_MIDDLE_DIAGONAL => Ok(Bengali::BengaliLetterRaWithMiddleDiagonal),
-            BENGALI_LETTER_RA_WITH_LOWER_DIAGONAL => Ok(Bengali::BengaliLetterRaWithLowerDiagonal),
-            BENGALI_RUPEE_MARK => Ok(Bengali::BengaliRupeeMark),
-            BENGALI_RUPEE_SIGN => Ok(Bengali::BengaliRupeeSign),
-            BENGALI_CURRENCY_NUMERATOR_ONE => Ok(Bengali::BengaliCurrencyNumeratorOne),
-            BENGALI_CURRENCY_NUMERATOR_TWO => Ok(Bengali::BengaliCurrencyNumeratorTwo),
-            BENGALI_CURRENCY_NUMERATOR_THREE => Ok(Bengali::BengaliCurrencyNumeratorThree),
-            BENGALI_CURRENCY_NUMERATOR_FOUR => Ok(Bengali::BengaliCurrencyNumeratorFour),
-            BENGALI_CURRENCY_NUMERATOR_ONE_LESS_THAN_THE_DENOMINATOR => Ok(Bengali::BengaliCurrencyNumeratorOneLessThanTheDenominator),
-            BENGALI_CURRENCY_DENOMINATOR_SIXTEEN => Ok(Bengali::BengaliCurrencyDenominatorSixteen),
-            BENGALI_ISSHAR => Ok(Bengali::BengaliIsshar),
-            BENGALI_GANDA_MARK => Ok(Bengali::BengaliGandaMark),
-            BENGALI_LETTER_VEDIC_ANUSVARA => Ok(Bengali::BengaliLetterVedicAnusvara),
-            BENGALI_ABBREVIATION_SIGN => Ok(Bengali::BengaliAbbreviationSign),
-            BENGALI_SANDHI_MARK => Ok(Bengali::BengaliSandhiMark),
+            ANJI => Ok(Bengali::Anji),
+            SIGN_CANDRABINDU => Ok(Bengali::SignCandrabindu),
+            SIGN_ANUSVARA => Ok(Bengali::SignAnusvara),
+            SIGN_VISARGA => Ok(Bengali::SignVisarga),
+            LETTER_A => Ok(Bengali::LetterA),
+            LETTER_AA => Ok(Bengali::LetterAa),
+            LETTER_I => Ok(Bengali::LetterI),
+            LETTER_II => Ok(Bengali::LetterIi),
+            LETTER_U => Ok(Bengali::LetterU),
+            LETTER_UU => Ok(Bengali::LetterUu),
+            LETTER_VOCALIC_R => Ok(Bengali::LetterVocalicR),
+            LETTER_VOCALIC_L => Ok(Bengali::LetterVocalicL),
+            LETTER_E => Ok(Bengali::LetterE),
+            LETTER_AI => Ok(Bengali::LetterAi),
+            LETTER_O => Ok(Bengali::LetterO),
+            LETTER_AU => Ok(Bengali::LetterAu),
+            LETTER_KA => Ok(Bengali::LetterKa),
+            LETTER_KHA => Ok(Bengali::LetterKha),
+            LETTER_GA => Ok(Bengali::LetterGa),
+            LETTER_GHA => Ok(Bengali::LetterGha),
+            LETTER_NGA => Ok(Bengali::LetterNga),
+            LETTER_CA => Ok(Bengali::LetterCa),
+            LETTER_CHA => Ok(Bengali::LetterCha),
+            LETTER_JA => Ok(Bengali::LetterJa),
+            LETTER_JHA => Ok(Bengali::LetterJha),
+            LETTER_NYA => Ok(Bengali::LetterNya),
+            LETTER_TTA => Ok(Bengali::LetterTta),
+            LETTER_TTHA => Ok(Bengali::LetterTtha),
+            LETTER_DDA => Ok(Bengali::LetterDda),
+            LETTER_DDHA => Ok(Bengali::LetterDdha),
+            LETTER_NNA => Ok(Bengali::LetterNna),
+            LETTER_TA => Ok(Bengali::LetterTa),
+            LETTER_THA => Ok(Bengali::LetterTha),
+            LETTER_DA => Ok(Bengali::LetterDa),
+            LETTER_DHA => Ok(Bengali::LetterDha),
+            LETTER_NA => Ok(Bengali::LetterNa),
+            LETTER_PA => Ok(Bengali::LetterPa),
+            LETTER_PHA => Ok(Bengali::LetterPha),
+            LETTER_BA => Ok(Bengali::LetterBa),
+            LETTER_BHA => Ok(Bengali::LetterBha),
+            LETTER_MA => Ok(Bengali::LetterMa),
+            LETTER_YA => Ok(Bengali::LetterYa),
+            LETTER_RA => Ok(Bengali::LetterRa),
+            LETTER_LA => Ok(Bengali::LetterLa),
+            LETTER_SHA => Ok(Bengali::LetterSha),
+            LETTER_SSA => Ok(Bengali::LetterSsa),
+            LETTER_SA => Ok(Bengali::LetterSa),
+            LETTER_HA => Ok(Bengali::LetterHa),
+            SIGN_NUKTA => Ok(Bengali::SignNukta),
+            SIGN_AVAGRAHA => Ok(Bengali::SignAvagraha),
+            VOWEL_SIGN_AA => Ok(Bengali::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Bengali::VowelSignI),
+            VOWEL_SIGN_II => Ok(Bengali::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Bengali::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Bengali::VowelSignUu),
+            VOWEL_SIGN_VOCALIC_R => Ok(Bengali::VowelSignVocalicR),
+            VOWEL_SIGN_VOCALIC_RR => Ok(Bengali::VowelSignVocalicRr),
+            VOWEL_SIGN_E => Ok(Bengali::VowelSignE),
+            VOWEL_SIGN_AI => Ok(Bengali::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Bengali::VowelSignO),
+            VOWEL_SIGN_AU => Ok(Bengali::VowelSignAu),
+            SIGN_VIRAMA => Ok(Bengali::SignVirama),
+            LETTER_KHANDA_TA => Ok(Bengali::LetterKhandaTa),
+            AU_LENGTH_MARK => Ok(Bengali::AuLengthMark),
+            LETTER_RRA => Ok(Bengali::LetterRra),
+            LETTER_RHA => Ok(Bengali::LetterRha),
+            LETTER_YYA => Ok(Bengali::LetterYya),
+            LETTER_VOCALIC_RR => Ok(Bengali::LetterVocalicRr),
+            LETTER_VOCALIC_LL => Ok(Bengali::LetterVocalicLl),
+            VOWEL_SIGN_VOCALIC_L => Ok(Bengali::VowelSignVocalicL),
+            VOWEL_SIGN_VOCALIC_LL => Ok(Bengali::VowelSignVocalicLl),
+            DIGIT_ZERO => Ok(Bengali::DigitZero),
+            DIGIT_ONE => Ok(Bengali::DigitOne),
+            DIGIT_TWO => Ok(Bengali::DigitTwo),
+            DIGIT_THREE => Ok(Bengali::DigitThree),
+            DIGIT_FOUR => Ok(Bengali::DigitFour),
+            DIGIT_FIVE => Ok(Bengali::DigitFive),
+            DIGIT_SIX => Ok(Bengali::DigitSix),
+            DIGIT_SEVEN => Ok(Bengali::DigitSeven),
+            DIGIT_EIGHT => Ok(Bengali::DigitEight),
+            DIGIT_NINE => Ok(Bengali::DigitNine),
+            LETTER_RA_WITH_MIDDLE_DIAGONAL => Ok(Bengali::LetterRaWithMiddleDiagonal),
+            LETTER_RA_WITH_LOWER_DIAGONAL => Ok(Bengali::LetterRaWithLowerDiagonal),
+            RUPEE_MARK => Ok(Bengali::RupeeMark),
+            RUPEE_SIGN => Ok(Bengali::RupeeSign),
+            CURRENCY_NUMERATOR_ONE => Ok(Bengali::CurrencyNumeratorOne),
+            CURRENCY_NUMERATOR_TWO => Ok(Bengali::CurrencyNumeratorTwo),
+            CURRENCY_NUMERATOR_THREE => Ok(Bengali::CurrencyNumeratorThree),
+            CURRENCY_NUMERATOR_FOUR => Ok(Bengali::CurrencyNumeratorFour),
+            CURRENCY_NUMERATOR_ONE_LESS_THAN_THE_DENOMINATOR => Ok(Bengali::CurrencyNumeratorOneLessThanTheDenominator),
+            CURRENCY_DENOMINATOR_SIXTEEN => Ok(Bengali::CurrencyDenominatorSixteen),
+            ISSHAR => Ok(Bengali::Isshar),
+            GANDA_MARK => Ok(Bengali::GandaMark),
+            LETTER_VEDIC_ANUSVARA => Ok(Bengali::LetterVedicAnusvara),
+            ABBREVIATION_SIGN => Ok(Bengali::AbbreviationSign),
+            SANDHI_MARK => Ok(Bengali::SandhiMark),
             _ => Err(()),
         }
     }
@@ -648,110 +648,110 @@ impl Iterator for Bengali {
 }
 
 impl Bengali {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Bengali::BengaliAnji
+        Bengali::Anji
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Bengali::BengaliAnji => "bengali anji",
-            Bengali::BengaliSignCandrabindu => "bengali sign candrabindu",
-            Bengali::BengaliSignAnusvara => "bengali sign anusvara",
-            Bengali::BengaliSignVisarga => "bengali sign visarga",
-            Bengali::BengaliLetterA => "bengali letter a",
-            Bengali::BengaliLetterAa => "bengali letter aa",
-            Bengali::BengaliLetterI => "bengali letter i",
-            Bengali::BengaliLetterIi => "bengali letter ii",
-            Bengali::BengaliLetterU => "bengali letter u",
-            Bengali::BengaliLetterUu => "bengali letter uu",
-            Bengali::BengaliLetterVocalicR => "bengali letter vocalic r",
-            Bengali::BengaliLetterVocalicL => "bengali letter vocalic l",
-            Bengali::BengaliLetterE => "bengali letter e",
-            Bengali::BengaliLetterAi => "bengali letter ai",
-            Bengali::BengaliLetterO => "bengali letter o",
-            Bengali::BengaliLetterAu => "bengali letter au",
-            Bengali::BengaliLetterKa => "bengali letter ka",
-            Bengali::BengaliLetterKha => "bengali letter kha",
-            Bengali::BengaliLetterGa => "bengali letter ga",
-            Bengali::BengaliLetterGha => "bengali letter gha",
-            Bengali::BengaliLetterNga => "bengali letter nga",
-            Bengali::BengaliLetterCa => "bengali letter ca",
-            Bengali::BengaliLetterCha => "bengali letter cha",
-            Bengali::BengaliLetterJa => "bengali letter ja",
-            Bengali::BengaliLetterJha => "bengali letter jha",
-            Bengali::BengaliLetterNya => "bengali letter nya",
-            Bengali::BengaliLetterTta => "bengali letter tta",
-            Bengali::BengaliLetterTtha => "bengali letter ttha",
-            Bengali::BengaliLetterDda => "bengali letter dda",
-            Bengali::BengaliLetterDdha => "bengali letter ddha",
-            Bengali::BengaliLetterNna => "bengali letter nna",
-            Bengali::BengaliLetterTa => "bengali letter ta",
-            Bengali::BengaliLetterTha => "bengali letter tha",
-            Bengali::BengaliLetterDa => "bengali letter da",
-            Bengali::BengaliLetterDha => "bengali letter dha",
-            Bengali::BengaliLetterNa => "bengali letter na",
-            Bengali::BengaliLetterPa => "bengali letter pa",
-            Bengali::BengaliLetterPha => "bengali letter pha",
-            Bengali::BengaliLetterBa => "bengali letter ba",
-            Bengali::BengaliLetterBha => "bengali letter bha",
-            Bengali::BengaliLetterMa => "bengali letter ma",
-            Bengali::BengaliLetterYa => "bengali letter ya",
-            Bengali::BengaliLetterRa => "bengali letter ra",
-            Bengali::BengaliLetterLa => "bengali letter la",
-            Bengali::BengaliLetterSha => "bengali letter sha",
-            Bengali::BengaliLetterSsa => "bengali letter ssa",
-            Bengali::BengaliLetterSa => "bengali letter sa",
-            Bengali::BengaliLetterHa => "bengali letter ha",
-            Bengali::BengaliSignNukta => "bengali sign nukta",
-            Bengali::BengaliSignAvagraha => "bengali sign avagraha",
-            Bengali::BengaliVowelSignAa => "bengali vowel sign aa",
-            Bengali::BengaliVowelSignI => "bengali vowel sign i",
-            Bengali::BengaliVowelSignIi => "bengali vowel sign ii",
-            Bengali::BengaliVowelSignU => "bengali vowel sign u",
-            Bengali::BengaliVowelSignUu => "bengali vowel sign uu",
-            Bengali::BengaliVowelSignVocalicR => "bengali vowel sign vocalic r",
-            Bengali::BengaliVowelSignVocalicRr => "bengali vowel sign vocalic rr",
-            Bengali::BengaliVowelSignE => "bengali vowel sign e",
-            Bengali::BengaliVowelSignAi => "bengali vowel sign ai",
-            Bengali::BengaliVowelSignO => "bengali vowel sign o",
-            Bengali::BengaliVowelSignAu => "bengali vowel sign au",
-            Bengali::BengaliSignVirama => "bengali sign virama",
-            Bengali::BengaliLetterKhandaTa => "bengali letter khanda ta",
-            Bengali::BengaliAuLengthMark => "bengali au length mark",
-            Bengali::BengaliLetterRra => "bengali letter rra",
-            Bengali::BengaliLetterRha => "bengali letter rha",
-            Bengali::BengaliLetterYya => "bengali letter yya",
-            Bengali::BengaliLetterVocalicRr => "bengali letter vocalic rr",
-            Bengali::BengaliLetterVocalicLl => "bengali letter vocalic ll",
-            Bengali::BengaliVowelSignVocalicL => "bengali vowel sign vocalic l",
-            Bengali::BengaliVowelSignVocalicLl => "bengali vowel sign vocalic ll",
-            Bengali::BengaliDigitZero => "bengali digit zero",
-            Bengali::BengaliDigitOne => "bengali digit one",
-            Bengali::BengaliDigitTwo => "bengali digit two",
-            Bengali::BengaliDigitThree => "bengali digit three",
-            Bengali::BengaliDigitFour => "bengali digit four",
-            Bengali::BengaliDigitFive => "bengali digit five",
-            Bengali::BengaliDigitSix => "bengali digit six",
-            Bengali::BengaliDigitSeven => "bengali digit seven",
-            Bengali::BengaliDigitEight => "bengali digit eight",
-            Bengali::BengaliDigitNine => "bengali digit nine",
-            Bengali::BengaliLetterRaWithMiddleDiagonal => "bengali letter ra with middle diagonal",
-            Bengali::BengaliLetterRaWithLowerDiagonal => "bengali letter ra with lower diagonal",
-            Bengali::BengaliRupeeMark => "bengali rupee mark",
-            Bengali::BengaliRupeeSign => "bengali rupee sign",
-            Bengali::BengaliCurrencyNumeratorOne => "bengali currency numerator one",
-            Bengali::BengaliCurrencyNumeratorTwo => "bengali currency numerator two",
-            Bengali::BengaliCurrencyNumeratorThree => "bengali currency numerator three",
-            Bengali::BengaliCurrencyNumeratorFour => "bengali currency numerator four",
-            Bengali::BengaliCurrencyNumeratorOneLessThanTheDenominator => "bengali currency numerator one less than the denominator",
-            Bengali::BengaliCurrencyDenominatorSixteen => "bengali currency denominator sixteen",
-            Bengali::BengaliIsshar => "bengali isshar",
-            Bengali::BengaliGandaMark => "bengali ganda mark",
-            Bengali::BengaliLetterVedicAnusvara => "bengali letter vedic anusvara",
-            Bengali::BengaliAbbreviationSign => "bengali abbreviation sign",
-            Bengali::BengaliSandhiMark => "bengali sandhi mark",
+            Bengali::Anji => "bengali anji",
+            Bengali::SignCandrabindu => "bengali sign candrabindu",
+            Bengali::SignAnusvara => "bengali sign anusvara",
+            Bengali::SignVisarga => "bengali sign visarga",
+            Bengali::LetterA => "bengali letter a",
+            Bengali::LetterAa => "bengali letter aa",
+            Bengali::LetterI => "bengali letter i",
+            Bengali::LetterIi => "bengali letter ii",
+            Bengali::LetterU => "bengali letter u",
+            Bengali::LetterUu => "bengali letter uu",
+            Bengali::LetterVocalicR => "bengali letter vocalic r",
+            Bengali::LetterVocalicL => "bengali letter vocalic l",
+            Bengali::LetterE => "bengali letter e",
+            Bengali::LetterAi => "bengali letter ai",
+            Bengali::LetterO => "bengali letter o",
+            Bengali::LetterAu => "bengali letter au",
+            Bengali::LetterKa => "bengali letter ka",
+            Bengali::LetterKha => "bengali letter kha",
+            Bengali::LetterGa => "bengali letter ga",
+            Bengali::LetterGha => "bengali letter gha",
+            Bengali::LetterNga => "bengali letter nga",
+            Bengali::LetterCa => "bengali letter ca",
+            Bengali::LetterCha => "bengali letter cha",
+            Bengali::LetterJa => "bengali letter ja",
+            Bengali::LetterJha => "bengali letter jha",
+            Bengali::LetterNya => "bengali letter nya",
+            Bengali::LetterTta => "bengali letter tta",
+            Bengali::LetterTtha => "bengali letter ttha",
+            Bengali::LetterDda => "bengali letter dda",
+            Bengali::LetterDdha => "bengali letter ddha",
+            Bengali::LetterNna => "bengali letter nna",
+            Bengali::LetterTa => "bengali letter ta",
+            Bengali::LetterTha => "bengali letter tha",
+            Bengali::LetterDa => "bengali letter da",
+            Bengali::LetterDha => "bengali letter dha",
+            Bengali::LetterNa => "bengali letter na",
+            Bengali::LetterPa => "bengali letter pa",
+            Bengali::LetterPha => "bengali letter pha",
+            Bengali::LetterBa => "bengali letter ba",
+            Bengali::LetterBha => "bengali letter bha",
+            Bengali::LetterMa => "bengali letter ma",
+            Bengali::LetterYa => "bengali letter ya",
+            Bengali::LetterRa => "bengali letter ra",
+            Bengali::LetterLa => "bengali letter la",
+            Bengali::LetterSha => "bengali letter sha",
+            Bengali::LetterSsa => "bengali letter ssa",
+            Bengali::LetterSa => "bengali letter sa",
+            Bengali::LetterHa => "bengali letter ha",
+            Bengali::SignNukta => "bengali sign nukta",
+            Bengali::SignAvagraha => "bengali sign avagraha",
+            Bengali::VowelSignAa => "bengali vowel sign aa",
+            Bengali::VowelSignI => "bengali vowel sign i",
+            Bengali::VowelSignIi => "bengali vowel sign ii",
+            Bengali::VowelSignU => "bengali vowel sign u",
+            Bengali::VowelSignUu => "bengali vowel sign uu",
+            Bengali::VowelSignVocalicR => "bengali vowel sign vocalic r",
+            Bengali::VowelSignVocalicRr => "bengali vowel sign vocalic rr",
+            Bengali::VowelSignE => "bengali vowel sign e",
+            Bengali::VowelSignAi => "bengali vowel sign ai",
+            Bengali::VowelSignO => "bengali vowel sign o",
+            Bengali::VowelSignAu => "bengali vowel sign au",
+            Bengali::SignVirama => "bengali sign virama",
+            Bengali::LetterKhandaTa => "bengali letter khanda ta",
+            Bengali::AuLengthMark => "bengali au length mark",
+            Bengali::LetterRra => "bengali letter rra",
+            Bengali::LetterRha => "bengali letter rha",
+            Bengali::LetterYya => "bengali letter yya",
+            Bengali::LetterVocalicRr => "bengali letter vocalic rr",
+            Bengali::LetterVocalicLl => "bengali letter vocalic ll",
+            Bengali::VowelSignVocalicL => "bengali vowel sign vocalic l",
+            Bengali::VowelSignVocalicLl => "bengali vowel sign vocalic ll",
+            Bengali::DigitZero => "bengali digit zero",
+            Bengali::DigitOne => "bengali digit one",
+            Bengali::DigitTwo => "bengali digit two",
+            Bengali::DigitThree => "bengali digit three",
+            Bengali::DigitFour => "bengali digit four",
+            Bengali::DigitFive => "bengali digit five",
+            Bengali::DigitSix => "bengali digit six",
+            Bengali::DigitSeven => "bengali digit seven",
+            Bengali::DigitEight => "bengali digit eight",
+            Bengali::DigitNine => "bengali digit nine",
+            Bengali::LetterRaWithMiddleDiagonal => "bengali letter ra with middle diagonal",
+            Bengali::LetterRaWithLowerDiagonal => "bengali letter ra with lower diagonal",
+            Bengali::RupeeMark => "bengali rupee mark",
+            Bengali::RupeeSign => "bengali rupee sign",
+            Bengali::CurrencyNumeratorOne => "bengali currency numerator one",
+            Bengali::CurrencyNumeratorTwo => "bengali currency numerator two",
+            Bengali::CurrencyNumeratorThree => "bengali currency numerator three",
+            Bengali::CurrencyNumeratorFour => "bengali currency numerator four",
+            Bengali::CurrencyNumeratorOneLessThanTheDenominator => "bengali currency numerator one less than the denominator",
+            Bengali::CurrencyDenominatorSixteen => "bengali currency denominator sixteen",
+            Bengali::Isshar => "bengali isshar",
+            Bengali::GandaMark => "bengali ganda mark",
+            Bengali::LetterVedicAnusvara => "bengali letter vedic anusvara",
+            Bengali::AbbreviationSign => "bengali abbreviation sign",
+            Bengali::SandhiMark => "bengali sandhi mark",
         }
     }
 }

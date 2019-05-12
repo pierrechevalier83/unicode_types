@@ -6,109 +6,109 @@
 /// 𐕠 𐕡 𐕢 𐕣
 pub mod constants {
     /// \u{10530}: '𐔰'
-    pub const CAUCASIAN_ALBANIAN_LETTER_ALT: char = '𐔰';
+    pub const LETTER_ALT: char = '𐔰';
     /// \u{10531}: '𐔱'
-    pub const CAUCASIAN_ALBANIAN_LETTER_BET: char = '𐔱';
+    pub const LETTER_BET: char = '𐔱';
     /// \u{10532}: '𐔲'
-    pub const CAUCASIAN_ALBANIAN_LETTER_GIM: char = '𐔲';
+    pub const LETTER_GIM: char = '𐔲';
     /// \u{10533}: '𐔳'
-    pub const CAUCASIAN_ALBANIAN_LETTER_DAT: char = '𐔳';
+    pub const LETTER_DAT: char = '𐔳';
     /// \u{10534}: '𐔴'
-    pub const CAUCASIAN_ALBANIAN_LETTER_EB: char = '𐔴';
+    pub const LETTER_EB: char = '𐔴';
     /// \u{10535}: '𐔵'
-    pub const CAUCASIAN_ALBANIAN_LETTER_ZARL: char = '𐔵';
+    pub const LETTER_ZARL: char = '𐔵';
     /// \u{10536}: '𐔶'
-    pub const CAUCASIAN_ALBANIAN_LETTER_EYN: char = '𐔶';
+    pub const LETTER_EYN: char = '𐔶';
     /// \u{10537}: '𐔷'
-    pub const CAUCASIAN_ALBANIAN_LETTER_ZHIL: char = '𐔷';
+    pub const LETTER_ZHIL: char = '𐔷';
     /// \u{10538}: '𐔸'
-    pub const CAUCASIAN_ALBANIAN_LETTER_TAS: char = '𐔸';
+    pub const LETTER_TAS: char = '𐔸';
     /// \u{10539}: '𐔹'
-    pub const CAUCASIAN_ALBANIAN_LETTER_CHA: char = '𐔹';
+    pub const LETTER_CHA: char = '𐔹';
     /// \u{1053a}: '𐔺'
-    pub const CAUCASIAN_ALBANIAN_LETTER_YOWD: char = '𐔺';
+    pub const LETTER_YOWD: char = '𐔺';
     /// \u{1053b}: '𐔻'
-    pub const CAUCASIAN_ALBANIAN_LETTER_ZHA: char = '𐔻';
+    pub const LETTER_ZHA: char = '𐔻';
     /// \u{1053c}: '𐔼'
-    pub const CAUCASIAN_ALBANIAN_LETTER_IRB: char = '𐔼';
+    pub const LETTER_IRB: char = '𐔼';
     /// \u{1053d}: '𐔽'
-    pub const CAUCASIAN_ALBANIAN_LETTER_SHA: char = '𐔽';
+    pub const LETTER_SHA: char = '𐔽';
     /// \u{1053e}: '𐔾'
-    pub const CAUCASIAN_ALBANIAN_LETTER_LAN: char = '𐔾';
+    pub const LETTER_LAN: char = '𐔾';
     /// \u{1053f}: '𐔿'
-    pub const CAUCASIAN_ALBANIAN_LETTER_INYA: char = '𐔿';
+    pub const LETTER_INYA: char = '𐔿';
     /// \u{10540}: '𐕀'
-    pub const CAUCASIAN_ALBANIAN_LETTER_XEYN: char = '𐕀';
+    pub const LETTER_XEYN: char = '𐕀';
     /// \u{10541}: '𐕁'
-    pub const CAUCASIAN_ALBANIAN_LETTER_DYAN: char = '𐕁';
+    pub const LETTER_DYAN: char = '𐕁';
     /// \u{10542}: '𐕂'
-    pub const CAUCASIAN_ALBANIAN_LETTER_CAR: char = '𐕂';
+    pub const LETTER_CAR: char = '𐕂';
     /// \u{10543}: '𐕃'
-    pub const CAUCASIAN_ALBANIAN_LETTER_JHOX: char = '𐕃';
+    pub const LETTER_JHOX: char = '𐕃';
     /// \u{10544}: '𐕄'
-    pub const CAUCASIAN_ALBANIAN_LETTER_KAR: char = '𐕄';
+    pub const LETTER_KAR: char = '𐕄';
     /// \u{10545}: '𐕅'
-    pub const CAUCASIAN_ALBANIAN_LETTER_LYIT: char = '𐕅';
+    pub const LETTER_LYIT: char = '𐕅';
     /// \u{10546}: '𐕆'
-    pub const CAUCASIAN_ALBANIAN_LETTER_HEYT: char = '𐕆';
+    pub const LETTER_HEYT: char = '𐕆';
     /// \u{10547}: '𐕇'
-    pub const CAUCASIAN_ALBANIAN_LETTER_QAY: char = '𐕇';
+    pub const LETTER_QAY: char = '𐕇';
     /// \u{10548}: '𐕈'
-    pub const CAUCASIAN_ALBANIAN_LETTER_AOR: char = '𐕈';
+    pub const LETTER_AOR: char = '𐕈';
     /// \u{10549}: '𐕉'
-    pub const CAUCASIAN_ALBANIAN_LETTER_CHOY: char = '𐕉';
+    pub const LETTER_CHOY: char = '𐕉';
     /// \u{1054a}: '𐕊'
-    pub const CAUCASIAN_ALBANIAN_LETTER_CHI: char = '𐕊';
+    pub const LETTER_CHI: char = '𐕊';
     /// \u{1054b}: '𐕋'
-    pub const CAUCASIAN_ALBANIAN_LETTER_CYAY: char = '𐕋';
+    pub const LETTER_CYAY: char = '𐕋';
     /// \u{1054c}: '𐕌'
-    pub const CAUCASIAN_ALBANIAN_LETTER_MAQ: char = '𐕌';
+    pub const LETTER_MAQ: char = '𐕌';
     /// \u{1054d}: '𐕍'
-    pub const CAUCASIAN_ALBANIAN_LETTER_QAR: char = '𐕍';
+    pub const LETTER_QAR: char = '𐕍';
     /// \u{1054e}: '𐕎'
-    pub const CAUCASIAN_ALBANIAN_LETTER_NOWC: char = '𐕎';
+    pub const LETTER_NOWC: char = '𐕎';
     /// \u{1054f}: '𐕏'
-    pub const CAUCASIAN_ALBANIAN_LETTER_DZYAY: char = '𐕏';
+    pub const LETTER_DZYAY: char = '𐕏';
     /// \u{10550}: '𐕐'
-    pub const CAUCASIAN_ALBANIAN_LETTER_SHAK: char = '𐕐';
+    pub const LETTER_SHAK: char = '𐕐';
     /// \u{10551}: '𐕑'
-    pub const CAUCASIAN_ALBANIAN_LETTER_JAYN: char = '𐕑';
+    pub const LETTER_JAYN: char = '𐕑';
     /// \u{10552}: '𐕒'
-    pub const CAUCASIAN_ALBANIAN_LETTER_ON: char = '𐕒';
+    pub const LETTER_ON: char = '𐕒';
     /// \u{10553}: '𐕓'
-    pub const CAUCASIAN_ALBANIAN_LETTER_TYAY: char = '𐕓';
+    pub const LETTER_TYAY: char = '𐕓';
     /// \u{10554}: '𐕔'
-    pub const CAUCASIAN_ALBANIAN_LETTER_FAM: char = '𐕔';
+    pub const LETTER_FAM: char = '𐕔';
     /// \u{10555}: '𐕕'
-    pub const CAUCASIAN_ALBANIAN_LETTER_DZAY: char = '𐕕';
+    pub const LETTER_DZAY: char = '𐕕';
     /// \u{10556}: '𐕖'
-    pub const CAUCASIAN_ALBANIAN_LETTER_CHAT: char = '𐕖';
+    pub const LETTER_CHAT: char = '𐕖';
     /// \u{10557}: '𐕗'
-    pub const CAUCASIAN_ALBANIAN_LETTER_PEN: char = '𐕗';
+    pub const LETTER_PEN: char = '𐕗';
     /// \u{10558}: '𐕘'
-    pub const CAUCASIAN_ALBANIAN_LETTER_GHEYS: char = '𐕘';
+    pub const LETTER_GHEYS: char = '𐕘';
     /// \u{10559}: '𐕙'
-    pub const CAUCASIAN_ALBANIAN_LETTER_RAT: char = '𐕙';
+    pub const LETTER_RAT: char = '𐕙';
     /// \u{1055a}: '𐕚'
-    pub const CAUCASIAN_ALBANIAN_LETTER_SEYK: char = '𐕚';
+    pub const LETTER_SEYK: char = '𐕚';
     /// \u{1055b}: '𐕛'
-    pub const CAUCASIAN_ALBANIAN_LETTER_VEYZ: char = '𐕛';
+    pub const LETTER_VEYZ: char = '𐕛';
     /// \u{1055c}: '𐕜'
-    pub const CAUCASIAN_ALBANIAN_LETTER_TIWR: char = '𐕜';
+    pub const LETTER_TIWR: char = '𐕜';
     /// \u{1055d}: '𐕝'
-    pub const CAUCASIAN_ALBANIAN_LETTER_SHOY: char = '𐕝';
+    pub const LETTER_SHOY: char = '𐕝';
     /// \u{1055e}: '𐕞'
-    pub const CAUCASIAN_ALBANIAN_LETTER_IWN: char = '𐕞';
+    pub const LETTER_IWN: char = '𐕞';
     /// \u{1055f}: '𐕟'
-    pub const CAUCASIAN_ALBANIAN_LETTER_CYAW: char = '𐕟';
+    pub const LETTER_CYAW: char = '𐕟';
     /// \u{10560}: '𐕠'
-    pub const CAUCASIAN_ALBANIAN_LETTER_CAYN: char = '𐕠';
+    pub const LETTER_CAYN: char = '𐕠';
     /// \u{10561}: '𐕡'
-    pub const CAUCASIAN_ALBANIAN_LETTER_YAYD: char = '𐕡';
+    pub const LETTER_YAYD: char = '𐕡';
     /// \u{10562}: '𐕢'
-    pub const CAUCASIAN_ALBANIAN_LETTER_PIWR: char = '𐕢';
+    pub const LETTER_PIWR: char = '𐕢';
     /// \u{10563}: '𐕣'
-    pub const CAUCASIAN_ALBANIAN_LETTER_KIW: char = '𐕣';
+    pub const LETTER_KIW: char = '𐕣';
 }
 
 /// \u{10530} → \u{1056f}\
@@ -120,167 +120,167 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CaucasianAlbanian {
     /// \u{10530}: '𐔰'
-    CaucasianAlbanianLetterAlt,
+    LetterAlt,
     /// \u{10531}: '𐔱'
-    CaucasianAlbanianLetterBet,
+    LetterBet,
     /// \u{10532}: '𐔲'
-    CaucasianAlbanianLetterGim,
+    LetterGim,
     /// \u{10533}: '𐔳'
-    CaucasianAlbanianLetterDat,
+    LetterDat,
     /// \u{10534}: '𐔴'
-    CaucasianAlbanianLetterEb,
+    LetterEb,
     /// \u{10535}: '𐔵'
-    CaucasianAlbanianLetterZarl,
+    LetterZarl,
     /// \u{10536}: '𐔶'
-    CaucasianAlbanianLetterEyn,
+    LetterEyn,
     /// \u{10537}: '𐔷'
-    CaucasianAlbanianLetterZhil,
+    LetterZhil,
     /// \u{10538}: '𐔸'
-    CaucasianAlbanianLetterTas,
+    LetterTas,
     /// \u{10539}: '𐔹'
-    CaucasianAlbanianLetterCha,
+    LetterCha,
     /// \u{1053a}: '𐔺'
-    CaucasianAlbanianLetterYowd,
+    LetterYowd,
     /// \u{1053b}: '𐔻'
-    CaucasianAlbanianLetterZha,
+    LetterZha,
     /// \u{1053c}: '𐔼'
-    CaucasianAlbanianLetterIrb,
+    LetterIrb,
     /// \u{1053d}: '𐔽'
-    CaucasianAlbanianLetterSha,
+    LetterSha,
     /// \u{1053e}: '𐔾'
-    CaucasianAlbanianLetterLan,
+    LetterLan,
     /// \u{1053f}: '𐔿'
-    CaucasianAlbanianLetterInya,
+    LetterInya,
     /// \u{10540}: '𐕀'
-    CaucasianAlbanianLetterXeyn,
+    LetterXeyn,
     /// \u{10541}: '𐕁'
-    CaucasianAlbanianLetterDyan,
+    LetterDyan,
     /// \u{10542}: '𐕂'
-    CaucasianAlbanianLetterCar,
+    LetterCar,
     /// \u{10543}: '𐕃'
-    CaucasianAlbanianLetterJhox,
+    LetterJhox,
     /// \u{10544}: '𐕄'
-    CaucasianAlbanianLetterKar,
+    LetterKar,
     /// \u{10545}: '𐕅'
-    CaucasianAlbanianLetterLyit,
+    LetterLyit,
     /// \u{10546}: '𐕆'
-    CaucasianAlbanianLetterHeyt,
+    LetterHeyt,
     /// \u{10547}: '𐕇'
-    CaucasianAlbanianLetterQay,
+    LetterQay,
     /// \u{10548}: '𐕈'
-    CaucasianAlbanianLetterAor,
+    LetterAor,
     /// \u{10549}: '𐕉'
-    CaucasianAlbanianLetterChoy,
+    LetterChoy,
     /// \u{1054a}: '𐕊'
-    CaucasianAlbanianLetterChi,
+    LetterChi,
     /// \u{1054b}: '𐕋'
-    CaucasianAlbanianLetterCyay,
+    LetterCyay,
     /// \u{1054c}: '𐕌'
-    CaucasianAlbanianLetterMaq,
+    LetterMaq,
     /// \u{1054d}: '𐕍'
-    CaucasianAlbanianLetterQar,
+    LetterQar,
     /// \u{1054e}: '𐕎'
-    CaucasianAlbanianLetterNowc,
+    LetterNowc,
     /// \u{1054f}: '𐕏'
-    CaucasianAlbanianLetterDzyay,
+    LetterDzyay,
     /// \u{10550}: '𐕐'
-    CaucasianAlbanianLetterShak,
+    LetterShak,
     /// \u{10551}: '𐕑'
-    CaucasianAlbanianLetterJayn,
+    LetterJayn,
     /// \u{10552}: '𐕒'
-    CaucasianAlbanianLetterOn,
+    LetterOn,
     /// \u{10553}: '𐕓'
-    CaucasianAlbanianLetterTyay,
+    LetterTyay,
     /// \u{10554}: '𐕔'
-    CaucasianAlbanianLetterFam,
+    LetterFam,
     /// \u{10555}: '𐕕'
-    CaucasianAlbanianLetterDzay,
+    LetterDzay,
     /// \u{10556}: '𐕖'
-    CaucasianAlbanianLetterChat,
+    LetterChat,
     /// \u{10557}: '𐕗'
-    CaucasianAlbanianLetterPen,
+    LetterPen,
     /// \u{10558}: '𐕘'
-    CaucasianAlbanianLetterGheys,
+    LetterGheys,
     /// \u{10559}: '𐕙'
-    CaucasianAlbanianLetterRat,
+    LetterRat,
     /// \u{1055a}: '𐕚'
-    CaucasianAlbanianLetterSeyk,
+    LetterSeyk,
     /// \u{1055b}: '𐕛'
-    CaucasianAlbanianLetterVeyz,
+    LetterVeyz,
     /// \u{1055c}: '𐕜'
-    CaucasianAlbanianLetterTiwr,
+    LetterTiwr,
     /// \u{1055d}: '𐕝'
-    CaucasianAlbanianLetterShoy,
+    LetterShoy,
     /// \u{1055e}: '𐕞'
-    CaucasianAlbanianLetterIwn,
+    LetterIwn,
     /// \u{1055f}: '𐕟'
-    CaucasianAlbanianLetterCyaw,
+    LetterCyaw,
     /// \u{10560}: '𐕠'
-    CaucasianAlbanianLetterCayn,
+    LetterCayn,
     /// \u{10561}: '𐕡'
-    CaucasianAlbanianLetterYayd,
+    LetterYayd,
     /// \u{10562}: '𐕢'
-    CaucasianAlbanianLetterPiwr,
+    LetterPiwr,
     /// \u{10563}: '𐕣'
-    CaucasianAlbanianLetterKiw,
+    LetterKiw,
 }
 
 impl Into<char> for CaucasianAlbanian {
     fn into(self) -> char {
         use constants::*;
         match self {
-            CaucasianAlbanian::CaucasianAlbanianLetterAlt => CAUCASIAN_ALBANIAN_LETTER_ALT,
-            CaucasianAlbanian::CaucasianAlbanianLetterBet => CAUCASIAN_ALBANIAN_LETTER_BET,
-            CaucasianAlbanian::CaucasianAlbanianLetterGim => CAUCASIAN_ALBANIAN_LETTER_GIM,
-            CaucasianAlbanian::CaucasianAlbanianLetterDat => CAUCASIAN_ALBANIAN_LETTER_DAT,
-            CaucasianAlbanian::CaucasianAlbanianLetterEb => CAUCASIAN_ALBANIAN_LETTER_EB,
-            CaucasianAlbanian::CaucasianAlbanianLetterZarl => CAUCASIAN_ALBANIAN_LETTER_ZARL,
-            CaucasianAlbanian::CaucasianAlbanianLetterEyn => CAUCASIAN_ALBANIAN_LETTER_EYN,
-            CaucasianAlbanian::CaucasianAlbanianLetterZhil => CAUCASIAN_ALBANIAN_LETTER_ZHIL,
-            CaucasianAlbanian::CaucasianAlbanianLetterTas => CAUCASIAN_ALBANIAN_LETTER_TAS,
-            CaucasianAlbanian::CaucasianAlbanianLetterCha => CAUCASIAN_ALBANIAN_LETTER_CHA,
-            CaucasianAlbanian::CaucasianAlbanianLetterYowd => CAUCASIAN_ALBANIAN_LETTER_YOWD,
-            CaucasianAlbanian::CaucasianAlbanianLetterZha => CAUCASIAN_ALBANIAN_LETTER_ZHA,
-            CaucasianAlbanian::CaucasianAlbanianLetterIrb => CAUCASIAN_ALBANIAN_LETTER_IRB,
-            CaucasianAlbanian::CaucasianAlbanianLetterSha => CAUCASIAN_ALBANIAN_LETTER_SHA,
-            CaucasianAlbanian::CaucasianAlbanianLetterLan => CAUCASIAN_ALBANIAN_LETTER_LAN,
-            CaucasianAlbanian::CaucasianAlbanianLetterInya => CAUCASIAN_ALBANIAN_LETTER_INYA,
-            CaucasianAlbanian::CaucasianAlbanianLetterXeyn => CAUCASIAN_ALBANIAN_LETTER_XEYN,
-            CaucasianAlbanian::CaucasianAlbanianLetterDyan => CAUCASIAN_ALBANIAN_LETTER_DYAN,
-            CaucasianAlbanian::CaucasianAlbanianLetterCar => CAUCASIAN_ALBANIAN_LETTER_CAR,
-            CaucasianAlbanian::CaucasianAlbanianLetterJhox => CAUCASIAN_ALBANIAN_LETTER_JHOX,
-            CaucasianAlbanian::CaucasianAlbanianLetterKar => CAUCASIAN_ALBANIAN_LETTER_KAR,
-            CaucasianAlbanian::CaucasianAlbanianLetterLyit => CAUCASIAN_ALBANIAN_LETTER_LYIT,
-            CaucasianAlbanian::CaucasianAlbanianLetterHeyt => CAUCASIAN_ALBANIAN_LETTER_HEYT,
-            CaucasianAlbanian::CaucasianAlbanianLetterQay => CAUCASIAN_ALBANIAN_LETTER_QAY,
-            CaucasianAlbanian::CaucasianAlbanianLetterAor => CAUCASIAN_ALBANIAN_LETTER_AOR,
-            CaucasianAlbanian::CaucasianAlbanianLetterChoy => CAUCASIAN_ALBANIAN_LETTER_CHOY,
-            CaucasianAlbanian::CaucasianAlbanianLetterChi => CAUCASIAN_ALBANIAN_LETTER_CHI,
-            CaucasianAlbanian::CaucasianAlbanianLetterCyay => CAUCASIAN_ALBANIAN_LETTER_CYAY,
-            CaucasianAlbanian::CaucasianAlbanianLetterMaq => CAUCASIAN_ALBANIAN_LETTER_MAQ,
-            CaucasianAlbanian::CaucasianAlbanianLetterQar => CAUCASIAN_ALBANIAN_LETTER_QAR,
-            CaucasianAlbanian::CaucasianAlbanianLetterNowc => CAUCASIAN_ALBANIAN_LETTER_NOWC,
-            CaucasianAlbanian::CaucasianAlbanianLetterDzyay => CAUCASIAN_ALBANIAN_LETTER_DZYAY,
-            CaucasianAlbanian::CaucasianAlbanianLetterShak => CAUCASIAN_ALBANIAN_LETTER_SHAK,
-            CaucasianAlbanian::CaucasianAlbanianLetterJayn => CAUCASIAN_ALBANIAN_LETTER_JAYN,
-            CaucasianAlbanian::CaucasianAlbanianLetterOn => CAUCASIAN_ALBANIAN_LETTER_ON,
-            CaucasianAlbanian::CaucasianAlbanianLetterTyay => CAUCASIAN_ALBANIAN_LETTER_TYAY,
-            CaucasianAlbanian::CaucasianAlbanianLetterFam => CAUCASIAN_ALBANIAN_LETTER_FAM,
-            CaucasianAlbanian::CaucasianAlbanianLetterDzay => CAUCASIAN_ALBANIAN_LETTER_DZAY,
-            CaucasianAlbanian::CaucasianAlbanianLetterChat => CAUCASIAN_ALBANIAN_LETTER_CHAT,
-            CaucasianAlbanian::CaucasianAlbanianLetterPen => CAUCASIAN_ALBANIAN_LETTER_PEN,
-            CaucasianAlbanian::CaucasianAlbanianLetterGheys => CAUCASIAN_ALBANIAN_LETTER_GHEYS,
-            CaucasianAlbanian::CaucasianAlbanianLetterRat => CAUCASIAN_ALBANIAN_LETTER_RAT,
-            CaucasianAlbanian::CaucasianAlbanianLetterSeyk => CAUCASIAN_ALBANIAN_LETTER_SEYK,
-            CaucasianAlbanian::CaucasianAlbanianLetterVeyz => CAUCASIAN_ALBANIAN_LETTER_VEYZ,
-            CaucasianAlbanian::CaucasianAlbanianLetterTiwr => CAUCASIAN_ALBANIAN_LETTER_TIWR,
-            CaucasianAlbanian::CaucasianAlbanianLetterShoy => CAUCASIAN_ALBANIAN_LETTER_SHOY,
-            CaucasianAlbanian::CaucasianAlbanianLetterIwn => CAUCASIAN_ALBANIAN_LETTER_IWN,
-            CaucasianAlbanian::CaucasianAlbanianLetterCyaw => CAUCASIAN_ALBANIAN_LETTER_CYAW,
-            CaucasianAlbanian::CaucasianAlbanianLetterCayn => CAUCASIAN_ALBANIAN_LETTER_CAYN,
-            CaucasianAlbanian::CaucasianAlbanianLetterYayd => CAUCASIAN_ALBANIAN_LETTER_YAYD,
-            CaucasianAlbanian::CaucasianAlbanianLetterPiwr => CAUCASIAN_ALBANIAN_LETTER_PIWR,
-            CaucasianAlbanian::CaucasianAlbanianLetterKiw => CAUCASIAN_ALBANIAN_LETTER_KIW,
+            CaucasianAlbanian::LetterAlt => LETTER_ALT,
+            CaucasianAlbanian::LetterBet => LETTER_BET,
+            CaucasianAlbanian::LetterGim => LETTER_GIM,
+            CaucasianAlbanian::LetterDat => LETTER_DAT,
+            CaucasianAlbanian::LetterEb => LETTER_EB,
+            CaucasianAlbanian::LetterZarl => LETTER_ZARL,
+            CaucasianAlbanian::LetterEyn => LETTER_EYN,
+            CaucasianAlbanian::LetterZhil => LETTER_ZHIL,
+            CaucasianAlbanian::LetterTas => LETTER_TAS,
+            CaucasianAlbanian::LetterCha => LETTER_CHA,
+            CaucasianAlbanian::LetterYowd => LETTER_YOWD,
+            CaucasianAlbanian::LetterZha => LETTER_ZHA,
+            CaucasianAlbanian::LetterIrb => LETTER_IRB,
+            CaucasianAlbanian::LetterSha => LETTER_SHA,
+            CaucasianAlbanian::LetterLan => LETTER_LAN,
+            CaucasianAlbanian::LetterInya => LETTER_INYA,
+            CaucasianAlbanian::LetterXeyn => LETTER_XEYN,
+            CaucasianAlbanian::LetterDyan => LETTER_DYAN,
+            CaucasianAlbanian::LetterCar => LETTER_CAR,
+            CaucasianAlbanian::LetterJhox => LETTER_JHOX,
+            CaucasianAlbanian::LetterKar => LETTER_KAR,
+            CaucasianAlbanian::LetterLyit => LETTER_LYIT,
+            CaucasianAlbanian::LetterHeyt => LETTER_HEYT,
+            CaucasianAlbanian::LetterQay => LETTER_QAY,
+            CaucasianAlbanian::LetterAor => LETTER_AOR,
+            CaucasianAlbanian::LetterChoy => LETTER_CHOY,
+            CaucasianAlbanian::LetterChi => LETTER_CHI,
+            CaucasianAlbanian::LetterCyay => LETTER_CYAY,
+            CaucasianAlbanian::LetterMaq => LETTER_MAQ,
+            CaucasianAlbanian::LetterQar => LETTER_QAR,
+            CaucasianAlbanian::LetterNowc => LETTER_NOWC,
+            CaucasianAlbanian::LetterDzyay => LETTER_DZYAY,
+            CaucasianAlbanian::LetterShak => LETTER_SHAK,
+            CaucasianAlbanian::LetterJayn => LETTER_JAYN,
+            CaucasianAlbanian::LetterOn => LETTER_ON,
+            CaucasianAlbanian::LetterTyay => LETTER_TYAY,
+            CaucasianAlbanian::LetterFam => LETTER_FAM,
+            CaucasianAlbanian::LetterDzay => LETTER_DZAY,
+            CaucasianAlbanian::LetterChat => LETTER_CHAT,
+            CaucasianAlbanian::LetterPen => LETTER_PEN,
+            CaucasianAlbanian::LetterGheys => LETTER_GHEYS,
+            CaucasianAlbanian::LetterRat => LETTER_RAT,
+            CaucasianAlbanian::LetterSeyk => LETTER_SEYK,
+            CaucasianAlbanian::LetterVeyz => LETTER_VEYZ,
+            CaucasianAlbanian::LetterTiwr => LETTER_TIWR,
+            CaucasianAlbanian::LetterShoy => LETTER_SHOY,
+            CaucasianAlbanian::LetterIwn => LETTER_IWN,
+            CaucasianAlbanian::LetterCyaw => LETTER_CYAW,
+            CaucasianAlbanian::LetterCayn => LETTER_CAYN,
+            CaucasianAlbanian::LetterYayd => LETTER_YAYD,
+            CaucasianAlbanian::LetterPiwr => LETTER_PIWR,
+            CaucasianAlbanian::LetterKiw => LETTER_KIW,
         }
     }
 }
@@ -290,58 +290,58 @@ impl std::convert::TryFrom<char> for CaucasianAlbanian {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            CAUCASIAN_ALBANIAN_LETTER_ALT => Ok(CaucasianAlbanian::CaucasianAlbanianLetterAlt),
-            CAUCASIAN_ALBANIAN_LETTER_BET => Ok(CaucasianAlbanian::CaucasianAlbanianLetterBet),
-            CAUCASIAN_ALBANIAN_LETTER_GIM => Ok(CaucasianAlbanian::CaucasianAlbanianLetterGim),
-            CAUCASIAN_ALBANIAN_LETTER_DAT => Ok(CaucasianAlbanian::CaucasianAlbanianLetterDat),
-            CAUCASIAN_ALBANIAN_LETTER_EB => Ok(CaucasianAlbanian::CaucasianAlbanianLetterEb),
-            CAUCASIAN_ALBANIAN_LETTER_ZARL => Ok(CaucasianAlbanian::CaucasianAlbanianLetterZarl),
-            CAUCASIAN_ALBANIAN_LETTER_EYN => Ok(CaucasianAlbanian::CaucasianAlbanianLetterEyn),
-            CAUCASIAN_ALBANIAN_LETTER_ZHIL => Ok(CaucasianAlbanian::CaucasianAlbanianLetterZhil),
-            CAUCASIAN_ALBANIAN_LETTER_TAS => Ok(CaucasianAlbanian::CaucasianAlbanianLetterTas),
-            CAUCASIAN_ALBANIAN_LETTER_CHA => Ok(CaucasianAlbanian::CaucasianAlbanianLetterCha),
-            CAUCASIAN_ALBANIAN_LETTER_YOWD => Ok(CaucasianAlbanian::CaucasianAlbanianLetterYowd),
-            CAUCASIAN_ALBANIAN_LETTER_ZHA => Ok(CaucasianAlbanian::CaucasianAlbanianLetterZha),
-            CAUCASIAN_ALBANIAN_LETTER_IRB => Ok(CaucasianAlbanian::CaucasianAlbanianLetterIrb),
-            CAUCASIAN_ALBANIAN_LETTER_SHA => Ok(CaucasianAlbanian::CaucasianAlbanianLetterSha),
-            CAUCASIAN_ALBANIAN_LETTER_LAN => Ok(CaucasianAlbanian::CaucasianAlbanianLetterLan),
-            CAUCASIAN_ALBANIAN_LETTER_INYA => Ok(CaucasianAlbanian::CaucasianAlbanianLetterInya),
-            CAUCASIAN_ALBANIAN_LETTER_XEYN => Ok(CaucasianAlbanian::CaucasianAlbanianLetterXeyn),
-            CAUCASIAN_ALBANIAN_LETTER_DYAN => Ok(CaucasianAlbanian::CaucasianAlbanianLetterDyan),
-            CAUCASIAN_ALBANIAN_LETTER_CAR => Ok(CaucasianAlbanian::CaucasianAlbanianLetterCar),
-            CAUCASIAN_ALBANIAN_LETTER_JHOX => Ok(CaucasianAlbanian::CaucasianAlbanianLetterJhox),
-            CAUCASIAN_ALBANIAN_LETTER_KAR => Ok(CaucasianAlbanian::CaucasianAlbanianLetterKar),
-            CAUCASIAN_ALBANIAN_LETTER_LYIT => Ok(CaucasianAlbanian::CaucasianAlbanianLetterLyit),
-            CAUCASIAN_ALBANIAN_LETTER_HEYT => Ok(CaucasianAlbanian::CaucasianAlbanianLetterHeyt),
-            CAUCASIAN_ALBANIAN_LETTER_QAY => Ok(CaucasianAlbanian::CaucasianAlbanianLetterQay),
-            CAUCASIAN_ALBANIAN_LETTER_AOR => Ok(CaucasianAlbanian::CaucasianAlbanianLetterAor),
-            CAUCASIAN_ALBANIAN_LETTER_CHOY => Ok(CaucasianAlbanian::CaucasianAlbanianLetterChoy),
-            CAUCASIAN_ALBANIAN_LETTER_CHI => Ok(CaucasianAlbanian::CaucasianAlbanianLetterChi),
-            CAUCASIAN_ALBANIAN_LETTER_CYAY => Ok(CaucasianAlbanian::CaucasianAlbanianLetterCyay),
-            CAUCASIAN_ALBANIAN_LETTER_MAQ => Ok(CaucasianAlbanian::CaucasianAlbanianLetterMaq),
-            CAUCASIAN_ALBANIAN_LETTER_QAR => Ok(CaucasianAlbanian::CaucasianAlbanianLetterQar),
-            CAUCASIAN_ALBANIAN_LETTER_NOWC => Ok(CaucasianAlbanian::CaucasianAlbanianLetterNowc),
-            CAUCASIAN_ALBANIAN_LETTER_DZYAY => Ok(CaucasianAlbanian::CaucasianAlbanianLetterDzyay),
-            CAUCASIAN_ALBANIAN_LETTER_SHAK => Ok(CaucasianAlbanian::CaucasianAlbanianLetterShak),
-            CAUCASIAN_ALBANIAN_LETTER_JAYN => Ok(CaucasianAlbanian::CaucasianAlbanianLetterJayn),
-            CAUCASIAN_ALBANIAN_LETTER_ON => Ok(CaucasianAlbanian::CaucasianAlbanianLetterOn),
-            CAUCASIAN_ALBANIAN_LETTER_TYAY => Ok(CaucasianAlbanian::CaucasianAlbanianLetterTyay),
-            CAUCASIAN_ALBANIAN_LETTER_FAM => Ok(CaucasianAlbanian::CaucasianAlbanianLetterFam),
-            CAUCASIAN_ALBANIAN_LETTER_DZAY => Ok(CaucasianAlbanian::CaucasianAlbanianLetterDzay),
-            CAUCASIAN_ALBANIAN_LETTER_CHAT => Ok(CaucasianAlbanian::CaucasianAlbanianLetterChat),
-            CAUCASIAN_ALBANIAN_LETTER_PEN => Ok(CaucasianAlbanian::CaucasianAlbanianLetterPen),
-            CAUCASIAN_ALBANIAN_LETTER_GHEYS => Ok(CaucasianAlbanian::CaucasianAlbanianLetterGheys),
-            CAUCASIAN_ALBANIAN_LETTER_RAT => Ok(CaucasianAlbanian::CaucasianAlbanianLetterRat),
-            CAUCASIAN_ALBANIAN_LETTER_SEYK => Ok(CaucasianAlbanian::CaucasianAlbanianLetterSeyk),
-            CAUCASIAN_ALBANIAN_LETTER_VEYZ => Ok(CaucasianAlbanian::CaucasianAlbanianLetterVeyz),
-            CAUCASIAN_ALBANIAN_LETTER_TIWR => Ok(CaucasianAlbanian::CaucasianAlbanianLetterTiwr),
-            CAUCASIAN_ALBANIAN_LETTER_SHOY => Ok(CaucasianAlbanian::CaucasianAlbanianLetterShoy),
-            CAUCASIAN_ALBANIAN_LETTER_IWN => Ok(CaucasianAlbanian::CaucasianAlbanianLetterIwn),
-            CAUCASIAN_ALBANIAN_LETTER_CYAW => Ok(CaucasianAlbanian::CaucasianAlbanianLetterCyaw),
-            CAUCASIAN_ALBANIAN_LETTER_CAYN => Ok(CaucasianAlbanian::CaucasianAlbanianLetterCayn),
-            CAUCASIAN_ALBANIAN_LETTER_YAYD => Ok(CaucasianAlbanian::CaucasianAlbanianLetterYayd),
-            CAUCASIAN_ALBANIAN_LETTER_PIWR => Ok(CaucasianAlbanian::CaucasianAlbanianLetterPiwr),
-            CAUCASIAN_ALBANIAN_LETTER_KIW => Ok(CaucasianAlbanian::CaucasianAlbanianLetterKiw),
+            LETTER_ALT => Ok(CaucasianAlbanian::LetterAlt),
+            LETTER_BET => Ok(CaucasianAlbanian::LetterBet),
+            LETTER_GIM => Ok(CaucasianAlbanian::LetterGim),
+            LETTER_DAT => Ok(CaucasianAlbanian::LetterDat),
+            LETTER_EB => Ok(CaucasianAlbanian::LetterEb),
+            LETTER_ZARL => Ok(CaucasianAlbanian::LetterZarl),
+            LETTER_EYN => Ok(CaucasianAlbanian::LetterEyn),
+            LETTER_ZHIL => Ok(CaucasianAlbanian::LetterZhil),
+            LETTER_TAS => Ok(CaucasianAlbanian::LetterTas),
+            LETTER_CHA => Ok(CaucasianAlbanian::LetterCha),
+            LETTER_YOWD => Ok(CaucasianAlbanian::LetterYowd),
+            LETTER_ZHA => Ok(CaucasianAlbanian::LetterZha),
+            LETTER_IRB => Ok(CaucasianAlbanian::LetterIrb),
+            LETTER_SHA => Ok(CaucasianAlbanian::LetterSha),
+            LETTER_LAN => Ok(CaucasianAlbanian::LetterLan),
+            LETTER_INYA => Ok(CaucasianAlbanian::LetterInya),
+            LETTER_XEYN => Ok(CaucasianAlbanian::LetterXeyn),
+            LETTER_DYAN => Ok(CaucasianAlbanian::LetterDyan),
+            LETTER_CAR => Ok(CaucasianAlbanian::LetterCar),
+            LETTER_JHOX => Ok(CaucasianAlbanian::LetterJhox),
+            LETTER_KAR => Ok(CaucasianAlbanian::LetterKar),
+            LETTER_LYIT => Ok(CaucasianAlbanian::LetterLyit),
+            LETTER_HEYT => Ok(CaucasianAlbanian::LetterHeyt),
+            LETTER_QAY => Ok(CaucasianAlbanian::LetterQay),
+            LETTER_AOR => Ok(CaucasianAlbanian::LetterAor),
+            LETTER_CHOY => Ok(CaucasianAlbanian::LetterChoy),
+            LETTER_CHI => Ok(CaucasianAlbanian::LetterChi),
+            LETTER_CYAY => Ok(CaucasianAlbanian::LetterCyay),
+            LETTER_MAQ => Ok(CaucasianAlbanian::LetterMaq),
+            LETTER_QAR => Ok(CaucasianAlbanian::LetterQar),
+            LETTER_NOWC => Ok(CaucasianAlbanian::LetterNowc),
+            LETTER_DZYAY => Ok(CaucasianAlbanian::LetterDzyay),
+            LETTER_SHAK => Ok(CaucasianAlbanian::LetterShak),
+            LETTER_JAYN => Ok(CaucasianAlbanian::LetterJayn),
+            LETTER_ON => Ok(CaucasianAlbanian::LetterOn),
+            LETTER_TYAY => Ok(CaucasianAlbanian::LetterTyay),
+            LETTER_FAM => Ok(CaucasianAlbanian::LetterFam),
+            LETTER_DZAY => Ok(CaucasianAlbanian::LetterDzay),
+            LETTER_CHAT => Ok(CaucasianAlbanian::LetterChat),
+            LETTER_PEN => Ok(CaucasianAlbanian::LetterPen),
+            LETTER_GHEYS => Ok(CaucasianAlbanian::LetterGheys),
+            LETTER_RAT => Ok(CaucasianAlbanian::LetterRat),
+            LETTER_SEYK => Ok(CaucasianAlbanian::LetterSeyk),
+            LETTER_VEYZ => Ok(CaucasianAlbanian::LetterVeyz),
+            LETTER_TIWR => Ok(CaucasianAlbanian::LetterTiwr),
+            LETTER_SHOY => Ok(CaucasianAlbanian::LetterShoy),
+            LETTER_IWN => Ok(CaucasianAlbanian::LetterIwn),
+            LETTER_CYAW => Ok(CaucasianAlbanian::LetterCyaw),
+            LETTER_CAYN => Ok(CaucasianAlbanian::LetterCayn),
+            LETTER_YAYD => Ok(CaucasianAlbanian::LetterYayd),
+            LETTER_PIWR => Ok(CaucasianAlbanian::LetterPiwr),
+            LETTER_KIW => Ok(CaucasianAlbanian::LetterKiw),
             _ => Err(()),
         }
     }
@@ -380,66 +380,66 @@ impl Iterator for CaucasianAlbanian {
 }
 
 impl CaucasianAlbanian {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        CaucasianAlbanian::CaucasianAlbanianLetterAlt
+        CaucasianAlbanian::LetterAlt
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            CaucasianAlbanian::CaucasianAlbanianLetterAlt => "caucasian albanian letter alt",
-            CaucasianAlbanian::CaucasianAlbanianLetterBet => "caucasian albanian letter bet",
-            CaucasianAlbanian::CaucasianAlbanianLetterGim => "caucasian albanian letter gim",
-            CaucasianAlbanian::CaucasianAlbanianLetterDat => "caucasian albanian letter dat",
-            CaucasianAlbanian::CaucasianAlbanianLetterEb => "caucasian albanian letter eb",
-            CaucasianAlbanian::CaucasianAlbanianLetterZarl => "caucasian albanian letter zarl",
-            CaucasianAlbanian::CaucasianAlbanianLetterEyn => "caucasian albanian letter eyn",
-            CaucasianAlbanian::CaucasianAlbanianLetterZhil => "caucasian albanian letter zhil",
-            CaucasianAlbanian::CaucasianAlbanianLetterTas => "caucasian albanian letter tas",
-            CaucasianAlbanian::CaucasianAlbanianLetterCha => "caucasian albanian letter cha",
-            CaucasianAlbanian::CaucasianAlbanianLetterYowd => "caucasian albanian letter yowd",
-            CaucasianAlbanian::CaucasianAlbanianLetterZha => "caucasian albanian letter zha",
-            CaucasianAlbanian::CaucasianAlbanianLetterIrb => "caucasian albanian letter irb",
-            CaucasianAlbanian::CaucasianAlbanianLetterSha => "caucasian albanian letter sha",
-            CaucasianAlbanian::CaucasianAlbanianLetterLan => "caucasian albanian letter lan",
-            CaucasianAlbanian::CaucasianAlbanianLetterInya => "caucasian albanian letter inya",
-            CaucasianAlbanian::CaucasianAlbanianLetterXeyn => "caucasian albanian letter xeyn",
-            CaucasianAlbanian::CaucasianAlbanianLetterDyan => "caucasian albanian letter dyan",
-            CaucasianAlbanian::CaucasianAlbanianLetterCar => "caucasian albanian letter car",
-            CaucasianAlbanian::CaucasianAlbanianLetterJhox => "caucasian albanian letter jhox",
-            CaucasianAlbanian::CaucasianAlbanianLetterKar => "caucasian albanian letter kar",
-            CaucasianAlbanian::CaucasianAlbanianLetterLyit => "caucasian albanian letter lyit",
-            CaucasianAlbanian::CaucasianAlbanianLetterHeyt => "caucasian albanian letter heyt",
-            CaucasianAlbanian::CaucasianAlbanianLetterQay => "caucasian albanian letter qay",
-            CaucasianAlbanian::CaucasianAlbanianLetterAor => "caucasian albanian letter aor",
-            CaucasianAlbanian::CaucasianAlbanianLetterChoy => "caucasian albanian letter choy",
-            CaucasianAlbanian::CaucasianAlbanianLetterChi => "caucasian albanian letter chi",
-            CaucasianAlbanian::CaucasianAlbanianLetterCyay => "caucasian albanian letter cyay",
-            CaucasianAlbanian::CaucasianAlbanianLetterMaq => "caucasian albanian letter maq",
-            CaucasianAlbanian::CaucasianAlbanianLetterQar => "caucasian albanian letter qar",
-            CaucasianAlbanian::CaucasianAlbanianLetterNowc => "caucasian albanian letter nowc",
-            CaucasianAlbanian::CaucasianAlbanianLetterDzyay => "caucasian albanian letter dzyay",
-            CaucasianAlbanian::CaucasianAlbanianLetterShak => "caucasian albanian letter shak",
-            CaucasianAlbanian::CaucasianAlbanianLetterJayn => "caucasian albanian letter jayn",
-            CaucasianAlbanian::CaucasianAlbanianLetterOn => "caucasian albanian letter on",
-            CaucasianAlbanian::CaucasianAlbanianLetterTyay => "caucasian albanian letter tyay",
-            CaucasianAlbanian::CaucasianAlbanianLetterFam => "caucasian albanian letter fam",
-            CaucasianAlbanian::CaucasianAlbanianLetterDzay => "caucasian albanian letter dzay",
-            CaucasianAlbanian::CaucasianAlbanianLetterChat => "caucasian albanian letter chat",
-            CaucasianAlbanian::CaucasianAlbanianLetterPen => "caucasian albanian letter pen",
-            CaucasianAlbanian::CaucasianAlbanianLetterGheys => "caucasian albanian letter gheys",
-            CaucasianAlbanian::CaucasianAlbanianLetterRat => "caucasian albanian letter rat",
-            CaucasianAlbanian::CaucasianAlbanianLetterSeyk => "caucasian albanian letter seyk",
-            CaucasianAlbanian::CaucasianAlbanianLetterVeyz => "caucasian albanian letter veyz",
-            CaucasianAlbanian::CaucasianAlbanianLetterTiwr => "caucasian albanian letter tiwr",
-            CaucasianAlbanian::CaucasianAlbanianLetterShoy => "caucasian albanian letter shoy",
-            CaucasianAlbanian::CaucasianAlbanianLetterIwn => "caucasian albanian letter iwn",
-            CaucasianAlbanian::CaucasianAlbanianLetterCyaw => "caucasian albanian letter cyaw",
-            CaucasianAlbanian::CaucasianAlbanianLetterCayn => "caucasian albanian letter cayn",
-            CaucasianAlbanian::CaucasianAlbanianLetterYayd => "caucasian albanian letter yayd",
-            CaucasianAlbanian::CaucasianAlbanianLetterPiwr => "caucasian albanian letter piwr",
-            CaucasianAlbanian::CaucasianAlbanianLetterKiw => "caucasian albanian letter kiw",
+            CaucasianAlbanian::LetterAlt => "caucasian albanian letter alt",
+            CaucasianAlbanian::LetterBet => "caucasian albanian letter bet",
+            CaucasianAlbanian::LetterGim => "caucasian albanian letter gim",
+            CaucasianAlbanian::LetterDat => "caucasian albanian letter dat",
+            CaucasianAlbanian::LetterEb => "caucasian albanian letter eb",
+            CaucasianAlbanian::LetterZarl => "caucasian albanian letter zarl",
+            CaucasianAlbanian::LetterEyn => "caucasian albanian letter eyn",
+            CaucasianAlbanian::LetterZhil => "caucasian albanian letter zhil",
+            CaucasianAlbanian::LetterTas => "caucasian albanian letter tas",
+            CaucasianAlbanian::LetterCha => "caucasian albanian letter cha",
+            CaucasianAlbanian::LetterYowd => "caucasian albanian letter yowd",
+            CaucasianAlbanian::LetterZha => "caucasian albanian letter zha",
+            CaucasianAlbanian::LetterIrb => "caucasian albanian letter irb",
+            CaucasianAlbanian::LetterSha => "caucasian albanian letter sha",
+            CaucasianAlbanian::LetterLan => "caucasian albanian letter lan",
+            CaucasianAlbanian::LetterInya => "caucasian albanian letter inya",
+            CaucasianAlbanian::LetterXeyn => "caucasian albanian letter xeyn",
+            CaucasianAlbanian::LetterDyan => "caucasian albanian letter dyan",
+            CaucasianAlbanian::LetterCar => "caucasian albanian letter car",
+            CaucasianAlbanian::LetterJhox => "caucasian albanian letter jhox",
+            CaucasianAlbanian::LetterKar => "caucasian albanian letter kar",
+            CaucasianAlbanian::LetterLyit => "caucasian albanian letter lyit",
+            CaucasianAlbanian::LetterHeyt => "caucasian albanian letter heyt",
+            CaucasianAlbanian::LetterQay => "caucasian albanian letter qay",
+            CaucasianAlbanian::LetterAor => "caucasian albanian letter aor",
+            CaucasianAlbanian::LetterChoy => "caucasian albanian letter choy",
+            CaucasianAlbanian::LetterChi => "caucasian albanian letter chi",
+            CaucasianAlbanian::LetterCyay => "caucasian albanian letter cyay",
+            CaucasianAlbanian::LetterMaq => "caucasian albanian letter maq",
+            CaucasianAlbanian::LetterQar => "caucasian albanian letter qar",
+            CaucasianAlbanian::LetterNowc => "caucasian albanian letter nowc",
+            CaucasianAlbanian::LetterDzyay => "caucasian albanian letter dzyay",
+            CaucasianAlbanian::LetterShak => "caucasian albanian letter shak",
+            CaucasianAlbanian::LetterJayn => "caucasian albanian letter jayn",
+            CaucasianAlbanian::LetterOn => "caucasian albanian letter on",
+            CaucasianAlbanian::LetterTyay => "caucasian albanian letter tyay",
+            CaucasianAlbanian::LetterFam => "caucasian albanian letter fam",
+            CaucasianAlbanian::LetterDzay => "caucasian albanian letter dzay",
+            CaucasianAlbanian::LetterChat => "caucasian albanian letter chat",
+            CaucasianAlbanian::LetterPen => "caucasian albanian letter pen",
+            CaucasianAlbanian::LetterGheys => "caucasian albanian letter gheys",
+            CaucasianAlbanian::LetterRat => "caucasian albanian letter rat",
+            CaucasianAlbanian::LetterSeyk => "caucasian albanian letter seyk",
+            CaucasianAlbanian::LetterVeyz => "caucasian albanian letter veyz",
+            CaucasianAlbanian::LetterTiwr => "caucasian albanian letter tiwr",
+            CaucasianAlbanian::LetterShoy => "caucasian albanian letter shoy",
+            CaucasianAlbanian::LetterIwn => "caucasian albanian letter iwn",
+            CaucasianAlbanian::LetterCyaw => "caucasian albanian letter cyaw",
+            CaucasianAlbanian::LetterCayn => "caucasian albanian letter cayn",
+            CaucasianAlbanian::LetterYayd => "caucasian albanian letter yayd",
+            CaucasianAlbanian::LetterPiwr => "caucasian albanian letter piwr",
+            CaucasianAlbanian::LetterKiw => "caucasian albanian letter kiw",
         }
     }
 }

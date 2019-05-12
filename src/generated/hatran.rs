@@ -4,55 +4,55 @@
 /// 𐣰 𐣱 𐣲 𐣴 𐣵 𐣻 𐣼 𐣽 𐣾
 pub mod constants {
     /// \u{108e0}: '𐣠'
-    pub const HATRAN_LETTER_ALEPH: char = '𐣠';
+    pub const LETTER_ALEPH: char = '𐣠';
     /// \u{108e1}: '𐣡'
-    pub const HATRAN_LETTER_BETH: char = '𐣡';
+    pub const LETTER_BETH: char = '𐣡';
     /// \u{108e2}: '𐣢'
-    pub const HATRAN_LETTER_GIMEL: char = '𐣢';
+    pub const LETTER_GIMEL: char = '𐣢';
     /// \u{108e3}: '𐣣'
-    pub const HATRAN_LETTER_DALETH_DASH_RESH: char = '𐣣';
+    pub const LETTER_DALETH_DASH_RESH: char = '𐣣';
     /// \u{108e4}: '𐣤'
-    pub const HATRAN_LETTER_HE: char = '𐣤';
+    pub const LETTER_HE: char = '𐣤';
     /// \u{108e5}: '𐣥'
-    pub const HATRAN_LETTER_WAW: char = '𐣥';
+    pub const LETTER_WAW: char = '𐣥';
     /// \u{108e6}: '𐣦'
-    pub const HATRAN_LETTER_ZAYN: char = '𐣦';
+    pub const LETTER_ZAYN: char = '𐣦';
     /// \u{108e7}: '𐣧'
-    pub const HATRAN_LETTER_HETH: char = '𐣧';
+    pub const LETTER_HETH: char = '𐣧';
     /// \u{108e8}: '𐣨'
-    pub const HATRAN_LETTER_TETH: char = '𐣨';
+    pub const LETTER_TETH: char = '𐣨';
     /// \u{108e9}: '𐣩'
-    pub const HATRAN_LETTER_YODH: char = '𐣩';
+    pub const LETTER_YODH: char = '𐣩';
     /// \u{108ea}: '𐣪'
-    pub const HATRAN_LETTER_KAPH: char = '𐣪';
+    pub const LETTER_KAPH: char = '𐣪';
     /// \u{108eb}: '𐣫'
-    pub const HATRAN_LETTER_LAMEDH: char = '𐣫';
+    pub const LETTER_LAMEDH: char = '𐣫';
     /// \u{108ec}: '𐣬'
-    pub const HATRAN_LETTER_MEM: char = '𐣬';
+    pub const LETTER_MEM: char = '𐣬';
     /// \u{108ed}: '𐣭'
-    pub const HATRAN_LETTER_NUN: char = '𐣭';
+    pub const LETTER_NUN: char = '𐣭';
     /// \u{108ee}: '𐣮'
-    pub const HATRAN_LETTER_SAMEKH: char = '𐣮';
+    pub const LETTER_SAMEKH: char = '𐣮';
     /// \u{108ef}: '𐣯'
-    pub const HATRAN_LETTER_AYN: char = '𐣯';
+    pub const LETTER_AYN: char = '𐣯';
     /// \u{108f0}: '𐣰'
-    pub const HATRAN_LETTER_PE: char = '𐣰';
+    pub const LETTER_PE: char = '𐣰';
     /// \u{108f1}: '𐣱'
-    pub const HATRAN_LETTER_SADHE: char = '𐣱';
+    pub const LETTER_SADHE: char = '𐣱';
     /// \u{108f2}: '𐣲'
-    pub const HATRAN_LETTER_QOPH: char = '𐣲';
+    pub const LETTER_QOPH: char = '𐣲';
     /// \u{108f4}: '𐣴'
-    pub const HATRAN_LETTER_SHIN: char = '𐣴';
+    pub const LETTER_SHIN: char = '𐣴';
     /// \u{108f5}: '𐣵'
-    pub const HATRAN_LETTER_TAW: char = '𐣵';
+    pub const LETTER_TAW: char = '𐣵';
     /// \u{108fb}: '𐣻'
-    pub const HATRAN_NUMBER_ONE: char = '𐣻';
+    pub const NUMBER_ONE: char = '𐣻';
     /// \u{108fc}: '𐣼'
-    pub const HATRAN_NUMBER_FIVE: char = '𐣼';
+    pub const NUMBER_FIVE: char = '𐣼';
     /// \u{108fd}: '𐣽'
-    pub const HATRAN_NUMBER_TEN: char = '𐣽';
+    pub const NUMBER_TEN: char = '𐣽';
     /// \u{108fe}: '𐣾'
-    pub const HATRAN_NUMBER_TWENTY: char = '𐣾';
+    pub const NUMBER_TWENTY: char = '𐣾';
 }
 
 /// \u{108e0} → \u{108ff}\
@@ -62,86 +62,86 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Hatran {
     /// \u{108e0}: '𐣠'
-    HatranLetterAleph,
+    LetterAleph,
     /// \u{108e1}: '𐣡'
-    HatranLetterBeth,
+    LetterBeth,
     /// \u{108e2}: '𐣢'
-    HatranLetterGimel,
+    LetterGimel,
     /// \u{108e3}: '𐣣'
-    HatranLetterDalethDashResh,
+    LetterDalethDashResh,
     /// \u{108e4}: '𐣤'
-    HatranLetterHe,
+    LetterHe,
     /// \u{108e5}: '𐣥'
-    HatranLetterWaw,
+    LetterWaw,
     /// \u{108e6}: '𐣦'
-    HatranLetterZayn,
+    LetterZayn,
     /// \u{108e7}: '𐣧'
-    HatranLetterHeth,
+    LetterHeth,
     /// \u{108e8}: '𐣨'
-    HatranLetterTeth,
+    LetterTeth,
     /// \u{108e9}: '𐣩'
-    HatranLetterYodh,
+    LetterYodh,
     /// \u{108ea}: '𐣪'
-    HatranLetterKaph,
+    LetterKaph,
     /// \u{108eb}: '𐣫'
-    HatranLetterLamedh,
+    LetterLamedh,
     /// \u{108ec}: '𐣬'
-    HatranLetterMem,
+    LetterMem,
     /// \u{108ed}: '𐣭'
-    HatranLetterNun,
+    LetterNun,
     /// \u{108ee}: '𐣮'
-    HatranLetterSamekh,
+    LetterSamekh,
     /// \u{108ef}: '𐣯'
-    HatranLetterAyn,
+    LetterAyn,
     /// \u{108f0}: '𐣰'
-    HatranLetterPe,
+    LetterPe,
     /// \u{108f1}: '𐣱'
-    HatranLetterSadhe,
+    LetterSadhe,
     /// \u{108f2}: '𐣲'
-    HatranLetterQoph,
+    LetterQoph,
     /// \u{108f4}: '𐣴'
-    HatranLetterShin,
+    LetterShin,
     /// \u{108f5}: '𐣵'
-    HatranLetterTaw,
+    LetterTaw,
     /// \u{108fb}: '𐣻'
-    HatranNumberOne,
+    NumberOne,
     /// \u{108fc}: '𐣼'
-    HatranNumberFive,
+    NumberFive,
     /// \u{108fd}: '𐣽'
-    HatranNumberTen,
+    NumberTen,
     /// \u{108fe}: '𐣾'
-    HatranNumberTwenty,
+    NumberTwenty,
 }
 
 impl Into<char> for Hatran {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Hatran::HatranLetterAleph => HATRAN_LETTER_ALEPH,
-            Hatran::HatranLetterBeth => HATRAN_LETTER_BETH,
-            Hatran::HatranLetterGimel => HATRAN_LETTER_GIMEL,
-            Hatran::HatranLetterDalethDashResh => HATRAN_LETTER_DALETH_DASH_RESH,
-            Hatran::HatranLetterHe => HATRAN_LETTER_HE,
-            Hatran::HatranLetterWaw => HATRAN_LETTER_WAW,
-            Hatran::HatranLetterZayn => HATRAN_LETTER_ZAYN,
-            Hatran::HatranLetterHeth => HATRAN_LETTER_HETH,
-            Hatran::HatranLetterTeth => HATRAN_LETTER_TETH,
-            Hatran::HatranLetterYodh => HATRAN_LETTER_YODH,
-            Hatran::HatranLetterKaph => HATRAN_LETTER_KAPH,
-            Hatran::HatranLetterLamedh => HATRAN_LETTER_LAMEDH,
-            Hatran::HatranLetterMem => HATRAN_LETTER_MEM,
-            Hatran::HatranLetterNun => HATRAN_LETTER_NUN,
-            Hatran::HatranLetterSamekh => HATRAN_LETTER_SAMEKH,
-            Hatran::HatranLetterAyn => HATRAN_LETTER_AYN,
-            Hatran::HatranLetterPe => HATRAN_LETTER_PE,
-            Hatran::HatranLetterSadhe => HATRAN_LETTER_SADHE,
-            Hatran::HatranLetterQoph => HATRAN_LETTER_QOPH,
-            Hatran::HatranLetterShin => HATRAN_LETTER_SHIN,
-            Hatran::HatranLetterTaw => HATRAN_LETTER_TAW,
-            Hatran::HatranNumberOne => HATRAN_NUMBER_ONE,
-            Hatran::HatranNumberFive => HATRAN_NUMBER_FIVE,
-            Hatran::HatranNumberTen => HATRAN_NUMBER_TEN,
-            Hatran::HatranNumberTwenty => HATRAN_NUMBER_TWENTY,
+            Hatran::LetterAleph => LETTER_ALEPH,
+            Hatran::LetterBeth => LETTER_BETH,
+            Hatran::LetterGimel => LETTER_GIMEL,
+            Hatran::LetterDalethDashResh => LETTER_DALETH_DASH_RESH,
+            Hatran::LetterHe => LETTER_HE,
+            Hatran::LetterWaw => LETTER_WAW,
+            Hatran::LetterZayn => LETTER_ZAYN,
+            Hatran::LetterHeth => LETTER_HETH,
+            Hatran::LetterTeth => LETTER_TETH,
+            Hatran::LetterYodh => LETTER_YODH,
+            Hatran::LetterKaph => LETTER_KAPH,
+            Hatran::LetterLamedh => LETTER_LAMEDH,
+            Hatran::LetterMem => LETTER_MEM,
+            Hatran::LetterNun => LETTER_NUN,
+            Hatran::LetterSamekh => LETTER_SAMEKH,
+            Hatran::LetterAyn => LETTER_AYN,
+            Hatran::LetterPe => LETTER_PE,
+            Hatran::LetterSadhe => LETTER_SADHE,
+            Hatran::LetterQoph => LETTER_QOPH,
+            Hatran::LetterShin => LETTER_SHIN,
+            Hatran::LetterTaw => LETTER_TAW,
+            Hatran::NumberOne => NUMBER_ONE,
+            Hatran::NumberFive => NUMBER_FIVE,
+            Hatran::NumberTen => NUMBER_TEN,
+            Hatran::NumberTwenty => NUMBER_TWENTY,
         }
     }
 }
@@ -151,31 +151,31 @@ impl std::convert::TryFrom<char> for Hatran {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            HATRAN_LETTER_ALEPH => Ok(Hatran::HatranLetterAleph),
-            HATRAN_LETTER_BETH => Ok(Hatran::HatranLetterBeth),
-            HATRAN_LETTER_GIMEL => Ok(Hatran::HatranLetterGimel),
-            HATRAN_LETTER_DALETH_DASH_RESH => Ok(Hatran::HatranLetterDalethDashResh),
-            HATRAN_LETTER_HE => Ok(Hatran::HatranLetterHe),
-            HATRAN_LETTER_WAW => Ok(Hatran::HatranLetterWaw),
-            HATRAN_LETTER_ZAYN => Ok(Hatran::HatranLetterZayn),
-            HATRAN_LETTER_HETH => Ok(Hatran::HatranLetterHeth),
-            HATRAN_LETTER_TETH => Ok(Hatran::HatranLetterTeth),
-            HATRAN_LETTER_YODH => Ok(Hatran::HatranLetterYodh),
-            HATRAN_LETTER_KAPH => Ok(Hatran::HatranLetterKaph),
-            HATRAN_LETTER_LAMEDH => Ok(Hatran::HatranLetterLamedh),
-            HATRAN_LETTER_MEM => Ok(Hatran::HatranLetterMem),
-            HATRAN_LETTER_NUN => Ok(Hatran::HatranLetterNun),
-            HATRAN_LETTER_SAMEKH => Ok(Hatran::HatranLetterSamekh),
-            HATRAN_LETTER_AYN => Ok(Hatran::HatranLetterAyn),
-            HATRAN_LETTER_PE => Ok(Hatran::HatranLetterPe),
-            HATRAN_LETTER_SADHE => Ok(Hatran::HatranLetterSadhe),
-            HATRAN_LETTER_QOPH => Ok(Hatran::HatranLetterQoph),
-            HATRAN_LETTER_SHIN => Ok(Hatran::HatranLetterShin),
-            HATRAN_LETTER_TAW => Ok(Hatran::HatranLetterTaw),
-            HATRAN_NUMBER_ONE => Ok(Hatran::HatranNumberOne),
-            HATRAN_NUMBER_FIVE => Ok(Hatran::HatranNumberFive),
-            HATRAN_NUMBER_TEN => Ok(Hatran::HatranNumberTen),
-            HATRAN_NUMBER_TWENTY => Ok(Hatran::HatranNumberTwenty),
+            LETTER_ALEPH => Ok(Hatran::LetterAleph),
+            LETTER_BETH => Ok(Hatran::LetterBeth),
+            LETTER_GIMEL => Ok(Hatran::LetterGimel),
+            LETTER_DALETH_DASH_RESH => Ok(Hatran::LetterDalethDashResh),
+            LETTER_HE => Ok(Hatran::LetterHe),
+            LETTER_WAW => Ok(Hatran::LetterWaw),
+            LETTER_ZAYN => Ok(Hatran::LetterZayn),
+            LETTER_HETH => Ok(Hatran::LetterHeth),
+            LETTER_TETH => Ok(Hatran::LetterTeth),
+            LETTER_YODH => Ok(Hatran::LetterYodh),
+            LETTER_KAPH => Ok(Hatran::LetterKaph),
+            LETTER_LAMEDH => Ok(Hatran::LetterLamedh),
+            LETTER_MEM => Ok(Hatran::LetterMem),
+            LETTER_NUN => Ok(Hatran::LetterNun),
+            LETTER_SAMEKH => Ok(Hatran::LetterSamekh),
+            LETTER_AYN => Ok(Hatran::LetterAyn),
+            LETTER_PE => Ok(Hatran::LetterPe),
+            LETTER_SADHE => Ok(Hatran::LetterSadhe),
+            LETTER_QOPH => Ok(Hatran::LetterQoph),
+            LETTER_SHIN => Ok(Hatran::LetterShin),
+            LETTER_TAW => Ok(Hatran::LetterTaw),
+            NUMBER_ONE => Ok(Hatran::NumberOne),
+            NUMBER_FIVE => Ok(Hatran::NumberFive),
+            NUMBER_TEN => Ok(Hatran::NumberTen),
+            NUMBER_TWENTY => Ok(Hatran::NumberTwenty),
             _ => Err(()),
         }
     }
@@ -214,39 +214,39 @@ impl Iterator for Hatran {
 }
 
 impl Hatran {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Hatran::HatranLetterAleph
+        Hatran::LetterAleph
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Hatran::HatranLetterAleph => "hatran letter aleph",
-            Hatran::HatranLetterBeth => "hatran letter beth",
-            Hatran::HatranLetterGimel => "hatran letter gimel",
-            Hatran::HatranLetterDalethDashResh => "hatran letter daleth-resh",
-            Hatran::HatranLetterHe => "hatran letter he",
-            Hatran::HatranLetterWaw => "hatran letter waw",
-            Hatran::HatranLetterZayn => "hatran letter zayn",
-            Hatran::HatranLetterHeth => "hatran letter heth",
-            Hatran::HatranLetterTeth => "hatran letter teth",
-            Hatran::HatranLetterYodh => "hatran letter yodh",
-            Hatran::HatranLetterKaph => "hatran letter kaph",
-            Hatran::HatranLetterLamedh => "hatran letter lamedh",
-            Hatran::HatranLetterMem => "hatran letter mem",
-            Hatran::HatranLetterNun => "hatran letter nun",
-            Hatran::HatranLetterSamekh => "hatran letter samekh",
-            Hatran::HatranLetterAyn => "hatran letter ayn",
-            Hatran::HatranLetterPe => "hatran letter pe",
-            Hatran::HatranLetterSadhe => "hatran letter sadhe",
-            Hatran::HatranLetterQoph => "hatran letter qoph",
-            Hatran::HatranLetterShin => "hatran letter shin",
-            Hatran::HatranLetterTaw => "hatran letter taw",
-            Hatran::HatranNumberOne => "hatran number one",
-            Hatran::HatranNumberFive => "hatran number five",
-            Hatran::HatranNumberTen => "hatran number ten",
-            Hatran::HatranNumberTwenty => "hatran number twenty",
+            Hatran::LetterAleph => "hatran letter aleph",
+            Hatran::LetterBeth => "hatran letter beth",
+            Hatran::LetterGimel => "hatran letter gimel",
+            Hatran::LetterDalethDashResh => "hatran letter daleth-resh",
+            Hatran::LetterHe => "hatran letter he",
+            Hatran::LetterWaw => "hatran letter waw",
+            Hatran::LetterZayn => "hatran letter zayn",
+            Hatran::LetterHeth => "hatran letter heth",
+            Hatran::LetterTeth => "hatran letter teth",
+            Hatran::LetterYodh => "hatran letter yodh",
+            Hatran::LetterKaph => "hatran letter kaph",
+            Hatran::LetterLamedh => "hatran letter lamedh",
+            Hatran::LetterMem => "hatran letter mem",
+            Hatran::LetterNun => "hatran letter nun",
+            Hatran::LetterSamekh => "hatran letter samekh",
+            Hatran::LetterAyn => "hatran letter ayn",
+            Hatran::LetterPe => "hatran letter pe",
+            Hatran::LetterSadhe => "hatran letter sadhe",
+            Hatran::LetterQoph => "hatran letter qoph",
+            Hatran::LetterShin => "hatran letter shin",
+            Hatran::LetterTaw => "hatran letter taw",
+            Hatran::NumberOne => "hatran number one",
+            Hatran::NumberFive => "hatran number five",
+            Hatran::NumberTen => "hatran number ten",
+            Hatran::NumberTwenty => "hatran number twenty",
         }
     }
 }

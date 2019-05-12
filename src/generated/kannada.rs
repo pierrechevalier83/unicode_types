@@ -8,183 +8,183 @@
 /// ೩ ೪ ೫ ೬ ೭ ೮ ೯ ೱ ೲ
 pub mod constants {
     /// \u{c80}: 'ಀ'
-    pub const KANNADA_SIGN_SPACING_CANDRABINDU: char = 'ಀ';
+    pub const SIGN_SPACING_CANDRABINDU: char = 'ಀ';
     /// \u{c81}: 'ಁ'
-    pub const KANNADA_SIGN_CANDRABINDU: char = 'ಁ';
+    pub const SIGN_CANDRABINDU: char = 'ಁ';
     /// \u{c82}: 'ಂ'
-    pub const KANNADA_SIGN_ANUSVARA: char = 'ಂ';
+    pub const SIGN_ANUSVARA: char = 'ಂ';
     /// \u{c83}: 'ಃ'
-    pub const KANNADA_SIGN_VISARGA: char = 'ಃ';
+    pub const SIGN_VISARGA: char = 'ಃ';
     /// \u{c84}: '಄'
-    pub const KANNADA_SIGN_SIDDHAM: char = '಄';
+    pub const SIGN_SIDDHAM: char = '಄';
     /// \u{c85}: 'ಅ'
-    pub const KANNADA_LETTER_A: char = 'ಅ';
+    pub const LETTER_A: char = 'ಅ';
     /// \u{c86}: 'ಆ'
-    pub const KANNADA_LETTER_AA: char = 'ಆ';
+    pub const LETTER_AA: char = 'ಆ';
     /// \u{c87}: 'ಇ'
-    pub const KANNADA_LETTER_I: char = 'ಇ';
+    pub const LETTER_I: char = 'ಇ';
     /// \u{c88}: 'ಈ'
-    pub const KANNADA_LETTER_II: char = 'ಈ';
+    pub const LETTER_II: char = 'ಈ';
     /// \u{c89}: 'ಉ'
-    pub const KANNADA_LETTER_U: char = 'ಉ';
+    pub const LETTER_U: char = 'ಉ';
     /// \u{c8a}: 'ಊ'
-    pub const KANNADA_LETTER_UU: char = 'ಊ';
+    pub const LETTER_UU: char = 'ಊ';
     /// \u{c8b}: 'ಋ'
-    pub const KANNADA_LETTER_VOCALIC_R: char = 'ಋ';
+    pub const LETTER_VOCALIC_R: char = 'ಋ';
     /// \u{c8c}: 'ಌ'
-    pub const KANNADA_LETTER_VOCALIC_L: char = 'ಌ';
+    pub const LETTER_VOCALIC_L: char = 'ಌ';
     /// \u{c8e}: 'ಎ'
-    pub const KANNADA_LETTER_E: char = 'ಎ';
+    pub const LETTER_E: char = 'ಎ';
     /// \u{c8f}: 'ಏ'
-    pub const KANNADA_LETTER_EE: char = 'ಏ';
+    pub const LETTER_EE: char = 'ಏ';
     /// \u{c90}: 'ಐ'
-    pub const KANNADA_LETTER_AI: char = 'ಐ';
+    pub const LETTER_AI: char = 'ಐ';
     /// \u{c92}: 'ಒ'
-    pub const KANNADA_LETTER_O: char = 'ಒ';
+    pub const LETTER_O: char = 'ಒ';
     /// \u{c93}: 'ಓ'
-    pub const KANNADA_LETTER_OO: char = 'ಓ';
+    pub const LETTER_OO: char = 'ಓ';
     /// \u{c94}: 'ಔ'
-    pub const KANNADA_LETTER_AU: char = 'ಔ';
+    pub const LETTER_AU: char = 'ಔ';
     /// \u{c95}: 'ಕ'
-    pub const KANNADA_LETTER_KA: char = 'ಕ';
+    pub const LETTER_KA: char = 'ಕ';
     /// \u{c96}: 'ಖ'
-    pub const KANNADA_LETTER_KHA: char = 'ಖ';
+    pub const LETTER_KHA: char = 'ಖ';
     /// \u{c97}: 'ಗ'
-    pub const KANNADA_LETTER_GA: char = 'ಗ';
+    pub const LETTER_GA: char = 'ಗ';
     /// \u{c98}: 'ಘ'
-    pub const KANNADA_LETTER_GHA: char = 'ಘ';
+    pub const LETTER_GHA: char = 'ಘ';
     /// \u{c99}: 'ಙ'
-    pub const KANNADA_LETTER_NGA: char = 'ಙ';
+    pub const LETTER_NGA: char = 'ಙ';
     /// \u{c9a}: 'ಚ'
-    pub const KANNADA_LETTER_CA: char = 'ಚ';
+    pub const LETTER_CA: char = 'ಚ';
     /// \u{c9b}: 'ಛ'
-    pub const KANNADA_LETTER_CHA: char = 'ಛ';
+    pub const LETTER_CHA: char = 'ಛ';
     /// \u{c9c}: 'ಜ'
-    pub const KANNADA_LETTER_JA: char = 'ಜ';
+    pub const LETTER_JA: char = 'ಜ';
     /// \u{c9d}: 'ಝ'
-    pub const KANNADA_LETTER_JHA: char = 'ಝ';
+    pub const LETTER_JHA: char = 'ಝ';
     /// \u{c9e}: 'ಞ'
-    pub const KANNADA_LETTER_NYA: char = 'ಞ';
+    pub const LETTER_NYA: char = 'ಞ';
     /// \u{c9f}: 'ಟ'
-    pub const KANNADA_LETTER_TTA: char = 'ಟ';
+    pub const LETTER_TTA: char = 'ಟ';
     /// \u{ca0}: 'ಠ'
-    pub const KANNADA_LETTER_TTHA: char = 'ಠ';
+    pub const LETTER_TTHA: char = 'ಠ';
     /// \u{ca1}: 'ಡ'
-    pub const KANNADA_LETTER_DDA: char = 'ಡ';
+    pub const LETTER_DDA: char = 'ಡ';
     /// \u{ca2}: 'ಢ'
-    pub const KANNADA_LETTER_DDHA: char = 'ಢ';
+    pub const LETTER_DDHA: char = 'ಢ';
     /// \u{ca3}: 'ಣ'
-    pub const KANNADA_LETTER_NNA: char = 'ಣ';
+    pub const LETTER_NNA: char = 'ಣ';
     /// \u{ca4}: 'ತ'
-    pub const KANNADA_LETTER_TA: char = 'ತ';
+    pub const LETTER_TA: char = 'ತ';
     /// \u{ca5}: 'ಥ'
-    pub const KANNADA_LETTER_THA: char = 'ಥ';
+    pub const LETTER_THA: char = 'ಥ';
     /// \u{ca6}: 'ದ'
-    pub const KANNADA_LETTER_DA: char = 'ದ';
+    pub const LETTER_DA: char = 'ದ';
     /// \u{ca7}: 'ಧ'
-    pub const KANNADA_LETTER_DHA: char = 'ಧ';
+    pub const LETTER_DHA: char = 'ಧ';
     /// \u{ca8}: 'ನ'
-    pub const KANNADA_LETTER_NA: char = 'ನ';
+    pub const LETTER_NA: char = 'ನ';
     /// \u{caa}: 'ಪ'
-    pub const KANNADA_LETTER_PA: char = 'ಪ';
+    pub const LETTER_PA: char = 'ಪ';
     /// \u{cab}: 'ಫ'
-    pub const KANNADA_LETTER_PHA: char = 'ಫ';
+    pub const LETTER_PHA: char = 'ಫ';
     /// \u{cac}: 'ಬ'
-    pub const KANNADA_LETTER_BA: char = 'ಬ';
+    pub const LETTER_BA: char = 'ಬ';
     /// \u{cad}: 'ಭ'
-    pub const KANNADA_LETTER_BHA: char = 'ಭ';
+    pub const LETTER_BHA: char = 'ಭ';
     /// \u{cae}: 'ಮ'
-    pub const KANNADA_LETTER_MA: char = 'ಮ';
+    pub const LETTER_MA: char = 'ಮ';
     /// \u{caf}: 'ಯ'
-    pub const KANNADA_LETTER_YA: char = 'ಯ';
+    pub const LETTER_YA: char = 'ಯ';
     /// \u{cb0}: 'ರ'
-    pub const KANNADA_LETTER_RA: char = 'ರ';
+    pub const LETTER_RA: char = 'ರ';
     /// \u{cb1}: 'ಱ'
-    pub const KANNADA_LETTER_RRA: char = 'ಱ';
+    pub const LETTER_RRA: char = 'ಱ';
     /// \u{cb2}: 'ಲ'
-    pub const KANNADA_LETTER_LA: char = 'ಲ';
+    pub const LETTER_LA: char = 'ಲ';
     /// \u{cb3}: 'ಳ'
-    pub const KANNADA_LETTER_LLA: char = 'ಳ';
+    pub const LETTER_LLA: char = 'ಳ';
     /// \u{cb5}: 'ವ'
-    pub const KANNADA_LETTER_VA: char = 'ವ';
+    pub const LETTER_VA: char = 'ವ';
     /// \u{cb6}: 'ಶ'
-    pub const KANNADA_LETTER_SHA: char = 'ಶ';
+    pub const LETTER_SHA: char = 'ಶ';
     /// \u{cb7}: 'ಷ'
-    pub const KANNADA_LETTER_SSA: char = 'ಷ';
+    pub const LETTER_SSA: char = 'ಷ';
     /// \u{cb8}: 'ಸ'
-    pub const KANNADA_LETTER_SA: char = 'ಸ';
+    pub const LETTER_SA: char = 'ಸ';
     /// \u{cb9}: 'ಹ'
-    pub const KANNADA_LETTER_HA: char = 'ಹ';
+    pub const LETTER_HA: char = 'ಹ';
     /// \u{cbc}: '಼'
-    pub const KANNADA_SIGN_NUKTA: char = '಼';
+    pub const SIGN_NUKTA: char = '಼';
     /// \u{cbd}: 'ಽ'
-    pub const KANNADA_SIGN_AVAGRAHA: char = 'ಽ';
+    pub const SIGN_AVAGRAHA: char = 'ಽ';
     /// \u{cbe}: 'ಾ'
-    pub const KANNADA_VOWEL_SIGN_AA: char = 'ಾ';
+    pub const VOWEL_SIGN_AA: char = 'ಾ';
     /// \u{cbf}: 'ಿ'
-    pub const KANNADA_VOWEL_SIGN_I: char = 'ಿ';
+    pub const VOWEL_SIGN_I: char = 'ಿ';
     /// \u{cc0}: 'ೀ'
-    pub const KANNADA_VOWEL_SIGN_II: char = 'ೀ';
+    pub const VOWEL_SIGN_II: char = 'ೀ';
     /// \u{cc1}: 'ು'
-    pub const KANNADA_VOWEL_SIGN_U: char = 'ು';
+    pub const VOWEL_SIGN_U: char = 'ು';
     /// \u{cc2}: 'ೂ'
-    pub const KANNADA_VOWEL_SIGN_UU: char = 'ೂ';
+    pub const VOWEL_SIGN_UU: char = 'ೂ';
     /// \u{cc3}: 'ೃ'
-    pub const KANNADA_VOWEL_SIGN_VOCALIC_R: char = 'ೃ';
+    pub const VOWEL_SIGN_VOCALIC_R: char = 'ೃ';
     /// \u{cc4}: 'ೄ'
-    pub const KANNADA_VOWEL_SIGN_VOCALIC_RR: char = 'ೄ';
+    pub const VOWEL_SIGN_VOCALIC_RR: char = 'ೄ';
     /// \u{cc6}: 'ೆ'
-    pub const KANNADA_VOWEL_SIGN_E: char = 'ೆ';
+    pub const VOWEL_SIGN_E: char = 'ೆ';
     /// \u{cc7}: 'ೇ'
-    pub const KANNADA_VOWEL_SIGN_EE: char = 'ೇ';
+    pub const VOWEL_SIGN_EE: char = 'ೇ';
     /// \u{cc8}: 'ೈ'
-    pub const KANNADA_VOWEL_SIGN_AI: char = 'ೈ';
+    pub const VOWEL_SIGN_AI: char = 'ೈ';
     /// \u{cca}: 'ೊ'
-    pub const KANNADA_VOWEL_SIGN_O: char = 'ೊ';
+    pub const VOWEL_SIGN_O: char = 'ೊ';
     /// \u{ccb}: 'ೋ'
-    pub const KANNADA_VOWEL_SIGN_OO: char = 'ೋ';
+    pub const VOWEL_SIGN_OO: char = 'ೋ';
     /// \u{ccc}: 'ೌ'
-    pub const KANNADA_VOWEL_SIGN_AU: char = 'ೌ';
+    pub const VOWEL_SIGN_AU: char = 'ೌ';
     /// \u{ccd}: '್'
-    pub const KANNADA_SIGN_VIRAMA: char = '್';
+    pub const SIGN_VIRAMA: char = '್';
     /// \u{cd5}: 'ೕ'
-    pub const KANNADA_LENGTH_MARK: char = 'ೕ';
+    pub const LENGTH_MARK: char = 'ೕ';
     /// \u{cd6}: 'ೖ'
-    pub const KANNADA_AI_LENGTH_MARK: char = 'ೖ';
+    pub const AI_LENGTH_MARK: char = 'ೖ';
     /// \u{cde}: 'ೞ'
-    pub const KANNADA_LETTER_FA: char = 'ೞ';
+    pub const LETTER_FA: char = 'ೞ';
     /// \u{ce0}: 'ೠ'
-    pub const KANNADA_LETTER_VOCALIC_RR: char = 'ೠ';
+    pub const LETTER_VOCALIC_RR: char = 'ೠ';
     /// \u{ce1}: 'ೡ'
-    pub const KANNADA_LETTER_VOCALIC_LL: char = 'ೡ';
+    pub const LETTER_VOCALIC_LL: char = 'ೡ';
     /// \u{ce2}: 'ೢ'
-    pub const KANNADA_VOWEL_SIGN_VOCALIC_L: char = 'ೢ';
+    pub const VOWEL_SIGN_VOCALIC_L: char = 'ೢ';
     /// \u{ce3}: 'ೣ'
-    pub const KANNADA_VOWEL_SIGN_VOCALIC_LL: char = 'ೣ';
+    pub const VOWEL_SIGN_VOCALIC_LL: char = 'ೣ';
     /// \u{ce6}: '೦'
-    pub const KANNADA_DIGIT_ZERO: char = '೦';
+    pub const DIGIT_ZERO: char = '೦';
     /// \u{ce7}: '೧'
-    pub const KANNADA_DIGIT_ONE: char = '೧';
+    pub const DIGIT_ONE: char = '೧';
     /// \u{ce8}: '೨'
-    pub const KANNADA_DIGIT_TWO: char = '೨';
+    pub const DIGIT_TWO: char = '೨';
     /// \u{ce9}: '೩'
-    pub const KANNADA_DIGIT_THREE: char = '೩';
+    pub const DIGIT_THREE: char = '೩';
     /// \u{cea}: '೪'
-    pub const KANNADA_DIGIT_FOUR: char = '೪';
+    pub const DIGIT_FOUR: char = '೪';
     /// \u{ceb}: '೫'
-    pub const KANNADA_DIGIT_FIVE: char = '೫';
+    pub const DIGIT_FIVE: char = '೫';
     /// \u{cec}: '೬'
-    pub const KANNADA_DIGIT_SIX: char = '೬';
+    pub const DIGIT_SIX: char = '೬';
     /// \u{ced}: '೭'
-    pub const KANNADA_DIGIT_SEVEN: char = '೭';
+    pub const DIGIT_SEVEN: char = '೭';
     /// \u{cee}: '೮'
-    pub const KANNADA_DIGIT_EIGHT: char = '೮';
+    pub const DIGIT_EIGHT: char = '೮';
     /// \u{cef}: '೯'
-    pub const KANNADA_DIGIT_NINE: char = '೯';
+    pub const DIGIT_NINE: char = '೯';
     /// \u{cf1}: 'ೱ'
-    pub const KANNADA_SIGN_JIHVAMULIYA: char = 'ೱ';
+    pub const SIGN_JIHVAMULIYA: char = 'ೱ';
     /// \u{cf2}: 'ೲ'
-    pub const KANNADA_SIGN_UPADHMANIYA: char = 'ೲ';
+    pub const SIGN_UPADHMANIYA: char = 'ೲ';
 }
 
 /// \u{c80} → \u{cff}\
@@ -198,278 +198,278 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Kannada {
     /// \u{c80}: 'ಀ'
-    KannadaSignSpacingCandrabindu,
+    SignSpacingCandrabindu,
     /// \u{c81}: 'ಁ'
-    KannadaSignCandrabindu,
+    SignCandrabindu,
     /// \u{c82}: 'ಂ'
-    KannadaSignAnusvara,
+    SignAnusvara,
     /// \u{c83}: 'ಃ'
-    KannadaSignVisarga,
+    SignVisarga,
     /// \u{c84}: '಄'
-    KannadaSignSiddham,
+    SignSiddham,
     /// \u{c85}: 'ಅ'
-    KannadaLetterA,
+    LetterA,
     /// \u{c86}: 'ಆ'
-    KannadaLetterAa,
+    LetterAa,
     /// \u{c87}: 'ಇ'
-    KannadaLetterI,
+    LetterI,
     /// \u{c88}: 'ಈ'
-    KannadaLetterIi,
+    LetterIi,
     /// \u{c89}: 'ಉ'
-    KannadaLetterU,
+    LetterU,
     /// \u{c8a}: 'ಊ'
-    KannadaLetterUu,
+    LetterUu,
     /// \u{c8b}: 'ಋ'
-    KannadaLetterVocalicR,
+    LetterVocalicR,
     /// \u{c8c}: 'ಌ'
-    KannadaLetterVocalicL,
+    LetterVocalicL,
     /// \u{c8e}: 'ಎ'
-    KannadaLetterE,
+    LetterE,
     /// \u{c8f}: 'ಏ'
-    KannadaLetterEe,
+    LetterEe,
     /// \u{c90}: 'ಐ'
-    KannadaLetterAi,
+    LetterAi,
     /// \u{c92}: 'ಒ'
-    KannadaLetterO,
+    LetterO,
     /// \u{c93}: 'ಓ'
-    KannadaLetterOo,
+    LetterOo,
     /// \u{c94}: 'ಔ'
-    KannadaLetterAu,
+    LetterAu,
     /// \u{c95}: 'ಕ'
-    KannadaLetterKa,
+    LetterKa,
     /// \u{c96}: 'ಖ'
-    KannadaLetterKha,
+    LetterKha,
     /// \u{c97}: 'ಗ'
-    KannadaLetterGa,
+    LetterGa,
     /// \u{c98}: 'ಘ'
-    KannadaLetterGha,
+    LetterGha,
     /// \u{c99}: 'ಙ'
-    KannadaLetterNga,
+    LetterNga,
     /// \u{c9a}: 'ಚ'
-    KannadaLetterCa,
+    LetterCa,
     /// \u{c9b}: 'ಛ'
-    KannadaLetterCha,
+    LetterCha,
     /// \u{c9c}: 'ಜ'
-    KannadaLetterJa,
+    LetterJa,
     /// \u{c9d}: 'ಝ'
-    KannadaLetterJha,
+    LetterJha,
     /// \u{c9e}: 'ಞ'
-    KannadaLetterNya,
+    LetterNya,
     /// \u{c9f}: 'ಟ'
-    KannadaLetterTta,
+    LetterTta,
     /// \u{ca0}: 'ಠ'
-    KannadaLetterTtha,
+    LetterTtha,
     /// \u{ca1}: 'ಡ'
-    KannadaLetterDda,
+    LetterDda,
     /// \u{ca2}: 'ಢ'
-    KannadaLetterDdha,
+    LetterDdha,
     /// \u{ca3}: 'ಣ'
-    KannadaLetterNna,
+    LetterNna,
     /// \u{ca4}: 'ತ'
-    KannadaLetterTa,
+    LetterTa,
     /// \u{ca5}: 'ಥ'
-    KannadaLetterTha,
+    LetterTha,
     /// \u{ca6}: 'ದ'
-    KannadaLetterDa,
+    LetterDa,
     /// \u{ca7}: 'ಧ'
-    KannadaLetterDha,
+    LetterDha,
     /// \u{ca8}: 'ನ'
-    KannadaLetterNa,
+    LetterNa,
     /// \u{caa}: 'ಪ'
-    KannadaLetterPa,
+    LetterPa,
     /// \u{cab}: 'ಫ'
-    KannadaLetterPha,
+    LetterPha,
     /// \u{cac}: 'ಬ'
-    KannadaLetterBa,
+    LetterBa,
     /// \u{cad}: 'ಭ'
-    KannadaLetterBha,
+    LetterBha,
     /// \u{cae}: 'ಮ'
-    KannadaLetterMa,
+    LetterMa,
     /// \u{caf}: 'ಯ'
-    KannadaLetterYa,
+    LetterYa,
     /// \u{cb0}: 'ರ'
-    KannadaLetterRa,
+    LetterRa,
     /// \u{cb1}: 'ಱ'
-    KannadaLetterRra,
+    LetterRra,
     /// \u{cb2}: 'ಲ'
-    KannadaLetterLa,
+    LetterLa,
     /// \u{cb3}: 'ಳ'
-    KannadaLetterLla,
+    LetterLla,
     /// \u{cb5}: 'ವ'
-    KannadaLetterVa,
+    LetterVa,
     /// \u{cb6}: 'ಶ'
-    KannadaLetterSha,
+    LetterSha,
     /// \u{cb7}: 'ಷ'
-    KannadaLetterSsa,
+    LetterSsa,
     /// \u{cb8}: 'ಸ'
-    KannadaLetterSa,
+    LetterSa,
     /// \u{cb9}: 'ಹ'
-    KannadaLetterHa,
+    LetterHa,
     /// \u{cbc}: '಼'
-    KannadaSignNukta,
+    SignNukta,
     /// \u{cbd}: 'ಽ'
-    KannadaSignAvagraha,
+    SignAvagraha,
     /// \u{cbe}: 'ಾ'
-    KannadaVowelSignAa,
+    VowelSignAa,
     /// \u{cbf}: 'ಿ'
-    KannadaVowelSignI,
+    VowelSignI,
     /// \u{cc0}: 'ೀ'
-    KannadaVowelSignIi,
+    VowelSignIi,
     /// \u{cc1}: 'ು'
-    KannadaVowelSignU,
+    VowelSignU,
     /// \u{cc2}: 'ೂ'
-    KannadaVowelSignUu,
+    VowelSignUu,
     /// \u{cc3}: 'ೃ'
-    KannadaVowelSignVocalicR,
+    VowelSignVocalicR,
     /// \u{cc4}: 'ೄ'
-    KannadaVowelSignVocalicRr,
+    VowelSignVocalicRr,
     /// \u{cc6}: 'ೆ'
-    KannadaVowelSignE,
+    VowelSignE,
     /// \u{cc7}: 'ೇ'
-    KannadaVowelSignEe,
+    VowelSignEe,
     /// \u{cc8}: 'ೈ'
-    KannadaVowelSignAi,
+    VowelSignAi,
     /// \u{cca}: 'ೊ'
-    KannadaVowelSignO,
+    VowelSignO,
     /// \u{ccb}: 'ೋ'
-    KannadaVowelSignOo,
+    VowelSignOo,
     /// \u{ccc}: 'ೌ'
-    KannadaVowelSignAu,
+    VowelSignAu,
     /// \u{ccd}: '್'
-    KannadaSignVirama,
+    SignVirama,
     /// \u{cd5}: 'ೕ'
-    KannadaLengthMark,
+    LengthMark,
     /// \u{cd6}: 'ೖ'
-    KannadaAiLengthMark,
+    AiLengthMark,
     /// \u{cde}: 'ೞ'
-    KannadaLetterFa,
+    LetterFa,
     /// \u{ce0}: 'ೠ'
-    KannadaLetterVocalicRr,
+    LetterVocalicRr,
     /// \u{ce1}: 'ೡ'
-    KannadaLetterVocalicLl,
+    LetterVocalicLl,
     /// \u{ce2}: 'ೢ'
-    KannadaVowelSignVocalicL,
+    VowelSignVocalicL,
     /// \u{ce3}: 'ೣ'
-    KannadaVowelSignVocalicLl,
+    VowelSignVocalicLl,
     /// \u{ce6}: '೦'
-    KannadaDigitZero,
+    DigitZero,
     /// \u{ce7}: '೧'
-    KannadaDigitOne,
+    DigitOne,
     /// \u{ce8}: '೨'
-    KannadaDigitTwo,
+    DigitTwo,
     /// \u{ce9}: '೩'
-    KannadaDigitThree,
+    DigitThree,
     /// \u{cea}: '೪'
-    KannadaDigitFour,
+    DigitFour,
     /// \u{ceb}: '೫'
-    KannadaDigitFive,
+    DigitFive,
     /// \u{cec}: '೬'
-    KannadaDigitSix,
+    DigitSix,
     /// \u{ced}: '೭'
-    KannadaDigitSeven,
+    DigitSeven,
     /// \u{cee}: '೮'
-    KannadaDigitEight,
+    DigitEight,
     /// \u{cef}: '೯'
-    KannadaDigitNine,
+    DigitNine,
     /// \u{cf1}: 'ೱ'
-    KannadaSignJihvamuliya,
+    SignJihvamuliya,
     /// \u{cf2}: 'ೲ'
-    KannadaSignUpadhmaniya,
+    SignUpadhmaniya,
 }
 
 impl Into<char> for Kannada {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Kannada::KannadaSignSpacingCandrabindu => KANNADA_SIGN_SPACING_CANDRABINDU,
-            Kannada::KannadaSignCandrabindu => KANNADA_SIGN_CANDRABINDU,
-            Kannada::KannadaSignAnusvara => KANNADA_SIGN_ANUSVARA,
-            Kannada::KannadaSignVisarga => KANNADA_SIGN_VISARGA,
-            Kannada::KannadaSignSiddham => KANNADA_SIGN_SIDDHAM,
-            Kannada::KannadaLetterA => KANNADA_LETTER_A,
-            Kannada::KannadaLetterAa => KANNADA_LETTER_AA,
-            Kannada::KannadaLetterI => KANNADA_LETTER_I,
-            Kannada::KannadaLetterIi => KANNADA_LETTER_II,
-            Kannada::KannadaLetterU => KANNADA_LETTER_U,
-            Kannada::KannadaLetterUu => KANNADA_LETTER_UU,
-            Kannada::KannadaLetterVocalicR => KANNADA_LETTER_VOCALIC_R,
-            Kannada::KannadaLetterVocalicL => KANNADA_LETTER_VOCALIC_L,
-            Kannada::KannadaLetterE => KANNADA_LETTER_E,
-            Kannada::KannadaLetterEe => KANNADA_LETTER_EE,
-            Kannada::KannadaLetterAi => KANNADA_LETTER_AI,
-            Kannada::KannadaLetterO => KANNADA_LETTER_O,
-            Kannada::KannadaLetterOo => KANNADA_LETTER_OO,
-            Kannada::KannadaLetterAu => KANNADA_LETTER_AU,
-            Kannada::KannadaLetterKa => KANNADA_LETTER_KA,
-            Kannada::KannadaLetterKha => KANNADA_LETTER_KHA,
-            Kannada::KannadaLetterGa => KANNADA_LETTER_GA,
-            Kannada::KannadaLetterGha => KANNADA_LETTER_GHA,
-            Kannada::KannadaLetterNga => KANNADA_LETTER_NGA,
-            Kannada::KannadaLetterCa => KANNADA_LETTER_CA,
-            Kannada::KannadaLetterCha => KANNADA_LETTER_CHA,
-            Kannada::KannadaLetterJa => KANNADA_LETTER_JA,
-            Kannada::KannadaLetterJha => KANNADA_LETTER_JHA,
-            Kannada::KannadaLetterNya => KANNADA_LETTER_NYA,
-            Kannada::KannadaLetterTta => KANNADA_LETTER_TTA,
-            Kannada::KannadaLetterTtha => KANNADA_LETTER_TTHA,
-            Kannada::KannadaLetterDda => KANNADA_LETTER_DDA,
-            Kannada::KannadaLetterDdha => KANNADA_LETTER_DDHA,
-            Kannada::KannadaLetterNna => KANNADA_LETTER_NNA,
-            Kannada::KannadaLetterTa => KANNADA_LETTER_TA,
-            Kannada::KannadaLetterTha => KANNADA_LETTER_THA,
-            Kannada::KannadaLetterDa => KANNADA_LETTER_DA,
-            Kannada::KannadaLetterDha => KANNADA_LETTER_DHA,
-            Kannada::KannadaLetterNa => KANNADA_LETTER_NA,
-            Kannada::KannadaLetterPa => KANNADA_LETTER_PA,
-            Kannada::KannadaLetterPha => KANNADA_LETTER_PHA,
-            Kannada::KannadaLetterBa => KANNADA_LETTER_BA,
-            Kannada::KannadaLetterBha => KANNADA_LETTER_BHA,
-            Kannada::KannadaLetterMa => KANNADA_LETTER_MA,
-            Kannada::KannadaLetterYa => KANNADA_LETTER_YA,
-            Kannada::KannadaLetterRa => KANNADA_LETTER_RA,
-            Kannada::KannadaLetterRra => KANNADA_LETTER_RRA,
-            Kannada::KannadaLetterLa => KANNADA_LETTER_LA,
-            Kannada::KannadaLetterLla => KANNADA_LETTER_LLA,
-            Kannada::KannadaLetterVa => KANNADA_LETTER_VA,
-            Kannada::KannadaLetterSha => KANNADA_LETTER_SHA,
-            Kannada::KannadaLetterSsa => KANNADA_LETTER_SSA,
-            Kannada::KannadaLetterSa => KANNADA_LETTER_SA,
-            Kannada::KannadaLetterHa => KANNADA_LETTER_HA,
-            Kannada::KannadaSignNukta => KANNADA_SIGN_NUKTA,
-            Kannada::KannadaSignAvagraha => KANNADA_SIGN_AVAGRAHA,
-            Kannada::KannadaVowelSignAa => KANNADA_VOWEL_SIGN_AA,
-            Kannada::KannadaVowelSignI => KANNADA_VOWEL_SIGN_I,
-            Kannada::KannadaVowelSignIi => KANNADA_VOWEL_SIGN_II,
-            Kannada::KannadaVowelSignU => KANNADA_VOWEL_SIGN_U,
-            Kannada::KannadaVowelSignUu => KANNADA_VOWEL_SIGN_UU,
-            Kannada::KannadaVowelSignVocalicR => KANNADA_VOWEL_SIGN_VOCALIC_R,
-            Kannada::KannadaVowelSignVocalicRr => KANNADA_VOWEL_SIGN_VOCALIC_RR,
-            Kannada::KannadaVowelSignE => KANNADA_VOWEL_SIGN_E,
-            Kannada::KannadaVowelSignEe => KANNADA_VOWEL_SIGN_EE,
-            Kannada::KannadaVowelSignAi => KANNADA_VOWEL_SIGN_AI,
-            Kannada::KannadaVowelSignO => KANNADA_VOWEL_SIGN_O,
-            Kannada::KannadaVowelSignOo => KANNADA_VOWEL_SIGN_OO,
-            Kannada::KannadaVowelSignAu => KANNADA_VOWEL_SIGN_AU,
-            Kannada::KannadaSignVirama => KANNADA_SIGN_VIRAMA,
-            Kannada::KannadaLengthMark => KANNADA_LENGTH_MARK,
-            Kannada::KannadaAiLengthMark => KANNADA_AI_LENGTH_MARK,
-            Kannada::KannadaLetterFa => KANNADA_LETTER_FA,
-            Kannada::KannadaLetterVocalicRr => KANNADA_LETTER_VOCALIC_RR,
-            Kannada::KannadaLetterVocalicLl => KANNADA_LETTER_VOCALIC_LL,
-            Kannada::KannadaVowelSignVocalicL => KANNADA_VOWEL_SIGN_VOCALIC_L,
-            Kannada::KannadaVowelSignVocalicLl => KANNADA_VOWEL_SIGN_VOCALIC_LL,
-            Kannada::KannadaDigitZero => KANNADA_DIGIT_ZERO,
-            Kannada::KannadaDigitOne => KANNADA_DIGIT_ONE,
-            Kannada::KannadaDigitTwo => KANNADA_DIGIT_TWO,
-            Kannada::KannadaDigitThree => KANNADA_DIGIT_THREE,
-            Kannada::KannadaDigitFour => KANNADA_DIGIT_FOUR,
-            Kannada::KannadaDigitFive => KANNADA_DIGIT_FIVE,
-            Kannada::KannadaDigitSix => KANNADA_DIGIT_SIX,
-            Kannada::KannadaDigitSeven => KANNADA_DIGIT_SEVEN,
-            Kannada::KannadaDigitEight => KANNADA_DIGIT_EIGHT,
-            Kannada::KannadaDigitNine => KANNADA_DIGIT_NINE,
-            Kannada::KannadaSignJihvamuliya => KANNADA_SIGN_JIHVAMULIYA,
-            Kannada::KannadaSignUpadhmaniya => KANNADA_SIGN_UPADHMANIYA,
+            Kannada::SignSpacingCandrabindu => SIGN_SPACING_CANDRABINDU,
+            Kannada::SignCandrabindu => SIGN_CANDRABINDU,
+            Kannada::SignAnusvara => SIGN_ANUSVARA,
+            Kannada::SignVisarga => SIGN_VISARGA,
+            Kannada::SignSiddham => SIGN_SIDDHAM,
+            Kannada::LetterA => LETTER_A,
+            Kannada::LetterAa => LETTER_AA,
+            Kannada::LetterI => LETTER_I,
+            Kannada::LetterIi => LETTER_II,
+            Kannada::LetterU => LETTER_U,
+            Kannada::LetterUu => LETTER_UU,
+            Kannada::LetterVocalicR => LETTER_VOCALIC_R,
+            Kannada::LetterVocalicL => LETTER_VOCALIC_L,
+            Kannada::LetterE => LETTER_E,
+            Kannada::LetterEe => LETTER_EE,
+            Kannada::LetterAi => LETTER_AI,
+            Kannada::LetterO => LETTER_O,
+            Kannada::LetterOo => LETTER_OO,
+            Kannada::LetterAu => LETTER_AU,
+            Kannada::LetterKa => LETTER_KA,
+            Kannada::LetterKha => LETTER_KHA,
+            Kannada::LetterGa => LETTER_GA,
+            Kannada::LetterGha => LETTER_GHA,
+            Kannada::LetterNga => LETTER_NGA,
+            Kannada::LetterCa => LETTER_CA,
+            Kannada::LetterCha => LETTER_CHA,
+            Kannada::LetterJa => LETTER_JA,
+            Kannada::LetterJha => LETTER_JHA,
+            Kannada::LetterNya => LETTER_NYA,
+            Kannada::LetterTta => LETTER_TTA,
+            Kannada::LetterTtha => LETTER_TTHA,
+            Kannada::LetterDda => LETTER_DDA,
+            Kannada::LetterDdha => LETTER_DDHA,
+            Kannada::LetterNna => LETTER_NNA,
+            Kannada::LetterTa => LETTER_TA,
+            Kannada::LetterTha => LETTER_THA,
+            Kannada::LetterDa => LETTER_DA,
+            Kannada::LetterDha => LETTER_DHA,
+            Kannada::LetterNa => LETTER_NA,
+            Kannada::LetterPa => LETTER_PA,
+            Kannada::LetterPha => LETTER_PHA,
+            Kannada::LetterBa => LETTER_BA,
+            Kannada::LetterBha => LETTER_BHA,
+            Kannada::LetterMa => LETTER_MA,
+            Kannada::LetterYa => LETTER_YA,
+            Kannada::LetterRa => LETTER_RA,
+            Kannada::LetterRra => LETTER_RRA,
+            Kannada::LetterLa => LETTER_LA,
+            Kannada::LetterLla => LETTER_LLA,
+            Kannada::LetterVa => LETTER_VA,
+            Kannada::LetterSha => LETTER_SHA,
+            Kannada::LetterSsa => LETTER_SSA,
+            Kannada::LetterSa => LETTER_SA,
+            Kannada::LetterHa => LETTER_HA,
+            Kannada::SignNukta => SIGN_NUKTA,
+            Kannada::SignAvagraha => SIGN_AVAGRAHA,
+            Kannada::VowelSignAa => VOWEL_SIGN_AA,
+            Kannada::VowelSignI => VOWEL_SIGN_I,
+            Kannada::VowelSignIi => VOWEL_SIGN_II,
+            Kannada::VowelSignU => VOWEL_SIGN_U,
+            Kannada::VowelSignUu => VOWEL_SIGN_UU,
+            Kannada::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
+            Kannada::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
+            Kannada::VowelSignE => VOWEL_SIGN_E,
+            Kannada::VowelSignEe => VOWEL_SIGN_EE,
+            Kannada::VowelSignAi => VOWEL_SIGN_AI,
+            Kannada::VowelSignO => VOWEL_SIGN_O,
+            Kannada::VowelSignOo => VOWEL_SIGN_OO,
+            Kannada::VowelSignAu => VOWEL_SIGN_AU,
+            Kannada::SignVirama => SIGN_VIRAMA,
+            Kannada::LengthMark => LENGTH_MARK,
+            Kannada::AiLengthMark => AI_LENGTH_MARK,
+            Kannada::LetterFa => LETTER_FA,
+            Kannada::LetterVocalicRr => LETTER_VOCALIC_RR,
+            Kannada::LetterVocalicLl => LETTER_VOCALIC_LL,
+            Kannada::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
+            Kannada::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
+            Kannada::DigitZero => DIGIT_ZERO,
+            Kannada::DigitOne => DIGIT_ONE,
+            Kannada::DigitTwo => DIGIT_TWO,
+            Kannada::DigitThree => DIGIT_THREE,
+            Kannada::DigitFour => DIGIT_FOUR,
+            Kannada::DigitFive => DIGIT_FIVE,
+            Kannada::DigitSix => DIGIT_SIX,
+            Kannada::DigitSeven => DIGIT_SEVEN,
+            Kannada::DigitEight => DIGIT_EIGHT,
+            Kannada::DigitNine => DIGIT_NINE,
+            Kannada::SignJihvamuliya => SIGN_JIHVAMULIYA,
+            Kannada::SignUpadhmaniya => SIGN_UPADHMANIYA,
         }
     }
 }
@@ -479,95 +479,95 @@ impl std::convert::TryFrom<char> for Kannada {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            KANNADA_SIGN_SPACING_CANDRABINDU => Ok(Kannada::KannadaSignSpacingCandrabindu),
-            KANNADA_SIGN_CANDRABINDU => Ok(Kannada::KannadaSignCandrabindu),
-            KANNADA_SIGN_ANUSVARA => Ok(Kannada::KannadaSignAnusvara),
-            KANNADA_SIGN_VISARGA => Ok(Kannada::KannadaSignVisarga),
-            KANNADA_SIGN_SIDDHAM => Ok(Kannada::KannadaSignSiddham),
-            KANNADA_LETTER_A => Ok(Kannada::KannadaLetterA),
-            KANNADA_LETTER_AA => Ok(Kannada::KannadaLetterAa),
-            KANNADA_LETTER_I => Ok(Kannada::KannadaLetterI),
-            KANNADA_LETTER_II => Ok(Kannada::KannadaLetterIi),
-            KANNADA_LETTER_U => Ok(Kannada::KannadaLetterU),
-            KANNADA_LETTER_UU => Ok(Kannada::KannadaLetterUu),
-            KANNADA_LETTER_VOCALIC_R => Ok(Kannada::KannadaLetterVocalicR),
-            KANNADA_LETTER_VOCALIC_L => Ok(Kannada::KannadaLetterVocalicL),
-            KANNADA_LETTER_E => Ok(Kannada::KannadaLetterE),
-            KANNADA_LETTER_EE => Ok(Kannada::KannadaLetterEe),
-            KANNADA_LETTER_AI => Ok(Kannada::KannadaLetterAi),
-            KANNADA_LETTER_O => Ok(Kannada::KannadaLetterO),
-            KANNADA_LETTER_OO => Ok(Kannada::KannadaLetterOo),
-            KANNADA_LETTER_AU => Ok(Kannada::KannadaLetterAu),
-            KANNADA_LETTER_KA => Ok(Kannada::KannadaLetterKa),
-            KANNADA_LETTER_KHA => Ok(Kannada::KannadaLetterKha),
-            KANNADA_LETTER_GA => Ok(Kannada::KannadaLetterGa),
-            KANNADA_LETTER_GHA => Ok(Kannada::KannadaLetterGha),
-            KANNADA_LETTER_NGA => Ok(Kannada::KannadaLetterNga),
-            KANNADA_LETTER_CA => Ok(Kannada::KannadaLetterCa),
-            KANNADA_LETTER_CHA => Ok(Kannada::KannadaLetterCha),
-            KANNADA_LETTER_JA => Ok(Kannada::KannadaLetterJa),
-            KANNADA_LETTER_JHA => Ok(Kannada::KannadaLetterJha),
-            KANNADA_LETTER_NYA => Ok(Kannada::KannadaLetterNya),
-            KANNADA_LETTER_TTA => Ok(Kannada::KannadaLetterTta),
-            KANNADA_LETTER_TTHA => Ok(Kannada::KannadaLetterTtha),
-            KANNADA_LETTER_DDA => Ok(Kannada::KannadaLetterDda),
-            KANNADA_LETTER_DDHA => Ok(Kannada::KannadaLetterDdha),
-            KANNADA_LETTER_NNA => Ok(Kannada::KannadaLetterNna),
-            KANNADA_LETTER_TA => Ok(Kannada::KannadaLetterTa),
-            KANNADA_LETTER_THA => Ok(Kannada::KannadaLetterTha),
-            KANNADA_LETTER_DA => Ok(Kannada::KannadaLetterDa),
-            KANNADA_LETTER_DHA => Ok(Kannada::KannadaLetterDha),
-            KANNADA_LETTER_NA => Ok(Kannada::KannadaLetterNa),
-            KANNADA_LETTER_PA => Ok(Kannada::KannadaLetterPa),
-            KANNADA_LETTER_PHA => Ok(Kannada::KannadaLetterPha),
-            KANNADA_LETTER_BA => Ok(Kannada::KannadaLetterBa),
-            KANNADA_LETTER_BHA => Ok(Kannada::KannadaLetterBha),
-            KANNADA_LETTER_MA => Ok(Kannada::KannadaLetterMa),
-            KANNADA_LETTER_YA => Ok(Kannada::KannadaLetterYa),
-            KANNADA_LETTER_RA => Ok(Kannada::KannadaLetterRa),
-            KANNADA_LETTER_RRA => Ok(Kannada::KannadaLetterRra),
-            KANNADA_LETTER_LA => Ok(Kannada::KannadaLetterLa),
-            KANNADA_LETTER_LLA => Ok(Kannada::KannadaLetterLla),
-            KANNADA_LETTER_VA => Ok(Kannada::KannadaLetterVa),
-            KANNADA_LETTER_SHA => Ok(Kannada::KannadaLetterSha),
-            KANNADA_LETTER_SSA => Ok(Kannada::KannadaLetterSsa),
-            KANNADA_LETTER_SA => Ok(Kannada::KannadaLetterSa),
-            KANNADA_LETTER_HA => Ok(Kannada::KannadaLetterHa),
-            KANNADA_SIGN_NUKTA => Ok(Kannada::KannadaSignNukta),
-            KANNADA_SIGN_AVAGRAHA => Ok(Kannada::KannadaSignAvagraha),
-            KANNADA_VOWEL_SIGN_AA => Ok(Kannada::KannadaVowelSignAa),
-            KANNADA_VOWEL_SIGN_I => Ok(Kannada::KannadaVowelSignI),
-            KANNADA_VOWEL_SIGN_II => Ok(Kannada::KannadaVowelSignIi),
-            KANNADA_VOWEL_SIGN_U => Ok(Kannada::KannadaVowelSignU),
-            KANNADA_VOWEL_SIGN_UU => Ok(Kannada::KannadaVowelSignUu),
-            KANNADA_VOWEL_SIGN_VOCALIC_R => Ok(Kannada::KannadaVowelSignVocalicR),
-            KANNADA_VOWEL_SIGN_VOCALIC_RR => Ok(Kannada::KannadaVowelSignVocalicRr),
-            KANNADA_VOWEL_SIGN_E => Ok(Kannada::KannadaVowelSignE),
-            KANNADA_VOWEL_SIGN_EE => Ok(Kannada::KannadaVowelSignEe),
-            KANNADA_VOWEL_SIGN_AI => Ok(Kannada::KannadaVowelSignAi),
-            KANNADA_VOWEL_SIGN_O => Ok(Kannada::KannadaVowelSignO),
-            KANNADA_VOWEL_SIGN_OO => Ok(Kannada::KannadaVowelSignOo),
-            KANNADA_VOWEL_SIGN_AU => Ok(Kannada::KannadaVowelSignAu),
-            KANNADA_SIGN_VIRAMA => Ok(Kannada::KannadaSignVirama),
-            KANNADA_LENGTH_MARK => Ok(Kannada::KannadaLengthMark),
-            KANNADA_AI_LENGTH_MARK => Ok(Kannada::KannadaAiLengthMark),
-            KANNADA_LETTER_FA => Ok(Kannada::KannadaLetterFa),
-            KANNADA_LETTER_VOCALIC_RR => Ok(Kannada::KannadaLetterVocalicRr),
-            KANNADA_LETTER_VOCALIC_LL => Ok(Kannada::KannadaLetterVocalicLl),
-            KANNADA_VOWEL_SIGN_VOCALIC_L => Ok(Kannada::KannadaVowelSignVocalicL),
-            KANNADA_VOWEL_SIGN_VOCALIC_LL => Ok(Kannada::KannadaVowelSignVocalicLl),
-            KANNADA_DIGIT_ZERO => Ok(Kannada::KannadaDigitZero),
-            KANNADA_DIGIT_ONE => Ok(Kannada::KannadaDigitOne),
-            KANNADA_DIGIT_TWO => Ok(Kannada::KannadaDigitTwo),
-            KANNADA_DIGIT_THREE => Ok(Kannada::KannadaDigitThree),
-            KANNADA_DIGIT_FOUR => Ok(Kannada::KannadaDigitFour),
-            KANNADA_DIGIT_FIVE => Ok(Kannada::KannadaDigitFive),
-            KANNADA_DIGIT_SIX => Ok(Kannada::KannadaDigitSix),
-            KANNADA_DIGIT_SEVEN => Ok(Kannada::KannadaDigitSeven),
-            KANNADA_DIGIT_EIGHT => Ok(Kannada::KannadaDigitEight),
-            KANNADA_DIGIT_NINE => Ok(Kannada::KannadaDigitNine),
-            KANNADA_SIGN_JIHVAMULIYA => Ok(Kannada::KannadaSignJihvamuliya),
-            KANNADA_SIGN_UPADHMANIYA => Ok(Kannada::KannadaSignUpadhmaniya),
+            SIGN_SPACING_CANDRABINDU => Ok(Kannada::SignSpacingCandrabindu),
+            SIGN_CANDRABINDU => Ok(Kannada::SignCandrabindu),
+            SIGN_ANUSVARA => Ok(Kannada::SignAnusvara),
+            SIGN_VISARGA => Ok(Kannada::SignVisarga),
+            SIGN_SIDDHAM => Ok(Kannada::SignSiddham),
+            LETTER_A => Ok(Kannada::LetterA),
+            LETTER_AA => Ok(Kannada::LetterAa),
+            LETTER_I => Ok(Kannada::LetterI),
+            LETTER_II => Ok(Kannada::LetterIi),
+            LETTER_U => Ok(Kannada::LetterU),
+            LETTER_UU => Ok(Kannada::LetterUu),
+            LETTER_VOCALIC_R => Ok(Kannada::LetterVocalicR),
+            LETTER_VOCALIC_L => Ok(Kannada::LetterVocalicL),
+            LETTER_E => Ok(Kannada::LetterE),
+            LETTER_EE => Ok(Kannada::LetterEe),
+            LETTER_AI => Ok(Kannada::LetterAi),
+            LETTER_O => Ok(Kannada::LetterO),
+            LETTER_OO => Ok(Kannada::LetterOo),
+            LETTER_AU => Ok(Kannada::LetterAu),
+            LETTER_KA => Ok(Kannada::LetterKa),
+            LETTER_KHA => Ok(Kannada::LetterKha),
+            LETTER_GA => Ok(Kannada::LetterGa),
+            LETTER_GHA => Ok(Kannada::LetterGha),
+            LETTER_NGA => Ok(Kannada::LetterNga),
+            LETTER_CA => Ok(Kannada::LetterCa),
+            LETTER_CHA => Ok(Kannada::LetterCha),
+            LETTER_JA => Ok(Kannada::LetterJa),
+            LETTER_JHA => Ok(Kannada::LetterJha),
+            LETTER_NYA => Ok(Kannada::LetterNya),
+            LETTER_TTA => Ok(Kannada::LetterTta),
+            LETTER_TTHA => Ok(Kannada::LetterTtha),
+            LETTER_DDA => Ok(Kannada::LetterDda),
+            LETTER_DDHA => Ok(Kannada::LetterDdha),
+            LETTER_NNA => Ok(Kannada::LetterNna),
+            LETTER_TA => Ok(Kannada::LetterTa),
+            LETTER_THA => Ok(Kannada::LetterTha),
+            LETTER_DA => Ok(Kannada::LetterDa),
+            LETTER_DHA => Ok(Kannada::LetterDha),
+            LETTER_NA => Ok(Kannada::LetterNa),
+            LETTER_PA => Ok(Kannada::LetterPa),
+            LETTER_PHA => Ok(Kannada::LetterPha),
+            LETTER_BA => Ok(Kannada::LetterBa),
+            LETTER_BHA => Ok(Kannada::LetterBha),
+            LETTER_MA => Ok(Kannada::LetterMa),
+            LETTER_YA => Ok(Kannada::LetterYa),
+            LETTER_RA => Ok(Kannada::LetterRa),
+            LETTER_RRA => Ok(Kannada::LetterRra),
+            LETTER_LA => Ok(Kannada::LetterLa),
+            LETTER_LLA => Ok(Kannada::LetterLla),
+            LETTER_VA => Ok(Kannada::LetterVa),
+            LETTER_SHA => Ok(Kannada::LetterSha),
+            LETTER_SSA => Ok(Kannada::LetterSsa),
+            LETTER_SA => Ok(Kannada::LetterSa),
+            LETTER_HA => Ok(Kannada::LetterHa),
+            SIGN_NUKTA => Ok(Kannada::SignNukta),
+            SIGN_AVAGRAHA => Ok(Kannada::SignAvagraha),
+            VOWEL_SIGN_AA => Ok(Kannada::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Kannada::VowelSignI),
+            VOWEL_SIGN_II => Ok(Kannada::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Kannada::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Kannada::VowelSignUu),
+            VOWEL_SIGN_VOCALIC_R => Ok(Kannada::VowelSignVocalicR),
+            VOWEL_SIGN_VOCALIC_RR => Ok(Kannada::VowelSignVocalicRr),
+            VOWEL_SIGN_E => Ok(Kannada::VowelSignE),
+            VOWEL_SIGN_EE => Ok(Kannada::VowelSignEe),
+            VOWEL_SIGN_AI => Ok(Kannada::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Kannada::VowelSignO),
+            VOWEL_SIGN_OO => Ok(Kannada::VowelSignOo),
+            VOWEL_SIGN_AU => Ok(Kannada::VowelSignAu),
+            SIGN_VIRAMA => Ok(Kannada::SignVirama),
+            LENGTH_MARK => Ok(Kannada::LengthMark),
+            AI_LENGTH_MARK => Ok(Kannada::AiLengthMark),
+            LETTER_FA => Ok(Kannada::LetterFa),
+            LETTER_VOCALIC_RR => Ok(Kannada::LetterVocalicRr),
+            LETTER_VOCALIC_LL => Ok(Kannada::LetterVocalicLl),
+            VOWEL_SIGN_VOCALIC_L => Ok(Kannada::VowelSignVocalicL),
+            VOWEL_SIGN_VOCALIC_LL => Ok(Kannada::VowelSignVocalicLl),
+            DIGIT_ZERO => Ok(Kannada::DigitZero),
+            DIGIT_ONE => Ok(Kannada::DigitOne),
+            DIGIT_TWO => Ok(Kannada::DigitTwo),
+            DIGIT_THREE => Ok(Kannada::DigitThree),
+            DIGIT_FOUR => Ok(Kannada::DigitFour),
+            DIGIT_FIVE => Ok(Kannada::DigitFive),
+            DIGIT_SIX => Ok(Kannada::DigitSix),
+            DIGIT_SEVEN => Ok(Kannada::DigitSeven),
+            DIGIT_EIGHT => Ok(Kannada::DigitEight),
+            DIGIT_NINE => Ok(Kannada::DigitNine),
+            SIGN_JIHVAMULIYA => Ok(Kannada::SignJihvamuliya),
+            SIGN_UPADHMANIYA => Ok(Kannada::SignUpadhmaniya),
             _ => Err(()),
         }
     }
@@ -606,103 +606,103 @@ impl Iterator for Kannada {
 }
 
 impl Kannada {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Kannada::KannadaSignSpacingCandrabindu
+        Kannada::SignSpacingCandrabindu
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Kannada::KannadaSignSpacingCandrabindu => "kannada sign spacing candrabindu",
-            Kannada::KannadaSignCandrabindu => "kannada sign candrabindu",
-            Kannada::KannadaSignAnusvara => "kannada sign anusvara",
-            Kannada::KannadaSignVisarga => "kannada sign visarga",
-            Kannada::KannadaSignSiddham => "kannada sign siddham",
-            Kannada::KannadaLetterA => "kannada letter a",
-            Kannada::KannadaLetterAa => "kannada letter aa",
-            Kannada::KannadaLetterI => "kannada letter i",
-            Kannada::KannadaLetterIi => "kannada letter ii",
-            Kannada::KannadaLetterU => "kannada letter u",
-            Kannada::KannadaLetterUu => "kannada letter uu",
-            Kannada::KannadaLetterVocalicR => "kannada letter vocalic r",
-            Kannada::KannadaLetterVocalicL => "kannada letter vocalic l",
-            Kannada::KannadaLetterE => "kannada letter e",
-            Kannada::KannadaLetterEe => "kannada letter ee",
-            Kannada::KannadaLetterAi => "kannada letter ai",
-            Kannada::KannadaLetterO => "kannada letter o",
-            Kannada::KannadaLetterOo => "kannada letter oo",
-            Kannada::KannadaLetterAu => "kannada letter au",
-            Kannada::KannadaLetterKa => "kannada letter ka",
-            Kannada::KannadaLetterKha => "kannada letter kha",
-            Kannada::KannadaLetterGa => "kannada letter ga",
-            Kannada::KannadaLetterGha => "kannada letter gha",
-            Kannada::KannadaLetterNga => "kannada letter nga",
-            Kannada::KannadaLetterCa => "kannada letter ca",
-            Kannada::KannadaLetterCha => "kannada letter cha",
-            Kannada::KannadaLetterJa => "kannada letter ja",
-            Kannada::KannadaLetterJha => "kannada letter jha",
-            Kannada::KannadaLetterNya => "kannada letter nya",
-            Kannada::KannadaLetterTta => "kannada letter tta",
-            Kannada::KannadaLetterTtha => "kannada letter ttha",
-            Kannada::KannadaLetterDda => "kannada letter dda",
-            Kannada::KannadaLetterDdha => "kannada letter ddha",
-            Kannada::KannadaLetterNna => "kannada letter nna",
-            Kannada::KannadaLetterTa => "kannada letter ta",
-            Kannada::KannadaLetterTha => "kannada letter tha",
-            Kannada::KannadaLetterDa => "kannada letter da",
-            Kannada::KannadaLetterDha => "kannada letter dha",
-            Kannada::KannadaLetterNa => "kannada letter na",
-            Kannada::KannadaLetterPa => "kannada letter pa",
-            Kannada::KannadaLetterPha => "kannada letter pha",
-            Kannada::KannadaLetterBa => "kannada letter ba",
-            Kannada::KannadaLetterBha => "kannada letter bha",
-            Kannada::KannadaLetterMa => "kannada letter ma",
-            Kannada::KannadaLetterYa => "kannada letter ya",
-            Kannada::KannadaLetterRa => "kannada letter ra",
-            Kannada::KannadaLetterRra => "kannada letter rra",
-            Kannada::KannadaLetterLa => "kannada letter la",
-            Kannada::KannadaLetterLla => "kannada letter lla",
-            Kannada::KannadaLetterVa => "kannada letter va",
-            Kannada::KannadaLetterSha => "kannada letter sha",
-            Kannada::KannadaLetterSsa => "kannada letter ssa",
-            Kannada::KannadaLetterSa => "kannada letter sa",
-            Kannada::KannadaLetterHa => "kannada letter ha",
-            Kannada::KannadaSignNukta => "kannada sign nukta",
-            Kannada::KannadaSignAvagraha => "kannada sign avagraha",
-            Kannada::KannadaVowelSignAa => "kannada vowel sign aa",
-            Kannada::KannadaVowelSignI => "kannada vowel sign i",
-            Kannada::KannadaVowelSignIi => "kannada vowel sign ii",
-            Kannada::KannadaVowelSignU => "kannada vowel sign u",
-            Kannada::KannadaVowelSignUu => "kannada vowel sign uu",
-            Kannada::KannadaVowelSignVocalicR => "kannada vowel sign vocalic r",
-            Kannada::KannadaVowelSignVocalicRr => "kannada vowel sign vocalic rr",
-            Kannada::KannadaVowelSignE => "kannada vowel sign e",
-            Kannada::KannadaVowelSignEe => "kannada vowel sign ee",
-            Kannada::KannadaVowelSignAi => "kannada vowel sign ai",
-            Kannada::KannadaVowelSignO => "kannada vowel sign o",
-            Kannada::KannadaVowelSignOo => "kannada vowel sign oo",
-            Kannada::KannadaVowelSignAu => "kannada vowel sign au",
-            Kannada::KannadaSignVirama => "kannada sign virama",
-            Kannada::KannadaLengthMark => "kannada length mark",
-            Kannada::KannadaAiLengthMark => "kannada ai length mark",
-            Kannada::KannadaLetterFa => "kannada letter fa",
-            Kannada::KannadaLetterVocalicRr => "kannada letter vocalic rr",
-            Kannada::KannadaLetterVocalicLl => "kannada letter vocalic ll",
-            Kannada::KannadaVowelSignVocalicL => "kannada vowel sign vocalic l",
-            Kannada::KannadaVowelSignVocalicLl => "kannada vowel sign vocalic ll",
-            Kannada::KannadaDigitZero => "kannada digit zero",
-            Kannada::KannadaDigitOne => "kannada digit one",
-            Kannada::KannadaDigitTwo => "kannada digit two",
-            Kannada::KannadaDigitThree => "kannada digit three",
-            Kannada::KannadaDigitFour => "kannada digit four",
-            Kannada::KannadaDigitFive => "kannada digit five",
-            Kannada::KannadaDigitSix => "kannada digit six",
-            Kannada::KannadaDigitSeven => "kannada digit seven",
-            Kannada::KannadaDigitEight => "kannada digit eight",
-            Kannada::KannadaDigitNine => "kannada digit nine",
-            Kannada::KannadaSignJihvamuliya => "kannada sign jihvamuliya",
-            Kannada::KannadaSignUpadhmaniya => "kannada sign upadhmaniya",
+            Kannada::SignSpacingCandrabindu => "kannada sign spacing candrabindu",
+            Kannada::SignCandrabindu => "kannada sign candrabindu",
+            Kannada::SignAnusvara => "kannada sign anusvara",
+            Kannada::SignVisarga => "kannada sign visarga",
+            Kannada::SignSiddham => "kannada sign siddham",
+            Kannada::LetterA => "kannada letter a",
+            Kannada::LetterAa => "kannada letter aa",
+            Kannada::LetterI => "kannada letter i",
+            Kannada::LetterIi => "kannada letter ii",
+            Kannada::LetterU => "kannada letter u",
+            Kannada::LetterUu => "kannada letter uu",
+            Kannada::LetterVocalicR => "kannada letter vocalic r",
+            Kannada::LetterVocalicL => "kannada letter vocalic l",
+            Kannada::LetterE => "kannada letter e",
+            Kannada::LetterEe => "kannada letter ee",
+            Kannada::LetterAi => "kannada letter ai",
+            Kannada::LetterO => "kannada letter o",
+            Kannada::LetterOo => "kannada letter oo",
+            Kannada::LetterAu => "kannada letter au",
+            Kannada::LetterKa => "kannada letter ka",
+            Kannada::LetterKha => "kannada letter kha",
+            Kannada::LetterGa => "kannada letter ga",
+            Kannada::LetterGha => "kannada letter gha",
+            Kannada::LetterNga => "kannada letter nga",
+            Kannada::LetterCa => "kannada letter ca",
+            Kannada::LetterCha => "kannada letter cha",
+            Kannada::LetterJa => "kannada letter ja",
+            Kannada::LetterJha => "kannada letter jha",
+            Kannada::LetterNya => "kannada letter nya",
+            Kannada::LetterTta => "kannada letter tta",
+            Kannada::LetterTtha => "kannada letter ttha",
+            Kannada::LetterDda => "kannada letter dda",
+            Kannada::LetterDdha => "kannada letter ddha",
+            Kannada::LetterNna => "kannada letter nna",
+            Kannada::LetterTa => "kannada letter ta",
+            Kannada::LetterTha => "kannada letter tha",
+            Kannada::LetterDa => "kannada letter da",
+            Kannada::LetterDha => "kannada letter dha",
+            Kannada::LetterNa => "kannada letter na",
+            Kannada::LetterPa => "kannada letter pa",
+            Kannada::LetterPha => "kannada letter pha",
+            Kannada::LetterBa => "kannada letter ba",
+            Kannada::LetterBha => "kannada letter bha",
+            Kannada::LetterMa => "kannada letter ma",
+            Kannada::LetterYa => "kannada letter ya",
+            Kannada::LetterRa => "kannada letter ra",
+            Kannada::LetterRra => "kannada letter rra",
+            Kannada::LetterLa => "kannada letter la",
+            Kannada::LetterLla => "kannada letter lla",
+            Kannada::LetterVa => "kannada letter va",
+            Kannada::LetterSha => "kannada letter sha",
+            Kannada::LetterSsa => "kannada letter ssa",
+            Kannada::LetterSa => "kannada letter sa",
+            Kannada::LetterHa => "kannada letter ha",
+            Kannada::SignNukta => "kannada sign nukta",
+            Kannada::SignAvagraha => "kannada sign avagraha",
+            Kannada::VowelSignAa => "kannada vowel sign aa",
+            Kannada::VowelSignI => "kannada vowel sign i",
+            Kannada::VowelSignIi => "kannada vowel sign ii",
+            Kannada::VowelSignU => "kannada vowel sign u",
+            Kannada::VowelSignUu => "kannada vowel sign uu",
+            Kannada::VowelSignVocalicR => "kannada vowel sign vocalic r",
+            Kannada::VowelSignVocalicRr => "kannada vowel sign vocalic rr",
+            Kannada::VowelSignE => "kannada vowel sign e",
+            Kannada::VowelSignEe => "kannada vowel sign ee",
+            Kannada::VowelSignAi => "kannada vowel sign ai",
+            Kannada::VowelSignO => "kannada vowel sign o",
+            Kannada::VowelSignOo => "kannada vowel sign oo",
+            Kannada::VowelSignAu => "kannada vowel sign au",
+            Kannada::SignVirama => "kannada sign virama",
+            Kannada::LengthMark => "kannada length mark",
+            Kannada::AiLengthMark => "kannada ai length mark",
+            Kannada::LetterFa => "kannada letter fa",
+            Kannada::LetterVocalicRr => "kannada letter vocalic rr",
+            Kannada::LetterVocalicLl => "kannada letter vocalic ll",
+            Kannada::VowelSignVocalicL => "kannada vowel sign vocalic l",
+            Kannada::VowelSignVocalicLl => "kannada vowel sign vocalic ll",
+            Kannada::DigitZero => "kannada digit zero",
+            Kannada::DigitOne => "kannada digit one",
+            Kannada::DigitTwo => "kannada digit two",
+            Kannada::DigitThree => "kannada digit three",
+            Kannada::DigitFour => "kannada digit four",
+            Kannada::DigitFive => "kannada digit five",
+            Kannada::DigitSix => "kannada digit six",
+            Kannada::DigitSeven => "kannada digit seven",
+            Kannada::DigitEight => "kannada digit eight",
+            Kannada::DigitNine => "kannada digit nine",
+            Kannada::SignJihvamuliya => "kannada sign jihvamuliya",
+            Kannada::SignUpadhmaniya => "kannada sign upadhmaniya",
         }
     }
 }

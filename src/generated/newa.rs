@@ -8,193 +8,193 @@
 /// 𑑐 𑑑 𑑒 𑑓 𑑔 𑑕 𑑖 𑑗 𑑘 𑑙 𑑛 𑑝 𑑞 𑑟
 pub mod constants {
     /// \u{11400}: '𑐀'
-    pub const NEWA_LETTER_A: char = '𑐀';
+    pub const LETTER_A: char = '𑐀';
     /// \u{11401}: '𑐁'
-    pub const NEWA_LETTER_AA: char = '𑐁';
+    pub const LETTER_AA: char = '𑐁';
     /// \u{11402}: '𑐂'
-    pub const NEWA_LETTER_I: char = '𑐂';
+    pub const LETTER_I: char = '𑐂';
     /// \u{11403}: '𑐃'
-    pub const NEWA_LETTER_II: char = '𑐃';
+    pub const LETTER_II: char = '𑐃';
     /// \u{11404}: '𑐄'
-    pub const NEWA_LETTER_U: char = '𑐄';
+    pub const LETTER_U: char = '𑐄';
     /// \u{11405}: '𑐅'
-    pub const NEWA_LETTER_UU: char = '𑐅';
+    pub const LETTER_UU: char = '𑐅';
     /// \u{11406}: '𑐆'
-    pub const NEWA_LETTER_VOCALIC_R: char = '𑐆';
+    pub const LETTER_VOCALIC_R: char = '𑐆';
     /// \u{11407}: '𑐇'
-    pub const NEWA_LETTER_VOCALIC_RR: char = '𑐇';
+    pub const LETTER_VOCALIC_RR: char = '𑐇';
     /// \u{11408}: '𑐈'
-    pub const NEWA_LETTER_VOCALIC_L: char = '𑐈';
+    pub const LETTER_VOCALIC_L: char = '𑐈';
     /// \u{11409}: '𑐉'
-    pub const NEWA_LETTER_VOCALIC_LL: char = '𑐉';
+    pub const LETTER_VOCALIC_LL: char = '𑐉';
     /// \u{1140a}: '𑐊'
-    pub const NEWA_LETTER_E: char = '𑐊';
+    pub const LETTER_E: char = '𑐊';
     /// \u{1140b}: '𑐋'
-    pub const NEWA_LETTER_AI: char = '𑐋';
+    pub const LETTER_AI: char = '𑐋';
     /// \u{1140c}: '𑐌'
-    pub const NEWA_LETTER_O: char = '𑐌';
+    pub const LETTER_O: char = '𑐌';
     /// \u{1140d}: '𑐍'
-    pub const NEWA_LETTER_AU: char = '𑐍';
+    pub const LETTER_AU: char = '𑐍';
     /// \u{1140e}: '𑐎'
-    pub const NEWA_LETTER_KA: char = '𑐎';
+    pub const LETTER_KA: char = '𑐎';
     /// \u{1140f}: '𑐏'
-    pub const NEWA_LETTER_KHA: char = '𑐏';
+    pub const LETTER_KHA: char = '𑐏';
     /// \u{11410}: '𑐐'
-    pub const NEWA_LETTER_GA: char = '𑐐';
+    pub const LETTER_GA: char = '𑐐';
     /// \u{11411}: '𑐑'
-    pub const NEWA_LETTER_GHA: char = '𑐑';
+    pub const LETTER_GHA: char = '𑐑';
     /// \u{11412}: '𑐒'
-    pub const NEWA_LETTER_NGA: char = '𑐒';
+    pub const LETTER_NGA: char = '𑐒';
     /// \u{11413}: '𑐓'
-    pub const NEWA_LETTER_NGHA: char = '𑐓';
+    pub const LETTER_NGHA: char = '𑐓';
     /// \u{11414}: '𑐔'
-    pub const NEWA_LETTER_CA: char = '𑐔';
+    pub const LETTER_CA: char = '𑐔';
     /// \u{11415}: '𑐕'
-    pub const NEWA_LETTER_CHA: char = '𑐕';
+    pub const LETTER_CHA: char = '𑐕';
     /// \u{11416}: '𑐖'
-    pub const NEWA_LETTER_JA: char = '𑐖';
+    pub const LETTER_JA: char = '𑐖';
     /// \u{11417}: '𑐗'
-    pub const NEWA_LETTER_JHA: char = '𑐗';
+    pub const LETTER_JHA: char = '𑐗';
     /// \u{11418}: '𑐘'
-    pub const NEWA_LETTER_NYA: char = '𑐘';
+    pub const LETTER_NYA: char = '𑐘';
     /// \u{11419}: '𑐙'
-    pub const NEWA_LETTER_NYHA: char = '𑐙';
+    pub const LETTER_NYHA: char = '𑐙';
     /// \u{1141a}: '𑐚'
-    pub const NEWA_LETTER_TTA: char = '𑐚';
+    pub const LETTER_TTA: char = '𑐚';
     /// \u{1141b}: '𑐛'
-    pub const NEWA_LETTER_TTHA: char = '𑐛';
+    pub const LETTER_TTHA: char = '𑐛';
     /// \u{1141c}: '𑐜'
-    pub const NEWA_LETTER_DDA: char = '𑐜';
+    pub const LETTER_DDA: char = '𑐜';
     /// \u{1141d}: '𑐝'
-    pub const NEWA_LETTER_DDHA: char = '𑐝';
+    pub const LETTER_DDHA: char = '𑐝';
     /// \u{1141e}: '𑐞'
-    pub const NEWA_LETTER_NNA: char = '𑐞';
+    pub const LETTER_NNA: char = '𑐞';
     /// \u{1141f}: '𑐟'
-    pub const NEWA_LETTER_TA: char = '𑐟';
+    pub const LETTER_TA: char = '𑐟';
     /// \u{11420}: '𑐠'
-    pub const NEWA_LETTER_THA: char = '𑐠';
+    pub const LETTER_THA: char = '𑐠';
     /// \u{11421}: '𑐡'
-    pub const NEWA_LETTER_DA: char = '𑐡';
+    pub const LETTER_DA: char = '𑐡';
     /// \u{11422}: '𑐢'
-    pub const NEWA_LETTER_DHA: char = '𑐢';
+    pub const LETTER_DHA: char = '𑐢';
     /// \u{11423}: '𑐣'
-    pub const NEWA_LETTER_NA: char = '𑐣';
+    pub const LETTER_NA: char = '𑐣';
     /// \u{11424}: '𑐤'
-    pub const NEWA_LETTER_NHA: char = '𑐤';
+    pub const LETTER_NHA: char = '𑐤';
     /// \u{11425}: '𑐥'
-    pub const NEWA_LETTER_PA: char = '𑐥';
+    pub const LETTER_PA: char = '𑐥';
     /// \u{11426}: '𑐦'
-    pub const NEWA_LETTER_PHA: char = '𑐦';
+    pub const LETTER_PHA: char = '𑐦';
     /// \u{11427}: '𑐧'
-    pub const NEWA_LETTER_BA: char = '𑐧';
+    pub const LETTER_BA: char = '𑐧';
     /// \u{11428}: '𑐨'
-    pub const NEWA_LETTER_BHA: char = '𑐨';
+    pub const LETTER_BHA: char = '𑐨';
     /// \u{11429}: '𑐩'
-    pub const NEWA_LETTER_MA: char = '𑐩';
+    pub const LETTER_MA: char = '𑐩';
     /// \u{1142a}: '𑐪'
-    pub const NEWA_LETTER_MHA: char = '𑐪';
+    pub const LETTER_MHA: char = '𑐪';
     /// \u{1142b}: '𑐫'
-    pub const NEWA_LETTER_YA: char = '𑐫';
+    pub const LETTER_YA: char = '𑐫';
     /// \u{1142c}: '𑐬'
-    pub const NEWA_LETTER_RA: char = '𑐬';
+    pub const LETTER_RA: char = '𑐬';
     /// \u{1142d}: '𑐭'
-    pub const NEWA_LETTER_RHA: char = '𑐭';
+    pub const LETTER_RHA: char = '𑐭';
     /// \u{1142e}: '𑐮'
-    pub const NEWA_LETTER_LA: char = '𑐮';
+    pub const LETTER_LA: char = '𑐮';
     /// \u{1142f}: '𑐯'
-    pub const NEWA_LETTER_LHA: char = '𑐯';
+    pub const LETTER_LHA: char = '𑐯';
     /// \u{11430}: '𑐰'
-    pub const NEWA_LETTER_WA: char = '𑐰';
+    pub const LETTER_WA: char = '𑐰';
     /// \u{11431}: '𑐱'
-    pub const NEWA_LETTER_SHA: char = '𑐱';
+    pub const LETTER_SHA: char = '𑐱';
     /// \u{11432}: '𑐲'
-    pub const NEWA_LETTER_SSA: char = '𑐲';
+    pub const LETTER_SSA: char = '𑐲';
     /// \u{11433}: '𑐳'
-    pub const NEWA_LETTER_SA: char = '𑐳';
+    pub const LETTER_SA: char = '𑐳';
     /// \u{11434}: '𑐴'
-    pub const NEWA_LETTER_HA: char = '𑐴';
+    pub const LETTER_HA: char = '𑐴';
     /// \u{11435}: '𑐵'
-    pub const NEWA_VOWEL_SIGN_AA: char = '𑐵';
+    pub const VOWEL_SIGN_AA: char = '𑐵';
     /// \u{11436}: '𑐶'
-    pub const NEWA_VOWEL_SIGN_I: char = '𑐶';
+    pub const VOWEL_SIGN_I: char = '𑐶';
     /// \u{11437}: '𑐷'
-    pub const NEWA_VOWEL_SIGN_II: char = '𑐷';
+    pub const VOWEL_SIGN_II: char = '𑐷';
     /// \u{11438}: '𑐸'
-    pub const NEWA_VOWEL_SIGN_U: char = '𑐸';
+    pub const VOWEL_SIGN_U: char = '𑐸';
     /// \u{11439}: '𑐹'
-    pub const NEWA_VOWEL_SIGN_UU: char = '𑐹';
+    pub const VOWEL_SIGN_UU: char = '𑐹';
     /// \u{1143a}: '𑐺'
-    pub const NEWA_VOWEL_SIGN_VOCALIC_R: char = '𑐺';
+    pub const VOWEL_SIGN_VOCALIC_R: char = '𑐺';
     /// \u{1143b}: '𑐻'
-    pub const NEWA_VOWEL_SIGN_VOCALIC_RR: char = '𑐻';
+    pub const VOWEL_SIGN_VOCALIC_RR: char = '𑐻';
     /// \u{1143c}: '𑐼'
-    pub const NEWA_VOWEL_SIGN_VOCALIC_L: char = '𑐼';
+    pub const VOWEL_SIGN_VOCALIC_L: char = '𑐼';
     /// \u{1143d}: '𑐽'
-    pub const NEWA_VOWEL_SIGN_VOCALIC_LL: char = '𑐽';
+    pub const VOWEL_SIGN_VOCALIC_LL: char = '𑐽';
     /// \u{1143e}: '𑐾'
-    pub const NEWA_VOWEL_SIGN_E: char = '𑐾';
+    pub const VOWEL_SIGN_E: char = '𑐾';
     /// \u{1143f}: '𑐿'
-    pub const NEWA_VOWEL_SIGN_AI: char = '𑐿';
+    pub const VOWEL_SIGN_AI: char = '𑐿';
     /// \u{11440}: '𑑀'
-    pub const NEWA_VOWEL_SIGN_O: char = '𑑀';
+    pub const VOWEL_SIGN_O: char = '𑑀';
     /// \u{11441}: '𑑁'
-    pub const NEWA_VOWEL_SIGN_AU: char = '𑑁';
+    pub const VOWEL_SIGN_AU: char = '𑑁';
     /// \u{11442}: '𑑂'
-    pub const NEWA_SIGN_VIRAMA: char = '𑑂';
+    pub const SIGN_VIRAMA: char = '𑑂';
     /// \u{11443}: '𑑃'
-    pub const NEWA_SIGN_CANDRABINDU: char = '𑑃';
+    pub const SIGN_CANDRABINDU: char = '𑑃';
     /// \u{11444}: '𑑄'
-    pub const NEWA_SIGN_ANUSVARA: char = '𑑄';
+    pub const SIGN_ANUSVARA: char = '𑑄';
     /// \u{11445}: '𑑅'
-    pub const NEWA_SIGN_VISARGA: char = '𑑅';
+    pub const SIGN_VISARGA: char = '𑑅';
     /// \u{11446}: '𑑆'
-    pub const NEWA_SIGN_NUKTA: char = '𑑆';
+    pub const SIGN_NUKTA: char = '𑑆';
     /// \u{11447}: '𑑇'
-    pub const NEWA_SIGN_AVAGRAHA: char = '𑑇';
+    pub const SIGN_AVAGRAHA: char = '𑑇';
     /// \u{11448}: '𑑈'
-    pub const NEWA_SIGN_FINAL_ANUSVARA: char = '𑑈';
+    pub const SIGN_FINAL_ANUSVARA: char = '𑑈';
     /// \u{11449}: '𑑉'
-    pub const NEWA_OM: char = '𑑉';
+    pub const OM: char = '𑑉';
     /// \u{1144a}: '𑑊'
-    pub const NEWA_SIDDHI: char = '𑑊';
+    pub const SIDDHI: char = '𑑊';
     /// \u{1144b}: '𑑋'
-    pub const NEWA_DANDA: char = '𑑋';
+    pub const DANDA: char = '𑑋';
     /// \u{1144c}: '𑑌'
-    pub const NEWA_DOUBLE_DANDA: char = '𑑌';
+    pub const DOUBLE_DANDA: char = '𑑌';
     /// \u{1144d}: '𑑍'
-    pub const NEWA_COMMA: char = '𑑍';
+    pub const COMMA: char = '𑑍';
     /// \u{1144e}: '𑑎'
-    pub const NEWA_GAP_FILLER: char = '𑑎';
+    pub const GAP_FILLER: char = '𑑎';
     /// \u{1144f}: '𑑏'
-    pub const NEWA_ABBREVIATION_SIGN: char = '𑑏';
+    pub const ABBREVIATION_SIGN: char = '𑑏';
     /// \u{11450}: '𑑐'
-    pub const NEWA_DIGIT_ZERO: char = '𑑐';
+    pub const DIGIT_ZERO: char = '𑑐';
     /// \u{11451}: '𑑑'
-    pub const NEWA_DIGIT_ONE: char = '𑑑';
+    pub const DIGIT_ONE: char = '𑑑';
     /// \u{11452}: '𑑒'
-    pub const NEWA_DIGIT_TWO: char = '𑑒';
+    pub const DIGIT_TWO: char = '𑑒';
     /// \u{11453}: '𑑓'
-    pub const NEWA_DIGIT_THREE: char = '𑑓';
+    pub const DIGIT_THREE: char = '𑑓';
     /// \u{11454}: '𑑔'
-    pub const NEWA_DIGIT_FOUR: char = '𑑔';
+    pub const DIGIT_FOUR: char = '𑑔';
     /// \u{11455}: '𑑕'
-    pub const NEWA_DIGIT_FIVE: char = '𑑕';
+    pub const DIGIT_FIVE: char = '𑑕';
     /// \u{11456}: '𑑖'
-    pub const NEWA_DIGIT_SIX: char = '𑑖';
+    pub const DIGIT_SIX: char = '𑑖';
     /// \u{11457}: '𑑗'
-    pub const NEWA_DIGIT_SEVEN: char = '𑑗';
+    pub const DIGIT_SEVEN: char = '𑑗';
     /// \u{11458}: '𑑘'
-    pub const NEWA_DIGIT_EIGHT: char = '𑑘';
+    pub const DIGIT_EIGHT: char = '𑑘';
     /// \u{11459}: '𑑙'
-    pub const NEWA_DIGIT_NINE: char = '𑑙';
+    pub const DIGIT_NINE: char = '𑑙';
     /// \u{1145b}: '𑑛'
-    pub const NEWA_PLACEHOLDER_MARK: char = '𑑛';
+    pub const PLACEHOLDER_MARK: char = '𑑛';
     /// \u{1145d}: '𑑝'
-    pub const NEWA_INSERTION_SIGN: char = '𑑝';
+    pub const INSERTION_SIGN: char = '𑑝';
     /// \u{1145e}: '𑑞'
-    pub const NEWA_SANDHI_MARK: char = '𑑞';
+    pub const SANDHI_MARK: char = '𑑞';
     /// \u{1145f}: '𑑟'
-    pub const NEWA_LETTER_VEDIC_ANUSVARA: char = '𑑟';
+    pub const LETTER_VEDIC_ANUSVARA: char = '𑑟';
 }
 
 /// \u{11400} → \u{1147f}\
@@ -208,293 +208,293 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Newa {
     /// \u{11400}: '𑐀'
-    NewaLetterA,
+    LetterA,
     /// \u{11401}: '𑐁'
-    NewaLetterAa,
+    LetterAa,
     /// \u{11402}: '𑐂'
-    NewaLetterI,
+    LetterI,
     /// \u{11403}: '𑐃'
-    NewaLetterIi,
+    LetterIi,
     /// \u{11404}: '𑐄'
-    NewaLetterU,
+    LetterU,
     /// \u{11405}: '𑐅'
-    NewaLetterUu,
+    LetterUu,
     /// \u{11406}: '𑐆'
-    NewaLetterVocalicR,
+    LetterVocalicR,
     /// \u{11407}: '𑐇'
-    NewaLetterVocalicRr,
+    LetterVocalicRr,
     /// \u{11408}: '𑐈'
-    NewaLetterVocalicL,
+    LetterVocalicL,
     /// \u{11409}: '𑐉'
-    NewaLetterVocalicLl,
+    LetterVocalicLl,
     /// \u{1140a}: '𑐊'
-    NewaLetterE,
+    LetterE,
     /// \u{1140b}: '𑐋'
-    NewaLetterAi,
+    LetterAi,
     /// \u{1140c}: '𑐌'
-    NewaLetterO,
+    LetterO,
     /// \u{1140d}: '𑐍'
-    NewaLetterAu,
+    LetterAu,
     /// \u{1140e}: '𑐎'
-    NewaLetterKa,
+    LetterKa,
     /// \u{1140f}: '𑐏'
-    NewaLetterKha,
+    LetterKha,
     /// \u{11410}: '𑐐'
-    NewaLetterGa,
+    LetterGa,
     /// \u{11411}: '𑐑'
-    NewaLetterGha,
+    LetterGha,
     /// \u{11412}: '𑐒'
-    NewaLetterNga,
+    LetterNga,
     /// \u{11413}: '𑐓'
-    NewaLetterNgha,
+    LetterNgha,
     /// \u{11414}: '𑐔'
-    NewaLetterCa,
+    LetterCa,
     /// \u{11415}: '𑐕'
-    NewaLetterCha,
+    LetterCha,
     /// \u{11416}: '𑐖'
-    NewaLetterJa,
+    LetterJa,
     /// \u{11417}: '𑐗'
-    NewaLetterJha,
+    LetterJha,
     /// \u{11418}: '𑐘'
-    NewaLetterNya,
+    LetterNya,
     /// \u{11419}: '𑐙'
-    NewaLetterNyha,
+    LetterNyha,
     /// \u{1141a}: '𑐚'
-    NewaLetterTta,
+    LetterTta,
     /// \u{1141b}: '𑐛'
-    NewaLetterTtha,
+    LetterTtha,
     /// \u{1141c}: '𑐜'
-    NewaLetterDda,
+    LetterDda,
     /// \u{1141d}: '𑐝'
-    NewaLetterDdha,
+    LetterDdha,
     /// \u{1141e}: '𑐞'
-    NewaLetterNna,
+    LetterNna,
     /// \u{1141f}: '𑐟'
-    NewaLetterTa,
+    LetterTa,
     /// \u{11420}: '𑐠'
-    NewaLetterTha,
+    LetterTha,
     /// \u{11421}: '𑐡'
-    NewaLetterDa,
+    LetterDa,
     /// \u{11422}: '𑐢'
-    NewaLetterDha,
+    LetterDha,
     /// \u{11423}: '𑐣'
-    NewaLetterNa,
+    LetterNa,
     /// \u{11424}: '𑐤'
-    NewaLetterNha,
+    LetterNha,
     /// \u{11425}: '𑐥'
-    NewaLetterPa,
+    LetterPa,
     /// \u{11426}: '𑐦'
-    NewaLetterPha,
+    LetterPha,
     /// \u{11427}: '𑐧'
-    NewaLetterBa,
+    LetterBa,
     /// \u{11428}: '𑐨'
-    NewaLetterBha,
+    LetterBha,
     /// \u{11429}: '𑐩'
-    NewaLetterMa,
+    LetterMa,
     /// \u{1142a}: '𑐪'
-    NewaLetterMha,
+    LetterMha,
     /// \u{1142b}: '𑐫'
-    NewaLetterYa,
+    LetterYa,
     /// \u{1142c}: '𑐬'
-    NewaLetterRa,
+    LetterRa,
     /// \u{1142d}: '𑐭'
-    NewaLetterRha,
+    LetterRha,
     /// \u{1142e}: '𑐮'
-    NewaLetterLa,
+    LetterLa,
     /// \u{1142f}: '𑐯'
-    NewaLetterLha,
+    LetterLha,
     /// \u{11430}: '𑐰'
-    NewaLetterWa,
+    LetterWa,
     /// \u{11431}: '𑐱'
-    NewaLetterSha,
+    LetterSha,
     /// \u{11432}: '𑐲'
-    NewaLetterSsa,
+    LetterSsa,
     /// \u{11433}: '𑐳'
-    NewaLetterSa,
+    LetterSa,
     /// \u{11434}: '𑐴'
-    NewaLetterHa,
+    LetterHa,
     /// \u{11435}: '𑐵'
-    NewaVowelSignAa,
+    VowelSignAa,
     /// \u{11436}: '𑐶'
-    NewaVowelSignI,
+    VowelSignI,
     /// \u{11437}: '𑐷'
-    NewaVowelSignIi,
+    VowelSignIi,
     /// \u{11438}: '𑐸'
-    NewaVowelSignU,
+    VowelSignU,
     /// \u{11439}: '𑐹'
-    NewaVowelSignUu,
+    VowelSignUu,
     /// \u{1143a}: '𑐺'
-    NewaVowelSignVocalicR,
+    VowelSignVocalicR,
     /// \u{1143b}: '𑐻'
-    NewaVowelSignVocalicRr,
+    VowelSignVocalicRr,
     /// \u{1143c}: '𑐼'
-    NewaVowelSignVocalicL,
+    VowelSignVocalicL,
     /// \u{1143d}: '𑐽'
-    NewaVowelSignVocalicLl,
+    VowelSignVocalicLl,
     /// \u{1143e}: '𑐾'
-    NewaVowelSignE,
+    VowelSignE,
     /// \u{1143f}: '𑐿'
-    NewaVowelSignAi,
+    VowelSignAi,
     /// \u{11440}: '𑑀'
-    NewaVowelSignO,
+    VowelSignO,
     /// \u{11441}: '𑑁'
-    NewaVowelSignAu,
+    VowelSignAu,
     /// \u{11442}: '𑑂'
-    NewaSignVirama,
+    SignVirama,
     /// \u{11443}: '𑑃'
-    NewaSignCandrabindu,
+    SignCandrabindu,
     /// \u{11444}: '𑑄'
-    NewaSignAnusvara,
+    SignAnusvara,
     /// \u{11445}: '𑑅'
-    NewaSignVisarga,
+    SignVisarga,
     /// \u{11446}: '𑑆'
-    NewaSignNukta,
+    SignNukta,
     /// \u{11447}: '𑑇'
-    NewaSignAvagraha,
+    SignAvagraha,
     /// \u{11448}: '𑑈'
-    NewaSignFinalAnusvara,
+    SignFinalAnusvara,
     /// \u{11449}: '𑑉'
-    NewaOm,
+    Om,
     /// \u{1144a}: '𑑊'
-    NewaSiddhi,
+    Siddhi,
     /// \u{1144b}: '𑑋'
-    NewaDanda,
+    Danda,
     /// \u{1144c}: '𑑌'
-    NewaDoubleDanda,
+    DoubleDanda,
     /// \u{1144d}: '𑑍'
-    NewaComma,
+    Comma,
     /// \u{1144e}: '𑑎'
-    NewaGapFiller,
+    GapFiller,
     /// \u{1144f}: '𑑏'
-    NewaAbbreviationSign,
+    AbbreviationSign,
     /// \u{11450}: '𑑐'
-    NewaDigitZero,
+    DigitZero,
     /// \u{11451}: '𑑑'
-    NewaDigitOne,
+    DigitOne,
     /// \u{11452}: '𑑒'
-    NewaDigitTwo,
+    DigitTwo,
     /// \u{11453}: '𑑓'
-    NewaDigitThree,
+    DigitThree,
     /// \u{11454}: '𑑔'
-    NewaDigitFour,
+    DigitFour,
     /// \u{11455}: '𑑕'
-    NewaDigitFive,
+    DigitFive,
     /// \u{11456}: '𑑖'
-    NewaDigitSix,
+    DigitSix,
     /// \u{11457}: '𑑗'
-    NewaDigitSeven,
+    DigitSeven,
     /// \u{11458}: '𑑘'
-    NewaDigitEight,
+    DigitEight,
     /// \u{11459}: '𑑙'
-    NewaDigitNine,
+    DigitNine,
     /// \u{1145b}: '𑑛'
-    NewaPlaceholderMark,
+    PlaceholderMark,
     /// \u{1145d}: '𑑝'
-    NewaInsertionSign,
+    InsertionSign,
     /// \u{1145e}: '𑑞'
-    NewaSandhiMark,
+    SandhiMark,
     /// \u{1145f}: '𑑟'
-    NewaLetterVedicAnusvara,
+    LetterVedicAnusvara,
 }
 
 impl Into<char> for Newa {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Newa::NewaLetterA => NEWA_LETTER_A,
-            Newa::NewaLetterAa => NEWA_LETTER_AA,
-            Newa::NewaLetterI => NEWA_LETTER_I,
-            Newa::NewaLetterIi => NEWA_LETTER_II,
-            Newa::NewaLetterU => NEWA_LETTER_U,
-            Newa::NewaLetterUu => NEWA_LETTER_UU,
-            Newa::NewaLetterVocalicR => NEWA_LETTER_VOCALIC_R,
-            Newa::NewaLetterVocalicRr => NEWA_LETTER_VOCALIC_RR,
-            Newa::NewaLetterVocalicL => NEWA_LETTER_VOCALIC_L,
-            Newa::NewaLetterVocalicLl => NEWA_LETTER_VOCALIC_LL,
-            Newa::NewaLetterE => NEWA_LETTER_E,
-            Newa::NewaLetterAi => NEWA_LETTER_AI,
-            Newa::NewaLetterO => NEWA_LETTER_O,
-            Newa::NewaLetterAu => NEWA_LETTER_AU,
-            Newa::NewaLetterKa => NEWA_LETTER_KA,
-            Newa::NewaLetterKha => NEWA_LETTER_KHA,
-            Newa::NewaLetterGa => NEWA_LETTER_GA,
-            Newa::NewaLetterGha => NEWA_LETTER_GHA,
-            Newa::NewaLetterNga => NEWA_LETTER_NGA,
-            Newa::NewaLetterNgha => NEWA_LETTER_NGHA,
-            Newa::NewaLetterCa => NEWA_LETTER_CA,
-            Newa::NewaLetterCha => NEWA_LETTER_CHA,
-            Newa::NewaLetterJa => NEWA_LETTER_JA,
-            Newa::NewaLetterJha => NEWA_LETTER_JHA,
-            Newa::NewaLetterNya => NEWA_LETTER_NYA,
-            Newa::NewaLetterNyha => NEWA_LETTER_NYHA,
-            Newa::NewaLetterTta => NEWA_LETTER_TTA,
-            Newa::NewaLetterTtha => NEWA_LETTER_TTHA,
-            Newa::NewaLetterDda => NEWA_LETTER_DDA,
-            Newa::NewaLetterDdha => NEWA_LETTER_DDHA,
-            Newa::NewaLetterNna => NEWA_LETTER_NNA,
-            Newa::NewaLetterTa => NEWA_LETTER_TA,
-            Newa::NewaLetterTha => NEWA_LETTER_THA,
-            Newa::NewaLetterDa => NEWA_LETTER_DA,
-            Newa::NewaLetterDha => NEWA_LETTER_DHA,
-            Newa::NewaLetterNa => NEWA_LETTER_NA,
-            Newa::NewaLetterNha => NEWA_LETTER_NHA,
-            Newa::NewaLetterPa => NEWA_LETTER_PA,
-            Newa::NewaLetterPha => NEWA_LETTER_PHA,
-            Newa::NewaLetterBa => NEWA_LETTER_BA,
-            Newa::NewaLetterBha => NEWA_LETTER_BHA,
-            Newa::NewaLetterMa => NEWA_LETTER_MA,
-            Newa::NewaLetterMha => NEWA_LETTER_MHA,
-            Newa::NewaLetterYa => NEWA_LETTER_YA,
-            Newa::NewaLetterRa => NEWA_LETTER_RA,
-            Newa::NewaLetterRha => NEWA_LETTER_RHA,
-            Newa::NewaLetterLa => NEWA_LETTER_LA,
-            Newa::NewaLetterLha => NEWA_LETTER_LHA,
-            Newa::NewaLetterWa => NEWA_LETTER_WA,
-            Newa::NewaLetterSha => NEWA_LETTER_SHA,
-            Newa::NewaLetterSsa => NEWA_LETTER_SSA,
-            Newa::NewaLetterSa => NEWA_LETTER_SA,
-            Newa::NewaLetterHa => NEWA_LETTER_HA,
-            Newa::NewaVowelSignAa => NEWA_VOWEL_SIGN_AA,
-            Newa::NewaVowelSignI => NEWA_VOWEL_SIGN_I,
-            Newa::NewaVowelSignIi => NEWA_VOWEL_SIGN_II,
-            Newa::NewaVowelSignU => NEWA_VOWEL_SIGN_U,
-            Newa::NewaVowelSignUu => NEWA_VOWEL_SIGN_UU,
-            Newa::NewaVowelSignVocalicR => NEWA_VOWEL_SIGN_VOCALIC_R,
-            Newa::NewaVowelSignVocalicRr => NEWA_VOWEL_SIGN_VOCALIC_RR,
-            Newa::NewaVowelSignVocalicL => NEWA_VOWEL_SIGN_VOCALIC_L,
-            Newa::NewaVowelSignVocalicLl => NEWA_VOWEL_SIGN_VOCALIC_LL,
-            Newa::NewaVowelSignE => NEWA_VOWEL_SIGN_E,
-            Newa::NewaVowelSignAi => NEWA_VOWEL_SIGN_AI,
-            Newa::NewaVowelSignO => NEWA_VOWEL_SIGN_O,
-            Newa::NewaVowelSignAu => NEWA_VOWEL_SIGN_AU,
-            Newa::NewaSignVirama => NEWA_SIGN_VIRAMA,
-            Newa::NewaSignCandrabindu => NEWA_SIGN_CANDRABINDU,
-            Newa::NewaSignAnusvara => NEWA_SIGN_ANUSVARA,
-            Newa::NewaSignVisarga => NEWA_SIGN_VISARGA,
-            Newa::NewaSignNukta => NEWA_SIGN_NUKTA,
-            Newa::NewaSignAvagraha => NEWA_SIGN_AVAGRAHA,
-            Newa::NewaSignFinalAnusvara => NEWA_SIGN_FINAL_ANUSVARA,
-            Newa::NewaOm => NEWA_OM,
-            Newa::NewaSiddhi => NEWA_SIDDHI,
-            Newa::NewaDanda => NEWA_DANDA,
-            Newa::NewaDoubleDanda => NEWA_DOUBLE_DANDA,
-            Newa::NewaComma => NEWA_COMMA,
-            Newa::NewaGapFiller => NEWA_GAP_FILLER,
-            Newa::NewaAbbreviationSign => NEWA_ABBREVIATION_SIGN,
-            Newa::NewaDigitZero => NEWA_DIGIT_ZERO,
-            Newa::NewaDigitOne => NEWA_DIGIT_ONE,
-            Newa::NewaDigitTwo => NEWA_DIGIT_TWO,
-            Newa::NewaDigitThree => NEWA_DIGIT_THREE,
-            Newa::NewaDigitFour => NEWA_DIGIT_FOUR,
-            Newa::NewaDigitFive => NEWA_DIGIT_FIVE,
-            Newa::NewaDigitSix => NEWA_DIGIT_SIX,
-            Newa::NewaDigitSeven => NEWA_DIGIT_SEVEN,
-            Newa::NewaDigitEight => NEWA_DIGIT_EIGHT,
-            Newa::NewaDigitNine => NEWA_DIGIT_NINE,
-            Newa::NewaPlaceholderMark => NEWA_PLACEHOLDER_MARK,
-            Newa::NewaInsertionSign => NEWA_INSERTION_SIGN,
-            Newa::NewaSandhiMark => NEWA_SANDHI_MARK,
-            Newa::NewaLetterVedicAnusvara => NEWA_LETTER_VEDIC_ANUSVARA,
+            Newa::LetterA => LETTER_A,
+            Newa::LetterAa => LETTER_AA,
+            Newa::LetterI => LETTER_I,
+            Newa::LetterIi => LETTER_II,
+            Newa::LetterU => LETTER_U,
+            Newa::LetterUu => LETTER_UU,
+            Newa::LetterVocalicR => LETTER_VOCALIC_R,
+            Newa::LetterVocalicRr => LETTER_VOCALIC_RR,
+            Newa::LetterVocalicL => LETTER_VOCALIC_L,
+            Newa::LetterVocalicLl => LETTER_VOCALIC_LL,
+            Newa::LetterE => LETTER_E,
+            Newa::LetterAi => LETTER_AI,
+            Newa::LetterO => LETTER_O,
+            Newa::LetterAu => LETTER_AU,
+            Newa::LetterKa => LETTER_KA,
+            Newa::LetterKha => LETTER_KHA,
+            Newa::LetterGa => LETTER_GA,
+            Newa::LetterGha => LETTER_GHA,
+            Newa::LetterNga => LETTER_NGA,
+            Newa::LetterNgha => LETTER_NGHA,
+            Newa::LetterCa => LETTER_CA,
+            Newa::LetterCha => LETTER_CHA,
+            Newa::LetterJa => LETTER_JA,
+            Newa::LetterJha => LETTER_JHA,
+            Newa::LetterNya => LETTER_NYA,
+            Newa::LetterNyha => LETTER_NYHA,
+            Newa::LetterTta => LETTER_TTA,
+            Newa::LetterTtha => LETTER_TTHA,
+            Newa::LetterDda => LETTER_DDA,
+            Newa::LetterDdha => LETTER_DDHA,
+            Newa::LetterNna => LETTER_NNA,
+            Newa::LetterTa => LETTER_TA,
+            Newa::LetterTha => LETTER_THA,
+            Newa::LetterDa => LETTER_DA,
+            Newa::LetterDha => LETTER_DHA,
+            Newa::LetterNa => LETTER_NA,
+            Newa::LetterNha => LETTER_NHA,
+            Newa::LetterPa => LETTER_PA,
+            Newa::LetterPha => LETTER_PHA,
+            Newa::LetterBa => LETTER_BA,
+            Newa::LetterBha => LETTER_BHA,
+            Newa::LetterMa => LETTER_MA,
+            Newa::LetterMha => LETTER_MHA,
+            Newa::LetterYa => LETTER_YA,
+            Newa::LetterRa => LETTER_RA,
+            Newa::LetterRha => LETTER_RHA,
+            Newa::LetterLa => LETTER_LA,
+            Newa::LetterLha => LETTER_LHA,
+            Newa::LetterWa => LETTER_WA,
+            Newa::LetterSha => LETTER_SHA,
+            Newa::LetterSsa => LETTER_SSA,
+            Newa::LetterSa => LETTER_SA,
+            Newa::LetterHa => LETTER_HA,
+            Newa::VowelSignAa => VOWEL_SIGN_AA,
+            Newa::VowelSignI => VOWEL_SIGN_I,
+            Newa::VowelSignIi => VOWEL_SIGN_II,
+            Newa::VowelSignU => VOWEL_SIGN_U,
+            Newa::VowelSignUu => VOWEL_SIGN_UU,
+            Newa::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
+            Newa::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
+            Newa::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
+            Newa::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
+            Newa::VowelSignE => VOWEL_SIGN_E,
+            Newa::VowelSignAi => VOWEL_SIGN_AI,
+            Newa::VowelSignO => VOWEL_SIGN_O,
+            Newa::VowelSignAu => VOWEL_SIGN_AU,
+            Newa::SignVirama => SIGN_VIRAMA,
+            Newa::SignCandrabindu => SIGN_CANDRABINDU,
+            Newa::SignAnusvara => SIGN_ANUSVARA,
+            Newa::SignVisarga => SIGN_VISARGA,
+            Newa::SignNukta => SIGN_NUKTA,
+            Newa::SignAvagraha => SIGN_AVAGRAHA,
+            Newa::SignFinalAnusvara => SIGN_FINAL_ANUSVARA,
+            Newa::Om => OM,
+            Newa::Siddhi => SIDDHI,
+            Newa::Danda => DANDA,
+            Newa::DoubleDanda => DOUBLE_DANDA,
+            Newa::Comma => COMMA,
+            Newa::GapFiller => GAP_FILLER,
+            Newa::AbbreviationSign => ABBREVIATION_SIGN,
+            Newa::DigitZero => DIGIT_ZERO,
+            Newa::DigitOne => DIGIT_ONE,
+            Newa::DigitTwo => DIGIT_TWO,
+            Newa::DigitThree => DIGIT_THREE,
+            Newa::DigitFour => DIGIT_FOUR,
+            Newa::DigitFive => DIGIT_FIVE,
+            Newa::DigitSix => DIGIT_SIX,
+            Newa::DigitSeven => DIGIT_SEVEN,
+            Newa::DigitEight => DIGIT_EIGHT,
+            Newa::DigitNine => DIGIT_NINE,
+            Newa::PlaceholderMark => PLACEHOLDER_MARK,
+            Newa::InsertionSign => INSERTION_SIGN,
+            Newa::SandhiMark => SANDHI_MARK,
+            Newa::LetterVedicAnusvara => LETTER_VEDIC_ANUSVARA,
         }
     }
 }
@@ -504,100 +504,100 @@ impl std::convert::TryFrom<char> for Newa {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            NEWA_LETTER_A => Ok(Newa::NewaLetterA),
-            NEWA_LETTER_AA => Ok(Newa::NewaLetterAa),
-            NEWA_LETTER_I => Ok(Newa::NewaLetterI),
-            NEWA_LETTER_II => Ok(Newa::NewaLetterIi),
-            NEWA_LETTER_U => Ok(Newa::NewaLetterU),
-            NEWA_LETTER_UU => Ok(Newa::NewaLetterUu),
-            NEWA_LETTER_VOCALIC_R => Ok(Newa::NewaLetterVocalicR),
-            NEWA_LETTER_VOCALIC_RR => Ok(Newa::NewaLetterVocalicRr),
-            NEWA_LETTER_VOCALIC_L => Ok(Newa::NewaLetterVocalicL),
-            NEWA_LETTER_VOCALIC_LL => Ok(Newa::NewaLetterVocalicLl),
-            NEWA_LETTER_E => Ok(Newa::NewaLetterE),
-            NEWA_LETTER_AI => Ok(Newa::NewaLetterAi),
-            NEWA_LETTER_O => Ok(Newa::NewaLetterO),
-            NEWA_LETTER_AU => Ok(Newa::NewaLetterAu),
-            NEWA_LETTER_KA => Ok(Newa::NewaLetterKa),
-            NEWA_LETTER_KHA => Ok(Newa::NewaLetterKha),
-            NEWA_LETTER_GA => Ok(Newa::NewaLetterGa),
-            NEWA_LETTER_GHA => Ok(Newa::NewaLetterGha),
-            NEWA_LETTER_NGA => Ok(Newa::NewaLetterNga),
-            NEWA_LETTER_NGHA => Ok(Newa::NewaLetterNgha),
-            NEWA_LETTER_CA => Ok(Newa::NewaLetterCa),
-            NEWA_LETTER_CHA => Ok(Newa::NewaLetterCha),
-            NEWA_LETTER_JA => Ok(Newa::NewaLetterJa),
-            NEWA_LETTER_JHA => Ok(Newa::NewaLetterJha),
-            NEWA_LETTER_NYA => Ok(Newa::NewaLetterNya),
-            NEWA_LETTER_NYHA => Ok(Newa::NewaLetterNyha),
-            NEWA_LETTER_TTA => Ok(Newa::NewaLetterTta),
-            NEWA_LETTER_TTHA => Ok(Newa::NewaLetterTtha),
-            NEWA_LETTER_DDA => Ok(Newa::NewaLetterDda),
-            NEWA_LETTER_DDHA => Ok(Newa::NewaLetterDdha),
-            NEWA_LETTER_NNA => Ok(Newa::NewaLetterNna),
-            NEWA_LETTER_TA => Ok(Newa::NewaLetterTa),
-            NEWA_LETTER_THA => Ok(Newa::NewaLetterTha),
-            NEWA_LETTER_DA => Ok(Newa::NewaLetterDa),
-            NEWA_LETTER_DHA => Ok(Newa::NewaLetterDha),
-            NEWA_LETTER_NA => Ok(Newa::NewaLetterNa),
-            NEWA_LETTER_NHA => Ok(Newa::NewaLetterNha),
-            NEWA_LETTER_PA => Ok(Newa::NewaLetterPa),
-            NEWA_LETTER_PHA => Ok(Newa::NewaLetterPha),
-            NEWA_LETTER_BA => Ok(Newa::NewaLetterBa),
-            NEWA_LETTER_BHA => Ok(Newa::NewaLetterBha),
-            NEWA_LETTER_MA => Ok(Newa::NewaLetterMa),
-            NEWA_LETTER_MHA => Ok(Newa::NewaLetterMha),
-            NEWA_LETTER_YA => Ok(Newa::NewaLetterYa),
-            NEWA_LETTER_RA => Ok(Newa::NewaLetterRa),
-            NEWA_LETTER_RHA => Ok(Newa::NewaLetterRha),
-            NEWA_LETTER_LA => Ok(Newa::NewaLetterLa),
-            NEWA_LETTER_LHA => Ok(Newa::NewaLetterLha),
-            NEWA_LETTER_WA => Ok(Newa::NewaLetterWa),
-            NEWA_LETTER_SHA => Ok(Newa::NewaLetterSha),
-            NEWA_LETTER_SSA => Ok(Newa::NewaLetterSsa),
-            NEWA_LETTER_SA => Ok(Newa::NewaLetterSa),
-            NEWA_LETTER_HA => Ok(Newa::NewaLetterHa),
-            NEWA_VOWEL_SIGN_AA => Ok(Newa::NewaVowelSignAa),
-            NEWA_VOWEL_SIGN_I => Ok(Newa::NewaVowelSignI),
-            NEWA_VOWEL_SIGN_II => Ok(Newa::NewaVowelSignIi),
-            NEWA_VOWEL_SIGN_U => Ok(Newa::NewaVowelSignU),
-            NEWA_VOWEL_SIGN_UU => Ok(Newa::NewaVowelSignUu),
-            NEWA_VOWEL_SIGN_VOCALIC_R => Ok(Newa::NewaVowelSignVocalicR),
-            NEWA_VOWEL_SIGN_VOCALIC_RR => Ok(Newa::NewaVowelSignVocalicRr),
-            NEWA_VOWEL_SIGN_VOCALIC_L => Ok(Newa::NewaVowelSignVocalicL),
-            NEWA_VOWEL_SIGN_VOCALIC_LL => Ok(Newa::NewaVowelSignVocalicLl),
-            NEWA_VOWEL_SIGN_E => Ok(Newa::NewaVowelSignE),
-            NEWA_VOWEL_SIGN_AI => Ok(Newa::NewaVowelSignAi),
-            NEWA_VOWEL_SIGN_O => Ok(Newa::NewaVowelSignO),
-            NEWA_VOWEL_SIGN_AU => Ok(Newa::NewaVowelSignAu),
-            NEWA_SIGN_VIRAMA => Ok(Newa::NewaSignVirama),
-            NEWA_SIGN_CANDRABINDU => Ok(Newa::NewaSignCandrabindu),
-            NEWA_SIGN_ANUSVARA => Ok(Newa::NewaSignAnusvara),
-            NEWA_SIGN_VISARGA => Ok(Newa::NewaSignVisarga),
-            NEWA_SIGN_NUKTA => Ok(Newa::NewaSignNukta),
-            NEWA_SIGN_AVAGRAHA => Ok(Newa::NewaSignAvagraha),
-            NEWA_SIGN_FINAL_ANUSVARA => Ok(Newa::NewaSignFinalAnusvara),
-            NEWA_OM => Ok(Newa::NewaOm),
-            NEWA_SIDDHI => Ok(Newa::NewaSiddhi),
-            NEWA_DANDA => Ok(Newa::NewaDanda),
-            NEWA_DOUBLE_DANDA => Ok(Newa::NewaDoubleDanda),
-            NEWA_COMMA => Ok(Newa::NewaComma),
-            NEWA_GAP_FILLER => Ok(Newa::NewaGapFiller),
-            NEWA_ABBREVIATION_SIGN => Ok(Newa::NewaAbbreviationSign),
-            NEWA_DIGIT_ZERO => Ok(Newa::NewaDigitZero),
-            NEWA_DIGIT_ONE => Ok(Newa::NewaDigitOne),
-            NEWA_DIGIT_TWO => Ok(Newa::NewaDigitTwo),
-            NEWA_DIGIT_THREE => Ok(Newa::NewaDigitThree),
-            NEWA_DIGIT_FOUR => Ok(Newa::NewaDigitFour),
-            NEWA_DIGIT_FIVE => Ok(Newa::NewaDigitFive),
-            NEWA_DIGIT_SIX => Ok(Newa::NewaDigitSix),
-            NEWA_DIGIT_SEVEN => Ok(Newa::NewaDigitSeven),
-            NEWA_DIGIT_EIGHT => Ok(Newa::NewaDigitEight),
-            NEWA_DIGIT_NINE => Ok(Newa::NewaDigitNine),
-            NEWA_PLACEHOLDER_MARK => Ok(Newa::NewaPlaceholderMark),
-            NEWA_INSERTION_SIGN => Ok(Newa::NewaInsertionSign),
-            NEWA_SANDHI_MARK => Ok(Newa::NewaSandhiMark),
-            NEWA_LETTER_VEDIC_ANUSVARA => Ok(Newa::NewaLetterVedicAnusvara),
+            LETTER_A => Ok(Newa::LetterA),
+            LETTER_AA => Ok(Newa::LetterAa),
+            LETTER_I => Ok(Newa::LetterI),
+            LETTER_II => Ok(Newa::LetterIi),
+            LETTER_U => Ok(Newa::LetterU),
+            LETTER_UU => Ok(Newa::LetterUu),
+            LETTER_VOCALIC_R => Ok(Newa::LetterVocalicR),
+            LETTER_VOCALIC_RR => Ok(Newa::LetterVocalicRr),
+            LETTER_VOCALIC_L => Ok(Newa::LetterVocalicL),
+            LETTER_VOCALIC_LL => Ok(Newa::LetterVocalicLl),
+            LETTER_E => Ok(Newa::LetterE),
+            LETTER_AI => Ok(Newa::LetterAi),
+            LETTER_O => Ok(Newa::LetterO),
+            LETTER_AU => Ok(Newa::LetterAu),
+            LETTER_KA => Ok(Newa::LetterKa),
+            LETTER_KHA => Ok(Newa::LetterKha),
+            LETTER_GA => Ok(Newa::LetterGa),
+            LETTER_GHA => Ok(Newa::LetterGha),
+            LETTER_NGA => Ok(Newa::LetterNga),
+            LETTER_NGHA => Ok(Newa::LetterNgha),
+            LETTER_CA => Ok(Newa::LetterCa),
+            LETTER_CHA => Ok(Newa::LetterCha),
+            LETTER_JA => Ok(Newa::LetterJa),
+            LETTER_JHA => Ok(Newa::LetterJha),
+            LETTER_NYA => Ok(Newa::LetterNya),
+            LETTER_NYHA => Ok(Newa::LetterNyha),
+            LETTER_TTA => Ok(Newa::LetterTta),
+            LETTER_TTHA => Ok(Newa::LetterTtha),
+            LETTER_DDA => Ok(Newa::LetterDda),
+            LETTER_DDHA => Ok(Newa::LetterDdha),
+            LETTER_NNA => Ok(Newa::LetterNna),
+            LETTER_TA => Ok(Newa::LetterTa),
+            LETTER_THA => Ok(Newa::LetterTha),
+            LETTER_DA => Ok(Newa::LetterDa),
+            LETTER_DHA => Ok(Newa::LetterDha),
+            LETTER_NA => Ok(Newa::LetterNa),
+            LETTER_NHA => Ok(Newa::LetterNha),
+            LETTER_PA => Ok(Newa::LetterPa),
+            LETTER_PHA => Ok(Newa::LetterPha),
+            LETTER_BA => Ok(Newa::LetterBa),
+            LETTER_BHA => Ok(Newa::LetterBha),
+            LETTER_MA => Ok(Newa::LetterMa),
+            LETTER_MHA => Ok(Newa::LetterMha),
+            LETTER_YA => Ok(Newa::LetterYa),
+            LETTER_RA => Ok(Newa::LetterRa),
+            LETTER_RHA => Ok(Newa::LetterRha),
+            LETTER_LA => Ok(Newa::LetterLa),
+            LETTER_LHA => Ok(Newa::LetterLha),
+            LETTER_WA => Ok(Newa::LetterWa),
+            LETTER_SHA => Ok(Newa::LetterSha),
+            LETTER_SSA => Ok(Newa::LetterSsa),
+            LETTER_SA => Ok(Newa::LetterSa),
+            LETTER_HA => Ok(Newa::LetterHa),
+            VOWEL_SIGN_AA => Ok(Newa::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Newa::VowelSignI),
+            VOWEL_SIGN_II => Ok(Newa::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Newa::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Newa::VowelSignUu),
+            VOWEL_SIGN_VOCALIC_R => Ok(Newa::VowelSignVocalicR),
+            VOWEL_SIGN_VOCALIC_RR => Ok(Newa::VowelSignVocalicRr),
+            VOWEL_SIGN_VOCALIC_L => Ok(Newa::VowelSignVocalicL),
+            VOWEL_SIGN_VOCALIC_LL => Ok(Newa::VowelSignVocalicLl),
+            VOWEL_SIGN_E => Ok(Newa::VowelSignE),
+            VOWEL_SIGN_AI => Ok(Newa::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Newa::VowelSignO),
+            VOWEL_SIGN_AU => Ok(Newa::VowelSignAu),
+            SIGN_VIRAMA => Ok(Newa::SignVirama),
+            SIGN_CANDRABINDU => Ok(Newa::SignCandrabindu),
+            SIGN_ANUSVARA => Ok(Newa::SignAnusvara),
+            SIGN_VISARGA => Ok(Newa::SignVisarga),
+            SIGN_NUKTA => Ok(Newa::SignNukta),
+            SIGN_AVAGRAHA => Ok(Newa::SignAvagraha),
+            SIGN_FINAL_ANUSVARA => Ok(Newa::SignFinalAnusvara),
+            OM => Ok(Newa::Om),
+            SIDDHI => Ok(Newa::Siddhi),
+            DANDA => Ok(Newa::Danda),
+            DOUBLE_DANDA => Ok(Newa::DoubleDanda),
+            COMMA => Ok(Newa::Comma),
+            GAP_FILLER => Ok(Newa::GapFiller),
+            ABBREVIATION_SIGN => Ok(Newa::AbbreviationSign),
+            DIGIT_ZERO => Ok(Newa::DigitZero),
+            DIGIT_ONE => Ok(Newa::DigitOne),
+            DIGIT_TWO => Ok(Newa::DigitTwo),
+            DIGIT_THREE => Ok(Newa::DigitThree),
+            DIGIT_FOUR => Ok(Newa::DigitFour),
+            DIGIT_FIVE => Ok(Newa::DigitFive),
+            DIGIT_SIX => Ok(Newa::DigitSix),
+            DIGIT_SEVEN => Ok(Newa::DigitSeven),
+            DIGIT_EIGHT => Ok(Newa::DigitEight),
+            DIGIT_NINE => Ok(Newa::DigitNine),
+            PLACEHOLDER_MARK => Ok(Newa::PlaceholderMark),
+            INSERTION_SIGN => Ok(Newa::InsertionSign),
+            SANDHI_MARK => Ok(Newa::SandhiMark),
+            LETTER_VEDIC_ANUSVARA => Ok(Newa::LetterVedicAnusvara),
             _ => Err(()),
         }
     }
@@ -636,108 +636,108 @@ impl Iterator for Newa {
 }
 
 impl Newa {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Newa::NewaLetterA
+        Newa::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Newa::NewaLetterA => "newa letter a",
-            Newa::NewaLetterAa => "newa letter aa",
-            Newa::NewaLetterI => "newa letter i",
-            Newa::NewaLetterIi => "newa letter ii",
-            Newa::NewaLetterU => "newa letter u",
-            Newa::NewaLetterUu => "newa letter uu",
-            Newa::NewaLetterVocalicR => "newa letter vocalic r",
-            Newa::NewaLetterVocalicRr => "newa letter vocalic rr",
-            Newa::NewaLetterVocalicL => "newa letter vocalic l",
-            Newa::NewaLetterVocalicLl => "newa letter vocalic ll",
-            Newa::NewaLetterE => "newa letter e",
-            Newa::NewaLetterAi => "newa letter ai",
-            Newa::NewaLetterO => "newa letter o",
-            Newa::NewaLetterAu => "newa letter au",
-            Newa::NewaLetterKa => "newa letter ka",
-            Newa::NewaLetterKha => "newa letter kha",
-            Newa::NewaLetterGa => "newa letter ga",
-            Newa::NewaLetterGha => "newa letter gha",
-            Newa::NewaLetterNga => "newa letter nga",
-            Newa::NewaLetterNgha => "newa letter ngha",
-            Newa::NewaLetterCa => "newa letter ca",
-            Newa::NewaLetterCha => "newa letter cha",
-            Newa::NewaLetterJa => "newa letter ja",
-            Newa::NewaLetterJha => "newa letter jha",
-            Newa::NewaLetterNya => "newa letter nya",
-            Newa::NewaLetterNyha => "newa letter nyha",
-            Newa::NewaLetterTta => "newa letter tta",
-            Newa::NewaLetterTtha => "newa letter ttha",
-            Newa::NewaLetterDda => "newa letter dda",
-            Newa::NewaLetterDdha => "newa letter ddha",
-            Newa::NewaLetterNna => "newa letter nna",
-            Newa::NewaLetterTa => "newa letter ta",
-            Newa::NewaLetterTha => "newa letter tha",
-            Newa::NewaLetterDa => "newa letter da",
-            Newa::NewaLetterDha => "newa letter dha",
-            Newa::NewaLetterNa => "newa letter na",
-            Newa::NewaLetterNha => "newa letter nha",
-            Newa::NewaLetterPa => "newa letter pa",
-            Newa::NewaLetterPha => "newa letter pha",
-            Newa::NewaLetterBa => "newa letter ba",
-            Newa::NewaLetterBha => "newa letter bha",
-            Newa::NewaLetterMa => "newa letter ma",
-            Newa::NewaLetterMha => "newa letter mha",
-            Newa::NewaLetterYa => "newa letter ya",
-            Newa::NewaLetterRa => "newa letter ra",
-            Newa::NewaLetterRha => "newa letter rha",
-            Newa::NewaLetterLa => "newa letter la",
-            Newa::NewaLetterLha => "newa letter lha",
-            Newa::NewaLetterWa => "newa letter wa",
-            Newa::NewaLetterSha => "newa letter sha",
-            Newa::NewaLetterSsa => "newa letter ssa",
-            Newa::NewaLetterSa => "newa letter sa",
-            Newa::NewaLetterHa => "newa letter ha",
-            Newa::NewaVowelSignAa => "newa vowel sign aa",
-            Newa::NewaVowelSignI => "newa vowel sign i",
-            Newa::NewaVowelSignIi => "newa vowel sign ii",
-            Newa::NewaVowelSignU => "newa vowel sign u",
-            Newa::NewaVowelSignUu => "newa vowel sign uu",
-            Newa::NewaVowelSignVocalicR => "newa vowel sign vocalic r",
-            Newa::NewaVowelSignVocalicRr => "newa vowel sign vocalic rr",
-            Newa::NewaVowelSignVocalicL => "newa vowel sign vocalic l",
-            Newa::NewaVowelSignVocalicLl => "newa vowel sign vocalic ll",
-            Newa::NewaVowelSignE => "newa vowel sign e",
-            Newa::NewaVowelSignAi => "newa vowel sign ai",
-            Newa::NewaVowelSignO => "newa vowel sign o",
-            Newa::NewaVowelSignAu => "newa vowel sign au",
-            Newa::NewaSignVirama => "newa sign virama",
-            Newa::NewaSignCandrabindu => "newa sign candrabindu",
-            Newa::NewaSignAnusvara => "newa sign anusvara",
-            Newa::NewaSignVisarga => "newa sign visarga",
-            Newa::NewaSignNukta => "newa sign nukta",
-            Newa::NewaSignAvagraha => "newa sign avagraha",
-            Newa::NewaSignFinalAnusvara => "newa sign final anusvara",
-            Newa::NewaOm => "newa om",
-            Newa::NewaSiddhi => "newa siddhi",
-            Newa::NewaDanda => "newa danda",
-            Newa::NewaDoubleDanda => "newa double danda",
-            Newa::NewaComma => "newa comma",
-            Newa::NewaGapFiller => "newa gap filler",
-            Newa::NewaAbbreviationSign => "newa abbreviation sign",
-            Newa::NewaDigitZero => "newa digit zero",
-            Newa::NewaDigitOne => "newa digit one",
-            Newa::NewaDigitTwo => "newa digit two",
-            Newa::NewaDigitThree => "newa digit three",
-            Newa::NewaDigitFour => "newa digit four",
-            Newa::NewaDigitFive => "newa digit five",
-            Newa::NewaDigitSix => "newa digit six",
-            Newa::NewaDigitSeven => "newa digit seven",
-            Newa::NewaDigitEight => "newa digit eight",
-            Newa::NewaDigitNine => "newa digit nine",
-            Newa::NewaPlaceholderMark => "newa placeholder mark",
-            Newa::NewaInsertionSign => "newa insertion sign",
-            Newa::NewaSandhiMark => "newa sandhi mark",
-            Newa::NewaLetterVedicAnusvara => "newa letter vedic anusvara",
+            Newa::LetterA => "newa letter a",
+            Newa::LetterAa => "newa letter aa",
+            Newa::LetterI => "newa letter i",
+            Newa::LetterIi => "newa letter ii",
+            Newa::LetterU => "newa letter u",
+            Newa::LetterUu => "newa letter uu",
+            Newa::LetterVocalicR => "newa letter vocalic r",
+            Newa::LetterVocalicRr => "newa letter vocalic rr",
+            Newa::LetterVocalicL => "newa letter vocalic l",
+            Newa::LetterVocalicLl => "newa letter vocalic ll",
+            Newa::LetterE => "newa letter e",
+            Newa::LetterAi => "newa letter ai",
+            Newa::LetterO => "newa letter o",
+            Newa::LetterAu => "newa letter au",
+            Newa::LetterKa => "newa letter ka",
+            Newa::LetterKha => "newa letter kha",
+            Newa::LetterGa => "newa letter ga",
+            Newa::LetterGha => "newa letter gha",
+            Newa::LetterNga => "newa letter nga",
+            Newa::LetterNgha => "newa letter ngha",
+            Newa::LetterCa => "newa letter ca",
+            Newa::LetterCha => "newa letter cha",
+            Newa::LetterJa => "newa letter ja",
+            Newa::LetterJha => "newa letter jha",
+            Newa::LetterNya => "newa letter nya",
+            Newa::LetterNyha => "newa letter nyha",
+            Newa::LetterTta => "newa letter tta",
+            Newa::LetterTtha => "newa letter ttha",
+            Newa::LetterDda => "newa letter dda",
+            Newa::LetterDdha => "newa letter ddha",
+            Newa::LetterNna => "newa letter nna",
+            Newa::LetterTa => "newa letter ta",
+            Newa::LetterTha => "newa letter tha",
+            Newa::LetterDa => "newa letter da",
+            Newa::LetterDha => "newa letter dha",
+            Newa::LetterNa => "newa letter na",
+            Newa::LetterNha => "newa letter nha",
+            Newa::LetterPa => "newa letter pa",
+            Newa::LetterPha => "newa letter pha",
+            Newa::LetterBa => "newa letter ba",
+            Newa::LetterBha => "newa letter bha",
+            Newa::LetterMa => "newa letter ma",
+            Newa::LetterMha => "newa letter mha",
+            Newa::LetterYa => "newa letter ya",
+            Newa::LetterRa => "newa letter ra",
+            Newa::LetterRha => "newa letter rha",
+            Newa::LetterLa => "newa letter la",
+            Newa::LetterLha => "newa letter lha",
+            Newa::LetterWa => "newa letter wa",
+            Newa::LetterSha => "newa letter sha",
+            Newa::LetterSsa => "newa letter ssa",
+            Newa::LetterSa => "newa letter sa",
+            Newa::LetterHa => "newa letter ha",
+            Newa::VowelSignAa => "newa vowel sign aa",
+            Newa::VowelSignI => "newa vowel sign i",
+            Newa::VowelSignIi => "newa vowel sign ii",
+            Newa::VowelSignU => "newa vowel sign u",
+            Newa::VowelSignUu => "newa vowel sign uu",
+            Newa::VowelSignVocalicR => "newa vowel sign vocalic r",
+            Newa::VowelSignVocalicRr => "newa vowel sign vocalic rr",
+            Newa::VowelSignVocalicL => "newa vowel sign vocalic l",
+            Newa::VowelSignVocalicLl => "newa vowel sign vocalic ll",
+            Newa::VowelSignE => "newa vowel sign e",
+            Newa::VowelSignAi => "newa vowel sign ai",
+            Newa::VowelSignO => "newa vowel sign o",
+            Newa::VowelSignAu => "newa vowel sign au",
+            Newa::SignVirama => "newa sign virama",
+            Newa::SignCandrabindu => "newa sign candrabindu",
+            Newa::SignAnusvara => "newa sign anusvara",
+            Newa::SignVisarga => "newa sign visarga",
+            Newa::SignNukta => "newa sign nukta",
+            Newa::SignAvagraha => "newa sign avagraha",
+            Newa::SignFinalAnusvara => "newa sign final anusvara",
+            Newa::Om => "newa om",
+            Newa::Siddhi => "newa siddhi",
+            Newa::Danda => "newa danda",
+            Newa::DoubleDanda => "newa double danda",
+            Newa::Comma => "newa comma",
+            Newa::GapFiller => "newa gap filler",
+            Newa::AbbreviationSign => "newa abbreviation sign",
+            Newa::DigitZero => "newa digit zero",
+            Newa::DigitOne => "newa digit one",
+            Newa::DigitTwo => "newa digit two",
+            Newa::DigitThree => "newa digit three",
+            Newa::DigitFour => "newa digit four",
+            Newa::DigitFive => "newa digit five",
+            Newa::DigitSix => "newa digit six",
+            Newa::DigitSeven => "newa digit seven",
+            Newa::DigitEight => "newa digit eight",
+            Newa::DigitNine => "newa digit nine",
+            Newa::PlaceholderMark => "newa placeholder mark",
+            Newa::InsertionSign => "newa insertion sign",
+            Newa::SandhiMark => "newa sandhi mark",
+            Newa::LetterVedicAnusvara => "newa letter vedic anusvara",
         }
     }
 }

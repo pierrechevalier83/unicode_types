@@ -1230,7 +1230,7 @@ impl Iterator for Dingbats {
 }
 
 impl Dingbats {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         Dingbats::BlackSafetyScissors
     }

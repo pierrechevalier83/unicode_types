@@ -1440,7 +1440,7 @@ impl Iterator for HalfwidthandFullwidthForms {
 }
 
 impl HalfwidthandFullwidthForms {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         HalfwidthandFullwidthForms::FullwidthExclamationMark
     }

@@ -4,67 +4,67 @@
 /// 𐪐 𐪑 𐪒 𐪓 𐪔 𐪕 𐪖 𐪗 𐪘 𐪙 𐪚 𐪛 𐪜 𐪝 𐪞
 pub mod constants {
     /// \u{10a80}: '𐪀'
-    pub const OLD_NORTH_ARABIAN_LETTER_HEH: char = '𐪀';
+    pub const LETTER_HEH: char = '𐪀';
     /// \u{10a81}: '𐪁'
-    pub const OLD_NORTH_ARABIAN_LETTER_LAM: char = '𐪁';
+    pub const LETTER_LAM: char = '𐪁';
     /// \u{10a82}: '𐪂'
-    pub const OLD_NORTH_ARABIAN_LETTER_HAH: char = '𐪂';
+    pub const LETTER_HAH: char = '𐪂';
     /// \u{10a83}: '𐪃'
-    pub const OLD_NORTH_ARABIAN_LETTER_MEEM: char = '𐪃';
+    pub const LETTER_MEEM: char = '𐪃';
     /// \u{10a84}: '𐪄'
-    pub const OLD_NORTH_ARABIAN_LETTER_QAF: char = '𐪄';
+    pub const LETTER_QAF: char = '𐪄';
     /// \u{10a85}: '𐪅'
-    pub const OLD_NORTH_ARABIAN_LETTER_WAW: char = '𐪅';
+    pub const LETTER_WAW: char = '𐪅';
     /// \u{10a86}: '𐪆'
-    pub const OLD_NORTH_ARABIAN_LETTER_ES_DASH_2: char = '𐪆';
+    pub const LETTER_ES_DASH_2: char = '𐪆';
     /// \u{10a87}: '𐪇'
-    pub const OLD_NORTH_ARABIAN_LETTER_REH: char = '𐪇';
+    pub const LETTER_REH: char = '𐪇';
     /// \u{10a88}: '𐪈'
-    pub const OLD_NORTH_ARABIAN_LETTER_BEH: char = '𐪈';
+    pub const LETTER_BEH: char = '𐪈';
     /// \u{10a89}: '𐪉'
-    pub const OLD_NORTH_ARABIAN_LETTER_TEH: char = '𐪉';
+    pub const LETTER_TEH: char = '𐪉';
     /// \u{10a8a}: '𐪊'
-    pub const OLD_NORTH_ARABIAN_LETTER_ES_DASH_1: char = '𐪊';
+    pub const LETTER_ES_DASH_1: char = '𐪊';
     /// \u{10a8b}: '𐪋'
-    pub const OLD_NORTH_ARABIAN_LETTER_KAF: char = '𐪋';
+    pub const LETTER_KAF: char = '𐪋';
     /// \u{10a8c}: '𐪌'
-    pub const OLD_NORTH_ARABIAN_LETTER_NOON: char = '𐪌';
+    pub const LETTER_NOON: char = '𐪌';
     /// \u{10a8d}: '𐪍'
-    pub const OLD_NORTH_ARABIAN_LETTER_KHAH: char = '𐪍';
+    pub const LETTER_KHAH: char = '𐪍';
     /// \u{10a8e}: '𐪎'
-    pub const OLD_NORTH_ARABIAN_LETTER_SAD: char = '𐪎';
+    pub const LETTER_SAD: char = '𐪎';
     /// \u{10a8f}: '𐪏'
-    pub const OLD_NORTH_ARABIAN_LETTER_ES_DASH_3: char = '𐪏';
+    pub const LETTER_ES_DASH_3: char = '𐪏';
     /// \u{10a90}: '𐪐'
-    pub const OLD_NORTH_ARABIAN_LETTER_FEH: char = '𐪐';
+    pub const LETTER_FEH: char = '𐪐';
     /// \u{10a91}: '𐪑'
-    pub const OLD_NORTH_ARABIAN_LETTER_ALEF: char = '𐪑';
+    pub const LETTER_ALEF: char = '𐪑';
     /// \u{10a92}: '𐪒'
-    pub const OLD_NORTH_ARABIAN_LETTER_AIN: char = '𐪒';
+    pub const LETTER_AIN: char = '𐪒';
     /// \u{10a93}: '𐪓'
-    pub const OLD_NORTH_ARABIAN_LETTER_DAD: char = '𐪓';
+    pub const LETTER_DAD: char = '𐪓';
     /// \u{10a94}: '𐪔'
-    pub const OLD_NORTH_ARABIAN_LETTER_GEEM: char = '𐪔';
+    pub const LETTER_GEEM: char = '𐪔';
     /// \u{10a95}: '𐪕'
-    pub const OLD_NORTH_ARABIAN_LETTER_DAL: char = '𐪕';
+    pub const LETTER_DAL: char = '𐪕';
     /// \u{10a96}: '𐪖'
-    pub const OLD_NORTH_ARABIAN_LETTER_GHAIN: char = '𐪖';
+    pub const LETTER_GHAIN: char = '𐪖';
     /// \u{10a97}: '𐪗'
-    pub const OLD_NORTH_ARABIAN_LETTER_TAH: char = '𐪗';
+    pub const LETTER_TAH: char = '𐪗';
     /// \u{10a98}: '𐪘'
-    pub const OLD_NORTH_ARABIAN_LETTER_ZAIN: char = '𐪘';
+    pub const LETTER_ZAIN: char = '𐪘';
     /// \u{10a99}: '𐪙'
-    pub const OLD_NORTH_ARABIAN_LETTER_THAL: char = '𐪙';
+    pub const LETTER_THAL: char = '𐪙';
     /// \u{10a9a}: '𐪚'
-    pub const OLD_NORTH_ARABIAN_LETTER_YEH: char = '𐪚';
+    pub const LETTER_YEH: char = '𐪚';
     /// \u{10a9b}: '𐪛'
-    pub const OLD_NORTH_ARABIAN_LETTER_THEH: char = '𐪛';
+    pub const LETTER_THEH: char = '𐪛';
     /// \u{10a9c}: '𐪜'
-    pub const OLD_NORTH_ARABIAN_LETTER_ZAH: char = '𐪜';
+    pub const LETTER_ZAH: char = '𐪜';
     /// \u{10a9d}: '𐪝'
-    pub const OLD_NORTH_ARABIAN_NUMBER_ONE: char = '𐪝';
+    pub const NUMBER_ONE: char = '𐪝';
     /// \u{10a9e}: '𐪞'
-    pub const OLD_NORTH_ARABIAN_NUMBER_TEN: char = '𐪞';
+    pub const NUMBER_TEN: char = '𐪞';
 }
 
 /// \u{10a80} → \u{10a9f}\
@@ -74,104 +74,104 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OldNorthArabian {
     /// \u{10a80}: '𐪀'
-    OldNorthArabianLetterHeh,
+    LetterHeh,
     /// \u{10a81}: '𐪁'
-    OldNorthArabianLetterLam,
+    LetterLam,
     /// \u{10a82}: '𐪂'
-    OldNorthArabianLetterHah,
+    LetterHah,
     /// \u{10a83}: '𐪃'
-    OldNorthArabianLetterMeem,
+    LetterMeem,
     /// \u{10a84}: '𐪄'
-    OldNorthArabianLetterQaf,
+    LetterQaf,
     /// \u{10a85}: '𐪅'
-    OldNorthArabianLetterWaw,
+    LetterWaw,
     /// \u{10a86}: '𐪆'
-    OldNorthArabianLetterEsDash2,
+    LetterEsDash2,
     /// \u{10a87}: '𐪇'
-    OldNorthArabianLetterReh,
+    LetterReh,
     /// \u{10a88}: '𐪈'
-    OldNorthArabianLetterBeh,
+    LetterBeh,
     /// \u{10a89}: '𐪉'
-    OldNorthArabianLetterTeh,
+    LetterTeh,
     /// \u{10a8a}: '𐪊'
-    OldNorthArabianLetterEsDash1,
+    LetterEsDash1,
     /// \u{10a8b}: '𐪋'
-    OldNorthArabianLetterKaf,
+    LetterKaf,
     /// \u{10a8c}: '𐪌'
-    OldNorthArabianLetterNoon,
+    LetterNoon,
     /// \u{10a8d}: '𐪍'
-    OldNorthArabianLetterKhah,
+    LetterKhah,
     /// \u{10a8e}: '𐪎'
-    OldNorthArabianLetterSad,
+    LetterSad,
     /// \u{10a8f}: '𐪏'
-    OldNorthArabianLetterEsDash3,
+    LetterEsDash3,
     /// \u{10a90}: '𐪐'
-    OldNorthArabianLetterFeh,
+    LetterFeh,
     /// \u{10a91}: '𐪑'
-    OldNorthArabianLetterAlef,
+    LetterAlef,
     /// \u{10a92}: '𐪒'
-    OldNorthArabianLetterAin,
+    LetterAin,
     /// \u{10a93}: '𐪓'
-    OldNorthArabianLetterDad,
+    LetterDad,
     /// \u{10a94}: '𐪔'
-    OldNorthArabianLetterGeem,
+    LetterGeem,
     /// \u{10a95}: '𐪕'
-    OldNorthArabianLetterDal,
+    LetterDal,
     /// \u{10a96}: '𐪖'
-    OldNorthArabianLetterGhain,
+    LetterGhain,
     /// \u{10a97}: '𐪗'
-    OldNorthArabianLetterTah,
+    LetterTah,
     /// \u{10a98}: '𐪘'
-    OldNorthArabianLetterZain,
+    LetterZain,
     /// \u{10a99}: '𐪙'
-    OldNorthArabianLetterThal,
+    LetterThal,
     /// \u{10a9a}: '𐪚'
-    OldNorthArabianLetterYeh,
+    LetterYeh,
     /// \u{10a9b}: '𐪛'
-    OldNorthArabianLetterTheh,
+    LetterTheh,
     /// \u{10a9c}: '𐪜'
-    OldNorthArabianLetterZah,
+    LetterZah,
     /// \u{10a9d}: '𐪝'
-    OldNorthArabianNumberOne,
+    NumberOne,
     /// \u{10a9e}: '𐪞'
-    OldNorthArabianNumberTen,
+    NumberTen,
 }
 
 impl Into<char> for OldNorthArabian {
     fn into(self) -> char {
         use constants::*;
         match self {
-            OldNorthArabian::OldNorthArabianLetterHeh => OLD_NORTH_ARABIAN_LETTER_HEH,
-            OldNorthArabian::OldNorthArabianLetterLam => OLD_NORTH_ARABIAN_LETTER_LAM,
-            OldNorthArabian::OldNorthArabianLetterHah => OLD_NORTH_ARABIAN_LETTER_HAH,
-            OldNorthArabian::OldNorthArabianLetterMeem => OLD_NORTH_ARABIAN_LETTER_MEEM,
-            OldNorthArabian::OldNorthArabianLetterQaf => OLD_NORTH_ARABIAN_LETTER_QAF,
-            OldNorthArabian::OldNorthArabianLetterWaw => OLD_NORTH_ARABIAN_LETTER_WAW,
-            OldNorthArabian::OldNorthArabianLetterEsDash2 => OLD_NORTH_ARABIAN_LETTER_ES_DASH_2,
-            OldNorthArabian::OldNorthArabianLetterReh => OLD_NORTH_ARABIAN_LETTER_REH,
-            OldNorthArabian::OldNorthArabianLetterBeh => OLD_NORTH_ARABIAN_LETTER_BEH,
-            OldNorthArabian::OldNorthArabianLetterTeh => OLD_NORTH_ARABIAN_LETTER_TEH,
-            OldNorthArabian::OldNorthArabianLetterEsDash1 => OLD_NORTH_ARABIAN_LETTER_ES_DASH_1,
-            OldNorthArabian::OldNorthArabianLetterKaf => OLD_NORTH_ARABIAN_LETTER_KAF,
-            OldNorthArabian::OldNorthArabianLetterNoon => OLD_NORTH_ARABIAN_LETTER_NOON,
-            OldNorthArabian::OldNorthArabianLetterKhah => OLD_NORTH_ARABIAN_LETTER_KHAH,
-            OldNorthArabian::OldNorthArabianLetterSad => OLD_NORTH_ARABIAN_LETTER_SAD,
-            OldNorthArabian::OldNorthArabianLetterEsDash3 => OLD_NORTH_ARABIAN_LETTER_ES_DASH_3,
-            OldNorthArabian::OldNorthArabianLetterFeh => OLD_NORTH_ARABIAN_LETTER_FEH,
-            OldNorthArabian::OldNorthArabianLetterAlef => OLD_NORTH_ARABIAN_LETTER_ALEF,
-            OldNorthArabian::OldNorthArabianLetterAin => OLD_NORTH_ARABIAN_LETTER_AIN,
-            OldNorthArabian::OldNorthArabianLetterDad => OLD_NORTH_ARABIAN_LETTER_DAD,
-            OldNorthArabian::OldNorthArabianLetterGeem => OLD_NORTH_ARABIAN_LETTER_GEEM,
-            OldNorthArabian::OldNorthArabianLetterDal => OLD_NORTH_ARABIAN_LETTER_DAL,
-            OldNorthArabian::OldNorthArabianLetterGhain => OLD_NORTH_ARABIAN_LETTER_GHAIN,
-            OldNorthArabian::OldNorthArabianLetterTah => OLD_NORTH_ARABIAN_LETTER_TAH,
-            OldNorthArabian::OldNorthArabianLetterZain => OLD_NORTH_ARABIAN_LETTER_ZAIN,
-            OldNorthArabian::OldNorthArabianLetterThal => OLD_NORTH_ARABIAN_LETTER_THAL,
-            OldNorthArabian::OldNorthArabianLetterYeh => OLD_NORTH_ARABIAN_LETTER_YEH,
-            OldNorthArabian::OldNorthArabianLetterTheh => OLD_NORTH_ARABIAN_LETTER_THEH,
-            OldNorthArabian::OldNorthArabianLetterZah => OLD_NORTH_ARABIAN_LETTER_ZAH,
-            OldNorthArabian::OldNorthArabianNumberOne => OLD_NORTH_ARABIAN_NUMBER_ONE,
-            OldNorthArabian::OldNorthArabianNumberTen => OLD_NORTH_ARABIAN_NUMBER_TEN,
+            OldNorthArabian::LetterHeh => LETTER_HEH,
+            OldNorthArabian::LetterLam => LETTER_LAM,
+            OldNorthArabian::LetterHah => LETTER_HAH,
+            OldNorthArabian::LetterMeem => LETTER_MEEM,
+            OldNorthArabian::LetterQaf => LETTER_QAF,
+            OldNorthArabian::LetterWaw => LETTER_WAW,
+            OldNorthArabian::LetterEsDash2 => LETTER_ES_DASH_2,
+            OldNorthArabian::LetterReh => LETTER_REH,
+            OldNorthArabian::LetterBeh => LETTER_BEH,
+            OldNorthArabian::LetterTeh => LETTER_TEH,
+            OldNorthArabian::LetterEsDash1 => LETTER_ES_DASH_1,
+            OldNorthArabian::LetterKaf => LETTER_KAF,
+            OldNorthArabian::LetterNoon => LETTER_NOON,
+            OldNorthArabian::LetterKhah => LETTER_KHAH,
+            OldNorthArabian::LetterSad => LETTER_SAD,
+            OldNorthArabian::LetterEsDash3 => LETTER_ES_DASH_3,
+            OldNorthArabian::LetterFeh => LETTER_FEH,
+            OldNorthArabian::LetterAlef => LETTER_ALEF,
+            OldNorthArabian::LetterAin => LETTER_AIN,
+            OldNorthArabian::LetterDad => LETTER_DAD,
+            OldNorthArabian::LetterGeem => LETTER_GEEM,
+            OldNorthArabian::LetterDal => LETTER_DAL,
+            OldNorthArabian::LetterGhain => LETTER_GHAIN,
+            OldNorthArabian::LetterTah => LETTER_TAH,
+            OldNorthArabian::LetterZain => LETTER_ZAIN,
+            OldNorthArabian::LetterThal => LETTER_THAL,
+            OldNorthArabian::LetterYeh => LETTER_YEH,
+            OldNorthArabian::LetterTheh => LETTER_THEH,
+            OldNorthArabian::LetterZah => LETTER_ZAH,
+            OldNorthArabian::NumberOne => NUMBER_ONE,
+            OldNorthArabian::NumberTen => NUMBER_TEN,
         }
     }
 }
@@ -181,37 +181,37 @@ impl std::convert::TryFrom<char> for OldNorthArabian {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            OLD_NORTH_ARABIAN_LETTER_HEH => Ok(OldNorthArabian::OldNorthArabianLetterHeh),
-            OLD_NORTH_ARABIAN_LETTER_LAM => Ok(OldNorthArabian::OldNorthArabianLetterLam),
-            OLD_NORTH_ARABIAN_LETTER_HAH => Ok(OldNorthArabian::OldNorthArabianLetterHah),
-            OLD_NORTH_ARABIAN_LETTER_MEEM => Ok(OldNorthArabian::OldNorthArabianLetterMeem),
-            OLD_NORTH_ARABIAN_LETTER_QAF => Ok(OldNorthArabian::OldNorthArabianLetterQaf),
-            OLD_NORTH_ARABIAN_LETTER_WAW => Ok(OldNorthArabian::OldNorthArabianLetterWaw),
-            OLD_NORTH_ARABIAN_LETTER_ES_DASH_2 => Ok(OldNorthArabian::OldNorthArabianLetterEsDash2),
-            OLD_NORTH_ARABIAN_LETTER_REH => Ok(OldNorthArabian::OldNorthArabianLetterReh),
-            OLD_NORTH_ARABIAN_LETTER_BEH => Ok(OldNorthArabian::OldNorthArabianLetterBeh),
-            OLD_NORTH_ARABIAN_LETTER_TEH => Ok(OldNorthArabian::OldNorthArabianLetterTeh),
-            OLD_NORTH_ARABIAN_LETTER_ES_DASH_1 => Ok(OldNorthArabian::OldNorthArabianLetterEsDash1),
-            OLD_NORTH_ARABIAN_LETTER_KAF => Ok(OldNorthArabian::OldNorthArabianLetterKaf),
-            OLD_NORTH_ARABIAN_LETTER_NOON => Ok(OldNorthArabian::OldNorthArabianLetterNoon),
-            OLD_NORTH_ARABIAN_LETTER_KHAH => Ok(OldNorthArabian::OldNorthArabianLetterKhah),
-            OLD_NORTH_ARABIAN_LETTER_SAD => Ok(OldNorthArabian::OldNorthArabianLetterSad),
-            OLD_NORTH_ARABIAN_LETTER_ES_DASH_3 => Ok(OldNorthArabian::OldNorthArabianLetterEsDash3),
-            OLD_NORTH_ARABIAN_LETTER_FEH => Ok(OldNorthArabian::OldNorthArabianLetterFeh),
-            OLD_NORTH_ARABIAN_LETTER_ALEF => Ok(OldNorthArabian::OldNorthArabianLetterAlef),
-            OLD_NORTH_ARABIAN_LETTER_AIN => Ok(OldNorthArabian::OldNorthArabianLetterAin),
-            OLD_NORTH_ARABIAN_LETTER_DAD => Ok(OldNorthArabian::OldNorthArabianLetterDad),
-            OLD_NORTH_ARABIAN_LETTER_GEEM => Ok(OldNorthArabian::OldNorthArabianLetterGeem),
-            OLD_NORTH_ARABIAN_LETTER_DAL => Ok(OldNorthArabian::OldNorthArabianLetterDal),
-            OLD_NORTH_ARABIAN_LETTER_GHAIN => Ok(OldNorthArabian::OldNorthArabianLetterGhain),
-            OLD_NORTH_ARABIAN_LETTER_TAH => Ok(OldNorthArabian::OldNorthArabianLetterTah),
-            OLD_NORTH_ARABIAN_LETTER_ZAIN => Ok(OldNorthArabian::OldNorthArabianLetterZain),
-            OLD_NORTH_ARABIAN_LETTER_THAL => Ok(OldNorthArabian::OldNorthArabianLetterThal),
-            OLD_NORTH_ARABIAN_LETTER_YEH => Ok(OldNorthArabian::OldNorthArabianLetterYeh),
-            OLD_NORTH_ARABIAN_LETTER_THEH => Ok(OldNorthArabian::OldNorthArabianLetterTheh),
-            OLD_NORTH_ARABIAN_LETTER_ZAH => Ok(OldNorthArabian::OldNorthArabianLetterZah),
-            OLD_NORTH_ARABIAN_NUMBER_ONE => Ok(OldNorthArabian::OldNorthArabianNumberOne),
-            OLD_NORTH_ARABIAN_NUMBER_TEN => Ok(OldNorthArabian::OldNorthArabianNumberTen),
+            LETTER_HEH => Ok(OldNorthArabian::LetterHeh),
+            LETTER_LAM => Ok(OldNorthArabian::LetterLam),
+            LETTER_HAH => Ok(OldNorthArabian::LetterHah),
+            LETTER_MEEM => Ok(OldNorthArabian::LetterMeem),
+            LETTER_QAF => Ok(OldNorthArabian::LetterQaf),
+            LETTER_WAW => Ok(OldNorthArabian::LetterWaw),
+            LETTER_ES_DASH_2 => Ok(OldNorthArabian::LetterEsDash2),
+            LETTER_REH => Ok(OldNorthArabian::LetterReh),
+            LETTER_BEH => Ok(OldNorthArabian::LetterBeh),
+            LETTER_TEH => Ok(OldNorthArabian::LetterTeh),
+            LETTER_ES_DASH_1 => Ok(OldNorthArabian::LetterEsDash1),
+            LETTER_KAF => Ok(OldNorthArabian::LetterKaf),
+            LETTER_NOON => Ok(OldNorthArabian::LetterNoon),
+            LETTER_KHAH => Ok(OldNorthArabian::LetterKhah),
+            LETTER_SAD => Ok(OldNorthArabian::LetterSad),
+            LETTER_ES_DASH_3 => Ok(OldNorthArabian::LetterEsDash3),
+            LETTER_FEH => Ok(OldNorthArabian::LetterFeh),
+            LETTER_ALEF => Ok(OldNorthArabian::LetterAlef),
+            LETTER_AIN => Ok(OldNorthArabian::LetterAin),
+            LETTER_DAD => Ok(OldNorthArabian::LetterDad),
+            LETTER_GEEM => Ok(OldNorthArabian::LetterGeem),
+            LETTER_DAL => Ok(OldNorthArabian::LetterDal),
+            LETTER_GHAIN => Ok(OldNorthArabian::LetterGhain),
+            LETTER_TAH => Ok(OldNorthArabian::LetterTah),
+            LETTER_ZAIN => Ok(OldNorthArabian::LetterZain),
+            LETTER_THAL => Ok(OldNorthArabian::LetterThal),
+            LETTER_YEH => Ok(OldNorthArabian::LetterYeh),
+            LETTER_THEH => Ok(OldNorthArabian::LetterTheh),
+            LETTER_ZAH => Ok(OldNorthArabian::LetterZah),
+            NUMBER_ONE => Ok(OldNorthArabian::NumberOne),
+            NUMBER_TEN => Ok(OldNorthArabian::NumberTen),
             _ => Err(()),
         }
     }
@@ -250,45 +250,45 @@ impl Iterator for OldNorthArabian {
 }
 
 impl OldNorthArabian {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        OldNorthArabian::OldNorthArabianLetterHeh
+        OldNorthArabian::LetterHeh
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            OldNorthArabian::OldNorthArabianLetterHeh => "old north arabian letter heh",
-            OldNorthArabian::OldNorthArabianLetterLam => "old north arabian letter lam",
-            OldNorthArabian::OldNorthArabianLetterHah => "old north arabian letter hah",
-            OldNorthArabian::OldNorthArabianLetterMeem => "old north arabian letter meem",
-            OldNorthArabian::OldNorthArabianLetterQaf => "old north arabian letter qaf",
-            OldNorthArabian::OldNorthArabianLetterWaw => "old north arabian letter waw",
-            OldNorthArabian::OldNorthArabianLetterEsDash2 => "old north arabian letter es-2",
-            OldNorthArabian::OldNorthArabianLetterReh => "old north arabian letter reh",
-            OldNorthArabian::OldNorthArabianLetterBeh => "old north arabian letter beh",
-            OldNorthArabian::OldNorthArabianLetterTeh => "old north arabian letter teh",
-            OldNorthArabian::OldNorthArabianLetterEsDash1 => "old north arabian letter es-1",
-            OldNorthArabian::OldNorthArabianLetterKaf => "old north arabian letter kaf",
-            OldNorthArabian::OldNorthArabianLetterNoon => "old north arabian letter noon",
-            OldNorthArabian::OldNorthArabianLetterKhah => "old north arabian letter khah",
-            OldNorthArabian::OldNorthArabianLetterSad => "old north arabian letter sad",
-            OldNorthArabian::OldNorthArabianLetterEsDash3 => "old north arabian letter es-3",
-            OldNorthArabian::OldNorthArabianLetterFeh => "old north arabian letter feh",
-            OldNorthArabian::OldNorthArabianLetterAlef => "old north arabian letter alef",
-            OldNorthArabian::OldNorthArabianLetterAin => "old north arabian letter ain",
-            OldNorthArabian::OldNorthArabianLetterDad => "old north arabian letter dad",
-            OldNorthArabian::OldNorthArabianLetterGeem => "old north arabian letter geem",
-            OldNorthArabian::OldNorthArabianLetterDal => "old north arabian letter dal",
-            OldNorthArabian::OldNorthArabianLetterGhain => "old north arabian letter ghain",
-            OldNorthArabian::OldNorthArabianLetterTah => "old north arabian letter tah",
-            OldNorthArabian::OldNorthArabianLetterZain => "old north arabian letter zain",
-            OldNorthArabian::OldNorthArabianLetterThal => "old north arabian letter thal",
-            OldNorthArabian::OldNorthArabianLetterYeh => "old north arabian letter yeh",
-            OldNorthArabian::OldNorthArabianLetterTheh => "old north arabian letter theh",
-            OldNorthArabian::OldNorthArabianLetterZah => "old north arabian letter zah",
-            OldNorthArabian::OldNorthArabianNumberOne => "old north arabian number one",
-            OldNorthArabian::OldNorthArabianNumberTen => "old north arabian number ten",
+            OldNorthArabian::LetterHeh => "old north arabian letter heh",
+            OldNorthArabian::LetterLam => "old north arabian letter lam",
+            OldNorthArabian::LetterHah => "old north arabian letter hah",
+            OldNorthArabian::LetterMeem => "old north arabian letter meem",
+            OldNorthArabian::LetterQaf => "old north arabian letter qaf",
+            OldNorthArabian::LetterWaw => "old north arabian letter waw",
+            OldNorthArabian::LetterEsDash2 => "old north arabian letter es-2",
+            OldNorthArabian::LetterReh => "old north arabian letter reh",
+            OldNorthArabian::LetterBeh => "old north arabian letter beh",
+            OldNorthArabian::LetterTeh => "old north arabian letter teh",
+            OldNorthArabian::LetterEsDash1 => "old north arabian letter es-1",
+            OldNorthArabian::LetterKaf => "old north arabian letter kaf",
+            OldNorthArabian::LetterNoon => "old north arabian letter noon",
+            OldNorthArabian::LetterKhah => "old north arabian letter khah",
+            OldNorthArabian::LetterSad => "old north arabian letter sad",
+            OldNorthArabian::LetterEsDash3 => "old north arabian letter es-3",
+            OldNorthArabian::LetterFeh => "old north arabian letter feh",
+            OldNorthArabian::LetterAlef => "old north arabian letter alef",
+            OldNorthArabian::LetterAin => "old north arabian letter ain",
+            OldNorthArabian::LetterDad => "old north arabian letter dad",
+            OldNorthArabian::LetterGeem => "old north arabian letter geem",
+            OldNorthArabian::LetterDal => "old north arabian letter dal",
+            OldNorthArabian::LetterGhain => "old north arabian letter ghain",
+            OldNorthArabian::LetterTah => "old north arabian letter tah",
+            OldNorthArabian::LetterZain => "old north arabian letter zain",
+            OldNorthArabian::LetterThal => "old north arabian letter thal",
+            OldNorthArabian::LetterYeh => "old north arabian letter yeh",
+            OldNorthArabian::LetterTheh => "old north arabian letter theh",
+            OldNorthArabian::LetterZah => "old north arabian letter zah",
+            OldNorthArabian::NumberOne => "old north arabian number one",
+            OldNorthArabian::NumberTen => "old north arabian number ten",
         }
     }
 }

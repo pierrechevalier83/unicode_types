@@ -3804,7 +3804,7 @@ impl Iterator for ArabicPresentationFormsA {
 }
 
 impl ArabicPresentationFormsA {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         ArabicPresentationFormsA::ArabicLetterAlefWaslaIsolatedForm
     }

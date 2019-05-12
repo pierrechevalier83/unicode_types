@@ -6,107 +6,107 @@
 /// 𐫴 𐫵 𐫶
 pub mod constants {
     /// \u{10ac0}: '𐫀'
-    pub const MANICHAEAN_LETTER_ALEPH: char = '𐫀';
+    pub const LETTER_ALEPH: char = '𐫀';
     /// \u{10ac1}: '𐫁'
-    pub const MANICHAEAN_LETTER_BETH: char = '𐫁';
+    pub const LETTER_BETH: char = '𐫁';
     /// \u{10ac2}: '𐫂'
-    pub const MANICHAEAN_LETTER_BHETH: char = '𐫂';
+    pub const LETTER_BHETH: char = '𐫂';
     /// \u{10ac3}: '𐫃'
-    pub const MANICHAEAN_LETTER_GIMEL: char = '𐫃';
+    pub const LETTER_GIMEL: char = '𐫃';
     /// \u{10ac4}: '𐫄'
-    pub const MANICHAEAN_LETTER_GHIMEL: char = '𐫄';
+    pub const LETTER_GHIMEL: char = '𐫄';
     /// \u{10ac5}: '𐫅'
-    pub const MANICHAEAN_LETTER_DALETH: char = '𐫅';
+    pub const LETTER_DALETH: char = '𐫅';
     /// \u{10ac6}: '𐫆'
-    pub const MANICHAEAN_LETTER_HE: char = '𐫆';
+    pub const LETTER_HE: char = '𐫆';
     /// \u{10ac7}: '𐫇'
-    pub const MANICHAEAN_LETTER_WAW: char = '𐫇';
+    pub const LETTER_WAW: char = '𐫇';
     /// \u{10ac8}: '𐫈'
-    pub const MANICHAEAN_SIGN_UD: char = '𐫈';
+    pub const SIGN_UD: char = '𐫈';
     /// \u{10ac9}: '𐫉'
-    pub const MANICHAEAN_LETTER_ZAYIN: char = '𐫉';
+    pub const LETTER_ZAYIN: char = '𐫉';
     /// \u{10aca}: '𐫊'
-    pub const MANICHAEAN_LETTER_ZHAYIN: char = '𐫊';
+    pub const LETTER_ZHAYIN: char = '𐫊';
     /// \u{10acb}: '𐫋'
-    pub const MANICHAEAN_LETTER_JAYIN: char = '𐫋';
+    pub const LETTER_JAYIN: char = '𐫋';
     /// \u{10acc}: '𐫌'
-    pub const MANICHAEAN_LETTER_JHAYIN: char = '𐫌';
+    pub const LETTER_JHAYIN: char = '𐫌';
     /// \u{10acd}: '𐫍'
-    pub const MANICHAEAN_LETTER_HETH: char = '𐫍';
+    pub const LETTER_HETH: char = '𐫍';
     /// \u{10ace}: '𐫎'
-    pub const MANICHAEAN_LETTER_TETH: char = '𐫎';
+    pub const LETTER_TETH: char = '𐫎';
     /// \u{10acf}: '𐫏'
-    pub const MANICHAEAN_LETTER_YODH: char = '𐫏';
+    pub const LETTER_YODH: char = '𐫏';
     /// \u{10ad0}: '𐫐'
-    pub const MANICHAEAN_LETTER_KAPH: char = '𐫐';
+    pub const LETTER_KAPH: char = '𐫐';
     /// \u{10ad1}: '𐫑'
-    pub const MANICHAEAN_LETTER_XAPH: char = '𐫑';
+    pub const LETTER_XAPH: char = '𐫑';
     /// \u{10ad2}: '𐫒'
-    pub const MANICHAEAN_LETTER_KHAPH: char = '𐫒';
+    pub const LETTER_KHAPH: char = '𐫒';
     /// \u{10ad3}: '𐫓'
-    pub const MANICHAEAN_LETTER_LAMEDH: char = '𐫓';
+    pub const LETTER_LAMEDH: char = '𐫓';
     /// \u{10ad4}: '𐫔'
-    pub const MANICHAEAN_LETTER_DHAMEDH: char = '𐫔';
+    pub const LETTER_DHAMEDH: char = '𐫔';
     /// \u{10ad5}: '𐫕'
-    pub const MANICHAEAN_LETTER_THAMEDH: char = '𐫕';
+    pub const LETTER_THAMEDH: char = '𐫕';
     /// \u{10ad6}: '𐫖'
-    pub const MANICHAEAN_LETTER_MEM: char = '𐫖';
+    pub const LETTER_MEM: char = '𐫖';
     /// \u{10ad7}: '𐫗'
-    pub const MANICHAEAN_LETTER_NUN: char = '𐫗';
+    pub const LETTER_NUN: char = '𐫗';
     /// \u{10ad8}: '𐫘'
-    pub const MANICHAEAN_LETTER_SAMEKH: char = '𐫘';
+    pub const LETTER_SAMEKH: char = '𐫘';
     /// \u{10ad9}: '𐫙'
-    pub const MANICHAEAN_LETTER_AYIN: char = '𐫙';
+    pub const LETTER_AYIN: char = '𐫙';
     /// \u{10ada}: '𐫚'
-    pub const MANICHAEAN_LETTER_AAYIN: char = '𐫚';
+    pub const LETTER_AAYIN: char = '𐫚';
     /// \u{10adb}: '𐫛'
-    pub const MANICHAEAN_LETTER_PE: char = '𐫛';
+    pub const LETTER_PE: char = '𐫛';
     /// \u{10adc}: '𐫜'
-    pub const MANICHAEAN_LETTER_FE: char = '𐫜';
+    pub const LETTER_FE: char = '𐫜';
     /// \u{10add}: '𐫝'
-    pub const MANICHAEAN_LETTER_SADHE: char = '𐫝';
+    pub const LETTER_SADHE: char = '𐫝';
     /// \u{10ade}: '𐫞'
-    pub const MANICHAEAN_LETTER_QOPH: char = '𐫞';
+    pub const LETTER_QOPH: char = '𐫞';
     /// \u{10adf}: '𐫟'
-    pub const MANICHAEAN_LETTER_XOPH: char = '𐫟';
+    pub const LETTER_XOPH: char = '𐫟';
     /// \u{10ae0}: '𐫠'
-    pub const MANICHAEAN_LETTER_QHOPH: char = '𐫠';
+    pub const LETTER_QHOPH: char = '𐫠';
     /// \u{10ae1}: '𐫡'
-    pub const MANICHAEAN_LETTER_RESH: char = '𐫡';
+    pub const LETTER_RESH: char = '𐫡';
     /// \u{10ae2}: '𐫢'
-    pub const MANICHAEAN_LETTER_SHIN: char = '𐫢';
+    pub const LETTER_SHIN: char = '𐫢';
     /// \u{10ae3}: '𐫣'
-    pub const MANICHAEAN_LETTER_SSHIN: char = '𐫣';
+    pub const LETTER_SSHIN: char = '𐫣';
     /// \u{10ae4}: '𐫤'
-    pub const MANICHAEAN_LETTER_TAW: char = '𐫤';
+    pub const LETTER_TAW: char = '𐫤';
     /// \u{10ae5}: '𐫥'
-    pub const MANICHAEAN_ABBREVIATION_MARK_ABOVE: char = '𐫥';
+    pub const ABBREVIATION_MARK_ABOVE: char = '𐫥';
     /// \u{10ae6}: '𐫦'
-    pub const MANICHAEAN_ABBREVIATION_MARK_BELOW: char = '𐫦';
+    pub const ABBREVIATION_MARK_BELOW: char = '𐫦';
     /// \u{10aeb}: '𐫫'
-    pub const MANICHAEAN_NUMBER_ONE: char = '𐫫';
+    pub const NUMBER_ONE: char = '𐫫';
     /// \u{10aec}: '𐫬'
-    pub const MANICHAEAN_NUMBER_FIVE: char = '𐫬';
+    pub const NUMBER_FIVE: char = '𐫬';
     /// \u{10aed}: '𐫭'
-    pub const MANICHAEAN_NUMBER_TEN: char = '𐫭';
+    pub const NUMBER_TEN: char = '𐫭';
     /// \u{10aee}: '𐫮'
-    pub const MANICHAEAN_NUMBER_TWENTY: char = '𐫮';
+    pub const NUMBER_TWENTY: char = '𐫮';
     /// \u{10aef}: '𐫯'
-    pub const MANICHAEAN_NUMBER_ONE_HUNDRED: char = '𐫯';
+    pub const NUMBER_ONE_HUNDRED: char = '𐫯';
     /// \u{10af0}: '𐫰'
-    pub const MANICHAEAN_PUNCTUATION_STAR: char = '𐫰';
+    pub const PUNCTUATION_STAR: char = '𐫰';
     /// \u{10af1}: '𐫱'
-    pub const MANICHAEAN_PUNCTUATION_FLEURON: char = '𐫱';
+    pub const PUNCTUATION_FLEURON: char = '𐫱';
     /// \u{10af2}: '𐫲'
-    pub const MANICHAEAN_PUNCTUATION_DOUBLE_DOT_WITHIN_DOT: char = '𐫲';
+    pub const PUNCTUATION_DOUBLE_DOT_WITHIN_DOT: char = '𐫲';
     /// \u{10af3}: '𐫳'
-    pub const MANICHAEAN_PUNCTUATION_DOT_WITHIN_DOT: char = '𐫳';
+    pub const PUNCTUATION_DOT_WITHIN_DOT: char = '𐫳';
     /// \u{10af4}: '𐫴'
-    pub const MANICHAEAN_PUNCTUATION_DOT: char = '𐫴';
+    pub const PUNCTUATION_DOT: char = '𐫴';
     /// \u{10af5}: '𐫵'
-    pub const MANICHAEAN_PUNCTUATION_TWO_DOTS: char = '𐫵';
+    pub const PUNCTUATION_TWO_DOTS: char = '𐫵';
     /// \u{10af6}: '𐫶'
-    pub const MANICHAEAN_PUNCTUATION_LINE_FILLER: char = '𐫶';
+    pub const PUNCTUATION_LINE_FILLER: char = '𐫶';
 }
 
 /// \u{10ac0} → \u{10aff}\
@@ -118,164 +118,164 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Manichaean {
     /// \u{10ac0}: '𐫀'
-    ManichaeanLetterAleph,
+    LetterAleph,
     /// \u{10ac1}: '𐫁'
-    ManichaeanLetterBeth,
+    LetterBeth,
     /// \u{10ac2}: '𐫂'
-    ManichaeanLetterBheth,
+    LetterBheth,
     /// \u{10ac3}: '𐫃'
-    ManichaeanLetterGimel,
+    LetterGimel,
     /// \u{10ac4}: '𐫄'
-    ManichaeanLetterGhimel,
+    LetterGhimel,
     /// \u{10ac5}: '𐫅'
-    ManichaeanLetterDaleth,
+    LetterDaleth,
     /// \u{10ac6}: '𐫆'
-    ManichaeanLetterHe,
+    LetterHe,
     /// \u{10ac7}: '𐫇'
-    ManichaeanLetterWaw,
+    LetterWaw,
     /// \u{10ac8}: '𐫈'
-    ManichaeanSignUd,
+    SignUd,
     /// \u{10ac9}: '𐫉'
-    ManichaeanLetterZayin,
+    LetterZayin,
     /// \u{10aca}: '𐫊'
-    ManichaeanLetterZhayin,
+    LetterZhayin,
     /// \u{10acb}: '𐫋'
-    ManichaeanLetterJayin,
+    LetterJayin,
     /// \u{10acc}: '𐫌'
-    ManichaeanLetterJhayin,
+    LetterJhayin,
     /// \u{10acd}: '𐫍'
-    ManichaeanLetterHeth,
+    LetterHeth,
     /// \u{10ace}: '𐫎'
-    ManichaeanLetterTeth,
+    LetterTeth,
     /// \u{10acf}: '𐫏'
-    ManichaeanLetterYodh,
+    LetterYodh,
     /// \u{10ad0}: '𐫐'
-    ManichaeanLetterKaph,
+    LetterKaph,
     /// \u{10ad1}: '𐫑'
-    ManichaeanLetterXaph,
+    LetterXaph,
     /// \u{10ad2}: '𐫒'
-    ManichaeanLetterKhaph,
+    LetterKhaph,
     /// \u{10ad3}: '𐫓'
-    ManichaeanLetterLamedh,
+    LetterLamedh,
     /// \u{10ad4}: '𐫔'
-    ManichaeanLetterDhamedh,
+    LetterDhamedh,
     /// \u{10ad5}: '𐫕'
-    ManichaeanLetterThamedh,
+    LetterThamedh,
     /// \u{10ad6}: '𐫖'
-    ManichaeanLetterMem,
+    LetterMem,
     /// \u{10ad7}: '𐫗'
-    ManichaeanLetterNun,
+    LetterNun,
     /// \u{10ad8}: '𐫘'
-    ManichaeanLetterSamekh,
+    LetterSamekh,
     /// \u{10ad9}: '𐫙'
-    ManichaeanLetterAyin,
+    LetterAyin,
     /// \u{10ada}: '𐫚'
-    ManichaeanLetterAayin,
+    LetterAayin,
     /// \u{10adb}: '𐫛'
-    ManichaeanLetterPe,
+    LetterPe,
     /// \u{10adc}: '𐫜'
-    ManichaeanLetterFe,
+    LetterFe,
     /// \u{10add}: '𐫝'
-    ManichaeanLetterSadhe,
+    LetterSadhe,
     /// \u{10ade}: '𐫞'
-    ManichaeanLetterQoph,
+    LetterQoph,
     /// \u{10adf}: '𐫟'
-    ManichaeanLetterXoph,
+    LetterXoph,
     /// \u{10ae0}: '𐫠'
-    ManichaeanLetterQhoph,
+    LetterQhoph,
     /// \u{10ae1}: '𐫡'
-    ManichaeanLetterResh,
+    LetterResh,
     /// \u{10ae2}: '𐫢'
-    ManichaeanLetterShin,
+    LetterShin,
     /// \u{10ae3}: '𐫣'
-    ManichaeanLetterSshin,
+    LetterSshin,
     /// \u{10ae4}: '𐫤'
-    ManichaeanLetterTaw,
+    LetterTaw,
     /// \u{10ae5}: '𐫥'
-    ManichaeanAbbreviationMarkAbove,
+    AbbreviationMarkAbove,
     /// \u{10ae6}: '𐫦'
-    ManichaeanAbbreviationMarkBelow,
+    AbbreviationMarkBelow,
     /// \u{10aeb}: '𐫫'
-    ManichaeanNumberOne,
+    NumberOne,
     /// \u{10aec}: '𐫬'
-    ManichaeanNumberFive,
+    NumberFive,
     /// \u{10aed}: '𐫭'
-    ManichaeanNumberTen,
+    NumberTen,
     /// \u{10aee}: '𐫮'
-    ManichaeanNumberTwenty,
+    NumberTwenty,
     /// \u{10aef}: '𐫯'
-    ManichaeanNumberOneHundred,
+    NumberOneHundred,
     /// \u{10af0}: '𐫰'
-    ManichaeanPunctuationStar,
+    PunctuationStar,
     /// \u{10af1}: '𐫱'
-    ManichaeanPunctuationFleuron,
+    PunctuationFleuron,
     /// \u{10af2}: '𐫲'
-    ManichaeanPunctuationDoubleDotWithinDot,
+    PunctuationDoubleDotWithinDot,
     /// \u{10af3}: '𐫳'
-    ManichaeanPunctuationDotWithinDot,
+    PunctuationDotWithinDot,
     /// \u{10af4}: '𐫴'
-    ManichaeanPunctuationDot,
+    PunctuationDot,
     /// \u{10af5}: '𐫵'
-    ManichaeanPunctuationTwoDots,
+    PunctuationTwoDots,
     /// \u{10af6}: '𐫶'
-    ManichaeanPunctuationLineFiller,
+    PunctuationLineFiller,
 }
 
 impl Into<char> for Manichaean {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Manichaean::ManichaeanLetterAleph => MANICHAEAN_LETTER_ALEPH,
-            Manichaean::ManichaeanLetterBeth => MANICHAEAN_LETTER_BETH,
-            Manichaean::ManichaeanLetterBheth => MANICHAEAN_LETTER_BHETH,
-            Manichaean::ManichaeanLetterGimel => MANICHAEAN_LETTER_GIMEL,
-            Manichaean::ManichaeanLetterGhimel => MANICHAEAN_LETTER_GHIMEL,
-            Manichaean::ManichaeanLetterDaleth => MANICHAEAN_LETTER_DALETH,
-            Manichaean::ManichaeanLetterHe => MANICHAEAN_LETTER_HE,
-            Manichaean::ManichaeanLetterWaw => MANICHAEAN_LETTER_WAW,
-            Manichaean::ManichaeanSignUd => MANICHAEAN_SIGN_UD,
-            Manichaean::ManichaeanLetterZayin => MANICHAEAN_LETTER_ZAYIN,
-            Manichaean::ManichaeanLetterZhayin => MANICHAEAN_LETTER_ZHAYIN,
-            Manichaean::ManichaeanLetterJayin => MANICHAEAN_LETTER_JAYIN,
-            Manichaean::ManichaeanLetterJhayin => MANICHAEAN_LETTER_JHAYIN,
-            Manichaean::ManichaeanLetterHeth => MANICHAEAN_LETTER_HETH,
-            Manichaean::ManichaeanLetterTeth => MANICHAEAN_LETTER_TETH,
-            Manichaean::ManichaeanLetterYodh => MANICHAEAN_LETTER_YODH,
-            Manichaean::ManichaeanLetterKaph => MANICHAEAN_LETTER_KAPH,
-            Manichaean::ManichaeanLetterXaph => MANICHAEAN_LETTER_XAPH,
-            Manichaean::ManichaeanLetterKhaph => MANICHAEAN_LETTER_KHAPH,
-            Manichaean::ManichaeanLetterLamedh => MANICHAEAN_LETTER_LAMEDH,
-            Manichaean::ManichaeanLetterDhamedh => MANICHAEAN_LETTER_DHAMEDH,
-            Manichaean::ManichaeanLetterThamedh => MANICHAEAN_LETTER_THAMEDH,
-            Manichaean::ManichaeanLetterMem => MANICHAEAN_LETTER_MEM,
-            Manichaean::ManichaeanLetterNun => MANICHAEAN_LETTER_NUN,
-            Manichaean::ManichaeanLetterSamekh => MANICHAEAN_LETTER_SAMEKH,
-            Manichaean::ManichaeanLetterAyin => MANICHAEAN_LETTER_AYIN,
-            Manichaean::ManichaeanLetterAayin => MANICHAEAN_LETTER_AAYIN,
-            Manichaean::ManichaeanLetterPe => MANICHAEAN_LETTER_PE,
-            Manichaean::ManichaeanLetterFe => MANICHAEAN_LETTER_FE,
-            Manichaean::ManichaeanLetterSadhe => MANICHAEAN_LETTER_SADHE,
-            Manichaean::ManichaeanLetterQoph => MANICHAEAN_LETTER_QOPH,
-            Manichaean::ManichaeanLetterXoph => MANICHAEAN_LETTER_XOPH,
-            Manichaean::ManichaeanLetterQhoph => MANICHAEAN_LETTER_QHOPH,
-            Manichaean::ManichaeanLetterResh => MANICHAEAN_LETTER_RESH,
-            Manichaean::ManichaeanLetterShin => MANICHAEAN_LETTER_SHIN,
-            Manichaean::ManichaeanLetterSshin => MANICHAEAN_LETTER_SSHIN,
-            Manichaean::ManichaeanLetterTaw => MANICHAEAN_LETTER_TAW,
-            Manichaean::ManichaeanAbbreviationMarkAbove => MANICHAEAN_ABBREVIATION_MARK_ABOVE,
-            Manichaean::ManichaeanAbbreviationMarkBelow => MANICHAEAN_ABBREVIATION_MARK_BELOW,
-            Manichaean::ManichaeanNumberOne => MANICHAEAN_NUMBER_ONE,
-            Manichaean::ManichaeanNumberFive => MANICHAEAN_NUMBER_FIVE,
-            Manichaean::ManichaeanNumberTen => MANICHAEAN_NUMBER_TEN,
-            Manichaean::ManichaeanNumberTwenty => MANICHAEAN_NUMBER_TWENTY,
-            Manichaean::ManichaeanNumberOneHundred => MANICHAEAN_NUMBER_ONE_HUNDRED,
-            Manichaean::ManichaeanPunctuationStar => MANICHAEAN_PUNCTUATION_STAR,
-            Manichaean::ManichaeanPunctuationFleuron => MANICHAEAN_PUNCTUATION_FLEURON,
-            Manichaean::ManichaeanPunctuationDoubleDotWithinDot => MANICHAEAN_PUNCTUATION_DOUBLE_DOT_WITHIN_DOT,
-            Manichaean::ManichaeanPunctuationDotWithinDot => MANICHAEAN_PUNCTUATION_DOT_WITHIN_DOT,
-            Manichaean::ManichaeanPunctuationDot => MANICHAEAN_PUNCTUATION_DOT,
-            Manichaean::ManichaeanPunctuationTwoDots => MANICHAEAN_PUNCTUATION_TWO_DOTS,
-            Manichaean::ManichaeanPunctuationLineFiller => MANICHAEAN_PUNCTUATION_LINE_FILLER,
+            Manichaean::LetterAleph => LETTER_ALEPH,
+            Manichaean::LetterBeth => LETTER_BETH,
+            Manichaean::LetterBheth => LETTER_BHETH,
+            Manichaean::LetterGimel => LETTER_GIMEL,
+            Manichaean::LetterGhimel => LETTER_GHIMEL,
+            Manichaean::LetterDaleth => LETTER_DALETH,
+            Manichaean::LetterHe => LETTER_HE,
+            Manichaean::LetterWaw => LETTER_WAW,
+            Manichaean::SignUd => SIGN_UD,
+            Manichaean::LetterZayin => LETTER_ZAYIN,
+            Manichaean::LetterZhayin => LETTER_ZHAYIN,
+            Manichaean::LetterJayin => LETTER_JAYIN,
+            Manichaean::LetterJhayin => LETTER_JHAYIN,
+            Manichaean::LetterHeth => LETTER_HETH,
+            Manichaean::LetterTeth => LETTER_TETH,
+            Manichaean::LetterYodh => LETTER_YODH,
+            Manichaean::LetterKaph => LETTER_KAPH,
+            Manichaean::LetterXaph => LETTER_XAPH,
+            Manichaean::LetterKhaph => LETTER_KHAPH,
+            Manichaean::LetterLamedh => LETTER_LAMEDH,
+            Manichaean::LetterDhamedh => LETTER_DHAMEDH,
+            Manichaean::LetterThamedh => LETTER_THAMEDH,
+            Manichaean::LetterMem => LETTER_MEM,
+            Manichaean::LetterNun => LETTER_NUN,
+            Manichaean::LetterSamekh => LETTER_SAMEKH,
+            Manichaean::LetterAyin => LETTER_AYIN,
+            Manichaean::LetterAayin => LETTER_AAYIN,
+            Manichaean::LetterPe => LETTER_PE,
+            Manichaean::LetterFe => LETTER_FE,
+            Manichaean::LetterSadhe => LETTER_SADHE,
+            Manichaean::LetterQoph => LETTER_QOPH,
+            Manichaean::LetterXoph => LETTER_XOPH,
+            Manichaean::LetterQhoph => LETTER_QHOPH,
+            Manichaean::LetterResh => LETTER_RESH,
+            Manichaean::LetterShin => LETTER_SHIN,
+            Manichaean::LetterSshin => LETTER_SSHIN,
+            Manichaean::LetterTaw => LETTER_TAW,
+            Manichaean::AbbreviationMarkAbove => ABBREVIATION_MARK_ABOVE,
+            Manichaean::AbbreviationMarkBelow => ABBREVIATION_MARK_BELOW,
+            Manichaean::NumberOne => NUMBER_ONE,
+            Manichaean::NumberFive => NUMBER_FIVE,
+            Manichaean::NumberTen => NUMBER_TEN,
+            Manichaean::NumberTwenty => NUMBER_TWENTY,
+            Manichaean::NumberOneHundred => NUMBER_ONE_HUNDRED,
+            Manichaean::PunctuationStar => PUNCTUATION_STAR,
+            Manichaean::PunctuationFleuron => PUNCTUATION_FLEURON,
+            Manichaean::PunctuationDoubleDotWithinDot => PUNCTUATION_DOUBLE_DOT_WITHIN_DOT,
+            Manichaean::PunctuationDotWithinDot => PUNCTUATION_DOT_WITHIN_DOT,
+            Manichaean::PunctuationDot => PUNCTUATION_DOT,
+            Manichaean::PunctuationTwoDots => PUNCTUATION_TWO_DOTS,
+            Manichaean::PunctuationLineFiller => PUNCTUATION_LINE_FILLER,
         }
     }
 }
@@ -285,57 +285,57 @@ impl std::convert::TryFrom<char> for Manichaean {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            MANICHAEAN_LETTER_ALEPH => Ok(Manichaean::ManichaeanLetterAleph),
-            MANICHAEAN_LETTER_BETH => Ok(Manichaean::ManichaeanLetterBeth),
-            MANICHAEAN_LETTER_BHETH => Ok(Manichaean::ManichaeanLetterBheth),
-            MANICHAEAN_LETTER_GIMEL => Ok(Manichaean::ManichaeanLetterGimel),
-            MANICHAEAN_LETTER_GHIMEL => Ok(Manichaean::ManichaeanLetterGhimel),
-            MANICHAEAN_LETTER_DALETH => Ok(Manichaean::ManichaeanLetterDaleth),
-            MANICHAEAN_LETTER_HE => Ok(Manichaean::ManichaeanLetterHe),
-            MANICHAEAN_LETTER_WAW => Ok(Manichaean::ManichaeanLetterWaw),
-            MANICHAEAN_SIGN_UD => Ok(Manichaean::ManichaeanSignUd),
-            MANICHAEAN_LETTER_ZAYIN => Ok(Manichaean::ManichaeanLetterZayin),
-            MANICHAEAN_LETTER_ZHAYIN => Ok(Manichaean::ManichaeanLetterZhayin),
-            MANICHAEAN_LETTER_JAYIN => Ok(Manichaean::ManichaeanLetterJayin),
-            MANICHAEAN_LETTER_JHAYIN => Ok(Manichaean::ManichaeanLetterJhayin),
-            MANICHAEAN_LETTER_HETH => Ok(Manichaean::ManichaeanLetterHeth),
-            MANICHAEAN_LETTER_TETH => Ok(Manichaean::ManichaeanLetterTeth),
-            MANICHAEAN_LETTER_YODH => Ok(Manichaean::ManichaeanLetterYodh),
-            MANICHAEAN_LETTER_KAPH => Ok(Manichaean::ManichaeanLetterKaph),
-            MANICHAEAN_LETTER_XAPH => Ok(Manichaean::ManichaeanLetterXaph),
-            MANICHAEAN_LETTER_KHAPH => Ok(Manichaean::ManichaeanLetterKhaph),
-            MANICHAEAN_LETTER_LAMEDH => Ok(Manichaean::ManichaeanLetterLamedh),
-            MANICHAEAN_LETTER_DHAMEDH => Ok(Manichaean::ManichaeanLetterDhamedh),
-            MANICHAEAN_LETTER_THAMEDH => Ok(Manichaean::ManichaeanLetterThamedh),
-            MANICHAEAN_LETTER_MEM => Ok(Manichaean::ManichaeanLetterMem),
-            MANICHAEAN_LETTER_NUN => Ok(Manichaean::ManichaeanLetterNun),
-            MANICHAEAN_LETTER_SAMEKH => Ok(Manichaean::ManichaeanLetterSamekh),
-            MANICHAEAN_LETTER_AYIN => Ok(Manichaean::ManichaeanLetterAyin),
-            MANICHAEAN_LETTER_AAYIN => Ok(Manichaean::ManichaeanLetterAayin),
-            MANICHAEAN_LETTER_PE => Ok(Manichaean::ManichaeanLetterPe),
-            MANICHAEAN_LETTER_FE => Ok(Manichaean::ManichaeanLetterFe),
-            MANICHAEAN_LETTER_SADHE => Ok(Manichaean::ManichaeanLetterSadhe),
-            MANICHAEAN_LETTER_QOPH => Ok(Manichaean::ManichaeanLetterQoph),
-            MANICHAEAN_LETTER_XOPH => Ok(Manichaean::ManichaeanLetterXoph),
-            MANICHAEAN_LETTER_QHOPH => Ok(Manichaean::ManichaeanLetterQhoph),
-            MANICHAEAN_LETTER_RESH => Ok(Manichaean::ManichaeanLetterResh),
-            MANICHAEAN_LETTER_SHIN => Ok(Manichaean::ManichaeanLetterShin),
-            MANICHAEAN_LETTER_SSHIN => Ok(Manichaean::ManichaeanLetterSshin),
-            MANICHAEAN_LETTER_TAW => Ok(Manichaean::ManichaeanLetterTaw),
-            MANICHAEAN_ABBREVIATION_MARK_ABOVE => Ok(Manichaean::ManichaeanAbbreviationMarkAbove),
-            MANICHAEAN_ABBREVIATION_MARK_BELOW => Ok(Manichaean::ManichaeanAbbreviationMarkBelow),
-            MANICHAEAN_NUMBER_ONE => Ok(Manichaean::ManichaeanNumberOne),
-            MANICHAEAN_NUMBER_FIVE => Ok(Manichaean::ManichaeanNumberFive),
-            MANICHAEAN_NUMBER_TEN => Ok(Manichaean::ManichaeanNumberTen),
-            MANICHAEAN_NUMBER_TWENTY => Ok(Manichaean::ManichaeanNumberTwenty),
-            MANICHAEAN_NUMBER_ONE_HUNDRED => Ok(Manichaean::ManichaeanNumberOneHundred),
-            MANICHAEAN_PUNCTUATION_STAR => Ok(Manichaean::ManichaeanPunctuationStar),
-            MANICHAEAN_PUNCTUATION_FLEURON => Ok(Manichaean::ManichaeanPunctuationFleuron),
-            MANICHAEAN_PUNCTUATION_DOUBLE_DOT_WITHIN_DOT => Ok(Manichaean::ManichaeanPunctuationDoubleDotWithinDot),
-            MANICHAEAN_PUNCTUATION_DOT_WITHIN_DOT => Ok(Manichaean::ManichaeanPunctuationDotWithinDot),
-            MANICHAEAN_PUNCTUATION_DOT => Ok(Manichaean::ManichaeanPunctuationDot),
-            MANICHAEAN_PUNCTUATION_TWO_DOTS => Ok(Manichaean::ManichaeanPunctuationTwoDots),
-            MANICHAEAN_PUNCTUATION_LINE_FILLER => Ok(Manichaean::ManichaeanPunctuationLineFiller),
+            LETTER_ALEPH => Ok(Manichaean::LetterAleph),
+            LETTER_BETH => Ok(Manichaean::LetterBeth),
+            LETTER_BHETH => Ok(Manichaean::LetterBheth),
+            LETTER_GIMEL => Ok(Manichaean::LetterGimel),
+            LETTER_GHIMEL => Ok(Manichaean::LetterGhimel),
+            LETTER_DALETH => Ok(Manichaean::LetterDaleth),
+            LETTER_HE => Ok(Manichaean::LetterHe),
+            LETTER_WAW => Ok(Manichaean::LetterWaw),
+            SIGN_UD => Ok(Manichaean::SignUd),
+            LETTER_ZAYIN => Ok(Manichaean::LetterZayin),
+            LETTER_ZHAYIN => Ok(Manichaean::LetterZhayin),
+            LETTER_JAYIN => Ok(Manichaean::LetterJayin),
+            LETTER_JHAYIN => Ok(Manichaean::LetterJhayin),
+            LETTER_HETH => Ok(Manichaean::LetterHeth),
+            LETTER_TETH => Ok(Manichaean::LetterTeth),
+            LETTER_YODH => Ok(Manichaean::LetterYodh),
+            LETTER_KAPH => Ok(Manichaean::LetterKaph),
+            LETTER_XAPH => Ok(Manichaean::LetterXaph),
+            LETTER_KHAPH => Ok(Manichaean::LetterKhaph),
+            LETTER_LAMEDH => Ok(Manichaean::LetterLamedh),
+            LETTER_DHAMEDH => Ok(Manichaean::LetterDhamedh),
+            LETTER_THAMEDH => Ok(Manichaean::LetterThamedh),
+            LETTER_MEM => Ok(Manichaean::LetterMem),
+            LETTER_NUN => Ok(Manichaean::LetterNun),
+            LETTER_SAMEKH => Ok(Manichaean::LetterSamekh),
+            LETTER_AYIN => Ok(Manichaean::LetterAyin),
+            LETTER_AAYIN => Ok(Manichaean::LetterAayin),
+            LETTER_PE => Ok(Manichaean::LetterPe),
+            LETTER_FE => Ok(Manichaean::LetterFe),
+            LETTER_SADHE => Ok(Manichaean::LetterSadhe),
+            LETTER_QOPH => Ok(Manichaean::LetterQoph),
+            LETTER_XOPH => Ok(Manichaean::LetterXoph),
+            LETTER_QHOPH => Ok(Manichaean::LetterQhoph),
+            LETTER_RESH => Ok(Manichaean::LetterResh),
+            LETTER_SHIN => Ok(Manichaean::LetterShin),
+            LETTER_SSHIN => Ok(Manichaean::LetterSshin),
+            LETTER_TAW => Ok(Manichaean::LetterTaw),
+            ABBREVIATION_MARK_ABOVE => Ok(Manichaean::AbbreviationMarkAbove),
+            ABBREVIATION_MARK_BELOW => Ok(Manichaean::AbbreviationMarkBelow),
+            NUMBER_ONE => Ok(Manichaean::NumberOne),
+            NUMBER_FIVE => Ok(Manichaean::NumberFive),
+            NUMBER_TEN => Ok(Manichaean::NumberTen),
+            NUMBER_TWENTY => Ok(Manichaean::NumberTwenty),
+            NUMBER_ONE_HUNDRED => Ok(Manichaean::NumberOneHundred),
+            PUNCTUATION_STAR => Ok(Manichaean::PunctuationStar),
+            PUNCTUATION_FLEURON => Ok(Manichaean::PunctuationFleuron),
+            PUNCTUATION_DOUBLE_DOT_WITHIN_DOT => Ok(Manichaean::PunctuationDoubleDotWithinDot),
+            PUNCTUATION_DOT_WITHIN_DOT => Ok(Manichaean::PunctuationDotWithinDot),
+            PUNCTUATION_DOT => Ok(Manichaean::PunctuationDot),
+            PUNCTUATION_TWO_DOTS => Ok(Manichaean::PunctuationTwoDots),
+            PUNCTUATION_LINE_FILLER => Ok(Manichaean::PunctuationLineFiller),
             _ => Err(()),
         }
     }
@@ -374,65 +374,65 @@ impl Iterator for Manichaean {
 }
 
 impl Manichaean {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Manichaean::ManichaeanLetterAleph
+        Manichaean::LetterAleph
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Manichaean::ManichaeanLetterAleph => "manichaean letter aleph",
-            Manichaean::ManichaeanLetterBeth => "manichaean letter beth",
-            Manichaean::ManichaeanLetterBheth => "manichaean letter bheth",
-            Manichaean::ManichaeanLetterGimel => "manichaean letter gimel",
-            Manichaean::ManichaeanLetterGhimel => "manichaean letter ghimel",
-            Manichaean::ManichaeanLetterDaleth => "manichaean letter daleth",
-            Manichaean::ManichaeanLetterHe => "manichaean letter he",
-            Manichaean::ManichaeanLetterWaw => "manichaean letter waw",
-            Manichaean::ManichaeanSignUd => "manichaean sign ud",
-            Manichaean::ManichaeanLetterZayin => "manichaean letter zayin",
-            Manichaean::ManichaeanLetterZhayin => "manichaean letter zhayin",
-            Manichaean::ManichaeanLetterJayin => "manichaean letter jayin",
-            Manichaean::ManichaeanLetterJhayin => "manichaean letter jhayin",
-            Manichaean::ManichaeanLetterHeth => "manichaean letter heth",
-            Manichaean::ManichaeanLetterTeth => "manichaean letter teth",
-            Manichaean::ManichaeanLetterYodh => "manichaean letter yodh",
-            Manichaean::ManichaeanLetterKaph => "manichaean letter kaph",
-            Manichaean::ManichaeanLetterXaph => "manichaean letter xaph",
-            Manichaean::ManichaeanLetterKhaph => "manichaean letter khaph",
-            Manichaean::ManichaeanLetterLamedh => "manichaean letter lamedh",
-            Manichaean::ManichaeanLetterDhamedh => "manichaean letter dhamedh",
-            Manichaean::ManichaeanLetterThamedh => "manichaean letter thamedh",
-            Manichaean::ManichaeanLetterMem => "manichaean letter mem",
-            Manichaean::ManichaeanLetterNun => "manichaean letter nun",
-            Manichaean::ManichaeanLetterSamekh => "manichaean letter samekh",
-            Manichaean::ManichaeanLetterAyin => "manichaean letter ayin",
-            Manichaean::ManichaeanLetterAayin => "manichaean letter aayin",
-            Manichaean::ManichaeanLetterPe => "manichaean letter pe",
-            Manichaean::ManichaeanLetterFe => "manichaean letter fe",
-            Manichaean::ManichaeanLetterSadhe => "manichaean letter sadhe",
-            Manichaean::ManichaeanLetterQoph => "manichaean letter qoph",
-            Manichaean::ManichaeanLetterXoph => "manichaean letter xoph",
-            Manichaean::ManichaeanLetterQhoph => "manichaean letter qhoph",
-            Manichaean::ManichaeanLetterResh => "manichaean letter resh",
-            Manichaean::ManichaeanLetterShin => "manichaean letter shin",
-            Manichaean::ManichaeanLetterSshin => "manichaean letter sshin",
-            Manichaean::ManichaeanLetterTaw => "manichaean letter taw",
-            Manichaean::ManichaeanAbbreviationMarkAbove => "manichaean abbreviation mark above",
-            Manichaean::ManichaeanAbbreviationMarkBelow => "manichaean abbreviation mark below",
-            Manichaean::ManichaeanNumberOne => "manichaean number one",
-            Manichaean::ManichaeanNumberFive => "manichaean number five",
-            Manichaean::ManichaeanNumberTen => "manichaean number ten",
-            Manichaean::ManichaeanNumberTwenty => "manichaean number twenty",
-            Manichaean::ManichaeanNumberOneHundred => "manichaean number one hundred",
-            Manichaean::ManichaeanPunctuationStar => "manichaean punctuation star",
-            Manichaean::ManichaeanPunctuationFleuron => "manichaean punctuation fleuron",
-            Manichaean::ManichaeanPunctuationDoubleDotWithinDot => "manichaean punctuation double dot within dot",
-            Manichaean::ManichaeanPunctuationDotWithinDot => "manichaean punctuation dot within dot",
-            Manichaean::ManichaeanPunctuationDot => "manichaean punctuation dot",
-            Manichaean::ManichaeanPunctuationTwoDots => "manichaean punctuation two dots",
-            Manichaean::ManichaeanPunctuationLineFiller => "manichaean punctuation line filler",
+            Manichaean::LetterAleph => "manichaean letter aleph",
+            Manichaean::LetterBeth => "manichaean letter beth",
+            Manichaean::LetterBheth => "manichaean letter bheth",
+            Manichaean::LetterGimel => "manichaean letter gimel",
+            Manichaean::LetterGhimel => "manichaean letter ghimel",
+            Manichaean::LetterDaleth => "manichaean letter daleth",
+            Manichaean::LetterHe => "manichaean letter he",
+            Manichaean::LetterWaw => "manichaean letter waw",
+            Manichaean::SignUd => "manichaean sign ud",
+            Manichaean::LetterZayin => "manichaean letter zayin",
+            Manichaean::LetterZhayin => "manichaean letter zhayin",
+            Manichaean::LetterJayin => "manichaean letter jayin",
+            Manichaean::LetterJhayin => "manichaean letter jhayin",
+            Manichaean::LetterHeth => "manichaean letter heth",
+            Manichaean::LetterTeth => "manichaean letter teth",
+            Manichaean::LetterYodh => "manichaean letter yodh",
+            Manichaean::LetterKaph => "manichaean letter kaph",
+            Manichaean::LetterXaph => "manichaean letter xaph",
+            Manichaean::LetterKhaph => "manichaean letter khaph",
+            Manichaean::LetterLamedh => "manichaean letter lamedh",
+            Manichaean::LetterDhamedh => "manichaean letter dhamedh",
+            Manichaean::LetterThamedh => "manichaean letter thamedh",
+            Manichaean::LetterMem => "manichaean letter mem",
+            Manichaean::LetterNun => "manichaean letter nun",
+            Manichaean::LetterSamekh => "manichaean letter samekh",
+            Manichaean::LetterAyin => "manichaean letter ayin",
+            Manichaean::LetterAayin => "manichaean letter aayin",
+            Manichaean::LetterPe => "manichaean letter pe",
+            Manichaean::LetterFe => "manichaean letter fe",
+            Manichaean::LetterSadhe => "manichaean letter sadhe",
+            Manichaean::LetterQoph => "manichaean letter qoph",
+            Manichaean::LetterXoph => "manichaean letter xoph",
+            Manichaean::LetterQhoph => "manichaean letter qhoph",
+            Manichaean::LetterResh => "manichaean letter resh",
+            Manichaean::LetterShin => "manichaean letter shin",
+            Manichaean::LetterSshin => "manichaean letter sshin",
+            Manichaean::LetterTaw => "manichaean letter taw",
+            Manichaean::AbbreviationMarkAbove => "manichaean abbreviation mark above",
+            Manichaean::AbbreviationMarkBelow => "manichaean abbreviation mark below",
+            Manichaean::NumberOne => "manichaean number one",
+            Manichaean::NumberFive => "manichaean number five",
+            Manichaean::NumberTen => "manichaean number ten",
+            Manichaean::NumberTwenty => "manichaean number twenty",
+            Manichaean::NumberOneHundred => "manichaean number one hundred",
+            Manichaean::PunctuationStar => "manichaean punctuation star",
+            Manichaean::PunctuationFleuron => "manichaean punctuation fleuron",
+            Manichaean::PunctuationDoubleDotWithinDot => "manichaean punctuation double dot within dot",
+            Manichaean::PunctuationDotWithinDot => "manichaean punctuation dot within dot",
+            Manichaean::PunctuationDot => "manichaean punctuation dot",
+            Manichaean::PunctuationTwoDots => "manichaean punctuation two dots",
+            Manichaean::PunctuationLineFiller => "manichaean punctuation line filler",
         }
     }
 }

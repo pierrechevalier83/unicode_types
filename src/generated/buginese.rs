@@ -4,63 +4,63 @@
 /// ᨐ ᨑ ᨒ ᨓ ᨔ ᨕ ᨖ ᨗ ᨘ ᨙ ᨚ ᨛ ᨞
 pub mod constants {
     /// \u{1a00}: 'ᨀ'
-    pub const BUGINESE_LETTER_KA: char = 'ᨀ';
+    pub const LETTER_KA: char = 'ᨀ';
     /// \u{1a01}: 'ᨁ'
-    pub const BUGINESE_LETTER_GA: char = 'ᨁ';
+    pub const LETTER_GA: char = 'ᨁ';
     /// \u{1a02}: 'ᨂ'
-    pub const BUGINESE_LETTER_NGA: char = 'ᨂ';
+    pub const LETTER_NGA: char = 'ᨂ';
     /// \u{1a03}: 'ᨃ'
-    pub const BUGINESE_LETTER_NGKA: char = 'ᨃ';
+    pub const LETTER_NGKA: char = 'ᨃ';
     /// \u{1a04}: 'ᨄ'
-    pub const BUGINESE_LETTER_PA: char = 'ᨄ';
+    pub const LETTER_PA: char = 'ᨄ';
     /// \u{1a05}: 'ᨅ'
-    pub const BUGINESE_LETTER_BA: char = 'ᨅ';
+    pub const LETTER_BA: char = 'ᨅ';
     /// \u{1a06}: 'ᨆ'
-    pub const BUGINESE_LETTER_MA: char = 'ᨆ';
+    pub const LETTER_MA: char = 'ᨆ';
     /// \u{1a07}: 'ᨇ'
-    pub const BUGINESE_LETTER_MPA: char = 'ᨇ';
+    pub const LETTER_MPA: char = 'ᨇ';
     /// \u{1a08}: 'ᨈ'
-    pub const BUGINESE_LETTER_TA: char = 'ᨈ';
+    pub const LETTER_TA: char = 'ᨈ';
     /// \u{1a09}: 'ᨉ'
-    pub const BUGINESE_LETTER_DA: char = 'ᨉ';
+    pub const LETTER_DA: char = 'ᨉ';
     /// \u{1a0a}: 'ᨊ'
-    pub const BUGINESE_LETTER_NA: char = 'ᨊ';
+    pub const LETTER_NA: char = 'ᨊ';
     /// \u{1a0b}: 'ᨋ'
-    pub const BUGINESE_LETTER_NRA: char = 'ᨋ';
+    pub const LETTER_NRA: char = 'ᨋ';
     /// \u{1a0c}: 'ᨌ'
-    pub const BUGINESE_LETTER_CA: char = 'ᨌ';
+    pub const LETTER_CA: char = 'ᨌ';
     /// \u{1a0d}: 'ᨍ'
-    pub const BUGINESE_LETTER_JA: char = 'ᨍ';
+    pub const LETTER_JA: char = 'ᨍ';
     /// \u{1a0e}: 'ᨎ'
-    pub const BUGINESE_LETTER_NYA: char = 'ᨎ';
+    pub const LETTER_NYA: char = 'ᨎ';
     /// \u{1a0f}: 'ᨏ'
-    pub const BUGINESE_LETTER_NYCA: char = 'ᨏ';
+    pub const LETTER_NYCA: char = 'ᨏ';
     /// \u{1a10}: 'ᨐ'
-    pub const BUGINESE_LETTER_YA: char = 'ᨐ';
+    pub const LETTER_YA: char = 'ᨐ';
     /// \u{1a11}: 'ᨑ'
-    pub const BUGINESE_LETTER_RA: char = 'ᨑ';
+    pub const LETTER_RA: char = 'ᨑ';
     /// \u{1a12}: 'ᨒ'
-    pub const BUGINESE_LETTER_LA: char = 'ᨒ';
+    pub const LETTER_LA: char = 'ᨒ';
     /// \u{1a13}: 'ᨓ'
-    pub const BUGINESE_LETTER_VA: char = 'ᨓ';
+    pub const LETTER_VA: char = 'ᨓ';
     /// \u{1a14}: 'ᨔ'
-    pub const BUGINESE_LETTER_SA: char = 'ᨔ';
+    pub const LETTER_SA: char = 'ᨔ';
     /// \u{1a15}: 'ᨕ'
-    pub const BUGINESE_LETTER_A: char = 'ᨕ';
+    pub const LETTER_A: char = 'ᨕ';
     /// \u{1a16}: 'ᨖ'
-    pub const BUGINESE_LETTER_HA: char = 'ᨖ';
+    pub const LETTER_HA: char = 'ᨖ';
     /// \u{1a17}: 'ᨗ'
-    pub const BUGINESE_VOWEL_SIGN_I: char = 'ᨗ';
+    pub const VOWEL_SIGN_I: char = 'ᨗ';
     /// \u{1a18}: 'ᨘ'
-    pub const BUGINESE_VOWEL_SIGN_U: char = 'ᨘ';
+    pub const VOWEL_SIGN_U: char = 'ᨘ';
     /// \u{1a19}: 'ᨙ'
-    pub const BUGINESE_VOWEL_SIGN_E: char = 'ᨙ';
+    pub const VOWEL_SIGN_E: char = 'ᨙ';
     /// \u{1a1a}: 'ᨚ'
-    pub const BUGINESE_VOWEL_SIGN_O: char = 'ᨚ';
+    pub const VOWEL_SIGN_O: char = 'ᨚ';
     /// \u{1a1b}: 'ᨛ'
-    pub const BUGINESE_VOWEL_SIGN_AE: char = 'ᨛ';
+    pub const VOWEL_SIGN_AE: char = 'ᨛ';
     /// \u{1a1e}: '᨞'
-    pub const BUGINESE_PALLAWA: char = '᨞';
+    pub const PALLAWA: char = '᨞';
 }
 
 /// \u{1a00} → \u{1a1f}\
@@ -70,98 +70,98 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Buginese {
     /// \u{1a00}: 'ᨀ'
-    BugineseLetterKa,
+    LetterKa,
     /// \u{1a01}: 'ᨁ'
-    BugineseLetterGa,
+    LetterGa,
     /// \u{1a02}: 'ᨂ'
-    BugineseLetterNga,
+    LetterNga,
     /// \u{1a03}: 'ᨃ'
-    BugineseLetterNgka,
+    LetterNgka,
     /// \u{1a04}: 'ᨄ'
-    BugineseLetterPa,
+    LetterPa,
     /// \u{1a05}: 'ᨅ'
-    BugineseLetterBa,
+    LetterBa,
     /// \u{1a06}: 'ᨆ'
-    BugineseLetterMa,
+    LetterMa,
     /// \u{1a07}: 'ᨇ'
-    BugineseLetterMpa,
+    LetterMpa,
     /// \u{1a08}: 'ᨈ'
-    BugineseLetterTa,
+    LetterTa,
     /// \u{1a09}: 'ᨉ'
-    BugineseLetterDa,
+    LetterDa,
     /// \u{1a0a}: 'ᨊ'
-    BugineseLetterNa,
+    LetterNa,
     /// \u{1a0b}: 'ᨋ'
-    BugineseLetterNra,
+    LetterNra,
     /// \u{1a0c}: 'ᨌ'
-    BugineseLetterCa,
+    LetterCa,
     /// \u{1a0d}: 'ᨍ'
-    BugineseLetterJa,
+    LetterJa,
     /// \u{1a0e}: 'ᨎ'
-    BugineseLetterNya,
+    LetterNya,
     /// \u{1a0f}: 'ᨏ'
-    BugineseLetterNyca,
+    LetterNyca,
     /// \u{1a10}: 'ᨐ'
-    BugineseLetterYa,
+    LetterYa,
     /// \u{1a11}: 'ᨑ'
-    BugineseLetterRa,
+    LetterRa,
     /// \u{1a12}: 'ᨒ'
-    BugineseLetterLa,
+    LetterLa,
     /// \u{1a13}: 'ᨓ'
-    BugineseLetterVa,
+    LetterVa,
     /// \u{1a14}: 'ᨔ'
-    BugineseLetterSa,
+    LetterSa,
     /// \u{1a15}: 'ᨕ'
-    BugineseLetterA,
+    LetterA,
     /// \u{1a16}: 'ᨖ'
-    BugineseLetterHa,
+    LetterHa,
     /// \u{1a17}: 'ᨗ'
-    BugineseVowelSignI,
+    VowelSignI,
     /// \u{1a18}: 'ᨘ'
-    BugineseVowelSignU,
+    VowelSignU,
     /// \u{1a19}: 'ᨙ'
-    BugineseVowelSignE,
+    VowelSignE,
     /// \u{1a1a}: 'ᨚ'
-    BugineseVowelSignO,
+    VowelSignO,
     /// \u{1a1b}: 'ᨛ'
-    BugineseVowelSignAe,
+    VowelSignAe,
     /// \u{1a1e}: '᨞'
-    BuginesePallawa,
+    Pallawa,
 }
 
 impl Into<char> for Buginese {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Buginese::BugineseLetterKa => BUGINESE_LETTER_KA,
-            Buginese::BugineseLetterGa => BUGINESE_LETTER_GA,
-            Buginese::BugineseLetterNga => BUGINESE_LETTER_NGA,
-            Buginese::BugineseLetterNgka => BUGINESE_LETTER_NGKA,
-            Buginese::BugineseLetterPa => BUGINESE_LETTER_PA,
-            Buginese::BugineseLetterBa => BUGINESE_LETTER_BA,
-            Buginese::BugineseLetterMa => BUGINESE_LETTER_MA,
-            Buginese::BugineseLetterMpa => BUGINESE_LETTER_MPA,
-            Buginese::BugineseLetterTa => BUGINESE_LETTER_TA,
-            Buginese::BugineseLetterDa => BUGINESE_LETTER_DA,
-            Buginese::BugineseLetterNa => BUGINESE_LETTER_NA,
-            Buginese::BugineseLetterNra => BUGINESE_LETTER_NRA,
-            Buginese::BugineseLetterCa => BUGINESE_LETTER_CA,
-            Buginese::BugineseLetterJa => BUGINESE_LETTER_JA,
-            Buginese::BugineseLetterNya => BUGINESE_LETTER_NYA,
-            Buginese::BugineseLetterNyca => BUGINESE_LETTER_NYCA,
-            Buginese::BugineseLetterYa => BUGINESE_LETTER_YA,
-            Buginese::BugineseLetterRa => BUGINESE_LETTER_RA,
-            Buginese::BugineseLetterLa => BUGINESE_LETTER_LA,
-            Buginese::BugineseLetterVa => BUGINESE_LETTER_VA,
-            Buginese::BugineseLetterSa => BUGINESE_LETTER_SA,
-            Buginese::BugineseLetterA => BUGINESE_LETTER_A,
-            Buginese::BugineseLetterHa => BUGINESE_LETTER_HA,
-            Buginese::BugineseVowelSignI => BUGINESE_VOWEL_SIGN_I,
-            Buginese::BugineseVowelSignU => BUGINESE_VOWEL_SIGN_U,
-            Buginese::BugineseVowelSignE => BUGINESE_VOWEL_SIGN_E,
-            Buginese::BugineseVowelSignO => BUGINESE_VOWEL_SIGN_O,
-            Buginese::BugineseVowelSignAe => BUGINESE_VOWEL_SIGN_AE,
-            Buginese::BuginesePallawa => BUGINESE_PALLAWA,
+            Buginese::LetterKa => LETTER_KA,
+            Buginese::LetterGa => LETTER_GA,
+            Buginese::LetterNga => LETTER_NGA,
+            Buginese::LetterNgka => LETTER_NGKA,
+            Buginese::LetterPa => LETTER_PA,
+            Buginese::LetterBa => LETTER_BA,
+            Buginese::LetterMa => LETTER_MA,
+            Buginese::LetterMpa => LETTER_MPA,
+            Buginese::LetterTa => LETTER_TA,
+            Buginese::LetterDa => LETTER_DA,
+            Buginese::LetterNa => LETTER_NA,
+            Buginese::LetterNra => LETTER_NRA,
+            Buginese::LetterCa => LETTER_CA,
+            Buginese::LetterJa => LETTER_JA,
+            Buginese::LetterNya => LETTER_NYA,
+            Buginese::LetterNyca => LETTER_NYCA,
+            Buginese::LetterYa => LETTER_YA,
+            Buginese::LetterRa => LETTER_RA,
+            Buginese::LetterLa => LETTER_LA,
+            Buginese::LetterVa => LETTER_VA,
+            Buginese::LetterSa => LETTER_SA,
+            Buginese::LetterA => LETTER_A,
+            Buginese::LetterHa => LETTER_HA,
+            Buginese::VowelSignI => VOWEL_SIGN_I,
+            Buginese::VowelSignU => VOWEL_SIGN_U,
+            Buginese::VowelSignE => VOWEL_SIGN_E,
+            Buginese::VowelSignO => VOWEL_SIGN_O,
+            Buginese::VowelSignAe => VOWEL_SIGN_AE,
+            Buginese::Pallawa => PALLAWA,
         }
     }
 }
@@ -171,35 +171,35 @@ impl std::convert::TryFrom<char> for Buginese {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            BUGINESE_LETTER_KA => Ok(Buginese::BugineseLetterKa),
-            BUGINESE_LETTER_GA => Ok(Buginese::BugineseLetterGa),
-            BUGINESE_LETTER_NGA => Ok(Buginese::BugineseLetterNga),
-            BUGINESE_LETTER_NGKA => Ok(Buginese::BugineseLetterNgka),
-            BUGINESE_LETTER_PA => Ok(Buginese::BugineseLetterPa),
-            BUGINESE_LETTER_BA => Ok(Buginese::BugineseLetterBa),
-            BUGINESE_LETTER_MA => Ok(Buginese::BugineseLetterMa),
-            BUGINESE_LETTER_MPA => Ok(Buginese::BugineseLetterMpa),
-            BUGINESE_LETTER_TA => Ok(Buginese::BugineseLetterTa),
-            BUGINESE_LETTER_DA => Ok(Buginese::BugineseLetterDa),
-            BUGINESE_LETTER_NA => Ok(Buginese::BugineseLetterNa),
-            BUGINESE_LETTER_NRA => Ok(Buginese::BugineseLetterNra),
-            BUGINESE_LETTER_CA => Ok(Buginese::BugineseLetterCa),
-            BUGINESE_LETTER_JA => Ok(Buginese::BugineseLetterJa),
-            BUGINESE_LETTER_NYA => Ok(Buginese::BugineseLetterNya),
-            BUGINESE_LETTER_NYCA => Ok(Buginese::BugineseLetterNyca),
-            BUGINESE_LETTER_YA => Ok(Buginese::BugineseLetterYa),
-            BUGINESE_LETTER_RA => Ok(Buginese::BugineseLetterRa),
-            BUGINESE_LETTER_LA => Ok(Buginese::BugineseLetterLa),
-            BUGINESE_LETTER_VA => Ok(Buginese::BugineseLetterVa),
-            BUGINESE_LETTER_SA => Ok(Buginese::BugineseLetterSa),
-            BUGINESE_LETTER_A => Ok(Buginese::BugineseLetterA),
-            BUGINESE_LETTER_HA => Ok(Buginese::BugineseLetterHa),
-            BUGINESE_VOWEL_SIGN_I => Ok(Buginese::BugineseVowelSignI),
-            BUGINESE_VOWEL_SIGN_U => Ok(Buginese::BugineseVowelSignU),
-            BUGINESE_VOWEL_SIGN_E => Ok(Buginese::BugineseVowelSignE),
-            BUGINESE_VOWEL_SIGN_O => Ok(Buginese::BugineseVowelSignO),
-            BUGINESE_VOWEL_SIGN_AE => Ok(Buginese::BugineseVowelSignAe),
-            BUGINESE_PALLAWA => Ok(Buginese::BuginesePallawa),
+            LETTER_KA => Ok(Buginese::LetterKa),
+            LETTER_GA => Ok(Buginese::LetterGa),
+            LETTER_NGA => Ok(Buginese::LetterNga),
+            LETTER_NGKA => Ok(Buginese::LetterNgka),
+            LETTER_PA => Ok(Buginese::LetterPa),
+            LETTER_BA => Ok(Buginese::LetterBa),
+            LETTER_MA => Ok(Buginese::LetterMa),
+            LETTER_MPA => Ok(Buginese::LetterMpa),
+            LETTER_TA => Ok(Buginese::LetterTa),
+            LETTER_DA => Ok(Buginese::LetterDa),
+            LETTER_NA => Ok(Buginese::LetterNa),
+            LETTER_NRA => Ok(Buginese::LetterNra),
+            LETTER_CA => Ok(Buginese::LetterCa),
+            LETTER_JA => Ok(Buginese::LetterJa),
+            LETTER_NYA => Ok(Buginese::LetterNya),
+            LETTER_NYCA => Ok(Buginese::LetterNyca),
+            LETTER_YA => Ok(Buginese::LetterYa),
+            LETTER_RA => Ok(Buginese::LetterRa),
+            LETTER_LA => Ok(Buginese::LetterLa),
+            LETTER_VA => Ok(Buginese::LetterVa),
+            LETTER_SA => Ok(Buginese::LetterSa),
+            LETTER_A => Ok(Buginese::LetterA),
+            LETTER_HA => Ok(Buginese::LetterHa),
+            VOWEL_SIGN_I => Ok(Buginese::VowelSignI),
+            VOWEL_SIGN_U => Ok(Buginese::VowelSignU),
+            VOWEL_SIGN_E => Ok(Buginese::VowelSignE),
+            VOWEL_SIGN_O => Ok(Buginese::VowelSignO),
+            VOWEL_SIGN_AE => Ok(Buginese::VowelSignAe),
+            PALLAWA => Ok(Buginese::Pallawa),
             _ => Err(()),
         }
     }
@@ -238,43 +238,43 @@ impl Iterator for Buginese {
 }
 
 impl Buginese {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Buginese::BugineseLetterKa
+        Buginese::LetterKa
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Buginese::BugineseLetterKa => "buginese letter ka",
-            Buginese::BugineseLetterGa => "buginese letter ga",
-            Buginese::BugineseLetterNga => "buginese letter nga",
-            Buginese::BugineseLetterNgka => "buginese letter ngka",
-            Buginese::BugineseLetterPa => "buginese letter pa",
-            Buginese::BugineseLetterBa => "buginese letter ba",
-            Buginese::BugineseLetterMa => "buginese letter ma",
-            Buginese::BugineseLetterMpa => "buginese letter mpa",
-            Buginese::BugineseLetterTa => "buginese letter ta",
-            Buginese::BugineseLetterDa => "buginese letter da",
-            Buginese::BugineseLetterNa => "buginese letter na",
-            Buginese::BugineseLetterNra => "buginese letter nra",
-            Buginese::BugineseLetterCa => "buginese letter ca",
-            Buginese::BugineseLetterJa => "buginese letter ja",
-            Buginese::BugineseLetterNya => "buginese letter nya",
-            Buginese::BugineseLetterNyca => "buginese letter nyca",
-            Buginese::BugineseLetterYa => "buginese letter ya",
-            Buginese::BugineseLetterRa => "buginese letter ra",
-            Buginese::BugineseLetterLa => "buginese letter la",
-            Buginese::BugineseLetterVa => "buginese letter va",
-            Buginese::BugineseLetterSa => "buginese letter sa",
-            Buginese::BugineseLetterA => "buginese letter a",
-            Buginese::BugineseLetterHa => "buginese letter ha",
-            Buginese::BugineseVowelSignI => "buginese vowel sign i",
-            Buginese::BugineseVowelSignU => "buginese vowel sign u",
-            Buginese::BugineseVowelSignE => "buginese vowel sign e",
-            Buginese::BugineseVowelSignO => "buginese vowel sign o",
-            Buginese::BugineseVowelSignAe => "buginese vowel sign ae",
-            Buginese::BuginesePallawa => "buginese pallawa",
+            Buginese::LetterKa => "buginese letter ka",
+            Buginese::LetterGa => "buginese letter ga",
+            Buginese::LetterNga => "buginese letter nga",
+            Buginese::LetterNgka => "buginese letter ngka",
+            Buginese::LetterPa => "buginese letter pa",
+            Buginese::LetterBa => "buginese letter ba",
+            Buginese::LetterMa => "buginese letter ma",
+            Buginese::LetterMpa => "buginese letter mpa",
+            Buginese::LetterTa => "buginese letter ta",
+            Buginese::LetterDa => "buginese letter da",
+            Buginese::LetterNa => "buginese letter na",
+            Buginese::LetterNra => "buginese letter nra",
+            Buginese::LetterCa => "buginese letter ca",
+            Buginese::LetterJa => "buginese letter ja",
+            Buginese::LetterNya => "buginese letter nya",
+            Buginese::LetterNyca => "buginese letter nyca",
+            Buginese::LetterYa => "buginese letter ya",
+            Buginese::LetterRa => "buginese letter ra",
+            Buginese::LetterLa => "buginese letter la",
+            Buginese::LetterVa => "buginese letter va",
+            Buginese::LetterSa => "buginese letter sa",
+            Buginese::LetterA => "buginese letter a",
+            Buginese::LetterHa => "buginese letter ha",
+            Buginese::VowelSignI => "buginese vowel sign i",
+            Buginese::VowelSignU => "buginese vowel sign u",
+            Buginese::VowelSignE => "buginese vowel sign e",
+            Buginese::VowelSignO => "buginese vowel sign o",
+            Buginese::VowelSignAe => "buginese vowel sign ae",
+            Buginese::Pallawa => "buginese pallawa",
         }
     }
 }

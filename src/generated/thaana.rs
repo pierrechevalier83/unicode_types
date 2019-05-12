@@ -6,105 +6,105 @@
 /// ް ޱ
 pub mod constants {
     /// \u{780}: 'ހ'
-    pub const THAANA_LETTER_HAA: char = 'ހ';
+    pub const LETTER_HAA: char = 'ހ';
     /// \u{781}: 'ށ'
-    pub const THAANA_LETTER_SHAVIYANI: char = 'ށ';
+    pub const LETTER_SHAVIYANI: char = 'ށ';
     /// \u{782}: 'ނ'
-    pub const THAANA_LETTER_NOONU: char = 'ނ';
+    pub const LETTER_NOONU: char = 'ނ';
     /// \u{783}: 'ރ'
-    pub const THAANA_LETTER_RAA: char = 'ރ';
+    pub const LETTER_RAA: char = 'ރ';
     /// \u{784}: 'ބ'
-    pub const THAANA_LETTER_BAA: char = 'ބ';
+    pub const LETTER_BAA: char = 'ބ';
     /// \u{785}: 'ޅ'
-    pub const THAANA_LETTER_LHAVIYANI: char = 'ޅ';
+    pub const LETTER_LHAVIYANI: char = 'ޅ';
     /// \u{786}: 'ކ'
-    pub const THAANA_LETTER_KAAFU: char = 'ކ';
+    pub const LETTER_KAAFU: char = 'ކ';
     /// \u{787}: 'އ'
-    pub const THAANA_LETTER_ALIFU: char = 'އ';
+    pub const LETTER_ALIFU: char = 'އ';
     /// \u{788}: 'ވ'
-    pub const THAANA_LETTER_VAAVU: char = 'ވ';
+    pub const LETTER_VAAVU: char = 'ވ';
     /// \u{789}: 'މ'
-    pub const THAANA_LETTER_MEEMU: char = 'މ';
+    pub const LETTER_MEEMU: char = 'މ';
     /// \u{78a}: 'ފ'
-    pub const THAANA_LETTER_FAAFU: char = 'ފ';
+    pub const LETTER_FAAFU: char = 'ފ';
     /// \u{78b}: 'ދ'
-    pub const THAANA_LETTER_DHAALU: char = 'ދ';
+    pub const LETTER_DHAALU: char = 'ދ';
     /// \u{78c}: 'ތ'
-    pub const THAANA_LETTER_THAA: char = 'ތ';
+    pub const LETTER_THAA: char = 'ތ';
     /// \u{78d}: 'ލ'
-    pub const THAANA_LETTER_LAAMU: char = 'ލ';
+    pub const LETTER_LAAMU: char = 'ލ';
     /// \u{78e}: 'ގ'
-    pub const THAANA_LETTER_GAAFU: char = 'ގ';
+    pub const LETTER_GAAFU: char = 'ގ';
     /// \u{78f}: 'ޏ'
-    pub const THAANA_LETTER_GNAVIYANI: char = 'ޏ';
+    pub const LETTER_GNAVIYANI: char = 'ޏ';
     /// \u{790}: 'ސ'
-    pub const THAANA_LETTER_SEENU: char = 'ސ';
+    pub const LETTER_SEENU: char = 'ސ';
     /// \u{791}: 'ޑ'
-    pub const THAANA_LETTER_DAVIYANI: char = 'ޑ';
+    pub const LETTER_DAVIYANI: char = 'ޑ';
     /// \u{792}: 'ޒ'
-    pub const THAANA_LETTER_ZAVIYANI: char = 'ޒ';
+    pub const LETTER_ZAVIYANI: char = 'ޒ';
     /// \u{793}: 'ޓ'
-    pub const THAANA_LETTER_TAVIYANI: char = 'ޓ';
+    pub const LETTER_TAVIYANI: char = 'ޓ';
     /// \u{794}: 'ޔ'
-    pub const THAANA_LETTER_YAA: char = 'ޔ';
+    pub const LETTER_YAA: char = 'ޔ';
     /// \u{795}: 'ޕ'
-    pub const THAANA_LETTER_PAVIYANI: char = 'ޕ';
+    pub const LETTER_PAVIYANI: char = 'ޕ';
     /// \u{796}: 'ޖ'
-    pub const THAANA_LETTER_JAVIYANI: char = 'ޖ';
+    pub const LETTER_JAVIYANI: char = 'ޖ';
     /// \u{797}: 'ޗ'
-    pub const THAANA_LETTER_CHAVIYANI: char = 'ޗ';
+    pub const LETTER_CHAVIYANI: char = 'ޗ';
     /// \u{798}: 'ޘ'
-    pub const THAANA_LETTER_TTAA: char = 'ޘ';
+    pub const LETTER_TTAA: char = 'ޘ';
     /// \u{799}: 'ޙ'
-    pub const THAANA_LETTER_HHAA: char = 'ޙ';
+    pub const LETTER_HHAA: char = 'ޙ';
     /// \u{79a}: 'ޚ'
-    pub const THAANA_LETTER_KHAA: char = 'ޚ';
+    pub const LETTER_KHAA: char = 'ޚ';
     /// \u{79b}: 'ޛ'
-    pub const THAANA_LETTER_THAALU: char = 'ޛ';
+    pub const LETTER_THAALU: char = 'ޛ';
     /// \u{79c}: 'ޜ'
-    pub const THAANA_LETTER_ZAA: char = 'ޜ';
+    pub const LETTER_ZAA: char = 'ޜ';
     /// \u{79d}: 'ޝ'
-    pub const THAANA_LETTER_SHEENU: char = 'ޝ';
+    pub const LETTER_SHEENU: char = 'ޝ';
     /// \u{79e}: 'ޞ'
-    pub const THAANA_LETTER_SAADHU: char = 'ޞ';
+    pub const LETTER_SAADHU: char = 'ޞ';
     /// \u{79f}: 'ޟ'
-    pub const THAANA_LETTER_DAADHU: char = 'ޟ';
+    pub const LETTER_DAADHU: char = 'ޟ';
     /// \u{7a0}: 'ޠ'
-    pub const THAANA_LETTER_TO: char = 'ޠ';
+    pub const LETTER_TO: char = 'ޠ';
     /// \u{7a1}: 'ޡ'
-    pub const THAANA_LETTER_ZO: char = 'ޡ';
+    pub const LETTER_ZO: char = 'ޡ';
     /// \u{7a2}: 'ޢ'
-    pub const THAANA_LETTER_AINU: char = 'ޢ';
+    pub const LETTER_AINU: char = 'ޢ';
     /// \u{7a3}: 'ޣ'
-    pub const THAANA_LETTER_GHAINU: char = 'ޣ';
+    pub const LETTER_GHAINU: char = 'ޣ';
     /// \u{7a4}: 'ޤ'
-    pub const THAANA_LETTER_QAAFU: char = 'ޤ';
+    pub const LETTER_QAAFU: char = 'ޤ';
     /// \u{7a5}: 'ޥ'
-    pub const THAANA_LETTER_WAAVU: char = 'ޥ';
+    pub const LETTER_WAAVU: char = 'ޥ';
     /// \u{7a6}: 'ަ'
-    pub const THAANA_ABAFILI: char = 'ަ';
+    pub const ABAFILI: char = 'ަ';
     /// \u{7a7}: 'ާ'
-    pub const THAANA_AABAAFILI: char = 'ާ';
+    pub const AABAAFILI: char = 'ާ';
     /// \u{7a8}: 'ި'
-    pub const THAANA_IBIFILI: char = 'ި';
+    pub const IBIFILI: char = 'ި';
     /// \u{7a9}: 'ީ'
-    pub const THAANA_EEBEEFILI: char = 'ީ';
+    pub const EEBEEFILI: char = 'ީ';
     /// \u{7aa}: 'ު'
-    pub const THAANA_UBUFILI: char = 'ު';
+    pub const UBUFILI: char = 'ު';
     /// \u{7ab}: 'ޫ'
-    pub const THAANA_OOBOOFILI: char = 'ޫ';
+    pub const OOBOOFILI: char = 'ޫ';
     /// \u{7ac}: 'ެ'
-    pub const THAANA_EBEFILI: char = 'ެ';
+    pub const EBEFILI: char = 'ެ';
     /// \u{7ad}: 'ޭ'
-    pub const THAANA_EYBEYFILI: char = 'ޭ';
+    pub const EYBEYFILI: char = 'ޭ';
     /// \u{7ae}: 'ޮ'
-    pub const THAANA_OBOFILI: char = 'ޮ';
+    pub const OBOFILI: char = 'ޮ';
     /// \u{7af}: 'ޯ'
-    pub const THAANA_OABOAFILI: char = 'ޯ';
+    pub const OABOAFILI: char = 'ޯ';
     /// \u{7b0}: 'ް'
-    pub const THAANA_SUKUN: char = 'ް';
+    pub const SUKUN: char = 'ް';
     /// \u{7b1}: 'ޱ'
-    pub const THAANA_LETTER_NAA: char = 'ޱ';
+    pub const LETTER_NAA: char = 'ޱ';
 }
 
 /// \u{780} → \u{7bf}\
@@ -116,161 +116,161 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Thaana {
     /// \u{780}: 'ހ'
-    ThaanaLetterHaa,
+    LetterHaa,
     /// \u{781}: 'ށ'
-    ThaanaLetterShaviyani,
+    LetterShaviyani,
     /// \u{782}: 'ނ'
-    ThaanaLetterNoonu,
+    LetterNoonu,
     /// \u{783}: 'ރ'
-    ThaanaLetterRaa,
+    LetterRaa,
     /// \u{784}: 'ބ'
-    ThaanaLetterBaa,
+    LetterBaa,
     /// \u{785}: 'ޅ'
-    ThaanaLetterLhaviyani,
+    LetterLhaviyani,
     /// \u{786}: 'ކ'
-    ThaanaLetterKaafu,
+    LetterKaafu,
     /// \u{787}: 'އ'
-    ThaanaLetterAlifu,
+    LetterAlifu,
     /// \u{788}: 'ވ'
-    ThaanaLetterVaavu,
+    LetterVaavu,
     /// \u{789}: 'މ'
-    ThaanaLetterMeemu,
+    LetterMeemu,
     /// \u{78a}: 'ފ'
-    ThaanaLetterFaafu,
+    LetterFaafu,
     /// \u{78b}: 'ދ'
-    ThaanaLetterDhaalu,
+    LetterDhaalu,
     /// \u{78c}: 'ތ'
-    ThaanaLetterThaa,
+    LetterThaa,
     /// \u{78d}: 'ލ'
-    ThaanaLetterLaamu,
+    LetterLaamu,
     /// \u{78e}: 'ގ'
-    ThaanaLetterGaafu,
+    LetterGaafu,
     /// \u{78f}: 'ޏ'
-    ThaanaLetterGnaviyani,
+    LetterGnaviyani,
     /// \u{790}: 'ސ'
-    ThaanaLetterSeenu,
+    LetterSeenu,
     /// \u{791}: 'ޑ'
-    ThaanaLetterDaviyani,
+    LetterDaviyani,
     /// \u{792}: 'ޒ'
-    ThaanaLetterZaviyani,
+    LetterZaviyani,
     /// \u{793}: 'ޓ'
-    ThaanaLetterTaviyani,
+    LetterTaviyani,
     /// \u{794}: 'ޔ'
-    ThaanaLetterYaa,
+    LetterYaa,
     /// \u{795}: 'ޕ'
-    ThaanaLetterPaviyani,
+    LetterPaviyani,
     /// \u{796}: 'ޖ'
-    ThaanaLetterJaviyani,
+    LetterJaviyani,
     /// \u{797}: 'ޗ'
-    ThaanaLetterChaviyani,
+    LetterChaviyani,
     /// \u{798}: 'ޘ'
-    ThaanaLetterTtaa,
+    LetterTtaa,
     /// \u{799}: 'ޙ'
-    ThaanaLetterHhaa,
+    LetterHhaa,
     /// \u{79a}: 'ޚ'
-    ThaanaLetterKhaa,
+    LetterKhaa,
     /// \u{79b}: 'ޛ'
-    ThaanaLetterThaalu,
+    LetterThaalu,
     /// \u{79c}: 'ޜ'
-    ThaanaLetterZaa,
+    LetterZaa,
     /// \u{79d}: 'ޝ'
-    ThaanaLetterSheenu,
+    LetterSheenu,
     /// \u{79e}: 'ޞ'
-    ThaanaLetterSaadhu,
+    LetterSaadhu,
     /// \u{79f}: 'ޟ'
-    ThaanaLetterDaadhu,
+    LetterDaadhu,
     /// \u{7a0}: 'ޠ'
-    ThaanaLetterTo,
+    LetterTo,
     /// \u{7a1}: 'ޡ'
-    ThaanaLetterZo,
+    LetterZo,
     /// \u{7a2}: 'ޢ'
-    ThaanaLetterAinu,
+    LetterAinu,
     /// \u{7a3}: 'ޣ'
-    ThaanaLetterGhainu,
+    LetterGhainu,
     /// \u{7a4}: 'ޤ'
-    ThaanaLetterQaafu,
+    LetterQaafu,
     /// \u{7a5}: 'ޥ'
-    ThaanaLetterWaavu,
+    LetterWaavu,
     /// \u{7a6}: 'ަ'
-    ThaanaAbafili,
+    Abafili,
     /// \u{7a7}: 'ާ'
-    ThaanaAabaafili,
+    Aabaafili,
     /// \u{7a8}: 'ި'
-    ThaanaIbifili,
+    Ibifili,
     /// \u{7a9}: 'ީ'
-    ThaanaEebeefili,
+    Eebeefili,
     /// \u{7aa}: 'ު'
-    ThaanaUbufili,
+    Ubufili,
     /// \u{7ab}: 'ޫ'
-    ThaanaOoboofili,
+    Ooboofili,
     /// \u{7ac}: 'ެ'
-    ThaanaEbefili,
+    Ebefili,
     /// \u{7ad}: 'ޭ'
-    ThaanaEybeyfili,
+    Eybeyfili,
     /// \u{7ae}: 'ޮ'
-    ThaanaObofili,
+    Obofili,
     /// \u{7af}: 'ޯ'
-    ThaanaOaboafili,
+    Oaboafili,
     /// \u{7b0}: 'ް'
-    ThaanaSukun,
+    Sukun,
     /// \u{7b1}: 'ޱ'
-    ThaanaLetterNaa,
+    LetterNaa,
 }
 
 impl Into<char> for Thaana {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Thaana::ThaanaLetterHaa => THAANA_LETTER_HAA,
-            Thaana::ThaanaLetterShaviyani => THAANA_LETTER_SHAVIYANI,
-            Thaana::ThaanaLetterNoonu => THAANA_LETTER_NOONU,
-            Thaana::ThaanaLetterRaa => THAANA_LETTER_RAA,
-            Thaana::ThaanaLetterBaa => THAANA_LETTER_BAA,
-            Thaana::ThaanaLetterLhaviyani => THAANA_LETTER_LHAVIYANI,
-            Thaana::ThaanaLetterKaafu => THAANA_LETTER_KAAFU,
-            Thaana::ThaanaLetterAlifu => THAANA_LETTER_ALIFU,
-            Thaana::ThaanaLetterVaavu => THAANA_LETTER_VAAVU,
-            Thaana::ThaanaLetterMeemu => THAANA_LETTER_MEEMU,
-            Thaana::ThaanaLetterFaafu => THAANA_LETTER_FAAFU,
-            Thaana::ThaanaLetterDhaalu => THAANA_LETTER_DHAALU,
-            Thaana::ThaanaLetterThaa => THAANA_LETTER_THAA,
-            Thaana::ThaanaLetterLaamu => THAANA_LETTER_LAAMU,
-            Thaana::ThaanaLetterGaafu => THAANA_LETTER_GAAFU,
-            Thaana::ThaanaLetterGnaviyani => THAANA_LETTER_GNAVIYANI,
-            Thaana::ThaanaLetterSeenu => THAANA_LETTER_SEENU,
-            Thaana::ThaanaLetterDaviyani => THAANA_LETTER_DAVIYANI,
-            Thaana::ThaanaLetterZaviyani => THAANA_LETTER_ZAVIYANI,
-            Thaana::ThaanaLetterTaviyani => THAANA_LETTER_TAVIYANI,
-            Thaana::ThaanaLetterYaa => THAANA_LETTER_YAA,
-            Thaana::ThaanaLetterPaviyani => THAANA_LETTER_PAVIYANI,
-            Thaana::ThaanaLetterJaviyani => THAANA_LETTER_JAVIYANI,
-            Thaana::ThaanaLetterChaviyani => THAANA_LETTER_CHAVIYANI,
-            Thaana::ThaanaLetterTtaa => THAANA_LETTER_TTAA,
-            Thaana::ThaanaLetterHhaa => THAANA_LETTER_HHAA,
-            Thaana::ThaanaLetterKhaa => THAANA_LETTER_KHAA,
-            Thaana::ThaanaLetterThaalu => THAANA_LETTER_THAALU,
-            Thaana::ThaanaLetterZaa => THAANA_LETTER_ZAA,
-            Thaana::ThaanaLetterSheenu => THAANA_LETTER_SHEENU,
-            Thaana::ThaanaLetterSaadhu => THAANA_LETTER_SAADHU,
-            Thaana::ThaanaLetterDaadhu => THAANA_LETTER_DAADHU,
-            Thaana::ThaanaLetterTo => THAANA_LETTER_TO,
-            Thaana::ThaanaLetterZo => THAANA_LETTER_ZO,
-            Thaana::ThaanaLetterAinu => THAANA_LETTER_AINU,
-            Thaana::ThaanaLetterGhainu => THAANA_LETTER_GHAINU,
-            Thaana::ThaanaLetterQaafu => THAANA_LETTER_QAAFU,
-            Thaana::ThaanaLetterWaavu => THAANA_LETTER_WAAVU,
-            Thaana::ThaanaAbafili => THAANA_ABAFILI,
-            Thaana::ThaanaAabaafili => THAANA_AABAAFILI,
-            Thaana::ThaanaIbifili => THAANA_IBIFILI,
-            Thaana::ThaanaEebeefili => THAANA_EEBEEFILI,
-            Thaana::ThaanaUbufili => THAANA_UBUFILI,
-            Thaana::ThaanaOoboofili => THAANA_OOBOOFILI,
-            Thaana::ThaanaEbefili => THAANA_EBEFILI,
-            Thaana::ThaanaEybeyfili => THAANA_EYBEYFILI,
-            Thaana::ThaanaObofili => THAANA_OBOFILI,
-            Thaana::ThaanaOaboafili => THAANA_OABOAFILI,
-            Thaana::ThaanaSukun => THAANA_SUKUN,
-            Thaana::ThaanaLetterNaa => THAANA_LETTER_NAA,
+            Thaana::LetterHaa => LETTER_HAA,
+            Thaana::LetterShaviyani => LETTER_SHAVIYANI,
+            Thaana::LetterNoonu => LETTER_NOONU,
+            Thaana::LetterRaa => LETTER_RAA,
+            Thaana::LetterBaa => LETTER_BAA,
+            Thaana::LetterLhaviyani => LETTER_LHAVIYANI,
+            Thaana::LetterKaafu => LETTER_KAAFU,
+            Thaana::LetterAlifu => LETTER_ALIFU,
+            Thaana::LetterVaavu => LETTER_VAAVU,
+            Thaana::LetterMeemu => LETTER_MEEMU,
+            Thaana::LetterFaafu => LETTER_FAAFU,
+            Thaana::LetterDhaalu => LETTER_DHAALU,
+            Thaana::LetterThaa => LETTER_THAA,
+            Thaana::LetterLaamu => LETTER_LAAMU,
+            Thaana::LetterGaafu => LETTER_GAAFU,
+            Thaana::LetterGnaviyani => LETTER_GNAVIYANI,
+            Thaana::LetterSeenu => LETTER_SEENU,
+            Thaana::LetterDaviyani => LETTER_DAVIYANI,
+            Thaana::LetterZaviyani => LETTER_ZAVIYANI,
+            Thaana::LetterTaviyani => LETTER_TAVIYANI,
+            Thaana::LetterYaa => LETTER_YAA,
+            Thaana::LetterPaviyani => LETTER_PAVIYANI,
+            Thaana::LetterJaviyani => LETTER_JAVIYANI,
+            Thaana::LetterChaviyani => LETTER_CHAVIYANI,
+            Thaana::LetterTtaa => LETTER_TTAA,
+            Thaana::LetterHhaa => LETTER_HHAA,
+            Thaana::LetterKhaa => LETTER_KHAA,
+            Thaana::LetterThaalu => LETTER_THAALU,
+            Thaana::LetterZaa => LETTER_ZAA,
+            Thaana::LetterSheenu => LETTER_SHEENU,
+            Thaana::LetterSaadhu => LETTER_SAADHU,
+            Thaana::LetterDaadhu => LETTER_DAADHU,
+            Thaana::LetterTo => LETTER_TO,
+            Thaana::LetterZo => LETTER_ZO,
+            Thaana::LetterAinu => LETTER_AINU,
+            Thaana::LetterGhainu => LETTER_GHAINU,
+            Thaana::LetterQaafu => LETTER_QAAFU,
+            Thaana::LetterWaavu => LETTER_WAAVU,
+            Thaana::Abafili => ABAFILI,
+            Thaana::Aabaafili => AABAAFILI,
+            Thaana::Ibifili => IBIFILI,
+            Thaana::Eebeefili => EEBEEFILI,
+            Thaana::Ubufili => UBUFILI,
+            Thaana::Ooboofili => OOBOOFILI,
+            Thaana::Ebefili => EBEFILI,
+            Thaana::Eybeyfili => EYBEYFILI,
+            Thaana::Obofili => OBOFILI,
+            Thaana::Oaboafili => OABOAFILI,
+            Thaana::Sukun => SUKUN,
+            Thaana::LetterNaa => LETTER_NAA,
         }
     }
 }
@@ -280,56 +280,56 @@ impl std::convert::TryFrom<char> for Thaana {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            THAANA_LETTER_HAA => Ok(Thaana::ThaanaLetterHaa),
-            THAANA_LETTER_SHAVIYANI => Ok(Thaana::ThaanaLetterShaviyani),
-            THAANA_LETTER_NOONU => Ok(Thaana::ThaanaLetterNoonu),
-            THAANA_LETTER_RAA => Ok(Thaana::ThaanaLetterRaa),
-            THAANA_LETTER_BAA => Ok(Thaana::ThaanaLetterBaa),
-            THAANA_LETTER_LHAVIYANI => Ok(Thaana::ThaanaLetterLhaviyani),
-            THAANA_LETTER_KAAFU => Ok(Thaana::ThaanaLetterKaafu),
-            THAANA_LETTER_ALIFU => Ok(Thaana::ThaanaLetterAlifu),
-            THAANA_LETTER_VAAVU => Ok(Thaana::ThaanaLetterVaavu),
-            THAANA_LETTER_MEEMU => Ok(Thaana::ThaanaLetterMeemu),
-            THAANA_LETTER_FAAFU => Ok(Thaana::ThaanaLetterFaafu),
-            THAANA_LETTER_DHAALU => Ok(Thaana::ThaanaLetterDhaalu),
-            THAANA_LETTER_THAA => Ok(Thaana::ThaanaLetterThaa),
-            THAANA_LETTER_LAAMU => Ok(Thaana::ThaanaLetterLaamu),
-            THAANA_LETTER_GAAFU => Ok(Thaana::ThaanaLetterGaafu),
-            THAANA_LETTER_GNAVIYANI => Ok(Thaana::ThaanaLetterGnaviyani),
-            THAANA_LETTER_SEENU => Ok(Thaana::ThaanaLetterSeenu),
-            THAANA_LETTER_DAVIYANI => Ok(Thaana::ThaanaLetterDaviyani),
-            THAANA_LETTER_ZAVIYANI => Ok(Thaana::ThaanaLetterZaviyani),
-            THAANA_LETTER_TAVIYANI => Ok(Thaana::ThaanaLetterTaviyani),
-            THAANA_LETTER_YAA => Ok(Thaana::ThaanaLetterYaa),
-            THAANA_LETTER_PAVIYANI => Ok(Thaana::ThaanaLetterPaviyani),
-            THAANA_LETTER_JAVIYANI => Ok(Thaana::ThaanaLetterJaviyani),
-            THAANA_LETTER_CHAVIYANI => Ok(Thaana::ThaanaLetterChaviyani),
-            THAANA_LETTER_TTAA => Ok(Thaana::ThaanaLetterTtaa),
-            THAANA_LETTER_HHAA => Ok(Thaana::ThaanaLetterHhaa),
-            THAANA_LETTER_KHAA => Ok(Thaana::ThaanaLetterKhaa),
-            THAANA_LETTER_THAALU => Ok(Thaana::ThaanaLetterThaalu),
-            THAANA_LETTER_ZAA => Ok(Thaana::ThaanaLetterZaa),
-            THAANA_LETTER_SHEENU => Ok(Thaana::ThaanaLetterSheenu),
-            THAANA_LETTER_SAADHU => Ok(Thaana::ThaanaLetterSaadhu),
-            THAANA_LETTER_DAADHU => Ok(Thaana::ThaanaLetterDaadhu),
-            THAANA_LETTER_TO => Ok(Thaana::ThaanaLetterTo),
-            THAANA_LETTER_ZO => Ok(Thaana::ThaanaLetterZo),
-            THAANA_LETTER_AINU => Ok(Thaana::ThaanaLetterAinu),
-            THAANA_LETTER_GHAINU => Ok(Thaana::ThaanaLetterGhainu),
-            THAANA_LETTER_QAAFU => Ok(Thaana::ThaanaLetterQaafu),
-            THAANA_LETTER_WAAVU => Ok(Thaana::ThaanaLetterWaavu),
-            THAANA_ABAFILI => Ok(Thaana::ThaanaAbafili),
-            THAANA_AABAAFILI => Ok(Thaana::ThaanaAabaafili),
-            THAANA_IBIFILI => Ok(Thaana::ThaanaIbifili),
-            THAANA_EEBEEFILI => Ok(Thaana::ThaanaEebeefili),
-            THAANA_UBUFILI => Ok(Thaana::ThaanaUbufili),
-            THAANA_OOBOOFILI => Ok(Thaana::ThaanaOoboofili),
-            THAANA_EBEFILI => Ok(Thaana::ThaanaEbefili),
-            THAANA_EYBEYFILI => Ok(Thaana::ThaanaEybeyfili),
-            THAANA_OBOFILI => Ok(Thaana::ThaanaObofili),
-            THAANA_OABOAFILI => Ok(Thaana::ThaanaOaboafili),
-            THAANA_SUKUN => Ok(Thaana::ThaanaSukun),
-            THAANA_LETTER_NAA => Ok(Thaana::ThaanaLetterNaa),
+            LETTER_HAA => Ok(Thaana::LetterHaa),
+            LETTER_SHAVIYANI => Ok(Thaana::LetterShaviyani),
+            LETTER_NOONU => Ok(Thaana::LetterNoonu),
+            LETTER_RAA => Ok(Thaana::LetterRaa),
+            LETTER_BAA => Ok(Thaana::LetterBaa),
+            LETTER_LHAVIYANI => Ok(Thaana::LetterLhaviyani),
+            LETTER_KAAFU => Ok(Thaana::LetterKaafu),
+            LETTER_ALIFU => Ok(Thaana::LetterAlifu),
+            LETTER_VAAVU => Ok(Thaana::LetterVaavu),
+            LETTER_MEEMU => Ok(Thaana::LetterMeemu),
+            LETTER_FAAFU => Ok(Thaana::LetterFaafu),
+            LETTER_DHAALU => Ok(Thaana::LetterDhaalu),
+            LETTER_THAA => Ok(Thaana::LetterThaa),
+            LETTER_LAAMU => Ok(Thaana::LetterLaamu),
+            LETTER_GAAFU => Ok(Thaana::LetterGaafu),
+            LETTER_GNAVIYANI => Ok(Thaana::LetterGnaviyani),
+            LETTER_SEENU => Ok(Thaana::LetterSeenu),
+            LETTER_DAVIYANI => Ok(Thaana::LetterDaviyani),
+            LETTER_ZAVIYANI => Ok(Thaana::LetterZaviyani),
+            LETTER_TAVIYANI => Ok(Thaana::LetterTaviyani),
+            LETTER_YAA => Ok(Thaana::LetterYaa),
+            LETTER_PAVIYANI => Ok(Thaana::LetterPaviyani),
+            LETTER_JAVIYANI => Ok(Thaana::LetterJaviyani),
+            LETTER_CHAVIYANI => Ok(Thaana::LetterChaviyani),
+            LETTER_TTAA => Ok(Thaana::LetterTtaa),
+            LETTER_HHAA => Ok(Thaana::LetterHhaa),
+            LETTER_KHAA => Ok(Thaana::LetterKhaa),
+            LETTER_THAALU => Ok(Thaana::LetterThaalu),
+            LETTER_ZAA => Ok(Thaana::LetterZaa),
+            LETTER_SHEENU => Ok(Thaana::LetterSheenu),
+            LETTER_SAADHU => Ok(Thaana::LetterSaadhu),
+            LETTER_DAADHU => Ok(Thaana::LetterDaadhu),
+            LETTER_TO => Ok(Thaana::LetterTo),
+            LETTER_ZO => Ok(Thaana::LetterZo),
+            LETTER_AINU => Ok(Thaana::LetterAinu),
+            LETTER_GHAINU => Ok(Thaana::LetterGhainu),
+            LETTER_QAAFU => Ok(Thaana::LetterQaafu),
+            LETTER_WAAVU => Ok(Thaana::LetterWaavu),
+            ABAFILI => Ok(Thaana::Abafili),
+            AABAAFILI => Ok(Thaana::Aabaafili),
+            IBIFILI => Ok(Thaana::Ibifili),
+            EEBEEFILI => Ok(Thaana::Eebeefili),
+            UBUFILI => Ok(Thaana::Ubufili),
+            OOBOOFILI => Ok(Thaana::Ooboofili),
+            EBEFILI => Ok(Thaana::Ebefili),
+            EYBEYFILI => Ok(Thaana::Eybeyfili),
+            OBOFILI => Ok(Thaana::Obofili),
+            OABOAFILI => Ok(Thaana::Oaboafili),
+            SUKUN => Ok(Thaana::Sukun),
+            LETTER_NAA => Ok(Thaana::LetterNaa),
             _ => Err(()),
         }
     }
@@ -368,64 +368,64 @@ impl Iterator for Thaana {
 }
 
 impl Thaana {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Thaana::ThaanaLetterHaa
+        Thaana::LetterHaa
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Thaana::ThaanaLetterHaa => "thaana letter haa",
-            Thaana::ThaanaLetterShaviyani => "thaana letter shaviyani",
-            Thaana::ThaanaLetterNoonu => "thaana letter noonu",
-            Thaana::ThaanaLetterRaa => "thaana letter raa",
-            Thaana::ThaanaLetterBaa => "thaana letter baa",
-            Thaana::ThaanaLetterLhaviyani => "thaana letter lhaviyani",
-            Thaana::ThaanaLetterKaafu => "thaana letter kaafu",
-            Thaana::ThaanaLetterAlifu => "thaana letter alifu",
-            Thaana::ThaanaLetterVaavu => "thaana letter vaavu",
-            Thaana::ThaanaLetterMeemu => "thaana letter meemu",
-            Thaana::ThaanaLetterFaafu => "thaana letter faafu",
-            Thaana::ThaanaLetterDhaalu => "thaana letter dhaalu",
-            Thaana::ThaanaLetterThaa => "thaana letter thaa",
-            Thaana::ThaanaLetterLaamu => "thaana letter laamu",
-            Thaana::ThaanaLetterGaafu => "thaana letter gaafu",
-            Thaana::ThaanaLetterGnaviyani => "thaana letter gnaviyani",
-            Thaana::ThaanaLetterSeenu => "thaana letter seenu",
-            Thaana::ThaanaLetterDaviyani => "thaana letter daviyani",
-            Thaana::ThaanaLetterZaviyani => "thaana letter zaviyani",
-            Thaana::ThaanaLetterTaviyani => "thaana letter taviyani",
-            Thaana::ThaanaLetterYaa => "thaana letter yaa",
-            Thaana::ThaanaLetterPaviyani => "thaana letter paviyani",
-            Thaana::ThaanaLetterJaviyani => "thaana letter javiyani",
-            Thaana::ThaanaLetterChaviyani => "thaana letter chaviyani",
-            Thaana::ThaanaLetterTtaa => "thaana letter ttaa",
-            Thaana::ThaanaLetterHhaa => "thaana letter hhaa",
-            Thaana::ThaanaLetterKhaa => "thaana letter khaa",
-            Thaana::ThaanaLetterThaalu => "thaana letter thaalu",
-            Thaana::ThaanaLetterZaa => "thaana letter zaa",
-            Thaana::ThaanaLetterSheenu => "thaana letter sheenu",
-            Thaana::ThaanaLetterSaadhu => "thaana letter saadhu",
-            Thaana::ThaanaLetterDaadhu => "thaana letter daadhu",
-            Thaana::ThaanaLetterTo => "thaana letter to",
-            Thaana::ThaanaLetterZo => "thaana letter zo",
-            Thaana::ThaanaLetterAinu => "thaana letter ainu",
-            Thaana::ThaanaLetterGhainu => "thaana letter ghainu",
-            Thaana::ThaanaLetterQaafu => "thaana letter qaafu",
-            Thaana::ThaanaLetterWaavu => "thaana letter waavu",
-            Thaana::ThaanaAbafili => "thaana abafili",
-            Thaana::ThaanaAabaafili => "thaana aabaafili",
-            Thaana::ThaanaIbifili => "thaana ibifili",
-            Thaana::ThaanaEebeefili => "thaana eebeefili",
-            Thaana::ThaanaUbufili => "thaana ubufili",
-            Thaana::ThaanaOoboofili => "thaana ooboofili",
-            Thaana::ThaanaEbefili => "thaana ebefili",
-            Thaana::ThaanaEybeyfili => "thaana eybeyfili",
-            Thaana::ThaanaObofili => "thaana obofili",
-            Thaana::ThaanaOaboafili => "thaana oaboafili",
-            Thaana::ThaanaSukun => "thaana sukun",
-            Thaana::ThaanaLetterNaa => "thaana letter naa",
+            Thaana::LetterHaa => "thaana letter haa",
+            Thaana::LetterShaviyani => "thaana letter shaviyani",
+            Thaana::LetterNoonu => "thaana letter noonu",
+            Thaana::LetterRaa => "thaana letter raa",
+            Thaana::LetterBaa => "thaana letter baa",
+            Thaana::LetterLhaviyani => "thaana letter lhaviyani",
+            Thaana::LetterKaafu => "thaana letter kaafu",
+            Thaana::LetterAlifu => "thaana letter alifu",
+            Thaana::LetterVaavu => "thaana letter vaavu",
+            Thaana::LetterMeemu => "thaana letter meemu",
+            Thaana::LetterFaafu => "thaana letter faafu",
+            Thaana::LetterDhaalu => "thaana letter dhaalu",
+            Thaana::LetterThaa => "thaana letter thaa",
+            Thaana::LetterLaamu => "thaana letter laamu",
+            Thaana::LetterGaafu => "thaana letter gaafu",
+            Thaana::LetterGnaviyani => "thaana letter gnaviyani",
+            Thaana::LetterSeenu => "thaana letter seenu",
+            Thaana::LetterDaviyani => "thaana letter daviyani",
+            Thaana::LetterZaviyani => "thaana letter zaviyani",
+            Thaana::LetterTaviyani => "thaana letter taviyani",
+            Thaana::LetterYaa => "thaana letter yaa",
+            Thaana::LetterPaviyani => "thaana letter paviyani",
+            Thaana::LetterJaviyani => "thaana letter javiyani",
+            Thaana::LetterChaviyani => "thaana letter chaviyani",
+            Thaana::LetterTtaa => "thaana letter ttaa",
+            Thaana::LetterHhaa => "thaana letter hhaa",
+            Thaana::LetterKhaa => "thaana letter khaa",
+            Thaana::LetterThaalu => "thaana letter thaalu",
+            Thaana::LetterZaa => "thaana letter zaa",
+            Thaana::LetterSheenu => "thaana letter sheenu",
+            Thaana::LetterSaadhu => "thaana letter saadhu",
+            Thaana::LetterDaadhu => "thaana letter daadhu",
+            Thaana::LetterTo => "thaana letter to",
+            Thaana::LetterZo => "thaana letter zo",
+            Thaana::LetterAinu => "thaana letter ainu",
+            Thaana::LetterGhainu => "thaana letter ghainu",
+            Thaana::LetterQaafu => "thaana letter qaafu",
+            Thaana::LetterWaavu => "thaana letter waavu",
+            Thaana::Abafili => "thaana abafili",
+            Thaana::Aabaafili => "thaana aabaafili",
+            Thaana::Ibifili => "thaana ibifili",
+            Thaana::Eebeefili => "thaana eebeefili",
+            Thaana::Ubufili => "thaana ubufili",
+            Thaana::Ooboofili => "thaana ooboofili",
+            Thaana::Ebefili => "thaana ebefili",
+            Thaana::Eybeyfili => "thaana eybeyfili",
+            Thaana::Obofili => "thaana obofili",
+            Thaana::Oaboafili => "thaana oaboafili",
+            Thaana::Sukun => "thaana sukun",
+            Thaana::LetterNaa => "thaana letter naa",
         }
     }
 }

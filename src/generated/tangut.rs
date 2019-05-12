@@ -3,9 +3,9 @@
 /// 𗀀 𘟷
 pub mod constants {
     /// \u{17000}: '𗀀'
-    pub const TANGUT_IDEOGRAPH_FIRST: char = '𗀀';
+    pub const IDEOGRAPH_FIRST: char = '𗀀';
     /// \u{187f7}: '𘟷'
-    pub const TANGUT_IDEOGRAPH_LAST: char = '𘟷';
+    pub const IDEOGRAPH_LAST: char = '𘟷';
 }
 
 /// \u{17000} → \u{187ff}\
@@ -14,17 +14,17 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Tangut {
     /// \u{17000}: '𗀀'
-    TangutIdeographFirst,
+    IdeographFirst,
     /// \u{187f7}: '𘟷'
-    TangutIdeographLast,
+    IdeographLast,
 }
 
 impl Into<char> for Tangut {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Tangut::TangutIdeographFirst => TANGUT_IDEOGRAPH_FIRST,
-            Tangut::TangutIdeographLast => TANGUT_IDEOGRAPH_LAST,
+            Tangut::IdeographFirst => IDEOGRAPH_FIRST,
+            Tangut::IdeographLast => IDEOGRAPH_LAST,
         }
     }
 }
@@ -34,8 +34,8 @@ impl std::convert::TryFrom<char> for Tangut {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            TANGUT_IDEOGRAPH_FIRST => Ok(Tangut::TangutIdeographFirst),
-            TANGUT_IDEOGRAPH_LAST => Ok(Tangut::TangutIdeographLast),
+            IDEOGRAPH_FIRST => Ok(Tangut::IdeographFirst),
+            IDEOGRAPH_LAST => Ok(Tangut::IdeographLast),
             _ => Err(()),
         }
     }
@@ -74,16 +74,16 @@ impl Iterator for Tangut {
 }
 
 impl Tangut {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Tangut::TangutIdeographFirst
+        Tangut::IdeographFirst
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Tangut::TangutIdeographFirst => "tangut ideograph first",
-            Tangut::TangutIdeographLast => "tangut ideograph last",
+            Tangut::IdeographFirst => "tangut ideograph first",
+            Tangut::IdeographLast => "tangut ideograph last",
         }
     }
 }

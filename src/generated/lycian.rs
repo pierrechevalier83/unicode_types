@@ -4,63 +4,63 @@
 /// 𐊐 𐊑 𐊒 𐊓 𐊔 𐊕 𐊖 𐊗 𐊘 𐊙 𐊚 𐊛 𐊜
 pub mod constants {
     /// \u{10280}: '𐊀'
-    pub const LYCIAN_LETTER_A: char = '𐊀';
+    pub const LETTER_A: char = '𐊀';
     /// \u{10281}: '𐊁'
-    pub const LYCIAN_LETTER_E: char = '𐊁';
+    pub const LETTER_E: char = '𐊁';
     /// \u{10282}: '𐊂'
-    pub const LYCIAN_LETTER_B: char = '𐊂';
+    pub const LETTER_B: char = '𐊂';
     /// \u{10283}: '𐊃'
-    pub const LYCIAN_LETTER_BH: char = '𐊃';
+    pub const LETTER_BH: char = '𐊃';
     /// \u{10284}: '𐊄'
-    pub const LYCIAN_LETTER_G: char = '𐊄';
+    pub const LETTER_G: char = '𐊄';
     /// \u{10285}: '𐊅'
-    pub const LYCIAN_LETTER_D: char = '𐊅';
+    pub const LETTER_D: char = '𐊅';
     /// \u{10286}: '𐊆'
-    pub const LYCIAN_LETTER_I: char = '𐊆';
+    pub const LETTER_I: char = '𐊆';
     /// \u{10287}: '𐊇'
-    pub const LYCIAN_LETTER_W: char = '𐊇';
+    pub const LETTER_W: char = '𐊇';
     /// \u{10288}: '𐊈'
-    pub const LYCIAN_LETTER_Z: char = '𐊈';
+    pub const LETTER_Z: char = '𐊈';
     /// \u{10289}: '𐊉'
-    pub const LYCIAN_LETTER_TH: char = '𐊉';
+    pub const LETTER_TH: char = '𐊉';
     /// \u{1028a}: '𐊊'
-    pub const LYCIAN_LETTER_J: char = '𐊊';
+    pub const LETTER_J: char = '𐊊';
     /// \u{1028b}: '𐊋'
-    pub const LYCIAN_LETTER_K: char = '𐊋';
+    pub const LETTER_K: char = '𐊋';
     /// \u{1028c}: '𐊌'
-    pub const LYCIAN_LETTER_Q: char = '𐊌';
+    pub const LETTER_Q: char = '𐊌';
     /// \u{1028d}: '𐊍'
-    pub const LYCIAN_LETTER_L: char = '𐊍';
+    pub const LETTER_L: char = '𐊍';
     /// \u{1028e}: '𐊎'
-    pub const LYCIAN_LETTER_M: char = '𐊎';
+    pub const LETTER_M: char = '𐊎';
     /// \u{1028f}: '𐊏'
-    pub const LYCIAN_LETTER_N: char = '𐊏';
+    pub const LETTER_N: char = '𐊏';
     /// \u{10290}: '𐊐'
-    pub const LYCIAN_LETTER_MM: char = '𐊐';
+    pub const LETTER_MM: char = '𐊐';
     /// \u{10291}: '𐊑'
-    pub const LYCIAN_LETTER_NN: char = '𐊑';
+    pub const LETTER_NN: char = '𐊑';
     /// \u{10292}: '𐊒'
-    pub const LYCIAN_LETTER_U: char = '𐊒';
+    pub const LETTER_U: char = '𐊒';
     /// \u{10293}: '𐊓'
-    pub const LYCIAN_LETTER_P: char = '𐊓';
+    pub const LETTER_P: char = '𐊓';
     /// \u{10294}: '𐊔'
-    pub const LYCIAN_LETTER_KK: char = '𐊔';
+    pub const LETTER_KK: char = '𐊔';
     /// \u{10295}: '𐊕'
-    pub const LYCIAN_LETTER_R: char = '𐊕';
+    pub const LETTER_R: char = '𐊕';
     /// \u{10296}: '𐊖'
-    pub const LYCIAN_LETTER_S: char = '𐊖';
+    pub const LETTER_S: char = '𐊖';
     /// \u{10297}: '𐊗'
-    pub const LYCIAN_LETTER_T: char = '𐊗';
+    pub const LETTER_T: char = '𐊗';
     /// \u{10298}: '𐊘'
-    pub const LYCIAN_LETTER_TT: char = '𐊘';
+    pub const LETTER_TT: char = '𐊘';
     /// \u{10299}: '𐊙'
-    pub const LYCIAN_LETTER_AN: char = '𐊙';
+    pub const LETTER_AN: char = '𐊙';
     /// \u{1029a}: '𐊚'
-    pub const LYCIAN_LETTER_EN: char = '𐊚';
+    pub const LETTER_EN: char = '𐊚';
     /// \u{1029b}: '𐊛'
-    pub const LYCIAN_LETTER_H: char = '𐊛';
+    pub const LETTER_H: char = '𐊛';
     /// \u{1029c}: '𐊜'
-    pub const LYCIAN_LETTER_X: char = '𐊜';
+    pub const LETTER_X: char = '𐊜';
 }
 
 /// \u{10280} → \u{1029f}\
@@ -70,98 +70,98 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Lycian {
     /// \u{10280}: '𐊀'
-    LycianLetterA,
+    LetterA,
     /// \u{10281}: '𐊁'
-    LycianLetterE,
+    LetterE,
     /// \u{10282}: '𐊂'
-    LycianLetterB,
+    LetterB,
     /// \u{10283}: '𐊃'
-    LycianLetterBh,
+    LetterBh,
     /// \u{10284}: '𐊄'
-    LycianLetterG,
+    LetterG,
     /// \u{10285}: '𐊅'
-    LycianLetterD,
+    LetterD,
     /// \u{10286}: '𐊆'
-    LycianLetterI,
+    LetterI,
     /// \u{10287}: '𐊇'
-    LycianLetterW,
+    LetterW,
     /// \u{10288}: '𐊈'
-    LycianLetterZ,
+    LetterZ,
     /// \u{10289}: '𐊉'
-    LycianLetterTh,
+    LetterTh,
     /// \u{1028a}: '𐊊'
-    LycianLetterJ,
+    LetterJ,
     /// \u{1028b}: '𐊋'
-    LycianLetterK,
+    LetterK,
     /// \u{1028c}: '𐊌'
-    LycianLetterQ,
+    LetterQ,
     /// \u{1028d}: '𐊍'
-    LycianLetterL,
+    LetterL,
     /// \u{1028e}: '𐊎'
-    LycianLetterM,
+    LetterM,
     /// \u{1028f}: '𐊏'
-    LycianLetterN,
+    LetterN,
     /// \u{10290}: '𐊐'
-    LycianLetterMm,
+    LetterMm,
     /// \u{10291}: '𐊑'
-    LycianLetterNn,
+    LetterNn,
     /// \u{10292}: '𐊒'
-    LycianLetterU,
+    LetterU,
     /// \u{10293}: '𐊓'
-    LycianLetterP,
+    LetterP,
     /// \u{10294}: '𐊔'
-    LycianLetterKk,
+    LetterKk,
     /// \u{10295}: '𐊕'
-    LycianLetterR,
+    LetterR,
     /// \u{10296}: '𐊖'
-    LycianLetterS,
+    LetterS,
     /// \u{10297}: '𐊗'
-    LycianLetterT,
+    LetterT,
     /// \u{10298}: '𐊘'
-    LycianLetterTt,
+    LetterTt,
     /// \u{10299}: '𐊙'
-    LycianLetterAn,
+    LetterAn,
     /// \u{1029a}: '𐊚'
-    LycianLetterEn,
+    LetterEn,
     /// \u{1029b}: '𐊛'
-    LycianLetterH,
+    LetterH,
     /// \u{1029c}: '𐊜'
-    LycianLetterX,
+    LetterX,
 }
 
 impl Into<char> for Lycian {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Lycian::LycianLetterA => LYCIAN_LETTER_A,
-            Lycian::LycianLetterE => LYCIAN_LETTER_E,
-            Lycian::LycianLetterB => LYCIAN_LETTER_B,
-            Lycian::LycianLetterBh => LYCIAN_LETTER_BH,
-            Lycian::LycianLetterG => LYCIAN_LETTER_G,
-            Lycian::LycianLetterD => LYCIAN_LETTER_D,
-            Lycian::LycianLetterI => LYCIAN_LETTER_I,
-            Lycian::LycianLetterW => LYCIAN_LETTER_W,
-            Lycian::LycianLetterZ => LYCIAN_LETTER_Z,
-            Lycian::LycianLetterTh => LYCIAN_LETTER_TH,
-            Lycian::LycianLetterJ => LYCIAN_LETTER_J,
-            Lycian::LycianLetterK => LYCIAN_LETTER_K,
-            Lycian::LycianLetterQ => LYCIAN_LETTER_Q,
-            Lycian::LycianLetterL => LYCIAN_LETTER_L,
-            Lycian::LycianLetterM => LYCIAN_LETTER_M,
-            Lycian::LycianLetterN => LYCIAN_LETTER_N,
-            Lycian::LycianLetterMm => LYCIAN_LETTER_MM,
-            Lycian::LycianLetterNn => LYCIAN_LETTER_NN,
-            Lycian::LycianLetterU => LYCIAN_LETTER_U,
-            Lycian::LycianLetterP => LYCIAN_LETTER_P,
-            Lycian::LycianLetterKk => LYCIAN_LETTER_KK,
-            Lycian::LycianLetterR => LYCIAN_LETTER_R,
-            Lycian::LycianLetterS => LYCIAN_LETTER_S,
-            Lycian::LycianLetterT => LYCIAN_LETTER_T,
-            Lycian::LycianLetterTt => LYCIAN_LETTER_TT,
-            Lycian::LycianLetterAn => LYCIAN_LETTER_AN,
-            Lycian::LycianLetterEn => LYCIAN_LETTER_EN,
-            Lycian::LycianLetterH => LYCIAN_LETTER_H,
-            Lycian::LycianLetterX => LYCIAN_LETTER_X,
+            Lycian::LetterA => LETTER_A,
+            Lycian::LetterE => LETTER_E,
+            Lycian::LetterB => LETTER_B,
+            Lycian::LetterBh => LETTER_BH,
+            Lycian::LetterG => LETTER_G,
+            Lycian::LetterD => LETTER_D,
+            Lycian::LetterI => LETTER_I,
+            Lycian::LetterW => LETTER_W,
+            Lycian::LetterZ => LETTER_Z,
+            Lycian::LetterTh => LETTER_TH,
+            Lycian::LetterJ => LETTER_J,
+            Lycian::LetterK => LETTER_K,
+            Lycian::LetterQ => LETTER_Q,
+            Lycian::LetterL => LETTER_L,
+            Lycian::LetterM => LETTER_M,
+            Lycian::LetterN => LETTER_N,
+            Lycian::LetterMm => LETTER_MM,
+            Lycian::LetterNn => LETTER_NN,
+            Lycian::LetterU => LETTER_U,
+            Lycian::LetterP => LETTER_P,
+            Lycian::LetterKk => LETTER_KK,
+            Lycian::LetterR => LETTER_R,
+            Lycian::LetterS => LETTER_S,
+            Lycian::LetterT => LETTER_T,
+            Lycian::LetterTt => LETTER_TT,
+            Lycian::LetterAn => LETTER_AN,
+            Lycian::LetterEn => LETTER_EN,
+            Lycian::LetterH => LETTER_H,
+            Lycian::LetterX => LETTER_X,
         }
     }
 }
@@ -171,35 +171,35 @@ impl std::convert::TryFrom<char> for Lycian {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            LYCIAN_LETTER_A => Ok(Lycian::LycianLetterA),
-            LYCIAN_LETTER_E => Ok(Lycian::LycianLetterE),
-            LYCIAN_LETTER_B => Ok(Lycian::LycianLetterB),
-            LYCIAN_LETTER_BH => Ok(Lycian::LycianLetterBh),
-            LYCIAN_LETTER_G => Ok(Lycian::LycianLetterG),
-            LYCIAN_LETTER_D => Ok(Lycian::LycianLetterD),
-            LYCIAN_LETTER_I => Ok(Lycian::LycianLetterI),
-            LYCIAN_LETTER_W => Ok(Lycian::LycianLetterW),
-            LYCIAN_LETTER_Z => Ok(Lycian::LycianLetterZ),
-            LYCIAN_LETTER_TH => Ok(Lycian::LycianLetterTh),
-            LYCIAN_LETTER_J => Ok(Lycian::LycianLetterJ),
-            LYCIAN_LETTER_K => Ok(Lycian::LycianLetterK),
-            LYCIAN_LETTER_Q => Ok(Lycian::LycianLetterQ),
-            LYCIAN_LETTER_L => Ok(Lycian::LycianLetterL),
-            LYCIAN_LETTER_M => Ok(Lycian::LycianLetterM),
-            LYCIAN_LETTER_N => Ok(Lycian::LycianLetterN),
-            LYCIAN_LETTER_MM => Ok(Lycian::LycianLetterMm),
-            LYCIAN_LETTER_NN => Ok(Lycian::LycianLetterNn),
-            LYCIAN_LETTER_U => Ok(Lycian::LycianLetterU),
-            LYCIAN_LETTER_P => Ok(Lycian::LycianLetterP),
-            LYCIAN_LETTER_KK => Ok(Lycian::LycianLetterKk),
-            LYCIAN_LETTER_R => Ok(Lycian::LycianLetterR),
-            LYCIAN_LETTER_S => Ok(Lycian::LycianLetterS),
-            LYCIAN_LETTER_T => Ok(Lycian::LycianLetterT),
-            LYCIAN_LETTER_TT => Ok(Lycian::LycianLetterTt),
-            LYCIAN_LETTER_AN => Ok(Lycian::LycianLetterAn),
-            LYCIAN_LETTER_EN => Ok(Lycian::LycianLetterEn),
-            LYCIAN_LETTER_H => Ok(Lycian::LycianLetterH),
-            LYCIAN_LETTER_X => Ok(Lycian::LycianLetterX),
+            LETTER_A => Ok(Lycian::LetterA),
+            LETTER_E => Ok(Lycian::LetterE),
+            LETTER_B => Ok(Lycian::LetterB),
+            LETTER_BH => Ok(Lycian::LetterBh),
+            LETTER_G => Ok(Lycian::LetterG),
+            LETTER_D => Ok(Lycian::LetterD),
+            LETTER_I => Ok(Lycian::LetterI),
+            LETTER_W => Ok(Lycian::LetterW),
+            LETTER_Z => Ok(Lycian::LetterZ),
+            LETTER_TH => Ok(Lycian::LetterTh),
+            LETTER_J => Ok(Lycian::LetterJ),
+            LETTER_K => Ok(Lycian::LetterK),
+            LETTER_Q => Ok(Lycian::LetterQ),
+            LETTER_L => Ok(Lycian::LetterL),
+            LETTER_M => Ok(Lycian::LetterM),
+            LETTER_N => Ok(Lycian::LetterN),
+            LETTER_MM => Ok(Lycian::LetterMm),
+            LETTER_NN => Ok(Lycian::LetterNn),
+            LETTER_U => Ok(Lycian::LetterU),
+            LETTER_P => Ok(Lycian::LetterP),
+            LETTER_KK => Ok(Lycian::LetterKk),
+            LETTER_R => Ok(Lycian::LetterR),
+            LETTER_S => Ok(Lycian::LetterS),
+            LETTER_T => Ok(Lycian::LetterT),
+            LETTER_TT => Ok(Lycian::LetterTt),
+            LETTER_AN => Ok(Lycian::LetterAn),
+            LETTER_EN => Ok(Lycian::LetterEn),
+            LETTER_H => Ok(Lycian::LetterH),
+            LETTER_X => Ok(Lycian::LetterX),
             _ => Err(()),
         }
     }
@@ -238,43 +238,43 @@ impl Iterator for Lycian {
 }
 
 impl Lycian {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Lycian::LycianLetterA
+        Lycian::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Lycian::LycianLetterA => "lycian letter a",
-            Lycian::LycianLetterE => "lycian letter e",
-            Lycian::LycianLetterB => "lycian letter b",
-            Lycian::LycianLetterBh => "lycian letter bh",
-            Lycian::LycianLetterG => "lycian letter g",
-            Lycian::LycianLetterD => "lycian letter d",
-            Lycian::LycianLetterI => "lycian letter i",
-            Lycian::LycianLetterW => "lycian letter w",
-            Lycian::LycianLetterZ => "lycian letter z",
-            Lycian::LycianLetterTh => "lycian letter th",
-            Lycian::LycianLetterJ => "lycian letter j",
-            Lycian::LycianLetterK => "lycian letter k",
-            Lycian::LycianLetterQ => "lycian letter q",
-            Lycian::LycianLetterL => "lycian letter l",
-            Lycian::LycianLetterM => "lycian letter m",
-            Lycian::LycianLetterN => "lycian letter n",
-            Lycian::LycianLetterMm => "lycian letter mm",
-            Lycian::LycianLetterNn => "lycian letter nn",
-            Lycian::LycianLetterU => "lycian letter u",
-            Lycian::LycianLetterP => "lycian letter p",
-            Lycian::LycianLetterKk => "lycian letter kk",
-            Lycian::LycianLetterR => "lycian letter r",
-            Lycian::LycianLetterS => "lycian letter s",
-            Lycian::LycianLetterT => "lycian letter t",
-            Lycian::LycianLetterTt => "lycian letter tt",
-            Lycian::LycianLetterAn => "lycian letter an",
-            Lycian::LycianLetterEn => "lycian letter en",
-            Lycian::LycianLetterH => "lycian letter h",
-            Lycian::LycianLetterX => "lycian letter x",
+            Lycian::LetterA => "lycian letter a",
+            Lycian::LetterE => "lycian letter e",
+            Lycian::LetterB => "lycian letter b",
+            Lycian::LetterBh => "lycian letter bh",
+            Lycian::LetterG => "lycian letter g",
+            Lycian::LetterD => "lycian letter d",
+            Lycian::LetterI => "lycian letter i",
+            Lycian::LetterW => "lycian letter w",
+            Lycian::LetterZ => "lycian letter z",
+            Lycian::LetterTh => "lycian letter th",
+            Lycian::LetterJ => "lycian letter j",
+            Lycian::LetterK => "lycian letter k",
+            Lycian::LetterQ => "lycian letter q",
+            Lycian::LetterL => "lycian letter l",
+            Lycian::LetterM => "lycian letter m",
+            Lycian::LetterN => "lycian letter n",
+            Lycian::LetterMm => "lycian letter mm",
+            Lycian::LetterNn => "lycian letter nn",
+            Lycian::LetterU => "lycian letter u",
+            Lycian::LetterP => "lycian letter p",
+            Lycian::LetterKk => "lycian letter kk",
+            Lycian::LetterR => "lycian letter r",
+            Lycian::LetterS => "lycian letter s",
+            Lycian::LetterT => "lycian letter t",
+            Lycian::LetterTt => "lycian letter tt",
+            Lycian::LetterAn => "lycian letter an",
+            Lycian::LetterEn => "lycian letter en",
+            Lycian::LetterH => "lycian letter h",
+            Lycian::LetterX => "lycian letter x",
         }
     }
 }

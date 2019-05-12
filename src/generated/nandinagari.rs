@@ -7,135 +7,135 @@
 /// 𑧤
 pub mod constants {
     /// \u{119a0}: '𑦠'
-    pub const NANDINAGARI_LETTER_A: char = '𑦠';
+    pub const LETTER_A: char = '𑦠';
     /// \u{119a1}: '𑦡'
-    pub const NANDINAGARI_LETTER_AA: char = '𑦡';
+    pub const LETTER_AA: char = '𑦡';
     /// \u{119a2}: '𑦢'
-    pub const NANDINAGARI_LETTER_I: char = '𑦢';
+    pub const LETTER_I: char = '𑦢';
     /// \u{119a3}: '𑦣'
-    pub const NANDINAGARI_LETTER_II: char = '𑦣';
+    pub const LETTER_II: char = '𑦣';
     /// \u{119a4}: '𑦤'
-    pub const NANDINAGARI_LETTER_U: char = '𑦤';
+    pub const LETTER_U: char = '𑦤';
     /// \u{119a5}: '𑦥'
-    pub const NANDINAGARI_LETTER_UU: char = '𑦥';
+    pub const LETTER_UU: char = '𑦥';
     /// \u{119a6}: '𑦦'
-    pub const NANDINAGARI_LETTER_VOCALIC_R: char = '𑦦';
+    pub const LETTER_VOCALIC_R: char = '𑦦';
     /// \u{119a7}: '𑦧'
-    pub const NANDINAGARI_LETTER_VOCALIC_RR: char = '𑦧';
+    pub const LETTER_VOCALIC_RR: char = '𑦧';
     /// \u{119aa}: '𑦪'
-    pub const NANDINAGARI_LETTER_E: char = '𑦪';
+    pub const LETTER_E: char = '𑦪';
     /// \u{119ab}: '𑦫'
-    pub const NANDINAGARI_LETTER_AI: char = '𑦫';
+    pub const LETTER_AI: char = '𑦫';
     /// \u{119ac}: '𑦬'
-    pub const NANDINAGARI_LETTER_O: char = '𑦬';
+    pub const LETTER_O: char = '𑦬';
     /// \u{119ad}: '𑦭'
-    pub const NANDINAGARI_LETTER_AU: char = '𑦭';
+    pub const LETTER_AU: char = '𑦭';
     /// \u{119ae}: '𑦮'
-    pub const NANDINAGARI_LETTER_KA: char = '𑦮';
+    pub const LETTER_KA: char = '𑦮';
     /// \u{119af}: '𑦯'
-    pub const NANDINAGARI_LETTER_KHA: char = '𑦯';
+    pub const LETTER_KHA: char = '𑦯';
     /// \u{119b0}: '𑦰'
-    pub const NANDINAGARI_LETTER_GA: char = '𑦰';
+    pub const LETTER_GA: char = '𑦰';
     /// \u{119b1}: '𑦱'
-    pub const NANDINAGARI_LETTER_GHA: char = '𑦱';
+    pub const LETTER_GHA: char = '𑦱';
     /// \u{119b2}: '𑦲'
-    pub const NANDINAGARI_LETTER_NGA: char = '𑦲';
+    pub const LETTER_NGA: char = '𑦲';
     /// \u{119b3}: '𑦳'
-    pub const NANDINAGARI_LETTER_CA: char = '𑦳';
+    pub const LETTER_CA: char = '𑦳';
     /// \u{119b4}: '𑦴'
-    pub const NANDINAGARI_LETTER_CHA: char = '𑦴';
+    pub const LETTER_CHA: char = '𑦴';
     /// \u{119b5}: '𑦵'
-    pub const NANDINAGARI_LETTER_JA: char = '𑦵';
+    pub const LETTER_JA: char = '𑦵';
     /// \u{119b6}: '𑦶'
-    pub const NANDINAGARI_LETTER_JHA: char = '𑦶';
+    pub const LETTER_JHA: char = '𑦶';
     /// \u{119b7}: '𑦷'
-    pub const NANDINAGARI_LETTER_NYA: char = '𑦷';
+    pub const LETTER_NYA: char = '𑦷';
     /// \u{119b8}: '𑦸'
-    pub const NANDINAGARI_LETTER_TTA: char = '𑦸';
+    pub const LETTER_TTA: char = '𑦸';
     /// \u{119b9}: '𑦹'
-    pub const NANDINAGARI_LETTER_TTHA: char = '𑦹';
+    pub const LETTER_TTHA: char = '𑦹';
     /// \u{119ba}: '𑦺'
-    pub const NANDINAGARI_LETTER_DDA: char = '𑦺';
+    pub const LETTER_DDA: char = '𑦺';
     /// \u{119bb}: '𑦻'
-    pub const NANDINAGARI_LETTER_DDHA: char = '𑦻';
+    pub const LETTER_DDHA: char = '𑦻';
     /// \u{119bc}: '𑦼'
-    pub const NANDINAGARI_LETTER_NNA: char = '𑦼';
+    pub const LETTER_NNA: char = '𑦼';
     /// \u{119bd}: '𑦽'
-    pub const NANDINAGARI_LETTER_TA: char = '𑦽';
+    pub const LETTER_TA: char = '𑦽';
     /// \u{119be}: '𑦾'
-    pub const NANDINAGARI_LETTER_THA: char = '𑦾';
+    pub const LETTER_THA: char = '𑦾';
     /// \u{119bf}: '𑦿'
-    pub const NANDINAGARI_LETTER_DA: char = '𑦿';
+    pub const LETTER_DA: char = '𑦿';
     /// \u{119c0}: '𑧀'
-    pub const NANDINAGARI_LETTER_DHA: char = '𑧀';
+    pub const LETTER_DHA: char = '𑧀';
     /// \u{119c1}: '𑧁'
-    pub const NANDINAGARI_LETTER_NA: char = '𑧁';
+    pub const LETTER_NA: char = '𑧁';
     /// \u{119c2}: '𑧂'
-    pub const NANDINAGARI_LETTER_PA: char = '𑧂';
+    pub const LETTER_PA: char = '𑧂';
     /// \u{119c3}: '𑧃'
-    pub const NANDINAGARI_LETTER_PHA: char = '𑧃';
+    pub const LETTER_PHA: char = '𑧃';
     /// \u{119c4}: '𑧄'
-    pub const NANDINAGARI_LETTER_BA: char = '𑧄';
+    pub const LETTER_BA: char = '𑧄';
     /// \u{119c5}: '𑧅'
-    pub const NANDINAGARI_LETTER_BHA: char = '𑧅';
+    pub const LETTER_BHA: char = '𑧅';
     /// \u{119c6}: '𑧆'
-    pub const NANDINAGARI_LETTER_MA: char = '𑧆';
+    pub const LETTER_MA: char = '𑧆';
     /// \u{119c7}: '𑧇'
-    pub const NANDINAGARI_LETTER_YA: char = '𑧇';
+    pub const LETTER_YA: char = '𑧇';
     /// \u{119c8}: '𑧈'
-    pub const NANDINAGARI_LETTER_RA: char = '𑧈';
+    pub const LETTER_RA: char = '𑧈';
     /// \u{119c9}: '𑧉'
-    pub const NANDINAGARI_LETTER_LA: char = '𑧉';
+    pub const LETTER_LA: char = '𑧉';
     /// \u{119ca}: '𑧊'
-    pub const NANDINAGARI_LETTER_VA: char = '𑧊';
+    pub const LETTER_VA: char = '𑧊';
     /// \u{119cb}: '𑧋'
-    pub const NANDINAGARI_LETTER_SHA: char = '𑧋';
+    pub const LETTER_SHA: char = '𑧋';
     /// \u{119cc}: '𑧌'
-    pub const NANDINAGARI_LETTER_SSA: char = '𑧌';
+    pub const LETTER_SSA: char = '𑧌';
     /// \u{119cd}: '𑧍'
-    pub const NANDINAGARI_LETTER_SA: char = '𑧍';
+    pub const LETTER_SA: char = '𑧍';
     /// \u{119ce}: '𑧎'
-    pub const NANDINAGARI_LETTER_HA: char = '𑧎';
+    pub const LETTER_HA: char = '𑧎';
     /// \u{119cf}: '𑧏'
-    pub const NANDINAGARI_LETTER_LLA: char = '𑧏';
+    pub const LETTER_LLA: char = '𑧏';
     /// \u{119d0}: '𑧐'
-    pub const NANDINAGARI_LETTER_RRA: char = '𑧐';
+    pub const LETTER_RRA: char = '𑧐';
     /// \u{119d1}: '𑧑'
-    pub const NANDINAGARI_VOWEL_SIGN_AA: char = '𑧑';
+    pub const VOWEL_SIGN_AA: char = '𑧑';
     /// \u{119d2}: '𑧒'
-    pub const NANDINAGARI_VOWEL_SIGN_I: char = '𑧒';
+    pub const VOWEL_SIGN_I: char = '𑧒';
     /// \u{119d3}: '𑧓'
-    pub const NANDINAGARI_VOWEL_SIGN_II: char = '𑧓';
+    pub const VOWEL_SIGN_II: char = '𑧓';
     /// \u{119d4}: '𑧔'
-    pub const NANDINAGARI_VOWEL_SIGN_U: char = '𑧔';
+    pub const VOWEL_SIGN_U: char = '𑧔';
     /// \u{119d5}: '𑧕'
-    pub const NANDINAGARI_VOWEL_SIGN_UU: char = '𑧕';
+    pub const VOWEL_SIGN_UU: char = '𑧕';
     /// \u{119d6}: '𑧖'
-    pub const NANDINAGARI_VOWEL_SIGN_VOCALIC_R: char = '𑧖';
+    pub const VOWEL_SIGN_VOCALIC_R: char = '𑧖';
     /// \u{119d7}: '𑧗'
-    pub const NANDINAGARI_VOWEL_SIGN_VOCALIC_RR: char = '𑧗';
+    pub const VOWEL_SIGN_VOCALIC_RR: char = '𑧗';
     /// \u{119da}: '𑧚'
-    pub const NANDINAGARI_VOWEL_SIGN_E: char = '𑧚';
+    pub const VOWEL_SIGN_E: char = '𑧚';
     /// \u{119db}: '𑧛'
-    pub const NANDINAGARI_VOWEL_SIGN_AI: char = '𑧛';
+    pub const VOWEL_SIGN_AI: char = '𑧛';
     /// \u{119dc}: '𑧜'
-    pub const NANDINAGARI_VOWEL_SIGN_O: char = '𑧜';
+    pub const VOWEL_SIGN_O: char = '𑧜';
     /// \u{119dd}: '𑧝'
-    pub const NANDINAGARI_VOWEL_SIGN_AU: char = '𑧝';
+    pub const VOWEL_SIGN_AU: char = '𑧝';
     /// \u{119de}: '𑧞'
-    pub const NANDINAGARI_SIGN_ANUSVARA: char = '𑧞';
+    pub const SIGN_ANUSVARA: char = '𑧞';
     /// \u{119df}: '𑧟'
-    pub const NANDINAGARI_SIGN_VISARGA: char = '𑧟';
+    pub const SIGN_VISARGA: char = '𑧟';
     /// \u{119e0}: '𑧠'
-    pub const NANDINAGARI_SIGN_VIRAMA: char = '𑧠';
+    pub const SIGN_VIRAMA: char = '𑧠';
     /// \u{119e1}: '𑧡'
-    pub const NANDINAGARI_SIGN_AVAGRAHA: char = '𑧡';
+    pub const SIGN_AVAGRAHA: char = '𑧡';
     /// \u{119e2}: '𑧢'
-    pub const NANDINAGARI_SIGN_SIDDHAM: char = '𑧢';
+    pub const SIGN_SIDDHAM: char = '𑧢';
     /// \u{119e3}: '𑧣'
-    pub const NANDINAGARI_HEADSTROKE: char = '𑧣';
+    pub const HEADSTROKE: char = '𑧣';
     /// \u{119e4}: '𑧤'
-    pub const NANDINAGARI_VOWEL_SIGN_PRISHTHAMATRA_E: char = '𑧤';
+    pub const VOWEL_SIGN_PRISHTHAMATRA_E: char = '𑧤';
 }
 
 /// \u{119a0} → \u{119ff}\
@@ -148,206 +148,206 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Nandinagari {
     /// \u{119a0}: '𑦠'
-    NandinagariLetterA,
+    LetterA,
     /// \u{119a1}: '𑦡'
-    NandinagariLetterAa,
+    LetterAa,
     /// \u{119a2}: '𑦢'
-    NandinagariLetterI,
+    LetterI,
     /// \u{119a3}: '𑦣'
-    NandinagariLetterIi,
+    LetterIi,
     /// \u{119a4}: '𑦤'
-    NandinagariLetterU,
+    LetterU,
     /// \u{119a5}: '𑦥'
-    NandinagariLetterUu,
+    LetterUu,
     /// \u{119a6}: '𑦦'
-    NandinagariLetterVocalicR,
+    LetterVocalicR,
     /// \u{119a7}: '𑦧'
-    NandinagariLetterVocalicRr,
+    LetterVocalicRr,
     /// \u{119aa}: '𑦪'
-    NandinagariLetterE,
+    LetterE,
     /// \u{119ab}: '𑦫'
-    NandinagariLetterAi,
+    LetterAi,
     /// \u{119ac}: '𑦬'
-    NandinagariLetterO,
+    LetterO,
     /// \u{119ad}: '𑦭'
-    NandinagariLetterAu,
+    LetterAu,
     /// \u{119ae}: '𑦮'
-    NandinagariLetterKa,
+    LetterKa,
     /// \u{119af}: '𑦯'
-    NandinagariLetterKha,
+    LetterKha,
     /// \u{119b0}: '𑦰'
-    NandinagariLetterGa,
+    LetterGa,
     /// \u{119b1}: '𑦱'
-    NandinagariLetterGha,
+    LetterGha,
     /// \u{119b2}: '𑦲'
-    NandinagariLetterNga,
+    LetterNga,
     /// \u{119b3}: '𑦳'
-    NandinagariLetterCa,
+    LetterCa,
     /// \u{119b4}: '𑦴'
-    NandinagariLetterCha,
+    LetterCha,
     /// \u{119b5}: '𑦵'
-    NandinagariLetterJa,
+    LetterJa,
     /// \u{119b6}: '𑦶'
-    NandinagariLetterJha,
+    LetterJha,
     /// \u{119b7}: '𑦷'
-    NandinagariLetterNya,
+    LetterNya,
     /// \u{119b8}: '𑦸'
-    NandinagariLetterTta,
+    LetterTta,
     /// \u{119b9}: '𑦹'
-    NandinagariLetterTtha,
+    LetterTtha,
     /// \u{119ba}: '𑦺'
-    NandinagariLetterDda,
+    LetterDda,
     /// \u{119bb}: '𑦻'
-    NandinagariLetterDdha,
+    LetterDdha,
     /// \u{119bc}: '𑦼'
-    NandinagariLetterNna,
+    LetterNna,
     /// \u{119bd}: '𑦽'
-    NandinagariLetterTa,
+    LetterTa,
     /// \u{119be}: '𑦾'
-    NandinagariLetterTha,
+    LetterTha,
     /// \u{119bf}: '𑦿'
-    NandinagariLetterDa,
+    LetterDa,
     /// \u{119c0}: '𑧀'
-    NandinagariLetterDha,
+    LetterDha,
     /// \u{119c1}: '𑧁'
-    NandinagariLetterNa,
+    LetterNa,
     /// \u{119c2}: '𑧂'
-    NandinagariLetterPa,
+    LetterPa,
     /// \u{119c3}: '𑧃'
-    NandinagariLetterPha,
+    LetterPha,
     /// \u{119c4}: '𑧄'
-    NandinagariLetterBa,
+    LetterBa,
     /// \u{119c5}: '𑧅'
-    NandinagariLetterBha,
+    LetterBha,
     /// \u{119c6}: '𑧆'
-    NandinagariLetterMa,
+    LetterMa,
     /// \u{119c7}: '𑧇'
-    NandinagariLetterYa,
+    LetterYa,
     /// \u{119c8}: '𑧈'
-    NandinagariLetterRa,
+    LetterRa,
     /// \u{119c9}: '𑧉'
-    NandinagariLetterLa,
+    LetterLa,
     /// \u{119ca}: '𑧊'
-    NandinagariLetterVa,
+    LetterVa,
     /// \u{119cb}: '𑧋'
-    NandinagariLetterSha,
+    LetterSha,
     /// \u{119cc}: '𑧌'
-    NandinagariLetterSsa,
+    LetterSsa,
     /// \u{119cd}: '𑧍'
-    NandinagariLetterSa,
+    LetterSa,
     /// \u{119ce}: '𑧎'
-    NandinagariLetterHa,
+    LetterHa,
     /// \u{119cf}: '𑧏'
-    NandinagariLetterLla,
+    LetterLla,
     /// \u{119d0}: '𑧐'
-    NandinagariLetterRra,
+    LetterRra,
     /// \u{119d1}: '𑧑'
-    NandinagariVowelSignAa,
+    VowelSignAa,
     /// \u{119d2}: '𑧒'
-    NandinagariVowelSignI,
+    VowelSignI,
     /// \u{119d3}: '𑧓'
-    NandinagariVowelSignIi,
+    VowelSignIi,
     /// \u{119d4}: '𑧔'
-    NandinagariVowelSignU,
+    VowelSignU,
     /// \u{119d5}: '𑧕'
-    NandinagariVowelSignUu,
+    VowelSignUu,
     /// \u{119d6}: '𑧖'
-    NandinagariVowelSignVocalicR,
+    VowelSignVocalicR,
     /// \u{119d7}: '𑧗'
-    NandinagariVowelSignVocalicRr,
+    VowelSignVocalicRr,
     /// \u{119da}: '𑧚'
-    NandinagariVowelSignE,
+    VowelSignE,
     /// \u{119db}: '𑧛'
-    NandinagariVowelSignAi,
+    VowelSignAi,
     /// \u{119dc}: '𑧜'
-    NandinagariVowelSignO,
+    VowelSignO,
     /// \u{119dd}: '𑧝'
-    NandinagariVowelSignAu,
+    VowelSignAu,
     /// \u{119de}: '𑧞'
-    NandinagariSignAnusvara,
+    SignAnusvara,
     /// \u{119df}: '𑧟'
-    NandinagariSignVisarga,
+    SignVisarga,
     /// \u{119e0}: '𑧠'
-    NandinagariSignVirama,
+    SignVirama,
     /// \u{119e1}: '𑧡'
-    NandinagariSignAvagraha,
+    SignAvagraha,
     /// \u{119e2}: '𑧢'
-    NandinagariSignSiddham,
+    SignSiddham,
     /// \u{119e3}: '𑧣'
-    NandinagariHeadstroke,
+    Headstroke,
     /// \u{119e4}: '𑧤'
-    NandinagariVowelSignPrishthamatraE,
+    VowelSignPrishthamatraE,
 }
 
 impl Into<char> for Nandinagari {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Nandinagari::NandinagariLetterA => NANDINAGARI_LETTER_A,
-            Nandinagari::NandinagariLetterAa => NANDINAGARI_LETTER_AA,
-            Nandinagari::NandinagariLetterI => NANDINAGARI_LETTER_I,
-            Nandinagari::NandinagariLetterIi => NANDINAGARI_LETTER_II,
-            Nandinagari::NandinagariLetterU => NANDINAGARI_LETTER_U,
-            Nandinagari::NandinagariLetterUu => NANDINAGARI_LETTER_UU,
-            Nandinagari::NandinagariLetterVocalicR => NANDINAGARI_LETTER_VOCALIC_R,
-            Nandinagari::NandinagariLetterVocalicRr => NANDINAGARI_LETTER_VOCALIC_RR,
-            Nandinagari::NandinagariLetterE => NANDINAGARI_LETTER_E,
-            Nandinagari::NandinagariLetterAi => NANDINAGARI_LETTER_AI,
-            Nandinagari::NandinagariLetterO => NANDINAGARI_LETTER_O,
-            Nandinagari::NandinagariLetterAu => NANDINAGARI_LETTER_AU,
-            Nandinagari::NandinagariLetterKa => NANDINAGARI_LETTER_KA,
-            Nandinagari::NandinagariLetterKha => NANDINAGARI_LETTER_KHA,
-            Nandinagari::NandinagariLetterGa => NANDINAGARI_LETTER_GA,
-            Nandinagari::NandinagariLetterGha => NANDINAGARI_LETTER_GHA,
-            Nandinagari::NandinagariLetterNga => NANDINAGARI_LETTER_NGA,
-            Nandinagari::NandinagariLetterCa => NANDINAGARI_LETTER_CA,
-            Nandinagari::NandinagariLetterCha => NANDINAGARI_LETTER_CHA,
-            Nandinagari::NandinagariLetterJa => NANDINAGARI_LETTER_JA,
-            Nandinagari::NandinagariLetterJha => NANDINAGARI_LETTER_JHA,
-            Nandinagari::NandinagariLetterNya => NANDINAGARI_LETTER_NYA,
-            Nandinagari::NandinagariLetterTta => NANDINAGARI_LETTER_TTA,
-            Nandinagari::NandinagariLetterTtha => NANDINAGARI_LETTER_TTHA,
-            Nandinagari::NandinagariLetterDda => NANDINAGARI_LETTER_DDA,
-            Nandinagari::NandinagariLetterDdha => NANDINAGARI_LETTER_DDHA,
-            Nandinagari::NandinagariLetterNna => NANDINAGARI_LETTER_NNA,
-            Nandinagari::NandinagariLetterTa => NANDINAGARI_LETTER_TA,
-            Nandinagari::NandinagariLetterTha => NANDINAGARI_LETTER_THA,
-            Nandinagari::NandinagariLetterDa => NANDINAGARI_LETTER_DA,
-            Nandinagari::NandinagariLetterDha => NANDINAGARI_LETTER_DHA,
-            Nandinagari::NandinagariLetterNa => NANDINAGARI_LETTER_NA,
-            Nandinagari::NandinagariLetterPa => NANDINAGARI_LETTER_PA,
-            Nandinagari::NandinagariLetterPha => NANDINAGARI_LETTER_PHA,
-            Nandinagari::NandinagariLetterBa => NANDINAGARI_LETTER_BA,
-            Nandinagari::NandinagariLetterBha => NANDINAGARI_LETTER_BHA,
-            Nandinagari::NandinagariLetterMa => NANDINAGARI_LETTER_MA,
-            Nandinagari::NandinagariLetterYa => NANDINAGARI_LETTER_YA,
-            Nandinagari::NandinagariLetterRa => NANDINAGARI_LETTER_RA,
-            Nandinagari::NandinagariLetterLa => NANDINAGARI_LETTER_LA,
-            Nandinagari::NandinagariLetterVa => NANDINAGARI_LETTER_VA,
-            Nandinagari::NandinagariLetterSha => NANDINAGARI_LETTER_SHA,
-            Nandinagari::NandinagariLetterSsa => NANDINAGARI_LETTER_SSA,
-            Nandinagari::NandinagariLetterSa => NANDINAGARI_LETTER_SA,
-            Nandinagari::NandinagariLetterHa => NANDINAGARI_LETTER_HA,
-            Nandinagari::NandinagariLetterLla => NANDINAGARI_LETTER_LLA,
-            Nandinagari::NandinagariLetterRra => NANDINAGARI_LETTER_RRA,
-            Nandinagari::NandinagariVowelSignAa => NANDINAGARI_VOWEL_SIGN_AA,
-            Nandinagari::NandinagariVowelSignI => NANDINAGARI_VOWEL_SIGN_I,
-            Nandinagari::NandinagariVowelSignIi => NANDINAGARI_VOWEL_SIGN_II,
-            Nandinagari::NandinagariVowelSignU => NANDINAGARI_VOWEL_SIGN_U,
-            Nandinagari::NandinagariVowelSignUu => NANDINAGARI_VOWEL_SIGN_UU,
-            Nandinagari::NandinagariVowelSignVocalicR => NANDINAGARI_VOWEL_SIGN_VOCALIC_R,
-            Nandinagari::NandinagariVowelSignVocalicRr => NANDINAGARI_VOWEL_SIGN_VOCALIC_RR,
-            Nandinagari::NandinagariVowelSignE => NANDINAGARI_VOWEL_SIGN_E,
-            Nandinagari::NandinagariVowelSignAi => NANDINAGARI_VOWEL_SIGN_AI,
-            Nandinagari::NandinagariVowelSignO => NANDINAGARI_VOWEL_SIGN_O,
-            Nandinagari::NandinagariVowelSignAu => NANDINAGARI_VOWEL_SIGN_AU,
-            Nandinagari::NandinagariSignAnusvara => NANDINAGARI_SIGN_ANUSVARA,
-            Nandinagari::NandinagariSignVisarga => NANDINAGARI_SIGN_VISARGA,
-            Nandinagari::NandinagariSignVirama => NANDINAGARI_SIGN_VIRAMA,
-            Nandinagari::NandinagariSignAvagraha => NANDINAGARI_SIGN_AVAGRAHA,
-            Nandinagari::NandinagariSignSiddham => NANDINAGARI_SIGN_SIDDHAM,
-            Nandinagari::NandinagariHeadstroke => NANDINAGARI_HEADSTROKE,
-            Nandinagari::NandinagariVowelSignPrishthamatraE => NANDINAGARI_VOWEL_SIGN_PRISHTHAMATRA_E,
+            Nandinagari::LetterA => LETTER_A,
+            Nandinagari::LetterAa => LETTER_AA,
+            Nandinagari::LetterI => LETTER_I,
+            Nandinagari::LetterIi => LETTER_II,
+            Nandinagari::LetterU => LETTER_U,
+            Nandinagari::LetterUu => LETTER_UU,
+            Nandinagari::LetterVocalicR => LETTER_VOCALIC_R,
+            Nandinagari::LetterVocalicRr => LETTER_VOCALIC_RR,
+            Nandinagari::LetterE => LETTER_E,
+            Nandinagari::LetterAi => LETTER_AI,
+            Nandinagari::LetterO => LETTER_O,
+            Nandinagari::LetterAu => LETTER_AU,
+            Nandinagari::LetterKa => LETTER_KA,
+            Nandinagari::LetterKha => LETTER_KHA,
+            Nandinagari::LetterGa => LETTER_GA,
+            Nandinagari::LetterGha => LETTER_GHA,
+            Nandinagari::LetterNga => LETTER_NGA,
+            Nandinagari::LetterCa => LETTER_CA,
+            Nandinagari::LetterCha => LETTER_CHA,
+            Nandinagari::LetterJa => LETTER_JA,
+            Nandinagari::LetterJha => LETTER_JHA,
+            Nandinagari::LetterNya => LETTER_NYA,
+            Nandinagari::LetterTta => LETTER_TTA,
+            Nandinagari::LetterTtha => LETTER_TTHA,
+            Nandinagari::LetterDda => LETTER_DDA,
+            Nandinagari::LetterDdha => LETTER_DDHA,
+            Nandinagari::LetterNna => LETTER_NNA,
+            Nandinagari::LetterTa => LETTER_TA,
+            Nandinagari::LetterTha => LETTER_THA,
+            Nandinagari::LetterDa => LETTER_DA,
+            Nandinagari::LetterDha => LETTER_DHA,
+            Nandinagari::LetterNa => LETTER_NA,
+            Nandinagari::LetterPa => LETTER_PA,
+            Nandinagari::LetterPha => LETTER_PHA,
+            Nandinagari::LetterBa => LETTER_BA,
+            Nandinagari::LetterBha => LETTER_BHA,
+            Nandinagari::LetterMa => LETTER_MA,
+            Nandinagari::LetterYa => LETTER_YA,
+            Nandinagari::LetterRa => LETTER_RA,
+            Nandinagari::LetterLa => LETTER_LA,
+            Nandinagari::LetterVa => LETTER_VA,
+            Nandinagari::LetterSha => LETTER_SHA,
+            Nandinagari::LetterSsa => LETTER_SSA,
+            Nandinagari::LetterSa => LETTER_SA,
+            Nandinagari::LetterHa => LETTER_HA,
+            Nandinagari::LetterLla => LETTER_LLA,
+            Nandinagari::LetterRra => LETTER_RRA,
+            Nandinagari::VowelSignAa => VOWEL_SIGN_AA,
+            Nandinagari::VowelSignI => VOWEL_SIGN_I,
+            Nandinagari::VowelSignIi => VOWEL_SIGN_II,
+            Nandinagari::VowelSignU => VOWEL_SIGN_U,
+            Nandinagari::VowelSignUu => VOWEL_SIGN_UU,
+            Nandinagari::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
+            Nandinagari::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
+            Nandinagari::VowelSignE => VOWEL_SIGN_E,
+            Nandinagari::VowelSignAi => VOWEL_SIGN_AI,
+            Nandinagari::VowelSignO => VOWEL_SIGN_O,
+            Nandinagari::VowelSignAu => VOWEL_SIGN_AU,
+            Nandinagari::SignAnusvara => SIGN_ANUSVARA,
+            Nandinagari::SignVisarga => SIGN_VISARGA,
+            Nandinagari::SignVirama => SIGN_VIRAMA,
+            Nandinagari::SignAvagraha => SIGN_AVAGRAHA,
+            Nandinagari::SignSiddham => SIGN_SIDDHAM,
+            Nandinagari::Headstroke => HEADSTROKE,
+            Nandinagari::VowelSignPrishthamatraE => VOWEL_SIGN_PRISHTHAMATRA_E,
         }
     }
 }
@@ -357,71 +357,71 @@ impl std::convert::TryFrom<char> for Nandinagari {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            NANDINAGARI_LETTER_A => Ok(Nandinagari::NandinagariLetterA),
-            NANDINAGARI_LETTER_AA => Ok(Nandinagari::NandinagariLetterAa),
-            NANDINAGARI_LETTER_I => Ok(Nandinagari::NandinagariLetterI),
-            NANDINAGARI_LETTER_II => Ok(Nandinagari::NandinagariLetterIi),
-            NANDINAGARI_LETTER_U => Ok(Nandinagari::NandinagariLetterU),
-            NANDINAGARI_LETTER_UU => Ok(Nandinagari::NandinagariLetterUu),
-            NANDINAGARI_LETTER_VOCALIC_R => Ok(Nandinagari::NandinagariLetterVocalicR),
-            NANDINAGARI_LETTER_VOCALIC_RR => Ok(Nandinagari::NandinagariLetterVocalicRr),
-            NANDINAGARI_LETTER_E => Ok(Nandinagari::NandinagariLetterE),
-            NANDINAGARI_LETTER_AI => Ok(Nandinagari::NandinagariLetterAi),
-            NANDINAGARI_LETTER_O => Ok(Nandinagari::NandinagariLetterO),
-            NANDINAGARI_LETTER_AU => Ok(Nandinagari::NandinagariLetterAu),
-            NANDINAGARI_LETTER_KA => Ok(Nandinagari::NandinagariLetterKa),
-            NANDINAGARI_LETTER_KHA => Ok(Nandinagari::NandinagariLetterKha),
-            NANDINAGARI_LETTER_GA => Ok(Nandinagari::NandinagariLetterGa),
-            NANDINAGARI_LETTER_GHA => Ok(Nandinagari::NandinagariLetterGha),
-            NANDINAGARI_LETTER_NGA => Ok(Nandinagari::NandinagariLetterNga),
-            NANDINAGARI_LETTER_CA => Ok(Nandinagari::NandinagariLetterCa),
-            NANDINAGARI_LETTER_CHA => Ok(Nandinagari::NandinagariLetterCha),
-            NANDINAGARI_LETTER_JA => Ok(Nandinagari::NandinagariLetterJa),
-            NANDINAGARI_LETTER_JHA => Ok(Nandinagari::NandinagariLetterJha),
-            NANDINAGARI_LETTER_NYA => Ok(Nandinagari::NandinagariLetterNya),
-            NANDINAGARI_LETTER_TTA => Ok(Nandinagari::NandinagariLetterTta),
-            NANDINAGARI_LETTER_TTHA => Ok(Nandinagari::NandinagariLetterTtha),
-            NANDINAGARI_LETTER_DDA => Ok(Nandinagari::NandinagariLetterDda),
-            NANDINAGARI_LETTER_DDHA => Ok(Nandinagari::NandinagariLetterDdha),
-            NANDINAGARI_LETTER_NNA => Ok(Nandinagari::NandinagariLetterNna),
-            NANDINAGARI_LETTER_TA => Ok(Nandinagari::NandinagariLetterTa),
-            NANDINAGARI_LETTER_THA => Ok(Nandinagari::NandinagariLetterTha),
-            NANDINAGARI_LETTER_DA => Ok(Nandinagari::NandinagariLetterDa),
-            NANDINAGARI_LETTER_DHA => Ok(Nandinagari::NandinagariLetterDha),
-            NANDINAGARI_LETTER_NA => Ok(Nandinagari::NandinagariLetterNa),
-            NANDINAGARI_LETTER_PA => Ok(Nandinagari::NandinagariLetterPa),
-            NANDINAGARI_LETTER_PHA => Ok(Nandinagari::NandinagariLetterPha),
-            NANDINAGARI_LETTER_BA => Ok(Nandinagari::NandinagariLetterBa),
-            NANDINAGARI_LETTER_BHA => Ok(Nandinagari::NandinagariLetterBha),
-            NANDINAGARI_LETTER_MA => Ok(Nandinagari::NandinagariLetterMa),
-            NANDINAGARI_LETTER_YA => Ok(Nandinagari::NandinagariLetterYa),
-            NANDINAGARI_LETTER_RA => Ok(Nandinagari::NandinagariLetterRa),
-            NANDINAGARI_LETTER_LA => Ok(Nandinagari::NandinagariLetterLa),
-            NANDINAGARI_LETTER_VA => Ok(Nandinagari::NandinagariLetterVa),
-            NANDINAGARI_LETTER_SHA => Ok(Nandinagari::NandinagariLetterSha),
-            NANDINAGARI_LETTER_SSA => Ok(Nandinagari::NandinagariLetterSsa),
-            NANDINAGARI_LETTER_SA => Ok(Nandinagari::NandinagariLetterSa),
-            NANDINAGARI_LETTER_HA => Ok(Nandinagari::NandinagariLetterHa),
-            NANDINAGARI_LETTER_LLA => Ok(Nandinagari::NandinagariLetterLla),
-            NANDINAGARI_LETTER_RRA => Ok(Nandinagari::NandinagariLetterRra),
-            NANDINAGARI_VOWEL_SIGN_AA => Ok(Nandinagari::NandinagariVowelSignAa),
-            NANDINAGARI_VOWEL_SIGN_I => Ok(Nandinagari::NandinagariVowelSignI),
-            NANDINAGARI_VOWEL_SIGN_II => Ok(Nandinagari::NandinagariVowelSignIi),
-            NANDINAGARI_VOWEL_SIGN_U => Ok(Nandinagari::NandinagariVowelSignU),
-            NANDINAGARI_VOWEL_SIGN_UU => Ok(Nandinagari::NandinagariVowelSignUu),
-            NANDINAGARI_VOWEL_SIGN_VOCALIC_R => Ok(Nandinagari::NandinagariVowelSignVocalicR),
-            NANDINAGARI_VOWEL_SIGN_VOCALIC_RR => Ok(Nandinagari::NandinagariVowelSignVocalicRr),
-            NANDINAGARI_VOWEL_SIGN_E => Ok(Nandinagari::NandinagariVowelSignE),
-            NANDINAGARI_VOWEL_SIGN_AI => Ok(Nandinagari::NandinagariVowelSignAi),
-            NANDINAGARI_VOWEL_SIGN_O => Ok(Nandinagari::NandinagariVowelSignO),
-            NANDINAGARI_VOWEL_SIGN_AU => Ok(Nandinagari::NandinagariVowelSignAu),
-            NANDINAGARI_SIGN_ANUSVARA => Ok(Nandinagari::NandinagariSignAnusvara),
-            NANDINAGARI_SIGN_VISARGA => Ok(Nandinagari::NandinagariSignVisarga),
-            NANDINAGARI_SIGN_VIRAMA => Ok(Nandinagari::NandinagariSignVirama),
-            NANDINAGARI_SIGN_AVAGRAHA => Ok(Nandinagari::NandinagariSignAvagraha),
-            NANDINAGARI_SIGN_SIDDHAM => Ok(Nandinagari::NandinagariSignSiddham),
-            NANDINAGARI_HEADSTROKE => Ok(Nandinagari::NandinagariHeadstroke),
-            NANDINAGARI_VOWEL_SIGN_PRISHTHAMATRA_E => Ok(Nandinagari::NandinagariVowelSignPrishthamatraE),
+            LETTER_A => Ok(Nandinagari::LetterA),
+            LETTER_AA => Ok(Nandinagari::LetterAa),
+            LETTER_I => Ok(Nandinagari::LetterI),
+            LETTER_II => Ok(Nandinagari::LetterIi),
+            LETTER_U => Ok(Nandinagari::LetterU),
+            LETTER_UU => Ok(Nandinagari::LetterUu),
+            LETTER_VOCALIC_R => Ok(Nandinagari::LetterVocalicR),
+            LETTER_VOCALIC_RR => Ok(Nandinagari::LetterVocalicRr),
+            LETTER_E => Ok(Nandinagari::LetterE),
+            LETTER_AI => Ok(Nandinagari::LetterAi),
+            LETTER_O => Ok(Nandinagari::LetterO),
+            LETTER_AU => Ok(Nandinagari::LetterAu),
+            LETTER_KA => Ok(Nandinagari::LetterKa),
+            LETTER_KHA => Ok(Nandinagari::LetterKha),
+            LETTER_GA => Ok(Nandinagari::LetterGa),
+            LETTER_GHA => Ok(Nandinagari::LetterGha),
+            LETTER_NGA => Ok(Nandinagari::LetterNga),
+            LETTER_CA => Ok(Nandinagari::LetterCa),
+            LETTER_CHA => Ok(Nandinagari::LetterCha),
+            LETTER_JA => Ok(Nandinagari::LetterJa),
+            LETTER_JHA => Ok(Nandinagari::LetterJha),
+            LETTER_NYA => Ok(Nandinagari::LetterNya),
+            LETTER_TTA => Ok(Nandinagari::LetterTta),
+            LETTER_TTHA => Ok(Nandinagari::LetterTtha),
+            LETTER_DDA => Ok(Nandinagari::LetterDda),
+            LETTER_DDHA => Ok(Nandinagari::LetterDdha),
+            LETTER_NNA => Ok(Nandinagari::LetterNna),
+            LETTER_TA => Ok(Nandinagari::LetterTa),
+            LETTER_THA => Ok(Nandinagari::LetterTha),
+            LETTER_DA => Ok(Nandinagari::LetterDa),
+            LETTER_DHA => Ok(Nandinagari::LetterDha),
+            LETTER_NA => Ok(Nandinagari::LetterNa),
+            LETTER_PA => Ok(Nandinagari::LetterPa),
+            LETTER_PHA => Ok(Nandinagari::LetterPha),
+            LETTER_BA => Ok(Nandinagari::LetterBa),
+            LETTER_BHA => Ok(Nandinagari::LetterBha),
+            LETTER_MA => Ok(Nandinagari::LetterMa),
+            LETTER_YA => Ok(Nandinagari::LetterYa),
+            LETTER_RA => Ok(Nandinagari::LetterRa),
+            LETTER_LA => Ok(Nandinagari::LetterLa),
+            LETTER_VA => Ok(Nandinagari::LetterVa),
+            LETTER_SHA => Ok(Nandinagari::LetterSha),
+            LETTER_SSA => Ok(Nandinagari::LetterSsa),
+            LETTER_SA => Ok(Nandinagari::LetterSa),
+            LETTER_HA => Ok(Nandinagari::LetterHa),
+            LETTER_LLA => Ok(Nandinagari::LetterLla),
+            LETTER_RRA => Ok(Nandinagari::LetterRra),
+            VOWEL_SIGN_AA => Ok(Nandinagari::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Nandinagari::VowelSignI),
+            VOWEL_SIGN_II => Ok(Nandinagari::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Nandinagari::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Nandinagari::VowelSignUu),
+            VOWEL_SIGN_VOCALIC_R => Ok(Nandinagari::VowelSignVocalicR),
+            VOWEL_SIGN_VOCALIC_RR => Ok(Nandinagari::VowelSignVocalicRr),
+            VOWEL_SIGN_E => Ok(Nandinagari::VowelSignE),
+            VOWEL_SIGN_AI => Ok(Nandinagari::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Nandinagari::VowelSignO),
+            VOWEL_SIGN_AU => Ok(Nandinagari::VowelSignAu),
+            SIGN_ANUSVARA => Ok(Nandinagari::SignAnusvara),
+            SIGN_VISARGA => Ok(Nandinagari::SignVisarga),
+            SIGN_VIRAMA => Ok(Nandinagari::SignVirama),
+            SIGN_AVAGRAHA => Ok(Nandinagari::SignAvagraha),
+            SIGN_SIDDHAM => Ok(Nandinagari::SignSiddham),
+            HEADSTROKE => Ok(Nandinagari::Headstroke),
+            VOWEL_SIGN_PRISHTHAMATRA_E => Ok(Nandinagari::VowelSignPrishthamatraE),
             _ => Err(()),
         }
     }
@@ -460,79 +460,79 @@ impl Iterator for Nandinagari {
 }
 
 impl Nandinagari {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Nandinagari::NandinagariLetterA
+        Nandinagari::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Nandinagari::NandinagariLetterA => "nandinagari letter a",
-            Nandinagari::NandinagariLetterAa => "nandinagari letter aa",
-            Nandinagari::NandinagariLetterI => "nandinagari letter i",
-            Nandinagari::NandinagariLetterIi => "nandinagari letter ii",
-            Nandinagari::NandinagariLetterU => "nandinagari letter u",
-            Nandinagari::NandinagariLetterUu => "nandinagari letter uu",
-            Nandinagari::NandinagariLetterVocalicR => "nandinagari letter vocalic r",
-            Nandinagari::NandinagariLetterVocalicRr => "nandinagari letter vocalic rr",
-            Nandinagari::NandinagariLetterE => "nandinagari letter e",
-            Nandinagari::NandinagariLetterAi => "nandinagari letter ai",
-            Nandinagari::NandinagariLetterO => "nandinagari letter o",
-            Nandinagari::NandinagariLetterAu => "nandinagari letter au",
-            Nandinagari::NandinagariLetterKa => "nandinagari letter ka",
-            Nandinagari::NandinagariLetterKha => "nandinagari letter kha",
-            Nandinagari::NandinagariLetterGa => "nandinagari letter ga",
-            Nandinagari::NandinagariLetterGha => "nandinagari letter gha",
-            Nandinagari::NandinagariLetterNga => "nandinagari letter nga",
-            Nandinagari::NandinagariLetterCa => "nandinagari letter ca",
-            Nandinagari::NandinagariLetterCha => "nandinagari letter cha",
-            Nandinagari::NandinagariLetterJa => "nandinagari letter ja",
-            Nandinagari::NandinagariLetterJha => "nandinagari letter jha",
-            Nandinagari::NandinagariLetterNya => "nandinagari letter nya",
-            Nandinagari::NandinagariLetterTta => "nandinagari letter tta",
-            Nandinagari::NandinagariLetterTtha => "nandinagari letter ttha",
-            Nandinagari::NandinagariLetterDda => "nandinagari letter dda",
-            Nandinagari::NandinagariLetterDdha => "nandinagari letter ddha",
-            Nandinagari::NandinagariLetterNna => "nandinagari letter nna",
-            Nandinagari::NandinagariLetterTa => "nandinagari letter ta",
-            Nandinagari::NandinagariLetterTha => "nandinagari letter tha",
-            Nandinagari::NandinagariLetterDa => "nandinagari letter da",
-            Nandinagari::NandinagariLetterDha => "nandinagari letter dha",
-            Nandinagari::NandinagariLetterNa => "nandinagari letter na",
-            Nandinagari::NandinagariLetterPa => "nandinagari letter pa",
-            Nandinagari::NandinagariLetterPha => "nandinagari letter pha",
-            Nandinagari::NandinagariLetterBa => "nandinagari letter ba",
-            Nandinagari::NandinagariLetterBha => "nandinagari letter bha",
-            Nandinagari::NandinagariLetterMa => "nandinagari letter ma",
-            Nandinagari::NandinagariLetterYa => "nandinagari letter ya",
-            Nandinagari::NandinagariLetterRa => "nandinagari letter ra",
-            Nandinagari::NandinagariLetterLa => "nandinagari letter la",
-            Nandinagari::NandinagariLetterVa => "nandinagari letter va",
-            Nandinagari::NandinagariLetterSha => "nandinagari letter sha",
-            Nandinagari::NandinagariLetterSsa => "nandinagari letter ssa",
-            Nandinagari::NandinagariLetterSa => "nandinagari letter sa",
-            Nandinagari::NandinagariLetterHa => "nandinagari letter ha",
-            Nandinagari::NandinagariLetterLla => "nandinagari letter lla",
-            Nandinagari::NandinagariLetterRra => "nandinagari letter rra",
-            Nandinagari::NandinagariVowelSignAa => "nandinagari vowel sign aa",
-            Nandinagari::NandinagariVowelSignI => "nandinagari vowel sign i",
-            Nandinagari::NandinagariVowelSignIi => "nandinagari vowel sign ii",
-            Nandinagari::NandinagariVowelSignU => "nandinagari vowel sign u",
-            Nandinagari::NandinagariVowelSignUu => "nandinagari vowel sign uu",
-            Nandinagari::NandinagariVowelSignVocalicR => "nandinagari vowel sign vocalic r",
-            Nandinagari::NandinagariVowelSignVocalicRr => "nandinagari vowel sign vocalic rr",
-            Nandinagari::NandinagariVowelSignE => "nandinagari vowel sign e",
-            Nandinagari::NandinagariVowelSignAi => "nandinagari vowel sign ai",
-            Nandinagari::NandinagariVowelSignO => "nandinagari vowel sign o",
-            Nandinagari::NandinagariVowelSignAu => "nandinagari vowel sign au",
-            Nandinagari::NandinagariSignAnusvara => "nandinagari sign anusvara",
-            Nandinagari::NandinagariSignVisarga => "nandinagari sign visarga",
-            Nandinagari::NandinagariSignVirama => "nandinagari sign virama",
-            Nandinagari::NandinagariSignAvagraha => "nandinagari sign avagraha",
-            Nandinagari::NandinagariSignSiddham => "nandinagari sign siddham",
-            Nandinagari::NandinagariHeadstroke => "nandinagari headstroke",
-            Nandinagari::NandinagariVowelSignPrishthamatraE => "nandinagari vowel sign prishthamatra e",
+            Nandinagari::LetterA => "nandinagari letter a",
+            Nandinagari::LetterAa => "nandinagari letter aa",
+            Nandinagari::LetterI => "nandinagari letter i",
+            Nandinagari::LetterIi => "nandinagari letter ii",
+            Nandinagari::LetterU => "nandinagari letter u",
+            Nandinagari::LetterUu => "nandinagari letter uu",
+            Nandinagari::LetterVocalicR => "nandinagari letter vocalic r",
+            Nandinagari::LetterVocalicRr => "nandinagari letter vocalic rr",
+            Nandinagari::LetterE => "nandinagari letter e",
+            Nandinagari::LetterAi => "nandinagari letter ai",
+            Nandinagari::LetterO => "nandinagari letter o",
+            Nandinagari::LetterAu => "nandinagari letter au",
+            Nandinagari::LetterKa => "nandinagari letter ka",
+            Nandinagari::LetterKha => "nandinagari letter kha",
+            Nandinagari::LetterGa => "nandinagari letter ga",
+            Nandinagari::LetterGha => "nandinagari letter gha",
+            Nandinagari::LetterNga => "nandinagari letter nga",
+            Nandinagari::LetterCa => "nandinagari letter ca",
+            Nandinagari::LetterCha => "nandinagari letter cha",
+            Nandinagari::LetterJa => "nandinagari letter ja",
+            Nandinagari::LetterJha => "nandinagari letter jha",
+            Nandinagari::LetterNya => "nandinagari letter nya",
+            Nandinagari::LetterTta => "nandinagari letter tta",
+            Nandinagari::LetterTtha => "nandinagari letter ttha",
+            Nandinagari::LetterDda => "nandinagari letter dda",
+            Nandinagari::LetterDdha => "nandinagari letter ddha",
+            Nandinagari::LetterNna => "nandinagari letter nna",
+            Nandinagari::LetterTa => "nandinagari letter ta",
+            Nandinagari::LetterTha => "nandinagari letter tha",
+            Nandinagari::LetterDa => "nandinagari letter da",
+            Nandinagari::LetterDha => "nandinagari letter dha",
+            Nandinagari::LetterNa => "nandinagari letter na",
+            Nandinagari::LetterPa => "nandinagari letter pa",
+            Nandinagari::LetterPha => "nandinagari letter pha",
+            Nandinagari::LetterBa => "nandinagari letter ba",
+            Nandinagari::LetterBha => "nandinagari letter bha",
+            Nandinagari::LetterMa => "nandinagari letter ma",
+            Nandinagari::LetterYa => "nandinagari letter ya",
+            Nandinagari::LetterRa => "nandinagari letter ra",
+            Nandinagari::LetterLa => "nandinagari letter la",
+            Nandinagari::LetterVa => "nandinagari letter va",
+            Nandinagari::LetterSha => "nandinagari letter sha",
+            Nandinagari::LetterSsa => "nandinagari letter ssa",
+            Nandinagari::LetterSa => "nandinagari letter sa",
+            Nandinagari::LetterHa => "nandinagari letter ha",
+            Nandinagari::LetterLla => "nandinagari letter lla",
+            Nandinagari::LetterRra => "nandinagari letter rra",
+            Nandinagari::VowelSignAa => "nandinagari vowel sign aa",
+            Nandinagari::VowelSignI => "nandinagari vowel sign i",
+            Nandinagari::VowelSignIi => "nandinagari vowel sign ii",
+            Nandinagari::VowelSignU => "nandinagari vowel sign u",
+            Nandinagari::VowelSignUu => "nandinagari vowel sign uu",
+            Nandinagari::VowelSignVocalicR => "nandinagari vowel sign vocalic r",
+            Nandinagari::VowelSignVocalicRr => "nandinagari vowel sign vocalic rr",
+            Nandinagari::VowelSignE => "nandinagari vowel sign e",
+            Nandinagari::VowelSignAi => "nandinagari vowel sign ai",
+            Nandinagari::VowelSignO => "nandinagari vowel sign o",
+            Nandinagari::VowelSignAu => "nandinagari vowel sign au",
+            Nandinagari::SignAnusvara => "nandinagari sign anusvara",
+            Nandinagari::SignVisarga => "nandinagari sign visarga",
+            Nandinagari::SignVirama => "nandinagari sign virama",
+            Nandinagari::SignAvagraha => "nandinagari sign avagraha",
+            Nandinagari::SignSiddham => "nandinagari sign siddham",
+            Nandinagari::Headstroke => "nandinagari headstroke",
+            Nandinagari::VowelSignPrishthamatraE => "nandinagari vowel sign prishthamatra e",
         }
     }
 }

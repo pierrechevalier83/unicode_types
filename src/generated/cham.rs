@@ -8,169 +8,169 @@
 /// ꩝ ꩞
 pub mod constants {
     /// \u{aa00}: 'ꨀ'
-    pub const CHAM_LETTER_A: char = 'ꨀ';
+    pub const LETTER_A: char = 'ꨀ';
     /// \u{aa01}: 'ꨁ'
-    pub const CHAM_LETTER_I: char = 'ꨁ';
+    pub const LETTER_I: char = 'ꨁ';
     /// \u{aa02}: 'ꨂ'
-    pub const CHAM_LETTER_U: char = 'ꨂ';
+    pub const LETTER_U: char = 'ꨂ';
     /// \u{aa03}: 'ꨃ'
-    pub const CHAM_LETTER_E: char = 'ꨃ';
+    pub const LETTER_E: char = 'ꨃ';
     /// \u{aa04}: 'ꨄ'
-    pub const CHAM_LETTER_AI: char = 'ꨄ';
+    pub const LETTER_AI: char = 'ꨄ';
     /// \u{aa05}: 'ꨅ'
-    pub const CHAM_LETTER_O: char = 'ꨅ';
+    pub const LETTER_O: char = 'ꨅ';
     /// \u{aa06}: 'ꨆ'
-    pub const CHAM_LETTER_KA: char = 'ꨆ';
+    pub const LETTER_KA: char = 'ꨆ';
     /// \u{aa07}: 'ꨇ'
-    pub const CHAM_LETTER_KHA: char = 'ꨇ';
+    pub const LETTER_KHA: char = 'ꨇ';
     /// \u{aa08}: 'ꨈ'
-    pub const CHAM_LETTER_GA: char = 'ꨈ';
+    pub const LETTER_GA: char = 'ꨈ';
     /// \u{aa09}: 'ꨉ'
-    pub const CHAM_LETTER_GHA: char = 'ꨉ';
+    pub const LETTER_GHA: char = 'ꨉ';
     /// \u{aa0a}: 'ꨊ'
-    pub const CHAM_LETTER_NGUE: char = 'ꨊ';
+    pub const LETTER_NGUE: char = 'ꨊ';
     /// \u{aa0b}: 'ꨋ'
-    pub const CHAM_LETTER_NGA: char = 'ꨋ';
+    pub const LETTER_NGA: char = 'ꨋ';
     /// \u{aa0c}: 'ꨌ'
-    pub const CHAM_LETTER_CHA: char = 'ꨌ';
+    pub const LETTER_CHA: char = 'ꨌ';
     /// \u{aa0d}: 'ꨍ'
-    pub const CHAM_LETTER_CHHA: char = 'ꨍ';
+    pub const LETTER_CHHA: char = 'ꨍ';
     /// \u{aa0e}: 'ꨎ'
-    pub const CHAM_LETTER_JA: char = 'ꨎ';
+    pub const LETTER_JA: char = 'ꨎ';
     /// \u{aa0f}: 'ꨏ'
-    pub const CHAM_LETTER_JHA: char = 'ꨏ';
+    pub const LETTER_JHA: char = 'ꨏ';
     /// \u{aa10}: 'ꨐ'
-    pub const CHAM_LETTER_NHUE: char = 'ꨐ';
+    pub const LETTER_NHUE: char = 'ꨐ';
     /// \u{aa11}: 'ꨑ'
-    pub const CHAM_LETTER_NHA: char = 'ꨑ';
+    pub const LETTER_NHA: char = 'ꨑ';
     /// \u{aa12}: 'ꨒ'
-    pub const CHAM_LETTER_NHJA: char = 'ꨒ';
+    pub const LETTER_NHJA: char = 'ꨒ';
     /// \u{aa13}: 'ꨓ'
-    pub const CHAM_LETTER_TA: char = 'ꨓ';
+    pub const LETTER_TA: char = 'ꨓ';
     /// \u{aa14}: 'ꨔ'
-    pub const CHAM_LETTER_THA: char = 'ꨔ';
+    pub const LETTER_THA: char = 'ꨔ';
     /// \u{aa15}: 'ꨕ'
-    pub const CHAM_LETTER_DA: char = 'ꨕ';
+    pub const LETTER_DA: char = 'ꨕ';
     /// \u{aa16}: 'ꨖ'
-    pub const CHAM_LETTER_DHA: char = 'ꨖ';
+    pub const LETTER_DHA: char = 'ꨖ';
     /// \u{aa17}: 'ꨗ'
-    pub const CHAM_LETTER_NUE: char = 'ꨗ';
+    pub const LETTER_NUE: char = 'ꨗ';
     /// \u{aa18}: 'ꨘ'
-    pub const CHAM_LETTER_NA: char = 'ꨘ';
+    pub const LETTER_NA: char = 'ꨘ';
     /// \u{aa19}: 'ꨙ'
-    pub const CHAM_LETTER_DDA: char = 'ꨙ';
+    pub const LETTER_DDA: char = 'ꨙ';
     /// \u{aa1a}: 'ꨚ'
-    pub const CHAM_LETTER_PA: char = 'ꨚ';
+    pub const LETTER_PA: char = 'ꨚ';
     /// \u{aa1b}: 'ꨛ'
-    pub const CHAM_LETTER_PPA: char = 'ꨛ';
+    pub const LETTER_PPA: char = 'ꨛ';
     /// \u{aa1c}: 'ꨜ'
-    pub const CHAM_LETTER_PHA: char = 'ꨜ';
+    pub const LETTER_PHA: char = 'ꨜ';
     /// \u{aa1d}: 'ꨝ'
-    pub const CHAM_LETTER_BA: char = 'ꨝ';
+    pub const LETTER_BA: char = 'ꨝ';
     /// \u{aa1e}: 'ꨞ'
-    pub const CHAM_LETTER_BHA: char = 'ꨞ';
+    pub const LETTER_BHA: char = 'ꨞ';
     /// \u{aa1f}: 'ꨟ'
-    pub const CHAM_LETTER_MUE: char = 'ꨟ';
+    pub const LETTER_MUE: char = 'ꨟ';
     /// \u{aa20}: 'ꨠ'
-    pub const CHAM_LETTER_MA: char = 'ꨠ';
+    pub const LETTER_MA: char = 'ꨠ';
     /// \u{aa21}: 'ꨡ'
-    pub const CHAM_LETTER_BBA: char = 'ꨡ';
+    pub const LETTER_BBA: char = 'ꨡ';
     /// \u{aa22}: 'ꨢ'
-    pub const CHAM_LETTER_YA: char = 'ꨢ';
+    pub const LETTER_YA: char = 'ꨢ';
     /// \u{aa23}: 'ꨣ'
-    pub const CHAM_LETTER_RA: char = 'ꨣ';
+    pub const LETTER_RA: char = 'ꨣ';
     /// \u{aa24}: 'ꨤ'
-    pub const CHAM_LETTER_LA: char = 'ꨤ';
+    pub const LETTER_LA: char = 'ꨤ';
     /// \u{aa25}: 'ꨥ'
-    pub const CHAM_LETTER_VA: char = 'ꨥ';
+    pub const LETTER_VA: char = 'ꨥ';
     /// \u{aa26}: 'ꨦ'
-    pub const CHAM_LETTER_SSA: char = 'ꨦ';
+    pub const LETTER_SSA: char = 'ꨦ';
     /// \u{aa27}: 'ꨧ'
-    pub const CHAM_LETTER_SA: char = 'ꨧ';
+    pub const LETTER_SA: char = 'ꨧ';
     /// \u{aa28}: 'ꨨ'
-    pub const CHAM_LETTER_HA: char = 'ꨨ';
+    pub const LETTER_HA: char = 'ꨨ';
     /// \u{aa29}: 'ꨩ'
-    pub const CHAM_VOWEL_SIGN_AA: char = 'ꨩ';
+    pub const VOWEL_SIGN_AA: char = 'ꨩ';
     /// \u{aa2a}: 'ꨪ'
-    pub const CHAM_VOWEL_SIGN_I: char = 'ꨪ';
+    pub const VOWEL_SIGN_I: char = 'ꨪ';
     /// \u{aa2b}: 'ꨫ'
-    pub const CHAM_VOWEL_SIGN_II: char = 'ꨫ';
+    pub const VOWEL_SIGN_II: char = 'ꨫ';
     /// \u{aa2c}: 'ꨬ'
-    pub const CHAM_VOWEL_SIGN_EI: char = 'ꨬ';
+    pub const VOWEL_SIGN_EI: char = 'ꨬ';
     /// \u{aa2d}: 'ꨭ'
-    pub const CHAM_VOWEL_SIGN_U: char = 'ꨭ';
+    pub const VOWEL_SIGN_U: char = 'ꨭ';
     /// \u{aa2e}: 'ꨮ'
-    pub const CHAM_VOWEL_SIGN_OE: char = 'ꨮ';
+    pub const VOWEL_SIGN_OE: char = 'ꨮ';
     /// \u{aa2f}: 'ꨯ'
-    pub const CHAM_VOWEL_SIGN_O: char = 'ꨯ';
+    pub const VOWEL_SIGN_O: char = 'ꨯ';
     /// \u{aa30}: 'ꨰ'
-    pub const CHAM_VOWEL_SIGN_AI: char = 'ꨰ';
+    pub const VOWEL_SIGN_AI: char = 'ꨰ';
     /// \u{aa31}: 'ꨱ'
-    pub const CHAM_VOWEL_SIGN_AU: char = 'ꨱ';
+    pub const VOWEL_SIGN_AU: char = 'ꨱ';
     /// \u{aa32}: 'ꨲ'
-    pub const CHAM_VOWEL_SIGN_UE: char = 'ꨲ';
+    pub const VOWEL_SIGN_UE: char = 'ꨲ';
     /// \u{aa33}: 'ꨳ'
-    pub const CHAM_CONSONANT_SIGN_YA: char = 'ꨳ';
+    pub const CONSONANT_SIGN_YA: char = 'ꨳ';
     /// \u{aa34}: 'ꨴ'
-    pub const CHAM_CONSONANT_SIGN_RA: char = 'ꨴ';
+    pub const CONSONANT_SIGN_RA: char = 'ꨴ';
     /// \u{aa35}: 'ꨵ'
-    pub const CHAM_CONSONANT_SIGN_LA: char = 'ꨵ';
+    pub const CONSONANT_SIGN_LA: char = 'ꨵ';
     /// \u{aa36}: 'ꨶ'
-    pub const CHAM_CONSONANT_SIGN_WA: char = 'ꨶ';
+    pub const CONSONANT_SIGN_WA: char = 'ꨶ';
     /// \u{aa40}: 'ꩀ'
-    pub const CHAM_LETTER_FINAL_K: char = 'ꩀ';
+    pub const LETTER_FINAL_K: char = 'ꩀ';
     /// \u{aa41}: 'ꩁ'
-    pub const CHAM_LETTER_FINAL_G: char = 'ꩁ';
+    pub const LETTER_FINAL_G: char = 'ꩁ';
     /// \u{aa42}: 'ꩂ'
-    pub const CHAM_LETTER_FINAL_NG: char = 'ꩂ';
+    pub const LETTER_FINAL_NG: char = 'ꩂ';
     /// \u{aa43}: 'ꩃ'
-    pub const CHAM_CONSONANT_SIGN_FINAL_NG: char = 'ꩃ';
+    pub const CONSONANT_SIGN_FINAL_NG: char = 'ꩃ';
     /// \u{aa44}: 'ꩄ'
-    pub const CHAM_LETTER_FINAL_CH: char = 'ꩄ';
+    pub const LETTER_FINAL_CH: char = 'ꩄ';
     /// \u{aa45}: 'ꩅ'
-    pub const CHAM_LETTER_FINAL_T: char = 'ꩅ';
+    pub const LETTER_FINAL_T: char = 'ꩅ';
     /// \u{aa46}: 'ꩆ'
-    pub const CHAM_LETTER_FINAL_N: char = 'ꩆ';
+    pub const LETTER_FINAL_N: char = 'ꩆ';
     /// \u{aa47}: 'ꩇ'
-    pub const CHAM_LETTER_FINAL_P: char = 'ꩇ';
+    pub const LETTER_FINAL_P: char = 'ꩇ';
     /// \u{aa48}: 'ꩈ'
-    pub const CHAM_LETTER_FINAL_Y: char = 'ꩈ';
+    pub const LETTER_FINAL_Y: char = 'ꩈ';
     /// \u{aa49}: 'ꩉ'
-    pub const CHAM_LETTER_FINAL_R: char = 'ꩉ';
+    pub const LETTER_FINAL_R: char = 'ꩉ';
     /// \u{aa4a}: 'ꩊ'
-    pub const CHAM_LETTER_FINAL_L: char = 'ꩊ';
+    pub const LETTER_FINAL_L: char = 'ꩊ';
     /// \u{aa4b}: 'ꩋ'
-    pub const CHAM_LETTER_FINAL_SS: char = 'ꩋ';
+    pub const LETTER_FINAL_SS: char = 'ꩋ';
     /// \u{aa4c}: 'ꩌ'
-    pub const CHAM_CONSONANT_SIGN_FINAL_M: char = 'ꩌ';
+    pub const CONSONANT_SIGN_FINAL_M: char = 'ꩌ';
     /// \u{aa4d}: 'ꩍ'
-    pub const CHAM_CONSONANT_SIGN_FINAL_H: char = 'ꩍ';
+    pub const CONSONANT_SIGN_FINAL_H: char = 'ꩍ';
     /// \u{aa50}: '꩐'
-    pub const CHAM_DIGIT_ZERO: char = '꩐';
+    pub const DIGIT_ZERO: char = '꩐';
     /// \u{aa51}: '꩑'
-    pub const CHAM_DIGIT_ONE: char = '꩑';
+    pub const DIGIT_ONE: char = '꩑';
     /// \u{aa52}: '꩒'
-    pub const CHAM_DIGIT_TWO: char = '꩒';
+    pub const DIGIT_TWO: char = '꩒';
     /// \u{aa53}: '꩓'
-    pub const CHAM_DIGIT_THREE: char = '꩓';
+    pub const DIGIT_THREE: char = '꩓';
     /// \u{aa54}: '꩔'
-    pub const CHAM_DIGIT_FOUR: char = '꩔';
+    pub const DIGIT_FOUR: char = '꩔';
     /// \u{aa55}: '꩕'
-    pub const CHAM_DIGIT_FIVE: char = '꩕';
+    pub const DIGIT_FIVE: char = '꩕';
     /// \u{aa56}: '꩖'
-    pub const CHAM_DIGIT_SIX: char = '꩖';
+    pub const DIGIT_SIX: char = '꩖';
     /// \u{aa57}: '꩗'
-    pub const CHAM_DIGIT_SEVEN: char = '꩗';
+    pub const DIGIT_SEVEN: char = '꩗';
     /// \u{aa58}: '꩘'
-    pub const CHAM_DIGIT_EIGHT: char = '꩘';
+    pub const DIGIT_EIGHT: char = '꩘';
     /// \u{aa59}: '꩙'
-    pub const CHAM_DIGIT_NINE: char = '꩙';
+    pub const DIGIT_NINE: char = '꩙';
     /// \u{aa5c}: '꩜'
-    pub const CHAM_PUNCTUATION_SPIRAL: char = '꩜';
+    pub const PUNCTUATION_SPIRAL: char = '꩜';
     /// \u{aa5d}: '꩝'
-    pub const CHAM_PUNCTUATION_DANDA: char = '꩝';
+    pub const PUNCTUATION_DANDA: char = '꩝';
     /// \u{aa5e}: '꩞'
-    pub const CHAM_PUNCTUATION_DOUBLE_DANDA: char = '꩞';
+    pub const PUNCTUATION_DOUBLE_DANDA: char = '꩞';
 }
 
 /// \u{aa00} → \u{aa5f}\
@@ -184,257 +184,257 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Cham {
     /// \u{aa00}: 'ꨀ'
-    ChamLetterA,
+    LetterA,
     /// \u{aa01}: 'ꨁ'
-    ChamLetterI,
+    LetterI,
     /// \u{aa02}: 'ꨂ'
-    ChamLetterU,
+    LetterU,
     /// \u{aa03}: 'ꨃ'
-    ChamLetterE,
+    LetterE,
     /// \u{aa04}: 'ꨄ'
-    ChamLetterAi,
+    LetterAi,
     /// \u{aa05}: 'ꨅ'
-    ChamLetterO,
+    LetterO,
     /// \u{aa06}: 'ꨆ'
-    ChamLetterKa,
+    LetterKa,
     /// \u{aa07}: 'ꨇ'
-    ChamLetterKha,
+    LetterKha,
     /// \u{aa08}: 'ꨈ'
-    ChamLetterGa,
+    LetterGa,
     /// \u{aa09}: 'ꨉ'
-    ChamLetterGha,
+    LetterGha,
     /// \u{aa0a}: 'ꨊ'
-    ChamLetterNgue,
+    LetterNgue,
     /// \u{aa0b}: 'ꨋ'
-    ChamLetterNga,
+    LetterNga,
     /// \u{aa0c}: 'ꨌ'
-    ChamLetterCha,
+    LetterCha,
     /// \u{aa0d}: 'ꨍ'
-    ChamLetterChha,
+    LetterChha,
     /// \u{aa0e}: 'ꨎ'
-    ChamLetterJa,
+    LetterJa,
     /// \u{aa0f}: 'ꨏ'
-    ChamLetterJha,
+    LetterJha,
     /// \u{aa10}: 'ꨐ'
-    ChamLetterNhue,
+    LetterNhue,
     /// \u{aa11}: 'ꨑ'
-    ChamLetterNha,
+    LetterNha,
     /// \u{aa12}: 'ꨒ'
-    ChamLetterNhja,
+    LetterNhja,
     /// \u{aa13}: 'ꨓ'
-    ChamLetterTa,
+    LetterTa,
     /// \u{aa14}: 'ꨔ'
-    ChamLetterTha,
+    LetterTha,
     /// \u{aa15}: 'ꨕ'
-    ChamLetterDa,
+    LetterDa,
     /// \u{aa16}: 'ꨖ'
-    ChamLetterDha,
+    LetterDha,
     /// \u{aa17}: 'ꨗ'
-    ChamLetterNue,
+    LetterNue,
     /// \u{aa18}: 'ꨘ'
-    ChamLetterNa,
+    LetterNa,
     /// \u{aa19}: 'ꨙ'
-    ChamLetterDda,
+    LetterDda,
     /// \u{aa1a}: 'ꨚ'
-    ChamLetterPa,
+    LetterPa,
     /// \u{aa1b}: 'ꨛ'
-    ChamLetterPpa,
+    LetterPpa,
     /// \u{aa1c}: 'ꨜ'
-    ChamLetterPha,
+    LetterPha,
     /// \u{aa1d}: 'ꨝ'
-    ChamLetterBa,
+    LetterBa,
     /// \u{aa1e}: 'ꨞ'
-    ChamLetterBha,
+    LetterBha,
     /// \u{aa1f}: 'ꨟ'
-    ChamLetterMue,
+    LetterMue,
     /// \u{aa20}: 'ꨠ'
-    ChamLetterMa,
+    LetterMa,
     /// \u{aa21}: 'ꨡ'
-    ChamLetterBba,
+    LetterBba,
     /// \u{aa22}: 'ꨢ'
-    ChamLetterYa,
+    LetterYa,
     /// \u{aa23}: 'ꨣ'
-    ChamLetterRa,
+    LetterRa,
     /// \u{aa24}: 'ꨤ'
-    ChamLetterLa,
+    LetterLa,
     /// \u{aa25}: 'ꨥ'
-    ChamLetterVa,
+    LetterVa,
     /// \u{aa26}: 'ꨦ'
-    ChamLetterSsa,
+    LetterSsa,
     /// \u{aa27}: 'ꨧ'
-    ChamLetterSa,
+    LetterSa,
     /// \u{aa28}: 'ꨨ'
-    ChamLetterHa,
+    LetterHa,
     /// \u{aa29}: 'ꨩ'
-    ChamVowelSignAa,
+    VowelSignAa,
     /// \u{aa2a}: 'ꨪ'
-    ChamVowelSignI,
+    VowelSignI,
     /// \u{aa2b}: 'ꨫ'
-    ChamVowelSignIi,
+    VowelSignIi,
     /// \u{aa2c}: 'ꨬ'
-    ChamVowelSignEi,
+    VowelSignEi,
     /// \u{aa2d}: 'ꨭ'
-    ChamVowelSignU,
+    VowelSignU,
     /// \u{aa2e}: 'ꨮ'
-    ChamVowelSignOe,
+    VowelSignOe,
     /// \u{aa2f}: 'ꨯ'
-    ChamVowelSignO,
+    VowelSignO,
     /// \u{aa30}: 'ꨰ'
-    ChamVowelSignAi,
+    VowelSignAi,
     /// \u{aa31}: 'ꨱ'
-    ChamVowelSignAu,
+    VowelSignAu,
     /// \u{aa32}: 'ꨲ'
-    ChamVowelSignUe,
+    VowelSignUe,
     /// \u{aa33}: 'ꨳ'
-    ChamConsonantSignYa,
+    ConsonantSignYa,
     /// \u{aa34}: 'ꨴ'
-    ChamConsonantSignRa,
+    ConsonantSignRa,
     /// \u{aa35}: 'ꨵ'
-    ChamConsonantSignLa,
+    ConsonantSignLa,
     /// \u{aa36}: 'ꨶ'
-    ChamConsonantSignWa,
+    ConsonantSignWa,
     /// \u{aa40}: 'ꩀ'
-    ChamLetterFinalK,
+    LetterFinalK,
     /// \u{aa41}: 'ꩁ'
-    ChamLetterFinalG,
+    LetterFinalG,
     /// \u{aa42}: 'ꩂ'
-    ChamLetterFinalNg,
+    LetterFinalNg,
     /// \u{aa43}: 'ꩃ'
-    ChamConsonantSignFinalNg,
+    ConsonantSignFinalNg,
     /// \u{aa44}: 'ꩄ'
-    ChamLetterFinalCh,
+    LetterFinalCh,
     /// \u{aa45}: 'ꩅ'
-    ChamLetterFinalT,
+    LetterFinalT,
     /// \u{aa46}: 'ꩆ'
-    ChamLetterFinalN,
+    LetterFinalN,
     /// \u{aa47}: 'ꩇ'
-    ChamLetterFinalP,
+    LetterFinalP,
     /// \u{aa48}: 'ꩈ'
-    ChamLetterFinalY,
+    LetterFinalY,
     /// \u{aa49}: 'ꩉ'
-    ChamLetterFinalR,
+    LetterFinalR,
     /// \u{aa4a}: 'ꩊ'
-    ChamLetterFinalL,
+    LetterFinalL,
     /// \u{aa4b}: 'ꩋ'
-    ChamLetterFinalSs,
+    LetterFinalSs,
     /// \u{aa4c}: 'ꩌ'
-    ChamConsonantSignFinalM,
+    ConsonantSignFinalM,
     /// \u{aa4d}: 'ꩍ'
-    ChamConsonantSignFinalH,
+    ConsonantSignFinalH,
     /// \u{aa50}: '꩐'
-    ChamDigitZero,
+    DigitZero,
     /// \u{aa51}: '꩑'
-    ChamDigitOne,
+    DigitOne,
     /// \u{aa52}: '꩒'
-    ChamDigitTwo,
+    DigitTwo,
     /// \u{aa53}: '꩓'
-    ChamDigitThree,
+    DigitThree,
     /// \u{aa54}: '꩔'
-    ChamDigitFour,
+    DigitFour,
     /// \u{aa55}: '꩕'
-    ChamDigitFive,
+    DigitFive,
     /// \u{aa56}: '꩖'
-    ChamDigitSix,
+    DigitSix,
     /// \u{aa57}: '꩗'
-    ChamDigitSeven,
+    DigitSeven,
     /// \u{aa58}: '꩘'
-    ChamDigitEight,
+    DigitEight,
     /// \u{aa59}: '꩙'
-    ChamDigitNine,
+    DigitNine,
     /// \u{aa5c}: '꩜'
-    ChamPunctuationSpiral,
+    PunctuationSpiral,
     /// \u{aa5d}: '꩝'
-    ChamPunctuationDanda,
+    PunctuationDanda,
     /// \u{aa5e}: '꩞'
-    ChamPunctuationDoubleDanda,
+    PunctuationDoubleDanda,
 }
 
 impl Into<char> for Cham {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Cham::ChamLetterA => CHAM_LETTER_A,
-            Cham::ChamLetterI => CHAM_LETTER_I,
-            Cham::ChamLetterU => CHAM_LETTER_U,
-            Cham::ChamLetterE => CHAM_LETTER_E,
-            Cham::ChamLetterAi => CHAM_LETTER_AI,
-            Cham::ChamLetterO => CHAM_LETTER_O,
-            Cham::ChamLetterKa => CHAM_LETTER_KA,
-            Cham::ChamLetterKha => CHAM_LETTER_KHA,
-            Cham::ChamLetterGa => CHAM_LETTER_GA,
-            Cham::ChamLetterGha => CHAM_LETTER_GHA,
-            Cham::ChamLetterNgue => CHAM_LETTER_NGUE,
-            Cham::ChamLetterNga => CHAM_LETTER_NGA,
-            Cham::ChamLetterCha => CHAM_LETTER_CHA,
-            Cham::ChamLetterChha => CHAM_LETTER_CHHA,
-            Cham::ChamLetterJa => CHAM_LETTER_JA,
-            Cham::ChamLetterJha => CHAM_LETTER_JHA,
-            Cham::ChamLetterNhue => CHAM_LETTER_NHUE,
-            Cham::ChamLetterNha => CHAM_LETTER_NHA,
-            Cham::ChamLetterNhja => CHAM_LETTER_NHJA,
-            Cham::ChamLetterTa => CHAM_LETTER_TA,
-            Cham::ChamLetterTha => CHAM_LETTER_THA,
-            Cham::ChamLetterDa => CHAM_LETTER_DA,
-            Cham::ChamLetterDha => CHAM_LETTER_DHA,
-            Cham::ChamLetterNue => CHAM_LETTER_NUE,
-            Cham::ChamLetterNa => CHAM_LETTER_NA,
-            Cham::ChamLetterDda => CHAM_LETTER_DDA,
-            Cham::ChamLetterPa => CHAM_LETTER_PA,
-            Cham::ChamLetterPpa => CHAM_LETTER_PPA,
-            Cham::ChamLetterPha => CHAM_LETTER_PHA,
-            Cham::ChamLetterBa => CHAM_LETTER_BA,
-            Cham::ChamLetterBha => CHAM_LETTER_BHA,
-            Cham::ChamLetterMue => CHAM_LETTER_MUE,
-            Cham::ChamLetterMa => CHAM_LETTER_MA,
-            Cham::ChamLetterBba => CHAM_LETTER_BBA,
-            Cham::ChamLetterYa => CHAM_LETTER_YA,
-            Cham::ChamLetterRa => CHAM_LETTER_RA,
-            Cham::ChamLetterLa => CHAM_LETTER_LA,
-            Cham::ChamLetterVa => CHAM_LETTER_VA,
-            Cham::ChamLetterSsa => CHAM_LETTER_SSA,
-            Cham::ChamLetterSa => CHAM_LETTER_SA,
-            Cham::ChamLetterHa => CHAM_LETTER_HA,
-            Cham::ChamVowelSignAa => CHAM_VOWEL_SIGN_AA,
-            Cham::ChamVowelSignI => CHAM_VOWEL_SIGN_I,
-            Cham::ChamVowelSignIi => CHAM_VOWEL_SIGN_II,
-            Cham::ChamVowelSignEi => CHAM_VOWEL_SIGN_EI,
-            Cham::ChamVowelSignU => CHAM_VOWEL_SIGN_U,
-            Cham::ChamVowelSignOe => CHAM_VOWEL_SIGN_OE,
-            Cham::ChamVowelSignO => CHAM_VOWEL_SIGN_O,
-            Cham::ChamVowelSignAi => CHAM_VOWEL_SIGN_AI,
-            Cham::ChamVowelSignAu => CHAM_VOWEL_SIGN_AU,
-            Cham::ChamVowelSignUe => CHAM_VOWEL_SIGN_UE,
-            Cham::ChamConsonantSignYa => CHAM_CONSONANT_SIGN_YA,
-            Cham::ChamConsonantSignRa => CHAM_CONSONANT_SIGN_RA,
-            Cham::ChamConsonantSignLa => CHAM_CONSONANT_SIGN_LA,
-            Cham::ChamConsonantSignWa => CHAM_CONSONANT_SIGN_WA,
-            Cham::ChamLetterFinalK => CHAM_LETTER_FINAL_K,
-            Cham::ChamLetterFinalG => CHAM_LETTER_FINAL_G,
-            Cham::ChamLetterFinalNg => CHAM_LETTER_FINAL_NG,
-            Cham::ChamConsonantSignFinalNg => CHAM_CONSONANT_SIGN_FINAL_NG,
-            Cham::ChamLetterFinalCh => CHAM_LETTER_FINAL_CH,
-            Cham::ChamLetterFinalT => CHAM_LETTER_FINAL_T,
-            Cham::ChamLetterFinalN => CHAM_LETTER_FINAL_N,
-            Cham::ChamLetterFinalP => CHAM_LETTER_FINAL_P,
-            Cham::ChamLetterFinalY => CHAM_LETTER_FINAL_Y,
-            Cham::ChamLetterFinalR => CHAM_LETTER_FINAL_R,
-            Cham::ChamLetterFinalL => CHAM_LETTER_FINAL_L,
-            Cham::ChamLetterFinalSs => CHAM_LETTER_FINAL_SS,
-            Cham::ChamConsonantSignFinalM => CHAM_CONSONANT_SIGN_FINAL_M,
-            Cham::ChamConsonantSignFinalH => CHAM_CONSONANT_SIGN_FINAL_H,
-            Cham::ChamDigitZero => CHAM_DIGIT_ZERO,
-            Cham::ChamDigitOne => CHAM_DIGIT_ONE,
-            Cham::ChamDigitTwo => CHAM_DIGIT_TWO,
-            Cham::ChamDigitThree => CHAM_DIGIT_THREE,
-            Cham::ChamDigitFour => CHAM_DIGIT_FOUR,
-            Cham::ChamDigitFive => CHAM_DIGIT_FIVE,
-            Cham::ChamDigitSix => CHAM_DIGIT_SIX,
-            Cham::ChamDigitSeven => CHAM_DIGIT_SEVEN,
-            Cham::ChamDigitEight => CHAM_DIGIT_EIGHT,
-            Cham::ChamDigitNine => CHAM_DIGIT_NINE,
-            Cham::ChamPunctuationSpiral => CHAM_PUNCTUATION_SPIRAL,
-            Cham::ChamPunctuationDanda => CHAM_PUNCTUATION_DANDA,
-            Cham::ChamPunctuationDoubleDanda => CHAM_PUNCTUATION_DOUBLE_DANDA,
+            Cham::LetterA => LETTER_A,
+            Cham::LetterI => LETTER_I,
+            Cham::LetterU => LETTER_U,
+            Cham::LetterE => LETTER_E,
+            Cham::LetterAi => LETTER_AI,
+            Cham::LetterO => LETTER_O,
+            Cham::LetterKa => LETTER_KA,
+            Cham::LetterKha => LETTER_KHA,
+            Cham::LetterGa => LETTER_GA,
+            Cham::LetterGha => LETTER_GHA,
+            Cham::LetterNgue => LETTER_NGUE,
+            Cham::LetterNga => LETTER_NGA,
+            Cham::LetterCha => LETTER_CHA,
+            Cham::LetterChha => LETTER_CHHA,
+            Cham::LetterJa => LETTER_JA,
+            Cham::LetterJha => LETTER_JHA,
+            Cham::LetterNhue => LETTER_NHUE,
+            Cham::LetterNha => LETTER_NHA,
+            Cham::LetterNhja => LETTER_NHJA,
+            Cham::LetterTa => LETTER_TA,
+            Cham::LetterTha => LETTER_THA,
+            Cham::LetterDa => LETTER_DA,
+            Cham::LetterDha => LETTER_DHA,
+            Cham::LetterNue => LETTER_NUE,
+            Cham::LetterNa => LETTER_NA,
+            Cham::LetterDda => LETTER_DDA,
+            Cham::LetterPa => LETTER_PA,
+            Cham::LetterPpa => LETTER_PPA,
+            Cham::LetterPha => LETTER_PHA,
+            Cham::LetterBa => LETTER_BA,
+            Cham::LetterBha => LETTER_BHA,
+            Cham::LetterMue => LETTER_MUE,
+            Cham::LetterMa => LETTER_MA,
+            Cham::LetterBba => LETTER_BBA,
+            Cham::LetterYa => LETTER_YA,
+            Cham::LetterRa => LETTER_RA,
+            Cham::LetterLa => LETTER_LA,
+            Cham::LetterVa => LETTER_VA,
+            Cham::LetterSsa => LETTER_SSA,
+            Cham::LetterSa => LETTER_SA,
+            Cham::LetterHa => LETTER_HA,
+            Cham::VowelSignAa => VOWEL_SIGN_AA,
+            Cham::VowelSignI => VOWEL_SIGN_I,
+            Cham::VowelSignIi => VOWEL_SIGN_II,
+            Cham::VowelSignEi => VOWEL_SIGN_EI,
+            Cham::VowelSignU => VOWEL_SIGN_U,
+            Cham::VowelSignOe => VOWEL_SIGN_OE,
+            Cham::VowelSignO => VOWEL_SIGN_O,
+            Cham::VowelSignAi => VOWEL_SIGN_AI,
+            Cham::VowelSignAu => VOWEL_SIGN_AU,
+            Cham::VowelSignUe => VOWEL_SIGN_UE,
+            Cham::ConsonantSignYa => CONSONANT_SIGN_YA,
+            Cham::ConsonantSignRa => CONSONANT_SIGN_RA,
+            Cham::ConsonantSignLa => CONSONANT_SIGN_LA,
+            Cham::ConsonantSignWa => CONSONANT_SIGN_WA,
+            Cham::LetterFinalK => LETTER_FINAL_K,
+            Cham::LetterFinalG => LETTER_FINAL_G,
+            Cham::LetterFinalNg => LETTER_FINAL_NG,
+            Cham::ConsonantSignFinalNg => CONSONANT_SIGN_FINAL_NG,
+            Cham::LetterFinalCh => LETTER_FINAL_CH,
+            Cham::LetterFinalT => LETTER_FINAL_T,
+            Cham::LetterFinalN => LETTER_FINAL_N,
+            Cham::LetterFinalP => LETTER_FINAL_P,
+            Cham::LetterFinalY => LETTER_FINAL_Y,
+            Cham::LetterFinalR => LETTER_FINAL_R,
+            Cham::LetterFinalL => LETTER_FINAL_L,
+            Cham::LetterFinalSs => LETTER_FINAL_SS,
+            Cham::ConsonantSignFinalM => CONSONANT_SIGN_FINAL_M,
+            Cham::ConsonantSignFinalH => CONSONANT_SIGN_FINAL_H,
+            Cham::DigitZero => DIGIT_ZERO,
+            Cham::DigitOne => DIGIT_ONE,
+            Cham::DigitTwo => DIGIT_TWO,
+            Cham::DigitThree => DIGIT_THREE,
+            Cham::DigitFour => DIGIT_FOUR,
+            Cham::DigitFive => DIGIT_FIVE,
+            Cham::DigitSix => DIGIT_SIX,
+            Cham::DigitSeven => DIGIT_SEVEN,
+            Cham::DigitEight => DIGIT_EIGHT,
+            Cham::DigitNine => DIGIT_NINE,
+            Cham::PunctuationSpiral => PUNCTUATION_SPIRAL,
+            Cham::PunctuationDanda => PUNCTUATION_DANDA,
+            Cham::PunctuationDoubleDanda => PUNCTUATION_DOUBLE_DANDA,
         }
     }
 }
@@ -444,88 +444,88 @@ impl std::convert::TryFrom<char> for Cham {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            CHAM_LETTER_A => Ok(Cham::ChamLetterA),
-            CHAM_LETTER_I => Ok(Cham::ChamLetterI),
-            CHAM_LETTER_U => Ok(Cham::ChamLetterU),
-            CHAM_LETTER_E => Ok(Cham::ChamLetterE),
-            CHAM_LETTER_AI => Ok(Cham::ChamLetterAi),
-            CHAM_LETTER_O => Ok(Cham::ChamLetterO),
-            CHAM_LETTER_KA => Ok(Cham::ChamLetterKa),
-            CHAM_LETTER_KHA => Ok(Cham::ChamLetterKha),
-            CHAM_LETTER_GA => Ok(Cham::ChamLetterGa),
-            CHAM_LETTER_GHA => Ok(Cham::ChamLetterGha),
-            CHAM_LETTER_NGUE => Ok(Cham::ChamLetterNgue),
-            CHAM_LETTER_NGA => Ok(Cham::ChamLetterNga),
-            CHAM_LETTER_CHA => Ok(Cham::ChamLetterCha),
-            CHAM_LETTER_CHHA => Ok(Cham::ChamLetterChha),
-            CHAM_LETTER_JA => Ok(Cham::ChamLetterJa),
-            CHAM_LETTER_JHA => Ok(Cham::ChamLetterJha),
-            CHAM_LETTER_NHUE => Ok(Cham::ChamLetterNhue),
-            CHAM_LETTER_NHA => Ok(Cham::ChamLetterNha),
-            CHAM_LETTER_NHJA => Ok(Cham::ChamLetterNhja),
-            CHAM_LETTER_TA => Ok(Cham::ChamLetterTa),
-            CHAM_LETTER_THA => Ok(Cham::ChamLetterTha),
-            CHAM_LETTER_DA => Ok(Cham::ChamLetterDa),
-            CHAM_LETTER_DHA => Ok(Cham::ChamLetterDha),
-            CHAM_LETTER_NUE => Ok(Cham::ChamLetterNue),
-            CHAM_LETTER_NA => Ok(Cham::ChamLetterNa),
-            CHAM_LETTER_DDA => Ok(Cham::ChamLetterDda),
-            CHAM_LETTER_PA => Ok(Cham::ChamLetterPa),
-            CHAM_LETTER_PPA => Ok(Cham::ChamLetterPpa),
-            CHAM_LETTER_PHA => Ok(Cham::ChamLetterPha),
-            CHAM_LETTER_BA => Ok(Cham::ChamLetterBa),
-            CHAM_LETTER_BHA => Ok(Cham::ChamLetterBha),
-            CHAM_LETTER_MUE => Ok(Cham::ChamLetterMue),
-            CHAM_LETTER_MA => Ok(Cham::ChamLetterMa),
-            CHAM_LETTER_BBA => Ok(Cham::ChamLetterBba),
-            CHAM_LETTER_YA => Ok(Cham::ChamLetterYa),
-            CHAM_LETTER_RA => Ok(Cham::ChamLetterRa),
-            CHAM_LETTER_LA => Ok(Cham::ChamLetterLa),
-            CHAM_LETTER_VA => Ok(Cham::ChamLetterVa),
-            CHAM_LETTER_SSA => Ok(Cham::ChamLetterSsa),
-            CHAM_LETTER_SA => Ok(Cham::ChamLetterSa),
-            CHAM_LETTER_HA => Ok(Cham::ChamLetterHa),
-            CHAM_VOWEL_SIGN_AA => Ok(Cham::ChamVowelSignAa),
-            CHAM_VOWEL_SIGN_I => Ok(Cham::ChamVowelSignI),
-            CHAM_VOWEL_SIGN_II => Ok(Cham::ChamVowelSignIi),
-            CHAM_VOWEL_SIGN_EI => Ok(Cham::ChamVowelSignEi),
-            CHAM_VOWEL_SIGN_U => Ok(Cham::ChamVowelSignU),
-            CHAM_VOWEL_SIGN_OE => Ok(Cham::ChamVowelSignOe),
-            CHAM_VOWEL_SIGN_O => Ok(Cham::ChamVowelSignO),
-            CHAM_VOWEL_SIGN_AI => Ok(Cham::ChamVowelSignAi),
-            CHAM_VOWEL_SIGN_AU => Ok(Cham::ChamVowelSignAu),
-            CHAM_VOWEL_SIGN_UE => Ok(Cham::ChamVowelSignUe),
-            CHAM_CONSONANT_SIGN_YA => Ok(Cham::ChamConsonantSignYa),
-            CHAM_CONSONANT_SIGN_RA => Ok(Cham::ChamConsonantSignRa),
-            CHAM_CONSONANT_SIGN_LA => Ok(Cham::ChamConsonantSignLa),
-            CHAM_CONSONANT_SIGN_WA => Ok(Cham::ChamConsonantSignWa),
-            CHAM_LETTER_FINAL_K => Ok(Cham::ChamLetterFinalK),
-            CHAM_LETTER_FINAL_G => Ok(Cham::ChamLetterFinalG),
-            CHAM_LETTER_FINAL_NG => Ok(Cham::ChamLetterFinalNg),
-            CHAM_CONSONANT_SIGN_FINAL_NG => Ok(Cham::ChamConsonantSignFinalNg),
-            CHAM_LETTER_FINAL_CH => Ok(Cham::ChamLetterFinalCh),
-            CHAM_LETTER_FINAL_T => Ok(Cham::ChamLetterFinalT),
-            CHAM_LETTER_FINAL_N => Ok(Cham::ChamLetterFinalN),
-            CHAM_LETTER_FINAL_P => Ok(Cham::ChamLetterFinalP),
-            CHAM_LETTER_FINAL_Y => Ok(Cham::ChamLetterFinalY),
-            CHAM_LETTER_FINAL_R => Ok(Cham::ChamLetterFinalR),
-            CHAM_LETTER_FINAL_L => Ok(Cham::ChamLetterFinalL),
-            CHAM_LETTER_FINAL_SS => Ok(Cham::ChamLetterFinalSs),
-            CHAM_CONSONANT_SIGN_FINAL_M => Ok(Cham::ChamConsonantSignFinalM),
-            CHAM_CONSONANT_SIGN_FINAL_H => Ok(Cham::ChamConsonantSignFinalH),
-            CHAM_DIGIT_ZERO => Ok(Cham::ChamDigitZero),
-            CHAM_DIGIT_ONE => Ok(Cham::ChamDigitOne),
-            CHAM_DIGIT_TWO => Ok(Cham::ChamDigitTwo),
-            CHAM_DIGIT_THREE => Ok(Cham::ChamDigitThree),
-            CHAM_DIGIT_FOUR => Ok(Cham::ChamDigitFour),
-            CHAM_DIGIT_FIVE => Ok(Cham::ChamDigitFive),
-            CHAM_DIGIT_SIX => Ok(Cham::ChamDigitSix),
-            CHAM_DIGIT_SEVEN => Ok(Cham::ChamDigitSeven),
-            CHAM_DIGIT_EIGHT => Ok(Cham::ChamDigitEight),
-            CHAM_DIGIT_NINE => Ok(Cham::ChamDigitNine),
-            CHAM_PUNCTUATION_SPIRAL => Ok(Cham::ChamPunctuationSpiral),
-            CHAM_PUNCTUATION_DANDA => Ok(Cham::ChamPunctuationDanda),
-            CHAM_PUNCTUATION_DOUBLE_DANDA => Ok(Cham::ChamPunctuationDoubleDanda),
+            LETTER_A => Ok(Cham::LetterA),
+            LETTER_I => Ok(Cham::LetterI),
+            LETTER_U => Ok(Cham::LetterU),
+            LETTER_E => Ok(Cham::LetterE),
+            LETTER_AI => Ok(Cham::LetterAi),
+            LETTER_O => Ok(Cham::LetterO),
+            LETTER_KA => Ok(Cham::LetterKa),
+            LETTER_KHA => Ok(Cham::LetterKha),
+            LETTER_GA => Ok(Cham::LetterGa),
+            LETTER_GHA => Ok(Cham::LetterGha),
+            LETTER_NGUE => Ok(Cham::LetterNgue),
+            LETTER_NGA => Ok(Cham::LetterNga),
+            LETTER_CHA => Ok(Cham::LetterCha),
+            LETTER_CHHA => Ok(Cham::LetterChha),
+            LETTER_JA => Ok(Cham::LetterJa),
+            LETTER_JHA => Ok(Cham::LetterJha),
+            LETTER_NHUE => Ok(Cham::LetterNhue),
+            LETTER_NHA => Ok(Cham::LetterNha),
+            LETTER_NHJA => Ok(Cham::LetterNhja),
+            LETTER_TA => Ok(Cham::LetterTa),
+            LETTER_THA => Ok(Cham::LetterTha),
+            LETTER_DA => Ok(Cham::LetterDa),
+            LETTER_DHA => Ok(Cham::LetterDha),
+            LETTER_NUE => Ok(Cham::LetterNue),
+            LETTER_NA => Ok(Cham::LetterNa),
+            LETTER_DDA => Ok(Cham::LetterDda),
+            LETTER_PA => Ok(Cham::LetterPa),
+            LETTER_PPA => Ok(Cham::LetterPpa),
+            LETTER_PHA => Ok(Cham::LetterPha),
+            LETTER_BA => Ok(Cham::LetterBa),
+            LETTER_BHA => Ok(Cham::LetterBha),
+            LETTER_MUE => Ok(Cham::LetterMue),
+            LETTER_MA => Ok(Cham::LetterMa),
+            LETTER_BBA => Ok(Cham::LetterBba),
+            LETTER_YA => Ok(Cham::LetterYa),
+            LETTER_RA => Ok(Cham::LetterRa),
+            LETTER_LA => Ok(Cham::LetterLa),
+            LETTER_VA => Ok(Cham::LetterVa),
+            LETTER_SSA => Ok(Cham::LetterSsa),
+            LETTER_SA => Ok(Cham::LetterSa),
+            LETTER_HA => Ok(Cham::LetterHa),
+            VOWEL_SIGN_AA => Ok(Cham::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Cham::VowelSignI),
+            VOWEL_SIGN_II => Ok(Cham::VowelSignIi),
+            VOWEL_SIGN_EI => Ok(Cham::VowelSignEi),
+            VOWEL_SIGN_U => Ok(Cham::VowelSignU),
+            VOWEL_SIGN_OE => Ok(Cham::VowelSignOe),
+            VOWEL_SIGN_O => Ok(Cham::VowelSignO),
+            VOWEL_SIGN_AI => Ok(Cham::VowelSignAi),
+            VOWEL_SIGN_AU => Ok(Cham::VowelSignAu),
+            VOWEL_SIGN_UE => Ok(Cham::VowelSignUe),
+            CONSONANT_SIGN_YA => Ok(Cham::ConsonantSignYa),
+            CONSONANT_SIGN_RA => Ok(Cham::ConsonantSignRa),
+            CONSONANT_SIGN_LA => Ok(Cham::ConsonantSignLa),
+            CONSONANT_SIGN_WA => Ok(Cham::ConsonantSignWa),
+            LETTER_FINAL_K => Ok(Cham::LetterFinalK),
+            LETTER_FINAL_G => Ok(Cham::LetterFinalG),
+            LETTER_FINAL_NG => Ok(Cham::LetterFinalNg),
+            CONSONANT_SIGN_FINAL_NG => Ok(Cham::ConsonantSignFinalNg),
+            LETTER_FINAL_CH => Ok(Cham::LetterFinalCh),
+            LETTER_FINAL_T => Ok(Cham::LetterFinalT),
+            LETTER_FINAL_N => Ok(Cham::LetterFinalN),
+            LETTER_FINAL_P => Ok(Cham::LetterFinalP),
+            LETTER_FINAL_Y => Ok(Cham::LetterFinalY),
+            LETTER_FINAL_R => Ok(Cham::LetterFinalR),
+            LETTER_FINAL_L => Ok(Cham::LetterFinalL),
+            LETTER_FINAL_SS => Ok(Cham::LetterFinalSs),
+            CONSONANT_SIGN_FINAL_M => Ok(Cham::ConsonantSignFinalM),
+            CONSONANT_SIGN_FINAL_H => Ok(Cham::ConsonantSignFinalH),
+            DIGIT_ZERO => Ok(Cham::DigitZero),
+            DIGIT_ONE => Ok(Cham::DigitOne),
+            DIGIT_TWO => Ok(Cham::DigitTwo),
+            DIGIT_THREE => Ok(Cham::DigitThree),
+            DIGIT_FOUR => Ok(Cham::DigitFour),
+            DIGIT_FIVE => Ok(Cham::DigitFive),
+            DIGIT_SIX => Ok(Cham::DigitSix),
+            DIGIT_SEVEN => Ok(Cham::DigitSeven),
+            DIGIT_EIGHT => Ok(Cham::DigitEight),
+            DIGIT_NINE => Ok(Cham::DigitNine),
+            PUNCTUATION_SPIRAL => Ok(Cham::PunctuationSpiral),
+            PUNCTUATION_DANDA => Ok(Cham::PunctuationDanda),
+            PUNCTUATION_DOUBLE_DANDA => Ok(Cham::PunctuationDoubleDanda),
             _ => Err(()),
         }
     }
@@ -564,96 +564,96 @@ impl Iterator for Cham {
 }
 
 impl Cham {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Cham::ChamLetterA
+        Cham::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Cham::ChamLetterA => "cham letter a",
-            Cham::ChamLetterI => "cham letter i",
-            Cham::ChamLetterU => "cham letter u",
-            Cham::ChamLetterE => "cham letter e",
-            Cham::ChamLetterAi => "cham letter ai",
-            Cham::ChamLetterO => "cham letter o",
-            Cham::ChamLetterKa => "cham letter ka",
-            Cham::ChamLetterKha => "cham letter kha",
-            Cham::ChamLetterGa => "cham letter ga",
-            Cham::ChamLetterGha => "cham letter gha",
-            Cham::ChamLetterNgue => "cham letter ngue",
-            Cham::ChamLetterNga => "cham letter nga",
-            Cham::ChamLetterCha => "cham letter cha",
-            Cham::ChamLetterChha => "cham letter chha",
-            Cham::ChamLetterJa => "cham letter ja",
-            Cham::ChamLetterJha => "cham letter jha",
-            Cham::ChamLetterNhue => "cham letter nhue",
-            Cham::ChamLetterNha => "cham letter nha",
-            Cham::ChamLetterNhja => "cham letter nhja",
-            Cham::ChamLetterTa => "cham letter ta",
-            Cham::ChamLetterTha => "cham letter tha",
-            Cham::ChamLetterDa => "cham letter da",
-            Cham::ChamLetterDha => "cham letter dha",
-            Cham::ChamLetterNue => "cham letter nue",
-            Cham::ChamLetterNa => "cham letter na",
-            Cham::ChamLetterDda => "cham letter dda",
-            Cham::ChamLetterPa => "cham letter pa",
-            Cham::ChamLetterPpa => "cham letter ppa",
-            Cham::ChamLetterPha => "cham letter pha",
-            Cham::ChamLetterBa => "cham letter ba",
-            Cham::ChamLetterBha => "cham letter bha",
-            Cham::ChamLetterMue => "cham letter mue",
-            Cham::ChamLetterMa => "cham letter ma",
-            Cham::ChamLetterBba => "cham letter bba",
-            Cham::ChamLetterYa => "cham letter ya",
-            Cham::ChamLetterRa => "cham letter ra",
-            Cham::ChamLetterLa => "cham letter la",
-            Cham::ChamLetterVa => "cham letter va",
-            Cham::ChamLetterSsa => "cham letter ssa",
-            Cham::ChamLetterSa => "cham letter sa",
-            Cham::ChamLetterHa => "cham letter ha",
-            Cham::ChamVowelSignAa => "cham vowel sign aa",
-            Cham::ChamVowelSignI => "cham vowel sign i",
-            Cham::ChamVowelSignIi => "cham vowel sign ii",
-            Cham::ChamVowelSignEi => "cham vowel sign ei",
-            Cham::ChamVowelSignU => "cham vowel sign u",
-            Cham::ChamVowelSignOe => "cham vowel sign oe",
-            Cham::ChamVowelSignO => "cham vowel sign o",
-            Cham::ChamVowelSignAi => "cham vowel sign ai",
-            Cham::ChamVowelSignAu => "cham vowel sign au",
-            Cham::ChamVowelSignUe => "cham vowel sign ue",
-            Cham::ChamConsonantSignYa => "cham consonant sign ya",
-            Cham::ChamConsonantSignRa => "cham consonant sign ra",
-            Cham::ChamConsonantSignLa => "cham consonant sign la",
-            Cham::ChamConsonantSignWa => "cham consonant sign wa",
-            Cham::ChamLetterFinalK => "cham letter final k",
-            Cham::ChamLetterFinalG => "cham letter final g",
-            Cham::ChamLetterFinalNg => "cham letter final ng",
-            Cham::ChamConsonantSignFinalNg => "cham consonant sign final ng",
-            Cham::ChamLetterFinalCh => "cham letter final ch",
-            Cham::ChamLetterFinalT => "cham letter final t",
-            Cham::ChamLetterFinalN => "cham letter final n",
-            Cham::ChamLetterFinalP => "cham letter final p",
-            Cham::ChamLetterFinalY => "cham letter final y",
-            Cham::ChamLetterFinalR => "cham letter final r",
-            Cham::ChamLetterFinalL => "cham letter final l",
-            Cham::ChamLetterFinalSs => "cham letter final ss",
-            Cham::ChamConsonantSignFinalM => "cham consonant sign final m",
-            Cham::ChamConsonantSignFinalH => "cham consonant sign final h",
-            Cham::ChamDigitZero => "cham digit zero",
-            Cham::ChamDigitOne => "cham digit one",
-            Cham::ChamDigitTwo => "cham digit two",
-            Cham::ChamDigitThree => "cham digit three",
-            Cham::ChamDigitFour => "cham digit four",
-            Cham::ChamDigitFive => "cham digit five",
-            Cham::ChamDigitSix => "cham digit six",
-            Cham::ChamDigitSeven => "cham digit seven",
-            Cham::ChamDigitEight => "cham digit eight",
-            Cham::ChamDigitNine => "cham digit nine",
-            Cham::ChamPunctuationSpiral => "cham punctuation spiral",
-            Cham::ChamPunctuationDanda => "cham punctuation danda",
-            Cham::ChamPunctuationDoubleDanda => "cham punctuation double danda",
+            Cham::LetterA => "cham letter a",
+            Cham::LetterI => "cham letter i",
+            Cham::LetterU => "cham letter u",
+            Cham::LetterE => "cham letter e",
+            Cham::LetterAi => "cham letter ai",
+            Cham::LetterO => "cham letter o",
+            Cham::LetterKa => "cham letter ka",
+            Cham::LetterKha => "cham letter kha",
+            Cham::LetterGa => "cham letter ga",
+            Cham::LetterGha => "cham letter gha",
+            Cham::LetterNgue => "cham letter ngue",
+            Cham::LetterNga => "cham letter nga",
+            Cham::LetterCha => "cham letter cha",
+            Cham::LetterChha => "cham letter chha",
+            Cham::LetterJa => "cham letter ja",
+            Cham::LetterJha => "cham letter jha",
+            Cham::LetterNhue => "cham letter nhue",
+            Cham::LetterNha => "cham letter nha",
+            Cham::LetterNhja => "cham letter nhja",
+            Cham::LetterTa => "cham letter ta",
+            Cham::LetterTha => "cham letter tha",
+            Cham::LetterDa => "cham letter da",
+            Cham::LetterDha => "cham letter dha",
+            Cham::LetterNue => "cham letter nue",
+            Cham::LetterNa => "cham letter na",
+            Cham::LetterDda => "cham letter dda",
+            Cham::LetterPa => "cham letter pa",
+            Cham::LetterPpa => "cham letter ppa",
+            Cham::LetterPha => "cham letter pha",
+            Cham::LetterBa => "cham letter ba",
+            Cham::LetterBha => "cham letter bha",
+            Cham::LetterMue => "cham letter mue",
+            Cham::LetterMa => "cham letter ma",
+            Cham::LetterBba => "cham letter bba",
+            Cham::LetterYa => "cham letter ya",
+            Cham::LetterRa => "cham letter ra",
+            Cham::LetterLa => "cham letter la",
+            Cham::LetterVa => "cham letter va",
+            Cham::LetterSsa => "cham letter ssa",
+            Cham::LetterSa => "cham letter sa",
+            Cham::LetterHa => "cham letter ha",
+            Cham::VowelSignAa => "cham vowel sign aa",
+            Cham::VowelSignI => "cham vowel sign i",
+            Cham::VowelSignIi => "cham vowel sign ii",
+            Cham::VowelSignEi => "cham vowel sign ei",
+            Cham::VowelSignU => "cham vowel sign u",
+            Cham::VowelSignOe => "cham vowel sign oe",
+            Cham::VowelSignO => "cham vowel sign o",
+            Cham::VowelSignAi => "cham vowel sign ai",
+            Cham::VowelSignAu => "cham vowel sign au",
+            Cham::VowelSignUe => "cham vowel sign ue",
+            Cham::ConsonantSignYa => "cham consonant sign ya",
+            Cham::ConsonantSignRa => "cham consonant sign ra",
+            Cham::ConsonantSignLa => "cham consonant sign la",
+            Cham::ConsonantSignWa => "cham consonant sign wa",
+            Cham::LetterFinalK => "cham letter final k",
+            Cham::LetterFinalG => "cham letter final g",
+            Cham::LetterFinalNg => "cham letter final ng",
+            Cham::ConsonantSignFinalNg => "cham consonant sign final ng",
+            Cham::LetterFinalCh => "cham letter final ch",
+            Cham::LetterFinalT => "cham letter final t",
+            Cham::LetterFinalN => "cham letter final n",
+            Cham::LetterFinalP => "cham letter final p",
+            Cham::LetterFinalY => "cham letter final y",
+            Cham::LetterFinalR => "cham letter final r",
+            Cham::LetterFinalL => "cham letter final l",
+            Cham::LetterFinalSs => "cham letter final ss",
+            Cham::ConsonantSignFinalM => "cham consonant sign final m",
+            Cham::ConsonantSignFinalH => "cham consonant sign final h",
+            Cham::DigitZero => "cham digit zero",
+            Cham::DigitOne => "cham digit one",
+            Cham::DigitTwo => "cham digit two",
+            Cham::DigitThree => "cham digit three",
+            Cham::DigitFour => "cham digit four",
+            Cham::DigitFive => "cham digit five",
+            Cham::DigitSix => "cham digit six",
+            Cham::DigitSeven => "cham digit seven",
+            Cham::DigitEight => "cham digit eight",
+            Cham::DigitNine => "cham digit nine",
+            Cham::PunctuationSpiral => "cham punctuation spiral",
+            Cham::PunctuationDanda => "cham punctuation danda",
+            Cham::PunctuationDoubleDanda => "cham punctuation double danda",
         }
     }
 }

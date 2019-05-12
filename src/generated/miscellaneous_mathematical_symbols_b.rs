@@ -838,7 +838,7 @@ impl Iterator for MiscellaneousMathematicalSymbolsB {
 }
 
 impl MiscellaneousMathematicalSymbolsB {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         MiscellaneousMathematicalSymbolsB::TripleVerticalBarDelimiter
     }

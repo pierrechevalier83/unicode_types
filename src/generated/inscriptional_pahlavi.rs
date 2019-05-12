@@ -4,57 +4,57 @@
 /// 𐭰 𐭱 𐭲 𐭸 𐭹 𐭺 𐭻 𐭼 𐭽 𐭾
 pub mod constants {
     /// \u{10b60}: '𐭠'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_ALEPH: char = '𐭠';
+    pub const LETTER_ALEPH: char = '𐭠';
     /// \u{10b61}: '𐭡'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_BETH: char = '𐭡';
+    pub const LETTER_BETH: char = '𐭡';
     /// \u{10b62}: '𐭢'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_GIMEL: char = '𐭢';
+    pub const LETTER_GIMEL: char = '𐭢';
     /// \u{10b63}: '𐭣'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_DALETH: char = '𐭣';
+    pub const LETTER_DALETH: char = '𐭣';
     /// \u{10b64}: '𐭤'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_HE: char = '𐭤';
+    pub const LETTER_HE: char = '𐭤';
     /// \u{10b65}: '𐭥'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_WAW_DASH_AYIN_DASH_RESH: char = '𐭥';
+    pub const LETTER_WAW_DASH_AYIN_DASH_RESH: char = '𐭥';
     /// \u{10b66}: '𐭦'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_ZAYIN: char = '𐭦';
+    pub const LETTER_ZAYIN: char = '𐭦';
     /// \u{10b67}: '𐭧'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_HETH: char = '𐭧';
+    pub const LETTER_HETH: char = '𐭧';
     /// \u{10b68}: '𐭨'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_TETH: char = '𐭨';
+    pub const LETTER_TETH: char = '𐭨';
     /// \u{10b69}: '𐭩'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_YODH: char = '𐭩';
+    pub const LETTER_YODH: char = '𐭩';
     /// \u{10b6a}: '𐭪'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_KAPH: char = '𐭪';
+    pub const LETTER_KAPH: char = '𐭪';
     /// \u{10b6b}: '𐭫'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_LAMEDH: char = '𐭫';
+    pub const LETTER_LAMEDH: char = '𐭫';
     /// \u{10b6c}: '𐭬'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_MEM_DASH_QOPH: char = '𐭬';
+    pub const LETTER_MEM_DASH_QOPH: char = '𐭬';
     /// \u{10b6d}: '𐭭'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_NUN: char = '𐭭';
+    pub const LETTER_NUN: char = '𐭭';
     /// \u{10b6e}: '𐭮'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_SAMEKH: char = '𐭮';
+    pub const LETTER_SAMEKH: char = '𐭮';
     /// \u{10b6f}: '𐭯'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_PE: char = '𐭯';
+    pub const LETTER_PE: char = '𐭯';
     /// \u{10b70}: '𐭰'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_SADHE: char = '𐭰';
+    pub const LETTER_SADHE: char = '𐭰';
     /// \u{10b71}: '𐭱'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_SHIN: char = '𐭱';
+    pub const LETTER_SHIN: char = '𐭱';
     /// \u{10b72}: '𐭲'
-    pub const INSCRIPTIONAL_PAHLAVI_LETTER_TAW: char = '𐭲';
+    pub const LETTER_TAW: char = '𐭲';
     /// \u{10b78}: '𐭸'
-    pub const INSCRIPTIONAL_PAHLAVI_NUMBER_ONE: char = '𐭸';
+    pub const NUMBER_ONE: char = '𐭸';
     /// \u{10b79}: '𐭹'
-    pub const INSCRIPTIONAL_PAHLAVI_NUMBER_TWO: char = '𐭹';
+    pub const NUMBER_TWO: char = '𐭹';
     /// \u{10b7a}: '𐭺'
-    pub const INSCRIPTIONAL_PAHLAVI_NUMBER_THREE: char = '𐭺';
+    pub const NUMBER_THREE: char = '𐭺';
     /// \u{10b7b}: '𐭻'
-    pub const INSCRIPTIONAL_PAHLAVI_NUMBER_FOUR: char = '𐭻';
+    pub const NUMBER_FOUR: char = '𐭻';
     /// \u{10b7c}: '𐭼'
-    pub const INSCRIPTIONAL_PAHLAVI_NUMBER_TEN: char = '𐭼';
+    pub const NUMBER_TEN: char = '𐭼';
     /// \u{10b7d}: '𐭽'
-    pub const INSCRIPTIONAL_PAHLAVI_NUMBER_TWENTY: char = '𐭽';
+    pub const NUMBER_TWENTY: char = '𐭽';
     /// \u{10b7e}: '𐭾'
-    pub const INSCRIPTIONAL_PAHLAVI_NUMBER_ONE_HUNDRED: char = '𐭾';
+    pub const NUMBER_ONE_HUNDRED: char = '𐭾';
 }
 
 /// \u{10b60} → \u{10b7f}\
@@ -64,89 +64,89 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum InscriptionalPahlavi {
     /// \u{10b60}: '𐭠'
-    InscriptionalPahlaviLetterAleph,
+    LetterAleph,
     /// \u{10b61}: '𐭡'
-    InscriptionalPahlaviLetterBeth,
+    LetterBeth,
     /// \u{10b62}: '𐭢'
-    InscriptionalPahlaviLetterGimel,
+    LetterGimel,
     /// \u{10b63}: '𐭣'
-    InscriptionalPahlaviLetterDaleth,
+    LetterDaleth,
     /// \u{10b64}: '𐭤'
-    InscriptionalPahlaviLetterHe,
+    LetterHe,
     /// \u{10b65}: '𐭥'
-    InscriptionalPahlaviLetterWawDashAyinDashResh,
+    LetterWawDashAyinDashResh,
     /// \u{10b66}: '𐭦'
-    InscriptionalPahlaviLetterZayin,
+    LetterZayin,
     /// \u{10b67}: '𐭧'
-    InscriptionalPahlaviLetterHeth,
+    LetterHeth,
     /// \u{10b68}: '𐭨'
-    InscriptionalPahlaviLetterTeth,
+    LetterTeth,
     /// \u{10b69}: '𐭩'
-    InscriptionalPahlaviLetterYodh,
+    LetterYodh,
     /// \u{10b6a}: '𐭪'
-    InscriptionalPahlaviLetterKaph,
+    LetterKaph,
     /// \u{10b6b}: '𐭫'
-    InscriptionalPahlaviLetterLamedh,
+    LetterLamedh,
     /// \u{10b6c}: '𐭬'
-    InscriptionalPahlaviLetterMemDashQoph,
+    LetterMemDashQoph,
     /// \u{10b6d}: '𐭭'
-    InscriptionalPahlaviLetterNun,
+    LetterNun,
     /// \u{10b6e}: '𐭮'
-    InscriptionalPahlaviLetterSamekh,
+    LetterSamekh,
     /// \u{10b6f}: '𐭯'
-    InscriptionalPahlaviLetterPe,
+    LetterPe,
     /// \u{10b70}: '𐭰'
-    InscriptionalPahlaviLetterSadhe,
+    LetterSadhe,
     /// \u{10b71}: '𐭱'
-    InscriptionalPahlaviLetterShin,
+    LetterShin,
     /// \u{10b72}: '𐭲'
-    InscriptionalPahlaviLetterTaw,
+    LetterTaw,
     /// \u{10b78}: '𐭸'
-    InscriptionalPahlaviNumberOne,
+    NumberOne,
     /// \u{10b79}: '𐭹'
-    InscriptionalPahlaviNumberTwo,
+    NumberTwo,
     /// \u{10b7a}: '𐭺'
-    InscriptionalPahlaviNumberThree,
+    NumberThree,
     /// \u{10b7b}: '𐭻'
-    InscriptionalPahlaviNumberFour,
+    NumberFour,
     /// \u{10b7c}: '𐭼'
-    InscriptionalPahlaviNumberTen,
+    NumberTen,
     /// \u{10b7d}: '𐭽'
-    InscriptionalPahlaviNumberTwenty,
+    NumberTwenty,
     /// \u{10b7e}: '𐭾'
-    InscriptionalPahlaviNumberOneHundred,
+    NumberOneHundred,
 }
 
 impl Into<char> for InscriptionalPahlavi {
     fn into(self) -> char {
         use constants::*;
         match self {
-            InscriptionalPahlavi::InscriptionalPahlaviLetterAleph => INSCRIPTIONAL_PAHLAVI_LETTER_ALEPH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterBeth => INSCRIPTIONAL_PAHLAVI_LETTER_BETH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterGimel => INSCRIPTIONAL_PAHLAVI_LETTER_GIMEL,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterDaleth => INSCRIPTIONAL_PAHLAVI_LETTER_DALETH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterHe => INSCRIPTIONAL_PAHLAVI_LETTER_HE,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterWawDashAyinDashResh => INSCRIPTIONAL_PAHLAVI_LETTER_WAW_DASH_AYIN_DASH_RESH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterZayin => INSCRIPTIONAL_PAHLAVI_LETTER_ZAYIN,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterHeth => INSCRIPTIONAL_PAHLAVI_LETTER_HETH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterTeth => INSCRIPTIONAL_PAHLAVI_LETTER_TETH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterYodh => INSCRIPTIONAL_PAHLAVI_LETTER_YODH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterKaph => INSCRIPTIONAL_PAHLAVI_LETTER_KAPH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterLamedh => INSCRIPTIONAL_PAHLAVI_LETTER_LAMEDH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterMemDashQoph => INSCRIPTIONAL_PAHLAVI_LETTER_MEM_DASH_QOPH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterNun => INSCRIPTIONAL_PAHLAVI_LETTER_NUN,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterSamekh => INSCRIPTIONAL_PAHLAVI_LETTER_SAMEKH,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterPe => INSCRIPTIONAL_PAHLAVI_LETTER_PE,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterSadhe => INSCRIPTIONAL_PAHLAVI_LETTER_SADHE,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterShin => INSCRIPTIONAL_PAHLAVI_LETTER_SHIN,
-            InscriptionalPahlavi::InscriptionalPahlaviLetterTaw => INSCRIPTIONAL_PAHLAVI_LETTER_TAW,
-            InscriptionalPahlavi::InscriptionalPahlaviNumberOne => INSCRIPTIONAL_PAHLAVI_NUMBER_ONE,
-            InscriptionalPahlavi::InscriptionalPahlaviNumberTwo => INSCRIPTIONAL_PAHLAVI_NUMBER_TWO,
-            InscriptionalPahlavi::InscriptionalPahlaviNumberThree => INSCRIPTIONAL_PAHLAVI_NUMBER_THREE,
-            InscriptionalPahlavi::InscriptionalPahlaviNumberFour => INSCRIPTIONAL_PAHLAVI_NUMBER_FOUR,
-            InscriptionalPahlavi::InscriptionalPahlaviNumberTen => INSCRIPTIONAL_PAHLAVI_NUMBER_TEN,
-            InscriptionalPahlavi::InscriptionalPahlaviNumberTwenty => INSCRIPTIONAL_PAHLAVI_NUMBER_TWENTY,
-            InscriptionalPahlavi::InscriptionalPahlaviNumberOneHundred => INSCRIPTIONAL_PAHLAVI_NUMBER_ONE_HUNDRED,
+            InscriptionalPahlavi::LetterAleph => LETTER_ALEPH,
+            InscriptionalPahlavi::LetterBeth => LETTER_BETH,
+            InscriptionalPahlavi::LetterGimel => LETTER_GIMEL,
+            InscriptionalPahlavi::LetterDaleth => LETTER_DALETH,
+            InscriptionalPahlavi::LetterHe => LETTER_HE,
+            InscriptionalPahlavi::LetterWawDashAyinDashResh => LETTER_WAW_DASH_AYIN_DASH_RESH,
+            InscriptionalPahlavi::LetterZayin => LETTER_ZAYIN,
+            InscriptionalPahlavi::LetterHeth => LETTER_HETH,
+            InscriptionalPahlavi::LetterTeth => LETTER_TETH,
+            InscriptionalPahlavi::LetterYodh => LETTER_YODH,
+            InscriptionalPahlavi::LetterKaph => LETTER_KAPH,
+            InscriptionalPahlavi::LetterLamedh => LETTER_LAMEDH,
+            InscriptionalPahlavi::LetterMemDashQoph => LETTER_MEM_DASH_QOPH,
+            InscriptionalPahlavi::LetterNun => LETTER_NUN,
+            InscriptionalPahlavi::LetterSamekh => LETTER_SAMEKH,
+            InscriptionalPahlavi::LetterPe => LETTER_PE,
+            InscriptionalPahlavi::LetterSadhe => LETTER_SADHE,
+            InscriptionalPahlavi::LetterShin => LETTER_SHIN,
+            InscriptionalPahlavi::LetterTaw => LETTER_TAW,
+            InscriptionalPahlavi::NumberOne => NUMBER_ONE,
+            InscriptionalPahlavi::NumberTwo => NUMBER_TWO,
+            InscriptionalPahlavi::NumberThree => NUMBER_THREE,
+            InscriptionalPahlavi::NumberFour => NUMBER_FOUR,
+            InscriptionalPahlavi::NumberTen => NUMBER_TEN,
+            InscriptionalPahlavi::NumberTwenty => NUMBER_TWENTY,
+            InscriptionalPahlavi::NumberOneHundred => NUMBER_ONE_HUNDRED,
         }
     }
 }
@@ -156,32 +156,32 @@ impl std::convert::TryFrom<char> for InscriptionalPahlavi {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            INSCRIPTIONAL_PAHLAVI_LETTER_ALEPH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterAleph),
-            INSCRIPTIONAL_PAHLAVI_LETTER_BETH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterBeth),
-            INSCRIPTIONAL_PAHLAVI_LETTER_GIMEL => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterGimel),
-            INSCRIPTIONAL_PAHLAVI_LETTER_DALETH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterDaleth),
-            INSCRIPTIONAL_PAHLAVI_LETTER_HE => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterHe),
-            INSCRIPTIONAL_PAHLAVI_LETTER_WAW_DASH_AYIN_DASH_RESH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterWawDashAyinDashResh),
-            INSCRIPTIONAL_PAHLAVI_LETTER_ZAYIN => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterZayin),
-            INSCRIPTIONAL_PAHLAVI_LETTER_HETH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterHeth),
-            INSCRIPTIONAL_PAHLAVI_LETTER_TETH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterTeth),
-            INSCRIPTIONAL_PAHLAVI_LETTER_YODH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterYodh),
-            INSCRIPTIONAL_PAHLAVI_LETTER_KAPH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterKaph),
-            INSCRIPTIONAL_PAHLAVI_LETTER_LAMEDH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterLamedh),
-            INSCRIPTIONAL_PAHLAVI_LETTER_MEM_DASH_QOPH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterMemDashQoph),
-            INSCRIPTIONAL_PAHLAVI_LETTER_NUN => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterNun),
-            INSCRIPTIONAL_PAHLAVI_LETTER_SAMEKH => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterSamekh),
-            INSCRIPTIONAL_PAHLAVI_LETTER_PE => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterPe),
-            INSCRIPTIONAL_PAHLAVI_LETTER_SADHE => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterSadhe),
-            INSCRIPTIONAL_PAHLAVI_LETTER_SHIN => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterShin),
-            INSCRIPTIONAL_PAHLAVI_LETTER_TAW => Ok(InscriptionalPahlavi::InscriptionalPahlaviLetterTaw),
-            INSCRIPTIONAL_PAHLAVI_NUMBER_ONE => Ok(InscriptionalPahlavi::InscriptionalPahlaviNumberOne),
-            INSCRIPTIONAL_PAHLAVI_NUMBER_TWO => Ok(InscriptionalPahlavi::InscriptionalPahlaviNumberTwo),
-            INSCRIPTIONAL_PAHLAVI_NUMBER_THREE => Ok(InscriptionalPahlavi::InscriptionalPahlaviNumberThree),
-            INSCRIPTIONAL_PAHLAVI_NUMBER_FOUR => Ok(InscriptionalPahlavi::InscriptionalPahlaviNumberFour),
-            INSCRIPTIONAL_PAHLAVI_NUMBER_TEN => Ok(InscriptionalPahlavi::InscriptionalPahlaviNumberTen),
-            INSCRIPTIONAL_PAHLAVI_NUMBER_TWENTY => Ok(InscriptionalPahlavi::InscriptionalPahlaviNumberTwenty),
-            INSCRIPTIONAL_PAHLAVI_NUMBER_ONE_HUNDRED => Ok(InscriptionalPahlavi::InscriptionalPahlaviNumberOneHundred),
+            LETTER_ALEPH => Ok(InscriptionalPahlavi::LetterAleph),
+            LETTER_BETH => Ok(InscriptionalPahlavi::LetterBeth),
+            LETTER_GIMEL => Ok(InscriptionalPahlavi::LetterGimel),
+            LETTER_DALETH => Ok(InscriptionalPahlavi::LetterDaleth),
+            LETTER_HE => Ok(InscriptionalPahlavi::LetterHe),
+            LETTER_WAW_DASH_AYIN_DASH_RESH => Ok(InscriptionalPahlavi::LetterWawDashAyinDashResh),
+            LETTER_ZAYIN => Ok(InscriptionalPahlavi::LetterZayin),
+            LETTER_HETH => Ok(InscriptionalPahlavi::LetterHeth),
+            LETTER_TETH => Ok(InscriptionalPahlavi::LetterTeth),
+            LETTER_YODH => Ok(InscriptionalPahlavi::LetterYodh),
+            LETTER_KAPH => Ok(InscriptionalPahlavi::LetterKaph),
+            LETTER_LAMEDH => Ok(InscriptionalPahlavi::LetterLamedh),
+            LETTER_MEM_DASH_QOPH => Ok(InscriptionalPahlavi::LetterMemDashQoph),
+            LETTER_NUN => Ok(InscriptionalPahlavi::LetterNun),
+            LETTER_SAMEKH => Ok(InscriptionalPahlavi::LetterSamekh),
+            LETTER_PE => Ok(InscriptionalPahlavi::LetterPe),
+            LETTER_SADHE => Ok(InscriptionalPahlavi::LetterSadhe),
+            LETTER_SHIN => Ok(InscriptionalPahlavi::LetterShin),
+            LETTER_TAW => Ok(InscriptionalPahlavi::LetterTaw),
+            NUMBER_ONE => Ok(InscriptionalPahlavi::NumberOne),
+            NUMBER_TWO => Ok(InscriptionalPahlavi::NumberTwo),
+            NUMBER_THREE => Ok(InscriptionalPahlavi::NumberThree),
+            NUMBER_FOUR => Ok(InscriptionalPahlavi::NumberFour),
+            NUMBER_TEN => Ok(InscriptionalPahlavi::NumberTen),
+            NUMBER_TWENTY => Ok(InscriptionalPahlavi::NumberTwenty),
+            NUMBER_ONE_HUNDRED => Ok(InscriptionalPahlavi::NumberOneHundred),
             _ => Err(()),
         }
     }
@@ -220,40 +220,40 @@ impl Iterator for InscriptionalPahlavi {
 }
 
 impl InscriptionalPahlavi {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        InscriptionalPahlavi::InscriptionalPahlaviLetterAleph
+        InscriptionalPahlavi::LetterAleph
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            InscriptionalPahlavi::InscriptionalPahlaviLetterAleph => "inscriptional pahlavi letter aleph",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterBeth => "inscriptional pahlavi letter beth",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterGimel => "inscriptional pahlavi letter gimel",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterDaleth => "inscriptional pahlavi letter daleth",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterHe => "inscriptional pahlavi letter he",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterWawDashAyinDashResh => "inscriptional pahlavi letter waw-ayin-resh",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterZayin => "inscriptional pahlavi letter zayin",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterHeth => "inscriptional pahlavi letter heth",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterTeth => "inscriptional pahlavi letter teth",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterYodh => "inscriptional pahlavi letter yodh",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterKaph => "inscriptional pahlavi letter kaph",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterLamedh => "inscriptional pahlavi letter lamedh",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterMemDashQoph => "inscriptional pahlavi letter mem-qoph",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterNun => "inscriptional pahlavi letter nun",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterSamekh => "inscriptional pahlavi letter samekh",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterPe => "inscriptional pahlavi letter pe",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterSadhe => "inscriptional pahlavi letter sadhe",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterShin => "inscriptional pahlavi letter shin",
-            InscriptionalPahlavi::InscriptionalPahlaviLetterTaw => "inscriptional pahlavi letter taw",
-            InscriptionalPahlavi::InscriptionalPahlaviNumberOne => "inscriptional pahlavi number one",
-            InscriptionalPahlavi::InscriptionalPahlaviNumberTwo => "inscriptional pahlavi number two",
-            InscriptionalPahlavi::InscriptionalPahlaviNumberThree => "inscriptional pahlavi number three",
-            InscriptionalPahlavi::InscriptionalPahlaviNumberFour => "inscriptional pahlavi number four",
-            InscriptionalPahlavi::InscriptionalPahlaviNumberTen => "inscriptional pahlavi number ten",
-            InscriptionalPahlavi::InscriptionalPahlaviNumberTwenty => "inscriptional pahlavi number twenty",
-            InscriptionalPahlavi::InscriptionalPahlaviNumberOneHundred => "inscriptional pahlavi number one hundred",
+            InscriptionalPahlavi::LetterAleph => "inscriptional pahlavi letter aleph",
+            InscriptionalPahlavi::LetterBeth => "inscriptional pahlavi letter beth",
+            InscriptionalPahlavi::LetterGimel => "inscriptional pahlavi letter gimel",
+            InscriptionalPahlavi::LetterDaleth => "inscriptional pahlavi letter daleth",
+            InscriptionalPahlavi::LetterHe => "inscriptional pahlavi letter he",
+            InscriptionalPahlavi::LetterWawDashAyinDashResh => "inscriptional pahlavi letter waw-ayin-resh",
+            InscriptionalPahlavi::LetterZayin => "inscriptional pahlavi letter zayin",
+            InscriptionalPahlavi::LetterHeth => "inscriptional pahlavi letter heth",
+            InscriptionalPahlavi::LetterTeth => "inscriptional pahlavi letter teth",
+            InscriptionalPahlavi::LetterYodh => "inscriptional pahlavi letter yodh",
+            InscriptionalPahlavi::LetterKaph => "inscriptional pahlavi letter kaph",
+            InscriptionalPahlavi::LetterLamedh => "inscriptional pahlavi letter lamedh",
+            InscriptionalPahlavi::LetterMemDashQoph => "inscriptional pahlavi letter mem-qoph",
+            InscriptionalPahlavi::LetterNun => "inscriptional pahlavi letter nun",
+            InscriptionalPahlavi::LetterSamekh => "inscriptional pahlavi letter samekh",
+            InscriptionalPahlavi::LetterPe => "inscriptional pahlavi letter pe",
+            InscriptionalPahlavi::LetterSadhe => "inscriptional pahlavi letter sadhe",
+            InscriptionalPahlavi::LetterShin => "inscriptional pahlavi letter shin",
+            InscriptionalPahlavi::LetterTaw => "inscriptional pahlavi letter taw",
+            InscriptionalPahlavi::NumberOne => "inscriptional pahlavi number one",
+            InscriptionalPahlavi::NumberTwo => "inscriptional pahlavi number two",
+            InscriptionalPahlavi::NumberThree => "inscriptional pahlavi number three",
+            InscriptionalPahlavi::NumberFour => "inscriptional pahlavi number four",
+            InscriptionalPahlavi::NumberTen => "inscriptional pahlavi number ten",
+            InscriptionalPahlavi::NumberTwenty => "inscriptional pahlavi number twenty",
+            InscriptionalPahlavi::NumberOneHundred => "inscriptional pahlavi number one hundred",
         }
     }
 }

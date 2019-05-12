@@ -4,47 +4,47 @@
 /// ᜰ ᜱ ᜲ ᜳ ᜴ ᜵ ᜶
 pub mod constants {
     /// \u{1720}: 'ᜠ'
-    pub const HANUNOO_LETTER_A: char = 'ᜠ';
+    pub const LETTER_A: char = 'ᜠ';
     /// \u{1721}: 'ᜡ'
-    pub const HANUNOO_LETTER_I: char = 'ᜡ';
+    pub const LETTER_I: char = 'ᜡ';
     /// \u{1722}: 'ᜢ'
-    pub const HANUNOO_LETTER_U: char = 'ᜢ';
+    pub const LETTER_U: char = 'ᜢ';
     /// \u{1723}: 'ᜣ'
-    pub const HANUNOO_LETTER_KA: char = 'ᜣ';
+    pub const LETTER_KA: char = 'ᜣ';
     /// \u{1724}: 'ᜤ'
-    pub const HANUNOO_LETTER_GA: char = 'ᜤ';
+    pub const LETTER_GA: char = 'ᜤ';
     /// \u{1725}: 'ᜥ'
-    pub const HANUNOO_LETTER_NGA: char = 'ᜥ';
+    pub const LETTER_NGA: char = 'ᜥ';
     /// \u{1726}: 'ᜦ'
-    pub const HANUNOO_LETTER_TA: char = 'ᜦ';
+    pub const LETTER_TA: char = 'ᜦ';
     /// \u{1727}: 'ᜧ'
-    pub const HANUNOO_LETTER_DA: char = 'ᜧ';
+    pub const LETTER_DA: char = 'ᜧ';
     /// \u{1728}: 'ᜨ'
-    pub const HANUNOO_LETTER_NA: char = 'ᜨ';
+    pub const LETTER_NA: char = 'ᜨ';
     /// \u{1729}: 'ᜩ'
-    pub const HANUNOO_LETTER_PA: char = 'ᜩ';
+    pub const LETTER_PA: char = 'ᜩ';
     /// \u{172a}: 'ᜪ'
-    pub const HANUNOO_LETTER_BA: char = 'ᜪ';
+    pub const LETTER_BA: char = 'ᜪ';
     /// \u{172b}: 'ᜫ'
-    pub const HANUNOO_LETTER_MA: char = 'ᜫ';
+    pub const LETTER_MA: char = 'ᜫ';
     /// \u{172c}: 'ᜬ'
-    pub const HANUNOO_LETTER_YA: char = 'ᜬ';
+    pub const LETTER_YA: char = 'ᜬ';
     /// \u{172d}: 'ᜭ'
-    pub const HANUNOO_LETTER_RA: char = 'ᜭ';
+    pub const LETTER_RA: char = 'ᜭ';
     /// \u{172e}: 'ᜮ'
-    pub const HANUNOO_LETTER_LA: char = 'ᜮ';
+    pub const LETTER_LA: char = 'ᜮ';
     /// \u{172f}: 'ᜯ'
-    pub const HANUNOO_LETTER_WA: char = 'ᜯ';
+    pub const LETTER_WA: char = 'ᜯ';
     /// \u{1730}: 'ᜰ'
-    pub const HANUNOO_LETTER_SA: char = 'ᜰ';
+    pub const LETTER_SA: char = 'ᜰ';
     /// \u{1731}: 'ᜱ'
-    pub const HANUNOO_LETTER_HA: char = 'ᜱ';
+    pub const LETTER_HA: char = 'ᜱ';
     /// \u{1732}: 'ᜲ'
-    pub const HANUNOO_VOWEL_SIGN_I: char = 'ᜲ';
+    pub const VOWEL_SIGN_I: char = 'ᜲ';
     /// \u{1733}: 'ᜳ'
-    pub const HANUNOO_VOWEL_SIGN_U: char = 'ᜳ';
+    pub const VOWEL_SIGN_U: char = 'ᜳ';
     /// \u{1734}: '᜴'
-    pub const HANUNOO_SIGN_PAMUDPOD: char = '᜴';
+    pub const SIGN_PAMUDPOD: char = '᜴';
     /// \u{1735}: '᜵'
     pub const PHILIPPINE_SINGLE_PUNCTUATION: char = '᜵';
     /// \u{1736}: '᜶'
@@ -58,47 +58,47 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Hanunoo {
     /// \u{1720}: 'ᜠ'
-    HanunooLetterA,
+    LetterA,
     /// \u{1721}: 'ᜡ'
-    HanunooLetterI,
+    LetterI,
     /// \u{1722}: 'ᜢ'
-    HanunooLetterU,
+    LetterU,
     /// \u{1723}: 'ᜣ'
-    HanunooLetterKa,
+    LetterKa,
     /// \u{1724}: 'ᜤ'
-    HanunooLetterGa,
+    LetterGa,
     /// \u{1725}: 'ᜥ'
-    HanunooLetterNga,
+    LetterNga,
     /// \u{1726}: 'ᜦ'
-    HanunooLetterTa,
+    LetterTa,
     /// \u{1727}: 'ᜧ'
-    HanunooLetterDa,
+    LetterDa,
     /// \u{1728}: 'ᜨ'
-    HanunooLetterNa,
+    LetterNa,
     /// \u{1729}: 'ᜩ'
-    HanunooLetterPa,
+    LetterPa,
     /// \u{172a}: 'ᜪ'
-    HanunooLetterBa,
+    LetterBa,
     /// \u{172b}: 'ᜫ'
-    HanunooLetterMa,
+    LetterMa,
     /// \u{172c}: 'ᜬ'
-    HanunooLetterYa,
+    LetterYa,
     /// \u{172d}: 'ᜭ'
-    HanunooLetterRa,
+    LetterRa,
     /// \u{172e}: 'ᜮ'
-    HanunooLetterLa,
+    LetterLa,
     /// \u{172f}: 'ᜯ'
-    HanunooLetterWa,
+    LetterWa,
     /// \u{1730}: 'ᜰ'
-    HanunooLetterSa,
+    LetterSa,
     /// \u{1731}: 'ᜱ'
-    HanunooLetterHa,
+    LetterHa,
     /// \u{1732}: 'ᜲ'
-    HanunooVowelSignI,
+    VowelSignI,
     /// \u{1733}: 'ᜳ'
-    HanunooVowelSignU,
+    VowelSignU,
     /// \u{1734}: '᜴'
-    HanunooSignPamudpod,
+    SignPamudpod,
     /// \u{1735}: '᜵'
     PhilippineSinglePunctuation,
     /// \u{1736}: '᜶'
@@ -109,27 +109,27 @@ impl Into<char> for Hanunoo {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Hanunoo::HanunooLetterA => HANUNOO_LETTER_A,
-            Hanunoo::HanunooLetterI => HANUNOO_LETTER_I,
-            Hanunoo::HanunooLetterU => HANUNOO_LETTER_U,
-            Hanunoo::HanunooLetterKa => HANUNOO_LETTER_KA,
-            Hanunoo::HanunooLetterGa => HANUNOO_LETTER_GA,
-            Hanunoo::HanunooLetterNga => HANUNOO_LETTER_NGA,
-            Hanunoo::HanunooLetterTa => HANUNOO_LETTER_TA,
-            Hanunoo::HanunooLetterDa => HANUNOO_LETTER_DA,
-            Hanunoo::HanunooLetterNa => HANUNOO_LETTER_NA,
-            Hanunoo::HanunooLetterPa => HANUNOO_LETTER_PA,
-            Hanunoo::HanunooLetterBa => HANUNOO_LETTER_BA,
-            Hanunoo::HanunooLetterMa => HANUNOO_LETTER_MA,
-            Hanunoo::HanunooLetterYa => HANUNOO_LETTER_YA,
-            Hanunoo::HanunooLetterRa => HANUNOO_LETTER_RA,
-            Hanunoo::HanunooLetterLa => HANUNOO_LETTER_LA,
-            Hanunoo::HanunooLetterWa => HANUNOO_LETTER_WA,
-            Hanunoo::HanunooLetterSa => HANUNOO_LETTER_SA,
-            Hanunoo::HanunooLetterHa => HANUNOO_LETTER_HA,
-            Hanunoo::HanunooVowelSignI => HANUNOO_VOWEL_SIGN_I,
-            Hanunoo::HanunooVowelSignU => HANUNOO_VOWEL_SIGN_U,
-            Hanunoo::HanunooSignPamudpod => HANUNOO_SIGN_PAMUDPOD,
+            Hanunoo::LetterA => LETTER_A,
+            Hanunoo::LetterI => LETTER_I,
+            Hanunoo::LetterU => LETTER_U,
+            Hanunoo::LetterKa => LETTER_KA,
+            Hanunoo::LetterGa => LETTER_GA,
+            Hanunoo::LetterNga => LETTER_NGA,
+            Hanunoo::LetterTa => LETTER_TA,
+            Hanunoo::LetterDa => LETTER_DA,
+            Hanunoo::LetterNa => LETTER_NA,
+            Hanunoo::LetterPa => LETTER_PA,
+            Hanunoo::LetterBa => LETTER_BA,
+            Hanunoo::LetterMa => LETTER_MA,
+            Hanunoo::LetterYa => LETTER_YA,
+            Hanunoo::LetterRa => LETTER_RA,
+            Hanunoo::LetterLa => LETTER_LA,
+            Hanunoo::LetterWa => LETTER_WA,
+            Hanunoo::LetterSa => LETTER_SA,
+            Hanunoo::LetterHa => LETTER_HA,
+            Hanunoo::VowelSignI => VOWEL_SIGN_I,
+            Hanunoo::VowelSignU => VOWEL_SIGN_U,
+            Hanunoo::SignPamudpod => SIGN_PAMUDPOD,
             Hanunoo::PhilippineSinglePunctuation => PHILIPPINE_SINGLE_PUNCTUATION,
             Hanunoo::PhilippineDoublePunctuation => PHILIPPINE_DOUBLE_PUNCTUATION,
         }
@@ -141,27 +141,27 @@ impl std::convert::TryFrom<char> for Hanunoo {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            HANUNOO_LETTER_A => Ok(Hanunoo::HanunooLetterA),
-            HANUNOO_LETTER_I => Ok(Hanunoo::HanunooLetterI),
-            HANUNOO_LETTER_U => Ok(Hanunoo::HanunooLetterU),
-            HANUNOO_LETTER_KA => Ok(Hanunoo::HanunooLetterKa),
-            HANUNOO_LETTER_GA => Ok(Hanunoo::HanunooLetterGa),
-            HANUNOO_LETTER_NGA => Ok(Hanunoo::HanunooLetterNga),
-            HANUNOO_LETTER_TA => Ok(Hanunoo::HanunooLetterTa),
-            HANUNOO_LETTER_DA => Ok(Hanunoo::HanunooLetterDa),
-            HANUNOO_LETTER_NA => Ok(Hanunoo::HanunooLetterNa),
-            HANUNOO_LETTER_PA => Ok(Hanunoo::HanunooLetterPa),
-            HANUNOO_LETTER_BA => Ok(Hanunoo::HanunooLetterBa),
-            HANUNOO_LETTER_MA => Ok(Hanunoo::HanunooLetterMa),
-            HANUNOO_LETTER_YA => Ok(Hanunoo::HanunooLetterYa),
-            HANUNOO_LETTER_RA => Ok(Hanunoo::HanunooLetterRa),
-            HANUNOO_LETTER_LA => Ok(Hanunoo::HanunooLetterLa),
-            HANUNOO_LETTER_WA => Ok(Hanunoo::HanunooLetterWa),
-            HANUNOO_LETTER_SA => Ok(Hanunoo::HanunooLetterSa),
-            HANUNOO_LETTER_HA => Ok(Hanunoo::HanunooLetterHa),
-            HANUNOO_VOWEL_SIGN_I => Ok(Hanunoo::HanunooVowelSignI),
-            HANUNOO_VOWEL_SIGN_U => Ok(Hanunoo::HanunooVowelSignU),
-            HANUNOO_SIGN_PAMUDPOD => Ok(Hanunoo::HanunooSignPamudpod),
+            LETTER_A => Ok(Hanunoo::LetterA),
+            LETTER_I => Ok(Hanunoo::LetterI),
+            LETTER_U => Ok(Hanunoo::LetterU),
+            LETTER_KA => Ok(Hanunoo::LetterKa),
+            LETTER_GA => Ok(Hanunoo::LetterGa),
+            LETTER_NGA => Ok(Hanunoo::LetterNga),
+            LETTER_TA => Ok(Hanunoo::LetterTa),
+            LETTER_DA => Ok(Hanunoo::LetterDa),
+            LETTER_NA => Ok(Hanunoo::LetterNa),
+            LETTER_PA => Ok(Hanunoo::LetterPa),
+            LETTER_BA => Ok(Hanunoo::LetterBa),
+            LETTER_MA => Ok(Hanunoo::LetterMa),
+            LETTER_YA => Ok(Hanunoo::LetterYa),
+            LETTER_RA => Ok(Hanunoo::LetterRa),
+            LETTER_LA => Ok(Hanunoo::LetterLa),
+            LETTER_WA => Ok(Hanunoo::LetterWa),
+            LETTER_SA => Ok(Hanunoo::LetterSa),
+            LETTER_HA => Ok(Hanunoo::LetterHa),
+            VOWEL_SIGN_I => Ok(Hanunoo::VowelSignI),
+            VOWEL_SIGN_U => Ok(Hanunoo::VowelSignU),
+            SIGN_PAMUDPOD => Ok(Hanunoo::SignPamudpod),
             PHILIPPINE_SINGLE_PUNCTUATION => Ok(Hanunoo::PhilippineSinglePunctuation),
             PHILIPPINE_DOUBLE_PUNCTUATION => Ok(Hanunoo::PhilippineDoublePunctuation),
             _ => Err(()),
@@ -202,35 +202,35 @@ impl Iterator for Hanunoo {
 }
 
 impl Hanunoo {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Hanunoo::HanunooLetterA
+        Hanunoo::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Hanunoo::HanunooLetterA => "hanunoo letter a",
-            Hanunoo::HanunooLetterI => "hanunoo letter i",
-            Hanunoo::HanunooLetterU => "hanunoo letter u",
-            Hanunoo::HanunooLetterKa => "hanunoo letter ka",
-            Hanunoo::HanunooLetterGa => "hanunoo letter ga",
-            Hanunoo::HanunooLetterNga => "hanunoo letter nga",
-            Hanunoo::HanunooLetterTa => "hanunoo letter ta",
-            Hanunoo::HanunooLetterDa => "hanunoo letter da",
-            Hanunoo::HanunooLetterNa => "hanunoo letter na",
-            Hanunoo::HanunooLetterPa => "hanunoo letter pa",
-            Hanunoo::HanunooLetterBa => "hanunoo letter ba",
-            Hanunoo::HanunooLetterMa => "hanunoo letter ma",
-            Hanunoo::HanunooLetterYa => "hanunoo letter ya",
-            Hanunoo::HanunooLetterRa => "hanunoo letter ra",
-            Hanunoo::HanunooLetterLa => "hanunoo letter la",
-            Hanunoo::HanunooLetterWa => "hanunoo letter wa",
-            Hanunoo::HanunooLetterSa => "hanunoo letter sa",
-            Hanunoo::HanunooLetterHa => "hanunoo letter ha",
-            Hanunoo::HanunooVowelSignI => "hanunoo vowel sign i",
-            Hanunoo::HanunooVowelSignU => "hanunoo vowel sign u",
-            Hanunoo::HanunooSignPamudpod => "hanunoo sign pamudpod",
+            Hanunoo::LetterA => "hanunoo letter a",
+            Hanunoo::LetterI => "hanunoo letter i",
+            Hanunoo::LetterU => "hanunoo letter u",
+            Hanunoo::LetterKa => "hanunoo letter ka",
+            Hanunoo::LetterGa => "hanunoo letter ga",
+            Hanunoo::LetterNga => "hanunoo letter nga",
+            Hanunoo::LetterTa => "hanunoo letter ta",
+            Hanunoo::LetterDa => "hanunoo letter da",
+            Hanunoo::LetterNa => "hanunoo letter na",
+            Hanunoo::LetterPa => "hanunoo letter pa",
+            Hanunoo::LetterBa => "hanunoo letter ba",
+            Hanunoo::LetterMa => "hanunoo letter ma",
+            Hanunoo::LetterYa => "hanunoo letter ya",
+            Hanunoo::LetterRa => "hanunoo letter ra",
+            Hanunoo::LetterLa => "hanunoo letter la",
+            Hanunoo::LetterWa => "hanunoo letter wa",
+            Hanunoo::LetterSa => "hanunoo letter sa",
+            Hanunoo::LetterHa => "hanunoo letter ha",
+            Hanunoo::VowelSignI => "hanunoo vowel sign i",
+            Hanunoo::VowelSignU => "hanunoo vowel sign u",
+            Hanunoo::SignPamudpod => "hanunoo sign pamudpod",
             Hanunoo::PhilippineSinglePunctuation => "philippine single punctuation",
             Hanunoo::PhilippineDoublePunctuation => "philippine double punctuation",
         }

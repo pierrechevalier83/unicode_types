@@ -250,7 +250,7 @@ impl Iterator for KanaExtendedA {
 }
 
 impl KanaExtendedA {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         KanaExtendedA::HentaiganaLetterReDash3
     }

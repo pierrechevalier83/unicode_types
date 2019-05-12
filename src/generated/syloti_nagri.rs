@@ -5,93 +5,93 @@
 /// ꠠ ꠡ ꠢ ꠣ ꠤ ꠥ ꠦ ꠧ ꠨ ꠩ ꠪ ꠫
 pub mod constants {
     /// \u{a800}: 'ꠀ'
-    pub const SYLOTI_NAGRI_LETTER_A: char = 'ꠀ';
+    pub const LETTER_A: char = 'ꠀ';
     /// \u{a801}: 'ꠁ'
-    pub const SYLOTI_NAGRI_LETTER_I: char = 'ꠁ';
+    pub const LETTER_I: char = 'ꠁ';
     /// \u{a802}: 'ꠂ'
-    pub const SYLOTI_NAGRI_SIGN_DVISVARA: char = 'ꠂ';
+    pub const SIGN_DVISVARA: char = 'ꠂ';
     /// \u{a803}: 'ꠃ'
-    pub const SYLOTI_NAGRI_LETTER_U: char = 'ꠃ';
+    pub const LETTER_U: char = 'ꠃ';
     /// \u{a804}: 'ꠄ'
-    pub const SYLOTI_NAGRI_LETTER_E: char = 'ꠄ';
+    pub const LETTER_E: char = 'ꠄ';
     /// \u{a805}: 'ꠅ'
-    pub const SYLOTI_NAGRI_LETTER_O: char = 'ꠅ';
+    pub const LETTER_O: char = 'ꠅ';
     /// \u{a806}: '꠆'
-    pub const SYLOTI_NAGRI_SIGN_HASANTA: char = '꠆';
+    pub const SIGN_HASANTA: char = '꠆';
     /// \u{a807}: 'ꠇ'
-    pub const SYLOTI_NAGRI_LETTER_KO: char = 'ꠇ';
+    pub const LETTER_KO: char = 'ꠇ';
     /// \u{a808}: 'ꠈ'
-    pub const SYLOTI_NAGRI_LETTER_KHO: char = 'ꠈ';
+    pub const LETTER_KHO: char = 'ꠈ';
     /// \u{a809}: 'ꠉ'
-    pub const SYLOTI_NAGRI_LETTER_GO: char = 'ꠉ';
+    pub const LETTER_GO: char = 'ꠉ';
     /// \u{a80a}: 'ꠊ'
-    pub const SYLOTI_NAGRI_LETTER_GHO: char = 'ꠊ';
+    pub const LETTER_GHO: char = 'ꠊ';
     /// \u{a80b}: 'ꠋ'
-    pub const SYLOTI_NAGRI_SIGN_ANUSVARA: char = 'ꠋ';
+    pub const SIGN_ANUSVARA: char = 'ꠋ';
     /// \u{a80c}: 'ꠌ'
-    pub const SYLOTI_NAGRI_LETTER_CO: char = 'ꠌ';
+    pub const LETTER_CO: char = 'ꠌ';
     /// \u{a80d}: 'ꠍ'
-    pub const SYLOTI_NAGRI_LETTER_CHO: char = 'ꠍ';
+    pub const LETTER_CHO: char = 'ꠍ';
     /// \u{a80e}: 'ꠎ'
-    pub const SYLOTI_NAGRI_LETTER_JO: char = 'ꠎ';
+    pub const LETTER_JO: char = 'ꠎ';
     /// \u{a80f}: 'ꠏ'
-    pub const SYLOTI_NAGRI_LETTER_JHO: char = 'ꠏ';
+    pub const LETTER_JHO: char = 'ꠏ';
     /// \u{a810}: 'ꠐ'
-    pub const SYLOTI_NAGRI_LETTER_TTO: char = 'ꠐ';
+    pub const LETTER_TTO: char = 'ꠐ';
     /// \u{a811}: 'ꠑ'
-    pub const SYLOTI_NAGRI_LETTER_TTHO: char = 'ꠑ';
+    pub const LETTER_TTHO: char = 'ꠑ';
     /// \u{a812}: 'ꠒ'
-    pub const SYLOTI_NAGRI_LETTER_DDO: char = 'ꠒ';
+    pub const LETTER_DDO: char = 'ꠒ';
     /// \u{a813}: 'ꠓ'
-    pub const SYLOTI_NAGRI_LETTER_DDHO: char = 'ꠓ';
+    pub const LETTER_DDHO: char = 'ꠓ';
     /// \u{a814}: 'ꠔ'
-    pub const SYLOTI_NAGRI_LETTER_TO: char = 'ꠔ';
+    pub const LETTER_TO: char = 'ꠔ';
     /// \u{a815}: 'ꠕ'
-    pub const SYLOTI_NAGRI_LETTER_THO: char = 'ꠕ';
+    pub const LETTER_THO: char = 'ꠕ';
     /// \u{a816}: 'ꠖ'
-    pub const SYLOTI_NAGRI_LETTER_DO: char = 'ꠖ';
+    pub const LETTER_DO: char = 'ꠖ';
     /// \u{a817}: 'ꠗ'
-    pub const SYLOTI_NAGRI_LETTER_DHO: char = 'ꠗ';
+    pub const LETTER_DHO: char = 'ꠗ';
     /// \u{a818}: 'ꠘ'
-    pub const SYLOTI_NAGRI_LETTER_NO: char = 'ꠘ';
+    pub const LETTER_NO: char = 'ꠘ';
     /// \u{a819}: 'ꠙ'
-    pub const SYLOTI_NAGRI_LETTER_PO: char = 'ꠙ';
+    pub const LETTER_PO: char = 'ꠙ';
     /// \u{a81a}: 'ꠚ'
-    pub const SYLOTI_NAGRI_LETTER_PHO: char = 'ꠚ';
+    pub const LETTER_PHO: char = 'ꠚ';
     /// \u{a81b}: 'ꠛ'
-    pub const SYLOTI_NAGRI_LETTER_BO: char = 'ꠛ';
+    pub const LETTER_BO: char = 'ꠛ';
     /// \u{a81c}: 'ꠜ'
-    pub const SYLOTI_NAGRI_LETTER_BHO: char = 'ꠜ';
+    pub const LETTER_BHO: char = 'ꠜ';
     /// \u{a81d}: 'ꠝ'
-    pub const SYLOTI_NAGRI_LETTER_MO: char = 'ꠝ';
+    pub const LETTER_MO: char = 'ꠝ';
     /// \u{a81e}: 'ꠞ'
-    pub const SYLOTI_NAGRI_LETTER_RO: char = 'ꠞ';
+    pub const LETTER_RO: char = 'ꠞ';
     /// \u{a81f}: 'ꠟ'
-    pub const SYLOTI_NAGRI_LETTER_LO: char = 'ꠟ';
+    pub const LETTER_LO: char = 'ꠟ';
     /// \u{a820}: 'ꠠ'
-    pub const SYLOTI_NAGRI_LETTER_RRO: char = 'ꠠ';
+    pub const LETTER_RRO: char = 'ꠠ';
     /// \u{a821}: 'ꠡ'
-    pub const SYLOTI_NAGRI_LETTER_SO: char = 'ꠡ';
+    pub const LETTER_SO: char = 'ꠡ';
     /// \u{a822}: 'ꠢ'
-    pub const SYLOTI_NAGRI_LETTER_HO: char = 'ꠢ';
+    pub const LETTER_HO: char = 'ꠢ';
     /// \u{a823}: 'ꠣ'
-    pub const SYLOTI_NAGRI_VOWEL_SIGN_A: char = 'ꠣ';
+    pub const VOWEL_SIGN_A: char = 'ꠣ';
     /// \u{a824}: 'ꠤ'
-    pub const SYLOTI_NAGRI_VOWEL_SIGN_I: char = 'ꠤ';
+    pub const VOWEL_SIGN_I: char = 'ꠤ';
     /// \u{a825}: 'ꠥ'
-    pub const SYLOTI_NAGRI_VOWEL_SIGN_U: char = 'ꠥ';
+    pub const VOWEL_SIGN_U: char = 'ꠥ';
     /// \u{a826}: 'ꠦ'
-    pub const SYLOTI_NAGRI_VOWEL_SIGN_E: char = 'ꠦ';
+    pub const VOWEL_SIGN_E: char = 'ꠦ';
     /// \u{a827}: 'ꠧ'
-    pub const SYLOTI_NAGRI_VOWEL_SIGN_OO: char = 'ꠧ';
+    pub const VOWEL_SIGN_OO: char = 'ꠧ';
     /// \u{a828}: '꠨'
-    pub const SYLOTI_NAGRI_POETRY_MARK_DASH_1: char = '꠨';
+    pub const POETRY_MARK_DASH_1: char = '꠨';
     /// \u{a829}: '꠩'
-    pub const SYLOTI_NAGRI_POETRY_MARK_DASH_2: char = '꠩';
+    pub const POETRY_MARK_DASH_2: char = '꠩';
     /// \u{a82a}: '꠪'
-    pub const SYLOTI_NAGRI_POETRY_MARK_DASH_3: char = '꠪';
+    pub const POETRY_MARK_DASH_3: char = '꠪';
     /// \u{a82b}: '꠫'
-    pub const SYLOTI_NAGRI_POETRY_MARK_DASH_4: char = '꠫';
+    pub const POETRY_MARK_DASH_4: char = '꠫';
 }
 
 /// \u{a800} → \u{a82f}\
@@ -102,143 +102,143 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SylotiNagri {
     /// \u{a800}: 'ꠀ'
-    SylotiNagriLetterA,
+    LetterA,
     /// \u{a801}: 'ꠁ'
-    SylotiNagriLetterI,
+    LetterI,
     /// \u{a802}: 'ꠂ'
-    SylotiNagriSignDvisvara,
+    SignDvisvara,
     /// \u{a803}: 'ꠃ'
-    SylotiNagriLetterU,
+    LetterU,
     /// \u{a804}: 'ꠄ'
-    SylotiNagriLetterE,
+    LetterE,
     /// \u{a805}: 'ꠅ'
-    SylotiNagriLetterO,
+    LetterO,
     /// \u{a806}: '꠆'
-    SylotiNagriSignHasanta,
+    SignHasanta,
     /// \u{a807}: 'ꠇ'
-    SylotiNagriLetterKo,
+    LetterKo,
     /// \u{a808}: 'ꠈ'
-    SylotiNagriLetterKho,
+    LetterKho,
     /// \u{a809}: 'ꠉ'
-    SylotiNagriLetterGo,
+    LetterGo,
     /// \u{a80a}: 'ꠊ'
-    SylotiNagriLetterGho,
+    LetterGho,
     /// \u{a80b}: 'ꠋ'
-    SylotiNagriSignAnusvara,
+    SignAnusvara,
     /// \u{a80c}: 'ꠌ'
-    SylotiNagriLetterCo,
+    LetterCo,
     /// \u{a80d}: 'ꠍ'
-    SylotiNagriLetterCho,
+    LetterCho,
     /// \u{a80e}: 'ꠎ'
-    SylotiNagriLetterJo,
+    LetterJo,
     /// \u{a80f}: 'ꠏ'
-    SylotiNagriLetterJho,
+    LetterJho,
     /// \u{a810}: 'ꠐ'
-    SylotiNagriLetterTto,
+    LetterTto,
     /// \u{a811}: 'ꠑ'
-    SylotiNagriLetterTtho,
+    LetterTtho,
     /// \u{a812}: 'ꠒ'
-    SylotiNagriLetterDdo,
+    LetterDdo,
     /// \u{a813}: 'ꠓ'
-    SylotiNagriLetterDdho,
+    LetterDdho,
     /// \u{a814}: 'ꠔ'
-    SylotiNagriLetterTo,
+    LetterTo,
     /// \u{a815}: 'ꠕ'
-    SylotiNagriLetterTho,
+    LetterTho,
     /// \u{a816}: 'ꠖ'
-    SylotiNagriLetterDo,
+    LetterDo,
     /// \u{a817}: 'ꠗ'
-    SylotiNagriLetterDho,
+    LetterDho,
     /// \u{a818}: 'ꠘ'
-    SylotiNagriLetterNo,
+    LetterNo,
     /// \u{a819}: 'ꠙ'
-    SylotiNagriLetterPo,
+    LetterPo,
     /// \u{a81a}: 'ꠚ'
-    SylotiNagriLetterPho,
+    LetterPho,
     /// \u{a81b}: 'ꠛ'
-    SylotiNagriLetterBo,
+    LetterBo,
     /// \u{a81c}: 'ꠜ'
-    SylotiNagriLetterBho,
+    LetterBho,
     /// \u{a81d}: 'ꠝ'
-    SylotiNagriLetterMo,
+    LetterMo,
     /// \u{a81e}: 'ꠞ'
-    SylotiNagriLetterRo,
+    LetterRo,
     /// \u{a81f}: 'ꠟ'
-    SylotiNagriLetterLo,
+    LetterLo,
     /// \u{a820}: 'ꠠ'
-    SylotiNagriLetterRro,
+    LetterRro,
     /// \u{a821}: 'ꠡ'
-    SylotiNagriLetterSo,
+    LetterSo,
     /// \u{a822}: 'ꠢ'
-    SylotiNagriLetterHo,
+    LetterHo,
     /// \u{a823}: 'ꠣ'
-    SylotiNagriVowelSignA,
+    VowelSignA,
     /// \u{a824}: 'ꠤ'
-    SylotiNagriVowelSignI,
+    VowelSignI,
     /// \u{a825}: 'ꠥ'
-    SylotiNagriVowelSignU,
+    VowelSignU,
     /// \u{a826}: 'ꠦ'
-    SylotiNagriVowelSignE,
+    VowelSignE,
     /// \u{a827}: 'ꠧ'
-    SylotiNagriVowelSignOo,
+    VowelSignOo,
     /// \u{a828}: '꠨'
-    SylotiNagriPoetryMarkDash1,
+    PoetryMarkDash1,
     /// \u{a829}: '꠩'
-    SylotiNagriPoetryMarkDash2,
+    PoetryMarkDash2,
     /// \u{a82a}: '꠪'
-    SylotiNagriPoetryMarkDash3,
+    PoetryMarkDash3,
     /// \u{a82b}: '꠫'
-    SylotiNagriPoetryMarkDash4,
+    PoetryMarkDash4,
 }
 
 impl Into<char> for SylotiNagri {
     fn into(self) -> char {
         use constants::*;
         match self {
-            SylotiNagri::SylotiNagriLetterA => SYLOTI_NAGRI_LETTER_A,
-            SylotiNagri::SylotiNagriLetterI => SYLOTI_NAGRI_LETTER_I,
-            SylotiNagri::SylotiNagriSignDvisvara => SYLOTI_NAGRI_SIGN_DVISVARA,
-            SylotiNagri::SylotiNagriLetterU => SYLOTI_NAGRI_LETTER_U,
-            SylotiNagri::SylotiNagriLetterE => SYLOTI_NAGRI_LETTER_E,
-            SylotiNagri::SylotiNagriLetterO => SYLOTI_NAGRI_LETTER_O,
-            SylotiNagri::SylotiNagriSignHasanta => SYLOTI_NAGRI_SIGN_HASANTA,
-            SylotiNagri::SylotiNagriLetterKo => SYLOTI_NAGRI_LETTER_KO,
-            SylotiNagri::SylotiNagriLetterKho => SYLOTI_NAGRI_LETTER_KHO,
-            SylotiNagri::SylotiNagriLetterGo => SYLOTI_NAGRI_LETTER_GO,
-            SylotiNagri::SylotiNagriLetterGho => SYLOTI_NAGRI_LETTER_GHO,
-            SylotiNagri::SylotiNagriSignAnusvara => SYLOTI_NAGRI_SIGN_ANUSVARA,
-            SylotiNagri::SylotiNagriLetterCo => SYLOTI_NAGRI_LETTER_CO,
-            SylotiNagri::SylotiNagriLetterCho => SYLOTI_NAGRI_LETTER_CHO,
-            SylotiNagri::SylotiNagriLetterJo => SYLOTI_NAGRI_LETTER_JO,
-            SylotiNagri::SylotiNagriLetterJho => SYLOTI_NAGRI_LETTER_JHO,
-            SylotiNagri::SylotiNagriLetterTto => SYLOTI_NAGRI_LETTER_TTO,
-            SylotiNagri::SylotiNagriLetterTtho => SYLOTI_NAGRI_LETTER_TTHO,
-            SylotiNagri::SylotiNagriLetterDdo => SYLOTI_NAGRI_LETTER_DDO,
-            SylotiNagri::SylotiNagriLetterDdho => SYLOTI_NAGRI_LETTER_DDHO,
-            SylotiNagri::SylotiNagriLetterTo => SYLOTI_NAGRI_LETTER_TO,
-            SylotiNagri::SylotiNagriLetterTho => SYLOTI_NAGRI_LETTER_THO,
-            SylotiNagri::SylotiNagriLetterDo => SYLOTI_NAGRI_LETTER_DO,
-            SylotiNagri::SylotiNagriLetterDho => SYLOTI_NAGRI_LETTER_DHO,
-            SylotiNagri::SylotiNagriLetterNo => SYLOTI_NAGRI_LETTER_NO,
-            SylotiNagri::SylotiNagriLetterPo => SYLOTI_NAGRI_LETTER_PO,
-            SylotiNagri::SylotiNagriLetterPho => SYLOTI_NAGRI_LETTER_PHO,
-            SylotiNagri::SylotiNagriLetterBo => SYLOTI_NAGRI_LETTER_BO,
-            SylotiNagri::SylotiNagriLetterBho => SYLOTI_NAGRI_LETTER_BHO,
-            SylotiNagri::SylotiNagriLetterMo => SYLOTI_NAGRI_LETTER_MO,
-            SylotiNagri::SylotiNagriLetterRo => SYLOTI_NAGRI_LETTER_RO,
-            SylotiNagri::SylotiNagriLetterLo => SYLOTI_NAGRI_LETTER_LO,
-            SylotiNagri::SylotiNagriLetterRro => SYLOTI_NAGRI_LETTER_RRO,
-            SylotiNagri::SylotiNagriLetterSo => SYLOTI_NAGRI_LETTER_SO,
-            SylotiNagri::SylotiNagriLetterHo => SYLOTI_NAGRI_LETTER_HO,
-            SylotiNagri::SylotiNagriVowelSignA => SYLOTI_NAGRI_VOWEL_SIGN_A,
-            SylotiNagri::SylotiNagriVowelSignI => SYLOTI_NAGRI_VOWEL_SIGN_I,
-            SylotiNagri::SylotiNagriVowelSignU => SYLOTI_NAGRI_VOWEL_SIGN_U,
-            SylotiNagri::SylotiNagriVowelSignE => SYLOTI_NAGRI_VOWEL_SIGN_E,
-            SylotiNagri::SylotiNagriVowelSignOo => SYLOTI_NAGRI_VOWEL_SIGN_OO,
-            SylotiNagri::SylotiNagriPoetryMarkDash1 => SYLOTI_NAGRI_POETRY_MARK_DASH_1,
-            SylotiNagri::SylotiNagriPoetryMarkDash2 => SYLOTI_NAGRI_POETRY_MARK_DASH_2,
-            SylotiNagri::SylotiNagriPoetryMarkDash3 => SYLOTI_NAGRI_POETRY_MARK_DASH_3,
-            SylotiNagri::SylotiNagriPoetryMarkDash4 => SYLOTI_NAGRI_POETRY_MARK_DASH_4,
+            SylotiNagri::LetterA => LETTER_A,
+            SylotiNagri::LetterI => LETTER_I,
+            SylotiNagri::SignDvisvara => SIGN_DVISVARA,
+            SylotiNagri::LetterU => LETTER_U,
+            SylotiNagri::LetterE => LETTER_E,
+            SylotiNagri::LetterO => LETTER_O,
+            SylotiNagri::SignHasanta => SIGN_HASANTA,
+            SylotiNagri::LetterKo => LETTER_KO,
+            SylotiNagri::LetterKho => LETTER_KHO,
+            SylotiNagri::LetterGo => LETTER_GO,
+            SylotiNagri::LetterGho => LETTER_GHO,
+            SylotiNagri::SignAnusvara => SIGN_ANUSVARA,
+            SylotiNagri::LetterCo => LETTER_CO,
+            SylotiNagri::LetterCho => LETTER_CHO,
+            SylotiNagri::LetterJo => LETTER_JO,
+            SylotiNagri::LetterJho => LETTER_JHO,
+            SylotiNagri::LetterTto => LETTER_TTO,
+            SylotiNagri::LetterTtho => LETTER_TTHO,
+            SylotiNagri::LetterDdo => LETTER_DDO,
+            SylotiNagri::LetterDdho => LETTER_DDHO,
+            SylotiNagri::LetterTo => LETTER_TO,
+            SylotiNagri::LetterTho => LETTER_THO,
+            SylotiNagri::LetterDo => LETTER_DO,
+            SylotiNagri::LetterDho => LETTER_DHO,
+            SylotiNagri::LetterNo => LETTER_NO,
+            SylotiNagri::LetterPo => LETTER_PO,
+            SylotiNagri::LetterPho => LETTER_PHO,
+            SylotiNagri::LetterBo => LETTER_BO,
+            SylotiNagri::LetterBho => LETTER_BHO,
+            SylotiNagri::LetterMo => LETTER_MO,
+            SylotiNagri::LetterRo => LETTER_RO,
+            SylotiNagri::LetterLo => LETTER_LO,
+            SylotiNagri::LetterRro => LETTER_RRO,
+            SylotiNagri::LetterSo => LETTER_SO,
+            SylotiNagri::LetterHo => LETTER_HO,
+            SylotiNagri::VowelSignA => VOWEL_SIGN_A,
+            SylotiNagri::VowelSignI => VOWEL_SIGN_I,
+            SylotiNagri::VowelSignU => VOWEL_SIGN_U,
+            SylotiNagri::VowelSignE => VOWEL_SIGN_E,
+            SylotiNagri::VowelSignOo => VOWEL_SIGN_OO,
+            SylotiNagri::PoetryMarkDash1 => POETRY_MARK_DASH_1,
+            SylotiNagri::PoetryMarkDash2 => POETRY_MARK_DASH_2,
+            SylotiNagri::PoetryMarkDash3 => POETRY_MARK_DASH_3,
+            SylotiNagri::PoetryMarkDash4 => POETRY_MARK_DASH_4,
         }
     }
 }
@@ -248,50 +248,50 @@ impl std::convert::TryFrom<char> for SylotiNagri {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            SYLOTI_NAGRI_LETTER_A => Ok(SylotiNagri::SylotiNagriLetterA),
-            SYLOTI_NAGRI_LETTER_I => Ok(SylotiNagri::SylotiNagriLetterI),
-            SYLOTI_NAGRI_SIGN_DVISVARA => Ok(SylotiNagri::SylotiNagriSignDvisvara),
-            SYLOTI_NAGRI_LETTER_U => Ok(SylotiNagri::SylotiNagriLetterU),
-            SYLOTI_NAGRI_LETTER_E => Ok(SylotiNagri::SylotiNagriLetterE),
-            SYLOTI_NAGRI_LETTER_O => Ok(SylotiNagri::SylotiNagriLetterO),
-            SYLOTI_NAGRI_SIGN_HASANTA => Ok(SylotiNagri::SylotiNagriSignHasanta),
-            SYLOTI_NAGRI_LETTER_KO => Ok(SylotiNagri::SylotiNagriLetterKo),
-            SYLOTI_NAGRI_LETTER_KHO => Ok(SylotiNagri::SylotiNagriLetterKho),
-            SYLOTI_NAGRI_LETTER_GO => Ok(SylotiNagri::SylotiNagriLetterGo),
-            SYLOTI_NAGRI_LETTER_GHO => Ok(SylotiNagri::SylotiNagriLetterGho),
-            SYLOTI_NAGRI_SIGN_ANUSVARA => Ok(SylotiNagri::SylotiNagriSignAnusvara),
-            SYLOTI_NAGRI_LETTER_CO => Ok(SylotiNagri::SylotiNagriLetterCo),
-            SYLOTI_NAGRI_LETTER_CHO => Ok(SylotiNagri::SylotiNagriLetterCho),
-            SYLOTI_NAGRI_LETTER_JO => Ok(SylotiNagri::SylotiNagriLetterJo),
-            SYLOTI_NAGRI_LETTER_JHO => Ok(SylotiNagri::SylotiNagriLetterJho),
-            SYLOTI_NAGRI_LETTER_TTO => Ok(SylotiNagri::SylotiNagriLetterTto),
-            SYLOTI_NAGRI_LETTER_TTHO => Ok(SylotiNagri::SylotiNagriLetterTtho),
-            SYLOTI_NAGRI_LETTER_DDO => Ok(SylotiNagri::SylotiNagriLetterDdo),
-            SYLOTI_NAGRI_LETTER_DDHO => Ok(SylotiNagri::SylotiNagriLetterDdho),
-            SYLOTI_NAGRI_LETTER_TO => Ok(SylotiNagri::SylotiNagriLetterTo),
-            SYLOTI_NAGRI_LETTER_THO => Ok(SylotiNagri::SylotiNagriLetterTho),
-            SYLOTI_NAGRI_LETTER_DO => Ok(SylotiNagri::SylotiNagriLetterDo),
-            SYLOTI_NAGRI_LETTER_DHO => Ok(SylotiNagri::SylotiNagriLetterDho),
-            SYLOTI_NAGRI_LETTER_NO => Ok(SylotiNagri::SylotiNagriLetterNo),
-            SYLOTI_NAGRI_LETTER_PO => Ok(SylotiNagri::SylotiNagriLetterPo),
-            SYLOTI_NAGRI_LETTER_PHO => Ok(SylotiNagri::SylotiNagriLetterPho),
-            SYLOTI_NAGRI_LETTER_BO => Ok(SylotiNagri::SylotiNagriLetterBo),
-            SYLOTI_NAGRI_LETTER_BHO => Ok(SylotiNagri::SylotiNagriLetterBho),
-            SYLOTI_NAGRI_LETTER_MO => Ok(SylotiNagri::SylotiNagriLetterMo),
-            SYLOTI_NAGRI_LETTER_RO => Ok(SylotiNagri::SylotiNagriLetterRo),
-            SYLOTI_NAGRI_LETTER_LO => Ok(SylotiNagri::SylotiNagriLetterLo),
-            SYLOTI_NAGRI_LETTER_RRO => Ok(SylotiNagri::SylotiNagriLetterRro),
-            SYLOTI_NAGRI_LETTER_SO => Ok(SylotiNagri::SylotiNagriLetterSo),
-            SYLOTI_NAGRI_LETTER_HO => Ok(SylotiNagri::SylotiNagriLetterHo),
-            SYLOTI_NAGRI_VOWEL_SIGN_A => Ok(SylotiNagri::SylotiNagriVowelSignA),
-            SYLOTI_NAGRI_VOWEL_SIGN_I => Ok(SylotiNagri::SylotiNagriVowelSignI),
-            SYLOTI_NAGRI_VOWEL_SIGN_U => Ok(SylotiNagri::SylotiNagriVowelSignU),
-            SYLOTI_NAGRI_VOWEL_SIGN_E => Ok(SylotiNagri::SylotiNagriVowelSignE),
-            SYLOTI_NAGRI_VOWEL_SIGN_OO => Ok(SylotiNagri::SylotiNagriVowelSignOo),
-            SYLOTI_NAGRI_POETRY_MARK_DASH_1 => Ok(SylotiNagri::SylotiNagriPoetryMarkDash1),
-            SYLOTI_NAGRI_POETRY_MARK_DASH_2 => Ok(SylotiNagri::SylotiNagriPoetryMarkDash2),
-            SYLOTI_NAGRI_POETRY_MARK_DASH_3 => Ok(SylotiNagri::SylotiNagriPoetryMarkDash3),
-            SYLOTI_NAGRI_POETRY_MARK_DASH_4 => Ok(SylotiNagri::SylotiNagriPoetryMarkDash4),
+            LETTER_A => Ok(SylotiNagri::LetterA),
+            LETTER_I => Ok(SylotiNagri::LetterI),
+            SIGN_DVISVARA => Ok(SylotiNagri::SignDvisvara),
+            LETTER_U => Ok(SylotiNagri::LetterU),
+            LETTER_E => Ok(SylotiNagri::LetterE),
+            LETTER_O => Ok(SylotiNagri::LetterO),
+            SIGN_HASANTA => Ok(SylotiNagri::SignHasanta),
+            LETTER_KO => Ok(SylotiNagri::LetterKo),
+            LETTER_KHO => Ok(SylotiNagri::LetterKho),
+            LETTER_GO => Ok(SylotiNagri::LetterGo),
+            LETTER_GHO => Ok(SylotiNagri::LetterGho),
+            SIGN_ANUSVARA => Ok(SylotiNagri::SignAnusvara),
+            LETTER_CO => Ok(SylotiNagri::LetterCo),
+            LETTER_CHO => Ok(SylotiNagri::LetterCho),
+            LETTER_JO => Ok(SylotiNagri::LetterJo),
+            LETTER_JHO => Ok(SylotiNagri::LetterJho),
+            LETTER_TTO => Ok(SylotiNagri::LetterTto),
+            LETTER_TTHO => Ok(SylotiNagri::LetterTtho),
+            LETTER_DDO => Ok(SylotiNagri::LetterDdo),
+            LETTER_DDHO => Ok(SylotiNagri::LetterDdho),
+            LETTER_TO => Ok(SylotiNagri::LetterTo),
+            LETTER_THO => Ok(SylotiNagri::LetterTho),
+            LETTER_DO => Ok(SylotiNagri::LetterDo),
+            LETTER_DHO => Ok(SylotiNagri::LetterDho),
+            LETTER_NO => Ok(SylotiNagri::LetterNo),
+            LETTER_PO => Ok(SylotiNagri::LetterPo),
+            LETTER_PHO => Ok(SylotiNagri::LetterPho),
+            LETTER_BO => Ok(SylotiNagri::LetterBo),
+            LETTER_BHO => Ok(SylotiNagri::LetterBho),
+            LETTER_MO => Ok(SylotiNagri::LetterMo),
+            LETTER_RO => Ok(SylotiNagri::LetterRo),
+            LETTER_LO => Ok(SylotiNagri::LetterLo),
+            LETTER_RRO => Ok(SylotiNagri::LetterRro),
+            LETTER_SO => Ok(SylotiNagri::LetterSo),
+            LETTER_HO => Ok(SylotiNagri::LetterHo),
+            VOWEL_SIGN_A => Ok(SylotiNagri::VowelSignA),
+            VOWEL_SIGN_I => Ok(SylotiNagri::VowelSignI),
+            VOWEL_SIGN_U => Ok(SylotiNagri::VowelSignU),
+            VOWEL_SIGN_E => Ok(SylotiNagri::VowelSignE),
+            VOWEL_SIGN_OO => Ok(SylotiNagri::VowelSignOo),
+            POETRY_MARK_DASH_1 => Ok(SylotiNagri::PoetryMarkDash1),
+            POETRY_MARK_DASH_2 => Ok(SylotiNagri::PoetryMarkDash2),
+            POETRY_MARK_DASH_3 => Ok(SylotiNagri::PoetryMarkDash3),
+            POETRY_MARK_DASH_4 => Ok(SylotiNagri::PoetryMarkDash4),
             _ => Err(()),
         }
     }
@@ -330,58 +330,58 @@ impl Iterator for SylotiNagri {
 }
 
 impl SylotiNagri {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        SylotiNagri::SylotiNagriLetterA
+        SylotiNagri::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            SylotiNagri::SylotiNagriLetterA => "syloti nagri letter a",
-            SylotiNagri::SylotiNagriLetterI => "syloti nagri letter i",
-            SylotiNagri::SylotiNagriSignDvisvara => "syloti nagri sign dvisvara",
-            SylotiNagri::SylotiNagriLetterU => "syloti nagri letter u",
-            SylotiNagri::SylotiNagriLetterE => "syloti nagri letter e",
-            SylotiNagri::SylotiNagriLetterO => "syloti nagri letter o",
-            SylotiNagri::SylotiNagriSignHasanta => "syloti nagri sign hasanta",
-            SylotiNagri::SylotiNagriLetterKo => "syloti nagri letter ko",
-            SylotiNagri::SylotiNagriLetterKho => "syloti nagri letter kho",
-            SylotiNagri::SylotiNagriLetterGo => "syloti nagri letter go",
-            SylotiNagri::SylotiNagriLetterGho => "syloti nagri letter gho",
-            SylotiNagri::SylotiNagriSignAnusvara => "syloti nagri sign anusvara",
-            SylotiNagri::SylotiNagriLetterCo => "syloti nagri letter co",
-            SylotiNagri::SylotiNagriLetterCho => "syloti nagri letter cho",
-            SylotiNagri::SylotiNagriLetterJo => "syloti nagri letter jo",
-            SylotiNagri::SylotiNagriLetterJho => "syloti nagri letter jho",
-            SylotiNagri::SylotiNagriLetterTto => "syloti nagri letter tto",
-            SylotiNagri::SylotiNagriLetterTtho => "syloti nagri letter ttho",
-            SylotiNagri::SylotiNagriLetterDdo => "syloti nagri letter ddo",
-            SylotiNagri::SylotiNagriLetterDdho => "syloti nagri letter ddho",
-            SylotiNagri::SylotiNagriLetterTo => "syloti nagri letter to",
-            SylotiNagri::SylotiNagriLetterTho => "syloti nagri letter tho",
-            SylotiNagri::SylotiNagriLetterDo => "syloti nagri letter do",
-            SylotiNagri::SylotiNagriLetterDho => "syloti nagri letter dho",
-            SylotiNagri::SylotiNagriLetterNo => "syloti nagri letter no",
-            SylotiNagri::SylotiNagriLetterPo => "syloti nagri letter po",
-            SylotiNagri::SylotiNagriLetterPho => "syloti nagri letter pho",
-            SylotiNagri::SylotiNagriLetterBo => "syloti nagri letter bo",
-            SylotiNagri::SylotiNagriLetterBho => "syloti nagri letter bho",
-            SylotiNagri::SylotiNagriLetterMo => "syloti nagri letter mo",
-            SylotiNagri::SylotiNagriLetterRo => "syloti nagri letter ro",
-            SylotiNagri::SylotiNagriLetterLo => "syloti nagri letter lo",
-            SylotiNagri::SylotiNagriLetterRro => "syloti nagri letter rro",
-            SylotiNagri::SylotiNagriLetterSo => "syloti nagri letter so",
-            SylotiNagri::SylotiNagriLetterHo => "syloti nagri letter ho",
-            SylotiNagri::SylotiNagriVowelSignA => "syloti nagri vowel sign a",
-            SylotiNagri::SylotiNagriVowelSignI => "syloti nagri vowel sign i",
-            SylotiNagri::SylotiNagriVowelSignU => "syloti nagri vowel sign u",
-            SylotiNagri::SylotiNagriVowelSignE => "syloti nagri vowel sign e",
-            SylotiNagri::SylotiNagriVowelSignOo => "syloti nagri vowel sign oo",
-            SylotiNagri::SylotiNagriPoetryMarkDash1 => "syloti nagri poetry mark-1",
-            SylotiNagri::SylotiNagriPoetryMarkDash2 => "syloti nagri poetry mark-2",
-            SylotiNagri::SylotiNagriPoetryMarkDash3 => "syloti nagri poetry mark-3",
-            SylotiNagri::SylotiNagriPoetryMarkDash4 => "syloti nagri poetry mark-4",
+            SylotiNagri::LetterA => "syloti nagri letter a",
+            SylotiNagri::LetterI => "syloti nagri letter i",
+            SylotiNagri::SignDvisvara => "syloti nagri sign dvisvara",
+            SylotiNagri::LetterU => "syloti nagri letter u",
+            SylotiNagri::LetterE => "syloti nagri letter e",
+            SylotiNagri::LetterO => "syloti nagri letter o",
+            SylotiNagri::SignHasanta => "syloti nagri sign hasanta",
+            SylotiNagri::LetterKo => "syloti nagri letter ko",
+            SylotiNagri::LetterKho => "syloti nagri letter kho",
+            SylotiNagri::LetterGo => "syloti nagri letter go",
+            SylotiNagri::LetterGho => "syloti nagri letter gho",
+            SylotiNagri::SignAnusvara => "syloti nagri sign anusvara",
+            SylotiNagri::LetterCo => "syloti nagri letter co",
+            SylotiNagri::LetterCho => "syloti nagri letter cho",
+            SylotiNagri::LetterJo => "syloti nagri letter jo",
+            SylotiNagri::LetterJho => "syloti nagri letter jho",
+            SylotiNagri::LetterTto => "syloti nagri letter tto",
+            SylotiNagri::LetterTtho => "syloti nagri letter ttho",
+            SylotiNagri::LetterDdo => "syloti nagri letter ddo",
+            SylotiNagri::LetterDdho => "syloti nagri letter ddho",
+            SylotiNagri::LetterTo => "syloti nagri letter to",
+            SylotiNagri::LetterTho => "syloti nagri letter tho",
+            SylotiNagri::LetterDo => "syloti nagri letter do",
+            SylotiNagri::LetterDho => "syloti nagri letter dho",
+            SylotiNagri::LetterNo => "syloti nagri letter no",
+            SylotiNagri::LetterPo => "syloti nagri letter po",
+            SylotiNagri::LetterPho => "syloti nagri letter pho",
+            SylotiNagri::LetterBo => "syloti nagri letter bo",
+            SylotiNagri::LetterBho => "syloti nagri letter bho",
+            SylotiNagri::LetterMo => "syloti nagri letter mo",
+            SylotiNagri::LetterRo => "syloti nagri letter ro",
+            SylotiNagri::LetterLo => "syloti nagri letter lo",
+            SylotiNagri::LetterRro => "syloti nagri letter rro",
+            SylotiNagri::LetterSo => "syloti nagri letter so",
+            SylotiNagri::LetterHo => "syloti nagri letter ho",
+            SylotiNagri::VowelSignA => "syloti nagri vowel sign a",
+            SylotiNagri::VowelSignI => "syloti nagri vowel sign i",
+            SylotiNagri::VowelSignU => "syloti nagri vowel sign u",
+            SylotiNagri::VowelSignE => "syloti nagri vowel sign e",
+            SylotiNagri::VowelSignOo => "syloti nagri vowel sign oo",
+            SylotiNagri::PoetryMarkDash1 => "syloti nagri poetry mark-1",
+            SylotiNagri::PoetryMarkDash2 => "syloti nagri poetry mark-2",
+            SylotiNagri::PoetryMarkDash3 => "syloti nagri poetry mark-3",
+            SylotiNagri::PoetryMarkDash4 => "syloti nagri poetry mark-4",
         }
     }
 }

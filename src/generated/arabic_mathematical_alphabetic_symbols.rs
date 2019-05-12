@@ -936,7 +936,7 @@ impl Iterator for ArabicMathematicalAlphabeticSymbols {
 }
 
 impl ArabicMathematicalAlphabeticSymbols {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         ArabicMathematicalAlphabeticSymbols::ArabicMathematicalAlef
     }

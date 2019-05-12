@@ -10,247 +10,247 @@
 /// ᭴ ᭵ ᭶ ᭷ ᭸ ᭹ ᭺ ᭻ ᭼
 pub mod constants {
     /// \u{1b00}: 'ᬀ'
-    pub const BALINESE_SIGN_ULU_RICEM: char = 'ᬀ';
+    pub const SIGN_ULU_RICEM: char = 'ᬀ';
     /// \u{1b01}: 'ᬁ'
-    pub const BALINESE_SIGN_ULU_CANDRA: char = 'ᬁ';
+    pub const SIGN_ULU_CANDRA: char = 'ᬁ';
     /// \u{1b02}: 'ᬂ'
-    pub const BALINESE_SIGN_CECEK: char = 'ᬂ';
+    pub const SIGN_CECEK: char = 'ᬂ';
     /// \u{1b03}: 'ᬃ'
-    pub const BALINESE_SIGN_SURANG: char = 'ᬃ';
+    pub const SIGN_SURANG: char = 'ᬃ';
     /// \u{1b04}: 'ᬄ'
-    pub const BALINESE_SIGN_BISAH: char = 'ᬄ';
+    pub const SIGN_BISAH: char = 'ᬄ';
     /// \u{1b05}: 'ᬅ'
-    pub const BALINESE_LETTER_AKARA: char = 'ᬅ';
+    pub const LETTER_AKARA: char = 'ᬅ';
     /// \u{1b06}: 'ᬆ'
-    pub const BALINESE_LETTER_AKARA_TEDUNG: char = 'ᬆ';
+    pub const LETTER_AKARA_TEDUNG: char = 'ᬆ';
     /// \u{1b07}: 'ᬇ'
-    pub const BALINESE_LETTER_IKARA: char = 'ᬇ';
+    pub const LETTER_IKARA: char = 'ᬇ';
     /// \u{1b08}: 'ᬈ'
-    pub const BALINESE_LETTER_IKARA_TEDUNG: char = 'ᬈ';
+    pub const LETTER_IKARA_TEDUNG: char = 'ᬈ';
     /// \u{1b09}: 'ᬉ'
-    pub const BALINESE_LETTER_UKARA: char = 'ᬉ';
+    pub const LETTER_UKARA: char = 'ᬉ';
     /// \u{1b0a}: 'ᬊ'
-    pub const BALINESE_LETTER_UKARA_TEDUNG: char = 'ᬊ';
+    pub const LETTER_UKARA_TEDUNG: char = 'ᬊ';
     /// \u{1b0b}: 'ᬋ'
-    pub const BALINESE_LETTER_RA_REPA: char = 'ᬋ';
+    pub const LETTER_RA_REPA: char = 'ᬋ';
     /// \u{1b0c}: 'ᬌ'
-    pub const BALINESE_LETTER_RA_REPA_TEDUNG: char = 'ᬌ';
+    pub const LETTER_RA_REPA_TEDUNG: char = 'ᬌ';
     /// \u{1b0d}: 'ᬍ'
-    pub const BALINESE_LETTER_LA_LENGA: char = 'ᬍ';
+    pub const LETTER_LA_LENGA: char = 'ᬍ';
     /// \u{1b0e}: 'ᬎ'
-    pub const BALINESE_LETTER_LA_LENGA_TEDUNG: char = 'ᬎ';
+    pub const LETTER_LA_LENGA_TEDUNG: char = 'ᬎ';
     /// \u{1b0f}: 'ᬏ'
-    pub const BALINESE_LETTER_EKARA: char = 'ᬏ';
+    pub const LETTER_EKARA: char = 'ᬏ';
     /// \u{1b10}: 'ᬐ'
-    pub const BALINESE_LETTER_AIKARA: char = 'ᬐ';
+    pub const LETTER_AIKARA: char = 'ᬐ';
     /// \u{1b11}: 'ᬑ'
-    pub const BALINESE_LETTER_OKARA: char = 'ᬑ';
+    pub const LETTER_OKARA: char = 'ᬑ';
     /// \u{1b12}: 'ᬒ'
-    pub const BALINESE_LETTER_OKARA_TEDUNG: char = 'ᬒ';
+    pub const LETTER_OKARA_TEDUNG: char = 'ᬒ';
     /// \u{1b13}: 'ᬓ'
-    pub const BALINESE_LETTER_KA: char = 'ᬓ';
+    pub const LETTER_KA: char = 'ᬓ';
     /// \u{1b14}: 'ᬔ'
-    pub const BALINESE_LETTER_KA_MAHAPRANA: char = 'ᬔ';
+    pub const LETTER_KA_MAHAPRANA: char = 'ᬔ';
     /// \u{1b15}: 'ᬕ'
-    pub const BALINESE_LETTER_GA: char = 'ᬕ';
+    pub const LETTER_GA: char = 'ᬕ';
     /// \u{1b16}: 'ᬖ'
-    pub const BALINESE_LETTER_GA_GORA: char = 'ᬖ';
+    pub const LETTER_GA_GORA: char = 'ᬖ';
     /// \u{1b17}: 'ᬗ'
-    pub const BALINESE_LETTER_NGA: char = 'ᬗ';
+    pub const LETTER_NGA: char = 'ᬗ';
     /// \u{1b18}: 'ᬘ'
-    pub const BALINESE_LETTER_CA: char = 'ᬘ';
+    pub const LETTER_CA: char = 'ᬘ';
     /// \u{1b19}: 'ᬙ'
-    pub const BALINESE_LETTER_CA_LACA: char = 'ᬙ';
+    pub const LETTER_CA_LACA: char = 'ᬙ';
     /// \u{1b1a}: 'ᬚ'
-    pub const BALINESE_LETTER_JA: char = 'ᬚ';
+    pub const LETTER_JA: char = 'ᬚ';
     /// \u{1b1b}: 'ᬛ'
-    pub const BALINESE_LETTER_JA_JERA: char = 'ᬛ';
+    pub const LETTER_JA_JERA: char = 'ᬛ';
     /// \u{1b1c}: 'ᬜ'
-    pub const BALINESE_LETTER_NYA: char = 'ᬜ';
+    pub const LETTER_NYA: char = 'ᬜ';
     /// \u{1b1d}: 'ᬝ'
-    pub const BALINESE_LETTER_TA_LATIK: char = 'ᬝ';
+    pub const LETTER_TA_LATIK: char = 'ᬝ';
     /// \u{1b1e}: 'ᬞ'
-    pub const BALINESE_LETTER_TA_MURDA_MAHAPRANA: char = 'ᬞ';
+    pub const LETTER_TA_MURDA_MAHAPRANA: char = 'ᬞ';
     /// \u{1b1f}: 'ᬟ'
-    pub const BALINESE_LETTER_DA_MURDA_ALPAPRANA: char = 'ᬟ';
+    pub const LETTER_DA_MURDA_ALPAPRANA: char = 'ᬟ';
     /// \u{1b20}: 'ᬠ'
-    pub const BALINESE_LETTER_DA_MURDA_MAHAPRANA: char = 'ᬠ';
+    pub const LETTER_DA_MURDA_MAHAPRANA: char = 'ᬠ';
     /// \u{1b21}: 'ᬡ'
-    pub const BALINESE_LETTER_NA_RAMBAT: char = 'ᬡ';
+    pub const LETTER_NA_RAMBAT: char = 'ᬡ';
     /// \u{1b22}: 'ᬢ'
-    pub const BALINESE_LETTER_TA: char = 'ᬢ';
+    pub const LETTER_TA: char = 'ᬢ';
     /// \u{1b23}: 'ᬣ'
-    pub const BALINESE_LETTER_TA_TAWA: char = 'ᬣ';
+    pub const LETTER_TA_TAWA: char = 'ᬣ';
     /// \u{1b24}: 'ᬤ'
-    pub const BALINESE_LETTER_DA: char = 'ᬤ';
+    pub const LETTER_DA: char = 'ᬤ';
     /// \u{1b25}: 'ᬥ'
-    pub const BALINESE_LETTER_DA_MADU: char = 'ᬥ';
+    pub const LETTER_DA_MADU: char = 'ᬥ';
     /// \u{1b26}: 'ᬦ'
-    pub const BALINESE_LETTER_NA: char = 'ᬦ';
+    pub const LETTER_NA: char = 'ᬦ';
     /// \u{1b27}: 'ᬧ'
-    pub const BALINESE_LETTER_PA: char = 'ᬧ';
+    pub const LETTER_PA: char = 'ᬧ';
     /// \u{1b28}: 'ᬨ'
-    pub const BALINESE_LETTER_PA_KAPAL: char = 'ᬨ';
+    pub const LETTER_PA_KAPAL: char = 'ᬨ';
     /// \u{1b29}: 'ᬩ'
-    pub const BALINESE_LETTER_BA: char = 'ᬩ';
+    pub const LETTER_BA: char = 'ᬩ';
     /// \u{1b2a}: 'ᬪ'
-    pub const BALINESE_LETTER_BA_KEMBANG: char = 'ᬪ';
+    pub const LETTER_BA_KEMBANG: char = 'ᬪ';
     /// \u{1b2b}: 'ᬫ'
-    pub const BALINESE_LETTER_MA: char = 'ᬫ';
+    pub const LETTER_MA: char = 'ᬫ';
     /// \u{1b2c}: 'ᬬ'
-    pub const BALINESE_LETTER_YA: char = 'ᬬ';
+    pub const LETTER_YA: char = 'ᬬ';
     /// \u{1b2d}: 'ᬭ'
-    pub const BALINESE_LETTER_RA: char = 'ᬭ';
+    pub const LETTER_RA: char = 'ᬭ';
     /// \u{1b2e}: 'ᬮ'
-    pub const BALINESE_LETTER_LA: char = 'ᬮ';
+    pub const LETTER_LA: char = 'ᬮ';
     /// \u{1b2f}: 'ᬯ'
-    pub const BALINESE_LETTER_WA: char = 'ᬯ';
+    pub const LETTER_WA: char = 'ᬯ';
     /// \u{1b30}: 'ᬰ'
-    pub const BALINESE_LETTER_SA_SAGA: char = 'ᬰ';
+    pub const LETTER_SA_SAGA: char = 'ᬰ';
     /// \u{1b31}: 'ᬱ'
-    pub const BALINESE_LETTER_SA_SAPA: char = 'ᬱ';
+    pub const LETTER_SA_SAPA: char = 'ᬱ';
     /// \u{1b32}: 'ᬲ'
-    pub const BALINESE_LETTER_SA: char = 'ᬲ';
+    pub const LETTER_SA: char = 'ᬲ';
     /// \u{1b33}: 'ᬳ'
-    pub const BALINESE_LETTER_HA: char = 'ᬳ';
+    pub const LETTER_HA: char = 'ᬳ';
     /// \u{1b34}: '᬴'
-    pub const BALINESE_SIGN_REREKAN: char = '᬴';
+    pub const SIGN_REREKAN: char = '᬴';
     /// \u{1b35}: 'ᬵ'
-    pub const BALINESE_VOWEL_SIGN_TEDUNG: char = 'ᬵ';
+    pub const VOWEL_SIGN_TEDUNG: char = 'ᬵ';
     /// \u{1b36}: 'ᬶ'
-    pub const BALINESE_VOWEL_SIGN_ULU: char = 'ᬶ';
+    pub const VOWEL_SIGN_ULU: char = 'ᬶ';
     /// \u{1b37}: 'ᬷ'
-    pub const BALINESE_VOWEL_SIGN_ULU_SARI: char = 'ᬷ';
+    pub const VOWEL_SIGN_ULU_SARI: char = 'ᬷ';
     /// \u{1b38}: 'ᬸ'
-    pub const BALINESE_VOWEL_SIGN_SUKU: char = 'ᬸ';
+    pub const VOWEL_SIGN_SUKU: char = 'ᬸ';
     /// \u{1b39}: 'ᬹ'
-    pub const BALINESE_VOWEL_SIGN_SUKU_ILUT: char = 'ᬹ';
+    pub const VOWEL_SIGN_SUKU_ILUT: char = 'ᬹ';
     /// \u{1b3a}: 'ᬺ'
-    pub const BALINESE_VOWEL_SIGN_RA_REPA: char = 'ᬺ';
+    pub const VOWEL_SIGN_RA_REPA: char = 'ᬺ';
     /// \u{1b3b}: 'ᬻ'
-    pub const BALINESE_VOWEL_SIGN_RA_REPA_TEDUNG: char = 'ᬻ';
+    pub const VOWEL_SIGN_RA_REPA_TEDUNG: char = 'ᬻ';
     /// \u{1b3c}: 'ᬼ'
-    pub const BALINESE_VOWEL_SIGN_LA_LENGA: char = 'ᬼ';
+    pub const VOWEL_SIGN_LA_LENGA: char = 'ᬼ';
     /// \u{1b3d}: 'ᬽ'
-    pub const BALINESE_VOWEL_SIGN_LA_LENGA_TEDUNG: char = 'ᬽ';
+    pub const VOWEL_SIGN_LA_LENGA_TEDUNG: char = 'ᬽ';
     /// \u{1b3e}: 'ᬾ'
-    pub const BALINESE_VOWEL_SIGN_TALING: char = 'ᬾ';
+    pub const VOWEL_SIGN_TALING: char = 'ᬾ';
     /// \u{1b3f}: 'ᬿ'
-    pub const BALINESE_VOWEL_SIGN_TALING_REPA: char = 'ᬿ';
+    pub const VOWEL_SIGN_TALING_REPA: char = 'ᬿ';
     /// \u{1b40}: 'ᭀ'
-    pub const BALINESE_VOWEL_SIGN_TALING_TEDUNG: char = 'ᭀ';
+    pub const VOWEL_SIGN_TALING_TEDUNG: char = 'ᭀ';
     /// \u{1b41}: 'ᭁ'
-    pub const BALINESE_VOWEL_SIGN_TALING_REPA_TEDUNG: char = 'ᭁ';
+    pub const VOWEL_SIGN_TALING_REPA_TEDUNG: char = 'ᭁ';
     /// \u{1b42}: 'ᭂ'
-    pub const BALINESE_VOWEL_SIGN_PEPET: char = 'ᭂ';
+    pub const VOWEL_SIGN_PEPET: char = 'ᭂ';
     /// \u{1b43}: 'ᭃ'
-    pub const BALINESE_VOWEL_SIGN_PEPET_TEDUNG: char = 'ᭃ';
+    pub const VOWEL_SIGN_PEPET_TEDUNG: char = 'ᭃ';
     /// \u{1b44}: '᭄'
-    pub const BALINESE_ADEG_ADEG: char = '᭄';
+    pub const ADEG_ADEG: char = '᭄';
     /// \u{1b45}: 'ᭅ'
-    pub const BALINESE_LETTER_KAF_SASAK: char = 'ᭅ';
+    pub const LETTER_KAF_SASAK: char = 'ᭅ';
     /// \u{1b46}: 'ᭆ'
-    pub const BALINESE_LETTER_KHOT_SASAK: char = 'ᭆ';
+    pub const LETTER_KHOT_SASAK: char = 'ᭆ';
     /// \u{1b47}: 'ᭇ'
-    pub const BALINESE_LETTER_TZIR_SASAK: char = 'ᭇ';
+    pub const LETTER_TZIR_SASAK: char = 'ᭇ';
     /// \u{1b48}: 'ᭈ'
-    pub const BALINESE_LETTER_EF_SASAK: char = 'ᭈ';
+    pub const LETTER_EF_SASAK: char = 'ᭈ';
     /// \u{1b49}: 'ᭉ'
-    pub const BALINESE_LETTER_VE_SASAK: char = 'ᭉ';
+    pub const LETTER_VE_SASAK: char = 'ᭉ';
     /// \u{1b4a}: 'ᭊ'
-    pub const BALINESE_LETTER_ZAL_SASAK: char = 'ᭊ';
+    pub const LETTER_ZAL_SASAK: char = 'ᭊ';
     /// \u{1b4b}: 'ᭋ'
-    pub const BALINESE_LETTER_ASYURA_SASAK: char = 'ᭋ';
+    pub const LETTER_ASYURA_SASAK: char = 'ᭋ';
     /// \u{1b50}: '᭐'
-    pub const BALINESE_DIGIT_ZERO: char = '᭐';
+    pub const DIGIT_ZERO: char = '᭐';
     /// \u{1b51}: '᭑'
-    pub const BALINESE_DIGIT_ONE: char = '᭑';
+    pub const DIGIT_ONE: char = '᭑';
     /// \u{1b52}: '᭒'
-    pub const BALINESE_DIGIT_TWO: char = '᭒';
+    pub const DIGIT_TWO: char = '᭒';
     /// \u{1b53}: '᭓'
-    pub const BALINESE_DIGIT_THREE: char = '᭓';
+    pub const DIGIT_THREE: char = '᭓';
     /// \u{1b54}: '᭔'
-    pub const BALINESE_DIGIT_FOUR: char = '᭔';
+    pub const DIGIT_FOUR: char = '᭔';
     /// \u{1b55}: '᭕'
-    pub const BALINESE_DIGIT_FIVE: char = '᭕';
+    pub const DIGIT_FIVE: char = '᭕';
     /// \u{1b56}: '᭖'
-    pub const BALINESE_DIGIT_SIX: char = '᭖';
+    pub const DIGIT_SIX: char = '᭖';
     /// \u{1b57}: '᭗'
-    pub const BALINESE_DIGIT_SEVEN: char = '᭗';
+    pub const DIGIT_SEVEN: char = '᭗';
     /// \u{1b58}: '᭘'
-    pub const BALINESE_DIGIT_EIGHT: char = '᭘';
+    pub const DIGIT_EIGHT: char = '᭘';
     /// \u{1b59}: '᭙'
-    pub const BALINESE_DIGIT_NINE: char = '᭙';
+    pub const DIGIT_NINE: char = '᭙';
     /// \u{1b5a}: '᭚'
-    pub const BALINESE_PANTI: char = '᭚';
+    pub const PANTI: char = '᭚';
     /// \u{1b5b}: '᭛'
-    pub const BALINESE_PAMADA: char = '᭛';
+    pub const PAMADA: char = '᭛';
     /// \u{1b5c}: '᭜'
-    pub const BALINESE_WINDU: char = '᭜';
+    pub const WINDU: char = '᭜';
     /// \u{1b5d}: '᭝'
-    pub const BALINESE_CARIK_PAMUNGKAH: char = '᭝';
+    pub const CARIK_PAMUNGKAH: char = '᭝';
     /// \u{1b5e}: '᭞'
-    pub const BALINESE_CARIK_SIKI: char = '᭞';
+    pub const CARIK_SIKI: char = '᭞';
     /// \u{1b5f}: '᭟'
-    pub const BALINESE_CARIK_PAREREN: char = '᭟';
+    pub const CARIK_PAREREN: char = '᭟';
     /// \u{1b60}: '᭠'
-    pub const BALINESE_PAMENENG: char = '᭠';
+    pub const PAMENENG: char = '᭠';
     /// \u{1b61}: '᭡'
-    pub const BALINESE_MUSICAL_SYMBOL_DONG: char = '᭡';
+    pub const MUSICAL_SYMBOL_DONG: char = '᭡';
     /// \u{1b62}: '᭢'
-    pub const BALINESE_MUSICAL_SYMBOL_DENG: char = '᭢';
+    pub const MUSICAL_SYMBOL_DENG: char = '᭢';
     /// \u{1b63}: '᭣'
-    pub const BALINESE_MUSICAL_SYMBOL_DUNG: char = '᭣';
+    pub const MUSICAL_SYMBOL_DUNG: char = '᭣';
     /// \u{1b64}: '᭤'
-    pub const BALINESE_MUSICAL_SYMBOL_DANG: char = '᭤';
+    pub const MUSICAL_SYMBOL_DANG: char = '᭤';
     /// \u{1b65}: '᭥'
-    pub const BALINESE_MUSICAL_SYMBOL_DANG_SURANG: char = '᭥';
+    pub const MUSICAL_SYMBOL_DANG_SURANG: char = '᭥';
     /// \u{1b66}: '᭦'
-    pub const BALINESE_MUSICAL_SYMBOL_DING: char = '᭦';
+    pub const MUSICAL_SYMBOL_DING: char = '᭦';
     /// \u{1b67}: '᭧'
-    pub const BALINESE_MUSICAL_SYMBOL_DAENG: char = '᭧';
+    pub const MUSICAL_SYMBOL_DAENG: char = '᭧';
     /// \u{1b68}: '᭨'
-    pub const BALINESE_MUSICAL_SYMBOL_DEUNG: char = '᭨';
+    pub const MUSICAL_SYMBOL_DEUNG: char = '᭨';
     /// \u{1b69}: '᭩'
-    pub const BALINESE_MUSICAL_SYMBOL_DAING: char = '᭩';
+    pub const MUSICAL_SYMBOL_DAING: char = '᭩';
     /// \u{1b6a}: '᭪'
-    pub const BALINESE_MUSICAL_SYMBOL_DANG_GEDE: char = '᭪';
+    pub const MUSICAL_SYMBOL_DANG_GEDE: char = '᭪';
     /// \u{1b6b}: '᭫'
-    pub const BALINESE_MUSICAL_SYMBOL_COMBINING_TEGEH: char = '᭫';
+    pub const MUSICAL_SYMBOL_COMBINING_TEGEH: char = '᭫';
     /// \u{1b6c}: '᭬'
-    pub const BALINESE_MUSICAL_SYMBOL_COMBINING_ENDEP: char = '᭬';
+    pub const MUSICAL_SYMBOL_COMBINING_ENDEP: char = '᭬';
     /// \u{1b6d}: '᭭'
-    pub const BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPUL: char = '᭭';
+    pub const MUSICAL_SYMBOL_COMBINING_KEMPUL: char = '᭭';
     /// \u{1b6e}: '᭮'
-    pub const BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPLI: char = '᭮';
+    pub const MUSICAL_SYMBOL_COMBINING_KEMPLI: char = '᭮';
     /// \u{1b6f}: '᭯'
-    pub const BALINESE_MUSICAL_SYMBOL_COMBINING_JEGOGAN: char = '᭯';
+    pub const MUSICAL_SYMBOL_COMBINING_JEGOGAN: char = '᭯';
     /// \u{1b70}: '᭰'
-    pub const BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPUL_WITH_JEGOGAN: char = '᭰';
+    pub const MUSICAL_SYMBOL_COMBINING_KEMPUL_WITH_JEGOGAN: char = '᭰';
     /// \u{1b71}: '᭱'
-    pub const BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPLI_WITH_JEGOGAN: char = '᭱';
+    pub const MUSICAL_SYMBOL_COMBINING_KEMPLI_WITH_JEGOGAN: char = '᭱';
     /// \u{1b72}: '᭲'
-    pub const BALINESE_MUSICAL_SYMBOL_COMBINING_BENDE: char = '᭲';
+    pub const MUSICAL_SYMBOL_COMBINING_BENDE: char = '᭲';
     /// \u{1b73}: '᭳'
-    pub const BALINESE_MUSICAL_SYMBOL_COMBINING_GONG: char = '᭳';
+    pub const MUSICAL_SYMBOL_COMBINING_GONG: char = '᭳';
     /// \u{1b74}: '᭴'
-    pub const BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DUG: char = '᭴';
+    pub const MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DUG: char = '᭴';
     /// \u{1b75}: '᭵'
-    pub const BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DAG: char = '᭵';
+    pub const MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DAG: char = '᭵';
     /// \u{1b76}: '᭶'
-    pub const BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TUK: char = '᭶';
+    pub const MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TUK: char = '᭶';
     /// \u{1b77}: '᭷'
-    pub const BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TAK: char = '᭷';
+    pub const MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TAK: char = '᭷';
     /// \u{1b78}: '᭸'
-    pub const BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PANG: char = '᭸';
+    pub const MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PANG: char = '᭸';
     /// \u{1b79}: '᭹'
-    pub const BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PUNG: char = '᭹';
+    pub const MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PUNG: char = '᭹';
     /// \u{1b7a}: '᭺'
-    pub const BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLAK: char = '᭺';
+    pub const MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLAK: char = '᭺';
     /// \u{1b7b}: '᭻'
-    pub const BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLUK: char = '᭻';
+    pub const MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLUK: char = '᭻';
     /// \u{1b7c}: '᭼'
-    pub const BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PING: char = '᭼';
+    pub const MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PING: char = '᭼';
 }
 
 /// \u{1b00} → \u{1b7f}\
@@ -266,374 +266,374 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Balinese {
     /// \u{1b00}: 'ᬀ'
-    BalineseSignUluRicem,
+    SignUluRicem,
     /// \u{1b01}: 'ᬁ'
-    BalineseSignUluCandra,
+    SignUluCandra,
     /// \u{1b02}: 'ᬂ'
-    BalineseSignCecek,
+    SignCecek,
     /// \u{1b03}: 'ᬃ'
-    BalineseSignSurang,
+    SignSurang,
     /// \u{1b04}: 'ᬄ'
-    BalineseSignBisah,
+    SignBisah,
     /// \u{1b05}: 'ᬅ'
-    BalineseLetterAkara,
+    LetterAkara,
     /// \u{1b06}: 'ᬆ'
-    BalineseLetterAkaraTedung,
+    LetterAkaraTedung,
     /// \u{1b07}: 'ᬇ'
-    BalineseLetterIkara,
+    LetterIkara,
     /// \u{1b08}: 'ᬈ'
-    BalineseLetterIkaraTedung,
+    LetterIkaraTedung,
     /// \u{1b09}: 'ᬉ'
-    BalineseLetterUkara,
+    LetterUkara,
     /// \u{1b0a}: 'ᬊ'
-    BalineseLetterUkaraTedung,
+    LetterUkaraTedung,
     /// \u{1b0b}: 'ᬋ'
-    BalineseLetterRaRepa,
+    LetterRaRepa,
     /// \u{1b0c}: 'ᬌ'
-    BalineseLetterRaRepaTedung,
+    LetterRaRepaTedung,
     /// \u{1b0d}: 'ᬍ'
-    BalineseLetterLaLenga,
+    LetterLaLenga,
     /// \u{1b0e}: 'ᬎ'
-    BalineseLetterLaLengaTedung,
+    LetterLaLengaTedung,
     /// \u{1b0f}: 'ᬏ'
-    BalineseLetterEkara,
+    LetterEkara,
     /// \u{1b10}: 'ᬐ'
-    BalineseLetterAikara,
+    LetterAikara,
     /// \u{1b11}: 'ᬑ'
-    BalineseLetterOkara,
+    LetterOkara,
     /// \u{1b12}: 'ᬒ'
-    BalineseLetterOkaraTedung,
+    LetterOkaraTedung,
     /// \u{1b13}: 'ᬓ'
-    BalineseLetterKa,
+    LetterKa,
     /// \u{1b14}: 'ᬔ'
-    BalineseLetterKaMahaprana,
+    LetterKaMahaprana,
     /// \u{1b15}: 'ᬕ'
-    BalineseLetterGa,
+    LetterGa,
     /// \u{1b16}: 'ᬖ'
-    BalineseLetterGaGora,
+    LetterGaGora,
     /// \u{1b17}: 'ᬗ'
-    BalineseLetterNga,
+    LetterNga,
     /// \u{1b18}: 'ᬘ'
-    BalineseLetterCa,
+    LetterCa,
     /// \u{1b19}: 'ᬙ'
-    BalineseLetterCaLaca,
+    LetterCaLaca,
     /// \u{1b1a}: 'ᬚ'
-    BalineseLetterJa,
+    LetterJa,
     /// \u{1b1b}: 'ᬛ'
-    BalineseLetterJaJera,
+    LetterJaJera,
     /// \u{1b1c}: 'ᬜ'
-    BalineseLetterNya,
+    LetterNya,
     /// \u{1b1d}: 'ᬝ'
-    BalineseLetterTaLatik,
+    LetterTaLatik,
     /// \u{1b1e}: 'ᬞ'
-    BalineseLetterTaMurdaMahaprana,
+    LetterTaMurdaMahaprana,
     /// \u{1b1f}: 'ᬟ'
-    BalineseLetterDaMurdaAlpaprana,
+    LetterDaMurdaAlpaprana,
     /// \u{1b20}: 'ᬠ'
-    BalineseLetterDaMurdaMahaprana,
+    LetterDaMurdaMahaprana,
     /// \u{1b21}: 'ᬡ'
-    BalineseLetterNaRambat,
+    LetterNaRambat,
     /// \u{1b22}: 'ᬢ'
-    BalineseLetterTa,
+    LetterTa,
     /// \u{1b23}: 'ᬣ'
-    BalineseLetterTaTawa,
+    LetterTaTawa,
     /// \u{1b24}: 'ᬤ'
-    BalineseLetterDa,
+    LetterDa,
     /// \u{1b25}: 'ᬥ'
-    BalineseLetterDaMadu,
+    LetterDaMadu,
     /// \u{1b26}: 'ᬦ'
-    BalineseLetterNa,
+    LetterNa,
     /// \u{1b27}: 'ᬧ'
-    BalineseLetterPa,
+    LetterPa,
     /// \u{1b28}: 'ᬨ'
-    BalineseLetterPaKapal,
+    LetterPaKapal,
     /// \u{1b29}: 'ᬩ'
-    BalineseLetterBa,
+    LetterBa,
     /// \u{1b2a}: 'ᬪ'
-    BalineseLetterBaKembang,
+    LetterBaKembang,
     /// \u{1b2b}: 'ᬫ'
-    BalineseLetterMa,
+    LetterMa,
     /// \u{1b2c}: 'ᬬ'
-    BalineseLetterYa,
+    LetterYa,
     /// \u{1b2d}: 'ᬭ'
-    BalineseLetterRa,
+    LetterRa,
     /// \u{1b2e}: 'ᬮ'
-    BalineseLetterLa,
+    LetterLa,
     /// \u{1b2f}: 'ᬯ'
-    BalineseLetterWa,
+    LetterWa,
     /// \u{1b30}: 'ᬰ'
-    BalineseLetterSaSaga,
+    LetterSaSaga,
     /// \u{1b31}: 'ᬱ'
-    BalineseLetterSaSapa,
+    LetterSaSapa,
     /// \u{1b32}: 'ᬲ'
-    BalineseLetterSa,
+    LetterSa,
     /// \u{1b33}: 'ᬳ'
-    BalineseLetterHa,
+    LetterHa,
     /// \u{1b34}: '᬴'
-    BalineseSignRerekan,
+    SignRerekan,
     /// \u{1b35}: 'ᬵ'
-    BalineseVowelSignTedung,
+    VowelSignTedung,
     /// \u{1b36}: 'ᬶ'
-    BalineseVowelSignUlu,
+    VowelSignUlu,
     /// \u{1b37}: 'ᬷ'
-    BalineseVowelSignUluSari,
+    VowelSignUluSari,
     /// \u{1b38}: 'ᬸ'
-    BalineseVowelSignSuku,
+    VowelSignSuku,
     /// \u{1b39}: 'ᬹ'
-    BalineseVowelSignSukuIlut,
+    VowelSignSukuIlut,
     /// \u{1b3a}: 'ᬺ'
-    BalineseVowelSignRaRepa,
+    VowelSignRaRepa,
     /// \u{1b3b}: 'ᬻ'
-    BalineseVowelSignRaRepaTedung,
+    VowelSignRaRepaTedung,
     /// \u{1b3c}: 'ᬼ'
-    BalineseVowelSignLaLenga,
+    VowelSignLaLenga,
     /// \u{1b3d}: 'ᬽ'
-    BalineseVowelSignLaLengaTedung,
+    VowelSignLaLengaTedung,
     /// \u{1b3e}: 'ᬾ'
-    BalineseVowelSignTaling,
+    VowelSignTaling,
     /// \u{1b3f}: 'ᬿ'
-    BalineseVowelSignTalingRepa,
+    VowelSignTalingRepa,
     /// \u{1b40}: 'ᭀ'
-    BalineseVowelSignTalingTedung,
+    VowelSignTalingTedung,
     /// \u{1b41}: 'ᭁ'
-    BalineseVowelSignTalingRepaTedung,
+    VowelSignTalingRepaTedung,
     /// \u{1b42}: 'ᭂ'
-    BalineseVowelSignPepet,
+    VowelSignPepet,
     /// \u{1b43}: 'ᭃ'
-    BalineseVowelSignPepetTedung,
+    VowelSignPepetTedung,
     /// \u{1b44}: '᭄'
-    BalineseAdegAdeg,
+    AdegAdeg,
     /// \u{1b45}: 'ᭅ'
-    BalineseLetterKafSasak,
+    LetterKafSasak,
     /// \u{1b46}: 'ᭆ'
-    BalineseLetterKhotSasak,
+    LetterKhotSasak,
     /// \u{1b47}: 'ᭇ'
-    BalineseLetterTzirSasak,
+    LetterTzirSasak,
     /// \u{1b48}: 'ᭈ'
-    BalineseLetterEfSasak,
+    LetterEfSasak,
     /// \u{1b49}: 'ᭉ'
-    BalineseLetterVeSasak,
+    LetterVeSasak,
     /// \u{1b4a}: 'ᭊ'
-    BalineseLetterZalSasak,
+    LetterZalSasak,
     /// \u{1b4b}: 'ᭋ'
-    BalineseLetterAsyuraSasak,
+    LetterAsyuraSasak,
     /// \u{1b50}: '᭐'
-    BalineseDigitZero,
+    DigitZero,
     /// \u{1b51}: '᭑'
-    BalineseDigitOne,
+    DigitOne,
     /// \u{1b52}: '᭒'
-    BalineseDigitTwo,
+    DigitTwo,
     /// \u{1b53}: '᭓'
-    BalineseDigitThree,
+    DigitThree,
     /// \u{1b54}: '᭔'
-    BalineseDigitFour,
+    DigitFour,
     /// \u{1b55}: '᭕'
-    BalineseDigitFive,
+    DigitFive,
     /// \u{1b56}: '᭖'
-    BalineseDigitSix,
+    DigitSix,
     /// \u{1b57}: '᭗'
-    BalineseDigitSeven,
+    DigitSeven,
     /// \u{1b58}: '᭘'
-    BalineseDigitEight,
+    DigitEight,
     /// \u{1b59}: '᭙'
-    BalineseDigitNine,
+    DigitNine,
     /// \u{1b5a}: '᭚'
-    BalinesePanti,
+    Panti,
     /// \u{1b5b}: '᭛'
-    BalinesePamada,
+    Pamada,
     /// \u{1b5c}: '᭜'
-    BalineseWindu,
+    Windu,
     /// \u{1b5d}: '᭝'
-    BalineseCarikPamungkah,
+    CarikPamungkah,
     /// \u{1b5e}: '᭞'
-    BalineseCarikSiki,
+    CarikSiki,
     /// \u{1b5f}: '᭟'
-    BalineseCarikPareren,
+    CarikPareren,
     /// \u{1b60}: '᭠'
-    BalinesePameneng,
+    Pameneng,
     /// \u{1b61}: '᭡'
-    BalineseMusicalSymbolDong,
+    MusicalSymbolDong,
     /// \u{1b62}: '᭢'
-    BalineseMusicalSymbolDeng,
+    MusicalSymbolDeng,
     /// \u{1b63}: '᭣'
-    BalineseMusicalSymbolDung,
+    MusicalSymbolDung,
     /// \u{1b64}: '᭤'
-    BalineseMusicalSymbolDang,
+    MusicalSymbolDang,
     /// \u{1b65}: '᭥'
-    BalineseMusicalSymbolDangSurang,
+    MusicalSymbolDangSurang,
     /// \u{1b66}: '᭦'
-    BalineseMusicalSymbolDing,
+    MusicalSymbolDing,
     /// \u{1b67}: '᭧'
-    BalineseMusicalSymbolDaeng,
+    MusicalSymbolDaeng,
     /// \u{1b68}: '᭨'
-    BalineseMusicalSymbolDeung,
+    MusicalSymbolDeung,
     /// \u{1b69}: '᭩'
-    BalineseMusicalSymbolDaing,
+    MusicalSymbolDaing,
     /// \u{1b6a}: '᭪'
-    BalineseMusicalSymbolDangGede,
+    MusicalSymbolDangGede,
     /// \u{1b6b}: '᭫'
-    BalineseMusicalSymbolCombiningTegeh,
+    MusicalSymbolCombiningTegeh,
     /// \u{1b6c}: '᭬'
-    BalineseMusicalSymbolCombiningEndep,
+    MusicalSymbolCombiningEndep,
     /// \u{1b6d}: '᭭'
-    BalineseMusicalSymbolCombiningKempul,
+    MusicalSymbolCombiningKempul,
     /// \u{1b6e}: '᭮'
-    BalineseMusicalSymbolCombiningKempli,
+    MusicalSymbolCombiningKempli,
     /// \u{1b6f}: '᭯'
-    BalineseMusicalSymbolCombiningJegogan,
+    MusicalSymbolCombiningJegogan,
     /// \u{1b70}: '᭰'
-    BalineseMusicalSymbolCombiningKempulWithJegogan,
+    MusicalSymbolCombiningKempulWithJegogan,
     /// \u{1b71}: '᭱'
-    BalineseMusicalSymbolCombiningKempliWithJegogan,
+    MusicalSymbolCombiningKempliWithJegogan,
     /// \u{1b72}: '᭲'
-    BalineseMusicalSymbolCombiningBende,
+    MusicalSymbolCombiningBende,
     /// \u{1b73}: '᭳'
-    BalineseMusicalSymbolCombiningGong,
+    MusicalSymbolCombiningGong,
     /// \u{1b74}: '᭴'
-    BalineseMusicalSymbolRightDashHandOpenDug,
+    MusicalSymbolRightDashHandOpenDug,
     /// \u{1b75}: '᭵'
-    BalineseMusicalSymbolRightDashHandOpenDag,
+    MusicalSymbolRightDashHandOpenDag,
     /// \u{1b76}: '᭶'
-    BalineseMusicalSymbolRightDashHandClosedTuk,
+    MusicalSymbolRightDashHandClosedTuk,
     /// \u{1b77}: '᭷'
-    BalineseMusicalSymbolRightDashHandClosedTak,
+    MusicalSymbolRightDashHandClosedTak,
     /// \u{1b78}: '᭸'
-    BalineseMusicalSymbolLeftDashHandOpenPang,
+    MusicalSymbolLeftDashHandOpenPang,
     /// \u{1b79}: '᭹'
-    BalineseMusicalSymbolLeftDashHandOpenPung,
+    MusicalSymbolLeftDashHandOpenPung,
     /// \u{1b7a}: '᭺'
-    BalineseMusicalSymbolLeftDashHandClosedPlak,
+    MusicalSymbolLeftDashHandClosedPlak,
     /// \u{1b7b}: '᭻'
-    BalineseMusicalSymbolLeftDashHandClosedPluk,
+    MusicalSymbolLeftDashHandClosedPluk,
     /// \u{1b7c}: '᭼'
-    BalineseMusicalSymbolLeftDashHandOpenPing,
+    MusicalSymbolLeftDashHandOpenPing,
 }
 
 impl Into<char> for Balinese {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Balinese::BalineseSignUluRicem => BALINESE_SIGN_ULU_RICEM,
-            Balinese::BalineseSignUluCandra => BALINESE_SIGN_ULU_CANDRA,
-            Balinese::BalineseSignCecek => BALINESE_SIGN_CECEK,
-            Balinese::BalineseSignSurang => BALINESE_SIGN_SURANG,
-            Balinese::BalineseSignBisah => BALINESE_SIGN_BISAH,
-            Balinese::BalineseLetterAkara => BALINESE_LETTER_AKARA,
-            Balinese::BalineseLetterAkaraTedung => BALINESE_LETTER_AKARA_TEDUNG,
-            Balinese::BalineseLetterIkara => BALINESE_LETTER_IKARA,
-            Balinese::BalineseLetterIkaraTedung => BALINESE_LETTER_IKARA_TEDUNG,
-            Balinese::BalineseLetterUkara => BALINESE_LETTER_UKARA,
-            Balinese::BalineseLetterUkaraTedung => BALINESE_LETTER_UKARA_TEDUNG,
-            Balinese::BalineseLetterRaRepa => BALINESE_LETTER_RA_REPA,
-            Balinese::BalineseLetterRaRepaTedung => BALINESE_LETTER_RA_REPA_TEDUNG,
-            Balinese::BalineseLetterLaLenga => BALINESE_LETTER_LA_LENGA,
-            Balinese::BalineseLetterLaLengaTedung => BALINESE_LETTER_LA_LENGA_TEDUNG,
-            Balinese::BalineseLetterEkara => BALINESE_LETTER_EKARA,
-            Balinese::BalineseLetterAikara => BALINESE_LETTER_AIKARA,
-            Balinese::BalineseLetterOkara => BALINESE_LETTER_OKARA,
-            Balinese::BalineseLetterOkaraTedung => BALINESE_LETTER_OKARA_TEDUNG,
-            Balinese::BalineseLetterKa => BALINESE_LETTER_KA,
-            Balinese::BalineseLetterKaMahaprana => BALINESE_LETTER_KA_MAHAPRANA,
-            Balinese::BalineseLetterGa => BALINESE_LETTER_GA,
-            Balinese::BalineseLetterGaGora => BALINESE_LETTER_GA_GORA,
-            Balinese::BalineseLetterNga => BALINESE_LETTER_NGA,
-            Balinese::BalineseLetterCa => BALINESE_LETTER_CA,
-            Balinese::BalineseLetterCaLaca => BALINESE_LETTER_CA_LACA,
-            Balinese::BalineseLetterJa => BALINESE_LETTER_JA,
-            Balinese::BalineseLetterJaJera => BALINESE_LETTER_JA_JERA,
-            Balinese::BalineseLetterNya => BALINESE_LETTER_NYA,
-            Balinese::BalineseLetterTaLatik => BALINESE_LETTER_TA_LATIK,
-            Balinese::BalineseLetterTaMurdaMahaprana => BALINESE_LETTER_TA_MURDA_MAHAPRANA,
-            Balinese::BalineseLetterDaMurdaAlpaprana => BALINESE_LETTER_DA_MURDA_ALPAPRANA,
-            Balinese::BalineseLetterDaMurdaMahaprana => BALINESE_LETTER_DA_MURDA_MAHAPRANA,
-            Balinese::BalineseLetterNaRambat => BALINESE_LETTER_NA_RAMBAT,
-            Balinese::BalineseLetterTa => BALINESE_LETTER_TA,
-            Balinese::BalineseLetterTaTawa => BALINESE_LETTER_TA_TAWA,
-            Balinese::BalineseLetterDa => BALINESE_LETTER_DA,
-            Balinese::BalineseLetterDaMadu => BALINESE_LETTER_DA_MADU,
-            Balinese::BalineseLetterNa => BALINESE_LETTER_NA,
-            Balinese::BalineseLetterPa => BALINESE_LETTER_PA,
-            Balinese::BalineseLetterPaKapal => BALINESE_LETTER_PA_KAPAL,
-            Balinese::BalineseLetterBa => BALINESE_LETTER_BA,
-            Balinese::BalineseLetterBaKembang => BALINESE_LETTER_BA_KEMBANG,
-            Balinese::BalineseLetterMa => BALINESE_LETTER_MA,
-            Balinese::BalineseLetterYa => BALINESE_LETTER_YA,
-            Balinese::BalineseLetterRa => BALINESE_LETTER_RA,
-            Balinese::BalineseLetterLa => BALINESE_LETTER_LA,
-            Balinese::BalineseLetterWa => BALINESE_LETTER_WA,
-            Balinese::BalineseLetterSaSaga => BALINESE_LETTER_SA_SAGA,
-            Balinese::BalineseLetterSaSapa => BALINESE_LETTER_SA_SAPA,
-            Balinese::BalineseLetterSa => BALINESE_LETTER_SA,
-            Balinese::BalineseLetterHa => BALINESE_LETTER_HA,
-            Balinese::BalineseSignRerekan => BALINESE_SIGN_REREKAN,
-            Balinese::BalineseVowelSignTedung => BALINESE_VOWEL_SIGN_TEDUNG,
-            Balinese::BalineseVowelSignUlu => BALINESE_VOWEL_SIGN_ULU,
-            Balinese::BalineseVowelSignUluSari => BALINESE_VOWEL_SIGN_ULU_SARI,
-            Balinese::BalineseVowelSignSuku => BALINESE_VOWEL_SIGN_SUKU,
-            Balinese::BalineseVowelSignSukuIlut => BALINESE_VOWEL_SIGN_SUKU_ILUT,
-            Balinese::BalineseVowelSignRaRepa => BALINESE_VOWEL_SIGN_RA_REPA,
-            Balinese::BalineseVowelSignRaRepaTedung => BALINESE_VOWEL_SIGN_RA_REPA_TEDUNG,
-            Balinese::BalineseVowelSignLaLenga => BALINESE_VOWEL_SIGN_LA_LENGA,
-            Balinese::BalineseVowelSignLaLengaTedung => BALINESE_VOWEL_SIGN_LA_LENGA_TEDUNG,
-            Balinese::BalineseVowelSignTaling => BALINESE_VOWEL_SIGN_TALING,
-            Balinese::BalineseVowelSignTalingRepa => BALINESE_VOWEL_SIGN_TALING_REPA,
-            Balinese::BalineseVowelSignTalingTedung => BALINESE_VOWEL_SIGN_TALING_TEDUNG,
-            Balinese::BalineseVowelSignTalingRepaTedung => BALINESE_VOWEL_SIGN_TALING_REPA_TEDUNG,
-            Balinese::BalineseVowelSignPepet => BALINESE_VOWEL_SIGN_PEPET,
-            Balinese::BalineseVowelSignPepetTedung => BALINESE_VOWEL_SIGN_PEPET_TEDUNG,
-            Balinese::BalineseAdegAdeg => BALINESE_ADEG_ADEG,
-            Balinese::BalineseLetterKafSasak => BALINESE_LETTER_KAF_SASAK,
-            Balinese::BalineseLetterKhotSasak => BALINESE_LETTER_KHOT_SASAK,
-            Balinese::BalineseLetterTzirSasak => BALINESE_LETTER_TZIR_SASAK,
-            Balinese::BalineseLetterEfSasak => BALINESE_LETTER_EF_SASAK,
-            Balinese::BalineseLetterVeSasak => BALINESE_LETTER_VE_SASAK,
-            Balinese::BalineseLetterZalSasak => BALINESE_LETTER_ZAL_SASAK,
-            Balinese::BalineseLetterAsyuraSasak => BALINESE_LETTER_ASYURA_SASAK,
-            Balinese::BalineseDigitZero => BALINESE_DIGIT_ZERO,
-            Balinese::BalineseDigitOne => BALINESE_DIGIT_ONE,
-            Balinese::BalineseDigitTwo => BALINESE_DIGIT_TWO,
-            Balinese::BalineseDigitThree => BALINESE_DIGIT_THREE,
-            Balinese::BalineseDigitFour => BALINESE_DIGIT_FOUR,
-            Balinese::BalineseDigitFive => BALINESE_DIGIT_FIVE,
-            Balinese::BalineseDigitSix => BALINESE_DIGIT_SIX,
-            Balinese::BalineseDigitSeven => BALINESE_DIGIT_SEVEN,
-            Balinese::BalineseDigitEight => BALINESE_DIGIT_EIGHT,
-            Balinese::BalineseDigitNine => BALINESE_DIGIT_NINE,
-            Balinese::BalinesePanti => BALINESE_PANTI,
-            Balinese::BalinesePamada => BALINESE_PAMADA,
-            Balinese::BalineseWindu => BALINESE_WINDU,
-            Balinese::BalineseCarikPamungkah => BALINESE_CARIK_PAMUNGKAH,
-            Balinese::BalineseCarikSiki => BALINESE_CARIK_SIKI,
-            Balinese::BalineseCarikPareren => BALINESE_CARIK_PAREREN,
-            Balinese::BalinesePameneng => BALINESE_PAMENENG,
-            Balinese::BalineseMusicalSymbolDong => BALINESE_MUSICAL_SYMBOL_DONG,
-            Balinese::BalineseMusicalSymbolDeng => BALINESE_MUSICAL_SYMBOL_DENG,
-            Balinese::BalineseMusicalSymbolDung => BALINESE_MUSICAL_SYMBOL_DUNG,
-            Balinese::BalineseMusicalSymbolDang => BALINESE_MUSICAL_SYMBOL_DANG,
-            Balinese::BalineseMusicalSymbolDangSurang => BALINESE_MUSICAL_SYMBOL_DANG_SURANG,
-            Balinese::BalineseMusicalSymbolDing => BALINESE_MUSICAL_SYMBOL_DING,
-            Balinese::BalineseMusicalSymbolDaeng => BALINESE_MUSICAL_SYMBOL_DAENG,
-            Balinese::BalineseMusicalSymbolDeung => BALINESE_MUSICAL_SYMBOL_DEUNG,
-            Balinese::BalineseMusicalSymbolDaing => BALINESE_MUSICAL_SYMBOL_DAING,
-            Balinese::BalineseMusicalSymbolDangGede => BALINESE_MUSICAL_SYMBOL_DANG_GEDE,
-            Balinese::BalineseMusicalSymbolCombiningTegeh => BALINESE_MUSICAL_SYMBOL_COMBINING_TEGEH,
-            Balinese::BalineseMusicalSymbolCombiningEndep => BALINESE_MUSICAL_SYMBOL_COMBINING_ENDEP,
-            Balinese::BalineseMusicalSymbolCombiningKempul => BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPUL,
-            Balinese::BalineseMusicalSymbolCombiningKempli => BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPLI,
-            Balinese::BalineseMusicalSymbolCombiningJegogan => BALINESE_MUSICAL_SYMBOL_COMBINING_JEGOGAN,
-            Balinese::BalineseMusicalSymbolCombiningKempulWithJegogan => BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPUL_WITH_JEGOGAN,
-            Balinese::BalineseMusicalSymbolCombiningKempliWithJegogan => BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPLI_WITH_JEGOGAN,
-            Balinese::BalineseMusicalSymbolCombiningBende => BALINESE_MUSICAL_SYMBOL_COMBINING_BENDE,
-            Balinese::BalineseMusicalSymbolCombiningGong => BALINESE_MUSICAL_SYMBOL_COMBINING_GONG,
-            Balinese::BalineseMusicalSymbolRightDashHandOpenDug => BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DUG,
-            Balinese::BalineseMusicalSymbolRightDashHandOpenDag => BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DAG,
-            Balinese::BalineseMusicalSymbolRightDashHandClosedTuk => BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TUK,
-            Balinese::BalineseMusicalSymbolRightDashHandClosedTak => BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TAK,
-            Balinese::BalineseMusicalSymbolLeftDashHandOpenPang => BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PANG,
-            Balinese::BalineseMusicalSymbolLeftDashHandOpenPung => BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PUNG,
-            Balinese::BalineseMusicalSymbolLeftDashHandClosedPlak => BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLAK,
-            Balinese::BalineseMusicalSymbolLeftDashHandClosedPluk => BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLUK,
-            Balinese::BalineseMusicalSymbolLeftDashHandOpenPing => BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PING,
+            Balinese::SignUluRicem => SIGN_ULU_RICEM,
+            Balinese::SignUluCandra => SIGN_ULU_CANDRA,
+            Balinese::SignCecek => SIGN_CECEK,
+            Balinese::SignSurang => SIGN_SURANG,
+            Balinese::SignBisah => SIGN_BISAH,
+            Balinese::LetterAkara => LETTER_AKARA,
+            Balinese::LetterAkaraTedung => LETTER_AKARA_TEDUNG,
+            Balinese::LetterIkara => LETTER_IKARA,
+            Balinese::LetterIkaraTedung => LETTER_IKARA_TEDUNG,
+            Balinese::LetterUkara => LETTER_UKARA,
+            Balinese::LetterUkaraTedung => LETTER_UKARA_TEDUNG,
+            Balinese::LetterRaRepa => LETTER_RA_REPA,
+            Balinese::LetterRaRepaTedung => LETTER_RA_REPA_TEDUNG,
+            Balinese::LetterLaLenga => LETTER_LA_LENGA,
+            Balinese::LetterLaLengaTedung => LETTER_LA_LENGA_TEDUNG,
+            Balinese::LetterEkara => LETTER_EKARA,
+            Balinese::LetterAikara => LETTER_AIKARA,
+            Balinese::LetterOkara => LETTER_OKARA,
+            Balinese::LetterOkaraTedung => LETTER_OKARA_TEDUNG,
+            Balinese::LetterKa => LETTER_KA,
+            Balinese::LetterKaMahaprana => LETTER_KA_MAHAPRANA,
+            Balinese::LetterGa => LETTER_GA,
+            Balinese::LetterGaGora => LETTER_GA_GORA,
+            Balinese::LetterNga => LETTER_NGA,
+            Balinese::LetterCa => LETTER_CA,
+            Balinese::LetterCaLaca => LETTER_CA_LACA,
+            Balinese::LetterJa => LETTER_JA,
+            Balinese::LetterJaJera => LETTER_JA_JERA,
+            Balinese::LetterNya => LETTER_NYA,
+            Balinese::LetterTaLatik => LETTER_TA_LATIK,
+            Balinese::LetterTaMurdaMahaprana => LETTER_TA_MURDA_MAHAPRANA,
+            Balinese::LetterDaMurdaAlpaprana => LETTER_DA_MURDA_ALPAPRANA,
+            Balinese::LetterDaMurdaMahaprana => LETTER_DA_MURDA_MAHAPRANA,
+            Balinese::LetterNaRambat => LETTER_NA_RAMBAT,
+            Balinese::LetterTa => LETTER_TA,
+            Balinese::LetterTaTawa => LETTER_TA_TAWA,
+            Balinese::LetterDa => LETTER_DA,
+            Balinese::LetterDaMadu => LETTER_DA_MADU,
+            Balinese::LetterNa => LETTER_NA,
+            Balinese::LetterPa => LETTER_PA,
+            Balinese::LetterPaKapal => LETTER_PA_KAPAL,
+            Balinese::LetterBa => LETTER_BA,
+            Balinese::LetterBaKembang => LETTER_BA_KEMBANG,
+            Balinese::LetterMa => LETTER_MA,
+            Balinese::LetterYa => LETTER_YA,
+            Balinese::LetterRa => LETTER_RA,
+            Balinese::LetterLa => LETTER_LA,
+            Balinese::LetterWa => LETTER_WA,
+            Balinese::LetterSaSaga => LETTER_SA_SAGA,
+            Balinese::LetterSaSapa => LETTER_SA_SAPA,
+            Balinese::LetterSa => LETTER_SA,
+            Balinese::LetterHa => LETTER_HA,
+            Balinese::SignRerekan => SIGN_REREKAN,
+            Balinese::VowelSignTedung => VOWEL_SIGN_TEDUNG,
+            Balinese::VowelSignUlu => VOWEL_SIGN_ULU,
+            Balinese::VowelSignUluSari => VOWEL_SIGN_ULU_SARI,
+            Balinese::VowelSignSuku => VOWEL_SIGN_SUKU,
+            Balinese::VowelSignSukuIlut => VOWEL_SIGN_SUKU_ILUT,
+            Balinese::VowelSignRaRepa => VOWEL_SIGN_RA_REPA,
+            Balinese::VowelSignRaRepaTedung => VOWEL_SIGN_RA_REPA_TEDUNG,
+            Balinese::VowelSignLaLenga => VOWEL_SIGN_LA_LENGA,
+            Balinese::VowelSignLaLengaTedung => VOWEL_SIGN_LA_LENGA_TEDUNG,
+            Balinese::VowelSignTaling => VOWEL_SIGN_TALING,
+            Balinese::VowelSignTalingRepa => VOWEL_SIGN_TALING_REPA,
+            Balinese::VowelSignTalingTedung => VOWEL_SIGN_TALING_TEDUNG,
+            Balinese::VowelSignTalingRepaTedung => VOWEL_SIGN_TALING_REPA_TEDUNG,
+            Balinese::VowelSignPepet => VOWEL_SIGN_PEPET,
+            Balinese::VowelSignPepetTedung => VOWEL_SIGN_PEPET_TEDUNG,
+            Balinese::AdegAdeg => ADEG_ADEG,
+            Balinese::LetterKafSasak => LETTER_KAF_SASAK,
+            Balinese::LetterKhotSasak => LETTER_KHOT_SASAK,
+            Balinese::LetterTzirSasak => LETTER_TZIR_SASAK,
+            Balinese::LetterEfSasak => LETTER_EF_SASAK,
+            Balinese::LetterVeSasak => LETTER_VE_SASAK,
+            Balinese::LetterZalSasak => LETTER_ZAL_SASAK,
+            Balinese::LetterAsyuraSasak => LETTER_ASYURA_SASAK,
+            Balinese::DigitZero => DIGIT_ZERO,
+            Balinese::DigitOne => DIGIT_ONE,
+            Balinese::DigitTwo => DIGIT_TWO,
+            Balinese::DigitThree => DIGIT_THREE,
+            Balinese::DigitFour => DIGIT_FOUR,
+            Balinese::DigitFive => DIGIT_FIVE,
+            Balinese::DigitSix => DIGIT_SIX,
+            Balinese::DigitSeven => DIGIT_SEVEN,
+            Balinese::DigitEight => DIGIT_EIGHT,
+            Balinese::DigitNine => DIGIT_NINE,
+            Balinese::Panti => PANTI,
+            Balinese::Pamada => PAMADA,
+            Balinese::Windu => WINDU,
+            Balinese::CarikPamungkah => CARIK_PAMUNGKAH,
+            Balinese::CarikSiki => CARIK_SIKI,
+            Balinese::CarikPareren => CARIK_PAREREN,
+            Balinese::Pameneng => PAMENENG,
+            Balinese::MusicalSymbolDong => MUSICAL_SYMBOL_DONG,
+            Balinese::MusicalSymbolDeng => MUSICAL_SYMBOL_DENG,
+            Balinese::MusicalSymbolDung => MUSICAL_SYMBOL_DUNG,
+            Balinese::MusicalSymbolDang => MUSICAL_SYMBOL_DANG,
+            Balinese::MusicalSymbolDangSurang => MUSICAL_SYMBOL_DANG_SURANG,
+            Balinese::MusicalSymbolDing => MUSICAL_SYMBOL_DING,
+            Balinese::MusicalSymbolDaeng => MUSICAL_SYMBOL_DAENG,
+            Balinese::MusicalSymbolDeung => MUSICAL_SYMBOL_DEUNG,
+            Balinese::MusicalSymbolDaing => MUSICAL_SYMBOL_DAING,
+            Balinese::MusicalSymbolDangGede => MUSICAL_SYMBOL_DANG_GEDE,
+            Balinese::MusicalSymbolCombiningTegeh => MUSICAL_SYMBOL_COMBINING_TEGEH,
+            Balinese::MusicalSymbolCombiningEndep => MUSICAL_SYMBOL_COMBINING_ENDEP,
+            Balinese::MusicalSymbolCombiningKempul => MUSICAL_SYMBOL_COMBINING_KEMPUL,
+            Balinese::MusicalSymbolCombiningKempli => MUSICAL_SYMBOL_COMBINING_KEMPLI,
+            Balinese::MusicalSymbolCombiningJegogan => MUSICAL_SYMBOL_COMBINING_JEGOGAN,
+            Balinese::MusicalSymbolCombiningKempulWithJegogan => MUSICAL_SYMBOL_COMBINING_KEMPUL_WITH_JEGOGAN,
+            Balinese::MusicalSymbolCombiningKempliWithJegogan => MUSICAL_SYMBOL_COMBINING_KEMPLI_WITH_JEGOGAN,
+            Balinese::MusicalSymbolCombiningBende => MUSICAL_SYMBOL_COMBINING_BENDE,
+            Balinese::MusicalSymbolCombiningGong => MUSICAL_SYMBOL_COMBINING_GONG,
+            Balinese::MusicalSymbolRightDashHandOpenDug => MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DUG,
+            Balinese::MusicalSymbolRightDashHandOpenDag => MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DAG,
+            Balinese::MusicalSymbolRightDashHandClosedTuk => MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TUK,
+            Balinese::MusicalSymbolRightDashHandClosedTak => MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TAK,
+            Balinese::MusicalSymbolLeftDashHandOpenPang => MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PANG,
+            Balinese::MusicalSymbolLeftDashHandOpenPung => MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PUNG,
+            Balinese::MusicalSymbolLeftDashHandClosedPlak => MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLAK,
+            Balinese::MusicalSymbolLeftDashHandClosedPluk => MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLUK,
+            Balinese::MusicalSymbolLeftDashHandOpenPing => MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PING,
         }
     }
 }
@@ -643,127 +643,127 @@ impl std::convert::TryFrom<char> for Balinese {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            BALINESE_SIGN_ULU_RICEM => Ok(Balinese::BalineseSignUluRicem),
-            BALINESE_SIGN_ULU_CANDRA => Ok(Balinese::BalineseSignUluCandra),
-            BALINESE_SIGN_CECEK => Ok(Balinese::BalineseSignCecek),
-            BALINESE_SIGN_SURANG => Ok(Balinese::BalineseSignSurang),
-            BALINESE_SIGN_BISAH => Ok(Balinese::BalineseSignBisah),
-            BALINESE_LETTER_AKARA => Ok(Balinese::BalineseLetterAkara),
-            BALINESE_LETTER_AKARA_TEDUNG => Ok(Balinese::BalineseLetterAkaraTedung),
-            BALINESE_LETTER_IKARA => Ok(Balinese::BalineseLetterIkara),
-            BALINESE_LETTER_IKARA_TEDUNG => Ok(Balinese::BalineseLetterIkaraTedung),
-            BALINESE_LETTER_UKARA => Ok(Balinese::BalineseLetterUkara),
-            BALINESE_LETTER_UKARA_TEDUNG => Ok(Balinese::BalineseLetterUkaraTedung),
-            BALINESE_LETTER_RA_REPA => Ok(Balinese::BalineseLetterRaRepa),
-            BALINESE_LETTER_RA_REPA_TEDUNG => Ok(Balinese::BalineseLetterRaRepaTedung),
-            BALINESE_LETTER_LA_LENGA => Ok(Balinese::BalineseLetterLaLenga),
-            BALINESE_LETTER_LA_LENGA_TEDUNG => Ok(Balinese::BalineseLetterLaLengaTedung),
-            BALINESE_LETTER_EKARA => Ok(Balinese::BalineseLetterEkara),
-            BALINESE_LETTER_AIKARA => Ok(Balinese::BalineseLetterAikara),
-            BALINESE_LETTER_OKARA => Ok(Balinese::BalineseLetterOkara),
-            BALINESE_LETTER_OKARA_TEDUNG => Ok(Balinese::BalineseLetterOkaraTedung),
-            BALINESE_LETTER_KA => Ok(Balinese::BalineseLetterKa),
-            BALINESE_LETTER_KA_MAHAPRANA => Ok(Balinese::BalineseLetterKaMahaprana),
-            BALINESE_LETTER_GA => Ok(Balinese::BalineseLetterGa),
-            BALINESE_LETTER_GA_GORA => Ok(Balinese::BalineseLetterGaGora),
-            BALINESE_LETTER_NGA => Ok(Balinese::BalineseLetterNga),
-            BALINESE_LETTER_CA => Ok(Balinese::BalineseLetterCa),
-            BALINESE_LETTER_CA_LACA => Ok(Balinese::BalineseLetterCaLaca),
-            BALINESE_LETTER_JA => Ok(Balinese::BalineseLetterJa),
-            BALINESE_LETTER_JA_JERA => Ok(Balinese::BalineseLetterJaJera),
-            BALINESE_LETTER_NYA => Ok(Balinese::BalineseLetterNya),
-            BALINESE_LETTER_TA_LATIK => Ok(Balinese::BalineseLetterTaLatik),
-            BALINESE_LETTER_TA_MURDA_MAHAPRANA => Ok(Balinese::BalineseLetterTaMurdaMahaprana),
-            BALINESE_LETTER_DA_MURDA_ALPAPRANA => Ok(Balinese::BalineseLetterDaMurdaAlpaprana),
-            BALINESE_LETTER_DA_MURDA_MAHAPRANA => Ok(Balinese::BalineseLetterDaMurdaMahaprana),
-            BALINESE_LETTER_NA_RAMBAT => Ok(Balinese::BalineseLetterNaRambat),
-            BALINESE_LETTER_TA => Ok(Balinese::BalineseLetterTa),
-            BALINESE_LETTER_TA_TAWA => Ok(Balinese::BalineseLetterTaTawa),
-            BALINESE_LETTER_DA => Ok(Balinese::BalineseLetterDa),
-            BALINESE_LETTER_DA_MADU => Ok(Balinese::BalineseLetterDaMadu),
-            BALINESE_LETTER_NA => Ok(Balinese::BalineseLetterNa),
-            BALINESE_LETTER_PA => Ok(Balinese::BalineseLetterPa),
-            BALINESE_LETTER_PA_KAPAL => Ok(Balinese::BalineseLetterPaKapal),
-            BALINESE_LETTER_BA => Ok(Balinese::BalineseLetterBa),
-            BALINESE_LETTER_BA_KEMBANG => Ok(Balinese::BalineseLetterBaKembang),
-            BALINESE_LETTER_MA => Ok(Balinese::BalineseLetterMa),
-            BALINESE_LETTER_YA => Ok(Balinese::BalineseLetterYa),
-            BALINESE_LETTER_RA => Ok(Balinese::BalineseLetterRa),
-            BALINESE_LETTER_LA => Ok(Balinese::BalineseLetterLa),
-            BALINESE_LETTER_WA => Ok(Balinese::BalineseLetterWa),
-            BALINESE_LETTER_SA_SAGA => Ok(Balinese::BalineseLetterSaSaga),
-            BALINESE_LETTER_SA_SAPA => Ok(Balinese::BalineseLetterSaSapa),
-            BALINESE_LETTER_SA => Ok(Balinese::BalineseLetterSa),
-            BALINESE_LETTER_HA => Ok(Balinese::BalineseLetterHa),
-            BALINESE_SIGN_REREKAN => Ok(Balinese::BalineseSignRerekan),
-            BALINESE_VOWEL_SIGN_TEDUNG => Ok(Balinese::BalineseVowelSignTedung),
-            BALINESE_VOWEL_SIGN_ULU => Ok(Balinese::BalineseVowelSignUlu),
-            BALINESE_VOWEL_SIGN_ULU_SARI => Ok(Balinese::BalineseVowelSignUluSari),
-            BALINESE_VOWEL_SIGN_SUKU => Ok(Balinese::BalineseVowelSignSuku),
-            BALINESE_VOWEL_SIGN_SUKU_ILUT => Ok(Balinese::BalineseVowelSignSukuIlut),
-            BALINESE_VOWEL_SIGN_RA_REPA => Ok(Balinese::BalineseVowelSignRaRepa),
-            BALINESE_VOWEL_SIGN_RA_REPA_TEDUNG => Ok(Balinese::BalineseVowelSignRaRepaTedung),
-            BALINESE_VOWEL_SIGN_LA_LENGA => Ok(Balinese::BalineseVowelSignLaLenga),
-            BALINESE_VOWEL_SIGN_LA_LENGA_TEDUNG => Ok(Balinese::BalineseVowelSignLaLengaTedung),
-            BALINESE_VOWEL_SIGN_TALING => Ok(Balinese::BalineseVowelSignTaling),
-            BALINESE_VOWEL_SIGN_TALING_REPA => Ok(Balinese::BalineseVowelSignTalingRepa),
-            BALINESE_VOWEL_SIGN_TALING_TEDUNG => Ok(Balinese::BalineseVowelSignTalingTedung),
-            BALINESE_VOWEL_SIGN_TALING_REPA_TEDUNG => Ok(Balinese::BalineseVowelSignTalingRepaTedung),
-            BALINESE_VOWEL_SIGN_PEPET => Ok(Balinese::BalineseVowelSignPepet),
-            BALINESE_VOWEL_SIGN_PEPET_TEDUNG => Ok(Balinese::BalineseVowelSignPepetTedung),
-            BALINESE_ADEG_ADEG => Ok(Balinese::BalineseAdegAdeg),
-            BALINESE_LETTER_KAF_SASAK => Ok(Balinese::BalineseLetterKafSasak),
-            BALINESE_LETTER_KHOT_SASAK => Ok(Balinese::BalineseLetterKhotSasak),
-            BALINESE_LETTER_TZIR_SASAK => Ok(Balinese::BalineseLetterTzirSasak),
-            BALINESE_LETTER_EF_SASAK => Ok(Balinese::BalineseLetterEfSasak),
-            BALINESE_LETTER_VE_SASAK => Ok(Balinese::BalineseLetterVeSasak),
-            BALINESE_LETTER_ZAL_SASAK => Ok(Balinese::BalineseLetterZalSasak),
-            BALINESE_LETTER_ASYURA_SASAK => Ok(Balinese::BalineseLetterAsyuraSasak),
-            BALINESE_DIGIT_ZERO => Ok(Balinese::BalineseDigitZero),
-            BALINESE_DIGIT_ONE => Ok(Balinese::BalineseDigitOne),
-            BALINESE_DIGIT_TWO => Ok(Balinese::BalineseDigitTwo),
-            BALINESE_DIGIT_THREE => Ok(Balinese::BalineseDigitThree),
-            BALINESE_DIGIT_FOUR => Ok(Balinese::BalineseDigitFour),
-            BALINESE_DIGIT_FIVE => Ok(Balinese::BalineseDigitFive),
-            BALINESE_DIGIT_SIX => Ok(Balinese::BalineseDigitSix),
-            BALINESE_DIGIT_SEVEN => Ok(Balinese::BalineseDigitSeven),
-            BALINESE_DIGIT_EIGHT => Ok(Balinese::BalineseDigitEight),
-            BALINESE_DIGIT_NINE => Ok(Balinese::BalineseDigitNine),
-            BALINESE_PANTI => Ok(Balinese::BalinesePanti),
-            BALINESE_PAMADA => Ok(Balinese::BalinesePamada),
-            BALINESE_WINDU => Ok(Balinese::BalineseWindu),
-            BALINESE_CARIK_PAMUNGKAH => Ok(Balinese::BalineseCarikPamungkah),
-            BALINESE_CARIK_SIKI => Ok(Balinese::BalineseCarikSiki),
-            BALINESE_CARIK_PAREREN => Ok(Balinese::BalineseCarikPareren),
-            BALINESE_PAMENENG => Ok(Balinese::BalinesePameneng),
-            BALINESE_MUSICAL_SYMBOL_DONG => Ok(Balinese::BalineseMusicalSymbolDong),
-            BALINESE_MUSICAL_SYMBOL_DENG => Ok(Balinese::BalineseMusicalSymbolDeng),
-            BALINESE_MUSICAL_SYMBOL_DUNG => Ok(Balinese::BalineseMusicalSymbolDung),
-            BALINESE_MUSICAL_SYMBOL_DANG => Ok(Balinese::BalineseMusicalSymbolDang),
-            BALINESE_MUSICAL_SYMBOL_DANG_SURANG => Ok(Balinese::BalineseMusicalSymbolDangSurang),
-            BALINESE_MUSICAL_SYMBOL_DING => Ok(Balinese::BalineseMusicalSymbolDing),
-            BALINESE_MUSICAL_SYMBOL_DAENG => Ok(Balinese::BalineseMusicalSymbolDaeng),
-            BALINESE_MUSICAL_SYMBOL_DEUNG => Ok(Balinese::BalineseMusicalSymbolDeung),
-            BALINESE_MUSICAL_SYMBOL_DAING => Ok(Balinese::BalineseMusicalSymbolDaing),
-            BALINESE_MUSICAL_SYMBOL_DANG_GEDE => Ok(Balinese::BalineseMusicalSymbolDangGede),
-            BALINESE_MUSICAL_SYMBOL_COMBINING_TEGEH => Ok(Balinese::BalineseMusicalSymbolCombiningTegeh),
-            BALINESE_MUSICAL_SYMBOL_COMBINING_ENDEP => Ok(Balinese::BalineseMusicalSymbolCombiningEndep),
-            BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPUL => Ok(Balinese::BalineseMusicalSymbolCombiningKempul),
-            BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPLI => Ok(Balinese::BalineseMusicalSymbolCombiningKempli),
-            BALINESE_MUSICAL_SYMBOL_COMBINING_JEGOGAN => Ok(Balinese::BalineseMusicalSymbolCombiningJegogan),
-            BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPUL_WITH_JEGOGAN => Ok(Balinese::BalineseMusicalSymbolCombiningKempulWithJegogan),
-            BALINESE_MUSICAL_SYMBOL_COMBINING_KEMPLI_WITH_JEGOGAN => Ok(Balinese::BalineseMusicalSymbolCombiningKempliWithJegogan),
-            BALINESE_MUSICAL_SYMBOL_COMBINING_BENDE => Ok(Balinese::BalineseMusicalSymbolCombiningBende),
-            BALINESE_MUSICAL_SYMBOL_COMBINING_GONG => Ok(Balinese::BalineseMusicalSymbolCombiningGong),
-            BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DUG => Ok(Balinese::BalineseMusicalSymbolRightDashHandOpenDug),
-            BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DAG => Ok(Balinese::BalineseMusicalSymbolRightDashHandOpenDag),
-            BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TUK => Ok(Balinese::BalineseMusicalSymbolRightDashHandClosedTuk),
-            BALINESE_MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TAK => Ok(Balinese::BalineseMusicalSymbolRightDashHandClosedTak),
-            BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PANG => Ok(Balinese::BalineseMusicalSymbolLeftDashHandOpenPang),
-            BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PUNG => Ok(Balinese::BalineseMusicalSymbolLeftDashHandOpenPung),
-            BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLAK => Ok(Balinese::BalineseMusicalSymbolLeftDashHandClosedPlak),
-            BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLUK => Ok(Balinese::BalineseMusicalSymbolLeftDashHandClosedPluk),
-            BALINESE_MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PING => Ok(Balinese::BalineseMusicalSymbolLeftDashHandOpenPing),
+            SIGN_ULU_RICEM => Ok(Balinese::SignUluRicem),
+            SIGN_ULU_CANDRA => Ok(Balinese::SignUluCandra),
+            SIGN_CECEK => Ok(Balinese::SignCecek),
+            SIGN_SURANG => Ok(Balinese::SignSurang),
+            SIGN_BISAH => Ok(Balinese::SignBisah),
+            LETTER_AKARA => Ok(Balinese::LetterAkara),
+            LETTER_AKARA_TEDUNG => Ok(Balinese::LetterAkaraTedung),
+            LETTER_IKARA => Ok(Balinese::LetterIkara),
+            LETTER_IKARA_TEDUNG => Ok(Balinese::LetterIkaraTedung),
+            LETTER_UKARA => Ok(Balinese::LetterUkara),
+            LETTER_UKARA_TEDUNG => Ok(Balinese::LetterUkaraTedung),
+            LETTER_RA_REPA => Ok(Balinese::LetterRaRepa),
+            LETTER_RA_REPA_TEDUNG => Ok(Balinese::LetterRaRepaTedung),
+            LETTER_LA_LENGA => Ok(Balinese::LetterLaLenga),
+            LETTER_LA_LENGA_TEDUNG => Ok(Balinese::LetterLaLengaTedung),
+            LETTER_EKARA => Ok(Balinese::LetterEkara),
+            LETTER_AIKARA => Ok(Balinese::LetterAikara),
+            LETTER_OKARA => Ok(Balinese::LetterOkara),
+            LETTER_OKARA_TEDUNG => Ok(Balinese::LetterOkaraTedung),
+            LETTER_KA => Ok(Balinese::LetterKa),
+            LETTER_KA_MAHAPRANA => Ok(Balinese::LetterKaMahaprana),
+            LETTER_GA => Ok(Balinese::LetterGa),
+            LETTER_GA_GORA => Ok(Balinese::LetterGaGora),
+            LETTER_NGA => Ok(Balinese::LetterNga),
+            LETTER_CA => Ok(Balinese::LetterCa),
+            LETTER_CA_LACA => Ok(Balinese::LetterCaLaca),
+            LETTER_JA => Ok(Balinese::LetterJa),
+            LETTER_JA_JERA => Ok(Balinese::LetterJaJera),
+            LETTER_NYA => Ok(Balinese::LetterNya),
+            LETTER_TA_LATIK => Ok(Balinese::LetterTaLatik),
+            LETTER_TA_MURDA_MAHAPRANA => Ok(Balinese::LetterTaMurdaMahaprana),
+            LETTER_DA_MURDA_ALPAPRANA => Ok(Balinese::LetterDaMurdaAlpaprana),
+            LETTER_DA_MURDA_MAHAPRANA => Ok(Balinese::LetterDaMurdaMahaprana),
+            LETTER_NA_RAMBAT => Ok(Balinese::LetterNaRambat),
+            LETTER_TA => Ok(Balinese::LetterTa),
+            LETTER_TA_TAWA => Ok(Balinese::LetterTaTawa),
+            LETTER_DA => Ok(Balinese::LetterDa),
+            LETTER_DA_MADU => Ok(Balinese::LetterDaMadu),
+            LETTER_NA => Ok(Balinese::LetterNa),
+            LETTER_PA => Ok(Balinese::LetterPa),
+            LETTER_PA_KAPAL => Ok(Balinese::LetterPaKapal),
+            LETTER_BA => Ok(Balinese::LetterBa),
+            LETTER_BA_KEMBANG => Ok(Balinese::LetterBaKembang),
+            LETTER_MA => Ok(Balinese::LetterMa),
+            LETTER_YA => Ok(Balinese::LetterYa),
+            LETTER_RA => Ok(Balinese::LetterRa),
+            LETTER_LA => Ok(Balinese::LetterLa),
+            LETTER_WA => Ok(Balinese::LetterWa),
+            LETTER_SA_SAGA => Ok(Balinese::LetterSaSaga),
+            LETTER_SA_SAPA => Ok(Balinese::LetterSaSapa),
+            LETTER_SA => Ok(Balinese::LetterSa),
+            LETTER_HA => Ok(Balinese::LetterHa),
+            SIGN_REREKAN => Ok(Balinese::SignRerekan),
+            VOWEL_SIGN_TEDUNG => Ok(Balinese::VowelSignTedung),
+            VOWEL_SIGN_ULU => Ok(Balinese::VowelSignUlu),
+            VOWEL_SIGN_ULU_SARI => Ok(Balinese::VowelSignUluSari),
+            VOWEL_SIGN_SUKU => Ok(Balinese::VowelSignSuku),
+            VOWEL_SIGN_SUKU_ILUT => Ok(Balinese::VowelSignSukuIlut),
+            VOWEL_SIGN_RA_REPA => Ok(Balinese::VowelSignRaRepa),
+            VOWEL_SIGN_RA_REPA_TEDUNG => Ok(Balinese::VowelSignRaRepaTedung),
+            VOWEL_SIGN_LA_LENGA => Ok(Balinese::VowelSignLaLenga),
+            VOWEL_SIGN_LA_LENGA_TEDUNG => Ok(Balinese::VowelSignLaLengaTedung),
+            VOWEL_SIGN_TALING => Ok(Balinese::VowelSignTaling),
+            VOWEL_SIGN_TALING_REPA => Ok(Balinese::VowelSignTalingRepa),
+            VOWEL_SIGN_TALING_TEDUNG => Ok(Balinese::VowelSignTalingTedung),
+            VOWEL_SIGN_TALING_REPA_TEDUNG => Ok(Balinese::VowelSignTalingRepaTedung),
+            VOWEL_SIGN_PEPET => Ok(Balinese::VowelSignPepet),
+            VOWEL_SIGN_PEPET_TEDUNG => Ok(Balinese::VowelSignPepetTedung),
+            ADEG_ADEG => Ok(Balinese::AdegAdeg),
+            LETTER_KAF_SASAK => Ok(Balinese::LetterKafSasak),
+            LETTER_KHOT_SASAK => Ok(Balinese::LetterKhotSasak),
+            LETTER_TZIR_SASAK => Ok(Balinese::LetterTzirSasak),
+            LETTER_EF_SASAK => Ok(Balinese::LetterEfSasak),
+            LETTER_VE_SASAK => Ok(Balinese::LetterVeSasak),
+            LETTER_ZAL_SASAK => Ok(Balinese::LetterZalSasak),
+            LETTER_ASYURA_SASAK => Ok(Balinese::LetterAsyuraSasak),
+            DIGIT_ZERO => Ok(Balinese::DigitZero),
+            DIGIT_ONE => Ok(Balinese::DigitOne),
+            DIGIT_TWO => Ok(Balinese::DigitTwo),
+            DIGIT_THREE => Ok(Balinese::DigitThree),
+            DIGIT_FOUR => Ok(Balinese::DigitFour),
+            DIGIT_FIVE => Ok(Balinese::DigitFive),
+            DIGIT_SIX => Ok(Balinese::DigitSix),
+            DIGIT_SEVEN => Ok(Balinese::DigitSeven),
+            DIGIT_EIGHT => Ok(Balinese::DigitEight),
+            DIGIT_NINE => Ok(Balinese::DigitNine),
+            PANTI => Ok(Balinese::Panti),
+            PAMADA => Ok(Balinese::Pamada),
+            WINDU => Ok(Balinese::Windu),
+            CARIK_PAMUNGKAH => Ok(Balinese::CarikPamungkah),
+            CARIK_SIKI => Ok(Balinese::CarikSiki),
+            CARIK_PAREREN => Ok(Balinese::CarikPareren),
+            PAMENENG => Ok(Balinese::Pameneng),
+            MUSICAL_SYMBOL_DONG => Ok(Balinese::MusicalSymbolDong),
+            MUSICAL_SYMBOL_DENG => Ok(Balinese::MusicalSymbolDeng),
+            MUSICAL_SYMBOL_DUNG => Ok(Balinese::MusicalSymbolDung),
+            MUSICAL_SYMBOL_DANG => Ok(Balinese::MusicalSymbolDang),
+            MUSICAL_SYMBOL_DANG_SURANG => Ok(Balinese::MusicalSymbolDangSurang),
+            MUSICAL_SYMBOL_DING => Ok(Balinese::MusicalSymbolDing),
+            MUSICAL_SYMBOL_DAENG => Ok(Balinese::MusicalSymbolDaeng),
+            MUSICAL_SYMBOL_DEUNG => Ok(Balinese::MusicalSymbolDeung),
+            MUSICAL_SYMBOL_DAING => Ok(Balinese::MusicalSymbolDaing),
+            MUSICAL_SYMBOL_DANG_GEDE => Ok(Balinese::MusicalSymbolDangGede),
+            MUSICAL_SYMBOL_COMBINING_TEGEH => Ok(Balinese::MusicalSymbolCombiningTegeh),
+            MUSICAL_SYMBOL_COMBINING_ENDEP => Ok(Balinese::MusicalSymbolCombiningEndep),
+            MUSICAL_SYMBOL_COMBINING_KEMPUL => Ok(Balinese::MusicalSymbolCombiningKempul),
+            MUSICAL_SYMBOL_COMBINING_KEMPLI => Ok(Balinese::MusicalSymbolCombiningKempli),
+            MUSICAL_SYMBOL_COMBINING_JEGOGAN => Ok(Balinese::MusicalSymbolCombiningJegogan),
+            MUSICAL_SYMBOL_COMBINING_KEMPUL_WITH_JEGOGAN => Ok(Balinese::MusicalSymbolCombiningKempulWithJegogan),
+            MUSICAL_SYMBOL_COMBINING_KEMPLI_WITH_JEGOGAN => Ok(Balinese::MusicalSymbolCombiningKempliWithJegogan),
+            MUSICAL_SYMBOL_COMBINING_BENDE => Ok(Balinese::MusicalSymbolCombiningBende),
+            MUSICAL_SYMBOL_COMBINING_GONG => Ok(Balinese::MusicalSymbolCombiningGong),
+            MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DUG => Ok(Balinese::MusicalSymbolRightDashHandOpenDug),
+            MUSICAL_SYMBOL_RIGHT_DASH_HAND_OPEN_DAG => Ok(Balinese::MusicalSymbolRightDashHandOpenDag),
+            MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TUK => Ok(Balinese::MusicalSymbolRightDashHandClosedTuk),
+            MUSICAL_SYMBOL_RIGHT_DASH_HAND_CLOSED_TAK => Ok(Balinese::MusicalSymbolRightDashHandClosedTak),
+            MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PANG => Ok(Balinese::MusicalSymbolLeftDashHandOpenPang),
+            MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PUNG => Ok(Balinese::MusicalSymbolLeftDashHandOpenPung),
+            MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLAK => Ok(Balinese::MusicalSymbolLeftDashHandClosedPlak),
+            MUSICAL_SYMBOL_LEFT_DASH_HAND_CLOSED_PLUK => Ok(Balinese::MusicalSymbolLeftDashHandClosedPluk),
+            MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PING => Ok(Balinese::MusicalSymbolLeftDashHandOpenPing),
             _ => Err(()),
         }
     }
@@ -802,135 +802,135 @@ impl Iterator for Balinese {
 }
 
 impl Balinese {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Balinese::BalineseSignUluRicem
+        Balinese::SignUluRicem
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Balinese::BalineseSignUluRicem => "balinese sign ulu ricem",
-            Balinese::BalineseSignUluCandra => "balinese sign ulu candra",
-            Balinese::BalineseSignCecek => "balinese sign cecek",
-            Balinese::BalineseSignSurang => "balinese sign surang",
-            Balinese::BalineseSignBisah => "balinese sign bisah",
-            Balinese::BalineseLetterAkara => "balinese letter akara",
-            Balinese::BalineseLetterAkaraTedung => "balinese letter akara tedung",
-            Balinese::BalineseLetterIkara => "balinese letter ikara",
-            Balinese::BalineseLetterIkaraTedung => "balinese letter ikara tedung",
-            Balinese::BalineseLetterUkara => "balinese letter ukara",
-            Balinese::BalineseLetterUkaraTedung => "balinese letter ukara tedung",
-            Balinese::BalineseLetterRaRepa => "balinese letter ra repa",
-            Balinese::BalineseLetterRaRepaTedung => "balinese letter ra repa tedung",
-            Balinese::BalineseLetterLaLenga => "balinese letter la lenga",
-            Balinese::BalineseLetterLaLengaTedung => "balinese letter la lenga tedung",
-            Balinese::BalineseLetterEkara => "balinese letter ekara",
-            Balinese::BalineseLetterAikara => "balinese letter aikara",
-            Balinese::BalineseLetterOkara => "balinese letter okara",
-            Balinese::BalineseLetterOkaraTedung => "balinese letter okara tedung",
-            Balinese::BalineseLetterKa => "balinese letter ka",
-            Balinese::BalineseLetterKaMahaprana => "balinese letter ka mahaprana",
-            Balinese::BalineseLetterGa => "balinese letter ga",
-            Balinese::BalineseLetterGaGora => "balinese letter ga gora",
-            Balinese::BalineseLetterNga => "balinese letter nga",
-            Balinese::BalineseLetterCa => "balinese letter ca",
-            Balinese::BalineseLetterCaLaca => "balinese letter ca laca",
-            Balinese::BalineseLetterJa => "balinese letter ja",
-            Balinese::BalineseLetterJaJera => "balinese letter ja jera",
-            Balinese::BalineseLetterNya => "balinese letter nya",
-            Balinese::BalineseLetterTaLatik => "balinese letter ta latik",
-            Balinese::BalineseLetterTaMurdaMahaprana => "balinese letter ta murda mahaprana",
-            Balinese::BalineseLetterDaMurdaAlpaprana => "balinese letter da murda alpaprana",
-            Balinese::BalineseLetterDaMurdaMahaprana => "balinese letter da murda mahaprana",
-            Balinese::BalineseLetterNaRambat => "balinese letter na rambat",
-            Balinese::BalineseLetterTa => "balinese letter ta",
-            Balinese::BalineseLetterTaTawa => "balinese letter ta tawa",
-            Balinese::BalineseLetterDa => "balinese letter da",
-            Balinese::BalineseLetterDaMadu => "balinese letter da madu",
-            Balinese::BalineseLetterNa => "balinese letter na",
-            Balinese::BalineseLetterPa => "balinese letter pa",
-            Balinese::BalineseLetterPaKapal => "balinese letter pa kapal",
-            Balinese::BalineseLetterBa => "balinese letter ba",
-            Balinese::BalineseLetterBaKembang => "balinese letter ba kembang",
-            Balinese::BalineseLetterMa => "balinese letter ma",
-            Balinese::BalineseLetterYa => "balinese letter ya",
-            Balinese::BalineseLetterRa => "balinese letter ra",
-            Balinese::BalineseLetterLa => "balinese letter la",
-            Balinese::BalineseLetterWa => "balinese letter wa",
-            Balinese::BalineseLetterSaSaga => "balinese letter sa saga",
-            Balinese::BalineseLetterSaSapa => "balinese letter sa sapa",
-            Balinese::BalineseLetterSa => "balinese letter sa",
-            Balinese::BalineseLetterHa => "balinese letter ha",
-            Balinese::BalineseSignRerekan => "balinese sign rerekan",
-            Balinese::BalineseVowelSignTedung => "balinese vowel sign tedung",
-            Balinese::BalineseVowelSignUlu => "balinese vowel sign ulu",
-            Balinese::BalineseVowelSignUluSari => "balinese vowel sign ulu sari",
-            Balinese::BalineseVowelSignSuku => "balinese vowel sign suku",
-            Balinese::BalineseVowelSignSukuIlut => "balinese vowel sign suku ilut",
-            Balinese::BalineseVowelSignRaRepa => "balinese vowel sign ra repa",
-            Balinese::BalineseVowelSignRaRepaTedung => "balinese vowel sign ra repa tedung",
-            Balinese::BalineseVowelSignLaLenga => "balinese vowel sign la lenga",
-            Balinese::BalineseVowelSignLaLengaTedung => "balinese vowel sign la lenga tedung",
-            Balinese::BalineseVowelSignTaling => "balinese vowel sign taling",
-            Balinese::BalineseVowelSignTalingRepa => "balinese vowel sign taling repa",
-            Balinese::BalineseVowelSignTalingTedung => "balinese vowel sign taling tedung",
-            Balinese::BalineseVowelSignTalingRepaTedung => "balinese vowel sign taling repa tedung",
-            Balinese::BalineseVowelSignPepet => "balinese vowel sign pepet",
-            Balinese::BalineseVowelSignPepetTedung => "balinese vowel sign pepet tedung",
-            Balinese::BalineseAdegAdeg => "balinese adeg adeg",
-            Balinese::BalineseLetterKafSasak => "balinese letter kaf sasak",
-            Balinese::BalineseLetterKhotSasak => "balinese letter khot sasak",
-            Balinese::BalineseLetterTzirSasak => "balinese letter tzir sasak",
-            Balinese::BalineseLetterEfSasak => "balinese letter ef sasak",
-            Balinese::BalineseLetterVeSasak => "balinese letter ve sasak",
-            Balinese::BalineseLetterZalSasak => "balinese letter zal sasak",
-            Balinese::BalineseLetterAsyuraSasak => "balinese letter asyura sasak",
-            Balinese::BalineseDigitZero => "balinese digit zero",
-            Balinese::BalineseDigitOne => "balinese digit one",
-            Balinese::BalineseDigitTwo => "balinese digit two",
-            Balinese::BalineseDigitThree => "balinese digit three",
-            Balinese::BalineseDigitFour => "balinese digit four",
-            Balinese::BalineseDigitFive => "balinese digit five",
-            Balinese::BalineseDigitSix => "balinese digit six",
-            Balinese::BalineseDigitSeven => "balinese digit seven",
-            Balinese::BalineseDigitEight => "balinese digit eight",
-            Balinese::BalineseDigitNine => "balinese digit nine",
-            Balinese::BalinesePanti => "balinese panti",
-            Balinese::BalinesePamada => "balinese pamada",
-            Balinese::BalineseWindu => "balinese windu",
-            Balinese::BalineseCarikPamungkah => "balinese carik pamungkah",
-            Balinese::BalineseCarikSiki => "balinese carik siki",
-            Balinese::BalineseCarikPareren => "balinese carik pareren",
-            Balinese::BalinesePameneng => "balinese pameneng",
-            Balinese::BalineseMusicalSymbolDong => "balinese musical symbol dong",
-            Balinese::BalineseMusicalSymbolDeng => "balinese musical symbol deng",
-            Balinese::BalineseMusicalSymbolDung => "balinese musical symbol dung",
-            Balinese::BalineseMusicalSymbolDang => "balinese musical symbol dang",
-            Balinese::BalineseMusicalSymbolDangSurang => "balinese musical symbol dang surang",
-            Balinese::BalineseMusicalSymbolDing => "balinese musical symbol ding",
-            Balinese::BalineseMusicalSymbolDaeng => "balinese musical symbol daeng",
-            Balinese::BalineseMusicalSymbolDeung => "balinese musical symbol deung",
-            Balinese::BalineseMusicalSymbolDaing => "balinese musical symbol daing",
-            Balinese::BalineseMusicalSymbolDangGede => "balinese musical symbol dang gede",
-            Balinese::BalineseMusicalSymbolCombiningTegeh => "balinese musical symbol combining tegeh",
-            Balinese::BalineseMusicalSymbolCombiningEndep => "balinese musical symbol combining endep",
-            Balinese::BalineseMusicalSymbolCombiningKempul => "balinese musical symbol combining kempul",
-            Balinese::BalineseMusicalSymbolCombiningKempli => "balinese musical symbol combining kempli",
-            Balinese::BalineseMusicalSymbolCombiningJegogan => "balinese musical symbol combining jegogan",
-            Balinese::BalineseMusicalSymbolCombiningKempulWithJegogan => "balinese musical symbol combining kempul with jegogan",
-            Balinese::BalineseMusicalSymbolCombiningKempliWithJegogan => "balinese musical symbol combining kempli with jegogan",
-            Balinese::BalineseMusicalSymbolCombiningBende => "balinese musical symbol combining bende",
-            Balinese::BalineseMusicalSymbolCombiningGong => "balinese musical symbol combining gong",
-            Balinese::BalineseMusicalSymbolRightDashHandOpenDug => "balinese musical symbol right-hand open dug",
-            Balinese::BalineseMusicalSymbolRightDashHandOpenDag => "balinese musical symbol right-hand open dag",
-            Balinese::BalineseMusicalSymbolRightDashHandClosedTuk => "balinese musical symbol right-hand closed tuk",
-            Balinese::BalineseMusicalSymbolRightDashHandClosedTak => "balinese musical symbol right-hand closed tak",
-            Balinese::BalineseMusicalSymbolLeftDashHandOpenPang => "balinese musical symbol left-hand open pang",
-            Balinese::BalineseMusicalSymbolLeftDashHandOpenPung => "balinese musical symbol left-hand open pung",
-            Balinese::BalineseMusicalSymbolLeftDashHandClosedPlak => "balinese musical symbol left-hand closed plak",
-            Balinese::BalineseMusicalSymbolLeftDashHandClosedPluk => "balinese musical symbol left-hand closed pluk",
-            Balinese::BalineseMusicalSymbolLeftDashHandOpenPing => "balinese musical symbol left-hand open ping",
+            Balinese::SignUluRicem => "balinese sign ulu ricem",
+            Balinese::SignUluCandra => "balinese sign ulu candra",
+            Balinese::SignCecek => "balinese sign cecek",
+            Balinese::SignSurang => "balinese sign surang",
+            Balinese::SignBisah => "balinese sign bisah",
+            Balinese::LetterAkara => "balinese letter akara",
+            Balinese::LetterAkaraTedung => "balinese letter akara tedung",
+            Balinese::LetterIkara => "balinese letter ikara",
+            Balinese::LetterIkaraTedung => "balinese letter ikara tedung",
+            Balinese::LetterUkara => "balinese letter ukara",
+            Balinese::LetterUkaraTedung => "balinese letter ukara tedung",
+            Balinese::LetterRaRepa => "balinese letter ra repa",
+            Balinese::LetterRaRepaTedung => "balinese letter ra repa tedung",
+            Balinese::LetterLaLenga => "balinese letter la lenga",
+            Balinese::LetterLaLengaTedung => "balinese letter la lenga tedung",
+            Balinese::LetterEkara => "balinese letter ekara",
+            Balinese::LetterAikara => "balinese letter aikara",
+            Balinese::LetterOkara => "balinese letter okara",
+            Balinese::LetterOkaraTedung => "balinese letter okara tedung",
+            Balinese::LetterKa => "balinese letter ka",
+            Balinese::LetterKaMahaprana => "balinese letter ka mahaprana",
+            Balinese::LetterGa => "balinese letter ga",
+            Balinese::LetterGaGora => "balinese letter ga gora",
+            Balinese::LetterNga => "balinese letter nga",
+            Balinese::LetterCa => "balinese letter ca",
+            Balinese::LetterCaLaca => "balinese letter ca laca",
+            Balinese::LetterJa => "balinese letter ja",
+            Balinese::LetterJaJera => "balinese letter ja jera",
+            Balinese::LetterNya => "balinese letter nya",
+            Balinese::LetterTaLatik => "balinese letter ta latik",
+            Balinese::LetterTaMurdaMahaprana => "balinese letter ta murda mahaprana",
+            Balinese::LetterDaMurdaAlpaprana => "balinese letter da murda alpaprana",
+            Balinese::LetterDaMurdaMahaprana => "balinese letter da murda mahaprana",
+            Balinese::LetterNaRambat => "balinese letter na rambat",
+            Balinese::LetterTa => "balinese letter ta",
+            Balinese::LetterTaTawa => "balinese letter ta tawa",
+            Balinese::LetterDa => "balinese letter da",
+            Balinese::LetterDaMadu => "balinese letter da madu",
+            Balinese::LetterNa => "balinese letter na",
+            Balinese::LetterPa => "balinese letter pa",
+            Balinese::LetterPaKapal => "balinese letter pa kapal",
+            Balinese::LetterBa => "balinese letter ba",
+            Balinese::LetterBaKembang => "balinese letter ba kembang",
+            Balinese::LetterMa => "balinese letter ma",
+            Balinese::LetterYa => "balinese letter ya",
+            Balinese::LetterRa => "balinese letter ra",
+            Balinese::LetterLa => "balinese letter la",
+            Balinese::LetterWa => "balinese letter wa",
+            Balinese::LetterSaSaga => "balinese letter sa saga",
+            Balinese::LetterSaSapa => "balinese letter sa sapa",
+            Balinese::LetterSa => "balinese letter sa",
+            Balinese::LetterHa => "balinese letter ha",
+            Balinese::SignRerekan => "balinese sign rerekan",
+            Balinese::VowelSignTedung => "balinese vowel sign tedung",
+            Balinese::VowelSignUlu => "balinese vowel sign ulu",
+            Balinese::VowelSignUluSari => "balinese vowel sign ulu sari",
+            Balinese::VowelSignSuku => "balinese vowel sign suku",
+            Balinese::VowelSignSukuIlut => "balinese vowel sign suku ilut",
+            Balinese::VowelSignRaRepa => "balinese vowel sign ra repa",
+            Balinese::VowelSignRaRepaTedung => "balinese vowel sign ra repa tedung",
+            Balinese::VowelSignLaLenga => "balinese vowel sign la lenga",
+            Balinese::VowelSignLaLengaTedung => "balinese vowel sign la lenga tedung",
+            Balinese::VowelSignTaling => "balinese vowel sign taling",
+            Balinese::VowelSignTalingRepa => "balinese vowel sign taling repa",
+            Balinese::VowelSignTalingTedung => "balinese vowel sign taling tedung",
+            Balinese::VowelSignTalingRepaTedung => "balinese vowel sign taling repa tedung",
+            Balinese::VowelSignPepet => "balinese vowel sign pepet",
+            Balinese::VowelSignPepetTedung => "balinese vowel sign pepet tedung",
+            Balinese::AdegAdeg => "balinese adeg adeg",
+            Balinese::LetterKafSasak => "balinese letter kaf sasak",
+            Balinese::LetterKhotSasak => "balinese letter khot sasak",
+            Balinese::LetterTzirSasak => "balinese letter tzir sasak",
+            Balinese::LetterEfSasak => "balinese letter ef sasak",
+            Balinese::LetterVeSasak => "balinese letter ve sasak",
+            Balinese::LetterZalSasak => "balinese letter zal sasak",
+            Balinese::LetterAsyuraSasak => "balinese letter asyura sasak",
+            Balinese::DigitZero => "balinese digit zero",
+            Balinese::DigitOne => "balinese digit one",
+            Balinese::DigitTwo => "balinese digit two",
+            Balinese::DigitThree => "balinese digit three",
+            Balinese::DigitFour => "balinese digit four",
+            Balinese::DigitFive => "balinese digit five",
+            Balinese::DigitSix => "balinese digit six",
+            Balinese::DigitSeven => "balinese digit seven",
+            Balinese::DigitEight => "balinese digit eight",
+            Balinese::DigitNine => "balinese digit nine",
+            Balinese::Panti => "balinese panti",
+            Balinese::Pamada => "balinese pamada",
+            Balinese::Windu => "balinese windu",
+            Balinese::CarikPamungkah => "balinese carik pamungkah",
+            Balinese::CarikSiki => "balinese carik siki",
+            Balinese::CarikPareren => "balinese carik pareren",
+            Balinese::Pameneng => "balinese pameneng",
+            Balinese::MusicalSymbolDong => "balinese musical symbol dong",
+            Balinese::MusicalSymbolDeng => "balinese musical symbol deng",
+            Balinese::MusicalSymbolDung => "balinese musical symbol dung",
+            Balinese::MusicalSymbolDang => "balinese musical symbol dang",
+            Balinese::MusicalSymbolDangSurang => "balinese musical symbol dang surang",
+            Balinese::MusicalSymbolDing => "balinese musical symbol ding",
+            Balinese::MusicalSymbolDaeng => "balinese musical symbol daeng",
+            Balinese::MusicalSymbolDeung => "balinese musical symbol deung",
+            Balinese::MusicalSymbolDaing => "balinese musical symbol daing",
+            Balinese::MusicalSymbolDangGede => "balinese musical symbol dang gede",
+            Balinese::MusicalSymbolCombiningTegeh => "balinese musical symbol combining tegeh",
+            Balinese::MusicalSymbolCombiningEndep => "balinese musical symbol combining endep",
+            Balinese::MusicalSymbolCombiningKempul => "balinese musical symbol combining kempul",
+            Balinese::MusicalSymbolCombiningKempli => "balinese musical symbol combining kempli",
+            Balinese::MusicalSymbolCombiningJegogan => "balinese musical symbol combining jegogan",
+            Balinese::MusicalSymbolCombiningKempulWithJegogan => "balinese musical symbol combining kempul with jegogan",
+            Balinese::MusicalSymbolCombiningKempliWithJegogan => "balinese musical symbol combining kempli with jegogan",
+            Balinese::MusicalSymbolCombiningBende => "balinese musical symbol combining bende",
+            Balinese::MusicalSymbolCombiningGong => "balinese musical symbol combining gong",
+            Balinese::MusicalSymbolRightDashHandOpenDug => "balinese musical symbol right-hand open dug",
+            Balinese::MusicalSymbolRightDashHandOpenDag => "balinese musical symbol right-hand open dag",
+            Balinese::MusicalSymbolRightDashHandClosedTuk => "balinese musical symbol right-hand closed tuk",
+            Balinese::MusicalSymbolRightDashHandClosedTak => "balinese musical symbol right-hand closed tak",
+            Balinese::MusicalSymbolLeftDashHandOpenPang => "balinese musical symbol left-hand open pang",
+            Balinese::MusicalSymbolLeftDashHandOpenPung => "balinese musical symbol left-hand open pung",
+            Balinese::MusicalSymbolLeftDashHandClosedPlak => "balinese musical symbol left-hand closed plak",
+            Balinese::MusicalSymbolLeftDashHandClosedPluk => "balinese musical symbol left-hand closed pluk",
+            Balinese::MusicalSymbolLeftDashHandOpenPing => "balinese musical symbol left-hand open ping",
         }
     }
 }

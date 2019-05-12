@@ -6,121 +6,121 @@
 /// 𞋰 𞋱 𞋲 𞋳 𞋴 𞋵 𞋶 𞋷 𞋸 𞋹
 pub mod constants {
     /// \u{1e2c0}: '𞋀'
-    pub const WANCHO_LETTER_AA: char = '𞋀';
+    pub const LETTER_AA: char = '𞋀';
     /// \u{1e2c1}: '𞋁'
-    pub const WANCHO_LETTER_A: char = '𞋁';
+    pub const LETTER_A: char = '𞋁';
     /// \u{1e2c2}: '𞋂'
-    pub const WANCHO_LETTER_BA: char = '𞋂';
+    pub const LETTER_BA: char = '𞋂';
     /// \u{1e2c3}: '𞋃'
-    pub const WANCHO_LETTER_CA: char = '𞋃';
+    pub const LETTER_CA: char = '𞋃';
     /// \u{1e2c4}: '𞋄'
-    pub const WANCHO_LETTER_DA: char = '𞋄';
+    pub const LETTER_DA: char = '𞋄';
     /// \u{1e2c5}: '𞋅'
-    pub const WANCHO_LETTER_GA: char = '𞋅';
+    pub const LETTER_GA: char = '𞋅';
     /// \u{1e2c6}: '𞋆'
-    pub const WANCHO_LETTER_YA: char = '𞋆';
+    pub const LETTER_YA: char = '𞋆';
     /// \u{1e2c7}: '𞋇'
-    pub const WANCHO_LETTER_PHA: char = '𞋇';
+    pub const LETTER_PHA: char = '𞋇';
     /// \u{1e2c8}: '𞋈'
-    pub const WANCHO_LETTER_LA: char = '𞋈';
+    pub const LETTER_LA: char = '𞋈';
     /// \u{1e2c9}: '𞋉'
-    pub const WANCHO_LETTER_NA: char = '𞋉';
+    pub const LETTER_NA: char = '𞋉';
     /// \u{1e2ca}: '𞋊'
-    pub const WANCHO_LETTER_PA: char = '𞋊';
+    pub const LETTER_PA: char = '𞋊';
     /// \u{1e2cb}: '𞋋'
-    pub const WANCHO_LETTER_TA: char = '𞋋';
+    pub const LETTER_TA: char = '𞋋';
     /// \u{1e2cc}: '𞋌'
-    pub const WANCHO_LETTER_THA: char = '𞋌';
+    pub const LETTER_THA: char = '𞋌';
     /// \u{1e2cd}: '𞋍'
-    pub const WANCHO_LETTER_FA: char = '𞋍';
+    pub const LETTER_FA: char = '𞋍';
     /// \u{1e2ce}: '𞋎'
-    pub const WANCHO_LETTER_SA: char = '𞋎';
+    pub const LETTER_SA: char = '𞋎';
     /// \u{1e2cf}: '𞋏'
-    pub const WANCHO_LETTER_SHA: char = '𞋏';
+    pub const LETTER_SHA: char = '𞋏';
     /// \u{1e2d0}: '𞋐'
-    pub const WANCHO_LETTER_JA: char = '𞋐';
+    pub const LETTER_JA: char = '𞋐';
     /// \u{1e2d1}: '𞋑'
-    pub const WANCHO_LETTER_ZA: char = '𞋑';
+    pub const LETTER_ZA: char = '𞋑';
     /// \u{1e2d2}: '𞋒'
-    pub const WANCHO_LETTER_WA: char = '𞋒';
+    pub const LETTER_WA: char = '𞋒';
     /// \u{1e2d3}: '𞋓'
-    pub const WANCHO_LETTER_VA: char = '𞋓';
+    pub const LETTER_VA: char = '𞋓';
     /// \u{1e2d4}: '𞋔'
-    pub const WANCHO_LETTER_KA: char = '𞋔';
+    pub const LETTER_KA: char = '𞋔';
     /// \u{1e2d5}: '𞋕'
-    pub const WANCHO_LETTER_O: char = '𞋕';
+    pub const LETTER_O: char = '𞋕';
     /// \u{1e2d6}: '𞋖'
-    pub const WANCHO_LETTER_AU: char = '𞋖';
+    pub const LETTER_AU: char = '𞋖';
     /// \u{1e2d7}: '𞋗'
-    pub const WANCHO_LETTER_RA: char = '𞋗';
+    pub const LETTER_RA: char = '𞋗';
     /// \u{1e2d8}: '𞋘'
-    pub const WANCHO_LETTER_MA: char = '𞋘';
+    pub const LETTER_MA: char = '𞋘';
     /// \u{1e2d9}: '𞋙'
-    pub const WANCHO_LETTER_KHA: char = '𞋙';
+    pub const LETTER_KHA: char = '𞋙';
     /// \u{1e2da}: '𞋚'
-    pub const WANCHO_LETTER_HA: char = '𞋚';
+    pub const LETTER_HA: char = '𞋚';
     /// \u{1e2db}: '𞋛'
-    pub const WANCHO_LETTER_E: char = '𞋛';
+    pub const LETTER_E: char = '𞋛';
     /// \u{1e2dc}: '𞋜'
-    pub const WANCHO_LETTER_I: char = '𞋜';
+    pub const LETTER_I: char = '𞋜';
     /// \u{1e2dd}: '𞋝'
-    pub const WANCHO_LETTER_NGA: char = '𞋝';
+    pub const LETTER_NGA: char = '𞋝';
     /// \u{1e2de}: '𞋞'
-    pub const WANCHO_LETTER_U: char = '𞋞';
+    pub const LETTER_U: char = '𞋞';
     /// \u{1e2df}: '𞋟'
-    pub const WANCHO_LETTER_LLHA: char = '𞋟';
+    pub const LETTER_LLHA: char = '𞋟';
     /// \u{1e2e0}: '𞋠'
-    pub const WANCHO_LETTER_TSA: char = '𞋠';
+    pub const LETTER_TSA: char = '𞋠';
     /// \u{1e2e1}: '𞋡'
-    pub const WANCHO_LETTER_TRA: char = '𞋡';
+    pub const LETTER_TRA: char = '𞋡';
     /// \u{1e2e2}: '𞋢'
-    pub const WANCHO_LETTER_ONG: char = '𞋢';
+    pub const LETTER_ONG: char = '𞋢';
     /// \u{1e2e3}: '𞋣'
-    pub const WANCHO_LETTER_AANG: char = '𞋣';
+    pub const LETTER_AANG: char = '𞋣';
     /// \u{1e2e4}: '𞋤'
-    pub const WANCHO_LETTER_ANG: char = '𞋤';
+    pub const LETTER_ANG: char = '𞋤';
     /// \u{1e2e5}: '𞋥'
-    pub const WANCHO_LETTER_ING: char = '𞋥';
+    pub const LETTER_ING: char = '𞋥';
     /// \u{1e2e6}: '𞋦'
-    pub const WANCHO_LETTER_ON: char = '𞋦';
+    pub const LETTER_ON: char = '𞋦';
     /// \u{1e2e7}: '𞋧'
-    pub const WANCHO_LETTER_EN: char = '𞋧';
+    pub const LETTER_EN: char = '𞋧';
     /// \u{1e2e8}: '𞋨'
-    pub const WANCHO_LETTER_AAN: char = '𞋨';
+    pub const LETTER_AAN: char = '𞋨';
     /// \u{1e2e9}: '𞋩'
-    pub const WANCHO_LETTER_NYA: char = '𞋩';
+    pub const LETTER_NYA: char = '𞋩';
     /// \u{1e2ea}: '𞋪'
-    pub const WANCHO_LETTER_UEN: char = '𞋪';
+    pub const LETTER_UEN: char = '𞋪';
     /// \u{1e2eb}: '𞋫'
-    pub const WANCHO_LETTER_YIH: char = '𞋫';
+    pub const LETTER_YIH: char = '𞋫';
     /// \u{1e2ec}: '𞋬'
-    pub const WANCHO_TONE_TUP: char = '𞋬';
+    pub const TONE_TUP: char = '𞋬';
     /// \u{1e2ed}: '𞋭'
-    pub const WANCHO_TONE_TUPNI: char = '𞋭';
+    pub const TONE_TUPNI: char = '𞋭';
     /// \u{1e2ee}: '𞋮'
-    pub const WANCHO_TONE_KOI: char = '𞋮';
+    pub const TONE_KOI: char = '𞋮';
     /// \u{1e2ef}: '𞋯'
-    pub const WANCHO_TONE_KOINI: char = '𞋯';
+    pub const TONE_KOINI: char = '𞋯';
     /// \u{1e2f0}: '𞋰'
-    pub const WANCHO_DIGIT_ZERO: char = '𞋰';
+    pub const DIGIT_ZERO: char = '𞋰';
     /// \u{1e2f1}: '𞋱'
-    pub const WANCHO_DIGIT_ONE: char = '𞋱';
+    pub const DIGIT_ONE: char = '𞋱';
     /// \u{1e2f2}: '𞋲'
-    pub const WANCHO_DIGIT_TWO: char = '𞋲';
+    pub const DIGIT_TWO: char = '𞋲';
     /// \u{1e2f3}: '𞋳'
-    pub const WANCHO_DIGIT_THREE: char = '𞋳';
+    pub const DIGIT_THREE: char = '𞋳';
     /// \u{1e2f4}: '𞋴'
-    pub const WANCHO_DIGIT_FOUR: char = '𞋴';
+    pub const DIGIT_FOUR: char = '𞋴';
     /// \u{1e2f5}: '𞋵'
-    pub const WANCHO_DIGIT_FIVE: char = '𞋵';
+    pub const DIGIT_FIVE: char = '𞋵';
     /// \u{1e2f6}: '𞋶'
-    pub const WANCHO_DIGIT_SIX: char = '𞋶';
+    pub const DIGIT_SIX: char = '𞋶';
     /// \u{1e2f7}: '𞋷'
-    pub const WANCHO_DIGIT_SEVEN: char = '𞋷';
+    pub const DIGIT_SEVEN: char = '𞋷';
     /// \u{1e2f8}: '𞋸'
-    pub const WANCHO_DIGIT_EIGHT: char = '𞋸';
+    pub const DIGIT_EIGHT: char = '𞋸';
     /// \u{1e2f9}: '𞋹'
-    pub const WANCHO_DIGIT_NINE: char = '𞋹';
+    pub const DIGIT_NINE: char = '𞋹';
 }
 
 /// \u{1e2c0} → \u{1e2ff}\
@@ -132,185 +132,185 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Wancho {
     /// \u{1e2c0}: '𞋀'
-    WanchoLetterAa,
+    LetterAa,
     /// \u{1e2c1}: '𞋁'
-    WanchoLetterA,
+    LetterA,
     /// \u{1e2c2}: '𞋂'
-    WanchoLetterBa,
+    LetterBa,
     /// \u{1e2c3}: '𞋃'
-    WanchoLetterCa,
+    LetterCa,
     /// \u{1e2c4}: '𞋄'
-    WanchoLetterDa,
+    LetterDa,
     /// \u{1e2c5}: '𞋅'
-    WanchoLetterGa,
+    LetterGa,
     /// \u{1e2c6}: '𞋆'
-    WanchoLetterYa,
+    LetterYa,
     /// \u{1e2c7}: '𞋇'
-    WanchoLetterPha,
+    LetterPha,
     /// \u{1e2c8}: '𞋈'
-    WanchoLetterLa,
+    LetterLa,
     /// \u{1e2c9}: '𞋉'
-    WanchoLetterNa,
+    LetterNa,
     /// \u{1e2ca}: '𞋊'
-    WanchoLetterPa,
+    LetterPa,
     /// \u{1e2cb}: '𞋋'
-    WanchoLetterTa,
+    LetterTa,
     /// \u{1e2cc}: '𞋌'
-    WanchoLetterTha,
+    LetterTha,
     /// \u{1e2cd}: '𞋍'
-    WanchoLetterFa,
+    LetterFa,
     /// \u{1e2ce}: '𞋎'
-    WanchoLetterSa,
+    LetterSa,
     /// \u{1e2cf}: '𞋏'
-    WanchoLetterSha,
+    LetterSha,
     /// \u{1e2d0}: '𞋐'
-    WanchoLetterJa,
+    LetterJa,
     /// \u{1e2d1}: '𞋑'
-    WanchoLetterZa,
+    LetterZa,
     /// \u{1e2d2}: '𞋒'
-    WanchoLetterWa,
+    LetterWa,
     /// \u{1e2d3}: '𞋓'
-    WanchoLetterVa,
+    LetterVa,
     /// \u{1e2d4}: '𞋔'
-    WanchoLetterKa,
+    LetterKa,
     /// \u{1e2d5}: '𞋕'
-    WanchoLetterO,
+    LetterO,
     /// \u{1e2d6}: '𞋖'
-    WanchoLetterAu,
+    LetterAu,
     /// \u{1e2d7}: '𞋗'
-    WanchoLetterRa,
+    LetterRa,
     /// \u{1e2d8}: '𞋘'
-    WanchoLetterMa,
+    LetterMa,
     /// \u{1e2d9}: '𞋙'
-    WanchoLetterKha,
+    LetterKha,
     /// \u{1e2da}: '𞋚'
-    WanchoLetterHa,
+    LetterHa,
     /// \u{1e2db}: '𞋛'
-    WanchoLetterE,
+    LetterE,
     /// \u{1e2dc}: '𞋜'
-    WanchoLetterI,
+    LetterI,
     /// \u{1e2dd}: '𞋝'
-    WanchoLetterNga,
+    LetterNga,
     /// \u{1e2de}: '𞋞'
-    WanchoLetterU,
+    LetterU,
     /// \u{1e2df}: '𞋟'
-    WanchoLetterLlha,
+    LetterLlha,
     /// \u{1e2e0}: '𞋠'
-    WanchoLetterTsa,
+    LetterTsa,
     /// \u{1e2e1}: '𞋡'
-    WanchoLetterTra,
+    LetterTra,
     /// \u{1e2e2}: '𞋢'
-    WanchoLetterOng,
+    LetterOng,
     /// \u{1e2e3}: '𞋣'
-    WanchoLetterAang,
+    LetterAang,
     /// \u{1e2e4}: '𞋤'
-    WanchoLetterAng,
+    LetterAng,
     /// \u{1e2e5}: '𞋥'
-    WanchoLetterIng,
+    LetterIng,
     /// \u{1e2e6}: '𞋦'
-    WanchoLetterOn,
+    LetterOn,
     /// \u{1e2e7}: '𞋧'
-    WanchoLetterEn,
+    LetterEn,
     /// \u{1e2e8}: '𞋨'
-    WanchoLetterAan,
+    LetterAan,
     /// \u{1e2e9}: '𞋩'
-    WanchoLetterNya,
+    LetterNya,
     /// \u{1e2ea}: '𞋪'
-    WanchoLetterUen,
+    LetterUen,
     /// \u{1e2eb}: '𞋫'
-    WanchoLetterYih,
+    LetterYih,
     /// \u{1e2ec}: '𞋬'
-    WanchoToneTup,
+    ToneTup,
     /// \u{1e2ed}: '𞋭'
-    WanchoToneTupni,
+    ToneTupni,
     /// \u{1e2ee}: '𞋮'
-    WanchoToneKoi,
+    ToneKoi,
     /// \u{1e2ef}: '𞋯'
-    WanchoToneKoini,
+    ToneKoini,
     /// \u{1e2f0}: '𞋰'
-    WanchoDigitZero,
+    DigitZero,
     /// \u{1e2f1}: '𞋱'
-    WanchoDigitOne,
+    DigitOne,
     /// \u{1e2f2}: '𞋲'
-    WanchoDigitTwo,
+    DigitTwo,
     /// \u{1e2f3}: '𞋳'
-    WanchoDigitThree,
+    DigitThree,
     /// \u{1e2f4}: '𞋴'
-    WanchoDigitFour,
+    DigitFour,
     /// \u{1e2f5}: '𞋵'
-    WanchoDigitFive,
+    DigitFive,
     /// \u{1e2f6}: '𞋶'
-    WanchoDigitSix,
+    DigitSix,
     /// \u{1e2f7}: '𞋷'
-    WanchoDigitSeven,
+    DigitSeven,
     /// \u{1e2f8}: '𞋸'
-    WanchoDigitEight,
+    DigitEight,
     /// \u{1e2f9}: '𞋹'
-    WanchoDigitNine,
+    DigitNine,
 }
 
 impl Into<char> for Wancho {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Wancho::WanchoLetterAa => WANCHO_LETTER_AA,
-            Wancho::WanchoLetterA => WANCHO_LETTER_A,
-            Wancho::WanchoLetterBa => WANCHO_LETTER_BA,
-            Wancho::WanchoLetterCa => WANCHO_LETTER_CA,
-            Wancho::WanchoLetterDa => WANCHO_LETTER_DA,
-            Wancho::WanchoLetterGa => WANCHO_LETTER_GA,
-            Wancho::WanchoLetterYa => WANCHO_LETTER_YA,
-            Wancho::WanchoLetterPha => WANCHO_LETTER_PHA,
-            Wancho::WanchoLetterLa => WANCHO_LETTER_LA,
-            Wancho::WanchoLetterNa => WANCHO_LETTER_NA,
-            Wancho::WanchoLetterPa => WANCHO_LETTER_PA,
-            Wancho::WanchoLetterTa => WANCHO_LETTER_TA,
-            Wancho::WanchoLetterTha => WANCHO_LETTER_THA,
-            Wancho::WanchoLetterFa => WANCHO_LETTER_FA,
-            Wancho::WanchoLetterSa => WANCHO_LETTER_SA,
-            Wancho::WanchoLetterSha => WANCHO_LETTER_SHA,
-            Wancho::WanchoLetterJa => WANCHO_LETTER_JA,
-            Wancho::WanchoLetterZa => WANCHO_LETTER_ZA,
-            Wancho::WanchoLetterWa => WANCHO_LETTER_WA,
-            Wancho::WanchoLetterVa => WANCHO_LETTER_VA,
-            Wancho::WanchoLetterKa => WANCHO_LETTER_KA,
-            Wancho::WanchoLetterO => WANCHO_LETTER_O,
-            Wancho::WanchoLetterAu => WANCHO_LETTER_AU,
-            Wancho::WanchoLetterRa => WANCHO_LETTER_RA,
-            Wancho::WanchoLetterMa => WANCHO_LETTER_MA,
-            Wancho::WanchoLetterKha => WANCHO_LETTER_KHA,
-            Wancho::WanchoLetterHa => WANCHO_LETTER_HA,
-            Wancho::WanchoLetterE => WANCHO_LETTER_E,
-            Wancho::WanchoLetterI => WANCHO_LETTER_I,
-            Wancho::WanchoLetterNga => WANCHO_LETTER_NGA,
-            Wancho::WanchoLetterU => WANCHO_LETTER_U,
-            Wancho::WanchoLetterLlha => WANCHO_LETTER_LLHA,
-            Wancho::WanchoLetterTsa => WANCHO_LETTER_TSA,
-            Wancho::WanchoLetterTra => WANCHO_LETTER_TRA,
-            Wancho::WanchoLetterOng => WANCHO_LETTER_ONG,
-            Wancho::WanchoLetterAang => WANCHO_LETTER_AANG,
-            Wancho::WanchoLetterAng => WANCHO_LETTER_ANG,
-            Wancho::WanchoLetterIng => WANCHO_LETTER_ING,
-            Wancho::WanchoLetterOn => WANCHO_LETTER_ON,
-            Wancho::WanchoLetterEn => WANCHO_LETTER_EN,
-            Wancho::WanchoLetterAan => WANCHO_LETTER_AAN,
-            Wancho::WanchoLetterNya => WANCHO_LETTER_NYA,
-            Wancho::WanchoLetterUen => WANCHO_LETTER_UEN,
-            Wancho::WanchoLetterYih => WANCHO_LETTER_YIH,
-            Wancho::WanchoToneTup => WANCHO_TONE_TUP,
-            Wancho::WanchoToneTupni => WANCHO_TONE_TUPNI,
-            Wancho::WanchoToneKoi => WANCHO_TONE_KOI,
-            Wancho::WanchoToneKoini => WANCHO_TONE_KOINI,
-            Wancho::WanchoDigitZero => WANCHO_DIGIT_ZERO,
-            Wancho::WanchoDigitOne => WANCHO_DIGIT_ONE,
-            Wancho::WanchoDigitTwo => WANCHO_DIGIT_TWO,
-            Wancho::WanchoDigitThree => WANCHO_DIGIT_THREE,
-            Wancho::WanchoDigitFour => WANCHO_DIGIT_FOUR,
-            Wancho::WanchoDigitFive => WANCHO_DIGIT_FIVE,
-            Wancho::WanchoDigitSix => WANCHO_DIGIT_SIX,
-            Wancho::WanchoDigitSeven => WANCHO_DIGIT_SEVEN,
-            Wancho::WanchoDigitEight => WANCHO_DIGIT_EIGHT,
-            Wancho::WanchoDigitNine => WANCHO_DIGIT_NINE,
+            Wancho::LetterAa => LETTER_AA,
+            Wancho::LetterA => LETTER_A,
+            Wancho::LetterBa => LETTER_BA,
+            Wancho::LetterCa => LETTER_CA,
+            Wancho::LetterDa => LETTER_DA,
+            Wancho::LetterGa => LETTER_GA,
+            Wancho::LetterYa => LETTER_YA,
+            Wancho::LetterPha => LETTER_PHA,
+            Wancho::LetterLa => LETTER_LA,
+            Wancho::LetterNa => LETTER_NA,
+            Wancho::LetterPa => LETTER_PA,
+            Wancho::LetterTa => LETTER_TA,
+            Wancho::LetterTha => LETTER_THA,
+            Wancho::LetterFa => LETTER_FA,
+            Wancho::LetterSa => LETTER_SA,
+            Wancho::LetterSha => LETTER_SHA,
+            Wancho::LetterJa => LETTER_JA,
+            Wancho::LetterZa => LETTER_ZA,
+            Wancho::LetterWa => LETTER_WA,
+            Wancho::LetterVa => LETTER_VA,
+            Wancho::LetterKa => LETTER_KA,
+            Wancho::LetterO => LETTER_O,
+            Wancho::LetterAu => LETTER_AU,
+            Wancho::LetterRa => LETTER_RA,
+            Wancho::LetterMa => LETTER_MA,
+            Wancho::LetterKha => LETTER_KHA,
+            Wancho::LetterHa => LETTER_HA,
+            Wancho::LetterE => LETTER_E,
+            Wancho::LetterI => LETTER_I,
+            Wancho::LetterNga => LETTER_NGA,
+            Wancho::LetterU => LETTER_U,
+            Wancho::LetterLlha => LETTER_LLHA,
+            Wancho::LetterTsa => LETTER_TSA,
+            Wancho::LetterTra => LETTER_TRA,
+            Wancho::LetterOng => LETTER_ONG,
+            Wancho::LetterAang => LETTER_AANG,
+            Wancho::LetterAng => LETTER_ANG,
+            Wancho::LetterIng => LETTER_ING,
+            Wancho::LetterOn => LETTER_ON,
+            Wancho::LetterEn => LETTER_EN,
+            Wancho::LetterAan => LETTER_AAN,
+            Wancho::LetterNya => LETTER_NYA,
+            Wancho::LetterUen => LETTER_UEN,
+            Wancho::LetterYih => LETTER_YIH,
+            Wancho::ToneTup => TONE_TUP,
+            Wancho::ToneTupni => TONE_TUPNI,
+            Wancho::ToneKoi => TONE_KOI,
+            Wancho::ToneKoini => TONE_KOINI,
+            Wancho::DigitZero => DIGIT_ZERO,
+            Wancho::DigitOne => DIGIT_ONE,
+            Wancho::DigitTwo => DIGIT_TWO,
+            Wancho::DigitThree => DIGIT_THREE,
+            Wancho::DigitFour => DIGIT_FOUR,
+            Wancho::DigitFive => DIGIT_FIVE,
+            Wancho::DigitSix => DIGIT_SIX,
+            Wancho::DigitSeven => DIGIT_SEVEN,
+            Wancho::DigitEight => DIGIT_EIGHT,
+            Wancho::DigitNine => DIGIT_NINE,
         }
     }
 }
@@ -320,64 +320,64 @@ impl std::convert::TryFrom<char> for Wancho {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            WANCHO_LETTER_AA => Ok(Wancho::WanchoLetterAa),
-            WANCHO_LETTER_A => Ok(Wancho::WanchoLetterA),
-            WANCHO_LETTER_BA => Ok(Wancho::WanchoLetterBa),
-            WANCHO_LETTER_CA => Ok(Wancho::WanchoLetterCa),
-            WANCHO_LETTER_DA => Ok(Wancho::WanchoLetterDa),
-            WANCHO_LETTER_GA => Ok(Wancho::WanchoLetterGa),
-            WANCHO_LETTER_YA => Ok(Wancho::WanchoLetterYa),
-            WANCHO_LETTER_PHA => Ok(Wancho::WanchoLetterPha),
-            WANCHO_LETTER_LA => Ok(Wancho::WanchoLetterLa),
-            WANCHO_LETTER_NA => Ok(Wancho::WanchoLetterNa),
-            WANCHO_LETTER_PA => Ok(Wancho::WanchoLetterPa),
-            WANCHO_LETTER_TA => Ok(Wancho::WanchoLetterTa),
-            WANCHO_LETTER_THA => Ok(Wancho::WanchoLetterTha),
-            WANCHO_LETTER_FA => Ok(Wancho::WanchoLetterFa),
-            WANCHO_LETTER_SA => Ok(Wancho::WanchoLetterSa),
-            WANCHO_LETTER_SHA => Ok(Wancho::WanchoLetterSha),
-            WANCHO_LETTER_JA => Ok(Wancho::WanchoLetterJa),
-            WANCHO_LETTER_ZA => Ok(Wancho::WanchoLetterZa),
-            WANCHO_LETTER_WA => Ok(Wancho::WanchoLetterWa),
-            WANCHO_LETTER_VA => Ok(Wancho::WanchoLetterVa),
-            WANCHO_LETTER_KA => Ok(Wancho::WanchoLetterKa),
-            WANCHO_LETTER_O => Ok(Wancho::WanchoLetterO),
-            WANCHO_LETTER_AU => Ok(Wancho::WanchoLetterAu),
-            WANCHO_LETTER_RA => Ok(Wancho::WanchoLetterRa),
-            WANCHO_LETTER_MA => Ok(Wancho::WanchoLetterMa),
-            WANCHO_LETTER_KHA => Ok(Wancho::WanchoLetterKha),
-            WANCHO_LETTER_HA => Ok(Wancho::WanchoLetterHa),
-            WANCHO_LETTER_E => Ok(Wancho::WanchoLetterE),
-            WANCHO_LETTER_I => Ok(Wancho::WanchoLetterI),
-            WANCHO_LETTER_NGA => Ok(Wancho::WanchoLetterNga),
-            WANCHO_LETTER_U => Ok(Wancho::WanchoLetterU),
-            WANCHO_LETTER_LLHA => Ok(Wancho::WanchoLetterLlha),
-            WANCHO_LETTER_TSA => Ok(Wancho::WanchoLetterTsa),
-            WANCHO_LETTER_TRA => Ok(Wancho::WanchoLetterTra),
-            WANCHO_LETTER_ONG => Ok(Wancho::WanchoLetterOng),
-            WANCHO_LETTER_AANG => Ok(Wancho::WanchoLetterAang),
-            WANCHO_LETTER_ANG => Ok(Wancho::WanchoLetterAng),
-            WANCHO_LETTER_ING => Ok(Wancho::WanchoLetterIng),
-            WANCHO_LETTER_ON => Ok(Wancho::WanchoLetterOn),
-            WANCHO_LETTER_EN => Ok(Wancho::WanchoLetterEn),
-            WANCHO_LETTER_AAN => Ok(Wancho::WanchoLetterAan),
-            WANCHO_LETTER_NYA => Ok(Wancho::WanchoLetterNya),
-            WANCHO_LETTER_UEN => Ok(Wancho::WanchoLetterUen),
-            WANCHO_LETTER_YIH => Ok(Wancho::WanchoLetterYih),
-            WANCHO_TONE_TUP => Ok(Wancho::WanchoToneTup),
-            WANCHO_TONE_TUPNI => Ok(Wancho::WanchoToneTupni),
-            WANCHO_TONE_KOI => Ok(Wancho::WanchoToneKoi),
-            WANCHO_TONE_KOINI => Ok(Wancho::WanchoToneKoini),
-            WANCHO_DIGIT_ZERO => Ok(Wancho::WanchoDigitZero),
-            WANCHO_DIGIT_ONE => Ok(Wancho::WanchoDigitOne),
-            WANCHO_DIGIT_TWO => Ok(Wancho::WanchoDigitTwo),
-            WANCHO_DIGIT_THREE => Ok(Wancho::WanchoDigitThree),
-            WANCHO_DIGIT_FOUR => Ok(Wancho::WanchoDigitFour),
-            WANCHO_DIGIT_FIVE => Ok(Wancho::WanchoDigitFive),
-            WANCHO_DIGIT_SIX => Ok(Wancho::WanchoDigitSix),
-            WANCHO_DIGIT_SEVEN => Ok(Wancho::WanchoDigitSeven),
-            WANCHO_DIGIT_EIGHT => Ok(Wancho::WanchoDigitEight),
-            WANCHO_DIGIT_NINE => Ok(Wancho::WanchoDigitNine),
+            LETTER_AA => Ok(Wancho::LetterAa),
+            LETTER_A => Ok(Wancho::LetterA),
+            LETTER_BA => Ok(Wancho::LetterBa),
+            LETTER_CA => Ok(Wancho::LetterCa),
+            LETTER_DA => Ok(Wancho::LetterDa),
+            LETTER_GA => Ok(Wancho::LetterGa),
+            LETTER_YA => Ok(Wancho::LetterYa),
+            LETTER_PHA => Ok(Wancho::LetterPha),
+            LETTER_LA => Ok(Wancho::LetterLa),
+            LETTER_NA => Ok(Wancho::LetterNa),
+            LETTER_PA => Ok(Wancho::LetterPa),
+            LETTER_TA => Ok(Wancho::LetterTa),
+            LETTER_THA => Ok(Wancho::LetterTha),
+            LETTER_FA => Ok(Wancho::LetterFa),
+            LETTER_SA => Ok(Wancho::LetterSa),
+            LETTER_SHA => Ok(Wancho::LetterSha),
+            LETTER_JA => Ok(Wancho::LetterJa),
+            LETTER_ZA => Ok(Wancho::LetterZa),
+            LETTER_WA => Ok(Wancho::LetterWa),
+            LETTER_VA => Ok(Wancho::LetterVa),
+            LETTER_KA => Ok(Wancho::LetterKa),
+            LETTER_O => Ok(Wancho::LetterO),
+            LETTER_AU => Ok(Wancho::LetterAu),
+            LETTER_RA => Ok(Wancho::LetterRa),
+            LETTER_MA => Ok(Wancho::LetterMa),
+            LETTER_KHA => Ok(Wancho::LetterKha),
+            LETTER_HA => Ok(Wancho::LetterHa),
+            LETTER_E => Ok(Wancho::LetterE),
+            LETTER_I => Ok(Wancho::LetterI),
+            LETTER_NGA => Ok(Wancho::LetterNga),
+            LETTER_U => Ok(Wancho::LetterU),
+            LETTER_LLHA => Ok(Wancho::LetterLlha),
+            LETTER_TSA => Ok(Wancho::LetterTsa),
+            LETTER_TRA => Ok(Wancho::LetterTra),
+            LETTER_ONG => Ok(Wancho::LetterOng),
+            LETTER_AANG => Ok(Wancho::LetterAang),
+            LETTER_ANG => Ok(Wancho::LetterAng),
+            LETTER_ING => Ok(Wancho::LetterIng),
+            LETTER_ON => Ok(Wancho::LetterOn),
+            LETTER_EN => Ok(Wancho::LetterEn),
+            LETTER_AAN => Ok(Wancho::LetterAan),
+            LETTER_NYA => Ok(Wancho::LetterNya),
+            LETTER_UEN => Ok(Wancho::LetterUen),
+            LETTER_YIH => Ok(Wancho::LetterYih),
+            TONE_TUP => Ok(Wancho::ToneTup),
+            TONE_TUPNI => Ok(Wancho::ToneTupni),
+            TONE_KOI => Ok(Wancho::ToneKoi),
+            TONE_KOINI => Ok(Wancho::ToneKoini),
+            DIGIT_ZERO => Ok(Wancho::DigitZero),
+            DIGIT_ONE => Ok(Wancho::DigitOne),
+            DIGIT_TWO => Ok(Wancho::DigitTwo),
+            DIGIT_THREE => Ok(Wancho::DigitThree),
+            DIGIT_FOUR => Ok(Wancho::DigitFour),
+            DIGIT_FIVE => Ok(Wancho::DigitFive),
+            DIGIT_SIX => Ok(Wancho::DigitSix),
+            DIGIT_SEVEN => Ok(Wancho::DigitSeven),
+            DIGIT_EIGHT => Ok(Wancho::DigitEight),
+            DIGIT_NINE => Ok(Wancho::DigitNine),
             _ => Err(()),
         }
     }
@@ -416,72 +416,72 @@ impl Iterator for Wancho {
 }
 
 impl Wancho {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Wancho::WanchoLetterAa
+        Wancho::LetterAa
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Wancho::WanchoLetterAa => "wancho letter aa",
-            Wancho::WanchoLetterA => "wancho letter a",
-            Wancho::WanchoLetterBa => "wancho letter ba",
-            Wancho::WanchoLetterCa => "wancho letter ca",
-            Wancho::WanchoLetterDa => "wancho letter da",
-            Wancho::WanchoLetterGa => "wancho letter ga",
-            Wancho::WanchoLetterYa => "wancho letter ya",
-            Wancho::WanchoLetterPha => "wancho letter pha",
-            Wancho::WanchoLetterLa => "wancho letter la",
-            Wancho::WanchoLetterNa => "wancho letter na",
-            Wancho::WanchoLetterPa => "wancho letter pa",
-            Wancho::WanchoLetterTa => "wancho letter ta",
-            Wancho::WanchoLetterTha => "wancho letter tha",
-            Wancho::WanchoLetterFa => "wancho letter fa",
-            Wancho::WanchoLetterSa => "wancho letter sa",
-            Wancho::WanchoLetterSha => "wancho letter sha",
-            Wancho::WanchoLetterJa => "wancho letter ja",
-            Wancho::WanchoLetterZa => "wancho letter za",
-            Wancho::WanchoLetterWa => "wancho letter wa",
-            Wancho::WanchoLetterVa => "wancho letter va",
-            Wancho::WanchoLetterKa => "wancho letter ka",
-            Wancho::WanchoLetterO => "wancho letter o",
-            Wancho::WanchoLetterAu => "wancho letter au",
-            Wancho::WanchoLetterRa => "wancho letter ra",
-            Wancho::WanchoLetterMa => "wancho letter ma",
-            Wancho::WanchoLetterKha => "wancho letter kha",
-            Wancho::WanchoLetterHa => "wancho letter ha",
-            Wancho::WanchoLetterE => "wancho letter e",
-            Wancho::WanchoLetterI => "wancho letter i",
-            Wancho::WanchoLetterNga => "wancho letter nga",
-            Wancho::WanchoLetterU => "wancho letter u",
-            Wancho::WanchoLetterLlha => "wancho letter llha",
-            Wancho::WanchoLetterTsa => "wancho letter tsa",
-            Wancho::WanchoLetterTra => "wancho letter tra",
-            Wancho::WanchoLetterOng => "wancho letter ong",
-            Wancho::WanchoLetterAang => "wancho letter aang",
-            Wancho::WanchoLetterAng => "wancho letter ang",
-            Wancho::WanchoLetterIng => "wancho letter ing",
-            Wancho::WanchoLetterOn => "wancho letter on",
-            Wancho::WanchoLetterEn => "wancho letter en",
-            Wancho::WanchoLetterAan => "wancho letter aan",
-            Wancho::WanchoLetterNya => "wancho letter nya",
-            Wancho::WanchoLetterUen => "wancho letter uen",
-            Wancho::WanchoLetterYih => "wancho letter yih",
-            Wancho::WanchoToneTup => "wancho tone tup",
-            Wancho::WanchoToneTupni => "wancho tone tupni",
-            Wancho::WanchoToneKoi => "wancho tone koi",
-            Wancho::WanchoToneKoini => "wancho tone koini",
-            Wancho::WanchoDigitZero => "wancho digit zero",
-            Wancho::WanchoDigitOne => "wancho digit one",
-            Wancho::WanchoDigitTwo => "wancho digit two",
-            Wancho::WanchoDigitThree => "wancho digit three",
-            Wancho::WanchoDigitFour => "wancho digit four",
-            Wancho::WanchoDigitFive => "wancho digit five",
-            Wancho::WanchoDigitSix => "wancho digit six",
-            Wancho::WanchoDigitSeven => "wancho digit seven",
-            Wancho::WanchoDigitEight => "wancho digit eight",
-            Wancho::WanchoDigitNine => "wancho digit nine",
+            Wancho::LetterAa => "wancho letter aa",
+            Wancho::LetterA => "wancho letter a",
+            Wancho::LetterBa => "wancho letter ba",
+            Wancho::LetterCa => "wancho letter ca",
+            Wancho::LetterDa => "wancho letter da",
+            Wancho::LetterGa => "wancho letter ga",
+            Wancho::LetterYa => "wancho letter ya",
+            Wancho::LetterPha => "wancho letter pha",
+            Wancho::LetterLa => "wancho letter la",
+            Wancho::LetterNa => "wancho letter na",
+            Wancho::LetterPa => "wancho letter pa",
+            Wancho::LetterTa => "wancho letter ta",
+            Wancho::LetterTha => "wancho letter tha",
+            Wancho::LetterFa => "wancho letter fa",
+            Wancho::LetterSa => "wancho letter sa",
+            Wancho::LetterSha => "wancho letter sha",
+            Wancho::LetterJa => "wancho letter ja",
+            Wancho::LetterZa => "wancho letter za",
+            Wancho::LetterWa => "wancho letter wa",
+            Wancho::LetterVa => "wancho letter va",
+            Wancho::LetterKa => "wancho letter ka",
+            Wancho::LetterO => "wancho letter o",
+            Wancho::LetterAu => "wancho letter au",
+            Wancho::LetterRa => "wancho letter ra",
+            Wancho::LetterMa => "wancho letter ma",
+            Wancho::LetterKha => "wancho letter kha",
+            Wancho::LetterHa => "wancho letter ha",
+            Wancho::LetterE => "wancho letter e",
+            Wancho::LetterI => "wancho letter i",
+            Wancho::LetterNga => "wancho letter nga",
+            Wancho::LetterU => "wancho letter u",
+            Wancho::LetterLlha => "wancho letter llha",
+            Wancho::LetterTsa => "wancho letter tsa",
+            Wancho::LetterTra => "wancho letter tra",
+            Wancho::LetterOng => "wancho letter ong",
+            Wancho::LetterAang => "wancho letter aang",
+            Wancho::LetterAng => "wancho letter ang",
+            Wancho::LetterIng => "wancho letter ing",
+            Wancho::LetterOn => "wancho letter on",
+            Wancho::LetterEn => "wancho letter en",
+            Wancho::LetterAan => "wancho letter aan",
+            Wancho::LetterNya => "wancho letter nya",
+            Wancho::LetterUen => "wancho letter uen",
+            Wancho::LetterYih => "wancho letter yih",
+            Wancho::ToneTup => "wancho tone tup",
+            Wancho::ToneTupni => "wancho tone tupni",
+            Wancho::ToneKoi => "wancho tone koi",
+            Wancho::ToneKoini => "wancho tone koini",
+            Wancho::DigitZero => "wancho digit zero",
+            Wancho::DigitOne => "wancho digit one",
+            Wancho::DigitTwo => "wancho digit two",
+            Wancho::DigitThree => "wancho digit three",
+            Wancho::DigitFour => "wancho digit four",
+            Wancho::DigitFive => "wancho digit five",
+            Wancho::DigitSix => "wancho digit six",
+            Wancho::DigitSeven => "wancho digit seven",
+            Wancho::DigitEight => "wancho digit eight",
+            Wancho::DigitNine => "wancho digit nine",
         }
     }
 }

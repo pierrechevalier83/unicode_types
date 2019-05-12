@@ -814,7 +814,7 @@ impl Iterator for LinearBIdeograms {
 }
 
 impl LinearBIdeograms {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         LinearBIdeograms::LinearBIdeogramB100Man
     }

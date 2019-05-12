@@ -10,259 +10,259 @@
 /// ╰ ╱ ╲ ╳ ╴ ╵ ╶ ╷ ╸ ╹ ╺ ╻ ╼ ╽ ╾
 pub mod constants {
     /// \u{2500}: '─'
-    pub const BOX_DRAWINGS_LIGHT_HORIZONTAL: char = '─';
+    pub const LIGHT_HORIZONTAL: char = '─';
     /// \u{2501}: '━'
-    pub const BOX_DRAWINGS_HEAVY_HORIZONTAL: char = '━';
+    pub const HEAVY_HORIZONTAL: char = '━';
     /// \u{2502}: '│'
-    pub const BOX_DRAWINGS_LIGHT_VERTICAL: char = '│';
+    pub const LIGHT_VERTICAL: char = '│';
     /// \u{2503}: '┃'
-    pub const BOX_DRAWINGS_HEAVY_VERTICAL: char = '┃';
+    pub const HEAVY_VERTICAL: char = '┃';
     /// \u{2504}: '┄'
-    pub const BOX_DRAWINGS_LIGHT_TRIPLE_DASH_HORIZONTAL: char = '┄';
+    pub const LIGHT_TRIPLE_DASH_HORIZONTAL: char = '┄';
     /// \u{2505}: '┅'
-    pub const BOX_DRAWINGS_HEAVY_TRIPLE_DASH_HORIZONTAL: char = '┅';
+    pub const HEAVY_TRIPLE_DASH_HORIZONTAL: char = '┅';
     /// \u{2506}: '┆'
-    pub const BOX_DRAWINGS_LIGHT_TRIPLE_DASH_VERTICAL: char = '┆';
+    pub const LIGHT_TRIPLE_DASH_VERTICAL: char = '┆';
     /// \u{2507}: '┇'
-    pub const BOX_DRAWINGS_HEAVY_TRIPLE_DASH_VERTICAL: char = '┇';
+    pub const HEAVY_TRIPLE_DASH_VERTICAL: char = '┇';
     /// \u{2508}: '┈'
-    pub const BOX_DRAWINGS_LIGHT_QUADRUPLE_DASH_HORIZONTAL: char = '┈';
+    pub const LIGHT_QUADRUPLE_DASH_HORIZONTAL: char = '┈';
     /// \u{2509}: '┉'
-    pub const BOX_DRAWINGS_HEAVY_QUADRUPLE_DASH_HORIZONTAL: char = '┉';
+    pub const HEAVY_QUADRUPLE_DASH_HORIZONTAL: char = '┉';
     /// \u{250a}: '┊'
-    pub const BOX_DRAWINGS_LIGHT_QUADRUPLE_DASH_VERTICAL: char = '┊';
+    pub const LIGHT_QUADRUPLE_DASH_VERTICAL: char = '┊';
     /// \u{250b}: '┋'
-    pub const BOX_DRAWINGS_HEAVY_QUADRUPLE_DASH_VERTICAL: char = '┋';
+    pub const HEAVY_QUADRUPLE_DASH_VERTICAL: char = '┋';
     /// \u{250c}: '┌'
-    pub const BOX_DRAWINGS_LIGHT_DOWN_AND_RIGHT: char = '┌';
+    pub const LIGHT_DOWN_AND_RIGHT: char = '┌';
     /// \u{250d}: '┍'
-    pub const BOX_DRAWINGS_DOWN_LIGHT_AND_RIGHT_HEAVY: char = '┍';
+    pub const DOWN_LIGHT_AND_RIGHT_HEAVY: char = '┍';
     /// \u{250e}: '┎'
-    pub const BOX_DRAWINGS_DOWN_HEAVY_AND_RIGHT_LIGHT: char = '┎';
+    pub const DOWN_HEAVY_AND_RIGHT_LIGHT: char = '┎';
     /// \u{250f}: '┏'
-    pub const BOX_DRAWINGS_HEAVY_DOWN_AND_RIGHT: char = '┏';
+    pub const HEAVY_DOWN_AND_RIGHT: char = '┏';
     /// \u{2510}: '┐'
-    pub const BOX_DRAWINGS_LIGHT_DOWN_AND_LEFT: char = '┐';
+    pub const LIGHT_DOWN_AND_LEFT: char = '┐';
     /// \u{2511}: '┑'
-    pub const BOX_DRAWINGS_DOWN_LIGHT_AND_LEFT_HEAVY: char = '┑';
+    pub const DOWN_LIGHT_AND_LEFT_HEAVY: char = '┑';
     /// \u{2512}: '┒'
-    pub const BOX_DRAWINGS_DOWN_HEAVY_AND_LEFT_LIGHT: char = '┒';
+    pub const DOWN_HEAVY_AND_LEFT_LIGHT: char = '┒';
     /// \u{2513}: '┓'
-    pub const BOX_DRAWINGS_HEAVY_DOWN_AND_LEFT: char = '┓';
+    pub const HEAVY_DOWN_AND_LEFT: char = '┓';
     /// \u{2514}: '└'
-    pub const BOX_DRAWINGS_LIGHT_UP_AND_RIGHT: char = '└';
+    pub const LIGHT_UP_AND_RIGHT: char = '└';
     /// \u{2515}: '┕'
-    pub const BOX_DRAWINGS_UP_LIGHT_AND_RIGHT_HEAVY: char = '┕';
+    pub const UP_LIGHT_AND_RIGHT_HEAVY: char = '┕';
     /// \u{2516}: '┖'
-    pub const BOX_DRAWINGS_UP_HEAVY_AND_RIGHT_LIGHT: char = '┖';
+    pub const UP_HEAVY_AND_RIGHT_LIGHT: char = '┖';
     /// \u{2517}: '┗'
-    pub const BOX_DRAWINGS_HEAVY_UP_AND_RIGHT: char = '┗';
+    pub const HEAVY_UP_AND_RIGHT: char = '┗';
     /// \u{2518}: '┘'
-    pub const BOX_DRAWINGS_LIGHT_UP_AND_LEFT: char = '┘';
+    pub const LIGHT_UP_AND_LEFT: char = '┘';
     /// \u{2519}: '┙'
-    pub const BOX_DRAWINGS_UP_LIGHT_AND_LEFT_HEAVY: char = '┙';
+    pub const UP_LIGHT_AND_LEFT_HEAVY: char = '┙';
     /// \u{251a}: '┚'
-    pub const BOX_DRAWINGS_UP_HEAVY_AND_LEFT_LIGHT: char = '┚';
+    pub const UP_HEAVY_AND_LEFT_LIGHT: char = '┚';
     /// \u{251b}: '┛'
-    pub const BOX_DRAWINGS_HEAVY_UP_AND_LEFT: char = '┛';
+    pub const HEAVY_UP_AND_LEFT: char = '┛';
     /// \u{251c}: '├'
-    pub const BOX_DRAWINGS_LIGHT_VERTICAL_AND_RIGHT: char = '├';
+    pub const LIGHT_VERTICAL_AND_RIGHT: char = '├';
     /// \u{251d}: '┝'
-    pub const BOX_DRAWINGS_VERTICAL_LIGHT_AND_RIGHT_HEAVY: char = '┝';
+    pub const VERTICAL_LIGHT_AND_RIGHT_HEAVY: char = '┝';
     /// \u{251e}: '┞'
-    pub const BOX_DRAWINGS_UP_HEAVY_AND_RIGHT_DOWN_LIGHT: char = '┞';
+    pub const UP_HEAVY_AND_RIGHT_DOWN_LIGHT: char = '┞';
     /// \u{251f}: '┟'
-    pub const BOX_DRAWINGS_DOWN_HEAVY_AND_RIGHT_UP_LIGHT: char = '┟';
+    pub const DOWN_HEAVY_AND_RIGHT_UP_LIGHT: char = '┟';
     /// \u{2520}: '┠'
-    pub const BOX_DRAWINGS_VERTICAL_HEAVY_AND_RIGHT_LIGHT: char = '┠';
+    pub const VERTICAL_HEAVY_AND_RIGHT_LIGHT: char = '┠';
     /// \u{2521}: '┡'
-    pub const BOX_DRAWINGS_DOWN_LIGHT_AND_RIGHT_UP_HEAVY: char = '┡';
+    pub const DOWN_LIGHT_AND_RIGHT_UP_HEAVY: char = '┡';
     /// \u{2522}: '┢'
-    pub const BOX_DRAWINGS_UP_LIGHT_AND_RIGHT_DOWN_HEAVY: char = '┢';
+    pub const UP_LIGHT_AND_RIGHT_DOWN_HEAVY: char = '┢';
     /// \u{2523}: '┣'
-    pub const BOX_DRAWINGS_HEAVY_VERTICAL_AND_RIGHT: char = '┣';
+    pub const HEAVY_VERTICAL_AND_RIGHT: char = '┣';
     /// \u{2524}: '┤'
-    pub const BOX_DRAWINGS_LIGHT_VERTICAL_AND_LEFT: char = '┤';
+    pub const LIGHT_VERTICAL_AND_LEFT: char = '┤';
     /// \u{2525}: '┥'
-    pub const BOX_DRAWINGS_VERTICAL_LIGHT_AND_LEFT_HEAVY: char = '┥';
+    pub const VERTICAL_LIGHT_AND_LEFT_HEAVY: char = '┥';
     /// \u{2526}: '┦'
-    pub const BOX_DRAWINGS_UP_HEAVY_AND_LEFT_DOWN_LIGHT: char = '┦';
+    pub const UP_HEAVY_AND_LEFT_DOWN_LIGHT: char = '┦';
     /// \u{2527}: '┧'
-    pub const BOX_DRAWINGS_DOWN_HEAVY_AND_LEFT_UP_LIGHT: char = '┧';
+    pub const DOWN_HEAVY_AND_LEFT_UP_LIGHT: char = '┧';
     /// \u{2528}: '┨'
-    pub const BOX_DRAWINGS_VERTICAL_HEAVY_AND_LEFT_LIGHT: char = '┨';
+    pub const VERTICAL_HEAVY_AND_LEFT_LIGHT: char = '┨';
     /// \u{2529}: '┩'
-    pub const BOX_DRAWINGS_DOWN_LIGHT_AND_LEFT_UP_HEAVY: char = '┩';
+    pub const DOWN_LIGHT_AND_LEFT_UP_HEAVY: char = '┩';
     /// \u{252a}: '┪'
-    pub const BOX_DRAWINGS_UP_LIGHT_AND_LEFT_DOWN_HEAVY: char = '┪';
+    pub const UP_LIGHT_AND_LEFT_DOWN_HEAVY: char = '┪';
     /// \u{252b}: '┫'
-    pub const BOX_DRAWINGS_HEAVY_VERTICAL_AND_LEFT: char = '┫';
+    pub const HEAVY_VERTICAL_AND_LEFT: char = '┫';
     /// \u{252c}: '┬'
-    pub const BOX_DRAWINGS_LIGHT_DOWN_AND_HORIZONTAL: char = '┬';
+    pub const LIGHT_DOWN_AND_HORIZONTAL: char = '┬';
     /// \u{252d}: '┭'
-    pub const BOX_DRAWINGS_LEFT_HEAVY_AND_RIGHT_DOWN_LIGHT: char = '┭';
+    pub const LEFT_HEAVY_AND_RIGHT_DOWN_LIGHT: char = '┭';
     /// \u{252e}: '┮'
-    pub const BOX_DRAWINGS_RIGHT_HEAVY_AND_LEFT_DOWN_LIGHT: char = '┮';
+    pub const RIGHT_HEAVY_AND_LEFT_DOWN_LIGHT: char = '┮';
     /// \u{252f}: '┯'
-    pub const BOX_DRAWINGS_DOWN_LIGHT_AND_HORIZONTAL_HEAVY: char = '┯';
+    pub const DOWN_LIGHT_AND_HORIZONTAL_HEAVY: char = '┯';
     /// \u{2530}: '┰'
-    pub const BOX_DRAWINGS_DOWN_HEAVY_AND_HORIZONTAL_LIGHT: char = '┰';
+    pub const DOWN_HEAVY_AND_HORIZONTAL_LIGHT: char = '┰';
     /// \u{2531}: '┱'
-    pub const BOX_DRAWINGS_RIGHT_LIGHT_AND_LEFT_DOWN_HEAVY: char = '┱';
+    pub const RIGHT_LIGHT_AND_LEFT_DOWN_HEAVY: char = '┱';
     /// \u{2532}: '┲'
-    pub const BOX_DRAWINGS_LEFT_LIGHT_AND_RIGHT_DOWN_HEAVY: char = '┲';
+    pub const LEFT_LIGHT_AND_RIGHT_DOWN_HEAVY: char = '┲';
     /// \u{2533}: '┳'
-    pub const BOX_DRAWINGS_HEAVY_DOWN_AND_HORIZONTAL: char = '┳';
+    pub const HEAVY_DOWN_AND_HORIZONTAL: char = '┳';
     /// \u{2534}: '┴'
-    pub const BOX_DRAWINGS_LIGHT_UP_AND_HORIZONTAL: char = '┴';
+    pub const LIGHT_UP_AND_HORIZONTAL: char = '┴';
     /// \u{2535}: '┵'
-    pub const BOX_DRAWINGS_LEFT_HEAVY_AND_RIGHT_UP_LIGHT: char = '┵';
+    pub const LEFT_HEAVY_AND_RIGHT_UP_LIGHT: char = '┵';
     /// \u{2536}: '┶'
-    pub const BOX_DRAWINGS_RIGHT_HEAVY_AND_LEFT_UP_LIGHT: char = '┶';
+    pub const RIGHT_HEAVY_AND_LEFT_UP_LIGHT: char = '┶';
     /// \u{2537}: '┷'
-    pub const BOX_DRAWINGS_UP_LIGHT_AND_HORIZONTAL_HEAVY: char = '┷';
+    pub const UP_LIGHT_AND_HORIZONTAL_HEAVY: char = '┷';
     /// \u{2538}: '┸'
-    pub const BOX_DRAWINGS_UP_HEAVY_AND_HORIZONTAL_LIGHT: char = '┸';
+    pub const UP_HEAVY_AND_HORIZONTAL_LIGHT: char = '┸';
     /// \u{2539}: '┹'
-    pub const BOX_DRAWINGS_RIGHT_LIGHT_AND_LEFT_UP_HEAVY: char = '┹';
+    pub const RIGHT_LIGHT_AND_LEFT_UP_HEAVY: char = '┹';
     /// \u{253a}: '┺'
-    pub const BOX_DRAWINGS_LEFT_LIGHT_AND_RIGHT_UP_HEAVY: char = '┺';
+    pub const LEFT_LIGHT_AND_RIGHT_UP_HEAVY: char = '┺';
     /// \u{253b}: '┻'
-    pub const BOX_DRAWINGS_HEAVY_UP_AND_HORIZONTAL: char = '┻';
+    pub const HEAVY_UP_AND_HORIZONTAL: char = '┻';
     /// \u{253c}: '┼'
-    pub const BOX_DRAWINGS_LIGHT_VERTICAL_AND_HORIZONTAL: char = '┼';
+    pub const LIGHT_VERTICAL_AND_HORIZONTAL: char = '┼';
     /// \u{253d}: '┽'
-    pub const BOX_DRAWINGS_LEFT_HEAVY_AND_RIGHT_VERTICAL_LIGHT: char = '┽';
+    pub const LEFT_HEAVY_AND_RIGHT_VERTICAL_LIGHT: char = '┽';
     /// \u{253e}: '┾'
-    pub const BOX_DRAWINGS_RIGHT_HEAVY_AND_LEFT_VERTICAL_LIGHT: char = '┾';
+    pub const RIGHT_HEAVY_AND_LEFT_VERTICAL_LIGHT: char = '┾';
     /// \u{253f}: '┿'
-    pub const BOX_DRAWINGS_VERTICAL_LIGHT_AND_HORIZONTAL_HEAVY: char = '┿';
+    pub const VERTICAL_LIGHT_AND_HORIZONTAL_HEAVY: char = '┿';
     /// \u{2540}: '╀'
-    pub const BOX_DRAWINGS_UP_HEAVY_AND_DOWN_HORIZONTAL_LIGHT: char = '╀';
+    pub const UP_HEAVY_AND_DOWN_HORIZONTAL_LIGHT: char = '╀';
     /// \u{2541}: '╁'
-    pub const BOX_DRAWINGS_DOWN_HEAVY_AND_UP_HORIZONTAL_LIGHT: char = '╁';
+    pub const DOWN_HEAVY_AND_UP_HORIZONTAL_LIGHT: char = '╁';
     /// \u{2542}: '╂'
-    pub const BOX_DRAWINGS_VERTICAL_HEAVY_AND_HORIZONTAL_LIGHT: char = '╂';
+    pub const VERTICAL_HEAVY_AND_HORIZONTAL_LIGHT: char = '╂';
     /// \u{2543}: '╃'
-    pub const BOX_DRAWINGS_LEFT_UP_HEAVY_AND_RIGHT_DOWN_LIGHT: char = '╃';
+    pub const LEFT_UP_HEAVY_AND_RIGHT_DOWN_LIGHT: char = '╃';
     /// \u{2544}: '╄'
-    pub const BOX_DRAWINGS_RIGHT_UP_HEAVY_AND_LEFT_DOWN_LIGHT: char = '╄';
+    pub const RIGHT_UP_HEAVY_AND_LEFT_DOWN_LIGHT: char = '╄';
     /// \u{2545}: '╅'
-    pub const BOX_DRAWINGS_LEFT_DOWN_HEAVY_AND_RIGHT_UP_LIGHT: char = '╅';
+    pub const LEFT_DOWN_HEAVY_AND_RIGHT_UP_LIGHT: char = '╅';
     /// \u{2546}: '╆'
-    pub const BOX_DRAWINGS_RIGHT_DOWN_HEAVY_AND_LEFT_UP_LIGHT: char = '╆';
+    pub const RIGHT_DOWN_HEAVY_AND_LEFT_UP_LIGHT: char = '╆';
     /// \u{2547}: '╇'
-    pub const BOX_DRAWINGS_DOWN_LIGHT_AND_UP_HORIZONTAL_HEAVY: char = '╇';
+    pub const DOWN_LIGHT_AND_UP_HORIZONTAL_HEAVY: char = '╇';
     /// \u{2548}: '╈'
-    pub const BOX_DRAWINGS_UP_LIGHT_AND_DOWN_HORIZONTAL_HEAVY: char = '╈';
+    pub const UP_LIGHT_AND_DOWN_HORIZONTAL_HEAVY: char = '╈';
     /// \u{2549}: '╉'
-    pub const BOX_DRAWINGS_RIGHT_LIGHT_AND_LEFT_VERTICAL_HEAVY: char = '╉';
+    pub const RIGHT_LIGHT_AND_LEFT_VERTICAL_HEAVY: char = '╉';
     /// \u{254a}: '╊'
-    pub const BOX_DRAWINGS_LEFT_LIGHT_AND_RIGHT_VERTICAL_HEAVY: char = '╊';
+    pub const LEFT_LIGHT_AND_RIGHT_VERTICAL_HEAVY: char = '╊';
     /// \u{254b}: '╋'
-    pub const BOX_DRAWINGS_HEAVY_VERTICAL_AND_HORIZONTAL: char = '╋';
+    pub const HEAVY_VERTICAL_AND_HORIZONTAL: char = '╋';
     /// \u{254c}: '╌'
-    pub const BOX_DRAWINGS_LIGHT_DOUBLE_DASH_HORIZONTAL: char = '╌';
+    pub const LIGHT_DOUBLE_DASH_HORIZONTAL: char = '╌';
     /// \u{254d}: '╍'
-    pub const BOX_DRAWINGS_HEAVY_DOUBLE_DASH_HORIZONTAL: char = '╍';
+    pub const HEAVY_DOUBLE_DASH_HORIZONTAL: char = '╍';
     /// \u{254e}: '╎'
-    pub const BOX_DRAWINGS_LIGHT_DOUBLE_DASH_VERTICAL: char = '╎';
+    pub const LIGHT_DOUBLE_DASH_VERTICAL: char = '╎';
     /// \u{254f}: '╏'
-    pub const BOX_DRAWINGS_HEAVY_DOUBLE_DASH_VERTICAL: char = '╏';
+    pub const HEAVY_DOUBLE_DASH_VERTICAL: char = '╏';
     /// \u{2550}: '═'
-    pub const BOX_DRAWINGS_DOUBLE_HORIZONTAL: char = '═';
+    pub const DOUBLE_HORIZONTAL: char = '═';
     /// \u{2551}: '║'
-    pub const BOX_DRAWINGS_DOUBLE_VERTICAL: char = '║';
+    pub const DOUBLE_VERTICAL: char = '║';
     /// \u{2552}: '╒'
-    pub const BOX_DRAWINGS_DOWN_SINGLE_AND_RIGHT_DOUBLE: char = '╒';
+    pub const DOWN_SINGLE_AND_RIGHT_DOUBLE: char = '╒';
     /// \u{2553}: '╓'
-    pub const BOX_DRAWINGS_DOWN_DOUBLE_AND_RIGHT_SINGLE: char = '╓';
+    pub const DOWN_DOUBLE_AND_RIGHT_SINGLE: char = '╓';
     /// \u{2554}: '╔'
-    pub const BOX_DRAWINGS_DOUBLE_DOWN_AND_RIGHT: char = '╔';
+    pub const DOUBLE_DOWN_AND_RIGHT: char = '╔';
     /// \u{2555}: '╕'
-    pub const BOX_DRAWINGS_DOWN_SINGLE_AND_LEFT_DOUBLE: char = '╕';
+    pub const DOWN_SINGLE_AND_LEFT_DOUBLE: char = '╕';
     /// \u{2556}: '╖'
-    pub const BOX_DRAWINGS_DOWN_DOUBLE_AND_LEFT_SINGLE: char = '╖';
+    pub const DOWN_DOUBLE_AND_LEFT_SINGLE: char = '╖';
     /// \u{2557}: '╗'
-    pub const BOX_DRAWINGS_DOUBLE_DOWN_AND_LEFT: char = '╗';
+    pub const DOUBLE_DOWN_AND_LEFT: char = '╗';
     /// \u{2558}: '╘'
-    pub const BOX_DRAWINGS_UP_SINGLE_AND_RIGHT_DOUBLE: char = '╘';
+    pub const UP_SINGLE_AND_RIGHT_DOUBLE: char = '╘';
     /// \u{2559}: '╙'
-    pub const BOX_DRAWINGS_UP_DOUBLE_AND_RIGHT_SINGLE: char = '╙';
+    pub const UP_DOUBLE_AND_RIGHT_SINGLE: char = '╙';
     /// \u{255a}: '╚'
-    pub const BOX_DRAWINGS_DOUBLE_UP_AND_RIGHT: char = '╚';
+    pub const DOUBLE_UP_AND_RIGHT: char = '╚';
     /// \u{255b}: '╛'
-    pub const BOX_DRAWINGS_UP_SINGLE_AND_LEFT_DOUBLE: char = '╛';
+    pub const UP_SINGLE_AND_LEFT_DOUBLE: char = '╛';
     /// \u{255c}: '╜'
-    pub const BOX_DRAWINGS_UP_DOUBLE_AND_LEFT_SINGLE: char = '╜';
+    pub const UP_DOUBLE_AND_LEFT_SINGLE: char = '╜';
     /// \u{255d}: '╝'
-    pub const BOX_DRAWINGS_DOUBLE_UP_AND_LEFT: char = '╝';
+    pub const DOUBLE_UP_AND_LEFT: char = '╝';
     /// \u{255e}: '╞'
-    pub const BOX_DRAWINGS_VERTICAL_SINGLE_AND_RIGHT_DOUBLE: char = '╞';
+    pub const VERTICAL_SINGLE_AND_RIGHT_DOUBLE: char = '╞';
     /// \u{255f}: '╟'
-    pub const BOX_DRAWINGS_VERTICAL_DOUBLE_AND_RIGHT_SINGLE: char = '╟';
+    pub const VERTICAL_DOUBLE_AND_RIGHT_SINGLE: char = '╟';
     /// \u{2560}: '╠'
-    pub const BOX_DRAWINGS_DOUBLE_VERTICAL_AND_RIGHT: char = '╠';
+    pub const DOUBLE_VERTICAL_AND_RIGHT: char = '╠';
     /// \u{2561}: '╡'
-    pub const BOX_DRAWINGS_VERTICAL_SINGLE_AND_LEFT_DOUBLE: char = '╡';
+    pub const VERTICAL_SINGLE_AND_LEFT_DOUBLE: char = '╡';
     /// \u{2562}: '╢'
-    pub const BOX_DRAWINGS_VERTICAL_DOUBLE_AND_LEFT_SINGLE: char = '╢';
+    pub const VERTICAL_DOUBLE_AND_LEFT_SINGLE: char = '╢';
     /// \u{2563}: '╣'
-    pub const BOX_DRAWINGS_DOUBLE_VERTICAL_AND_LEFT: char = '╣';
+    pub const DOUBLE_VERTICAL_AND_LEFT: char = '╣';
     /// \u{2564}: '╤'
-    pub const BOX_DRAWINGS_DOWN_SINGLE_AND_HORIZONTAL_DOUBLE: char = '╤';
+    pub const DOWN_SINGLE_AND_HORIZONTAL_DOUBLE: char = '╤';
     /// \u{2565}: '╥'
-    pub const BOX_DRAWINGS_DOWN_DOUBLE_AND_HORIZONTAL_SINGLE: char = '╥';
+    pub const DOWN_DOUBLE_AND_HORIZONTAL_SINGLE: char = '╥';
     /// \u{2566}: '╦'
-    pub const BOX_DRAWINGS_DOUBLE_DOWN_AND_HORIZONTAL: char = '╦';
+    pub const DOUBLE_DOWN_AND_HORIZONTAL: char = '╦';
     /// \u{2567}: '╧'
-    pub const BOX_DRAWINGS_UP_SINGLE_AND_HORIZONTAL_DOUBLE: char = '╧';
+    pub const UP_SINGLE_AND_HORIZONTAL_DOUBLE: char = '╧';
     /// \u{2568}: '╨'
-    pub const BOX_DRAWINGS_UP_DOUBLE_AND_HORIZONTAL_SINGLE: char = '╨';
+    pub const UP_DOUBLE_AND_HORIZONTAL_SINGLE: char = '╨';
     /// \u{2569}: '╩'
-    pub const BOX_DRAWINGS_DOUBLE_UP_AND_HORIZONTAL: char = '╩';
+    pub const DOUBLE_UP_AND_HORIZONTAL: char = '╩';
     /// \u{256a}: '╪'
-    pub const BOX_DRAWINGS_VERTICAL_SINGLE_AND_HORIZONTAL_DOUBLE: char = '╪';
+    pub const VERTICAL_SINGLE_AND_HORIZONTAL_DOUBLE: char = '╪';
     /// \u{256b}: '╫'
-    pub const BOX_DRAWINGS_VERTICAL_DOUBLE_AND_HORIZONTAL_SINGLE: char = '╫';
+    pub const VERTICAL_DOUBLE_AND_HORIZONTAL_SINGLE: char = '╫';
     /// \u{256c}: '╬'
-    pub const BOX_DRAWINGS_DOUBLE_VERTICAL_AND_HORIZONTAL: char = '╬';
+    pub const DOUBLE_VERTICAL_AND_HORIZONTAL: char = '╬';
     /// \u{256d}: '╭'
-    pub const BOX_DRAWINGS_LIGHT_ARC_DOWN_AND_RIGHT: char = '╭';
+    pub const LIGHT_ARC_DOWN_AND_RIGHT: char = '╭';
     /// \u{256e}: '╮'
-    pub const BOX_DRAWINGS_LIGHT_ARC_DOWN_AND_LEFT: char = '╮';
+    pub const LIGHT_ARC_DOWN_AND_LEFT: char = '╮';
     /// \u{256f}: '╯'
-    pub const BOX_DRAWINGS_LIGHT_ARC_UP_AND_LEFT: char = '╯';
+    pub const LIGHT_ARC_UP_AND_LEFT: char = '╯';
     /// \u{2570}: '╰'
-    pub const BOX_DRAWINGS_LIGHT_ARC_UP_AND_RIGHT: char = '╰';
+    pub const LIGHT_ARC_UP_AND_RIGHT: char = '╰';
     /// \u{2571}: '╱'
-    pub const BOX_DRAWINGS_LIGHT_DIAGONAL_UPPER_RIGHT_TO_LOWER_LEFT: char = '╱';
+    pub const LIGHT_DIAGONAL_UPPER_RIGHT_TO_LOWER_LEFT: char = '╱';
     /// \u{2572}: '╲'
-    pub const BOX_DRAWINGS_LIGHT_DIAGONAL_UPPER_LEFT_TO_LOWER_RIGHT: char = '╲';
+    pub const LIGHT_DIAGONAL_UPPER_LEFT_TO_LOWER_RIGHT: char = '╲';
     /// \u{2573}: '╳'
-    pub const BOX_DRAWINGS_LIGHT_DIAGONAL_CROSS: char = '╳';
+    pub const LIGHT_DIAGONAL_CROSS: char = '╳';
     /// \u{2574}: '╴'
-    pub const BOX_DRAWINGS_LIGHT_LEFT: char = '╴';
+    pub const LIGHT_LEFT: char = '╴';
     /// \u{2575}: '╵'
-    pub const BOX_DRAWINGS_LIGHT_UP: char = '╵';
+    pub const LIGHT_UP: char = '╵';
     /// \u{2576}: '╶'
-    pub const BOX_DRAWINGS_LIGHT_RIGHT: char = '╶';
+    pub const LIGHT_RIGHT: char = '╶';
     /// \u{2577}: '╷'
-    pub const BOX_DRAWINGS_LIGHT_DOWN: char = '╷';
+    pub const LIGHT_DOWN: char = '╷';
     /// \u{2578}: '╸'
-    pub const BOX_DRAWINGS_HEAVY_LEFT: char = '╸';
+    pub const HEAVY_LEFT: char = '╸';
     /// \u{2579}: '╹'
-    pub const BOX_DRAWINGS_HEAVY_UP: char = '╹';
+    pub const HEAVY_UP: char = '╹';
     /// \u{257a}: '╺'
-    pub const BOX_DRAWINGS_HEAVY_RIGHT: char = '╺';
+    pub const HEAVY_RIGHT: char = '╺';
     /// \u{257b}: '╻'
-    pub const BOX_DRAWINGS_HEAVY_DOWN: char = '╻';
+    pub const HEAVY_DOWN: char = '╻';
     /// \u{257c}: '╼'
-    pub const BOX_DRAWINGS_LIGHT_LEFT_AND_HEAVY_RIGHT: char = '╼';
+    pub const LIGHT_LEFT_AND_HEAVY_RIGHT: char = '╼';
     /// \u{257d}: '╽'
-    pub const BOX_DRAWINGS_LIGHT_UP_AND_HEAVY_DOWN: char = '╽';
+    pub const LIGHT_UP_AND_HEAVY_DOWN: char = '╽';
     /// \u{257e}: '╾'
-    pub const BOX_DRAWINGS_HEAVY_LEFT_AND_LIGHT_RIGHT: char = '╾';
+    pub const HEAVY_LEFT_AND_LIGHT_RIGHT: char = '╾';
 }
 
 /// \u{2500} → \u{257f}\
@@ -278,392 +278,392 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum BoxDrawing {
     /// \u{2500}: '─'
-    BoxDrawingsLightHorizontal,
+    LightHorizontal,
     /// \u{2501}: '━'
-    BoxDrawingsHeavyHorizontal,
+    HeavyHorizontal,
     /// \u{2502}: '│'
-    BoxDrawingsLightVertical,
+    LightVertical,
     /// \u{2503}: '┃'
-    BoxDrawingsHeavyVertical,
+    HeavyVertical,
     /// \u{2504}: '┄'
-    BoxDrawingsLightTripleDashHorizontal,
+    LightTripleDashHorizontal,
     /// \u{2505}: '┅'
-    BoxDrawingsHeavyTripleDashHorizontal,
+    HeavyTripleDashHorizontal,
     /// \u{2506}: '┆'
-    BoxDrawingsLightTripleDashVertical,
+    LightTripleDashVertical,
     /// \u{2507}: '┇'
-    BoxDrawingsHeavyTripleDashVertical,
+    HeavyTripleDashVertical,
     /// \u{2508}: '┈'
-    BoxDrawingsLightQuadrupleDashHorizontal,
+    LightQuadrupleDashHorizontal,
     /// \u{2509}: '┉'
-    BoxDrawingsHeavyQuadrupleDashHorizontal,
+    HeavyQuadrupleDashHorizontal,
     /// \u{250a}: '┊'
-    BoxDrawingsLightQuadrupleDashVertical,
+    LightQuadrupleDashVertical,
     /// \u{250b}: '┋'
-    BoxDrawingsHeavyQuadrupleDashVertical,
+    HeavyQuadrupleDashVertical,
     /// \u{250c}: '┌'
-    BoxDrawingsLightDownAndRight,
+    LightDownAndRight,
     /// \u{250d}: '┍'
-    BoxDrawingsDownLightAndRightHeavy,
+    DownLightAndRightHeavy,
     /// \u{250e}: '┎'
-    BoxDrawingsDownHeavyAndRightLight,
+    DownHeavyAndRightLight,
     /// \u{250f}: '┏'
-    BoxDrawingsHeavyDownAndRight,
+    HeavyDownAndRight,
     /// \u{2510}: '┐'
-    BoxDrawingsLightDownAndLeft,
+    LightDownAndLeft,
     /// \u{2511}: '┑'
-    BoxDrawingsDownLightAndLeftHeavy,
+    DownLightAndLeftHeavy,
     /// \u{2512}: '┒'
-    BoxDrawingsDownHeavyAndLeftLight,
+    DownHeavyAndLeftLight,
     /// \u{2513}: '┓'
-    BoxDrawingsHeavyDownAndLeft,
+    HeavyDownAndLeft,
     /// \u{2514}: '└'
-    BoxDrawingsLightUpAndRight,
+    LightUpAndRight,
     /// \u{2515}: '┕'
-    BoxDrawingsUpLightAndRightHeavy,
+    UpLightAndRightHeavy,
     /// \u{2516}: '┖'
-    BoxDrawingsUpHeavyAndRightLight,
+    UpHeavyAndRightLight,
     /// \u{2517}: '┗'
-    BoxDrawingsHeavyUpAndRight,
+    HeavyUpAndRight,
     /// \u{2518}: '┘'
-    BoxDrawingsLightUpAndLeft,
+    LightUpAndLeft,
     /// \u{2519}: '┙'
-    BoxDrawingsUpLightAndLeftHeavy,
+    UpLightAndLeftHeavy,
     /// \u{251a}: '┚'
-    BoxDrawingsUpHeavyAndLeftLight,
+    UpHeavyAndLeftLight,
     /// \u{251b}: '┛'
-    BoxDrawingsHeavyUpAndLeft,
+    HeavyUpAndLeft,
     /// \u{251c}: '├'
-    BoxDrawingsLightVerticalAndRight,
+    LightVerticalAndRight,
     /// \u{251d}: '┝'
-    BoxDrawingsVerticalLightAndRightHeavy,
+    VerticalLightAndRightHeavy,
     /// \u{251e}: '┞'
-    BoxDrawingsUpHeavyAndRightDownLight,
+    UpHeavyAndRightDownLight,
     /// \u{251f}: '┟'
-    BoxDrawingsDownHeavyAndRightUpLight,
+    DownHeavyAndRightUpLight,
     /// \u{2520}: '┠'
-    BoxDrawingsVerticalHeavyAndRightLight,
+    VerticalHeavyAndRightLight,
     /// \u{2521}: '┡'
-    BoxDrawingsDownLightAndRightUpHeavy,
+    DownLightAndRightUpHeavy,
     /// \u{2522}: '┢'
-    BoxDrawingsUpLightAndRightDownHeavy,
+    UpLightAndRightDownHeavy,
     /// \u{2523}: '┣'
-    BoxDrawingsHeavyVerticalAndRight,
+    HeavyVerticalAndRight,
     /// \u{2524}: '┤'
-    BoxDrawingsLightVerticalAndLeft,
+    LightVerticalAndLeft,
     /// \u{2525}: '┥'
-    BoxDrawingsVerticalLightAndLeftHeavy,
+    VerticalLightAndLeftHeavy,
     /// \u{2526}: '┦'
-    BoxDrawingsUpHeavyAndLeftDownLight,
+    UpHeavyAndLeftDownLight,
     /// \u{2527}: '┧'
-    BoxDrawingsDownHeavyAndLeftUpLight,
+    DownHeavyAndLeftUpLight,
     /// \u{2528}: '┨'
-    BoxDrawingsVerticalHeavyAndLeftLight,
+    VerticalHeavyAndLeftLight,
     /// \u{2529}: '┩'
-    BoxDrawingsDownLightAndLeftUpHeavy,
+    DownLightAndLeftUpHeavy,
     /// \u{252a}: '┪'
-    BoxDrawingsUpLightAndLeftDownHeavy,
+    UpLightAndLeftDownHeavy,
     /// \u{252b}: '┫'
-    BoxDrawingsHeavyVerticalAndLeft,
+    HeavyVerticalAndLeft,
     /// \u{252c}: '┬'
-    BoxDrawingsLightDownAndHorizontal,
+    LightDownAndHorizontal,
     /// \u{252d}: '┭'
-    BoxDrawingsLeftHeavyAndRightDownLight,
+    LeftHeavyAndRightDownLight,
     /// \u{252e}: '┮'
-    BoxDrawingsRightHeavyAndLeftDownLight,
+    RightHeavyAndLeftDownLight,
     /// \u{252f}: '┯'
-    BoxDrawingsDownLightAndHorizontalHeavy,
+    DownLightAndHorizontalHeavy,
     /// \u{2530}: '┰'
-    BoxDrawingsDownHeavyAndHorizontalLight,
+    DownHeavyAndHorizontalLight,
     /// \u{2531}: '┱'
-    BoxDrawingsRightLightAndLeftDownHeavy,
+    RightLightAndLeftDownHeavy,
     /// \u{2532}: '┲'
-    BoxDrawingsLeftLightAndRightDownHeavy,
+    LeftLightAndRightDownHeavy,
     /// \u{2533}: '┳'
-    BoxDrawingsHeavyDownAndHorizontal,
+    HeavyDownAndHorizontal,
     /// \u{2534}: '┴'
-    BoxDrawingsLightUpAndHorizontal,
+    LightUpAndHorizontal,
     /// \u{2535}: '┵'
-    BoxDrawingsLeftHeavyAndRightUpLight,
+    LeftHeavyAndRightUpLight,
     /// \u{2536}: '┶'
-    BoxDrawingsRightHeavyAndLeftUpLight,
+    RightHeavyAndLeftUpLight,
     /// \u{2537}: '┷'
-    BoxDrawingsUpLightAndHorizontalHeavy,
+    UpLightAndHorizontalHeavy,
     /// \u{2538}: '┸'
-    BoxDrawingsUpHeavyAndHorizontalLight,
+    UpHeavyAndHorizontalLight,
     /// \u{2539}: '┹'
-    BoxDrawingsRightLightAndLeftUpHeavy,
+    RightLightAndLeftUpHeavy,
     /// \u{253a}: '┺'
-    BoxDrawingsLeftLightAndRightUpHeavy,
+    LeftLightAndRightUpHeavy,
     /// \u{253b}: '┻'
-    BoxDrawingsHeavyUpAndHorizontal,
+    HeavyUpAndHorizontal,
     /// \u{253c}: '┼'
-    BoxDrawingsLightVerticalAndHorizontal,
+    LightVerticalAndHorizontal,
     /// \u{253d}: '┽'
-    BoxDrawingsLeftHeavyAndRightVerticalLight,
+    LeftHeavyAndRightVerticalLight,
     /// \u{253e}: '┾'
-    BoxDrawingsRightHeavyAndLeftVerticalLight,
+    RightHeavyAndLeftVerticalLight,
     /// \u{253f}: '┿'
-    BoxDrawingsVerticalLightAndHorizontalHeavy,
+    VerticalLightAndHorizontalHeavy,
     /// \u{2540}: '╀'
-    BoxDrawingsUpHeavyAndDownHorizontalLight,
+    UpHeavyAndDownHorizontalLight,
     /// \u{2541}: '╁'
-    BoxDrawingsDownHeavyAndUpHorizontalLight,
+    DownHeavyAndUpHorizontalLight,
     /// \u{2542}: '╂'
-    BoxDrawingsVerticalHeavyAndHorizontalLight,
+    VerticalHeavyAndHorizontalLight,
     /// \u{2543}: '╃'
-    BoxDrawingsLeftUpHeavyAndRightDownLight,
+    LeftUpHeavyAndRightDownLight,
     /// \u{2544}: '╄'
-    BoxDrawingsRightUpHeavyAndLeftDownLight,
+    RightUpHeavyAndLeftDownLight,
     /// \u{2545}: '╅'
-    BoxDrawingsLeftDownHeavyAndRightUpLight,
+    LeftDownHeavyAndRightUpLight,
     /// \u{2546}: '╆'
-    BoxDrawingsRightDownHeavyAndLeftUpLight,
+    RightDownHeavyAndLeftUpLight,
     /// \u{2547}: '╇'
-    BoxDrawingsDownLightAndUpHorizontalHeavy,
+    DownLightAndUpHorizontalHeavy,
     /// \u{2548}: '╈'
-    BoxDrawingsUpLightAndDownHorizontalHeavy,
+    UpLightAndDownHorizontalHeavy,
     /// \u{2549}: '╉'
-    BoxDrawingsRightLightAndLeftVerticalHeavy,
+    RightLightAndLeftVerticalHeavy,
     /// \u{254a}: '╊'
-    BoxDrawingsLeftLightAndRightVerticalHeavy,
+    LeftLightAndRightVerticalHeavy,
     /// \u{254b}: '╋'
-    BoxDrawingsHeavyVerticalAndHorizontal,
+    HeavyVerticalAndHorizontal,
     /// \u{254c}: '╌'
-    BoxDrawingsLightDoubleDashHorizontal,
+    LightDoubleDashHorizontal,
     /// \u{254d}: '╍'
-    BoxDrawingsHeavyDoubleDashHorizontal,
+    HeavyDoubleDashHorizontal,
     /// \u{254e}: '╎'
-    BoxDrawingsLightDoubleDashVertical,
+    LightDoubleDashVertical,
     /// \u{254f}: '╏'
-    BoxDrawingsHeavyDoubleDashVertical,
+    HeavyDoubleDashVertical,
     /// \u{2550}: '═'
-    BoxDrawingsDoubleHorizontal,
+    DoubleHorizontal,
     /// \u{2551}: '║'
-    BoxDrawingsDoubleVertical,
+    DoubleVertical,
     /// \u{2552}: '╒'
-    BoxDrawingsDownSingleAndRightDouble,
+    DownSingleAndRightDouble,
     /// \u{2553}: '╓'
-    BoxDrawingsDownDoubleAndRightSingle,
+    DownDoubleAndRightSingle,
     /// \u{2554}: '╔'
-    BoxDrawingsDoubleDownAndRight,
+    DoubleDownAndRight,
     /// \u{2555}: '╕'
-    BoxDrawingsDownSingleAndLeftDouble,
+    DownSingleAndLeftDouble,
     /// \u{2556}: '╖'
-    BoxDrawingsDownDoubleAndLeftSingle,
+    DownDoubleAndLeftSingle,
     /// \u{2557}: '╗'
-    BoxDrawingsDoubleDownAndLeft,
+    DoubleDownAndLeft,
     /// \u{2558}: '╘'
-    BoxDrawingsUpSingleAndRightDouble,
+    UpSingleAndRightDouble,
     /// \u{2559}: '╙'
-    BoxDrawingsUpDoubleAndRightSingle,
+    UpDoubleAndRightSingle,
     /// \u{255a}: '╚'
-    BoxDrawingsDoubleUpAndRight,
+    DoubleUpAndRight,
     /// \u{255b}: '╛'
-    BoxDrawingsUpSingleAndLeftDouble,
+    UpSingleAndLeftDouble,
     /// \u{255c}: '╜'
-    BoxDrawingsUpDoubleAndLeftSingle,
+    UpDoubleAndLeftSingle,
     /// \u{255d}: '╝'
-    BoxDrawingsDoubleUpAndLeft,
+    DoubleUpAndLeft,
     /// \u{255e}: '╞'
-    BoxDrawingsVerticalSingleAndRightDouble,
+    VerticalSingleAndRightDouble,
     /// \u{255f}: '╟'
-    BoxDrawingsVerticalDoubleAndRightSingle,
+    VerticalDoubleAndRightSingle,
     /// \u{2560}: '╠'
-    BoxDrawingsDoubleVerticalAndRight,
+    DoubleVerticalAndRight,
     /// \u{2561}: '╡'
-    BoxDrawingsVerticalSingleAndLeftDouble,
+    VerticalSingleAndLeftDouble,
     /// \u{2562}: '╢'
-    BoxDrawingsVerticalDoubleAndLeftSingle,
+    VerticalDoubleAndLeftSingle,
     /// \u{2563}: '╣'
-    BoxDrawingsDoubleVerticalAndLeft,
+    DoubleVerticalAndLeft,
     /// \u{2564}: '╤'
-    BoxDrawingsDownSingleAndHorizontalDouble,
+    DownSingleAndHorizontalDouble,
     /// \u{2565}: '╥'
-    BoxDrawingsDownDoubleAndHorizontalSingle,
+    DownDoubleAndHorizontalSingle,
     /// \u{2566}: '╦'
-    BoxDrawingsDoubleDownAndHorizontal,
+    DoubleDownAndHorizontal,
     /// \u{2567}: '╧'
-    BoxDrawingsUpSingleAndHorizontalDouble,
+    UpSingleAndHorizontalDouble,
     /// \u{2568}: '╨'
-    BoxDrawingsUpDoubleAndHorizontalSingle,
+    UpDoubleAndHorizontalSingle,
     /// \u{2569}: '╩'
-    BoxDrawingsDoubleUpAndHorizontal,
+    DoubleUpAndHorizontal,
     /// \u{256a}: '╪'
-    BoxDrawingsVerticalSingleAndHorizontalDouble,
+    VerticalSingleAndHorizontalDouble,
     /// \u{256b}: '╫'
-    BoxDrawingsVerticalDoubleAndHorizontalSingle,
+    VerticalDoubleAndHorizontalSingle,
     /// \u{256c}: '╬'
-    BoxDrawingsDoubleVerticalAndHorizontal,
+    DoubleVerticalAndHorizontal,
     /// \u{256d}: '╭'
-    BoxDrawingsLightArcDownAndRight,
+    LightArcDownAndRight,
     /// \u{256e}: '╮'
-    BoxDrawingsLightArcDownAndLeft,
+    LightArcDownAndLeft,
     /// \u{256f}: '╯'
-    BoxDrawingsLightArcUpAndLeft,
+    LightArcUpAndLeft,
     /// \u{2570}: '╰'
-    BoxDrawingsLightArcUpAndRight,
+    LightArcUpAndRight,
     /// \u{2571}: '╱'
-    BoxDrawingsLightDiagonalUpperRightToLowerLeft,
+    LightDiagonalUpperRightToLowerLeft,
     /// \u{2572}: '╲'
-    BoxDrawingsLightDiagonalUpperLeftToLowerRight,
+    LightDiagonalUpperLeftToLowerRight,
     /// \u{2573}: '╳'
-    BoxDrawingsLightDiagonalCross,
+    LightDiagonalCross,
     /// \u{2574}: '╴'
-    BoxDrawingsLightLeft,
+    LightLeft,
     /// \u{2575}: '╵'
-    BoxDrawingsLightUp,
+    LightUp,
     /// \u{2576}: '╶'
-    BoxDrawingsLightRight,
+    LightRight,
     /// \u{2577}: '╷'
-    BoxDrawingsLightDown,
+    LightDown,
     /// \u{2578}: '╸'
-    BoxDrawingsHeavyLeft,
+    HeavyLeft,
     /// \u{2579}: '╹'
-    BoxDrawingsHeavyUp,
+    HeavyUp,
     /// \u{257a}: '╺'
-    BoxDrawingsHeavyRight,
+    HeavyRight,
     /// \u{257b}: '╻'
-    BoxDrawingsHeavyDown,
+    HeavyDown,
     /// \u{257c}: '╼'
-    BoxDrawingsLightLeftAndHeavyRight,
+    LightLeftAndHeavyRight,
     /// \u{257d}: '╽'
-    BoxDrawingsLightUpAndHeavyDown,
+    LightUpAndHeavyDown,
     /// \u{257e}: '╾'
-    BoxDrawingsHeavyLeftAndLightRight,
+    HeavyLeftAndLightRight,
 }
 
 impl Into<char> for BoxDrawing {
     fn into(self) -> char {
         use constants::*;
         match self {
-            BoxDrawing::BoxDrawingsLightHorizontal => BOX_DRAWINGS_LIGHT_HORIZONTAL,
-            BoxDrawing::BoxDrawingsHeavyHorizontal => BOX_DRAWINGS_HEAVY_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLightVertical => BOX_DRAWINGS_LIGHT_VERTICAL,
-            BoxDrawing::BoxDrawingsHeavyVertical => BOX_DRAWINGS_HEAVY_VERTICAL,
-            BoxDrawing::BoxDrawingsLightTripleDashHorizontal => BOX_DRAWINGS_LIGHT_TRIPLE_DASH_HORIZONTAL,
-            BoxDrawing::BoxDrawingsHeavyTripleDashHorizontal => BOX_DRAWINGS_HEAVY_TRIPLE_DASH_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLightTripleDashVertical => BOX_DRAWINGS_LIGHT_TRIPLE_DASH_VERTICAL,
-            BoxDrawing::BoxDrawingsHeavyTripleDashVertical => BOX_DRAWINGS_HEAVY_TRIPLE_DASH_VERTICAL,
-            BoxDrawing::BoxDrawingsLightQuadrupleDashHorizontal => BOX_DRAWINGS_LIGHT_QUADRUPLE_DASH_HORIZONTAL,
-            BoxDrawing::BoxDrawingsHeavyQuadrupleDashHorizontal => BOX_DRAWINGS_HEAVY_QUADRUPLE_DASH_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLightQuadrupleDashVertical => BOX_DRAWINGS_LIGHT_QUADRUPLE_DASH_VERTICAL,
-            BoxDrawing::BoxDrawingsHeavyQuadrupleDashVertical => BOX_DRAWINGS_HEAVY_QUADRUPLE_DASH_VERTICAL,
-            BoxDrawing::BoxDrawingsLightDownAndRight => BOX_DRAWINGS_LIGHT_DOWN_AND_RIGHT,
-            BoxDrawing::BoxDrawingsDownLightAndRightHeavy => BOX_DRAWINGS_DOWN_LIGHT_AND_RIGHT_HEAVY,
-            BoxDrawing::BoxDrawingsDownHeavyAndRightLight => BOX_DRAWINGS_DOWN_HEAVY_AND_RIGHT_LIGHT,
-            BoxDrawing::BoxDrawingsHeavyDownAndRight => BOX_DRAWINGS_HEAVY_DOWN_AND_RIGHT,
-            BoxDrawing::BoxDrawingsLightDownAndLeft => BOX_DRAWINGS_LIGHT_DOWN_AND_LEFT,
-            BoxDrawing::BoxDrawingsDownLightAndLeftHeavy => BOX_DRAWINGS_DOWN_LIGHT_AND_LEFT_HEAVY,
-            BoxDrawing::BoxDrawingsDownHeavyAndLeftLight => BOX_DRAWINGS_DOWN_HEAVY_AND_LEFT_LIGHT,
-            BoxDrawing::BoxDrawingsHeavyDownAndLeft => BOX_DRAWINGS_HEAVY_DOWN_AND_LEFT,
-            BoxDrawing::BoxDrawingsLightUpAndRight => BOX_DRAWINGS_LIGHT_UP_AND_RIGHT,
-            BoxDrawing::BoxDrawingsUpLightAndRightHeavy => BOX_DRAWINGS_UP_LIGHT_AND_RIGHT_HEAVY,
-            BoxDrawing::BoxDrawingsUpHeavyAndRightLight => BOX_DRAWINGS_UP_HEAVY_AND_RIGHT_LIGHT,
-            BoxDrawing::BoxDrawingsHeavyUpAndRight => BOX_DRAWINGS_HEAVY_UP_AND_RIGHT,
-            BoxDrawing::BoxDrawingsLightUpAndLeft => BOX_DRAWINGS_LIGHT_UP_AND_LEFT,
-            BoxDrawing::BoxDrawingsUpLightAndLeftHeavy => BOX_DRAWINGS_UP_LIGHT_AND_LEFT_HEAVY,
-            BoxDrawing::BoxDrawingsUpHeavyAndLeftLight => BOX_DRAWINGS_UP_HEAVY_AND_LEFT_LIGHT,
-            BoxDrawing::BoxDrawingsHeavyUpAndLeft => BOX_DRAWINGS_HEAVY_UP_AND_LEFT,
-            BoxDrawing::BoxDrawingsLightVerticalAndRight => BOX_DRAWINGS_LIGHT_VERTICAL_AND_RIGHT,
-            BoxDrawing::BoxDrawingsVerticalLightAndRightHeavy => BOX_DRAWINGS_VERTICAL_LIGHT_AND_RIGHT_HEAVY,
-            BoxDrawing::BoxDrawingsUpHeavyAndRightDownLight => BOX_DRAWINGS_UP_HEAVY_AND_RIGHT_DOWN_LIGHT,
-            BoxDrawing::BoxDrawingsDownHeavyAndRightUpLight => BOX_DRAWINGS_DOWN_HEAVY_AND_RIGHT_UP_LIGHT,
-            BoxDrawing::BoxDrawingsVerticalHeavyAndRightLight => BOX_DRAWINGS_VERTICAL_HEAVY_AND_RIGHT_LIGHT,
-            BoxDrawing::BoxDrawingsDownLightAndRightUpHeavy => BOX_DRAWINGS_DOWN_LIGHT_AND_RIGHT_UP_HEAVY,
-            BoxDrawing::BoxDrawingsUpLightAndRightDownHeavy => BOX_DRAWINGS_UP_LIGHT_AND_RIGHT_DOWN_HEAVY,
-            BoxDrawing::BoxDrawingsHeavyVerticalAndRight => BOX_DRAWINGS_HEAVY_VERTICAL_AND_RIGHT,
-            BoxDrawing::BoxDrawingsLightVerticalAndLeft => BOX_DRAWINGS_LIGHT_VERTICAL_AND_LEFT,
-            BoxDrawing::BoxDrawingsVerticalLightAndLeftHeavy => BOX_DRAWINGS_VERTICAL_LIGHT_AND_LEFT_HEAVY,
-            BoxDrawing::BoxDrawingsUpHeavyAndLeftDownLight => BOX_DRAWINGS_UP_HEAVY_AND_LEFT_DOWN_LIGHT,
-            BoxDrawing::BoxDrawingsDownHeavyAndLeftUpLight => BOX_DRAWINGS_DOWN_HEAVY_AND_LEFT_UP_LIGHT,
-            BoxDrawing::BoxDrawingsVerticalHeavyAndLeftLight => BOX_DRAWINGS_VERTICAL_HEAVY_AND_LEFT_LIGHT,
-            BoxDrawing::BoxDrawingsDownLightAndLeftUpHeavy => BOX_DRAWINGS_DOWN_LIGHT_AND_LEFT_UP_HEAVY,
-            BoxDrawing::BoxDrawingsUpLightAndLeftDownHeavy => BOX_DRAWINGS_UP_LIGHT_AND_LEFT_DOWN_HEAVY,
-            BoxDrawing::BoxDrawingsHeavyVerticalAndLeft => BOX_DRAWINGS_HEAVY_VERTICAL_AND_LEFT,
-            BoxDrawing::BoxDrawingsLightDownAndHorizontal => BOX_DRAWINGS_LIGHT_DOWN_AND_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLeftHeavyAndRightDownLight => BOX_DRAWINGS_LEFT_HEAVY_AND_RIGHT_DOWN_LIGHT,
-            BoxDrawing::BoxDrawingsRightHeavyAndLeftDownLight => BOX_DRAWINGS_RIGHT_HEAVY_AND_LEFT_DOWN_LIGHT,
-            BoxDrawing::BoxDrawingsDownLightAndHorizontalHeavy => BOX_DRAWINGS_DOWN_LIGHT_AND_HORIZONTAL_HEAVY,
-            BoxDrawing::BoxDrawingsDownHeavyAndHorizontalLight => BOX_DRAWINGS_DOWN_HEAVY_AND_HORIZONTAL_LIGHT,
-            BoxDrawing::BoxDrawingsRightLightAndLeftDownHeavy => BOX_DRAWINGS_RIGHT_LIGHT_AND_LEFT_DOWN_HEAVY,
-            BoxDrawing::BoxDrawingsLeftLightAndRightDownHeavy => BOX_DRAWINGS_LEFT_LIGHT_AND_RIGHT_DOWN_HEAVY,
-            BoxDrawing::BoxDrawingsHeavyDownAndHorizontal => BOX_DRAWINGS_HEAVY_DOWN_AND_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLightUpAndHorizontal => BOX_DRAWINGS_LIGHT_UP_AND_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLeftHeavyAndRightUpLight => BOX_DRAWINGS_LEFT_HEAVY_AND_RIGHT_UP_LIGHT,
-            BoxDrawing::BoxDrawingsRightHeavyAndLeftUpLight => BOX_DRAWINGS_RIGHT_HEAVY_AND_LEFT_UP_LIGHT,
-            BoxDrawing::BoxDrawingsUpLightAndHorizontalHeavy => BOX_DRAWINGS_UP_LIGHT_AND_HORIZONTAL_HEAVY,
-            BoxDrawing::BoxDrawingsUpHeavyAndHorizontalLight => BOX_DRAWINGS_UP_HEAVY_AND_HORIZONTAL_LIGHT,
-            BoxDrawing::BoxDrawingsRightLightAndLeftUpHeavy => BOX_DRAWINGS_RIGHT_LIGHT_AND_LEFT_UP_HEAVY,
-            BoxDrawing::BoxDrawingsLeftLightAndRightUpHeavy => BOX_DRAWINGS_LEFT_LIGHT_AND_RIGHT_UP_HEAVY,
-            BoxDrawing::BoxDrawingsHeavyUpAndHorizontal => BOX_DRAWINGS_HEAVY_UP_AND_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLightVerticalAndHorizontal => BOX_DRAWINGS_LIGHT_VERTICAL_AND_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLeftHeavyAndRightVerticalLight => BOX_DRAWINGS_LEFT_HEAVY_AND_RIGHT_VERTICAL_LIGHT,
-            BoxDrawing::BoxDrawingsRightHeavyAndLeftVerticalLight => BOX_DRAWINGS_RIGHT_HEAVY_AND_LEFT_VERTICAL_LIGHT,
-            BoxDrawing::BoxDrawingsVerticalLightAndHorizontalHeavy => BOX_DRAWINGS_VERTICAL_LIGHT_AND_HORIZONTAL_HEAVY,
-            BoxDrawing::BoxDrawingsUpHeavyAndDownHorizontalLight => BOX_DRAWINGS_UP_HEAVY_AND_DOWN_HORIZONTAL_LIGHT,
-            BoxDrawing::BoxDrawingsDownHeavyAndUpHorizontalLight => BOX_DRAWINGS_DOWN_HEAVY_AND_UP_HORIZONTAL_LIGHT,
-            BoxDrawing::BoxDrawingsVerticalHeavyAndHorizontalLight => BOX_DRAWINGS_VERTICAL_HEAVY_AND_HORIZONTAL_LIGHT,
-            BoxDrawing::BoxDrawingsLeftUpHeavyAndRightDownLight => BOX_DRAWINGS_LEFT_UP_HEAVY_AND_RIGHT_DOWN_LIGHT,
-            BoxDrawing::BoxDrawingsRightUpHeavyAndLeftDownLight => BOX_DRAWINGS_RIGHT_UP_HEAVY_AND_LEFT_DOWN_LIGHT,
-            BoxDrawing::BoxDrawingsLeftDownHeavyAndRightUpLight => BOX_DRAWINGS_LEFT_DOWN_HEAVY_AND_RIGHT_UP_LIGHT,
-            BoxDrawing::BoxDrawingsRightDownHeavyAndLeftUpLight => BOX_DRAWINGS_RIGHT_DOWN_HEAVY_AND_LEFT_UP_LIGHT,
-            BoxDrawing::BoxDrawingsDownLightAndUpHorizontalHeavy => BOX_DRAWINGS_DOWN_LIGHT_AND_UP_HORIZONTAL_HEAVY,
-            BoxDrawing::BoxDrawingsUpLightAndDownHorizontalHeavy => BOX_DRAWINGS_UP_LIGHT_AND_DOWN_HORIZONTAL_HEAVY,
-            BoxDrawing::BoxDrawingsRightLightAndLeftVerticalHeavy => BOX_DRAWINGS_RIGHT_LIGHT_AND_LEFT_VERTICAL_HEAVY,
-            BoxDrawing::BoxDrawingsLeftLightAndRightVerticalHeavy => BOX_DRAWINGS_LEFT_LIGHT_AND_RIGHT_VERTICAL_HEAVY,
-            BoxDrawing::BoxDrawingsHeavyVerticalAndHorizontal => BOX_DRAWINGS_HEAVY_VERTICAL_AND_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLightDoubleDashHorizontal => BOX_DRAWINGS_LIGHT_DOUBLE_DASH_HORIZONTAL,
-            BoxDrawing::BoxDrawingsHeavyDoubleDashHorizontal => BOX_DRAWINGS_HEAVY_DOUBLE_DASH_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLightDoubleDashVertical => BOX_DRAWINGS_LIGHT_DOUBLE_DASH_VERTICAL,
-            BoxDrawing::BoxDrawingsHeavyDoubleDashVertical => BOX_DRAWINGS_HEAVY_DOUBLE_DASH_VERTICAL,
-            BoxDrawing::BoxDrawingsDoubleHorizontal => BOX_DRAWINGS_DOUBLE_HORIZONTAL,
-            BoxDrawing::BoxDrawingsDoubleVertical => BOX_DRAWINGS_DOUBLE_VERTICAL,
-            BoxDrawing::BoxDrawingsDownSingleAndRightDouble => BOX_DRAWINGS_DOWN_SINGLE_AND_RIGHT_DOUBLE,
-            BoxDrawing::BoxDrawingsDownDoubleAndRightSingle => BOX_DRAWINGS_DOWN_DOUBLE_AND_RIGHT_SINGLE,
-            BoxDrawing::BoxDrawingsDoubleDownAndRight => BOX_DRAWINGS_DOUBLE_DOWN_AND_RIGHT,
-            BoxDrawing::BoxDrawingsDownSingleAndLeftDouble => BOX_DRAWINGS_DOWN_SINGLE_AND_LEFT_DOUBLE,
-            BoxDrawing::BoxDrawingsDownDoubleAndLeftSingle => BOX_DRAWINGS_DOWN_DOUBLE_AND_LEFT_SINGLE,
-            BoxDrawing::BoxDrawingsDoubleDownAndLeft => BOX_DRAWINGS_DOUBLE_DOWN_AND_LEFT,
-            BoxDrawing::BoxDrawingsUpSingleAndRightDouble => BOX_DRAWINGS_UP_SINGLE_AND_RIGHT_DOUBLE,
-            BoxDrawing::BoxDrawingsUpDoubleAndRightSingle => BOX_DRAWINGS_UP_DOUBLE_AND_RIGHT_SINGLE,
-            BoxDrawing::BoxDrawingsDoubleUpAndRight => BOX_DRAWINGS_DOUBLE_UP_AND_RIGHT,
-            BoxDrawing::BoxDrawingsUpSingleAndLeftDouble => BOX_DRAWINGS_UP_SINGLE_AND_LEFT_DOUBLE,
-            BoxDrawing::BoxDrawingsUpDoubleAndLeftSingle => BOX_DRAWINGS_UP_DOUBLE_AND_LEFT_SINGLE,
-            BoxDrawing::BoxDrawingsDoubleUpAndLeft => BOX_DRAWINGS_DOUBLE_UP_AND_LEFT,
-            BoxDrawing::BoxDrawingsVerticalSingleAndRightDouble => BOX_DRAWINGS_VERTICAL_SINGLE_AND_RIGHT_DOUBLE,
-            BoxDrawing::BoxDrawingsVerticalDoubleAndRightSingle => BOX_DRAWINGS_VERTICAL_DOUBLE_AND_RIGHT_SINGLE,
-            BoxDrawing::BoxDrawingsDoubleVerticalAndRight => BOX_DRAWINGS_DOUBLE_VERTICAL_AND_RIGHT,
-            BoxDrawing::BoxDrawingsVerticalSingleAndLeftDouble => BOX_DRAWINGS_VERTICAL_SINGLE_AND_LEFT_DOUBLE,
-            BoxDrawing::BoxDrawingsVerticalDoubleAndLeftSingle => BOX_DRAWINGS_VERTICAL_DOUBLE_AND_LEFT_SINGLE,
-            BoxDrawing::BoxDrawingsDoubleVerticalAndLeft => BOX_DRAWINGS_DOUBLE_VERTICAL_AND_LEFT,
-            BoxDrawing::BoxDrawingsDownSingleAndHorizontalDouble => BOX_DRAWINGS_DOWN_SINGLE_AND_HORIZONTAL_DOUBLE,
-            BoxDrawing::BoxDrawingsDownDoubleAndHorizontalSingle => BOX_DRAWINGS_DOWN_DOUBLE_AND_HORIZONTAL_SINGLE,
-            BoxDrawing::BoxDrawingsDoubleDownAndHorizontal => BOX_DRAWINGS_DOUBLE_DOWN_AND_HORIZONTAL,
-            BoxDrawing::BoxDrawingsUpSingleAndHorizontalDouble => BOX_DRAWINGS_UP_SINGLE_AND_HORIZONTAL_DOUBLE,
-            BoxDrawing::BoxDrawingsUpDoubleAndHorizontalSingle => BOX_DRAWINGS_UP_DOUBLE_AND_HORIZONTAL_SINGLE,
-            BoxDrawing::BoxDrawingsDoubleUpAndHorizontal => BOX_DRAWINGS_DOUBLE_UP_AND_HORIZONTAL,
-            BoxDrawing::BoxDrawingsVerticalSingleAndHorizontalDouble => BOX_DRAWINGS_VERTICAL_SINGLE_AND_HORIZONTAL_DOUBLE,
-            BoxDrawing::BoxDrawingsVerticalDoubleAndHorizontalSingle => BOX_DRAWINGS_VERTICAL_DOUBLE_AND_HORIZONTAL_SINGLE,
-            BoxDrawing::BoxDrawingsDoubleVerticalAndHorizontal => BOX_DRAWINGS_DOUBLE_VERTICAL_AND_HORIZONTAL,
-            BoxDrawing::BoxDrawingsLightArcDownAndRight => BOX_DRAWINGS_LIGHT_ARC_DOWN_AND_RIGHT,
-            BoxDrawing::BoxDrawingsLightArcDownAndLeft => BOX_DRAWINGS_LIGHT_ARC_DOWN_AND_LEFT,
-            BoxDrawing::BoxDrawingsLightArcUpAndLeft => BOX_DRAWINGS_LIGHT_ARC_UP_AND_LEFT,
-            BoxDrawing::BoxDrawingsLightArcUpAndRight => BOX_DRAWINGS_LIGHT_ARC_UP_AND_RIGHT,
-            BoxDrawing::BoxDrawingsLightDiagonalUpperRightToLowerLeft => BOX_DRAWINGS_LIGHT_DIAGONAL_UPPER_RIGHT_TO_LOWER_LEFT,
-            BoxDrawing::BoxDrawingsLightDiagonalUpperLeftToLowerRight => BOX_DRAWINGS_LIGHT_DIAGONAL_UPPER_LEFT_TO_LOWER_RIGHT,
-            BoxDrawing::BoxDrawingsLightDiagonalCross => BOX_DRAWINGS_LIGHT_DIAGONAL_CROSS,
-            BoxDrawing::BoxDrawingsLightLeft => BOX_DRAWINGS_LIGHT_LEFT,
-            BoxDrawing::BoxDrawingsLightUp => BOX_DRAWINGS_LIGHT_UP,
-            BoxDrawing::BoxDrawingsLightRight => BOX_DRAWINGS_LIGHT_RIGHT,
-            BoxDrawing::BoxDrawingsLightDown => BOX_DRAWINGS_LIGHT_DOWN,
-            BoxDrawing::BoxDrawingsHeavyLeft => BOX_DRAWINGS_HEAVY_LEFT,
-            BoxDrawing::BoxDrawingsHeavyUp => BOX_DRAWINGS_HEAVY_UP,
-            BoxDrawing::BoxDrawingsHeavyRight => BOX_DRAWINGS_HEAVY_RIGHT,
-            BoxDrawing::BoxDrawingsHeavyDown => BOX_DRAWINGS_HEAVY_DOWN,
-            BoxDrawing::BoxDrawingsLightLeftAndHeavyRight => BOX_DRAWINGS_LIGHT_LEFT_AND_HEAVY_RIGHT,
-            BoxDrawing::BoxDrawingsLightUpAndHeavyDown => BOX_DRAWINGS_LIGHT_UP_AND_HEAVY_DOWN,
-            BoxDrawing::BoxDrawingsHeavyLeftAndLightRight => BOX_DRAWINGS_HEAVY_LEFT_AND_LIGHT_RIGHT,
+            BoxDrawing::LightHorizontal => LIGHT_HORIZONTAL,
+            BoxDrawing::HeavyHorizontal => HEAVY_HORIZONTAL,
+            BoxDrawing::LightVertical => LIGHT_VERTICAL,
+            BoxDrawing::HeavyVertical => HEAVY_VERTICAL,
+            BoxDrawing::LightTripleDashHorizontal => LIGHT_TRIPLE_DASH_HORIZONTAL,
+            BoxDrawing::HeavyTripleDashHorizontal => HEAVY_TRIPLE_DASH_HORIZONTAL,
+            BoxDrawing::LightTripleDashVertical => LIGHT_TRIPLE_DASH_VERTICAL,
+            BoxDrawing::HeavyTripleDashVertical => HEAVY_TRIPLE_DASH_VERTICAL,
+            BoxDrawing::LightQuadrupleDashHorizontal => LIGHT_QUADRUPLE_DASH_HORIZONTAL,
+            BoxDrawing::HeavyQuadrupleDashHorizontal => HEAVY_QUADRUPLE_DASH_HORIZONTAL,
+            BoxDrawing::LightQuadrupleDashVertical => LIGHT_QUADRUPLE_DASH_VERTICAL,
+            BoxDrawing::HeavyQuadrupleDashVertical => HEAVY_QUADRUPLE_DASH_VERTICAL,
+            BoxDrawing::LightDownAndRight => LIGHT_DOWN_AND_RIGHT,
+            BoxDrawing::DownLightAndRightHeavy => DOWN_LIGHT_AND_RIGHT_HEAVY,
+            BoxDrawing::DownHeavyAndRightLight => DOWN_HEAVY_AND_RIGHT_LIGHT,
+            BoxDrawing::HeavyDownAndRight => HEAVY_DOWN_AND_RIGHT,
+            BoxDrawing::LightDownAndLeft => LIGHT_DOWN_AND_LEFT,
+            BoxDrawing::DownLightAndLeftHeavy => DOWN_LIGHT_AND_LEFT_HEAVY,
+            BoxDrawing::DownHeavyAndLeftLight => DOWN_HEAVY_AND_LEFT_LIGHT,
+            BoxDrawing::HeavyDownAndLeft => HEAVY_DOWN_AND_LEFT,
+            BoxDrawing::LightUpAndRight => LIGHT_UP_AND_RIGHT,
+            BoxDrawing::UpLightAndRightHeavy => UP_LIGHT_AND_RIGHT_HEAVY,
+            BoxDrawing::UpHeavyAndRightLight => UP_HEAVY_AND_RIGHT_LIGHT,
+            BoxDrawing::HeavyUpAndRight => HEAVY_UP_AND_RIGHT,
+            BoxDrawing::LightUpAndLeft => LIGHT_UP_AND_LEFT,
+            BoxDrawing::UpLightAndLeftHeavy => UP_LIGHT_AND_LEFT_HEAVY,
+            BoxDrawing::UpHeavyAndLeftLight => UP_HEAVY_AND_LEFT_LIGHT,
+            BoxDrawing::HeavyUpAndLeft => HEAVY_UP_AND_LEFT,
+            BoxDrawing::LightVerticalAndRight => LIGHT_VERTICAL_AND_RIGHT,
+            BoxDrawing::VerticalLightAndRightHeavy => VERTICAL_LIGHT_AND_RIGHT_HEAVY,
+            BoxDrawing::UpHeavyAndRightDownLight => UP_HEAVY_AND_RIGHT_DOWN_LIGHT,
+            BoxDrawing::DownHeavyAndRightUpLight => DOWN_HEAVY_AND_RIGHT_UP_LIGHT,
+            BoxDrawing::VerticalHeavyAndRightLight => VERTICAL_HEAVY_AND_RIGHT_LIGHT,
+            BoxDrawing::DownLightAndRightUpHeavy => DOWN_LIGHT_AND_RIGHT_UP_HEAVY,
+            BoxDrawing::UpLightAndRightDownHeavy => UP_LIGHT_AND_RIGHT_DOWN_HEAVY,
+            BoxDrawing::HeavyVerticalAndRight => HEAVY_VERTICAL_AND_RIGHT,
+            BoxDrawing::LightVerticalAndLeft => LIGHT_VERTICAL_AND_LEFT,
+            BoxDrawing::VerticalLightAndLeftHeavy => VERTICAL_LIGHT_AND_LEFT_HEAVY,
+            BoxDrawing::UpHeavyAndLeftDownLight => UP_HEAVY_AND_LEFT_DOWN_LIGHT,
+            BoxDrawing::DownHeavyAndLeftUpLight => DOWN_HEAVY_AND_LEFT_UP_LIGHT,
+            BoxDrawing::VerticalHeavyAndLeftLight => VERTICAL_HEAVY_AND_LEFT_LIGHT,
+            BoxDrawing::DownLightAndLeftUpHeavy => DOWN_LIGHT_AND_LEFT_UP_HEAVY,
+            BoxDrawing::UpLightAndLeftDownHeavy => UP_LIGHT_AND_LEFT_DOWN_HEAVY,
+            BoxDrawing::HeavyVerticalAndLeft => HEAVY_VERTICAL_AND_LEFT,
+            BoxDrawing::LightDownAndHorizontal => LIGHT_DOWN_AND_HORIZONTAL,
+            BoxDrawing::LeftHeavyAndRightDownLight => LEFT_HEAVY_AND_RIGHT_DOWN_LIGHT,
+            BoxDrawing::RightHeavyAndLeftDownLight => RIGHT_HEAVY_AND_LEFT_DOWN_LIGHT,
+            BoxDrawing::DownLightAndHorizontalHeavy => DOWN_LIGHT_AND_HORIZONTAL_HEAVY,
+            BoxDrawing::DownHeavyAndHorizontalLight => DOWN_HEAVY_AND_HORIZONTAL_LIGHT,
+            BoxDrawing::RightLightAndLeftDownHeavy => RIGHT_LIGHT_AND_LEFT_DOWN_HEAVY,
+            BoxDrawing::LeftLightAndRightDownHeavy => LEFT_LIGHT_AND_RIGHT_DOWN_HEAVY,
+            BoxDrawing::HeavyDownAndHorizontal => HEAVY_DOWN_AND_HORIZONTAL,
+            BoxDrawing::LightUpAndHorizontal => LIGHT_UP_AND_HORIZONTAL,
+            BoxDrawing::LeftHeavyAndRightUpLight => LEFT_HEAVY_AND_RIGHT_UP_LIGHT,
+            BoxDrawing::RightHeavyAndLeftUpLight => RIGHT_HEAVY_AND_LEFT_UP_LIGHT,
+            BoxDrawing::UpLightAndHorizontalHeavy => UP_LIGHT_AND_HORIZONTAL_HEAVY,
+            BoxDrawing::UpHeavyAndHorizontalLight => UP_HEAVY_AND_HORIZONTAL_LIGHT,
+            BoxDrawing::RightLightAndLeftUpHeavy => RIGHT_LIGHT_AND_LEFT_UP_HEAVY,
+            BoxDrawing::LeftLightAndRightUpHeavy => LEFT_LIGHT_AND_RIGHT_UP_HEAVY,
+            BoxDrawing::HeavyUpAndHorizontal => HEAVY_UP_AND_HORIZONTAL,
+            BoxDrawing::LightVerticalAndHorizontal => LIGHT_VERTICAL_AND_HORIZONTAL,
+            BoxDrawing::LeftHeavyAndRightVerticalLight => LEFT_HEAVY_AND_RIGHT_VERTICAL_LIGHT,
+            BoxDrawing::RightHeavyAndLeftVerticalLight => RIGHT_HEAVY_AND_LEFT_VERTICAL_LIGHT,
+            BoxDrawing::VerticalLightAndHorizontalHeavy => VERTICAL_LIGHT_AND_HORIZONTAL_HEAVY,
+            BoxDrawing::UpHeavyAndDownHorizontalLight => UP_HEAVY_AND_DOWN_HORIZONTAL_LIGHT,
+            BoxDrawing::DownHeavyAndUpHorizontalLight => DOWN_HEAVY_AND_UP_HORIZONTAL_LIGHT,
+            BoxDrawing::VerticalHeavyAndHorizontalLight => VERTICAL_HEAVY_AND_HORIZONTAL_LIGHT,
+            BoxDrawing::LeftUpHeavyAndRightDownLight => LEFT_UP_HEAVY_AND_RIGHT_DOWN_LIGHT,
+            BoxDrawing::RightUpHeavyAndLeftDownLight => RIGHT_UP_HEAVY_AND_LEFT_DOWN_LIGHT,
+            BoxDrawing::LeftDownHeavyAndRightUpLight => LEFT_DOWN_HEAVY_AND_RIGHT_UP_LIGHT,
+            BoxDrawing::RightDownHeavyAndLeftUpLight => RIGHT_DOWN_HEAVY_AND_LEFT_UP_LIGHT,
+            BoxDrawing::DownLightAndUpHorizontalHeavy => DOWN_LIGHT_AND_UP_HORIZONTAL_HEAVY,
+            BoxDrawing::UpLightAndDownHorizontalHeavy => UP_LIGHT_AND_DOWN_HORIZONTAL_HEAVY,
+            BoxDrawing::RightLightAndLeftVerticalHeavy => RIGHT_LIGHT_AND_LEFT_VERTICAL_HEAVY,
+            BoxDrawing::LeftLightAndRightVerticalHeavy => LEFT_LIGHT_AND_RIGHT_VERTICAL_HEAVY,
+            BoxDrawing::HeavyVerticalAndHorizontal => HEAVY_VERTICAL_AND_HORIZONTAL,
+            BoxDrawing::LightDoubleDashHorizontal => LIGHT_DOUBLE_DASH_HORIZONTAL,
+            BoxDrawing::HeavyDoubleDashHorizontal => HEAVY_DOUBLE_DASH_HORIZONTAL,
+            BoxDrawing::LightDoubleDashVertical => LIGHT_DOUBLE_DASH_VERTICAL,
+            BoxDrawing::HeavyDoubleDashVertical => HEAVY_DOUBLE_DASH_VERTICAL,
+            BoxDrawing::DoubleHorizontal => DOUBLE_HORIZONTAL,
+            BoxDrawing::DoubleVertical => DOUBLE_VERTICAL,
+            BoxDrawing::DownSingleAndRightDouble => DOWN_SINGLE_AND_RIGHT_DOUBLE,
+            BoxDrawing::DownDoubleAndRightSingle => DOWN_DOUBLE_AND_RIGHT_SINGLE,
+            BoxDrawing::DoubleDownAndRight => DOUBLE_DOWN_AND_RIGHT,
+            BoxDrawing::DownSingleAndLeftDouble => DOWN_SINGLE_AND_LEFT_DOUBLE,
+            BoxDrawing::DownDoubleAndLeftSingle => DOWN_DOUBLE_AND_LEFT_SINGLE,
+            BoxDrawing::DoubleDownAndLeft => DOUBLE_DOWN_AND_LEFT,
+            BoxDrawing::UpSingleAndRightDouble => UP_SINGLE_AND_RIGHT_DOUBLE,
+            BoxDrawing::UpDoubleAndRightSingle => UP_DOUBLE_AND_RIGHT_SINGLE,
+            BoxDrawing::DoubleUpAndRight => DOUBLE_UP_AND_RIGHT,
+            BoxDrawing::UpSingleAndLeftDouble => UP_SINGLE_AND_LEFT_DOUBLE,
+            BoxDrawing::UpDoubleAndLeftSingle => UP_DOUBLE_AND_LEFT_SINGLE,
+            BoxDrawing::DoubleUpAndLeft => DOUBLE_UP_AND_LEFT,
+            BoxDrawing::VerticalSingleAndRightDouble => VERTICAL_SINGLE_AND_RIGHT_DOUBLE,
+            BoxDrawing::VerticalDoubleAndRightSingle => VERTICAL_DOUBLE_AND_RIGHT_SINGLE,
+            BoxDrawing::DoubleVerticalAndRight => DOUBLE_VERTICAL_AND_RIGHT,
+            BoxDrawing::VerticalSingleAndLeftDouble => VERTICAL_SINGLE_AND_LEFT_DOUBLE,
+            BoxDrawing::VerticalDoubleAndLeftSingle => VERTICAL_DOUBLE_AND_LEFT_SINGLE,
+            BoxDrawing::DoubleVerticalAndLeft => DOUBLE_VERTICAL_AND_LEFT,
+            BoxDrawing::DownSingleAndHorizontalDouble => DOWN_SINGLE_AND_HORIZONTAL_DOUBLE,
+            BoxDrawing::DownDoubleAndHorizontalSingle => DOWN_DOUBLE_AND_HORIZONTAL_SINGLE,
+            BoxDrawing::DoubleDownAndHorizontal => DOUBLE_DOWN_AND_HORIZONTAL,
+            BoxDrawing::UpSingleAndHorizontalDouble => UP_SINGLE_AND_HORIZONTAL_DOUBLE,
+            BoxDrawing::UpDoubleAndHorizontalSingle => UP_DOUBLE_AND_HORIZONTAL_SINGLE,
+            BoxDrawing::DoubleUpAndHorizontal => DOUBLE_UP_AND_HORIZONTAL,
+            BoxDrawing::VerticalSingleAndHorizontalDouble => VERTICAL_SINGLE_AND_HORIZONTAL_DOUBLE,
+            BoxDrawing::VerticalDoubleAndHorizontalSingle => VERTICAL_DOUBLE_AND_HORIZONTAL_SINGLE,
+            BoxDrawing::DoubleVerticalAndHorizontal => DOUBLE_VERTICAL_AND_HORIZONTAL,
+            BoxDrawing::LightArcDownAndRight => LIGHT_ARC_DOWN_AND_RIGHT,
+            BoxDrawing::LightArcDownAndLeft => LIGHT_ARC_DOWN_AND_LEFT,
+            BoxDrawing::LightArcUpAndLeft => LIGHT_ARC_UP_AND_LEFT,
+            BoxDrawing::LightArcUpAndRight => LIGHT_ARC_UP_AND_RIGHT,
+            BoxDrawing::LightDiagonalUpperRightToLowerLeft => LIGHT_DIAGONAL_UPPER_RIGHT_TO_LOWER_LEFT,
+            BoxDrawing::LightDiagonalUpperLeftToLowerRight => LIGHT_DIAGONAL_UPPER_LEFT_TO_LOWER_RIGHT,
+            BoxDrawing::LightDiagonalCross => LIGHT_DIAGONAL_CROSS,
+            BoxDrawing::LightLeft => LIGHT_LEFT,
+            BoxDrawing::LightUp => LIGHT_UP,
+            BoxDrawing::LightRight => LIGHT_RIGHT,
+            BoxDrawing::LightDown => LIGHT_DOWN,
+            BoxDrawing::HeavyLeft => HEAVY_LEFT,
+            BoxDrawing::HeavyUp => HEAVY_UP,
+            BoxDrawing::HeavyRight => HEAVY_RIGHT,
+            BoxDrawing::HeavyDown => HEAVY_DOWN,
+            BoxDrawing::LightLeftAndHeavyRight => LIGHT_LEFT_AND_HEAVY_RIGHT,
+            BoxDrawing::LightUpAndHeavyDown => LIGHT_UP_AND_HEAVY_DOWN,
+            BoxDrawing::HeavyLeftAndLightRight => HEAVY_LEFT_AND_LIGHT_RIGHT,
         }
     }
 }
@@ -673,133 +673,133 @@ impl std::convert::TryFrom<char> for BoxDrawing {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            BOX_DRAWINGS_LIGHT_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsLightHorizontal),
-            BOX_DRAWINGS_HEAVY_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsHeavyHorizontal),
-            BOX_DRAWINGS_LIGHT_VERTICAL => Ok(BoxDrawing::BoxDrawingsLightVertical),
-            BOX_DRAWINGS_HEAVY_VERTICAL => Ok(BoxDrawing::BoxDrawingsHeavyVertical),
-            BOX_DRAWINGS_LIGHT_TRIPLE_DASH_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsLightTripleDashHorizontal),
-            BOX_DRAWINGS_HEAVY_TRIPLE_DASH_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsHeavyTripleDashHorizontal),
-            BOX_DRAWINGS_LIGHT_TRIPLE_DASH_VERTICAL => Ok(BoxDrawing::BoxDrawingsLightTripleDashVertical),
-            BOX_DRAWINGS_HEAVY_TRIPLE_DASH_VERTICAL => Ok(BoxDrawing::BoxDrawingsHeavyTripleDashVertical),
-            BOX_DRAWINGS_LIGHT_QUADRUPLE_DASH_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsLightQuadrupleDashHorizontal),
-            BOX_DRAWINGS_HEAVY_QUADRUPLE_DASH_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsHeavyQuadrupleDashHorizontal),
-            BOX_DRAWINGS_LIGHT_QUADRUPLE_DASH_VERTICAL => Ok(BoxDrawing::BoxDrawingsLightQuadrupleDashVertical),
-            BOX_DRAWINGS_HEAVY_QUADRUPLE_DASH_VERTICAL => Ok(BoxDrawing::BoxDrawingsHeavyQuadrupleDashVertical),
-            BOX_DRAWINGS_LIGHT_DOWN_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsLightDownAndRight),
-            BOX_DRAWINGS_DOWN_LIGHT_AND_RIGHT_HEAVY => Ok(BoxDrawing::BoxDrawingsDownLightAndRightHeavy),
-            BOX_DRAWINGS_DOWN_HEAVY_AND_RIGHT_LIGHT => Ok(BoxDrawing::BoxDrawingsDownHeavyAndRightLight),
-            BOX_DRAWINGS_HEAVY_DOWN_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsHeavyDownAndRight),
-            BOX_DRAWINGS_LIGHT_DOWN_AND_LEFT => Ok(BoxDrawing::BoxDrawingsLightDownAndLeft),
-            BOX_DRAWINGS_DOWN_LIGHT_AND_LEFT_HEAVY => Ok(BoxDrawing::BoxDrawingsDownLightAndLeftHeavy),
-            BOX_DRAWINGS_DOWN_HEAVY_AND_LEFT_LIGHT => Ok(BoxDrawing::BoxDrawingsDownHeavyAndLeftLight),
-            BOX_DRAWINGS_HEAVY_DOWN_AND_LEFT => Ok(BoxDrawing::BoxDrawingsHeavyDownAndLeft),
-            BOX_DRAWINGS_LIGHT_UP_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsLightUpAndRight),
-            BOX_DRAWINGS_UP_LIGHT_AND_RIGHT_HEAVY => Ok(BoxDrawing::BoxDrawingsUpLightAndRightHeavy),
-            BOX_DRAWINGS_UP_HEAVY_AND_RIGHT_LIGHT => Ok(BoxDrawing::BoxDrawingsUpHeavyAndRightLight),
-            BOX_DRAWINGS_HEAVY_UP_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsHeavyUpAndRight),
-            BOX_DRAWINGS_LIGHT_UP_AND_LEFT => Ok(BoxDrawing::BoxDrawingsLightUpAndLeft),
-            BOX_DRAWINGS_UP_LIGHT_AND_LEFT_HEAVY => Ok(BoxDrawing::BoxDrawingsUpLightAndLeftHeavy),
-            BOX_DRAWINGS_UP_HEAVY_AND_LEFT_LIGHT => Ok(BoxDrawing::BoxDrawingsUpHeavyAndLeftLight),
-            BOX_DRAWINGS_HEAVY_UP_AND_LEFT => Ok(BoxDrawing::BoxDrawingsHeavyUpAndLeft),
-            BOX_DRAWINGS_LIGHT_VERTICAL_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsLightVerticalAndRight),
-            BOX_DRAWINGS_VERTICAL_LIGHT_AND_RIGHT_HEAVY => Ok(BoxDrawing::BoxDrawingsVerticalLightAndRightHeavy),
-            BOX_DRAWINGS_UP_HEAVY_AND_RIGHT_DOWN_LIGHT => Ok(BoxDrawing::BoxDrawingsUpHeavyAndRightDownLight),
-            BOX_DRAWINGS_DOWN_HEAVY_AND_RIGHT_UP_LIGHT => Ok(BoxDrawing::BoxDrawingsDownHeavyAndRightUpLight),
-            BOX_DRAWINGS_VERTICAL_HEAVY_AND_RIGHT_LIGHT => Ok(BoxDrawing::BoxDrawingsVerticalHeavyAndRightLight),
-            BOX_DRAWINGS_DOWN_LIGHT_AND_RIGHT_UP_HEAVY => Ok(BoxDrawing::BoxDrawingsDownLightAndRightUpHeavy),
-            BOX_DRAWINGS_UP_LIGHT_AND_RIGHT_DOWN_HEAVY => Ok(BoxDrawing::BoxDrawingsUpLightAndRightDownHeavy),
-            BOX_DRAWINGS_HEAVY_VERTICAL_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsHeavyVerticalAndRight),
-            BOX_DRAWINGS_LIGHT_VERTICAL_AND_LEFT => Ok(BoxDrawing::BoxDrawingsLightVerticalAndLeft),
-            BOX_DRAWINGS_VERTICAL_LIGHT_AND_LEFT_HEAVY => Ok(BoxDrawing::BoxDrawingsVerticalLightAndLeftHeavy),
-            BOX_DRAWINGS_UP_HEAVY_AND_LEFT_DOWN_LIGHT => Ok(BoxDrawing::BoxDrawingsUpHeavyAndLeftDownLight),
-            BOX_DRAWINGS_DOWN_HEAVY_AND_LEFT_UP_LIGHT => Ok(BoxDrawing::BoxDrawingsDownHeavyAndLeftUpLight),
-            BOX_DRAWINGS_VERTICAL_HEAVY_AND_LEFT_LIGHT => Ok(BoxDrawing::BoxDrawingsVerticalHeavyAndLeftLight),
-            BOX_DRAWINGS_DOWN_LIGHT_AND_LEFT_UP_HEAVY => Ok(BoxDrawing::BoxDrawingsDownLightAndLeftUpHeavy),
-            BOX_DRAWINGS_UP_LIGHT_AND_LEFT_DOWN_HEAVY => Ok(BoxDrawing::BoxDrawingsUpLightAndLeftDownHeavy),
-            BOX_DRAWINGS_HEAVY_VERTICAL_AND_LEFT => Ok(BoxDrawing::BoxDrawingsHeavyVerticalAndLeft),
-            BOX_DRAWINGS_LIGHT_DOWN_AND_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsLightDownAndHorizontal),
-            BOX_DRAWINGS_LEFT_HEAVY_AND_RIGHT_DOWN_LIGHT => Ok(BoxDrawing::BoxDrawingsLeftHeavyAndRightDownLight),
-            BOX_DRAWINGS_RIGHT_HEAVY_AND_LEFT_DOWN_LIGHT => Ok(BoxDrawing::BoxDrawingsRightHeavyAndLeftDownLight),
-            BOX_DRAWINGS_DOWN_LIGHT_AND_HORIZONTAL_HEAVY => Ok(BoxDrawing::BoxDrawingsDownLightAndHorizontalHeavy),
-            BOX_DRAWINGS_DOWN_HEAVY_AND_HORIZONTAL_LIGHT => Ok(BoxDrawing::BoxDrawingsDownHeavyAndHorizontalLight),
-            BOX_DRAWINGS_RIGHT_LIGHT_AND_LEFT_DOWN_HEAVY => Ok(BoxDrawing::BoxDrawingsRightLightAndLeftDownHeavy),
-            BOX_DRAWINGS_LEFT_LIGHT_AND_RIGHT_DOWN_HEAVY => Ok(BoxDrawing::BoxDrawingsLeftLightAndRightDownHeavy),
-            BOX_DRAWINGS_HEAVY_DOWN_AND_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsHeavyDownAndHorizontal),
-            BOX_DRAWINGS_LIGHT_UP_AND_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsLightUpAndHorizontal),
-            BOX_DRAWINGS_LEFT_HEAVY_AND_RIGHT_UP_LIGHT => Ok(BoxDrawing::BoxDrawingsLeftHeavyAndRightUpLight),
-            BOX_DRAWINGS_RIGHT_HEAVY_AND_LEFT_UP_LIGHT => Ok(BoxDrawing::BoxDrawingsRightHeavyAndLeftUpLight),
-            BOX_DRAWINGS_UP_LIGHT_AND_HORIZONTAL_HEAVY => Ok(BoxDrawing::BoxDrawingsUpLightAndHorizontalHeavy),
-            BOX_DRAWINGS_UP_HEAVY_AND_HORIZONTAL_LIGHT => Ok(BoxDrawing::BoxDrawingsUpHeavyAndHorizontalLight),
-            BOX_DRAWINGS_RIGHT_LIGHT_AND_LEFT_UP_HEAVY => Ok(BoxDrawing::BoxDrawingsRightLightAndLeftUpHeavy),
-            BOX_DRAWINGS_LEFT_LIGHT_AND_RIGHT_UP_HEAVY => Ok(BoxDrawing::BoxDrawingsLeftLightAndRightUpHeavy),
-            BOX_DRAWINGS_HEAVY_UP_AND_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsHeavyUpAndHorizontal),
-            BOX_DRAWINGS_LIGHT_VERTICAL_AND_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsLightVerticalAndHorizontal),
-            BOX_DRAWINGS_LEFT_HEAVY_AND_RIGHT_VERTICAL_LIGHT => Ok(BoxDrawing::BoxDrawingsLeftHeavyAndRightVerticalLight),
-            BOX_DRAWINGS_RIGHT_HEAVY_AND_LEFT_VERTICAL_LIGHT => Ok(BoxDrawing::BoxDrawingsRightHeavyAndLeftVerticalLight),
-            BOX_DRAWINGS_VERTICAL_LIGHT_AND_HORIZONTAL_HEAVY => Ok(BoxDrawing::BoxDrawingsVerticalLightAndHorizontalHeavy),
-            BOX_DRAWINGS_UP_HEAVY_AND_DOWN_HORIZONTAL_LIGHT => Ok(BoxDrawing::BoxDrawingsUpHeavyAndDownHorizontalLight),
-            BOX_DRAWINGS_DOWN_HEAVY_AND_UP_HORIZONTAL_LIGHT => Ok(BoxDrawing::BoxDrawingsDownHeavyAndUpHorizontalLight),
-            BOX_DRAWINGS_VERTICAL_HEAVY_AND_HORIZONTAL_LIGHT => Ok(BoxDrawing::BoxDrawingsVerticalHeavyAndHorizontalLight),
-            BOX_DRAWINGS_LEFT_UP_HEAVY_AND_RIGHT_DOWN_LIGHT => Ok(BoxDrawing::BoxDrawingsLeftUpHeavyAndRightDownLight),
-            BOX_DRAWINGS_RIGHT_UP_HEAVY_AND_LEFT_DOWN_LIGHT => Ok(BoxDrawing::BoxDrawingsRightUpHeavyAndLeftDownLight),
-            BOX_DRAWINGS_LEFT_DOWN_HEAVY_AND_RIGHT_UP_LIGHT => Ok(BoxDrawing::BoxDrawingsLeftDownHeavyAndRightUpLight),
-            BOX_DRAWINGS_RIGHT_DOWN_HEAVY_AND_LEFT_UP_LIGHT => Ok(BoxDrawing::BoxDrawingsRightDownHeavyAndLeftUpLight),
-            BOX_DRAWINGS_DOWN_LIGHT_AND_UP_HORIZONTAL_HEAVY => Ok(BoxDrawing::BoxDrawingsDownLightAndUpHorizontalHeavy),
-            BOX_DRAWINGS_UP_LIGHT_AND_DOWN_HORIZONTAL_HEAVY => Ok(BoxDrawing::BoxDrawingsUpLightAndDownHorizontalHeavy),
-            BOX_DRAWINGS_RIGHT_LIGHT_AND_LEFT_VERTICAL_HEAVY => Ok(BoxDrawing::BoxDrawingsRightLightAndLeftVerticalHeavy),
-            BOX_DRAWINGS_LEFT_LIGHT_AND_RIGHT_VERTICAL_HEAVY => Ok(BoxDrawing::BoxDrawingsLeftLightAndRightVerticalHeavy),
-            BOX_DRAWINGS_HEAVY_VERTICAL_AND_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsHeavyVerticalAndHorizontal),
-            BOX_DRAWINGS_LIGHT_DOUBLE_DASH_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsLightDoubleDashHorizontal),
-            BOX_DRAWINGS_HEAVY_DOUBLE_DASH_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsHeavyDoubleDashHorizontal),
-            BOX_DRAWINGS_LIGHT_DOUBLE_DASH_VERTICAL => Ok(BoxDrawing::BoxDrawingsLightDoubleDashVertical),
-            BOX_DRAWINGS_HEAVY_DOUBLE_DASH_VERTICAL => Ok(BoxDrawing::BoxDrawingsHeavyDoubleDashVertical),
-            BOX_DRAWINGS_DOUBLE_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsDoubleHorizontal),
-            BOX_DRAWINGS_DOUBLE_VERTICAL => Ok(BoxDrawing::BoxDrawingsDoubleVertical),
-            BOX_DRAWINGS_DOWN_SINGLE_AND_RIGHT_DOUBLE => Ok(BoxDrawing::BoxDrawingsDownSingleAndRightDouble),
-            BOX_DRAWINGS_DOWN_DOUBLE_AND_RIGHT_SINGLE => Ok(BoxDrawing::BoxDrawingsDownDoubleAndRightSingle),
-            BOX_DRAWINGS_DOUBLE_DOWN_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsDoubleDownAndRight),
-            BOX_DRAWINGS_DOWN_SINGLE_AND_LEFT_DOUBLE => Ok(BoxDrawing::BoxDrawingsDownSingleAndLeftDouble),
-            BOX_DRAWINGS_DOWN_DOUBLE_AND_LEFT_SINGLE => Ok(BoxDrawing::BoxDrawingsDownDoubleAndLeftSingle),
-            BOX_DRAWINGS_DOUBLE_DOWN_AND_LEFT => Ok(BoxDrawing::BoxDrawingsDoubleDownAndLeft),
-            BOX_DRAWINGS_UP_SINGLE_AND_RIGHT_DOUBLE => Ok(BoxDrawing::BoxDrawingsUpSingleAndRightDouble),
-            BOX_DRAWINGS_UP_DOUBLE_AND_RIGHT_SINGLE => Ok(BoxDrawing::BoxDrawingsUpDoubleAndRightSingle),
-            BOX_DRAWINGS_DOUBLE_UP_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsDoubleUpAndRight),
-            BOX_DRAWINGS_UP_SINGLE_AND_LEFT_DOUBLE => Ok(BoxDrawing::BoxDrawingsUpSingleAndLeftDouble),
-            BOX_DRAWINGS_UP_DOUBLE_AND_LEFT_SINGLE => Ok(BoxDrawing::BoxDrawingsUpDoubleAndLeftSingle),
-            BOX_DRAWINGS_DOUBLE_UP_AND_LEFT => Ok(BoxDrawing::BoxDrawingsDoubleUpAndLeft),
-            BOX_DRAWINGS_VERTICAL_SINGLE_AND_RIGHT_DOUBLE => Ok(BoxDrawing::BoxDrawingsVerticalSingleAndRightDouble),
-            BOX_DRAWINGS_VERTICAL_DOUBLE_AND_RIGHT_SINGLE => Ok(BoxDrawing::BoxDrawingsVerticalDoubleAndRightSingle),
-            BOX_DRAWINGS_DOUBLE_VERTICAL_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsDoubleVerticalAndRight),
-            BOX_DRAWINGS_VERTICAL_SINGLE_AND_LEFT_DOUBLE => Ok(BoxDrawing::BoxDrawingsVerticalSingleAndLeftDouble),
-            BOX_DRAWINGS_VERTICAL_DOUBLE_AND_LEFT_SINGLE => Ok(BoxDrawing::BoxDrawingsVerticalDoubleAndLeftSingle),
-            BOX_DRAWINGS_DOUBLE_VERTICAL_AND_LEFT => Ok(BoxDrawing::BoxDrawingsDoubleVerticalAndLeft),
-            BOX_DRAWINGS_DOWN_SINGLE_AND_HORIZONTAL_DOUBLE => Ok(BoxDrawing::BoxDrawingsDownSingleAndHorizontalDouble),
-            BOX_DRAWINGS_DOWN_DOUBLE_AND_HORIZONTAL_SINGLE => Ok(BoxDrawing::BoxDrawingsDownDoubleAndHorizontalSingle),
-            BOX_DRAWINGS_DOUBLE_DOWN_AND_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsDoubleDownAndHorizontal),
-            BOX_DRAWINGS_UP_SINGLE_AND_HORIZONTAL_DOUBLE => Ok(BoxDrawing::BoxDrawingsUpSingleAndHorizontalDouble),
-            BOX_DRAWINGS_UP_DOUBLE_AND_HORIZONTAL_SINGLE => Ok(BoxDrawing::BoxDrawingsUpDoubleAndHorizontalSingle),
-            BOX_DRAWINGS_DOUBLE_UP_AND_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsDoubleUpAndHorizontal),
-            BOX_DRAWINGS_VERTICAL_SINGLE_AND_HORIZONTAL_DOUBLE => Ok(BoxDrawing::BoxDrawingsVerticalSingleAndHorizontalDouble),
-            BOX_DRAWINGS_VERTICAL_DOUBLE_AND_HORIZONTAL_SINGLE => Ok(BoxDrawing::BoxDrawingsVerticalDoubleAndHorizontalSingle),
-            BOX_DRAWINGS_DOUBLE_VERTICAL_AND_HORIZONTAL => Ok(BoxDrawing::BoxDrawingsDoubleVerticalAndHorizontal),
-            BOX_DRAWINGS_LIGHT_ARC_DOWN_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsLightArcDownAndRight),
-            BOX_DRAWINGS_LIGHT_ARC_DOWN_AND_LEFT => Ok(BoxDrawing::BoxDrawingsLightArcDownAndLeft),
-            BOX_DRAWINGS_LIGHT_ARC_UP_AND_LEFT => Ok(BoxDrawing::BoxDrawingsLightArcUpAndLeft),
-            BOX_DRAWINGS_LIGHT_ARC_UP_AND_RIGHT => Ok(BoxDrawing::BoxDrawingsLightArcUpAndRight),
-            BOX_DRAWINGS_LIGHT_DIAGONAL_UPPER_RIGHT_TO_LOWER_LEFT => Ok(BoxDrawing::BoxDrawingsLightDiagonalUpperRightToLowerLeft),
-            BOX_DRAWINGS_LIGHT_DIAGONAL_UPPER_LEFT_TO_LOWER_RIGHT => Ok(BoxDrawing::BoxDrawingsLightDiagonalUpperLeftToLowerRight),
-            BOX_DRAWINGS_LIGHT_DIAGONAL_CROSS => Ok(BoxDrawing::BoxDrawingsLightDiagonalCross),
-            BOX_DRAWINGS_LIGHT_LEFT => Ok(BoxDrawing::BoxDrawingsLightLeft),
-            BOX_DRAWINGS_LIGHT_UP => Ok(BoxDrawing::BoxDrawingsLightUp),
-            BOX_DRAWINGS_LIGHT_RIGHT => Ok(BoxDrawing::BoxDrawingsLightRight),
-            BOX_DRAWINGS_LIGHT_DOWN => Ok(BoxDrawing::BoxDrawingsLightDown),
-            BOX_DRAWINGS_HEAVY_LEFT => Ok(BoxDrawing::BoxDrawingsHeavyLeft),
-            BOX_DRAWINGS_HEAVY_UP => Ok(BoxDrawing::BoxDrawingsHeavyUp),
-            BOX_DRAWINGS_HEAVY_RIGHT => Ok(BoxDrawing::BoxDrawingsHeavyRight),
-            BOX_DRAWINGS_HEAVY_DOWN => Ok(BoxDrawing::BoxDrawingsHeavyDown),
-            BOX_DRAWINGS_LIGHT_LEFT_AND_HEAVY_RIGHT => Ok(BoxDrawing::BoxDrawingsLightLeftAndHeavyRight),
-            BOX_DRAWINGS_LIGHT_UP_AND_HEAVY_DOWN => Ok(BoxDrawing::BoxDrawingsLightUpAndHeavyDown),
-            BOX_DRAWINGS_HEAVY_LEFT_AND_LIGHT_RIGHT => Ok(BoxDrawing::BoxDrawingsHeavyLeftAndLightRight),
+            LIGHT_HORIZONTAL => Ok(BoxDrawing::LightHorizontal),
+            HEAVY_HORIZONTAL => Ok(BoxDrawing::HeavyHorizontal),
+            LIGHT_VERTICAL => Ok(BoxDrawing::LightVertical),
+            HEAVY_VERTICAL => Ok(BoxDrawing::HeavyVertical),
+            LIGHT_TRIPLE_DASH_HORIZONTAL => Ok(BoxDrawing::LightTripleDashHorizontal),
+            HEAVY_TRIPLE_DASH_HORIZONTAL => Ok(BoxDrawing::HeavyTripleDashHorizontal),
+            LIGHT_TRIPLE_DASH_VERTICAL => Ok(BoxDrawing::LightTripleDashVertical),
+            HEAVY_TRIPLE_DASH_VERTICAL => Ok(BoxDrawing::HeavyTripleDashVertical),
+            LIGHT_QUADRUPLE_DASH_HORIZONTAL => Ok(BoxDrawing::LightQuadrupleDashHorizontal),
+            HEAVY_QUADRUPLE_DASH_HORIZONTAL => Ok(BoxDrawing::HeavyQuadrupleDashHorizontal),
+            LIGHT_QUADRUPLE_DASH_VERTICAL => Ok(BoxDrawing::LightQuadrupleDashVertical),
+            HEAVY_QUADRUPLE_DASH_VERTICAL => Ok(BoxDrawing::HeavyQuadrupleDashVertical),
+            LIGHT_DOWN_AND_RIGHT => Ok(BoxDrawing::LightDownAndRight),
+            DOWN_LIGHT_AND_RIGHT_HEAVY => Ok(BoxDrawing::DownLightAndRightHeavy),
+            DOWN_HEAVY_AND_RIGHT_LIGHT => Ok(BoxDrawing::DownHeavyAndRightLight),
+            HEAVY_DOWN_AND_RIGHT => Ok(BoxDrawing::HeavyDownAndRight),
+            LIGHT_DOWN_AND_LEFT => Ok(BoxDrawing::LightDownAndLeft),
+            DOWN_LIGHT_AND_LEFT_HEAVY => Ok(BoxDrawing::DownLightAndLeftHeavy),
+            DOWN_HEAVY_AND_LEFT_LIGHT => Ok(BoxDrawing::DownHeavyAndLeftLight),
+            HEAVY_DOWN_AND_LEFT => Ok(BoxDrawing::HeavyDownAndLeft),
+            LIGHT_UP_AND_RIGHT => Ok(BoxDrawing::LightUpAndRight),
+            UP_LIGHT_AND_RIGHT_HEAVY => Ok(BoxDrawing::UpLightAndRightHeavy),
+            UP_HEAVY_AND_RIGHT_LIGHT => Ok(BoxDrawing::UpHeavyAndRightLight),
+            HEAVY_UP_AND_RIGHT => Ok(BoxDrawing::HeavyUpAndRight),
+            LIGHT_UP_AND_LEFT => Ok(BoxDrawing::LightUpAndLeft),
+            UP_LIGHT_AND_LEFT_HEAVY => Ok(BoxDrawing::UpLightAndLeftHeavy),
+            UP_HEAVY_AND_LEFT_LIGHT => Ok(BoxDrawing::UpHeavyAndLeftLight),
+            HEAVY_UP_AND_LEFT => Ok(BoxDrawing::HeavyUpAndLeft),
+            LIGHT_VERTICAL_AND_RIGHT => Ok(BoxDrawing::LightVerticalAndRight),
+            VERTICAL_LIGHT_AND_RIGHT_HEAVY => Ok(BoxDrawing::VerticalLightAndRightHeavy),
+            UP_HEAVY_AND_RIGHT_DOWN_LIGHT => Ok(BoxDrawing::UpHeavyAndRightDownLight),
+            DOWN_HEAVY_AND_RIGHT_UP_LIGHT => Ok(BoxDrawing::DownHeavyAndRightUpLight),
+            VERTICAL_HEAVY_AND_RIGHT_LIGHT => Ok(BoxDrawing::VerticalHeavyAndRightLight),
+            DOWN_LIGHT_AND_RIGHT_UP_HEAVY => Ok(BoxDrawing::DownLightAndRightUpHeavy),
+            UP_LIGHT_AND_RIGHT_DOWN_HEAVY => Ok(BoxDrawing::UpLightAndRightDownHeavy),
+            HEAVY_VERTICAL_AND_RIGHT => Ok(BoxDrawing::HeavyVerticalAndRight),
+            LIGHT_VERTICAL_AND_LEFT => Ok(BoxDrawing::LightVerticalAndLeft),
+            VERTICAL_LIGHT_AND_LEFT_HEAVY => Ok(BoxDrawing::VerticalLightAndLeftHeavy),
+            UP_HEAVY_AND_LEFT_DOWN_LIGHT => Ok(BoxDrawing::UpHeavyAndLeftDownLight),
+            DOWN_HEAVY_AND_LEFT_UP_LIGHT => Ok(BoxDrawing::DownHeavyAndLeftUpLight),
+            VERTICAL_HEAVY_AND_LEFT_LIGHT => Ok(BoxDrawing::VerticalHeavyAndLeftLight),
+            DOWN_LIGHT_AND_LEFT_UP_HEAVY => Ok(BoxDrawing::DownLightAndLeftUpHeavy),
+            UP_LIGHT_AND_LEFT_DOWN_HEAVY => Ok(BoxDrawing::UpLightAndLeftDownHeavy),
+            HEAVY_VERTICAL_AND_LEFT => Ok(BoxDrawing::HeavyVerticalAndLeft),
+            LIGHT_DOWN_AND_HORIZONTAL => Ok(BoxDrawing::LightDownAndHorizontal),
+            LEFT_HEAVY_AND_RIGHT_DOWN_LIGHT => Ok(BoxDrawing::LeftHeavyAndRightDownLight),
+            RIGHT_HEAVY_AND_LEFT_DOWN_LIGHT => Ok(BoxDrawing::RightHeavyAndLeftDownLight),
+            DOWN_LIGHT_AND_HORIZONTAL_HEAVY => Ok(BoxDrawing::DownLightAndHorizontalHeavy),
+            DOWN_HEAVY_AND_HORIZONTAL_LIGHT => Ok(BoxDrawing::DownHeavyAndHorizontalLight),
+            RIGHT_LIGHT_AND_LEFT_DOWN_HEAVY => Ok(BoxDrawing::RightLightAndLeftDownHeavy),
+            LEFT_LIGHT_AND_RIGHT_DOWN_HEAVY => Ok(BoxDrawing::LeftLightAndRightDownHeavy),
+            HEAVY_DOWN_AND_HORIZONTAL => Ok(BoxDrawing::HeavyDownAndHorizontal),
+            LIGHT_UP_AND_HORIZONTAL => Ok(BoxDrawing::LightUpAndHorizontal),
+            LEFT_HEAVY_AND_RIGHT_UP_LIGHT => Ok(BoxDrawing::LeftHeavyAndRightUpLight),
+            RIGHT_HEAVY_AND_LEFT_UP_LIGHT => Ok(BoxDrawing::RightHeavyAndLeftUpLight),
+            UP_LIGHT_AND_HORIZONTAL_HEAVY => Ok(BoxDrawing::UpLightAndHorizontalHeavy),
+            UP_HEAVY_AND_HORIZONTAL_LIGHT => Ok(BoxDrawing::UpHeavyAndHorizontalLight),
+            RIGHT_LIGHT_AND_LEFT_UP_HEAVY => Ok(BoxDrawing::RightLightAndLeftUpHeavy),
+            LEFT_LIGHT_AND_RIGHT_UP_HEAVY => Ok(BoxDrawing::LeftLightAndRightUpHeavy),
+            HEAVY_UP_AND_HORIZONTAL => Ok(BoxDrawing::HeavyUpAndHorizontal),
+            LIGHT_VERTICAL_AND_HORIZONTAL => Ok(BoxDrawing::LightVerticalAndHorizontal),
+            LEFT_HEAVY_AND_RIGHT_VERTICAL_LIGHT => Ok(BoxDrawing::LeftHeavyAndRightVerticalLight),
+            RIGHT_HEAVY_AND_LEFT_VERTICAL_LIGHT => Ok(BoxDrawing::RightHeavyAndLeftVerticalLight),
+            VERTICAL_LIGHT_AND_HORIZONTAL_HEAVY => Ok(BoxDrawing::VerticalLightAndHorizontalHeavy),
+            UP_HEAVY_AND_DOWN_HORIZONTAL_LIGHT => Ok(BoxDrawing::UpHeavyAndDownHorizontalLight),
+            DOWN_HEAVY_AND_UP_HORIZONTAL_LIGHT => Ok(BoxDrawing::DownHeavyAndUpHorizontalLight),
+            VERTICAL_HEAVY_AND_HORIZONTAL_LIGHT => Ok(BoxDrawing::VerticalHeavyAndHorizontalLight),
+            LEFT_UP_HEAVY_AND_RIGHT_DOWN_LIGHT => Ok(BoxDrawing::LeftUpHeavyAndRightDownLight),
+            RIGHT_UP_HEAVY_AND_LEFT_DOWN_LIGHT => Ok(BoxDrawing::RightUpHeavyAndLeftDownLight),
+            LEFT_DOWN_HEAVY_AND_RIGHT_UP_LIGHT => Ok(BoxDrawing::LeftDownHeavyAndRightUpLight),
+            RIGHT_DOWN_HEAVY_AND_LEFT_UP_LIGHT => Ok(BoxDrawing::RightDownHeavyAndLeftUpLight),
+            DOWN_LIGHT_AND_UP_HORIZONTAL_HEAVY => Ok(BoxDrawing::DownLightAndUpHorizontalHeavy),
+            UP_LIGHT_AND_DOWN_HORIZONTAL_HEAVY => Ok(BoxDrawing::UpLightAndDownHorizontalHeavy),
+            RIGHT_LIGHT_AND_LEFT_VERTICAL_HEAVY => Ok(BoxDrawing::RightLightAndLeftVerticalHeavy),
+            LEFT_LIGHT_AND_RIGHT_VERTICAL_HEAVY => Ok(BoxDrawing::LeftLightAndRightVerticalHeavy),
+            HEAVY_VERTICAL_AND_HORIZONTAL => Ok(BoxDrawing::HeavyVerticalAndHorizontal),
+            LIGHT_DOUBLE_DASH_HORIZONTAL => Ok(BoxDrawing::LightDoubleDashHorizontal),
+            HEAVY_DOUBLE_DASH_HORIZONTAL => Ok(BoxDrawing::HeavyDoubleDashHorizontal),
+            LIGHT_DOUBLE_DASH_VERTICAL => Ok(BoxDrawing::LightDoubleDashVertical),
+            HEAVY_DOUBLE_DASH_VERTICAL => Ok(BoxDrawing::HeavyDoubleDashVertical),
+            DOUBLE_HORIZONTAL => Ok(BoxDrawing::DoubleHorizontal),
+            DOUBLE_VERTICAL => Ok(BoxDrawing::DoubleVertical),
+            DOWN_SINGLE_AND_RIGHT_DOUBLE => Ok(BoxDrawing::DownSingleAndRightDouble),
+            DOWN_DOUBLE_AND_RIGHT_SINGLE => Ok(BoxDrawing::DownDoubleAndRightSingle),
+            DOUBLE_DOWN_AND_RIGHT => Ok(BoxDrawing::DoubleDownAndRight),
+            DOWN_SINGLE_AND_LEFT_DOUBLE => Ok(BoxDrawing::DownSingleAndLeftDouble),
+            DOWN_DOUBLE_AND_LEFT_SINGLE => Ok(BoxDrawing::DownDoubleAndLeftSingle),
+            DOUBLE_DOWN_AND_LEFT => Ok(BoxDrawing::DoubleDownAndLeft),
+            UP_SINGLE_AND_RIGHT_DOUBLE => Ok(BoxDrawing::UpSingleAndRightDouble),
+            UP_DOUBLE_AND_RIGHT_SINGLE => Ok(BoxDrawing::UpDoubleAndRightSingle),
+            DOUBLE_UP_AND_RIGHT => Ok(BoxDrawing::DoubleUpAndRight),
+            UP_SINGLE_AND_LEFT_DOUBLE => Ok(BoxDrawing::UpSingleAndLeftDouble),
+            UP_DOUBLE_AND_LEFT_SINGLE => Ok(BoxDrawing::UpDoubleAndLeftSingle),
+            DOUBLE_UP_AND_LEFT => Ok(BoxDrawing::DoubleUpAndLeft),
+            VERTICAL_SINGLE_AND_RIGHT_DOUBLE => Ok(BoxDrawing::VerticalSingleAndRightDouble),
+            VERTICAL_DOUBLE_AND_RIGHT_SINGLE => Ok(BoxDrawing::VerticalDoubleAndRightSingle),
+            DOUBLE_VERTICAL_AND_RIGHT => Ok(BoxDrawing::DoubleVerticalAndRight),
+            VERTICAL_SINGLE_AND_LEFT_DOUBLE => Ok(BoxDrawing::VerticalSingleAndLeftDouble),
+            VERTICAL_DOUBLE_AND_LEFT_SINGLE => Ok(BoxDrawing::VerticalDoubleAndLeftSingle),
+            DOUBLE_VERTICAL_AND_LEFT => Ok(BoxDrawing::DoubleVerticalAndLeft),
+            DOWN_SINGLE_AND_HORIZONTAL_DOUBLE => Ok(BoxDrawing::DownSingleAndHorizontalDouble),
+            DOWN_DOUBLE_AND_HORIZONTAL_SINGLE => Ok(BoxDrawing::DownDoubleAndHorizontalSingle),
+            DOUBLE_DOWN_AND_HORIZONTAL => Ok(BoxDrawing::DoubleDownAndHorizontal),
+            UP_SINGLE_AND_HORIZONTAL_DOUBLE => Ok(BoxDrawing::UpSingleAndHorizontalDouble),
+            UP_DOUBLE_AND_HORIZONTAL_SINGLE => Ok(BoxDrawing::UpDoubleAndHorizontalSingle),
+            DOUBLE_UP_AND_HORIZONTAL => Ok(BoxDrawing::DoubleUpAndHorizontal),
+            VERTICAL_SINGLE_AND_HORIZONTAL_DOUBLE => Ok(BoxDrawing::VerticalSingleAndHorizontalDouble),
+            VERTICAL_DOUBLE_AND_HORIZONTAL_SINGLE => Ok(BoxDrawing::VerticalDoubleAndHorizontalSingle),
+            DOUBLE_VERTICAL_AND_HORIZONTAL => Ok(BoxDrawing::DoubleVerticalAndHorizontal),
+            LIGHT_ARC_DOWN_AND_RIGHT => Ok(BoxDrawing::LightArcDownAndRight),
+            LIGHT_ARC_DOWN_AND_LEFT => Ok(BoxDrawing::LightArcDownAndLeft),
+            LIGHT_ARC_UP_AND_LEFT => Ok(BoxDrawing::LightArcUpAndLeft),
+            LIGHT_ARC_UP_AND_RIGHT => Ok(BoxDrawing::LightArcUpAndRight),
+            LIGHT_DIAGONAL_UPPER_RIGHT_TO_LOWER_LEFT => Ok(BoxDrawing::LightDiagonalUpperRightToLowerLeft),
+            LIGHT_DIAGONAL_UPPER_LEFT_TO_LOWER_RIGHT => Ok(BoxDrawing::LightDiagonalUpperLeftToLowerRight),
+            LIGHT_DIAGONAL_CROSS => Ok(BoxDrawing::LightDiagonalCross),
+            LIGHT_LEFT => Ok(BoxDrawing::LightLeft),
+            LIGHT_UP => Ok(BoxDrawing::LightUp),
+            LIGHT_RIGHT => Ok(BoxDrawing::LightRight),
+            LIGHT_DOWN => Ok(BoxDrawing::LightDown),
+            HEAVY_LEFT => Ok(BoxDrawing::HeavyLeft),
+            HEAVY_UP => Ok(BoxDrawing::HeavyUp),
+            HEAVY_RIGHT => Ok(BoxDrawing::HeavyRight),
+            HEAVY_DOWN => Ok(BoxDrawing::HeavyDown),
+            LIGHT_LEFT_AND_HEAVY_RIGHT => Ok(BoxDrawing::LightLeftAndHeavyRight),
+            LIGHT_UP_AND_HEAVY_DOWN => Ok(BoxDrawing::LightUpAndHeavyDown),
+            HEAVY_LEFT_AND_LIGHT_RIGHT => Ok(BoxDrawing::HeavyLeftAndLightRight),
             _ => Err(()),
         }
     }
@@ -838,141 +838,141 @@ impl Iterator for BoxDrawing {
 }
 
 impl BoxDrawing {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        BoxDrawing::BoxDrawingsLightHorizontal
+        BoxDrawing::LightHorizontal
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            BoxDrawing::BoxDrawingsLightHorizontal => "box drawings light horizontal",
-            BoxDrawing::BoxDrawingsHeavyHorizontal => "box drawings heavy horizontal",
-            BoxDrawing::BoxDrawingsLightVertical => "box drawings light vertical",
-            BoxDrawing::BoxDrawingsHeavyVertical => "box drawings heavy vertical",
-            BoxDrawing::BoxDrawingsLightTripleDashHorizontal => "box drawings light triple dash horizontal",
-            BoxDrawing::BoxDrawingsHeavyTripleDashHorizontal => "box drawings heavy triple dash horizontal",
-            BoxDrawing::BoxDrawingsLightTripleDashVertical => "box drawings light triple dash vertical",
-            BoxDrawing::BoxDrawingsHeavyTripleDashVertical => "box drawings heavy triple dash vertical",
-            BoxDrawing::BoxDrawingsLightQuadrupleDashHorizontal => "box drawings light quadruple dash horizontal",
-            BoxDrawing::BoxDrawingsHeavyQuadrupleDashHorizontal => "box drawings heavy quadruple dash horizontal",
-            BoxDrawing::BoxDrawingsLightQuadrupleDashVertical => "box drawings light quadruple dash vertical",
-            BoxDrawing::BoxDrawingsHeavyQuadrupleDashVertical => "box drawings heavy quadruple dash vertical",
-            BoxDrawing::BoxDrawingsLightDownAndRight => "box drawings light down and right",
-            BoxDrawing::BoxDrawingsDownLightAndRightHeavy => "box drawings down light and right heavy",
-            BoxDrawing::BoxDrawingsDownHeavyAndRightLight => "box drawings down heavy and right light",
-            BoxDrawing::BoxDrawingsHeavyDownAndRight => "box drawings heavy down and right",
-            BoxDrawing::BoxDrawingsLightDownAndLeft => "box drawings light down and left",
-            BoxDrawing::BoxDrawingsDownLightAndLeftHeavy => "box drawings down light and left heavy",
-            BoxDrawing::BoxDrawingsDownHeavyAndLeftLight => "box drawings down heavy and left light",
-            BoxDrawing::BoxDrawingsHeavyDownAndLeft => "box drawings heavy down and left",
-            BoxDrawing::BoxDrawingsLightUpAndRight => "box drawings light up and right",
-            BoxDrawing::BoxDrawingsUpLightAndRightHeavy => "box drawings up light and right heavy",
-            BoxDrawing::BoxDrawingsUpHeavyAndRightLight => "box drawings up heavy and right light",
-            BoxDrawing::BoxDrawingsHeavyUpAndRight => "box drawings heavy up and right",
-            BoxDrawing::BoxDrawingsLightUpAndLeft => "box drawings light up and left",
-            BoxDrawing::BoxDrawingsUpLightAndLeftHeavy => "box drawings up light and left heavy",
-            BoxDrawing::BoxDrawingsUpHeavyAndLeftLight => "box drawings up heavy and left light",
-            BoxDrawing::BoxDrawingsHeavyUpAndLeft => "box drawings heavy up and left",
-            BoxDrawing::BoxDrawingsLightVerticalAndRight => "box drawings light vertical and right",
-            BoxDrawing::BoxDrawingsVerticalLightAndRightHeavy => "box drawings vertical light and right heavy",
-            BoxDrawing::BoxDrawingsUpHeavyAndRightDownLight => "box drawings up heavy and right down light",
-            BoxDrawing::BoxDrawingsDownHeavyAndRightUpLight => "box drawings down heavy and right up light",
-            BoxDrawing::BoxDrawingsVerticalHeavyAndRightLight => "box drawings vertical heavy and right light",
-            BoxDrawing::BoxDrawingsDownLightAndRightUpHeavy => "box drawings down light and right up heavy",
-            BoxDrawing::BoxDrawingsUpLightAndRightDownHeavy => "box drawings up light and right down heavy",
-            BoxDrawing::BoxDrawingsHeavyVerticalAndRight => "box drawings heavy vertical and right",
-            BoxDrawing::BoxDrawingsLightVerticalAndLeft => "box drawings light vertical and left",
-            BoxDrawing::BoxDrawingsVerticalLightAndLeftHeavy => "box drawings vertical light and left heavy",
-            BoxDrawing::BoxDrawingsUpHeavyAndLeftDownLight => "box drawings up heavy and left down light",
-            BoxDrawing::BoxDrawingsDownHeavyAndLeftUpLight => "box drawings down heavy and left up light",
-            BoxDrawing::BoxDrawingsVerticalHeavyAndLeftLight => "box drawings vertical heavy and left light",
-            BoxDrawing::BoxDrawingsDownLightAndLeftUpHeavy => "box drawings down light and left up heavy",
-            BoxDrawing::BoxDrawingsUpLightAndLeftDownHeavy => "box drawings up light and left down heavy",
-            BoxDrawing::BoxDrawingsHeavyVerticalAndLeft => "box drawings heavy vertical and left",
-            BoxDrawing::BoxDrawingsLightDownAndHorizontal => "box drawings light down and horizontal",
-            BoxDrawing::BoxDrawingsLeftHeavyAndRightDownLight => "box drawings left heavy and right down light",
-            BoxDrawing::BoxDrawingsRightHeavyAndLeftDownLight => "box drawings right heavy and left down light",
-            BoxDrawing::BoxDrawingsDownLightAndHorizontalHeavy => "box drawings down light and horizontal heavy",
-            BoxDrawing::BoxDrawingsDownHeavyAndHorizontalLight => "box drawings down heavy and horizontal light",
-            BoxDrawing::BoxDrawingsRightLightAndLeftDownHeavy => "box drawings right light and left down heavy",
-            BoxDrawing::BoxDrawingsLeftLightAndRightDownHeavy => "box drawings left light and right down heavy",
-            BoxDrawing::BoxDrawingsHeavyDownAndHorizontal => "box drawings heavy down and horizontal",
-            BoxDrawing::BoxDrawingsLightUpAndHorizontal => "box drawings light up and horizontal",
-            BoxDrawing::BoxDrawingsLeftHeavyAndRightUpLight => "box drawings left heavy and right up light",
-            BoxDrawing::BoxDrawingsRightHeavyAndLeftUpLight => "box drawings right heavy and left up light",
-            BoxDrawing::BoxDrawingsUpLightAndHorizontalHeavy => "box drawings up light and horizontal heavy",
-            BoxDrawing::BoxDrawingsUpHeavyAndHorizontalLight => "box drawings up heavy and horizontal light",
-            BoxDrawing::BoxDrawingsRightLightAndLeftUpHeavy => "box drawings right light and left up heavy",
-            BoxDrawing::BoxDrawingsLeftLightAndRightUpHeavy => "box drawings left light and right up heavy",
-            BoxDrawing::BoxDrawingsHeavyUpAndHorizontal => "box drawings heavy up and horizontal",
-            BoxDrawing::BoxDrawingsLightVerticalAndHorizontal => "box drawings light vertical and horizontal",
-            BoxDrawing::BoxDrawingsLeftHeavyAndRightVerticalLight => "box drawings left heavy and right vertical light",
-            BoxDrawing::BoxDrawingsRightHeavyAndLeftVerticalLight => "box drawings right heavy and left vertical light",
-            BoxDrawing::BoxDrawingsVerticalLightAndHorizontalHeavy => "box drawings vertical light and horizontal heavy",
-            BoxDrawing::BoxDrawingsUpHeavyAndDownHorizontalLight => "box drawings up heavy and down horizontal light",
-            BoxDrawing::BoxDrawingsDownHeavyAndUpHorizontalLight => "box drawings down heavy and up horizontal light",
-            BoxDrawing::BoxDrawingsVerticalHeavyAndHorizontalLight => "box drawings vertical heavy and horizontal light",
-            BoxDrawing::BoxDrawingsLeftUpHeavyAndRightDownLight => "box drawings left up heavy and right down light",
-            BoxDrawing::BoxDrawingsRightUpHeavyAndLeftDownLight => "box drawings right up heavy and left down light",
-            BoxDrawing::BoxDrawingsLeftDownHeavyAndRightUpLight => "box drawings left down heavy and right up light",
-            BoxDrawing::BoxDrawingsRightDownHeavyAndLeftUpLight => "box drawings right down heavy and left up light",
-            BoxDrawing::BoxDrawingsDownLightAndUpHorizontalHeavy => "box drawings down light and up horizontal heavy",
-            BoxDrawing::BoxDrawingsUpLightAndDownHorizontalHeavy => "box drawings up light and down horizontal heavy",
-            BoxDrawing::BoxDrawingsRightLightAndLeftVerticalHeavy => "box drawings right light and left vertical heavy",
-            BoxDrawing::BoxDrawingsLeftLightAndRightVerticalHeavy => "box drawings left light and right vertical heavy",
-            BoxDrawing::BoxDrawingsHeavyVerticalAndHorizontal => "box drawings heavy vertical and horizontal",
-            BoxDrawing::BoxDrawingsLightDoubleDashHorizontal => "box drawings light double dash horizontal",
-            BoxDrawing::BoxDrawingsHeavyDoubleDashHorizontal => "box drawings heavy double dash horizontal",
-            BoxDrawing::BoxDrawingsLightDoubleDashVertical => "box drawings light double dash vertical",
-            BoxDrawing::BoxDrawingsHeavyDoubleDashVertical => "box drawings heavy double dash vertical",
-            BoxDrawing::BoxDrawingsDoubleHorizontal => "box drawings double horizontal",
-            BoxDrawing::BoxDrawingsDoubleVertical => "box drawings double vertical",
-            BoxDrawing::BoxDrawingsDownSingleAndRightDouble => "box drawings down single and right double",
-            BoxDrawing::BoxDrawingsDownDoubleAndRightSingle => "box drawings down double and right single",
-            BoxDrawing::BoxDrawingsDoubleDownAndRight => "box drawings double down and right",
-            BoxDrawing::BoxDrawingsDownSingleAndLeftDouble => "box drawings down single and left double",
-            BoxDrawing::BoxDrawingsDownDoubleAndLeftSingle => "box drawings down double and left single",
-            BoxDrawing::BoxDrawingsDoubleDownAndLeft => "box drawings double down and left",
-            BoxDrawing::BoxDrawingsUpSingleAndRightDouble => "box drawings up single and right double",
-            BoxDrawing::BoxDrawingsUpDoubleAndRightSingle => "box drawings up double and right single",
-            BoxDrawing::BoxDrawingsDoubleUpAndRight => "box drawings double up and right",
-            BoxDrawing::BoxDrawingsUpSingleAndLeftDouble => "box drawings up single and left double",
-            BoxDrawing::BoxDrawingsUpDoubleAndLeftSingle => "box drawings up double and left single",
-            BoxDrawing::BoxDrawingsDoubleUpAndLeft => "box drawings double up and left",
-            BoxDrawing::BoxDrawingsVerticalSingleAndRightDouble => "box drawings vertical single and right double",
-            BoxDrawing::BoxDrawingsVerticalDoubleAndRightSingle => "box drawings vertical double and right single",
-            BoxDrawing::BoxDrawingsDoubleVerticalAndRight => "box drawings double vertical and right",
-            BoxDrawing::BoxDrawingsVerticalSingleAndLeftDouble => "box drawings vertical single and left double",
-            BoxDrawing::BoxDrawingsVerticalDoubleAndLeftSingle => "box drawings vertical double and left single",
-            BoxDrawing::BoxDrawingsDoubleVerticalAndLeft => "box drawings double vertical and left",
-            BoxDrawing::BoxDrawingsDownSingleAndHorizontalDouble => "box drawings down single and horizontal double",
-            BoxDrawing::BoxDrawingsDownDoubleAndHorizontalSingle => "box drawings down double and horizontal single",
-            BoxDrawing::BoxDrawingsDoubleDownAndHorizontal => "box drawings double down and horizontal",
-            BoxDrawing::BoxDrawingsUpSingleAndHorizontalDouble => "box drawings up single and horizontal double",
-            BoxDrawing::BoxDrawingsUpDoubleAndHorizontalSingle => "box drawings up double and horizontal single",
-            BoxDrawing::BoxDrawingsDoubleUpAndHorizontal => "box drawings double up and horizontal",
-            BoxDrawing::BoxDrawingsVerticalSingleAndHorizontalDouble => "box drawings vertical single and horizontal double",
-            BoxDrawing::BoxDrawingsVerticalDoubleAndHorizontalSingle => "box drawings vertical double and horizontal single",
-            BoxDrawing::BoxDrawingsDoubleVerticalAndHorizontal => "box drawings double vertical and horizontal",
-            BoxDrawing::BoxDrawingsLightArcDownAndRight => "box drawings light arc down and right",
-            BoxDrawing::BoxDrawingsLightArcDownAndLeft => "box drawings light arc down and left",
-            BoxDrawing::BoxDrawingsLightArcUpAndLeft => "box drawings light arc up and left",
-            BoxDrawing::BoxDrawingsLightArcUpAndRight => "box drawings light arc up and right",
-            BoxDrawing::BoxDrawingsLightDiagonalUpperRightToLowerLeft => "box drawings light diagonal upper right to lower left",
-            BoxDrawing::BoxDrawingsLightDiagonalUpperLeftToLowerRight => "box drawings light diagonal upper left to lower right",
-            BoxDrawing::BoxDrawingsLightDiagonalCross => "box drawings light diagonal cross",
-            BoxDrawing::BoxDrawingsLightLeft => "box drawings light left",
-            BoxDrawing::BoxDrawingsLightUp => "box drawings light up",
-            BoxDrawing::BoxDrawingsLightRight => "box drawings light right",
-            BoxDrawing::BoxDrawingsLightDown => "box drawings light down",
-            BoxDrawing::BoxDrawingsHeavyLeft => "box drawings heavy left",
-            BoxDrawing::BoxDrawingsHeavyUp => "box drawings heavy up",
-            BoxDrawing::BoxDrawingsHeavyRight => "box drawings heavy right",
-            BoxDrawing::BoxDrawingsHeavyDown => "box drawings heavy down",
-            BoxDrawing::BoxDrawingsLightLeftAndHeavyRight => "box drawings light left and heavy right",
-            BoxDrawing::BoxDrawingsLightUpAndHeavyDown => "box drawings light up and heavy down",
-            BoxDrawing::BoxDrawingsHeavyLeftAndLightRight => "box drawings heavy left and light right",
+            BoxDrawing::LightHorizontal => "box drawing light horizontal",
+            BoxDrawing::HeavyHorizontal => "box drawing heavy horizontal",
+            BoxDrawing::LightVertical => "box drawing light vertical",
+            BoxDrawing::HeavyVertical => "box drawing heavy vertical",
+            BoxDrawing::LightTripleDashHorizontal => "box drawing light triple dash horizontal",
+            BoxDrawing::HeavyTripleDashHorizontal => "box drawing heavy triple dash horizontal",
+            BoxDrawing::LightTripleDashVertical => "box drawing light triple dash vertical",
+            BoxDrawing::HeavyTripleDashVertical => "box drawing heavy triple dash vertical",
+            BoxDrawing::LightQuadrupleDashHorizontal => "box drawing light quadruple dash horizontal",
+            BoxDrawing::HeavyQuadrupleDashHorizontal => "box drawing heavy quadruple dash horizontal",
+            BoxDrawing::LightQuadrupleDashVertical => "box drawing light quadruple dash vertical",
+            BoxDrawing::HeavyQuadrupleDashVertical => "box drawing heavy quadruple dash vertical",
+            BoxDrawing::LightDownAndRight => "box drawing light down and right",
+            BoxDrawing::DownLightAndRightHeavy => "box drawing down light and right heavy",
+            BoxDrawing::DownHeavyAndRightLight => "box drawing down heavy and right light",
+            BoxDrawing::HeavyDownAndRight => "box drawing heavy down and right",
+            BoxDrawing::LightDownAndLeft => "box drawing light down and left",
+            BoxDrawing::DownLightAndLeftHeavy => "box drawing down light and left heavy",
+            BoxDrawing::DownHeavyAndLeftLight => "box drawing down heavy and left light",
+            BoxDrawing::HeavyDownAndLeft => "box drawing heavy down and left",
+            BoxDrawing::LightUpAndRight => "box drawing light up and right",
+            BoxDrawing::UpLightAndRightHeavy => "box drawing up light and right heavy",
+            BoxDrawing::UpHeavyAndRightLight => "box drawing up heavy and right light",
+            BoxDrawing::HeavyUpAndRight => "box drawing heavy up and right",
+            BoxDrawing::LightUpAndLeft => "box drawing light up and left",
+            BoxDrawing::UpLightAndLeftHeavy => "box drawing up light and left heavy",
+            BoxDrawing::UpHeavyAndLeftLight => "box drawing up heavy and left light",
+            BoxDrawing::HeavyUpAndLeft => "box drawing heavy up and left",
+            BoxDrawing::LightVerticalAndRight => "box drawing light vertical and right",
+            BoxDrawing::VerticalLightAndRightHeavy => "box drawing vertical light and right heavy",
+            BoxDrawing::UpHeavyAndRightDownLight => "box drawing up heavy and right down light",
+            BoxDrawing::DownHeavyAndRightUpLight => "box drawing down heavy and right up light",
+            BoxDrawing::VerticalHeavyAndRightLight => "box drawing vertical heavy and right light",
+            BoxDrawing::DownLightAndRightUpHeavy => "box drawing down light and right up heavy",
+            BoxDrawing::UpLightAndRightDownHeavy => "box drawing up light and right down heavy",
+            BoxDrawing::HeavyVerticalAndRight => "box drawing heavy vertical and right",
+            BoxDrawing::LightVerticalAndLeft => "box drawing light vertical and left",
+            BoxDrawing::VerticalLightAndLeftHeavy => "box drawing vertical light and left heavy",
+            BoxDrawing::UpHeavyAndLeftDownLight => "box drawing up heavy and left down light",
+            BoxDrawing::DownHeavyAndLeftUpLight => "box drawing down heavy and left up light",
+            BoxDrawing::VerticalHeavyAndLeftLight => "box drawing vertical heavy and left light",
+            BoxDrawing::DownLightAndLeftUpHeavy => "box drawing down light and left up heavy",
+            BoxDrawing::UpLightAndLeftDownHeavy => "box drawing up light and left down heavy",
+            BoxDrawing::HeavyVerticalAndLeft => "box drawing heavy vertical and left",
+            BoxDrawing::LightDownAndHorizontal => "box drawing light down and horizontal",
+            BoxDrawing::LeftHeavyAndRightDownLight => "box drawing left heavy and right down light",
+            BoxDrawing::RightHeavyAndLeftDownLight => "box drawing right heavy and left down light",
+            BoxDrawing::DownLightAndHorizontalHeavy => "box drawing down light and horizontal heavy",
+            BoxDrawing::DownHeavyAndHorizontalLight => "box drawing down heavy and horizontal light",
+            BoxDrawing::RightLightAndLeftDownHeavy => "box drawing right light and left down heavy",
+            BoxDrawing::LeftLightAndRightDownHeavy => "box drawing left light and right down heavy",
+            BoxDrawing::HeavyDownAndHorizontal => "box drawing heavy down and horizontal",
+            BoxDrawing::LightUpAndHorizontal => "box drawing light up and horizontal",
+            BoxDrawing::LeftHeavyAndRightUpLight => "box drawing left heavy and right up light",
+            BoxDrawing::RightHeavyAndLeftUpLight => "box drawing right heavy and left up light",
+            BoxDrawing::UpLightAndHorizontalHeavy => "box drawing up light and horizontal heavy",
+            BoxDrawing::UpHeavyAndHorizontalLight => "box drawing up heavy and horizontal light",
+            BoxDrawing::RightLightAndLeftUpHeavy => "box drawing right light and left up heavy",
+            BoxDrawing::LeftLightAndRightUpHeavy => "box drawing left light and right up heavy",
+            BoxDrawing::HeavyUpAndHorizontal => "box drawing heavy up and horizontal",
+            BoxDrawing::LightVerticalAndHorizontal => "box drawing light vertical and horizontal",
+            BoxDrawing::LeftHeavyAndRightVerticalLight => "box drawing left heavy and right vertical light",
+            BoxDrawing::RightHeavyAndLeftVerticalLight => "box drawing right heavy and left vertical light",
+            BoxDrawing::VerticalLightAndHorizontalHeavy => "box drawing vertical light and horizontal heavy",
+            BoxDrawing::UpHeavyAndDownHorizontalLight => "box drawing up heavy and down horizontal light",
+            BoxDrawing::DownHeavyAndUpHorizontalLight => "box drawing down heavy and up horizontal light",
+            BoxDrawing::VerticalHeavyAndHorizontalLight => "box drawing vertical heavy and horizontal light",
+            BoxDrawing::LeftUpHeavyAndRightDownLight => "box drawing left up heavy and right down light",
+            BoxDrawing::RightUpHeavyAndLeftDownLight => "box drawing right up heavy and left down light",
+            BoxDrawing::LeftDownHeavyAndRightUpLight => "box drawing left down heavy and right up light",
+            BoxDrawing::RightDownHeavyAndLeftUpLight => "box drawing right down heavy and left up light",
+            BoxDrawing::DownLightAndUpHorizontalHeavy => "box drawing down light and up horizontal heavy",
+            BoxDrawing::UpLightAndDownHorizontalHeavy => "box drawing up light and down horizontal heavy",
+            BoxDrawing::RightLightAndLeftVerticalHeavy => "box drawing right light and left vertical heavy",
+            BoxDrawing::LeftLightAndRightVerticalHeavy => "box drawing left light and right vertical heavy",
+            BoxDrawing::HeavyVerticalAndHorizontal => "box drawing heavy vertical and horizontal",
+            BoxDrawing::LightDoubleDashHorizontal => "box drawing light double dash horizontal",
+            BoxDrawing::HeavyDoubleDashHorizontal => "box drawing heavy double dash horizontal",
+            BoxDrawing::LightDoubleDashVertical => "box drawing light double dash vertical",
+            BoxDrawing::HeavyDoubleDashVertical => "box drawing heavy double dash vertical",
+            BoxDrawing::DoubleHorizontal => "box drawing double horizontal",
+            BoxDrawing::DoubleVertical => "box drawing double vertical",
+            BoxDrawing::DownSingleAndRightDouble => "box drawing down single and right double",
+            BoxDrawing::DownDoubleAndRightSingle => "box drawing down double and right single",
+            BoxDrawing::DoubleDownAndRight => "box drawing double down and right",
+            BoxDrawing::DownSingleAndLeftDouble => "box drawing down single and left double",
+            BoxDrawing::DownDoubleAndLeftSingle => "box drawing down double and left single",
+            BoxDrawing::DoubleDownAndLeft => "box drawing double down and left",
+            BoxDrawing::UpSingleAndRightDouble => "box drawing up single and right double",
+            BoxDrawing::UpDoubleAndRightSingle => "box drawing up double and right single",
+            BoxDrawing::DoubleUpAndRight => "box drawing double up and right",
+            BoxDrawing::UpSingleAndLeftDouble => "box drawing up single and left double",
+            BoxDrawing::UpDoubleAndLeftSingle => "box drawing up double and left single",
+            BoxDrawing::DoubleUpAndLeft => "box drawing double up and left",
+            BoxDrawing::VerticalSingleAndRightDouble => "box drawing vertical single and right double",
+            BoxDrawing::VerticalDoubleAndRightSingle => "box drawing vertical double and right single",
+            BoxDrawing::DoubleVerticalAndRight => "box drawing double vertical and right",
+            BoxDrawing::VerticalSingleAndLeftDouble => "box drawing vertical single and left double",
+            BoxDrawing::VerticalDoubleAndLeftSingle => "box drawing vertical double and left single",
+            BoxDrawing::DoubleVerticalAndLeft => "box drawing double vertical and left",
+            BoxDrawing::DownSingleAndHorizontalDouble => "box drawing down single and horizontal double",
+            BoxDrawing::DownDoubleAndHorizontalSingle => "box drawing down double and horizontal single",
+            BoxDrawing::DoubleDownAndHorizontal => "box drawing double down and horizontal",
+            BoxDrawing::UpSingleAndHorizontalDouble => "box drawing up single and horizontal double",
+            BoxDrawing::UpDoubleAndHorizontalSingle => "box drawing up double and horizontal single",
+            BoxDrawing::DoubleUpAndHorizontal => "box drawing double up and horizontal",
+            BoxDrawing::VerticalSingleAndHorizontalDouble => "box drawing vertical single and horizontal double",
+            BoxDrawing::VerticalDoubleAndHorizontalSingle => "box drawing vertical double and horizontal single",
+            BoxDrawing::DoubleVerticalAndHorizontal => "box drawing double vertical and horizontal",
+            BoxDrawing::LightArcDownAndRight => "box drawing light arc down and right",
+            BoxDrawing::LightArcDownAndLeft => "box drawing light arc down and left",
+            BoxDrawing::LightArcUpAndLeft => "box drawing light arc up and left",
+            BoxDrawing::LightArcUpAndRight => "box drawing light arc up and right",
+            BoxDrawing::LightDiagonalUpperRightToLowerLeft => "box drawing light diagonal upper right to lower left",
+            BoxDrawing::LightDiagonalUpperLeftToLowerRight => "box drawing light diagonal upper left to lower right",
+            BoxDrawing::LightDiagonalCross => "box drawing light diagonal cross",
+            BoxDrawing::LightLeft => "box drawing light left",
+            BoxDrawing::LightUp => "box drawing light up",
+            BoxDrawing::LightRight => "box drawing light right",
+            BoxDrawing::LightDown => "box drawing light down",
+            BoxDrawing::HeavyLeft => "box drawing heavy left",
+            BoxDrawing::HeavyUp => "box drawing heavy up",
+            BoxDrawing::HeavyRight => "box drawing heavy right",
+            BoxDrawing::HeavyDown => "box drawing heavy down",
+            BoxDrawing::LightLeftAndHeavyRight => "box drawing light left and heavy right",
+            BoxDrawing::LightUpAndHeavyDown => "box drawing light up and heavy down",
+            BoxDrawing::HeavyLeftAndLightRight => "box drawing heavy left and light right",
         }
     }
 }

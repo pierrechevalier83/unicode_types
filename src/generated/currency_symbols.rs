@@ -256,7 +256,7 @@ impl Iterator for CurrencySymbols {
 }
 
 impl CurrencySymbols {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         CurrencySymbols::EuroDashCurrencySign
     }

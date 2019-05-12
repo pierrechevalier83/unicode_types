@@ -152,7 +152,7 @@ impl Iterator for SupplementalArrowsA {
 }
 
 impl SupplementalArrowsA {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         SupplementalArrowsA::UpwardsQuadrupleArrow
     }

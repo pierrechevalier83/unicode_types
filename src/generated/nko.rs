@@ -6,127 +6,127 @@
 /// ߰ ߱ ߲ ߳ ߴ ߵ ߶ ߷ ߸ ߹ ߺ ߽ ߾
 pub mod constants {
     /// \u{7c0}: '߀'
-    pub const NKO_DIGIT_ZERO: char = '߀';
+    pub const DIGIT_ZERO: char = '߀';
     /// \u{7c1}: '߁'
-    pub const NKO_DIGIT_ONE: char = '߁';
+    pub const DIGIT_ONE: char = '߁';
     /// \u{7c2}: '߂'
-    pub const NKO_DIGIT_TWO: char = '߂';
+    pub const DIGIT_TWO: char = '߂';
     /// \u{7c3}: '߃'
-    pub const NKO_DIGIT_THREE: char = '߃';
+    pub const DIGIT_THREE: char = '߃';
     /// \u{7c4}: '߄'
-    pub const NKO_DIGIT_FOUR: char = '߄';
+    pub const DIGIT_FOUR: char = '߄';
     /// \u{7c5}: '߅'
-    pub const NKO_DIGIT_FIVE: char = '߅';
+    pub const DIGIT_FIVE: char = '߅';
     /// \u{7c6}: '߆'
-    pub const NKO_DIGIT_SIX: char = '߆';
+    pub const DIGIT_SIX: char = '߆';
     /// \u{7c7}: '߇'
-    pub const NKO_DIGIT_SEVEN: char = '߇';
+    pub const DIGIT_SEVEN: char = '߇';
     /// \u{7c8}: '߈'
-    pub const NKO_DIGIT_EIGHT: char = '߈';
+    pub const DIGIT_EIGHT: char = '߈';
     /// \u{7c9}: '߉'
-    pub const NKO_DIGIT_NINE: char = '߉';
+    pub const DIGIT_NINE: char = '߉';
     /// \u{7ca}: 'ߊ'
-    pub const NKO_LETTER_A: char = 'ߊ';
+    pub const LETTER_A: char = 'ߊ';
     /// \u{7cb}: 'ߋ'
-    pub const NKO_LETTER_EE: char = 'ߋ';
+    pub const LETTER_EE: char = 'ߋ';
     /// \u{7cc}: 'ߌ'
-    pub const NKO_LETTER_I: char = 'ߌ';
+    pub const LETTER_I: char = 'ߌ';
     /// \u{7cd}: 'ߍ'
-    pub const NKO_LETTER_E: char = 'ߍ';
+    pub const LETTER_E: char = 'ߍ';
     /// \u{7ce}: 'ߎ'
-    pub const NKO_LETTER_U: char = 'ߎ';
+    pub const LETTER_U: char = 'ߎ';
     /// \u{7cf}: 'ߏ'
-    pub const NKO_LETTER_OO: char = 'ߏ';
+    pub const LETTER_OO: char = 'ߏ';
     /// \u{7d0}: 'ߐ'
-    pub const NKO_LETTER_O: char = 'ߐ';
+    pub const LETTER_O: char = 'ߐ';
     /// \u{7d1}: 'ߑ'
-    pub const NKO_LETTER_DAGBASINNA: char = 'ߑ';
+    pub const LETTER_DAGBASINNA: char = 'ߑ';
     /// \u{7d2}: 'ߒ'
-    pub const NKO_LETTER_N: char = 'ߒ';
+    pub const LETTER_N: char = 'ߒ';
     /// \u{7d3}: 'ߓ'
-    pub const NKO_LETTER_BA: char = 'ߓ';
+    pub const LETTER_BA: char = 'ߓ';
     /// \u{7d4}: 'ߔ'
-    pub const NKO_LETTER_PA: char = 'ߔ';
+    pub const LETTER_PA: char = 'ߔ';
     /// \u{7d5}: 'ߕ'
-    pub const NKO_LETTER_TA: char = 'ߕ';
+    pub const LETTER_TA: char = 'ߕ';
     /// \u{7d6}: 'ߖ'
-    pub const NKO_LETTER_JA: char = 'ߖ';
+    pub const LETTER_JA: char = 'ߖ';
     /// \u{7d7}: 'ߗ'
-    pub const NKO_LETTER_CHA: char = 'ߗ';
+    pub const LETTER_CHA: char = 'ߗ';
     /// \u{7d8}: 'ߘ'
-    pub const NKO_LETTER_DA: char = 'ߘ';
+    pub const LETTER_DA: char = 'ߘ';
     /// \u{7d9}: 'ߙ'
-    pub const NKO_LETTER_RA: char = 'ߙ';
+    pub const LETTER_RA: char = 'ߙ';
     /// \u{7da}: 'ߚ'
-    pub const NKO_LETTER_RRA: char = 'ߚ';
+    pub const LETTER_RRA: char = 'ߚ';
     /// \u{7db}: 'ߛ'
-    pub const NKO_LETTER_SA: char = 'ߛ';
+    pub const LETTER_SA: char = 'ߛ';
     /// \u{7dc}: 'ߜ'
-    pub const NKO_LETTER_GBA: char = 'ߜ';
+    pub const LETTER_GBA: char = 'ߜ';
     /// \u{7dd}: 'ߝ'
-    pub const NKO_LETTER_FA: char = 'ߝ';
+    pub const LETTER_FA: char = 'ߝ';
     /// \u{7de}: 'ߞ'
-    pub const NKO_LETTER_KA: char = 'ߞ';
+    pub const LETTER_KA: char = 'ߞ';
     /// \u{7df}: 'ߟ'
-    pub const NKO_LETTER_LA: char = 'ߟ';
+    pub const LETTER_LA: char = 'ߟ';
     /// \u{7e0}: 'ߠ'
-    pub const NKO_LETTER_NA_WOLOSO: char = 'ߠ';
+    pub const LETTER_NA_WOLOSO: char = 'ߠ';
     /// \u{7e1}: 'ߡ'
-    pub const NKO_LETTER_MA: char = 'ߡ';
+    pub const LETTER_MA: char = 'ߡ';
     /// \u{7e2}: 'ߢ'
-    pub const NKO_LETTER_NYA: char = 'ߢ';
+    pub const LETTER_NYA: char = 'ߢ';
     /// \u{7e3}: 'ߣ'
-    pub const NKO_LETTER_NA: char = 'ߣ';
+    pub const LETTER_NA: char = 'ߣ';
     /// \u{7e4}: 'ߤ'
-    pub const NKO_LETTER_HA: char = 'ߤ';
+    pub const LETTER_HA: char = 'ߤ';
     /// \u{7e5}: 'ߥ'
-    pub const NKO_LETTER_WA: char = 'ߥ';
+    pub const LETTER_WA: char = 'ߥ';
     /// \u{7e6}: 'ߦ'
-    pub const NKO_LETTER_YA: char = 'ߦ';
+    pub const LETTER_YA: char = 'ߦ';
     /// \u{7e7}: 'ߧ'
-    pub const NKO_LETTER_NYA_WOLOSO: char = 'ߧ';
+    pub const LETTER_NYA_WOLOSO: char = 'ߧ';
     /// \u{7e8}: 'ߨ'
-    pub const NKO_LETTER_JONA_JA: char = 'ߨ';
+    pub const LETTER_JONA_JA: char = 'ߨ';
     /// \u{7e9}: 'ߩ'
-    pub const NKO_LETTER_JONA_CHA: char = 'ߩ';
+    pub const LETTER_JONA_CHA: char = 'ߩ';
     /// \u{7ea}: 'ߪ'
-    pub const NKO_LETTER_JONA_RA: char = 'ߪ';
+    pub const LETTER_JONA_RA: char = 'ߪ';
     /// \u{7eb}: '߫'
-    pub const NKO_COMBINING_SHORT_HIGH_TONE: char = '߫';
+    pub const COMBINING_SHORT_HIGH_TONE: char = '߫';
     /// \u{7ec}: '߬'
-    pub const NKO_COMBINING_SHORT_LOW_TONE: char = '߬';
+    pub const COMBINING_SHORT_LOW_TONE: char = '߬';
     /// \u{7ed}: '߭'
-    pub const NKO_COMBINING_SHORT_RISING_TONE: char = '߭';
+    pub const COMBINING_SHORT_RISING_TONE: char = '߭';
     /// \u{7ee}: '߮'
-    pub const NKO_COMBINING_LONG_DESCENDING_TONE: char = '߮';
+    pub const COMBINING_LONG_DESCENDING_TONE: char = '߮';
     /// \u{7ef}: '߯'
-    pub const NKO_COMBINING_LONG_HIGH_TONE: char = '߯';
+    pub const COMBINING_LONG_HIGH_TONE: char = '߯';
     /// \u{7f0}: '߰'
-    pub const NKO_COMBINING_LONG_LOW_TONE: char = '߰';
+    pub const COMBINING_LONG_LOW_TONE: char = '߰';
     /// \u{7f1}: '߱'
-    pub const NKO_COMBINING_LONG_RISING_TONE: char = '߱';
+    pub const COMBINING_LONG_RISING_TONE: char = '߱';
     /// \u{7f2}: '߲'
-    pub const NKO_COMBINING_NASALIZATION_MARK: char = '߲';
+    pub const COMBINING_NASALIZATION_MARK: char = '߲';
     /// \u{7f3}: '߳'
-    pub const NKO_COMBINING_DOUBLE_DOT_ABOVE: char = '߳';
+    pub const COMBINING_DOUBLE_DOT_ABOVE: char = '߳';
     /// \u{7f4}: 'ߴ'
-    pub const NKO_HIGH_TONE_APOSTROPHE: char = 'ߴ';
+    pub const HIGH_TONE_APOSTROPHE: char = 'ߴ';
     /// \u{7f5}: 'ߵ'
-    pub const NKO_LOW_TONE_APOSTROPHE: char = 'ߵ';
+    pub const LOW_TONE_APOSTROPHE: char = 'ߵ';
     /// \u{7f6}: '߶'
-    pub const NKO_SYMBOL_OO_DENNEN: char = '߶';
+    pub const SYMBOL_OO_DENNEN: char = '߶';
     /// \u{7f7}: '߷'
-    pub const NKO_SYMBOL_GBAKURUNEN: char = '߷';
+    pub const SYMBOL_GBAKURUNEN: char = '߷';
     /// \u{7f8}: '߸'
-    pub const NKO_COMMA: char = '߸';
+    pub const COMMA: char = '߸';
     /// \u{7f9}: '߹'
-    pub const NKO_EXCLAMATION_MARK: char = '߹';
+    pub const EXCLAMATION_MARK: char = '߹';
     /// \u{7fa}: 'ߺ'
-    pub const NKO_LAJANYALAN: char = 'ߺ';
+    pub const LAJANYALAN: char = 'ߺ';
     /// \u{7fd}: '߽'
-    pub const NKO_DANTAYALAN: char = '߽';
+    pub const DANTAYALAN: char = '߽';
     /// \u{7fe}: '߾'
-    pub const NKO_DOROME_SIGN: char = '߾';
+    pub const DOROME_SIGN: char = '߾';
 }
 
 /// \u{7c0} → \u{7ff}\
@@ -265,67 +265,67 @@ impl Into<char> for NKo {
     fn into(self) -> char {
         use constants::*;
         match self {
-            NKo::NkoDigitZero => NKO_DIGIT_ZERO,
-            NKo::NkoDigitOne => NKO_DIGIT_ONE,
-            NKo::NkoDigitTwo => NKO_DIGIT_TWO,
-            NKo::NkoDigitThree => NKO_DIGIT_THREE,
-            NKo::NkoDigitFour => NKO_DIGIT_FOUR,
-            NKo::NkoDigitFive => NKO_DIGIT_FIVE,
-            NKo::NkoDigitSix => NKO_DIGIT_SIX,
-            NKo::NkoDigitSeven => NKO_DIGIT_SEVEN,
-            NKo::NkoDigitEight => NKO_DIGIT_EIGHT,
-            NKo::NkoDigitNine => NKO_DIGIT_NINE,
-            NKo::NkoLetterA => NKO_LETTER_A,
-            NKo::NkoLetterEe => NKO_LETTER_EE,
-            NKo::NkoLetterI => NKO_LETTER_I,
-            NKo::NkoLetterE => NKO_LETTER_E,
-            NKo::NkoLetterU => NKO_LETTER_U,
-            NKo::NkoLetterOo => NKO_LETTER_OO,
-            NKo::NkoLetterO => NKO_LETTER_O,
-            NKo::NkoLetterDagbasinna => NKO_LETTER_DAGBASINNA,
-            NKo::NkoLetterN => NKO_LETTER_N,
-            NKo::NkoLetterBa => NKO_LETTER_BA,
-            NKo::NkoLetterPa => NKO_LETTER_PA,
-            NKo::NkoLetterTa => NKO_LETTER_TA,
-            NKo::NkoLetterJa => NKO_LETTER_JA,
-            NKo::NkoLetterCha => NKO_LETTER_CHA,
-            NKo::NkoLetterDa => NKO_LETTER_DA,
-            NKo::NkoLetterRa => NKO_LETTER_RA,
-            NKo::NkoLetterRra => NKO_LETTER_RRA,
-            NKo::NkoLetterSa => NKO_LETTER_SA,
-            NKo::NkoLetterGba => NKO_LETTER_GBA,
-            NKo::NkoLetterFa => NKO_LETTER_FA,
-            NKo::NkoLetterKa => NKO_LETTER_KA,
-            NKo::NkoLetterLa => NKO_LETTER_LA,
-            NKo::NkoLetterNaWoloso => NKO_LETTER_NA_WOLOSO,
-            NKo::NkoLetterMa => NKO_LETTER_MA,
-            NKo::NkoLetterNya => NKO_LETTER_NYA,
-            NKo::NkoLetterNa => NKO_LETTER_NA,
-            NKo::NkoLetterHa => NKO_LETTER_HA,
-            NKo::NkoLetterWa => NKO_LETTER_WA,
-            NKo::NkoLetterYa => NKO_LETTER_YA,
-            NKo::NkoLetterNyaWoloso => NKO_LETTER_NYA_WOLOSO,
-            NKo::NkoLetterJonaJa => NKO_LETTER_JONA_JA,
-            NKo::NkoLetterJonaCha => NKO_LETTER_JONA_CHA,
-            NKo::NkoLetterJonaRa => NKO_LETTER_JONA_RA,
-            NKo::NkoCombiningShortHighTone => NKO_COMBINING_SHORT_HIGH_TONE,
-            NKo::NkoCombiningShortLowTone => NKO_COMBINING_SHORT_LOW_TONE,
-            NKo::NkoCombiningShortRisingTone => NKO_COMBINING_SHORT_RISING_TONE,
-            NKo::NkoCombiningLongDescendingTone => NKO_COMBINING_LONG_DESCENDING_TONE,
-            NKo::NkoCombiningLongHighTone => NKO_COMBINING_LONG_HIGH_TONE,
-            NKo::NkoCombiningLongLowTone => NKO_COMBINING_LONG_LOW_TONE,
-            NKo::NkoCombiningLongRisingTone => NKO_COMBINING_LONG_RISING_TONE,
-            NKo::NkoCombiningNasalizationMark => NKO_COMBINING_NASALIZATION_MARK,
-            NKo::NkoCombiningDoubleDotAbove => NKO_COMBINING_DOUBLE_DOT_ABOVE,
-            NKo::NkoHighToneApostrophe => NKO_HIGH_TONE_APOSTROPHE,
-            NKo::NkoLowToneApostrophe => NKO_LOW_TONE_APOSTROPHE,
-            NKo::NkoSymbolOoDennen => NKO_SYMBOL_OO_DENNEN,
-            NKo::NkoSymbolGbakurunen => NKO_SYMBOL_GBAKURUNEN,
-            NKo::NkoComma => NKO_COMMA,
-            NKo::NkoExclamationMark => NKO_EXCLAMATION_MARK,
-            NKo::NkoLajanyalan => NKO_LAJANYALAN,
-            NKo::NkoDantayalan => NKO_DANTAYALAN,
-            NKo::NkoDoromeSign => NKO_DOROME_SIGN,
+            NKo::NkoDigitZero => DIGIT_ZERO,
+            NKo::NkoDigitOne => DIGIT_ONE,
+            NKo::NkoDigitTwo => DIGIT_TWO,
+            NKo::NkoDigitThree => DIGIT_THREE,
+            NKo::NkoDigitFour => DIGIT_FOUR,
+            NKo::NkoDigitFive => DIGIT_FIVE,
+            NKo::NkoDigitSix => DIGIT_SIX,
+            NKo::NkoDigitSeven => DIGIT_SEVEN,
+            NKo::NkoDigitEight => DIGIT_EIGHT,
+            NKo::NkoDigitNine => DIGIT_NINE,
+            NKo::NkoLetterA => LETTER_A,
+            NKo::NkoLetterEe => LETTER_EE,
+            NKo::NkoLetterI => LETTER_I,
+            NKo::NkoLetterE => LETTER_E,
+            NKo::NkoLetterU => LETTER_U,
+            NKo::NkoLetterOo => LETTER_OO,
+            NKo::NkoLetterO => LETTER_O,
+            NKo::NkoLetterDagbasinna => LETTER_DAGBASINNA,
+            NKo::NkoLetterN => LETTER_N,
+            NKo::NkoLetterBa => LETTER_BA,
+            NKo::NkoLetterPa => LETTER_PA,
+            NKo::NkoLetterTa => LETTER_TA,
+            NKo::NkoLetterJa => LETTER_JA,
+            NKo::NkoLetterCha => LETTER_CHA,
+            NKo::NkoLetterDa => LETTER_DA,
+            NKo::NkoLetterRa => LETTER_RA,
+            NKo::NkoLetterRra => LETTER_RRA,
+            NKo::NkoLetterSa => LETTER_SA,
+            NKo::NkoLetterGba => LETTER_GBA,
+            NKo::NkoLetterFa => LETTER_FA,
+            NKo::NkoLetterKa => LETTER_KA,
+            NKo::NkoLetterLa => LETTER_LA,
+            NKo::NkoLetterNaWoloso => LETTER_NA_WOLOSO,
+            NKo::NkoLetterMa => LETTER_MA,
+            NKo::NkoLetterNya => LETTER_NYA,
+            NKo::NkoLetterNa => LETTER_NA,
+            NKo::NkoLetterHa => LETTER_HA,
+            NKo::NkoLetterWa => LETTER_WA,
+            NKo::NkoLetterYa => LETTER_YA,
+            NKo::NkoLetterNyaWoloso => LETTER_NYA_WOLOSO,
+            NKo::NkoLetterJonaJa => LETTER_JONA_JA,
+            NKo::NkoLetterJonaCha => LETTER_JONA_CHA,
+            NKo::NkoLetterJonaRa => LETTER_JONA_RA,
+            NKo::NkoCombiningShortHighTone => COMBINING_SHORT_HIGH_TONE,
+            NKo::NkoCombiningShortLowTone => COMBINING_SHORT_LOW_TONE,
+            NKo::NkoCombiningShortRisingTone => COMBINING_SHORT_RISING_TONE,
+            NKo::NkoCombiningLongDescendingTone => COMBINING_LONG_DESCENDING_TONE,
+            NKo::NkoCombiningLongHighTone => COMBINING_LONG_HIGH_TONE,
+            NKo::NkoCombiningLongLowTone => COMBINING_LONG_LOW_TONE,
+            NKo::NkoCombiningLongRisingTone => COMBINING_LONG_RISING_TONE,
+            NKo::NkoCombiningNasalizationMark => COMBINING_NASALIZATION_MARK,
+            NKo::NkoCombiningDoubleDotAbove => COMBINING_DOUBLE_DOT_ABOVE,
+            NKo::NkoHighToneApostrophe => HIGH_TONE_APOSTROPHE,
+            NKo::NkoLowToneApostrophe => LOW_TONE_APOSTROPHE,
+            NKo::NkoSymbolOoDennen => SYMBOL_OO_DENNEN,
+            NKo::NkoSymbolGbakurunen => SYMBOL_GBAKURUNEN,
+            NKo::NkoComma => COMMA,
+            NKo::NkoExclamationMark => EXCLAMATION_MARK,
+            NKo::NkoLajanyalan => LAJANYALAN,
+            NKo::NkoDantayalan => DANTAYALAN,
+            NKo::NkoDoromeSign => DOROME_SIGN,
         }
     }
 }
@@ -335,67 +335,67 @@ impl std::convert::TryFrom<char> for NKo {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            NKO_DIGIT_ZERO => Ok(NKo::NkoDigitZero),
-            NKO_DIGIT_ONE => Ok(NKo::NkoDigitOne),
-            NKO_DIGIT_TWO => Ok(NKo::NkoDigitTwo),
-            NKO_DIGIT_THREE => Ok(NKo::NkoDigitThree),
-            NKO_DIGIT_FOUR => Ok(NKo::NkoDigitFour),
-            NKO_DIGIT_FIVE => Ok(NKo::NkoDigitFive),
-            NKO_DIGIT_SIX => Ok(NKo::NkoDigitSix),
-            NKO_DIGIT_SEVEN => Ok(NKo::NkoDigitSeven),
-            NKO_DIGIT_EIGHT => Ok(NKo::NkoDigitEight),
-            NKO_DIGIT_NINE => Ok(NKo::NkoDigitNine),
-            NKO_LETTER_A => Ok(NKo::NkoLetterA),
-            NKO_LETTER_EE => Ok(NKo::NkoLetterEe),
-            NKO_LETTER_I => Ok(NKo::NkoLetterI),
-            NKO_LETTER_E => Ok(NKo::NkoLetterE),
-            NKO_LETTER_U => Ok(NKo::NkoLetterU),
-            NKO_LETTER_OO => Ok(NKo::NkoLetterOo),
-            NKO_LETTER_O => Ok(NKo::NkoLetterO),
-            NKO_LETTER_DAGBASINNA => Ok(NKo::NkoLetterDagbasinna),
-            NKO_LETTER_N => Ok(NKo::NkoLetterN),
-            NKO_LETTER_BA => Ok(NKo::NkoLetterBa),
-            NKO_LETTER_PA => Ok(NKo::NkoLetterPa),
-            NKO_LETTER_TA => Ok(NKo::NkoLetterTa),
-            NKO_LETTER_JA => Ok(NKo::NkoLetterJa),
-            NKO_LETTER_CHA => Ok(NKo::NkoLetterCha),
-            NKO_LETTER_DA => Ok(NKo::NkoLetterDa),
-            NKO_LETTER_RA => Ok(NKo::NkoLetterRa),
-            NKO_LETTER_RRA => Ok(NKo::NkoLetterRra),
-            NKO_LETTER_SA => Ok(NKo::NkoLetterSa),
-            NKO_LETTER_GBA => Ok(NKo::NkoLetterGba),
-            NKO_LETTER_FA => Ok(NKo::NkoLetterFa),
-            NKO_LETTER_KA => Ok(NKo::NkoLetterKa),
-            NKO_LETTER_LA => Ok(NKo::NkoLetterLa),
-            NKO_LETTER_NA_WOLOSO => Ok(NKo::NkoLetterNaWoloso),
-            NKO_LETTER_MA => Ok(NKo::NkoLetterMa),
-            NKO_LETTER_NYA => Ok(NKo::NkoLetterNya),
-            NKO_LETTER_NA => Ok(NKo::NkoLetterNa),
-            NKO_LETTER_HA => Ok(NKo::NkoLetterHa),
-            NKO_LETTER_WA => Ok(NKo::NkoLetterWa),
-            NKO_LETTER_YA => Ok(NKo::NkoLetterYa),
-            NKO_LETTER_NYA_WOLOSO => Ok(NKo::NkoLetterNyaWoloso),
-            NKO_LETTER_JONA_JA => Ok(NKo::NkoLetterJonaJa),
-            NKO_LETTER_JONA_CHA => Ok(NKo::NkoLetterJonaCha),
-            NKO_LETTER_JONA_RA => Ok(NKo::NkoLetterJonaRa),
-            NKO_COMBINING_SHORT_HIGH_TONE => Ok(NKo::NkoCombiningShortHighTone),
-            NKO_COMBINING_SHORT_LOW_TONE => Ok(NKo::NkoCombiningShortLowTone),
-            NKO_COMBINING_SHORT_RISING_TONE => Ok(NKo::NkoCombiningShortRisingTone),
-            NKO_COMBINING_LONG_DESCENDING_TONE => Ok(NKo::NkoCombiningLongDescendingTone),
-            NKO_COMBINING_LONG_HIGH_TONE => Ok(NKo::NkoCombiningLongHighTone),
-            NKO_COMBINING_LONG_LOW_TONE => Ok(NKo::NkoCombiningLongLowTone),
-            NKO_COMBINING_LONG_RISING_TONE => Ok(NKo::NkoCombiningLongRisingTone),
-            NKO_COMBINING_NASALIZATION_MARK => Ok(NKo::NkoCombiningNasalizationMark),
-            NKO_COMBINING_DOUBLE_DOT_ABOVE => Ok(NKo::NkoCombiningDoubleDotAbove),
-            NKO_HIGH_TONE_APOSTROPHE => Ok(NKo::NkoHighToneApostrophe),
-            NKO_LOW_TONE_APOSTROPHE => Ok(NKo::NkoLowToneApostrophe),
-            NKO_SYMBOL_OO_DENNEN => Ok(NKo::NkoSymbolOoDennen),
-            NKO_SYMBOL_GBAKURUNEN => Ok(NKo::NkoSymbolGbakurunen),
-            NKO_COMMA => Ok(NKo::NkoComma),
-            NKO_EXCLAMATION_MARK => Ok(NKo::NkoExclamationMark),
-            NKO_LAJANYALAN => Ok(NKo::NkoLajanyalan),
-            NKO_DANTAYALAN => Ok(NKo::NkoDantayalan),
-            NKO_DOROME_SIGN => Ok(NKo::NkoDoromeSign),
+            DIGIT_ZERO => Ok(NKo::NkoDigitZero),
+            DIGIT_ONE => Ok(NKo::NkoDigitOne),
+            DIGIT_TWO => Ok(NKo::NkoDigitTwo),
+            DIGIT_THREE => Ok(NKo::NkoDigitThree),
+            DIGIT_FOUR => Ok(NKo::NkoDigitFour),
+            DIGIT_FIVE => Ok(NKo::NkoDigitFive),
+            DIGIT_SIX => Ok(NKo::NkoDigitSix),
+            DIGIT_SEVEN => Ok(NKo::NkoDigitSeven),
+            DIGIT_EIGHT => Ok(NKo::NkoDigitEight),
+            DIGIT_NINE => Ok(NKo::NkoDigitNine),
+            LETTER_A => Ok(NKo::NkoLetterA),
+            LETTER_EE => Ok(NKo::NkoLetterEe),
+            LETTER_I => Ok(NKo::NkoLetterI),
+            LETTER_E => Ok(NKo::NkoLetterE),
+            LETTER_U => Ok(NKo::NkoLetterU),
+            LETTER_OO => Ok(NKo::NkoLetterOo),
+            LETTER_O => Ok(NKo::NkoLetterO),
+            LETTER_DAGBASINNA => Ok(NKo::NkoLetterDagbasinna),
+            LETTER_N => Ok(NKo::NkoLetterN),
+            LETTER_BA => Ok(NKo::NkoLetterBa),
+            LETTER_PA => Ok(NKo::NkoLetterPa),
+            LETTER_TA => Ok(NKo::NkoLetterTa),
+            LETTER_JA => Ok(NKo::NkoLetterJa),
+            LETTER_CHA => Ok(NKo::NkoLetterCha),
+            LETTER_DA => Ok(NKo::NkoLetterDa),
+            LETTER_RA => Ok(NKo::NkoLetterRa),
+            LETTER_RRA => Ok(NKo::NkoLetterRra),
+            LETTER_SA => Ok(NKo::NkoLetterSa),
+            LETTER_GBA => Ok(NKo::NkoLetterGba),
+            LETTER_FA => Ok(NKo::NkoLetterFa),
+            LETTER_KA => Ok(NKo::NkoLetterKa),
+            LETTER_LA => Ok(NKo::NkoLetterLa),
+            LETTER_NA_WOLOSO => Ok(NKo::NkoLetterNaWoloso),
+            LETTER_MA => Ok(NKo::NkoLetterMa),
+            LETTER_NYA => Ok(NKo::NkoLetterNya),
+            LETTER_NA => Ok(NKo::NkoLetterNa),
+            LETTER_HA => Ok(NKo::NkoLetterHa),
+            LETTER_WA => Ok(NKo::NkoLetterWa),
+            LETTER_YA => Ok(NKo::NkoLetterYa),
+            LETTER_NYA_WOLOSO => Ok(NKo::NkoLetterNyaWoloso),
+            LETTER_JONA_JA => Ok(NKo::NkoLetterJonaJa),
+            LETTER_JONA_CHA => Ok(NKo::NkoLetterJonaCha),
+            LETTER_JONA_RA => Ok(NKo::NkoLetterJonaRa),
+            COMBINING_SHORT_HIGH_TONE => Ok(NKo::NkoCombiningShortHighTone),
+            COMBINING_SHORT_LOW_TONE => Ok(NKo::NkoCombiningShortLowTone),
+            COMBINING_SHORT_RISING_TONE => Ok(NKo::NkoCombiningShortRisingTone),
+            COMBINING_LONG_DESCENDING_TONE => Ok(NKo::NkoCombiningLongDescendingTone),
+            COMBINING_LONG_HIGH_TONE => Ok(NKo::NkoCombiningLongHighTone),
+            COMBINING_LONG_LOW_TONE => Ok(NKo::NkoCombiningLongLowTone),
+            COMBINING_LONG_RISING_TONE => Ok(NKo::NkoCombiningLongRisingTone),
+            COMBINING_NASALIZATION_MARK => Ok(NKo::NkoCombiningNasalizationMark),
+            COMBINING_DOUBLE_DOT_ABOVE => Ok(NKo::NkoCombiningDoubleDotAbove),
+            HIGH_TONE_APOSTROPHE => Ok(NKo::NkoHighToneApostrophe),
+            LOW_TONE_APOSTROPHE => Ok(NKo::NkoLowToneApostrophe),
+            SYMBOL_OO_DENNEN => Ok(NKo::NkoSymbolOoDennen),
+            SYMBOL_GBAKURUNEN => Ok(NKo::NkoSymbolGbakurunen),
+            COMMA => Ok(NKo::NkoComma),
+            EXCLAMATION_MARK => Ok(NKo::NkoExclamationMark),
+            LAJANYALAN => Ok(NKo::NkoLajanyalan),
+            DANTAYALAN => Ok(NKo::NkoDantayalan),
+            DOROME_SIGN => Ok(NKo::NkoDoromeSign),
             _ => Err(()),
         }
     }
@@ -434,7 +434,7 @@ impl Iterator for NKo {
 }
 
 impl NKo {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         NKo::NkoDigitZero
     }

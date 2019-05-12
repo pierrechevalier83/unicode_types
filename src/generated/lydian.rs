@@ -4,57 +4,57 @@
 /// 𐤰 𐤱 𐤲 𐤳 𐤴 𐤵 𐤶 𐤷 𐤸 𐤹
 pub mod constants {
     /// \u{10920}: '𐤠'
-    pub const LYDIAN_LETTER_A: char = '𐤠';
+    pub const LETTER_A: char = '𐤠';
     /// \u{10921}: '𐤡'
-    pub const LYDIAN_LETTER_B: char = '𐤡';
+    pub const LETTER_B: char = '𐤡';
     /// \u{10922}: '𐤢'
-    pub const LYDIAN_LETTER_G: char = '𐤢';
+    pub const LETTER_G: char = '𐤢';
     /// \u{10923}: '𐤣'
-    pub const LYDIAN_LETTER_D: char = '𐤣';
+    pub const LETTER_D: char = '𐤣';
     /// \u{10924}: '𐤤'
-    pub const LYDIAN_LETTER_E: char = '𐤤';
+    pub const LETTER_E: char = '𐤤';
     /// \u{10925}: '𐤥'
-    pub const LYDIAN_LETTER_V: char = '𐤥';
+    pub const LETTER_V: char = '𐤥';
     /// \u{10926}: '𐤦'
-    pub const LYDIAN_LETTER_I: char = '𐤦';
+    pub const LETTER_I: char = '𐤦';
     /// \u{10927}: '𐤧'
-    pub const LYDIAN_LETTER_Y: char = '𐤧';
+    pub const LETTER_Y: char = '𐤧';
     /// \u{10928}: '𐤨'
-    pub const LYDIAN_LETTER_K: char = '𐤨';
+    pub const LETTER_K: char = '𐤨';
     /// \u{10929}: '𐤩'
-    pub const LYDIAN_LETTER_L: char = '𐤩';
+    pub const LETTER_L: char = '𐤩';
     /// \u{1092a}: '𐤪'
-    pub const LYDIAN_LETTER_M: char = '𐤪';
+    pub const LETTER_M: char = '𐤪';
     /// \u{1092b}: '𐤫'
-    pub const LYDIAN_LETTER_N: char = '𐤫';
+    pub const LETTER_N: char = '𐤫';
     /// \u{1092c}: '𐤬'
-    pub const LYDIAN_LETTER_O: char = '𐤬';
+    pub const LETTER_O: char = '𐤬';
     /// \u{1092d}: '𐤭'
-    pub const LYDIAN_LETTER_R: char = '𐤭';
+    pub const LETTER_R: char = '𐤭';
     /// \u{1092e}: '𐤮'
-    pub const LYDIAN_LETTER_SS: char = '𐤮';
+    pub const LETTER_SS: char = '𐤮';
     /// \u{1092f}: '𐤯'
-    pub const LYDIAN_LETTER_T: char = '𐤯';
+    pub const LETTER_T: char = '𐤯';
     /// \u{10930}: '𐤰'
-    pub const LYDIAN_LETTER_U: char = '𐤰';
+    pub const LETTER_U: char = '𐤰';
     /// \u{10931}: '𐤱'
-    pub const LYDIAN_LETTER_F: char = '𐤱';
+    pub const LETTER_F: char = '𐤱';
     /// \u{10932}: '𐤲'
-    pub const LYDIAN_LETTER_Q: char = '𐤲';
+    pub const LETTER_Q: char = '𐤲';
     /// \u{10933}: '𐤳'
-    pub const LYDIAN_LETTER_S: char = '𐤳';
+    pub const LETTER_S: char = '𐤳';
     /// \u{10934}: '𐤴'
-    pub const LYDIAN_LETTER_TT: char = '𐤴';
+    pub const LETTER_TT: char = '𐤴';
     /// \u{10935}: '𐤵'
-    pub const LYDIAN_LETTER_AN: char = '𐤵';
+    pub const LETTER_AN: char = '𐤵';
     /// \u{10936}: '𐤶'
-    pub const LYDIAN_LETTER_EN: char = '𐤶';
+    pub const LETTER_EN: char = '𐤶';
     /// \u{10937}: '𐤷'
-    pub const LYDIAN_LETTER_LY: char = '𐤷';
+    pub const LETTER_LY: char = '𐤷';
     /// \u{10938}: '𐤸'
-    pub const LYDIAN_LETTER_NN: char = '𐤸';
+    pub const LETTER_NN: char = '𐤸';
     /// \u{10939}: '𐤹'
-    pub const LYDIAN_LETTER_C: char = '𐤹';
+    pub const LETTER_C: char = '𐤹';
 }
 
 /// \u{10920} → \u{1093f}\
@@ -64,89 +64,89 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Lydian {
     /// \u{10920}: '𐤠'
-    LydianLetterA,
+    LetterA,
     /// \u{10921}: '𐤡'
-    LydianLetterB,
+    LetterB,
     /// \u{10922}: '𐤢'
-    LydianLetterG,
+    LetterG,
     /// \u{10923}: '𐤣'
-    LydianLetterD,
+    LetterD,
     /// \u{10924}: '𐤤'
-    LydianLetterE,
+    LetterE,
     /// \u{10925}: '𐤥'
-    LydianLetterV,
+    LetterV,
     /// \u{10926}: '𐤦'
-    LydianLetterI,
+    LetterI,
     /// \u{10927}: '𐤧'
-    LydianLetterY,
+    LetterY,
     /// \u{10928}: '𐤨'
-    LydianLetterK,
+    LetterK,
     /// \u{10929}: '𐤩'
-    LydianLetterL,
+    LetterL,
     /// \u{1092a}: '𐤪'
-    LydianLetterM,
+    LetterM,
     /// \u{1092b}: '𐤫'
-    LydianLetterN,
+    LetterN,
     /// \u{1092c}: '𐤬'
-    LydianLetterO,
+    LetterO,
     /// \u{1092d}: '𐤭'
-    LydianLetterR,
+    LetterR,
     /// \u{1092e}: '𐤮'
-    LydianLetterSs,
+    LetterSs,
     /// \u{1092f}: '𐤯'
-    LydianLetterT,
+    LetterT,
     /// \u{10930}: '𐤰'
-    LydianLetterU,
+    LetterU,
     /// \u{10931}: '𐤱'
-    LydianLetterF,
+    LetterF,
     /// \u{10932}: '𐤲'
-    LydianLetterQ,
+    LetterQ,
     /// \u{10933}: '𐤳'
-    LydianLetterS,
+    LetterS,
     /// \u{10934}: '𐤴'
-    LydianLetterTt,
+    LetterTt,
     /// \u{10935}: '𐤵'
-    LydianLetterAn,
+    LetterAn,
     /// \u{10936}: '𐤶'
-    LydianLetterEn,
+    LetterEn,
     /// \u{10937}: '𐤷'
-    LydianLetterLy,
+    LetterLy,
     /// \u{10938}: '𐤸'
-    LydianLetterNn,
+    LetterNn,
     /// \u{10939}: '𐤹'
-    LydianLetterC,
+    LetterC,
 }
 
 impl Into<char> for Lydian {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Lydian::LydianLetterA => LYDIAN_LETTER_A,
-            Lydian::LydianLetterB => LYDIAN_LETTER_B,
-            Lydian::LydianLetterG => LYDIAN_LETTER_G,
-            Lydian::LydianLetterD => LYDIAN_LETTER_D,
-            Lydian::LydianLetterE => LYDIAN_LETTER_E,
-            Lydian::LydianLetterV => LYDIAN_LETTER_V,
-            Lydian::LydianLetterI => LYDIAN_LETTER_I,
-            Lydian::LydianLetterY => LYDIAN_LETTER_Y,
-            Lydian::LydianLetterK => LYDIAN_LETTER_K,
-            Lydian::LydianLetterL => LYDIAN_LETTER_L,
-            Lydian::LydianLetterM => LYDIAN_LETTER_M,
-            Lydian::LydianLetterN => LYDIAN_LETTER_N,
-            Lydian::LydianLetterO => LYDIAN_LETTER_O,
-            Lydian::LydianLetterR => LYDIAN_LETTER_R,
-            Lydian::LydianLetterSs => LYDIAN_LETTER_SS,
-            Lydian::LydianLetterT => LYDIAN_LETTER_T,
-            Lydian::LydianLetterU => LYDIAN_LETTER_U,
-            Lydian::LydianLetterF => LYDIAN_LETTER_F,
-            Lydian::LydianLetterQ => LYDIAN_LETTER_Q,
-            Lydian::LydianLetterS => LYDIAN_LETTER_S,
-            Lydian::LydianLetterTt => LYDIAN_LETTER_TT,
-            Lydian::LydianLetterAn => LYDIAN_LETTER_AN,
-            Lydian::LydianLetterEn => LYDIAN_LETTER_EN,
-            Lydian::LydianLetterLy => LYDIAN_LETTER_LY,
-            Lydian::LydianLetterNn => LYDIAN_LETTER_NN,
-            Lydian::LydianLetterC => LYDIAN_LETTER_C,
+            Lydian::LetterA => LETTER_A,
+            Lydian::LetterB => LETTER_B,
+            Lydian::LetterG => LETTER_G,
+            Lydian::LetterD => LETTER_D,
+            Lydian::LetterE => LETTER_E,
+            Lydian::LetterV => LETTER_V,
+            Lydian::LetterI => LETTER_I,
+            Lydian::LetterY => LETTER_Y,
+            Lydian::LetterK => LETTER_K,
+            Lydian::LetterL => LETTER_L,
+            Lydian::LetterM => LETTER_M,
+            Lydian::LetterN => LETTER_N,
+            Lydian::LetterO => LETTER_O,
+            Lydian::LetterR => LETTER_R,
+            Lydian::LetterSs => LETTER_SS,
+            Lydian::LetterT => LETTER_T,
+            Lydian::LetterU => LETTER_U,
+            Lydian::LetterF => LETTER_F,
+            Lydian::LetterQ => LETTER_Q,
+            Lydian::LetterS => LETTER_S,
+            Lydian::LetterTt => LETTER_TT,
+            Lydian::LetterAn => LETTER_AN,
+            Lydian::LetterEn => LETTER_EN,
+            Lydian::LetterLy => LETTER_LY,
+            Lydian::LetterNn => LETTER_NN,
+            Lydian::LetterC => LETTER_C,
         }
     }
 }
@@ -156,32 +156,32 @@ impl std::convert::TryFrom<char> for Lydian {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            LYDIAN_LETTER_A => Ok(Lydian::LydianLetterA),
-            LYDIAN_LETTER_B => Ok(Lydian::LydianLetterB),
-            LYDIAN_LETTER_G => Ok(Lydian::LydianLetterG),
-            LYDIAN_LETTER_D => Ok(Lydian::LydianLetterD),
-            LYDIAN_LETTER_E => Ok(Lydian::LydianLetterE),
-            LYDIAN_LETTER_V => Ok(Lydian::LydianLetterV),
-            LYDIAN_LETTER_I => Ok(Lydian::LydianLetterI),
-            LYDIAN_LETTER_Y => Ok(Lydian::LydianLetterY),
-            LYDIAN_LETTER_K => Ok(Lydian::LydianLetterK),
-            LYDIAN_LETTER_L => Ok(Lydian::LydianLetterL),
-            LYDIAN_LETTER_M => Ok(Lydian::LydianLetterM),
-            LYDIAN_LETTER_N => Ok(Lydian::LydianLetterN),
-            LYDIAN_LETTER_O => Ok(Lydian::LydianLetterO),
-            LYDIAN_LETTER_R => Ok(Lydian::LydianLetterR),
-            LYDIAN_LETTER_SS => Ok(Lydian::LydianLetterSs),
-            LYDIAN_LETTER_T => Ok(Lydian::LydianLetterT),
-            LYDIAN_LETTER_U => Ok(Lydian::LydianLetterU),
-            LYDIAN_LETTER_F => Ok(Lydian::LydianLetterF),
-            LYDIAN_LETTER_Q => Ok(Lydian::LydianLetterQ),
-            LYDIAN_LETTER_S => Ok(Lydian::LydianLetterS),
-            LYDIAN_LETTER_TT => Ok(Lydian::LydianLetterTt),
-            LYDIAN_LETTER_AN => Ok(Lydian::LydianLetterAn),
-            LYDIAN_LETTER_EN => Ok(Lydian::LydianLetterEn),
-            LYDIAN_LETTER_LY => Ok(Lydian::LydianLetterLy),
-            LYDIAN_LETTER_NN => Ok(Lydian::LydianLetterNn),
-            LYDIAN_LETTER_C => Ok(Lydian::LydianLetterC),
+            LETTER_A => Ok(Lydian::LetterA),
+            LETTER_B => Ok(Lydian::LetterB),
+            LETTER_G => Ok(Lydian::LetterG),
+            LETTER_D => Ok(Lydian::LetterD),
+            LETTER_E => Ok(Lydian::LetterE),
+            LETTER_V => Ok(Lydian::LetterV),
+            LETTER_I => Ok(Lydian::LetterI),
+            LETTER_Y => Ok(Lydian::LetterY),
+            LETTER_K => Ok(Lydian::LetterK),
+            LETTER_L => Ok(Lydian::LetterL),
+            LETTER_M => Ok(Lydian::LetterM),
+            LETTER_N => Ok(Lydian::LetterN),
+            LETTER_O => Ok(Lydian::LetterO),
+            LETTER_R => Ok(Lydian::LetterR),
+            LETTER_SS => Ok(Lydian::LetterSs),
+            LETTER_T => Ok(Lydian::LetterT),
+            LETTER_U => Ok(Lydian::LetterU),
+            LETTER_F => Ok(Lydian::LetterF),
+            LETTER_Q => Ok(Lydian::LetterQ),
+            LETTER_S => Ok(Lydian::LetterS),
+            LETTER_TT => Ok(Lydian::LetterTt),
+            LETTER_AN => Ok(Lydian::LetterAn),
+            LETTER_EN => Ok(Lydian::LetterEn),
+            LETTER_LY => Ok(Lydian::LetterLy),
+            LETTER_NN => Ok(Lydian::LetterNn),
+            LETTER_C => Ok(Lydian::LetterC),
             _ => Err(()),
         }
     }
@@ -220,40 +220,40 @@ impl Iterator for Lydian {
 }
 
 impl Lydian {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Lydian::LydianLetterA
+        Lydian::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Lydian::LydianLetterA => "lydian letter a",
-            Lydian::LydianLetterB => "lydian letter b",
-            Lydian::LydianLetterG => "lydian letter g",
-            Lydian::LydianLetterD => "lydian letter d",
-            Lydian::LydianLetterE => "lydian letter e",
-            Lydian::LydianLetterV => "lydian letter v",
-            Lydian::LydianLetterI => "lydian letter i",
-            Lydian::LydianLetterY => "lydian letter y",
-            Lydian::LydianLetterK => "lydian letter k",
-            Lydian::LydianLetterL => "lydian letter l",
-            Lydian::LydianLetterM => "lydian letter m",
-            Lydian::LydianLetterN => "lydian letter n",
-            Lydian::LydianLetterO => "lydian letter o",
-            Lydian::LydianLetterR => "lydian letter r",
-            Lydian::LydianLetterSs => "lydian letter ss",
-            Lydian::LydianLetterT => "lydian letter t",
-            Lydian::LydianLetterU => "lydian letter u",
-            Lydian::LydianLetterF => "lydian letter f",
-            Lydian::LydianLetterQ => "lydian letter q",
-            Lydian::LydianLetterS => "lydian letter s",
-            Lydian::LydianLetterTt => "lydian letter tt",
-            Lydian::LydianLetterAn => "lydian letter an",
-            Lydian::LydianLetterEn => "lydian letter en",
-            Lydian::LydianLetterLy => "lydian letter ly",
-            Lydian::LydianLetterNn => "lydian letter nn",
-            Lydian::LydianLetterC => "lydian letter c",
+            Lydian::LetterA => "lydian letter a",
+            Lydian::LetterB => "lydian letter b",
+            Lydian::LetterG => "lydian letter g",
+            Lydian::LetterD => "lydian letter d",
+            Lydian::LetterE => "lydian letter e",
+            Lydian::LetterV => "lydian letter v",
+            Lydian::LetterI => "lydian letter i",
+            Lydian::LetterY => "lydian letter y",
+            Lydian::LetterK => "lydian letter k",
+            Lydian::LetterL => "lydian letter l",
+            Lydian::LetterM => "lydian letter m",
+            Lydian::LetterN => "lydian letter n",
+            Lydian::LetterO => "lydian letter o",
+            Lydian::LetterR => "lydian letter r",
+            Lydian::LetterSs => "lydian letter ss",
+            Lydian::LetterT => "lydian letter t",
+            Lydian::LetterU => "lydian letter u",
+            Lydian::LetterF => "lydian letter f",
+            Lydian::LetterQ => "lydian letter q",
+            Lydian::LetterS => "lydian letter s",
+            Lydian::LetterTt => "lydian letter tt",
+            Lydian::LetterAn => "lydian letter an",
+            Lydian::LetterEn => "lydian letter en",
+            Lydian::LetterLy => "lydian letter ly",
+            Lydian::LetterNn => "lydian letter nn",
+            Lydian::LetterC => "lydian letter c",
         }
     }
 }

@@ -8,183 +8,183 @@
 /// ᛰ ᛱ ᛲ ᛳ ᛴ ᛵ ᛶ ᛷ ᛸ
 pub mod constants {
     /// \u{16a0}: 'ᚠ'
-    pub const RUNIC_LETTER_FEHU_FEOH_FE_F: char = 'ᚠ';
+    pub const LETTER_FEHU_FEOH_FE_F: char = 'ᚠ';
     /// \u{16a1}: 'ᚡ'
-    pub const RUNIC_LETTER_V: char = 'ᚡ';
+    pub const LETTER_V: char = 'ᚡ';
     /// \u{16a2}: 'ᚢ'
-    pub const RUNIC_LETTER_URUZ_UR_U: char = 'ᚢ';
+    pub const LETTER_URUZ_UR_U: char = 'ᚢ';
     /// \u{16a3}: 'ᚣ'
-    pub const RUNIC_LETTER_YR: char = 'ᚣ';
+    pub const LETTER_YR: char = 'ᚣ';
     /// \u{16a4}: 'ᚤ'
-    pub const RUNIC_LETTER_Y: char = 'ᚤ';
+    pub const LETTER_Y: char = 'ᚤ';
     /// \u{16a5}: 'ᚥ'
-    pub const RUNIC_LETTER_W: char = 'ᚥ';
+    pub const LETTER_W: char = 'ᚥ';
     /// \u{16a6}: 'ᚦ'
-    pub const RUNIC_LETTER_THURISAZ_THURS_THORN: char = 'ᚦ';
+    pub const LETTER_THURISAZ_THURS_THORN: char = 'ᚦ';
     /// \u{16a7}: 'ᚧ'
-    pub const RUNIC_LETTER_ETH: char = 'ᚧ';
+    pub const LETTER_ETH: char = 'ᚧ';
     /// \u{16a8}: 'ᚨ'
-    pub const RUNIC_LETTER_ANSUZ_A: char = 'ᚨ';
+    pub const LETTER_ANSUZ_A: char = 'ᚨ';
     /// \u{16a9}: 'ᚩ'
-    pub const RUNIC_LETTER_OS_O: char = 'ᚩ';
+    pub const LETTER_OS_O: char = 'ᚩ';
     /// \u{16aa}: 'ᚪ'
-    pub const RUNIC_LETTER_AC_A: char = 'ᚪ';
+    pub const LETTER_AC_A: char = 'ᚪ';
     /// \u{16ab}: 'ᚫ'
-    pub const RUNIC_LETTER_AESC: char = 'ᚫ';
+    pub const LETTER_AESC: char = 'ᚫ';
     /// \u{16ac}: 'ᚬ'
-    pub const RUNIC_LETTER_LONG_DASH_BRANCH_DASH_OSS_O: char = 'ᚬ';
+    pub const LETTER_LONG_DASH_BRANCH_DASH_OSS_O: char = 'ᚬ';
     /// \u{16ad}: 'ᚭ'
-    pub const RUNIC_LETTER_SHORT_DASH_TWIG_DASH_OSS_O: char = 'ᚭ';
+    pub const LETTER_SHORT_DASH_TWIG_DASH_OSS_O: char = 'ᚭ';
     /// \u{16ae}: 'ᚮ'
-    pub const RUNIC_LETTER_O: char = 'ᚮ';
+    pub const LETTER_O: char = 'ᚮ';
     /// \u{16af}: 'ᚯ'
-    pub const RUNIC_LETTER_OE: char = 'ᚯ';
+    pub const LETTER_OE: char = 'ᚯ';
     /// \u{16b0}: 'ᚰ'
-    pub const RUNIC_LETTER_ON: char = 'ᚰ';
+    pub const LETTER_ON: char = 'ᚰ';
     /// \u{16b1}: 'ᚱ'
-    pub const RUNIC_LETTER_RAIDO_RAD_REID_R: char = 'ᚱ';
+    pub const LETTER_RAIDO_RAD_REID_R: char = 'ᚱ';
     /// \u{16b2}: 'ᚲ'
-    pub const RUNIC_LETTER_KAUNA: char = 'ᚲ';
+    pub const LETTER_KAUNA: char = 'ᚲ';
     /// \u{16b3}: 'ᚳ'
-    pub const RUNIC_LETTER_CEN: char = 'ᚳ';
+    pub const LETTER_CEN: char = 'ᚳ';
     /// \u{16b4}: 'ᚴ'
-    pub const RUNIC_LETTER_KAUN_K: char = 'ᚴ';
+    pub const LETTER_KAUN_K: char = 'ᚴ';
     /// \u{16b5}: 'ᚵ'
-    pub const RUNIC_LETTER_G: char = 'ᚵ';
+    pub const LETTER_G: char = 'ᚵ';
     /// \u{16b6}: 'ᚶ'
-    pub const RUNIC_LETTER_ENG: char = 'ᚶ';
+    pub const LETTER_ENG: char = 'ᚶ';
     /// \u{16b7}: 'ᚷ'
-    pub const RUNIC_LETTER_GEBO_GYFU_G: char = 'ᚷ';
+    pub const LETTER_GEBO_GYFU_G: char = 'ᚷ';
     /// \u{16b8}: 'ᚸ'
-    pub const RUNIC_LETTER_GAR: char = 'ᚸ';
+    pub const LETTER_GAR: char = 'ᚸ';
     /// \u{16b9}: 'ᚹ'
-    pub const RUNIC_LETTER_WUNJO_WYNN_W: char = 'ᚹ';
+    pub const LETTER_WUNJO_WYNN_W: char = 'ᚹ';
     /// \u{16ba}: 'ᚺ'
-    pub const RUNIC_LETTER_HAGLAZ_H: char = 'ᚺ';
+    pub const LETTER_HAGLAZ_H: char = 'ᚺ';
     /// \u{16bb}: 'ᚻ'
-    pub const RUNIC_LETTER_HAEGL_H: char = 'ᚻ';
+    pub const LETTER_HAEGL_H: char = 'ᚻ';
     /// \u{16bc}: 'ᚼ'
-    pub const RUNIC_LETTER_LONG_DASH_BRANCH_DASH_HAGALL_H: char = 'ᚼ';
+    pub const LETTER_LONG_DASH_BRANCH_DASH_HAGALL_H: char = 'ᚼ';
     /// \u{16bd}: 'ᚽ'
-    pub const RUNIC_LETTER_SHORT_DASH_TWIG_DASH_HAGALL_H: char = 'ᚽ';
+    pub const LETTER_SHORT_DASH_TWIG_DASH_HAGALL_H: char = 'ᚽ';
     /// \u{16be}: 'ᚾ'
-    pub const RUNIC_LETTER_NAUDIZ_NYD_NAUD_N: char = 'ᚾ';
+    pub const LETTER_NAUDIZ_NYD_NAUD_N: char = 'ᚾ';
     /// \u{16bf}: 'ᚿ'
-    pub const RUNIC_LETTER_SHORT_DASH_TWIG_DASH_NAUD_N: char = 'ᚿ';
+    pub const LETTER_SHORT_DASH_TWIG_DASH_NAUD_N: char = 'ᚿ';
     /// \u{16c0}: 'ᛀ'
-    pub const RUNIC_LETTER_DOTTED_DASH_N: char = 'ᛀ';
+    pub const LETTER_DOTTED_DASH_N: char = 'ᛀ';
     /// \u{16c1}: 'ᛁ'
-    pub const RUNIC_LETTER_ISAZ_IS_ISS_I: char = 'ᛁ';
+    pub const LETTER_ISAZ_IS_ISS_I: char = 'ᛁ';
     /// \u{16c2}: 'ᛂ'
-    pub const RUNIC_LETTER_E: char = 'ᛂ';
+    pub const LETTER_E: char = 'ᛂ';
     /// \u{16c3}: 'ᛃ'
-    pub const RUNIC_LETTER_JERAN_J: char = 'ᛃ';
+    pub const LETTER_JERAN_J: char = 'ᛃ';
     /// \u{16c4}: 'ᛄ'
-    pub const RUNIC_LETTER_GER: char = 'ᛄ';
+    pub const LETTER_GER: char = 'ᛄ';
     /// \u{16c5}: 'ᛅ'
-    pub const RUNIC_LETTER_LONG_DASH_BRANCH_DASH_AR_AE: char = 'ᛅ';
+    pub const LETTER_LONG_DASH_BRANCH_DASH_AR_AE: char = 'ᛅ';
     /// \u{16c6}: 'ᛆ'
-    pub const RUNIC_LETTER_SHORT_DASH_TWIG_DASH_AR_A: char = 'ᛆ';
+    pub const LETTER_SHORT_DASH_TWIG_DASH_AR_A: char = 'ᛆ';
     /// \u{16c7}: 'ᛇ'
-    pub const RUNIC_LETTER_IWAZ_EOH: char = 'ᛇ';
+    pub const LETTER_IWAZ_EOH: char = 'ᛇ';
     /// \u{16c8}: 'ᛈ'
-    pub const RUNIC_LETTER_PERTHO_PEORTH_P: char = 'ᛈ';
+    pub const LETTER_PERTHO_PEORTH_P: char = 'ᛈ';
     /// \u{16c9}: 'ᛉ'
-    pub const RUNIC_LETTER_ALGIZ_EOLHX: char = 'ᛉ';
+    pub const LETTER_ALGIZ_EOLHX: char = 'ᛉ';
     /// \u{16ca}: 'ᛊ'
-    pub const RUNIC_LETTER_SOWILO_S: char = 'ᛊ';
+    pub const LETTER_SOWILO_S: char = 'ᛊ';
     /// \u{16cb}: 'ᛋ'
-    pub const RUNIC_LETTER_SIGEL_LONG_DASH_BRANCH_DASH_SOL_S: char = 'ᛋ';
+    pub const LETTER_SIGEL_LONG_DASH_BRANCH_DASH_SOL_S: char = 'ᛋ';
     /// \u{16cc}: 'ᛌ'
-    pub const RUNIC_LETTER_SHORT_DASH_TWIG_DASH_SOL_S: char = 'ᛌ';
+    pub const LETTER_SHORT_DASH_TWIG_DASH_SOL_S: char = 'ᛌ';
     /// \u{16cd}: 'ᛍ'
-    pub const RUNIC_LETTER_C: char = 'ᛍ';
+    pub const LETTER_C: char = 'ᛍ';
     /// \u{16ce}: 'ᛎ'
-    pub const RUNIC_LETTER_Z: char = 'ᛎ';
+    pub const LETTER_Z: char = 'ᛎ';
     /// \u{16cf}: 'ᛏ'
-    pub const RUNIC_LETTER_TIWAZ_TIR_TYR_T: char = 'ᛏ';
+    pub const LETTER_TIWAZ_TIR_TYR_T: char = 'ᛏ';
     /// \u{16d0}: 'ᛐ'
-    pub const RUNIC_LETTER_SHORT_DASH_TWIG_DASH_TYR_T: char = 'ᛐ';
+    pub const LETTER_SHORT_DASH_TWIG_DASH_TYR_T: char = 'ᛐ';
     /// \u{16d1}: 'ᛑ'
-    pub const RUNIC_LETTER_D: char = 'ᛑ';
+    pub const LETTER_D: char = 'ᛑ';
     /// \u{16d2}: 'ᛒ'
-    pub const RUNIC_LETTER_BERKANAN_BEORC_BJARKAN_B: char = 'ᛒ';
+    pub const LETTER_BERKANAN_BEORC_BJARKAN_B: char = 'ᛒ';
     /// \u{16d3}: 'ᛓ'
-    pub const RUNIC_LETTER_SHORT_DASH_TWIG_DASH_BJARKAN_B: char = 'ᛓ';
+    pub const LETTER_SHORT_DASH_TWIG_DASH_BJARKAN_B: char = 'ᛓ';
     /// \u{16d4}: 'ᛔ'
-    pub const RUNIC_LETTER_DOTTED_DASH_P: char = 'ᛔ';
+    pub const LETTER_DOTTED_DASH_P: char = 'ᛔ';
     /// \u{16d5}: 'ᛕ'
-    pub const RUNIC_LETTER_OPEN_DASH_P: char = 'ᛕ';
+    pub const LETTER_OPEN_DASH_P: char = 'ᛕ';
     /// \u{16d6}: 'ᛖ'
-    pub const RUNIC_LETTER_EHWAZ_EH_E: char = 'ᛖ';
+    pub const LETTER_EHWAZ_EH_E: char = 'ᛖ';
     /// \u{16d7}: 'ᛗ'
-    pub const RUNIC_LETTER_MANNAZ_MAN_M: char = 'ᛗ';
+    pub const LETTER_MANNAZ_MAN_M: char = 'ᛗ';
     /// \u{16d8}: 'ᛘ'
-    pub const RUNIC_LETTER_LONG_DASH_BRANCH_DASH_MADR_M: char = 'ᛘ';
+    pub const LETTER_LONG_DASH_BRANCH_DASH_MADR_M: char = 'ᛘ';
     /// \u{16d9}: 'ᛙ'
-    pub const RUNIC_LETTER_SHORT_DASH_TWIG_DASH_MADR_M: char = 'ᛙ';
+    pub const LETTER_SHORT_DASH_TWIG_DASH_MADR_M: char = 'ᛙ';
     /// \u{16da}: 'ᛚ'
-    pub const RUNIC_LETTER_LAUKAZ_LAGU_LOGR_L: char = 'ᛚ';
+    pub const LETTER_LAUKAZ_LAGU_LOGR_L: char = 'ᛚ';
     /// \u{16db}: 'ᛛ'
-    pub const RUNIC_LETTER_DOTTED_DASH_L: char = 'ᛛ';
+    pub const LETTER_DOTTED_DASH_L: char = 'ᛛ';
     /// \u{16dc}: 'ᛜ'
-    pub const RUNIC_LETTER_INGWAZ: char = 'ᛜ';
+    pub const LETTER_INGWAZ: char = 'ᛜ';
     /// \u{16dd}: 'ᛝ'
-    pub const RUNIC_LETTER_ING: char = 'ᛝ';
+    pub const LETTER_ING: char = 'ᛝ';
     /// \u{16de}: 'ᛞ'
-    pub const RUNIC_LETTER_DAGAZ_DAEG_D: char = 'ᛞ';
+    pub const LETTER_DAGAZ_DAEG_D: char = 'ᛞ';
     /// \u{16df}: 'ᛟ'
-    pub const RUNIC_LETTER_OTHALAN_ETHEL_O: char = 'ᛟ';
+    pub const LETTER_OTHALAN_ETHEL_O: char = 'ᛟ';
     /// \u{16e0}: 'ᛠ'
-    pub const RUNIC_LETTER_EAR: char = 'ᛠ';
+    pub const LETTER_EAR: char = 'ᛠ';
     /// \u{16e1}: 'ᛡ'
-    pub const RUNIC_LETTER_IOR: char = 'ᛡ';
+    pub const LETTER_IOR: char = 'ᛡ';
     /// \u{16e2}: 'ᛢ'
-    pub const RUNIC_LETTER_CWEORTH: char = 'ᛢ';
+    pub const LETTER_CWEORTH: char = 'ᛢ';
     /// \u{16e3}: 'ᛣ'
-    pub const RUNIC_LETTER_CALC: char = 'ᛣ';
+    pub const LETTER_CALC: char = 'ᛣ';
     /// \u{16e4}: 'ᛤ'
-    pub const RUNIC_LETTER_CEALC: char = 'ᛤ';
+    pub const LETTER_CEALC: char = 'ᛤ';
     /// \u{16e5}: 'ᛥ'
-    pub const RUNIC_LETTER_STAN: char = 'ᛥ';
+    pub const LETTER_STAN: char = 'ᛥ';
     /// \u{16e6}: 'ᛦ'
-    pub const RUNIC_LETTER_LONG_DASH_BRANCH_DASH_YR: char = 'ᛦ';
+    pub const LETTER_LONG_DASH_BRANCH_DASH_YR: char = 'ᛦ';
     /// \u{16e7}: 'ᛧ'
-    pub const RUNIC_LETTER_SHORT_DASH_TWIG_DASH_YR: char = 'ᛧ';
+    pub const LETTER_SHORT_DASH_TWIG_DASH_YR: char = 'ᛧ';
     /// \u{16e8}: 'ᛨ'
-    pub const RUNIC_LETTER_ICELANDIC_DASH_YR: char = 'ᛨ';
+    pub const LETTER_ICELANDIC_DASH_YR: char = 'ᛨ';
     /// \u{16e9}: 'ᛩ'
-    pub const RUNIC_LETTER_Q: char = 'ᛩ';
+    pub const LETTER_Q: char = 'ᛩ';
     /// \u{16ea}: 'ᛪ'
-    pub const RUNIC_LETTER_X: char = 'ᛪ';
+    pub const LETTER_X: char = 'ᛪ';
     /// \u{16eb}: '᛫'
-    pub const RUNIC_SINGLE_PUNCTUATION: char = '᛫';
+    pub const SINGLE_PUNCTUATION: char = '᛫';
     /// \u{16ec}: '᛬'
-    pub const RUNIC_MULTIPLE_PUNCTUATION: char = '᛬';
+    pub const MULTIPLE_PUNCTUATION: char = '᛬';
     /// \u{16ed}: '᛭'
-    pub const RUNIC_CROSS_PUNCTUATION: char = '᛭';
+    pub const CROSS_PUNCTUATION: char = '᛭';
     /// \u{16ee}: 'ᛮ'
-    pub const RUNIC_ARLAUG_SYMBOL: char = 'ᛮ';
+    pub const ARLAUG_SYMBOL: char = 'ᛮ';
     /// \u{16ef}: 'ᛯ'
-    pub const RUNIC_TVIMADUR_SYMBOL: char = 'ᛯ';
+    pub const TVIMADUR_SYMBOL: char = 'ᛯ';
     /// \u{16f0}: 'ᛰ'
-    pub const RUNIC_BELGTHOR_SYMBOL: char = 'ᛰ';
+    pub const BELGTHOR_SYMBOL: char = 'ᛰ';
     /// \u{16f1}: 'ᛱ'
-    pub const RUNIC_LETTER_K: char = 'ᛱ';
+    pub const LETTER_K: char = 'ᛱ';
     /// \u{16f2}: 'ᛲ'
-    pub const RUNIC_LETTER_SH: char = 'ᛲ';
+    pub const LETTER_SH: char = 'ᛲ';
     /// \u{16f3}: 'ᛳ'
-    pub const RUNIC_LETTER_OO: char = 'ᛳ';
+    pub const LETTER_OO: char = 'ᛳ';
     /// \u{16f4}: 'ᛴ'
-    pub const RUNIC_LETTER_FRANKS_CASKET_OS: char = 'ᛴ';
+    pub const LETTER_FRANKS_CASKET_OS: char = 'ᛴ';
     /// \u{16f5}: 'ᛵ'
-    pub const RUNIC_LETTER_FRANKS_CASKET_IS: char = 'ᛵ';
+    pub const LETTER_FRANKS_CASKET_IS: char = 'ᛵ';
     /// \u{16f6}: 'ᛶ'
-    pub const RUNIC_LETTER_FRANKS_CASKET_EH: char = 'ᛶ';
+    pub const LETTER_FRANKS_CASKET_EH: char = 'ᛶ';
     /// \u{16f7}: 'ᛷ'
-    pub const RUNIC_LETTER_FRANKS_CASKET_AC: char = 'ᛷ';
+    pub const LETTER_FRANKS_CASKET_AC: char = 'ᛷ';
     /// \u{16f8}: 'ᛸ'
-    pub const RUNIC_LETTER_FRANKS_CASKET_AESC: char = 'ᛸ';
+    pub const LETTER_FRANKS_CASKET_AESC: char = 'ᛸ';
 }
 
 /// \u{16a0} → \u{16ff}\
@@ -198,278 +198,278 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Runic {
     /// \u{16a0}: 'ᚠ'
-    RunicLetterFehuFeohFeF,
+    LetterFehuFeohFeF,
     /// \u{16a1}: 'ᚡ'
-    RunicLetterV,
+    LetterV,
     /// \u{16a2}: 'ᚢ'
-    RunicLetterUruzUrU,
+    LetterUruzUrU,
     /// \u{16a3}: 'ᚣ'
-    RunicLetterYr,
+    LetterYr,
     /// \u{16a4}: 'ᚤ'
-    RunicLetterY,
+    LetterY,
     /// \u{16a5}: 'ᚥ'
-    RunicLetterW,
+    LetterW,
     /// \u{16a6}: 'ᚦ'
-    RunicLetterThurisazThursThorn,
+    LetterThurisazThursThorn,
     /// \u{16a7}: 'ᚧ'
-    RunicLetterEth,
+    LetterEth,
     /// \u{16a8}: 'ᚨ'
-    RunicLetterAnsuzA,
+    LetterAnsuzA,
     /// \u{16a9}: 'ᚩ'
-    RunicLetterOsO,
+    LetterOsO,
     /// \u{16aa}: 'ᚪ'
-    RunicLetterAcA,
+    LetterAcA,
     /// \u{16ab}: 'ᚫ'
-    RunicLetterAesc,
+    LetterAesc,
     /// \u{16ac}: 'ᚬ'
-    RunicLetterLongDashBranchDashOssO,
+    LetterLongDashBranchDashOssO,
     /// \u{16ad}: 'ᚭ'
-    RunicLetterShortDashTwigDashOssO,
+    LetterShortDashTwigDashOssO,
     /// \u{16ae}: 'ᚮ'
-    RunicLetterO,
+    LetterO,
     /// \u{16af}: 'ᚯ'
-    RunicLetterOe,
+    LetterOe,
     /// \u{16b0}: 'ᚰ'
-    RunicLetterOn,
+    LetterOn,
     /// \u{16b1}: 'ᚱ'
-    RunicLetterRaidoRadReidR,
+    LetterRaidoRadReidR,
     /// \u{16b2}: 'ᚲ'
-    RunicLetterKauna,
+    LetterKauna,
     /// \u{16b3}: 'ᚳ'
-    RunicLetterCen,
+    LetterCen,
     /// \u{16b4}: 'ᚴ'
-    RunicLetterKaunK,
+    LetterKaunK,
     /// \u{16b5}: 'ᚵ'
-    RunicLetterG,
+    LetterG,
     /// \u{16b6}: 'ᚶ'
-    RunicLetterEng,
+    LetterEng,
     /// \u{16b7}: 'ᚷ'
-    RunicLetterGeboGyfuG,
+    LetterGeboGyfuG,
     /// \u{16b8}: 'ᚸ'
-    RunicLetterGar,
+    LetterGar,
     /// \u{16b9}: 'ᚹ'
-    RunicLetterWunjoWynnW,
+    LetterWunjoWynnW,
     /// \u{16ba}: 'ᚺ'
-    RunicLetterHaglazH,
+    LetterHaglazH,
     /// \u{16bb}: 'ᚻ'
-    RunicLetterHaeglH,
+    LetterHaeglH,
     /// \u{16bc}: 'ᚼ'
-    RunicLetterLongDashBranchDashHagallH,
+    LetterLongDashBranchDashHagallH,
     /// \u{16bd}: 'ᚽ'
-    RunicLetterShortDashTwigDashHagallH,
+    LetterShortDashTwigDashHagallH,
     /// \u{16be}: 'ᚾ'
-    RunicLetterNaudizNydNaudN,
+    LetterNaudizNydNaudN,
     /// \u{16bf}: 'ᚿ'
-    RunicLetterShortDashTwigDashNaudN,
+    LetterShortDashTwigDashNaudN,
     /// \u{16c0}: 'ᛀ'
-    RunicLetterDottedDashN,
+    LetterDottedDashN,
     /// \u{16c1}: 'ᛁ'
-    RunicLetterIsazIsIssI,
+    LetterIsazIsIssI,
     /// \u{16c2}: 'ᛂ'
-    RunicLetterE,
+    LetterE,
     /// \u{16c3}: 'ᛃ'
-    RunicLetterJeranJ,
+    LetterJeranJ,
     /// \u{16c4}: 'ᛄ'
-    RunicLetterGer,
+    LetterGer,
     /// \u{16c5}: 'ᛅ'
-    RunicLetterLongDashBranchDashArAe,
+    LetterLongDashBranchDashArAe,
     /// \u{16c6}: 'ᛆ'
-    RunicLetterShortDashTwigDashArA,
+    LetterShortDashTwigDashArA,
     /// \u{16c7}: 'ᛇ'
-    RunicLetterIwazEoh,
+    LetterIwazEoh,
     /// \u{16c8}: 'ᛈ'
-    RunicLetterPerthoPeorthP,
+    LetterPerthoPeorthP,
     /// \u{16c9}: 'ᛉ'
-    RunicLetterAlgizEolhx,
+    LetterAlgizEolhx,
     /// \u{16ca}: 'ᛊ'
-    RunicLetterSowiloS,
+    LetterSowiloS,
     /// \u{16cb}: 'ᛋ'
-    RunicLetterSigelLongDashBranchDashSolS,
+    LetterSigelLongDashBranchDashSolS,
     /// \u{16cc}: 'ᛌ'
-    RunicLetterShortDashTwigDashSolS,
+    LetterShortDashTwigDashSolS,
     /// \u{16cd}: 'ᛍ'
-    RunicLetterC,
+    LetterC,
     /// \u{16ce}: 'ᛎ'
-    RunicLetterZ,
+    LetterZ,
     /// \u{16cf}: 'ᛏ'
-    RunicLetterTiwazTirTyrT,
+    LetterTiwazTirTyrT,
     /// \u{16d0}: 'ᛐ'
-    RunicLetterShortDashTwigDashTyrT,
+    LetterShortDashTwigDashTyrT,
     /// \u{16d1}: 'ᛑ'
-    RunicLetterD,
+    LetterD,
     /// \u{16d2}: 'ᛒ'
-    RunicLetterBerkananBeorcBjarkanB,
+    LetterBerkananBeorcBjarkanB,
     /// \u{16d3}: 'ᛓ'
-    RunicLetterShortDashTwigDashBjarkanB,
+    LetterShortDashTwigDashBjarkanB,
     /// \u{16d4}: 'ᛔ'
-    RunicLetterDottedDashP,
+    LetterDottedDashP,
     /// \u{16d5}: 'ᛕ'
-    RunicLetterOpenDashP,
+    LetterOpenDashP,
     /// \u{16d6}: 'ᛖ'
-    RunicLetterEhwazEhE,
+    LetterEhwazEhE,
     /// \u{16d7}: 'ᛗ'
-    RunicLetterMannazManM,
+    LetterMannazManM,
     /// \u{16d8}: 'ᛘ'
-    RunicLetterLongDashBranchDashMadrM,
+    LetterLongDashBranchDashMadrM,
     /// \u{16d9}: 'ᛙ'
-    RunicLetterShortDashTwigDashMadrM,
+    LetterShortDashTwigDashMadrM,
     /// \u{16da}: 'ᛚ'
-    RunicLetterLaukazLaguLogrL,
+    LetterLaukazLaguLogrL,
     /// \u{16db}: 'ᛛ'
-    RunicLetterDottedDashL,
+    LetterDottedDashL,
     /// \u{16dc}: 'ᛜ'
-    RunicLetterIngwaz,
+    LetterIngwaz,
     /// \u{16dd}: 'ᛝ'
-    RunicLetterIng,
+    LetterIng,
     /// \u{16de}: 'ᛞ'
-    RunicLetterDagazDaegD,
+    LetterDagazDaegD,
     /// \u{16df}: 'ᛟ'
-    RunicLetterOthalanEthelO,
+    LetterOthalanEthelO,
     /// \u{16e0}: 'ᛠ'
-    RunicLetterEar,
+    LetterEar,
     /// \u{16e1}: 'ᛡ'
-    RunicLetterIor,
+    LetterIor,
     /// \u{16e2}: 'ᛢ'
-    RunicLetterCweorth,
+    LetterCweorth,
     /// \u{16e3}: 'ᛣ'
-    RunicLetterCalc,
+    LetterCalc,
     /// \u{16e4}: 'ᛤ'
-    RunicLetterCealc,
+    LetterCealc,
     /// \u{16e5}: 'ᛥ'
-    RunicLetterStan,
+    LetterStan,
     /// \u{16e6}: 'ᛦ'
-    RunicLetterLongDashBranchDashYr,
+    LetterLongDashBranchDashYr,
     /// \u{16e7}: 'ᛧ'
-    RunicLetterShortDashTwigDashYr,
+    LetterShortDashTwigDashYr,
     /// \u{16e8}: 'ᛨ'
-    RunicLetterIcelandicDashYr,
+    LetterIcelandicDashYr,
     /// \u{16e9}: 'ᛩ'
-    RunicLetterQ,
+    LetterQ,
     /// \u{16ea}: 'ᛪ'
-    RunicLetterX,
+    LetterX,
     /// \u{16eb}: '᛫'
-    RunicSinglePunctuation,
+    SinglePunctuation,
     /// \u{16ec}: '᛬'
-    RunicMultiplePunctuation,
+    MultiplePunctuation,
     /// \u{16ed}: '᛭'
-    RunicCrossPunctuation,
+    CrossPunctuation,
     /// \u{16ee}: 'ᛮ'
-    RunicArlaugSymbol,
+    ArlaugSymbol,
     /// \u{16ef}: 'ᛯ'
-    RunicTvimadurSymbol,
+    TvimadurSymbol,
     /// \u{16f0}: 'ᛰ'
-    RunicBelgthorSymbol,
+    BelgthorSymbol,
     /// \u{16f1}: 'ᛱ'
-    RunicLetterK,
+    LetterK,
     /// \u{16f2}: 'ᛲ'
-    RunicLetterSh,
+    LetterSh,
     /// \u{16f3}: 'ᛳ'
-    RunicLetterOo,
+    LetterOo,
     /// \u{16f4}: 'ᛴ'
-    RunicLetterFranksCasketOs,
+    LetterFranksCasketOs,
     /// \u{16f5}: 'ᛵ'
-    RunicLetterFranksCasketIs,
+    LetterFranksCasketIs,
     /// \u{16f6}: 'ᛶ'
-    RunicLetterFranksCasketEh,
+    LetterFranksCasketEh,
     /// \u{16f7}: 'ᛷ'
-    RunicLetterFranksCasketAc,
+    LetterFranksCasketAc,
     /// \u{16f8}: 'ᛸ'
-    RunicLetterFranksCasketAesc,
+    LetterFranksCasketAesc,
 }
 
 impl Into<char> for Runic {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Runic::RunicLetterFehuFeohFeF => RUNIC_LETTER_FEHU_FEOH_FE_F,
-            Runic::RunicLetterV => RUNIC_LETTER_V,
-            Runic::RunicLetterUruzUrU => RUNIC_LETTER_URUZ_UR_U,
-            Runic::RunicLetterYr => RUNIC_LETTER_YR,
-            Runic::RunicLetterY => RUNIC_LETTER_Y,
-            Runic::RunicLetterW => RUNIC_LETTER_W,
-            Runic::RunicLetterThurisazThursThorn => RUNIC_LETTER_THURISAZ_THURS_THORN,
-            Runic::RunicLetterEth => RUNIC_LETTER_ETH,
-            Runic::RunicLetterAnsuzA => RUNIC_LETTER_ANSUZ_A,
-            Runic::RunicLetterOsO => RUNIC_LETTER_OS_O,
-            Runic::RunicLetterAcA => RUNIC_LETTER_AC_A,
-            Runic::RunicLetterAesc => RUNIC_LETTER_AESC,
-            Runic::RunicLetterLongDashBranchDashOssO => RUNIC_LETTER_LONG_DASH_BRANCH_DASH_OSS_O,
-            Runic::RunicLetterShortDashTwigDashOssO => RUNIC_LETTER_SHORT_DASH_TWIG_DASH_OSS_O,
-            Runic::RunicLetterO => RUNIC_LETTER_O,
-            Runic::RunicLetterOe => RUNIC_LETTER_OE,
-            Runic::RunicLetterOn => RUNIC_LETTER_ON,
-            Runic::RunicLetterRaidoRadReidR => RUNIC_LETTER_RAIDO_RAD_REID_R,
-            Runic::RunicLetterKauna => RUNIC_LETTER_KAUNA,
-            Runic::RunicLetterCen => RUNIC_LETTER_CEN,
-            Runic::RunicLetterKaunK => RUNIC_LETTER_KAUN_K,
-            Runic::RunicLetterG => RUNIC_LETTER_G,
-            Runic::RunicLetterEng => RUNIC_LETTER_ENG,
-            Runic::RunicLetterGeboGyfuG => RUNIC_LETTER_GEBO_GYFU_G,
-            Runic::RunicLetterGar => RUNIC_LETTER_GAR,
-            Runic::RunicLetterWunjoWynnW => RUNIC_LETTER_WUNJO_WYNN_W,
-            Runic::RunicLetterHaglazH => RUNIC_LETTER_HAGLAZ_H,
-            Runic::RunicLetterHaeglH => RUNIC_LETTER_HAEGL_H,
-            Runic::RunicLetterLongDashBranchDashHagallH => RUNIC_LETTER_LONG_DASH_BRANCH_DASH_HAGALL_H,
-            Runic::RunicLetterShortDashTwigDashHagallH => RUNIC_LETTER_SHORT_DASH_TWIG_DASH_HAGALL_H,
-            Runic::RunicLetterNaudizNydNaudN => RUNIC_LETTER_NAUDIZ_NYD_NAUD_N,
-            Runic::RunicLetterShortDashTwigDashNaudN => RUNIC_LETTER_SHORT_DASH_TWIG_DASH_NAUD_N,
-            Runic::RunicLetterDottedDashN => RUNIC_LETTER_DOTTED_DASH_N,
-            Runic::RunicLetterIsazIsIssI => RUNIC_LETTER_ISAZ_IS_ISS_I,
-            Runic::RunicLetterE => RUNIC_LETTER_E,
-            Runic::RunicLetterJeranJ => RUNIC_LETTER_JERAN_J,
-            Runic::RunicLetterGer => RUNIC_LETTER_GER,
-            Runic::RunicLetterLongDashBranchDashArAe => RUNIC_LETTER_LONG_DASH_BRANCH_DASH_AR_AE,
-            Runic::RunicLetterShortDashTwigDashArA => RUNIC_LETTER_SHORT_DASH_TWIG_DASH_AR_A,
-            Runic::RunicLetterIwazEoh => RUNIC_LETTER_IWAZ_EOH,
-            Runic::RunicLetterPerthoPeorthP => RUNIC_LETTER_PERTHO_PEORTH_P,
-            Runic::RunicLetterAlgizEolhx => RUNIC_LETTER_ALGIZ_EOLHX,
-            Runic::RunicLetterSowiloS => RUNIC_LETTER_SOWILO_S,
-            Runic::RunicLetterSigelLongDashBranchDashSolS => RUNIC_LETTER_SIGEL_LONG_DASH_BRANCH_DASH_SOL_S,
-            Runic::RunicLetterShortDashTwigDashSolS => RUNIC_LETTER_SHORT_DASH_TWIG_DASH_SOL_S,
-            Runic::RunicLetterC => RUNIC_LETTER_C,
-            Runic::RunicLetterZ => RUNIC_LETTER_Z,
-            Runic::RunicLetterTiwazTirTyrT => RUNIC_LETTER_TIWAZ_TIR_TYR_T,
-            Runic::RunicLetterShortDashTwigDashTyrT => RUNIC_LETTER_SHORT_DASH_TWIG_DASH_TYR_T,
-            Runic::RunicLetterD => RUNIC_LETTER_D,
-            Runic::RunicLetterBerkananBeorcBjarkanB => RUNIC_LETTER_BERKANAN_BEORC_BJARKAN_B,
-            Runic::RunicLetterShortDashTwigDashBjarkanB => RUNIC_LETTER_SHORT_DASH_TWIG_DASH_BJARKAN_B,
-            Runic::RunicLetterDottedDashP => RUNIC_LETTER_DOTTED_DASH_P,
-            Runic::RunicLetterOpenDashP => RUNIC_LETTER_OPEN_DASH_P,
-            Runic::RunicLetterEhwazEhE => RUNIC_LETTER_EHWAZ_EH_E,
-            Runic::RunicLetterMannazManM => RUNIC_LETTER_MANNAZ_MAN_M,
-            Runic::RunicLetterLongDashBranchDashMadrM => RUNIC_LETTER_LONG_DASH_BRANCH_DASH_MADR_M,
-            Runic::RunicLetterShortDashTwigDashMadrM => RUNIC_LETTER_SHORT_DASH_TWIG_DASH_MADR_M,
-            Runic::RunicLetterLaukazLaguLogrL => RUNIC_LETTER_LAUKAZ_LAGU_LOGR_L,
-            Runic::RunicLetterDottedDashL => RUNIC_LETTER_DOTTED_DASH_L,
-            Runic::RunicLetterIngwaz => RUNIC_LETTER_INGWAZ,
-            Runic::RunicLetterIng => RUNIC_LETTER_ING,
-            Runic::RunicLetterDagazDaegD => RUNIC_LETTER_DAGAZ_DAEG_D,
-            Runic::RunicLetterOthalanEthelO => RUNIC_LETTER_OTHALAN_ETHEL_O,
-            Runic::RunicLetterEar => RUNIC_LETTER_EAR,
-            Runic::RunicLetterIor => RUNIC_LETTER_IOR,
-            Runic::RunicLetterCweorth => RUNIC_LETTER_CWEORTH,
-            Runic::RunicLetterCalc => RUNIC_LETTER_CALC,
-            Runic::RunicLetterCealc => RUNIC_LETTER_CEALC,
-            Runic::RunicLetterStan => RUNIC_LETTER_STAN,
-            Runic::RunicLetterLongDashBranchDashYr => RUNIC_LETTER_LONG_DASH_BRANCH_DASH_YR,
-            Runic::RunicLetterShortDashTwigDashYr => RUNIC_LETTER_SHORT_DASH_TWIG_DASH_YR,
-            Runic::RunicLetterIcelandicDashYr => RUNIC_LETTER_ICELANDIC_DASH_YR,
-            Runic::RunicLetterQ => RUNIC_LETTER_Q,
-            Runic::RunicLetterX => RUNIC_LETTER_X,
-            Runic::RunicSinglePunctuation => RUNIC_SINGLE_PUNCTUATION,
-            Runic::RunicMultiplePunctuation => RUNIC_MULTIPLE_PUNCTUATION,
-            Runic::RunicCrossPunctuation => RUNIC_CROSS_PUNCTUATION,
-            Runic::RunicArlaugSymbol => RUNIC_ARLAUG_SYMBOL,
-            Runic::RunicTvimadurSymbol => RUNIC_TVIMADUR_SYMBOL,
-            Runic::RunicBelgthorSymbol => RUNIC_BELGTHOR_SYMBOL,
-            Runic::RunicLetterK => RUNIC_LETTER_K,
-            Runic::RunicLetterSh => RUNIC_LETTER_SH,
-            Runic::RunicLetterOo => RUNIC_LETTER_OO,
-            Runic::RunicLetterFranksCasketOs => RUNIC_LETTER_FRANKS_CASKET_OS,
-            Runic::RunicLetterFranksCasketIs => RUNIC_LETTER_FRANKS_CASKET_IS,
-            Runic::RunicLetterFranksCasketEh => RUNIC_LETTER_FRANKS_CASKET_EH,
-            Runic::RunicLetterFranksCasketAc => RUNIC_LETTER_FRANKS_CASKET_AC,
-            Runic::RunicLetterFranksCasketAesc => RUNIC_LETTER_FRANKS_CASKET_AESC,
+            Runic::LetterFehuFeohFeF => LETTER_FEHU_FEOH_FE_F,
+            Runic::LetterV => LETTER_V,
+            Runic::LetterUruzUrU => LETTER_URUZ_UR_U,
+            Runic::LetterYr => LETTER_YR,
+            Runic::LetterY => LETTER_Y,
+            Runic::LetterW => LETTER_W,
+            Runic::LetterThurisazThursThorn => LETTER_THURISAZ_THURS_THORN,
+            Runic::LetterEth => LETTER_ETH,
+            Runic::LetterAnsuzA => LETTER_ANSUZ_A,
+            Runic::LetterOsO => LETTER_OS_O,
+            Runic::LetterAcA => LETTER_AC_A,
+            Runic::LetterAesc => LETTER_AESC,
+            Runic::LetterLongDashBranchDashOssO => LETTER_LONG_DASH_BRANCH_DASH_OSS_O,
+            Runic::LetterShortDashTwigDashOssO => LETTER_SHORT_DASH_TWIG_DASH_OSS_O,
+            Runic::LetterO => LETTER_O,
+            Runic::LetterOe => LETTER_OE,
+            Runic::LetterOn => LETTER_ON,
+            Runic::LetterRaidoRadReidR => LETTER_RAIDO_RAD_REID_R,
+            Runic::LetterKauna => LETTER_KAUNA,
+            Runic::LetterCen => LETTER_CEN,
+            Runic::LetterKaunK => LETTER_KAUN_K,
+            Runic::LetterG => LETTER_G,
+            Runic::LetterEng => LETTER_ENG,
+            Runic::LetterGeboGyfuG => LETTER_GEBO_GYFU_G,
+            Runic::LetterGar => LETTER_GAR,
+            Runic::LetterWunjoWynnW => LETTER_WUNJO_WYNN_W,
+            Runic::LetterHaglazH => LETTER_HAGLAZ_H,
+            Runic::LetterHaeglH => LETTER_HAEGL_H,
+            Runic::LetterLongDashBranchDashHagallH => LETTER_LONG_DASH_BRANCH_DASH_HAGALL_H,
+            Runic::LetterShortDashTwigDashHagallH => LETTER_SHORT_DASH_TWIG_DASH_HAGALL_H,
+            Runic::LetterNaudizNydNaudN => LETTER_NAUDIZ_NYD_NAUD_N,
+            Runic::LetterShortDashTwigDashNaudN => LETTER_SHORT_DASH_TWIG_DASH_NAUD_N,
+            Runic::LetterDottedDashN => LETTER_DOTTED_DASH_N,
+            Runic::LetterIsazIsIssI => LETTER_ISAZ_IS_ISS_I,
+            Runic::LetterE => LETTER_E,
+            Runic::LetterJeranJ => LETTER_JERAN_J,
+            Runic::LetterGer => LETTER_GER,
+            Runic::LetterLongDashBranchDashArAe => LETTER_LONG_DASH_BRANCH_DASH_AR_AE,
+            Runic::LetterShortDashTwigDashArA => LETTER_SHORT_DASH_TWIG_DASH_AR_A,
+            Runic::LetterIwazEoh => LETTER_IWAZ_EOH,
+            Runic::LetterPerthoPeorthP => LETTER_PERTHO_PEORTH_P,
+            Runic::LetterAlgizEolhx => LETTER_ALGIZ_EOLHX,
+            Runic::LetterSowiloS => LETTER_SOWILO_S,
+            Runic::LetterSigelLongDashBranchDashSolS => LETTER_SIGEL_LONG_DASH_BRANCH_DASH_SOL_S,
+            Runic::LetterShortDashTwigDashSolS => LETTER_SHORT_DASH_TWIG_DASH_SOL_S,
+            Runic::LetterC => LETTER_C,
+            Runic::LetterZ => LETTER_Z,
+            Runic::LetterTiwazTirTyrT => LETTER_TIWAZ_TIR_TYR_T,
+            Runic::LetterShortDashTwigDashTyrT => LETTER_SHORT_DASH_TWIG_DASH_TYR_T,
+            Runic::LetterD => LETTER_D,
+            Runic::LetterBerkananBeorcBjarkanB => LETTER_BERKANAN_BEORC_BJARKAN_B,
+            Runic::LetterShortDashTwigDashBjarkanB => LETTER_SHORT_DASH_TWIG_DASH_BJARKAN_B,
+            Runic::LetterDottedDashP => LETTER_DOTTED_DASH_P,
+            Runic::LetterOpenDashP => LETTER_OPEN_DASH_P,
+            Runic::LetterEhwazEhE => LETTER_EHWAZ_EH_E,
+            Runic::LetterMannazManM => LETTER_MANNAZ_MAN_M,
+            Runic::LetterLongDashBranchDashMadrM => LETTER_LONG_DASH_BRANCH_DASH_MADR_M,
+            Runic::LetterShortDashTwigDashMadrM => LETTER_SHORT_DASH_TWIG_DASH_MADR_M,
+            Runic::LetterLaukazLaguLogrL => LETTER_LAUKAZ_LAGU_LOGR_L,
+            Runic::LetterDottedDashL => LETTER_DOTTED_DASH_L,
+            Runic::LetterIngwaz => LETTER_INGWAZ,
+            Runic::LetterIng => LETTER_ING,
+            Runic::LetterDagazDaegD => LETTER_DAGAZ_DAEG_D,
+            Runic::LetterOthalanEthelO => LETTER_OTHALAN_ETHEL_O,
+            Runic::LetterEar => LETTER_EAR,
+            Runic::LetterIor => LETTER_IOR,
+            Runic::LetterCweorth => LETTER_CWEORTH,
+            Runic::LetterCalc => LETTER_CALC,
+            Runic::LetterCealc => LETTER_CEALC,
+            Runic::LetterStan => LETTER_STAN,
+            Runic::LetterLongDashBranchDashYr => LETTER_LONG_DASH_BRANCH_DASH_YR,
+            Runic::LetterShortDashTwigDashYr => LETTER_SHORT_DASH_TWIG_DASH_YR,
+            Runic::LetterIcelandicDashYr => LETTER_ICELANDIC_DASH_YR,
+            Runic::LetterQ => LETTER_Q,
+            Runic::LetterX => LETTER_X,
+            Runic::SinglePunctuation => SINGLE_PUNCTUATION,
+            Runic::MultiplePunctuation => MULTIPLE_PUNCTUATION,
+            Runic::CrossPunctuation => CROSS_PUNCTUATION,
+            Runic::ArlaugSymbol => ARLAUG_SYMBOL,
+            Runic::TvimadurSymbol => TVIMADUR_SYMBOL,
+            Runic::BelgthorSymbol => BELGTHOR_SYMBOL,
+            Runic::LetterK => LETTER_K,
+            Runic::LetterSh => LETTER_SH,
+            Runic::LetterOo => LETTER_OO,
+            Runic::LetterFranksCasketOs => LETTER_FRANKS_CASKET_OS,
+            Runic::LetterFranksCasketIs => LETTER_FRANKS_CASKET_IS,
+            Runic::LetterFranksCasketEh => LETTER_FRANKS_CASKET_EH,
+            Runic::LetterFranksCasketAc => LETTER_FRANKS_CASKET_AC,
+            Runic::LetterFranksCasketAesc => LETTER_FRANKS_CASKET_AESC,
         }
     }
 }
@@ -479,95 +479,95 @@ impl std::convert::TryFrom<char> for Runic {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            RUNIC_LETTER_FEHU_FEOH_FE_F => Ok(Runic::RunicLetterFehuFeohFeF),
-            RUNIC_LETTER_V => Ok(Runic::RunicLetterV),
-            RUNIC_LETTER_URUZ_UR_U => Ok(Runic::RunicLetterUruzUrU),
-            RUNIC_LETTER_YR => Ok(Runic::RunicLetterYr),
-            RUNIC_LETTER_Y => Ok(Runic::RunicLetterY),
-            RUNIC_LETTER_W => Ok(Runic::RunicLetterW),
-            RUNIC_LETTER_THURISAZ_THURS_THORN => Ok(Runic::RunicLetterThurisazThursThorn),
-            RUNIC_LETTER_ETH => Ok(Runic::RunicLetterEth),
-            RUNIC_LETTER_ANSUZ_A => Ok(Runic::RunicLetterAnsuzA),
-            RUNIC_LETTER_OS_O => Ok(Runic::RunicLetterOsO),
-            RUNIC_LETTER_AC_A => Ok(Runic::RunicLetterAcA),
-            RUNIC_LETTER_AESC => Ok(Runic::RunicLetterAesc),
-            RUNIC_LETTER_LONG_DASH_BRANCH_DASH_OSS_O => Ok(Runic::RunicLetterLongDashBranchDashOssO),
-            RUNIC_LETTER_SHORT_DASH_TWIG_DASH_OSS_O => Ok(Runic::RunicLetterShortDashTwigDashOssO),
-            RUNIC_LETTER_O => Ok(Runic::RunicLetterO),
-            RUNIC_LETTER_OE => Ok(Runic::RunicLetterOe),
-            RUNIC_LETTER_ON => Ok(Runic::RunicLetterOn),
-            RUNIC_LETTER_RAIDO_RAD_REID_R => Ok(Runic::RunicLetterRaidoRadReidR),
-            RUNIC_LETTER_KAUNA => Ok(Runic::RunicLetterKauna),
-            RUNIC_LETTER_CEN => Ok(Runic::RunicLetterCen),
-            RUNIC_LETTER_KAUN_K => Ok(Runic::RunicLetterKaunK),
-            RUNIC_LETTER_G => Ok(Runic::RunicLetterG),
-            RUNIC_LETTER_ENG => Ok(Runic::RunicLetterEng),
-            RUNIC_LETTER_GEBO_GYFU_G => Ok(Runic::RunicLetterGeboGyfuG),
-            RUNIC_LETTER_GAR => Ok(Runic::RunicLetterGar),
-            RUNIC_LETTER_WUNJO_WYNN_W => Ok(Runic::RunicLetterWunjoWynnW),
-            RUNIC_LETTER_HAGLAZ_H => Ok(Runic::RunicLetterHaglazH),
-            RUNIC_LETTER_HAEGL_H => Ok(Runic::RunicLetterHaeglH),
-            RUNIC_LETTER_LONG_DASH_BRANCH_DASH_HAGALL_H => Ok(Runic::RunicLetterLongDashBranchDashHagallH),
-            RUNIC_LETTER_SHORT_DASH_TWIG_DASH_HAGALL_H => Ok(Runic::RunicLetterShortDashTwigDashHagallH),
-            RUNIC_LETTER_NAUDIZ_NYD_NAUD_N => Ok(Runic::RunicLetterNaudizNydNaudN),
-            RUNIC_LETTER_SHORT_DASH_TWIG_DASH_NAUD_N => Ok(Runic::RunicLetterShortDashTwigDashNaudN),
-            RUNIC_LETTER_DOTTED_DASH_N => Ok(Runic::RunicLetterDottedDashN),
-            RUNIC_LETTER_ISAZ_IS_ISS_I => Ok(Runic::RunicLetterIsazIsIssI),
-            RUNIC_LETTER_E => Ok(Runic::RunicLetterE),
-            RUNIC_LETTER_JERAN_J => Ok(Runic::RunicLetterJeranJ),
-            RUNIC_LETTER_GER => Ok(Runic::RunicLetterGer),
-            RUNIC_LETTER_LONG_DASH_BRANCH_DASH_AR_AE => Ok(Runic::RunicLetterLongDashBranchDashArAe),
-            RUNIC_LETTER_SHORT_DASH_TWIG_DASH_AR_A => Ok(Runic::RunicLetterShortDashTwigDashArA),
-            RUNIC_LETTER_IWAZ_EOH => Ok(Runic::RunicLetterIwazEoh),
-            RUNIC_LETTER_PERTHO_PEORTH_P => Ok(Runic::RunicLetterPerthoPeorthP),
-            RUNIC_LETTER_ALGIZ_EOLHX => Ok(Runic::RunicLetterAlgizEolhx),
-            RUNIC_LETTER_SOWILO_S => Ok(Runic::RunicLetterSowiloS),
-            RUNIC_LETTER_SIGEL_LONG_DASH_BRANCH_DASH_SOL_S => Ok(Runic::RunicLetterSigelLongDashBranchDashSolS),
-            RUNIC_LETTER_SHORT_DASH_TWIG_DASH_SOL_S => Ok(Runic::RunicLetterShortDashTwigDashSolS),
-            RUNIC_LETTER_C => Ok(Runic::RunicLetterC),
-            RUNIC_LETTER_Z => Ok(Runic::RunicLetterZ),
-            RUNIC_LETTER_TIWAZ_TIR_TYR_T => Ok(Runic::RunicLetterTiwazTirTyrT),
-            RUNIC_LETTER_SHORT_DASH_TWIG_DASH_TYR_T => Ok(Runic::RunicLetterShortDashTwigDashTyrT),
-            RUNIC_LETTER_D => Ok(Runic::RunicLetterD),
-            RUNIC_LETTER_BERKANAN_BEORC_BJARKAN_B => Ok(Runic::RunicLetterBerkananBeorcBjarkanB),
-            RUNIC_LETTER_SHORT_DASH_TWIG_DASH_BJARKAN_B => Ok(Runic::RunicLetterShortDashTwigDashBjarkanB),
-            RUNIC_LETTER_DOTTED_DASH_P => Ok(Runic::RunicLetterDottedDashP),
-            RUNIC_LETTER_OPEN_DASH_P => Ok(Runic::RunicLetterOpenDashP),
-            RUNIC_LETTER_EHWAZ_EH_E => Ok(Runic::RunicLetterEhwazEhE),
-            RUNIC_LETTER_MANNAZ_MAN_M => Ok(Runic::RunicLetterMannazManM),
-            RUNIC_LETTER_LONG_DASH_BRANCH_DASH_MADR_M => Ok(Runic::RunicLetterLongDashBranchDashMadrM),
-            RUNIC_LETTER_SHORT_DASH_TWIG_DASH_MADR_M => Ok(Runic::RunicLetterShortDashTwigDashMadrM),
-            RUNIC_LETTER_LAUKAZ_LAGU_LOGR_L => Ok(Runic::RunicLetterLaukazLaguLogrL),
-            RUNIC_LETTER_DOTTED_DASH_L => Ok(Runic::RunicLetterDottedDashL),
-            RUNIC_LETTER_INGWAZ => Ok(Runic::RunicLetterIngwaz),
-            RUNIC_LETTER_ING => Ok(Runic::RunicLetterIng),
-            RUNIC_LETTER_DAGAZ_DAEG_D => Ok(Runic::RunicLetterDagazDaegD),
-            RUNIC_LETTER_OTHALAN_ETHEL_O => Ok(Runic::RunicLetterOthalanEthelO),
-            RUNIC_LETTER_EAR => Ok(Runic::RunicLetterEar),
-            RUNIC_LETTER_IOR => Ok(Runic::RunicLetterIor),
-            RUNIC_LETTER_CWEORTH => Ok(Runic::RunicLetterCweorth),
-            RUNIC_LETTER_CALC => Ok(Runic::RunicLetterCalc),
-            RUNIC_LETTER_CEALC => Ok(Runic::RunicLetterCealc),
-            RUNIC_LETTER_STAN => Ok(Runic::RunicLetterStan),
-            RUNIC_LETTER_LONG_DASH_BRANCH_DASH_YR => Ok(Runic::RunicLetterLongDashBranchDashYr),
-            RUNIC_LETTER_SHORT_DASH_TWIG_DASH_YR => Ok(Runic::RunicLetterShortDashTwigDashYr),
-            RUNIC_LETTER_ICELANDIC_DASH_YR => Ok(Runic::RunicLetterIcelandicDashYr),
-            RUNIC_LETTER_Q => Ok(Runic::RunicLetterQ),
-            RUNIC_LETTER_X => Ok(Runic::RunicLetterX),
-            RUNIC_SINGLE_PUNCTUATION => Ok(Runic::RunicSinglePunctuation),
-            RUNIC_MULTIPLE_PUNCTUATION => Ok(Runic::RunicMultiplePunctuation),
-            RUNIC_CROSS_PUNCTUATION => Ok(Runic::RunicCrossPunctuation),
-            RUNIC_ARLAUG_SYMBOL => Ok(Runic::RunicArlaugSymbol),
-            RUNIC_TVIMADUR_SYMBOL => Ok(Runic::RunicTvimadurSymbol),
-            RUNIC_BELGTHOR_SYMBOL => Ok(Runic::RunicBelgthorSymbol),
-            RUNIC_LETTER_K => Ok(Runic::RunicLetterK),
-            RUNIC_LETTER_SH => Ok(Runic::RunicLetterSh),
-            RUNIC_LETTER_OO => Ok(Runic::RunicLetterOo),
-            RUNIC_LETTER_FRANKS_CASKET_OS => Ok(Runic::RunicLetterFranksCasketOs),
-            RUNIC_LETTER_FRANKS_CASKET_IS => Ok(Runic::RunicLetterFranksCasketIs),
-            RUNIC_LETTER_FRANKS_CASKET_EH => Ok(Runic::RunicLetterFranksCasketEh),
-            RUNIC_LETTER_FRANKS_CASKET_AC => Ok(Runic::RunicLetterFranksCasketAc),
-            RUNIC_LETTER_FRANKS_CASKET_AESC => Ok(Runic::RunicLetterFranksCasketAesc),
+            LETTER_FEHU_FEOH_FE_F => Ok(Runic::LetterFehuFeohFeF),
+            LETTER_V => Ok(Runic::LetterV),
+            LETTER_URUZ_UR_U => Ok(Runic::LetterUruzUrU),
+            LETTER_YR => Ok(Runic::LetterYr),
+            LETTER_Y => Ok(Runic::LetterY),
+            LETTER_W => Ok(Runic::LetterW),
+            LETTER_THURISAZ_THURS_THORN => Ok(Runic::LetterThurisazThursThorn),
+            LETTER_ETH => Ok(Runic::LetterEth),
+            LETTER_ANSUZ_A => Ok(Runic::LetterAnsuzA),
+            LETTER_OS_O => Ok(Runic::LetterOsO),
+            LETTER_AC_A => Ok(Runic::LetterAcA),
+            LETTER_AESC => Ok(Runic::LetterAesc),
+            LETTER_LONG_DASH_BRANCH_DASH_OSS_O => Ok(Runic::LetterLongDashBranchDashOssO),
+            LETTER_SHORT_DASH_TWIG_DASH_OSS_O => Ok(Runic::LetterShortDashTwigDashOssO),
+            LETTER_O => Ok(Runic::LetterO),
+            LETTER_OE => Ok(Runic::LetterOe),
+            LETTER_ON => Ok(Runic::LetterOn),
+            LETTER_RAIDO_RAD_REID_R => Ok(Runic::LetterRaidoRadReidR),
+            LETTER_KAUNA => Ok(Runic::LetterKauna),
+            LETTER_CEN => Ok(Runic::LetterCen),
+            LETTER_KAUN_K => Ok(Runic::LetterKaunK),
+            LETTER_G => Ok(Runic::LetterG),
+            LETTER_ENG => Ok(Runic::LetterEng),
+            LETTER_GEBO_GYFU_G => Ok(Runic::LetterGeboGyfuG),
+            LETTER_GAR => Ok(Runic::LetterGar),
+            LETTER_WUNJO_WYNN_W => Ok(Runic::LetterWunjoWynnW),
+            LETTER_HAGLAZ_H => Ok(Runic::LetterHaglazH),
+            LETTER_HAEGL_H => Ok(Runic::LetterHaeglH),
+            LETTER_LONG_DASH_BRANCH_DASH_HAGALL_H => Ok(Runic::LetterLongDashBranchDashHagallH),
+            LETTER_SHORT_DASH_TWIG_DASH_HAGALL_H => Ok(Runic::LetterShortDashTwigDashHagallH),
+            LETTER_NAUDIZ_NYD_NAUD_N => Ok(Runic::LetterNaudizNydNaudN),
+            LETTER_SHORT_DASH_TWIG_DASH_NAUD_N => Ok(Runic::LetterShortDashTwigDashNaudN),
+            LETTER_DOTTED_DASH_N => Ok(Runic::LetterDottedDashN),
+            LETTER_ISAZ_IS_ISS_I => Ok(Runic::LetterIsazIsIssI),
+            LETTER_E => Ok(Runic::LetterE),
+            LETTER_JERAN_J => Ok(Runic::LetterJeranJ),
+            LETTER_GER => Ok(Runic::LetterGer),
+            LETTER_LONG_DASH_BRANCH_DASH_AR_AE => Ok(Runic::LetterLongDashBranchDashArAe),
+            LETTER_SHORT_DASH_TWIG_DASH_AR_A => Ok(Runic::LetterShortDashTwigDashArA),
+            LETTER_IWAZ_EOH => Ok(Runic::LetterIwazEoh),
+            LETTER_PERTHO_PEORTH_P => Ok(Runic::LetterPerthoPeorthP),
+            LETTER_ALGIZ_EOLHX => Ok(Runic::LetterAlgizEolhx),
+            LETTER_SOWILO_S => Ok(Runic::LetterSowiloS),
+            LETTER_SIGEL_LONG_DASH_BRANCH_DASH_SOL_S => Ok(Runic::LetterSigelLongDashBranchDashSolS),
+            LETTER_SHORT_DASH_TWIG_DASH_SOL_S => Ok(Runic::LetterShortDashTwigDashSolS),
+            LETTER_C => Ok(Runic::LetterC),
+            LETTER_Z => Ok(Runic::LetterZ),
+            LETTER_TIWAZ_TIR_TYR_T => Ok(Runic::LetterTiwazTirTyrT),
+            LETTER_SHORT_DASH_TWIG_DASH_TYR_T => Ok(Runic::LetterShortDashTwigDashTyrT),
+            LETTER_D => Ok(Runic::LetterD),
+            LETTER_BERKANAN_BEORC_BJARKAN_B => Ok(Runic::LetterBerkananBeorcBjarkanB),
+            LETTER_SHORT_DASH_TWIG_DASH_BJARKAN_B => Ok(Runic::LetterShortDashTwigDashBjarkanB),
+            LETTER_DOTTED_DASH_P => Ok(Runic::LetterDottedDashP),
+            LETTER_OPEN_DASH_P => Ok(Runic::LetterOpenDashP),
+            LETTER_EHWAZ_EH_E => Ok(Runic::LetterEhwazEhE),
+            LETTER_MANNAZ_MAN_M => Ok(Runic::LetterMannazManM),
+            LETTER_LONG_DASH_BRANCH_DASH_MADR_M => Ok(Runic::LetterLongDashBranchDashMadrM),
+            LETTER_SHORT_DASH_TWIG_DASH_MADR_M => Ok(Runic::LetterShortDashTwigDashMadrM),
+            LETTER_LAUKAZ_LAGU_LOGR_L => Ok(Runic::LetterLaukazLaguLogrL),
+            LETTER_DOTTED_DASH_L => Ok(Runic::LetterDottedDashL),
+            LETTER_INGWAZ => Ok(Runic::LetterIngwaz),
+            LETTER_ING => Ok(Runic::LetterIng),
+            LETTER_DAGAZ_DAEG_D => Ok(Runic::LetterDagazDaegD),
+            LETTER_OTHALAN_ETHEL_O => Ok(Runic::LetterOthalanEthelO),
+            LETTER_EAR => Ok(Runic::LetterEar),
+            LETTER_IOR => Ok(Runic::LetterIor),
+            LETTER_CWEORTH => Ok(Runic::LetterCweorth),
+            LETTER_CALC => Ok(Runic::LetterCalc),
+            LETTER_CEALC => Ok(Runic::LetterCealc),
+            LETTER_STAN => Ok(Runic::LetterStan),
+            LETTER_LONG_DASH_BRANCH_DASH_YR => Ok(Runic::LetterLongDashBranchDashYr),
+            LETTER_SHORT_DASH_TWIG_DASH_YR => Ok(Runic::LetterShortDashTwigDashYr),
+            LETTER_ICELANDIC_DASH_YR => Ok(Runic::LetterIcelandicDashYr),
+            LETTER_Q => Ok(Runic::LetterQ),
+            LETTER_X => Ok(Runic::LetterX),
+            SINGLE_PUNCTUATION => Ok(Runic::SinglePunctuation),
+            MULTIPLE_PUNCTUATION => Ok(Runic::MultiplePunctuation),
+            CROSS_PUNCTUATION => Ok(Runic::CrossPunctuation),
+            ARLAUG_SYMBOL => Ok(Runic::ArlaugSymbol),
+            TVIMADUR_SYMBOL => Ok(Runic::TvimadurSymbol),
+            BELGTHOR_SYMBOL => Ok(Runic::BelgthorSymbol),
+            LETTER_K => Ok(Runic::LetterK),
+            LETTER_SH => Ok(Runic::LetterSh),
+            LETTER_OO => Ok(Runic::LetterOo),
+            LETTER_FRANKS_CASKET_OS => Ok(Runic::LetterFranksCasketOs),
+            LETTER_FRANKS_CASKET_IS => Ok(Runic::LetterFranksCasketIs),
+            LETTER_FRANKS_CASKET_EH => Ok(Runic::LetterFranksCasketEh),
+            LETTER_FRANKS_CASKET_AC => Ok(Runic::LetterFranksCasketAc),
+            LETTER_FRANKS_CASKET_AESC => Ok(Runic::LetterFranksCasketAesc),
             _ => Err(()),
         }
     }
@@ -606,103 +606,103 @@ impl Iterator for Runic {
 }
 
 impl Runic {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Runic::RunicLetterFehuFeohFeF
+        Runic::LetterFehuFeohFeF
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Runic::RunicLetterFehuFeohFeF => "runic letter fehu feoh fe f",
-            Runic::RunicLetterV => "runic letter v",
-            Runic::RunicLetterUruzUrU => "runic letter uruz ur u",
-            Runic::RunicLetterYr => "runic letter yr",
-            Runic::RunicLetterY => "runic letter y",
-            Runic::RunicLetterW => "runic letter w",
-            Runic::RunicLetterThurisazThursThorn => "runic letter thurisaz thurs thorn",
-            Runic::RunicLetterEth => "runic letter eth",
-            Runic::RunicLetterAnsuzA => "runic letter ansuz a",
-            Runic::RunicLetterOsO => "runic letter os o",
-            Runic::RunicLetterAcA => "runic letter ac a",
-            Runic::RunicLetterAesc => "runic letter aesc",
-            Runic::RunicLetterLongDashBranchDashOssO => "runic letter long-branch-oss o",
-            Runic::RunicLetterShortDashTwigDashOssO => "runic letter short-twig-oss o",
-            Runic::RunicLetterO => "runic letter o",
-            Runic::RunicLetterOe => "runic letter oe",
-            Runic::RunicLetterOn => "runic letter on",
-            Runic::RunicLetterRaidoRadReidR => "runic letter raido rad reid r",
-            Runic::RunicLetterKauna => "runic letter kauna",
-            Runic::RunicLetterCen => "runic letter cen",
-            Runic::RunicLetterKaunK => "runic letter kaun k",
-            Runic::RunicLetterG => "runic letter g",
-            Runic::RunicLetterEng => "runic letter eng",
-            Runic::RunicLetterGeboGyfuG => "runic letter gebo gyfu g",
-            Runic::RunicLetterGar => "runic letter gar",
-            Runic::RunicLetterWunjoWynnW => "runic letter wunjo wynn w",
-            Runic::RunicLetterHaglazH => "runic letter haglaz h",
-            Runic::RunicLetterHaeglH => "runic letter haegl h",
-            Runic::RunicLetterLongDashBranchDashHagallH => "runic letter long-branch-hagall h",
-            Runic::RunicLetterShortDashTwigDashHagallH => "runic letter short-twig-hagall h",
-            Runic::RunicLetterNaudizNydNaudN => "runic letter naudiz nyd naud n",
-            Runic::RunicLetterShortDashTwigDashNaudN => "runic letter short-twig-naud n",
-            Runic::RunicLetterDottedDashN => "runic letter dotted-n",
-            Runic::RunicLetterIsazIsIssI => "runic letter isaz is iss i",
-            Runic::RunicLetterE => "runic letter e",
-            Runic::RunicLetterJeranJ => "runic letter jeran j",
-            Runic::RunicLetterGer => "runic letter ger",
-            Runic::RunicLetterLongDashBranchDashArAe => "runic letter long-branch-ar ae",
-            Runic::RunicLetterShortDashTwigDashArA => "runic letter short-twig-ar a",
-            Runic::RunicLetterIwazEoh => "runic letter iwaz eoh",
-            Runic::RunicLetterPerthoPeorthP => "runic letter pertho peorth p",
-            Runic::RunicLetterAlgizEolhx => "runic letter algiz eolhx",
-            Runic::RunicLetterSowiloS => "runic letter sowilo s",
-            Runic::RunicLetterSigelLongDashBranchDashSolS => "runic letter sigel long-branch-sol s",
-            Runic::RunicLetterShortDashTwigDashSolS => "runic letter short-twig-sol s",
-            Runic::RunicLetterC => "runic letter c",
-            Runic::RunicLetterZ => "runic letter z",
-            Runic::RunicLetterTiwazTirTyrT => "runic letter tiwaz tir tyr t",
-            Runic::RunicLetterShortDashTwigDashTyrT => "runic letter short-twig-tyr t",
-            Runic::RunicLetterD => "runic letter d",
-            Runic::RunicLetterBerkananBeorcBjarkanB => "runic letter berkanan beorc bjarkan b",
-            Runic::RunicLetterShortDashTwigDashBjarkanB => "runic letter short-twig-bjarkan b",
-            Runic::RunicLetterDottedDashP => "runic letter dotted-p",
-            Runic::RunicLetterOpenDashP => "runic letter open-p",
-            Runic::RunicLetterEhwazEhE => "runic letter ehwaz eh e",
-            Runic::RunicLetterMannazManM => "runic letter mannaz man m",
-            Runic::RunicLetterLongDashBranchDashMadrM => "runic letter long-branch-madr m",
-            Runic::RunicLetterShortDashTwigDashMadrM => "runic letter short-twig-madr m",
-            Runic::RunicLetterLaukazLaguLogrL => "runic letter laukaz lagu logr l",
-            Runic::RunicLetterDottedDashL => "runic letter dotted-l",
-            Runic::RunicLetterIngwaz => "runic letter ingwaz",
-            Runic::RunicLetterIng => "runic letter ing",
-            Runic::RunicLetterDagazDaegD => "runic letter dagaz daeg d",
-            Runic::RunicLetterOthalanEthelO => "runic letter othalan ethel o",
-            Runic::RunicLetterEar => "runic letter ear",
-            Runic::RunicLetterIor => "runic letter ior",
-            Runic::RunicLetterCweorth => "runic letter cweorth",
-            Runic::RunicLetterCalc => "runic letter calc",
-            Runic::RunicLetterCealc => "runic letter cealc",
-            Runic::RunicLetterStan => "runic letter stan",
-            Runic::RunicLetterLongDashBranchDashYr => "runic letter long-branch-yr",
-            Runic::RunicLetterShortDashTwigDashYr => "runic letter short-twig-yr",
-            Runic::RunicLetterIcelandicDashYr => "runic letter icelandic-yr",
-            Runic::RunicLetterQ => "runic letter q",
-            Runic::RunicLetterX => "runic letter x",
-            Runic::RunicSinglePunctuation => "runic single punctuation",
-            Runic::RunicMultiplePunctuation => "runic multiple punctuation",
-            Runic::RunicCrossPunctuation => "runic cross punctuation",
-            Runic::RunicArlaugSymbol => "runic arlaug symbol",
-            Runic::RunicTvimadurSymbol => "runic tvimadur symbol",
-            Runic::RunicBelgthorSymbol => "runic belgthor symbol",
-            Runic::RunicLetterK => "runic letter k",
-            Runic::RunicLetterSh => "runic letter sh",
-            Runic::RunicLetterOo => "runic letter oo",
-            Runic::RunicLetterFranksCasketOs => "runic letter franks casket os",
-            Runic::RunicLetterFranksCasketIs => "runic letter franks casket is",
-            Runic::RunicLetterFranksCasketEh => "runic letter franks casket eh",
-            Runic::RunicLetterFranksCasketAc => "runic letter franks casket ac",
-            Runic::RunicLetterFranksCasketAesc => "runic letter franks casket aesc",
+            Runic::LetterFehuFeohFeF => "runic letter fehu feoh fe f",
+            Runic::LetterV => "runic letter v",
+            Runic::LetterUruzUrU => "runic letter uruz ur u",
+            Runic::LetterYr => "runic letter yr",
+            Runic::LetterY => "runic letter y",
+            Runic::LetterW => "runic letter w",
+            Runic::LetterThurisazThursThorn => "runic letter thurisaz thurs thorn",
+            Runic::LetterEth => "runic letter eth",
+            Runic::LetterAnsuzA => "runic letter ansuz a",
+            Runic::LetterOsO => "runic letter os o",
+            Runic::LetterAcA => "runic letter ac a",
+            Runic::LetterAesc => "runic letter aesc",
+            Runic::LetterLongDashBranchDashOssO => "runic letter long-branch-oss o",
+            Runic::LetterShortDashTwigDashOssO => "runic letter short-twig-oss o",
+            Runic::LetterO => "runic letter o",
+            Runic::LetterOe => "runic letter oe",
+            Runic::LetterOn => "runic letter on",
+            Runic::LetterRaidoRadReidR => "runic letter raido rad reid r",
+            Runic::LetterKauna => "runic letter kauna",
+            Runic::LetterCen => "runic letter cen",
+            Runic::LetterKaunK => "runic letter kaun k",
+            Runic::LetterG => "runic letter g",
+            Runic::LetterEng => "runic letter eng",
+            Runic::LetterGeboGyfuG => "runic letter gebo gyfu g",
+            Runic::LetterGar => "runic letter gar",
+            Runic::LetterWunjoWynnW => "runic letter wunjo wynn w",
+            Runic::LetterHaglazH => "runic letter haglaz h",
+            Runic::LetterHaeglH => "runic letter haegl h",
+            Runic::LetterLongDashBranchDashHagallH => "runic letter long-branch-hagall h",
+            Runic::LetterShortDashTwigDashHagallH => "runic letter short-twig-hagall h",
+            Runic::LetterNaudizNydNaudN => "runic letter naudiz nyd naud n",
+            Runic::LetterShortDashTwigDashNaudN => "runic letter short-twig-naud n",
+            Runic::LetterDottedDashN => "runic letter dotted-n",
+            Runic::LetterIsazIsIssI => "runic letter isaz is iss i",
+            Runic::LetterE => "runic letter e",
+            Runic::LetterJeranJ => "runic letter jeran j",
+            Runic::LetterGer => "runic letter ger",
+            Runic::LetterLongDashBranchDashArAe => "runic letter long-branch-ar ae",
+            Runic::LetterShortDashTwigDashArA => "runic letter short-twig-ar a",
+            Runic::LetterIwazEoh => "runic letter iwaz eoh",
+            Runic::LetterPerthoPeorthP => "runic letter pertho peorth p",
+            Runic::LetterAlgizEolhx => "runic letter algiz eolhx",
+            Runic::LetterSowiloS => "runic letter sowilo s",
+            Runic::LetterSigelLongDashBranchDashSolS => "runic letter sigel long-branch-sol s",
+            Runic::LetterShortDashTwigDashSolS => "runic letter short-twig-sol s",
+            Runic::LetterC => "runic letter c",
+            Runic::LetterZ => "runic letter z",
+            Runic::LetterTiwazTirTyrT => "runic letter tiwaz tir tyr t",
+            Runic::LetterShortDashTwigDashTyrT => "runic letter short-twig-tyr t",
+            Runic::LetterD => "runic letter d",
+            Runic::LetterBerkananBeorcBjarkanB => "runic letter berkanan beorc bjarkan b",
+            Runic::LetterShortDashTwigDashBjarkanB => "runic letter short-twig-bjarkan b",
+            Runic::LetterDottedDashP => "runic letter dotted-p",
+            Runic::LetterOpenDashP => "runic letter open-p",
+            Runic::LetterEhwazEhE => "runic letter ehwaz eh e",
+            Runic::LetterMannazManM => "runic letter mannaz man m",
+            Runic::LetterLongDashBranchDashMadrM => "runic letter long-branch-madr m",
+            Runic::LetterShortDashTwigDashMadrM => "runic letter short-twig-madr m",
+            Runic::LetterLaukazLaguLogrL => "runic letter laukaz lagu logr l",
+            Runic::LetterDottedDashL => "runic letter dotted-l",
+            Runic::LetterIngwaz => "runic letter ingwaz",
+            Runic::LetterIng => "runic letter ing",
+            Runic::LetterDagazDaegD => "runic letter dagaz daeg d",
+            Runic::LetterOthalanEthelO => "runic letter othalan ethel o",
+            Runic::LetterEar => "runic letter ear",
+            Runic::LetterIor => "runic letter ior",
+            Runic::LetterCweorth => "runic letter cweorth",
+            Runic::LetterCalc => "runic letter calc",
+            Runic::LetterCealc => "runic letter cealc",
+            Runic::LetterStan => "runic letter stan",
+            Runic::LetterLongDashBranchDashYr => "runic letter long-branch-yr",
+            Runic::LetterShortDashTwigDashYr => "runic letter short-twig-yr",
+            Runic::LetterIcelandicDashYr => "runic letter icelandic-yr",
+            Runic::LetterQ => "runic letter q",
+            Runic::LetterX => "runic letter x",
+            Runic::SinglePunctuation => "runic single punctuation",
+            Runic::MultiplePunctuation => "runic multiple punctuation",
+            Runic::CrossPunctuation => "runic cross punctuation",
+            Runic::ArlaugSymbol => "runic arlaug symbol",
+            Runic::TvimadurSymbol => "runic tvimadur symbol",
+            Runic::BelgthorSymbol => "runic belgthor symbol",
+            Runic::LetterK => "runic letter k",
+            Runic::LetterSh => "runic letter sh",
+            Runic::LetterOo => "runic letter oo",
+            Runic::LetterFranksCasketOs => "runic letter franks casket os",
+            Runic::LetterFranksCasketIs => "runic letter franks casket is",
+            Runic::LetterFranksCasketEh => "runic letter franks casket eh",
+            Runic::LetterFranksCasketAc => "runic letter franks casket ac",
+            Runic::LetterFranksCasketAesc => "runic letter franks casket aesc",
         }
     }
 }

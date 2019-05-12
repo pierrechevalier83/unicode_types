@@ -5,81 +5,81 @@
 /// 𐌠 𐌡 𐌢 𐌣 𐌭 𐌮
 pub mod constants {
     /// \u{10300}: '𐌀'
-    pub const OLD_ITALIC_LETTER_A: char = '𐌀';
+    pub const LETTER_A: char = '𐌀';
     /// \u{10301}: '𐌁'
-    pub const OLD_ITALIC_LETTER_BE: char = '𐌁';
+    pub const LETTER_BE: char = '𐌁';
     /// \u{10302}: '𐌂'
-    pub const OLD_ITALIC_LETTER_KE: char = '𐌂';
+    pub const LETTER_KE: char = '𐌂';
     /// \u{10303}: '𐌃'
-    pub const OLD_ITALIC_LETTER_DE: char = '𐌃';
+    pub const LETTER_DE: char = '𐌃';
     /// \u{10304}: '𐌄'
-    pub const OLD_ITALIC_LETTER_E: char = '𐌄';
+    pub const LETTER_E: char = '𐌄';
     /// \u{10305}: '𐌅'
-    pub const OLD_ITALIC_LETTER_VE: char = '𐌅';
+    pub const LETTER_VE: char = '𐌅';
     /// \u{10306}: '𐌆'
-    pub const OLD_ITALIC_LETTER_ZE: char = '𐌆';
+    pub const LETTER_ZE: char = '𐌆';
     /// \u{10307}: '𐌇'
-    pub const OLD_ITALIC_LETTER_HE: char = '𐌇';
+    pub const LETTER_HE: char = '𐌇';
     /// \u{10308}: '𐌈'
-    pub const OLD_ITALIC_LETTER_THE: char = '𐌈';
+    pub const LETTER_THE: char = '𐌈';
     /// \u{10309}: '𐌉'
-    pub const OLD_ITALIC_LETTER_I: char = '𐌉';
+    pub const LETTER_I: char = '𐌉';
     /// \u{1030a}: '𐌊'
-    pub const OLD_ITALIC_LETTER_KA: char = '𐌊';
+    pub const LETTER_KA: char = '𐌊';
     /// \u{1030b}: '𐌋'
-    pub const OLD_ITALIC_LETTER_EL: char = '𐌋';
+    pub const LETTER_EL: char = '𐌋';
     /// \u{1030c}: '𐌌'
-    pub const OLD_ITALIC_LETTER_EM: char = '𐌌';
+    pub const LETTER_EM: char = '𐌌';
     /// \u{1030d}: '𐌍'
-    pub const OLD_ITALIC_LETTER_EN: char = '𐌍';
+    pub const LETTER_EN: char = '𐌍';
     /// \u{1030e}: '𐌎'
-    pub const OLD_ITALIC_LETTER_ESH: char = '𐌎';
+    pub const LETTER_ESH: char = '𐌎';
     /// \u{1030f}: '𐌏'
-    pub const OLD_ITALIC_LETTER_O: char = '𐌏';
+    pub const LETTER_O: char = '𐌏';
     /// \u{10310}: '𐌐'
-    pub const OLD_ITALIC_LETTER_PE: char = '𐌐';
+    pub const LETTER_PE: char = '𐌐';
     /// \u{10311}: '𐌑'
-    pub const OLD_ITALIC_LETTER_SHE: char = '𐌑';
+    pub const LETTER_SHE: char = '𐌑';
     /// \u{10312}: '𐌒'
-    pub const OLD_ITALIC_LETTER_KU: char = '𐌒';
+    pub const LETTER_KU: char = '𐌒';
     /// \u{10313}: '𐌓'
-    pub const OLD_ITALIC_LETTER_ER: char = '𐌓';
+    pub const LETTER_ER: char = '𐌓';
     /// \u{10314}: '𐌔'
-    pub const OLD_ITALIC_LETTER_ES: char = '𐌔';
+    pub const LETTER_ES: char = '𐌔';
     /// \u{10315}: '𐌕'
-    pub const OLD_ITALIC_LETTER_TE: char = '𐌕';
+    pub const LETTER_TE: char = '𐌕';
     /// \u{10316}: '𐌖'
-    pub const OLD_ITALIC_LETTER_U: char = '𐌖';
+    pub const LETTER_U: char = '𐌖';
     /// \u{10317}: '𐌗'
-    pub const OLD_ITALIC_LETTER_EKS: char = '𐌗';
+    pub const LETTER_EKS: char = '𐌗';
     /// \u{10318}: '𐌘'
-    pub const OLD_ITALIC_LETTER_PHE: char = '𐌘';
+    pub const LETTER_PHE: char = '𐌘';
     /// \u{10319}: '𐌙'
-    pub const OLD_ITALIC_LETTER_KHE: char = '𐌙';
+    pub const LETTER_KHE: char = '𐌙';
     /// \u{1031a}: '𐌚'
-    pub const OLD_ITALIC_LETTER_EF: char = '𐌚';
+    pub const LETTER_EF: char = '𐌚';
     /// \u{1031b}: '𐌛'
-    pub const OLD_ITALIC_LETTER_ERS: char = '𐌛';
+    pub const LETTER_ERS: char = '𐌛';
     /// \u{1031c}: '𐌜'
-    pub const OLD_ITALIC_LETTER_CHE: char = '𐌜';
+    pub const LETTER_CHE: char = '𐌜';
     /// \u{1031d}: '𐌝'
-    pub const OLD_ITALIC_LETTER_II: char = '𐌝';
+    pub const LETTER_II: char = '𐌝';
     /// \u{1031e}: '𐌞'
-    pub const OLD_ITALIC_LETTER_UU: char = '𐌞';
+    pub const LETTER_UU: char = '𐌞';
     /// \u{1031f}: '𐌟'
-    pub const OLD_ITALIC_LETTER_ESS: char = '𐌟';
+    pub const LETTER_ESS: char = '𐌟';
     /// \u{10320}: '𐌠'
-    pub const OLD_ITALIC_NUMERAL_ONE: char = '𐌠';
+    pub const NUMERAL_ONE: char = '𐌠';
     /// \u{10321}: '𐌡'
-    pub const OLD_ITALIC_NUMERAL_FIVE: char = '𐌡';
+    pub const NUMERAL_FIVE: char = '𐌡';
     /// \u{10322}: '𐌢'
-    pub const OLD_ITALIC_NUMERAL_TEN: char = '𐌢';
+    pub const NUMERAL_TEN: char = '𐌢';
     /// \u{10323}: '𐌣'
-    pub const OLD_ITALIC_NUMERAL_FIFTY: char = '𐌣';
+    pub const NUMERAL_FIFTY: char = '𐌣';
     /// \u{1032d}: '𐌭'
-    pub const OLD_ITALIC_LETTER_YE: char = '𐌭';
+    pub const LETTER_YE: char = '𐌭';
     /// \u{1032e}: '𐌮'
-    pub const OLD_ITALIC_LETTER_NORTHERN_TSE: char = '𐌮';
+    pub const LETTER_NORTHERN_TSE: char = '𐌮';
 }
 
 /// \u{10300} → \u{1032f}\
@@ -90,125 +90,125 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OldItalic {
     /// \u{10300}: '𐌀'
-    OldItalicLetterA,
+    LetterA,
     /// \u{10301}: '𐌁'
-    OldItalicLetterBe,
+    LetterBe,
     /// \u{10302}: '𐌂'
-    OldItalicLetterKe,
+    LetterKe,
     /// \u{10303}: '𐌃'
-    OldItalicLetterDe,
+    LetterDe,
     /// \u{10304}: '𐌄'
-    OldItalicLetterE,
+    LetterE,
     /// \u{10305}: '𐌅'
-    OldItalicLetterVe,
+    LetterVe,
     /// \u{10306}: '𐌆'
-    OldItalicLetterZe,
+    LetterZe,
     /// \u{10307}: '𐌇'
-    OldItalicLetterHe,
+    LetterHe,
     /// \u{10308}: '𐌈'
-    OldItalicLetterThe,
+    LetterThe,
     /// \u{10309}: '𐌉'
-    OldItalicLetterI,
+    LetterI,
     /// \u{1030a}: '𐌊'
-    OldItalicLetterKa,
+    LetterKa,
     /// \u{1030b}: '𐌋'
-    OldItalicLetterEl,
+    LetterEl,
     /// \u{1030c}: '𐌌'
-    OldItalicLetterEm,
+    LetterEm,
     /// \u{1030d}: '𐌍'
-    OldItalicLetterEn,
+    LetterEn,
     /// \u{1030e}: '𐌎'
-    OldItalicLetterEsh,
+    LetterEsh,
     /// \u{1030f}: '𐌏'
-    OldItalicLetterO,
+    LetterO,
     /// \u{10310}: '𐌐'
-    OldItalicLetterPe,
+    LetterPe,
     /// \u{10311}: '𐌑'
-    OldItalicLetterShe,
+    LetterShe,
     /// \u{10312}: '𐌒'
-    OldItalicLetterKu,
+    LetterKu,
     /// \u{10313}: '𐌓'
-    OldItalicLetterEr,
+    LetterEr,
     /// \u{10314}: '𐌔'
-    OldItalicLetterEs,
+    LetterEs,
     /// \u{10315}: '𐌕'
-    OldItalicLetterTe,
+    LetterTe,
     /// \u{10316}: '𐌖'
-    OldItalicLetterU,
+    LetterU,
     /// \u{10317}: '𐌗'
-    OldItalicLetterEks,
+    LetterEks,
     /// \u{10318}: '𐌘'
-    OldItalicLetterPhe,
+    LetterPhe,
     /// \u{10319}: '𐌙'
-    OldItalicLetterKhe,
+    LetterKhe,
     /// \u{1031a}: '𐌚'
-    OldItalicLetterEf,
+    LetterEf,
     /// \u{1031b}: '𐌛'
-    OldItalicLetterErs,
+    LetterErs,
     /// \u{1031c}: '𐌜'
-    OldItalicLetterChe,
+    LetterChe,
     /// \u{1031d}: '𐌝'
-    OldItalicLetterIi,
+    LetterIi,
     /// \u{1031e}: '𐌞'
-    OldItalicLetterUu,
+    LetterUu,
     /// \u{1031f}: '𐌟'
-    OldItalicLetterEss,
+    LetterEss,
     /// \u{10320}: '𐌠'
-    OldItalicNumeralOne,
+    NumeralOne,
     /// \u{10321}: '𐌡'
-    OldItalicNumeralFive,
+    NumeralFive,
     /// \u{10322}: '𐌢'
-    OldItalicNumeralTen,
+    NumeralTen,
     /// \u{10323}: '𐌣'
-    OldItalicNumeralFifty,
+    NumeralFifty,
     /// \u{1032d}: '𐌭'
-    OldItalicLetterYe,
+    LetterYe,
     /// \u{1032e}: '𐌮'
-    OldItalicLetterNorthernTse,
+    LetterNorthernTse,
 }
 
 impl Into<char> for OldItalic {
     fn into(self) -> char {
         use constants::*;
         match self {
-            OldItalic::OldItalicLetterA => OLD_ITALIC_LETTER_A,
-            OldItalic::OldItalicLetterBe => OLD_ITALIC_LETTER_BE,
-            OldItalic::OldItalicLetterKe => OLD_ITALIC_LETTER_KE,
-            OldItalic::OldItalicLetterDe => OLD_ITALIC_LETTER_DE,
-            OldItalic::OldItalicLetterE => OLD_ITALIC_LETTER_E,
-            OldItalic::OldItalicLetterVe => OLD_ITALIC_LETTER_VE,
-            OldItalic::OldItalicLetterZe => OLD_ITALIC_LETTER_ZE,
-            OldItalic::OldItalicLetterHe => OLD_ITALIC_LETTER_HE,
-            OldItalic::OldItalicLetterThe => OLD_ITALIC_LETTER_THE,
-            OldItalic::OldItalicLetterI => OLD_ITALIC_LETTER_I,
-            OldItalic::OldItalicLetterKa => OLD_ITALIC_LETTER_KA,
-            OldItalic::OldItalicLetterEl => OLD_ITALIC_LETTER_EL,
-            OldItalic::OldItalicLetterEm => OLD_ITALIC_LETTER_EM,
-            OldItalic::OldItalicLetterEn => OLD_ITALIC_LETTER_EN,
-            OldItalic::OldItalicLetterEsh => OLD_ITALIC_LETTER_ESH,
-            OldItalic::OldItalicLetterO => OLD_ITALIC_LETTER_O,
-            OldItalic::OldItalicLetterPe => OLD_ITALIC_LETTER_PE,
-            OldItalic::OldItalicLetterShe => OLD_ITALIC_LETTER_SHE,
-            OldItalic::OldItalicLetterKu => OLD_ITALIC_LETTER_KU,
-            OldItalic::OldItalicLetterEr => OLD_ITALIC_LETTER_ER,
-            OldItalic::OldItalicLetterEs => OLD_ITALIC_LETTER_ES,
-            OldItalic::OldItalicLetterTe => OLD_ITALIC_LETTER_TE,
-            OldItalic::OldItalicLetterU => OLD_ITALIC_LETTER_U,
-            OldItalic::OldItalicLetterEks => OLD_ITALIC_LETTER_EKS,
-            OldItalic::OldItalicLetterPhe => OLD_ITALIC_LETTER_PHE,
-            OldItalic::OldItalicLetterKhe => OLD_ITALIC_LETTER_KHE,
-            OldItalic::OldItalicLetterEf => OLD_ITALIC_LETTER_EF,
-            OldItalic::OldItalicLetterErs => OLD_ITALIC_LETTER_ERS,
-            OldItalic::OldItalicLetterChe => OLD_ITALIC_LETTER_CHE,
-            OldItalic::OldItalicLetterIi => OLD_ITALIC_LETTER_II,
-            OldItalic::OldItalicLetterUu => OLD_ITALIC_LETTER_UU,
-            OldItalic::OldItalicLetterEss => OLD_ITALIC_LETTER_ESS,
-            OldItalic::OldItalicNumeralOne => OLD_ITALIC_NUMERAL_ONE,
-            OldItalic::OldItalicNumeralFive => OLD_ITALIC_NUMERAL_FIVE,
-            OldItalic::OldItalicNumeralTen => OLD_ITALIC_NUMERAL_TEN,
-            OldItalic::OldItalicNumeralFifty => OLD_ITALIC_NUMERAL_FIFTY,
-            OldItalic::OldItalicLetterYe => OLD_ITALIC_LETTER_YE,
-            OldItalic::OldItalicLetterNorthernTse => OLD_ITALIC_LETTER_NORTHERN_TSE,
+            OldItalic::LetterA => LETTER_A,
+            OldItalic::LetterBe => LETTER_BE,
+            OldItalic::LetterKe => LETTER_KE,
+            OldItalic::LetterDe => LETTER_DE,
+            OldItalic::LetterE => LETTER_E,
+            OldItalic::LetterVe => LETTER_VE,
+            OldItalic::LetterZe => LETTER_ZE,
+            OldItalic::LetterHe => LETTER_HE,
+            OldItalic::LetterThe => LETTER_THE,
+            OldItalic::LetterI => LETTER_I,
+            OldItalic::LetterKa => LETTER_KA,
+            OldItalic::LetterEl => LETTER_EL,
+            OldItalic::LetterEm => LETTER_EM,
+            OldItalic::LetterEn => LETTER_EN,
+            OldItalic::LetterEsh => LETTER_ESH,
+            OldItalic::LetterO => LETTER_O,
+            OldItalic::LetterPe => LETTER_PE,
+            OldItalic::LetterShe => LETTER_SHE,
+            OldItalic::LetterKu => LETTER_KU,
+            OldItalic::LetterEr => LETTER_ER,
+            OldItalic::LetterEs => LETTER_ES,
+            OldItalic::LetterTe => LETTER_TE,
+            OldItalic::LetterU => LETTER_U,
+            OldItalic::LetterEks => LETTER_EKS,
+            OldItalic::LetterPhe => LETTER_PHE,
+            OldItalic::LetterKhe => LETTER_KHE,
+            OldItalic::LetterEf => LETTER_EF,
+            OldItalic::LetterErs => LETTER_ERS,
+            OldItalic::LetterChe => LETTER_CHE,
+            OldItalic::LetterIi => LETTER_II,
+            OldItalic::LetterUu => LETTER_UU,
+            OldItalic::LetterEss => LETTER_ESS,
+            OldItalic::NumeralOne => NUMERAL_ONE,
+            OldItalic::NumeralFive => NUMERAL_FIVE,
+            OldItalic::NumeralTen => NUMERAL_TEN,
+            OldItalic::NumeralFifty => NUMERAL_FIFTY,
+            OldItalic::LetterYe => LETTER_YE,
+            OldItalic::LetterNorthernTse => LETTER_NORTHERN_TSE,
         }
     }
 }
@@ -218,44 +218,44 @@ impl std::convert::TryFrom<char> for OldItalic {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            OLD_ITALIC_LETTER_A => Ok(OldItalic::OldItalicLetterA),
-            OLD_ITALIC_LETTER_BE => Ok(OldItalic::OldItalicLetterBe),
-            OLD_ITALIC_LETTER_KE => Ok(OldItalic::OldItalicLetterKe),
-            OLD_ITALIC_LETTER_DE => Ok(OldItalic::OldItalicLetterDe),
-            OLD_ITALIC_LETTER_E => Ok(OldItalic::OldItalicLetterE),
-            OLD_ITALIC_LETTER_VE => Ok(OldItalic::OldItalicLetterVe),
-            OLD_ITALIC_LETTER_ZE => Ok(OldItalic::OldItalicLetterZe),
-            OLD_ITALIC_LETTER_HE => Ok(OldItalic::OldItalicLetterHe),
-            OLD_ITALIC_LETTER_THE => Ok(OldItalic::OldItalicLetterThe),
-            OLD_ITALIC_LETTER_I => Ok(OldItalic::OldItalicLetterI),
-            OLD_ITALIC_LETTER_KA => Ok(OldItalic::OldItalicLetterKa),
-            OLD_ITALIC_LETTER_EL => Ok(OldItalic::OldItalicLetterEl),
-            OLD_ITALIC_LETTER_EM => Ok(OldItalic::OldItalicLetterEm),
-            OLD_ITALIC_LETTER_EN => Ok(OldItalic::OldItalicLetterEn),
-            OLD_ITALIC_LETTER_ESH => Ok(OldItalic::OldItalicLetterEsh),
-            OLD_ITALIC_LETTER_O => Ok(OldItalic::OldItalicLetterO),
-            OLD_ITALIC_LETTER_PE => Ok(OldItalic::OldItalicLetterPe),
-            OLD_ITALIC_LETTER_SHE => Ok(OldItalic::OldItalicLetterShe),
-            OLD_ITALIC_LETTER_KU => Ok(OldItalic::OldItalicLetterKu),
-            OLD_ITALIC_LETTER_ER => Ok(OldItalic::OldItalicLetterEr),
-            OLD_ITALIC_LETTER_ES => Ok(OldItalic::OldItalicLetterEs),
-            OLD_ITALIC_LETTER_TE => Ok(OldItalic::OldItalicLetterTe),
-            OLD_ITALIC_LETTER_U => Ok(OldItalic::OldItalicLetterU),
-            OLD_ITALIC_LETTER_EKS => Ok(OldItalic::OldItalicLetterEks),
-            OLD_ITALIC_LETTER_PHE => Ok(OldItalic::OldItalicLetterPhe),
-            OLD_ITALIC_LETTER_KHE => Ok(OldItalic::OldItalicLetterKhe),
-            OLD_ITALIC_LETTER_EF => Ok(OldItalic::OldItalicLetterEf),
-            OLD_ITALIC_LETTER_ERS => Ok(OldItalic::OldItalicLetterErs),
-            OLD_ITALIC_LETTER_CHE => Ok(OldItalic::OldItalicLetterChe),
-            OLD_ITALIC_LETTER_II => Ok(OldItalic::OldItalicLetterIi),
-            OLD_ITALIC_LETTER_UU => Ok(OldItalic::OldItalicLetterUu),
-            OLD_ITALIC_LETTER_ESS => Ok(OldItalic::OldItalicLetterEss),
-            OLD_ITALIC_NUMERAL_ONE => Ok(OldItalic::OldItalicNumeralOne),
-            OLD_ITALIC_NUMERAL_FIVE => Ok(OldItalic::OldItalicNumeralFive),
-            OLD_ITALIC_NUMERAL_TEN => Ok(OldItalic::OldItalicNumeralTen),
-            OLD_ITALIC_NUMERAL_FIFTY => Ok(OldItalic::OldItalicNumeralFifty),
-            OLD_ITALIC_LETTER_YE => Ok(OldItalic::OldItalicLetterYe),
-            OLD_ITALIC_LETTER_NORTHERN_TSE => Ok(OldItalic::OldItalicLetterNorthernTse),
+            LETTER_A => Ok(OldItalic::LetterA),
+            LETTER_BE => Ok(OldItalic::LetterBe),
+            LETTER_KE => Ok(OldItalic::LetterKe),
+            LETTER_DE => Ok(OldItalic::LetterDe),
+            LETTER_E => Ok(OldItalic::LetterE),
+            LETTER_VE => Ok(OldItalic::LetterVe),
+            LETTER_ZE => Ok(OldItalic::LetterZe),
+            LETTER_HE => Ok(OldItalic::LetterHe),
+            LETTER_THE => Ok(OldItalic::LetterThe),
+            LETTER_I => Ok(OldItalic::LetterI),
+            LETTER_KA => Ok(OldItalic::LetterKa),
+            LETTER_EL => Ok(OldItalic::LetterEl),
+            LETTER_EM => Ok(OldItalic::LetterEm),
+            LETTER_EN => Ok(OldItalic::LetterEn),
+            LETTER_ESH => Ok(OldItalic::LetterEsh),
+            LETTER_O => Ok(OldItalic::LetterO),
+            LETTER_PE => Ok(OldItalic::LetterPe),
+            LETTER_SHE => Ok(OldItalic::LetterShe),
+            LETTER_KU => Ok(OldItalic::LetterKu),
+            LETTER_ER => Ok(OldItalic::LetterEr),
+            LETTER_ES => Ok(OldItalic::LetterEs),
+            LETTER_TE => Ok(OldItalic::LetterTe),
+            LETTER_U => Ok(OldItalic::LetterU),
+            LETTER_EKS => Ok(OldItalic::LetterEks),
+            LETTER_PHE => Ok(OldItalic::LetterPhe),
+            LETTER_KHE => Ok(OldItalic::LetterKhe),
+            LETTER_EF => Ok(OldItalic::LetterEf),
+            LETTER_ERS => Ok(OldItalic::LetterErs),
+            LETTER_CHE => Ok(OldItalic::LetterChe),
+            LETTER_II => Ok(OldItalic::LetterIi),
+            LETTER_UU => Ok(OldItalic::LetterUu),
+            LETTER_ESS => Ok(OldItalic::LetterEss),
+            NUMERAL_ONE => Ok(OldItalic::NumeralOne),
+            NUMERAL_FIVE => Ok(OldItalic::NumeralFive),
+            NUMERAL_TEN => Ok(OldItalic::NumeralTen),
+            NUMERAL_FIFTY => Ok(OldItalic::NumeralFifty),
+            LETTER_YE => Ok(OldItalic::LetterYe),
+            LETTER_NORTHERN_TSE => Ok(OldItalic::LetterNorthernTse),
             _ => Err(()),
         }
     }
@@ -294,52 +294,52 @@ impl Iterator for OldItalic {
 }
 
 impl OldItalic {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        OldItalic::OldItalicLetterA
+        OldItalic::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            OldItalic::OldItalicLetterA => "old italic letter a",
-            OldItalic::OldItalicLetterBe => "old italic letter be",
-            OldItalic::OldItalicLetterKe => "old italic letter ke",
-            OldItalic::OldItalicLetterDe => "old italic letter de",
-            OldItalic::OldItalicLetterE => "old italic letter e",
-            OldItalic::OldItalicLetterVe => "old italic letter ve",
-            OldItalic::OldItalicLetterZe => "old italic letter ze",
-            OldItalic::OldItalicLetterHe => "old italic letter he",
-            OldItalic::OldItalicLetterThe => "old italic letter the",
-            OldItalic::OldItalicLetterI => "old italic letter i",
-            OldItalic::OldItalicLetterKa => "old italic letter ka",
-            OldItalic::OldItalicLetterEl => "old italic letter el",
-            OldItalic::OldItalicLetterEm => "old italic letter em",
-            OldItalic::OldItalicLetterEn => "old italic letter en",
-            OldItalic::OldItalicLetterEsh => "old italic letter esh",
-            OldItalic::OldItalicLetterO => "old italic letter o",
-            OldItalic::OldItalicLetterPe => "old italic letter pe",
-            OldItalic::OldItalicLetterShe => "old italic letter she",
-            OldItalic::OldItalicLetterKu => "old italic letter ku",
-            OldItalic::OldItalicLetterEr => "old italic letter er",
-            OldItalic::OldItalicLetterEs => "old italic letter es",
-            OldItalic::OldItalicLetterTe => "old italic letter te",
-            OldItalic::OldItalicLetterU => "old italic letter u",
-            OldItalic::OldItalicLetterEks => "old italic letter eks",
-            OldItalic::OldItalicLetterPhe => "old italic letter phe",
-            OldItalic::OldItalicLetterKhe => "old italic letter khe",
-            OldItalic::OldItalicLetterEf => "old italic letter ef",
-            OldItalic::OldItalicLetterErs => "old italic letter ers",
-            OldItalic::OldItalicLetterChe => "old italic letter che",
-            OldItalic::OldItalicLetterIi => "old italic letter ii",
-            OldItalic::OldItalicLetterUu => "old italic letter uu",
-            OldItalic::OldItalicLetterEss => "old italic letter ess",
-            OldItalic::OldItalicNumeralOne => "old italic numeral one",
-            OldItalic::OldItalicNumeralFive => "old italic numeral five",
-            OldItalic::OldItalicNumeralTen => "old italic numeral ten",
-            OldItalic::OldItalicNumeralFifty => "old italic numeral fifty",
-            OldItalic::OldItalicLetterYe => "old italic letter ye",
-            OldItalic::OldItalicLetterNorthernTse => "old italic letter northern tse",
+            OldItalic::LetterA => "old italic letter a",
+            OldItalic::LetterBe => "old italic letter be",
+            OldItalic::LetterKe => "old italic letter ke",
+            OldItalic::LetterDe => "old italic letter de",
+            OldItalic::LetterE => "old italic letter e",
+            OldItalic::LetterVe => "old italic letter ve",
+            OldItalic::LetterZe => "old italic letter ze",
+            OldItalic::LetterHe => "old italic letter he",
+            OldItalic::LetterThe => "old italic letter the",
+            OldItalic::LetterI => "old italic letter i",
+            OldItalic::LetterKa => "old italic letter ka",
+            OldItalic::LetterEl => "old italic letter el",
+            OldItalic::LetterEm => "old italic letter em",
+            OldItalic::LetterEn => "old italic letter en",
+            OldItalic::LetterEsh => "old italic letter esh",
+            OldItalic::LetterO => "old italic letter o",
+            OldItalic::LetterPe => "old italic letter pe",
+            OldItalic::LetterShe => "old italic letter she",
+            OldItalic::LetterKu => "old italic letter ku",
+            OldItalic::LetterEr => "old italic letter er",
+            OldItalic::LetterEs => "old italic letter es",
+            OldItalic::LetterTe => "old italic letter te",
+            OldItalic::LetterU => "old italic letter u",
+            OldItalic::LetterEks => "old italic letter eks",
+            OldItalic::LetterPhe => "old italic letter phe",
+            OldItalic::LetterKhe => "old italic letter khe",
+            OldItalic::LetterEf => "old italic letter ef",
+            OldItalic::LetterErs => "old italic letter ers",
+            OldItalic::LetterChe => "old italic letter che",
+            OldItalic::LetterIi => "old italic letter ii",
+            OldItalic::LetterUu => "old italic letter uu",
+            OldItalic::LetterEss => "old italic letter ess",
+            OldItalic::NumeralOne => "old italic numeral one",
+            OldItalic::NumeralFive => "old italic numeral five",
+            OldItalic::NumeralTen => "old italic numeral ten",
+            OldItalic::NumeralFifty => "old italic numeral fifty",
+            OldItalic::LetterYe => "old italic letter ye",
+            OldItalic::LetterNorthernTse => "old italic letter northern tse",
         }
     }
 }

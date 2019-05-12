@@ -4,41 +4,41 @@
 /// ᝲ ᝳ
 pub mod constants {
     /// \u{1760}: 'ᝠ'
-    pub const TAGBANWA_LETTER_A: char = 'ᝠ';
+    pub const LETTER_A: char = 'ᝠ';
     /// \u{1761}: 'ᝡ'
-    pub const TAGBANWA_LETTER_I: char = 'ᝡ';
+    pub const LETTER_I: char = 'ᝡ';
     /// \u{1762}: 'ᝢ'
-    pub const TAGBANWA_LETTER_U: char = 'ᝢ';
+    pub const LETTER_U: char = 'ᝢ';
     /// \u{1763}: 'ᝣ'
-    pub const TAGBANWA_LETTER_KA: char = 'ᝣ';
+    pub const LETTER_KA: char = 'ᝣ';
     /// \u{1764}: 'ᝤ'
-    pub const TAGBANWA_LETTER_GA: char = 'ᝤ';
+    pub const LETTER_GA: char = 'ᝤ';
     /// \u{1765}: 'ᝥ'
-    pub const TAGBANWA_LETTER_NGA: char = 'ᝥ';
+    pub const LETTER_NGA: char = 'ᝥ';
     /// \u{1766}: 'ᝦ'
-    pub const TAGBANWA_LETTER_TA: char = 'ᝦ';
+    pub const LETTER_TA: char = 'ᝦ';
     /// \u{1767}: 'ᝧ'
-    pub const TAGBANWA_LETTER_DA: char = 'ᝧ';
+    pub const LETTER_DA: char = 'ᝧ';
     /// \u{1768}: 'ᝨ'
-    pub const TAGBANWA_LETTER_NA: char = 'ᝨ';
+    pub const LETTER_NA: char = 'ᝨ';
     /// \u{1769}: 'ᝩ'
-    pub const TAGBANWA_LETTER_PA: char = 'ᝩ';
+    pub const LETTER_PA: char = 'ᝩ';
     /// \u{176a}: 'ᝪ'
-    pub const TAGBANWA_LETTER_BA: char = 'ᝪ';
+    pub const LETTER_BA: char = 'ᝪ';
     /// \u{176b}: 'ᝫ'
-    pub const TAGBANWA_LETTER_MA: char = 'ᝫ';
+    pub const LETTER_MA: char = 'ᝫ';
     /// \u{176c}: 'ᝬ'
-    pub const TAGBANWA_LETTER_YA: char = 'ᝬ';
+    pub const LETTER_YA: char = 'ᝬ';
     /// \u{176e}: 'ᝮ'
-    pub const TAGBANWA_LETTER_LA: char = 'ᝮ';
+    pub const LETTER_LA: char = 'ᝮ';
     /// \u{176f}: 'ᝯ'
-    pub const TAGBANWA_LETTER_WA: char = 'ᝯ';
+    pub const LETTER_WA: char = 'ᝯ';
     /// \u{1770}: 'ᝰ'
-    pub const TAGBANWA_LETTER_SA: char = 'ᝰ';
+    pub const LETTER_SA: char = 'ᝰ';
     /// \u{1772}: 'ᝲ'
-    pub const TAGBANWA_VOWEL_SIGN_I: char = 'ᝲ';
+    pub const VOWEL_SIGN_I: char = 'ᝲ';
     /// \u{1773}: 'ᝳ'
-    pub const TAGBANWA_VOWEL_SIGN_U: char = 'ᝳ';
+    pub const VOWEL_SIGN_U: char = 'ᝳ';
 }
 
 /// \u{1760} → \u{177f}\
@@ -48,65 +48,65 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Tagbanwa {
     /// \u{1760}: 'ᝠ'
-    TagbanwaLetterA,
+    LetterA,
     /// \u{1761}: 'ᝡ'
-    TagbanwaLetterI,
+    LetterI,
     /// \u{1762}: 'ᝢ'
-    TagbanwaLetterU,
+    LetterU,
     /// \u{1763}: 'ᝣ'
-    TagbanwaLetterKa,
+    LetterKa,
     /// \u{1764}: 'ᝤ'
-    TagbanwaLetterGa,
+    LetterGa,
     /// \u{1765}: 'ᝥ'
-    TagbanwaLetterNga,
+    LetterNga,
     /// \u{1766}: 'ᝦ'
-    TagbanwaLetterTa,
+    LetterTa,
     /// \u{1767}: 'ᝧ'
-    TagbanwaLetterDa,
+    LetterDa,
     /// \u{1768}: 'ᝨ'
-    TagbanwaLetterNa,
+    LetterNa,
     /// \u{1769}: 'ᝩ'
-    TagbanwaLetterPa,
+    LetterPa,
     /// \u{176a}: 'ᝪ'
-    TagbanwaLetterBa,
+    LetterBa,
     /// \u{176b}: 'ᝫ'
-    TagbanwaLetterMa,
+    LetterMa,
     /// \u{176c}: 'ᝬ'
-    TagbanwaLetterYa,
+    LetterYa,
     /// \u{176e}: 'ᝮ'
-    TagbanwaLetterLa,
+    LetterLa,
     /// \u{176f}: 'ᝯ'
-    TagbanwaLetterWa,
+    LetterWa,
     /// \u{1770}: 'ᝰ'
-    TagbanwaLetterSa,
+    LetterSa,
     /// \u{1772}: 'ᝲ'
-    TagbanwaVowelSignI,
+    VowelSignI,
     /// \u{1773}: 'ᝳ'
-    TagbanwaVowelSignU,
+    VowelSignU,
 }
 
 impl Into<char> for Tagbanwa {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Tagbanwa::TagbanwaLetterA => TAGBANWA_LETTER_A,
-            Tagbanwa::TagbanwaLetterI => TAGBANWA_LETTER_I,
-            Tagbanwa::TagbanwaLetterU => TAGBANWA_LETTER_U,
-            Tagbanwa::TagbanwaLetterKa => TAGBANWA_LETTER_KA,
-            Tagbanwa::TagbanwaLetterGa => TAGBANWA_LETTER_GA,
-            Tagbanwa::TagbanwaLetterNga => TAGBANWA_LETTER_NGA,
-            Tagbanwa::TagbanwaLetterTa => TAGBANWA_LETTER_TA,
-            Tagbanwa::TagbanwaLetterDa => TAGBANWA_LETTER_DA,
-            Tagbanwa::TagbanwaLetterNa => TAGBANWA_LETTER_NA,
-            Tagbanwa::TagbanwaLetterPa => TAGBANWA_LETTER_PA,
-            Tagbanwa::TagbanwaLetterBa => TAGBANWA_LETTER_BA,
-            Tagbanwa::TagbanwaLetterMa => TAGBANWA_LETTER_MA,
-            Tagbanwa::TagbanwaLetterYa => TAGBANWA_LETTER_YA,
-            Tagbanwa::TagbanwaLetterLa => TAGBANWA_LETTER_LA,
-            Tagbanwa::TagbanwaLetterWa => TAGBANWA_LETTER_WA,
-            Tagbanwa::TagbanwaLetterSa => TAGBANWA_LETTER_SA,
-            Tagbanwa::TagbanwaVowelSignI => TAGBANWA_VOWEL_SIGN_I,
-            Tagbanwa::TagbanwaVowelSignU => TAGBANWA_VOWEL_SIGN_U,
+            Tagbanwa::LetterA => LETTER_A,
+            Tagbanwa::LetterI => LETTER_I,
+            Tagbanwa::LetterU => LETTER_U,
+            Tagbanwa::LetterKa => LETTER_KA,
+            Tagbanwa::LetterGa => LETTER_GA,
+            Tagbanwa::LetterNga => LETTER_NGA,
+            Tagbanwa::LetterTa => LETTER_TA,
+            Tagbanwa::LetterDa => LETTER_DA,
+            Tagbanwa::LetterNa => LETTER_NA,
+            Tagbanwa::LetterPa => LETTER_PA,
+            Tagbanwa::LetterBa => LETTER_BA,
+            Tagbanwa::LetterMa => LETTER_MA,
+            Tagbanwa::LetterYa => LETTER_YA,
+            Tagbanwa::LetterLa => LETTER_LA,
+            Tagbanwa::LetterWa => LETTER_WA,
+            Tagbanwa::LetterSa => LETTER_SA,
+            Tagbanwa::VowelSignI => VOWEL_SIGN_I,
+            Tagbanwa::VowelSignU => VOWEL_SIGN_U,
         }
     }
 }
@@ -116,24 +116,24 @@ impl std::convert::TryFrom<char> for Tagbanwa {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            TAGBANWA_LETTER_A => Ok(Tagbanwa::TagbanwaLetterA),
-            TAGBANWA_LETTER_I => Ok(Tagbanwa::TagbanwaLetterI),
-            TAGBANWA_LETTER_U => Ok(Tagbanwa::TagbanwaLetterU),
-            TAGBANWA_LETTER_KA => Ok(Tagbanwa::TagbanwaLetterKa),
-            TAGBANWA_LETTER_GA => Ok(Tagbanwa::TagbanwaLetterGa),
-            TAGBANWA_LETTER_NGA => Ok(Tagbanwa::TagbanwaLetterNga),
-            TAGBANWA_LETTER_TA => Ok(Tagbanwa::TagbanwaLetterTa),
-            TAGBANWA_LETTER_DA => Ok(Tagbanwa::TagbanwaLetterDa),
-            TAGBANWA_LETTER_NA => Ok(Tagbanwa::TagbanwaLetterNa),
-            TAGBANWA_LETTER_PA => Ok(Tagbanwa::TagbanwaLetterPa),
-            TAGBANWA_LETTER_BA => Ok(Tagbanwa::TagbanwaLetterBa),
-            TAGBANWA_LETTER_MA => Ok(Tagbanwa::TagbanwaLetterMa),
-            TAGBANWA_LETTER_YA => Ok(Tagbanwa::TagbanwaLetterYa),
-            TAGBANWA_LETTER_LA => Ok(Tagbanwa::TagbanwaLetterLa),
-            TAGBANWA_LETTER_WA => Ok(Tagbanwa::TagbanwaLetterWa),
-            TAGBANWA_LETTER_SA => Ok(Tagbanwa::TagbanwaLetterSa),
-            TAGBANWA_VOWEL_SIGN_I => Ok(Tagbanwa::TagbanwaVowelSignI),
-            TAGBANWA_VOWEL_SIGN_U => Ok(Tagbanwa::TagbanwaVowelSignU),
+            LETTER_A => Ok(Tagbanwa::LetterA),
+            LETTER_I => Ok(Tagbanwa::LetterI),
+            LETTER_U => Ok(Tagbanwa::LetterU),
+            LETTER_KA => Ok(Tagbanwa::LetterKa),
+            LETTER_GA => Ok(Tagbanwa::LetterGa),
+            LETTER_NGA => Ok(Tagbanwa::LetterNga),
+            LETTER_TA => Ok(Tagbanwa::LetterTa),
+            LETTER_DA => Ok(Tagbanwa::LetterDa),
+            LETTER_NA => Ok(Tagbanwa::LetterNa),
+            LETTER_PA => Ok(Tagbanwa::LetterPa),
+            LETTER_BA => Ok(Tagbanwa::LetterBa),
+            LETTER_MA => Ok(Tagbanwa::LetterMa),
+            LETTER_YA => Ok(Tagbanwa::LetterYa),
+            LETTER_LA => Ok(Tagbanwa::LetterLa),
+            LETTER_WA => Ok(Tagbanwa::LetterWa),
+            LETTER_SA => Ok(Tagbanwa::LetterSa),
+            VOWEL_SIGN_I => Ok(Tagbanwa::VowelSignI),
+            VOWEL_SIGN_U => Ok(Tagbanwa::VowelSignU),
             _ => Err(()),
         }
     }
@@ -172,32 +172,32 @@ impl Iterator for Tagbanwa {
 }
 
 impl Tagbanwa {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Tagbanwa::TagbanwaLetterA
+        Tagbanwa::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Tagbanwa::TagbanwaLetterA => "tagbanwa letter a",
-            Tagbanwa::TagbanwaLetterI => "tagbanwa letter i",
-            Tagbanwa::TagbanwaLetterU => "tagbanwa letter u",
-            Tagbanwa::TagbanwaLetterKa => "tagbanwa letter ka",
-            Tagbanwa::TagbanwaLetterGa => "tagbanwa letter ga",
-            Tagbanwa::TagbanwaLetterNga => "tagbanwa letter nga",
-            Tagbanwa::TagbanwaLetterTa => "tagbanwa letter ta",
-            Tagbanwa::TagbanwaLetterDa => "tagbanwa letter da",
-            Tagbanwa::TagbanwaLetterNa => "tagbanwa letter na",
-            Tagbanwa::TagbanwaLetterPa => "tagbanwa letter pa",
-            Tagbanwa::TagbanwaLetterBa => "tagbanwa letter ba",
-            Tagbanwa::TagbanwaLetterMa => "tagbanwa letter ma",
-            Tagbanwa::TagbanwaLetterYa => "tagbanwa letter ya",
-            Tagbanwa::TagbanwaLetterLa => "tagbanwa letter la",
-            Tagbanwa::TagbanwaLetterWa => "tagbanwa letter wa",
-            Tagbanwa::TagbanwaLetterSa => "tagbanwa letter sa",
-            Tagbanwa::TagbanwaVowelSignI => "tagbanwa vowel sign i",
-            Tagbanwa::TagbanwaVowelSignU => "tagbanwa vowel sign u",
+            Tagbanwa::LetterA => "tagbanwa letter a",
+            Tagbanwa::LetterI => "tagbanwa letter i",
+            Tagbanwa::LetterU => "tagbanwa letter u",
+            Tagbanwa::LetterKa => "tagbanwa letter ka",
+            Tagbanwa::LetterGa => "tagbanwa letter ga",
+            Tagbanwa::LetterNga => "tagbanwa letter nga",
+            Tagbanwa::LetterTa => "tagbanwa letter ta",
+            Tagbanwa::LetterDa => "tagbanwa letter da",
+            Tagbanwa::LetterNa => "tagbanwa letter na",
+            Tagbanwa::LetterPa => "tagbanwa letter pa",
+            Tagbanwa::LetterBa => "tagbanwa letter ba",
+            Tagbanwa::LetterMa => "tagbanwa letter ma",
+            Tagbanwa::LetterYa => "tagbanwa letter ya",
+            Tagbanwa::LetterLa => "tagbanwa letter la",
+            Tagbanwa::LetterWa => "tagbanwa letter wa",
+            Tagbanwa::LetterSa => "tagbanwa letter sa",
+            Tagbanwa::VowelSignI => "tagbanwa vowel sign i",
+            Tagbanwa::VowelSignU => "tagbanwa vowel sign u",
         }
     }
 }

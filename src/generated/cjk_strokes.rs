@@ -282,7 +282,7 @@ impl Iterator for CJKStrokes {
 }
 
 impl CJKStrokes {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         CJKStrokes::CjkStrokeT
     }

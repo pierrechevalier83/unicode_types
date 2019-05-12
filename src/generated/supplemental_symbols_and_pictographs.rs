@@ -1550,7 +1550,7 @@ impl Iterator for SupplementalSymbolsandPictographs {
 }
 
 impl SupplementalSymbolsandPictographs {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         SupplementalSymbolsandPictographs::CircledCrossFormeeWithFourDots
     }

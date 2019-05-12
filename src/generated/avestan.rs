@@ -6,115 +6,115 @@
 /// 𐬰 𐬱 𐬲 𐬳 𐬴 𐬵 𐬹 𐬺 𐬻 𐬼 𐬽 𐬾
 pub mod constants {
     /// \u{10b00}: '𐬀'
-    pub const AVESTAN_LETTER_A: char = '𐬀';
+    pub const LETTER_A: char = '𐬀';
     /// \u{10b01}: '𐬁'
-    pub const AVESTAN_LETTER_AA: char = '𐬁';
+    pub const LETTER_AA: char = '𐬁';
     /// \u{10b02}: '𐬂'
-    pub const AVESTAN_LETTER_AO: char = '𐬂';
+    pub const LETTER_AO: char = '𐬂';
     /// \u{10b03}: '𐬃'
-    pub const AVESTAN_LETTER_AAO: char = '𐬃';
+    pub const LETTER_AAO: char = '𐬃';
     /// \u{10b04}: '𐬄'
-    pub const AVESTAN_LETTER_AN: char = '𐬄';
+    pub const LETTER_AN: char = '𐬄';
     /// \u{10b05}: '𐬅'
-    pub const AVESTAN_LETTER_AAN: char = '𐬅';
+    pub const LETTER_AAN: char = '𐬅';
     /// \u{10b06}: '𐬆'
-    pub const AVESTAN_LETTER_AE: char = '𐬆';
+    pub const LETTER_AE: char = '𐬆';
     /// \u{10b07}: '𐬇'
-    pub const AVESTAN_LETTER_AEE: char = '𐬇';
+    pub const LETTER_AEE: char = '𐬇';
     /// \u{10b08}: '𐬈'
-    pub const AVESTAN_LETTER_E: char = '𐬈';
+    pub const LETTER_E: char = '𐬈';
     /// \u{10b09}: '𐬉'
-    pub const AVESTAN_LETTER_EE: char = '𐬉';
+    pub const LETTER_EE: char = '𐬉';
     /// \u{10b0a}: '𐬊'
-    pub const AVESTAN_LETTER_O: char = '𐬊';
+    pub const LETTER_O: char = '𐬊';
     /// \u{10b0b}: '𐬋'
-    pub const AVESTAN_LETTER_OO: char = '𐬋';
+    pub const LETTER_OO: char = '𐬋';
     /// \u{10b0c}: '𐬌'
-    pub const AVESTAN_LETTER_I: char = '𐬌';
+    pub const LETTER_I: char = '𐬌';
     /// \u{10b0d}: '𐬍'
-    pub const AVESTAN_LETTER_II: char = '𐬍';
+    pub const LETTER_II: char = '𐬍';
     /// \u{10b0e}: '𐬎'
-    pub const AVESTAN_LETTER_U: char = '𐬎';
+    pub const LETTER_U: char = '𐬎';
     /// \u{10b0f}: '𐬏'
-    pub const AVESTAN_LETTER_UU: char = '𐬏';
+    pub const LETTER_UU: char = '𐬏';
     /// \u{10b10}: '𐬐'
-    pub const AVESTAN_LETTER_KE: char = '𐬐';
+    pub const LETTER_KE: char = '𐬐';
     /// \u{10b11}: '𐬑'
-    pub const AVESTAN_LETTER_XE: char = '𐬑';
+    pub const LETTER_XE: char = '𐬑';
     /// \u{10b12}: '𐬒'
-    pub const AVESTAN_LETTER_XYE: char = '𐬒';
+    pub const LETTER_XYE: char = '𐬒';
     /// \u{10b13}: '𐬓'
-    pub const AVESTAN_LETTER_XVE: char = '𐬓';
+    pub const LETTER_XVE: char = '𐬓';
     /// \u{10b14}: '𐬔'
-    pub const AVESTAN_LETTER_GE: char = '𐬔';
+    pub const LETTER_GE: char = '𐬔';
     /// \u{10b15}: '𐬕'
-    pub const AVESTAN_LETTER_GGE: char = '𐬕';
+    pub const LETTER_GGE: char = '𐬕';
     /// \u{10b16}: '𐬖'
-    pub const AVESTAN_LETTER_GHE: char = '𐬖';
+    pub const LETTER_GHE: char = '𐬖';
     /// \u{10b17}: '𐬗'
-    pub const AVESTAN_LETTER_CE: char = '𐬗';
+    pub const LETTER_CE: char = '𐬗';
     /// \u{10b18}: '𐬘'
-    pub const AVESTAN_LETTER_JE: char = '𐬘';
+    pub const LETTER_JE: char = '𐬘';
     /// \u{10b19}: '𐬙'
-    pub const AVESTAN_LETTER_TE: char = '𐬙';
+    pub const LETTER_TE: char = '𐬙';
     /// \u{10b1a}: '𐬚'
-    pub const AVESTAN_LETTER_THE: char = '𐬚';
+    pub const LETTER_THE: char = '𐬚';
     /// \u{10b1b}: '𐬛'
-    pub const AVESTAN_LETTER_DE: char = '𐬛';
+    pub const LETTER_DE: char = '𐬛';
     /// \u{10b1c}: '𐬜'
-    pub const AVESTAN_LETTER_DHE: char = '𐬜';
+    pub const LETTER_DHE: char = '𐬜';
     /// \u{10b1d}: '𐬝'
-    pub const AVESTAN_LETTER_TTE: char = '𐬝';
+    pub const LETTER_TTE: char = '𐬝';
     /// \u{10b1e}: '𐬞'
-    pub const AVESTAN_LETTER_PE: char = '𐬞';
+    pub const LETTER_PE: char = '𐬞';
     /// \u{10b1f}: '𐬟'
-    pub const AVESTAN_LETTER_FE: char = '𐬟';
+    pub const LETTER_FE: char = '𐬟';
     /// \u{10b20}: '𐬠'
-    pub const AVESTAN_LETTER_BE: char = '𐬠';
+    pub const LETTER_BE: char = '𐬠';
     /// \u{10b21}: '𐬡'
-    pub const AVESTAN_LETTER_BHE: char = '𐬡';
+    pub const LETTER_BHE: char = '𐬡';
     /// \u{10b22}: '𐬢'
-    pub const AVESTAN_LETTER_NGE: char = '𐬢';
+    pub const LETTER_NGE: char = '𐬢';
     /// \u{10b23}: '𐬣'
-    pub const AVESTAN_LETTER_NGYE: char = '𐬣';
+    pub const LETTER_NGYE: char = '𐬣';
     /// \u{10b24}: '𐬤'
-    pub const AVESTAN_LETTER_NGVE: char = '𐬤';
+    pub const LETTER_NGVE: char = '𐬤';
     /// \u{10b25}: '𐬥'
-    pub const AVESTAN_LETTER_NE: char = '𐬥';
+    pub const LETTER_NE: char = '𐬥';
     /// \u{10b26}: '𐬦'
-    pub const AVESTAN_LETTER_NYE: char = '𐬦';
+    pub const LETTER_NYE: char = '𐬦';
     /// \u{10b27}: '𐬧'
-    pub const AVESTAN_LETTER_NNE: char = '𐬧';
+    pub const LETTER_NNE: char = '𐬧';
     /// \u{10b28}: '𐬨'
-    pub const AVESTAN_LETTER_ME: char = '𐬨';
+    pub const LETTER_ME: char = '𐬨';
     /// \u{10b29}: '𐬩'
-    pub const AVESTAN_LETTER_HME: char = '𐬩';
+    pub const LETTER_HME: char = '𐬩';
     /// \u{10b2a}: '𐬪'
-    pub const AVESTAN_LETTER_YYE: char = '𐬪';
+    pub const LETTER_YYE: char = '𐬪';
     /// \u{10b2b}: '𐬫'
-    pub const AVESTAN_LETTER_YE: char = '𐬫';
+    pub const LETTER_YE: char = '𐬫';
     /// \u{10b2c}: '𐬬'
-    pub const AVESTAN_LETTER_VE: char = '𐬬';
+    pub const LETTER_VE: char = '𐬬';
     /// \u{10b2d}: '𐬭'
-    pub const AVESTAN_LETTER_RE: char = '𐬭';
+    pub const LETTER_RE: char = '𐬭';
     /// \u{10b2e}: '𐬮'
-    pub const AVESTAN_LETTER_LE: char = '𐬮';
+    pub const LETTER_LE: char = '𐬮';
     /// \u{10b2f}: '𐬯'
-    pub const AVESTAN_LETTER_SE: char = '𐬯';
+    pub const LETTER_SE: char = '𐬯';
     /// \u{10b30}: '𐬰'
-    pub const AVESTAN_LETTER_ZE: char = '𐬰';
+    pub const LETTER_ZE: char = '𐬰';
     /// \u{10b31}: '𐬱'
-    pub const AVESTAN_LETTER_SHE: char = '𐬱';
+    pub const LETTER_SHE: char = '𐬱';
     /// \u{10b32}: '𐬲'
-    pub const AVESTAN_LETTER_ZHE: char = '𐬲';
+    pub const LETTER_ZHE: char = '𐬲';
     /// \u{10b33}: '𐬳'
-    pub const AVESTAN_LETTER_SHYE: char = '𐬳';
+    pub const LETTER_SHYE: char = '𐬳';
     /// \u{10b34}: '𐬴'
-    pub const AVESTAN_LETTER_SSHE: char = '𐬴';
+    pub const LETTER_SSHE: char = '𐬴';
     /// \u{10b35}: '𐬵'
-    pub const AVESTAN_LETTER_HE: char = '𐬵';
+    pub const LETTER_HE: char = '𐬵';
     /// \u{10b39}: '𐬹'
-    pub const AVESTAN_ABBREVIATION_MARK: char = '𐬹';
+    pub const ABBREVIATION_MARK: char = '𐬹';
     /// \u{10b3a}: '𐬺'
     pub const TINY_TWO_DOTS_OVER_ONE_DOT_PUNCTUATION: char = '𐬺';
     /// \u{10b3b}: '𐬻'
@@ -136,115 +136,115 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Avestan {
     /// \u{10b00}: '𐬀'
-    AvestanLetterA,
+    LetterA,
     /// \u{10b01}: '𐬁'
-    AvestanLetterAa,
+    LetterAa,
     /// \u{10b02}: '𐬂'
-    AvestanLetterAo,
+    LetterAo,
     /// \u{10b03}: '𐬃'
-    AvestanLetterAao,
+    LetterAao,
     /// \u{10b04}: '𐬄'
-    AvestanLetterAn,
+    LetterAn,
     /// \u{10b05}: '𐬅'
-    AvestanLetterAan,
+    LetterAan,
     /// \u{10b06}: '𐬆'
-    AvestanLetterAe,
+    LetterAe,
     /// \u{10b07}: '𐬇'
-    AvestanLetterAee,
+    LetterAee,
     /// \u{10b08}: '𐬈'
-    AvestanLetterE,
+    LetterE,
     /// \u{10b09}: '𐬉'
-    AvestanLetterEe,
+    LetterEe,
     /// \u{10b0a}: '𐬊'
-    AvestanLetterO,
+    LetterO,
     /// \u{10b0b}: '𐬋'
-    AvestanLetterOo,
+    LetterOo,
     /// \u{10b0c}: '𐬌'
-    AvestanLetterI,
+    LetterI,
     /// \u{10b0d}: '𐬍'
-    AvestanLetterIi,
+    LetterIi,
     /// \u{10b0e}: '𐬎'
-    AvestanLetterU,
+    LetterU,
     /// \u{10b0f}: '𐬏'
-    AvestanLetterUu,
+    LetterUu,
     /// \u{10b10}: '𐬐'
-    AvestanLetterKe,
+    LetterKe,
     /// \u{10b11}: '𐬑'
-    AvestanLetterXe,
+    LetterXe,
     /// \u{10b12}: '𐬒'
-    AvestanLetterXye,
+    LetterXye,
     /// \u{10b13}: '𐬓'
-    AvestanLetterXve,
+    LetterXve,
     /// \u{10b14}: '𐬔'
-    AvestanLetterGe,
+    LetterGe,
     /// \u{10b15}: '𐬕'
-    AvestanLetterGge,
+    LetterGge,
     /// \u{10b16}: '𐬖'
-    AvestanLetterGhe,
+    LetterGhe,
     /// \u{10b17}: '𐬗'
-    AvestanLetterCe,
+    LetterCe,
     /// \u{10b18}: '𐬘'
-    AvestanLetterJe,
+    LetterJe,
     /// \u{10b19}: '𐬙'
-    AvestanLetterTe,
+    LetterTe,
     /// \u{10b1a}: '𐬚'
-    AvestanLetterThe,
+    LetterThe,
     /// \u{10b1b}: '𐬛'
-    AvestanLetterDe,
+    LetterDe,
     /// \u{10b1c}: '𐬜'
-    AvestanLetterDhe,
+    LetterDhe,
     /// \u{10b1d}: '𐬝'
-    AvestanLetterTte,
+    LetterTte,
     /// \u{10b1e}: '𐬞'
-    AvestanLetterPe,
+    LetterPe,
     /// \u{10b1f}: '𐬟'
-    AvestanLetterFe,
+    LetterFe,
     /// \u{10b20}: '𐬠'
-    AvestanLetterBe,
+    LetterBe,
     /// \u{10b21}: '𐬡'
-    AvestanLetterBhe,
+    LetterBhe,
     /// \u{10b22}: '𐬢'
-    AvestanLetterNge,
+    LetterNge,
     /// \u{10b23}: '𐬣'
-    AvestanLetterNgye,
+    LetterNgye,
     /// \u{10b24}: '𐬤'
-    AvestanLetterNgve,
+    LetterNgve,
     /// \u{10b25}: '𐬥'
-    AvestanLetterNe,
+    LetterNe,
     /// \u{10b26}: '𐬦'
-    AvestanLetterNye,
+    LetterNye,
     /// \u{10b27}: '𐬧'
-    AvestanLetterNne,
+    LetterNne,
     /// \u{10b28}: '𐬨'
-    AvestanLetterMe,
+    LetterMe,
     /// \u{10b29}: '𐬩'
-    AvestanLetterHme,
+    LetterHme,
     /// \u{10b2a}: '𐬪'
-    AvestanLetterYye,
+    LetterYye,
     /// \u{10b2b}: '𐬫'
-    AvestanLetterYe,
+    LetterYe,
     /// \u{10b2c}: '𐬬'
-    AvestanLetterVe,
+    LetterVe,
     /// \u{10b2d}: '𐬭'
-    AvestanLetterRe,
+    LetterRe,
     /// \u{10b2e}: '𐬮'
-    AvestanLetterLe,
+    LetterLe,
     /// \u{10b2f}: '𐬯'
-    AvestanLetterSe,
+    LetterSe,
     /// \u{10b30}: '𐬰'
-    AvestanLetterZe,
+    LetterZe,
     /// \u{10b31}: '𐬱'
-    AvestanLetterShe,
+    LetterShe,
     /// \u{10b32}: '𐬲'
-    AvestanLetterZhe,
+    LetterZhe,
     /// \u{10b33}: '𐬳'
-    AvestanLetterShye,
+    LetterShye,
     /// \u{10b34}: '𐬴'
-    AvestanLetterSshe,
+    LetterSshe,
     /// \u{10b35}: '𐬵'
-    AvestanLetterHe,
+    LetterHe,
     /// \u{10b39}: '𐬹'
-    AvestanAbbreviationMark,
+    AbbreviationMark,
     /// \u{10b3a}: '𐬺'
     TinyTwoDotsOverOneDotPunctuation,
     /// \u{10b3b}: '𐬻'
@@ -261,61 +261,61 @@ impl Into<char> for Avestan {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Avestan::AvestanLetterA => AVESTAN_LETTER_A,
-            Avestan::AvestanLetterAa => AVESTAN_LETTER_AA,
-            Avestan::AvestanLetterAo => AVESTAN_LETTER_AO,
-            Avestan::AvestanLetterAao => AVESTAN_LETTER_AAO,
-            Avestan::AvestanLetterAn => AVESTAN_LETTER_AN,
-            Avestan::AvestanLetterAan => AVESTAN_LETTER_AAN,
-            Avestan::AvestanLetterAe => AVESTAN_LETTER_AE,
-            Avestan::AvestanLetterAee => AVESTAN_LETTER_AEE,
-            Avestan::AvestanLetterE => AVESTAN_LETTER_E,
-            Avestan::AvestanLetterEe => AVESTAN_LETTER_EE,
-            Avestan::AvestanLetterO => AVESTAN_LETTER_O,
-            Avestan::AvestanLetterOo => AVESTAN_LETTER_OO,
-            Avestan::AvestanLetterI => AVESTAN_LETTER_I,
-            Avestan::AvestanLetterIi => AVESTAN_LETTER_II,
-            Avestan::AvestanLetterU => AVESTAN_LETTER_U,
-            Avestan::AvestanLetterUu => AVESTAN_LETTER_UU,
-            Avestan::AvestanLetterKe => AVESTAN_LETTER_KE,
-            Avestan::AvestanLetterXe => AVESTAN_LETTER_XE,
-            Avestan::AvestanLetterXye => AVESTAN_LETTER_XYE,
-            Avestan::AvestanLetterXve => AVESTAN_LETTER_XVE,
-            Avestan::AvestanLetterGe => AVESTAN_LETTER_GE,
-            Avestan::AvestanLetterGge => AVESTAN_LETTER_GGE,
-            Avestan::AvestanLetterGhe => AVESTAN_LETTER_GHE,
-            Avestan::AvestanLetterCe => AVESTAN_LETTER_CE,
-            Avestan::AvestanLetterJe => AVESTAN_LETTER_JE,
-            Avestan::AvestanLetterTe => AVESTAN_LETTER_TE,
-            Avestan::AvestanLetterThe => AVESTAN_LETTER_THE,
-            Avestan::AvestanLetterDe => AVESTAN_LETTER_DE,
-            Avestan::AvestanLetterDhe => AVESTAN_LETTER_DHE,
-            Avestan::AvestanLetterTte => AVESTAN_LETTER_TTE,
-            Avestan::AvestanLetterPe => AVESTAN_LETTER_PE,
-            Avestan::AvestanLetterFe => AVESTAN_LETTER_FE,
-            Avestan::AvestanLetterBe => AVESTAN_LETTER_BE,
-            Avestan::AvestanLetterBhe => AVESTAN_LETTER_BHE,
-            Avestan::AvestanLetterNge => AVESTAN_LETTER_NGE,
-            Avestan::AvestanLetterNgye => AVESTAN_LETTER_NGYE,
-            Avestan::AvestanLetterNgve => AVESTAN_LETTER_NGVE,
-            Avestan::AvestanLetterNe => AVESTAN_LETTER_NE,
-            Avestan::AvestanLetterNye => AVESTAN_LETTER_NYE,
-            Avestan::AvestanLetterNne => AVESTAN_LETTER_NNE,
-            Avestan::AvestanLetterMe => AVESTAN_LETTER_ME,
-            Avestan::AvestanLetterHme => AVESTAN_LETTER_HME,
-            Avestan::AvestanLetterYye => AVESTAN_LETTER_YYE,
-            Avestan::AvestanLetterYe => AVESTAN_LETTER_YE,
-            Avestan::AvestanLetterVe => AVESTAN_LETTER_VE,
-            Avestan::AvestanLetterRe => AVESTAN_LETTER_RE,
-            Avestan::AvestanLetterLe => AVESTAN_LETTER_LE,
-            Avestan::AvestanLetterSe => AVESTAN_LETTER_SE,
-            Avestan::AvestanLetterZe => AVESTAN_LETTER_ZE,
-            Avestan::AvestanLetterShe => AVESTAN_LETTER_SHE,
-            Avestan::AvestanLetterZhe => AVESTAN_LETTER_ZHE,
-            Avestan::AvestanLetterShye => AVESTAN_LETTER_SHYE,
-            Avestan::AvestanLetterSshe => AVESTAN_LETTER_SSHE,
-            Avestan::AvestanLetterHe => AVESTAN_LETTER_HE,
-            Avestan::AvestanAbbreviationMark => AVESTAN_ABBREVIATION_MARK,
+            Avestan::LetterA => LETTER_A,
+            Avestan::LetterAa => LETTER_AA,
+            Avestan::LetterAo => LETTER_AO,
+            Avestan::LetterAao => LETTER_AAO,
+            Avestan::LetterAn => LETTER_AN,
+            Avestan::LetterAan => LETTER_AAN,
+            Avestan::LetterAe => LETTER_AE,
+            Avestan::LetterAee => LETTER_AEE,
+            Avestan::LetterE => LETTER_E,
+            Avestan::LetterEe => LETTER_EE,
+            Avestan::LetterO => LETTER_O,
+            Avestan::LetterOo => LETTER_OO,
+            Avestan::LetterI => LETTER_I,
+            Avestan::LetterIi => LETTER_II,
+            Avestan::LetterU => LETTER_U,
+            Avestan::LetterUu => LETTER_UU,
+            Avestan::LetterKe => LETTER_KE,
+            Avestan::LetterXe => LETTER_XE,
+            Avestan::LetterXye => LETTER_XYE,
+            Avestan::LetterXve => LETTER_XVE,
+            Avestan::LetterGe => LETTER_GE,
+            Avestan::LetterGge => LETTER_GGE,
+            Avestan::LetterGhe => LETTER_GHE,
+            Avestan::LetterCe => LETTER_CE,
+            Avestan::LetterJe => LETTER_JE,
+            Avestan::LetterTe => LETTER_TE,
+            Avestan::LetterThe => LETTER_THE,
+            Avestan::LetterDe => LETTER_DE,
+            Avestan::LetterDhe => LETTER_DHE,
+            Avestan::LetterTte => LETTER_TTE,
+            Avestan::LetterPe => LETTER_PE,
+            Avestan::LetterFe => LETTER_FE,
+            Avestan::LetterBe => LETTER_BE,
+            Avestan::LetterBhe => LETTER_BHE,
+            Avestan::LetterNge => LETTER_NGE,
+            Avestan::LetterNgye => LETTER_NGYE,
+            Avestan::LetterNgve => LETTER_NGVE,
+            Avestan::LetterNe => LETTER_NE,
+            Avestan::LetterNye => LETTER_NYE,
+            Avestan::LetterNne => LETTER_NNE,
+            Avestan::LetterMe => LETTER_ME,
+            Avestan::LetterHme => LETTER_HME,
+            Avestan::LetterYye => LETTER_YYE,
+            Avestan::LetterYe => LETTER_YE,
+            Avestan::LetterVe => LETTER_VE,
+            Avestan::LetterRe => LETTER_RE,
+            Avestan::LetterLe => LETTER_LE,
+            Avestan::LetterSe => LETTER_SE,
+            Avestan::LetterZe => LETTER_ZE,
+            Avestan::LetterShe => LETTER_SHE,
+            Avestan::LetterZhe => LETTER_ZHE,
+            Avestan::LetterShye => LETTER_SHYE,
+            Avestan::LetterSshe => LETTER_SSHE,
+            Avestan::LetterHe => LETTER_HE,
+            Avestan::AbbreviationMark => ABBREVIATION_MARK,
             Avestan::TinyTwoDotsOverOneDotPunctuation => TINY_TWO_DOTS_OVER_ONE_DOT_PUNCTUATION,
             Avestan::SmallTwoDotsOverOneDotPunctuation => SMALL_TWO_DOTS_OVER_ONE_DOT_PUNCTUATION,
             Avestan::LargeTwoDotsOverOneDotPunctuation => LARGE_TWO_DOTS_OVER_ONE_DOT_PUNCTUATION,
@@ -330,61 +330,61 @@ impl std::convert::TryFrom<char> for Avestan {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            AVESTAN_LETTER_A => Ok(Avestan::AvestanLetterA),
-            AVESTAN_LETTER_AA => Ok(Avestan::AvestanLetterAa),
-            AVESTAN_LETTER_AO => Ok(Avestan::AvestanLetterAo),
-            AVESTAN_LETTER_AAO => Ok(Avestan::AvestanLetterAao),
-            AVESTAN_LETTER_AN => Ok(Avestan::AvestanLetterAn),
-            AVESTAN_LETTER_AAN => Ok(Avestan::AvestanLetterAan),
-            AVESTAN_LETTER_AE => Ok(Avestan::AvestanLetterAe),
-            AVESTAN_LETTER_AEE => Ok(Avestan::AvestanLetterAee),
-            AVESTAN_LETTER_E => Ok(Avestan::AvestanLetterE),
-            AVESTAN_LETTER_EE => Ok(Avestan::AvestanLetterEe),
-            AVESTAN_LETTER_O => Ok(Avestan::AvestanLetterO),
-            AVESTAN_LETTER_OO => Ok(Avestan::AvestanLetterOo),
-            AVESTAN_LETTER_I => Ok(Avestan::AvestanLetterI),
-            AVESTAN_LETTER_II => Ok(Avestan::AvestanLetterIi),
-            AVESTAN_LETTER_U => Ok(Avestan::AvestanLetterU),
-            AVESTAN_LETTER_UU => Ok(Avestan::AvestanLetterUu),
-            AVESTAN_LETTER_KE => Ok(Avestan::AvestanLetterKe),
-            AVESTAN_LETTER_XE => Ok(Avestan::AvestanLetterXe),
-            AVESTAN_LETTER_XYE => Ok(Avestan::AvestanLetterXye),
-            AVESTAN_LETTER_XVE => Ok(Avestan::AvestanLetterXve),
-            AVESTAN_LETTER_GE => Ok(Avestan::AvestanLetterGe),
-            AVESTAN_LETTER_GGE => Ok(Avestan::AvestanLetterGge),
-            AVESTAN_LETTER_GHE => Ok(Avestan::AvestanLetterGhe),
-            AVESTAN_LETTER_CE => Ok(Avestan::AvestanLetterCe),
-            AVESTAN_LETTER_JE => Ok(Avestan::AvestanLetterJe),
-            AVESTAN_LETTER_TE => Ok(Avestan::AvestanLetterTe),
-            AVESTAN_LETTER_THE => Ok(Avestan::AvestanLetterThe),
-            AVESTAN_LETTER_DE => Ok(Avestan::AvestanLetterDe),
-            AVESTAN_LETTER_DHE => Ok(Avestan::AvestanLetterDhe),
-            AVESTAN_LETTER_TTE => Ok(Avestan::AvestanLetterTte),
-            AVESTAN_LETTER_PE => Ok(Avestan::AvestanLetterPe),
-            AVESTAN_LETTER_FE => Ok(Avestan::AvestanLetterFe),
-            AVESTAN_LETTER_BE => Ok(Avestan::AvestanLetterBe),
-            AVESTAN_LETTER_BHE => Ok(Avestan::AvestanLetterBhe),
-            AVESTAN_LETTER_NGE => Ok(Avestan::AvestanLetterNge),
-            AVESTAN_LETTER_NGYE => Ok(Avestan::AvestanLetterNgye),
-            AVESTAN_LETTER_NGVE => Ok(Avestan::AvestanLetterNgve),
-            AVESTAN_LETTER_NE => Ok(Avestan::AvestanLetterNe),
-            AVESTAN_LETTER_NYE => Ok(Avestan::AvestanLetterNye),
-            AVESTAN_LETTER_NNE => Ok(Avestan::AvestanLetterNne),
-            AVESTAN_LETTER_ME => Ok(Avestan::AvestanLetterMe),
-            AVESTAN_LETTER_HME => Ok(Avestan::AvestanLetterHme),
-            AVESTAN_LETTER_YYE => Ok(Avestan::AvestanLetterYye),
-            AVESTAN_LETTER_YE => Ok(Avestan::AvestanLetterYe),
-            AVESTAN_LETTER_VE => Ok(Avestan::AvestanLetterVe),
-            AVESTAN_LETTER_RE => Ok(Avestan::AvestanLetterRe),
-            AVESTAN_LETTER_LE => Ok(Avestan::AvestanLetterLe),
-            AVESTAN_LETTER_SE => Ok(Avestan::AvestanLetterSe),
-            AVESTAN_LETTER_ZE => Ok(Avestan::AvestanLetterZe),
-            AVESTAN_LETTER_SHE => Ok(Avestan::AvestanLetterShe),
-            AVESTAN_LETTER_ZHE => Ok(Avestan::AvestanLetterZhe),
-            AVESTAN_LETTER_SHYE => Ok(Avestan::AvestanLetterShye),
-            AVESTAN_LETTER_SSHE => Ok(Avestan::AvestanLetterSshe),
-            AVESTAN_LETTER_HE => Ok(Avestan::AvestanLetterHe),
-            AVESTAN_ABBREVIATION_MARK => Ok(Avestan::AvestanAbbreviationMark),
+            LETTER_A => Ok(Avestan::LetterA),
+            LETTER_AA => Ok(Avestan::LetterAa),
+            LETTER_AO => Ok(Avestan::LetterAo),
+            LETTER_AAO => Ok(Avestan::LetterAao),
+            LETTER_AN => Ok(Avestan::LetterAn),
+            LETTER_AAN => Ok(Avestan::LetterAan),
+            LETTER_AE => Ok(Avestan::LetterAe),
+            LETTER_AEE => Ok(Avestan::LetterAee),
+            LETTER_E => Ok(Avestan::LetterE),
+            LETTER_EE => Ok(Avestan::LetterEe),
+            LETTER_O => Ok(Avestan::LetterO),
+            LETTER_OO => Ok(Avestan::LetterOo),
+            LETTER_I => Ok(Avestan::LetterI),
+            LETTER_II => Ok(Avestan::LetterIi),
+            LETTER_U => Ok(Avestan::LetterU),
+            LETTER_UU => Ok(Avestan::LetterUu),
+            LETTER_KE => Ok(Avestan::LetterKe),
+            LETTER_XE => Ok(Avestan::LetterXe),
+            LETTER_XYE => Ok(Avestan::LetterXye),
+            LETTER_XVE => Ok(Avestan::LetterXve),
+            LETTER_GE => Ok(Avestan::LetterGe),
+            LETTER_GGE => Ok(Avestan::LetterGge),
+            LETTER_GHE => Ok(Avestan::LetterGhe),
+            LETTER_CE => Ok(Avestan::LetterCe),
+            LETTER_JE => Ok(Avestan::LetterJe),
+            LETTER_TE => Ok(Avestan::LetterTe),
+            LETTER_THE => Ok(Avestan::LetterThe),
+            LETTER_DE => Ok(Avestan::LetterDe),
+            LETTER_DHE => Ok(Avestan::LetterDhe),
+            LETTER_TTE => Ok(Avestan::LetterTte),
+            LETTER_PE => Ok(Avestan::LetterPe),
+            LETTER_FE => Ok(Avestan::LetterFe),
+            LETTER_BE => Ok(Avestan::LetterBe),
+            LETTER_BHE => Ok(Avestan::LetterBhe),
+            LETTER_NGE => Ok(Avestan::LetterNge),
+            LETTER_NGYE => Ok(Avestan::LetterNgye),
+            LETTER_NGVE => Ok(Avestan::LetterNgve),
+            LETTER_NE => Ok(Avestan::LetterNe),
+            LETTER_NYE => Ok(Avestan::LetterNye),
+            LETTER_NNE => Ok(Avestan::LetterNne),
+            LETTER_ME => Ok(Avestan::LetterMe),
+            LETTER_HME => Ok(Avestan::LetterHme),
+            LETTER_YYE => Ok(Avestan::LetterYye),
+            LETTER_YE => Ok(Avestan::LetterYe),
+            LETTER_VE => Ok(Avestan::LetterVe),
+            LETTER_RE => Ok(Avestan::LetterRe),
+            LETTER_LE => Ok(Avestan::LetterLe),
+            LETTER_SE => Ok(Avestan::LetterSe),
+            LETTER_ZE => Ok(Avestan::LetterZe),
+            LETTER_SHE => Ok(Avestan::LetterShe),
+            LETTER_ZHE => Ok(Avestan::LetterZhe),
+            LETTER_SHYE => Ok(Avestan::LetterShye),
+            LETTER_SSHE => Ok(Avestan::LetterSshe),
+            LETTER_HE => Ok(Avestan::LetterHe),
+            ABBREVIATION_MARK => Ok(Avestan::AbbreviationMark),
             TINY_TWO_DOTS_OVER_ONE_DOT_PUNCTUATION => Ok(Avestan::TinyTwoDotsOverOneDotPunctuation),
             SMALL_TWO_DOTS_OVER_ONE_DOT_PUNCTUATION => Ok(Avestan::SmallTwoDotsOverOneDotPunctuation),
             LARGE_TWO_DOTS_OVER_ONE_DOT_PUNCTUATION => Ok(Avestan::LargeTwoDotsOverOneDotPunctuation),
@@ -428,69 +428,69 @@ impl Iterator for Avestan {
 }
 
 impl Avestan {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Avestan::AvestanLetterA
+        Avestan::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Avestan::AvestanLetterA => "avestan letter a",
-            Avestan::AvestanLetterAa => "avestan letter aa",
-            Avestan::AvestanLetterAo => "avestan letter ao",
-            Avestan::AvestanLetterAao => "avestan letter aao",
-            Avestan::AvestanLetterAn => "avestan letter an",
-            Avestan::AvestanLetterAan => "avestan letter aan",
-            Avestan::AvestanLetterAe => "avestan letter ae",
-            Avestan::AvestanLetterAee => "avestan letter aee",
-            Avestan::AvestanLetterE => "avestan letter e",
-            Avestan::AvestanLetterEe => "avestan letter ee",
-            Avestan::AvestanLetterO => "avestan letter o",
-            Avestan::AvestanLetterOo => "avestan letter oo",
-            Avestan::AvestanLetterI => "avestan letter i",
-            Avestan::AvestanLetterIi => "avestan letter ii",
-            Avestan::AvestanLetterU => "avestan letter u",
-            Avestan::AvestanLetterUu => "avestan letter uu",
-            Avestan::AvestanLetterKe => "avestan letter ke",
-            Avestan::AvestanLetterXe => "avestan letter xe",
-            Avestan::AvestanLetterXye => "avestan letter xye",
-            Avestan::AvestanLetterXve => "avestan letter xve",
-            Avestan::AvestanLetterGe => "avestan letter ge",
-            Avestan::AvestanLetterGge => "avestan letter gge",
-            Avestan::AvestanLetterGhe => "avestan letter ghe",
-            Avestan::AvestanLetterCe => "avestan letter ce",
-            Avestan::AvestanLetterJe => "avestan letter je",
-            Avestan::AvestanLetterTe => "avestan letter te",
-            Avestan::AvestanLetterThe => "avestan letter the",
-            Avestan::AvestanLetterDe => "avestan letter de",
-            Avestan::AvestanLetterDhe => "avestan letter dhe",
-            Avestan::AvestanLetterTte => "avestan letter tte",
-            Avestan::AvestanLetterPe => "avestan letter pe",
-            Avestan::AvestanLetterFe => "avestan letter fe",
-            Avestan::AvestanLetterBe => "avestan letter be",
-            Avestan::AvestanLetterBhe => "avestan letter bhe",
-            Avestan::AvestanLetterNge => "avestan letter nge",
-            Avestan::AvestanLetterNgye => "avestan letter ngye",
-            Avestan::AvestanLetterNgve => "avestan letter ngve",
-            Avestan::AvestanLetterNe => "avestan letter ne",
-            Avestan::AvestanLetterNye => "avestan letter nye",
-            Avestan::AvestanLetterNne => "avestan letter nne",
-            Avestan::AvestanLetterMe => "avestan letter me",
-            Avestan::AvestanLetterHme => "avestan letter hme",
-            Avestan::AvestanLetterYye => "avestan letter yye",
-            Avestan::AvestanLetterYe => "avestan letter ye",
-            Avestan::AvestanLetterVe => "avestan letter ve",
-            Avestan::AvestanLetterRe => "avestan letter re",
-            Avestan::AvestanLetterLe => "avestan letter le",
-            Avestan::AvestanLetterSe => "avestan letter se",
-            Avestan::AvestanLetterZe => "avestan letter ze",
-            Avestan::AvestanLetterShe => "avestan letter she",
-            Avestan::AvestanLetterZhe => "avestan letter zhe",
-            Avestan::AvestanLetterShye => "avestan letter shye",
-            Avestan::AvestanLetterSshe => "avestan letter sshe",
-            Avestan::AvestanLetterHe => "avestan letter he",
-            Avestan::AvestanAbbreviationMark => "avestan abbreviation mark",
+            Avestan::LetterA => "avestan letter a",
+            Avestan::LetterAa => "avestan letter aa",
+            Avestan::LetterAo => "avestan letter ao",
+            Avestan::LetterAao => "avestan letter aao",
+            Avestan::LetterAn => "avestan letter an",
+            Avestan::LetterAan => "avestan letter aan",
+            Avestan::LetterAe => "avestan letter ae",
+            Avestan::LetterAee => "avestan letter aee",
+            Avestan::LetterE => "avestan letter e",
+            Avestan::LetterEe => "avestan letter ee",
+            Avestan::LetterO => "avestan letter o",
+            Avestan::LetterOo => "avestan letter oo",
+            Avestan::LetterI => "avestan letter i",
+            Avestan::LetterIi => "avestan letter ii",
+            Avestan::LetterU => "avestan letter u",
+            Avestan::LetterUu => "avestan letter uu",
+            Avestan::LetterKe => "avestan letter ke",
+            Avestan::LetterXe => "avestan letter xe",
+            Avestan::LetterXye => "avestan letter xye",
+            Avestan::LetterXve => "avestan letter xve",
+            Avestan::LetterGe => "avestan letter ge",
+            Avestan::LetterGge => "avestan letter gge",
+            Avestan::LetterGhe => "avestan letter ghe",
+            Avestan::LetterCe => "avestan letter ce",
+            Avestan::LetterJe => "avestan letter je",
+            Avestan::LetterTe => "avestan letter te",
+            Avestan::LetterThe => "avestan letter the",
+            Avestan::LetterDe => "avestan letter de",
+            Avestan::LetterDhe => "avestan letter dhe",
+            Avestan::LetterTte => "avestan letter tte",
+            Avestan::LetterPe => "avestan letter pe",
+            Avestan::LetterFe => "avestan letter fe",
+            Avestan::LetterBe => "avestan letter be",
+            Avestan::LetterBhe => "avestan letter bhe",
+            Avestan::LetterNge => "avestan letter nge",
+            Avestan::LetterNgye => "avestan letter ngye",
+            Avestan::LetterNgve => "avestan letter ngve",
+            Avestan::LetterNe => "avestan letter ne",
+            Avestan::LetterNye => "avestan letter nye",
+            Avestan::LetterNne => "avestan letter nne",
+            Avestan::LetterMe => "avestan letter me",
+            Avestan::LetterHme => "avestan letter hme",
+            Avestan::LetterYye => "avestan letter yye",
+            Avestan::LetterYe => "avestan letter ye",
+            Avestan::LetterVe => "avestan letter ve",
+            Avestan::LetterRe => "avestan letter re",
+            Avestan::LetterLe => "avestan letter le",
+            Avestan::LetterSe => "avestan letter se",
+            Avestan::LetterZe => "avestan letter ze",
+            Avestan::LetterShe => "avestan letter she",
+            Avestan::LetterZhe => "avestan letter zhe",
+            Avestan::LetterShye => "avestan letter shye",
+            Avestan::LetterSshe => "avestan letter sshe",
+            Avestan::LetterHe => "avestan letter he",
+            Avestan::AbbreviationMark => "avestan abbreviation mark",
             Avestan::TinyTwoDotsOverOneDotPunctuation => "tiny two dots over one dot punctuation",
             Avestan::SmallTwoDotsOverOneDotPunctuation => "small two dots over one dot punctuation",
             Avestan::LargeTwoDotsOverOneDotPunctuation => "large two dots over one dot punctuation",

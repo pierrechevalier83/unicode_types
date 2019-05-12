@@ -2952,7 +2952,7 @@ impl Iterator for CJKCompatibilityIdeographs {
 }
 
 impl CJKCompatibilityIdeographs {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         CJKCompatibilityIdeographs::CjkCompatibilityIdeographDashF900
     }

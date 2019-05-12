@@ -4,45 +4,45 @@
 /// ᜑ ᜒ ᜓ ᜔
 pub mod constants {
     /// \u{1700}: 'ᜀ'
-    pub const TAGALOG_LETTER_A: char = 'ᜀ';
+    pub const LETTER_A: char = 'ᜀ';
     /// \u{1701}: 'ᜁ'
-    pub const TAGALOG_LETTER_I: char = 'ᜁ';
+    pub const LETTER_I: char = 'ᜁ';
     /// \u{1702}: 'ᜂ'
-    pub const TAGALOG_LETTER_U: char = 'ᜂ';
+    pub const LETTER_U: char = 'ᜂ';
     /// \u{1703}: 'ᜃ'
-    pub const TAGALOG_LETTER_KA: char = 'ᜃ';
+    pub const LETTER_KA: char = 'ᜃ';
     /// \u{1704}: 'ᜄ'
-    pub const TAGALOG_LETTER_GA: char = 'ᜄ';
+    pub const LETTER_GA: char = 'ᜄ';
     /// \u{1705}: 'ᜅ'
-    pub const TAGALOG_LETTER_NGA: char = 'ᜅ';
+    pub const LETTER_NGA: char = 'ᜅ';
     /// \u{1706}: 'ᜆ'
-    pub const TAGALOG_LETTER_TA: char = 'ᜆ';
+    pub const LETTER_TA: char = 'ᜆ';
     /// \u{1707}: 'ᜇ'
-    pub const TAGALOG_LETTER_DA: char = 'ᜇ';
+    pub const LETTER_DA: char = 'ᜇ';
     /// \u{1708}: 'ᜈ'
-    pub const TAGALOG_LETTER_NA: char = 'ᜈ';
+    pub const LETTER_NA: char = 'ᜈ';
     /// \u{1709}: 'ᜉ'
-    pub const TAGALOG_LETTER_PA: char = 'ᜉ';
+    pub const LETTER_PA: char = 'ᜉ';
     /// \u{170a}: 'ᜊ'
-    pub const TAGALOG_LETTER_BA: char = 'ᜊ';
+    pub const LETTER_BA: char = 'ᜊ';
     /// \u{170b}: 'ᜋ'
-    pub const TAGALOG_LETTER_MA: char = 'ᜋ';
+    pub const LETTER_MA: char = 'ᜋ';
     /// \u{170c}: 'ᜌ'
-    pub const TAGALOG_LETTER_YA: char = 'ᜌ';
+    pub const LETTER_YA: char = 'ᜌ';
     /// \u{170e}: 'ᜎ'
-    pub const TAGALOG_LETTER_LA: char = 'ᜎ';
+    pub const LETTER_LA: char = 'ᜎ';
     /// \u{170f}: 'ᜏ'
-    pub const TAGALOG_LETTER_WA: char = 'ᜏ';
+    pub const LETTER_WA: char = 'ᜏ';
     /// \u{1710}: 'ᜐ'
-    pub const TAGALOG_LETTER_SA: char = 'ᜐ';
+    pub const LETTER_SA: char = 'ᜐ';
     /// \u{1711}: 'ᜑ'
-    pub const TAGALOG_LETTER_HA: char = 'ᜑ';
+    pub const LETTER_HA: char = 'ᜑ';
     /// \u{1712}: 'ᜒ'
-    pub const TAGALOG_VOWEL_SIGN_I: char = 'ᜒ';
+    pub const VOWEL_SIGN_I: char = 'ᜒ';
     /// \u{1713}: 'ᜓ'
-    pub const TAGALOG_VOWEL_SIGN_U: char = 'ᜓ';
+    pub const VOWEL_SIGN_U: char = 'ᜓ';
     /// \u{1714}: '᜔'
-    pub const TAGALOG_SIGN_VIRAMA: char = '᜔';
+    pub const SIGN_VIRAMA: char = '᜔';
 }
 
 /// \u{1700} → \u{171f}\
@@ -52,71 +52,71 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Tagalog {
     /// \u{1700}: 'ᜀ'
-    TagalogLetterA,
+    LetterA,
     /// \u{1701}: 'ᜁ'
-    TagalogLetterI,
+    LetterI,
     /// \u{1702}: 'ᜂ'
-    TagalogLetterU,
+    LetterU,
     /// \u{1703}: 'ᜃ'
-    TagalogLetterKa,
+    LetterKa,
     /// \u{1704}: 'ᜄ'
-    TagalogLetterGa,
+    LetterGa,
     /// \u{1705}: 'ᜅ'
-    TagalogLetterNga,
+    LetterNga,
     /// \u{1706}: 'ᜆ'
-    TagalogLetterTa,
+    LetterTa,
     /// \u{1707}: 'ᜇ'
-    TagalogLetterDa,
+    LetterDa,
     /// \u{1708}: 'ᜈ'
-    TagalogLetterNa,
+    LetterNa,
     /// \u{1709}: 'ᜉ'
-    TagalogLetterPa,
+    LetterPa,
     /// \u{170a}: 'ᜊ'
-    TagalogLetterBa,
+    LetterBa,
     /// \u{170b}: 'ᜋ'
-    TagalogLetterMa,
+    LetterMa,
     /// \u{170c}: 'ᜌ'
-    TagalogLetterYa,
+    LetterYa,
     /// \u{170e}: 'ᜎ'
-    TagalogLetterLa,
+    LetterLa,
     /// \u{170f}: 'ᜏ'
-    TagalogLetterWa,
+    LetterWa,
     /// \u{1710}: 'ᜐ'
-    TagalogLetterSa,
+    LetterSa,
     /// \u{1711}: 'ᜑ'
-    TagalogLetterHa,
+    LetterHa,
     /// \u{1712}: 'ᜒ'
-    TagalogVowelSignI,
+    VowelSignI,
     /// \u{1713}: 'ᜓ'
-    TagalogVowelSignU,
+    VowelSignU,
     /// \u{1714}: '᜔'
-    TagalogSignVirama,
+    SignVirama,
 }
 
 impl Into<char> for Tagalog {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Tagalog::TagalogLetterA => TAGALOG_LETTER_A,
-            Tagalog::TagalogLetterI => TAGALOG_LETTER_I,
-            Tagalog::TagalogLetterU => TAGALOG_LETTER_U,
-            Tagalog::TagalogLetterKa => TAGALOG_LETTER_KA,
-            Tagalog::TagalogLetterGa => TAGALOG_LETTER_GA,
-            Tagalog::TagalogLetterNga => TAGALOG_LETTER_NGA,
-            Tagalog::TagalogLetterTa => TAGALOG_LETTER_TA,
-            Tagalog::TagalogLetterDa => TAGALOG_LETTER_DA,
-            Tagalog::TagalogLetterNa => TAGALOG_LETTER_NA,
-            Tagalog::TagalogLetterPa => TAGALOG_LETTER_PA,
-            Tagalog::TagalogLetterBa => TAGALOG_LETTER_BA,
-            Tagalog::TagalogLetterMa => TAGALOG_LETTER_MA,
-            Tagalog::TagalogLetterYa => TAGALOG_LETTER_YA,
-            Tagalog::TagalogLetterLa => TAGALOG_LETTER_LA,
-            Tagalog::TagalogLetterWa => TAGALOG_LETTER_WA,
-            Tagalog::TagalogLetterSa => TAGALOG_LETTER_SA,
-            Tagalog::TagalogLetterHa => TAGALOG_LETTER_HA,
-            Tagalog::TagalogVowelSignI => TAGALOG_VOWEL_SIGN_I,
-            Tagalog::TagalogVowelSignU => TAGALOG_VOWEL_SIGN_U,
-            Tagalog::TagalogSignVirama => TAGALOG_SIGN_VIRAMA,
+            Tagalog::LetterA => LETTER_A,
+            Tagalog::LetterI => LETTER_I,
+            Tagalog::LetterU => LETTER_U,
+            Tagalog::LetterKa => LETTER_KA,
+            Tagalog::LetterGa => LETTER_GA,
+            Tagalog::LetterNga => LETTER_NGA,
+            Tagalog::LetterTa => LETTER_TA,
+            Tagalog::LetterDa => LETTER_DA,
+            Tagalog::LetterNa => LETTER_NA,
+            Tagalog::LetterPa => LETTER_PA,
+            Tagalog::LetterBa => LETTER_BA,
+            Tagalog::LetterMa => LETTER_MA,
+            Tagalog::LetterYa => LETTER_YA,
+            Tagalog::LetterLa => LETTER_LA,
+            Tagalog::LetterWa => LETTER_WA,
+            Tagalog::LetterSa => LETTER_SA,
+            Tagalog::LetterHa => LETTER_HA,
+            Tagalog::VowelSignI => VOWEL_SIGN_I,
+            Tagalog::VowelSignU => VOWEL_SIGN_U,
+            Tagalog::SignVirama => SIGN_VIRAMA,
         }
     }
 }
@@ -126,26 +126,26 @@ impl std::convert::TryFrom<char> for Tagalog {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            TAGALOG_LETTER_A => Ok(Tagalog::TagalogLetterA),
-            TAGALOG_LETTER_I => Ok(Tagalog::TagalogLetterI),
-            TAGALOG_LETTER_U => Ok(Tagalog::TagalogLetterU),
-            TAGALOG_LETTER_KA => Ok(Tagalog::TagalogLetterKa),
-            TAGALOG_LETTER_GA => Ok(Tagalog::TagalogLetterGa),
-            TAGALOG_LETTER_NGA => Ok(Tagalog::TagalogLetterNga),
-            TAGALOG_LETTER_TA => Ok(Tagalog::TagalogLetterTa),
-            TAGALOG_LETTER_DA => Ok(Tagalog::TagalogLetterDa),
-            TAGALOG_LETTER_NA => Ok(Tagalog::TagalogLetterNa),
-            TAGALOG_LETTER_PA => Ok(Tagalog::TagalogLetterPa),
-            TAGALOG_LETTER_BA => Ok(Tagalog::TagalogLetterBa),
-            TAGALOG_LETTER_MA => Ok(Tagalog::TagalogLetterMa),
-            TAGALOG_LETTER_YA => Ok(Tagalog::TagalogLetterYa),
-            TAGALOG_LETTER_LA => Ok(Tagalog::TagalogLetterLa),
-            TAGALOG_LETTER_WA => Ok(Tagalog::TagalogLetterWa),
-            TAGALOG_LETTER_SA => Ok(Tagalog::TagalogLetterSa),
-            TAGALOG_LETTER_HA => Ok(Tagalog::TagalogLetterHa),
-            TAGALOG_VOWEL_SIGN_I => Ok(Tagalog::TagalogVowelSignI),
-            TAGALOG_VOWEL_SIGN_U => Ok(Tagalog::TagalogVowelSignU),
-            TAGALOG_SIGN_VIRAMA => Ok(Tagalog::TagalogSignVirama),
+            LETTER_A => Ok(Tagalog::LetterA),
+            LETTER_I => Ok(Tagalog::LetterI),
+            LETTER_U => Ok(Tagalog::LetterU),
+            LETTER_KA => Ok(Tagalog::LetterKa),
+            LETTER_GA => Ok(Tagalog::LetterGa),
+            LETTER_NGA => Ok(Tagalog::LetterNga),
+            LETTER_TA => Ok(Tagalog::LetterTa),
+            LETTER_DA => Ok(Tagalog::LetterDa),
+            LETTER_NA => Ok(Tagalog::LetterNa),
+            LETTER_PA => Ok(Tagalog::LetterPa),
+            LETTER_BA => Ok(Tagalog::LetterBa),
+            LETTER_MA => Ok(Tagalog::LetterMa),
+            LETTER_YA => Ok(Tagalog::LetterYa),
+            LETTER_LA => Ok(Tagalog::LetterLa),
+            LETTER_WA => Ok(Tagalog::LetterWa),
+            LETTER_SA => Ok(Tagalog::LetterSa),
+            LETTER_HA => Ok(Tagalog::LetterHa),
+            VOWEL_SIGN_I => Ok(Tagalog::VowelSignI),
+            VOWEL_SIGN_U => Ok(Tagalog::VowelSignU),
+            SIGN_VIRAMA => Ok(Tagalog::SignVirama),
             _ => Err(()),
         }
     }
@@ -184,34 +184,34 @@ impl Iterator for Tagalog {
 }
 
 impl Tagalog {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Tagalog::TagalogLetterA
+        Tagalog::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Tagalog::TagalogLetterA => "tagalog letter a",
-            Tagalog::TagalogLetterI => "tagalog letter i",
-            Tagalog::TagalogLetterU => "tagalog letter u",
-            Tagalog::TagalogLetterKa => "tagalog letter ka",
-            Tagalog::TagalogLetterGa => "tagalog letter ga",
-            Tagalog::TagalogLetterNga => "tagalog letter nga",
-            Tagalog::TagalogLetterTa => "tagalog letter ta",
-            Tagalog::TagalogLetterDa => "tagalog letter da",
-            Tagalog::TagalogLetterNa => "tagalog letter na",
-            Tagalog::TagalogLetterPa => "tagalog letter pa",
-            Tagalog::TagalogLetterBa => "tagalog letter ba",
-            Tagalog::TagalogLetterMa => "tagalog letter ma",
-            Tagalog::TagalogLetterYa => "tagalog letter ya",
-            Tagalog::TagalogLetterLa => "tagalog letter la",
-            Tagalog::TagalogLetterWa => "tagalog letter wa",
-            Tagalog::TagalogLetterSa => "tagalog letter sa",
-            Tagalog::TagalogLetterHa => "tagalog letter ha",
-            Tagalog::TagalogVowelSignI => "tagalog vowel sign i",
-            Tagalog::TagalogVowelSignU => "tagalog vowel sign u",
-            Tagalog::TagalogSignVirama => "tagalog sign virama",
+            Tagalog::LetterA => "tagalog letter a",
+            Tagalog::LetterI => "tagalog letter i",
+            Tagalog::LetterU => "tagalog letter u",
+            Tagalog::LetterKa => "tagalog letter ka",
+            Tagalog::LetterGa => "tagalog letter ga",
+            Tagalog::LetterNga => "tagalog letter nga",
+            Tagalog::LetterTa => "tagalog letter ta",
+            Tagalog::LetterDa => "tagalog letter da",
+            Tagalog::LetterNa => "tagalog letter na",
+            Tagalog::LetterPa => "tagalog letter pa",
+            Tagalog::LetterBa => "tagalog letter ba",
+            Tagalog::LetterMa => "tagalog letter ma",
+            Tagalog::LetterYa => "tagalog letter ya",
+            Tagalog::LetterLa => "tagalog letter la",
+            Tagalog::LetterWa => "tagalog letter wa",
+            Tagalog::LetterSa => "tagalog letter sa",
+            Tagalog::LetterHa => "tagalog letter ha",
+            Tagalog::VowelSignI => "tagalog vowel sign i",
+            Tagalog::VowelSignU => "tagalog vowel sign u",
+            Tagalog::SignVirama => "tagalog sign virama",
         }
     }
 }

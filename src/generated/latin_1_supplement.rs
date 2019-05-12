@@ -838,7 +838,7 @@ impl Iterator for Latin1Supplement {
 }
 
 impl Latin1Supplement {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         Latin1Supplement::Control0080
     }

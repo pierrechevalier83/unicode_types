@@ -4,67 +4,67 @@
 /// 𐡰 𐡱 𐡲 𐡳 𐡴 𐡵 𐡶 𐡷 𐡸 𐡹 𐡺 𐡻 𐡼 𐡽 𐡾
 pub mod constants {
     /// \u{10860}: '𐡠'
-    pub const PALMYRENE_LETTER_ALEPH: char = '𐡠';
+    pub const LETTER_ALEPH: char = '𐡠';
     /// \u{10861}: '𐡡'
-    pub const PALMYRENE_LETTER_BETH: char = '𐡡';
+    pub const LETTER_BETH: char = '𐡡';
     /// \u{10862}: '𐡢'
-    pub const PALMYRENE_LETTER_GIMEL: char = '𐡢';
+    pub const LETTER_GIMEL: char = '𐡢';
     /// \u{10863}: '𐡣'
-    pub const PALMYRENE_LETTER_DALETH: char = '𐡣';
+    pub const LETTER_DALETH: char = '𐡣';
     /// \u{10864}: '𐡤'
-    pub const PALMYRENE_LETTER_HE: char = '𐡤';
+    pub const LETTER_HE: char = '𐡤';
     /// \u{10865}: '𐡥'
-    pub const PALMYRENE_LETTER_WAW: char = '𐡥';
+    pub const LETTER_WAW: char = '𐡥';
     /// \u{10866}: '𐡦'
-    pub const PALMYRENE_LETTER_ZAYIN: char = '𐡦';
+    pub const LETTER_ZAYIN: char = '𐡦';
     /// \u{10867}: '𐡧'
-    pub const PALMYRENE_LETTER_HETH: char = '𐡧';
+    pub const LETTER_HETH: char = '𐡧';
     /// \u{10868}: '𐡨'
-    pub const PALMYRENE_LETTER_TETH: char = '𐡨';
+    pub const LETTER_TETH: char = '𐡨';
     /// \u{10869}: '𐡩'
-    pub const PALMYRENE_LETTER_YODH: char = '𐡩';
+    pub const LETTER_YODH: char = '𐡩';
     /// \u{1086a}: '𐡪'
-    pub const PALMYRENE_LETTER_KAPH: char = '𐡪';
+    pub const LETTER_KAPH: char = '𐡪';
     /// \u{1086b}: '𐡫'
-    pub const PALMYRENE_LETTER_LAMEDH: char = '𐡫';
+    pub const LETTER_LAMEDH: char = '𐡫';
     /// \u{1086c}: '𐡬'
-    pub const PALMYRENE_LETTER_MEM: char = '𐡬';
+    pub const LETTER_MEM: char = '𐡬';
     /// \u{1086d}: '𐡭'
-    pub const PALMYRENE_LETTER_FINAL_NUN: char = '𐡭';
+    pub const LETTER_FINAL_NUN: char = '𐡭';
     /// \u{1086e}: '𐡮'
-    pub const PALMYRENE_LETTER_NUN: char = '𐡮';
+    pub const LETTER_NUN: char = '𐡮';
     /// \u{1086f}: '𐡯'
-    pub const PALMYRENE_LETTER_SAMEKH: char = '𐡯';
+    pub const LETTER_SAMEKH: char = '𐡯';
     /// \u{10870}: '𐡰'
-    pub const PALMYRENE_LETTER_AYIN: char = '𐡰';
+    pub const LETTER_AYIN: char = '𐡰';
     /// \u{10871}: '𐡱'
-    pub const PALMYRENE_LETTER_PE: char = '𐡱';
+    pub const LETTER_PE: char = '𐡱';
     /// \u{10872}: '𐡲'
-    pub const PALMYRENE_LETTER_SADHE: char = '𐡲';
+    pub const LETTER_SADHE: char = '𐡲';
     /// \u{10873}: '𐡳'
-    pub const PALMYRENE_LETTER_QOPH: char = '𐡳';
+    pub const LETTER_QOPH: char = '𐡳';
     /// \u{10874}: '𐡴'
-    pub const PALMYRENE_LETTER_RESH: char = '𐡴';
+    pub const LETTER_RESH: char = '𐡴';
     /// \u{10875}: '𐡵'
-    pub const PALMYRENE_LETTER_SHIN: char = '𐡵';
+    pub const LETTER_SHIN: char = '𐡵';
     /// \u{10876}: '𐡶'
-    pub const PALMYRENE_LETTER_TAW: char = '𐡶';
+    pub const LETTER_TAW: char = '𐡶';
     /// \u{10877}: '𐡷'
-    pub const PALMYRENE_LEFT_DASH_POINTING_FLEURON: char = '𐡷';
+    pub const LEFT_DASH_POINTING_FLEURON: char = '𐡷';
     /// \u{10878}: '𐡸'
-    pub const PALMYRENE_RIGHT_DASH_POINTING_FLEURON: char = '𐡸';
+    pub const RIGHT_DASH_POINTING_FLEURON: char = '𐡸';
     /// \u{10879}: '𐡹'
-    pub const PALMYRENE_NUMBER_ONE: char = '𐡹';
+    pub const NUMBER_ONE: char = '𐡹';
     /// \u{1087a}: '𐡺'
-    pub const PALMYRENE_NUMBER_TWO: char = '𐡺';
+    pub const NUMBER_TWO: char = '𐡺';
     /// \u{1087b}: '𐡻'
-    pub const PALMYRENE_NUMBER_THREE: char = '𐡻';
+    pub const NUMBER_THREE: char = '𐡻';
     /// \u{1087c}: '𐡼'
-    pub const PALMYRENE_NUMBER_FOUR: char = '𐡼';
+    pub const NUMBER_FOUR: char = '𐡼';
     /// \u{1087d}: '𐡽'
-    pub const PALMYRENE_NUMBER_FIVE: char = '𐡽';
+    pub const NUMBER_FIVE: char = '𐡽';
     /// \u{1087e}: '𐡾'
-    pub const PALMYRENE_NUMBER_TEN: char = '𐡾';
+    pub const NUMBER_TEN: char = '𐡾';
 }
 
 /// \u{10860} → \u{1087f}\
@@ -74,104 +74,104 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Palmyrene {
     /// \u{10860}: '𐡠'
-    PalmyreneLetterAleph,
+    LetterAleph,
     /// \u{10861}: '𐡡'
-    PalmyreneLetterBeth,
+    LetterBeth,
     /// \u{10862}: '𐡢'
-    PalmyreneLetterGimel,
+    LetterGimel,
     /// \u{10863}: '𐡣'
-    PalmyreneLetterDaleth,
+    LetterDaleth,
     /// \u{10864}: '𐡤'
-    PalmyreneLetterHe,
+    LetterHe,
     /// \u{10865}: '𐡥'
-    PalmyreneLetterWaw,
+    LetterWaw,
     /// \u{10866}: '𐡦'
-    PalmyreneLetterZayin,
+    LetterZayin,
     /// \u{10867}: '𐡧'
-    PalmyreneLetterHeth,
+    LetterHeth,
     /// \u{10868}: '𐡨'
-    PalmyreneLetterTeth,
+    LetterTeth,
     /// \u{10869}: '𐡩'
-    PalmyreneLetterYodh,
+    LetterYodh,
     /// \u{1086a}: '𐡪'
-    PalmyreneLetterKaph,
+    LetterKaph,
     /// \u{1086b}: '𐡫'
-    PalmyreneLetterLamedh,
+    LetterLamedh,
     /// \u{1086c}: '𐡬'
-    PalmyreneLetterMem,
+    LetterMem,
     /// \u{1086d}: '𐡭'
-    PalmyreneLetterFinalNun,
+    LetterFinalNun,
     /// \u{1086e}: '𐡮'
-    PalmyreneLetterNun,
+    LetterNun,
     /// \u{1086f}: '𐡯'
-    PalmyreneLetterSamekh,
+    LetterSamekh,
     /// \u{10870}: '𐡰'
-    PalmyreneLetterAyin,
+    LetterAyin,
     /// \u{10871}: '𐡱'
-    PalmyreneLetterPe,
+    LetterPe,
     /// \u{10872}: '𐡲'
-    PalmyreneLetterSadhe,
+    LetterSadhe,
     /// \u{10873}: '𐡳'
-    PalmyreneLetterQoph,
+    LetterQoph,
     /// \u{10874}: '𐡴'
-    PalmyreneLetterResh,
+    LetterResh,
     /// \u{10875}: '𐡵'
-    PalmyreneLetterShin,
+    LetterShin,
     /// \u{10876}: '𐡶'
-    PalmyreneLetterTaw,
+    LetterTaw,
     /// \u{10877}: '𐡷'
-    PalmyreneLeftDashPointingFleuron,
+    LeftDashPointingFleuron,
     /// \u{10878}: '𐡸'
-    PalmyreneRightDashPointingFleuron,
+    RightDashPointingFleuron,
     /// \u{10879}: '𐡹'
-    PalmyreneNumberOne,
+    NumberOne,
     /// \u{1087a}: '𐡺'
-    PalmyreneNumberTwo,
+    NumberTwo,
     /// \u{1087b}: '𐡻'
-    PalmyreneNumberThree,
+    NumberThree,
     /// \u{1087c}: '𐡼'
-    PalmyreneNumberFour,
+    NumberFour,
     /// \u{1087d}: '𐡽'
-    PalmyreneNumberFive,
+    NumberFive,
     /// \u{1087e}: '𐡾'
-    PalmyreneNumberTen,
+    NumberTen,
 }
 
 impl Into<char> for Palmyrene {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Palmyrene::PalmyreneLetterAleph => PALMYRENE_LETTER_ALEPH,
-            Palmyrene::PalmyreneLetterBeth => PALMYRENE_LETTER_BETH,
-            Palmyrene::PalmyreneLetterGimel => PALMYRENE_LETTER_GIMEL,
-            Palmyrene::PalmyreneLetterDaleth => PALMYRENE_LETTER_DALETH,
-            Palmyrene::PalmyreneLetterHe => PALMYRENE_LETTER_HE,
-            Palmyrene::PalmyreneLetterWaw => PALMYRENE_LETTER_WAW,
-            Palmyrene::PalmyreneLetterZayin => PALMYRENE_LETTER_ZAYIN,
-            Palmyrene::PalmyreneLetterHeth => PALMYRENE_LETTER_HETH,
-            Palmyrene::PalmyreneLetterTeth => PALMYRENE_LETTER_TETH,
-            Palmyrene::PalmyreneLetterYodh => PALMYRENE_LETTER_YODH,
-            Palmyrene::PalmyreneLetterKaph => PALMYRENE_LETTER_KAPH,
-            Palmyrene::PalmyreneLetterLamedh => PALMYRENE_LETTER_LAMEDH,
-            Palmyrene::PalmyreneLetterMem => PALMYRENE_LETTER_MEM,
-            Palmyrene::PalmyreneLetterFinalNun => PALMYRENE_LETTER_FINAL_NUN,
-            Palmyrene::PalmyreneLetterNun => PALMYRENE_LETTER_NUN,
-            Palmyrene::PalmyreneLetterSamekh => PALMYRENE_LETTER_SAMEKH,
-            Palmyrene::PalmyreneLetterAyin => PALMYRENE_LETTER_AYIN,
-            Palmyrene::PalmyreneLetterPe => PALMYRENE_LETTER_PE,
-            Palmyrene::PalmyreneLetterSadhe => PALMYRENE_LETTER_SADHE,
-            Palmyrene::PalmyreneLetterQoph => PALMYRENE_LETTER_QOPH,
-            Palmyrene::PalmyreneLetterResh => PALMYRENE_LETTER_RESH,
-            Palmyrene::PalmyreneLetterShin => PALMYRENE_LETTER_SHIN,
-            Palmyrene::PalmyreneLetterTaw => PALMYRENE_LETTER_TAW,
-            Palmyrene::PalmyreneLeftDashPointingFleuron => PALMYRENE_LEFT_DASH_POINTING_FLEURON,
-            Palmyrene::PalmyreneRightDashPointingFleuron => PALMYRENE_RIGHT_DASH_POINTING_FLEURON,
-            Palmyrene::PalmyreneNumberOne => PALMYRENE_NUMBER_ONE,
-            Palmyrene::PalmyreneNumberTwo => PALMYRENE_NUMBER_TWO,
-            Palmyrene::PalmyreneNumberThree => PALMYRENE_NUMBER_THREE,
-            Palmyrene::PalmyreneNumberFour => PALMYRENE_NUMBER_FOUR,
-            Palmyrene::PalmyreneNumberFive => PALMYRENE_NUMBER_FIVE,
-            Palmyrene::PalmyreneNumberTen => PALMYRENE_NUMBER_TEN,
+            Palmyrene::LetterAleph => LETTER_ALEPH,
+            Palmyrene::LetterBeth => LETTER_BETH,
+            Palmyrene::LetterGimel => LETTER_GIMEL,
+            Palmyrene::LetterDaleth => LETTER_DALETH,
+            Palmyrene::LetterHe => LETTER_HE,
+            Palmyrene::LetterWaw => LETTER_WAW,
+            Palmyrene::LetterZayin => LETTER_ZAYIN,
+            Palmyrene::LetterHeth => LETTER_HETH,
+            Palmyrene::LetterTeth => LETTER_TETH,
+            Palmyrene::LetterYodh => LETTER_YODH,
+            Palmyrene::LetterKaph => LETTER_KAPH,
+            Palmyrene::LetterLamedh => LETTER_LAMEDH,
+            Palmyrene::LetterMem => LETTER_MEM,
+            Palmyrene::LetterFinalNun => LETTER_FINAL_NUN,
+            Palmyrene::LetterNun => LETTER_NUN,
+            Palmyrene::LetterSamekh => LETTER_SAMEKH,
+            Palmyrene::LetterAyin => LETTER_AYIN,
+            Palmyrene::LetterPe => LETTER_PE,
+            Palmyrene::LetterSadhe => LETTER_SADHE,
+            Palmyrene::LetterQoph => LETTER_QOPH,
+            Palmyrene::LetterResh => LETTER_RESH,
+            Palmyrene::LetterShin => LETTER_SHIN,
+            Palmyrene::LetterTaw => LETTER_TAW,
+            Palmyrene::LeftDashPointingFleuron => LEFT_DASH_POINTING_FLEURON,
+            Palmyrene::RightDashPointingFleuron => RIGHT_DASH_POINTING_FLEURON,
+            Palmyrene::NumberOne => NUMBER_ONE,
+            Palmyrene::NumberTwo => NUMBER_TWO,
+            Palmyrene::NumberThree => NUMBER_THREE,
+            Palmyrene::NumberFour => NUMBER_FOUR,
+            Palmyrene::NumberFive => NUMBER_FIVE,
+            Palmyrene::NumberTen => NUMBER_TEN,
         }
     }
 }
@@ -181,37 +181,37 @@ impl std::convert::TryFrom<char> for Palmyrene {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            PALMYRENE_LETTER_ALEPH => Ok(Palmyrene::PalmyreneLetterAleph),
-            PALMYRENE_LETTER_BETH => Ok(Palmyrene::PalmyreneLetterBeth),
-            PALMYRENE_LETTER_GIMEL => Ok(Palmyrene::PalmyreneLetterGimel),
-            PALMYRENE_LETTER_DALETH => Ok(Palmyrene::PalmyreneLetterDaleth),
-            PALMYRENE_LETTER_HE => Ok(Palmyrene::PalmyreneLetterHe),
-            PALMYRENE_LETTER_WAW => Ok(Palmyrene::PalmyreneLetterWaw),
-            PALMYRENE_LETTER_ZAYIN => Ok(Palmyrene::PalmyreneLetterZayin),
-            PALMYRENE_LETTER_HETH => Ok(Palmyrene::PalmyreneLetterHeth),
-            PALMYRENE_LETTER_TETH => Ok(Palmyrene::PalmyreneLetterTeth),
-            PALMYRENE_LETTER_YODH => Ok(Palmyrene::PalmyreneLetterYodh),
-            PALMYRENE_LETTER_KAPH => Ok(Palmyrene::PalmyreneLetterKaph),
-            PALMYRENE_LETTER_LAMEDH => Ok(Palmyrene::PalmyreneLetterLamedh),
-            PALMYRENE_LETTER_MEM => Ok(Palmyrene::PalmyreneLetterMem),
-            PALMYRENE_LETTER_FINAL_NUN => Ok(Palmyrene::PalmyreneLetterFinalNun),
-            PALMYRENE_LETTER_NUN => Ok(Palmyrene::PalmyreneLetterNun),
-            PALMYRENE_LETTER_SAMEKH => Ok(Palmyrene::PalmyreneLetterSamekh),
-            PALMYRENE_LETTER_AYIN => Ok(Palmyrene::PalmyreneLetterAyin),
-            PALMYRENE_LETTER_PE => Ok(Palmyrene::PalmyreneLetterPe),
-            PALMYRENE_LETTER_SADHE => Ok(Palmyrene::PalmyreneLetterSadhe),
-            PALMYRENE_LETTER_QOPH => Ok(Palmyrene::PalmyreneLetterQoph),
-            PALMYRENE_LETTER_RESH => Ok(Palmyrene::PalmyreneLetterResh),
-            PALMYRENE_LETTER_SHIN => Ok(Palmyrene::PalmyreneLetterShin),
-            PALMYRENE_LETTER_TAW => Ok(Palmyrene::PalmyreneLetterTaw),
-            PALMYRENE_LEFT_DASH_POINTING_FLEURON => Ok(Palmyrene::PalmyreneLeftDashPointingFleuron),
-            PALMYRENE_RIGHT_DASH_POINTING_FLEURON => Ok(Palmyrene::PalmyreneRightDashPointingFleuron),
-            PALMYRENE_NUMBER_ONE => Ok(Palmyrene::PalmyreneNumberOne),
-            PALMYRENE_NUMBER_TWO => Ok(Palmyrene::PalmyreneNumberTwo),
-            PALMYRENE_NUMBER_THREE => Ok(Palmyrene::PalmyreneNumberThree),
-            PALMYRENE_NUMBER_FOUR => Ok(Palmyrene::PalmyreneNumberFour),
-            PALMYRENE_NUMBER_FIVE => Ok(Palmyrene::PalmyreneNumberFive),
-            PALMYRENE_NUMBER_TEN => Ok(Palmyrene::PalmyreneNumberTen),
+            LETTER_ALEPH => Ok(Palmyrene::LetterAleph),
+            LETTER_BETH => Ok(Palmyrene::LetterBeth),
+            LETTER_GIMEL => Ok(Palmyrene::LetterGimel),
+            LETTER_DALETH => Ok(Palmyrene::LetterDaleth),
+            LETTER_HE => Ok(Palmyrene::LetterHe),
+            LETTER_WAW => Ok(Palmyrene::LetterWaw),
+            LETTER_ZAYIN => Ok(Palmyrene::LetterZayin),
+            LETTER_HETH => Ok(Palmyrene::LetterHeth),
+            LETTER_TETH => Ok(Palmyrene::LetterTeth),
+            LETTER_YODH => Ok(Palmyrene::LetterYodh),
+            LETTER_KAPH => Ok(Palmyrene::LetterKaph),
+            LETTER_LAMEDH => Ok(Palmyrene::LetterLamedh),
+            LETTER_MEM => Ok(Palmyrene::LetterMem),
+            LETTER_FINAL_NUN => Ok(Palmyrene::LetterFinalNun),
+            LETTER_NUN => Ok(Palmyrene::LetterNun),
+            LETTER_SAMEKH => Ok(Palmyrene::LetterSamekh),
+            LETTER_AYIN => Ok(Palmyrene::LetterAyin),
+            LETTER_PE => Ok(Palmyrene::LetterPe),
+            LETTER_SADHE => Ok(Palmyrene::LetterSadhe),
+            LETTER_QOPH => Ok(Palmyrene::LetterQoph),
+            LETTER_RESH => Ok(Palmyrene::LetterResh),
+            LETTER_SHIN => Ok(Palmyrene::LetterShin),
+            LETTER_TAW => Ok(Palmyrene::LetterTaw),
+            LEFT_DASH_POINTING_FLEURON => Ok(Palmyrene::LeftDashPointingFleuron),
+            RIGHT_DASH_POINTING_FLEURON => Ok(Palmyrene::RightDashPointingFleuron),
+            NUMBER_ONE => Ok(Palmyrene::NumberOne),
+            NUMBER_TWO => Ok(Palmyrene::NumberTwo),
+            NUMBER_THREE => Ok(Palmyrene::NumberThree),
+            NUMBER_FOUR => Ok(Palmyrene::NumberFour),
+            NUMBER_FIVE => Ok(Palmyrene::NumberFive),
+            NUMBER_TEN => Ok(Palmyrene::NumberTen),
             _ => Err(()),
         }
     }
@@ -250,45 +250,45 @@ impl Iterator for Palmyrene {
 }
 
 impl Palmyrene {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Palmyrene::PalmyreneLetterAleph
+        Palmyrene::LetterAleph
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Palmyrene::PalmyreneLetterAleph => "palmyrene letter aleph",
-            Palmyrene::PalmyreneLetterBeth => "palmyrene letter beth",
-            Palmyrene::PalmyreneLetterGimel => "palmyrene letter gimel",
-            Palmyrene::PalmyreneLetterDaleth => "palmyrene letter daleth",
-            Palmyrene::PalmyreneLetterHe => "palmyrene letter he",
-            Palmyrene::PalmyreneLetterWaw => "palmyrene letter waw",
-            Palmyrene::PalmyreneLetterZayin => "palmyrene letter zayin",
-            Palmyrene::PalmyreneLetterHeth => "palmyrene letter heth",
-            Palmyrene::PalmyreneLetterTeth => "palmyrene letter teth",
-            Palmyrene::PalmyreneLetterYodh => "palmyrene letter yodh",
-            Palmyrene::PalmyreneLetterKaph => "palmyrene letter kaph",
-            Palmyrene::PalmyreneLetterLamedh => "palmyrene letter lamedh",
-            Palmyrene::PalmyreneLetterMem => "palmyrene letter mem",
-            Palmyrene::PalmyreneLetterFinalNun => "palmyrene letter final nun",
-            Palmyrene::PalmyreneLetterNun => "palmyrene letter nun",
-            Palmyrene::PalmyreneLetterSamekh => "palmyrene letter samekh",
-            Palmyrene::PalmyreneLetterAyin => "palmyrene letter ayin",
-            Palmyrene::PalmyreneLetterPe => "palmyrene letter pe",
-            Palmyrene::PalmyreneLetterSadhe => "palmyrene letter sadhe",
-            Palmyrene::PalmyreneLetterQoph => "palmyrene letter qoph",
-            Palmyrene::PalmyreneLetterResh => "palmyrene letter resh",
-            Palmyrene::PalmyreneLetterShin => "palmyrene letter shin",
-            Palmyrene::PalmyreneLetterTaw => "palmyrene letter taw",
-            Palmyrene::PalmyreneLeftDashPointingFleuron => "palmyrene left-pointing fleuron",
-            Palmyrene::PalmyreneRightDashPointingFleuron => "palmyrene right-pointing fleuron",
-            Palmyrene::PalmyreneNumberOne => "palmyrene number one",
-            Palmyrene::PalmyreneNumberTwo => "palmyrene number two",
-            Palmyrene::PalmyreneNumberThree => "palmyrene number three",
-            Palmyrene::PalmyreneNumberFour => "palmyrene number four",
-            Palmyrene::PalmyreneNumberFive => "palmyrene number five",
-            Palmyrene::PalmyreneNumberTen => "palmyrene number ten",
+            Palmyrene::LetterAleph => "palmyrene letter aleph",
+            Palmyrene::LetterBeth => "palmyrene letter beth",
+            Palmyrene::LetterGimel => "palmyrene letter gimel",
+            Palmyrene::LetterDaleth => "palmyrene letter daleth",
+            Palmyrene::LetterHe => "palmyrene letter he",
+            Palmyrene::LetterWaw => "palmyrene letter waw",
+            Palmyrene::LetterZayin => "palmyrene letter zayin",
+            Palmyrene::LetterHeth => "palmyrene letter heth",
+            Palmyrene::LetterTeth => "palmyrene letter teth",
+            Palmyrene::LetterYodh => "palmyrene letter yodh",
+            Palmyrene::LetterKaph => "palmyrene letter kaph",
+            Palmyrene::LetterLamedh => "palmyrene letter lamedh",
+            Palmyrene::LetterMem => "palmyrene letter mem",
+            Palmyrene::LetterFinalNun => "palmyrene letter final nun",
+            Palmyrene::LetterNun => "palmyrene letter nun",
+            Palmyrene::LetterSamekh => "palmyrene letter samekh",
+            Palmyrene::LetterAyin => "palmyrene letter ayin",
+            Palmyrene::LetterPe => "palmyrene letter pe",
+            Palmyrene::LetterSadhe => "palmyrene letter sadhe",
+            Palmyrene::LetterQoph => "palmyrene letter qoph",
+            Palmyrene::LetterResh => "palmyrene letter resh",
+            Palmyrene::LetterShin => "palmyrene letter shin",
+            Palmyrene::LetterTaw => "palmyrene letter taw",
+            Palmyrene::LeftDashPointingFleuron => "palmyrene left-pointing fleuron",
+            Palmyrene::RightDashPointingFleuron => "palmyrene right-pointing fleuron",
+            Palmyrene::NumberOne => "palmyrene number one",
+            Palmyrene::NumberTwo => "palmyrene number two",
+            Palmyrene::NumberThree => "palmyrene number three",
+            Palmyrene::NumberFour => "palmyrene number four",
+            Palmyrene::NumberFive => "palmyrene number five",
+            Palmyrene::NumberTen => "palmyrene number ten",
         }
     }
 }

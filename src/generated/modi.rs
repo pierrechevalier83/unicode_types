@@ -7,163 +7,163 @@
 /// 𑙀 𑙁 𑙂 𑙃 𑙄 𑙐 𑙑 𑙒 𑙓 𑙔 𑙕 𑙖 𑙗 𑙘 𑙙
 pub mod constants {
     /// \u{11600}: '𑘀'
-    pub const MODI_LETTER_A: char = '𑘀';
+    pub const LETTER_A: char = '𑘀';
     /// \u{11601}: '𑘁'
-    pub const MODI_LETTER_AA: char = '𑘁';
+    pub const LETTER_AA: char = '𑘁';
     /// \u{11602}: '𑘂'
-    pub const MODI_LETTER_I: char = '𑘂';
+    pub const LETTER_I: char = '𑘂';
     /// \u{11603}: '𑘃'
-    pub const MODI_LETTER_II: char = '𑘃';
+    pub const LETTER_II: char = '𑘃';
     /// \u{11604}: '𑘄'
-    pub const MODI_LETTER_U: char = '𑘄';
+    pub const LETTER_U: char = '𑘄';
     /// \u{11605}: '𑘅'
-    pub const MODI_LETTER_UU: char = '𑘅';
+    pub const LETTER_UU: char = '𑘅';
     /// \u{11606}: '𑘆'
-    pub const MODI_LETTER_VOCALIC_R: char = '𑘆';
+    pub const LETTER_VOCALIC_R: char = '𑘆';
     /// \u{11607}: '𑘇'
-    pub const MODI_LETTER_VOCALIC_RR: char = '𑘇';
+    pub const LETTER_VOCALIC_RR: char = '𑘇';
     /// \u{11608}: '𑘈'
-    pub const MODI_LETTER_VOCALIC_L: char = '𑘈';
+    pub const LETTER_VOCALIC_L: char = '𑘈';
     /// \u{11609}: '𑘉'
-    pub const MODI_LETTER_VOCALIC_LL: char = '𑘉';
+    pub const LETTER_VOCALIC_LL: char = '𑘉';
     /// \u{1160a}: '𑘊'
-    pub const MODI_LETTER_E: char = '𑘊';
+    pub const LETTER_E: char = '𑘊';
     /// \u{1160b}: '𑘋'
-    pub const MODI_LETTER_AI: char = '𑘋';
+    pub const LETTER_AI: char = '𑘋';
     /// \u{1160c}: '𑘌'
-    pub const MODI_LETTER_O: char = '𑘌';
+    pub const LETTER_O: char = '𑘌';
     /// \u{1160d}: '𑘍'
-    pub const MODI_LETTER_AU: char = '𑘍';
+    pub const LETTER_AU: char = '𑘍';
     /// \u{1160e}: '𑘎'
-    pub const MODI_LETTER_KA: char = '𑘎';
+    pub const LETTER_KA: char = '𑘎';
     /// \u{1160f}: '𑘏'
-    pub const MODI_LETTER_KHA: char = '𑘏';
+    pub const LETTER_KHA: char = '𑘏';
     /// \u{11610}: '𑘐'
-    pub const MODI_LETTER_GA: char = '𑘐';
+    pub const LETTER_GA: char = '𑘐';
     /// \u{11611}: '𑘑'
-    pub const MODI_LETTER_GHA: char = '𑘑';
+    pub const LETTER_GHA: char = '𑘑';
     /// \u{11612}: '𑘒'
-    pub const MODI_LETTER_NGA: char = '𑘒';
+    pub const LETTER_NGA: char = '𑘒';
     /// \u{11613}: '𑘓'
-    pub const MODI_LETTER_CA: char = '𑘓';
+    pub const LETTER_CA: char = '𑘓';
     /// \u{11614}: '𑘔'
-    pub const MODI_LETTER_CHA: char = '𑘔';
+    pub const LETTER_CHA: char = '𑘔';
     /// \u{11615}: '𑘕'
-    pub const MODI_LETTER_JA: char = '𑘕';
+    pub const LETTER_JA: char = '𑘕';
     /// \u{11616}: '𑘖'
-    pub const MODI_LETTER_JHA: char = '𑘖';
+    pub const LETTER_JHA: char = '𑘖';
     /// \u{11617}: '𑘗'
-    pub const MODI_LETTER_NYA: char = '𑘗';
+    pub const LETTER_NYA: char = '𑘗';
     /// \u{11618}: '𑘘'
-    pub const MODI_LETTER_TTA: char = '𑘘';
+    pub const LETTER_TTA: char = '𑘘';
     /// \u{11619}: '𑘙'
-    pub const MODI_LETTER_TTHA: char = '𑘙';
+    pub const LETTER_TTHA: char = '𑘙';
     /// \u{1161a}: '𑘚'
-    pub const MODI_LETTER_DDA: char = '𑘚';
+    pub const LETTER_DDA: char = '𑘚';
     /// \u{1161b}: '𑘛'
-    pub const MODI_LETTER_DDHA: char = '𑘛';
+    pub const LETTER_DDHA: char = '𑘛';
     /// \u{1161c}: '𑘜'
-    pub const MODI_LETTER_NNA: char = '𑘜';
+    pub const LETTER_NNA: char = '𑘜';
     /// \u{1161d}: '𑘝'
-    pub const MODI_LETTER_TA: char = '𑘝';
+    pub const LETTER_TA: char = '𑘝';
     /// \u{1161e}: '𑘞'
-    pub const MODI_LETTER_THA: char = '𑘞';
+    pub const LETTER_THA: char = '𑘞';
     /// \u{1161f}: '𑘟'
-    pub const MODI_LETTER_DA: char = '𑘟';
+    pub const LETTER_DA: char = '𑘟';
     /// \u{11620}: '𑘠'
-    pub const MODI_LETTER_DHA: char = '𑘠';
+    pub const LETTER_DHA: char = '𑘠';
     /// \u{11621}: '𑘡'
-    pub const MODI_LETTER_NA: char = '𑘡';
+    pub const LETTER_NA: char = '𑘡';
     /// \u{11622}: '𑘢'
-    pub const MODI_LETTER_PA: char = '𑘢';
+    pub const LETTER_PA: char = '𑘢';
     /// \u{11623}: '𑘣'
-    pub const MODI_LETTER_PHA: char = '𑘣';
+    pub const LETTER_PHA: char = '𑘣';
     /// \u{11624}: '𑘤'
-    pub const MODI_LETTER_BA: char = '𑘤';
+    pub const LETTER_BA: char = '𑘤';
     /// \u{11625}: '𑘥'
-    pub const MODI_LETTER_BHA: char = '𑘥';
+    pub const LETTER_BHA: char = '𑘥';
     /// \u{11626}: '𑘦'
-    pub const MODI_LETTER_MA: char = '𑘦';
+    pub const LETTER_MA: char = '𑘦';
     /// \u{11627}: '𑘧'
-    pub const MODI_LETTER_YA: char = '𑘧';
+    pub const LETTER_YA: char = '𑘧';
     /// \u{11628}: '𑘨'
-    pub const MODI_LETTER_RA: char = '𑘨';
+    pub const LETTER_RA: char = '𑘨';
     /// \u{11629}: '𑘩'
-    pub const MODI_LETTER_LA: char = '𑘩';
+    pub const LETTER_LA: char = '𑘩';
     /// \u{1162a}: '𑘪'
-    pub const MODI_LETTER_VA: char = '𑘪';
+    pub const LETTER_VA: char = '𑘪';
     /// \u{1162b}: '𑘫'
-    pub const MODI_LETTER_SHA: char = '𑘫';
+    pub const LETTER_SHA: char = '𑘫';
     /// \u{1162c}: '𑘬'
-    pub const MODI_LETTER_SSA: char = '𑘬';
+    pub const LETTER_SSA: char = '𑘬';
     /// \u{1162d}: '𑘭'
-    pub const MODI_LETTER_SA: char = '𑘭';
+    pub const LETTER_SA: char = '𑘭';
     /// \u{1162e}: '𑘮'
-    pub const MODI_LETTER_HA: char = '𑘮';
+    pub const LETTER_HA: char = '𑘮';
     /// \u{1162f}: '𑘯'
-    pub const MODI_LETTER_LLA: char = '𑘯';
+    pub const LETTER_LLA: char = '𑘯';
     /// \u{11630}: '𑘰'
-    pub const MODI_VOWEL_SIGN_AA: char = '𑘰';
+    pub const VOWEL_SIGN_AA: char = '𑘰';
     /// \u{11631}: '𑘱'
-    pub const MODI_VOWEL_SIGN_I: char = '𑘱';
+    pub const VOWEL_SIGN_I: char = '𑘱';
     /// \u{11632}: '𑘲'
-    pub const MODI_VOWEL_SIGN_II: char = '𑘲';
+    pub const VOWEL_SIGN_II: char = '𑘲';
     /// \u{11633}: '𑘳'
-    pub const MODI_VOWEL_SIGN_U: char = '𑘳';
+    pub const VOWEL_SIGN_U: char = '𑘳';
     /// \u{11634}: '𑘴'
-    pub const MODI_VOWEL_SIGN_UU: char = '𑘴';
+    pub const VOWEL_SIGN_UU: char = '𑘴';
     /// \u{11635}: '𑘵'
-    pub const MODI_VOWEL_SIGN_VOCALIC_R: char = '𑘵';
+    pub const VOWEL_SIGN_VOCALIC_R: char = '𑘵';
     /// \u{11636}: '𑘶'
-    pub const MODI_VOWEL_SIGN_VOCALIC_RR: char = '𑘶';
+    pub const VOWEL_SIGN_VOCALIC_RR: char = '𑘶';
     /// \u{11637}: '𑘷'
-    pub const MODI_VOWEL_SIGN_VOCALIC_L: char = '𑘷';
+    pub const VOWEL_SIGN_VOCALIC_L: char = '𑘷';
     /// \u{11638}: '𑘸'
-    pub const MODI_VOWEL_SIGN_VOCALIC_LL: char = '𑘸';
+    pub const VOWEL_SIGN_VOCALIC_LL: char = '𑘸';
     /// \u{11639}: '𑘹'
-    pub const MODI_VOWEL_SIGN_E: char = '𑘹';
+    pub const VOWEL_SIGN_E: char = '𑘹';
     /// \u{1163a}: '𑘺'
-    pub const MODI_VOWEL_SIGN_AI: char = '𑘺';
+    pub const VOWEL_SIGN_AI: char = '𑘺';
     /// \u{1163b}: '𑘻'
-    pub const MODI_VOWEL_SIGN_O: char = '𑘻';
+    pub const VOWEL_SIGN_O: char = '𑘻';
     /// \u{1163c}: '𑘼'
-    pub const MODI_VOWEL_SIGN_AU: char = '𑘼';
+    pub const VOWEL_SIGN_AU: char = '𑘼';
     /// \u{1163d}: '𑘽'
-    pub const MODI_SIGN_ANUSVARA: char = '𑘽';
+    pub const SIGN_ANUSVARA: char = '𑘽';
     /// \u{1163e}: '𑘾'
-    pub const MODI_SIGN_VISARGA: char = '𑘾';
+    pub const SIGN_VISARGA: char = '𑘾';
     /// \u{1163f}: '𑘿'
-    pub const MODI_SIGN_VIRAMA: char = '𑘿';
+    pub const SIGN_VIRAMA: char = '𑘿';
     /// \u{11640}: '𑙀'
-    pub const MODI_SIGN_ARDHACANDRA: char = '𑙀';
+    pub const SIGN_ARDHACANDRA: char = '𑙀';
     /// \u{11641}: '𑙁'
-    pub const MODI_DANDA: char = '𑙁';
+    pub const DANDA: char = '𑙁';
     /// \u{11642}: '𑙂'
-    pub const MODI_DOUBLE_DANDA: char = '𑙂';
+    pub const DOUBLE_DANDA: char = '𑙂';
     /// \u{11643}: '𑙃'
-    pub const MODI_ABBREVIATION_SIGN: char = '𑙃';
+    pub const ABBREVIATION_SIGN: char = '𑙃';
     /// \u{11644}: '𑙄'
-    pub const MODI_SIGN_HUVA: char = '𑙄';
+    pub const SIGN_HUVA: char = '𑙄';
     /// \u{11650}: '𑙐'
-    pub const MODI_DIGIT_ZERO: char = '𑙐';
+    pub const DIGIT_ZERO: char = '𑙐';
     /// \u{11651}: '𑙑'
-    pub const MODI_DIGIT_ONE: char = '𑙑';
+    pub const DIGIT_ONE: char = '𑙑';
     /// \u{11652}: '𑙒'
-    pub const MODI_DIGIT_TWO: char = '𑙒';
+    pub const DIGIT_TWO: char = '𑙒';
     /// \u{11653}: '𑙓'
-    pub const MODI_DIGIT_THREE: char = '𑙓';
+    pub const DIGIT_THREE: char = '𑙓';
     /// \u{11654}: '𑙔'
-    pub const MODI_DIGIT_FOUR: char = '𑙔';
+    pub const DIGIT_FOUR: char = '𑙔';
     /// \u{11655}: '𑙕'
-    pub const MODI_DIGIT_FIVE: char = '𑙕';
+    pub const DIGIT_FIVE: char = '𑙕';
     /// \u{11656}: '𑙖'
-    pub const MODI_DIGIT_SIX: char = '𑙖';
+    pub const DIGIT_SIX: char = '𑙖';
     /// \u{11657}: '𑙗'
-    pub const MODI_DIGIT_SEVEN: char = '𑙗';
+    pub const DIGIT_SEVEN: char = '𑙗';
     /// \u{11658}: '𑙘'
-    pub const MODI_DIGIT_EIGHT: char = '𑙘';
+    pub const DIGIT_EIGHT: char = '𑙘';
     /// \u{11659}: '𑙙'
-    pub const MODI_DIGIT_NINE: char = '𑙙';
+    pub const DIGIT_NINE: char = '𑙙';
 }
 
 /// \u{11600} → \u{1165f}\
@@ -176,248 +176,248 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Modi {
     /// \u{11600}: '𑘀'
-    ModiLetterA,
+    LetterA,
     /// \u{11601}: '𑘁'
-    ModiLetterAa,
+    LetterAa,
     /// \u{11602}: '𑘂'
-    ModiLetterI,
+    LetterI,
     /// \u{11603}: '𑘃'
-    ModiLetterIi,
+    LetterIi,
     /// \u{11604}: '𑘄'
-    ModiLetterU,
+    LetterU,
     /// \u{11605}: '𑘅'
-    ModiLetterUu,
+    LetterUu,
     /// \u{11606}: '𑘆'
-    ModiLetterVocalicR,
+    LetterVocalicR,
     /// \u{11607}: '𑘇'
-    ModiLetterVocalicRr,
+    LetterVocalicRr,
     /// \u{11608}: '𑘈'
-    ModiLetterVocalicL,
+    LetterVocalicL,
     /// \u{11609}: '𑘉'
-    ModiLetterVocalicLl,
+    LetterVocalicLl,
     /// \u{1160a}: '𑘊'
-    ModiLetterE,
+    LetterE,
     /// \u{1160b}: '𑘋'
-    ModiLetterAi,
+    LetterAi,
     /// \u{1160c}: '𑘌'
-    ModiLetterO,
+    LetterO,
     /// \u{1160d}: '𑘍'
-    ModiLetterAu,
+    LetterAu,
     /// \u{1160e}: '𑘎'
-    ModiLetterKa,
+    LetterKa,
     /// \u{1160f}: '𑘏'
-    ModiLetterKha,
+    LetterKha,
     /// \u{11610}: '𑘐'
-    ModiLetterGa,
+    LetterGa,
     /// \u{11611}: '𑘑'
-    ModiLetterGha,
+    LetterGha,
     /// \u{11612}: '𑘒'
-    ModiLetterNga,
+    LetterNga,
     /// \u{11613}: '𑘓'
-    ModiLetterCa,
+    LetterCa,
     /// \u{11614}: '𑘔'
-    ModiLetterCha,
+    LetterCha,
     /// \u{11615}: '𑘕'
-    ModiLetterJa,
+    LetterJa,
     /// \u{11616}: '𑘖'
-    ModiLetterJha,
+    LetterJha,
     /// \u{11617}: '𑘗'
-    ModiLetterNya,
+    LetterNya,
     /// \u{11618}: '𑘘'
-    ModiLetterTta,
+    LetterTta,
     /// \u{11619}: '𑘙'
-    ModiLetterTtha,
+    LetterTtha,
     /// \u{1161a}: '𑘚'
-    ModiLetterDda,
+    LetterDda,
     /// \u{1161b}: '𑘛'
-    ModiLetterDdha,
+    LetterDdha,
     /// \u{1161c}: '𑘜'
-    ModiLetterNna,
+    LetterNna,
     /// \u{1161d}: '𑘝'
-    ModiLetterTa,
+    LetterTa,
     /// \u{1161e}: '𑘞'
-    ModiLetterTha,
+    LetterTha,
     /// \u{1161f}: '𑘟'
-    ModiLetterDa,
+    LetterDa,
     /// \u{11620}: '𑘠'
-    ModiLetterDha,
+    LetterDha,
     /// \u{11621}: '𑘡'
-    ModiLetterNa,
+    LetterNa,
     /// \u{11622}: '𑘢'
-    ModiLetterPa,
+    LetterPa,
     /// \u{11623}: '𑘣'
-    ModiLetterPha,
+    LetterPha,
     /// \u{11624}: '𑘤'
-    ModiLetterBa,
+    LetterBa,
     /// \u{11625}: '𑘥'
-    ModiLetterBha,
+    LetterBha,
     /// \u{11626}: '𑘦'
-    ModiLetterMa,
+    LetterMa,
     /// \u{11627}: '𑘧'
-    ModiLetterYa,
+    LetterYa,
     /// \u{11628}: '𑘨'
-    ModiLetterRa,
+    LetterRa,
     /// \u{11629}: '𑘩'
-    ModiLetterLa,
+    LetterLa,
     /// \u{1162a}: '𑘪'
-    ModiLetterVa,
+    LetterVa,
     /// \u{1162b}: '𑘫'
-    ModiLetterSha,
+    LetterSha,
     /// \u{1162c}: '𑘬'
-    ModiLetterSsa,
+    LetterSsa,
     /// \u{1162d}: '𑘭'
-    ModiLetterSa,
+    LetterSa,
     /// \u{1162e}: '𑘮'
-    ModiLetterHa,
+    LetterHa,
     /// \u{1162f}: '𑘯'
-    ModiLetterLla,
+    LetterLla,
     /// \u{11630}: '𑘰'
-    ModiVowelSignAa,
+    VowelSignAa,
     /// \u{11631}: '𑘱'
-    ModiVowelSignI,
+    VowelSignI,
     /// \u{11632}: '𑘲'
-    ModiVowelSignIi,
+    VowelSignIi,
     /// \u{11633}: '𑘳'
-    ModiVowelSignU,
+    VowelSignU,
     /// \u{11634}: '𑘴'
-    ModiVowelSignUu,
+    VowelSignUu,
     /// \u{11635}: '𑘵'
-    ModiVowelSignVocalicR,
+    VowelSignVocalicR,
     /// \u{11636}: '𑘶'
-    ModiVowelSignVocalicRr,
+    VowelSignVocalicRr,
     /// \u{11637}: '𑘷'
-    ModiVowelSignVocalicL,
+    VowelSignVocalicL,
     /// \u{11638}: '𑘸'
-    ModiVowelSignVocalicLl,
+    VowelSignVocalicLl,
     /// \u{11639}: '𑘹'
-    ModiVowelSignE,
+    VowelSignE,
     /// \u{1163a}: '𑘺'
-    ModiVowelSignAi,
+    VowelSignAi,
     /// \u{1163b}: '𑘻'
-    ModiVowelSignO,
+    VowelSignO,
     /// \u{1163c}: '𑘼'
-    ModiVowelSignAu,
+    VowelSignAu,
     /// \u{1163d}: '𑘽'
-    ModiSignAnusvara,
+    SignAnusvara,
     /// \u{1163e}: '𑘾'
-    ModiSignVisarga,
+    SignVisarga,
     /// \u{1163f}: '𑘿'
-    ModiSignVirama,
+    SignVirama,
     /// \u{11640}: '𑙀'
-    ModiSignArdhacandra,
+    SignArdhacandra,
     /// \u{11641}: '𑙁'
-    ModiDanda,
+    Danda,
     /// \u{11642}: '𑙂'
-    ModiDoubleDanda,
+    DoubleDanda,
     /// \u{11643}: '𑙃'
-    ModiAbbreviationSign,
+    AbbreviationSign,
     /// \u{11644}: '𑙄'
-    ModiSignHuva,
+    SignHuva,
     /// \u{11650}: '𑙐'
-    ModiDigitZero,
+    DigitZero,
     /// \u{11651}: '𑙑'
-    ModiDigitOne,
+    DigitOne,
     /// \u{11652}: '𑙒'
-    ModiDigitTwo,
+    DigitTwo,
     /// \u{11653}: '𑙓'
-    ModiDigitThree,
+    DigitThree,
     /// \u{11654}: '𑙔'
-    ModiDigitFour,
+    DigitFour,
     /// \u{11655}: '𑙕'
-    ModiDigitFive,
+    DigitFive,
     /// \u{11656}: '𑙖'
-    ModiDigitSix,
+    DigitSix,
     /// \u{11657}: '𑙗'
-    ModiDigitSeven,
+    DigitSeven,
     /// \u{11658}: '𑙘'
-    ModiDigitEight,
+    DigitEight,
     /// \u{11659}: '𑙙'
-    ModiDigitNine,
+    DigitNine,
 }
 
 impl Into<char> for Modi {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Modi::ModiLetterA => MODI_LETTER_A,
-            Modi::ModiLetterAa => MODI_LETTER_AA,
-            Modi::ModiLetterI => MODI_LETTER_I,
-            Modi::ModiLetterIi => MODI_LETTER_II,
-            Modi::ModiLetterU => MODI_LETTER_U,
-            Modi::ModiLetterUu => MODI_LETTER_UU,
-            Modi::ModiLetterVocalicR => MODI_LETTER_VOCALIC_R,
-            Modi::ModiLetterVocalicRr => MODI_LETTER_VOCALIC_RR,
-            Modi::ModiLetterVocalicL => MODI_LETTER_VOCALIC_L,
-            Modi::ModiLetterVocalicLl => MODI_LETTER_VOCALIC_LL,
-            Modi::ModiLetterE => MODI_LETTER_E,
-            Modi::ModiLetterAi => MODI_LETTER_AI,
-            Modi::ModiLetterO => MODI_LETTER_O,
-            Modi::ModiLetterAu => MODI_LETTER_AU,
-            Modi::ModiLetterKa => MODI_LETTER_KA,
-            Modi::ModiLetterKha => MODI_LETTER_KHA,
-            Modi::ModiLetterGa => MODI_LETTER_GA,
-            Modi::ModiLetterGha => MODI_LETTER_GHA,
-            Modi::ModiLetterNga => MODI_LETTER_NGA,
-            Modi::ModiLetterCa => MODI_LETTER_CA,
-            Modi::ModiLetterCha => MODI_LETTER_CHA,
-            Modi::ModiLetterJa => MODI_LETTER_JA,
-            Modi::ModiLetterJha => MODI_LETTER_JHA,
-            Modi::ModiLetterNya => MODI_LETTER_NYA,
-            Modi::ModiLetterTta => MODI_LETTER_TTA,
-            Modi::ModiLetterTtha => MODI_LETTER_TTHA,
-            Modi::ModiLetterDda => MODI_LETTER_DDA,
-            Modi::ModiLetterDdha => MODI_LETTER_DDHA,
-            Modi::ModiLetterNna => MODI_LETTER_NNA,
-            Modi::ModiLetterTa => MODI_LETTER_TA,
-            Modi::ModiLetterTha => MODI_LETTER_THA,
-            Modi::ModiLetterDa => MODI_LETTER_DA,
-            Modi::ModiLetterDha => MODI_LETTER_DHA,
-            Modi::ModiLetterNa => MODI_LETTER_NA,
-            Modi::ModiLetterPa => MODI_LETTER_PA,
-            Modi::ModiLetterPha => MODI_LETTER_PHA,
-            Modi::ModiLetterBa => MODI_LETTER_BA,
-            Modi::ModiLetterBha => MODI_LETTER_BHA,
-            Modi::ModiLetterMa => MODI_LETTER_MA,
-            Modi::ModiLetterYa => MODI_LETTER_YA,
-            Modi::ModiLetterRa => MODI_LETTER_RA,
-            Modi::ModiLetterLa => MODI_LETTER_LA,
-            Modi::ModiLetterVa => MODI_LETTER_VA,
-            Modi::ModiLetterSha => MODI_LETTER_SHA,
-            Modi::ModiLetterSsa => MODI_LETTER_SSA,
-            Modi::ModiLetterSa => MODI_LETTER_SA,
-            Modi::ModiLetterHa => MODI_LETTER_HA,
-            Modi::ModiLetterLla => MODI_LETTER_LLA,
-            Modi::ModiVowelSignAa => MODI_VOWEL_SIGN_AA,
-            Modi::ModiVowelSignI => MODI_VOWEL_SIGN_I,
-            Modi::ModiVowelSignIi => MODI_VOWEL_SIGN_II,
-            Modi::ModiVowelSignU => MODI_VOWEL_SIGN_U,
-            Modi::ModiVowelSignUu => MODI_VOWEL_SIGN_UU,
-            Modi::ModiVowelSignVocalicR => MODI_VOWEL_SIGN_VOCALIC_R,
-            Modi::ModiVowelSignVocalicRr => MODI_VOWEL_SIGN_VOCALIC_RR,
-            Modi::ModiVowelSignVocalicL => MODI_VOWEL_SIGN_VOCALIC_L,
-            Modi::ModiVowelSignVocalicLl => MODI_VOWEL_SIGN_VOCALIC_LL,
-            Modi::ModiVowelSignE => MODI_VOWEL_SIGN_E,
-            Modi::ModiVowelSignAi => MODI_VOWEL_SIGN_AI,
-            Modi::ModiVowelSignO => MODI_VOWEL_SIGN_O,
-            Modi::ModiVowelSignAu => MODI_VOWEL_SIGN_AU,
-            Modi::ModiSignAnusvara => MODI_SIGN_ANUSVARA,
-            Modi::ModiSignVisarga => MODI_SIGN_VISARGA,
-            Modi::ModiSignVirama => MODI_SIGN_VIRAMA,
-            Modi::ModiSignArdhacandra => MODI_SIGN_ARDHACANDRA,
-            Modi::ModiDanda => MODI_DANDA,
-            Modi::ModiDoubleDanda => MODI_DOUBLE_DANDA,
-            Modi::ModiAbbreviationSign => MODI_ABBREVIATION_SIGN,
-            Modi::ModiSignHuva => MODI_SIGN_HUVA,
-            Modi::ModiDigitZero => MODI_DIGIT_ZERO,
-            Modi::ModiDigitOne => MODI_DIGIT_ONE,
-            Modi::ModiDigitTwo => MODI_DIGIT_TWO,
-            Modi::ModiDigitThree => MODI_DIGIT_THREE,
-            Modi::ModiDigitFour => MODI_DIGIT_FOUR,
-            Modi::ModiDigitFive => MODI_DIGIT_FIVE,
-            Modi::ModiDigitSix => MODI_DIGIT_SIX,
-            Modi::ModiDigitSeven => MODI_DIGIT_SEVEN,
-            Modi::ModiDigitEight => MODI_DIGIT_EIGHT,
-            Modi::ModiDigitNine => MODI_DIGIT_NINE,
+            Modi::LetterA => LETTER_A,
+            Modi::LetterAa => LETTER_AA,
+            Modi::LetterI => LETTER_I,
+            Modi::LetterIi => LETTER_II,
+            Modi::LetterU => LETTER_U,
+            Modi::LetterUu => LETTER_UU,
+            Modi::LetterVocalicR => LETTER_VOCALIC_R,
+            Modi::LetterVocalicRr => LETTER_VOCALIC_RR,
+            Modi::LetterVocalicL => LETTER_VOCALIC_L,
+            Modi::LetterVocalicLl => LETTER_VOCALIC_LL,
+            Modi::LetterE => LETTER_E,
+            Modi::LetterAi => LETTER_AI,
+            Modi::LetterO => LETTER_O,
+            Modi::LetterAu => LETTER_AU,
+            Modi::LetterKa => LETTER_KA,
+            Modi::LetterKha => LETTER_KHA,
+            Modi::LetterGa => LETTER_GA,
+            Modi::LetterGha => LETTER_GHA,
+            Modi::LetterNga => LETTER_NGA,
+            Modi::LetterCa => LETTER_CA,
+            Modi::LetterCha => LETTER_CHA,
+            Modi::LetterJa => LETTER_JA,
+            Modi::LetterJha => LETTER_JHA,
+            Modi::LetterNya => LETTER_NYA,
+            Modi::LetterTta => LETTER_TTA,
+            Modi::LetterTtha => LETTER_TTHA,
+            Modi::LetterDda => LETTER_DDA,
+            Modi::LetterDdha => LETTER_DDHA,
+            Modi::LetterNna => LETTER_NNA,
+            Modi::LetterTa => LETTER_TA,
+            Modi::LetterTha => LETTER_THA,
+            Modi::LetterDa => LETTER_DA,
+            Modi::LetterDha => LETTER_DHA,
+            Modi::LetterNa => LETTER_NA,
+            Modi::LetterPa => LETTER_PA,
+            Modi::LetterPha => LETTER_PHA,
+            Modi::LetterBa => LETTER_BA,
+            Modi::LetterBha => LETTER_BHA,
+            Modi::LetterMa => LETTER_MA,
+            Modi::LetterYa => LETTER_YA,
+            Modi::LetterRa => LETTER_RA,
+            Modi::LetterLa => LETTER_LA,
+            Modi::LetterVa => LETTER_VA,
+            Modi::LetterSha => LETTER_SHA,
+            Modi::LetterSsa => LETTER_SSA,
+            Modi::LetterSa => LETTER_SA,
+            Modi::LetterHa => LETTER_HA,
+            Modi::LetterLla => LETTER_LLA,
+            Modi::VowelSignAa => VOWEL_SIGN_AA,
+            Modi::VowelSignI => VOWEL_SIGN_I,
+            Modi::VowelSignIi => VOWEL_SIGN_II,
+            Modi::VowelSignU => VOWEL_SIGN_U,
+            Modi::VowelSignUu => VOWEL_SIGN_UU,
+            Modi::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
+            Modi::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
+            Modi::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
+            Modi::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
+            Modi::VowelSignE => VOWEL_SIGN_E,
+            Modi::VowelSignAi => VOWEL_SIGN_AI,
+            Modi::VowelSignO => VOWEL_SIGN_O,
+            Modi::VowelSignAu => VOWEL_SIGN_AU,
+            Modi::SignAnusvara => SIGN_ANUSVARA,
+            Modi::SignVisarga => SIGN_VISARGA,
+            Modi::SignVirama => SIGN_VIRAMA,
+            Modi::SignArdhacandra => SIGN_ARDHACANDRA,
+            Modi::Danda => DANDA,
+            Modi::DoubleDanda => DOUBLE_DANDA,
+            Modi::AbbreviationSign => ABBREVIATION_SIGN,
+            Modi::SignHuva => SIGN_HUVA,
+            Modi::DigitZero => DIGIT_ZERO,
+            Modi::DigitOne => DIGIT_ONE,
+            Modi::DigitTwo => DIGIT_TWO,
+            Modi::DigitThree => DIGIT_THREE,
+            Modi::DigitFour => DIGIT_FOUR,
+            Modi::DigitFive => DIGIT_FIVE,
+            Modi::DigitSix => DIGIT_SIX,
+            Modi::DigitSeven => DIGIT_SEVEN,
+            Modi::DigitEight => DIGIT_EIGHT,
+            Modi::DigitNine => DIGIT_NINE,
         }
     }
 }
@@ -427,85 +427,85 @@ impl std::convert::TryFrom<char> for Modi {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            MODI_LETTER_A => Ok(Modi::ModiLetterA),
-            MODI_LETTER_AA => Ok(Modi::ModiLetterAa),
-            MODI_LETTER_I => Ok(Modi::ModiLetterI),
-            MODI_LETTER_II => Ok(Modi::ModiLetterIi),
-            MODI_LETTER_U => Ok(Modi::ModiLetterU),
-            MODI_LETTER_UU => Ok(Modi::ModiLetterUu),
-            MODI_LETTER_VOCALIC_R => Ok(Modi::ModiLetterVocalicR),
-            MODI_LETTER_VOCALIC_RR => Ok(Modi::ModiLetterVocalicRr),
-            MODI_LETTER_VOCALIC_L => Ok(Modi::ModiLetterVocalicL),
-            MODI_LETTER_VOCALIC_LL => Ok(Modi::ModiLetterVocalicLl),
-            MODI_LETTER_E => Ok(Modi::ModiLetterE),
-            MODI_LETTER_AI => Ok(Modi::ModiLetterAi),
-            MODI_LETTER_O => Ok(Modi::ModiLetterO),
-            MODI_LETTER_AU => Ok(Modi::ModiLetterAu),
-            MODI_LETTER_KA => Ok(Modi::ModiLetterKa),
-            MODI_LETTER_KHA => Ok(Modi::ModiLetterKha),
-            MODI_LETTER_GA => Ok(Modi::ModiLetterGa),
-            MODI_LETTER_GHA => Ok(Modi::ModiLetterGha),
-            MODI_LETTER_NGA => Ok(Modi::ModiLetterNga),
-            MODI_LETTER_CA => Ok(Modi::ModiLetterCa),
-            MODI_LETTER_CHA => Ok(Modi::ModiLetterCha),
-            MODI_LETTER_JA => Ok(Modi::ModiLetterJa),
-            MODI_LETTER_JHA => Ok(Modi::ModiLetterJha),
-            MODI_LETTER_NYA => Ok(Modi::ModiLetterNya),
-            MODI_LETTER_TTA => Ok(Modi::ModiLetterTta),
-            MODI_LETTER_TTHA => Ok(Modi::ModiLetterTtha),
-            MODI_LETTER_DDA => Ok(Modi::ModiLetterDda),
-            MODI_LETTER_DDHA => Ok(Modi::ModiLetterDdha),
-            MODI_LETTER_NNA => Ok(Modi::ModiLetterNna),
-            MODI_LETTER_TA => Ok(Modi::ModiLetterTa),
-            MODI_LETTER_THA => Ok(Modi::ModiLetterTha),
-            MODI_LETTER_DA => Ok(Modi::ModiLetterDa),
-            MODI_LETTER_DHA => Ok(Modi::ModiLetterDha),
-            MODI_LETTER_NA => Ok(Modi::ModiLetterNa),
-            MODI_LETTER_PA => Ok(Modi::ModiLetterPa),
-            MODI_LETTER_PHA => Ok(Modi::ModiLetterPha),
-            MODI_LETTER_BA => Ok(Modi::ModiLetterBa),
-            MODI_LETTER_BHA => Ok(Modi::ModiLetterBha),
-            MODI_LETTER_MA => Ok(Modi::ModiLetterMa),
-            MODI_LETTER_YA => Ok(Modi::ModiLetterYa),
-            MODI_LETTER_RA => Ok(Modi::ModiLetterRa),
-            MODI_LETTER_LA => Ok(Modi::ModiLetterLa),
-            MODI_LETTER_VA => Ok(Modi::ModiLetterVa),
-            MODI_LETTER_SHA => Ok(Modi::ModiLetterSha),
-            MODI_LETTER_SSA => Ok(Modi::ModiLetterSsa),
-            MODI_LETTER_SA => Ok(Modi::ModiLetterSa),
-            MODI_LETTER_HA => Ok(Modi::ModiLetterHa),
-            MODI_LETTER_LLA => Ok(Modi::ModiLetterLla),
-            MODI_VOWEL_SIGN_AA => Ok(Modi::ModiVowelSignAa),
-            MODI_VOWEL_SIGN_I => Ok(Modi::ModiVowelSignI),
-            MODI_VOWEL_SIGN_II => Ok(Modi::ModiVowelSignIi),
-            MODI_VOWEL_SIGN_U => Ok(Modi::ModiVowelSignU),
-            MODI_VOWEL_SIGN_UU => Ok(Modi::ModiVowelSignUu),
-            MODI_VOWEL_SIGN_VOCALIC_R => Ok(Modi::ModiVowelSignVocalicR),
-            MODI_VOWEL_SIGN_VOCALIC_RR => Ok(Modi::ModiVowelSignVocalicRr),
-            MODI_VOWEL_SIGN_VOCALIC_L => Ok(Modi::ModiVowelSignVocalicL),
-            MODI_VOWEL_SIGN_VOCALIC_LL => Ok(Modi::ModiVowelSignVocalicLl),
-            MODI_VOWEL_SIGN_E => Ok(Modi::ModiVowelSignE),
-            MODI_VOWEL_SIGN_AI => Ok(Modi::ModiVowelSignAi),
-            MODI_VOWEL_SIGN_O => Ok(Modi::ModiVowelSignO),
-            MODI_VOWEL_SIGN_AU => Ok(Modi::ModiVowelSignAu),
-            MODI_SIGN_ANUSVARA => Ok(Modi::ModiSignAnusvara),
-            MODI_SIGN_VISARGA => Ok(Modi::ModiSignVisarga),
-            MODI_SIGN_VIRAMA => Ok(Modi::ModiSignVirama),
-            MODI_SIGN_ARDHACANDRA => Ok(Modi::ModiSignArdhacandra),
-            MODI_DANDA => Ok(Modi::ModiDanda),
-            MODI_DOUBLE_DANDA => Ok(Modi::ModiDoubleDanda),
-            MODI_ABBREVIATION_SIGN => Ok(Modi::ModiAbbreviationSign),
-            MODI_SIGN_HUVA => Ok(Modi::ModiSignHuva),
-            MODI_DIGIT_ZERO => Ok(Modi::ModiDigitZero),
-            MODI_DIGIT_ONE => Ok(Modi::ModiDigitOne),
-            MODI_DIGIT_TWO => Ok(Modi::ModiDigitTwo),
-            MODI_DIGIT_THREE => Ok(Modi::ModiDigitThree),
-            MODI_DIGIT_FOUR => Ok(Modi::ModiDigitFour),
-            MODI_DIGIT_FIVE => Ok(Modi::ModiDigitFive),
-            MODI_DIGIT_SIX => Ok(Modi::ModiDigitSix),
-            MODI_DIGIT_SEVEN => Ok(Modi::ModiDigitSeven),
-            MODI_DIGIT_EIGHT => Ok(Modi::ModiDigitEight),
-            MODI_DIGIT_NINE => Ok(Modi::ModiDigitNine),
+            LETTER_A => Ok(Modi::LetterA),
+            LETTER_AA => Ok(Modi::LetterAa),
+            LETTER_I => Ok(Modi::LetterI),
+            LETTER_II => Ok(Modi::LetterIi),
+            LETTER_U => Ok(Modi::LetterU),
+            LETTER_UU => Ok(Modi::LetterUu),
+            LETTER_VOCALIC_R => Ok(Modi::LetterVocalicR),
+            LETTER_VOCALIC_RR => Ok(Modi::LetterVocalicRr),
+            LETTER_VOCALIC_L => Ok(Modi::LetterVocalicL),
+            LETTER_VOCALIC_LL => Ok(Modi::LetterVocalicLl),
+            LETTER_E => Ok(Modi::LetterE),
+            LETTER_AI => Ok(Modi::LetterAi),
+            LETTER_O => Ok(Modi::LetterO),
+            LETTER_AU => Ok(Modi::LetterAu),
+            LETTER_KA => Ok(Modi::LetterKa),
+            LETTER_KHA => Ok(Modi::LetterKha),
+            LETTER_GA => Ok(Modi::LetterGa),
+            LETTER_GHA => Ok(Modi::LetterGha),
+            LETTER_NGA => Ok(Modi::LetterNga),
+            LETTER_CA => Ok(Modi::LetterCa),
+            LETTER_CHA => Ok(Modi::LetterCha),
+            LETTER_JA => Ok(Modi::LetterJa),
+            LETTER_JHA => Ok(Modi::LetterJha),
+            LETTER_NYA => Ok(Modi::LetterNya),
+            LETTER_TTA => Ok(Modi::LetterTta),
+            LETTER_TTHA => Ok(Modi::LetterTtha),
+            LETTER_DDA => Ok(Modi::LetterDda),
+            LETTER_DDHA => Ok(Modi::LetterDdha),
+            LETTER_NNA => Ok(Modi::LetterNna),
+            LETTER_TA => Ok(Modi::LetterTa),
+            LETTER_THA => Ok(Modi::LetterTha),
+            LETTER_DA => Ok(Modi::LetterDa),
+            LETTER_DHA => Ok(Modi::LetterDha),
+            LETTER_NA => Ok(Modi::LetterNa),
+            LETTER_PA => Ok(Modi::LetterPa),
+            LETTER_PHA => Ok(Modi::LetterPha),
+            LETTER_BA => Ok(Modi::LetterBa),
+            LETTER_BHA => Ok(Modi::LetterBha),
+            LETTER_MA => Ok(Modi::LetterMa),
+            LETTER_YA => Ok(Modi::LetterYa),
+            LETTER_RA => Ok(Modi::LetterRa),
+            LETTER_LA => Ok(Modi::LetterLa),
+            LETTER_VA => Ok(Modi::LetterVa),
+            LETTER_SHA => Ok(Modi::LetterSha),
+            LETTER_SSA => Ok(Modi::LetterSsa),
+            LETTER_SA => Ok(Modi::LetterSa),
+            LETTER_HA => Ok(Modi::LetterHa),
+            LETTER_LLA => Ok(Modi::LetterLla),
+            VOWEL_SIGN_AA => Ok(Modi::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Modi::VowelSignI),
+            VOWEL_SIGN_II => Ok(Modi::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Modi::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Modi::VowelSignUu),
+            VOWEL_SIGN_VOCALIC_R => Ok(Modi::VowelSignVocalicR),
+            VOWEL_SIGN_VOCALIC_RR => Ok(Modi::VowelSignVocalicRr),
+            VOWEL_SIGN_VOCALIC_L => Ok(Modi::VowelSignVocalicL),
+            VOWEL_SIGN_VOCALIC_LL => Ok(Modi::VowelSignVocalicLl),
+            VOWEL_SIGN_E => Ok(Modi::VowelSignE),
+            VOWEL_SIGN_AI => Ok(Modi::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Modi::VowelSignO),
+            VOWEL_SIGN_AU => Ok(Modi::VowelSignAu),
+            SIGN_ANUSVARA => Ok(Modi::SignAnusvara),
+            SIGN_VISARGA => Ok(Modi::SignVisarga),
+            SIGN_VIRAMA => Ok(Modi::SignVirama),
+            SIGN_ARDHACANDRA => Ok(Modi::SignArdhacandra),
+            DANDA => Ok(Modi::Danda),
+            DOUBLE_DANDA => Ok(Modi::DoubleDanda),
+            ABBREVIATION_SIGN => Ok(Modi::AbbreviationSign),
+            SIGN_HUVA => Ok(Modi::SignHuva),
+            DIGIT_ZERO => Ok(Modi::DigitZero),
+            DIGIT_ONE => Ok(Modi::DigitOne),
+            DIGIT_TWO => Ok(Modi::DigitTwo),
+            DIGIT_THREE => Ok(Modi::DigitThree),
+            DIGIT_FOUR => Ok(Modi::DigitFour),
+            DIGIT_FIVE => Ok(Modi::DigitFive),
+            DIGIT_SIX => Ok(Modi::DigitSix),
+            DIGIT_SEVEN => Ok(Modi::DigitSeven),
+            DIGIT_EIGHT => Ok(Modi::DigitEight),
+            DIGIT_NINE => Ok(Modi::DigitNine),
             _ => Err(()),
         }
     }
@@ -544,93 +544,93 @@ impl Iterator for Modi {
 }
 
 impl Modi {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Modi::ModiLetterA
+        Modi::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Modi::ModiLetterA => "modi letter a",
-            Modi::ModiLetterAa => "modi letter aa",
-            Modi::ModiLetterI => "modi letter i",
-            Modi::ModiLetterIi => "modi letter ii",
-            Modi::ModiLetterU => "modi letter u",
-            Modi::ModiLetterUu => "modi letter uu",
-            Modi::ModiLetterVocalicR => "modi letter vocalic r",
-            Modi::ModiLetterVocalicRr => "modi letter vocalic rr",
-            Modi::ModiLetterVocalicL => "modi letter vocalic l",
-            Modi::ModiLetterVocalicLl => "modi letter vocalic ll",
-            Modi::ModiLetterE => "modi letter e",
-            Modi::ModiLetterAi => "modi letter ai",
-            Modi::ModiLetterO => "modi letter o",
-            Modi::ModiLetterAu => "modi letter au",
-            Modi::ModiLetterKa => "modi letter ka",
-            Modi::ModiLetterKha => "modi letter kha",
-            Modi::ModiLetterGa => "modi letter ga",
-            Modi::ModiLetterGha => "modi letter gha",
-            Modi::ModiLetterNga => "modi letter nga",
-            Modi::ModiLetterCa => "modi letter ca",
-            Modi::ModiLetterCha => "modi letter cha",
-            Modi::ModiLetterJa => "modi letter ja",
-            Modi::ModiLetterJha => "modi letter jha",
-            Modi::ModiLetterNya => "modi letter nya",
-            Modi::ModiLetterTta => "modi letter tta",
-            Modi::ModiLetterTtha => "modi letter ttha",
-            Modi::ModiLetterDda => "modi letter dda",
-            Modi::ModiLetterDdha => "modi letter ddha",
-            Modi::ModiLetterNna => "modi letter nna",
-            Modi::ModiLetterTa => "modi letter ta",
-            Modi::ModiLetterTha => "modi letter tha",
-            Modi::ModiLetterDa => "modi letter da",
-            Modi::ModiLetterDha => "modi letter dha",
-            Modi::ModiLetterNa => "modi letter na",
-            Modi::ModiLetterPa => "modi letter pa",
-            Modi::ModiLetterPha => "modi letter pha",
-            Modi::ModiLetterBa => "modi letter ba",
-            Modi::ModiLetterBha => "modi letter bha",
-            Modi::ModiLetterMa => "modi letter ma",
-            Modi::ModiLetterYa => "modi letter ya",
-            Modi::ModiLetterRa => "modi letter ra",
-            Modi::ModiLetterLa => "modi letter la",
-            Modi::ModiLetterVa => "modi letter va",
-            Modi::ModiLetterSha => "modi letter sha",
-            Modi::ModiLetterSsa => "modi letter ssa",
-            Modi::ModiLetterSa => "modi letter sa",
-            Modi::ModiLetterHa => "modi letter ha",
-            Modi::ModiLetterLla => "modi letter lla",
-            Modi::ModiVowelSignAa => "modi vowel sign aa",
-            Modi::ModiVowelSignI => "modi vowel sign i",
-            Modi::ModiVowelSignIi => "modi vowel sign ii",
-            Modi::ModiVowelSignU => "modi vowel sign u",
-            Modi::ModiVowelSignUu => "modi vowel sign uu",
-            Modi::ModiVowelSignVocalicR => "modi vowel sign vocalic r",
-            Modi::ModiVowelSignVocalicRr => "modi vowel sign vocalic rr",
-            Modi::ModiVowelSignVocalicL => "modi vowel sign vocalic l",
-            Modi::ModiVowelSignVocalicLl => "modi vowel sign vocalic ll",
-            Modi::ModiVowelSignE => "modi vowel sign e",
-            Modi::ModiVowelSignAi => "modi vowel sign ai",
-            Modi::ModiVowelSignO => "modi vowel sign o",
-            Modi::ModiVowelSignAu => "modi vowel sign au",
-            Modi::ModiSignAnusvara => "modi sign anusvara",
-            Modi::ModiSignVisarga => "modi sign visarga",
-            Modi::ModiSignVirama => "modi sign virama",
-            Modi::ModiSignArdhacandra => "modi sign ardhacandra",
-            Modi::ModiDanda => "modi danda",
-            Modi::ModiDoubleDanda => "modi double danda",
-            Modi::ModiAbbreviationSign => "modi abbreviation sign",
-            Modi::ModiSignHuva => "modi sign huva",
-            Modi::ModiDigitZero => "modi digit zero",
-            Modi::ModiDigitOne => "modi digit one",
-            Modi::ModiDigitTwo => "modi digit two",
-            Modi::ModiDigitThree => "modi digit three",
-            Modi::ModiDigitFour => "modi digit four",
-            Modi::ModiDigitFive => "modi digit five",
-            Modi::ModiDigitSix => "modi digit six",
-            Modi::ModiDigitSeven => "modi digit seven",
-            Modi::ModiDigitEight => "modi digit eight",
-            Modi::ModiDigitNine => "modi digit nine",
+            Modi::LetterA => "modi letter a",
+            Modi::LetterAa => "modi letter aa",
+            Modi::LetterI => "modi letter i",
+            Modi::LetterIi => "modi letter ii",
+            Modi::LetterU => "modi letter u",
+            Modi::LetterUu => "modi letter uu",
+            Modi::LetterVocalicR => "modi letter vocalic r",
+            Modi::LetterVocalicRr => "modi letter vocalic rr",
+            Modi::LetterVocalicL => "modi letter vocalic l",
+            Modi::LetterVocalicLl => "modi letter vocalic ll",
+            Modi::LetterE => "modi letter e",
+            Modi::LetterAi => "modi letter ai",
+            Modi::LetterO => "modi letter o",
+            Modi::LetterAu => "modi letter au",
+            Modi::LetterKa => "modi letter ka",
+            Modi::LetterKha => "modi letter kha",
+            Modi::LetterGa => "modi letter ga",
+            Modi::LetterGha => "modi letter gha",
+            Modi::LetterNga => "modi letter nga",
+            Modi::LetterCa => "modi letter ca",
+            Modi::LetterCha => "modi letter cha",
+            Modi::LetterJa => "modi letter ja",
+            Modi::LetterJha => "modi letter jha",
+            Modi::LetterNya => "modi letter nya",
+            Modi::LetterTta => "modi letter tta",
+            Modi::LetterTtha => "modi letter ttha",
+            Modi::LetterDda => "modi letter dda",
+            Modi::LetterDdha => "modi letter ddha",
+            Modi::LetterNna => "modi letter nna",
+            Modi::LetterTa => "modi letter ta",
+            Modi::LetterTha => "modi letter tha",
+            Modi::LetterDa => "modi letter da",
+            Modi::LetterDha => "modi letter dha",
+            Modi::LetterNa => "modi letter na",
+            Modi::LetterPa => "modi letter pa",
+            Modi::LetterPha => "modi letter pha",
+            Modi::LetterBa => "modi letter ba",
+            Modi::LetterBha => "modi letter bha",
+            Modi::LetterMa => "modi letter ma",
+            Modi::LetterYa => "modi letter ya",
+            Modi::LetterRa => "modi letter ra",
+            Modi::LetterLa => "modi letter la",
+            Modi::LetterVa => "modi letter va",
+            Modi::LetterSha => "modi letter sha",
+            Modi::LetterSsa => "modi letter ssa",
+            Modi::LetterSa => "modi letter sa",
+            Modi::LetterHa => "modi letter ha",
+            Modi::LetterLla => "modi letter lla",
+            Modi::VowelSignAa => "modi vowel sign aa",
+            Modi::VowelSignI => "modi vowel sign i",
+            Modi::VowelSignIi => "modi vowel sign ii",
+            Modi::VowelSignU => "modi vowel sign u",
+            Modi::VowelSignUu => "modi vowel sign uu",
+            Modi::VowelSignVocalicR => "modi vowel sign vocalic r",
+            Modi::VowelSignVocalicRr => "modi vowel sign vocalic rr",
+            Modi::VowelSignVocalicL => "modi vowel sign vocalic l",
+            Modi::VowelSignVocalicLl => "modi vowel sign vocalic ll",
+            Modi::VowelSignE => "modi vowel sign e",
+            Modi::VowelSignAi => "modi vowel sign ai",
+            Modi::VowelSignO => "modi vowel sign o",
+            Modi::VowelSignAu => "modi vowel sign au",
+            Modi::SignAnusvara => "modi sign anusvara",
+            Modi::SignVisarga => "modi sign visarga",
+            Modi::SignVirama => "modi sign virama",
+            Modi::SignArdhacandra => "modi sign ardhacandra",
+            Modi::Danda => "modi danda",
+            Modi::DoubleDanda => "modi double danda",
+            Modi::AbbreviationSign => "modi abbreviation sign",
+            Modi::SignHuva => "modi sign huva",
+            Modi::DigitZero => "modi digit zero",
+            Modi::DigitOne => "modi digit one",
+            Modi::DigitTwo => "modi digit two",
+            Modi::DigitThree => "modi digit three",
+            Modi::DigitFour => "modi digit four",
+            Modi::DigitFive => "modi digit five",
+            Modi::DigitSix => "modi digit six",
+            Modi::DigitSeven => "modi digit seven",
+            Modi::DigitEight => "modi digit eight",
+            Modi::DigitNine => "modi digit nine",
         }
     }
 }

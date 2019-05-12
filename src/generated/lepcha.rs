@@ -7,151 +7,151 @@
 /// ᱃ ᱄ ᱅ ᱆ ᱇ ᱈ ᱉ ᱍ ᱎ
 pub mod constants {
     /// \u{1c00}: 'ᰀ'
-    pub const LEPCHA_LETTER_KA: char = 'ᰀ';
+    pub const LETTER_KA: char = 'ᰀ';
     /// \u{1c01}: 'ᰁ'
-    pub const LEPCHA_LETTER_KLA: char = 'ᰁ';
+    pub const LETTER_KLA: char = 'ᰁ';
     /// \u{1c02}: 'ᰂ'
-    pub const LEPCHA_LETTER_KHA: char = 'ᰂ';
+    pub const LETTER_KHA: char = 'ᰂ';
     /// \u{1c03}: 'ᰃ'
-    pub const LEPCHA_LETTER_GA: char = 'ᰃ';
+    pub const LETTER_GA: char = 'ᰃ';
     /// \u{1c04}: 'ᰄ'
-    pub const LEPCHA_LETTER_GLA: char = 'ᰄ';
+    pub const LETTER_GLA: char = 'ᰄ';
     /// \u{1c05}: 'ᰅ'
-    pub const LEPCHA_LETTER_NGA: char = 'ᰅ';
+    pub const LETTER_NGA: char = 'ᰅ';
     /// \u{1c06}: 'ᰆ'
-    pub const LEPCHA_LETTER_CA: char = 'ᰆ';
+    pub const LETTER_CA: char = 'ᰆ';
     /// \u{1c07}: 'ᰇ'
-    pub const LEPCHA_LETTER_CHA: char = 'ᰇ';
+    pub const LETTER_CHA: char = 'ᰇ';
     /// \u{1c08}: 'ᰈ'
-    pub const LEPCHA_LETTER_JA: char = 'ᰈ';
+    pub const LETTER_JA: char = 'ᰈ';
     /// \u{1c09}: 'ᰉ'
-    pub const LEPCHA_LETTER_NYA: char = 'ᰉ';
+    pub const LETTER_NYA: char = 'ᰉ';
     /// \u{1c0a}: 'ᰊ'
-    pub const LEPCHA_LETTER_TA: char = 'ᰊ';
+    pub const LETTER_TA: char = 'ᰊ';
     /// \u{1c0b}: 'ᰋ'
-    pub const LEPCHA_LETTER_THA: char = 'ᰋ';
+    pub const LETTER_THA: char = 'ᰋ';
     /// \u{1c0c}: 'ᰌ'
-    pub const LEPCHA_LETTER_DA: char = 'ᰌ';
+    pub const LETTER_DA: char = 'ᰌ';
     /// \u{1c0d}: 'ᰍ'
-    pub const LEPCHA_LETTER_NA: char = 'ᰍ';
+    pub const LETTER_NA: char = 'ᰍ';
     /// \u{1c0e}: 'ᰎ'
-    pub const LEPCHA_LETTER_PA: char = 'ᰎ';
+    pub const LETTER_PA: char = 'ᰎ';
     /// \u{1c0f}: 'ᰏ'
-    pub const LEPCHA_LETTER_PLA: char = 'ᰏ';
+    pub const LETTER_PLA: char = 'ᰏ';
     /// \u{1c10}: 'ᰐ'
-    pub const LEPCHA_LETTER_PHA: char = 'ᰐ';
+    pub const LETTER_PHA: char = 'ᰐ';
     /// \u{1c11}: 'ᰑ'
-    pub const LEPCHA_LETTER_FA: char = 'ᰑ';
+    pub const LETTER_FA: char = 'ᰑ';
     /// \u{1c12}: 'ᰒ'
-    pub const LEPCHA_LETTER_FLA: char = 'ᰒ';
+    pub const LETTER_FLA: char = 'ᰒ';
     /// \u{1c13}: 'ᰓ'
-    pub const LEPCHA_LETTER_BA: char = 'ᰓ';
+    pub const LETTER_BA: char = 'ᰓ';
     /// \u{1c14}: 'ᰔ'
-    pub const LEPCHA_LETTER_BLA: char = 'ᰔ';
+    pub const LETTER_BLA: char = 'ᰔ';
     /// \u{1c15}: 'ᰕ'
-    pub const LEPCHA_LETTER_MA: char = 'ᰕ';
+    pub const LETTER_MA: char = 'ᰕ';
     /// \u{1c16}: 'ᰖ'
-    pub const LEPCHA_LETTER_MLA: char = 'ᰖ';
+    pub const LETTER_MLA: char = 'ᰖ';
     /// \u{1c17}: 'ᰗ'
-    pub const LEPCHA_LETTER_TSA: char = 'ᰗ';
+    pub const LETTER_TSA: char = 'ᰗ';
     /// \u{1c18}: 'ᰘ'
-    pub const LEPCHA_LETTER_TSHA: char = 'ᰘ';
+    pub const LETTER_TSHA: char = 'ᰘ';
     /// \u{1c19}: 'ᰙ'
-    pub const LEPCHA_LETTER_DZA: char = 'ᰙ';
+    pub const LETTER_DZA: char = 'ᰙ';
     /// \u{1c1a}: 'ᰚ'
-    pub const LEPCHA_LETTER_YA: char = 'ᰚ';
+    pub const LETTER_YA: char = 'ᰚ';
     /// \u{1c1b}: 'ᰛ'
-    pub const LEPCHA_LETTER_RA: char = 'ᰛ';
+    pub const LETTER_RA: char = 'ᰛ';
     /// \u{1c1c}: 'ᰜ'
-    pub const LEPCHA_LETTER_LA: char = 'ᰜ';
+    pub const LETTER_LA: char = 'ᰜ';
     /// \u{1c1d}: 'ᰝ'
-    pub const LEPCHA_LETTER_HA: char = 'ᰝ';
+    pub const LETTER_HA: char = 'ᰝ';
     /// \u{1c1e}: 'ᰞ'
-    pub const LEPCHA_LETTER_HLA: char = 'ᰞ';
+    pub const LETTER_HLA: char = 'ᰞ';
     /// \u{1c1f}: 'ᰟ'
-    pub const LEPCHA_LETTER_VA: char = 'ᰟ';
+    pub const LETTER_VA: char = 'ᰟ';
     /// \u{1c20}: 'ᰠ'
-    pub const LEPCHA_LETTER_SA: char = 'ᰠ';
+    pub const LETTER_SA: char = 'ᰠ';
     /// \u{1c21}: 'ᰡ'
-    pub const LEPCHA_LETTER_SHA: char = 'ᰡ';
+    pub const LETTER_SHA: char = 'ᰡ';
     /// \u{1c22}: 'ᰢ'
-    pub const LEPCHA_LETTER_WA: char = 'ᰢ';
+    pub const LETTER_WA: char = 'ᰢ';
     /// \u{1c23}: 'ᰣ'
-    pub const LEPCHA_LETTER_A: char = 'ᰣ';
+    pub const LETTER_A: char = 'ᰣ';
     /// \u{1c24}: 'ᰤ'
-    pub const LEPCHA_SUBJOINED_LETTER_YA: char = 'ᰤ';
+    pub const SUBJOINED_LETTER_YA: char = 'ᰤ';
     /// \u{1c25}: 'ᰥ'
-    pub const LEPCHA_SUBJOINED_LETTER_RA: char = 'ᰥ';
+    pub const SUBJOINED_LETTER_RA: char = 'ᰥ';
     /// \u{1c26}: 'ᰦ'
-    pub const LEPCHA_VOWEL_SIGN_AA: char = 'ᰦ';
+    pub const VOWEL_SIGN_AA: char = 'ᰦ';
     /// \u{1c27}: 'ᰧ'
-    pub const LEPCHA_VOWEL_SIGN_I: char = 'ᰧ';
+    pub const VOWEL_SIGN_I: char = 'ᰧ';
     /// \u{1c28}: 'ᰨ'
-    pub const LEPCHA_VOWEL_SIGN_O: char = 'ᰨ';
+    pub const VOWEL_SIGN_O: char = 'ᰨ';
     /// \u{1c29}: 'ᰩ'
-    pub const LEPCHA_VOWEL_SIGN_OO: char = 'ᰩ';
+    pub const VOWEL_SIGN_OO: char = 'ᰩ';
     /// \u{1c2a}: 'ᰪ'
-    pub const LEPCHA_VOWEL_SIGN_U: char = 'ᰪ';
+    pub const VOWEL_SIGN_U: char = 'ᰪ';
     /// \u{1c2b}: 'ᰫ'
-    pub const LEPCHA_VOWEL_SIGN_UU: char = 'ᰫ';
+    pub const VOWEL_SIGN_UU: char = 'ᰫ';
     /// \u{1c2c}: 'ᰬ'
-    pub const LEPCHA_VOWEL_SIGN_E: char = 'ᰬ';
+    pub const VOWEL_SIGN_E: char = 'ᰬ';
     /// \u{1c2d}: 'ᰭ'
-    pub const LEPCHA_CONSONANT_SIGN_K: char = 'ᰭ';
+    pub const CONSONANT_SIGN_K: char = 'ᰭ';
     /// \u{1c2e}: 'ᰮ'
-    pub const LEPCHA_CONSONANT_SIGN_M: char = 'ᰮ';
+    pub const CONSONANT_SIGN_M: char = 'ᰮ';
     /// \u{1c2f}: 'ᰯ'
-    pub const LEPCHA_CONSONANT_SIGN_L: char = 'ᰯ';
+    pub const CONSONANT_SIGN_L: char = 'ᰯ';
     /// \u{1c30}: 'ᰰ'
-    pub const LEPCHA_CONSONANT_SIGN_N: char = 'ᰰ';
+    pub const CONSONANT_SIGN_N: char = 'ᰰ';
     /// \u{1c31}: 'ᰱ'
-    pub const LEPCHA_CONSONANT_SIGN_P: char = 'ᰱ';
+    pub const CONSONANT_SIGN_P: char = 'ᰱ';
     /// \u{1c32}: 'ᰲ'
-    pub const LEPCHA_CONSONANT_SIGN_R: char = 'ᰲ';
+    pub const CONSONANT_SIGN_R: char = 'ᰲ';
     /// \u{1c33}: 'ᰳ'
-    pub const LEPCHA_CONSONANT_SIGN_T: char = 'ᰳ';
+    pub const CONSONANT_SIGN_T: char = 'ᰳ';
     /// \u{1c34}: 'ᰴ'
-    pub const LEPCHA_CONSONANT_SIGN_NYIN_DASH_DO: char = 'ᰴ';
+    pub const CONSONANT_SIGN_NYIN_DASH_DO: char = 'ᰴ';
     /// \u{1c35}: 'ᰵ'
-    pub const LEPCHA_CONSONANT_SIGN_KANG: char = 'ᰵ';
+    pub const CONSONANT_SIGN_KANG: char = 'ᰵ';
     /// \u{1c36}: 'ᰶ'
-    pub const LEPCHA_SIGN_RAN: char = 'ᰶ';
+    pub const SIGN_RAN: char = 'ᰶ';
     /// \u{1c37}: '᰷'
-    pub const LEPCHA_SIGN_NUKTA: char = '᰷';
+    pub const SIGN_NUKTA: char = '᰷';
     /// \u{1c3b}: '᰻'
-    pub const LEPCHA_PUNCTUATION_TA_DASH_ROL: char = '᰻';
+    pub const PUNCTUATION_TA_DASH_ROL: char = '᰻';
     /// \u{1c3c}: '᰼'
-    pub const LEPCHA_PUNCTUATION_NYET_THYOOM_TA_DASH_ROL: char = '᰼';
+    pub const PUNCTUATION_NYET_THYOOM_TA_DASH_ROL: char = '᰼';
     /// \u{1c3d}: '᰽'
-    pub const LEPCHA_PUNCTUATION_CER_DASH_WA: char = '᰽';
+    pub const PUNCTUATION_CER_DASH_WA: char = '᰽';
     /// \u{1c3e}: '᰾'
-    pub const LEPCHA_PUNCTUATION_TSHOOK_CER_DASH_WA: char = '᰾';
+    pub const PUNCTUATION_TSHOOK_CER_DASH_WA: char = '᰾';
     /// \u{1c3f}: '᰿'
-    pub const LEPCHA_PUNCTUATION_TSHOOK: char = '᰿';
+    pub const PUNCTUATION_TSHOOK: char = '᰿';
     /// \u{1c40}: '᱀'
-    pub const LEPCHA_DIGIT_ZERO: char = '᱀';
+    pub const DIGIT_ZERO: char = '᱀';
     /// \u{1c41}: '᱁'
-    pub const LEPCHA_DIGIT_ONE: char = '᱁';
+    pub const DIGIT_ONE: char = '᱁';
     /// \u{1c42}: '᱂'
-    pub const LEPCHA_DIGIT_TWO: char = '᱂';
+    pub const DIGIT_TWO: char = '᱂';
     /// \u{1c43}: '᱃'
-    pub const LEPCHA_DIGIT_THREE: char = '᱃';
+    pub const DIGIT_THREE: char = '᱃';
     /// \u{1c44}: '᱄'
-    pub const LEPCHA_DIGIT_FOUR: char = '᱄';
+    pub const DIGIT_FOUR: char = '᱄';
     /// \u{1c45}: '᱅'
-    pub const LEPCHA_DIGIT_FIVE: char = '᱅';
+    pub const DIGIT_FIVE: char = '᱅';
     /// \u{1c46}: '᱆'
-    pub const LEPCHA_DIGIT_SIX: char = '᱆';
+    pub const DIGIT_SIX: char = '᱆';
     /// \u{1c47}: '᱇'
-    pub const LEPCHA_DIGIT_SEVEN: char = '᱇';
+    pub const DIGIT_SEVEN: char = '᱇';
     /// \u{1c48}: '᱈'
-    pub const LEPCHA_DIGIT_EIGHT: char = '᱈';
+    pub const DIGIT_EIGHT: char = '᱈';
     /// \u{1c49}: '᱉'
-    pub const LEPCHA_DIGIT_NINE: char = '᱉';
+    pub const DIGIT_NINE: char = '᱉';
     /// \u{1c4d}: 'ᱍ'
-    pub const LEPCHA_LETTER_TTA: char = 'ᱍ';
+    pub const LETTER_TTA: char = 'ᱍ';
     /// \u{1c4e}: 'ᱎ'
-    pub const LEPCHA_LETTER_TTHA: char = 'ᱎ';
+    pub const LETTER_TTHA: char = 'ᱎ';
 }
 
 /// \u{1c00} → \u{1c4f}\
@@ -164,230 +164,230 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Lepcha {
     /// \u{1c00}: 'ᰀ'
-    LepchaLetterKa,
+    LetterKa,
     /// \u{1c01}: 'ᰁ'
-    LepchaLetterKla,
+    LetterKla,
     /// \u{1c02}: 'ᰂ'
-    LepchaLetterKha,
+    LetterKha,
     /// \u{1c03}: 'ᰃ'
-    LepchaLetterGa,
+    LetterGa,
     /// \u{1c04}: 'ᰄ'
-    LepchaLetterGla,
+    LetterGla,
     /// \u{1c05}: 'ᰅ'
-    LepchaLetterNga,
+    LetterNga,
     /// \u{1c06}: 'ᰆ'
-    LepchaLetterCa,
+    LetterCa,
     /// \u{1c07}: 'ᰇ'
-    LepchaLetterCha,
+    LetterCha,
     /// \u{1c08}: 'ᰈ'
-    LepchaLetterJa,
+    LetterJa,
     /// \u{1c09}: 'ᰉ'
-    LepchaLetterNya,
+    LetterNya,
     /// \u{1c0a}: 'ᰊ'
-    LepchaLetterTa,
+    LetterTa,
     /// \u{1c0b}: 'ᰋ'
-    LepchaLetterTha,
+    LetterTha,
     /// \u{1c0c}: 'ᰌ'
-    LepchaLetterDa,
+    LetterDa,
     /// \u{1c0d}: 'ᰍ'
-    LepchaLetterNa,
+    LetterNa,
     /// \u{1c0e}: 'ᰎ'
-    LepchaLetterPa,
+    LetterPa,
     /// \u{1c0f}: 'ᰏ'
-    LepchaLetterPla,
+    LetterPla,
     /// \u{1c10}: 'ᰐ'
-    LepchaLetterPha,
+    LetterPha,
     /// \u{1c11}: 'ᰑ'
-    LepchaLetterFa,
+    LetterFa,
     /// \u{1c12}: 'ᰒ'
-    LepchaLetterFla,
+    LetterFla,
     /// \u{1c13}: 'ᰓ'
-    LepchaLetterBa,
+    LetterBa,
     /// \u{1c14}: 'ᰔ'
-    LepchaLetterBla,
+    LetterBla,
     /// \u{1c15}: 'ᰕ'
-    LepchaLetterMa,
+    LetterMa,
     /// \u{1c16}: 'ᰖ'
-    LepchaLetterMla,
+    LetterMla,
     /// \u{1c17}: 'ᰗ'
-    LepchaLetterTsa,
+    LetterTsa,
     /// \u{1c18}: 'ᰘ'
-    LepchaLetterTsha,
+    LetterTsha,
     /// \u{1c19}: 'ᰙ'
-    LepchaLetterDza,
+    LetterDza,
     /// \u{1c1a}: 'ᰚ'
-    LepchaLetterYa,
+    LetterYa,
     /// \u{1c1b}: 'ᰛ'
-    LepchaLetterRa,
+    LetterRa,
     /// \u{1c1c}: 'ᰜ'
-    LepchaLetterLa,
+    LetterLa,
     /// \u{1c1d}: 'ᰝ'
-    LepchaLetterHa,
+    LetterHa,
     /// \u{1c1e}: 'ᰞ'
-    LepchaLetterHla,
+    LetterHla,
     /// \u{1c1f}: 'ᰟ'
-    LepchaLetterVa,
+    LetterVa,
     /// \u{1c20}: 'ᰠ'
-    LepchaLetterSa,
+    LetterSa,
     /// \u{1c21}: 'ᰡ'
-    LepchaLetterSha,
+    LetterSha,
     /// \u{1c22}: 'ᰢ'
-    LepchaLetterWa,
+    LetterWa,
     /// \u{1c23}: 'ᰣ'
-    LepchaLetterA,
+    LetterA,
     /// \u{1c24}: 'ᰤ'
-    LepchaSubjoinedLetterYa,
+    SubjoinedLetterYa,
     /// \u{1c25}: 'ᰥ'
-    LepchaSubjoinedLetterRa,
+    SubjoinedLetterRa,
     /// \u{1c26}: 'ᰦ'
-    LepchaVowelSignAa,
+    VowelSignAa,
     /// \u{1c27}: 'ᰧ'
-    LepchaVowelSignI,
+    VowelSignI,
     /// \u{1c28}: 'ᰨ'
-    LepchaVowelSignO,
+    VowelSignO,
     /// \u{1c29}: 'ᰩ'
-    LepchaVowelSignOo,
+    VowelSignOo,
     /// \u{1c2a}: 'ᰪ'
-    LepchaVowelSignU,
+    VowelSignU,
     /// \u{1c2b}: 'ᰫ'
-    LepchaVowelSignUu,
+    VowelSignUu,
     /// \u{1c2c}: 'ᰬ'
-    LepchaVowelSignE,
+    VowelSignE,
     /// \u{1c2d}: 'ᰭ'
-    LepchaConsonantSignK,
+    ConsonantSignK,
     /// \u{1c2e}: 'ᰮ'
-    LepchaConsonantSignM,
+    ConsonantSignM,
     /// \u{1c2f}: 'ᰯ'
-    LepchaConsonantSignL,
+    ConsonantSignL,
     /// \u{1c30}: 'ᰰ'
-    LepchaConsonantSignN,
+    ConsonantSignN,
     /// \u{1c31}: 'ᰱ'
-    LepchaConsonantSignP,
+    ConsonantSignP,
     /// \u{1c32}: 'ᰲ'
-    LepchaConsonantSignR,
+    ConsonantSignR,
     /// \u{1c33}: 'ᰳ'
-    LepchaConsonantSignT,
+    ConsonantSignT,
     /// \u{1c34}: 'ᰴ'
-    LepchaConsonantSignNyinDashDo,
+    ConsonantSignNyinDashDo,
     /// \u{1c35}: 'ᰵ'
-    LepchaConsonantSignKang,
+    ConsonantSignKang,
     /// \u{1c36}: 'ᰶ'
-    LepchaSignRan,
+    SignRan,
     /// \u{1c37}: '᰷'
-    LepchaSignNukta,
+    SignNukta,
     /// \u{1c3b}: '᰻'
-    LepchaPunctuationTaDashRol,
+    PunctuationTaDashRol,
     /// \u{1c3c}: '᰼'
-    LepchaPunctuationNyetThyoomTaDashRol,
+    PunctuationNyetThyoomTaDashRol,
     /// \u{1c3d}: '᰽'
-    LepchaPunctuationCerDashWa,
+    PunctuationCerDashWa,
     /// \u{1c3e}: '᰾'
-    LepchaPunctuationTshookCerDashWa,
+    PunctuationTshookCerDashWa,
     /// \u{1c3f}: '᰿'
-    LepchaPunctuationTshook,
+    PunctuationTshook,
     /// \u{1c40}: '᱀'
-    LepchaDigitZero,
+    DigitZero,
     /// \u{1c41}: '᱁'
-    LepchaDigitOne,
+    DigitOne,
     /// \u{1c42}: '᱂'
-    LepchaDigitTwo,
+    DigitTwo,
     /// \u{1c43}: '᱃'
-    LepchaDigitThree,
+    DigitThree,
     /// \u{1c44}: '᱄'
-    LepchaDigitFour,
+    DigitFour,
     /// \u{1c45}: '᱅'
-    LepchaDigitFive,
+    DigitFive,
     /// \u{1c46}: '᱆'
-    LepchaDigitSix,
+    DigitSix,
     /// \u{1c47}: '᱇'
-    LepchaDigitSeven,
+    DigitSeven,
     /// \u{1c48}: '᱈'
-    LepchaDigitEight,
+    DigitEight,
     /// \u{1c49}: '᱉'
-    LepchaDigitNine,
+    DigitNine,
     /// \u{1c4d}: 'ᱍ'
-    LepchaLetterTta,
+    LetterTta,
     /// \u{1c4e}: 'ᱎ'
-    LepchaLetterTtha,
+    LetterTtha,
 }
 
 impl Into<char> for Lepcha {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Lepcha::LepchaLetterKa => LEPCHA_LETTER_KA,
-            Lepcha::LepchaLetterKla => LEPCHA_LETTER_KLA,
-            Lepcha::LepchaLetterKha => LEPCHA_LETTER_KHA,
-            Lepcha::LepchaLetterGa => LEPCHA_LETTER_GA,
-            Lepcha::LepchaLetterGla => LEPCHA_LETTER_GLA,
-            Lepcha::LepchaLetterNga => LEPCHA_LETTER_NGA,
-            Lepcha::LepchaLetterCa => LEPCHA_LETTER_CA,
-            Lepcha::LepchaLetterCha => LEPCHA_LETTER_CHA,
-            Lepcha::LepchaLetterJa => LEPCHA_LETTER_JA,
-            Lepcha::LepchaLetterNya => LEPCHA_LETTER_NYA,
-            Lepcha::LepchaLetterTa => LEPCHA_LETTER_TA,
-            Lepcha::LepchaLetterTha => LEPCHA_LETTER_THA,
-            Lepcha::LepchaLetterDa => LEPCHA_LETTER_DA,
-            Lepcha::LepchaLetterNa => LEPCHA_LETTER_NA,
-            Lepcha::LepchaLetterPa => LEPCHA_LETTER_PA,
-            Lepcha::LepchaLetterPla => LEPCHA_LETTER_PLA,
-            Lepcha::LepchaLetterPha => LEPCHA_LETTER_PHA,
-            Lepcha::LepchaLetterFa => LEPCHA_LETTER_FA,
-            Lepcha::LepchaLetterFla => LEPCHA_LETTER_FLA,
-            Lepcha::LepchaLetterBa => LEPCHA_LETTER_BA,
-            Lepcha::LepchaLetterBla => LEPCHA_LETTER_BLA,
-            Lepcha::LepchaLetterMa => LEPCHA_LETTER_MA,
-            Lepcha::LepchaLetterMla => LEPCHA_LETTER_MLA,
-            Lepcha::LepchaLetterTsa => LEPCHA_LETTER_TSA,
-            Lepcha::LepchaLetterTsha => LEPCHA_LETTER_TSHA,
-            Lepcha::LepchaLetterDza => LEPCHA_LETTER_DZA,
-            Lepcha::LepchaLetterYa => LEPCHA_LETTER_YA,
-            Lepcha::LepchaLetterRa => LEPCHA_LETTER_RA,
-            Lepcha::LepchaLetterLa => LEPCHA_LETTER_LA,
-            Lepcha::LepchaLetterHa => LEPCHA_LETTER_HA,
-            Lepcha::LepchaLetterHla => LEPCHA_LETTER_HLA,
-            Lepcha::LepchaLetterVa => LEPCHA_LETTER_VA,
-            Lepcha::LepchaLetterSa => LEPCHA_LETTER_SA,
-            Lepcha::LepchaLetterSha => LEPCHA_LETTER_SHA,
-            Lepcha::LepchaLetterWa => LEPCHA_LETTER_WA,
-            Lepcha::LepchaLetterA => LEPCHA_LETTER_A,
-            Lepcha::LepchaSubjoinedLetterYa => LEPCHA_SUBJOINED_LETTER_YA,
-            Lepcha::LepchaSubjoinedLetterRa => LEPCHA_SUBJOINED_LETTER_RA,
-            Lepcha::LepchaVowelSignAa => LEPCHA_VOWEL_SIGN_AA,
-            Lepcha::LepchaVowelSignI => LEPCHA_VOWEL_SIGN_I,
-            Lepcha::LepchaVowelSignO => LEPCHA_VOWEL_SIGN_O,
-            Lepcha::LepchaVowelSignOo => LEPCHA_VOWEL_SIGN_OO,
-            Lepcha::LepchaVowelSignU => LEPCHA_VOWEL_SIGN_U,
-            Lepcha::LepchaVowelSignUu => LEPCHA_VOWEL_SIGN_UU,
-            Lepcha::LepchaVowelSignE => LEPCHA_VOWEL_SIGN_E,
-            Lepcha::LepchaConsonantSignK => LEPCHA_CONSONANT_SIGN_K,
-            Lepcha::LepchaConsonantSignM => LEPCHA_CONSONANT_SIGN_M,
-            Lepcha::LepchaConsonantSignL => LEPCHA_CONSONANT_SIGN_L,
-            Lepcha::LepchaConsonantSignN => LEPCHA_CONSONANT_SIGN_N,
-            Lepcha::LepchaConsonantSignP => LEPCHA_CONSONANT_SIGN_P,
-            Lepcha::LepchaConsonantSignR => LEPCHA_CONSONANT_SIGN_R,
-            Lepcha::LepchaConsonantSignT => LEPCHA_CONSONANT_SIGN_T,
-            Lepcha::LepchaConsonantSignNyinDashDo => LEPCHA_CONSONANT_SIGN_NYIN_DASH_DO,
-            Lepcha::LepchaConsonantSignKang => LEPCHA_CONSONANT_SIGN_KANG,
-            Lepcha::LepchaSignRan => LEPCHA_SIGN_RAN,
-            Lepcha::LepchaSignNukta => LEPCHA_SIGN_NUKTA,
-            Lepcha::LepchaPunctuationTaDashRol => LEPCHA_PUNCTUATION_TA_DASH_ROL,
-            Lepcha::LepchaPunctuationNyetThyoomTaDashRol => LEPCHA_PUNCTUATION_NYET_THYOOM_TA_DASH_ROL,
-            Lepcha::LepchaPunctuationCerDashWa => LEPCHA_PUNCTUATION_CER_DASH_WA,
-            Lepcha::LepchaPunctuationTshookCerDashWa => LEPCHA_PUNCTUATION_TSHOOK_CER_DASH_WA,
-            Lepcha::LepchaPunctuationTshook => LEPCHA_PUNCTUATION_TSHOOK,
-            Lepcha::LepchaDigitZero => LEPCHA_DIGIT_ZERO,
-            Lepcha::LepchaDigitOne => LEPCHA_DIGIT_ONE,
-            Lepcha::LepchaDigitTwo => LEPCHA_DIGIT_TWO,
-            Lepcha::LepchaDigitThree => LEPCHA_DIGIT_THREE,
-            Lepcha::LepchaDigitFour => LEPCHA_DIGIT_FOUR,
-            Lepcha::LepchaDigitFive => LEPCHA_DIGIT_FIVE,
-            Lepcha::LepchaDigitSix => LEPCHA_DIGIT_SIX,
-            Lepcha::LepchaDigitSeven => LEPCHA_DIGIT_SEVEN,
-            Lepcha::LepchaDigitEight => LEPCHA_DIGIT_EIGHT,
-            Lepcha::LepchaDigitNine => LEPCHA_DIGIT_NINE,
-            Lepcha::LepchaLetterTta => LEPCHA_LETTER_TTA,
-            Lepcha::LepchaLetterTtha => LEPCHA_LETTER_TTHA,
+            Lepcha::LetterKa => LETTER_KA,
+            Lepcha::LetterKla => LETTER_KLA,
+            Lepcha::LetterKha => LETTER_KHA,
+            Lepcha::LetterGa => LETTER_GA,
+            Lepcha::LetterGla => LETTER_GLA,
+            Lepcha::LetterNga => LETTER_NGA,
+            Lepcha::LetterCa => LETTER_CA,
+            Lepcha::LetterCha => LETTER_CHA,
+            Lepcha::LetterJa => LETTER_JA,
+            Lepcha::LetterNya => LETTER_NYA,
+            Lepcha::LetterTa => LETTER_TA,
+            Lepcha::LetterTha => LETTER_THA,
+            Lepcha::LetterDa => LETTER_DA,
+            Lepcha::LetterNa => LETTER_NA,
+            Lepcha::LetterPa => LETTER_PA,
+            Lepcha::LetterPla => LETTER_PLA,
+            Lepcha::LetterPha => LETTER_PHA,
+            Lepcha::LetterFa => LETTER_FA,
+            Lepcha::LetterFla => LETTER_FLA,
+            Lepcha::LetterBa => LETTER_BA,
+            Lepcha::LetterBla => LETTER_BLA,
+            Lepcha::LetterMa => LETTER_MA,
+            Lepcha::LetterMla => LETTER_MLA,
+            Lepcha::LetterTsa => LETTER_TSA,
+            Lepcha::LetterTsha => LETTER_TSHA,
+            Lepcha::LetterDza => LETTER_DZA,
+            Lepcha::LetterYa => LETTER_YA,
+            Lepcha::LetterRa => LETTER_RA,
+            Lepcha::LetterLa => LETTER_LA,
+            Lepcha::LetterHa => LETTER_HA,
+            Lepcha::LetterHla => LETTER_HLA,
+            Lepcha::LetterVa => LETTER_VA,
+            Lepcha::LetterSa => LETTER_SA,
+            Lepcha::LetterSha => LETTER_SHA,
+            Lepcha::LetterWa => LETTER_WA,
+            Lepcha::LetterA => LETTER_A,
+            Lepcha::SubjoinedLetterYa => SUBJOINED_LETTER_YA,
+            Lepcha::SubjoinedLetterRa => SUBJOINED_LETTER_RA,
+            Lepcha::VowelSignAa => VOWEL_SIGN_AA,
+            Lepcha::VowelSignI => VOWEL_SIGN_I,
+            Lepcha::VowelSignO => VOWEL_SIGN_O,
+            Lepcha::VowelSignOo => VOWEL_SIGN_OO,
+            Lepcha::VowelSignU => VOWEL_SIGN_U,
+            Lepcha::VowelSignUu => VOWEL_SIGN_UU,
+            Lepcha::VowelSignE => VOWEL_SIGN_E,
+            Lepcha::ConsonantSignK => CONSONANT_SIGN_K,
+            Lepcha::ConsonantSignM => CONSONANT_SIGN_M,
+            Lepcha::ConsonantSignL => CONSONANT_SIGN_L,
+            Lepcha::ConsonantSignN => CONSONANT_SIGN_N,
+            Lepcha::ConsonantSignP => CONSONANT_SIGN_P,
+            Lepcha::ConsonantSignR => CONSONANT_SIGN_R,
+            Lepcha::ConsonantSignT => CONSONANT_SIGN_T,
+            Lepcha::ConsonantSignNyinDashDo => CONSONANT_SIGN_NYIN_DASH_DO,
+            Lepcha::ConsonantSignKang => CONSONANT_SIGN_KANG,
+            Lepcha::SignRan => SIGN_RAN,
+            Lepcha::SignNukta => SIGN_NUKTA,
+            Lepcha::PunctuationTaDashRol => PUNCTUATION_TA_DASH_ROL,
+            Lepcha::PunctuationNyetThyoomTaDashRol => PUNCTUATION_NYET_THYOOM_TA_DASH_ROL,
+            Lepcha::PunctuationCerDashWa => PUNCTUATION_CER_DASH_WA,
+            Lepcha::PunctuationTshookCerDashWa => PUNCTUATION_TSHOOK_CER_DASH_WA,
+            Lepcha::PunctuationTshook => PUNCTUATION_TSHOOK,
+            Lepcha::DigitZero => DIGIT_ZERO,
+            Lepcha::DigitOne => DIGIT_ONE,
+            Lepcha::DigitTwo => DIGIT_TWO,
+            Lepcha::DigitThree => DIGIT_THREE,
+            Lepcha::DigitFour => DIGIT_FOUR,
+            Lepcha::DigitFive => DIGIT_FIVE,
+            Lepcha::DigitSix => DIGIT_SIX,
+            Lepcha::DigitSeven => DIGIT_SEVEN,
+            Lepcha::DigitEight => DIGIT_EIGHT,
+            Lepcha::DigitNine => DIGIT_NINE,
+            Lepcha::LetterTta => LETTER_TTA,
+            Lepcha::LetterTtha => LETTER_TTHA,
         }
     }
 }
@@ -397,79 +397,79 @@ impl std::convert::TryFrom<char> for Lepcha {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            LEPCHA_LETTER_KA => Ok(Lepcha::LepchaLetterKa),
-            LEPCHA_LETTER_KLA => Ok(Lepcha::LepchaLetterKla),
-            LEPCHA_LETTER_KHA => Ok(Lepcha::LepchaLetterKha),
-            LEPCHA_LETTER_GA => Ok(Lepcha::LepchaLetterGa),
-            LEPCHA_LETTER_GLA => Ok(Lepcha::LepchaLetterGla),
-            LEPCHA_LETTER_NGA => Ok(Lepcha::LepchaLetterNga),
-            LEPCHA_LETTER_CA => Ok(Lepcha::LepchaLetterCa),
-            LEPCHA_LETTER_CHA => Ok(Lepcha::LepchaLetterCha),
-            LEPCHA_LETTER_JA => Ok(Lepcha::LepchaLetterJa),
-            LEPCHA_LETTER_NYA => Ok(Lepcha::LepchaLetterNya),
-            LEPCHA_LETTER_TA => Ok(Lepcha::LepchaLetterTa),
-            LEPCHA_LETTER_THA => Ok(Lepcha::LepchaLetterTha),
-            LEPCHA_LETTER_DA => Ok(Lepcha::LepchaLetterDa),
-            LEPCHA_LETTER_NA => Ok(Lepcha::LepchaLetterNa),
-            LEPCHA_LETTER_PA => Ok(Lepcha::LepchaLetterPa),
-            LEPCHA_LETTER_PLA => Ok(Lepcha::LepchaLetterPla),
-            LEPCHA_LETTER_PHA => Ok(Lepcha::LepchaLetterPha),
-            LEPCHA_LETTER_FA => Ok(Lepcha::LepchaLetterFa),
-            LEPCHA_LETTER_FLA => Ok(Lepcha::LepchaLetterFla),
-            LEPCHA_LETTER_BA => Ok(Lepcha::LepchaLetterBa),
-            LEPCHA_LETTER_BLA => Ok(Lepcha::LepchaLetterBla),
-            LEPCHA_LETTER_MA => Ok(Lepcha::LepchaLetterMa),
-            LEPCHA_LETTER_MLA => Ok(Lepcha::LepchaLetterMla),
-            LEPCHA_LETTER_TSA => Ok(Lepcha::LepchaLetterTsa),
-            LEPCHA_LETTER_TSHA => Ok(Lepcha::LepchaLetterTsha),
-            LEPCHA_LETTER_DZA => Ok(Lepcha::LepchaLetterDza),
-            LEPCHA_LETTER_YA => Ok(Lepcha::LepchaLetterYa),
-            LEPCHA_LETTER_RA => Ok(Lepcha::LepchaLetterRa),
-            LEPCHA_LETTER_LA => Ok(Lepcha::LepchaLetterLa),
-            LEPCHA_LETTER_HA => Ok(Lepcha::LepchaLetterHa),
-            LEPCHA_LETTER_HLA => Ok(Lepcha::LepchaLetterHla),
-            LEPCHA_LETTER_VA => Ok(Lepcha::LepchaLetterVa),
-            LEPCHA_LETTER_SA => Ok(Lepcha::LepchaLetterSa),
-            LEPCHA_LETTER_SHA => Ok(Lepcha::LepchaLetterSha),
-            LEPCHA_LETTER_WA => Ok(Lepcha::LepchaLetterWa),
-            LEPCHA_LETTER_A => Ok(Lepcha::LepchaLetterA),
-            LEPCHA_SUBJOINED_LETTER_YA => Ok(Lepcha::LepchaSubjoinedLetterYa),
-            LEPCHA_SUBJOINED_LETTER_RA => Ok(Lepcha::LepchaSubjoinedLetterRa),
-            LEPCHA_VOWEL_SIGN_AA => Ok(Lepcha::LepchaVowelSignAa),
-            LEPCHA_VOWEL_SIGN_I => Ok(Lepcha::LepchaVowelSignI),
-            LEPCHA_VOWEL_SIGN_O => Ok(Lepcha::LepchaVowelSignO),
-            LEPCHA_VOWEL_SIGN_OO => Ok(Lepcha::LepchaVowelSignOo),
-            LEPCHA_VOWEL_SIGN_U => Ok(Lepcha::LepchaVowelSignU),
-            LEPCHA_VOWEL_SIGN_UU => Ok(Lepcha::LepchaVowelSignUu),
-            LEPCHA_VOWEL_SIGN_E => Ok(Lepcha::LepchaVowelSignE),
-            LEPCHA_CONSONANT_SIGN_K => Ok(Lepcha::LepchaConsonantSignK),
-            LEPCHA_CONSONANT_SIGN_M => Ok(Lepcha::LepchaConsonantSignM),
-            LEPCHA_CONSONANT_SIGN_L => Ok(Lepcha::LepchaConsonantSignL),
-            LEPCHA_CONSONANT_SIGN_N => Ok(Lepcha::LepchaConsonantSignN),
-            LEPCHA_CONSONANT_SIGN_P => Ok(Lepcha::LepchaConsonantSignP),
-            LEPCHA_CONSONANT_SIGN_R => Ok(Lepcha::LepchaConsonantSignR),
-            LEPCHA_CONSONANT_SIGN_T => Ok(Lepcha::LepchaConsonantSignT),
-            LEPCHA_CONSONANT_SIGN_NYIN_DASH_DO => Ok(Lepcha::LepchaConsonantSignNyinDashDo),
-            LEPCHA_CONSONANT_SIGN_KANG => Ok(Lepcha::LepchaConsonantSignKang),
-            LEPCHA_SIGN_RAN => Ok(Lepcha::LepchaSignRan),
-            LEPCHA_SIGN_NUKTA => Ok(Lepcha::LepchaSignNukta),
-            LEPCHA_PUNCTUATION_TA_DASH_ROL => Ok(Lepcha::LepchaPunctuationTaDashRol),
-            LEPCHA_PUNCTUATION_NYET_THYOOM_TA_DASH_ROL => Ok(Lepcha::LepchaPunctuationNyetThyoomTaDashRol),
-            LEPCHA_PUNCTUATION_CER_DASH_WA => Ok(Lepcha::LepchaPunctuationCerDashWa),
-            LEPCHA_PUNCTUATION_TSHOOK_CER_DASH_WA => Ok(Lepcha::LepchaPunctuationTshookCerDashWa),
-            LEPCHA_PUNCTUATION_TSHOOK => Ok(Lepcha::LepchaPunctuationTshook),
-            LEPCHA_DIGIT_ZERO => Ok(Lepcha::LepchaDigitZero),
-            LEPCHA_DIGIT_ONE => Ok(Lepcha::LepchaDigitOne),
-            LEPCHA_DIGIT_TWO => Ok(Lepcha::LepchaDigitTwo),
-            LEPCHA_DIGIT_THREE => Ok(Lepcha::LepchaDigitThree),
-            LEPCHA_DIGIT_FOUR => Ok(Lepcha::LepchaDigitFour),
-            LEPCHA_DIGIT_FIVE => Ok(Lepcha::LepchaDigitFive),
-            LEPCHA_DIGIT_SIX => Ok(Lepcha::LepchaDigitSix),
-            LEPCHA_DIGIT_SEVEN => Ok(Lepcha::LepchaDigitSeven),
-            LEPCHA_DIGIT_EIGHT => Ok(Lepcha::LepchaDigitEight),
-            LEPCHA_DIGIT_NINE => Ok(Lepcha::LepchaDigitNine),
-            LEPCHA_LETTER_TTA => Ok(Lepcha::LepchaLetterTta),
-            LEPCHA_LETTER_TTHA => Ok(Lepcha::LepchaLetterTtha),
+            LETTER_KA => Ok(Lepcha::LetterKa),
+            LETTER_KLA => Ok(Lepcha::LetterKla),
+            LETTER_KHA => Ok(Lepcha::LetterKha),
+            LETTER_GA => Ok(Lepcha::LetterGa),
+            LETTER_GLA => Ok(Lepcha::LetterGla),
+            LETTER_NGA => Ok(Lepcha::LetterNga),
+            LETTER_CA => Ok(Lepcha::LetterCa),
+            LETTER_CHA => Ok(Lepcha::LetterCha),
+            LETTER_JA => Ok(Lepcha::LetterJa),
+            LETTER_NYA => Ok(Lepcha::LetterNya),
+            LETTER_TA => Ok(Lepcha::LetterTa),
+            LETTER_THA => Ok(Lepcha::LetterTha),
+            LETTER_DA => Ok(Lepcha::LetterDa),
+            LETTER_NA => Ok(Lepcha::LetterNa),
+            LETTER_PA => Ok(Lepcha::LetterPa),
+            LETTER_PLA => Ok(Lepcha::LetterPla),
+            LETTER_PHA => Ok(Lepcha::LetterPha),
+            LETTER_FA => Ok(Lepcha::LetterFa),
+            LETTER_FLA => Ok(Lepcha::LetterFla),
+            LETTER_BA => Ok(Lepcha::LetterBa),
+            LETTER_BLA => Ok(Lepcha::LetterBla),
+            LETTER_MA => Ok(Lepcha::LetterMa),
+            LETTER_MLA => Ok(Lepcha::LetterMla),
+            LETTER_TSA => Ok(Lepcha::LetterTsa),
+            LETTER_TSHA => Ok(Lepcha::LetterTsha),
+            LETTER_DZA => Ok(Lepcha::LetterDza),
+            LETTER_YA => Ok(Lepcha::LetterYa),
+            LETTER_RA => Ok(Lepcha::LetterRa),
+            LETTER_LA => Ok(Lepcha::LetterLa),
+            LETTER_HA => Ok(Lepcha::LetterHa),
+            LETTER_HLA => Ok(Lepcha::LetterHla),
+            LETTER_VA => Ok(Lepcha::LetterVa),
+            LETTER_SA => Ok(Lepcha::LetterSa),
+            LETTER_SHA => Ok(Lepcha::LetterSha),
+            LETTER_WA => Ok(Lepcha::LetterWa),
+            LETTER_A => Ok(Lepcha::LetterA),
+            SUBJOINED_LETTER_YA => Ok(Lepcha::SubjoinedLetterYa),
+            SUBJOINED_LETTER_RA => Ok(Lepcha::SubjoinedLetterRa),
+            VOWEL_SIGN_AA => Ok(Lepcha::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Lepcha::VowelSignI),
+            VOWEL_SIGN_O => Ok(Lepcha::VowelSignO),
+            VOWEL_SIGN_OO => Ok(Lepcha::VowelSignOo),
+            VOWEL_SIGN_U => Ok(Lepcha::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Lepcha::VowelSignUu),
+            VOWEL_SIGN_E => Ok(Lepcha::VowelSignE),
+            CONSONANT_SIGN_K => Ok(Lepcha::ConsonantSignK),
+            CONSONANT_SIGN_M => Ok(Lepcha::ConsonantSignM),
+            CONSONANT_SIGN_L => Ok(Lepcha::ConsonantSignL),
+            CONSONANT_SIGN_N => Ok(Lepcha::ConsonantSignN),
+            CONSONANT_SIGN_P => Ok(Lepcha::ConsonantSignP),
+            CONSONANT_SIGN_R => Ok(Lepcha::ConsonantSignR),
+            CONSONANT_SIGN_T => Ok(Lepcha::ConsonantSignT),
+            CONSONANT_SIGN_NYIN_DASH_DO => Ok(Lepcha::ConsonantSignNyinDashDo),
+            CONSONANT_SIGN_KANG => Ok(Lepcha::ConsonantSignKang),
+            SIGN_RAN => Ok(Lepcha::SignRan),
+            SIGN_NUKTA => Ok(Lepcha::SignNukta),
+            PUNCTUATION_TA_DASH_ROL => Ok(Lepcha::PunctuationTaDashRol),
+            PUNCTUATION_NYET_THYOOM_TA_DASH_ROL => Ok(Lepcha::PunctuationNyetThyoomTaDashRol),
+            PUNCTUATION_CER_DASH_WA => Ok(Lepcha::PunctuationCerDashWa),
+            PUNCTUATION_TSHOOK_CER_DASH_WA => Ok(Lepcha::PunctuationTshookCerDashWa),
+            PUNCTUATION_TSHOOK => Ok(Lepcha::PunctuationTshook),
+            DIGIT_ZERO => Ok(Lepcha::DigitZero),
+            DIGIT_ONE => Ok(Lepcha::DigitOne),
+            DIGIT_TWO => Ok(Lepcha::DigitTwo),
+            DIGIT_THREE => Ok(Lepcha::DigitThree),
+            DIGIT_FOUR => Ok(Lepcha::DigitFour),
+            DIGIT_FIVE => Ok(Lepcha::DigitFive),
+            DIGIT_SIX => Ok(Lepcha::DigitSix),
+            DIGIT_SEVEN => Ok(Lepcha::DigitSeven),
+            DIGIT_EIGHT => Ok(Lepcha::DigitEight),
+            DIGIT_NINE => Ok(Lepcha::DigitNine),
+            LETTER_TTA => Ok(Lepcha::LetterTta),
+            LETTER_TTHA => Ok(Lepcha::LetterTtha),
             _ => Err(()),
         }
     }
@@ -508,87 +508,87 @@ impl Iterator for Lepcha {
 }
 
 impl Lepcha {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Lepcha::LepchaLetterKa
+        Lepcha::LetterKa
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Lepcha::LepchaLetterKa => "lepcha letter ka",
-            Lepcha::LepchaLetterKla => "lepcha letter kla",
-            Lepcha::LepchaLetterKha => "lepcha letter kha",
-            Lepcha::LepchaLetterGa => "lepcha letter ga",
-            Lepcha::LepchaLetterGla => "lepcha letter gla",
-            Lepcha::LepchaLetterNga => "lepcha letter nga",
-            Lepcha::LepchaLetterCa => "lepcha letter ca",
-            Lepcha::LepchaLetterCha => "lepcha letter cha",
-            Lepcha::LepchaLetterJa => "lepcha letter ja",
-            Lepcha::LepchaLetterNya => "lepcha letter nya",
-            Lepcha::LepchaLetterTa => "lepcha letter ta",
-            Lepcha::LepchaLetterTha => "lepcha letter tha",
-            Lepcha::LepchaLetterDa => "lepcha letter da",
-            Lepcha::LepchaLetterNa => "lepcha letter na",
-            Lepcha::LepchaLetterPa => "lepcha letter pa",
-            Lepcha::LepchaLetterPla => "lepcha letter pla",
-            Lepcha::LepchaLetterPha => "lepcha letter pha",
-            Lepcha::LepchaLetterFa => "lepcha letter fa",
-            Lepcha::LepchaLetterFla => "lepcha letter fla",
-            Lepcha::LepchaLetterBa => "lepcha letter ba",
-            Lepcha::LepchaLetterBla => "lepcha letter bla",
-            Lepcha::LepchaLetterMa => "lepcha letter ma",
-            Lepcha::LepchaLetterMla => "lepcha letter mla",
-            Lepcha::LepchaLetterTsa => "lepcha letter tsa",
-            Lepcha::LepchaLetterTsha => "lepcha letter tsha",
-            Lepcha::LepchaLetterDza => "lepcha letter dza",
-            Lepcha::LepchaLetterYa => "lepcha letter ya",
-            Lepcha::LepchaLetterRa => "lepcha letter ra",
-            Lepcha::LepchaLetterLa => "lepcha letter la",
-            Lepcha::LepchaLetterHa => "lepcha letter ha",
-            Lepcha::LepchaLetterHla => "lepcha letter hla",
-            Lepcha::LepchaLetterVa => "lepcha letter va",
-            Lepcha::LepchaLetterSa => "lepcha letter sa",
-            Lepcha::LepchaLetterSha => "lepcha letter sha",
-            Lepcha::LepchaLetterWa => "lepcha letter wa",
-            Lepcha::LepchaLetterA => "lepcha letter a",
-            Lepcha::LepchaSubjoinedLetterYa => "lepcha subjoined letter ya",
-            Lepcha::LepchaSubjoinedLetterRa => "lepcha subjoined letter ra",
-            Lepcha::LepchaVowelSignAa => "lepcha vowel sign aa",
-            Lepcha::LepchaVowelSignI => "lepcha vowel sign i",
-            Lepcha::LepchaVowelSignO => "lepcha vowel sign o",
-            Lepcha::LepchaVowelSignOo => "lepcha vowel sign oo",
-            Lepcha::LepchaVowelSignU => "lepcha vowel sign u",
-            Lepcha::LepchaVowelSignUu => "lepcha vowel sign uu",
-            Lepcha::LepchaVowelSignE => "lepcha vowel sign e",
-            Lepcha::LepchaConsonantSignK => "lepcha consonant sign k",
-            Lepcha::LepchaConsonantSignM => "lepcha consonant sign m",
-            Lepcha::LepchaConsonantSignL => "lepcha consonant sign l",
-            Lepcha::LepchaConsonantSignN => "lepcha consonant sign n",
-            Lepcha::LepchaConsonantSignP => "lepcha consonant sign p",
-            Lepcha::LepchaConsonantSignR => "lepcha consonant sign r",
-            Lepcha::LepchaConsonantSignT => "lepcha consonant sign t",
-            Lepcha::LepchaConsonantSignNyinDashDo => "lepcha consonant sign nyin-do",
-            Lepcha::LepchaConsonantSignKang => "lepcha consonant sign kang",
-            Lepcha::LepchaSignRan => "lepcha sign ran",
-            Lepcha::LepchaSignNukta => "lepcha sign nukta",
-            Lepcha::LepchaPunctuationTaDashRol => "lepcha punctuation ta-rol",
-            Lepcha::LepchaPunctuationNyetThyoomTaDashRol => "lepcha punctuation nyet thyoom ta-rol",
-            Lepcha::LepchaPunctuationCerDashWa => "lepcha punctuation cer-wa",
-            Lepcha::LepchaPunctuationTshookCerDashWa => "lepcha punctuation tshook cer-wa",
-            Lepcha::LepchaPunctuationTshook => "lepcha punctuation tshook",
-            Lepcha::LepchaDigitZero => "lepcha digit zero",
-            Lepcha::LepchaDigitOne => "lepcha digit one",
-            Lepcha::LepchaDigitTwo => "lepcha digit two",
-            Lepcha::LepchaDigitThree => "lepcha digit three",
-            Lepcha::LepchaDigitFour => "lepcha digit four",
-            Lepcha::LepchaDigitFive => "lepcha digit five",
-            Lepcha::LepchaDigitSix => "lepcha digit six",
-            Lepcha::LepchaDigitSeven => "lepcha digit seven",
-            Lepcha::LepchaDigitEight => "lepcha digit eight",
-            Lepcha::LepchaDigitNine => "lepcha digit nine",
-            Lepcha::LepchaLetterTta => "lepcha letter tta",
-            Lepcha::LepchaLetterTtha => "lepcha letter ttha",
+            Lepcha::LetterKa => "lepcha letter ka",
+            Lepcha::LetterKla => "lepcha letter kla",
+            Lepcha::LetterKha => "lepcha letter kha",
+            Lepcha::LetterGa => "lepcha letter ga",
+            Lepcha::LetterGla => "lepcha letter gla",
+            Lepcha::LetterNga => "lepcha letter nga",
+            Lepcha::LetterCa => "lepcha letter ca",
+            Lepcha::LetterCha => "lepcha letter cha",
+            Lepcha::LetterJa => "lepcha letter ja",
+            Lepcha::LetterNya => "lepcha letter nya",
+            Lepcha::LetterTa => "lepcha letter ta",
+            Lepcha::LetterTha => "lepcha letter tha",
+            Lepcha::LetterDa => "lepcha letter da",
+            Lepcha::LetterNa => "lepcha letter na",
+            Lepcha::LetterPa => "lepcha letter pa",
+            Lepcha::LetterPla => "lepcha letter pla",
+            Lepcha::LetterPha => "lepcha letter pha",
+            Lepcha::LetterFa => "lepcha letter fa",
+            Lepcha::LetterFla => "lepcha letter fla",
+            Lepcha::LetterBa => "lepcha letter ba",
+            Lepcha::LetterBla => "lepcha letter bla",
+            Lepcha::LetterMa => "lepcha letter ma",
+            Lepcha::LetterMla => "lepcha letter mla",
+            Lepcha::LetterTsa => "lepcha letter tsa",
+            Lepcha::LetterTsha => "lepcha letter tsha",
+            Lepcha::LetterDza => "lepcha letter dza",
+            Lepcha::LetterYa => "lepcha letter ya",
+            Lepcha::LetterRa => "lepcha letter ra",
+            Lepcha::LetterLa => "lepcha letter la",
+            Lepcha::LetterHa => "lepcha letter ha",
+            Lepcha::LetterHla => "lepcha letter hla",
+            Lepcha::LetterVa => "lepcha letter va",
+            Lepcha::LetterSa => "lepcha letter sa",
+            Lepcha::LetterSha => "lepcha letter sha",
+            Lepcha::LetterWa => "lepcha letter wa",
+            Lepcha::LetterA => "lepcha letter a",
+            Lepcha::SubjoinedLetterYa => "lepcha subjoined letter ya",
+            Lepcha::SubjoinedLetterRa => "lepcha subjoined letter ra",
+            Lepcha::VowelSignAa => "lepcha vowel sign aa",
+            Lepcha::VowelSignI => "lepcha vowel sign i",
+            Lepcha::VowelSignO => "lepcha vowel sign o",
+            Lepcha::VowelSignOo => "lepcha vowel sign oo",
+            Lepcha::VowelSignU => "lepcha vowel sign u",
+            Lepcha::VowelSignUu => "lepcha vowel sign uu",
+            Lepcha::VowelSignE => "lepcha vowel sign e",
+            Lepcha::ConsonantSignK => "lepcha consonant sign k",
+            Lepcha::ConsonantSignM => "lepcha consonant sign m",
+            Lepcha::ConsonantSignL => "lepcha consonant sign l",
+            Lepcha::ConsonantSignN => "lepcha consonant sign n",
+            Lepcha::ConsonantSignP => "lepcha consonant sign p",
+            Lepcha::ConsonantSignR => "lepcha consonant sign r",
+            Lepcha::ConsonantSignT => "lepcha consonant sign t",
+            Lepcha::ConsonantSignNyinDashDo => "lepcha consonant sign nyin-do",
+            Lepcha::ConsonantSignKang => "lepcha consonant sign kang",
+            Lepcha::SignRan => "lepcha sign ran",
+            Lepcha::SignNukta => "lepcha sign nukta",
+            Lepcha::PunctuationTaDashRol => "lepcha punctuation ta-rol",
+            Lepcha::PunctuationNyetThyoomTaDashRol => "lepcha punctuation nyet thyoom ta-rol",
+            Lepcha::PunctuationCerDashWa => "lepcha punctuation cer-wa",
+            Lepcha::PunctuationTshookCerDashWa => "lepcha punctuation tshook cer-wa",
+            Lepcha::PunctuationTshook => "lepcha punctuation tshook",
+            Lepcha::DigitZero => "lepcha digit zero",
+            Lepcha::DigitOne => "lepcha digit one",
+            Lepcha::DigitTwo => "lepcha digit two",
+            Lepcha::DigitThree => "lepcha digit three",
+            Lepcha::DigitFour => "lepcha digit four",
+            Lepcha::DigitFive => "lepcha digit five",
+            Lepcha::DigitSix => "lepcha digit six",
+            Lepcha::DigitSeven => "lepcha digit seven",
+            Lepcha::DigitEight => "lepcha digit eight",
+            Lepcha::DigitNine => "lepcha digit nine",
+            Lepcha::LetterTta => "lepcha letter tta",
+            Lepcha::LetterTtha => "lepcha letter ttha",
         }
     }
 }

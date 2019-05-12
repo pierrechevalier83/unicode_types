@@ -8,185 +8,185 @@
 /// ෩ ෪ ෫ ෬ ෭ ෮ ෯ ෲ ෳ ෴
 pub mod constants {
     /// \u{d82}: 'ං'
-    pub const SINHALA_SIGN_ANUSVARAYA: char = 'ං';
+    pub const SIGN_ANUSVARAYA: char = 'ං';
     /// \u{d83}: 'ඃ'
-    pub const SINHALA_SIGN_VISARGAYA: char = 'ඃ';
+    pub const SIGN_VISARGAYA: char = 'ඃ';
     /// \u{d85}: 'අ'
-    pub const SINHALA_LETTER_AYANNA: char = 'අ';
+    pub const LETTER_AYANNA: char = 'අ';
     /// \u{d86}: 'ආ'
-    pub const SINHALA_LETTER_AAYANNA: char = 'ආ';
+    pub const LETTER_AAYANNA: char = 'ආ';
     /// \u{d87}: 'ඇ'
-    pub const SINHALA_LETTER_AEYANNA: char = 'ඇ';
+    pub const LETTER_AEYANNA: char = 'ඇ';
     /// \u{d88}: 'ඈ'
-    pub const SINHALA_LETTER_AEEYANNA: char = 'ඈ';
+    pub const LETTER_AEEYANNA: char = 'ඈ';
     /// \u{d89}: 'ඉ'
-    pub const SINHALA_LETTER_IYANNA: char = 'ඉ';
+    pub const LETTER_IYANNA: char = 'ඉ';
     /// \u{d8a}: 'ඊ'
-    pub const SINHALA_LETTER_IIYANNA: char = 'ඊ';
+    pub const LETTER_IIYANNA: char = 'ඊ';
     /// \u{d8b}: 'උ'
-    pub const SINHALA_LETTER_UYANNA: char = 'උ';
+    pub const LETTER_UYANNA: char = 'උ';
     /// \u{d8c}: 'ඌ'
-    pub const SINHALA_LETTER_UUYANNA: char = 'ඌ';
+    pub const LETTER_UUYANNA: char = 'ඌ';
     /// \u{d8d}: 'ඍ'
-    pub const SINHALA_LETTER_IRUYANNA: char = 'ඍ';
+    pub const LETTER_IRUYANNA: char = 'ඍ';
     /// \u{d8e}: 'ඎ'
-    pub const SINHALA_LETTER_IRUUYANNA: char = 'ඎ';
+    pub const LETTER_IRUUYANNA: char = 'ඎ';
     /// \u{d8f}: 'ඏ'
-    pub const SINHALA_LETTER_ILUYANNA: char = 'ඏ';
+    pub const LETTER_ILUYANNA: char = 'ඏ';
     /// \u{d90}: 'ඐ'
-    pub const SINHALA_LETTER_ILUUYANNA: char = 'ඐ';
+    pub const LETTER_ILUUYANNA: char = 'ඐ';
     /// \u{d91}: 'එ'
-    pub const SINHALA_LETTER_EYANNA: char = 'එ';
+    pub const LETTER_EYANNA: char = 'එ';
     /// \u{d92}: 'ඒ'
-    pub const SINHALA_LETTER_EEYANNA: char = 'ඒ';
+    pub const LETTER_EEYANNA: char = 'ඒ';
     /// \u{d93}: 'ඓ'
-    pub const SINHALA_LETTER_AIYANNA: char = 'ඓ';
+    pub const LETTER_AIYANNA: char = 'ඓ';
     /// \u{d94}: 'ඔ'
-    pub const SINHALA_LETTER_OYANNA: char = 'ඔ';
+    pub const LETTER_OYANNA: char = 'ඔ';
     /// \u{d95}: 'ඕ'
-    pub const SINHALA_LETTER_OOYANNA: char = 'ඕ';
+    pub const LETTER_OOYANNA: char = 'ඕ';
     /// \u{d96}: 'ඖ'
-    pub const SINHALA_LETTER_AUYANNA: char = 'ඖ';
+    pub const LETTER_AUYANNA: char = 'ඖ';
     /// \u{d9a}: 'ක'
-    pub const SINHALA_LETTER_ALPAPRAANA_KAYANNA: char = 'ක';
+    pub const LETTER_ALPAPRAANA_KAYANNA: char = 'ක';
     /// \u{d9b}: 'ඛ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_KAYANNA: char = 'ඛ';
+    pub const LETTER_MAHAAPRAANA_KAYANNA: char = 'ඛ';
     /// \u{d9c}: 'ග'
-    pub const SINHALA_LETTER_ALPAPRAANA_GAYANNA: char = 'ග';
+    pub const LETTER_ALPAPRAANA_GAYANNA: char = 'ග';
     /// \u{d9d}: 'ඝ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_GAYANNA: char = 'ඝ';
+    pub const LETTER_MAHAAPRAANA_GAYANNA: char = 'ඝ';
     /// \u{d9e}: 'ඞ'
-    pub const SINHALA_LETTER_KANTAJA_NAASIKYAYA: char = 'ඞ';
+    pub const LETTER_KANTAJA_NAASIKYAYA: char = 'ඞ';
     /// \u{d9f}: 'ඟ'
-    pub const SINHALA_LETTER_SANYAKA_GAYANNA: char = 'ඟ';
+    pub const LETTER_SANYAKA_GAYANNA: char = 'ඟ';
     /// \u{da0}: 'ච'
-    pub const SINHALA_LETTER_ALPAPRAANA_CAYANNA: char = 'ච';
+    pub const LETTER_ALPAPRAANA_CAYANNA: char = 'ච';
     /// \u{da1}: 'ඡ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_CAYANNA: char = 'ඡ';
+    pub const LETTER_MAHAAPRAANA_CAYANNA: char = 'ඡ';
     /// \u{da2}: 'ජ'
-    pub const SINHALA_LETTER_ALPAPRAANA_JAYANNA: char = 'ජ';
+    pub const LETTER_ALPAPRAANA_JAYANNA: char = 'ජ';
     /// \u{da3}: 'ඣ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_JAYANNA: char = 'ඣ';
+    pub const LETTER_MAHAAPRAANA_JAYANNA: char = 'ඣ';
     /// \u{da4}: 'ඤ'
-    pub const SINHALA_LETTER_TAALUJA_NAASIKYAYA: char = 'ඤ';
+    pub const LETTER_TAALUJA_NAASIKYAYA: char = 'ඤ';
     /// \u{da5}: 'ඥ'
-    pub const SINHALA_LETTER_TAALUJA_SANYOOGA_NAAKSIKYAYA: char = 'ඥ';
+    pub const LETTER_TAALUJA_SANYOOGA_NAAKSIKYAYA: char = 'ඥ';
     /// \u{da6}: 'ඦ'
-    pub const SINHALA_LETTER_SANYAKA_JAYANNA: char = 'ඦ';
+    pub const LETTER_SANYAKA_JAYANNA: char = 'ඦ';
     /// \u{da7}: 'ට'
-    pub const SINHALA_LETTER_ALPAPRAANA_TTAYANNA: char = 'ට';
+    pub const LETTER_ALPAPRAANA_TTAYANNA: char = 'ට';
     /// \u{da8}: 'ඨ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_TTAYANNA: char = 'ඨ';
+    pub const LETTER_MAHAAPRAANA_TTAYANNA: char = 'ඨ';
     /// \u{da9}: 'ඩ'
-    pub const SINHALA_LETTER_ALPAPRAANA_DDAYANNA: char = 'ඩ';
+    pub const LETTER_ALPAPRAANA_DDAYANNA: char = 'ඩ';
     /// \u{daa}: 'ඪ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_DDAYANNA: char = 'ඪ';
+    pub const LETTER_MAHAAPRAANA_DDAYANNA: char = 'ඪ';
     /// \u{dab}: 'ණ'
-    pub const SINHALA_LETTER_MUURDHAJA_NAYANNA: char = 'ණ';
+    pub const LETTER_MUURDHAJA_NAYANNA: char = 'ණ';
     /// \u{dac}: 'ඬ'
-    pub const SINHALA_LETTER_SANYAKA_DDAYANNA: char = 'ඬ';
+    pub const LETTER_SANYAKA_DDAYANNA: char = 'ඬ';
     /// \u{dad}: 'ත'
-    pub const SINHALA_LETTER_ALPAPRAANA_TAYANNA: char = 'ත';
+    pub const LETTER_ALPAPRAANA_TAYANNA: char = 'ත';
     /// \u{dae}: 'ථ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_TAYANNA: char = 'ථ';
+    pub const LETTER_MAHAAPRAANA_TAYANNA: char = 'ථ';
     /// \u{daf}: 'ද'
-    pub const SINHALA_LETTER_ALPAPRAANA_DAYANNA: char = 'ද';
+    pub const LETTER_ALPAPRAANA_DAYANNA: char = 'ද';
     /// \u{db0}: 'ධ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_DAYANNA: char = 'ධ';
+    pub const LETTER_MAHAAPRAANA_DAYANNA: char = 'ධ';
     /// \u{db1}: 'න'
-    pub const SINHALA_LETTER_DANTAJA_NAYANNA: char = 'න';
+    pub const LETTER_DANTAJA_NAYANNA: char = 'න';
     /// \u{db3}: 'ඳ'
-    pub const SINHALA_LETTER_SANYAKA_DAYANNA: char = 'ඳ';
+    pub const LETTER_SANYAKA_DAYANNA: char = 'ඳ';
     /// \u{db4}: 'ප'
-    pub const SINHALA_LETTER_ALPAPRAANA_PAYANNA: char = 'ප';
+    pub const LETTER_ALPAPRAANA_PAYANNA: char = 'ප';
     /// \u{db5}: 'ඵ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_PAYANNA: char = 'ඵ';
+    pub const LETTER_MAHAAPRAANA_PAYANNA: char = 'ඵ';
     /// \u{db6}: 'බ'
-    pub const SINHALA_LETTER_ALPAPRAANA_BAYANNA: char = 'බ';
+    pub const LETTER_ALPAPRAANA_BAYANNA: char = 'බ';
     /// \u{db7}: 'භ'
-    pub const SINHALA_LETTER_MAHAAPRAANA_BAYANNA: char = 'භ';
+    pub const LETTER_MAHAAPRAANA_BAYANNA: char = 'භ';
     /// \u{db8}: 'ම'
-    pub const SINHALA_LETTER_MAYANNA: char = 'ම';
+    pub const LETTER_MAYANNA: char = 'ම';
     /// \u{db9}: 'ඹ'
-    pub const SINHALA_LETTER_AMBA_BAYANNA: char = 'ඹ';
+    pub const LETTER_AMBA_BAYANNA: char = 'ඹ';
     /// \u{dba}: 'ය'
-    pub const SINHALA_LETTER_YAYANNA: char = 'ය';
+    pub const LETTER_YAYANNA: char = 'ය';
     /// \u{dbb}: 'ර'
-    pub const SINHALA_LETTER_RAYANNA: char = 'ර';
+    pub const LETTER_RAYANNA: char = 'ර';
     /// \u{dbd}: 'ල'
-    pub const SINHALA_LETTER_DANTAJA_LAYANNA: char = 'ල';
+    pub const LETTER_DANTAJA_LAYANNA: char = 'ල';
     /// \u{dc0}: 'ව'
-    pub const SINHALA_LETTER_VAYANNA: char = 'ව';
+    pub const LETTER_VAYANNA: char = 'ව';
     /// \u{dc1}: 'ශ'
-    pub const SINHALA_LETTER_TAALUJA_SAYANNA: char = 'ශ';
+    pub const LETTER_TAALUJA_SAYANNA: char = 'ශ';
     /// \u{dc2}: 'ෂ'
-    pub const SINHALA_LETTER_MUURDHAJA_SAYANNA: char = 'ෂ';
+    pub const LETTER_MUURDHAJA_SAYANNA: char = 'ෂ';
     /// \u{dc3}: 'ස'
-    pub const SINHALA_LETTER_DANTAJA_SAYANNA: char = 'ස';
+    pub const LETTER_DANTAJA_SAYANNA: char = 'ස';
     /// \u{dc4}: 'හ'
-    pub const SINHALA_LETTER_HAYANNA: char = 'හ';
+    pub const LETTER_HAYANNA: char = 'හ';
     /// \u{dc5}: 'ළ'
-    pub const SINHALA_LETTER_MUURDHAJA_LAYANNA: char = 'ළ';
+    pub const LETTER_MUURDHAJA_LAYANNA: char = 'ළ';
     /// \u{dc6}: 'ෆ'
-    pub const SINHALA_LETTER_FAYANNA: char = 'ෆ';
+    pub const LETTER_FAYANNA: char = 'ෆ';
     /// \u{dca}: '්'
-    pub const SINHALA_SIGN_AL_DASH_LAKUNA: char = '්';
+    pub const SIGN_AL_DASH_LAKUNA: char = '්';
     /// \u{dcf}: 'ා'
-    pub const SINHALA_VOWEL_SIGN_AELA_DASH_PILLA: char = 'ා';
+    pub const VOWEL_SIGN_AELA_DASH_PILLA: char = 'ා';
     /// \u{dd0}: 'ැ'
-    pub const SINHALA_VOWEL_SIGN_KETTI_AEDA_DASH_PILLA: char = 'ැ';
+    pub const VOWEL_SIGN_KETTI_AEDA_DASH_PILLA: char = 'ැ';
     /// \u{dd1}: 'ෑ'
-    pub const SINHALA_VOWEL_SIGN_DIGA_AEDA_DASH_PILLA: char = 'ෑ';
+    pub const VOWEL_SIGN_DIGA_AEDA_DASH_PILLA: char = 'ෑ';
     /// \u{dd2}: 'ි'
-    pub const SINHALA_VOWEL_SIGN_KETTI_IS_DASH_PILLA: char = 'ි';
+    pub const VOWEL_SIGN_KETTI_IS_DASH_PILLA: char = 'ි';
     /// \u{dd3}: 'ී'
-    pub const SINHALA_VOWEL_SIGN_DIGA_IS_DASH_PILLA: char = 'ී';
+    pub const VOWEL_SIGN_DIGA_IS_DASH_PILLA: char = 'ී';
     /// \u{dd4}: 'ු'
-    pub const SINHALA_VOWEL_SIGN_KETTI_PAA_DASH_PILLA: char = 'ු';
+    pub const VOWEL_SIGN_KETTI_PAA_DASH_PILLA: char = 'ු';
     /// \u{dd6}: 'ූ'
-    pub const SINHALA_VOWEL_SIGN_DIGA_PAA_DASH_PILLA: char = 'ූ';
+    pub const VOWEL_SIGN_DIGA_PAA_DASH_PILLA: char = 'ූ';
     /// \u{dd8}: 'ෘ'
-    pub const SINHALA_VOWEL_SIGN_GAETTA_DASH_PILLA: char = 'ෘ';
+    pub const VOWEL_SIGN_GAETTA_DASH_PILLA: char = 'ෘ';
     /// \u{dd9}: 'ෙ'
-    pub const SINHALA_VOWEL_SIGN_KOMBUVA: char = 'ෙ';
+    pub const VOWEL_SIGN_KOMBUVA: char = 'ෙ';
     /// \u{dda}: 'ේ'
-    pub const SINHALA_VOWEL_SIGN_DIGA_KOMBUVA: char = 'ේ';
+    pub const VOWEL_SIGN_DIGA_KOMBUVA: char = 'ේ';
     /// \u{ddb}: 'ෛ'
-    pub const SINHALA_VOWEL_SIGN_KOMBU_DEKA: char = 'ෛ';
+    pub const VOWEL_SIGN_KOMBU_DEKA: char = 'ෛ';
     /// \u{ddc}: 'ො'
-    pub const SINHALA_VOWEL_SIGN_KOMBUVA_HAA_AELA_DASH_PILLA: char = 'ො';
+    pub const VOWEL_SIGN_KOMBUVA_HAA_AELA_DASH_PILLA: char = 'ො';
     /// \u{ddd}: 'ෝ'
-    pub const SINHALA_VOWEL_SIGN_KOMBUVA_HAA_DIGA_AELA_DASH_PILLA: char = 'ෝ';
+    pub const VOWEL_SIGN_KOMBUVA_HAA_DIGA_AELA_DASH_PILLA: char = 'ෝ';
     /// \u{dde}: 'ෞ'
-    pub const SINHALA_VOWEL_SIGN_KOMBUVA_HAA_GAYANUKITTA: char = 'ෞ';
+    pub const VOWEL_SIGN_KOMBUVA_HAA_GAYANUKITTA: char = 'ෞ';
     /// \u{ddf}: 'ෟ'
-    pub const SINHALA_VOWEL_SIGN_GAYANUKITTA: char = 'ෟ';
+    pub const VOWEL_SIGN_GAYANUKITTA: char = 'ෟ';
     /// \u{de6}: '෦'
-    pub const SINHALA_LITH_DIGIT_ZERO: char = '෦';
+    pub const LITH_DIGIT_ZERO: char = '෦';
     /// \u{de7}: '෧'
-    pub const SINHALA_LITH_DIGIT_ONE: char = '෧';
+    pub const LITH_DIGIT_ONE: char = '෧';
     /// \u{de8}: '෨'
-    pub const SINHALA_LITH_DIGIT_TWO: char = '෨';
+    pub const LITH_DIGIT_TWO: char = '෨';
     /// \u{de9}: '෩'
-    pub const SINHALA_LITH_DIGIT_THREE: char = '෩';
+    pub const LITH_DIGIT_THREE: char = '෩';
     /// \u{dea}: '෪'
-    pub const SINHALA_LITH_DIGIT_FOUR: char = '෪';
+    pub const LITH_DIGIT_FOUR: char = '෪';
     /// \u{deb}: '෫'
-    pub const SINHALA_LITH_DIGIT_FIVE: char = '෫';
+    pub const LITH_DIGIT_FIVE: char = '෫';
     /// \u{dec}: '෬'
-    pub const SINHALA_LITH_DIGIT_SIX: char = '෬';
+    pub const LITH_DIGIT_SIX: char = '෬';
     /// \u{ded}: '෭'
-    pub const SINHALA_LITH_DIGIT_SEVEN: char = '෭';
+    pub const LITH_DIGIT_SEVEN: char = '෭';
     /// \u{dee}: '෮'
-    pub const SINHALA_LITH_DIGIT_EIGHT: char = '෮';
+    pub const LITH_DIGIT_EIGHT: char = '෮';
     /// \u{def}: '෯'
-    pub const SINHALA_LITH_DIGIT_NINE: char = '෯';
+    pub const LITH_DIGIT_NINE: char = '෯';
     /// \u{df2}: 'ෲ'
-    pub const SINHALA_VOWEL_SIGN_DIGA_GAETTA_DASH_PILLA: char = 'ෲ';
+    pub const VOWEL_SIGN_DIGA_GAETTA_DASH_PILLA: char = 'ෲ';
     /// \u{df3}: 'ෳ'
-    pub const SINHALA_VOWEL_SIGN_DIGA_GAYANUKITTA: char = 'ෳ';
+    pub const VOWEL_SIGN_DIGA_GAYANUKITTA: char = 'ෳ';
     /// \u{df4}: '෴'
-    pub const SINHALA_PUNCTUATION_KUNDDALIYA: char = '෴';
+    pub const PUNCTUATION_KUNDDALIYA: char = '෴';
 }
 
 /// \u{d80} → \u{dff}\
@@ -200,281 +200,281 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Sinhala {
     /// \u{d82}: 'ං'
-    SinhalaSignAnusvaraya,
+    SignAnusvaraya,
     /// \u{d83}: 'ඃ'
-    SinhalaSignVisargaya,
+    SignVisargaya,
     /// \u{d85}: 'අ'
-    SinhalaLetterAyanna,
+    LetterAyanna,
     /// \u{d86}: 'ආ'
-    SinhalaLetterAayanna,
+    LetterAayanna,
     /// \u{d87}: 'ඇ'
-    SinhalaLetterAeyanna,
+    LetterAeyanna,
     /// \u{d88}: 'ඈ'
-    SinhalaLetterAeeyanna,
+    LetterAeeyanna,
     /// \u{d89}: 'ඉ'
-    SinhalaLetterIyanna,
+    LetterIyanna,
     /// \u{d8a}: 'ඊ'
-    SinhalaLetterIiyanna,
+    LetterIiyanna,
     /// \u{d8b}: 'උ'
-    SinhalaLetterUyanna,
+    LetterUyanna,
     /// \u{d8c}: 'ඌ'
-    SinhalaLetterUuyanna,
+    LetterUuyanna,
     /// \u{d8d}: 'ඍ'
-    SinhalaLetterIruyanna,
+    LetterIruyanna,
     /// \u{d8e}: 'ඎ'
-    SinhalaLetterIruuyanna,
+    LetterIruuyanna,
     /// \u{d8f}: 'ඏ'
-    SinhalaLetterIluyanna,
+    LetterIluyanna,
     /// \u{d90}: 'ඐ'
-    SinhalaLetterIluuyanna,
+    LetterIluuyanna,
     /// \u{d91}: 'එ'
-    SinhalaLetterEyanna,
+    LetterEyanna,
     /// \u{d92}: 'ඒ'
-    SinhalaLetterEeyanna,
+    LetterEeyanna,
     /// \u{d93}: 'ඓ'
-    SinhalaLetterAiyanna,
+    LetterAiyanna,
     /// \u{d94}: 'ඔ'
-    SinhalaLetterOyanna,
+    LetterOyanna,
     /// \u{d95}: 'ඕ'
-    SinhalaLetterOoyanna,
+    LetterOoyanna,
     /// \u{d96}: 'ඖ'
-    SinhalaLetterAuyanna,
+    LetterAuyanna,
     /// \u{d9a}: 'ක'
-    SinhalaLetterAlpapraanaKayanna,
+    LetterAlpapraanaKayanna,
     /// \u{d9b}: 'ඛ'
-    SinhalaLetterMahaapraanaKayanna,
+    LetterMahaapraanaKayanna,
     /// \u{d9c}: 'ග'
-    SinhalaLetterAlpapraanaGayanna,
+    LetterAlpapraanaGayanna,
     /// \u{d9d}: 'ඝ'
-    SinhalaLetterMahaapraanaGayanna,
+    LetterMahaapraanaGayanna,
     /// \u{d9e}: 'ඞ'
-    SinhalaLetterKantajaNaasikyaya,
+    LetterKantajaNaasikyaya,
     /// \u{d9f}: 'ඟ'
-    SinhalaLetterSanyakaGayanna,
+    LetterSanyakaGayanna,
     /// \u{da0}: 'ච'
-    SinhalaLetterAlpapraanaCayanna,
+    LetterAlpapraanaCayanna,
     /// \u{da1}: 'ඡ'
-    SinhalaLetterMahaapraanaCayanna,
+    LetterMahaapraanaCayanna,
     /// \u{da2}: 'ජ'
-    SinhalaLetterAlpapraanaJayanna,
+    LetterAlpapraanaJayanna,
     /// \u{da3}: 'ඣ'
-    SinhalaLetterMahaapraanaJayanna,
+    LetterMahaapraanaJayanna,
     /// \u{da4}: 'ඤ'
-    SinhalaLetterTaalujaNaasikyaya,
+    LetterTaalujaNaasikyaya,
     /// \u{da5}: 'ඥ'
-    SinhalaLetterTaalujaSanyoogaNaaksikyaya,
+    LetterTaalujaSanyoogaNaaksikyaya,
     /// \u{da6}: 'ඦ'
-    SinhalaLetterSanyakaJayanna,
+    LetterSanyakaJayanna,
     /// \u{da7}: 'ට'
-    SinhalaLetterAlpapraanaTtayanna,
+    LetterAlpapraanaTtayanna,
     /// \u{da8}: 'ඨ'
-    SinhalaLetterMahaapraanaTtayanna,
+    LetterMahaapraanaTtayanna,
     /// \u{da9}: 'ඩ'
-    SinhalaLetterAlpapraanaDdayanna,
+    LetterAlpapraanaDdayanna,
     /// \u{daa}: 'ඪ'
-    SinhalaLetterMahaapraanaDdayanna,
+    LetterMahaapraanaDdayanna,
     /// \u{dab}: 'ණ'
-    SinhalaLetterMuurdhajaNayanna,
+    LetterMuurdhajaNayanna,
     /// \u{dac}: 'ඬ'
-    SinhalaLetterSanyakaDdayanna,
+    LetterSanyakaDdayanna,
     /// \u{dad}: 'ත'
-    SinhalaLetterAlpapraanaTayanna,
+    LetterAlpapraanaTayanna,
     /// \u{dae}: 'ථ'
-    SinhalaLetterMahaapraanaTayanna,
+    LetterMahaapraanaTayanna,
     /// \u{daf}: 'ද'
-    SinhalaLetterAlpapraanaDayanna,
+    LetterAlpapraanaDayanna,
     /// \u{db0}: 'ධ'
-    SinhalaLetterMahaapraanaDayanna,
+    LetterMahaapraanaDayanna,
     /// \u{db1}: 'න'
-    SinhalaLetterDantajaNayanna,
+    LetterDantajaNayanna,
     /// \u{db3}: 'ඳ'
-    SinhalaLetterSanyakaDayanna,
+    LetterSanyakaDayanna,
     /// \u{db4}: 'ප'
-    SinhalaLetterAlpapraanaPayanna,
+    LetterAlpapraanaPayanna,
     /// \u{db5}: 'ඵ'
-    SinhalaLetterMahaapraanaPayanna,
+    LetterMahaapraanaPayanna,
     /// \u{db6}: 'බ'
-    SinhalaLetterAlpapraanaBayanna,
+    LetterAlpapraanaBayanna,
     /// \u{db7}: 'භ'
-    SinhalaLetterMahaapraanaBayanna,
+    LetterMahaapraanaBayanna,
     /// \u{db8}: 'ම'
-    SinhalaLetterMayanna,
+    LetterMayanna,
     /// \u{db9}: 'ඹ'
-    SinhalaLetterAmbaBayanna,
+    LetterAmbaBayanna,
     /// \u{dba}: 'ය'
-    SinhalaLetterYayanna,
+    LetterYayanna,
     /// \u{dbb}: 'ර'
-    SinhalaLetterRayanna,
+    LetterRayanna,
     /// \u{dbd}: 'ල'
-    SinhalaLetterDantajaLayanna,
+    LetterDantajaLayanna,
     /// \u{dc0}: 'ව'
-    SinhalaLetterVayanna,
+    LetterVayanna,
     /// \u{dc1}: 'ශ'
-    SinhalaLetterTaalujaSayanna,
+    LetterTaalujaSayanna,
     /// \u{dc2}: 'ෂ'
-    SinhalaLetterMuurdhajaSayanna,
+    LetterMuurdhajaSayanna,
     /// \u{dc3}: 'ස'
-    SinhalaLetterDantajaSayanna,
+    LetterDantajaSayanna,
     /// \u{dc4}: 'හ'
-    SinhalaLetterHayanna,
+    LetterHayanna,
     /// \u{dc5}: 'ළ'
-    SinhalaLetterMuurdhajaLayanna,
+    LetterMuurdhajaLayanna,
     /// \u{dc6}: 'ෆ'
-    SinhalaLetterFayanna,
+    LetterFayanna,
     /// \u{dca}: '්'
-    SinhalaSignAlDashLakuna,
+    SignAlDashLakuna,
     /// \u{dcf}: 'ා'
-    SinhalaVowelSignAelaDashPilla,
+    VowelSignAelaDashPilla,
     /// \u{dd0}: 'ැ'
-    SinhalaVowelSignKettiAedaDashPilla,
+    VowelSignKettiAedaDashPilla,
     /// \u{dd1}: 'ෑ'
-    SinhalaVowelSignDigaAedaDashPilla,
+    VowelSignDigaAedaDashPilla,
     /// \u{dd2}: 'ි'
-    SinhalaVowelSignKettiIsDashPilla,
+    VowelSignKettiIsDashPilla,
     /// \u{dd3}: 'ී'
-    SinhalaVowelSignDigaIsDashPilla,
+    VowelSignDigaIsDashPilla,
     /// \u{dd4}: 'ු'
-    SinhalaVowelSignKettiPaaDashPilla,
+    VowelSignKettiPaaDashPilla,
     /// \u{dd6}: 'ූ'
-    SinhalaVowelSignDigaPaaDashPilla,
+    VowelSignDigaPaaDashPilla,
     /// \u{dd8}: 'ෘ'
-    SinhalaVowelSignGaettaDashPilla,
+    VowelSignGaettaDashPilla,
     /// \u{dd9}: 'ෙ'
-    SinhalaVowelSignKombuva,
+    VowelSignKombuva,
     /// \u{dda}: 'ේ'
-    SinhalaVowelSignDigaKombuva,
+    VowelSignDigaKombuva,
     /// \u{ddb}: 'ෛ'
-    SinhalaVowelSignKombuDeka,
+    VowelSignKombuDeka,
     /// \u{ddc}: 'ො'
-    SinhalaVowelSignKombuvaHaaAelaDashPilla,
+    VowelSignKombuvaHaaAelaDashPilla,
     /// \u{ddd}: 'ෝ'
-    SinhalaVowelSignKombuvaHaaDigaAelaDashPilla,
+    VowelSignKombuvaHaaDigaAelaDashPilla,
     /// \u{dde}: 'ෞ'
-    SinhalaVowelSignKombuvaHaaGayanukitta,
+    VowelSignKombuvaHaaGayanukitta,
     /// \u{ddf}: 'ෟ'
-    SinhalaVowelSignGayanukitta,
+    VowelSignGayanukitta,
     /// \u{de6}: '෦'
-    SinhalaLithDigitZero,
+    LithDigitZero,
     /// \u{de7}: '෧'
-    SinhalaLithDigitOne,
+    LithDigitOne,
     /// \u{de8}: '෨'
-    SinhalaLithDigitTwo,
+    LithDigitTwo,
     /// \u{de9}: '෩'
-    SinhalaLithDigitThree,
+    LithDigitThree,
     /// \u{dea}: '෪'
-    SinhalaLithDigitFour,
+    LithDigitFour,
     /// \u{deb}: '෫'
-    SinhalaLithDigitFive,
+    LithDigitFive,
     /// \u{dec}: '෬'
-    SinhalaLithDigitSix,
+    LithDigitSix,
     /// \u{ded}: '෭'
-    SinhalaLithDigitSeven,
+    LithDigitSeven,
     /// \u{dee}: '෮'
-    SinhalaLithDigitEight,
+    LithDigitEight,
     /// \u{def}: '෯'
-    SinhalaLithDigitNine,
+    LithDigitNine,
     /// \u{df2}: 'ෲ'
-    SinhalaVowelSignDigaGaettaDashPilla,
+    VowelSignDigaGaettaDashPilla,
     /// \u{df3}: 'ෳ'
-    SinhalaVowelSignDigaGayanukitta,
+    VowelSignDigaGayanukitta,
     /// \u{df4}: '෴'
-    SinhalaPunctuationKunddaliya,
+    PunctuationKunddaliya,
 }
 
 impl Into<char> for Sinhala {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Sinhala::SinhalaSignAnusvaraya => SINHALA_SIGN_ANUSVARAYA,
-            Sinhala::SinhalaSignVisargaya => SINHALA_SIGN_VISARGAYA,
-            Sinhala::SinhalaLetterAyanna => SINHALA_LETTER_AYANNA,
-            Sinhala::SinhalaLetterAayanna => SINHALA_LETTER_AAYANNA,
-            Sinhala::SinhalaLetterAeyanna => SINHALA_LETTER_AEYANNA,
-            Sinhala::SinhalaLetterAeeyanna => SINHALA_LETTER_AEEYANNA,
-            Sinhala::SinhalaLetterIyanna => SINHALA_LETTER_IYANNA,
-            Sinhala::SinhalaLetterIiyanna => SINHALA_LETTER_IIYANNA,
-            Sinhala::SinhalaLetterUyanna => SINHALA_LETTER_UYANNA,
-            Sinhala::SinhalaLetterUuyanna => SINHALA_LETTER_UUYANNA,
-            Sinhala::SinhalaLetterIruyanna => SINHALA_LETTER_IRUYANNA,
-            Sinhala::SinhalaLetterIruuyanna => SINHALA_LETTER_IRUUYANNA,
-            Sinhala::SinhalaLetterIluyanna => SINHALA_LETTER_ILUYANNA,
-            Sinhala::SinhalaLetterIluuyanna => SINHALA_LETTER_ILUUYANNA,
-            Sinhala::SinhalaLetterEyanna => SINHALA_LETTER_EYANNA,
-            Sinhala::SinhalaLetterEeyanna => SINHALA_LETTER_EEYANNA,
-            Sinhala::SinhalaLetterAiyanna => SINHALA_LETTER_AIYANNA,
-            Sinhala::SinhalaLetterOyanna => SINHALA_LETTER_OYANNA,
-            Sinhala::SinhalaLetterOoyanna => SINHALA_LETTER_OOYANNA,
-            Sinhala::SinhalaLetterAuyanna => SINHALA_LETTER_AUYANNA,
-            Sinhala::SinhalaLetterAlpapraanaKayanna => SINHALA_LETTER_ALPAPRAANA_KAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaKayanna => SINHALA_LETTER_MAHAAPRAANA_KAYANNA,
-            Sinhala::SinhalaLetterAlpapraanaGayanna => SINHALA_LETTER_ALPAPRAANA_GAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaGayanna => SINHALA_LETTER_MAHAAPRAANA_GAYANNA,
-            Sinhala::SinhalaLetterKantajaNaasikyaya => SINHALA_LETTER_KANTAJA_NAASIKYAYA,
-            Sinhala::SinhalaLetterSanyakaGayanna => SINHALA_LETTER_SANYAKA_GAYANNA,
-            Sinhala::SinhalaLetterAlpapraanaCayanna => SINHALA_LETTER_ALPAPRAANA_CAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaCayanna => SINHALA_LETTER_MAHAAPRAANA_CAYANNA,
-            Sinhala::SinhalaLetterAlpapraanaJayanna => SINHALA_LETTER_ALPAPRAANA_JAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaJayanna => SINHALA_LETTER_MAHAAPRAANA_JAYANNA,
-            Sinhala::SinhalaLetterTaalujaNaasikyaya => SINHALA_LETTER_TAALUJA_NAASIKYAYA,
-            Sinhala::SinhalaLetterTaalujaSanyoogaNaaksikyaya => SINHALA_LETTER_TAALUJA_SANYOOGA_NAAKSIKYAYA,
-            Sinhala::SinhalaLetterSanyakaJayanna => SINHALA_LETTER_SANYAKA_JAYANNA,
-            Sinhala::SinhalaLetterAlpapraanaTtayanna => SINHALA_LETTER_ALPAPRAANA_TTAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaTtayanna => SINHALA_LETTER_MAHAAPRAANA_TTAYANNA,
-            Sinhala::SinhalaLetterAlpapraanaDdayanna => SINHALA_LETTER_ALPAPRAANA_DDAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaDdayanna => SINHALA_LETTER_MAHAAPRAANA_DDAYANNA,
-            Sinhala::SinhalaLetterMuurdhajaNayanna => SINHALA_LETTER_MUURDHAJA_NAYANNA,
-            Sinhala::SinhalaLetterSanyakaDdayanna => SINHALA_LETTER_SANYAKA_DDAYANNA,
-            Sinhala::SinhalaLetterAlpapraanaTayanna => SINHALA_LETTER_ALPAPRAANA_TAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaTayanna => SINHALA_LETTER_MAHAAPRAANA_TAYANNA,
-            Sinhala::SinhalaLetterAlpapraanaDayanna => SINHALA_LETTER_ALPAPRAANA_DAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaDayanna => SINHALA_LETTER_MAHAAPRAANA_DAYANNA,
-            Sinhala::SinhalaLetterDantajaNayanna => SINHALA_LETTER_DANTAJA_NAYANNA,
-            Sinhala::SinhalaLetterSanyakaDayanna => SINHALA_LETTER_SANYAKA_DAYANNA,
-            Sinhala::SinhalaLetterAlpapraanaPayanna => SINHALA_LETTER_ALPAPRAANA_PAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaPayanna => SINHALA_LETTER_MAHAAPRAANA_PAYANNA,
-            Sinhala::SinhalaLetterAlpapraanaBayanna => SINHALA_LETTER_ALPAPRAANA_BAYANNA,
-            Sinhala::SinhalaLetterMahaapraanaBayanna => SINHALA_LETTER_MAHAAPRAANA_BAYANNA,
-            Sinhala::SinhalaLetterMayanna => SINHALA_LETTER_MAYANNA,
-            Sinhala::SinhalaLetterAmbaBayanna => SINHALA_LETTER_AMBA_BAYANNA,
-            Sinhala::SinhalaLetterYayanna => SINHALA_LETTER_YAYANNA,
-            Sinhala::SinhalaLetterRayanna => SINHALA_LETTER_RAYANNA,
-            Sinhala::SinhalaLetterDantajaLayanna => SINHALA_LETTER_DANTAJA_LAYANNA,
-            Sinhala::SinhalaLetterVayanna => SINHALA_LETTER_VAYANNA,
-            Sinhala::SinhalaLetterTaalujaSayanna => SINHALA_LETTER_TAALUJA_SAYANNA,
-            Sinhala::SinhalaLetterMuurdhajaSayanna => SINHALA_LETTER_MUURDHAJA_SAYANNA,
-            Sinhala::SinhalaLetterDantajaSayanna => SINHALA_LETTER_DANTAJA_SAYANNA,
-            Sinhala::SinhalaLetterHayanna => SINHALA_LETTER_HAYANNA,
-            Sinhala::SinhalaLetterMuurdhajaLayanna => SINHALA_LETTER_MUURDHAJA_LAYANNA,
-            Sinhala::SinhalaLetterFayanna => SINHALA_LETTER_FAYANNA,
-            Sinhala::SinhalaSignAlDashLakuna => SINHALA_SIGN_AL_DASH_LAKUNA,
-            Sinhala::SinhalaVowelSignAelaDashPilla => SINHALA_VOWEL_SIGN_AELA_DASH_PILLA,
-            Sinhala::SinhalaVowelSignKettiAedaDashPilla => SINHALA_VOWEL_SIGN_KETTI_AEDA_DASH_PILLA,
-            Sinhala::SinhalaVowelSignDigaAedaDashPilla => SINHALA_VOWEL_SIGN_DIGA_AEDA_DASH_PILLA,
-            Sinhala::SinhalaVowelSignKettiIsDashPilla => SINHALA_VOWEL_SIGN_KETTI_IS_DASH_PILLA,
-            Sinhala::SinhalaVowelSignDigaIsDashPilla => SINHALA_VOWEL_SIGN_DIGA_IS_DASH_PILLA,
-            Sinhala::SinhalaVowelSignKettiPaaDashPilla => SINHALA_VOWEL_SIGN_KETTI_PAA_DASH_PILLA,
-            Sinhala::SinhalaVowelSignDigaPaaDashPilla => SINHALA_VOWEL_SIGN_DIGA_PAA_DASH_PILLA,
-            Sinhala::SinhalaVowelSignGaettaDashPilla => SINHALA_VOWEL_SIGN_GAETTA_DASH_PILLA,
-            Sinhala::SinhalaVowelSignKombuva => SINHALA_VOWEL_SIGN_KOMBUVA,
-            Sinhala::SinhalaVowelSignDigaKombuva => SINHALA_VOWEL_SIGN_DIGA_KOMBUVA,
-            Sinhala::SinhalaVowelSignKombuDeka => SINHALA_VOWEL_SIGN_KOMBU_DEKA,
-            Sinhala::SinhalaVowelSignKombuvaHaaAelaDashPilla => SINHALA_VOWEL_SIGN_KOMBUVA_HAA_AELA_DASH_PILLA,
-            Sinhala::SinhalaVowelSignKombuvaHaaDigaAelaDashPilla => SINHALA_VOWEL_SIGN_KOMBUVA_HAA_DIGA_AELA_DASH_PILLA,
-            Sinhala::SinhalaVowelSignKombuvaHaaGayanukitta => SINHALA_VOWEL_SIGN_KOMBUVA_HAA_GAYANUKITTA,
-            Sinhala::SinhalaVowelSignGayanukitta => SINHALA_VOWEL_SIGN_GAYANUKITTA,
-            Sinhala::SinhalaLithDigitZero => SINHALA_LITH_DIGIT_ZERO,
-            Sinhala::SinhalaLithDigitOne => SINHALA_LITH_DIGIT_ONE,
-            Sinhala::SinhalaLithDigitTwo => SINHALA_LITH_DIGIT_TWO,
-            Sinhala::SinhalaLithDigitThree => SINHALA_LITH_DIGIT_THREE,
-            Sinhala::SinhalaLithDigitFour => SINHALA_LITH_DIGIT_FOUR,
-            Sinhala::SinhalaLithDigitFive => SINHALA_LITH_DIGIT_FIVE,
-            Sinhala::SinhalaLithDigitSix => SINHALA_LITH_DIGIT_SIX,
-            Sinhala::SinhalaLithDigitSeven => SINHALA_LITH_DIGIT_SEVEN,
-            Sinhala::SinhalaLithDigitEight => SINHALA_LITH_DIGIT_EIGHT,
-            Sinhala::SinhalaLithDigitNine => SINHALA_LITH_DIGIT_NINE,
-            Sinhala::SinhalaVowelSignDigaGaettaDashPilla => SINHALA_VOWEL_SIGN_DIGA_GAETTA_DASH_PILLA,
-            Sinhala::SinhalaVowelSignDigaGayanukitta => SINHALA_VOWEL_SIGN_DIGA_GAYANUKITTA,
-            Sinhala::SinhalaPunctuationKunddaliya => SINHALA_PUNCTUATION_KUNDDALIYA,
+            Sinhala::SignAnusvaraya => SIGN_ANUSVARAYA,
+            Sinhala::SignVisargaya => SIGN_VISARGAYA,
+            Sinhala::LetterAyanna => LETTER_AYANNA,
+            Sinhala::LetterAayanna => LETTER_AAYANNA,
+            Sinhala::LetterAeyanna => LETTER_AEYANNA,
+            Sinhala::LetterAeeyanna => LETTER_AEEYANNA,
+            Sinhala::LetterIyanna => LETTER_IYANNA,
+            Sinhala::LetterIiyanna => LETTER_IIYANNA,
+            Sinhala::LetterUyanna => LETTER_UYANNA,
+            Sinhala::LetterUuyanna => LETTER_UUYANNA,
+            Sinhala::LetterIruyanna => LETTER_IRUYANNA,
+            Sinhala::LetterIruuyanna => LETTER_IRUUYANNA,
+            Sinhala::LetterIluyanna => LETTER_ILUYANNA,
+            Sinhala::LetterIluuyanna => LETTER_ILUUYANNA,
+            Sinhala::LetterEyanna => LETTER_EYANNA,
+            Sinhala::LetterEeyanna => LETTER_EEYANNA,
+            Sinhala::LetterAiyanna => LETTER_AIYANNA,
+            Sinhala::LetterOyanna => LETTER_OYANNA,
+            Sinhala::LetterOoyanna => LETTER_OOYANNA,
+            Sinhala::LetterAuyanna => LETTER_AUYANNA,
+            Sinhala::LetterAlpapraanaKayanna => LETTER_ALPAPRAANA_KAYANNA,
+            Sinhala::LetterMahaapraanaKayanna => LETTER_MAHAAPRAANA_KAYANNA,
+            Sinhala::LetterAlpapraanaGayanna => LETTER_ALPAPRAANA_GAYANNA,
+            Sinhala::LetterMahaapraanaGayanna => LETTER_MAHAAPRAANA_GAYANNA,
+            Sinhala::LetterKantajaNaasikyaya => LETTER_KANTAJA_NAASIKYAYA,
+            Sinhala::LetterSanyakaGayanna => LETTER_SANYAKA_GAYANNA,
+            Sinhala::LetterAlpapraanaCayanna => LETTER_ALPAPRAANA_CAYANNA,
+            Sinhala::LetterMahaapraanaCayanna => LETTER_MAHAAPRAANA_CAYANNA,
+            Sinhala::LetterAlpapraanaJayanna => LETTER_ALPAPRAANA_JAYANNA,
+            Sinhala::LetterMahaapraanaJayanna => LETTER_MAHAAPRAANA_JAYANNA,
+            Sinhala::LetterTaalujaNaasikyaya => LETTER_TAALUJA_NAASIKYAYA,
+            Sinhala::LetterTaalujaSanyoogaNaaksikyaya => LETTER_TAALUJA_SANYOOGA_NAAKSIKYAYA,
+            Sinhala::LetterSanyakaJayanna => LETTER_SANYAKA_JAYANNA,
+            Sinhala::LetterAlpapraanaTtayanna => LETTER_ALPAPRAANA_TTAYANNA,
+            Sinhala::LetterMahaapraanaTtayanna => LETTER_MAHAAPRAANA_TTAYANNA,
+            Sinhala::LetterAlpapraanaDdayanna => LETTER_ALPAPRAANA_DDAYANNA,
+            Sinhala::LetterMahaapraanaDdayanna => LETTER_MAHAAPRAANA_DDAYANNA,
+            Sinhala::LetterMuurdhajaNayanna => LETTER_MUURDHAJA_NAYANNA,
+            Sinhala::LetterSanyakaDdayanna => LETTER_SANYAKA_DDAYANNA,
+            Sinhala::LetterAlpapraanaTayanna => LETTER_ALPAPRAANA_TAYANNA,
+            Sinhala::LetterMahaapraanaTayanna => LETTER_MAHAAPRAANA_TAYANNA,
+            Sinhala::LetterAlpapraanaDayanna => LETTER_ALPAPRAANA_DAYANNA,
+            Sinhala::LetterMahaapraanaDayanna => LETTER_MAHAAPRAANA_DAYANNA,
+            Sinhala::LetterDantajaNayanna => LETTER_DANTAJA_NAYANNA,
+            Sinhala::LetterSanyakaDayanna => LETTER_SANYAKA_DAYANNA,
+            Sinhala::LetterAlpapraanaPayanna => LETTER_ALPAPRAANA_PAYANNA,
+            Sinhala::LetterMahaapraanaPayanna => LETTER_MAHAAPRAANA_PAYANNA,
+            Sinhala::LetterAlpapraanaBayanna => LETTER_ALPAPRAANA_BAYANNA,
+            Sinhala::LetterMahaapraanaBayanna => LETTER_MAHAAPRAANA_BAYANNA,
+            Sinhala::LetterMayanna => LETTER_MAYANNA,
+            Sinhala::LetterAmbaBayanna => LETTER_AMBA_BAYANNA,
+            Sinhala::LetterYayanna => LETTER_YAYANNA,
+            Sinhala::LetterRayanna => LETTER_RAYANNA,
+            Sinhala::LetterDantajaLayanna => LETTER_DANTAJA_LAYANNA,
+            Sinhala::LetterVayanna => LETTER_VAYANNA,
+            Sinhala::LetterTaalujaSayanna => LETTER_TAALUJA_SAYANNA,
+            Sinhala::LetterMuurdhajaSayanna => LETTER_MUURDHAJA_SAYANNA,
+            Sinhala::LetterDantajaSayanna => LETTER_DANTAJA_SAYANNA,
+            Sinhala::LetterHayanna => LETTER_HAYANNA,
+            Sinhala::LetterMuurdhajaLayanna => LETTER_MUURDHAJA_LAYANNA,
+            Sinhala::LetterFayanna => LETTER_FAYANNA,
+            Sinhala::SignAlDashLakuna => SIGN_AL_DASH_LAKUNA,
+            Sinhala::VowelSignAelaDashPilla => VOWEL_SIGN_AELA_DASH_PILLA,
+            Sinhala::VowelSignKettiAedaDashPilla => VOWEL_SIGN_KETTI_AEDA_DASH_PILLA,
+            Sinhala::VowelSignDigaAedaDashPilla => VOWEL_SIGN_DIGA_AEDA_DASH_PILLA,
+            Sinhala::VowelSignKettiIsDashPilla => VOWEL_SIGN_KETTI_IS_DASH_PILLA,
+            Sinhala::VowelSignDigaIsDashPilla => VOWEL_SIGN_DIGA_IS_DASH_PILLA,
+            Sinhala::VowelSignKettiPaaDashPilla => VOWEL_SIGN_KETTI_PAA_DASH_PILLA,
+            Sinhala::VowelSignDigaPaaDashPilla => VOWEL_SIGN_DIGA_PAA_DASH_PILLA,
+            Sinhala::VowelSignGaettaDashPilla => VOWEL_SIGN_GAETTA_DASH_PILLA,
+            Sinhala::VowelSignKombuva => VOWEL_SIGN_KOMBUVA,
+            Sinhala::VowelSignDigaKombuva => VOWEL_SIGN_DIGA_KOMBUVA,
+            Sinhala::VowelSignKombuDeka => VOWEL_SIGN_KOMBU_DEKA,
+            Sinhala::VowelSignKombuvaHaaAelaDashPilla => VOWEL_SIGN_KOMBUVA_HAA_AELA_DASH_PILLA,
+            Sinhala::VowelSignKombuvaHaaDigaAelaDashPilla => VOWEL_SIGN_KOMBUVA_HAA_DIGA_AELA_DASH_PILLA,
+            Sinhala::VowelSignKombuvaHaaGayanukitta => VOWEL_SIGN_KOMBUVA_HAA_GAYANUKITTA,
+            Sinhala::VowelSignGayanukitta => VOWEL_SIGN_GAYANUKITTA,
+            Sinhala::LithDigitZero => LITH_DIGIT_ZERO,
+            Sinhala::LithDigitOne => LITH_DIGIT_ONE,
+            Sinhala::LithDigitTwo => LITH_DIGIT_TWO,
+            Sinhala::LithDigitThree => LITH_DIGIT_THREE,
+            Sinhala::LithDigitFour => LITH_DIGIT_FOUR,
+            Sinhala::LithDigitFive => LITH_DIGIT_FIVE,
+            Sinhala::LithDigitSix => LITH_DIGIT_SIX,
+            Sinhala::LithDigitSeven => LITH_DIGIT_SEVEN,
+            Sinhala::LithDigitEight => LITH_DIGIT_EIGHT,
+            Sinhala::LithDigitNine => LITH_DIGIT_NINE,
+            Sinhala::VowelSignDigaGaettaDashPilla => VOWEL_SIGN_DIGA_GAETTA_DASH_PILLA,
+            Sinhala::VowelSignDigaGayanukitta => VOWEL_SIGN_DIGA_GAYANUKITTA,
+            Sinhala::PunctuationKunddaliya => PUNCTUATION_KUNDDALIYA,
         }
     }
 }
@@ -484,96 +484,96 @@ impl std::convert::TryFrom<char> for Sinhala {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            SINHALA_SIGN_ANUSVARAYA => Ok(Sinhala::SinhalaSignAnusvaraya),
-            SINHALA_SIGN_VISARGAYA => Ok(Sinhala::SinhalaSignVisargaya),
-            SINHALA_LETTER_AYANNA => Ok(Sinhala::SinhalaLetterAyanna),
-            SINHALA_LETTER_AAYANNA => Ok(Sinhala::SinhalaLetterAayanna),
-            SINHALA_LETTER_AEYANNA => Ok(Sinhala::SinhalaLetterAeyanna),
-            SINHALA_LETTER_AEEYANNA => Ok(Sinhala::SinhalaLetterAeeyanna),
-            SINHALA_LETTER_IYANNA => Ok(Sinhala::SinhalaLetterIyanna),
-            SINHALA_LETTER_IIYANNA => Ok(Sinhala::SinhalaLetterIiyanna),
-            SINHALA_LETTER_UYANNA => Ok(Sinhala::SinhalaLetterUyanna),
-            SINHALA_LETTER_UUYANNA => Ok(Sinhala::SinhalaLetterUuyanna),
-            SINHALA_LETTER_IRUYANNA => Ok(Sinhala::SinhalaLetterIruyanna),
-            SINHALA_LETTER_IRUUYANNA => Ok(Sinhala::SinhalaLetterIruuyanna),
-            SINHALA_LETTER_ILUYANNA => Ok(Sinhala::SinhalaLetterIluyanna),
-            SINHALA_LETTER_ILUUYANNA => Ok(Sinhala::SinhalaLetterIluuyanna),
-            SINHALA_LETTER_EYANNA => Ok(Sinhala::SinhalaLetterEyanna),
-            SINHALA_LETTER_EEYANNA => Ok(Sinhala::SinhalaLetterEeyanna),
-            SINHALA_LETTER_AIYANNA => Ok(Sinhala::SinhalaLetterAiyanna),
-            SINHALA_LETTER_OYANNA => Ok(Sinhala::SinhalaLetterOyanna),
-            SINHALA_LETTER_OOYANNA => Ok(Sinhala::SinhalaLetterOoyanna),
-            SINHALA_LETTER_AUYANNA => Ok(Sinhala::SinhalaLetterAuyanna),
-            SINHALA_LETTER_ALPAPRAANA_KAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaKayanna),
-            SINHALA_LETTER_MAHAAPRAANA_KAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaKayanna),
-            SINHALA_LETTER_ALPAPRAANA_GAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaGayanna),
-            SINHALA_LETTER_MAHAAPRAANA_GAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaGayanna),
-            SINHALA_LETTER_KANTAJA_NAASIKYAYA => Ok(Sinhala::SinhalaLetterKantajaNaasikyaya),
-            SINHALA_LETTER_SANYAKA_GAYANNA => Ok(Sinhala::SinhalaLetterSanyakaGayanna),
-            SINHALA_LETTER_ALPAPRAANA_CAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaCayanna),
-            SINHALA_LETTER_MAHAAPRAANA_CAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaCayanna),
-            SINHALA_LETTER_ALPAPRAANA_JAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaJayanna),
-            SINHALA_LETTER_MAHAAPRAANA_JAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaJayanna),
-            SINHALA_LETTER_TAALUJA_NAASIKYAYA => Ok(Sinhala::SinhalaLetterTaalujaNaasikyaya),
-            SINHALA_LETTER_TAALUJA_SANYOOGA_NAAKSIKYAYA => Ok(Sinhala::SinhalaLetterTaalujaSanyoogaNaaksikyaya),
-            SINHALA_LETTER_SANYAKA_JAYANNA => Ok(Sinhala::SinhalaLetterSanyakaJayanna),
-            SINHALA_LETTER_ALPAPRAANA_TTAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaTtayanna),
-            SINHALA_LETTER_MAHAAPRAANA_TTAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaTtayanna),
-            SINHALA_LETTER_ALPAPRAANA_DDAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaDdayanna),
-            SINHALA_LETTER_MAHAAPRAANA_DDAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaDdayanna),
-            SINHALA_LETTER_MUURDHAJA_NAYANNA => Ok(Sinhala::SinhalaLetterMuurdhajaNayanna),
-            SINHALA_LETTER_SANYAKA_DDAYANNA => Ok(Sinhala::SinhalaLetterSanyakaDdayanna),
-            SINHALA_LETTER_ALPAPRAANA_TAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaTayanna),
-            SINHALA_LETTER_MAHAAPRAANA_TAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaTayanna),
-            SINHALA_LETTER_ALPAPRAANA_DAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaDayanna),
-            SINHALA_LETTER_MAHAAPRAANA_DAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaDayanna),
-            SINHALA_LETTER_DANTAJA_NAYANNA => Ok(Sinhala::SinhalaLetterDantajaNayanna),
-            SINHALA_LETTER_SANYAKA_DAYANNA => Ok(Sinhala::SinhalaLetterSanyakaDayanna),
-            SINHALA_LETTER_ALPAPRAANA_PAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaPayanna),
-            SINHALA_LETTER_MAHAAPRAANA_PAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaPayanna),
-            SINHALA_LETTER_ALPAPRAANA_BAYANNA => Ok(Sinhala::SinhalaLetterAlpapraanaBayanna),
-            SINHALA_LETTER_MAHAAPRAANA_BAYANNA => Ok(Sinhala::SinhalaLetterMahaapraanaBayanna),
-            SINHALA_LETTER_MAYANNA => Ok(Sinhala::SinhalaLetterMayanna),
-            SINHALA_LETTER_AMBA_BAYANNA => Ok(Sinhala::SinhalaLetterAmbaBayanna),
-            SINHALA_LETTER_YAYANNA => Ok(Sinhala::SinhalaLetterYayanna),
-            SINHALA_LETTER_RAYANNA => Ok(Sinhala::SinhalaLetterRayanna),
-            SINHALA_LETTER_DANTAJA_LAYANNA => Ok(Sinhala::SinhalaLetterDantajaLayanna),
-            SINHALA_LETTER_VAYANNA => Ok(Sinhala::SinhalaLetterVayanna),
-            SINHALA_LETTER_TAALUJA_SAYANNA => Ok(Sinhala::SinhalaLetterTaalujaSayanna),
-            SINHALA_LETTER_MUURDHAJA_SAYANNA => Ok(Sinhala::SinhalaLetterMuurdhajaSayanna),
-            SINHALA_LETTER_DANTAJA_SAYANNA => Ok(Sinhala::SinhalaLetterDantajaSayanna),
-            SINHALA_LETTER_HAYANNA => Ok(Sinhala::SinhalaLetterHayanna),
-            SINHALA_LETTER_MUURDHAJA_LAYANNA => Ok(Sinhala::SinhalaLetterMuurdhajaLayanna),
-            SINHALA_LETTER_FAYANNA => Ok(Sinhala::SinhalaLetterFayanna),
-            SINHALA_SIGN_AL_DASH_LAKUNA => Ok(Sinhala::SinhalaSignAlDashLakuna),
-            SINHALA_VOWEL_SIGN_AELA_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignAelaDashPilla),
-            SINHALA_VOWEL_SIGN_KETTI_AEDA_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignKettiAedaDashPilla),
-            SINHALA_VOWEL_SIGN_DIGA_AEDA_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignDigaAedaDashPilla),
-            SINHALA_VOWEL_SIGN_KETTI_IS_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignKettiIsDashPilla),
-            SINHALA_VOWEL_SIGN_DIGA_IS_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignDigaIsDashPilla),
-            SINHALA_VOWEL_SIGN_KETTI_PAA_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignKettiPaaDashPilla),
-            SINHALA_VOWEL_SIGN_DIGA_PAA_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignDigaPaaDashPilla),
-            SINHALA_VOWEL_SIGN_GAETTA_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignGaettaDashPilla),
-            SINHALA_VOWEL_SIGN_KOMBUVA => Ok(Sinhala::SinhalaVowelSignKombuva),
-            SINHALA_VOWEL_SIGN_DIGA_KOMBUVA => Ok(Sinhala::SinhalaVowelSignDigaKombuva),
-            SINHALA_VOWEL_SIGN_KOMBU_DEKA => Ok(Sinhala::SinhalaVowelSignKombuDeka),
-            SINHALA_VOWEL_SIGN_KOMBUVA_HAA_AELA_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignKombuvaHaaAelaDashPilla),
-            SINHALA_VOWEL_SIGN_KOMBUVA_HAA_DIGA_AELA_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignKombuvaHaaDigaAelaDashPilla),
-            SINHALA_VOWEL_SIGN_KOMBUVA_HAA_GAYANUKITTA => Ok(Sinhala::SinhalaVowelSignKombuvaHaaGayanukitta),
-            SINHALA_VOWEL_SIGN_GAYANUKITTA => Ok(Sinhala::SinhalaVowelSignGayanukitta),
-            SINHALA_LITH_DIGIT_ZERO => Ok(Sinhala::SinhalaLithDigitZero),
-            SINHALA_LITH_DIGIT_ONE => Ok(Sinhala::SinhalaLithDigitOne),
-            SINHALA_LITH_DIGIT_TWO => Ok(Sinhala::SinhalaLithDigitTwo),
-            SINHALA_LITH_DIGIT_THREE => Ok(Sinhala::SinhalaLithDigitThree),
-            SINHALA_LITH_DIGIT_FOUR => Ok(Sinhala::SinhalaLithDigitFour),
-            SINHALA_LITH_DIGIT_FIVE => Ok(Sinhala::SinhalaLithDigitFive),
-            SINHALA_LITH_DIGIT_SIX => Ok(Sinhala::SinhalaLithDigitSix),
-            SINHALA_LITH_DIGIT_SEVEN => Ok(Sinhala::SinhalaLithDigitSeven),
-            SINHALA_LITH_DIGIT_EIGHT => Ok(Sinhala::SinhalaLithDigitEight),
-            SINHALA_LITH_DIGIT_NINE => Ok(Sinhala::SinhalaLithDigitNine),
-            SINHALA_VOWEL_SIGN_DIGA_GAETTA_DASH_PILLA => Ok(Sinhala::SinhalaVowelSignDigaGaettaDashPilla),
-            SINHALA_VOWEL_SIGN_DIGA_GAYANUKITTA => Ok(Sinhala::SinhalaVowelSignDigaGayanukitta),
-            SINHALA_PUNCTUATION_KUNDDALIYA => Ok(Sinhala::SinhalaPunctuationKunddaliya),
+            SIGN_ANUSVARAYA => Ok(Sinhala::SignAnusvaraya),
+            SIGN_VISARGAYA => Ok(Sinhala::SignVisargaya),
+            LETTER_AYANNA => Ok(Sinhala::LetterAyanna),
+            LETTER_AAYANNA => Ok(Sinhala::LetterAayanna),
+            LETTER_AEYANNA => Ok(Sinhala::LetterAeyanna),
+            LETTER_AEEYANNA => Ok(Sinhala::LetterAeeyanna),
+            LETTER_IYANNA => Ok(Sinhala::LetterIyanna),
+            LETTER_IIYANNA => Ok(Sinhala::LetterIiyanna),
+            LETTER_UYANNA => Ok(Sinhala::LetterUyanna),
+            LETTER_UUYANNA => Ok(Sinhala::LetterUuyanna),
+            LETTER_IRUYANNA => Ok(Sinhala::LetterIruyanna),
+            LETTER_IRUUYANNA => Ok(Sinhala::LetterIruuyanna),
+            LETTER_ILUYANNA => Ok(Sinhala::LetterIluyanna),
+            LETTER_ILUUYANNA => Ok(Sinhala::LetterIluuyanna),
+            LETTER_EYANNA => Ok(Sinhala::LetterEyanna),
+            LETTER_EEYANNA => Ok(Sinhala::LetterEeyanna),
+            LETTER_AIYANNA => Ok(Sinhala::LetterAiyanna),
+            LETTER_OYANNA => Ok(Sinhala::LetterOyanna),
+            LETTER_OOYANNA => Ok(Sinhala::LetterOoyanna),
+            LETTER_AUYANNA => Ok(Sinhala::LetterAuyanna),
+            LETTER_ALPAPRAANA_KAYANNA => Ok(Sinhala::LetterAlpapraanaKayanna),
+            LETTER_MAHAAPRAANA_KAYANNA => Ok(Sinhala::LetterMahaapraanaKayanna),
+            LETTER_ALPAPRAANA_GAYANNA => Ok(Sinhala::LetterAlpapraanaGayanna),
+            LETTER_MAHAAPRAANA_GAYANNA => Ok(Sinhala::LetterMahaapraanaGayanna),
+            LETTER_KANTAJA_NAASIKYAYA => Ok(Sinhala::LetterKantajaNaasikyaya),
+            LETTER_SANYAKA_GAYANNA => Ok(Sinhala::LetterSanyakaGayanna),
+            LETTER_ALPAPRAANA_CAYANNA => Ok(Sinhala::LetterAlpapraanaCayanna),
+            LETTER_MAHAAPRAANA_CAYANNA => Ok(Sinhala::LetterMahaapraanaCayanna),
+            LETTER_ALPAPRAANA_JAYANNA => Ok(Sinhala::LetterAlpapraanaJayanna),
+            LETTER_MAHAAPRAANA_JAYANNA => Ok(Sinhala::LetterMahaapraanaJayanna),
+            LETTER_TAALUJA_NAASIKYAYA => Ok(Sinhala::LetterTaalujaNaasikyaya),
+            LETTER_TAALUJA_SANYOOGA_NAAKSIKYAYA => Ok(Sinhala::LetterTaalujaSanyoogaNaaksikyaya),
+            LETTER_SANYAKA_JAYANNA => Ok(Sinhala::LetterSanyakaJayanna),
+            LETTER_ALPAPRAANA_TTAYANNA => Ok(Sinhala::LetterAlpapraanaTtayanna),
+            LETTER_MAHAAPRAANA_TTAYANNA => Ok(Sinhala::LetterMahaapraanaTtayanna),
+            LETTER_ALPAPRAANA_DDAYANNA => Ok(Sinhala::LetterAlpapraanaDdayanna),
+            LETTER_MAHAAPRAANA_DDAYANNA => Ok(Sinhala::LetterMahaapraanaDdayanna),
+            LETTER_MUURDHAJA_NAYANNA => Ok(Sinhala::LetterMuurdhajaNayanna),
+            LETTER_SANYAKA_DDAYANNA => Ok(Sinhala::LetterSanyakaDdayanna),
+            LETTER_ALPAPRAANA_TAYANNA => Ok(Sinhala::LetterAlpapraanaTayanna),
+            LETTER_MAHAAPRAANA_TAYANNA => Ok(Sinhala::LetterMahaapraanaTayanna),
+            LETTER_ALPAPRAANA_DAYANNA => Ok(Sinhala::LetterAlpapraanaDayanna),
+            LETTER_MAHAAPRAANA_DAYANNA => Ok(Sinhala::LetterMahaapraanaDayanna),
+            LETTER_DANTAJA_NAYANNA => Ok(Sinhala::LetterDantajaNayanna),
+            LETTER_SANYAKA_DAYANNA => Ok(Sinhala::LetterSanyakaDayanna),
+            LETTER_ALPAPRAANA_PAYANNA => Ok(Sinhala::LetterAlpapraanaPayanna),
+            LETTER_MAHAAPRAANA_PAYANNA => Ok(Sinhala::LetterMahaapraanaPayanna),
+            LETTER_ALPAPRAANA_BAYANNA => Ok(Sinhala::LetterAlpapraanaBayanna),
+            LETTER_MAHAAPRAANA_BAYANNA => Ok(Sinhala::LetterMahaapraanaBayanna),
+            LETTER_MAYANNA => Ok(Sinhala::LetterMayanna),
+            LETTER_AMBA_BAYANNA => Ok(Sinhala::LetterAmbaBayanna),
+            LETTER_YAYANNA => Ok(Sinhala::LetterYayanna),
+            LETTER_RAYANNA => Ok(Sinhala::LetterRayanna),
+            LETTER_DANTAJA_LAYANNA => Ok(Sinhala::LetterDantajaLayanna),
+            LETTER_VAYANNA => Ok(Sinhala::LetterVayanna),
+            LETTER_TAALUJA_SAYANNA => Ok(Sinhala::LetterTaalujaSayanna),
+            LETTER_MUURDHAJA_SAYANNA => Ok(Sinhala::LetterMuurdhajaSayanna),
+            LETTER_DANTAJA_SAYANNA => Ok(Sinhala::LetterDantajaSayanna),
+            LETTER_HAYANNA => Ok(Sinhala::LetterHayanna),
+            LETTER_MUURDHAJA_LAYANNA => Ok(Sinhala::LetterMuurdhajaLayanna),
+            LETTER_FAYANNA => Ok(Sinhala::LetterFayanna),
+            SIGN_AL_DASH_LAKUNA => Ok(Sinhala::SignAlDashLakuna),
+            VOWEL_SIGN_AELA_DASH_PILLA => Ok(Sinhala::VowelSignAelaDashPilla),
+            VOWEL_SIGN_KETTI_AEDA_DASH_PILLA => Ok(Sinhala::VowelSignKettiAedaDashPilla),
+            VOWEL_SIGN_DIGA_AEDA_DASH_PILLA => Ok(Sinhala::VowelSignDigaAedaDashPilla),
+            VOWEL_SIGN_KETTI_IS_DASH_PILLA => Ok(Sinhala::VowelSignKettiIsDashPilla),
+            VOWEL_SIGN_DIGA_IS_DASH_PILLA => Ok(Sinhala::VowelSignDigaIsDashPilla),
+            VOWEL_SIGN_KETTI_PAA_DASH_PILLA => Ok(Sinhala::VowelSignKettiPaaDashPilla),
+            VOWEL_SIGN_DIGA_PAA_DASH_PILLA => Ok(Sinhala::VowelSignDigaPaaDashPilla),
+            VOWEL_SIGN_GAETTA_DASH_PILLA => Ok(Sinhala::VowelSignGaettaDashPilla),
+            VOWEL_SIGN_KOMBUVA => Ok(Sinhala::VowelSignKombuva),
+            VOWEL_SIGN_DIGA_KOMBUVA => Ok(Sinhala::VowelSignDigaKombuva),
+            VOWEL_SIGN_KOMBU_DEKA => Ok(Sinhala::VowelSignKombuDeka),
+            VOWEL_SIGN_KOMBUVA_HAA_AELA_DASH_PILLA => Ok(Sinhala::VowelSignKombuvaHaaAelaDashPilla),
+            VOWEL_SIGN_KOMBUVA_HAA_DIGA_AELA_DASH_PILLA => Ok(Sinhala::VowelSignKombuvaHaaDigaAelaDashPilla),
+            VOWEL_SIGN_KOMBUVA_HAA_GAYANUKITTA => Ok(Sinhala::VowelSignKombuvaHaaGayanukitta),
+            VOWEL_SIGN_GAYANUKITTA => Ok(Sinhala::VowelSignGayanukitta),
+            LITH_DIGIT_ZERO => Ok(Sinhala::LithDigitZero),
+            LITH_DIGIT_ONE => Ok(Sinhala::LithDigitOne),
+            LITH_DIGIT_TWO => Ok(Sinhala::LithDigitTwo),
+            LITH_DIGIT_THREE => Ok(Sinhala::LithDigitThree),
+            LITH_DIGIT_FOUR => Ok(Sinhala::LithDigitFour),
+            LITH_DIGIT_FIVE => Ok(Sinhala::LithDigitFive),
+            LITH_DIGIT_SIX => Ok(Sinhala::LithDigitSix),
+            LITH_DIGIT_SEVEN => Ok(Sinhala::LithDigitSeven),
+            LITH_DIGIT_EIGHT => Ok(Sinhala::LithDigitEight),
+            LITH_DIGIT_NINE => Ok(Sinhala::LithDigitNine),
+            VOWEL_SIGN_DIGA_GAETTA_DASH_PILLA => Ok(Sinhala::VowelSignDigaGaettaDashPilla),
+            VOWEL_SIGN_DIGA_GAYANUKITTA => Ok(Sinhala::VowelSignDigaGayanukitta),
+            PUNCTUATION_KUNDDALIYA => Ok(Sinhala::PunctuationKunddaliya),
             _ => Err(()),
         }
     }
@@ -612,104 +612,104 @@ impl Iterator for Sinhala {
 }
 
 impl Sinhala {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Sinhala::SinhalaSignAnusvaraya
+        Sinhala::SignAnusvaraya
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Sinhala::SinhalaSignAnusvaraya => "sinhala sign anusvaraya",
-            Sinhala::SinhalaSignVisargaya => "sinhala sign visargaya",
-            Sinhala::SinhalaLetterAyanna => "sinhala letter ayanna",
-            Sinhala::SinhalaLetterAayanna => "sinhala letter aayanna",
-            Sinhala::SinhalaLetterAeyanna => "sinhala letter aeyanna",
-            Sinhala::SinhalaLetterAeeyanna => "sinhala letter aeeyanna",
-            Sinhala::SinhalaLetterIyanna => "sinhala letter iyanna",
-            Sinhala::SinhalaLetterIiyanna => "sinhala letter iiyanna",
-            Sinhala::SinhalaLetterUyanna => "sinhala letter uyanna",
-            Sinhala::SinhalaLetterUuyanna => "sinhala letter uuyanna",
-            Sinhala::SinhalaLetterIruyanna => "sinhala letter iruyanna",
-            Sinhala::SinhalaLetterIruuyanna => "sinhala letter iruuyanna",
-            Sinhala::SinhalaLetterIluyanna => "sinhala letter iluyanna",
-            Sinhala::SinhalaLetterIluuyanna => "sinhala letter iluuyanna",
-            Sinhala::SinhalaLetterEyanna => "sinhala letter eyanna",
-            Sinhala::SinhalaLetterEeyanna => "sinhala letter eeyanna",
-            Sinhala::SinhalaLetterAiyanna => "sinhala letter aiyanna",
-            Sinhala::SinhalaLetterOyanna => "sinhala letter oyanna",
-            Sinhala::SinhalaLetterOoyanna => "sinhala letter ooyanna",
-            Sinhala::SinhalaLetterAuyanna => "sinhala letter auyanna",
-            Sinhala::SinhalaLetterAlpapraanaKayanna => "sinhala letter alpapraana kayanna",
-            Sinhala::SinhalaLetterMahaapraanaKayanna => "sinhala letter mahaapraana kayanna",
-            Sinhala::SinhalaLetterAlpapraanaGayanna => "sinhala letter alpapraana gayanna",
-            Sinhala::SinhalaLetterMahaapraanaGayanna => "sinhala letter mahaapraana gayanna",
-            Sinhala::SinhalaLetterKantajaNaasikyaya => "sinhala letter kantaja naasikyaya",
-            Sinhala::SinhalaLetterSanyakaGayanna => "sinhala letter sanyaka gayanna",
-            Sinhala::SinhalaLetterAlpapraanaCayanna => "sinhala letter alpapraana cayanna",
-            Sinhala::SinhalaLetterMahaapraanaCayanna => "sinhala letter mahaapraana cayanna",
-            Sinhala::SinhalaLetterAlpapraanaJayanna => "sinhala letter alpapraana jayanna",
-            Sinhala::SinhalaLetterMahaapraanaJayanna => "sinhala letter mahaapraana jayanna",
-            Sinhala::SinhalaLetterTaalujaNaasikyaya => "sinhala letter taaluja naasikyaya",
-            Sinhala::SinhalaLetterTaalujaSanyoogaNaaksikyaya => "sinhala letter taaluja sanyooga naaksikyaya",
-            Sinhala::SinhalaLetterSanyakaJayanna => "sinhala letter sanyaka jayanna",
-            Sinhala::SinhalaLetterAlpapraanaTtayanna => "sinhala letter alpapraana ttayanna",
-            Sinhala::SinhalaLetterMahaapraanaTtayanna => "sinhala letter mahaapraana ttayanna",
-            Sinhala::SinhalaLetterAlpapraanaDdayanna => "sinhala letter alpapraana ddayanna",
-            Sinhala::SinhalaLetterMahaapraanaDdayanna => "sinhala letter mahaapraana ddayanna",
-            Sinhala::SinhalaLetterMuurdhajaNayanna => "sinhala letter muurdhaja nayanna",
-            Sinhala::SinhalaLetterSanyakaDdayanna => "sinhala letter sanyaka ddayanna",
-            Sinhala::SinhalaLetterAlpapraanaTayanna => "sinhala letter alpapraana tayanna",
-            Sinhala::SinhalaLetterMahaapraanaTayanna => "sinhala letter mahaapraana tayanna",
-            Sinhala::SinhalaLetterAlpapraanaDayanna => "sinhala letter alpapraana dayanna",
-            Sinhala::SinhalaLetterMahaapraanaDayanna => "sinhala letter mahaapraana dayanna",
-            Sinhala::SinhalaLetterDantajaNayanna => "sinhala letter dantaja nayanna",
-            Sinhala::SinhalaLetterSanyakaDayanna => "sinhala letter sanyaka dayanna",
-            Sinhala::SinhalaLetterAlpapraanaPayanna => "sinhala letter alpapraana payanna",
-            Sinhala::SinhalaLetterMahaapraanaPayanna => "sinhala letter mahaapraana payanna",
-            Sinhala::SinhalaLetterAlpapraanaBayanna => "sinhala letter alpapraana bayanna",
-            Sinhala::SinhalaLetterMahaapraanaBayanna => "sinhala letter mahaapraana bayanna",
-            Sinhala::SinhalaLetterMayanna => "sinhala letter mayanna",
-            Sinhala::SinhalaLetterAmbaBayanna => "sinhala letter amba bayanna",
-            Sinhala::SinhalaLetterYayanna => "sinhala letter yayanna",
-            Sinhala::SinhalaLetterRayanna => "sinhala letter rayanna",
-            Sinhala::SinhalaLetterDantajaLayanna => "sinhala letter dantaja layanna",
-            Sinhala::SinhalaLetterVayanna => "sinhala letter vayanna",
-            Sinhala::SinhalaLetterTaalujaSayanna => "sinhala letter taaluja sayanna",
-            Sinhala::SinhalaLetterMuurdhajaSayanna => "sinhala letter muurdhaja sayanna",
-            Sinhala::SinhalaLetterDantajaSayanna => "sinhala letter dantaja sayanna",
-            Sinhala::SinhalaLetterHayanna => "sinhala letter hayanna",
-            Sinhala::SinhalaLetterMuurdhajaLayanna => "sinhala letter muurdhaja layanna",
-            Sinhala::SinhalaLetterFayanna => "sinhala letter fayanna",
-            Sinhala::SinhalaSignAlDashLakuna => "sinhala sign al-lakuna",
-            Sinhala::SinhalaVowelSignAelaDashPilla => "sinhala vowel sign aela-pilla",
-            Sinhala::SinhalaVowelSignKettiAedaDashPilla => "sinhala vowel sign ketti aeda-pilla",
-            Sinhala::SinhalaVowelSignDigaAedaDashPilla => "sinhala vowel sign diga aeda-pilla",
-            Sinhala::SinhalaVowelSignKettiIsDashPilla => "sinhala vowel sign ketti is-pilla",
-            Sinhala::SinhalaVowelSignDigaIsDashPilla => "sinhala vowel sign diga is-pilla",
-            Sinhala::SinhalaVowelSignKettiPaaDashPilla => "sinhala vowel sign ketti paa-pilla",
-            Sinhala::SinhalaVowelSignDigaPaaDashPilla => "sinhala vowel sign diga paa-pilla",
-            Sinhala::SinhalaVowelSignGaettaDashPilla => "sinhala vowel sign gaetta-pilla",
-            Sinhala::SinhalaVowelSignKombuva => "sinhala vowel sign kombuva",
-            Sinhala::SinhalaVowelSignDigaKombuva => "sinhala vowel sign diga kombuva",
-            Sinhala::SinhalaVowelSignKombuDeka => "sinhala vowel sign kombu deka",
-            Sinhala::SinhalaVowelSignKombuvaHaaAelaDashPilla => "sinhala vowel sign kombuva haa aela-pilla",
-            Sinhala::SinhalaVowelSignKombuvaHaaDigaAelaDashPilla => "sinhala vowel sign kombuva haa diga aela-pilla",
-            Sinhala::SinhalaVowelSignKombuvaHaaGayanukitta => "sinhala vowel sign kombuva haa gayanukitta",
-            Sinhala::SinhalaVowelSignGayanukitta => "sinhala vowel sign gayanukitta",
-            Sinhala::SinhalaLithDigitZero => "sinhala lith digit zero",
-            Sinhala::SinhalaLithDigitOne => "sinhala lith digit one",
-            Sinhala::SinhalaLithDigitTwo => "sinhala lith digit two",
-            Sinhala::SinhalaLithDigitThree => "sinhala lith digit three",
-            Sinhala::SinhalaLithDigitFour => "sinhala lith digit four",
-            Sinhala::SinhalaLithDigitFive => "sinhala lith digit five",
-            Sinhala::SinhalaLithDigitSix => "sinhala lith digit six",
-            Sinhala::SinhalaLithDigitSeven => "sinhala lith digit seven",
-            Sinhala::SinhalaLithDigitEight => "sinhala lith digit eight",
-            Sinhala::SinhalaLithDigitNine => "sinhala lith digit nine",
-            Sinhala::SinhalaVowelSignDigaGaettaDashPilla => "sinhala vowel sign diga gaetta-pilla",
-            Sinhala::SinhalaVowelSignDigaGayanukitta => "sinhala vowel sign diga gayanukitta",
-            Sinhala::SinhalaPunctuationKunddaliya => "sinhala punctuation kunddaliya",
+            Sinhala::SignAnusvaraya => "sinhala sign anusvaraya",
+            Sinhala::SignVisargaya => "sinhala sign visargaya",
+            Sinhala::LetterAyanna => "sinhala letter ayanna",
+            Sinhala::LetterAayanna => "sinhala letter aayanna",
+            Sinhala::LetterAeyanna => "sinhala letter aeyanna",
+            Sinhala::LetterAeeyanna => "sinhala letter aeeyanna",
+            Sinhala::LetterIyanna => "sinhala letter iyanna",
+            Sinhala::LetterIiyanna => "sinhala letter iiyanna",
+            Sinhala::LetterUyanna => "sinhala letter uyanna",
+            Sinhala::LetterUuyanna => "sinhala letter uuyanna",
+            Sinhala::LetterIruyanna => "sinhala letter iruyanna",
+            Sinhala::LetterIruuyanna => "sinhala letter iruuyanna",
+            Sinhala::LetterIluyanna => "sinhala letter iluyanna",
+            Sinhala::LetterIluuyanna => "sinhala letter iluuyanna",
+            Sinhala::LetterEyanna => "sinhala letter eyanna",
+            Sinhala::LetterEeyanna => "sinhala letter eeyanna",
+            Sinhala::LetterAiyanna => "sinhala letter aiyanna",
+            Sinhala::LetterOyanna => "sinhala letter oyanna",
+            Sinhala::LetterOoyanna => "sinhala letter ooyanna",
+            Sinhala::LetterAuyanna => "sinhala letter auyanna",
+            Sinhala::LetterAlpapraanaKayanna => "sinhala letter alpapraana kayanna",
+            Sinhala::LetterMahaapraanaKayanna => "sinhala letter mahaapraana kayanna",
+            Sinhala::LetterAlpapraanaGayanna => "sinhala letter alpapraana gayanna",
+            Sinhala::LetterMahaapraanaGayanna => "sinhala letter mahaapraana gayanna",
+            Sinhala::LetterKantajaNaasikyaya => "sinhala letter kantaja naasikyaya",
+            Sinhala::LetterSanyakaGayanna => "sinhala letter sanyaka gayanna",
+            Sinhala::LetterAlpapraanaCayanna => "sinhala letter alpapraana cayanna",
+            Sinhala::LetterMahaapraanaCayanna => "sinhala letter mahaapraana cayanna",
+            Sinhala::LetterAlpapraanaJayanna => "sinhala letter alpapraana jayanna",
+            Sinhala::LetterMahaapraanaJayanna => "sinhala letter mahaapraana jayanna",
+            Sinhala::LetterTaalujaNaasikyaya => "sinhala letter taaluja naasikyaya",
+            Sinhala::LetterTaalujaSanyoogaNaaksikyaya => "sinhala letter taaluja sanyooga naaksikyaya",
+            Sinhala::LetterSanyakaJayanna => "sinhala letter sanyaka jayanna",
+            Sinhala::LetterAlpapraanaTtayanna => "sinhala letter alpapraana ttayanna",
+            Sinhala::LetterMahaapraanaTtayanna => "sinhala letter mahaapraana ttayanna",
+            Sinhala::LetterAlpapraanaDdayanna => "sinhala letter alpapraana ddayanna",
+            Sinhala::LetterMahaapraanaDdayanna => "sinhala letter mahaapraana ddayanna",
+            Sinhala::LetterMuurdhajaNayanna => "sinhala letter muurdhaja nayanna",
+            Sinhala::LetterSanyakaDdayanna => "sinhala letter sanyaka ddayanna",
+            Sinhala::LetterAlpapraanaTayanna => "sinhala letter alpapraana tayanna",
+            Sinhala::LetterMahaapraanaTayanna => "sinhala letter mahaapraana tayanna",
+            Sinhala::LetterAlpapraanaDayanna => "sinhala letter alpapraana dayanna",
+            Sinhala::LetterMahaapraanaDayanna => "sinhala letter mahaapraana dayanna",
+            Sinhala::LetterDantajaNayanna => "sinhala letter dantaja nayanna",
+            Sinhala::LetterSanyakaDayanna => "sinhala letter sanyaka dayanna",
+            Sinhala::LetterAlpapraanaPayanna => "sinhala letter alpapraana payanna",
+            Sinhala::LetterMahaapraanaPayanna => "sinhala letter mahaapraana payanna",
+            Sinhala::LetterAlpapraanaBayanna => "sinhala letter alpapraana bayanna",
+            Sinhala::LetterMahaapraanaBayanna => "sinhala letter mahaapraana bayanna",
+            Sinhala::LetterMayanna => "sinhala letter mayanna",
+            Sinhala::LetterAmbaBayanna => "sinhala letter amba bayanna",
+            Sinhala::LetterYayanna => "sinhala letter yayanna",
+            Sinhala::LetterRayanna => "sinhala letter rayanna",
+            Sinhala::LetterDantajaLayanna => "sinhala letter dantaja layanna",
+            Sinhala::LetterVayanna => "sinhala letter vayanna",
+            Sinhala::LetterTaalujaSayanna => "sinhala letter taaluja sayanna",
+            Sinhala::LetterMuurdhajaSayanna => "sinhala letter muurdhaja sayanna",
+            Sinhala::LetterDantajaSayanna => "sinhala letter dantaja sayanna",
+            Sinhala::LetterHayanna => "sinhala letter hayanna",
+            Sinhala::LetterMuurdhajaLayanna => "sinhala letter muurdhaja layanna",
+            Sinhala::LetterFayanna => "sinhala letter fayanna",
+            Sinhala::SignAlDashLakuna => "sinhala sign al-lakuna",
+            Sinhala::VowelSignAelaDashPilla => "sinhala vowel sign aela-pilla",
+            Sinhala::VowelSignKettiAedaDashPilla => "sinhala vowel sign ketti aeda-pilla",
+            Sinhala::VowelSignDigaAedaDashPilla => "sinhala vowel sign diga aeda-pilla",
+            Sinhala::VowelSignKettiIsDashPilla => "sinhala vowel sign ketti is-pilla",
+            Sinhala::VowelSignDigaIsDashPilla => "sinhala vowel sign diga is-pilla",
+            Sinhala::VowelSignKettiPaaDashPilla => "sinhala vowel sign ketti paa-pilla",
+            Sinhala::VowelSignDigaPaaDashPilla => "sinhala vowel sign diga paa-pilla",
+            Sinhala::VowelSignGaettaDashPilla => "sinhala vowel sign gaetta-pilla",
+            Sinhala::VowelSignKombuva => "sinhala vowel sign kombuva",
+            Sinhala::VowelSignDigaKombuva => "sinhala vowel sign diga kombuva",
+            Sinhala::VowelSignKombuDeka => "sinhala vowel sign kombu deka",
+            Sinhala::VowelSignKombuvaHaaAelaDashPilla => "sinhala vowel sign kombuva haa aela-pilla",
+            Sinhala::VowelSignKombuvaHaaDigaAelaDashPilla => "sinhala vowel sign kombuva haa diga aela-pilla",
+            Sinhala::VowelSignKombuvaHaaGayanukitta => "sinhala vowel sign kombuva haa gayanukitta",
+            Sinhala::VowelSignGayanukitta => "sinhala vowel sign gayanukitta",
+            Sinhala::LithDigitZero => "sinhala lith digit zero",
+            Sinhala::LithDigitOne => "sinhala lith digit one",
+            Sinhala::LithDigitTwo => "sinhala lith digit two",
+            Sinhala::LithDigitThree => "sinhala lith digit three",
+            Sinhala::LithDigitFour => "sinhala lith digit four",
+            Sinhala::LithDigitFive => "sinhala lith digit five",
+            Sinhala::LithDigitSix => "sinhala lith digit six",
+            Sinhala::LithDigitSeven => "sinhala lith digit seven",
+            Sinhala::LithDigitEight => "sinhala lith digit eight",
+            Sinhala::LithDigitNine => "sinhala lith digit nine",
+            Sinhala::VowelSignDigaGaettaDashPilla => "sinhala vowel sign diga gaetta-pilla",
+            Sinhala::VowelSignDigaGayanukitta => "sinhala vowel sign diga gayanukitta",
+            Sinhala::PunctuationKunddaliya => "sinhala punctuation kunddaliya",
         }
     }
 }

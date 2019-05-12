@@ -354,13 +354,13 @@ pub enum Arrows {
     /// \u{21c6}: '⇆'
     LeftwardsArrowOverRightwardsArrow,
     /// \u{21c7}: '⇇'
-    LeftwardsPairedArrows,
+    LeftwardsPaired,
     /// \u{21c8}: '⇈'
-    UpwardsPairedArrows,
+    UpwardsPaired,
     /// \u{21c9}: '⇉'
-    RightwardsPairedArrows,
+    RightwardsPaired,
     /// \u{21ca}: '⇊'
-    DownwardsPairedArrows,
+    DownwardsPaired,
     /// \u{21cb}: '⇋'
     LeftwardsHarpoonOverRightwardsHarpoon,
     /// \u{21cc}: '⇌'
@@ -448,7 +448,7 @@ pub enum Arrows {
     /// \u{21f5}: '⇵'
     DownwardsArrowLeftwardsOfUpwardsArrow,
     /// \u{21f6}: '⇶'
-    ThreeRightwardsArrows,
+    ThreeRightwards,
     /// \u{21f7}: '⇷'
     LeftwardsArrowWithVerticalStroke,
     /// \u{21f8}: '⇸'
@@ -526,10 +526,10 @@ impl Into<char> for Arrows {
             Arrows::RightwardsArrowOverLeftwardsArrow => RIGHTWARDS_ARROW_OVER_LEFTWARDS_ARROW,
             Arrows::UpwardsArrowLeftwardsOfDownwardsArrow => UPWARDS_ARROW_LEFTWARDS_OF_DOWNWARDS_ARROW,
             Arrows::LeftwardsArrowOverRightwardsArrow => LEFTWARDS_ARROW_OVER_RIGHTWARDS_ARROW,
-            Arrows::LeftwardsPairedArrows => LEFTWARDS_PAIRED_ARROWS,
-            Arrows::UpwardsPairedArrows => UPWARDS_PAIRED_ARROWS,
-            Arrows::RightwardsPairedArrows => RIGHTWARDS_PAIRED_ARROWS,
-            Arrows::DownwardsPairedArrows => DOWNWARDS_PAIRED_ARROWS,
+            Arrows::LeftwardsPaired => LEFTWARDS_PAIRED_ARROWS,
+            Arrows::UpwardsPaired => UPWARDS_PAIRED_ARROWS,
+            Arrows::RightwardsPaired => RIGHTWARDS_PAIRED_ARROWS,
+            Arrows::DownwardsPaired => DOWNWARDS_PAIRED_ARROWS,
             Arrows::LeftwardsHarpoonOverRightwardsHarpoon => LEFTWARDS_HARPOON_OVER_RIGHTWARDS_HARPOON,
             Arrows::RightwardsHarpoonOverLeftwardsHarpoon => RIGHTWARDS_HARPOON_OVER_LEFTWARDS_HARPOON,
             Arrows::LeftwardsDoubleArrowWithStroke => LEFTWARDS_DOUBLE_ARROW_WITH_STROKE,
@@ -573,7 +573,7 @@ impl Into<char> for Arrows {
             Arrows::UpDownWhiteArrow => UP_DOWN_WHITE_ARROW,
             Arrows::RightArrowWithSmallCircle => RIGHT_ARROW_WITH_SMALL_CIRCLE,
             Arrows::DownwardsArrowLeftwardsOfUpwardsArrow => DOWNWARDS_ARROW_LEFTWARDS_OF_UPWARDS_ARROW,
-            Arrows::ThreeRightwardsArrows => THREE_RIGHTWARDS_ARROWS,
+            Arrows::ThreeRightwards => THREE_RIGHTWARDS_ARROWS,
             Arrows::LeftwardsArrowWithVerticalStroke => LEFTWARDS_ARROW_WITH_VERTICAL_STROKE,
             Arrows::RightwardsArrowWithVerticalStroke => RIGHTWARDS_ARROW_WITH_VERTICAL_STROKE,
             Arrows::LeftRightArrowWithVerticalStroke => LEFT_RIGHT_ARROW_WITH_VERTICAL_STROKE,
@@ -646,10 +646,10 @@ impl std::convert::TryFrom<char> for Arrows {
             RIGHTWARDS_ARROW_OVER_LEFTWARDS_ARROW => Ok(Arrows::RightwardsArrowOverLeftwardsArrow),
             UPWARDS_ARROW_LEFTWARDS_OF_DOWNWARDS_ARROW => Ok(Arrows::UpwardsArrowLeftwardsOfDownwardsArrow),
             LEFTWARDS_ARROW_OVER_RIGHTWARDS_ARROW => Ok(Arrows::LeftwardsArrowOverRightwardsArrow),
-            LEFTWARDS_PAIRED_ARROWS => Ok(Arrows::LeftwardsPairedArrows),
-            UPWARDS_PAIRED_ARROWS => Ok(Arrows::UpwardsPairedArrows),
-            RIGHTWARDS_PAIRED_ARROWS => Ok(Arrows::RightwardsPairedArrows),
-            DOWNWARDS_PAIRED_ARROWS => Ok(Arrows::DownwardsPairedArrows),
+            LEFTWARDS_PAIRED_ARROWS => Ok(Arrows::LeftwardsPaired),
+            UPWARDS_PAIRED_ARROWS => Ok(Arrows::UpwardsPaired),
+            RIGHTWARDS_PAIRED_ARROWS => Ok(Arrows::RightwardsPaired),
+            DOWNWARDS_PAIRED_ARROWS => Ok(Arrows::DownwardsPaired),
             LEFTWARDS_HARPOON_OVER_RIGHTWARDS_HARPOON => Ok(Arrows::LeftwardsHarpoonOverRightwardsHarpoon),
             RIGHTWARDS_HARPOON_OVER_LEFTWARDS_HARPOON => Ok(Arrows::RightwardsHarpoonOverLeftwardsHarpoon),
             LEFTWARDS_DOUBLE_ARROW_WITH_STROKE => Ok(Arrows::LeftwardsDoubleArrowWithStroke),
@@ -693,7 +693,7 @@ impl std::convert::TryFrom<char> for Arrows {
             UP_DOWN_WHITE_ARROW => Ok(Arrows::UpDownWhiteArrow),
             RIGHT_ARROW_WITH_SMALL_CIRCLE => Ok(Arrows::RightArrowWithSmallCircle),
             DOWNWARDS_ARROW_LEFTWARDS_OF_UPWARDS_ARROW => Ok(Arrows::DownwardsArrowLeftwardsOfUpwardsArrow),
-            THREE_RIGHTWARDS_ARROWS => Ok(Arrows::ThreeRightwardsArrows),
+            THREE_RIGHTWARDS_ARROWS => Ok(Arrows::ThreeRightwards),
             LEFTWARDS_ARROW_WITH_VERTICAL_STROKE => Ok(Arrows::LeftwardsArrowWithVerticalStroke),
             RIGHTWARDS_ARROW_WITH_VERTICAL_STROKE => Ok(Arrows::RightwardsArrowWithVerticalStroke),
             LEFT_RIGHT_ARROW_WITH_VERTICAL_STROKE => Ok(Arrows::LeftRightArrowWithVerticalStroke),
@@ -740,7 +740,7 @@ impl Iterator for Arrows {
 }
 
 impl Arrows {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         Arrows::LeftwardsArrow
     }
@@ -803,10 +803,10 @@ impl Arrows {
             Arrows::RightwardsArrowOverLeftwardsArrow => "rightwards arrow over leftwards arrow",
             Arrows::UpwardsArrowLeftwardsOfDownwardsArrow => "upwards arrow leftwards of downwards arrow",
             Arrows::LeftwardsArrowOverRightwardsArrow => "leftwards arrow over rightwards arrow",
-            Arrows::LeftwardsPairedArrows => "leftwards paired arrows",
-            Arrows::UpwardsPairedArrows => "upwards paired arrows",
-            Arrows::RightwardsPairedArrows => "rightwards paired arrows",
-            Arrows::DownwardsPairedArrows => "downwards paired arrows",
+            Arrows::LeftwardsPaired => "leftwards paired arrows",
+            Arrows::UpwardsPaired => "upwards paired arrows",
+            Arrows::RightwardsPaired => "rightwards paired arrows",
+            Arrows::DownwardsPaired => "downwards paired arrows",
             Arrows::LeftwardsHarpoonOverRightwardsHarpoon => "leftwards harpoon over rightwards harpoon",
             Arrows::RightwardsHarpoonOverLeftwardsHarpoon => "rightwards harpoon over leftwards harpoon",
             Arrows::LeftwardsDoubleArrowWithStroke => "leftwards double arrow with stroke",
@@ -850,7 +850,7 @@ impl Arrows {
             Arrows::UpDownWhiteArrow => "up down white arrow",
             Arrows::RightArrowWithSmallCircle => "right arrow with small circle",
             Arrows::DownwardsArrowLeftwardsOfUpwardsArrow => "downwards arrow leftwards of upwards arrow",
-            Arrows::ThreeRightwardsArrows => "three rightwards arrows",
+            Arrows::ThreeRightwards => "three rightwards arrows",
             Arrows::LeftwardsArrowWithVerticalStroke => "leftwards arrow with vertical stroke",
             Arrows::RightwardsArrowWithVerticalStroke => "rightwards arrow with vertical stroke",
             Arrows::LeftRightArrowWithVerticalStroke => "left right arrow with vertical stroke",

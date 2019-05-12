@@ -544,7 +544,7 @@ impl Iterator for SpacingModifierLetters {
 }
 
 impl SpacingModifierLetters {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         SpacingModifierLetters::ModifierLetterSmallH
     }

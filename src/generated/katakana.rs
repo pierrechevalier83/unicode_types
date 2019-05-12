@@ -8,195 +8,195 @@
 /// ヰ ヱ ヲ ン ヴ ヵ ヶ ヷ ヸ ヹ ヺ ・ ー ヽ ヾ
 pub mod constants {
     /// \u{30a0}: '゠'
-    pub const KATAKANA_DASH_HIRAGANA_DOUBLE_HYPHEN: char = '゠';
+    pub const DASH_HIRAGANA_DOUBLE_HYPHEN: char = '゠';
     /// \u{30a1}: 'ァ'
-    pub const KATAKANA_LETTER_SMALL_A: char = 'ァ';
+    pub const LETTER_SMALL_A: char = 'ァ';
     /// \u{30a2}: 'ア'
-    pub const KATAKANA_LETTER_A: char = 'ア';
+    pub const LETTER_A: char = 'ア';
     /// \u{30a3}: 'ィ'
-    pub const KATAKANA_LETTER_SMALL_I: char = 'ィ';
+    pub const LETTER_SMALL_I: char = 'ィ';
     /// \u{30a4}: 'イ'
-    pub const KATAKANA_LETTER_I: char = 'イ';
+    pub const LETTER_I: char = 'イ';
     /// \u{30a5}: 'ゥ'
-    pub const KATAKANA_LETTER_SMALL_U: char = 'ゥ';
+    pub const LETTER_SMALL_U: char = 'ゥ';
     /// \u{30a6}: 'ウ'
-    pub const KATAKANA_LETTER_U: char = 'ウ';
+    pub const LETTER_U: char = 'ウ';
     /// \u{30a7}: 'ェ'
-    pub const KATAKANA_LETTER_SMALL_E: char = 'ェ';
+    pub const LETTER_SMALL_E: char = 'ェ';
     /// \u{30a8}: 'エ'
-    pub const KATAKANA_LETTER_E: char = 'エ';
+    pub const LETTER_E: char = 'エ';
     /// \u{30a9}: 'ォ'
-    pub const KATAKANA_LETTER_SMALL_O: char = 'ォ';
+    pub const LETTER_SMALL_O: char = 'ォ';
     /// \u{30aa}: 'オ'
-    pub const KATAKANA_LETTER_O: char = 'オ';
+    pub const LETTER_O: char = 'オ';
     /// \u{30ab}: 'カ'
-    pub const KATAKANA_LETTER_KA: char = 'カ';
+    pub const LETTER_KA: char = 'カ';
     /// \u{30ac}: 'ガ'
-    pub const KATAKANA_LETTER_GA: char = 'ガ';
+    pub const LETTER_GA: char = 'ガ';
     /// \u{30ad}: 'キ'
-    pub const KATAKANA_LETTER_KI: char = 'キ';
+    pub const LETTER_KI: char = 'キ';
     /// \u{30ae}: 'ギ'
-    pub const KATAKANA_LETTER_GI: char = 'ギ';
+    pub const LETTER_GI: char = 'ギ';
     /// \u{30af}: 'ク'
-    pub const KATAKANA_LETTER_KU: char = 'ク';
+    pub const LETTER_KU: char = 'ク';
     /// \u{30b0}: 'グ'
-    pub const KATAKANA_LETTER_GU: char = 'グ';
+    pub const LETTER_GU: char = 'グ';
     /// \u{30b1}: 'ケ'
-    pub const KATAKANA_LETTER_KE: char = 'ケ';
+    pub const LETTER_KE: char = 'ケ';
     /// \u{30b2}: 'ゲ'
-    pub const KATAKANA_LETTER_GE: char = 'ゲ';
+    pub const LETTER_GE: char = 'ゲ';
     /// \u{30b3}: 'コ'
-    pub const KATAKANA_LETTER_KO: char = 'コ';
+    pub const LETTER_KO: char = 'コ';
     /// \u{30b4}: 'ゴ'
-    pub const KATAKANA_LETTER_GO: char = 'ゴ';
+    pub const LETTER_GO: char = 'ゴ';
     /// \u{30b5}: 'サ'
-    pub const KATAKANA_LETTER_SA: char = 'サ';
+    pub const LETTER_SA: char = 'サ';
     /// \u{30b6}: 'ザ'
-    pub const KATAKANA_LETTER_ZA: char = 'ザ';
+    pub const LETTER_ZA: char = 'ザ';
     /// \u{30b7}: 'シ'
-    pub const KATAKANA_LETTER_SI: char = 'シ';
+    pub const LETTER_SI: char = 'シ';
     /// \u{30b8}: 'ジ'
-    pub const KATAKANA_LETTER_ZI: char = 'ジ';
+    pub const LETTER_ZI: char = 'ジ';
     /// \u{30b9}: 'ス'
-    pub const KATAKANA_LETTER_SU: char = 'ス';
+    pub const LETTER_SU: char = 'ス';
     /// \u{30ba}: 'ズ'
-    pub const KATAKANA_LETTER_ZU: char = 'ズ';
+    pub const LETTER_ZU: char = 'ズ';
     /// \u{30bb}: 'セ'
-    pub const KATAKANA_LETTER_SE: char = 'セ';
+    pub const LETTER_SE: char = 'セ';
     /// \u{30bc}: 'ゼ'
-    pub const KATAKANA_LETTER_ZE: char = 'ゼ';
+    pub const LETTER_ZE: char = 'ゼ';
     /// \u{30bd}: 'ソ'
-    pub const KATAKANA_LETTER_SO: char = 'ソ';
+    pub const LETTER_SO: char = 'ソ';
     /// \u{30be}: 'ゾ'
-    pub const KATAKANA_LETTER_ZO: char = 'ゾ';
+    pub const LETTER_ZO: char = 'ゾ';
     /// \u{30bf}: 'タ'
-    pub const KATAKANA_LETTER_TA: char = 'タ';
+    pub const LETTER_TA: char = 'タ';
     /// \u{30c0}: 'ダ'
-    pub const KATAKANA_LETTER_DA: char = 'ダ';
+    pub const LETTER_DA: char = 'ダ';
     /// \u{30c1}: 'チ'
-    pub const KATAKANA_LETTER_TI: char = 'チ';
+    pub const LETTER_TI: char = 'チ';
     /// \u{30c2}: 'ヂ'
-    pub const KATAKANA_LETTER_DI: char = 'ヂ';
+    pub const LETTER_DI: char = 'ヂ';
     /// \u{30c3}: 'ッ'
-    pub const KATAKANA_LETTER_SMALL_TU: char = 'ッ';
+    pub const LETTER_SMALL_TU: char = 'ッ';
     /// \u{30c4}: 'ツ'
-    pub const KATAKANA_LETTER_TU: char = 'ツ';
+    pub const LETTER_TU: char = 'ツ';
     /// \u{30c5}: 'ヅ'
-    pub const KATAKANA_LETTER_DU: char = 'ヅ';
+    pub const LETTER_DU: char = 'ヅ';
     /// \u{30c6}: 'テ'
-    pub const KATAKANA_LETTER_TE: char = 'テ';
+    pub const LETTER_TE: char = 'テ';
     /// \u{30c7}: 'デ'
-    pub const KATAKANA_LETTER_DE: char = 'デ';
+    pub const LETTER_DE: char = 'デ';
     /// \u{30c8}: 'ト'
-    pub const KATAKANA_LETTER_TO: char = 'ト';
+    pub const LETTER_TO: char = 'ト';
     /// \u{30c9}: 'ド'
-    pub const KATAKANA_LETTER_DO: char = 'ド';
+    pub const LETTER_DO: char = 'ド';
     /// \u{30ca}: 'ナ'
-    pub const KATAKANA_LETTER_NA: char = 'ナ';
+    pub const LETTER_NA: char = 'ナ';
     /// \u{30cb}: 'ニ'
-    pub const KATAKANA_LETTER_NI: char = 'ニ';
+    pub const LETTER_NI: char = 'ニ';
     /// \u{30cc}: 'ヌ'
-    pub const KATAKANA_LETTER_NU: char = 'ヌ';
+    pub const LETTER_NU: char = 'ヌ';
     /// \u{30cd}: 'ネ'
-    pub const KATAKANA_LETTER_NE: char = 'ネ';
+    pub const LETTER_NE: char = 'ネ';
     /// \u{30ce}: 'ノ'
-    pub const KATAKANA_LETTER_NO: char = 'ノ';
+    pub const LETTER_NO: char = 'ノ';
     /// \u{30cf}: 'ハ'
-    pub const KATAKANA_LETTER_HA: char = 'ハ';
+    pub const LETTER_HA: char = 'ハ';
     /// \u{30d0}: 'バ'
-    pub const KATAKANA_LETTER_BA: char = 'バ';
+    pub const LETTER_BA: char = 'バ';
     /// \u{30d1}: 'パ'
-    pub const KATAKANA_LETTER_PA: char = 'パ';
+    pub const LETTER_PA: char = 'パ';
     /// \u{30d2}: 'ヒ'
-    pub const KATAKANA_LETTER_HI: char = 'ヒ';
+    pub const LETTER_HI: char = 'ヒ';
     /// \u{30d3}: 'ビ'
-    pub const KATAKANA_LETTER_BI: char = 'ビ';
+    pub const LETTER_BI: char = 'ビ';
     /// \u{30d4}: 'ピ'
-    pub const KATAKANA_LETTER_PI: char = 'ピ';
+    pub const LETTER_PI: char = 'ピ';
     /// \u{30d5}: 'フ'
-    pub const KATAKANA_LETTER_HU: char = 'フ';
+    pub const LETTER_HU: char = 'フ';
     /// \u{30d6}: 'ブ'
-    pub const KATAKANA_LETTER_BU: char = 'ブ';
+    pub const LETTER_BU: char = 'ブ';
     /// \u{30d7}: 'プ'
-    pub const KATAKANA_LETTER_PU: char = 'プ';
+    pub const LETTER_PU: char = 'プ';
     /// \u{30d8}: 'ヘ'
-    pub const KATAKANA_LETTER_HE: char = 'ヘ';
+    pub const LETTER_HE: char = 'ヘ';
     /// \u{30d9}: 'ベ'
-    pub const KATAKANA_LETTER_BE: char = 'ベ';
+    pub const LETTER_BE: char = 'ベ';
     /// \u{30da}: 'ペ'
-    pub const KATAKANA_LETTER_PE: char = 'ペ';
+    pub const LETTER_PE: char = 'ペ';
     /// \u{30db}: 'ホ'
-    pub const KATAKANA_LETTER_HO: char = 'ホ';
+    pub const LETTER_HO: char = 'ホ';
     /// \u{30dc}: 'ボ'
-    pub const KATAKANA_LETTER_BO: char = 'ボ';
+    pub const LETTER_BO: char = 'ボ';
     /// \u{30dd}: 'ポ'
-    pub const KATAKANA_LETTER_PO: char = 'ポ';
+    pub const LETTER_PO: char = 'ポ';
     /// \u{30de}: 'マ'
-    pub const KATAKANA_LETTER_MA: char = 'マ';
+    pub const LETTER_MA: char = 'マ';
     /// \u{30df}: 'ミ'
-    pub const KATAKANA_LETTER_MI: char = 'ミ';
+    pub const LETTER_MI: char = 'ミ';
     /// \u{30e0}: 'ム'
-    pub const KATAKANA_LETTER_MU: char = 'ム';
+    pub const LETTER_MU: char = 'ム';
     /// \u{30e1}: 'メ'
-    pub const KATAKANA_LETTER_ME: char = 'メ';
+    pub const LETTER_ME: char = 'メ';
     /// \u{30e2}: 'モ'
-    pub const KATAKANA_LETTER_MO: char = 'モ';
+    pub const LETTER_MO: char = 'モ';
     /// \u{30e3}: 'ャ'
-    pub const KATAKANA_LETTER_SMALL_YA: char = 'ャ';
+    pub const LETTER_SMALL_YA: char = 'ャ';
     /// \u{30e4}: 'ヤ'
-    pub const KATAKANA_LETTER_YA: char = 'ヤ';
+    pub const LETTER_YA: char = 'ヤ';
     /// \u{30e5}: 'ュ'
-    pub const KATAKANA_LETTER_SMALL_YU: char = 'ュ';
+    pub const LETTER_SMALL_YU: char = 'ュ';
     /// \u{30e6}: 'ユ'
-    pub const KATAKANA_LETTER_YU: char = 'ユ';
+    pub const LETTER_YU: char = 'ユ';
     /// \u{30e7}: 'ョ'
-    pub const KATAKANA_LETTER_SMALL_YO: char = 'ョ';
+    pub const LETTER_SMALL_YO: char = 'ョ';
     /// \u{30e8}: 'ヨ'
-    pub const KATAKANA_LETTER_YO: char = 'ヨ';
+    pub const LETTER_YO: char = 'ヨ';
     /// \u{30e9}: 'ラ'
-    pub const KATAKANA_LETTER_RA: char = 'ラ';
+    pub const LETTER_RA: char = 'ラ';
     /// \u{30ea}: 'リ'
-    pub const KATAKANA_LETTER_RI: char = 'リ';
+    pub const LETTER_RI: char = 'リ';
     /// \u{30eb}: 'ル'
-    pub const KATAKANA_LETTER_RU: char = 'ル';
+    pub const LETTER_RU: char = 'ル';
     /// \u{30ec}: 'レ'
-    pub const KATAKANA_LETTER_RE: char = 'レ';
+    pub const LETTER_RE: char = 'レ';
     /// \u{30ed}: 'ロ'
-    pub const KATAKANA_LETTER_RO: char = 'ロ';
+    pub const LETTER_RO: char = 'ロ';
     /// \u{30ee}: 'ヮ'
-    pub const KATAKANA_LETTER_SMALL_WA: char = 'ヮ';
+    pub const LETTER_SMALL_WA: char = 'ヮ';
     /// \u{30ef}: 'ワ'
-    pub const KATAKANA_LETTER_WA: char = 'ワ';
+    pub const LETTER_WA: char = 'ワ';
     /// \u{30f0}: 'ヰ'
-    pub const KATAKANA_LETTER_WI: char = 'ヰ';
+    pub const LETTER_WI: char = 'ヰ';
     /// \u{30f1}: 'ヱ'
-    pub const KATAKANA_LETTER_WE: char = 'ヱ';
+    pub const LETTER_WE: char = 'ヱ';
     /// \u{30f2}: 'ヲ'
-    pub const KATAKANA_LETTER_WO: char = 'ヲ';
+    pub const LETTER_WO: char = 'ヲ';
     /// \u{30f3}: 'ン'
-    pub const KATAKANA_LETTER_N: char = 'ン';
+    pub const LETTER_N: char = 'ン';
     /// \u{30f4}: 'ヴ'
-    pub const KATAKANA_LETTER_VU: char = 'ヴ';
+    pub const LETTER_VU: char = 'ヴ';
     /// \u{30f5}: 'ヵ'
-    pub const KATAKANA_LETTER_SMALL_KA: char = 'ヵ';
+    pub const LETTER_SMALL_KA: char = 'ヵ';
     /// \u{30f6}: 'ヶ'
-    pub const KATAKANA_LETTER_SMALL_KE: char = 'ヶ';
+    pub const LETTER_SMALL_KE: char = 'ヶ';
     /// \u{30f7}: 'ヷ'
-    pub const KATAKANA_LETTER_VA: char = 'ヷ';
+    pub const LETTER_VA: char = 'ヷ';
     /// \u{30f8}: 'ヸ'
-    pub const KATAKANA_LETTER_VI: char = 'ヸ';
+    pub const LETTER_VI: char = 'ヸ';
     /// \u{30f9}: 'ヹ'
-    pub const KATAKANA_LETTER_VE: char = 'ヹ';
+    pub const LETTER_VE: char = 'ヹ';
     /// \u{30fa}: 'ヺ'
-    pub const KATAKANA_LETTER_VO: char = 'ヺ';
+    pub const LETTER_VO: char = 'ヺ';
     /// \u{30fb}: '・'
-    pub const KATAKANA_MIDDLE_DOT: char = '・';
+    pub const MIDDLE_DOT: char = '・';
     /// \u{30fc}: 'ー'
-    pub const KATAKANA_DASH_HIRAGANA_PROLONGED_SOUND_MARK: char = 'ー';
+    pub const DASH_HIRAGANA_PROLONGED_SOUND_MARK: char = 'ー';
     /// \u{30fd}: 'ヽ'
-    pub const KATAKANA_ITERATION_MARK: char = 'ヽ';
+    pub const ITERATION_MARK: char = 'ヽ';
     /// \u{30fe}: 'ヾ'
-    pub const KATAKANA_VOICED_ITERATION_MARK: char = 'ヾ';
+    pub const VOICED_ITERATION_MARK: char = 'ヾ';
 }
 
 /// \u{30a0} → \u{30ff}\
@@ -210,296 +210,296 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Katakana {
     /// \u{30a0}: '゠'
-    KatakanaDashHiraganaDoubleHyphen,
+    DashHiraganaDoubleHyphen,
     /// \u{30a1}: 'ァ'
-    KatakanaLetterSmallA,
+    LetterSmallA,
     /// \u{30a2}: 'ア'
-    KatakanaLetterA,
+    LetterA,
     /// \u{30a3}: 'ィ'
-    KatakanaLetterSmallI,
+    LetterSmallI,
     /// \u{30a4}: 'イ'
-    KatakanaLetterI,
+    LetterI,
     /// \u{30a5}: 'ゥ'
-    KatakanaLetterSmallU,
+    LetterSmallU,
     /// \u{30a6}: 'ウ'
-    KatakanaLetterU,
+    LetterU,
     /// \u{30a7}: 'ェ'
-    KatakanaLetterSmallE,
+    LetterSmallE,
     /// \u{30a8}: 'エ'
-    KatakanaLetterE,
+    LetterE,
     /// \u{30a9}: 'ォ'
-    KatakanaLetterSmallO,
+    LetterSmallO,
     /// \u{30aa}: 'オ'
-    KatakanaLetterO,
+    LetterO,
     /// \u{30ab}: 'カ'
-    KatakanaLetterKa,
+    LetterKa,
     /// \u{30ac}: 'ガ'
-    KatakanaLetterGa,
+    LetterGa,
     /// \u{30ad}: 'キ'
-    KatakanaLetterKi,
+    LetterKi,
     /// \u{30ae}: 'ギ'
-    KatakanaLetterGi,
+    LetterGi,
     /// \u{30af}: 'ク'
-    KatakanaLetterKu,
+    LetterKu,
     /// \u{30b0}: 'グ'
-    KatakanaLetterGu,
+    LetterGu,
     /// \u{30b1}: 'ケ'
-    KatakanaLetterKe,
+    LetterKe,
     /// \u{30b2}: 'ゲ'
-    KatakanaLetterGe,
+    LetterGe,
     /// \u{30b3}: 'コ'
-    KatakanaLetterKo,
+    LetterKo,
     /// \u{30b4}: 'ゴ'
-    KatakanaLetterGo,
+    LetterGo,
     /// \u{30b5}: 'サ'
-    KatakanaLetterSa,
+    LetterSa,
     /// \u{30b6}: 'ザ'
-    KatakanaLetterZa,
+    LetterZa,
     /// \u{30b7}: 'シ'
-    KatakanaLetterSi,
+    LetterSi,
     /// \u{30b8}: 'ジ'
-    KatakanaLetterZi,
+    LetterZi,
     /// \u{30b9}: 'ス'
-    KatakanaLetterSu,
+    LetterSu,
     /// \u{30ba}: 'ズ'
-    KatakanaLetterZu,
+    LetterZu,
     /// \u{30bb}: 'セ'
-    KatakanaLetterSe,
+    LetterSe,
     /// \u{30bc}: 'ゼ'
-    KatakanaLetterZe,
+    LetterZe,
     /// \u{30bd}: 'ソ'
-    KatakanaLetterSo,
+    LetterSo,
     /// \u{30be}: 'ゾ'
-    KatakanaLetterZo,
+    LetterZo,
     /// \u{30bf}: 'タ'
-    KatakanaLetterTa,
+    LetterTa,
     /// \u{30c0}: 'ダ'
-    KatakanaLetterDa,
+    LetterDa,
     /// \u{30c1}: 'チ'
-    KatakanaLetterTi,
+    LetterTi,
     /// \u{30c2}: 'ヂ'
-    KatakanaLetterDi,
+    LetterDi,
     /// \u{30c3}: 'ッ'
-    KatakanaLetterSmallTu,
+    LetterSmallTu,
     /// \u{30c4}: 'ツ'
-    KatakanaLetterTu,
+    LetterTu,
     /// \u{30c5}: 'ヅ'
-    KatakanaLetterDu,
+    LetterDu,
     /// \u{30c6}: 'テ'
-    KatakanaLetterTe,
+    LetterTe,
     /// \u{30c7}: 'デ'
-    KatakanaLetterDe,
+    LetterDe,
     /// \u{30c8}: 'ト'
-    KatakanaLetterTo,
+    LetterTo,
     /// \u{30c9}: 'ド'
-    KatakanaLetterDo,
+    LetterDo,
     /// \u{30ca}: 'ナ'
-    KatakanaLetterNa,
+    LetterNa,
     /// \u{30cb}: 'ニ'
-    KatakanaLetterNi,
+    LetterNi,
     /// \u{30cc}: 'ヌ'
-    KatakanaLetterNu,
+    LetterNu,
     /// \u{30cd}: 'ネ'
-    KatakanaLetterNe,
+    LetterNe,
     /// \u{30ce}: 'ノ'
-    KatakanaLetterNo,
+    LetterNo,
     /// \u{30cf}: 'ハ'
-    KatakanaLetterHa,
+    LetterHa,
     /// \u{30d0}: 'バ'
-    KatakanaLetterBa,
+    LetterBa,
     /// \u{30d1}: 'パ'
-    KatakanaLetterPa,
+    LetterPa,
     /// \u{30d2}: 'ヒ'
-    KatakanaLetterHi,
+    LetterHi,
     /// \u{30d3}: 'ビ'
-    KatakanaLetterBi,
+    LetterBi,
     /// \u{30d4}: 'ピ'
-    KatakanaLetterPi,
+    LetterPi,
     /// \u{30d5}: 'フ'
-    KatakanaLetterHu,
+    LetterHu,
     /// \u{30d6}: 'ブ'
-    KatakanaLetterBu,
+    LetterBu,
     /// \u{30d7}: 'プ'
-    KatakanaLetterPu,
+    LetterPu,
     /// \u{30d8}: 'ヘ'
-    KatakanaLetterHe,
+    LetterHe,
     /// \u{30d9}: 'ベ'
-    KatakanaLetterBe,
+    LetterBe,
     /// \u{30da}: 'ペ'
-    KatakanaLetterPe,
+    LetterPe,
     /// \u{30db}: 'ホ'
-    KatakanaLetterHo,
+    LetterHo,
     /// \u{30dc}: 'ボ'
-    KatakanaLetterBo,
+    LetterBo,
     /// \u{30dd}: 'ポ'
-    KatakanaLetterPo,
+    LetterPo,
     /// \u{30de}: 'マ'
-    KatakanaLetterMa,
+    LetterMa,
     /// \u{30df}: 'ミ'
-    KatakanaLetterMi,
+    LetterMi,
     /// \u{30e0}: 'ム'
-    KatakanaLetterMu,
+    LetterMu,
     /// \u{30e1}: 'メ'
-    KatakanaLetterMe,
+    LetterMe,
     /// \u{30e2}: 'モ'
-    KatakanaLetterMo,
+    LetterMo,
     /// \u{30e3}: 'ャ'
-    KatakanaLetterSmallYa,
+    LetterSmallYa,
     /// \u{30e4}: 'ヤ'
-    KatakanaLetterYa,
+    LetterYa,
     /// \u{30e5}: 'ュ'
-    KatakanaLetterSmallYu,
+    LetterSmallYu,
     /// \u{30e6}: 'ユ'
-    KatakanaLetterYu,
+    LetterYu,
     /// \u{30e7}: 'ョ'
-    KatakanaLetterSmallYo,
+    LetterSmallYo,
     /// \u{30e8}: 'ヨ'
-    KatakanaLetterYo,
+    LetterYo,
     /// \u{30e9}: 'ラ'
-    KatakanaLetterRa,
+    LetterRa,
     /// \u{30ea}: 'リ'
-    KatakanaLetterRi,
+    LetterRi,
     /// \u{30eb}: 'ル'
-    KatakanaLetterRu,
+    LetterRu,
     /// \u{30ec}: 'レ'
-    KatakanaLetterRe,
+    LetterRe,
     /// \u{30ed}: 'ロ'
-    KatakanaLetterRo,
+    LetterRo,
     /// \u{30ee}: 'ヮ'
-    KatakanaLetterSmallWa,
+    LetterSmallWa,
     /// \u{30ef}: 'ワ'
-    KatakanaLetterWa,
+    LetterWa,
     /// \u{30f0}: 'ヰ'
-    KatakanaLetterWi,
+    LetterWi,
     /// \u{30f1}: 'ヱ'
-    KatakanaLetterWe,
+    LetterWe,
     /// \u{30f2}: 'ヲ'
-    KatakanaLetterWo,
+    LetterWo,
     /// \u{30f3}: 'ン'
-    KatakanaLetterN,
+    LetterN,
     /// \u{30f4}: 'ヴ'
-    KatakanaLetterVu,
+    LetterVu,
     /// \u{30f5}: 'ヵ'
-    KatakanaLetterSmallKa,
+    LetterSmallKa,
     /// \u{30f6}: 'ヶ'
-    KatakanaLetterSmallKe,
+    LetterSmallKe,
     /// \u{30f7}: 'ヷ'
-    KatakanaLetterVa,
+    LetterVa,
     /// \u{30f8}: 'ヸ'
-    KatakanaLetterVi,
+    LetterVi,
     /// \u{30f9}: 'ヹ'
-    KatakanaLetterVe,
+    LetterVe,
     /// \u{30fa}: 'ヺ'
-    KatakanaLetterVo,
+    LetterVo,
     /// \u{30fb}: '・'
-    KatakanaMiddleDot,
+    MiddleDot,
     /// \u{30fc}: 'ー'
-    KatakanaDashHiraganaProlongedSoundMark,
+    DashHiraganaProlongedSoundMark,
     /// \u{30fd}: 'ヽ'
-    KatakanaIterationMark,
+    IterationMark,
     /// \u{30fe}: 'ヾ'
-    KatakanaVoicedIterationMark,
+    VoicedIterationMark,
 }
 
 impl Into<char> for Katakana {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Katakana::KatakanaDashHiraganaDoubleHyphen => KATAKANA_DASH_HIRAGANA_DOUBLE_HYPHEN,
-            Katakana::KatakanaLetterSmallA => KATAKANA_LETTER_SMALL_A,
-            Katakana::KatakanaLetterA => KATAKANA_LETTER_A,
-            Katakana::KatakanaLetterSmallI => KATAKANA_LETTER_SMALL_I,
-            Katakana::KatakanaLetterI => KATAKANA_LETTER_I,
-            Katakana::KatakanaLetterSmallU => KATAKANA_LETTER_SMALL_U,
-            Katakana::KatakanaLetterU => KATAKANA_LETTER_U,
-            Katakana::KatakanaLetterSmallE => KATAKANA_LETTER_SMALL_E,
-            Katakana::KatakanaLetterE => KATAKANA_LETTER_E,
-            Katakana::KatakanaLetterSmallO => KATAKANA_LETTER_SMALL_O,
-            Katakana::KatakanaLetterO => KATAKANA_LETTER_O,
-            Katakana::KatakanaLetterKa => KATAKANA_LETTER_KA,
-            Katakana::KatakanaLetterGa => KATAKANA_LETTER_GA,
-            Katakana::KatakanaLetterKi => KATAKANA_LETTER_KI,
-            Katakana::KatakanaLetterGi => KATAKANA_LETTER_GI,
-            Katakana::KatakanaLetterKu => KATAKANA_LETTER_KU,
-            Katakana::KatakanaLetterGu => KATAKANA_LETTER_GU,
-            Katakana::KatakanaLetterKe => KATAKANA_LETTER_KE,
-            Katakana::KatakanaLetterGe => KATAKANA_LETTER_GE,
-            Katakana::KatakanaLetterKo => KATAKANA_LETTER_KO,
-            Katakana::KatakanaLetterGo => KATAKANA_LETTER_GO,
-            Katakana::KatakanaLetterSa => KATAKANA_LETTER_SA,
-            Katakana::KatakanaLetterZa => KATAKANA_LETTER_ZA,
-            Katakana::KatakanaLetterSi => KATAKANA_LETTER_SI,
-            Katakana::KatakanaLetterZi => KATAKANA_LETTER_ZI,
-            Katakana::KatakanaLetterSu => KATAKANA_LETTER_SU,
-            Katakana::KatakanaLetterZu => KATAKANA_LETTER_ZU,
-            Katakana::KatakanaLetterSe => KATAKANA_LETTER_SE,
-            Katakana::KatakanaLetterZe => KATAKANA_LETTER_ZE,
-            Katakana::KatakanaLetterSo => KATAKANA_LETTER_SO,
-            Katakana::KatakanaLetterZo => KATAKANA_LETTER_ZO,
-            Katakana::KatakanaLetterTa => KATAKANA_LETTER_TA,
-            Katakana::KatakanaLetterDa => KATAKANA_LETTER_DA,
-            Katakana::KatakanaLetterTi => KATAKANA_LETTER_TI,
-            Katakana::KatakanaLetterDi => KATAKANA_LETTER_DI,
-            Katakana::KatakanaLetterSmallTu => KATAKANA_LETTER_SMALL_TU,
-            Katakana::KatakanaLetterTu => KATAKANA_LETTER_TU,
-            Katakana::KatakanaLetterDu => KATAKANA_LETTER_DU,
-            Katakana::KatakanaLetterTe => KATAKANA_LETTER_TE,
-            Katakana::KatakanaLetterDe => KATAKANA_LETTER_DE,
-            Katakana::KatakanaLetterTo => KATAKANA_LETTER_TO,
-            Katakana::KatakanaLetterDo => KATAKANA_LETTER_DO,
-            Katakana::KatakanaLetterNa => KATAKANA_LETTER_NA,
-            Katakana::KatakanaLetterNi => KATAKANA_LETTER_NI,
-            Katakana::KatakanaLetterNu => KATAKANA_LETTER_NU,
-            Katakana::KatakanaLetterNe => KATAKANA_LETTER_NE,
-            Katakana::KatakanaLetterNo => KATAKANA_LETTER_NO,
-            Katakana::KatakanaLetterHa => KATAKANA_LETTER_HA,
-            Katakana::KatakanaLetterBa => KATAKANA_LETTER_BA,
-            Katakana::KatakanaLetterPa => KATAKANA_LETTER_PA,
-            Katakana::KatakanaLetterHi => KATAKANA_LETTER_HI,
-            Katakana::KatakanaLetterBi => KATAKANA_LETTER_BI,
-            Katakana::KatakanaLetterPi => KATAKANA_LETTER_PI,
-            Katakana::KatakanaLetterHu => KATAKANA_LETTER_HU,
-            Katakana::KatakanaLetterBu => KATAKANA_LETTER_BU,
-            Katakana::KatakanaLetterPu => KATAKANA_LETTER_PU,
-            Katakana::KatakanaLetterHe => KATAKANA_LETTER_HE,
-            Katakana::KatakanaLetterBe => KATAKANA_LETTER_BE,
-            Katakana::KatakanaLetterPe => KATAKANA_LETTER_PE,
-            Katakana::KatakanaLetterHo => KATAKANA_LETTER_HO,
-            Katakana::KatakanaLetterBo => KATAKANA_LETTER_BO,
-            Katakana::KatakanaLetterPo => KATAKANA_LETTER_PO,
-            Katakana::KatakanaLetterMa => KATAKANA_LETTER_MA,
-            Katakana::KatakanaLetterMi => KATAKANA_LETTER_MI,
-            Katakana::KatakanaLetterMu => KATAKANA_LETTER_MU,
-            Katakana::KatakanaLetterMe => KATAKANA_LETTER_ME,
-            Katakana::KatakanaLetterMo => KATAKANA_LETTER_MO,
-            Katakana::KatakanaLetterSmallYa => KATAKANA_LETTER_SMALL_YA,
-            Katakana::KatakanaLetterYa => KATAKANA_LETTER_YA,
-            Katakana::KatakanaLetterSmallYu => KATAKANA_LETTER_SMALL_YU,
-            Katakana::KatakanaLetterYu => KATAKANA_LETTER_YU,
-            Katakana::KatakanaLetterSmallYo => KATAKANA_LETTER_SMALL_YO,
-            Katakana::KatakanaLetterYo => KATAKANA_LETTER_YO,
-            Katakana::KatakanaLetterRa => KATAKANA_LETTER_RA,
-            Katakana::KatakanaLetterRi => KATAKANA_LETTER_RI,
-            Katakana::KatakanaLetterRu => KATAKANA_LETTER_RU,
-            Katakana::KatakanaLetterRe => KATAKANA_LETTER_RE,
-            Katakana::KatakanaLetterRo => KATAKANA_LETTER_RO,
-            Katakana::KatakanaLetterSmallWa => KATAKANA_LETTER_SMALL_WA,
-            Katakana::KatakanaLetterWa => KATAKANA_LETTER_WA,
-            Katakana::KatakanaLetterWi => KATAKANA_LETTER_WI,
-            Katakana::KatakanaLetterWe => KATAKANA_LETTER_WE,
-            Katakana::KatakanaLetterWo => KATAKANA_LETTER_WO,
-            Katakana::KatakanaLetterN => KATAKANA_LETTER_N,
-            Katakana::KatakanaLetterVu => KATAKANA_LETTER_VU,
-            Katakana::KatakanaLetterSmallKa => KATAKANA_LETTER_SMALL_KA,
-            Katakana::KatakanaLetterSmallKe => KATAKANA_LETTER_SMALL_KE,
-            Katakana::KatakanaLetterVa => KATAKANA_LETTER_VA,
-            Katakana::KatakanaLetterVi => KATAKANA_LETTER_VI,
-            Katakana::KatakanaLetterVe => KATAKANA_LETTER_VE,
-            Katakana::KatakanaLetterVo => KATAKANA_LETTER_VO,
-            Katakana::KatakanaMiddleDot => KATAKANA_MIDDLE_DOT,
-            Katakana::KatakanaDashHiraganaProlongedSoundMark => KATAKANA_DASH_HIRAGANA_PROLONGED_SOUND_MARK,
-            Katakana::KatakanaIterationMark => KATAKANA_ITERATION_MARK,
-            Katakana::KatakanaVoicedIterationMark => KATAKANA_VOICED_ITERATION_MARK,
+            Katakana::DashHiraganaDoubleHyphen => DASH_HIRAGANA_DOUBLE_HYPHEN,
+            Katakana::LetterSmallA => LETTER_SMALL_A,
+            Katakana::LetterA => LETTER_A,
+            Katakana::LetterSmallI => LETTER_SMALL_I,
+            Katakana::LetterI => LETTER_I,
+            Katakana::LetterSmallU => LETTER_SMALL_U,
+            Katakana::LetterU => LETTER_U,
+            Katakana::LetterSmallE => LETTER_SMALL_E,
+            Katakana::LetterE => LETTER_E,
+            Katakana::LetterSmallO => LETTER_SMALL_O,
+            Katakana::LetterO => LETTER_O,
+            Katakana::LetterKa => LETTER_KA,
+            Katakana::LetterGa => LETTER_GA,
+            Katakana::LetterKi => LETTER_KI,
+            Katakana::LetterGi => LETTER_GI,
+            Katakana::LetterKu => LETTER_KU,
+            Katakana::LetterGu => LETTER_GU,
+            Katakana::LetterKe => LETTER_KE,
+            Katakana::LetterGe => LETTER_GE,
+            Katakana::LetterKo => LETTER_KO,
+            Katakana::LetterGo => LETTER_GO,
+            Katakana::LetterSa => LETTER_SA,
+            Katakana::LetterZa => LETTER_ZA,
+            Katakana::LetterSi => LETTER_SI,
+            Katakana::LetterZi => LETTER_ZI,
+            Katakana::LetterSu => LETTER_SU,
+            Katakana::LetterZu => LETTER_ZU,
+            Katakana::LetterSe => LETTER_SE,
+            Katakana::LetterZe => LETTER_ZE,
+            Katakana::LetterSo => LETTER_SO,
+            Katakana::LetterZo => LETTER_ZO,
+            Katakana::LetterTa => LETTER_TA,
+            Katakana::LetterDa => LETTER_DA,
+            Katakana::LetterTi => LETTER_TI,
+            Katakana::LetterDi => LETTER_DI,
+            Katakana::LetterSmallTu => LETTER_SMALL_TU,
+            Katakana::LetterTu => LETTER_TU,
+            Katakana::LetterDu => LETTER_DU,
+            Katakana::LetterTe => LETTER_TE,
+            Katakana::LetterDe => LETTER_DE,
+            Katakana::LetterTo => LETTER_TO,
+            Katakana::LetterDo => LETTER_DO,
+            Katakana::LetterNa => LETTER_NA,
+            Katakana::LetterNi => LETTER_NI,
+            Katakana::LetterNu => LETTER_NU,
+            Katakana::LetterNe => LETTER_NE,
+            Katakana::LetterNo => LETTER_NO,
+            Katakana::LetterHa => LETTER_HA,
+            Katakana::LetterBa => LETTER_BA,
+            Katakana::LetterPa => LETTER_PA,
+            Katakana::LetterHi => LETTER_HI,
+            Katakana::LetterBi => LETTER_BI,
+            Katakana::LetterPi => LETTER_PI,
+            Katakana::LetterHu => LETTER_HU,
+            Katakana::LetterBu => LETTER_BU,
+            Katakana::LetterPu => LETTER_PU,
+            Katakana::LetterHe => LETTER_HE,
+            Katakana::LetterBe => LETTER_BE,
+            Katakana::LetterPe => LETTER_PE,
+            Katakana::LetterHo => LETTER_HO,
+            Katakana::LetterBo => LETTER_BO,
+            Katakana::LetterPo => LETTER_PO,
+            Katakana::LetterMa => LETTER_MA,
+            Katakana::LetterMi => LETTER_MI,
+            Katakana::LetterMu => LETTER_MU,
+            Katakana::LetterMe => LETTER_ME,
+            Katakana::LetterMo => LETTER_MO,
+            Katakana::LetterSmallYa => LETTER_SMALL_YA,
+            Katakana::LetterYa => LETTER_YA,
+            Katakana::LetterSmallYu => LETTER_SMALL_YU,
+            Katakana::LetterYu => LETTER_YU,
+            Katakana::LetterSmallYo => LETTER_SMALL_YO,
+            Katakana::LetterYo => LETTER_YO,
+            Katakana::LetterRa => LETTER_RA,
+            Katakana::LetterRi => LETTER_RI,
+            Katakana::LetterRu => LETTER_RU,
+            Katakana::LetterRe => LETTER_RE,
+            Katakana::LetterRo => LETTER_RO,
+            Katakana::LetterSmallWa => LETTER_SMALL_WA,
+            Katakana::LetterWa => LETTER_WA,
+            Katakana::LetterWi => LETTER_WI,
+            Katakana::LetterWe => LETTER_WE,
+            Katakana::LetterWo => LETTER_WO,
+            Katakana::LetterN => LETTER_N,
+            Katakana::LetterVu => LETTER_VU,
+            Katakana::LetterSmallKa => LETTER_SMALL_KA,
+            Katakana::LetterSmallKe => LETTER_SMALL_KE,
+            Katakana::LetterVa => LETTER_VA,
+            Katakana::LetterVi => LETTER_VI,
+            Katakana::LetterVe => LETTER_VE,
+            Katakana::LetterVo => LETTER_VO,
+            Katakana::MiddleDot => MIDDLE_DOT,
+            Katakana::DashHiraganaProlongedSoundMark => DASH_HIRAGANA_PROLONGED_SOUND_MARK,
+            Katakana::IterationMark => ITERATION_MARK,
+            Katakana::VoicedIterationMark => VOICED_ITERATION_MARK,
         }
     }
 }
@@ -509,101 +509,101 @@ impl std::convert::TryFrom<char> for Katakana {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            KATAKANA_DASH_HIRAGANA_DOUBLE_HYPHEN => Ok(Katakana::KatakanaDashHiraganaDoubleHyphen),
-            KATAKANA_LETTER_SMALL_A => Ok(Katakana::KatakanaLetterSmallA),
-            KATAKANA_LETTER_A => Ok(Katakana::KatakanaLetterA),
-            KATAKANA_LETTER_SMALL_I => Ok(Katakana::KatakanaLetterSmallI),
-            KATAKANA_LETTER_I => Ok(Katakana::KatakanaLetterI),
-            KATAKANA_LETTER_SMALL_U => Ok(Katakana::KatakanaLetterSmallU),
-            KATAKANA_LETTER_U => Ok(Katakana::KatakanaLetterU),
-            KATAKANA_LETTER_SMALL_E => Ok(Katakana::KatakanaLetterSmallE),
-            KATAKANA_LETTER_E => Ok(Katakana::KatakanaLetterE),
-            KATAKANA_LETTER_SMALL_O => Ok(Katakana::KatakanaLetterSmallO),
-            KATAKANA_LETTER_O => Ok(Katakana::KatakanaLetterO),
-            KATAKANA_LETTER_KA => Ok(Katakana::KatakanaLetterKa),
-            KATAKANA_LETTER_GA => Ok(Katakana::KatakanaLetterGa),
-            KATAKANA_LETTER_KI => Ok(Katakana::KatakanaLetterKi),
-            KATAKANA_LETTER_GI => Ok(Katakana::KatakanaLetterGi),
-            KATAKANA_LETTER_KU => Ok(Katakana::KatakanaLetterKu),
-            KATAKANA_LETTER_GU => Ok(Katakana::KatakanaLetterGu),
-            KATAKANA_LETTER_KE => Ok(Katakana::KatakanaLetterKe),
-            KATAKANA_LETTER_GE => Ok(Katakana::KatakanaLetterGe),
-            KATAKANA_LETTER_KO => Ok(Katakana::KatakanaLetterKo),
-            KATAKANA_LETTER_GO => Ok(Katakana::KatakanaLetterGo),
-            KATAKANA_LETTER_SA => Ok(Katakana::KatakanaLetterSa),
-            KATAKANA_LETTER_ZA => Ok(Katakana::KatakanaLetterZa),
-            KATAKANA_LETTER_SI => Ok(Katakana::KatakanaLetterSi),
-            KATAKANA_LETTER_ZI => Ok(Katakana::KatakanaLetterZi),
-            KATAKANA_LETTER_SU => Ok(Katakana::KatakanaLetterSu),
-            KATAKANA_LETTER_ZU => Ok(Katakana::KatakanaLetterZu),
-            KATAKANA_LETTER_SE => Ok(Katakana::KatakanaLetterSe),
-            KATAKANA_LETTER_ZE => Ok(Katakana::KatakanaLetterZe),
-            KATAKANA_LETTER_SO => Ok(Katakana::KatakanaLetterSo),
-            KATAKANA_LETTER_ZO => Ok(Katakana::KatakanaLetterZo),
-            KATAKANA_LETTER_TA => Ok(Katakana::KatakanaLetterTa),
-            KATAKANA_LETTER_DA => Ok(Katakana::KatakanaLetterDa),
-            KATAKANA_LETTER_TI => Ok(Katakana::KatakanaLetterTi),
-            KATAKANA_LETTER_DI => Ok(Katakana::KatakanaLetterDi),
-            KATAKANA_LETTER_SMALL_TU => Ok(Katakana::KatakanaLetterSmallTu),
-            KATAKANA_LETTER_TU => Ok(Katakana::KatakanaLetterTu),
-            KATAKANA_LETTER_DU => Ok(Katakana::KatakanaLetterDu),
-            KATAKANA_LETTER_TE => Ok(Katakana::KatakanaLetterTe),
-            KATAKANA_LETTER_DE => Ok(Katakana::KatakanaLetterDe),
-            KATAKANA_LETTER_TO => Ok(Katakana::KatakanaLetterTo),
-            KATAKANA_LETTER_DO => Ok(Katakana::KatakanaLetterDo),
-            KATAKANA_LETTER_NA => Ok(Katakana::KatakanaLetterNa),
-            KATAKANA_LETTER_NI => Ok(Katakana::KatakanaLetterNi),
-            KATAKANA_LETTER_NU => Ok(Katakana::KatakanaLetterNu),
-            KATAKANA_LETTER_NE => Ok(Katakana::KatakanaLetterNe),
-            KATAKANA_LETTER_NO => Ok(Katakana::KatakanaLetterNo),
-            KATAKANA_LETTER_HA => Ok(Katakana::KatakanaLetterHa),
-            KATAKANA_LETTER_BA => Ok(Katakana::KatakanaLetterBa),
-            KATAKANA_LETTER_PA => Ok(Katakana::KatakanaLetterPa),
-            KATAKANA_LETTER_HI => Ok(Katakana::KatakanaLetterHi),
-            KATAKANA_LETTER_BI => Ok(Katakana::KatakanaLetterBi),
-            KATAKANA_LETTER_PI => Ok(Katakana::KatakanaLetterPi),
-            KATAKANA_LETTER_HU => Ok(Katakana::KatakanaLetterHu),
-            KATAKANA_LETTER_BU => Ok(Katakana::KatakanaLetterBu),
-            KATAKANA_LETTER_PU => Ok(Katakana::KatakanaLetterPu),
-            KATAKANA_LETTER_HE => Ok(Katakana::KatakanaLetterHe),
-            KATAKANA_LETTER_BE => Ok(Katakana::KatakanaLetterBe),
-            KATAKANA_LETTER_PE => Ok(Katakana::KatakanaLetterPe),
-            KATAKANA_LETTER_HO => Ok(Katakana::KatakanaLetterHo),
-            KATAKANA_LETTER_BO => Ok(Katakana::KatakanaLetterBo),
-            KATAKANA_LETTER_PO => Ok(Katakana::KatakanaLetterPo),
-            KATAKANA_LETTER_MA => Ok(Katakana::KatakanaLetterMa),
-            KATAKANA_LETTER_MI => Ok(Katakana::KatakanaLetterMi),
-            KATAKANA_LETTER_MU => Ok(Katakana::KatakanaLetterMu),
-            KATAKANA_LETTER_ME => Ok(Katakana::KatakanaLetterMe),
-            KATAKANA_LETTER_MO => Ok(Katakana::KatakanaLetterMo),
-            KATAKANA_LETTER_SMALL_YA => Ok(Katakana::KatakanaLetterSmallYa),
-            KATAKANA_LETTER_YA => Ok(Katakana::KatakanaLetterYa),
-            KATAKANA_LETTER_SMALL_YU => Ok(Katakana::KatakanaLetterSmallYu),
-            KATAKANA_LETTER_YU => Ok(Katakana::KatakanaLetterYu),
-            KATAKANA_LETTER_SMALL_YO => Ok(Katakana::KatakanaLetterSmallYo),
-            KATAKANA_LETTER_YO => Ok(Katakana::KatakanaLetterYo),
-            KATAKANA_LETTER_RA => Ok(Katakana::KatakanaLetterRa),
-            KATAKANA_LETTER_RI => Ok(Katakana::KatakanaLetterRi),
-            KATAKANA_LETTER_RU => Ok(Katakana::KatakanaLetterRu),
-            KATAKANA_LETTER_RE => Ok(Katakana::KatakanaLetterRe),
-            KATAKANA_LETTER_RO => Ok(Katakana::KatakanaLetterRo),
-            KATAKANA_LETTER_SMALL_WA => Ok(Katakana::KatakanaLetterSmallWa),
-            KATAKANA_LETTER_WA => Ok(Katakana::KatakanaLetterWa),
-            KATAKANA_LETTER_WI => Ok(Katakana::KatakanaLetterWi),
-            KATAKANA_LETTER_WE => Ok(Katakana::KatakanaLetterWe),
-            KATAKANA_LETTER_WO => Ok(Katakana::KatakanaLetterWo),
-            KATAKANA_LETTER_N => Ok(Katakana::KatakanaLetterN),
-            KATAKANA_LETTER_VU => Ok(Katakana::KatakanaLetterVu),
-            KATAKANA_LETTER_SMALL_KA => Ok(Katakana::KatakanaLetterSmallKa),
-            KATAKANA_LETTER_SMALL_KE => Ok(Katakana::KatakanaLetterSmallKe),
-            KATAKANA_LETTER_VA => Ok(Katakana::KatakanaLetterVa),
-            KATAKANA_LETTER_VI => Ok(Katakana::KatakanaLetterVi),
-            KATAKANA_LETTER_VE => Ok(Katakana::KatakanaLetterVe),
-            KATAKANA_LETTER_VO => Ok(Katakana::KatakanaLetterVo),
-            KATAKANA_MIDDLE_DOT => Ok(Katakana::KatakanaMiddleDot),
-            KATAKANA_DASH_HIRAGANA_PROLONGED_SOUND_MARK => Ok(Katakana::KatakanaDashHiraganaProlongedSoundMark),
-            KATAKANA_ITERATION_MARK => Ok(Katakana::KatakanaIterationMark),
-            KATAKANA_VOICED_ITERATION_MARK => Ok(Katakana::KatakanaVoicedIterationMark),
+            DASH_HIRAGANA_DOUBLE_HYPHEN => Ok(Katakana::DashHiraganaDoubleHyphen),
+            LETTER_SMALL_A => Ok(Katakana::LetterSmallA),
+            LETTER_A => Ok(Katakana::LetterA),
+            LETTER_SMALL_I => Ok(Katakana::LetterSmallI),
+            LETTER_I => Ok(Katakana::LetterI),
+            LETTER_SMALL_U => Ok(Katakana::LetterSmallU),
+            LETTER_U => Ok(Katakana::LetterU),
+            LETTER_SMALL_E => Ok(Katakana::LetterSmallE),
+            LETTER_E => Ok(Katakana::LetterE),
+            LETTER_SMALL_O => Ok(Katakana::LetterSmallO),
+            LETTER_O => Ok(Katakana::LetterO),
+            LETTER_KA => Ok(Katakana::LetterKa),
+            LETTER_GA => Ok(Katakana::LetterGa),
+            LETTER_KI => Ok(Katakana::LetterKi),
+            LETTER_GI => Ok(Katakana::LetterGi),
+            LETTER_KU => Ok(Katakana::LetterKu),
+            LETTER_GU => Ok(Katakana::LetterGu),
+            LETTER_KE => Ok(Katakana::LetterKe),
+            LETTER_GE => Ok(Katakana::LetterGe),
+            LETTER_KO => Ok(Katakana::LetterKo),
+            LETTER_GO => Ok(Katakana::LetterGo),
+            LETTER_SA => Ok(Katakana::LetterSa),
+            LETTER_ZA => Ok(Katakana::LetterZa),
+            LETTER_SI => Ok(Katakana::LetterSi),
+            LETTER_ZI => Ok(Katakana::LetterZi),
+            LETTER_SU => Ok(Katakana::LetterSu),
+            LETTER_ZU => Ok(Katakana::LetterZu),
+            LETTER_SE => Ok(Katakana::LetterSe),
+            LETTER_ZE => Ok(Katakana::LetterZe),
+            LETTER_SO => Ok(Katakana::LetterSo),
+            LETTER_ZO => Ok(Katakana::LetterZo),
+            LETTER_TA => Ok(Katakana::LetterTa),
+            LETTER_DA => Ok(Katakana::LetterDa),
+            LETTER_TI => Ok(Katakana::LetterTi),
+            LETTER_DI => Ok(Katakana::LetterDi),
+            LETTER_SMALL_TU => Ok(Katakana::LetterSmallTu),
+            LETTER_TU => Ok(Katakana::LetterTu),
+            LETTER_DU => Ok(Katakana::LetterDu),
+            LETTER_TE => Ok(Katakana::LetterTe),
+            LETTER_DE => Ok(Katakana::LetterDe),
+            LETTER_TO => Ok(Katakana::LetterTo),
+            LETTER_DO => Ok(Katakana::LetterDo),
+            LETTER_NA => Ok(Katakana::LetterNa),
+            LETTER_NI => Ok(Katakana::LetterNi),
+            LETTER_NU => Ok(Katakana::LetterNu),
+            LETTER_NE => Ok(Katakana::LetterNe),
+            LETTER_NO => Ok(Katakana::LetterNo),
+            LETTER_HA => Ok(Katakana::LetterHa),
+            LETTER_BA => Ok(Katakana::LetterBa),
+            LETTER_PA => Ok(Katakana::LetterPa),
+            LETTER_HI => Ok(Katakana::LetterHi),
+            LETTER_BI => Ok(Katakana::LetterBi),
+            LETTER_PI => Ok(Katakana::LetterPi),
+            LETTER_HU => Ok(Katakana::LetterHu),
+            LETTER_BU => Ok(Katakana::LetterBu),
+            LETTER_PU => Ok(Katakana::LetterPu),
+            LETTER_HE => Ok(Katakana::LetterHe),
+            LETTER_BE => Ok(Katakana::LetterBe),
+            LETTER_PE => Ok(Katakana::LetterPe),
+            LETTER_HO => Ok(Katakana::LetterHo),
+            LETTER_BO => Ok(Katakana::LetterBo),
+            LETTER_PO => Ok(Katakana::LetterPo),
+            LETTER_MA => Ok(Katakana::LetterMa),
+            LETTER_MI => Ok(Katakana::LetterMi),
+            LETTER_MU => Ok(Katakana::LetterMu),
+            LETTER_ME => Ok(Katakana::LetterMe),
+            LETTER_MO => Ok(Katakana::LetterMo),
+            LETTER_SMALL_YA => Ok(Katakana::LetterSmallYa),
+            LETTER_YA => Ok(Katakana::LetterYa),
+            LETTER_SMALL_YU => Ok(Katakana::LetterSmallYu),
+            LETTER_YU => Ok(Katakana::LetterYu),
+            LETTER_SMALL_YO => Ok(Katakana::LetterSmallYo),
+            LETTER_YO => Ok(Katakana::LetterYo),
+            LETTER_RA => Ok(Katakana::LetterRa),
+            LETTER_RI => Ok(Katakana::LetterRi),
+            LETTER_RU => Ok(Katakana::LetterRu),
+            LETTER_RE => Ok(Katakana::LetterRe),
+            LETTER_RO => Ok(Katakana::LetterRo),
+            LETTER_SMALL_WA => Ok(Katakana::LetterSmallWa),
+            LETTER_WA => Ok(Katakana::LetterWa),
+            LETTER_WI => Ok(Katakana::LetterWi),
+            LETTER_WE => Ok(Katakana::LetterWe),
+            LETTER_WO => Ok(Katakana::LetterWo),
+            LETTER_N => Ok(Katakana::LetterN),
+            LETTER_VU => Ok(Katakana::LetterVu),
+            LETTER_SMALL_KA => Ok(Katakana::LetterSmallKa),
+            LETTER_SMALL_KE => Ok(Katakana::LetterSmallKe),
+            LETTER_VA => Ok(Katakana::LetterVa),
+            LETTER_VI => Ok(Katakana::LetterVi),
+            LETTER_VE => Ok(Katakana::LetterVe),
+            LETTER_VO => Ok(Katakana::LetterVo),
+            MIDDLE_DOT => Ok(Katakana::MiddleDot),
+            DASH_HIRAGANA_PROLONGED_SOUND_MARK => Ok(Katakana::DashHiraganaProlongedSoundMark),
+            ITERATION_MARK => Ok(Katakana::IterationMark),
+            VOICED_ITERATION_MARK => Ok(Katakana::VoicedIterationMark),
             _ => Err(()),
         }
     }
@@ -642,109 +642,109 @@ impl Iterator for Katakana {
 }
 
 impl Katakana {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Katakana::KatakanaDashHiraganaDoubleHyphen
+        Katakana::DashHiraganaDoubleHyphen
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Katakana::KatakanaDashHiraganaDoubleHyphen => "katakana-hiragana double hyphen",
-            Katakana::KatakanaLetterSmallA => "katakana letter small a",
-            Katakana::KatakanaLetterA => "katakana letter a",
-            Katakana::KatakanaLetterSmallI => "katakana letter small i",
-            Katakana::KatakanaLetterI => "katakana letter i",
-            Katakana::KatakanaLetterSmallU => "katakana letter small u",
-            Katakana::KatakanaLetterU => "katakana letter u",
-            Katakana::KatakanaLetterSmallE => "katakana letter small e",
-            Katakana::KatakanaLetterE => "katakana letter e",
-            Katakana::KatakanaLetterSmallO => "katakana letter small o",
-            Katakana::KatakanaLetterO => "katakana letter o",
-            Katakana::KatakanaLetterKa => "katakana letter ka",
-            Katakana::KatakanaLetterGa => "katakana letter ga",
-            Katakana::KatakanaLetterKi => "katakana letter ki",
-            Katakana::KatakanaLetterGi => "katakana letter gi",
-            Katakana::KatakanaLetterKu => "katakana letter ku",
-            Katakana::KatakanaLetterGu => "katakana letter gu",
-            Katakana::KatakanaLetterKe => "katakana letter ke",
-            Katakana::KatakanaLetterGe => "katakana letter ge",
-            Katakana::KatakanaLetterKo => "katakana letter ko",
-            Katakana::KatakanaLetterGo => "katakana letter go",
-            Katakana::KatakanaLetterSa => "katakana letter sa",
-            Katakana::KatakanaLetterZa => "katakana letter za",
-            Katakana::KatakanaLetterSi => "katakana letter si",
-            Katakana::KatakanaLetterZi => "katakana letter zi",
-            Katakana::KatakanaLetterSu => "katakana letter su",
-            Katakana::KatakanaLetterZu => "katakana letter zu",
-            Katakana::KatakanaLetterSe => "katakana letter se",
-            Katakana::KatakanaLetterZe => "katakana letter ze",
-            Katakana::KatakanaLetterSo => "katakana letter so",
-            Katakana::KatakanaLetterZo => "katakana letter zo",
-            Katakana::KatakanaLetterTa => "katakana letter ta",
-            Katakana::KatakanaLetterDa => "katakana letter da",
-            Katakana::KatakanaLetterTi => "katakana letter ti",
-            Katakana::KatakanaLetterDi => "katakana letter di",
-            Katakana::KatakanaLetterSmallTu => "katakana letter small tu",
-            Katakana::KatakanaLetterTu => "katakana letter tu",
-            Katakana::KatakanaLetterDu => "katakana letter du",
-            Katakana::KatakanaLetterTe => "katakana letter te",
-            Katakana::KatakanaLetterDe => "katakana letter de",
-            Katakana::KatakanaLetterTo => "katakana letter to",
-            Katakana::KatakanaLetterDo => "katakana letter do",
-            Katakana::KatakanaLetterNa => "katakana letter na",
-            Katakana::KatakanaLetterNi => "katakana letter ni",
-            Katakana::KatakanaLetterNu => "katakana letter nu",
-            Katakana::KatakanaLetterNe => "katakana letter ne",
-            Katakana::KatakanaLetterNo => "katakana letter no",
-            Katakana::KatakanaLetterHa => "katakana letter ha",
-            Katakana::KatakanaLetterBa => "katakana letter ba",
-            Katakana::KatakanaLetterPa => "katakana letter pa",
-            Katakana::KatakanaLetterHi => "katakana letter hi",
-            Katakana::KatakanaLetterBi => "katakana letter bi",
-            Katakana::KatakanaLetterPi => "katakana letter pi",
-            Katakana::KatakanaLetterHu => "katakana letter hu",
-            Katakana::KatakanaLetterBu => "katakana letter bu",
-            Katakana::KatakanaLetterPu => "katakana letter pu",
-            Katakana::KatakanaLetterHe => "katakana letter he",
-            Katakana::KatakanaLetterBe => "katakana letter be",
-            Katakana::KatakanaLetterPe => "katakana letter pe",
-            Katakana::KatakanaLetterHo => "katakana letter ho",
-            Katakana::KatakanaLetterBo => "katakana letter bo",
-            Katakana::KatakanaLetterPo => "katakana letter po",
-            Katakana::KatakanaLetterMa => "katakana letter ma",
-            Katakana::KatakanaLetterMi => "katakana letter mi",
-            Katakana::KatakanaLetterMu => "katakana letter mu",
-            Katakana::KatakanaLetterMe => "katakana letter me",
-            Katakana::KatakanaLetterMo => "katakana letter mo",
-            Katakana::KatakanaLetterSmallYa => "katakana letter small ya",
-            Katakana::KatakanaLetterYa => "katakana letter ya",
-            Katakana::KatakanaLetterSmallYu => "katakana letter small yu",
-            Katakana::KatakanaLetterYu => "katakana letter yu",
-            Katakana::KatakanaLetterSmallYo => "katakana letter small yo",
-            Katakana::KatakanaLetterYo => "katakana letter yo",
-            Katakana::KatakanaLetterRa => "katakana letter ra",
-            Katakana::KatakanaLetterRi => "katakana letter ri",
-            Katakana::KatakanaLetterRu => "katakana letter ru",
-            Katakana::KatakanaLetterRe => "katakana letter re",
-            Katakana::KatakanaLetterRo => "katakana letter ro",
-            Katakana::KatakanaLetterSmallWa => "katakana letter small wa",
-            Katakana::KatakanaLetterWa => "katakana letter wa",
-            Katakana::KatakanaLetterWi => "katakana letter wi",
-            Katakana::KatakanaLetterWe => "katakana letter we",
-            Katakana::KatakanaLetterWo => "katakana letter wo",
-            Katakana::KatakanaLetterN => "katakana letter n",
-            Katakana::KatakanaLetterVu => "katakana letter vu",
-            Katakana::KatakanaLetterSmallKa => "katakana letter small ka",
-            Katakana::KatakanaLetterSmallKe => "katakana letter small ke",
-            Katakana::KatakanaLetterVa => "katakana letter va",
-            Katakana::KatakanaLetterVi => "katakana letter vi",
-            Katakana::KatakanaLetterVe => "katakana letter ve",
-            Katakana::KatakanaLetterVo => "katakana letter vo",
-            Katakana::KatakanaMiddleDot => "katakana middle dot",
-            Katakana::KatakanaDashHiraganaProlongedSoundMark => "katakana-hiragana prolonged sound mark",
-            Katakana::KatakanaIterationMark => "katakana iteration mark",
-            Katakana::KatakanaVoicedIterationMark => "katakana voiced iteration mark",
+            Katakana::DashHiraganaDoubleHyphen => "katakana-hiragana double hyphen",
+            Katakana::LetterSmallA => "katakana letter small a",
+            Katakana::LetterA => "katakana letter a",
+            Katakana::LetterSmallI => "katakana letter small i",
+            Katakana::LetterI => "katakana letter i",
+            Katakana::LetterSmallU => "katakana letter small u",
+            Katakana::LetterU => "katakana letter u",
+            Katakana::LetterSmallE => "katakana letter small e",
+            Katakana::LetterE => "katakana letter e",
+            Katakana::LetterSmallO => "katakana letter small o",
+            Katakana::LetterO => "katakana letter o",
+            Katakana::LetterKa => "katakana letter ka",
+            Katakana::LetterGa => "katakana letter ga",
+            Katakana::LetterKi => "katakana letter ki",
+            Katakana::LetterGi => "katakana letter gi",
+            Katakana::LetterKu => "katakana letter ku",
+            Katakana::LetterGu => "katakana letter gu",
+            Katakana::LetterKe => "katakana letter ke",
+            Katakana::LetterGe => "katakana letter ge",
+            Katakana::LetterKo => "katakana letter ko",
+            Katakana::LetterGo => "katakana letter go",
+            Katakana::LetterSa => "katakana letter sa",
+            Katakana::LetterZa => "katakana letter za",
+            Katakana::LetterSi => "katakana letter si",
+            Katakana::LetterZi => "katakana letter zi",
+            Katakana::LetterSu => "katakana letter su",
+            Katakana::LetterZu => "katakana letter zu",
+            Katakana::LetterSe => "katakana letter se",
+            Katakana::LetterZe => "katakana letter ze",
+            Katakana::LetterSo => "katakana letter so",
+            Katakana::LetterZo => "katakana letter zo",
+            Katakana::LetterTa => "katakana letter ta",
+            Katakana::LetterDa => "katakana letter da",
+            Katakana::LetterTi => "katakana letter ti",
+            Katakana::LetterDi => "katakana letter di",
+            Katakana::LetterSmallTu => "katakana letter small tu",
+            Katakana::LetterTu => "katakana letter tu",
+            Katakana::LetterDu => "katakana letter du",
+            Katakana::LetterTe => "katakana letter te",
+            Katakana::LetterDe => "katakana letter de",
+            Katakana::LetterTo => "katakana letter to",
+            Katakana::LetterDo => "katakana letter do",
+            Katakana::LetterNa => "katakana letter na",
+            Katakana::LetterNi => "katakana letter ni",
+            Katakana::LetterNu => "katakana letter nu",
+            Katakana::LetterNe => "katakana letter ne",
+            Katakana::LetterNo => "katakana letter no",
+            Katakana::LetterHa => "katakana letter ha",
+            Katakana::LetterBa => "katakana letter ba",
+            Katakana::LetterPa => "katakana letter pa",
+            Katakana::LetterHi => "katakana letter hi",
+            Katakana::LetterBi => "katakana letter bi",
+            Katakana::LetterPi => "katakana letter pi",
+            Katakana::LetterHu => "katakana letter hu",
+            Katakana::LetterBu => "katakana letter bu",
+            Katakana::LetterPu => "katakana letter pu",
+            Katakana::LetterHe => "katakana letter he",
+            Katakana::LetterBe => "katakana letter be",
+            Katakana::LetterPe => "katakana letter pe",
+            Katakana::LetterHo => "katakana letter ho",
+            Katakana::LetterBo => "katakana letter bo",
+            Katakana::LetterPo => "katakana letter po",
+            Katakana::LetterMa => "katakana letter ma",
+            Katakana::LetterMi => "katakana letter mi",
+            Katakana::LetterMu => "katakana letter mu",
+            Katakana::LetterMe => "katakana letter me",
+            Katakana::LetterMo => "katakana letter mo",
+            Katakana::LetterSmallYa => "katakana letter small ya",
+            Katakana::LetterYa => "katakana letter ya",
+            Katakana::LetterSmallYu => "katakana letter small yu",
+            Katakana::LetterYu => "katakana letter yu",
+            Katakana::LetterSmallYo => "katakana letter small yo",
+            Katakana::LetterYo => "katakana letter yo",
+            Katakana::LetterRa => "katakana letter ra",
+            Katakana::LetterRi => "katakana letter ri",
+            Katakana::LetterRu => "katakana letter ru",
+            Katakana::LetterRe => "katakana letter re",
+            Katakana::LetterRo => "katakana letter ro",
+            Katakana::LetterSmallWa => "katakana letter small wa",
+            Katakana::LetterWa => "katakana letter wa",
+            Katakana::LetterWi => "katakana letter wi",
+            Katakana::LetterWe => "katakana letter we",
+            Katakana::LetterWo => "katakana letter wo",
+            Katakana::LetterN => "katakana letter n",
+            Katakana::LetterVu => "katakana letter vu",
+            Katakana::LetterSmallKa => "katakana letter small ka",
+            Katakana::LetterSmallKe => "katakana letter small ke",
+            Katakana::LetterVa => "katakana letter va",
+            Katakana::LetterVi => "katakana letter vi",
+            Katakana::LetterVe => "katakana letter ve",
+            Katakana::LetterVo => "katakana letter vo",
+            Katakana::MiddleDot => "katakana middle dot",
+            Katakana::DashHiraganaProlongedSoundMark => "katakana-hiragana prolonged sound mark",
+            Katakana::IterationMark => "katakana iteration mark",
+            Katakana::VoicedIterationMark => "katakana voiced iteration mark",
         }
     }
 }

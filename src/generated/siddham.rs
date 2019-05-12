@@ -8,189 +8,189 @@
 /// 𑗒 𑗓 𑗔 𑗕 𑗖 𑗗 𑗘 𑗙 𑗚 𑗛 𑗜 𑗝
 pub mod constants {
     /// \u{11580}: '𑖀'
-    pub const SIDDHAM_LETTER_A: char = '𑖀';
+    pub const LETTER_A: char = '𑖀';
     /// \u{11581}: '𑖁'
-    pub const SIDDHAM_LETTER_AA: char = '𑖁';
+    pub const LETTER_AA: char = '𑖁';
     /// \u{11582}: '𑖂'
-    pub const SIDDHAM_LETTER_I: char = '𑖂';
+    pub const LETTER_I: char = '𑖂';
     /// \u{11583}: '𑖃'
-    pub const SIDDHAM_LETTER_II: char = '𑖃';
+    pub const LETTER_II: char = '𑖃';
     /// \u{11584}: '𑖄'
-    pub const SIDDHAM_LETTER_U: char = '𑖄';
+    pub const LETTER_U: char = '𑖄';
     /// \u{11585}: '𑖅'
-    pub const SIDDHAM_LETTER_UU: char = '𑖅';
+    pub const LETTER_UU: char = '𑖅';
     /// \u{11586}: '𑖆'
-    pub const SIDDHAM_LETTER_VOCALIC_R: char = '𑖆';
+    pub const LETTER_VOCALIC_R: char = '𑖆';
     /// \u{11587}: '𑖇'
-    pub const SIDDHAM_LETTER_VOCALIC_RR: char = '𑖇';
+    pub const LETTER_VOCALIC_RR: char = '𑖇';
     /// \u{11588}: '𑖈'
-    pub const SIDDHAM_LETTER_VOCALIC_L: char = '𑖈';
+    pub const LETTER_VOCALIC_L: char = '𑖈';
     /// \u{11589}: '𑖉'
-    pub const SIDDHAM_LETTER_VOCALIC_LL: char = '𑖉';
+    pub const LETTER_VOCALIC_LL: char = '𑖉';
     /// \u{1158a}: '𑖊'
-    pub const SIDDHAM_LETTER_E: char = '𑖊';
+    pub const LETTER_E: char = '𑖊';
     /// \u{1158b}: '𑖋'
-    pub const SIDDHAM_LETTER_AI: char = '𑖋';
+    pub const LETTER_AI: char = '𑖋';
     /// \u{1158c}: '𑖌'
-    pub const SIDDHAM_LETTER_O: char = '𑖌';
+    pub const LETTER_O: char = '𑖌';
     /// \u{1158d}: '𑖍'
-    pub const SIDDHAM_LETTER_AU: char = '𑖍';
+    pub const LETTER_AU: char = '𑖍';
     /// \u{1158e}: '𑖎'
-    pub const SIDDHAM_LETTER_KA: char = '𑖎';
+    pub const LETTER_KA: char = '𑖎';
     /// \u{1158f}: '𑖏'
-    pub const SIDDHAM_LETTER_KHA: char = '𑖏';
+    pub const LETTER_KHA: char = '𑖏';
     /// \u{11590}: '𑖐'
-    pub const SIDDHAM_LETTER_GA: char = '𑖐';
+    pub const LETTER_GA: char = '𑖐';
     /// \u{11591}: '𑖑'
-    pub const SIDDHAM_LETTER_GHA: char = '𑖑';
+    pub const LETTER_GHA: char = '𑖑';
     /// \u{11592}: '𑖒'
-    pub const SIDDHAM_LETTER_NGA: char = '𑖒';
+    pub const LETTER_NGA: char = '𑖒';
     /// \u{11593}: '𑖓'
-    pub const SIDDHAM_LETTER_CA: char = '𑖓';
+    pub const LETTER_CA: char = '𑖓';
     /// \u{11594}: '𑖔'
-    pub const SIDDHAM_LETTER_CHA: char = '𑖔';
+    pub const LETTER_CHA: char = '𑖔';
     /// \u{11595}: '𑖕'
-    pub const SIDDHAM_LETTER_JA: char = '𑖕';
+    pub const LETTER_JA: char = '𑖕';
     /// \u{11596}: '𑖖'
-    pub const SIDDHAM_LETTER_JHA: char = '𑖖';
+    pub const LETTER_JHA: char = '𑖖';
     /// \u{11597}: '𑖗'
-    pub const SIDDHAM_LETTER_NYA: char = '𑖗';
+    pub const LETTER_NYA: char = '𑖗';
     /// \u{11598}: '𑖘'
-    pub const SIDDHAM_LETTER_TTA: char = '𑖘';
+    pub const LETTER_TTA: char = '𑖘';
     /// \u{11599}: '𑖙'
-    pub const SIDDHAM_LETTER_TTHA: char = '𑖙';
+    pub const LETTER_TTHA: char = '𑖙';
     /// \u{1159a}: '𑖚'
-    pub const SIDDHAM_LETTER_DDA: char = '𑖚';
+    pub const LETTER_DDA: char = '𑖚';
     /// \u{1159b}: '𑖛'
-    pub const SIDDHAM_LETTER_DDHA: char = '𑖛';
+    pub const LETTER_DDHA: char = '𑖛';
     /// \u{1159c}: '𑖜'
-    pub const SIDDHAM_LETTER_NNA: char = '𑖜';
+    pub const LETTER_NNA: char = '𑖜';
     /// \u{1159d}: '𑖝'
-    pub const SIDDHAM_LETTER_TA: char = '𑖝';
+    pub const LETTER_TA: char = '𑖝';
     /// \u{1159e}: '𑖞'
-    pub const SIDDHAM_LETTER_THA: char = '𑖞';
+    pub const LETTER_THA: char = '𑖞';
     /// \u{1159f}: '𑖟'
-    pub const SIDDHAM_LETTER_DA: char = '𑖟';
+    pub const LETTER_DA: char = '𑖟';
     /// \u{115a0}: '𑖠'
-    pub const SIDDHAM_LETTER_DHA: char = '𑖠';
+    pub const LETTER_DHA: char = '𑖠';
     /// \u{115a1}: '𑖡'
-    pub const SIDDHAM_LETTER_NA: char = '𑖡';
+    pub const LETTER_NA: char = '𑖡';
     /// \u{115a2}: '𑖢'
-    pub const SIDDHAM_LETTER_PA: char = '𑖢';
+    pub const LETTER_PA: char = '𑖢';
     /// \u{115a3}: '𑖣'
-    pub const SIDDHAM_LETTER_PHA: char = '𑖣';
+    pub const LETTER_PHA: char = '𑖣';
     /// \u{115a4}: '𑖤'
-    pub const SIDDHAM_LETTER_BA: char = '𑖤';
+    pub const LETTER_BA: char = '𑖤';
     /// \u{115a5}: '𑖥'
-    pub const SIDDHAM_LETTER_BHA: char = '𑖥';
+    pub const LETTER_BHA: char = '𑖥';
     /// \u{115a6}: '𑖦'
-    pub const SIDDHAM_LETTER_MA: char = '𑖦';
+    pub const LETTER_MA: char = '𑖦';
     /// \u{115a7}: '𑖧'
-    pub const SIDDHAM_LETTER_YA: char = '𑖧';
+    pub const LETTER_YA: char = '𑖧';
     /// \u{115a8}: '𑖨'
-    pub const SIDDHAM_LETTER_RA: char = '𑖨';
+    pub const LETTER_RA: char = '𑖨';
     /// \u{115a9}: '𑖩'
-    pub const SIDDHAM_LETTER_LA: char = '𑖩';
+    pub const LETTER_LA: char = '𑖩';
     /// \u{115aa}: '𑖪'
-    pub const SIDDHAM_LETTER_VA: char = '𑖪';
+    pub const LETTER_VA: char = '𑖪';
     /// \u{115ab}: '𑖫'
-    pub const SIDDHAM_LETTER_SHA: char = '𑖫';
+    pub const LETTER_SHA: char = '𑖫';
     /// \u{115ac}: '𑖬'
-    pub const SIDDHAM_LETTER_SSA: char = '𑖬';
+    pub const LETTER_SSA: char = '𑖬';
     /// \u{115ad}: '𑖭'
-    pub const SIDDHAM_LETTER_SA: char = '𑖭';
+    pub const LETTER_SA: char = '𑖭';
     /// \u{115ae}: '𑖮'
-    pub const SIDDHAM_LETTER_HA: char = '𑖮';
+    pub const LETTER_HA: char = '𑖮';
     /// \u{115af}: '𑖯'
-    pub const SIDDHAM_VOWEL_SIGN_AA: char = '𑖯';
+    pub const VOWEL_SIGN_AA: char = '𑖯';
     /// \u{115b0}: '𑖰'
-    pub const SIDDHAM_VOWEL_SIGN_I: char = '𑖰';
+    pub const VOWEL_SIGN_I: char = '𑖰';
     /// \u{115b1}: '𑖱'
-    pub const SIDDHAM_VOWEL_SIGN_II: char = '𑖱';
+    pub const VOWEL_SIGN_II: char = '𑖱';
     /// \u{115b2}: '𑖲'
-    pub const SIDDHAM_VOWEL_SIGN_U: char = '𑖲';
+    pub const VOWEL_SIGN_U: char = '𑖲';
     /// \u{115b3}: '𑖳'
-    pub const SIDDHAM_VOWEL_SIGN_UU: char = '𑖳';
+    pub const VOWEL_SIGN_UU: char = '𑖳';
     /// \u{115b4}: '𑖴'
-    pub const SIDDHAM_VOWEL_SIGN_VOCALIC_R: char = '𑖴';
+    pub const VOWEL_SIGN_VOCALIC_R: char = '𑖴';
     /// \u{115b5}: '𑖵'
-    pub const SIDDHAM_VOWEL_SIGN_VOCALIC_RR: char = '𑖵';
+    pub const VOWEL_SIGN_VOCALIC_RR: char = '𑖵';
     /// \u{115b8}: '𑖸'
-    pub const SIDDHAM_VOWEL_SIGN_E: char = '𑖸';
+    pub const VOWEL_SIGN_E: char = '𑖸';
     /// \u{115b9}: '𑖹'
-    pub const SIDDHAM_VOWEL_SIGN_AI: char = '𑖹';
+    pub const VOWEL_SIGN_AI: char = '𑖹';
     /// \u{115ba}: '𑖺'
-    pub const SIDDHAM_VOWEL_SIGN_O: char = '𑖺';
+    pub const VOWEL_SIGN_O: char = '𑖺';
     /// \u{115bb}: '𑖻'
-    pub const SIDDHAM_VOWEL_SIGN_AU: char = '𑖻';
+    pub const VOWEL_SIGN_AU: char = '𑖻';
     /// \u{115bc}: '𑖼'
-    pub const SIDDHAM_SIGN_CANDRABINDU: char = '𑖼';
+    pub const SIGN_CANDRABINDU: char = '𑖼';
     /// \u{115bd}: '𑖽'
-    pub const SIDDHAM_SIGN_ANUSVARA: char = '𑖽';
+    pub const SIGN_ANUSVARA: char = '𑖽';
     /// \u{115be}: '𑖾'
-    pub const SIDDHAM_SIGN_VISARGA: char = '𑖾';
+    pub const SIGN_VISARGA: char = '𑖾';
     /// \u{115bf}: '𑖿'
-    pub const SIDDHAM_SIGN_VIRAMA: char = '𑖿';
+    pub const SIGN_VIRAMA: char = '𑖿';
     /// \u{115c0}: '𑗀'
-    pub const SIDDHAM_SIGN_NUKTA: char = '𑗀';
+    pub const SIGN_NUKTA: char = '𑗀';
     /// \u{115c1}: '𑗁'
-    pub const SIDDHAM_SIGN_SIDDHAM: char = '𑗁';
+    pub const SIGN_SIDDHAM: char = '𑗁';
     /// \u{115c2}: '𑗂'
-    pub const SIDDHAM_DANDA: char = '𑗂';
+    pub const DANDA: char = '𑗂';
     /// \u{115c3}: '𑗃'
-    pub const SIDDHAM_DOUBLE_DANDA: char = '𑗃';
+    pub const DOUBLE_DANDA: char = '𑗃';
     /// \u{115c4}: '𑗄'
-    pub const SIDDHAM_SEPARATOR_DOT: char = '𑗄';
+    pub const SEPARATOR_DOT: char = '𑗄';
     /// \u{115c5}: '𑗅'
-    pub const SIDDHAM_SEPARATOR_BAR: char = '𑗅';
+    pub const SEPARATOR_BAR: char = '𑗅';
     /// \u{115c6}: '𑗆'
-    pub const SIDDHAM_REPETITION_MARK_DASH_1: char = '𑗆';
+    pub const REPETITION_MARK_DASH_1: char = '𑗆';
     /// \u{115c7}: '𑗇'
-    pub const SIDDHAM_REPETITION_MARK_DASH_2: char = '𑗇';
+    pub const REPETITION_MARK_DASH_2: char = '𑗇';
     /// \u{115c8}: '𑗈'
-    pub const SIDDHAM_REPETITION_MARK_DASH_3: char = '𑗈';
+    pub const REPETITION_MARK_DASH_3: char = '𑗈';
     /// \u{115c9}: '𑗉'
-    pub const SIDDHAM_END_OF_TEXT_MARK: char = '𑗉';
+    pub const END_OF_TEXT_MARK: char = '𑗉';
     /// \u{115ca}: '𑗊'
-    pub const SIDDHAM_SECTION_MARK_WITH_TRIDENT_AND_U_DASH_SHAPED_ORNAMENTS: char = '𑗊';
+    pub const SECTION_MARK_WITH_TRIDENT_AND_U_DASH_SHAPED_ORNAMENTS: char = '𑗊';
     /// \u{115cb}: '𑗋'
-    pub const SIDDHAM_SECTION_MARK_WITH_TRIDENT_AND_DOTTED_CRESCENTS: char = '𑗋';
+    pub const SECTION_MARK_WITH_TRIDENT_AND_DOTTED_CRESCENTS: char = '𑗋';
     /// \u{115cc}: '𑗌'
-    pub const SIDDHAM_SECTION_MARK_WITH_RAYS_AND_DOTTED_CRESCENTS: char = '𑗌';
+    pub const SECTION_MARK_WITH_RAYS_AND_DOTTED_CRESCENTS: char = '𑗌';
     /// \u{115cd}: '𑗍'
-    pub const SIDDHAM_SECTION_MARK_WITH_RAYS_AND_DOTTED_DOUBLE_CRESCENTS: char = '𑗍';
+    pub const SECTION_MARK_WITH_RAYS_AND_DOTTED_DOUBLE_CRESCENTS: char = '𑗍';
     /// \u{115ce}: '𑗎'
-    pub const SIDDHAM_SECTION_MARK_WITH_RAYS_AND_DOTTED_TRIPLE_CRESCENTS: char = '𑗎';
+    pub const SECTION_MARK_WITH_RAYS_AND_DOTTED_TRIPLE_CRESCENTS: char = '𑗎';
     /// \u{115cf}: '𑗏'
-    pub const SIDDHAM_SECTION_MARK_DOUBLE_RING: char = '𑗏';
+    pub const SECTION_MARK_DOUBLE_RING: char = '𑗏';
     /// \u{115d0}: '𑗐'
-    pub const SIDDHAM_SECTION_MARK_DOUBLE_RING_WITH_RAYS: char = '𑗐';
+    pub const SECTION_MARK_DOUBLE_RING_WITH_RAYS: char = '𑗐';
     /// \u{115d1}: '𑗑'
-    pub const SIDDHAM_SECTION_MARK_WITH_DOUBLE_CRESCENTS: char = '𑗑';
+    pub const SECTION_MARK_WITH_DOUBLE_CRESCENTS: char = '𑗑';
     /// \u{115d2}: '𑗒'
-    pub const SIDDHAM_SECTION_MARK_WITH_TRIPLE_CRESCENTS: char = '𑗒';
+    pub const SECTION_MARK_WITH_TRIPLE_CRESCENTS: char = '𑗒';
     /// \u{115d3}: '𑗓'
-    pub const SIDDHAM_SECTION_MARK_WITH_QUADRUPLE_CRESCENTS: char = '𑗓';
+    pub const SECTION_MARK_WITH_QUADRUPLE_CRESCENTS: char = '𑗓';
     /// \u{115d4}: '𑗔'
-    pub const SIDDHAM_SECTION_MARK_WITH_SEPTUPLE_CRESCENTS: char = '𑗔';
+    pub const SECTION_MARK_WITH_SEPTUPLE_CRESCENTS: char = '𑗔';
     /// \u{115d5}: '𑗕'
-    pub const SIDDHAM_SECTION_MARK_WITH_CIRCLES_AND_RAYS: char = '𑗕';
+    pub const SECTION_MARK_WITH_CIRCLES_AND_RAYS: char = '𑗕';
     /// \u{115d6}: '𑗖'
-    pub const SIDDHAM_SECTION_MARK_WITH_CIRCLES_AND_TWO_ENCLOSURES: char = '𑗖';
+    pub const SECTION_MARK_WITH_CIRCLES_AND_TWO_ENCLOSURES: char = '𑗖';
     /// \u{115d7}: '𑗗'
-    pub const SIDDHAM_SECTION_MARK_WITH_CIRCLES_AND_FOUR_ENCLOSURES: char = '𑗗';
+    pub const SECTION_MARK_WITH_CIRCLES_AND_FOUR_ENCLOSURES: char = '𑗗';
     /// \u{115d8}: '𑗘'
-    pub const SIDDHAM_LETTER_THREE_DASH_CIRCLE_ALTERNATE_I: char = '𑗘';
+    pub const LETTER_THREE_DASH_CIRCLE_ALTERNATE_I: char = '𑗘';
     /// \u{115d9}: '𑗙'
-    pub const SIDDHAM_LETTER_TWO_DASH_CIRCLE_ALTERNATE_I: char = '𑗙';
+    pub const LETTER_TWO_DASH_CIRCLE_ALTERNATE_I: char = '𑗙';
     /// \u{115da}: '𑗚'
-    pub const SIDDHAM_LETTER_TWO_DASH_CIRCLE_ALTERNATE_II: char = '𑗚';
+    pub const LETTER_TWO_DASH_CIRCLE_ALTERNATE_II: char = '𑗚';
     /// \u{115db}: '𑗛'
-    pub const SIDDHAM_LETTER_ALTERNATE_U: char = '𑗛';
+    pub const LETTER_ALTERNATE_U: char = '𑗛';
     /// \u{115dc}: '𑗜'
-    pub const SIDDHAM_VOWEL_SIGN_ALTERNATE_U: char = '𑗜';
+    pub const VOWEL_SIGN_ALTERNATE_U: char = '𑗜';
     /// \u{115dd}: '𑗝'
-    pub const SIDDHAM_VOWEL_SIGN_ALTERNATE_UU: char = '𑗝';
+    pub const VOWEL_SIGN_ALTERNATE_UU: char = '𑗝';
 }
 
 /// \u{11580} → \u{115ff}\
@@ -204,287 +204,287 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Siddham {
     /// \u{11580}: '𑖀'
-    SiddhamLetterA,
+    LetterA,
     /// \u{11581}: '𑖁'
-    SiddhamLetterAa,
+    LetterAa,
     /// \u{11582}: '𑖂'
-    SiddhamLetterI,
+    LetterI,
     /// \u{11583}: '𑖃'
-    SiddhamLetterIi,
+    LetterIi,
     /// \u{11584}: '𑖄'
-    SiddhamLetterU,
+    LetterU,
     /// \u{11585}: '𑖅'
-    SiddhamLetterUu,
+    LetterUu,
     /// \u{11586}: '𑖆'
-    SiddhamLetterVocalicR,
+    LetterVocalicR,
     /// \u{11587}: '𑖇'
-    SiddhamLetterVocalicRr,
+    LetterVocalicRr,
     /// \u{11588}: '𑖈'
-    SiddhamLetterVocalicL,
+    LetterVocalicL,
     /// \u{11589}: '𑖉'
-    SiddhamLetterVocalicLl,
+    LetterVocalicLl,
     /// \u{1158a}: '𑖊'
-    SiddhamLetterE,
+    LetterE,
     /// \u{1158b}: '𑖋'
-    SiddhamLetterAi,
+    LetterAi,
     /// \u{1158c}: '𑖌'
-    SiddhamLetterO,
+    LetterO,
     /// \u{1158d}: '𑖍'
-    SiddhamLetterAu,
+    LetterAu,
     /// \u{1158e}: '𑖎'
-    SiddhamLetterKa,
+    LetterKa,
     /// \u{1158f}: '𑖏'
-    SiddhamLetterKha,
+    LetterKha,
     /// \u{11590}: '𑖐'
-    SiddhamLetterGa,
+    LetterGa,
     /// \u{11591}: '𑖑'
-    SiddhamLetterGha,
+    LetterGha,
     /// \u{11592}: '𑖒'
-    SiddhamLetterNga,
+    LetterNga,
     /// \u{11593}: '𑖓'
-    SiddhamLetterCa,
+    LetterCa,
     /// \u{11594}: '𑖔'
-    SiddhamLetterCha,
+    LetterCha,
     /// \u{11595}: '𑖕'
-    SiddhamLetterJa,
+    LetterJa,
     /// \u{11596}: '𑖖'
-    SiddhamLetterJha,
+    LetterJha,
     /// \u{11597}: '𑖗'
-    SiddhamLetterNya,
+    LetterNya,
     /// \u{11598}: '𑖘'
-    SiddhamLetterTta,
+    LetterTta,
     /// \u{11599}: '𑖙'
-    SiddhamLetterTtha,
+    LetterTtha,
     /// \u{1159a}: '𑖚'
-    SiddhamLetterDda,
+    LetterDda,
     /// \u{1159b}: '𑖛'
-    SiddhamLetterDdha,
+    LetterDdha,
     /// \u{1159c}: '𑖜'
-    SiddhamLetterNna,
+    LetterNna,
     /// \u{1159d}: '𑖝'
-    SiddhamLetterTa,
+    LetterTa,
     /// \u{1159e}: '𑖞'
-    SiddhamLetterTha,
+    LetterTha,
     /// \u{1159f}: '𑖟'
-    SiddhamLetterDa,
+    LetterDa,
     /// \u{115a0}: '𑖠'
-    SiddhamLetterDha,
+    LetterDha,
     /// \u{115a1}: '𑖡'
-    SiddhamLetterNa,
+    LetterNa,
     /// \u{115a2}: '𑖢'
-    SiddhamLetterPa,
+    LetterPa,
     /// \u{115a3}: '𑖣'
-    SiddhamLetterPha,
+    LetterPha,
     /// \u{115a4}: '𑖤'
-    SiddhamLetterBa,
+    LetterBa,
     /// \u{115a5}: '𑖥'
-    SiddhamLetterBha,
+    LetterBha,
     /// \u{115a6}: '𑖦'
-    SiddhamLetterMa,
+    LetterMa,
     /// \u{115a7}: '𑖧'
-    SiddhamLetterYa,
+    LetterYa,
     /// \u{115a8}: '𑖨'
-    SiddhamLetterRa,
+    LetterRa,
     /// \u{115a9}: '𑖩'
-    SiddhamLetterLa,
+    LetterLa,
     /// \u{115aa}: '𑖪'
-    SiddhamLetterVa,
+    LetterVa,
     /// \u{115ab}: '𑖫'
-    SiddhamLetterSha,
+    LetterSha,
     /// \u{115ac}: '𑖬'
-    SiddhamLetterSsa,
+    LetterSsa,
     /// \u{115ad}: '𑖭'
-    SiddhamLetterSa,
+    LetterSa,
     /// \u{115ae}: '𑖮'
-    SiddhamLetterHa,
+    LetterHa,
     /// \u{115af}: '𑖯'
-    SiddhamVowelSignAa,
+    VowelSignAa,
     /// \u{115b0}: '𑖰'
-    SiddhamVowelSignI,
+    VowelSignI,
     /// \u{115b1}: '𑖱'
-    SiddhamVowelSignIi,
+    VowelSignIi,
     /// \u{115b2}: '𑖲'
-    SiddhamVowelSignU,
+    VowelSignU,
     /// \u{115b3}: '𑖳'
-    SiddhamVowelSignUu,
+    VowelSignUu,
     /// \u{115b4}: '𑖴'
-    SiddhamVowelSignVocalicR,
+    VowelSignVocalicR,
     /// \u{115b5}: '𑖵'
-    SiddhamVowelSignVocalicRr,
+    VowelSignVocalicRr,
     /// \u{115b8}: '𑖸'
-    SiddhamVowelSignE,
+    VowelSignE,
     /// \u{115b9}: '𑖹'
-    SiddhamVowelSignAi,
+    VowelSignAi,
     /// \u{115ba}: '𑖺'
-    SiddhamVowelSignO,
+    VowelSignO,
     /// \u{115bb}: '𑖻'
-    SiddhamVowelSignAu,
+    VowelSignAu,
     /// \u{115bc}: '𑖼'
-    SiddhamSignCandrabindu,
+    SignCandrabindu,
     /// \u{115bd}: '𑖽'
-    SiddhamSignAnusvara,
+    SignAnusvara,
     /// \u{115be}: '𑖾'
-    SiddhamSignVisarga,
+    SignVisarga,
     /// \u{115bf}: '𑖿'
-    SiddhamSignVirama,
+    SignVirama,
     /// \u{115c0}: '𑗀'
-    SiddhamSignNukta,
+    SignNukta,
     /// \u{115c1}: '𑗁'
-    SiddhamSignSiddham,
+    Sign,
     /// \u{115c2}: '𑗂'
-    SiddhamDanda,
+    Danda,
     /// \u{115c3}: '𑗃'
-    SiddhamDoubleDanda,
+    DoubleDanda,
     /// \u{115c4}: '𑗄'
-    SiddhamSeparatorDot,
+    SeparatorDot,
     /// \u{115c5}: '𑗅'
-    SiddhamSeparatorBar,
+    SeparatorBar,
     /// \u{115c6}: '𑗆'
-    SiddhamRepetitionMarkDash1,
+    RepetitionMarkDash1,
     /// \u{115c7}: '𑗇'
-    SiddhamRepetitionMarkDash2,
+    RepetitionMarkDash2,
     /// \u{115c8}: '𑗈'
-    SiddhamRepetitionMarkDash3,
+    RepetitionMarkDash3,
     /// \u{115c9}: '𑗉'
-    SiddhamEndOfTextMark,
+    EndOfTextMark,
     /// \u{115ca}: '𑗊'
-    SiddhamSectionMarkWithTridentAndUDashShapedOrnaments,
+    SectionMarkWithTridentAndUDashShapedOrnaments,
     /// \u{115cb}: '𑗋'
-    SiddhamSectionMarkWithTridentAndDottedCrescents,
+    SectionMarkWithTridentAndDottedCrescents,
     /// \u{115cc}: '𑗌'
-    SiddhamSectionMarkWithRaysAndDottedCrescents,
+    SectionMarkWithRaysAndDottedCrescents,
     /// \u{115cd}: '𑗍'
-    SiddhamSectionMarkWithRaysAndDottedDoubleCrescents,
+    SectionMarkWithRaysAndDottedDoubleCrescents,
     /// \u{115ce}: '𑗎'
-    SiddhamSectionMarkWithRaysAndDottedTripleCrescents,
+    SectionMarkWithRaysAndDottedTripleCrescents,
     /// \u{115cf}: '𑗏'
-    SiddhamSectionMarkDoubleRing,
+    SectionMarkDoubleRing,
     /// \u{115d0}: '𑗐'
-    SiddhamSectionMarkDoubleRingWithRays,
+    SectionMarkDoubleRingWithRays,
     /// \u{115d1}: '𑗑'
-    SiddhamSectionMarkWithDoubleCrescents,
+    SectionMarkWithDoubleCrescents,
     /// \u{115d2}: '𑗒'
-    SiddhamSectionMarkWithTripleCrescents,
+    SectionMarkWithTripleCrescents,
     /// \u{115d3}: '𑗓'
-    SiddhamSectionMarkWithQuadrupleCrescents,
+    SectionMarkWithQuadrupleCrescents,
     /// \u{115d4}: '𑗔'
-    SiddhamSectionMarkWithSeptupleCrescents,
+    SectionMarkWithSeptupleCrescents,
     /// \u{115d5}: '𑗕'
-    SiddhamSectionMarkWithCirclesAndRays,
+    SectionMarkWithCirclesAndRays,
     /// \u{115d6}: '𑗖'
-    SiddhamSectionMarkWithCirclesAndTwoEnclosures,
+    SectionMarkWithCirclesAndTwoEnclosures,
     /// \u{115d7}: '𑗗'
-    SiddhamSectionMarkWithCirclesAndFourEnclosures,
+    SectionMarkWithCirclesAndFourEnclosures,
     /// \u{115d8}: '𑗘'
-    SiddhamLetterThreeDashCircleAlternateI,
+    LetterThreeDashCircleAlternateI,
     /// \u{115d9}: '𑗙'
-    SiddhamLetterTwoDashCircleAlternateI,
+    LetterTwoDashCircleAlternateI,
     /// \u{115da}: '𑗚'
-    SiddhamLetterTwoDashCircleAlternateIi,
+    LetterTwoDashCircleAlternateIi,
     /// \u{115db}: '𑗛'
-    SiddhamLetterAlternateU,
+    LetterAlternateU,
     /// \u{115dc}: '𑗜'
-    SiddhamVowelSignAlternateU,
+    VowelSignAlternateU,
     /// \u{115dd}: '𑗝'
-    SiddhamVowelSignAlternateUu,
+    VowelSignAlternateUu,
 }
 
 impl Into<char> for Siddham {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Siddham::SiddhamLetterA => SIDDHAM_LETTER_A,
-            Siddham::SiddhamLetterAa => SIDDHAM_LETTER_AA,
-            Siddham::SiddhamLetterI => SIDDHAM_LETTER_I,
-            Siddham::SiddhamLetterIi => SIDDHAM_LETTER_II,
-            Siddham::SiddhamLetterU => SIDDHAM_LETTER_U,
-            Siddham::SiddhamLetterUu => SIDDHAM_LETTER_UU,
-            Siddham::SiddhamLetterVocalicR => SIDDHAM_LETTER_VOCALIC_R,
-            Siddham::SiddhamLetterVocalicRr => SIDDHAM_LETTER_VOCALIC_RR,
-            Siddham::SiddhamLetterVocalicL => SIDDHAM_LETTER_VOCALIC_L,
-            Siddham::SiddhamLetterVocalicLl => SIDDHAM_LETTER_VOCALIC_LL,
-            Siddham::SiddhamLetterE => SIDDHAM_LETTER_E,
-            Siddham::SiddhamLetterAi => SIDDHAM_LETTER_AI,
-            Siddham::SiddhamLetterO => SIDDHAM_LETTER_O,
-            Siddham::SiddhamLetterAu => SIDDHAM_LETTER_AU,
-            Siddham::SiddhamLetterKa => SIDDHAM_LETTER_KA,
-            Siddham::SiddhamLetterKha => SIDDHAM_LETTER_KHA,
-            Siddham::SiddhamLetterGa => SIDDHAM_LETTER_GA,
-            Siddham::SiddhamLetterGha => SIDDHAM_LETTER_GHA,
-            Siddham::SiddhamLetterNga => SIDDHAM_LETTER_NGA,
-            Siddham::SiddhamLetterCa => SIDDHAM_LETTER_CA,
-            Siddham::SiddhamLetterCha => SIDDHAM_LETTER_CHA,
-            Siddham::SiddhamLetterJa => SIDDHAM_LETTER_JA,
-            Siddham::SiddhamLetterJha => SIDDHAM_LETTER_JHA,
-            Siddham::SiddhamLetterNya => SIDDHAM_LETTER_NYA,
-            Siddham::SiddhamLetterTta => SIDDHAM_LETTER_TTA,
-            Siddham::SiddhamLetterTtha => SIDDHAM_LETTER_TTHA,
-            Siddham::SiddhamLetterDda => SIDDHAM_LETTER_DDA,
-            Siddham::SiddhamLetterDdha => SIDDHAM_LETTER_DDHA,
-            Siddham::SiddhamLetterNna => SIDDHAM_LETTER_NNA,
-            Siddham::SiddhamLetterTa => SIDDHAM_LETTER_TA,
-            Siddham::SiddhamLetterTha => SIDDHAM_LETTER_THA,
-            Siddham::SiddhamLetterDa => SIDDHAM_LETTER_DA,
-            Siddham::SiddhamLetterDha => SIDDHAM_LETTER_DHA,
-            Siddham::SiddhamLetterNa => SIDDHAM_LETTER_NA,
-            Siddham::SiddhamLetterPa => SIDDHAM_LETTER_PA,
-            Siddham::SiddhamLetterPha => SIDDHAM_LETTER_PHA,
-            Siddham::SiddhamLetterBa => SIDDHAM_LETTER_BA,
-            Siddham::SiddhamLetterBha => SIDDHAM_LETTER_BHA,
-            Siddham::SiddhamLetterMa => SIDDHAM_LETTER_MA,
-            Siddham::SiddhamLetterYa => SIDDHAM_LETTER_YA,
-            Siddham::SiddhamLetterRa => SIDDHAM_LETTER_RA,
-            Siddham::SiddhamLetterLa => SIDDHAM_LETTER_LA,
-            Siddham::SiddhamLetterVa => SIDDHAM_LETTER_VA,
-            Siddham::SiddhamLetterSha => SIDDHAM_LETTER_SHA,
-            Siddham::SiddhamLetterSsa => SIDDHAM_LETTER_SSA,
-            Siddham::SiddhamLetterSa => SIDDHAM_LETTER_SA,
-            Siddham::SiddhamLetterHa => SIDDHAM_LETTER_HA,
-            Siddham::SiddhamVowelSignAa => SIDDHAM_VOWEL_SIGN_AA,
-            Siddham::SiddhamVowelSignI => SIDDHAM_VOWEL_SIGN_I,
-            Siddham::SiddhamVowelSignIi => SIDDHAM_VOWEL_SIGN_II,
-            Siddham::SiddhamVowelSignU => SIDDHAM_VOWEL_SIGN_U,
-            Siddham::SiddhamVowelSignUu => SIDDHAM_VOWEL_SIGN_UU,
-            Siddham::SiddhamVowelSignVocalicR => SIDDHAM_VOWEL_SIGN_VOCALIC_R,
-            Siddham::SiddhamVowelSignVocalicRr => SIDDHAM_VOWEL_SIGN_VOCALIC_RR,
-            Siddham::SiddhamVowelSignE => SIDDHAM_VOWEL_SIGN_E,
-            Siddham::SiddhamVowelSignAi => SIDDHAM_VOWEL_SIGN_AI,
-            Siddham::SiddhamVowelSignO => SIDDHAM_VOWEL_SIGN_O,
-            Siddham::SiddhamVowelSignAu => SIDDHAM_VOWEL_SIGN_AU,
-            Siddham::SiddhamSignCandrabindu => SIDDHAM_SIGN_CANDRABINDU,
-            Siddham::SiddhamSignAnusvara => SIDDHAM_SIGN_ANUSVARA,
-            Siddham::SiddhamSignVisarga => SIDDHAM_SIGN_VISARGA,
-            Siddham::SiddhamSignVirama => SIDDHAM_SIGN_VIRAMA,
-            Siddham::SiddhamSignNukta => SIDDHAM_SIGN_NUKTA,
-            Siddham::SiddhamSignSiddham => SIDDHAM_SIGN_SIDDHAM,
-            Siddham::SiddhamDanda => SIDDHAM_DANDA,
-            Siddham::SiddhamDoubleDanda => SIDDHAM_DOUBLE_DANDA,
-            Siddham::SiddhamSeparatorDot => SIDDHAM_SEPARATOR_DOT,
-            Siddham::SiddhamSeparatorBar => SIDDHAM_SEPARATOR_BAR,
-            Siddham::SiddhamRepetitionMarkDash1 => SIDDHAM_REPETITION_MARK_DASH_1,
-            Siddham::SiddhamRepetitionMarkDash2 => SIDDHAM_REPETITION_MARK_DASH_2,
-            Siddham::SiddhamRepetitionMarkDash3 => SIDDHAM_REPETITION_MARK_DASH_3,
-            Siddham::SiddhamEndOfTextMark => SIDDHAM_END_OF_TEXT_MARK,
-            Siddham::SiddhamSectionMarkWithTridentAndUDashShapedOrnaments => SIDDHAM_SECTION_MARK_WITH_TRIDENT_AND_U_DASH_SHAPED_ORNAMENTS,
-            Siddham::SiddhamSectionMarkWithTridentAndDottedCrescents => SIDDHAM_SECTION_MARK_WITH_TRIDENT_AND_DOTTED_CRESCENTS,
-            Siddham::SiddhamSectionMarkWithRaysAndDottedCrescents => SIDDHAM_SECTION_MARK_WITH_RAYS_AND_DOTTED_CRESCENTS,
-            Siddham::SiddhamSectionMarkWithRaysAndDottedDoubleCrescents => SIDDHAM_SECTION_MARK_WITH_RAYS_AND_DOTTED_DOUBLE_CRESCENTS,
-            Siddham::SiddhamSectionMarkWithRaysAndDottedTripleCrescents => SIDDHAM_SECTION_MARK_WITH_RAYS_AND_DOTTED_TRIPLE_CRESCENTS,
-            Siddham::SiddhamSectionMarkDoubleRing => SIDDHAM_SECTION_MARK_DOUBLE_RING,
-            Siddham::SiddhamSectionMarkDoubleRingWithRays => SIDDHAM_SECTION_MARK_DOUBLE_RING_WITH_RAYS,
-            Siddham::SiddhamSectionMarkWithDoubleCrescents => SIDDHAM_SECTION_MARK_WITH_DOUBLE_CRESCENTS,
-            Siddham::SiddhamSectionMarkWithTripleCrescents => SIDDHAM_SECTION_MARK_WITH_TRIPLE_CRESCENTS,
-            Siddham::SiddhamSectionMarkWithQuadrupleCrescents => SIDDHAM_SECTION_MARK_WITH_QUADRUPLE_CRESCENTS,
-            Siddham::SiddhamSectionMarkWithSeptupleCrescents => SIDDHAM_SECTION_MARK_WITH_SEPTUPLE_CRESCENTS,
-            Siddham::SiddhamSectionMarkWithCirclesAndRays => SIDDHAM_SECTION_MARK_WITH_CIRCLES_AND_RAYS,
-            Siddham::SiddhamSectionMarkWithCirclesAndTwoEnclosures => SIDDHAM_SECTION_MARK_WITH_CIRCLES_AND_TWO_ENCLOSURES,
-            Siddham::SiddhamSectionMarkWithCirclesAndFourEnclosures => SIDDHAM_SECTION_MARK_WITH_CIRCLES_AND_FOUR_ENCLOSURES,
-            Siddham::SiddhamLetterThreeDashCircleAlternateI => SIDDHAM_LETTER_THREE_DASH_CIRCLE_ALTERNATE_I,
-            Siddham::SiddhamLetterTwoDashCircleAlternateI => SIDDHAM_LETTER_TWO_DASH_CIRCLE_ALTERNATE_I,
-            Siddham::SiddhamLetterTwoDashCircleAlternateIi => SIDDHAM_LETTER_TWO_DASH_CIRCLE_ALTERNATE_II,
-            Siddham::SiddhamLetterAlternateU => SIDDHAM_LETTER_ALTERNATE_U,
-            Siddham::SiddhamVowelSignAlternateU => SIDDHAM_VOWEL_SIGN_ALTERNATE_U,
-            Siddham::SiddhamVowelSignAlternateUu => SIDDHAM_VOWEL_SIGN_ALTERNATE_UU,
+            Siddham::LetterA => LETTER_A,
+            Siddham::LetterAa => LETTER_AA,
+            Siddham::LetterI => LETTER_I,
+            Siddham::LetterIi => LETTER_II,
+            Siddham::LetterU => LETTER_U,
+            Siddham::LetterUu => LETTER_UU,
+            Siddham::LetterVocalicR => LETTER_VOCALIC_R,
+            Siddham::LetterVocalicRr => LETTER_VOCALIC_RR,
+            Siddham::LetterVocalicL => LETTER_VOCALIC_L,
+            Siddham::LetterVocalicLl => LETTER_VOCALIC_LL,
+            Siddham::LetterE => LETTER_E,
+            Siddham::LetterAi => LETTER_AI,
+            Siddham::LetterO => LETTER_O,
+            Siddham::LetterAu => LETTER_AU,
+            Siddham::LetterKa => LETTER_KA,
+            Siddham::LetterKha => LETTER_KHA,
+            Siddham::LetterGa => LETTER_GA,
+            Siddham::LetterGha => LETTER_GHA,
+            Siddham::LetterNga => LETTER_NGA,
+            Siddham::LetterCa => LETTER_CA,
+            Siddham::LetterCha => LETTER_CHA,
+            Siddham::LetterJa => LETTER_JA,
+            Siddham::LetterJha => LETTER_JHA,
+            Siddham::LetterNya => LETTER_NYA,
+            Siddham::LetterTta => LETTER_TTA,
+            Siddham::LetterTtha => LETTER_TTHA,
+            Siddham::LetterDda => LETTER_DDA,
+            Siddham::LetterDdha => LETTER_DDHA,
+            Siddham::LetterNna => LETTER_NNA,
+            Siddham::LetterTa => LETTER_TA,
+            Siddham::LetterTha => LETTER_THA,
+            Siddham::LetterDa => LETTER_DA,
+            Siddham::LetterDha => LETTER_DHA,
+            Siddham::LetterNa => LETTER_NA,
+            Siddham::LetterPa => LETTER_PA,
+            Siddham::LetterPha => LETTER_PHA,
+            Siddham::LetterBa => LETTER_BA,
+            Siddham::LetterBha => LETTER_BHA,
+            Siddham::LetterMa => LETTER_MA,
+            Siddham::LetterYa => LETTER_YA,
+            Siddham::LetterRa => LETTER_RA,
+            Siddham::LetterLa => LETTER_LA,
+            Siddham::LetterVa => LETTER_VA,
+            Siddham::LetterSha => LETTER_SHA,
+            Siddham::LetterSsa => LETTER_SSA,
+            Siddham::LetterSa => LETTER_SA,
+            Siddham::LetterHa => LETTER_HA,
+            Siddham::VowelSignAa => VOWEL_SIGN_AA,
+            Siddham::VowelSignI => VOWEL_SIGN_I,
+            Siddham::VowelSignIi => VOWEL_SIGN_II,
+            Siddham::VowelSignU => VOWEL_SIGN_U,
+            Siddham::VowelSignUu => VOWEL_SIGN_UU,
+            Siddham::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
+            Siddham::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
+            Siddham::VowelSignE => VOWEL_SIGN_E,
+            Siddham::VowelSignAi => VOWEL_SIGN_AI,
+            Siddham::VowelSignO => VOWEL_SIGN_O,
+            Siddham::VowelSignAu => VOWEL_SIGN_AU,
+            Siddham::SignCandrabindu => SIGN_CANDRABINDU,
+            Siddham::SignAnusvara => SIGN_ANUSVARA,
+            Siddham::SignVisarga => SIGN_VISARGA,
+            Siddham::SignVirama => SIGN_VIRAMA,
+            Siddham::SignNukta => SIGN_NUKTA,
+            Siddham::Sign => SIGN_SIDDHAM,
+            Siddham::Danda => DANDA,
+            Siddham::DoubleDanda => DOUBLE_DANDA,
+            Siddham::SeparatorDot => SEPARATOR_DOT,
+            Siddham::SeparatorBar => SEPARATOR_BAR,
+            Siddham::RepetitionMarkDash1 => REPETITION_MARK_DASH_1,
+            Siddham::RepetitionMarkDash2 => REPETITION_MARK_DASH_2,
+            Siddham::RepetitionMarkDash3 => REPETITION_MARK_DASH_3,
+            Siddham::EndOfTextMark => END_OF_TEXT_MARK,
+            Siddham::SectionMarkWithTridentAndUDashShapedOrnaments => SECTION_MARK_WITH_TRIDENT_AND_U_DASH_SHAPED_ORNAMENTS,
+            Siddham::SectionMarkWithTridentAndDottedCrescents => SECTION_MARK_WITH_TRIDENT_AND_DOTTED_CRESCENTS,
+            Siddham::SectionMarkWithRaysAndDottedCrescents => SECTION_MARK_WITH_RAYS_AND_DOTTED_CRESCENTS,
+            Siddham::SectionMarkWithRaysAndDottedDoubleCrescents => SECTION_MARK_WITH_RAYS_AND_DOTTED_DOUBLE_CRESCENTS,
+            Siddham::SectionMarkWithRaysAndDottedTripleCrescents => SECTION_MARK_WITH_RAYS_AND_DOTTED_TRIPLE_CRESCENTS,
+            Siddham::SectionMarkDoubleRing => SECTION_MARK_DOUBLE_RING,
+            Siddham::SectionMarkDoubleRingWithRays => SECTION_MARK_DOUBLE_RING_WITH_RAYS,
+            Siddham::SectionMarkWithDoubleCrescents => SECTION_MARK_WITH_DOUBLE_CRESCENTS,
+            Siddham::SectionMarkWithTripleCrescents => SECTION_MARK_WITH_TRIPLE_CRESCENTS,
+            Siddham::SectionMarkWithQuadrupleCrescents => SECTION_MARK_WITH_QUADRUPLE_CRESCENTS,
+            Siddham::SectionMarkWithSeptupleCrescents => SECTION_MARK_WITH_SEPTUPLE_CRESCENTS,
+            Siddham::SectionMarkWithCirclesAndRays => SECTION_MARK_WITH_CIRCLES_AND_RAYS,
+            Siddham::SectionMarkWithCirclesAndTwoEnclosures => SECTION_MARK_WITH_CIRCLES_AND_TWO_ENCLOSURES,
+            Siddham::SectionMarkWithCirclesAndFourEnclosures => SECTION_MARK_WITH_CIRCLES_AND_FOUR_ENCLOSURES,
+            Siddham::LetterThreeDashCircleAlternateI => LETTER_THREE_DASH_CIRCLE_ALTERNATE_I,
+            Siddham::LetterTwoDashCircleAlternateI => LETTER_TWO_DASH_CIRCLE_ALTERNATE_I,
+            Siddham::LetterTwoDashCircleAlternateIi => LETTER_TWO_DASH_CIRCLE_ALTERNATE_II,
+            Siddham::LetterAlternateU => LETTER_ALTERNATE_U,
+            Siddham::VowelSignAlternateU => VOWEL_SIGN_ALTERNATE_U,
+            Siddham::VowelSignAlternateUu => VOWEL_SIGN_ALTERNATE_UU,
         }
     }
 }
@@ -494,98 +494,98 @@ impl std::convert::TryFrom<char> for Siddham {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            SIDDHAM_LETTER_A => Ok(Siddham::SiddhamLetterA),
-            SIDDHAM_LETTER_AA => Ok(Siddham::SiddhamLetterAa),
-            SIDDHAM_LETTER_I => Ok(Siddham::SiddhamLetterI),
-            SIDDHAM_LETTER_II => Ok(Siddham::SiddhamLetterIi),
-            SIDDHAM_LETTER_U => Ok(Siddham::SiddhamLetterU),
-            SIDDHAM_LETTER_UU => Ok(Siddham::SiddhamLetterUu),
-            SIDDHAM_LETTER_VOCALIC_R => Ok(Siddham::SiddhamLetterVocalicR),
-            SIDDHAM_LETTER_VOCALIC_RR => Ok(Siddham::SiddhamLetterVocalicRr),
-            SIDDHAM_LETTER_VOCALIC_L => Ok(Siddham::SiddhamLetterVocalicL),
-            SIDDHAM_LETTER_VOCALIC_LL => Ok(Siddham::SiddhamLetterVocalicLl),
-            SIDDHAM_LETTER_E => Ok(Siddham::SiddhamLetterE),
-            SIDDHAM_LETTER_AI => Ok(Siddham::SiddhamLetterAi),
-            SIDDHAM_LETTER_O => Ok(Siddham::SiddhamLetterO),
-            SIDDHAM_LETTER_AU => Ok(Siddham::SiddhamLetterAu),
-            SIDDHAM_LETTER_KA => Ok(Siddham::SiddhamLetterKa),
-            SIDDHAM_LETTER_KHA => Ok(Siddham::SiddhamLetterKha),
-            SIDDHAM_LETTER_GA => Ok(Siddham::SiddhamLetterGa),
-            SIDDHAM_LETTER_GHA => Ok(Siddham::SiddhamLetterGha),
-            SIDDHAM_LETTER_NGA => Ok(Siddham::SiddhamLetterNga),
-            SIDDHAM_LETTER_CA => Ok(Siddham::SiddhamLetterCa),
-            SIDDHAM_LETTER_CHA => Ok(Siddham::SiddhamLetterCha),
-            SIDDHAM_LETTER_JA => Ok(Siddham::SiddhamLetterJa),
-            SIDDHAM_LETTER_JHA => Ok(Siddham::SiddhamLetterJha),
-            SIDDHAM_LETTER_NYA => Ok(Siddham::SiddhamLetterNya),
-            SIDDHAM_LETTER_TTA => Ok(Siddham::SiddhamLetterTta),
-            SIDDHAM_LETTER_TTHA => Ok(Siddham::SiddhamLetterTtha),
-            SIDDHAM_LETTER_DDA => Ok(Siddham::SiddhamLetterDda),
-            SIDDHAM_LETTER_DDHA => Ok(Siddham::SiddhamLetterDdha),
-            SIDDHAM_LETTER_NNA => Ok(Siddham::SiddhamLetterNna),
-            SIDDHAM_LETTER_TA => Ok(Siddham::SiddhamLetterTa),
-            SIDDHAM_LETTER_THA => Ok(Siddham::SiddhamLetterTha),
-            SIDDHAM_LETTER_DA => Ok(Siddham::SiddhamLetterDa),
-            SIDDHAM_LETTER_DHA => Ok(Siddham::SiddhamLetterDha),
-            SIDDHAM_LETTER_NA => Ok(Siddham::SiddhamLetterNa),
-            SIDDHAM_LETTER_PA => Ok(Siddham::SiddhamLetterPa),
-            SIDDHAM_LETTER_PHA => Ok(Siddham::SiddhamLetterPha),
-            SIDDHAM_LETTER_BA => Ok(Siddham::SiddhamLetterBa),
-            SIDDHAM_LETTER_BHA => Ok(Siddham::SiddhamLetterBha),
-            SIDDHAM_LETTER_MA => Ok(Siddham::SiddhamLetterMa),
-            SIDDHAM_LETTER_YA => Ok(Siddham::SiddhamLetterYa),
-            SIDDHAM_LETTER_RA => Ok(Siddham::SiddhamLetterRa),
-            SIDDHAM_LETTER_LA => Ok(Siddham::SiddhamLetterLa),
-            SIDDHAM_LETTER_VA => Ok(Siddham::SiddhamLetterVa),
-            SIDDHAM_LETTER_SHA => Ok(Siddham::SiddhamLetterSha),
-            SIDDHAM_LETTER_SSA => Ok(Siddham::SiddhamLetterSsa),
-            SIDDHAM_LETTER_SA => Ok(Siddham::SiddhamLetterSa),
-            SIDDHAM_LETTER_HA => Ok(Siddham::SiddhamLetterHa),
-            SIDDHAM_VOWEL_SIGN_AA => Ok(Siddham::SiddhamVowelSignAa),
-            SIDDHAM_VOWEL_SIGN_I => Ok(Siddham::SiddhamVowelSignI),
-            SIDDHAM_VOWEL_SIGN_II => Ok(Siddham::SiddhamVowelSignIi),
-            SIDDHAM_VOWEL_SIGN_U => Ok(Siddham::SiddhamVowelSignU),
-            SIDDHAM_VOWEL_SIGN_UU => Ok(Siddham::SiddhamVowelSignUu),
-            SIDDHAM_VOWEL_SIGN_VOCALIC_R => Ok(Siddham::SiddhamVowelSignVocalicR),
-            SIDDHAM_VOWEL_SIGN_VOCALIC_RR => Ok(Siddham::SiddhamVowelSignVocalicRr),
-            SIDDHAM_VOWEL_SIGN_E => Ok(Siddham::SiddhamVowelSignE),
-            SIDDHAM_VOWEL_SIGN_AI => Ok(Siddham::SiddhamVowelSignAi),
-            SIDDHAM_VOWEL_SIGN_O => Ok(Siddham::SiddhamVowelSignO),
-            SIDDHAM_VOWEL_SIGN_AU => Ok(Siddham::SiddhamVowelSignAu),
-            SIDDHAM_SIGN_CANDRABINDU => Ok(Siddham::SiddhamSignCandrabindu),
-            SIDDHAM_SIGN_ANUSVARA => Ok(Siddham::SiddhamSignAnusvara),
-            SIDDHAM_SIGN_VISARGA => Ok(Siddham::SiddhamSignVisarga),
-            SIDDHAM_SIGN_VIRAMA => Ok(Siddham::SiddhamSignVirama),
-            SIDDHAM_SIGN_NUKTA => Ok(Siddham::SiddhamSignNukta),
-            SIDDHAM_SIGN_SIDDHAM => Ok(Siddham::SiddhamSignSiddham),
-            SIDDHAM_DANDA => Ok(Siddham::SiddhamDanda),
-            SIDDHAM_DOUBLE_DANDA => Ok(Siddham::SiddhamDoubleDanda),
-            SIDDHAM_SEPARATOR_DOT => Ok(Siddham::SiddhamSeparatorDot),
-            SIDDHAM_SEPARATOR_BAR => Ok(Siddham::SiddhamSeparatorBar),
-            SIDDHAM_REPETITION_MARK_DASH_1 => Ok(Siddham::SiddhamRepetitionMarkDash1),
-            SIDDHAM_REPETITION_MARK_DASH_2 => Ok(Siddham::SiddhamRepetitionMarkDash2),
-            SIDDHAM_REPETITION_MARK_DASH_3 => Ok(Siddham::SiddhamRepetitionMarkDash3),
-            SIDDHAM_END_OF_TEXT_MARK => Ok(Siddham::SiddhamEndOfTextMark),
-            SIDDHAM_SECTION_MARK_WITH_TRIDENT_AND_U_DASH_SHAPED_ORNAMENTS => Ok(Siddham::SiddhamSectionMarkWithTridentAndUDashShapedOrnaments),
-            SIDDHAM_SECTION_MARK_WITH_TRIDENT_AND_DOTTED_CRESCENTS => Ok(Siddham::SiddhamSectionMarkWithTridentAndDottedCrescents),
-            SIDDHAM_SECTION_MARK_WITH_RAYS_AND_DOTTED_CRESCENTS => Ok(Siddham::SiddhamSectionMarkWithRaysAndDottedCrescents),
-            SIDDHAM_SECTION_MARK_WITH_RAYS_AND_DOTTED_DOUBLE_CRESCENTS => Ok(Siddham::SiddhamSectionMarkWithRaysAndDottedDoubleCrescents),
-            SIDDHAM_SECTION_MARK_WITH_RAYS_AND_DOTTED_TRIPLE_CRESCENTS => Ok(Siddham::SiddhamSectionMarkWithRaysAndDottedTripleCrescents),
-            SIDDHAM_SECTION_MARK_DOUBLE_RING => Ok(Siddham::SiddhamSectionMarkDoubleRing),
-            SIDDHAM_SECTION_MARK_DOUBLE_RING_WITH_RAYS => Ok(Siddham::SiddhamSectionMarkDoubleRingWithRays),
-            SIDDHAM_SECTION_MARK_WITH_DOUBLE_CRESCENTS => Ok(Siddham::SiddhamSectionMarkWithDoubleCrescents),
-            SIDDHAM_SECTION_MARK_WITH_TRIPLE_CRESCENTS => Ok(Siddham::SiddhamSectionMarkWithTripleCrescents),
-            SIDDHAM_SECTION_MARK_WITH_QUADRUPLE_CRESCENTS => Ok(Siddham::SiddhamSectionMarkWithQuadrupleCrescents),
-            SIDDHAM_SECTION_MARK_WITH_SEPTUPLE_CRESCENTS => Ok(Siddham::SiddhamSectionMarkWithSeptupleCrescents),
-            SIDDHAM_SECTION_MARK_WITH_CIRCLES_AND_RAYS => Ok(Siddham::SiddhamSectionMarkWithCirclesAndRays),
-            SIDDHAM_SECTION_MARK_WITH_CIRCLES_AND_TWO_ENCLOSURES => Ok(Siddham::SiddhamSectionMarkWithCirclesAndTwoEnclosures),
-            SIDDHAM_SECTION_MARK_WITH_CIRCLES_AND_FOUR_ENCLOSURES => Ok(Siddham::SiddhamSectionMarkWithCirclesAndFourEnclosures),
-            SIDDHAM_LETTER_THREE_DASH_CIRCLE_ALTERNATE_I => Ok(Siddham::SiddhamLetterThreeDashCircleAlternateI),
-            SIDDHAM_LETTER_TWO_DASH_CIRCLE_ALTERNATE_I => Ok(Siddham::SiddhamLetterTwoDashCircleAlternateI),
-            SIDDHAM_LETTER_TWO_DASH_CIRCLE_ALTERNATE_II => Ok(Siddham::SiddhamLetterTwoDashCircleAlternateIi),
-            SIDDHAM_LETTER_ALTERNATE_U => Ok(Siddham::SiddhamLetterAlternateU),
-            SIDDHAM_VOWEL_SIGN_ALTERNATE_U => Ok(Siddham::SiddhamVowelSignAlternateU),
-            SIDDHAM_VOWEL_SIGN_ALTERNATE_UU => Ok(Siddham::SiddhamVowelSignAlternateUu),
+            LETTER_A => Ok(Siddham::LetterA),
+            LETTER_AA => Ok(Siddham::LetterAa),
+            LETTER_I => Ok(Siddham::LetterI),
+            LETTER_II => Ok(Siddham::LetterIi),
+            LETTER_U => Ok(Siddham::LetterU),
+            LETTER_UU => Ok(Siddham::LetterUu),
+            LETTER_VOCALIC_R => Ok(Siddham::LetterVocalicR),
+            LETTER_VOCALIC_RR => Ok(Siddham::LetterVocalicRr),
+            LETTER_VOCALIC_L => Ok(Siddham::LetterVocalicL),
+            LETTER_VOCALIC_LL => Ok(Siddham::LetterVocalicLl),
+            LETTER_E => Ok(Siddham::LetterE),
+            LETTER_AI => Ok(Siddham::LetterAi),
+            LETTER_O => Ok(Siddham::LetterO),
+            LETTER_AU => Ok(Siddham::LetterAu),
+            LETTER_KA => Ok(Siddham::LetterKa),
+            LETTER_KHA => Ok(Siddham::LetterKha),
+            LETTER_GA => Ok(Siddham::LetterGa),
+            LETTER_GHA => Ok(Siddham::LetterGha),
+            LETTER_NGA => Ok(Siddham::LetterNga),
+            LETTER_CA => Ok(Siddham::LetterCa),
+            LETTER_CHA => Ok(Siddham::LetterCha),
+            LETTER_JA => Ok(Siddham::LetterJa),
+            LETTER_JHA => Ok(Siddham::LetterJha),
+            LETTER_NYA => Ok(Siddham::LetterNya),
+            LETTER_TTA => Ok(Siddham::LetterTta),
+            LETTER_TTHA => Ok(Siddham::LetterTtha),
+            LETTER_DDA => Ok(Siddham::LetterDda),
+            LETTER_DDHA => Ok(Siddham::LetterDdha),
+            LETTER_NNA => Ok(Siddham::LetterNna),
+            LETTER_TA => Ok(Siddham::LetterTa),
+            LETTER_THA => Ok(Siddham::LetterTha),
+            LETTER_DA => Ok(Siddham::LetterDa),
+            LETTER_DHA => Ok(Siddham::LetterDha),
+            LETTER_NA => Ok(Siddham::LetterNa),
+            LETTER_PA => Ok(Siddham::LetterPa),
+            LETTER_PHA => Ok(Siddham::LetterPha),
+            LETTER_BA => Ok(Siddham::LetterBa),
+            LETTER_BHA => Ok(Siddham::LetterBha),
+            LETTER_MA => Ok(Siddham::LetterMa),
+            LETTER_YA => Ok(Siddham::LetterYa),
+            LETTER_RA => Ok(Siddham::LetterRa),
+            LETTER_LA => Ok(Siddham::LetterLa),
+            LETTER_VA => Ok(Siddham::LetterVa),
+            LETTER_SHA => Ok(Siddham::LetterSha),
+            LETTER_SSA => Ok(Siddham::LetterSsa),
+            LETTER_SA => Ok(Siddham::LetterSa),
+            LETTER_HA => Ok(Siddham::LetterHa),
+            VOWEL_SIGN_AA => Ok(Siddham::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Siddham::VowelSignI),
+            VOWEL_SIGN_II => Ok(Siddham::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Siddham::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Siddham::VowelSignUu),
+            VOWEL_SIGN_VOCALIC_R => Ok(Siddham::VowelSignVocalicR),
+            VOWEL_SIGN_VOCALIC_RR => Ok(Siddham::VowelSignVocalicRr),
+            VOWEL_SIGN_E => Ok(Siddham::VowelSignE),
+            VOWEL_SIGN_AI => Ok(Siddham::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Siddham::VowelSignO),
+            VOWEL_SIGN_AU => Ok(Siddham::VowelSignAu),
+            SIGN_CANDRABINDU => Ok(Siddham::SignCandrabindu),
+            SIGN_ANUSVARA => Ok(Siddham::SignAnusvara),
+            SIGN_VISARGA => Ok(Siddham::SignVisarga),
+            SIGN_VIRAMA => Ok(Siddham::SignVirama),
+            SIGN_NUKTA => Ok(Siddham::SignNukta),
+            SIGN_SIDDHAM => Ok(Siddham::Sign),
+            DANDA => Ok(Siddham::Danda),
+            DOUBLE_DANDA => Ok(Siddham::DoubleDanda),
+            SEPARATOR_DOT => Ok(Siddham::SeparatorDot),
+            SEPARATOR_BAR => Ok(Siddham::SeparatorBar),
+            REPETITION_MARK_DASH_1 => Ok(Siddham::RepetitionMarkDash1),
+            REPETITION_MARK_DASH_2 => Ok(Siddham::RepetitionMarkDash2),
+            REPETITION_MARK_DASH_3 => Ok(Siddham::RepetitionMarkDash3),
+            END_OF_TEXT_MARK => Ok(Siddham::EndOfTextMark),
+            SECTION_MARK_WITH_TRIDENT_AND_U_DASH_SHAPED_ORNAMENTS => Ok(Siddham::SectionMarkWithTridentAndUDashShapedOrnaments),
+            SECTION_MARK_WITH_TRIDENT_AND_DOTTED_CRESCENTS => Ok(Siddham::SectionMarkWithTridentAndDottedCrescents),
+            SECTION_MARK_WITH_RAYS_AND_DOTTED_CRESCENTS => Ok(Siddham::SectionMarkWithRaysAndDottedCrescents),
+            SECTION_MARK_WITH_RAYS_AND_DOTTED_DOUBLE_CRESCENTS => Ok(Siddham::SectionMarkWithRaysAndDottedDoubleCrescents),
+            SECTION_MARK_WITH_RAYS_AND_DOTTED_TRIPLE_CRESCENTS => Ok(Siddham::SectionMarkWithRaysAndDottedTripleCrescents),
+            SECTION_MARK_DOUBLE_RING => Ok(Siddham::SectionMarkDoubleRing),
+            SECTION_MARK_DOUBLE_RING_WITH_RAYS => Ok(Siddham::SectionMarkDoubleRingWithRays),
+            SECTION_MARK_WITH_DOUBLE_CRESCENTS => Ok(Siddham::SectionMarkWithDoubleCrescents),
+            SECTION_MARK_WITH_TRIPLE_CRESCENTS => Ok(Siddham::SectionMarkWithTripleCrescents),
+            SECTION_MARK_WITH_QUADRUPLE_CRESCENTS => Ok(Siddham::SectionMarkWithQuadrupleCrescents),
+            SECTION_MARK_WITH_SEPTUPLE_CRESCENTS => Ok(Siddham::SectionMarkWithSeptupleCrescents),
+            SECTION_MARK_WITH_CIRCLES_AND_RAYS => Ok(Siddham::SectionMarkWithCirclesAndRays),
+            SECTION_MARK_WITH_CIRCLES_AND_TWO_ENCLOSURES => Ok(Siddham::SectionMarkWithCirclesAndTwoEnclosures),
+            SECTION_MARK_WITH_CIRCLES_AND_FOUR_ENCLOSURES => Ok(Siddham::SectionMarkWithCirclesAndFourEnclosures),
+            LETTER_THREE_DASH_CIRCLE_ALTERNATE_I => Ok(Siddham::LetterThreeDashCircleAlternateI),
+            LETTER_TWO_DASH_CIRCLE_ALTERNATE_I => Ok(Siddham::LetterTwoDashCircleAlternateI),
+            LETTER_TWO_DASH_CIRCLE_ALTERNATE_II => Ok(Siddham::LetterTwoDashCircleAlternateIi),
+            LETTER_ALTERNATE_U => Ok(Siddham::LetterAlternateU),
+            VOWEL_SIGN_ALTERNATE_U => Ok(Siddham::VowelSignAlternateU),
+            VOWEL_SIGN_ALTERNATE_UU => Ok(Siddham::VowelSignAlternateUu),
             _ => Err(()),
         }
     }
@@ -624,106 +624,106 @@ impl Iterator for Siddham {
 }
 
 impl Siddham {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Siddham::SiddhamLetterA
+        Siddham::LetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Siddham::SiddhamLetterA => "siddham letter a",
-            Siddham::SiddhamLetterAa => "siddham letter aa",
-            Siddham::SiddhamLetterI => "siddham letter i",
-            Siddham::SiddhamLetterIi => "siddham letter ii",
-            Siddham::SiddhamLetterU => "siddham letter u",
-            Siddham::SiddhamLetterUu => "siddham letter uu",
-            Siddham::SiddhamLetterVocalicR => "siddham letter vocalic r",
-            Siddham::SiddhamLetterVocalicRr => "siddham letter vocalic rr",
-            Siddham::SiddhamLetterVocalicL => "siddham letter vocalic l",
-            Siddham::SiddhamLetterVocalicLl => "siddham letter vocalic ll",
-            Siddham::SiddhamLetterE => "siddham letter e",
-            Siddham::SiddhamLetterAi => "siddham letter ai",
-            Siddham::SiddhamLetterO => "siddham letter o",
-            Siddham::SiddhamLetterAu => "siddham letter au",
-            Siddham::SiddhamLetterKa => "siddham letter ka",
-            Siddham::SiddhamLetterKha => "siddham letter kha",
-            Siddham::SiddhamLetterGa => "siddham letter ga",
-            Siddham::SiddhamLetterGha => "siddham letter gha",
-            Siddham::SiddhamLetterNga => "siddham letter nga",
-            Siddham::SiddhamLetterCa => "siddham letter ca",
-            Siddham::SiddhamLetterCha => "siddham letter cha",
-            Siddham::SiddhamLetterJa => "siddham letter ja",
-            Siddham::SiddhamLetterJha => "siddham letter jha",
-            Siddham::SiddhamLetterNya => "siddham letter nya",
-            Siddham::SiddhamLetterTta => "siddham letter tta",
-            Siddham::SiddhamLetterTtha => "siddham letter ttha",
-            Siddham::SiddhamLetterDda => "siddham letter dda",
-            Siddham::SiddhamLetterDdha => "siddham letter ddha",
-            Siddham::SiddhamLetterNna => "siddham letter nna",
-            Siddham::SiddhamLetterTa => "siddham letter ta",
-            Siddham::SiddhamLetterTha => "siddham letter tha",
-            Siddham::SiddhamLetterDa => "siddham letter da",
-            Siddham::SiddhamLetterDha => "siddham letter dha",
-            Siddham::SiddhamLetterNa => "siddham letter na",
-            Siddham::SiddhamLetterPa => "siddham letter pa",
-            Siddham::SiddhamLetterPha => "siddham letter pha",
-            Siddham::SiddhamLetterBa => "siddham letter ba",
-            Siddham::SiddhamLetterBha => "siddham letter bha",
-            Siddham::SiddhamLetterMa => "siddham letter ma",
-            Siddham::SiddhamLetterYa => "siddham letter ya",
-            Siddham::SiddhamLetterRa => "siddham letter ra",
-            Siddham::SiddhamLetterLa => "siddham letter la",
-            Siddham::SiddhamLetterVa => "siddham letter va",
-            Siddham::SiddhamLetterSha => "siddham letter sha",
-            Siddham::SiddhamLetterSsa => "siddham letter ssa",
-            Siddham::SiddhamLetterSa => "siddham letter sa",
-            Siddham::SiddhamLetterHa => "siddham letter ha",
-            Siddham::SiddhamVowelSignAa => "siddham vowel sign aa",
-            Siddham::SiddhamVowelSignI => "siddham vowel sign i",
-            Siddham::SiddhamVowelSignIi => "siddham vowel sign ii",
-            Siddham::SiddhamVowelSignU => "siddham vowel sign u",
-            Siddham::SiddhamVowelSignUu => "siddham vowel sign uu",
-            Siddham::SiddhamVowelSignVocalicR => "siddham vowel sign vocalic r",
-            Siddham::SiddhamVowelSignVocalicRr => "siddham vowel sign vocalic rr",
-            Siddham::SiddhamVowelSignE => "siddham vowel sign e",
-            Siddham::SiddhamVowelSignAi => "siddham vowel sign ai",
-            Siddham::SiddhamVowelSignO => "siddham vowel sign o",
-            Siddham::SiddhamVowelSignAu => "siddham vowel sign au",
-            Siddham::SiddhamSignCandrabindu => "siddham sign candrabindu",
-            Siddham::SiddhamSignAnusvara => "siddham sign anusvara",
-            Siddham::SiddhamSignVisarga => "siddham sign visarga",
-            Siddham::SiddhamSignVirama => "siddham sign virama",
-            Siddham::SiddhamSignNukta => "siddham sign nukta",
-            Siddham::SiddhamSignSiddham => "siddham sign siddham",
-            Siddham::SiddhamDanda => "siddham danda",
-            Siddham::SiddhamDoubleDanda => "siddham double danda",
-            Siddham::SiddhamSeparatorDot => "siddham separator dot",
-            Siddham::SiddhamSeparatorBar => "siddham separator bar",
-            Siddham::SiddhamRepetitionMarkDash1 => "siddham repetition mark-1",
-            Siddham::SiddhamRepetitionMarkDash2 => "siddham repetition mark-2",
-            Siddham::SiddhamRepetitionMarkDash3 => "siddham repetition mark-3",
-            Siddham::SiddhamEndOfTextMark => "siddham end of text mark",
-            Siddham::SiddhamSectionMarkWithTridentAndUDashShapedOrnaments => "siddham section mark with trident and u-shaped ornaments",
-            Siddham::SiddhamSectionMarkWithTridentAndDottedCrescents => "siddham section mark with trident and dotted crescents",
-            Siddham::SiddhamSectionMarkWithRaysAndDottedCrescents => "siddham section mark with rays and dotted crescents",
-            Siddham::SiddhamSectionMarkWithRaysAndDottedDoubleCrescents => "siddham section mark with rays and dotted double crescents",
-            Siddham::SiddhamSectionMarkWithRaysAndDottedTripleCrescents => "siddham section mark with rays and dotted triple crescents",
-            Siddham::SiddhamSectionMarkDoubleRing => "siddham section mark double ring",
-            Siddham::SiddhamSectionMarkDoubleRingWithRays => "siddham section mark double ring with rays",
-            Siddham::SiddhamSectionMarkWithDoubleCrescents => "siddham section mark with double crescents",
-            Siddham::SiddhamSectionMarkWithTripleCrescents => "siddham section mark with triple crescents",
-            Siddham::SiddhamSectionMarkWithQuadrupleCrescents => "siddham section mark with quadruple crescents",
-            Siddham::SiddhamSectionMarkWithSeptupleCrescents => "siddham section mark with septuple crescents",
-            Siddham::SiddhamSectionMarkWithCirclesAndRays => "siddham section mark with circles and rays",
-            Siddham::SiddhamSectionMarkWithCirclesAndTwoEnclosures => "siddham section mark with circles and two enclosures",
-            Siddham::SiddhamSectionMarkWithCirclesAndFourEnclosures => "siddham section mark with circles and four enclosures",
-            Siddham::SiddhamLetterThreeDashCircleAlternateI => "siddham letter three-circle alternate i",
-            Siddham::SiddhamLetterTwoDashCircleAlternateI => "siddham letter two-circle alternate i",
-            Siddham::SiddhamLetterTwoDashCircleAlternateIi => "siddham letter two-circle alternate ii",
-            Siddham::SiddhamLetterAlternateU => "siddham letter alternate u",
-            Siddham::SiddhamVowelSignAlternateU => "siddham vowel sign alternate u",
-            Siddham::SiddhamVowelSignAlternateUu => "siddham vowel sign alternate uu",
+            Siddham::LetterA => "siddham letter a",
+            Siddham::LetterAa => "siddham letter aa",
+            Siddham::LetterI => "siddham letter i",
+            Siddham::LetterIi => "siddham letter ii",
+            Siddham::LetterU => "siddham letter u",
+            Siddham::LetterUu => "siddham letter uu",
+            Siddham::LetterVocalicR => "siddham letter vocalic r",
+            Siddham::LetterVocalicRr => "siddham letter vocalic rr",
+            Siddham::LetterVocalicL => "siddham letter vocalic l",
+            Siddham::LetterVocalicLl => "siddham letter vocalic ll",
+            Siddham::LetterE => "siddham letter e",
+            Siddham::LetterAi => "siddham letter ai",
+            Siddham::LetterO => "siddham letter o",
+            Siddham::LetterAu => "siddham letter au",
+            Siddham::LetterKa => "siddham letter ka",
+            Siddham::LetterKha => "siddham letter kha",
+            Siddham::LetterGa => "siddham letter ga",
+            Siddham::LetterGha => "siddham letter gha",
+            Siddham::LetterNga => "siddham letter nga",
+            Siddham::LetterCa => "siddham letter ca",
+            Siddham::LetterCha => "siddham letter cha",
+            Siddham::LetterJa => "siddham letter ja",
+            Siddham::LetterJha => "siddham letter jha",
+            Siddham::LetterNya => "siddham letter nya",
+            Siddham::LetterTta => "siddham letter tta",
+            Siddham::LetterTtha => "siddham letter ttha",
+            Siddham::LetterDda => "siddham letter dda",
+            Siddham::LetterDdha => "siddham letter ddha",
+            Siddham::LetterNna => "siddham letter nna",
+            Siddham::LetterTa => "siddham letter ta",
+            Siddham::LetterTha => "siddham letter tha",
+            Siddham::LetterDa => "siddham letter da",
+            Siddham::LetterDha => "siddham letter dha",
+            Siddham::LetterNa => "siddham letter na",
+            Siddham::LetterPa => "siddham letter pa",
+            Siddham::LetterPha => "siddham letter pha",
+            Siddham::LetterBa => "siddham letter ba",
+            Siddham::LetterBha => "siddham letter bha",
+            Siddham::LetterMa => "siddham letter ma",
+            Siddham::LetterYa => "siddham letter ya",
+            Siddham::LetterRa => "siddham letter ra",
+            Siddham::LetterLa => "siddham letter la",
+            Siddham::LetterVa => "siddham letter va",
+            Siddham::LetterSha => "siddham letter sha",
+            Siddham::LetterSsa => "siddham letter ssa",
+            Siddham::LetterSa => "siddham letter sa",
+            Siddham::LetterHa => "siddham letter ha",
+            Siddham::VowelSignAa => "siddham vowel sign aa",
+            Siddham::VowelSignI => "siddham vowel sign i",
+            Siddham::VowelSignIi => "siddham vowel sign ii",
+            Siddham::VowelSignU => "siddham vowel sign u",
+            Siddham::VowelSignUu => "siddham vowel sign uu",
+            Siddham::VowelSignVocalicR => "siddham vowel sign vocalic r",
+            Siddham::VowelSignVocalicRr => "siddham vowel sign vocalic rr",
+            Siddham::VowelSignE => "siddham vowel sign e",
+            Siddham::VowelSignAi => "siddham vowel sign ai",
+            Siddham::VowelSignO => "siddham vowel sign o",
+            Siddham::VowelSignAu => "siddham vowel sign au",
+            Siddham::SignCandrabindu => "siddham sign candrabindu",
+            Siddham::SignAnusvara => "siddham sign anusvara",
+            Siddham::SignVisarga => "siddham sign visarga",
+            Siddham::SignVirama => "siddham sign virama",
+            Siddham::SignNukta => "siddham sign nukta",
+            Siddham::Sign => "siddham sign siddham",
+            Siddham::Danda => "siddham danda",
+            Siddham::DoubleDanda => "siddham double danda",
+            Siddham::SeparatorDot => "siddham separator dot",
+            Siddham::SeparatorBar => "siddham separator bar",
+            Siddham::RepetitionMarkDash1 => "siddham repetition mark-1",
+            Siddham::RepetitionMarkDash2 => "siddham repetition mark-2",
+            Siddham::RepetitionMarkDash3 => "siddham repetition mark-3",
+            Siddham::EndOfTextMark => "siddham end of text mark",
+            Siddham::SectionMarkWithTridentAndUDashShapedOrnaments => "siddham section mark with trident and u-shaped ornaments",
+            Siddham::SectionMarkWithTridentAndDottedCrescents => "siddham section mark with trident and dotted crescents",
+            Siddham::SectionMarkWithRaysAndDottedCrescents => "siddham section mark with rays and dotted crescents",
+            Siddham::SectionMarkWithRaysAndDottedDoubleCrescents => "siddham section mark with rays and dotted double crescents",
+            Siddham::SectionMarkWithRaysAndDottedTripleCrescents => "siddham section mark with rays and dotted triple crescents",
+            Siddham::SectionMarkDoubleRing => "siddham section mark double ring",
+            Siddham::SectionMarkDoubleRingWithRays => "siddham section mark double ring with rays",
+            Siddham::SectionMarkWithDoubleCrescents => "siddham section mark with double crescents",
+            Siddham::SectionMarkWithTripleCrescents => "siddham section mark with triple crescents",
+            Siddham::SectionMarkWithQuadrupleCrescents => "siddham section mark with quadruple crescents",
+            Siddham::SectionMarkWithSeptupleCrescents => "siddham section mark with septuple crescents",
+            Siddham::SectionMarkWithCirclesAndRays => "siddham section mark with circles and rays",
+            Siddham::SectionMarkWithCirclesAndTwoEnclosures => "siddham section mark with circles and two enclosures",
+            Siddham::SectionMarkWithCirclesAndFourEnclosures => "siddham section mark with circles and four enclosures",
+            Siddham::LetterThreeDashCircleAlternateI => "siddham letter three-circle alternate i",
+            Siddham::LetterTwoDashCircleAlternateI => "siddham letter two-circle alternate i",
+            Siddham::LetterTwoDashCircleAlternateIi => "siddham letter two-circle alternate ii",
+            Siddham::LetterAlternateU => "siddham letter alternate u",
+            Siddham::VowelSignAlternateU => "siddham vowel sign alternate u",
+            Siddham::VowelSignAlternateUu => "siddham vowel sign alternate uu",
         }
     }
 }

@@ -3546,7 +3546,7 @@ impl Iterator for BamumSupplement {
 }
 
 impl BamumSupplement {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
         BamumSupplement::BamumLetterPhaseDashANgkueMfon
     }

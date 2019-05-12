@@ -7,139 +7,139 @@
 /// ᥌ ᥍ ᥎
 pub mod constants {
     /// \u{1900}: 'ᤀ'
-    pub const LIMBU_VOWEL_DASH_CARRIER_LETTER: char = 'ᤀ';
+    pub const VOWEL_DASH_CARRIER_LETTER: char = 'ᤀ';
     /// \u{1901}: 'ᤁ'
-    pub const LIMBU_LETTER_KA: char = 'ᤁ';
+    pub const LETTER_KA: char = 'ᤁ';
     /// \u{1902}: 'ᤂ'
-    pub const LIMBU_LETTER_KHA: char = 'ᤂ';
+    pub const LETTER_KHA: char = 'ᤂ';
     /// \u{1903}: 'ᤃ'
-    pub const LIMBU_LETTER_GA: char = 'ᤃ';
+    pub const LETTER_GA: char = 'ᤃ';
     /// \u{1904}: 'ᤄ'
-    pub const LIMBU_LETTER_GHA: char = 'ᤄ';
+    pub const LETTER_GHA: char = 'ᤄ';
     /// \u{1905}: 'ᤅ'
-    pub const LIMBU_LETTER_NGA: char = 'ᤅ';
+    pub const LETTER_NGA: char = 'ᤅ';
     /// \u{1906}: 'ᤆ'
-    pub const LIMBU_LETTER_CA: char = 'ᤆ';
+    pub const LETTER_CA: char = 'ᤆ';
     /// \u{1907}: 'ᤇ'
-    pub const LIMBU_LETTER_CHA: char = 'ᤇ';
+    pub const LETTER_CHA: char = 'ᤇ';
     /// \u{1908}: 'ᤈ'
-    pub const LIMBU_LETTER_JA: char = 'ᤈ';
+    pub const LETTER_JA: char = 'ᤈ';
     /// \u{1909}: 'ᤉ'
-    pub const LIMBU_LETTER_JHA: char = 'ᤉ';
+    pub const LETTER_JHA: char = 'ᤉ';
     /// \u{190a}: 'ᤊ'
-    pub const LIMBU_LETTER_YAN: char = 'ᤊ';
+    pub const LETTER_YAN: char = 'ᤊ';
     /// \u{190b}: 'ᤋ'
-    pub const LIMBU_LETTER_TA: char = 'ᤋ';
+    pub const LETTER_TA: char = 'ᤋ';
     /// \u{190c}: 'ᤌ'
-    pub const LIMBU_LETTER_THA: char = 'ᤌ';
+    pub const LETTER_THA: char = 'ᤌ';
     /// \u{190d}: 'ᤍ'
-    pub const LIMBU_LETTER_DA: char = 'ᤍ';
+    pub const LETTER_DA: char = 'ᤍ';
     /// \u{190e}: 'ᤎ'
-    pub const LIMBU_LETTER_DHA: char = 'ᤎ';
+    pub const LETTER_DHA: char = 'ᤎ';
     /// \u{190f}: 'ᤏ'
-    pub const LIMBU_LETTER_NA: char = 'ᤏ';
+    pub const LETTER_NA: char = 'ᤏ';
     /// \u{1910}: 'ᤐ'
-    pub const LIMBU_LETTER_PA: char = 'ᤐ';
+    pub const LETTER_PA: char = 'ᤐ';
     /// \u{1911}: 'ᤑ'
-    pub const LIMBU_LETTER_PHA: char = 'ᤑ';
+    pub const LETTER_PHA: char = 'ᤑ';
     /// \u{1912}: 'ᤒ'
-    pub const LIMBU_LETTER_BA: char = 'ᤒ';
+    pub const LETTER_BA: char = 'ᤒ';
     /// \u{1913}: 'ᤓ'
-    pub const LIMBU_LETTER_BHA: char = 'ᤓ';
+    pub const LETTER_BHA: char = 'ᤓ';
     /// \u{1914}: 'ᤔ'
-    pub const LIMBU_LETTER_MA: char = 'ᤔ';
+    pub const LETTER_MA: char = 'ᤔ';
     /// \u{1915}: 'ᤕ'
-    pub const LIMBU_LETTER_YA: char = 'ᤕ';
+    pub const LETTER_YA: char = 'ᤕ';
     /// \u{1916}: 'ᤖ'
-    pub const LIMBU_LETTER_RA: char = 'ᤖ';
+    pub const LETTER_RA: char = 'ᤖ';
     /// \u{1917}: 'ᤗ'
-    pub const LIMBU_LETTER_LA: char = 'ᤗ';
+    pub const LETTER_LA: char = 'ᤗ';
     /// \u{1918}: 'ᤘ'
-    pub const LIMBU_LETTER_WA: char = 'ᤘ';
+    pub const LETTER_WA: char = 'ᤘ';
     /// \u{1919}: 'ᤙ'
-    pub const LIMBU_LETTER_SHA: char = 'ᤙ';
+    pub const LETTER_SHA: char = 'ᤙ';
     /// \u{191a}: 'ᤚ'
-    pub const LIMBU_LETTER_SSA: char = 'ᤚ';
+    pub const LETTER_SSA: char = 'ᤚ';
     /// \u{191b}: 'ᤛ'
-    pub const LIMBU_LETTER_SA: char = 'ᤛ';
+    pub const LETTER_SA: char = 'ᤛ';
     /// \u{191c}: 'ᤜ'
-    pub const LIMBU_LETTER_HA: char = 'ᤜ';
+    pub const LETTER_HA: char = 'ᤜ';
     /// \u{191d}: 'ᤝ'
-    pub const LIMBU_LETTER_GYAN: char = 'ᤝ';
+    pub const LETTER_GYAN: char = 'ᤝ';
     /// \u{191e}: 'ᤞ'
-    pub const LIMBU_LETTER_TRA: char = 'ᤞ';
+    pub const LETTER_TRA: char = 'ᤞ';
     /// \u{1920}: 'ᤠ'
-    pub const LIMBU_VOWEL_SIGN_A: char = 'ᤠ';
+    pub const VOWEL_SIGN_A: char = 'ᤠ';
     /// \u{1921}: 'ᤡ'
-    pub const LIMBU_VOWEL_SIGN_I: char = 'ᤡ';
+    pub const VOWEL_SIGN_I: char = 'ᤡ';
     /// \u{1922}: 'ᤢ'
-    pub const LIMBU_VOWEL_SIGN_U: char = 'ᤢ';
+    pub const VOWEL_SIGN_U: char = 'ᤢ';
     /// \u{1923}: 'ᤣ'
-    pub const LIMBU_VOWEL_SIGN_EE: char = 'ᤣ';
+    pub const VOWEL_SIGN_EE: char = 'ᤣ';
     /// \u{1924}: 'ᤤ'
-    pub const LIMBU_VOWEL_SIGN_AI: char = 'ᤤ';
+    pub const VOWEL_SIGN_AI: char = 'ᤤ';
     /// \u{1925}: 'ᤥ'
-    pub const LIMBU_VOWEL_SIGN_OO: char = 'ᤥ';
+    pub const VOWEL_SIGN_OO: char = 'ᤥ';
     /// \u{1926}: 'ᤦ'
-    pub const LIMBU_VOWEL_SIGN_AU: char = 'ᤦ';
+    pub const VOWEL_SIGN_AU: char = 'ᤦ';
     /// \u{1927}: 'ᤧ'
-    pub const LIMBU_VOWEL_SIGN_E: char = 'ᤧ';
+    pub const VOWEL_SIGN_E: char = 'ᤧ';
     /// \u{1928}: 'ᤨ'
-    pub const LIMBU_VOWEL_SIGN_O: char = 'ᤨ';
+    pub const VOWEL_SIGN_O: char = 'ᤨ';
     /// \u{1929}: 'ᤩ'
-    pub const LIMBU_SUBJOINED_LETTER_YA: char = 'ᤩ';
+    pub const SUBJOINED_LETTER_YA: char = 'ᤩ';
     /// \u{192a}: 'ᤪ'
-    pub const LIMBU_SUBJOINED_LETTER_RA: char = 'ᤪ';
+    pub const SUBJOINED_LETTER_RA: char = 'ᤪ';
     /// \u{192b}: 'ᤫ'
-    pub const LIMBU_SUBJOINED_LETTER_WA: char = 'ᤫ';
+    pub const SUBJOINED_LETTER_WA: char = 'ᤫ';
     /// \u{1930}: 'ᤰ'
-    pub const LIMBU_SMALL_LETTER_KA: char = 'ᤰ';
+    pub const SMALL_LETTER_KA: char = 'ᤰ';
     /// \u{1931}: 'ᤱ'
-    pub const LIMBU_SMALL_LETTER_NGA: char = 'ᤱ';
+    pub const SMALL_LETTER_NGA: char = 'ᤱ';
     /// \u{1932}: 'ᤲ'
-    pub const LIMBU_SMALL_LETTER_ANUSVARA: char = 'ᤲ';
+    pub const SMALL_LETTER_ANUSVARA: char = 'ᤲ';
     /// \u{1933}: 'ᤳ'
-    pub const LIMBU_SMALL_LETTER_TA: char = 'ᤳ';
+    pub const SMALL_LETTER_TA: char = 'ᤳ';
     /// \u{1934}: 'ᤴ'
-    pub const LIMBU_SMALL_LETTER_NA: char = 'ᤴ';
+    pub const SMALL_LETTER_NA: char = 'ᤴ';
     /// \u{1935}: 'ᤵ'
-    pub const LIMBU_SMALL_LETTER_PA: char = 'ᤵ';
+    pub const SMALL_LETTER_PA: char = 'ᤵ';
     /// \u{1936}: 'ᤶ'
-    pub const LIMBU_SMALL_LETTER_MA: char = 'ᤶ';
+    pub const SMALL_LETTER_MA: char = 'ᤶ';
     /// \u{1937}: 'ᤷ'
-    pub const LIMBU_SMALL_LETTER_RA: char = 'ᤷ';
+    pub const SMALL_LETTER_RA: char = 'ᤷ';
     /// \u{1938}: 'ᤸ'
-    pub const LIMBU_SMALL_LETTER_LA: char = 'ᤸ';
+    pub const SMALL_LETTER_LA: char = 'ᤸ';
     /// \u{1939}: '᤹'
-    pub const LIMBU_SIGN_MUKPHRENG: char = '᤹';
+    pub const SIGN_MUKPHRENG: char = '᤹';
     /// \u{193a}: '᤺'
-    pub const LIMBU_SIGN_KEMPHRENG: char = '᤺';
+    pub const SIGN_KEMPHRENG: char = '᤺';
     /// \u{193b}: '᤻'
-    pub const LIMBU_SIGN_SA_DASH_I: char = '᤻';
+    pub const SIGN_SA_DASH_I: char = '᤻';
     /// \u{1940}: '᥀'
-    pub const LIMBU_SIGN_LOO: char = '᥀';
+    pub const SIGN_LOO: char = '᥀';
     /// \u{1944}: '᥄'
-    pub const LIMBU_EXCLAMATION_MARK: char = '᥄';
+    pub const EXCLAMATION_MARK: char = '᥄';
     /// \u{1945}: '᥅'
-    pub const LIMBU_QUESTION_MARK: char = '᥅';
+    pub const QUESTION_MARK: char = '᥅';
     /// \u{1946}: '᥆'
-    pub const LIMBU_DIGIT_ZERO: char = '᥆';
+    pub const DIGIT_ZERO: char = '᥆';
     /// \u{1947}: '᥇'
-    pub const LIMBU_DIGIT_ONE: char = '᥇';
+    pub const DIGIT_ONE: char = '᥇';
     /// \u{1948}: '᥈'
-    pub const LIMBU_DIGIT_TWO: char = '᥈';
+    pub const DIGIT_TWO: char = '᥈';
     /// \u{1949}: '᥉'
-    pub const LIMBU_DIGIT_THREE: char = '᥉';
+    pub const DIGIT_THREE: char = '᥉';
     /// \u{194a}: '᥊'
-    pub const LIMBU_DIGIT_FOUR: char = '᥊';
+    pub const DIGIT_FOUR: char = '᥊';
     /// \u{194b}: '᥋'
-    pub const LIMBU_DIGIT_FIVE: char = '᥋';
+    pub const DIGIT_FIVE: char = '᥋';
     /// \u{194c}: '᥌'
-    pub const LIMBU_DIGIT_SIX: char = '᥌';
+    pub const DIGIT_SIX: char = '᥌';
     /// \u{194d}: '᥍'
-    pub const LIMBU_DIGIT_SEVEN: char = '᥍';
+    pub const DIGIT_SEVEN: char = '᥍';
     /// \u{194e}: '᥎'
-    pub const LIMBU_DIGIT_EIGHT: char = '᥎';
+    pub const DIGIT_EIGHT: char = '᥎';
 }
 
 /// \u{1900} → \u{194f}\
@@ -152,212 +152,212 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Limbu {
     /// \u{1900}: 'ᤀ'
-    LimbuVowelDashCarrierLetter,
+    VowelDashCarrierLetter,
     /// \u{1901}: 'ᤁ'
-    LimbuLetterKa,
+    LetterKa,
     /// \u{1902}: 'ᤂ'
-    LimbuLetterKha,
+    LetterKha,
     /// \u{1903}: 'ᤃ'
-    LimbuLetterGa,
+    LetterGa,
     /// \u{1904}: 'ᤄ'
-    LimbuLetterGha,
+    LetterGha,
     /// \u{1905}: 'ᤅ'
-    LimbuLetterNga,
+    LetterNga,
     /// \u{1906}: 'ᤆ'
-    LimbuLetterCa,
+    LetterCa,
     /// \u{1907}: 'ᤇ'
-    LimbuLetterCha,
+    LetterCha,
     /// \u{1908}: 'ᤈ'
-    LimbuLetterJa,
+    LetterJa,
     /// \u{1909}: 'ᤉ'
-    LimbuLetterJha,
+    LetterJha,
     /// \u{190a}: 'ᤊ'
-    LimbuLetterYan,
+    LetterYan,
     /// \u{190b}: 'ᤋ'
-    LimbuLetterTa,
+    LetterTa,
     /// \u{190c}: 'ᤌ'
-    LimbuLetterTha,
+    LetterTha,
     /// \u{190d}: 'ᤍ'
-    LimbuLetterDa,
+    LetterDa,
     /// \u{190e}: 'ᤎ'
-    LimbuLetterDha,
+    LetterDha,
     /// \u{190f}: 'ᤏ'
-    LimbuLetterNa,
+    LetterNa,
     /// \u{1910}: 'ᤐ'
-    LimbuLetterPa,
+    LetterPa,
     /// \u{1911}: 'ᤑ'
-    LimbuLetterPha,
+    LetterPha,
     /// \u{1912}: 'ᤒ'
-    LimbuLetterBa,
+    LetterBa,
     /// \u{1913}: 'ᤓ'
-    LimbuLetterBha,
+    LetterBha,
     /// \u{1914}: 'ᤔ'
-    LimbuLetterMa,
+    LetterMa,
     /// \u{1915}: 'ᤕ'
-    LimbuLetterYa,
+    LetterYa,
     /// \u{1916}: 'ᤖ'
-    LimbuLetterRa,
+    LetterRa,
     /// \u{1917}: 'ᤗ'
-    LimbuLetterLa,
+    LetterLa,
     /// \u{1918}: 'ᤘ'
-    LimbuLetterWa,
+    LetterWa,
     /// \u{1919}: 'ᤙ'
-    LimbuLetterSha,
+    LetterSha,
     /// \u{191a}: 'ᤚ'
-    LimbuLetterSsa,
+    LetterSsa,
     /// \u{191b}: 'ᤛ'
-    LimbuLetterSa,
+    LetterSa,
     /// \u{191c}: 'ᤜ'
-    LimbuLetterHa,
+    LetterHa,
     /// \u{191d}: 'ᤝ'
-    LimbuLetterGyan,
+    LetterGyan,
     /// \u{191e}: 'ᤞ'
-    LimbuLetterTra,
+    LetterTra,
     /// \u{1920}: 'ᤠ'
-    LimbuVowelSignA,
+    VowelSignA,
     /// \u{1921}: 'ᤡ'
-    LimbuVowelSignI,
+    VowelSignI,
     /// \u{1922}: 'ᤢ'
-    LimbuVowelSignU,
+    VowelSignU,
     /// \u{1923}: 'ᤣ'
-    LimbuVowelSignEe,
+    VowelSignEe,
     /// \u{1924}: 'ᤤ'
-    LimbuVowelSignAi,
+    VowelSignAi,
     /// \u{1925}: 'ᤥ'
-    LimbuVowelSignOo,
+    VowelSignOo,
     /// \u{1926}: 'ᤦ'
-    LimbuVowelSignAu,
+    VowelSignAu,
     /// \u{1927}: 'ᤧ'
-    LimbuVowelSignE,
+    VowelSignE,
     /// \u{1928}: 'ᤨ'
-    LimbuVowelSignO,
+    VowelSignO,
     /// \u{1929}: 'ᤩ'
-    LimbuSubjoinedLetterYa,
+    SubjoinedLetterYa,
     /// \u{192a}: 'ᤪ'
-    LimbuSubjoinedLetterRa,
+    SubjoinedLetterRa,
     /// \u{192b}: 'ᤫ'
-    LimbuSubjoinedLetterWa,
+    SubjoinedLetterWa,
     /// \u{1930}: 'ᤰ'
-    LimbuSmallLetterKa,
+    SmallLetterKa,
     /// \u{1931}: 'ᤱ'
-    LimbuSmallLetterNga,
+    SmallLetterNga,
     /// \u{1932}: 'ᤲ'
-    LimbuSmallLetterAnusvara,
+    SmallLetterAnusvara,
     /// \u{1933}: 'ᤳ'
-    LimbuSmallLetterTa,
+    SmallLetterTa,
     /// \u{1934}: 'ᤴ'
-    LimbuSmallLetterNa,
+    SmallLetterNa,
     /// \u{1935}: 'ᤵ'
-    LimbuSmallLetterPa,
+    SmallLetterPa,
     /// \u{1936}: 'ᤶ'
-    LimbuSmallLetterMa,
+    SmallLetterMa,
     /// \u{1937}: 'ᤷ'
-    LimbuSmallLetterRa,
+    SmallLetterRa,
     /// \u{1938}: 'ᤸ'
-    LimbuSmallLetterLa,
+    SmallLetterLa,
     /// \u{1939}: '᤹'
-    LimbuSignMukphreng,
+    SignMukphreng,
     /// \u{193a}: '᤺'
-    LimbuSignKemphreng,
+    SignKemphreng,
     /// \u{193b}: '᤻'
-    LimbuSignSaDashI,
+    SignSaDashI,
     /// \u{1940}: '᥀'
-    LimbuSignLoo,
+    SignLoo,
     /// \u{1944}: '᥄'
-    LimbuExclamationMark,
+    ExclamationMark,
     /// \u{1945}: '᥅'
-    LimbuQuestionMark,
+    QuestionMark,
     /// \u{1946}: '᥆'
-    LimbuDigitZero,
+    DigitZero,
     /// \u{1947}: '᥇'
-    LimbuDigitOne,
+    DigitOne,
     /// \u{1948}: '᥈'
-    LimbuDigitTwo,
+    DigitTwo,
     /// \u{1949}: '᥉'
-    LimbuDigitThree,
+    DigitThree,
     /// \u{194a}: '᥊'
-    LimbuDigitFour,
+    DigitFour,
     /// \u{194b}: '᥋'
-    LimbuDigitFive,
+    DigitFive,
     /// \u{194c}: '᥌'
-    LimbuDigitSix,
+    DigitSix,
     /// \u{194d}: '᥍'
-    LimbuDigitSeven,
+    DigitSeven,
     /// \u{194e}: '᥎'
-    LimbuDigitEight,
+    DigitEight,
 }
 
 impl Into<char> for Limbu {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Limbu::LimbuVowelDashCarrierLetter => LIMBU_VOWEL_DASH_CARRIER_LETTER,
-            Limbu::LimbuLetterKa => LIMBU_LETTER_KA,
-            Limbu::LimbuLetterKha => LIMBU_LETTER_KHA,
-            Limbu::LimbuLetterGa => LIMBU_LETTER_GA,
-            Limbu::LimbuLetterGha => LIMBU_LETTER_GHA,
-            Limbu::LimbuLetterNga => LIMBU_LETTER_NGA,
-            Limbu::LimbuLetterCa => LIMBU_LETTER_CA,
-            Limbu::LimbuLetterCha => LIMBU_LETTER_CHA,
-            Limbu::LimbuLetterJa => LIMBU_LETTER_JA,
-            Limbu::LimbuLetterJha => LIMBU_LETTER_JHA,
-            Limbu::LimbuLetterYan => LIMBU_LETTER_YAN,
-            Limbu::LimbuLetterTa => LIMBU_LETTER_TA,
-            Limbu::LimbuLetterTha => LIMBU_LETTER_THA,
-            Limbu::LimbuLetterDa => LIMBU_LETTER_DA,
-            Limbu::LimbuLetterDha => LIMBU_LETTER_DHA,
-            Limbu::LimbuLetterNa => LIMBU_LETTER_NA,
-            Limbu::LimbuLetterPa => LIMBU_LETTER_PA,
-            Limbu::LimbuLetterPha => LIMBU_LETTER_PHA,
-            Limbu::LimbuLetterBa => LIMBU_LETTER_BA,
-            Limbu::LimbuLetterBha => LIMBU_LETTER_BHA,
-            Limbu::LimbuLetterMa => LIMBU_LETTER_MA,
-            Limbu::LimbuLetterYa => LIMBU_LETTER_YA,
-            Limbu::LimbuLetterRa => LIMBU_LETTER_RA,
-            Limbu::LimbuLetterLa => LIMBU_LETTER_LA,
-            Limbu::LimbuLetterWa => LIMBU_LETTER_WA,
-            Limbu::LimbuLetterSha => LIMBU_LETTER_SHA,
-            Limbu::LimbuLetterSsa => LIMBU_LETTER_SSA,
-            Limbu::LimbuLetterSa => LIMBU_LETTER_SA,
-            Limbu::LimbuLetterHa => LIMBU_LETTER_HA,
-            Limbu::LimbuLetterGyan => LIMBU_LETTER_GYAN,
-            Limbu::LimbuLetterTra => LIMBU_LETTER_TRA,
-            Limbu::LimbuVowelSignA => LIMBU_VOWEL_SIGN_A,
-            Limbu::LimbuVowelSignI => LIMBU_VOWEL_SIGN_I,
-            Limbu::LimbuVowelSignU => LIMBU_VOWEL_SIGN_U,
-            Limbu::LimbuVowelSignEe => LIMBU_VOWEL_SIGN_EE,
-            Limbu::LimbuVowelSignAi => LIMBU_VOWEL_SIGN_AI,
-            Limbu::LimbuVowelSignOo => LIMBU_VOWEL_SIGN_OO,
-            Limbu::LimbuVowelSignAu => LIMBU_VOWEL_SIGN_AU,
-            Limbu::LimbuVowelSignE => LIMBU_VOWEL_SIGN_E,
-            Limbu::LimbuVowelSignO => LIMBU_VOWEL_SIGN_O,
-            Limbu::LimbuSubjoinedLetterYa => LIMBU_SUBJOINED_LETTER_YA,
-            Limbu::LimbuSubjoinedLetterRa => LIMBU_SUBJOINED_LETTER_RA,
-            Limbu::LimbuSubjoinedLetterWa => LIMBU_SUBJOINED_LETTER_WA,
-            Limbu::LimbuSmallLetterKa => LIMBU_SMALL_LETTER_KA,
-            Limbu::LimbuSmallLetterNga => LIMBU_SMALL_LETTER_NGA,
-            Limbu::LimbuSmallLetterAnusvara => LIMBU_SMALL_LETTER_ANUSVARA,
-            Limbu::LimbuSmallLetterTa => LIMBU_SMALL_LETTER_TA,
-            Limbu::LimbuSmallLetterNa => LIMBU_SMALL_LETTER_NA,
-            Limbu::LimbuSmallLetterPa => LIMBU_SMALL_LETTER_PA,
-            Limbu::LimbuSmallLetterMa => LIMBU_SMALL_LETTER_MA,
-            Limbu::LimbuSmallLetterRa => LIMBU_SMALL_LETTER_RA,
-            Limbu::LimbuSmallLetterLa => LIMBU_SMALL_LETTER_LA,
-            Limbu::LimbuSignMukphreng => LIMBU_SIGN_MUKPHRENG,
-            Limbu::LimbuSignKemphreng => LIMBU_SIGN_KEMPHRENG,
-            Limbu::LimbuSignSaDashI => LIMBU_SIGN_SA_DASH_I,
-            Limbu::LimbuSignLoo => LIMBU_SIGN_LOO,
-            Limbu::LimbuExclamationMark => LIMBU_EXCLAMATION_MARK,
-            Limbu::LimbuQuestionMark => LIMBU_QUESTION_MARK,
-            Limbu::LimbuDigitZero => LIMBU_DIGIT_ZERO,
-            Limbu::LimbuDigitOne => LIMBU_DIGIT_ONE,
-            Limbu::LimbuDigitTwo => LIMBU_DIGIT_TWO,
-            Limbu::LimbuDigitThree => LIMBU_DIGIT_THREE,
-            Limbu::LimbuDigitFour => LIMBU_DIGIT_FOUR,
-            Limbu::LimbuDigitFive => LIMBU_DIGIT_FIVE,
-            Limbu::LimbuDigitSix => LIMBU_DIGIT_SIX,
-            Limbu::LimbuDigitSeven => LIMBU_DIGIT_SEVEN,
-            Limbu::LimbuDigitEight => LIMBU_DIGIT_EIGHT,
+            Limbu::VowelDashCarrierLetter => VOWEL_DASH_CARRIER_LETTER,
+            Limbu::LetterKa => LETTER_KA,
+            Limbu::LetterKha => LETTER_KHA,
+            Limbu::LetterGa => LETTER_GA,
+            Limbu::LetterGha => LETTER_GHA,
+            Limbu::LetterNga => LETTER_NGA,
+            Limbu::LetterCa => LETTER_CA,
+            Limbu::LetterCha => LETTER_CHA,
+            Limbu::LetterJa => LETTER_JA,
+            Limbu::LetterJha => LETTER_JHA,
+            Limbu::LetterYan => LETTER_YAN,
+            Limbu::LetterTa => LETTER_TA,
+            Limbu::LetterTha => LETTER_THA,
+            Limbu::LetterDa => LETTER_DA,
+            Limbu::LetterDha => LETTER_DHA,
+            Limbu::LetterNa => LETTER_NA,
+            Limbu::LetterPa => LETTER_PA,
+            Limbu::LetterPha => LETTER_PHA,
+            Limbu::LetterBa => LETTER_BA,
+            Limbu::LetterBha => LETTER_BHA,
+            Limbu::LetterMa => LETTER_MA,
+            Limbu::LetterYa => LETTER_YA,
+            Limbu::LetterRa => LETTER_RA,
+            Limbu::LetterLa => LETTER_LA,
+            Limbu::LetterWa => LETTER_WA,
+            Limbu::LetterSha => LETTER_SHA,
+            Limbu::LetterSsa => LETTER_SSA,
+            Limbu::LetterSa => LETTER_SA,
+            Limbu::LetterHa => LETTER_HA,
+            Limbu::LetterGyan => LETTER_GYAN,
+            Limbu::LetterTra => LETTER_TRA,
+            Limbu::VowelSignA => VOWEL_SIGN_A,
+            Limbu::VowelSignI => VOWEL_SIGN_I,
+            Limbu::VowelSignU => VOWEL_SIGN_U,
+            Limbu::VowelSignEe => VOWEL_SIGN_EE,
+            Limbu::VowelSignAi => VOWEL_SIGN_AI,
+            Limbu::VowelSignOo => VOWEL_SIGN_OO,
+            Limbu::VowelSignAu => VOWEL_SIGN_AU,
+            Limbu::VowelSignE => VOWEL_SIGN_E,
+            Limbu::VowelSignO => VOWEL_SIGN_O,
+            Limbu::SubjoinedLetterYa => SUBJOINED_LETTER_YA,
+            Limbu::SubjoinedLetterRa => SUBJOINED_LETTER_RA,
+            Limbu::SubjoinedLetterWa => SUBJOINED_LETTER_WA,
+            Limbu::SmallLetterKa => SMALL_LETTER_KA,
+            Limbu::SmallLetterNga => SMALL_LETTER_NGA,
+            Limbu::SmallLetterAnusvara => SMALL_LETTER_ANUSVARA,
+            Limbu::SmallLetterTa => SMALL_LETTER_TA,
+            Limbu::SmallLetterNa => SMALL_LETTER_NA,
+            Limbu::SmallLetterPa => SMALL_LETTER_PA,
+            Limbu::SmallLetterMa => SMALL_LETTER_MA,
+            Limbu::SmallLetterRa => SMALL_LETTER_RA,
+            Limbu::SmallLetterLa => SMALL_LETTER_LA,
+            Limbu::SignMukphreng => SIGN_MUKPHRENG,
+            Limbu::SignKemphreng => SIGN_KEMPHRENG,
+            Limbu::SignSaDashI => SIGN_SA_DASH_I,
+            Limbu::SignLoo => SIGN_LOO,
+            Limbu::ExclamationMark => EXCLAMATION_MARK,
+            Limbu::QuestionMark => QUESTION_MARK,
+            Limbu::DigitZero => DIGIT_ZERO,
+            Limbu::DigitOne => DIGIT_ONE,
+            Limbu::DigitTwo => DIGIT_TWO,
+            Limbu::DigitThree => DIGIT_THREE,
+            Limbu::DigitFour => DIGIT_FOUR,
+            Limbu::DigitFive => DIGIT_FIVE,
+            Limbu::DigitSix => DIGIT_SIX,
+            Limbu::DigitSeven => DIGIT_SEVEN,
+            Limbu::DigitEight => DIGIT_EIGHT,
         }
     }
 }
@@ -367,73 +367,73 @@ impl std::convert::TryFrom<char> for Limbu {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            LIMBU_VOWEL_DASH_CARRIER_LETTER => Ok(Limbu::LimbuVowelDashCarrierLetter),
-            LIMBU_LETTER_KA => Ok(Limbu::LimbuLetterKa),
-            LIMBU_LETTER_KHA => Ok(Limbu::LimbuLetterKha),
-            LIMBU_LETTER_GA => Ok(Limbu::LimbuLetterGa),
-            LIMBU_LETTER_GHA => Ok(Limbu::LimbuLetterGha),
-            LIMBU_LETTER_NGA => Ok(Limbu::LimbuLetterNga),
-            LIMBU_LETTER_CA => Ok(Limbu::LimbuLetterCa),
-            LIMBU_LETTER_CHA => Ok(Limbu::LimbuLetterCha),
-            LIMBU_LETTER_JA => Ok(Limbu::LimbuLetterJa),
-            LIMBU_LETTER_JHA => Ok(Limbu::LimbuLetterJha),
-            LIMBU_LETTER_YAN => Ok(Limbu::LimbuLetterYan),
-            LIMBU_LETTER_TA => Ok(Limbu::LimbuLetterTa),
-            LIMBU_LETTER_THA => Ok(Limbu::LimbuLetterTha),
-            LIMBU_LETTER_DA => Ok(Limbu::LimbuLetterDa),
-            LIMBU_LETTER_DHA => Ok(Limbu::LimbuLetterDha),
-            LIMBU_LETTER_NA => Ok(Limbu::LimbuLetterNa),
-            LIMBU_LETTER_PA => Ok(Limbu::LimbuLetterPa),
-            LIMBU_LETTER_PHA => Ok(Limbu::LimbuLetterPha),
-            LIMBU_LETTER_BA => Ok(Limbu::LimbuLetterBa),
-            LIMBU_LETTER_BHA => Ok(Limbu::LimbuLetterBha),
-            LIMBU_LETTER_MA => Ok(Limbu::LimbuLetterMa),
-            LIMBU_LETTER_YA => Ok(Limbu::LimbuLetterYa),
-            LIMBU_LETTER_RA => Ok(Limbu::LimbuLetterRa),
-            LIMBU_LETTER_LA => Ok(Limbu::LimbuLetterLa),
-            LIMBU_LETTER_WA => Ok(Limbu::LimbuLetterWa),
-            LIMBU_LETTER_SHA => Ok(Limbu::LimbuLetterSha),
-            LIMBU_LETTER_SSA => Ok(Limbu::LimbuLetterSsa),
-            LIMBU_LETTER_SA => Ok(Limbu::LimbuLetterSa),
-            LIMBU_LETTER_HA => Ok(Limbu::LimbuLetterHa),
-            LIMBU_LETTER_GYAN => Ok(Limbu::LimbuLetterGyan),
-            LIMBU_LETTER_TRA => Ok(Limbu::LimbuLetterTra),
-            LIMBU_VOWEL_SIGN_A => Ok(Limbu::LimbuVowelSignA),
-            LIMBU_VOWEL_SIGN_I => Ok(Limbu::LimbuVowelSignI),
-            LIMBU_VOWEL_SIGN_U => Ok(Limbu::LimbuVowelSignU),
-            LIMBU_VOWEL_SIGN_EE => Ok(Limbu::LimbuVowelSignEe),
-            LIMBU_VOWEL_SIGN_AI => Ok(Limbu::LimbuVowelSignAi),
-            LIMBU_VOWEL_SIGN_OO => Ok(Limbu::LimbuVowelSignOo),
-            LIMBU_VOWEL_SIGN_AU => Ok(Limbu::LimbuVowelSignAu),
-            LIMBU_VOWEL_SIGN_E => Ok(Limbu::LimbuVowelSignE),
-            LIMBU_VOWEL_SIGN_O => Ok(Limbu::LimbuVowelSignO),
-            LIMBU_SUBJOINED_LETTER_YA => Ok(Limbu::LimbuSubjoinedLetterYa),
-            LIMBU_SUBJOINED_LETTER_RA => Ok(Limbu::LimbuSubjoinedLetterRa),
-            LIMBU_SUBJOINED_LETTER_WA => Ok(Limbu::LimbuSubjoinedLetterWa),
-            LIMBU_SMALL_LETTER_KA => Ok(Limbu::LimbuSmallLetterKa),
-            LIMBU_SMALL_LETTER_NGA => Ok(Limbu::LimbuSmallLetterNga),
-            LIMBU_SMALL_LETTER_ANUSVARA => Ok(Limbu::LimbuSmallLetterAnusvara),
-            LIMBU_SMALL_LETTER_TA => Ok(Limbu::LimbuSmallLetterTa),
-            LIMBU_SMALL_LETTER_NA => Ok(Limbu::LimbuSmallLetterNa),
-            LIMBU_SMALL_LETTER_PA => Ok(Limbu::LimbuSmallLetterPa),
-            LIMBU_SMALL_LETTER_MA => Ok(Limbu::LimbuSmallLetterMa),
-            LIMBU_SMALL_LETTER_RA => Ok(Limbu::LimbuSmallLetterRa),
-            LIMBU_SMALL_LETTER_LA => Ok(Limbu::LimbuSmallLetterLa),
-            LIMBU_SIGN_MUKPHRENG => Ok(Limbu::LimbuSignMukphreng),
-            LIMBU_SIGN_KEMPHRENG => Ok(Limbu::LimbuSignKemphreng),
-            LIMBU_SIGN_SA_DASH_I => Ok(Limbu::LimbuSignSaDashI),
-            LIMBU_SIGN_LOO => Ok(Limbu::LimbuSignLoo),
-            LIMBU_EXCLAMATION_MARK => Ok(Limbu::LimbuExclamationMark),
-            LIMBU_QUESTION_MARK => Ok(Limbu::LimbuQuestionMark),
-            LIMBU_DIGIT_ZERO => Ok(Limbu::LimbuDigitZero),
-            LIMBU_DIGIT_ONE => Ok(Limbu::LimbuDigitOne),
-            LIMBU_DIGIT_TWO => Ok(Limbu::LimbuDigitTwo),
-            LIMBU_DIGIT_THREE => Ok(Limbu::LimbuDigitThree),
-            LIMBU_DIGIT_FOUR => Ok(Limbu::LimbuDigitFour),
-            LIMBU_DIGIT_FIVE => Ok(Limbu::LimbuDigitFive),
-            LIMBU_DIGIT_SIX => Ok(Limbu::LimbuDigitSix),
-            LIMBU_DIGIT_SEVEN => Ok(Limbu::LimbuDigitSeven),
-            LIMBU_DIGIT_EIGHT => Ok(Limbu::LimbuDigitEight),
+            VOWEL_DASH_CARRIER_LETTER => Ok(Limbu::VowelDashCarrierLetter),
+            LETTER_KA => Ok(Limbu::LetterKa),
+            LETTER_KHA => Ok(Limbu::LetterKha),
+            LETTER_GA => Ok(Limbu::LetterGa),
+            LETTER_GHA => Ok(Limbu::LetterGha),
+            LETTER_NGA => Ok(Limbu::LetterNga),
+            LETTER_CA => Ok(Limbu::LetterCa),
+            LETTER_CHA => Ok(Limbu::LetterCha),
+            LETTER_JA => Ok(Limbu::LetterJa),
+            LETTER_JHA => Ok(Limbu::LetterJha),
+            LETTER_YAN => Ok(Limbu::LetterYan),
+            LETTER_TA => Ok(Limbu::LetterTa),
+            LETTER_THA => Ok(Limbu::LetterTha),
+            LETTER_DA => Ok(Limbu::LetterDa),
+            LETTER_DHA => Ok(Limbu::LetterDha),
+            LETTER_NA => Ok(Limbu::LetterNa),
+            LETTER_PA => Ok(Limbu::LetterPa),
+            LETTER_PHA => Ok(Limbu::LetterPha),
+            LETTER_BA => Ok(Limbu::LetterBa),
+            LETTER_BHA => Ok(Limbu::LetterBha),
+            LETTER_MA => Ok(Limbu::LetterMa),
+            LETTER_YA => Ok(Limbu::LetterYa),
+            LETTER_RA => Ok(Limbu::LetterRa),
+            LETTER_LA => Ok(Limbu::LetterLa),
+            LETTER_WA => Ok(Limbu::LetterWa),
+            LETTER_SHA => Ok(Limbu::LetterSha),
+            LETTER_SSA => Ok(Limbu::LetterSsa),
+            LETTER_SA => Ok(Limbu::LetterSa),
+            LETTER_HA => Ok(Limbu::LetterHa),
+            LETTER_GYAN => Ok(Limbu::LetterGyan),
+            LETTER_TRA => Ok(Limbu::LetterTra),
+            VOWEL_SIGN_A => Ok(Limbu::VowelSignA),
+            VOWEL_SIGN_I => Ok(Limbu::VowelSignI),
+            VOWEL_SIGN_U => Ok(Limbu::VowelSignU),
+            VOWEL_SIGN_EE => Ok(Limbu::VowelSignEe),
+            VOWEL_SIGN_AI => Ok(Limbu::VowelSignAi),
+            VOWEL_SIGN_OO => Ok(Limbu::VowelSignOo),
+            VOWEL_SIGN_AU => Ok(Limbu::VowelSignAu),
+            VOWEL_SIGN_E => Ok(Limbu::VowelSignE),
+            VOWEL_SIGN_O => Ok(Limbu::VowelSignO),
+            SUBJOINED_LETTER_YA => Ok(Limbu::SubjoinedLetterYa),
+            SUBJOINED_LETTER_RA => Ok(Limbu::SubjoinedLetterRa),
+            SUBJOINED_LETTER_WA => Ok(Limbu::SubjoinedLetterWa),
+            SMALL_LETTER_KA => Ok(Limbu::SmallLetterKa),
+            SMALL_LETTER_NGA => Ok(Limbu::SmallLetterNga),
+            SMALL_LETTER_ANUSVARA => Ok(Limbu::SmallLetterAnusvara),
+            SMALL_LETTER_TA => Ok(Limbu::SmallLetterTa),
+            SMALL_LETTER_NA => Ok(Limbu::SmallLetterNa),
+            SMALL_LETTER_PA => Ok(Limbu::SmallLetterPa),
+            SMALL_LETTER_MA => Ok(Limbu::SmallLetterMa),
+            SMALL_LETTER_RA => Ok(Limbu::SmallLetterRa),
+            SMALL_LETTER_LA => Ok(Limbu::SmallLetterLa),
+            SIGN_MUKPHRENG => Ok(Limbu::SignMukphreng),
+            SIGN_KEMPHRENG => Ok(Limbu::SignKemphreng),
+            SIGN_SA_DASH_I => Ok(Limbu::SignSaDashI),
+            SIGN_LOO => Ok(Limbu::SignLoo),
+            EXCLAMATION_MARK => Ok(Limbu::ExclamationMark),
+            QUESTION_MARK => Ok(Limbu::QuestionMark),
+            DIGIT_ZERO => Ok(Limbu::DigitZero),
+            DIGIT_ONE => Ok(Limbu::DigitOne),
+            DIGIT_TWO => Ok(Limbu::DigitTwo),
+            DIGIT_THREE => Ok(Limbu::DigitThree),
+            DIGIT_FOUR => Ok(Limbu::DigitFour),
+            DIGIT_FIVE => Ok(Limbu::DigitFive),
+            DIGIT_SIX => Ok(Limbu::DigitSix),
+            DIGIT_SEVEN => Ok(Limbu::DigitSeven),
+            DIGIT_EIGHT => Ok(Limbu::DigitEight),
             _ => Err(()),
         }
     }
@@ -472,81 +472,81 @@ impl Iterator for Limbu {
 }
 
 impl Limbu {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Limbu::LimbuVowelDashCarrierLetter
+        Limbu::VowelDashCarrierLetter
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Limbu::LimbuVowelDashCarrierLetter => "limbu vowel-carrier letter",
-            Limbu::LimbuLetterKa => "limbu letter ka",
-            Limbu::LimbuLetterKha => "limbu letter kha",
-            Limbu::LimbuLetterGa => "limbu letter ga",
-            Limbu::LimbuLetterGha => "limbu letter gha",
-            Limbu::LimbuLetterNga => "limbu letter nga",
-            Limbu::LimbuLetterCa => "limbu letter ca",
-            Limbu::LimbuLetterCha => "limbu letter cha",
-            Limbu::LimbuLetterJa => "limbu letter ja",
-            Limbu::LimbuLetterJha => "limbu letter jha",
-            Limbu::LimbuLetterYan => "limbu letter yan",
-            Limbu::LimbuLetterTa => "limbu letter ta",
-            Limbu::LimbuLetterTha => "limbu letter tha",
-            Limbu::LimbuLetterDa => "limbu letter da",
-            Limbu::LimbuLetterDha => "limbu letter dha",
-            Limbu::LimbuLetterNa => "limbu letter na",
-            Limbu::LimbuLetterPa => "limbu letter pa",
-            Limbu::LimbuLetterPha => "limbu letter pha",
-            Limbu::LimbuLetterBa => "limbu letter ba",
-            Limbu::LimbuLetterBha => "limbu letter bha",
-            Limbu::LimbuLetterMa => "limbu letter ma",
-            Limbu::LimbuLetterYa => "limbu letter ya",
-            Limbu::LimbuLetterRa => "limbu letter ra",
-            Limbu::LimbuLetterLa => "limbu letter la",
-            Limbu::LimbuLetterWa => "limbu letter wa",
-            Limbu::LimbuLetterSha => "limbu letter sha",
-            Limbu::LimbuLetterSsa => "limbu letter ssa",
-            Limbu::LimbuLetterSa => "limbu letter sa",
-            Limbu::LimbuLetterHa => "limbu letter ha",
-            Limbu::LimbuLetterGyan => "limbu letter gyan",
-            Limbu::LimbuLetterTra => "limbu letter tra",
-            Limbu::LimbuVowelSignA => "limbu vowel sign a",
-            Limbu::LimbuVowelSignI => "limbu vowel sign i",
-            Limbu::LimbuVowelSignU => "limbu vowel sign u",
-            Limbu::LimbuVowelSignEe => "limbu vowel sign ee",
-            Limbu::LimbuVowelSignAi => "limbu vowel sign ai",
-            Limbu::LimbuVowelSignOo => "limbu vowel sign oo",
-            Limbu::LimbuVowelSignAu => "limbu vowel sign au",
-            Limbu::LimbuVowelSignE => "limbu vowel sign e",
-            Limbu::LimbuVowelSignO => "limbu vowel sign o",
-            Limbu::LimbuSubjoinedLetterYa => "limbu subjoined letter ya",
-            Limbu::LimbuSubjoinedLetterRa => "limbu subjoined letter ra",
-            Limbu::LimbuSubjoinedLetterWa => "limbu subjoined letter wa",
-            Limbu::LimbuSmallLetterKa => "limbu small letter ka",
-            Limbu::LimbuSmallLetterNga => "limbu small letter nga",
-            Limbu::LimbuSmallLetterAnusvara => "limbu small letter anusvara",
-            Limbu::LimbuSmallLetterTa => "limbu small letter ta",
-            Limbu::LimbuSmallLetterNa => "limbu small letter na",
-            Limbu::LimbuSmallLetterPa => "limbu small letter pa",
-            Limbu::LimbuSmallLetterMa => "limbu small letter ma",
-            Limbu::LimbuSmallLetterRa => "limbu small letter ra",
-            Limbu::LimbuSmallLetterLa => "limbu small letter la",
-            Limbu::LimbuSignMukphreng => "limbu sign mukphreng",
-            Limbu::LimbuSignKemphreng => "limbu sign kemphreng",
-            Limbu::LimbuSignSaDashI => "limbu sign sa-i",
-            Limbu::LimbuSignLoo => "limbu sign loo",
-            Limbu::LimbuExclamationMark => "limbu exclamation mark",
-            Limbu::LimbuQuestionMark => "limbu question mark",
-            Limbu::LimbuDigitZero => "limbu digit zero",
-            Limbu::LimbuDigitOne => "limbu digit one",
-            Limbu::LimbuDigitTwo => "limbu digit two",
-            Limbu::LimbuDigitThree => "limbu digit three",
-            Limbu::LimbuDigitFour => "limbu digit four",
-            Limbu::LimbuDigitFive => "limbu digit five",
-            Limbu::LimbuDigitSix => "limbu digit six",
-            Limbu::LimbuDigitSeven => "limbu digit seven",
-            Limbu::LimbuDigitEight => "limbu digit eight",
+            Limbu::VowelDashCarrierLetter => "limbu vowel-carrier letter",
+            Limbu::LetterKa => "limbu letter ka",
+            Limbu::LetterKha => "limbu letter kha",
+            Limbu::LetterGa => "limbu letter ga",
+            Limbu::LetterGha => "limbu letter gha",
+            Limbu::LetterNga => "limbu letter nga",
+            Limbu::LetterCa => "limbu letter ca",
+            Limbu::LetterCha => "limbu letter cha",
+            Limbu::LetterJa => "limbu letter ja",
+            Limbu::LetterJha => "limbu letter jha",
+            Limbu::LetterYan => "limbu letter yan",
+            Limbu::LetterTa => "limbu letter ta",
+            Limbu::LetterTha => "limbu letter tha",
+            Limbu::LetterDa => "limbu letter da",
+            Limbu::LetterDha => "limbu letter dha",
+            Limbu::LetterNa => "limbu letter na",
+            Limbu::LetterPa => "limbu letter pa",
+            Limbu::LetterPha => "limbu letter pha",
+            Limbu::LetterBa => "limbu letter ba",
+            Limbu::LetterBha => "limbu letter bha",
+            Limbu::LetterMa => "limbu letter ma",
+            Limbu::LetterYa => "limbu letter ya",
+            Limbu::LetterRa => "limbu letter ra",
+            Limbu::LetterLa => "limbu letter la",
+            Limbu::LetterWa => "limbu letter wa",
+            Limbu::LetterSha => "limbu letter sha",
+            Limbu::LetterSsa => "limbu letter ssa",
+            Limbu::LetterSa => "limbu letter sa",
+            Limbu::LetterHa => "limbu letter ha",
+            Limbu::LetterGyan => "limbu letter gyan",
+            Limbu::LetterTra => "limbu letter tra",
+            Limbu::VowelSignA => "limbu vowel sign a",
+            Limbu::VowelSignI => "limbu vowel sign i",
+            Limbu::VowelSignU => "limbu vowel sign u",
+            Limbu::VowelSignEe => "limbu vowel sign ee",
+            Limbu::VowelSignAi => "limbu vowel sign ai",
+            Limbu::VowelSignOo => "limbu vowel sign oo",
+            Limbu::VowelSignAu => "limbu vowel sign au",
+            Limbu::VowelSignE => "limbu vowel sign e",
+            Limbu::VowelSignO => "limbu vowel sign o",
+            Limbu::SubjoinedLetterYa => "limbu subjoined letter ya",
+            Limbu::SubjoinedLetterRa => "limbu subjoined letter ra",
+            Limbu::SubjoinedLetterWa => "limbu subjoined letter wa",
+            Limbu::SmallLetterKa => "limbu small letter ka",
+            Limbu::SmallLetterNga => "limbu small letter nga",
+            Limbu::SmallLetterAnusvara => "limbu small letter anusvara",
+            Limbu::SmallLetterTa => "limbu small letter ta",
+            Limbu::SmallLetterNa => "limbu small letter na",
+            Limbu::SmallLetterPa => "limbu small letter pa",
+            Limbu::SmallLetterMa => "limbu small letter ma",
+            Limbu::SmallLetterRa => "limbu small letter ra",
+            Limbu::SmallLetterLa => "limbu small letter la",
+            Limbu::SignMukphreng => "limbu sign mukphreng",
+            Limbu::SignKemphreng => "limbu sign kemphreng",
+            Limbu::SignSaDashI => "limbu sign sa-i",
+            Limbu::SignLoo => "limbu sign loo",
+            Limbu::ExclamationMark => "limbu exclamation mark",
+            Limbu::QuestionMark => "limbu question mark",
+            Limbu::DigitZero => "limbu digit zero",
+            Limbu::DigitOne => "limbu digit one",
+            Limbu::DigitTwo => "limbu digit two",
+            Limbu::DigitThree => "limbu digit three",
+            Limbu::DigitFour => "limbu digit four",
+            Limbu::DigitFive => "limbu digit five",
+            Limbu::DigitSix => "limbu digit six",
+            Limbu::DigitSeven => "limbu digit seven",
+            Limbu::DigitEight => "limbu digit eight",
         }
     }
 }

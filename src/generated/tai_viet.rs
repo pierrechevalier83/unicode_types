@@ -7,147 +7,147 @@
 /// ꫀ ꫁ ꫂ ꫛ ꫜ ꫝ ꫞
 pub mod constants {
     /// \u{aa80}: 'ꪀ'
-    pub const TAI_VIET_LETTER_LOW_KO: char = 'ꪀ';
+    pub const LETTER_LOW_KO: char = 'ꪀ';
     /// \u{aa81}: 'ꪁ'
-    pub const TAI_VIET_LETTER_HIGH_KO: char = 'ꪁ';
+    pub const LETTER_HIGH_KO: char = 'ꪁ';
     /// \u{aa82}: 'ꪂ'
-    pub const TAI_VIET_LETTER_LOW_KHO: char = 'ꪂ';
+    pub const LETTER_LOW_KHO: char = 'ꪂ';
     /// \u{aa83}: 'ꪃ'
-    pub const TAI_VIET_LETTER_HIGH_KHO: char = 'ꪃ';
+    pub const LETTER_HIGH_KHO: char = 'ꪃ';
     /// \u{aa84}: 'ꪄ'
-    pub const TAI_VIET_LETTER_LOW_KHHO: char = 'ꪄ';
+    pub const LETTER_LOW_KHHO: char = 'ꪄ';
     /// \u{aa85}: 'ꪅ'
-    pub const TAI_VIET_LETTER_HIGH_KHHO: char = 'ꪅ';
+    pub const LETTER_HIGH_KHHO: char = 'ꪅ';
     /// \u{aa86}: 'ꪆ'
-    pub const TAI_VIET_LETTER_LOW_GO: char = 'ꪆ';
+    pub const LETTER_LOW_GO: char = 'ꪆ';
     /// \u{aa87}: 'ꪇ'
-    pub const TAI_VIET_LETTER_HIGH_GO: char = 'ꪇ';
+    pub const LETTER_HIGH_GO: char = 'ꪇ';
     /// \u{aa88}: 'ꪈ'
-    pub const TAI_VIET_LETTER_LOW_NGO: char = 'ꪈ';
+    pub const LETTER_LOW_NGO: char = 'ꪈ';
     /// \u{aa89}: 'ꪉ'
-    pub const TAI_VIET_LETTER_HIGH_NGO: char = 'ꪉ';
+    pub const LETTER_HIGH_NGO: char = 'ꪉ';
     /// \u{aa8a}: 'ꪊ'
-    pub const TAI_VIET_LETTER_LOW_CO: char = 'ꪊ';
+    pub const LETTER_LOW_CO: char = 'ꪊ';
     /// \u{aa8b}: 'ꪋ'
-    pub const TAI_VIET_LETTER_HIGH_CO: char = 'ꪋ';
+    pub const LETTER_HIGH_CO: char = 'ꪋ';
     /// \u{aa8c}: 'ꪌ'
-    pub const TAI_VIET_LETTER_LOW_CHO: char = 'ꪌ';
+    pub const LETTER_LOW_CHO: char = 'ꪌ';
     /// \u{aa8d}: 'ꪍ'
-    pub const TAI_VIET_LETTER_HIGH_CHO: char = 'ꪍ';
+    pub const LETTER_HIGH_CHO: char = 'ꪍ';
     /// \u{aa8e}: 'ꪎ'
-    pub const TAI_VIET_LETTER_LOW_SO: char = 'ꪎ';
+    pub const LETTER_LOW_SO: char = 'ꪎ';
     /// \u{aa8f}: 'ꪏ'
-    pub const TAI_VIET_LETTER_HIGH_SO: char = 'ꪏ';
+    pub const LETTER_HIGH_SO: char = 'ꪏ';
     /// \u{aa90}: 'ꪐ'
-    pub const TAI_VIET_LETTER_LOW_NYO: char = 'ꪐ';
+    pub const LETTER_LOW_NYO: char = 'ꪐ';
     /// \u{aa91}: 'ꪑ'
-    pub const TAI_VIET_LETTER_HIGH_NYO: char = 'ꪑ';
+    pub const LETTER_HIGH_NYO: char = 'ꪑ';
     /// \u{aa92}: 'ꪒ'
-    pub const TAI_VIET_LETTER_LOW_DO: char = 'ꪒ';
+    pub const LETTER_LOW_DO: char = 'ꪒ';
     /// \u{aa93}: 'ꪓ'
-    pub const TAI_VIET_LETTER_HIGH_DO: char = 'ꪓ';
+    pub const LETTER_HIGH_DO: char = 'ꪓ';
     /// \u{aa94}: 'ꪔ'
-    pub const TAI_VIET_LETTER_LOW_TO: char = 'ꪔ';
+    pub const LETTER_LOW_TO: char = 'ꪔ';
     /// \u{aa95}: 'ꪕ'
-    pub const TAI_VIET_LETTER_HIGH_TO: char = 'ꪕ';
+    pub const LETTER_HIGH_TO: char = 'ꪕ';
     /// \u{aa96}: 'ꪖ'
-    pub const TAI_VIET_LETTER_LOW_THO: char = 'ꪖ';
+    pub const LETTER_LOW_THO: char = 'ꪖ';
     /// \u{aa97}: 'ꪗ'
-    pub const TAI_VIET_LETTER_HIGH_THO: char = 'ꪗ';
+    pub const LETTER_HIGH_THO: char = 'ꪗ';
     /// \u{aa98}: 'ꪘ'
-    pub const TAI_VIET_LETTER_LOW_NO: char = 'ꪘ';
+    pub const LETTER_LOW_NO: char = 'ꪘ';
     /// \u{aa99}: 'ꪙ'
-    pub const TAI_VIET_LETTER_HIGH_NO: char = 'ꪙ';
+    pub const LETTER_HIGH_NO: char = 'ꪙ';
     /// \u{aa9a}: 'ꪚ'
-    pub const TAI_VIET_LETTER_LOW_BO: char = 'ꪚ';
+    pub const LETTER_LOW_BO: char = 'ꪚ';
     /// \u{aa9b}: 'ꪛ'
-    pub const TAI_VIET_LETTER_HIGH_BO: char = 'ꪛ';
+    pub const LETTER_HIGH_BO: char = 'ꪛ';
     /// \u{aa9c}: 'ꪜ'
-    pub const TAI_VIET_LETTER_LOW_PO: char = 'ꪜ';
+    pub const LETTER_LOW_PO: char = 'ꪜ';
     /// \u{aa9d}: 'ꪝ'
-    pub const TAI_VIET_LETTER_HIGH_PO: char = 'ꪝ';
+    pub const LETTER_HIGH_PO: char = 'ꪝ';
     /// \u{aa9e}: 'ꪞ'
-    pub const TAI_VIET_LETTER_LOW_PHO: char = 'ꪞ';
+    pub const LETTER_LOW_PHO: char = 'ꪞ';
     /// \u{aa9f}: 'ꪟ'
-    pub const TAI_VIET_LETTER_HIGH_PHO: char = 'ꪟ';
+    pub const LETTER_HIGH_PHO: char = 'ꪟ';
     /// \u{aaa0}: 'ꪠ'
-    pub const TAI_VIET_LETTER_LOW_FO: char = 'ꪠ';
+    pub const LETTER_LOW_FO: char = 'ꪠ';
     /// \u{aaa1}: 'ꪡ'
-    pub const TAI_VIET_LETTER_HIGH_FO: char = 'ꪡ';
+    pub const LETTER_HIGH_FO: char = 'ꪡ';
     /// \u{aaa2}: 'ꪢ'
-    pub const TAI_VIET_LETTER_LOW_MO: char = 'ꪢ';
+    pub const LETTER_LOW_MO: char = 'ꪢ';
     /// \u{aaa3}: 'ꪣ'
-    pub const TAI_VIET_LETTER_HIGH_MO: char = 'ꪣ';
+    pub const LETTER_HIGH_MO: char = 'ꪣ';
     /// \u{aaa4}: 'ꪤ'
-    pub const TAI_VIET_LETTER_LOW_YO: char = 'ꪤ';
+    pub const LETTER_LOW_YO: char = 'ꪤ';
     /// \u{aaa5}: 'ꪥ'
-    pub const TAI_VIET_LETTER_HIGH_YO: char = 'ꪥ';
+    pub const LETTER_HIGH_YO: char = 'ꪥ';
     /// \u{aaa6}: 'ꪦ'
-    pub const TAI_VIET_LETTER_LOW_RO: char = 'ꪦ';
+    pub const LETTER_LOW_RO: char = 'ꪦ';
     /// \u{aaa7}: 'ꪧ'
-    pub const TAI_VIET_LETTER_HIGH_RO: char = 'ꪧ';
+    pub const LETTER_HIGH_RO: char = 'ꪧ';
     /// \u{aaa8}: 'ꪨ'
-    pub const TAI_VIET_LETTER_LOW_LO: char = 'ꪨ';
+    pub const LETTER_LOW_LO: char = 'ꪨ';
     /// \u{aaa9}: 'ꪩ'
-    pub const TAI_VIET_LETTER_HIGH_LO: char = 'ꪩ';
+    pub const LETTER_HIGH_LO: char = 'ꪩ';
     /// \u{aaaa}: 'ꪪ'
-    pub const TAI_VIET_LETTER_LOW_VO: char = 'ꪪ';
+    pub const LETTER_LOW_VO: char = 'ꪪ';
     /// \u{aaab}: 'ꪫ'
-    pub const TAI_VIET_LETTER_HIGH_VO: char = 'ꪫ';
+    pub const LETTER_HIGH_VO: char = 'ꪫ';
     /// \u{aaac}: 'ꪬ'
-    pub const TAI_VIET_LETTER_LOW_HO: char = 'ꪬ';
+    pub const LETTER_LOW_HO: char = 'ꪬ';
     /// \u{aaad}: 'ꪭ'
-    pub const TAI_VIET_LETTER_HIGH_HO: char = 'ꪭ';
+    pub const LETTER_HIGH_HO: char = 'ꪭ';
     /// \u{aaae}: 'ꪮ'
-    pub const TAI_VIET_LETTER_LOW_O: char = 'ꪮ';
+    pub const LETTER_LOW_O: char = 'ꪮ';
     /// \u{aaaf}: 'ꪯ'
-    pub const TAI_VIET_LETTER_HIGH_O: char = 'ꪯ';
+    pub const LETTER_HIGH_O: char = 'ꪯ';
     /// \u{aab0}: 'ꪰ'
-    pub const TAI_VIET_MAI_KANG: char = 'ꪰ';
+    pub const MAI_KANG: char = 'ꪰ';
     /// \u{aab1}: 'ꪱ'
-    pub const TAI_VIET_VOWEL_AA: char = 'ꪱ';
+    pub const VOWEL_AA: char = 'ꪱ';
     /// \u{aab2}: 'ꪲ'
-    pub const TAI_VIET_VOWEL_I: char = 'ꪲ';
+    pub const VOWEL_I: char = 'ꪲ';
     /// \u{aab3}: 'ꪳ'
-    pub const TAI_VIET_VOWEL_UE: char = 'ꪳ';
+    pub const VOWEL_UE: char = 'ꪳ';
     /// \u{aab4}: 'ꪴ'
-    pub const TAI_VIET_VOWEL_U: char = 'ꪴ';
+    pub const VOWEL_U: char = 'ꪴ';
     /// \u{aab5}: 'ꪵ'
-    pub const TAI_VIET_VOWEL_E: char = 'ꪵ';
+    pub const VOWEL_E: char = 'ꪵ';
     /// \u{aab6}: 'ꪶ'
-    pub const TAI_VIET_VOWEL_O: char = 'ꪶ';
+    pub const VOWEL_O: char = 'ꪶ';
     /// \u{aab7}: 'ꪷ'
-    pub const TAI_VIET_MAI_KHIT: char = 'ꪷ';
+    pub const MAI_KHIT: char = 'ꪷ';
     /// \u{aab8}: 'ꪸ'
-    pub const TAI_VIET_VOWEL_IA: char = 'ꪸ';
+    pub const VOWEL_IA: char = 'ꪸ';
     /// \u{aab9}: 'ꪹ'
-    pub const TAI_VIET_VOWEL_UEA: char = 'ꪹ';
+    pub const VOWEL_UEA: char = 'ꪹ';
     /// \u{aaba}: 'ꪺ'
-    pub const TAI_VIET_VOWEL_UA: char = 'ꪺ';
+    pub const VOWEL_UA: char = 'ꪺ';
     /// \u{aabb}: 'ꪻ'
-    pub const TAI_VIET_VOWEL_AUE: char = 'ꪻ';
+    pub const VOWEL_AUE: char = 'ꪻ';
     /// \u{aabc}: 'ꪼ'
-    pub const TAI_VIET_VOWEL_AY: char = 'ꪼ';
+    pub const VOWEL_AY: char = 'ꪼ';
     /// \u{aabd}: 'ꪽ'
-    pub const TAI_VIET_VOWEL_AN: char = 'ꪽ';
+    pub const VOWEL_AN: char = 'ꪽ';
     /// \u{aabe}: 'ꪾ'
-    pub const TAI_VIET_VOWEL_AM: char = 'ꪾ';
+    pub const VOWEL_AM: char = 'ꪾ';
     /// \u{aabf}: '꪿'
-    pub const TAI_VIET_TONE_MAI_EK: char = '꪿';
+    pub const TONE_MAI_EK: char = '꪿';
     /// \u{aac0}: 'ꫀ'
-    pub const TAI_VIET_TONE_MAI_NUENG: char = 'ꫀ';
+    pub const TONE_MAI_NUENG: char = 'ꫀ';
     /// \u{aac1}: '꫁'
-    pub const TAI_VIET_TONE_MAI_THO: char = '꫁';
+    pub const TONE_MAI_THO: char = '꫁';
     /// \u{aac2}: 'ꫂ'
-    pub const TAI_VIET_TONE_MAI_SONG: char = 'ꫂ';
+    pub const TONE_MAI_SONG: char = 'ꫂ';
     /// \u{aadb}: 'ꫛ'
-    pub const TAI_VIET_SYMBOL_KON: char = 'ꫛ';
+    pub const SYMBOL_KON: char = 'ꫛ';
     /// \u{aadc}: 'ꫜ'
-    pub const TAI_VIET_SYMBOL_NUENG: char = 'ꫜ';
+    pub const SYMBOL_NUENG: char = 'ꫜ';
     /// \u{aadd}: 'ꫝ'
-    pub const TAI_VIET_SYMBOL_SAM: char = 'ꫝ';
+    pub const SYMBOL_SAM: char = 'ꫝ';
     /// \u{aade}: '꫞'
-    pub const TAI_VIET_SYMBOL_HO_HOI: char = '꫞';
+    pub const SYMBOL_HO_HOI: char = '꫞';
 }
 
 /// \u{aa80} → \u{aadf}\
@@ -160,224 +160,224 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum TaiViet {
     /// \u{aa80}: 'ꪀ'
-    TaiVietLetterLowKo,
+    LetterLowKo,
     /// \u{aa81}: 'ꪁ'
-    TaiVietLetterHighKo,
+    LetterHighKo,
     /// \u{aa82}: 'ꪂ'
-    TaiVietLetterLowKho,
+    LetterLowKho,
     /// \u{aa83}: 'ꪃ'
-    TaiVietLetterHighKho,
+    LetterHighKho,
     /// \u{aa84}: 'ꪄ'
-    TaiVietLetterLowKhho,
+    LetterLowKhho,
     /// \u{aa85}: 'ꪅ'
-    TaiVietLetterHighKhho,
+    LetterHighKhho,
     /// \u{aa86}: 'ꪆ'
-    TaiVietLetterLowGo,
+    LetterLowGo,
     /// \u{aa87}: 'ꪇ'
-    TaiVietLetterHighGo,
+    LetterHighGo,
     /// \u{aa88}: 'ꪈ'
-    TaiVietLetterLowNgo,
+    LetterLowNgo,
     /// \u{aa89}: 'ꪉ'
-    TaiVietLetterHighNgo,
+    LetterHighNgo,
     /// \u{aa8a}: 'ꪊ'
-    TaiVietLetterLowCo,
+    LetterLowCo,
     /// \u{aa8b}: 'ꪋ'
-    TaiVietLetterHighCo,
+    LetterHighCo,
     /// \u{aa8c}: 'ꪌ'
-    TaiVietLetterLowCho,
+    LetterLowCho,
     /// \u{aa8d}: 'ꪍ'
-    TaiVietLetterHighCho,
+    LetterHighCho,
     /// \u{aa8e}: 'ꪎ'
-    TaiVietLetterLowSo,
+    LetterLowSo,
     /// \u{aa8f}: 'ꪏ'
-    TaiVietLetterHighSo,
+    LetterHighSo,
     /// \u{aa90}: 'ꪐ'
-    TaiVietLetterLowNyo,
+    LetterLowNyo,
     /// \u{aa91}: 'ꪑ'
-    TaiVietLetterHighNyo,
+    LetterHighNyo,
     /// \u{aa92}: 'ꪒ'
-    TaiVietLetterLowDo,
+    LetterLowDo,
     /// \u{aa93}: 'ꪓ'
-    TaiVietLetterHighDo,
+    LetterHighDo,
     /// \u{aa94}: 'ꪔ'
-    TaiVietLetterLowTo,
+    LetterLowTo,
     /// \u{aa95}: 'ꪕ'
-    TaiVietLetterHighTo,
+    LetterHighTo,
     /// \u{aa96}: 'ꪖ'
-    TaiVietLetterLowTho,
+    LetterLowTho,
     /// \u{aa97}: 'ꪗ'
-    TaiVietLetterHighTho,
+    LetterHighTho,
     /// \u{aa98}: 'ꪘ'
-    TaiVietLetterLowNo,
+    LetterLowNo,
     /// \u{aa99}: 'ꪙ'
-    TaiVietLetterHighNo,
+    LetterHighNo,
     /// \u{aa9a}: 'ꪚ'
-    TaiVietLetterLowBo,
+    LetterLowBo,
     /// \u{aa9b}: 'ꪛ'
-    TaiVietLetterHighBo,
+    LetterHighBo,
     /// \u{aa9c}: 'ꪜ'
-    TaiVietLetterLowPo,
+    LetterLowPo,
     /// \u{aa9d}: 'ꪝ'
-    TaiVietLetterHighPo,
+    LetterHighPo,
     /// \u{aa9e}: 'ꪞ'
-    TaiVietLetterLowPho,
+    LetterLowPho,
     /// \u{aa9f}: 'ꪟ'
-    TaiVietLetterHighPho,
+    LetterHighPho,
     /// \u{aaa0}: 'ꪠ'
-    TaiVietLetterLowFo,
+    LetterLowFo,
     /// \u{aaa1}: 'ꪡ'
-    TaiVietLetterHighFo,
+    LetterHighFo,
     /// \u{aaa2}: 'ꪢ'
-    TaiVietLetterLowMo,
+    LetterLowMo,
     /// \u{aaa3}: 'ꪣ'
-    TaiVietLetterHighMo,
+    LetterHighMo,
     /// \u{aaa4}: 'ꪤ'
-    TaiVietLetterLowYo,
+    LetterLowYo,
     /// \u{aaa5}: 'ꪥ'
-    TaiVietLetterHighYo,
+    LetterHighYo,
     /// \u{aaa6}: 'ꪦ'
-    TaiVietLetterLowRo,
+    LetterLowRo,
     /// \u{aaa7}: 'ꪧ'
-    TaiVietLetterHighRo,
+    LetterHighRo,
     /// \u{aaa8}: 'ꪨ'
-    TaiVietLetterLowLo,
+    LetterLowLo,
     /// \u{aaa9}: 'ꪩ'
-    TaiVietLetterHighLo,
+    LetterHighLo,
     /// \u{aaaa}: 'ꪪ'
-    TaiVietLetterLowVo,
+    LetterLowVo,
     /// \u{aaab}: 'ꪫ'
-    TaiVietLetterHighVo,
+    LetterHighVo,
     /// \u{aaac}: 'ꪬ'
-    TaiVietLetterLowHo,
+    LetterLowHo,
     /// \u{aaad}: 'ꪭ'
-    TaiVietLetterHighHo,
+    LetterHighHo,
     /// \u{aaae}: 'ꪮ'
-    TaiVietLetterLowO,
+    LetterLowO,
     /// \u{aaaf}: 'ꪯ'
-    TaiVietLetterHighO,
+    LetterHighO,
     /// \u{aab0}: 'ꪰ'
-    TaiVietMaiKang,
+    MaiKang,
     /// \u{aab1}: 'ꪱ'
-    TaiVietVowelAa,
+    VowelAa,
     /// \u{aab2}: 'ꪲ'
-    TaiVietVowelI,
+    VowelI,
     /// \u{aab3}: 'ꪳ'
-    TaiVietVowelUe,
+    VowelUe,
     /// \u{aab4}: 'ꪴ'
-    TaiVietVowelU,
+    VowelU,
     /// \u{aab5}: 'ꪵ'
-    TaiVietVowelE,
+    VowelE,
     /// \u{aab6}: 'ꪶ'
-    TaiVietVowelO,
+    VowelO,
     /// \u{aab7}: 'ꪷ'
-    TaiVietMaiKhit,
+    MaiKhit,
     /// \u{aab8}: 'ꪸ'
-    TaiVietVowelIa,
+    VowelIa,
     /// \u{aab9}: 'ꪹ'
-    TaiVietVowelUea,
+    VowelUea,
     /// \u{aaba}: 'ꪺ'
-    TaiVietVowelUa,
+    VowelUa,
     /// \u{aabb}: 'ꪻ'
-    TaiVietVowelAue,
+    VowelAue,
     /// \u{aabc}: 'ꪼ'
-    TaiVietVowelAy,
+    VowelAy,
     /// \u{aabd}: 'ꪽ'
-    TaiVietVowelAn,
+    VowelAn,
     /// \u{aabe}: 'ꪾ'
-    TaiVietVowelAm,
+    VowelAm,
     /// \u{aabf}: '꪿'
-    TaiVietToneMaiEk,
+    ToneMaiEk,
     /// \u{aac0}: 'ꫀ'
-    TaiVietToneMaiNueng,
+    ToneMaiNueng,
     /// \u{aac1}: '꫁'
-    TaiVietToneMaiTho,
+    ToneMaiTho,
     /// \u{aac2}: 'ꫂ'
-    TaiVietToneMaiSong,
+    ToneMaiSong,
     /// \u{aadb}: 'ꫛ'
-    TaiVietSymbolKon,
+    SymbolKon,
     /// \u{aadc}: 'ꫜ'
-    TaiVietSymbolNueng,
+    SymbolNueng,
     /// \u{aadd}: 'ꫝ'
-    TaiVietSymbolSam,
+    SymbolSam,
     /// \u{aade}: '꫞'
-    TaiVietSymbolHoHoi,
+    SymbolHoHoi,
 }
 
 impl Into<char> for TaiViet {
     fn into(self) -> char {
         use constants::*;
         match self {
-            TaiViet::TaiVietLetterLowKo => TAI_VIET_LETTER_LOW_KO,
-            TaiViet::TaiVietLetterHighKo => TAI_VIET_LETTER_HIGH_KO,
-            TaiViet::TaiVietLetterLowKho => TAI_VIET_LETTER_LOW_KHO,
-            TaiViet::TaiVietLetterHighKho => TAI_VIET_LETTER_HIGH_KHO,
-            TaiViet::TaiVietLetterLowKhho => TAI_VIET_LETTER_LOW_KHHO,
-            TaiViet::TaiVietLetterHighKhho => TAI_VIET_LETTER_HIGH_KHHO,
-            TaiViet::TaiVietLetterLowGo => TAI_VIET_LETTER_LOW_GO,
-            TaiViet::TaiVietLetterHighGo => TAI_VIET_LETTER_HIGH_GO,
-            TaiViet::TaiVietLetterLowNgo => TAI_VIET_LETTER_LOW_NGO,
-            TaiViet::TaiVietLetterHighNgo => TAI_VIET_LETTER_HIGH_NGO,
-            TaiViet::TaiVietLetterLowCo => TAI_VIET_LETTER_LOW_CO,
-            TaiViet::TaiVietLetterHighCo => TAI_VIET_LETTER_HIGH_CO,
-            TaiViet::TaiVietLetterLowCho => TAI_VIET_LETTER_LOW_CHO,
-            TaiViet::TaiVietLetterHighCho => TAI_VIET_LETTER_HIGH_CHO,
-            TaiViet::TaiVietLetterLowSo => TAI_VIET_LETTER_LOW_SO,
-            TaiViet::TaiVietLetterHighSo => TAI_VIET_LETTER_HIGH_SO,
-            TaiViet::TaiVietLetterLowNyo => TAI_VIET_LETTER_LOW_NYO,
-            TaiViet::TaiVietLetterHighNyo => TAI_VIET_LETTER_HIGH_NYO,
-            TaiViet::TaiVietLetterLowDo => TAI_VIET_LETTER_LOW_DO,
-            TaiViet::TaiVietLetterHighDo => TAI_VIET_LETTER_HIGH_DO,
-            TaiViet::TaiVietLetterLowTo => TAI_VIET_LETTER_LOW_TO,
-            TaiViet::TaiVietLetterHighTo => TAI_VIET_LETTER_HIGH_TO,
-            TaiViet::TaiVietLetterLowTho => TAI_VIET_LETTER_LOW_THO,
-            TaiViet::TaiVietLetterHighTho => TAI_VIET_LETTER_HIGH_THO,
-            TaiViet::TaiVietLetterLowNo => TAI_VIET_LETTER_LOW_NO,
-            TaiViet::TaiVietLetterHighNo => TAI_VIET_LETTER_HIGH_NO,
-            TaiViet::TaiVietLetterLowBo => TAI_VIET_LETTER_LOW_BO,
-            TaiViet::TaiVietLetterHighBo => TAI_VIET_LETTER_HIGH_BO,
-            TaiViet::TaiVietLetterLowPo => TAI_VIET_LETTER_LOW_PO,
-            TaiViet::TaiVietLetterHighPo => TAI_VIET_LETTER_HIGH_PO,
-            TaiViet::TaiVietLetterLowPho => TAI_VIET_LETTER_LOW_PHO,
-            TaiViet::TaiVietLetterHighPho => TAI_VIET_LETTER_HIGH_PHO,
-            TaiViet::TaiVietLetterLowFo => TAI_VIET_LETTER_LOW_FO,
-            TaiViet::TaiVietLetterHighFo => TAI_VIET_LETTER_HIGH_FO,
-            TaiViet::TaiVietLetterLowMo => TAI_VIET_LETTER_LOW_MO,
-            TaiViet::TaiVietLetterHighMo => TAI_VIET_LETTER_HIGH_MO,
-            TaiViet::TaiVietLetterLowYo => TAI_VIET_LETTER_LOW_YO,
-            TaiViet::TaiVietLetterHighYo => TAI_VIET_LETTER_HIGH_YO,
-            TaiViet::TaiVietLetterLowRo => TAI_VIET_LETTER_LOW_RO,
-            TaiViet::TaiVietLetterHighRo => TAI_VIET_LETTER_HIGH_RO,
-            TaiViet::TaiVietLetterLowLo => TAI_VIET_LETTER_LOW_LO,
-            TaiViet::TaiVietLetterHighLo => TAI_VIET_LETTER_HIGH_LO,
-            TaiViet::TaiVietLetterLowVo => TAI_VIET_LETTER_LOW_VO,
-            TaiViet::TaiVietLetterHighVo => TAI_VIET_LETTER_HIGH_VO,
-            TaiViet::TaiVietLetterLowHo => TAI_VIET_LETTER_LOW_HO,
-            TaiViet::TaiVietLetterHighHo => TAI_VIET_LETTER_HIGH_HO,
-            TaiViet::TaiVietLetterLowO => TAI_VIET_LETTER_LOW_O,
-            TaiViet::TaiVietLetterHighO => TAI_VIET_LETTER_HIGH_O,
-            TaiViet::TaiVietMaiKang => TAI_VIET_MAI_KANG,
-            TaiViet::TaiVietVowelAa => TAI_VIET_VOWEL_AA,
-            TaiViet::TaiVietVowelI => TAI_VIET_VOWEL_I,
-            TaiViet::TaiVietVowelUe => TAI_VIET_VOWEL_UE,
-            TaiViet::TaiVietVowelU => TAI_VIET_VOWEL_U,
-            TaiViet::TaiVietVowelE => TAI_VIET_VOWEL_E,
-            TaiViet::TaiVietVowelO => TAI_VIET_VOWEL_O,
-            TaiViet::TaiVietMaiKhit => TAI_VIET_MAI_KHIT,
-            TaiViet::TaiVietVowelIa => TAI_VIET_VOWEL_IA,
-            TaiViet::TaiVietVowelUea => TAI_VIET_VOWEL_UEA,
-            TaiViet::TaiVietVowelUa => TAI_VIET_VOWEL_UA,
-            TaiViet::TaiVietVowelAue => TAI_VIET_VOWEL_AUE,
-            TaiViet::TaiVietVowelAy => TAI_VIET_VOWEL_AY,
-            TaiViet::TaiVietVowelAn => TAI_VIET_VOWEL_AN,
-            TaiViet::TaiVietVowelAm => TAI_VIET_VOWEL_AM,
-            TaiViet::TaiVietToneMaiEk => TAI_VIET_TONE_MAI_EK,
-            TaiViet::TaiVietToneMaiNueng => TAI_VIET_TONE_MAI_NUENG,
-            TaiViet::TaiVietToneMaiTho => TAI_VIET_TONE_MAI_THO,
-            TaiViet::TaiVietToneMaiSong => TAI_VIET_TONE_MAI_SONG,
-            TaiViet::TaiVietSymbolKon => TAI_VIET_SYMBOL_KON,
-            TaiViet::TaiVietSymbolNueng => TAI_VIET_SYMBOL_NUENG,
-            TaiViet::TaiVietSymbolSam => TAI_VIET_SYMBOL_SAM,
-            TaiViet::TaiVietSymbolHoHoi => TAI_VIET_SYMBOL_HO_HOI,
+            TaiViet::LetterLowKo => LETTER_LOW_KO,
+            TaiViet::LetterHighKo => LETTER_HIGH_KO,
+            TaiViet::LetterLowKho => LETTER_LOW_KHO,
+            TaiViet::LetterHighKho => LETTER_HIGH_KHO,
+            TaiViet::LetterLowKhho => LETTER_LOW_KHHO,
+            TaiViet::LetterHighKhho => LETTER_HIGH_KHHO,
+            TaiViet::LetterLowGo => LETTER_LOW_GO,
+            TaiViet::LetterHighGo => LETTER_HIGH_GO,
+            TaiViet::LetterLowNgo => LETTER_LOW_NGO,
+            TaiViet::LetterHighNgo => LETTER_HIGH_NGO,
+            TaiViet::LetterLowCo => LETTER_LOW_CO,
+            TaiViet::LetterHighCo => LETTER_HIGH_CO,
+            TaiViet::LetterLowCho => LETTER_LOW_CHO,
+            TaiViet::LetterHighCho => LETTER_HIGH_CHO,
+            TaiViet::LetterLowSo => LETTER_LOW_SO,
+            TaiViet::LetterHighSo => LETTER_HIGH_SO,
+            TaiViet::LetterLowNyo => LETTER_LOW_NYO,
+            TaiViet::LetterHighNyo => LETTER_HIGH_NYO,
+            TaiViet::LetterLowDo => LETTER_LOW_DO,
+            TaiViet::LetterHighDo => LETTER_HIGH_DO,
+            TaiViet::LetterLowTo => LETTER_LOW_TO,
+            TaiViet::LetterHighTo => LETTER_HIGH_TO,
+            TaiViet::LetterLowTho => LETTER_LOW_THO,
+            TaiViet::LetterHighTho => LETTER_HIGH_THO,
+            TaiViet::LetterLowNo => LETTER_LOW_NO,
+            TaiViet::LetterHighNo => LETTER_HIGH_NO,
+            TaiViet::LetterLowBo => LETTER_LOW_BO,
+            TaiViet::LetterHighBo => LETTER_HIGH_BO,
+            TaiViet::LetterLowPo => LETTER_LOW_PO,
+            TaiViet::LetterHighPo => LETTER_HIGH_PO,
+            TaiViet::LetterLowPho => LETTER_LOW_PHO,
+            TaiViet::LetterHighPho => LETTER_HIGH_PHO,
+            TaiViet::LetterLowFo => LETTER_LOW_FO,
+            TaiViet::LetterHighFo => LETTER_HIGH_FO,
+            TaiViet::LetterLowMo => LETTER_LOW_MO,
+            TaiViet::LetterHighMo => LETTER_HIGH_MO,
+            TaiViet::LetterLowYo => LETTER_LOW_YO,
+            TaiViet::LetterHighYo => LETTER_HIGH_YO,
+            TaiViet::LetterLowRo => LETTER_LOW_RO,
+            TaiViet::LetterHighRo => LETTER_HIGH_RO,
+            TaiViet::LetterLowLo => LETTER_LOW_LO,
+            TaiViet::LetterHighLo => LETTER_HIGH_LO,
+            TaiViet::LetterLowVo => LETTER_LOW_VO,
+            TaiViet::LetterHighVo => LETTER_HIGH_VO,
+            TaiViet::LetterLowHo => LETTER_LOW_HO,
+            TaiViet::LetterHighHo => LETTER_HIGH_HO,
+            TaiViet::LetterLowO => LETTER_LOW_O,
+            TaiViet::LetterHighO => LETTER_HIGH_O,
+            TaiViet::MaiKang => MAI_KANG,
+            TaiViet::VowelAa => VOWEL_AA,
+            TaiViet::VowelI => VOWEL_I,
+            TaiViet::VowelUe => VOWEL_UE,
+            TaiViet::VowelU => VOWEL_U,
+            TaiViet::VowelE => VOWEL_E,
+            TaiViet::VowelO => VOWEL_O,
+            TaiViet::MaiKhit => MAI_KHIT,
+            TaiViet::VowelIa => VOWEL_IA,
+            TaiViet::VowelUea => VOWEL_UEA,
+            TaiViet::VowelUa => VOWEL_UA,
+            TaiViet::VowelAue => VOWEL_AUE,
+            TaiViet::VowelAy => VOWEL_AY,
+            TaiViet::VowelAn => VOWEL_AN,
+            TaiViet::VowelAm => VOWEL_AM,
+            TaiViet::ToneMaiEk => TONE_MAI_EK,
+            TaiViet::ToneMaiNueng => TONE_MAI_NUENG,
+            TaiViet::ToneMaiTho => TONE_MAI_THO,
+            TaiViet::ToneMaiSong => TONE_MAI_SONG,
+            TaiViet::SymbolKon => SYMBOL_KON,
+            TaiViet::SymbolNueng => SYMBOL_NUENG,
+            TaiViet::SymbolSam => SYMBOL_SAM,
+            TaiViet::SymbolHoHoi => SYMBOL_HO_HOI,
         }
     }
 }
@@ -387,77 +387,77 @@ impl std::convert::TryFrom<char> for TaiViet {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            TAI_VIET_LETTER_LOW_KO => Ok(TaiViet::TaiVietLetterLowKo),
-            TAI_VIET_LETTER_HIGH_KO => Ok(TaiViet::TaiVietLetterHighKo),
-            TAI_VIET_LETTER_LOW_KHO => Ok(TaiViet::TaiVietLetterLowKho),
-            TAI_VIET_LETTER_HIGH_KHO => Ok(TaiViet::TaiVietLetterHighKho),
-            TAI_VIET_LETTER_LOW_KHHO => Ok(TaiViet::TaiVietLetterLowKhho),
-            TAI_VIET_LETTER_HIGH_KHHO => Ok(TaiViet::TaiVietLetterHighKhho),
-            TAI_VIET_LETTER_LOW_GO => Ok(TaiViet::TaiVietLetterLowGo),
-            TAI_VIET_LETTER_HIGH_GO => Ok(TaiViet::TaiVietLetterHighGo),
-            TAI_VIET_LETTER_LOW_NGO => Ok(TaiViet::TaiVietLetterLowNgo),
-            TAI_VIET_LETTER_HIGH_NGO => Ok(TaiViet::TaiVietLetterHighNgo),
-            TAI_VIET_LETTER_LOW_CO => Ok(TaiViet::TaiVietLetterLowCo),
-            TAI_VIET_LETTER_HIGH_CO => Ok(TaiViet::TaiVietLetterHighCo),
-            TAI_VIET_LETTER_LOW_CHO => Ok(TaiViet::TaiVietLetterLowCho),
-            TAI_VIET_LETTER_HIGH_CHO => Ok(TaiViet::TaiVietLetterHighCho),
-            TAI_VIET_LETTER_LOW_SO => Ok(TaiViet::TaiVietLetterLowSo),
-            TAI_VIET_LETTER_HIGH_SO => Ok(TaiViet::TaiVietLetterHighSo),
-            TAI_VIET_LETTER_LOW_NYO => Ok(TaiViet::TaiVietLetterLowNyo),
-            TAI_VIET_LETTER_HIGH_NYO => Ok(TaiViet::TaiVietLetterHighNyo),
-            TAI_VIET_LETTER_LOW_DO => Ok(TaiViet::TaiVietLetterLowDo),
-            TAI_VIET_LETTER_HIGH_DO => Ok(TaiViet::TaiVietLetterHighDo),
-            TAI_VIET_LETTER_LOW_TO => Ok(TaiViet::TaiVietLetterLowTo),
-            TAI_VIET_LETTER_HIGH_TO => Ok(TaiViet::TaiVietLetterHighTo),
-            TAI_VIET_LETTER_LOW_THO => Ok(TaiViet::TaiVietLetterLowTho),
-            TAI_VIET_LETTER_HIGH_THO => Ok(TaiViet::TaiVietLetterHighTho),
-            TAI_VIET_LETTER_LOW_NO => Ok(TaiViet::TaiVietLetterLowNo),
-            TAI_VIET_LETTER_HIGH_NO => Ok(TaiViet::TaiVietLetterHighNo),
-            TAI_VIET_LETTER_LOW_BO => Ok(TaiViet::TaiVietLetterLowBo),
-            TAI_VIET_LETTER_HIGH_BO => Ok(TaiViet::TaiVietLetterHighBo),
-            TAI_VIET_LETTER_LOW_PO => Ok(TaiViet::TaiVietLetterLowPo),
-            TAI_VIET_LETTER_HIGH_PO => Ok(TaiViet::TaiVietLetterHighPo),
-            TAI_VIET_LETTER_LOW_PHO => Ok(TaiViet::TaiVietLetterLowPho),
-            TAI_VIET_LETTER_HIGH_PHO => Ok(TaiViet::TaiVietLetterHighPho),
-            TAI_VIET_LETTER_LOW_FO => Ok(TaiViet::TaiVietLetterLowFo),
-            TAI_VIET_LETTER_HIGH_FO => Ok(TaiViet::TaiVietLetterHighFo),
-            TAI_VIET_LETTER_LOW_MO => Ok(TaiViet::TaiVietLetterLowMo),
-            TAI_VIET_LETTER_HIGH_MO => Ok(TaiViet::TaiVietLetterHighMo),
-            TAI_VIET_LETTER_LOW_YO => Ok(TaiViet::TaiVietLetterLowYo),
-            TAI_VIET_LETTER_HIGH_YO => Ok(TaiViet::TaiVietLetterHighYo),
-            TAI_VIET_LETTER_LOW_RO => Ok(TaiViet::TaiVietLetterLowRo),
-            TAI_VIET_LETTER_HIGH_RO => Ok(TaiViet::TaiVietLetterHighRo),
-            TAI_VIET_LETTER_LOW_LO => Ok(TaiViet::TaiVietLetterLowLo),
-            TAI_VIET_LETTER_HIGH_LO => Ok(TaiViet::TaiVietLetterHighLo),
-            TAI_VIET_LETTER_LOW_VO => Ok(TaiViet::TaiVietLetterLowVo),
-            TAI_VIET_LETTER_HIGH_VO => Ok(TaiViet::TaiVietLetterHighVo),
-            TAI_VIET_LETTER_LOW_HO => Ok(TaiViet::TaiVietLetterLowHo),
-            TAI_VIET_LETTER_HIGH_HO => Ok(TaiViet::TaiVietLetterHighHo),
-            TAI_VIET_LETTER_LOW_O => Ok(TaiViet::TaiVietLetterLowO),
-            TAI_VIET_LETTER_HIGH_O => Ok(TaiViet::TaiVietLetterHighO),
-            TAI_VIET_MAI_KANG => Ok(TaiViet::TaiVietMaiKang),
-            TAI_VIET_VOWEL_AA => Ok(TaiViet::TaiVietVowelAa),
-            TAI_VIET_VOWEL_I => Ok(TaiViet::TaiVietVowelI),
-            TAI_VIET_VOWEL_UE => Ok(TaiViet::TaiVietVowelUe),
-            TAI_VIET_VOWEL_U => Ok(TaiViet::TaiVietVowelU),
-            TAI_VIET_VOWEL_E => Ok(TaiViet::TaiVietVowelE),
-            TAI_VIET_VOWEL_O => Ok(TaiViet::TaiVietVowelO),
-            TAI_VIET_MAI_KHIT => Ok(TaiViet::TaiVietMaiKhit),
-            TAI_VIET_VOWEL_IA => Ok(TaiViet::TaiVietVowelIa),
-            TAI_VIET_VOWEL_UEA => Ok(TaiViet::TaiVietVowelUea),
-            TAI_VIET_VOWEL_UA => Ok(TaiViet::TaiVietVowelUa),
-            TAI_VIET_VOWEL_AUE => Ok(TaiViet::TaiVietVowelAue),
-            TAI_VIET_VOWEL_AY => Ok(TaiViet::TaiVietVowelAy),
-            TAI_VIET_VOWEL_AN => Ok(TaiViet::TaiVietVowelAn),
-            TAI_VIET_VOWEL_AM => Ok(TaiViet::TaiVietVowelAm),
-            TAI_VIET_TONE_MAI_EK => Ok(TaiViet::TaiVietToneMaiEk),
-            TAI_VIET_TONE_MAI_NUENG => Ok(TaiViet::TaiVietToneMaiNueng),
-            TAI_VIET_TONE_MAI_THO => Ok(TaiViet::TaiVietToneMaiTho),
-            TAI_VIET_TONE_MAI_SONG => Ok(TaiViet::TaiVietToneMaiSong),
-            TAI_VIET_SYMBOL_KON => Ok(TaiViet::TaiVietSymbolKon),
-            TAI_VIET_SYMBOL_NUENG => Ok(TaiViet::TaiVietSymbolNueng),
-            TAI_VIET_SYMBOL_SAM => Ok(TaiViet::TaiVietSymbolSam),
-            TAI_VIET_SYMBOL_HO_HOI => Ok(TaiViet::TaiVietSymbolHoHoi),
+            LETTER_LOW_KO => Ok(TaiViet::LetterLowKo),
+            LETTER_HIGH_KO => Ok(TaiViet::LetterHighKo),
+            LETTER_LOW_KHO => Ok(TaiViet::LetterLowKho),
+            LETTER_HIGH_KHO => Ok(TaiViet::LetterHighKho),
+            LETTER_LOW_KHHO => Ok(TaiViet::LetterLowKhho),
+            LETTER_HIGH_KHHO => Ok(TaiViet::LetterHighKhho),
+            LETTER_LOW_GO => Ok(TaiViet::LetterLowGo),
+            LETTER_HIGH_GO => Ok(TaiViet::LetterHighGo),
+            LETTER_LOW_NGO => Ok(TaiViet::LetterLowNgo),
+            LETTER_HIGH_NGO => Ok(TaiViet::LetterHighNgo),
+            LETTER_LOW_CO => Ok(TaiViet::LetterLowCo),
+            LETTER_HIGH_CO => Ok(TaiViet::LetterHighCo),
+            LETTER_LOW_CHO => Ok(TaiViet::LetterLowCho),
+            LETTER_HIGH_CHO => Ok(TaiViet::LetterHighCho),
+            LETTER_LOW_SO => Ok(TaiViet::LetterLowSo),
+            LETTER_HIGH_SO => Ok(TaiViet::LetterHighSo),
+            LETTER_LOW_NYO => Ok(TaiViet::LetterLowNyo),
+            LETTER_HIGH_NYO => Ok(TaiViet::LetterHighNyo),
+            LETTER_LOW_DO => Ok(TaiViet::LetterLowDo),
+            LETTER_HIGH_DO => Ok(TaiViet::LetterHighDo),
+            LETTER_LOW_TO => Ok(TaiViet::LetterLowTo),
+            LETTER_HIGH_TO => Ok(TaiViet::LetterHighTo),
+            LETTER_LOW_THO => Ok(TaiViet::LetterLowTho),
+            LETTER_HIGH_THO => Ok(TaiViet::LetterHighTho),
+            LETTER_LOW_NO => Ok(TaiViet::LetterLowNo),
+            LETTER_HIGH_NO => Ok(TaiViet::LetterHighNo),
+            LETTER_LOW_BO => Ok(TaiViet::LetterLowBo),
+            LETTER_HIGH_BO => Ok(TaiViet::LetterHighBo),
+            LETTER_LOW_PO => Ok(TaiViet::LetterLowPo),
+            LETTER_HIGH_PO => Ok(TaiViet::LetterHighPo),
+            LETTER_LOW_PHO => Ok(TaiViet::LetterLowPho),
+            LETTER_HIGH_PHO => Ok(TaiViet::LetterHighPho),
+            LETTER_LOW_FO => Ok(TaiViet::LetterLowFo),
+            LETTER_HIGH_FO => Ok(TaiViet::LetterHighFo),
+            LETTER_LOW_MO => Ok(TaiViet::LetterLowMo),
+            LETTER_HIGH_MO => Ok(TaiViet::LetterHighMo),
+            LETTER_LOW_YO => Ok(TaiViet::LetterLowYo),
+            LETTER_HIGH_YO => Ok(TaiViet::LetterHighYo),
+            LETTER_LOW_RO => Ok(TaiViet::LetterLowRo),
+            LETTER_HIGH_RO => Ok(TaiViet::LetterHighRo),
+            LETTER_LOW_LO => Ok(TaiViet::LetterLowLo),
+            LETTER_HIGH_LO => Ok(TaiViet::LetterHighLo),
+            LETTER_LOW_VO => Ok(TaiViet::LetterLowVo),
+            LETTER_HIGH_VO => Ok(TaiViet::LetterHighVo),
+            LETTER_LOW_HO => Ok(TaiViet::LetterLowHo),
+            LETTER_HIGH_HO => Ok(TaiViet::LetterHighHo),
+            LETTER_LOW_O => Ok(TaiViet::LetterLowO),
+            LETTER_HIGH_O => Ok(TaiViet::LetterHighO),
+            MAI_KANG => Ok(TaiViet::MaiKang),
+            VOWEL_AA => Ok(TaiViet::VowelAa),
+            VOWEL_I => Ok(TaiViet::VowelI),
+            VOWEL_UE => Ok(TaiViet::VowelUe),
+            VOWEL_U => Ok(TaiViet::VowelU),
+            VOWEL_E => Ok(TaiViet::VowelE),
+            VOWEL_O => Ok(TaiViet::VowelO),
+            MAI_KHIT => Ok(TaiViet::MaiKhit),
+            VOWEL_IA => Ok(TaiViet::VowelIa),
+            VOWEL_UEA => Ok(TaiViet::VowelUea),
+            VOWEL_UA => Ok(TaiViet::VowelUa),
+            VOWEL_AUE => Ok(TaiViet::VowelAue),
+            VOWEL_AY => Ok(TaiViet::VowelAy),
+            VOWEL_AN => Ok(TaiViet::VowelAn),
+            VOWEL_AM => Ok(TaiViet::VowelAm),
+            TONE_MAI_EK => Ok(TaiViet::ToneMaiEk),
+            TONE_MAI_NUENG => Ok(TaiViet::ToneMaiNueng),
+            TONE_MAI_THO => Ok(TaiViet::ToneMaiTho),
+            TONE_MAI_SONG => Ok(TaiViet::ToneMaiSong),
+            SYMBOL_KON => Ok(TaiViet::SymbolKon),
+            SYMBOL_NUENG => Ok(TaiViet::SymbolNueng),
+            SYMBOL_SAM => Ok(TaiViet::SymbolSam),
+            SYMBOL_HO_HOI => Ok(TaiViet::SymbolHoHoi),
             _ => Err(()),
         }
     }
@@ -496,85 +496,85 @@ impl Iterator for TaiViet {
 }
 
 impl TaiViet {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        TaiViet::TaiVietLetterLowKo
+        TaiViet::LetterLowKo
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            TaiViet::TaiVietLetterLowKo => "tai viet letter low ko",
-            TaiViet::TaiVietLetterHighKo => "tai viet letter high ko",
-            TaiViet::TaiVietLetterLowKho => "tai viet letter low kho",
-            TaiViet::TaiVietLetterHighKho => "tai viet letter high kho",
-            TaiViet::TaiVietLetterLowKhho => "tai viet letter low khho",
-            TaiViet::TaiVietLetterHighKhho => "tai viet letter high khho",
-            TaiViet::TaiVietLetterLowGo => "tai viet letter low go",
-            TaiViet::TaiVietLetterHighGo => "tai viet letter high go",
-            TaiViet::TaiVietLetterLowNgo => "tai viet letter low ngo",
-            TaiViet::TaiVietLetterHighNgo => "tai viet letter high ngo",
-            TaiViet::TaiVietLetterLowCo => "tai viet letter low co",
-            TaiViet::TaiVietLetterHighCo => "tai viet letter high co",
-            TaiViet::TaiVietLetterLowCho => "tai viet letter low cho",
-            TaiViet::TaiVietLetterHighCho => "tai viet letter high cho",
-            TaiViet::TaiVietLetterLowSo => "tai viet letter low so",
-            TaiViet::TaiVietLetterHighSo => "tai viet letter high so",
-            TaiViet::TaiVietLetterLowNyo => "tai viet letter low nyo",
-            TaiViet::TaiVietLetterHighNyo => "tai viet letter high nyo",
-            TaiViet::TaiVietLetterLowDo => "tai viet letter low do",
-            TaiViet::TaiVietLetterHighDo => "tai viet letter high do",
-            TaiViet::TaiVietLetterLowTo => "tai viet letter low to",
-            TaiViet::TaiVietLetterHighTo => "tai viet letter high to",
-            TaiViet::TaiVietLetterLowTho => "tai viet letter low tho",
-            TaiViet::TaiVietLetterHighTho => "tai viet letter high tho",
-            TaiViet::TaiVietLetterLowNo => "tai viet letter low no",
-            TaiViet::TaiVietLetterHighNo => "tai viet letter high no",
-            TaiViet::TaiVietLetterLowBo => "tai viet letter low bo",
-            TaiViet::TaiVietLetterHighBo => "tai viet letter high bo",
-            TaiViet::TaiVietLetterLowPo => "tai viet letter low po",
-            TaiViet::TaiVietLetterHighPo => "tai viet letter high po",
-            TaiViet::TaiVietLetterLowPho => "tai viet letter low pho",
-            TaiViet::TaiVietLetterHighPho => "tai viet letter high pho",
-            TaiViet::TaiVietLetterLowFo => "tai viet letter low fo",
-            TaiViet::TaiVietLetterHighFo => "tai viet letter high fo",
-            TaiViet::TaiVietLetterLowMo => "tai viet letter low mo",
-            TaiViet::TaiVietLetterHighMo => "tai viet letter high mo",
-            TaiViet::TaiVietLetterLowYo => "tai viet letter low yo",
-            TaiViet::TaiVietLetterHighYo => "tai viet letter high yo",
-            TaiViet::TaiVietLetterLowRo => "tai viet letter low ro",
-            TaiViet::TaiVietLetterHighRo => "tai viet letter high ro",
-            TaiViet::TaiVietLetterLowLo => "tai viet letter low lo",
-            TaiViet::TaiVietLetterHighLo => "tai viet letter high lo",
-            TaiViet::TaiVietLetterLowVo => "tai viet letter low vo",
-            TaiViet::TaiVietLetterHighVo => "tai viet letter high vo",
-            TaiViet::TaiVietLetterLowHo => "tai viet letter low ho",
-            TaiViet::TaiVietLetterHighHo => "tai viet letter high ho",
-            TaiViet::TaiVietLetterLowO => "tai viet letter low o",
-            TaiViet::TaiVietLetterHighO => "tai viet letter high o",
-            TaiViet::TaiVietMaiKang => "tai viet mai kang",
-            TaiViet::TaiVietVowelAa => "tai viet vowel aa",
-            TaiViet::TaiVietVowelI => "tai viet vowel i",
-            TaiViet::TaiVietVowelUe => "tai viet vowel ue",
-            TaiViet::TaiVietVowelU => "tai viet vowel u",
-            TaiViet::TaiVietVowelE => "tai viet vowel e",
-            TaiViet::TaiVietVowelO => "tai viet vowel o",
-            TaiViet::TaiVietMaiKhit => "tai viet mai khit",
-            TaiViet::TaiVietVowelIa => "tai viet vowel ia",
-            TaiViet::TaiVietVowelUea => "tai viet vowel uea",
-            TaiViet::TaiVietVowelUa => "tai viet vowel ua",
-            TaiViet::TaiVietVowelAue => "tai viet vowel aue",
-            TaiViet::TaiVietVowelAy => "tai viet vowel ay",
-            TaiViet::TaiVietVowelAn => "tai viet vowel an",
-            TaiViet::TaiVietVowelAm => "tai viet vowel am",
-            TaiViet::TaiVietToneMaiEk => "tai viet tone mai ek",
-            TaiViet::TaiVietToneMaiNueng => "tai viet tone mai nueng",
-            TaiViet::TaiVietToneMaiTho => "tai viet tone mai tho",
-            TaiViet::TaiVietToneMaiSong => "tai viet tone mai song",
-            TaiViet::TaiVietSymbolKon => "tai viet symbol kon",
-            TaiViet::TaiVietSymbolNueng => "tai viet symbol nueng",
-            TaiViet::TaiVietSymbolSam => "tai viet symbol sam",
-            TaiViet::TaiVietSymbolHoHoi => "tai viet symbol ho hoi",
+            TaiViet::LetterLowKo => "tai viet letter low ko",
+            TaiViet::LetterHighKo => "tai viet letter high ko",
+            TaiViet::LetterLowKho => "tai viet letter low kho",
+            TaiViet::LetterHighKho => "tai viet letter high kho",
+            TaiViet::LetterLowKhho => "tai viet letter low khho",
+            TaiViet::LetterHighKhho => "tai viet letter high khho",
+            TaiViet::LetterLowGo => "tai viet letter low go",
+            TaiViet::LetterHighGo => "tai viet letter high go",
+            TaiViet::LetterLowNgo => "tai viet letter low ngo",
+            TaiViet::LetterHighNgo => "tai viet letter high ngo",
+            TaiViet::LetterLowCo => "tai viet letter low co",
+            TaiViet::LetterHighCo => "tai viet letter high co",
+            TaiViet::LetterLowCho => "tai viet letter low cho",
+            TaiViet::LetterHighCho => "tai viet letter high cho",
+            TaiViet::LetterLowSo => "tai viet letter low so",
+            TaiViet::LetterHighSo => "tai viet letter high so",
+            TaiViet::LetterLowNyo => "tai viet letter low nyo",
+            TaiViet::LetterHighNyo => "tai viet letter high nyo",
+            TaiViet::LetterLowDo => "tai viet letter low do",
+            TaiViet::LetterHighDo => "tai viet letter high do",
+            TaiViet::LetterLowTo => "tai viet letter low to",
+            TaiViet::LetterHighTo => "tai viet letter high to",
+            TaiViet::LetterLowTho => "tai viet letter low tho",
+            TaiViet::LetterHighTho => "tai viet letter high tho",
+            TaiViet::LetterLowNo => "tai viet letter low no",
+            TaiViet::LetterHighNo => "tai viet letter high no",
+            TaiViet::LetterLowBo => "tai viet letter low bo",
+            TaiViet::LetterHighBo => "tai viet letter high bo",
+            TaiViet::LetterLowPo => "tai viet letter low po",
+            TaiViet::LetterHighPo => "tai viet letter high po",
+            TaiViet::LetterLowPho => "tai viet letter low pho",
+            TaiViet::LetterHighPho => "tai viet letter high pho",
+            TaiViet::LetterLowFo => "tai viet letter low fo",
+            TaiViet::LetterHighFo => "tai viet letter high fo",
+            TaiViet::LetterLowMo => "tai viet letter low mo",
+            TaiViet::LetterHighMo => "tai viet letter high mo",
+            TaiViet::LetterLowYo => "tai viet letter low yo",
+            TaiViet::LetterHighYo => "tai viet letter high yo",
+            TaiViet::LetterLowRo => "tai viet letter low ro",
+            TaiViet::LetterHighRo => "tai viet letter high ro",
+            TaiViet::LetterLowLo => "tai viet letter low lo",
+            TaiViet::LetterHighLo => "tai viet letter high lo",
+            TaiViet::LetterLowVo => "tai viet letter low vo",
+            TaiViet::LetterHighVo => "tai viet letter high vo",
+            TaiViet::LetterLowHo => "tai viet letter low ho",
+            TaiViet::LetterHighHo => "tai viet letter high ho",
+            TaiViet::LetterLowO => "tai viet letter low o",
+            TaiViet::LetterHighO => "tai viet letter high o",
+            TaiViet::MaiKang => "tai viet mai kang",
+            TaiViet::VowelAa => "tai viet vowel aa",
+            TaiViet::VowelI => "tai viet vowel i",
+            TaiViet::VowelUe => "tai viet vowel ue",
+            TaiViet::VowelU => "tai viet vowel u",
+            TaiViet::VowelE => "tai viet vowel e",
+            TaiViet::VowelO => "tai viet vowel o",
+            TaiViet::MaiKhit => "tai viet mai khit",
+            TaiViet::VowelIa => "tai viet vowel ia",
+            TaiViet::VowelUea => "tai viet vowel uea",
+            TaiViet::VowelUa => "tai viet vowel ua",
+            TaiViet::VowelAue => "tai viet vowel aue",
+            TaiViet::VowelAy => "tai viet vowel ay",
+            TaiViet::VowelAn => "tai viet vowel an",
+            TaiViet::VowelAm => "tai viet vowel am",
+            TaiViet::ToneMaiEk => "tai viet tone mai ek",
+            TaiViet::ToneMaiNueng => "tai viet tone mai nueng",
+            TaiViet::ToneMaiTho => "tai viet tone mai tho",
+            TaiViet::ToneMaiSong => "tai viet tone mai song",
+            TaiViet::SymbolKon => "tai viet symbol kon",
+            TaiViet::SymbolNueng => "tai viet symbol nueng",
+            TaiViet::SymbolSam => "tai viet symbol sam",
+            TaiViet::SymbolHoHoi => "tai viet symbol ho hoi",
         }
     }
 }

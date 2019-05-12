@@ -10,237 +10,237 @@
 /// ൻ ർ ൽ ൾ
 pub mod constants {
     /// \u{d00}: 'ഀ'
-    pub const MALAYALAM_SIGN_COMBINING_ANUSVARA_ABOVE: char = 'ഀ';
+    pub const SIGN_COMBINING_ANUSVARA_ABOVE: char = 'ഀ';
     /// \u{d01}: 'ഁ'
-    pub const MALAYALAM_SIGN_CANDRABINDU: char = 'ഁ';
+    pub const SIGN_CANDRABINDU: char = 'ഁ';
     /// \u{d02}: 'ം'
-    pub const MALAYALAM_SIGN_ANUSVARA: char = 'ം';
+    pub const SIGN_ANUSVARA: char = 'ം';
     /// \u{d03}: 'ഃ'
-    pub const MALAYALAM_SIGN_VISARGA: char = 'ഃ';
+    pub const SIGN_VISARGA: char = 'ഃ';
     /// \u{d05}: 'അ'
-    pub const MALAYALAM_LETTER_A: char = 'അ';
+    pub const LETTER_A: char = 'അ';
     /// \u{d06}: 'ആ'
-    pub const MALAYALAM_LETTER_AA: char = 'ആ';
+    pub const LETTER_AA: char = 'ആ';
     /// \u{d07}: 'ഇ'
-    pub const MALAYALAM_LETTER_I: char = 'ഇ';
+    pub const LETTER_I: char = 'ഇ';
     /// \u{d08}: 'ഈ'
-    pub const MALAYALAM_LETTER_II: char = 'ഈ';
+    pub const LETTER_II: char = 'ഈ';
     /// \u{d09}: 'ഉ'
-    pub const MALAYALAM_LETTER_U: char = 'ഉ';
+    pub const LETTER_U: char = 'ഉ';
     /// \u{d0a}: 'ഊ'
-    pub const MALAYALAM_LETTER_UU: char = 'ഊ';
+    pub const LETTER_UU: char = 'ഊ';
     /// \u{d0b}: 'ഋ'
-    pub const MALAYALAM_LETTER_VOCALIC_R: char = 'ഋ';
+    pub const LETTER_VOCALIC_R: char = 'ഋ';
     /// \u{d0c}: 'ഌ'
-    pub const MALAYALAM_LETTER_VOCALIC_L: char = 'ഌ';
+    pub const LETTER_VOCALIC_L: char = 'ഌ';
     /// \u{d0e}: 'എ'
-    pub const MALAYALAM_LETTER_E: char = 'എ';
+    pub const LETTER_E: char = 'എ';
     /// \u{d0f}: 'ഏ'
-    pub const MALAYALAM_LETTER_EE: char = 'ഏ';
+    pub const LETTER_EE: char = 'ഏ';
     /// \u{d10}: 'ഐ'
-    pub const MALAYALAM_LETTER_AI: char = 'ഐ';
+    pub const LETTER_AI: char = 'ഐ';
     /// \u{d12}: 'ഒ'
-    pub const MALAYALAM_LETTER_O: char = 'ഒ';
+    pub const LETTER_O: char = 'ഒ';
     /// \u{d13}: 'ഓ'
-    pub const MALAYALAM_LETTER_OO: char = 'ഓ';
+    pub const LETTER_OO: char = 'ഓ';
     /// \u{d14}: 'ഔ'
-    pub const MALAYALAM_LETTER_AU: char = 'ഔ';
+    pub const LETTER_AU: char = 'ഔ';
     /// \u{d15}: 'ക'
-    pub const MALAYALAM_LETTER_KA: char = 'ക';
+    pub const LETTER_KA: char = 'ക';
     /// \u{d16}: 'ഖ'
-    pub const MALAYALAM_LETTER_KHA: char = 'ഖ';
+    pub const LETTER_KHA: char = 'ഖ';
     /// \u{d17}: 'ഗ'
-    pub const MALAYALAM_LETTER_GA: char = 'ഗ';
+    pub const LETTER_GA: char = 'ഗ';
     /// \u{d18}: 'ഘ'
-    pub const MALAYALAM_LETTER_GHA: char = 'ഘ';
+    pub const LETTER_GHA: char = 'ഘ';
     /// \u{d19}: 'ങ'
-    pub const MALAYALAM_LETTER_NGA: char = 'ങ';
+    pub const LETTER_NGA: char = 'ങ';
     /// \u{d1a}: 'ച'
-    pub const MALAYALAM_LETTER_CA: char = 'ച';
+    pub const LETTER_CA: char = 'ച';
     /// \u{d1b}: 'ഛ'
-    pub const MALAYALAM_LETTER_CHA: char = 'ഛ';
+    pub const LETTER_CHA: char = 'ഛ';
     /// \u{d1c}: 'ജ'
-    pub const MALAYALAM_LETTER_JA: char = 'ജ';
+    pub const LETTER_JA: char = 'ജ';
     /// \u{d1d}: 'ഝ'
-    pub const MALAYALAM_LETTER_JHA: char = 'ഝ';
+    pub const LETTER_JHA: char = 'ഝ';
     /// \u{d1e}: 'ഞ'
-    pub const MALAYALAM_LETTER_NYA: char = 'ഞ';
+    pub const LETTER_NYA: char = 'ഞ';
     /// \u{d1f}: 'ട'
-    pub const MALAYALAM_LETTER_TTA: char = 'ട';
+    pub const LETTER_TTA: char = 'ട';
     /// \u{d20}: 'ഠ'
-    pub const MALAYALAM_LETTER_TTHA: char = 'ഠ';
+    pub const LETTER_TTHA: char = 'ഠ';
     /// \u{d21}: 'ഡ'
-    pub const MALAYALAM_LETTER_DDA: char = 'ഡ';
+    pub const LETTER_DDA: char = 'ഡ';
     /// \u{d22}: 'ഢ'
-    pub const MALAYALAM_LETTER_DDHA: char = 'ഢ';
+    pub const LETTER_DDHA: char = 'ഢ';
     /// \u{d23}: 'ണ'
-    pub const MALAYALAM_LETTER_NNA: char = 'ണ';
+    pub const LETTER_NNA: char = 'ണ';
     /// \u{d24}: 'ത'
-    pub const MALAYALAM_LETTER_TA: char = 'ത';
+    pub const LETTER_TA: char = 'ത';
     /// \u{d25}: 'ഥ'
-    pub const MALAYALAM_LETTER_THA: char = 'ഥ';
+    pub const LETTER_THA: char = 'ഥ';
     /// \u{d26}: 'ദ'
-    pub const MALAYALAM_LETTER_DA: char = 'ദ';
+    pub const LETTER_DA: char = 'ദ';
     /// \u{d27}: 'ധ'
-    pub const MALAYALAM_LETTER_DHA: char = 'ധ';
+    pub const LETTER_DHA: char = 'ധ';
     /// \u{d28}: 'ന'
-    pub const MALAYALAM_LETTER_NA: char = 'ന';
+    pub const LETTER_NA: char = 'ന';
     /// \u{d29}: 'ഩ'
-    pub const MALAYALAM_LETTER_NNNA: char = 'ഩ';
+    pub const LETTER_NNNA: char = 'ഩ';
     /// \u{d2a}: 'പ'
-    pub const MALAYALAM_LETTER_PA: char = 'പ';
+    pub const LETTER_PA: char = 'പ';
     /// \u{d2b}: 'ഫ'
-    pub const MALAYALAM_LETTER_PHA: char = 'ഫ';
+    pub const LETTER_PHA: char = 'ഫ';
     /// \u{d2c}: 'ബ'
-    pub const MALAYALAM_LETTER_BA: char = 'ബ';
+    pub const LETTER_BA: char = 'ബ';
     /// \u{d2d}: 'ഭ'
-    pub const MALAYALAM_LETTER_BHA: char = 'ഭ';
+    pub const LETTER_BHA: char = 'ഭ';
     /// \u{d2e}: 'മ'
-    pub const MALAYALAM_LETTER_MA: char = 'മ';
+    pub const LETTER_MA: char = 'മ';
     /// \u{d2f}: 'യ'
-    pub const MALAYALAM_LETTER_YA: char = 'യ';
+    pub const LETTER_YA: char = 'യ';
     /// \u{d30}: 'ര'
-    pub const MALAYALAM_LETTER_RA: char = 'ര';
+    pub const LETTER_RA: char = 'ര';
     /// \u{d31}: 'റ'
-    pub const MALAYALAM_LETTER_RRA: char = 'റ';
+    pub const LETTER_RRA: char = 'റ';
     /// \u{d32}: 'ല'
-    pub const MALAYALAM_LETTER_LA: char = 'ല';
+    pub const LETTER_LA: char = 'ല';
     /// \u{d33}: 'ള'
-    pub const MALAYALAM_LETTER_LLA: char = 'ള';
+    pub const LETTER_LLA: char = 'ള';
     /// \u{d34}: 'ഴ'
-    pub const MALAYALAM_LETTER_LLLA: char = 'ഴ';
+    pub const LETTER_LLLA: char = 'ഴ';
     /// \u{d35}: 'വ'
-    pub const MALAYALAM_LETTER_VA: char = 'വ';
+    pub const LETTER_VA: char = 'വ';
     /// \u{d36}: 'ശ'
-    pub const MALAYALAM_LETTER_SHA: char = 'ശ';
+    pub const LETTER_SHA: char = 'ശ';
     /// \u{d37}: 'ഷ'
-    pub const MALAYALAM_LETTER_SSA: char = 'ഷ';
+    pub const LETTER_SSA: char = 'ഷ';
     /// \u{d38}: 'സ'
-    pub const MALAYALAM_LETTER_SA: char = 'സ';
+    pub const LETTER_SA: char = 'സ';
     /// \u{d39}: 'ഹ'
-    pub const MALAYALAM_LETTER_HA: char = 'ഹ';
+    pub const LETTER_HA: char = 'ഹ';
     /// \u{d3a}: 'ഺ'
-    pub const MALAYALAM_LETTER_TTTA: char = 'ഺ';
+    pub const LETTER_TTTA: char = 'ഺ';
     /// \u{d3b}: '഻'
-    pub const MALAYALAM_SIGN_VERTICAL_BAR_VIRAMA: char = '഻';
+    pub const SIGN_VERTICAL_BAR_VIRAMA: char = '഻';
     /// \u{d3c}: '഼'
-    pub const MALAYALAM_SIGN_CIRCULAR_VIRAMA: char = '഼';
+    pub const SIGN_CIRCULAR_VIRAMA: char = '഼';
     /// \u{d3d}: 'ഽ'
-    pub const MALAYALAM_SIGN_AVAGRAHA: char = 'ഽ';
+    pub const SIGN_AVAGRAHA: char = 'ഽ';
     /// \u{d3e}: 'ാ'
-    pub const MALAYALAM_VOWEL_SIGN_AA: char = 'ാ';
+    pub const VOWEL_SIGN_AA: char = 'ാ';
     /// \u{d3f}: 'ി'
-    pub const MALAYALAM_VOWEL_SIGN_I: char = 'ി';
+    pub const VOWEL_SIGN_I: char = 'ി';
     /// \u{d40}: 'ീ'
-    pub const MALAYALAM_VOWEL_SIGN_II: char = 'ീ';
+    pub const VOWEL_SIGN_II: char = 'ീ';
     /// \u{d41}: 'ു'
-    pub const MALAYALAM_VOWEL_SIGN_U: char = 'ു';
+    pub const VOWEL_SIGN_U: char = 'ു';
     /// \u{d42}: 'ൂ'
-    pub const MALAYALAM_VOWEL_SIGN_UU: char = 'ൂ';
+    pub const VOWEL_SIGN_UU: char = 'ൂ';
     /// \u{d43}: 'ൃ'
-    pub const MALAYALAM_VOWEL_SIGN_VOCALIC_R: char = 'ൃ';
+    pub const VOWEL_SIGN_VOCALIC_R: char = 'ൃ';
     /// \u{d44}: 'ൄ'
-    pub const MALAYALAM_VOWEL_SIGN_VOCALIC_RR: char = 'ൄ';
+    pub const VOWEL_SIGN_VOCALIC_RR: char = 'ൄ';
     /// \u{d46}: 'െ'
-    pub const MALAYALAM_VOWEL_SIGN_E: char = 'െ';
+    pub const VOWEL_SIGN_E: char = 'െ';
     /// \u{d47}: 'േ'
-    pub const MALAYALAM_VOWEL_SIGN_EE: char = 'േ';
+    pub const VOWEL_SIGN_EE: char = 'േ';
     /// \u{d48}: 'ൈ'
-    pub const MALAYALAM_VOWEL_SIGN_AI: char = 'ൈ';
+    pub const VOWEL_SIGN_AI: char = 'ൈ';
     /// \u{d4a}: 'ൊ'
-    pub const MALAYALAM_VOWEL_SIGN_O: char = 'ൊ';
+    pub const VOWEL_SIGN_O: char = 'ൊ';
     /// \u{d4b}: 'ോ'
-    pub const MALAYALAM_VOWEL_SIGN_OO: char = 'ോ';
+    pub const VOWEL_SIGN_OO: char = 'ോ';
     /// \u{d4c}: 'ൌ'
-    pub const MALAYALAM_VOWEL_SIGN_AU: char = 'ൌ';
+    pub const VOWEL_SIGN_AU: char = 'ൌ';
     /// \u{d4d}: '്'
-    pub const MALAYALAM_SIGN_VIRAMA: char = '്';
+    pub const SIGN_VIRAMA: char = '്';
     /// \u{d4e}: 'ൎ'
-    pub const MALAYALAM_LETTER_DOT_REPH: char = 'ൎ';
+    pub const LETTER_DOT_REPH: char = 'ൎ';
     /// \u{d4f}: '൏'
-    pub const MALAYALAM_SIGN_PARA: char = '൏';
+    pub const SIGN_PARA: char = '൏';
     /// \u{d54}: 'ൔ'
-    pub const MALAYALAM_LETTER_CHILLU_M: char = 'ൔ';
+    pub const LETTER_CHILLU_M: char = 'ൔ';
     /// \u{d55}: 'ൕ'
-    pub const MALAYALAM_LETTER_CHILLU_Y: char = 'ൕ';
+    pub const LETTER_CHILLU_Y: char = 'ൕ';
     /// \u{d56}: 'ൖ'
-    pub const MALAYALAM_LETTER_CHILLU_LLL: char = 'ൖ';
+    pub const LETTER_CHILLU_LLL: char = 'ൖ';
     /// \u{d57}: 'ൗ'
-    pub const MALAYALAM_AU_LENGTH_MARK: char = 'ൗ';
+    pub const AU_LENGTH_MARK: char = 'ൗ';
     /// \u{d58}: '൘'
-    pub const MALAYALAM_FRACTION_ONE_ONE_DASH_HUNDRED_DASH_AND_DASH_SIXTIETH: char = '൘';
+    pub const FRACTION_ONE_ONE_DASH_HUNDRED_DASH_AND_DASH_SIXTIETH: char = '൘';
     /// \u{d59}: '൙'
-    pub const MALAYALAM_FRACTION_ONE_FORTIETH: char = '൙';
+    pub const FRACTION_ONE_FORTIETH: char = '൙';
     /// \u{d5a}: '൚'
-    pub const MALAYALAM_FRACTION_THREE_EIGHTIETHS: char = '൚';
+    pub const FRACTION_THREE_EIGHTIETHS: char = '൚';
     /// \u{d5b}: '൛'
-    pub const MALAYALAM_FRACTION_ONE_TWENTIETH: char = '൛';
+    pub const FRACTION_ONE_TWENTIETH: char = '൛';
     /// \u{d5c}: '൜'
-    pub const MALAYALAM_FRACTION_ONE_TENTH: char = '൜';
+    pub const FRACTION_ONE_TENTH: char = '൜';
     /// \u{d5d}: '൝'
-    pub const MALAYALAM_FRACTION_THREE_TWENTIETHS: char = '൝';
+    pub const FRACTION_THREE_TWENTIETHS: char = '൝';
     /// \u{d5e}: '൞'
-    pub const MALAYALAM_FRACTION_ONE_FIFTH: char = '൞';
+    pub const FRACTION_ONE_FIFTH: char = '൞';
     /// \u{d5f}: 'ൟ'
-    pub const MALAYALAM_LETTER_ARCHAIC_II: char = 'ൟ';
+    pub const LETTER_ARCHAIC_II: char = 'ൟ';
     /// \u{d60}: 'ൠ'
-    pub const MALAYALAM_LETTER_VOCALIC_RR: char = 'ൠ';
+    pub const LETTER_VOCALIC_RR: char = 'ൠ';
     /// \u{d61}: 'ൡ'
-    pub const MALAYALAM_LETTER_VOCALIC_LL: char = 'ൡ';
+    pub const LETTER_VOCALIC_LL: char = 'ൡ';
     /// \u{d62}: 'ൢ'
-    pub const MALAYALAM_VOWEL_SIGN_VOCALIC_L: char = 'ൢ';
+    pub const VOWEL_SIGN_VOCALIC_L: char = 'ൢ';
     /// \u{d63}: 'ൣ'
-    pub const MALAYALAM_VOWEL_SIGN_VOCALIC_LL: char = 'ൣ';
+    pub const VOWEL_SIGN_VOCALIC_LL: char = 'ൣ';
     /// \u{d66}: '൦'
-    pub const MALAYALAM_DIGIT_ZERO: char = '൦';
+    pub const DIGIT_ZERO: char = '൦';
     /// \u{d67}: '൧'
-    pub const MALAYALAM_DIGIT_ONE: char = '൧';
+    pub const DIGIT_ONE: char = '൧';
     /// \u{d68}: '൨'
-    pub const MALAYALAM_DIGIT_TWO: char = '൨';
+    pub const DIGIT_TWO: char = '൨';
     /// \u{d69}: '൩'
-    pub const MALAYALAM_DIGIT_THREE: char = '൩';
+    pub const DIGIT_THREE: char = '൩';
     /// \u{d6a}: '൪'
-    pub const MALAYALAM_DIGIT_FOUR: char = '൪';
+    pub const DIGIT_FOUR: char = '൪';
     /// \u{d6b}: '൫'
-    pub const MALAYALAM_DIGIT_FIVE: char = '൫';
+    pub const DIGIT_FIVE: char = '൫';
     /// \u{d6c}: '൬'
-    pub const MALAYALAM_DIGIT_SIX: char = '൬';
+    pub const DIGIT_SIX: char = '൬';
     /// \u{d6d}: '൭'
-    pub const MALAYALAM_DIGIT_SEVEN: char = '൭';
+    pub const DIGIT_SEVEN: char = '൭';
     /// \u{d6e}: '൮'
-    pub const MALAYALAM_DIGIT_EIGHT: char = '൮';
+    pub const DIGIT_EIGHT: char = '൮';
     /// \u{d6f}: '൯'
-    pub const MALAYALAM_DIGIT_NINE: char = '൯';
+    pub const DIGIT_NINE: char = '൯';
     /// \u{d70}: '൰'
-    pub const MALAYALAM_NUMBER_TEN: char = '൰';
+    pub const NUMBER_TEN: char = '൰';
     /// \u{d71}: '൱'
-    pub const MALAYALAM_NUMBER_ONE_HUNDRED: char = '൱';
+    pub const NUMBER_ONE_HUNDRED: char = '൱';
     /// \u{d72}: '൲'
-    pub const MALAYALAM_NUMBER_ONE_THOUSAND: char = '൲';
+    pub const NUMBER_ONE_THOUSAND: char = '൲';
     /// \u{d73}: '൳'
-    pub const MALAYALAM_FRACTION_ONE_QUARTER: char = '൳';
+    pub const FRACTION_ONE_QUARTER: char = '൳';
     /// \u{d74}: '൴'
-    pub const MALAYALAM_FRACTION_ONE_HALF: char = '൴';
+    pub const FRACTION_ONE_HALF: char = '൴';
     /// \u{d75}: '൵'
-    pub const MALAYALAM_FRACTION_THREE_QUARTERS: char = '൵';
+    pub const FRACTION_THREE_QUARTERS: char = '൵';
     /// \u{d76}: '൶'
-    pub const MALAYALAM_FRACTION_ONE_SIXTEENTH: char = '൶';
+    pub const FRACTION_ONE_SIXTEENTH: char = '൶';
     /// \u{d77}: '൷'
-    pub const MALAYALAM_FRACTION_ONE_EIGHTH: char = '൷';
+    pub const FRACTION_ONE_EIGHTH: char = '൷';
     /// \u{d78}: '൸'
-    pub const MALAYALAM_FRACTION_THREE_SIXTEENTHS: char = '൸';
+    pub const FRACTION_THREE_SIXTEENTHS: char = '൸';
     /// \u{d79}: '൹'
-    pub const MALAYALAM_DATE_MARK: char = '൹';
+    pub const DATE_MARK: char = '൹';
     /// \u{d7a}: 'ൺ'
-    pub const MALAYALAM_LETTER_CHILLU_NN: char = 'ൺ';
+    pub const LETTER_CHILLU_NN: char = 'ൺ';
     /// \u{d7b}: 'ൻ'
-    pub const MALAYALAM_LETTER_CHILLU_N: char = 'ൻ';
+    pub const LETTER_CHILLU_N: char = 'ൻ';
     /// \u{d7c}: 'ർ'
-    pub const MALAYALAM_LETTER_CHILLU_RR: char = 'ർ';
+    pub const LETTER_CHILLU_RR: char = 'ർ';
     /// \u{d7d}: 'ൽ'
-    pub const MALAYALAM_LETTER_CHILLU_L: char = 'ൽ';
+    pub const LETTER_CHILLU_L: char = 'ൽ';
     /// \u{d7e}: 'ൾ'
-    pub const MALAYALAM_LETTER_CHILLU_LL: char = 'ൾ';
+    pub const LETTER_CHILLU_LL: char = 'ൾ';
 }
 
 /// \u{d00} → \u{d7f}\
@@ -256,359 +256,359 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Malayalam {
     /// \u{d00}: 'ഀ'
-    MalayalamSignCombiningAnusvaraAbove,
+    SignCombiningAnusvaraAbove,
     /// \u{d01}: 'ഁ'
-    MalayalamSignCandrabindu,
+    SignCandrabindu,
     /// \u{d02}: 'ം'
-    MalayalamSignAnusvara,
+    SignAnusvara,
     /// \u{d03}: 'ഃ'
-    MalayalamSignVisarga,
+    SignVisarga,
     /// \u{d05}: 'അ'
-    MalayalamLetterA,
+    LetterA,
     /// \u{d06}: 'ആ'
-    MalayalamLetterAa,
+    LetterAa,
     /// \u{d07}: 'ഇ'
-    MalayalamLetterI,
+    LetterI,
     /// \u{d08}: 'ഈ'
-    MalayalamLetterIi,
+    LetterIi,
     /// \u{d09}: 'ഉ'
-    MalayalamLetterU,
+    LetterU,
     /// \u{d0a}: 'ഊ'
-    MalayalamLetterUu,
+    LetterUu,
     /// \u{d0b}: 'ഋ'
-    MalayalamLetterVocalicR,
+    LetterVocalicR,
     /// \u{d0c}: 'ഌ'
-    MalayalamLetterVocalicL,
+    LetterVocalicL,
     /// \u{d0e}: 'എ'
-    MalayalamLetterE,
+    LetterE,
     /// \u{d0f}: 'ഏ'
-    MalayalamLetterEe,
+    LetterEe,
     /// \u{d10}: 'ഐ'
-    MalayalamLetterAi,
+    LetterAi,
     /// \u{d12}: 'ഒ'
-    MalayalamLetterO,
+    LetterO,
     /// \u{d13}: 'ഓ'
-    MalayalamLetterOo,
+    LetterOo,
     /// \u{d14}: 'ഔ'
-    MalayalamLetterAu,
+    LetterAu,
     /// \u{d15}: 'ക'
-    MalayalamLetterKa,
+    LetterKa,
     /// \u{d16}: 'ഖ'
-    MalayalamLetterKha,
+    LetterKha,
     /// \u{d17}: 'ഗ'
-    MalayalamLetterGa,
+    LetterGa,
     /// \u{d18}: 'ഘ'
-    MalayalamLetterGha,
+    LetterGha,
     /// \u{d19}: 'ങ'
-    MalayalamLetterNga,
+    LetterNga,
     /// \u{d1a}: 'ച'
-    MalayalamLetterCa,
+    LetterCa,
     /// \u{d1b}: 'ഛ'
-    MalayalamLetterCha,
+    LetterCha,
     /// \u{d1c}: 'ജ'
-    MalayalamLetterJa,
+    LetterJa,
     /// \u{d1d}: 'ഝ'
-    MalayalamLetterJha,
+    LetterJha,
     /// \u{d1e}: 'ഞ'
-    MalayalamLetterNya,
+    LetterNya,
     /// \u{d1f}: 'ട'
-    MalayalamLetterTta,
+    LetterTta,
     /// \u{d20}: 'ഠ'
-    MalayalamLetterTtha,
+    LetterTtha,
     /// \u{d21}: 'ഡ'
-    MalayalamLetterDda,
+    LetterDda,
     /// \u{d22}: 'ഢ'
-    MalayalamLetterDdha,
+    LetterDdha,
     /// \u{d23}: 'ണ'
-    MalayalamLetterNna,
+    LetterNna,
     /// \u{d24}: 'ത'
-    MalayalamLetterTa,
+    LetterTa,
     /// \u{d25}: 'ഥ'
-    MalayalamLetterTha,
+    LetterTha,
     /// \u{d26}: 'ദ'
-    MalayalamLetterDa,
+    LetterDa,
     /// \u{d27}: 'ധ'
-    MalayalamLetterDha,
+    LetterDha,
     /// \u{d28}: 'ന'
-    MalayalamLetterNa,
+    LetterNa,
     /// \u{d29}: 'ഩ'
-    MalayalamLetterNnna,
+    LetterNnna,
     /// \u{d2a}: 'പ'
-    MalayalamLetterPa,
+    LetterPa,
     /// \u{d2b}: 'ഫ'
-    MalayalamLetterPha,
+    LetterPha,
     /// \u{d2c}: 'ബ'
-    MalayalamLetterBa,
+    LetterBa,
     /// \u{d2d}: 'ഭ'
-    MalayalamLetterBha,
+    LetterBha,
     /// \u{d2e}: 'മ'
-    MalayalamLetterMa,
+    LetterMa,
     /// \u{d2f}: 'യ'
-    MalayalamLetterYa,
+    LetterYa,
     /// \u{d30}: 'ര'
-    MalayalamLetterRa,
+    LetterRa,
     /// \u{d31}: 'റ'
-    MalayalamLetterRra,
+    LetterRra,
     /// \u{d32}: 'ല'
-    MalayalamLetterLa,
+    LetterLa,
     /// \u{d33}: 'ള'
-    MalayalamLetterLla,
+    LetterLla,
     /// \u{d34}: 'ഴ'
-    MalayalamLetterLlla,
+    LetterLlla,
     /// \u{d35}: 'വ'
-    MalayalamLetterVa,
+    LetterVa,
     /// \u{d36}: 'ശ'
-    MalayalamLetterSha,
+    LetterSha,
     /// \u{d37}: 'ഷ'
-    MalayalamLetterSsa,
+    LetterSsa,
     /// \u{d38}: 'സ'
-    MalayalamLetterSa,
+    LetterSa,
     /// \u{d39}: 'ഹ'
-    MalayalamLetterHa,
+    LetterHa,
     /// \u{d3a}: 'ഺ'
-    MalayalamLetterTtta,
+    LetterTtta,
     /// \u{d3b}: '഻'
-    MalayalamSignVerticalBarVirama,
+    SignVerticalBarVirama,
     /// \u{d3c}: '഼'
-    MalayalamSignCircularVirama,
+    SignCircularVirama,
     /// \u{d3d}: 'ഽ'
-    MalayalamSignAvagraha,
+    SignAvagraha,
     /// \u{d3e}: 'ാ'
-    MalayalamVowelSignAa,
+    VowelSignAa,
     /// \u{d3f}: 'ി'
-    MalayalamVowelSignI,
+    VowelSignI,
     /// \u{d40}: 'ീ'
-    MalayalamVowelSignIi,
+    VowelSignIi,
     /// \u{d41}: 'ു'
-    MalayalamVowelSignU,
+    VowelSignU,
     /// \u{d42}: 'ൂ'
-    MalayalamVowelSignUu,
+    VowelSignUu,
     /// \u{d43}: 'ൃ'
-    MalayalamVowelSignVocalicR,
+    VowelSignVocalicR,
     /// \u{d44}: 'ൄ'
-    MalayalamVowelSignVocalicRr,
+    VowelSignVocalicRr,
     /// \u{d46}: 'െ'
-    MalayalamVowelSignE,
+    VowelSignE,
     /// \u{d47}: 'േ'
-    MalayalamVowelSignEe,
+    VowelSignEe,
     /// \u{d48}: 'ൈ'
-    MalayalamVowelSignAi,
+    VowelSignAi,
     /// \u{d4a}: 'ൊ'
-    MalayalamVowelSignO,
+    VowelSignO,
     /// \u{d4b}: 'ോ'
-    MalayalamVowelSignOo,
+    VowelSignOo,
     /// \u{d4c}: 'ൌ'
-    MalayalamVowelSignAu,
+    VowelSignAu,
     /// \u{d4d}: '്'
-    MalayalamSignVirama,
+    SignVirama,
     /// \u{d4e}: 'ൎ'
-    MalayalamLetterDotReph,
+    LetterDotReph,
     /// \u{d4f}: '൏'
-    MalayalamSignPara,
+    SignPara,
     /// \u{d54}: 'ൔ'
-    MalayalamLetterChilluM,
+    LetterChilluM,
     /// \u{d55}: 'ൕ'
-    MalayalamLetterChilluY,
+    LetterChilluY,
     /// \u{d56}: 'ൖ'
-    MalayalamLetterChilluLll,
+    LetterChilluLll,
     /// \u{d57}: 'ൗ'
-    MalayalamAuLengthMark,
+    AuLengthMark,
     /// \u{d58}: '൘'
-    MalayalamFractionOneOneDashHundredDashAndDashSixtieth,
+    FractionOneOneDashHundredDashAndDashSixtieth,
     /// \u{d59}: '൙'
-    MalayalamFractionOneFortieth,
+    FractionOneFortieth,
     /// \u{d5a}: '൚'
-    MalayalamFractionThreeEightieths,
+    FractionThreeEightieths,
     /// \u{d5b}: '൛'
-    MalayalamFractionOneTwentieth,
+    FractionOneTwentieth,
     /// \u{d5c}: '൜'
-    MalayalamFractionOneTenth,
+    FractionOneTenth,
     /// \u{d5d}: '൝'
-    MalayalamFractionThreeTwentieths,
+    FractionThreeTwentieths,
     /// \u{d5e}: '൞'
-    MalayalamFractionOneFifth,
+    FractionOneFifth,
     /// \u{d5f}: 'ൟ'
-    MalayalamLetterArchaicIi,
+    LetterArchaicIi,
     /// \u{d60}: 'ൠ'
-    MalayalamLetterVocalicRr,
+    LetterVocalicRr,
     /// \u{d61}: 'ൡ'
-    MalayalamLetterVocalicLl,
+    LetterVocalicLl,
     /// \u{d62}: 'ൢ'
-    MalayalamVowelSignVocalicL,
+    VowelSignVocalicL,
     /// \u{d63}: 'ൣ'
-    MalayalamVowelSignVocalicLl,
+    VowelSignVocalicLl,
     /// \u{d66}: '൦'
-    MalayalamDigitZero,
+    DigitZero,
     /// \u{d67}: '൧'
-    MalayalamDigitOne,
+    DigitOne,
     /// \u{d68}: '൨'
-    MalayalamDigitTwo,
+    DigitTwo,
     /// \u{d69}: '൩'
-    MalayalamDigitThree,
+    DigitThree,
     /// \u{d6a}: '൪'
-    MalayalamDigitFour,
+    DigitFour,
     /// \u{d6b}: '൫'
-    MalayalamDigitFive,
+    DigitFive,
     /// \u{d6c}: '൬'
-    MalayalamDigitSix,
+    DigitSix,
     /// \u{d6d}: '൭'
-    MalayalamDigitSeven,
+    DigitSeven,
     /// \u{d6e}: '൮'
-    MalayalamDigitEight,
+    DigitEight,
     /// \u{d6f}: '൯'
-    MalayalamDigitNine,
+    DigitNine,
     /// \u{d70}: '൰'
-    MalayalamNumberTen,
+    NumberTen,
     /// \u{d71}: '൱'
-    MalayalamNumberOneHundred,
+    NumberOneHundred,
     /// \u{d72}: '൲'
-    MalayalamNumberOneThousand,
+    NumberOneThousand,
     /// \u{d73}: '൳'
-    MalayalamFractionOneQuarter,
+    FractionOneQuarter,
     /// \u{d74}: '൴'
-    MalayalamFractionOneHalf,
+    FractionOneHalf,
     /// \u{d75}: '൵'
-    MalayalamFractionThreeQuarters,
+    FractionThreeQuarters,
     /// \u{d76}: '൶'
-    MalayalamFractionOneSixteenth,
+    FractionOneSixteenth,
     /// \u{d77}: '൷'
-    MalayalamFractionOneEighth,
+    FractionOneEighth,
     /// \u{d78}: '൸'
-    MalayalamFractionThreeSixteenths,
+    FractionThreeSixteenths,
     /// \u{d79}: '൹'
-    MalayalamDateMark,
+    DateMark,
     /// \u{d7a}: 'ൺ'
-    MalayalamLetterChilluNn,
+    LetterChilluNn,
     /// \u{d7b}: 'ൻ'
-    MalayalamLetterChilluN,
+    LetterChilluN,
     /// \u{d7c}: 'ർ'
-    MalayalamLetterChilluRr,
+    LetterChilluRr,
     /// \u{d7d}: 'ൽ'
-    MalayalamLetterChilluL,
+    LetterChilluL,
     /// \u{d7e}: 'ൾ'
-    MalayalamLetterChilluLl,
+    LetterChilluLl,
 }
 
 impl Into<char> for Malayalam {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Malayalam::MalayalamSignCombiningAnusvaraAbove => MALAYALAM_SIGN_COMBINING_ANUSVARA_ABOVE,
-            Malayalam::MalayalamSignCandrabindu => MALAYALAM_SIGN_CANDRABINDU,
-            Malayalam::MalayalamSignAnusvara => MALAYALAM_SIGN_ANUSVARA,
-            Malayalam::MalayalamSignVisarga => MALAYALAM_SIGN_VISARGA,
-            Malayalam::MalayalamLetterA => MALAYALAM_LETTER_A,
-            Malayalam::MalayalamLetterAa => MALAYALAM_LETTER_AA,
-            Malayalam::MalayalamLetterI => MALAYALAM_LETTER_I,
-            Malayalam::MalayalamLetterIi => MALAYALAM_LETTER_II,
-            Malayalam::MalayalamLetterU => MALAYALAM_LETTER_U,
-            Malayalam::MalayalamLetterUu => MALAYALAM_LETTER_UU,
-            Malayalam::MalayalamLetterVocalicR => MALAYALAM_LETTER_VOCALIC_R,
-            Malayalam::MalayalamLetterVocalicL => MALAYALAM_LETTER_VOCALIC_L,
-            Malayalam::MalayalamLetterE => MALAYALAM_LETTER_E,
-            Malayalam::MalayalamLetterEe => MALAYALAM_LETTER_EE,
-            Malayalam::MalayalamLetterAi => MALAYALAM_LETTER_AI,
-            Malayalam::MalayalamLetterO => MALAYALAM_LETTER_O,
-            Malayalam::MalayalamLetterOo => MALAYALAM_LETTER_OO,
-            Malayalam::MalayalamLetterAu => MALAYALAM_LETTER_AU,
-            Malayalam::MalayalamLetterKa => MALAYALAM_LETTER_KA,
-            Malayalam::MalayalamLetterKha => MALAYALAM_LETTER_KHA,
-            Malayalam::MalayalamLetterGa => MALAYALAM_LETTER_GA,
-            Malayalam::MalayalamLetterGha => MALAYALAM_LETTER_GHA,
-            Malayalam::MalayalamLetterNga => MALAYALAM_LETTER_NGA,
-            Malayalam::MalayalamLetterCa => MALAYALAM_LETTER_CA,
-            Malayalam::MalayalamLetterCha => MALAYALAM_LETTER_CHA,
-            Malayalam::MalayalamLetterJa => MALAYALAM_LETTER_JA,
-            Malayalam::MalayalamLetterJha => MALAYALAM_LETTER_JHA,
-            Malayalam::MalayalamLetterNya => MALAYALAM_LETTER_NYA,
-            Malayalam::MalayalamLetterTta => MALAYALAM_LETTER_TTA,
-            Malayalam::MalayalamLetterTtha => MALAYALAM_LETTER_TTHA,
-            Malayalam::MalayalamLetterDda => MALAYALAM_LETTER_DDA,
-            Malayalam::MalayalamLetterDdha => MALAYALAM_LETTER_DDHA,
-            Malayalam::MalayalamLetterNna => MALAYALAM_LETTER_NNA,
-            Malayalam::MalayalamLetterTa => MALAYALAM_LETTER_TA,
-            Malayalam::MalayalamLetterTha => MALAYALAM_LETTER_THA,
-            Malayalam::MalayalamLetterDa => MALAYALAM_LETTER_DA,
-            Malayalam::MalayalamLetterDha => MALAYALAM_LETTER_DHA,
-            Malayalam::MalayalamLetterNa => MALAYALAM_LETTER_NA,
-            Malayalam::MalayalamLetterNnna => MALAYALAM_LETTER_NNNA,
-            Malayalam::MalayalamLetterPa => MALAYALAM_LETTER_PA,
-            Malayalam::MalayalamLetterPha => MALAYALAM_LETTER_PHA,
-            Malayalam::MalayalamLetterBa => MALAYALAM_LETTER_BA,
-            Malayalam::MalayalamLetterBha => MALAYALAM_LETTER_BHA,
-            Malayalam::MalayalamLetterMa => MALAYALAM_LETTER_MA,
-            Malayalam::MalayalamLetterYa => MALAYALAM_LETTER_YA,
-            Malayalam::MalayalamLetterRa => MALAYALAM_LETTER_RA,
-            Malayalam::MalayalamLetterRra => MALAYALAM_LETTER_RRA,
-            Malayalam::MalayalamLetterLa => MALAYALAM_LETTER_LA,
-            Malayalam::MalayalamLetterLla => MALAYALAM_LETTER_LLA,
-            Malayalam::MalayalamLetterLlla => MALAYALAM_LETTER_LLLA,
-            Malayalam::MalayalamLetterVa => MALAYALAM_LETTER_VA,
-            Malayalam::MalayalamLetterSha => MALAYALAM_LETTER_SHA,
-            Malayalam::MalayalamLetterSsa => MALAYALAM_LETTER_SSA,
-            Malayalam::MalayalamLetterSa => MALAYALAM_LETTER_SA,
-            Malayalam::MalayalamLetterHa => MALAYALAM_LETTER_HA,
-            Malayalam::MalayalamLetterTtta => MALAYALAM_LETTER_TTTA,
-            Malayalam::MalayalamSignVerticalBarVirama => MALAYALAM_SIGN_VERTICAL_BAR_VIRAMA,
-            Malayalam::MalayalamSignCircularVirama => MALAYALAM_SIGN_CIRCULAR_VIRAMA,
-            Malayalam::MalayalamSignAvagraha => MALAYALAM_SIGN_AVAGRAHA,
-            Malayalam::MalayalamVowelSignAa => MALAYALAM_VOWEL_SIGN_AA,
-            Malayalam::MalayalamVowelSignI => MALAYALAM_VOWEL_SIGN_I,
-            Malayalam::MalayalamVowelSignIi => MALAYALAM_VOWEL_SIGN_II,
-            Malayalam::MalayalamVowelSignU => MALAYALAM_VOWEL_SIGN_U,
-            Malayalam::MalayalamVowelSignUu => MALAYALAM_VOWEL_SIGN_UU,
-            Malayalam::MalayalamVowelSignVocalicR => MALAYALAM_VOWEL_SIGN_VOCALIC_R,
-            Malayalam::MalayalamVowelSignVocalicRr => MALAYALAM_VOWEL_SIGN_VOCALIC_RR,
-            Malayalam::MalayalamVowelSignE => MALAYALAM_VOWEL_SIGN_E,
-            Malayalam::MalayalamVowelSignEe => MALAYALAM_VOWEL_SIGN_EE,
-            Malayalam::MalayalamVowelSignAi => MALAYALAM_VOWEL_SIGN_AI,
-            Malayalam::MalayalamVowelSignO => MALAYALAM_VOWEL_SIGN_O,
-            Malayalam::MalayalamVowelSignOo => MALAYALAM_VOWEL_SIGN_OO,
-            Malayalam::MalayalamVowelSignAu => MALAYALAM_VOWEL_SIGN_AU,
-            Malayalam::MalayalamSignVirama => MALAYALAM_SIGN_VIRAMA,
-            Malayalam::MalayalamLetterDotReph => MALAYALAM_LETTER_DOT_REPH,
-            Malayalam::MalayalamSignPara => MALAYALAM_SIGN_PARA,
-            Malayalam::MalayalamLetterChilluM => MALAYALAM_LETTER_CHILLU_M,
-            Malayalam::MalayalamLetterChilluY => MALAYALAM_LETTER_CHILLU_Y,
-            Malayalam::MalayalamLetterChilluLll => MALAYALAM_LETTER_CHILLU_LLL,
-            Malayalam::MalayalamAuLengthMark => MALAYALAM_AU_LENGTH_MARK,
-            Malayalam::MalayalamFractionOneOneDashHundredDashAndDashSixtieth => MALAYALAM_FRACTION_ONE_ONE_DASH_HUNDRED_DASH_AND_DASH_SIXTIETH,
-            Malayalam::MalayalamFractionOneFortieth => MALAYALAM_FRACTION_ONE_FORTIETH,
-            Malayalam::MalayalamFractionThreeEightieths => MALAYALAM_FRACTION_THREE_EIGHTIETHS,
-            Malayalam::MalayalamFractionOneTwentieth => MALAYALAM_FRACTION_ONE_TWENTIETH,
-            Malayalam::MalayalamFractionOneTenth => MALAYALAM_FRACTION_ONE_TENTH,
-            Malayalam::MalayalamFractionThreeTwentieths => MALAYALAM_FRACTION_THREE_TWENTIETHS,
-            Malayalam::MalayalamFractionOneFifth => MALAYALAM_FRACTION_ONE_FIFTH,
-            Malayalam::MalayalamLetterArchaicIi => MALAYALAM_LETTER_ARCHAIC_II,
-            Malayalam::MalayalamLetterVocalicRr => MALAYALAM_LETTER_VOCALIC_RR,
-            Malayalam::MalayalamLetterVocalicLl => MALAYALAM_LETTER_VOCALIC_LL,
-            Malayalam::MalayalamVowelSignVocalicL => MALAYALAM_VOWEL_SIGN_VOCALIC_L,
-            Malayalam::MalayalamVowelSignVocalicLl => MALAYALAM_VOWEL_SIGN_VOCALIC_LL,
-            Malayalam::MalayalamDigitZero => MALAYALAM_DIGIT_ZERO,
-            Malayalam::MalayalamDigitOne => MALAYALAM_DIGIT_ONE,
-            Malayalam::MalayalamDigitTwo => MALAYALAM_DIGIT_TWO,
-            Malayalam::MalayalamDigitThree => MALAYALAM_DIGIT_THREE,
-            Malayalam::MalayalamDigitFour => MALAYALAM_DIGIT_FOUR,
-            Malayalam::MalayalamDigitFive => MALAYALAM_DIGIT_FIVE,
-            Malayalam::MalayalamDigitSix => MALAYALAM_DIGIT_SIX,
-            Malayalam::MalayalamDigitSeven => MALAYALAM_DIGIT_SEVEN,
-            Malayalam::MalayalamDigitEight => MALAYALAM_DIGIT_EIGHT,
-            Malayalam::MalayalamDigitNine => MALAYALAM_DIGIT_NINE,
-            Malayalam::MalayalamNumberTen => MALAYALAM_NUMBER_TEN,
-            Malayalam::MalayalamNumberOneHundred => MALAYALAM_NUMBER_ONE_HUNDRED,
-            Malayalam::MalayalamNumberOneThousand => MALAYALAM_NUMBER_ONE_THOUSAND,
-            Malayalam::MalayalamFractionOneQuarter => MALAYALAM_FRACTION_ONE_QUARTER,
-            Malayalam::MalayalamFractionOneHalf => MALAYALAM_FRACTION_ONE_HALF,
-            Malayalam::MalayalamFractionThreeQuarters => MALAYALAM_FRACTION_THREE_QUARTERS,
-            Malayalam::MalayalamFractionOneSixteenth => MALAYALAM_FRACTION_ONE_SIXTEENTH,
-            Malayalam::MalayalamFractionOneEighth => MALAYALAM_FRACTION_ONE_EIGHTH,
-            Malayalam::MalayalamFractionThreeSixteenths => MALAYALAM_FRACTION_THREE_SIXTEENTHS,
-            Malayalam::MalayalamDateMark => MALAYALAM_DATE_MARK,
-            Malayalam::MalayalamLetterChilluNn => MALAYALAM_LETTER_CHILLU_NN,
-            Malayalam::MalayalamLetterChilluN => MALAYALAM_LETTER_CHILLU_N,
-            Malayalam::MalayalamLetterChilluRr => MALAYALAM_LETTER_CHILLU_RR,
-            Malayalam::MalayalamLetterChilluL => MALAYALAM_LETTER_CHILLU_L,
-            Malayalam::MalayalamLetterChilluLl => MALAYALAM_LETTER_CHILLU_LL,
+            Malayalam::SignCombiningAnusvaraAbove => SIGN_COMBINING_ANUSVARA_ABOVE,
+            Malayalam::SignCandrabindu => SIGN_CANDRABINDU,
+            Malayalam::SignAnusvara => SIGN_ANUSVARA,
+            Malayalam::SignVisarga => SIGN_VISARGA,
+            Malayalam::LetterA => LETTER_A,
+            Malayalam::LetterAa => LETTER_AA,
+            Malayalam::LetterI => LETTER_I,
+            Malayalam::LetterIi => LETTER_II,
+            Malayalam::LetterU => LETTER_U,
+            Malayalam::LetterUu => LETTER_UU,
+            Malayalam::LetterVocalicR => LETTER_VOCALIC_R,
+            Malayalam::LetterVocalicL => LETTER_VOCALIC_L,
+            Malayalam::LetterE => LETTER_E,
+            Malayalam::LetterEe => LETTER_EE,
+            Malayalam::LetterAi => LETTER_AI,
+            Malayalam::LetterO => LETTER_O,
+            Malayalam::LetterOo => LETTER_OO,
+            Malayalam::LetterAu => LETTER_AU,
+            Malayalam::LetterKa => LETTER_KA,
+            Malayalam::LetterKha => LETTER_KHA,
+            Malayalam::LetterGa => LETTER_GA,
+            Malayalam::LetterGha => LETTER_GHA,
+            Malayalam::LetterNga => LETTER_NGA,
+            Malayalam::LetterCa => LETTER_CA,
+            Malayalam::LetterCha => LETTER_CHA,
+            Malayalam::LetterJa => LETTER_JA,
+            Malayalam::LetterJha => LETTER_JHA,
+            Malayalam::LetterNya => LETTER_NYA,
+            Malayalam::LetterTta => LETTER_TTA,
+            Malayalam::LetterTtha => LETTER_TTHA,
+            Malayalam::LetterDda => LETTER_DDA,
+            Malayalam::LetterDdha => LETTER_DDHA,
+            Malayalam::LetterNna => LETTER_NNA,
+            Malayalam::LetterTa => LETTER_TA,
+            Malayalam::LetterTha => LETTER_THA,
+            Malayalam::LetterDa => LETTER_DA,
+            Malayalam::LetterDha => LETTER_DHA,
+            Malayalam::LetterNa => LETTER_NA,
+            Malayalam::LetterNnna => LETTER_NNNA,
+            Malayalam::LetterPa => LETTER_PA,
+            Malayalam::LetterPha => LETTER_PHA,
+            Malayalam::LetterBa => LETTER_BA,
+            Malayalam::LetterBha => LETTER_BHA,
+            Malayalam::LetterMa => LETTER_MA,
+            Malayalam::LetterYa => LETTER_YA,
+            Malayalam::LetterRa => LETTER_RA,
+            Malayalam::LetterRra => LETTER_RRA,
+            Malayalam::LetterLa => LETTER_LA,
+            Malayalam::LetterLla => LETTER_LLA,
+            Malayalam::LetterLlla => LETTER_LLLA,
+            Malayalam::LetterVa => LETTER_VA,
+            Malayalam::LetterSha => LETTER_SHA,
+            Malayalam::LetterSsa => LETTER_SSA,
+            Malayalam::LetterSa => LETTER_SA,
+            Malayalam::LetterHa => LETTER_HA,
+            Malayalam::LetterTtta => LETTER_TTTA,
+            Malayalam::SignVerticalBarVirama => SIGN_VERTICAL_BAR_VIRAMA,
+            Malayalam::SignCircularVirama => SIGN_CIRCULAR_VIRAMA,
+            Malayalam::SignAvagraha => SIGN_AVAGRAHA,
+            Malayalam::VowelSignAa => VOWEL_SIGN_AA,
+            Malayalam::VowelSignI => VOWEL_SIGN_I,
+            Malayalam::VowelSignIi => VOWEL_SIGN_II,
+            Malayalam::VowelSignU => VOWEL_SIGN_U,
+            Malayalam::VowelSignUu => VOWEL_SIGN_UU,
+            Malayalam::VowelSignVocalicR => VOWEL_SIGN_VOCALIC_R,
+            Malayalam::VowelSignVocalicRr => VOWEL_SIGN_VOCALIC_RR,
+            Malayalam::VowelSignE => VOWEL_SIGN_E,
+            Malayalam::VowelSignEe => VOWEL_SIGN_EE,
+            Malayalam::VowelSignAi => VOWEL_SIGN_AI,
+            Malayalam::VowelSignO => VOWEL_SIGN_O,
+            Malayalam::VowelSignOo => VOWEL_SIGN_OO,
+            Malayalam::VowelSignAu => VOWEL_SIGN_AU,
+            Malayalam::SignVirama => SIGN_VIRAMA,
+            Malayalam::LetterDotReph => LETTER_DOT_REPH,
+            Malayalam::SignPara => SIGN_PARA,
+            Malayalam::LetterChilluM => LETTER_CHILLU_M,
+            Malayalam::LetterChilluY => LETTER_CHILLU_Y,
+            Malayalam::LetterChilluLll => LETTER_CHILLU_LLL,
+            Malayalam::AuLengthMark => AU_LENGTH_MARK,
+            Malayalam::FractionOneOneDashHundredDashAndDashSixtieth => FRACTION_ONE_ONE_DASH_HUNDRED_DASH_AND_DASH_SIXTIETH,
+            Malayalam::FractionOneFortieth => FRACTION_ONE_FORTIETH,
+            Malayalam::FractionThreeEightieths => FRACTION_THREE_EIGHTIETHS,
+            Malayalam::FractionOneTwentieth => FRACTION_ONE_TWENTIETH,
+            Malayalam::FractionOneTenth => FRACTION_ONE_TENTH,
+            Malayalam::FractionThreeTwentieths => FRACTION_THREE_TWENTIETHS,
+            Malayalam::FractionOneFifth => FRACTION_ONE_FIFTH,
+            Malayalam::LetterArchaicIi => LETTER_ARCHAIC_II,
+            Malayalam::LetterVocalicRr => LETTER_VOCALIC_RR,
+            Malayalam::LetterVocalicLl => LETTER_VOCALIC_LL,
+            Malayalam::VowelSignVocalicL => VOWEL_SIGN_VOCALIC_L,
+            Malayalam::VowelSignVocalicLl => VOWEL_SIGN_VOCALIC_LL,
+            Malayalam::DigitZero => DIGIT_ZERO,
+            Malayalam::DigitOne => DIGIT_ONE,
+            Malayalam::DigitTwo => DIGIT_TWO,
+            Malayalam::DigitThree => DIGIT_THREE,
+            Malayalam::DigitFour => DIGIT_FOUR,
+            Malayalam::DigitFive => DIGIT_FIVE,
+            Malayalam::DigitSix => DIGIT_SIX,
+            Malayalam::DigitSeven => DIGIT_SEVEN,
+            Malayalam::DigitEight => DIGIT_EIGHT,
+            Malayalam::DigitNine => DIGIT_NINE,
+            Malayalam::NumberTen => NUMBER_TEN,
+            Malayalam::NumberOneHundred => NUMBER_ONE_HUNDRED,
+            Malayalam::NumberOneThousand => NUMBER_ONE_THOUSAND,
+            Malayalam::FractionOneQuarter => FRACTION_ONE_QUARTER,
+            Malayalam::FractionOneHalf => FRACTION_ONE_HALF,
+            Malayalam::FractionThreeQuarters => FRACTION_THREE_QUARTERS,
+            Malayalam::FractionOneSixteenth => FRACTION_ONE_SIXTEENTH,
+            Malayalam::FractionOneEighth => FRACTION_ONE_EIGHTH,
+            Malayalam::FractionThreeSixteenths => FRACTION_THREE_SIXTEENTHS,
+            Malayalam::DateMark => DATE_MARK,
+            Malayalam::LetterChilluNn => LETTER_CHILLU_NN,
+            Malayalam::LetterChilluN => LETTER_CHILLU_N,
+            Malayalam::LetterChilluRr => LETTER_CHILLU_RR,
+            Malayalam::LetterChilluL => LETTER_CHILLU_L,
+            Malayalam::LetterChilluLl => LETTER_CHILLU_LL,
         }
     }
 }
@@ -618,122 +618,122 @@ impl std::convert::TryFrom<char> for Malayalam {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            MALAYALAM_SIGN_COMBINING_ANUSVARA_ABOVE => Ok(Malayalam::MalayalamSignCombiningAnusvaraAbove),
-            MALAYALAM_SIGN_CANDRABINDU => Ok(Malayalam::MalayalamSignCandrabindu),
-            MALAYALAM_SIGN_ANUSVARA => Ok(Malayalam::MalayalamSignAnusvara),
-            MALAYALAM_SIGN_VISARGA => Ok(Malayalam::MalayalamSignVisarga),
-            MALAYALAM_LETTER_A => Ok(Malayalam::MalayalamLetterA),
-            MALAYALAM_LETTER_AA => Ok(Malayalam::MalayalamLetterAa),
-            MALAYALAM_LETTER_I => Ok(Malayalam::MalayalamLetterI),
-            MALAYALAM_LETTER_II => Ok(Malayalam::MalayalamLetterIi),
-            MALAYALAM_LETTER_U => Ok(Malayalam::MalayalamLetterU),
-            MALAYALAM_LETTER_UU => Ok(Malayalam::MalayalamLetterUu),
-            MALAYALAM_LETTER_VOCALIC_R => Ok(Malayalam::MalayalamLetterVocalicR),
-            MALAYALAM_LETTER_VOCALIC_L => Ok(Malayalam::MalayalamLetterVocalicL),
-            MALAYALAM_LETTER_E => Ok(Malayalam::MalayalamLetterE),
-            MALAYALAM_LETTER_EE => Ok(Malayalam::MalayalamLetterEe),
-            MALAYALAM_LETTER_AI => Ok(Malayalam::MalayalamLetterAi),
-            MALAYALAM_LETTER_O => Ok(Malayalam::MalayalamLetterO),
-            MALAYALAM_LETTER_OO => Ok(Malayalam::MalayalamLetterOo),
-            MALAYALAM_LETTER_AU => Ok(Malayalam::MalayalamLetterAu),
-            MALAYALAM_LETTER_KA => Ok(Malayalam::MalayalamLetterKa),
-            MALAYALAM_LETTER_KHA => Ok(Malayalam::MalayalamLetterKha),
-            MALAYALAM_LETTER_GA => Ok(Malayalam::MalayalamLetterGa),
-            MALAYALAM_LETTER_GHA => Ok(Malayalam::MalayalamLetterGha),
-            MALAYALAM_LETTER_NGA => Ok(Malayalam::MalayalamLetterNga),
-            MALAYALAM_LETTER_CA => Ok(Malayalam::MalayalamLetterCa),
-            MALAYALAM_LETTER_CHA => Ok(Malayalam::MalayalamLetterCha),
-            MALAYALAM_LETTER_JA => Ok(Malayalam::MalayalamLetterJa),
-            MALAYALAM_LETTER_JHA => Ok(Malayalam::MalayalamLetterJha),
-            MALAYALAM_LETTER_NYA => Ok(Malayalam::MalayalamLetterNya),
-            MALAYALAM_LETTER_TTA => Ok(Malayalam::MalayalamLetterTta),
-            MALAYALAM_LETTER_TTHA => Ok(Malayalam::MalayalamLetterTtha),
-            MALAYALAM_LETTER_DDA => Ok(Malayalam::MalayalamLetterDda),
-            MALAYALAM_LETTER_DDHA => Ok(Malayalam::MalayalamLetterDdha),
-            MALAYALAM_LETTER_NNA => Ok(Malayalam::MalayalamLetterNna),
-            MALAYALAM_LETTER_TA => Ok(Malayalam::MalayalamLetterTa),
-            MALAYALAM_LETTER_THA => Ok(Malayalam::MalayalamLetterTha),
-            MALAYALAM_LETTER_DA => Ok(Malayalam::MalayalamLetterDa),
-            MALAYALAM_LETTER_DHA => Ok(Malayalam::MalayalamLetterDha),
-            MALAYALAM_LETTER_NA => Ok(Malayalam::MalayalamLetterNa),
-            MALAYALAM_LETTER_NNNA => Ok(Malayalam::MalayalamLetterNnna),
-            MALAYALAM_LETTER_PA => Ok(Malayalam::MalayalamLetterPa),
-            MALAYALAM_LETTER_PHA => Ok(Malayalam::MalayalamLetterPha),
-            MALAYALAM_LETTER_BA => Ok(Malayalam::MalayalamLetterBa),
-            MALAYALAM_LETTER_BHA => Ok(Malayalam::MalayalamLetterBha),
-            MALAYALAM_LETTER_MA => Ok(Malayalam::MalayalamLetterMa),
-            MALAYALAM_LETTER_YA => Ok(Malayalam::MalayalamLetterYa),
-            MALAYALAM_LETTER_RA => Ok(Malayalam::MalayalamLetterRa),
-            MALAYALAM_LETTER_RRA => Ok(Malayalam::MalayalamLetterRra),
-            MALAYALAM_LETTER_LA => Ok(Malayalam::MalayalamLetterLa),
-            MALAYALAM_LETTER_LLA => Ok(Malayalam::MalayalamLetterLla),
-            MALAYALAM_LETTER_LLLA => Ok(Malayalam::MalayalamLetterLlla),
-            MALAYALAM_LETTER_VA => Ok(Malayalam::MalayalamLetterVa),
-            MALAYALAM_LETTER_SHA => Ok(Malayalam::MalayalamLetterSha),
-            MALAYALAM_LETTER_SSA => Ok(Malayalam::MalayalamLetterSsa),
-            MALAYALAM_LETTER_SA => Ok(Malayalam::MalayalamLetterSa),
-            MALAYALAM_LETTER_HA => Ok(Malayalam::MalayalamLetterHa),
-            MALAYALAM_LETTER_TTTA => Ok(Malayalam::MalayalamLetterTtta),
-            MALAYALAM_SIGN_VERTICAL_BAR_VIRAMA => Ok(Malayalam::MalayalamSignVerticalBarVirama),
-            MALAYALAM_SIGN_CIRCULAR_VIRAMA => Ok(Malayalam::MalayalamSignCircularVirama),
-            MALAYALAM_SIGN_AVAGRAHA => Ok(Malayalam::MalayalamSignAvagraha),
-            MALAYALAM_VOWEL_SIGN_AA => Ok(Malayalam::MalayalamVowelSignAa),
-            MALAYALAM_VOWEL_SIGN_I => Ok(Malayalam::MalayalamVowelSignI),
-            MALAYALAM_VOWEL_SIGN_II => Ok(Malayalam::MalayalamVowelSignIi),
-            MALAYALAM_VOWEL_SIGN_U => Ok(Malayalam::MalayalamVowelSignU),
-            MALAYALAM_VOWEL_SIGN_UU => Ok(Malayalam::MalayalamVowelSignUu),
-            MALAYALAM_VOWEL_SIGN_VOCALIC_R => Ok(Malayalam::MalayalamVowelSignVocalicR),
-            MALAYALAM_VOWEL_SIGN_VOCALIC_RR => Ok(Malayalam::MalayalamVowelSignVocalicRr),
-            MALAYALAM_VOWEL_SIGN_E => Ok(Malayalam::MalayalamVowelSignE),
-            MALAYALAM_VOWEL_SIGN_EE => Ok(Malayalam::MalayalamVowelSignEe),
-            MALAYALAM_VOWEL_SIGN_AI => Ok(Malayalam::MalayalamVowelSignAi),
-            MALAYALAM_VOWEL_SIGN_O => Ok(Malayalam::MalayalamVowelSignO),
-            MALAYALAM_VOWEL_SIGN_OO => Ok(Malayalam::MalayalamVowelSignOo),
-            MALAYALAM_VOWEL_SIGN_AU => Ok(Malayalam::MalayalamVowelSignAu),
-            MALAYALAM_SIGN_VIRAMA => Ok(Malayalam::MalayalamSignVirama),
-            MALAYALAM_LETTER_DOT_REPH => Ok(Malayalam::MalayalamLetterDotReph),
-            MALAYALAM_SIGN_PARA => Ok(Malayalam::MalayalamSignPara),
-            MALAYALAM_LETTER_CHILLU_M => Ok(Malayalam::MalayalamLetterChilluM),
-            MALAYALAM_LETTER_CHILLU_Y => Ok(Malayalam::MalayalamLetterChilluY),
-            MALAYALAM_LETTER_CHILLU_LLL => Ok(Malayalam::MalayalamLetterChilluLll),
-            MALAYALAM_AU_LENGTH_MARK => Ok(Malayalam::MalayalamAuLengthMark),
-            MALAYALAM_FRACTION_ONE_ONE_DASH_HUNDRED_DASH_AND_DASH_SIXTIETH => Ok(Malayalam::MalayalamFractionOneOneDashHundredDashAndDashSixtieth),
-            MALAYALAM_FRACTION_ONE_FORTIETH => Ok(Malayalam::MalayalamFractionOneFortieth),
-            MALAYALAM_FRACTION_THREE_EIGHTIETHS => Ok(Malayalam::MalayalamFractionThreeEightieths),
-            MALAYALAM_FRACTION_ONE_TWENTIETH => Ok(Malayalam::MalayalamFractionOneTwentieth),
-            MALAYALAM_FRACTION_ONE_TENTH => Ok(Malayalam::MalayalamFractionOneTenth),
-            MALAYALAM_FRACTION_THREE_TWENTIETHS => Ok(Malayalam::MalayalamFractionThreeTwentieths),
-            MALAYALAM_FRACTION_ONE_FIFTH => Ok(Malayalam::MalayalamFractionOneFifth),
-            MALAYALAM_LETTER_ARCHAIC_II => Ok(Malayalam::MalayalamLetterArchaicIi),
-            MALAYALAM_LETTER_VOCALIC_RR => Ok(Malayalam::MalayalamLetterVocalicRr),
-            MALAYALAM_LETTER_VOCALIC_LL => Ok(Malayalam::MalayalamLetterVocalicLl),
-            MALAYALAM_VOWEL_SIGN_VOCALIC_L => Ok(Malayalam::MalayalamVowelSignVocalicL),
-            MALAYALAM_VOWEL_SIGN_VOCALIC_LL => Ok(Malayalam::MalayalamVowelSignVocalicLl),
-            MALAYALAM_DIGIT_ZERO => Ok(Malayalam::MalayalamDigitZero),
-            MALAYALAM_DIGIT_ONE => Ok(Malayalam::MalayalamDigitOne),
-            MALAYALAM_DIGIT_TWO => Ok(Malayalam::MalayalamDigitTwo),
-            MALAYALAM_DIGIT_THREE => Ok(Malayalam::MalayalamDigitThree),
-            MALAYALAM_DIGIT_FOUR => Ok(Malayalam::MalayalamDigitFour),
-            MALAYALAM_DIGIT_FIVE => Ok(Malayalam::MalayalamDigitFive),
-            MALAYALAM_DIGIT_SIX => Ok(Malayalam::MalayalamDigitSix),
-            MALAYALAM_DIGIT_SEVEN => Ok(Malayalam::MalayalamDigitSeven),
-            MALAYALAM_DIGIT_EIGHT => Ok(Malayalam::MalayalamDigitEight),
-            MALAYALAM_DIGIT_NINE => Ok(Malayalam::MalayalamDigitNine),
-            MALAYALAM_NUMBER_TEN => Ok(Malayalam::MalayalamNumberTen),
-            MALAYALAM_NUMBER_ONE_HUNDRED => Ok(Malayalam::MalayalamNumberOneHundred),
-            MALAYALAM_NUMBER_ONE_THOUSAND => Ok(Malayalam::MalayalamNumberOneThousand),
-            MALAYALAM_FRACTION_ONE_QUARTER => Ok(Malayalam::MalayalamFractionOneQuarter),
-            MALAYALAM_FRACTION_ONE_HALF => Ok(Malayalam::MalayalamFractionOneHalf),
-            MALAYALAM_FRACTION_THREE_QUARTERS => Ok(Malayalam::MalayalamFractionThreeQuarters),
-            MALAYALAM_FRACTION_ONE_SIXTEENTH => Ok(Malayalam::MalayalamFractionOneSixteenth),
-            MALAYALAM_FRACTION_ONE_EIGHTH => Ok(Malayalam::MalayalamFractionOneEighth),
-            MALAYALAM_FRACTION_THREE_SIXTEENTHS => Ok(Malayalam::MalayalamFractionThreeSixteenths),
-            MALAYALAM_DATE_MARK => Ok(Malayalam::MalayalamDateMark),
-            MALAYALAM_LETTER_CHILLU_NN => Ok(Malayalam::MalayalamLetterChilluNn),
-            MALAYALAM_LETTER_CHILLU_N => Ok(Malayalam::MalayalamLetterChilluN),
-            MALAYALAM_LETTER_CHILLU_RR => Ok(Malayalam::MalayalamLetterChilluRr),
-            MALAYALAM_LETTER_CHILLU_L => Ok(Malayalam::MalayalamLetterChilluL),
-            MALAYALAM_LETTER_CHILLU_LL => Ok(Malayalam::MalayalamLetterChilluLl),
+            SIGN_COMBINING_ANUSVARA_ABOVE => Ok(Malayalam::SignCombiningAnusvaraAbove),
+            SIGN_CANDRABINDU => Ok(Malayalam::SignCandrabindu),
+            SIGN_ANUSVARA => Ok(Malayalam::SignAnusvara),
+            SIGN_VISARGA => Ok(Malayalam::SignVisarga),
+            LETTER_A => Ok(Malayalam::LetterA),
+            LETTER_AA => Ok(Malayalam::LetterAa),
+            LETTER_I => Ok(Malayalam::LetterI),
+            LETTER_II => Ok(Malayalam::LetterIi),
+            LETTER_U => Ok(Malayalam::LetterU),
+            LETTER_UU => Ok(Malayalam::LetterUu),
+            LETTER_VOCALIC_R => Ok(Malayalam::LetterVocalicR),
+            LETTER_VOCALIC_L => Ok(Malayalam::LetterVocalicL),
+            LETTER_E => Ok(Malayalam::LetterE),
+            LETTER_EE => Ok(Malayalam::LetterEe),
+            LETTER_AI => Ok(Malayalam::LetterAi),
+            LETTER_O => Ok(Malayalam::LetterO),
+            LETTER_OO => Ok(Malayalam::LetterOo),
+            LETTER_AU => Ok(Malayalam::LetterAu),
+            LETTER_KA => Ok(Malayalam::LetterKa),
+            LETTER_KHA => Ok(Malayalam::LetterKha),
+            LETTER_GA => Ok(Malayalam::LetterGa),
+            LETTER_GHA => Ok(Malayalam::LetterGha),
+            LETTER_NGA => Ok(Malayalam::LetterNga),
+            LETTER_CA => Ok(Malayalam::LetterCa),
+            LETTER_CHA => Ok(Malayalam::LetterCha),
+            LETTER_JA => Ok(Malayalam::LetterJa),
+            LETTER_JHA => Ok(Malayalam::LetterJha),
+            LETTER_NYA => Ok(Malayalam::LetterNya),
+            LETTER_TTA => Ok(Malayalam::LetterTta),
+            LETTER_TTHA => Ok(Malayalam::LetterTtha),
+            LETTER_DDA => Ok(Malayalam::LetterDda),
+            LETTER_DDHA => Ok(Malayalam::LetterDdha),
+            LETTER_NNA => Ok(Malayalam::LetterNna),
+            LETTER_TA => Ok(Malayalam::LetterTa),
+            LETTER_THA => Ok(Malayalam::LetterTha),
+            LETTER_DA => Ok(Malayalam::LetterDa),
+            LETTER_DHA => Ok(Malayalam::LetterDha),
+            LETTER_NA => Ok(Malayalam::LetterNa),
+            LETTER_NNNA => Ok(Malayalam::LetterNnna),
+            LETTER_PA => Ok(Malayalam::LetterPa),
+            LETTER_PHA => Ok(Malayalam::LetterPha),
+            LETTER_BA => Ok(Malayalam::LetterBa),
+            LETTER_BHA => Ok(Malayalam::LetterBha),
+            LETTER_MA => Ok(Malayalam::LetterMa),
+            LETTER_YA => Ok(Malayalam::LetterYa),
+            LETTER_RA => Ok(Malayalam::LetterRa),
+            LETTER_RRA => Ok(Malayalam::LetterRra),
+            LETTER_LA => Ok(Malayalam::LetterLa),
+            LETTER_LLA => Ok(Malayalam::LetterLla),
+            LETTER_LLLA => Ok(Malayalam::LetterLlla),
+            LETTER_VA => Ok(Malayalam::LetterVa),
+            LETTER_SHA => Ok(Malayalam::LetterSha),
+            LETTER_SSA => Ok(Malayalam::LetterSsa),
+            LETTER_SA => Ok(Malayalam::LetterSa),
+            LETTER_HA => Ok(Malayalam::LetterHa),
+            LETTER_TTTA => Ok(Malayalam::LetterTtta),
+            SIGN_VERTICAL_BAR_VIRAMA => Ok(Malayalam::SignVerticalBarVirama),
+            SIGN_CIRCULAR_VIRAMA => Ok(Malayalam::SignCircularVirama),
+            SIGN_AVAGRAHA => Ok(Malayalam::SignAvagraha),
+            VOWEL_SIGN_AA => Ok(Malayalam::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Malayalam::VowelSignI),
+            VOWEL_SIGN_II => Ok(Malayalam::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Malayalam::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Malayalam::VowelSignUu),
+            VOWEL_SIGN_VOCALIC_R => Ok(Malayalam::VowelSignVocalicR),
+            VOWEL_SIGN_VOCALIC_RR => Ok(Malayalam::VowelSignVocalicRr),
+            VOWEL_SIGN_E => Ok(Malayalam::VowelSignE),
+            VOWEL_SIGN_EE => Ok(Malayalam::VowelSignEe),
+            VOWEL_SIGN_AI => Ok(Malayalam::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Malayalam::VowelSignO),
+            VOWEL_SIGN_OO => Ok(Malayalam::VowelSignOo),
+            VOWEL_SIGN_AU => Ok(Malayalam::VowelSignAu),
+            SIGN_VIRAMA => Ok(Malayalam::SignVirama),
+            LETTER_DOT_REPH => Ok(Malayalam::LetterDotReph),
+            SIGN_PARA => Ok(Malayalam::SignPara),
+            LETTER_CHILLU_M => Ok(Malayalam::LetterChilluM),
+            LETTER_CHILLU_Y => Ok(Malayalam::LetterChilluY),
+            LETTER_CHILLU_LLL => Ok(Malayalam::LetterChilluLll),
+            AU_LENGTH_MARK => Ok(Malayalam::AuLengthMark),
+            FRACTION_ONE_ONE_DASH_HUNDRED_DASH_AND_DASH_SIXTIETH => Ok(Malayalam::FractionOneOneDashHundredDashAndDashSixtieth),
+            FRACTION_ONE_FORTIETH => Ok(Malayalam::FractionOneFortieth),
+            FRACTION_THREE_EIGHTIETHS => Ok(Malayalam::FractionThreeEightieths),
+            FRACTION_ONE_TWENTIETH => Ok(Malayalam::FractionOneTwentieth),
+            FRACTION_ONE_TENTH => Ok(Malayalam::FractionOneTenth),
+            FRACTION_THREE_TWENTIETHS => Ok(Malayalam::FractionThreeTwentieths),
+            FRACTION_ONE_FIFTH => Ok(Malayalam::FractionOneFifth),
+            LETTER_ARCHAIC_II => Ok(Malayalam::LetterArchaicIi),
+            LETTER_VOCALIC_RR => Ok(Malayalam::LetterVocalicRr),
+            LETTER_VOCALIC_LL => Ok(Malayalam::LetterVocalicLl),
+            VOWEL_SIGN_VOCALIC_L => Ok(Malayalam::VowelSignVocalicL),
+            VOWEL_SIGN_VOCALIC_LL => Ok(Malayalam::VowelSignVocalicLl),
+            DIGIT_ZERO => Ok(Malayalam::DigitZero),
+            DIGIT_ONE => Ok(Malayalam::DigitOne),
+            DIGIT_TWO => Ok(Malayalam::DigitTwo),
+            DIGIT_THREE => Ok(Malayalam::DigitThree),
+            DIGIT_FOUR => Ok(Malayalam::DigitFour),
+            DIGIT_FIVE => Ok(Malayalam::DigitFive),
+            DIGIT_SIX => Ok(Malayalam::DigitSix),
+            DIGIT_SEVEN => Ok(Malayalam::DigitSeven),
+            DIGIT_EIGHT => Ok(Malayalam::DigitEight),
+            DIGIT_NINE => Ok(Malayalam::DigitNine),
+            NUMBER_TEN => Ok(Malayalam::NumberTen),
+            NUMBER_ONE_HUNDRED => Ok(Malayalam::NumberOneHundred),
+            NUMBER_ONE_THOUSAND => Ok(Malayalam::NumberOneThousand),
+            FRACTION_ONE_QUARTER => Ok(Malayalam::FractionOneQuarter),
+            FRACTION_ONE_HALF => Ok(Malayalam::FractionOneHalf),
+            FRACTION_THREE_QUARTERS => Ok(Malayalam::FractionThreeQuarters),
+            FRACTION_ONE_SIXTEENTH => Ok(Malayalam::FractionOneSixteenth),
+            FRACTION_ONE_EIGHTH => Ok(Malayalam::FractionOneEighth),
+            FRACTION_THREE_SIXTEENTHS => Ok(Malayalam::FractionThreeSixteenths),
+            DATE_MARK => Ok(Malayalam::DateMark),
+            LETTER_CHILLU_NN => Ok(Malayalam::LetterChilluNn),
+            LETTER_CHILLU_N => Ok(Malayalam::LetterChilluN),
+            LETTER_CHILLU_RR => Ok(Malayalam::LetterChilluRr),
+            LETTER_CHILLU_L => Ok(Malayalam::LetterChilluL),
+            LETTER_CHILLU_LL => Ok(Malayalam::LetterChilluLl),
             _ => Err(()),
         }
     }
@@ -772,130 +772,130 @@ impl Iterator for Malayalam {
 }
 
 impl Malayalam {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Malayalam::MalayalamSignCombiningAnusvaraAbove
+        Malayalam::SignCombiningAnusvaraAbove
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Malayalam::MalayalamSignCombiningAnusvaraAbove => "malayalam sign combining anusvara above",
-            Malayalam::MalayalamSignCandrabindu => "malayalam sign candrabindu",
-            Malayalam::MalayalamSignAnusvara => "malayalam sign anusvara",
-            Malayalam::MalayalamSignVisarga => "malayalam sign visarga",
-            Malayalam::MalayalamLetterA => "malayalam letter a",
-            Malayalam::MalayalamLetterAa => "malayalam letter aa",
-            Malayalam::MalayalamLetterI => "malayalam letter i",
-            Malayalam::MalayalamLetterIi => "malayalam letter ii",
-            Malayalam::MalayalamLetterU => "malayalam letter u",
-            Malayalam::MalayalamLetterUu => "malayalam letter uu",
-            Malayalam::MalayalamLetterVocalicR => "malayalam letter vocalic r",
-            Malayalam::MalayalamLetterVocalicL => "malayalam letter vocalic l",
-            Malayalam::MalayalamLetterE => "malayalam letter e",
-            Malayalam::MalayalamLetterEe => "malayalam letter ee",
-            Malayalam::MalayalamLetterAi => "malayalam letter ai",
-            Malayalam::MalayalamLetterO => "malayalam letter o",
-            Malayalam::MalayalamLetterOo => "malayalam letter oo",
-            Malayalam::MalayalamLetterAu => "malayalam letter au",
-            Malayalam::MalayalamLetterKa => "malayalam letter ka",
-            Malayalam::MalayalamLetterKha => "malayalam letter kha",
-            Malayalam::MalayalamLetterGa => "malayalam letter ga",
-            Malayalam::MalayalamLetterGha => "malayalam letter gha",
-            Malayalam::MalayalamLetterNga => "malayalam letter nga",
-            Malayalam::MalayalamLetterCa => "malayalam letter ca",
-            Malayalam::MalayalamLetterCha => "malayalam letter cha",
-            Malayalam::MalayalamLetterJa => "malayalam letter ja",
-            Malayalam::MalayalamLetterJha => "malayalam letter jha",
-            Malayalam::MalayalamLetterNya => "malayalam letter nya",
-            Malayalam::MalayalamLetterTta => "malayalam letter tta",
-            Malayalam::MalayalamLetterTtha => "malayalam letter ttha",
-            Malayalam::MalayalamLetterDda => "malayalam letter dda",
-            Malayalam::MalayalamLetterDdha => "malayalam letter ddha",
-            Malayalam::MalayalamLetterNna => "malayalam letter nna",
-            Malayalam::MalayalamLetterTa => "malayalam letter ta",
-            Malayalam::MalayalamLetterTha => "malayalam letter tha",
-            Malayalam::MalayalamLetterDa => "malayalam letter da",
-            Malayalam::MalayalamLetterDha => "malayalam letter dha",
-            Malayalam::MalayalamLetterNa => "malayalam letter na",
-            Malayalam::MalayalamLetterNnna => "malayalam letter nnna",
-            Malayalam::MalayalamLetterPa => "malayalam letter pa",
-            Malayalam::MalayalamLetterPha => "malayalam letter pha",
-            Malayalam::MalayalamLetterBa => "malayalam letter ba",
-            Malayalam::MalayalamLetterBha => "malayalam letter bha",
-            Malayalam::MalayalamLetterMa => "malayalam letter ma",
-            Malayalam::MalayalamLetterYa => "malayalam letter ya",
-            Malayalam::MalayalamLetterRa => "malayalam letter ra",
-            Malayalam::MalayalamLetterRra => "malayalam letter rra",
-            Malayalam::MalayalamLetterLa => "malayalam letter la",
-            Malayalam::MalayalamLetterLla => "malayalam letter lla",
-            Malayalam::MalayalamLetterLlla => "malayalam letter llla",
-            Malayalam::MalayalamLetterVa => "malayalam letter va",
-            Malayalam::MalayalamLetterSha => "malayalam letter sha",
-            Malayalam::MalayalamLetterSsa => "malayalam letter ssa",
-            Malayalam::MalayalamLetterSa => "malayalam letter sa",
-            Malayalam::MalayalamLetterHa => "malayalam letter ha",
-            Malayalam::MalayalamLetterTtta => "malayalam letter ttta",
-            Malayalam::MalayalamSignVerticalBarVirama => "malayalam sign vertical bar virama",
-            Malayalam::MalayalamSignCircularVirama => "malayalam sign circular virama",
-            Malayalam::MalayalamSignAvagraha => "malayalam sign avagraha",
-            Malayalam::MalayalamVowelSignAa => "malayalam vowel sign aa",
-            Malayalam::MalayalamVowelSignI => "malayalam vowel sign i",
-            Malayalam::MalayalamVowelSignIi => "malayalam vowel sign ii",
-            Malayalam::MalayalamVowelSignU => "malayalam vowel sign u",
-            Malayalam::MalayalamVowelSignUu => "malayalam vowel sign uu",
-            Malayalam::MalayalamVowelSignVocalicR => "malayalam vowel sign vocalic r",
-            Malayalam::MalayalamVowelSignVocalicRr => "malayalam vowel sign vocalic rr",
-            Malayalam::MalayalamVowelSignE => "malayalam vowel sign e",
-            Malayalam::MalayalamVowelSignEe => "malayalam vowel sign ee",
-            Malayalam::MalayalamVowelSignAi => "malayalam vowel sign ai",
-            Malayalam::MalayalamVowelSignO => "malayalam vowel sign o",
-            Malayalam::MalayalamVowelSignOo => "malayalam vowel sign oo",
-            Malayalam::MalayalamVowelSignAu => "malayalam vowel sign au",
-            Malayalam::MalayalamSignVirama => "malayalam sign virama",
-            Malayalam::MalayalamLetterDotReph => "malayalam letter dot reph",
-            Malayalam::MalayalamSignPara => "malayalam sign para",
-            Malayalam::MalayalamLetterChilluM => "malayalam letter chillu m",
-            Malayalam::MalayalamLetterChilluY => "malayalam letter chillu y",
-            Malayalam::MalayalamLetterChilluLll => "malayalam letter chillu lll",
-            Malayalam::MalayalamAuLengthMark => "malayalam au length mark",
-            Malayalam::MalayalamFractionOneOneDashHundredDashAndDashSixtieth => "malayalam fraction one one-hundred-and-sixtieth",
-            Malayalam::MalayalamFractionOneFortieth => "malayalam fraction one fortieth",
-            Malayalam::MalayalamFractionThreeEightieths => "malayalam fraction three eightieths",
-            Malayalam::MalayalamFractionOneTwentieth => "malayalam fraction one twentieth",
-            Malayalam::MalayalamFractionOneTenth => "malayalam fraction one tenth",
-            Malayalam::MalayalamFractionThreeTwentieths => "malayalam fraction three twentieths",
-            Malayalam::MalayalamFractionOneFifth => "malayalam fraction one fifth",
-            Malayalam::MalayalamLetterArchaicIi => "malayalam letter archaic ii",
-            Malayalam::MalayalamLetterVocalicRr => "malayalam letter vocalic rr",
-            Malayalam::MalayalamLetterVocalicLl => "malayalam letter vocalic ll",
-            Malayalam::MalayalamVowelSignVocalicL => "malayalam vowel sign vocalic l",
-            Malayalam::MalayalamVowelSignVocalicLl => "malayalam vowel sign vocalic ll",
-            Malayalam::MalayalamDigitZero => "malayalam digit zero",
-            Malayalam::MalayalamDigitOne => "malayalam digit one",
-            Malayalam::MalayalamDigitTwo => "malayalam digit two",
-            Malayalam::MalayalamDigitThree => "malayalam digit three",
-            Malayalam::MalayalamDigitFour => "malayalam digit four",
-            Malayalam::MalayalamDigitFive => "malayalam digit five",
-            Malayalam::MalayalamDigitSix => "malayalam digit six",
-            Malayalam::MalayalamDigitSeven => "malayalam digit seven",
-            Malayalam::MalayalamDigitEight => "malayalam digit eight",
-            Malayalam::MalayalamDigitNine => "malayalam digit nine",
-            Malayalam::MalayalamNumberTen => "malayalam number ten",
-            Malayalam::MalayalamNumberOneHundred => "malayalam number one hundred",
-            Malayalam::MalayalamNumberOneThousand => "malayalam number one thousand",
-            Malayalam::MalayalamFractionOneQuarter => "malayalam fraction one quarter",
-            Malayalam::MalayalamFractionOneHalf => "malayalam fraction one half",
-            Malayalam::MalayalamFractionThreeQuarters => "malayalam fraction three quarters",
-            Malayalam::MalayalamFractionOneSixteenth => "malayalam fraction one sixteenth",
-            Malayalam::MalayalamFractionOneEighth => "malayalam fraction one eighth",
-            Malayalam::MalayalamFractionThreeSixteenths => "malayalam fraction three sixteenths",
-            Malayalam::MalayalamDateMark => "malayalam date mark",
-            Malayalam::MalayalamLetterChilluNn => "malayalam letter chillu nn",
-            Malayalam::MalayalamLetterChilluN => "malayalam letter chillu n",
-            Malayalam::MalayalamLetterChilluRr => "malayalam letter chillu rr",
-            Malayalam::MalayalamLetterChilluL => "malayalam letter chillu l",
-            Malayalam::MalayalamLetterChilluLl => "malayalam letter chillu ll",
+            Malayalam::SignCombiningAnusvaraAbove => "malayalam sign combining anusvara above",
+            Malayalam::SignCandrabindu => "malayalam sign candrabindu",
+            Malayalam::SignAnusvara => "malayalam sign anusvara",
+            Malayalam::SignVisarga => "malayalam sign visarga",
+            Malayalam::LetterA => "malayalam letter a",
+            Malayalam::LetterAa => "malayalam letter aa",
+            Malayalam::LetterI => "malayalam letter i",
+            Malayalam::LetterIi => "malayalam letter ii",
+            Malayalam::LetterU => "malayalam letter u",
+            Malayalam::LetterUu => "malayalam letter uu",
+            Malayalam::LetterVocalicR => "malayalam letter vocalic r",
+            Malayalam::LetterVocalicL => "malayalam letter vocalic l",
+            Malayalam::LetterE => "malayalam letter e",
+            Malayalam::LetterEe => "malayalam letter ee",
+            Malayalam::LetterAi => "malayalam letter ai",
+            Malayalam::LetterO => "malayalam letter o",
+            Malayalam::LetterOo => "malayalam letter oo",
+            Malayalam::LetterAu => "malayalam letter au",
+            Malayalam::LetterKa => "malayalam letter ka",
+            Malayalam::LetterKha => "malayalam letter kha",
+            Malayalam::LetterGa => "malayalam letter ga",
+            Malayalam::LetterGha => "malayalam letter gha",
+            Malayalam::LetterNga => "malayalam letter nga",
+            Malayalam::LetterCa => "malayalam letter ca",
+            Malayalam::LetterCha => "malayalam letter cha",
+            Malayalam::LetterJa => "malayalam letter ja",
+            Malayalam::LetterJha => "malayalam letter jha",
+            Malayalam::LetterNya => "malayalam letter nya",
+            Malayalam::LetterTta => "malayalam letter tta",
+            Malayalam::LetterTtha => "malayalam letter ttha",
+            Malayalam::LetterDda => "malayalam letter dda",
+            Malayalam::LetterDdha => "malayalam letter ddha",
+            Malayalam::LetterNna => "malayalam letter nna",
+            Malayalam::LetterTa => "malayalam letter ta",
+            Malayalam::LetterTha => "malayalam letter tha",
+            Malayalam::LetterDa => "malayalam letter da",
+            Malayalam::LetterDha => "malayalam letter dha",
+            Malayalam::LetterNa => "malayalam letter na",
+            Malayalam::LetterNnna => "malayalam letter nnna",
+            Malayalam::LetterPa => "malayalam letter pa",
+            Malayalam::LetterPha => "malayalam letter pha",
+            Malayalam::LetterBa => "malayalam letter ba",
+            Malayalam::LetterBha => "malayalam letter bha",
+            Malayalam::LetterMa => "malayalam letter ma",
+            Malayalam::LetterYa => "malayalam letter ya",
+            Malayalam::LetterRa => "malayalam letter ra",
+            Malayalam::LetterRra => "malayalam letter rra",
+            Malayalam::LetterLa => "malayalam letter la",
+            Malayalam::LetterLla => "malayalam letter lla",
+            Malayalam::LetterLlla => "malayalam letter llla",
+            Malayalam::LetterVa => "malayalam letter va",
+            Malayalam::LetterSha => "malayalam letter sha",
+            Malayalam::LetterSsa => "malayalam letter ssa",
+            Malayalam::LetterSa => "malayalam letter sa",
+            Malayalam::LetterHa => "malayalam letter ha",
+            Malayalam::LetterTtta => "malayalam letter ttta",
+            Malayalam::SignVerticalBarVirama => "malayalam sign vertical bar virama",
+            Malayalam::SignCircularVirama => "malayalam sign circular virama",
+            Malayalam::SignAvagraha => "malayalam sign avagraha",
+            Malayalam::VowelSignAa => "malayalam vowel sign aa",
+            Malayalam::VowelSignI => "malayalam vowel sign i",
+            Malayalam::VowelSignIi => "malayalam vowel sign ii",
+            Malayalam::VowelSignU => "malayalam vowel sign u",
+            Malayalam::VowelSignUu => "malayalam vowel sign uu",
+            Malayalam::VowelSignVocalicR => "malayalam vowel sign vocalic r",
+            Malayalam::VowelSignVocalicRr => "malayalam vowel sign vocalic rr",
+            Malayalam::VowelSignE => "malayalam vowel sign e",
+            Malayalam::VowelSignEe => "malayalam vowel sign ee",
+            Malayalam::VowelSignAi => "malayalam vowel sign ai",
+            Malayalam::VowelSignO => "malayalam vowel sign o",
+            Malayalam::VowelSignOo => "malayalam vowel sign oo",
+            Malayalam::VowelSignAu => "malayalam vowel sign au",
+            Malayalam::SignVirama => "malayalam sign virama",
+            Malayalam::LetterDotReph => "malayalam letter dot reph",
+            Malayalam::SignPara => "malayalam sign para",
+            Malayalam::LetterChilluM => "malayalam letter chillu m",
+            Malayalam::LetterChilluY => "malayalam letter chillu y",
+            Malayalam::LetterChilluLll => "malayalam letter chillu lll",
+            Malayalam::AuLengthMark => "malayalam au length mark",
+            Malayalam::FractionOneOneDashHundredDashAndDashSixtieth => "malayalam fraction one one-hundred-and-sixtieth",
+            Malayalam::FractionOneFortieth => "malayalam fraction one fortieth",
+            Malayalam::FractionThreeEightieths => "malayalam fraction three eightieths",
+            Malayalam::FractionOneTwentieth => "malayalam fraction one twentieth",
+            Malayalam::FractionOneTenth => "malayalam fraction one tenth",
+            Malayalam::FractionThreeTwentieths => "malayalam fraction three twentieths",
+            Malayalam::FractionOneFifth => "malayalam fraction one fifth",
+            Malayalam::LetterArchaicIi => "malayalam letter archaic ii",
+            Malayalam::LetterVocalicRr => "malayalam letter vocalic rr",
+            Malayalam::LetterVocalicLl => "malayalam letter vocalic ll",
+            Malayalam::VowelSignVocalicL => "malayalam vowel sign vocalic l",
+            Malayalam::VowelSignVocalicLl => "malayalam vowel sign vocalic ll",
+            Malayalam::DigitZero => "malayalam digit zero",
+            Malayalam::DigitOne => "malayalam digit one",
+            Malayalam::DigitTwo => "malayalam digit two",
+            Malayalam::DigitThree => "malayalam digit three",
+            Malayalam::DigitFour => "malayalam digit four",
+            Malayalam::DigitFive => "malayalam digit five",
+            Malayalam::DigitSix => "malayalam digit six",
+            Malayalam::DigitSeven => "malayalam digit seven",
+            Malayalam::DigitEight => "malayalam digit eight",
+            Malayalam::DigitNine => "malayalam digit nine",
+            Malayalam::NumberTen => "malayalam number ten",
+            Malayalam::NumberOneHundred => "malayalam number one hundred",
+            Malayalam::NumberOneThousand => "malayalam number one thousand",
+            Malayalam::FractionOneQuarter => "malayalam fraction one quarter",
+            Malayalam::FractionOneHalf => "malayalam fraction one half",
+            Malayalam::FractionThreeQuarters => "malayalam fraction three quarters",
+            Malayalam::FractionOneSixteenth => "malayalam fraction one sixteenth",
+            Malayalam::FractionOneEighth => "malayalam fraction one eighth",
+            Malayalam::FractionThreeSixteenths => "malayalam fraction three sixteenths",
+            Malayalam::DateMark => "malayalam date mark",
+            Malayalam::LetterChilluNn => "malayalam letter chillu nn",
+            Malayalam::LetterChilluN => "malayalam letter chillu n",
+            Malayalam::LetterChilluRr => "malayalam letter chillu rr",
+            Malayalam::LetterChilluL => "malayalam letter chillu l",
+            Malayalam::LetterChilluLl => "malayalam letter chillu ll",
         }
     }
 }

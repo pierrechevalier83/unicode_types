@@ -10,249 +10,249 @@
 /// ⳰ ⳱ Ⳳ ⳳ ⳹ ⳺ ⳻ ⳼ ⳽ ⳾
 pub mod constants {
     /// \u{2c80}: 'Ⲁ'
-    pub const COPTIC_CAPITAL_LETTER_ALFA: char = 'Ⲁ';
+    pub const CAPITAL_LETTER_ALFA: char = 'Ⲁ';
     /// \u{2c81}: 'ⲁ'
-    pub const COPTIC_SMALL_LETTER_ALFA: char = 'ⲁ';
+    pub const SMALL_LETTER_ALFA: char = 'ⲁ';
     /// \u{2c82}: 'Ⲃ'
-    pub const COPTIC_CAPITAL_LETTER_VIDA: char = 'Ⲃ';
+    pub const CAPITAL_LETTER_VIDA: char = 'Ⲃ';
     /// \u{2c83}: 'ⲃ'
-    pub const COPTIC_SMALL_LETTER_VIDA: char = 'ⲃ';
+    pub const SMALL_LETTER_VIDA: char = 'ⲃ';
     /// \u{2c84}: 'Ⲅ'
-    pub const COPTIC_CAPITAL_LETTER_GAMMA: char = 'Ⲅ';
+    pub const CAPITAL_LETTER_GAMMA: char = 'Ⲅ';
     /// \u{2c85}: 'ⲅ'
-    pub const COPTIC_SMALL_LETTER_GAMMA: char = 'ⲅ';
+    pub const SMALL_LETTER_GAMMA: char = 'ⲅ';
     /// \u{2c86}: 'Ⲇ'
-    pub const COPTIC_CAPITAL_LETTER_DALDA: char = 'Ⲇ';
+    pub const CAPITAL_LETTER_DALDA: char = 'Ⲇ';
     /// \u{2c87}: 'ⲇ'
-    pub const COPTIC_SMALL_LETTER_DALDA: char = 'ⲇ';
+    pub const SMALL_LETTER_DALDA: char = 'ⲇ';
     /// \u{2c88}: 'Ⲉ'
-    pub const COPTIC_CAPITAL_LETTER_EIE: char = 'Ⲉ';
+    pub const CAPITAL_LETTER_EIE: char = 'Ⲉ';
     /// \u{2c89}: 'ⲉ'
-    pub const COPTIC_SMALL_LETTER_EIE: char = 'ⲉ';
+    pub const SMALL_LETTER_EIE: char = 'ⲉ';
     /// \u{2c8a}: 'Ⲋ'
-    pub const COPTIC_CAPITAL_LETTER_SOU: char = 'Ⲋ';
+    pub const CAPITAL_LETTER_SOU: char = 'Ⲋ';
     /// \u{2c8b}: 'ⲋ'
-    pub const COPTIC_SMALL_LETTER_SOU: char = 'ⲋ';
+    pub const SMALL_LETTER_SOU: char = 'ⲋ';
     /// \u{2c8c}: 'Ⲍ'
-    pub const COPTIC_CAPITAL_LETTER_ZATA: char = 'Ⲍ';
+    pub const CAPITAL_LETTER_ZATA: char = 'Ⲍ';
     /// \u{2c8d}: 'ⲍ'
-    pub const COPTIC_SMALL_LETTER_ZATA: char = 'ⲍ';
+    pub const SMALL_LETTER_ZATA: char = 'ⲍ';
     /// \u{2c8e}: 'Ⲏ'
-    pub const COPTIC_CAPITAL_LETTER_HATE: char = 'Ⲏ';
+    pub const CAPITAL_LETTER_HATE: char = 'Ⲏ';
     /// \u{2c8f}: 'ⲏ'
-    pub const COPTIC_SMALL_LETTER_HATE: char = 'ⲏ';
+    pub const SMALL_LETTER_HATE: char = 'ⲏ';
     /// \u{2c90}: 'Ⲑ'
-    pub const COPTIC_CAPITAL_LETTER_THETHE: char = 'Ⲑ';
+    pub const CAPITAL_LETTER_THETHE: char = 'Ⲑ';
     /// \u{2c91}: 'ⲑ'
-    pub const COPTIC_SMALL_LETTER_THETHE: char = 'ⲑ';
+    pub const SMALL_LETTER_THETHE: char = 'ⲑ';
     /// \u{2c92}: 'Ⲓ'
-    pub const COPTIC_CAPITAL_LETTER_IAUDA: char = 'Ⲓ';
+    pub const CAPITAL_LETTER_IAUDA: char = 'Ⲓ';
     /// \u{2c93}: 'ⲓ'
-    pub const COPTIC_SMALL_LETTER_IAUDA: char = 'ⲓ';
+    pub const SMALL_LETTER_IAUDA: char = 'ⲓ';
     /// \u{2c94}: 'Ⲕ'
-    pub const COPTIC_CAPITAL_LETTER_KAPA: char = 'Ⲕ';
+    pub const CAPITAL_LETTER_KAPA: char = 'Ⲕ';
     /// \u{2c95}: 'ⲕ'
-    pub const COPTIC_SMALL_LETTER_KAPA: char = 'ⲕ';
+    pub const SMALL_LETTER_KAPA: char = 'ⲕ';
     /// \u{2c96}: 'Ⲗ'
-    pub const COPTIC_CAPITAL_LETTER_LAULA: char = 'Ⲗ';
+    pub const CAPITAL_LETTER_LAULA: char = 'Ⲗ';
     /// \u{2c97}: 'ⲗ'
-    pub const COPTIC_SMALL_LETTER_LAULA: char = 'ⲗ';
+    pub const SMALL_LETTER_LAULA: char = 'ⲗ';
     /// \u{2c98}: 'Ⲙ'
-    pub const COPTIC_CAPITAL_LETTER_MI: char = 'Ⲙ';
+    pub const CAPITAL_LETTER_MI: char = 'Ⲙ';
     /// \u{2c99}: 'ⲙ'
-    pub const COPTIC_SMALL_LETTER_MI: char = 'ⲙ';
+    pub const SMALL_LETTER_MI: char = 'ⲙ';
     /// \u{2c9a}: 'Ⲛ'
-    pub const COPTIC_CAPITAL_LETTER_NI: char = 'Ⲛ';
+    pub const CAPITAL_LETTER_NI: char = 'Ⲛ';
     /// \u{2c9b}: 'ⲛ'
-    pub const COPTIC_SMALL_LETTER_NI: char = 'ⲛ';
+    pub const SMALL_LETTER_NI: char = 'ⲛ';
     /// \u{2c9c}: 'Ⲝ'
-    pub const COPTIC_CAPITAL_LETTER_KSI: char = 'Ⲝ';
+    pub const CAPITAL_LETTER_KSI: char = 'Ⲝ';
     /// \u{2c9d}: 'ⲝ'
-    pub const COPTIC_SMALL_LETTER_KSI: char = 'ⲝ';
+    pub const SMALL_LETTER_KSI: char = 'ⲝ';
     /// \u{2c9e}: 'Ⲟ'
-    pub const COPTIC_CAPITAL_LETTER_O: char = 'Ⲟ';
+    pub const CAPITAL_LETTER_O: char = 'Ⲟ';
     /// \u{2c9f}: 'ⲟ'
-    pub const COPTIC_SMALL_LETTER_O: char = 'ⲟ';
+    pub const SMALL_LETTER_O: char = 'ⲟ';
     /// \u{2ca0}: 'Ⲡ'
-    pub const COPTIC_CAPITAL_LETTER_PI: char = 'Ⲡ';
+    pub const CAPITAL_LETTER_PI: char = 'Ⲡ';
     /// \u{2ca1}: 'ⲡ'
-    pub const COPTIC_SMALL_LETTER_PI: char = 'ⲡ';
+    pub const SMALL_LETTER_PI: char = 'ⲡ';
     /// \u{2ca2}: 'Ⲣ'
-    pub const COPTIC_CAPITAL_LETTER_RO: char = 'Ⲣ';
+    pub const CAPITAL_LETTER_RO: char = 'Ⲣ';
     /// \u{2ca3}: 'ⲣ'
-    pub const COPTIC_SMALL_LETTER_RO: char = 'ⲣ';
+    pub const SMALL_LETTER_RO: char = 'ⲣ';
     /// \u{2ca4}: 'Ⲥ'
-    pub const COPTIC_CAPITAL_LETTER_SIMA: char = 'Ⲥ';
+    pub const CAPITAL_LETTER_SIMA: char = 'Ⲥ';
     /// \u{2ca5}: 'ⲥ'
-    pub const COPTIC_SMALL_LETTER_SIMA: char = 'ⲥ';
+    pub const SMALL_LETTER_SIMA: char = 'ⲥ';
     /// \u{2ca6}: 'Ⲧ'
-    pub const COPTIC_CAPITAL_LETTER_TAU: char = 'Ⲧ';
+    pub const CAPITAL_LETTER_TAU: char = 'Ⲧ';
     /// \u{2ca7}: 'ⲧ'
-    pub const COPTIC_SMALL_LETTER_TAU: char = 'ⲧ';
+    pub const SMALL_LETTER_TAU: char = 'ⲧ';
     /// \u{2ca8}: 'Ⲩ'
-    pub const COPTIC_CAPITAL_LETTER_UA: char = 'Ⲩ';
+    pub const CAPITAL_LETTER_UA: char = 'Ⲩ';
     /// \u{2ca9}: 'ⲩ'
-    pub const COPTIC_SMALL_LETTER_UA: char = 'ⲩ';
+    pub const SMALL_LETTER_UA: char = 'ⲩ';
     /// \u{2caa}: 'Ⲫ'
-    pub const COPTIC_CAPITAL_LETTER_FI: char = 'Ⲫ';
+    pub const CAPITAL_LETTER_FI: char = 'Ⲫ';
     /// \u{2cab}: 'ⲫ'
-    pub const COPTIC_SMALL_LETTER_FI: char = 'ⲫ';
+    pub const SMALL_LETTER_FI: char = 'ⲫ';
     /// \u{2cac}: 'Ⲭ'
-    pub const COPTIC_CAPITAL_LETTER_KHI: char = 'Ⲭ';
+    pub const CAPITAL_LETTER_KHI: char = 'Ⲭ';
     /// \u{2cad}: 'ⲭ'
-    pub const COPTIC_SMALL_LETTER_KHI: char = 'ⲭ';
+    pub const SMALL_LETTER_KHI: char = 'ⲭ';
     /// \u{2cae}: 'Ⲯ'
-    pub const COPTIC_CAPITAL_LETTER_PSI: char = 'Ⲯ';
+    pub const CAPITAL_LETTER_PSI: char = 'Ⲯ';
     /// \u{2caf}: 'ⲯ'
-    pub const COPTIC_SMALL_LETTER_PSI: char = 'ⲯ';
+    pub const SMALL_LETTER_PSI: char = 'ⲯ';
     /// \u{2cb0}: 'Ⲱ'
-    pub const COPTIC_CAPITAL_LETTER_OOU: char = 'Ⲱ';
+    pub const CAPITAL_LETTER_OOU: char = 'Ⲱ';
     /// \u{2cb1}: 'ⲱ'
-    pub const COPTIC_SMALL_LETTER_OOU: char = 'ⲱ';
+    pub const SMALL_LETTER_OOU: char = 'ⲱ';
     /// \u{2cb2}: 'Ⲳ'
-    pub const COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_ALEF: char = 'Ⲳ';
+    pub const CAPITAL_LETTER_DIALECT_DASH_P_ALEF: char = 'Ⲳ';
     /// \u{2cb3}: 'ⲳ'
-    pub const COPTIC_SMALL_LETTER_DIALECT_DASH_P_ALEF: char = 'ⲳ';
+    pub const SMALL_LETTER_DIALECT_DASH_P_ALEF: char = 'ⲳ';
     /// \u{2cb4}: 'Ⲵ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_AIN: char = 'Ⲵ';
+    pub const CAPITAL_LETTER_OLD_AIN: char = 'Ⲵ';
     /// \u{2cb5}: 'ⲵ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_AIN: char = 'ⲵ';
+    pub const SMALL_LETTER_OLD_AIN: char = 'ⲵ';
     /// \u{2cb6}: 'Ⲷ'
-    pub const COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_EIE: char = 'Ⲷ';
+    pub const CAPITAL_LETTER_CRYPTOGRAMMIC_EIE: char = 'Ⲷ';
     /// \u{2cb7}: 'ⲷ'
-    pub const COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_EIE: char = 'ⲷ';
+    pub const SMALL_LETTER_CRYPTOGRAMMIC_EIE: char = 'ⲷ';
     /// \u{2cb8}: 'Ⲹ'
-    pub const COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_KAPA: char = 'Ⲹ';
+    pub const CAPITAL_LETTER_DIALECT_DASH_P_KAPA: char = 'Ⲹ';
     /// \u{2cb9}: 'ⲹ'
-    pub const COPTIC_SMALL_LETTER_DIALECT_DASH_P_KAPA: char = 'ⲹ';
+    pub const SMALL_LETTER_DIALECT_DASH_P_KAPA: char = 'ⲹ';
     /// \u{2cba}: 'Ⲻ'
-    pub const COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_NI: char = 'Ⲻ';
+    pub const CAPITAL_LETTER_DIALECT_DASH_P_NI: char = 'Ⲻ';
     /// \u{2cbb}: 'ⲻ'
-    pub const COPTIC_SMALL_LETTER_DIALECT_DASH_P_NI: char = 'ⲻ';
+    pub const SMALL_LETTER_DIALECT_DASH_P_NI: char = 'ⲻ';
     /// \u{2cbc}: 'Ⲽ'
-    pub const COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_NI: char = 'Ⲽ';
+    pub const CAPITAL_LETTER_CRYPTOGRAMMIC_NI: char = 'Ⲽ';
     /// \u{2cbd}: 'ⲽ'
-    pub const COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_NI: char = 'ⲽ';
+    pub const SMALL_LETTER_CRYPTOGRAMMIC_NI: char = 'ⲽ';
     /// \u{2cbe}: 'Ⲿ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_OOU: char = 'Ⲿ';
+    pub const CAPITAL_LETTER_OLD_OOU: char = 'Ⲿ';
     /// \u{2cbf}: 'ⲿ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_OOU: char = 'ⲿ';
+    pub const SMALL_LETTER_OLD_OOU: char = 'ⲿ';
     /// \u{2cc0}: 'Ⳁ'
-    pub const COPTIC_CAPITAL_LETTER_SAMPI: char = 'Ⳁ';
+    pub const CAPITAL_LETTER_SAMPI: char = 'Ⳁ';
     /// \u{2cc1}: 'ⳁ'
-    pub const COPTIC_SMALL_LETTER_SAMPI: char = 'ⳁ';
+    pub const SMALL_LETTER_SAMPI: char = 'ⳁ';
     /// \u{2cc2}: 'Ⳃ'
-    pub const COPTIC_CAPITAL_LETTER_CROSSED_SHEI: char = 'Ⳃ';
+    pub const CAPITAL_LETTER_CROSSED_SHEI: char = 'Ⳃ';
     /// \u{2cc3}: 'ⳃ'
-    pub const COPTIC_SMALL_LETTER_CROSSED_SHEI: char = 'ⳃ';
+    pub const SMALL_LETTER_CROSSED_SHEI: char = 'ⳃ';
     /// \u{2cc4}: 'Ⳅ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_SHEI: char = 'Ⳅ';
+    pub const CAPITAL_LETTER_OLD_SHEI: char = 'Ⳅ';
     /// \u{2cc5}: 'ⳅ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_SHEI: char = 'ⳅ';
+    pub const SMALL_LETTER_OLD_SHEI: char = 'ⳅ';
     /// \u{2cc6}: 'Ⳇ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_ESH: char = 'Ⳇ';
+    pub const CAPITAL_LETTER_OLD_ESH: char = 'Ⳇ';
     /// \u{2cc7}: 'ⳇ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_ESH: char = 'ⳇ';
+    pub const SMALL_LETTER_OLD_ESH: char = 'ⳇ';
     /// \u{2cc8}: 'Ⳉ'
-    pub const COPTIC_CAPITAL_LETTER_AKHMIMIC_KHEI: char = 'Ⳉ';
+    pub const CAPITAL_LETTER_AKHMIMIC_KHEI: char = 'Ⳉ';
     /// \u{2cc9}: 'ⳉ'
-    pub const COPTIC_SMALL_LETTER_AKHMIMIC_KHEI: char = 'ⳉ';
+    pub const SMALL_LETTER_AKHMIMIC_KHEI: char = 'ⳉ';
     /// \u{2cca}: 'Ⳋ'
-    pub const COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_HORI: char = 'Ⳋ';
+    pub const CAPITAL_LETTER_DIALECT_DASH_P_HORI: char = 'Ⳋ';
     /// \u{2ccb}: 'ⳋ'
-    pub const COPTIC_SMALL_LETTER_DIALECT_DASH_P_HORI: char = 'ⳋ';
+    pub const SMALL_LETTER_DIALECT_DASH_P_HORI: char = 'ⳋ';
     /// \u{2ccc}: 'Ⳍ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_HORI: char = 'Ⳍ';
+    pub const CAPITAL_LETTER_OLD_HORI: char = 'Ⳍ';
     /// \u{2ccd}: 'ⳍ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_HORI: char = 'ⳍ';
+    pub const SMALL_LETTER_OLD_HORI: char = 'ⳍ';
     /// \u{2cce}: 'Ⳏ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_HA: char = 'Ⳏ';
+    pub const CAPITAL_LETTER_OLD_HA: char = 'Ⳏ';
     /// \u{2ccf}: 'ⳏ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_HA: char = 'ⳏ';
+    pub const SMALL_LETTER_OLD_HA: char = 'ⳏ';
     /// \u{2cd0}: 'Ⳑ'
-    pub const COPTIC_CAPITAL_LETTER_L_DASH_SHAPED_HA: char = 'Ⳑ';
+    pub const CAPITAL_LETTER_L_DASH_SHAPED_HA: char = 'Ⳑ';
     /// \u{2cd1}: 'ⳑ'
-    pub const COPTIC_SMALL_LETTER_L_DASH_SHAPED_HA: char = 'ⳑ';
+    pub const SMALL_LETTER_L_DASH_SHAPED_HA: char = 'ⳑ';
     /// \u{2cd2}: 'Ⳓ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_HEI: char = 'Ⳓ';
+    pub const CAPITAL_LETTER_OLD_HEI: char = 'Ⳓ';
     /// \u{2cd3}: 'ⳓ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_HEI: char = 'ⳓ';
+    pub const SMALL_LETTER_OLD_HEI: char = 'ⳓ';
     /// \u{2cd4}: 'Ⳕ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_HAT: char = 'Ⳕ';
+    pub const CAPITAL_LETTER_OLD_HAT: char = 'Ⳕ';
     /// \u{2cd5}: 'ⳕ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_HAT: char = 'ⳕ';
+    pub const SMALL_LETTER_OLD_HAT: char = 'ⳕ';
     /// \u{2cd6}: 'Ⳗ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_GANGIA: char = 'Ⳗ';
+    pub const CAPITAL_LETTER_OLD_GANGIA: char = 'Ⳗ';
     /// \u{2cd7}: 'ⳗ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_GANGIA: char = 'ⳗ';
+    pub const SMALL_LETTER_OLD_GANGIA: char = 'ⳗ';
     /// \u{2cd8}: 'Ⳙ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_DJA: char = 'Ⳙ';
+    pub const CAPITAL_LETTER_OLD_DJA: char = 'Ⳙ';
     /// \u{2cd9}: 'ⳙ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_DJA: char = 'ⳙ';
+    pub const SMALL_LETTER_OLD_DJA: char = 'ⳙ';
     /// \u{2cda}: 'Ⳛ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_COPTIC_SHIMA: char = 'Ⳛ';
+    pub const CAPITAL_LETTER_OLD_SHIMA: char = 'Ⳛ';
     /// \u{2cdb}: 'ⳛ'
-    pub const COPTIC_SMALL_LETTER_OLD_COPTIC_SHIMA: char = 'ⳛ';
+    pub const SMALL_LETTER_OLD_SHIMA: char = 'ⳛ';
     /// \u{2cdc}: 'Ⳝ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_NUBIAN_SHIMA: char = 'Ⳝ';
+    pub const CAPITAL_LETTER_OLD_NUBIAN_SHIMA: char = 'Ⳝ';
     /// \u{2cdd}: 'ⳝ'
-    pub const COPTIC_SMALL_LETTER_OLD_NUBIAN_SHIMA: char = 'ⳝ';
+    pub const SMALL_LETTER_OLD_NUBIAN_SHIMA: char = 'ⳝ';
     /// \u{2cde}: 'Ⳟ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_NUBIAN_NGI: char = 'Ⳟ';
+    pub const CAPITAL_LETTER_OLD_NUBIAN_NGI: char = 'Ⳟ';
     /// \u{2cdf}: 'ⳟ'
-    pub const COPTIC_SMALL_LETTER_OLD_NUBIAN_NGI: char = 'ⳟ';
+    pub const SMALL_LETTER_OLD_NUBIAN_NGI: char = 'ⳟ';
     /// \u{2ce0}: 'Ⳡ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_NUBIAN_NYI: char = 'Ⳡ';
+    pub const CAPITAL_LETTER_OLD_NUBIAN_NYI: char = 'Ⳡ';
     /// \u{2ce1}: 'ⳡ'
-    pub const COPTIC_SMALL_LETTER_OLD_NUBIAN_NYI: char = 'ⳡ';
+    pub const SMALL_LETTER_OLD_NUBIAN_NYI: char = 'ⳡ';
     /// \u{2ce2}: 'Ⳣ'
-    pub const COPTIC_CAPITAL_LETTER_OLD_NUBIAN_WAU: char = 'Ⳣ';
+    pub const CAPITAL_LETTER_OLD_NUBIAN_WAU: char = 'Ⳣ';
     /// \u{2ce3}: 'ⳣ'
-    pub const COPTIC_SMALL_LETTER_OLD_NUBIAN_WAU: char = 'ⳣ';
+    pub const SMALL_LETTER_OLD_NUBIAN_WAU: char = 'ⳣ';
     /// \u{2ce4}: 'ⳤ'
-    pub const COPTIC_SYMBOL_KAI: char = 'ⳤ';
+    pub const SYMBOL_KAI: char = 'ⳤ';
     /// \u{2ce5}: '⳥'
-    pub const COPTIC_SYMBOL_MI_RO: char = '⳥';
+    pub const SYMBOL_MI_RO: char = '⳥';
     /// \u{2ce6}: '⳦'
-    pub const COPTIC_SYMBOL_PI_RO: char = '⳦';
+    pub const SYMBOL_PI_RO: char = '⳦';
     /// \u{2ce7}: '⳧'
-    pub const COPTIC_SYMBOL_STAUROS: char = '⳧';
+    pub const SYMBOL_STAUROS: char = '⳧';
     /// \u{2ce8}: '⳨'
-    pub const COPTIC_SYMBOL_TAU_RO: char = '⳨';
+    pub const SYMBOL_TAU_RO: char = '⳨';
     /// \u{2ce9}: '⳩'
-    pub const COPTIC_SYMBOL_KHI_RO: char = '⳩';
+    pub const SYMBOL_KHI_RO: char = '⳩';
     /// \u{2cea}: '⳪'
-    pub const COPTIC_SYMBOL_SHIMA_SIMA: char = '⳪';
+    pub const SYMBOL_SHIMA_SIMA: char = '⳪';
     /// \u{2ceb}: 'Ⳬ'
-    pub const COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_SHEI: char = 'Ⳬ';
+    pub const CAPITAL_LETTER_CRYPTOGRAMMIC_SHEI: char = 'Ⳬ';
     /// \u{2cec}: 'ⳬ'
-    pub const COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_SHEI: char = 'ⳬ';
+    pub const SMALL_LETTER_CRYPTOGRAMMIC_SHEI: char = 'ⳬ';
     /// \u{2ced}: 'Ⳮ'
-    pub const COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_GANGIA: char = 'Ⳮ';
+    pub const CAPITAL_LETTER_CRYPTOGRAMMIC_GANGIA: char = 'Ⳮ';
     /// \u{2cee}: 'ⳮ'
-    pub const COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_GANGIA: char = 'ⳮ';
+    pub const SMALL_LETTER_CRYPTOGRAMMIC_GANGIA: char = 'ⳮ';
     /// \u{2cef}: '⳯'
-    pub const COPTIC_COMBINING_NI_ABOVE: char = '⳯';
+    pub const COMBINING_NI_ABOVE: char = '⳯';
     /// \u{2cf0}: '⳰'
-    pub const COPTIC_COMBINING_SPIRITUS_ASPER: char = '⳰';
+    pub const COMBINING_SPIRITUS_ASPER: char = '⳰';
     /// \u{2cf1}: '⳱'
-    pub const COPTIC_COMBINING_SPIRITUS_LENIS: char = '⳱';
+    pub const COMBINING_SPIRITUS_LENIS: char = '⳱';
     /// \u{2cf2}: 'Ⳳ'
-    pub const COPTIC_CAPITAL_LETTER_BOHAIRIC_KHEI: char = 'Ⳳ';
+    pub const CAPITAL_LETTER_BOHAIRIC_KHEI: char = 'Ⳳ';
     /// \u{2cf3}: 'ⳳ'
-    pub const COPTIC_SMALL_LETTER_BOHAIRIC_KHEI: char = 'ⳳ';
+    pub const SMALL_LETTER_BOHAIRIC_KHEI: char = 'ⳳ';
     /// \u{2cf9}: '⳹'
-    pub const COPTIC_OLD_NUBIAN_FULL_STOP: char = '⳹';
+    pub const OLD_NUBIAN_FULL_STOP: char = '⳹';
     /// \u{2cfa}: '⳺'
-    pub const COPTIC_OLD_NUBIAN_DIRECT_QUESTION_MARK: char = '⳺';
+    pub const OLD_NUBIAN_DIRECT_QUESTION_MARK: char = '⳺';
     /// \u{2cfb}: '⳻'
-    pub const COPTIC_OLD_NUBIAN_INDIRECT_QUESTION_MARK: char = '⳻';
+    pub const OLD_NUBIAN_INDIRECT_QUESTION_MARK: char = '⳻';
     /// \u{2cfc}: '⳼'
-    pub const COPTIC_OLD_NUBIAN_VERSE_DIVIDER: char = '⳼';
+    pub const OLD_NUBIAN_VERSE_DIVIDER: char = '⳼';
     /// \u{2cfd}: '⳽'
-    pub const COPTIC_FRACTION_ONE_HALF: char = '⳽';
+    pub const FRACTION_ONE_HALF: char = '⳽';
     /// \u{2cfe}: '⳾'
-    pub const COPTIC_FULL_STOP: char = '⳾';
+    pub const FULL_STOP: char = '⳾';
 }
 
 /// \u{2c80} → \u{2cff}\
@@ -268,377 +268,377 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Coptic {
     /// \u{2c80}: 'Ⲁ'
-    CopticCapitalLetterAlfa,
+    CapitalLetterAlfa,
     /// \u{2c81}: 'ⲁ'
-    CopticSmallLetterAlfa,
+    SmallLetterAlfa,
     /// \u{2c82}: 'Ⲃ'
-    CopticCapitalLetterVida,
+    CapitalLetterVida,
     /// \u{2c83}: 'ⲃ'
-    CopticSmallLetterVida,
+    SmallLetterVida,
     /// \u{2c84}: 'Ⲅ'
-    CopticCapitalLetterGamma,
+    CapitalLetterGamma,
     /// \u{2c85}: 'ⲅ'
-    CopticSmallLetterGamma,
+    SmallLetterGamma,
     /// \u{2c86}: 'Ⲇ'
-    CopticCapitalLetterDalda,
+    CapitalLetterDalda,
     /// \u{2c87}: 'ⲇ'
-    CopticSmallLetterDalda,
+    SmallLetterDalda,
     /// \u{2c88}: 'Ⲉ'
-    CopticCapitalLetterEie,
+    CapitalLetterEie,
     /// \u{2c89}: 'ⲉ'
-    CopticSmallLetterEie,
+    SmallLetterEie,
     /// \u{2c8a}: 'Ⲋ'
-    CopticCapitalLetterSou,
+    CapitalLetterSou,
     /// \u{2c8b}: 'ⲋ'
-    CopticSmallLetterSou,
+    SmallLetterSou,
     /// \u{2c8c}: 'Ⲍ'
-    CopticCapitalLetterZata,
+    CapitalLetterZata,
     /// \u{2c8d}: 'ⲍ'
-    CopticSmallLetterZata,
+    SmallLetterZata,
     /// \u{2c8e}: 'Ⲏ'
-    CopticCapitalLetterHate,
+    CapitalLetterHate,
     /// \u{2c8f}: 'ⲏ'
-    CopticSmallLetterHate,
+    SmallLetterHate,
     /// \u{2c90}: 'Ⲑ'
-    CopticCapitalLetterThethe,
+    CapitalLetterThethe,
     /// \u{2c91}: 'ⲑ'
-    CopticSmallLetterThethe,
+    SmallLetterThethe,
     /// \u{2c92}: 'Ⲓ'
-    CopticCapitalLetterIauda,
+    CapitalLetterIauda,
     /// \u{2c93}: 'ⲓ'
-    CopticSmallLetterIauda,
+    SmallLetterIauda,
     /// \u{2c94}: 'Ⲕ'
-    CopticCapitalLetterKapa,
+    CapitalLetterKapa,
     /// \u{2c95}: 'ⲕ'
-    CopticSmallLetterKapa,
+    SmallLetterKapa,
     /// \u{2c96}: 'Ⲗ'
-    CopticCapitalLetterLaula,
+    CapitalLetterLaula,
     /// \u{2c97}: 'ⲗ'
-    CopticSmallLetterLaula,
+    SmallLetterLaula,
     /// \u{2c98}: 'Ⲙ'
-    CopticCapitalLetterMi,
+    CapitalLetterMi,
     /// \u{2c99}: 'ⲙ'
-    CopticSmallLetterMi,
+    SmallLetterMi,
     /// \u{2c9a}: 'Ⲛ'
-    CopticCapitalLetterNi,
+    CapitalLetterNi,
     /// \u{2c9b}: 'ⲛ'
-    CopticSmallLetterNi,
+    SmallLetterNi,
     /// \u{2c9c}: 'Ⲝ'
-    CopticCapitalLetterKsi,
+    CapitalLetterKsi,
     /// \u{2c9d}: 'ⲝ'
-    CopticSmallLetterKsi,
+    SmallLetterKsi,
     /// \u{2c9e}: 'Ⲟ'
-    CopticCapitalLetterO,
+    CapitalLetterO,
     /// \u{2c9f}: 'ⲟ'
-    CopticSmallLetterO,
+    SmallLetterO,
     /// \u{2ca0}: 'Ⲡ'
-    CopticCapitalLetterPi,
+    CapitalLetterPi,
     /// \u{2ca1}: 'ⲡ'
-    CopticSmallLetterPi,
+    SmallLetterPi,
     /// \u{2ca2}: 'Ⲣ'
-    CopticCapitalLetterRo,
+    CapitalLetterRo,
     /// \u{2ca3}: 'ⲣ'
-    CopticSmallLetterRo,
+    SmallLetterRo,
     /// \u{2ca4}: 'Ⲥ'
-    CopticCapitalLetterSima,
+    CapitalLetterSima,
     /// \u{2ca5}: 'ⲥ'
-    CopticSmallLetterSima,
+    SmallLetterSima,
     /// \u{2ca6}: 'Ⲧ'
-    CopticCapitalLetterTau,
+    CapitalLetterTau,
     /// \u{2ca7}: 'ⲧ'
-    CopticSmallLetterTau,
+    SmallLetterTau,
     /// \u{2ca8}: 'Ⲩ'
-    CopticCapitalLetterUa,
+    CapitalLetterUa,
     /// \u{2ca9}: 'ⲩ'
-    CopticSmallLetterUa,
+    SmallLetterUa,
     /// \u{2caa}: 'Ⲫ'
-    CopticCapitalLetterFi,
+    CapitalLetterFi,
     /// \u{2cab}: 'ⲫ'
-    CopticSmallLetterFi,
+    SmallLetterFi,
     /// \u{2cac}: 'Ⲭ'
-    CopticCapitalLetterKhi,
+    CapitalLetterKhi,
     /// \u{2cad}: 'ⲭ'
-    CopticSmallLetterKhi,
+    SmallLetterKhi,
     /// \u{2cae}: 'Ⲯ'
-    CopticCapitalLetterPsi,
+    CapitalLetterPsi,
     /// \u{2caf}: 'ⲯ'
-    CopticSmallLetterPsi,
+    SmallLetterPsi,
     /// \u{2cb0}: 'Ⲱ'
-    CopticCapitalLetterOou,
+    CapitalLetterOou,
     /// \u{2cb1}: 'ⲱ'
-    CopticSmallLetterOou,
+    SmallLetterOou,
     /// \u{2cb2}: 'Ⲳ'
-    CopticCapitalLetterDialectDashPAlef,
+    CapitalLetterDialectDashPAlef,
     /// \u{2cb3}: 'ⲳ'
-    CopticSmallLetterDialectDashPAlef,
+    SmallLetterDialectDashPAlef,
     /// \u{2cb4}: 'Ⲵ'
-    CopticCapitalLetterOldCopticAin,
+    CapitalLetterOldAin,
     /// \u{2cb5}: 'ⲵ'
-    CopticSmallLetterOldCopticAin,
+    SmallLetterOldAin,
     /// \u{2cb6}: 'Ⲷ'
-    CopticCapitalLetterCryptogrammicEie,
+    CapitalLetterCryptogrammicEie,
     /// \u{2cb7}: 'ⲷ'
-    CopticSmallLetterCryptogrammicEie,
+    SmallLetterCryptogrammicEie,
     /// \u{2cb8}: 'Ⲹ'
-    CopticCapitalLetterDialectDashPKapa,
+    CapitalLetterDialectDashPKapa,
     /// \u{2cb9}: 'ⲹ'
-    CopticSmallLetterDialectDashPKapa,
+    SmallLetterDialectDashPKapa,
     /// \u{2cba}: 'Ⲻ'
-    CopticCapitalLetterDialectDashPNi,
+    CapitalLetterDialectDashPNi,
     /// \u{2cbb}: 'ⲻ'
-    CopticSmallLetterDialectDashPNi,
+    SmallLetterDialectDashPNi,
     /// \u{2cbc}: 'Ⲽ'
-    CopticCapitalLetterCryptogrammicNi,
+    CapitalLetterCryptogrammicNi,
     /// \u{2cbd}: 'ⲽ'
-    CopticSmallLetterCryptogrammicNi,
+    SmallLetterCryptogrammicNi,
     /// \u{2cbe}: 'Ⲿ'
-    CopticCapitalLetterOldCopticOou,
+    CapitalLetterOldOou,
     /// \u{2cbf}: 'ⲿ'
-    CopticSmallLetterOldCopticOou,
+    SmallLetterOldOou,
     /// \u{2cc0}: 'Ⳁ'
-    CopticCapitalLetterSampi,
+    CapitalLetterSampi,
     /// \u{2cc1}: 'ⳁ'
-    CopticSmallLetterSampi,
+    SmallLetterSampi,
     /// \u{2cc2}: 'Ⳃ'
-    CopticCapitalLetterCrossedShei,
+    CapitalLetterCrossedShei,
     /// \u{2cc3}: 'ⳃ'
-    CopticSmallLetterCrossedShei,
+    SmallLetterCrossedShei,
     /// \u{2cc4}: 'Ⳅ'
-    CopticCapitalLetterOldCopticShei,
+    CapitalLetterOldShei,
     /// \u{2cc5}: 'ⳅ'
-    CopticSmallLetterOldCopticShei,
+    SmallLetterOldShei,
     /// \u{2cc6}: 'Ⳇ'
-    CopticCapitalLetterOldCopticEsh,
+    CapitalLetterOldEsh,
     /// \u{2cc7}: 'ⳇ'
-    CopticSmallLetterOldCopticEsh,
+    SmallLetterOldEsh,
     /// \u{2cc8}: 'Ⳉ'
-    CopticCapitalLetterAkhmimicKhei,
+    CapitalLetterAkhmimicKhei,
     /// \u{2cc9}: 'ⳉ'
-    CopticSmallLetterAkhmimicKhei,
+    SmallLetterAkhmimicKhei,
     /// \u{2cca}: 'Ⳋ'
-    CopticCapitalLetterDialectDashPHori,
+    CapitalLetterDialectDashPHori,
     /// \u{2ccb}: 'ⳋ'
-    CopticSmallLetterDialectDashPHori,
+    SmallLetterDialectDashPHori,
     /// \u{2ccc}: 'Ⳍ'
-    CopticCapitalLetterOldCopticHori,
+    CapitalLetterOldHori,
     /// \u{2ccd}: 'ⳍ'
-    CopticSmallLetterOldCopticHori,
+    SmallLetterOldHori,
     /// \u{2cce}: 'Ⳏ'
-    CopticCapitalLetterOldCopticHa,
+    CapitalLetterOldHa,
     /// \u{2ccf}: 'ⳏ'
-    CopticSmallLetterOldCopticHa,
+    SmallLetterOldHa,
     /// \u{2cd0}: 'Ⳑ'
-    CopticCapitalLetterLDashShapedHa,
+    CapitalLetterLDashShapedHa,
     /// \u{2cd1}: 'ⳑ'
-    CopticSmallLetterLDashShapedHa,
+    SmallLetterLDashShapedHa,
     /// \u{2cd2}: 'Ⳓ'
-    CopticCapitalLetterOldCopticHei,
+    CapitalLetterOldHei,
     /// \u{2cd3}: 'ⳓ'
-    CopticSmallLetterOldCopticHei,
+    SmallLetterOldHei,
     /// \u{2cd4}: 'Ⳕ'
-    CopticCapitalLetterOldCopticHat,
+    CapitalLetterOldHat,
     /// \u{2cd5}: 'ⳕ'
-    CopticSmallLetterOldCopticHat,
+    SmallLetterOldHat,
     /// \u{2cd6}: 'Ⳗ'
-    CopticCapitalLetterOldCopticGangia,
+    CapitalLetterOldGangia,
     /// \u{2cd7}: 'ⳗ'
-    CopticSmallLetterOldCopticGangia,
+    SmallLetterOldGangia,
     /// \u{2cd8}: 'Ⳙ'
-    CopticCapitalLetterOldCopticDja,
+    CapitalLetterOldDja,
     /// \u{2cd9}: 'ⳙ'
-    CopticSmallLetterOldCopticDja,
+    SmallLetterOldDja,
     /// \u{2cda}: 'Ⳛ'
-    CopticCapitalLetterOldCopticShima,
+    CapitalLetterOldShima,
     /// \u{2cdb}: 'ⳛ'
-    CopticSmallLetterOldCopticShima,
+    SmallLetterOldShima,
     /// \u{2cdc}: 'Ⳝ'
-    CopticCapitalLetterOldNubianShima,
+    CapitalLetterOldNubianShima,
     /// \u{2cdd}: 'ⳝ'
-    CopticSmallLetterOldNubianShima,
+    SmallLetterOldNubianShima,
     /// \u{2cde}: 'Ⳟ'
-    CopticCapitalLetterOldNubianNgi,
+    CapitalLetterOldNubianNgi,
     /// \u{2cdf}: 'ⳟ'
-    CopticSmallLetterOldNubianNgi,
+    SmallLetterOldNubianNgi,
     /// \u{2ce0}: 'Ⳡ'
-    CopticCapitalLetterOldNubianNyi,
+    CapitalLetterOldNubianNyi,
     /// \u{2ce1}: 'ⳡ'
-    CopticSmallLetterOldNubianNyi,
+    SmallLetterOldNubianNyi,
     /// \u{2ce2}: 'Ⳣ'
-    CopticCapitalLetterOldNubianWau,
+    CapitalLetterOldNubianWau,
     /// \u{2ce3}: 'ⳣ'
-    CopticSmallLetterOldNubianWau,
+    SmallLetterOldNubianWau,
     /// \u{2ce4}: 'ⳤ'
-    CopticSymbolKai,
+    SymbolKai,
     /// \u{2ce5}: '⳥'
-    CopticSymbolMiRo,
+    SymbolMiRo,
     /// \u{2ce6}: '⳦'
-    CopticSymbolPiRo,
+    SymbolPiRo,
     /// \u{2ce7}: '⳧'
-    CopticSymbolStauros,
+    SymbolStauros,
     /// \u{2ce8}: '⳨'
-    CopticSymbolTauRo,
+    SymbolTauRo,
     /// \u{2ce9}: '⳩'
-    CopticSymbolKhiRo,
+    SymbolKhiRo,
     /// \u{2cea}: '⳪'
-    CopticSymbolShimaSima,
+    SymbolShimaSima,
     /// \u{2ceb}: 'Ⳬ'
-    CopticCapitalLetterCryptogrammicShei,
+    CapitalLetterCryptogrammicShei,
     /// \u{2cec}: 'ⳬ'
-    CopticSmallLetterCryptogrammicShei,
+    SmallLetterCryptogrammicShei,
     /// \u{2ced}: 'Ⳮ'
-    CopticCapitalLetterCryptogrammicGangia,
+    CapitalLetterCryptogrammicGangia,
     /// \u{2cee}: 'ⳮ'
-    CopticSmallLetterCryptogrammicGangia,
+    SmallLetterCryptogrammicGangia,
     /// \u{2cef}: '⳯'
-    CopticCombiningNiAbove,
+    CombiningNiAbove,
     /// \u{2cf0}: '⳰'
-    CopticCombiningSpiritusAsper,
+    CombiningSpiritusAsper,
     /// \u{2cf1}: '⳱'
-    CopticCombiningSpiritusLenis,
+    CombiningSpiritusLenis,
     /// \u{2cf2}: 'Ⳳ'
-    CopticCapitalLetterBohairicKhei,
+    CapitalLetterBohairicKhei,
     /// \u{2cf3}: 'ⳳ'
-    CopticSmallLetterBohairicKhei,
+    SmallLetterBohairicKhei,
     /// \u{2cf9}: '⳹'
-    CopticOldNubianFullStop,
+    OldNubianFullStop,
     /// \u{2cfa}: '⳺'
-    CopticOldNubianDirectQuestionMark,
+    OldNubianDirectQuestionMark,
     /// \u{2cfb}: '⳻'
-    CopticOldNubianIndirectQuestionMark,
+    OldNubianIndirectQuestionMark,
     /// \u{2cfc}: '⳼'
-    CopticOldNubianVerseDivider,
+    OldNubianVerseDivider,
     /// \u{2cfd}: '⳽'
-    CopticFractionOneHalf,
+    FractionOneHalf,
     /// \u{2cfe}: '⳾'
-    CopticFullStop,
+    FullStop,
 }
 
 impl Into<char> for Coptic {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Coptic::CopticCapitalLetterAlfa => COPTIC_CAPITAL_LETTER_ALFA,
-            Coptic::CopticSmallLetterAlfa => COPTIC_SMALL_LETTER_ALFA,
-            Coptic::CopticCapitalLetterVida => COPTIC_CAPITAL_LETTER_VIDA,
-            Coptic::CopticSmallLetterVida => COPTIC_SMALL_LETTER_VIDA,
-            Coptic::CopticCapitalLetterGamma => COPTIC_CAPITAL_LETTER_GAMMA,
-            Coptic::CopticSmallLetterGamma => COPTIC_SMALL_LETTER_GAMMA,
-            Coptic::CopticCapitalLetterDalda => COPTIC_CAPITAL_LETTER_DALDA,
-            Coptic::CopticSmallLetterDalda => COPTIC_SMALL_LETTER_DALDA,
-            Coptic::CopticCapitalLetterEie => COPTIC_CAPITAL_LETTER_EIE,
-            Coptic::CopticSmallLetterEie => COPTIC_SMALL_LETTER_EIE,
-            Coptic::CopticCapitalLetterSou => COPTIC_CAPITAL_LETTER_SOU,
-            Coptic::CopticSmallLetterSou => COPTIC_SMALL_LETTER_SOU,
-            Coptic::CopticCapitalLetterZata => COPTIC_CAPITAL_LETTER_ZATA,
-            Coptic::CopticSmallLetterZata => COPTIC_SMALL_LETTER_ZATA,
-            Coptic::CopticCapitalLetterHate => COPTIC_CAPITAL_LETTER_HATE,
-            Coptic::CopticSmallLetterHate => COPTIC_SMALL_LETTER_HATE,
-            Coptic::CopticCapitalLetterThethe => COPTIC_CAPITAL_LETTER_THETHE,
-            Coptic::CopticSmallLetterThethe => COPTIC_SMALL_LETTER_THETHE,
-            Coptic::CopticCapitalLetterIauda => COPTIC_CAPITAL_LETTER_IAUDA,
-            Coptic::CopticSmallLetterIauda => COPTIC_SMALL_LETTER_IAUDA,
-            Coptic::CopticCapitalLetterKapa => COPTIC_CAPITAL_LETTER_KAPA,
-            Coptic::CopticSmallLetterKapa => COPTIC_SMALL_LETTER_KAPA,
-            Coptic::CopticCapitalLetterLaula => COPTIC_CAPITAL_LETTER_LAULA,
-            Coptic::CopticSmallLetterLaula => COPTIC_SMALL_LETTER_LAULA,
-            Coptic::CopticCapitalLetterMi => COPTIC_CAPITAL_LETTER_MI,
-            Coptic::CopticSmallLetterMi => COPTIC_SMALL_LETTER_MI,
-            Coptic::CopticCapitalLetterNi => COPTIC_CAPITAL_LETTER_NI,
-            Coptic::CopticSmallLetterNi => COPTIC_SMALL_LETTER_NI,
-            Coptic::CopticCapitalLetterKsi => COPTIC_CAPITAL_LETTER_KSI,
-            Coptic::CopticSmallLetterKsi => COPTIC_SMALL_LETTER_KSI,
-            Coptic::CopticCapitalLetterO => COPTIC_CAPITAL_LETTER_O,
-            Coptic::CopticSmallLetterO => COPTIC_SMALL_LETTER_O,
-            Coptic::CopticCapitalLetterPi => COPTIC_CAPITAL_LETTER_PI,
-            Coptic::CopticSmallLetterPi => COPTIC_SMALL_LETTER_PI,
-            Coptic::CopticCapitalLetterRo => COPTIC_CAPITAL_LETTER_RO,
-            Coptic::CopticSmallLetterRo => COPTIC_SMALL_LETTER_RO,
-            Coptic::CopticCapitalLetterSima => COPTIC_CAPITAL_LETTER_SIMA,
-            Coptic::CopticSmallLetterSima => COPTIC_SMALL_LETTER_SIMA,
-            Coptic::CopticCapitalLetterTau => COPTIC_CAPITAL_LETTER_TAU,
-            Coptic::CopticSmallLetterTau => COPTIC_SMALL_LETTER_TAU,
-            Coptic::CopticCapitalLetterUa => COPTIC_CAPITAL_LETTER_UA,
-            Coptic::CopticSmallLetterUa => COPTIC_SMALL_LETTER_UA,
-            Coptic::CopticCapitalLetterFi => COPTIC_CAPITAL_LETTER_FI,
-            Coptic::CopticSmallLetterFi => COPTIC_SMALL_LETTER_FI,
-            Coptic::CopticCapitalLetterKhi => COPTIC_CAPITAL_LETTER_KHI,
-            Coptic::CopticSmallLetterKhi => COPTIC_SMALL_LETTER_KHI,
-            Coptic::CopticCapitalLetterPsi => COPTIC_CAPITAL_LETTER_PSI,
-            Coptic::CopticSmallLetterPsi => COPTIC_SMALL_LETTER_PSI,
-            Coptic::CopticCapitalLetterOou => COPTIC_CAPITAL_LETTER_OOU,
-            Coptic::CopticSmallLetterOou => COPTIC_SMALL_LETTER_OOU,
-            Coptic::CopticCapitalLetterDialectDashPAlef => COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_ALEF,
-            Coptic::CopticSmallLetterDialectDashPAlef => COPTIC_SMALL_LETTER_DIALECT_DASH_P_ALEF,
-            Coptic::CopticCapitalLetterOldCopticAin => COPTIC_CAPITAL_LETTER_OLD_COPTIC_AIN,
-            Coptic::CopticSmallLetterOldCopticAin => COPTIC_SMALL_LETTER_OLD_COPTIC_AIN,
-            Coptic::CopticCapitalLetterCryptogrammicEie => COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_EIE,
-            Coptic::CopticSmallLetterCryptogrammicEie => COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_EIE,
-            Coptic::CopticCapitalLetterDialectDashPKapa => COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_KAPA,
-            Coptic::CopticSmallLetterDialectDashPKapa => COPTIC_SMALL_LETTER_DIALECT_DASH_P_KAPA,
-            Coptic::CopticCapitalLetterDialectDashPNi => COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_NI,
-            Coptic::CopticSmallLetterDialectDashPNi => COPTIC_SMALL_LETTER_DIALECT_DASH_P_NI,
-            Coptic::CopticCapitalLetterCryptogrammicNi => COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_NI,
-            Coptic::CopticSmallLetterCryptogrammicNi => COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_NI,
-            Coptic::CopticCapitalLetterOldCopticOou => COPTIC_CAPITAL_LETTER_OLD_COPTIC_OOU,
-            Coptic::CopticSmallLetterOldCopticOou => COPTIC_SMALL_LETTER_OLD_COPTIC_OOU,
-            Coptic::CopticCapitalLetterSampi => COPTIC_CAPITAL_LETTER_SAMPI,
-            Coptic::CopticSmallLetterSampi => COPTIC_SMALL_LETTER_SAMPI,
-            Coptic::CopticCapitalLetterCrossedShei => COPTIC_CAPITAL_LETTER_CROSSED_SHEI,
-            Coptic::CopticSmallLetterCrossedShei => COPTIC_SMALL_LETTER_CROSSED_SHEI,
-            Coptic::CopticCapitalLetterOldCopticShei => COPTIC_CAPITAL_LETTER_OLD_COPTIC_SHEI,
-            Coptic::CopticSmallLetterOldCopticShei => COPTIC_SMALL_LETTER_OLD_COPTIC_SHEI,
-            Coptic::CopticCapitalLetterOldCopticEsh => COPTIC_CAPITAL_LETTER_OLD_COPTIC_ESH,
-            Coptic::CopticSmallLetterOldCopticEsh => COPTIC_SMALL_LETTER_OLD_COPTIC_ESH,
-            Coptic::CopticCapitalLetterAkhmimicKhei => COPTIC_CAPITAL_LETTER_AKHMIMIC_KHEI,
-            Coptic::CopticSmallLetterAkhmimicKhei => COPTIC_SMALL_LETTER_AKHMIMIC_KHEI,
-            Coptic::CopticCapitalLetterDialectDashPHori => COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_HORI,
-            Coptic::CopticSmallLetterDialectDashPHori => COPTIC_SMALL_LETTER_DIALECT_DASH_P_HORI,
-            Coptic::CopticCapitalLetterOldCopticHori => COPTIC_CAPITAL_LETTER_OLD_COPTIC_HORI,
-            Coptic::CopticSmallLetterOldCopticHori => COPTIC_SMALL_LETTER_OLD_COPTIC_HORI,
-            Coptic::CopticCapitalLetterOldCopticHa => COPTIC_CAPITAL_LETTER_OLD_COPTIC_HA,
-            Coptic::CopticSmallLetterOldCopticHa => COPTIC_SMALL_LETTER_OLD_COPTIC_HA,
-            Coptic::CopticCapitalLetterLDashShapedHa => COPTIC_CAPITAL_LETTER_L_DASH_SHAPED_HA,
-            Coptic::CopticSmallLetterLDashShapedHa => COPTIC_SMALL_LETTER_L_DASH_SHAPED_HA,
-            Coptic::CopticCapitalLetterOldCopticHei => COPTIC_CAPITAL_LETTER_OLD_COPTIC_HEI,
-            Coptic::CopticSmallLetterOldCopticHei => COPTIC_SMALL_LETTER_OLD_COPTIC_HEI,
-            Coptic::CopticCapitalLetterOldCopticHat => COPTIC_CAPITAL_LETTER_OLD_COPTIC_HAT,
-            Coptic::CopticSmallLetterOldCopticHat => COPTIC_SMALL_LETTER_OLD_COPTIC_HAT,
-            Coptic::CopticCapitalLetterOldCopticGangia => COPTIC_CAPITAL_LETTER_OLD_COPTIC_GANGIA,
-            Coptic::CopticSmallLetterOldCopticGangia => COPTIC_SMALL_LETTER_OLD_COPTIC_GANGIA,
-            Coptic::CopticCapitalLetterOldCopticDja => COPTIC_CAPITAL_LETTER_OLD_COPTIC_DJA,
-            Coptic::CopticSmallLetterOldCopticDja => COPTIC_SMALL_LETTER_OLD_COPTIC_DJA,
-            Coptic::CopticCapitalLetterOldCopticShima => COPTIC_CAPITAL_LETTER_OLD_COPTIC_SHIMA,
-            Coptic::CopticSmallLetterOldCopticShima => COPTIC_SMALL_LETTER_OLD_COPTIC_SHIMA,
-            Coptic::CopticCapitalLetterOldNubianShima => COPTIC_CAPITAL_LETTER_OLD_NUBIAN_SHIMA,
-            Coptic::CopticSmallLetterOldNubianShima => COPTIC_SMALL_LETTER_OLD_NUBIAN_SHIMA,
-            Coptic::CopticCapitalLetterOldNubianNgi => COPTIC_CAPITAL_LETTER_OLD_NUBIAN_NGI,
-            Coptic::CopticSmallLetterOldNubianNgi => COPTIC_SMALL_LETTER_OLD_NUBIAN_NGI,
-            Coptic::CopticCapitalLetterOldNubianNyi => COPTIC_CAPITAL_LETTER_OLD_NUBIAN_NYI,
-            Coptic::CopticSmallLetterOldNubianNyi => COPTIC_SMALL_LETTER_OLD_NUBIAN_NYI,
-            Coptic::CopticCapitalLetterOldNubianWau => COPTIC_CAPITAL_LETTER_OLD_NUBIAN_WAU,
-            Coptic::CopticSmallLetterOldNubianWau => COPTIC_SMALL_LETTER_OLD_NUBIAN_WAU,
-            Coptic::CopticSymbolKai => COPTIC_SYMBOL_KAI,
-            Coptic::CopticSymbolMiRo => COPTIC_SYMBOL_MI_RO,
-            Coptic::CopticSymbolPiRo => COPTIC_SYMBOL_PI_RO,
-            Coptic::CopticSymbolStauros => COPTIC_SYMBOL_STAUROS,
-            Coptic::CopticSymbolTauRo => COPTIC_SYMBOL_TAU_RO,
-            Coptic::CopticSymbolKhiRo => COPTIC_SYMBOL_KHI_RO,
-            Coptic::CopticSymbolShimaSima => COPTIC_SYMBOL_SHIMA_SIMA,
-            Coptic::CopticCapitalLetterCryptogrammicShei => COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_SHEI,
-            Coptic::CopticSmallLetterCryptogrammicShei => COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_SHEI,
-            Coptic::CopticCapitalLetterCryptogrammicGangia => COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_GANGIA,
-            Coptic::CopticSmallLetterCryptogrammicGangia => COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_GANGIA,
-            Coptic::CopticCombiningNiAbove => COPTIC_COMBINING_NI_ABOVE,
-            Coptic::CopticCombiningSpiritusAsper => COPTIC_COMBINING_SPIRITUS_ASPER,
-            Coptic::CopticCombiningSpiritusLenis => COPTIC_COMBINING_SPIRITUS_LENIS,
-            Coptic::CopticCapitalLetterBohairicKhei => COPTIC_CAPITAL_LETTER_BOHAIRIC_KHEI,
-            Coptic::CopticSmallLetterBohairicKhei => COPTIC_SMALL_LETTER_BOHAIRIC_KHEI,
-            Coptic::CopticOldNubianFullStop => COPTIC_OLD_NUBIAN_FULL_STOP,
-            Coptic::CopticOldNubianDirectQuestionMark => COPTIC_OLD_NUBIAN_DIRECT_QUESTION_MARK,
-            Coptic::CopticOldNubianIndirectQuestionMark => COPTIC_OLD_NUBIAN_INDIRECT_QUESTION_MARK,
-            Coptic::CopticOldNubianVerseDivider => COPTIC_OLD_NUBIAN_VERSE_DIVIDER,
-            Coptic::CopticFractionOneHalf => COPTIC_FRACTION_ONE_HALF,
-            Coptic::CopticFullStop => COPTIC_FULL_STOP,
+            Coptic::CapitalLetterAlfa => CAPITAL_LETTER_ALFA,
+            Coptic::SmallLetterAlfa => SMALL_LETTER_ALFA,
+            Coptic::CapitalLetterVida => CAPITAL_LETTER_VIDA,
+            Coptic::SmallLetterVida => SMALL_LETTER_VIDA,
+            Coptic::CapitalLetterGamma => CAPITAL_LETTER_GAMMA,
+            Coptic::SmallLetterGamma => SMALL_LETTER_GAMMA,
+            Coptic::CapitalLetterDalda => CAPITAL_LETTER_DALDA,
+            Coptic::SmallLetterDalda => SMALL_LETTER_DALDA,
+            Coptic::CapitalLetterEie => CAPITAL_LETTER_EIE,
+            Coptic::SmallLetterEie => SMALL_LETTER_EIE,
+            Coptic::CapitalLetterSou => CAPITAL_LETTER_SOU,
+            Coptic::SmallLetterSou => SMALL_LETTER_SOU,
+            Coptic::CapitalLetterZata => CAPITAL_LETTER_ZATA,
+            Coptic::SmallLetterZata => SMALL_LETTER_ZATA,
+            Coptic::CapitalLetterHate => CAPITAL_LETTER_HATE,
+            Coptic::SmallLetterHate => SMALL_LETTER_HATE,
+            Coptic::CapitalLetterThethe => CAPITAL_LETTER_THETHE,
+            Coptic::SmallLetterThethe => SMALL_LETTER_THETHE,
+            Coptic::CapitalLetterIauda => CAPITAL_LETTER_IAUDA,
+            Coptic::SmallLetterIauda => SMALL_LETTER_IAUDA,
+            Coptic::CapitalLetterKapa => CAPITAL_LETTER_KAPA,
+            Coptic::SmallLetterKapa => SMALL_LETTER_KAPA,
+            Coptic::CapitalLetterLaula => CAPITAL_LETTER_LAULA,
+            Coptic::SmallLetterLaula => SMALL_LETTER_LAULA,
+            Coptic::CapitalLetterMi => CAPITAL_LETTER_MI,
+            Coptic::SmallLetterMi => SMALL_LETTER_MI,
+            Coptic::CapitalLetterNi => CAPITAL_LETTER_NI,
+            Coptic::SmallLetterNi => SMALL_LETTER_NI,
+            Coptic::CapitalLetterKsi => CAPITAL_LETTER_KSI,
+            Coptic::SmallLetterKsi => SMALL_LETTER_KSI,
+            Coptic::CapitalLetterO => CAPITAL_LETTER_O,
+            Coptic::SmallLetterO => SMALL_LETTER_O,
+            Coptic::CapitalLetterPi => CAPITAL_LETTER_PI,
+            Coptic::SmallLetterPi => SMALL_LETTER_PI,
+            Coptic::CapitalLetterRo => CAPITAL_LETTER_RO,
+            Coptic::SmallLetterRo => SMALL_LETTER_RO,
+            Coptic::CapitalLetterSima => CAPITAL_LETTER_SIMA,
+            Coptic::SmallLetterSima => SMALL_LETTER_SIMA,
+            Coptic::CapitalLetterTau => CAPITAL_LETTER_TAU,
+            Coptic::SmallLetterTau => SMALL_LETTER_TAU,
+            Coptic::CapitalLetterUa => CAPITAL_LETTER_UA,
+            Coptic::SmallLetterUa => SMALL_LETTER_UA,
+            Coptic::CapitalLetterFi => CAPITAL_LETTER_FI,
+            Coptic::SmallLetterFi => SMALL_LETTER_FI,
+            Coptic::CapitalLetterKhi => CAPITAL_LETTER_KHI,
+            Coptic::SmallLetterKhi => SMALL_LETTER_KHI,
+            Coptic::CapitalLetterPsi => CAPITAL_LETTER_PSI,
+            Coptic::SmallLetterPsi => SMALL_LETTER_PSI,
+            Coptic::CapitalLetterOou => CAPITAL_LETTER_OOU,
+            Coptic::SmallLetterOou => SMALL_LETTER_OOU,
+            Coptic::CapitalLetterDialectDashPAlef => CAPITAL_LETTER_DIALECT_DASH_P_ALEF,
+            Coptic::SmallLetterDialectDashPAlef => SMALL_LETTER_DIALECT_DASH_P_ALEF,
+            Coptic::CapitalLetterOldAin => CAPITAL_LETTER_OLD_AIN,
+            Coptic::SmallLetterOldAin => SMALL_LETTER_OLD_AIN,
+            Coptic::CapitalLetterCryptogrammicEie => CAPITAL_LETTER_CRYPTOGRAMMIC_EIE,
+            Coptic::SmallLetterCryptogrammicEie => SMALL_LETTER_CRYPTOGRAMMIC_EIE,
+            Coptic::CapitalLetterDialectDashPKapa => CAPITAL_LETTER_DIALECT_DASH_P_KAPA,
+            Coptic::SmallLetterDialectDashPKapa => SMALL_LETTER_DIALECT_DASH_P_KAPA,
+            Coptic::CapitalLetterDialectDashPNi => CAPITAL_LETTER_DIALECT_DASH_P_NI,
+            Coptic::SmallLetterDialectDashPNi => SMALL_LETTER_DIALECT_DASH_P_NI,
+            Coptic::CapitalLetterCryptogrammicNi => CAPITAL_LETTER_CRYPTOGRAMMIC_NI,
+            Coptic::SmallLetterCryptogrammicNi => SMALL_LETTER_CRYPTOGRAMMIC_NI,
+            Coptic::CapitalLetterOldOou => CAPITAL_LETTER_OLD_OOU,
+            Coptic::SmallLetterOldOou => SMALL_LETTER_OLD_OOU,
+            Coptic::CapitalLetterSampi => CAPITAL_LETTER_SAMPI,
+            Coptic::SmallLetterSampi => SMALL_LETTER_SAMPI,
+            Coptic::CapitalLetterCrossedShei => CAPITAL_LETTER_CROSSED_SHEI,
+            Coptic::SmallLetterCrossedShei => SMALL_LETTER_CROSSED_SHEI,
+            Coptic::CapitalLetterOldShei => CAPITAL_LETTER_OLD_SHEI,
+            Coptic::SmallLetterOldShei => SMALL_LETTER_OLD_SHEI,
+            Coptic::CapitalLetterOldEsh => CAPITAL_LETTER_OLD_ESH,
+            Coptic::SmallLetterOldEsh => SMALL_LETTER_OLD_ESH,
+            Coptic::CapitalLetterAkhmimicKhei => CAPITAL_LETTER_AKHMIMIC_KHEI,
+            Coptic::SmallLetterAkhmimicKhei => SMALL_LETTER_AKHMIMIC_KHEI,
+            Coptic::CapitalLetterDialectDashPHori => CAPITAL_LETTER_DIALECT_DASH_P_HORI,
+            Coptic::SmallLetterDialectDashPHori => SMALL_LETTER_DIALECT_DASH_P_HORI,
+            Coptic::CapitalLetterOldHori => CAPITAL_LETTER_OLD_HORI,
+            Coptic::SmallLetterOldHori => SMALL_LETTER_OLD_HORI,
+            Coptic::CapitalLetterOldHa => CAPITAL_LETTER_OLD_HA,
+            Coptic::SmallLetterOldHa => SMALL_LETTER_OLD_HA,
+            Coptic::CapitalLetterLDashShapedHa => CAPITAL_LETTER_L_DASH_SHAPED_HA,
+            Coptic::SmallLetterLDashShapedHa => SMALL_LETTER_L_DASH_SHAPED_HA,
+            Coptic::CapitalLetterOldHei => CAPITAL_LETTER_OLD_HEI,
+            Coptic::SmallLetterOldHei => SMALL_LETTER_OLD_HEI,
+            Coptic::CapitalLetterOldHat => CAPITAL_LETTER_OLD_HAT,
+            Coptic::SmallLetterOldHat => SMALL_LETTER_OLD_HAT,
+            Coptic::CapitalLetterOldGangia => CAPITAL_LETTER_OLD_GANGIA,
+            Coptic::SmallLetterOldGangia => SMALL_LETTER_OLD_GANGIA,
+            Coptic::CapitalLetterOldDja => CAPITAL_LETTER_OLD_DJA,
+            Coptic::SmallLetterOldDja => SMALL_LETTER_OLD_DJA,
+            Coptic::CapitalLetterOldShima => CAPITAL_LETTER_OLD_SHIMA,
+            Coptic::SmallLetterOldShima => SMALL_LETTER_OLD_SHIMA,
+            Coptic::CapitalLetterOldNubianShima => CAPITAL_LETTER_OLD_NUBIAN_SHIMA,
+            Coptic::SmallLetterOldNubianShima => SMALL_LETTER_OLD_NUBIAN_SHIMA,
+            Coptic::CapitalLetterOldNubianNgi => CAPITAL_LETTER_OLD_NUBIAN_NGI,
+            Coptic::SmallLetterOldNubianNgi => SMALL_LETTER_OLD_NUBIAN_NGI,
+            Coptic::CapitalLetterOldNubianNyi => CAPITAL_LETTER_OLD_NUBIAN_NYI,
+            Coptic::SmallLetterOldNubianNyi => SMALL_LETTER_OLD_NUBIAN_NYI,
+            Coptic::CapitalLetterOldNubianWau => CAPITAL_LETTER_OLD_NUBIAN_WAU,
+            Coptic::SmallLetterOldNubianWau => SMALL_LETTER_OLD_NUBIAN_WAU,
+            Coptic::SymbolKai => SYMBOL_KAI,
+            Coptic::SymbolMiRo => SYMBOL_MI_RO,
+            Coptic::SymbolPiRo => SYMBOL_PI_RO,
+            Coptic::SymbolStauros => SYMBOL_STAUROS,
+            Coptic::SymbolTauRo => SYMBOL_TAU_RO,
+            Coptic::SymbolKhiRo => SYMBOL_KHI_RO,
+            Coptic::SymbolShimaSima => SYMBOL_SHIMA_SIMA,
+            Coptic::CapitalLetterCryptogrammicShei => CAPITAL_LETTER_CRYPTOGRAMMIC_SHEI,
+            Coptic::SmallLetterCryptogrammicShei => SMALL_LETTER_CRYPTOGRAMMIC_SHEI,
+            Coptic::CapitalLetterCryptogrammicGangia => CAPITAL_LETTER_CRYPTOGRAMMIC_GANGIA,
+            Coptic::SmallLetterCryptogrammicGangia => SMALL_LETTER_CRYPTOGRAMMIC_GANGIA,
+            Coptic::CombiningNiAbove => COMBINING_NI_ABOVE,
+            Coptic::CombiningSpiritusAsper => COMBINING_SPIRITUS_ASPER,
+            Coptic::CombiningSpiritusLenis => COMBINING_SPIRITUS_LENIS,
+            Coptic::CapitalLetterBohairicKhei => CAPITAL_LETTER_BOHAIRIC_KHEI,
+            Coptic::SmallLetterBohairicKhei => SMALL_LETTER_BOHAIRIC_KHEI,
+            Coptic::OldNubianFullStop => OLD_NUBIAN_FULL_STOP,
+            Coptic::OldNubianDirectQuestionMark => OLD_NUBIAN_DIRECT_QUESTION_MARK,
+            Coptic::OldNubianIndirectQuestionMark => OLD_NUBIAN_INDIRECT_QUESTION_MARK,
+            Coptic::OldNubianVerseDivider => OLD_NUBIAN_VERSE_DIVIDER,
+            Coptic::FractionOneHalf => FRACTION_ONE_HALF,
+            Coptic::FullStop => FULL_STOP,
         }
     }
 }
@@ -648,128 +648,128 @@ impl std::convert::TryFrom<char> for Coptic {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            COPTIC_CAPITAL_LETTER_ALFA => Ok(Coptic::CopticCapitalLetterAlfa),
-            COPTIC_SMALL_LETTER_ALFA => Ok(Coptic::CopticSmallLetterAlfa),
-            COPTIC_CAPITAL_LETTER_VIDA => Ok(Coptic::CopticCapitalLetterVida),
-            COPTIC_SMALL_LETTER_VIDA => Ok(Coptic::CopticSmallLetterVida),
-            COPTIC_CAPITAL_LETTER_GAMMA => Ok(Coptic::CopticCapitalLetterGamma),
-            COPTIC_SMALL_LETTER_GAMMA => Ok(Coptic::CopticSmallLetterGamma),
-            COPTIC_CAPITAL_LETTER_DALDA => Ok(Coptic::CopticCapitalLetterDalda),
-            COPTIC_SMALL_LETTER_DALDA => Ok(Coptic::CopticSmallLetterDalda),
-            COPTIC_CAPITAL_LETTER_EIE => Ok(Coptic::CopticCapitalLetterEie),
-            COPTIC_SMALL_LETTER_EIE => Ok(Coptic::CopticSmallLetterEie),
-            COPTIC_CAPITAL_LETTER_SOU => Ok(Coptic::CopticCapitalLetterSou),
-            COPTIC_SMALL_LETTER_SOU => Ok(Coptic::CopticSmallLetterSou),
-            COPTIC_CAPITAL_LETTER_ZATA => Ok(Coptic::CopticCapitalLetterZata),
-            COPTIC_SMALL_LETTER_ZATA => Ok(Coptic::CopticSmallLetterZata),
-            COPTIC_CAPITAL_LETTER_HATE => Ok(Coptic::CopticCapitalLetterHate),
-            COPTIC_SMALL_LETTER_HATE => Ok(Coptic::CopticSmallLetterHate),
-            COPTIC_CAPITAL_LETTER_THETHE => Ok(Coptic::CopticCapitalLetterThethe),
-            COPTIC_SMALL_LETTER_THETHE => Ok(Coptic::CopticSmallLetterThethe),
-            COPTIC_CAPITAL_LETTER_IAUDA => Ok(Coptic::CopticCapitalLetterIauda),
-            COPTIC_SMALL_LETTER_IAUDA => Ok(Coptic::CopticSmallLetterIauda),
-            COPTIC_CAPITAL_LETTER_KAPA => Ok(Coptic::CopticCapitalLetterKapa),
-            COPTIC_SMALL_LETTER_KAPA => Ok(Coptic::CopticSmallLetterKapa),
-            COPTIC_CAPITAL_LETTER_LAULA => Ok(Coptic::CopticCapitalLetterLaula),
-            COPTIC_SMALL_LETTER_LAULA => Ok(Coptic::CopticSmallLetterLaula),
-            COPTIC_CAPITAL_LETTER_MI => Ok(Coptic::CopticCapitalLetterMi),
-            COPTIC_SMALL_LETTER_MI => Ok(Coptic::CopticSmallLetterMi),
-            COPTIC_CAPITAL_LETTER_NI => Ok(Coptic::CopticCapitalLetterNi),
-            COPTIC_SMALL_LETTER_NI => Ok(Coptic::CopticSmallLetterNi),
-            COPTIC_CAPITAL_LETTER_KSI => Ok(Coptic::CopticCapitalLetterKsi),
-            COPTIC_SMALL_LETTER_KSI => Ok(Coptic::CopticSmallLetterKsi),
-            COPTIC_CAPITAL_LETTER_O => Ok(Coptic::CopticCapitalLetterO),
-            COPTIC_SMALL_LETTER_O => Ok(Coptic::CopticSmallLetterO),
-            COPTIC_CAPITAL_LETTER_PI => Ok(Coptic::CopticCapitalLetterPi),
-            COPTIC_SMALL_LETTER_PI => Ok(Coptic::CopticSmallLetterPi),
-            COPTIC_CAPITAL_LETTER_RO => Ok(Coptic::CopticCapitalLetterRo),
-            COPTIC_SMALL_LETTER_RO => Ok(Coptic::CopticSmallLetterRo),
-            COPTIC_CAPITAL_LETTER_SIMA => Ok(Coptic::CopticCapitalLetterSima),
-            COPTIC_SMALL_LETTER_SIMA => Ok(Coptic::CopticSmallLetterSima),
-            COPTIC_CAPITAL_LETTER_TAU => Ok(Coptic::CopticCapitalLetterTau),
-            COPTIC_SMALL_LETTER_TAU => Ok(Coptic::CopticSmallLetterTau),
-            COPTIC_CAPITAL_LETTER_UA => Ok(Coptic::CopticCapitalLetterUa),
-            COPTIC_SMALL_LETTER_UA => Ok(Coptic::CopticSmallLetterUa),
-            COPTIC_CAPITAL_LETTER_FI => Ok(Coptic::CopticCapitalLetterFi),
-            COPTIC_SMALL_LETTER_FI => Ok(Coptic::CopticSmallLetterFi),
-            COPTIC_CAPITAL_LETTER_KHI => Ok(Coptic::CopticCapitalLetterKhi),
-            COPTIC_SMALL_LETTER_KHI => Ok(Coptic::CopticSmallLetterKhi),
-            COPTIC_CAPITAL_LETTER_PSI => Ok(Coptic::CopticCapitalLetterPsi),
-            COPTIC_SMALL_LETTER_PSI => Ok(Coptic::CopticSmallLetterPsi),
-            COPTIC_CAPITAL_LETTER_OOU => Ok(Coptic::CopticCapitalLetterOou),
-            COPTIC_SMALL_LETTER_OOU => Ok(Coptic::CopticSmallLetterOou),
-            COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_ALEF => Ok(Coptic::CopticCapitalLetterDialectDashPAlef),
-            COPTIC_SMALL_LETTER_DIALECT_DASH_P_ALEF => Ok(Coptic::CopticSmallLetterDialectDashPAlef),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_AIN => Ok(Coptic::CopticCapitalLetterOldCopticAin),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_AIN => Ok(Coptic::CopticSmallLetterOldCopticAin),
-            COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_EIE => Ok(Coptic::CopticCapitalLetterCryptogrammicEie),
-            COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_EIE => Ok(Coptic::CopticSmallLetterCryptogrammicEie),
-            COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_KAPA => Ok(Coptic::CopticCapitalLetterDialectDashPKapa),
-            COPTIC_SMALL_LETTER_DIALECT_DASH_P_KAPA => Ok(Coptic::CopticSmallLetterDialectDashPKapa),
-            COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_NI => Ok(Coptic::CopticCapitalLetterDialectDashPNi),
-            COPTIC_SMALL_LETTER_DIALECT_DASH_P_NI => Ok(Coptic::CopticSmallLetterDialectDashPNi),
-            COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_NI => Ok(Coptic::CopticCapitalLetterCryptogrammicNi),
-            COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_NI => Ok(Coptic::CopticSmallLetterCryptogrammicNi),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_OOU => Ok(Coptic::CopticCapitalLetterOldCopticOou),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_OOU => Ok(Coptic::CopticSmallLetterOldCopticOou),
-            COPTIC_CAPITAL_LETTER_SAMPI => Ok(Coptic::CopticCapitalLetterSampi),
-            COPTIC_SMALL_LETTER_SAMPI => Ok(Coptic::CopticSmallLetterSampi),
-            COPTIC_CAPITAL_LETTER_CROSSED_SHEI => Ok(Coptic::CopticCapitalLetterCrossedShei),
-            COPTIC_SMALL_LETTER_CROSSED_SHEI => Ok(Coptic::CopticSmallLetterCrossedShei),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_SHEI => Ok(Coptic::CopticCapitalLetterOldCopticShei),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_SHEI => Ok(Coptic::CopticSmallLetterOldCopticShei),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_ESH => Ok(Coptic::CopticCapitalLetterOldCopticEsh),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_ESH => Ok(Coptic::CopticSmallLetterOldCopticEsh),
-            COPTIC_CAPITAL_LETTER_AKHMIMIC_KHEI => Ok(Coptic::CopticCapitalLetterAkhmimicKhei),
-            COPTIC_SMALL_LETTER_AKHMIMIC_KHEI => Ok(Coptic::CopticSmallLetterAkhmimicKhei),
-            COPTIC_CAPITAL_LETTER_DIALECT_DASH_P_HORI => Ok(Coptic::CopticCapitalLetterDialectDashPHori),
-            COPTIC_SMALL_LETTER_DIALECT_DASH_P_HORI => Ok(Coptic::CopticSmallLetterDialectDashPHori),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_HORI => Ok(Coptic::CopticCapitalLetterOldCopticHori),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_HORI => Ok(Coptic::CopticSmallLetterOldCopticHori),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_HA => Ok(Coptic::CopticCapitalLetterOldCopticHa),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_HA => Ok(Coptic::CopticSmallLetterOldCopticHa),
-            COPTIC_CAPITAL_LETTER_L_DASH_SHAPED_HA => Ok(Coptic::CopticCapitalLetterLDashShapedHa),
-            COPTIC_SMALL_LETTER_L_DASH_SHAPED_HA => Ok(Coptic::CopticSmallLetterLDashShapedHa),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_HEI => Ok(Coptic::CopticCapitalLetterOldCopticHei),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_HEI => Ok(Coptic::CopticSmallLetterOldCopticHei),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_HAT => Ok(Coptic::CopticCapitalLetterOldCopticHat),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_HAT => Ok(Coptic::CopticSmallLetterOldCopticHat),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_GANGIA => Ok(Coptic::CopticCapitalLetterOldCopticGangia),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_GANGIA => Ok(Coptic::CopticSmallLetterOldCopticGangia),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_DJA => Ok(Coptic::CopticCapitalLetterOldCopticDja),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_DJA => Ok(Coptic::CopticSmallLetterOldCopticDja),
-            COPTIC_CAPITAL_LETTER_OLD_COPTIC_SHIMA => Ok(Coptic::CopticCapitalLetterOldCopticShima),
-            COPTIC_SMALL_LETTER_OLD_COPTIC_SHIMA => Ok(Coptic::CopticSmallLetterOldCopticShima),
-            COPTIC_CAPITAL_LETTER_OLD_NUBIAN_SHIMA => Ok(Coptic::CopticCapitalLetterOldNubianShima),
-            COPTIC_SMALL_LETTER_OLD_NUBIAN_SHIMA => Ok(Coptic::CopticSmallLetterOldNubianShima),
-            COPTIC_CAPITAL_LETTER_OLD_NUBIAN_NGI => Ok(Coptic::CopticCapitalLetterOldNubianNgi),
-            COPTIC_SMALL_LETTER_OLD_NUBIAN_NGI => Ok(Coptic::CopticSmallLetterOldNubianNgi),
-            COPTIC_CAPITAL_LETTER_OLD_NUBIAN_NYI => Ok(Coptic::CopticCapitalLetterOldNubianNyi),
-            COPTIC_SMALL_LETTER_OLD_NUBIAN_NYI => Ok(Coptic::CopticSmallLetterOldNubianNyi),
-            COPTIC_CAPITAL_LETTER_OLD_NUBIAN_WAU => Ok(Coptic::CopticCapitalLetterOldNubianWau),
-            COPTIC_SMALL_LETTER_OLD_NUBIAN_WAU => Ok(Coptic::CopticSmallLetterOldNubianWau),
-            COPTIC_SYMBOL_KAI => Ok(Coptic::CopticSymbolKai),
-            COPTIC_SYMBOL_MI_RO => Ok(Coptic::CopticSymbolMiRo),
-            COPTIC_SYMBOL_PI_RO => Ok(Coptic::CopticSymbolPiRo),
-            COPTIC_SYMBOL_STAUROS => Ok(Coptic::CopticSymbolStauros),
-            COPTIC_SYMBOL_TAU_RO => Ok(Coptic::CopticSymbolTauRo),
-            COPTIC_SYMBOL_KHI_RO => Ok(Coptic::CopticSymbolKhiRo),
-            COPTIC_SYMBOL_SHIMA_SIMA => Ok(Coptic::CopticSymbolShimaSima),
-            COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_SHEI => Ok(Coptic::CopticCapitalLetterCryptogrammicShei),
-            COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_SHEI => Ok(Coptic::CopticSmallLetterCryptogrammicShei),
-            COPTIC_CAPITAL_LETTER_CRYPTOGRAMMIC_GANGIA => Ok(Coptic::CopticCapitalLetterCryptogrammicGangia),
-            COPTIC_SMALL_LETTER_CRYPTOGRAMMIC_GANGIA => Ok(Coptic::CopticSmallLetterCryptogrammicGangia),
-            COPTIC_COMBINING_NI_ABOVE => Ok(Coptic::CopticCombiningNiAbove),
-            COPTIC_COMBINING_SPIRITUS_ASPER => Ok(Coptic::CopticCombiningSpiritusAsper),
-            COPTIC_COMBINING_SPIRITUS_LENIS => Ok(Coptic::CopticCombiningSpiritusLenis),
-            COPTIC_CAPITAL_LETTER_BOHAIRIC_KHEI => Ok(Coptic::CopticCapitalLetterBohairicKhei),
-            COPTIC_SMALL_LETTER_BOHAIRIC_KHEI => Ok(Coptic::CopticSmallLetterBohairicKhei),
-            COPTIC_OLD_NUBIAN_FULL_STOP => Ok(Coptic::CopticOldNubianFullStop),
-            COPTIC_OLD_NUBIAN_DIRECT_QUESTION_MARK => Ok(Coptic::CopticOldNubianDirectQuestionMark),
-            COPTIC_OLD_NUBIAN_INDIRECT_QUESTION_MARK => Ok(Coptic::CopticOldNubianIndirectQuestionMark),
-            COPTIC_OLD_NUBIAN_VERSE_DIVIDER => Ok(Coptic::CopticOldNubianVerseDivider),
-            COPTIC_FRACTION_ONE_HALF => Ok(Coptic::CopticFractionOneHalf),
-            COPTIC_FULL_STOP => Ok(Coptic::CopticFullStop),
+            CAPITAL_LETTER_ALFA => Ok(Coptic::CapitalLetterAlfa),
+            SMALL_LETTER_ALFA => Ok(Coptic::SmallLetterAlfa),
+            CAPITAL_LETTER_VIDA => Ok(Coptic::CapitalLetterVida),
+            SMALL_LETTER_VIDA => Ok(Coptic::SmallLetterVida),
+            CAPITAL_LETTER_GAMMA => Ok(Coptic::CapitalLetterGamma),
+            SMALL_LETTER_GAMMA => Ok(Coptic::SmallLetterGamma),
+            CAPITAL_LETTER_DALDA => Ok(Coptic::CapitalLetterDalda),
+            SMALL_LETTER_DALDA => Ok(Coptic::SmallLetterDalda),
+            CAPITAL_LETTER_EIE => Ok(Coptic::CapitalLetterEie),
+            SMALL_LETTER_EIE => Ok(Coptic::SmallLetterEie),
+            CAPITAL_LETTER_SOU => Ok(Coptic::CapitalLetterSou),
+            SMALL_LETTER_SOU => Ok(Coptic::SmallLetterSou),
+            CAPITAL_LETTER_ZATA => Ok(Coptic::CapitalLetterZata),
+            SMALL_LETTER_ZATA => Ok(Coptic::SmallLetterZata),
+            CAPITAL_LETTER_HATE => Ok(Coptic::CapitalLetterHate),
+            SMALL_LETTER_HATE => Ok(Coptic::SmallLetterHate),
+            CAPITAL_LETTER_THETHE => Ok(Coptic::CapitalLetterThethe),
+            SMALL_LETTER_THETHE => Ok(Coptic::SmallLetterThethe),
+            CAPITAL_LETTER_IAUDA => Ok(Coptic::CapitalLetterIauda),
+            SMALL_LETTER_IAUDA => Ok(Coptic::SmallLetterIauda),
+            CAPITAL_LETTER_KAPA => Ok(Coptic::CapitalLetterKapa),
+            SMALL_LETTER_KAPA => Ok(Coptic::SmallLetterKapa),
+            CAPITAL_LETTER_LAULA => Ok(Coptic::CapitalLetterLaula),
+            SMALL_LETTER_LAULA => Ok(Coptic::SmallLetterLaula),
+            CAPITAL_LETTER_MI => Ok(Coptic::CapitalLetterMi),
+            SMALL_LETTER_MI => Ok(Coptic::SmallLetterMi),
+            CAPITAL_LETTER_NI => Ok(Coptic::CapitalLetterNi),
+            SMALL_LETTER_NI => Ok(Coptic::SmallLetterNi),
+            CAPITAL_LETTER_KSI => Ok(Coptic::CapitalLetterKsi),
+            SMALL_LETTER_KSI => Ok(Coptic::SmallLetterKsi),
+            CAPITAL_LETTER_O => Ok(Coptic::CapitalLetterO),
+            SMALL_LETTER_O => Ok(Coptic::SmallLetterO),
+            CAPITAL_LETTER_PI => Ok(Coptic::CapitalLetterPi),
+            SMALL_LETTER_PI => Ok(Coptic::SmallLetterPi),
+            CAPITAL_LETTER_RO => Ok(Coptic::CapitalLetterRo),
+            SMALL_LETTER_RO => Ok(Coptic::SmallLetterRo),
+            CAPITAL_LETTER_SIMA => Ok(Coptic::CapitalLetterSima),
+            SMALL_LETTER_SIMA => Ok(Coptic::SmallLetterSima),
+            CAPITAL_LETTER_TAU => Ok(Coptic::CapitalLetterTau),
+            SMALL_LETTER_TAU => Ok(Coptic::SmallLetterTau),
+            CAPITAL_LETTER_UA => Ok(Coptic::CapitalLetterUa),
+            SMALL_LETTER_UA => Ok(Coptic::SmallLetterUa),
+            CAPITAL_LETTER_FI => Ok(Coptic::CapitalLetterFi),
+            SMALL_LETTER_FI => Ok(Coptic::SmallLetterFi),
+            CAPITAL_LETTER_KHI => Ok(Coptic::CapitalLetterKhi),
+            SMALL_LETTER_KHI => Ok(Coptic::SmallLetterKhi),
+            CAPITAL_LETTER_PSI => Ok(Coptic::CapitalLetterPsi),
+            SMALL_LETTER_PSI => Ok(Coptic::SmallLetterPsi),
+            CAPITAL_LETTER_OOU => Ok(Coptic::CapitalLetterOou),
+            SMALL_LETTER_OOU => Ok(Coptic::SmallLetterOou),
+            CAPITAL_LETTER_DIALECT_DASH_P_ALEF => Ok(Coptic::CapitalLetterDialectDashPAlef),
+            SMALL_LETTER_DIALECT_DASH_P_ALEF => Ok(Coptic::SmallLetterDialectDashPAlef),
+            CAPITAL_LETTER_OLD_AIN => Ok(Coptic::CapitalLetterOldAin),
+            SMALL_LETTER_OLD_AIN => Ok(Coptic::SmallLetterOldAin),
+            CAPITAL_LETTER_CRYPTOGRAMMIC_EIE => Ok(Coptic::CapitalLetterCryptogrammicEie),
+            SMALL_LETTER_CRYPTOGRAMMIC_EIE => Ok(Coptic::SmallLetterCryptogrammicEie),
+            CAPITAL_LETTER_DIALECT_DASH_P_KAPA => Ok(Coptic::CapitalLetterDialectDashPKapa),
+            SMALL_LETTER_DIALECT_DASH_P_KAPA => Ok(Coptic::SmallLetterDialectDashPKapa),
+            CAPITAL_LETTER_DIALECT_DASH_P_NI => Ok(Coptic::CapitalLetterDialectDashPNi),
+            SMALL_LETTER_DIALECT_DASH_P_NI => Ok(Coptic::SmallLetterDialectDashPNi),
+            CAPITAL_LETTER_CRYPTOGRAMMIC_NI => Ok(Coptic::CapitalLetterCryptogrammicNi),
+            SMALL_LETTER_CRYPTOGRAMMIC_NI => Ok(Coptic::SmallLetterCryptogrammicNi),
+            CAPITAL_LETTER_OLD_OOU => Ok(Coptic::CapitalLetterOldOou),
+            SMALL_LETTER_OLD_OOU => Ok(Coptic::SmallLetterOldOou),
+            CAPITAL_LETTER_SAMPI => Ok(Coptic::CapitalLetterSampi),
+            SMALL_LETTER_SAMPI => Ok(Coptic::SmallLetterSampi),
+            CAPITAL_LETTER_CROSSED_SHEI => Ok(Coptic::CapitalLetterCrossedShei),
+            SMALL_LETTER_CROSSED_SHEI => Ok(Coptic::SmallLetterCrossedShei),
+            CAPITAL_LETTER_OLD_SHEI => Ok(Coptic::CapitalLetterOldShei),
+            SMALL_LETTER_OLD_SHEI => Ok(Coptic::SmallLetterOldShei),
+            CAPITAL_LETTER_OLD_ESH => Ok(Coptic::CapitalLetterOldEsh),
+            SMALL_LETTER_OLD_ESH => Ok(Coptic::SmallLetterOldEsh),
+            CAPITAL_LETTER_AKHMIMIC_KHEI => Ok(Coptic::CapitalLetterAkhmimicKhei),
+            SMALL_LETTER_AKHMIMIC_KHEI => Ok(Coptic::SmallLetterAkhmimicKhei),
+            CAPITAL_LETTER_DIALECT_DASH_P_HORI => Ok(Coptic::CapitalLetterDialectDashPHori),
+            SMALL_LETTER_DIALECT_DASH_P_HORI => Ok(Coptic::SmallLetterDialectDashPHori),
+            CAPITAL_LETTER_OLD_HORI => Ok(Coptic::CapitalLetterOldHori),
+            SMALL_LETTER_OLD_HORI => Ok(Coptic::SmallLetterOldHori),
+            CAPITAL_LETTER_OLD_HA => Ok(Coptic::CapitalLetterOldHa),
+            SMALL_LETTER_OLD_HA => Ok(Coptic::SmallLetterOldHa),
+            CAPITAL_LETTER_L_DASH_SHAPED_HA => Ok(Coptic::CapitalLetterLDashShapedHa),
+            SMALL_LETTER_L_DASH_SHAPED_HA => Ok(Coptic::SmallLetterLDashShapedHa),
+            CAPITAL_LETTER_OLD_HEI => Ok(Coptic::CapitalLetterOldHei),
+            SMALL_LETTER_OLD_HEI => Ok(Coptic::SmallLetterOldHei),
+            CAPITAL_LETTER_OLD_HAT => Ok(Coptic::CapitalLetterOldHat),
+            SMALL_LETTER_OLD_HAT => Ok(Coptic::SmallLetterOldHat),
+            CAPITAL_LETTER_OLD_GANGIA => Ok(Coptic::CapitalLetterOldGangia),
+            SMALL_LETTER_OLD_GANGIA => Ok(Coptic::SmallLetterOldGangia),
+            CAPITAL_LETTER_OLD_DJA => Ok(Coptic::CapitalLetterOldDja),
+            SMALL_LETTER_OLD_DJA => Ok(Coptic::SmallLetterOldDja),
+            CAPITAL_LETTER_OLD_SHIMA => Ok(Coptic::CapitalLetterOldShima),
+            SMALL_LETTER_OLD_SHIMA => Ok(Coptic::SmallLetterOldShima),
+            CAPITAL_LETTER_OLD_NUBIAN_SHIMA => Ok(Coptic::CapitalLetterOldNubianShima),
+            SMALL_LETTER_OLD_NUBIAN_SHIMA => Ok(Coptic::SmallLetterOldNubianShima),
+            CAPITAL_LETTER_OLD_NUBIAN_NGI => Ok(Coptic::CapitalLetterOldNubianNgi),
+            SMALL_LETTER_OLD_NUBIAN_NGI => Ok(Coptic::SmallLetterOldNubianNgi),
+            CAPITAL_LETTER_OLD_NUBIAN_NYI => Ok(Coptic::CapitalLetterOldNubianNyi),
+            SMALL_LETTER_OLD_NUBIAN_NYI => Ok(Coptic::SmallLetterOldNubianNyi),
+            CAPITAL_LETTER_OLD_NUBIAN_WAU => Ok(Coptic::CapitalLetterOldNubianWau),
+            SMALL_LETTER_OLD_NUBIAN_WAU => Ok(Coptic::SmallLetterOldNubianWau),
+            SYMBOL_KAI => Ok(Coptic::SymbolKai),
+            SYMBOL_MI_RO => Ok(Coptic::SymbolMiRo),
+            SYMBOL_PI_RO => Ok(Coptic::SymbolPiRo),
+            SYMBOL_STAUROS => Ok(Coptic::SymbolStauros),
+            SYMBOL_TAU_RO => Ok(Coptic::SymbolTauRo),
+            SYMBOL_KHI_RO => Ok(Coptic::SymbolKhiRo),
+            SYMBOL_SHIMA_SIMA => Ok(Coptic::SymbolShimaSima),
+            CAPITAL_LETTER_CRYPTOGRAMMIC_SHEI => Ok(Coptic::CapitalLetterCryptogrammicShei),
+            SMALL_LETTER_CRYPTOGRAMMIC_SHEI => Ok(Coptic::SmallLetterCryptogrammicShei),
+            CAPITAL_LETTER_CRYPTOGRAMMIC_GANGIA => Ok(Coptic::CapitalLetterCryptogrammicGangia),
+            SMALL_LETTER_CRYPTOGRAMMIC_GANGIA => Ok(Coptic::SmallLetterCryptogrammicGangia),
+            COMBINING_NI_ABOVE => Ok(Coptic::CombiningNiAbove),
+            COMBINING_SPIRITUS_ASPER => Ok(Coptic::CombiningSpiritusAsper),
+            COMBINING_SPIRITUS_LENIS => Ok(Coptic::CombiningSpiritusLenis),
+            CAPITAL_LETTER_BOHAIRIC_KHEI => Ok(Coptic::CapitalLetterBohairicKhei),
+            SMALL_LETTER_BOHAIRIC_KHEI => Ok(Coptic::SmallLetterBohairicKhei),
+            OLD_NUBIAN_FULL_STOP => Ok(Coptic::OldNubianFullStop),
+            OLD_NUBIAN_DIRECT_QUESTION_MARK => Ok(Coptic::OldNubianDirectQuestionMark),
+            OLD_NUBIAN_INDIRECT_QUESTION_MARK => Ok(Coptic::OldNubianIndirectQuestionMark),
+            OLD_NUBIAN_VERSE_DIVIDER => Ok(Coptic::OldNubianVerseDivider),
+            FRACTION_ONE_HALF => Ok(Coptic::FractionOneHalf),
+            FULL_STOP => Ok(Coptic::FullStop),
             _ => Err(()),
         }
     }
@@ -808,136 +808,136 @@ impl Iterator for Coptic {
 }
 
 impl Coptic {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Coptic::CopticCapitalLetterAlfa
+        Coptic::CapitalLetterAlfa
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Coptic::CopticCapitalLetterAlfa => "coptic capital letter alfa",
-            Coptic::CopticSmallLetterAlfa => "coptic small letter alfa",
-            Coptic::CopticCapitalLetterVida => "coptic capital letter vida",
-            Coptic::CopticSmallLetterVida => "coptic small letter vida",
-            Coptic::CopticCapitalLetterGamma => "coptic capital letter gamma",
-            Coptic::CopticSmallLetterGamma => "coptic small letter gamma",
-            Coptic::CopticCapitalLetterDalda => "coptic capital letter dalda",
-            Coptic::CopticSmallLetterDalda => "coptic small letter dalda",
-            Coptic::CopticCapitalLetterEie => "coptic capital letter eie",
-            Coptic::CopticSmallLetterEie => "coptic small letter eie",
-            Coptic::CopticCapitalLetterSou => "coptic capital letter sou",
-            Coptic::CopticSmallLetterSou => "coptic small letter sou",
-            Coptic::CopticCapitalLetterZata => "coptic capital letter zata",
-            Coptic::CopticSmallLetterZata => "coptic small letter zata",
-            Coptic::CopticCapitalLetterHate => "coptic capital letter hate",
-            Coptic::CopticSmallLetterHate => "coptic small letter hate",
-            Coptic::CopticCapitalLetterThethe => "coptic capital letter thethe",
-            Coptic::CopticSmallLetterThethe => "coptic small letter thethe",
-            Coptic::CopticCapitalLetterIauda => "coptic capital letter iauda",
-            Coptic::CopticSmallLetterIauda => "coptic small letter iauda",
-            Coptic::CopticCapitalLetterKapa => "coptic capital letter kapa",
-            Coptic::CopticSmallLetterKapa => "coptic small letter kapa",
-            Coptic::CopticCapitalLetterLaula => "coptic capital letter laula",
-            Coptic::CopticSmallLetterLaula => "coptic small letter laula",
-            Coptic::CopticCapitalLetterMi => "coptic capital letter mi",
-            Coptic::CopticSmallLetterMi => "coptic small letter mi",
-            Coptic::CopticCapitalLetterNi => "coptic capital letter ni",
-            Coptic::CopticSmallLetterNi => "coptic small letter ni",
-            Coptic::CopticCapitalLetterKsi => "coptic capital letter ksi",
-            Coptic::CopticSmallLetterKsi => "coptic small letter ksi",
-            Coptic::CopticCapitalLetterO => "coptic capital letter o",
-            Coptic::CopticSmallLetterO => "coptic small letter o",
-            Coptic::CopticCapitalLetterPi => "coptic capital letter pi",
-            Coptic::CopticSmallLetterPi => "coptic small letter pi",
-            Coptic::CopticCapitalLetterRo => "coptic capital letter ro",
-            Coptic::CopticSmallLetterRo => "coptic small letter ro",
-            Coptic::CopticCapitalLetterSima => "coptic capital letter sima",
-            Coptic::CopticSmallLetterSima => "coptic small letter sima",
-            Coptic::CopticCapitalLetterTau => "coptic capital letter tau",
-            Coptic::CopticSmallLetterTau => "coptic small letter tau",
-            Coptic::CopticCapitalLetterUa => "coptic capital letter ua",
-            Coptic::CopticSmallLetterUa => "coptic small letter ua",
-            Coptic::CopticCapitalLetterFi => "coptic capital letter fi",
-            Coptic::CopticSmallLetterFi => "coptic small letter fi",
-            Coptic::CopticCapitalLetterKhi => "coptic capital letter khi",
-            Coptic::CopticSmallLetterKhi => "coptic small letter khi",
-            Coptic::CopticCapitalLetterPsi => "coptic capital letter psi",
-            Coptic::CopticSmallLetterPsi => "coptic small letter psi",
-            Coptic::CopticCapitalLetterOou => "coptic capital letter oou",
-            Coptic::CopticSmallLetterOou => "coptic small letter oou",
-            Coptic::CopticCapitalLetterDialectDashPAlef => "coptic capital letter dialect-p alef",
-            Coptic::CopticSmallLetterDialectDashPAlef => "coptic small letter dialect-p alef",
-            Coptic::CopticCapitalLetterOldCopticAin => "coptic capital letter old coptic ain",
-            Coptic::CopticSmallLetterOldCopticAin => "coptic small letter old coptic ain",
-            Coptic::CopticCapitalLetterCryptogrammicEie => "coptic capital letter cryptogrammic eie",
-            Coptic::CopticSmallLetterCryptogrammicEie => "coptic small letter cryptogrammic eie",
-            Coptic::CopticCapitalLetterDialectDashPKapa => "coptic capital letter dialect-p kapa",
-            Coptic::CopticSmallLetterDialectDashPKapa => "coptic small letter dialect-p kapa",
-            Coptic::CopticCapitalLetterDialectDashPNi => "coptic capital letter dialect-p ni",
-            Coptic::CopticSmallLetterDialectDashPNi => "coptic small letter dialect-p ni",
-            Coptic::CopticCapitalLetterCryptogrammicNi => "coptic capital letter cryptogrammic ni",
-            Coptic::CopticSmallLetterCryptogrammicNi => "coptic small letter cryptogrammic ni",
-            Coptic::CopticCapitalLetterOldCopticOou => "coptic capital letter old coptic oou",
-            Coptic::CopticSmallLetterOldCopticOou => "coptic small letter old coptic oou",
-            Coptic::CopticCapitalLetterSampi => "coptic capital letter sampi",
-            Coptic::CopticSmallLetterSampi => "coptic small letter sampi",
-            Coptic::CopticCapitalLetterCrossedShei => "coptic capital letter crossed shei",
-            Coptic::CopticSmallLetterCrossedShei => "coptic small letter crossed shei",
-            Coptic::CopticCapitalLetterOldCopticShei => "coptic capital letter old coptic shei",
-            Coptic::CopticSmallLetterOldCopticShei => "coptic small letter old coptic shei",
-            Coptic::CopticCapitalLetterOldCopticEsh => "coptic capital letter old coptic esh",
-            Coptic::CopticSmallLetterOldCopticEsh => "coptic small letter old coptic esh",
-            Coptic::CopticCapitalLetterAkhmimicKhei => "coptic capital letter akhmimic khei",
-            Coptic::CopticSmallLetterAkhmimicKhei => "coptic small letter akhmimic khei",
-            Coptic::CopticCapitalLetterDialectDashPHori => "coptic capital letter dialect-p hori",
-            Coptic::CopticSmallLetterDialectDashPHori => "coptic small letter dialect-p hori",
-            Coptic::CopticCapitalLetterOldCopticHori => "coptic capital letter old coptic hori",
-            Coptic::CopticSmallLetterOldCopticHori => "coptic small letter old coptic hori",
-            Coptic::CopticCapitalLetterOldCopticHa => "coptic capital letter old coptic ha",
-            Coptic::CopticSmallLetterOldCopticHa => "coptic small letter old coptic ha",
-            Coptic::CopticCapitalLetterLDashShapedHa => "coptic capital letter l-shaped ha",
-            Coptic::CopticSmallLetterLDashShapedHa => "coptic small letter l-shaped ha",
-            Coptic::CopticCapitalLetterOldCopticHei => "coptic capital letter old coptic hei",
-            Coptic::CopticSmallLetterOldCopticHei => "coptic small letter old coptic hei",
-            Coptic::CopticCapitalLetterOldCopticHat => "coptic capital letter old coptic hat",
-            Coptic::CopticSmallLetterOldCopticHat => "coptic small letter old coptic hat",
-            Coptic::CopticCapitalLetterOldCopticGangia => "coptic capital letter old coptic gangia",
-            Coptic::CopticSmallLetterOldCopticGangia => "coptic small letter old coptic gangia",
-            Coptic::CopticCapitalLetterOldCopticDja => "coptic capital letter old coptic dja",
-            Coptic::CopticSmallLetterOldCopticDja => "coptic small letter old coptic dja",
-            Coptic::CopticCapitalLetterOldCopticShima => "coptic capital letter old coptic shima",
-            Coptic::CopticSmallLetterOldCopticShima => "coptic small letter old coptic shima",
-            Coptic::CopticCapitalLetterOldNubianShima => "coptic capital letter old nubian shima",
-            Coptic::CopticSmallLetterOldNubianShima => "coptic small letter old nubian shima",
-            Coptic::CopticCapitalLetterOldNubianNgi => "coptic capital letter old nubian ngi",
-            Coptic::CopticSmallLetterOldNubianNgi => "coptic small letter old nubian ngi",
-            Coptic::CopticCapitalLetterOldNubianNyi => "coptic capital letter old nubian nyi",
-            Coptic::CopticSmallLetterOldNubianNyi => "coptic small letter old nubian nyi",
-            Coptic::CopticCapitalLetterOldNubianWau => "coptic capital letter old nubian wau",
-            Coptic::CopticSmallLetterOldNubianWau => "coptic small letter old nubian wau",
-            Coptic::CopticSymbolKai => "coptic symbol kai",
-            Coptic::CopticSymbolMiRo => "coptic symbol mi ro",
-            Coptic::CopticSymbolPiRo => "coptic symbol pi ro",
-            Coptic::CopticSymbolStauros => "coptic symbol stauros",
-            Coptic::CopticSymbolTauRo => "coptic symbol tau ro",
-            Coptic::CopticSymbolKhiRo => "coptic symbol khi ro",
-            Coptic::CopticSymbolShimaSima => "coptic symbol shima sima",
-            Coptic::CopticCapitalLetterCryptogrammicShei => "coptic capital letter cryptogrammic shei",
-            Coptic::CopticSmallLetterCryptogrammicShei => "coptic small letter cryptogrammic shei",
-            Coptic::CopticCapitalLetterCryptogrammicGangia => "coptic capital letter cryptogrammic gangia",
-            Coptic::CopticSmallLetterCryptogrammicGangia => "coptic small letter cryptogrammic gangia",
-            Coptic::CopticCombiningNiAbove => "coptic combining ni above",
-            Coptic::CopticCombiningSpiritusAsper => "coptic combining spiritus asper",
-            Coptic::CopticCombiningSpiritusLenis => "coptic combining spiritus lenis",
-            Coptic::CopticCapitalLetterBohairicKhei => "coptic capital letter bohairic khei",
-            Coptic::CopticSmallLetterBohairicKhei => "coptic small letter bohairic khei",
-            Coptic::CopticOldNubianFullStop => "coptic old nubian full stop",
-            Coptic::CopticOldNubianDirectQuestionMark => "coptic old nubian direct question mark",
-            Coptic::CopticOldNubianIndirectQuestionMark => "coptic old nubian indirect question mark",
-            Coptic::CopticOldNubianVerseDivider => "coptic old nubian verse divider",
-            Coptic::CopticFractionOneHalf => "coptic fraction one half",
-            Coptic::CopticFullStop => "coptic full stop",
+            Coptic::CapitalLetterAlfa => "coptic capital letter alfa",
+            Coptic::SmallLetterAlfa => "coptic small letter alfa",
+            Coptic::CapitalLetterVida => "coptic capital letter vida",
+            Coptic::SmallLetterVida => "coptic small letter vida",
+            Coptic::CapitalLetterGamma => "coptic capital letter gamma",
+            Coptic::SmallLetterGamma => "coptic small letter gamma",
+            Coptic::CapitalLetterDalda => "coptic capital letter dalda",
+            Coptic::SmallLetterDalda => "coptic small letter dalda",
+            Coptic::CapitalLetterEie => "coptic capital letter eie",
+            Coptic::SmallLetterEie => "coptic small letter eie",
+            Coptic::CapitalLetterSou => "coptic capital letter sou",
+            Coptic::SmallLetterSou => "coptic small letter sou",
+            Coptic::CapitalLetterZata => "coptic capital letter zata",
+            Coptic::SmallLetterZata => "coptic small letter zata",
+            Coptic::CapitalLetterHate => "coptic capital letter hate",
+            Coptic::SmallLetterHate => "coptic small letter hate",
+            Coptic::CapitalLetterThethe => "coptic capital letter thethe",
+            Coptic::SmallLetterThethe => "coptic small letter thethe",
+            Coptic::CapitalLetterIauda => "coptic capital letter iauda",
+            Coptic::SmallLetterIauda => "coptic small letter iauda",
+            Coptic::CapitalLetterKapa => "coptic capital letter kapa",
+            Coptic::SmallLetterKapa => "coptic small letter kapa",
+            Coptic::CapitalLetterLaula => "coptic capital letter laula",
+            Coptic::SmallLetterLaula => "coptic small letter laula",
+            Coptic::CapitalLetterMi => "coptic capital letter mi",
+            Coptic::SmallLetterMi => "coptic small letter mi",
+            Coptic::CapitalLetterNi => "coptic capital letter ni",
+            Coptic::SmallLetterNi => "coptic small letter ni",
+            Coptic::CapitalLetterKsi => "coptic capital letter ksi",
+            Coptic::SmallLetterKsi => "coptic small letter ksi",
+            Coptic::CapitalLetterO => "coptic capital letter o",
+            Coptic::SmallLetterO => "coptic small letter o",
+            Coptic::CapitalLetterPi => "coptic capital letter pi",
+            Coptic::SmallLetterPi => "coptic small letter pi",
+            Coptic::CapitalLetterRo => "coptic capital letter ro",
+            Coptic::SmallLetterRo => "coptic small letter ro",
+            Coptic::CapitalLetterSima => "coptic capital letter sima",
+            Coptic::SmallLetterSima => "coptic small letter sima",
+            Coptic::CapitalLetterTau => "coptic capital letter tau",
+            Coptic::SmallLetterTau => "coptic small letter tau",
+            Coptic::CapitalLetterUa => "coptic capital letter ua",
+            Coptic::SmallLetterUa => "coptic small letter ua",
+            Coptic::CapitalLetterFi => "coptic capital letter fi",
+            Coptic::SmallLetterFi => "coptic small letter fi",
+            Coptic::CapitalLetterKhi => "coptic capital letter khi",
+            Coptic::SmallLetterKhi => "coptic small letter khi",
+            Coptic::CapitalLetterPsi => "coptic capital letter psi",
+            Coptic::SmallLetterPsi => "coptic small letter psi",
+            Coptic::CapitalLetterOou => "coptic capital letter oou",
+            Coptic::SmallLetterOou => "coptic small letter oou",
+            Coptic::CapitalLetterDialectDashPAlef => "coptic capital letter dialect-p alef",
+            Coptic::SmallLetterDialectDashPAlef => "coptic small letter dialect-p alef",
+            Coptic::CapitalLetterOldAin => "coptic capital letter old coptic ain",
+            Coptic::SmallLetterOldAin => "coptic small letter old coptic ain",
+            Coptic::CapitalLetterCryptogrammicEie => "coptic capital letter cryptogrammic eie",
+            Coptic::SmallLetterCryptogrammicEie => "coptic small letter cryptogrammic eie",
+            Coptic::CapitalLetterDialectDashPKapa => "coptic capital letter dialect-p kapa",
+            Coptic::SmallLetterDialectDashPKapa => "coptic small letter dialect-p kapa",
+            Coptic::CapitalLetterDialectDashPNi => "coptic capital letter dialect-p ni",
+            Coptic::SmallLetterDialectDashPNi => "coptic small letter dialect-p ni",
+            Coptic::CapitalLetterCryptogrammicNi => "coptic capital letter cryptogrammic ni",
+            Coptic::SmallLetterCryptogrammicNi => "coptic small letter cryptogrammic ni",
+            Coptic::CapitalLetterOldOou => "coptic capital letter old coptic oou",
+            Coptic::SmallLetterOldOou => "coptic small letter old coptic oou",
+            Coptic::CapitalLetterSampi => "coptic capital letter sampi",
+            Coptic::SmallLetterSampi => "coptic small letter sampi",
+            Coptic::CapitalLetterCrossedShei => "coptic capital letter crossed shei",
+            Coptic::SmallLetterCrossedShei => "coptic small letter crossed shei",
+            Coptic::CapitalLetterOldShei => "coptic capital letter old coptic shei",
+            Coptic::SmallLetterOldShei => "coptic small letter old coptic shei",
+            Coptic::CapitalLetterOldEsh => "coptic capital letter old coptic esh",
+            Coptic::SmallLetterOldEsh => "coptic small letter old coptic esh",
+            Coptic::CapitalLetterAkhmimicKhei => "coptic capital letter akhmimic khei",
+            Coptic::SmallLetterAkhmimicKhei => "coptic small letter akhmimic khei",
+            Coptic::CapitalLetterDialectDashPHori => "coptic capital letter dialect-p hori",
+            Coptic::SmallLetterDialectDashPHori => "coptic small letter dialect-p hori",
+            Coptic::CapitalLetterOldHori => "coptic capital letter old coptic hori",
+            Coptic::SmallLetterOldHori => "coptic small letter old coptic hori",
+            Coptic::CapitalLetterOldHa => "coptic capital letter old coptic ha",
+            Coptic::SmallLetterOldHa => "coptic small letter old coptic ha",
+            Coptic::CapitalLetterLDashShapedHa => "coptic capital letter l-shaped ha",
+            Coptic::SmallLetterLDashShapedHa => "coptic small letter l-shaped ha",
+            Coptic::CapitalLetterOldHei => "coptic capital letter old coptic hei",
+            Coptic::SmallLetterOldHei => "coptic small letter old coptic hei",
+            Coptic::CapitalLetterOldHat => "coptic capital letter old coptic hat",
+            Coptic::SmallLetterOldHat => "coptic small letter old coptic hat",
+            Coptic::CapitalLetterOldGangia => "coptic capital letter old coptic gangia",
+            Coptic::SmallLetterOldGangia => "coptic small letter old coptic gangia",
+            Coptic::CapitalLetterOldDja => "coptic capital letter old coptic dja",
+            Coptic::SmallLetterOldDja => "coptic small letter old coptic dja",
+            Coptic::CapitalLetterOldShima => "coptic capital letter old coptic shima",
+            Coptic::SmallLetterOldShima => "coptic small letter old coptic shima",
+            Coptic::CapitalLetterOldNubianShima => "coptic capital letter old nubian shima",
+            Coptic::SmallLetterOldNubianShima => "coptic small letter old nubian shima",
+            Coptic::CapitalLetterOldNubianNgi => "coptic capital letter old nubian ngi",
+            Coptic::SmallLetterOldNubianNgi => "coptic small letter old nubian ngi",
+            Coptic::CapitalLetterOldNubianNyi => "coptic capital letter old nubian nyi",
+            Coptic::SmallLetterOldNubianNyi => "coptic small letter old nubian nyi",
+            Coptic::CapitalLetterOldNubianWau => "coptic capital letter old nubian wau",
+            Coptic::SmallLetterOldNubianWau => "coptic small letter old nubian wau",
+            Coptic::SymbolKai => "coptic symbol kai",
+            Coptic::SymbolMiRo => "coptic symbol mi ro",
+            Coptic::SymbolPiRo => "coptic symbol pi ro",
+            Coptic::SymbolStauros => "coptic symbol stauros",
+            Coptic::SymbolTauRo => "coptic symbol tau ro",
+            Coptic::SymbolKhiRo => "coptic symbol khi ro",
+            Coptic::SymbolShimaSima => "coptic symbol shima sima",
+            Coptic::CapitalLetterCryptogrammicShei => "coptic capital letter cryptogrammic shei",
+            Coptic::SmallLetterCryptogrammicShei => "coptic small letter cryptogrammic shei",
+            Coptic::CapitalLetterCryptogrammicGangia => "coptic capital letter cryptogrammic gangia",
+            Coptic::SmallLetterCryptogrammicGangia => "coptic small letter cryptogrammic gangia",
+            Coptic::CombiningNiAbove => "coptic combining ni above",
+            Coptic::CombiningSpiritusAsper => "coptic combining spiritus asper",
+            Coptic::CombiningSpiritusLenis => "coptic combining spiritus lenis",
+            Coptic::CapitalLetterBohairicKhei => "coptic capital letter bohairic khei",
+            Coptic::SmallLetterBohairicKhei => "coptic small letter bohairic khei",
+            Coptic::OldNubianFullStop => "coptic old nubian full stop",
+            Coptic::OldNubianDirectQuestionMark => "coptic old nubian direct question mark",
+            Coptic::OldNubianIndirectQuestionMark => "coptic old nubian indirect question mark",
+            Coptic::OldNubianVerseDivider => "coptic old nubian verse divider",
+            Coptic::FractionOneHalf => "coptic fraction one half",
+            Coptic::FullStop => "coptic full stop",
         }
     }
 }

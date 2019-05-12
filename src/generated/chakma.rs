@@ -7,145 +7,145 @@
 /// 𑅁 𑅂 𑅃 𑅄 𑅅 𑅆
 pub mod constants {
     /// \u{11100}: '𑄀'
-    pub const CHAKMA_SIGN_CANDRABINDU: char = '𑄀';
+    pub const SIGN_CANDRABINDU: char = '𑄀';
     /// \u{11101}: '𑄁'
-    pub const CHAKMA_SIGN_ANUSVARA: char = '𑄁';
+    pub const SIGN_ANUSVARA: char = '𑄁';
     /// \u{11102}: '𑄂'
-    pub const CHAKMA_SIGN_VISARGA: char = '𑄂';
+    pub const SIGN_VISARGA: char = '𑄂';
     /// \u{11103}: '𑄃'
-    pub const CHAKMA_LETTER_AA: char = '𑄃';
+    pub const LETTER_AA: char = '𑄃';
     /// \u{11104}: '𑄄'
-    pub const CHAKMA_LETTER_I: char = '𑄄';
+    pub const LETTER_I: char = '𑄄';
     /// \u{11105}: '𑄅'
-    pub const CHAKMA_LETTER_U: char = '𑄅';
+    pub const LETTER_U: char = '𑄅';
     /// \u{11106}: '𑄆'
-    pub const CHAKMA_LETTER_E: char = '𑄆';
+    pub const LETTER_E: char = '𑄆';
     /// \u{11107}: '𑄇'
-    pub const CHAKMA_LETTER_KAA: char = '𑄇';
+    pub const LETTER_KAA: char = '𑄇';
     /// \u{11108}: '𑄈'
-    pub const CHAKMA_LETTER_KHAA: char = '𑄈';
+    pub const LETTER_KHAA: char = '𑄈';
     /// \u{11109}: '𑄉'
-    pub const CHAKMA_LETTER_GAA: char = '𑄉';
+    pub const LETTER_GAA: char = '𑄉';
     /// \u{1110a}: '𑄊'
-    pub const CHAKMA_LETTER_GHAA: char = '𑄊';
+    pub const LETTER_GHAA: char = '𑄊';
     /// \u{1110b}: '𑄋'
-    pub const CHAKMA_LETTER_NGAA: char = '𑄋';
+    pub const LETTER_NGAA: char = '𑄋';
     /// \u{1110c}: '𑄌'
-    pub const CHAKMA_LETTER_CAA: char = '𑄌';
+    pub const LETTER_CAA: char = '𑄌';
     /// \u{1110d}: '𑄍'
-    pub const CHAKMA_LETTER_CHAA: char = '𑄍';
+    pub const LETTER_CHAA: char = '𑄍';
     /// \u{1110e}: '𑄎'
-    pub const CHAKMA_LETTER_JAA: char = '𑄎';
+    pub const LETTER_JAA: char = '𑄎';
     /// \u{1110f}: '𑄏'
-    pub const CHAKMA_LETTER_JHAA: char = '𑄏';
+    pub const LETTER_JHAA: char = '𑄏';
     /// \u{11110}: '𑄐'
-    pub const CHAKMA_LETTER_NYAA: char = '𑄐';
+    pub const LETTER_NYAA: char = '𑄐';
     /// \u{11111}: '𑄑'
-    pub const CHAKMA_LETTER_TTAA: char = '𑄑';
+    pub const LETTER_TTAA: char = '𑄑';
     /// \u{11112}: '𑄒'
-    pub const CHAKMA_LETTER_TTHAA: char = '𑄒';
+    pub const LETTER_TTHAA: char = '𑄒';
     /// \u{11113}: '𑄓'
-    pub const CHAKMA_LETTER_DDAA: char = '𑄓';
+    pub const LETTER_DDAA: char = '𑄓';
     /// \u{11114}: '𑄔'
-    pub const CHAKMA_LETTER_DDHAA: char = '𑄔';
+    pub const LETTER_DDHAA: char = '𑄔';
     /// \u{11115}: '𑄕'
-    pub const CHAKMA_LETTER_NNAA: char = '𑄕';
+    pub const LETTER_NNAA: char = '𑄕';
     /// \u{11116}: '𑄖'
-    pub const CHAKMA_LETTER_TAA: char = '𑄖';
+    pub const LETTER_TAA: char = '𑄖';
     /// \u{11117}: '𑄗'
-    pub const CHAKMA_LETTER_THAA: char = '𑄗';
+    pub const LETTER_THAA: char = '𑄗';
     /// \u{11118}: '𑄘'
-    pub const CHAKMA_LETTER_DAA: char = '𑄘';
+    pub const LETTER_DAA: char = '𑄘';
     /// \u{11119}: '𑄙'
-    pub const CHAKMA_LETTER_DHAA: char = '𑄙';
+    pub const LETTER_DHAA: char = '𑄙';
     /// \u{1111a}: '𑄚'
-    pub const CHAKMA_LETTER_NAA: char = '𑄚';
+    pub const LETTER_NAA: char = '𑄚';
     /// \u{1111b}: '𑄛'
-    pub const CHAKMA_LETTER_PAA: char = '𑄛';
+    pub const LETTER_PAA: char = '𑄛';
     /// \u{1111c}: '𑄜'
-    pub const CHAKMA_LETTER_PHAA: char = '𑄜';
+    pub const LETTER_PHAA: char = '𑄜';
     /// \u{1111d}: '𑄝'
-    pub const CHAKMA_LETTER_BAA: char = '𑄝';
+    pub const LETTER_BAA: char = '𑄝';
     /// \u{1111e}: '𑄞'
-    pub const CHAKMA_LETTER_BHAA: char = '𑄞';
+    pub const LETTER_BHAA: char = '𑄞';
     /// \u{1111f}: '𑄟'
-    pub const CHAKMA_LETTER_MAA: char = '𑄟';
+    pub const LETTER_MAA: char = '𑄟';
     /// \u{11120}: '𑄠'
-    pub const CHAKMA_LETTER_YYAA: char = '𑄠';
+    pub const LETTER_YYAA: char = '𑄠';
     /// \u{11121}: '𑄡'
-    pub const CHAKMA_LETTER_YAA: char = '𑄡';
+    pub const LETTER_YAA: char = '𑄡';
     /// \u{11122}: '𑄢'
-    pub const CHAKMA_LETTER_RAA: char = '𑄢';
+    pub const LETTER_RAA: char = '𑄢';
     /// \u{11123}: '𑄣'
-    pub const CHAKMA_LETTER_LAA: char = '𑄣';
+    pub const LETTER_LAA: char = '𑄣';
     /// \u{11124}: '𑄤'
-    pub const CHAKMA_LETTER_WAA: char = '𑄤';
+    pub const LETTER_WAA: char = '𑄤';
     /// \u{11125}: '𑄥'
-    pub const CHAKMA_LETTER_SAA: char = '𑄥';
+    pub const LETTER_SAA: char = '𑄥';
     /// \u{11126}: '𑄦'
-    pub const CHAKMA_LETTER_HAA: char = '𑄦';
+    pub const LETTER_HAA: char = '𑄦';
     /// \u{11127}: '𑄧'
-    pub const CHAKMA_VOWEL_SIGN_A: char = '𑄧';
+    pub const VOWEL_SIGN_A: char = '𑄧';
     /// \u{11128}: '𑄨'
-    pub const CHAKMA_VOWEL_SIGN_I: char = '𑄨';
+    pub const VOWEL_SIGN_I: char = '𑄨';
     /// \u{11129}: '𑄩'
-    pub const CHAKMA_VOWEL_SIGN_II: char = '𑄩';
+    pub const VOWEL_SIGN_II: char = '𑄩';
     /// \u{1112a}: '𑄪'
-    pub const CHAKMA_VOWEL_SIGN_U: char = '𑄪';
+    pub const VOWEL_SIGN_U: char = '𑄪';
     /// \u{1112b}: '𑄫'
-    pub const CHAKMA_VOWEL_SIGN_UU: char = '𑄫';
+    pub const VOWEL_SIGN_UU: char = '𑄫';
     /// \u{1112c}: '𑄬'
-    pub const CHAKMA_VOWEL_SIGN_E: char = '𑄬';
+    pub const VOWEL_SIGN_E: char = '𑄬';
     /// \u{1112d}: '𑄭'
-    pub const CHAKMA_VOWEL_SIGN_AI: char = '𑄭';
+    pub const VOWEL_SIGN_AI: char = '𑄭';
     /// \u{1112e}: '𑄮'
-    pub const CHAKMA_VOWEL_SIGN_O: char = '𑄮';
+    pub const VOWEL_SIGN_O: char = '𑄮';
     /// \u{1112f}: '𑄯'
-    pub const CHAKMA_VOWEL_SIGN_AU: char = '𑄯';
+    pub const VOWEL_SIGN_AU: char = '𑄯';
     /// \u{11130}: '𑄰'
-    pub const CHAKMA_VOWEL_SIGN_OI: char = '𑄰';
+    pub const VOWEL_SIGN_OI: char = '𑄰';
     /// \u{11131}: '𑄱'
-    pub const CHAKMA_O_MARK: char = '𑄱';
+    pub const O_MARK: char = '𑄱';
     /// \u{11132}: '𑄲'
-    pub const CHAKMA_AU_MARK: char = '𑄲';
+    pub const AU_MARK: char = '𑄲';
     /// \u{11133}: '𑄳'
-    pub const CHAKMA_VIRAMA: char = '𑄳';
+    pub const VIRAMA: char = '𑄳';
     /// \u{11134}: '𑄴'
-    pub const CHAKMA_MAAYYAA: char = '𑄴';
+    pub const MAAYYAA: char = '𑄴';
     /// \u{11136}: '𑄶'
-    pub const CHAKMA_DIGIT_ZERO: char = '𑄶';
+    pub const DIGIT_ZERO: char = '𑄶';
     /// \u{11137}: '𑄷'
-    pub const CHAKMA_DIGIT_ONE: char = '𑄷';
+    pub const DIGIT_ONE: char = '𑄷';
     /// \u{11138}: '𑄸'
-    pub const CHAKMA_DIGIT_TWO: char = '𑄸';
+    pub const DIGIT_TWO: char = '𑄸';
     /// \u{11139}: '𑄹'
-    pub const CHAKMA_DIGIT_THREE: char = '𑄹';
+    pub const DIGIT_THREE: char = '𑄹';
     /// \u{1113a}: '𑄺'
-    pub const CHAKMA_DIGIT_FOUR: char = '𑄺';
+    pub const DIGIT_FOUR: char = '𑄺';
     /// \u{1113b}: '𑄻'
-    pub const CHAKMA_DIGIT_FIVE: char = '𑄻';
+    pub const DIGIT_FIVE: char = '𑄻';
     /// \u{1113c}: '𑄼'
-    pub const CHAKMA_DIGIT_SIX: char = '𑄼';
+    pub const DIGIT_SIX: char = '𑄼';
     /// \u{1113d}: '𑄽'
-    pub const CHAKMA_DIGIT_SEVEN: char = '𑄽';
+    pub const DIGIT_SEVEN: char = '𑄽';
     /// \u{1113e}: '𑄾'
-    pub const CHAKMA_DIGIT_EIGHT: char = '𑄾';
+    pub const DIGIT_EIGHT: char = '𑄾';
     /// \u{1113f}: '𑄿'
-    pub const CHAKMA_DIGIT_NINE: char = '𑄿';
+    pub const DIGIT_NINE: char = '𑄿';
     /// \u{11140}: '𑅀'
-    pub const CHAKMA_SECTION_MARK: char = '𑅀';
+    pub const SECTION_MARK: char = '𑅀';
     /// \u{11141}: '𑅁'
-    pub const CHAKMA_DANDA: char = '𑅁';
+    pub const DANDA: char = '𑅁';
     /// \u{11142}: '𑅂'
-    pub const CHAKMA_DOUBLE_DANDA: char = '𑅂';
+    pub const DOUBLE_DANDA: char = '𑅂';
     /// \u{11143}: '𑅃'
-    pub const CHAKMA_QUESTION_MARK: char = '𑅃';
+    pub const QUESTION_MARK: char = '𑅃';
     /// \u{11144}: '𑅄'
-    pub const CHAKMA_LETTER_LHAA: char = '𑅄';
+    pub const LETTER_LHAA: char = '𑅄';
     /// \u{11145}: '𑅅'
-    pub const CHAKMA_VOWEL_SIGN_AA: char = '𑅅';
+    pub const VOWEL_SIGN_AA: char = '𑅅';
     /// \u{11146}: '𑅆'
-    pub const CHAKMA_VOWEL_SIGN_EI: char = '𑅆';
+    pub const VOWEL_SIGN_EI: char = '𑅆';
 }
 
 /// \u{11100} → \u{1114f}\
@@ -158,221 +158,221 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Chakma {
     /// \u{11100}: '𑄀'
-    ChakmaSignCandrabindu,
+    SignCandrabindu,
     /// \u{11101}: '𑄁'
-    ChakmaSignAnusvara,
+    SignAnusvara,
     /// \u{11102}: '𑄂'
-    ChakmaSignVisarga,
+    SignVisarga,
     /// \u{11103}: '𑄃'
-    ChakmaLetterAa,
+    LetterAa,
     /// \u{11104}: '𑄄'
-    ChakmaLetterI,
+    LetterI,
     /// \u{11105}: '𑄅'
-    ChakmaLetterU,
+    LetterU,
     /// \u{11106}: '𑄆'
-    ChakmaLetterE,
+    LetterE,
     /// \u{11107}: '𑄇'
-    ChakmaLetterKaa,
+    LetterKaa,
     /// \u{11108}: '𑄈'
-    ChakmaLetterKhaa,
+    LetterKhaa,
     /// \u{11109}: '𑄉'
-    ChakmaLetterGaa,
+    LetterGaa,
     /// \u{1110a}: '𑄊'
-    ChakmaLetterGhaa,
+    LetterGhaa,
     /// \u{1110b}: '𑄋'
-    ChakmaLetterNgaa,
+    LetterNgaa,
     /// \u{1110c}: '𑄌'
-    ChakmaLetterCaa,
+    LetterCaa,
     /// \u{1110d}: '𑄍'
-    ChakmaLetterChaa,
+    LetterChaa,
     /// \u{1110e}: '𑄎'
-    ChakmaLetterJaa,
+    LetterJaa,
     /// \u{1110f}: '𑄏'
-    ChakmaLetterJhaa,
+    LetterJhaa,
     /// \u{11110}: '𑄐'
-    ChakmaLetterNyaa,
+    LetterNyaa,
     /// \u{11111}: '𑄑'
-    ChakmaLetterTtaa,
+    LetterTtaa,
     /// \u{11112}: '𑄒'
-    ChakmaLetterTthaa,
+    LetterTthaa,
     /// \u{11113}: '𑄓'
-    ChakmaLetterDdaa,
+    LetterDdaa,
     /// \u{11114}: '𑄔'
-    ChakmaLetterDdhaa,
+    LetterDdhaa,
     /// \u{11115}: '𑄕'
-    ChakmaLetterNnaa,
+    LetterNnaa,
     /// \u{11116}: '𑄖'
-    ChakmaLetterTaa,
+    LetterTaa,
     /// \u{11117}: '𑄗'
-    ChakmaLetterThaa,
+    LetterThaa,
     /// \u{11118}: '𑄘'
-    ChakmaLetterDaa,
+    LetterDaa,
     /// \u{11119}: '𑄙'
-    ChakmaLetterDhaa,
+    LetterDhaa,
     /// \u{1111a}: '𑄚'
-    ChakmaLetterNaa,
+    LetterNaa,
     /// \u{1111b}: '𑄛'
-    ChakmaLetterPaa,
+    LetterPaa,
     /// \u{1111c}: '𑄜'
-    ChakmaLetterPhaa,
+    LetterPhaa,
     /// \u{1111d}: '𑄝'
-    ChakmaLetterBaa,
+    LetterBaa,
     /// \u{1111e}: '𑄞'
-    ChakmaLetterBhaa,
+    LetterBhaa,
     /// \u{1111f}: '𑄟'
-    ChakmaLetterMaa,
+    LetterMaa,
     /// \u{11120}: '𑄠'
-    ChakmaLetterYyaa,
+    LetterYyaa,
     /// \u{11121}: '𑄡'
-    ChakmaLetterYaa,
+    LetterYaa,
     /// \u{11122}: '𑄢'
-    ChakmaLetterRaa,
+    LetterRaa,
     /// \u{11123}: '𑄣'
-    ChakmaLetterLaa,
+    LetterLaa,
     /// \u{11124}: '𑄤'
-    ChakmaLetterWaa,
+    LetterWaa,
     /// \u{11125}: '𑄥'
-    ChakmaLetterSaa,
+    LetterSaa,
     /// \u{11126}: '𑄦'
-    ChakmaLetterHaa,
+    LetterHaa,
     /// \u{11127}: '𑄧'
-    ChakmaVowelSignA,
+    VowelSignA,
     /// \u{11128}: '𑄨'
-    ChakmaVowelSignI,
+    VowelSignI,
     /// \u{11129}: '𑄩'
-    ChakmaVowelSignIi,
+    VowelSignIi,
     /// \u{1112a}: '𑄪'
-    ChakmaVowelSignU,
+    VowelSignU,
     /// \u{1112b}: '𑄫'
-    ChakmaVowelSignUu,
+    VowelSignUu,
     /// \u{1112c}: '𑄬'
-    ChakmaVowelSignE,
+    VowelSignE,
     /// \u{1112d}: '𑄭'
-    ChakmaVowelSignAi,
+    VowelSignAi,
     /// \u{1112e}: '𑄮'
-    ChakmaVowelSignO,
+    VowelSignO,
     /// \u{1112f}: '𑄯'
-    ChakmaVowelSignAu,
+    VowelSignAu,
     /// \u{11130}: '𑄰'
-    ChakmaVowelSignOi,
+    VowelSignOi,
     /// \u{11131}: '𑄱'
-    ChakmaOMark,
+    OMark,
     /// \u{11132}: '𑄲'
-    ChakmaAuMark,
+    AuMark,
     /// \u{11133}: '𑄳'
-    ChakmaVirama,
+    Virama,
     /// \u{11134}: '𑄴'
-    ChakmaMaayyaa,
+    Maayyaa,
     /// \u{11136}: '𑄶'
-    ChakmaDigitZero,
+    DigitZero,
     /// \u{11137}: '𑄷'
-    ChakmaDigitOne,
+    DigitOne,
     /// \u{11138}: '𑄸'
-    ChakmaDigitTwo,
+    DigitTwo,
     /// \u{11139}: '𑄹'
-    ChakmaDigitThree,
+    DigitThree,
     /// \u{1113a}: '𑄺'
-    ChakmaDigitFour,
+    DigitFour,
     /// \u{1113b}: '𑄻'
-    ChakmaDigitFive,
+    DigitFive,
     /// \u{1113c}: '𑄼'
-    ChakmaDigitSix,
+    DigitSix,
     /// \u{1113d}: '𑄽'
-    ChakmaDigitSeven,
+    DigitSeven,
     /// \u{1113e}: '𑄾'
-    ChakmaDigitEight,
+    DigitEight,
     /// \u{1113f}: '𑄿'
-    ChakmaDigitNine,
+    DigitNine,
     /// \u{11140}: '𑅀'
-    ChakmaSectionMark,
+    SectionMark,
     /// \u{11141}: '𑅁'
-    ChakmaDanda,
+    Danda,
     /// \u{11142}: '𑅂'
-    ChakmaDoubleDanda,
+    DoubleDanda,
     /// \u{11143}: '𑅃'
-    ChakmaQuestionMark,
+    QuestionMark,
     /// \u{11144}: '𑅄'
-    ChakmaLetterLhaa,
+    LetterLhaa,
     /// \u{11145}: '𑅅'
-    ChakmaVowelSignAa,
+    VowelSignAa,
     /// \u{11146}: '𑅆'
-    ChakmaVowelSignEi,
+    VowelSignEi,
 }
 
 impl Into<char> for Chakma {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Chakma::ChakmaSignCandrabindu => CHAKMA_SIGN_CANDRABINDU,
-            Chakma::ChakmaSignAnusvara => CHAKMA_SIGN_ANUSVARA,
-            Chakma::ChakmaSignVisarga => CHAKMA_SIGN_VISARGA,
-            Chakma::ChakmaLetterAa => CHAKMA_LETTER_AA,
-            Chakma::ChakmaLetterI => CHAKMA_LETTER_I,
-            Chakma::ChakmaLetterU => CHAKMA_LETTER_U,
-            Chakma::ChakmaLetterE => CHAKMA_LETTER_E,
-            Chakma::ChakmaLetterKaa => CHAKMA_LETTER_KAA,
-            Chakma::ChakmaLetterKhaa => CHAKMA_LETTER_KHAA,
-            Chakma::ChakmaLetterGaa => CHAKMA_LETTER_GAA,
-            Chakma::ChakmaLetterGhaa => CHAKMA_LETTER_GHAA,
-            Chakma::ChakmaLetterNgaa => CHAKMA_LETTER_NGAA,
-            Chakma::ChakmaLetterCaa => CHAKMA_LETTER_CAA,
-            Chakma::ChakmaLetterChaa => CHAKMA_LETTER_CHAA,
-            Chakma::ChakmaLetterJaa => CHAKMA_LETTER_JAA,
-            Chakma::ChakmaLetterJhaa => CHAKMA_LETTER_JHAA,
-            Chakma::ChakmaLetterNyaa => CHAKMA_LETTER_NYAA,
-            Chakma::ChakmaLetterTtaa => CHAKMA_LETTER_TTAA,
-            Chakma::ChakmaLetterTthaa => CHAKMA_LETTER_TTHAA,
-            Chakma::ChakmaLetterDdaa => CHAKMA_LETTER_DDAA,
-            Chakma::ChakmaLetterDdhaa => CHAKMA_LETTER_DDHAA,
-            Chakma::ChakmaLetterNnaa => CHAKMA_LETTER_NNAA,
-            Chakma::ChakmaLetterTaa => CHAKMA_LETTER_TAA,
-            Chakma::ChakmaLetterThaa => CHAKMA_LETTER_THAA,
-            Chakma::ChakmaLetterDaa => CHAKMA_LETTER_DAA,
-            Chakma::ChakmaLetterDhaa => CHAKMA_LETTER_DHAA,
-            Chakma::ChakmaLetterNaa => CHAKMA_LETTER_NAA,
-            Chakma::ChakmaLetterPaa => CHAKMA_LETTER_PAA,
-            Chakma::ChakmaLetterPhaa => CHAKMA_LETTER_PHAA,
-            Chakma::ChakmaLetterBaa => CHAKMA_LETTER_BAA,
-            Chakma::ChakmaLetterBhaa => CHAKMA_LETTER_BHAA,
-            Chakma::ChakmaLetterMaa => CHAKMA_LETTER_MAA,
-            Chakma::ChakmaLetterYyaa => CHAKMA_LETTER_YYAA,
-            Chakma::ChakmaLetterYaa => CHAKMA_LETTER_YAA,
-            Chakma::ChakmaLetterRaa => CHAKMA_LETTER_RAA,
-            Chakma::ChakmaLetterLaa => CHAKMA_LETTER_LAA,
-            Chakma::ChakmaLetterWaa => CHAKMA_LETTER_WAA,
-            Chakma::ChakmaLetterSaa => CHAKMA_LETTER_SAA,
-            Chakma::ChakmaLetterHaa => CHAKMA_LETTER_HAA,
-            Chakma::ChakmaVowelSignA => CHAKMA_VOWEL_SIGN_A,
-            Chakma::ChakmaVowelSignI => CHAKMA_VOWEL_SIGN_I,
-            Chakma::ChakmaVowelSignIi => CHAKMA_VOWEL_SIGN_II,
-            Chakma::ChakmaVowelSignU => CHAKMA_VOWEL_SIGN_U,
-            Chakma::ChakmaVowelSignUu => CHAKMA_VOWEL_SIGN_UU,
-            Chakma::ChakmaVowelSignE => CHAKMA_VOWEL_SIGN_E,
-            Chakma::ChakmaVowelSignAi => CHAKMA_VOWEL_SIGN_AI,
-            Chakma::ChakmaVowelSignO => CHAKMA_VOWEL_SIGN_O,
-            Chakma::ChakmaVowelSignAu => CHAKMA_VOWEL_SIGN_AU,
-            Chakma::ChakmaVowelSignOi => CHAKMA_VOWEL_SIGN_OI,
-            Chakma::ChakmaOMark => CHAKMA_O_MARK,
-            Chakma::ChakmaAuMark => CHAKMA_AU_MARK,
-            Chakma::ChakmaVirama => CHAKMA_VIRAMA,
-            Chakma::ChakmaMaayyaa => CHAKMA_MAAYYAA,
-            Chakma::ChakmaDigitZero => CHAKMA_DIGIT_ZERO,
-            Chakma::ChakmaDigitOne => CHAKMA_DIGIT_ONE,
-            Chakma::ChakmaDigitTwo => CHAKMA_DIGIT_TWO,
-            Chakma::ChakmaDigitThree => CHAKMA_DIGIT_THREE,
-            Chakma::ChakmaDigitFour => CHAKMA_DIGIT_FOUR,
-            Chakma::ChakmaDigitFive => CHAKMA_DIGIT_FIVE,
-            Chakma::ChakmaDigitSix => CHAKMA_DIGIT_SIX,
-            Chakma::ChakmaDigitSeven => CHAKMA_DIGIT_SEVEN,
-            Chakma::ChakmaDigitEight => CHAKMA_DIGIT_EIGHT,
-            Chakma::ChakmaDigitNine => CHAKMA_DIGIT_NINE,
-            Chakma::ChakmaSectionMark => CHAKMA_SECTION_MARK,
-            Chakma::ChakmaDanda => CHAKMA_DANDA,
-            Chakma::ChakmaDoubleDanda => CHAKMA_DOUBLE_DANDA,
-            Chakma::ChakmaQuestionMark => CHAKMA_QUESTION_MARK,
-            Chakma::ChakmaLetterLhaa => CHAKMA_LETTER_LHAA,
-            Chakma::ChakmaVowelSignAa => CHAKMA_VOWEL_SIGN_AA,
-            Chakma::ChakmaVowelSignEi => CHAKMA_VOWEL_SIGN_EI,
+            Chakma::SignCandrabindu => SIGN_CANDRABINDU,
+            Chakma::SignAnusvara => SIGN_ANUSVARA,
+            Chakma::SignVisarga => SIGN_VISARGA,
+            Chakma::LetterAa => LETTER_AA,
+            Chakma::LetterI => LETTER_I,
+            Chakma::LetterU => LETTER_U,
+            Chakma::LetterE => LETTER_E,
+            Chakma::LetterKaa => LETTER_KAA,
+            Chakma::LetterKhaa => LETTER_KHAA,
+            Chakma::LetterGaa => LETTER_GAA,
+            Chakma::LetterGhaa => LETTER_GHAA,
+            Chakma::LetterNgaa => LETTER_NGAA,
+            Chakma::LetterCaa => LETTER_CAA,
+            Chakma::LetterChaa => LETTER_CHAA,
+            Chakma::LetterJaa => LETTER_JAA,
+            Chakma::LetterJhaa => LETTER_JHAA,
+            Chakma::LetterNyaa => LETTER_NYAA,
+            Chakma::LetterTtaa => LETTER_TTAA,
+            Chakma::LetterTthaa => LETTER_TTHAA,
+            Chakma::LetterDdaa => LETTER_DDAA,
+            Chakma::LetterDdhaa => LETTER_DDHAA,
+            Chakma::LetterNnaa => LETTER_NNAA,
+            Chakma::LetterTaa => LETTER_TAA,
+            Chakma::LetterThaa => LETTER_THAA,
+            Chakma::LetterDaa => LETTER_DAA,
+            Chakma::LetterDhaa => LETTER_DHAA,
+            Chakma::LetterNaa => LETTER_NAA,
+            Chakma::LetterPaa => LETTER_PAA,
+            Chakma::LetterPhaa => LETTER_PHAA,
+            Chakma::LetterBaa => LETTER_BAA,
+            Chakma::LetterBhaa => LETTER_BHAA,
+            Chakma::LetterMaa => LETTER_MAA,
+            Chakma::LetterYyaa => LETTER_YYAA,
+            Chakma::LetterYaa => LETTER_YAA,
+            Chakma::LetterRaa => LETTER_RAA,
+            Chakma::LetterLaa => LETTER_LAA,
+            Chakma::LetterWaa => LETTER_WAA,
+            Chakma::LetterSaa => LETTER_SAA,
+            Chakma::LetterHaa => LETTER_HAA,
+            Chakma::VowelSignA => VOWEL_SIGN_A,
+            Chakma::VowelSignI => VOWEL_SIGN_I,
+            Chakma::VowelSignIi => VOWEL_SIGN_II,
+            Chakma::VowelSignU => VOWEL_SIGN_U,
+            Chakma::VowelSignUu => VOWEL_SIGN_UU,
+            Chakma::VowelSignE => VOWEL_SIGN_E,
+            Chakma::VowelSignAi => VOWEL_SIGN_AI,
+            Chakma::VowelSignO => VOWEL_SIGN_O,
+            Chakma::VowelSignAu => VOWEL_SIGN_AU,
+            Chakma::VowelSignOi => VOWEL_SIGN_OI,
+            Chakma::OMark => O_MARK,
+            Chakma::AuMark => AU_MARK,
+            Chakma::Virama => VIRAMA,
+            Chakma::Maayyaa => MAAYYAA,
+            Chakma::DigitZero => DIGIT_ZERO,
+            Chakma::DigitOne => DIGIT_ONE,
+            Chakma::DigitTwo => DIGIT_TWO,
+            Chakma::DigitThree => DIGIT_THREE,
+            Chakma::DigitFour => DIGIT_FOUR,
+            Chakma::DigitFive => DIGIT_FIVE,
+            Chakma::DigitSix => DIGIT_SIX,
+            Chakma::DigitSeven => DIGIT_SEVEN,
+            Chakma::DigitEight => DIGIT_EIGHT,
+            Chakma::DigitNine => DIGIT_NINE,
+            Chakma::SectionMark => SECTION_MARK,
+            Chakma::Danda => DANDA,
+            Chakma::DoubleDanda => DOUBLE_DANDA,
+            Chakma::QuestionMark => QUESTION_MARK,
+            Chakma::LetterLhaa => LETTER_LHAA,
+            Chakma::VowelSignAa => VOWEL_SIGN_AA,
+            Chakma::VowelSignEi => VOWEL_SIGN_EI,
         }
     }
 }
@@ -382,76 +382,76 @@ impl std::convert::TryFrom<char> for Chakma {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            CHAKMA_SIGN_CANDRABINDU => Ok(Chakma::ChakmaSignCandrabindu),
-            CHAKMA_SIGN_ANUSVARA => Ok(Chakma::ChakmaSignAnusvara),
-            CHAKMA_SIGN_VISARGA => Ok(Chakma::ChakmaSignVisarga),
-            CHAKMA_LETTER_AA => Ok(Chakma::ChakmaLetterAa),
-            CHAKMA_LETTER_I => Ok(Chakma::ChakmaLetterI),
-            CHAKMA_LETTER_U => Ok(Chakma::ChakmaLetterU),
-            CHAKMA_LETTER_E => Ok(Chakma::ChakmaLetterE),
-            CHAKMA_LETTER_KAA => Ok(Chakma::ChakmaLetterKaa),
-            CHAKMA_LETTER_KHAA => Ok(Chakma::ChakmaLetterKhaa),
-            CHAKMA_LETTER_GAA => Ok(Chakma::ChakmaLetterGaa),
-            CHAKMA_LETTER_GHAA => Ok(Chakma::ChakmaLetterGhaa),
-            CHAKMA_LETTER_NGAA => Ok(Chakma::ChakmaLetterNgaa),
-            CHAKMA_LETTER_CAA => Ok(Chakma::ChakmaLetterCaa),
-            CHAKMA_LETTER_CHAA => Ok(Chakma::ChakmaLetterChaa),
-            CHAKMA_LETTER_JAA => Ok(Chakma::ChakmaLetterJaa),
-            CHAKMA_LETTER_JHAA => Ok(Chakma::ChakmaLetterJhaa),
-            CHAKMA_LETTER_NYAA => Ok(Chakma::ChakmaLetterNyaa),
-            CHAKMA_LETTER_TTAA => Ok(Chakma::ChakmaLetterTtaa),
-            CHAKMA_LETTER_TTHAA => Ok(Chakma::ChakmaLetterTthaa),
-            CHAKMA_LETTER_DDAA => Ok(Chakma::ChakmaLetterDdaa),
-            CHAKMA_LETTER_DDHAA => Ok(Chakma::ChakmaLetterDdhaa),
-            CHAKMA_LETTER_NNAA => Ok(Chakma::ChakmaLetterNnaa),
-            CHAKMA_LETTER_TAA => Ok(Chakma::ChakmaLetterTaa),
-            CHAKMA_LETTER_THAA => Ok(Chakma::ChakmaLetterThaa),
-            CHAKMA_LETTER_DAA => Ok(Chakma::ChakmaLetterDaa),
-            CHAKMA_LETTER_DHAA => Ok(Chakma::ChakmaLetterDhaa),
-            CHAKMA_LETTER_NAA => Ok(Chakma::ChakmaLetterNaa),
-            CHAKMA_LETTER_PAA => Ok(Chakma::ChakmaLetterPaa),
-            CHAKMA_LETTER_PHAA => Ok(Chakma::ChakmaLetterPhaa),
-            CHAKMA_LETTER_BAA => Ok(Chakma::ChakmaLetterBaa),
-            CHAKMA_LETTER_BHAA => Ok(Chakma::ChakmaLetterBhaa),
-            CHAKMA_LETTER_MAA => Ok(Chakma::ChakmaLetterMaa),
-            CHAKMA_LETTER_YYAA => Ok(Chakma::ChakmaLetterYyaa),
-            CHAKMA_LETTER_YAA => Ok(Chakma::ChakmaLetterYaa),
-            CHAKMA_LETTER_RAA => Ok(Chakma::ChakmaLetterRaa),
-            CHAKMA_LETTER_LAA => Ok(Chakma::ChakmaLetterLaa),
-            CHAKMA_LETTER_WAA => Ok(Chakma::ChakmaLetterWaa),
-            CHAKMA_LETTER_SAA => Ok(Chakma::ChakmaLetterSaa),
-            CHAKMA_LETTER_HAA => Ok(Chakma::ChakmaLetterHaa),
-            CHAKMA_VOWEL_SIGN_A => Ok(Chakma::ChakmaVowelSignA),
-            CHAKMA_VOWEL_SIGN_I => Ok(Chakma::ChakmaVowelSignI),
-            CHAKMA_VOWEL_SIGN_II => Ok(Chakma::ChakmaVowelSignIi),
-            CHAKMA_VOWEL_SIGN_U => Ok(Chakma::ChakmaVowelSignU),
-            CHAKMA_VOWEL_SIGN_UU => Ok(Chakma::ChakmaVowelSignUu),
-            CHAKMA_VOWEL_SIGN_E => Ok(Chakma::ChakmaVowelSignE),
-            CHAKMA_VOWEL_SIGN_AI => Ok(Chakma::ChakmaVowelSignAi),
-            CHAKMA_VOWEL_SIGN_O => Ok(Chakma::ChakmaVowelSignO),
-            CHAKMA_VOWEL_SIGN_AU => Ok(Chakma::ChakmaVowelSignAu),
-            CHAKMA_VOWEL_SIGN_OI => Ok(Chakma::ChakmaVowelSignOi),
-            CHAKMA_O_MARK => Ok(Chakma::ChakmaOMark),
-            CHAKMA_AU_MARK => Ok(Chakma::ChakmaAuMark),
-            CHAKMA_VIRAMA => Ok(Chakma::ChakmaVirama),
-            CHAKMA_MAAYYAA => Ok(Chakma::ChakmaMaayyaa),
-            CHAKMA_DIGIT_ZERO => Ok(Chakma::ChakmaDigitZero),
-            CHAKMA_DIGIT_ONE => Ok(Chakma::ChakmaDigitOne),
-            CHAKMA_DIGIT_TWO => Ok(Chakma::ChakmaDigitTwo),
-            CHAKMA_DIGIT_THREE => Ok(Chakma::ChakmaDigitThree),
-            CHAKMA_DIGIT_FOUR => Ok(Chakma::ChakmaDigitFour),
-            CHAKMA_DIGIT_FIVE => Ok(Chakma::ChakmaDigitFive),
-            CHAKMA_DIGIT_SIX => Ok(Chakma::ChakmaDigitSix),
-            CHAKMA_DIGIT_SEVEN => Ok(Chakma::ChakmaDigitSeven),
-            CHAKMA_DIGIT_EIGHT => Ok(Chakma::ChakmaDigitEight),
-            CHAKMA_DIGIT_NINE => Ok(Chakma::ChakmaDigitNine),
-            CHAKMA_SECTION_MARK => Ok(Chakma::ChakmaSectionMark),
-            CHAKMA_DANDA => Ok(Chakma::ChakmaDanda),
-            CHAKMA_DOUBLE_DANDA => Ok(Chakma::ChakmaDoubleDanda),
-            CHAKMA_QUESTION_MARK => Ok(Chakma::ChakmaQuestionMark),
-            CHAKMA_LETTER_LHAA => Ok(Chakma::ChakmaLetterLhaa),
-            CHAKMA_VOWEL_SIGN_AA => Ok(Chakma::ChakmaVowelSignAa),
-            CHAKMA_VOWEL_SIGN_EI => Ok(Chakma::ChakmaVowelSignEi),
+            SIGN_CANDRABINDU => Ok(Chakma::SignCandrabindu),
+            SIGN_ANUSVARA => Ok(Chakma::SignAnusvara),
+            SIGN_VISARGA => Ok(Chakma::SignVisarga),
+            LETTER_AA => Ok(Chakma::LetterAa),
+            LETTER_I => Ok(Chakma::LetterI),
+            LETTER_U => Ok(Chakma::LetterU),
+            LETTER_E => Ok(Chakma::LetterE),
+            LETTER_KAA => Ok(Chakma::LetterKaa),
+            LETTER_KHAA => Ok(Chakma::LetterKhaa),
+            LETTER_GAA => Ok(Chakma::LetterGaa),
+            LETTER_GHAA => Ok(Chakma::LetterGhaa),
+            LETTER_NGAA => Ok(Chakma::LetterNgaa),
+            LETTER_CAA => Ok(Chakma::LetterCaa),
+            LETTER_CHAA => Ok(Chakma::LetterChaa),
+            LETTER_JAA => Ok(Chakma::LetterJaa),
+            LETTER_JHAA => Ok(Chakma::LetterJhaa),
+            LETTER_NYAA => Ok(Chakma::LetterNyaa),
+            LETTER_TTAA => Ok(Chakma::LetterTtaa),
+            LETTER_TTHAA => Ok(Chakma::LetterTthaa),
+            LETTER_DDAA => Ok(Chakma::LetterDdaa),
+            LETTER_DDHAA => Ok(Chakma::LetterDdhaa),
+            LETTER_NNAA => Ok(Chakma::LetterNnaa),
+            LETTER_TAA => Ok(Chakma::LetterTaa),
+            LETTER_THAA => Ok(Chakma::LetterThaa),
+            LETTER_DAA => Ok(Chakma::LetterDaa),
+            LETTER_DHAA => Ok(Chakma::LetterDhaa),
+            LETTER_NAA => Ok(Chakma::LetterNaa),
+            LETTER_PAA => Ok(Chakma::LetterPaa),
+            LETTER_PHAA => Ok(Chakma::LetterPhaa),
+            LETTER_BAA => Ok(Chakma::LetterBaa),
+            LETTER_BHAA => Ok(Chakma::LetterBhaa),
+            LETTER_MAA => Ok(Chakma::LetterMaa),
+            LETTER_YYAA => Ok(Chakma::LetterYyaa),
+            LETTER_YAA => Ok(Chakma::LetterYaa),
+            LETTER_RAA => Ok(Chakma::LetterRaa),
+            LETTER_LAA => Ok(Chakma::LetterLaa),
+            LETTER_WAA => Ok(Chakma::LetterWaa),
+            LETTER_SAA => Ok(Chakma::LetterSaa),
+            LETTER_HAA => Ok(Chakma::LetterHaa),
+            VOWEL_SIGN_A => Ok(Chakma::VowelSignA),
+            VOWEL_SIGN_I => Ok(Chakma::VowelSignI),
+            VOWEL_SIGN_II => Ok(Chakma::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Chakma::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Chakma::VowelSignUu),
+            VOWEL_SIGN_E => Ok(Chakma::VowelSignE),
+            VOWEL_SIGN_AI => Ok(Chakma::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Chakma::VowelSignO),
+            VOWEL_SIGN_AU => Ok(Chakma::VowelSignAu),
+            VOWEL_SIGN_OI => Ok(Chakma::VowelSignOi),
+            O_MARK => Ok(Chakma::OMark),
+            AU_MARK => Ok(Chakma::AuMark),
+            VIRAMA => Ok(Chakma::Virama),
+            MAAYYAA => Ok(Chakma::Maayyaa),
+            DIGIT_ZERO => Ok(Chakma::DigitZero),
+            DIGIT_ONE => Ok(Chakma::DigitOne),
+            DIGIT_TWO => Ok(Chakma::DigitTwo),
+            DIGIT_THREE => Ok(Chakma::DigitThree),
+            DIGIT_FOUR => Ok(Chakma::DigitFour),
+            DIGIT_FIVE => Ok(Chakma::DigitFive),
+            DIGIT_SIX => Ok(Chakma::DigitSix),
+            DIGIT_SEVEN => Ok(Chakma::DigitSeven),
+            DIGIT_EIGHT => Ok(Chakma::DigitEight),
+            DIGIT_NINE => Ok(Chakma::DigitNine),
+            SECTION_MARK => Ok(Chakma::SectionMark),
+            DANDA => Ok(Chakma::Danda),
+            DOUBLE_DANDA => Ok(Chakma::DoubleDanda),
+            QUESTION_MARK => Ok(Chakma::QuestionMark),
+            LETTER_LHAA => Ok(Chakma::LetterLhaa),
+            VOWEL_SIGN_AA => Ok(Chakma::VowelSignAa),
+            VOWEL_SIGN_EI => Ok(Chakma::VowelSignEi),
             _ => Err(()),
         }
     }
@@ -490,84 +490,84 @@ impl Iterator for Chakma {
 }
 
 impl Chakma {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Chakma::ChakmaSignCandrabindu
+        Chakma::SignCandrabindu
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Chakma::ChakmaSignCandrabindu => "chakma sign candrabindu",
-            Chakma::ChakmaSignAnusvara => "chakma sign anusvara",
-            Chakma::ChakmaSignVisarga => "chakma sign visarga",
-            Chakma::ChakmaLetterAa => "chakma letter aa",
-            Chakma::ChakmaLetterI => "chakma letter i",
-            Chakma::ChakmaLetterU => "chakma letter u",
-            Chakma::ChakmaLetterE => "chakma letter e",
-            Chakma::ChakmaLetterKaa => "chakma letter kaa",
-            Chakma::ChakmaLetterKhaa => "chakma letter khaa",
-            Chakma::ChakmaLetterGaa => "chakma letter gaa",
-            Chakma::ChakmaLetterGhaa => "chakma letter ghaa",
-            Chakma::ChakmaLetterNgaa => "chakma letter ngaa",
-            Chakma::ChakmaLetterCaa => "chakma letter caa",
-            Chakma::ChakmaLetterChaa => "chakma letter chaa",
-            Chakma::ChakmaLetterJaa => "chakma letter jaa",
-            Chakma::ChakmaLetterJhaa => "chakma letter jhaa",
-            Chakma::ChakmaLetterNyaa => "chakma letter nyaa",
-            Chakma::ChakmaLetterTtaa => "chakma letter ttaa",
-            Chakma::ChakmaLetterTthaa => "chakma letter tthaa",
-            Chakma::ChakmaLetterDdaa => "chakma letter ddaa",
-            Chakma::ChakmaLetterDdhaa => "chakma letter ddhaa",
-            Chakma::ChakmaLetterNnaa => "chakma letter nnaa",
-            Chakma::ChakmaLetterTaa => "chakma letter taa",
-            Chakma::ChakmaLetterThaa => "chakma letter thaa",
-            Chakma::ChakmaLetterDaa => "chakma letter daa",
-            Chakma::ChakmaLetterDhaa => "chakma letter dhaa",
-            Chakma::ChakmaLetterNaa => "chakma letter naa",
-            Chakma::ChakmaLetterPaa => "chakma letter paa",
-            Chakma::ChakmaLetterPhaa => "chakma letter phaa",
-            Chakma::ChakmaLetterBaa => "chakma letter baa",
-            Chakma::ChakmaLetterBhaa => "chakma letter bhaa",
-            Chakma::ChakmaLetterMaa => "chakma letter maa",
-            Chakma::ChakmaLetterYyaa => "chakma letter yyaa",
-            Chakma::ChakmaLetterYaa => "chakma letter yaa",
-            Chakma::ChakmaLetterRaa => "chakma letter raa",
-            Chakma::ChakmaLetterLaa => "chakma letter laa",
-            Chakma::ChakmaLetterWaa => "chakma letter waa",
-            Chakma::ChakmaLetterSaa => "chakma letter saa",
-            Chakma::ChakmaLetterHaa => "chakma letter haa",
-            Chakma::ChakmaVowelSignA => "chakma vowel sign a",
-            Chakma::ChakmaVowelSignI => "chakma vowel sign i",
-            Chakma::ChakmaVowelSignIi => "chakma vowel sign ii",
-            Chakma::ChakmaVowelSignU => "chakma vowel sign u",
-            Chakma::ChakmaVowelSignUu => "chakma vowel sign uu",
-            Chakma::ChakmaVowelSignE => "chakma vowel sign e",
-            Chakma::ChakmaVowelSignAi => "chakma vowel sign ai",
-            Chakma::ChakmaVowelSignO => "chakma vowel sign o",
-            Chakma::ChakmaVowelSignAu => "chakma vowel sign au",
-            Chakma::ChakmaVowelSignOi => "chakma vowel sign oi",
-            Chakma::ChakmaOMark => "chakma o mark",
-            Chakma::ChakmaAuMark => "chakma au mark",
-            Chakma::ChakmaVirama => "chakma virama",
-            Chakma::ChakmaMaayyaa => "chakma maayyaa",
-            Chakma::ChakmaDigitZero => "chakma digit zero",
-            Chakma::ChakmaDigitOne => "chakma digit one",
-            Chakma::ChakmaDigitTwo => "chakma digit two",
-            Chakma::ChakmaDigitThree => "chakma digit three",
-            Chakma::ChakmaDigitFour => "chakma digit four",
-            Chakma::ChakmaDigitFive => "chakma digit five",
-            Chakma::ChakmaDigitSix => "chakma digit six",
-            Chakma::ChakmaDigitSeven => "chakma digit seven",
-            Chakma::ChakmaDigitEight => "chakma digit eight",
-            Chakma::ChakmaDigitNine => "chakma digit nine",
-            Chakma::ChakmaSectionMark => "chakma section mark",
-            Chakma::ChakmaDanda => "chakma danda",
-            Chakma::ChakmaDoubleDanda => "chakma double danda",
-            Chakma::ChakmaQuestionMark => "chakma question mark",
-            Chakma::ChakmaLetterLhaa => "chakma letter lhaa",
-            Chakma::ChakmaVowelSignAa => "chakma vowel sign aa",
-            Chakma::ChakmaVowelSignEi => "chakma vowel sign ei",
+            Chakma::SignCandrabindu => "chakma sign candrabindu",
+            Chakma::SignAnusvara => "chakma sign anusvara",
+            Chakma::SignVisarga => "chakma sign visarga",
+            Chakma::LetterAa => "chakma letter aa",
+            Chakma::LetterI => "chakma letter i",
+            Chakma::LetterU => "chakma letter u",
+            Chakma::LetterE => "chakma letter e",
+            Chakma::LetterKaa => "chakma letter kaa",
+            Chakma::LetterKhaa => "chakma letter khaa",
+            Chakma::LetterGaa => "chakma letter gaa",
+            Chakma::LetterGhaa => "chakma letter ghaa",
+            Chakma::LetterNgaa => "chakma letter ngaa",
+            Chakma::LetterCaa => "chakma letter caa",
+            Chakma::LetterChaa => "chakma letter chaa",
+            Chakma::LetterJaa => "chakma letter jaa",
+            Chakma::LetterJhaa => "chakma letter jhaa",
+            Chakma::LetterNyaa => "chakma letter nyaa",
+            Chakma::LetterTtaa => "chakma letter ttaa",
+            Chakma::LetterTthaa => "chakma letter tthaa",
+            Chakma::LetterDdaa => "chakma letter ddaa",
+            Chakma::LetterDdhaa => "chakma letter ddhaa",
+            Chakma::LetterNnaa => "chakma letter nnaa",
+            Chakma::LetterTaa => "chakma letter taa",
+            Chakma::LetterThaa => "chakma letter thaa",
+            Chakma::LetterDaa => "chakma letter daa",
+            Chakma::LetterDhaa => "chakma letter dhaa",
+            Chakma::LetterNaa => "chakma letter naa",
+            Chakma::LetterPaa => "chakma letter paa",
+            Chakma::LetterPhaa => "chakma letter phaa",
+            Chakma::LetterBaa => "chakma letter baa",
+            Chakma::LetterBhaa => "chakma letter bhaa",
+            Chakma::LetterMaa => "chakma letter maa",
+            Chakma::LetterYyaa => "chakma letter yyaa",
+            Chakma::LetterYaa => "chakma letter yaa",
+            Chakma::LetterRaa => "chakma letter raa",
+            Chakma::LetterLaa => "chakma letter laa",
+            Chakma::LetterWaa => "chakma letter waa",
+            Chakma::LetterSaa => "chakma letter saa",
+            Chakma::LetterHaa => "chakma letter haa",
+            Chakma::VowelSignA => "chakma vowel sign a",
+            Chakma::VowelSignI => "chakma vowel sign i",
+            Chakma::VowelSignIi => "chakma vowel sign ii",
+            Chakma::VowelSignU => "chakma vowel sign u",
+            Chakma::VowelSignUu => "chakma vowel sign uu",
+            Chakma::VowelSignE => "chakma vowel sign e",
+            Chakma::VowelSignAi => "chakma vowel sign ai",
+            Chakma::VowelSignO => "chakma vowel sign o",
+            Chakma::VowelSignAu => "chakma vowel sign au",
+            Chakma::VowelSignOi => "chakma vowel sign oi",
+            Chakma::OMark => "chakma o mark",
+            Chakma::AuMark => "chakma au mark",
+            Chakma::Virama => "chakma virama",
+            Chakma::Maayyaa => "chakma maayyaa",
+            Chakma::DigitZero => "chakma digit zero",
+            Chakma::DigitOne => "chakma digit one",
+            Chakma::DigitTwo => "chakma digit two",
+            Chakma::DigitThree => "chakma digit three",
+            Chakma::DigitFour => "chakma digit four",
+            Chakma::DigitFive => "chakma digit five",
+            Chakma::DigitSix => "chakma digit six",
+            Chakma::DigitSeven => "chakma digit seven",
+            Chakma::DigitEight => "chakma digit eight",
+            Chakma::DigitNine => "chakma digit nine",
+            Chakma::SectionMark => "chakma section mark",
+            Chakma::Danda => "chakma danda",
+            Chakma::DoubleDanda => "chakma double danda",
+            Chakma::QuestionMark => "chakma question mark",
+            Chakma::LetterLhaa => "chakma letter lhaa",
+            Chakma::VowelSignAa => "chakma vowel sign aa",
+            Chakma::VowelSignEi => "chakma vowel sign ei",
         }
     }
 }

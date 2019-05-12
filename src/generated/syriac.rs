@@ -7,157 +7,157 @@
 /// ݁ ݂ ݃ ݄ ݅ ݆ ݇ ݈ ݉ ݊ ݍ ݎ
 pub mod constants {
     /// \u{700}: '܀'
-    pub const SYRIAC_END_OF_PARAGRAPH: char = '܀';
+    pub const END_OF_PARAGRAPH: char = '܀';
     /// \u{701}: '܁'
-    pub const SYRIAC_SUPRALINEAR_FULL_STOP: char = '܁';
+    pub const SUPRALINEAR_FULL_STOP: char = '܁';
     /// \u{702}: '܂'
-    pub const SYRIAC_SUBLINEAR_FULL_STOP: char = '܂';
+    pub const SUBLINEAR_FULL_STOP: char = '܂';
     /// \u{703}: '܃'
-    pub const SYRIAC_SUPRALINEAR_COLON: char = '܃';
+    pub const SUPRALINEAR_COLON: char = '܃';
     /// \u{704}: '܄'
-    pub const SYRIAC_SUBLINEAR_COLON: char = '܄';
+    pub const SUBLINEAR_COLON: char = '܄';
     /// \u{705}: '܅'
-    pub const SYRIAC_HORIZONTAL_COLON: char = '܅';
+    pub const HORIZONTAL_COLON: char = '܅';
     /// \u{706}: '܆'
-    pub const SYRIAC_COLON_SKEWED_LEFT: char = '܆';
+    pub const COLON_SKEWED_LEFT: char = '܆';
     /// \u{707}: '܇'
-    pub const SYRIAC_COLON_SKEWED_RIGHT: char = '܇';
+    pub const COLON_SKEWED_RIGHT: char = '܇';
     /// \u{708}: '܈'
-    pub const SYRIAC_SUPRALINEAR_COLON_SKEWED_LEFT: char = '܈';
+    pub const SUPRALINEAR_COLON_SKEWED_LEFT: char = '܈';
     /// \u{709}: '܉'
-    pub const SYRIAC_SUBLINEAR_COLON_SKEWED_RIGHT: char = '܉';
+    pub const SUBLINEAR_COLON_SKEWED_RIGHT: char = '܉';
     /// \u{70a}: '܊'
-    pub const SYRIAC_CONTRACTION: char = '܊';
+    pub const CONTRACTION: char = '܊';
     /// \u{70b}: '܋'
-    pub const SYRIAC_HARKLEAN_OBELUS: char = '܋';
+    pub const HARKLEAN_OBELUS: char = '܋';
     /// \u{70c}: '܌'
-    pub const SYRIAC_HARKLEAN_METOBELUS: char = '܌';
+    pub const HARKLEAN_METOBELUS: char = '܌';
     /// \u{70d}: '܍'
-    pub const SYRIAC_HARKLEAN_ASTERISCUS: char = '܍';
+    pub const HARKLEAN_ASTERISCUS: char = '܍';
     /// \u{70f}: '܏'
-    pub const SYRIAC_ABBREVIATION_MARK: char = '܏';
+    pub const ABBREVIATION_MARK: char = '܏';
     /// \u{710}: 'ܐ'
-    pub const SYRIAC_LETTER_ALAPH: char = 'ܐ';
+    pub const LETTER_ALAPH: char = 'ܐ';
     /// \u{711}: 'ܑ'
-    pub const SYRIAC_LETTER_SUPERSCRIPT_ALAPH: char = 'ܑ';
+    pub const LETTER_SUPERSCRIPT_ALAPH: char = 'ܑ';
     /// \u{712}: 'ܒ'
-    pub const SYRIAC_LETTER_BETH: char = 'ܒ';
+    pub const LETTER_BETH: char = 'ܒ';
     /// \u{713}: 'ܓ'
-    pub const SYRIAC_LETTER_GAMAL: char = 'ܓ';
+    pub const LETTER_GAMAL: char = 'ܓ';
     /// \u{714}: 'ܔ'
-    pub const SYRIAC_LETTER_GAMAL_GARSHUNI: char = 'ܔ';
+    pub const LETTER_GAMAL_GARSHUNI: char = 'ܔ';
     /// \u{715}: 'ܕ'
-    pub const SYRIAC_LETTER_DALATH: char = 'ܕ';
+    pub const LETTER_DALATH: char = 'ܕ';
     /// \u{716}: 'ܖ'
-    pub const SYRIAC_LETTER_DOTLESS_DALATH_RISH: char = 'ܖ';
+    pub const LETTER_DOTLESS_DALATH_RISH: char = 'ܖ';
     /// \u{717}: 'ܗ'
-    pub const SYRIAC_LETTER_HE: char = 'ܗ';
+    pub const LETTER_HE: char = 'ܗ';
     /// \u{718}: 'ܘ'
-    pub const SYRIAC_LETTER_WAW: char = 'ܘ';
+    pub const LETTER_WAW: char = 'ܘ';
     /// \u{719}: 'ܙ'
-    pub const SYRIAC_LETTER_ZAIN: char = 'ܙ';
+    pub const LETTER_ZAIN: char = 'ܙ';
     /// \u{71a}: 'ܚ'
-    pub const SYRIAC_LETTER_HETH: char = 'ܚ';
+    pub const LETTER_HETH: char = 'ܚ';
     /// \u{71b}: 'ܛ'
-    pub const SYRIAC_LETTER_TETH: char = 'ܛ';
+    pub const LETTER_TETH: char = 'ܛ';
     /// \u{71c}: 'ܜ'
-    pub const SYRIAC_LETTER_TETH_GARSHUNI: char = 'ܜ';
+    pub const LETTER_TETH_GARSHUNI: char = 'ܜ';
     /// \u{71d}: 'ܝ'
-    pub const SYRIAC_LETTER_YUDH: char = 'ܝ';
+    pub const LETTER_YUDH: char = 'ܝ';
     /// \u{71e}: 'ܞ'
-    pub const SYRIAC_LETTER_YUDH_HE: char = 'ܞ';
+    pub const LETTER_YUDH_HE: char = 'ܞ';
     /// \u{71f}: 'ܟ'
-    pub const SYRIAC_LETTER_KAPH: char = 'ܟ';
+    pub const LETTER_KAPH: char = 'ܟ';
     /// \u{720}: 'ܠ'
-    pub const SYRIAC_LETTER_LAMADH: char = 'ܠ';
+    pub const LETTER_LAMADH: char = 'ܠ';
     /// \u{721}: 'ܡ'
-    pub const SYRIAC_LETTER_MIM: char = 'ܡ';
+    pub const LETTER_MIM: char = 'ܡ';
     /// \u{722}: 'ܢ'
-    pub const SYRIAC_LETTER_NUN: char = 'ܢ';
+    pub const LETTER_NUN: char = 'ܢ';
     /// \u{723}: 'ܣ'
-    pub const SYRIAC_LETTER_SEMKATH: char = 'ܣ';
+    pub const LETTER_SEMKATH: char = 'ܣ';
     /// \u{724}: 'ܤ'
-    pub const SYRIAC_LETTER_FINAL_SEMKATH: char = 'ܤ';
+    pub const LETTER_FINAL_SEMKATH: char = 'ܤ';
     /// \u{725}: 'ܥ'
-    pub const SYRIAC_LETTER_E: char = 'ܥ';
+    pub const LETTER_E: char = 'ܥ';
     /// \u{726}: 'ܦ'
-    pub const SYRIAC_LETTER_PE: char = 'ܦ';
+    pub const LETTER_PE: char = 'ܦ';
     /// \u{727}: 'ܧ'
-    pub const SYRIAC_LETTER_REVERSED_PE: char = 'ܧ';
+    pub const LETTER_REVERSED_PE: char = 'ܧ';
     /// \u{728}: 'ܨ'
-    pub const SYRIAC_LETTER_SADHE: char = 'ܨ';
+    pub const LETTER_SADHE: char = 'ܨ';
     /// \u{729}: 'ܩ'
-    pub const SYRIAC_LETTER_QAPH: char = 'ܩ';
+    pub const LETTER_QAPH: char = 'ܩ';
     /// \u{72a}: 'ܪ'
-    pub const SYRIAC_LETTER_RISH: char = 'ܪ';
+    pub const LETTER_RISH: char = 'ܪ';
     /// \u{72b}: 'ܫ'
-    pub const SYRIAC_LETTER_SHIN: char = 'ܫ';
+    pub const LETTER_SHIN: char = 'ܫ';
     /// \u{72c}: 'ܬ'
-    pub const SYRIAC_LETTER_TAW: char = 'ܬ';
+    pub const LETTER_TAW: char = 'ܬ';
     /// \u{72d}: 'ܭ'
-    pub const SYRIAC_LETTER_PERSIAN_BHETH: char = 'ܭ';
+    pub const LETTER_PERSIAN_BHETH: char = 'ܭ';
     /// \u{72e}: 'ܮ'
-    pub const SYRIAC_LETTER_PERSIAN_GHAMAL: char = 'ܮ';
+    pub const LETTER_PERSIAN_GHAMAL: char = 'ܮ';
     /// \u{72f}: 'ܯ'
-    pub const SYRIAC_LETTER_PERSIAN_DHALATH: char = 'ܯ';
+    pub const LETTER_PERSIAN_DHALATH: char = 'ܯ';
     /// \u{730}: 'ܰ'
-    pub const SYRIAC_PTHAHA_ABOVE: char = 'ܰ';
+    pub const PTHAHA_ABOVE: char = 'ܰ';
     /// \u{731}: 'ܱ'
-    pub const SYRIAC_PTHAHA_BELOW: char = 'ܱ';
+    pub const PTHAHA_BELOW: char = 'ܱ';
     /// \u{732}: 'ܲ'
-    pub const SYRIAC_PTHAHA_DOTTED: char = 'ܲ';
+    pub const PTHAHA_DOTTED: char = 'ܲ';
     /// \u{733}: 'ܳ'
-    pub const SYRIAC_ZQAPHA_ABOVE: char = 'ܳ';
+    pub const ZQAPHA_ABOVE: char = 'ܳ';
     /// \u{734}: 'ܴ'
-    pub const SYRIAC_ZQAPHA_BELOW: char = 'ܴ';
+    pub const ZQAPHA_BELOW: char = 'ܴ';
     /// \u{735}: 'ܵ'
-    pub const SYRIAC_ZQAPHA_DOTTED: char = 'ܵ';
+    pub const ZQAPHA_DOTTED: char = 'ܵ';
     /// \u{736}: 'ܶ'
-    pub const SYRIAC_RBASA_ABOVE: char = 'ܶ';
+    pub const RBASA_ABOVE: char = 'ܶ';
     /// \u{737}: 'ܷ'
-    pub const SYRIAC_RBASA_BELOW: char = 'ܷ';
+    pub const RBASA_BELOW: char = 'ܷ';
     /// \u{738}: 'ܸ'
-    pub const SYRIAC_DOTTED_ZLAMA_HORIZONTAL: char = 'ܸ';
+    pub const DOTTED_ZLAMA_HORIZONTAL: char = 'ܸ';
     /// \u{739}: 'ܹ'
-    pub const SYRIAC_DOTTED_ZLAMA_ANGULAR: char = 'ܹ';
+    pub const DOTTED_ZLAMA_ANGULAR: char = 'ܹ';
     /// \u{73a}: 'ܺ'
-    pub const SYRIAC_HBASA_ABOVE: char = 'ܺ';
+    pub const HBASA_ABOVE: char = 'ܺ';
     /// \u{73b}: 'ܻ'
-    pub const SYRIAC_HBASA_BELOW: char = 'ܻ';
+    pub const HBASA_BELOW: char = 'ܻ';
     /// \u{73c}: 'ܼ'
-    pub const SYRIAC_HBASA_DASH_ESASA_DOTTED: char = 'ܼ';
+    pub const HBASA_DASH_ESASA_DOTTED: char = 'ܼ';
     /// \u{73d}: 'ܽ'
-    pub const SYRIAC_ESASA_ABOVE: char = 'ܽ';
+    pub const ESASA_ABOVE: char = 'ܽ';
     /// \u{73e}: 'ܾ'
-    pub const SYRIAC_ESASA_BELOW: char = 'ܾ';
+    pub const ESASA_BELOW: char = 'ܾ';
     /// \u{73f}: 'ܿ'
-    pub const SYRIAC_RWAHA: char = 'ܿ';
+    pub const RWAHA: char = 'ܿ';
     /// \u{740}: '݀'
-    pub const SYRIAC_FEMININE_DOT: char = '݀';
+    pub const FEMININE_DOT: char = '݀';
     /// \u{741}: '݁'
-    pub const SYRIAC_QUSHSHAYA: char = '݁';
+    pub const QUSHSHAYA: char = '݁';
     /// \u{742}: '݂'
-    pub const SYRIAC_RUKKAKHA: char = '݂';
+    pub const RUKKAKHA: char = '݂';
     /// \u{743}: '݃'
-    pub const SYRIAC_TWO_VERTICAL_DOTS_ABOVE: char = '݃';
+    pub const TWO_VERTICAL_DOTS_ABOVE: char = '݃';
     /// \u{744}: '݄'
-    pub const SYRIAC_TWO_VERTICAL_DOTS_BELOW: char = '݄';
+    pub const TWO_VERTICAL_DOTS_BELOW: char = '݄';
     /// \u{745}: '݅'
-    pub const SYRIAC_THREE_DOTS_ABOVE: char = '݅';
+    pub const THREE_DOTS_ABOVE: char = '݅';
     /// \u{746}: '݆'
-    pub const SYRIAC_THREE_DOTS_BELOW: char = '݆';
+    pub const THREE_DOTS_BELOW: char = '݆';
     /// \u{747}: '݇'
-    pub const SYRIAC_OBLIQUE_LINE_ABOVE: char = '݇';
+    pub const OBLIQUE_LINE_ABOVE: char = '݇';
     /// \u{748}: '݈'
-    pub const SYRIAC_OBLIQUE_LINE_BELOW: char = '݈';
+    pub const OBLIQUE_LINE_BELOW: char = '݈';
     /// \u{749}: '݉'
-    pub const SYRIAC_MUSIC: char = '݉';
+    pub const MUSIC: char = '݉';
     /// \u{74a}: '݊'
-    pub const SYRIAC_BARREKH: char = '݊';
+    pub const BARREKH: char = '݊';
     /// \u{74d}: 'ݍ'
-    pub const SYRIAC_LETTER_SOGDIAN_ZHAIN: char = 'ݍ';
+    pub const LETTER_SOGDIAN_ZHAIN: char = 'ݍ';
     /// \u{74e}: 'ݎ'
-    pub const SYRIAC_LETTER_SOGDIAN_KHAPH: char = 'ݎ';
+    pub const LETTER_SOGDIAN_KHAPH: char = 'ݎ';
 }
 
 /// \u{700} → \u{74f}\
@@ -170,239 +170,239 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Syriac {
     /// \u{700}: '܀'
-    SyriacEndOfParagraph,
+    EndOfParagraph,
     /// \u{701}: '܁'
-    SyriacSupralinearFullStop,
+    SupralinearFullStop,
     /// \u{702}: '܂'
-    SyriacSublinearFullStop,
+    SublinearFullStop,
     /// \u{703}: '܃'
-    SyriacSupralinearColon,
+    SupralinearColon,
     /// \u{704}: '܄'
-    SyriacSublinearColon,
+    SublinearColon,
     /// \u{705}: '܅'
-    SyriacHorizontalColon,
+    HorizontalColon,
     /// \u{706}: '܆'
-    SyriacColonSkewedLeft,
+    ColonSkewedLeft,
     /// \u{707}: '܇'
-    SyriacColonSkewedRight,
+    ColonSkewedRight,
     /// \u{708}: '܈'
-    SyriacSupralinearColonSkewedLeft,
+    SupralinearColonSkewedLeft,
     /// \u{709}: '܉'
-    SyriacSublinearColonSkewedRight,
+    SublinearColonSkewedRight,
     /// \u{70a}: '܊'
-    SyriacContraction,
+    Contraction,
     /// \u{70b}: '܋'
-    SyriacHarkleanObelus,
+    HarkleanObelus,
     /// \u{70c}: '܌'
-    SyriacHarkleanMetobelus,
+    HarkleanMetobelus,
     /// \u{70d}: '܍'
-    SyriacHarkleanAsteriscus,
+    HarkleanAsteriscus,
     /// \u{70f}: '܏'
-    SyriacAbbreviationMark,
+    AbbreviationMark,
     /// \u{710}: 'ܐ'
-    SyriacLetterAlaph,
+    LetterAlaph,
     /// \u{711}: 'ܑ'
-    SyriacLetterSuperscriptAlaph,
+    LetterSuperscriptAlaph,
     /// \u{712}: 'ܒ'
-    SyriacLetterBeth,
+    LetterBeth,
     /// \u{713}: 'ܓ'
-    SyriacLetterGamal,
+    LetterGamal,
     /// \u{714}: 'ܔ'
-    SyriacLetterGamalGarshuni,
+    LetterGamalGarshuni,
     /// \u{715}: 'ܕ'
-    SyriacLetterDalath,
+    LetterDalath,
     /// \u{716}: 'ܖ'
-    SyriacLetterDotlessDalathRish,
+    LetterDotlessDalathRish,
     /// \u{717}: 'ܗ'
-    SyriacLetterHe,
+    LetterHe,
     /// \u{718}: 'ܘ'
-    SyriacLetterWaw,
+    LetterWaw,
     /// \u{719}: 'ܙ'
-    SyriacLetterZain,
+    LetterZain,
     /// \u{71a}: 'ܚ'
-    SyriacLetterHeth,
+    LetterHeth,
     /// \u{71b}: 'ܛ'
-    SyriacLetterTeth,
+    LetterTeth,
     /// \u{71c}: 'ܜ'
-    SyriacLetterTethGarshuni,
+    LetterTethGarshuni,
     /// \u{71d}: 'ܝ'
-    SyriacLetterYudh,
+    LetterYudh,
     /// \u{71e}: 'ܞ'
-    SyriacLetterYudhHe,
+    LetterYudhHe,
     /// \u{71f}: 'ܟ'
-    SyriacLetterKaph,
+    LetterKaph,
     /// \u{720}: 'ܠ'
-    SyriacLetterLamadh,
+    LetterLamadh,
     /// \u{721}: 'ܡ'
-    SyriacLetterMim,
+    LetterMim,
     /// \u{722}: 'ܢ'
-    SyriacLetterNun,
+    LetterNun,
     /// \u{723}: 'ܣ'
-    SyriacLetterSemkath,
+    LetterSemkath,
     /// \u{724}: 'ܤ'
-    SyriacLetterFinalSemkath,
+    LetterFinalSemkath,
     /// \u{725}: 'ܥ'
-    SyriacLetterE,
+    LetterE,
     /// \u{726}: 'ܦ'
-    SyriacLetterPe,
+    LetterPe,
     /// \u{727}: 'ܧ'
-    SyriacLetterReversedPe,
+    LetterReversedPe,
     /// \u{728}: 'ܨ'
-    SyriacLetterSadhe,
+    LetterSadhe,
     /// \u{729}: 'ܩ'
-    SyriacLetterQaph,
+    LetterQaph,
     /// \u{72a}: 'ܪ'
-    SyriacLetterRish,
+    LetterRish,
     /// \u{72b}: 'ܫ'
-    SyriacLetterShin,
+    LetterShin,
     /// \u{72c}: 'ܬ'
-    SyriacLetterTaw,
+    LetterTaw,
     /// \u{72d}: 'ܭ'
-    SyriacLetterPersianBheth,
+    LetterPersianBheth,
     /// \u{72e}: 'ܮ'
-    SyriacLetterPersianGhamal,
+    LetterPersianGhamal,
     /// \u{72f}: 'ܯ'
-    SyriacLetterPersianDhalath,
+    LetterPersianDhalath,
     /// \u{730}: 'ܰ'
-    SyriacPthahaAbove,
+    PthahaAbove,
     /// \u{731}: 'ܱ'
-    SyriacPthahaBelow,
+    PthahaBelow,
     /// \u{732}: 'ܲ'
-    SyriacPthahaDotted,
+    PthahaDotted,
     /// \u{733}: 'ܳ'
-    SyriacZqaphaAbove,
+    ZqaphaAbove,
     /// \u{734}: 'ܴ'
-    SyriacZqaphaBelow,
+    ZqaphaBelow,
     /// \u{735}: 'ܵ'
-    SyriacZqaphaDotted,
+    ZqaphaDotted,
     /// \u{736}: 'ܶ'
-    SyriacRbasaAbove,
+    RbasaAbove,
     /// \u{737}: 'ܷ'
-    SyriacRbasaBelow,
+    RbasaBelow,
     /// \u{738}: 'ܸ'
-    SyriacDottedZlamaHorizontal,
+    DottedZlamaHorizontal,
     /// \u{739}: 'ܹ'
-    SyriacDottedZlamaAngular,
+    DottedZlamaAngular,
     /// \u{73a}: 'ܺ'
-    SyriacHbasaAbove,
+    HbasaAbove,
     /// \u{73b}: 'ܻ'
-    SyriacHbasaBelow,
+    HbasaBelow,
     /// \u{73c}: 'ܼ'
-    SyriacHbasaDashEsasaDotted,
+    HbasaDashEsasaDotted,
     /// \u{73d}: 'ܽ'
-    SyriacEsasaAbove,
+    EsasaAbove,
     /// \u{73e}: 'ܾ'
-    SyriacEsasaBelow,
+    EsasaBelow,
     /// \u{73f}: 'ܿ'
-    SyriacRwaha,
+    Rwaha,
     /// \u{740}: '݀'
-    SyriacFeminineDot,
+    FeminineDot,
     /// \u{741}: '݁'
-    SyriacQushshaya,
+    Qushshaya,
     /// \u{742}: '݂'
-    SyriacRukkakha,
+    Rukkakha,
     /// \u{743}: '݃'
-    SyriacTwoVerticalDotsAbove,
+    TwoVerticalDotsAbove,
     /// \u{744}: '݄'
-    SyriacTwoVerticalDotsBelow,
+    TwoVerticalDotsBelow,
     /// \u{745}: '݅'
-    SyriacThreeDotsAbove,
+    ThreeDotsAbove,
     /// \u{746}: '݆'
-    SyriacThreeDotsBelow,
+    ThreeDotsBelow,
     /// \u{747}: '݇'
-    SyriacObliqueLineAbove,
+    ObliqueLineAbove,
     /// \u{748}: '݈'
-    SyriacObliqueLineBelow,
+    ObliqueLineBelow,
     /// \u{749}: '݉'
-    SyriacMusic,
+    Music,
     /// \u{74a}: '݊'
-    SyriacBarrekh,
+    Barrekh,
     /// \u{74d}: 'ݍ'
-    SyriacLetterSogdianZhain,
+    LetterSogdianZhain,
     /// \u{74e}: 'ݎ'
-    SyriacLetterSogdianKhaph,
+    LetterSogdianKhaph,
 }
 
 impl Into<char> for Syriac {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Syriac::SyriacEndOfParagraph => SYRIAC_END_OF_PARAGRAPH,
-            Syriac::SyriacSupralinearFullStop => SYRIAC_SUPRALINEAR_FULL_STOP,
-            Syriac::SyriacSublinearFullStop => SYRIAC_SUBLINEAR_FULL_STOP,
-            Syriac::SyriacSupralinearColon => SYRIAC_SUPRALINEAR_COLON,
-            Syriac::SyriacSublinearColon => SYRIAC_SUBLINEAR_COLON,
-            Syriac::SyriacHorizontalColon => SYRIAC_HORIZONTAL_COLON,
-            Syriac::SyriacColonSkewedLeft => SYRIAC_COLON_SKEWED_LEFT,
-            Syriac::SyriacColonSkewedRight => SYRIAC_COLON_SKEWED_RIGHT,
-            Syriac::SyriacSupralinearColonSkewedLeft => SYRIAC_SUPRALINEAR_COLON_SKEWED_LEFT,
-            Syriac::SyriacSublinearColonSkewedRight => SYRIAC_SUBLINEAR_COLON_SKEWED_RIGHT,
-            Syriac::SyriacContraction => SYRIAC_CONTRACTION,
-            Syriac::SyriacHarkleanObelus => SYRIAC_HARKLEAN_OBELUS,
-            Syriac::SyriacHarkleanMetobelus => SYRIAC_HARKLEAN_METOBELUS,
-            Syriac::SyriacHarkleanAsteriscus => SYRIAC_HARKLEAN_ASTERISCUS,
-            Syriac::SyriacAbbreviationMark => SYRIAC_ABBREVIATION_MARK,
-            Syriac::SyriacLetterAlaph => SYRIAC_LETTER_ALAPH,
-            Syriac::SyriacLetterSuperscriptAlaph => SYRIAC_LETTER_SUPERSCRIPT_ALAPH,
-            Syriac::SyriacLetterBeth => SYRIAC_LETTER_BETH,
-            Syriac::SyriacLetterGamal => SYRIAC_LETTER_GAMAL,
-            Syriac::SyriacLetterGamalGarshuni => SYRIAC_LETTER_GAMAL_GARSHUNI,
-            Syriac::SyriacLetterDalath => SYRIAC_LETTER_DALATH,
-            Syriac::SyriacLetterDotlessDalathRish => SYRIAC_LETTER_DOTLESS_DALATH_RISH,
-            Syriac::SyriacLetterHe => SYRIAC_LETTER_HE,
-            Syriac::SyriacLetterWaw => SYRIAC_LETTER_WAW,
-            Syriac::SyriacLetterZain => SYRIAC_LETTER_ZAIN,
-            Syriac::SyriacLetterHeth => SYRIAC_LETTER_HETH,
-            Syriac::SyriacLetterTeth => SYRIAC_LETTER_TETH,
-            Syriac::SyriacLetterTethGarshuni => SYRIAC_LETTER_TETH_GARSHUNI,
-            Syriac::SyriacLetterYudh => SYRIAC_LETTER_YUDH,
-            Syriac::SyriacLetterYudhHe => SYRIAC_LETTER_YUDH_HE,
-            Syriac::SyriacLetterKaph => SYRIAC_LETTER_KAPH,
-            Syriac::SyriacLetterLamadh => SYRIAC_LETTER_LAMADH,
-            Syriac::SyriacLetterMim => SYRIAC_LETTER_MIM,
-            Syriac::SyriacLetterNun => SYRIAC_LETTER_NUN,
-            Syriac::SyriacLetterSemkath => SYRIAC_LETTER_SEMKATH,
-            Syriac::SyriacLetterFinalSemkath => SYRIAC_LETTER_FINAL_SEMKATH,
-            Syriac::SyriacLetterE => SYRIAC_LETTER_E,
-            Syriac::SyriacLetterPe => SYRIAC_LETTER_PE,
-            Syriac::SyriacLetterReversedPe => SYRIAC_LETTER_REVERSED_PE,
-            Syriac::SyriacLetterSadhe => SYRIAC_LETTER_SADHE,
-            Syriac::SyriacLetterQaph => SYRIAC_LETTER_QAPH,
-            Syriac::SyriacLetterRish => SYRIAC_LETTER_RISH,
-            Syriac::SyriacLetterShin => SYRIAC_LETTER_SHIN,
-            Syriac::SyriacLetterTaw => SYRIAC_LETTER_TAW,
-            Syriac::SyriacLetterPersianBheth => SYRIAC_LETTER_PERSIAN_BHETH,
-            Syriac::SyriacLetterPersianGhamal => SYRIAC_LETTER_PERSIAN_GHAMAL,
-            Syriac::SyriacLetterPersianDhalath => SYRIAC_LETTER_PERSIAN_DHALATH,
-            Syriac::SyriacPthahaAbove => SYRIAC_PTHAHA_ABOVE,
-            Syriac::SyriacPthahaBelow => SYRIAC_PTHAHA_BELOW,
-            Syriac::SyriacPthahaDotted => SYRIAC_PTHAHA_DOTTED,
-            Syriac::SyriacZqaphaAbove => SYRIAC_ZQAPHA_ABOVE,
-            Syriac::SyriacZqaphaBelow => SYRIAC_ZQAPHA_BELOW,
-            Syriac::SyriacZqaphaDotted => SYRIAC_ZQAPHA_DOTTED,
-            Syriac::SyriacRbasaAbove => SYRIAC_RBASA_ABOVE,
-            Syriac::SyriacRbasaBelow => SYRIAC_RBASA_BELOW,
-            Syriac::SyriacDottedZlamaHorizontal => SYRIAC_DOTTED_ZLAMA_HORIZONTAL,
-            Syriac::SyriacDottedZlamaAngular => SYRIAC_DOTTED_ZLAMA_ANGULAR,
-            Syriac::SyriacHbasaAbove => SYRIAC_HBASA_ABOVE,
-            Syriac::SyriacHbasaBelow => SYRIAC_HBASA_BELOW,
-            Syriac::SyriacHbasaDashEsasaDotted => SYRIAC_HBASA_DASH_ESASA_DOTTED,
-            Syriac::SyriacEsasaAbove => SYRIAC_ESASA_ABOVE,
-            Syriac::SyriacEsasaBelow => SYRIAC_ESASA_BELOW,
-            Syriac::SyriacRwaha => SYRIAC_RWAHA,
-            Syriac::SyriacFeminineDot => SYRIAC_FEMININE_DOT,
-            Syriac::SyriacQushshaya => SYRIAC_QUSHSHAYA,
-            Syriac::SyriacRukkakha => SYRIAC_RUKKAKHA,
-            Syriac::SyriacTwoVerticalDotsAbove => SYRIAC_TWO_VERTICAL_DOTS_ABOVE,
-            Syriac::SyriacTwoVerticalDotsBelow => SYRIAC_TWO_VERTICAL_DOTS_BELOW,
-            Syriac::SyriacThreeDotsAbove => SYRIAC_THREE_DOTS_ABOVE,
-            Syriac::SyriacThreeDotsBelow => SYRIAC_THREE_DOTS_BELOW,
-            Syriac::SyriacObliqueLineAbove => SYRIAC_OBLIQUE_LINE_ABOVE,
-            Syriac::SyriacObliqueLineBelow => SYRIAC_OBLIQUE_LINE_BELOW,
-            Syriac::SyriacMusic => SYRIAC_MUSIC,
-            Syriac::SyriacBarrekh => SYRIAC_BARREKH,
-            Syriac::SyriacLetterSogdianZhain => SYRIAC_LETTER_SOGDIAN_ZHAIN,
-            Syriac::SyriacLetterSogdianKhaph => SYRIAC_LETTER_SOGDIAN_KHAPH,
+            Syriac::EndOfParagraph => END_OF_PARAGRAPH,
+            Syriac::SupralinearFullStop => SUPRALINEAR_FULL_STOP,
+            Syriac::SublinearFullStop => SUBLINEAR_FULL_STOP,
+            Syriac::SupralinearColon => SUPRALINEAR_COLON,
+            Syriac::SublinearColon => SUBLINEAR_COLON,
+            Syriac::HorizontalColon => HORIZONTAL_COLON,
+            Syriac::ColonSkewedLeft => COLON_SKEWED_LEFT,
+            Syriac::ColonSkewedRight => COLON_SKEWED_RIGHT,
+            Syriac::SupralinearColonSkewedLeft => SUPRALINEAR_COLON_SKEWED_LEFT,
+            Syriac::SublinearColonSkewedRight => SUBLINEAR_COLON_SKEWED_RIGHT,
+            Syriac::Contraction => CONTRACTION,
+            Syriac::HarkleanObelus => HARKLEAN_OBELUS,
+            Syriac::HarkleanMetobelus => HARKLEAN_METOBELUS,
+            Syriac::HarkleanAsteriscus => HARKLEAN_ASTERISCUS,
+            Syriac::AbbreviationMark => ABBREVIATION_MARK,
+            Syriac::LetterAlaph => LETTER_ALAPH,
+            Syriac::LetterSuperscriptAlaph => LETTER_SUPERSCRIPT_ALAPH,
+            Syriac::LetterBeth => LETTER_BETH,
+            Syriac::LetterGamal => LETTER_GAMAL,
+            Syriac::LetterGamalGarshuni => LETTER_GAMAL_GARSHUNI,
+            Syriac::LetterDalath => LETTER_DALATH,
+            Syriac::LetterDotlessDalathRish => LETTER_DOTLESS_DALATH_RISH,
+            Syriac::LetterHe => LETTER_HE,
+            Syriac::LetterWaw => LETTER_WAW,
+            Syriac::LetterZain => LETTER_ZAIN,
+            Syriac::LetterHeth => LETTER_HETH,
+            Syriac::LetterTeth => LETTER_TETH,
+            Syriac::LetterTethGarshuni => LETTER_TETH_GARSHUNI,
+            Syriac::LetterYudh => LETTER_YUDH,
+            Syriac::LetterYudhHe => LETTER_YUDH_HE,
+            Syriac::LetterKaph => LETTER_KAPH,
+            Syriac::LetterLamadh => LETTER_LAMADH,
+            Syriac::LetterMim => LETTER_MIM,
+            Syriac::LetterNun => LETTER_NUN,
+            Syriac::LetterSemkath => LETTER_SEMKATH,
+            Syriac::LetterFinalSemkath => LETTER_FINAL_SEMKATH,
+            Syriac::LetterE => LETTER_E,
+            Syriac::LetterPe => LETTER_PE,
+            Syriac::LetterReversedPe => LETTER_REVERSED_PE,
+            Syriac::LetterSadhe => LETTER_SADHE,
+            Syriac::LetterQaph => LETTER_QAPH,
+            Syriac::LetterRish => LETTER_RISH,
+            Syriac::LetterShin => LETTER_SHIN,
+            Syriac::LetterTaw => LETTER_TAW,
+            Syriac::LetterPersianBheth => LETTER_PERSIAN_BHETH,
+            Syriac::LetterPersianGhamal => LETTER_PERSIAN_GHAMAL,
+            Syriac::LetterPersianDhalath => LETTER_PERSIAN_DHALATH,
+            Syriac::PthahaAbove => PTHAHA_ABOVE,
+            Syriac::PthahaBelow => PTHAHA_BELOW,
+            Syriac::PthahaDotted => PTHAHA_DOTTED,
+            Syriac::ZqaphaAbove => ZQAPHA_ABOVE,
+            Syriac::ZqaphaBelow => ZQAPHA_BELOW,
+            Syriac::ZqaphaDotted => ZQAPHA_DOTTED,
+            Syriac::RbasaAbove => RBASA_ABOVE,
+            Syriac::RbasaBelow => RBASA_BELOW,
+            Syriac::DottedZlamaHorizontal => DOTTED_ZLAMA_HORIZONTAL,
+            Syriac::DottedZlamaAngular => DOTTED_ZLAMA_ANGULAR,
+            Syriac::HbasaAbove => HBASA_ABOVE,
+            Syriac::HbasaBelow => HBASA_BELOW,
+            Syriac::HbasaDashEsasaDotted => HBASA_DASH_ESASA_DOTTED,
+            Syriac::EsasaAbove => ESASA_ABOVE,
+            Syriac::EsasaBelow => ESASA_BELOW,
+            Syriac::Rwaha => RWAHA,
+            Syriac::FeminineDot => FEMININE_DOT,
+            Syriac::Qushshaya => QUSHSHAYA,
+            Syriac::Rukkakha => RUKKAKHA,
+            Syriac::TwoVerticalDotsAbove => TWO_VERTICAL_DOTS_ABOVE,
+            Syriac::TwoVerticalDotsBelow => TWO_VERTICAL_DOTS_BELOW,
+            Syriac::ThreeDotsAbove => THREE_DOTS_ABOVE,
+            Syriac::ThreeDotsBelow => THREE_DOTS_BELOW,
+            Syriac::ObliqueLineAbove => OBLIQUE_LINE_ABOVE,
+            Syriac::ObliqueLineBelow => OBLIQUE_LINE_BELOW,
+            Syriac::Music => MUSIC,
+            Syriac::Barrekh => BARREKH,
+            Syriac::LetterSogdianZhain => LETTER_SOGDIAN_ZHAIN,
+            Syriac::LetterSogdianKhaph => LETTER_SOGDIAN_KHAPH,
         }
     }
 }
@@ -412,82 +412,82 @@ impl std::convert::TryFrom<char> for Syriac {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            SYRIAC_END_OF_PARAGRAPH => Ok(Syriac::SyriacEndOfParagraph),
-            SYRIAC_SUPRALINEAR_FULL_STOP => Ok(Syriac::SyriacSupralinearFullStop),
-            SYRIAC_SUBLINEAR_FULL_STOP => Ok(Syriac::SyriacSublinearFullStop),
-            SYRIAC_SUPRALINEAR_COLON => Ok(Syriac::SyriacSupralinearColon),
-            SYRIAC_SUBLINEAR_COLON => Ok(Syriac::SyriacSublinearColon),
-            SYRIAC_HORIZONTAL_COLON => Ok(Syriac::SyriacHorizontalColon),
-            SYRIAC_COLON_SKEWED_LEFT => Ok(Syriac::SyriacColonSkewedLeft),
-            SYRIAC_COLON_SKEWED_RIGHT => Ok(Syriac::SyriacColonSkewedRight),
-            SYRIAC_SUPRALINEAR_COLON_SKEWED_LEFT => Ok(Syriac::SyriacSupralinearColonSkewedLeft),
-            SYRIAC_SUBLINEAR_COLON_SKEWED_RIGHT => Ok(Syriac::SyriacSublinearColonSkewedRight),
-            SYRIAC_CONTRACTION => Ok(Syriac::SyriacContraction),
-            SYRIAC_HARKLEAN_OBELUS => Ok(Syriac::SyriacHarkleanObelus),
-            SYRIAC_HARKLEAN_METOBELUS => Ok(Syriac::SyriacHarkleanMetobelus),
-            SYRIAC_HARKLEAN_ASTERISCUS => Ok(Syriac::SyriacHarkleanAsteriscus),
-            SYRIAC_ABBREVIATION_MARK => Ok(Syriac::SyriacAbbreviationMark),
-            SYRIAC_LETTER_ALAPH => Ok(Syriac::SyriacLetterAlaph),
-            SYRIAC_LETTER_SUPERSCRIPT_ALAPH => Ok(Syriac::SyriacLetterSuperscriptAlaph),
-            SYRIAC_LETTER_BETH => Ok(Syriac::SyriacLetterBeth),
-            SYRIAC_LETTER_GAMAL => Ok(Syriac::SyriacLetterGamal),
-            SYRIAC_LETTER_GAMAL_GARSHUNI => Ok(Syriac::SyriacLetterGamalGarshuni),
-            SYRIAC_LETTER_DALATH => Ok(Syriac::SyriacLetterDalath),
-            SYRIAC_LETTER_DOTLESS_DALATH_RISH => Ok(Syriac::SyriacLetterDotlessDalathRish),
-            SYRIAC_LETTER_HE => Ok(Syriac::SyriacLetterHe),
-            SYRIAC_LETTER_WAW => Ok(Syriac::SyriacLetterWaw),
-            SYRIAC_LETTER_ZAIN => Ok(Syriac::SyriacLetterZain),
-            SYRIAC_LETTER_HETH => Ok(Syriac::SyriacLetterHeth),
-            SYRIAC_LETTER_TETH => Ok(Syriac::SyriacLetterTeth),
-            SYRIAC_LETTER_TETH_GARSHUNI => Ok(Syriac::SyriacLetterTethGarshuni),
-            SYRIAC_LETTER_YUDH => Ok(Syriac::SyriacLetterYudh),
-            SYRIAC_LETTER_YUDH_HE => Ok(Syriac::SyriacLetterYudhHe),
-            SYRIAC_LETTER_KAPH => Ok(Syriac::SyriacLetterKaph),
-            SYRIAC_LETTER_LAMADH => Ok(Syriac::SyriacLetterLamadh),
-            SYRIAC_LETTER_MIM => Ok(Syriac::SyriacLetterMim),
-            SYRIAC_LETTER_NUN => Ok(Syriac::SyriacLetterNun),
-            SYRIAC_LETTER_SEMKATH => Ok(Syriac::SyriacLetterSemkath),
-            SYRIAC_LETTER_FINAL_SEMKATH => Ok(Syriac::SyriacLetterFinalSemkath),
-            SYRIAC_LETTER_E => Ok(Syriac::SyriacLetterE),
-            SYRIAC_LETTER_PE => Ok(Syriac::SyriacLetterPe),
-            SYRIAC_LETTER_REVERSED_PE => Ok(Syriac::SyriacLetterReversedPe),
-            SYRIAC_LETTER_SADHE => Ok(Syriac::SyriacLetterSadhe),
-            SYRIAC_LETTER_QAPH => Ok(Syriac::SyriacLetterQaph),
-            SYRIAC_LETTER_RISH => Ok(Syriac::SyriacLetterRish),
-            SYRIAC_LETTER_SHIN => Ok(Syriac::SyriacLetterShin),
-            SYRIAC_LETTER_TAW => Ok(Syriac::SyriacLetterTaw),
-            SYRIAC_LETTER_PERSIAN_BHETH => Ok(Syriac::SyriacLetterPersianBheth),
-            SYRIAC_LETTER_PERSIAN_GHAMAL => Ok(Syriac::SyriacLetterPersianGhamal),
-            SYRIAC_LETTER_PERSIAN_DHALATH => Ok(Syriac::SyriacLetterPersianDhalath),
-            SYRIAC_PTHAHA_ABOVE => Ok(Syriac::SyriacPthahaAbove),
-            SYRIAC_PTHAHA_BELOW => Ok(Syriac::SyriacPthahaBelow),
-            SYRIAC_PTHAHA_DOTTED => Ok(Syriac::SyriacPthahaDotted),
-            SYRIAC_ZQAPHA_ABOVE => Ok(Syriac::SyriacZqaphaAbove),
-            SYRIAC_ZQAPHA_BELOW => Ok(Syriac::SyriacZqaphaBelow),
-            SYRIAC_ZQAPHA_DOTTED => Ok(Syriac::SyriacZqaphaDotted),
-            SYRIAC_RBASA_ABOVE => Ok(Syriac::SyriacRbasaAbove),
-            SYRIAC_RBASA_BELOW => Ok(Syriac::SyriacRbasaBelow),
-            SYRIAC_DOTTED_ZLAMA_HORIZONTAL => Ok(Syriac::SyriacDottedZlamaHorizontal),
-            SYRIAC_DOTTED_ZLAMA_ANGULAR => Ok(Syriac::SyriacDottedZlamaAngular),
-            SYRIAC_HBASA_ABOVE => Ok(Syriac::SyriacHbasaAbove),
-            SYRIAC_HBASA_BELOW => Ok(Syriac::SyriacHbasaBelow),
-            SYRIAC_HBASA_DASH_ESASA_DOTTED => Ok(Syriac::SyriacHbasaDashEsasaDotted),
-            SYRIAC_ESASA_ABOVE => Ok(Syriac::SyriacEsasaAbove),
-            SYRIAC_ESASA_BELOW => Ok(Syriac::SyriacEsasaBelow),
-            SYRIAC_RWAHA => Ok(Syriac::SyriacRwaha),
-            SYRIAC_FEMININE_DOT => Ok(Syriac::SyriacFeminineDot),
-            SYRIAC_QUSHSHAYA => Ok(Syriac::SyriacQushshaya),
-            SYRIAC_RUKKAKHA => Ok(Syriac::SyriacRukkakha),
-            SYRIAC_TWO_VERTICAL_DOTS_ABOVE => Ok(Syriac::SyriacTwoVerticalDotsAbove),
-            SYRIAC_TWO_VERTICAL_DOTS_BELOW => Ok(Syriac::SyriacTwoVerticalDotsBelow),
-            SYRIAC_THREE_DOTS_ABOVE => Ok(Syriac::SyriacThreeDotsAbove),
-            SYRIAC_THREE_DOTS_BELOW => Ok(Syriac::SyriacThreeDotsBelow),
-            SYRIAC_OBLIQUE_LINE_ABOVE => Ok(Syriac::SyriacObliqueLineAbove),
-            SYRIAC_OBLIQUE_LINE_BELOW => Ok(Syriac::SyriacObliqueLineBelow),
-            SYRIAC_MUSIC => Ok(Syriac::SyriacMusic),
-            SYRIAC_BARREKH => Ok(Syriac::SyriacBarrekh),
-            SYRIAC_LETTER_SOGDIAN_ZHAIN => Ok(Syriac::SyriacLetterSogdianZhain),
-            SYRIAC_LETTER_SOGDIAN_KHAPH => Ok(Syriac::SyriacLetterSogdianKhaph),
+            END_OF_PARAGRAPH => Ok(Syriac::EndOfParagraph),
+            SUPRALINEAR_FULL_STOP => Ok(Syriac::SupralinearFullStop),
+            SUBLINEAR_FULL_STOP => Ok(Syriac::SublinearFullStop),
+            SUPRALINEAR_COLON => Ok(Syriac::SupralinearColon),
+            SUBLINEAR_COLON => Ok(Syriac::SublinearColon),
+            HORIZONTAL_COLON => Ok(Syriac::HorizontalColon),
+            COLON_SKEWED_LEFT => Ok(Syriac::ColonSkewedLeft),
+            COLON_SKEWED_RIGHT => Ok(Syriac::ColonSkewedRight),
+            SUPRALINEAR_COLON_SKEWED_LEFT => Ok(Syriac::SupralinearColonSkewedLeft),
+            SUBLINEAR_COLON_SKEWED_RIGHT => Ok(Syriac::SublinearColonSkewedRight),
+            CONTRACTION => Ok(Syriac::Contraction),
+            HARKLEAN_OBELUS => Ok(Syriac::HarkleanObelus),
+            HARKLEAN_METOBELUS => Ok(Syriac::HarkleanMetobelus),
+            HARKLEAN_ASTERISCUS => Ok(Syriac::HarkleanAsteriscus),
+            ABBREVIATION_MARK => Ok(Syriac::AbbreviationMark),
+            LETTER_ALAPH => Ok(Syriac::LetterAlaph),
+            LETTER_SUPERSCRIPT_ALAPH => Ok(Syriac::LetterSuperscriptAlaph),
+            LETTER_BETH => Ok(Syriac::LetterBeth),
+            LETTER_GAMAL => Ok(Syriac::LetterGamal),
+            LETTER_GAMAL_GARSHUNI => Ok(Syriac::LetterGamalGarshuni),
+            LETTER_DALATH => Ok(Syriac::LetterDalath),
+            LETTER_DOTLESS_DALATH_RISH => Ok(Syriac::LetterDotlessDalathRish),
+            LETTER_HE => Ok(Syriac::LetterHe),
+            LETTER_WAW => Ok(Syriac::LetterWaw),
+            LETTER_ZAIN => Ok(Syriac::LetterZain),
+            LETTER_HETH => Ok(Syriac::LetterHeth),
+            LETTER_TETH => Ok(Syriac::LetterTeth),
+            LETTER_TETH_GARSHUNI => Ok(Syriac::LetterTethGarshuni),
+            LETTER_YUDH => Ok(Syriac::LetterYudh),
+            LETTER_YUDH_HE => Ok(Syriac::LetterYudhHe),
+            LETTER_KAPH => Ok(Syriac::LetterKaph),
+            LETTER_LAMADH => Ok(Syriac::LetterLamadh),
+            LETTER_MIM => Ok(Syriac::LetterMim),
+            LETTER_NUN => Ok(Syriac::LetterNun),
+            LETTER_SEMKATH => Ok(Syriac::LetterSemkath),
+            LETTER_FINAL_SEMKATH => Ok(Syriac::LetterFinalSemkath),
+            LETTER_E => Ok(Syriac::LetterE),
+            LETTER_PE => Ok(Syriac::LetterPe),
+            LETTER_REVERSED_PE => Ok(Syriac::LetterReversedPe),
+            LETTER_SADHE => Ok(Syriac::LetterSadhe),
+            LETTER_QAPH => Ok(Syriac::LetterQaph),
+            LETTER_RISH => Ok(Syriac::LetterRish),
+            LETTER_SHIN => Ok(Syriac::LetterShin),
+            LETTER_TAW => Ok(Syriac::LetterTaw),
+            LETTER_PERSIAN_BHETH => Ok(Syriac::LetterPersianBheth),
+            LETTER_PERSIAN_GHAMAL => Ok(Syriac::LetterPersianGhamal),
+            LETTER_PERSIAN_DHALATH => Ok(Syriac::LetterPersianDhalath),
+            PTHAHA_ABOVE => Ok(Syriac::PthahaAbove),
+            PTHAHA_BELOW => Ok(Syriac::PthahaBelow),
+            PTHAHA_DOTTED => Ok(Syriac::PthahaDotted),
+            ZQAPHA_ABOVE => Ok(Syriac::ZqaphaAbove),
+            ZQAPHA_BELOW => Ok(Syriac::ZqaphaBelow),
+            ZQAPHA_DOTTED => Ok(Syriac::ZqaphaDotted),
+            RBASA_ABOVE => Ok(Syriac::RbasaAbove),
+            RBASA_BELOW => Ok(Syriac::RbasaBelow),
+            DOTTED_ZLAMA_HORIZONTAL => Ok(Syriac::DottedZlamaHorizontal),
+            DOTTED_ZLAMA_ANGULAR => Ok(Syriac::DottedZlamaAngular),
+            HBASA_ABOVE => Ok(Syriac::HbasaAbove),
+            HBASA_BELOW => Ok(Syriac::HbasaBelow),
+            HBASA_DASH_ESASA_DOTTED => Ok(Syriac::HbasaDashEsasaDotted),
+            ESASA_ABOVE => Ok(Syriac::EsasaAbove),
+            ESASA_BELOW => Ok(Syriac::EsasaBelow),
+            RWAHA => Ok(Syriac::Rwaha),
+            FEMININE_DOT => Ok(Syriac::FeminineDot),
+            QUSHSHAYA => Ok(Syriac::Qushshaya),
+            RUKKAKHA => Ok(Syriac::Rukkakha),
+            TWO_VERTICAL_DOTS_ABOVE => Ok(Syriac::TwoVerticalDotsAbove),
+            TWO_VERTICAL_DOTS_BELOW => Ok(Syriac::TwoVerticalDotsBelow),
+            THREE_DOTS_ABOVE => Ok(Syriac::ThreeDotsAbove),
+            THREE_DOTS_BELOW => Ok(Syriac::ThreeDotsBelow),
+            OBLIQUE_LINE_ABOVE => Ok(Syriac::ObliqueLineAbove),
+            OBLIQUE_LINE_BELOW => Ok(Syriac::ObliqueLineBelow),
+            MUSIC => Ok(Syriac::Music),
+            BARREKH => Ok(Syriac::Barrekh),
+            LETTER_SOGDIAN_ZHAIN => Ok(Syriac::LetterSogdianZhain),
+            LETTER_SOGDIAN_KHAPH => Ok(Syriac::LetterSogdianKhaph),
             _ => Err(()),
         }
     }
@@ -526,90 +526,90 @@ impl Iterator for Syriac {
 }
 
 impl Syriac {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Syriac::SyriacEndOfParagraph
+        Syriac::EndOfParagraph
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Syriac::SyriacEndOfParagraph => "syriac end of paragraph",
-            Syriac::SyriacSupralinearFullStop => "syriac supralinear full stop",
-            Syriac::SyriacSublinearFullStop => "syriac sublinear full stop",
-            Syriac::SyriacSupralinearColon => "syriac supralinear colon",
-            Syriac::SyriacSublinearColon => "syriac sublinear colon",
-            Syriac::SyriacHorizontalColon => "syriac horizontal colon",
-            Syriac::SyriacColonSkewedLeft => "syriac colon skewed left",
-            Syriac::SyriacColonSkewedRight => "syriac colon skewed right",
-            Syriac::SyriacSupralinearColonSkewedLeft => "syriac supralinear colon skewed left",
-            Syriac::SyriacSublinearColonSkewedRight => "syriac sublinear colon skewed right",
-            Syriac::SyriacContraction => "syriac contraction",
-            Syriac::SyriacHarkleanObelus => "syriac harklean obelus",
-            Syriac::SyriacHarkleanMetobelus => "syriac harklean metobelus",
-            Syriac::SyriacHarkleanAsteriscus => "syriac harklean asteriscus",
-            Syriac::SyriacAbbreviationMark => "syriac abbreviation mark",
-            Syriac::SyriacLetterAlaph => "syriac letter alaph",
-            Syriac::SyriacLetterSuperscriptAlaph => "syriac letter superscript alaph",
-            Syriac::SyriacLetterBeth => "syriac letter beth",
-            Syriac::SyriacLetterGamal => "syriac letter gamal",
-            Syriac::SyriacLetterGamalGarshuni => "syriac letter gamal garshuni",
-            Syriac::SyriacLetterDalath => "syriac letter dalath",
-            Syriac::SyriacLetterDotlessDalathRish => "syriac letter dotless dalath rish",
-            Syriac::SyriacLetterHe => "syriac letter he",
-            Syriac::SyriacLetterWaw => "syriac letter waw",
-            Syriac::SyriacLetterZain => "syriac letter zain",
-            Syriac::SyriacLetterHeth => "syriac letter heth",
-            Syriac::SyriacLetterTeth => "syriac letter teth",
-            Syriac::SyriacLetterTethGarshuni => "syriac letter teth garshuni",
-            Syriac::SyriacLetterYudh => "syriac letter yudh",
-            Syriac::SyriacLetterYudhHe => "syriac letter yudh he",
-            Syriac::SyriacLetterKaph => "syriac letter kaph",
-            Syriac::SyriacLetterLamadh => "syriac letter lamadh",
-            Syriac::SyriacLetterMim => "syriac letter mim",
-            Syriac::SyriacLetterNun => "syriac letter nun",
-            Syriac::SyriacLetterSemkath => "syriac letter semkath",
-            Syriac::SyriacLetterFinalSemkath => "syriac letter final semkath",
-            Syriac::SyriacLetterE => "syriac letter e",
-            Syriac::SyriacLetterPe => "syriac letter pe",
-            Syriac::SyriacLetterReversedPe => "syriac letter reversed pe",
-            Syriac::SyriacLetterSadhe => "syriac letter sadhe",
-            Syriac::SyriacLetterQaph => "syriac letter qaph",
-            Syriac::SyriacLetterRish => "syriac letter rish",
-            Syriac::SyriacLetterShin => "syriac letter shin",
-            Syriac::SyriacLetterTaw => "syriac letter taw",
-            Syriac::SyriacLetterPersianBheth => "syriac letter persian bheth",
-            Syriac::SyriacLetterPersianGhamal => "syriac letter persian ghamal",
-            Syriac::SyriacLetterPersianDhalath => "syriac letter persian dhalath",
-            Syriac::SyriacPthahaAbove => "syriac pthaha above",
-            Syriac::SyriacPthahaBelow => "syriac pthaha below",
-            Syriac::SyriacPthahaDotted => "syriac pthaha dotted",
-            Syriac::SyriacZqaphaAbove => "syriac zqapha above",
-            Syriac::SyriacZqaphaBelow => "syriac zqapha below",
-            Syriac::SyriacZqaphaDotted => "syriac zqapha dotted",
-            Syriac::SyriacRbasaAbove => "syriac rbasa above",
-            Syriac::SyriacRbasaBelow => "syriac rbasa below",
-            Syriac::SyriacDottedZlamaHorizontal => "syriac dotted zlama horizontal",
-            Syriac::SyriacDottedZlamaAngular => "syriac dotted zlama angular",
-            Syriac::SyriacHbasaAbove => "syriac hbasa above",
-            Syriac::SyriacHbasaBelow => "syriac hbasa below",
-            Syriac::SyriacHbasaDashEsasaDotted => "syriac hbasa-esasa dotted",
-            Syriac::SyriacEsasaAbove => "syriac esasa above",
-            Syriac::SyriacEsasaBelow => "syriac esasa below",
-            Syriac::SyriacRwaha => "syriac rwaha",
-            Syriac::SyriacFeminineDot => "syriac feminine dot",
-            Syriac::SyriacQushshaya => "syriac qushshaya",
-            Syriac::SyriacRukkakha => "syriac rukkakha",
-            Syriac::SyriacTwoVerticalDotsAbove => "syriac two vertical dots above",
-            Syriac::SyriacTwoVerticalDotsBelow => "syriac two vertical dots below",
-            Syriac::SyriacThreeDotsAbove => "syriac three dots above",
-            Syriac::SyriacThreeDotsBelow => "syriac three dots below",
-            Syriac::SyriacObliqueLineAbove => "syriac oblique line above",
-            Syriac::SyriacObliqueLineBelow => "syriac oblique line below",
-            Syriac::SyriacMusic => "syriac music",
-            Syriac::SyriacBarrekh => "syriac barrekh",
-            Syriac::SyriacLetterSogdianZhain => "syriac letter sogdian zhain",
-            Syriac::SyriacLetterSogdianKhaph => "syriac letter sogdian khaph",
+            Syriac::EndOfParagraph => "syriac end of paragraph",
+            Syriac::SupralinearFullStop => "syriac supralinear full stop",
+            Syriac::SublinearFullStop => "syriac sublinear full stop",
+            Syriac::SupralinearColon => "syriac supralinear colon",
+            Syriac::SublinearColon => "syriac sublinear colon",
+            Syriac::HorizontalColon => "syriac horizontal colon",
+            Syriac::ColonSkewedLeft => "syriac colon skewed left",
+            Syriac::ColonSkewedRight => "syriac colon skewed right",
+            Syriac::SupralinearColonSkewedLeft => "syriac supralinear colon skewed left",
+            Syriac::SublinearColonSkewedRight => "syriac sublinear colon skewed right",
+            Syriac::Contraction => "syriac contraction",
+            Syriac::HarkleanObelus => "syriac harklean obelus",
+            Syriac::HarkleanMetobelus => "syriac harklean metobelus",
+            Syriac::HarkleanAsteriscus => "syriac harklean asteriscus",
+            Syriac::AbbreviationMark => "syriac abbreviation mark",
+            Syriac::LetterAlaph => "syriac letter alaph",
+            Syriac::LetterSuperscriptAlaph => "syriac letter superscript alaph",
+            Syriac::LetterBeth => "syriac letter beth",
+            Syriac::LetterGamal => "syriac letter gamal",
+            Syriac::LetterGamalGarshuni => "syriac letter gamal garshuni",
+            Syriac::LetterDalath => "syriac letter dalath",
+            Syriac::LetterDotlessDalathRish => "syriac letter dotless dalath rish",
+            Syriac::LetterHe => "syriac letter he",
+            Syriac::LetterWaw => "syriac letter waw",
+            Syriac::LetterZain => "syriac letter zain",
+            Syriac::LetterHeth => "syriac letter heth",
+            Syriac::LetterTeth => "syriac letter teth",
+            Syriac::LetterTethGarshuni => "syriac letter teth garshuni",
+            Syriac::LetterYudh => "syriac letter yudh",
+            Syriac::LetterYudhHe => "syriac letter yudh he",
+            Syriac::LetterKaph => "syriac letter kaph",
+            Syriac::LetterLamadh => "syriac letter lamadh",
+            Syriac::LetterMim => "syriac letter mim",
+            Syriac::LetterNun => "syriac letter nun",
+            Syriac::LetterSemkath => "syriac letter semkath",
+            Syriac::LetterFinalSemkath => "syriac letter final semkath",
+            Syriac::LetterE => "syriac letter e",
+            Syriac::LetterPe => "syriac letter pe",
+            Syriac::LetterReversedPe => "syriac letter reversed pe",
+            Syriac::LetterSadhe => "syriac letter sadhe",
+            Syriac::LetterQaph => "syriac letter qaph",
+            Syriac::LetterRish => "syriac letter rish",
+            Syriac::LetterShin => "syriac letter shin",
+            Syriac::LetterTaw => "syriac letter taw",
+            Syriac::LetterPersianBheth => "syriac letter persian bheth",
+            Syriac::LetterPersianGhamal => "syriac letter persian ghamal",
+            Syriac::LetterPersianDhalath => "syriac letter persian dhalath",
+            Syriac::PthahaAbove => "syriac pthaha above",
+            Syriac::PthahaBelow => "syriac pthaha below",
+            Syriac::PthahaDotted => "syriac pthaha dotted",
+            Syriac::ZqaphaAbove => "syriac zqapha above",
+            Syriac::ZqaphaBelow => "syriac zqapha below",
+            Syriac::ZqaphaDotted => "syriac zqapha dotted",
+            Syriac::RbasaAbove => "syriac rbasa above",
+            Syriac::RbasaBelow => "syriac rbasa below",
+            Syriac::DottedZlamaHorizontal => "syriac dotted zlama horizontal",
+            Syriac::DottedZlamaAngular => "syriac dotted zlama angular",
+            Syriac::HbasaAbove => "syriac hbasa above",
+            Syriac::HbasaBelow => "syriac hbasa below",
+            Syriac::HbasaDashEsasaDotted => "syriac hbasa-esasa dotted",
+            Syriac::EsasaAbove => "syriac esasa above",
+            Syriac::EsasaBelow => "syriac esasa below",
+            Syriac::Rwaha => "syriac rwaha",
+            Syriac::FeminineDot => "syriac feminine dot",
+            Syriac::Qushshaya => "syriac qushshaya",
+            Syriac::Rukkakha => "syriac rukkakha",
+            Syriac::TwoVerticalDotsAbove => "syriac two vertical dots above",
+            Syriac::TwoVerticalDotsBelow => "syriac two vertical dots below",
+            Syriac::ThreeDotsAbove => "syriac three dots above",
+            Syriac::ThreeDotsBelow => "syriac three dots below",
+            Syriac::ObliqueLineAbove => "syriac oblique line above",
+            Syriac::ObliqueLineBelow => "syriac oblique line below",
+            Syriac::Music => "syriac music",
+            Syriac::Barrekh => "syriac barrekh",
+            Syriac::LetterSogdianZhain => "syriac letter sogdian zhain",
+            Syriac::LetterSogdianKhaph => "syriac letter sogdian khaph",
         }
     }
 }

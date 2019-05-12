@@ -9,219 +9,219 @@
 /// 𐳭 𐳮 𐳯 𐳰 𐳱 𐳲 𐳺 𐳻 𐳼 𐳽 𐳾
 pub mod constants {
     /// \u{10c80}: '𐲀'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_A: char = '𐲀';
+    pub const CAPITAL_LETTER_A: char = '𐲀';
     /// \u{10c81}: '𐲁'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_AA: char = '𐲁';
+    pub const CAPITAL_LETTER_AA: char = '𐲁';
     /// \u{10c82}: '𐲂'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EB: char = '𐲂';
+    pub const CAPITAL_LETTER_EB: char = '𐲂';
     /// \u{10c83}: '𐲃'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_AMB: char = '𐲃';
+    pub const CAPITAL_LETTER_AMB: char = '𐲃';
     /// \u{10c84}: '𐲄'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EC: char = '𐲄';
+    pub const CAPITAL_LETTER_EC: char = '𐲄';
     /// \u{10c85}: '𐲅'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ENC: char = '𐲅';
+    pub const CAPITAL_LETTER_ENC: char = '𐲅';
     /// \u{10c86}: '𐲆'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ECS: char = '𐲆';
+    pub const CAPITAL_LETTER_ECS: char = '𐲆';
     /// \u{10c87}: '𐲇'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ED: char = '𐲇';
+    pub const CAPITAL_LETTER_ED: char = '𐲇';
     /// \u{10c88}: '𐲈'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_AND: char = '𐲈';
+    pub const CAPITAL_LETTER_AND: char = '𐲈';
     /// \u{10c89}: '𐲉'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_E: char = '𐲉';
+    pub const CAPITAL_LETTER_E: char = '𐲉';
     /// \u{10c8a}: '𐲊'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_CLOSE_E: char = '𐲊';
+    pub const CAPITAL_LETTER_CLOSE_E: char = '𐲊';
     /// \u{10c8b}: '𐲋'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EE: char = '𐲋';
+    pub const CAPITAL_LETTER_EE: char = '𐲋';
     /// \u{10c8c}: '𐲌'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EF: char = '𐲌';
+    pub const CAPITAL_LETTER_EF: char = '𐲌';
     /// \u{10c8d}: '𐲍'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EG: char = '𐲍';
+    pub const CAPITAL_LETTER_EG: char = '𐲍';
     /// \u{10c8e}: '𐲎'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EGY: char = '𐲎';
+    pub const CAPITAL_LETTER_EGY: char = '𐲎';
     /// \u{10c8f}: '𐲏'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EH: char = '𐲏';
+    pub const CAPITAL_LETTER_EH: char = '𐲏';
     /// \u{10c90}: '𐲐'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_I: char = '𐲐';
+    pub const CAPITAL_LETTER_I: char = '𐲐';
     /// \u{10c91}: '𐲑'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_II: char = '𐲑';
+    pub const CAPITAL_LETTER_II: char = '𐲑';
     /// \u{10c92}: '𐲒'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EJ: char = '𐲒';
+    pub const CAPITAL_LETTER_EJ: char = '𐲒';
     /// \u{10c93}: '𐲓'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EK: char = '𐲓';
+    pub const CAPITAL_LETTER_EK: char = '𐲓';
     /// \u{10c94}: '𐲔'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_AK: char = '𐲔';
+    pub const CAPITAL_LETTER_AK: char = '𐲔';
     /// \u{10c95}: '𐲕'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_UNK: char = '𐲕';
+    pub const CAPITAL_LETTER_UNK: char = '𐲕';
     /// \u{10c96}: '𐲖'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EL: char = '𐲖';
+    pub const CAPITAL_LETTER_EL: char = '𐲖';
     /// \u{10c97}: '𐲗'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ELY: char = '𐲗';
+    pub const CAPITAL_LETTER_ELY: char = '𐲗';
     /// \u{10c98}: '𐲘'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EM: char = '𐲘';
+    pub const CAPITAL_LETTER_EM: char = '𐲘';
     /// \u{10c99}: '𐲙'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EN: char = '𐲙';
+    pub const CAPITAL_LETTER_EN: char = '𐲙';
     /// \u{10c9a}: '𐲚'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ENY: char = '𐲚';
+    pub const CAPITAL_LETTER_ENY: char = '𐲚';
     /// \u{10c9b}: '𐲛'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_O: char = '𐲛';
+    pub const CAPITAL_LETTER_O: char = '𐲛';
     /// \u{10c9c}: '𐲜'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_OO: char = '𐲜';
+    pub const CAPITAL_LETTER_OO: char = '𐲜';
     /// \u{10c9d}: '𐲝'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_NIKOLSBURG_OE: char = '𐲝';
+    pub const CAPITAL_LETTER_NIKOLSBURG_OE: char = '𐲝';
     /// \u{10c9e}: '𐲞'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_RUDIMENTA_OE: char = '𐲞';
+    pub const CAPITAL_LETTER_RUDIMENTA_OE: char = '𐲞';
     /// \u{10c9f}: '𐲟'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_OEE: char = '𐲟';
+    pub const CAPITAL_LETTER_OEE: char = '𐲟';
     /// \u{10ca0}: '𐲠'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EP: char = '𐲠';
+    pub const CAPITAL_LETTER_EP: char = '𐲠';
     /// \u{10ca1}: '𐲡'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EMP: char = '𐲡';
+    pub const CAPITAL_LETTER_EMP: char = '𐲡';
     /// \u{10ca2}: '𐲢'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ER: char = '𐲢';
+    pub const CAPITAL_LETTER_ER: char = '𐲢';
     /// \u{10ca3}: '𐲣'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_SHORT_ER: char = '𐲣';
+    pub const CAPITAL_LETTER_SHORT_ER: char = '𐲣';
     /// \u{10ca4}: '𐲤'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ES: char = '𐲤';
+    pub const CAPITAL_LETTER_ES: char = '𐲤';
     /// \u{10ca5}: '𐲥'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ESZ: char = '𐲥';
+    pub const CAPITAL_LETTER_ESZ: char = '𐲥';
     /// \u{10ca6}: '𐲦'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ET: char = '𐲦';
+    pub const CAPITAL_LETTER_ET: char = '𐲦';
     /// \u{10ca7}: '𐲧'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ENT: char = '𐲧';
+    pub const CAPITAL_LETTER_ENT: char = '𐲧';
     /// \u{10ca8}: '𐲨'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ETY: char = '𐲨';
+    pub const CAPITAL_LETTER_ETY: char = '𐲨';
     /// \u{10ca9}: '𐲩'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ECH: char = '𐲩';
+    pub const CAPITAL_LETTER_ECH: char = '𐲩';
     /// \u{10caa}: '𐲪'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_U: char = '𐲪';
+    pub const CAPITAL_LETTER_U: char = '𐲪';
     /// \u{10cab}: '𐲫'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_UU: char = '𐲫';
+    pub const CAPITAL_LETTER_UU: char = '𐲫';
     /// \u{10cac}: '𐲬'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_NIKOLSBURG_UE: char = '𐲬';
+    pub const CAPITAL_LETTER_NIKOLSBURG_UE: char = '𐲬';
     /// \u{10cad}: '𐲭'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_RUDIMENTA_UE: char = '𐲭';
+    pub const CAPITAL_LETTER_RUDIMENTA_UE: char = '𐲭';
     /// \u{10cae}: '𐲮'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EV: char = '𐲮';
+    pub const CAPITAL_LETTER_EV: char = '𐲮';
     /// \u{10caf}: '𐲯'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EZ: char = '𐲯';
+    pub const CAPITAL_LETTER_EZ: char = '𐲯';
     /// \u{10cb0}: '𐲰'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_EZS: char = '𐲰';
+    pub const CAPITAL_LETTER_EZS: char = '𐲰';
     /// \u{10cb1}: '𐲱'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_ENT_DASH_SHAPED_SIGN: char = '𐲱';
+    pub const CAPITAL_LETTER_ENT_DASH_SHAPED_SIGN: char = '𐲱';
     /// \u{10cb2}: '𐲲'
-    pub const OLD_HUNGARIAN_CAPITAL_LETTER_US: char = '𐲲';
+    pub const CAPITAL_LETTER_US: char = '𐲲';
     /// \u{10cc0}: '𐳀'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_A: char = '𐳀';
+    pub const SMALL_LETTER_A: char = '𐳀';
     /// \u{10cc1}: '𐳁'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_AA: char = '𐳁';
+    pub const SMALL_LETTER_AA: char = '𐳁';
     /// \u{10cc2}: '𐳂'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EB: char = '𐳂';
+    pub const SMALL_LETTER_EB: char = '𐳂';
     /// \u{10cc3}: '𐳃'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_AMB: char = '𐳃';
+    pub const SMALL_LETTER_AMB: char = '𐳃';
     /// \u{10cc4}: '𐳄'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EC: char = '𐳄';
+    pub const SMALL_LETTER_EC: char = '𐳄';
     /// \u{10cc5}: '𐳅'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ENC: char = '𐳅';
+    pub const SMALL_LETTER_ENC: char = '𐳅';
     /// \u{10cc6}: '𐳆'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ECS: char = '𐳆';
+    pub const SMALL_LETTER_ECS: char = '𐳆';
     /// \u{10cc7}: '𐳇'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ED: char = '𐳇';
+    pub const SMALL_LETTER_ED: char = '𐳇';
     /// \u{10cc8}: '𐳈'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_AND: char = '𐳈';
+    pub const SMALL_LETTER_AND: char = '𐳈';
     /// \u{10cc9}: '𐳉'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_E: char = '𐳉';
+    pub const SMALL_LETTER_E: char = '𐳉';
     /// \u{10cca}: '𐳊'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_CLOSE_E: char = '𐳊';
+    pub const SMALL_LETTER_CLOSE_E: char = '𐳊';
     /// \u{10ccb}: '𐳋'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EE: char = '𐳋';
+    pub const SMALL_LETTER_EE: char = '𐳋';
     /// \u{10ccc}: '𐳌'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EF: char = '𐳌';
+    pub const SMALL_LETTER_EF: char = '𐳌';
     /// \u{10ccd}: '𐳍'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EG: char = '𐳍';
+    pub const SMALL_LETTER_EG: char = '𐳍';
     /// \u{10cce}: '𐳎'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EGY: char = '𐳎';
+    pub const SMALL_LETTER_EGY: char = '𐳎';
     /// \u{10ccf}: '𐳏'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EH: char = '𐳏';
+    pub const SMALL_LETTER_EH: char = '𐳏';
     /// \u{10cd0}: '𐳐'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_I: char = '𐳐';
+    pub const SMALL_LETTER_I: char = '𐳐';
     /// \u{10cd1}: '𐳑'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_II: char = '𐳑';
+    pub const SMALL_LETTER_II: char = '𐳑';
     /// \u{10cd2}: '𐳒'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EJ: char = '𐳒';
+    pub const SMALL_LETTER_EJ: char = '𐳒';
     /// \u{10cd3}: '𐳓'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EK: char = '𐳓';
+    pub const SMALL_LETTER_EK: char = '𐳓';
     /// \u{10cd4}: '𐳔'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_AK: char = '𐳔';
+    pub const SMALL_LETTER_AK: char = '𐳔';
     /// \u{10cd5}: '𐳕'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_UNK: char = '𐳕';
+    pub const SMALL_LETTER_UNK: char = '𐳕';
     /// \u{10cd6}: '𐳖'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EL: char = '𐳖';
+    pub const SMALL_LETTER_EL: char = '𐳖';
     /// \u{10cd7}: '𐳗'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ELY: char = '𐳗';
+    pub const SMALL_LETTER_ELY: char = '𐳗';
     /// \u{10cd8}: '𐳘'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EM: char = '𐳘';
+    pub const SMALL_LETTER_EM: char = '𐳘';
     /// \u{10cd9}: '𐳙'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EN: char = '𐳙';
+    pub const SMALL_LETTER_EN: char = '𐳙';
     /// \u{10cda}: '𐳚'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ENY: char = '𐳚';
+    pub const SMALL_LETTER_ENY: char = '𐳚';
     /// \u{10cdb}: '𐳛'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_O: char = '𐳛';
+    pub const SMALL_LETTER_O: char = '𐳛';
     /// \u{10cdc}: '𐳜'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_OO: char = '𐳜';
+    pub const SMALL_LETTER_OO: char = '𐳜';
     /// \u{10cdd}: '𐳝'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_NIKOLSBURG_OE: char = '𐳝';
+    pub const SMALL_LETTER_NIKOLSBURG_OE: char = '𐳝';
     /// \u{10cde}: '𐳞'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_RUDIMENTA_OE: char = '𐳞';
+    pub const SMALL_LETTER_RUDIMENTA_OE: char = '𐳞';
     /// \u{10cdf}: '𐳟'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_OEE: char = '𐳟';
+    pub const SMALL_LETTER_OEE: char = '𐳟';
     /// \u{10ce0}: '𐳠'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EP: char = '𐳠';
+    pub const SMALL_LETTER_EP: char = '𐳠';
     /// \u{10ce1}: '𐳡'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EMP: char = '𐳡';
+    pub const SMALL_LETTER_EMP: char = '𐳡';
     /// \u{10ce2}: '𐳢'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ER: char = '𐳢';
+    pub const SMALL_LETTER_ER: char = '𐳢';
     /// \u{10ce3}: '𐳣'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_SHORT_ER: char = '𐳣';
+    pub const SMALL_LETTER_SHORT_ER: char = '𐳣';
     /// \u{10ce4}: '𐳤'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ES: char = '𐳤';
+    pub const SMALL_LETTER_ES: char = '𐳤';
     /// \u{10ce5}: '𐳥'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ESZ: char = '𐳥';
+    pub const SMALL_LETTER_ESZ: char = '𐳥';
     /// \u{10ce6}: '𐳦'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ET: char = '𐳦';
+    pub const SMALL_LETTER_ET: char = '𐳦';
     /// \u{10ce7}: '𐳧'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ENT: char = '𐳧';
+    pub const SMALL_LETTER_ENT: char = '𐳧';
     /// \u{10ce8}: '𐳨'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ETY: char = '𐳨';
+    pub const SMALL_LETTER_ETY: char = '𐳨';
     /// \u{10ce9}: '𐳩'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ECH: char = '𐳩';
+    pub const SMALL_LETTER_ECH: char = '𐳩';
     /// \u{10cea}: '𐳪'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_U: char = '𐳪';
+    pub const SMALL_LETTER_U: char = '𐳪';
     /// \u{10ceb}: '𐳫'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_UU: char = '𐳫';
+    pub const SMALL_LETTER_UU: char = '𐳫';
     /// \u{10cec}: '𐳬'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_NIKOLSBURG_UE: char = '𐳬';
+    pub const SMALL_LETTER_NIKOLSBURG_UE: char = '𐳬';
     /// \u{10ced}: '𐳭'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_RUDIMENTA_UE: char = '𐳭';
+    pub const SMALL_LETTER_RUDIMENTA_UE: char = '𐳭';
     /// \u{10cee}: '𐳮'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EV: char = '𐳮';
+    pub const SMALL_LETTER_EV: char = '𐳮';
     /// \u{10cef}: '𐳯'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EZ: char = '𐳯';
+    pub const SMALL_LETTER_EZ: char = '𐳯';
     /// \u{10cf0}: '𐳰'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_EZS: char = '𐳰';
+    pub const SMALL_LETTER_EZS: char = '𐳰';
     /// \u{10cf1}: '𐳱'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_ENT_DASH_SHAPED_SIGN: char = '𐳱';
+    pub const SMALL_LETTER_ENT_DASH_SHAPED_SIGN: char = '𐳱';
     /// \u{10cf2}: '𐳲'
-    pub const OLD_HUNGARIAN_SMALL_LETTER_US: char = '𐳲';
+    pub const SMALL_LETTER_US: char = '𐳲';
     /// \u{10cfa}: '𐳺'
-    pub const OLD_HUNGARIAN_NUMBER_ONE: char = '𐳺';
+    pub const NUMBER_ONE: char = '𐳺';
     /// \u{10cfb}: '𐳻'
-    pub const OLD_HUNGARIAN_NUMBER_FIVE: char = '𐳻';
+    pub const NUMBER_FIVE: char = '𐳻';
     /// \u{10cfc}: '𐳼'
-    pub const OLD_HUNGARIAN_NUMBER_TEN: char = '𐳼';
+    pub const NUMBER_TEN: char = '𐳼';
     /// \u{10cfd}: '𐳽'
-    pub const OLD_HUNGARIAN_NUMBER_FIFTY: char = '𐳽';
+    pub const NUMBER_FIFTY: char = '𐳽';
     /// \u{10cfe}: '𐳾'
-    pub const OLD_HUNGARIAN_NUMBER_ONE_HUNDRED: char = '𐳾';
+    pub const NUMBER_ONE_HUNDRED: char = '𐳾';
 }
 
 /// \u{10c80} → \u{10cff}\
@@ -236,332 +236,332 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OldHungarian {
     /// \u{10c80}: '𐲀'
-    OldHungarianCapitalLetterA,
+    CapitalLetterA,
     /// \u{10c81}: '𐲁'
-    OldHungarianCapitalLetterAa,
+    CapitalLetterAa,
     /// \u{10c82}: '𐲂'
-    OldHungarianCapitalLetterEb,
+    CapitalLetterEb,
     /// \u{10c83}: '𐲃'
-    OldHungarianCapitalLetterAmb,
+    CapitalLetterAmb,
     /// \u{10c84}: '𐲄'
-    OldHungarianCapitalLetterEc,
+    CapitalLetterEc,
     /// \u{10c85}: '𐲅'
-    OldHungarianCapitalLetterEnc,
+    CapitalLetterEnc,
     /// \u{10c86}: '𐲆'
-    OldHungarianCapitalLetterEcs,
+    CapitalLetterEcs,
     /// \u{10c87}: '𐲇'
-    OldHungarianCapitalLetterEd,
+    CapitalLetterEd,
     /// \u{10c88}: '𐲈'
-    OldHungarianCapitalLetterAnd,
+    CapitalLetterAnd,
     /// \u{10c89}: '𐲉'
-    OldHungarianCapitalLetterE,
+    CapitalLetterE,
     /// \u{10c8a}: '𐲊'
-    OldHungarianCapitalLetterCloseE,
+    CapitalLetterCloseE,
     /// \u{10c8b}: '𐲋'
-    OldHungarianCapitalLetterEe,
+    CapitalLetterEe,
     /// \u{10c8c}: '𐲌'
-    OldHungarianCapitalLetterEf,
+    CapitalLetterEf,
     /// \u{10c8d}: '𐲍'
-    OldHungarianCapitalLetterEg,
+    CapitalLetterEg,
     /// \u{10c8e}: '𐲎'
-    OldHungarianCapitalLetterEgy,
+    CapitalLetterEgy,
     /// \u{10c8f}: '𐲏'
-    OldHungarianCapitalLetterEh,
+    CapitalLetterEh,
     /// \u{10c90}: '𐲐'
-    OldHungarianCapitalLetterI,
+    CapitalLetterI,
     /// \u{10c91}: '𐲑'
-    OldHungarianCapitalLetterIi,
+    CapitalLetterIi,
     /// \u{10c92}: '𐲒'
-    OldHungarianCapitalLetterEj,
+    CapitalLetterEj,
     /// \u{10c93}: '𐲓'
-    OldHungarianCapitalLetterEk,
+    CapitalLetterEk,
     /// \u{10c94}: '𐲔'
-    OldHungarianCapitalLetterAk,
+    CapitalLetterAk,
     /// \u{10c95}: '𐲕'
-    OldHungarianCapitalLetterUnk,
+    CapitalLetterUnk,
     /// \u{10c96}: '𐲖'
-    OldHungarianCapitalLetterEl,
+    CapitalLetterEl,
     /// \u{10c97}: '𐲗'
-    OldHungarianCapitalLetterEly,
+    CapitalLetterEly,
     /// \u{10c98}: '𐲘'
-    OldHungarianCapitalLetterEm,
+    CapitalLetterEm,
     /// \u{10c99}: '𐲙'
-    OldHungarianCapitalLetterEn,
+    CapitalLetterEn,
     /// \u{10c9a}: '𐲚'
-    OldHungarianCapitalLetterEny,
+    CapitalLetterEny,
     /// \u{10c9b}: '𐲛'
-    OldHungarianCapitalLetterO,
+    CapitalLetterO,
     /// \u{10c9c}: '𐲜'
-    OldHungarianCapitalLetterOo,
+    CapitalLetterOo,
     /// \u{10c9d}: '𐲝'
-    OldHungarianCapitalLetterNikolsburgOe,
+    CapitalLetterNikolsburgOe,
     /// \u{10c9e}: '𐲞'
-    OldHungarianCapitalLetterRudimentaOe,
+    CapitalLetterRudimentaOe,
     /// \u{10c9f}: '𐲟'
-    OldHungarianCapitalLetterOee,
+    CapitalLetterOee,
     /// \u{10ca0}: '𐲠'
-    OldHungarianCapitalLetterEp,
+    CapitalLetterEp,
     /// \u{10ca1}: '𐲡'
-    OldHungarianCapitalLetterEmp,
+    CapitalLetterEmp,
     /// \u{10ca2}: '𐲢'
-    OldHungarianCapitalLetterEr,
+    CapitalLetterEr,
     /// \u{10ca3}: '𐲣'
-    OldHungarianCapitalLetterShortEr,
+    CapitalLetterShortEr,
     /// \u{10ca4}: '𐲤'
-    OldHungarianCapitalLetterEs,
+    CapitalLetterEs,
     /// \u{10ca5}: '𐲥'
-    OldHungarianCapitalLetterEsz,
+    CapitalLetterEsz,
     /// \u{10ca6}: '𐲦'
-    OldHungarianCapitalLetterEt,
+    CapitalLetterEt,
     /// \u{10ca7}: '𐲧'
-    OldHungarianCapitalLetterEnt,
+    CapitalLetterEnt,
     /// \u{10ca8}: '𐲨'
-    OldHungarianCapitalLetterEty,
+    CapitalLetterEty,
     /// \u{10ca9}: '𐲩'
-    OldHungarianCapitalLetterEch,
+    CapitalLetterEch,
     /// \u{10caa}: '𐲪'
-    OldHungarianCapitalLetterU,
+    CapitalLetterU,
     /// \u{10cab}: '𐲫'
-    OldHungarianCapitalLetterUu,
+    CapitalLetterUu,
     /// \u{10cac}: '𐲬'
-    OldHungarianCapitalLetterNikolsburgUe,
+    CapitalLetterNikolsburgUe,
     /// \u{10cad}: '𐲭'
-    OldHungarianCapitalLetterRudimentaUe,
+    CapitalLetterRudimentaUe,
     /// \u{10cae}: '𐲮'
-    OldHungarianCapitalLetterEv,
+    CapitalLetterEv,
     /// \u{10caf}: '𐲯'
-    OldHungarianCapitalLetterEz,
+    CapitalLetterEz,
     /// \u{10cb0}: '𐲰'
-    OldHungarianCapitalLetterEzs,
+    CapitalLetterEzs,
     /// \u{10cb1}: '𐲱'
-    OldHungarianCapitalLetterEntDashShapedSign,
+    CapitalLetterEntDashShapedSign,
     /// \u{10cb2}: '𐲲'
-    OldHungarianCapitalLetterUs,
+    CapitalLetterUs,
     /// \u{10cc0}: '𐳀'
-    OldHungarianSmallLetterA,
+    SmallLetterA,
     /// \u{10cc1}: '𐳁'
-    OldHungarianSmallLetterAa,
+    SmallLetterAa,
     /// \u{10cc2}: '𐳂'
-    OldHungarianSmallLetterEb,
+    SmallLetterEb,
     /// \u{10cc3}: '𐳃'
-    OldHungarianSmallLetterAmb,
+    SmallLetterAmb,
     /// \u{10cc4}: '𐳄'
-    OldHungarianSmallLetterEc,
+    SmallLetterEc,
     /// \u{10cc5}: '𐳅'
-    OldHungarianSmallLetterEnc,
+    SmallLetterEnc,
     /// \u{10cc6}: '𐳆'
-    OldHungarianSmallLetterEcs,
+    SmallLetterEcs,
     /// \u{10cc7}: '𐳇'
-    OldHungarianSmallLetterEd,
+    SmallLetterEd,
     /// \u{10cc8}: '𐳈'
-    OldHungarianSmallLetterAnd,
+    SmallLetterAnd,
     /// \u{10cc9}: '𐳉'
-    OldHungarianSmallLetterE,
+    SmallLetterE,
     /// \u{10cca}: '𐳊'
-    OldHungarianSmallLetterCloseE,
+    SmallLetterCloseE,
     /// \u{10ccb}: '𐳋'
-    OldHungarianSmallLetterEe,
+    SmallLetterEe,
     /// \u{10ccc}: '𐳌'
-    OldHungarianSmallLetterEf,
+    SmallLetterEf,
     /// \u{10ccd}: '𐳍'
-    OldHungarianSmallLetterEg,
+    SmallLetterEg,
     /// \u{10cce}: '𐳎'
-    OldHungarianSmallLetterEgy,
+    SmallLetterEgy,
     /// \u{10ccf}: '𐳏'
-    OldHungarianSmallLetterEh,
+    SmallLetterEh,
     /// \u{10cd0}: '𐳐'
-    OldHungarianSmallLetterI,
+    SmallLetterI,
     /// \u{10cd1}: '𐳑'
-    OldHungarianSmallLetterIi,
+    SmallLetterIi,
     /// \u{10cd2}: '𐳒'
-    OldHungarianSmallLetterEj,
+    SmallLetterEj,
     /// \u{10cd3}: '𐳓'
-    OldHungarianSmallLetterEk,
+    SmallLetterEk,
     /// \u{10cd4}: '𐳔'
-    OldHungarianSmallLetterAk,
+    SmallLetterAk,
     /// \u{10cd5}: '𐳕'
-    OldHungarianSmallLetterUnk,
+    SmallLetterUnk,
     /// \u{10cd6}: '𐳖'
-    OldHungarianSmallLetterEl,
+    SmallLetterEl,
     /// \u{10cd7}: '𐳗'
-    OldHungarianSmallLetterEly,
+    SmallLetterEly,
     /// \u{10cd8}: '𐳘'
-    OldHungarianSmallLetterEm,
+    SmallLetterEm,
     /// \u{10cd9}: '𐳙'
-    OldHungarianSmallLetterEn,
+    SmallLetterEn,
     /// \u{10cda}: '𐳚'
-    OldHungarianSmallLetterEny,
+    SmallLetterEny,
     /// \u{10cdb}: '𐳛'
-    OldHungarianSmallLetterO,
+    SmallLetterO,
     /// \u{10cdc}: '𐳜'
-    OldHungarianSmallLetterOo,
+    SmallLetterOo,
     /// \u{10cdd}: '𐳝'
-    OldHungarianSmallLetterNikolsburgOe,
+    SmallLetterNikolsburgOe,
     /// \u{10cde}: '𐳞'
-    OldHungarianSmallLetterRudimentaOe,
+    SmallLetterRudimentaOe,
     /// \u{10cdf}: '𐳟'
-    OldHungarianSmallLetterOee,
+    SmallLetterOee,
     /// \u{10ce0}: '𐳠'
-    OldHungarianSmallLetterEp,
+    SmallLetterEp,
     /// \u{10ce1}: '𐳡'
-    OldHungarianSmallLetterEmp,
+    SmallLetterEmp,
     /// \u{10ce2}: '𐳢'
-    OldHungarianSmallLetterEr,
+    SmallLetterEr,
     /// \u{10ce3}: '𐳣'
-    OldHungarianSmallLetterShortEr,
+    SmallLetterShortEr,
     /// \u{10ce4}: '𐳤'
-    OldHungarianSmallLetterEs,
+    SmallLetterEs,
     /// \u{10ce5}: '𐳥'
-    OldHungarianSmallLetterEsz,
+    SmallLetterEsz,
     /// \u{10ce6}: '𐳦'
-    OldHungarianSmallLetterEt,
+    SmallLetterEt,
     /// \u{10ce7}: '𐳧'
-    OldHungarianSmallLetterEnt,
+    SmallLetterEnt,
     /// \u{10ce8}: '𐳨'
-    OldHungarianSmallLetterEty,
+    SmallLetterEty,
     /// \u{10ce9}: '𐳩'
-    OldHungarianSmallLetterEch,
+    SmallLetterEch,
     /// \u{10cea}: '𐳪'
-    OldHungarianSmallLetterU,
+    SmallLetterU,
     /// \u{10ceb}: '𐳫'
-    OldHungarianSmallLetterUu,
+    SmallLetterUu,
     /// \u{10cec}: '𐳬'
-    OldHungarianSmallLetterNikolsburgUe,
+    SmallLetterNikolsburgUe,
     /// \u{10ced}: '𐳭'
-    OldHungarianSmallLetterRudimentaUe,
+    SmallLetterRudimentaUe,
     /// \u{10cee}: '𐳮'
-    OldHungarianSmallLetterEv,
+    SmallLetterEv,
     /// \u{10cef}: '𐳯'
-    OldHungarianSmallLetterEz,
+    SmallLetterEz,
     /// \u{10cf0}: '𐳰'
-    OldHungarianSmallLetterEzs,
+    SmallLetterEzs,
     /// \u{10cf1}: '𐳱'
-    OldHungarianSmallLetterEntDashShapedSign,
+    SmallLetterEntDashShapedSign,
     /// \u{10cf2}: '𐳲'
-    OldHungarianSmallLetterUs,
+    SmallLetterUs,
     /// \u{10cfa}: '𐳺'
-    OldHungarianNumberOne,
+    NumberOne,
     /// \u{10cfb}: '𐳻'
-    OldHungarianNumberFive,
+    NumberFive,
     /// \u{10cfc}: '𐳼'
-    OldHungarianNumberTen,
+    NumberTen,
     /// \u{10cfd}: '𐳽'
-    OldHungarianNumberFifty,
+    NumberFifty,
     /// \u{10cfe}: '𐳾'
-    OldHungarianNumberOneHundred,
+    NumberOneHundred,
 }
 
 impl Into<char> for OldHungarian {
     fn into(self) -> char {
         use constants::*;
         match self {
-            OldHungarian::OldHungarianCapitalLetterA => OLD_HUNGARIAN_CAPITAL_LETTER_A,
-            OldHungarian::OldHungarianCapitalLetterAa => OLD_HUNGARIAN_CAPITAL_LETTER_AA,
-            OldHungarian::OldHungarianCapitalLetterEb => OLD_HUNGARIAN_CAPITAL_LETTER_EB,
-            OldHungarian::OldHungarianCapitalLetterAmb => OLD_HUNGARIAN_CAPITAL_LETTER_AMB,
-            OldHungarian::OldHungarianCapitalLetterEc => OLD_HUNGARIAN_CAPITAL_LETTER_EC,
-            OldHungarian::OldHungarianCapitalLetterEnc => OLD_HUNGARIAN_CAPITAL_LETTER_ENC,
-            OldHungarian::OldHungarianCapitalLetterEcs => OLD_HUNGARIAN_CAPITAL_LETTER_ECS,
-            OldHungarian::OldHungarianCapitalLetterEd => OLD_HUNGARIAN_CAPITAL_LETTER_ED,
-            OldHungarian::OldHungarianCapitalLetterAnd => OLD_HUNGARIAN_CAPITAL_LETTER_AND,
-            OldHungarian::OldHungarianCapitalLetterE => OLD_HUNGARIAN_CAPITAL_LETTER_E,
-            OldHungarian::OldHungarianCapitalLetterCloseE => OLD_HUNGARIAN_CAPITAL_LETTER_CLOSE_E,
-            OldHungarian::OldHungarianCapitalLetterEe => OLD_HUNGARIAN_CAPITAL_LETTER_EE,
-            OldHungarian::OldHungarianCapitalLetterEf => OLD_HUNGARIAN_CAPITAL_LETTER_EF,
-            OldHungarian::OldHungarianCapitalLetterEg => OLD_HUNGARIAN_CAPITAL_LETTER_EG,
-            OldHungarian::OldHungarianCapitalLetterEgy => OLD_HUNGARIAN_CAPITAL_LETTER_EGY,
-            OldHungarian::OldHungarianCapitalLetterEh => OLD_HUNGARIAN_CAPITAL_LETTER_EH,
-            OldHungarian::OldHungarianCapitalLetterI => OLD_HUNGARIAN_CAPITAL_LETTER_I,
-            OldHungarian::OldHungarianCapitalLetterIi => OLD_HUNGARIAN_CAPITAL_LETTER_II,
-            OldHungarian::OldHungarianCapitalLetterEj => OLD_HUNGARIAN_CAPITAL_LETTER_EJ,
-            OldHungarian::OldHungarianCapitalLetterEk => OLD_HUNGARIAN_CAPITAL_LETTER_EK,
-            OldHungarian::OldHungarianCapitalLetterAk => OLD_HUNGARIAN_CAPITAL_LETTER_AK,
-            OldHungarian::OldHungarianCapitalLetterUnk => OLD_HUNGARIAN_CAPITAL_LETTER_UNK,
-            OldHungarian::OldHungarianCapitalLetterEl => OLD_HUNGARIAN_CAPITAL_LETTER_EL,
-            OldHungarian::OldHungarianCapitalLetterEly => OLD_HUNGARIAN_CAPITAL_LETTER_ELY,
-            OldHungarian::OldHungarianCapitalLetterEm => OLD_HUNGARIAN_CAPITAL_LETTER_EM,
-            OldHungarian::OldHungarianCapitalLetterEn => OLD_HUNGARIAN_CAPITAL_LETTER_EN,
-            OldHungarian::OldHungarianCapitalLetterEny => OLD_HUNGARIAN_CAPITAL_LETTER_ENY,
-            OldHungarian::OldHungarianCapitalLetterO => OLD_HUNGARIAN_CAPITAL_LETTER_O,
-            OldHungarian::OldHungarianCapitalLetterOo => OLD_HUNGARIAN_CAPITAL_LETTER_OO,
-            OldHungarian::OldHungarianCapitalLetterNikolsburgOe => OLD_HUNGARIAN_CAPITAL_LETTER_NIKOLSBURG_OE,
-            OldHungarian::OldHungarianCapitalLetterRudimentaOe => OLD_HUNGARIAN_CAPITAL_LETTER_RUDIMENTA_OE,
-            OldHungarian::OldHungarianCapitalLetterOee => OLD_HUNGARIAN_CAPITAL_LETTER_OEE,
-            OldHungarian::OldHungarianCapitalLetterEp => OLD_HUNGARIAN_CAPITAL_LETTER_EP,
-            OldHungarian::OldHungarianCapitalLetterEmp => OLD_HUNGARIAN_CAPITAL_LETTER_EMP,
-            OldHungarian::OldHungarianCapitalLetterEr => OLD_HUNGARIAN_CAPITAL_LETTER_ER,
-            OldHungarian::OldHungarianCapitalLetterShortEr => OLD_HUNGARIAN_CAPITAL_LETTER_SHORT_ER,
-            OldHungarian::OldHungarianCapitalLetterEs => OLD_HUNGARIAN_CAPITAL_LETTER_ES,
-            OldHungarian::OldHungarianCapitalLetterEsz => OLD_HUNGARIAN_CAPITAL_LETTER_ESZ,
-            OldHungarian::OldHungarianCapitalLetterEt => OLD_HUNGARIAN_CAPITAL_LETTER_ET,
-            OldHungarian::OldHungarianCapitalLetterEnt => OLD_HUNGARIAN_CAPITAL_LETTER_ENT,
-            OldHungarian::OldHungarianCapitalLetterEty => OLD_HUNGARIAN_CAPITAL_LETTER_ETY,
-            OldHungarian::OldHungarianCapitalLetterEch => OLD_HUNGARIAN_CAPITAL_LETTER_ECH,
-            OldHungarian::OldHungarianCapitalLetterU => OLD_HUNGARIAN_CAPITAL_LETTER_U,
-            OldHungarian::OldHungarianCapitalLetterUu => OLD_HUNGARIAN_CAPITAL_LETTER_UU,
-            OldHungarian::OldHungarianCapitalLetterNikolsburgUe => OLD_HUNGARIAN_CAPITAL_LETTER_NIKOLSBURG_UE,
-            OldHungarian::OldHungarianCapitalLetterRudimentaUe => OLD_HUNGARIAN_CAPITAL_LETTER_RUDIMENTA_UE,
-            OldHungarian::OldHungarianCapitalLetterEv => OLD_HUNGARIAN_CAPITAL_LETTER_EV,
-            OldHungarian::OldHungarianCapitalLetterEz => OLD_HUNGARIAN_CAPITAL_LETTER_EZ,
-            OldHungarian::OldHungarianCapitalLetterEzs => OLD_HUNGARIAN_CAPITAL_LETTER_EZS,
-            OldHungarian::OldHungarianCapitalLetterEntDashShapedSign => OLD_HUNGARIAN_CAPITAL_LETTER_ENT_DASH_SHAPED_SIGN,
-            OldHungarian::OldHungarianCapitalLetterUs => OLD_HUNGARIAN_CAPITAL_LETTER_US,
-            OldHungarian::OldHungarianSmallLetterA => OLD_HUNGARIAN_SMALL_LETTER_A,
-            OldHungarian::OldHungarianSmallLetterAa => OLD_HUNGARIAN_SMALL_LETTER_AA,
-            OldHungarian::OldHungarianSmallLetterEb => OLD_HUNGARIAN_SMALL_LETTER_EB,
-            OldHungarian::OldHungarianSmallLetterAmb => OLD_HUNGARIAN_SMALL_LETTER_AMB,
-            OldHungarian::OldHungarianSmallLetterEc => OLD_HUNGARIAN_SMALL_LETTER_EC,
-            OldHungarian::OldHungarianSmallLetterEnc => OLD_HUNGARIAN_SMALL_LETTER_ENC,
-            OldHungarian::OldHungarianSmallLetterEcs => OLD_HUNGARIAN_SMALL_LETTER_ECS,
-            OldHungarian::OldHungarianSmallLetterEd => OLD_HUNGARIAN_SMALL_LETTER_ED,
-            OldHungarian::OldHungarianSmallLetterAnd => OLD_HUNGARIAN_SMALL_LETTER_AND,
-            OldHungarian::OldHungarianSmallLetterE => OLD_HUNGARIAN_SMALL_LETTER_E,
-            OldHungarian::OldHungarianSmallLetterCloseE => OLD_HUNGARIAN_SMALL_LETTER_CLOSE_E,
-            OldHungarian::OldHungarianSmallLetterEe => OLD_HUNGARIAN_SMALL_LETTER_EE,
-            OldHungarian::OldHungarianSmallLetterEf => OLD_HUNGARIAN_SMALL_LETTER_EF,
-            OldHungarian::OldHungarianSmallLetterEg => OLD_HUNGARIAN_SMALL_LETTER_EG,
-            OldHungarian::OldHungarianSmallLetterEgy => OLD_HUNGARIAN_SMALL_LETTER_EGY,
-            OldHungarian::OldHungarianSmallLetterEh => OLD_HUNGARIAN_SMALL_LETTER_EH,
-            OldHungarian::OldHungarianSmallLetterI => OLD_HUNGARIAN_SMALL_LETTER_I,
-            OldHungarian::OldHungarianSmallLetterIi => OLD_HUNGARIAN_SMALL_LETTER_II,
-            OldHungarian::OldHungarianSmallLetterEj => OLD_HUNGARIAN_SMALL_LETTER_EJ,
-            OldHungarian::OldHungarianSmallLetterEk => OLD_HUNGARIAN_SMALL_LETTER_EK,
-            OldHungarian::OldHungarianSmallLetterAk => OLD_HUNGARIAN_SMALL_LETTER_AK,
-            OldHungarian::OldHungarianSmallLetterUnk => OLD_HUNGARIAN_SMALL_LETTER_UNK,
-            OldHungarian::OldHungarianSmallLetterEl => OLD_HUNGARIAN_SMALL_LETTER_EL,
-            OldHungarian::OldHungarianSmallLetterEly => OLD_HUNGARIAN_SMALL_LETTER_ELY,
-            OldHungarian::OldHungarianSmallLetterEm => OLD_HUNGARIAN_SMALL_LETTER_EM,
-            OldHungarian::OldHungarianSmallLetterEn => OLD_HUNGARIAN_SMALL_LETTER_EN,
-            OldHungarian::OldHungarianSmallLetterEny => OLD_HUNGARIAN_SMALL_LETTER_ENY,
-            OldHungarian::OldHungarianSmallLetterO => OLD_HUNGARIAN_SMALL_LETTER_O,
-            OldHungarian::OldHungarianSmallLetterOo => OLD_HUNGARIAN_SMALL_LETTER_OO,
-            OldHungarian::OldHungarianSmallLetterNikolsburgOe => OLD_HUNGARIAN_SMALL_LETTER_NIKOLSBURG_OE,
-            OldHungarian::OldHungarianSmallLetterRudimentaOe => OLD_HUNGARIAN_SMALL_LETTER_RUDIMENTA_OE,
-            OldHungarian::OldHungarianSmallLetterOee => OLD_HUNGARIAN_SMALL_LETTER_OEE,
-            OldHungarian::OldHungarianSmallLetterEp => OLD_HUNGARIAN_SMALL_LETTER_EP,
-            OldHungarian::OldHungarianSmallLetterEmp => OLD_HUNGARIAN_SMALL_LETTER_EMP,
-            OldHungarian::OldHungarianSmallLetterEr => OLD_HUNGARIAN_SMALL_LETTER_ER,
-            OldHungarian::OldHungarianSmallLetterShortEr => OLD_HUNGARIAN_SMALL_LETTER_SHORT_ER,
-            OldHungarian::OldHungarianSmallLetterEs => OLD_HUNGARIAN_SMALL_LETTER_ES,
-            OldHungarian::OldHungarianSmallLetterEsz => OLD_HUNGARIAN_SMALL_LETTER_ESZ,
-            OldHungarian::OldHungarianSmallLetterEt => OLD_HUNGARIAN_SMALL_LETTER_ET,
-            OldHungarian::OldHungarianSmallLetterEnt => OLD_HUNGARIAN_SMALL_LETTER_ENT,
-            OldHungarian::OldHungarianSmallLetterEty => OLD_HUNGARIAN_SMALL_LETTER_ETY,
-            OldHungarian::OldHungarianSmallLetterEch => OLD_HUNGARIAN_SMALL_LETTER_ECH,
-            OldHungarian::OldHungarianSmallLetterU => OLD_HUNGARIAN_SMALL_LETTER_U,
-            OldHungarian::OldHungarianSmallLetterUu => OLD_HUNGARIAN_SMALL_LETTER_UU,
-            OldHungarian::OldHungarianSmallLetterNikolsburgUe => OLD_HUNGARIAN_SMALL_LETTER_NIKOLSBURG_UE,
-            OldHungarian::OldHungarianSmallLetterRudimentaUe => OLD_HUNGARIAN_SMALL_LETTER_RUDIMENTA_UE,
-            OldHungarian::OldHungarianSmallLetterEv => OLD_HUNGARIAN_SMALL_LETTER_EV,
-            OldHungarian::OldHungarianSmallLetterEz => OLD_HUNGARIAN_SMALL_LETTER_EZ,
-            OldHungarian::OldHungarianSmallLetterEzs => OLD_HUNGARIAN_SMALL_LETTER_EZS,
-            OldHungarian::OldHungarianSmallLetterEntDashShapedSign => OLD_HUNGARIAN_SMALL_LETTER_ENT_DASH_SHAPED_SIGN,
-            OldHungarian::OldHungarianSmallLetterUs => OLD_HUNGARIAN_SMALL_LETTER_US,
-            OldHungarian::OldHungarianNumberOne => OLD_HUNGARIAN_NUMBER_ONE,
-            OldHungarian::OldHungarianNumberFive => OLD_HUNGARIAN_NUMBER_FIVE,
-            OldHungarian::OldHungarianNumberTen => OLD_HUNGARIAN_NUMBER_TEN,
-            OldHungarian::OldHungarianNumberFifty => OLD_HUNGARIAN_NUMBER_FIFTY,
-            OldHungarian::OldHungarianNumberOneHundred => OLD_HUNGARIAN_NUMBER_ONE_HUNDRED,
+            OldHungarian::CapitalLetterA => CAPITAL_LETTER_A,
+            OldHungarian::CapitalLetterAa => CAPITAL_LETTER_AA,
+            OldHungarian::CapitalLetterEb => CAPITAL_LETTER_EB,
+            OldHungarian::CapitalLetterAmb => CAPITAL_LETTER_AMB,
+            OldHungarian::CapitalLetterEc => CAPITAL_LETTER_EC,
+            OldHungarian::CapitalLetterEnc => CAPITAL_LETTER_ENC,
+            OldHungarian::CapitalLetterEcs => CAPITAL_LETTER_ECS,
+            OldHungarian::CapitalLetterEd => CAPITAL_LETTER_ED,
+            OldHungarian::CapitalLetterAnd => CAPITAL_LETTER_AND,
+            OldHungarian::CapitalLetterE => CAPITAL_LETTER_E,
+            OldHungarian::CapitalLetterCloseE => CAPITAL_LETTER_CLOSE_E,
+            OldHungarian::CapitalLetterEe => CAPITAL_LETTER_EE,
+            OldHungarian::CapitalLetterEf => CAPITAL_LETTER_EF,
+            OldHungarian::CapitalLetterEg => CAPITAL_LETTER_EG,
+            OldHungarian::CapitalLetterEgy => CAPITAL_LETTER_EGY,
+            OldHungarian::CapitalLetterEh => CAPITAL_LETTER_EH,
+            OldHungarian::CapitalLetterI => CAPITAL_LETTER_I,
+            OldHungarian::CapitalLetterIi => CAPITAL_LETTER_II,
+            OldHungarian::CapitalLetterEj => CAPITAL_LETTER_EJ,
+            OldHungarian::CapitalLetterEk => CAPITAL_LETTER_EK,
+            OldHungarian::CapitalLetterAk => CAPITAL_LETTER_AK,
+            OldHungarian::CapitalLetterUnk => CAPITAL_LETTER_UNK,
+            OldHungarian::CapitalLetterEl => CAPITAL_LETTER_EL,
+            OldHungarian::CapitalLetterEly => CAPITAL_LETTER_ELY,
+            OldHungarian::CapitalLetterEm => CAPITAL_LETTER_EM,
+            OldHungarian::CapitalLetterEn => CAPITAL_LETTER_EN,
+            OldHungarian::CapitalLetterEny => CAPITAL_LETTER_ENY,
+            OldHungarian::CapitalLetterO => CAPITAL_LETTER_O,
+            OldHungarian::CapitalLetterOo => CAPITAL_LETTER_OO,
+            OldHungarian::CapitalLetterNikolsburgOe => CAPITAL_LETTER_NIKOLSBURG_OE,
+            OldHungarian::CapitalLetterRudimentaOe => CAPITAL_LETTER_RUDIMENTA_OE,
+            OldHungarian::CapitalLetterOee => CAPITAL_LETTER_OEE,
+            OldHungarian::CapitalLetterEp => CAPITAL_LETTER_EP,
+            OldHungarian::CapitalLetterEmp => CAPITAL_LETTER_EMP,
+            OldHungarian::CapitalLetterEr => CAPITAL_LETTER_ER,
+            OldHungarian::CapitalLetterShortEr => CAPITAL_LETTER_SHORT_ER,
+            OldHungarian::CapitalLetterEs => CAPITAL_LETTER_ES,
+            OldHungarian::CapitalLetterEsz => CAPITAL_LETTER_ESZ,
+            OldHungarian::CapitalLetterEt => CAPITAL_LETTER_ET,
+            OldHungarian::CapitalLetterEnt => CAPITAL_LETTER_ENT,
+            OldHungarian::CapitalLetterEty => CAPITAL_LETTER_ETY,
+            OldHungarian::CapitalLetterEch => CAPITAL_LETTER_ECH,
+            OldHungarian::CapitalLetterU => CAPITAL_LETTER_U,
+            OldHungarian::CapitalLetterUu => CAPITAL_LETTER_UU,
+            OldHungarian::CapitalLetterNikolsburgUe => CAPITAL_LETTER_NIKOLSBURG_UE,
+            OldHungarian::CapitalLetterRudimentaUe => CAPITAL_LETTER_RUDIMENTA_UE,
+            OldHungarian::CapitalLetterEv => CAPITAL_LETTER_EV,
+            OldHungarian::CapitalLetterEz => CAPITAL_LETTER_EZ,
+            OldHungarian::CapitalLetterEzs => CAPITAL_LETTER_EZS,
+            OldHungarian::CapitalLetterEntDashShapedSign => CAPITAL_LETTER_ENT_DASH_SHAPED_SIGN,
+            OldHungarian::CapitalLetterUs => CAPITAL_LETTER_US,
+            OldHungarian::SmallLetterA => SMALL_LETTER_A,
+            OldHungarian::SmallLetterAa => SMALL_LETTER_AA,
+            OldHungarian::SmallLetterEb => SMALL_LETTER_EB,
+            OldHungarian::SmallLetterAmb => SMALL_LETTER_AMB,
+            OldHungarian::SmallLetterEc => SMALL_LETTER_EC,
+            OldHungarian::SmallLetterEnc => SMALL_LETTER_ENC,
+            OldHungarian::SmallLetterEcs => SMALL_LETTER_ECS,
+            OldHungarian::SmallLetterEd => SMALL_LETTER_ED,
+            OldHungarian::SmallLetterAnd => SMALL_LETTER_AND,
+            OldHungarian::SmallLetterE => SMALL_LETTER_E,
+            OldHungarian::SmallLetterCloseE => SMALL_LETTER_CLOSE_E,
+            OldHungarian::SmallLetterEe => SMALL_LETTER_EE,
+            OldHungarian::SmallLetterEf => SMALL_LETTER_EF,
+            OldHungarian::SmallLetterEg => SMALL_LETTER_EG,
+            OldHungarian::SmallLetterEgy => SMALL_LETTER_EGY,
+            OldHungarian::SmallLetterEh => SMALL_LETTER_EH,
+            OldHungarian::SmallLetterI => SMALL_LETTER_I,
+            OldHungarian::SmallLetterIi => SMALL_LETTER_II,
+            OldHungarian::SmallLetterEj => SMALL_LETTER_EJ,
+            OldHungarian::SmallLetterEk => SMALL_LETTER_EK,
+            OldHungarian::SmallLetterAk => SMALL_LETTER_AK,
+            OldHungarian::SmallLetterUnk => SMALL_LETTER_UNK,
+            OldHungarian::SmallLetterEl => SMALL_LETTER_EL,
+            OldHungarian::SmallLetterEly => SMALL_LETTER_ELY,
+            OldHungarian::SmallLetterEm => SMALL_LETTER_EM,
+            OldHungarian::SmallLetterEn => SMALL_LETTER_EN,
+            OldHungarian::SmallLetterEny => SMALL_LETTER_ENY,
+            OldHungarian::SmallLetterO => SMALL_LETTER_O,
+            OldHungarian::SmallLetterOo => SMALL_LETTER_OO,
+            OldHungarian::SmallLetterNikolsburgOe => SMALL_LETTER_NIKOLSBURG_OE,
+            OldHungarian::SmallLetterRudimentaOe => SMALL_LETTER_RUDIMENTA_OE,
+            OldHungarian::SmallLetterOee => SMALL_LETTER_OEE,
+            OldHungarian::SmallLetterEp => SMALL_LETTER_EP,
+            OldHungarian::SmallLetterEmp => SMALL_LETTER_EMP,
+            OldHungarian::SmallLetterEr => SMALL_LETTER_ER,
+            OldHungarian::SmallLetterShortEr => SMALL_LETTER_SHORT_ER,
+            OldHungarian::SmallLetterEs => SMALL_LETTER_ES,
+            OldHungarian::SmallLetterEsz => SMALL_LETTER_ESZ,
+            OldHungarian::SmallLetterEt => SMALL_LETTER_ET,
+            OldHungarian::SmallLetterEnt => SMALL_LETTER_ENT,
+            OldHungarian::SmallLetterEty => SMALL_LETTER_ETY,
+            OldHungarian::SmallLetterEch => SMALL_LETTER_ECH,
+            OldHungarian::SmallLetterU => SMALL_LETTER_U,
+            OldHungarian::SmallLetterUu => SMALL_LETTER_UU,
+            OldHungarian::SmallLetterNikolsburgUe => SMALL_LETTER_NIKOLSBURG_UE,
+            OldHungarian::SmallLetterRudimentaUe => SMALL_LETTER_RUDIMENTA_UE,
+            OldHungarian::SmallLetterEv => SMALL_LETTER_EV,
+            OldHungarian::SmallLetterEz => SMALL_LETTER_EZ,
+            OldHungarian::SmallLetterEzs => SMALL_LETTER_EZS,
+            OldHungarian::SmallLetterEntDashShapedSign => SMALL_LETTER_ENT_DASH_SHAPED_SIGN,
+            OldHungarian::SmallLetterUs => SMALL_LETTER_US,
+            OldHungarian::NumberOne => NUMBER_ONE,
+            OldHungarian::NumberFive => NUMBER_FIVE,
+            OldHungarian::NumberTen => NUMBER_TEN,
+            OldHungarian::NumberFifty => NUMBER_FIFTY,
+            OldHungarian::NumberOneHundred => NUMBER_ONE_HUNDRED,
         }
     }
 }
@@ -571,113 +571,113 @@ impl std::convert::TryFrom<char> for OldHungarian {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            OLD_HUNGARIAN_CAPITAL_LETTER_A => Ok(OldHungarian::OldHungarianCapitalLetterA),
-            OLD_HUNGARIAN_CAPITAL_LETTER_AA => Ok(OldHungarian::OldHungarianCapitalLetterAa),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EB => Ok(OldHungarian::OldHungarianCapitalLetterEb),
-            OLD_HUNGARIAN_CAPITAL_LETTER_AMB => Ok(OldHungarian::OldHungarianCapitalLetterAmb),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EC => Ok(OldHungarian::OldHungarianCapitalLetterEc),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ENC => Ok(OldHungarian::OldHungarianCapitalLetterEnc),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ECS => Ok(OldHungarian::OldHungarianCapitalLetterEcs),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ED => Ok(OldHungarian::OldHungarianCapitalLetterEd),
-            OLD_HUNGARIAN_CAPITAL_LETTER_AND => Ok(OldHungarian::OldHungarianCapitalLetterAnd),
-            OLD_HUNGARIAN_CAPITAL_LETTER_E => Ok(OldHungarian::OldHungarianCapitalLetterE),
-            OLD_HUNGARIAN_CAPITAL_LETTER_CLOSE_E => Ok(OldHungarian::OldHungarianCapitalLetterCloseE),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EE => Ok(OldHungarian::OldHungarianCapitalLetterEe),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EF => Ok(OldHungarian::OldHungarianCapitalLetterEf),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EG => Ok(OldHungarian::OldHungarianCapitalLetterEg),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EGY => Ok(OldHungarian::OldHungarianCapitalLetterEgy),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EH => Ok(OldHungarian::OldHungarianCapitalLetterEh),
-            OLD_HUNGARIAN_CAPITAL_LETTER_I => Ok(OldHungarian::OldHungarianCapitalLetterI),
-            OLD_HUNGARIAN_CAPITAL_LETTER_II => Ok(OldHungarian::OldHungarianCapitalLetterIi),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EJ => Ok(OldHungarian::OldHungarianCapitalLetterEj),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EK => Ok(OldHungarian::OldHungarianCapitalLetterEk),
-            OLD_HUNGARIAN_CAPITAL_LETTER_AK => Ok(OldHungarian::OldHungarianCapitalLetterAk),
-            OLD_HUNGARIAN_CAPITAL_LETTER_UNK => Ok(OldHungarian::OldHungarianCapitalLetterUnk),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EL => Ok(OldHungarian::OldHungarianCapitalLetterEl),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ELY => Ok(OldHungarian::OldHungarianCapitalLetterEly),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EM => Ok(OldHungarian::OldHungarianCapitalLetterEm),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EN => Ok(OldHungarian::OldHungarianCapitalLetterEn),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ENY => Ok(OldHungarian::OldHungarianCapitalLetterEny),
-            OLD_HUNGARIAN_CAPITAL_LETTER_O => Ok(OldHungarian::OldHungarianCapitalLetterO),
-            OLD_HUNGARIAN_CAPITAL_LETTER_OO => Ok(OldHungarian::OldHungarianCapitalLetterOo),
-            OLD_HUNGARIAN_CAPITAL_LETTER_NIKOLSBURG_OE => Ok(OldHungarian::OldHungarianCapitalLetterNikolsburgOe),
-            OLD_HUNGARIAN_CAPITAL_LETTER_RUDIMENTA_OE => Ok(OldHungarian::OldHungarianCapitalLetterRudimentaOe),
-            OLD_HUNGARIAN_CAPITAL_LETTER_OEE => Ok(OldHungarian::OldHungarianCapitalLetterOee),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EP => Ok(OldHungarian::OldHungarianCapitalLetterEp),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EMP => Ok(OldHungarian::OldHungarianCapitalLetterEmp),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ER => Ok(OldHungarian::OldHungarianCapitalLetterEr),
-            OLD_HUNGARIAN_CAPITAL_LETTER_SHORT_ER => Ok(OldHungarian::OldHungarianCapitalLetterShortEr),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ES => Ok(OldHungarian::OldHungarianCapitalLetterEs),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ESZ => Ok(OldHungarian::OldHungarianCapitalLetterEsz),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ET => Ok(OldHungarian::OldHungarianCapitalLetterEt),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ENT => Ok(OldHungarian::OldHungarianCapitalLetterEnt),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ETY => Ok(OldHungarian::OldHungarianCapitalLetterEty),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ECH => Ok(OldHungarian::OldHungarianCapitalLetterEch),
-            OLD_HUNGARIAN_CAPITAL_LETTER_U => Ok(OldHungarian::OldHungarianCapitalLetterU),
-            OLD_HUNGARIAN_CAPITAL_LETTER_UU => Ok(OldHungarian::OldHungarianCapitalLetterUu),
-            OLD_HUNGARIAN_CAPITAL_LETTER_NIKOLSBURG_UE => Ok(OldHungarian::OldHungarianCapitalLetterNikolsburgUe),
-            OLD_HUNGARIAN_CAPITAL_LETTER_RUDIMENTA_UE => Ok(OldHungarian::OldHungarianCapitalLetterRudimentaUe),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EV => Ok(OldHungarian::OldHungarianCapitalLetterEv),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EZ => Ok(OldHungarian::OldHungarianCapitalLetterEz),
-            OLD_HUNGARIAN_CAPITAL_LETTER_EZS => Ok(OldHungarian::OldHungarianCapitalLetterEzs),
-            OLD_HUNGARIAN_CAPITAL_LETTER_ENT_DASH_SHAPED_SIGN => Ok(OldHungarian::OldHungarianCapitalLetterEntDashShapedSign),
-            OLD_HUNGARIAN_CAPITAL_LETTER_US => Ok(OldHungarian::OldHungarianCapitalLetterUs),
-            OLD_HUNGARIAN_SMALL_LETTER_A => Ok(OldHungarian::OldHungarianSmallLetterA),
-            OLD_HUNGARIAN_SMALL_LETTER_AA => Ok(OldHungarian::OldHungarianSmallLetterAa),
-            OLD_HUNGARIAN_SMALL_LETTER_EB => Ok(OldHungarian::OldHungarianSmallLetterEb),
-            OLD_HUNGARIAN_SMALL_LETTER_AMB => Ok(OldHungarian::OldHungarianSmallLetterAmb),
-            OLD_HUNGARIAN_SMALL_LETTER_EC => Ok(OldHungarian::OldHungarianSmallLetterEc),
-            OLD_HUNGARIAN_SMALL_LETTER_ENC => Ok(OldHungarian::OldHungarianSmallLetterEnc),
-            OLD_HUNGARIAN_SMALL_LETTER_ECS => Ok(OldHungarian::OldHungarianSmallLetterEcs),
-            OLD_HUNGARIAN_SMALL_LETTER_ED => Ok(OldHungarian::OldHungarianSmallLetterEd),
-            OLD_HUNGARIAN_SMALL_LETTER_AND => Ok(OldHungarian::OldHungarianSmallLetterAnd),
-            OLD_HUNGARIAN_SMALL_LETTER_E => Ok(OldHungarian::OldHungarianSmallLetterE),
-            OLD_HUNGARIAN_SMALL_LETTER_CLOSE_E => Ok(OldHungarian::OldHungarianSmallLetterCloseE),
-            OLD_HUNGARIAN_SMALL_LETTER_EE => Ok(OldHungarian::OldHungarianSmallLetterEe),
-            OLD_HUNGARIAN_SMALL_LETTER_EF => Ok(OldHungarian::OldHungarianSmallLetterEf),
-            OLD_HUNGARIAN_SMALL_LETTER_EG => Ok(OldHungarian::OldHungarianSmallLetterEg),
-            OLD_HUNGARIAN_SMALL_LETTER_EGY => Ok(OldHungarian::OldHungarianSmallLetterEgy),
-            OLD_HUNGARIAN_SMALL_LETTER_EH => Ok(OldHungarian::OldHungarianSmallLetterEh),
-            OLD_HUNGARIAN_SMALL_LETTER_I => Ok(OldHungarian::OldHungarianSmallLetterI),
-            OLD_HUNGARIAN_SMALL_LETTER_II => Ok(OldHungarian::OldHungarianSmallLetterIi),
-            OLD_HUNGARIAN_SMALL_LETTER_EJ => Ok(OldHungarian::OldHungarianSmallLetterEj),
-            OLD_HUNGARIAN_SMALL_LETTER_EK => Ok(OldHungarian::OldHungarianSmallLetterEk),
-            OLD_HUNGARIAN_SMALL_LETTER_AK => Ok(OldHungarian::OldHungarianSmallLetterAk),
-            OLD_HUNGARIAN_SMALL_LETTER_UNK => Ok(OldHungarian::OldHungarianSmallLetterUnk),
-            OLD_HUNGARIAN_SMALL_LETTER_EL => Ok(OldHungarian::OldHungarianSmallLetterEl),
-            OLD_HUNGARIAN_SMALL_LETTER_ELY => Ok(OldHungarian::OldHungarianSmallLetterEly),
-            OLD_HUNGARIAN_SMALL_LETTER_EM => Ok(OldHungarian::OldHungarianSmallLetterEm),
-            OLD_HUNGARIAN_SMALL_LETTER_EN => Ok(OldHungarian::OldHungarianSmallLetterEn),
-            OLD_HUNGARIAN_SMALL_LETTER_ENY => Ok(OldHungarian::OldHungarianSmallLetterEny),
-            OLD_HUNGARIAN_SMALL_LETTER_O => Ok(OldHungarian::OldHungarianSmallLetterO),
-            OLD_HUNGARIAN_SMALL_LETTER_OO => Ok(OldHungarian::OldHungarianSmallLetterOo),
-            OLD_HUNGARIAN_SMALL_LETTER_NIKOLSBURG_OE => Ok(OldHungarian::OldHungarianSmallLetterNikolsburgOe),
-            OLD_HUNGARIAN_SMALL_LETTER_RUDIMENTA_OE => Ok(OldHungarian::OldHungarianSmallLetterRudimentaOe),
-            OLD_HUNGARIAN_SMALL_LETTER_OEE => Ok(OldHungarian::OldHungarianSmallLetterOee),
-            OLD_HUNGARIAN_SMALL_LETTER_EP => Ok(OldHungarian::OldHungarianSmallLetterEp),
-            OLD_HUNGARIAN_SMALL_LETTER_EMP => Ok(OldHungarian::OldHungarianSmallLetterEmp),
-            OLD_HUNGARIAN_SMALL_LETTER_ER => Ok(OldHungarian::OldHungarianSmallLetterEr),
-            OLD_HUNGARIAN_SMALL_LETTER_SHORT_ER => Ok(OldHungarian::OldHungarianSmallLetterShortEr),
-            OLD_HUNGARIAN_SMALL_LETTER_ES => Ok(OldHungarian::OldHungarianSmallLetterEs),
-            OLD_HUNGARIAN_SMALL_LETTER_ESZ => Ok(OldHungarian::OldHungarianSmallLetterEsz),
-            OLD_HUNGARIAN_SMALL_LETTER_ET => Ok(OldHungarian::OldHungarianSmallLetterEt),
-            OLD_HUNGARIAN_SMALL_LETTER_ENT => Ok(OldHungarian::OldHungarianSmallLetterEnt),
-            OLD_HUNGARIAN_SMALL_LETTER_ETY => Ok(OldHungarian::OldHungarianSmallLetterEty),
-            OLD_HUNGARIAN_SMALL_LETTER_ECH => Ok(OldHungarian::OldHungarianSmallLetterEch),
-            OLD_HUNGARIAN_SMALL_LETTER_U => Ok(OldHungarian::OldHungarianSmallLetterU),
-            OLD_HUNGARIAN_SMALL_LETTER_UU => Ok(OldHungarian::OldHungarianSmallLetterUu),
-            OLD_HUNGARIAN_SMALL_LETTER_NIKOLSBURG_UE => Ok(OldHungarian::OldHungarianSmallLetterNikolsburgUe),
-            OLD_HUNGARIAN_SMALL_LETTER_RUDIMENTA_UE => Ok(OldHungarian::OldHungarianSmallLetterRudimentaUe),
-            OLD_HUNGARIAN_SMALL_LETTER_EV => Ok(OldHungarian::OldHungarianSmallLetterEv),
-            OLD_HUNGARIAN_SMALL_LETTER_EZ => Ok(OldHungarian::OldHungarianSmallLetterEz),
-            OLD_HUNGARIAN_SMALL_LETTER_EZS => Ok(OldHungarian::OldHungarianSmallLetterEzs),
-            OLD_HUNGARIAN_SMALL_LETTER_ENT_DASH_SHAPED_SIGN => Ok(OldHungarian::OldHungarianSmallLetterEntDashShapedSign),
-            OLD_HUNGARIAN_SMALL_LETTER_US => Ok(OldHungarian::OldHungarianSmallLetterUs),
-            OLD_HUNGARIAN_NUMBER_ONE => Ok(OldHungarian::OldHungarianNumberOne),
-            OLD_HUNGARIAN_NUMBER_FIVE => Ok(OldHungarian::OldHungarianNumberFive),
-            OLD_HUNGARIAN_NUMBER_TEN => Ok(OldHungarian::OldHungarianNumberTen),
-            OLD_HUNGARIAN_NUMBER_FIFTY => Ok(OldHungarian::OldHungarianNumberFifty),
-            OLD_HUNGARIAN_NUMBER_ONE_HUNDRED => Ok(OldHungarian::OldHungarianNumberOneHundred),
+            CAPITAL_LETTER_A => Ok(OldHungarian::CapitalLetterA),
+            CAPITAL_LETTER_AA => Ok(OldHungarian::CapitalLetterAa),
+            CAPITAL_LETTER_EB => Ok(OldHungarian::CapitalLetterEb),
+            CAPITAL_LETTER_AMB => Ok(OldHungarian::CapitalLetterAmb),
+            CAPITAL_LETTER_EC => Ok(OldHungarian::CapitalLetterEc),
+            CAPITAL_LETTER_ENC => Ok(OldHungarian::CapitalLetterEnc),
+            CAPITAL_LETTER_ECS => Ok(OldHungarian::CapitalLetterEcs),
+            CAPITAL_LETTER_ED => Ok(OldHungarian::CapitalLetterEd),
+            CAPITAL_LETTER_AND => Ok(OldHungarian::CapitalLetterAnd),
+            CAPITAL_LETTER_E => Ok(OldHungarian::CapitalLetterE),
+            CAPITAL_LETTER_CLOSE_E => Ok(OldHungarian::CapitalLetterCloseE),
+            CAPITAL_LETTER_EE => Ok(OldHungarian::CapitalLetterEe),
+            CAPITAL_LETTER_EF => Ok(OldHungarian::CapitalLetterEf),
+            CAPITAL_LETTER_EG => Ok(OldHungarian::CapitalLetterEg),
+            CAPITAL_LETTER_EGY => Ok(OldHungarian::CapitalLetterEgy),
+            CAPITAL_LETTER_EH => Ok(OldHungarian::CapitalLetterEh),
+            CAPITAL_LETTER_I => Ok(OldHungarian::CapitalLetterI),
+            CAPITAL_LETTER_II => Ok(OldHungarian::CapitalLetterIi),
+            CAPITAL_LETTER_EJ => Ok(OldHungarian::CapitalLetterEj),
+            CAPITAL_LETTER_EK => Ok(OldHungarian::CapitalLetterEk),
+            CAPITAL_LETTER_AK => Ok(OldHungarian::CapitalLetterAk),
+            CAPITAL_LETTER_UNK => Ok(OldHungarian::CapitalLetterUnk),
+            CAPITAL_LETTER_EL => Ok(OldHungarian::CapitalLetterEl),
+            CAPITAL_LETTER_ELY => Ok(OldHungarian::CapitalLetterEly),
+            CAPITAL_LETTER_EM => Ok(OldHungarian::CapitalLetterEm),
+            CAPITAL_LETTER_EN => Ok(OldHungarian::CapitalLetterEn),
+            CAPITAL_LETTER_ENY => Ok(OldHungarian::CapitalLetterEny),
+            CAPITAL_LETTER_O => Ok(OldHungarian::CapitalLetterO),
+            CAPITAL_LETTER_OO => Ok(OldHungarian::CapitalLetterOo),
+            CAPITAL_LETTER_NIKOLSBURG_OE => Ok(OldHungarian::CapitalLetterNikolsburgOe),
+            CAPITAL_LETTER_RUDIMENTA_OE => Ok(OldHungarian::CapitalLetterRudimentaOe),
+            CAPITAL_LETTER_OEE => Ok(OldHungarian::CapitalLetterOee),
+            CAPITAL_LETTER_EP => Ok(OldHungarian::CapitalLetterEp),
+            CAPITAL_LETTER_EMP => Ok(OldHungarian::CapitalLetterEmp),
+            CAPITAL_LETTER_ER => Ok(OldHungarian::CapitalLetterEr),
+            CAPITAL_LETTER_SHORT_ER => Ok(OldHungarian::CapitalLetterShortEr),
+            CAPITAL_LETTER_ES => Ok(OldHungarian::CapitalLetterEs),
+            CAPITAL_LETTER_ESZ => Ok(OldHungarian::CapitalLetterEsz),
+            CAPITAL_LETTER_ET => Ok(OldHungarian::CapitalLetterEt),
+            CAPITAL_LETTER_ENT => Ok(OldHungarian::CapitalLetterEnt),
+            CAPITAL_LETTER_ETY => Ok(OldHungarian::CapitalLetterEty),
+            CAPITAL_LETTER_ECH => Ok(OldHungarian::CapitalLetterEch),
+            CAPITAL_LETTER_U => Ok(OldHungarian::CapitalLetterU),
+            CAPITAL_LETTER_UU => Ok(OldHungarian::CapitalLetterUu),
+            CAPITAL_LETTER_NIKOLSBURG_UE => Ok(OldHungarian::CapitalLetterNikolsburgUe),
+            CAPITAL_LETTER_RUDIMENTA_UE => Ok(OldHungarian::CapitalLetterRudimentaUe),
+            CAPITAL_LETTER_EV => Ok(OldHungarian::CapitalLetterEv),
+            CAPITAL_LETTER_EZ => Ok(OldHungarian::CapitalLetterEz),
+            CAPITAL_LETTER_EZS => Ok(OldHungarian::CapitalLetterEzs),
+            CAPITAL_LETTER_ENT_DASH_SHAPED_SIGN => Ok(OldHungarian::CapitalLetterEntDashShapedSign),
+            CAPITAL_LETTER_US => Ok(OldHungarian::CapitalLetterUs),
+            SMALL_LETTER_A => Ok(OldHungarian::SmallLetterA),
+            SMALL_LETTER_AA => Ok(OldHungarian::SmallLetterAa),
+            SMALL_LETTER_EB => Ok(OldHungarian::SmallLetterEb),
+            SMALL_LETTER_AMB => Ok(OldHungarian::SmallLetterAmb),
+            SMALL_LETTER_EC => Ok(OldHungarian::SmallLetterEc),
+            SMALL_LETTER_ENC => Ok(OldHungarian::SmallLetterEnc),
+            SMALL_LETTER_ECS => Ok(OldHungarian::SmallLetterEcs),
+            SMALL_LETTER_ED => Ok(OldHungarian::SmallLetterEd),
+            SMALL_LETTER_AND => Ok(OldHungarian::SmallLetterAnd),
+            SMALL_LETTER_E => Ok(OldHungarian::SmallLetterE),
+            SMALL_LETTER_CLOSE_E => Ok(OldHungarian::SmallLetterCloseE),
+            SMALL_LETTER_EE => Ok(OldHungarian::SmallLetterEe),
+            SMALL_LETTER_EF => Ok(OldHungarian::SmallLetterEf),
+            SMALL_LETTER_EG => Ok(OldHungarian::SmallLetterEg),
+            SMALL_LETTER_EGY => Ok(OldHungarian::SmallLetterEgy),
+            SMALL_LETTER_EH => Ok(OldHungarian::SmallLetterEh),
+            SMALL_LETTER_I => Ok(OldHungarian::SmallLetterI),
+            SMALL_LETTER_II => Ok(OldHungarian::SmallLetterIi),
+            SMALL_LETTER_EJ => Ok(OldHungarian::SmallLetterEj),
+            SMALL_LETTER_EK => Ok(OldHungarian::SmallLetterEk),
+            SMALL_LETTER_AK => Ok(OldHungarian::SmallLetterAk),
+            SMALL_LETTER_UNK => Ok(OldHungarian::SmallLetterUnk),
+            SMALL_LETTER_EL => Ok(OldHungarian::SmallLetterEl),
+            SMALL_LETTER_ELY => Ok(OldHungarian::SmallLetterEly),
+            SMALL_LETTER_EM => Ok(OldHungarian::SmallLetterEm),
+            SMALL_LETTER_EN => Ok(OldHungarian::SmallLetterEn),
+            SMALL_LETTER_ENY => Ok(OldHungarian::SmallLetterEny),
+            SMALL_LETTER_O => Ok(OldHungarian::SmallLetterO),
+            SMALL_LETTER_OO => Ok(OldHungarian::SmallLetterOo),
+            SMALL_LETTER_NIKOLSBURG_OE => Ok(OldHungarian::SmallLetterNikolsburgOe),
+            SMALL_LETTER_RUDIMENTA_OE => Ok(OldHungarian::SmallLetterRudimentaOe),
+            SMALL_LETTER_OEE => Ok(OldHungarian::SmallLetterOee),
+            SMALL_LETTER_EP => Ok(OldHungarian::SmallLetterEp),
+            SMALL_LETTER_EMP => Ok(OldHungarian::SmallLetterEmp),
+            SMALL_LETTER_ER => Ok(OldHungarian::SmallLetterEr),
+            SMALL_LETTER_SHORT_ER => Ok(OldHungarian::SmallLetterShortEr),
+            SMALL_LETTER_ES => Ok(OldHungarian::SmallLetterEs),
+            SMALL_LETTER_ESZ => Ok(OldHungarian::SmallLetterEsz),
+            SMALL_LETTER_ET => Ok(OldHungarian::SmallLetterEt),
+            SMALL_LETTER_ENT => Ok(OldHungarian::SmallLetterEnt),
+            SMALL_LETTER_ETY => Ok(OldHungarian::SmallLetterEty),
+            SMALL_LETTER_ECH => Ok(OldHungarian::SmallLetterEch),
+            SMALL_LETTER_U => Ok(OldHungarian::SmallLetterU),
+            SMALL_LETTER_UU => Ok(OldHungarian::SmallLetterUu),
+            SMALL_LETTER_NIKOLSBURG_UE => Ok(OldHungarian::SmallLetterNikolsburgUe),
+            SMALL_LETTER_RUDIMENTA_UE => Ok(OldHungarian::SmallLetterRudimentaUe),
+            SMALL_LETTER_EV => Ok(OldHungarian::SmallLetterEv),
+            SMALL_LETTER_EZ => Ok(OldHungarian::SmallLetterEz),
+            SMALL_LETTER_EZS => Ok(OldHungarian::SmallLetterEzs),
+            SMALL_LETTER_ENT_DASH_SHAPED_SIGN => Ok(OldHungarian::SmallLetterEntDashShapedSign),
+            SMALL_LETTER_US => Ok(OldHungarian::SmallLetterUs),
+            NUMBER_ONE => Ok(OldHungarian::NumberOne),
+            NUMBER_FIVE => Ok(OldHungarian::NumberFive),
+            NUMBER_TEN => Ok(OldHungarian::NumberTen),
+            NUMBER_FIFTY => Ok(OldHungarian::NumberFifty),
+            NUMBER_ONE_HUNDRED => Ok(OldHungarian::NumberOneHundred),
             _ => Err(()),
         }
     }
@@ -716,121 +716,121 @@ impl Iterator for OldHungarian {
 }
 
 impl OldHungarian {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        OldHungarian::OldHungarianCapitalLetterA
+        OldHungarian::CapitalLetterA
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            OldHungarian::OldHungarianCapitalLetterA => "old hungarian capital letter a",
-            OldHungarian::OldHungarianCapitalLetterAa => "old hungarian capital letter aa",
-            OldHungarian::OldHungarianCapitalLetterEb => "old hungarian capital letter eb",
-            OldHungarian::OldHungarianCapitalLetterAmb => "old hungarian capital letter amb",
-            OldHungarian::OldHungarianCapitalLetterEc => "old hungarian capital letter ec",
-            OldHungarian::OldHungarianCapitalLetterEnc => "old hungarian capital letter enc",
-            OldHungarian::OldHungarianCapitalLetterEcs => "old hungarian capital letter ecs",
-            OldHungarian::OldHungarianCapitalLetterEd => "old hungarian capital letter ed",
-            OldHungarian::OldHungarianCapitalLetterAnd => "old hungarian capital letter and",
-            OldHungarian::OldHungarianCapitalLetterE => "old hungarian capital letter e",
-            OldHungarian::OldHungarianCapitalLetterCloseE => "old hungarian capital letter close e",
-            OldHungarian::OldHungarianCapitalLetterEe => "old hungarian capital letter ee",
-            OldHungarian::OldHungarianCapitalLetterEf => "old hungarian capital letter ef",
-            OldHungarian::OldHungarianCapitalLetterEg => "old hungarian capital letter eg",
-            OldHungarian::OldHungarianCapitalLetterEgy => "old hungarian capital letter egy",
-            OldHungarian::OldHungarianCapitalLetterEh => "old hungarian capital letter eh",
-            OldHungarian::OldHungarianCapitalLetterI => "old hungarian capital letter i",
-            OldHungarian::OldHungarianCapitalLetterIi => "old hungarian capital letter ii",
-            OldHungarian::OldHungarianCapitalLetterEj => "old hungarian capital letter ej",
-            OldHungarian::OldHungarianCapitalLetterEk => "old hungarian capital letter ek",
-            OldHungarian::OldHungarianCapitalLetterAk => "old hungarian capital letter ak",
-            OldHungarian::OldHungarianCapitalLetterUnk => "old hungarian capital letter unk",
-            OldHungarian::OldHungarianCapitalLetterEl => "old hungarian capital letter el",
-            OldHungarian::OldHungarianCapitalLetterEly => "old hungarian capital letter ely",
-            OldHungarian::OldHungarianCapitalLetterEm => "old hungarian capital letter em",
-            OldHungarian::OldHungarianCapitalLetterEn => "old hungarian capital letter en",
-            OldHungarian::OldHungarianCapitalLetterEny => "old hungarian capital letter eny",
-            OldHungarian::OldHungarianCapitalLetterO => "old hungarian capital letter o",
-            OldHungarian::OldHungarianCapitalLetterOo => "old hungarian capital letter oo",
-            OldHungarian::OldHungarianCapitalLetterNikolsburgOe => "old hungarian capital letter nikolsburg oe",
-            OldHungarian::OldHungarianCapitalLetterRudimentaOe => "old hungarian capital letter rudimenta oe",
-            OldHungarian::OldHungarianCapitalLetterOee => "old hungarian capital letter oee",
-            OldHungarian::OldHungarianCapitalLetterEp => "old hungarian capital letter ep",
-            OldHungarian::OldHungarianCapitalLetterEmp => "old hungarian capital letter emp",
-            OldHungarian::OldHungarianCapitalLetterEr => "old hungarian capital letter er",
-            OldHungarian::OldHungarianCapitalLetterShortEr => "old hungarian capital letter short er",
-            OldHungarian::OldHungarianCapitalLetterEs => "old hungarian capital letter es",
-            OldHungarian::OldHungarianCapitalLetterEsz => "old hungarian capital letter esz",
-            OldHungarian::OldHungarianCapitalLetterEt => "old hungarian capital letter et",
-            OldHungarian::OldHungarianCapitalLetterEnt => "old hungarian capital letter ent",
-            OldHungarian::OldHungarianCapitalLetterEty => "old hungarian capital letter ety",
-            OldHungarian::OldHungarianCapitalLetterEch => "old hungarian capital letter ech",
-            OldHungarian::OldHungarianCapitalLetterU => "old hungarian capital letter u",
-            OldHungarian::OldHungarianCapitalLetterUu => "old hungarian capital letter uu",
-            OldHungarian::OldHungarianCapitalLetterNikolsburgUe => "old hungarian capital letter nikolsburg ue",
-            OldHungarian::OldHungarianCapitalLetterRudimentaUe => "old hungarian capital letter rudimenta ue",
-            OldHungarian::OldHungarianCapitalLetterEv => "old hungarian capital letter ev",
-            OldHungarian::OldHungarianCapitalLetterEz => "old hungarian capital letter ez",
-            OldHungarian::OldHungarianCapitalLetterEzs => "old hungarian capital letter ezs",
-            OldHungarian::OldHungarianCapitalLetterEntDashShapedSign => "old hungarian capital letter ent-shaped sign",
-            OldHungarian::OldHungarianCapitalLetterUs => "old hungarian capital letter us",
-            OldHungarian::OldHungarianSmallLetterA => "old hungarian small letter a",
-            OldHungarian::OldHungarianSmallLetterAa => "old hungarian small letter aa",
-            OldHungarian::OldHungarianSmallLetterEb => "old hungarian small letter eb",
-            OldHungarian::OldHungarianSmallLetterAmb => "old hungarian small letter amb",
-            OldHungarian::OldHungarianSmallLetterEc => "old hungarian small letter ec",
-            OldHungarian::OldHungarianSmallLetterEnc => "old hungarian small letter enc",
-            OldHungarian::OldHungarianSmallLetterEcs => "old hungarian small letter ecs",
-            OldHungarian::OldHungarianSmallLetterEd => "old hungarian small letter ed",
-            OldHungarian::OldHungarianSmallLetterAnd => "old hungarian small letter and",
-            OldHungarian::OldHungarianSmallLetterE => "old hungarian small letter e",
-            OldHungarian::OldHungarianSmallLetterCloseE => "old hungarian small letter close e",
-            OldHungarian::OldHungarianSmallLetterEe => "old hungarian small letter ee",
-            OldHungarian::OldHungarianSmallLetterEf => "old hungarian small letter ef",
-            OldHungarian::OldHungarianSmallLetterEg => "old hungarian small letter eg",
-            OldHungarian::OldHungarianSmallLetterEgy => "old hungarian small letter egy",
-            OldHungarian::OldHungarianSmallLetterEh => "old hungarian small letter eh",
-            OldHungarian::OldHungarianSmallLetterI => "old hungarian small letter i",
-            OldHungarian::OldHungarianSmallLetterIi => "old hungarian small letter ii",
-            OldHungarian::OldHungarianSmallLetterEj => "old hungarian small letter ej",
-            OldHungarian::OldHungarianSmallLetterEk => "old hungarian small letter ek",
-            OldHungarian::OldHungarianSmallLetterAk => "old hungarian small letter ak",
-            OldHungarian::OldHungarianSmallLetterUnk => "old hungarian small letter unk",
-            OldHungarian::OldHungarianSmallLetterEl => "old hungarian small letter el",
-            OldHungarian::OldHungarianSmallLetterEly => "old hungarian small letter ely",
-            OldHungarian::OldHungarianSmallLetterEm => "old hungarian small letter em",
-            OldHungarian::OldHungarianSmallLetterEn => "old hungarian small letter en",
-            OldHungarian::OldHungarianSmallLetterEny => "old hungarian small letter eny",
-            OldHungarian::OldHungarianSmallLetterO => "old hungarian small letter o",
-            OldHungarian::OldHungarianSmallLetterOo => "old hungarian small letter oo",
-            OldHungarian::OldHungarianSmallLetterNikolsburgOe => "old hungarian small letter nikolsburg oe",
-            OldHungarian::OldHungarianSmallLetterRudimentaOe => "old hungarian small letter rudimenta oe",
-            OldHungarian::OldHungarianSmallLetterOee => "old hungarian small letter oee",
-            OldHungarian::OldHungarianSmallLetterEp => "old hungarian small letter ep",
-            OldHungarian::OldHungarianSmallLetterEmp => "old hungarian small letter emp",
-            OldHungarian::OldHungarianSmallLetterEr => "old hungarian small letter er",
-            OldHungarian::OldHungarianSmallLetterShortEr => "old hungarian small letter short er",
-            OldHungarian::OldHungarianSmallLetterEs => "old hungarian small letter es",
-            OldHungarian::OldHungarianSmallLetterEsz => "old hungarian small letter esz",
-            OldHungarian::OldHungarianSmallLetterEt => "old hungarian small letter et",
-            OldHungarian::OldHungarianSmallLetterEnt => "old hungarian small letter ent",
-            OldHungarian::OldHungarianSmallLetterEty => "old hungarian small letter ety",
-            OldHungarian::OldHungarianSmallLetterEch => "old hungarian small letter ech",
-            OldHungarian::OldHungarianSmallLetterU => "old hungarian small letter u",
-            OldHungarian::OldHungarianSmallLetterUu => "old hungarian small letter uu",
-            OldHungarian::OldHungarianSmallLetterNikolsburgUe => "old hungarian small letter nikolsburg ue",
-            OldHungarian::OldHungarianSmallLetterRudimentaUe => "old hungarian small letter rudimenta ue",
-            OldHungarian::OldHungarianSmallLetterEv => "old hungarian small letter ev",
-            OldHungarian::OldHungarianSmallLetterEz => "old hungarian small letter ez",
-            OldHungarian::OldHungarianSmallLetterEzs => "old hungarian small letter ezs",
-            OldHungarian::OldHungarianSmallLetterEntDashShapedSign => "old hungarian small letter ent-shaped sign",
-            OldHungarian::OldHungarianSmallLetterUs => "old hungarian small letter us",
-            OldHungarian::OldHungarianNumberOne => "old hungarian number one",
-            OldHungarian::OldHungarianNumberFive => "old hungarian number five",
-            OldHungarian::OldHungarianNumberTen => "old hungarian number ten",
-            OldHungarian::OldHungarianNumberFifty => "old hungarian number fifty",
-            OldHungarian::OldHungarianNumberOneHundred => "old hungarian number one hundred",
+            OldHungarian::CapitalLetterA => "old hungarian capital letter a",
+            OldHungarian::CapitalLetterAa => "old hungarian capital letter aa",
+            OldHungarian::CapitalLetterEb => "old hungarian capital letter eb",
+            OldHungarian::CapitalLetterAmb => "old hungarian capital letter amb",
+            OldHungarian::CapitalLetterEc => "old hungarian capital letter ec",
+            OldHungarian::CapitalLetterEnc => "old hungarian capital letter enc",
+            OldHungarian::CapitalLetterEcs => "old hungarian capital letter ecs",
+            OldHungarian::CapitalLetterEd => "old hungarian capital letter ed",
+            OldHungarian::CapitalLetterAnd => "old hungarian capital letter and",
+            OldHungarian::CapitalLetterE => "old hungarian capital letter e",
+            OldHungarian::CapitalLetterCloseE => "old hungarian capital letter close e",
+            OldHungarian::CapitalLetterEe => "old hungarian capital letter ee",
+            OldHungarian::CapitalLetterEf => "old hungarian capital letter ef",
+            OldHungarian::CapitalLetterEg => "old hungarian capital letter eg",
+            OldHungarian::CapitalLetterEgy => "old hungarian capital letter egy",
+            OldHungarian::CapitalLetterEh => "old hungarian capital letter eh",
+            OldHungarian::CapitalLetterI => "old hungarian capital letter i",
+            OldHungarian::CapitalLetterIi => "old hungarian capital letter ii",
+            OldHungarian::CapitalLetterEj => "old hungarian capital letter ej",
+            OldHungarian::CapitalLetterEk => "old hungarian capital letter ek",
+            OldHungarian::CapitalLetterAk => "old hungarian capital letter ak",
+            OldHungarian::CapitalLetterUnk => "old hungarian capital letter unk",
+            OldHungarian::CapitalLetterEl => "old hungarian capital letter el",
+            OldHungarian::CapitalLetterEly => "old hungarian capital letter ely",
+            OldHungarian::CapitalLetterEm => "old hungarian capital letter em",
+            OldHungarian::CapitalLetterEn => "old hungarian capital letter en",
+            OldHungarian::CapitalLetterEny => "old hungarian capital letter eny",
+            OldHungarian::CapitalLetterO => "old hungarian capital letter o",
+            OldHungarian::CapitalLetterOo => "old hungarian capital letter oo",
+            OldHungarian::CapitalLetterNikolsburgOe => "old hungarian capital letter nikolsburg oe",
+            OldHungarian::CapitalLetterRudimentaOe => "old hungarian capital letter rudimenta oe",
+            OldHungarian::CapitalLetterOee => "old hungarian capital letter oee",
+            OldHungarian::CapitalLetterEp => "old hungarian capital letter ep",
+            OldHungarian::CapitalLetterEmp => "old hungarian capital letter emp",
+            OldHungarian::CapitalLetterEr => "old hungarian capital letter er",
+            OldHungarian::CapitalLetterShortEr => "old hungarian capital letter short er",
+            OldHungarian::CapitalLetterEs => "old hungarian capital letter es",
+            OldHungarian::CapitalLetterEsz => "old hungarian capital letter esz",
+            OldHungarian::CapitalLetterEt => "old hungarian capital letter et",
+            OldHungarian::CapitalLetterEnt => "old hungarian capital letter ent",
+            OldHungarian::CapitalLetterEty => "old hungarian capital letter ety",
+            OldHungarian::CapitalLetterEch => "old hungarian capital letter ech",
+            OldHungarian::CapitalLetterU => "old hungarian capital letter u",
+            OldHungarian::CapitalLetterUu => "old hungarian capital letter uu",
+            OldHungarian::CapitalLetterNikolsburgUe => "old hungarian capital letter nikolsburg ue",
+            OldHungarian::CapitalLetterRudimentaUe => "old hungarian capital letter rudimenta ue",
+            OldHungarian::CapitalLetterEv => "old hungarian capital letter ev",
+            OldHungarian::CapitalLetterEz => "old hungarian capital letter ez",
+            OldHungarian::CapitalLetterEzs => "old hungarian capital letter ezs",
+            OldHungarian::CapitalLetterEntDashShapedSign => "old hungarian capital letter ent-shaped sign",
+            OldHungarian::CapitalLetterUs => "old hungarian capital letter us",
+            OldHungarian::SmallLetterA => "old hungarian small letter a",
+            OldHungarian::SmallLetterAa => "old hungarian small letter aa",
+            OldHungarian::SmallLetterEb => "old hungarian small letter eb",
+            OldHungarian::SmallLetterAmb => "old hungarian small letter amb",
+            OldHungarian::SmallLetterEc => "old hungarian small letter ec",
+            OldHungarian::SmallLetterEnc => "old hungarian small letter enc",
+            OldHungarian::SmallLetterEcs => "old hungarian small letter ecs",
+            OldHungarian::SmallLetterEd => "old hungarian small letter ed",
+            OldHungarian::SmallLetterAnd => "old hungarian small letter and",
+            OldHungarian::SmallLetterE => "old hungarian small letter e",
+            OldHungarian::SmallLetterCloseE => "old hungarian small letter close e",
+            OldHungarian::SmallLetterEe => "old hungarian small letter ee",
+            OldHungarian::SmallLetterEf => "old hungarian small letter ef",
+            OldHungarian::SmallLetterEg => "old hungarian small letter eg",
+            OldHungarian::SmallLetterEgy => "old hungarian small letter egy",
+            OldHungarian::SmallLetterEh => "old hungarian small letter eh",
+            OldHungarian::SmallLetterI => "old hungarian small letter i",
+            OldHungarian::SmallLetterIi => "old hungarian small letter ii",
+            OldHungarian::SmallLetterEj => "old hungarian small letter ej",
+            OldHungarian::SmallLetterEk => "old hungarian small letter ek",
+            OldHungarian::SmallLetterAk => "old hungarian small letter ak",
+            OldHungarian::SmallLetterUnk => "old hungarian small letter unk",
+            OldHungarian::SmallLetterEl => "old hungarian small letter el",
+            OldHungarian::SmallLetterEly => "old hungarian small letter ely",
+            OldHungarian::SmallLetterEm => "old hungarian small letter em",
+            OldHungarian::SmallLetterEn => "old hungarian small letter en",
+            OldHungarian::SmallLetterEny => "old hungarian small letter eny",
+            OldHungarian::SmallLetterO => "old hungarian small letter o",
+            OldHungarian::SmallLetterOo => "old hungarian small letter oo",
+            OldHungarian::SmallLetterNikolsburgOe => "old hungarian small letter nikolsburg oe",
+            OldHungarian::SmallLetterRudimentaOe => "old hungarian small letter rudimenta oe",
+            OldHungarian::SmallLetterOee => "old hungarian small letter oee",
+            OldHungarian::SmallLetterEp => "old hungarian small letter ep",
+            OldHungarian::SmallLetterEmp => "old hungarian small letter emp",
+            OldHungarian::SmallLetterEr => "old hungarian small letter er",
+            OldHungarian::SmallLetterShortEr => "old hungarian small letter short er",
+            OldHungarian::SmallLetterEs => "old hungarian small letter es",
+            OldHungarian::SmallLetterEsz => "old hungarian small letter esz",
+            OldHungarian::SmallLetterEt => "old hungarian small letter et",
+            OldHungarian::SmallLetterEnt => "old hungarian small letter ent",
+            OldHungarian::SmallLetterEty => "old hungarian small letter ety",
+            OldHungarian::SmallLetterEch => "old hungarian small letter ech",
+            OldHungarian::SmallLetterU => "old hungarian small letter u",
+            OldHungarian::SmallLetterUu => "old hungarian small letter uu",
+            OldHungarian::SmallLetterNikolsburgUe => "old hungarian small letter nikolsburg ue",
+            OldHungarian::SmallLetterRudimentaUe => "old hungarian small letter rudimenta ue",
+            OldHungarian::SmallLetterEv => "old hungarian small letter ev",
+            OldHungarian::SmallLetterEz => "old hungarian small letter ez",
+            OldHungarian::SmallLetterEzs => "old hungarian small letter ezs",
+            OldHungarian::SmallLetterEntDashShapedSign => "old hungarian small letter ent-shaped sign",
+            OldHungarian::SmallLetterUs => "old hungarian small letter us",
+            OldHungarian::NumberOne => "old hungarian number one",
+            OldHungarian::NumberFive => "old hungarian number five",
+            OldHungarian::NumberTen => "old hungarian number ten",
+            OldHungarian::NumberFifty => "old hungarian number fifty",
+            OldHungarian::NumberOneHundred => "old hungarian number one hundred",
         }
     }
 }

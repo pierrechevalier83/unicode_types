@@ -7,139 +7,139 @@
 /// 𑃀 𑃁 𑃍
 pub mod constants {
     /// \u{11080}: '𑂀'
-    pub const KAITHI_SIGN_CANDRABINDU: char = '𑂀';
+    pub const SIGN_CANDRABINDU: char = '𑂀';
     /// \u{11081}: '𑂁'
-    pub const KAITHI_SIGN_ANUSVARA: char = '𑂁';
+    pub const SIGN_ANUSVARA: char = '𑂁';
     /// \u{11082}: '𑂂'
-    pub const KAITHI_SIGN_VISARGA: char = '𑂂';
+    pub const SIGN_VISARGA: char = '𑂂';
     /// \u{11083}: '𑂃'
-    pub const KAITHI_LETTER_A: char = '𑂃';
+    pub const LETTER_A: char = '𑂃';
     /// \u{11084}: '𑂄'
-    pub const KAITHI_LETTER_AA: char = '𑂄';
+    pub const LETTER_AA: char = '𑂄';
     /// \u{11085}: '𑂅'
-    pub const KAITHI_LETTER_I: char = '𑂅';
+    pub const LETTER_I: char = '𑂅';
     /// \u{11086}: '𑂆'
-    pub const KAITHI_LETTER_II: char = '𑂆';
+    pub const LETTER_II: char = '𑂆';
     /// \u{11087}: '𑂇'
-    pub const KAITHI_LETTER_U: char = '𑂇';
+    pub const LETTER_U: char = '𑂇';
     /// \u{11088}: '𑂈'
-    pub const KAITHI_LETTER_UU: char = '𑂈';
+    pub const LETTER_UU: char = '𑂈';
     /// \u{11089}: '𑂉'
-    pub const KAITHI_LETTER_E: char = '𑂉';
+    pub const LETTER_E: char = '𑂉';
     /// \u{1108a}: '𑂊'
-    pub const KAITHI_LETTER_AI: char = '𑂊';
+    pub const LETTER_AI: char = '𑂊';
     /// \u{1108b}: '𑂋'
-    pub const KAITHI_LETTER_O: char = '𑂋';
+    pub const LETTER_O: char = '𑂋';
     /// \u{1108c}: '𑂌'
-    pub const KAITHI_LETTER_AU: char = '𑂌';
+    pub const LETTER_AU: char = '𑂌';
     /// \u{1108d}: '𑂍'
-    pub const KAITHI_LETTER_KA: char = '𑂍';
+    pub const LETTER_KA: char = '𑂍';
     /// \u{1108e}: '𑂎'
-    pub const KAITHI_LETTER_KHA: char = '𑂎';
+    pub const LETTER_KHA: char = '𑂎';
     /// \u{1108f}: '𑂏'
-    pub const KAITHI_LETTER_GA: char = '𑂏';
+    pub const LETTER_GA: char = '𑂏';
     /// \u{11090}: '𑂐'
-    pub const KAITHI_LETTER_GHA: char = '𑂐';
+    pub const LETTER_GHA: char = '𑂐';
     /// \u{11091}: '𑂑'
-    pub const KAITHI_LETTER_NGA: char = '𑂑';
+    pub const LETTER_NGA: char = '𑂑';
     /// \u{11092}: '𑂒'
-    pub const KAITHI_LETTER_CA: char = '𑂒';
+    pub const LETTER_CA: char = '𑂒';
     /// \u{11093}: '𑂓'
-    pub const KAITHI_LETTER_CHA: char = '𑂓';
+    pub const LETTER_CHA: char = '𑂓';
     /// \u{11094}: '𑂔'
-    pub const KAITHI_LETTER_JA: char = '𑂔';
+    pub const LETTER_JA: char = '𑂔';
     /// \u{11095}: '𑂕'
-    pub const KAITHI_LETTER_JHA: char = '𑂕';
+    pub const LETTER_JHA: char = '𑂕';
     /// \u{11096}: '𑂖'
-    pub const KAITHI_LETTER_NYA: char = '𑂖';
+    pub const LETTER_NYA: char = '𑂖';
     /// \u{11097}: '𑂗'
-    pub const KAITHI_LETTER_TTA: char = '𑂗';
+    pub const LETTER_TTA: char = '𑂗';
     /// \u{11098}: '𑂘'
-    pub const KAITHI_LETTER_TTHA: char = '𑂘';
+    pub const LETTER_TTHA: char = '𑂘';
     /// \u{11099}: '𑂙'
-    pub const KAITHI_LETTER_DDA: char = '𑂙';
+    pub const LETTER_DDA: char = '𑂙';
     /// \u{1109a}: '𑂚'
-    pub const KAITHI_LETTER_DDDHA: char = '𑂚';
+    pub const LETTER_DDDHA: char = '𑂚';
     /// \u{1109b}: '𑂛'
-    pub const KAITHI_LETTER_DDHA: char = '𑂛';
+    pub const LETTER_DDHA: char = '𑂛';
     /// \u{1109c}: '𑂜'
-    pub const KAITHI_LETTER_RHA: char = '𑂜';
+    pub const LETTER_RHA: char = '𑂜';
     /// \u{1109d}: '𑂝'
-    pub const KAITHI_LETTER_NNA: char = '𑂝';
+    pub const LETTER_NNA: char = '𑂝';
     /// \u{1109e}: '𑂞'
-    pub const KAITHI_LETTER_TA: char = '𑂞';
+    pub const LETTER_TA: char = '𑂞';
     /// \u{1109f}: '𑂟'
-    pub const KAITHI_LETTER_THA: char = '𑂟';
+    pub const LETTER_THA: char = '𑂟';
     /// \u{110a0}: '𑂠'
-    pub const KAITHI_LETTER_DA: char = '𑂠';
+    pub const LETTER_DA: char = '𑂠';
     /// \u{110a1}: '𑂡'
-    pub const KAITHI_LETTER_DHA: char = '𑂡';
+    pub const LETTER_DHA: char = '𑂡';
     /// \u{110a2}: '𑂢'
-    pub const KAITHI_LETTER_NA: char = '𑂢';
+    pub const LETTER_NA: char = '𑂢';
     /// \u{110a3}: '𑂣'
-    pub const KAITHI_LETTER_PA: char = '𑂣';
+    pub const LETTER_PA: char = '𑂣';
     /// \u{110a4}: '𑂤'
-    pub const KAITHI_LETTER_PHA: char = '𑂤';
+    pub const LETTER_PHA: char = '𑂤';
     /// \u{110a5}: '𑂥'
-    pub const KAITHI_LETTER_BA: char = '𑂥';
+    pub const LETTER_BA: char = '𑂥';
     /// \u{110a6}: '𑂦'
-    pub const KAITHI_LETTER_BHA: char = '𑂦';
+    pub const LETTER_BHA: char = '𑂦';
     /// \u{110a7}: '𑂧'
-    pub const KAITHI_LETTER_MA: char = '𑂧';
+    pub const LETTER_MA: char = '𑂧';
     /// \u{110a8}: '𑂨'
-    pub const KAITHI_LETTER_YA: char = '𑂨';
+    pub const LETTER_YA: char = '𑂨';
     /// \u{110a9}: '𑂩'
-    pub const KAITHI_LETTER_RA: char = '𑂩';
+    pub const LETTER_RA: char = '𑂩';
     /// \u{110aa}: '𑂪'
-    pub const KAITHI_LETTER_LA: char = '𑂪';
+    pub const LETTER_LA: char = '𑂪';
     /// \u{110ab}: '𑂫'
-    pub const KAITHI_LETTER_VA: char = '𑂫';
+    pub const LETTER_VA: char = '𑂫';
     /// \u{110ac}: '𑂬'
-    pub const KAITHI_LETTER_SHA: char = '𑂬';
+    pub const LETTER_SHA: char = '𑂬';
     /// \u{110ad}: '𑂭'
-    pub const KAITHI_LETTER_SSA: char = '𑂭';
+    pub const LETTER_SSA: char = '𑂭';
     /// \u{110ae}: '𑂮'
-    pub const KAITHI_LETTER_SA: char = '𑂮';
+    pub const LETTER_SA: char = '𑂮';
     /// \u{110af}: '𑂯'
-    pub const KAITHI_LETTER_HA: char = '𑂯';
+    pub const LETTER_HA: char = '𑂯';
     /// \u{110b0}: '𑂰'
-    pub const KAITHI_VOWEL_SIGN_AA: char = '𑂰';
+    pub const VOWEL_SIGN_AA: char = '𑂰';
     /// \u{110b1}: '𑂱'
-    pub const KAITHI_VOWEL_SIGN_I: char = '𑂱';
+    pub const VOWEL_SIGN_I: char = '𑂱';
     /// \u{110b2}: '𑂲'
-    pub const KAITHI_VOWEL_SIGN_II: char = '𑂲';
+    pub const VOWEL_SIGN_II: char = '𑂲';
     /// \u{110b3}: '𑂳'
-    pub const KAITHI_VOWEL_SIGN_U: char = '𑂳';
+    pub const VOWEL_SIGN_U: char = '𑂳';
     /// \u{110b4}: '𑂴'
-    pub const KAITHI_VOWEL_SIGN_UU: char = '𑂴';
+    pub const VOWEL_SIGN_UU: char = '𑂴';
     /// \u{110b5}: '𑂵'
-    pub const KAITHI_VOWEL_SIGN_E: char = '𑂵';
+    pub const VOWEL_SIGN_E: char = '𑂵';
     /// \u{110b6}: '𑂶'
-    pub const KAITHI_VOWEL_SIGN_AI: char = '𑂶';
+    pub const VOWEL_SIGN_AI: char = '𑂶';
     /// \u{110b7}: '𑂷'
-    pub const KAITHI_VOWEL_SIGN_O: char = '𑂷';
+    pub const VOWEL_SIGN_O: char = '𑂷';
     /// \u{110b8}: '𑂸'
-    pub const KAITHI_VOWEL_SIGN_AU: char = '𑂸';
+    pub const VOWEL_SIGN_AU: char = '𑂸';
     /// \u{110b9}: '𑂹'
-    pub const KAITHI_SIGN_VIRAMA: char = '𑂹';
+    pub const SIGN_VIRAMA: char = '𑂹';
     /// \u{110ba}: '𑂺'
-    pub const KAITHI_SIGN_NUKTA: char = '𑂺';
+    pub const SIGN_NUKTA: char = '𑂺';
     /// \u{110bb}: '𑂻'
-    pub const KAITHI_ABBREVIATION_SIGN: char = '𑂻';
+    pub const ABBREVIATION_SIGN: char = '𑂻';
     /// \u{110bc}: '𑂼'
-    pub const KAITHI_ENUMERATION_SIGN: char = '𑂼';
+    pub const ENUMERATION_SIGN: char = '𑂼';
     /// \u{110bd}: '𑂽'
-    pub const KAITHI_NUMBER_SIGN: char = '𑂽';
+    pub const NUMBER_SIGN: char = '𑂽';
     /// \u{110be}: '𑂾'
-    pub const KAITHI_SECTION_MARK: char = '𑂾';
+    pub const SECTION_MARK: char = '𑂾';
     /// \u{110bf}: '𑂿'
-    pub const KAITHI_DOUBLE_SECTION_MARK: char = '𑂿';
+    pub const DOUBLE_SECTION_MARK: char = '𑂿';
     /// \u{110c0}: '𑃀'
-    pub const KAITHI_DANDA: char = '𑃀';
+    pub const DANDA: char = '𑃀';
     /// \u{110c1}: '𑃁'
-    pub const KAITHI_DOUBLE_DANDA: char = '𑃁';
+    pub const DOUBLE_DANDA: char = '𑃁';
     /// \u{110cd}: '𑃍'
-    pub const KAITHI_NUMBER_SIGN_ABOVE: char = '𑃍';
+    pub const NUMBER_SIGN_ABOVE: char = '𑃍';
 }
 
 /// \u{11080} → \u{110cf}\
@@ -152,212 +152,212 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Kaithi {
     /// \u{11080}: '𑂀'
-    KaithiSignCandrabindu,
+    SignCandrabindu,
     /// \u{11081}: '𑂁'
-    KaithiSignAnusvara,
+    SignAnusvara,
     /// \u{11082}: '𑂂'
-    KaithiSignVisarga,
+    SignVisarga,
     /// \u{11083}: '𑂃'
-    KaithiLetterA,
+    LetterA,
     /// \u{11084}: '𑂄'
-    KaithiLetterAa,
+    LetterAa,
     /// \u{11085}: '𑂅'
-    KaithiLetterI,
+    LetterI,
     /// \u{11086}: '𑂆'
-    KaithiLetterIi,
+    LetterIi,
     /// \u{11087}: '𑂇'
-    KaithiLetterU,
+    LetterU,
     /// \u{11088}: '𑂈'
-    KaithiLetterUu,
+    LetterUu,
     /// \u{11089}: '𑂉'
-    KaithiLetterE,
+    LetterE,
     /// \u{1108a}: '𑂊'
-    KaithiLetterAi,
+    LetterAi,
     /// \u{1108b}: '𑂋'
-    KaithiLetterO,
+    LetterO,
     /// \u{1108c}: '𑂌'
-    KaithiLetterAu,
+    LetterAu,
     /// \u{1108d}: '𑂍'
-    KaithiLetterKa,
+    LetterKa,
     /// \u{1108e}: '𑂎'
-    KaithiLetterKha,
+    LetterKha,
     /// \u{1108f}: '𑂏'
-    KaithiLetterGa,
+    LetterGa,
     /// \u{11090}: '𑂐'
-    KaithiLetterGha,
+    LetterGha,
     /// \u{11091}: '𑂑'
-    KaithiLetterNga,
+    LetterNga,
     /// \u{11092}: '𑂒'
-    KaithiLetterCa,
+    LetterCa,
     /// \u{11093}: '𑂓'
-    KaithiLetterCha,
+    LetterCha,
     /// \u{11094}: '𑂔'
-    KaithiLetterJa,
+    LetterJa,
     /// \u{11095}: '𑂕'
-    KaithiLetterJha,
+    LetterJha,
     /// \u{11096}: '𑂖'
-    KaithiLetterNya,
+    LetterNya,
     /// \u{11097}: '𑂗'
-    KaithiLetterTta,
+    LetterTta,
     /// \u{11098}: '𑂘'
-    KaithiLetterTtha,
+    LetterTtha,
     /// \u{11099}: '𑂙'
-    KaithiLetterDda,
+    LetterDda,
     /// \u{1109a}: '𑂚'
-    KaithiLetterDddha,
+    LetterDddha,
     /// \u{1109b}: '𑂛'
-    KaithiLetterDdha,
+    LetterDdha,
     /// \u{1109c}: '𑂜'
-    KaithiLetterRha,
+    LetterRha,
     /// \u{1109d}: '𑂝'
-    KaithiLetterNna,
+    LetterNna,
     /// \u{1109e}: '𑂞'
-    KaithiLetterTa,
+    LetterTa,
     /// \u{1109f}: '𑂟'
-    KaithiLetterTha,
+    LetterTha,
     /// \u{110a0}: '𑂠'
-    KaithiLetterDa,
+    LetterDa,
     /// \u{110a1}: '𑂡'
-    KaithiLetterDha,
+    LetterDha,
     /// \u{110a2}: '𑂢'
-    KaithiLetterNa,
+    LetterNa,
     /// \u{110a3}: '𑂣'
-    KaithiLetterPa,
+    LetterPa,
     /// \u{110a4}: '𑂤'
-    KaithiLetterPha,
+    LetterPha,
     /// \u{110a5}: '𑂥'
-    KaithiLetterBa,
+    LetterBa,
     /// \u{110a6}: '𑂦'
-    KaithiLetterBha,
+    LetterBha,
     /// \u{110a7}: '𑂧'
-    KaithiLetterMa,
+    LetterMa,
     /// \u{110a8}: '𑂨'
-    KaithiLetterYa,
+    LetterYa,
     /// \u{110a9}: '𑂩'
-    KaithiLetterRa,
+    LetterRa,
     /// \u{110aa}: '𑂪'
-    KaithiLetterLa,
+    LetterLa,
     /// \u{110ab}: '𑂫'
-    KaithiLetterVa,
+    LetterVa,
     /// \u{110ac}: '𑂬'
-    KaithiLetterSha,
+    LetterSha,
     /// \u{110ad}: '𑂭'
-    KaithiLetterSsa,
+    LetterSsa,
     /// \u{110ae}: '𑂮'
-    KaithiLetterSa,
+    LetterSa,
     /// \u{110af}: '𑂯'
-    KaithiLetterHa,
+    LetterHa,
     /// \u{110b0}: '𑂰'
-    KaithiVowelSignAa,
+    VowelSignAa,
     /// \u{110b1}: '𑂱'
-    KaithiVowelSignI,
+    VowelSignI,
     /// \u{110b2}: '𑂲'
-    KaithiVowelSignIi,
+    VowelSignIi,
     /// \u{110b3}: '𑂳'
-    KaithiVowelSignU,
+    VowelSignU,
     /// \u{110b4}: '𑂴'
-    KaithiVowelSignUu,
+    VowelSignUu,
     /// \u{110b5}: '𑂵'
-    KaithiVowelSignE,
+    VowelSignE,
     /// \u{110b6}: '𑂶'
-    KaithiVowelSignAi,
+    VowelSignAi,
     /// \u{110b7}: '𑂷'
-    KaithiVowelSignO,
+    VowelSignO,
     /// \u{110b8}: '𑂸'
-    KaithiVowelSignAu,
+    VowelSignAu,
     /// \u{110b9}: '𑂹'
-    KaithiSignVirama,
+    SignVirama,
     /// \u{110ba}: '𑂺'
-    KaithiSignNukta,
+    SignNukta,
     /// \u{110bb}: '𑂻'
-    KaithiAbbreviationSign,
+    AbbreviationSign,
     /// \u{110bc}: '𑂼'
-    KaithiEnumerationSign,
+    EnumerationSign,
     /// \u{110bd}: '𑂽'
-    KaithiNumberSign,
+    NumberSign,
     /// \u{110be}: '𑂾'
-    KaithiSectionMark,
+    SectionMark,
     /// \u{110bf}: '𑂿'
-    KaithiDoubleSectionMark,
+    DoubleSectionMark,
     /// \u{110c0}: '𑃀'
-    KaithiDanda,
+    Danda,
     /// \u{110c1}: '𑃁'
-    KaithiDoubleDanda,
+    DoubleDanda,
     /// \u{110cd}: '𑃍'
-    KaithiNumberSignAbove,
+    NumberSignAbove,
 }
 
 impl Into<char> for Kaithi {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Kaithi::KaithiSignCandrabindu => KAITHI_SIGN_CANDRABINDU,
-            Kaithi::KaithiSignAnusvara => KAITHI_SIGN_ANUSVARA,
-            Kaithi::KaithiSignVisarga => KAITHI_SIGN_VISARGA,
-            Kaithi::KaithiLetterA => KAITHI_LETTER_A,
-            Kaithi::KaithiLetterAa => KAITHI_LETTER_AA,
-            Kaithi::KaithiLetterI => KAITHI_LETTER_I,
-            Kaithi::KaithiLetterIi => KAITHI_LETTER_II,
-            Kaithi::KaithiLetterU => KAITHI_LETTER_U,
-            Kaithi::KaithiLetterUu => KAITHI_LETTER_UU,
-            Kaithi::KaithiLetterE => KAITHI_LETTER_E,
-            Kaithi::KaithiLetterAi => KAITHI_LETTER_AI,
-            Kaithi::KaithiLetterO => KAITHI_LETTER_O,
-            Kaithi::KaithiLetterAu => KAITHI_LETTER_AU,
-            Kaithi::KaithiLetterKa => KAITHI_LETTER_KA,
-            Kaithi::KaithiLetterKha => KAITHI_LETTER_KHA,
-            Kaithi::KaithiLetterGa => KAITHI_LETTER_GA,
-            Kaithi::KaithiLetterGha => KAITHI_LETTER_GHA,
-            Kaithi::KaithiLetterNga => KAITHI_LETTER_NGA,
-            Kaithi::KaithiLetterCa => KAITHI_LETTER_CA,
-            Kaithi::KaithiLetterCha => KAITHI_LETTER_CHA,
-            Kaithi::KaithiLetterJa => KAITHI_LETTER_JA,
-            Kaithi::KaithiLetterJha => KAITHI_LETTER_JHA,
-            Kaithi::KaithiLetterNya => KAITHI_LETTER_NYA,
-            Kaithi::KaithiLetterTta => KAITHI_LETTER_TTA,
-            Kaithi::KaithiLetterTtha => KAITHI_LETTER_TTHA,
-            Kaithi::KaithiLetterDda => KAITHI_LETTER_DDA,
-            Kaithi::KaithiLetterDddha => KAITHI_LETTER_DDDHA,
-            Kaithi::KaithiLetterDdha => KAITHI_LETTER_DDHA,
-            Kaithi::KaithiLetterRha => KAITHI_LETTER_RHA,
-            Kaithi::KaithiLetterNna => KAITHI_LETTER_NNA,
-            Kaithi::KaithiLetterTa => KAITHI_LETTER_TA,
-            Kaithi::KaithiLetterTha => KAITHI_LETTER_THA,
-            Kaithi::KaithiLetterDa => KAITHI_LETTER_DA,
-            Kaithi::KaithiLetterDha => KAITHI_LETTER_DHA,
-            Kaithi::KaithiLetterNa => KAITHI_LETTER_NA,
-            Kaithi::KaithiLetterPa => KAITHI_LETTER_PA,
-            Kaithi::KaithiLetterPha => KAITHI_LETTER_PHA,
-            Kaithi::KaithiLetterBa => KAITHI_LETTER_BA,
-            Kaithi::KaithiLetterBha => KAITHI_LETTER_BHA,
-            Kaithi::KaithiLetterMa => KAITHI_LETTER_MA,
-            Kaithi::KaithiLetterYa => KAITHI_LETTER_YA,
-            Kaithi::KaithiLetterRa => KAITHI_LETTER_RA,
-            Kaithi::KaithiLetterLa => KAITHI_LETTER_LA,
-            Kaithi::KaithiLetterVa => KAITHI_LETTER_VA,
-            Kaithi::KaithiLetterSha => KAITHI_LETTER_SHA,
-            Kaithi::KaithiLetterSsa => KAITHI_LETTER_SSA,
-            Kaithi::KaithiLetterSa => KAITHI_LETTER_SA,
-            Kaithi::KaithiLetterHa => KAITHI_LETTER_HA,
-            Kaithi::KaithiVowelSignAa => KAITHI_VOWEL_SIGN_AA,
-            Kaithi::KaithiVowelSignI => KAITHI_VOWEL_SIGN_I,
-            Kaithi::KaithiVowelSignIi => KAITHI_VOWEL_SIGN_II,
-            Kaithi::KaithiVowelSignU => KAITHI_VOWEL_SIGN_U,
-            Kaithi::KaithiVowelSignUu => KAITHI_VOWEL_SIGN_UU,
-            Kaithi::KaithiVowelSignE => KAITHI_VOWEL_SIGN_E,
-            Kaithi::KaithiVowelSignAi => KAITHI_VOWEL_SIGN_AI,
-            Kaithi::KaithiVowelSignO => KAITHI_VOWEL_SIGN_O,
-            Kaithi::KaithiVowelSignAu => KAITHI_VOWEL_SIGN_AU,
-            Kaithi::KaithiSignVirama => KAITHI_SIGN_VIRAMA,
-            Kaithi::KaithiSignNukta => KAITHI_SIGN_NUKTA,
-            Kaithi::KaithiAbbreviationSign => KAITHI_ABBREVIATION_SIGN,
-            Kaithi::KaithiEnumerationSign => KAITHI_ENUMERATION_SIGN,
-            Kaithi::KaithiNumberSign => KAITHI_NUMBER_SIGN,
-            Kaithi::KaithiSectionMark => KAITHI_SECTION_MARK,
-            Kaithi::KaithiDoubleSectionMark => KAITHI_DOUBLE_SECTION_MARK,
-            Kaithi::KaithiDanda => KAITHI_DANDA,
-            Kaithi::KaithiDoubleDanda => KAITHI_DOUBLE_DANDA,
-            Kaithi::KaithiNumberSignAbove => KAITHI_NUMBER_SIGN_ABOVE,
+            Kaithi::SignCandrabindu => SIGN_CANDRABINDU,
+            Kaithi::SignAnusvara => SIGN_ANUSVARA,
+            Kaithi::SignVisarga => SIGN_VISARGA,
+            Kaithi::LetterA => LETTER_A,
+            Kaithi::LetterAa => LETTER_AA,
+            Kaithi::LetterI => LETTER_I,
+            Kaithi::LetterIi => LETTER_II,
+            Kaithi::LetterU => LETTER_U,
+            Kaithi::LetterUu => LETTER_UU,
+            Kaithi::LetterE => LETTER_E,
+            Kaithi::LetterAi => LETTER_AI,
+            Kaithi::LetterO => LETTER_O,
+            Kaithi::LetterAu => LETTER_AU,
+            Kaithi::LetterKa => LETTER_KA,
+            Kaithi::LetterKha => LETTER_KHA,
+            Kaithi::LetterGa => LETTER_GA,
+            Kaithi::LetterGha => LETTER_GHA,
+            Kaithi::LetterNga => LETTER_NGA,
+            Kaithi::LetterCa => LETTER_CA,
+            Kaithi::LetterCha => LETTER_CHA,
+            Kaithi::LetterJa => LETTER_JA,
+            Kaithi::LetterJha => LETTER_JHA,
+            Kaithi::LetterNya => LETTER_NYA,
+            Kaithi::LetterTta => LETTER_TTA,
+            Kaithi::LetterTtha => LETTER_TTHA,
+            Kaithi::LetterDda => LETTER_DDA,
+            Kaithi::LetterDddha => LETTER_DDDHA,
+            Kaithi::LetterDdha => LETTER_DDHA,
+            Kaithi::LetterRha => LETTER_RHA,
+            Kaithi::LetterNna => LETTER_NNA,
+            Kaithi::LetterTa => LETTER_TA,
+            Kaithi::LetterTha => LETTER_THA,
+            Kaithi::LetterDa => LETTER_DA,
+            Kaithi::LetterDha => LETTER_DHA,
+            Kaithi::LetterNa => LETTER_NA,
+            Kaithi::LetterPa => LETTER_PA,
+            Kaithi::LetterPha => LETTER_PHA,
+            Kaithi::LetterBa => LETTER_BA,
+            Kaithi::LetterBha => LETTER_BHA,
+            Kaithi::LetterMa => LETTER_MA,
+            Kaithi::LetterYa => LETTER_YA,
+            Kaithi::LetterRa => LETTER_RA,
+            Kaithi::LetterLa => LETTER_LA,
+            Kaithi::LetterVa => LETTER_VA,
+            Kaithi::LetterSha => LETTER_SHA,
+            Kaithi::LetterSsa => LETTER_SSA,
+            Kaithi::LetterSa => LETTER_SA,
+            Kaithi::LetterHa => LETTER_HA,
+            Kaithi::VowelSignAa => VOWEL_SIGN_AA,
+            Kaithi::VowelSignI => VOWEL_SIGN_I,
+            Kaithi::VowelSignIi => VOWEL_SIGN_II,
+            Kaithi::VowelSignU => VOWEL_SIGN_U,
+            Kaithi::VowelSignUu => VOWEL_SIGN_UU,
+            Kaithi::VowelSignE => VOWEL_SIGN_E,
+            Kaithi::VowelSignAi => VOWEL_SIGN_AI,
+            Kaithi::VowelSignO => VOWEL_SIGN_O,
+            Kaithi::VowelSignAu => VOWEL_SIGN_AU,
+            Kaithi::SignVirama => SIGN_VIRAMA,
+            Kaithi::SignNukta => SIGN_NUKTA,
+            Kaithi::AbbreviationSign => ABBREVIATION_SIGN,
+            Kaithi::EnumerationSign => ENUMERATION_SIGN,
+            Kaithi::NumberSign => NUMBER_SIGN,
+            Kaithi::SectionMark => SECTION_MARK,
+            Kaithi::DoubleSectionMark => DOUBLE_SECTION_MARK,
+            Kaithi::Danda => DANDA,
+            Kaithi::DoubleDanda => DOUBLE_DANDA,
+            Kaithi::NumberSignAbove => NUMBER_SIGN_ABOVE,
         }
     }
 }
@@ -367,73 +367,73 @@ impl std::convert::TryFrom<char> for Kaithi {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            KAITHI_SIGN_CANDRABINDU => Ok(Kaithi::KaithiSignCandrabindu),
-            KAITHI_SIGN_ANUSVARA => Ok(Kaithi::KaithiSignAnusvara),
-            KAITHI_SIGN_VISARGA => Ok(Kaithi::KaithiSignVisarga),
-            KAITHI_LETTER_A => Ok(Kaithi::KaithiLetterA),
-            KAITHI_LETTER_AA => Ok(Kaithi::KaithiLetterAa),
-            KAITHI_LETTER_I => Ok(Kaithi::KaithiLetterI),
-            KAITHI_LETTER_II => Ok(Kaithi::KaithiLetterIi),
-            KAITHI_LETTER_U => Ok(Kaithi::KaithiLetterU),
-            KAITHI_LETTER_UU => Ok(Kaithi::KaithiLetterUu),
-            KAITHI_LETTER_E => Ok(Kaithi::KaithiLetterE),
-            KAITHI_LETTER_AI => Ok(Kaithi::KaithiLetterAi),
-            KAITHI_LETTER_O => Ok(Kaithi::KaithiLetterO),
-            KAITHI_LETTER_AU => Ok(Kaithi::KaithiLetterAu),
-            KAITHI_LETTER_KA => Ok(Kaithi::KaithiLetterKa),
-            KAITHI_LETTER_KHA => Ok(Kaithi::KaithiLetterKha),
-            KAITHI_LETTER_GA => Ok(Kaithi::KaithiLetterGa),
-            KAITHI_LETTER_GHA => Ok(Kaithi::KaithiLetterGha),
-            KAITHI_LETTER_NGA => Ok(Kaithi::KaithiLetterNga),
-            KAITHI_LETTER_CA => Ok(Kaithi::KaithiLetterCa),
-            KAITHI_LETTER_CHA => Ok(Kaithi::KaithiLetterCha),
-            KAITHI_LETTER_JA => Ok(Kaithi::KaithiLetterJa),
-            KAITHI_LETTER_JHA => Ok(Kaithi::KaithiLetterJha),
-            KAITHI_LETTER_NYA => Ok(Kaithi::KaithiLetterNya),
-            KAITHI_LETTER_TTA => Ok(Kaithi::KaithiLetterTta),
-            KAITHI_LETTER_TTHA => Ok(Kaithi::KaithiLetterTtha),
-            KAITHI_LETTER_DDA => Ok(Kaithi::KaithiLetterDda),
-            KAITHI_LETTER_DDDHA => Ok(Kaithi::KaithiLetterDddha),
-            KAITHI_LETTER_DDHA => Ok(Kaithi::KaithiLetterDdha),
-            KAITHI_LETTER_RHA => Ok(Kaithi::KaithiLetterRha),
-            KAITHI_LETTER_NNA => Ok(Kaithi::KaithiLetterNna),
-            KAITHI_LETTER_TA => Ok(Kaithi::KaithiLetterTa),
-            KAITHI_LETTER_THA => Ok(Kaithi::KaithiLetterTha),
-            KAITHI_LETTER_DA => Ok(Kaithi::KaithiLetterDa),
-            KAITHI_LETTER_DHA => Ok(Kaithi::KaithiLetterDha),
-            KAITHI_LETTER_NA => Ok(Kaithi::KaithiLetterNa),
-            KAITHI_LETTER_PA => Ok(Kaithi::KaithiLetterPa),
-            KAITHI_LETTER_PHA => Ok(Kaithi::KaithiLetterPha),
-            KAITHI_LETTER_BA => Ok(Kaithi::KaithiLetterBa),
-            KAITHI_LETTER_BHA => Ok(Kaithi::KaithiLetterBha),
-            KAITHI_LETTER_MA => Ok(Kaithi::KaithiLetterMa),
-            KAITHI_LETTER_YA => Ok(Kaithi::KaithiLetterYa),
-            KAITHI_LETTER_RA => Ok(Kaithi::KaithiLetterRa),
-            KAITHI_LETTER_LA => Ok(Kaithi::KaithiLetterLa),
-            KAITHI_LETTER_VA => Ok(Kaithi::KaithiLetterVa),
-            KAITHI_LETTER_SHA => Ok(Kaithi::KaithiLetterSha),
-            KAITHI_LETTER_SSA => Ok(Kaithi::KaithiLetterSsa),
-            KAITHI_LETTER_SA => Ok(Kaithi::KaithiLetterSa),
-            KAITHI_LETTER_HA => Ok(Kaithi::KaithiLetterHa),
-            KAITHI_VOWEL_SIGN_AA => Ok(Kaithi::KaithiVowelSignAa),
-            KAITHI_VOWEL_SIGN_I => Ok(Kaithi::KaithiVowelSignI),
-            KAITHI_VOWEL_SIGN_II => Ok(Kaithi::KaithiVowelSignIi),
-            KAITHI_VOWEL_SIGN_U => Ok(Kaithi::KaithiVowelSignU),
-            KAITHI_VOWEL_SIGN_UU => Ok(Kaithi::KaithiVowelSignUu),
-            KAITHI_VOWEL_SIGN_E => Ok(Kaithi::KaithiVowelSignE),
-            KAITHI_VOWEL_SIGN_AI => Ok(Kaithi::KaithiVowelSignAi),
-            KAITHI_VOWEL_SIGN_O => Ok(Kaithi::KaithiVowelSignO),
-            KAITHI_VOWEL_SIGN_AU => Ok(Kaithi::KaithiVowelSignAu),
-            KAITHI_SIGN_VIRAMA => Ok(Kaithi::KaithiSignVirama),
-            KAITHI_SIGN_NUKTA => Ok(Kaithi::KaithiSignNukta),
-            KAITHI_ABBREVIATION_SIGN => Ok(Kaithi::KaithiAbbreviationSign),
-            KAITHI_ENUMERATION_SIGN => Ok(Kaithi::KaithiEnumerationSign),
-            KAITHI_NUMBER_SIGN => Ok(Kaithi::KaithiNumberSign),
-            KAITHI_SECTION_MARK => Ok(Kaithi::KaithiSectionMark),
-            KAITHI_DOUBLE_SECTION_MARK => Ok(Kaithi::KaithiDoubleSectionMark),
-            KAITHI_DANDA => Ok(Kaithi::KaithiDanda),
-            KAITHI_DOUBLE_DANDA => Ok(Kaithi::KaithiDoubleDanda),
-            KAITHI_NUMBER_SIGN_ABOVE => Ok(Kaithi::KaithiNumberSignAbove),
+            SIGN_CANDRABINDU => Ok(Kaithi::SignCandrabindu),
+            SIGN_ANUSVARA => Ok(Kaithi::SignAnusvara),
+            SIGN_VISARGA => Ok(Kaithi::SignVisarga),
+            LETTER_A => Ok(Kaithi::LetterA),
+            LETTER_AA => Ok(Kaithi::LetterAa),
+            LETTER_I => Ok(Kaithi::LetterI),
+            LETTER_II => Ok(Kaithi::LetterIi),
+            LETTER_U => Ok(Kaithi::LetterU),
+            LETTER_UU => Ok(Kaithi::LetterUu),
+            LETTER_E => Ok(Kaithi::LetterE),
+            LETTER_AI => Ok(Kaithi::LetterAi),
+            LETTER_O => Ok(Kaithi::LetterO),
+            LETTER_AU => Ok(Kaithi::LetterAu),
+            LETTER_KA => Ok(Kaithi::LetterKa),
+            LETTER_KHA => Ok(Kaithi::LetterKha),
+            LETTER_GA => Ok(Kaithi::LetterGa),
+            LETTER_GHA => Ok(Kaithi::LetterGha),
+            LETTER_NGA => Ok(Kaithi::LetterNga),
+            LETTER_CA => Ok(Kaithi::LetterCa),
+            LETTER_CHA => Ok(Kaithi::LetterCha),
+            LETTER_JA => Ok(Kaithi::LetterJa),
+            LETTER_JHA => Ok(Kaithi::LetterJha),
+            LETTER_NYA => Ok(Kaithi::LetterNya),
+            LETTER_TTA => Ok(Kaithi::LetterTta),
+            LETTER_TTHA => Ok(Kaithi::LetterTtha),
+            LETTER_DDA => Ok(Kaithi::LetterDda),
+            LETTER_DDDHA => Ok(Kaithi::LetterDddha),
+            LETTER_DDHA => Ok(Kaithi::LetterDdha),
+            LETTER_RHA => Ok(Kaithi::LetterRha),
+            LETTER_NNA => Ok(Kaithi::LetterNna),
+            LETTER_TA => Ok(Kaithi::LetterTa),
+            LETTER_THA => Ok(Kaithi::LetterTha),
+            LETTER_DA => Ok(Kaithi::LetterDa),
+            LETTER_DHA => Ok(Kaithi::LetterDha),
+            LETTER_NA => Ok(Kaithi::LetterNa),
+            LETTER_PA => Ok(Kaithi::LetterPa),
+            LETTER_PHA => Ok(Kaithi::LetterPha),
+            LETTER_BA => Ok(Kaithi::LetterBa),
+            LETTER_BHA => Ok(Kaithi::LetterBha),
+            LETTER_MA => Ok(Kaithi::LetterMa),
+            LETTER_YA => Ok(Kaithi::LetterYa),
+            LETTER_RA => Ok(Kaithi::LetterRa),
+            LETTER_LA => Ok(Kaithi::LetterLa),
+            LETTER_VA => Ok(Kaithi::LetterVa),
+            LETTER_SHA => Ok(Kaithi::LetterSha),
+            LETTER_SSA => Ok(Kaithi::LetterSsa),
+            LETTER_SA => Ok(Kaithi::LetterSa),
+            LETTER_HA => Ok(Kaithi::LetterHa),
+            VOWEL_SIGN_AA => Ok(Kaithi::VowelSignAa),
+            VOWEL_SIGN_I => Ok(Kaithi::VowelSignI),
+            VOWEL_SIGN_II => Ok(Kaithi::VowelSignIi),
+            VOWEL_SIGN_U => Ok(Kaithi::VowelSignU),
+            VOWEL_SIGN_UU => Ok(Kaithi::VowelSignUu),
+            VOWEL_SIGN_E => Ok(Kaithi::VowelSignE),
+            VOWEL_SIGN_AI => Ok(Kaithi::VowelSignAi),
+            VOWEL_SIGN_O => Ok(Kaithi::VowelSignO),
+            VOWEL_SIGN_AU => Ok(Kaithi::VowelSignAu),
+            SIGN_VIRAMA => Ok(Kaithi::SignVirama),
+            SIGN_NUKTA => Ok(Kaithi::SignNukta),
+            ABBREVIATION_SIGN => Ok(Kaithi::AbbreviationSign),
+            ENUMERATION_SIGN => Ok(Kaithi::EnumerationSign),
+            NUMBER_SIGN => Ok(Kaithi::NumberSign),
+            SECTION_MARK => Ok(Kaithi::SectionMark),
+            DOUBLE_SECTION_MARK => Ok(Kaithi::DoubleSectionMark),
+            DANDA => Ok(Kaithi::Danda),
+            DOUBLE_DANDA => Ok(Kaithi::DoubleDanda),
+            NUMBER_SIGN_ABOVE => Ok(Kaithi::NumberSignAbove),
             _ => Err(()),
         }
     }
@@ -472,81 +472,81 @@ impl Iterator for Kaithi {
 }
 
 impl Kaithi {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Kaithi::KaithiSignCandrabindu
+        Kaithi::SignCandrabindu
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Kaithi::KaithiSignCandrabindu => "kaithi sign candrabindu",
-            Kaithi::KaithiSignAnusvara => "kaithi sign anusvara",
-            Kaithi::KaithiSignVisarga => "kaithi sign visarga",
-            Kaithi::KaithiLetterA => "kaithi letter a",
-            Kaithi::KaithiLetterAa => "kaithi letter aa",
-            Kaithi::KaithiLetterI => "kaithi letter i",
-            Kaithi::KaithiLetterIi => "kaithi letter ii",
-            Kaithi::KaithiLetterU => "kaithi letter u",
-            Kaithi::KaithiLetterUu => "kaithi letter uu",
-            Kaithi::KaithiLetterE => "kaithi letter e",
-            Kaithi::KaithiLetterAi => "kaithi letter ai",
-            Kaithi::KaithiLetterO => "kaithi letter o",
-            Kaithi::KaithiLetterAu => "kaithi letter au",
-            Kaithi::KaithiLetterKa => "kaithi letter ka",
-            Kaithi::KaithiLetterKha => "kaithi letter kha",
-            Kaithi::KaithiLetterGa => "kaithi letter ga",
-            Kaithi::KaithiLetterGha => "kaithi letter gha",
-            Kaithi::KaithiLetterNga => "kaithi letter nga",
-            Kaithi::KaithiLetterCa => "kaithi letter ca",
-            Kaithi::KaithiLetterCha => "kaithi letter cha",
-            Kaithi::KaithiLetterJa => "kaithi letter ja",
-            Kaithi::KaithiLetterJha => "kaithi letter jha",
-            Kaithi::KaithiLetterNya => "kaithi letter nya",
-            Kaithi::KaithiLetterTta => "kaithi letter tta",
-            Kaithi::KaithiLetterTtha => "kaithi letter ttha",
-            Kaithi::KaithiLetterDda => "kaithi letter dda",
-            Kaithi::KaithiLetterDddha => "kaithi letter dddha",
-            Kaithi::KaithiLetterDdha => "kaithi letter ddha",
-            Kaithi::KaithiLetterRha => "kaithi letter rha",
-            Kaithi::KaithiLetterNna => "kaithi letter nna",
-            Kaithi::KaithiLetterTa => "kaithi letter ta",
-            Kaithi::KaithiLetterTha => "kaithi letter tha",
-            Kaithi::KaithiLetterDa => "kaithi letter da",
-            Kaithi::KaithiLetterDha => "kaithi letter dha",
-            Kaithi::KaithiLetterNa => "kaithi letter na",
-            Kaithi::KaithiLetterPa => "kaithi letter pa",
-            Kaithi::KaithiLetterPha => "kaithi letter pha",
-            Kaithi::KaithiLetterBa => "kaithi letter ba",
-            Kaithi::KaithiLetterBha => "kaithi letter bha",
-            Kaithi::KaithiLetterMa => "kaithi letter ma",
-            Kaithi::KaithiLetterYa => "kaithi letter ya",
-            Kaithi::KaithiLetterRa => "kaithi letter ra",
-            Kaithi::KaithiLetterLa => "kaithi letter la",
-            Kaithi::KaithiLetterVa => "kaithi letter va",
-            Kaithi::KaithiLetterSha => "kaithi letter sha",
-            Kaithi::KaithiLetterSsa => "kaithi letter ssa",
-            Kaithi::KaithiLetterSa => "kaithi letter sa",
-            Kaithi::KaithiLetterHa => "kaithi letter ha",
-            Kaithi::KaithiVowelSignAa => "kaithi vowel sign aa",
-            Kaithi::KaithiVowelSignI => "kaithi vowel sign i",
-            Kaithi::KaithiVowelSignIi => "kaithi vowel sign ii",
-            Kaithi::KaithiVowelSignU => "kaithi vowel sign u",
-            Kaithi::KaithiVowelSignUu => "kaithi vowel sign uu",
-            Kaithi::KaithiVowelSignE => "kaithi vowel sign e",
-            Kaithi::KaithiVowelSignAi => "kaithi vowel sign ai",
-            Kaithi::KaithiVowelSignO => "kaithi vowel sign o",
-            Kaithi::KaithiVowelSignAu => "kaithi vowel sign au",
-            Kaithi::KaithiSignVirama => "kaithi sign virama",
-            Kaithi::KaithiSignNukta => "kaithi sign nukta",
-            Kaithi::KaithiAbbreviationSign => "kaithi abbreviation sign",
-            Kaithi::KaithiEnumerationSign => "kaithi enumeration sign",
-            Kaithi::KaithiNumberSign => "kaithi number sign",
-            Kaithi::KaithiSectionMark => "kaithi section mark",
-            Kaithi::KaithiDoubleSectionMark => "kaithi double section mark",
-            Kaithi::KaithiDanda => "kaithi danda",
-            Kaithi::KaithiDoubleDanda => "kaithi double danda",
-            Kaithi::KaithiNumberSignAbove => "kaithi number sign above",
+            Kaithi::SignCandrabindu => "kaithi sign candrabindu",
+            Kaithi::SignAnusvara => "kaithi sign anusvara",
+            Kaithi::SignVisarga => "kaithi sign visarga",
+            Kaithi::LetterA => "kaithi letter a",
+            Kaithi::LetterAa => "kaithi letter aa",
+            Kaithi::LetterI => "kaithi letter i",
+            Kaithi::LetterIi => "kaithi letter ii",
+            Kaithi::LetterU => "kaithi letter u",
+            Kaithi::LetterUu => "kaithi letter uu",
+            Kaithi::LetterE => "kaithi letter e",
+            Kaithi::LetterAi => "kaithi letter ai",
+            Kaithi::LetterO => "kaithi letter o",
+            Kaithi::LetterAu => "kaithi letter au",
+            Kaithi::LetterKa => "kaithi letter ka",
+            Kaithi::LetterKha => "kaithi letter kha",
+            Kaithi::LetterGa => "kaithi letter ga",
+            Kaithi::LetterGha => "kaithi letter gha",
+            Kaithi::LetterNga => "kaithi letter nga",
+            Kaithi::LetterCa => "kaithi letter ca",
+            Kaithi::LetterCha => "kaithi letter cha",
+            Kaithi::LetterJa => "kaithi letter ja",
+            Kaithi::LetterJha => "kaithi letter jha",
+            Kaithi::LetterNya => "kaithi letter nya",
+            Kaithi::LetterTta => "kaithi letter tta",
+            Kaithi::LetterTtha => "kaithi letter ttha",
+            Kaithi::LetterDda => "kaithi letter dda",
+            Kaithi::LetterDddha => "kaithi letter dddha",
+            Kaithi::LetterDdha => "kaithi letter ddha",
+            Kaithi::LetterRha => "kaithi letter rha",
+            Kaithi::LetterNna => "kaithi letter nna",
+            Kaithi::LetterTa => "kaithi letter ta",
+            Kaithi::LetterTha => "kaithi letter tha",
+            Kaithi::LetterDa => "kaithi letter da",
+            Kaithi::LetterDha => "kaithi letter dha",
+            Kaithi::LetterNa => "kaithi letter na",
+            Kaithi::LetterPa => "kaithi letter pa",
+            Kaithi::LetterPha => "kaithi letter pha",
+            Kaithi::LetterBa => "kaithi letter ba",
+            Kaithi::LetterBha => "kaithi letter bha",
+            Kaithi::LetterMa => "kaithi letter ma",
+            Kaithi::LetterYa => "kaithi letter ya",
+            Kaithi::LetterRa => "kaithi letter ra",
+            Kaithi::LetterLa => "kaithi letter la",
+            Kaithi::LetterVa => "kaithi letter va",
+            Kaithi::LetterSha => "kaithi letter sha",
+            Kaithi::LetterSsa => "kaithi letter ssa",
+            Kaithi::LetterSa => "kaithi letter sa",
+            Kaithi::LetterHa => "kaithi letter ha",
+            Kaithi::VowelSignAa => "kaithi vowel sign aa",
+            Kaithi::VowelSignI => "kaithi vowel sign i",
+            Kaithi::VowelSignIi => "kaithi vowel sign ii",
+            Kaithi::VowelSignU => "kaithi vowel sign u",
+            Kaithi::VowelSignUu => "kaithi vowel sign uu",
+            Kaithi::VowelSignE => "kaithi vowel sign e",
+            Kaithi::VowelSignAi => "kaithi vowel sign ai",
+            Kaithi::VowelSignO => "kaithi vowel sign o",
+            Kaithi::VowelSignAu => "kaithi vowel sign au",
+            Kaithi::SignVirama => "kaithi sign virama",
+            Kaithi::SignNukta => "kaithi sign nukta",
+            Kaithi::AbbreviationSign => "kaithi abbreviation sign",
+            Kaithi::EnumerationSign => "kaithi enumeration sign",
+            Kaithi::NumberSign => "kaithi number sign",
+            Kaithi::SectionMark => "kaithi section mark",
+            Kaithi::DoubleSectionMark => "kaithi double section mark",
+            Kaithi::Danda => "kaithi danda",
+            Kaithi::DoubleDanda => "kaithi double danda",
+            Kaithi::NumberSignAbove => "kaithi number sign above",
         }
     }
 }

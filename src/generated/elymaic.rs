@@ -4,51 +4,51 @@
 /// 𐿰 𐿱 𐿲 𐿳 𐿴 𐿵 𐿶
 pub mod constants {
     /// \u{10fe0}: '𐿠'
-    pub const ELYMAIC_LETTER_ALEPH: char = '𐿠';
+    pub const LETTER_ALEPH: char = '𐿠';
     /// \u{10fe1}: '𐿡'
-    pub const ELYMAIC_LETTER_BETH: char = '𐿡';
+    pub const LETTER_BETH: char = '𐿡';
     /// \u{10fe2}: '𐿢'
-    pub const ELYMAIC_LETTER_GIMEL: char = '𐿢';
+    pub const LETTER_GIMEL: char = '𐿢';
     /// \u{10fe3}: '𐿣'
-    pub const ELYMAIC_LETTER_DALETH: char = '𐿣';
+    pub const LETTER_DALETH: char = '𐿣';
     /// \u{10fe4}: '𐿤'
-    pub const ELYMAIC_LETTER_HE: char = '𐿤';
+    pub const LETTER_HE: char = '𐿤';
     /// \u{10fe5}: '𐿥'
-    pub const ELYMAIC_LETTER_WAW: char = '𐿥';
+    pub const LETTER_WAW: char = '𐿥';
     /// \u{10fe6}: '𐿦'
-    pub const ELYMAIC_LETTER_ZAYIN: char = '𐿦';
+    pub const LETTER_ZAYIN: char = '𐿦';
     /// \u{10fe7}: '𐿧'
-    pub const ELYMAIC_LETTER_HETH: char = '𐿧';
+    pub const LETTER_HETH: char = '𐿧';
     /// \u{10fe8}: '𐿨'
-    pub const ELYMAIC_LETTER_TETH: char = '𐿨';
+    pub const LETTER_TETH: char = '𐿨';
     /// \u{10fe9}: '𐿩'
-    pub const ELYMAIC_LETTER_YODH: char = '𐿩';
+    pub const LETTER_YODH: char = '𐿩';
     /// \u{10fea}: '𐿪'
-    pub const ELYMAIC_LETTER_KAPH: char = '𐿪';
+    pub const LETTER_KAPH: char = '𐿪';
     /// \u{10feb}: '𐿫'
-    pub const ELYMAIC_LETTER_LAMEDH: char = '𐿫';
+    pub const LETTER_LAMEDH: char = '𐿫';
     /// \u{10fec}: '𐿬'
-    pub const ELYMAIC_LETTER_MEM: char = '𐿬';
+    pub const LETTER_MEM: char = '𐿬';
     /// \u{10fed}: '𐿭'
-    pub const ELYMAIC_LETTER_NUN: char = '𐿭';
+    pub const LETTER_NUN: char = '𐿭';
     /// \u{10fee}: '𐿮'
-    pub const ELYMAIC_LETTER_SAMEKH: char = '𐿮';
+    pub const LETTER_SAMEKH: char = '𐿮';
     /// \u{10fef}: '𐿯'
-    pub const ELYMAIC_LETTER_AYIN: char = '𐿯';
+    pub const LETTER_AYIN: char = '𐿯';
     /// \u{10ff0}: '𐿰'
-    pub const ELYMAIC_LETTER_PE: char = '𐿰';
+    pub const LETTER_PE: char = '𐿰';
     /// \u{10ff1}: '𐿱'
-    pub const ELYMAIC_LETTER_SADHE: char = '𐿱';
+    pub const LETTER_SADHE: char = '𐿱';
     /// \u{10ff2}: '𐿲'
-    pub const ELYMAIC_LETTER_QOPH: char = '𐿲';
+    pub const LETTER_QOPH: char = '𐿲';
     /// \u{10ff3}: '𐿳'
-    pub const ELYMAIC_LETTER_RESH: char = '𐿳';
+    pub const LETTER_RESH: char = '𐿳';
     /// \u{10ff4}: '𐿴'
-    pub const ELYMAIC_LETTER_SHIN: char = '𐿴';
+    pub const LETTER_SHIN: char = '𐿴';
     /// \u{10ff5}: '𐿵'
-    pub const ELYMAIC_LETTER_TAW: char = '𐿵';
+    pub const LETTER_TAW: char = '𐿵';
     /// \u{10ff6}: '𐿶'
-    pub const ELYMAIC_LIGATURE_ZAYIN_DASH_YODH: char = '𐿶';
+    pub const LIGATURE_ZAYIN_DASH_YODH: char = '𐿶';
 }
 
 /// \u{10fe0} → \u{10fff}\
@@ -58,80 +58,80 @@ pub mod constants {
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Elymaic {
     /// \u{10fe0}: '𐿠'
-    ElymaicLetterAleph,
+    LetterAleph,
     /// \u{10fe1}: '𐿡'
-    ElymaicLetterBeth,
+    LetterBeth,
     /// \u{10fe2}: '𐿢'
-    ElymaicLetterGimel,
+    LetterGimel,
     /// \u{10fe3}: '𐿣'
-    ElymaicLetterDaleth,
+    LetterDaleth,
     /// \u{10fe4}: '𐿤'
-    ElymaicLetterHe,
+    LetterHe,
     /// \u{10fe5}: '𐿥'
-    ElymaicLetterWaw,
+    LetterWaw,
     /// \u{10fe6}: '𐿦'
-    ElymaicLetterZayin,
+    LetterZayin,
     /// \u{10fe7}: '𐿧'
-    ElymaicLetterHeth,
+    LetterHeth,
     /// \u{10fe8}: '𐿨'
-    ElymaicLetterTeth,
+    LetterTeth,
     /// \u{10fe9}: '𐿩'
-    ElymaicLetterYodh,
+    LetterYodh,
     /// \u{10fea}: '𐿪'
-    ElymaicLetterKaph,
+    LetterKaph,
     /// \u{10feb}: '𐿫'
-    ElymaicLetterLamedh,
+    LetterLamedh,
     /// \u{10fec}: '𐿬'
-    ElymaicLetterMem,
+    LetterMem,
     /// \u{10fed}: '𐿭'
-    ElymaicLetterNun,
+    LetterNun,
     /// \u{10fee}: '𐿮'
-    ElymaicLetterSamekh,
+    LetterSamekh,
     /// \u{10fef}: '𐿯'
-    ElymaicLetterAyin,
+    LetterAyin,
     /// \u{10ff0}: '𐿰'
-    ElymaicLetterPe,
+    LetterPe,
     /// \u{10ff1}: '𐿱'
-    ElymaicLetterSadhe,
+    LetterSadhe,
     /// \u{10ff2}: '𐿲'
-    ElymaicLetterQoph,
+    LetterQoph,
     /// \u{10ff3}: '𐿳'
-    ElymaicLetterResh,
+    LetterResh,
     /// \u{10ff4}: '𐿴'
-    ElymaicLetterShin,
+    LetterShin,
     /// \u{10ff5}: '𐿵'
-    ElymaicLetterTaw,
+    LetterTaw,
     /// \u{10ff6}: '𐿶'
-    ElymaicLigatureZayinDashYodh,
+    LigatureZayinDashYodh,
 }
 
 impl Into<char> for Elymaic {
     fn into(self) -> char {
         use constants::*;
         match self {
-            Elymaic::ElymaicLetterAleph => ELYMAIC_LETTER_ALEPH,
-            Elymaic::ElymaicLetterBeth => ELYMAIC_LETTER_BETH,
-            Elymaic::ElymaicLetterGimel => ELYMAIC_LETTER_GIMEL,
-            Elymaic::ElymaicLetterDaleth => ELYMAIC_LETTER_DALETH,
-            Elymaic::ElymaicLetterHe => ELYMAIC_LETTER_HE,
-            Elymaic::ElymaicLetterWaw => ELYMAIC_LETTER_WAW,
-            Elymaic::ElymaicLetterZayin => ELYMAIC_LETTER_ZAYIN,
-            Elymaic::ElymaicLetterHeth => ELYMAIC_LETTER_HETH,
-            Elymaic::ElymaicLetterTeth => ELYMAIC_LETTER_TETH,
-            Elymaic::ElymaicLetterYodh => ELYMAIC_LETTER_YODH,
-            Elymaic::ElymaicLetterKaph => ELYMAIC_LETTER_KAPH,
-            Elymaic::ElymaicLetterLamedh => ELYMAIC_LETTER_LAMEDH,
-            Elymaic::ElymaicLetterMem => ELYMAIC_LETTER_MEM,
-            Elymaic::ElymaicLetterNun => ELYMAIC_LETTER_NUN,
-            Elymaic::ElymaicLetterSamekh => ELYMAIC_LETTER_SAMEKH,
-            Elymaic::ElymaicLetterAyin => ELYMAIC_LETTER_AYIN,
-            Elymaic::ElymaicLetterPe => ELYMAIC_LETTER_PE,
-            Elymaic::ElymaicLetterSadhe => ELYMAIC_LETTER_SADHE,
-            Elymaic::ElymaicLetterQoph => ELYMAIC_LETTER_QOPH,
-            Elymaic::ElymaicLetterResh => ELYMAIC_LETTER_RESH,
-            Elymaic::ElymaicLetterShin => ELYMAIC_LETTER_SHIN,
-            Elymaic::ElymaicLetterTaw => ELYMAIC_LETTER_TAW,
-            Elymaic::ElymaicLigatureZayinDashYodh => ELYMAIC_LIGATURE_ZAYIN_DASH_YODH,
+            Elymaic::LetterAleph => LETTER_ALEPH,
+            Elymaic::LetterBeth => LETTER_BETH,
+            Elymaic::LetterGimel => LETTER_GIMEL,
+            Elymaic::LetterDaleth => LETTER_DALETH,
+            Elymaic::LetterHe => LETTER_HE,
+            Elymaic::LetterWaw => LETTER_WAW,
+            Elymaic::LetterZayin => LETTER_ZAYIN,
+            Elymaic::LetterHeth => LETTER_HETH,
+            Elymaic::LetterTeth => LETTER_TETH,
+            Elymaic::LetterYodh => LETTER_YODH,
+            Elymaic::LetterKaph => LETTER_KAPH,
+            Elymaic::LetterLamedh => LETTER_LAMEDH,
+            Elymaic::LetterMem => LETTER_MEM,
+            Elymaic::LetterNun => LETTER_NUN,
+            Elymaic::LetterSamekh => LETTER_SAMEKH,
+            Elymaic::LetterAyin => LETTER_AYIN,
+            Elymaic::LetterPe => LETTER_PE,
+            Elymaic::LetterSadhe => LETTER_SADHE,
+            Elymaic::LetterQoph => LETTER_QOPH,
+            Elymaic::LetterResh => LETTER_RESH,
+            Elymaic::LetterShin => LETTER_SHIN,
+            Elymaic::LetterTaw => LETTER_TAW,
+            Elymaic::LigatureZayinDashYodh => LIGATURE_ZAYIN_DASH_YODH,
         }
     }
 }
@@ -141,29 +141,29 @@ impl std::convert::TryFrom<char> for Elymaic {
     fn try_from(c: char) -> Result<Self, Self::Error> {
         use constants::*;
         match c {
-            ELYMAIC_LETTER_ALEPH => Ok(Elymaic::ElymaicLetterAleph),
-            ELYMAIC_LETTER_BETH => Ok(Elymaic::ElymaicLetterBeth),
-            ELYMAIC_LETTER_GIMEL => Ok(Elymaic::ElymaicLetterGimel),
-            ELYMAIC_LETTER_DALETH => Ok(Elymaic::ElymaicLetterDaleth),
-            ELYMAIC_LETTER_HE => Ok(Elymaic::ElymaicLetterHe),
-            ELYMAIC_LETTER_WAW => Ok(Elymaic::ElymaicLetterWaw),
-            ELYMAIC_LETTER_ZAYIN => Ok(Elymaic::ElymaicLetterZayin),
-            ELYMAIC_LETTER_HETH => Ok(Elymaic::ElymaicLetterHeth),
-            ELYMAIC_LETTER_TETH => Ok(Elymaic::ElymaicLetterTeth),
-            ELYMAIC_LETTER_YODH => Ok(Elymaic::ElymaicLetterYodh),
-            ELYMAIC_LETTER_KAPH => Ok(Elymaic::ElymaicLetterKaph),
-            ELYMAIC_LETTER_LAMEDH => Ok(Elymaic::ElymaicLetterLamedh),
-            ELYMAIC_LETTER_MEM => Ok(Elymaic::ElymaicLetterMem),
-            ELYMAIC_LETTER_NUN => Ok(Elymaic::ElymaicLetterNun),
-            ELYMAIC_LETTER_SAMEKH => Ok(Elymaic::ElymaicLetterSamekh),
-            ELYMAIC_LETTER_AYIN => Ok(Elymaic::ElymaicLetterAyin),
-            ELYMAIC_LETTER_PE => Ok(Elymaic::ElymaicLetterPe),
-            ELYMAIC_LETTER_SADHE => Ok(Elymaic::ElymaicLetterSadhe),
-            ELYMAIC_LETTER_QOPH => Ok(Elymaic::ElymaicLetterQoph),
-            ELYMAIC_LETTER_RESH => Ok(Elymaic::ElymaicLetterResh),
-            ELYMAIC_LETTER_SHIN => Ok(Elymaic::ElymaicLetterShin),
-            ELYMAIC_LETTER_TAW => Ok(Elymaic::ElymaicLetterTaw),
-            ELYMAIC_LIGATURE_ZAYIN_DASH_YODH => Ok(Elymaic::ElymaicLigatureZayinDashYodh),
+            LETTER_ALEPH => Ok(Elymaic::LetterAleph),
+            LETTER_BETH => Ok(Elymaic::LetterBeth),
+            LETTER_GIMEL => Ok(Elymaic::LetterGimel),
+            LETTER_DALETH => Ok(Elymaic::LetterDaleth),
+            LETTER_HE => Ok(Elymaic::LetterHe),
+            LETTER_WAW => Ok(Elymaic::LetterWaw),
+            LETTER_ZAYIN => Ok(Elymaic::LetterZayin),
+            LETTER_HETH => Ok(Elymaic::LetterHeth),
+            LETTER_TETH => Ok(Elymaic::LetterTeth),
+            LETTER_YODH => Ok(Elymaic::LetterYodh),
+            LETTER_KAPH => Ok(Elymaic::LetterKaph),
+            LETTER_LAMEDH => Ok(Elymaic::LetterLamedh),
+            LETTER_MEM => Ok(Elymaic::LetterMem),
+            LETTER_NUN => Ok(Elymaic::LetterNun),
+            LETTER_SAMEKH => Ok(Elymaic::LetterSamekh),
+            LETTER_AYIN => Ok(Elymaic::LetterAyin),
+            LETTER_PE => Ok(Elymaic::LetterPe),
+            LETTER_SADHE => Ok(Elymaic::LetterSadhe),
+            LETTER_QOPH => Ok(Elymaic::LetterQoph),
+            LETTER_RESH => Ok(Elymaic::LetterResh),
+            LETTER_SHIN => Ok(Elymaic::LetterShin),
+            LETTER_TAW => Ok(Elymaic::LetterTaw),
+            LIGATURE_ZAYIN_DASH_YODH => Ok(Elymaic::LigatureZayinDashYodh),
             _ => Err(()),
         }
     }
@@ -202,37 +202,37 @@ impl Iterator for Elymaic {
 }
 
 impl Elymaic {
-    /// The character with the lowest index this unicode block
+    /// The character with the lowest index in this unicode block
     pub fn new() -> Self {
-        Elymaic::ElymaicLetterAleph
+        Elymaic::LetterAleph
     }
 
     /// The character's name, all lowercase and space-separated
     pub fn name(&self) -> &str {
         match self {
-            Elymaic::ElymaicLetterAleph => "elymaic letter aleph",
-            Elymaic::ElymaicLetterBeth => "elymaic letter beth",
-            Elymaic::ElymaicLetterGimel => "elymaic letter gimel",
-            Elymaic::ElymaicLetterDaleth => "elymaic letter daleth",
-            Elymaic::ElymaicLetterHe => "elymaic letter he",
-            Elymaic::ElymaicLetterWaw => "elymaic letter waw",
-            Elymaic::ElymaicLetterZayin => "elymaic letter zayin",
-            Elymaic::ElymaicLetterHeth => "elymaic letter heth",
-            Elymaic::ElymaicLetterTeth => "elymaic letter teth",
-            Elymaic::ElymaicLetterYodh => "elymaic letter yodh",
-            Elymaic::ElymaicLetterKaph => "elymaic letter kaph",
-            Elymaic::ElymaicLetterLamedh => "elymaic letter lamedh",
-            Elymaic::ElymaicLetterMem => "elymaic letter mem",
-            Elymaic::ElymaicLetterNun => "elymaic letter nun",
-            Elymaic::ElymaicLetterSamekh => "elymaic letter samekh",
-            Elymaic::ElymaicLetterAyin => "elymaic letter ayin",
-            Elymaic::ElymaicLetterPe => "elymaic letter pe",
-            Elymaic::ElymaicLetterSadhe => "elymaic letter sadhe",
-            Elymaic::ElymaicLetterQoph => "elymaic letter qoph",
-            Elymaic::ElymaicLetterResh => "elymaic letter resh",
-            Elymaic::ElymaicLetterShin => "elymaic letter shin",
-            Elymaic::ElymaicLetterTaw => "elymaic letter taw",
-            Elymaic::ElymaicLigatureZayinDashYodh => "elymaic ligature zayin-yodh",
+            Elymaic::LetterAleph => "elymaic letter aleph",
+            Elymaic::LetterBeth => "elymaic letter beth",
+            Elymaic::LetterGimel => "elymaic letter gimel",
+            Elymaic::LetterDaleth => "elymaic letter daleth",
+            Elymaic::LetterHe => "elymaic letter he",
+            Elymaic::LetterWaw => "elymaic letter waw",
+            Elymaic::LetterZayin => "elymaic letter zayin",
+            Elymaic::LetterHeth => "elymaic letter heth",
+            Elymaic::LetterTeth => "elymaic letter teth",
+            Elymaic::LetterYodh => "elymaic letter yodh",
+            Elymaic::LetterKaph => "elymaic letter kaph",
+            Elymaic::LetterLamedh => "elymaic letter lamedh",
+            Elymaic::LetterMem => "elymaic letter mem",
+            Elymaic::LetterNun => "elymaic letter nun",
+            Elymaic::LetterSamekh => "elymaic letter samekh",
+            Elymaic::LetterAyin => "elymaic letter ayin",
+            Elymaic::LetterPe => "elymaic letter pe",
+            Elymaic::LetterSadhe => "elymaic letter sadhe",
+            Elymaic::LetterQoph => "elymaic letter qoph",
+            Elymaic::LetterResh => "elymaic letter resh",
+            Elymaic::LetterShin => "elymaic letter shin",
+            Elymaic::LetterTaw => "elymaic letter taw",
+            Elymaic::LigatureZayinDashYodh => "elymaic ligature zayin-yodh",
         }
     }
 }
