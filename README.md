@@ -1,4 +1,6 @@
 Mapping of all unicode characters to rust types.
+===
+[Documentation](https://pierrechevalier83.github.io/unicode_types/unicode_types/index.html)
 
 This mapping was automatically generated from the latest Unicode
 Character Database by the `unicode_gen` crate.

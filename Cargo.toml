@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["Pierre Chevalier <pierrechevalier83@gmail.com>"]
 license = "MIT"
 description = "A mapping of all the unicode characters into convenience types (one enum per block of characters with one variant per character)."
+documentation = "https://pierrechevalier83.github.io/unicode_types/unicode_types/index.html"
 edition = "2018"
 
 [dependencies]
