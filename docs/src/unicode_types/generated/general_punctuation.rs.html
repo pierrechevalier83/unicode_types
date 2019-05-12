@@ -839,32 +839,8 @@
 <span id="839">839</span>
 <span id="840">840</span>
 <span id="841">841</span>
-<span id="842">842</span>
-<span id="843">843</span>
-<span id="844">844</span>
-<span id="845">845</span>
-<span id="846">846</span>
-<span id="847">847</span>
-<span id="848">848</span>
-<span id="849">849</span>
-<span id="850">850</span>
-<span id="851">851</span>
-<span id="852">852</span>
-<span id="853">853</span>
-<span id="854">854</span>
-<span id="855">855</span>
-<span id="856">856</span>
-<span id="857">857</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{2000} → \u{206f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">///                       ​ ‌ ‍ ‎ ‏</span>
-<span class="doccomment">/// ‐ ‑ ‒ – — ― ‖ ‗ ‘ ’ ‚ ‛ “ ” „ ‟</span>
-<span class="doccomment">/// † ‡ • ‣ ․ ‥ … ‧     ‪ ‫ ‬ ‭ ‮  </span>
-<span class="doccomment">/// ‰ ‱ ′ ″ ‴ ‵ ‶ ‷ ‸ ‹ › ※ ‼ ‽ ‾ ‿</span>
-<span class="doccomment">/// ⁀ ⁁ ⁂ ⁃ ⁄ ⁅ ⁆ ⁇ ⁈ ⁉ ⁊ ⁋ ⁌ ⁍ ⁎ ⁏</span>
-<span class="doccomment">/// ⁐ ⁑ ⁒ ⁓ ⁔ ⁕ ⁖ ⁗ ⁘ ⁙ ⁚ ⁛ ⁜ ⁝ ⁞  </span>
-<span class="doccomment">/// ⁠ ⁡ ⁢ ⁣ ⁤ ⁦ ⁧ ⁨ ⁩ ⁪ ⁫ ⁬ ⁭ ⁮</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{2000}: &#39; &#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">EN_QUAD</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39; &#39;</span>;
@@ -1088,15 +1064,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">NATIONAL_DIGIT_SHAPES</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;⁮&#39;</span>;
 }
 
-<span class="doccomment">/// \u{2000} → \u{206f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">///                       ​ ‌ ‍ ‎ ‏</span>
-<span class="doccomment">/// ‐ ‑ ‒ – — ― ‖ ‗ ‘ ’ ‚ ‛ “ ” „ ‟</span>
-<span class="doccomment">/// † ‡ • ‣ ․ ‥ … ‧     ‪ ‫ ‬ ‭ ‮  </span>
-<span class="doccomment">/// ‰ ‱ ′ ″ ‴ ‵ ‶ ‷ ‸ ‹ › ※ ‼ ‽ ‾ ‿</span>
-<span class="doccomment">/// ⁀ ⁁ ⁂ ⁃ ⁄ ⁅ ⁆ ⁇ ⁈ ⁉ ⁊ ⁋ ⁌ ⁍ ⁎ ⁏</span>
-<span class="doccomment">/// ⁐ ⁑ ⁒ ⁓ ⁔ ⁕ ⁖ ⁗ ⁘ ⁙ ⁚ ⁛ ⁜ ⁝ ⁞  </span>
-<span class="doccomment">/// ⁠ ⁡ ⁢ ⁣ ⁤ ⁦ ⁧ ⁨ ⁩ ⁪ ⁫ ⁬ ⁭ ⁮</span>
+<span class="doccomment">/// An enum to represent all characters in the GeneralPunctuation block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">GeneralPunctuation</span> {
     <span class="doccomment">/// \u{2000}: &#39; &#39;</span>

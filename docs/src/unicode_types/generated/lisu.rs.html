@@ -398,20 +398,8 @@
 <span id="398">398</span>
 <span id="399">399</span>
 <span id="400">400</span>
-<span id="401">401</span>
-<span id="402">402</span>
-<span id="403">403</span>
-<span id="404">404</span>
-<span id="405">405</span>
-<span id="406">406</span>
-<span id="407">407</span>
-<span id="408">408</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{a4d0} → \u{a4ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꓐ ꓑ ꓒ ꓓ ꓔ ꓕ ꓖ ꓗ ꓘ ꓙ ꓚ ꓛ ꓜ ꓝ ꓞ ꓟ</span>
-<span class="doccomment">/// ꓠ ꓡ ꓢ ꓣ ꓤ ꓥ ꓦ ꓧ ꓨ ꓩ ꓪ ꓫ ꓬ ꓭ ꓮ ꓯ</span>
-<span class="doccomment">/// ꓰ ꓱ ꓲ ꓳ ꓴ ꓵ ꓶ ꓷ ꓸ ꓹ ꓺ ꓻ ꓼ ꓽ ꓾</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{a4d0}: &#39;ꓐ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_BA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ꓐ&#39;</span>;
@@ -509,11 +497,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PUNCTUATION_COMMA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;꓾&#39;</span>;
 }
 
-<span class="doccomment">/// \u{a4d0} → \u{a4ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꓐ ꓑ ꓒ ꓓ ꓔ ꓕ ꓖ ꓗ ꓘ ꓙ ꓚ ꓛ ꓜ ꓝ ꓞ ꓟ</span>
-<span class="doccomment">/// ꓠ ꓡ ꓢ ꓣ ꓤ ꓥ ꓦ ꓧ ꓨ ꓩ ꓪ ꓫ ꓬ ꓭ ꓮ ꓯ</span>
-<span class="doccomment">/// ꓰ ꓱ ꓲ ꓳ ꓴ ꓵ ꓶ ꓷ ꓸ ꓹ ꓺ ꓻ ꓼ ꓽ ꓾</span>
+<span class="doccomment">/// An enum to represent all characters in the Lisu block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Lisu</span> {
     <span class="doccomment">/// \u{a4d0}: &#39;ꓐ&#39;</span>

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["SinhalaArchaicNumbers","\\u{111e0} → \\u{111ff}\\ \\  𑇡 𑇢 𑇣 𑇤 𑇥 𑇦 𑇧 𑇨 𑇩 𑇪 𑇫 𑇬 𑇭 𑇮 𑇯 𑇰  𑇱 𑇲 𑇳 𑇴"]],"mod":[["constants","\\u{111e0} → \\u{111ff}\\ \\  𑇡 𑇢 𑇣 𑇤 𑇥 𑇦 𑇧 𑇨 𑇩 𑇪 𑇫 𑇬 𑇭 𑇮 𑇯 𑇰  𑇱 𑇲 𑇳 𑇴"]]});
+initSidebarItems({"enum":[["SinhalaArchaicNumbers","An enum to represent all characters in the SinhalaArchaicNumbers block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

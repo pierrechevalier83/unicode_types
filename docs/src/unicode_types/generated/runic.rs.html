@@ -692,29 +692,8 @@
 <span id="692">692</span>
 <span id="693">693</span>
 <span id="694">694</span>
-<span id="695">695</span>
-<span id="696">696</span>
-<span id="697">697</span>
-<span id="698">698</span>
-<span id="699">699</span>
-<span id="700">700</span>
-<span id="701">701</span>
-<span id="702">702</span>
-<span id="703">703</span>
-<span id="704">704</span>
-<span id="705">705</span>
-<span id="706">706</span>
-<span id="707">707</span>
-<span id="708">708</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{16a0} → \u{16ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᚠ ᚡ ᚢ ᚣ ᚤ ᚥ ᚦ ᚧ ᚨ ᚩ ᚪ ᚫ ᚬ ᚭ ᚮ ᚯ</span>
-<span class="doccomment">/// ᚰ ᚱ ᚲ ᚳ ᚴ ᚵ ᚶ ᚷ ᚸ ᚹ ᚺ ᚻ ᚼ ᚽ ᚾ ᚿ</span>
-<span class="doccomment">/// ᛀ ᛁ ᛂ ᛃ ᛄ ᛅ ᛆ ᛇ ᛈ ᛉ ᛊ ᛋ ᛌ ᛍ ᛎ ᛏ</span>
-<span class="doccomment">/// ᛐ ᛑ ᛒ ᛓ ᛔ ᛕ ᛖ ᛗ ᛘ ᛙ ᛚ ᛛ ᛜ ᛝ ᛞ ᛟ</span>
-<span class="doccomment">/// ᛠ ᛡ ᛢ ᛣ ᛤ ᛥ ᛦ ᛧ ᛨ ᛩ ᛪ ᛫ ᛬ ᛭ ᛮ ᛯ</span>
-<span class="doccomment">/// ᛰ ᛱ ᛲ ᛳ ᛴ ᛵ ᛶ ᛷ ᛸ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{16a0}: &#39;ᚠ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_FEHU_FEOH_FE_F</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᚠ&#39;</span>;
@@ -896,14 +875,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_FRANKS_CASKET_AESC</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᛸ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{16a0} → \u{16ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᚠ ᚡ ᚢ ᚣ ᚤ ᚥ ᚦ ᚧ ᚨ ᚩ ᚪ ᚫ ᚬ ᚭ ᚮ ᚯ</span>
-<span class="doccomment">/// ᚰ ᚱ ᚲ ᚳ ᚴ ᚵ ᚶ ᚷ ᚸ ᚹ ᚺ ᚻ ᚼ ᚽ ᚾ ᚿ</span>
-<span class="doccomment">/// ᛀ ᛁ ᛂ ᛃ ᛄ ᛅ ᛆ ᛇ ᛈ ᛉ ᛊ ᛋ ᛌ ᛍ ᛎ ᛏ</span>
-<span class="doccomment">/// ᛐ ᛑ ᛒ ᛓ ᛔ ᛕ ᛖ ᛗ ᛘ ᛙ ᛚ ᛛ ᛜ ᛝ ᛞ ᛟ</span>
-<span class="doccomment">/// ᛠ ᛡ ᛢ ᛣ ᛤ ᛥ ᛦ ᛧ ᛨ ᛩ ᛪ ᛫ ᛬ ᛭ ᛮ ᛯ</span>
-<span class="doccomment">/// ᛰ ᛱ ᛲ ᛳ ᛴ ᛵ ᛶ ᛷ ᛸ</span>
+<span class="doccomment">/// An enum to represent all characters in the Runic block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Runic</span> {
     <span class="doccomment">/// \u{16a0}: &#39;ᚠ&#39;</span>

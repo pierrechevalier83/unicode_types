@@ -545,26 +545,8 @@
 <span id="545">545</span>
 <span id="546">546</span>
 <span id="547">547</span>
-<span id="548">548</span>
-<span id="549">549</span>
-<span id="550">550</span>
-<span id="551">551</span>
-<span id="552">552</span>
-<span id="553">553</span>
-<span id="554">554</span>
-<span id="555">555</span>
-<span id="556">556</span>
-<span id="557">557</span>
-<span id="558">558</span>
-<span id="559">559</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1ec70} → \u{1ecbf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𞱱 𞱲 𞱳 𞱴 𞱵 𞱶 𞱷 𞱸 𞱹 𞱺 𞱻 𞱼 𞱽 𞱾 𞱿 𞲀</span>
-<span class="doccomment">/// 𞲁 𞲂 𞲃 𞲄 𞲅 𞲆 𞲇 𞲈 𞲉 𞲊 𞲋 𞲌 𞲍 𞲎 𞲏 𞲐</span>
-<span class="doccomment">/// 𞲑 𞲒 𞲓 𞲔 𞲕 𞲖 𞲗 𞲘 𞲙 𞲚 𞲛 𞲜 𞲝 𞲞 𞲟 𞲠</span>
-<span class="doccomment">/// 𞲡 𞲢 𞲣 𞲤 𞲥 𞲦 𞲧 𞲨 𞲩 𞲪 𞲫 𞲬 𞲭 𞲮 𞲯 𞲰</span>
-<span class="doccomment">/// 𞲱 𞲲 𞲳 𞲴</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1ec71}: &#39;𞱱&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">INDIC_SIYAQ_NUMBER_ONE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𞱱&#39;</span>;
@@ -704,13 +686,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">INDIC_SIYAQ_ALTERNATE_LAKH_MARK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𞲴&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1ec70} → \u{1ecbf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𞱱 𞱲 𞱳 𞱴 𞱵 𞱶 𞱷 𞱸 𞱹 𞱺 𞱻 𞱼 𞱽 𞱾 𞱿 𞲀</span>
-<span class="doccomment">/// 𞲁 𞲂 𞲃 𞲄 𞲅 𞲆 𞲇 𞲈 𞲉 𞲊 𞲋 𞲌 𞲍 𞲎 𞲏 𞲐</span>
-<span class="doccomment">/// 𞲑 𞲒 𞲓 𞲔 𞲕 𞲖 𞲗 𞲘 𞲙 𞲚 𞲛 𞲜 𞲝 𞲞 𞲟 𞲠</span>
-<span class="doccomment">/// 𞲡 𞲢 𞲣 𞲤 𞲥 𞲦 𞲧 𞲨 𞲩 𞲪 𞲫 𞲬 𞲭 𞲮 𞲯 𞲰</span>
-<span class="doccomment">/// 𞲱 𞲲 𞲳 𞲴</span>
+<span class="doccomment">/// An enum to represent all characters in the IndicSiyaqNumbers block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">IndicSiyaqNumbers</span> {
     <span class="doccomment">/// \u{1ec71}: &#39;𞱱&#39;</span>

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["ImperialAramaic","\\u{10840} → \\u{1085f}\\ \\  𐡀 𐡁 𐡂 𐡃 𐡄 𐡅 𐡆 𐡇 𐡈 𐡉 𐡊 𐡋 𐡌 𐡍 𐡎 𐡏  𐡐 𐡑 𐡒 𐡓 𐡔 𐡕 𐡗 𐡘 𐡙 𐡚 𐡛 𐡜 𐡝 𐡞"]],"mod":[["constants","\\u{10840} → \\u{1085f}\\ \\  𐡀 𐡁 𐡂 𐡃 𐡄 𐡅 𐡆 𐡇 𐡈 𐡉 𐡊 𐡋 𐡌 𐡍 𐡎 𐡏  𐡐 𐡑 𐡒 𐡓 𐡔 𐡕 𐡗 𐡘 𐡙 𐡚 𐡛 𐡜 𐡝 𐡞"]]});
+initSidebarItems({"enum":[["ImperialAramaic","An enum to represent all characters in the ImperialAramaic block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

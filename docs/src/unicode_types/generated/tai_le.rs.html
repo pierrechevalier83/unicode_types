@@ -314,20 +314,8 @@
 <span id="314">314</span>
 <span id="315">315</span>
 <span id="316">316</span>
-<span id="317">317</span>
-<span id="318">318</span>
-<span id="319">319</span>
-<span id="320">320</span>
-<span id="321">321</span>
-<span id="322">322</span>
-<span id="323">323</span>
-<span id="324">324</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1950} → \u{197f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᥐ ᥑ ᥒ ᥓ ᥔ ᥕ ᥖ ᥗ ᥘ ᥙ ᥚ ᥛ ᥜ ᥝ ᥞ ᥟ</span>
-<span class="doccomment">/// ᥠ ᥡ ᥢ ᥣ ᥤ ᥥ ᥦ ᥧ ᥨ ᥩ ᥪ ᥫ ᥬ ᥭ ᥰ ᥱ</span>
-<span class="doccomment">/// ᥲ ᥳ ᥴ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1950}: &#39;ᥐ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_KA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᥐ&#39;</span>;
@@ -401,11 +389,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_TONE_DASH_6</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᥴ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1950} → \u{197f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᥐ ᥑ ᥒ ᥓ ᥔ ᥕ ᥖ ᥗ ᥘ ᥙ ᥚ ᥛ ᥜ ᥝ ᥞ ᥟ</span>
-<span class="doccomment">/// ᥠ ᥡ ᥢ ᥣ ᥤ ᥥ ᥦ ᥧ ᥨ ᥩ ᥪ ᥫ ᥬ ᥭ ᥰ ᥱ</span>
-<span class="doccomment">/// ᥲ ᥳ ᥴ</span>
+<span class="doccomment">/// An enum to represent all characters in the TaiLe block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">TaiLe</span> {
     <span class="doccomment">/// \u{1950}: &#39;ᥐ&#39;</span>

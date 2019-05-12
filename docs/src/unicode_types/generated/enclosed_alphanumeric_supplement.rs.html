@@ -1413,47 +1413,8 @@
 <span id="1413">1413</span>
 <span id="1414">1414</span>
 <span id="1415">1415</span>
-<span id="1416">1416</span>
-<span id="1417">1417</span>
-<span id="1418">1418</span>
-<span id="1419">1419</span>
-<span id="1420">1420</span>
-<span id="1421">1421</span>
-<span id="1422">1422</span>
-<span id="1423">1423</span>
-<span id="1424">1424</span>
-<span id="1425">1425</span>
-<span id="1426">1426</span>
-<span id="1427">1427</span>
-<span id="1428">1428</span>
-<span id="1429">1429</span>
-<span id="1430">1430</span>
-<span id="1431">1431</span>
-<span id="1432">1432</span>
-<span id="1433">1433</span>
-<span id="1434">1434</span>
-<span id="1435">1435</span>
-<span id="1436">1436</span>
-<span id="1437">1437</span>
-<span id="1438">1438</span>
-<span id="1439">1439</span>
-<span id="1440">1440</span>
-<span id="1441">1441</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1f100} → \u{1f1ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 🄀 🄁 🄂 🄃 🄄 🄅 🄆 🄇 🄈 🄉 🄊 🄋 🄌 🄐 🄑 🄒</span>
-<span class="doccomment">/// 🄓 🄔 🄕 🄖 🄗 🄘 🄙 🄚 🄛 🄜 🄝 🄞 🄟 🄠 🄡 🄢</span>
-<span class="doccomment">/// 🄣 🄤 🄥 🄦 🄧 🄨 🄩 🄪 🄫 🄬 🄭 🄮 🄯 🄰 🄱 🄲</span>
-<span class="doccomment">/// 🄳 🄴 🄵 🄶 🄷 🄸 🄹 🄺 🄻 🄼 🄽 🄾 🄿 🅀 🅁 🅂</span>
-<span class="doccomment">/// 🅃 🅄 🅅 🅆 🅇 🅈 🅉 🅊 🅋 🅌 🅍 🅎 🅏 🅐 🅑 🅒</span>
-<span class="doccomment">/// 🅓 🅔 🅕 🅖 🅗 🅘 🅙 🅚 🅛 🅜 🅝 🅞 🅟 🅠 🅡 🅢</span>
-<span class="doccomment">/// 🅣 🅤 🅥 🅦 🅧 🅨 🅩 🅪 🅫 🅬 🅰 🅱 🅲 🅳 🅴 🅵</span>
-<span class="doccomment">/// 🅶 🅷 🅸 🅹 🅺 🅻 🅼 🅽 🅾 🅿 🆀 🆁 🆂 🆃 🆄 🆅</span>
-<span class="doccomment">/// 🆆 🆇 🆈 🆉 🆊 🆋 🆌 🆍 🆎 🆏 🆐 🆑 🆒 🆓 🆔 🆕</span>
-<span class="doccomment">/// 🆖 🆗 🆘 🆙 🆚 🆛 🆜 🆝 🆞 🆟 🆠 🆡 🆢 🆣 🆤 🆥</span>
-<span class="doccomment">/// 🆦 🆧 🆨 🆩 🆪 🆫 🆬 🇦 🇧 🇨 🇩 🇪 🇫 🇬 🇭 🇮</span>
-<span class="doccomment">/// 🇯 🇰 🇱 🇲 🇳 🇴 🇵 🇶 🇷 🇸 🇹 🇺 🇻 🇼 🇽 🇾</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1f100}: &#39;🄀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIGIT_ZERO_FULL_STOP</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;🄀&#39;</span>;
@@ -1841,20 +1802,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">REGIONAL_INDICATOR_SYMBOL_LETTER_Y</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;🇾&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1f100} → \u{1f1ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 🄀 🄁 🄂 🄃 🄄 🄅 🄆 🄇 🄈 🄉 🄊 🄋 🄌 🄐 🄑 🄒</span>
-<span class="doccomment">/// 🄓 🄔 🄕 🄖 🄗 🄘 🄙 🄚 🄛 🄜 🄝 🄞 🄟 🄠 🄡 🄢</span>
-<span class="doccomment">/// 🄣 🄤 🄥 🄦 🄧 🄨 🄩 🄪 🄫 🄬 🄭 🄮 🄯 🄰 🄱 🄲</span>
-<span class="doccomment">/// 🄳 🄴 🄵 🄶 🄷 🄸 🄹 🄺 🄻 🄼 🄽 🄾 🄿 🅀 🅁 🅂</span>
-<span class="doccomment">/// 🅃 🅄 🅅 🅆 🅇 🅈 🅉 🅊 🅋 🅌 🅍 🅎 🅏 🅐 🅑 🅒</span>
-<span class="doccomment">/// 🅓 🅔 🅕 🅖 🅗 🅘 🅙 🅚 🅛 🅜 🅝 🅞 🅟 🅠 🅡 🅢</span>
-<span class="doccomment">/// 🅣 🅤 🅥 🅦 🅧 🅨 🅩 🅪 🅫 🅬 🅰 🅱 🅲 🅳 🅴 🅵</span>
-<span class="doccomment">/// 🅶 🅷 🅸 🅹 🅺 🅻 🅼 🅽 🅾 🅿 🆀 🆁 🆂 🆃 🆄 🆅</span>
-<span class="doccomment">/// 🆆 🆇 🆈 🆉 🆊 🆋 🆌 🆍 🆎 🆏 🆐 🆑 🆒 🆓 🆔 🆕</span>
-<span class="doccomment">/// 🆖 🆗 🆘 🆙 🆚 🆛 🆜 🆝 🆞 🆟 🆠 🆡 🆢 🆣 🆤 🆥</span>
-<span class="doccomment">/// 🆦 🆧 🆨 🆩 🆪 🆫 🆬 🇦 🇧 🇨 🇩 🇪 🇫 🇬 🇭 🇮</span>
-<span class="doccomment">/// 🇯 🇰 🇱 🇲 🇳 🇴 🇵 🇶 🇷 🇸 🇹 🇺 🇻 🇼 🇽 🇾</span>
+<span class="doccomment">/// An enum to represent all characters in the EnclosedAlphanumericSupplement block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">EnclosedAlphanumericSupplement</span> {
     <span class="doccomment">/// \u{1f100}: &#39;🄀&#39;</span>

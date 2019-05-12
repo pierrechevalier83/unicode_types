@@ -258,17 +258,8 @@
 <span id="258">258</span>
 <span id="259">259</span>
 <span id="260">260</span>
-<span id="261">261</span>
-<span id="262">262</span>
-<span id="263">263</span>
-<span id="264">264</span>
-<span id="265">265</span>
-<span id="266">266</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10330} → \u{1034f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐌰 𐌱 𐌲 𐌳 𐌴 𐌵 𐌶 𐌷 𐌸 𐌹 𐌺 𐌻 𐌼 𐌽 𐌾 𐌿</span>
-<span class="doccomment">/// 𐍀 𐍁 𐍂 𐍃 𐍄 𐍅 𐍆 𐍇 𐍈 𐍉 𐍊</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10330}: &#39;𐌰&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_AHSA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐌰&#39;</span>;
@@ -326,10 +317,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_NINE_HUNDRED</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐍊&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10330} → \u{1034f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐌰 𐌱 𐌲 𐌳 𐌴 𐌵 𐌶 𐌷 𐌸 𐌹 𐌺 𐌻 𐌼 𐌽 𐌾 𐌿</span>
-<span class="doccomment">/// 𐍀 𐍁 𐍂 𐍃 𐍄 𐍅 𐍆 𐍇 𐍈 𐍉 𐍊</span>
+<span class="doccomment">/// An enum to represent all characters in the Gothic block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Gothic</span> {
     <span class="doccomment">/// \u{10330}: &#39;𐌰&#39;</span>

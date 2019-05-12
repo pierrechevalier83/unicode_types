@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["ControlPictures","\\u{2400} → \\u{243f}\\ \\  ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏  ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟  ␠ ␡ ␢ ␣ ␤ ␥ ␦"]],"mod":[["constants","\\u{2400} → \\u{243f}\\ \\  ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏  ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟  ␠ ␡ ␢ ␣ ␤ ␥ ␦"]]});
+initSidebarItems({"enum":[["ControlPictures","An enum to represent all characters in the ControlPictures block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CombiningDiacriticalMarksforSymbols","\\u{20d0} → \\u{20ff}\\ \\  ⃐ ⃑ ⃒ ⃓ ⃔ ⃕ ⃖ ⃗ ⃘ ⃙ ⃚ ⃛ ⃜ ⃝ ⃞ ⃟  ⃠ ⃡ ⃢ ⃣ ⃤ ⃥ ⃦ ⃧ ⃨ ⃩ ⃪ ⃫ ⃬ ⃭ ⃮ ⃯  ⃰"]],"mod":[["constants","\\u{20d0} → \\u{20ff}\\ \\  ⃐ ⃑ ⃒ ⃓ ⃔ ⃕ ⃖ ⃗ ⃘ ⃙ ⃚ ⃛ ⃜ ⃝ ⃞ ⃟  ⃠ ⃡ ⃢ ⃣ ⃤ ⃥ ⃦ ⃧ ⃨ ⃩ ⃪ ⃫ ⃬ ⃭ ⃮ ⃯  ⃰"]]});
+initSidebarItems({"enum":[["CombiningDiacriticalMarksforSymbols","An enum to represent all characters in the CombiningDiacriticalMarksforSymbols block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

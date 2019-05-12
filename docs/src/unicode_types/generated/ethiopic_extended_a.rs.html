@@ -293,17 +293,8 @@
 <span id="293">293</span>
 <span id="294">294</span>
 <span id="295">295</span>
-<span id="296">296</span>
-<span id="297">297</span>
-<span id="298">298</span>
-<span id="299">299</span>
-<span id="300">300</span>
-<span id="301">301</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{ab00} → \u{ab2f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꬁ ꬂ ꬃ ꬄ ꬅ ꬆ ꬉ ꬊ ꬋ ꬌ ꬍ ꬎ ꬑ ꬒ ꬓ ꬔ</span>
-<span class="doccomment">/// ꬕ ꬖ ꬠ ꬡ ꬢ ꬣ ꬤ ꬥ ꬦ ꬨ ꬩ ꬪ ꬫ ꬬ ꬭ ꬮ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{ab01}: &#39;ꬁ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ETHIOPIC_SYLLABLE_TTHU</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ꬁ&#39;</span>;
@@ -371,10 +362,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ETHIOPIC_SYLLABLE_BBO</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ꬮ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{ab00} → \u{ab2f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꬁ ꬂ ꬃ ꬄ ꬅ ꬆ ꬉ ꬊ ꬋ ꬌ ꬍ ꬎ ꬑ ꬒ ꬓ ꬔ</span>
-<span class="doccomment">/// ꬕ ꬖ ꬠ ꬡ ꬢ ꬣ ꬤ ꬥ ꬦ ꬨ ꬩ ꬪ ꬫ ꬬ ꬭ ꬮ</span>
+<span class="doccomment">/// An enum to represent all characters in the EthiopicExtendedA block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">EthiopicExtendedA</span> {
     <span class="doccomment">/// \u{ab01}: &#39;ꬁ&#39;</span>

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["DevanagariExtended","\\u{a8e0} → \\u{a8ff}\\ \\  ꣠ ꣡ ꣢ ꣣ ꣤ ꣥ ꣦ ꣧ ꣨ ꣩ ꣪ ꣫ ꣬ ꣭ ꣮ ꣯  ꣰ ꣱ ꣲ ꣳ ꣴ ꣵ ꣶ ꣷ ꣸ ꣹ ꣺ ꣻ ꣼ ꣽ ꣾ"]],"mod":[["constants","\\u{a8e0} → \\u{a8ff}\\ \\  ꣠ ꣡ ꣢ ꣣ ꣤ ꣥ ꣦ ꣧ ꣨ ꣩ ꣪ ꣫ ꣬ ꣭ ꣮ ꣯  ꣰ ꣱ ꣲ ꣳ ꣴ ꣵ ꣶ ꣷ ꣸ ꣹ ꣺ ꣻ ꣼ ꣽ ꣾ"]]});
+initSidebarItems({"enum":[["DevanagariExtended","An enum to represent all characters in the DevanagariExtended block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

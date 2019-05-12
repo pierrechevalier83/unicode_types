@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["ModifierToneLetters","\\u{a700} → \\u{a71f}\\ \\  ꜀ ꜁ ꜂ ꜃ ꜄ ꜅ ꜆ ꜇ ꜈ ꜉ ꜊ ꜋ ꜌ ꜍ ꜎ ꜏  ꜐ ꜑ ꜒ ꜓ ꜔ ꜕ ꜖ ꜗ ꜘ ꜙ ꜚ ꜛ ꜜ ꜝ ꜞ"]],"mod":[["constants","\\u{a700} → \\u{a71f}\\ \\  ꜀ ꜁ ꜂ ꜃ ꜄ ꜅ ꜆ ꜇ ꜈ ꜉ ꜊ ꜋ ꜌ ꜍ ꜎ ꜏  ꜐ ꜑ ꜒ ꜓ ꜔ ꜕ ꜖ ꜗ ꜘ ꜙ ꜚ ꜛ ꜜ ꜝ ꜞ"]]});
+initSidebarItems({"enum":[["ModifierToneLetters","An enum to represent all characters in the ModifierToneLetters block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

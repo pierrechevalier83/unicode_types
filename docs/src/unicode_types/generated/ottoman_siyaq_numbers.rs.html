@@ -496,23 +496,8 @@
 <span id="496">496</span>
 <span id="497">497</span>
 <span id="498">498</span>
-<span id="499">499</span>
-<span id="500">500</span>
-<span id="501">501</span>
-<span id="502">502</span>
-<span id="503">503</span>
-<span id="504">504</span>
-<span id="505">505</span>
-<span id="506">506</span>
-<span id="507">507</span>
-<span id="508">508</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1ed00} → \u{1ed4f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𞴁 𞴂 𞴃 𞴄 𞴅 𞴆 𞴇 𞴈 𞴉 𞴊 𞴋 𞴌 𞴍 𞴎 𞴏 𞴐</span>
-<span class="doccomment">/// 𞴑 𞴒 𞴓 𞴔 𞴕 𞴖 𞴗 𞴘 𞴙 𞴚 𞴛 𞴜 𞴝 𞴞 𞴟 𞴠</span>
-<span class="doccomment">/// 𞴡 𞴢 𞴣 𞴤 𞴥 𞴦 𞴧 𞴨 𞴩 𞴪 𞴫 𞴬 𞴭 𞴮 𞴯 𞴰</span>
-<span class="doccomment">/// 𞴱 𞴲 𞴳 𞴴 𞴵 𞴶 𞴷 𞴸 𞴹 𞴺 𞴻 𞴼 𞴽</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1ed01}: &#39;𞴁&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">OTTOMAN_SIYAQ_NUMBER_ONE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𞴁&#39;</span>;
@@ -638,12 +623,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">OTTOMAN_SIYAQ_FRACTION_ONE_SIXTH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𞴽&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1ed00} → \u{1ed4f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𞴁 𞴂 𞴃 𞴄 𞴅 𞴆 𞴇 𞴈 𞴉 𞴊 𞴋 𞴌 𞴍 𞴎 𞴏 𞴐</span>
-<span class="doccomment">/// 𞴑 𞴒 𞴓 𞴔 𞴕 𞴖 𞴗 𞴘 𞴙 𞴚 𞴛 𞴜 𞴝 𞴞 𞴟 𞴠</span>
-<span class="doccomment">/// 𞴡 𞴢 𞴣 𞴤 𞴥 𞴦 𞴧 𞴨 𞴩 𞴪 𞴫 𞴬 𞴭 𞴮 𞴯 𞴰</span>
-<span class="doccomment">/// 𞴱 𞴲 𞴳 𞴴 𞴵 𞴶 𞴷 𞴸 𞴹 𞴺 𞴻 𞴼 𞴽</span>
+<span class="doccomment">/// An enum to represent all characters in the OttomanSiyaqNumbers block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">OttomanSiyaqNumbers</span> {
     <span class="doccomment">/// \u{1ed01}: &#39;𞴁&#39;</span>

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CommonIndicNumberForms","\\u{a830} → \\u{a83f}\\ \\  ꠰ ꠱ ꠲ ꠳ ꠴ ꠵ ꠶ ꠷ ꠸ ꠹"]],"mod":[["constants","\\u{a830} → \\u{a83f}\\ \\  ꠰ ꠱ ꠲ ꠳ ꠴ ꠵ ꠶ ꠷ ꠸ ꠹"]]});
+initSidebarItems({"enum":[["CommonIndicNumberForms","An enum to represent all characters in the CommonIndicNumberForms block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

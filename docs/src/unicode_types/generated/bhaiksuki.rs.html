@@ -748,32 +748,8 @@
 <span id="748">748</span>
 <span id="749">749</span>
 <span id="750">750</span>
-<span id="751">751</span>
-<span id="752">752</span>
-<span id="753">753</span>
-<span id="754">754</span>
-<span id="755">755</span>
-<span id="756">756</span>
-<span id="757">757</span>
-<span id="758">758</span>
-<span id="759">759</span>
-<span id="760">760</span>
-<span id="761">761</span>
-<span id="762">762</span>
-<span id="763">763</span>
-<span id="764">764</span>
-<span id="765">765</span>
-<span id="766">766</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{11c00} → \u{11c6f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑰀 𑰁 𑰂 𑰃 𑰄 𑰅 𑰆 𑰇 𑰈 𑰊 𑰋 𑰌 𑰍 𑰎 𑰏 𑰐</span>
-<span class="doccomment">/// 𑰑 𑰒 𑰓 𑰔 𑰕 𑰖 𑰗 𑰘 𑰙 𑰚 𑰛 𑰜 𑰝 𑰞 𑰟 𑰠</span>
-<span class="doccomment">/// 𑰡 𑰢 𑰣 𑰤 𑰥 𑰦 𑰧 𑰨 𑰩 𑰪 𑰫 𑰬 𑰭 𑰮 𑰯 𑰰</span>
-<span class="doccomment">/// 𑰱 𑰲 𑰳 𑰴 𑰵 𑰶 𑰸 𑰹 𑰺 𑰻 𑰼 𑰽 𑰾 𑰿 𑱀 𑱁</span>
-<span class="doccomment">/// 𑱂 𑱃 𑱄 𑱅 𑱐 𑱑 𑱒 𑱓 𑱔 𑱕 𑱖 𑱗 𑱘 𑱙 𑱚 𑱛</span>
-<span class="doccomment">/// 𑱜 𑱝 𑱞 𑱟 𑱠 𑱡 𑱢 𑱣 𑱤 𑱥 𑱦 𑱧 𑱨 𑱩 𑱪 𑱫</span>
-<span class="doccomment">/// 𑱬</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{11c00}: &#39;𑰀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_A</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑰀&#39;</span>;
@@ -971,15 +947,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HUNDREDS_UNIT_MARK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑱬&#39;</span>;
 }
 
-<span class="doccomment">/// \u{11c00} → \u{11c6f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑰀 𑰁 𑰂 𑰃 𑰄 𑰅 𑰆 𑰇 𑰈 𑰊 𑰋 𑰌 𑰍 𑰎 𑰏 𑰐</span>
-<span class="doccomment">/// 𑰑 𑰒 𑰓 𑰔 𑰕 𑰖 𑰗 𑰘 𑰙 𑰚 𑰛 𑰜 𑰝 𑰞 𑰟 𑰠</span>
-<span class="doccomment">/// 𑰡 𑰢 𑰣 𑰤 𑰥 𑰦 𑰧 𑰨 𑰩 𑰪 𑰫 𑰬 𑰭 𑰮 𑰯 𑰰</span>
-<span class="doccomment">/// 𑰱 𑰲 𑰳 𑰴 𑰵 𑰶 𑰸 𑰹 𑰺 𑰻 𑰼 𑰽 𑰾 𑰿 𑱀 𑱁</span>
-<span class="doccomment">/// 𑱂 𑱃 𑱄 𑱅 𑱐 𑱑 𑱒 𑱓 𑱔 𑱕 𑱖 𑱗 𑱘 𑱙 𑱚 𑱛</span>
-<span class="doccomment">/// 𑱜 𑱝 𑱞 𑱟 𑱠 𑱡 𑱢 𑱣 𑱤 𑱥 𑱦 𑱧 𑱨 𑱩 𑱪 𑱫</span>
-<span class="doccomment">/// 𑱬</span>
+<span class="doccomment">/// An enum to represent all characters in the Bhaiksuki block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Bhaiksuki</span> {
     <span class="doccomment">/// \u{11c00}: &#39;𑰀&#39;</span>

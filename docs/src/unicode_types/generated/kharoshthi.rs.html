@@ -545,26 +545,8 @@
 <span id="545">545</span>
 <span id="546">546</span>
 <span id="547">547</span>
-<span id="548">548</span>
-<span id="549">549</span>
-<span id="550">550</span>
-<span id="551">551</span>
-<span id="552">552</span>
-<span id="553">553</span>
-<span id="554">554</span>
-<span id="555">555</span>
-<span id="556">556</span>
-<span id="557">557</span>
-<span id="558">558</span>
-<span id="559">559</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10a00} → \u{10a5f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐨀 𐨁 𐨂 𐨃 𐨅 𐨆 𐨌 𐨍 𐨎 𐨏 𐨐 𐨑 𐨒 𐨓 𐨕 𐨖</span>
-<span class="doccomment">/// 𐨗 𐨙 𐨚 𐨛 𐨜 𐨝 𐨞 𐨟 𐨠 𐨡 𐨢 𐨣 𐨤 𐨥 𐨦 𐨧</span>
-<span class="doccomment">/// 𐨨 𐨩 𐨪 𐨫 𐨬 𐨭 𐨮 𐨯 𐨰 𐨱 𐨲 𐨳 𐨴 𐨵 𐨸 𐨹</span>
-<span class="doccomment">/// 𐨺 𐨿 𐩀 𐩁 𐩂 𐩃 𐩄 𐩅 𐩆 𐩇 𐩈 𐩐 𐩑 𐩒 𐩓 𐩔</span>
-<span class="doccomment">/// 𐩕 𐩖 𐩗 𐩘</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10a00}: &#39;𐨀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_A</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐨀&#39;</span>;
@@ -704,13 +686,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PUNCTUATION_LINES</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐩘&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10a00} → \u{10a5f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐨀 𐨁 𐨂 𐨃 𐨅 𐨆 𐨌 𐨍 𐨎 𐨏 𐨐 𐨑 𐨒 𐨓 𐨕 𐨖</span>
-<span class="doccomment">/// 𐨗 𐨙 𐨚 𐨛 𐨜 𐨝 𐨞 𐨟 𐨠 𐨡 𐨢 𐨣 𐨤 𐨥 𐨦 𐨧</span>
-<span class="doccomment">/// 𐨨 𐨩 𐨪 𐨫 𐨬 𐨭 𐨮 𐨯 𐨰 𐨱 𐨲 𐨳 𐨴 𐨵 𐨸 𐨹</span>
-<span class="doccomment">/// 𐨺 𐨿 𐩀 𐩁 𐩂 𐩃 𐩄 𐩅 𐩆 𐩇 𐩈 𐩐 𐩑 𐩒 𐩓 𐩔</span>
-<span class="doccomment">/// 𐩕 𐩖 𐩗 𐩘</span>
+<span class="doccomment">/// An enum to represent all characters in the Kharoshthi block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Kharoshthi</span> {
     <span class="doccomment">/// \u{10a00}: &#39;𐨀&#39;</span>

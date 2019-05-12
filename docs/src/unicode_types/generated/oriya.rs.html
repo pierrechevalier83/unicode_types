@@ -699,29 +699,8 @@
 <span id="699">699</span>
 <span id="700">700</span>
 <span id="701">701</span>
-<span id="702">702</span>
-<span id="703">703</span>
-<span id="704">704</span>
-<span id="705">705</span>
-<span id="706">706</span>
-<span id="707">707</span>
-<span id="708">708</span>
-<span id="709">709</span>
-<span id="710">710</span>
-<span id="711">711</span>
-<span id="712">712</span>
-<span id="713">713</span>
-<span id="714">714</span>
-<span id="715">715</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{b00} → \u{b7f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ଁ ଂ ଃ ଅ ଆ ଇ ଈ ଉ ଊ ଋ ଌ ଏ ଐ ଓ ଔ କ</span>
-<span class="doccomment">/// ଖ ଗ ଘ ଙ ଚ ଛ ଜ ଝ ଞ ଟ ଠ ଡ ଢ ଣ ତ ଥ</span>
-<span class="doccomment">/// ଦ ଧ ନ ପ ଫ ବ ଭ ମ ଯ ର ଲ ଳ ଵ ଶ ଷ ସ</span>
-<span class="doccomment">/// ହ ଼ ଽ ା ି ୀ ୁ ୂ ୃ ୄ େ ୈ ୋ ୌ ୍ ୖ</span>
-<span class="doccomment">/// ୗ ଡ଼ ଢ଼ ୟ ୠ ୡ ୢ ୣ ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭</span>
-<span class="doccomment">/// ୮ ୯ ୰ ୱ ୲ ୳ ୴ ୵ ୶ ୷</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{b01}: &#39;ଁ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_CANDRABINDU</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ଁ&#39;</span>;
@@ -905,14 +884,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FRACTION_THREE_SIXTEENTHS</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;୷&#39;</span>;
 }
 
-<span class="doccomment">/// \u{b00} → \u{b7f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ଁ ଂ ଃ ଅ ଆ ଇ ଈ ଉ ଊ ଋ ଌ ଏ ଐ ଓ ଔ କ</span>
-<span class="doccomment">/// ଖ ଗ ଘ ଙ ଚ ଛ ଜ ଝ ଞ ଟ ଠ ଡ ଢ ଣ ତ ଥ</span>
-<span class="doccomment">/// ଦ ଧ ନ ପ ଫ ବ ଭ ମ ଯ ର ଲ ଳ ଵ ଶ ଷ ସ</span>
-<span class="doccomment">/// ହ ଼ ଽ ା ି ୀ ୁ ୂ ୃ ୄ େ ୈ ୋ ୌ ୍ ୖ</span>
-<span class="doccomment">/// ୗ ଡ଼ ଢ଼ ୟ ୠ ୡ ୢ ୣ ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭</span>
-<span class="doccomment">/// ୮ ୯ ୰ ୱ ୲ ୳ ୴ ୵ ୶ ୷</span>
+<span class="doccomment">/// An enum to represent all characters in the Oriya block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Oriya</span> {
     <span class="doccomment">/// \u{b01}: &#39;ଁ&#39;</span>

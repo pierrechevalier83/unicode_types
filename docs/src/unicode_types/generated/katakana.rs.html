@@ -734,29 +734,8 @@
 <span id="734">734</span>
 <span id="735">735</span>
 <span id="736">736</span>
-<span id="737">737</span>
-<span id="738">738</span>
-<span id="739">739</span>
-<span id="740">740</span>
-<span id="741">741</span>
-<span id="742">742</span>
-<span id="743">743</span>
-<span id="744">744</span>
-<span id="745">745</span>
-<span id="746">746</span>
-<span id="747">747</span>
-<span id="748">748</span>
-<span id="749">749</span>
-<span id="750">750</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{30a0} → \u{30ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ゠ ァ ア ィ イ ゥ ウ ェ エ ォ オ カ ガ キ ギ ク</span>
-<span class="doccomment">/// グ ケ ゲ コ ゴ サ ザ シ ジ ス ズ セ ゼ ソ ゾ タ</span>
-<span class="doccomment">/// ダ チ ヂ ッ ツ ヅ テ デ ト ド ナ ニ ヌ ネ ノ ハ</span>
-<span class="doccomment">/// バ パ ヒ ビ ピ フ ブ プ ヘ ベ ペ ホ ボ ポ マ ミ</span>
-<span class="doccomment">/// ム メ モ ャ ヤ ュ ユ ョ ヨ ラ リ ル レ ロ ヮ ワ</span>
-<span class="doccomment">/// ヰ ヱ ヲ ン ヴ ヵ ヶ ヷ ヸ ヹ ヺ ・ ー ヽ ヾ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{30a0}: &#39;゠&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DASH_HIRAGANA_DOUBLE_HYPHEN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;゠&#39;</span>;
@@ -950,14 +929,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">VOICED_ITERATION_MARK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ヾ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{30a0} → \u{30ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ゠ ァ ア ィ イ ゥ ウ ェ エ ォ オ カ ガ キ ギ ク</span>
-<span class="doccomment">/// グ ケ ゲ コ ゴ サ ザ シ ジ ス ズ セ ゼ ソ ゾ タ</span>
-<span class="doccomment">/// ダ チ ヂ ッ ツ ヅ テ デ ト ド ナ ニ ヌ ネ ノ ハ</span>
-<span class="doccomment">/// バ パ ヒ ビ ピ フ ブ プ ヘ ベ ペ ホ ボ ポ マ ミ</span>
-<span class="doccomment">/// ム メ モ ャ ヤ ュ ユ ョ ヨ ラ リ ル レ ロ ヮ ワ</span>
-<span class="doccomment">/// ヰ ヱ ヲ ン ヴ ヵ ヶ ヷ ヸ ヹ ヺ ・ ー ヽ ヾ</span>
+<span class="doccomment">/// An enum to represent all characters in the Katakana block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Katakana</span> {
     <span class="doccomment">/// \u{30a0}: &#39;゠&#39;</span>

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["KayahLi","\\u{a900} → \\u{a92f}\\ \\  ꤀ ꤁ ꤂ ꤃ ꤄ ꤅ ꤆ ꤇ ꤈ ꤉ ꤊ ꤋ ꤌ ꤍ ꤎ ꤏ  ꤐ ꤑ ꤒ ꤓ ꤔ ꤕ ꤖ ꤗ ꤘ ꤙ ꤚ ꤛ ꤜ ꤝ ꤞ ꤟ  ꤠ ꤡ ꤢ ꤣ ꤤ ꤥ ꤦ ꤧ ꤨ ꤩ ꤪ ꤫ ꤬ ꤭ ꤮"]],"mod":[["constants","\\u{a900} → \\u{a92f}\\ \\  ꤀ ꤁ ꤂ ꤃ ꤄ ꤅ ꤆ ꤇ ꤈ ꤉ ꤊ ꤋ ꤌ ꤍ ꤎ ꤏ  ꤐ ꤑ ꤒ ꤓ ꤔ ꤕ ꤖ ꤗ ꤘ ꤙ ꤚ ꤛ ꤜ ꤝ ꤞ ꤟ  ꤠ ꤡ ꤢ ꤣ ꤤ ꤥ ꤦ ꤧ ꤨ ꤩ ꤪ ꤫ ꤬ ꤭ ꤮"]]});
+initSidebarItems({"enum":[["KayahLi","An enum to represent all characters in the KayahLi block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

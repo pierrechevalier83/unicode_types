@@ -881,35 +881,8 @@
 <span id="881">881</span>
 <span id="882">882</span>
 <span id="883">883</span>
-<span id="884">884</span>
-<span id="885">885</span>
-<span id="886">886</span>
-<span id="887">887</span>
-<span id="888">888</span>
-<span id="889">889</span>
-<span id="890">890</span>
-<span id="891">891</span>
-<span id="892">892</span>
-<span id="893">893</span>
-<span id="894">894</span>
-<span id="895">895</span>
-<span id="896">896</span>
-<span id="897">897</span>
-<span id="898">898</span>
-<span id="899">899</span>
-<span id="900">900</span>
-<span id="901">901</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{12400} → \u{1247f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𒐀 𒐁 𒐂 𒐃 𒐄 𒐅 𒐆 𒐇 𒐈 𒐉 𒐊 𒐋 𒐌 𒐍 𒐎 𒐏</span>
-<span class="doccomment">/// 𒐐 𒐑 𒐒 𒐓 𒐔 𒐕 𒐖 𒐗 𒐘 𒐙 𒐚 𒐛 𒐜 𒐝 𒐞 𒐟</span>
-<span class="doccomment">/// 𒐠 𒐡 𒐢 𒐣 𒐤 𒐥 𒐦 𒐧 𒐨 𒐩 𒐪 𒐫 𒐬 𒐭 𒐮 𒐯</span>
-<span class="doccomment">/// 𒐰 𒐱 𒐲 𒐳 𒐴 𒐵 𒐶 𒐷 𒐸 𒐹 𒐺 𒐻 𒐼 𒐽 𒐾 𒐿</span>
-<span class="doccomment">/// 𒑀 𒑁 𒑂 𒑃 𒑄 𒑅 𒑆 𒑇 𒑈 𒑉 𒑊 𒑋 𒑌 𒑍 𒑎 𒑏</span>
-<span class="doccomment">/// 𒑐 𒑑 𒑒 𒑓 𒑔 𒑕 𒑖 𒑗 𒑘 𒑙 𒑚 𒑛 𒑜 𒑝 𒑞 𒑟</span>
-<span class="doccomment">/// 𒑠 𒑡 𒑢 𒑣 𒑤 𒑥 𒑦 𒑧 𒑨 𒑩 𒑪 𒑫 𒑬 𒑭 𒑮 𒑰</span>
-<span class="doccomment">/// 𒑱 𒑲 𒑳 𒑴</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{12400}: &#39;𒐀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CUNEIFORM_NUMERIC_SIGN_TWO_ASH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𒐀&#39;</span>;
@@ -1145,16 +1118,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CUNEIFORM_PUNCTUATION_SIGN_DIAGONAL_QUADCOLON</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𒑴&#39;</span>;
 }
 
-<span class="doccomment">/// \u{12400} → \u{1247f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𒐀 𒐁 𒐂 𒐃 𒐄 𒐅 𒐆 𒐇 𒐈 𒐉 𒐊 𒐋 𒐌 𒐍 𒐎 𒐏</span>
-<span class="doccomment">/// 𒐐 𒐑 𒐒 𒐓 𒐔 𒐕 𒐖 𒐗 𒐘 𒐙 𒐚 𒐛 𒐜 𒐝 𒐞 𒐟</span>
-<span class="doccomment">/// 𒐠 𒐡 𒐢 𒐣 𒐤 𒐥 𒐦 𒐧 𒐨 𒐩 𒐪 𒐫 𒐬 𒐭 𒐮 𒐯</span>
-<span class="doccomment">/// 𒐰 𒐱 𒐲 𒐳 𒐴 𒐵 𒐶 𒐷 𒐸 𒐹 𒐺 𒐻 𒐼 𒐽 𒐾 𒐿</span>
-<span class="doccomment">/// 𒑀 𒑁 𒑂 𒑃 𒑄 𒑅 𒑆 𒑇 𒑈 𒑉 𒑊 𒑋 𒑌 𒑍 𒑎 𒑏</span>
-<span class="doccomment">/// 𒑐 𒑑 𒑒 𒑓 𒑔 𒑕 𒑖 𒑗 𒑘 𒑙 𒑚 𒑛 𒑜 𒑝 𒑞 𒑟</span>
-<span class="doccomment">/// 𒑠 𒑡 𒑢 𒑣 𒑤 𒑥 𒑦 𒑧 𒑨 𒑩 𒑪 𒑫 𒑬 𒑭 𒑮 𒑰</span>
-<span class="doccomment">/// 𒑱 𒑲 𒑳 𒑴</span>
+<span class="doccomment">/// An enum to represent all characters in the CuneiformNumbersandPunctuation block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">CuneiformNumbersandPunctuation</span> {
     <span class="doccomment">/// \u{12400}: &#39;𒐀&#39;</span>

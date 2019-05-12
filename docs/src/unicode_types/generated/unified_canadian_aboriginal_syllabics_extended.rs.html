@@ -559,26 +559,8 @@
 <span id="559">559</span>
 <span id="560">560</span>
 <span id="561">561</span>
-<span id="562">562</span>
-<span id="563">563</span>
-<span id="564">564</span>
-<span id="565">565</span>
-<span id="566">566</span>
-<span id="567">567</span>
-<span id="568">568</span>
-<span id="569">569</span>
-<span id="570">570</span>
-<span id="571">571</span>
-<span id="572">572</span>
-<span id="573">573</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{18b0} → \u{18ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᢰ ᢱ ᢲ ᢳ ᢴ ᢵ ᢶ ᢷ ᢸ ᢹ ᢺ ᢻ ᢼ ᢽ ᢾ ᢿ</span>
-<span class="doccomment">/// ᣀ ᣁ ᣂ ᣃ ᣄ ᣅ ᣆ ᣇ ᣈ ᣉ ᣊ ᣋ ᣌ ᣍ ᣎ ᣏ</span>
-<span class="doccomment">/// ᣐ ᣑ ᣒ ᣓ ᣔ ᣕ ᣖ ᣗ ᣘ ᣙ ᣚ ᣛ ᣜ ᣝ ᣞ ᣟ</span>
-<span class="doccomment">/// ᣠ ᣡ ᣢ ᣣ ᣤ ᣥ ᣦ ᣧ ᣨ ᣩ ᣪ ᣫ ᣬ ᣭ ᣮ ᣯ</span>
-<span class="doccomment">/// ᣰ ᣱ ᣲ ᣳ ᣴ ᣵ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{18b0}: &#39;ᢰ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CANADIAN_SYLLABICS_OY</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᢰ&#39;</span>;
@@ -722,13 +704,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CANADIAN_SYLLABICS_CARRIER_DENTAL_S</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᣵ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{18b0} → \u{18ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᢰ ᢱ ᢲ ᢳ ᢴ ᢵ ᢶ ᢷ ᢸ ᢹ ᢺ ᢻ ᢼ ᢽ ᢾ ᢿ</span>
-<span class="doccomment">/// ᣀ ᣁ ᣂ ᣃ ᣄ ᣅ ᣆ ᣇ ᣈ ᣉ ᣊ ᣋ ᣌ ᣍ ᣎ ᣏ</span>
-<span class="doccomment">/// ᣐ ᣑ ᣒ ᣓ ᣔ ᣕ ᣖ ᣗ ᣘ ᣙ ᣚ ᣛ ᣜ ᣝ ᣞ ᣟ</span>
-<span class="doccomment">/// ᣠ ᣡ ᣢ ᣣ ᣤ ᣥ ᣦ ᣧ ᣨ ᣩ ᣪ ᣫ ᣬ ᣭ ᣮ ᣯ</span>
-<span class="doccomment">/// ᣰ ᣱ ᣲ ᣳ ᣴ ᣵ</span>
+<span class="doccomment">/// An enum to represent all characters in the UnifiedCanadianAboriginalSyllabicsExtended block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">UnifiedCanadianAboriginalSyllabicsExtended</span> {
     <span class="doccomment">/// \u{18b0}: &#39;ᢰ&#39;</span>

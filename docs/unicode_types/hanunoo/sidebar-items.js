@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Hanunoo","\\u{1720} → \\u{173f}\\ \\  ᜠ ᜡ ᜢ ᜣ ᜤ ᜥ ᜦ ᜧ ᜨ ᜩ ᜪ ᜫ ᜬ ᜭ ᜮ ᜯ  ᜰ ᜱ ᜲ ᜳ ᜴ ᜵ ᜶"]],"mod":[["constants","\\u{1720} → \\u{173f}\\ \\  ᜠ ᜡ ᜢ ᜣ ᜤ ᜥ ᜦ ᜧ ᜨ ᜩ ᜪ ᜫ ᜬ ᜭ ᜮ ᜯ  ᜰ ᜱ ᜲ ᜳ ᜴ ᜵ ᜶"]]});
+initSidebarItems({"enum":[["Hanunoo","An enum to represent all characters in the Hanunoo block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

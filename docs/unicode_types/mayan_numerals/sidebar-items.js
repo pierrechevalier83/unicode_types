@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["MayanNumerals","\\u{1d2e0} → \\u{1d2ff}\\ \\  𝋠 𝋡 𝋢 𝋣 𝋤 𝋥 𝋦 𝋧 𝋨 𝋩 𝋪 𝋫 𝋬 𝋭 𝋮 𝋯  𝋰 𝋱 𝋲 𝋳"]],"mod":[["constants","\\u{1d2e0} → \\u{1d2ff}\\ \\  𝋠 𝋡 𝋢 𝋣 𝋤 𝋥 𝋦 𝋧 𝋨 𝋩 𝋪 𝋫 𝋬 𝋭 𝋮 𝋯  𝋰 𝋱 𝋲 𝋳"]]});
+initSidebarItems({"enum":[["MayanNumerals","An enum to represent all characters in the MayanNumerals block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

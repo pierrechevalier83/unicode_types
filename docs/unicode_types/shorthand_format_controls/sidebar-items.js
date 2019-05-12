@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["ShorthandFormatControls","\\u{1bca0} → \\u{1bcaf}\\ \\  𛲠 𛲡 𛲢 𛲣"]],"mod":[["constants","\\u{1bca0} → \\u{1bcaf}\\ \\  𛲠 𛲡 𛲢 𛲣"]]});
+initSidebarItems({"enum":[["ShorthandFormatControls","An enum to represent all characters in the ShorthandFormatControls block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

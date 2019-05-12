@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["SupplementaryPrivateUseAreaA","\\u{f0000} → \\u{fffff}\\ \\  󰀀 󿿽"]],"mod":[["constants","\\u{f0000} → \\u{fffff}\\ \\  󰀀 󿿽"]]});
+initSidebarItems({"enum":[["SupplementaryPrivateUseAreaA","An enum to represent all characters in the SupplementaryPrivateUseAreaA block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

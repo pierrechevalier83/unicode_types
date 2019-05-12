@@ -230,17 +230,8 @@
 <span id="230">230</span>
 <span id="231">231</span>
 <span id="232">232</span>
-<span id="233">233</span>
-<span id="234">234</span>
-<span id="235">235</span>
-<span id="236">236</span>
-<span id="237">237</span>
-<span id="238">238</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10fe0} → \u{10fff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐿠 𐿡 𐿢 𐿣 𐿤 𐿥 𐿦 𐿧 𐿨 𐿩 𐿪 𐿫 𐿬 𐿭 𐿮 𐿯</span>
-<span class="doccomment">/// 𐿰 𐿱 𐿲 𐿳 𐿴 𐿵 𐿶</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10fe0}: &#39;𐿠&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_ALEPH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐿠&#39;</span>;
@@ -290,10 +281,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LIGATURE_ZAYIN_DASH_YODH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐿶&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10fe0} → \u{10fff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐿠 𐿡 𐿢 𐿣 𐿤 𐿥 𐿦 𐿧 𐿨 𐿩 𐿪 𐿫 𐿬 𐿭 𐿮 𐿯</span>
-<span class="doccomment">/// 𐿰 𐿱 𐿲 𐿳 𐿴 𐿵 𐿶</span>
+<span class="doccomment">/// An enum to represent all characters in the Elymaic block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Elymaic</span> {
     <span class="doccomment">/// \u{10fe0}: &#39;𐿠&#39;</span>

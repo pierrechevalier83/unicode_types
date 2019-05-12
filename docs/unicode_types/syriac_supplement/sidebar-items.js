@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["SyriacSupplement","\\u{860} → \\u{86f}\\ \\  ࡠ ࡡ ࡢ ࡣ ࡤ ࡥ ࡦ ࡧ ࡨ ࡩ ࡪ"]],"mod":[["constants","\\u{860} → \\u{86f}\\ \\  ࡠ ࡡ ࡢ ࡣ ࡤ ࡥ ࡦ ࡧ ࡨ ࡩ ࡪ"]]});
+initSidebarItems({"enum":[["SyriacSupplement","An enum to represent all characters in the SyriacSupplement block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

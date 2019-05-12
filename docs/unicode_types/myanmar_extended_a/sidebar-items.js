@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["MyanmarExtendedA","\\u{aa60} → \\u{aa7f}\\ \\  ꩠ ꩡ ꩢ ꩣ ꩤ ꩥ ꩦ ꩧ ꩨ ꩩ ꩪ ꩫ ꩬ ꩭ ꩮ ꩯ  ꩰ ꩱ ꩲ ꩳ ꩴ ꩵ ꩶ ꩷ ꩸ ꩹ ꩺ ꩻ ꩼ ꩽ ꩾ"]],"mod":[["constants","\\u{aa60} → \\u{aa7f}\\ \\  ꩠ ꩡ ꩢ ꩣ ꩤ ꩥ ꩦ ꩧ ꩨ ꩩ ꩪ ꩫ ꩬ ꩭ ꩮ ꩯ  ꩰ ꩱ ꩲ ꩳ ꩴ ꩵ ꩶ ꩷ ꩸ ꩹ ꩺ ꩻ ꩼ ꩽ ꩾ"]]});
+initSidebarItems({"enum":[["MyanmarExtendedA","An enum to represent all characters in the MyanmarExtendedA block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

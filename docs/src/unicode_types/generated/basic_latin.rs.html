@@ -958,35 +958,8 @@
 <span id="958">958</span>
 <span id="959">959</span>
 <span id="960">960</span>
-<span id="961">961</span>
-<span id="962">962</span>
-<span id="963">963</span>
-<span id="964">964</span>
-<span id="965">965</span>
-<span id="966">966</span>
-<span id="967">967</span>
-<span id="968">968</span>
-<span id="969">969</span>
-<span id="970">970</span>
-<span id="971">971</span>
-<span id="972">972</span>
-<span id="973">973</span>
-<span id="974">974</span>
-<span id="975">975</span>
-<span id="976">976</span>
-<span id="977">977</span>
-<span id="978">978</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{0} → \u{7f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">///           \t \n   \r  </span>
-<span class="doccomment">///                </span>
-<span class="doccomment">///   ! &quot; # $ % &amp; \&#39; ( ) * + , - . /</span>
-<span class="doccomment">/// 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?</span>
-<span class="doccomment">/// @ A B C D E F G H I J K L M N O</span>
-<span class="doccomment">/// P Q R S T U V W X Y Z [ \\ ] ^ _</span>
-<span class="doccomment">/// ` a b c d e f g h i j k l m n o</span>
-<span class="doccomment">/// p q r s t u v w x y z { | } ~</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{0}: &#39; &#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CONTROL_0000</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39; &#39;</span>;
@@ -1244,16 +1217,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TILDE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;~&#39;</span>;
 }
 
-<span class="doccomment">/// \u{0} → \u{7f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">///           \t \n   \r  </span>
-<span class="doccomment">///                </span>
-<span class="doccomment">///   ! &quot; # $ % &amp; \&#39; ( ) * + , - . /</span>
-<span class="doccomment">/// 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?</span>
-<span class="doccomment">/// @ A B C D E F G H I J K L M N O</span>
-<span class="doccomment">/// P Q R S T U V W X Y Z [ \\ ] ^ _</span>
-<span class="doccomment">/// ` a b c d e f g h i j k l m n o</span>
-<span class="doccomment">/// p q r s t u v w x y z { | } ~</span>
+<span class="doccomment">/// An enum to represent all characters in the BasicLatin block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">BasicLatin</span> {
     <span class="doccomment">/// \u{0}: &#39; &#39;</span>

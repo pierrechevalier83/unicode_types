@@ -489,23 +489,8 @@
 <span id="489">489</span>
 <span id="490">490</span>
 <span id="491">491</span>
-<span id="492">492</span>
-<span id="493">493</span>
-<span id="494">494</span>
-<span id="495">495</span>
-<span id="496">496</span>
-<span id="497">497</span>
-<span id="498">498</span>
-<span id="499">499</span>
-<span id="500">500</span>
-<span id="501">501</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{11800} → \u{1184f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑠀 𑠁 𑠂 𑠃 𑠄 𑠅 𑠆 𑠇 𑠈 𑠉 𑠊 𑠋 𑠌 𑠍 𑠎 𑠏</span>
-<span class="doccomment">/// 𑠐 𑠑 𑠒 𑠓 𑠔 𑠕 𑠖 𑠗 𑠘 𑠙 𑠚 𑠛 𑠜 𑠝 𑠞 𑠟</span>
-<span class="doccomment">/// 𑠠 𑠡 𑠢 𑠣 𑠤 𑠥 𑠦 𑠧 𑠨 𑠩 𑠪 𑠫 𑠬 𑠭 𑠮 𑠯</span>
-<span class="doccomment">/// 𑠰 𑠱 𑠲 𑠳 𑠴 𑠵 𑠶 𑠷 𑠸 𑠹 𑠺 𑠻</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{11800}: &#39;𑠀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_A</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑠀&#39;</span>;
@@ -629,12 +614,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ABBREVIATION_SIGN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑠻&#39;</span>;
 }
 
-<span class="doccomment">/// \u{11800} → \u{1184f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑠀 𑠁 𑠂 𑠃 𑠄 𑠅 𑠆 𑠇 𑠈 𑠉 𑠊 𑠋 𑠌 𑠍 𑠎 𑠏</span>
-<span class="doccomment">/// 𑠐 𑠑 𑠒 𑠓 𑠔 𑠕 𑠖 𑠗 𑠘 𑠙 𑠚 𑠛 𑠜 𑠝 𑠞 𑠟</span>
-<span class="doccomment">/// 𑠠 𑠡 𑠢 𑠣 𑠤 𑠥 𑠦 𑠧 𑠨 𑠩 𑠪 𑠫 𑠬 𑠭 𑠮 𑠯</span>
-<span class="doccomment">/// 𑠰 𑠱 𑠲 𑠳 𑠴 𑠵 𑠶 𑠷 𑠸 𑠹 𑠺 𑠻</span>
+<span class="doccomment">/// An enum to represent all characters in the Dogra block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Dogra</span> {
     <span class="doccomment">/// \u{11800}: &#39;𑠀&#39;</span>

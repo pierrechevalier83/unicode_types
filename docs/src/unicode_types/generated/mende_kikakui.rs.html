@@ -1560,53 +1560,8 @@
 <span id="1560">1560</span>
 <span id="1561">1561</span>
 <span id="1562">1562</span>
-<span id="1563">1563</span>
-<span id="1564">1564</span>
-<span id="1565">1565</span>
-<span id="1566">1566</span>
-<span id="1567">1567</span>
-<span id="1568">1568</span>
-<span id="1569">1569</span>
-<span id="1570">1570</span>
-<span id="1571">1571</span>
-<span id="1572">1572</span>
-<span id="1573">1573</span>
-<span id="1574">1574</span>
-<span id="1575">1575</span>
-<span id="1576">1576</span>
-<span id="1577">1577</span>
-<span id="1578">1578</span>
-<span id="1579">1579</span>
-<span id="1580">1580</span>
-<span id="1581">1581</span>
-<span id="1582">1582</span>
-<span id="1583">1583</span>
-<span id="1584">1584</span>
-<span id="1585">1585</span>
-<span id="1586">1586</span>
-<span id="1587">1587</span>
-<span id="1588">1588</span>
-<span id="1589">1589</span>
-<span id="1590">1590</span>
-<span id="1591">1591</span>
-<span id="1592">1592</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1e800} → \u{1e8df}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𞠀 𞠁 𞠂 𞠃 𞠄 𞠅 𞠆 𞠇 𞠈 𞠉 𞠊 𞠋 𞠌 𞠍 𞠎 𞠏</span>
-<span class="doccomment">/// 𞠐 𞠑 𞠒 𞠓 𞠔 𞠕 𞠖 𞠗 𞠘 𞠙 𞠚 𞠛 𞠜 𞠝 𞠞 𞠟</span>
-<span class="doccomment">/// 𞠠 𞠡 𞠢 𞠣 𞠤 𞠥 𞠦 𞠧 𞠨 𞠩 𞠪 𞠫 𞠬 𞠭 𞠮 𞠯</span>
-<span class="doccomment">/// 𞠰 𞠱 𞠲 𞠳 𞠴 𞠵 𞠶 𞠷 𞠸 𞠹 𞠺 𞠻 𞠼 𞠽 𞠾 𞠿</span>
-<span class="doccomment">/// 𞡀 𞡁 𞡂 𞡃 𞡄 𞡅 𞡆 𞡇 𞡈 𞡉 𞡊 𞡋 𞡌 𞡍 𞡎 𞡏</span>
-<span class="doccomment">/// 𞡐 𞡑 𞡒 𞡓 𞡔 𞡕 𞡖 𞡗 𞡘 𞡙 𞡚 𞡛 𞡜 𞡝 𞡞 𞡟</span>
-<span class="doccomment">/// 𞡠 𞡡 𞡢 𞡣 𞡤 𞡥 𞡦 𞡧 𞡨 𞡩 𞡪 𞡫 𞡬 𞡭 𞡮 𞡯</span>
-<span class="doccomment">/// 𞡰 𞡱 𞡲 𞡳 𞡴 𞡵 𞡶 𞡷 𞡸 𞡹 𞡺 𞡻 𞡼 𞡽 𞡾 𞡿</span>
-<span class="doccomment">/// 𞢀 𞢁 𞢂 𞢃 𞢄 𞢅 𞢆 𞢇 𞢈 𞢉 𞢊 𞢋 𞢌 𞢍 𞢎 𞢏</span>
-<span class="doccomment">/// 𞢐 𞢑 𞢒 𞢓 𞢔 𞢕 𞢖 𞢗 𞢘 𞢙 𞢚 𞢛 𞢜 𞢝 𞢞 𞢟</span>
-<span class="doccomment">/// 𞢠 𞢡 𞢢 𞢣 𞢤 𞢥 𞢦 𞢧 𞢨 𞢩 𞢪 𞢫 𞢬 𞢭 𞢮 𞢯</span>
-<span class="doccomment">/// 𞢰 𞢱 𞢲 𞢳 𞢴 𞢵 𞢶 𞢷 𞢸 𞢹 𞢺 𞢻 𞢼 𞢽 𞢾 𞢿</span>
-<span class="doccomment">/// 𞣀 𞣁 𞣂 𞣃 𞣄 𞣇 𞣈 𞣉 𞣊 𞣋 𞣌 𞣍 𞣎 𞣏 𞣐 𞣑</span>
-<span class="doccomment">/// 𞣒 𞣓 𞣔 𞣕 𞣖</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1e800}: &#39;𞠀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SYLLABLE_M001_KI</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𞠀&#39;</span>;
@@ -2036,22 +1991,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">COMBINING_NUMBER_MILLIONS</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𞣖&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1e800} → \u{1e8df}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𞠀 𞠁 𞠂 𞠃 𞠄 𞠅 𞠆 𞠇 𞠈 𞠉 𞠊 𞠋 𞠌 𞠍 𞠎 𞠏</span>
-<span class="doccomment">/// 𞠐 𞠑 𞠒 𞠓 𞠔 𞠕 𞠖 𞠗 𞠘 𞠙 𞠚 𞠛 𞠜 𞠝 𞠞 𞠟</span>
-<span class="doccomment">/// 𞠠 𞠡 𞠢 𞠣 𞠤 𞠥 𞠦 𞠧 𞠨 𞠩 𞠪 𞠫 𞠬 𞠭 𞠮 𞠯</span>
-<span class="doccomment">/// 𞠰 𞠱 𞠲 𞠳 𞠴 𞠵 𞠶 𞠷 𞠸 𞠹 𞠺 𞠻 𞠼 𞠽 𞠾 𞠿</span>
-<span class="doccomment">/// 𞡀 𞡁 𞡂 𞡃 𞡄 𞡅 𞡆 𞡇 𞡈 𞡉 𞡊 𞡋 𞡌 𞡍 𞡎 𞡏</span>
-<span class="doccomment">/// 𞡐 𞡑 𞡒 𞡓 𞡔 𞡕 𞡖 𞡗 𞡘 𞡙 𞡚 𞡛 𞡜 𞡝 𞡞 𞡟</span>
-<span class="doccomment">/// 𞡠 𞡡 𞡢 𞡣 𞡤 𞡥 𞡦 𞡧 𞡨 𞡩 𞡪 𞡫 𞡬 𞡭 𞡮 𞡯</span>
-<span class="doccomment">/// 𞡰 𞡱 𞡲 𞡳 𞡴 𞡵 𞡶 𞡷 𞡸 𞡹 𞡺 𞡻 𞡼 𞡽 𞡾 𞡿</span>
-<span class="doccomment">/// 𞢀 𞢁 𞢂 𞢃 𞢄 𞢅 𞢆 𞢇 𞢈 𞢉 𞢊 𞢋 𞢌 𞢍 𞢎 𞢏</span>
-<span class="doccomment">/// 𞢐 𞢑 𞢒 𞢓 𞢔 𞢕 𞢖 𞢗 𞢘 𞢙 𞢚 𞢛 𞢜 𞢝 𞢞 𞢟</span>
-<span class="doccomment">/// 𞢠 𞢡 𞢢 𞢣 𞢤 𞢥 𞢦 𞢧 𞢨 𞢩 𞢪 𞢫 𞢬 𞢭 𞢮 𞢯</span>
-<span class="doccomment">/// 𞢰 𞢱 𞢲 𞢳 𞢴 𞢵 𞢶 𞢷 𞢸 𞢹 𞢺 𞢻 𞢼 𞢽 𞢾 𞢿</span>
-<span class="doccomment">/// 𞣀 𞣁 𞣂 𞣃 𞣄 𞣇 𞣈 𞣉 𞣊 𞣋 𞣌 𞣍 𞣎 𞣏 𞣐 𞣑</span>
-<span class="doccomment">/// 𞣒 𞣓 𞣔 𞣕 𞣖</span>
+<span class="doccomment">/// An enum to represent all characters in the MendeKikakui block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">MendeKikakui</span> {
     <span class="doccomment">/// \u{1e800}: &#39;𞠀&#39;</span>

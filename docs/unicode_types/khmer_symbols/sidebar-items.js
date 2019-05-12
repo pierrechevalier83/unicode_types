@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["KhmerSymbols","\\u{19e0} → \\u{19ff}\\ \\  ᧠ ᧡ ᧢ ᧣ ᧤ ᧥ ᧦ ᧧ ᧨ ᧩ ᧪ ᧫ ᧬ ᧭ ᧮ ᧯  ᧰ ᧱ ᧲ ᧳ ᧴ ᧵ ᧶ ᧷ ᧸ ᧹ ᧺ ᧻ ᧼ ᧽ ᧾"]],"mod":[["constants","\\u{19e0} → \\u{19ff}\\ \\  ᧠ ᧡ ᧢ ᧣ ᧤ ᧥ ᧦ ᧧ ᧨ ᧩ ᧪ ᧫ ᧬ ᧭ ᧮ ᧯  ᧰ ᧱ ᧲ ᧳ ᧴ ᧵ ᧶ ᧷ ᧸ ᧹ ᧺ ᧻ ᧼ ᧽ ᧾"]]});
+initSidebarItems({"enum":[["KhmerSymbols","An enum to represent all characters in the KhmerSymbols block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

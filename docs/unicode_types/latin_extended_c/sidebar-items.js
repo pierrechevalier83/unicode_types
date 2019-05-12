@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["LatinExtendedC","\\u{2c60} → \\u{2c7f}\\ \\  Ⱡ ⱡ Ɫ Ᵽ Ɽ ⱥ ⱦ Ⱨ ⱨ Ⱪ ⱪ Ⱬ ⱬ Ɑ Ɱ Ɐ  Ɒ ⱱ Ⱳ ⱳ ⱴ Ⱶ ⱶ ⱷ ⱸ ⱹ ⱺ ⱻ ⱼ ⱽ Ȿ"]],"mod":[["constants","\\u{2c60} → \\u{2c7f}\\ \\  Ⱡ ⱡ Ɫ Ᵽ Ɽ ⱥ ⱦ Ⱨ ⱨ Ⱪ ⱪ Ⱬ ⱬ Ɑ Ɱ Ɐ  Ɒ ⱱ Ⱳ ⱳ ⱴ Ⱶ ⱶ ⱷ ⱸ ⱹ ⱺ ⱻ ⱼ ⱽ Ȿ"]]});
+initSidebarItems({"enum":[["LatinExtendedC","An enum to represent all characters in the LatinExtendedC block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

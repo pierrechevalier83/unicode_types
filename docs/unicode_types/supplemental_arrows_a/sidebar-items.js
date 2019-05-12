@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["SupplementalArrowsA","\\u{27f0} → \\u{27ff}\\ \\  ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾"]],"mod":[["constants","\\u{27f0} → \\u{27ff}\\ \\  ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾"]]});
+initSidebarItems({"enum":[["SupplementalArrowsA","An enum to represent all characters in the SupplementalArrowsA block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CJKCompatibilityForms","\\u{fe30} → \\u{fe4f}\\ \\  ︰ ︱ ︲ ︳ ︴ ︵ ︶ ︷ ︸ ︹ ︺ ︻ ︼ ︽ ︾ ︿  ﹀ ﹁ ﹂ ﹃ ﹄ ﹅ ﹆ ﹇ ﹈ ﹉ ﹊ ﹋ ﹌ ﹍ ﹎"]],"mod":[["constants","\\u{fe30} → \\u{fe4f}\\ \\  ︰ ︱ ︲ ︳ ︴ ︵ ︶ ︷ ︸ ︹ ︺ ︻ ︼ ︽ ︾ ︿  ﹀ ﹁ ﹂ ﹃ ﹄ ﹅ ﹆ ﹇ ﹈ ﹉ ﹊ ﹋ ﹌ ﹍ ﹎"]]});
+initSidebarItems({"enum":[["CJKCompatibilityForms","An enum to represent all characters in the CJKCompatibilityForms block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Phoenician","\\u{10900} → \\u{1091f}\\ \\  𐤀 𐤁 𐤂 𐤃 𐤄 𐤅 𐤆 𐤇 𐤈 𐤉 𐤊 𐤋 𐤌 𐤍 𐤎 𐤏  𐤐 𐤑 𐤒 𐤓 𐤔 𐤕 𐤖 𐤗 𐤘 𐤙 𐤚 𐤛"]],"mod":[["constants","\\u{10900} → \\u{1091f}\\ \\  𐤀 𐤁 𐤂 𐤃 𐤄 𐤅 𐤆 𐤇 𐤈 𐤉 𐤊 𐤋 𐤌 𐤍 𐤎 𐤏  𐤐 𐤑 𐤒 𐤓 𐤔 𐤕 𐤖 𐤗 𐤘 𐤙 𐤚 𐤛"]]});
+initSidebarItems({"enum":[["Phoenician","An enum to represent all characters in the Phoenician block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

@@ -279,17 +279,8 @@
 <span id="279">279</span>
 <span id="280">280</span>
 <span id="281">281</span>
-<span id="282">282</span>
-<span id="283">283</span>
-<span id="284">284</span>
-<span id="285">285</span>
-<span id="286">286</span>
-<span id="287">287</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10840} → \u{1085f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐡀 𐡁 𐡂 𐡃 𐡄 𐡅 𐡆 𐡇 𐡈 𐡉 𐡊 𐡋 𐡌 𐡍 𐡎 𐡏</span>
-<span class="doccomment">/// 𐡐 𐡑 𐡒 𐡓 𐡔 𐡕 𐡗 𐡘 𐡙 𐡚 𐡛 𐡜 𐡝 𐡞</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10840}: &#39;𐡀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_ALEPH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐡀&#39;</span>;
@@ -353,10 +344,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">NUMBER_ONE_THOUSAND</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐡞&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10840} → \u{1085f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐡀 𐡁 𐡂 𐡃 𐡄 𐡅 𐡆 𐡇 𐡈 𐡉 𐡊 𐡋 𐡌 𐡍 𐡎 𐡏</span>
-<span class="doccomment">/// 𐡐 𐡑 𐡒 𐡓 𐡔 𐡕 𐡗 𐡘 𐡙 𐡚 𐡛 𐡜 𐡝 𐡞</span>
+<span class="doccomment">/// An enum to represent all characters in the ImperialAramaic block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">ImperialAramaic</span> {
     <span class="doccomment">/// \u{10840}: &#39;𐡀&#39;</span>

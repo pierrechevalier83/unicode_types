@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Elymaic","\\u{10fe0} → \\u{10fff}\\ \\  𐿠 𐿡 𐿢 𐿣 𐿤 𐿥 𐿦 𐿧 𐿨 𐿩 𐿪 𐿫 𐿬 𐿭 𐿮 𐿯  𐿰 𐿱 𐿲 𐿳 𐿴 𐿵 𐿶"]],"mod":[["constants","\\u{10fe0} → \\u{10fff}\\ \\  𐿠 𐿡 𐿢 𐿣 𐿤 𐿥 𐿦 𐿧 𐿨 𐿩 𐿪 𐿫 𐿬 𐿭 𐿮 𐿯  𐿰 𐿱 𐿲 𐿳 𐿴 𐿵 𐿶"]]});
+initSidebarItems({"enum":[["Elymaic","An enum to represent all characters in the Elymaic block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

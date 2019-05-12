@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["EthiopicSupplement","\\u{1380} → \\u{139f}\\ \\  ᎀ ᎁ ᎂ ᎃ ᎄ ᎅ ᎆ ᎇ ᎈ ᎉ ᎊ ᎋ ᎌ ᎍ ᎎ ᎏ  ᎐ ᎑ ᎒ ᎓ ᎔ ᎕ ᎖ ᎗ ᎘ ᎙"]],"mod":[["constants","\\u{1380} → \\u{139f}\\ \\  ᎀ ᎁ ᎂ ᎃ ᎄ ᎅ ᎆ ᎇ ᎈ ᎉ ᎊ ᎋ ᎌ ᎍ ᎎ ᎏ  ᎐ ᎑ ᎒ ᎓ ᎔ ᎕ ᎖ ᎗ ᎘ ᎙"]]});
+initSidebarItems({"enum":[["EthiopicSupplement","An enum to represent all characters in the EthiopicSupplement block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

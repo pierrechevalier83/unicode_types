@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Hatran","\\u{108e0} → \\u{108ff}\\ \\  𐣠 𐣡 𐣢 𐣣 𐣤 𐣥 𐣦 𐣧 𐣨 𐣩 𐣪 𐣫 𐣬 𐣭 𐣮 𐣯  𐣰 𐣱 𐣲 𐣴 𐣵 𐣻 𐣼 𐣽 𐣾"]],"mod":[["constants","\\u{108e0} → \\u{108ff}\\ \\  𐣠 𐣡 𐣢 𐣣 𐣤 𐣥 𐣦 𐣧 𐣨 𐣩 𐣪 𐣫 𐣬 𐣭 𐣮 𐣯  𐣰 𐣱 𐣲 𐣴 𐣵 𐣻 𐣼 𐣽 𐣾"]]});
+initSidebarItems({"enum":[["Hatran","An enum to represent all characters in the Hatran block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

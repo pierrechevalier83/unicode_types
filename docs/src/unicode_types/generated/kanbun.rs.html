@@ -174,14 +174,8 @@
 <span id="174">174</span>
 <span id="175">175</span>
 <span id="176">176</span>
-<span id="177">177</span>
-<span id="178">178</span>
-<span id="179">179</span>
-<span id="180">180</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{3190} → \u{319f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ㆐ ㆑ ㆒ ㆓ ㆔ ㆕ ㆖ ㆗ ㆘ ㆙ ㆚ ㆛ ㆜ ㆝ ㆞</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{3190}: &#39;㆐&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">IDEOGRAPHIC_ANNOTATION_LINKING_MARK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;㆐&#39;</span>;
@@ -215,9 +209,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">IDEOGRAPHIC_ANNOTATION_EARTH_MARK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;㆞&#39;</span>;
 }
 
-<span class="doccomment">/// \u{3190} → \u{319f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ㆐ ㆑ ㆒ ㆓ ㆔ ㆕ ㆖ ㆗ ㆘ ㆙ ㆚ ㆛ ㆜ ㆝ ㆞</span>
+<span class="doccomment">/// An enum to represent all characters in the Kanbun block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Kanbun</span> {
     <span class="doccomment">/// \u{3190}: &#39;㆐&#39;</span>

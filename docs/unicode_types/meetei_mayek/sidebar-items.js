@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["MeeteiMayek","\\u{abc0} → \\u{abff}\\ \\  ꯀ ꯁ ꯂ ꯃ ꯄ ꯅ ꯆ ꯇ ꯈ ꯉ ꯊ ꯋ ꯌ ꯍ ꯎ ꯏ  ꯐ ꯑ ꯒ ꯓ ꯔ ꯕ ꯖ ꯗ ꯘ ꯙ ꯚ ꯛ ꯜ ꯝ ꯞ ꯟ  ꯠ ꯡ ꯢ ꯣ ꯤ ꯥ ꯦ ꯧ ꯨ ꯩ ꯪ ꯫ ꯬ ꯭ ꯰ ꯱  ꯲ ꯳ ꯴ ꯵ ꯶ ꯷ ꯸ ꯹"]],"mod":[["constants","\\u{abc0} → \\u{abff}\\ \\  ꯀ ꯁ ꯂ ꯃ ꯄ ꯅ ꯆ ꯇ ꯈ ꯉ ꯊ ꯋ ꯌ ꯍ ꯎ ꯏ  ꯐ ꯑ ꯒ ꯓ ꯔ ꯕ ꯖ ꯗ ꯘ ꯙ ꯚ ꯛ ꯜ ꯝ ꯞ ꯟ  ꯠ ꯡ ꯢ ꯣ ꯤ ꯥ ꯦ ꯧ ꯨ ꯩ ꯪ ꯫ ꯬ ꯭ ꯰ ꯱  ꯲ ꯳ ꯴ ꯵ ꯶ ꯷ ꯸ ꯹"]]});
+initSidebarItems({"enum":[["MeeteiMayek","An enum to represent all characters in the MeeteiMayek block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

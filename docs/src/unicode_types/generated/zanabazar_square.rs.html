@@ -573,26 +573,8 @@
 <span id="573">573</span>
 <span id="574">574</span>
 <span id="575">575</span>
-<span id="576">576</span>
-<span id="577">577</span>
-<span id="578">578</span>
-<span id="579">579</span>
-<span id="580">580</span>
-<span id="581">581</span>
-<span id="582">582</span>
-<span id="583">583</span>
-<span id="584">584</span>
-<span id="585">585</span>
-<span id="586">586</span>
-<span id="587">587</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{11a00} → \u{11a4f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑨀 𑨁 𑨂 𑨃 𑨄 𑨅 𑨆 𑨇 𑨈 𑨉 𑨊 𑨋 𑨌 𑨍 𑨎 𑨏</span>
-<span class="doccomment">/// 𑨐 𑨑 𑨒 𑨓 𑨔 𑨕 𑨖 𑨗 𑨘 𑨙 𑨚 𑨛 𑨜 𑨝 𑨞 𑨟</span>
-<span class="doccomment">/// 𑨠 𑨡 𑨢 𑨣 𑨤 𑨥 𑨦 𑨧 𑨨 𑨩 𑨪 𑨫 𑨬 𑨭 𑨮 𑨯</span>
-<span class="doccomment">/// 𑨰 𑨱 𑨲 𑨳 𑨴 𑨵 𑨶 𑨷 𑨸 𑨹 𑨺 𑨻 𑨼 𑨽 𑨾 𑨿</span>
-<span class="doccomment">/// 𑩀 𑩁 𑩂 𑩃 𑩄 𑩅 𑩆 𑩇</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{11a00}: &#39;𑨀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_A</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑨀&#39;</span>;
@@ -740,13 +722,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SUBJOINER</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑩇&#39;</span>;
 }
 
-<span class="doccomment">/// \u{11a00} → \u{11a4f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑨀 𑨁 𑨂 𑨃 𑨄 𑨅 𑨆 𑨇 𑨈 𑨉 𑨊 𑨋 𑨌 𑨍 𑨎 𑨏</span>
-<span class="doccomment">/// 𑨐 𑨑 𑨒 𑨓 𑨔 𑨕 𑨖 𑨗 𑨘 𑨙 𑨚 𑨛 𑨜 𑨝 𑨞 𑨟</span>
-<span class="doccomment">/// 𑨠 𑨡 𑨢 𑨣 𑨤 𑨥 𑨦 𑨧 𑨨 𑨩 𑨪 𑨫 𑨬 𑨭 𑨮 𑨯</span>
-<span class="doccomment">/// 𑨰 𑨱 𑨲 𑨳 𑨴 𑨵 𑨶 𑨷 𑨸 𑨹 𑨺 𑨻 𑨼 𑨽 𑨾 𑨿</span>
-<span class="doccomment">/// 𑩀 𑩁 𑩂 𑩃 𑩄 𑩅 𑩆 𑩇</span>
+<span class="doccomment">/// An enum to represent all characters in the ZanabazarSquare block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">ZanabazarSquare</span> {
     <span class="doccomment">/// \u{11a00}: &#39;𑨀&#39;</span>

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Tagbanwa","\\u{1760} → \\u{177f}\\ \\  ᝠ ᝡ ᝢ ᝣ ᝤ ᝥ ᝦ ᝧ ᝨ ᝩ ᝪ ᝫ ᝬ ᝮ ᝯ ᝰ  ᝲ ᝳ"]],"mod":[["constants","\\u{1760} → \\u{177f}\\ \\  ᝠ ᝡ ᝢ ᝣ ᝤ ᝥ ᝦ ᝧ ᝨ ᝩ ᝪ ᝫ ᝬ ᝮ ᝯ ᝰ  ᝲ ᝳ"]]});
+initSidebarItems({"enum":[["Tagbanwa","An enum to represent all characters in the Tagbanwa block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

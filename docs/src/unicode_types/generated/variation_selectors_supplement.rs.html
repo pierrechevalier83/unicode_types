@@ -1742,56 +1742,8 @@
 <span id="1742">1742</span>
 <span id="1743">1743</span>
 <span id="1744">1744</span>
-<span id="1745">1745</span>
-<span id="1746">1746</span>
-<span id="1747">1747</span>
-<span id="1748">1748</span>
-<span id="1749">1749</span>
-<span id="1750">1750</span>
-<span id="1751">1751</span>
-<span id="1752">1752</span>
-<span id="1753">1753</span>
-<span id="1754">1754</span>
-<span id="1755">1755</span>
-<span id="1756">1756</span>
-<span id="1757">1757</span>
-<span id="1758">1758</span>
-<span id="1759">1759</span>
-<span id="1760">1760</span>
-<span id="1761">1761</span>
-<span id="1762">1762</span>
-<span id="1763">1763</span>
-<span id="1764">1764</span>
-<span id="1765">1765</span>
-<span id="1766">1766</span>
-<span id="1767">1767</span>
-<span id="1768">1768</span>
-<span id="1769">1769</span>
-<span id="1770">1770</span>
-<span id="1771">1771</span>
-<span id="1772">1772</span>
-<span id="1773">1773</span>
-<span id="1774">1774</span>
-<span id="1775">1775</span>
-<span id="1776">1776</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{e0100} → \u{e01ef}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 󠄀 󠄁 󠄂 󠄃 󠄄 󠄅 󠄆 󠄇 󠄈 󠄉 󠄊 󠄋 󠄌 󠄍 󠄎 󠄏</span>
-<span class="doccomment">/// 󠄐 󠄑 󠄒 󠄓 󠄔 󠄕 󠄖 󠄗 󠄘 󠄙 󠄚 󠄛 󠄜 󠄝 󠄞 󠄟</span>
-<span class="doccomment">/// 󠄠 󠄡 󠄢 󠄣 󠄤 󠄥 󠄦 󠄧 󠄨 󠄩 󠄪 󠄫 󠄬 󠄭 󠄮 󠄯</span>
-<span class="doccomment">/// 󠄰 󠄱 󠄲 󠄳 󠄴 󠄵 󠄶 󠄷 󠄸 󠄹 󠄺 󠄻 󠄼 󠄽 󠄾 󠄿</span>
-<span class="doccomment">/// 󠅀 󠅁 󠅂 󠅃 󠅄 󠅅 󠅆 󠅇 󠅈 󠅉 󠅊 󠅋 󠅌 󠅍 󠅎 󠅏</span>
-<span class="doccomment">/// 󠅐 󠅑 󠅒 󠅓 󠅔 󠅕 󠅖 󠅗 󠅘 󠅙 󠅚 󠅛 󠅜 󠅝 󠅞 󠅟</span>
-<span class="doccomment">/// 󠅠 󠅡 󠅢 󠅣 󠅤 󠅥 󠅦 󠅧 󠅨 󠅩 󠅪 󠅫 󠅬 󠅭 󠅮 󠅯</span>
-<span class="doccomment">/// 󠅰 󠅱 󠅲 󠅳 󠅴 󠅵 󠅶 󠅷 󠅸 󠅹 󠅺 󠅻 󠅼 󠅽 󠅾 󠅿</span>
-<span class="doccomment">/// 󠆀 󠆁 󠆂 󠆃 󠆄 󠆅 󠆆 󠆇 󠆈 󠆉 󠆊 󠆋 󠆌 󠆍 󠆎 󠆏</span>
-<span class="doccomment">/// 󠆐 󠆑 󠆒 󠆓 󠆔 󠆕 󠆖 󠆗 󠆘 󠆙 󠆚 󠆛 󠆜 󠆝 󠆞 󠆟</span>
-<span class="doccomment">/// 󠆠 󠆡 󠆢 󠆣 󠆤 󠆥 󠆦 󠆧 󠆨 󠆩 󠆪 󠆫 󠆬 󠆭 󠆮 󠆯</span>
-<span class="doccomment">/// 󠆰 󠆱 󠆲 󠆳 󠆴 󠆵 󠆶 󠆷 󠆸 󠆹 󠆺 󠆻 󠆼 󠆽 󠆾 󠆿</span>
-<span class="doccomment">/// 󠇀 󠇁 󠇂 󠇃 󠇄 󠇅 󠇆 󠇇 󠇈 󠇉 󠇊 󠇋 󠇌 󠇍 󠇎 󠇏</span>
-<span class="doccomment">/// 󠇐 󠇑 󠇒 󠇓 󠇔 󠇕 󠇖 󠇗 󠇘 󠇙 󠇚 󠇛 󠇜 󠇝 󠇞 󠇟</span>
-<span class="doccomment">/// 󠇠 󠇡 󠇢 󠇣 󠇤 󠇥 󠇦 󠇧 󠇨 󠇩 󠇪 󠇫 󠇬 󠇭 󠇮</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{e0100}: &#39;󠄀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">VARIATION_SELECTOR_DASH_17</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;󠄀&#39;</span>;
@@ -2273,23 +2225,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">VARIATION_SELECTOR_DASH_255</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;󠇮&#39;</span>;
 }
 
-<span class="doccomment">/// \u{e0100} → \u{e01ef}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 󠄀 󠄁 󠄂 󠄃 󠄄 󠄅 󠄆 󠄇 󠄈 󠄉 󠄊 󠄋 󠄌 󠄍 󠄎 󠄏</span>
-<span class="doccomment">/// 󠄐 󠄑 󠄒 󠄓 󠄔 󠄕 󠄖 󠄗 󠄘 󠄙 󠄚 󠄛 󠄜 󠄝 󠄞 󠄟</span>
-<span class="doccomment">/// 󠄠 󠄡 󠄢 󠄣 󠄤 󠄥 󠄦 󠄧 󠄨 󠄩 󠄪 󠄫 󠄬 󠄭 󠄮 󠄯</span>
-<span class="doccomment">/// 󠄰 󠄱 󠄲 󠄳 󠄴 󠄵 󠄶 󠄷 󠄸 󠄹 󠄺 󠄻 󠄼 󠄽 󠄾 󠄿</span>
-<span class="doccomment">/// 󠅀 󠅁 󠅂 󠅃 󠅄 󠅅 󠅆 󠅇 󠅈 󠅉 󠅊 󠅋 󠅌 󠅍 󠅎 󠅏</span>
-<span class="doccomment">/// 󠅐 󠅑 󠅒 󠅓 󠅔 󠅕 󠅖 󠅗 󠅘 󠅙 󠅚 󠅛 󠅜 󠅝 󠅞 󠅟</span>
-<span class="doccomment">/// 󠅠 󠅡 󠅢 󠅣 󠅤 󠅥 󠅦 󠅧 󠅨 󠅩 󠅪 󠅫 󠅬 󠅭 󠅮 󠅯</span>
-<span class="doccomment">/// 󠅰 󠅱 󠅲 󠅳 󠅴 󠅵 󠅶 󠅷 󠅸 󠅹 󠅺 󠅻 󠅼 󠅽 󠅾 󠅿</span>
-<span class="doccomment">/// 󠆀 󠆁 󠆂 󠆃 󠆄 󠆅 󠆆 󠆇 󠆈 󠆉 󠆊 󠆋 󠆌 󠆍 󠆎 󠆏</span>
-<span class="doccomment">/// 󠆐 󠆑 󠆒 󠆓 󠆔 󠆕 󠆖 󠆗 󠆘 󠆙 󠆚 󠆛 󠆜 󠆝 󠆞 󠆟</span>
-<span class="doccomment">/// 󠆠 󠆡 󠆢 󠆣 󠆤 󠆥 󠆦 󠆧 󠆨 󠆩 󠆪 󠆫 󠆬 󠆭 󠆮 󠆯</span>
-<span class="doccomment">/// 󠆰 󠆱 󠆲 󠆳 󠆴 󠆵 󠆶 󠆷 󠆸 󠆹 󠆺 󠆻 󠆼 󠆽 󠆾 󠆿</span>
-<span class="doccomment">/// 󠇀 󠇁 󠇂 󠇃 󠇄 󠇅 󠇆 󠇇 󠇈 󠇉 󠇊 󠇋 󠇌 󠇍 󠇎 󠇏</span>
-<span class="doccomment">/// 󠇐 󠇑 󠇒 󠇓 󠇔 󠇕 󠇖 󠇗 󠇘 󠇙 󠇚 󠇛 󠇜 󠇝 󠇞 󠇟</span>
-<span class="doccomment">/// 󠇠 󠇡 󠇢 󠇣 󠇤 󠇥 󠇦 󠇧 󠇨 󠇩 󠇪 󠇫 󠇬 󠇭 󠇮</span>
+<span class="doccomment">/// An enum to represent all characters in the VariationSelectorsSupplement block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">VariationSelectorsSupplement</span> {
     <span class="doccomment">/// \u{e0100}: &#39;󠄀&#39;</span>

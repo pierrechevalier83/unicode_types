@@ -881,35 +881,8 @@
 <span id="881">881</span>
 <span id="882">882</span>
 <span id="883">883</span>
-<span id="884">884</span>
-<span id="885">885</span>
-<span id="886">886</span>
-<span id="887">887</span>
-<span id="888">888</span>
-<span id="889">889</span>
-<span id="890">890</span>
-<span id="891">891</span>
-<span id="892">892</span>
-<span id="893">893</span>
-<span id="894">894</span>
-<span id="895">895</span>
-<span id="896">896</span>
-<span id="897">897</span>
-<span id="898">898</span>
-<span id="899">899</span>
-<span id="900">900</span>
-<span id="901">901</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1f700} → \u{1f77f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 🜀 🜁 🜂 🜃 🜄 🜅 🜆 🜇 🜈 🜉 🜊 🜋 🜌 🜍 🜎 🜏</span>
-<span class="doccomment">/// 🜐 🜑 🜒 🜓 🜔 🜕 🜖 🜗 🜘 🜙 🜚 🜛 🜜 🜝 🜞 🜟</span>
-<span class="doccomment">/// 🜠 🜡 🜢 🜣 🜤 🜥 🜦 🜧 🜨 🜩 🜪 🜫 🜬 🜭 🜮 🜯</span>
-<span class="doccomment">/// 🜰 🜱 🜲 🜳 🜴 🜵 🜶 🜷 🜸 🜹 🜺 🜻 🜼 🜽 🜾 🜿</span>
-<span class="doccomment">/// 🝀 🝁 🝂 🝃 🝄 🝅 🝆 🝇 🝈 🝉 🝊 🝋 🝌 🝍 🝎 🝏</span>
-<span class="doccomment">/// 🝐 🝑 🝒 🝓 🝔 🝕 🝖 🝗 🝘 🝙 🝚 🝛 🝜 🝝 🝞 🝟</span>
-<span class="doccomment">/// 🝠 🝡 🝢 🝣 🝤 🝥 🝦 🝧 🝨 🝩 🝪 🝫 🝬 🝭 🝮 🝯</span>
-<span class="doccomment">/// 🝰 🝱 🝲 🝳</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1f700}: &#39;🜀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ALCHEMICAL_SYMBOL_FOR_QUINTESSENCE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;🜀&#39;</span>;
@@ -1145,16 +1118,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ALCHEMICAL_SYMBOL_FOR_HALF_OUNCE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;🝳&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1f700} → \u{1f77f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 🜀 🜁 🜂 🜃 🜄 🜅 🜆 🜇 🜈 🜉 🜊 🜋 🜌 🜍 🜎 🜏</span>
-<span class="doccomment">/// 🜐 🜑 🜒 🜓 🜔 🜕 🜖 🜗 🜘 🜙 🜚 🜛 🜜 🜝 🜞 🜟</span>
-<span class="doccomment">/// 🜠 🜡 🜢 🜣 🜤 🜥 🜦 🜧 🜨 🜩 🜪 🜫 🜬 🜭 🜮 🜯</span>
-<span class="doccomment">/// 🜰 🜱 🜲 🜳 🜴 🜵 🜶 🜷 🜸 🜹 🜺 🜻 🜼 🜽 🜾 🜿</span>
-<span class="doccomment">/// 🝀 🝁 🝂 🝃 🝄 🝅 🝆 🝇 🝈 🝉 🝊 🝋 🝌 🝍 🝎 🝏</span>
-<span class="doccomment">/// 🝐 🝑 🝒 🝓 🝔 🝕 🝖 🝗 🝘 🝙 🝚 🝛 🝜 🝝 🝞 🝟</span>
-<span class="doccomment">/// 🝠 🝡 🝢 🝣 🝤 🝥 🝦 🝧 🝨 🝩 🝪 🝫 🝬 🝭 🝮 🝯</span>
-<span class="doccomment">/// 🝰 🝱 🝲 🝳</span>
+<span class="doccomment">/// An enum to represent all characters in the AlchemicalSymbols block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">AlchemicalSymbols</span> {
     <span class="doccomment">/// \u{1f700}: &#39;🜀&#39;</span>

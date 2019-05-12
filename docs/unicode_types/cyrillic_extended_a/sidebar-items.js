@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CyrillicExtendedA","\\u{2de0} → \\u{2dff}\\ \\  ⷠ ⷡ ⷢ ⷣ ⷤ ⷥ ⷦ ⷧ ⷨ ⷩ ⷪ ⷫ ⷬ ⷭ ⷮ ⷯ  ⷰ ⷱ ⷲ ⷳ ⷴ ⷵ ⷶ ⷷ ⷸ ⷹ ⷺ ⷻ ⷼ ⷽ ⷾ"]],"mod":[["constants","\\u{2de0} → \\u{2dff}\\ \\  ⷠ ⷡ ⷢ ⷣ ⷤ ⷥ ⷦ ⷧ ⷨ ⷩ ⷪ ⷫ ⷬ ⷭ ⷮ ⷯ  ⷰ ⷱ ⷲ ⷳ ⷴ ⷵ ⷶ ⷷ ⷸ ⷹ ⷺ ⷻ ⷼ ⷽ ⷾ"]]});
+initSidebarItems({"enum":[["CyrillicExtendedA","An enum to represent all characters in the CyrillicExtendedA block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

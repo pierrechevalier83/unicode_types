@@ -958,35 +958,8 @@
 <span id="958">958</span>
 <span id="959">959</span>
 <span id="960">960</span>
-<span id="961">961</span>
-<span id="962">962</span>
-<span id="963">963</span>
-<span id="964">964</span>
-<span id="965">965</span>
-<span id="966">966</span>
-<span id="967">967</span>
-<span id="968">968</span>
-<span id="969">969</span>
-<span id="970">970</span>
-<span id="971">971</span>
-<span id="972">972</span>
-<span id="973">973</span>
-<span id="974">974</span>
-<span id="975">975</span>
-<span id="976">976</span>
-<span id="977">977</span>
-<span id="978">978</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{100} → \u{17f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ā ā Ă ă Ą ą Ć ć Ĉ ĉ Ċ ċ Č č Ď ď</span>
-<span class="doccomment">/// Đ đ Ē ē Ĕ ĕ Ė ė Ę ę Ě ě Ĝ ĝ Ğ ğ</span>
-<span class="doccomment">/// Ġ ġ Ģ ģ Ĥ ĥ Ħ ħ Ĩ ĩ Ī ī Ĭ ĭ Į į</span>
-<span class="doccomment">/// İ ı Ĳ ĳ Ĵ ĵ Ķ ķ ĸ Ĺ ĺ Ļ ļ Ľ ľ Ŀ</span>
-<span class="doccomment">/// ŀ Ł ł Ń ń Ņ ņ Ň ň ŉ Ŋ ŋ Ō ō Ŏ ŏ</span>
-<span class="doccomment">/// Ő ő Œ œ Ŕ ŕ Ŗ ŗ Ř ř Ś ś Ŝ ŝ Ş ş</span>
-<span class="doccomment">/// Š š Ţ ţ Ť ť Ŧ ŧ Ũ ũ Ū ū Ŭ ŭ Ů ů</span>
-<span class="doccomment">/// Ű ű Ų ų Ŵ ŵ Ŷ ŷ Ÿ Ź ź Ż ż Ž ž</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{100}: &#39;Ā&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LATIN_CAPITAL_LETTER_A_WITH_MACRON</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;Ā&#39;</span>;
@@ -1244,16 +1217,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LATIN_SMALL_LETTER_Z_WITH_CARON</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ž&#39;</span>;
 }
 
-<span class="doccomment">/// \u{100} → \u{17f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ā ā Ă ă Ą ą Ć ć Ĉ ĉ Ċ ċ Č č Ď ď</span>
-<span class="doccomment">/// Đ đ Ē ē Ĕ ĕ Ė ė Ę ę Ě ě Ĝ ĝ Ğ ğ</span>
-<span class="doccomment">/// Ġ ġ Ģ ģ Ĥ ĥ Ħ ħ Ĩ ĩ Ī ī Ĭ ĭ Į į</span>
-<span class="doccomment">/// İ ı Ĳ ĳ Ĵ ĵ Ķ ķ ĸ Ĺ ĺ Ļ ļ Ľ ľ Ŀ</span>
-<span class="doccomment">/// ŀ Ł ł Ń ń Ņ ņ Ň ň ŉ Ŋ ŋ Ō ō Ŏ ŏ</span>
-<span class="doccomment">/// Ő ő Œ œ Ŕ ŕ Ŗ ŗ Ř ř Ś ś Ŝ ŝ Ş ş</span>
-<span class="doccomment">/// Š š Ţ ţ Ť ť Ŧ ŧ Ũ ũ Ū ū Ŭ ŭ Ů ů</span>
-<span class="doccomment">/// Ű ű Ų ų Ŵ ŵ Ŷ ŷ Ÿ Ź ź Ż ż Ž ž</span>
+<span class="doccomment">/// An enum to represent all characters in the LatinExtendedA block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">LatinExtendedA</span> {
     <span class="doccomment">/// \u{100}: &#39;Ā&#39;</span>

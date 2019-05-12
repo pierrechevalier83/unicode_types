@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CyrillicExtendedC","\\u{1c80} → \\u{1c8f}\\ \\  ᲀ ᲁ ᲂ ᲃ ᲄ ᲅ ᲆ ᲇ ᲈ"]],"mod":[["constants","\\u{1c80} → \\u{1c8f}\\ \\  ᲀ ᲁ ᲂ ᲃ ᲄ ᲅ ᲆ ᲇ ᲈ"]]});
+initSidebarItems({"enum":[["CyrillicExtendedC","An enum to represent all characters in the CyrillicExtendedC block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

@@ -643,29 +643,8 @@
 <span id="643">643</span>
 <span id="644">644</span>
 <span id="645">645</span>
-<span id="646">646</span>
-<span id="647">647</span>
-<span id="648">648</span>
-<span id="649">649</span>
-<span id="650">650</span>
-<span id="651">651</span>
-<span id="652">652</span>
-<span id="653">653</span>
-<span id="654">654</span>
-<span id="655">655</span>
-<span id="656">656</span>
-<span id="657">657</span>
-<span id="658">658</span>
-<span id="659">659</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{aa00} → \u{aa5f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꨀ ꨁ ꨂ ꨃ ꨄ ꨅ ꨆ ꨇ ꨈ ꨉ ꨊ ꨋ ꨌ ꨍ ꨎ ꨏ</span>
-<span class="doccomment">/// ꨐ ꨑ ꨒ ꨓ ꨔ ꨕ ꨖ ꨗ ꨘ ꨙ ꨚ ꨛ ꨜ ꨝ ꨞ ꨟ</span>
-<span class="doccomment">/// ꨠ ꨡ ꨢ ꨣ ꨤ ꨥ ꨦ ꨧ ꨨ ꨩ ꨪ ꨫ ꨬ ꨭ ꨮ ꨯ</span>
-<span class="doccomment">/// ꨰ ꨱ ꨲ ꨳ ꨴ ꨵ ꨶ ꩀ ꩁ ꩂ ꩃ ꩄ ꩅ ꩆ ꩇ ꩈ</span>
-<span class="doccomment">/// ꩉ ꩊ ꩋ ꩌ ꩍ ꩐ ꩑ ꩒ ꩓ ꩔ ꩕ ꩖ ꩗ ꩘ ꩙ ꩜</span>
-<span class="doccomment">/// ꩝ ꩞</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{aa00}: &#39;ꨀ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_A</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ꨀ&#39;</span>;
@@ -833,14 +812,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PUNCTUATION_DOUBLE_DANDA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;꩞&#39;</span>;
 }
 
-<span class="doccomment">/// \u{aa00} → \u{aa5f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꨀ ꨁ ꨂ ꨃ ꨄ ꨅ ꨆ ꨇ ꨈ ꨉ ꨊ ꨋ ꨌ ꨍ ꨎ ꨏ</span>
-<span class="doccomment">/// ꨐ ꨑ ꨒ ꨓ ꨔ ꨕ ꨖ ꨗ ꨘ ꨙ ꨚ ꨛ ꨜ ꨝ ꨞ ꨟ</span>
-<span class="doccomment">/// ꨠ ꨡ ꨢ ꨣ ꨤ ꨥ ꨦ ꨧ ꨨ ꨩ ꨪ ꨫ ꨬ ꨭ ꨮ ꨯ</span>
-<span class="doccomment">/// ꨰ ꨱ ꨲ ꨳ ꨴ ꨵ ꨶ ꩀ ꩁ ꩂ ꩃ ꩄ ꩅ ꩆ ꩇ ꩈ</span>
-<span class="doccomment">/// ꩉ ꩊ ꩋ ꩌ ꩍ ꩐ ꩑ ꩒ ꩓ ꩔ ꩕ ꩖ ꩗ ꩘ ꩙ ꩜</span>
-<span class="doccomment">/// ꩝ ꩞</span>
+<span class="doccomment">/// An enum to represent all characters in the Cham block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Cham</span> {
     <span class="doccomment">/// \u{aa00}: &#39;ꨀ&#39;</span>

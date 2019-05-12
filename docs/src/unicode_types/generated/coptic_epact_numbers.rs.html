@@ -265,17 +265,8 @@
 <span id="265">265</span>
 <span id="266">266</span>
 <span id="267">267</span>
-<span id="268">268</span>
-<span id="269">269</span>
-<span id="270">270</span>
-<span id="271">271</span>
-<span id="272">272</span>
-<span id="273">273</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{102e0} → \u{102ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐋠 𐋡 𐋢 𐋣 𐋤 𐋥 𐋦 𐋧 𐋨 𐋩 𐋪 𐋫 𐋬 𐋭 𐋮 𐋯</span>
-<span class="doccomment">/// 𐋰 𐋱 𐋲 𐋳 𐋴 𐋵 𐋶 𐋷 𐋸 𐋹 𐋺 𐋻</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{102e0}: &#39;𐋠&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">COPTIC_EPACT_THOUSANDS_MARK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐋠&#39;</span>;
@@ -335,10 +326,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">COPTIC_EPACT_NUMBER_NINE_HUNDRED</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐋻&#39;</span>;
 }
 
-<span class="doccomment">/// \u{102e0} → \u{102ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐋠 𐋡 𐋢 𐋣 𐋤 𐋥 𐋦 𐋧 𐋨 𐋩 𐋪 𐋫 𐋬 𐋭 𐋮 𐋯</span>
-<span class="doccomment">/// 𐋰 𐋱 𐋲 𐋳 𐋴 𐋵 𐋶 𐋷 𐋸 𐋹 𐋺 𐋻</span>
+<span class="doccomment">/// An enum to represent all characters in the CopticEpactNumbers block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">CopticEpactNumbers</span> {
     <span class="doccomment">/// \u{102e0}: &#39;𐋠&#39;</span>

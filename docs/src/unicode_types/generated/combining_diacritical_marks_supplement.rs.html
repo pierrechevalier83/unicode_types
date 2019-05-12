@@ -503,23 +503,8 @@
 <span id="503">503</span>
 <span id="504">504</span>
 <span id="505">505</span>
-<span id="506">506</span>
-<span id="507">507</span>
-<span id="508">508</span>
-<span id="509">509</span>
-<span id="510">510</span>
-<span id="511">511</span>
-<span id="512">512</span>
-<span id="513">513</span>
-<span id="514">514</span>
-<span id="515">515</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1dc0} → \u{1dff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᷀ ᷁ ᷂ ᷃ ᷄ ᷅ ᷆ ᷇ ᷈ ᷉ ᷊ ᷋ ᷌ ᷍ ᷎ ᷏</span>
-<span class="doccomment">/// ᷐ ᷑ ᷒ ᷓ ᷔ ᷕ ᷖ ᷗ ᷘ ᷙ ᷚ ᷛ ᷜ ᷝ ᷞ ᷟ</span>
-<span class="doccomment">/// ᷠ ᷡ ᷢ ᷣ ᷤ ᷥ ᷦ ᷧ ᷨ ᷩ ᷪ ᷫ ᷬ ᷭ ᷮ ᷯ</span>
-<span class="doccomment">/// ᷰ ᷱ ᷲ ᷳ ᷴ ᷵ ᷶ ᷷ ᷸ ᷹ ᷻ ᷼ ᷽ ᷾</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1dc0}: &#39;᷀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">COMBINING_DOTTED_GRAVE_ACCENT</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;᷀&#39;</span>;
@@ -647,12 +632,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">COMBINING_LEFT_ARROWHEAD_ABOVE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;᷾&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1dc0} → \u{1dff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᷀ ᷁ ᷂ ᷃ ᷄ ᷅ ᷆ ᷇ ᷈ ᷉ ᷊ ᷋ ᷌ ᷍ ᷎ ᷏</span>
-<span class="doccomment">/// ᷐ ᷑ ᷒ ᷓ ᷔ ᷕ ᷖ ᷗ ᷘ ᷙ ᷚ ᷛ ᷜ ᷝ ᷞ ᷟ</span>
-<span class="doccomment">/// ᷠ ᷡ ᷢ ᷣ ᷤ ᷥ ᷦ ᷧ ᷨ ᷩ ᷪ ᷫ ᷬ ᷭ ᷮ ᷯ</span>
-<span class="doccomment">/// ᷰ ᷱ ᷲ ᷳ ᷴ ᷵ ᷶ ᷷ ᷸ ᷹ ᷻ ᷼ ᷽ ᷾</span>
+<span class="doccomment">/// An enum to represent all characters in the CombiningDiacriticalMarksSupplement block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">CombiningDiacriticalMarksSupplement</span> {
     <span class="doccomment">/// \u{1dc0}: &#39;᷀&#39;</span>

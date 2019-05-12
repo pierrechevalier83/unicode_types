@@ -454,23 +454,8 @@
 <span id="454">454</span>
 <span id="455">455</span>
 <span id="456">456</span>
-<span id="457">457</span>
-<span id="458">458</span>
-<span id="459">459</span>
-<span id="460">460</span>
-<span id="461">461</span>
-<span id="462">462</span>
-<span id="463">463</span>
-<span id="464">464</span>
-<span id="465">465</span>
-<span id="466">466</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{a490} → \u{a4cf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꒐ ꒑ ꒒ ꒓ ꒔ ꒕ ꒖ ꒗ ꒘ ꒙ ꒚ ꒛ ꒜ ꒝ ꒞ ꒟</span>
-<span class="doccomment">/// ꒠ ꒡ ꒢ ꒣ ꒤ ꒥ ꒦ ꒧ ꒨ ꒩ ꒪ ꒫ ꒬ ꒭ ꒮ ꒯</span>
-<span class="doccomment">/// ꒰ ꒱ ꒲ ꒳ ꒴ ꒵ ꒶ ꒷ ꒸ ꒹ ꒺ ꒻ ꒼ ꒽ ꒾ ꒿</span>
-<span class="doccomment">/// ꓀ ꓁ ꓂ ꓃ ꓄ ꓅ ꓆</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{a490}: &#39;꒐&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">YI_RADICAL_QOT</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;꒐&#39;</span>;
@@ -584,12 +569,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">YI_RADICAL_KE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;꓆&#39;</span>;
 }
 
-<span class="doccomment">/// \u{a490} → \u{a4cf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꒐ ꒑ ꒒ ꒓ ꒔ ꒕ ꒖ ꒗ ꒘ ꒙ ꒚ ꒛ ꒜ ꒝ ꒞ ꒟</span>
-<span class="doccomment">/// ꒠ ꒡ ꒢ ꒣ ꒤ ꒥ ꒦ ꒧ ꒨ ꒩ ꒪ ꒫ ꒬ ꒭ ꒮ ꒯</span>
-<span class="doccomment">/// ꒰ ꒱ ꒲ ꒳ ꒴ ꒵ ꒶ ꒷ ꒸ ꒹ ꒺ ꒻ ꒼ ꒽ ꒾ ꒿</span>
-<span class="doccomment">/// ꓀ ꓁ ꓂ ꓃ ꓄ ꓅ ꓆</span>
+<span class="doccomment">/// An enum to represent all characters in the YiRadicals block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">YiRadicals</span> {
     <span class="doccomment">/// \u{a490}: &#39;꒐&#39;</span>

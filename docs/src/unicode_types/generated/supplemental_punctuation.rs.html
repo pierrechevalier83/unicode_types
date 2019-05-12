@@ -629,26 +629,8 @@
 <span id="629">629</span>
 <span id="630">630</span>
 <span id="631">631</span>
-<span id="632">632</span>
-<span id="633">633</span>
-<span id="634">634</span>
-<span id="635">635</span>
-<span id="636">636</span>
-<span id="637">637</span>
-<span id="638">638</span>
-<span id="639">639</span>
-<span id="640">640</span>
-<span id="641">641</span>
-<span id="642">642</span>
-<span id="643">643</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{2e00} → \u{2e7f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ⸀ ⸁ ⸂ ⸃ ⸄ ⸅ ⸆ ⸇ ⸈ ⸉ ⸊ ⸋ ⸌ ⸍ ⸎ ⸏</span>
-<span class="doccomment">/// ⸐ ⸑ ⸒ ⸓ ⸔ ⸕ ⸖ ⸗ ⸘ ⸙ ⸚ ⸛ ⸜ ⸝ ⸞ ⸟</span>
-<span class="doccomment">/// ⸠ ⸡ ⸢ ⸣ ⸤ ⸥ ⸦ ⸧ ⸨ ⸩ ⸪ ⸫ ⸬ ⸭ ⸮ ⸯ</span>
-<span class="doccomment">/// ⸰ ⸱ ⸲ ⸳ ⸴ ⸵ ⸶ ⸷ ⸸ ⸹ ⸺ ⸻ ⸼ ⸽ ⸾ ⸿</span>
-<span class="doccomment">/// ⹀ ⹁ ⹂ ⹃ ⹄ ⹅ ⹆ ⹇ ⹈ ⹉ ⹊ ⹋ ⹌ ⹍ ⹎ ⹏</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{2e00}: &#39;⸀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">RIGHT_ANGLE_SUBSTITUTION_MARKER</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;⸀&#39;</span>;
@@ -812,13 +794,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CORNISH_VERSE_DIVIDER</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;⹏&#39;</span>;
 }
 
-<span class="doccomment">/// \u{2e00} → \u{2e7f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ⸀ ⸁ ⸂ ⸃ ⸄ ⸅ ⸆ ⸇ ⸈ ⸉ ⸊ ⸋ ⸌ ⸍ ⸎ ⸏</span>
-<span class="doccomment">/// ⸐ ⸑ ⸒ ⸓ ⸔ ⸕ ⸖ ⸗ ⸘ ⸙ ⸚ ⸛ ⸜ ⸝ ⸞ ⸟</span>
-<span class="doccomment">/// ⸠ ⸡ ⸢ ⸣ ⸤ ⸥ ⸦ ⸧ ⸨ ⸩ ⸪ ⸫ ⸬ ⸭ ⸮ ⸯ</span>
-<span class="doccomment">/// ⸰ ⸱ ⸲ ⸳ ⸴ ⸵ ⸶ ⸷ ⸸ ⸹ ⸺ ⸻ ⸼ ⸽ ⸾ ⸿</span>
-<span class="doccomment">/// ⹀ ⹁ ⹂ ⹃ ⹄ ⹅ ⹆ ⹇ ⹈ ⹉ ⹊ ⹋ ⹌ ⹍ ⹎ ⹏</span>
+<span class="doccomment">/// An enum to represent all characters in the SupplementalPunctuation block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">SupplementalPunctuation</span> {
     <span class="doccomment">/// \u{2e00}: &#39;⸀&#39;</span>

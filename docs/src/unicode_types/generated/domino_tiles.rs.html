@@ -769,32 +769,8 @@
 <span id="769">769</span>
 <span id="770">770</span>
 <span id="771">771</span>
-<span id="772">772</span>
-<span id="773">773</span>
-<span id="774">774</span>
-<span id="775">775</span>
-<span id="776">776</span>
-<span id="777">777</span>
-<span id="778">778</span>
-<span id="779">779</span>
-<span id="780">780</span>
-<span id="781">781</span>
-<span id="782">782</span>
-<span id="783">783</span>
-<span id="784">784</span>
-<span id="785">785</span>
-<span id="786">786</span>
-<span id="787">787</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1f030} → \u{1f09f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 🀰 🀱 🀲 🀳 🀴 🀵 🀶 🀷 🀸 🀹 🀺 🀻 🀼 🀽 🀾 🀿</span>
-<span class="doccomment">/// 🁀 🁁 🁂 🁃 🁄 🁅 🁆 🁇 🁈 🁉 🁊 🁋 🁌 🁍 🁎 🁏</span>
-<span class="doccomment">/// 🁐 🁑 🁒 🁓 🁔 🁕 🁖 🁗 🁘 🁙 🁚 🁛 🁜 🁝 🁞 🁟</span>
-<span class="doccomment">/// 🁠 🁡 🁢 🁣 🁤 🁥 🁦 🁧 🁨 🁩 🁪 🁫 🁬 🁭 🁮 🁯</span>
-<span class="doccomment">/// 🁰 🁱 🁲 🁳 🁴 🁵 🁶 🁷 🁸 🁹 🁺 🁻 🁼 🁽 🁾 🁿</span>
-<span class="doccomment">/// 🂀 🂁 🂂 🂃 🂄 🂅 🂆 🂇 🂈 🂉 🂊 🂋 🂌 🂍 🂎 🂏</span>
-<span class="doccomment">/// 🂐 🂑 🂒 🂓</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1f030}: &#39;🀰&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DOMINO_TILE_HORIZONTAL_BACK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;🀰&#39;</span>;
@@ -998,15 +974,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DOMINO_TILE_VERTICAL_DASH_06_DASH_06</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;🂓&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1f030} → \u{1f09f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 🀰 🀱 🀲 🀳 🀴 🀵 🀶 🀷 🀸 🀹 🀺 🀻 🀼 🀽 🀾 🀿</span>
-<span class="doccomment">/// 🁀 🁁 🁂 🁃 🁄 🁅 🁆 🁇 🁈 🁉 🁊 🁋 🁌 🁍 🁎 🁏</span>
-<span class="doccomment">/// 🁐 🁑 🁒 🁓 🁔 🁕 🁖 🁗 🁘 🁙 🁚 🁛 🁜 🁝 🁞 🁟</span>
-<span class="doccomment">/// 🁠 🁡 🁢 🁣 🁤 🁥 🁦 🁧 🁨 🁩 🁪 🁫 🁬 🁭 🁮 🁯</span>
-<span class="doccomment">/// 🁰 🁱 🁲 🁳 🁴 🁵 🁶 🁷 🁸 🁹 🁺 🁻 🁼 🁽 🁾 🁿</span>
-<span class="doccomment">/// 🂀 🂁 🂂 🂃 🂄 🂅 🂆 🂇 🂈 🂉 🂊 🂋 🂌 🂍 🂎 🂏</span>
-<span class="doccomment">/// 🂐 🂑 🂒 🂓</span>
+<span class="doccomment">/// An enum to represent all characters in the DominoTiles block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">DominoTiles</span> {
     <span class="doccomment">/// \u{1f030}: &#39;🀰&#39;</span>

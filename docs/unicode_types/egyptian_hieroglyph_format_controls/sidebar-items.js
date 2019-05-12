@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["EgyptianHieroglyphFormatControls","\\u{13430} → \\u{1343f}\\ \\  𓐰 𓐱 𓐲 𓐳 𓐴 𓐵 𓐶 𓐷 𓐸"]],"mod":[["constants","\\u{13430} → \\u{1343f}\\ \\  𓐰 𓐱 𓐲 𓐳 𓐴 𓐵 𓐶 𓐷 𓐸"]]});
+initSidebarItems({"enum":[["EgyptianHieroglyphFormatControls","An enum to represent all characters in the EgyptianHieroglyphFormatControls block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["MongolianSupplement","\\u{11660} → \\u{1167f}\\ \\  𑙠 𑙡 𑙢 𑙣 𑙤 𑙥 𑙦 𑙧 𑙨 𑙩 𑙪 𑙫 𑙬"]],"mod":[["constants","\\u{11660} → \\u{1167f}\\ \\  𑙠 𑙡 𑙢 𑙣 𑙤 𑙥 𑙦 𑙧 𑙨 𑙩 𑙪 𑙫 𑙬"]]});
+initSidebarItems({"enum":[["MongolianSupplement","An enum to represent all characters in the MongolianSupplement block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

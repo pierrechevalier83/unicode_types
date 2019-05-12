@@ -384,20 +384,8 @@
 <span id="384">384</span>
 <span id="385">385</span>
 <span id="386">386</span>
-<span id="387">387</span>
-<span id="388">388</span>
-<span id="389">389</span>
-<span id="390">390</span>
-<span id="391">391</span>
-<span id="392">392</span>
-<span id="393">393</span>
-<span id="394">394</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1c90} → \u{1cbf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ა Ბ Გ Დ Ე Ვ Ზ Თ Ი Კ Ლ Მ Ნ Ო Პ Ჟ</span>
-<span class="doccomment">/// Რ Ს Ტ Უ Ფ Ქ Ღ Ყ Შ Ჩ Ც Ძ Წ Ჭ Ხ Ჯ</span>
-<span class="doccomment">/// Ჰ Ჱ Ჲ Ჳ Ჴ Ჵ Ჶ Ჷ Ჸ Ჹ Ჺ Ჽ Ჾ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1c90}: &#39;Ა&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GEORGIAN_MTAVRULI_CAPITAL_LETTER_AN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;Ა&#39;</span>;
@@ -491,11 +479,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GEORGIAN_MTAVRULI_CAPITAL_LETTER_HARD_SIGN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;Ჾ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1c90} → \u{1cbf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ა Ბ Გ Დ Ე Ვ Ზ Თ Ი Კ Ლ Მ Ნ Ო Პ Ჟ</span>
-<span class="doccomment">/// Რ Ს Ტ Უ Ფ Ქ Ღ Ყ Შ Ჩ Ც Ძ Წ Ჭ Ხ Ჯ</span>
-<span class="doccomment">/// Ჰ Ჱ Ჲ Ჳ Ჴ Ჵ Ჶ Ჷ Ჸ Ჹ Ჺ Ჽ Ჾ</span>
+<span class="doccomment">/// An enum to represent all characters in the GeorgianExtended block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">GeorgianExtended</span> {
     <span class="doccomment">/// \u{1c90}: &#39;Ა&#39;</span>

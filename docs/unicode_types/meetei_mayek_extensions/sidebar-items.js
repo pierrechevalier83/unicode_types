@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["MeeteiMayekExtensions","\\u{aae0} → \\u{aaff}\\ \\  ꫠ ꫡ ꫢ ꫣ ꫤ ꫥ ꫦ ꫧ ꫨ ꫩ ꫪ ꫫ ꫬ ꫭ ꫮ ꫯ  ꫰ ꫱ ꫲ ꫳ ꫴ ꫵ ꫶"]],"mod":[["constants","\\u{aae0} → \\u{aaff}\\ \\  ꫠ ꫡ ꫢ ꫣ ꫤ ꫥ ꫦ ꫧ ꫨ ꫩ ꫪ ꫫ ꫬ ꫭ ꫮ ꫯ  ꫰ ꫱ ꫲ ꫳ ꫴ ꫵ ꫶"]]});
+initSidebarItems({"enum":[["MeeteiMayekExtensions","An enum to represent all characters in the MeeteiMayekExtensions block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

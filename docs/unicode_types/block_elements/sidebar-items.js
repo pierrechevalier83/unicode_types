@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["BlockElements","\\u{2580} → \\u{259f}\\ \\  ▀ ▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▉ ▊ ▋ ▌ ▍ ▎ ▏  ▐ ░ ▒ ▓ ▔ ▕ ▖ ▗ ▘ ▙ ▚ ▛ ▜ ▝ ▞"]],"mod":[["constants","\\u{2580} → \\u{259f}\\ \\  ▀ ▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▉ ▊ ▋ ▌ ▍ ▎ ▏  ▐ ░ ▒ ▓ ▔ ▕ ▖ ▗ ▘ ▙ ▚ ▛ ▜ ▝ ▞"]]});
+initSidebarItems({"enum":[["BlockElements","An enum to represent all characters in the BlockElements block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

@@ -524,26 +524,8 @@
 <span id="524">524</span>
 <span id="525">525</span>
 <span id="526">526</span>
-<span id="527">527</span>
-<span id="528">528</span>
-<span id="529">529</span>
-<span id="530">530</span>
-<span id="531">531</span>
-<span id="532">532</span>
-<span id="533">533</span>
-<span id="534">534</span>
-<span id="535">535</span>
-<span id="536">536</span>
-<span id="537">537</span>
-<span id="538">538</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{119a0} → \u{119ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑦠 𑦡 𑦢 𑦣 𑦤 𑦥 𑦦 𑦧 𑦪 𑦫 𑦬 𑦭 𑦮 𑦯 𑦰 𑦱</span>
-<span class="doccomment">/// 𑦲 𑦳 𑦴 𑦵 𑦶 𑦷 𑦸 𑦹 𑦺 𑦻 𑦼 𑦽 𑦾 𑦿 𑧀 𑧁</span>
-<span class="doccomment">/// 𑧂 𑧃 𑧄 𑧅 𑧆 𑧇 𑧈 𑧉 𑧊 𑧋 𑧌 𑧍 𑧎 𑧏 𑧐 𑧑</span>
-<span class="doccomment">/// 𑧒 𑧓 𑧔 𑧕 𑧖 𑧗 𑧚 𑧛 𑧜 𑧝 𑧞 𑧟 𑧠 𑧡 𑧢 𑧣</span>
-<span class="doccomment">/// 𑧤</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{119a0}: &#39;𑦠&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_A</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑦠&#39;</span>;
@@ -677,13 +659,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">VOWEL_SIGN_PRISHTHAMATRA_E</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑧤&#39;</span>;
 }
 
-<span class="doccomment">/// \u{119a0} → \u{119ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑦠 𑦡 𑦢 𑦣 𑦤 𑦥 𑦦 𑦧 𑦪 𑦫 𑦬 𑦭 𑦮 𑦯 𑦰 𑦱</span>
-<span class="doccomment">/// 𑦲 𑦳 𑦴 𑦵 𑦶 𑦷 𑦸 𑦹 𑦺 𑦻 𑦼 𑦽 𑦾 𑦿 𑧀 𑧁</span>
-<span class="doccomment">/// 𑧂 𑧃 𑧄 𑧅 𑧆 𑧇 𑧈 𑧉 𑧊 𑧋 𑧌 𑧍 𑧎 𑧏 𑧐 𑧑</span>
-<span class="doccomment">/// 𑧒 𑧓 𑧔 𑧕 𑧖 𑧗 𑧚 𑧛 𑧜 𑧝 𑧞 𑧟 𑧠 𑧡 𑧢 𑧣</span>
-<span class="doccomment">/// 𑧤</span>
+<span class="doccomment">/// An enum to represent all characters in the Nandinagari block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Nandinagari</span> {
     <span class="doccomment">/// \u{119a0}: &#39;𑦠&#39;</span>

@@ -461,23 +461,8 @@
 <span id="461">461</span>
 <span id="462">462</span>
 <span id="463">463</span>
-<span id="464">464</span>
-<span id="465">465</span>
-<span id="466">466</span>
-<span id="467">467</span>
-<span id="468">468</span>
-<span id="469">469</span>
-<span id="470">470</span>
-<span id="471">471</span>
-<span id="472">472</span>
-<span id="473">473</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{a840} → \u{a87f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꡀ ꡁ ꡂ ꡃ ꡄ ꡅ ꡆ ꡇ ꡈ ꡉ ꡊ ꡋ ꡌ ꡍ ꡎ ꡏ</span>
-<span class="doccomment">/// ꡐ ꡑ ꡒ ꡓ ꡔ ꡕ ꡖ ꡗ ꡘ ꡙ ꡚ ꡛ ꡜ ꡝ ꡞ ꡟ</span>
-<span class="doccomment">/// ꡠ ꡡ ꡢ ꡣ ꡤ ꡥ ꡦ ꡧ ꡨ ꡩ ꡪ ꡫ ꡬ ꡭ ꡮ ꡯ</span>
-<span class="doccomment">/// ꡰ ꡱ ꡲ ꡳ ꡴ ꡵ ꡶ ꡷</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{a840}: &#39;ꡀ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PHAGS_DASH_PA_LETTER_KA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ꡀ&#39;</span>;
@@ -593,12 +578,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PHAGS_DASH_PA_MARK_DOUBLE_SHAD</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;꡷&#39;</span>;
 }
 
-<span class="doccomment">/// \u{a840} → \u{a87f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꡀ ꡁ ꡂ ꡃ ꡄ ꡅ ꡆ ꡇ ꡈ ꡉ ꡊ ꡋ ꡌ ꡍ ꡎ ꡏ</span>
-<span class="doccomment">/// ꡐ ꡑ ꡒ ꡓ ꡔ ꡕ ꡖ ꡗ ꡘ ꡙ ꡚ ꡛ ꡜ ꡝ ꡞ ꡟ</span>
-<span class="doccomment">/// ꡠ ꡡ ꡢ ꡣ ꡤ ꡥ ꡦ ꡧ ꡨ ꡩ ꡪ ꡫ ꡬ ꡭ ꡮ ꡯ</span>
-<span class="doccomment">/// ꡰ ꡱ ꡲ ꡳ ꡴ ꡵ ꡶ ꡷</span>
+<span class="doccomment">/// An enum to represent all characters in the Phagspa block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Phagspa</span> {
     <span class="doccomment">/// \u{a840}: &#39;ꡀ&#39;</span>

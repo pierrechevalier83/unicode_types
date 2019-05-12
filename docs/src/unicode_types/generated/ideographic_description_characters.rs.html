@@ -153,14 +153,8 @@
 <span id="153">153</span>
 <span id="154">154</span>
 <span id="155">155</span>
-<span id="156">156</span>
-<span id="157">157</span>
-<span id="158">158</span>
-<span id="159">159</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{2ff0} → \u{2fff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ⿰ ⿱ ⿲ ⿳ ⿴ ⿵ ⿶ ⿷ ⿸ ⿹ ⿺ ⿻</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{2ff0}: &#39;⿰&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">IDEOGRAPHIC_DESCRIPTION_CHARACTER_LEFT_TO_RIGHT</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;⿰&#39;</span>;
@@ -188,9 +182,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">IDEOGRAPHIC_DESCRIPTION_CHARACTER_OVERLAID</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;⿻&#39;</span>;
 }
 
-<span class="doccomment">/// \u{2ff0} → \u{2fff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ⿰ ⿱ ⿲ ⿳ ⿴ ⿵ ⿶ ⿷ ⿸ ⿹ ⿺ ⿻</span>
+<span class="doccomment">/// An enum to represent all characters in the IdeographicDescriptionCharacters block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">IdeographicDescriptionCharacters</span> {
     <span class="doccomment">/// \u{2ff0}: &#39;⿰&#39;</span>

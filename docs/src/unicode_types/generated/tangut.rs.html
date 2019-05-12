@@ -83,14 +83,8 @@
 <span id="83">83</span>
 <span id="84">84</span>
 <span id="85">85</span>
-<span id="86">86</span>
-<span id="87">87</span>
-<span id="88">88</span>
-<span id="89">89</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{17000} → \u{187ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𗀀 𘟷</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{17000}: &#39;𗀀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">IDEOGRAPH_FIRST</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𗀀&#39;</span>;
@@ -98,9 +92,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">IDEOGRAPH_LAST</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𘟷&#39;</span>;
 }
 
-<span class="doccomment">/// \u{17000} → \u{187ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𗀀 𘟷</span>
+<span class="doccomment">/// An enum to represent all characters in the Tangut block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Tangut</span> {
     <span class="doccomment">/// \u{17000}: &#39;𗀀&#39;</span>

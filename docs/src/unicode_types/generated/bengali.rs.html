@@ -741,29 +741,8 @@
 <span id="741">741</span>
 <span id="742">742</span>
 <span id="743">743</span>
-<span id="744">744</span>
-<span id="745">745</span>
-<span id="746">746</span>
-<span id="747">747</span>
-<span id="748">748</span>
-<span id="749">749</span>
-<span id="750">750</span>
-<span id="751">751</span>
-<span id="752">752</span>
-<span id="753">753</span>
-<span id="754">754</span>
-<span id="755">755</span>
-<span id="756">756</span>
-<span id="757">757</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{980} → \u{9ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ঀ ঁ ং ঃ অ আ ই ঈ উ ঊ ঋ ঌ এ ঐ ও ঔ</span>
-<span class="doccomment">/// ক খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড ঢ ণ ত</span>
-<span class="doccomment">/// থ দ ধ ন প ফ ব ভ ম য র ল শ ষ স হ</span>
-<span class="doccomment">/// ় ঽ া ি ী ু ূ ৃ ৄ ে ৈ ো ৌ ্ ৎ ৗ</span>
-<span class="doccomment">/// ড় ঢ় য় ৠ ৡ ৢ ৣ ০ ১ ২ ৩ ৪ ৫ ৬ ৭ ৮</span>
-<span class="doccomment">/// ৯ ৰ ৱ ৲ ৳ ৴ ৵ ৶ ৷ ৸ ৹ ৺ ৻ ৼ ৽ ৾</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{980}: &#39;ঀ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ANJI</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ঀ&#39;</span>;
@@ -959,14 +938,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SANDHI_MARK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;৾&#39;</span>;
 }
 
-<span class="doccomment">/// \u{980} → \u{9ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ঀ ঁ ং ঃ অ আ ই ঈ উ ঊ ঋ ঌ এ ঐ ও ঔ</span>
-<span class="doccomment">/// ক খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড ঢ ণ ত</span>
-<span class="doccomment">/// থ দ ধ ন প ফ ব ভ ম য র ল শ ষ স হ</span>
-<span class="doccomment">/// ় ঽ া ি ী ু ূ ৃ ৄ ে ৈ ো ৌ ্ ৎ ৗ</span>
-<span class="doccomment">/// ড় ঢ় য় ৠ ৡ ৢ ৣ ০ ১ ২ ৩ ৪ ৫ ৬ ৭ ৮</span>
-<span class="doccomment">/// ৯ ৰ ৱ ৲ ৳ ৴ ৵ ৶ ৷ ৸ ৹ ৺ ৻ ৼ ৽ ৾</span>
+<span class="doccomment">/// An enum to represent all characters in the Bengali block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Bengali</span> {
     <span class="doccomment">/// \u{980}: &#39;ঀ&#39;</span>

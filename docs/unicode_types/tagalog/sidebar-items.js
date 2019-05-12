@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Tagalog","\\u{1700} → \\u{171f}\\ \\  ᜀ ᜁ ᜂ ᜃ ᜄ ᜅ ᜆ ᜇ ᜈ ᜉ ᜊ ᜋ ᜌ ᜎ ᜏ ᜐ  ᜑ ᜒ ᜓ ᜔"]],"mod":[["constants","\\u{1700} → \\u{171f}\\ \\  ᜀ ᜁ ᜂ ᜃ ᜄ ᜅ ᜆ ᜇ ᜈ ᜉ ᜊ ᜋ ᜌ ᜎ ᜏ ᜐ  ᜑ ᜒ ᜓ ᜔"]]});
+initSidebarItems({"enum":[["Tagalog","An enum to represent all characters in the Tagalog block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

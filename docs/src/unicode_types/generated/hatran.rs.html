@@ -244,17 +244,8 @@
 <span id="244">244</span>
 <span id="245">245</span>
 <span id="246">246</span>
-<span id="247">247</span>
-<span id="248">248</span>
-<span id="249">249</span>
-<span id="250">250</span>
-<span id="251">251</span>
-<span id="252">252</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{108e0} → \u{108ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐣠 𐣡 𐣢 𐣣 𐣤 𐣥 𐣦 𐣧 𐣨 𐣩 𐣪 𐣫 𐣬 𐣭 𐣮 𐣯</span>
-<span class="doccomment">/// 𐣰 𐣱 𐣲 𐣴 𐣵 𐣻 𐣼 𐣽 𐣾</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{108e0}: &#39;𐣠&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_ALEPH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐣠&#39;</span>;
@@ -308,10 +299,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">NUMBER_TWENTY</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐣾&#39;</span>;
 }
 
-<span class="doccomment">/// \u{108e0} → \u{108ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐣠 𐣡 𐣢 𐣣 𐣤 𐣥 𐣦 𐣧 𐣨 𐣩 𐣪 𐣫 𐣬 𐣭 𐣮 𐣯</span>
-<span class="doccomment">/// 𐣰 𐣱 𐣲 𐣴 𐣵 𐣻 𐣼 𐣽 𐣾</span>
+<span class="doccomment">/// An enum to represent all characters in the Hatran block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Hatran</span> {
     <span class="doccomment">/// \u{108e0}: &#39;𐣠&#39;</span>

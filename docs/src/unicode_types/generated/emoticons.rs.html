@@ -622,26 +622,8 @@
 <span id="622">622</span>
 <span id="623">623</span>
 <span id="624">624</span>
-<span id="625">625</span>
-<span id="626">626</span>
-<span id="627">627</span>
-<span id="628">628</span>
-<span id="629">629</span>
-<span id="630">630</span>
-<span id="631">631</span>
-<span id="632">632</span>
-<span id="633">633</span>
-<span id="634">634</span>
-<span id="635">635</span>
-<span id="636">636</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1f600} → \u{1f64f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 😀 😁 😂 😃 😄 😅 😆 😇 😈 😉 😊 😋 😌 😍 😎 😏</span>
-<span class="doccomment">/// 😐 😑 😒 😓 😔 😕 😖 😗 😘 😙 😚 😛 😜 😝 😞 😟</span>
-<span class="doccomment">/// 😠 😡 😢 😣 😤 😥 😦 😧 😨 😩 😪 😫 😬 😭 😮 😯</span>
-<span class="doccomment">/// 😰 😱 😲 😳 😴 😵 😶 😷 😸 😹 😺 😻 😼 😽 😾 😿</span>
-<span class="doccomment">/// 🙀 🙁 🙂 🙃 🙄 🙅 🙆 🙇 🙈 🙉 🙊 🙋 🙌 🙍 🙎</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1f600}: &#39;😀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">GRINNING_FACE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;😀&#39;</span>;
@@ -803,13 +785,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PERSON_WITH_POUTING_FACE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;🙎&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1f600} → \u{1f64f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 😀 😁 😂 😃 😄 😅 😆 😇 😈 😉 😊 😋 😌 😍 😎 😏</span>
-<span class="doccomment">/// 😐 😑 😒 😓 😔 😕 😖 😗 😘 😙 😚 😛 😜 😝 😞 😟</span>
-<span class="doccomment">/// 😠 😡 😢 😣 😤 😥 😦 😧 😨 😩 😪 😫 😬 😭 😮 😯</span>
-<span class="doccomment">/// 😰 😱 😲 😳 😴 😵 😶 😷 😸 😹 😺 😻 😼 😽 😾 😿</span>
-<span class="doccomment">/// 🙀 🙁 🙂 🙃 🙄 🙅 🙆 🙇 🙈 🙉 🙊 🙋 🙌 🙍 🙎</span>
+<span class="doccomment">/// An enum to represent all characters in the Emoticons block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Emoticons</span> {
     <span class="doccomment">/// \u{1f600}: &#39;😀&#39;</span>

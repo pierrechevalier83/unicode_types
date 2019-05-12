@@ -825,32 +825,8 @@
 <span id="825">825</span>
 <span id="826">826</span>
 <span id="827">827</span>
-<span id="828">828</span>
-<span id="829">829</span>
-<span id="830">830</span>
-<span id="831">831</span>
-<span id="832">832</span>
-<span id="833">833</span>
-<span id="834">834</span>
-<span id="835">835</span>
-<span id="836">836</span>
-<span id="837">837</span>
-<span id="838">838</span>
-<span id="839">839</span>
-<span id="840">840</span>
-<span id="841">841</span>
-<span id="842">842</span>
-<span id="843">843</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{11000} → \u{1107f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑀀 𑀁 𑀂 𑀃 𑀄 𑀅 𑀆 𑀇 𑀈 𑀉 𑀊 𑀋 𑀌 𑀍 𑀎 𑀏</span>
-<span class="doccomment">/// 𑀐 𑀑 𑀒 𑀓 𑀔 𑀕 𑀖 𑀗 𑀘 𑀙 𑀚 𑀛 𑀜 𑀝 𑀞 𑀟</span>
-<span class="doccomment">/// 𑀠 𑀡 𑀢 𑀣 𑀤 𑀥 𑀦 𑀧 𑀨 𑀩 𑀪 𑀫 𑀬 𑀭 𑀮 𑀯</span>
-<span class="doccomment">/// 𑀰 𑀱 𑀲 𑀳 𑀴 𑀵 𑀶 𑀷 𑀸 𑀹 𑀺 𑀻 𑀼 𑀽 𑀾 𑀿</span>
-<span class="doccomment">/// 𑁀 𑁁 𑁂 𑁃 𑁄 𑁅 𑁆 𑁇 𑁈 𑁉 𑁊 𑁋 𑁌 𑁍 𑁒 𑁓</span>
-<span class="doccomment">/// 𑁔 𑁕 𑁖 𑁗 𑁘 𑁙 𑁚 𑁛 𑁜 𑁝 𑁞 𑁟 𑁠 𑁡 𑁢 𑁣</span>
-<span class="doccomment">/// 𑁤 𑁥 𑁦 𑁧 𑁨 𑁩 𑁪 𑁫 𑁬 𑁭 𑁮 𑁯</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{11000}: &#39;𑀀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_CANDRABINDU</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑀀&#39;</span>;
@@ -1070,15 +1046,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIGIT_NINE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑁯&#39;</span>;
 }
 
-<span class="doccomment">/// \u{11000} → \u{1107f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑀀 𑀁 𑀂 𑀃 𑀄 𑀅 𑀆 𑀇 𑀈 𑀉 𑀊 𑀋 𑀌 𑀍 𑀎 𑀏</span>
-<span class="doccomment">/// 𑀐 𑀑 𑀒 𑀓 𑀔 𑀕 𑀖 𑀗 𑀘 𑀙 𑀚 𑀛 𑀜 𑀝 𑀞 𑀟</span>
-<span class="doccomment">/// 𑀠 𑀡 𑀢 𑀣 𑀤 𑀥 𑀦 𑀧 𑀨 𑀩 𑀪 𑀫 𑀬 𑀭 𑀮 𑀯</span>
-<span class="doccomment">/// 𑀰 𑀱 𑀲 𑀳 𑀴 𑀵 𑀶 𑀷 𑀸 𑀹 𑀺 𑀻 𑀼 𑀽 𑀾 𑀿</span>
-<span class="doccomment">/// 𑁀 𑁁 𑁂 𑁃 𑁄 𑁅 𑁆 𑁇 𑁈 𑁉 𑁊 𑁋 𑁌 𑁍 𑁒 𑁓</span>
-<span class="doccomment">/// 𑁔 𑁕 𑁖 𑁗 𑁘 𑁙 𑁚 𑁛 𑁜 𑁝 𑁞 𑁟 𑁠 𑁡 𑁢 𑁣</span>
-<span class="doccomment">/// 𑁤 𑁥 𑁦 𑁧 𑁨 𑁩 𑁪 𑁫 𑁬 𑁭 𑁮 𑁯</span>
+<span class="doccomment">/// An enum to represent all characters in the Brahmi block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Brahmi</span> {
     <span class="doccomment">/// \u{11000}: &#39;𑀀&#39;</span>

@@ -916,35 +916,8 @@
 <span id="916">916</span>
 <span id="917">917</span>
 <span id="918">918</span>
-<span id="919">919</span>
-<span id="920">920</span>
-<span id="921">921</span>
-<span id="922">922</span>
-<span id="923">923</span>
-<span id="924">924</span>
-<span id="925">925</span>
-<span id="926">926</span>
-<span id="927">927</span>
-<span id="928">928</span>
-<span id="929">929</span>
-<span id="930">930</span>
-<span id="931">931</span>
-<span id="932">932</span>
-<span id="933">933</span>
-<span id="934">934</span>
-<span id="935">935</span>
-<span id="936">936</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1b00} → \u{1b7f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᬀ ᬁ ᬂ ᬃ ᬄ ᬅ ᬆ ᬇ ᬈ ᬉ ᬊ ᬋ ᬌ ᬍ ᬎ ᬏ</span>
-<span class="doccomment">/// ᬐ ᬑ ᬒ ᬓ ᬔ ᬕ ᬖ ᬗ ᬘ ᬙ ᬚ ᬛ ᬜ ᬝ ᬞ ᬟ</span>
-<span class="doccomment">/// ᬠ ᬡ ᬢ ᬣ ᬤ ᬥ ᬦ ᬧ ᬨ ᬩ ᬪ ᬫ ᬬ ᬭ ᬮ ᬯ</span>
-<span class="doccomment">/// ᬰ ᬱ ᬲ ᬳ ᬴ ᬵ ᬶ ᬷ ᬸ ᬹ ᬺ ᬻ ᬼ ᬽ ᬾ ᬿ</span>
-<span class="doccomment">/// ᭀ ᭁ ᭂ ᭃ ᭄ ᭅ ᭆ ᭇ ᭈ ᭉ ᭊ ᭋ ᭐ ᭑ ᭒ ᭓</span>
-<span class="doccomment">/// ᭔ ᭕ ᭖ ᭗ ᭘ ᭙ ᭚ ᭛ ᭜ ᭝ ᭞ ᭟ ᭠ ᭡ ᭢ ᭣</span>
-<span class="doccomment">/// ᭤ ᭥ ᭦ ᭧ ᭨ ᭩ ᭪ ᭫ ᭬ ᭭ ᭮ ᭯ ᭰ ᭱ ᭲ ᭳</span>
-<span class="doccomment">/// ᭴ ᭵ ᭶ ᭷ ᭸ ᭹ ᭺ ᭻ ᭼</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1b00}: &#39;ᬀ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_ULU_RICEM</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᬀ&#39;</span>;
@@ -1190,16 +1163,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PING</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;᭼&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1b00} → \u{1b7f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᬀ ᬁ ᬂ ᬃ ᬄ ᬅ ᬆ ᬇ ᬈ ᬉ ᬊ ᬋ ᬌ ᬍ ᬎ ᬏ</span>
-<span class="doccomment">/// ᬐ ᬑ ᬒ ᬓ ᬔ ᬕ ᬖ ᬗ ᬘ ᬙ ᬚ ᬛ ᬜ ᬝ ᬞ ᬟ</span>
-<span class="doccomment">/// ᬠ ᬡ ᬢ ᬣ ᬤ ᬥ ᬦ ᬧ ᬨ ᬩ ᬪ ᬫ ᬬ ᬭ ᬮ ᬯ</span>
-<span class="doccomment">/// ᬰ ᬱ ᬲ ᬳ ᬴ ᬵ ᬶ ᬷ ᬸ ᬹ ᬺ ᬻ ᬼ ᬽ ᬾ ᬿ</span>
-<span class="doccomment">/// ᭀ ᭁ ᭂ ᭃ ᭄ ᭅ ᭆ ᭇ ᭈ ᭉ ᭊ ᭋ ᭐ ᭑ ᭒ ᭓</span>
-<span class="doccomment">/// ᭔ ᭕ ᭖ ᭗ ᭘ ᭙ ᭚ ᭛ ᭜ ᭝ ᭞ ᭟ ᭠ ᭡ ᭢ ᭣</span>
-<span class="doccomment">/// ᭤ ᭥ ᭦ ᭧ ᭨ ᭩ ᭪ ᭫ ᭬ ᭭ ᭮ ᭯ ᭰ ᭱ ᭲ ᭳</span>
-<span class="doccomment">/// ᭴ ᭵ ᭶ ᭷ ᭸ ᭹ ᭺ ᭻ ᭼</span>
+<span class="doccomment">/// An enum to represent all characters in the Balinese block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Balinese</span> {
     <span class="doccomment">/// \u{1b00}: &#39;ᬀ&#39;</span>

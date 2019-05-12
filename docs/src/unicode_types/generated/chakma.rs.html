@@ -559,26 +559,8 @@
 <span id="559">559</span>
 <span id="560">560</span>
 <span id="561">561</span>
-<span id="562">562</span>
-<span id="563">563</span>
-<span id="564">564</span>
-<span id="565">565</span>
-<span id="566">566</span>
-<span id="567">567</span>
-<span id="568">568</span>
-<span id="569">569</span>
-<span id="570">570</span>
-<span id="571">571</span>
-<span id="572">572</span>
-<span id="573">573</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{11100} → \u{1114f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑄀 𑄁 𑄂 𑄃 𑄄 𑄅 𑄆 𑄇 𑄈 𑄉 𑄊 𑄋 𑄌 𑄍 𑄎 𑄏</span>
-<span class="doccomment">/// 𑄐 𑄑 𑄒 𑄓 𑄔 𑄕 𑄖 𑄗 𑄘 𑄙 𑄚 𑄛 𑄜 𑄝 𑄞 𑄟</span>
-<span class="doccomment">/// 𑄠 𑄡 𑄢 𑄣 𑄤 𑄥 𑄦 𑄧 𑄨 𑄩 𑄪 𑄫 𑄬 𑄭 𑄮 𑄯</span>
-<span class="doccomment">/// 𑄰 𑄱 𑄲 𑄳 𑄴 𑄶 𑄷 𑄸 𑄹 𑄺 𑄻 𑄼 𑄽 𑄾 𑄿 𑅀</span>
-<span class="doccomment">/// 𑅁 𑅂 𑅃 𑅄 𑅅 𑅆</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{11100}: &#39;𑄀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_CANDRABINDU</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑄀&#39;</span>;
@@ -722,13 +704,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">VOWEL_SIGN_EI</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑅆&#39;</span>;
 }
 
-<span class="doccomment">/// \u{11100} → \u{1114f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑄀 𑄁 𑄂 𑄃 𑄄 𑄅 𑄆 𑄇 𑄈 𑄉 𑄊 𑄋 𑄌 𑄍 𑄎 𑄏</span>
-<span class="doccomment">/// 𑄐 𑄑 𑄒 𑄓 𑄔 𑄕 𑄖 𑄗 𑄘 𑄙 𑄚 𑄛 𑄜 𑄝 𑄞 𑄟</span>
-<span class="doccomment">/// 𑄠 𑄡 𑄢 𑄣 𑄤 𑄥 𑄦 𑄧 𑄨 𑄩 𑄪 𑄫 𑄬 𑄭 𑄮 𑄯</span>
-<span class="doccomment">/// 𑄰 𑄱 𑄲 𑄳 𑄴 𑄶 𑄷 𑄸 𑄹 𑄺 𑄻 𑄼 𑄽 𑄾 𑄿 𑅀</span>
-<span class="doccomment">/// 𑅁 𑅂 𑅃 𑅄 𑅅 𑅆</span>
+<span class="doccomment">/// An enum to represent all characters in the Chakma block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Chakma</span> {
     <span class="doccomment">/// \u{11100}: &#39;𑄀&#39;</span>

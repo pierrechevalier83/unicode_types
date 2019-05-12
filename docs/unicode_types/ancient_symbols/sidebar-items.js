@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["AncientSymbols","\\u{10190} → \\u{101cf}\\ \\  𐆐 𐆑 𐆒 𐆓 𐆔 𐆕 𐆖 𐆗 𐆘 𐆙 𐆚 𐆛 𐆠"]],"mod":[["constants","\\u{10190} → \\u{101cf}\\ \\  𐆐 𐆑 𐆒 𐆓 𐆔 𐆕 𐆖 𐆗 𐆘 𐆙 𐆚 𐆛 𐆠"]]});
+initSidebarItems({"enum":[["AncientSymbols","An enum to represent all characters in the AncientSymbols block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

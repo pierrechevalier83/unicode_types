@@ -118,14 +118,8 @@
 <span id="118">118</span>
 <span id="119">119</span>
 <span id="120">120</span>
-<span id="121">121</span>
-<span id="122">122</span>
-<span id="123">123</span>
-<span id="124">124</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1b130} → \u{1b16f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𛅐 𛅑 𛅒 𛅤 𛅥 𛅦 𛅧</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1b150}: &#39;𛅐&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HIRAGANA_LETTER_SMALL_WI</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𛅐&#39;</span>;
@@ -143,9 +137,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">KATAKANA_LETTER_SMALL_N</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𛅧&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1b130} → \u{1b16f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𛅐 𛅑 𛅒 𛅤 𛅥 𛅦 𛅧</span>
+<span class="doccomment">/// An enum to represent all characters in the SmallKanaExtension block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">SmallKanaExtension</span> {
     <span class="doccomment">/// \u{1b150}: &#39;𛅐&#39;</span>

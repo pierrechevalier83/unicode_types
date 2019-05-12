@@ -272,17 +272,8 @@
 <span id="272">272</span>
 <span id="273">273</span>
 <span id="274">274</span>
-<span id="275">275</span>
-<span id="276">276</span>
-<span id="277">277</span>
-<span id="278">278</span>
-<span id="279">279</span>
-<span id="280">280</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{840} → \u{85f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ࡀ ࡁ ࡂ ࡃ ࡄ ࡅ ࡆ ࡇ ࡈ ࡉ ࡊ ࡋ ࡌ ࡍ ࡎ ࡏ</span>
-<span class="doccomment">/// ࡐ ࡑ ࡒ ࡓ ࡔ ࡕ ࡖ ࡗ ࡘ ࡙ ࡚ ࡛ ࡞</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{840}: &#39;ࡀ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_HALQA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ࡀ&#39;</span>;
@@ -344,10 +335,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PUNCTUATION</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;࡞&#39;</span>;
 }
 
-<span class="doccomment">/// \u{840} → \u{85f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ࡀ ࡁ ࡂ ࡃ ࡄ ࡅ ࡆ ࡇ ࡈ ࡉ ࡊ ࡋ ࡌ ࡍ ࡎ ࡏ</span>
-<span class="doccomment">/// ࡐ ࡑ ࡒ ࡓ ࡔ ࡕ ࡖ ࡗ ࡘ ࡙ ࡚ ࡛ ࡞</span>
+<span class="doccomment">/// An enum to represent all characters in the Mandaic block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Mandaic</span> {
     <span class="doccomment">/// \u{840}: &#39;ࡀ&#39;</span>

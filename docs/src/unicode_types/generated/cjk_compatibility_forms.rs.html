@@ -286,17 +286,8 @@
 <span id="286">286</span>
 <span id="287">287</span>
 <span id="288">288</span>
-<span id="289">289</span>
-<span id="290">290</span>
-<span id="291">291</span>
-<span id="292">292</span>
-<span id="293">293</span>
-<span id="294">294</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{fe30} → \u{fe4f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ︰ ︱ ︲ ︳ ︴ ︵ ︶ ︷ ︸ ︹ ︺ ︻ ︼ ︽ ︾ ︿</span>
-<span class="doccomment">/// ﹀ ﹁ ﹂ ﹃ ﹄ ﹅ ﹆ ﹇ ﹈ ﹉ ﹊ ﹋ ﹌ ﹍ ﹎</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{fe30}: &#39;︰&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PRESENTATION_FORM_FOR_VERTICAL_TWO_DOT_LEADER</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;︰&#39;</span>;
@@ -362,10 +353,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CENTRELINE_LOW_LINE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;﹎&#39;</span>;
 }
 
-<span class="doccomment">/// \u{fe30} → \u{fe4f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ︰ ︱ ︲ ︳ ︴ ︵ ︶ ︷ ︸ ︹ ︺ ︻ ︼ ︽ ︾ ︿</span>
-<span class="doccomment">/// ﹀ ﹁ ﹂ ﹃ ﹄ ﹅ ﹆ ﹇ ﹈ ﹉ ﹊ ﹋ ﹌ ﹍ ﹎</span>
+<span class="doccomment">/// An enum to represent all characters in the CJKCompatibilityForms block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">CJKCompatibilityForms</span> {
     <span class="doccomment">/// \u{fe30}: &#39;︰&#39;</span>

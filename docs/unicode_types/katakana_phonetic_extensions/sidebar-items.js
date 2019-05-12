@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["KatakanaPhoneticExtensions","\\u{31f0} → \\u{31ff}\\ \\  ㇰ ㇱ ㇲ ㇳ ㇴ ㇵ ㇶ ㇷ ㇸ ㇹ ㇺ ㇻ ㇼ ㇽ ㇾ"]],"mod":[["constants","\\u{31f0} → \\u{31ff}\\ \\  ㇰ ㇱ ㇲ ㇳ ㇴ ㇵ ㇶ ㇷ ㇸ ㇹ ㇺ ㇻ ㇼ ㇽ ㇾ"]]});
+initSidebarItems({"enum":[["KatakanaPhoneticExtensions","An enum to represent all characters in the KatakanaPhoneticExtensions block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

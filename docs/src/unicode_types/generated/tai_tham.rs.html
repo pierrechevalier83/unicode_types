@@ -958,35 +958,8 @@
 <span id="958">958</span>
 <span id="959">959</span>
 <span id="960">960</span>
-<span id="961">961</span>
-<span id="962">962</span>
-<span id="963">963</span>
-<span id="964">964</span>
-<span id="965">965</span>
-<span id="966">966</span>
-<span id="967">967</span>
-<span id="968">968</span>
-<span id="969">969</span>
-<span id="970">970</span>
-<span id="971">971</span>
-<span id="972">972</span>
-<span id="973">973</span>
-<span id="974">974</span>
-<span id="975">975</span>
-<span id="976">976</span>
-<span id="977">977</span>
-<span id="978">978</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1a20} → \u{1aaf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᨠ ᨡ ᨢ ᨣ ᨤ ᨥ ᨦ ᨧ ᨨ ᨩ ᨪ ᨫ ᨬ ᨭ ᨮ ᨯ</span>
-<span class="doccomment">/// ᨰ ᨱ ᨲ ᨳ ᨴ ᨵ ᨶ ᨷ ᨸ ᨹ ᨺ ᨻ ᨼ ᨽ ᨾ ᨿ</span>
-<span class="doccomment">/// ᩀ ᩁ ᩂ ᩃ ᩄ ᩅ ᩆ ᩇ ᩈ ᩉ ᩊ ᩋ ᩌ ᩍ ᩎ ᩏ</span>
-<span class="doccomment">/// ᩐ ᩑ ᩒ ᩓ ᩔ ᩕ ᩖ ᩗ ᩘ ᩙ ᩚ ᩛ ᩜ ᩝ ᩞ ᩠</span>
-<span class="doccomment">/// ᩡ ᩢ ᩣ ᩤ ᩥ ᩦ ᩧ ᩨ ᩩ ᩪ ᩫ ᩬ ᩭ ᩮ ᩯ ᩰ</span>
-<span class="doccomment">/// ᩱ ᩲ ᩳ ᩴ ᩵ ᩶ ᩷ ᩸ ᩹ ᩺ ᩻ ᩼ ᩿ ᪀ ᪁ ᪂</span>
-<span class="doccomment">/// ᪃ ᪄ ᪅ ᪆ ᪇ ᪈ ᪉ ᪐ ᪑ ᪒ ᪓ ᪔ ᪕ ᪖ ᪗ ᪘</span>
-<span class="doccomment">/// ᪙ ᪠ ᪡ ᪢ ᪣ ᪤ ᪥ ᪦ ᪧ ᪨ ᪩ ᪪ ᪫ ᪬ ᪭</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1a20}: &#39;ᨠ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_HIGH_KA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᨠ&#39;</span>;
@@ -1244,16 +1217,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_CAANG</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;᪭&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1a20} → \u{1aaf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᨠ ᨡ ᨢ ᨣ ᨤ ᨥ ᨦ ᨧ ᨨ ᨩ ᨪ ᨫ ᨬ ᨭ ᨮ ᨯ</span>
-<span class="doccomment">/// ᨰ ᨱ ᨲ ᨳ ᨴ ᨵ ᨶ ᨷ ᨸ ᨹ ᨺ ᨻ ᨼ ᨽ ᨾ ᨿ</span>
-<span class="doccomment">/// ᩀ ᩁ ᩂ ᩃ ᩄ ᩅ ᩆ ᩇ ᩈ ᩉ ᩊ ᩋ ᩌ ᩍ ᩎ ᩏ</span>
-<span class="doccomment">/// ᩐ ᩑ ᩒ ᩓ ᩔ ᩕ ᩖ ᩗ ᩘ ᩙ ᩚ ᩛ ᩜ ᩝ ᩞ ᩠</span>
-<span class="doccomment">/// ᩡ ᩢ ᩣ ᩤ ᩥ ᩦ ᩧ ᩨ ᩩ ᩪ ᩫ ᩬ ᩭ ᩮ ᩯ ᩰ</span>
-<span class="doccomment">/// ᩱ ᩲ ᩳ ᩴ ᩵ ᩶ ᩷ ᩸ ᩹ ᩺ ᩻ ᩼ ᩿ ᪀ ᪁ ᪂</span>
-<span class="doccomment">/// ᪃ ᪄ ᪅ ᪆ ᪇ ᪈ ᪉ ᪐ ᪑ ᪒ ᪓ ᪔ ᪕ ᪖ ᪗ ᪘</span>
-<span class="doccomment">/// ᪙ ᪠ ᪡ ᪢ ᪣ ᪤ ᪥ ᪦ ᪧ ᪨ ᪩ ᪪ ᪫ ᪬ ᪭</span>
+<span class="doccomment">/// An enum to represent all characters in the TaiTham block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">TaiTham</span> {
     <span class="doccomment">/// \u{1a20}: &#39;ᨠ&#39;</span>

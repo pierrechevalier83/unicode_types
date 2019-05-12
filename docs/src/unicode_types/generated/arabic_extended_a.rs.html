@@ -580,26 +580,8 @@
 <span id="580">580</span>
 <span id="581">581</span>
 <span id="582">582</span>
-<span id="583">583</span>
-<span id="584">584</span>
-<span id="585">585</span>
-<span id="586">586</span>
-<span id="587">587</span>
-<span id="588">588</span>
-<span id="589">589</span>
-<span id="590">590</span>
-<span id="591">591</span>
-<span id="592">592</span>
-<span id="593">593</span>
-<span id="594">594</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{8a0} → \u{8ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ࢠ ࢡ ࢢ ࢣ ࢤ ࢥ ࢦ ࢧ ࢨ ࢩ ࢪ ࢫ ࢬ ࢭ ࢮ ࢯ</span>
-<span class="doccomment">/// ࢰ ࢱ ࢲ ࢳ ࢴ ࢶ ࢷ ࢸ ࢹ ࢺ ࢻ ࢼ ࢽ ࣓ ࣔ ࣕ</span>
-<span class="doccomment">/// ࣖ ࣗ ࣘ ࣙ ࣚ ࣛ ࣜ ࣝ ࣞ ࣟ ࣠ ࣡ ࣢ ࣣ ࣤ ࣥ</span>
-<span class="doccomment">/// ࣦ ࣧ ࣨ ࣩ ࣪ ࣫ ࣬ ࣭ ࣮ ࣯ ࣰ ࣱ ࣲ ࣳ ࣴ ࣵ</span>
-<span class="doccomment">/// ࣶ ࣷ ࣸ ࣹ ࣺ ࣻ ࣼ ࣽ ࣾ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{8a0}: &#39;ࢠ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ARABIC_LETTER_BEH_WITH_SMALL_V_BELOW</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ࢠ&#39;</span>;
@@ -749,13 +731,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ARABIC_DAMMA_WITH_DOT</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ࣾ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{8a0} → \u{8ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ࢠ ࢡ ࢢ ࢣ ࢤ ࢥ ࢦ ࢧ ࢨ ࢩ ࢪ ࢫ ࢬ ࢭ ࢮ ࢯ</span>
-<span class="doccomment">/// ࢰ ࢱ ࢲ ࢳ ࢴ ࢶ ࢷ ࢸ ࢹ ࢺ ࢻ ࢼ ࢽ ࣓ ࣔ ࣕ</span>
-<span class="doccomment">/// ࣖ ࣗ ࣘ ࣙ ࣚ ࣛ ࣜ ࣝ ࣞ ࣟ ࣠ ࣡ ࣢ ࣣ ࣤ ࣥ</span>
-<span class="doccomment">/// ࣦ ࣧ ࣨ ࣩ ࣪ ࣫ ࣬ ࣭ ࣮ ࣯ ࣰ ࣱ ࣲ ࣳ ࣴ ࣵ</span>
-<span class="doccomment">/// ࣶ ࣷ ࣸ ࣹ ࣺ ࣻ ࣼ ࣽ ࣾ</span>
+<span class="doccomment">/// An enum to represent all characters in the ArabicExtendedA block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">ArabicExtendedA</span> {
     <span class="doccomment">/// \u{8a0}: &#39;ࢠ&#39;</span>

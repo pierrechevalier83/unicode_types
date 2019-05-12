@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CyrillicSupplement","\\u{500} → \\u{52f}\\ \\  Ԁ ԁ Ԃ ԃ Ԅ ԅ Ԇ ԇ Ԉ ԉ Ԋ ԋ Ԍ ԍ Ԏ ԏ  Ԑ ԑ Ԓ ԓ Ԕ ԕ Ԗ ԗ Ԙ ԙ Ԛ ԛ Ԝ ԝ Ԟ ԟ  Ԡ ԡ Ԣ ԣ Ԥ ԥ Ԧ ԧ Ԩ ԩ Ԫ ԫ Ԭ ԭ Ԯ"]],"mod":[["constants","\\u{500} → \\u{52f}\\ \\  Ԁ ԁ Ԃ ԃ Ԅ ԅ Ԇ ԇ Ԉ ԉ Ԋ ԋ Ԍ ԍ Ԏ ԏ  Ԑ ԑ Ԓ ԓ Ԕ ԕ Ԗ ԗ Ԙ ԙ Ԛ ԛ Ԝ ԝ Ԟ ԟ  Ԡ ԡ Ԣ ԣ Ԥ ԥ Ԧ ԧ Ԩ ԩ Ԫ ԫ Ԭ ԭ Ԯ"]]});
+initSidebarItems({"enum":[["CyrillicSupplement","An enum to represent all characters in the CyrillicSupplement block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

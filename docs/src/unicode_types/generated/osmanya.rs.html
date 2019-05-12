@@ -349,20 +349,8 @@
 <span id="349">349</span>
 <span id="350">350</span>
 <span id="351">351</span>
-<span id="352">352</span>
-<span id="353">353</span>
-<span id="354">354</span>
-<span id="355">355</span>
-<span id="356">356</span>
-<span id="357">357</span>
-<span id="358">358</span>
-<span id="359">359</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10480} → \u{104af}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐒀 𐒁 𐒂 𐒃 𐒄 𐒅 𐒆 𐒇 𐒈 𐒉 𐒊 𐒋 𐒌 𐒍 𐒎 𐒏</span>
-<span class="doccomment">/// 𐒐 𐒑 𐒒 𐒓 𐒔 𐒕 𐒖 𐒗 𐒘 𐒙 𐒚 𐒛 𐒜 𐒝 𐒠 𐒡</span>
-<span class="doccomment">/// 𐒢 𐒣 𐒤 𐒥 𐒦 𐒧 𐒨 𐒩</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10480}: &#39;𐒀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_ALEF</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐒀&#39;</span>;
@@ -446,11 +434,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">DIGIT_NINE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐒩&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10480} → \u{104af}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐒀 𐒁 𐒂 𐒃 𐒄 𐒅 𐒆 𐒇 𐒈 𐒉 𐒊 𐒋 𐒌 𐒍 𐒎 𐒏</span>
-<span class="doccomment">/// 𐒐 𐒑 𐒒 𐒓 𐒔 𐒕 𐒖 𐒗 𐒘 𐒙 𐒚 𐒛 𐒜 𐒝 𐒠 𐒡</span>
-<span class="doccomment">/// 𐒢 𐒣 𐒤 𐒥 𐒦 𐒧 𐒨 𐒩</span>
+<span class="doccomment">/// An enum to represent all characters in the Osmanya block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Osmanya</span> {
     <span class="doccomment">/// \u{10480}: &#39;𐒀&#39;</span>

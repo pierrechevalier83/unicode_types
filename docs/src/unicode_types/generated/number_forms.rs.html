@@ -489,23 +489,8 @@
 <span id="489">489</span>
 <span id="490">490</span>
 <span id="491">491</span>
-<span id="492">492</span>
-<span id="493">493</span>
-<span id="494">494</span>
-<span id="495">495</span>
-<span id="496">496</span>
-<span id="497">497</span>
-<span id="498">498</span>
-<span id="499">499</span>
-<span id="500">500</span>
-<span id="501">501</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{2150} → \u{218f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ⅐ ⅑ ⅒ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞ ⅟</span>
-<span class="doccomment">/// Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ Ⅼ Ⅽ Ⅾ Ⅿ</span>
-<span class="doccomment">/// ⅰ ⅱ ⅲ ⅳ ⅴ ⅵ ⅶ ⅷ ⅸ ⅹ ⅺ ⅻ ⅼ ⅽ ⅾ ⅿ</span>
-<span class="doccomment">/// ↀ ↁ ↂ Ↄ ↄ ↅ ↆ ↇ ↈ ↉ ↊ ↋</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{2150}: &#39;⅐&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">VULGAR_FRACTION_ONE_SEVENTH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;⅐&#39;</span>;
@@ -629,12 +614,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TURNED_DIGIT_THREE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;↋&#39;</span>;
 }
 
-<span class="doccomment">/// \u{2150} → \u{218f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ⅐ ⅑ ⅒ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞ ⅟</span>
-<span class="doccomment">/// Ⅰ Ⅱ Ⅲ Ⅳ Ⅴ Ⅵ Ⅶ Ⅷ Ⅸ Ⅹ Ⅺ Ⅻ Ⅼ Ⅽ Ⅾ Ⅿ</span>
-<span class="doccomment">/// ⅰ ⅱ ⅲ ⅳ ⅴ ⅵ ⅶ ⅷ ⅸ ⅹ ⅺ ⅻ ⅼ ⅽ ⅾ ⅿ</span>
-<span class="doccomment">/// ↀ ↁ ↂ Ↄ ↄ ↅ ↆ ↇ ↈ ↉ ↊ ↋</span>
+<span class="doccomment">/// An enum to represent all characters in the NumberForms block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">NumberForms</span> {
     <span class="doccomment">/// \u{2150}: &#39;⅐&#39;</span>

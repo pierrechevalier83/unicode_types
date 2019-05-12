@@ -1644,56 +1644,8 @@
 <span id="1644">1644</span>
 <span id="1645">1645</span>
 <span id="1646">1646</span>
-<span id="1647">1647</span>
-<span id="1648">1648</span>
-<span id="1649">1649</span>
-<span id="1650">1650</span>
-<span id="1651">1651</span>
-<span id="1652">1652</span>
-<span id="1653">1653</span>
-<span id="1654">1654</span>
-<span id="1655">1655</span>
-<span id="1656">1656</span>
-<span id="1657">1657</span>
-<span id="1658">1658</span>
-<span id="1659">1659</span>
-<span id="1660">1660</span>
-<span id="1661">1661</span>
-<span id="1662">1662</span>
-<span id="1663">1663</span>
-<span id="1664">1664</span>
-<span id="1665">1665</span>
-<span id="1666">1666</span>
-<span id="1667">1667</span>
-<span id="1668">1668</span>
-<span id="1669">1669</span>
-<span id="1670">1670</span>
-<span id="1671">1671</span>
-<span id="1672">1672</span>
-<span id="1673">1673</span>
-<span id="1674">1674</span>
-<span id="1675">1675</span>
-<span id="1676">1676</span>
-<span id="1677">1677</span>
-<span id="1678">1678</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{ff00} → \u{ffef}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ！ ＂ ＃ ＄ ％ ＆ ＇ （ ） ＊ ＋ ， － ． ／ ０</span>
-<span class="doccomment">/// １ ２ ３ ４ ５ ６ ７ ８ ９ ： ； ＜ ＝ ＞ ？ ＠</span>
-<span class="doccomment">/// Ａ Ｂ Ｃ Ｄ Ｅ Ｆ Ｇ Ｈ Ｉ Ｊ Ｋ Ｌ Ｍ Ｎ Ｏ Ｐ</span>
-<span class="doccomment">/// Ｑ Ｒ Ｓ Ｔ Ｕ Ｖ Ｗ Ｘ Ｙ Ｚ ［ ＼ ］ ＾ ＿ ｀</span>
-<span class="doccomment">/// ａ ｂ ｃ ｄ ｅ ｆ ｇ ｈ ｉ ｊ ｋ ｌ ｍ ｎ ｏ ｐ</span>
-<span class="doccomment">/// ｑ ｒ ｓ ｔ ｕ ｖ ｗ ｘ ｙ ｚ ｛ ｜ ｝ ～ ｟ ｠</span>
-<span class="doccomment">/// ｡ ｢ ｣ ､ ･ ｦ ｧ ｨ ｩ ｪ ｫ ｬ ｭ ｮ ｯ ｰ</span>
-<span class="doccomment">/// ｱ ｲ ｳ ｴ ｵ ｶ ｷ ｸ ｹ ｺ ｻ ｼ ｽ ｾ ｿ ﾀ</span>
-<span class="doccomment">/// ﾁ ﾂ ﾃ ﾄ ﾅ ﾆ ﾇ ﾈ ﾉ ﾊ ﾋ ﾌ ﾍ ﾎ ﾏ ﾐ</span>
-<span class="doccomment">/// ﾑ ﾒ ﾓ ﾔ ﾕ ﾖ ﾗ ﾘ ﾙ ﾚ ﾛ ﾜ ﾝ ﾞ ﾟ ﾠ</span>
-<span class="doccomment">/// ﾡ ﾢ ﾣ ﾤ ﾥ ﾦ ﾧ ﾨ ﾩ ﾪ ﾫ ﾬ ﾭ ﾮ ﾯ ﾰ</span>
-<span class="doccomment">/// ﾱ ﾲ ﾳ ﾴ ﾵ ﾶ ﾷ ﾸ ﾹ ﾺ ﾻ ﾼ ﾽ ﾾ ￂ ￃ</span>
-<span class="doccomment">/// ￄ ￅ ￆ ￇ ￊ ￋ ￌ ￍ ￎ ￏ ￒ ￓ ￔ ￕ ￖ ￗ</span>
-<span class="doccomment">/// ￚ ￛ ￜ ￠ ￡ ￢ ￣ ￤ ￥ ￦ ￨ ￩ ￪ ￫ ￬ ￭</span>
-<span class="doccomment">/// ￮</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{ff01}: &#39;！&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FULLWIDTH_EXCLAMATION_MARK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;！&#39;</span>;
@@ -2147,23 +2099,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HALFWIDTH_WHITE_CIRCLE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;￮&#39;</span>;
 }
 
-<span class="doccomment">/// \u{ff00} → \u{ffef}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ！ ＂ ＃ ＄ ％ ＆ ＇ （ ） ＊ ＋ ， － ． ／ ０</span>
-<span class="doccomment">/// １ ２ ３ ４ ５ ６ ７ ８ ９ ： ； ＜ ＝ ＞ ？ ＠</span>
-<span class="doccomment">/// Ａ Ｂ Ｃ Ｄ Ｅ Ｆ Ｇ Ｈ Ｉ Ｊ Ｋ Ｌ Ｍ Ｎ Ｏ Ｐ</span>
-<span class="doccomment">/// Ｑ Ｒ Ｓ Ｔ Ｕ Ｖ Ｗ Ｘ Ｙ Ｚ ［ ＼ ］ ＾ ＿ ｀</span>
-<span class="doccomment">/// ａ ｂ ｃ ｄ ｅ ｆ ｇ ｈ ｉ ｊ ｋ ｌ ｍ ｎ ｏ ｐ</span>
-<span class="doccomment">/// ｑ ｒ ｓ ｔ ｕ ｖ ｗ ｘ ｙ ｚ ｛ ｜ ｝ ～ ｟ ｠</span>
-<span class="doccomment">/// ｡ ｢ ｣ ､ ･ ｦ ｧ ｨ ｩ ｪ ｫ ｬ ｭ ｮ ｯ ｰ</span>
-<span class="doccomment">/// ｱ ｲ ｳ ｴ ｵ ｶ ｷ ｸ ｹ ｺ ｻ ｼ ｽ ｾ ｿ ﾀ</span>
-<span class="doccomment">/// ﾁ ﾂ ﾃ ﾄ ﾅ ﾆ ﾇ ﾈ ﾉ ﾊ ﾋ ﾌ ﾍ ﾎ ﾏ ﾐ</span>
-<span class="doccomment">/// ﾑ ﾒ ﾓ ﾔ ﾕ ﾖ ﾗ ﾘ ﾙ ﾚ ﾛ ﾜ ﾝ ﾞ ﾟ ﾠ</span>
-<span class="doccomment">/// ﾡ ﾢ ﾣ ﾤ ﾥ ﾦ ﾧ ﾨ ﾩ ﾪ ﾫ ﾬ ﾭ ﾮ ﾯ ﾰ</span>
-<span class="doccomment">/// ﾱ ﾲ ﾳ ﾴ ﾵ ﾶ ﾷ ﾸ ﾹ ﾺ ﾻ ﾼ ﾽ ﾾ ￂ ￃ</span>
-<span class="doccomment">/// ￄ ￅ ￆ ￇ ￊ ￋ ￌ ￍ ￎ ￏ ￒ ￓ ￔ ￕ ￖ ￗ</span>
-<span class="doccomment">/// ￚ ￛ ￜ ￠ ￡ ￢ ￣ ￤ ￥ ￦ ￨ ￩ ￪ ￫ ￬ ￭</span>
-<span class="doccomment">/// ￮</span>
+<span class="doccomment">/// An enum to represent all characters in the HalfwidthandFullwidthForms block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">HalfwidthandFullwidthForms</span> {
     <span class="doccomment">/// \u{ff01}: &#39;！&#39;</span>

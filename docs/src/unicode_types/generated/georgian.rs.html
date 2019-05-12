@@ -678,29 +678,8 @@
 <span id="678">678</span>
 <span id="679">679</span>
 <span id="680">680</span>
-<span id="681">681</span>
-<span id="682">682</span>
-<span id="683">683</span>
-<span id="684">684</span>
-<span id="685">685</span>
-<span id="686">686</span>
-<span id="687">687</span>
-<span id="688">688</span>
-<span id="689">689</span>
-<span id="690">690</span>
-<span id="691">691</span>
-<span id="692">692</span>
-<span id="693">693</span>
-<span id="694">694</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10a0} → \u{10ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ⴀ Ⴁ Ⴂ Ⴃ Ⴄ Ⴅ Ⴆ Ⴇ Ⴈ Ⴉ Ⴊ Ⴋ Ⴌ Ⴍ Ⴎ Ⴏ</span>
-<span class="doccomment">/// Ⴐ Ⴑ Ⴒ Ⴓ Ⴔ Ⴕ Ⴖ Ⴗ Ⴘ Ⴙ Ⴚ Ⴛ Ⴜ Ⴝ Ⴞ Ⴟ</span>
-<span class="doccomment">/// Ⴠ Ⴡ Ⴢ Ⴣ Ⴤ Ⴥ Ⴧ Ⴭ ა ბ გ დ ე ვ ზ თ</span>
-<span class="doccomment">/// ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ</span>
-<span class="doccomment">/// შ ჩ ც ძ წ ჭ ხ ჯ ჰ ჱ ჲ ჳ ჴ ჵ ჶ ჷ</span>
-<span class="doccomment">/// ჸ ჹ ჺ ჻ ჼ ჽ ჾ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10a0}: &#39;Ⴀ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CAPITAL_LETTER_AN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;Ⴀ&#39;</span>;
@@ -878,14 +857,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_HARD_SIGN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ჾ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10a0} → \u{10ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ⴀ Ⴁ Ⴂ Ⴃ Ⴄ Ⴅ Ⴆ Ⴇ Ⴈ Ⴉ Ⴊ Ⴋ Ⴌ Ⴍ Ⴎ Ⴏ</span>
-<span class="doccomment">/// Ⴐ Ⴑ Ⴒ Ⴓ Ⴔ Ⴕ Ⴖ Ⴗ Ⴘ Ⴙ Ⴚ Ⴛ Ⴜ Ⴝ Ⴞ Ⴟ</span>
-<span class="doccomment">/// Ⴠ Ⴡ Ⴢ Ⴣ Ⴤ Ⴥ Ⴧ Ⴭ ა ბ გ დ ე ვ ზ თ</span>
-<span class="doccomment">/// ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ</span>
-<span class="doccomment">/// შ ჩ ც ძ წ ჭ ხ ჯ ჰ ჱ ჲ ჳ ჴ ჵ ჶ ჷ</span>
-<span class="doccomment">/// ჸ ჹ ჺ ჻ ჼ ჽ ჾ</span>
+<span class="doccomment">/// An enum to represent all characters in the Georgian block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Georgian</span> {
     <span class="doccomment">/// \u{10a0}: &#39;Ⴀ&#39;</span>

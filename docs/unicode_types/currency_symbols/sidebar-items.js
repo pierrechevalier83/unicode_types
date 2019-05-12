@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CurrencySymbols","\\u{20a0} → \\u{20cf}\\ \\  ₠ ₡ ₢ ₣ ₤ ₥ ₦ ₧ ₨ ₩ ₪ ₫ € ₭ ₮ ₯  ₰ ₱ ₲ ₳ ₴ ₵ ₶ ₷ ₸ ₹ ₺ ₻ ₼ ₽ ₾ ₿"]],"mod":[["constants","\\u{20a0} → \\u{20cf}\\ \\  ₠ ₡ ₢ ₣ ₤ ₥ ₦ ₧ ₨ ₩ ₪ ₫ € ₭ ₮ ₯  ₰ ₱ ₲ ₳ ₴ ₵ ₶ ₷ ₸ ₹ ₺ ₻ ₼ ₽ ₾ ₿"]]});
+initSidebarItems({"enum":[["CurrencySymbols","An enum to represent all characters in the CurrencySymbols block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

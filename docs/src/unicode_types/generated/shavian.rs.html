@@ -398,20 +398,8 @@
 <span id="398">398</span>
 <span id="399">399</span>
 <span id="400">400</span>
-<span id="401">401</span>
-<span id="402">402</span>
-<span id="403">403</span>
-<span id="404">404</span>
-<span id="405">405</span>
-<span id="406">406</span>
-<span id="407">407</span>
-<span id="408">408</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10450} → \u{1047f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐑐 𐑑 𐑒 𐑓 𐑔 𐑕 𐑖 𐑗 𐑘 𐑙 𐑚 𐑛 𐑜 𐑝 𐑞 𐑟</span>
-<span class="doccomment">/// 𐑠 𐑡 𐑢 𐑣 𐑤 𐑥 𐑦 𐑧 𐑨 𐑩 𐑪 𐑫 𐑬 𐑭 𐑮 𐑯</span>
-<span class="doccomment">/// 𐑰 𐑱 𐑲 𐑳 𐑴 𐑵 𐑶 𐑷 𐑸 𐑹 𐑺 𐑻 𐑼 𐑽 𐑾</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10450}: &#39;𐑐&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_PEEP</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐑐&#39;</span>;
@@ -509,11 +497,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_IAN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐑾&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10450} → \u{1047f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐑐 𐑑 𐑒 𐑓 𐑔 𐑕 𐑖 𐑗 𐑘 𐑙 𐑚 𐑛 𐑜 𐑝 𐑞 𐑟</span>
-<span class="doccomment">/// 𐑠 𐑡 𐑢 𐑣 𐑤 𐑥 𐑦 𐑧 𐑨 𐑩 𐑪 𐑫 𐑬 𐑭 𐑮 𐑯</span>
-<span class="doccomment">/// 𐑰 𐑱 𐑲 𐑳 𐑴 𐑵 𐑶 𐑷 𐑸 𐑹 𐑺 𐑻 𐑼 𐑽 𐑾</span>
+<span class="doccomment">/// An enum to represent all characters in the Shavian block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Shavian</span> {
     <span class="doccomment">/// \u{10450}: &#39;𐑐&#39;</span>

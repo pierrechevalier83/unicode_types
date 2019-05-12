@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Specials","\\u{fff0} → \\u{ffff}\\ \\  ￹ ￺ ￻ ￼ �"]],"mod":[["constants","\\u{fff0} → \\u{ffff}\\ \\  ￹ ￺ ￻ ￼ �"]]});
+initSidebarItems({"enum":[["Specials","An enum to represent all characters in the Specials block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

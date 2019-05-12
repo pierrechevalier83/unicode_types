@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["SmallKanaExtension","\\u{1b130} → \\u{1b16f}\\ \\  𛅐 𛅑 𛅒 𛅤 𛅥 𛅦 𛅧"]],"mod":[["constants","\\u{1b130} → \\u{1b16f}\\ \\  𛅐 𛅑 𛅒 𛅤 𛅥 𛅦 𛅧"]]});
+initSidebarItems({"enum":[["SmallKanaExtension","An enum to represent all characters in the SmallKanaExtension block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

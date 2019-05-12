@@ -671,29 +671,8 @@
 <span id="671">671</span>
 <span id="672">672</span>
 <span id="673">673</span>
-<span id="674">674</span>
-<span id="675">675</span>
-<span id="676">676</span>
-<span id="677">677</span>
-<span id="678">678</span>
-<span id="679">679</span>
-<span id="680">680</span>
-<span id="681">681</span>
-<span id="682">682</span>
-<span id="683">683</span>
-<span id="684">684</span>
-<span id="685">685</span>
-<span id="686">686</span>
-<span id="687">687</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{11300} → \u{1137f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑌀 𑌁 𑌂 𑌃 𑌅 𑌆 𑌇 𑌈 𑌉 𑌊 𑌋 𑌌 𑌏 𑌐 𑌓 𑌔</span>
-<span class="doccomment">/// 𑌕 𑌖 𑌗 𑌘 𑌙 𑌚 𑌛 𑌜 𑌝 𑌞 𑌟 𑌠 𑌡 𑌢 𑌣 𑌤</span>
-<span class="doccomment">/// 𑌥 𑌦 𑌧 𑌨 𑌪 𑌫 𑌬 𑌭 𑌮 𑌯 𑌰 𑌲 𑌳 𑌵 𑌶 𑌷</span>
-<span class="doccomment">/// 𑌸 𑌹 𑌻 𑌼 𑌽 𑌾 𑌿 𑍀 𑍁 𑍂 𑍃 𑍄 𑍇 𑍈 𑍋 𑍌</span>
-<span class="doccomment">/// 𑍍 𑍐 𑍗 𑍝 𑍞 𑍟 𑍠 𑍡 𑍢 𑍣 𑍦 𑍧 𑍨 𑍩 𑍪 𑍫</span>
-<span class="doccomment">/// 𑍬 𑍰 𑍱 𑍲 𑍳 𑍴</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{11300}: &#39;𑌀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_COMBINING_ANUSVARA_ABOVE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑌀&#39;</span>;
@@ -869,14 +848,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">COMBINING_LETTER_PA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑍴&#39;</span>;
 }
 
-<span class="doccomment">/// \u{11300} → \u{1137f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑌀 𑌁 𑌂 𑌃 𑌅 𑌆 𑌇 𑌈 𑌉 𑌊 𑌋 𑌌 𑌏 𑌐 𑌓 𑌔</span>
-<span class="doccomment">/// 𑌕 𑌖 𑌗 𑌘 𑌙 𑌚 𑌛 𑌜 𑌝 𑌞 𑌟 𑌠 𑌡 𑌢 𑌣 𑌤</span>
-<span class="doccomment">/// 𑌥 𑌦 𑌧 𑌨 𑌪 𑌫 𑌬 𑌭 𑌮 𑌯 𑌰 𑌲 𑌳 𑌵 𑌶 𑌷</span>
-<span class="doccomment">/// 𑌸 𑌹 𑌻 𑌼 𑌽 𑌾 𑌿 𑍀 𑍁 𑍂 𑍃 𑍄 𑍇 𑍈 𑍋 𑍌</span>
-<span class="doccomment">/// 𑍍 𑍐 𑍗 𑍝 𑍞 𑍟 𑍠 𑍡 𑍢 𑍣 𑍦 𑍧 𑍨 𑍩 𑍪 𑍫</span>
-<span class="doccomment">/// 𑍬 𑍰 𑍱 𑍲 𑍳 𑍴</span>
+<span class="doccomment">/// An enum to represent all characters in the Grantha block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Grantha</span> {
     <span class="doccomment">/// \u{11300}: &#39;𑌀&#39;</span>

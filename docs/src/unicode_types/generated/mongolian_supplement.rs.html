@@ -160,14 +160,8 @@
 <span id="160">160</span>
 <span id="161">161</span>
 <span id="162">162</span>
-<span id="163">163</span>
-<span id="164">164</span>
-<span id="165">165</span>
-<span id="166">166</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{11660} → \u{1167f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑙠 𑙡 𑙢 𑙣 𑙤 𑙥 𑙦 𑙧 𑙨 𑙩 𑙪 𑙫 𑙬</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{11660}: &#39;𑙠&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MONGOLIAN_BIRGA_WITH_ORNAMENT</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑙠&#39;</span>;
@@ -197,9 +191,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MONGOLIAN_TURNED_SWIRL_BIRGA_WITH_DOUBLE_ORNAMENT</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𑙬&#39;</span>;
 }
 
-<span class="doccomment">/// \u{11660} → \u{1167f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𑙠 𑙡 𑙢 𑙣 𑙤 𑙥 𑙦 𑙧 𑙨 𑙩 𑙪 𑙫 𑙬</span>
+<span class="doccomment">/// An enum to represent all characters in the MongolianSupplement block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">MongolianSupplement</span> {
     <span class="doccomment">/// \u{11660}: &#39;𑙠&#39;</span>

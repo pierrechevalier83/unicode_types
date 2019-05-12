@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CombiningDiacriticalMarksExtended","\\u{1ab0} → \\u{1aff}\\ \\  ᪰ ᪱ ᪲ ᪳ ᪴ ᪵ ᪶ ᪷ ᪸ ᪹ ᪺ ᪻ ᪼ ᪽ ᪾"]],"mod":[["constants","\\u{1ab0} → \\u{1aff}\\ \\  ᪰ ᪱ ᪲ ᪳ ᪴ ᪵ ᪶ ᪷ ᪸ ᪹ ᪺ ᪻ ᪼ ᪽ ᪾"]]});
+initSidebarItems({"enum":[["CombiningDiacriticalMarksExtended","An enum to represent all characters in the CombiningDiacriticalMarksExtended block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

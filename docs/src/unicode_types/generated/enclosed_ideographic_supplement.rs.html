@@ -517,23 +517,8 @@
 <span id="517">517</span>
 <span id="518">518</span>
 <span id="519">519</span>
-<span id="520">520</span>
-<span id="521">521</span>
-<span id="522">522</span>
-<span id="523">523</span>
-<span id="524">524</span>
-<span id="525">525</span>
-<span id="526">526</span>
-<span id="527">527</span>
-<span id="528">528</span>
-<span id="529">529</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1f200} → \u{1f2ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 🈀 🈁 🈂 🈐 🈑 🈒 🈓 🈔 🈕 🈖 🈗 🈘 🈙 🈚 🈛 🈜</span>
-<span class="doccomment">/// 🈝 🈞 🈟 🈠 🈡 🈢 🈣 🈤 🈥 🈦 🈧 🈨 🈩 🈪 🈫 🈬</span>
-<span class="doccomment">/// 🈭 🈮 🈯 🈰 🈱 🈲 🈳 🈴 🈵 🈶 🈷 🈸 🈹 🈺 🈻 🉀</span>
-<span class="doccomment">/// 🉁 🉂 🉃 🉄 🉅 🉆 🉇 🉈 🉐 🉑 🉠 🉡 🉢 🉣 🉤 🉥</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1f200}: &#39;🈀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SQUARE_HIRAGANA_HOKA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;🈀&#39;</span>;
@@ -665,12 +650,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">ROUNDED_SYMBOL_FOR_CAI</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;🉥&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1f200} → \u{1f2ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 🈀 🈁 🈂 🈐 🈑 🈒 🈓 🈔 🈕 🈖 🈗 🈘 🈙 🈚 🈛 🈜</span>
-<span class="doccomment">/// 🈝 🈞 🈟 🈠 🈡 🈢 🈣 🈤 🈥 🈦 🈧 🈨 🈩 🈪 🈫 🈬</span>
-<span class="doccomment">/// 🈭 🈮 🈯 🈰 🈱 🈲 🈳 🈴 🈵 🈶 🈷 🈸 🈹 🈺 🈻 🉀</span>
-<span class="doccomment">/// 🉁 🉂 🉃 🉄 🉅 🉆 🉇 🉈 🉐 🉑 🉠 🉡 🉢 🉣 🉤 🉥</span>
+<span class="doccomment">/// An enum to represent all characters in the EnclosedIdeographicSupplement block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">EnclosedIdeographicSupplement</span> {
     <span class="doccomment">/// \u{1f200}: &#39;🈀&#39;</span>

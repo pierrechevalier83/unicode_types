@@ -335,20 +335,8 @@
 <span id="335">335</span>
 <span id="336">336</span>
 <span id="337">337</span>
-<span id="338">338</span>
-<span id="339">339</span>
-<span id="340">340</span>
-<span id="341">341</span>
-<span id="342">342</span>
-<span id="343">343</span>
-<span id="344">344</span>
-<span id="345">345</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10300} → \u{1032f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐌀 𐌁 𐌂 𐌃 𐌄 𐌅 𐌆 𐌇 𐌈 𐌉 𐌊 𐌋 𐌌 𐌍 𐌎 𐌏</span>
-<span class="doccomment">/// 𐌐 𐌑 𐌒 𐌓 𐌔 𐌕 𐌖 𐌗 𐌘 𐌙 𐌚 𐌛 𐌜 𐌝 𐌞 𐌟</span>
-<span class="doccomment">/// 𐌠 𐌡 𐌢 𐌣 𐌭 𐌮</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10300}: &#39;𐌀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_A</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐌀&#39;</span>;
@@ -428,11 +416,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_NORTHERN_TSE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐌮&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10300} → \u{1032f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐌀 𐌁 𐌂 𐌃 𐌄 𐌅 𐌆 𐌇 𐌈 𐌉 𐌊 𐌋 𐌌 𐌍 𐌎 𐌏</span>
-<span class="doccomment">/// 𐌐 𐌑 𐌒 𐌓 𐌔 𐌕 𐌖 𐌗 𐌘 𐌙 𐌚 𐌛 𐌜 𐌝 𐌞 𐌟</span>
-<span class="doccomment">/// 𐌠 𐌡 𐌢 𐌣 𐌭 𐌮</span>
+<span class="doccomment">/// An enum to represent all characters in the OldItalic block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">OldItalic</span> {
     <span class="doccomment">/// \u{10300}: &#39;𐌀&#39;</span>

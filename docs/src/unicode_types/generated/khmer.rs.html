@@ -867,35 +867,8 @@
 <span id="867">867</span>
 <span id="868">868</span>
 <span id="869">869</span>
-<span id="870">870</span>
-<span id="871">871</span>
-<span id="872">872</span>
-<span id="873">873</span>
-<span id="874">874</span>
-<span id="875">875</span>
-<span id="876">876</span>
-<span id="877">877</span>
-<span id="878">878</span>
-<span id="879">879</span>
-<span id="880">880</span>
-<span id="881">881</span>
-<span id="882">882</span>
-<span id="883">883</span>
-<span id="884">884</span>
-<span id="885">885</span>
-<span id="886">886</span>
-<span id="887">887</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1780} → \u{17ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ក ខ គ ឃ ង ច ឆ ជ ឈ ញ ដ ឋ ឌ ឍ ណ ត</span>
-<span class="doccomment">/// ថ ទ ធ ន ប ផ ព ភ ម យ រ ល វ ឝ ឞ ស</span>
-<span class="doccomment">/// ហ ឡ អ ឣ ឤ ឥ ឦ ឧ ឨ ឩ ឪ ឫ ឬ ឭ ឮ ឯ</span>
-<span class="doccomment">/// ឰ ឱ ឲ ឳ ឴ ឵ ា ិ ី ឹ ឺ ុ ូ ួ ើ ឿ</span>
-<span class="doccomment">/// ៀ េ ែ ៃ ោ ៅ ំ ះ ៈ ៉ ៊ ់ ៌ ៍ ៎ ៏</span>
-<span class="doccomment">/// ័ ៑ ្ ៓ ។ ៕ ៖ ៗ ៘ ៙ ៚ ៛ ៜ ៝ ០ ១</span>
-<span class="doccomment">/// ២ ៣ ៤ ៥ ៦ ៧ ៨ ៩ ៰ ៱ ៲ ៳ ៴ ៵ ៶ ៷</span>
-<span class="doccomment">/// ៸ ៹</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1780}: &#39;ក&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_KA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ក&#39;</span>;
@@ -1127,16 +1100,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SYMBOL_LEK_ATTAK_PRAM_DASH_BUON</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;៹&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1780} → \u{17ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ក ខ គ ឃ ង ច ឆ ជ ឈ ញ ដ ឋ ឌ ឍ ណ ត</span>
-<span class="doccomment">/// ថ ទ ធ ន ប ផ ព ភ ម យ រ ល វ ឝ ឞ ស</span>
-<span class="doccomment">/// ហ ឡ អ ឣ ឤ ឥ ឦ ឧ ឨ ឩ ឪ ឫ ឬ ឭ ឮ ឯ</span>
-<span class="doccomment">/// ឰ ឱ ឲ ឳ ឴ ឵ ា ិ ី ឹ ឺ ុ ូ ួ ើ ឿ</span>
-<span class="doccomment">/// ៀ េ ែ ៃ ោ ៅ ំ ះ ៈ ៉ ៊ ់ ៌ ៍ ៎ ៏</span>
-<span class="doccomment">/// ័ ៑ ្ ៓ ។ ៕ ៖ ៗ ៘ ៙ ៚ ៛ ៜ ៝ ០ ១</span>
-<span class="doccomment">/// ២ ៣ ៤ ៥ ៦ ៧ ៨ ៩ ៰ ៱ ៲ ៳ ៴ ៵ ៶ ៷</span>
-<span class="doccomment">/// ៸ ៹</span>
+<span class="doccomment">/// An enum to represent all characters in the Khmer block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Khmer</span> {
     <span class="doccomment">/// \u{1780}: &#39;ក&#39;</span>

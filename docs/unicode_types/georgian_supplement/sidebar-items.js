@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["GeorgianSupplement","\\u{2d00} → \\u{2d2f}\\ \\  ⴀ ⴁ ⴂ ⴃ ⴄ ⴅ ⴆ ⴇ ⴈ ⴉ ⴊ ⴋ ⴌ ⴍ ⴎ ⴏ  ⴐ ⴑ ⴒ ⴓ ⴔ ⴕ ⴖ ⴗ ⴘ ⴙ ⴚ ⴛ ⴜ ⴝ ⴞ ⴟ  ⴠ ⴡ ⴢ ⴣ ⴤ ⴥ ⴧ ⴭ"]],"mod":[["constants","\\u{2d00} → \\u{2d2f}\\ \\  ⴀ ⴁ ⴂ ⴃ ⴄ ⴅ ⴆ ⴇ ⴈ ⴉ ⴊ ⴋ ⴌ ⴍ ⴎ ⴏ  ⴐ ⴑ ⴒ ⴓ ⴔ ⴕ ⴖ ⴗ ⴘ ⴙ ⴚ ⴛ ⴜ ⴝ ⴞ ⴟ  ⴠ ⴡ ⴢ ⴣ ⴤ ⴥ ⴧ ⴭ"]]});
+initSidebarItems({"enum":[["GeorgianSupplement","An enum to represent all characters in the GeorgianSupplement block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

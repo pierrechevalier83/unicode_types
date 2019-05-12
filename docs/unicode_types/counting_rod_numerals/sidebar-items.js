@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CountingRodNumerals","\\u{1d360} → \\u{1d37f}\\ \\  𝍠 𝍡 𝍢 𝍣 𝍤 𝍥 𝍦 𝍧 𝍨 𝍩 𝍪 𝍫 𝍬 𝍭 𝍮 𝍯  𝍰 𝍱 𝍲 𝍳 𝍴 𝍵 𝍶 𝍷 𝍸"]],"mod":[["constants","\\u{1d360} → \\u{1d37f}\\ \\  𝍠 𝍡 𝍢 𝍣 𝍤 𝍥 𝍦 𝍧 𝍨 𝍩 𝍪 𝍫 𝍬 𝍭 𝍮 𝍯  𝍰 𝍱 𝍲 𝍳 𝍴 𝍵 𝍶 𝍷 𝍸"]]});
+initSidebarItems({"enum":[["CountingRodNumerals","An enum to represent all characters in the CountingRodNumerals block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

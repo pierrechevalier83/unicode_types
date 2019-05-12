@@ -1280,44 +1280,8 @@
 <span id="1280">1280</span>
 <span id="1281">1281</span>
 <span id="1282">1282</span>
-<span id="1283">1283</span>
-<span id="1284">1284</span>
-<span id="1285">1285</span>
-<span id="1286">1286</span>
-<span id="1287">1287</span>
-<span id="1288">1288</span>
-<span id="1289">1289</span>
-<span id="1290">1290</span>
-<span id="1291">1291</span>
-<span id="1292">1292</span>
-<span id="1293">1293</span>
-<span id="1294">1294</span>
-<span id="1295">1295</span>
-<span id="1296">1296</span>
-<span id="1297">1297</span>
-<span id="1298">1298</span>
-<span id="1299">1299</span>
-<span id="1300">1300</span>
-<span id="1301">1301</span>
-<span id="1302">1302</span>
-<span id="1303">1303</span>
-<span id="1304">1304</span>
-<span id="1305">1305</span>
-<span id="1306">1306</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{a720} → \u{a7ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꜠ ꜡ Ꜣ ꜣ Ꜥ ꜥ Ꜧ ꜧ Ꜩ ꜩ Ꜫ ꜫ Ꜭ ꜭ Ꜯ ꜯ</span>
-<span class="doccomment">/// ꜰ ꜱ Ꜳ ꜳ Ꜵ ꜵ Ꜷ ꜷ Ꜹ ꜹ Ꜻ ꜻ Ꜽ ꜽ Ꜿ ꜿ</span>
-<span class="doccomment">/// Ꝁ ꝁ Ꝃ ꝃ Ꝅ ꝅ Ꝇ ꝇ Ꝉ ꝉ Ꝋ ꝋ Ꝍ ꝍ Ꝏ ꝏ</span>
-<span class="doccomment">/// Ꝑ ꝑ Ꝓ ꝓ Ꝕ ꝕ Ꝗ ꝗ Ꝙ ꝙ Ꝛ ꝛ Ꝝ ꝝ Ꝟ ꝟ</span>
-<span class="doccomment">/// Ꝡ ꝡ Ꝣ ꝣ Ꝥ ꝥ Ꝧ ꝧ Ꝩ ꝩ Ꝫ ꝫ Ꝭ ꝭ Ꝯ ꝯ</span>
-<span class="doccomment">/// ꝰ ꝱ ꝲ ꝳ ꝴ ꝵ ꝶ ꝷ ꝸ Ꝺ ꝺ Ꝼ ꝼ Ᵹ Ꝿ ꝿ</span>
-<span class="doccomment">/// Ꞁ ꞁ Ꞃ ꞃ Ꞅ ꞅ Ꞇ ꞇ ꞈ ꞉ ꞊ Ꞌ ꞌ Ɥ ꞎ ꞏ</span>
-<span class="doccomment">/// Ꞑ ꞑ Ꞓ ꞓ ꞔ ꞕ Ꞗ ꞗ Ꞙ ꞙ Ꞛ ꞛ Ꞝ ꞝ Ꞟ ꞟ</span>
-<span class="doccomment">/// Ꞡ ꞡ Ꞣ ꞣ Ꞥ ꞥ Ꞧ ꞧ Ꞩ ꞩ Ɦ Ɜ Ɡ Ɬ Ɪ ꞯ</span>
-<span class="doccomment">/// Ʞ Ʇ Ʝ Ꭓ Ꞵ ꞵ Ꞷ ꞷ Ꞹ ꞹ Ꞻ ꞻ Ꞽ ꞽ Ꞿ ꞿ</span>
-<span class="doccomment">/// Ꟃ ꟃ Ꞔ Ʂ Ᶎ ꟷ ꟸ ꟹ ꟺ ꟻ ꟼ ꟽ ꟾ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{a720}: &#39;꜠&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MODIFIER_LETTER_STRESS_AND_HIGH_TONE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;꜠&#39;</span>;
@@ -1667,19 +1631,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LATIN_EPIGRAPHIC_LETTER_I_LONGA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ꟾ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{a720} → \u{a7ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꜠ ꜡ Ꜣ ꜣ Ꜥ ꜥ Ꜧ ꜧ Ꜩ ꜩ Ꜫ ꜫ Ꜭ ꜭ Ꜯ ꜯ</span>
-<span class="doccomment">/// ꜰ ꜱ Ꜳ ꜳ Ꜵ ꜵ Ꜷ ꜷ Ꜹ ꜹ Ꜻ ꜻ Ꜽ ꜽ Ꜿ ꜿ</span>
-<span class="doccomment">/// Ꝁ ꝁ Ꝃ ꝃ Ꝅ ꝅ Ꝇ ꝇ Ꝉ ꝉ Ꝋ ꝋ Ꝍ ꝍ Ꝏ ꝏ</span>
-<span class="doccomment">/// Ꝑ ꝑ Ꝓ ꝓ Ꝕ ꝕ Ꝗ ꝗ Ꝙ ꝙ Ꝛ ꝛ Ꝝ ꝝ Ꝟ ꝟ</span>
-<span class="doccomment">/// Ꝡ ꝡ Ꝣ ꝣ Ꝥ ꝥ Ꝧ ꝧ Ꝩ ꝩ Ꝫ ꝫ Ꝭ ꝭ Ꝯ ꝯ</span>
-<span class="doccomment">/// ꝰ ꝱ ꝲ ꝳ ꝴ ꝵ ꝶ ꝷ ꝸ Ꝺ ꝺ Ꝼ ꝼ Ᵹ Ꝿ ꝿ</span>
-<span class="doccomment">/// Ꞁ ꞁ Ꞃ ꞃ Ꞅ ꞅ Ꞇ ꞇ ꞈ ꞉ ꞊ Ꞌ ꞌ Ɥ ꞎ ꞏ</span>
-<span class="doccomment">/// Ꞑ ꞑ Ꞓ ꞓ ꞔ ꞕ Ꞗ ꞗ Ꞙ ꞙ Ꞛ ꞛ Ꞝ ꞝ Ꞟ ꞟ</span>
-<span class="doccomment">/// Ꞡ ꞡ Ꞣ ꞣ Ꞥ ꞥ Ꞧ ꞧ Ꞩ ꞩ Ɦ Ɜ Ɡ Ɬ Ɪ ꞯ</span>
-<span class="doccomment">/// Ʞ Ʇ Ʝ Ꭓ Ꞵ ꞵ Ꞷ ꞷ Ꞹ ꞹ Ꞻ ꞻ Ꞽ ꞽ Ꞿ ꞿ</span>
-<span class="doccomment">/// Ꟃ ꟃ Ꞔ Ʂ Ᶎ ꟷ ꟸ ꟹ ꟺ ꟻ ꟼ ꟽ ꟾ</span>
+<span class="doccomment">/// An enum to represent all characters in the LatinExtendedD block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">LatinExtendedD</span> {
     <span class="doccomment">/// \u{a720}: &#39;꜠&#39;</span>

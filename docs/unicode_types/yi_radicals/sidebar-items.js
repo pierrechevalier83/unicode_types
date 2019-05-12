@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["YiRadicals","\\u{a490} → \\u{a4cf}\\ \\  ꒐ ꒑ ꒒ ꒓ ꒔ ꒕ ꒖ ꒗ ꒘ ꒙ ꒚ ꒛ ꒜ ꒝ ꒞ ꒟  ꒠ ꒡ ꒢ ꒣ ꒤ ꒥ ꒦ ꒧ ꒨ ꒩ ꒪ ꒫ ꒬ ꒭ ꒮ ꒯  ꒰ ꒱ ꒲ ꒳ ꒴ ꒵ ꒶ ꒷ ꒸ ꒹ ꒺ ꒻ ꒼ ꒽ ꒾ ꒿  ꓀ ꓁ ꓂ ꓃ ꓄ ꓅ ꓆"]],"mod":[["constants","\\u{a490} → \\u{a4cf}\\ \\  ꒐ ꒑ ꒒ ꒓ ꒔ ꒕ ꒖ ꒗ ꒘ ꒙ ꒚ ꒛ ꒜ ꒝ ꒞ ꒟  ꒠ ꒡ ꒢ ꒣ ꒤ ꒥ ꒦ ꒧ ꒨ ꒩ ꒪ ꒫ ꒬ ꒭ ꒮ ꒯  ꒰ ꒱ ꒲ ꒳ ꒴ ꒵ ꒶ ꒷ ꒸ ꒹ ꒺ ꒻ ꒼ ꒽ ꒾ ꒿  ꓀ ꓁ ꓂ ꓃ ꓄ ꓅ ꓆"]]});
+initSidebarItems({"enum":[["YiRadicals","An enum to represent all characters in the YiRadicals block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

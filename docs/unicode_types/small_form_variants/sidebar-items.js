@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["SmallFormVariants","\\u{fe50} → \\u{fe6f}\\ \\  ﹐ ﹑ ﹒ ﹔ ﹕ ﹖ ﹗ ﹘ ﹙ ﹚ ﹛ ﹜ ﹝ ﹞ ﹟ ﹠  ﹡ ﹢ ﹣ ﹤ ﹥ ﹦ ﹨ ﹩ ﹪ ﹫"]],"mod":[["constants","\\u{fe50} → \\u{fe6f}\\ \\  ﹐ ﹑ ﹒ ﹔ ﹕ ﹖ ﹗ ﹘ ﹙ ﹚ ﹛ ﹜ ﹝ ﹞ ﹟ ﹠  ﹡ ﹢ ﹣ ﹤ ﹥ ﹦ ﹨ ﹩ ﹪ ﹫"]]});
+initSidebarItems({"enum":[["SmallFormVariants","An enum to represent all characters in the SmallFormVariants block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

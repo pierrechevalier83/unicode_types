@@ -251,17 +251,8 @@
 <span id="251">251</span>
 <span id="252">252</span>
 <span id="253">253</span>
-<span id="254">254</span>
-<span id="255">255</span>
-<span id="256">256</span>
-<span id="257">257</span>
-<span id="258">258</span>
-<span id="259">259</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{fe50} → \u{fe6f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ﹐ ﹑ ﹒ ﹔ ﹕ ﹖ ﹗ ﹘ ﹙ ﹚ ﹛ ﹜ ﹝ ﹞ ﹟ ﹠</span>
-<span class="doccomment">/// ﹡ ﹢ ﹣ ﹤ ﹥ ﹦ ﹨ ﹩ ﹪ ﹫</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{fe50}: &#39;﹐&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SMALL_COMMA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;﹐&#39;</span>;
@@ -317,10 +308,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SMALL_COMMERCIAL_AT</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;﹫&#39;</span>;
 }
 
-<span class="doccomment">/// \u{fe50} → \u{fe6f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ﹐ ﹑ ﹒ ﹔ ﹕ ﹖ ﹗ ﹘ ﹙ ﹚ ﹛ ﹜ ﹝ ﹞ ﹟ ﹠</span>
-<span class="doccomment">/// ﹡ ﹢ ﹣ ﹤ ﹥ ﹦ ﹨ ﹩ ﹪ ﹫</span>
+<span class="doccomment">/// An enum to represent all characters in the SmallFormVariants block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">SmallFormVariants</span> {
     <span class="doccomment">/// \u{fe50}: &#39;﹐&#39;</span>

@@ -678,29 +678,8 @@
 <span id="678">678</span>
 <span id="679">679</span>
 <span id="680">680</span>
-<span id="681">681</span>
-<span id="682">682</span>
-<span id="683">683</span>
-<span id="684">684</span>
-<span id="685">685</span>
-<span id="686">686</span>
-<span id="687">687</span>
-<span id="688">688</span>
-<span id="689">689</span>
-<span id="690">690</span>
-<span id="691">691</span>
-<span id="692">692</span>
-<span id="693">693</span>
-<span id="694">694</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1d300} → \u{1d35f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𝌀 𝌁 𝌂 𝌃 𝌄 𝌅 𝌆 𝌇 𝌈 𝌉 𝌊 𝌋 𝌌 𝌍 𝌎 𝌏</span>
-<span class="doccomment">/// 𝌐 𝌑 𝌒 𝌓 𝌔 𝌕 𝌖 𝌗 𝌘 𝌙 𝌚 𝌛 𝌜 𝌝 𝌞 𝌟</span>
-<span class="doccomment">/// 𝌠 𝌡 𝌢 𝌣 𝌤 𝌥 𝌦 𝌧 𝌨 𝌩 𝌪 𝌫 𝌬 𝌭 𝌮 𝌯</span>
-<span class="doccomment">/// 𝌰 𝌱 𝌲 𝌳 𝌴 𝌵 𝌶 𝌷 𝌸 𝌹 𝌺 𝌻 𝌼 𝌽 𝌾 𝌿</span>
-<span class="doccomment">/// 𝍀 𝍁 𝍂 𝍃 𝍄 𝍅 𝍆 𝍇 𝍈 𝍉 𝍊 𝍋 𝍌 𝍍 𝍎 𝍏</span>
-<span class="doccomment">/// 𝍐 𝍑 𝍒 𝍓 𝍔 𝍕 𝍖</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1d300}: &#39;𝌀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">MONOGRAM_FOR_EARTH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𝌀&#39;</span>;
@@ -878,14 +857,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">TETRAGRAM_FOR_FOSTERING</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𝍖&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1d300} → \u{1d35f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𝌀 𝌁 𝌂 𝌃 𝌄 𝌅 𝌆 𝌇 𝌈 𝌉 𝌊 𝌋 𝌌 𝌍 𝌎 𝌏</span>
-<span class="doccomment">/// 𝌐 𝌑 𝌒 𝌓 𝌔 𝌕 𝌖 𝌗 𝌘 𝌙 𝌚 𝌛 𝌜 𝌝 𝌞 𝌟</span>
-<span class="doccomment">/// 𝌠 𝌡 𝌢 𝌣 𝌤 𝌥 𝌦 𝌧 𝌨 𝌩 𝌪 𝌫 𝌬 𝌭 𝌮 𝌯</span>
-<span class="doccomment">/// 𝌰 𝌱 𝌲 𝌳 𝌴 𝌵 𝌶 𝌷 𝌸 𝌹 𝌺 𝌻 𝌼 𝌽 𝌾 𝌿</span>
-<span class="doccomment">/// 𝍀 𝍁 𝍂 𝍃 𝍄 𝍅 𝍆 𝍇 𝍈 𝍉 𝍊 𝍋 𝍌 𝍍 𝍎 𝍏</span>
-<span class="doccomment">/// 𝍐 𝍑 𝍒 𝍓 𝍔 𝍕 𝍖</span>
+<span class="doccomment">/// An enum to represent all characters in the TaiXuanJingSymbols block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">TaiXuanJingSymbols</span> {
     <span class="doccomment">/// \u{1d300}: &#39;𝌀&#39;</span>

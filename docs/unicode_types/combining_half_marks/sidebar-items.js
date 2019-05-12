@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CombiningHalfMarks","\\u{fe20} → \\u{fe2f}\\ \\  ︠ ︡ ︢ ︣ ︤ ︥ ︦ ︧ ︨ ︩ ︪ ︫ ︬ ︭ ︮"]],"mod":[["constants","\\u{fe20} → \\u{fe2f}\\ \\  ︠ ︡ ︢ ︣ ︤ ︥ ︦ ︧ ︨ ︩ ︪ ︫ ︬ ︭ ︮"]]});
+initSidebarItems({"enum":[["CombiningHalfMarks","An enum to represent all characters in the CombiningHalfMarks block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

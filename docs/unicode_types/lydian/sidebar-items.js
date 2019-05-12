@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Lydian","\\u{10920} → \\u{1093f}\\ \\  𐤠 𐤡 𐤢 𐤣 𐤤 𐤥 𐤦 𐤧 𐤨 𐤩 𐤪 𐤫 𐤬 𐤭 𐤮 𐤯  𐤰 𐤱 𐤲 𐤳 𐤴 𐤵 𐤶 𐤷 𐤸 𐤹"]],"mod":[["constants","\\u{10920} → \\u{1093f}\\ \\  𐤠 𐤡 𐤢 𐤣 𐤤 𐤥 𐤦 𐤧 𐤨 𐤩 𐤪 𐤫 𐤬 𐤭 𐤮 𐤯  𐤰 𐤱 𐤲 𐤳 𐤴 𐤵 𐤶 𐤷 𐤸 𐤹"]]});
+initSidebarItems({"enum":[["Lydian","An enum to represent all characters in the Lydian block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

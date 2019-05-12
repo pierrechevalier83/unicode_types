@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Batak","\\u{1bc0} → \\u{1bff}\\ \\  ᯀ ᯁ ᯂ ᯃ ᯄ ᯅ ᯆ ᯇ ᯈ ᯉ ᯊ ᯋ ᯌ ᯍ ᯎ ᯏ  ᯐ ᯑ ᯒ ᯓ ᯔ ᯕ ᯖ ᯗ ᯘ ᯙ ᯚ ᯛ ᯜ ᯝ ᯞ ᯟ  ᯠ ᯡ ᯢ ᯣ ᯤ ᯥ ᯦ ᯧ ᯨ ᯩ ᯪ ᯫ ᯬ ᯭ ᯮ ᯯ  ᯰ ᯱ ᯲ ᯳ ᯼ ᯽ ᯾"]],"mod":[["constants","\\u{1bc0} → \\u{1bff}\\ \\  ᯀ ᯁ ᯂ ᯃ ᯄ ᯅ ᯆ ᯇ ᯈ ᯉ ᯊ ᯋ ᯌ ᯍ ᯎ ᯏ  ᯐ ᯑ ᯒ ᯓ ᯔ ᯕ ᯖ ᯗ ᯘ ᯙ ᯚ ᯛ ᯜ ᯝ ᯞ ᯟ  ᯠ ᯡ ᯢ ᯣ ᯤ ᯥ ᯦ ᯧ ᯨ ᯩ ᯪ ᯫ ᯬ ᯭ ᯮ ᯯ  ᯰ ᯱ ᯲ ᯳ ᯼ ᯽ ᯾"]]});
+initSidebarItems({"enum":[["Batak","An enum to represent all characters in the Batak block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

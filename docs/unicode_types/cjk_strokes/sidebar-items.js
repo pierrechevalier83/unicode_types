@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CJKStrokes","\\u{31c0} → \\u{31ef}\\ \\  ㇀ ㇁ ㇂ ㇃ ㇄ ㇅ ㇆ ㇇ ㇈ ㇉ ㇊ ㇋ ㇌ ㇍ ㇎ ㇏  ㇐ ㇑ ㇒ ㇓ ㇔ ㇕ ㇖ ㇗ ㇘ ㇙ ㇚ ㇛ ㇜ ㇝ ㇞ ㇟  ㇠ ㇡ ㇢ ㇣"]],"mod":[["constants","\\u{31c0} → \\u{31ef}\\ \\  ㇀ ㇁ ㇂ ㇃ ㇄ ㇅ ㇆ ㇇ ㇈ ㇉ ㇊ ㇋ ㇌ ㇍ ㇎ ㇏  ㇐ ㇑ ㇒ ㇓ ㇔ ㇕ ㇖ ㇗ ㇘ ㇙ ㇚ ㇛ ㇜ ㇝ ㇞ ㇟  ㇠ ㇡ ㇢ ㇣"]]});
+initSidebarItems({"enum":[["CJKStrokes","An enum to represent all characters in the CJKStrokes block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

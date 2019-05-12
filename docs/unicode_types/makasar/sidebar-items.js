@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Makasar","\\u{11ee0} → \\u{11eff}\\ \\  𑻠 𑻡 𑻢 𑻣 𑻤 𑻥 𑻦 𑻧 𑻨 𑻩 𑻪 𑻫 𑻬 𑻭 𑻮 𑻯  𑻰 𑻱 𑻲 𑻳 𑻴 𑻵 𑻶 𑻷 𑻸"]],"mod":[["constants","\\u{11ee0} → \\u{11eff}\\ \\  𑻠 𑻡 𑻢 𑻣 𑻤 𑻥 𑻦 𑻧 𑻨 𑻩 𑻪 𑻫 𑻬 𑻭 𑻮 𑻯  𑻰 𑻱 𑻲 𑻳 𑻴 𑻵 𑻶 𑻷 𑻸"]]});
+initSidebarItems({"enum":[["Makasar","An enum to represent all characters in the Makasar block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["InscriptionalPahlavi","\\u{10b60} → \\u{10b7f}\\ \\  𐭠 𐭡 𐭢 𐭣 𐭤 𐭥 𐭦 𐭧 𐭨 𐭩 𐭪 𐭫 𐭬 𐭭 𐭮 𐭯  𐭰 𐭱 𐭲 𐭸 𐭹 𐭺 𐭻 𐭼 𐭽 𐭾"]],"mod":[["constants","\\u{10b60} → \\u{10b7f}\\ \\  𐭠 𐭡 𐭢 𐭣 𐭤 𐭥 𐭦 𐭧 𐭨 𐭩 𐭪 𐭫 𐭬 𐭭 𐭮 𐭯  𐭰 𐭱 𐭲 𐭸 𐭹 𐭺 𐭻 𐭼 𐭽 𐭾"]]});
+initSidebarItems({"enum":[["InscriptionalPahlavi","An enum to represent all characters in the InscriptionalPahlavi block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

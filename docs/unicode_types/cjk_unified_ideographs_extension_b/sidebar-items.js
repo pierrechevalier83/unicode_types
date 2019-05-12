@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["CJKUnifiedIdeographsExtensionB","\\u{20000} → \\u{2a6df}\\ \\  𠀀 𪛖"]],"mod":[["constants","\\u{20000} → \\u{2a6df}\\ \\  𠀀 𪛖"]]});
+initSidebarItems({"enum":[["CJKUnifiedIdeographsExtensionB","An enum to represent all characters in the CJKUnifiedIdeographsExtensionB block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

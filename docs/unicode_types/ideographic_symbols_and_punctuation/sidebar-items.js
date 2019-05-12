@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["IdeographicSymbolsandPunctuation","\\u{16fe0} → \\u{16fff}\\ \\  𖿠 𖿡 𖿢 𖿣"]],"mod":[["constants","\\u{16fe0} → \\u{16fff}\\ \\  𖿠 𖿡 𖿢 𖿣"]]});
+initSidebarItems({"enum":[["IdeographicSymbolsandPunctuation","An enum to represent all characters in the IdeographicSymbolsandPunctuation block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

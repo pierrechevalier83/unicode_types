@@ -727,29 +727,8 @@
 <span id="727">727</span>
 <span id="728">728</span>
 <span id="729">729</span>
-<span id="730">730</span>
-<span id="731">731</span>
-<span id="732">732</span>
-<span id="733">733</span>
-<span id="734">734</span>
-<span id="735">735</span>
-<span id="736">736</span>
-<span id="737">737</span>
-<span id="738">738</span>
-<span id="739">739</span>
-<span id="740">740</span>
-<span id="741">741</span>
-<span id="742">742</span>
-<span id="743">743</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{3130} → \u{318f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ㄱ ㄲ ㄳ ㄴ ㄵ ㄶ ㄷ ㄸ ㄹ ㄺ ㄻ ㄼ ㄽ ㄾ ㄿ ㅀ</span>
-<span class="doccomment">/// ㅁ ㅂ ㅃ ㅄ ㅅ ㅆ ㅇ ㅈ ㅉ ㅊ ㅋ ㅌ ㅍ ㅎ ㅏ ㅐ</span>
-<span class="doccomment">/// ㅑ ㅒ ㅓ ㅔ ㅕ ㅖ ㅗ ㅘ ㅙ ㅚ ㅛ ㅜ ㅝ ㅞ ㅟ ㅠ</span>
-<span class="doccomment">/// ㅡ ㅢ ㅣ ㅤ ㅥ ㅦ ㅧ ㅨ ㅩ ㅪ ㅫ ㅬ ㅭ ㅮ ㅯ ㅰ</span>
-<span class="doccomment">/// ㅱ ㅲ ㅳ ㅴ ㅵ ㅶ ㅷ ㅸ ㅹ ㅺ ㅻ ㅼ ㅽ ㅾ ㅿ ㆀ</span>
-<span class="doccomment">/// ㆁ ㆂ ㆃ ㆄ ㆅ ㆆ ㆇ ㆈ ㆉ ㆊ ㆋ ㆌ ㆍ ㆎ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{3131}: &#39;ㄱ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HANGUL_LETTER_KIYEOK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ㄱ&#39;</span>;
@@ -941,14 +920,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">HANGUL_LETTER_ARAEAE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ㆎ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{3130} → \u{318f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ㄱ ㄲ ㄳ ㄴ ㄵ ㄶ ㄷ ㄸ ㄹ ㄺ ㄻ ㄼ ㄽ ㄾ ㄿ ㅀ</span>
-<span class="doccomment">/// ㅁ ㅂ ㅃ ㅄ ㅅ ㅆ ㅇ ㅈ ㅉ ㅊ ㅋ ㅌ ㅍ ㅎ ㅏ ㅐ</span>
-<span class="doccomment">/// ㅑ ㅒ ㅓ ㅔ ㅕ ㅖ ㅗ ㅘ ㅙ ㅚ ㅛ ㅜ ㅝ ㅞ ㅟ ㅠ</span>
-<span class="doccomment">/// ㅡ ㅢ ㅣ ㅤ ㅥ ㅦ ㅧ ㅨ ㅩ ㅪ ㅫ ㅬ ㅭ ㅮ ㅯ ㅰ</span>
-<span class="doccomment">/// ㅱ ㅲ ㅳ ㅴ ㅵ ㅶ ㅷ ㅸ ㅹ ㅺ ㅻ ㅼ ㅽ ㅾ ㅿ ㆀ</span>
-<span class="doccomment">/// ㆁ ㆂ ㆃ ㆄ ㆅ ㆆ ㆇ ㆈ ㆉ ㆊ ㆋ ㆌ ㆍ ㆎ</span>
+<span class="doccomment">/// An enum to represent all characters in the HangulCompatibilityJamo block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">HangulCompatibilityJamo</span> {
     <span class="doccomment">/// \u{3131}: &#39;ㄱ&#39;</span>

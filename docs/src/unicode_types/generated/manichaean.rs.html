@@ -426,23 +426,8 @@
 <span id="426">426</span>
 <span id="427">427</span>
 <span id="428">428</span>
-<span id="429">429</span>
-<span id="430">430</span>
-<span id="431">431</span>
-<span id="432">432</span>
-<span id="433">433</span>
-<span id="434">434</span>
-<span id="435">435</span>
-<span id="436">436</span>
-<span id="437">437</span>
-<span id="438">438</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10ac0} → \u{10aff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐫀 𐫁 𐫂 𐫃 𐫄 𐫅 𐫆 𐫇 𐫈 𐫉 𐫊 𐫋 𐫌 𐫍 𐫎 𐫏</span>
-<span class="doccomment">/// 𐫐 𐫑 𐫒 𐫓 𐫔 𐫕 𐫖 𐫗 𐫘 𐫙 𐫚 𐫛 𐫜 𐫝 𐫞 𐫟</span>
-<span class="doccomment">/// 𐫠 𐫡 𐫢 𐫣 𐫤 𐫥 𐫦 𐫫 𐫬 𐫭 𐫮 𐫯 𐫰 𐫱 𐫲 𐫳</span>
-<span class="doccomment">/// 𐫴 𐫵 𐫶</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10ac0}: &#39;𐫀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_ALEPH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐫀&#39;</span>;
@@ -548,12 +533,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PUNCTUATION_LINE_FILLER</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐫶&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10ac0} → \u{10aff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐫀 𐫁 𐫂 𐫃 𐫄 𐫅 𐫆 𐫇 𐫈 𐫉 𐫊 𐫋 𐫌 𐫍 𐫎 𐫏</span>
-<span class="doccomment">/// 𐫐 𐫑 𐫒 𐫓 𐫔 𐫕 𐫖 𐫗 𐫘 𐫙 𐫚 𐫛 𐫜 𐫝 𐫞 𐫟</span>
-<span class="doccomment">/// 𐫠 𐫡 𐫢 𐫣 𐫤 𐫥 𐫦 𐫫 𐫬 𐫭 𐫮 𐫯 𐫰 𐫱 𐫲 𐫳</span>
-<span class="doccomment">/// 𐫴 𐫵 𐫶</span>
+<span class="doccomment">/// An enum to represent all characters in the Manichaean block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Manichaean</span> {
     <span class="doccomment">/// \u{10ac0}: &#39;𐫀&#39;</span>

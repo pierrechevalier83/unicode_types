@@ -370,20 +370,8 @@
 <span id="370">370</span>
 <span id="371">371</span>
 <span id="372">372</span>
-<span id="373">373</span>
-<span id="374">374</span>
-<span id="375">375</span>
-<span id="376">376</span>
-<span id="377">377</span>
-<span id="378">378</span>
-<span id="379">379</span>
-<span id="380">380</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10350} → \u{1037f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐍐 𐍑 𐍒 𐍓 𐍔 𐍕 𐍖 𐍗 𐍘 𐍙 𐍚 𐍛 𐍜 𐍝 𐍞 𐍟</span>
-<span class="doccomment">/// 𐍠 𐍡 𐍢 𐍣 𐍤 𐍥 𐍦 𐍧 𐍨 𐍩 𐍪 𐍫 𐍬 𐍭 𐍮 𐍯</span>
-<span class="doccomment">/// 𐍰 𐍱 𐍲 𐍳 𐍴 𐍵 𐍶 𐍷 𐍸 𐍹 𐍺</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10350}: &#39;𐍐&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_AN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐍐&#39;</span>;
@@ -473,11 +461,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">COMBINING_LETTER_SII</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐍺&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10350} → \u{1037f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐍐 𐍑 𐍒 𐍓 𐍔 𐍕 𐍖 𐍗 𐍘 𐍙 𐍚 𐍛 𐍜 𐍝 𐍞 𐍟</span>
-<span class="doccomment">/// 𐍠 𐍡 𐍢 𐍣 𐍤 𐍥 𐍦 𐍧 𐍨 𐍩 𐍪 𐍫 𐍬 𐍭 𐍮 𐍯</span>
-<span class="doccomment">/// 𐍰 𐍱 𐍲 𐍳 𐍴 𐍵 𐍶 𐍷 𐍸 𐍹 𐍺</span>
+<span class="doccomment">/// An enum to represent all characters in the OldPermic block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">OldPermic</span> {
     <span class="doccomment">/// \u{10350}: &#39;𐍐&#39;</span>

@@ -363,20 +363,8 @@
 <span id="363">363</span>
 <span id="364">364</span>
 <span id="365">365</span>
-<span id="366">366</span>
-<span id="367">367</span>
-<span id="368">368</span>
-<span id="369">369</span>
-<span id="370">370</span>
-<span id="371">371</span>
-<span id="372">372</span>
-<span id="373">373</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{10f30} → \u{10f6f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐼰 𐼱 𐼲 𐼳 𐼴 𐼵 𐼶 𐼷 𐼸 𐼹 𐼺 𐼻 𐼼 𐼽 𐼾 𐼿</span>
-<span class="doccomment">/// 𐽀 𐽁 𐽂 𐽃 𐽄 𐽅 𐽆 𐽇 𐽈 𐽉 𐽊 𐽋 𐽌 𐽍 𐽎 𐽏</span>
-<span class="doccomment">/// 𐽐 𐽑 𐽒 𐽓 𐽔 𐽕 𐽖 𐽗 𐽘 𐽙</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{10f30}: &#39;𐼰&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_ALEPH</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐼰&#39;</span>;
@@ -464,11 +452,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">PUNCTUATION_HALF_CIRCLE_WITH_DOT</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐽙&#39;</span>;
 }
 
-<span class="doccomment">/// \u{10f30} → \u{10f6f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐼰 𐼱 𐼲 𐼳 𐼴 𐼵 𐼶 𐼷 𐼸 𐼹 𐼺 𐼻 𐼼 𐼽 𐼾 𐼿</span>
-<span class="doccomment">/// 𐽀 𐽁 𐽂 𐽃 𐽄 𐽅 𐽆 𐽇 𐽈 𐽉 𐽊 𐽋 𐽌 𐽍 𐽎 𐽏</span>
-<span class="doccomment">/// 𐽐 𐽑 𐽒 𐽓 𐽔 𐽕 𐽖 𐽗 𐽘 𐽙</span>
+<span class="doccomment">/// An enum to represent all characters in the Sogdian block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Sogdian</span> {
     <span class="doccomment">/// \u{10f30}: &#39;𐼰&#39;</span>

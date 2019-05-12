@@ -209,17 +209,8 @@
 <span id="209">209</span>
 <span id="210">210</span>
 <span id="211">211</span>
-<span id="212">212</span>
-<span id="213">213</span>
-<span id="214">214</span>
-<span id="215">215</span>
-<span id="216">216</span>
-<span id="217">217</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1700} → \u{171f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᜀ ᜁ ᜂ ᜃ ᜄ ᜅ ᜆ ᜇ ᜈ ᜉ ᜊ ᜋ ᜌ ᜎ ᜏ ᜐ</span>
-<span class="doccomment">/// ᜑ ᜒ ᜓ ᜔</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1700}: &#39;ᜀ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_A</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᜀ&#39;</span>;
@@ -263,10 +254,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_VIRAMA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;᜔&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1700} → \u{171f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᜀ ᜁ ᜂ ᜃ ᜄ ᜅ ᜆ ᜇ ᜈ ᜉ ᜊ ᜋ ᜌ ᜎ ᜏ ᜐ</span>
-<span class="doccomment">/// ᜑ ᜒ ᜓ ᜔</span>
+<span class="doccomment">/// An enum to represent all characters in the Tagalog block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Tagalog</span> {
     <span class="doccomment">/// \u{1700}: &#39;ᜀ&#39;</span>

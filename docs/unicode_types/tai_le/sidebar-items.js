@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["TaiLe","\\u{1950} → \\u{197f}\\ \\  ᥐ ᥑ ᥒ ᥓ ᥔ ᥕ ᥖ ᥗ ᥘ ᥙ ᥚ ᥛ ᥜ ᥝ ᥞ ᥟ  ᥠ ᥡ ᥢ ᥣ ᥤ ᥥ ᥦ ᥧ ᥨ ᥩ ᥪ ᥫ ᥬ ᥭ ᥰ ᥱ  ᥲ ᥳ ᥴ"]],"mod":[["constants","\\u{1950} → \\u{197f}\\ \\  ᥐ ᥑ ᥒ ᥓ ᥔ ᥕ ᥖ ᥗ ᥘ ᥙ ᥚ ᥛ ᥜ ᥝ ᥞ ᥟ  ᥠ ᥡ ᥢ ᥣ ᥤ ᥥ ᥦ ᥧ ᥨ ᥩ ᥪ ᥫ ᥬ ᥭ ᥰ ᥱ  ᥲ ᥳ ᥴ"]]});
+initSidebarItems({"enum":[["TaiLe","An enum to represent all characters in the TaiLe block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

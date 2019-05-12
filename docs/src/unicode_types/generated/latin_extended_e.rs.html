@@ -461,23 +461,8 @@
 <span id="461">461</span>
 <span id="462">462</span>
 <span id="463">463</span>
-<span id="464">464</span>
-<span id="465">465</span>
-<span id="466">466</span>
-<span id="467">467</span>
-<span id="468">468</span>
-<span id="469">469</span>
-<span id="470">470</span>
-<span id="471">471</span>
-<span id="472">472</span>
-<span id="473">473</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{ab30} → \u{ab6f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꬰ ꬱ ꬲ ꬳ ꬴ ꬵ ꬶ ꬷ ꬸ ꬹ ꬺ ꬻ ꬼ ꬽ ꬾ ꬿ</span>
-<span class="doccomment">/// ꭀ ꭁ ꭂ ꭃ ꭄ ꭅ ꭆ ꭇ ꭈ ꭉ ꭊ ꭋ ꭌ ꭍ ꭎ ꭏ</span>
-<span class="doccomment">/// ꭐ ꭑ ꭒ ꭓ ꭔ ꭕ ꭖ ꭗ ꭘ ꭙ ꭚ ꭛ ꭜ ꭝ ꭞ ꭟ</span>
-<span class="doccomment">/// ꭠ ꭡ ꭢ ꭣ ꭤ ꭥ ꭦ ꭧ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{ab30}: &#39;ꬰ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LATIN_SMALL_LETTER_BARRED_ALPHA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ꬰ&#39;</span>;
@@ -593,12 +578,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LATIN_SMALL_LETTER_TS_DIGRAPH_WITH_RETROFLEX_HOOK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ꭧ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{ab30} → \u{ab6f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ꬰ ꬱ ꬲ ꬳ ꬴ ꬵ ꬶ ꬷ ꬸ ꬹ ꬺ ꬻ ꬼ ꬽ ꬾ ꬿ</span>
-<span class="doccomment">/// ꭀ ꭁ ꭂ ꭃ ꭄ ꭅ ꭆ ꭇ ꭈ ꭉ ꭊ ꭋ ꭌ ꭍ ꭎ ꭏ</span>
-<span class="doccomment">/// ꭐ ꭑ ꭒ ꭓ ꭔ ꭕ ꭖ ꭗ ꭘ ꭙ ꭚ ꭛ ꭜ ꭝ ꭞ ꭟ</span>
-<span class="doccomment">/// ꭠ ꭡ ꭢ ꭣ ꭤ ꭥ ꭦ ꭧ</span>
+<span class="doccomment">/// An enum to represent all characters in the LatinExtendedE block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">LatinExtendedE</span> {
     <span class="doccomment">/// \u{ab30}: &#39;ꬰ&#39;</span>

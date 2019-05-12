@@ -398,20 +398,8 @@
 <span id="398">398</span>
 <span id="399">399</span>
 <span id="400">400</span>
-<span id="401">401</span>
-<span id="402">402</span>
-<span id="403">403</span>
-<span id="404">404</span>
-<span id="405">405</span>
-<span id="406">406</span>
-<span id="407">407</span>
-<span id="408">408</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{500} → \u{52f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ԁ ԁ Ԃ ԃ Ԅ ԅ Ԇ ԇ Ԉ ԉ Ԋ ԋ Ԍ ԍ Ԏ ԏ</span>
-<span class="doccomment">/// Ԑ ԑ Ԓ ԓ Ԕ ԕ Ԗ ԗ Ԙ ԙ Ԛ ԛ Ԝ ԝ Ԟ ԟ</span>
-<span class="doccomment">/// Ԡ ԡ Ԣ ԣ Ԥ ԥ Ԧ ԧ Ԩ ԩ Ԫ ԫ Ԭ ԭ Ԯ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{500}: &#39;Ԁ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CYRILLIC_CAPITAL_LETTER_KOMI_DE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;Ԁ&#39;</span>;
@@ -509,11 +497,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CYRILLIC_CAPITAL_LETTER_EL_WITH_DESCENDER</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;Ԯ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{500} → \u{52f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ԁ ԁ Ԃ ԃ Ԅ ԅ Ԇ ԇ Ԉ ԉ Ԋ ԋ Ԍ ԍ Ԏ ԏ</span>
-<span class="doccomment">/// Ԑ ԑ Ԓ ԓ Ԕ ԕ Ԗ ԗ Ԙ ԙ Ԛ ԛ Ԝ ԝ Ԟ ԟ</span>
-<span class="doccomment">/// Ԡ ԡ Ԣ ԣ Ԥ ԥ Ԧ ԧ Ԩ ԩ Ԫ ԫ Ԭ ԭ Ԯ</span>
+<span class="doccomment">/// An enum to represent all characters in the CyrillicSupplement block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">CyrillicSupplement</span> {
     <span class="doccomment">/// \u{500}: &#39;Ԁ&#39;</span>

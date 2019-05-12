@@ -727,29 +727,8 @@
 <span id="727">727</span>
 <span id="728">728</span>
 <span id="729">729</span>
-<span id="730">730</span>
-<span id="731">731</span>
-<span id="732">732</span>
-<span id="733">733</span>
-<span id="734">734</span>
-<span id="735">735</span>
-<span id="736">736</span>
-<span id="737">737</span>
-<span id="738">738</span>
-<span id="739">739</span>
-<span id="740">740</span>
-<span id="741">741</span>
-<span id="742">742</span>
-<span id="743">743</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{2c00} → \u{2c5f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ⰰ Ⰱ Ⰲ Ⰳ Ⰴ Ⰵ Ⰶ Ⰷ Ⰸ Ⰹ Ⰺ Ⰻ Ⰼ Ⰽ Ⰾ Ⰿ</span>
-<span class="doccomment">/// Ⱀ Ⱁ Ⱂ Ⱃ Ⱄ Ⱅ Ⱆ Ⱇ Ⱈ Ⱉ Ⱊ Ⱋ Ⱌ Ⱍ Ⱎ Ⱏ</span>
-<span class="doccomment">/// Ⱐ Ⱑ Ⱒ Ⱓ Ⱔ Ⱕ Ⱖ Ⱗ Ⱘ Ⱙ Ⱚ Ⱛ Ⱜ Ⱝ Ⱞ ⰰ</span>
-<span class="doccomment">/// ⰱ ⰲ ⰳ ⰴ ⰵ ⰶ ⰷ ⰸ ⰹ ⰺ ⰻ ⰼ ⰽ ⰾ ⰿ ⱀ</span>
-<span class="doccomment">/// ⱁ ⱂ ⱃ ⱄ ⱅ ⱆ ⱇ ⱈ ⱉ ⱊ ⱋ ⱌ ⱍ ⱎ ⱏ ⱐ</span>
-<span class="doccomment">/// ⱑ ⱒ ⱓ ⱔ ⱕ ⱖ ⱗ ⱘ ⱙ ⱚ ⱛ ⱜ ⱝ ⱞ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{2c00}: &#39;Ⰰ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CAPITAL_LETTER_AZU</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;Ⰰ&#39;</span>;
@@ -941,14 +920,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SMALL_LETTER_LATINATE_MYSLITE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ⱞ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{2c00} → \u{2c5f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// Ⰰ Ⰱ Ⰲ Ⰳ Ⰴ Ⰵ Ⰶ Ⰷ Ⰸ Ⰹ Ⰺ Ⰻ Ⰼ Ⰽ Ⰾ Ⰿ</span>
-<span class="doccomment">/// Ⱀ Ⱁ Ⱂ Ⱃ Ⱄ Ⱅ Ⱆ Ⱇ Ⱈ Ⱉ Ⱊ Ⱋ Ⱌ Ⱍ Ⱎ Ⱏ</span>
-<span class="doccomment">/// Ⱐ Ⱑ Ⱒ Ⱓ Ⱔ Ⱕ Ⱖ Ⱗ Ⱘ Ⱙ Ⱚ Ⱛ Ⱜ Ⱝ Ⱞ ⰰ</span>
-<span class="doccomment">/// ⰱ ⰲ ⰳ ⰴ ⰵ ⰶ ⰷ ⰸ ⰹ ⰺ ⰻ ⰼ ⰽ ⰾ ⰿ ⱀ</span>
-<span class="doccomment">/// ⱁ ⱂ ⱃ ⱄ ⱅ ⱆ ⱇ ⱈ ⱉ ⱊ ⱋ ⱌ ⱍ ⱎ ⱏ ⱐ</span>
-<span class="doccomment">/// ⱑ ⱒ ⱓ ⱔ ⱕ ⱖ ⱗ ⱘ ⱙ ⱚ ⱛ ⱜ ⱝ ⱞ</span>
+<span class="doccomment">/// An enum to represent all characters in the Glagolitic block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Glagolitic</span> {
     <span class="doccomment">/// \u{2c00}: &#39;Ⰰ&#39;</span>

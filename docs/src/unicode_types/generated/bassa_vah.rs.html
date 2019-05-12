@@ -321,20 +321,8 @@
 <span id="321">321</span>
 <span id="322">322</span>
 <span id="323">323</span>
-<span id="324">324</span>
-<span id="325">325</span>
-<span id="326">326</span>
-<span id="327">327</span>
-<span id="328">328</span>
-<span id="329">329</span>
-<span id="330">330</span>
-<span id="331">331</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{16ad0} → \u{16aff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𖫐 𖫑 𖫒 𖫓 𖫔 𖫕 𖫖 𖫗 𖫘 𖫙 𖫚 𖫛 𖫜 𖫝 𖫞 𖫟</span>
-<span class="doccomment">/// 𖫠 𖫡 𖫢 𖫣 𖫤 𖫥 𖫦 𖫧 𖫨 𖫩 𖫪 𖫫 𖫬 𖫭 𖫰 𖫱</span>
-<span class="doccomment">/// 𖫲 𖫳 𖫴 𖫵</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{16ad0}: &#39;𖫐&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_ENNI</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𖫐&#39;</span>;
@@ -410,11 +398,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">FULL_STOP</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𖫵&#39;</span>;
 }
 
-<span class="doccomment">/// \u{16ad0} → \u{16aff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𖫐 𖫑 𖫒 𖫓 𖫔 𖫕 𖫖 𖫗 𖫘 𖫙 𖫚 𖫛 𖫜 𖫝 𖫞 𖫟</span>
-<span class="doccomment">/// 𖫠 𖫡 𖫢 𖫣 𖫤 𖫥 𖫦 𖫧 𖫨 𖫩 𖫪 𖫫 𖫬 𖫭 𖫰 𖫱</span>
-<span class="doccomment">/// 𖫲 𖫳 𖫴 𖫵</span>
+<span class="doccomment">/// An enum to represent all characters in the BassaVah block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">BassaVah</span> {
     <span class="doccomment">/// \u{16ad0}: &#39;𖫐&#39;</span>

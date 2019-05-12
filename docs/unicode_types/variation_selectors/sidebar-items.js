@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["VariationSelectors","\\u{fe00} → \\u{fe0f}\\ \\  ︀ ︁ ︂ ︃ ︄ ︅ ︆ ︇ ︈ ︉ ︊ ︋ ︌ ︍ ︎"]],"mod":[["constants","\\u{fe00} → \\u{fe0f}\\ \\  ︀ ︁ ︂ ︃ ︄ ︅ ︆ ︇ ︈ ︉ ︊ ︋ ︌ ︍ ︎"]]});
+initSidebarItems({"enum":[["VariationSelectors","An enum to represent all characters in the VariationSelectors block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});

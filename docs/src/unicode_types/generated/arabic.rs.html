@@ -1847,59 +1847,8 @@
 <span id="1847">1847</span>
 <span id="1848">1848</span>
 <span id="1849">1849</span>
-<span id="1850">1850</span>
-<span id="1851">1851</span>
-<span id="1852">1852</span>
-<span id="1853">1853</span>
-<span id="1854">1854</span>
-<span id="1855">1855</span>
-<span id="1856">1856</span>
-<span id="1857">1857</span>
-<span id="1858">1858</span>
-<span id="1859">1859</span>
-<span id="1860">1860</span>
-<span id="1861">1861</span>
-<span id="1862">1862</span>
-<span id="1863">1863</span>
-<span id="1864">1864</span>
-<span id="1865">1865</span>
-<span id="1866">1866</span>
-<span id="1867">1867</span>
-<span id="1868">1868</span>
-<span id="1869">1869</span>
-<span id="1870">1870</span>
-<span id="1871">1871</span>
-<span id="1872">1872</span>
-<span id="1873">1873</span>
-<span id="1874">1874</span>
-<span id="1875">1875</span>
-<span id="1876">1876</span>
-<span id="1877">1877</span>
-<span id="1878">1878</span>
-<span id="1879">1879</span>
-<span id="1880">1880</span>
-<span id="1881">1881</span>
-<span id="1882">1882</span>
-<span id="1883">1883</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{600} → \u{6ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ؀ ؁ ؂ ؃ ؄ ؅ ؆ ؇ ؈ ؉ ؊ ؋ ، ؍ ؎ ؏</span>
-<span class="doccomment">/// ؐ ؑ ؒ ؓ ؔ ؕ ؖ ؗ ؘ ؙ ؚ ؛ ؜ ؞ ؟ ؠ</span>
-<span class="doccomment">/// ء آ أ ؤ إ ئ ا ب ة ت ث ج ح خ د ذ</span>
-<span class="doccomment">/// ر ز س ش ص ض ط ظ ع غ ػ ؼ ؽ ؾ ؿ ـ</span>
-<span class="doccomment">/// ف ق ك ل م ن ه و ى ي ً ٌ ٍ َ ُ ِ</span>
-<span class="doccomment">/// ّ ْ ٓ ٔ ٕ ٖ ٗ ٘ ٙ ٚ ٛ ٜ ٝ ٞ ٟ ٠</span>
-<span class="doccomment">/// ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩ ٪ ٫ ٬ ٭ ٮ ٯ ٰ</span>
-<span class="doccomment">/// ٱ ٲ ٳ ٴ ٵ ٶ ٷ ٸ ٹ ٺ ٻ ټ ٽ پ ٿ ڀ</span>
-<span class="doccomment">/// ځ ڂ ڃ ڄ څ چ ڇ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ</span>
-<span class="doccomment">/// ڑ ڒ ړ ڔ ڕ ږ ڗ ژ ڙ ښ ڛ ڜ ڝ ڞ ڟ ڠ</span>
-<span class="doccomment">/// ڡ ڢ ڣ ڤ ڥ ڦ ڧ ڨ ک ڪ ګ ڬ ڭ ڮ گ ڰ</span>
-<span class="doccomment">/// ڱ ڲ ڳ ڴ ڵ ڶ ڷ ڸ ڹ ں ڻ ڼ ڽ ھ ڿ ۀ</span>
-<span class="doccomment">/// ہ ۂ ۃ ۄ ۅ ۆ ۇ ۈ ۉ ۊ ۋ ی ۍ ێ ۏ ې</span>
-<span class="doccomment">/// ۑ ے ۓ ۔ ە ۖ ۗ ۘ ۙ ۚ ۛ ۜ ۝ ۞ ۟ ۠</span>
-<span class="doccomment">/// ۡ ۢ ۣ ۤ ۥ ۦ ۧ ۨ ۩ ۪ ۫ ۬ ۭ ۮ ۯ ۰</span>
-<span class="doccomment">/// ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۺ ۻ ۼ ۽ ۾</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{600}: &#39;؀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">NUMBER_SIGN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;؀&#39;</span>;
@@ -2411,24 +2360,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_SINDHI_POSTPOSITION_MEN</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;۾&#39;</span>;
 }
 
-<span class="doccomment">/// \u{600} → \u{6ff}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ؀ ؁ ؂ ؃ ؄ ؅ ؆ ؇ ؈ ؉ ؊ ؋ ، ؍ ؎ ؏</span>
-<span class="doccomment">/// ؐ ؑ ؒ ؓ ؔ ؕ ؖ ؗ ؘ ؙ ؚ ؛ ؜ ؞ ؟ ؠ</span>
-<span class="doccomment">/// ء آ أ ؤ إ ئ ا ب ة ت ث ج ح خ د ذ</span>
-<span class="doccomment">/// ر ز س ش ص ض ط ظ ع غ ػ ؼ ؽ ؾ ؿ ـ</span>
-<span class="doccomment">/// ف ق ك ل م ن ه و ى ي ً ٌ ٍ َ ُ ِ</span>
-<span class="doccomment">/// ّ ْ ٓ ٔ ٕ ٖ ٗ ٘ ٙ ٚ ٛ ٜ ٝ ٞ ٟ ٠</span>
-<span class="doccomment">/// ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩ ٪ ٫ ٬ ٭ ٮ ٯ ٰ</span>
-<span class="doccomment">/// ٱ ٲ ٳ ٴ ٵ ٶ ٷ ٸ ٹ ٺ ٻ ټ ٽ پ ٿ ڀ</span>
-<span class="doccomment">/// ځ ڂ ڃ ڄ څ چ ڇ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ</span>
-<span class="doccomment">/// ڑ ڒ ړ ڔ ڕ ږ ڗ ژ ڙ ښ ڛ ڜ ڝ ڞ ڟ ڠ</span>
-<span class="doccomment">/// ڡ ڢ ڣ ڤ ڥ ڦ ڧ ڨ ک ڪ ګ ڬ ڭ ڮ گ ڰ</span>
-<span class="doccomment">/// ڱ ڲ ڳ ڴ ڵ ڶ ڷ ڸ ڹ ں ڻ ڼ ڽ ھ ڿ ۀ</span>
-<span class="doccomment">/// ہ ۂ ۃ ۄ ۅ ۆ ۇ ۈ ۉ ۊ ۋ ی ۍ ێ ۏ ې</span>
-<span class="doccomment">/// ۑ ے ۓ ۔ ە ۖ ۗ ۘ ۙ ۚ ۛ ۜ ۝ ۞ ۟ ۠</span>
-<span class="doccomment">/// ۡ ۢ ۣ ۤ ۥ ۦ ۧ ۨ ۩ ۪ ۫ ۬ ۭ ۮ ۯ ۰</span>
-<span class="doccomment">/// ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۺ ۻ ۼ ۽ ۾</span>
+<span class="doccomment">/// An enum to represent all characters in the Arabic block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Arabic</span> {
     <span class="doccomment">/// \u{600}: &#39;؀&#39;</span>

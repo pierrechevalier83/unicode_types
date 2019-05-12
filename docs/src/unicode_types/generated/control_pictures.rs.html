@@ -342,20 +342,8 @@
 <span id="342">342</span>
 <span id="343">343</span>
 <span id="344">344</span>
-<span id="345">345</span>
-<span id="346">346</span>
-<span id="347">347</span>
-<span id="348">348</span>
-<span id="349">349</span>
-<span id="350">350</span>
-<span id="351">351</span>
-<span id="352">352</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{2400} → \u{243f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏</span>
-<span class="doccomment">/// ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟</span>
-<span class="doccomment">/// ␠ ␡ ␢ ␣ ␤ ␥ ␦</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{2400}: &#39;␀&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SYMBOL_FOR_NULL</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;␀&#39;</span>;
@@ -437,11 +425,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SYMBOL_FOR_SUBSTITUTE_FORM_TWO</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;␦&#39;</span>;
 }
 
-<span class="doccomment">/// \u{2400} → \u{243f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏</span>
-<span class="doccomment">/// ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟</span>
-<span class="doccomment">/// ␠ ␡ ␢ ␣ ␤ ␥ ␦</span>
+<span class="doccomment">/// An enum to represent all characters in the ControlPictures block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">ControlPictures</span> {
     <span class="doccomment">/// \u{2400}: &#39;␀&#39;</span>

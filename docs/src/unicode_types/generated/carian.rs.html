@@ -412,23 +412,8 @@
 <span id="412">412</span>
 <span id="413">413</span>
 <span id="414">414</span>
-<span id="415">415</span>
-<span id="416">416</span>
-<span id="417">417</span>
-<span id="418">418</span>
-<span id="419">419</span>
-<span id="420">420</span>
-<span id="421">421</span>
-<span id="422">422</span>
-<span id="423">423</span>
-<span id="424">424</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{102a0} → \u{102df}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐊠 𐊡 𐊢 𐊣 𐊤 𐊥 𐊦 𐊧 𐊨 𐊩 𐊪 𐊫 𐊬 𐊭 𐊮 𐊯</span>
-<span class="doccomment">/// 𐊰 𐊱 𐊲 𐊳 𐊴 𐊵 𐊶 𐊷 𐊸 𐊹 𐊺 𐊻 𐊼 𐊽 𐊾 𐊿</span>
-<span class="doccomment">/// 𐋀 𐋁 𐋂 𐋃 𐋄 𐋅 𐋆 𐋇 𐋈 𐋉 𐋊 𐋋 𐋌 𐋍 𐋎 𐋏</span>
-<span class="doccomment">/// 𐋐</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{102a0}: &#39;𐊠&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_A</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐊠&#39;</span>;
@@ -530,12 +515,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_UUU3</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;𐋐&#39;</span>;
 }
 
-<span class="doccomment">/// \u{102a0} → \u{102df}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// 𐊠 𐊡 𐊢 𐊣 𐊤 𐊥 𐊦 𐊧 𐊨 𐊩 𐊪 𐊫 𐊬 𐊭 𐊮 𐊯</span>
-<span class="doccomment">/// 𐊰 𐊱 𐊲 𐊳 𐊴 𐊵 𐊶 𐊷 𐊸 𐊹 𐊺 𐊻 𐊼 𐊽 𐊾 𐊿</span>
-<span class="doccomment">/// 𐋀 𐋁 𐋂 𐋃 𐋄 𐋅 𐋆 𐋇 𐋈 𐋉 𐋊 𐋋 𐋌 𐋍 𐋎 𐋏</span>
-<span class="doccomment">/// 𐋐</span>
+<span class="doccomment">/// An enum to represent all characters in the Carian block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Carian</span> {
     <span class="doccomment">/// \u{102a0}: &#39;𐊠&#39;</span>

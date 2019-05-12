@@ -146,14 +146,8 @@
 <span id="146">146</span>
 <span id="147">147</span>
 <span id="148">148</span>
-<span id="149">149</span>
-<span id="150">150</span>
-<span id="151">151</span>
-<span id="152">152</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{860} → \u{86f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ࡠ ࡡ ࡢ ࡣ ࡤ ࡥ ࡦ ࡧ ࡨ ࡩ ࡪ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{860}: &#39;ࡠ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SYRIAC_LETTER_MALAYALAM_NGA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ࡠ&#39;</span>;
@@ -179,9 +173,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SYRIAC_LETTER_MALAYALAM_SSA</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ࡪ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{860} → \u{86f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ࡠ ࡡ ࡢ ࡣ ࡤ ࡥ ࡦ ࡧ ࡨ ࡩ ࡪ</span>
+<span class="doccomment">/// An enum to represent all characters in the SyriacSupplement block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">SyriacSupplement</span> {
     <span class="doccomment">/// \u{860}: &#39;ࡠ&#39;</span>

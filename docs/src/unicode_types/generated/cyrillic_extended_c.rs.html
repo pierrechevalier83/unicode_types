@@ -132,14 +132,8 @@
 <span id="132">132</span>
 <span id="133">133</span>
 <span id="134">134</span>
-<span id="135">135</span>
-<span id="136">136</span>
-<span id="137">137</span>
-<span id="138">138</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1c80} → \u{1c8f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᲀ ᲁ ᲂ ᲃ ᲄ ᲅ ᲆ ᲇ ᲈ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1c80}: &#39;ᲀ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CYRILLIC_SMALL_LETTER_ROUNDED_VE</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᲀ&#39;</span>;
@@ -161,9 +155,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">CYRILLIC_SMALL_LETTER_UNBLENDED_UK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᲈ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1c80} → \u{1c8f}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᲀ ᲁ ᲂ ᲃ ᲄ ᲅ ᲆ ᲇ ᲈ</span>
+<span class="doccomment">/// An enum to represent all characters in the CyrillicExtendedC block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">CyrillicExtendedC</span> {
     <span class="doccomment">/// \u{1c80}: &#39;ᲀ&#39;</span>

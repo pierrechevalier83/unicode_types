@@ -510,23 +510,8 @@
 <span id="510">510</span>
 <span id="511">511</span>
 <span id="512">512</span>
-<span id="513">513</span>
-<span id="514">514</span>
-<span id="515">515</span>
-<span id="516">516</span>
-<span id="517">517</span>
-<span id="518">518</span>
-<span id="519">519</span>
-<span id="520">520</span>
-<span id="521">521</span>
-<span id="522">522</span>
 </pre><div class="example-wrap"><pre class="rust ">
-<span class="doccomment">/// \u{1b80} → \u{1bbf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᮀ ᮁ ᮂ ᮃ ᮄ ᮅ ᮆ ᮇ ᮈ ᮉ ᮊ ᮋ ᮌ ᮍ ᮎ ᮏ</span>
-<span class="doccomment">/// ᮐ ᮑ ᮒ ᮓ ᮔ ᮕ ᮖ ᮗ ᮘ ᮙ ᮚ ᮛ ᮜ ᮝ ᮞ ᮟ</span>
-<span class="doccomment">/// ᮠ ᮡ ᮢ ᮣ ᮤ ᮥ ᮦ ᮧ ᮨ ᮩ ᮪ ᮫ ᮬ ᮭ ᮮ ᮯ</span>
-<span class="doccomment">/// ᮰ ᮱ ᮲ ᮳ ᮴ ᮵ ᮶ ᮷ ᮸ ᮹ ᮺ ᮻ ᮼ ᮽ ᮾ</span>
+<span class="doccomment">/// A number of constants to give a name to all characters in this block.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">constants</span> {
     <span class="doccomment">/// \u{1b80}: &#39;ᮀ&#39;</span>
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">SIGN_PANYECEK</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᮀ&#39;</span>;
@@ -656,12 +641,7 @@
     <span class="kw">pub</span> <span class="kw">const</span> <span class="ident">LETTER_FINAL_K</span>: <span class="ident">char</span> <span class="op">=</span> <span class="string">&#39;ᮾ&#39;</span>;
 }
 
-<span class="doccomment">/// \u{1b80} → \u{1bbf}\</span>
-<span class="doccomment">///\</span>
-<span class="doccomment">/// ᮀ ᮁ ᮂ ᮃ ᮄ ᮅ ᮆ ᮇ ᮈ ᮉ ᮊ ᮋ ᮌ ᮍ ᮎ ᮏ</span>
-<span class="doccomment">/// ᮐ ᮑ ᮒ ᮓ ᮔ ᮕ ᮖ ᮗ ᮘ ᮙ ᮚ ᮛ ᮜ ᮝ ᮞ ᮟ</span>
-<span class="doccomment">/// ᮠ ᮡ ᮢ ᮣ ᮤ ᮥ ᮦ ᮧ ᮨ ᮩ ᮪ ᮫ ᮬ ᮭ ᮮ ᮯ</span>
-<span class="doccomment">/// ᮰ ᮱ ᮲ ᮳ ᮴ ᮵ ᮶ ᮷ ᮸ ᮹ ᮺ ᮻ ᮼ ᮽ ᮾ</span>
+<span class="doccomment">/// An enum to represent all characters in the Sundanese block.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Hash</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">Sundanese</span> {
     <span class="doccomment">/// \u{1b80}: &#39;ᮀ&#39;</span>
