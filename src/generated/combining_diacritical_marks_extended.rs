@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1ab0}: '᪰'
     pub const COMBINING_DOUBLED_CIRCUMFLEX_ACCENT: char = '᪰';
     /// \u{1ab1}: '᪱'

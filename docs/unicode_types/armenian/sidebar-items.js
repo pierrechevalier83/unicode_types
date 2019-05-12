@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Armenian","An enum to represent all characters in the Armenian block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Armenian","An enum to represent all characters in the Armenian block."]]});

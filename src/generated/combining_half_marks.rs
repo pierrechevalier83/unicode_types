@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{fe20}: '︠'
     pub const COMBINING_LIGATURE_LEFT_HALF: char = '︠';
     /// \u{fe21}: '︡'

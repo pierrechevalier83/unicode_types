@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2600}: '☀'
     pub const BLACK_SUN_WITH_RAYS: char = '☀';
     /// \u{2601}: '☁'

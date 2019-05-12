@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["GreekandCoptic","An enum to represent all characters in the GreekandCoptic block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["GreekandCoptic","An enum to represent all characters in the GreekandCoptic block."]]});

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1900}: 'ᤀ'
     pub const VOWEL_DASH_CARRIER_LETTER: char = 'ᤀ';
     /// \u{1901}: 'ᤁ'

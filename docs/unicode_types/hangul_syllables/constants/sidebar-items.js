@@ -1,1 +1,0 @@
-initSidebarItems({"constant":[["HANGUL_SYLLABLE_FIRST","\\u{ac00}: '가'"],["HANGUL_SYLLABLE_LAST","\\u{d7a3}: '힣'"]]});

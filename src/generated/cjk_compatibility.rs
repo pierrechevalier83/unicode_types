@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{3300}: '㌀'
     pub const SQUARE_APAATO: char = '㌀';
     /// \u{3301}: '㌁'

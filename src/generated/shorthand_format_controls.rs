@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1bca0}: '𛲠'
     pub const SHORTHAND_FORMAT_LETTER_OVERLAP: char = '𛲠';
     /// \u{1bca1}: '𛲡'

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{591}: '֑'
     pub const ACCENT_ETNAHTA: char = '֑';
     /// \u{592}: '֒'

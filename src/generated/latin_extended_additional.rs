@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1e00}: 'Ḁ'
     pub const LATIN_CAPITAL_LETTER_A_WITH_RING_BELOW: char = 'Ḁ';
     /// \u{1e01}: 'ḁ'

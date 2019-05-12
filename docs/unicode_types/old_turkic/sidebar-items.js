@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["OldTurkic","An enum to represent all characters in the OldTurkic block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["OldTurkic","An enum to represent all characters in the OldTurkic block."]]});

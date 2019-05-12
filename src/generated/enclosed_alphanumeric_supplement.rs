@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1f100}: '🄀'
     pub const DIGIT_ZERO_FULL_STOP: char = '🄀';
     /// \u{1f101}: '🄁'

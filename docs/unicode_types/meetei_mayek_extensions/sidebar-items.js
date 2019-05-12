@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["MeeteiMayekExtensions","An enum to represent all characters in the MeeteiMayekExtensions block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["MeeteiMayekExtensions","An enum to represent all characters in the MeeteiMayekExtensions block."]]});

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{10100}: '𐄀'
     pub const AEGEAN_WORD_SEPARATOR_LINE: char = '𐄀';
     /// \u{10101}: '𐄁'

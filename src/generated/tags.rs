@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{e0001}: '󠀁'
     pub const LANGUAGE_TAG: char = '󠀁';
     /// \u{e0020}: '󠀠'

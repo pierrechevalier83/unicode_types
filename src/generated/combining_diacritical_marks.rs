@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{300}: '̀'
     pub const COMBINING_GRAVE_ACCENT: char = '̀';
     /// \u{301}: '́'

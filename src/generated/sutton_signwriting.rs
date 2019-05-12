@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1d800}: '𝠀'
     pub const SIGNWRITING_HAND_DASH_FIST_INDEX: char = '𝠀';
     /// \u{1d801}: '𝠁'

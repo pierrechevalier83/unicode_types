@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{102e0}: '𐋠'
     pub const COPTIC_EPACT_THOUSANDS_MARK: char = '𐋠';
     /// \u{102e1}: '𐋡'

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["GeorgianSupplement","An enum to represent all characters in the GeorgianSupplement block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["GeorgianSupplement","An enum to represent all characters in the GeorgianSupplement block."]]});

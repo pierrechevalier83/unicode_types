@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1d300}: '𝌀'
     pub const MONOGRAM_FOR_EARTH: char = '𝌀';
     /// \u{1d301}: '𝌁'

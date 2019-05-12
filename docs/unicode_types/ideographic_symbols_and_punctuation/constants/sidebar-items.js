@@ -1,1 +1,0 @@
-initSidebarItems({"constant":[["NUSHU_ITERATION_MARK","\\u{16fe1}: '𖿡'"],["OLD_CHINESE_HOOK_MARK","\\u{16fe2}: '𖿢'"],["OLD_CHINESE_ITERATION_MARK","\\u{16fe3}: '𖿣'"],["TANGUT_ITERATION_MARK","\\u{16fe0}: '𖿠'"]]});

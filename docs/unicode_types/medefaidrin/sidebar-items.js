@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Medefaidrin","An enum to represent all characters in the Medefaidrin block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Medefaidrin","An enum to represent all characters in the Medefaidrin block."]]});

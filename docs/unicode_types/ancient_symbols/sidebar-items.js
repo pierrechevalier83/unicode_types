@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["AncientSymbols","An enum to represent all characters in the AncientSymbols block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["AncientSymbols","An enum to represent all characters in the AncientSymbols block."]]});

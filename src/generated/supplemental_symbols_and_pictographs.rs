@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1f900}: '🤀'
     pub const CIRCLED_CROSS_FORMEE_WITH_FOUR_DOTS: char = '🤀';
     /// \u{1f901}: '🤁'

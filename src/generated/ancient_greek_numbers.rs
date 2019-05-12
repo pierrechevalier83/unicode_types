@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{10140}: '𐅀'
     pub const GREEK_ACROPHONIC_ATTIC_ONE_QUARTER: char = '𐅀';
     /// \u{10141}: '𐅁'

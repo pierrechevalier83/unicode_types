@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{fe00}: '︀'
     pub const VARIATION_SELECTOR_DASH_1: char = '︀';
     /// \u{fe01}: '︁'

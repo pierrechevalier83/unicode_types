@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{a830}: '꠰'
     pub const NORTH_INDIC_FRACTION_ONE_QUARTER: char = '꠰';
     /// \u{a831}: '꠱'

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{31a0}: 'ㆠ'
     pub const BOPOMOFO_LETTER_BU: char = 'ㆠ';
     /// \u{31a1}: 'ㆡ'

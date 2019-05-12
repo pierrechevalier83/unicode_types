@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{3200}: '㈀'
     pub const PARENTHESIZED_HANGUL_KIYEOK: char = '㈀';
     /// \u{3201}: '㈁'

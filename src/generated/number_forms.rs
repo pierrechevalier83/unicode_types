@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2150}: '⅐'
     pub const VULGAR_FRACTION_ONE_SEVENTH: char = '⅐';
     /// \u{2151}: '⅑'

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["PhoneticExtensionsSupplement","An enum to represent all characters in the PhoneticExtensionsSupplement block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["PhoneticExtensionsSupplement","An enum to represent all characters in the PhoneticExtensionsSupplement block."]]});

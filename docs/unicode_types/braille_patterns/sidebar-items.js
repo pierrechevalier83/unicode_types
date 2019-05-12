@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["BraillePatterns","An enum to represent all characters in the BraillePatterns block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["BraillePatterns","An enum to represent all characters in the BraillePatterns block."]]});

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1c80}: 'ᲀ'
     pub const CYRILLIC_SMALL_LETTER_ROUNDED_VE: char = 'ᲀ';
     /// \u{1c81}: 'ᲁ'

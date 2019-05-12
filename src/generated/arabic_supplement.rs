@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{750}: 'ݐ'
     pub const ARABIC_LETTER_BEH_WITH_THREE_DOTS_HORIZONTALLY_BELOW: char = 'ݐ';
     /// \u{751}: 'ݑ'

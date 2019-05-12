@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{27f0}: '⟰'
     pub const UPWARDS_QUADRUPLE_ARROW: char = '⟰';
     /// \u{27f1}: '⟱'

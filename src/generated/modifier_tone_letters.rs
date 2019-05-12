@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{a700}: '꜀'
     pub const MODIFIER_LETTER_CHINESE_TONE_YIN_PING: char = '꜀';
     /// \u{a701}: '꜁'

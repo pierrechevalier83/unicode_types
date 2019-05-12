@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1ec71}: '𞱱'
     pub const INDIC_SIYAQ_NUMBER_ONE: char = '𞱱';
     /// \u{1ec72}: '𞱲'

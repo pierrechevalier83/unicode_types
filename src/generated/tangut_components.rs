@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{18800}: '𘠀'
     pub const TANGUT_COMPONENT_DASH_001: char = '𘠀';
     /// \u{18801}: '𘠁'

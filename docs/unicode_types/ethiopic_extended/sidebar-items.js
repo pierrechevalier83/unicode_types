@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["EthiopicExtended","An enum to represent all characters in the EthiopicExtended block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["EthiopicExtended","An enum to represent all characters in the EthiopicExtended block."]]});

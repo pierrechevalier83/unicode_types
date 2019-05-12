@@ -1,1 +1,0 @@
-initSidebarItems({"constant":[["SHORTHAND_FORMAT_CONTINUING_OVERLAP","\\u{1bca1}: '𛲡'"],["SHORTHAND_FORMAT_DOWN_STEP","\\u{1bca2}: '𛲢'"],["SHORTHAND_FORMAT_LETTER_OVERLAP","\\u{1bca0}: '𛲠'"],["SHORTHAND_FORMAT_UP_STEP","\\u{1bca3}: '𛲣'"]]});

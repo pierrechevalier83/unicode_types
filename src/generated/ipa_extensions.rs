@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{250}: 'ɐ'
     pub const LATIN_SMALL_LETTER_TURNED_A: char = 'ɐ';
     /// \u{251}: 'ɑ'

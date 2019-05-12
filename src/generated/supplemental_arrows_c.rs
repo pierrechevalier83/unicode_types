@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1f800}: '🠀'
     pub const LEFTWARDS_ARROW_WITH_SMALL_TRIANGLE_ARROWHEAD: char = '🠀';
     /// \u{1f801}: '🠁'

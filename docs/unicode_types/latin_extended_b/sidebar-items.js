@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["LatinExtendedB","An enum to represent all characters in the LatinExtendedB block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["LatinExtendedB","An enum to represent all characters in the LatinExtendedB block."]]});

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{10080}: '𐂀'
     pub const LINEAR_B_IDEOGRAM_B100_MAN: char = '𐂀';
     /// \u{10081}: '𐂁'

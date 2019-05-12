@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1d2e0}: '𝋠'
     pub const MAYAN_NUMERAL_ZERO: char = '𝋠';
     /// \u{1d2e1}: '𝋡'

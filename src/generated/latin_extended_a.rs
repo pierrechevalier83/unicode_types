@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{100}: 'Ā'
     pub const LATIN_CAPITAL_LETTER_A_WITH_MACRON: char = 'Ā';
     /// \u{101}: 'ā'

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{20d0}: '⃐'
     pub const COMBINING_LEFT_HARPOON_ABOVE: char = '⃐';
     /// \u{20d1}: '⃑'

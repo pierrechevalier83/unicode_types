@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2e00}: '⸀'
     pub const RIGHT_ANGLE_SUBSTITUTION_MARKER: char = '⸀';
     /// \u{2e01}: '⸁'

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1f00}: 'ἀ'
     pub const GREEK_SMALL_LETTER_ALPHA_WITH_PSILI: char = 'ἀ';
     /// \u{1f01}: 'ἁ'

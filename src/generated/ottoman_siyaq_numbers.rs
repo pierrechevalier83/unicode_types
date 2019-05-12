@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1ed01}: '𞴁'
     pub const OTTOMAN_SIYAQ_NUMBER_ONE: char = '𞴁';
     /// \u{1ed02}: '𞴂'

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1b00}: 'ᬀ'
     pub const SIGN_ULU_RICEM: char = 'ᬀ';
     /// \u{1b01}: 'ᬁ'

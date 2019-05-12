@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{4dc0}: '䷀'
     pub const HEXAGRAM_FOR_THE_CREATIVE_HEAVEN: char = '䷀';
     /// \u{4dc1}: '䷁'

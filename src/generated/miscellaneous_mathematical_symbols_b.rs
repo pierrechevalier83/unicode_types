@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2980}: '⦀'
     pub const TRIPLE_VERTICAL_BAR_DELIMITER: char = '⦀';
     /// \u{2981}: '⦁'

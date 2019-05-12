@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Kharoshthi","An enum to represent all characters in the Kharoshthi block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Kharoshthi","An enum to represent all characters in the Kharoshthi block."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Gothic","An enum to represent all characters in the Gothic block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Gothic","An enum to represent all characters in the Gothic block."]]});

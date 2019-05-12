@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1d100}: '𝄀'
     pub const MUSICAL_SYMBOL_SINGLE_BARLINE: char = '𝄀';
     /// \u{1d101}: '𝄁'

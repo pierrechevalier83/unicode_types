@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{980}: 'ঀ'
     pub const ANJI: char = 'ঀ';
     /// \u{981}: 'ঁ'

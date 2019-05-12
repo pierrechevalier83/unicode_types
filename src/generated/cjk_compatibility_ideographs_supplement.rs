@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2f800}: '丽'
     pub const CJK_COMPATIBILITY_IDEOGRAPH_DASH_2F800: char = '丽';
     /// \u{2f801}: '丸'

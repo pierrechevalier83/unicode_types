@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{e01}: 'ก'
     pub const CHARACTER_KO_KAI: char = 'ก';
     /// \u{e02}: 'ข'

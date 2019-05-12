@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{a8e0}: '꣠'
     pub const COMBINING_DEVANAGARI_DIGIT_ZERO: char = '꣠';
     /// \u{a8e1}: '꣡'

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2300}: '⌀'
     pub const DIAMETER_SIGN: char = '⌀';
     /// \u{2301}: '⌁'

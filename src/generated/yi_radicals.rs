@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{a490}: '꒐'
     pub const YI_RADICAL_QOT: char = '꒐';
     /// \u{a491}: '꒑'

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{a000}: 'ꀀ'
     pub const YI_SYLLABLE_IT: char = 'ꀀ';
     /// \u{a001}: 'ꀁ'

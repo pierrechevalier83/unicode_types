@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{3000}: '　'
     pub const IDEOGRAPHIC_SPACE: char = '　';
     /// \u{3001}: '、'

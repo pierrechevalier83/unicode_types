@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{30a0}: '゠'
     pub const DASH_HIRAGANA_DOUBLE_HYPHEN: char = '゠';
     /// \u{30a1}: 'ァ'

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["GeneralPunctuation","An enum to represent all characters in the GeneralPunctuation block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["GeneralPunctuation","An enum to represent all characters in the GeneralPunctuation block."]]});

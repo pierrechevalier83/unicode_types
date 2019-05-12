@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1d200}: '𝈀'
     pub const GREEK_VOCAL_NOTATION_SYMBOL_DASH_1: char = '𝈀';
     /// \u{1d201}: '𝈁'

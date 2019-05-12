@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Khudawadi","An enum to represent all characters in the Khudawadi block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Khudawadi","An enum to represent all characters in the Khudawadi block."]]});

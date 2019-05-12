@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{80}: ''
     pub const CONTROL_0080: char = '';
     /// \u{81}: ''

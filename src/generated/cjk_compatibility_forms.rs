@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{fe30}: '︰'
     pub const PRESENTATION_FORM_FOR_VERTICAL_TWO_DOT_LEADER: char = '︰';
     /// \u{fe31}: '︱'

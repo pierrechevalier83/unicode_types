@@ -1,1 +1,0 @@
-initSidebarItems({"constant":[["HIRAGANA_LETTER_SMALL_WE","\\u{1b151}: '𛅑'"],["HIRAGANA_LETTER_SMALL_WI","\\u{1b150}: '𛅐'"],["HIRAGANA_LETTER_SMALL_WO","\\u{1b152}: '𛅒'"],["KATAKANA_LETTER_SMALL_N","\\u{1b167}: '𛅧'"],["KATAKANA_LETTER_SMALL_WE","\\u{1b165}: '𛅥'"],["KATAKANA_LETTER_SMALL_WI","\\u{1b164}: '𛅤'"],["KATAKANA_LETTER_SMALL_WO","\\u{1b166}: '𛅦'"]]});

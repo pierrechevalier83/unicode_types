@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2700}: '✀'
     pub const BLACK_SAFETY_SCISSORS: char = '✀';
     /// \u{2701}: '✁'

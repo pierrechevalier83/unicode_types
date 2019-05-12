@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Hebrew","An enum to represent all characters in the Hebrew block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Hebrew","An enum to represent all characters in the Hebrew block."]]});

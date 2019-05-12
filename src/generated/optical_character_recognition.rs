@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2440}: '⑀'
     pub const OCR_HOOK: char = '⑀';
     /// \u{2441}: '⑁'

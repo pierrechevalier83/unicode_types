@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["MiscellaneousSymbols","An enum to represent all characters in the MiscellaneousSymbols block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["MiscellaneousSymbols","An enum to represent all characters in the MiscellaneousSymbols block."]]});

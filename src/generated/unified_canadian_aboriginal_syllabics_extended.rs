@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{18b0}: 'ᢰ'
     pub const CANADIAN_SYLLABICS_OY: char = 'ᢰ';
     /// \u{18b1}: 'ᢱ'

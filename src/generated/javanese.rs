@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{a980}: 'ꦀ'
     pub const SIGN_PANYANGGA: char = 'ꦀ';
     /// \u{a981}: 'ꦁ'

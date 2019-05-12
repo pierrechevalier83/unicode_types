@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{fe10}: '︐'
     pub const PRESENTATION_FORM_FOR_VERTICAL_COMMA: char = '︐';
     /// \u{fe11}: '︑'

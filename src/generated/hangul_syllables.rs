@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{ac00}: '가'
     pub const HANGUL_SYLLABLE_FIRST: char = '가';
     /// \u{d7a3}: '힣'

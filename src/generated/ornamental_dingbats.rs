@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1f650}: '🙐'
     pub const NORTH_WEST_POINTING_LEAF: char = '🙐';
     /// \u{1f651}: '🙑'

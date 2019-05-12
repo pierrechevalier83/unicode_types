@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{16fe0}: '𖿠'
     pub const TANGUT_ITERATION_MARK: char = '𖿠';
     /// \u{16fe1}: '𖿡'

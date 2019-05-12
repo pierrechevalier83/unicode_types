@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{c00}: 'ఀ'
     pub const SIGN_COMBINING_CANDRABINDU_ABOVE: char = 'ఀ';
     /// \u{c01}: 'ఁ'

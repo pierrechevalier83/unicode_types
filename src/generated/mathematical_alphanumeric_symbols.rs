@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1d400}: '𝐀'
     pub const MATHEMATICAL_BOLD_CAPITAL_A: char = '𝐀';
     /// \u{1d401}: '𝐁'

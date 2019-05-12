@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{3131}: 'ㄱ'
     pub const HANGUL_LETTER_KIYEOK: char = 'ㄱ';
     /// \u{3132}: 'ㄲ'

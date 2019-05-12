@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{13430}: '𓐰'
     pub const EGYPTIAN_HIEROGLYPH_VERTICAL_JOINER: char = '𓐰';
     /// \u{13431}: '𓐱'

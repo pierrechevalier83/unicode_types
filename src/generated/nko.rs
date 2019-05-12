@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{7c0}: '߀'
     pub const DIGIT_ZERO: char = '߀';
     /// \u{7c1}: '߁'

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2460}: '①'
     pub const CIRCLED_DIGIT_ONE: char = '①';
     /// \u{2461}: '②'

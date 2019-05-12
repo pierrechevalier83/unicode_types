@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2a00}: '⨀'
     pub const N_DASH_ARY_CIRCLED_DOT_OPERATOR: char = '⨀';
     /// \u{2a01}: '⨁'

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["HangulJamoExtendedA","An enum to represent all characters in the HangulJamoExtendedA block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["HangulJamoExtendedA","An enum to represent all characters in the HangulJamoExtendedA block."]]});

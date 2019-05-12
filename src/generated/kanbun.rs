@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{3190}: '㆐'
     pub const IDEOGRAPHIC_ANNOTATION_LINKING_MARK: char = '㆐';
     /// \u{3191}: '㆑'

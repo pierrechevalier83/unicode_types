@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{20a0}: '₠'
     pub const EURO_DASH_CURRENCY_SIGN: char = '₠';
     /// \u{20a1}: '₡'

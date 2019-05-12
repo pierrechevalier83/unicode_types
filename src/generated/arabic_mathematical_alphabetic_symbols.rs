@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1ee00}: '𞸀'
     pub const ARABIC_MATHEMATICAL_ALEF: char = '𞸀';
     /// \u{1ee01}: '𞸁'

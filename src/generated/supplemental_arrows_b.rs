@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2900}: '⤀'
     pub const RIGHTWARDS_TWO_DASH_HEADED_ARROW_WITH_VERTICAL_STROKE: char = '⤀';
     /// \u{2901}: '⤁'

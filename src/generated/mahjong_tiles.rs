@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1f000}: '🀀'
     pub const MAHJONG_TILE_EAST_WIND: char = '🀀';
     /// \u{1f001}: '🀁'

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1680}: ' '
     pub const SPACE_MARK: char = ' ';
     /// \u{1681}: 'ᚁ'

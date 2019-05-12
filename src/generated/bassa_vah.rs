@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{16ad0}: '𖫐'
     pub const LETTER_ENNI: char = '𖫐';
     /// \u{16ad1}: '𖫑'

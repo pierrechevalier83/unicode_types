@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{20000}: '𠀀'
     pub const CJK_IDEOGRAPH_EXTENSION_B_FIRST: char = '𠀀';
     /// \u{2a6d6}: '𪛖'

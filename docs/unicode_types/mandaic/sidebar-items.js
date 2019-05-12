@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Mandaic","An enum to represent all characters in the Mandaic block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Mandaic","An enum to represent all characters in the Mandaic block."]]});

@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2190}: '←'
     pub const LEFTWARDS_ARROW: char = '←';
     /// \u{2191}: '↑'

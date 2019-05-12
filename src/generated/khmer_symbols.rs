@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{19e0}: '᧠'
     pub const KHMER_SYMBOL_PATHAMASAT: char = '᧠';
     /// \u{19e1}: '᧡'

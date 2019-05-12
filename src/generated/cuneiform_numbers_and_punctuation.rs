@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{12400}: '𒐀'
     pub const CUNEIFORM_NUMERIC_SIGN_TWO_ASH: char = '𒐀';
     /// \u{12401}: '𒐁'

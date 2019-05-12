@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{370}: 'Ͱ'
     pub const GREEK_CAPITAL_LETTER_HETA: char = 'Ͱ';
     /// \u{371}: 'ͱ'

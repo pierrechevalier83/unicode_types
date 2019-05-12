@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{16800}: '𖠀'
     pub const BAMUM_LETTER_PHASE_DASH_A_NGKUE_MFON: char = '𖠀';
     /// \u{16801}: '𖠁'

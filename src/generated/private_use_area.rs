@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{e000}: ''
     pub const PRIVATE_USE_FIRST: char = '';
 }

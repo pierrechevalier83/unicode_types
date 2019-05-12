@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2580}: '▀'
     pub const UPPER_HALF_BLOCK: char = '▀';
     /// \u{2581}: '▁'

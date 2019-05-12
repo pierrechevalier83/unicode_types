@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{111e1}: '𑇡'
     pub const SINHALA_ARCHAIC_DIGIT_ONE: char = '𑇡';
     /// \u{111e2}: '𑇢'

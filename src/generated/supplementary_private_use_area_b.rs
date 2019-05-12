@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{100000}: '􀀀'
     pub const PLANE_16_PRIVATE_USE_FIRST: char = '􀀀';
     /// \u{10fffd}: '􏿽'

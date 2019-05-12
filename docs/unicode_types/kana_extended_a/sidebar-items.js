@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["KanaExtendedA","An enum to represent all characters in the KanaExtendedA block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["KanaExtendedA","An enum to represent all characters in the KanaExtendedA block."]]});

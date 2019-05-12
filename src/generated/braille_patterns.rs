@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2800}: '⠀'
     pub const BRAILLE_PATTERN_BLANK: char = '⠀';
     /// \u{2801}: '⠁'

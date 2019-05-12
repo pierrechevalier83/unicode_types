@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1c90}: 'Ა'
     pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_AN: char = 'Ა';
     /// \u{1c91}: 'Ბ'

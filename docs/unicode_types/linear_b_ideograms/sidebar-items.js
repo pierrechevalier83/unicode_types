@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["LinearBIdeograms","An enum to represent all characters in the LinearBIdeograms block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["LinearBIdeograms","An enum to represent all characters in the LinearBIdeograms block."]]});

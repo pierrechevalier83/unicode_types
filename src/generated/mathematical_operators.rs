@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2200}: '∀'
     pub const FOR_ALL: char = '∀';
     /// \u{2201}: '∁'

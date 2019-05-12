@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1cc0}: '᳀'
     pub const SUNDANESE_PUNCTUATION_BINDU_SURYA: char = '᳀';
     /// \u{1cc1}: '᳁'

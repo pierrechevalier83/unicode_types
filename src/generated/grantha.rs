@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{11300}: '𑌀'
     pub const SIGN_COMBINING_ANUSVARA_ABOVE: char = '𑌀';
     /// \u{11301}: '𑌁'

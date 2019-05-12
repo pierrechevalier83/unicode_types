@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{16b00}: '𖬀'
     pub const VOWEL_KEEB: char = '𖬀';
     /// \u{16b01}: '𖬁'

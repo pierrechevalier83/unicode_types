@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Takri","An enum to represent all characters in the Takri block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Takri","An enum to represent all characters in the Takri block."]]});

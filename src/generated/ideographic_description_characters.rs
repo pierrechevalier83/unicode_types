@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2ff0}: '⿰'
     pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_LEFT_TO_RIGHT: char = '⿰';
     /// \u{2ff1}: '⿱'

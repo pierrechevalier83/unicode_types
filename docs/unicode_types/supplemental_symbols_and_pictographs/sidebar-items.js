@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["SupplementalSymbolsandPictographs","An enum to represent all characters in the SupplementalSymbolsandPictographs block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["SupplementalSymbolsandPictographs","An enum to represent all characters in the SupplementalSymbolsandPictographs block."]]});

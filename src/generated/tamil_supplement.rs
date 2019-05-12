@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{11fc0}: '𑿀'
     pub const TAMIL_FRACTION_ONE_THREE_DASH_HUNDRED_DASH_AND_DASH_TWENTIETH: char = '𑿀';
     /// \u{11fc1}: '𑿁'

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Batak","An enum to represent all characters in the Batak block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Batak","An enum to represent all characters in the Batak block."]]});

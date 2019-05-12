@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2000}: ' '
     pub const EN_QUAD: char = ' ';
     /// \u{2001}: ' '

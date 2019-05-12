@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{1200}: 'ሀ'
     pub const SYLLABLE_HA: char = 'ሀ';
     /// \u{1201}: 'ሁ'

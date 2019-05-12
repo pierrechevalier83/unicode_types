@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{10e60}: '𐹠'
     pub const RUMI_DIGIT_ONE: char = '𐹠';
     /// \u{10e61}: '𐹡'

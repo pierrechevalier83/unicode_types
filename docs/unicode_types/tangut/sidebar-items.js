@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Tangut","An enum to represent all characters in the Tangut block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Tangut","An enum to represent all characters in the Tangut block."]]});

@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["PauCinHau","An enum to represent all characters in the PauCinHau block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["PauCinHau","An enum to represent all characters in the PauCinHau block."]]});

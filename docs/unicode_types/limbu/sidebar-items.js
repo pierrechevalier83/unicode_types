@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Limbu","An enum to represent all characters in the Limbu block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Limbu","An enum to represent all characters in the Limbu block."]]});

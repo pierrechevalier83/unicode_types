@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{10980}: '𐦀'
     pub const MEROITIC_HIEROGLYPHIC_LETTER_A: char = '𐦀';
     /// \u{10981}: '𐦁'

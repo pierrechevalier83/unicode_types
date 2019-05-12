@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2f00}: '⼀'
     pub const KANGXI_RADICAL_ONE: char = '⼀';
     /// \u{2f01}: '⼁'

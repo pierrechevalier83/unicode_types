@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{14400}: '𔐀'
     pub const ANATOLIAN_HIEROGLYPH_A001: char = '𔐀';
     /// \u{14401}: '𔐁'

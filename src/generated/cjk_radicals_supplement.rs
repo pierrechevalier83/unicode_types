@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{2e80}: '⺀'
     pub const CJK_RADICAL_REPEAT: char = '⺀';
     /// \u{2e81}: '⺁'

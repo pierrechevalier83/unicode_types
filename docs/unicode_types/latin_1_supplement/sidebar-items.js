@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["Latin1Supplement","An enum to represent all characters in the Latin1Supplement block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["Latin1Supplement","An enum to represent all characters in the Latin1Supplement block."]]});

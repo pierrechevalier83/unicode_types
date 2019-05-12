@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["EgyptianHieroglyphs","An enum to represent all characters in the EgyptianHieroglyphs block."]],"mod":[["constants","A number of constants to give a name to all characters in this block."]]});
+initSidebarItems({"enum":[["EgyptianHieroglyphs","An enum to represent all characters in the EgyptianHieroglyphs block."]]});

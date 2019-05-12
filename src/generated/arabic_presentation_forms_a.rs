@@ -1,5 +1,5 @@
 /// A number of constants to give a name to all characters in this block.
-pub mod constants {
+mod constants {
     /// \u{fb50}: 'ﭐ'
     pub const ARABIC_LETTER_ALEF_WASLA_ISOLATED_FORM: char = 'ﭐ';
     /// \u{fb51}: 'ﭑ'
